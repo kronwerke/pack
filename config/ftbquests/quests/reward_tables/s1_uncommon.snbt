@@ -1,6 +1,6 @@
 {
-	id: "AC273A09128CA2CE"
-	title: "Uncommon Crate"
+	id: "870211AF0E412C54"
+	title: "Iron Crate"
 	icon: {
 		id: "ftbquests:lootcrate"
 		count: 1
@@ -9,7 +9,7 @@
 	order_index: 1
 	rewards: [
 		{
-			id: "7F501FF8754F465C"
+			id: "A471C8A942A6DE3C"
 			item: {
 				id: "minecraft:iron_block"
 				count: 2
@@ -18,7 +18,7 @@
 			random_bonus: 2
 		}
 		{
-			id: "2E28587D0FAD2B3A"
+			id: "73A4DB8883D1ED74"
 			item: {
 				id: "minecraft:gold_ingot"
 				count: 8
@@ -27,7 +27,7 @@
 			random_bonus: 8
 		}
 		{
-			id: "22C6F122FF57118A"
+			id: "EDF2EED686813624"
 			item: {
 				id: "minecraft:diamond"
 				count: 2
@@ -36,7 +36,7 @@
 			random_bonus: 2
 		}
 		{
-			id: "15EC0680E94B7542"
+			id: "A20FC32540F8A233"
 			item: {
 				id: "minecraft:emerald"
 				count: 4
@@ -45,7 +45,7 @@
 			random_bonus: 4
 		}
 		{
-			id: "9CA0EE8D2CE4F124"
+			id: "0351AEAF736A1D79"
 			item: {
 				id: "minecraft:experience_bottle"
 				count: 8
@@ -54,41 +54,33 @@
 			random_bonus: 8
 		}
 		{
-			id: "9B1919B5FE0CEABC"
+			id: "893B24CBD25A8D96"
 			item: {
-				id: "minecraft:enchanted_golden_apple"
-				count: 1
-			}
-			weight: 1.0f
-		}
-		{
-			id: "78861BCE14844E3E"
-			item: {
-				id: "create:brass_ingot"
-				count: 6
-			}
-			weight: 6.0f
-			random_bonus: 6
-		}
-		{
-			id: "EEF94924B2881B4D"
-			item: {
-				id: "create:precision_mechanism"
+				id: "minecraft:golden_apple"
 				count: 2
 			}
-			weight: 4.0f
+			weight: 5.0f
 		}
 		{
-			id: "20AAD96F4C155EAF"
+			id: "35EFD16D058B1B5A"
 			item: {
-				id: "mekanism:ingot_steel"
-				count: 8
+				id: "create:iron_sheet"
+				count: 16
 			}
 			weight: 6.0f
-			random_bonus: 8
+			random_bonus: 16
 		}
 		{
-			id: "F8D18ADE1851D03A"
+			id: "7609F19B0359467E"
+			item: {
+				id: "create:copper_sheet"
+				count: 16
+			}
+			weight: 5.0f
+			random_bonus: 16
+		}
+		{
+			id: "15ADB3648B38F6EA"
 			item: {
 				id: "ars_nouveau:source_gem_block"
 				count: 2
@@ -96,7 +88,7 @@
 			weight: 5.0f
 		}
 		{
-			id: "857DCFAE606A79C4"
+			id: "DA73A1BA42FA3187"
 			item: {
 				id: "sophisticatedbackpacks:backpack"
 				count: 1
@@ -104,20 +96,37 @@
 			weight: 3.0f
 		}
 		{
-			id: "EB1C6F94A43061F5"
+			id: "B2DC67260E18BAF1"
 			item: {
-				id: "waystones:waystone"
+				id: "waystones:warp_stone"
 				count: 1
+			}
+			weight: 3.0f
+		}
+		{
+			id: "DAF286F46B0C058C"
+			item: {
+				id: "waystones:return_scroll"
+				count: 2
 			}
 			weight: 4.0f
 		}
 		{
-			id: "B641CC15E3E9F014"
+			id: "235141CB7AC6772E"
 			item: {
-				id: "minecraft:netherite_scrap"
-				count: 1
+				id: "functionalstorage:oak_1"
+				count: 4
 			}
-			weight: 2.0f
+			weight: 4.0f
+		}
+		{
+			id: "F8C11CF7CDEBECD4"
+			item: {
+				id: "apotheosis:gem_dust"
+				count: 4
+			}
+			weight: 3.0f
+			random_bonus: 4
 		}
 	]
 }

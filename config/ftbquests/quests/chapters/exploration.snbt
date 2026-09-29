@@ -1,0 +1,360 @@
+{
+	id: "FF3312C40747F84E"
+	filename: "exploration"
+	title: "Exploration"
+	icon: {
+		id: "minecraft:filled_map"
+		count: 1
+	}
+	group: "D1C7157F1269A7DC"
+	order_index: 7
+	default_quest_shape: "circle"
+	default_hide_dependency_lines: false
+	subtitle: [
+		"Biomes, waystones, the Mining Dimension and loot."
+	]
+	quests: [
+		{
+			id: "9555F064C11E3AED"
+			x: 0.0d
+			y: 0.0d
+			title: "Exploration"
+			subtitle: "The world is bigger and stranger than vanilla."
+			description: [
+				"New terrain, new biomes, and a lot of new structures: villages, towers, dungeons, ruins and a few places you should not visit alone."
+				""
+				"Loot is per player. Every chest in a structure has its own loot for each person who opens it, so arriving second is not a loss."
+			]
+			icon: {
+				id: "minecraft:filled_map"
+				count: 1
+			}
+			size: 2.0d
+			shape: "hexagon"
+			tasks: [
+				{
+					id: "7D458A62A4F0B0B7"
+					type: "checkmark"
+					title: "Let's go outside"
+				}
+			]
+			rewards: [
+				{
+					id: "A1D5547D6C1BD7FE"
+					type: "item"
+					item: {
+						id: "minecraft:cooked_beef"
+						count: 1
+					}
+					count: 16
+				}
+				{
+					id: "48D3969F86064005"
+					type: "loot"
+					table_id: "1EBBC2B918151958"
+				}
+			]
+		}
+		{
+			id: "67BCF9AB89FDE137"
+			x: 3.0d
+			y: -2.0d
+			title: "Nature's Compass"
+			subtitle: "Points you to any biome."
+			description: [
+				"Pick a biome from the list and the compass points to the nearest one. Archwood Forests for Ars Nouveau are the classic first search."
+			]
+			icon: {
+				id: "naturescompass:naturescompass"
+				count: 1
+			}
+			dependencies: [
+				"9555F064C11E3AED"
+			]
+			tasks: [
+				{
+					id: "23CE1391B173DF50"
+					type: "item"
+					item: {
+						id: "naturescompass:naturescompass"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "C8FBD2C07851124A"
+					type: "item"
+					item: {
+						id: "minecraft:bread"
+						count: 1
+					}
+					count: 16
+				}
+			]
+		}
+		{
+			id: "F4E65F98C9C59C60"
+			x: 3.0d
+			y: 2.0d
+			title: "Warp Stone"
+			subtitle: "Travel between the waystones you have found."
+			description: [
+				"Waystones stand in villages and along the roads. Right click one to activate it, and from then on you can travel to it from any other waystone."
+				"A &6Warp Stone&r lets you do that from anywhere, with a cooldown."
+			]
+			icon: {
+				id: "waystones:warp_stone"
+				count: 1
+			}
+			dependencies: [
+				"9555F064C11E3AED"
+			]
+			tasks: [
+				{
+					id: "D37F17CD56DF5490"
+					type: "item"
+					item: {
+						id: "waystones:warp_stone"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "7064ADFDE6933EDF"
+					type: "item"
+					item: {
+						id: "waystones:return_scroll"
+						count: 1
+					}
+					count: 2
+				}
+			]
+		}
+		{
+			id: "D331B9D46C736583"
+			x: 6.0d
+			y: 2.0d
+			title: "Your Own Waystone"
+			subtitle: "Put one at your base."
+			description: [
+				"A waystone at home means one click back from anywhere you have been. Name it so everyone can find you."
+			]
+			icon: {
+				id: "waystones:waystone"
+				count: 1
+			}
+			dependencies: [
+				"F4E65F98C9C59C60"
+			]
+			tasks: [
+				{
+					id: "25BADFEC7852560B"
+					type: "item"
+					item: {
+						id: "waystones:waystone"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "68C34A082186602E"
+					type: "item"
+					item: {
+						id: "minecraft:ender_pearl"
+						count: 1
+					}
+					count: 2
+				}
+			]
+		}
+		{
+			id: "D7A1B81AC156EC68"
+			x: 6.0d
+			y: -2.0d
+			title: "The Enchanted Pickaxe"
+			subtitle: "The key to the Mining Dimension."
+			description: [
+				"A second world made for digging: the same ores and geodes as the overworld, and nobody minds the holes. Keep the overworld pretty and strip mine down there."
+				""
+				"Craft the &6Enchanted Pickaxe&r from two diamonds, a gold block and two sticks. Build a frame of &6Iron Blocks&r shaped like a Nether portal and use the pickaxe on the inside of the frame."
+			]
+			icon: {
+				id: "ultimate_mining_dimension:ultimate_mining_dimension"
+				count: 1
+			}
+			dependencies: [
+				"67BCF9AB89FDE137"
+			]
+			tasks: [
+				{
+					id: "0057D6CF6865EBB3"
+					type: "item"
+					item: {
+						id: "ultimate_mining_dimension:ultimate_mining_dimension"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "DCD5735A84D0936A"
+					type: "item"
+					item: {
+						id: "minecraft:iron_block"
+						count: 1
+					}
+					count: 4
+				}
+			]
+		}
+		{
+			id: "EEBFB35E99806320"
+			x: 9.0d
+			y: -2.0d
+			title: "Into the Mine"
+			subtitle: "Step through."
+			description: [
+				"Bring torches, food and a way home. Cobblestone from down here counts for the community goal just the same."
+				"&cDeath in the Mining Dimension leaves your body down there.&r Note where the portal is."
+			]
+			icon: {
+				id: "minecraft:iron_pickaxe"
+				count: 1
+			}
+			size: 1.5d
+			dependencies: [
+				"D7A1B81AC156EC68"
+			]
+			tasks: [
+				{
+					id: "E90F29BC5B9B0D94"
+					type: "dimension"
+					dimension: "ultimate_mining_dimension:ultimate_mining_dimension"
+				}
+			]
+			rewards: [
+				{
+					id: "8D1FD57EE1521105"
+					type: "loot"
+					table_id: "870211AF0E412C54"
+				}
+			]
+		}
+		{
+			id: "DEEE699C3207BD90"
+			x: 9.0d
+			y: 2.0d
+			title: "Loot with Affixes"
+			subtitle: "Named gear from mobs, and what to do with it."
+			description: [
+				"Mobs and chests drop gear with random &6affixes&r: extra damage, life steal, faster mining. The rarer the colour of the name, the stronger the affixes."
+				"Gear you do not want goes into a &6Salvaging Table&r and comes out as materials. Some drops carry &6Gems&r you can socket into your own gear."
+			]
+			icon: {
+				id: "apotheosis:salvaging_table"
+				count: 1
+			}
+			dependencies: [
+				"D331B9D46C736583"
+			]
+			tasks: [
+				{
+					id: "439758B977313AD8"
+					type: "item"
+					item: {
+						id: "apotheosis:salvaging_table"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "601FEF3224749797"
+					type: "item"
+					item: {
+						id: "apotheosis:gem_dust"
+						count: 1
+					}
+					count: 8
+				}
+			]
+		}
+		{
+			id: "7F9880685AC8CF09"
+			x: 12.0d
+			y: 3.5d
+			title: "Not a Chest"
+			subtitle: "Some chests bite back."
+			description: [
+				"Every now and then a chest in a structure is a &6Mimic&r. It hits hard, and it drops an artifact: a trinket with a special effect that you wear."
+			]
+			optional: true
+			dependencies: [
+				"DEEE699C3207BD90"
+			]
+			tasks: [
+				{
+					id: "A4D7DC21F0053277"
+					type: "kill"
+					entity: "artifacts:mimic"
+					value: 1
+				}
+			]
+			rewards: [
+				{
+					id: "34D6148BE87621E0"
+					type: "loot"
+					table_id: "870211AF0E412C54"
+				}
+			]
+		}
+		{
+			id: "2612DB12875FE336"
+			x: 12.0d
+			y: 0.0d
+			title: "Explorer"
+			subtitle: "Out there and back again."
+			description: [
+				"You know how to find biomes, travel between waystones and mine in a world made for it."
+				"The Nether opens with stage 2, on stream, through the portal at spawn. Save a few iron blocks for the trip."
+			]
+			icon: {
+				id: "minecraft:map"
+				count: 1
+			}
+			size: 1.5d
+			shape: "gear"
+			dependencies: [
+				"EEBFB35E99806320"
+				"DEEE699C3207BD90"
+			]
+			tasks: [
+				{
+					id: "0485A47F6B75707A"
+					type: "checkmark"
+					title: "I have been around"
+				}
+			]
+			rewards: [
+				{
+					id: "2012BF59EE985B01"
+					type: "loot"
+					table_id: "B5AA0F94577E6A3C"
+				}
+				{
+					id: "5E5C6670F03424CF"
+					type: "xp_levels"
+					xp_levels: 10
+				}
+			]
+		}
+	]
+}

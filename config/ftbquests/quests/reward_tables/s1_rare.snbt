@@ -1,0 +1,109 @@
+{
+	id: "B5AA0F94577E6A3C"
+	title: "Gold Crate"
+	icon: {
+		id: "ftbquests:lootcrate"
+		count: 1
+	}
+	loot_size: 1
+	order_index: 2
+	rewards: [
+		{
+			id: "9B2AE859556DEC4B"
+			item: {
+				id: "minecraft:diamond"
+				count: 8
+			}
+			weight: 8.0f
+			random_bonus: 8
+		}
+		{
+			id: "6B7681252D8E2025"
+			item: {
+				id: "minecraft:diamond_block"
+				count: 1
+			}
+			weight: 4.0f
+		}
+		{
+			id: "6F12746A458F359C"
+			item: {
+				id: "minecraft:emerald_block"
+				count: 2
+			}
+			weight: 5.0f
+		}
+		{
+			id: "FDAF59BEADD14334"
+			item: {
+				id: "minecraft:enchanted_golden_apple"
+				count: 1
+			}
+			weight: 2.0f
+		}
+		{
+			id: "9BF66826A20C2FF5"
+			item: {
+				id: "minecraft:totem_of_undying"
+				count: 1
+			}
+			weight: 3.0f
+		}
+		{
+			id: "0BACD232B0316F33"
+			item: {
+				id: "botania:mana_diamond"
+				count: 2
+			}
+			weight: 4.0f
+		}
+		{
+			id: "6BD31172B2220631"
+			item: {
+				id: "ars_nouveau:amulet_of_mana_regen"
+				count: 1
+			}
+			weight: 3.0f
+		}
+		{
+			id: "737022173B4B90DB"
+			item: {
+				id: "ars_nouveau:ring_of_potential"
+				count: 1
+			}
+			weight: 3.0f
+		}
+		{
+			id: "5722C54C55251A38"
+			item: {
+				id: "waystones:waystone"
+				count: 1
+			}
+			weight: 4.0f
+		}
+		{
+			id: "9946C3C2E2AE08F6"
+			item: {
+				id: "sophisticatedstorage:iron_chest"
+				count: 2
+			}
+			weight: 4.0f
+		}
+		{
+			id: "484A9114EFB174E1"
+			item: {
+				id: "artifacts:everlasting_beef"
+				count: 1
+			}
+			weight: 2.0f
+		}
+		{
+			id: "4E82EA85CE6F233E"
+			item: {
+				id: "artifacts:mimic_spawn_egg"
+				count: 1
+			}
+			weight: 1.0f
+		}
+	]
+}

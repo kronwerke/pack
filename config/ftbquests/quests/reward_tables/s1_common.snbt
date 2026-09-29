@@ -1,6 +1,6 @@
 {
-	id: "27B22058501FC0DC"
-	title: "Common Crate"
+	id: "1EBBC2B918151958"
+	title: "Stone Crate"
 	icon: {
 		id: "ftbquests:lootcrate"
 		count: 1
@@ -9,7 +9,7 @@
 	order_index: 0
 	rewards: [
 		{
-			id: "6578255E243479AA"
+			id: "7F628E3A32E023FF"
 			item: {
 				id: "minecraft:iron_ingot"
 				count: 8
@@ -18,7 +18,7 @@
 			random_bonus: 8
 		}
 		{
-			id: "A1FC51D7B31A9994"
+			id: "D04C32169D99C17B"
 			item: {
 				id: "minecraft:copper_ingot"
 				count: 12
@@ -27,7 +27,7 @@
 			random_bonus: 12
 		}
 		{
-			id: "083F6CF2E9F81DD0"
+			id: "0BB9CCCF5A5E82AB"
 			item: {
 				id: "minecraft:coal"
 				count: 16
@@ -36,7 +36,7 @@
 			random_bonus: 16
 		}
 		{
-			id: "5D4AC78DFEAE2842"
+			id: "98F146EA1140F179"
 			item: {
 				id: "minecraft:gold_ingot"
 				count: 4
@@ -45,7 +45,7 @@
 			random_bonus: 4
 		}
 		{
-			id: "8D186B6B1D16F588"
+			id: "2F5A3B2C5ED73782"
 			item: {
 				id: "minecraft:bread"
 				count: 8
@@ -53,7 +53,7 @@
 			weight: 8.0f
 		}
 		{
-			id: "0830494EF12858ED"
+			id: "D8462A7B7DA27F9B"
 			item: {
 				id: "minecraft:oak_log"
 				count: 16
@@ -62,7 +62,7 @@
 			random_bonus: 16
 		}
 		{
-			id: "CD2D912648423FCB"
+			id: "107EC68D82F154A3"
 			item: {
 				id: "minecraft:leather"
 				count: 6
@@ -70,7 +70,7 @@
 			weight: 5.0f
 		}
 		{
-			id: "3A4D81FD78FB6586"
+			id: "8A90F731AF3C1467"
 			item: {
 				id: "minecraft:redstone"
 				count: 8
@@ -79,7 +79,7 @@
 			random_bonus: 8
 		}
 		{
-			id: "4FCCB1E45D2A6343"
+			id: "ED54F2B5DD8F6C6F"
 			item: {
 				id: "minecraft:lapis_lazuli"
 				count: 6
@@ -87,23 +87,16 @@
 			weight: 5.0f
 		}
 		{
-			id: "D96D958CF6D62C76"
+			id: "8FD9344E402716D1"
 			item: {
-				id: "minecraft:ender_pearl"
-				count: 2
+				id: "minecraft:amethyst_shard"
+				count: 8
 			}
-			weight: 3.0f
+			weight: 5.0f
+			random_bonus: 8
 		}
 		{
-			id: "C70FE554835FD351"
-			item: {
-				id: "waystones:warp_stone"
-				count: 1
-			}
-			weight: 2.0f
-		}
-		{
-			id: "D8B3166E61D7CEA6"
+			id: "A74391202DC9C10B"
 			item: {
 				id: "create:andesite_alloy"
 				count: 8
@@ -112,12 +105,30 @@
 			random_bonus: 8
 		}
 		{
-			id: "45D3252782D0A10E"
+			id: "EE6B6814CD76E603"
 			item: {
 				id: "ars_nouveau:source_gem"
 				count: 4
 			}
 			weight: 6.0f
+			random_bonus: 4
+		}
+		{
+			id: "54B11158075DA030"
+			item: {
+				id: "botania:white_mystical_petal"
+				count: 4
+			}
+			weight: 4.0f
+			random_bonus: 4
+		}
+		{
+			id: "4ADB2E6AD1AA62F8"
+			item: {
+				id: "waystones:warp_dust"
+				count: 4
+			}
+			weight: 3.0f
 			random_bonus: 4
 		}
 	]

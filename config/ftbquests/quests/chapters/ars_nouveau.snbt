@@ -1,0 +1,716 @@
+{
+	id: "956D4C94B07E4CBE"
+	filename: "ars_nouveau"
+	title: "Ars Nouveau"
+	icon: {
+		id: "ars_nouveau:novice_spell_book"
+		count: 1
+	}
+	group: "03203A1312E25E36"
+	order_index: 2
+	default_quest_shape: "circle"
+	default_hide_dependency_lines: false
+	subtitle: [
+		"Glyphs, Source and the first familiar."
+	]
+	quests: [
+		{
+			id: "1E8B8DD851CC4A55"
+			x: 0.0d
+			y: 0.0d
+			title: "Ars Nouveau"
+			subtitle: "Build your own spells, one glyph at a time."
+			description: [
+				"In Ars Nouveau you write spells yourself. A spell is a form (how it is cast), then effects (what it does), then augments (how strong, how wide)."
+				""
+				"Everything runs on &dSource&r, the magic energy of the mod. Source Gems are also half of the first community goal, so every mage on the server helps the whole server move on."
+				""
+				"The &6Worn Notebook&r explains every block and glyph in detail."
+			]
+			icon: {
+				id: "ars_nouveau:novice_spell_book"
+				count: 1
+			}
+			size: 2.0d
+			shape: "hexagon"
+			tasks: [
+				{
+					id: "5D90497F61334081"
+					type: "checkmark"
+					title: "Open the notebook"
+				}
+			]
+			rewards: [
+				{
+					id: "2F26193A9CE031C3"
+					type: "item"
+					item: {
+						id: "ars_nouveau:worn_notebook"
+						count: 1
+					}
+					count: 1
+				}
+				{
+					id: "830B3C474E7FDEFE"
+					type: "loot"
+					table_id: "1EBBC2B918151958"
+				}
+			]
+		}
+		{
+			id: "6DD047C12EEA827D"
+			x: 3.0d
+			y: -2.0d
+			title: "Archwood"
+			subtitle: "The wood of every Ars block."
+			description: [
+				"Archwood trees grow in their own forests: red, blue, green and purple leaves, easy to spot from far away. Every colour works for planks."
+				"Take saplings home. Blazing (red) Archwood logs are the best fuel for a Volcanic Sourcelink later."
+			]
+			icon: {
+				id: "ars_nouveau:blue_archwood_log"
+				count: 1
+			}
+			dependencies: [
+				"1E8B8DD851CC4A55"
+			]
+			tasks: [
+				{
+					id: "4B847FC0B15683B4"
+					type: "item"
+					item: {
+						id: "ars_nouveau:archwood_planks"
+						count: 1
+					}
+					count: 32
+				}
+			]
+			rewards: [
+				{
+					id: "BAA6D351EFDEFEC7"
+					type: "item"
+					item: {
+						id: "ars_nouveau:blue_archwood_log"
+						count: 1
+					}
+					count: 16
+				}
+			]
+		}
+		{
+			id: "0DFC70D288521B7E"
+			x: 3.0d
+			y: 2.0d
+			title: "Novice Spell Book"
+			subtitle: "A book and a full set of iron tools."
+			description: [
+				"Craft a book with an iron sword, pickaxe, axe and shovel. The book holds your spells; switch between them with the spell radial menu (the key is under Controls, Ars Nouveau)."
+				"Right click to cast. Your mana bar shows how much you have left."
+			]
+			icon: {
+				id: "ars_nouveau:novice_spell_book"
+				count: 1
+			}
+			dependencies: [
+				"1E8B8DD851CC4A55"
+			]
+			tasks: [
+				{
+					id: "E29C3CDFE2C91CD9"
+					type: "item"
+					item: {
+						id: "ars_nouveau:novice_spell_book"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "7D3AE8605E43231D"
+					type: "item"
+					item: {
+						id: "minecraft:lapis_lazuli"
+						count: 1
+					}
+					count: 16
+				}
+				{
+					id: "EAFAED71B5E43357"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+		}
+		{
+			id: "EB0B5B0BDEC1203C"
+			x: 6.0d
+			y: 0.0d
+			title: "Scribe's Table"
+			subtitle: "Where new glyphs are made."
+			description: [
+				"Use your spell book on the table to see every glyph you can learn. Pick one, throw the listed items onto the table, and it scribes the glyph for you. Each glyph also costs experience."
+			]
+			icon: {
+				id: "ars_nouveau:scribes_table"
+				count: 1
+			}
+			dependencies: [
+				"6DD047C12EEA827D"
+				"0DFC70D288521B7E"
+			]
+			tasks: [
+				{
+					id: "778D396AE6333E0F"
+					type: "item"
+					item: {
+						id: "ars_nouveau:scribes_table"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "09501D1357D7AEB7"
+					type: "item"
+					item: {
+						id: "minecraft:experience_bottle"
+						count: 1
+					}
+					count: 8
+				}
+			]
+		}
+		{
+			id: "6BEA056D3C9341DF"
+			x: 9.0d
+			y: -2.0d
+			title: "Let There Be Light"
+			subtitle: "Your first glyph of your own."
+			description: [
+				"Scribe the &6Light&r glyph and put it in a spell: Projectile, then Light. Cast it at a cave wall and you have a torch that never needs placing."
+				"Every novice glyph costs the same experience, so learn the ones you will use every day first."
+			]
+			icon: {
+				id: "ars_nouveau:glyph_light"
+				count: 1
+			}
+			dependencies: [
+				"EB0B5B0BDEC1203C"
+			]
+			tasks: [
+				{
+					id: "2F20CF9F5D149EEA"
+					type: "item"
+					item: {
+						id: "ars_nouveau:glyph_light"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "D16F2FEC94EC87F5"
+					type: "xp_levels"
+					xp_levels: 10
+				}
+			]
+		}
+		{
+			id: "DEC11B02322955D1"
+			x: 12.0d
+			y: -3.5d
+			title: "Harvest"
+			subtitle: "Crops in one cast."
+			description: [
+				"Touch, Harvest, then an area augment: a whole field harvested in one click. Worth it on day one."
+			]
+			optional: true
+			dependencies: [
+				"6BEA056D3C9341DF"
+			]
+			tasks: [
+				{
+					id: "F1B03CE3D98D961B"
+					type: "item"
+					item: {
+						id: "ars_nouveau:glyph_harvest"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "0BC2DADA8D1B707C"
+					type: "item"
+					item: {
+						id: "minecraft:wheat_seeds"
+						count: 1
+					}
+					count: 32
+				}
+			]
+		}
+		{
+			id: "5C3DE80B81BB4577"
+			x: 9.0d
+			y: 2.0d
+			title: "Imbuement Chamber"
+			subtitle: "Turns amethyst into Source Gems."
+			description: [
+				"Put an &6Amethyst Shard&r or &6Lapis&r into the chamber and wait. On its own it gathers Source slowly; with a filled Source Jar within two blocks it works much faster."
+				"Amethyst geodes are common underground and in the Mining Dimension. Take a Budding Amethyst home if you can."
+			]
+			icon: {
+				id: "ars_nouveau:imbuement_chamber"
+				count: 1
+			}
+			size: 1.5d
+			dependencies: [
+				"EB0B5B0BDEC1203C"
+			]
+			tasks: [
+				{
+					id: "76C80384B9BC1D60"
+					type: "item"
+					item: {
+						id: "ars_nouveau:imbuement_chamber"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "C833F876804A64F6"
+					type: "item"
+					item: {
+						id: "minecraft:amethyst_shard"
+						count: 1
+					}
+					count: 32
+				}
+			]
+		}
+		{
+			id: "A92D71E452CD19B1"
+			x: 12.0d
+			y: 2.0d
+			title: "Source Gems"
+			subtitle: "The magic half of the first community goal."
+			description: [
+				"Source Gems go into almost every Ars block, and the server needs &e1 500&r of them (scaled to the number of players) for the next stage."
+				"Make a few for yourself, then set up chambers and put the rest in with &e/kw deposit&r."
+			]
+			icon: {
+				id: "ars_nouveau:source_gem"
+				count: 1
+			}
+			dependencies: [
+				"5C3DE80B81BB4577"
+			]
+			tasks: [
+				{
+					id: "9EA3863ADBBC51F1"
+					type: "item"
+					item: {
+						id: "ars_nouveau:source_gem"
+						count: 1
+					}
+					count: 16
+				}
+			]
+			rewards: [
+				{
+					id: "CFD8A38F5DA01CEA"
+					type: "loot"
+					table_id: "870211AF0E412C54"
+				}
+			]
+		}
+		{
+			id: "2C76AA98D0A4190A"
+			x: 15.0d
+			y: 0.0d
+			title: "Source Jar"
+			subtitle: "Stores Source for everything around it."
+			description: [
+				"A Source Jar holds Source made by Sourcelinks nearby and hands it to machines close to it. A comparator reads how full it is."
+			]
+			icon: {
+				id: "ars_nouveau:source_jar"
+				count: 1
+			}
+			dependencies: [
+				"A92D71E452CD19B1"
+			]
+			tasks: [
+				{
+					id: "83905865D92CCAC1"
+					type: "item"
+					item: {
+						id: "ars_nouveau:source_jar"
+						count: 1
+					}
+					count: 2
+				}
+			]
+			rewards: [
+				{
+					id: "F08DD54940610999"
+					type: "item"
+					item: {
+						id: "minecraft:glass"
+						count: 1
+					}
+					count: 16
+				}
+			]
+		}
+		{
+			id: "BFA7EB092C1DCFB2"
+			x: 18.0d
+			y: -2.0d
+			title: "Volcanic Sourcelink"
+			subtitle: "Burns fuel into Source."
+			description: [
+				"Put burnable items next to it or on a pedestal and it turns them into Source for the jars nearby. Archwood logs give more, Blazing Archwood the most."
+				"It also heats the ground: stone around it slowly turns into magma and lava. Build it on something that may melt."
+			]
+			icon: {
+				id: "ars_nouveau:volcanic_sourcelink"
+				count: 1
+			}
+			dependencies: [
+				"2C76AA98D0A4190A"
+			]
+			tasks: [
+				{
+					id: "C4CB76271520B070"
+					type: "item"
+					item: {
+						id: "ars_nouveau:volcanic_sourcelink"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "9543E9480FA41205"
+					type: "item"
+					item: {
+						id: "ars_nouveau:red_archwood_log"
+						count: 1
+					}
+					count: 16
+				}
+			]
+		}
+		{
+			id: "E511FADB80273BAF"
+			x: 18.0d
+			y: 2.0d
+			title: "Agronomic Sourcelink"
+			subtitle: "Crops that grow make Source."
+			description: [
+				"Every crop and tree that grows within 15 blocks gives Source. Magical plants like Mageblooms, Sourceberries and Archwood saplings give more. Bonemeal does not count."
+			]
+			icon: {
+				id: "ars_nouveau:agronomic_sourcelink"
+				count: 1
+			}
+			optional: true
+			dependencies: [
+				"2C76AA98D0A4190A"
+			]
+			tasks: [
+				{
+					id: "44239D2A0A69F7AF"
+					type: "item"
+					item: {
+						id: "ars_nouveau:agronomic_sourcelink"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "ADB4F5776C7E2A8D"
+					type: "item"
+					item: {
+						id: "minecraft:bone_meal"
+						count: 1
+					}
+					count: 32
+				}
+			]
+		}
+		{
+			id: "16F467F182FEE1BF"
+			x: 21.0d
+			y: 0.0d
+			title: "Sourcestone"
+			subtitle: "Stone with a gem in it. The base of every altar."
+			description: [
+				"Eight stone around one Source Gem. You need it for pedestals and the Arcane Core, and it looks good in a mage tower."
+			]
+			icon: {
+				id: "ars_nouveau:sourcestone"
+				count: 1
+			}
+			dependencies: [
+				"BFA7EB092C1DCFB2"
+			]
+			tasks: [
+				{
+					id: "7FD8AF4B5D1D343C"
+					type: "item"
+					item: {
+						id: "ars_nouveau:sourcestone"
+						count: 1
+					}
+					count: 16
+				}
+			]
+			rewards: [
+				{
+					id: "98815618AC1E89FD"
+					type: "item"
+					item: {
+						id: "minecraft:gold_ingot"
+						count: 1
+					}
+					count: 8
+				}
+			]
+		}
+		{
+			id: "083250A2C01779E4"
+			x: 24.0d
+			y: 0.0d
+			title: "Enchanting Apparatus"
+			subtitle: "The crafting altar of Ars Nouveau."
+			description: [
+				"Place the &6Enchanting Apparatus&r on top of an &6Arcane Core&r, and &6Arcane Pedestals&r around it. The item in your hand goes into the apparatus, the rest onto the pedestals."
+				"Most of the good Ars items are made here: charms, trinkets, enchanted tools."
+			]
+			icon: {
+				id: "ars_nouveau:enchanting_apparatus"
+				count: 1
+			}
+			size: 1.5d
+			dependencies: [
+				"16F467F182FEE1BF"
+			]
+			tasks: [
+				{
+					id: "255147B9F5E57D8A"
+					type: "item"
+					item: {
+						id: "ars_nouveau:enchanting_apparatus"
+						count: 1
+					}
+					count: 1
+				}
+				{
+					id: "56226EC92F66D008"
+					type: "item"
+					item: {
+						id: "ars_nouveau:arcane_core"
+						count: 1
+					}
+					count: 1
+				}
+				{
+					id: "AC5843556BF367D3"
+					type: "item"
+					item: {
+						id: "ars_nouveau:arcane_pedestal"
+						count: 1
+					}
+					count: 4
+				}
+			]
+			rewards: [
+				{
+					id: "90419A28AFD28A20"
+					type: "loot"
+					table_id: "870211AF0E412C54"
+				}
+				{
+					id: "E6E5DC7C4725E42B"
+					type: "xp_levels"
+					xp_levels: 10
+				}
+			]
+		}
+		{
+			id: "B93E263D085A8C53"
+			x: 27.0d
+			y: -2.0d
+			title: "Starbuncle"
+			subtitle: "A small helper that carries items for you."
+			description: [
+				"Wild Starbuncles live in forests and love gold nuggets. Hold one out, let a Starbuncle take it, and it leaves a &6Starbuncle Token&r behind."
+				"Put the token in the apparatus with four gold ingots on the pedestals to get a &6Starbuncle Charm&r. Use the charm on the ground and your Starbuncle moves items from chest to chest, set up with the Dominion Wand."
+			]
+			icon: {
+				id: "ars_nouveau:starbuncle_charm"
+				count: 1
+			}
+			dependencies: [
+				"083250A2C01779E4"
+			]
+			tasks: [
+				{
+					id: "3B0810CC6FBFD01F"
+					type: "item"
+					item: {
+						id: "ars_nouveau:starbuncle_charm"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "42B08C926250F8D6"
+					type: "item"
+					item: {
+						id: "minecraft:gold_nugget"
+						count: 1
+					}
+					count: 32
+				}
+				{
+					id: "96DBFB6174C8B729"
+					type: "xp_levels"
+					xp_levels: 10
+				}
+			]
+		}
+		{
+			id: "7EA412607DB8DC09"
+			x: 27.0d
+			y: 2.0d
+			title: "Mage Trinkets"
+			subtitle: "More mana, faster mana."
+			description: [
+				"A &6Ring of Potential&r raises your maximum mana. Later rings and amulets from the apparatus add more mana and faster regeneration."
+			]
+			icon: {
+				id: "ars_nouveau:ring_of_potential"
+				count: 1
+			}
+			optional: true
+			dependencies: [
+				"083250A2C01779E4"
+			]
+			tasks: [
+				{
+					id: "52B7936196D9D3CF"
+					type: "item"
+					item: {
+						id: "ars_nouveau:ring_of_potential"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "03F7DA2A2546D613"
+					type: "item"
+					item: {
+						id: "ars_nouveau:source_gem"
+						count: 1
+					}
+					count: 8
+				}
+			]
+		}
+		{
+			id: "99F9C465FB0CFF5C"
+			x: 24.0d
+			y: 3.5d
+			title: "Dowsing Rod"
+			subtitle: "Find amethyst through walls."
+			description: [
+				"Use it and nearby Budding Amethyst lights up through the stone for a while. Ideal before a mining trip for Source Gems."
+			]
+			optional: true
+			dependencies: [
+				"083250A2C01779E4"
+			]
+			tasks: [
+				{
+					id: "612D6BE30FFE56FA"
+					type: "item"
+					item: {
+						id: "ars_nouveau:dowsing_rod"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "69835E6B738BC6D9"
+					type: "item"
+					item: {
+						id: "minecraft:amethyst_shard"
+						count: 1
+					}
+					count: 16
+				}
+			]
+		}
+		{
+			id: "3E9BF84C18A1F424"
+			x: 30.0d
+			y: 0.0d
+			title: "A Proper Mage"
+			subtitle: "Source running, altar built, gems for the server."
+			description: [
+				"You have a working Source setup and an altar. Put the extra gems into the community goal, and keep a stack for yourself: the next stage opens the Mage's Spell Book, Source Relays and rituals, and they all want gems."
+			]
+			icon: {
+				id: "ars_nouveau:source_gem_block"
+				count: 1
+			}
+			size: 1.75d
+			shape: "gear"
+			dependencies: [
+				"B93E263D085A8C53"
+			]
+			tasks: [
+				{
+					id: "EDA22DC9404C9437"
+					type: "item"
+					item: {
+						id: "ars_nouveau:source_gem_block"
+						count: 1
+					}
+					count: 4
+				}
+			]
+			rewards: [
+				{
+					id: "CB58B84138B55E86"
+					type: "loot"
+					table_id: "B5AA0F94577E6A3C"
+				}
+				{
+					id: "E51423D4BE633AFC"
+					type: "xp_levels"
+					xp_levels: 15
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,452 @@
+{
+	id: "0E77E388D0A9F0D1"
+	filename: "storage"
+	title: "Storage"
+	icon: {
+		id: "sophisticatedbackpacks:backpack"
+		count: 1
+	}
+	group: "E25CBCE1B745D8F7"
+	order_index: 5
+	default_quest_shape: "circle"
+	default_hide_dependency_lines: false
+	subtitle: [
+		"Backpacks, drawers and chests that grow with you."
+	]
+	quests: [
+		{
+			id: "B2930B06D06C5604"
+			x: 0.0d
+			y: 0.0d
+			title: "Storage"
+			subtitle: "Less time in chests, more time playing."
+			description: [
+				"Three mods keep your things in order: &6Sophisticated Backpacks&r for what you carry, &6Functional Storage&r drawers for bulk items, and &6Sophisticated Storage&r for chests and barrels that grow with you."
+				""
+				"Start with a backpack: leather around a chest."
+			]
+			icon: {
+				id: "sophisticatedbackpacks:backpack"
+				count: 1
+			}
+			size: 2.0d
+			shape: "hexagon"
+			tasks: [
+				{
+					id: "D9BBD88C2F3669F2"
+					type: "item"
+					item: {
+						id: "sophisticatedbackpacks:backpack"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "BE3C7932A6C25389"
+					type: "item"
+					item: {
+						id: "minecraft:leather"
+						count: 1
+					}
+					count: 8
+				}
+				{
+					id: "9DEBFE099B97491A"
+					type: "loot"
+					table_id: "1EBBC2B918151958"
+				}
+			]
+		}
+		{
+			id: "F113895AA38387CC"
+			x: 3.0d
+			y: -2.0d
+			title: "Upgrade Base"
+			subtitle: "Every backpack upgrade starts here."
+			description: [
+				"Backpacks take upgrades in the slots on the left of their screen. Each upgrade is crafted from an &6Upgrade Base&r."
+			]
+			icon: {
+				id: "sophisticatedbackpacks:upgrade_base"
+				count: 1
+			}
+			dependencies: [
+				"B2930B06D06C5604"
+			]
+			tasks: [
+				{
+					id: "0383E748B4468ED6"
+					type: "item"
+					item: {
+						id: "sophisticatedbackpacks:upgrade_base"
+						count: 1
+					}
+					count: 2
+				}
+			]
+			rewards: [
+				{
+					id: "B6AA17B5C00F35DE"
+					type: "item"
+					item: {
+						id: "minecraft:string"
+						count: 1
+					}
+					count: 16
+				}
+			]
+		}
+		{
+			id: "B18A03BA5EFDE940"
+			x: 6.0d
+			y: -3.5d
+			title: "Pickup Upgrade"
+			subtitle: "Items go straight into the backpack."
+			description: [
+				"With a Pickup Upgrade, anything you pick up lands in the backpack first. Add a filter so only the things you want end up there."
+			]
+			icon: {
+				id: "sophisticatedbackpacks:pickup_upgrade"
+				count: 1
+			}
+			dependencies: [
+				"F113895AA38387CC"
+			]
+			tasks: [
+				{
+					id: "A0CEBA61D1ADF9D4"
+					type: "item"
+					item: {
+						id: "sophisticatedbackpacks:pickup_upgrade"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "2105BEC1C225969C"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+		}
+		{
+			id: "B84B3705D44CD470"
+			x: 9.0d
+			y: -3.5d
+			title: "Magnet Upgrade"
+			subtitle: "Pulls nearby items to you."
+			description: [
+				"Everything that drops near you flies into the backpack. Perfect with Ultimine."
+			]
+			optional: true
+			dependencies: [
+				"B18A03BA5EFDE940"
+			]
+			tasks: [
+				{
+					id: "A1AA189972E94306"
+					type: "item"
+					item: {
+						id: "sophisticatedbackpacks:magnet_upgrade"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "47587DEE698EAB2B"
+					type: "item"
+					item: {
+						id: "minecraft:ender_pearl"
+						count: 1
+					}
+					count: 2
+				}
+			]
+		}
+		{
+			id: "A27B30EC8AC36F66"
+			x: 6.0d
+			y: -0.5d
+			title: "Crafting Upgrade"
+			subtitle: "A crafting grid you always carry."
+			description: [
+				"Adds a crafting grid to the backpack screen. You will never walk home for a table again."
+			]
+			optional: true
+			dependencies: [
+				"F113895AA38387CC"
+			]
+			tasks: [
+				{
+					id: "D9D5A835B858E3DB"
+					type: "item"
+					item: {
+						id: "sophisticatedbackpacks:crafting_upgrade"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "F9759EEFD4B0CCB2"
+					type: "item"
+					item: {
+						id: "minecraft:crafting_table"
+						count: 1
+					}
+					count: 1
+				}
+			]
+		}
+		{
+			id: "A70663EA49DDC090"
+			x: 3.0d
+			y: 2.0d
+			title: "Drawers"
+			subtitle: "Thousands of one item in one block."
+			description: [
+				"A &6Drawer&r holds one kind of item per slot, far more than a chest. Right click to put in what you hold, double click to put in all of it, left click to take a stack."
+				"They come in 1, 2 and 4 slot versions and every wood type."
+			]
+			icon: {
+				id: "functionalstorage:oak_1"
+				count: 1
+			}
+			dependencies: [
+				"B2930B06D06C5604"
+			]
+			tasks: [
+				{
+					id: "8566BA9085BB40A3"
+					type: "item"
+					item: {
+						id: "functionalstorage:oak_1"
+						count: 1
+					}
+					count: 4
+				}
+			]
+			rewards: [
+				{
+					id: "B0470A9A63CFFB51"
+					type: "item"
+					item: {
+						id: "minecraft:oak_log"
+						count: 1
+					}
+					count: 32
+				}
+			]
+		}
+		{
+			id: "A210E36ADA0F4B7C"
+			x: 6.0d
+			y: 2.0d
+			title: "Four at Once"
+			subtitle: "Four items per block, smaller stacks each."
+			description: [
+				"The 4 slot drawer is the best for many different ores and ingots in a small space."
+			]
+			icon: {
+				id: "functionalstorage:oak_4"
+				count: 1
+			}
+			dependencies: [
+				"A70663EA49DDC090"
+			]
+			tasks: [
+				{
+					id: "6202E74BB5391F30"
+					type: "item"
+					item: {
+						id: "functionalstorage:oak_4"
+						count: 1
+					}
+					count: 4
+				}
+			]
+			rewards: [
+				{
+					id: "C0EFE301855E62E0"
+					type: "item"
+					item: {
+						id: "minecraft:chest"
+						count: 1
+					}
+					count: 4
+				}
+			]
+		}
+		{
+			id: "44A8F4160E0A0FD1"
+			x: 3.0d
+			y: 5.0d
+			title: "Sophisticated Barrel"
+			subtitle: "A barrel that you can upgrade instead of replace."
+			description: [
+				"Sophisticated barrels and chests take tier upgrades: basic, copper, iron, gold, diamond, netherite. Each tier adds slots without breaking the block, so nothing inside has to move."
+				"They also take the same kind of upgrades as backpacks."
+			]
+			icon: {
+				id: "sophisticatedstorage:barrel"
+				count: 1
+			}
+			dependencies: [
+				"B2930B06D06C5604"
+			]
+			tasks: [
+				{
+					id: "05A69CE254EDF9A1"
+					type: "item"
+					item: {
+						id: "sophisticatedstorage:barrel"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "6FE1E07C891E0E16"
+					type: "item"
+					item: {
+						id: "minecraft:barrel"
+						count: 1
+					}
+					count: 4
+				}
+			]
+		}
+		{
+			id: "D8C129DB3D7AD17D"
+			x: 6.0d
+			y: 5.0d
+			title: "Iron Tier"
+			subtitle: "More room, same barrel."
+			description: [
+				"Use a tier upgrade on the barrel in the world. Everything stays inside."
+			]
+			icon: {
+				id: "sophisticatedstorage:basic_to_iron_tier_upgrade"
+				count: 1
+			}
+			dependencies: [
+				"44A8F4160E0A0FD1"
+			]
+			tasks: [
+				{
+					id: "6027CD5417BA49CC"
+					type: "item"
+					item: {
+						id: "sophisticatedstorage:basic_to_iron_tier_upgrade"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "50E4547E97D6713F"
+					type: "item"
+					item: {
+						id: "minecraft:iron_ingot"
+						count: 1
+					}
+					count: 16
+				}
+			]
+		}
+		{
+			id: "3D9AC8CB35883A98"
+			x: 9.0d
+			y: 5.0d
+			title: "Trash Can"
+			subtitle: "Deletes what you put into it."
+			description: [
+				"For the cobblestone you really do not need. Pipes and funnels can feed it too. Better: put cobblestone into the community goal first."
+			]
+			optional: true
+			dependencies: [
+				"D8C129DB3D7AD17D"
+			]
+			tasks: [
+				{
+					id: "6971CFA3CADC19A5"
+					type: "item"
+					item: {
+						id: "trashcans:item_trash_can"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "C6ACF359F3D35781"
+					type: "xp_levels"
+					xp_levels: 3
+				}
+			]
+		}
+		{
+			id: "901C3EC70E22F8DA"
+			x: 9.0d
+			y: 2.0d
+			title: "Organised"
+			subtitle: "A base where you find things."
+			description: [
+				"A wall of drawers for bulk items, a few barrels for everything else, and a backpack for the trip."
+				"Stage 2 opens iron and copper backpacks, compacting drawers (nuggets to ingots to blocks, all in one) and drawer upgrades."
+			]
+			icon: {
+				id: "functionalstorage:oak_4"
+				count: 1
+			}
+			size: 1.5d
+			shape: "gear"
+			dependencies: [
+				"A210E36ADA0F4B7C"
+				"D8C129DB3D7AD17D"
+			]
+			tasks: [
+				{
+					id: "EBBFB68C89592748"
+					type: "item"
+					item: {
+						id: "functionalstorage:oak_4"
+						count: 1
+					}
+					count: 8
+				}
+				{
+					id: "50F2041ACA7A9B1C"
+					type: "item"
+					item: {
+						id: "sophisticatedstorage:barrel"
+						count: 1
+					}
+					count: 4
+				}
+			]
+			rewards: [
+				{
+					id: "F41797FE037D5FAE"
+					type: "loot"
+					table_id: "870211AF0E412C54"
+				}
+				{
+					id: "A0A0BD1CC73FCE45"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+		}
+	]
+}

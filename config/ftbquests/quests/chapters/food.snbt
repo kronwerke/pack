@@ -1,0 +1,434 @@
+{
+	id: "D8CFBE2010B681F3"
+	filename: "food"
+	title: "Food and Farming"
+	icon: {
+		id: "farmersdelight:cooking_pot"
+		count: 1
+	}
+	group: "D1C7157F1269A7DC"
+	order_index: 4
+	default_quest_shape: "circle"
+	default_hide_dependency_lines: false
+	subtitle: [
+		"Crops, cooking and meals that last."
+	]
+	quests: [
+		{
+			id: "F51007087FB0E302"
+			x: 0.0d
+			y: 0.0d
+			title: "Food and Farming"
+			subtitle: "Better food keeps you going longer."
+			description: [
+				"Farmer's Delight adds real cooking: new crops, a cutting board, a cooking pot and meals that feed you for a long time and give useful effects."
+				""
+				"Start with a knife. A &6Flint Knife&r is flint and a stick, and it also cuts &6Straw&r from grass and wheat."
+			]
+			icon: {
+				id: "farmersdelight:cooking_pot"
+				count: 1
+			}
+			size: 2.0d
+			shape: "hexagon"
+			tasks: [
+				{
+					id: "B377113B844909E4"
+					type: "item"
+					item: {
+						id: "farmersdelight:flint_knife"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "65F3A1C263A0F964"
+					type: "item"
+					item: {
+						id: "minecraft:bread"
+						count: 1
+					}
+					count: 16
+				}
+				{
+					id: "6EBDD8CF5BB726D3"
+					type: "loot"
+					table_id: "1EBBC2B918151958"
+				}
+			]
+		}
+		{
+			id: "AC863CF9CBF64D84"
+			x: 3.0d
+			y: -2.0d
+			title: "Cutting Board"
+			subtitle: "Place an item, click with a knife, get more out of it."
+			description: [
+				"Put food on the board and use a knife on it to slice it. With an axe it strips logs and gives bark, with a pickaxe it breaks blocks down."
+			]
+			icon: {
+				id: "farmersdelight:cutting_board"
+				count: 1
+			}
+			dependencies: [
+				"F51007087FB0E302"
+			]
+			tasks: [
+				{
+					id: "47EA095722AD7556"
+					type: "item"
+					item: {
+						id: "farmersdelight:cutting_board"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "F1C223E00C83ECBF"
+					type: "item"
+					item: {
+						id: "minecraft:beef"
+						count: 1
+					}
+					count: 8
+				}
+			]
+		}
+		{
+			id: "BC1DC875978EE9AF"
+			x: 3.0d
+			y: 2.0d
+			title: "Wild Crops"
+			subtitle: "Tomatoes, onions and cabbage grow wild."
+			description: [
+				"Wild crops grow in small patches all over the world. Break them for the crop and plant it at home. Cabbage and beets like the coast, tomatoes like it warm."
+			]
+			icon: {
+				id: "farmersdelight:tomato"
+				count: 1
+			}
+			dependencies: [
+				"F51007087FB0E302"
+			]
+			tasks: [
+				{
+					id: "EF26D2D73A560E86"
+					type: "item"
+					item: {
+						id: "farmersdelight:tomato"
+						count: 1
+					}
+					count: 4
+				}
+				{
+					id: "2E9657C0AE28229B"
+					type: "item"
+					item: {
+						id: "farmersdelight:onion"
+						count: 1
+					}
+					count: 4
+				}
+				{
+					id: "F9DA6E9DBC7099B8"
+					type: "item"
+					item: {
+						id: "farmersdelight:cabbage"
+						count: 1
+					}
+					count: 4
+				}
+			]
+			rewards: [
+				{
+					id: "A400D948117B0A8C"
+					type: "item"
+					item: {
+						id: "minecraft:bone_meal"
+						count: 1
+					}
+					count: 32
+				}
+			]
+		}
+		{
+			id: "E0B99A902858CDE1"
+			x: 6.0d
+			y: 4.0d
+			title: "Rice"
+			subtitle: "Grows in water."
+			description: [
+				"Wild rice grows in shallow water in swamps and along rivers. Plant it in water one block deep."
+			]
+			optional: true
+			dependencies: [
+				"BC1DC875978EE9AF"
+			]
+			tasks: [
+				{
+					id: "46CE43BFD91FD7C6"
+					type: "item"
+					item: {
+						id: "farmersdelight:rice"
+						count: 1
+					}
+					count: 8
+				}
+			]
+			rewards: [
+				{
+					id: "649A672FA76D3CD8"
+					type: "item"
+					item: {
+						id: "minecraft:water_bucket"
+						count: 1
+					}
+					count: 1
+				}
+			]
+		}
+		{
+			id: "0287814A6B11B2A7"
+			x: 6.0d
+			y: 0.0d
+			title: "Cooking Pot"
+			subtitle: "Soups, stews and meals that last."
+			description: [
+				"The pot needs heat underneath: a campfire, a &6Stove&r, or fire. Put the ingredients in, and a bowl in the container slot to serve."
+				"Meals give &6Nourishment&r (your food bar does not drop while it lasts) or &6Comfort&r (you regenerate however hungry you are)."
+			]
+			icon: {
+				id: "farmersdelight:cooking_pot"
+				count: 1
+			}
+			size: 1.5d
+			dependencies: [
+				"AC863CF9CBF64D84"
+				"BC1DC875978EE9AF"
+			]
+			tasks: [
+				{
+					id: "84B2849A081EAA82"
+					type: "item"
+					item: {
+						id: "farmersdelight:cooking_pot"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "0E2AB83816F62EBF"
+					type: "item"
+					item: {
+						id: "minecraft:bowl"
+						count: 1
+					}
+					count: 16
+				}
+				{
+					id: "572C6D6E8F13525B"
+					type: "item"
+					item: {
+						id: "minecraft:campfire"
+						count: 1
+					}
+					count: 1
+				}
+			]
+		}
+		{
+			id: "E2138A2006D79652"
+			x: 9.0d
+			y: 0.0d
+			title: "A Proper Meal"
+			subtitle: "Your first soup."
+			description: [
+				"A Vegetable Soup is easy and filling. Try the other recipes in JEI, they get better as you go."
+			]
+			icon: {
+				id: "farmersdelight:vegetable_soup"
+				count: 1
+			}
+			dependencies: [
+				"0287814A6B11B2A7"
+			]
+			tasks: [
+				{
+					id: "59079A77752528CC"
+					type: "item"
+					item: {
+						id: "farmersdelight:vegetable_soup"
+						count: 1
+					}
+					count: 4
+				}
+			]
+			rewards: [
+				{
+					id: "E46657B521CF3C91"
+					type: "loot"
+					table_id: "1EBBC2B918151958"
+				}
+			]
+		}
+		{
+			id: "2AF056B9F6C4C265"
+			x: 9.0d
+			y: -3.5d
+			title: "Rich Soil"
+			subtitle: "Crops grow faster on it."
+			description: [
+				"&6Organic Compost&r slowly turns into &6Rich Soil&r. Sun, water and mushrooms nearby make it go faster. Crops on Rich Soil grow faster, and mushrooms grow into colonies on it."
+			]
+			optional: true
+			dependencies: [
+				"0287814A6B11B2A7"
+			]
+			tasks: [
+				{
+					id: "B1590DC3F6856049"
+					type: "item"
+					item: {
+						id: "farmersdelight:rich_soil"
+						count: 1
+					}
+					count: 8
+				}
+			]
+			rewards: [
+				{
+					id: "E0EA1BE482B4D222"
+					type: "item"
+					item: {
+						id: "minecraft:bone_meal"
+						count: 1
+					}
+					count: 32
+				}
+			]
+		}
+		{
+			id: "35E0D97B53024C13"
+			x: 12.0d
+			y: 0.0d
+			title: "The Market"
+			subtitle: "Buy seeds and saplings for emeralds."
+			description: [
+				"A &6Market&r sells seeds, saplings and flowers from all over the world. Handy for crops you cannot find nearby."
+			]
+			icon: {
+				id: "farmingforblockheads:market"
+				count: 1
+			}
+			dependencies: [
+				"E2138A2006D79652"
+			]
+			tasks: [
+				{
+					id: "E81338ECFDCDABBB"
+					type: "item"
+					item: {
+						id: "farmingforblockheads:market"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "DDDE852CBF356886"
+					type: "item"
+					item: {
+						id: "minecraft:emerald"
+						count: 1
+					}
+					count: 8
+				}
+			]
+		}
+		{
+			id: "3D38098805E2696B"
+			x: 12.0d
+			y: 3.5d
+			title: "Better Fishing"
+			subtitle: "New fish, new rods."
+			description: [
+				"Aquaculture adds fish for every biome, better rods and a tackle box. An iron rod is enough to start."
+			]
+			optional: true
+			dependencies: [
+				"E2138A2006D79652"
+			]
+			tasks: [
+				{
+					id: "6742DE1606C19A7D"
+					type: "item"
+					item: {
+						id: "aquaculture:iron_fishing_rod"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "334B89A53711799D"
+					type: "item"
+					item: {
+						id: "minecraft:cod"
+						count: 1
+					}
+					count: 16
+				}
+			]
+		}
+		{
+			id: "B60FB7B19FDD6C68"
+			x: 15.0d
+			y: 0.0d
+			title: "A Full Pantry"
+			subtitle: "Cook for the whole base."
+			description: [
+				"A pot of stew for everyone who plays with you. Later, with Create's brass machines, Create Central Kitchen lets you automate the cooking."
+			]
+			icon: {
+				id: "farmersdelight:vegetable_soup"
+				count: 1
+			}
+			size: 1.5d
+			shape: "gear"
+			dependencies: [
+				"35E0D97B53024C13"
+			]
+			tasks: [
+				{
+					id: "98A55A66236DDFA0"
+					type: "item"
+					item: {
+						id: "farmersdelight:vegetable_soup"
+						count: 1
+					}
+					count: 16
+				}
+			]
+			rewards: [
+				{
+					id: "3DAB7F88DFD37873"
+					type: "loot"
+					table_id: "870211AF0E412C54"
+				}
+				{
+					id: "D81665A7F250DABB"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+		}
+	]
+}

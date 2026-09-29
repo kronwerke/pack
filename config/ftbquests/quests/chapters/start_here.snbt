@@ -1,0 +1,389 @@
+{
+	id: "CF96B048882A141A"
+	filename: "start_here"
+	title: "Start Here"
+	icon: {
+		id: "ftbquests:book"
+		count: 1
+	}
+	group: "520042A0F9159BC8"
+	order_index: 0
+	default_quest_shape: "circle"
+	default_hide_dependency_lines: false
+	subtitle: [
+		"What Kronwerke is and what everyone needs on day one."
+	]
+	quests: [
+		{
+			id: "64C1A6A6E06565BE"
+			x: 0.0d
+			y: 0.0d
+			title: "Welcome to Kronwerke"
+			subtitle: "One world, many streamers, and a server that grows together."
+			description: [
+				"Kronwerke Season 2 is a tech and magic pack where nothing important is unlocked by a single player. The whole server works on one goal at a time, and when it is reached, the next stage opens for everyone."
+				""
+				"This book walks you through all of it. Each chapter is one mod or one theme. Quests show you what to do next, and most of them pay out in crates."
+				""
+				"&6Tip:&r Crates open with a right click. Stone, Iron and Gold crates get better in that order."
+			]
+			icon: {
+				id: "ftbquests:book"
+				count: 1
+			}
+			size: 2.0d
+			shape: "hexagon"
+			tasks: [
+				{
+					id: "D3A24673DA264C80"
+					type: "checkmark"
+					title: "Let's go"
+				}
+			]
+			rewards: [
+				{
+					id: "8B31F11DF4A942CA"
+					type: "item"
+					item: {
+						id: "minecraft:bread"
+						count: 1
+					}
+					count: 16
+				}
+				{
+					id: "585E7482013A5D66"
+					type: "loot"
+					table_id: "1EBBC2B918151958"
+				}
+			]
+		}
+		{
+			id: "10D4838444517A77"
+			x: 3.0d
+			y: -2.0d
+			title: "Stages"
+			subtitle: "Five stages, opened by the whole server, one after another."
+			description: [
+				"The season has five stages: &6Steinwerk&r, &6Messingwerk&r, &6Stahlwerk&r, &6Sternwerk&r and &6Chaoswerk&r. Right now you are in Steinwerk: stone, water wheels and your first spells."
+				""
+				"Items that belong to a later stage are locked until the server opens that stage. Look them up in JEI and plan ahead."
+				""
+				"Type &e/kw goals&r to see what the server needs for the next stage."
+			]
+			icon: {
+				id: "minecraft:stone_bricks"
+				count: 1
+			}
+			dependencies: [
+				"64C1A6A6E06565BE"
+			]
+			tasks: [
+				{
+					id: "B09F790E991FD8E1"
+					type: "checkmark"
+					title: "Got it"
+				}
+			]
+			rewards: [
+				{
+					id: "5CB9806859CE35CA"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+		}
+		{
+			id: "FD58A1A1E024FADD"
+			x: 6.0d
+			y: -2.0d
+			title: "The Community Goal"
+			subtitle: "Everyone pays in. When it is full, the next stage opens."
+			description: [
+				"Each goal has a &btech&r half and a &dmagic&r half, and both have to fill. The first one also wants cobblestone from everyone. Hold the item and type &e/kw deposit&r, or &e/kw deposit all&r to put in everything that fits."
+				""
+				"At 98 percent the goal stops. The team sets a date, every streamer goes live, and the last items go in together on stream. That is when the next stage opens."
+				""
+				"&e/kw top&r shows who has put in the most so far."
+			]
+			icon: {
+				id: "minecraft:lodestone"
+				count: 1
+			}
+			dependencies: [
+				"10D4838444517A77"
+			]
+			tasks: [
+				{
+					id: "2B2255BD086087F6"
+					type: "checkmark"
+					title: "I know how to deposit"
+				}
+			]
+			rewards: [
+				{
+					id: "3FE16759C35B092D"
+					type: "item"
+					item: {
+						id: "minecraft:cobblestone"
+						count: 1
+					}
+					count: 64
+				}
+				{
+					id: "5FEA5AE4FDE3B62E"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+		}
+		{
+			id: "323DA4696A169972"
+			x: 3.0d
+			y: 2.0d
+			title: "Your Origin"
+			subtitle: "Pick who you are. It changes how you play."
+			description: [
+				"When you joined, you picked an origin. Each one has strengths and weaknesses, and some of them change which parts of the pack come easy to you."
+				""
+				"If you are not sure yet, play a few evenings with it. Streamers and team can help you if you really picked something that does not fit."
+			]
+			icon: {
+				id: "minecraft:player_head"
+				count: 1
+			}
+			dependencies: [
+				"64C1A6A6E06565BE"
+			]
+			tasks: [
+				{
+					id: "98085380F8CD8553"
+					type: "checkmark"
+					title: "I picked my origin"
+				}
+			]
+			rewards: [
+				{
+					id: "40BC1411730D6935"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+		}
+		{
+			id: "C34D1A5F7845E3C4"
+			x: 6.0d
+			y: 2.0d
+			title: "Claim Your Base"
+			subtitle: "Protect the place you build."
+			description: [
+				"Open the FTB Chunks map (&eM&r by default) and drag over the chunks you want to claim. Nobody outside your team can break or open anything in them."
+				""
+				"Everyone gets a small number of claims, so claim your base, not the whole valley."
+			]
+			icon: {
+				id: "minecraft:filled_map"
+				count: 1
+			}
+			dependencies: [
+				"323DA4696A169972"
+			]
+			tasks: [
+				{
+					id: "2A405AA49ACEE81D"
+					type: "checkmark"
+					title: "My base is claimed"
+				}
+			]
+			rewards: [
+				{
+					id: "6A423BBFCD231D98"
+					type: "loot"
+					table_id: "1EBBC2B918151958"
+				}
+			]
+		}
+		{
+			id: "65D9AC8001316466"
+			x: 9.0d
+			y: 2.0d
+			title: "A Place to Sleep"
+			subtitle: "Sleep anywhere without resetting your spawn."
+			description: [
+				"A &6Sleeping Bag&r lets you skip the night on a trip without moving your spawn point. A &6Hammock&r does the same for the day."
+				"Both are made from wool and string. Any colour works."
+			]
+			icon: {
+				id: "comforts:sleeping_bag_red"
+				count: 1
+			}
+			optional: true
+			dependencies: [
+				"C34D1A5F7845E3C4"
+			]
+			tasks: [
+				{
+					id: "FB807548C3B5D6B2"
+					type: "checkmark"
+					title: "I have one"
+				}
+			]
+			rewards: [
+				{
+					id: "4A18858A8947CA6B"
+					type: "item"
+					item: {
+						id: "minecraft:cooked_beef"
+						count: 1
+					}
+					count: 16
+				}
+			]
+		}
+		{
+			id: "C7C5EB0C6155681C"
+			x: 9.0d
+			y: -2.0d
+			title: "When You Die"
+			subtitle: "Your things wait for you where you fell."
+			description: [
+				"When you die, your body stays where you fell, with everything you carried. Walk back and open it to get your things back."
+				""
+				"The Mining Dimension, the deep caves and the new structures are dangerous. Write down coordinates before you go down."
+			]
+			icon: {
+				id: "minecraft:skeleton_skull"
+				count: 1
+			}
+			dependencies: [
+				"FD58A1A1E024FADD"
+			]
+			tasks: [
+				{
+					id: "BDD0E1C1FE907808"
+					type: "checkmark"
+					title: "Understood"
+				}
+			]
+			rewards: [
+				{
+					id: "BCE20D116255BA92"
+					type: "item"
+					item: {
+						id: "minecraft:golden_apple"
+						count: 1
+					}
+					count: 1
+				}
+			]
+		}
+		{
+			id: "0A57B7461C996076"
+			x: 12.0d
+			y: -2.0d
+			title: "Ultimine"
+			subtitle: "Mine a whole vein at once."
+			description: [
+				"Hold the Ultimine key (&e`&r, the key left of 1, by default) while you break a block, and every matching block around it goes with it: whole ore veins, whole trees, a row of stone."
+				"It costs hunger, so bring food."
+			]
+			icon: {
+				id: "minecraft:iron_pickaxe"
+				count: 1
+			}
+			dependencies: [
+				"C7C5EB0C6155681C"
+			]
+			tasks: [
+				{
+					id: "2AA3E17AD7DFA553"
+					type: "checkmark"
+					title: "Tried it"
+				}
+			]
+			rewards: [
+				{
+					id: "A4ABF43F3969B443"
+					type: "item"
+					item: {
+						id: "minecraft:iron_pickaxe"
+						count: 1
+					}
+					count: 1
+				}
+			]
+		}
+		{
+			id: "1339C8691665B28F"
+			x: 12.0d
+			y: 2.0d
+			title: "Talk to People"
+			subtitle: "Proximity voice chat is on."
+			description: [
+				"Players near you can hear you, players far away cannot. Press &eV&r for the voice chat settings, pick your microphone and set push to talk if you prefer."
+				""
+				"The Discord is still where the season is organised. Events, dates and the community goal are announced there first."
+			]
+			icon: {
+				id: "minecraft:note_block"
+				count: 1
+			}
+			optional: true
+			dependencies: [
+				"65D9AC8001316466"
+			]
+			tasks: [
+				{
+					id: "502A0D3CFD172CC6"
+					type: "checkmark"
+					title: "Set up"
+				}
+			]
+			rewards: [
+				{
+					id: "93EA02D59BA86C54"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+		}
+		{
+			id: "4E5622B948A6389B"
+			x: 15.0d
+			y: 0.0d
+			title: "Pick a Path"
+			subtitle: "Tech, magic, or both. The server needs both."
+			description: [
+				"You are ready. Three chapters are the backbone of this stage:"
+				""
+				"&6Create&r for rotation, belts and the first machines. The tech half of the goal needs Andesite Alloy."
+				"&dArs Nouveau&r for spells and Source. The magic half of the goal needs Source Gems."
+				"&aBotania&r for flowers and mana. It is the start of a long road that pays off in later stages."
+				""
+				"Pick one to start. You will want all three before long."
+			]
+			icon: {
+				id: "minecraft:compass"
+				count: 1
+			}
+			size: 1.5d
+			shape: "gear"
+			dependencies: [
+				"0A57B7461C996076"
+			]
+			tasks: [
+				{
+					id: "EE1E729153284678"
+					type: "checkmark"
+					title: "On my way"
+				}
+			]
+			rewards: [
+				{
+					id: "D7E29384C822370A"
+					type: "loot"
+					table_id: "870211AF0E412C54"
+				}
+			]
+		}
+	]
+}

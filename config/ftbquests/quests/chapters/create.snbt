@@ -7,7 +7,7 @@
 		count: 1
 	}
 	group: "AEAA9718BAF5A32A"
-	order_index: 0
+	order_index: 1
 	default_quest_shape: "gear"
 	default_hide_dependency_lines: false
 	subtitle: [
@@ -53,7 +53,7 @@
 				{
 					id: "F5A82B1E86502A85"
 					type: "loot"
-					table_id: "27B22058501FC0DC"
+					table_id: "1EBBC2B918151958"
 				}
 			]
 		}
@@ -65,7 +65,7 @@
 			subtitle: "The stuff every Create block starts with."
 			description: [
 				"Craft &6Andesite&r with &6Iron Nuggets&r or &6Zinc Nuggets&r in the crafting table. Two alloy per craft."
-				"You will need hundreds of these. Andesite is common under y=0 and in the Mining Dimension."
+				"You will need hundreds of these. Andesite is common in the stone layer above the deepslate, in big patches."
 			]
 			dependencies: [
 				"65568FD704BF8034"
@@ -136,7 +136,7 @@
 			subtitle: "Turns corners and changes speed."
 			description: [
 				"Two cogwheels next to each other pass rotation sideways and flip the direction."
-				"A small cogwheel driving a large one halves the speed and doubles the stress capacity. The other way round doubles the speed."
+				"A small cogwheel driving a large one halves the speed, a large one driving a small one doubles it. Faster machines work faster but need more stress capacity."
 			]
 			dependencies: [
 				"D714EBDF3126946C"
@@ -304,7 +304,7 @@
 				{
 					id: "476E75E8DE3C05B4"
 					type: "loot"
-					table_id: "27B22058501FC0DC"
+					table_id: "1EBBC2B918151958"
 				}
 			]
 		}
@@ -359,7 +359,7 @@
 				{
 					id: "33FF2A83180B38B6"
 					type: "loot"
-					table_id: "AC273A09128CA2CE"
+					table_id: "870211AF0E412C54"
 				}
 			]
 		}
@@ -415,7 +415,7 @@
 			title: "Encased Fan"
 			subtitle: "Wash, smelt and smoke with air."
 			description: [
-				"Point an &6Encased Fan&r through water and drop items into the stream: gravel washes into flint and iron nuggets, sand into clay, soul sand into quartz."
+				"Point an &6Encased Fan&r through water and drop items into the stream: gravel washes into flint and iron nuggets, sand into clay, red sand into gold nuggets."
 				"Through lava it smelts, through fire it smokes. No fuel needed, just rotation."
 			]
 			dependencies: [
@@ -445,7 +445,7 @@
 				{
 					id: "7EBE49F0E425E5AB"
 					type: "loot"
-					table_id: "27B22058501FC0DC"
+					table_id: "1EBBC2B918151958"
 				}
 			]
 		}
@@ -492,15 +492,15 @@
 					id: "A0B3EA686B4D456B"
 					type: "item"
 					item: {
-						id: "create:brass_ingot"
+						id: "create:andesite_alloy"
 						count: 1
 					}
-					count: 4
+					count: 32
 				}
 				{
 					id: "4E52025222B41667"
 					type: "loot"
-					table_id: "AC273A09128CA2CE"
+					table_id: "870211AF0E412C54"
 				}
 			]
 		}
@@ -556,7 +556,7 @@
 				{
 					id: "59EB9938DA7E773D"
 					type: "loot"
-					table_id: "A10FC6DF600A063E"
+					table_id: "B5AA0F94577E6A3C"
 				}
 				{
 					id: "DD481CF00D2B1ADA"

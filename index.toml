@@ -5,28 +5,52 @@ file = "config/ftbquests/quests/chapter_groups.snbt"
 hash = "3cb744a8a9292690692714bdb07ec95625f3313c1fdc94d0124ca9ecabaa00b9"
 
 [[files]]
+file = "config/ftbquests/quests/chapters/ars_nouveau.snbt"
+hash = "1460709c833891873f64dec2e919b80f0808b89e50539e449c3938d1b4320396"
+
+[[files]]
+file = "config/ftbquests/quests/chapters/botania.snbt"
+hash = "8a545d4575cb77f85a54d0e4b89173d187ccaebc3c496fa679058c2b07401539"
+
+[[files]]
 file = "config/ftbquests/quests/chapters/create.snbt"
-hash = "5b2427a9a2c5fb91362b4d756a6c629edecc5d8e0eff294e28eeb585fabc28f4"
+hash = "7c2b4c46b9518a61036391429c47a8a2d63e712c7065157ac5f749efbf72da56"
+
+[[files]]
+file = "config/ftbquests/quests/chapters/exploration.snbt"
+hash = "9b5d3c334577e9184f4ac5898e7e18650fea4c914c494157feaabcd49d623e5a"
+
+[[files]]
+file = "config/ftbquests/quests/chapters/food.snbt"
+hash = "6741db76143d6c5909d0d6d457d0869bf24ce3b982253cbaa0b6a9f5caa355ae"
+
+[[files]]
+file = "config/ftbquests/quests/chapters/silent_gear.snbt"
+hash = "1cfcf07f8080ed90d569d049349a31d4a58ea10c3d6ca1b0cdd5697e895561ad"
+
+[[files]]
+file = "config/ftbquests/quests/chapters/start_here.snbt"
+hash = "744aa170fa4afd410ff7b161079bd37233ef83744604c852af2175134b774b73"
+
+[[files]]
+file = "config/ftbquests/quests/chapters/storage.snbt"
+hash = "93a9002bf6c2bf396d0c35dc36df2edb3ad87bbc7923b1aefe9e9444877ba762"
 
 [[files]]
 file = "config/ftbquests/quests/data.snbt"
 hash = "93c982c2e09101877cba15ed69d2eee71ed5be2243ee8dcdcc0734845932c8b6"
 
 [[files]]
-file = "config/ftbquests/quests/reward_tables/common.snbt"
-hash = "e95b7f4da510ac4ad8d05426fe082b50ab0f45ea4565facbc9a6abeda6794a61"
+file = "config/ftbquests/quests/reward_tables/s1_common.snbt"
+hash = "63f646883f7fa0a95b60dad355f0ddd0d454d34124406fa62965f0af744ca5d7"
 
 [[files]]
-file = "config/ftbquests/quests/reward_tables/epic.snbt"
-hash = "e440bf40e24925dc786eb814320eb7273ae48706cc1a9bee083c99651da8a09b"
+file = "config/ftbquests/quests/reward_tables/s1_rare.snbt"
+hash = "8872c89db6a934876bdecf069e2c92476f19d860581ca95593d0133684d92645"
 
 [[files]]
-file = "config/ftbquests/quests/reward_tables/rare.snbt"
-hash = "0d62bb2119e4e125d6bd0628e82e32e69737fac4de89687f7a6fb5e27f44c0e2"
-
-[[files]]
-file = "config/ftbquests/quests/reward_tables/uncommon.snbt"
-hash = "f53e6a78d5b0c05f5d33124eafc01fab92a15febe075d329c1b1f4ddc7111973"
+file = "config/ftbquests/quests/reward_tables/s1_uncommon.snbt"
+hash = "18fd4b49af922fbdc1391e7e3556da8711b4ebe294c45a37d054ab3af69909c8"
 
 [[files]]
 file = "config/kronwerke/goals.json"
@@ -47,6 +71,10 @@ hash = "fa212c32a123ae485a19383ad90b8226d035d71d5be9e36544fd9bdd8a200bdc"
 [[files]]
 file = "kubejs/data/kronwerke/chapters/stages/stage5.json"
 hash = "4a8a2938866229e9cdbd9f3cf1e590c451db2a633db0bac453a99b0e3db13efe"
+
+[[files]]
+file = "kubejs/server_scripts/mining_dimension.js"
+hash = "de43c703226e741dc1d6d8099fa96310d4a8f9d80b3c5d21761b64dc05b99df4"
 
 [[files]]
 file = "mods/additional-enchanted-miner.pw.toml"

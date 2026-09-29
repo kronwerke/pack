@@ -1,0 +1,420 @@
+{
+	id: "74275127051E7775"
+	filename: "silent_gear"
+	title: "Silent Gear"
+	icon: {
+		id: "silentgear:pickaxe"
+		count: 1
+	}
+	group: "E25CBCE1B745D8F7"
+	order_index: 6
+	default_quest_shape: "circle"
+	default_hide_dependency_lines: false
+	subtitle: [
+		"Tools built from parts."
+	]
+	quests: [
+		{
+			id: "EAAAFD04D2721064"
+			x: 0.0d
+			y: 0.0d
+			title: "Silent Gear"
+			subtitle: "Tools made from parts. The material decides everything."
+			description: [
+				"A Silent Gear tool is a head and a rod, plus extras like a binding or a grip. Every material gives its own stats and traits, and you can mix them."
+				""
+				"It starts with dirt and cobblestone. Craft &6Crude Tool Parts&r: cobblestone, dirt and a stick."
+			]
+			icon: {
+				id: "silentgear:pickaxe"
+				count: 1
+			}
+			size: 2.0d
+			shape: "hexagon"
+			tasks: [
+				{
+					id: "38FC04832D0B9F5C"
+					type: "item"
+					item: {
+						id: "silentgear:crude_tool_parts"
+						count: 1
+					}
+					count: 4
+				}
+			]
+			rewards: [
+				{
+					id: "A1012D775F1911C2"
+					type: "item"
+					item: {
+						id: "minecraft:cobblestone"
+						count: 1
+					}
+					count: 32
+				}
+				{
+					id: "3B294AA0E28725C0"
+					type: "loot"
+					table_id: "1EBBC2B918151958"
+				}
+			]
+		}
+		{
+			id: "D410F345AE764B6F"
+			x: 3.0d
+			y: -2.0d
+			title: "Stone Anvil"
+			subtitle: "A workbench for knives."
+			description: [
+				"Cobblestone and dirt. Place a log on it and cut it with a knife."
+			]
+			icon: {
+				id: "silentgear:stone_anvil"
+				count: 1
+			}
+			dependencies: [
+				"EAAAFD04D2721064"
+			]
+			tasks: [
+				{
+					id: "FD80238299DDE5D4"
+					type: "item"
+					item: {
+						id: "silentgear:stone_anvil"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "5F21EAA763A5F05E"
+					type: "item"
+					item: {
+						id: "minecraft:oak_log"
+						count: 1
+					}
+					count: 16
+				}
+			]
+		}
+		{
+			id: "C30E48223DAFD0CA"
+			x: 3.0d
+			y: 2.0d
+			title: "Crude Knife"
+			subtitle: "Cuts logs into template boards."
+			description: [
+				"Cobblestone and Crude Tool Parts. It breaks after a while, so make two."
+			]
+			icon: {
+				id: "silentgear:crude_knife"
+				count: 1
+			}
+			dependencies: [
+				"EAAAFD04D2721064"
+			]
+			tasks: [
+				{
+					id: "3DA35F197A0E1D6B"
+					type: "item"
+					item: {
+						id: "silentgear:crude_knife"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "37A207CA7811B88C"
+					type: "xp_levels"
+					xp_levels: 3
+				}
+			]
+		}
+		{
+			id: "26AD2EADF99F03A3"
+			x: 6.0d
+			y: 0.0d
+			title: "Template Boards"
+			subtitle: "Six boards from one log."
+			description: [
+				"Put a log on the Stone Anvil and use the knife on it. Boards become templates, templates become tool heads."
+			]
+			icon: {
+				id: "silentgear:template_board"
+				count: 1
+			}
+			dependencies: [
+				"D410F345AE764B6F"
+				"C30E48223DAFD0CA"
+			]
+			tasks: [
+				{
+					id: "D6418199364E7827"
+					type: "item"
+					item: {
+						id: "silentgear:template_board"
+						count: 1
+					}
+					count: 12
+				}
+			]
+			rewards: [
+				{
+					id: "C9538B14D9559FE4"
+					type: "item"
+					item: {
+						id: "minecraft:oak_log"
+						count: 1
+					}
+					count: 16
+				}
+			]
+		}
+		{
+			id: "BC51CB31BC04BCF8"
+			x: 9.0d
+			y: -2.0d
+			title: "Rods"
+			subtitle: "The handle of every tool."
+			description: [
+				"A &6Rod Template&r and two sticks make four rods. Better rods (iron, bone, blaze) add their own stats later."
+			]
+			icon: {
+				id: "silentgear:rod"
+				count: 1
+			}
+			dependencies: [
+				"26AD2EADF99F03A3"
+			]
+			tasks: [
+				{
+					id: "3DD08E2EBD9AE29F"
+					type: "item"
+					item: {
+						id: "silentgear:rod"
+						count: 1
+					}
+					count: 4
+				}
+			]
+			rewards: [
+				{
+					id: "CE1221B54C6EC165"
+					type: "item"
+					item: {
+						id: "minecraft:stick"
+						count: 1
+					}
+					count: 32
+				}
+			]
+		}
+		{
+			id: "74D5258ACC4A915E"
+			x: 9.0d
+			y: 2.0d
+			title: "Pickaxe Head"
+			subtitle: "A template and three of the same material."
+			description: [
+				"Craft a &6Pickaxe Template&r from boards and sticks, then put it in the grid with three ingots or gems of one material. Iron is a good start."
+				"Templates are used up. A &6Blueprint&r made from Blueprint Paper does the same and can be used forever."
+			]
+			icon: {
+				id: "silentgear:pickaxe_head"
+				count: 1
+			}
+			dependencies: [
+				"26AD2EADF99F03A3"
+			]
+			tasks: [
+				{
+					id: "5B8799B57D62623F"
+					type: "item"
+					item: {
+						id: "silentgear:pickaxe_head"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "162F805DF2DFDFB8"
+					type: "item"
+					item: {
+						id: "minecraft:iron_ingot"
+						count: 1
+					}
+					count: 8
+				}
+			]
+		}
+		{
+			id: "8CB746E24B79A224"
+			x: 12.0d
+			y: 0.0d
+			title: "Your Own Pickaxe"
+			subtitle: "Head plus rod."
+			description: [
+				"Put the head and a rod in the crafting grid. Hover over the pickaxe to see its stats and traits. When it breaks, it does not vanish: it stays broken until you repair it."
+			]
+			icon: {
+				id: "silentgear:pickaxe"
+				count: 1
+			}
+			size: 1.5d
+			dependencies: [
+				"BC51CB31BC04BCF8"
+				"74D5258ACC4A915E"
+			]
+			tasks: [
+				{
+					id: "E3C3E57CA08EA978"
+					type: "item"
+					item: {
+						id: "silentgear:pickaxe"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "0D2315DFECDC3C56"
+					type: "loot"
+					table_id: "870211AF0E412C54"
+				}
+			]
+		}
+		{
+			id: "8123A75843035695"
+			x: 15.0d
+			y: 2.0d
+			title: "Repair Kit"
+			subtitle: "Fix your gear without losing it."
+			description: [
+				"Fill a repair kit with materials, then combine it with the damaged tool in the grid. The material should match what the tool is made of for the best result."
+			]
+			icon: {
+				id: "silentgear:crude_repair_kit"
+				count: 1
+			}
+			dependencies: [
+				"8CB746E24B79A224"
+			]
+			tasks: [
+				{
+					id: "7F8848DB6111E78B"
+					type: "item"
+					item: {
+						id: "silentgear:crude_repair_kit"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "5E7229DF863CBA33"
+					type: "item"
+					item: {
+						id: "minecraft:iron_ingot"
+						count: 1
+					}
+					count: 8
+				}
+			]
+		}
+		{
+			id: "51A27D258E7BDDFA"
+			x: 15.0d
+			y: -2.0d
+			title: "Blueprints"
+			subtitle: "Reusable templates."
+			description: [
+				"Blueprint Paper makes blueprints that are never used up. Worth it for the tools you make again and again."
+			]
+			optional: true
+			dependencies: [
+				"8CB746E24B79A224"
+			]
+			tasks: [
+				{
+					id: "D80ADE9A390B05F2"
+					type: "item"
+					item: {
+						id: "silentgear:pickaxe_blueprint"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "228D3DE98E6B6A81"
+					type: "item"
+					item: {
+						id: "minecraft:paper"
+						count: 1
+					}
+					count: 16
+				}
+			]
+		}
+		{
+			id: "19A83D92C4A6A0D2"
+			x: 18.0d
+			y: 0.0d
+			title: "A Full Kit"
+			subtitle: "Sword and axe, your way."
+			description: [
+				"Same idea, other templates: a sword blade and an axe head. Try different materials and compare the traits."
+				"Stage 2 opens &6Crimson Iron&r, &6Crimson Steel&r and &6Blaze Gold&r, the first materials that make Silent Gear really strong."
+			]
+			icon: {
+				id: "silentgear:sword"
+				count: 1
+			}
+			size: 1.5d
+			shape: "gear"
+			dependencies: [
+				"8123A75843035695"
+			]
+			tasks: [
+				{
+					id: "2F5D47FDE32DF8E5"
+					type: "item"
+					item: {
+						id: "silentgear:sword"
+						count: 1
+					}
+					count: 1
+				}
+				{
+					id: "6F8C2AA694EC0B11"
+					type: "item"
+					item: {
+						id: "silentgear:axe"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "D8209DD44DBAD109"
+					type: "loot"
+					table_id: "870211AF0E412C54"
+				}
+				{
+					id: "F2A9A28A83E1AF90"
+					type: "xp_levels"
+					xp_levels: 10
+				}
+			]
+		}
+	]
+}

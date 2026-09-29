@@ -1,0 +1,129 @@
+{
+	id: "F2BA64790EBA3DF5"
+	title: "Brass Crate"
+	icon: {
+		id: "ftbquests:lootcrate"
+		count: 1
+	}
+	loot_size: 1
+	order_index: 3
+	rewards: [
+		{
+			id: "7A36DFE42F495586"
+			item: {
+				id: "create:brass_ingot"
+				count: 8
+			}
+			weight: 10.0f
+			random_bonus: 8
+		}
+		{
+			id: "B70CE1C607D29754"
+			item: {
+				id: "create:zinc_ingot"
+				count: 12
+			}
+			weight: 10.0f
+			random_bonus: 12
+		}
+		{
+			id: "54268CDC6A5C5C1A"
+			item: {
+				id: "mekanism:ingot_osmium"
+				count: 8
+			}
+			weight: 8.0f
+			random_bonus: 8
+		}
+		{
+			id: "28404482C3D1D965"
+			item: {
+				id: "minecraft:iron_ingot"
+				count: 16
+			}
+			weight: 8.0f
+			random_bonus: 16
+		}
+		{
+			id: "7F8995551D5607FD"
+			item: {
+				id: "minecraft:copper_ingot"
+				count: 24
+			}
+			weight: 8.0f
+			random_bonus: 24
+		}
+		{
+			id: "DE7647C003197922"
+			item: {
+				id: "minecraft:coal"
+				count: 32
+			}
+			weight: 8.0f
+			random_bonus: 32
+		}
+		{
+			id: "2FAB5FE6F65E8E55"
+			item: {
+				id: "minecraft:blaze_rod"
+				count: 2
+			}
+			weight: 5.0f
+			random_bonus: 2
+		}
+		{
+			id: "734DC4F9135C8F14"
+			item: {
+				id: "minecraft:quartz"
+				count: 16
+			}
+			weight: 6.0f
+			random_bonus: 16
+		}
+		{
+			id: "3C48166DCDB45A9B"
+			item: {
+				id: "minecraft:glowstone_dust"
+				count: 8
+			}
+			weight: 5.0f
+			random_bonus: 8
+		}
+		{
+			id: "5A29A6D8342CADF6"
+			item: {
+				id: "create:electron_tube"
+				count: 2
+			}
+			weight: 5.0f
+			random_bonus: 2
+		}
+		{
+			id: "CB2FB837C3D9320D"
+			item: {
+				id: "botania:manasteel_ingot"
+				count: 4
+			}
+			weight: 6.0f
+			random_bonus: 4
+		}
+		{
+			id: "D148ADBBC8F8A7B6"
+			item: {
+				id: "ars_nouveau:source_gem"
+				count: 8
+			}
+			weight: 6.0f
+			random_bonus: 8
+		}
+		{
+			id: "7A210FD9C766A48A"
+			item: {
+				id: "minecraft:cooked_beef"
+				count: 8
+			}
+			weight: 6.0f
+			random_bonus: 8
+		}
+	]
+}

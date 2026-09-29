@@ -1,0 +1,104 @@
+{
+	id: "C79EAEAE0F26AA7F"
+	title: "Terrasteel Crate"
+	icon: {
+		id: "ftbquests:lootcrate"
+		count: 1
+	}
+	loot_size: 1
+	order_index: 5
+	rewards: [
+		{
+			id: "B4D7687620EA4184"
+			item: {
+				id: "botania:terrasteel_ingot"
+				count: 1
+			}
+			weight: 6.0f
+		}
+		{
+			id: "2E6F5C41E5E679DB"
+			item: {
+				id: "create:precision_mechanism"
+				count: 4
+			}
+			weight: 8.0f
+			random_bonus: 4
+		}
+		{
+			id: "8E8F4E0A19B7598D"
+			item: {
+				id: "mekanism:basic_energy_cube"
+				count: 1
+			}
+			weight: 5.0f
+		}
+		{
+			id: "7D875C72CC550537"
+			item: {
+				id: "minecraft:netherite_scrap"
+				count: 2
+			}
+			weight: 5.0f
+			random_bonus: 2
+		}
+		{
+			id: "61FDF34E76F31408"
+			item: {
+				id: "minecraft:ancient_debris"
+				count: 2
+			}
+			weight: 4.0f
+			random_bonus: 2
+		}
+		{
+			id: "C8E5F49A3F0547DA"
+			item: {
+				id: "minecraft:diamond_block"
+				count: 1
+			}
+			weight: 5.0f
+		}
+		{
+			id: "B0842CE99549D3B4"
+			item: {
+				id: "minecraft:enchanted_golden_apple"
+				count: 1
+			}
+			weight: 2.0f
+		}
+		{
+			id: "6E4BC9C9DD33AA27"
+			item: {
+				id: "minecraft:totem_of_undying"
+				count: 1
+			}
+			weight: 3.0f
+		}
+		{
+			id: "391B33C345C71702"
+			item: {
+				id: "botania:mana_tablet"
+				count: 1
+			}
+			weight: 4.0f
+		}
+		{
+			id: "0C7E67368B99FA59"
+			item: {
+				id: "create:blaze_cake"
+				count: 4
+			}
+			weight: 5.0f
+			random_bonus: 4
+		}
+		{
+			id: "EF59A4149240A304"
+			item: {
+				id: "waystones:waystone"
+				count: 1
+			}
+			weight: 4.0f
+		}
+	]
+}

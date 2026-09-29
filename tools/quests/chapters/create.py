@@ -14,14 +14,14 @@ quests = [
               "&6Tip:&r Hold &eW&r on any Create block to open its Ponder screen. It shows you how the block works, step by step.",
           ],
           tasks=[task_checkmark("Read this")],
-          rewards=[reward_item("minecraft:andesite", 32), reward_table("common")],
+          rewards=[reward_item("minecraft:andesite", 32), reward_table("s1_common")],
           icon="create:large_cogwheel", size=2.0, shape="hexagon"),
 
     quest("andesite_alloy", 3, 0, "Andesite Alloy",
           subtitle="The stuff every Create block starts with.",
           description=[
               "Craft &6Andesite&r with &6Iron Nuggets&r or &6Zinc Nuggets&r in the crafting table. Two alloy per craft.",
-              "You will need hundreds of these. Andesite is common under y=0 and in the Mining Dimension.",
+              "You will need hundreds of these. Andesite is common in the stone layer above the deepslate, in big patches.",
           ],
           tasks=[task_item("create:andesite_alloy", 16)],
           rewards=[reward_item("create:andesite_alloy", 16)],
@@ -38,7 +38,7 @@ quests = [
           subtitle="Turns corners and changes speed.",
           description=[
               "Two cogwheels next to each other pass rotation sideways and flip the direction.",
-              "A small cogwheel driving a large one halves the speed and doubles the stress capacity. The other way round doubles the speed.",
+              "A small cogwheel driving a large one halves the speed, a large one driving a small one doubles it. Faster machines work faster but need more stress capacity.",
           ],
           tasks=[task_item("create:cogwheel", 4), task_item("create:large_cogwheel", 2)],
           rewards=[reward_item("create:cogwheel", 4), reward_item("create:large_cogwheel", 2)],
@@ -70,7 +70,7 @@ quests = [
               "Right click to take the output, or let a hopper or chute pull it out.",
           ],
           tasks=[task_item("create:millstone", 1)],
-          rewards=[reward_item("minecraft:wheat", 32), reward_table("common")],
+          rewards=[reward_item("minecraft:wheat", 32), reward_table("s1_common")],
           deps=["water_wheel"]),
 
     quest("mechanical_press", 12, 2, "Mechanical Press",
@@ -80,7 +80,7 @@ quests = [
               "Sheets are in almost every Create recipe from here on. Iron, copper, gold and brass all press.",
           ],
           tasks=[task_item("create:mechanical_press", 1), task_item("create:depot", 1)],
-          rewards=[reward_item("create:iron_sheet", 16), reward_table("uncommon")],
+          rewards=[reward_item("create:iron_sheet", 16), reward_table("s1_uncommon")],
           deps=["water_wheel"], icon="create:mechanical_press", size=1.5),
 
     quest("belt", 15, 0, "Mechanical Belt",
@@ -96,11 +96,11 @@ quests = [
     quest("encased_fan", 15, -3, "Encased Fan",
           subtitle="Wash, smelt and smoke with air.",
           description=[
-              "Point an &6Encased Fan&r through water and drop items into the stream: gravel washes into flint and iron nuggets, sand into clay, soul sand into quartz.",
+              "Point an &6Encased Fan&r through water and drop items into the stream: gravel washes into flint and iron nuggets, sand into clay, red sand into gold nuggets.",
               "Through lava it smelts, through fire it smokes. No fuel needed, just rotation.",
           ],
           tasks=[task_item("create:encased_fan", 1)],
-          rewards=[reward_item("minecraft:gravel", 64), reward_table("common")],
+          rewards=[reward_item("minecraft:gravel", 64), reward_table("s1_common")],
           deps=["millstone"]),
 
     quest("mixer", 18, 0, "Mechanical Mixer",
@@ -110,7 +110,7 @@ quests = [
               "Some recipes need heat: put a &6Blaze Burner&r under the basin. Brass needs exactly that, and brass is where the next stage begins.",
           ],
           tasks=[task_item("create:mechanical_mixer", 1), task_item("create:basin", 1)],
-          rewards=[reward_item("create:brass_ingot", 4), reward_table("uncommon")],
+          rewards=[reward_item("create:andesite_alloy", 32), reward_table("s1_uncommon")],
           deps=["belt"], icon="create:mechanical_mixer", size=1.5),
 
     quest("first_factory", 21, 0, "A Working Line",
@@ -120,9 +120,9 @@ quests = [
               "When it runs on its own, you are done with the basics. Everything after this is bigger versions of the same idea.",
           ],
           tasks=[task_item("create:andesite_funnel", 2), task_item("create:chute", 2), task_item("create:iron_sheet", 32)],
-          rewards=[reward_table("rare"), reward_xp(10)],
+          rewards=[reward_table("s1_rare"), reward_xp(10)],
           deps=["mixer"], icon="create:andesite_funnel", size=1.75, shape="gear"),
 ]
 
-chapter(C, "Create", "create:large_cogwheel", "tech", quests, shape="gear",
+chapter(C, "Create", "create:large_cogwheel", "tech", quests, shape="gear", order=1,
         subtitle=["Rotation, belts and the first machines."])

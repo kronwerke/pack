@@ -1,7 +1,10 @@
 #!/usr/bin/env python3
-"""Checks every item id in the built quest files against the lang files inside the mod jars.
+"""Checks every item id in the built quest files against the items the mod jars register.
+An id counts as known when a jar has a lang entry, an item model, a blockstate or an
+item definition for it.
 Usage: check_items.py <quests dir> <mods dir>"""
 import json, os, re, sys, zipfile
+
 qdir, mods = sys.argv[1], sys.argv[2]
 ids = set()
 for root, _, files in os.walk(qdir):
@@ -10,12 +13,17 @@ for root, _, files in os.walk(qdir):
             ids |= set(re.findall(r'id: "([a-z0-9_.-]+:[a-z0-9_./-]+)"', open(os.path.join(root, f)).read()))
 known = set()
 for jar in os.listdir(mods):
-    if not jar.endswith(".jar"): continue
+    if not jar.endswith(".jar"):
+        continue
     try:
         z = zipfile.ZipFile(os.path.join(mods, jar))
     except zipfile.BadZipFile:
         continue
     for n in z.namelist():
+        m = re.match(r"assets/([a-z0-9_.-]+)/(?:models/item|blockstates|items)/([a-z0-9_/.-]+)\.json$", n)
+        if m:
+            known.add(f"{m.group(1)}:{m.group(2)}")
+            continue
         m = re.match(r"assets/([a-z0-9_.-]+)/lang/en_us\.json$", n)
         if m:
             try:
@@ -29,4 +37,6 @@ for jar in os.listdir(mods):
 # vanilla: accept anything under minecraft:
 missing = sorted(i for i in ids if not i.startswith("minecraft:") and i not in known and not i.startswith("ftbquests:"))
 print(f"{len(ids)} ids checked, {len(missing)} not found")
-for m in missing: print("  ", m)
+for m in missing:
+    print("  ", m)
+sys.exit(1 if missing else 0)

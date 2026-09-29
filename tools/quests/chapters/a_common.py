@@ -1,4 +1,7 @@
-"""Chapter groups and the shared reward tables. Imported first."""
+"""Chapter groups and the shared reward tables. Imported first.
+
+Crates are made per stage: a stage 1 quest hands out stage 1 crates, so nothing in a
+crate is locked when it drops. check_quest_stages.py enforces that."""
 from ftbq import group, loot_table
 
 group("start", "Start here")
@@ -7,8 +10,10 @@ group("magic", "Magic")
 group("world", "World and Exploration")
 group("storage", "Storage and Tools")
 
-# Loot crates. Weights are relative inside one table.
-loot_table("common", "Common Crate", loot_size=1, entries=[
+# ---- Stage 1: Steinwerk ---------------------------------------------------
+# Weights are relative inside one table. The fourth value is a random bonus on the count.
+
+loot_table("s1_common", "Stone Crate", stage=1, entries=[
     ("minecraft:iron_ingot", 8, 10, 8),
     ("minecraft:copper_ingot", 12, 10, 12),
     ("minecraft:coal", 16, 10, 16),
@@ -18,50 +23,41 @@ loot_table("common", "Common Crate", loot_size=1, entries=[
     ("minecraft:leather", 6, 5),
     ("minecraft:redstone", 8, 6, 8),
     ("minecraft:lapis_lazuli", 6, 5),
-    ("minecraft:ender_pearl", 2, 3),
-    ("waystones:warp_stone", 1, 2),
+    ("minecraft:amethyst_shard", 8, 5, 8),
     ("create:andesite_alloy", 8, 6, 8),
     ("ars_nouveau:source_gem", 4, 6, 4),
+    ("botania:white_mystical_petal", 4, 4, 4),
+    ("waystones:warp_dust", 4, 3, 4),
 ])
 
-loot_table("uncommon", "Uncommon Crate", loot_size=1, entries=[
+loot_table("s1_uncommon", "Iron Crate", stage=1, entries=[
     ("minecraft:iron_block", 2, 10, 2),
     ("minecraft:gold_ingot", 8, 8, 8),
     ("minecraft:diamond", 2, 6, 2),
     ("minecraft:emerald", 4, 6, 4),
     ("minecraft:experience_bottle", 8, 8, 8),
-    ("minecraft:enchanted_golden_apple", 1, 1),
-    ("create:brass_ingot", 6, 6, 6),
-    ("create:precision_mechanism", 2, 4),
-    ("mekanism:ingot_steel", 8, 6, 8),
+    ("minecraft:golden_apple", 2, 5),
+    ("create:iron_sheet", 16, 6, 16),
+    ("create:copper_sheet", 16, 5, 16),
     ("ars_nouveau:source_gem_block", 2, 5),
     ("sophisticatedbackpacks:backpack", 1, 3),
-    ("waystones:waystone", 1, 4),
-    ("minecraft:netherite_scrap", 1, 2),
+    ("waystones:warp_stone", 1, 3),
+    ("waystones:return_scroll", 2, 4),
+    ("functionalstorage:oak_1", 4, 4),
+    ("apotheosis:gem_dust", 4, 3, 4),
 ])
 
-loot_table("rare", "Rare Crate", loot_size=1, entries=[
-    ("minecraft:diamond_block", 1, 8),
-    ("minecraft:netherite_ingot", 1, 5),
+loot_table("s1_rare", "Gold Crate", stage=1, entries=[
+    ("minecraft:diamond", 8, 8, 8),
+    ("minecraft:diamond_block", 1, 4),
+    ("minecraft:emerald_block", 2, 5),
+    ("minecraft:enchanted_golden_apple", 1, 2),
     ("minecraft:totem_of_undying", 1, 3),
-    ("minecraft:elytra", 1, 1),
-    ("create:electron_tube", 8, 6, 8),
-    ("mekanism:alloy_reinforced", 4, 6, 4),
-    ("ae2:certus_quartz_crystal", 32, 6, 32),
-    ("ars_nouveau:wilden_tribute", 1, 4),
-    ("sophisticatedbackpacks:iron_backpack", 1, 4),
-    ("artifacts:mimic_spawn_egg", 1, 2),
-    ("tempad:tempad", 1, 1),
-])
-
-loot_table("epic", "Epic Crate", loot_size=1, entries=[
-    ("minecraft:netherite_block", 1, 4),
-    ("minecraft:nether_star", 1, 4),
-    ("minecraft:enchanted_golden_apple", 4, 5, 4),
-    ("mekanism:alloy_atomic", 4, 5, 4),
-    ("ae2:controller", 1, 3),
-    ("ars_nouveau:dowsing_rod", 1, 3),
-    ("sophisticatedbackpacks:diamond_backpack", 1, 3),
-    ("draconicevolution:draconium_ingot", 16, 4, 16),
-    ("apotheosis:gem_dust", 8, 5, 8),
+    ("botania:mana_diamond", 2, 4),
+    ("ars_nouveau:amulet_of_mana_regen", 1, 3),
+    ("ars_nouveau:ring_of_potential", 1, 3),
+    ("waystones:waystone", 1, 4),
+    ("sophisticatedstorage:iron_chest", 2, 4),
+    ("artifacts:everlasting_beef", 1, 2),
+    ("artifacts:mimic_spawn_egg", 1, 1),
 ])

@@ -87,9 +87,10 @@ def reward_stage(stage):
     return {"type": "stage", "stage": stage}
 
 
-def loot_table(name, title, entries, loot_size=1, icon="ftbquests:lootcrate"):
-    """entries: list of (item_id, count, weight) or (item_id, count, weight, random_bonus)."""
-    _tables[name] = {"title": title, "entries": entries, "loot_size": loot_size, "icon": icon}
+def loot_table(name, title, entries, stage=1, loot_size=1, icon="ftbquests:lootcrate"):
+    """entries: list of (item_id, count, weight) or (item_id, count, weight, random_bonus).
+    stage: the first stage the table is handed out in; its items must not be locked later."""
+    _tables[name] = {"title": title, "entries": entries, "loot_size": loot_size, "icon": icon, "stage": stage}
 
 
 def group(name, title):
@@ -105,10 +106,11 @@ def quest(name, x, y, title, tasks, subtitle="", description=(), rewards=(), dep
 
 
 def chapter(name, title, icon, group, quests, subtitle=(), shape="circle", order=None,
-            hide_dependency_lines=False):
+            hide_dependency_lines=False, stage=1):
+    """stage: the stage the chapter belongs to. Nothing in it may be locked until a later stage."""
     _chapters.append({"name": name, "title": title, "icon": icon, "group": group, "quests": quests,
                       "subtitle": list(subtitle), "shape": shape, "order": order,
-                      "hide_dependency_lines": hide_dependency_lines})
+                      "hide_dependency_lines": hide_dependency_lines, "stage": stage})
 
 
 # ---- SNBT writer ----------------------------------------------------------

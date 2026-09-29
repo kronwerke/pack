@@ -1,6 +1,54 @@
 hash-format = "sha256"
 
 [[files]]
+file = "config/ftbquests/quests/chapter_groups.snbt"
+hash = "3cb744a8a9292690692714bdb07ec95625f3313c1fdc94d0124ca9ecabaa00b9"
+
+[[files]]
+file = "config/ftbquests/quests/chapters/create.snbt"
+hash = "5b2427a9a2c5fb91362b4d756a6c629edecc5d8e0eff294e28eeb585fabc28f4"
+
+[[files]]
+file = "config/ftbquests/quests/data.snbt"
+hash = "93c982c2e09101877cba15ed69d2eee71ed5be2243ee8dcdcc0734845932c8b6"
+
+[[files]]
+file = "config/ftbquests/quests/reward_tables/common.snbt"
+hash = "e95b7f4da510ac4ad8d05426fe082b50ab0f45ea4565facbc9a6abeda6794a61"
+
+[[files]]
+file = "config/ftbquests/quests/reward_tables/epic.snbt"
+hash = "e440bf40e24925dc786eb814320eb7273ae48706cc1a9bee083c99651da8a09b"
+
+[[files]]
+file = "config/ftbquests/quests/reward_tables/rare.snbt"
+hash = "0d62bb2119e4e125d6bd0628e82e32e69737fac4de89687f7a6fb5e27f44c0e2"
+
+[[files]]
+file = "config/ftbquests/quests/reward_tables/uncommon.snbt"
+hash = "f53e6a78d5b0c05f5d33124eafc01fab92a15febe075d329c1b1f4ddc7111973"
+
+[[files]]
+file = "config/kronwerke/goals.json"
+hash = "55fcf7105d9c257e8d338ebf3334a704c942e655b535997fb75f9d1d36843539"
+
+[[files]]
+file = "kubejs/data/kronwerke/chapters/stages/stage2.json"
+hash = "436ee0b7a28a2f88c046cf7e64bec1af4ffb4fff5ebe2a4a69685255fdd2096a"
+
+[[files]]
+file = "kubejs/data/kronwerke/chapters/stages/stage3.json"
+hash = "97acb11e1173477fd62cbd645b63df42b15b3885e93adfe2b5f404dc6a2d3ec0"
+
+[[files]]
+file = "kubejs/data/kronwerke/chapters/stages/stage4.json"
+hash = "fa212c32a123ae485a19383ad90b8226d035d71d5be9e36544fd9bdd8a200bdc"
+
+[[files]]
+file = "kubejs/data/kronwerke/chapters/stages/stage5.json"
+hash = "4a8a2938866229e9cdbd9f3cf1e590c451db2a633db0bac453a99b0e3db13efe"
+
+[[files]]
 file = "mods/additional-enchanted-miner.pw.toml"
 hash = "c5024024d2cf7ac169d706cb25dcb10f839d8dabf725bac951b868bfb1795519"
 metafile = true

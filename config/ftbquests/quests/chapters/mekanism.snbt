@@ -1,0 +1,510 @@
+{
+	id: "90138904D2605D92"
+	filename: "mekanism"
+	title: "Mekanism"
+	icon: {
+		id: "mekanism:metallurgic_infuser"
+		count: 1
+	}
+	group: "AEAA9718BAF5A32A"
+	order_index: 10
+	default_quest_shape: "square"
+	default_hide_dependency_lines: false
+	subtitle: [
+		"Stage 2. Osmium, steel and the basic machines."
+	]
+	quests: [
+		{
+			id: "80E04C1C72E49A84"
+			x: 0.0d
+			y: 0.0d
+			title: "Mekanism"
+			subtitle: "Machines that run on power and do it well."
+			description: [
+				"Mekanism is the big tech mod of this pack. It starts with one ore, osmium, and one machine, the Metallurgic Infuser, and ends with fusion reactors in stage 4."
+				""
+				"In stage 2 the basic tier is open: the first machines, steel, cables and power. The ore tripling machines, the digital miner and the elite tier wait for stage 3."
+			]
+			icon: {
+				id: "mekanism:ingot_osmium"
+				count: 1
+			}
+			size: 2.0d
+			shape: "hexagon"
+			tasks: [
+				{
+					id: "E8979CE60431A145"
+					type: "item"
+					item: {
+						id: "mekanism:raw_osmium"
+						count: 1
+					}
+					count: 8
+				}
+			]
+			rewards: [
+				{
+					id: "6824D670957ACA66"
+					type: "item"
+					item: {
+						id: "mekanism:raw_osmium"
+						count: 1
+					}
+					count: 16
+				}
+				{
+					id: "CA034F151B86AA5D"
+					type: "loot"
+					table_id: "F2BA64790EBA3DF5"
+				}
+			]
+		}
+		{
+			id: "1AA1223E5333EA03"
+			x: 3.0d
+			y: 0.0d
+			title: "Osmium Ingots"
+			subtitle: "Smelt it. You will need a lot."
+			description: [
+				"Osmium ore is common in the overworld stone. Every Mekanism machine and circuit has osmium in it somewhere."
+			]
+			dependencies: [
+				"80E04C1C72E49A84"
+			]
+			tasks: [
+				{
+					id: "5F373987D28AE533"
+					type: "item"
+					item: {
+						id: "mekanism:ingot_osmium"
+						count: 1
+					}
+					count: 32
+				}
+			]
+			rewards: [
+				{
+					id: "3B324748EE91A432"
+					type: "item"
+					item: {
+						id: "minecraft:coal"
+						count: 1
+					}
+					count: 32
+				}
+			]
+		}
+		{
+			id: "6C4F838C1079AFFB"
+			x: 6.0d
+			y: 0.0d
+			title: "Metallurgic Infuser"
+			subtitle: "The first machine, and it needs mana."
+			description: [
+				"On this server the &6Metallurgic Infuser&r takes two &6Manasteel Ingots&r from a Botania mana pool. Find someone with a pool, or build one."
+				""
+				"The infuser pushes an infusion type into an item: coal gives carbon, redstone gives redstone. Put power in and it works on its own."
+			]
+			icon: {
+				id: "mekanism:metallurgic_infuser"
+				count: 1
+			}
+			size: 1.5d
+			dependencies: [
+				"1AA1223E5333EA03"
+			]
+			tasks: [
+				{
+					id: "0AA0BB22632EDE01"
+					type: "item"
+					item: {
+						id: "mekanism:metallurgic_infuser"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "F95A154101B69586"
+					type: "item"
+					item: {
+						id: "minecraft:redstone"
+						count: 1
+					}
+					count: 32
+				}
+				{
+					id: "5892E4CB2A5E9AF1"
+					type: "loot"
+					table_id: "F2BA64790EBA3DF5"
+				}
+			]
+		}
+		{
+			id: "D2437DB2E3BD2F63"
+			x: 6.0d
+			y: 3.5d
+			title: "Heat Generator"
+			subtitle: "Power from anything that burns."
+			description: [
+				"The &6Heat Generator&r burns fuel and gets a little extra from lava next to it. Enough for the first two or three machines. Wind and solar come after."
+			]
+			dependencies: [
+				"1AA1223E5333EA03"
+			]
+			tasks: [
+				{
+					id: "434F428940BA2910"
+					type: "item"
+					item: {
+						id: "mekanismgenerators:heat_generator"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "86FB810AD956F4F9"
+					type: "item"
+					item: {
+						id: "minecraft:coal_block"
+						count: 1
+					}
+					count: 8
+				}
+			]
+		}
+		{
+			id: "24A9196C1811C3A6"
+			x: 9.0d
+			y: 3.5d
+			title: "Universal Cables"
+			subtitle: "Power from here to there."
+			description: [
+				"Cables carry power between generators and machines. The &6Basic Energy Cube&r stores it for when the generator is off."
+			]
+			dependencies: [
+				"D2437DB2E3BD2F63"
+			]
+			tasks: [
+				{
+					id: "93575CB73D9B7936"
+					type: "item"
+					item: {
+						id: "mekanism:basic_universal_cable"
+						count: 1
+					}
+					count: 16
+				}
+				{
+					id: "EC973C0E3BB4CA2D"
+					type: "item"
+					item: {
+						id: "mekanism:basic_energy_cube"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "C090385178340EA9"
+					type: "item"
+					item: {
+						id: "mekanism:basic_universal_cable"
+						count: 1
+					}
+					count: 16
+				}
+			]
+		}
+		{
+			id: "42A695A19BD76174"
+			x: 9.0d
+			y: -2.0d
+			title: "Basic Control Circuit"
+			subtitle: "Osmium infused with redstone."
+			description: [
+				"Infuse osmium with redstone. Every machine past the infuser needs a circuit."
+			]
+			dependencies: [
+				"6C4F838C1079AFFB"
+			]
+			tasks: [
+				{
+					id: "0B0A2CFAFD4D7A4D"
+					type: "item"
+					item: {
+						id: "mekanism:basic_control_circuit"
+						count: 1
+					}
+					count: 4
+				}
+			]
+			rewards: [
+				{
+					id: "B93A9850199086F5"
+					type: "item"
+					item: {
+						id: "mekanism:ingot_osmium"
+						count: 1
+					}
+					count: 16
+				}
+			]
+		}
+		{
+			id: "682143834F309275"
+			x: 9.0d
+			y: 0.0d
+			title: "Steel"
+			subtitle: "Iron, carbon, carbon again."
+			description: [
+				"Infuse iron with carbon and you get &6Enriched Iron&r. Infuse that with carbon again for &6Steel Dust&r. Smelt it."
+				"Steel goes into the casing of every Mekanism machine, and stage 3 asks the obelisk for thousands of it. Start early."
+			]
+			icon: {
+				id: "mekanism:ingot_steel"
+				count: 1
+			}
+			size: 1.5d
+			dependencies: [
+				"6C4F838C1079AFFB"
+			]
+			tasks: [
+				{
+					id: "1EADDA9E74BFB928"
+					type: "item"
+					item: {
+						id: "mekanism:ingot_steel"
+						count: 1
+					}
+					count: 16
+				}
+			]
+			rewards: [
+				{
+					id: "AFFE7E189F586FA2"
+					type: "item"
+					item: {
+						id: "minecraft:iron_ingot"
+						count: 1
+					}
+					count: 32
+				}
+				{
+					id: "3989EB0B0FD065AB"
+					type: "loot"
+					table_id: "BA8E33E78A3B3A0C"
+				}
+			]
+		}
+		{
+			id: "6E4713E15FE7F816"
+			x: 12.0d
+			y: 0.0d
+			title: "Steel Casing"
+			subtitle: "The body of the machines."
+			description: [
+				"Steel, glass and osmium. From here on each machine is a casing plus whatever makes it special."
+			]
+			dependencies: [
+				"682143834F309275"
+				"42A695A19BD76174"
+				"24A9196C1811C3A6"
+			]
+			tasks: [
+				{
+					id: "8721EADD1A337908"
+					type: "item"
+					item: {
+						id: "mekanism:steel_casing"
+						count: 1
+					}
+					count: 4
+				}
+			]
+			rewards: [
+				{
+					id: "24FD2C2F2DFE425A"
+					type: "item"
+					item: {
+						id: "minecraft:glass"
+						count: 1
+					}
+					count: 16
+				}
+			]
+		}
+		{
+			id: "FC298C9024BE1893"
+			x: 15.0d
+			y: -2.0d
+			title: "Enrichment Chamber"
+			subtitle: "More dust out of every ore."
+			description: [
+				"An ore block mined with silk touch becomes two dusts. Raw ore gives a third more than smelting it would. Smelt the dusts."
+				"It also turns coal into enriched carbon for the infuser, which is much faster than raw coal."
+			]
+			icon: {
+				id: "mekanism:enrichment_chamber"
+				count: 1
+			}
+			size: 1.5d
+			dependencies: [
+				"6E4713E15FE7F816"
+			]
+			tasks: [
+				{
+					id: "EFF9F69F11B3F833"
+					type: "item"
+					item: {
+						id: "mekanism:enrichment_chamber"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "A94AD3E3781A890A"
+					type: "item"
+					item: {
+						id: "minecraft:raw_iron"
+						count: 1
+					}
+					count: 32
+				}
+				{
+					id: "CFB416FEA08527F2"
+					type: "loot"
+					table_id: "BA8E33E78A3B3A0C"
+				}
+			]
+		}
+		{
+			id: "877C48CC2333F037"
+			x: 15.0d
+			y: 2.0d
+			title: "Energized Smelter"
+			subtitle: "A furnace that runs on power."
+			description: [
+				"Faster than a furnace and no fuel. Put it right after the enrichment chamber and your ores come out as ingots."
+			]
+			dependencies: [
+				"6E4713E15FE7F816"
+			]
+			tasks: [
+				{
+					id: "D40BB3071B002F3C"
+					type: "item"
+					item: {
+						id: "mekanism:energized_smelter"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "247ED3DA75250D13"
+					type: "item"
+					item: {
+						id: "mekanism:basic_control_circuit"
+						count: 1
+					}
+					count: 2
+				}
+			]
+		}
+		{
+			id: "BD39D58490ECDCDF"
+			x: 18.0d
+			y: 2.0d
+			title: "Crusher"
+			subtitle: "Ingots to dust, and more."
+			description: [
+				"The &6Crusher&r grinds ingots back into dust and gravel into sand. Some recipes need dust instead of ingots."
+			]
+			optional: true
+			dependencies: [
+				"877C48CC2333F037"
+			]
+			tasks: [
+				{
+					id: "EA862957BB45296F"
+					type: "item"
+					item: {
+						id: "mekanism:crusher"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "FDD407F27960BFEA"
+					type: "item"
+					item: {
+						id: "mekanism:ingot_osmium"
+						count: 1
+					}
+					count: 16
+				}
+			]
+		}
+		{
+			id: "E5802595B371ECD8"
+			x: 18.0d
+			y: -2.0d
+			title: "An Ore Line"
+			subtitle: "Chest, enrichment chamber, smelter, chest."
+			description: [
+				"Connect them with the side configuration of each machine (the coloured tabs in the GUI) and a few &6Logistical Transporters&r. Drop ore into the first chest and collect the ingots at the end."
+			]
+			icon: {
+				id: "mekanism:basic_logistical_transporter"
+				count: 1
+			}
+			size: 1.75d
+			shape: "gear"
+			dependencies: [
+				"FC298C9024BE1893"
+			]
+			tasks: [
+				{
+					id: "077A43B0922D14C9"
+					type: "item"
+					item: {
+						id: "mekanism:basic_logistical_transporter"
+						count: 1
+					}
+					count: 8
+				}
+				{
+					id: "150C8AB1B608533A"
+					type: "item"
+					item: {
+						id: "mekanism:ingot_steel"
+						count: 1
+					}
+					count: 64
+				}
+			]
+			rewards: [
+				{
+					id: "82D3CFA21E454ED8"
+					type: "loot"
+					table_id: "C79EAEAE0F26AA7F"
+				}
+				{
+					id: "3D3411A5C887968F"
+					type: "xp_levels"
+					xp_levels: 15
+				}
+			]
+		}
+	]
+}

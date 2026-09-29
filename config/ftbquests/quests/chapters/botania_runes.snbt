@@ -1,0 +1,575 @@
+{
+	id: "5BF91802FAFC8378"
+	filename: "botania_runes"
+	title: "Botania: Runes"
+	icon: {
+		id: "botania:rune_of_mana"
+		count: 1
+	}
+	group: "03203A1312E25E36"
+	order_index: 11
+	default_quest_shape: "circle"
+	default_hide_dependency_lines: false
+	subtitle: [
+		"Stage 2. Manasteel, runes and terrasteel."
+	]
+	quests: [
+		{
+			id: "897B5583009AF0A4"
+			x: 0.0d
+			y: 0.0d
+			title: "Manasteel"
+			subtitle: "Iron, soaked in mana."
+			description: [
+				"Stage 2 opens what the mana pool can really do. Throw an iron ingot into a full enough pool and it comes out as &6Manasteel&r."
+				""
+				"The obelisk wants &61 500 mana pearls&r and &6100 terrasteel ingots&r for this stage. That is a lot of mana: build more flowers now."
+			]
+			icon: {
+				id: "botania:manasteel_ingot"
+				count: 1
+			}
+			size: 2.0d
+			shape: "hexagon"
+			tasks: [
+				{
+					id: "DFBFC0BFBAD8A912"
+					type: "item"
+					item: {
+						id: "botania:manasteel_ingot"
+						count: 1
+					}
+					count: 8
+				}
+			]
+			rewards: [
+				{
+					id: "2A708618C81B15E7"
+					type: "item"
+					item: {
+						id: "minecraft:iron_ingot"
+						count: 1
+					}
+					count: 16
+				}
+				{
+					id: "8D615FC76290A8AF"
+					type: "loot"
+					table_id: "F2BA64790EBA3DF5"
+				}
+			]
+		}
+		{
+			id: "96E714B7EA5EE4D3"
+			x: 3.0d
+			y: -2.0d
+			title: "Mana Pearl"
+			subtitle: "An ender pearl, infused."
+			description: [
+				"Ender pearl into the pool. Mana pearls go into the terrasteel recipe and straight into the obelisk."
+				"An enderman farm pays for itself here."
+			]
+			dependencies: [
+				"897B5583009AF0A4"
+			]
+			tasks: [
+				{
+					id: "A645BE287331BB35"
+					type: "item"
+					item: {
+						id: "botania:mana_pearl"
+						count: 1
+					}
+					count: 8
+				}
+			]
+			rewards: [
+				{
+					id: "44E4439D9D3CAFE5"
+					type: "item"
+					item: {
+						id: "minecraft:ender_pearl"
+						count: 1
+					}
+					count: 8
+				}
+			]
+		}
+		{
+			id: "FA9732A0D4DCDCAF"
+			x: 3.0d
+			y: 2.0d
+			title: "Manasteel Tools"
+			subtitle: "Repair themselves with mana."
+			description: [
+				"Manasteel tools and armour draw mana from a &6Mana Tablet&r or ring in your inventory to repair themselves. Mekanism engineers need your manasteel too: their first machine takes two ingots."
+			]
+			optional: true
+			dependencies: [
+				"897B5583009AF0A4"
+			]
+			tasks: [
+				{
+					id: "D30DEB389A77F37F"
+					type: "item"
+					item: {
+						id: "botania:manasteel_pickaxe"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "8C6FD13C88AE5B8F"
+					type: "item"
+					item: {
+						id: "botania:manasteel_ingot"
+						count: 1
+					}
+					count: 4
+				}
+			]
+		}
+		{
+			id: "226F5111D8090FCD"
+			x: 6.0d
+			y: 0.0d
+			title: "Runic Altar"
+			subtitle: "Where runes are made."
+			description: [
+				"The &6Runic Altar&r takes mana from a spreader. Throw in the ingredients of a rune, then a block of &6Livingrock&r, then right click it with the Wand of the Forest."
+				"The Lexica Botania and JEI show every rune recipe."
+			]
+			icon: {
+				id: "botania:runic_altar"
+				count: 1
+			}
+			size: 1.5d
+			dependencies: [
+				"96E714B7EA5EE4D3"
+			]
+			tasks: [
+				{
+					id: "CB4CE3DB72A6E929"
+					type: "item"
+					item: {
+						id: "botania:runic_altar"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "E497DE647111E0C8"
+					type: "item"
+					item: {
+						id: "botania:livingrock"
+						count: 1
+					}
+					count: 32
+				}
+				{
+					id: "54F92158A67E5CF4"
+					type: "loot"
+					table_id: "F2BA64790EBA3DF5"
+				}
+			]
+		}
+		{
+			id: "01176E8D4F32C570"
+			x: 9.0d
+			y: -2.0d
+			title: "The Four Elements"
+			subtitle: "Water, fire, earth, air."
+			description: [
+				"The four elemental runes. Almost every rune after these is made from them."
+			]
+			icon: {
+				id: "botania:rune_of_fire"
+				count: 1
+			}
+			dependencies: [
+				"226F5111D8090FCD"
+			]
+			tasks: [
+				{
+					id: "CD99CFF6CDBAAF62"
+					type: "item"
+					item: {
+						id: "botania:rune_of_water"
+						count: 1
+					}
+					count: 1
+				}
+				{
+					id: "DFF202DE1B08AAFF"
+					type: "item"
+					item: {
+						id: "botania:rune_of_fire"
+						count: 1
+					}
+					count: 1
+				}
+				{
+					id: "8A9182838B84CE45"
+					type: "item"
+					item: {
+						id: "botania:rune_of_earth"
+						count: 1
+					}
+					count: 1
+				}
+				{
+					id: "49D33991502FF93C"
+					type: "item"
+					item: {
+						id: "botania:rune_of_air"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "5DF4270C463D1FE3"
+					type: "item"
+					item: {
+						id: "minecraft:sugar_cane"
+						count: 1
+					}
+					count: 16
+				}
+				{
+					id: "4AEA35315E6AD516"
+					type: "item"
+					item: {
+						id: "minecraft:nether_wart"
+						count: 1
+					}
+					count: 8
+				}
+			]
+		}
+		{
+			id: "391A991EF01E7377"
+			x: 9.0d
+			y: 2.0d
+			title: "Rune of Mana"
+			subtitle: "Pure mana, set in stone."
+			description: [
+				"Manasteel and a mana pearl on the altar. It goes into the terrestrial plate and many later recipes."
+			]
+			dependencies: [
+				"226F5111D8090FCD"
+			]
+			tasks: [
+				{
+					id: "2D8DA27802C9D6B5"
+					type: "item"
+					item: {
+						id: "botania:rune_of_mana"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "783DE143723EA5EB"
+					type: "item"
+					item: {
+						id: "botania:mana_pearl"
+						count: 1
+					}
+					count: 2
+				}
+			]
+		}
+		{
+			id: "5149950A9E58D937"
+			x: 12.0d
+			y: -3.5d
+			title: "The Seasons"
+			subtitle: "Spring, summer, autumn, winter."
+			description: [
+				"Seasonal runes combine two elemental runes each. Several functional flowers and items need them."
+			]
+			optional: true
+			dependencies: [
+				"01176E8D4F32C570"
+			]
+			tasks: [
+				{
+					id: "B4E61C4C20A4BB7D"
+					type: "item"
+					item: {
+						id: "botania:rune_of_spring"
+						count: 1
+					}
+					count: 1
+				}
+				{
+					id: "FDCAF0B2D040FFE1"
+					type: "item"
+					item: {
+						id: "botania:rune_of_summer"
+						count: 1
+					}
+					count: 1
+				}
+				{
+					id: "6DCB508817D92E16"
+					type: "item"
+					item: {
+						id: "botania:rune_of_autumn"
+						count: 1
+					}
+					count: 1
+				}
+				{
+					id: "453E478888AFCB24"
+					type: "item"
+					item: {
+						id: "botania:rune_of_winter"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "559485A51D297FFF"
+					type: "loot"
+					table_id: "BA8E33E78A3B3A0C"
+				}
+			]
+		}
+		{
+			id: "44DFDC3FDB8A5994"
+			x: 12.0d
+			y: 0.0d
+			title: "Terrestrial Agglomeration Plate"
+			subtitle: "Needs runes, and an engineer."
+			description: [
+				"Four elemental runes, a rune of mana, mana quartz, lapis, and on this server two &6Brass Casings&r from Create. Find someone with a brass line, or build one."
+				""
+				"The plate sits on a pattern of livingrock and lapis blocks. The Lexica page shows it."
+			]
+			icon: {
+				id: "botania:terrestrial_agglomeration_plate"
+				count: 1
+			}
+			size: 1.5d
+			dependencies: [
+				"01176E8D4F32C570"
+				"391A991EF01E7377"
+			]
+			tasks: [
+				{
+					id: "2ABFF2336A662419"
+					type: "item"
+					item: {
+						id: "botania:terrestrial_agglomeration_plate"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "C172784E3F688AC3"
+					type: "item"
+					item: {
+						id: "minecraft:lapis_block"
+						count: 1
+					}
+					count: 4
+				}
+				{
+					id: "B247EE2BE6ECD147"
+					type: "loot"
+					table_id: "BA8E33E78A3B3A0C"
+				}
+			]
+		}
+		{
+			id: "2703449D8AFB77AE"
+			x: 15.0d
+			y: 0.0d
+			title: "Terrasteel"
+			subtitle: "The strongest thing Botania makes in this stage."
+			description: [
+				"Drop a manasteel ingot, a mana diamond and a mana pearl on the plate and point spreaders at it. One ingot eats about half of a full mana pool."
+			]
+			icon: {
+				id: "botania:terrasteel_ingot"
+				count: 1
+			}
+			size: 1.5d
+			shape: "diamond"
+			dependencies: [
+				"44DFDC3FDB8A5994"
+			]
+			tasks: [
+				{
+					id: "E927953DAA8E0774"
+					type: "item"
+					item: {
+						id: "botania:terrasteel_ingot"
+						count: 1
+					}
+					count: 2
+				}
+			]
+			rewards: [
+				{
+					id: "C7442F16BF685276"
+					type: "item"
+					item: {
+						id: "botania:mana_diamond"
+						count: 1
+					}
+					count: 2
+				}
+				{
+					id: "339AD822A94C71CA"
+					type: "loot"
+					table_id: "BA8E33E78A3B3A0C"
+				}
+			]
+		}
+		{
+			id: "89B9CDB074A6FB05"
+			x: 15.0d
+			y: -3.0d
+			title: "Mana Tablet"
+			subtitle: "A mana pool you can carry."
+			description: [
+				"Fill it in a pool, keep it in your inventory. Manasteel tools repair from it, and many rods and rings run on it."
+			]
+			optional: true
+			dependencies: [
+				"2703449D8AFB77AE"
+			]
+			tasks: [
+				{
+					id: "2AE993130562F278"
+					type: "item"
+					item: {
+						id: "botania:mana_tablet"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "CC8D4D37CDB47FCB"
+					type: "item"
+					item: {
+						id: "botania:manasteel_ingot"
+						count: 1
+					}
+					count: 4
+				}
+			]
+		}
+		{
+			id: "9014D4B2F303F49E"
+			x: 15.0d
+			y: 3.0d
+			title: "The Gateway"
+			subtitle: "A door to Alfheim, not open for trade yet."
+			description: [
+				"The &6Gateway Core&r and &6Natura Pylons&r can be built now. What the elves trade (dreamwood, elementium) opens with stage 3, so this is preparation."
+			]
+			optional: true
+			dependencies: [
+				"2703449D8AFB77AE"
+			]
+			tasks: [
+				{
+					id: "ACB140ACCF4B3B0F"
+					type: "item"
+					item: {
+						id: "botania:elven_gateway_core"
+						count: 1
+					}
+					count: 1
+				}
+				{
+					id: "F2981CAD9D5E2334"
+					type: "item"
+					item: {
+						id: "botania:natura_pylon"
+						count: 1
+					}
+					count: 2
+				}
+			]
+			rewards: [
+				{
+					id: "03BB89F048AE55C2"
+					type: "item"
+					item: {
+						id: "botania:livingwood"
+						count: 1
+					}
+					count: 32
+				}
+			]
+		}
+		{
+			id: "5F5C6FCCEA67B460"
+			x: 18.0d
+			y: 0.0d
+			title: "Mana for the Obelisk"
+			subtitle: "Pearls and terrasteel by the stack."
+			description: [
+				"Enough flowers that the pools refill on their own, pearls from an enderman farm, a plate that is never idle. Bring it to the obelisk."
+			]
+			icon: {
+				id: "botania:terrasteel_block"
+				count: 1
+			}
+			size: 1.75d
+			dependencies: [
+				"2703449D8AFB77AE"
+			]
+			tasks: [
+				{
+					id: "2FE0CA38DC15C441"
+					type: "item"
+					item: {
+						id: "botania:mana_pearl"
+						count: 1
+					}
+					count: 64
+				}
+				{
+					id: "2D520C0E16238274"
+					type: "item"
+					item: {
+						id: "botania:terrasteel_ingot"
+						count: 1
+					}
+					count: 8
+				}
+			]
+			rewards: [
+				{
+					id: "11566ACDC52E3AC8"
+					type: "loot"
+					table_id: "C79EAEAE0F26AA7F"
+				}
+				{
+					id: "A7413D6353626480"
+					type: "xp_levels"
+					xp_levels: 15
+				}
+			]
+		}
+	]
+}

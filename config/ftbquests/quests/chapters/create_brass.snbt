@@ -1,0 +1,616 @@
+{
+	id: "C8DF34D772AEF66E"
+	filename: "create_brass"
+	title: "Create: Brass"
+	icon: {
+		id: "create:brass_casing"
+		count: 1
+	}
+	group: "AEAA9718BAF5A32A"
+	order_index: 9
+	default_quest_shape: "gear"
+	default_hide_dependency_lines: false
+	subtitle: [
+		"Stage 2. Blaze burners, brass and the first real automation."
+	]
+	quests: [
+		{
+			id: "9C71D744C46C4E40"
+			x: 0.0d
+			y: 0.0d
+			title: "Brass"
+			subtitle: "Create's second half starts with one alloy."
+			description: [
+				"Everything with a brass casing does something smarter than the andesite machines: filters, sorts, counts, builds. Brass is copper and zinc mixed in a heated basin."
+				""
+				"The obelisk wants &64 000 brass ingots&r and &6300 precision mechanisms&r for this stage. Every factory in this chapter helps with that."
+			]
+			icon: {
+				id: "create:brass_ingot"
+				count: 1
+			}
+			size: 2.0d
+			shape: "hexagon"
+			tasks: [
+				{
+					id: "2231B372E1352816"
+					type: "item"
+					item: {
+						id: "create:brass_ingot"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "96C3F0140A988330"
+					type: "item"
+					item: {
+						id: "create:brass_ingot"
+						count: 1
+					}
+					count: 8
+				}
+				{
+					id: "42A2DA470C1E9920"
+					type: "loot"
+					table_id: "F2BA64790EBA3DF5"
+				}
+			]
+		}
+		{
+			id: "3888962F267720FF"
+			x: 3.0d
+			y: -2.0d
+			title: "Zinc"
+			subtitle: "In the overworld stone, deepslate too."
+			description: [
+				"Zinc ore sits in the overworld, in stone and deepslate. Mine it by hand, or put raw zinc through a millstone or crushing wheels for crushed zinc, which washes into extra nuggets."
+			]
+			dependencies: [
+				"9C71D744C46C4E40"
+			]
+			tasks: [
+				{
+					id: "40118A2DABABE6E1"
+					type: "item"
+					item: {
+						id: "create:zinc_ingot"
+						count: 1
+					}
+					count: 16
+				}
+			]
+			rewards: [
+				{
+					id: "5215A14E170FAFD2"
+					type: "item"
+					item: {
+						id: "create:zinc_ingot"
+						count: 1
+					}
+					count: 16
+				}
+			]
+		}
+		{
+			id: "0B736773068E3BA3"
+			x: 3.0d
+			y: 2.0d
+			title: "Blaze Burner"
+			subtitle: "Heat for the basin. Needs a mage and a blaze."
+			description: [
+				"The &6Empty Blaze Burner&r takes iron sheets, netherrack and, on this server, two &6Source Gems&r from Ars Nouveau. Ask a mage, or become one."
+				""
+				"Take it into the Nether and right click a blaze with it. Place the burner under a basin and feed it any furnace fuel. A &6Blaze Cake&r makes it superheated for the hottest recipes."
+			]
+			icon: {
+				id: "create:blaze_burner"
+				count: 1
+			}
+			size: 1.5d
+			dependencies: [
+				"9C71D744C46C4E40"
+			]
+			tasks: [
+				{
+					id: "ADF7B88544909608"
+					type: "item"
+					item: {
+						id: "create:blaze_burner"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "E37BC24654F3193E"
+					type: "item"
+					item: {
+						id: "minecraft:coal_block"
+						count: 1
+					}
+					count: 8
+				}
+				{
+					id: "F805D9965CB49B64"
+					type: "loot"
+					table_id: "F2BA64790EBA3DF5"
+				}
+			]
+		}
+		{
+			id: "1ACFEC10E4F2BCD7"
+			x: 6.0d
+			y: 0.0d
+			title: "Mixing Brass"
+			subtitle: "Copper and zinc, heated, stirred."
+			description: [
+				"Mixer on top, basin in the middle, lit blaze burner at the bottom. One copper and one zinc ingot make two brass ingots. Funnels in and out and it runs by itself."
+			]
+			dependencies: [
+				"3888962F267720FF"
+				"0B736773068E3BA3"
+			]
+			tasks: [
+				{
+					id: "20E1740D9CEBFD64"
+					type: "item"
+					item: {
+						id: "create:brass_ingot"
+						count: 1
+					}
+					count: 64
+				}
+			]
+			rewards: [
+				{
+					id: "A2455AE22E3AA9A6"
+					type: "item"
+					item: {
+						id: "minecraft:copper_ingot"
+						count: 1
+					}
+					count: 32
+				}
+				{
+					id: "9D82159B77E5E5C7"
+					type: "item"
+					item: {
+						id: "create:zinc_ingot"
+						count: 1
+					}
+					count: 32
+				}
+			]
+		}
+		{
+			id: "3133ACD9FA4EACED"
+			x: 9.0d
+			y: -2.0d
+			title: "Brass Casing"
+			subtitle: "The frame of every smart machine."
+			description: [
+				"Right click a stripped log with a brass ingot. Botania players will ask you for two of these: the Terrestrial Agglomeration Plate needs them on this server."
+			]
+			dependencies: [
+				"1ACFEC10E4F2BCD7"
+			]
+			tasks: [
+				{
+					id: "3B48113012F37FA1"
+					type: "item"
+					item: {
+						id: "create:brass_casing"
+						count: 1
+					}
+					count: 16
+				}
+			]
+			rewards: [
+				{
+					id: "A2C78DB5606FBA61"
+					type: "item"
+					item: {
+						id: "minecraft:stripped_oak_log"
+						count: 1
+					}
+					count: 16
+				}
+			]
+		}
+		{
+			id: "6452412E7BD47B5E"
+			x: 9.0d
+			y: 2.0d
+			title: "Electron Tube"
+			subtitle: "Rose quartz, polished, on an iron sheet."
+			description: [
+				"Craft nether quartz with redstone for &6Rose Quartz&r, polish it with sandpaper, then combine it with an iron sheet. Every brass machine with logic in it uses these."
+			]
+			dependencies: [
+				"1ACFEC10E4F2BCD7"
+			]
+			tasks: [
+				{
+					id: "9A6D22C9E58131FF"
+					type: "item"
+					item: {
+						id: "create:electron_tube"
+						count: 1
+					}
+					count: 8
+				}
+			]
+			rewards: [
+				{
+					id: "C0C72531A1DA11E4"
+					type: "item"
+					item: {
+						id: "minecraft:redstone"
+						count: 1
+					}
+					count: 32
+				}
+				{
+					id: "D510508F9272DE53"
+					type: "item"
+					item: {
+						id: "create:polished_rose_quartz"
+						count: 1
+					}
+					count: 4
+				}
+			]
+		}
+		{
+			id: "8BD72C6EFD3EEB1A"
+			x: 12.0d
+			y: -3.0d
+			title: "Brass Funnels and Tunnels"
+			subtitle: "Filters on everything."
+			description: [
+				"A &6Brass Funnel&r takes a filter and a stack size. A &6Brass Tunnel&r on a belt splits items evenly between belts, or sends them where you tell it."
+			]
+			dependencies: [
+				"3133ACD9FA4EACED"
+			]
+			tasks: [
+				{
+					id: "AA1A164B41DC4AC7"
+					type: "item"
+					item: {
+						id: "create:brass_funnel"
+						count: 1
+					}
+					count: 4
+				}
+				{
+					id: "FF5A3BB327189383"
+					type: "item"
+					item: {
+						id: "create:brass_tunnel"
+						count: 1
+					}
+					count: 4
+				}
+			]
+			rewards: [
+				{
+					id: "882DC3FCE674D808"
+					type: "item"
+					item: {
+						id: "create:brass_ingot"
+						count: 1
+					}
+					count: 16
+				}
+			]
+		}
+		{
+			id: "F565F01F8794304F"
+			x: 12.0d
+			y: 0.0d
+			title: "Deployer"
+			subtitle: "A hand that uses whatever it holds."
+			description: [
+				"The &6Deployer&r does what a player would do with the item in it: place, use, attack. On a belt it applies items to whatever passes under it."
+				"It is the heart of sequenced assembly, which comes next."
+			]
+			dependencies: [
+				"3133ACD9FA4EACED"
+				"6452412E7BD47B5E"
+			]
+			tasks: [
+				{
+					id: "24D1A52E1B905ACE"
+					type: "item"
+					item: {
+						id: "create:deployer"
+						count: 1
+					}
+					count: 2
+				}
+			]
+			rewards: [
+				{
+					id: "D3F66554D58A4BD4"
+					type: "item"
+					item: {
+						id: "create:andesite_alloy"
+						count: 1
+					}
+					count: 32
+				}
+				{
+					id: "286BF5588CD29D26"
+					type: "loot"
+					table_id: "F2BA64790EBA3DF5"
+				}
+			]
+		}
+		{
+			id: "3177D5A3CAF6502E"
+			x: 12.0d
+			y: 3.0d
+			title: "Mechanical Crafters"
+			subtitle: "Big recipes, done by machines."
+			description: [
+				"Place crafters in a grid, connect them with the wrench so they point at each other, put the ingredients in, and give them rotation. Some recipes are larger than 3x3 and only work here."
+			]
+			optional: true
+			dependencies: [
+				"6452412E7BD47B5E"
+			]
+			tasks: [
+				{
+					id: "A5D9EF391DB18B93"
+					type: "item"
+					item: {
+						id: "create:mechanical_crafter"
+						count: 1
+					}
+					count: 9
+				}
+			]
+			rewards: [
+				{
+					id: "25D6AEE89143A043"
+					type: "item"
+					item: {
+						id: "create:electron_tube"
+						count: 1
+					}
+					count: 4
+				}
+			]
+		}
+		{
+			id: "A4E38347917EF53B"
+			x: 15.0d
+			y: 0.0d
+			title: "Precision Mechanism"
+			subtitle: "Your first sequenced assembly line."
+			description: [
+				"A gold sheet goes on a belt. A deployer adds a cogwheel, the next a large cogwheel, the next an iron nugget. Five rounds of that and it becomes a &6Precision Mechanism&r. Sometimes it fails and you get scrap."
+				""
+				"Loop the belt back so unfinished pieces go round again. JEI shows every step."
+			]
+			icon: {
+				id: "create:precision_mechanism"
+				count: 1
+			}
+			size: 1.5d
+			shape: "gear"
+			dependencies: [
+				"F565F01F8794304F"
+			]
+			tasks: [
+				{
+					id: "EC4F2F070E6A2434"
+					type: "item"
+					item: {
+						id: "create:precision_mechanism"
+						count: 1
+					}
+					count: 8
+				}
+			]
+			rewards: [
+				{
+					id: "597797E5D67220E8"
+					type: "item"
+					item: {
+						id: "minecraft:gold_ingot"
+						count: 1
+					}
+					count: 16
+				}
+				{
+					id: "E935D00620A544A6"
+					type: "loot"
+					table_id: "BA8E33E78A3B3A0C"
+				}
+			]
+		}
+		{
+			id: "821D83290E829480"
+			x: 18.0d
+			y: -2.0d
+			title: "Mechanical Arm"
+			subtitle: "Picks up here, puts down there."
+			description: [
+				"Hold the arm and click the blocks it should take from and put into before placing it. It only reaches a few blocks, so build compact."
+			]
+			dependencies: [
+				"A4E38347917EF53B"
+			]
+			tasks: [
+				{
+					id: "B1DD1F5064EB976D"
+					type: "item"
+					item: {
+						id: "create:mechanical_arm"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "DD717ABFA13D9488"
+					type: "item"
+					item: {
+						id: "create:brass_ingot"
+						count: 1
+					}
+					count: 16
+				}
+			]
+		}
+		{
+			id: "1E0969E2D1CECBDE"
+			x: 18.0d
+			y: 2.0d
+			title: "Crushing Wheels"
+			subtitle: "More out of every ore."
+			description: [
+				"Two crushing wheels spinning towards each other. Raw ore dropped between them comes out as crushed ore plus a chance of extras. Wash it with a fan through water for nuggets on top."
+			]
+			dependencies: [
+				"A4E38347917EF53B"
+			]
+			tasks: [
+				{
+					id: "F0D4AB9233419D84"
+					type: "item"
+					item: {
+						id: "create:crushing_wheel"
+						count: 1
+					}
+					count: 2
+				}
+			]
+			rewards: [
+				{
+					id: "DE1CC5E83F4F909C"
+					type: "item"
+					item: {
+						id: "minecraft:raw_iron"
+						count: 1
+					}
+					count: 32
+				}
+			]
+		}
+		{
+			id: "E11391CDB6A48BC2"
+			x: 21.0d
+			y: 0.0d
+			title: "Steam Engine"
+			subtitle: "Serious stress capacity."
+			description: [
+				"Blaze burners under a fluid tank, water pumped in, steam engines on the side of the tank, a shaft on each engine. The bigger the tank and the more burners, the more power."
+				"The goggles show how much heat and water the boiler has. Aim for a level where both are balanced."
+			]
+			icon: {
+				id: "create:steam_engine"
+				count: 1
+			}
+			size: 1.5d
+			dependencies: [
+				"821D83290E829480"
+				"1E0969E2D1CECBDE"
+			]
+			tasks: [
+				{
+					id: "51716BC0D2A0CD50"
+					type: "item"
+					item: {
+						id: "create:steam_engine"
+						count: 1
+					}
+					count: 2
+				}
+				{
+					id: "F9CC76C1D34637F7"
+					type: "item"
+					item: {
+						id: "create:fluid_tank"
+						count: 1
+					}
+					count: 4
+				}
+			]
+			rewards: [
+				{
+					id: "792C9AE4C8B2AC6C"
+					type: "item"
+					item: {
+						id: "minecraft:coal_block"
+						count: 1
+					}
+					count: 16
+				}
+				{
+					id: "42BE7E8F715A74F1"
+					type: "loot"
+					table_id: "BA8E33E78A3B3A0C"
+				}
+			]
+		}
+		{
+			id: "D6F719089891998E"
+			x: 24.0d
+			y: 0.0d
+			title: "The Brass Engine"
+			subtitle: "Feed the obelisk."
+			description: [
+				"A brass line and a precision line that run without you. Bring what they make to the obelisk and the whole server moves."
+			]
+			icon: {
+				id: "create:precision_mechanism"
+				count: 1
+			}
+			size: 1.75d
+			shape: "gear"
+			dependencies: [
+				"E11391CDB6A48BC2"
+			]
+			tasks: [
+				{
+					id: "A41CBB8258575AC9"
+					type: "item"
+					item: {
+						id: "create:brass_ingot"
+						count: 1
+					}
+					count: 256
+				}
+				{
+					id: "30542649E8E098FB"
+					type: "item"
+					item: {
+						id: "create:precision_mechanism"
+						count: 1
+					}
+					count: 32
+				}
+			]
+			rewards: [
+				{
+					id: "F6D7E13F982F2D50"
+					type: "loot"
+					table_id: "C79EAEAE0F26AA7F"
+				}
+				{
+					id: "56117B7858D659BE"
+					type: "xp_levels"
+					xp_levels: 15
+				}
+			]
+		}
+	]
+}

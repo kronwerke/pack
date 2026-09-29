@@ -1,0 +1,341 @@
+{
+	id: "04A8EEB70DFF77BC"
+	filename: "occultism"
+	title: "Occultism"
+	icon: {
+		id: "occultism:dictionary_of_spirits"
+		count: 1
+	}
+	group: "03203A1312E25E36"
+	order_index: 13
+	default_quest_shape: "circle"
+	default_hide_dependency_lines: false
+	subtitle: [
+		"Stage 2. Spiritfire, chalk and the first spirits."
+	]
+	quests: [
+		{
+			id: "66CD45A630DA66CA"
+			x: 0.0d
+			y: 0.0d
+			title: "Occultism"
+			subtitle: "Spirits, bound into service."
+			description: [
+				"Occultism summons spirits from the Other Place and puts them to work. The &6Dictionary of Spirits&r is the manual and walks you through everything here."
+				""
+				"Start with &6Demon's Dream Seeds&r from grass. Throw a &6Demon's Dream Fruit&r on the ground and light it with flint and steel: that is &6Spiritfire&r. Throw impure white chalk into it and it comes out pure."
+			]
+			icon: {
+				id: "occultism:dictionary_of_spirits"
+				count: 1
+			}
+			size: 2.0d
+			shape: "hexagon"
+			tasks: [
+				{
+					id: "C3DABD487C1CC867"
+					type: "item"
+					item: {
+						id: "occultism:chalk_white"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "777B7DEDEE645747"
+					type: "item"
+					item: {
+						id: "occultism:datura_seeds"
+						count: 1
+					}
+					count: 8
+				}
+				{
+					id: "614BC1BC48768C0E"
+					type: "loot"
+					table_id: "F2BA64790EBA3DF5"
+				}
+			]
+		}
+		{
+			id: "B3236C05A667D990"
+			x: 3.0d
+			y: -2.0d
+			title: "Sacrificial Bowls"
+			subtitle: "The ingredients of a ritual go here."
+			description: [
+				"A ritual needs at least four &6Sacrificial Bowls&r within eight blocks of its centre. Where exactly does not matter. Put the ingredients in them."
+			]
+			dependencies: [
+				"66CD45A630DA66CA"
+			]
+			tasks: [
+				{
+					id: "876078C946DE6C88"
+					type: "item"
+					item: {
+						id: "occultism:sacrificial_bowl"
+						count: 1
+					}
+					count: 4
+				}
+			]
+			rewards: [
+				{
+					id: "41162696FB96B7D4"
+					type: "item"
+					item: {
+						id: "occultism:otherstone"
+						count: 1
+					}
+					count: 16
+				}
+			]
+		}
+		{
+			id: "7A8625F561A62E98"
+			x: 3.0d
+			y: 2.0d
+			title: "Golden Ritual Bowl"
+			subtitle: "The centre of every pentacle."
+			description: [
+				"Draw the pentacle around the &6Golden Ritual Bowl&r with chalk. Only the colour and position of the marks count, not the glyph shown."
+				"Right click the golden bowl with the activation item to start. A hopper or pipe into the bowl works too."
+			]
+			dependencies: [
+				"66CD45A630DA66CA"
+			]
+			tasks: [
+				{
+					id: "8DCD6F88FCF33323"
+					type: "item"
+					item: {
+						id: "occultism:golden_sacrificial_bowl"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "657B4B3FBEFABB8B"
+					type: "item"
+					item: {
+						id: "minecraft:gold_ingot"
+						count: 1
+					}
+					count: 8
+				}
+			]
+		}
+		{
+			id: "ED06B8121D9EEDA9"
+			x: 6.0d
+			y: 0.0d
+			title: "Book of Binding: Foliot"
+			subtitle: "A name, written down, is a leash."
+			description: [
+				"Craft the book of binding, then craft it again with the Dictionary of Spirits to write the Foliot's name in. The Dictionary is not used up. The bound book starts the ritual."
+			]
+			icon: {
+				id: "occultism:book_of_binding_bound_foliot"
+				count: 1
+			}
+			size: 1.5d
+			dependencies: [
+				"B3236C05A667D990"
+				"7A8625F561A62E98"
+			]
+			tasks: [
+				{
+					id: "07C968E0C3D64468"
+					type: "item"
+					item: {
+						id: "occultism:book_of_binding_bound_foliot"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "47605A8AABB14B80"
+					type: "loot"
+					table_id: "F2BA64790EBA3DF5"
+				}
+			]
+		}
+		{
+			id: "BA73F9140FD67E92"
+			x: 9.0d
+			y: 0.0d
+			title: "The Foliot Crusher"
+			subtitle: "Your first ritual: a spirit that grinds ore."
+			description: [
+				"The Dictionary's first ritual summons a Foliot that crushes ore into dust, more dust than the ore would give as ingots. Draw Aviar's Circle in white chalk, fill the bowls, right click the golden bowl with the bound book."
+				"Drop ore near the crusher and collect the dust."
+			]
+			icon: {
+				id: "occultism:book_of_binding_foliot"
+				count: 1
+			}
+			size: 1.5d
+			shape: "diamond"
+			dependencies: [
+				"ED06B8121D9EEDA9"
+			]
+			tasks: [
+				{
+					id: "6434C66DC5588891"
+					type: "checkmark"
+					title: "Summon a Foliot Crusher"
+				}
+			]
+			rewards: [
+				{
+					id: "D8982EEE36E16A02"
+					type: "item"
+					item: {
+						id: "minecraft:raw_iron"
+						count: 1
+					}
+					count: 32
+				}
+				{
+					id: "FA985E6941635E59"
+					type: "loot"
+					table_id: "BA8E33E78A3B3A0C"
+				}
+			]
+		}
+		{
+			id: "A4D89338D2D66A58"
+			x: 12.0d
+			y: -2.0d
+			title: "Silver"
+			subtitle: "The metal spirits respect."
+			description: [
+				"Silver ore is in the overworld. The crusher turns it into dust like any other ore. Many Occultism recipes and bowls use it."
+			]
+			dependencies: [
+				"BA73F9140FD67E92"
+			]
+			tasks: [
+				{
+					id: "77DC586050D55863"
+					type: "item"
+					item: {
+						id: "occultism:silver_ingot"
+						count: 1
+					}
+					count: 16
+				}
+			]
+			rewards: [
+				{
+					id: "CA1063C927F61FC3"
+					type: "item"
+					item: {
+						id: "occultism:silver_ingot"
+						count: 1
+					}
+					count: 8
+				}
+			]
+		}
+		{
+			id: "5CD1C10FCF2E0149"
+			x: 12.0d
+			y: 2.0d
+			title: "Book of Binding: Djinni"
+			subtitle: "A stronger spirit, a stronger circle."
+			description: [
+				"Djinni are the next rank. Their rituals need better chalk and a different pentacle, all in the Dictionary. The Djinni crusher is faster than the Foliot."
+			]
+			icon: {
+				id: "occultism:book_of_binding_bound_djinni"
+				count: 1
+			}
+			size: 1.5d
+			dependencies: [
+				"BA73F9140FD67E92"
+			]
+			tasks: [
+				{
+					id: "27048A21E5EFB7B3"
+					type: "item"
+					item: {
+						id: "occultism:book_of_binding_bound_djinni"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "3346335C0A92FA0D"
+					type: "loot"
+					table_id: "BA8E33E78A3B3A0C"
+				}
+				{
+					id: "48C15D800ADFE19C"
+					type: "xp_levels"
+					xp_levels: 10
+				}
+			]
+		}
+		{
+			id: "23BC1536DC963573"
+			x: 15.0d
+			y: 0.0d
+			title: "An Occultist"
+			subtitle: "Spirits at work while you sleep."
+			description: [
+				"A crusher that never stops, fed by a hopper or a belt. Afrit, Marid and the storage and mining spirits wait for stage 3."
+			]
+			icon: {
+				id: "occultism:golden_sacrificial_bowl"
+				count: 1
+			}
+			size: 1.75d
+			dependencies: [
+				"A4D89338D2D66A58"
+				"5CD1C10FCF2E0149"
+			]
+			tasks: [
+				{
+					id: "B4605925BDADCA68"
+					type: "item"
+					item: {
+						id: "occultism:chalk_white"
+						count: 1
+					}
+					count: 16
+				}
+				{
+					id: "C7F9CFFD0590DABA"
+					type: "item"
+					item: {
+						id: "occultism:sacrificial_bowl"
+						count: 1
+					}
+					count: 8
+				}
+			]
+			rewards: [
+				{
+					id: "3D48B2B7DADF2DE7"
+					type: "loot"
+					table_id: "C79EAEAE0F26AA7F"
+				}
+				{
+					id: "E2581C3835E79E45"
+					type: "xp_levels"
+					xp_levels: 15
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,379 @@
+{
+	id: "B51DAF3B806AC689"
+	filename: "ars_apprentice"
+	title: "Ars Nouveau: Mage"
+	icon: {
+		id: "ars_nouveau:apprentice_spell_book"
+		count: 1
+	}
+	group: "03203A1312E25E36"
+	order_index: 12
+	default_quest_shape: "circle"
+	default_hide_dependency_lines: false
+	subtitle: [
+		"Stage 2. The second book, relays, rituals and turrets."
+	]
+	quests: [
+		{
+			id: "99471A3D24B0C45D"
+			x: 0.0d
+			y: 0.0d
+			title: "Mage's Spell Book"
+			subtitle: "The second book: more slots, stronger glyphs."
+			description: [
+				"Stage 2 opens the apprentice glyphs and the book that can hold them. Craft the &6Mage's Spell Book&r from your novice book, JEI shows the rest. The glyphs you know stay known."
+				""
+				"Ars is also where Create gets its heat on this server: every Empty Blaze Burner needs two Source Gems. Engineers will come knocking."
+			]
+			icon: {
+				id: "ars_nouveau:apprentice_spell_book"
+				count: 1
+			}
+			size: 2.0d
+			shape: "hexagon"
+			tasks: [
+				{
+					id: "A50CAF9E8E811348"
+					type: "item"
+					item: {
+						id: "ars_nouveau:apprentice_spell_book"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "01056C4881333C26"
+					type: "item"
+					item: {
+						id: "ars_nouveau:source_gem"
+						count: 1
+					}
+					count: 16
+				}
+				{
+					id: "B6E30E66494697BB"
+					type: "loot"
+					table_id: "F2BA64790EBA3DF5"
+				}
+			]
+		}
+		{
+			id: "FD9E4C504163EE17"
+			x: 3.0d
+			y: -2.0d
+			title: "Source Relay"
+			subtitle: "Source over distance, no jars in a row."
+			description: [
+				"A &6Source Relay&r pulls Source from one place and sends it to another. Link them with the &6Dominion Wand&r: click the source, then the relay, then the target."
+				"Put your sourcelinks at the farm and the jars where you work."
+			]
+			dependencies: [
+				"99471A3D24B0C45D"
+			]
+			tasks: [
+				{
+					id: "93B97EFD0299F4AA"
+					type: "item"
+					item: {
+						id: "ars_nouveau:relay"
+						count: 1
+					}
+					count: 2
+				}
+			]
+			rewards: [
+				{
+					id: "22B0261C8BA898E2"
+					type: "item"
+					item: {
+						id: "ars_nouveau:source_gem"
+						count: 1
+					}
+					count: 8
+				}
+			]
+		}
+		{
+			id: "0C6FCD3B9D470860"
+			x: 6.0d
+			y: -3.5d
+			title: "Relay: Splitter"
+			subtitle: "One source, many targets."
+			description: [
+				"The splitter shares its Source evenly between everything it is linked to. Useful when the imbuement chamber and the apparatus both need feeding."
+			]
+			optional: true
+			dependencies: [
+				"FD9E4C504163EE17"
+			]
+			tasks: [
+				{
+					id: "A28F9A7B23B262F0"
+					type: "item"
+					item: {
+						id: "ars_nouveau:relay_splitter"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "05D31904A5843501"
+					type: "item"
+					item: {
+						id: "ars_nouveau:source_gem"
+						count: 1
+					}
+					count: 8
+				}
+			]
+		}
+		{
+			id: "1896DC83DBFDFA42"
+			x: 3.0d
+			y: 2.0d
+			title: "Ritual Brazier"
+			subtitle: "Where rituals burn."
+			description: [
+				"Place a ritual tablet on the &6Ritual Brazier&r and right click it to start. Many rituals draw Source from jars nearby while they run."
+			]
+			icon: {
+				id: "ars_nouveau:ritual_brazier"
+				count: 1
+			}
+			size: 1.5d
+			dependencies: [
+				"99471A3D24B0C45D"
+			]
+			tasks: [
+				{
+					id: "6E014E02303CA817"
+					type: "item"
+					item: {
+						id: "ars_nouveau:ritual_brazier"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "E0639321BAD950FC"
+					type: "item"
+					item: {
+						id: "ars_nouveau:source_gem"
+						count: 1
+					}
+					count: 8
+				}
+				{
+					id: "D4277BD14549C69F"
+					type: "loot"
+					table_id: "F2BA64790EBA3DF5"
+				}
+			]
+		}
+		{
+			id: "20985C6B05F11C3F"
+			x: 6.0d
+			y: 1.0d
+			title: "Ritual of Harvest"
+			subtitle: "The crops harvest themselves."
+			description: [
+				"Harvests the crops around the brazier and costs a little Source each time. Put a chest next to the brazier and the harvest goes straight in."
+			]
+			dependencies: [
+				"1896DC83DBFDFA42"
+			]
+			tasks: [
+				{
+					id: "3B70778D1A6D1B42"
+					type: "item"
+					item: {
+						id: "ars_nouveau:ritual_harvest"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "A7B5F8AF5CB32FF1"
+					type: "item"
+					item: {
+						id: "minecraft:wheat_seeds"
+						count: 1
+					}
+					count: 32
+				}
+				{
+					id: "21F5BE81657E37CC"
+					type: "item"
+					item: {
+						id: "minecraft:bone_meal"
+						count: 1
+					}
+					count: 32
+				}
+			]
+		}
+		{
+			id: "BC5D05A0B6C457A9"
+			x: 6.0d
+			y: 3.5d
+			title: "Ritual of Scrying"
+			subtitle: "See one block through all the others."
+			description: [
+				"Give the ritual a block, and for a while you see every block of that kind through the ground. White particles are close, green further, blue far away. Good for zinc and osmium."
+			]
+			optional: true
+			dependencies: [
+				"1896DC83DBFDFA42"
+			]
+			tasks: [
+				{
+					id: "48367C1A7937F3C8"
+					type: "item"
+					item: {
+						id: "ars_nouveau:ritual_scrying"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "3B6F4C89FC2BFE88"
+					type: "loot"
+					table_id: "F2BA64790EBA3DF5"
+				}
+			]
+		}
+		{
+			id: "CFB03CF421652A7D"
+			x: 9.0d
+			y: 0.0d
+			title: "Basic Spell Turret"
+			subtitle: "A spell, cast by redstone."
+			description: [
+				"Inscribe a spell into the turret with your book and give it a redstone pulse. It casts from its front, using Source from jars nearby. Break and harvest spells make simple farms."
+			]
+			icon: {
+				id: "ars_nouveau:basic_spell_turret"
+				count: 1
+			}
+			size: 1.5d
+			dependencies: [
+				"FD9E4C504163EE17"
+				"20985C6B05F11C3F"
+			]
+			tasks: [
+				{
+					id: "1CA22D0BD5D0B480"
+					type: "item"
+					item: {
+						id: "ars_nouveau:basic_spell_turret"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "FF93711568BD7DA0"
+					type: "item"
+					item: {
+						id: "minecraft:redstone"
+						count: 1
+					}
+					count: 32
+				}
+				{
+					id: "8AE1EA0F56A71582"
+					type: "loot"
+					table_id: "BA8E33E78A3B3A0C"
+				}
+			]
+		}
+		{
+			id: "3779BE83A65A245C"
+			x: 12.0d
+			y: -2.0d
+			title: "Warp Scroll"
+			subtitle: "Home, once."
+			description: [
+				"Set a location on the scroll, use it later to go back there. It is used up. The &6Stabilized Warp Scroll&r can be used again and again."
+			]
+			optional: true
+			dependencies: [
+				"CFB03CF421652A7D"
+			]
+			tasks: [
+				{
+					id: "F956C3E23FBD9449"
+					type: "item"
+					item: {
+						id: "ars_nouveau:warp_scroll"
+						count: 1
+					}
+					count: 2
+				}
+			]
+			rewards: [
+				{
+					id: "84B8C8EA747E81A1"
+					type: "item"
+					item: {
+						id: "ars_nouveau:warp_scroll"
+						count: 1
+					}
+					count: 2
+				}
+			]
+		}
+		{
+			id: "B23E88118DC60B60"
+			x: 12.0d
+			y: 2.0d
+			title: "A Proper Mage"
+			subtitle: "Source for the whole server."
+			description: [
+				"A Source farm big enough that you never think about it, relays that bring it where it is needed, and gems to spare for the engineers who need blaze burners."
+			]
+			icon: {
+				id: "ars_nouveau:source_gem_block"
+				count: 1
+			}
+			size: 1.75d
+			dependencies: [
+				"CFB03CF421652A7D"
+			]
+			tasks: [
+				{
+					id: "E19C8ED15E4A397F"
+					type: "item"
+					item: {
+						id: "ars_nouveau:source_gem_block"
+						count: 1
+					}
+					count: 16
+				}
+			]
+			rewards: [
+				{
+					id: "2A31BE646416F347"
+					type: "loot"
+					table_id: "C79EAEAE0F26AA7F"
+				}
+				{
+					id: "5872727015E9FC81"
+					type: "xp_levels"
+					xp_levels: 15
+				}
+			]
+		}
+	]
+}

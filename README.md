@@ -68,7 +68,7 @@ Test on a server: install NeoForge 21.1.252, then run `packwiz-installer-bootstr
 
 ## Status
 
-Early. 222 mods, boots clean on a dedicated server. The mod list is settled for the core of tech and magic; world, exploration and utility mods will still move. No quests, no stages, no balancing yet.
+Early. 226 mods, boots clean on a dedicated server. The mod list is settled for the core of tech and magic; world, exploration and utility mods will still move. No quests, no stages, no balancing yet.
 
 ## Docs
 

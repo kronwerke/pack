@@ -61,7 +61,7 @@ Test on a server: install NeoForge 21.1.252, then run `packwiz-installer-bootstr
 
 ## Planned
 
-- The rest of the stage 2 chapters (trains, Immersive Engineering, Ars apprentice, Occultism, Hexerei), stages 3 to 5, and an Origins chapter once the Kronwerke origins are in.
+- Quest chapters for stages 3 to 5, and an Origins chapter once the Kronwerke origins are in.
 - A screen for the obelisk (needs Kronwerke Core on clients). Depositing and feeders work since Core 0.3.0.
 - The cross recipes for stages 3 to 5 (see `docs/STAGES.md`).
 - A lite client profile for weaker machines.
@@ -73,7 +73,7 @@ Test on a server: install NeoForge 21.1.252, then run `packwiz-installer-bootstr
 
 ## Status
 
-Early. 226 mods, boots clean on a dedicated server. Stage locks and community goals are in and load; the numbers are untested until the beta. Stage 1 has its quest book: eight chapters, 92 quests. Stage 2 has four of its chapters, 44 quests. Every id is checked against the jars and every item against the stage locks. Three recipes tie tech and magic together in stage 2, and the Mining Dimension key has a working recipe.
+Early. 226 mods, boots clean on a dedicated server. Stage locks and community goals are in and load; the numbers are untested until the beta. Stage 1 has its quest book: eight chapters, 92 quests. Stage 2 has its nine chapters, 88 quests. Every id is checked against the jars and every item against the stage locks. Three recipes tie tech and magic together in stage 2, and the Mining Dimension key has a working recipe.
 
 ## Docs
 

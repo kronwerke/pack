@@ -28,6 +28,6 @@ First assembly. 222 mods on NeoForge 21.1.252, boots on a dedicated server. No q
 
 ## 0.5.0
 
-- The first stage 2 chapters: The Nether, Create: Brass, Mekanism and Botania: Runes. 44 quests, and a Brass, Steel and Terrasteel crate that only hold stage 2 items.
+- The stage 2 quest book: The Nether, Create: Brass, Create: Trains, Mekanism, Immersive Engineering, Botania: Runes, Ars Nouveau: Mage, Occultism and Hexerei. 88 quests, and a Brass, Steel and Terrasteel crate that only hold stage 2 items.
 - Tech and magic tied together in `kubejs/server_scripts/tech_and_magic.js`: the empty blaze burner needs two Source Gems, the metallurgic infuser two manasteel ingots, the terrestrial agglomeration plate two brass casings.
 - Stage 3 now locks what the design always kept for it: the Mekanism elite tier, the digital miner, teleporters, the quantum entangloporter and the injection and purification chambers. The antiprotonic nucleosynthesizer waits for stage 5.

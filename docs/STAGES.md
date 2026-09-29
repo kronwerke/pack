@@ -78,7 +78,7 @@ Theme: brass, the Nether, mana, the first machines that do work while you sleep.
 
 **Quests:** Create brass (14), Create trains and contraptions (10), Mekanism basics (12), Immersive Engineering (10), Ars apprentice (10), Botania runic and elven (12), Occultism (10), Hexerei (8), The Nether (6). About 90.
 
-Written so far: The Nether (6), Create: Brass (14), Mekanism (12), Botania: Runes (12). Each chapter starts with a quest that needs a stage 2 item, so the rest stays locked until the stage opens.
+Written: The Nether (6), Create: Brass (14), Create: Trains (9), Mekanism (12), Immersive Engineering (10), Botania: Runes (12), Ars Nouveau: Mage (9), Occultism (8), Hexerei (8). 88 in total. Each chapter starts with a quest that needs a stage 2 item, so the rest stays locked until the stage opens.
 
 **Starter kit:** 16 brass ingots, 1 blaze burner, 1 source jar, 8 mana pearls.
 

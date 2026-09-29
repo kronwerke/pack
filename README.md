@@ -37,6 +37,8 @@ The stage locks come from Chapters, the quests from FTB Quests, the goals from [
 | Part | What |
 | --- | --- |
 | `pack.toml`, `index.toml`, `mods/` | The packwiz pack: every mod pinned to a version and a hash |
+| `config/ftbquests/` | The quest book, generated, never edited by hand |
+| `tools/quests/` | Quest definitions in Python and the generator (`build.py`), plus `check_items.py` |
 | `config/`, `kubejs/` | Configuration, recipes, stage definitions (coming) |
 | `tools/` | Scripts used while building: checking mods against Modrinth, a small RCON client |
 

@@ -1,6 +1,6 @@
 // Tech and magic tied together: a few key machines need something from the other side,
 // so a server that only builds machines, or only casts spells, gets stuck. The table in
-// docs/STAGES.md lists these; this file holds the ones for stages 1 and 2.
+// docs/STAGES.md lists them all; this file holds the ones for stage 2.
 
 ServerEvents.recipes(event => {
   // Brass needs a mage: the blaze burner is what makes brass in the mixer, and its

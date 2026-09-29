@@ -41,7 +41,7 @@ Stage lengths are targets. The goal amounts are set so a server that plays norma
 
 Theme: wood, stone, water wheels, the first spells. Everyone starts here on day one.
 
-**Open:** vanilla overworld; Create up to andesite (water wheel, millstone, press, mixer without blaze burner, belts, fans, andesite funnels and casings); Ars Nouveau novice glyphs, source jars, the first familiars; Botania up to the mana pool and mana spreader (no runic altar); Farmer's Delight, Croptopia; Silent Gear iron tier; Sophisticated Backpacks (leather); Functional Storage (oak drawers); Waystones; Neo Origins; Apotheosis affixes up to rare; the Mining Dimension; Cataclysm and Born in Chaos overworld structures.
+**Open:** vanilla overworld; Create up to andesite (water wheel, millstone, press, mixer without blaze burner, belts, fans, andesite funnels and casings); Ars Nouveau novice glyphs, source jars, sourcelinks, the imbuement chamber (the only way to Source Gems, which the stage 1 goal asks for), the enchanting apparatus, Starbuncles; Botania up to the mana pool and mana spreader (no runic altar); Farmer's Delight, Farming for Blockheads, Aquaculture; Silent Gear iron tier; Sophisticated Backpacks (leather); Functional Storage (oak drawers); Waystones; Neo Origins; Apotheosis affixes up to rare; the Mining Dimension (an iron block portal lit with the Enchanted Pickaxe; the mod's own recipe never loads on 1.21.1 and needs netherite, so KubeJS adds one without it); Cataclysm and Born in Chaos overworld structures.
 
 **Locked:** the Nether; Create brass and everything needing it; Mekanism entirely; AE2; Ender IO; Industrial Foregoing; Immersive Engineering; Powah; Oritech; Ars apprentice glyphs and above; Botania runic altar and above; Occultism rituals; Theurgy; Hexerei; Eidolon; Malum; Mahou Tsukai; Iron's Spells above common; Undergarden, Eternal Starlight; Draconic Evolution; NuclearCraft.
 
@@ -53,7 +53,7 @@ Theme: wood, stone, water wheels, the first spells. Everyone starts here on day 
 | Tech | Andesite Alloy | 3 000 | Needs an andesite supply and a nugget supply. A player with a cobble fan line makes 200 an hour. |
 | Magic | Source Gem | 1 500 | Needs source jars and the first spells to farm. Drop rate from the Ars starter progression, about 40 an hour with a small farm. |
 
-**Quests:** Start here (10), Create (12), Ars Nouveau (12), Botania basics (8), Food and farming (8), Storage (6), Silent Gear (6), Origins (4), Exploration (6). About 70.
+**Quests:** Start Here (10), Create (12), Ars Nouveau (17), Botania (13), Food and Farming (10), Storage (11), Silent Gear (10), Exploration (9). 92 in total. An Origins chapter follows with the Kronwerke origins.
 
 **Starter kit at open:** none, this is the start.
 
@@ -63,7 +63,7 @@ Theme: brass, the Nether, mana, the first machines that do work while you sleep.
 
 **Opens with the event:** the Nether portal at spawn is lit on stream.
 
-**Newly open:** the Nether; Create brass tier (blaze burner, brass funnels, tunnels, mechanical crafters, deployers, sequenced gearshift, trains, contraptions); Create addons (Enchantment Industry, Connected, New Age basic); Mekanism basic (metallurgic infuser, energized smelter, enrichment chamber, crusher, heat generator, basic universal cables, steel; no digital miner, no elite tier); Immersive Engineering up to the coke oven, blast furnace and windmill; Ars apprentice glyphs, source relays, imbuement chamber; Botania runic altar, elven trade (Alfheim portal), terra plate; Occultism first rituals (Foliot, Djinni); Hexerei; Silent Gear steel; Sophisticated Backpacks iron and copper; Functional Storage compacting drawers; Iron's Spells uncommon and rare.
+**Newly open:** the Nether; Create brass tier (blaze burner, brass funnels, tunnels, mechanical crafters, deployers, sequenced gearshift, trains, contraptions); Create addons (Enchantment Industry, Connected, New Age basic); Mekanism basic (metallurgic infuser, energized smelter, enrichment chamber, crusher, heat generator, basic universal cables, steel; no digital miner, no elite tier); Immersive Engineering up to the coke oven, blast furnace and windmill; Ars apprentice glyphs, source relays, the ritual brazier; Botania runic altar, elven trade (Alfheim portal), terra plate; Occultism first rituals (Foliot, Djinni); Hexerei; Silent Gear steel; Sophisticated Backpacks iron and copper; Functional Storage compacting drawers; Iron's Spells uncommon and rare.
 
 **Still locked:** AE2; Ender IO; Industrial Foregoing; Powah; Oritech; Mekanism advanced and elite; Theurgy; Eidolon; Malum; Mahou Tsukai; Undergarden and Eternal Starlight; the End; Draconic Evolution; NuclearCraft.
 

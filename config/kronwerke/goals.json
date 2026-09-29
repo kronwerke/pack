@@ -1,0 +1,111 @@
+[
+  {
+    "id": "stage1",
+    "title": "Foundation of the Kronwerk",
+    "description": "Stone for the walls, alloy for the machines, gems for the spells. When the obelisk is full, the Nether opens.",
+    "requires": [],
+    "holdAt": 0.98,
+    "scale": true,
+    "pillars": [
+      { "id": "stone", "title": "Stone", "items": [ { "item": "#c:cobblestones", "base": 40000 } ] },
+      { "id": "tech", "title": "Tech", "items": [ { "item": "create:andesite_alloy", "base": 3000 } ] },
+      { "id": "magic", "title": "Magic", "items": [ { "item": "ars_nouveau:source_gem", "base": 1500 } ] }
+    ],
+    "stages": ["kronwerke:stage2"],
+    "onComplete": [
+      "title @a title {\"text\":\"Messingwerk\",\"color\":\"gold\"}",
+      "title @a subtitle {\"text\":\"The Nether is open. Brass, mana and the first machines.\"}",
+      "say The foundation is complete. Stage 2, Messingwerk, is open."
+    ],
+    "starterKit": []
+  },
+  {
+    "id": "stage2",
+    "title": "The Brass Engine",
+    "description": "Brass and mana. Machines that work while you sleep.",
+    "requires": ["stage1"],
+    "holdAt": 0.98,
+    "scale": true,
+    "pillars": [
+      { "id": "tech", "title": "Tech", "items": [ { "item": "create:brass_ingot", "base": 4000 }, { "item": "create:precision_mechanism", "base": 300 } ] },
+      { "id": "magic", "title": "Magic", "items": [ { "item": "botania:mana_pearl", "base": 1500 }, { "item": "botania:terrasteel_ingot", "base": 100 } ] }
+    ],
+    "stages": ["kronwerke:stage3"],
+    "onComplete": [
+      "title @a title {\"text\":\"Stahlwerk\",\"color\":\"gold\"}",
+      "title @a subtitle {\"text\":\"Steel, ore multiplication, storage networks, rituals.\"}",
+      "say The brass engine runs. Stage 3, Stahlwerk, is open."
+    ],
+    "starterKit": [
+      { "item": "create:brass_ingot", "count": 16 },
+      { "item": "create:blaze_burner", "count": 1 },
+      { "item": "ars_nouveau:source_jar", "count": 1 },
+      { "item": "botania:mana_pearl", "count": 8 }
+    ]
+  },
+  {
+    "id": "stage3",
+    "title": "The Furnace Never Sleeps",
+    "description": "Steel by the thousand, circuits, elven metal and rituals run at scale.",
+    "requires": ["stage2"],
+    "holdAt": 0.98,
+    "scale": true,
+    "pillars": [
+      { "id": "tech", "title": "Tech", "items": [ { "item": "#c:ingots/steel", "base": 8000 }, { "item": "mekanism:advanced_control_circuit", "base": 500 } ] },
+      { "id": "magic", "title": "Magic", "items": [ { "item": "botania:elementium_ingot", "base": 500 }, { "item": "occultism:spirit_attuned_gem", "base": 300 } ] }
+    ],
+    "stages": ["kronwerke:stage4"],
+    "onComplete": [
+      "title @a title {\"text\":\"Sternwerk\",\"color\":\"gold\"}",
+      "title @a subtitle {\"text\":\"The End is open. The stars, fusion, the dragon's metal.\"}",
+      "say The furnace never sleeps. Stage 4, Sternwerk, is open."
+    ],
+    "starterKit": [
+      { "item": "mekanism:ingot_steel", "count": 32 },
+      { "item": "mekanism:basic_universal_cable", "count": 16 },
+      { "item": "ae2:charged_certus_quartz_crystal", "count": 8 },
+      { "item": "botania:elementium_ingot", "count": 4 }
+    ]
+  },
+  {
+    "id": "stage4",
+    "title": "Light of the Dragon",
+    "description": "Circuits from the top of Mekanism, draconium from the End, Gaia's spirit and thirty staves.",
+    "requires": ["stage3"],
+    "holdAt": 0.98,
+    "scale": true,
+    "pillars": [
+      { "id": "tech", "title": "Tech", "items": [ { "item": "mekanism:elite_control_circuit", "base": 300 }, { "item": "draconicevolution:draconium_ingot", "base": 2000 } ] },
+      { "id": "magic", "title": "Magic", "items": [ { "item": "botania:gaia_spirit", "base": 128 }, { "item": "mahoutsukai:mystic_staff", "base": 30 } ] }
+    ],
+    "stages": ["kronwerke:stage5"],
+    "onComplete": [
+      "title @a title {\"text\":\"Chaoswerk\",\"color\":\"dark_purple\"}",
+      "title @a subtitle {\"text\":\"Everything is open. The last fight is coming.\"}",
+      "say The dragon's light burns. Stage 5, Chaoswerk, is open."
+    ],
+    "starterKit": [
+      { "item": "draconicevolution:draconium_ingot", "count": 16 },
+      { "item": "botania:gaia_spirit", "count": 1 },
+      { "item": "minecraft:ender_pearl", "count": 64 }
+    ]
+  },
+  {
+    "id": "stage5",
+    "title": "The Chaos Guardian",
+    "description": "Awakened draconium, antimatter, Gaia's ingots and the tribute of the Wilden. Then the fight.",
+    "requires": ["stage4"],
+    "holdAt": 0.98,
+    "scale": true,
+    "pillars": [
+      { "id": "tech", "title": "Tech", "items": [ { "item": "draconicevolution:awakened_draconium_block", "base": 64 }, { "item": "mekanism:pellet_antimatter", "base": 200 } ] },
+      { "id": "magic", "title": "Magic", "items": [ { "item": "botania:gaia_ingot", "base": 256 }, { "item": "ars_nouveau:wilden_tribute", "base": 64 } ] }
+    ],
+    "stages": [],
+    "onComplete": [
+      "title @a title {\"text\":\"The Chaos Island awaits\",\"color\":\"dark_purple\"}",
+      "say The obelisk is full. The Chaos Guardian fight is on. Watch the announcements for the date."
+    ],
+    "starterKit": []
+  }
+]

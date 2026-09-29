@@ -39,8 +39,10 @@ The stage locks come from Chapters, the quests from FTB Quests, the goals from [
 | `pack.toml`, `index.toml`, `mods/` | The packwiz pack: every mod pinned to a version and a hash |
 | `config/ftbquests/` | The quest book, generated, never edited by hand |
 | `tools/quests/` | Quest definitions in Python and the generator (`build.py`), plus `check_items.py` |
-| `config/`, `kubejs/` | Configuration, recipes, stage definitions (coming) |
-| `tools/` | Scripts used while building: checking mods against Modrinth, a small RCON client |
+| `kubejs/data/kronwerke/chapters/stages/` | What each stage unlocks, one file per stage, read by Chapters |
+| `config/kronwerke/goals.json` | The five community goals, read by Kronwerke Core |
+| `docs/STAGES.md` | The design behind both: rules, timeline, numbers |
+| `tools/` | Scripts used while building: checking mods against Modrinth, a small RCON client, `check_stages.py` |
 
 ## Quick look
 
@@ -58,8 +60,7 @@ Test on a server: install NeoForge 21.1.252, then run `packwiz-installer-bootstr
 
 ## Planned
 
-- Stage definitions and community goals for each age.
-- FTB Quests chapters that guide a newcomer through every mod in the pack.
+- FTB Quests chapters that guide a newcomer through every mod in the pack. Create is done, the rest follows the stage order.
 - Recipe changes that tie tech and magic together instead of running them side by side.
 - A lite client profile for weaker machines.
 
@@ -70,13 +71,14 @@ Test on a server: install NeoForge 21.1.252, then run `packwiz-installer-bootstr
 
 ## Status
 
-Early. 226 mods, boots clean on a dedicated server. The mod list is settled for the core of tech and magic; world, exploration and utility mods will still move. No quests, no stages, no balancing yet.
+Early. 226 mods, boots clean on a dedicated server. Stage locks and community goals are in and load; the numbers are untested until the beta. One quest chapter of about thirty-five. No recipe changes yet.
 
 ## Docs
 
 | Page | What |
 | --- | --- |
 | `CHANGELOG.md` | What changed per version |
+| `docs/STAGES.md` | Stage design: rules, timeline, goal numbers, tech and magic cross recipes |
 | `tools/check_mods.py` | Checks a list of Modrinth slugs for NeoForge 1.21.1 versions |
 
 ## Licence

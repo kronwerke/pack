@@ -6,19 +6,32 @@ on:
     tags: ["v*"]
   pull_request:
 
+permissions:
+  contents: write
+
 jobs:
   check:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
       - uses: actions/setup-go@v5
         with:
           go-version: "1.24"
       - run: go install github.com/packwiz/packwiz@latest
-      - name: Index is up to date
+      - name: Refresh the index
+        run: packwiz refresh
+      - name: Commit the index when it changed
+        if: github.event_name == 'push' && startsWith(github.ref, 'refs/heads/')
         run: |
-          packwiz refresh
-          git diff --exit-code index.toml pack.toml
+          if ! git diff --quiet index.toml pack.toml; then
+            git config user.name "kronwerke-ci"
+            git config user.email "ci@users.noreply.github.com"
+            git add index.toml pack.toml
+            git commit -m "build: refresh the packwiz index"
+            git push
+          fi
       - name: Export
         run: |
           packwiz modrinth export

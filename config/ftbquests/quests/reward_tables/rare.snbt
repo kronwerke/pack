@@ -1,0 +1,103 @@
+{
+	id: "A10FC6DF600A063E"
+	title: "Rare Crate"
+	icon: {
+		id: "ftbquests:lootcrate"
+		count: 1
+	}
+	loot_size: 1
+	order_index: 2
+	rewards: [
+		{
+			id: "91D9184CFA65647A"
+			item: {
+				id: "minecraft:diamond_block"
+				count: 1
+			}
+			weight: 8.0f
+		}
+		{
+			id: "ABFF65C05F2537A3"
+			item: {
+				id: "minecraft:netherite_ingot"
+				count: 1
+			}
+			weight: 5.0f
+		}
+		{
+			id: "B6B8D01E1A651D9F"
+			item: {
+				id: "minecraft:totem_of_undying"
+				count: 1
+			}
+			weight: 3.0f
+		}
+		{
+			id: "08CAFED314991CC9"
+			item: {
+				id: "minecraft:elytra"
+				count: 1
+			}
+			weight: 1.0f
+		}
+		{
+			id: "99FAE5A111DE11E7"
+			item: {
+				id: "create:electron_tube"
+				count: 8
+			}
+			weight: 6.0f
+			random_bonus: 8
+		}
+		{
+			id: "8C12070118D535B7"
+			item: {
+				id: "mekanism:alloy_reinforced"
+				count: 4
+			}
+			weight: 6.0f
+			random_bonus: 4
+		}
+		{
+			id: "DED678413206420B"
+			item: {
+				id: "ae2:certus_quartz_crystal"
+				count: 32
+			}
+			weight: 6.0f
+			random_bonus: 32
+		}
+		{
+			id: "FC6031DCF7F21D24"
+			item: {
+				id: "ars_nouveau:wilden_tribute"
+				count: 1
+			}
+			weight: 4.0f
+		}
+		{
+			id: "A57F1BE2AB5B1037"
+			item: {
+				id: "sophisticatedbackpacks:iron_backpack"
+				count: 1
+			}
+			weight: 4.0f
+		}
+		{
+			id: "0ADEF0DDA6CF77CB"
+			item: {
+				id: "artifacts:mimic_spawn_egg"
+				count: 1
+			}
+			weight: 2.0f
+		}
+		{
+			id: "9A10135B08A8DEEB"
+			item: {
+				id: "tempad:tempad"
+				count: 1
+			}
+			weight: 1.0f
+		}
+	]
+}

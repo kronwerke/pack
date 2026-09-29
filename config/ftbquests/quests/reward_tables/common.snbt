@@ -1,0 +1,124 @@
+{
+	id: "27B22058501FC0DC"
+	title: "Common Crate"
+	icon: {
+		id: "ftbquests:lootcrate"
+		count: 1
+	}
+	loot_size: 1
+	order_index: 0
+	rewards: [
+		{
+			id: "6578255E243479AA"
+			item: {
+				id: "minecraft:iron_ingot"
+				count: 8
+			}
+			weight: 10.0f
+			random_bonus: 8
+		}
+		{
+			id: "A1FC51D7B31A9994"
+			item: {
+				id: "minecraft:copper_ingot"
+				count: 12
+			}
+			weight: 10.0f
+			random_bonus: 12
+		}
+		{
+			id: "083F6CF2E9F81DD0"
+			item: {
+				id: "minecraft:coal"
+				count: 16
+			}
+			weight: 10.0f
+			random_bonus: 16
+		}
+		{
+			id: "5D4AC78DFEAE2842"
+			item: {
+				id: "minecraft:gold_ingot"
+				count: 4
+			}
+			weight: 6.0f
+			random_bonus: 4
+		}
+		{
+			id: "8D186B6B1D16F588"
+			item: {
+				id: "minecraft:bread"
+				count: 8
+			}
+			weight: 8.0f
+		}
+		{
+			id: "0830494EF12858ED"
+			item: {
+				id: "minecraft:oak_log"
+				count: 16
+			}
+			weight: 8.0f
+			random_bonus: 16
+		}
+		{
+			id: "CD2D912648423FCB"
+			item: {
+				id: "minecraft:leather"
+				count: 6
+			}
+			weight: 5.0f
+		}
+		{
+			id: "3A4D81FD78FB6586"
+			item: {
+				id: "minecraft:redstone"
+				count: 8
+			}
+			weight: 6.0f
+			random_bonus: 8
+		}
+		{
+			id: "4FCCB1E45D2A6343"
+			item: {
+				id: "minecraft:lapis_lazuli"
+				count: 6
+			}
+			weight: 5.0f
+		}
+		{
+			id: "D96D958CF6D62C76"
+			item: {
+				id: "minecraft:ender_pearl"
+				count: 2
+			}
+			weight: 3.0f
+		}
+		{
+			id: "C70FE554835FD351"
+			item: {
+				id: "waystones:warp_stone"
+				count: 1
+			}
+			weight: 2.0f
+		}
+		{
+			id: "D8B3166E61D7CEA6"
+			item: {
+				id: "create:andesite_alloy"
+				count: 8
+			}
+			weight: 6.0f
+			random_bonus: 8
+		}
+		{
+			id: "45D3252782D0A10E"
+			item: {
+				id: "ars_nouveau:source_gem"
+				count: 4
+			}
+			weight: 6.0f
+			random_bonus: 4
+		}
+	]
+}

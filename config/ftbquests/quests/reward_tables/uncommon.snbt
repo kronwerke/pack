@@ -1,0 +1,123 @@
+{
+	id: "AC273A09128CA2CE"
+	title: "Uncommon Crate"
+	icon: {
+		id: "ftbquests:lootcrate"
+		count: 1
+	}
+	loot_size: 1
+	order_index: 1
+	rewards: [
+		{
+			id: "7F501FF8754F465C"
+			item: {
+				id: "minecraft:iron_block"
+				count: 2
+			}
+			weight: 10.0f
+			random_bonus: 2
+		}
+		{
+			id: "2E28587D0FAD2B3A"
+			item: {
+				id: "minecraft:gold_ingot"
+				count: 8
+			}
+			weight: 8.0f
+			random_bonus: 8
+		}
+		{
+			id: "22C6F122FF57118A"
+			item: {
+				id: "minecraft:diamond"
+				count: 2
+			}
+			weight: 6.0f
+			random_bonus: 2
+		}
+		{
+			id: "15EC0680E94B7542"
+			item: {
+				id: "minecraft:emerald"
+				count: 4
+			}
+			weight: 6.0f
+			random_bonus: 4
+		}
+		{
+			id: "9CA0EE8D2CE4F124"
+			item: {
+				id: "minecraft:experience_bottle"
+				count: 8
+			}
+			weight: 8.0f
+			random_bonus: 8
+		}
+		{
+			id: "9B1919B5FE0CEABC"
+			item: {
+				id: "minecraft:enchanted_golden_apple"
+				count: 1
+			}
+			weight: 1.0f
+		}
+		{
+			id: "78861BCE14844E3E"
+			item: {
+				id: "create:brass_ingot"
+				count: 6
+			}
+			weight: 6.0f
+			random_bonus: 6
+		}
+		{
+			id: "EEF94924B2881B4D"
+			item: {
+				id: "create:precision_mechanism"
+				count: 2
+			}
+			weight: 4.0f
+		}
+		{
+			id: "20AAD96F4C155EAF"
+			item: {
+				id: "mekanism:ingot_steel"
+				count: 8
+			}
+			weight: 6.0f
+			random_bonus: 8
+		}
+		{
+			id: "F8D18ADE1851D03A"
+			item: {
+				id: "ars_nouveau:source_gem_block"
+				count: 2
+			}
+			weight: 5.0f
+		}
+		{
+			id: "857DCFAE606A79C4"
+			item: {
+				id: "sophisticatedbackpacks:backpack"
+				count: 1
+			}
+			weight: 3.0f
+		}
+		{
+			id: "EB1C6F94A43061F5"
+			item: {
+				id: "waystones:waystone"
+				count: 1
+			}
+			weight: 4.0f
+		}
+		{
+			id: "B641CC15E3E9F014"
+			item: {
+				id: "minecraft:netherite_scrap"
+				count: 1
+			}
+			weight: 2.0f
+		}
+	]
+}

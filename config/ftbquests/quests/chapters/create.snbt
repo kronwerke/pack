@@ -1,0 +1,569 @@
+{
+	id: "A2342087C3E31DF2"
+	filename: "create"
+	title: "Create"
+	icon: {
+		id: "create:large_cogwheel"
+		count: 1
+	}
+	group: "AEAA9718BAF5A32A"
+	order_index: 0
+	default_quest_shape: "gear"
+	default_hide_dependency_lines: false
+	subtitle: [
+		"Rotation, belts and the first machines."
+	]
+	quests: [
+		{
+			id: "65568FD704BF8034"
+			x: 0.0d
+			y: 0.0d
+			title: "Create"
+			subtitle: "Rotational power, no wires needed."
+			description: [
+				"Create is about spinning things. Water wheels and windmills make rotation, shafts and cogwheels carry it, and machines use it to crush, press, mix and move."
+				""
+				"Everything in this chapter works from the first day of the season. The deeper machines (brass, trains, electron tubes) open with a later stage."
+				""
+				"&6Tip:&r Hold &eW&r on any Create block to open its Ponder screen. It shows you how the block works, step by step."
+			]
+			icon: {
+				id: "create:large_cogwheel"
+				count: 1
+			}
+			size: 2.0d
+			shape: "hexagon"
+			tasks: [
+				{
+					id: "8AB701A7A164FC9C"
+					type: "checkmark"
+					title: "Read this"
+				}
+			]
+			rewards: [
+				{
+					id: "931997A5545621AC"
+					type: "item"
+					item: {
+						id: "minecraft:andesite"
+						count: 1
+					}
+					count: 32
+				}
+				{
+					id: "F5A82B1E86502A85"
+					type: "loot"
+					table_id: "27B22058501FC0DC"
+				}
+			]
+		}
+		{
+			id: "D714EBDF3126946C"
+			x: 3.0d
+			y: 0.0d
+			title: "Andesite Alloy"
+			subtitle: "The stuff every Create block starts with."
+			description: [
+				"Craft &6Andesite&r with &6Iron Nuggets&r or &6Zinc Nuggets&r in the crafting table. Two alloy per craft."
+				"You will need hundreds of these. Andesite is common under y=0 and in the Mining Dimension."
+			]
+			dependencies: [
+				"65568FD704BF8034"
+			]
+			tasks: [
+				{
+					id: "5FF80D48378F5400"
+					type: "item"
+					item: {
+						id: "create:andesite_alloy"
+						count: 1
+					}
+					count: 16
+				}
+			]
+			rewards: [
+				{
+					id: "43A19B43BC49366D"
+					type: "item"
+					item: {
+						id: "create:andesite_alloy"
+						count: 1
+					}
+					count: 16
+				}
+			]
+		}
+		{
+			id: "BA0F97042370EA0C"
+			x: 6.0d
+			y: -1.5d
+			title: "Shafts"
+			subtitle: "Carries rotation in a straight line."
+			description: [
+				"A shaft passes rotation from one block to the next. Chain as many as you like, they lose nothing along the way."
+			]
+			dependencies: [
+				"D714EBDF3126946C"
+			]
+			tasks: [
+				{
+					id: "3C556C6C8F84493C"
+					type: "item"
+					item: {
+						id: "create:shaft"
+						count: 1
+					}
+					count: 8
+				}
+			]
+			rewards: [
+				{
+					id: "0AD85722BCA21FAF"
+					type: "item"
+					item: {
+						id: "create:shaft"
+						count: 1
+					}
+					count: 8
+				}
+			]
+		}
+		{
+			id: "CF9A91933C4AAD8D"
+			x: 6.0d
+			y: 1.5d
+			title: "Cogwheels"
+			subtitle: "Turns corners and changes speed."
+			description: [
+				"Two cogwheels next to each other pass rotation sideways and flip the direction."
+				"A small cogwheel driving a large one halves the speed and doubles the stress capacity. The other way round doubles the speed."
+			]
+			dependencies: [
+				"D714EBDF3126946C"
+			]
+			tasks: [
+				{
+					id: "548FA9544C10E35C"
+					type: "item"
+					item: {
+						id: "create:cogwheel"
+						count: 1
+					}
+					count: 4
+				}
+				{
+					id: "4668BDF5A1C6A5D8"
+					type: "item"
+					item: {
+						id: "create:large_cogwheel"
+						count: 1
+					}
+					count: 2
+				}
+			]
+			rewards: [
+				{
+					id: "69A3085846F04F2D"
+					type: "item"
+					item: {
+						id: "create:cogwheel"
+						count: 1
+					}
+					count: 4
+				}
+				{
+					id: "2EAE07C9DB4B3FDB"
+					type: "item"
+					item: {
+						id: "create:large_cogwheel"
+						count: 1
+					}
+					count: 2
+				}
+			]
+		}
+		{
+			id: "ABE024A205775B96"
+			x: 9.0d
+			y: 0.0d
+			title: "Water Wheel"
+			subtitle: "Your first source of rotation."
+			description: [
+				"Place a &6Water Wheel&r with flowing water on its blades. Each wheel gives 8 RPM and a little stress capacity."
+				"Two wheels on one shaft add their capacity, not their speed. Stack a few for your first machines."
+				""
+				"The &6Large Water Wheel&r (3x3) gives 4 RPM but much more capacity."
+			]
+			icon: {
+				id: "create:water_wheel"
+				count: 1
+			}
+			size: 1.5d
+			dependencies: [
+				"BA0F97042370EA0C"
+				"CF9A91933C4AAD8D"
+			]
+			tasks: [
+				{
+					id: "072A06F3D091244E"
+					type: "item"
+					item: {
+						id: "create:water_wheel"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "74C448B991426825"
+					type: "item"
+					item: {
+						id: "create:water_wheel"
+						count: 1
+					}
+					count: 2
+				}
+				{
+					id: "7327F086DBBD39AD"
+					type: "item"
+					item: {
+						id: "minecraft:water_bucket"
+						count: 1
+					}
+					count: 1
+				}
+			]
+		}
+		{
+			id: "F7255D3C2EA07E44"
+			x: 9.0d
+			y: 3.0d
+			title: "Engineer's Goggles"
+			subtitle: "See stress and speed on any block."
+			description: [
+				"Wear the goggles and look at a shaft or machine. The overlay tells you the speed and how much stress capacity the network has left."
+			]
+			optional: true
+			dependencies: [
+				"ABE024A205775B96"
+			]
+			tasks: [
+				{
+					id: "B88FF9F1C2A1DBFB"
+					type: "item"
+					item: {
+						id: "create:goggles"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "1C6864A33C76DBBC"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+		}
+		{
+			id: "4978B86F57E43FCE"
+			x: 12.0d
+			y: -2.0d
+			title: "Millstone"
+			subtitle: "Grinds things. Slowly. Your first machine."
+			description: [
+				"Put rotation into the &6Millstone&r from below or the side, drop items in from the top. It grinds wheat into flour, cobblestone into gravel, and gravel into flint and sand."
+				"Right click to take the output, or let a hopper or chute pull it out."
+			]
+			dependencies: [
+				"ABE024A205775B96"
+			]
+			tasks: [
+				{
+					id: "48C1EFCB7B4D3FF6"
+					type: "item"
+					item: {
+						id: "create:millstone"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "10DCB3159E8D9A39"
+					type: "item"
+					item: {
+						id: "minecraft:wheat"
+						count: 1
+					}
+					count: 32
+				}
+				{
+					id: "476E75E8DE3C05B4"
+					type: "loot"
+					table_id: "27B22058501FC0DC"
+				}
+			]
+		}
+		{
+			id: "6037742B6B449E83"
+			x: 12.0d
+			y: 2.0d
+			title: "Mechanical Press"
+			subtitle: "Ingots to plates, and the door to the rest of Create."
+			description: [
+				"Place the &6Mechanical Press&r one block above a &6Depot&r or a belt. Rotation from the top. Drop an ingot on the depot and it becomes a sheet."
+				"Sheets are in almost every Create recipe from here on. Iron, copper, gold and brass all press."
+			]
+			icon: {
+				id: "create:mechanical_press"
+				count: 1
+			}
+			size: 1.5d
+			dependencies: [
+				"ABE024A205775B96"
+			]
+			tasks: [
+				{
+					id: "76B1A588967F579A"
+					type: "item"
+					item: {
+						id: "create:mechanical_press"
+						count: 1
+					}
+					count: 1
+				}
+				{
+					id: "2D0CF064CADCACBF"
+					type: "item"
+					item: {
+						id: "create:depot"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "28CD3EB4888E8FFA"
+					type: "item"
+					item: {
+						id: "create:iron_sheet"
+						count: 1
+					}
+					count: 16
+				}
+				{
+					id: "33FF2A83180B38B6"
+					type: "loot"
+					table_id: "AC273A09128CA2CE"
+				}
+			]
+		}
+		{
+			id: "89FC33824A470023"
+			x: 15.0d
+			y: 0.0d
+			title: "Mechanical Belt"
+			subtitle: "Moves items and rotation at the same time."
+			description: [
+				"Craft belts from &6Dried Kelp&r. Place two shafts up to 20 blocks apart and right click both with the belt."
+				"The belt carries items along it and also passes rotation between the two shafts. Put a Mechanical Press over a belt and you have a sheet factory."
+			]
+			dependencies: [
+				"6037742B6B449E83"
+			]
+			tasks: [
+				{
+					id: "090DF4A42F3A7F55"
+					type: "item"
+					item: {
+						id: "create:belt_connector"
+						count: 1
+					}
+					count: 4
+				}
+			]
+			rewards: [
+				{
+					id: "819FDDA000B53EF2"
+					type: "item"
+					item: {
+						id: "create:belt_connector"
+						count: 1
+					}
+					count: 8
+				}
+				{
+					id: "4DE7625E74AD20B2"
+					type: "item"
+					item: {
+						id: "minecraft:dried_kelp"
+						count: 1
+					}
+					count: 16
+				}
+			]
+		}
+		{
+			id: "478413ABF5E7EDDF"
+			x: 15.0d
+			y: -3.0d
+			title: "Encased Fan"
+			subtitle: "Wash, smelt and smoke with air."
+			description: [
+				"Point an &6Encased Fan&r through water and drop items into the stream: gravel washes into flint and iron nuggets, sand into clay, soul sand into quartz."
+				"Through lava it smelts, through fire it smokes. No fuel needed, just rotation."
+			]
+			dependencies: [
+				"4978B86F57E43FCE"
+			]
+			tasks: [
+				{
+					id: "00618288D9CB4013"
+					type: "item"
+					item: {
+						id: "create:encased_fan"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "0D5F9A9FA6F659AF"
+					type: "item"
+					item: {
+						id: "minecraft:gravel"
+						count: 1
+					}
+					count: 64
+				}
+				{
+					id: "7EBE49F0E425E5AB"
+					type: "loot"
+					table_id: "27B22058501FC0DC"
+				}
+			]
+		}
+		{
+			id: "35E7FB9BFAB4A8C0"
+			x: 18.0d
+			y: 0.0d
+			title: "Mechanical Mixer"
+			subtitle: "Mixes items, fluids, and the way to brass."
+			description: [
+				"The &6Mechanical Mixer&r sits above a &6Basin&r. Put ingredients in the basin and give the mixer rotation from the top."
+				"Some recipes need heat: put a &6Blaze Burner&r under the basin. Brass needs exactly that, and brass is where the next stage begins."
+			]
+			icon: {
+				id: "create:mechanical_mixer"
+				count: 1
+			}
+			size: 1.5d
+			dependencies: [
+				"89FC33824A470023"
+			]
+			tasks: [
+				{
+					id: "AB535147071A4F6C"
+					type: "item"
+					item: {
+						id: "create:mechanical_mixer"
+						count: 1
+					}
+					count: 1
+				}
+				{
+					id: "DD4933ED39B1B012"
+					type: "item"
+					item: {
+						id: "create:basin"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "A0B3EA686B4D456B"
+					type: "item"
+					item: {
+						id: "create:brass_ingot"
+						count: 1
+					}
+					count: 4
+				}
+				{
+					id: "4E52025222B41667"
+					type: "loot"
+					table_id: "AC273A09128CA2CE"
+				}
+			]
+		}
+		{
+			id: "19B03EEC33BCE405"
+			x: 21.0d
+			y: 0.0d
+			title: "A Working Line"
+			subtitle: "Wheel, belt, press, chest. That is a factory."
+			description: [
+				"Build one line that takes iron ingots from a chest, presses them on a belt and drops the sheets into another chest. Use &6Chutes&r or &6Funnels&r at both ends."
+				"When it runs on its own, you are done with the basics. Everything after this is bigger versions of the same idea."
+			]
+			icon: {
+				id: "create:andesite_funnel"
+				count: 1
+			}
+			size: 1.75d
+			shape: "gear"
+			dependencies: [
+				"35E7FB9BFAB4A8C0"
+			]
+			tasks: [
+				{
+					id: "C65F64805DE17271"
+					type: "item"
+					item: {
+						id: "create:andesite_funnel"
+						count: 1
+					}
+					count: 2
+				}
+				{
+					id: "A4531A35B2FD49ED"
+					type: "item"
+					item: {
+						id: "create:chute"
+						count: 1
+					}
+					count: 2
+				}
+				{
+					id: "281E2199DEF438E5"
+					type: "item"
+					item: {
+						id: "create:iron_sheet"
+						count: 1
+					}
+					count: 32
+				}
+			]
+			rewards: [
+				{
+					id: "59EB9938DA7E773D"
+					type: "loot"
+					table_id: "A10FC6DF600A063E"
+				}
+				{
+					id: "DD481CF00D2B1ADA"
+					type: "xp_levels"
+					xp_levels: 10
+				}
+			]
+		}
+	]
+}

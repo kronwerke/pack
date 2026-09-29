@@ -1,0 +1,88 @@
+{
+	id: "A6C01AE3B31659CD"
+	title: "Epic Crate"
+	icon: {
+		id: "ftbquests:lootcrate"
+		count: 1
+	}
+	loot_size: 1
+	order_index: 3
+	rewards: [
+		{
+			id: "8C9AC137B75D48A4"
+			item: {
+				id: "minecraft:netherite_block"
+				count: 1
+			}
+			weight: 4.0f
+		}
+		{
+			id: "9CBE5BB0939871BF"
+			item: {
+				id: "minecraft:nether_star"
+				count: 1
+			}
+			weight: 4.0f
+		}
+		{
+			id: "7C1E3CF0D047D936"
+			item: {
+				id: "minecraft:enchanted_golden_apple"
+				count: 4
+			}
+			weight: 5.0f
+			random_bonus: 4
+		}
+		{
+			id: "933F409EF9F0B3F6"
+			item: {
+				id: "mekanism:alloy_atomic"
+				count: 4
+			}
+			weight: 5.0f
+			random_bonus: 4
+		}
+		{
+			id: "7E489659E7F21931"
+			item: {
+				id: "ae2:controller"
+				count: 1
+			}
+			weight: 3.0f
+		}
+		{
+			id: "6A517F12D1CAE077"
+			item: {
+				id: "ars_nouveau:dowsing_rod"
+				count: 1
+			}
+			weight: 3.0f
+		}
+		{
+			id: "0286A32C2203E94D"
+			item: {
+				id: "sophisticatedbackpacks:diamond_backpack"
+				count: 1
+			}
+			weight: 3.0f
+		}
+		{
+			id: "3C75D10D6F8F8A58"
+			item: {
+				id: "draconicevolution:draconium_ingot"
+				count: 16
+			}
+			weight: 4.0f
+			random_bonus: 16
+		}
+		{
+			id: "A3391775FA432E6B"
+			item: {
+				id: "apotheosis:gem_dust"
+				count: 8
+			}
+			weight: 5.0f
+			random_bonus: 8
+		}
+	]
+}

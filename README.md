@@ -37,9 +37,10 @@ The stage locks come from Chapters, the quests from FTB Quests, the goals from [
 | Part | What |
 | --- | --- |
 | `pack.toml`, `index.toml`, `mods/` | The packwiz pack: every mod pinned to a version and a hash |
-| `config/ftbquests/` | The quest book, generated, never edited by hand |
-| `tools/quests/` | Quest definitions in Python and the generator (`build.py`), plus `check_items.py` |
+| `config/ftbquests/` | The quest book, generated from `tools/quests/` by CI on every push, never edited by hand |
+| `tools/quests/` | Quest definitions in Python, the generator (`build.py`), `check_items.py` (every id exists in a jar) and `check_quest_stages.py` (no quest or crate hands out an item before its stage) |
 | `kubejs/data/kronwerke/chapters/stages/` | What each stage unlocks, one file per stage, read by Chapters |
+| `kubejs/server_scripts/` | Recipe changes |
 | `config/kronwerke/goals.json` | The five community goals, read by Kronwerke Core |
 | `docs/STAGES.md` | The design behind both: rules, timeline, numbers |
 | `tools/` | Scripts used while building: checking mods against Modrinth, a small RCON client, `check_stages.py` |
@@ -60,7 +61,8 @@ Test on a server: install NeoForge 21.1.252, then run `packwiz-installer-bootstr
 
 ## Planned
 
-- FTB Quests chapters that guide a newcomer through every mod in the pack. Create is done, the rest follows the stage order.
+- Quest chapters for stages 2 to 5, and an Origins chapter once the Kronwerke origins are in.
+- The obelisk: a block at spawn for the community goal, in Kronwerke Core.
 - Recipe changes that tie tech and magic together instead of running them side by side.
 - A lite client profile for weaker machines.
 
@@ -71,7 +73,7 @@ Test on a server: install NeoForge 21.1.252, then run `packwiz-installer-bootstr
 
 ## Status
 
-Early. 226 mods, boots clean on a dedicated server. Stage locks and community goals are in and load; the numbers are untested until the beta. One quest chapter of about thirty-five. No recipe changes yet.
+Early. 226 mods, boots clean on a dedicated server. Stage locks and community goals are in and load; the numbers are untested until the beta. Stage 1 has its quest book: eight chapters, 92 quests, every id checked against the jars and every item checked against the stage locks. One recipe change so far (the Mining Dimension key).
 
 ## Docs
 

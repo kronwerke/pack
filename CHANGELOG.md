@@ -16,3 +16,12 @@ First assembly. 222 mods on NeoForge 21.1.252, boots on a dedicated server. No q
 - Chapters stage files for stages 2 to 5 under `kubejs/data/kronwerke/chapters/stages/`, checked against the mod jars with `tools/check_stages.py`.
 - The five community goals for Kronwerke Core in `config/kronwerke/goals.json`.
 - CI refreshes the packwiz index and commits it when it changed.
+
+## 0.4.0
+
+- The stage 1 quest book: Start Here, Create, Ars Nouveau, Botania, Food and Farming, Storage, Silent Gear and Exploration. 92 quests.
+- Crates per stage. The stage 1 crates only hold stage 1 items; the old ones handed out brass, Mekanism steel and AE2 parts on day one.
+- `tools/quests/check_quest_stages.py` fails when a quest or crate uses an item before its stage opens. `check_items.py` also knows items that have no lang entry.
+- CI builds the quest book from `tools/quests/` and commits it with the index.
+- The Imbuement Chamber is open from stage 1. It is the only way to make Source Gems, and the stage 1 goal asks for them.
+- The Mining Dimension key (Enchanted Pickaxe) has a working recipe: its own sits in a folder 1.21 does not read and needs netherite.

@@ -25,3 +25,9 @@ First assembly. 222 mods on NeoForge 21.1.252, boots on a dedicated server. No q
 - CI builds the quest book from `tools/quests/` and commits it with the index.
 - The Imbuement Chamber is open from stage 1. It is the only way to make Source Gems, and the stage 1 goal asks for them.
 - The Mining Dimension key (Enchanted Pickaxe) has a working recipe: its own sits in a folder 1.21 does not read and needs netherite.
+
+## 0.5.0
+
+- The first stage 2 chapters: The Nether, Create: Brass, Mekanism and Botania: Runes. 44 quests, and a Brass, Steel and Terrasteel crate that only hold stage 2 items.
+- Tech and magic tied together in `kubejs/server_scripts/tech_and_magic.js`: the empty blaze burner needs two Source Gems, the metallurgic infuser two manasteel ingots, the terrestrial agglomeration plate two brass casings.
+- Stage 3 now locks what the design always kept for it: the Mekanism elite tier, the digital miner, teleporters, the quantum entangloporter and the injection and purification chambers. The antiprotonic nucleosynthesizer waits for stage 5.

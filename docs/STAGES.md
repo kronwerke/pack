@@ -74,9 +74,11 @@ Theme: brass, the Nether, mana, the first machines that do work while you sleep.
 | Tech | Brass Ingot | 4 000 | Needs a blaze burner line and a zinc supply. A good mixer setup makes 300 an hour. |
 | Tech | Precision Mechanism | 300 | The first real Create automation. Forces someone to build the sequenced gearshift line. |
 | Magic | Mana Pearl | 1 500 | Needs a mana farm that runs on its own. 1 500 pearls is about 750 000 mana. |
-| Magic | Terrasteel Ingot | 100 | Needs the terra plate and three pool's worth of mana each. Botania's stage 2 exit. |
+| Magic | Terrasteel Ingot | 100 | Needs the terra plate and half a full mana pool each. Botania's stage 2 exit. |
 
 **Quests:** Create brass (14), Create trains and contraptions (10), Mekanism basics (12), Immersive Engineering (10), Ars apprentice (10), Botania runic and elven (12), Occultism (10), Hexerei (8), The Nether (6). About 90.
+
+Written so far: The Nether (6), Create: Brass (14), Mekanism (12), Botania: Runes (12). Each chapter starts with a quest that needs a stage 2 item, so the rest stays locked until the stage opens.
 
 **Starter kit:** 16 brass ingots, 1 blaze burner, 1 source jar, 8 mana pearls.
 
@@ -145,13 +147,13 @@ When the bar hits 98 percent, the final event date is set. The last items go in,
 
 ## Tech and magic tied together
 
-Recipe changes through KubeJS so that neither side runs alone. One per stage transition at least:
+Recipe changes through KubeJS so that neither side runs alone. One per stage transition at least. The stage 2 ones are in `kubejs/server_scripts/tech_and_magic.js`; the rest follow with their stages:
 
 | Stage | Recipe | Effect |
 | --- | --- | --- |
-| 1 | Create Blaze Burner needs an Ars Nouveau Source Gem instead of a blaze cake to light | Brass needs a mage. |
-| 2 | Botania Terra Plate frame needs 4 Create brass casings | Terrasteel needs an engineer. |
-| 2 | Mekanism Metallurgic Infuser needs a Botania Mana Steel ingot | The first Mekanism machine needs mana. |
+| 2 | Create Empty Blaze Burner needs 2 Ars Nouveau Source Gems | Brass needs a mage. |
+| 2 | Botania Terrestrial Agglomeration Plate needs 2 Create brass casings in place of 2 lapis blocks | Terrasteel needs an engineer. |
+| 2 | Mekanism Metallurgic Infuser needs 2 Botania manasteel ingots in place of 2 iron | The first Mekanism machine needs mana. |
 | 3 | AE2 Controller needs an Occultism Spirit Attuned Gem | Storage networks need a ritual. |
 | 3 | Theurgy ore tripling and Mekanism ore tripling yield the same, Theurgy needs no power | A pure magic base is as good as a pure tech base. |
 | 3 | Malum Soul Stained Steel used in Ender IO Soul Binder | Ender IO's soul side is Malum. |
@@ -161,7 +163,9 @@ Recipe changes through KubeJS so that neither side runs alone. One per stage tra
 
 ## What the obelisk is
 
-A block at spawn from Kronwerke Core. Right click opens the goal screen: both pillars, progress bars, top contributors, a deposit slot per item. Items can also be piped in from a chest next to it (so factories can feed it directly, which is the point of the tech pillar). `/kw deposit` stays as the fallback.
+Any block at spawn, picked by an admin with `/kw admin obelisk set` (Kronwerke Core 0.3.0). Right click hands in the stack in your hand, sneak and right click everything that fits. A chest or barrel placed next to it becomes the feeder of whoever placed it: factories pipe into it and every two seconds the goal takes what it can use, counted for that player. That is the point of the tech pillar. `/kw deposit` stays as the fallback.
+
+Later, with Core on the clients: a screen with both pillars, progress bars and the top contributors.
 
 ## Numbers to revisit after the beta
 

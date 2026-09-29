@@ -1,0 +1,379 @@
+{
+	id: "5F4AAB36EBD18AA6"
+	filename: "create_trains"
+	title: "Create: Trains"
+	icon: {
+		id: "create:controls"
+		count: 1
+	}
+	group: "AEAA9718BAF5A32A"
+	order_index: 15
+	default_quest_shape: "gear"
+	default_hide_dependency_lines: false
+	subtitle: [
+		"Stage 2. Track, stations and trains that drive themselves."
+	]
+	quests: [
+		{
+			id: "837F2F27DF3947E6"
+			x: 0.0d
+			y: 0.0d
+			title: "Trains"
+			subtitle: "The fastest way across a big map is a railway."
+			description: [
+				"Create trains are real contraptions that drive on their own track, carry blocks, chests and tanks, and follow a timetable without anyone on board."
+				""
+				"Place track with right click on the start and right click on the end. It curves and climbs by itself."
+			]
+			icon: {
+				id: "create:track"
+				count: 1
+			}
+			size: 2.0d
+			shape: "hexagon"
+			tasks: [
+				{
+					id: "FF51E544E82CAD9B"
+					type: "item"
+					item: {
+						id: "create:track"
+						count: 1
+					}
+					count: 32
+				}
+			]
+			rewards: [
+				{
+					id: "F7F863C9E3FEB448"
+					type: "item"
+					item: {
+						id: "create:track"
+						count: 1
+					}
+					count: 32
+				}
+				{
+					id: "3A08342DA9E778E9"
+					type: "loot"
+					table_id: "F2BA64790EBA3DF5"
+				}
+			]
+		}
+		{
+			id: "ED444AAC25024D92"
+			x: 3.0d
+			y: -2.0d
+			title: "Railway Casing"
+			subtitle: "Bogeys are made of this."
+			description: [
+				"Apply a &6Sturdy Sheet&r to a brass casing. Right click the track with railway casing to place a bogey, the wheels a train stands on."
+			]
+			dependencies: [
+				"837F2F27DF3947E6"
+			]
+			tasks: [
+				{
+					id: "1A62809901326DC1"
+					type: "item"
+					item: {
+						id: "create:railway_casing"
+						count: 1
+					}
+					count: 4
+				}
+			]
+			rewards: [
+				{
+					id: "67FAD4F36224F222"
+					type: "item"
+					item: {
+						id: "create:brass_casing"
+						count: 1
+					}
+					count: 4
+				}
+			]
+		}
+		{
+			id: "B538FC75A11EA5BA"
+			x: 3.0d
+			y: 2.0d
+			title: "Train Station"
+			subtitle: "Where trains are built and where they stop."
+			description: [
+				"Place the &6Train Station&r next to the track. Everything a train needs is assembled in front of it, and its screen names the stop."
+			]
+			dependencies: [
+				"837F2F27DF3947E6"
+			]
+			tasks: [
+				{
+					id: "088DAC85B5C2AFFD"
+					type: "item"
+					item: {
+						id: "create:track_station"
+						count: 1
+					}
+					count: 2
+				}
+			]
+			rewards: [
+				{
+					id: "963638FC71B241DD"
+					type: "item"
+					item: {
+						id: "minecraft:compass"
+						count: 1
+					}
+					count: 2
+				}
+			]
+		}
+		{
+			id: "994F060D274014B2"
+			x: 6.0d
+			y: 0.0d
+			title: "Train Controls"
+			subtitle: "The driver's seat."
+			description: [
+				"Put bogeys on the track at the station, build your train on top of them, glue it together with &6Super Glue&r, and place the &6Train Controls&r facing the way it should drive. Then open the station and assemble."
+			]
+			icon: {
+				id: "create:controls"
+				count: 1
+			}
+			size: 1.5d
+			dependencies: [
+				"ED444AAC25024D92"
+				"B538FC75A11EA5BA"
+			]
+			tasks: [
+				{
+					id: "63A8524E642D9243"
+					type: "item"
+					item: {
+						id: "create:controls"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "03F9369889E052F7"
+					type: "item"
+					item: {
+						id: "create:super_glue"
+						count: 1
+					}
+					count: 1
+				}
+				{
+					id: "1EC9270FFF275C68"
+					type: "loot"
+					table_id: "F2BA64790EBA3DF5"
+				}
+			]
+		}
+		{
+			id: "9B554A689296B483"
+			x: 9.0d
+			y: 0.0d
+			title: "Your First Train"
+			subtitle: "All aboard."
+			description: [
+				"Assemble it, sit at the controls and drive it to another station. Disassemble it there if you like, it keeps its shape."
+			]
+			shape: "diamond"
+			dependencies: [
+				"994F060D274014B2"
+			]
+			tasks: [
+				{
+					id: "CBED48A0879A9455"
+					type: "checkmark"
+					title: "Assemble a train and drive it"
+				}
+			]
+			rewards: [
+				{
+					id: "6A1423BB79AF7DFF"
+					type: "item"
+					item: {
+						id: "create:track"
+						count: 1
+					}
+					count: 64
+				}
+				{
+					id: "95B6C13496FE622A"
+					type: "xp_levels"
+					xp_levels: 10
+				}
+			]
+		}
+		{
+			id: "6701AFCD425DC02F"
+			x: 12.0d
+			y: -2.0d
+			title: "Train Schedule"
+			subtitle: "It drives while you are elsewhere."
+			description: [
+				"Write stops and conditions into a &6Train Schedule&r: go to this station, wait until the cargo is full, go to that one. Hand it to a conductor sitting at the controls, a mob or even a blaze in a blaze burner."
+			]
+			dependencies: [
+				"9B554A689296B483"
+			]
+			tasks: [
+				{
+					id: "060C52684A75C583"
+					type: "item"
+					item: {
+						id: "create:schedule"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "16063AFD1FE453BF"
+					type: "item"
+					item: {
+						id: "minecraft:lead"
+						count: 1
+					}
+					count: 2
+				}
+				{
+					id: "985673A950C7A338"
+					type: "loot"
+					table_id: "BA8E33E78A3B3A0C"
+				}
+			]
+		}
+		{
+			id: "9F22A2895F323AF2"
+			x: 12.0d
+			y: 2.0d
+			title: "Signals"
+			subtitle: "More than one train, no crashes."
+			description: [
+				"Signals split the track into sections. A train waits at a red signal until the section ahead is free. You need them as soon as two trains share a line."
+			]
+			dependencies: [
+				"9B554A689296B483"
+			]
+			tasks: [
+				{
+					id: "62274814480AFF12"
+					type: "item"
+					item: {
+						id: "create:track_signal"
+						count: 1
+					}
+					count: 2
+				}
+			]
+			rewards: [
+				{
+					id: "4697E86C4ADDCDE4"
+					type: "item"
+					item: {
+						id: "create:electron_tube"
+						count: 1
+					}
+					count: 4
+				}
+			]
+		}
+		{
+			id: "3EEACBE873E2B758"
+			x: 15.0d
+			y: -2.0d
+			title: "Cargo"
+			subtitle: "Load and unload at every stop."
+			description: [
+				"A &6Portable Storage Interface&r on the train and one at the station swap items whenever the train stops there. That is how a mine in one corner of the map feeds a factory in the other."
+			]
+			optional: true
+			dependencies: [
+				"6701AFCD425DC02F"
+			]
+			tasks: [
+				{
+					id: "E7D7210FE9860924"
+					type: "item"
+					item: {
+						id: "create:portable_storage_interface"
+						count: 1
+					}
+					count: 2
+				}
+			]
+			rewards: [
+				{
+					id: "A7DA7CEFB3604A87"
+					type: "item"
+					item: {
+						id: "create:andesite_casing"
+						count: 1
+					}
+					count: 8
+				}
+			]
+		}
+		{
+			id: "701D3F3ED7D11748"
+			x: 15.0d
+			y: 0.0d
+			title: "A Line That Runs Itself"
+			subtitle: "Two stations, one schedule, no driver."
+			description: [
+				"A train on a schedule between two bases, with signals where lines meet. The obelisk is at spawn: a line there makes feeding it easy."
+			]
+			icon: {
+				id: "create:track_station"
+				count: 1
+			}
+			size: 1.75d
+			shape: "gear"
+			dependencies: [
+				"6701AFCD425DC02F"
+				"9F22A2895F323AF2"
+			]
+			tasks: [
+				{
+					id: "F6BDD096C588ECD4"
+					type: "item"
+					item: {
+						id: "create:track"
+						count: 1
+					}
+					count: 256
+				}
+				{
+					id: "39C138E9A17088C7"
+					type: "item"
+					item: {
+						id: "create:track_station"
+						count: 1
+					}
+					count: 2
+				}
+			]
+			rewards: [
+				{
+					id: "3676341135EE1C6E"
+					type: "loot"
+					table_id: "C79EAEAE0F26AA7F"
+				}
+				{
+					id: "D045723BBB7F4FA9"
+					type: "xp_levels"
+					xp_levels: 15
+				}
+			]
+		}
+	]
+}

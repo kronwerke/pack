@@ -1,0 +1,439 @@
+{
+	id: "1D6D168994F5F61E"
+	filename: "immersive"
+	title: "Immersive Engineering"
+	icon: {
+		id: "immersiveengineering:hammer"
+		count: 1
+	}
+	group: "AEAA9718BAF5A32A"
+	order_index: 14
+	default_quest_shape: "square"
+	default_hide_dependency_lines: false
+	subtitle: [
+		"Stage 2. Coke, treated wood, steel and wires."
+	]
+	quests: [
+		{
+			id: "8FE695089B5F6559"
+			x: 0.0d
+			y: 0.0d
+			title: "Immersive Engineering"
+			subtitle: "Big machines you walk around in."
+			description: [
+				"Immersive Engineering builds its machines as multiblocks: stack the right blocks in the right shape, hit them with the &6Engineer's Hammer&r, and they become one machine."
+				""
+				"The &6Engineer's Manual&r shows every structure layer by layer. Read it before you build."
+			]
+			icon: {
+				id: "immersiveengineering:hammer"
+				count: 1
+			}
+			size: 2.0d
+			shape: "hexagon"
+			tasks: [
+				{
+					id: "F0D4483A864E35DC"
+					type: "item"
+					item: {
+						id: "immersiveengineering:manual"
+						count: 1
+					}
+					count: 1
+				}
+				{
+					id: "A87D7901D3C5FF48"
+					type: "item"
+					item: {
+						id: "immersiveengineering:hammer"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "D5D549A909425258"
+					type: "item"
+					item: {
+						id: "minecraft:iron_ingot"
+						count: 1
+					}
+					count: 16
+				}
+				{
+					id: "E2C6C52E625971F6"
+					type: "loot"
+					table_id: "F2BA64790EBA3DF5"
+				}
+			]
+		}
+		{
+			id: "570C72A66EDB786D"
+			x: 3.0d
+			y: 0.0d
+			title: "Coke Oven"
+			subtitle: "Twenty seven bricks, one machine."
+			description: [
+				"Build a 3x3x3 cube of &6Coke Bricks&r and hit the middle of one side with the hammer. Coal goes in, &6Coal Coke&r and &6Creosote Oil&r come out. Put a bucket in the oven to take the creosote."
+			]
+			icon: {
+				id: "immersiveengineering:cokebrick"
+				count: 1
+			}
+			size: 1.5d
+			dependencies: [
+				"8FE695089B5F6559"
+			]
+			tasks: [
+				{
+					id: "69E647546E2A0229"
+					type: "item"
+					item: {
+						id: "immersiveengineering:cokebrick"
+						count: 1
+					}
+					count: 27
+				}
+			]
+			rewards: [
+				{
+					id: "1CC00A5B525392EC"
+					type: "item"
+					item: {
+						id: "minecraft:clay_ball"
+						count: 1
+					}
+					count: 32
+				}
+				{
+					id: "8186832DCC839476"
+					type: "item"
+					item: {
+						id: "minecraft:coal"
+						count: 1
+					}
+					count: 32
+				}
+			]
+		}
+		{
+			id: "E6A09DA1E56FBCA2"
+			x: 6.0d
+			y: -2.0d
+			title: "Coal Coke"
+			subtitle: "Hotter than coal, and it makes steel."
+			description: [
+				"Coal coke burns longer than coal and is what the blast furnace wants. Start stockpiling."
+			]
+			dependencies: [
+				"570C72A66EDB786D"
+			]
+			tasks: [
+				{
+					id: "17B9897FEB1A1211"
+					type: "item"
+					item: {
+						id: "immersiveengineering:coal_coke"
+						count: 1
+					}
+					count: 32
+				}
+			]
+			rewards: [
+				{
+					id: "C6E0E6E520D3CDB4"
+					type: "item"
+					item: {
+						id: "minecraft:coal_block"
+						count: 1
+					}
+					count: 8
+				}
+			]
+		}
+		{
+			id: "219BE3696F329A1E"
+			x: 6.0d
+			y: 2.0d
+			title: "Treated Wood"
+			subtitle: "Planks that do not rot."
+			description: [
+				"Craft planks with a bucket of creosote oil. Treated wood is in half the machines of this mod, and the sticks go into the windmill."
+			]
+			dependencies: [
+				"570C72A66EDB786D"
+			]
+			tasks: [
+				{
+					id: "F7A093C41616DFA2"
+					type: "item"
+					item: {
+						id: "immersiveengineering:treated_wood_horizontal"
+						count: 1
+					}
+					count: 16
+				}
+			]
+			rewards: [
+				{
+					id: "3912172590CE4672"
+					type: "item"
+					item: {
+						id: "minecraft:oak_planks"
+						count: 1
+					}
+					count: 32
+				}
+			]
+		}
+		{
+			id: "5D3B2AA57876A325"
+			x: 9.0d
+			y: -2.0d
+			title: "Blast Furnace"
+			subtitle: "Iron in, steel out."
+			description: [
+				"Another 3x3x3 cube, this time of &6Blast Bricks&r, which need things from the Nether. Iron and coal coke go in, &6Steel&r comes out, slowly."
+				"Steel from here counts for the stage 3 goal exactly like Mekanism steel."
+			]
+			icon: {
+				id: "immersiveengineering:blastbrick"
+				count: 1
+			}
+			size: 1.5d
+			dependencies: [
+				"E6A09DA1E56FBCA2"
+			]
+			tasks: [
+				{
+					id: "0656BDE202A72D06"
+					type: "item"
+					item: {
+						id: "immersiveengineering:blastbrick"
+						count: 1
+					}
+					count: 27
+				}
+			]
+			rewards: [
+				{
+					id: "60A0BE25AE55E73B"
+					type: "item"
+					item: {
+						id: "minecraft:iron_ingot"
+						count: 1
+					}
+					count: 32
+				}
+				{
+					id: "FA2BB4C4924CD09D"
+					type: "loot"
+					table_id: "BA8E33E78A3B3A0C"
+				}
+			]
+		}
+		{
+			id: "BB25DD50942C713A"
+			x: 12.0d
+			y: -2.0d
+			title: "Steel"
+			subtitle: "The first ingots."
+			description: [
+				"Run the blast furnace. It takes a while per ingot, so build two and keep them fed."
+			]
+			dependencies: [
+				"5D3B2AA57876A325"
+			]
+			tasks: [
+				{
+					id: "E1F724B566A0CD41"
+					type: "item"
+					item: {
+						id: "immersiveengineering:ingot_steel"
+						count: 1
+					}
+					count: 16
+				}
+			]
+			rewards: [
+				{
+					id: "4704ADDCE236CA45"
+					type: "item"
+					item: {
+						id: "immersiveengineering:coal_coke"
+						count: 1
+					}
+					count: 16
+				}
+			]
+		}
+		{
+			id: "5E25C12926B19AE5"
+			x: 9.0d
+			y: 2.0d
+			title: "Windmill and Kinetic Dynamo"
+			subtitle: "Rotation to power."
+			description: [
+				"A &6Windmill&r or &6Water Wheel&r turns a &6Kinetic Dynamo&r, which puts out power. Windmills work better high up with open space around them."
+			]
+			icon: {
+				id: "immersiveengineering:windmill"
+				count: 1
+			}
+			size: 1.5d
+			dependencies: [
+				"219BE3696F329A1E"
+			]
+			tasks: [
+				{
+					id: "E5FC9B1B0A478820"
+					type: "item"
+					item: {
+						id: "immersiveengineering:windmill"
+						count: 1
+					}
+					count: 1
+				}
+				{
+					id: "8D1AC506D7E72FEE"
+					type: "item"
+					item: {
+						id: "immersiveengineering:dynamo"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "64EFAA946722B6FA"
+					type: "item"
+					item: {
+						id: "immersiveengineering:treated_wood_horizontal"
+						count: 1
+					}
+					count: 16
+				}
+			]
+		}
+		{
+			id: "93E5418A474982C6"
+			x: 12.0d
+			y: 2.0d
+			title: "Copper Wire"
+			subtitle: "Power on poles, across the base."
+			description: [
+				"Place &6LV Wire Connectors&r on the dynamo and the machines, then right click them one after the other with a &6Copper Wire Coil&r. Wires hang in the air and can span long distances."
+			]
+			dependencies: [
+				"5E25C12926B19AE5"
+			]
+			tasks: [
+				{
+					id: "596356A30232744E"
+					type: "item"
+					item: {
+						id: "immersiveengineering:wirecoil_copper"
+						count: 1
+					}
+					count: 4
+				}
+				{
+					id: "EE0AAABAA93FB6B1"
+					type: "item"
+					item: {
+						id: "immersiveengineering:connector_lv"
+						count: 1
+					}
+					count: 4
+				}
+			]
+			rewards: [
+				{
+					id: "453C31B4FDDF4E3B"
+					type: "item"
+					item: {
+						id: "minecraft:copper_ingot"
+						count: 1
+					}
+					count: 32
+				}
+			]
+		}
+		{
+			id: "F27164CFA50C5EBE"
+			x: 15.0d
+			y: 2.0d
+			title: "LV Capacitor"
+			subtitle: "Keep the power for later."
+			description: [
+				"Stores power for when the wind drops. Put it between the dynamo and the machines."
+			]
+			optional: true
+			dependencies: [
+				"93E5418A474982C6"
+			]
+			tasks: [
+				{
+					id: "DE2E6F6FB35B972C"
+					type: "item"
+					item: {
+						id: "immersiveengineering:capacitor_lv"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "E8DD5917DD4F6C2E"
+					type: "loot"
+					table_id: "F2BA64790EBA3DF5"
+				}
+			]
+		}
+		{
+			id: "9CC653727697EE2C"
+			x: 15.0d
+			y: -2.0d
+			title: "An Engineer"
+			subtitle: "Steel by the stack."
+			description: [
+				"The stage 3 goal asks for thousands of steel. Two or three blast furnaces running now make that a lot less painful later."
+			]
+			icon: {
+				id: "immersiveengineering:ingot_steel"
+				count: 1
+			}
+			size: 1.75d
+			shape: "gear"
+			dependencies: [
+				"BB25DD50942C713A"
+			]
+			tasks: [
+				{
+					id: "41CAE429F1C247DE"
+					type: "item"
+					item: {
+						id: "immersiveengineering:ingot_steel"
+						count: 1
+					}
+					count: 64
+				}
+			]
+			rewards: [
+				{
+					id: "9A3D1EC0887D01F3"
+					type: "loot"
+					table_id: "C79EAEAE0F26AA7F"
+				}
+				{
+					id: "34AAF5FC53EC77FF"
+					type: "xp_levels"
+					xp_levels: 15
+				}
+			]
+		}
+	]
+}

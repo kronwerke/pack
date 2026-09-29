@@ -1,0 +1,367 @@
+{
+	id: "2D557E138EE8E5B4"
+	filename: "hexerei"
+	title: "Hexerei"
+	icon: {
+		id: "hexerei:mixing_cauldron"
+		count: 1
+	}
+	group: "03203A1312E25E36"
+	order_index: 16
+	default_quest_shape: "circle"
+	default_hide_dependency_lines: false
+	subtitle: [
+		"Stage 2. Herbs, the mixing cauldron, sage and brooms."
+	]
+	quests: [
+		{
+			id: "348228BD326C7E34"
+			x: 0.0d
+			y: 0.0d
+			title: "Hexerei"
+			subtitle: "Herbs, a cauldron and a broom."
+			description: [
+				"Hexerei is witchcraft the old way: gather herbs, dry them, grind them, mix them in a cauldron. The &6Book of Shadows&r is its manual. Put it on an altar to read it standing up."
+				""
+				"Belladonna, mandrake, mugwort, sage and yellow dock grow wild. Look in swamps and forests."
+			]
+			icon: {
+				id: "hexerei:book_of_shadows"
+				count: 1
+			}
+			size: 2.0d
+			shape: "hexagon"
+			tasks: [
+				{
+					id: "F483EFEEAEB10394"
+					type: "item"
+					item: {
+						id: "hexerei:book_of_shadows"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "6F07561389AAC86B"
+					type: "item"
+					item: {
+						id: "hexerei:sage_seed"
+						count: 1
+					}
+					count: 8
+				}
+				{
+					id: "F129CB1794BF368F"
+					type: "loot"
+					table_id: "F2BA64790EBA3DF5"
+				}
+			]
+		}
+		{
+			id: "1AF19A157D9CAAE2"
+			x: 3.0d
+			y: -2.0d
+			title: "Pestle and Mortar"
+			subtitle: "Grind it first."
+			description: [
+				"Right click to put items in. The recipe starts on its own once everything is inside. Crouch and right click with an empty hand to take things out."
+				"Herbs dry on a drying rack before most recipes want them."
+			]
+			dependencies: [
+				"348228BD326C7E34"
+			]
+			tasks: [
+				{
+					id: "42FF4B8B60E79B2E"
+					type: "item"
+					item: {
+						id: "hexerei:pestle_and_mortar"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "9192E9DA317612A6"
+					type: "item"
+					item: {
+						id: "minecraft:bone_meal"
+						count: 1
+					}
+					count: 16
+				}
+			]
+		}
+		{
+			id: "05DF5F6346BEB7E0"
+			x: 3.0d
+			y: 2.0d
+			title: "Mixing Cauldron"
+			subtitle: "Where every Hexerei recipe ends."
+			description: [
+				"Fill it with the right liquid and add the ingredients. The Book of Shadows lists what goes in. Most brooms, brushes and sigils are made here."
+			]
+			icon: {
+				id: "hexerei:mixing_cauldron"
+				count: 1
+			}
+			size: 1.5d
+			dependencies: [
+				"348228BD326C7E34"
+			]
+			tasks: [
+				{
+					id: "40D7B510DD1C05A0"
+					type: "item"
+					item: {
+						id: "hexerei:mixing_cauldron"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "DA3C3EBCE85B02B2"
+					type: "item"
+					item: {
+						id: "minecraft:water_bucket"
+						count: 1
+					}
+					count: 1
+				}
+				{
+					id: "C367AE2B7EF99C4E"
+					type: "loot"
+					table_id: "F2BA64790EBA3DF5"
+				}
+			]
+		}
+		{
+			id: "B42FC625BA6E589C"
+			x: 6.0d
+			y: -2.0d
+			title: "Herb Jar"
+			subtitle: "1024 of one herb, on a shelf."
+			description: [
+				"A jar holds up to 1024 of a single item. Punch the front to take one out, right click another side for the full view."
+			]
+			optional: true
+			dependencies: [
+				"1AF19A157D9CAAE2"
+			]
+			tasks: [
+				{
+					id: "A733F0665A36AA38"
+					type: "item"
+					item: {
+						id: "hexerei:herb_jar"
+						count: 1
+					}
+					count: 4
+				}
+			]
+			rewards: [
+				{
+					id: "17E9338C893220FE"
+					type: "item"
+					item: {
+						id: "minecraft:glass"
+						count: 1
+					}
+					count: 16
+				}
+			]
+		}
+		{
+			id: "B117E9E50A8546C5"
+			x: 6.0d
+			y: 2.0d
+			title: "Burning Sage"
+			subtitle: "No monsters at home."
+			description: [
+				"A lit bundle of dried sage on a &6Sage Burning Plate&r stops monsters from spawning in a wide radius around it. The bundle burns down slowly, keep a few spare."
+			]
+			icon: {
+				id: "hexerei:sage_burning_plate"
+				count: 1
+			}
+			size: 1.5d
+			dependencies: [
+				"05DF5F6346BEB7E0"
+			]
+			tasks: [
+				{
+					id: "FAA0C3AE06C1D8C5"
+					type: "item"
+					item: {
+						id: "hexerei:sage_burning_plate"
+						count: 1
+					}
+					count: 1
+				}
+				{
+					id: "D35A26CF8F00FDBA"
+					type: "item"
+					item: {
+						id: "hexerei:dried_sage_bundle"
+						count: 1
+					}
+					count: 2
+				}
+			]
+			rewards: [
+				{
+					id: "C1FF66828A9AF313"
+					type: "item"
+					item: {
+						id: "hexerei:sage_seed"
+						count: 1
+					}
+					count: 16
+				}
+				{
+					id: "F55EA2FFC452B2FE"
+					type: "loot"
+					table_id: "BA8E33E78A3B3A0C"
+				}
+			]
+		}
+		{
+			id: "D08C9B47D28194CE"
+			x: 9.0d
+			y: 0.0d
+			title: "A Broom"
+			subtitle: "Fly."
+			description: [
+				"The &6Willow Broom&r is the easy one, good for building. The &6Mahogany Broom&r is faster and does not burn. Crouch and right click a broom to open its inventory, where brushes, tips and satchels go."
+			]
+			icon: {
+				id: "hexerei:willow_broom"
+				count: 1
+			}
+			size: 1.5d
+			shape: "diamond"
+			dependencies: [
+				"05DF5F6346BEB7E0"
+			]
+			tasks: [
+				{
+					id: "275E8C8489860E35"
+					type: "item"
+					item: {
+						id: "hexerei:willow_broom"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "CDFE4C2C3E351DD0"
+					type: "item"
+					item: {
+						id: "minecraft:feather"
+						count: 1
+					}
+					count: 16
+				}
+				{
+					id: "CC1AE7B40CA78181"
+					type: "loot"
+					table_id: "BA8E33E78A3B3A0C"
+				}
+			]
+		}
+		{
+			id: "B96ADDFDC00D322E"
+			x: 9.0d
+			y: -3.5d
+			title: "Crows"
+			subtitle: "Small, black, helpful."
+			description: [
+				"Tamed crows follow you, sit on your shoulder, and with a &6Crow Flute&r you can tell them to gather items into a coffer, harvest and replant crops, or pick villagers' pockets."
+			]
+			optional: true
+			dependencies: [
+				"1AF19A157D9CAAE2"
+			]
+			tasks: [
+				{
+					id: "213817D1886E9C8C"
+					type: "item"
+					item: {
+						id: "hexerei:crow_flute"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "0061CFA7BBFCC7C7"
+					type: "item"
+					item: {
+						id: "minecraft:wheat_seeds"
+						count: 1
+					}
+					count: 32
+				}
+			]
+		}
+		{
+			id: "1E7E20EF779BE8CD"
+			x: 12.0d
+			y: 0.0d
+			title: "A Witch's House"
+			subtitle: "Candles, herbs, a broom by the door."
+			description: [
+				"Dip candles from tallow in the cauldron with the &6Candle Dipper&r, fill the jars, keep the sage burning. Then fly off and help the Botania and Ars players fill the obelisk."
+			]
+			icon: {
+				id: "hexerei:mahogany_broom"
+				count: 1
+			}
+			size: 1.75d
+			dependencies: [
+				"D08C9B47D28194CE"
+				"B117E9E50A8546C5"
+			]
+			tasks: [
+				{
+					id: "98235BCFAAD2F77A"
+					type: "item"
+					item: {
+						id: "hexerei:candle"
+						count: 1
+					}
+					count: 8
+				}
+				{
+					id: "1C5B685D16907B10"
+					type: "item"
+					item: {
+						id: "hexerei:mahogany_broom"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "9346F419E652409F"
+					type: "loot"
+					table_id: "C79EAEAE0F26AA7F"
+				}
+				{
+					id: "9200A8924B4B6FF2"
+					type: "xp_levels"
+					xp_levels: 15
+				}
+			]
+		}
+	]
+}

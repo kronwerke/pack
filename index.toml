@@ -105,12 +105,16 @@ file = "config/kronwerke/goals.json"
 hash = "55fcf7105d9c257e8d338ebf3334a704c942e655b535997fb75f9d1d36843539"
 
 [[files]]
+file = "config/travelerstitles-neoforge-1_21.toml"
+hash = "a93f4b57547a2840c7c06e4a6442a1239a6f19d383e0cfdfa86d6813589506a8"
+
+[[files]]
 file = "kubejs/data/kronwerke/chapters/stages/stage2.json"
 hash = "7e1e3f95fd7a0e66d86e096ccdb245c023caa1d6d5f95830cf072ba405b577cd"
 
 [[files]]
 file = "kubejs/data/kronwerke/chapters/stages/stage3.json"
-hash = "574cec340de9f23307281857597438f49e01647ad2589e88f6120127c76e69e7"
+hash = "018ac9401ef1a89eed350b2724d0650dff5397c81071c5351ac3c9ea16b1f298"
 
 [[files]]
 file = "kubejs/data/kronwerke/chapters/stages/stage4.json"
@@ -735,7 +739,7 @@ metafile = true
 
 [[files]]
 file = "mods/kronwerke-core.pw.toml"
-hash = "bb10b92c0bf74dc48a7051d599086fb4527f9bb8ba4199ded86720b38d267b73"
+hash = "04063e159acf1ae19a35bece922f463ada5bfb74860c49547f274365f12ef5fe"
 metafile = true
 
 [[files]]
@@ -896,6 +900,11 @@ metafile = true
 [[files]]
 file = "mods/no-chat-reports.pw.toml"
 hash = "5da18814472be5dc93a21886983646da3a7236413800075ac75229be82d114fa"
+metafile = true
+
+[[files]]
+file = "mods/no-chat-restrictions.pw.toml"
+hash = "188500c93c2f057ae0053890e72e409e2c4ddaedfcb34bdfecb87b6299b5717d"
 metafile = true
 
 [[files]]

@@ -31,3 +31,10 @@ First assembly. 222 mods on NeoForge 21.1.252, boots on a dedicated server. No q
 - The stage 2 quest book: The Nether, Create: Brass, Create: Trains, Mekanism, Immersive Engineering, Botania: Runes, Ars Nouveau: Mage, Occultism and Hexerei. 88 quests, and a Brass, Steel and Terrasteel crate that only hold stage 2 items.
 - Tech and magic tied together in `kubejs/server_scripts/tech_and_magic.js`: the empty blaze burner needs two Source Gems, the metallurgic infuser two manasteel ingots, the terrestrial agglomeration plate two brass casings.
 - Stage 3 now locks what the design always kept for it: the Mekanism elite tier, the digital miner, teleporters, the quantum entangloporter and the injection and purification chambers. The antiprotonic nucleosynthesizer waits for stage 5.
+
+## 0.5.1
+
+- LuckPerms is gone. Its NeoForge build for 1.21.1 (5.4.140) fails to set up a joining player in time, the join is refused with "Invalid player data", and there is no newer build for 1.21.1. Operator levels cover what the server needs.
+- TabTPS is gone. When a join fails, it throws on the quit event for a player it never saw, and that took the whole server down. spark still shows TPS.
+- Kronwerke Core 0.4.0: `/kw admin bypass`, a quiet console for RCON, old logs deleted after 30 days.
+- CI commits as Elchi.

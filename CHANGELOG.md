@@ -46,3 +46,10 @@ First assembly. 222 mods on NeoForge 21.1.252, boots on a dedicated server. No q
 ## 0.5.3
 
 - Kronwerke Core 0.4.2: joining no longer freezes. After 0.4.1 Chapters still spent about eight minutes looking up every recipe that makes a locked item or fluid, to hide it in JEI. Core skips those lookups. Locked things stay out of JEI's list and the server still refuses to make them.
+
+## 0.5.4
+
+- Kronwerke Core 0.5.0: locked items can be picked up and carried again, but not held, worn or used; the action bar and the tooltip say which stage they belong to.
+- No Chat Restrictions: chat works for accounts whose Microsoft settings block it.
+- Traveler's Titles no longer shows a title on every biome change; dimension titles stay.
+- Stage 3 now also locks what the design keeps for it: the Mekanism advanced tier (the stage 3 goal asks for advanced control circuits), the Immersive Engineering machines built from engineering blocks, Refined Storage and Cable Tiers, and dreamwood from the Alfheim trade.

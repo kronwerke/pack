@@ -21,6 +21,7 @@ jobs:
           go-version: "1.24"
       - name: Build the quest book and check it against the stage locks
         run: |
+          python3 -m pip install --quiet --break-system-packages Pillow
           python3 tools/quests/build.py
           python3 tools/quests/check_quest_stages.py kubejs/data/kronwerke/chapters/stages
       - run: go install github.com/packwiz/packwiz@latest
@@ -29,7 +30,7 @@ jobs:
       - name: Commit the quest book and the index when they changed
         if: github.event_name == 'push' && startsWith(github.ref, 'refs/heads/')
         run: |
-          git add -A config/ftbquests index.toml pack.toml
+          git add -A config/ftbquests kubejs/assets index.toml pack.toml
           if ! git diff --cached --quiet; then
             git config user.name "Elchi"
             git config user.email "github@elchi.dev"

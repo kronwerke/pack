@@ -1,7 +1,6 @@
 {
 	id: "D8CFBE2010B681F3"
 	filename: "food"
-	title: "Food and Farming"
 	icon: {
 		id: "farmersdelight:cooking_pot"
 		count: 1
@@ -10,36 +9,21 @@
 	order_index: 4
 	default_quest_shape: "circle"
 	default_hide_dependency_lines: false
-	subtitle: [
-		"Crops, cooking and meals that last."
-	]
 	quests: [
 		{
 			id: "F51007087FB0E302"
 			x: 0.0d
-			y: 0.0d
-			title: "Food and Farming"
-			subtitle: "Better food keeps you going longer."
-			description: [
-				"Farmer's Delight adds real cooking: new crops, a cutting board, a cooking pot and meals that feed you for a long time and give useful effects."
-				""
-				"Start with a knife. A &6Flint Knife&r is flint and a stick, and it also cuts &6Straw&r from grass and wheat."
-			]
+			y: 3.0d
 			icon: {
 				id: "farmersdelight:cooking_pot"
 				count: 1
 			}
-			size: 2.0d
+			size: 2.5d
 			shape: "hexagon"
 			tasks: [
 				{
 					id: "B377113B844909E4"
-					type: "item"
-					item: {
-						id: "farmersdelight:flint_knife"
-						count: 1
-					}
-					count: 1
+					type: "checkmark"
 				}
 			]
 			rewards: [
@@ -60,24 +44,88 @@
 			]
 		}
 		{
-			id: "AC863CF9CBF64D84"
-			x: 3.0d
-			y: -2.0d
-			title: "Cutting Board"
-			subtitle: "Place an item, click with a knife, get more out of it."
-			description: [
-				"Put food on the board and use a knife on it to slice it. With an axe it strips logs and gives bark, with a pickaxe it breaks blocks down."
-			]
+			id: "0C58857CA43411EE"
+			x: 4.5d
+			y: -7.0d
 			icon: {
-				id: "farmersdelight:cutting_board"
+				id: "farmersdelight:flint_knife"
 				count: 1
 			}
+			size: 1.5d
 			dependencies: [
 				"F51007087FB0E302"
 			]
 			tasks: [
 				{
-					id: "47EA095722AD7556"
+					id: "13CB9850BE7880DD"
+					type: "item"
+					item: {
+						id: "farmersdelight:flint_knife"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "0899E796EC56755A"
+					type: "item"
+					item: {
+						id: "minecraft:bread"
+						count: 1
+					}
+					count: 8
+				}
+			]
+		}
+		{
+			id: "BC8FB7B228CE9B39"
+			x: 7.0d
+			y: -8.0d
+			icon: {
+				id: "farmersdelight:straw"
+				count: 1
+			}
+			dependencies: [
+				"0C58857CA43411EE"
+			]
+			tasks: [
+				{
+					id: "2946D9B17A61175D"
+					type: "item"
+					item: {
+						id: "farmersdelight:straw"
+						count: 1
+					}
+					count: 16
+				}
+			]
+			rewards: [
+				{
+					id: "BA8031F86B75E650"
+					type: "item"
+					item: {
+						id: "minecraft:bone_meal"
+						count: 1
+					}
+					count: 16
+				}
+			]
+		}
+		{
+			id: "52E55426A50447DF"
+			x: 7.0d
+			y: -6.0d
+			icon: {
+				id: "farmersdelight:cutting_board"
+				count: 1
+			}
+			dependencies: [
+				"0C58857CA43411EE"
+			]
+			tasks: [
+				{
+					id: "5C15067A2D94BC64"
 					type: "item"
 					item: {
 						id: "farmersdelight:cutting_board"
@@ -88,7 +136,7 @@
 			]
 			rewards: [
 				{
-					id: "F1C223E00C83ECBF"
+					id: "3C76C176DB5E763D"
 					type: "item"
 					item: {
 						id: "minecraft:beef"
@@ -99,24 +147,20 @@
 			]
 		}
 		{
-			id: "BC1DC875978EE9AF"
-			x: 3.0d
-			y: 2.0d
-			title: "Wild Crops"
-			subtitle: "Tomatoes, onions and cabbage grow wild."
-			description: [
-				"Wild crops grow in small patches all over the world. Break them for the crop and plant it at home. Cabbage and beets like the coast, tomatoes like it warm."
-			]
+			id: "61BA402B36393E94"
+			x: 9.0d
+			y: -7.0d
 			icon: {
 				id: "farmersdelight:tomato"
 				count: 1
 			}
 			dependencies: [
-				"F51007087FB0E302"
+				"BC8FB7B228CE9B39"
+				"52E55426A50447DF"
 			]
 			tasks: [
 				{
-					id: "EF26D2D73A560E86"
+					id: "D65F4C4130CFC0E3"
 					type: "item"
 					item: {
 						id: "farmersdelight:tomato"
@@ -125,7 +169,7 @@
 					count: 4
 				}
 				{
-					id: "2E9657C0AE28229B"
+					id: "AC082661602ED0F3"
 					type: "item"
 					item: {
 						id: "farmersdelight:onion"
@@ -134,7 +178,7 @@
 					count: 4
 				}
 				{
-					id: "F9DA6E9DBC7099B8"
+					id: "08DD5EBF350CE9C7"
 					type: "item"
 					item: {
 						id: "farmersdelight:cabbage"
@@ -145,7 +189,7 @@
 			]
 			rewards: [
 				{
-					id: "A400D948117B0A8C"
+					id: "279970AE2CE0904B"
 					type: "item"
 					item: {
 						id: "minecraft:bone_meal"
@@ -156,21 +200,19 @@
 			]
 		}
 		{
-			id: "E0B99A902858CDE1"
-			x: 6.0d
-			y: 4.0d
-			title: "Rice"
-			subtitle: "Grows in water."
-			description: [
-				"Wild rice grows in shallow water in swamps and along rivers. Plant it in water one block deep."
-			]
-			optional: true
+			id: "E28344D4FB2BEBDC"
+			x: 11.0d
+			y: -8.0d
+			icon: {
+				id: "farmersdelight:rice"
+				count: 1
+			}
 			dependencies: [
-				"BC1DC875978EE9AF"
+				"61BA402B36393E94"
 			]
 			tasks: [
 				{
-					id: "46CE43BFD91FD7C6"
+					id: "8B201AE6F9DF5AC8"
 					type: "item"
 					item: {
 						id: "farmersdelight:rice"
@@ -181,7 +223,7 @@
 			]
 			rewards: [
 				{
-					id: "649A672FA76D3CD8"
+					id: "B996F477F69B90AE"
 					type: "item"
 					item: {
 						id: "minecraft:water_bucket"
@@ -192,27 +234,91 @@
 			]
 		}
 		{
-			id: "0287814A6B11B2A7"
-			x: 6.0d
-			y: 0.0d
-			title: "Cooking Pot"
-			subtitle: "Soups, stews and meals that last."
-			description: [
-				"The pot needs heat underneath: a campfire, a &6Stove&r, or fire. Put the ingredients in, and a bowl in the container slot to serve."
-				"Meals give &6Nourishment&r (your food bar does not drop while it lasts) or &6Comfort&r (you regenerate however hungry you are)."
-			]
+			id: "F2CB07376FA940F8"
+			x: 11.0d
+			y: -6.0d
 			icon: {
-				id: "farmersdelight:cooking_pot"
+				id: "farmersdelight:rope"
+				count: 1
+			}
+			optional: true
+			dependencies: [
+				"61BA402B36393E94"
+			]
+			tasks: [
+				{
+					id: "A1A4310F76E02C81"
+					type: "item"
+					item: {
+						id: "farmersdelight:rope"
+						count: 1
+					}
+					count: 8
+				}
+			]
+			rewards: [
+				{
+					id: "03CC5272C529444D"
+					type: "item"
+					item: {
+						id: "farmersdelight:tomato_seeds"
+						count: 1
+					}
+					count: 4
+				}
+			]
+		}
+		{
+			id: "7EFCF559720990BB"
+			x: 4.5d
+			y: 0.0d
+			icon: {
+				id: "farmersdelight:stove"
 				count: 1
 			}
 			size: 1.5d
 			dependencies: [
-				"AC863CF9CBF64D84"
-				"BC1DC875978EE9AF"
+				"F51007087FB0E302"
 			]
 			tasks: [
 				{
-					id: "84B2849A081EAA82"
+					id: "7B578090A0524741"
+					type: "item"
+					item: {
+						id: "farmersdelight:stove"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "A5031DCCCEC66AC7"
+					type: "item"
+					item: {
+						id: "minecraft:coal"
+						count: 1
+					}
+					count: 8
+				}
+			]
+		}
+		{
+			id: "880F4CCBBF5D04BE"
+			x: 7.0d
+			y: 0.0d
+			icon: {
+				id: "farmersdelight:cooking_pot"
+				count: 1
+			}
+			size: 1.75d
+			shape: "hexagon"
+			dependencies: [
+				"7EFCF559720990BB"
+			]
+			tasks: [
+				{
+					id: "EFE67FED914B83A4"
 					type: "item"
 					item: {
 						id: "farmersdelight:cooking_pot"
@@ -223,7 +329,7 @@
 			]
 			rewards: [
 				{
-					id: "0E2AB83816F62EBF"
+					id: "792C79F361B0D63A"
 					type: "item"
 					item: {
 						id: "minecraft:bowl"
@@ -231,36 +337,58 @@
 					}
 					count: 16
 				}
+			]
+		}
+		{
+			id: "604CBA0CA99C2603"
+			x: 7.0d
+			y: 2.4d
+			icon: {
+				id: "farmersdelight:skillet"
+				count: 1
+			}
+			optional: true
+			dependencies: [
+				"7EFCF559720990BB"
+			]
+			tasks: [
 				{
-					id: "572C6D6E8F13525B"
+					id: "5D1C277CC5B07559"
 					type: "item"
 					item: {
-						id: "minecraft:campfire"
+						id: "farmersdelight:skillet"
 						count: 1
 					}
 					count: 1
 				}
 			]
+			rewards: [
+				{
+					id: "682AEA548C32A0E0"
+					type: "item"
+					item: {
+						id: "minecraft:egg"
+						count: 1
+					}
+					count: 8
+				}
+			]
 		}
 		{
-			id: "E2138A2006D79652"
-			x: 9.0d
-			y: 0.0d
-			title: "A Proper Meal"
-			subtitle: "Your first soup."
-			description: [
-				"A Vegetable Soup is easy and filling. Try the other recipes in JEI, they get better as you go."
-			]
+			id: "06E4A34E23E054B5"
+			x: 9.5d
+			y: -1.0d
 			icon: {
 				id: "farmersdelight:vegetable_soup"
 				count: 1
 			}
 			dependencies: [
-				"0287814A6B11B2A7"
+				"880F4CCBBF5D04BE"
+				"61BA402B36393E94"
 			]
 			tasks: [
 				{
-					id: "59079A77752528CC"
+					id: "1F26FD7C7FE1E179"
 					type: "item"
 					item: {
 						id: "farmersdelight:vegetable_soup"
@@ -271,28 +399,290 @@
 			]
 			rewards: [
 				{
-					id: "E46657B521CF3C91"
+					id: "9CAF806D88CC825B"
 					type: "loot"
 					table_id: "1EBBC2B918151958"
 				}
 			]
 		}
 		{
-			id: "2AF056B9F6C4C265"
-			x: 9.0d
-			y: -3.5d
-			title: "Rich Soil"
-			subtitle: "Crops grow faster on it."
-			description: [
-				"&6Organic Compost&r slowly turns into &6Rich Soil&r. Sun, water and mushrooms nearby make it go faster. Crops on Rich Soil grow faster, and mushrooms grow into colonies on it."
-			]
-			optional: true
+			id: "329F0D4C3D0BF1C4"
+			x: 9.5d
+			y: 1.0d
+			icon: {
+				id: "farmersdelight:tomato_sauce"
+				count: 1
+			}
 			dependencies: [
-				"0287814A6B11B2A7"
+				"880F4CCBBF5D04BE"
+				"61BA402B36393E94"
 			]
 			tasks: [
 				{
-					id: "B1590DC3F6856049"
+					id: "C721B667CE2DC117"
+					type: "item"
+					item: {
+						id: "farmersdelight:tomato_sauce"
+						count: 1
+					}
+					count: 2
+				}
+			]
+			rewards: [
+				{
+					id: "7641A34FA76F8C41"
+					type: "item"
+					item: {
+						id: "minecraft:wheat"
+						count: 1
+					}
+					count: 16
+				}
+			]
+		}
+		{
+			id: "33FC78E4F0295D41"
+			x: 12.0d
+			y: -1.0d
+			icon: {
+				id: "farmersdelight:beef_stew"
+				count: 1
+			}
+			dependencies: [
+				"06E4A34E23E054B5"
+			]
+			tasks: [
+				{
+					id: "C8DF3596F30665FB"
+					type: "item"
+					item: {
+						id: "farmersdelight:beef_stew"
+						count: 1
+					}
+					count: 2
+				}
+			]
+			rewards: [
+				{
+					id: "622B68F86D51C71A"
+					type: "item"
+					item: {
+						id: "minecraft:carrot"
+						count: 1
+					}
+					count: 16
+				}
+			]
+		}
+		{
+			id: "13D891DFD0CBEA83"
+			x: 12.0d
+			y: 1.0d
+			icon: {
+				id: "farmersdelight:cooked_rice"
+				count: 1
+			}
+			dependencies: [
+				"329F0D4C3D0BF1C4"
+				"E28344D4FB2BEBDC"
+			]
+			tasks: [
+				{
+					id: "165EF3E4B60F2942"
+					type: "item"
+					item: {
+						id: "farmersdelight:cooked_rice"
+						count: 1
+					}
+					count: 4
+				}
+			]
+			rewards: [
+				{
+					id: "1170FDEEF1BB4AEB"
+					type: "item"
+					item: {
+						id: "minecraft:egg"
+						count: 1
+					}
+					count: 8
+				}
+			]
+		}
+		{
+			id: "11BAD57C35D63EE0"
+			x: 14.5d
+			y: 0.0d
+			icon: {
+				id: "farmersdelight:fried_rice"
+				count: 1
+			}
+			dependencies: [
+				"33FC78E4F0295D41"
+				"13D891DFD0CBEA83"
+			]
+			tasks: [
+				{
+					id: "F6BFF296000158B2"
+					type: "checkmark"
+				}
+			]
+			rewards: [
+				{
+					id: "B44B6A48FFA8ADD8"
+					type: "xp_levels"
+					xp_levels: 3
+				}
+			]
+		}
+		{
+			id: "55AB8C6A77115271"
+			x: 17.0d
+			y: 0.0d
+			icon: {
+				id: "farmersdelight:roast_chicken_block"
+				count: 1
+			}
+			dependencies: [
+				"11BAD57C35D63EE0"
+			]
+			tasks: [
+				{
+					id: "7C6CAF868F9452ED"
+					type: "item"
+					item: {
+						id: "farmersdelight:roast_chicken_block"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "2FC42AF3B4FE0AA3"
+					type: "loot"
+					table_id: "1EBBC2B918151958"
+				}
+			]
+		}
+		{
+			id: "8910CD1D7775A23C"
+			x: 17.0d
+			y: 2.4d
+			icon: {
+				id: "farmersdelight:apple_pie"
+				count: 1
+			}
+			optional: true
+			dependencies: [
+				"11BAD57C35D63EE0"
+			]
+			tasks: [
+				{
+					id: "BC98834D28E9AEC0"
+					type: "item"
+					item: {
+						id: "farmersdelight:apple_pie"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "EF78296CE0A49FF4"
+					type: "item"
+					item: {
+						id: "minecraft:apple"
+						count: 1
+					}
+					count: 8
+				}
+			]
+		}
+		{
+			id: "419885EF47C0DFA7"
+			x: 4.5d
+			y: 6.0d
+			icon: {
+				id: "farmersdelight:tree_bark"
+				count: 1
+			}
+			dependencies: [
+				"F51007087FB0E302"
+			]
+			tasks: [
+				{
+					id: "EBA50AE4E8D201F1"
+					type: "item"
+					item: {
+						id: "farmersdelight:tree_bark"
+						count: 1
+					}
+					count: 8
+				}
+			]
+			rewards: [
+				{
+					id: "A6A7ADA675881702"
+					type: "item"
+					item: {
+						id: "minecraft:bone_meal"
+						count: 1
+					}
+					count: 16
+				}
+			]
+		}
+		{
+			id: "157C717C0E99363E"
+			x: 7.0d
+			y: 6.0d
+			icon: {
+				id: "farmersdelight:organic_compost"
+				count: 1
+			}
+			dependencies: [
+				"419885EF47C0DFA7"
+			]
+			tasks: [
+				{
+					id: "210A2F67000762C0"
+					type: "item"
+					item: {
+						id: "farmersdelight:organic_compost"
+						count: 1
+					}
+					count: 4
+				}
+			]
+			rewards: [
+				{
+					id: "CB71EFD77944275F"
+					type: "item"
+					item: {
+						id: "minecraft:bone_meal"
+						count: 1
+					}
+					count: 16
+				}
+			]
+		}
+		{
+			id: "B305899DAF8A4495"
+			x: 9.0d
+			y: 6.0d
+			icon: {
+				id: "farmersdelight:rich_soil"
+				count: 1
+			}
+			size: 1.5d
+			dependencies: [
+				"157C717C0E99363E"
+			]
+			tasks: [
+				{
+					id: "40674FB1223EDF8A"
 					type: "item"
 					item: {
 						id: "farmersdelight:rich_soil"
@@ -303,10 +693,141 @@
 			]
 			rewards: [
 				{
-					id: "E0EA1BE482B4D222"
+					id: "AF630619A0F597CF"
+					type: "loot"
+					table_id: "1EBBC2B918151958"
+				}
+			]
+		}
+		{
+			id: "1DFC7ECAACFBDEFD"
+			x: 11.0d
+			y: 7.5d
+			icon: {
+				id: "farmersdelight:brown_mushroom_colony"
+				count: 1
+			}
+			optional: true
+			dependencies: [
+				"B305899DAF8A4495"
+			]
+			tasks: [
+				{
+					id: "41AD6770C0B0035D"
 					type: "item"
 					item: {
-						id: "minecraft:bone_meal"
+						id: "farmersdelight:brown_mushroom_colony"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "29769EEDB48307A2"
+					type: "item"
+					item: {
+						id: "minecraft:red_mushroom"
+						count: 1
+					}
+					count: 8
+				}
+			]
+		}
+		{
+			id: "EC3B1246BF2F4CD8"
+			x: 11.0d
+			y: 5.0d
+			icon: {
+				id: "farmingforblockheads:red_fertilizer"
+				count: 1
+			}
+			dependencies: [
+				"B305899DAF8A4495"
+			]
+			tasks: [
+				{
+					id: "31A72A0937ED6229"
+					type: "item"
+					item: {
+						id: "farmingforblockheads:red_fertilizer"
+						count: 1
+					}
+					count: 4
+				}
+			]
+			rewards: [
+				{
+					id: "44A0229FBCB1BBBB"
+					type: "item"
+					item: {
+						id: "minecraft:gold_nugget"
+						count: 1
+					}
+					count: 8
+				}
+			]
+		}
+		{
+			id: "3601992F7BE5B929"
+			x: 13.0d
+			y: 6.0d
+			icon: {
+				id: "farmersdelight:tomato_crate"
+				count: 1
+			}
+			optional: true
+			dependencies: [
+				"EC3B1246BF2F4CD8"
+			]
+			tasks: [
+				{
+					id: "1D64C064553326D4"
+					type: "item"
+					item: {
+						id: "farmersdelight:tomato_crate"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "7F34DA88B6D59C84"
+					type: "xp_levels"
+					xp_levels: 3
+				}
+			]
+		}
+		{
+			id: "E16242A29E7AC583"
+			x: 4.5d
+			y: 12.0d
+			icon: {
+				id: "farmingforblockheads:feeding_trough"
+				count: 1
+			}
+			size: 1.5d
+			dependencies: [
+				"F51007087FB0E302"
+			]
+			tasks: [
+				{
+					id: "F253C992CAA29285"
+					type: "item"
+					item: {
+						id: "farmingforblockheads:feeding_trough"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "6BD93F3ED53CC49A"
+					type: "item"
+					item: {
+						id: "minecraft:wheat"
 						count: 1
 					}
 					count: 32
@@ -314,24 +835,53 @@
 			]
 		}
 		{
-			id: "35E0D97B53024C13"
-			x: 12.0d
-			y: 0.0d
-			title: "The Market"
-			subtitle: "Buy seeds and saplings for emeralds."
-			description: [
-				"A &6Market&r sells seeds, saplings and flowers from all over the world. Handy for crops you cannot find nearby."
+			id: "B83982681E14CDD1"
+			x: 7.0d
+			y: 11.0d
+			icon: {
+				id: "farmingforblockheads:chicken_nest"
+				count: 1
+			}
+			dependencies: [
+				"E16242A29E7AC583"
 			]
+			tasks: [
+				{
+					id: "E5BFBF68DC351314"
+					type: "item"
+					item: {
+						id: "farmingforblockheads:chicken_nest"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "C51EF504B2D26706"
+					type: "item"
+					item: {
+						id: "minecraft:egg"
+						count: 1
+					}
+					count: 8
+				}
+			]
+		}
+		{
+			id: "3E7DD988C3B81C0C"
+			x: 7.0d
+			y: 13.0d
 			icon: {
 				id: "farmingforblockheads:market"
 				count: 1
 			}
 			dependencies: [
-				"E2138A2006D79652"
+				"E16242A29E7AC583"
 			]
 			tasks: [
 				{
-					id: "E81338ECFDCDABBB"
+					id: "B11FC5D7AA0DCF17"
 					type: "item"
 					item: {
 						id: "farmingforblockheads:market"
@@ -342,7 +892,7 @@
 			]
 			rewards: [
 				{
-					id: "DDDE852CBF356886"
+					id: "1BFA88394D921EFE"
 					type: "item"
 					item: {
 						id: "minecraft:emerald"
@@ -353,21 +903,125 @@
 			]
 		}
 		{
-			id: "3D38098805E2696B"
-			x: 12.0d
-			y: 3.5d
-			title: "Better Fishing"
-			subtitle: "New fish, new rods."
-			description: [
-				"Aquaculture adds fish for every biome, better rods and a tackle box. An iron rod is enough to start."
-			]
+			id: "FFAE0B849425E8B2"
+			x: 9.5d
+			y: 11.0d
+			icon: {
+				id: "farmersdelight:ham"
+				count: 1
+			}
 			optional: true
 			dependencies: [
-				"E2138A2006D79652"
+				"B83982681E14CDD1"
 			]
 			tasks: [
 				{
-					id: "6742DE1606C19A7D"
+					id: "601E1762D2B6ACBB"
+					type: "item"
+					item: {
+						id: "farmersdelight:ham"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "1CD1268734ACF8EB"
+					type: "item"
+					item: {
+						id: "minecraft:porkchop"
+						count: 1
+					}
+					count: 8
+				}
+			]
+		}
+		{
+			id: "DE94BCD72AFBE5BE"
+			x: 12.0d
+			y: 11.0d
+			icon: {
+				id: "farmersdelight:dog_food"
+				count: 1
+			}
+			optional: true
+			dependencies: [
+				"FFAE0B849425E8B2"
+			]
+			tasks: [
+				{
+					id: "600038616A84ABEB"
+					type: "item"
+					item: {
+						id: "farmersdelight:dog_food"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "C360F8DFE6D4F120"
+					type: "item"
+					item: {
+						id: "minecraft:bone"
+						count: 1
+					}
+					count: 8
+				}
+			]
+		}
+		{
+			id: "079650EABEFBB8BD"
+			x: 9.5d
+			y: 13.0d
+			icon: {
+				id: "farmersdelight:horse_feed"
+				count: 1
+			}
+			optional: true
+			dependencies: [
+				"3E7DD988C3B81C0C"
+			]
+			tasks: [
+				{
+					id: "BCF3459E6741E190"
+					type: "item"
+					item: {
+						id: "farmersdelight:horse_feed"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "5E38F3EC366CF6C1"
+					type: "item"
+					item: {
+						id: "minecraft:apple"
+						count: 1
+					}
+					count: 8
+				}
+			]
+		}
+		{
+			id: "89B281C9D1703AE3"
+			x: 4.5d
+			y: 18.0d
+			icon: {
+				id: "aquaculture:iron_fishing_rod"
+				count: 1
+			}
+			size: 1.5d
+			dependencies: [
+				"F51007087FB0E302"
+			]
+			tasks: [
+				{
+					id: "975C941652C775B1"
 					type: "item"
 					item: {
 						id: "aquaculture:iron_fishing_rod"
@@ -378,10 +1032,44 @@
 			]
 			rewards: [
 				{
-					id: "334B89A53711799D"
+					id: "54635B1B5B5C1362"
 					type: "item"
 					item: {
 						id: "minecraft:cod"
+						count: 1
+					}
+					count: 8
+				}
+			]
+		}
+		{
+			id: "070B41317E141485"
+			x: 7.0d
+			y: 17.0d
+			icon: {
+				id: "aquaculture:iron_hook"
+				count: 1
+			}
+			dependencies: [
+				"89B281C9D1703AE3"
+			]
+			tasks: [
+				{
+					id: "3BBE482539185997"
+					type: "item"
+					item: {
+						id: "aquaculture:iron_hook"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "EBA43AEF518E7FBA"
+					type: "item"
+					item: {
+						id: "minecraft:iron_nugget"
 						count: 1
 					}
 					count: 16
@@ -389,46 +1077,291 @@
 			]
 		}
 		{
-			id: "B60FB7B19FDD6C68"
-			x: 15.0d
-			y: 0.0d
-			title: "A Full Pantry"
-			subtitle: "Cook for the whole base."
-			description: [
-				"A pot of stew for everyone who plays with you. Later, with Create's brass machines, Create Central Kitchen lets you automate the cooking."
-			]
+			id: "8928E7CCAC5479D8"
+			x: 7.0d
+			y: 19.0d
 			icon: {
-				id: "farmersdelight:vegetable_soup"
+				id: "aquaculture:worm_farm"
 				count: 1
 			}
-			size: 1.5d
-			shape: "gear"
 			dependencies: [
-				"35E0D97B53024C13"
+				"89B281C9D1703AE3"
 			]
 			tasks: [
 				{
-					id: "98A55A66236DDFA0"
+					id: "3DA9338122D48DE5"
 					type: "item"
 					item: {
-						id: "farmersdelight:vegetable_soup"
+						id: "aquaculture:worm_farm"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "F805EB7926C394FA"
+					type: "item"
+					item: {
+						id: "minecraft:bone_meal"
 						count: 1
 					}
 					count: 16
 				}
 			]
+		}
+		{
+			id: "D36B78161A7C4DE3"
+			x: 9.5d
+			y: 18.0d
+			icon: {
+				id: "aquaculture:iron_fillet_knife"
+				count: 1
+			}
+			dependencies: [
+				"070B41317E141485"
+				"8928E7CCAC5479D8"
+			]
+			tasks: [
+				{
+					id: "BFB82CCD64350828"
+					type: "item"
+					item: {
+						id: "aquaculture:iron_fillet_knife"
+						count: 1
+					}
+					count: 1
+				}
+				{
+					id: "A26F5F7B474BCE12"
+					type: "item"
+					item: {
+						id: "aquaculture:fish_fillet_raw"
+						count: 1
+					}
+					count: 4
+				}
+			]
 			rewards: [
 				{
-					id: "3DAB7F88DFD37873"
+					id: "A3397DD44E4AD8E8"
+					type: "loot"
+					table_id: "1EBBC2B918151958"
+				}
+			]
+		}
+		{
+			id: "2B451EE7CFDFF558"
+			x: 12.0d
+			y: 17.0d
+			icon: {
+				id: "aquaculture:tackle_box"
+				count: 1
+			}
+			optional: true
+			dependencies: [
+				"D36B78161A7C4DE3"
+			]
+			tasks: [
+				{
+					id: "0E97F0849B05C229"
+					type: "item"
+					item: {
+						id: "aquaculture:tackle_box"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "B5E09246A30DE191"
+					type: "xp_levels"
+					xp_levels: 3
+				}
+			]
+		}
+		{
+			id: "83D508FC25FC4941"
+			x: 12.0d
+			y: 19.0d
+			icon: {
+				id: "aquaculture:sushi"
+				count: 1
+			}
+			optional: true
+			dependencies: [
+				"D36B78161A7C4DE3"
+			]
+			tasks: [
+				{
+					id: "06F06015A2D722B7"
+					type: "item"
+					item: {
+						id: "aquaculture:sushi"
+						count: 1
+					}
+					count: 4
+				}
+			]
+			rewards: [
+				{
+					id: "B2220EA693B7AA8B"
+					type: "xp_levels"
+					xp_levels: 3
+				}
+			]
+		}
+		{
+			id: "434A7C35D49D8DEF"
+			x: 14.5d
+			y: 18.0d
+			icon: {
+				id: "aquaculture:neptunium_ingot"
+				count: 1
+			}
+			optional: true
+			dependencies: [
+				"2B451EE7CFDFF558"
+			]
+			tasks: [
+				{
+					id: "0F16F44FAEBA2B75"
+					type: "item"
+					item: {
+						id: "aquaculture:neptunium_ingot"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "A770C0B5E29F7EF6"
+					type: "loot"
+					table_id: "870211AF0E412C54"
+				}
+			]
+		}
+		{
+			id: "6A0AD641B6612345"
+			x: 20.0d
+			y: 6.0d
+			icon: {
+				id: "farmersdelight:fried_rice"
+				count: 1
+			}
+			size: 2.5d
+			shape: "gear"
+			dependencies: [
+				"11BAD57C35D63EE0"
+				"B305899DAF8A4495"
+				"3E7DD988C3B81C0C"
+				"D36B78161A7C4DE3"
+			]
+			tasks: [
+				{
+					id: "80B13192831B381A"
+					type: "item"
+					item: {
+						id: "farmersdelight:vegetable_soup"
+						count: 1
+					}
+					count: 8
+				}
+				{
+					id: "9406923846C629F7"
+					type: "item"
+					item: {
+						id: "farmersdelight:beef_stew"
+						count: 1
+					}
+					count: 8
+				}
+				{
+					id: "201568490229F1FC"
+					type: "item"
+					item: {
+						id: "farmersdelight:fried_rice"
+						count: 1
+					}
+					count: 8
+				}
+			]
+			rewards: [
+				{
+					id: "B6F4C5E92E382DF1"
 					type: "loot"
 					table_id: "870211AF0E412C54"
 				}
 				{
-					id: "D81665A7F250DABB"
+					id: "4D45E40D7D06D843"
 					type: "xp_levels"
-					xp_levels: 5
+					xp_levels: 10
 				}
 			]
+		}
+	]
+	images: [
+		{
+			id: "BE8E2EBF42BDBDE0"
+			image: "kronwerke:textures/quests/food/title.png"
+			x: 0.0d
+			y: -2.4d
+			width: 4.18d
+			height: 1.8d
+			rotation: 0.0d
+			order: 1
+		}
+		{
+			id: "0B7BBB1F26AF78D1"
+			image: "kronwerke:textures/quests/food/basics.png"
+			x: 8.5d
+			y: -9.6d
+			width: 4.01d
+			height: 0.9d
+			rotation: 0.0d
+			order: 1
+		}
+		{
+			id: "496AC693D2B0E49D"
+			image: "kronwerke:textures/quests/food/cooking.png"
+			x: 10.5d
+			y: -2.6d
+			width: 2.49d
+			height: 0.9d
+			rotation: 0.0d
+			order: 1
+		}
+		{
+			id: "26AFDB84C5CF1B61"
+			image: "kronwerke:textures/quests/food/farming.png"
+			x: 9.0d
+			y: 3.9d
+			width: 2.16d
+			height: 0.9d
+			rotation: 0.0d
+			order: 1
+		}
+		{
+			id: "B7666636DBD608EE"
+			image: "kronwerke:textures/quests/food/animals.png"
+			x: 8.0d
+			y: 9.6d
+			width: 5.48d
+			height: 0.9d
+			rotation: 0.0d
+			order: 1
+		}
+		{
+			id: "61B435AFB710702B"
+			image: "kronwerke:textures/quests/food/fishing.png"
+			x: 9.0d
+			y: 15.6d
+			width: 3.07d
+			height: 0.9d
+			rotation: 0.0d
+			order: 1
 		}
 	]
 }

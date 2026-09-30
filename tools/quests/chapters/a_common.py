@@ -4,16 +4,16 @@ Crates are made per stage: a stage 1 quest hands out stage 1 crates, so nothing 
 crate is locked when it drops. check_quest_stages.py enforces that."""
 from ftbq import group, loot_table
 
-group("start", "Start here")
-group("tech", "Technology")
-group("magic", "Magic")
-group("world", "World and Exploration")
-group("storage", "Storage and Tools")
+group("start", "Start")
+group("tech", "Technik")
+group("magic", "Magie")
+group("world", "Welt und Erkundung")
+group("storage", "Lager und Werkzeug")
 
 # ---- Stage 1: Steinwerk ---------------------------------------------------
 # Weights are relative inside one table. The fourth value is a random bonus on the count.
 
-loot_table("s1_common", "Stone Crate", stage=1, entries=[
+loot_table("s1_common", "Steinkiste", stage=1, entries=[
     ("minecraft:iron_ingot", 8, 10, 8),
     ("minecraft:copper_ingot", 12, 10, 12),
     ("minecraft:coal", 16, 10, 16),
@@ -30,7 +30,7 @@ loot_table("s1_common", "Stone Crate", stage=1, entries=[
     ("waystones:warp_dust", 4, 3, 4),
 ])
 
-loot_table("s1_uncommon", "Iron Crate", stage=1, entries=[
+loot_table("s1_uncommon", "Eisenkiste", stage=1, entries=[
     ("minecraft:iron_block", 2, 10, 2),
     ("minecraft:gold_ingot", 8, 8, 8),
     ("minecraft:diamond", 2, 6, 2),
@@ -47,7 +47,7 @@ loot_table("s1_uncommon", "Iron Crate", stage=1, entries=[
     ("apotheosis:gem_dust", 4, 3, 4),
 ])
 
-loot_table("s1_rare", "Gold Crate", stage=1, entries=[
+loot_table("s1_rare", "Goldkiste", stage=1, entries=[
     ("minecraft:diamond", 8, 8, 8),
     ("minecraft:diamond_block", 1, 4),
     ("minecraft:emerald_block", 2, 5),
@@ -64,7 +64,7 @@ loot_table("s1_rare", "Gold Crate", stage=1, entries=[
 
 # ---- Stage 2: Messingwerk -------------------------------------------------
 
-loot_table("s2_common", "Brass Crate", stage=2, entries=[
+loot_table("s2_common", "Messingkiste", stage=2, entries=[
     ("create:brass_ingot", 8, 10, 8),
     ("create:zinc_ingot", 12, 10, 12),
     ("mekanism:ingot_osmium", 8, 8, 8),
@@ -80,7 +80,7 @@ loot_table("s2_common", "Brass Crate", stage=2, entries=[
     ("minecraft:cooked_beef", 8, 6, 8),
 ])
 
-loot_table("s2_uncommon", "Steel Crate", stage=2, entries=[
+loot_table("s2_uncommon", "Stahlkiste", stage=2, entries=[
     ("mekanism:ingot_steel", 8, 10, 8),
     ("mekanism:basic_control_circuit", 4, 8, 4),
     ("create:brass_casing", 8, 8, 8),
@@ -95,7 +95,7 @@ loot_table("s2_uncommon", "Steel Crate", stage=2, entries=[
     ("minecraft:experience_bottle", 16, 6, 16),
 ])
 
-loot_table("s2_rare", "Terrasteel Crate", stage=2, entries=[
+loot_table("s2_rare", "Terrastahlkiste", stage=2, entries=[
     ("botania:terrasteel_ingot", 1, 6),
     ("create:precision_mechanism", 4, 8, 4),
     ("mekanism:basic_energy_cube", 1, 5),

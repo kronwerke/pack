@@ -1,7 +1,6 @@
 {
 	id: "C8DF34D772AEF66E"
 	filename: "create_brass"
-	title: "Create: Brass"
 	icon: {
 		id: "create:brass_casing"
 		count: 1
@@ -10,21 +9,11 @@
 	order_index: 9
 	default_quest_shape: "gear"
 	default_hide_dependency_lines: false
-	subtitle: [
-		"Stage 2. Blaze burners, brass and the first real automation."
-	]
 	quests: [
 		{
 			id: "9C71D744C46C4E40"
 			x: 0.0d
-			y: 0.0d
-			title: "Brass"
-			subtitle: "Create's second half starts with one alloy."
-			description: [
-				"Everything with a brass casing does something smarter than the andesite machines: filters, sorts, counts, builds. Brass is copper and zinc mixed in a heated basin."
-				""
-				"The obelisk wants &64 000 brass ingots&r and &6300 precision mechanisms&r for this stage. Every factory in this chapter helps with that."
-			]
+			y: 3.0d
 			icon: {
 				id: "create:brass_ingot"
 				count: 1
@@ -45,29 +34,20 @@
 			rewards: [
 				{
 					id: "96C3F0140A988330"
-					type: "item"
-					item: {
-						id: "create:brass_ingot"
-						count: 1
-					}
-					count: 8
+					type: "loot"
+					table_id: "F2BA64790EBA3DF5"
 				}
 				{
 					id: "42A2DA470C1E9920"
-					type: "loot"
-					table_id: "F2BA64790EBA3DF5"
+					type: "xp_levels"
+					xp_levels: 5
 				}
 			]
 		}
 		{
 			id: "3888962F267720FF"
-			x: 3.0d
-			y: -2.0d
-			title: "Zinc"
-			subtitle: "In the overworld stone, deepslate too."
-			description: [
-				"Zinc ore sits in the overworld, in stone and deepslate. Mine it by hand, or put raw zinc through a millstone or crushing wheels for crushed zinc, which washes into extra nuggets."
-			]
+			x: 2.5d
+			y: 1.5d
 			dependencies: [
 				"9C71D744C46C4E40"
 			]
@@ -79,7 +59,7 @@
 						id: "create:zinc_ingot"
 						count: 1
 					}
-					count: 16
+					count: 64
 				}
 			]
 			rewards: [
@@ -87,35 +67,154 @@
 					id: "5215A14E170FAFD2"
 					type: "item"
 					item: {
-						id: "create:zinc_ingot"
+						id: "create:raw_zinc"
 						count: 1
 					}
-					count: 16
+					count: 32
+				}
+				{
+					id: "4DA8F29E98B496F8"
+					type: "xp_levels"
+					xp_levels: 3
 				}
 			]
 		}
 		{
-			id: "0B736773068E3BA3"
-			x: 3.0d
-			y: 2.0d
-			title: "Blaze Burner"
-			subtitle: "Heat for the basin. Needs a mage and a blaze."
-			description: [
-				"The &6Empty Blaze Burner&r takes iron sheets, netherrack and, on this server, two &6Source Gems&r from Ars Nouveau. Ask a mage, or become one."
-				""
-				"Take it into the Nether and right click a blaze with it. Place the burner under a basin and feed it any furnace fuel. A &6Blaze Cake&r makes it superheated for the hottest recipes."
-			]
-			icon: {
-				id: "create:blaze_burner"
-				count: 1
-			}
-			size: 1.5d
+			id: "11C0F8215FA94C81"
+			x: 2.5d
+			y: 3.25d
 			dependencies: [
 				"9C71D744C46C4E40"
 			]
 			tasks: [
 				{
-					id: "ADF7B88544909608"
+					id: "A66CC37AFBDCBC51"
+					type: "item"
+					item: {
+						id: "ars_nouveau:source_gem"
+						count: 1
+					}
+					count: 2
+				}
+			]
+			rewards: [
+				{
+					id: "4A84B48774AC6A04"
+					type: "item"
+					item: {
+						id: "minecraft:amethyst_shard"
+						count: 1
+					}
+					count: 8
+				}
+				{
+					id: "28248524E4C45A5A"
+					type: "xp_levels"
+					xp_levels: 3
+				}
+			]
+		}
+		{
+			id: "83C6FE122EC13A6C"
+			x: 2.5d
+			y: 5.0d
+			icon: {
+				id: "minecraft:netherrack"
+				count: 1
+			}
+			dependencies: [
+				"9C71D744C46C4E40"
+			]
+			tasks: [
+				{
+					id: "DBA3ECFD426E96D2"
+					type: "item"
+					item: {
+						id: "minecraft:netherrack"
+						count: 1
+					}
+					count: 16
+				}
+				{
+					id: "037193DA610B048C"
+					type: "item"
+					item: {
+						id: "minecraft:quartz"
+						count: 1
+					}
+					count: 8
+				}
+			]
+			rewards: [
+				{
+					id: "50FE9DE72900E64B"
+					type: "loot"
+					table_id: "F2BA64790EBA3DF5"
+				}
+				{
+					id: "FFBFC7B53181A50F"
+					type: "xp_levels"
+					xp_levels: 3
+				}
+			]
+		}
+		{
+			id: "A25CD718A1DA8E47"
+			x: 5.0d
+			y: 4.1d
+			icon: {
+				id: "create:empty_blaze_burner"
+				count: 1
+			}
+			size: 1.5d
+			dependencies: [
+				"11C0F8215FA94C81"
+				"83C6FE122EC13A6C"
+			]
+			tasks: [
+				{
+					id: "4951662E4DF4A18E"
+					type: "item"
+					item: {
+						id: "create:empty_blaze_burner"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "925C6E4AB9369E0A"
+					type: "item"
+					item: {
+						id: "create:iron_sheet"
+						count: 1
+					}
+					count: 8
+				}
+				{
+					id: "855E0D93BB500C3E"
+					type: "xp_levels"
+					xp_levels: 3
+				}
+			]
+		}
+		{
+			id: "DA069A8E373778AB"
+			x: 7.5d
+			y: 4.1d
+			icon: {
+				id: "create:blaze_burner"
+				count: 1
+			}
+			size: 2.0d
+			shape: "hexagon"
+			dependencies: [
+				"A25CD718A1DA8E47"
+			]
+			tasks: [
+				{
+					id: "5A3452A58C208261"
 					type: "item"
 					item: {
 						id: "create:blaze_burner"
@@ -126,7 +225,7 @@
 			]
 			rewards: [
 				{
-					id: "E37BC24654F3193E"
+					id: "D382D7C237ECB2FB"
 					type: "item"
 					item: {
 						id: "minecraft:coal_block"
@@ -135,28 +234,29 @@
 					count: 8
 				}
 				{
-					id: "F805D9965CB49B64"
+					id: "B7C13DEBCB4C2F25"
 					type: "loot"
 					table_id: "F2BA64790EBA3DF5"
 				}
 			]
 		}
 		{
-			id: "1ACFEC10E4F2BCD7"
-			x: 6.0d
-			y: 0.0d
-			title: "Mixing Brass"
-			subtitle: "Copper and zinc, heated, stirred."
-			description: [
-				"Mixer on top, basin in the middle, lit blaze burner at the bottom. One copper and one zinc ingot make two brass ingots. Funnels in and out and it runs by itself."
-			]
+			id: "982D4F037A92C5A3"
+			x: 10.0d
+			y: 2.75d
+			icon: {
+				id: "create:brass_ingot"
+				count: 1
+			}
+			size: 2.0d
+			shape: "gear"
 			dependencies: [
+				"DA069A8E373778AB"
 				"3888962F267720FF"
-				"0B736773068E3BA3"
 			]
 			tasks: [
 				{
-					id: "20E1740D9CEBFD64"
+					id: "503E109D67EBA87C"
 					type: "item"
 					item: {
 						id: "create:brass_ingot"
@@ -167,7 +267,7 @@
 			]
 			rewards: [
 				{
-					id: "A2455AE22E3AA9A6"
+					id: "2A19D7811B592EC8"
 					type: "item"
 					item: {
 						id: "minecraft:copper_ingot"
@@ -176,7 +276,7 @@
 					count: 32
 				}
 				{
-					id: "9D82159B77E5E5C7"
+					id: "FFA5103324C6E284"
 					type: "item"
 					item: {
 						id: "create:zinc_ingot"
@@ -184,23 +284,63 @@
 					}
 					count: 32
 				}
+				{
+					id: "36EF8534FF0BF4AA"
+					type: "xp_levels"
+					xp_levels: 5
+				}
 			]
 		}
 		{
-			id: "3133ACD9FA4EACED"
-			x: 9.0d
-			y: -2.0d
-			title: "Brass Casing"
-			subtitle: "The frame of every smart machine."
-			description: [
-				"Right click a stripped log with a brass ingot. Botania players will ask you for two of these: the Terrestrial Agglomeration Plate needs them on this server."
-			]
+			id: "57350EBAE878C500"
+			x: 10.0d
+			y: 5.5d
+			optional: true
 			dependencies: [
-				"1ACFEC10E4F2BCD7"
+				"DA069A8E373778AB"
 			]
 			tasks: [
 				{
-					id: "3B48113012F37FA1"
+					id: "3F9C6E7A59907ED8"
+					type: "item"
+					item: {
+						id: "create:blaze_cake"
+						count: 1
+					}
+					count: 4
+				}
+			]
+			rewards: [
+				{
+					id: "2E89E376C3F3FB5D"
+					type: "item"
+					item: {
+						id: "minecraft:egg"
+						count: 1
+					}
+					count: 16
+				}
+				{
+					id: "60C76923373F31C6"
+					type: "item"
+					item: {
+						id: "minecraft:sugar"
+						count: 1
+					}
+					count: 16
+				}
+			]
+		}
+		{
+			id: "951C5B3A9F9B05FA"
+			x: 12.5d
+			y: 2.75d
+			dependencies: [
+				"982D4F037A92C5A3"
+			]
+			tasks: [
+				{
+					id: "86B2D5A7FA97630A"
 					type: "item"
 					item: {
 						id: "create:brass_casing"
@@ -211,7 +351,7 @@
 			]
 			rewards: [
 				{
-					id: "A2C78DB5606FBA61"
+					id: "C1AC475F899B9DCD"
 					type: "item"
 					item: {
 						id: "minecraft:stripped_oak_log"
@@ -219,26 +359,26 @@
 					}
 					count: 16
 				}
+				{
+					id: "8E6B9D96EB61C443"
+					type: "xp_levels"
+					xp_levels: 3
+				}
 			]
 		}
 		{
-			id: "6452412E7BD47B5E"
-			x: 9.0d
-			y: 2.0d
-			title: "Electron Tube"
-			subtitle: "Rose quartz, polished, on an iron sheet."
-			description: [
-				"Craft nether quartz with redstone for &6Rose Quartz&r, polish it with sandpaper, then combine it with an iron sheet. Every brass machine with logic in it uses these."
-			]
+			id: "74C8B1A307A5278A"
+			x: 0.0d
+			y: 10.5d
 			dependencies: [
-				"1ACFEC10E4F2BCD7"
+				"83C6FE122EC13A6C"
 			]
 			tasks: [
 				{
-					id: "9A6D22C9E58131FF"
+					id: "BB74232B6E35ED6D"
 					type: "item"
 					item: {
-						id: "create:electron_tube"
+						id: "create:polished_rose_quartz"
 						count: 1
 					}
 					count: 8
@@ -246,7 +386,7 @@
 			]
 			rewards: [
 				{
-					id: "C0C72531A1DA11E4"
+					id: "99FC9A73E5DAD461"
 					type: "item"
 					item: {
 						id: "minecraft:redstone"
@@ -255,73 +395,95 @@
 					count: 32
 				}
 				{
-					id: "D510508F9272DE53"
-					type: "item"
-					item: {
-						id: "create:polished_rose_quartz"
-						count: 1
-					}
-					count: 4
+					id: "EAFA7BE6EE359280"
+					type: "xp_levels"
+					xp_levels: 3
 				}
 			]
 		}
 		{
-			id: "8BD72C6EFD3EEB1A"
-			x: 12.0d
-			y: -3.0d
-			title: "Brass Funnels and Tunnels"
-			subtitle: "Filters on everything."
-			description: [
-				"A &6Brass Funnel&r takes a filter and a stack size. A &6Brass Tunnel&r on a belt splits items evenly between belts, or sends them where you tell it."
-			]
+			id: "71ACBB04C125D6E9"
+			x: 2.5d
+			y: 10.5d
 			dependencies: [
-				"3133ACD9FA4EACED"
+				"74C8B1A307A5278A"
 			]
 			tasks: [
 				{
-					id: "AA1A164B41DC4AC7"
+					id: "38FB41866B1755DF"
 					type: "item"
 					item: {
-						id: "create:brass_funnel"
-						count: 1
-					}
-					count: 4
-				}
-				{
-					id: "FF5A3BB327189383"
-					type: "item"
-					item: {
-						id: "create:brass_tunnel"
-						count: 1
-					}
-					count: 4
-				}
-			]
-			rewards: [
-				{
-					id: "882DC3FCE674D808"
-					type: "item"
-					item: {
-						id: "create:brass_ingot"
+						id: "create:electron_tube"
 						count: 1
 					}
 					count: 16
 				}
 			]
+			rewards: [
+				{
+					id: "C64E66385F9B91FC"
+					type: "item"
+					item: {
+						id: "create:iron_sheet"
+						count: 1
+					}
+					count: 16
+				}
+				{
+					id: "BF5D4BCA19CA6C39"
+					type: "xp_levels"
+					xp_levels: 3
+				}
+			]
+		}
+		{
+			id: "7B47A9F155721187"
+			x: 5.0d
+			y: 9.25d
+			dependencies: [
+				"982D4F037A92C5A3"
+			]
+			tasks: [
+				{
+					id: "26A3DFF3CE80E09B"
+					type: "item"
+					item: {
+						id: "create:brass_hand"
+						count: 1
+					}
+					count: 2
+				}
+			]
+			rewards: [
+				{
+					id: "45E73607BCD8D481"
+					type: "item"
+					item: {
+						id: "create:brass_sheet"
+						count: 1
+					}
+					count: 4
+				}
+				{
+					id: "471391C2BD8DE3A3"
+					type: "xp_levels"
+					xp_levels: 2
+				}
+			]
 		}
 		{
 			id: "F565F01F8794304F"
-			x: 12.0d
-			y: 0.0d
-			title: "Deployer"
-			subtitle: "A hand that uses whatever it holds."
-			description: [
-				"The &6Deployer&r does what a player would do with the item in it: place, use, attack. On a belt it applies items to whatever passes under it."
-				"It is the heart of sequenced assembly, which comes next."
-			]
+			x: 7.5d
+			y: 11.0d
+			icon: {
+				id: "create:deployer"
+				count: 1
+			}
+			size: 1.75d
+			shape: "gear"
 			dependencies: [
-				"3133ACD9FA4EACED"
-				"6452412E7BD47B5E"
+				"71ACBB04C125D6E9"
+				"7B47A9F155721187"
 			]
 			tasks: [
 				{
@@ -353,16 +515,10 @@
 		}
 		{
 			id: "3177D5A3CAF6502E"
-			x: 12.0d
-			y: 3.0d
-			title: "Mechanical Crafters"
-			subtitle: "Big recipes, done by machines."
-			description: [
-				"Place crafters in a grid, connect them with the wrench so they point at each other, put the ingredients in, and give them rotation. Some recipes are larger than 3x3 and only work here."
-			]
-			optional: true
+			x: 2.5d
+			y: 12.75d
 			dependencies: [
-				"6452412E7BD47B5E"
+				"71ACBB04C125D6E9"
 			]
 			tasks: [
 				{
@@ -385,24 +541,88 @@
 					}
 					count: 4
 				}
+				{
+					id: "5CBEE72F3E9A95BE"
+					type: "xp_levels"
+					xp_levels: 3
+				}
+			]
+		}
+		{
+			id: "47625193D4DF5F70"
+			x: 5.0d
+			y: 13.25d
+			dependencies: [
+				"3177D5A3CAF6502E"
+			]
+			tasks: [
+				{
+					id: "F1308B6DEE3BA480"
+					type: "item"
+					item: {
+						id: "create:crushing_wheel"
+						count: 1
+					}
+					count: 2
+				}
+			]
+			rewards: [
+				{
+					id: "DFAF859D2CDA60B3"
+					type: "item"
+					item: {
+						id: "minecraft:raw_iron"
+						count: 1
+					}
+					count: 32
+				}
+				{
+					id: "F1CDBE6CBCFC3902"
+					type: "xp_levels"
+					xp_levels: 3
+				}
+			]
+		}
+		{
+			id: "F849080267B6DDA8"
+			x: 7.5d
+			y: 13.5d
+			dependencies: [
+				"47625193D4DF5F70"
+			]
+			tasks: [
+				{
+					id: "8C4388D23C0AFFC0"
+					type: "item"
+					item: {
+						id: "create:crushed_raw_zinc"
+						count: 1
+					}
+					count: 32
+				}
+			]
+			rewards: [
+				{
+					id: "54B762A086C2607A"
+					type: "loot"
+					table_id: "F2BA64790EBA3DF5"
+				}
+				{
+					id: "F828B50EF38DAA97"
+					type: "xp_levels"
+					xp_levels: 3
+				}
 			]
 		}
 		{
 			id: "A4E38347917EF53B"
-			x: 15.0d
-			y: 0.0d
-			title: "Precision Mechanism"
-			subtitle: "Your first sequenced assembly line."
-			description: [
-				"A gold sheet goes on a belt. A deployer adds a cogwheel, the next a large cogwheel, the next an iron nugget. Five rounds of that and it becomes a &6Precision Mechanism&r. Sometimes it fails and you get scrap."
-				""
-				"Loop the belt back so unfinished pieces go round again. JEI shows every step."
-			]
+			x: 10.0d
+			y: 11.0d
 			icon: {
 				id: "create:precision_mechanism"
 				count: 1
 			}
-			size: 1.5d
+			size: 2.0d
 			shape: "gear"
 			dependencies: [
 				"F565F01F8794304F"
@@ -436,15 +656,118 @@
 			]
 		}
 		{
-			id: "821D83290E829480"
-			x: 18.0d
-			y: -2.0d
-			title: "Mechanical Arm"
-			subtitle: "Picks up here, puts down there."
-			description: [
-				"Hold the arm and click the blocks it should take from and put into before placing it. It only reaches a few blocks, so build compact."
-			]
+			id: "FA6B3CDAF9360F83"
+			x: 12.5d
+			y: 11.0d
 			dependencies: [
+				"A4E38347917EF53B"
+			]
+			tasks: [
+				{
+					id: "D059EF96DC98CC8A"
+					type: "item"
+					item: {
+						id: "create:precision_mechanism"
+						count: 1
+					}
+					count: 64
+				}
+			]
+			rewards: [
+				{
+					id: "D369C921B9B7D2C3"
+					type: "loot"
+					table_id: "BA8E33E78A3B3A0C"
+				}
+				{
+					id: "7C34FD6A4219D5CF"
+					type: "xp_levels"
+					xp_levels: 10
+				}
+			]
+		}
+		{
+			id: "3C0F41780FE33540"
+			x: 0.0d
+			y: 18.75d
+			dependencies: [
+				"71ACBB04C125D6E9"
+			]
+			tasks: [
+				{
+					id: "A5B03CA4A5CEDA78"
+					type: "item"
+					item: {
+						id: "create:brass_funnel"
+						count: 1
+					}
+					count: 4
+				}
+				{
+					id: "CD5C055CF4E0EC5B"
+					type: "item"
+					item: {
+						id: "create:brass_tunnel"
+						count: 1
+					}
+					count: 4
+				}
+			]
+			rewards: [
+				{
+					id: "2D9E176A6100920C"
+					type: "item"
+					item: {
+						id: "create:brass_ingot"
+						count: 1
+					}
+					count: 16
+				}
+				{
+					id: "9045E99441D43838"
+					type: "xp_levels"
+					xp_levels: 3
+				}
+			]
+		}
+		{
+			id: "937C2FBA530088F3"
+			x: 2.5d
+			y: 17.75d
+			optional: true
+			dependencies: [
+				"3C0F41780FE33540"
+			]
+			tasks: [
+				{
+					id: "3C0CDFFD37419266"
+					type: "item"
+					item: {
+						id: "create:smart_chute"
+						count: 1
+					}
+					count: 2
+				}
+			]
+			rewards: [
+				{
+					id: "4CB3AE21B833A014"
+					type: "xp_levels"
+					xp_levels: 3
+				}
+			]
+		}
+		{
+			id: "821D83290E829480"
+			x: 2.5d
+			y: 19.75d
+			icon: {
+				id: "create:mechanical_arm"
+				count: 1
+			}
+			size: 1.5d
+			dependencies: [
+				"3C0F41780FE33540"
 				"A4E38347917EF53B"
 			]
 			tasks: [
@@ -468,77 +791,72 @@
 					}
 					count: 16
 				}
+				{
+					id: "C06A6453EBD6D6B2"
+					type: "loot"
+					table_id: "F2BA64790EBA3DF5"
+				}
 			]
 		}
 		{
-			id: "1E0969E2D1CECBDE"
-			x: 18.0d
-			y: 2.0d
-			title: "Crushing Wheels"
-			subtitle: "More out of every ore."
-			description: [
-				"Two crushing wheels spinning towards each other. Raw ore dropped between them comes out as crushed ore plus a chance of extras. Wash it with a fan through water for nuggets on top."
-			]
+			id: "45695389CA849C35"
+			x: 5.0d
+			y: 17.75d
+			optional: true
 			dependencies: [
-				"A4E38347917EF53B"
+				"3C0F41780FE33540"
 			]
 			tasks: [
 				{
-					id: "F0D4AB9233419D84"
+					id: "1BBB77550C48D3FE"
 					type: "item"
 					item: {
-						id: "create:crushing_wheel"
+						id: "create:content_observer"
 						count: 1
 					}
-					count: 2
+					count: 1
+				}
+				{
+					id: "8DDB8648B5523ABC"
+					type: "item"
+					item: {
+						id: "create:stockpile_switch"
+						count: 1
+					}
+					count: 1
 				}
 			]
 			rewards: [
 				{
-					id: "DE1CC5E83F4F909C"
-					type: "item"
-					item: {
-						id: "minecraft:raw_iron"
-						count: 1
-					}
-					count: 32
+					id: "EF022E5693B84CA7"
+					type: "xp_levels"
+					xp_levels: 3
 				}
 			]
 		}
 		{
-			id: "E11391CDB6A48BC2"
-			x: 21.0d
-			y: 0.0d
-			title: "Steam Engine"
-			subtitle: "Serious stress capacity."
-			description: [
-				"Blaze burners under a fluid tank, water pumped in, steam engines on the side of the tank, a shaft on each engine. The bigger the tank and the more burners, the more power."
-				"The goggles show how much heat and water the boiler has. Aim for a level where both are balanced."
-			]
-			icon: {
-				id: "create:steam_engine"
-				count: 1
-			}
-			size: 1.5d
+			id: "456CE436EDE2179A"
+			x: 5.0d
+			y: 19.75d
+			optional: true
 			dependencies: [
 				"821D83290E829480"
-				"1E0969E2D1CECBDE"
 			]
 			tasks: [
 				{
-					id: "51716BC0D2A0CD50"
+					id: "41EBBA8B23AC99BF"
 					type: "item"
 					item: {
-						id: "create:steam_engine"
+						id: "create:display_link"
 						count: 1
 					}
-					count: 2
+					count: 1
 				}
 				{
-					id: "F9CC76C1D34637F7"
+					id: "CC411E29EA69942D"
 					type: "item"
 					item: {
-						id: "create:fluid_tank"
+						id: "create:display_board"
 						count: 1
 					}
 					count: 4
@@ -546,42 +864,64 @@
 			]
 			rewards: [
 				{
-					id: "792C9AE4C8B2AC6C"
-					type: "item"
-					item: {
-						id: "minecraft:coal_block"
-						count: 1
-					}
-					count: 16
-				}
-				{
-					id: "42BE7E8F715A74F1"
-					type: "loot"
-					table_id: "BA8E33E78A3B3A0C"
+					id: "24FA23775545FFBE"
+					type: "xp_levels"
+					xp_levels: 3
 				}
 			]
 		}
 		{
-			id: "D6F719089891998E"
-			x: 24.0d
-			y: 0.0d
-			title: "The Brass Engine"
-			subtitle: "Feed the obelisk."
-			description: [
-				"A brass line and a precision line that run without you. Bring what they make to the obelisk and the whole server moves."
+			id: "2C2C0B2C5A644F3E"
+			x: 7.5d
+			y: 18.75d
+			icon: {
+				id: "create:factory_gauge"
+				count: 1
+			}
+			size: 1.5d
+			dependencies: [
+				"821D83290E829480"
 			]
+			tasks: [
+				{
+					id: "2FCD20F22D3BB919"
+					type: "item"
+					item: {
+						id: "create:factory_gauge"
+						count: 1
+					}
+					count: 2
+				}
+			]
+			rewards: [
+				{
+					id: "EC7C00D5C726690A"
+					type: "loot"
+					table_id: "BA8E33E78A3B3A0C"
+				}
+				{
+					id: "E50A0D23749FE845"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+		}
+		{
+			id: "AC39C948ACC593B6"
+			x: 8.0d
+			y: 25.5d
 			icon: {
 				id: "create:precision_mechanism"
 				count: 1
 			}
-			size: 1.75d
+			size: 2.5d
 			shape: "gear"
 			dependencies: [
-				"E11391CDB6A48BC2"
+				"FA6B3CDAF9360F83"
 			]
 			tasks: [
 				{
-					id: "A41CBB8258575AC9"
+					id: "621D95DE6174AEE4"
 					type: "item"
 					item: {
 						id: "create:brass_ingot"
@@ -590,7 +930,7 @@
 					count: 256
 				}
 				{
-					id: "30542649E8E098FB"
+					id: "65C1C0D49EB35456"
 					type: "item"
 					item: {
 						id: "create:precision_mechanism"
@@ -601,16 +941,994 @@
 			]
 			rewards: [
 				{
-					id: "F6D7E13F982F2D50"
+					id: "BB49B708CA121434"
 					type: "loot"
 					table_id: "C79EAEAE0F26AA7F"
 				}
 				{
-					id: "56117B7858D659BE"
+					id: "5BD2679593EA701C"
 					type: "xp_levels"
 					xp_levels: 15
 				}
 			]
+		}
+		{
+			id: "047692EDD311083C"
+			x: 16.5d
+			y: 2.75d
+			icon: {
+				id: "create:steam_engine"
+				count: 1
+			}
+			size: 1.75d
+			shape: "gear"
+			dependencies: [
+				"951C5B3A9F9B05FA"
+			]
+			tasks: [
+				{
+					id: "247D6CDE4E7D9D86"
+					type: "item"
+					item: {
+						id: "create:steam_engine"
+						count: 1
+					}
+					count: 2
+				}
+				{
+					id: "67B6471902FFD16B"
+					type: "item"
+					item: {
+						id: "create:fluid_tank"
+						count: 1
+					}
+					count: 4
+				}
+			]
+			rewards: [
+				{
+					id: "9C1E114B4DE193B5"
+					type: "item"
+					item: {
+						id: "minecraft:coal_block"
+						count: 1
+					}
+					count: 16
+				}
+				{
+					id: "23924CD9A2A02A79"
+					type: "loot"
+					table_id: "BA8E33E78A3B3A0C"
+				}
+			]
+		}
+		{
+			id: "58E11E26D9DEED7A"
+			x: 19.0d
+			y: 1.75d
+			dependencies: [
+				"047692EDD311083C"
+			]
+			tasks: [
+				{
+					id: "F0B35298C6546DEF"
+					type: "item"
+					item: {
+						id: "create:steam_engine"
+						count: 1
+					}
+					count: 4
+				}
+				{
+					id: "1175611518185FC2"
+					type: "item"
+					item: {
+						id: "create:blaze_burner"
+						count: 1
+					}
+					count: 4
+				}
+			]
+			rewards: [
+				{
+					id: "ECD8B134BB63285E"
+					type: "loot"
+					table_id: "BA8E33E78A3B3A0C"
+				}
+				{
+					id: "0E0D553C21B02E31"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+		}
+		{
+			id: "E71A711FCBA75243"
+			x: 19.0d
+			y: 3.75d
+			optional: true
+			dependencies: [
+				"047692EDD311083C"
+			]
+			tasks: [
+				{
+					id: "34D1A68BA438EC2D"
+					type: "item"
+					item: {
+						id: "create:steam_whistle"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "8931261AADBBD4E4"
+					type: "xp_levels"
+					xp_levels: 3
+				}
+			]
+		}
+		{
+			id: "17D6C68140ACD32B"
+			x: 21.5d
+			y: 1.75d
+			dependencies: [
+				"58E11E26D9DEED7A"
+			]
+			tasks: [
+				{
+					id: "51D3B4C177E3BD8B"
+					type: "item"
+					item: {
+						id: "create:rotation_speed_controller"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "A9CC8C836B9EE3BC"
+					type: "xp_levels"
+					xp_levels: 3
+				}
+			]
+		}
+		{
+			id: "0C5237FB9264571A"
+			x: 21.5d
+			y: 3.75d
+			optional: true
+			dependencies: [
+				"047692EDD311083C"
+			]
+			tasks: [
+				{
+					id: "84CE5F94C579DB01"
+					type: "item"
+					item: {
+						id: "create:sequenced_gearshift"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "C9AF7E49E44B5EE8"
+					type: "xp_levels"
+					xp_levels: 3
+				}
+			]
+		}
+		{
+			id: "0FB345A23360C5FA"
+			x: 16.5d
+			y: 9.5d
+			icon: {
+				id: "create:schematicannon"
+				count: 1
+			}
+			size: 1.5d
+			dependencies: [
+				"951C5B3A9F9B05FA"
+			]
+			tasks: [
+				{
+					id: "126B52A7E7DF352F"
+					type: "item"
+					item: {
+						id: "create:schematic_table"
+						count: 1
+					}
+					count: 1
+				}
+				{
+					id: "D68DFED913750ECA"
+					type: "item"
+					item: {
+						id: "create:schematicannon"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "CB3E4B603166A87D"
+					type: "item"
+					item: {
+						id: "minecraft:gunpowder"
+						count: 1
+					}
+					count: 32
+				}
+				{
+					id: "E7EA9BF99876C04A"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+		}
+		{
+			id: "8D79122C70C6289E"
+			x: 19.0d
+			y: 8.75d
+			optional: true
+			dependencies: [
+				"0FB345A23360C5FA"
+			]
+			tasks: [
+				{
+					id: "3E545A8E6364DD19"
+					type: "item"
+					item: {
+						id: "create:contraption_controls"
+						count: 1
+					}
+					count: 1
+				}
+				{
+					id: "7F71A27B09801119"
+					type: "item"
+					item: {
+						id: "create:linked_controller"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "44CDE0899AC3CA73"
+					type: "xp_levels"
+					xp_levels: 3
+				}
+			]
+		}
+		{
+			id: "FD42A558F2DED9B8"
+			x: 19.0d
+			y: 10.75d
+			optional: true
+			dependencies: [
+				"0FB345A23360C5FA"
+			]
+			tasks: [
+				{
+					id: "D5CD27CB83D69E36"
+					type: "item"
+					item: {
+						id: "create:elevator_pulley"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "7EBB077696C6808E"
+					type: "xp_levels"
+					xp_levels: 3
+				}
+			]
+		}
+		{
+			id: "326B4445204B3689"
+			x: 21.5d
+			y: 8.75d
+			optional: true
+			dependencies: [
+				"0FB345A23360C5FA"
+			]
+			tasks: [
+				{
+					id: "DE19352861F45B58"
+					type: "item"
+					item: {
+						id: "create:cart_assembler"
+						count: 1
+					}
+					count: 1
+				}
+				{
+					id: "110B56B40F94CF21"
+					type: "item"
+					item: {
+						id: "create:controller_rail"
+						count: 1
+					}
+					count: 6
+				}
+			]
+			rewards: [
+				{
+					id: "A6ABECFE1FA66192"
+					type: "item"
+					item: {
+						id: "minecraft:rail"
+						count: 1
+					}
+					count: 32
+				}
+				{
+					id: "38F0BE256B2806CE"
+					type: "xp_levels"
+					xp_levels: 3
+				}
+			]
+		}
+		{
+			id: "CFAA15595AE66000"
+			x: 21.5d
+			y: 10.75d
+			optional: true
+			dependencies: [
+				"0FB345A23360C5FA"
+			]
+			tasks: [
+				{
+					id: "27A59C56917F4F30"
+					type: "item"
+					item: {
+						id: "create:mechanical_roller"
+						count: 1
+					}
+					count: 2
+				}
+			]
+			rewards: [
+				{
+					id: "C44510FF28E967B4"
+					type: "xp_levels"
+					xp_levels: 3
+				}
+			]
+		}
+		{
+			id: "75012F1389F55928"
+			x: 24.0d
+			y: 9.75d
+			optional: true
+			dependencies: [
+				"0FB345A23360C5FA"
+			]
+			tasks: [
+				{
+					id: "01BDD8B149EC5C1E"
+					type: "item"
+					item: {
+						id: "create:potato_cannon"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "FEF47BE30800E265"
+					type: "item"
+					item: {
+						id: "minecraft:baked_potato"
+						count: 1
+					}
+					count: 32
+				}
+				{
+					id: "6BC3AD463D56B105"
+					type: "xp_levels"
+					xp_levels: 3
+				}
+			]
+		}
+		{
+			id: "4906947CFD9F0C43"
+			x: 16.5d
+			y: 20.5d
+			icon: {
+				id: "create:brass_casing"
+				count: 1
+			}
+			size: 1.5d
+			shape: "hexagon"
+			dependencies: [
+				"951C5B3A9F9B05FA"
+			]
+			tasks: [
+				{
+					id: "38B8AC37AB1D4248"
+					type: "checkmark"
+				}
+			]
+			rewards: [
+				{
+					id: "BE746D5D000338EE"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+		}
+		{
+			id: "E491084B193A3E66"
+			x: 19.0d
+			y: 16.0d
+			dependencies: [
+				"4906947CFD9F0C43"
+			]
+			tasks: [
+				{
+					id: "42D5580064F9E0E6"
+					type: "item"
+					item: {
+						id: "create_enchantment_industry:mechanical_grindstone"
+						count: 1
+					}
+					count: 2
+				}
+			]
+			rewards: [
+				{
+					id: "67CA10E14329D5ED"
+					type: "item"
+					item: {
+						id: "minecraft:experience_bottle"
+						count: 1
+					}
+					count: 8
+				}
+				{
+					id: "C7D01368891D709C"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+		}
+		{
+			id: "92DB942428FAD3DA"
+			x: 21.5d
+			y: 16.0d
+			dependencies: [
+				"E491084B193A3E66"
+			]
+			tasks: [
+				{
+					id: "73E79F5A1AC342C3"
+					type: "item"
+					item: {
+						id: "create_enchantment_industry:blaze_enchanter"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "FA584C823A13CACF"
+					type: "loot"
+					table_id: "BA8E33E78A3B3A0C"
+				}
+				{
+					id: "188226DC65717B0D"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+		}
+		{
+			id: "20F5B626E01D3EC4"
+			x: 24.0d
+			y: 16.0d
+			optional: true
+			dependencies: [
+				"92DB942428FAD3DA"
+			]
+			tasks: [
+				{
+					id: "CD5669FB905D9A70"
+					type: "item"
+					item: {
+						id: "create_enchantment_industry:printer"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "8EF28F7AB5426096"
+					type: "item"
+					item: {
+						id: "minecraft:book"
+						count: 1
+					}
+					count: 16
+				}
+				{
+					id: "A3A39BB208D62A78"
+					type: "xp_levels"
+					xp_levels: 3
+				}
+			]
+		}
+		{
+			id: "41D236F7BC5E7589"
+			x: 19.0d
+			y: 19.0d
+			icon: {
+				id: "create_new_age:generator_coil"
+				count: 1
+			}
+			dependencies: [
+				"4906947CFD9F0C43"
+			]
+			tasks: [
+				{
+					id: "D2E7C0496FC52084"
+					type: "item"
+					item: {
+						id: "create_new_age:generator_coil"
+						count: 1
+					}
+					count: 1
+				}
+				{
+					id: "8DBCC994DD3DE3F1"
+					type: "item"
+					item: {
+						id: "create_new_age:carbon_brushes"
+						count: 1
+					}
+					count: 1
+				}
+				{
+					id: "E731DCF0C0C0617D"
+					type: "item"
+					item: {
+						id: "create_new_age:redstone_magnet"
+						count: 1
+					}
+					count: 4
+				}
+			]
+			rewards: [
+				{
+					id: "E0ABE0C757752DCA"
+					type: "loot"
+					table_id: "F2BA64790EBA3DF5"
+				}
+				{
+					id: "283B34100C10A731"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+		}
+		{
+			id: "8993DFA7D03105CF"
+			x: 21.5d
+			y: 19.0d
+			dependencies: [
+				"41D236F7BC5E7589"
+			]
+			tasks: [
+				{
+					id: "EDDD023D1957DDBA"
+					type: "item"
+					item: {
+						id: "create_new_age:basic_motor"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "5034330418D75DFE"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+		}
+		{
+			id: "8DADF04982C8CC41"
+			x: 24.0d
+			y: 19.0d
+			optional: true
+			dependencies: [
+				"8993DFA7D03105CF"
+			]
+			tasks: [
+				{
+					id: "E13D28F418433223"
+					type: "item"
+					item: {
+						id: "create_new_age:basic_energiser"
+						count: 1
+					}
+					count: 1
+				}
+				{
+					id: "03C671EEEE6F147D"
+					type: "item"
+					item: {
+						id: "create_new_age:overcharged_iron"
+						count: 1
+					}
+					count: 4
+				}
+			]
+			rewards: [
+				{
+					id: "4811F4F63C14A87D"
+					type: "xp_levels"
+					xp_levels: 3
+				}
+			]
+		}
+		{
+			id: "E298361CE320525B"
+			x: 19.0d
+			y: 22.0d
+			dependencies: [
+				"4906947CFD9F0C43"
+			]
+			tasks: [
+				{
+					id: "025A2D223191C4BE"
+					type: "item"
+					item: {
+						id: "createaddition:rolling_mill"
+						count: 1
+					}
+					count: 1
+				}
+				{
+					id: "1FD1EB1A29B934CE"
+					type: "item"
+					item: {
+						id: "createaddition:copper_spool"
+						count: 1
+					}
+					count: 2
+				}
+			]
+			rewards: [
+				{
+					id: "FED2F27D7B132A8B"
+					type: "item"
+					item: {
+						id: "minecraft:copper_ingot"
+						count: 1
+					}
+					count: 32
+				}
+				{
+					id: "D3426177184F05FD"
+					type: "xp_levels"
+					xp_levels: 3
+				}
+			]
+		}
+		{
+			id: "D419CDFEA245058F"
+			x: 21.5d
+			y: 22.0d
+			icon: {
+				id: "createaddition:alternator"
+				count: 1
+			}
+			dependencies: [
+				"E298361CE320525B"
+			]
+			tasks: [
+				{
+					id: "7F6BBC8B04D1D7F7"
+					type: "item"
+					item: {
+						id: "createaddition:alternator"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "57322F1C2B70D429"
+					type: "loot"
+					table_id: "BA8E33E78A3B3A0C"
+				}
+				{
+					id: "DB325489ED9B842B"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+		}
+		{
+			id: "F27F132D6A4F1186"
+			x: 24.0d
+			y: 22.0d
+			dependencies: [
+				"D419CDFEA245058F"
+			]
+			tasks: [
+				{
+					id: "0C92FF947855272D"
+					type: "item"
+					item: {
+						id: "createaddition:electric_motor"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "0E6D7B8C6E6D6906"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+		}
+		{
+			id: "53A10BD536201FFA"
+			x: 26.5d
+			y: 22.0d
+			optional: true
+			dependencies: [
+				"F27F132D6A4F1186"
+			]
+			tasks: [
+				{
+					id: "78A82CABA63530F9"
+					type: "item"
+					item: {
+						id: "createaddition:tesla_coil"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "A6E022DD534B87AD"
+					type: "xp_levels"
+					xp_levels: 3
+				}
+			]
+		}
+		{
+			id: "E9DAA25D08DA54B3"
+			x: 19.0d
+			y: 25.0d
+			dependencies: [
+				"4906947CFD9F0C43"
+			]
+			tasks: [
+				{
+					id: "01D7DD2DB914621C"
+					type: "item"
+					item: {
+						id: "create_connected:empty_fan_catalyst"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "89E29E509DC5163B"
+					type: "xp_levels"
+					xp_levels: 3
+				}
+			]
+		}
+		{
+			id: "D054E30ADE9AE64C"
+			x: 21.5d
+			y: 25.0d
+			optional: true
+			dependencies: [
+				"E9DAA25D08DA54B3"
+			]
+			tasks: [
+				{
+					id: "2755B753509962BB"
+					type: "item"
+					item: {
+						id: "create_connected:crank_wheel"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "1A2898E4289AB462"
+					type: "xp_levels"
+					xp_levels: 3
+				}
+			]
+		}
+		{
+			id: "4867F04FD180EAE5"
+			x: 24.0d
+			y: 25.0d
+			optional: true
+			dependencies: [
+				"E9DAA25D08DA54B3"
+			]
+			tasks: [
+				{
+					id: "9CA2F9F3488607D3"
+					type: "item"
+					item: {
+						id: "create_mechanical_spawner:mechanical_spawner"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "2A906F0CEA14C5E1"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+		}
+	]
+	images: [
+		{
+			id: "96332FFB18363382"
+			image: "kronwerke:textures/quests/create_brass/title.png"
+			x: 13.5d
+			y: -3.0d
+			width: 9.86d
+			height: 1.6d
+			rotation: 0.0d
+			order: 1
+		}
+		{
+			id: "A07B3453301498AC"
+			image: "kronwerke:textures/quests/create_brass/stage.png"
+			x: 13.5d
+			y: -1.6d
+			width: 3.71d
+			height: 0.55d
+			rotation: 0.0d
+			order: 1
+		}
+		{
+			id: "F9D37EFDEAABA089"
+			image: "kronwerke:textures/quests/create_brass/brass.png"
+			x: 0.84d
+			y: 0.1d
+			width: 2.87d
+			height: 0.9d
+			rotation: 0.0d
+			order: 1
+		}
+		{
+			id: "47F1FB2AD3396AC0"
+			image: "kronwerke:textures/quests/create_brass/precision.png"
+			x: 0.84d
+			y: 8.0d
+			width: 2.88d
+			height: 0.9d
+			rotation: 0.0d
+			order: 1
+		}
+		{
+			id: "780FAE260458AAED"
+			image: "kronwerke:textures/quests/create_brass/logistics.png"
+			x: 2.29d
+			y: 16.3d
+			width: 5.78d
+			height: 0.9d
+			rotation: 0.0d
+			order: 1
+		}
+		{
+			id: "682341A8DCD3922E"
+			image: "kronwerke:textures/quests/create_brass/goal.png"
+			x: 7.99d
+			y: 23.0d
+			width: 2.67d
+			height: 0.9d
+			rotation: 0.0d
+			order: 1
+		}
+		{
+			id: "3A6210B49D2F76AE"
+			image: "kronwerke:textures/quests/create_brass/steam.png"
+			x: 17.05d
+			y: 0.1d
+			width: 2.31d
+			height: 0.9d
+			rotation: 0.0d
+			order: 1
+		}
+		{
+			id: "9A410D330B5A4DC7"
+			image: "kronwerke:textures/quests/create_brass/contraptions.png"
+			x: 18.37d
+			y: 7.0d
+			width: 4.94d
+			height: 0.9d
+			rotation: 0.0d
+			order: 1
+		}
+		{
+			id: "123C1EEE03B491F0"
+			image: "kronwerke:textures/quests/create_brass/addons.png"
+			x: 17.18d
+			y: 13.1d
+			width: 2.55d
+			height: 0.9d
+			rotation: 0.0d
+			order: 1
+		}
+		{
+			id: "464C83EC975B191A"
+			image: "kronwerke:textures/quests/create_brass/note_cei.png"
+			x: 20.14d
+			y: 14.85d
+			width: 3.48d
+			height: 0.5d
+			rotation: 0.0d
+			order: 1
+		}
+		{
+			id: "24D7F73E9831E52D"
+			image: "kronwerke:textures/quests/create_brass/note_cna.png"
+			x: 19.07d
+			y: 17.85d
+			width: 1.34d
+			height: 0.5d
+			rotation: 0.0d
+			order: 1
+		}
+		{
+			id: "6274BE605A5AED16"
+			image: "kronwerke:textures/quests/create_brass/note_cca.png"
+			x: 19.86d
+			y: 20.85d
+			width: 2.93d
+			height: 0.5d
+			rotation: 0.0d
+			order: 1
+		}
+		{
+			id: "1EE5C527A974C38E"
+			image: "kronwerke:textures/quests/create_brass/note_cc.png"
+			x: 19.99d
+			y: 23.85d
+			width: 3.19d
+			height: 0.5d
+			rotation: 0.0d
+			order: 1
 		}
 	]
 }

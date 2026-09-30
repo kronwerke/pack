@@ -6,10 +6,20 @@ Every chapter lives in its own module under tools/quests/chapters/ and calls
 chapter(...) at import time. build.py imports them all and writes
 config/ftbquests/quests/. Ids are derived from names, so a rebuild never
 changes an id and player progress survives.
+
+The structure (ids, positions, tasks, rewards) goes into quests/chapters/, all text into
+quests/lang/<locale>.snbt, the way FTB Quests keeps it since 1.21. The text is German and is
+written for de_de and for en_us, which FTB Quests falls back to for every other language.
+
+Lettering on the canvas (chapter titles, section headings) is rendered by banners.py into
+kubejs/assets/kronwerke/textures/quests/, see banner().
 """
 import hashlib
 import os
 import shutil
+
+LOCALES = ("de_de", "en_us")
+FILE_TITLE = "Kronwerke Season 2"
 
 class F(float):
     """A float written with the f suffix (float32 in SNBT)."""
@@ -18,6 +28,7 @@ class F(float):
 _chapters = []
 _groups = []
 _tables = {}
+_banners = {}   # texture path -> (text, kind, colour)
 
 
 def qid(*parts):
@@ -93,6 +104,37 @@ def loot_table(name, title, entries, stage=1, loot_size=1, icon="ftbquests:lootc
     _tables[name] = {"title": title, "entries": entries, "loot_size": loot_size, "icon": icon, "stage": stage}
 
 
+# ---- text and pictures ----------------------------------------------------
+
+def img(texture, width, height, align="center"):
+    """A picture inside a quest text, on a line of its own. width and height in GUI pixels."""
+    return "{image:%s width:%d height:%d align:%s}" % (texture, width, height, align)
+
+
+def item_texture(id):
+    """The inventory texture of a plain item, for img() or canvas(): minecraft:diamond ->
+    minecraft:textures/item/diamond.png. Blocks usually have no such texture; check with
+    check_images.py."""
+    ns, path = id.split(":", 1)
+    return f"{ns}:textures/item/{path}.png"
+
+
+def canvas(texture, x, y, width, height, rotation=0.0, order=0):
+    """A picture on the chapter canvas, centred on x, y, in quest grid units."""
+    return {"image": texture, "x": x, "y": y, "width": width, "height": height,
+            "rotation": rotation, "order": order}
+
+
+def banner(name, text, x, y, height=1.0, kind="section", colour="brass"):
+    """Lettering on the chapter canvas: kind is title, section or note; colour one of
+    banners.COLOURS. name is the file under textures/quests/, like "create/power"."""
+    import banners
+    texture = f"kronwerke:textures/quests/{name}.png"
+    _banners[texture] = (text, kind, colour)
+    w, h = banners.measure(text, kind)
+    return canvas(texture, x, y, round(height * w / h, 2), height, order=1)
+
+
 def group(name, title):
     _groups.append((name, title))
 
@@ -106,11 +148,13 @@ def quest(name, x, y, title, tasks, subtitle="", description=(), rewards=(), dep
 
 
 def chapter(name, title, icon, group, quests, subtitle=(), shape="circle", order=None,
-            hide_dependency_lines=False, stage=1):
-    """stage: the stage the chapter belongs to. Nothing in it may be locked until a later stage."""
+            hide_dependency_lines=False, stage=1, images=()):
+    """stage: the stage the chapter belongs to. Nothing in it may be locked until a later stage.
+    images: canvas() and banner() pictures on the chapter canvas."""
     _chapters.append({"name": name, "title": title, "icon": icon, "group": group, "quests": quests,
                       "subtitle": list(subtitle), "shape": shape, "order": order,
-                      "hide_dependency_lines": hide_dependency_lines, "stage": stage})
+                      "hide_dependency_lines": hide_dependency_lines, "stage": stage,
+                      "images": list(images)})
 
 
 # ---- SNBT writer ----------------------------------------------------------
@@ -144,19 +188,21 @@ def _float(v):
     return float(v)
 
 
-def _build_chapter(ch, order_index):
+def _build_chapter(ch, order_index, lang):
+    """The chapter file, and its text into lang (key -> value)."""
     cid = qid("chapter", ch["name"])
     quests_out = []
     for q in ch["quests"]:
+        quest_id = qid("quest", ch["name"], q["name"])
         qd = {
-            "id": qid("quest", ch["name"], q["name"]),
+            "id": quest_id,
             "x": _float(q["x"]), "y": _float(q["y"]),
-            "title": q["title"],
         }
+        lang[f"quest.{quest_id}.title"] = q["title"]
         if q["subtitle"]:
-            qd["subtitle"] = q["subtitle"]
+            lang[f"quest.{quest_id}.quest_subtitle"] = q["subtitle"]
         if q["description"]:
-            qd["description"] = q["description"]
+            lang[f"quest.{quest_id}.quest_desc"] = list(q["description"])
         if q["icon"]:
             qd["icon"] = item(q["icon"])
         if q["size"]:
@@ -174,7 +220,10 @@ def _build_chapter(ch, order_index):
         qd["tasks"] = []
         for i, t in enumerate(q["tasks"]):
             t = dict(t)
-            t = {"id": qid("task", ch["name"], q["name"], str(i)), **t}
+            task_id = qid("task", ch["name"], q["name"], str(i))
+            if "title" in t:
+                lang[f"task.{task_id}.title"] = t.pop("title")
+            t = {"id": task_id, **t}
             qd["tasks"].append(t)
         qd["rewards"] = []
         for i, r in enumerate(q["rewards"]):
@@ -184,22 +233,43 @@ def _build_chapter(ch, order_index):
             r = {"id": qid("reward", ch["name"], q["name"], str(i)), **r}
             qd["rewards"].append(r)
         quests_out.append(qd)
+    images_out = []
+    for i, im in enumerate(ch["images"]):
+        d = {"id": qid("image", ch["name"], str(i)), "image": im["image"],
+             "x": _float(im["x"]), "y": _float(im["y"]),
+             "width": _float(im["width"]), "height": _float(im["height"]),
+             "rotation": _float(im["rotation"])}
+        if im["order"]:
+            d["order"] = int(im["order"])
+        images_out.append(d)
+    lang[f"chapter.{cid}.title"] = ch["title"]
+    if ch["subtitle"]:
+        lang[f"chapter.{cid}.chapter_subtitle"] = ch["subtitle"]
     out = {
         "id": cid,
         "filename": ch["name"],
-        "title": ch["title"],
         "icon": item(ch["icon"]),
         "group": qid("group", ch["group"]),
         "order_index": order_index,
         "default_quest_shape": ch["shape"],
         "default_hide_dependency_lines": ch["hide_dependency_lines"],
-        "subtitle": ch["subtitle"],
         "quests": quests_out,
     }
+    if images_out:
+        out["images"] = images_out
     return out
 
 
-def write(out_dir, pack_icon="create:large_cogwheel"):
+def _write_lang(qdir, entries):
+    """One file per locale; FTB Quests 2101.1 reads lang/<locale>.snbt."""
+    os.makedirs(os.path.join(qdir, "lang"), exist_ok=True)
+    for loc in LOCALES:
+        with open(os.path.join(qdir, "lang", loc + ".snbt"), "w") as f:
+            f.write(_s(dict(sorted(entries.items()))) + "\n")
+
+
+def write(out_dir, pack_icon="create:large_cogwheel", assets_dir=None):
+    """assets_dir: where the kronwerke:textures/quests/ lettering goes (kubejs/assets)."""
     qdir = os.path.join(out_dir, "quests")
     if os.path.isdir(qdir):
         shutil.rmtree(qdir)
@@ -229,7 +299,9 @@ def write(out_dir, pack_icon="create:large_cogwheel"):
         f.write(_s(data) + "\n")
 
     with open(os.path.join(qdir, "chapter_groups.snbt"), "w") as f:
-        f.write(_s({"chapter_groups": [{"id": qid("group", g), "title": t} for g, t in _groups]}) + "\n")
+        f.write(_s({"chapter_groups": [{"id": qid("group", g)} for g, t in _groups]}) + "\n")
+    lang = {f"chapter_group.{qid('group', g)}.title": t for g, t in _groups}
+    lang["file.0000000000000001.title"] = FILE_TITLE
 
     for i, (name, tbl) in enumerate(_tables.items()):
         rewards = []
@@ -239,14 +311,23 @@ def write(out_dir, pack_icon="create:large_cogwheel"):
             if len(e) > 3:
                 r["random_bonus"] = int(e[3])
             rewards.append(r)
-        out = {"id": qid("table", name), "title": tbl["title"], "icon": item(tbl["icon"]),
+        out = {"id": qid("table", name), "icon": item(tbl["icon"]),
                "loot_size": tbl["loot_size"], "order_index": i, "rewards": rewards}
         with open(os.path.join(qdir, "reward_tables", name + ".snbt"), "w") as f:
             f.write(_s(out) + "\n")
 
+    lang.update({f"reward_table.{qid('table', n)}.title": t["title"] for n, t in _tables.items()})
+
     for i, ch in enumerate(_chapters):
-        out = _build_chapter(ch, ch["order"] if ch["order"] is not None else i)
+        out = _build_chapter(ch, ch["order"] if ch["order"] is not None else i, lang)
         with open(os.path.join(qdir, "chapters", ch["name"] + ".snbt"), "w") as f:
             f.write(_s(out) + "\n")
+    _write_lang(qdir, lang)
+
+    if assets_dir and _banners:
+        import banners
+        for texture, (text, kind, colour) in sorted(_banners.items()):
+            ns, path = texture.split(":", 1)
+            banners.write(os.path.join(assets_dir, ns, path), text, kind, colour)
 
     return len(_chapters), sum(len(c["quests"]) for c in _chapters), len(_tables)

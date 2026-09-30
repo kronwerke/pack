@@ -1,7 +1,6 @@
 {
 	id: "A0C8627B6ED3DAEC"
 	filename: "nether"
-	title: "The Nether"
 	icon: {
 		id: "minecraft:netherrack"
 		count: 1
@@ -10,23 +9,11 @@
 	order_index: 8
 	default_quest_shape: "circle"
 	default_hide_dependency_lines: false
-	subtitle: [
-		"Stage 2. Quartz, blaze rods and the rest of what the machines need."
-	]
 	quests: [
 		{
 			id: "4E17FDE633086052"
 			x: 0.0d
-			y: 0.0d
-			title: "The Nether"
-			subtitle: "Lit on stream. Now it is everyone's."
-			description: [
-				"The portal at spawn was lit when the first community goal was filled. From now on anyone can build their own portal, or walk through the one at spawn."
-				""
-				"Bring fire resistance, a shield and blocks you do not mind losing. Ghasts break wood and cobblestone, not cobbled deepslate."
-				""
-				"Almost everything in stage 2 needs something from down here: blaze rods for Create, quartz for electron tubes, glowstone and more."
-			]
+			y: 6.5d
 			icon: {
 				id: "minecraft:netherrack"
 				count: 1
@@ -55,19 +42,226 @@
 					type: "loot"
 					table_id: "F2BA64790EBA3DF5"
 				}
+				{
+					id: "DC0B26D84471C77F"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+		}
+		{
+			id: "2365667E01139DBD"
+			x: 2.5d
+			y: 6.5d
+			icon: {
+				id: "minecraft:golden_helmet"
+				count: 1
+			}
+			size: 1.5d
+			dependencies: [
+				"4E17FDE633086052"
+			]
+			tasks: [
+				{
+					id: "AFC5601BC03C9E48"
+					type: "item"
+					item: {
+						id: "minecraft:golden_helmet"
+						count: 1
+					}
+					count: 1
+				}
+				{
+					id: "9923CFA9AD161A82"
+					type: "item"
+					item: {
+						id: "minecraft:shield"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "462CEEAA82AF5223"
+					type: "item"
+					item: {
+						id: "minecraft:cobblestone"
+						count: 1
+					}
+					count: 64
+				}
+				{
+					id: "B839EFC213358520"
+					type: "item"
+					item: {
+						id: "minecraft:gold_ingot"
+						count: 1
+					}
+					count: 4
+				}
+			]
+		}
+		{
+			id: "6CEC6A06FD70C26D"
+			x: 0.0d
+			y: 9.3d
+			icon: {
+				id: "minecraft:flint_and_steel"
+				count: 1
+			}
+			dependencies: [
+				"4E17FDE633086052"
+			]
+			tasks: [
+				{
+					id: "E985B7F79C713CDD"
+					type: "item"
+					item: {
+						id: "minecraft:obsidian"
+						count: 1
+					}
+					count: 10
+				}
+				{
+					id: "23929570D5100304"
+					type: "item"
+					item: {
+						id: "minecraft:flint_and_steel"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "6601DA8B1BBD72B9"
+					type: "item"
+					item: {
+						id: "minecraft:obsidian"
+						count: 1
+					}
+					count: 4
+				}
+				{
+					id: "701258262FE4234E"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+		}
+		{
+			id: "7E0EDE401E04DF28"
+			x: 0.0d
+			y: 11.3d
+			icon: {
+				id: "minecraft:compass"
+				count: 1
+			}
+			optional: true
+			dependencies: [
+				"6CEC6A06FD70C26D"
+			]
+			tasks: [
+				{
+					id: "B72FEEE5821F243D"
+					type: "advancement"
+					advancement: "minecraft:nether/fast_travel"
+					criterion: ""
+				}
+			]
+			rewards: [
+				{
+					id: "76B7F4704ECEA177"
+					type: "item"
+					item: {
+						id: "minecraft:obsidian"
+						count: 1
+					}
+					count: 8
+				}
+				{
+					id: "0A2C0E6D14CDAF2F"
+					type: "xp_levels"
+					xp_levels: 10
+				}
+			]
+		}
+		{
+			id: "5B350BA417B7DDA4"
+			x: 0.0d
+			y: 3.8d
+			icon: {
+				id: "waystones:waystone"
+				count: 1
+			}
+			optional: true
+			dependencies: [
+				"4E17FDE633086052"
+			]
+			tasks: [
+				{
+					id: "2ED894916D4A407A"
+					type: "item"
+					item: {
+						id: "waystones:waystone"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "A28D311BC6C07F7E"
+					type: "item"
+					item: {
+						id: "waystones:warp_dust"
+						count: 1
+					}
+					count: 8
+				}
+			]
+		}
+		{
+			id: "86B8179E0B2761F8"
+			x: 6.0d
+			y: 1.0d
+			icon: {
+				id: "minecraft:netherrack"
+				count: 1
+			}
+			dependencies: [
+				"2365667E01139DBD"
+			]
+			tasks: [
+				{
+					id: "8794A1C6BDF2B49D"
+					type: "item"
+					item: {
+						id: "minecraft:netherrack"
+						count: 1
+					}
+					count: 64
+				}
+			]
+			rewards: [
+				{
+					id: "948AC872113C37EB"
+					type: "item"
+					item: {
+						id: "minecraft:coal"
+						count: 1
+					}
+					count: 16
+				}
 			]
 		}
 		{
 			id: "185C15B0C586A75D"
-			x: 3.0d
-			y: -2.0d
-			title: "Nether Quartz"
-			subtitle: "Everywhere in the walls, and Create wants it."
-			description: [
-				"Quartz ore is all over the Nether. Craft quartz with redstone for &6Rose Quartz&r, polish it with sandpaper, and you have what Create's &6Electron Tubes&r are made of."
-			]
+			x: 8.5d
+			y: -0.6d
 			dependencies: [
-				"4E17FDE633086052"
+				"86B8179E0B2761F8"
 			]
 			tasks: [
 				{
@@ -93,16 +287,59 @@
 			]
 		}
 		{
-			id: "2CB130AE8CB3BDAB"
-			x: 3.0d
-			y: 2.0d
-			title: "Glowstone"
-			subtitle: "Hanging from the ceiling, over the lava."
-			description: [
-				"Glowstone hangs from the Nether ceiling. Silk touch keeps the block, anything else gives dust. Bring a block to stand on."
-			]
+			id: "61FBBD10C8CECAFA"
+			x: 11.0d
+			y: -0.6d
+			icon: {
+				id: "create:electron_tube"
+				count: 1
+			}
 			dependencies: [
-				"4E17FDE633086052"
+				"185C15B0C586A75D"
+			]
+			tasks: [
+				{
+					id: "8E251F314FF39741"
+					type: "item"
+					item: {
+						id: "create:rose_quartz"
+						count: 1
+					}
+					count: 8
+				}
+				{
+					id: "2D583A545506A736"
+					type: "item"
+					item: {
+						id: "create:electron_tube"
+						count: 1
+					}
+					count: 2
+				}
+			]
+			rewards: [
+				{
+					id: "B118946AE2F8827B"
+					type: "item"
+					item: {
+						id: "minecraft:redstone"
+						count: 1
+					}
+					count: 32
+				}
+				{
+					id: "4704C1BDCC784256"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+		}
+		{
+			id: "2CB130AE8CB3BDAB"
+			x: 8.5d
+			y: 1.0d
+			dependencies: [
+				"86B8179E0B2761F8"
 			]
 			tasks: [
 				{
@@ -112,7 +349,7 @@
 						id: "minecraft:glowstone_dust"
 						count: 1
 					}
-					count: 16
+					count: 32
 				}
 			]
 			rewards: [
@@ -128,37 +365,31 @@
 			]
 		}
 		{
-			id: "3313FC57036C08F2"
-			x: 6.0d
-			y: 0.0d
-			title: "Blaze Rods"
-			subtitle: "Find a fortress and its spawners."
-			description: [
-				"Nether fortresses are the long bridges and halls of dark brick. Blazes spawn from spawners inside. Kill a few for rods."
-				""
-				"Leave one spawner standing. Create's &6Blaze Burner&r needs a live blaze: right click one with an &6Empty Blaze Burner&r and it goes into the cage."
-			]
+			id: "D5D30FCED20A52EC"
+			x: 8.5d
+			y: 2.6d
 			icon: {
-				id: "minecraft:blaze_rod"
+				id: "minecraft:magma_cream"
 				count: 1
 			}
-			size: 1.5d
 			dependencies: [
-				"185C15B0C586A75D"
-				"2CB130AE8CB3BDAB"
+				"86B8179E0B2761F8"
 			]
 			tasks: [
 				{
-					id: "2C5D2A0770489AE3"
-					type: "kill"
-					entity: "minecraft:blaze"
-					value: 5
-				}
-				{
-					id: "32EFA86C5EF88053"
+					id: "64C349B39FDF044B"
 					type: "item"
 					item: {
-						id: "minecraft:blaze_rod"
+						id: "minecraft:magma_block"
+						count: 1
+					}
+					count: 9
+				}
+				{
+					id: "3D8F37C428D2B6A7"
+					type: "item"
+					item: {
+						id: "minecraft:magma_cream"
 						count: 1
 					}
 					count: 4
@@ -166,7 +397,90 @@
 			]
 			rewards: [
 				{
+					id: "7BABDFBD9F1A7FA7"
+					type: "item"
+					item: {
+						id: "minecraft:slime_ball"
+						count: 1
+					}
+					count: 4
+				}
+			]
+		}
+		{
+			id: "3313FC57036C08F2"
+			x: 6.0d
+			y: 6.5d
+			icon: {
+				id: "minecraft:nether_bricks"
+				count: 1
+			}
+			size: 1.5d
+			shape: "hexagon"
+			dependencies: [
+				"2365667E01139DBD"
+			]
+			tasks: [
+				{
+					id: "2C5D2A0770489AE3"
+					type: "item"
+					item: {
+						id: "minecraft:nether_bricks"
+						count: 1
+					}
+					count: 16
+				}
+			]
+			rewards: [
+				{
 					id: "0F242269E572A81A"
+					type: "item"
+					item: {
+						id: "minecraft:cooked_beef"
+						count: 1
+					}
+					count: 16
+				}
+				{
+					id: "71F69B3FC63A23EE"
+					type: "loot"
+					table_id: "F2BA64790EBA3DF5"
+				}
+			]
+		}
+		{
+			id: "4891582657C05B8A"
+			x: 8.5d
+			y: 6.5d
+			icon: {
+				id: "minecraft:blaze_rod"
+				count: 1
+			}
+			size: 1.75d
+			shape: "diamond"
+			dependencies: [
+				"3313FC57036C08F2"
+			]
+			tasks: [
+				{
+					id: "9EA9DF1C6B70428B"
+					type: "kill"
+					entity: "minecraft:blaze"
+					value: 5
+				}
+				{
+					id: "28B891C14DF9F3B7"
+					type: "item"
+					item: {
+						id: "minecraft:blaze_rod"
+						count: 1
+					}
+					count: 8
+				}
+			]
+			rewards: [
+				{
+					id: "D92369635CEA23EE"
 					type: "item"
 					item: {
 						id: "minecraft:blaze_rod"
@@ -175,22 +489,67 @@
 					count: 4
 				}
 				{
-					id: "71F69B3FC63A23EE"
+					id: "390F65DEAA095DB1"
 					type: "loot"
 					table_id: "BA8E33E78A3B3A0C"
+				}
+				{
+					id: "D2499CF8AAA3C947"
+					type: "xp_levels"
+					xp_levels: 10
+				}
+			]
+		}
+		{
+			id: "FDDE69DD79E59127"
+			x: 11.0d
+			y: 6.5d
+			icon: {
+				id: "create:blaze_burner"
+				count: 1
+			}
+			size: 2.0d
+			shape: "gear"
+			dependencies: [
+				"4891582657C05B8A"
+			]
+			tasks: [
+				{
+					id: "57347790C72BD715"
+					type: "item"
+					item: {
+						id: "create:blaze_burner"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "32D6EB8CF7CB10E4"
+					type: "item"
+					item: {
+						id: "create:brass_ingot"
+						count: 1
+					}
+					count: 8
+				}
+				{
+					id: "6258E660378F6ACE"
+					type: "loot"
+					table_id: "BA8E33E78A3B3A0C"
+				}
+				{
+					id: "A52F8A0E6854E90B"
+					type: "xp_levels"
+					xp_levels: 10
 				}
 			]
 		}
 		{
 			id: "3E45E68481EC6D3E"
-			x: 9.0d
-			y: -2.0d
-			title: "Nether Wart"
-			subtitle: "The base of every potion."
-			description: [
-				"Nether Wart grows on soul sand in fortress stairwells. Plant it at home and you can brew. Fire resistance first."
-			]
-			optional: true
+			x: 8.5d
+			y: 8.7d
 			dependencies: [
 				"3313FC57036C08F2"
 			]
@@ -210,13 +569,38 @@
 					id: "A61A74EFEA68FA0A"
 					type: "item"
 					item: {
+						id: "minecraft:soul_sand"
+						count: 1
+					}
+					count: 8
+				}
+			]
+		}
+		{
+			id: "B3598BFDD376FB7D"
+			x: 11.0d
+			y: 8.7d
+			icon: {
+				id: "minecraft:brewing_stand"
+				count: 1
+			}
+			dependencies: [
+				"3E45E68481EC6D3E"
+			]
+			tasks: [
+				{
+					id: "A4E9D7E5E7AC4F65"
+					type: "item"
+					item: {
 						id: "minecraft:brewing_stand"
 						count: 1
 					}
 					count: 1
 				}
+			]
+			rewards: [
 				{
-					id: "0449A2100FC3F858"
+					id: "2865D80DD3FD1EFA"
 					type: "item"
 					item: {
 						id: "minecraft:glass_bottle"
@@ -224,26 +608,180 @@
 					}
 					count: 6
 				}
+				{
+					id: "2870C5DF4D9E2EB7"
+					type: "item"
+					item: {
+						id: "minecraft:blaze_powder"
+						count: 1
+					}
+					count: 4
+				}
+			]
+		}
+		{
+			id: "B03C6BA0D59469CB"
+			x: 6.0d
+			y: 8.9d
+			icon: {
+				id: "minecraft:wither_skeleton_skull"
+				count: 1
+			}
+			optional: true
+			dependencies: [
+				"3313FC57036C08F2"
+			]
+			tasks: [
+				{
+					id: "DC31632DB2D2BF8A"
+					type: "item"
+					item: {
+						id: "minecraft:wither_skeleton_skull"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "B0AD872A9BE444EE"
+					type: "item"
+					item: {
+						id: "minecraft:bone_block"
+						count: 1
+					}
+					count: 8
+				}
+				{
+					id: "089240D28D93646F"
+					type: "xp_levels"
+					xp_levels: 10
+				}
+			]
+		}
+		{
+			id: "23EB694A7328B285"
+			x: 14.0d
+			y: 8.7d
+			icon: {
+				id: "minecraft:gold_nugget"
+				count: 1
+			}
+			dependencies: [
+				"B3598BFDD376FB7D"
+			]
+			tasks: [
+				{
+					id: "B36C58DD11A34BD6"
+					type: "item"
+					item: {
+						id: "minecraft:gold_nugget"
+						count: 1
+					}
+					count: 64
+				}
+			]
+			rewards: [
+				{
+					id: "F269278EB4BD47AF"
+					type: "item"
+					item: {
+						id: "minecraft:gold_ingot"
+						count: 1
+					}
+					count: 8
+				}
+			]
+		}
+		{
+			id: "79EA6DAA0CE81B6C"
+			x: 16.5d
+			y: 8.7d
+			icon: {
+				id: "minecraft:gold_ingot"
+				count: 1
+			}
+			dependencies: [
+				"23EB694A7328B285"
+			]
+			tasks: [
+				{
+					id: "AD234BCB635826C5"
+					type: "advancement"
+					advancement: "minecraft:nether/distract_piglin"
+					criterion: ""
+				}
+			]
+			rewards: [
+				{
+					id: "5FEBDF6C578702FA"
+					type: "item"
+					item: {
+						id: "minecraft:ender_pearl"
+						count: 1
+					}
+					count: 4
+				}
+			]
+		}
+		{
+			id: "899C84C4C154CDCB"
+			x: 19.0d
+			y: 7.8d
+			icon: {
+				id: "minecraft:gilded_blackstone"
+				count: 1
+			}
+			size: 1.5d
+			shape: "hexagon"
+			dependencies: [
+				"79EA6DAA0CE81B6C"
+			]
+			tasks: [
+				{
+					id: "3256F2F3254CFA73"
+					type: "item"
+					item: {
+						id: "minecraft:gilded_blackstone"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "D585AD50FCF8FB87"
+					type: "item"
+					item: {
+						id: "minecraft:gold_block"
+						count: 1
+					}
+					count: 2
+				}
+				{
+					id: "1FC60294F7E77FCD"
+					type: "loot"
+					table_id: "BA8E33E78A3B3A0C"
+				}
+				{
+					id: "D194ED590373A4B5"
+					type: "xp_levels"
+					xp_levels: 10
+				}
 			]
 		}
 		{
 			id: "4F3895B47878B595"
-			x: 9.0d
-			y: 2.0d
-			title: "Ancient Debris"
-			subtitle: "Deep down, blast resistant, worth it."
-			description: [
-				"Ancient Debris sits low in the Nether, around Y 15. It does not glow and does not burn. Beds explode in the Nether, which is one way to dig. TNT is another."
-				"Four scraps and four gold make one netherite ingot."
-			]
+			x: 21.5d
+			y: 7.8d
 			icon: {
 				id: "minecraft:ancient_debris"
 				count: 1
 			}
-			size: 1.5d
+			size: 1.75d
 			shape: "diamond"
 			dependencies: [
-				"3313FC57036C08F2"
+				"899C84C4C154CDCB"
 			]
 			tasks: [
 				{
@@ -274,9 +812,353 @@
 				{
 					id: "C20AD126BD56B7F8"
 					type: "xp_levels"
+					xp_levels: 15
+				}
+			]
+		}
+		{
+			id: "45C7983DEA86CE05"
+			x: 24.0d
+			y: 7.8d
+			icon: {
+				id: "minecraft:netherite_ingot"
+				count: 1
+			}
+			optional: true
+			dependencies: [
+				"4F3895B47878B595"
+			]
+			tasks: [
+				{
+					id: "D4075332A347947E"
+					type: "item"
+					item: {
+						id: "minecraft:netherite_ingot"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "975B72BBB5FA4BBA"
+					type: "xp_levels"
+					xp_levels: 20
+				}
+			]
+		}
+		{
+			id: "F85179CB6F3B3FE8"
+			x: 6.0d
+			y: 13.0d
+			icon: {
+				id: "minecraft:warped_fungus"
+				count: 1
+			}
+			size: 1.5d
+			shape: "hexagon"
+			dependencies: [
+				"2365667E01139DBD"
+			]
+			tasks: [
+				{
+					id: "4CC5F6FFA17C09A9"
+					type: "item"
+					item: {
+						id: "minecraft:crimson_stem"
+						count: 1
+					}
+					count: 16
+				}
+				{
+					id: "BCCEF6169F0ED531"
+					type: "item"
+					item: {
+						id: "minecraft:warped_stem"
+						count: 1
+					}
+					count: 16
+				}
+				{
+					id: "E3FA93A50F0C9D59"
+					type: "item"
+					item: {
+						id: "minecraft:soul_sand"
+						count: 1
+					}
+					count: 16
+				}
+			]
+			rewards: [
+				{
+					id: "E3B128B0447974CB"
+					type: "item"
+					item: {
+						id: "minecraft:bone_meal"
+						count: 1
+					}
+					count: 16
+				}
+				{
+					id: "EA9FAAA7BB3C0428"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+		}
+		{
+			id: "1150A004C512D253"
+			x: 8.5d
+			y: 11.4d
+			icon: {
+				id: "biomesoplenty:rose_quartz_chunk"
+				count: 1
+			}
+			optional: true
+			dependencies: [
+				"F85179CB6F3B3FE8"
+			]
+			tasks: [
+				{
+					id: "CACD0AE3FC8175F7"
+					type: "item"
+					item: {
+						id: "biomesoplenty:rose_quartz_chunk"
+						count: 1
+					}
+					count: 4
+				}
+			]
+			rewards: [
+				{
+					id: "D00EAC43A1F40880"
+					type: "xp_levels"
 					xp_levels: 10
 				}
 			]
+		}
+		{
+			id: "9B7E57D017C67709"
+			x: 8.5d
+			y: 14.6d
+			icon: {
+				id: "silentgear:raw_crimson_iron"
+				count: 1
+			}
+			dependencies: [
+				"F85179CB6F3B3FE8"
+			]
+			tasks: [
+				{
+					id: "C03699542162DF47"
+					type: "item"
+					item: {
+						id: "silentgear:raw_crimson_iron"
+						count: 1
+					}
+					count: 8
+				}
+			]
+			rewards: [
+				{
+					id: "9296A1C7D85D855B"
+					type: "item"
+					item: {
+						id: "minecraft:iron_ingot"
+						count: 1
+					}
+					count: 16
+				}
+				{
+					id: "85D680DA592ECACE"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+		}
+		{
+			id: "70E321A328F2FFE3"
+			x: 11.0d
+			y: 13.0d
+			icon: {
+				id: "minecraft:chiseled_polished_blackstone"
+				count: 1
+			}
+			size: 1.5d
+			dependencies: [
+				"F85179CB6F3B3FE8"
+			]
+			tasks: [
+				{
+					id: "DF6C5F6F3964499D"
+					type: "checkmark"
+				}
+			]
+			rewards: [
+				{
+					id: "FD003EF66F629F2B"
+					type: "loot"
+					table_id: "F2BA64790EBA3DF5"
+				}
+				{
+					id: "6C57473FCEC69D67"
+					type: "xp_levels"
+					xp_levels: 10
+				}
+			]
+		}
+		{
+			id: "926EB49B64046721"
+			x: 13.5d
+			y: 13.0d
+			icon: {
+				id: "minecraft:blaze_powder"
+				count: 1
+			}
+			optional: true
+			dependencies: [
+				"70E321A328F2FFE3"
+			]
+			tasks: [
+				{
+					id: "2ACC280E6890C2D7"
+					type: "checkmark"
+				}
+			]
+			rewards: [
+				{
+					id: "44E56F708226E410"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+		}
+		{
+			id: "2E476F6BD11012E2"
+			x: 14.5d
+			y: 2.0d
+			icon: {
+				id: "minecraft:blaze_powder"
+				count: 1
+			}
+			size: 2.5d
+			shape: "gear"
+			dependencies: [
+				"FDDE69DD79E59127"
+				"61FBBD10C8CECAFA"
+			]
+			tasks: [
+				{
+					id: "617075CFB148F5F6"
+					type: "item"
+					item: {
+						id: "minecraft:blaze_rod"
+						count: 1
+					}
+					count: 16
+				}
+				{
+					id: "C19E589574B8A732"
+					type: "item"
+					item: {
+						id: "minecraft:quartz"
+						count: 1
+					}
+					count: 64
+				}
+				{
+					id: "659F5FC354985D81"
+					type: "item"
+					item: {
+						id: "minecraft:glowstone_dust"
+						count: 1
+					}
+					count: 32
+				}
+			]
+			rewards: [
+				{
+					id: "B3CB339DA41AE6E5"
+					type: "loot"
+					table_id: "C79EAEAE0F26AA7F"
+				}
+				{
+					id: "EA65708FC472E0AE"
+					type: "item"
+					item: {
+						id: "minecraft:blaze_rod"
+						count: 1
+					}
+					count: 8
+				}
+				{
+					id: "B58ADE1FECA92416"
+					type: "xp_levels"
+					xp_levels: 20
+				}
+			]
+		}
+	]
+	images: [
+		{
+			id: "71276E88D2E6D57F"
+			image: "kronwerke:textures/quests/nether/title.png"
+			x: 6.0d
+			y: -4.6d
+			width: 7.36d
+			height: 1.75d
+			rotation: 0.0d
+			order: 1
+		}
+		{
+			id: "36C8D1540039F849"
+			image: "kronwerke:textures/quests/nether/arrival.png"
+			x: 0.0d
+			y: 2.2d
+			width: 2.93d
+			height: 0.9d
+			rotation: 0.0d
+			order: 1
+		}
+		{
+			id: "A6BFABE29A4E9549"
+			image: "kronwerke:textures/quests/nether/resources.png"
+			x: 8.5d
+			y: -2.4d
+			width: 3.42d
+			height: 0.9d
+			rotation: 0.0d
+			order: 1
+		}
+		{
+			id: "8B4A57D5DD7E02CB"
+			image: "kronwerke:textures/quests/nether/fortresses.png"
+			x: 6.5d
+			y: 4.5d
+			width: 3.51d
+			height: 0.9d
+			rotation: 0.0d
+			order: 1
+		}
+		{
+			id: "FF80E3DC53DE8A39"
+			image: "kronwerke:textures/quests/nether/bastions.png"
+			x: 19.0d
+			y: 5.6d
+			width: 3.4d
+			height: 0.9d
+			rotation: 0.0d
+			order: 1
+		}
+		{
+			id: "F7E757FDE245D8E2"
+			image: "kronwerke:textures/quests/nether/biomes.png"
+			x: 9.5d
+			y: 10.2d
+			width: 7.35d
+			height: 0.9d
+			rotation: 0.0d
+			order: 1
 		}
 	]
 }

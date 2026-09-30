@@ -1,7 +1,6 @@
 {
 	id: "CF96B048882A141A"
 	filename: "start_here"
-	title: "Start Here"
 	icon: {
 		id: "ftbquests:book"
 		count: 1
@@ -10,34 +9,21 @@
 	order_index: 0
 	default_quest_shape: "circle"
 	default_hide_dependency_lines: false
-	subtitle: [
-		"What Kronwerke is and what everyone needs on day one."
-	]
 	quests: [
 		{
 			id: "64C1A6A6E06565BE"
 			x: 0.0d
-			y: 0.0d
-			title: "Welcome to Kronwerke"
-			subtitle: "One world, many streamers, and a server that grows together."
-			description: [
-				"Kronwerke Season 2 is a tech and magic pack where nothing important is unlocked by a single player. The whole server works on one goal at a time, and when it is reached, the next stage opens for everyone."
-				""
-				"This book walks you through all of it. Each chapter is one mod or one theme. Quests show you what to do next, and most of them pay out in crates."
-				""
-				"&6Tip:&r Crates open with a right click. Stone, Iron and Gold crates get better in that order."
-			]
+			y: 3.0d
 			icon: {
 				id: "ftbquests:book"
 				count: 1
 			}
-			size: 2.0d
+			size: 2.5d
 			shape: "hexagon"
 			tasks: [
 				{
 					id: "D3A24673DA264C80"
 					type: "checkmark"
-					title: "Let's go"
 				}
 			]
 			rewards: [
@@ -58,20 +44,11 @@
 			]
 		}
 		{
-			id: "10D4838444517A77"
-			x: 3.0d
-			y: -2.0d
-			title: "Stages"
-			subtitle: "Five stages, opened by the whole server, one after another."
-			description: [
-				"The season has five stages: &6Steinwerk&r, &6Messingwerk&r, &6Stahlwerk&r, &6Sternwerk&r and &6Chaoswerk&r. Right now you are in Steinwerk: stone, water wheels and your first spells."
-				""
-				"Items that belong to a later stage are locked until the server opens that stage. Look them up in JEI and plan ahead."
-				""
-				"Type &e/kw goals&r to see what the server needs for the next stage."
-			]
+			id: "35E5FBCBF73CD53C"
+			x: 4.5d
+			y: -8.0d
 			icon: {
-				id: "minecraft:stone_bricks"
+				id: "minecraft:crafting_table"
 				count: 1
 			}
 			dependencies: [
@@ -79,49 +56,174 @@
 			]
 			tasks: [
 				{
-					id: "B09F790E991FD8E1"
-					type: "checkmark"
-					title: "Got it"
+					id: "856A945AC1E793A7"
+					type: "item"
+					item: {
+						id: "minecraft:crafting_table"
+						count: 1
+					}
+					count: 1
 				}
 			]
 			rewards: [
 				{
-					id: "5CB9806859CE35CA"
-					type: "xp_levels"
-					xp_levels: 5
+					id: "3832BF719DB867E5"
+					type: "item"
+					item: {
+						id: "minecraft:apple"
+						count: 1
+					}
+					count: 6
 				}
 			]
 		}
 		{
-			id: "FD58A1A1E024FADD"
-			x: 6.0d
-			y: -2.0d
-			title: "The Community Goal"
-			subtitle: "Everyone pays in. When it is full, the next stage opens."
-			description: [
-				"Each goal has a &btech&r half and a &dmagic&r half, and both have to fill. The first one also wants cobblestone from everyone. Hold the item and type &e/kw deposit&r, or &e/kw deposit all&r to put in everything that fits."
-				""
-				"At 98 percent the goal stops. The team sets a date, every streamer goes live, and the last items go in together on stream. That is when the next stage opens."
-				""
-				"&e/kw top&r shows who has put in the most so far."
-			]
+			id: "C625026699EE0175"
+			x: 6.5d
+			y: -8.0d
 			icon: {
-				id: "minecraft:lodestone"
+				id: "minecraft:stone_pickaxe"
 				count: 1
 			}
 			dependencies: [
-				"10D4838444517A77"
+				"35E5FBCBF73CD53C"
 			]
 			tasks: [
 				{
-					id: "2B2255BD086087F6"
-					type: "checkmark"
-					title: "I know how to deposit"
+					id: "F01080BF225081D6"
+					type: "item"
+					item: {
+						id: "minecraft:stone_pickaxe"
+						count: 1
+					}
+					count: 1
 				}
 			]
 			rewards: [
 				{
-					id: "3FE16759C35B092D"
+					id: "2974846F6037B9B9"
+					type: "item"
+					item: {
+						id: "minecraft:coal"
+						count: 1
+					}
+					count: 8
+				}
+			]
+		}
+		{
+			id: "9A23B5C0133E71E0"
+			x: 8.5d
+			y: -8.0d
+			icon: {
+				id: "minecraft:campfire"
+				count: 1
+			}
+			dependencies: [
+				"C625026699EE0175"
+			]
+			tasks: [
+				{
+					id: "8163D53FE6A42127"
+					type: "item"
+					item: {
+						id: "minecraft:campfire"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "C1608A6FE2B2BCC6"
+					type: "item"
+					item: {
+						id: "minecraft:cooked_beef"
+						count: 1
+					}
+					count: 8
+				}
+			]
+		}
+		{
+			id: "02156B1E87F8851C"
+			x: 10.5d
+			y: -8.0d
+			icon: {
+				id: "minecraft:torch"
+				count: 1
+			}
+			dependencies: [
+				"9A23B5C0133E71E0"
+			]
+			tasks: [
+				{
+					id: "6707149EFFA6A8BC"
+					type: "item"
+					item: {
+						id: "minecraft:torch"
+						count: 1
+					}
+					count: 16
+				}
+				{
+					id: "937AAE75C8915D67"
+					type: "item"
+					item: {
+						id: "minecraft:chest"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "FB53E68D7B7CDC48"
+					type: "loot"
+					table_id: "1EBBC2B918151958"
+				}
+			]
+		}
+		{
+			id: "3F7045678078D5A4"
+			x: 10.5d
+			y: -6.5d
+			icon: {
+				id: "minecraft:red_bed"
+				count: 1
+			}
+			optional: true
+			dependencies: [
+				"02156B1E87F8851C"
+			]
+			tasks: [
+				{
+					id: "8688A5F395E8CB94"
+					type: "checkmark"
+				}
+			]
+			rewards: [
+				{
+					id: "AEEB894F6C44F3C1"
+					type: "xp_levels"
+					xp_levels: 3
+				}
+			]
+		}
+		{
+			id: "BA0F9713892A89DA"
+			x: 12.5d
+			y: -8.0d
+			icon: {
+				id: "minecraft:cobblestone"
+				count: 1
+			}
+			dependencies: [
+				"02156B1E87F8851C"
+			]
+			tasks: [
+				{
+					id: "DB6C002D611D05DF"
 					type: "item"
 					item: {
 						id: "minecraft:cobblestone"
@@ -129,110 +231,43 @@
 					}
 					count: 64
 				}
+			]
+			rewards: [
 				{
-					id: "5FEA5AE4FDE3B62E"
+					id: "19C286C77D82416B"
 					type: "xp_levels"
-					xp_levels: 5
+					xp_levels: 3
 				}
 			]
 		}
 		{
-			id: "323DA4696A169972"
-			x: 3.0d
-			y: 2.0d
-			title: "Your Origin"
-			subtitle: "Pick who you are. It changes how you play."
-			description: [
-				"When you joined, you picked an origin. Each one has strengths and weaknesses, and some of them change which parts of the pack come easy to you."
-				""
-				"If you are not sure yet, play a few evenings with it. Streamers and team can help you if you really picked something that does not fit."
-			]
+			id: "189E809B78ACB014"
+			x: 14.5d
+			y: -8.0d
 			icon: {
-				id: "minecraft:player_head"
+				id: "minecraft:iron_ingot"
 				count: 1
 			}
 			dependencies: [
-				"64C1A6A6E06565BE"
+				"BA0F9713892A89DA"
 			]
 			tasks: [
 				{
-					id: "98085380F8CD8553"
-					type: "checkmark"
-					title: "I picked my origin"
-				}
-			]
-			rewards: [
-				{
-					id: "40BC1411730D6935"
-					type: "xp_levels"
-					xp_levels: 5
-				}
-			]
-		}
-		{
-			id: "C34D1A5F7845E3C4"
-			x: 6.0d
-			y: 2.0d
-			title: "Claim Your Base"
-			subtitle: "Protect the place you build."
-			description: [
-				"Open the FTB Chunks map (&eM&r by default) and drag over the chunks you want to claim. Nobody outside your team can break or open anything in them."
-				""
-				"Everyone gets a small number of claims, so claim your base, not the whole valley."
-			]
-			icon: {
-				id: "minecraft:filled_map"
-				count: 1
-			}
-			dependencies: [
-				"323DA4696A169972"
-			]
-			tasks: [
-				{
-					id: "2A405AA49ACEE81D"
-					type: "checkmark"
-					title: "My base is claimed"
-				}
-			]
-			rewards: [
-				{
-					id: "6A423BBFCD231D98"
-					type: "loot"
-					table_id: "1EBBC2B918151958"
-				}
-			]
-		}
-		{
-			id: "65D9AC8001316466"
-			x: 9.0d
-			y: 2.0d
-			title: "A Place to Sleep"
-			subtitle: "Sleep anywhere without resetting your spawn."
-			description: [
-				"A &6Sleeping Bag&r lets you skip the night on a trip without moving your spawn point. A &6Hammock&r does the same for the day."
-				"Both are made from wool and string. Any colour works."
-			]
-			icon: {
-				id: "comforts:sleeping_bag_red"
-				count: 1
-			}
-			optional: true
-			dependencies: [
-				"C34D1A5F7845E3C4"
-			]
-			tasks: [
-				{
-					id: "FB807548C3B5D6B2"
-					type: "checkmark"
-					title: "I have one"
-				}
-			]
-			rewards: [
-				{
-					id: "4A18858A8947CA6B"
+					id: "A2EE667666B8973A"
 					type: "item"
 					item: {
-						id: "minecraft:cooked_beef"
+						id: "minecraft:iron_ingot"
+						count: 1
+					}
+					count: 16
+				}
+			]
+			rewards: [
+				{
+					id: "AF0CC4E949179ADA"
+					type: "item"
+					item: {
+						id: "minecraft:coal"
 						count: 1
 					}
 					count: 16
@@ -240,33 +275,728 @@
 			]
 		}
 		{
-			id: "C7C5EB0C6155681C"
-			x: 9.0d
-			y: -2.0d
-			title: "When You Die"
-			subtitle: "Your things wait for you where you fell."
-			description: [
-				"When you die, your body stays where you fell, with everything you carried. Walk back and open it to get your things back."
-				""
-				"The Mining Dimension, the deep caves and the new structures are dangerous. Write down coordinates before you go down."
+			id: "40B67D023DAEF45D"
+			x: 16.5d
+			y: -8.0d
+			icon: {
+				id: "minecraft:iron_pickaxe"
+				count: 1
+			}
+			dependencies: [
+				"189E809B78ACB014"
 			]
+			tasks: [
+				{
+					id: "0905D63DF025298C"
+					type: "item"
+					item: {
+						id: "minecraft:iron_pickaxe"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "2ECB83C96894B108"
+					type: "loot"
+					table_id: "1EBBC2B918151958"
+				}
+			]
+		}
+		{
+			id: "623F3B7A023BACD9"
+			x: 18.5d
+			y: -8.0d
+			icon: {
+				id: "minecraft:clock"
+				count: 1
+			}
+			size: 1.5d
+			shape: "gear"
+			dependencies: [
+				"40B67D023DAEF45D"
+			]
+			tasks: [
+				{
+					id: "B2D0A29E56869179"
+					type: "checkmark"
+				}
+			]
+			rewards: [
+				{
+					id: "057B1B876D0963FC"
+					type: "loot"
+					table_id: "870211AF0E412C54"
+				}
+				{
+					id: "DEFD04442F23AFD4"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+		}
+		{
+			id: "EF34E754EA763450"
+			x: 4.5d
+			y: 0.0d
+			icon: {
+				id: "minecraft:lodestone"
+				count: 1
+			}
+			size: 2.0d
+			shape: "diamond"
+			dependencies: [
+				"64C1A6A6E06565BE"
+			]
+			tasks: [
+				{
+					id: "812761D022E0B5EE"
+					type: "checkmark"
+				}
+			]
+			rewards: [
+				{
+					id: "49AFC865A09CE20F"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+		}
+		{
+			id: "9FC6B71CB35F1EC8"
+			x: 7.5d
+			y: -1.0d
+			icon: {
+				id: "minecraft:cobblestone"
+				count: 1
+			}
+			dependencies: [
+				"EF34E754EA763450"
+			]
+			tasks: [
+				{
+					id: "015F51A02540B976"
+					type: "checkmark"
+				}
+			]
+			rewards: [
+				{
+					id: "482948A82AF86AA8"
+					type: "xp_levels"
+					xp_levels: 3
+				}
+			]
+		}
+		{
+			id: "6DB41D51F9FA74EC"
+			x: 7.5d
+			y: 1.0d
+			icon: {
+				id: "minecraft:barrel"
+				count: 1
+			}
+			dependencies: [
+				"EF34E754EA763450"
+			]
+			tasks: [
+				{
+					id: "93AE5D6CE0521DC2"
+					type: "checkmark"
+				}
+			]
+			rewards: [
+				{
+					id: "C3A95EA35AB4A702"
+					type: "xp_levels"
+					xp_levels: 3
+				}
+			]
+		}
+		{
+			id: "693882229B4D2AC6"
+			x: 9.5d
+			y: 0.0d
+			icon: {
+				id: "minecraft:command_block"
+				count: 1
+			}
+			dependencies: [
+				"9FC6B71CB35F1EC8"
+				"6DB41D51F9FA74EC"
+			]
+			tasks: [
+				{
+					id: "548E9800163FA5DE"
+					type: "checkmark"
+				}
+			]
+			rewards: [
+				{
+					id: "A78A01A60AE8F7E7"
+					type: "xp_levels"
+					xp_levels: 3
+				}
+			]
+		}
+		{
+			id: "C16773D49EAC39AD"
+			x: 11.5d
+			y: -1.5d
+			icon: {
+				id: "minecraft:cobblestone"
+				count: 1
+			}
+			dependencies: [
+				"693882229B4D2AC6"
+			]
+			tasks: [
+				{
+					id: "D8726F4B248808F7"
+					type: "checkmark"
+				}
+			]
+			rewards: [
+				{
+					id: "3E63B9C006F67E20"
+					type: "xp_levels"
+					xp_levels: 2
+				}
+			]
+		}
+		{
+			id: "5201E5BDB258C810"
+			x: 11.5d
+			y: 0.0d
+			icon: {
+				id: "create:andesite_alloy"
+				count: 1
+			}
+			dependencies: [
+				"693882229B4D2AC6"
+			]
+			tasks: [
+				{
+					id: "21674CF776BC540F"
+					type: "checkmark"
+				}
+			]
+			rewards: [
+				{
+					id: "2E82A6ED4FB78F7D"
+					type: "xp_levels"
+					xp_levels: 2
+				}
+			]
+		}
+		{
+			id: "82221FD1BB9A6413"
+			x: 11.5d
+			y: 1.5d
+			icon: {
+				id: "ars_nouveau:source_gem"
+				count: 1
+			}
+			dependencies: [
+				"693882229B4D2AC6"
+			]
+			tasks: [
+				{
+					id: "4B7E38B50D604E2D"
+					type: "checkmark"
+				}
+			]
+			rewards: [
+				{
+					id: "AF31851033CE6535"
+					type: "xp_levels"
+					xp_levels: 2
+				}
+			]
+		}
+		{
+			id: "95C4F06C94471306"
+			x: 13.5d
+			y: 0.0d
+			icon: {
+				id: "minecraft:comparator"
+				count: 1
+			}
+			dependencies: [
+				"C16773D49EAC39AD"
+				"5201E5BDB258C810"
+				"82221FD1BB9A6413"
+			]
+			tasks: [
+				{
+					id: "6AD6B210FA92F788"
+					type: "checkmark"
+				}
+			]
+			rewards: [
+				{
+					id: "812E3297B0F05A8C"
+					type: "xp_levels"
+					xp_levels: 2
+				}
+			]
+		}
+		{
+			id: "6B18B82463F286E4"
+			x: 15.5d
+			y: 0.0d
+			icon: {
+				id: "minecraft:beacon"
+				count: 1
+			}
+			size: 1.75d
+			shape: "gear"
+			dependencies: [
+				"95C4F06C94471306"
+			]
+			tasks: [
+				{
+					id: "EA29E54E7B651A1A"
+					type: "checkmark"
+				}
+			]
+			rewards: [
+				{
+					id: "5A5F54C98292FDEB"
+					type: "loot"
+					table_id: "1EBBC2B918151958"
+				}
+				{
+					id: "DF57046DBFF0776A"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+		}
+		{
+			id: "58359FDAD745E4AE"
+			x: 4.5d
+			y: 6.5d
+			icon: {
+				id: "minecraft:stone_bricks"
+				count: 1
+			}
+			size: 1.75d
+			shape: "hexagon"
+			dependencies: [
+				"EF34E754EA763450"
+			]
+			tasks: [
+				{
+					id: "8A7BAAEAC7F2D3D3"
+					type: "checkmark"
+				}
+			]
+			rewards: [
+				{
+					id: "E3A70C464319CFBD"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+		}
+		{
+			id: "A1990A0D6BE75734"
+			x: 7.0d
+			y: 5.0d
+			icon: {
+				id: "minecraft:cobblestone"
+				count: 1
+			}
+			dependencies: [
+				"58359FDAD745E4AE"
+			]
+			tasks: [
+				{
+					id: "2C4BE1EE1D18B046"
+					type: "checkmark"
+				}
+			]
+			rewards: [
+				{
+					id: "7A432CADF74B0D43"
+					type: "xp_levels"
+					xp_levels: 2
+				}
+			]
+		}
+		{
+			id: "3D52E98FA8A66E0E"
+			x: 9.0d
+			y: 5.0d
+			icon: {
+				id: "minecraft:netherrack"
+				count: 1
+			}
+			dependencies: [
+				"A1990A0D6BE75734"
+			]
+			tasks: [
+				{
+					id: "E35BC10AE4BE0FF3"
+					type: "checkmark"
+				}
+			]
+			rewards: [
+				{
+					id: "AD2F61789A1D4610"
+					type: "xp_levels"
+					xp_levels: 2
+				}
+			]
+		}
+		{
+			id: "A461F299F1CB41DA"
+			x: 11.0d
+			y: 5.0d
+			icon: {
+				id: "minecraft:iron_block"
+				count: 1
+			}
+			dependencies: [
+				"3D52E98FA8A66E0E"
+			]
+			tasks: [
+				{
+					id: "471A21CFFED9210E"
+					type: "checkmark"
+				}
+			]
+			rewards: [
+				{
+					id: "F3225FE965DB7575"
+					type: "xp_levels"
+					xp_levels: 2
+				}
+			]
+		}
+		{
+			id: "6226ED25CB0B4B4C"
+			x: 13.0d
+			y: 5.0d
+			icon: {
+				id: "minecraft:ender_eye"
+				count: 1
+			}
+			dependencies: [
+				"A461F299F1CB41DA"
+			]
+			tasks: [
+				{
+					id: "14C074648650450F"
+					type: "checkmark"
+				}
+			]
+			rewards: [
+				{
+					id: "CBC7FA21EE4EDF9F"
+					type: "xp_levels"
+					xp_levels: 2
+				}
+			]
+		}
+		{
+			id: "231908F748343E9E"
+			x: 15.0d
+			y: 5.0d
+			icon: {
+				id: "minecraft:dragon_head"
+				count: 1
+			}
+			dependencies: [
+				"6226ED25CB0B4B4C"
+			]
+			tasks: [
+				{
+					id: "3C28894945DE24B3"
+					type: "checkmark"
+				}
+			]
+			rewards: [
+				{
+					id: "A552AD0831F2DED3"
+					type: "xp_levels"
+					xp_levels: 2
+				}
+			]
+		}
+		{
+			id: "BE6450139C0A40F4"
+			x: 7.0d
+			y: 8.0d
+			icon: {
+				id: "minecraft:barrier"
+				count: 1
+			}
+			dependencies: [
+				"58359FDAD745E4AE"
+			]
+			tasks: [
+				{
+					id: "54CD2E6A51F124AA"
+					type: "checkmark"
+				}
+			]
+			rewards: [
+				{
+					id: "64FCFCBF32C8D541"
+					type: "xp_levels"
+					xp_levels: 2
+				}
+			]
+		}
+		{
+			id: "5AB1B05F0F8B8570"
+			x: 9.0d
+			y: 8.0d
+			icon: {
+				id: "minecraft:crafting_table"
+				count: 1
+			}
+			dependencies: [
+				"BE6450139C0A40F4"
+			]
+			tasks: [
+				{
+					id: "19014CA61E1E1571"
+					type: "checkmark"
+				}
+			]
+			rewards: [
+				{
+					id: "179648171EEFD550"
+					type: "xp_levels"
+					xp_levels: 2
+				}
+			]
+		}
+		{
+			id: "9D30A98E855FD4DF"
+			x: 11.0d
+			y: 8.0d
+			icon: {
+				id: "minecraft:chest"
+				count: 1
+			}
+			dependencies: [
+				"5AB1B05F0F8B8570"
+			]
+			tasks: [
+				{
+					id: "8D99216B0E07A26E"
+					type: "checkmark"
+				}
+			]
+			rewards: [
+				{
+					id: "34FC78283A023E4D"
+					type: "xp_levels"
+					xp_levels: 2
+				}
+			]
+		}
+		{
+			id: "E761F3A1D3D8DB7E"
+			x: 13.0d
+			y: 8.0d
+			icon: {
+				id: "minecraft:amethyst_shard"
+				count: 1
+			}
+			dependencies: [
+				"9D30A98E855FD4DF"
+			]
+			tasks: [
+				{
+					id: "961303010C19DD51"
+					type: "checkmark"
+				}
+			]
+			rewards: [
+				{
+					id: "4E49F4285C68EBB1"
+					type: "loot"
+					table_id: "1EBBC2B918151958"
+				}
+			]
+		}
+		{
+			id: "873E77C05ED4D437"
+			x: 4.5d
+			y: 13.0d
+			icon: {
+				id: "minecraft:bell"
+				count: 1
+			}
+			size: 1.5d
+			dependencies: [
+				"64C1A6A6E06565BE"
+			]
+			tasks: [
+				{
+					id: "F875354CFB2514EA"
+					type: "checkmark"
+				}
+			]
+			rewards: [
+				{
+					id: "509A8FA8D1436884"
+					type: "xp_levels"
+					xp_levels: 3
+				}
+			]
+		}
+		{
+			id: "056929E2C5EB9FA6"
+			x: 7.0d
+			y: 12.0d
+			icon: {
+				id: "minecraft:map"
+				count: 1
+			}
+			dependencies: [
+				"873E77C05ED4D437"
+			]
+			tasks: [
+				{
+					id: "A58DCE11AC0B5C74"
+					type: "checkmark"
+				}
+			]
+			rewards: [
+				{
+					id: "370272458AF93962"
+					type: "xp_levels"
+					xp_levels: 3
+				}
+			]
+		}
+		{
+			id: "8AEF31B32E2CC63D"
+			x: 7.0d
+			y: 14.0d
+			icon: {
+				id: "minecraft:player_head"
+				count: 1
+			}
+			dependencies: [
+				"873E77C05ED4D437"
+			]
+			tasks: [
+				{
+					id: "FFC3BE07B57FF734"
+					type: "checkmark"
+				}
+			]
+			rewards: [
+				{
+					id: "9376057EE2F46C70"
+					type: "xp_levels"
+					xp_levels: 3
+				}
+			]
+		}
+		{
+			id: "872FE9EFA8115D91"
+			x: 9.0d
+			y: 12.0d
+			icon: {
+				id: "minecraft:filled_map"
+				count: 1
+			}
+			dependencies: [
+				"056929E2C5EB9FA6"
+			]
+			tasks: [
+				{
+					id: "2575D0D6F07FDB7D"
+					type: "checkmark"
+				}
+			]
+			rewards: [
+				{
+					id: "88E91E22866F9E4F"
+					type: "loot"
+					table_id: "1EBBC2B918151958"
+				}
+			]
+		}
+		{
+			id: "7307E07586B71A38"
+			x: 11.0d
+			y: 12.0d
+			icon: {
+				id: "minecraft:white_banner"
+				count: 1
+			}
+			dependencies: [
+				"872FE9EFA8115D91"
+			]
+			tasks: [
+				{
+					id: "3ACDC1B3B14F0F5B"
+					type: "checkmark"
+				}
+			]
+			rewards: [
+				{
+					id: "9EE9A51FE0E1BD5C"
+					type: "xp_levels"
+					xp_levels: 3
+				}
+			]
+		}
+		{
+			id: "FCEA5ADF178B9BB2"
+			x: 9.0d
+			y: 14.0d
+			icon: {
+				id: "minecraft:note_block"
+				count: 1
+			}
+			optional: true
+			dependencies: [
+				"8AEF31B32E2CC63D"
+			]
+			tasks: [
+				{
+					id: "436AF24254850D18"
+					type: "checkmark"
+				}
+			]
+			rewards: [
+				{
+					id: "2BAD179BC96AF631"
+					type: "xp_levels"
+					xp_levels: 3
+				}
+			]
+		}
+		{
+			id: "2A2980B09A6A07F8"
+			x: 11.0d
+			y: 14.0d
 			icon: {
 				id: "minecraft:skeleton_skull"
 				count: 1
 			}
 			dependencies: [
-				"FD58A1A1E024FADD"
+				"FCEA5ADF178B9BB2"
 			]
 			tasks: [
 				{
-					id: "BDD0E1C1FE907808"
+					id: "2DE3504445AD30D5"
 					type: "checkmark"
-					title: "Understood"
 				}
 			]
 			rewards: [
 				{
-					id: "BCE20D116255BA92"
+					id: "5E0FD3D18A6ECD16"
 					type: "item"
 					item: {
 						id: "minecraft:golden_apple"
@@ -277,113 +1007,427 @@
 			]
 		}
 		{
-			id: "0A57B7461C996076"
-			x: 12.0d
-			y: -2.0d
-			title: "Ultimine"
-			subtitle: "Mine a whole vein at once."
-			description: [
-				"Hold the Ultimine key (&e`&r, the key left of 1, by default) while you break a block, and every matching block around it goes with it: whole ore veins, whole trees, a row of stone."
-				"It costs hunger, so bring food."
-			]
+			id: "104BC55FA2CD7C85"
+			x: 13.0d
+			y: 12.0d
 			icon: {
-				id: "minecraft:iron_pickaxe"
+				id: "minecraft:diamond_pickaxe"
 				count: 1
 			}
 			dependencies: [
-				"C7C5EB0C6155681C"
+				"7307E07586B71A38"
 			]
 			tasks: [
 				{
-					id: "2AA3E17AD7DFA553"
+					id: "A5FDA4E09C66629B"
 					type: "checkmark"
-					title: "Tried it"
 				}
 			]
 			rewards: [
 				{
-					id: "A4ABF43F3969B443"
+					id: "57E6C13D473DA629"
 					type: "item"
 					item: {
-						id: "minecraft:iron_pickaxe"
+						id: "minecraft:cooked_beef"
 						count: 1
 					}
-					count: 1
+					count: 8
 				}
 			]
 		}
 		{
-			id: "1339C8691665B28F"
-			x: 12.0d
-			y: 2.0d
-			title: "Talk to People"
-			subtitle: "Proximity voice chat is on."
-			description: [
-				"Players near you can hear you, players far away cannot. Press &eV&r for the voice chat settings, pick your microphone and set push to talk if you prefer."
-				""
-				"The Discord is still where the season is organised. Events, dates and the community goal are announced there first."
-			]
+			id: "B5AA38F96FCEC74D"
+			x: 13.0d
+			y: 14.0d
 			icon: {
-				id: "minecraft:note_block"
+				id: "minecraft:knowledge_book"
+				count: 1
+			}
+			dependencies: [
+				"2A2980B09A6A07F8"
+			]
+			tasks: [
+				{
+					id: "08EE49FFD252F9AC"
+					type: "checkmark"
+				}
+			]
+			rewards: [
+				{
+					id: "57762CA8AD15B3D7"
+					type: "xp_levels"
+					xp_levels: 3
+				}
+			]
+		}
+		{
+			id: "C14B606E75162BF8"
+			x: 15.0d
+			y: 14.0d
+			icon: {
+				id: "create:wrench"
 				count: 1
 			}
 			optional: true
 			dependencies: [
-				"65D9AC8001316466"
+				"B5AA38F96FCEC74D"
 			]
 			tasks: [
 				{
-					id: "502A0D3CFD172CC6"
+					id: "01FB9592DE2B970F"
 					type: "checkmark"
-					title: "Set up"
 				}
 			]
 			rewards: [
 				{
-					id: "93EA02D59BA86C54"
+					id: "CBDAA493DBF92F43"
 					type: "xp_levels"
-					xp_levels: 5
+					xp_levels: 3
 				}
 			]
 		}
 		{
-			id: "4E5622B948A6389B"
+			id: "058DEDBA440C2530"
 			x: 15.0d
-			y: 0.0d
-			title: "Pick a Path"
-			subtitle: "Tech, magic, or both. The server needs both."
-			description: [
-				"You are ready. Three chapters are the backbone of this stage:"
-				""
-				"&6Create&r for rotation, belts and the first machines. The tech half of the goal needs Andesite Alloy."
-				"&dArs Nouveau&r for spells and Source. The magic half of the goal needs Source Gems."
-				"&aBotania&r for flowers and mana. It is the start of a long road that pays off in later stages."
-				""
-				"Pick one to start. You will want all three before long."
-			]
+			y: 12.0d
 			icon: {
-				id: "minecraft:compass"
+				id: "comforts:sleeping_bag_red"
 				count: 1
 			}
-			size: 1.5d
-			shape: "gear"
+			optional: true
 			dependencies: [
-				"0A57B7461C996076"
+				"104BC55FA2CD7C85"
 			]
 			tasks: [
 				{
-					id: "EE1E729153284678"
+					id: "F99EFA980253D4A9"
 					type: "checkmark"
-					title: "On my way"
 				}
 			]
 			rewards: [
 				{
-					id: "D7E29384C822370A"
+					id: "891B4ADABB6C963F"
+					type: "item"
+					item: {
+						id: "minecraft:cooked_beef"
+						count: 1
+					}
+					count: 8
+				}
+			]
+		}
+		{
+			id: "06CB29001843ACA5"
+			x: 21.0d
+			y: 2.5d
+			icon: {
+				id: "minecraft:compass"
+				count: 1
+			}
+			size: 1.75d
+			shape: "hexagon"
+			dependencies: [
+				"623F3B7A023BACD9"
+				"6B18B82463F286E4"
+			]
+			tasks: [
+				{
+					id: "53D41D92231BA4F0"
+					type: "checkmark"
+				}
+			]
+			rewards: [
+				{
+					id: "F7A6710094DADFA1"
+					type: "xp_levels"
+					xp_levels: 3
+				}
+			]
+		}
+		{
+			id: "54FC687CF1937154"
+			x: 24.5d
+			y: -3.5d
+			icon: {
+				id: "create:large_cogwheel"
+				count: 1
+			}
+			dependencies: [
+				"06CB29001843ACA5"
+			]
+			tasks: [
+				{
+					id: "E01B29EF9F53C1D3"
+					type: "checkmark"
+				}
+			]
+			rewards: [
+				{
+					id: "4F91AAA906E22672"
+					type: "xp_levels"
+					xp_levels: 2
+				}
+			]
+		}
+		{
+			id: "FBBC43A1735E2DFD"
+			x: 24.5d
+			y: -1.5d
+			icon: {
+				id: "ars_nouveau:novice_spell_book"
+				count: 1
+			}
+			dependencies: [
+				"06CB29001843ACA5"
+			]
+			tasks: [
+				{
+					id: "FC65ECF1CE59D931"
+					type: "checkmark"
+				}
+			]
+			rewards: [
+				{
+					id: "254D03A04E70DF49"
+					type: "xp_levels"
+					xp_levels: 2
+				}
+			]
+		}
+		{
+			id: "6A3A77EE8D5A8C2D"
+			x: 24.5d
+			y: 0.5d
+			icon: {
+				id: "botania:pure_daisy"
+				count: 1
+			}
+			dependencies: [
+				"06CB29001843ACA5"
+			]
+			tasks: [
+				{
+					id: "93C46EBF786C1AA6"
+					type: "checkmark"
+				}
+			]
+			rewards: [
+				{
+					id: "EA1673D2DEB4D15C"
+					type: "xp_levels"
+					xp_levels: 2
+				}
+			]
+		}
+		{
+			id: "80DF4FDBAAA146AF"
+			x: 24.5d
+			y: 2.5d
+			icon: {
+				id: "sophisticatedbackpacks:backpack"
+				count: 1
+			}
+			dependencies: [
+				"06CB29001843ACA5"
+			]
+			tasks: [
+				{
+					id: "FC0C38DD6F8FB01D"
+					type: "checkmark"
+				}
+			]
+			rewards: [
+				{
+					id: "05F9AD713742D136"
+					type: "xp_levels"
+					xp_levels: 2
+				}
+			]
+		}
+		{
+			id: "37A87E4E89EC365D"
+			x: 24.5d
+			y: 4.5d
+			icon: {
+				id: "silentgear:pickaxe"
+				count: 1
+			}
+			dependencies: [
+				"06CB29001843ACA5"
+			]
+			tasks: [
+				{
+					id: "73F2A6903641B69B"
+					type: "checkmark"
+				}
+			]
+			rewards: [
+				{
+					id: "EFCB680676C33FFE"
+					type: "xp_levels"
+					xp_levels: 2
+				}
+			]
+		}
+		{
+			id: "9531E7CD4425B9E0"
+			x: 24.5d
+			y: 6.5d
+			icon: {
+				id: "farmersdelight:cooking_pot"
+				count: 1
+			}
+			dependencies: [
+				"06CB29001843ACA5"
+			]
+			tasks: [
+				{
+					id: "756B9C7C1A0F4BE8"
+					type: "checkmark"
+				}
+			]
+			rewards: [
+				{
+					id: "C57F1421290A30F0"
+					type: "xp_levels"
+					xp_levels: 2
+				}
+			]
+		}
+		{
+			id: "E1BAD0579630355B"
+			x: 24.5d
+			y: 8.5d
+			icon: {
+				id: "minecraft:filled_map"
+				count: 1
+			}
+			dependencies: [
+				"06CB29001843ACA5"
+			]
+			tasks: [
+				{
+					id: "0170993F867D11C8"
+					type: "checkmark"
+				}
+			]
+			rewards: [
+				{
+					id: "46DFEC4B4EDA04C2"
+					type: "xp_levels"
+					xp_levels: 2
+				}
+			]
+		}
+		{
+			id: "467CBB9392556456"
+			x: 28.5d
+			y: 2.5d
+			icon: {
+				id: "minecraft:recovery_compass"
+				count: 1
+			}
+			size: 2.5d
+			shape: "gear"
+			dependencies: [
+				"54FC687CF1937154"
+				"FBBC43A1735E2DFD"
+				"6A3A77EE8D5A8C2D"
+				"80DF4FDBAAA146AF"
+				"37A87E4E89EC365D"
+				"9531E7CD4425B9E0"
+				"E1BAD0579630355B"
+			]
+			tasks: [
+				{
+					id: "4B9AB73F42584B3A"
+					type: "checkmark"
+				}
+			]
+			rewards: [
+				{
+					id: "092AAABD1911AB55"
 					type: "loot"
 					table_id: "870211AF0E412C54"
 				}
+				{
+					id: "BAFF5216DED38521"
+					type: "xp_levels"
+					xp_levels: 10
+				}
 			]
+		}
+	]
+	images: [
+		{
+			id: "459C30ACBC1D895B"
+			image: "kronwerke:textures/quests/start_here/title.png"
+			x: 0.0d
+			y: -2.2d
+			width: 7.94d
+			height: 1.8d
+			rotation: 0.0d
+			order: 1
+		}
+		{
+			id: "26097153810CD40E"
+			image: "kronwerke:textures/quests/start_here/season.png"
+			x: 0.0d
+			y: 5.2d
+			width: 2.02d
+			height: 0.7d
+			rotation: 0.0d
+			order: 1
+		}
+		{
+			id: "DB1EC37ACFD0CA80"
+			image: "kronwerke:textures/quests/start_here/day.png"
+			x: 11.5d
+			y: -9.8d
+			width: 4.44d
+			height: 0.9d
+			rotation: 0.0d
+			order: 1
+		}
+		{
+			id: "75807BEFDD7A112F"
+			image: "kronwerke:textures/quests/start_here/obelisk.png"
+			x: 10.0d
+			y: -3.2d
+			width: 3.84d
+			height: 0.9d
+			rotation: 0.0d
+			order: 1
+		}
+		{
+			id: "B361CCE33EFE28BE"
+			image: "kronwerke:textures/quests/start_here/stages.png"
+			x: 10.0d
+			y: 3.6d
+			width: 6.54d
+			height: 0.9d
+			rotation: 0.0d
+			order: 1
+		}
+		{
+			id: "085D1D04622AA36C"
+			image: "kronwerke:textures/quests/start_here/server.png"
+			x: 10.0d
+			y: 10.4d
+			width: 5.13d
+			height: 0.9d
+			rotation: 0.0d
+			order: 1
+		}
+		{
+			id: "EEE0E9786C9EE057"
+			image: "kronwerke:textures/quests/start_here/paths.png"
+			x: 24.5d
+			y: -5.4d
+			width: 3.71d
+			height: 0.9d
+			rotation: 0.0d
+			order: 1
 		}
 	]
 }

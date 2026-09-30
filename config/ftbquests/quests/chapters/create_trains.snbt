@@ -1,7 +1,6 @@
 {
 	id: "5F4AAB36EBD18AA6"
 	filename: "create_trains"
-	title: "Create: Trains"
 	icon: {
 		id: "create:controls"
 		count: 1
@@ -10,21 +9,11 @@
 	order_index: 15
 	default_quest_shape: "gear"
 	default_hide_dependency_lines: false
-	subtitle: [
-		"Stage 2. Track, stations and trains that drive themselves."
-	]
 	quests: [
 		{
 			id: "837F2F27DF3947E6"
 			x: 0.0d
-			y: 0.0d
-			title: "Trains"
-			subtitle: "The fastest way across a big map is a railway."
-			description: [
-				"Create trains are real contraptions that drive on their own track, carry blocks, chests and tanks, and follow a timetable without anyone on board."
-				""
-				"Place track with right click on the start and right click on the end. It curves and climbs by itself."
-			]
+			y: 3.0d
 			icon: {
 				id: "create:track"
 				count: 1
@@ -39,37 +28,190 @@
 						id: "create:track"
 						count: 1
 					}
-					count: 32
+					count: 16
 				}
 			]
 			rewards: [
 				{
 					id: "F7F863C9E3FEB448"
+					type: "loot"
+					table_id: "F2BA64790EBA3DF5"
+				}
+				{
+					id: "3A08342DA9E778E9"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+		}
+		{
+			id: "5A354EC0C917FB13"
+			x: 2.5d
+			y: 2.0d
+			icon: {
+				id: "create:track"
+				count: 1
+			}
+			shape: "diamond"
+			dependencies: [
+				"837F2F27DF3947E6"
+			]
+			tasks: [
+				{
+					id: "86498FD0322CB9F0"
+					type: "checkmark"
+				}
+			]
+			rewards: [
+				{
+					id: "E26D9E6FF3C431F0"
+					type: "xp_levels"
+					xp_levels: 3
+				}
+			]
+		}
+		{
+			id: "76E57009060AEC86"
+			x: 2.5d
+			y: 4.0d
+			dependencies: [
+				"837F2F27DF3947E6"
+			]
+			tasks: [
+				{
+					id: "7D0BA7C012E94C5E"
 					type: "item"
 					item: {
 						id: "create:track"
 						count: 1
 					}
-					count: 32
+					count: 256
+				}
+			]
+			rewards: [
+				{
+					id: "1A0144F18A1054D1"
+					type: "item"
+					item: {
+						id: "minecraft:iron_ingot"
+						count: 1
+					}
+					count: 16
 				}
 				{
-					id: "3A08342DA9E778E9"
-					type: "loot"
-					table_id: "F2BA64790EBA3DF5"
+					id: "1B5EF31162F26187"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+		}
+		{
+			id: "D08941A82D1AB8D8"
+			x: 5.0d
+			y: 2.0d
+			icon: {
+				id: "minecraft:obsidian"
+				count: 1
+			}
+			optional: true
+			dependencies: [
+				"5A354EC0C917FB13"
+			]
+			tasks: [
+				{
+					id: "F0E74B646F6E85B7"
+					type: "checkmark"
+				}
+			]
+			rewards: [
+				{
+					id: "4EED93674FF08EEC"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+		}
+		{
+			id: "062A01626BD35D4C"
+			x: 0.0d
+			y: 9.5d
+			dependencies: [
+				"837F2F27DF3947E6"
+			]
+			tasks: [
+				{
+					id: "F634310EAB700195"
+					type: "item"
+					item: {
+						id: "create:powdered_obsidian"
+						count: 1
+					}
+					count: 8
+				}
+			]
+			rewards: [
+				{
+					id: "63F6C03E89B53D02"
+					type: "item"
+					item: {
+						id: "minecraft:obsidian"
+						count: 1
+					}
+					count: 8
+				}
+				{
+					id: "05C11AE2087289A0"
+					type: "xp_levels"
+					xp_levels: 3
+				}
+			]
+		}
+		{
+			id: "BFC39F15F47658CE"
+			x: 2.5d
+			y: 9.5d
+			dependencies: [
+				"062A01626BD35D4C"
+			]
+			tasks: [
+				{
+					id: "839E2B5080427E0C"
+					type: "item"
+					item: {
+						id: "create:sturdy_sheet"
+						count: 1
+					}
+					count: 8
+				}
+			]
+			rewards: [
+				{
+					id: "EB4460AFA7A02610"
+					type: "item"
+					item: {
+						id: "minecraft:lava_bucket"
+						count: 1
+					}
+					count: 1
+				}
+				{
+					id: "7E461D0B13778CA0"
+					type: "xp_levels"
+					xp_levels: 3
 				}
 			]
 		}
 		{
 			id: "ED444AAC25024D92"
-			x: 3.0d
-			y: -2.0d
-			title: "Railway Casing"
-			subtitle: "Bogeys are made of this."
-			description: [
-				"Apply a &6Sturdy Sheet&r to a brass casing. Right click the track with railway casing to place a bogey, the wheels a train stands on."
-			]
+			x: 5.0d
+			y: 9.5d
+			icon: {
+				id: "create:railway_casing"
+				count: 1
+			}
+			size: 1.5d
 			dependencies: [
-				"837F2F27DF3947E6"
+				"BFC39F15F47658CE"
 			]
 			tasks: [
 				{
@@ -79,7 +221,7 @@
 						id: "create:railway_casing"
 						count: 1
 					}
-					count: 4
+					count: 8
 				}
 			]
 			rewards: [
@@ -92,19 +234,19 @@
 					}
 					count: 4
 				}
+				{
+					id: "6C278235D723F51D"
+					type: "xp_levels"
+					xp_levels: 3
+				}
 			]
 		}
 		{
 			id: "B538FC75A11EA5BA"
-			x: 3.0d
-			y: 2.0d
-			title: "Train Station"
-			subtitle: "Where trains are built and where they stop."
-			description: [
-				"Place the &6Train Station&r next to the track. Everything a train needs is assembled in front of it, and its screen names the stop."
-			]
+			x: 7.5d
+			y: 8.5d
 			dependencies: [
-				"837F2F27DF3947E6"
+				"ED444AAC25024D92"
 			]
 			tasks: [
 				{
@@ -127,25 +269,59 @@
 					}
 					count: 2
 				}
+				{
+					id: "540127A0F87F6E2D"
+					type: "xp_levels"
+					xp_levels: 3
+				}
+			]
+		}
+		{
+			id: "A140EEBB772BD4AC"
+			x: 7.5d
+			y: 10.5d
+			icon: {
+				id: "create:railway_casing"
+				count: 1
+			}
+			dependencies: [
+				"B538FC75A11EA5BA"
+			]
+			tasks: [
+				{
+					id: "2D9B08D58724B30B"
+					type: "checkmark"
+				}
+			]
+			rewards: [
+				{
+					id: "1CADCEBBA27E6F66"
+					type: "item"
+					item: {
+						id: "create:super_glue"
+						count: 1
+					}
+					count: 2
+				}
+				{
+					id: "32DD5B12120E0C73"
+					type: "xp_levels"
+					xp_levels: 3
+				}
 			]
 		}
 		{
 			id: "994F060D274014B2"
-			x: 6.0d
-			y: 0.0d
-			title: "Train Controls"
-			subtitle: "The driver's seat."
-			description: [
-				"Put bogeys on the track at the station, build your train on top of them, glue it together with &6Super Glue&r, and place the &6Train Controls&r facing the way it should drive. Then open the station and assemble."
-			]
+			x: 10.0d
+			y: 9.5d
 			icon: {
 				id: "create:controls"
 				count: 1
 			}
 			size: 1.5d
 			dependencies: [
-				"ED444AAC25024D92"
 				"B538FC75A11EA5BA"
+				"A140EEBB772BD4AC"
 			]
 			tasks: [
 				{
@@ -161,29 +337,25 @@
 			rewards: [
 				{
 					id: "03F9369889E052F7"
-					type: "item"
-					item: {
-						id: "create:super_glue"
-						count: 1
-					}
-					count: 1
+					type: "loot"
+					table_id: "F2BA64790EBA3DF5"
 				}
 				{
 					id: "1EC9270FFF275C68"
-					type: "loot"
-					table_id: "F2BA64790EBA3DF5"
+					type: "xp_levels"
+					xp_levels: 3
 				}
 			]
 		}
 		{
 			id: "9B554A689296B483"
-			x: 9.0d
-			y: 0.0d
-			title: "Your First Train"
-			subtitle: "All aboard."
-			description: [
-				"Assemble it, sit at the controls and drive it to another station. Disassemble it there if you like, it keeps its shape."
-			]
+			x: 12.5d
+			y: 9.5d
+			icon: {
+				id: "create:controls"
+				count: 1
+			}
+			size: 2.0d
 			shape: "diamond"
 			dependencies: [
 				"994F060D274014B2"
@@ -192,7 +364,6 @@
 				{
 					id: "CBED48A0879A9455"
 					type: "checkmark"
-					title: "Assemble a train and drive it"
 				}
 			]
 			rewards: [
@@ -213,14 +384,41 @@
 			]
 		}
 		{
-			id: "6701AFCD425DC02F"
-			x: 12.0d
-			y: -2.0d
-			title: "Train Schedule"
-			subtitle: "It drives while you are elsewhere."
-			description: [
-				"Write stops and conditions into a &6Train Schedule&r: go to this station, wait until the cargo is full, go to that one. Hand it to a conductor sitting at the controls, a mob or even a blaze in a blaze burner."
+			id: "1FE76D89B8BB41ED"
+			x: 12.5d
+			y: 12.0d
+			optional: true
+			dependencies: [
+				"9B554A689296B483"
 			]
+			tasks: [
+				{
+					id: "41CB8A38418A77D3"
+					type: "item"
+					item: {
+						id: "create:train_door"
+						count: 1
+					}
+					count: 2
+				}
+			]
+			rewards: [
+				{
+					id: "9AB63FDD68495AE8"
+					type: "xp_levels"
+					xp_levels: 3
+				}
+			]
+		}
+		{
+			id: "6701AFCD425DC02F"
+			x: 17.0d
+			y: 2.5d
+			icon: {
+				id: "create:schedule"
+				count: 1
+			}
+			size: 1.5d
 			dependencies: [
 				"9B554A689296B483"
 			]
@@ -238,46 +436,137 @@
 			rewards: [
 				{
 					id: "16063AFD1FE453BF"
-					type: "item"
-					item: {
-						id: "minecraft:lead"
-						count: 1
-					}
-					count: 2
+					type: "loot"
+					table_id: "BA8E33E78A3B3A0C"
 				}
 				{
 					id: "985673A950C7A338"
-					type: "loot"
-					table_id: "BA8E33E78A3B3A0C"
+					type: "xp_levels"
+					xp_levels: 3
 				}
 			]
 		}
 		{
-			id: "9F22A2895F323AF2"
-			x: 12.0d
-			y: 2.0d
-			title: "Signals"
-			subtitle: "More than one train, no crashes."
-			description: [
-				"Signals split the track into sections. A train waits at a red signal until the section ahead is free. You need them as soon as two trains share a line."
+			id: "4F7DAA47C968585F"
+			x: 19.5d
+			y: 2.5d
+			icon: {
+				id: "create:blaze_burner"
+				count: 1
+			}
+			dependencies: [
+				"6701AFCD425DC02F"
 			]
+			tasks: [
+				{
+					id: "D8E0AF9B16AD94B1"
+					type: "checkmark"
+				}
+			]
+			rewards: [
+				{
+					id: "24ED4691C569CB20"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+		}
+		{
+			id: "F90477188DE42ABC"
+			x: 22.0d
+			y: 2.5d
+			icon: {
+				id: "create:track_station"
+				count: 1
+			}
+			size: 1.5d
+			dependencies: [
+				"4F7DAA47C968585F"
+			]
+			tasks: [
+				{
+					id: "5F7245641F61F951"
+					type: "checkmark"
+				}
+			]
+			rewards: [
+				{
+					id: "A892190A0CF3F449"
+					type: "item"
+					item: {
+						id: "create:track"
+						count: 1
+					}
+					count: 64
+				}
+				{
+					id: "CE2B6BF4BAB847DA"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+		}
+		{
+			id: "16D99DD63F3E5821"
+			x: 24.5d
+			y: 2.5d
+			optional: true
+			dependencies: [
+				"F90477188DE42ABC"
+			]
+			tasks: [
+				{
+					id: "75889A819C5A79EC"
+					type: "item"
+					item: {
+						id: "create:display_link"
+						count: 1
+					}
+					count: 1
+				}
+				{
+					id: "32E753CDE9B9D1BD"
+					type: "item"
+					item: {
+						id: "create:display_board"
+						count: 1
+					}
+					count: 6
+				}
+			]
+			rewards: [
+				{
+					id: "B95E9C621C4A2A41"
+					type: "xp_levels"
+					xp_levels: 3
+				}
+			]
+		}
+		{
+			id: "7D527FD4BD11E420"
+			x: 17.0d
+			y: 8.0d
+			icon: {
+				id: "create:track_signal"
+				count: 1
+			}
 			dependencies: [
 				"9B554A689296B483"
 			]
 			tasks: [
 				{
-					id: "62274814480AFF12"
+					id: "55E447080E56F761"
 					type: "item"
 					item: {
 						id: "create:track_signal"
 						count: 1
 					}
-					count: 2
+					count: 4
 				}
 			]
 			rewards: [
 				{
-					id: "4697E86C4ADDCDE4"
+					id: "749F994A67FBB8FE"
 					type: "item"
 					item: {
 						id: "create:electron_tube"
@@ -285,20 +574,77 @@
 					}
 					count: 4
 				}
+				{
+					id: "AB865534A22E5AC0"
+					type: "xp_levels"
+					xp_levels: 3
+				}
+			]
+		}
+		{
+			id: "CD1DCCF8FBC15F5C"
+			x: 19.5d
+			y: 8.0d
+			icon: {
+				id: "create:track_signal"
+				count: 1
+			}
+			shape: "diamond"
+			dependencies: [
+				"7D527FD4BD11E420"
+			]
+			tasks: [
+				{
+					id: "DA49DDC6D1764C37"
+					type: "checkmark"
+				}
+			]
+			rewards: [
+				{
+					id: "5127E871BBC6EE63"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+		}
+		{
+			id: "CE1640D4F0A6D771"
+			x: 22.0d
+			y: 8.0d
+			optional: true
+			dependencies: [
+				"CD1DCCF8FBC15F5C"
+			]
+			tasks: [
+				{
+					id: "9B839807B1B4749B"
+					type: "item"
+					item: {
+						id: "create:track_observer"
+						count: 1
+					}
+					count: 2
+				}
+			]
+			rewards: [
+				{
+					id: "BB08B72D682C18FF"
+					type: "xp_levels"
+					xp_levels: 3
+				}
 			]
 		}
 		{
 			id: "3EEACBE873E2B758"
-			x: 15.0d
-			y: -2.0d
-			title: "Cargo"
-			subtitle: "Load and unload at every stop."
-			description: [
-				"A &6Portable Storage Interface&r on the train and one at the station swap items whenever the train stops there. That is how a mine in one corner of the map feeds a factory in the other."
-			]
-			optional: true
+			x: 17.0d
+			y: 13.5d
+			icon: {
+				id: "create:portable_storage_interface"
+				count: 1
+			}
+			size: 1.5d
 			dependencies: [
-				"6701AFCD425DC02F"
+				"9B554A689296B483"
 			]
 			tasks: [
 				{
@@ -308,52 +654,124 @@
 						id: "create:portable_storage_interface"
 						count: 1
 					}
+					count: 4
+				}
+				{
+					id: "FDABE7FA55D3C18D"
+					type: "item"
+					item: {
+						id: "create:item_vault"
+						count: 1
+					}
 					count: 2
 				}
 			]
 			rewards: [
 				{
 					id: "A7DA7CEFB3604A87"
-					type: "item"
-					item: {
-						id: "create:andesite_casing"
-						count: 1
-					}
-					count: 8
+					type: "loot"
+					table_id: "BA8E33E78A3B3A0C"
+				}
+				{
+					id: "E9E64C23930D42B2"
+					type: "xp_levels"
+					xp_levels: 3
 				}
 			]
 		}
 		{
-			id: "701D3F3ED7D11748"
-			x: 15.0d
-			y: 0.0d
-			title: "A Line That Runs Itself"
-			subtitle: "Two stations, one schedule, no driver."
-			description: [
-				"A train on a schedule between two bases, with signals where lines meet. The obelisk is at spawn: a line there makes feeding it easy."
+			id: "11F5E8D8D5381565"
+			x: 17.0d
+			y: 15.75d
+			optional: true
+			dependencies: [
+				"3EEACBE873E2B758"
 			]
+			tasks: [
+				{
+					id: "95330D415E2FD823"
+					type: "item"
+					item: {
+						id: "create:portable_fluid_interface"
+						count: 1
+					}
+					count: 2
+				}
+				{
+					id: "CC20AF778898AD48"
+					type: "item"
+					item: {
+						id: "create:fluid_tank"
+						count: 1
+					}
+					count: 4
+				}
+			]
+			rewards: [
+				{
+					id: "7236C6AF604D600F"
+					type: "xp_levels"
+					xp_levels: 3
+				}
+			]
+		}
+		{
+			id: "BD277AE3F3547F8E"
+			x: 19.5d
+			y: 13.5d
+			icon: {
+				id: "create:item_vault"
+				count: 1
+			}
+			dependencies: [
+				"3EEACBE873E2B758"
+				"F90477188DE42ABC"
+			]
+			tasks: [
+				{
+					id: "E45639AFDEBB153A"
+					type: "checkmark"
+				}
+			]
+			rewards: [
+				{
+					id: "BFC4299F860EEEE6"
+					type: "loot"
+					table_id: "BA8E33E78A3B3A0C"
+				}
+				{
+					id: "87F93BD1DB2D849D"
+					type: "xp_levels"
+					xp_levels: 10
+				}
+			]
+		}
+		{
+			id: "B6EF2EFA989FDA9F"
+			x: 22.5d
+			y: 20.0d
 			icon: {
 				id: "create:track_station"
 				count: 1
 			}
-			size: 1.75d
+			size: 2.5d
 			shape: "gear"
 			dependencies: [
-				"6701AFCD425DC02F"
-				"9F22A2895F323AF2"
+				"BD277AE3F3547F8E"
+				"CD1DCCF8FBC15F5C"
 			]
 			tasks: [
 				{
-					id: "F6BDD096C588ECD4"
+					id: "0303D42E8D4DE086"
 					type: "item"
 					item: {
 						id: "create:track"
 						count: 1
 					}
-					count: 256
+					count: 512
 				}
 				{
-					id: "39C138E9A17088C7"
+					id: "E9DDBE1D59336473"
 					type: "item"
 					item: {
 						id: "create:track_station"
@@ -364,16 +782,98 @@
 			]
 			rewards: [
 				{
-					id: "3676341135EE1C6E"
+					id: "CF34AE694A45F53A"
 					type: "loot"
 					table_id: "C79EAEAE0F26AA7F"
 				}
 				{
-					id: "D045723BBB7F4FA9"
+					id: "C5D0841722DCB455"
 					type: "xp_levels"
 					xp_levels: 15
 				}
 			]
+		}
+	]
+	images: [
+		{
+			id: "3CEE4653FDACC0C1"
+			image: "kronwerke:textures/quests/create_trains/title.png"
+			x: 12.5d
+			y: -3.0d
+			width: 6.66d
+			height: 1.6d
+			rotation: 0.0d
+			order: 1
+		}
+		{
+			id: "615F93200771B432"
+			image: "kronwerke:textures/quests/create_trains/stage.png"
+			x: 12.5d
+			y: -1.6d
+			width: 3.71d
+			height: 0.55d
+			rotation: 0.0d
+			order: 1
+		}
+		{
+			id: "411BAC91D2CC9715"
+			image: "kronwerke:textures/quests/create_trains/track.png"
+			x: 0.45d
+			y: 0.1d
+			width: 2.11d
+			height: 0.9d
+			rotation: 0.0d
+			order: 1
+		}
+		{
+			id: "A478211EBA775F7A"
+			image: "kronwerke:textures/quests/create_trains/trains.png"
+			x: 0.12d
+			y: 7.0d
+			width: 1.45d
+			height: 0.9d
+			rotation: 0.0d
+			order: 1
+		}
+		{
+			id: "0E02BC9059735A5D"
+			image: "kronwerke:textures/quests/create_trains/schedule.png"
+			x: 18.02d
+			y: 0.1d
+			width: 3.24d
+			height: 0.9d
+			rotation: 0.0d
+			order: 1
+		}
+		{
+			id: "B35B7036B0526049"
+			image: "kronwerke:textures/quests/create_trains/signals.png"
+			x: 17.7d
+			y: 5.8d
+			width: 2.59d
+			height: 0.9d
+			rotation: 0.0d
+			order: 1
+		}
+		{
+			id: "6E2B09A6247CF037"
+			image: "kronwerke:textures/quests/create_trains/cargo.png"
+			x: 17.58d
+			y: 11.3d
+			width: 2.36d
+			height: 0.9d
+			rotation: 0.0d
+			order: 1
+		}
+		{
+			id: "2A5E1E3F94811A7D"
+			image: "kronwerke:textures/quests/create_trains/goal.png"
+			x: 22.48d
+			y: 17.6d
+			width: 2.67d
+			height: 0.9d
+			rotation: 0.0d
+			order: 1
 		}
 	]
 }

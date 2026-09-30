@@ -1,7 +1,6 @@
 {
 	id: "04A8EEB70DFF77BC"
 	filename: "occultism"
-	title: "Occultism"
 	icon: {
 		id: "occultism:dictionary_of_spirits"
 		count: 1
@@ -10,21 +9,11 @@
 	order_index: 13
 	default_quest_shape: "circle"
 	default_hide_dependency_lines: false
-	subtitle: [
-		"Stage 2. Spiritfire, chalk and the first spirits."
-	]
 	quests: [
 		{
 			id: "66CD45A630DA66CA"
 			x: 0.0d
 			y: 0.0d
-			title: "Occultism"
-			subtitle: "Spirits, bound into service."
-			description: [
-				"Occultism summons spirits from the Other Place and puts them to work. The &6Dictionary of Spirits&r is the manual and walks you through everything here."
-				""
-				"Start with &6Demon's Dream Seeds&r from grass. Throw a &6Demon's Dream Fruit&r on the ground and light it with flint and steel: that is &6Spiritfire&r. Throw impure white chalk into it and it comes out pure."
-			]
 			icon: {
 				id: "occultism:dictionary_of_spirits"
 				count: 1
@@ -36,7 +25,7 @@
 					id: "C3DABD487C1CC867"
 					type: "item"
 					item: {
-						id: "occultism:chalk_white"
+						id: "occultism:dictionary_of_spirits"
 						count: 1
 					}
 					count: 1
@@ -54,22 +43,412 @@
 				}
 				{
 					id: "614BC1BC48768C0E"
+					type: "xp_levels"
+					xp_levels: 3
+				}
+			]
+		}
+		{
+			id: "484B70BE33FE2864"
+			x: 2.5d
+			y: -1.0d
+			icon: {
+				id: "occultism:datura"
+				count: 1
+			}
+			dependencies: [
+				"66CD45A630DA66CA"
+			]
+			tasks: [
+				{
+					id: "21CFD1F034B11B52"
+					type: "item"
+					item: {
+						id: "occultism:datura"
+						count: 1
+					}
+					count: 8
+				}
+			]
+			rewards: [
+				{
+					id: "06B8E0CE895882BB"
+					type: "item"
+					item: {
+						id: "minecraft:bone_meal"
+						count: 1
+					}
+					count: 16
+				}
+			]
+		}
+		{
+			id: "15FFC372B76B6F5A"
+			x: 2.5d
+			y: 1.2d
+			icon: {
+				id: "occultism:demons_dream_essence"
+				count: 1
+			}
+			optional: true
+			dependencies: [
+				"484B70BE33FE2864"
+			]
+			tasks: [
+				{
+					id: "A86D3BECE2D0D8C8"
+					type: "item"
+					item: {
+						id: "occultism:demons_dream_essence"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "102717CC8B04B7D8"
+					type: "item"
+					item: {
+						id: "occultism:datura_seeds"
+						count: 1
+					}
+					count: 8
+				}
+			]
+		}
+		{
+			id: "AE737EF964309F75"
+			x: 4.5d
+			y: -1.0d
+			icon: {
+				id: "occultism:otherstone"
+				count: 1
+			}
+			dependencies: [
+				"484B70BE33FE2864"
+			]
+			tasks: [
+				{
+					id: "88BA9AF82D6E09A1"
+					type: "item"
+					item: {
+						id: "occultism:otherstone"
+						count: 1
+					}
+					count: 16
+				}
+			]
+			rewards: [
+				{
+					id: "4AD5EFF6B23651F0"
+					type: "item"
+					item: {
+						id: "minecraft:flint_and_steel"
+						count: 1
+					}
+					count: 1
+				}
+				{
+					id: "2A704C9508451C51"
+					type: "xp_levels"
+					xp_levels: 3
+				}
+			]
+		}
+		{
+			id: "8DA484CE6B671BAE"
+			x: 4.5d
+			y: 1.2d
+			icon: {
+				id: "occultism:spirit_campfire"
+				count: 1
+			}
+			optional: true
+			dependencies: [
+				"AE737EF964309F75"
+			]
+			tasks: [
+				{
+					id: "9E2623CA048536B3"
+					type: "item"
+					item: {
+						id: "occultism:spirit_campfire"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "BDB35172B985B908"
+					type: "item"
+					item: {
+						id: "occultism:datura"
+						count: 1
+					}
+					count: 8
+				}
+			]
+		}
+		{
+			id: "92E15096CEF4B827"
+			x: 6.5d
+			y: -1.0d
+			icon: {
+				id: "occultism:otherworld_log"
+				count: 1
+			}
+			dependencies: [
+				"AE737EF964309F75"
+			]
+			tasks: [
+				{
+					id: "4A5FBD0E71AD07D6"
+					type: "item"
+					item: {
+						id: "occultism:otherworld_log"
+						count: 1
+					}
+					count: 16
+				}
+			]
+			rewards: [
+				{
+					id: "24FE9C2463471868"
+					type: "item"
+					item: {
+						id: "minecraft:oak_sapling"
+						count: 1
+					}
+					count: 8
+				}
+				{
+					id: "AC98541DE541A12C"
+					type: "xp_levels"
+					xp_levels: 3
+				}
+			]
+		}
+		{
+			id: "E16F76D0D44979A5"
+			x: 8.5d
+			y: -1.0d
+			icon: {
+				id: "occultism:otherworld_ashes"
+				count: 1
+			}
+			dependencies: [
+				"92E15096CEF4B827"
+			]
+			tasks: [
+				{
+					id: "5C39934C6A422BCA"
+					type: "item"
+					item: {
+						id: "occultism:otherworld_ashes"
+						count: 1
+					}
+					count: 8
+				}
+			]
+			rewards: [
+				{
+					id: "39EBACB0567BDF1A"
+					type: "xp_levels"
+					xp_levels: 3
+				}
+			]
+		}
+		{
+			id: "F55C6206ED9AD4A2"
+			x: 6.5d
+			y: 1.2d
+			icon: {
+				id: "occultism:burnt_otherstone"
+				count: 1
+			}
+			dependencies: [
+				"AE737EF964309F75"
+			]
+			tasks: [
+				{
+					id: "D89571B42AAA26E3"
+					type: "item"
+					item: {
+						id: "occultism:burnt_otherstone"
+						count: 1
+					}
+					count: 8
+				}
+			]
+			rewards: [
+				{
+					id: "00FBED7DB846FAB9"
+					type: "item"
+					item: {
+						id: "minecraft:coal"
+						count: 1
+					}
+					count: 16
+				}
+			]
+		}
+		{
+			id: "240C3FC1D50049D9"
+			x: 10.5d
+			y: 0.0d
+			icon: {
+				id: "occultism:chalk_white_impure"
+				count: 1
+			}
+			dependencies: [
+				"E16F76D0D44979A5"
+				"F55C6206ED9AD4A2"
+			]
+			tasks: [
+				{
+					id: "039E5F761FBF26C5"
+					type: "item"
+					item: {
+						id: "occultism:chalk_white_impure"
+						count: 1
+					}
+					count: 2
+				}
+			]
+			rewards: [
+				{
+					id: "5D8AB4AC6A196E8F"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+		}
+		{
+			id: "982C07A0B20D63BA"
+			x: 12.5d
+			y: 0.0d
+			icon: {
+				id: "occultism:chalk_white"
+				count: 1
+			}
+			size: 1.75d
+			shape: "diamond"
+			dependencies: [
+				"240C3FC1D50049D9"
+			]
+			tasks: [
+				{
+					id: "77D897C378056DFC"
+					type: "item"
+					item: {
+						id: "occultism:chalk_white"
+						count: 1
+					}
+					count: 2
+				}
+			]
+			rewards: [
+				{
+					id: "A27923C087A7684F"
 					type: "loot"
 					table_id: "F2BA64790EBA3DF5"
+				}
+				{
+					id: "39E75B190A1CC5F0"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+		}
+		{
+			id: "8F69ED37AAC71411"
+			x: 0.5d
+			y: 5.5d
+			icon: {
+				id: "occultism:butcher_knife"
+				count: 1
+			}
+			dependencies: [
+				"982C07A0B20D63BA"
+			]
+			tasks: [
+				{
+					id: "34E359E57EEF4B54"
+					type: "item"
+					item: {
+						id: "occultism:butcher_knife"
+						count: 1
+					}
+					count: 1
+				}
+				{
+					id: "C2F7D3933CFB774B"
+					type: "item"
+					item: {
+						id: "occultism:tallow"
+						count: 1
+					}
+					count: 8
+				}
+			]
+			rewards: [
+				{
+					id: "F61802694085E122"
+					type: "item"
+					item: {
+						id: "minecraft:string"
+						count: 1
+					}
+					count: 16
+				}
+			]
+		}
+		{
+			id: "FBD2F0D498C91812"
+			x: 2.5d
+			y: 5.5d
+			icon: {
+				id: "occultism:large_candle"
+				count: 1
+			}
+			dependencies: [
+				"8F69ED37AAC71411"
+			]
+			tasks: [
+				{
+					id: "FAC47F5977692111"
+					type: "item"
+					item: {
+						id: "occultism:large_candle"
+						count: 1
+					}
+					count: 4
+				}
+			]
+			rewards: [
+				{
+					id: "0934E5022045033B"
+					type: "item"
+					item: {
+						id: "occultism:tallow"
+						count: 1
+					}
+					count: 8
 				}
 			]
 		}
 		{
 			id: "B3236C05A667D990"
-			x: 3.0d
-			y: -2.0d
-			title: "Sacrificial Bowls"
-			subtitle: "The ingredients of a ritual go here."
-			description: [
-				"A ritual needs at least four &6Sacrificial Bowls&r within eight blocks of its centre. Where exactly does not matter. Put the ingredients in them."
-			]
+			x: 0.5d
+			y: 7.5d
+			icon: {
+				id: "occultism:sacrificial_bowl"
+				count: 1
+			}
 			dependencies: [
-				"66CD45A630DA66CA"
+				"982C07A0B20D63BA"
 			]
 			tasks: [
 				{
@@ -96,16 +475,14 @@
 		}
 		{
 			id: "7A8625F561A62E98"
-			x: 3.0d
-			y: 2.0d
-			title: "Golden Ritual Bowl"
-			subtitle: "The centre of every pentacle."
-			description: [
-				"Draw the pentacle around the &6Golden Ritual Bowl&r with chalk. Only the colour and position of the marks count, not the glyph shown."
-				"Right click the golden bowl with the activation item to start. A hopper or pipe into the bowl works too."
-			]
+			x: 2.5d
+			y: 7.5d
+			icon: {
+				id: "occultism:golden_sacrificial_bowl"
+				count: 1
+			}
 			dependencies: [
-				"66CD45A630DA66CA"
+				"B3236C05A667D990"
 			]
 			tasks: [
 				{
@@ -131,29 +508,40 @@
 			]
 		}
 		{
-			id: "ED06B8121D9EEDA9"
-			x: 6.0d
-			y: 0.0d
-			title: "Book of Binding: Foliot"
-			subtitle: "A name, written down, is a leash."
-			description: [
-				"Craft the book of binding, then craft it again with the Dictionary of Spirits to write the Foliot's name in. The Dictionary is not used up. The bound book starts the ritual."
-			]
+			id: "FA5C561BBC69017D"
+			x: 4.5d
+			y: 5.5d
 			icon: {
-				id: "occultism:book_of_binding_bound_foliot"
+				id: "occultism:taboo_book"
 				count: 1
 			}
-			size: 1.5d
 			dependencies: [
-				"B3236C05A667D990"
-				"7A8625F561A62E98"
+				"982C07A0B20D63BA"
 			]
 			tasks: [
 				{
-					id: "07C968E0C3D64468"
+					id: "D27A577CA5F1E887"
 					type: "item"
 					item: {
-						id: "occultism:book_of_binding_bound_foliot"
+						id: "occultism:awakened_feather"
+						count: 1
+					}
+					count: 1
+				}
+				{
+					id: "7D04BC82E921370C"
+					type: "item"
+					item: {
+						id: "occultism:purified_ink"
+						count: 1
+					}
+					count: 1
+				}
+				{
+					id: "7E08C6458FEBFB95"
+					type: "item"
+					item: {
+						id: "occultism:taboo_book"
 						count: 1
 					}
 					count: 1
@@ -161,66 +549,74 @@
 			]
 			rewards: [
 				{
-					id: "47605A8AABB14B80"
-					type: "loot"
-					table_id: "F2BA64790EBA3DF5"
+					id: "059332D6CA789BA6"
+					type: "item"
+					item: {
+						id: "minecraft:book"
+						count: 1
+					}
+					count: 4
+				}
+				{
+					id: "2F9AFBCB17FC485A"
+					type: "item"
+					item: {
+						id: "minecraft:feather"
+						count: 1
+					}
+					count: 8
 				}
 			]
 		}
 		{
-			id: "BA73F9140FD67E92"
-			x: 9.0d
-			y: 0.0d
-			title: "The Foliot Crusher"
-			subtitle: "Your first ritual: a spirit that grinds ore."
-			description: [
-				"The Dictionary's first ritual summons a Foliot that crushes ore into dust, more dust than the ore would give as ingots. Draw Aviar's Circle in white chalk, fill the bowls, right click the golden bowl with the bound book."
-				"Drop ore near the crusher and collect the dust."
-			]
+			id: "AA455F3B85F81A50"
+			x: 6.5d
+			y: 5.5d
 			icon: {
-				id: "occultism:book_of_binding_foliot"
+				id: "occultism:book_of_binding_bound_foliot"
 				count: 1
 			}
-			size: 1.5d
-			shape: "diamond"
 			dependencies: [
-				"ED06B8121D9EEDA9"
+				"FA5C561BBC69017D"
 			]
 			tasks: [
 				{
-					id: "6434C66DC5588891"
-					type: "checkmark"
-					title: "Summon a Foliot Crusher"
+					id: "148315BE5171343A"
+					type: "item"
+					item: {
+						id: "occultism:book_of_binding_bound_foliot"
+						count: 1
+					}
+					count: 2
 				}
 			]
 			rewards: [
 				{
-					id: "D8982EEE36E16A02"
+					id: "4BCA3DB14239CB11"
 					type: "item"
 					item: {
-						id: "minecraft:raw_iron"
+						id: "minecraft:blue_dye"
 						count: 1
 					}
-					count: 32
+					count: 8
 				}
 				{
-					id: "FA985E6941635E59"
-					type: "loot"
-					table_id: "BA8E33E78A3B3A0C"
+					id: "3BEE85306001F2FC"
+					type: "xp_levels"
+					xp_levels: 5
 				}
 			]
 		}
 		{
 			id: "A4D89338D2D66A58"
-			x: 12.0d
-			y: -2.0d
-			title: "Silver"
-			subtitle: "The metal spirits respect."
-			description: [
-				"Silver ore is in the overworld. The crusher turns it into dust like any other ore. Many Occultism recipes and bowls use it."
-			]
+			x: 4.5d
+			y: 7.5d
+			icon: {
+				id: "occultism:silver_ingot"
+				count: 1
+			}
 			dependencies: [
-				"BA73F9140FD67E92"
+				"982C07A0B20D63BA"
 			]
 			tasks: [
 				{
@@ -230,7 +626,7 @@
 						id: "occultism:silver_ingot"
 						count: 1
 					}
-					count: 16
+					count: 8
 				}
 			]
 			rewards: [
@@ -238,7 +634,7 @@
 					id: "CA1063C927F61FC3"
 					type: "item"
 					item: {
-						id: "occultism:silver_ingot"
+						id: "occultism:raw_silver"
 						count: 1
 					}
 					count: 8
@@ -246,28 +642,130 @@
 			]
 		}
 		{
-			id: "5CD1C10FCF2E0149"
-			x: 12.0d
-			y: 2.0d
-			title: "Book of Binding: Djinni"
-			subtitle: "A stronger spirit, a stronger circle."
-			description: [
-				"Djinni are the next rank. Their rituals need better chalk and a different pentacle, all in the Dictionary. The Djinni crusher is faster than the Foliot."
-			]
+			id: "4A04E062C833F78E"
+			x: 8.5d
+			y: 6.5d
 			icon: {
-				id: "occultism:book_of_binding_bound_djinni"
+				id: "occultism:chalk_white"
 				count: 1
 			}
-			size: 1.5d
 			dependencies: [
-				"BA73F9140FD67E92"
+				"FBD2F0D498C91812"
+				"7A8625F561A62E98"
+				"AA455F3B85F81A50"
 			]
 			tasks: [
 				{
-					id: "27048A21E5EFB7B3"
+					id: "F13B5B82AAFE7369"
+					type: "checkmark"
+				}
+			]
+			rewards: [
+				{
+					id: "58DB21C12BDEFA33"
 					type: "item"
 					item: {
-						id: "occultism:book_of_binding_bound_djinni"
+						id: "occultism:large_candle"
+						count: 1
+					}
+					count: 4
+				}
+				{
+					id: "FFFFDB9463B258BA"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+		}
+		{
+			id: "BCC040E073942ECB"
+			x: 10.7d
+			y: 6.5d
+			icon: {
+				id: "occultism:book_of_binding_foliot"
+				count: 1
+			}
+			size: 1.75d
+			shape: "diamond"
+			dependencies: [
+				"4A04E062C833F78E"
+				"A4D89338D2D66A58"
+			]
+			tasks: [
+				{
+					id: "465B6A5D72E627E9"
+					type: "checkmark"
+				}
+			]
+			rewards: [
+				{
+					id: "5CABF1F1CE2D07E3"
+					type: "item"
+					item: {
+						id: "minecraft:raw_iron"
+						count: 1
+					}
+					count: 32
+				}
+				{
+					id: "BE0AB3CE61E2C15D"
+					type: "loot"
+					table_id: "BA8E33E78A3B3A0C"
+				}
+				{
+					id: "E803BC309A27B40E"
+					type: "xp_levels"
+					xp_levels: 10
+				}
+			]
+		}
+		{
+			id: "337C80EC5335B717"
+			x: 13.2d
+			y: 5.3d
+			icon: {
+				id: "minecraft:furnace"
+				count: 1
+			}
+			optional: true
+			dependencies: [
+				"BCC040E073942ECB"
+			]
+			tasks: [
+				{
+					id: "E753C1C1C55DECE3"
+					type: "checkmark"
+				}
+			]
+			rewards: [
+				{
+					id: "EF778051E438B3B0"
+					type: "item"
+					item: {
+						id: "minecraft:coal"
+						count: 1
+					}
+					count: 16
+				}
+			]
+		}
+		{
+			id: "7DF7740937C9656B"
+			x: 13.2d
+			y: 7.7d
+			icon: {
+				id: "occultism:book_of_calling_foliot_transport_items"
+				count: 1
+			}
+			dependencies: [
+				"BCC040E073942ECB"
+			]
+			tasks: [
+				{
+					id: "6D8946E253E33C6C"
+					type: "item"
+					item: {
+						id: "occultism:book_of_calling_foliot_transport_items"
 						count: 1
 					}
 					count: 1
@@ -275,67 +773,967 @@
 			]
 			rewards: [
 				{
-					id: "3346335C0A92FA0D"
+					id: "4A43AB7CF5BA6D59"
+					type: "item"
+					item: {
+						id: "minecraft:chest"
+						count: 1
+					}
+					count: 4
+				}
+				{
+					id: "07B2765C41166D59"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+		}
+		{
+			id: "96744370CED5B6B4"
+			x: 15.2d
+			y: 7.7d
+			icon: {
+				id: "occultism:book_of_calling_foliot_cleaner"
+				count: 1
+			}
+			optional: true
+			dependencies: [
+				"7DF7740937C9656B"
+			]
+			tasks: [
+				{
+					id: "611B639DDBD631B3"
+					type: "item"
+					item: {
+						id: "occultism:book_of_calling_foliot_cleaner"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "8DCE0EF618EAC1C2"
+					type: "item"
+					item: {
+						id: "minecraft:hopper"
+						count: 1
+					}
+					count: 2
+				}
+			]
+		}
+		{
+			id: "67893C078BE17CDD"
+			x: 15.2d
+			y: 5.3d
+			icon: {
+				id: "occultism:otherworld_sapling"
+				count: 1
+			}
+			dependencies: [
+				"BCC040E073942ECB"
+			]
+			tasks: [
+				{
+					id: "A4EA0F386B726499"
+					type: "item"
+					item: {
+						id: "occultism:otherworld_sapling"
+						count: 1
+					}
+					count: 4
+				}
+			]
+			rewards: [
+				{
+					id: "0490A087F3ABDD1C"
+					type: "item"
+					item: {
+						id: "minecraft:oak_sapling"
+						count: 1
+					}
+					count: 16
+				}
+				{
+					id: "BC052690414F9163"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+		}
+		{
+			id: "63A257F18B8FB377"
+			x: 17.2d
+			y: 5.3d
+			icon: {
+				id: "occultism:book_of_calling_foliot_lumberjack"
+				count: 1
+			}
+			optional: true
+			dependencies: [
+				"67893C078BE17CDD"
+			]
+			tasks: [
+				{
+					id: "D26106CB5CB61BDB"
+					type: "item"
+					item: {
+						id: "occultism:book_of_calling_foliot_lumberjack"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "EB8DA09D41102D02"
+					type: "item"
+					item: {
+						id: "minecraft:iron_axe"
+						count: 1
+					}
+					count: 1
+				}
+				{
+					id: "32FB126D4140323C"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+		}
+		{
+			id: "194217BC9F51D52D"
+			x: 17.2d
+			y: 7.7d
+			icon: {
+				id: "occultism:book_of_calling_foliot_farmer"
+				count: 1
+			}
+			optional: true
+			dependencies: [
+				"96744370CED5B6B4"
+			]
+			tasks: [
+				{
+					id: "85E179A47176E605"
+					type: "item"
+					item: {
+						id: "occultism:book_of_calling_foliot_farmer"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "FD422240001A3B10"
+					type: "item"
+					item: {
+						id: "minecraft:wheat_seeds"
+						count: 1
+					}
+					count: 32
+				}
+			]
+		}
+		{
+			id: "CF410BC1C10DBAAF"
+			x: 19.2d
+			y: 6.5d
+			icon: {
+				id: "ars_ocultas:altar"
+				count: 1
+			}
+			optional: true
+			dependencies: [
+				"BCC040E073942ECB"
+			]
+			tasks: [
+				{
+					id: "DEF9805E4C220ECE"
+					type: "item"
+					item: {
+						id: "ars_ocultas:altar"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "6C8CF89A4B448C9A"
+					type: "item"
+					item: {
+						id: "occultism:silver_ingot"
+						count: 1
+					}
+					count: 4
+				}
+				{
+					id: "C490D941AA1469C0"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+		}
+		{
+			id: "290A6C9E9C22B98E"
+			x: 0.5d
+			y: 12.5d
+			icon: {
+				id: "occultism:chalk_gold"
+				count: 1
+			}
+			dependencies: [
+				"BCC040E073942ECB"
+			]
+			tasks: [
+				{
+					id: "5534179E8BDCD021"
+					type: "item"
+					item: {
+						id: "occultism:chalk_gold"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "21B565530D51EEC0"
+					type: "item"
+					item: {
+						id: "minecraft:glowstone_dust"
+						count: 1
+					}
+					count: 8
+				}
+			]
+		}
+		{
+			id: "229CE64C2C1B9053"
+			x: 2.5d
+			y: 12.5d
+			icon: {
+				id: "minecraft:egg"
+				count: 1
+			}
+			dependencies: [
+				"290A6C9E9C22B98E"
+			]
+			tasks: [
+				{
+					id: "DD7780799C740768"
+					type: "kill"
+					entity: "occultism:possessed_endermite"
+					value: 2
+				}
+			]
+			rewards: [
+				{
+					id: "000D66DA27CED312"
+					type: "item"
+					item: {
+						id: "minecraft:egg"
+						count: 1
+					}
+					count: 16
+				}
+				{
+					id: "7F076F6FAE0F0BE6"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+		}
+		{
+			id: "AC00C2E9E0EB9370"
+			x: 2.5d
+			y: 14.5d
+			icon: {
+				id: "minecraft:skeleton_skull"
+				count: 1
+			}
+			dependencies: [
+				"229CE64C2C1B9053"
+			]
+			tasks: [
+				{
+					id: "452B5A2677C16D0C"
+					type: "item"
+					item: {
+						id: "minecraft:skeleton_skull"
+						count: 1
+					}
+					count: 4
+				}
+			]
+			rewards: [
+				{
+					id: "BEB93E474DA0821E"
+					type: "item"
+					item: {
+						id: "minecraft:bone"
+						count: 1
+					}
+					count: 16
+				}
+				{
+					id: "B62111FCD73AD83D"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+		}
+		{
+			id: "433B48A119AC94B6"
+			x: 0.5d
+			y: 14.5d
+			icon: {
+				id: "minecraft:chest"
+				count: 1
+			}
+			optional: true
+			dependencies: [
+				"290A6C9E9C22B98E"
+			]
+			tasks: [
+				{
+					id: "E301538B14D14E27"
+					type: "checkmark"
+				}
+			]
+			rewards: [
+				{
+					id: "EDA29B84F275CF30"
+					type: "item"
+					item: {
+						id: "minecraft:iron_block"
+						count: 1
+					}
+					count: 1
+				}
+				{
+					id: "B8600BAF28985A74"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+		}
+		{
+			id: "C4678BB9594470CA"
+			x: 4.5d
+			y: 12.5d
+			icon: {
+				id: "occultism:chalk_purple"
+				count: 1
+			}
+			dependencies: [
+				"229CE64C2C1B9053"
+			]
+			tasks: [
+				{
+					id: "CC9E7A6B769C0235"
+					type: "item"
+					item: {
+						id: "occultism:chalk_purple"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "2C1BF840DC427C42"
+					type: "item"
+					item: {
+						id: "minecraft:obsidian"
+						count: 1
+					}
+					count: 4
+				}
+			]
+		}
+		{
+			id: "014064CF7BCEAD0A"
+			x: 6.5d
+			y: 12.5d
+			icon: {
+				id: "occultism:chalk_purple"
+				count: 1
+			}
+			dependencies: [
+				"C4678BB9594470CA"
+			]
+			tasks: [
+				{
+					id: "B1D6EB906E6A4BED"
+					type: "checkmark"
+				}
+			]
+			rewards: [
+				{
+					id: "03EB7A4A680FB660"
+					type: "item"
+					item: {
+						id: "occultism:large_candle"
+						count: 1
+					}
+					count: 4
+				}
+				{
+					id: "C6C88C0D96AC96E7"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+		}
+		{
+			id: "307D5FB188E210EB"
+			x: 8.5d
+			y: 12.5d
+			icon: {
+				id: "occultism:research_fragment_dust"
+				count: 1
+			}
+			dependencies: [
+				"014064CF7BCEAD0A"
+			]
+			tasks: [
+				{
+					id: "B2D59AFACDAF004F"
+					type: "item"
+					item: {
+						id: "occultism:research_fragment_dust"
+						count: 1
+					}
+					count: 2
+				}
+			]
+			rewards: [
+				{
+					id: "960A0C085F1B4721"
+					type: "item"
+					item: {
+						id: "minecraft:experience_bottle"
+						count: 1
+					}
+					count: 8
+				}
+			]
+		}
+		{
+			id: "96CCFE6F632CA63D"
+			x: 6.5d
+			y: 14.5d
+			icon: {
+				id: "occultism:ritual_satchel_t1"
+				count: 1
+			}
+			optional: true
+			dependencies: [
+				"014064CF7BCEAD0A"
+			]
+			tasks: [
+				{
+					id: "AB25E4FE8ADC9BAD"
+					type: "item"
+					item: {
+						id: "occultism:ritual_satchel_t1"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "525D7688018FB066"
+					type: "item"
+					item: {
+						id: "minecraft:leather"
+						count: 1
+					}
+					count: 8
+				}
+			]
+		}
+		{
+			id: "16CA0066722FDE24"
+			x: 8.5d
+			y: 14.5d
+			icon: {
+				id: "occultism:nature_paste"
+				count: 1
+			}
+			optional: true
+			dependencies: [
+				"307D5FB188E210EB"
+			]
+			tasks: [
+				{
+					id: "5FB5647AAEF6FB1C"
+					type: "item"
+					item: {
+						id: "occultism:nature_paste"
+						count: 1
+					}
+					count: 2
+				}
+			]
+			rewards: [
+				{
+					id: "C5AEC2B6CFD1FE17"
+					type: "item"
+					item: {
+						id: "minecraft:mossy_cobblestone"
+						count: 1
+					}
+					count: 8
+				}
+			]
+		}
+		{
+			id: "3709C8192189C4E0"
+			x: 10.5d
+			y: 12.5d
+			icon: {
+				id: "occultism:chalk_lime"
+				count: 1
+			}
+			dependencies: [
+				"307D5FB188E210EB"
+			]
+			tasks: [
+				{
+					id: "F904F0C42D5E7C9A"
+					type: "item"
+					item: {
+						id: "occultism:chalk_lime"
+						count: 1
+					}
+					count: 2
+				}
+			]
+			rewards: [
+				{
+					id: "93F8A9D161EFEC67"
+					type: "item"
+					item: {
+						id: "minecraft:slime_ball"
+						count: 1
+					}
+					count: 8
+				}
+				{
+					id: "E219099F0D08A4C0"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+		}
+		{
+			id: "93D74A36E5681AD9"
+			x: 10.5d
+			y: 14.5d
+			icon: {
+				id: "occultism:chalk_light_gray"
+				count: 1
+			}
+			dependencies: [
+				"3709C8192189C4E0"
+			]
+			tasks: [
+				{
+					id: "D9A89ABED3B00BDC"
+					type: "item"
+					item: {
+						id: "occultism:chalk_light_gray"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "E06A637DC61D2BF9"
+					type: "item"
+					item: {
+						id: "minecraft:calcite"
+						count: 1
+					}
+					count: 16
+				}
+			]
+		}
+		{
+			id: "925B7A495F752083"
+			x: 13.2d
+			y: 12.5d
+			icon: {
+				id: "occultism:book_of_binding_bound_djinni"
+				count: 1
+			}
+			dependencies: [
+				"3709C8192189C4E0"
+			]
+			tasks: [
+				{
+					id: "16F722CB8F0918A1"
+					type: "item"
+					item: {
+						id: "occultism:book_of_binding_bound_djinni"
+						count: 1
+					}
+					count: 2
+				}
+			]
+			rewards: [
+				{
+					id: "949D889D9276C085"
+					type: "item"
+					item: {
+						id: "minecraft:purple_dye"
+						count: 1
+					}
+					count: 8
+				}
+				{
+					id: "29DFB756150E8B75"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+		}
+		{
+			id: "086E8C9E5402781E"
+			x: 15.2d
+			y: 12.5d
+			icon: {
+				id: "occultism:chalk_lime"
+				count: 1
+			}
+			dependencies: [
+				"925B7A495F752083"
+				"93D74A36E5681AD9"
+				"AC00C2E9E0EB9370"
+			]
+			tasks: [
+				{
+					id: "371F2FBB1A2B4FA0"
+					type: "checkmark"
+				}
+			]
+			rewards: [
+				{
+					id: "7BF8B25A6B42D9AC"
+					type: "item"
+					item: {
+						id: "occultism:large_candle"
+						count: 1
+					}
+					count: 8
+				}
+				{
+					id: "499DFC0007A1F5C6"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+		}
+		{
+			id: "24491E4586B09655"
+			x: 17.4d
+			y: 12.5d
+			icon: {
+				id: "occultism:book_of_binding_djinni"
+				count: 1
+			}
+			size: 1.75d
+			shape: "diamond"
+			dependencies: [
+				"086E8C9E5402781E"
+			]
+			tasks: [
+				{
+					id: "C50D45EF7A63CAAE"
+					type: "checkmark"
+				}
+			]
+			rewards: [
+				{
+					id: "32435D313396C3D1"
+					type: "item"
+					item: {
+						id: "minecraft:raw_gold"
+						count: 1
+					}
+					count: 32
+				}
+				{
+					id: "294D9D93E6D88C4B"
 					type: "loot"
 					table_id: "BA8E33E78A3B3A0C"
 				}
 				{
-					id: "48C15D800ADFE19C"
+					id: "AEE02750AD2CCCA4"
 					type: "xp_levels"
 					xp_levels: 10
 				}
 			]
 		}
 		{
-			id: "23BC1536DC963573"
-			x: 15.0d
-			y: 0.0d
-			title: "An Occultist"
-			subtitle: "Spirits at work while you sleep."
-			description: [
-				"A crusher that never stops, fed by a hopper or a belt. Afrit, Marid and the storage and mining spirits wait for stage 3."
-			]
+			id: "A958C72546BFF3B8"
+			x: 19.4d
+			y: 11.6d
 			icon: {
-				id: "occultism:golden_sacrificial_bowl"
+				id: "minecraft:clock"
 				count: 1
 			}
-			size: 1.75d
+			optional: true
 			dependencies: [
-				"A4D89338D2D66A58"
-				"5CD1C10FCF2E0149"
+				"24491E4586B09655"
 			]
 			tasks: [
 				{
-					id: "B4605925BDADCA68"
-					type: "item"
-					item: {
-						id: "occultism:chalk_white"
-						count: 1
-					}
-					count: 16
-				}
-				{
-					id: "C7F9CFFD0590DABA"
-					type: "item"
-					item: {
-						id: "occultism:sacrificial_bowl"
-						count: 1
-					}
-					count: 8
+					id: "4FC8C6E9B71BC49D"
+					type: "checkmark"
 				}
 			]
 			rewards: [
 				{
-					id: "3D48B2B7DADF2DE7"
+					id: "2E57C12D0C346C72"
+					type: "item"
+					item: {
+						id: "minecraft:clock"
+						count: 1
+					}
+					count: 1
+				}
+			]
+		}
+		{
+			id: "284464F097DB4B4B"
+			x: 15.2d
+			y: 14.5d
+			icon: {
+				id: "occultism:soul_gem"
+				count: 1
+			}
+			dependencies: [
+				"24491E4586B09655"
+			]
+			tasks: [
+				{
+					id: "50197FE96D5B0482"
+					type: "item"
+					item: {
+						id: "occultism:soul_gem"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "CB50D5905335C656"
+					type: "item"
+					item: {
+						id: "minecraft:soul_sand"
+						count: 1
+					}
+					count: 8
+				}
+				{
+					id: "A3EE675CE1BFD19C"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+		}
+		{
+			id: "2F11195E4227182C"
+			x: 17.4d
+			y: 15.4d
+			icon: {
+				id: "occultism:familiar_ring"
+				count: 1
+			}
+			optional: true
+			dependencies: [
+				"284464F097DB4B4B"
+			]
+			tasks: [
+				{
+					id: "51651ACDEF7029EB"
+					type: "item"
+					item: {
+						id: "occultism:familiar_ring"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "3447DA81B8720696"
+					type: "item"
+					item: {
+						id: "occultism:silver_ingot"
+						count: 1
+					}
+					count: 4
+				}
+				{
+					id: "AF4626CE0370EDAD"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+		}
+		{
+			id: "5A6D0B961561C4E4"
+			x: 19.4d
+			y: 13.7d
+			icon: {
+				id: "occultism:gray_paste"
+				count: 1
+			}
+			optional: true
+			dependencies: [
+				"24491E4586B09655"
+			]
+			tasks: [
+				{
+					id: "9559D936553C1C3A"
+					type: "item"
+					item: {
+						id: "occultism:gray_paste"
+						count: 1
+					}
+					count: 2
+				}
+			]
+			rewards: [
+				{
+					id: "E8834540665AE975"
+					type: "item"
+					item: {
+						id: "minecraft:clay_ball"
+						count: 1
+					}
+					count: 16
+				}
+			]
+		}
+		{
+			id: "03B2273D97A9464A"
+			x: 22.0d
+			y: 9.5d
+			icon: {
+				id: "occultism:golden_sacrificial_bowl"
+				count: 1
+			}
+			size: 2.5d
+			shape: "gear"
+			dependencies: [
+				"24491E4586B09655"
+				"284464F097DB4B4B"
+			]
+			tasks: [
+				{
+					id: "DD512230C15CAD08"
+					type: "item"
+					item: {
+						id: "occultism:book_of_binding_bound_djinni"
+						count: 1
+					}
+					count: 4
+				}
+				{
+					id: "0240F58B9F6E83E2"
+					type: "item"
+					item: {
+						id: "occultism:chalk_lime"
+						count: 1
+					}
+					count: 2
+				}
+			]
+			rewards: [
+				{
+					id: "37BC575A1953B780"
 					type: "loot"
 					table_id: "C79EAEAE0F26AA7F"
 				}
 				{
-					id: "E2581C3835E79E45"
+					id: "9B7642406489D1E8"
 					type: "xp_levels"
 					xp_levels: 15
 				}
 			]
+		}
+	]
+	images: [
+		{
+			id: "DBA02C60A71BD519"
+			image: "kronwerke:textures/quests/occultism/title.png"
+			x: 6.5d
+			y: -4.4d
+			width: 7.22d
+			height: 1.8d
+			rotation: 0.0d
+			order: 1
+		}
+		{
+			id: "9A27F6F2FDD18FBA"
+			image: "kronwerke:textures/quests/occultism/schleier.png"
+			x: 7.5d
+			y: -2.5d
+			width: 5.84d
+			height: 0.9d
+			rotation: 0.0d
+			order: 1
+		}
+		{
+			id: "88CFFD4776E403FE"
+			image: "kronwerke:textures/quests/occultism/ritual.png"
+			x: 4.8d
+			y: 3.8d
+			width: 5.42d
+			height: 0.9d
+			rotation: 0.0d
+			order: 1
+		}
+		{
+			id: "E6D7121CBD18016C"
+			image: "kronwerke:textures/quests/occultism/foliot.png"
+			x: 16.2d
+			y: 3.8d
+			width: 6.62d
+			height: 0.9d
+			rotation: 0.0d
+			order: 1
+		}
+		{
+			id: "FD98C91323C8DC69"
+			image: "kronwerke:textures/quests/occultism/kreiden.png"
+			x: 5.5d
+			y: 10.6d
+			width: 4.34d
+			height: 0.9d
+			rotation: 0.0d
+			order: 1
+		}
+		{
+			id: "939877EF959FCBA7"
+			image: "kronwerke:textures/quests/occultism/djinni.png"
+			x: 16.3d
+			y: 10.6d
+			width: 2.2d
+			height: 0.9d
+			rotation: 0.0d
+			order: 1
 		}
 	]
 }

@@ -1,7 +1,6 @@
 {
 	id: "2D557E138EE8E5B4"
 	filename: "hexerei"
-	title: "Hexerei"
 	icon: {
 		id: "hexerei:mixing_cauldron"
 		count: 1
@@ -10,21 +9,11 @@
 	order_index: 16
 	default_quest_shape: "circle"
 	default_hide_dependency_lines: false
-	subtitle: [
-		"Stage 2. Herbs, the mixing cauldron, sage and brooms."
-	]
 	quests: [
 		{
 			id: "348228BD326C7E34"
 			x: 0.0d
 			y: 0.0d
-			title: "Hexerei"
-			subtitle: "Herbs, a cauldron and a broom."
-			description: [
-				"Hexerei is witchcraft the old way: gather herbs, dry them, grind them, mix them in a cauldron. The &6Book of Shadows&r is its manual. Put it on an altar to read it standing up."
-				""
-				"Belladonna, mandrake, mugwort, sage and yellow dock grow wild. Look in swamps and forests."
-			]
 			icon: {
 				id: "hexerei:book_of_shadows"
 				count: 1
@@ -60,24 +49,57 @@
 			]
 		}
 		{
-			id: "1AF19A157D9CAAE2"
-			x: 3.0d
-			y: -2.0d
-			title: "Pestle and Mortar"
-			subtitle: "Grind it first."
-			description: [
-				"Right click to put items in. The recipe starts on its own once everything is inside. Crouch and right click with an empty hand to take things out."
-				"Herbs dry on a drying rack before most recipes want them."
-			]
+			id: "B90AEE3D4B76B666"
+			x: 2.5d
+			y: -1.0d
+			icon: {
+				id: "hexerei:animal_fat"
+				count: 1
+			}
 			dependencies: [
 				"348228BD326C7E34"
 			]
 			tasks: [
 				{
-					id: "42FF4B8B60E79B2E"
+					id: "AC0EEF9F704E90E4"
 					type: "item"
 					item: {
-						id: "hexerei:pestle_and_mortar"
+						id: "hexerei:animal_fat"
+						count: 1
+					}
+					count: 8
+				}
+			]
+			rewards: [
+				{
+					id: "BD75A0E50C7AEB8B"
+					type: "item"
+					item: {
+						id: "minecraft:leather"
+						count: 1
+					}
+					count: 4
+				}
+			]
+		}
+		{
+			id: "D80E0900D2373001"
+			x: 2.5d
+			y: 1.2d
+			icon: {
+				id: "hexerei:book_of_shadows_altar"
+				count: 1
+			}
+			optional: true
+			dependencies: [
+				"348228BD326C7E34"
+			]
+			tasks: [
+				{
+					id: "3C5974B75E596489"
+					type: "item"
+					item: {
+						id: "hexerei:book_of_shadows_altar"
 						count: 1
 					}
 					count: 1
@@ -85,30 +107,196 @@
 			]
 			rewards: [
 				{
-					id: "9192E9DA317612A6"
+					id: "8EF3CE6B6DD9D443"
+					type: "xp_levels"
+					xp_levels: 3
+				}
+			]
+		}
+		{
+			id: "871428BF38732875"
+			x: 4.5d
+			y: -1.0d
+			icon: {
+				id: "hexerei:dowsing_rod"
+				count: 1
+			}
+			dependencies: [
+				"348228BD326C7E34"
+			]
+			tasks: [
+				{
+					id: "CFE2142A99ACA774"
+					type: "item"
+					item: {
+						id: "hexerei:dowsing_rod"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "A9E490965D94543A"
+					type: "item"
+					item: {
+						id: "minecraft:compass"
+						count: 1
+					}
+					count: 1
+				}
+			]
+		}
+		{
+			id: "D274747BA1993556"
+			x: 6.5d
+			y: -1.0d
+			icon: {
+				id: "hexerei:mandrake_flowers"
+				count: 1
+			}
+			dependencies: [
+				"871428BF38732875"
+			]
+			tasks: [
+				{
+					id: "DB45DA970E76FA2E"
+					type: "item"
+					item: {
+						id: "hexerei:mandrake_root"
+						count: 1
+					}
+					count: 4
+				}
+				{
+					id: "6B697D2C91231F53"
+					type: "item"
+					item: {
+						id: "hexerei:belladonna_berries"
+						count: 1
+					}
+					count: 4
+				}
+				{
+					id: "868193A6B2AD685D"
+					type: "item"
+					item: {
+						id: "hexerei:mugwort_flowers"
+						count: 1
+					}
+					count: 4
+				}
+				{
+					id: "1345DC5506AF01DD"
+					type: "item"
+					item: {
+						id: "hexerei:yellow_dock_flowers"
+						count: 1
+					}
+					count: 4
+				}
+			]
+			rewards: [
+				{
+					id: "B6A100F9B025B4ED"
 					type: "item"
 					item: {
 						id: "minecraft:bone_meal"
 						count: 1
 					}
-					count: 16
+					count: 32
+				}
+				{
+					id: "804F4D7F89B8A6AC"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+		}
+		{
+			id: "DCD7F18DC4EE3DD4"
+			x: 6.5d
+			y: 1.2d
+			icon: {
+				id: "hexerei:willow_log"
+				count: 1
+			}
+			dependencies: [
+				"871428BF38732875"
+			]
+			tasks: [
+				{
+					id: "111E06E3BAFAF766"
+					type: "item"
+					item: {
+						id: "hexerei:willow_log"
+						count: 1
+					}
+					count: 8
+				}
+				{
+					id: "7F862028F4E30D80"
+					type: "item"
+					item: {
+						id: "hexerei:mahogany_log"
+						count: 1
+					}
+					count: 8
+				}
+			]
+			rewards: [
+				{
+					id: "6AA4374C6E5E02FB"
+					type: "item"
+					item: {
+						id: "minecraft:iron_axe"
+						count: 1
+					}
+					count: 1
+				}
+			]
+		}
+		{
+			id: "C3B98263B476A026"
+			x: 4.5d
+			y: 1.2d
+			icon: {
+				id: "hexerei:selenite_shard"
+				count: 1
+			}
+			optional: true
+			dependencies: [
+				"348228BD326C7E34"
+			]
+			tasks: [
+				{
+					id: "B417882F2BD312F8"
+					type: "item"
+					item: {
+						id: "hexerei:selenite_shard"
+						count: 1
+					}
+					count: 4
+				}
+			]
+			rewards: [
+				{
+					id: "E1CCA2B615496E06"
+					type: "xp_levels"
+					xp_levels: 3
 				}
 			]
 		}
 		{
 			id: "05DF5F6346BEB7E0"
-			x: 3.0d
-			y: 2.0d
-			title: "Mixing Cauldron"
-			subtitle: "Where every Hexerei recipe ends."
-			description: [
-				"Fill it with the right liquid and add the ingredients. The Book of Shadows lists what goes in. Most brooms, brushes and sigils are made here."
-			]
+			x: 0.5d
+			y: 6.0d
 			icon: {
 				id: "hexerei:mixing_cauldron"
 				count: 1
 			}
-			size: 1.5d
+			size: 1.75d
+			shape: "square"
 			dependencies: [
 				"348228BD326C7E34"
 			]
@@ -135,27 +323,186 @@
 				}
 				{
 					id: "C367AE2B7EF99C4E"
-					type: "loot"
-					table_id: "F2BA64790EBA3DF5"
+					type: "item"
+					item: {
+						id: "minecraft:lava_bucket"
+						count: 1
+					}
+					count: 1
 				}
 			]
 		}
 		{
-			id: "B42FC625BA6E589C"
-			x: 6.0d
-			y: -2.0d
-			title: "Herb Jar"
-			subtitle: "1024 of one herb, on a shelf."
-			description: [
-				"A jar holds up to 1024 of a single item. Punch the front to take one out, right click another side for the full view."
-			]
-			optional: true
+			id: "7985BAF435D6A8A8"
+			x: 2.7d
+			y: 5.2d
+			icon: {
+				id: "hexerei:tallow_bottle"
+				count: 1
+			}
 			dependencies: [
-				"1AF19A157D9CAAE2"
+				"05DF5F6346BEB7E0"
+				"B90AEE3D4B76B666"
 			]
 			tasks: [
 				{
-					id: "A733F0665A36AA38"
+					id: "6FA5AADCB9A60CBA"
+					type: "item"
+					item: {
+						id: "hexerei:tallow_bottle"
+						count: 1
+					}
+					count: 2
+				}
+			]
+			rewards: [
+				{
+					id: "B8028CD4A9F71657"
+					type: "item"
+					item: {
+						id: "minecraft:glass_bottle"
+						count: 1
+					}
+					count: 8
+				}
+			]
+		}
+		{
+			id: "52AB82D6E5AA08DF"
+			x: 4.7d
+			y: 5.2d
+			icon: {
+				id: "hexerei:candle_dipper"
+				count: 1
+			}
+			dependencies: [
+				"7985BAF435D6A8A8"
+			]
+			tasks: [
+				{
+					id: "01EB7CA690FFB2CA"
+					type: "item"
+					item: {
+						id: "hexerei:candle_dipper"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "D2CA9F0B86CAABE4"
+					type: "item"
+					item: {
+						id: "minecraft:string"
+						count: 1
+					}
+					count: 16
+				}
+			]
+		}
+		{
+			id: "4E515F5CD5128504"
+			x: 6.7d
+			y: 5.2d
+			icon: {
+				id: "hexerei:candle"
+				count: 1
+			}
+			dependencies: [
+				"52AB82D6E5AA08DF"
+			]
+			tasks: [
+				{
+					id: "E60E533F9389675A"
+					type: "item"
+					item: {
+						id: "hexerei:candle"
+						count: 1
+					}
+					count: 8
+				}
+			]
+			rewards: [
+				{
+					id: "5055FE572098A581"
+					type: "item"
+					item: {
+						id: "minecraft:flint_and_steel"
+						count: 1
+					}
+					count: 1
+				}
+				{
+					id: "9500885515BEB69B"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+		}
+		{
+			id: "9AE12336FF9ED04E"
+			x: 2.7d
+			y: 7.0d
+			icon: {
+				id: "hexerei:blood_sigil"
+				count: 1
+			}
+			dependencies: [
+				"05DF5F6346BEB7E0"
+			]
+			tasks: [
+				{
+					id: "AF9DA6BAE0C61130"
+					type: "item"
+					item: {
+						id: "hexerei:blood_sigil"
+						count: 1
+					}
+					count: 1
+				}
+				{
+					id: "F8D363C5BC217E09"
+					type: "item"
+					item: {
+						id: "hexerei:blood_bottle"
+						count: 1
+					}
+					count: 3
+				}
+			]
+			rewards: [
+				{
+					id: "4E669148BC3952E1"
+					type: "item"
+					item: {
+						id: "minecraft:cooked_beef"
+						count: 1
+					}
+					count: 8
+				}
+				{
+					id: "F5C75DAB92BD8D5C"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+		}
+		{
+			id: "A6D89965516574CE"
+			x: 4.7d
+			y: 7.0d
+			icon: {
+				id: "hexerei:herb_jar"
+				count: 1
+			}
+			optional: true
+			dependencies: [
+				"05DF5F6346BEB7E0"
+			]
+			tasks: [
+				{
+					id: "3E715CDA4AB395AA"
 					type: "item"
 					item: {
 						id: "hexerei:herb_jar"
@@ -166,10 +513,10 @@
 			]
 			rewards: [
 				{
-					id: "17E9338C893220FE"
+					id: "0492F83CEA35A1D6"
 					type: "item"
 					item: {
-						id: "minecraft:glass"
+						id: "minecraft:sand"
 						count: 1
 					}
 					count: 16
@@ -177,40 +524,217 @@
 			]
 		}
 		{
-			id: "B117E9E50A8546C5"
-			x: 6.0d
-			y: 2.0d
-			title: "Burning Sage"
-			subtitle: "No monsters at home."
-			description: [
-				"A lit bundle of dried sage on a &6Sage Burning Plate&r stops monsters from spawning in a wide radius around it. The bundle burns down slowly, keep a few spare."
-			]
+			id: "403AABEE9CC92494"
+			x: 6.7d
+			y: 7.0d
 			icon: {
-				id: "hexerei:sage_burning_plate"
+				id: "hexerei:coffer"
 				count: 1
 			}
-			size: 1.5d
+			optional: true
 			dependencies: [
 				"05DF5F6346BEB7E0"
+			]
+			tasks: [
+				{
+					id: "84B3938BCD1E5FBB"
+					type: "item"
+					item: {
+						id: "hexerei:coffer"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "DB423365ADF795AB"
+					type: "item"
+					item: {
+						id: "minecraft:gold_ingot"
+						count: 1
+					}
+					count: 3
+				}
+			]
+		}
+		{
+			id: "9F108701026EFF92"
+			x: 4.7d
+			y: 8.8d
+			icon: {
+				id: "hexerei:small_satchel"
+				count: 1
+			}
+			optional: true
+			dependencies: [
+				"A6D89965516574CE"
+			]
+			tasks: [
+				{
+					id: "EFD21A71F0279B90"
+					type: "item"
+					item: {
+						id: "hexerei:small_satchel"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "68A78E5C8686522A"
+					type: "item"
+					item: {
+						id: "minecraft:leather"
+						count: 1
+					}
+					count: 8
+				}
+			]
+		}
+		{
+			id: "82C1332ED7FAEE7F"
+			x: 6.7d
+			y: 8.8d
+			icon: {
+				id: "hexerei:witch_helmet"
+				count: 1
+			}
+			optional: true
+			dependencies: [
+				"403AABEE9CC92494"
+			]
+			tasks: [
+				{
+					id: "159A8FD1AD89A160"
+					type: "item"
+					item: {
+						id: "hexerei:witch_helmet"
+						count: 1
+					}
+					count: 1
+				}
+				{
+					id: "991C62B4944B0375"
+					type: "item"
+					item: {
+						id: "hexerei:witch_chestplate"
+						count: 1
+					}
+					count: 1
+				}
+				{
+					id: "E4CA3CB204879C1F"
+					type: "item"
+					item: {
+						id: "hexerei:witch_boots"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "736431F461A18961"
+					type: "item"
+					item: {
+						id: "minecraft:black_dye"
+						count: 1
+					}
+					count: 8
+				}
+				{
+					id: "56E10D863BADB068"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+		}
+		{
+			id: "9D0C2C9B2F0E878A"
+			x: 10.0d
+			y: 5.2d
+			icon: {
+				id: "hexerei:herb_drying_rack"
+				count: 1
+			}
+			dependencies: [
+				"D274747BA1993556"
+			]
+			tasks: [
+				{
+					id: "B2FC3B299B33019D"
+					type: "item"
+					item: {
+						id: "hexerei:herb_drying_rack"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "7D30CB3CBC14F931"
+					type: "item"
+					item: {
+						id: "minecraft:string"
+						count: 1
+					}
+					count: 8
+				}
+			]
+		}
+		{
+			id: "214242C058D73400"
+			x: 12.0d
+			y: 5.2d
+			icon: {
+				id: "hexerei:dried_mandrake_flowers"
+				count: 1
+			}
+			dependencies: [
+				"9D0C2C9B2F0E878A"
+			]
+			tasks: [
+				{
+					id: "7F34FB3066B4F788"
+					type: "item"
+					item: {
+						id: "hexerei:dried_mandrake_flowers"
+						count: 1
+					}
+					count: 4
+				}
+			]
+			rewards: [
+				{
+					id: "B675A83CA835BAF9"
+					type: "xp_levels"
+					xp_levels: 3
+				}
+			]
+		}
+		{
+			id: "B117E9E50A8546C5"
+			x: 10.0d
+			y: 7.0d
+			icon: {
+				id: "hexerei:sage"
+				count: 1
+			}
+			dependencies: [
+				"9D0C2C9B2F0E878A"
 			]
 			tasks: [
 				{
 					id: "FAA0C3AE06C1D8C5"
 					type: "item"
 					item: {
-						id: "hexerei:sage_burning_plate"
+						id: "hexerei:sage"
 						count: 1
 					}
-					count: 1
-				}
-				{
-					id: "D35A26CF8F00FDBA"
-					type: "item"
-					item: {
-						id: "hexerei:dried_sage_bundle"
-						count: 1
-					}
-					count: 2
+					count: 16
 				}
 			]
 			rewards: [
@@ -223,34 +747,234 @@
 					}
 					count: 16
 				}
+			]
+		}
+		{
+			id: "2828F18000825CC2"
+			x: 12.0d
+			y: 7.0d
+			icon: {
+				id: "hexerei:dried_sage_bundle"
+				count: 1
+			}
+			dependencies: [
+				"B117E9E50A8546C5"
+			]
+			tasks: [
 				{
-					id: "F55EA2FFC452B2FE"
-					type: "loot"
-					table_id: "BA8E33E78A3B3A0C"
+					id: "65C60AB7C7514629"
+					type: "item"
+					item: {
+						id: "hexerei:dried_sage_bundle"
+						count: 1
+					}
+					count: 2
+				}
+			]
+			rewards: [
+				{
+					id: "9AEA54A84BB2E56C"
+					type: "item"
+					item: {
+						id: "minecraft:string"
+						count: 1
+					}
+					count: 8
 				}
 			]
 		}
 		{
-			id: "D08C9B47D28194CE"
-			x: 9.0d
-			y: 0.0d
-			title: "A Broom"
-			subtitle: "Fly."
-			description: [
-				"The &6Willow Broom&r is the easy one, good for building. The &6Mahogany Broom&r is faster and does not burn. Crouch and right click a broom to open its inventory, where brushes, tips and satchels go."
-			]
+			id: "D59DFB18CD053CE6"
+			x: 14.0d
+			y: 7.0d
 			icon: {
-				id: "hexerei:willow_broom"
+				id: "hexerei:sage_burning_plate"
 				count: 1
 			}
 			size: 1.5d
 			shape: "diamond"
 			dependencies: [
+				"2828F18000825CC2"
 				"05DF5F6346BEB7E0"
 			]
 			tasks: [
 				{
-					id: "275E8C8489860E35"
+					id: "B8B4E545DBE0562F"
+					type: "item"
+					item: {
+						id: "hexerei:sage_burning_plate"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "7E61ADD237EC7754"
+					type: "loot"
+					table_id: "BA8E33E78A3B3A0C"
+				}
+				{
+					id: "8227F8BC8791C567"
+					type: "xp_levels"
+					xp_levels: 10
+				}
+			]
+		}
+		{
+			id: "1AF19A157D9CAAE2"
+			x: 14.0d
+			y: 5.2d
+			icon: {
+				id: "hexerei:pestle_and_mortar"
+				count: 1
+			}
+			dependencies: [
+				"214242C058D73400"
+				"05DF5F6346BEB7E0"
+			]
+			tasks: [
+				{
+					id: "42FF4B8B60E79B2E"
+					type: "item"
+					item: {
+						id: "hexerei:pestle_and_mortar"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "9192E9DA317612A6"
+					type: "item"
+					item: {
+						id: "minecraft:quartz"
+						count: 1
+					}
+					count: 8
+				}
+			]
+		}
+		{
+			id: "F7809909862773DA"
+			x: 16.0d
+			y: 5.2d
+			icon: {
+				id: "hexerei:seed_mixture"
+				count: 1
+			}
+			dependencies: [
+				"1AF19A157D9CAAE2"
+			]
+			tasks: [
+				{
+					id: "14CFC32E33DE7BCA"
+					type: "item"
+					item: {
+						id: "hexerei:seed_mixture"
+						count: 1
+					}
+					count: 4
+				}
+			]
+			rewards: [
+				{
+					id: "7DE092F09871C827"
+					type: "item"
+					item: {
+						id: "minecraft:wheat_seeds"
+						count: 1
+					}
+					count: 16
+				}
+			]
+		}
+		{
+			id: "D7E2BA7E6004DF15"
+			x: 16.0d
+			y: 7.0d
+			icon: {
+				id: "hexerei:mindful_trance_blend"
+				count: 1
+			}
+			optional: true
+			dependencies: [
+				"1AF19A157D9CAAE2"
+				"4E515F5CD5128504"
+			]
+			tasks: [
+				{
+					id: "B83D985414693719"
+					type: "item"
+					item: {
+						id: "hexerei:mindful_trance_blend"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "4893F1799D151C9F"
+					type: "xp_levels"
+					xp_levels: 3
+				}
+			]
+		}
+		{
+			id: "77C91AA3D7D43887"
+			x: 0.5d
+			y: 12.5d
+			icon: {
+				id: "hexerei:broom_brush"
+				count: 1
+			}
+			dependencies: [
+				"9D0C2C9B2F0E878A"
+				"05DF5F6346BEB7E0"
+			]
+			tasks: [
+				{
+					id: "55BFCC89DEAC9D82"
+					type: "item"
+					item: {
+						id: "hexerei:broom_brush"
+						count: 1
+					}
+					count: 2
+				}
+			]
+			rewards: [
+				{
+					id: "A8C2DABE31E64CCE"
+					type: "item"
+					item: {
+						id: "minecraft:wheat"
+						count: 1
+					}
+					count: 16
+				}
+			]
+		}
+		{
+			id: "0594B2996DD40ED9"
+			x: 2.8d
+			y: 12.5d
+			icon: {
+				id: "hexerei:willow_broom"
+				count: 1
+			}
+			size: 2.0d
+			shape: "diamond"
+			dependencies: [
+				"77C91AA3D7D43887"
+				"9AE12336FF9ED04E"
+				"DCD7F18DC4EE3DD4"
+			]
+			tasks: [
+				{
+					id: "18F6B1B252CFBB6F"
 					type: "item"
 					item: {
 						id: "hexerei:willow_broom"
@@ -261,33 +985,131 @@
 			]
 			rewards: [
 				{
-					id: "CDFE4C2C3E351DD0"
-					type: "item"
-					item: {
-						id: "minecraft:feather"
-						count: 1
-					}
-					count: 16
-				}
-				{
-					id: "CC1AE7B40CA78181"
+					id: "97B2C2589F3647C2"
 					type: "loot"
 					table_id: "BA8E33E78A3B3A0C"
+				}
+				{
+					id: "79F7A6C20292C07D"
+					type: "xp_levels"
+					xp_levels: 10
+				}
+			]
+		}
+		{
+			id: "F6ECA6444DDF8B64"
+			x: 5.2d
+			y: 11.6d
+			icon: {
+				id: "hexerei:herb_enhanced_broom_brush"
+				count: 1
+			}
+			optional: true
+			dependencies: [
+				"0594B2996DD40ED9"
+			]
+			tasks: [
+				{
+					id: "31258408B18AB381"
+					type: "item"
+					item: {
+						id: "hexerei:herb_enhanced_broom_brush"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "BDE342D7FE1DE02E"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+		}
+		{
+			id: "316366C37FD4E2B3"
+			x: 5.2d
+			y: 13.4d
+			icon: {
+				id: "hexerei:witch_hazel_broom"
+				count: 1
+			}
+			optional: true
+			dependencies: [
+				"0594B2996DD40ED9"
+			]
+			tasks: [
+				{
+					id: "A7AA007F4022D9B7"
+					type: "item"
+					item: {
+						id: "hexerei:witch_hazel_broom"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "DD98614A664E2E8C"
+					type: "item"
+					item: {
+						id: "minecraft:diamond"
+						count: 1
+					}
+					count: 1
+				}
+			]
+		}
+		{
+			id: "48753FE55EDBEE1B"
+			x: 7.6d
+			y: 12.5d
+			icon: {
+				id: "hexerei:mahogany_broom"
+				count: 1
+			}
+			size: 1.5d
+			shape: "diamond"
+			dependencies: [
+				"0594B2996DD40ED9"
+			]
+			tasks: [
+				{
+					id: "EE4932A64B7D5455"
+					type: "item"
+					item: {
+						id: "hexerei:mahogany_broom"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "805009434AEE74D7"
+					type: "loot"
+					table_id: "C79EAEAE0F26AA7F"
+				}
+				{
+					id: "646CA5B2F75B3D60"
+					type: "xp_levels"
+					xp_levels: 10
 				}
 			]
 		}
 		{
 			id: "B96ADDFDC00D322E"
-			x: 9.0d
-			y: -3.5d
-			title: "Crows"
-			subtitle: "Small, black, helpful."
-			description: [
-				"Tamed crows follow you, sit on your shoulder, and with a &6Crow Flute&r you can tell them to gather items into a coffer, harvest and replant crops, or pick villagers' pockets."
-			]
-			optional: true
+			x: 12.0d
+			y: 12.5d
+			icon: {
+				id: "hexerei:crow_flute"
+				count: 1
+			}
+			size: 1.5d
 			dependencies: [
-				"1AF19A157D9CAAE2"
+				"F7809909862773DA"
 			]
 			tasks: [
 				{
@@ -305,46 +1127,36 @@
 					id: "0061CFA7BBFCC7C7"
 					type: "item"
 					item: {
-						id: "minecraft:wheat_seeds"
-						count: 1
-					}
-					count: 32
-				}
-			]
-		}
-		{
-			id: "1E7E20EF779BE8CD"
-			x: 12.0d
-			y: 0.0d
-			title: "A Witch's House"
-			subtitle: "Candles, herbs, a broom by the door."
-			description: [
-				"Dip candles from tallow in the cauldron with the &6Candle Dipper&r, fill the jars, keep the sage burning. Then fly off and help the Botania and Ars players fill the obelisk."
-			]
-			icon: {
-				id: "hexerei:mahogany_broom"
-				count: 1
-			}
-			size: 1.75d
-			dependencies: [
-				"D08C9B47D28194CE"
-				"B117E9E50A8546C5"
-			]
-			tasks: [
-				{
-					id: "98235BCFAAD2F77A"
-					type: "item"
-					item: {
-						id: "hexerei:candle"
+						id: "hexerei:seed_mixture"
 						count: 1
 					}
 					count: 8
 				}
 				{
-					id: "1C5B685D16907B10"
+					id: "EC7BBF9D3F902077"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+		}
+		{
+			id: "6FE94C618861F9CC"
+			x: 14.0d
+			y: 12.5d
+			icon: {
+				id: "hexerei:crow_blank_amulet"
+				count: 1
+			}
+			optional: true
+			dependencies: [
+				"B96ADDFDC00D322E"
+			]
+			tasks: [
+				{
+					id: "CC5BEBDBB71161F6"
 					type: "item"
 					item: {
-						id: "hexerei:mahogany_broom"
+						id: "hexerei:crow_blank_amulet"
 						count: 1
 					}
 					count: 1
@@ -352,16 +1164,174 @@
 			]
 			rewards: [
 				{
-					id: "9346F419E652409F"
+					id: "14F8D6680CDD533A"
+					type: "item"
+					item: {
+						id: "minecraft:gold_nugget"
+						count: 1
+					}
+					count: 18
+				}
+			]
+		}
+		{
+			id: "50A6208CE0ADDB45"
+			x: 12.0d
+			y: 14.4d
+			icon: {
+				id: "hexerei:courier_package"
+				count: 1
+			}
+			optional: true
+			dependencies: [
+				"B96ADDFDC00D322E"
+			]
+			tasks: [
+				{
+					id: "57C83B494A59AFBE"
+					type: "item"
+					item: {
+						id: "hexerei:courier_package"
+						count: 1
+					}
+					count: 1
+				}
+				{
+					id: "4821965D051DE226"
+					type: "item"
+					item: {
+						id: "hexerei:willow_courier_depot"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "133D203C31BC4FD4"
+					type: "item"
+					item: {
+						id: "minecraft:cod"
+						count: 1
+					}
+					count: 8
+				}
+				{
+					id: "9C87FC458E879DB6"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+		}
+		{
+			id: "F6AB1A4423157CE6"
+			x: 19.0d
+			y: 9.5d
+			icon: {
+				id: "hexerei:mixing_cauldron"
+				count: 1
+			}
+			size: 2.5d
+			shape: "gear"
+			dependencies: [
+				"D59DFB18CD053CE6"
+				"48753FE55EDBEE1B"
+				"B96ADDFDC00D322E"
+			]
+			tasks: [
+				{
+					id: "BD899E915D512AC1"
+					type: "item"
+					item: {
+						id: "hexerei:candle"
+						count: 1
+					}
+					count: 16
+				}
+				{
+					id: "60BBEA58316CCC36"
+					type: "item"
+					item: {
+						id: "hexerei:dried_sage_bundle"
+						count: 1
+					}
+					count: 4
+				}
+			]
+			rewards: [
+				{
+					id: "12D34FDC4B24FC67"
 					type: "loot"
 					table_id: "C79EAEAE0F26AA7F"
 				}
 				{
-					id: "9200A8924B4B6FF2"
+					id: "0BDC10B259B7D3E0"
 					type: "xp_levels"
 					xp_levels: 15
 				}
 			]
+		}
+	]
+	images: [
+		{
+			id: "8153DCDCFE821624"
+			image: "kronwerke:textures/quests/hexerei/title.png"
+			x: 6.5d
+			y: -4.4d
+			width: 5.19d
+			height: 1.8d
+			rotation: 0.0d
+			order: 1
+		}
+		{
+			id: "9F729595804CC377"
+			image: "kronwerke:textures/quests/hexerei/hexenkunst.png"
+			x: 4.5d
+			y: -2.6d
+			width: 3.95d
+			height: 0.9d
+			rotation: 0.0d
+			order: 1
+		}
+		{
+			id: "9EFC4E85877FA166"
+			image: "kronwerke:textures/quests/hexerei/kessel.png"
+			x: 3.7d
+			y: 3.6d
+			width: 5.51d
+			height: 0.9d
+			rotation: 0.0d
+			order: 1
+		}
+		{
+			id: "95A142E1635474D9"
+			image: "kronwerke:textures/quests/hexerei/kraeuter.png"
+			x: 13.0d
+			y: 3.6d
+			width: 4.19d
+			height: 0.9d
+			rotation: 0.0d
+			order: 1
+		}
+		{
+			id: "8D0B7951AE1E9CB8"
+			image: "kronwerke:textures/quests/hexerei/besen.png"
+			x: 4.1d
+			y: 10.4d
+			width: 2.03d
+			height: 0.9d
+			rotation: 0.0d
+			order: 1
+		}
+		{
+			id: "3FCFFA2F442A4A1F"
+			image: "kronwerke:textures/quests/hexerei/vertraute.png"
+			x: 13.0d
+			y: 10.4d
+			width: 3.46d
+			height: 0.9d
+			rotation: 0.0d
+			order: 1
 		}
 	]
 }

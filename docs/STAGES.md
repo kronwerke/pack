@@ -43,7 +43,7 @@ Theme: wood, stone, water wheels, the first spells. Everyone starts here on day 
 
 **Open:** vanilla overworld; Create up to andesite (water wheel, millstone, press, mixer without blaze burner, belts, fans, andesite funnels and casings); Ars Nouveau novice glyphs, source jars, sourcelinks, the imbuement chamber (the only way to Source Gems, which the stage 1 goal asks for), the enchanting apparatus, Starbuncles; Botania up to the mana pool and mana spreader (no runic altar); Farmer's Delight, Farming for Blockheads, Aquaculture; Silent Gear iron tier; Sophisticated Backpacks (leather); Functional Storage (oak drawers); Waystones; Neo Origins; Apotheosis affixes up to rare; the Mining Dimension (an iron block portal lit with the Enchanted Pickaxe; the mod's own recipe never loads on 1.21.1 and needs netherite, so KubeJS adds one without it); Cataclysm and Born in Chaos overworld structures.
 
-**Locked:** the Nether; Create brass and everything needing it; Mekanism entirely; AE2; Ender IO; Industrial Foregoing; Immersive Engineering; Powah; Oritech; Ars apprentice glyphs and above; Botania runic altar and above; Occultism rituals; Theurgy; Hexerei; Eidolon; Malum; Mahou Tsukai; Iron's Spells above common; Undergarden, Eternal Starlight; Draconic Evolution; NuclearCraft.
+**Locked:** the Nether; Create brass and everything needing it; Mekanism entirely; AE2; Refined Storage; Ender IO; Industrial Foregoing; Immersive Engineering; Powah; Oritech; Ars apprentice glyphs and above; Botania runic altar and above; Occultism rituals; Theurgy; Hexerei; Eidolon; Malum; Mahou Tsukai; Iron's Spells above common; Undergarden, Eternal Starlight; Draconic Evolution; NuclearCraft.
 
 **Goal:** Foundation of the Kronwerk.
 
@@ -73,7 +73,7 @@ Theme: brass, the Nether, mana, the first machines that do work while you sleep.
 | --- | --- | --- | --- |
 | Tech | Brass Ingot | 4 000 | Needs a blaze burner line and a zinc supply. A good mixer setup makes 300 an hour. |
 | Tech | Precision Mechanism | 300 | The first real Create automation. Forces someone to build the sequenced gearshift line. |
-| Magic | Mana Pearl | 1 500 | Needs a mana farm that runs on its own. 1 500 pearls is about 750 000 mana. |
+| Magic | Mana Pearl | 1 500 | Needs a mana farm that runs on its own. Each pearl takes 6 000 mana in the pool, so 1 500 pearls are 9 million. |
 | Magic | Terrasteel Ingot | 100 | Needs the terra plate and half a full mana pool each. Botania's stage 2 exit. |
 
 **Quests:** Create brass (14), Create trains and contraptions (10), Mekanism basics (12), Immersive Engineering (10), Ars apprentice (10), Botania runic and elven (12), Occultism (10), Hexerei (8), The Nether (6). About 90.
@@ -86,7 +86,7 @@ Written: The Nether (6), Create: Brass (14), Create: Trains (9), Mekanism (12), 
 
 Theme: steel, ore multiplication, storage networks, rituals with consequences.
 
-**Newly open:** Mekanism up to elite (ore tripling, digital miner, teleporter, ultimate cables; no fusion, no antimatter); AE2 (no quantum bridge, no spatial); Ender IO; Industrial Foregoing; Powah up to nitro; Oritech; Refined tiers of Sophisticated (gold, diamond); Ars master glyphs; Botania gaia-side content except the fight (elementium, pixie, spectrolus); Occultism Afrit and Marid; Theurgy (its ore multiplication matches Mekanism tripling on purpose); Eidolon; Malum; Undergarden; Apotheosis epic; Iron's Spells epic.
+**Newly open:** Mekanism advanced and elite tier (advanced control circuit, factories, ore tripling, digital miner, teleporter; no fusion, no antimatter); AE2 (no quantum bridge, no spatial); Refined Storage and Cable Tiers; the Immersive Engineering machines built from engineering blocks (crusher, metal press, arc furnace, excavator, diesel generator); Ender IO; Industrial Foregoing; Powah up to nitro; Oritech; Refined tiers of Sophisticated (gold, diamond); Ars master glyphs; Botania gaia-side content except the fight (elementium, pixie, spectrolus); Occultism Afrit and Marid; Theurgy (its ore multiplication matches Mekanism tripling on purpose); Eidolon; Malum; Undergarden; Apotheosis epic; Iron's Spells epic.
 
 **Still locked:** the End; Mekanism fusion, antimatter and the ultimate tier machines; AE2 quantum and spatial; Mahou Tsukai; Eternal Starlight; Gaia Guardian; Draconic Evolution; NuclearCraft.
 

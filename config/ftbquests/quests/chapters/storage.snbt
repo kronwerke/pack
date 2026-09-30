@@ -1,7 +1,6 @@
 {
 	id: "0E77E388D0A9F0D1"
 	filename: "storage"
-	title: "Storage"
 	icon: {
 		id: "sophisticatedbackpacks:backpack"
 		count: 1
@@ -10,21 +9,11 @@
 	order_index: 5
 	default_quest_shape: "circle"
 	default_hide_dependency_lines: false
-	subtitle: [
-		"Backpacks, drawers and chests that grow with you."
-	]
 	quests: [
 		{
 			id: "B2930B06D06C5604"
 			x: 0.0d
 			y: 0.0d
-			title: "Storage"
-			subtitle: "Less time in chests, more time playing."
-			description: [
-				"Three mods keep your things in order: &6Sophisticated Backpacks&r for what you carry, &6Functional Storage&r drawers for bulk items, and &6Sophisticated Storage&r for chests and barrels that grow with you."
-				""
-				"Start with a backpack: leather around a chest."
-			]
 			icon: {
 				id: "sophisticatedbackpacks:backpack"
 				count: 1
@@ -54,6 +43,15 @@
 				}
 				{
 					id: "9DEBFE099B97491A"
+					type: "item"
+					item: {
+						id: "minecraft:string"
+						count: 1
+					}
+					count: 8
+				}
+				{
+					id: "6C4C2CB83C578756"
 					type: "loot"
 					table_id: "1EBBC2B918151958"
 				}
@@ -61,13 +59,8 @@
 		}
 		{
 			id: "F113895AA38387CC"
-			x: 3.0d
-			y: -2.0d
-			title: "Upgrade Base"
-			subtitle: "Every backpack upgrade starts here."
-			description: [
-				"Backpacks take upgrades in the slots on the left of their screen. Each upgrade is crafted from an &6Upgrade Base&r."
-			]
+			x: 2.5d
+			y: 0.0d
 			icon: {
 				id: "sophisticatedbackpacks:upgrade_base"
 				count: 1
@@ -96,17 +89,21 @@
 					}
 					count: 16
 				}
+				{
+					id: "7FACEA0618463F84"
+					type: "item"
+					item: {
+						id: "minecraft:iron_ingot"
+						count: 1
+					}
+					count: 4
+				}
 			]
 		}
 		{
 			id: "B18A03BA5EFDE940"
-			x: 6.0d
-			y: -3.5d
-			title: "Pickup Upgrade"
-			subtitle: "Items go straight into the backpack."
-			description: [
-				"With a Pickup Upgrade, anything you pick up lands in the backpack first. Add a filter so only the things you want end up there."
-			]
+			x: 4.5d
+			y: 0.0d
 			icon: {
 				id: "sophisticatedbackpacks:pickup_upgrade"
 				count: 1
@@ -128,21 +125,28 @@
 			rewards: [
 				{
 					id: "2105BEC1C225969C"
+					type: "item"
+					item: {
+						id: "minecraft:slime_ball"
+						count: 1
+					}
+					count: 4
+				}
+				{
+					id: "62B123239DADE8CA"
 					type: "xp_levels"
-					xp_levels: 5
+					xp_levels: 3
 				}
 			]
 		}
 		{
 			id: "B84B3705D44CD470"
-			x: 9.0d
-			y: -3.5d
-			title: "Magnet Upgrade"
-			subtitle: "Pulls nearby items to you."
-			description: [
-				"Everything that drops near you flies into the backpack. Perfect with Ultimine."
-			]
-			optional: true
+			x: 6.5d
+			y: 0.0d
+			icon: {
+				id: "sophisticatedbackpacks:magnet_upgrade"
+				count: 1
+			}
 			dependencies: [
 				"B18A03BA5EFDE940"
 			]
@@ -167,17 +171,99 @@
 					}
 					count: 2
 				}
+				{
+					id: "CB1F80F4E3A853EB"
+					type: "loot"
+					table_id: "1EBBC2B918151958"
+				}
+			]
+		}
+		{
+			id: "543C0E6DCEB9CE59"
+			x: 8.5d
+			y: 0.0d
+			icon: {
+				id: "sophisticatedbackpacks:deposit_upgrade"
+				count: 1
+			}
+			dependencies: [
+				"B84B3705D44CD470"
+			]
+			tasks: [
+				{
+					id: "C8533249A1D678E5"
+					type: "item"
+					item: {
+						id: "sophisticatedbackpacks:deposit_upgrade"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "F25C014E12D5BBAF"
+					type: "item"
+					item: {
+						id: "minecraft:redstone"
+						count: 1
+					}
+					count: 16
+				}
+				{
+					id: "AC927BD2F4975343"
+					type: "xp_levels"
+					xp_levels: 3
+				}
+			]
+		}
+		{
+			id: "D379A1919AC771B0"
+			x: 10.5d
+			y: 0.0d
+			icon: {
+				id: "sophisticatedbackpacks:stack_upgrade_starter_tier"
+				count: 1
+			}
+			dependencies: [
+				"543C0E6DCEB9CE59"
+			]
+			tasks: [
+				{
+					id: "BC2340CC4F1D0A6F"
+					type: "item"
+					item: {
+						id: "sophisticatedbackpacks:stack_upgrade_starter_tier"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "B8E69AA10925EAE1"
+					type: "item"
+					item: {
+						id: "minecraft:copper_block"
+						count: 1
+					}
+					count: 4
+				}
+				{
+					id: "BBD35845F75E759E"
+					type: "loot"
+					table_id: "870211AF0E412C54"
+				}
 			]
 		}
 		{
 			id: "A27B30EC8AC36F66"
-			x: 6.0d
-			y: -0.5d
-			title: "Crafting Upgrade"
-			subtitle: "A crafting grid you always carry."
-			description: [
-				"Adds a crafting grid to the backpack screen. You will never walk home for a table again."
-			]
+			x: 2.5d
+			y: 2.0d
+			icon: {
+				id: "sophisticatedbackpacks:crafting_upgrade"
+				count: 1
+			}
 			optional: true
 			dependencies: [
 				"F113895AA38387CC"
@@ -196,32 +282,149 @@
 			rewards: [
 				{
 					id: "F9759EEFD4B0CCB2"
+					type: "xp_levels"
+					xp_levels: 3
+				}
+			]
+		}
+		{
+			id: "5CED9FD808309030"
+			x: 4.5d
+			y: 2.0d
+			icon: {
+				id: "sophisticatedbackpacks:void_upgrade"
+				count: 1
+			}
+			optional: true
+			dependencies: [
+				"B18A03BA5EFDE940"
+			]
+			tasks: [
+				{
+					id: "AD7286B8CA32ED95"
 					type: "item"
 					item: {
-						id: "minecraft:crafting_table"
+						id: "sophisticatedbackpacks:void_upgrade"
 						count: 1
 					}
 					count: 1
 				}
 			]
+			rewards: [
+				{
+					id: "32447D0F4A8C7900"
+					type: "xp_levels"
+					xp_levels: 3
+				}
+			]
+		}
+		{
+			id: "FCC62AD2062CC1D3"
+			x: 6.5d
+			y: 2.0d
+			icon: {
+				id: "sophisticatedbackpacks:feeding_upgrade"
+				count: 1
+			}
+			optional: true
+			dependencies: [
+				"B84B3705D44CD470"
+			]
+			tasks: [
+				{
+					id: "967BB06A97F0546D"
+					type: "item"
+					item: {
+						id: "sophisticatedbackpacks:feeding_upgrade"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "35802ECBBFCA321A"
+					type: "item"
+					item: {
+						id: "minecraft:cooked_beef"
+						count: 1
+					}
+					count: 16
+				}
+			]
+		}
+		{
+			id: "6915DD4065879162"
+			x: 8.5d
+			y: 2.0d
+			icon: {
+				id: "sophisticatedbackpacks:restock_upgrade"
+				count: 1
+			}
+			optional: true
+			dependencies: [
+				"543C0E6DCEB9CE59"
+			]
+			tasks: [
+				{
+					id: "FA9E5403E706128C"
+					type: "item"
+					item: {
+						id: "sophisticatedbackpacks:restock_upgrade"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "3D722DF4804FAF12"
+					type: "xp_levels"
+					xp_levels: 3
+				}
+			]
+		}
+		{
+			id: "CDE4761F2FBA1D9B"
+			x: 10.5d
+			y: 2.0d
+			icon: {
+				id: "sophisticatedbackpacks:tool_swapper_upgrade"
+				count: 1
+			}
+			optional: true
+			dependencies: [
+				"D379A1919AC771B0"
+			]
+			tasks: [
+				{
+					id: "96D19AE756A2941A"
+					type: "item"
+					item: {
+						id: "sophisticatedbackpacks:tool_swapper_upgrade"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "2C4B0B7260A6B7B5"
+					type: "xp_levels"
+					xp_levels: 3
+				}
+			]
 		}
 		{
 			id: "A70663EA49DDC090"
-			x: 3.0d
-			y: 2.0d
-			title: "Drawers"
-			subtitle: "Thousands of one item in one block."
-			description: [
-				"A &6Drawer&r holds one kind of item per slot, far more than a chest. Right click to put in what you hold, double click to put in all of it, left click to take a stack."
-				"They come in 1, 2 and 4 slot versions and every wood type."
-			]
+			x: 0.0d
+			y: 6.5d
 			icon: {
 				id: "functionalstorage:oak_1"
 				count: 1
 			}
-			dependencies: [
-				"B2930B06D06C5604"
-			]
+			size: 1.75d
+			shape: "rsquare"
 			tasks: [
 				{
 					id: "8566BA9085BB40A3"
@@ -243,19 +446,19 @@
 					}
 					count: 32
 				}
+				{
+					id: "DF06ECEEDF1A460F"
+					type: "loot"
+					table_id: "1EBBC2B918151958"
+				}
 			]
 		}
 		{
-			id: "A210E36ADA0F4B7C"
-			x: 6.0d
-			y: 2.0d
-			title: "Four at Once"
-			subtitle: "Four items per block, smaller stacks each."
-			description: [
-				"The 4 slot drawer is the best for many different ores and ingots in a small space."
-			]
+			id: "F23E32DC044F6206"
+			x: 2.5d
+			y: 6.5d
 			icon: {
-				id: "functionalstorage:oak_4"
+				id: "functionalstorage:oak_2"
 				count: 1
 			}
 			dependencies: [
@@ -263,7 +466,41 @@
 			]
 			tasks: [
 				{
-					id: "6202E74BB5391F30"
+					id: "2B1F861F28F6EDA5"
+					type: "item"
+					item: {
+						id: "functionalstorage:oak_2"
+						count: 1
+					}
+					count: 2
+				}
+			]
+			rewards: [
+				{
+					id: "16AF6A9CC0A87A6C"
+					type: "item"
+					item: {
+						id: "minecraft:chest"
+						count: 1
+					}
+					count: 2
+				}
+			]
+		}
+		{
+			id: "8738016492573B84"
+			x: 4.5d
+			y: 6.5d
+			icon: {
+				id: "functionalstorage:oak_4"
+				count: 1
+			}
+			dependencies: [
+				"F23E32DC044F6206"
+			]
+			tasks: [
+				{
+					id: "3898DB360E92ACD3"
 					type: "item"
 					item: {
 						id: "functionalstorage:oak_4"
@@ -274,7 +511,7 @@
 			]
 			rewards: [
 				{
-					id: "C0EFE301855E62E0"
+					id: "944E5400CB0BC96F"
 					type: "item"
 					item: {
 						id: "minecraft:chest"
@@ -282,25 +519,333 @@
 					}
 					count: 4
 				}
+				{
+					id: "37F6463BBE89E90D"
+					type: "xp_levels"
+					xp_levels: 3
+				}
+			]
+		}
+		{
+			id: "94EF9BAD0CC68B94"
+			x: 6.5d
+			y: 6.5d
+			icon: {
+				id: "functionalstorage:configuration_tool"
+				count: 1
+			}
+			dependencies: [
+				"8738016492573B84"
+			]
+			tasks: [
+				{
+					id: "BB99B3DBB482C740"
+					type: "item"
+					item: {
+						id: "functionalstorage:configuration_tool"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "0A634758BA5C580B"
+					type: "item"
+					item: {
+						id: "minecraft:gold_ingot"
+						count: 1
+					}
+					count: 4
+				}
+				{
+					id: "13BB7403A37449A0"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+		}
+		{
+			id: "39DDDBA13B3BC629"
+			x: 8.5d
+			y: 6.5d
+			icon: {
+				id: "functionalstorage:puller_upgrade"
+				count: 1
+			}
+			dependencies: [
+				"94EF9BAD0CC68B94"
+			]
+			tasks: [
+				{
+					id: "7A9B763D5162EEC6"
+					type: "item"
+					item: {
+						id: "functionalstorage:puller_upgrade"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "50C2D5E442281493"
+					type: "item"
+					item: {
+						id: "minecraft:hopper"
+						count: 1
+					}
+					count: 2
+				}
+			]
+		}
+		{
+			id: "880777933A7972A3"
+			x: 10.5d
+			y: 6.5d
+			icon: {
+				id: "functionalstorage:pusher_upgrade"
+				count: 1
+			}
+			dependencies: [
+				"39DDDBA13B3BC629"
+			]
+			tasks: [
+				{
+					id: "DA44A1A92E364381"
+					type: "item"
+					item: {
+						id: "functionalstorage:pusher_upgrade"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "DEC4F72C8613CD8F"
+					type: "item"
+					item: {
+						id: "create:andesite_alloy"
+						count: 1
+					}
+					count: 16
+				}
+				{
+					id: "AAAEFE611B482855"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+		}
+		{
+			id: "E7617FAA55C09B6D"
+			x: 2.5d
+			y: 8.5d
+			icon: {
+				id: "functionalstorage:framed_1"
+				count: 1
+			}
+			optional: true
+			dependencies: [
+				"F23E32DC044F6206"
+			]
+			tasks: [
+				{
+					id: "7311E459D2B2A004"
+					type: "item"
+					item: {
+						id: "functionalstorage:framed_1"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "1BEDB737B7DE137E"
+					type: "item"
+					item: {
+						id: "minecraft:iron_nugget"
+						count: 1
+					}
+					count: 16
+				}
+			]
+		}
+		{
+			id: "0D58EEC36BD48654"
+			x: 4.5d
+			y: 8.5d
+			icon: {
+				id: "functionalstorage:fluid_1"
+				count: 1
+			}
+			optional: true
+			dependencies: [
+				"8738016492573B84"
+			]
+			tasks: [
+				{
+					id: "1E6026BE91EA14CB"
+					type: "item"
+					item: {
+						id: "functionalstorage:fluid_1"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "1D50726645DABD5F"
+					type: "item"
+					item: {
+						id: "minecraft:bucket"
+						count: 1
+					}
+					count: 2
+				}
+			]
+		}
+		{
+			id: "A90915287F39E323"
+			x: 4.5d
+			y: 10.3d
+			icon: {
+				id: "functionalstorage:water_generator_upgrade"
+				count: 1
+			}
+			optional: true
+			dependencies: [
+				"0D58EEC36BD48654"
+			]
+			tasks: [
+				{
+					id: "63FF150FAA712FB2"
+					type: "item"
+					item: {
+						id: "functionalstorage:water_generator_upgrade"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "72566C350A8DBD46"
+					type: "xp_levels"
+					xp_levels: 3
+				}
+			]
+		}
+		{
+			id: "E36D3B24716092EE"
+			x: 6.5d
+			y: 8.5d
+			icon: {
+				id: "functionalstorage:void_upgrade"
+				count: 1
+			}
+			optional: true
+			dependencies: [
+				"94EF9BAD0CC68B94"
+			]
+			tasks: [
+				{
+					id: "CD696DD25AC0D782"
+					type: "item"
+					item: {
+						id: "functionalstorage:void_upgrade"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "3DECC8C5438FBA96"
+					type: "xp_levels"
+					xp_levels: 3
+				}
+			]
+		}
+		{
+			id: "1BDAE54068A44274"
+			x: 8.5d
+			y: 8.5d
+			icon: {
+				id: "functionalstorage:collector_upgrade"
+				count: 1
+			}
+			optional: true
+			dependencies: [
+				"39DDDBA13B3BC629"
+			]
+			tasks: [
+				{
+					id: "E0B668D35304AA84"
+					type: "item"
+					item: {
+						id: "functionalstorage:collector_upgrade"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "FD5EE108F08A5ED8"
+					type: "xp_levels"
+					xp_levels: 3
+				}
+			]
+		}
+		{
+			id: "AE9F87181606AF4A"
+			x: 10.5d
+			y: 8.5d
+			icon: {
+				id: "functionalstorage:redstone_upgrade"
+				count: 1
+			}
+			optional: true
+			dependencies: [
+				"880777933A7972A3"
+			]
+			tasks: [
+				{
+					id: "C80ACA9F022C1BCB"
+					type: "item"
+					item: {
+						id: "functionalstorage:redstone_upgrade"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "00D2250E8898280C"
+					type: "item"
+					item: {
+						id: "minecraft:redstone"
+						count: 1
+					}
+					count: 16
+				}
 			]
 		}
 		{
 			id: "44A8F4160E0A0FD1"
-			x: 3.0d
-			y: 5.0d
-			title: "Sophisticated Barrel"
-			subtitle: "A barrel that you can upgrade instead of replace."
-			description: [
-				"Sophisticated barrels and chests take tier upgrades: basic, copper, iron, gold, diamond, netherite. Each tier adds slots without breaking the block, so nothing inside has to move."
-				"They also take the same kind of upgrades as backpacks."
-			]
+			x: 0.0d
+			y: 14.5d
 			icon: {
 				id: "sophisticatedstorage:barrel"
 				count: 1
 			}
-			dependencies: [
-				"B2930B06D06C5604"
-			]
+			size: 1.75d
+			shape: "rsquare"
 			tasks: [
 				{
 					id: "05A69CE254EDF9A1"
@@ -309,7 +854,7 @@
 						id: "sophisticatedstorage:barrel"
 						count: 1
 					}
-					count: 1
+					count: 2
 				}
 			]
 			rewards: [
@@ -317,24 +862,24 @@
 					id: "6FE1E07C891E0E16"
 					type: "item"
 					item: {
-						id: "minecraft:barrel"
+						id: "minecraft:lever"
 						count: 1
 					}
 					count: 4
 				}
+				{
+					id: "0C30BD0D706B1579"
+					type: "loot"
+					table_id: "1EBBC2B918151958"
+				}
 			]
 		}
 		{
-			id: "D8C129DB3D7AD17D"
-			x: 6.0d
-			y: 5.0d
-			title: "Iron Tier"
-			subtitle: "More room, same barrel."
-			description: [
-				"Use a tier upgrade on the barrel in the world. Everything stays inside."
-			]
+			id: "177F8A83983678C7"
+			x: 2.5d
+			y: 14.5d
 			icon: {
-				id: "sophisticatedstorage:basic_to_iron_tier_upgrade"
+				id: "sophisticatedstorage:basic_to_copper_tier_upgrade"
 				count: 1
 			}
 			dependencies: [
@@ -342,10 +887,44 @@
 			]
 			tasks: [
 				{
+					id: "54DC4B8C301263ED"
+					type: "item"
+					item: {
+						id: "sophisticatedstorage:basic_to_copper_tier_upgrade"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "BE500B1508BC2AED"
+					type: "item"
+					item: {
+						id: "minecraft:copper_ingot"
+						count: 1
+					}
+					count: 16
+				}
+			]
+		}
+		{
+			id: "D8C129DB3D7AD17D"
+			x: 4.5d
+			y: 14.5d
+			icon: {
+				id: "sophisticatedstorage:basic_to_iron_tier_upgrade"
+				count: 1
+			}
+			dependencies: [
+				"177F8A83983678C7"
+			]
+			tasks: [
+				{
 					id: "6027CD5417BA49CC"
 					type: "item"
 					item: {
-						id: "sophisticatedstorage:basic_to_iron_tier_upgrade"
+						id: "sophisticatedstorage:iron_barrel"
 						count: 1
 					}
 					count: 1
@@ -361,21 +940,383 @@
 					}
 					count: 16
 				}
+				{
+					id: "3A475147713D1225"
+					type: "xp_levels"
+					xp_levels: 5
+				}
 			]
 		}
 		{
-			id: "3D9AC8CB35883A98"
-			x: 9.0d
-			y: 5.0d
-			title: "Trash Can"
-			subtitle: "Deletes what you put into it."
-			description: [
-				"For the cobblestone you really do not need. Pipes and funnels can feed it too. Better: put cobblestone into the community goal first."
+			id: "43514A25A75A41BB"
+			x: 6.5d
+			y: 14.5d
+			icon: {
+				id: "sophisticatedstorage:upgrade_base"
+				count: 1
+			}
+			dependencies: [
+				"D8C129DB3D7AD17D"
 			]
+			tasks: [
+				{
+					id: "D3F31DFE6026732F"
+					type: "item"
+					item: {
+						id: "sophisticatedstorage:upgrade_base"
+						count: 1
+					}
+					count: 2
+				}
+			]
+			rewards: [
+				{
+					id: "F92A118249979A6C"
+					type: "item"
+					item: {
+						id: "minecraft:iron_ingot"
+						count: 1
+					}
+					count: 8
+				}
+			]
+		}
+		{
+			id: "346DEBB1C869A0A6"
+			x: 8.5d
+			y: 14.5d
+			icon: {
+				id: "sophisticatedstorage:stack_upgrade_tier_1"
+				count: 1
+			}
+			dependencies: [
+				"43514A25A75A41BB"
+			]
+			tasks: [
+				{
+					id: "A6B00ABBE9FC717F"
+					type: "item"
+					item: {
+						id: "sophisticatedstorage:stack_upgrade_tier_1"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "363E3E48F9BB5C10"
+					type: "item"
+					item: {
+						id: "minecraft:oak_log"
+						count: 1
+					}
+					count: 32
+				}
+				{
+					id: "CE9283D1D5F455DA"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+		}
+		{
+			id: "A5AA055EE166E261"
+			x: 10.5d
+			y: 14.5d
+			icon: {
+				id: "sophisticatedstorage:hopper_upgrade"
+				count: 1
+			}
+			dependencies: [
+				"346DEBB1C869A0A6"
+			]
+			tasks: [
+				{
+					id: "796A2F42997CD7F2"
+					type: "item"
+					item: {
+						id: "sophisticatedstorage:hopper_upgrade"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "FC4EC67041E27ABB"
+					type: "item"
+					item: {
+						id: "minecraft:hopper"
+						count: 1
+					}
+					count: 2
+				}
+				{
+					id: "0B7CA521990FDE6A"
+					type: "xp_levels"
+					xp_levels: 3
+				}
+			]
+		}
+		{
+			id: "3CEC503F60C10794"
+			x: 12.5d
+			y: 14.5d
+			icon: {
+				id: "sophisticatedstorage:controller"
+				count: 1
+			}
+			size: 1.5d
+			shape: "hexagon"
+			dependencies: [
+				"A5AA055EE166E261"
+			]
+			tasks: [
+				{
+					id: "FCAE141AB654E400"
+					type: "item"
+					item: {
+						id: "sophisticatedstorage:controller"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "87B5A1675F3404FB"
+					type: "item"
+					item: {
+						id: "minecraft:comparator"
+						count: 1
+					}
+					count: 2
+				}
+				{
+					id: "80EDF7B3D0E7C0EC"
+					type: "loot"
+					table_id: "870211AF0E412C54"
+				}
+				{
+					id: "C1ED689D7796CEA2"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+		}
+		{
+			id: "9237EF8B25F399B0"
+			x: 0.0d
+			y: 16.5d
+			icon: {
+				id: "sophisticatedstorage:chest"
+				count: 1
+			}
+			optional: true
+			dependencies: [
+				"44A8F4160E0A0FD1"
+			]
+			tasks: [
+				{
+					id: "12D2008D677F2A73"
+					type: "item"
+					item: {
+						id: "sophisticatedstorage:chest"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "F5958A6C0F6A388C"
+					type: "item"
+					item: {
+						id: "minecraft:oak_planks"
+						count: 1
+					}
+					count: 32
+				}
+			]
+		}
+		{
+			id: "EF39DA19C699832B"
+			x: 0.0d
+			y: 18.3d
+			icon: {
+				id: "sophisticatedstorage:packing_tape"
+				count: 1
+			}
+			optional: true
+			dependencies: [
+				"9237EF8B25F399B0"
+			]
+			tasks: [
+				{
+					id: "D6E2F7E2A980E503"
+					type: "item"
+					item: {
+						id: "sophisticatedstorage:packing_tape"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "62FED585A6A21EB7"
+					type: "item"
+					item: {
+						id: "minecraft:slime_ball"
+						count: 1
+					}
+					count: 2
+				}
+			]
+		}
+		{
+			id: "F0B8D7B3372EC244"
+			x: 2.5d
+			y: 16.5d
+			icon: {
+				id: "sophisticatedstorage:basic_tier_upgrade"
+				count: 1
+			}
+			optional: true
+			dependencies: [
+				"177F8A83983678C7"
+			]
+			tasks: [
+				{
+					id: "690C7034D85CEE5C"
+					type: "item"
+					item: {
+						id: "sophisticatedstorage:basic_tier_upgrade"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "C934FE2673B25874"
+					type: "xp_levels"
+					xp_levels: 3
+				}
+			]
+		}
+		{
+			id: "F5B24A8E42E995A1"
+			x: 4.5d
+			y: 16.5d
+			icon: {
+				id: "sophisticatedstorage:iron_to_gold_tier_upgrade"
+				count: 1
+			}
 			optional: true
 			dependencies: [
 				"D8C129DB3D7AD17D"
 			]
+			tasks: [
+				{
+					id: "AABBDF98B11DDB82"
+					type: "item"
+					item: {
+						id: "sophisticatedstorage:gold_barrel"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "FF264AC4DE8B0B87"
+					type: "item"
+					item: {
+						id: "minecraft:gold_ingot"
+						count: 1
+					}
+					count: 8
+				}
+			]
+		}
+		{
+			id: "E24EDDA24E72E84C"
+			x: 8.5d
+			y: 16.5d
+			icon: {
+				id: "sophisticatedstorage:limited_barrel_1"
+				count: 1
+			}
+			optional: true
+			dependencies: [
+				"346DEBB1C869A0A6"
+			]
+			tasks: [
+				{
+					id: "46164F11A5A6C1FC"
+					type: "item"
+					item: {
+						id: "sophisticatedstorage:limited_barrel_1"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "A71BD73CAE93ADE6"
+					type: "xp_levels"
+					xp_levels: 3
+				}
+			]
+		}
+		{
+			id: "32BFA972276FD357"
+			x: 12.5d
+			y: 16.5d
+			icon: {
+				id: "sophisticatedstorage:storage_link"
+				count: 1
+			}
+			optional: true
+			dependencies: [
+				"3CEC503F60C10794"
+			]
+			tasks: [
+				{
+					id: "F1FA15FAF1A37CCC"
+					type: "item"
+					item: {
+						id: "sophisticatedstorage:storage_link"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "1C09D9EFD25DA194"
+					type: "item"
+					item: {
+						id: "minecraft:ender_pearl"
+						count: 1
+					}
+					count: 2
+				}
+			]
+		}
+		{
+			id: "3D9AC8CB35883A98"
+			x: 0.0d
+			y: 22.0d
+			icon: {
+				id: "trashcans:item_trash_can"
+				count: 1
+			}
+			size: 1.5d
+			shape: "rsquare"
 			tasks: [
 				{
 					id: "6971CFA3CADC19A5"
@@ -393,27 +1334,93 @@
 					type: "xp_levels"
 					xp_levels: 3
 				}
+				{
+					id: "4DC1E5FB9D5FAA03"
+					type: "loot"
+					table_id: "1EBBC2B918151958"
+				}
+			]
+		}
+		{
+			id: "EDF911F8B18CBBEF"
+			x: 2.5d
+			y: 22.0d
+			icon: {
+				id: "trashcans:liquid_trash_can"
+				count: 1
+			}
+			optional: true
+			dependencies: [
+				"3D9AC8CB35883A98"
+			]
+			tasks: [
+				{
+					id: "9F372ED8B075AEC4"
+					type: "item"
+					item: {
+						id: "trashcans:liquid_trash_can"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "5F5CD69499A95A8C"
+					type: "xp_levels"
+					xp_levels: 3
+				}
+			]
+		}
+		{
+			id: "5EB6BEEA844AAABE"
+			x: 4.5d
+			y: 22.0d
+			icon: {
+				id: "supplementaries:sack"
+				count: 1
+			}
+			optional: true
+			dependencies: [
+				"3D9AC8CB35883A98"
+			]
+			tasks: [
+				{
+					id: "2523BD19EBF7AC5B"
+					type: "item"
+					item: {
+						id: "supplementaries:sack"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "FAB82ACB36D6DAC8"
+					type: "item"
+					item: {
+						id: "minecraft:string"
+						count: 1
+					}
+					count: 8
+				}
 			]
 		}
 		{
 			id: "901C3EC70E22F8DA"
-			x: 9.0d
-			y: 2.0d
-			title: "Organised"
-			subtitle: "A base where you find things."
-			description: [
-				"A wall of drawers for bulk items, a few barrels for everything else, and a backpack for the trip."
-				"Stage 2 opens iron and copper backpacks, compacting drawers (nuggets to ingots to blocks, all in one) and drawer upgrades."
-			]
+			x: 16.0d
+			y: 9.0d
 			icon: {
-				id: "functionalstorage:oak_4"
+				id: "sophisticatedstorage:iron_barrel"
 				count: 1
 			}
-			size: 1.5d
+			size: 2.5d
 			shape: "gear"
 			dependencies: [
-				"A210E36ADA0F4B7C"
-				"D8C129DB3D7AD17D"
+				"D379A1919AC771B0"
+				"880777933A7972A3"
+				"3CEC503F60C10794"
 			]
 			tasks: [
 				{
@@ -429,24 +1436,121 @@
 					id: "50F2041ACA7A9B1C"
 					type: "item"
 					item: {
-						id: "sophisticatedstorage:barrel"
+						id: "sophisticatedstorage:iron_barrel"
 						count: 1
 					}
-					count: 4
+					count: 2
+				}
+				{
+					id: "3B693C8DFE664717"
+					type: "item"
+					item: {
+						id: "sophisticatedstorage:controller"
+						count: 1
+					}
+					count: 1
 				}
 			]
 			rewards: [
 				{
 					id: "F41797FE037D5FAE"
 					type: "loot"
-					table_id: "870211AF0E412C54"
+					table_id: "B5AA0F94577E6A3C"
 				}
 				{
 					id: "A0A0BD1CC73FCE45"
 					type: "xp_levels"
-					xp_levels: 5
+					xp_levels: 10
 				}
 			]
+		}
+		{
+			id: "8028305A0B04BDE2"
+			x: 16.0d
+			y: 12.5d
+			icon: {
+				id: "minecraft:chest"
+				count: 1
+			}
+			optional: true
+			dependencies: [
+				"901C3EC70E22F8DA"
+			]
+			tasks: [
+				{
+					id: "C0616307053EDDFD"
+					type: "checkmark"
+				}
+			]
+			rewards: [
+				{
+					id: "7214A71E7D7337EC"
+					type: "xp_levels"
+					xp_levels: 3
+				}
+			]
+		}
+	]
+	images: [
+		{
+			id: "1E97F3E9EDDC222E"
+			image: "kronwerke:textures/quests/storage/title.png"
+			x: 5.2d
+			y: -4.0d
+			width: 12.5d
+			height: 1.7d
+			rotation: 0.0d
+			order: 1
+		}
+		{
+			id: "062030B8492A4C45"
+			image: "kronwerke:textures/quests/storage/backpacks.png"
+			x: 0.6d
+			y: -1.85d
+			width: 3.2d
+			height: 0.9d
+			rotation: 0.0d
+			order: 1
+		}
+		{
+			id: "D32DEFC12CBEC759"
+			image: "kronwerke:textures/quests/storage/drawers.png"
+			x: 0.98d
+			y: 4.6d
+			width: 3.95d
+			height: 0.9d
+			rotation: 0.0d
+			order: 1
+		}
+		{
+			id: "D9DAC718A15268E9"
+			image: "kronwerke:textures/quests/storage/chests.png"
+			x: 1.75d
+			y: 12.6d
+			width: 5.5d
+			height: 0.9d
+			rotation: 0.0d
+			order: 1
+		}
+		{
+			id: "DCD503A73A97BE09"
+			image: "kronwerke:textures/quests/storage/cleanup.png"
+			x: 0.7d
+			y: 20.3d
+			width: 3.37d
+			height: 0.9d
+			rotation: 0.0d
+			order: 1
+		}
+		{
+			id: "210DAA26300E71B8"
+			image: "kronwerke:textures/quests/storage/goal.png"
+			x: 16.0d
+			y: 6.6d
+			width: 1.39d
+			height: 0.9d
+			rotation: 0.0d
+			order: 1
 		}
 	]
 }

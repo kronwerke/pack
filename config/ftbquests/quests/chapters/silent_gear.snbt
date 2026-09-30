@@ -1,7 +1,6 @@
 {
 	id: "74275127051E7775"
 	filename: "silent_gear"
-	title: "Silent Gear"
 	icon: {
 		id: "silentgear:pickaxe"
 		count: 1
@@ -10,21 +9,11 @@
 	order_index: 6
 	default_quest_shape: "circle"
 	default_hide_dependency_lines: false
-	subtitle: [
-		"Tools built from parts."
-	]
 	quests: [
 		{
 			id: "EAAAFD04D2721064"
 			x: 0.0d
 			y: 0.0d
-			title: "Silent Gear"
-			subtitle: "Tools made from parts. The material decides everything."
-			description: [
-				"A Silent Gear tool is a head and a rod, plus extras like a binding or a grip. Every material gives its own stats and traits, and you can mix them."
-				""
-				"It starts with dirt and cobblestone. Craft &6Crude Tool Parts&r: cobblestone, dirt and a stick."
-			]
 			icon: {
 				id: "silentgear:pickaxe"
 				count: 1
@@ -34,12 +23,7 @@
 			tasks: [
 				{
 					id: "38FC04832D0B9F5C"
-					type: "item"
-					item: {
-						id: "silentgear:crude_tool_parts"
-						count: 1
-					}
-					count: 4
+					type: "checkmark"
 				}
 			]
 			rewards: [
@@ -47,7 +31,7 @@
 					id: "A1012D775F1911C2"
 					type: "item"
 					item: {
-						id: "minecraft:cobblestone"
+						id: "minecraft:stick"
 						count: 1
 					}
 					count: 32
@@ -60,20 +44,189 @@
 			]
 		}
 		{
-			id: "D410F345AE764B6F"
-			x: 3.0d
-			y: -2.0d
-			title: "Stone Anvil"
-			subtitle: "A workbench for knives."
-			description: [
-				"Cobblestone and dirt. Place a log on it and cut it with a knife."
+			id: "A92213BF837C450A"
+			x: 2.5d
+			y: 0.0d
+			icon: {
+				id: "silentgear:blueprint_package"
+				count: 1
+			}
+			dependencies: [
+				"EAAAFD04D2721064"
 			]
+			tasks: [
+				{
+					id: "5D8F95E6EFBF0A00"
+					type: "item"
+					item: {
+						id: "silentgear:pickaxe_blueprint"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "35A073A6C3287BFD"
+					type: "item"
+					item: {
+						id: "minecraft:paper"
+						count: 1
+					}
+					count: 8
+				}
+				{
+					id: "5C1884A386995A5E"
+					type: "xp_levels"
+					xp_levels: 2
+				}
+			]
+		}
+		{
+			id: "CFE18D935573B6E9"
+			x: 4.5d
+			y: 0.0d
+			icon: {
+				id: "silentgear:blueprint_paper"
+				count: 1
+			}
+			dependencies: [
+				"A92213BF837C450A"
+			]
+			tasks: [
+				{
+					id: "CB57FE438E3F1404"
+					type: "item"
+					item: {
+						id: "silentgear:blueprint_paper"
+						count: 1
+					}
+					count: 8
+				}
+			]
+			rewards: [
+				{
+					id: "2BB5E668D01F950A"
+					type: "item"
+					item: {
+						id: "minecraft:sugar_cane"
+						count: 1
+					}
+					count: 16
+				}
+				{
+					id: "BC4B913B3EB1FDFA"
+					type: "item"
+					item: {
+						id: "minecraft:lapis_lazuli"
+						count: 1
+					}
+					count: 4
+				}
+			]
+		}
+		{
+			id: "9CD016B0B821A4FD"
+			x: 2.5d
+			y: 2.0d
+			icon: {
+				id: "silentgear:material_book"
+				count: 1
+			}
+			optional: true
+			dependencies: [
+				"A92213BF837C450A"
+			]
+			tasks: [
+				{
+					id: "096A8C57DEF33383"
+					type: "item"
+					item: {
+						id: "silentgear:material_book"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "18AAB5A817E8159A"
+					type: "xp_levels"
+					xp_levels: 3
+				}
+			]
+		}
+		{
+			id: "AF512F0BF2B89FF9"
+			x: 8.0d
+			y: 0.0d
+			icon: {
+				id: "silentgear:crude_tool_parts"
+				count: 1
+			}
+			tasks: [
+				{
+					id: "45A1D5F3BFA8DD7F"
+					type: "item"
+					item: {
+						id: "silentgear:crude_tool_parts"
+						count: 1
+					}
+					count: 4
+				}
+			]
+			rewards: [
+				{
+					id: "FFFBF4DF05260303"
+					type: "item"
+					item: {
+						id: "minecraft:cobblestone"
+						count: 1
+					}
+					count: 32
+				}
+			]
+		}
+		{
+			id: "13696C7BCABFF6AA"
+			x: 10.0d
+			y: 0.0d
+			icon: {
+				id: "silentgear:crude_knife"
+				count: 1
+			}
+			dependencies: [
+				"AF512F0BF2B89FF9"
+			]
+			tasks: [
+				{
+					id: "B786E40B6832329A"
+					type: "item"
+					item: {
+						id: "silentgear:crude_knife"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "5C69278D10613AF9"
+					type: "xp_levels"
+					xp_levels: 2
+				}
+			]
+		}
+		{
+			id: "D410F345AE764B6F"
+			x: 10.0d
+			y: 2.0d
 			icon: {
 				id: "silentgear:stone_anvil"
 				count: 1
 			}
 			dependencies: [
-				"EAAAFD04D2721064"
+				"AF512F0BF2B89FF9"
 			]
 			tasks: [
 				{
@@ -99,60 +252,20 @@
 			]
 		}
 		{
-			id: "C30E48223DAFD0CA"
-			x: 3.0d
-			y: 2.0d
-			title: "Crude Knife"
-			subtitle: "Cuts logs into template boards."
-			description: [
-				"Cobblestone and Crude Tool Parts. It breaks after a while, so make two."
-			]
-			icon: {
-				id: "silentgear:crude_knife"
-				count: 1
-			}
-			dependencies: [
-				"EAAAFD04D2721064"
-			]
-			tasks: [
-				{
-					id: "3DA35F197A0E1D6B"
-					type: "item"
-					item: {
-						id: "silentgear:crude_knife"
-						count: 1
-					}
-					count: 1
-				}
-			]
-			rewards: [
-				{
-					id: "37A207CA7811B88C"
-					type: "xp_levels"
-					xp_levels: 3
-				}
-			]
-		}
-		{
-			id: "26AD2EADF99F03A3"
-			x: 6.0d
+			id: "0AB7B71E7A9DBD86"
+			x: 12.0d
 			y: 0.0d
-			title: "Template Boards"
-			subtitle: "Six boards from one log."
-			description: [
-				"Put a log on the Stone Anvil and use the knife on it. Boards become templates, templates become tool heads."
-			]
 			icon: {
 				id: "silentgear:template_board"
 				count: 1
 			}
 			dependencies: [
+				"13696C7BCABFF6AA"
 				"D410F345AE764B6F"
-				"C30E48223DAFD0CA"
 			]
 			tasks: [
 				{
-					id: "D6418199364E7827"
+					id: "0E7F467E357F32BC"
 					type: "item"
 					item: {
 						id: "silentgear:template_board"
@@ -163,7 +276,7 @@
 			]
 			rewards: [
 				{
-					id: "C9538B14D9559FE4"
+					id: "806423041CB8292B"
 					type: "item"
 					item: {
 						id: "minecraft:oak_log"
@@ -171,27 +284,88 @@
 					}
 					count: 16
 				}
+				{
+					id: "4B782BA62E55B0AF"
+					type: "xp_levels"
+					xp_levels: 3
+				}
 			]
 		}
 		{
-			id: "BC51CB31BC04BCF8"
-			x: 9.0d
-			y: -2.0d
-			title: "Rods"
-			subtitle: "The handle of every tool."
-			description: [
-				"A &6Rod Template&r and two sticks make four rods. Better rods (iron, bone, blaze) add their own stats later."
+			id: "A56D9240BB25B222"
+			x: 14.0d
+			y: 0.0d
+			icon: {
+				id: "silentgear:pickaxe_template"
+				count: 1
+			}
+			optional: true
+			dependencies: [
+				"0AB7B71E7A9DBD86"
 			]
+			tasks: [
+				{
+					id: "CC2CF238F42905F7"
+					type: "item"
+					item: {
+						id: "silentgear:pickaxe_template"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "716765B5DFEF1E7D"
+					type: "xp_levels"
+					xp_levels: 2
+				}
+			]
+		}
+		{
+			id: "A62B27F826F1C5C1"
+			x: 14.0d
+			y: 2.0d
+			icon: {
+				id: "silentgear:blueprint_book"
+				count: 1
+			}
+			optional: true
+			dependencies: [
+				"0AB7B71E7A9DBD86"
+			]
+			tasks: [
+				{
+					id: "D89E268EE2D69F1C"
+					type: "item"
+					item: {
+						id: "silentgear:blueprint_book"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "8885B870CAAAC077"
+					type: "xp_levels"
+					xp_levels: 3
+				}
+			]
+		}
+		{
+			id: "F3C1BF990844FCC7"
+			x: 0.0d
+			y: 6.5d
 			icon: {
 				id: "silentgear:rod"
 				count: 1
 			}
-			dependencies: [
-				"26AD2EADF99F03A3"
-			]
+			size: 1.5d
+			shape: "square"
 			tasks: [
 				{
-					id: "3DD08E2EBD9AE29F"
+					id: "EF1371DDE5D136BB"
 					type: "item"
 					item: {
 						id: "silentgear:rod"
@@ -202,7 +376,7 @@
 			]
 			rewards: [
 				{
-					id: "CE1221B54C6EC165"
+					id: "A951C11D25EBC7B3"
 					type: "item"
 					item: {
 						id: "minecraft:stick"
@@ -214,20 +388,14 @@
 		}
 		{
 			id: "74D5258ACC4A915E"
-			x: 9.0d
-			y: 2.0d
-			title: "Pickaxe Head"
-			subtitle: "A template and three of the same material."
-			description: [
-				"Craft a &6Pickaxe Template&r from boards and sticks, then put it in the grid with three ingots or gems of one material. Iron is a good start."
-				"Templates are used up. A &6Blueprint&r made from Blueprint Paper does the same and can be used forever."
-			]
+			x: 2.5d
+			y: 6.5d
 			icon: {
 				id: "silentgear:pickaxe_head"
 				count: 1
 			}
 			dependencies: [
-				"26AD2EADF99F03A3"
+				"F3C1BF990844FCC7"
 			]
 			tasks: [
 				{
@@ -248,26 +416,21 @@
 						id: "minecraft:iron_ingot"
 						count: 1
 					}
-					count: 8
+					count: 6
 				}
 			]
 		}
 		{
 			id: "8CB746E24B79A224"
-			x: 12.0d
-			y: 0.0d
-			title: "Your Own Pickaxe"
-			subtitle: "Head plus rod."
-			description: [
-				"Put the head and a rod in the crafting grid. Hover over the pickaxe to see its stats and traits. When it breaks, it does not vanish: it stays broken until you repair it."
-			]
+			x: 5.0d
+			y: 6.5d
 			icon: {
 				id: "silentgear:pickaxe"
 				count: 1
 			}
-			size: 1.5d
+			size: 2.0d
+			shape: "hexagon"
 			dependencies: [
-				"BC51CB31BC04BCF8"
 				"74D5258ACC4A915E"
 			]
 			tasks: [
@@ -287,19 +450,19 @@
 					type: "loot"
 					table_id: "870211AF0E412C54"
 				}
+				{
+					id: "C9EA9975BC2463F4"
+					type: "xp_levels"
+					xp_levels: 5
+				}
 			]
 		}
 		{
-			id: "8123A75843035695"
-			x: 15.0d
-			y: 2.0d
-			title: "Repair Kit"
-			subtitle: "Fix your gear without losing it."
-			description: [
-				"Fill a repair kit with materials, then combine it with the damaged tool in the grid. The material should match what the tool is made of for the best result."
-			]
+			id: "848023F0CD98A515"
+			x: 5.0d
+			y: 8.8d
 			icon: {
-				id: "silentgear:crude_repair_kit"
+				id: "minecraft:spyglass"
 				count: 1
 			}
 			dependencies: [
@@ -307,46 +470,35 @@
 			]
 			tasks: [
 				{
-					id: "7F8848DB6111E78B"
-					type: "item"
-					item: {
-						id: "silentgear:crude_repair_kit"
-						count: 1
-					}
-					count: 1
+					id: "2C4A0B2BD543A1C9"
+					type: "checkmark"
 				}
 			]
 			rewards: [
 				{
-					id: "5E7229DF863CBA33"
-					type: "item"
-					item: {
-						id: "minecraft:iron_ingot"
-						count: 1
-					}
-					count: 8
+					id: "E579EB50D5A01655"
+					type: "xp_levels"
+					xp_levels: 3
 				}
 			]
 		}
 		{
-			id: "51A27D258E7BDDFA"
-			x: 15.0d
-			y: -2.0d
-			title: "Blueprints"
-			subtitle: "Reusable templates."
-			description: [
-				"Blueprint Paper makes blueprints that are never used up. Worth it for the tools you make again and again."
-			]
-			optional: true
+			id: "569763008F19B86D"
+			x: 7.5d
+			y: 6.5d
+			icon: {
+				id: "silentgear:binding"
+				count: 1
+			}
 			dependencies: [
 				"8CB746E24B79A224"
 			]
 			tasks: [
 				{
-					id: "D80ADE9A390B05F2"
+					id: "74DA77221C7A8C6D"
 					type: "item"
 					item: {
-						id: "silentgear:pickaxe_blueprint"
+						id: "silentgear:binding"
 						count: 1
 					}
 					count: 1
@@ -354,10 +506,10 @@
 			]
 			rewards: [
 				{
-					id: "228D3DE98E6B6A81"
+					id: "6F2D7C8D8271E42C"
 					type: "item"
 					item: {
-						id: "minecraft:paper"
+						id: "minecraft:string"
 						count: 1
 					}
 					count: 16
@@ -365,36 +517,218 @@
 			]
 		}
 		{
-			id: "19A83D92C4A6A0D2"
-			x: 18.0d
-			y: 0.0d
-			title: "A Full Kit"
-			subtitle: "Sword and axe, your way."
-			description: [
-				"Same idea, other templates: a sword blade and an axe head. Try different materials and compare the traits."
-				"Stage 2 opens &6Crimson Iron&r, &6Crimson Steel&r and &6Blaze Gold&r, the first materials that make Silent Gear really strong."
-			]
+			id: "405367F09EC096FA"
+			x: 9.5d
+			y: 6.5d
 			icon: {
-				id: "silentgear:sword"
+				id: "silentgear:grip"
 				count: 1
 			}
-			size: 1.5d
-			shape: "gear"
 			dependencies: [
-				"8123A75843035695"
+				"569763008F19B86D"
 			]
 			tasks: [
 				{
-					id: "2F5D47FDE32DF8E5"
+					id: "60B700AAAF587E77"
 					type: "item"
 					item: {
-						id: "silentgear:sword"
+						id: "silentgear:grip"
 						count: 1
 					}
 					count: 1
 				}
+			]
+			rewards: [
 				{
-					id: "6F8C2AA694EC0B11"
+					id: "BA1FAC63549009DF"
+					type: "item"
+					item: {
+						id: "minecraft:leather"
+						count: 1
+					}
+					count: 6
+				}
+			]
+		}
+		{
+			id: "8A8331C8B4E4F190"
+			x: 11.5d
+			y: 6.5d
+			icon: {
+				id: "silentgear:tip"
+				count: 1
+			}
+			dependencies: [
+				"405367F09EC096FA"
+			]
+			tasks: [
+				{
+					id: "DEBA4CEB199D3957"
+					type: "item"
+					item: {
+						id: "silentgear:tip"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "714B94F557300D09"
+					type: "item"
+					item: {
+						id: "minecraft:iron_ingot"
+						count: 1
+					}
+					count: 8
+				}
+				{
+					id: "3F6953E8226C39E8"
+					type: "xp_levels"
+					xp_levels: 3
+				}
+			]
+		}
+		{
+			id: "AA4F4A2424EF0F38"
+			x: 0.0d
+			y: 8.6d
+			icon: {
+				id: "silentgear:iron_rod"
+				count: 1
+			}
+			optional: true
+			dependencies: [
+				"F3C1BF990844FCC7"
+			]
+			tasks: [
+				{
+					id: "65EE61110019AFC3"
+					type: "item"
+					item: {
+						id: "silentgear:iron_rod"
+						count: 1
+					}
+					count: 4
+				}
+			]
+			rewards: [
+				{
+					id: "6F033749BC49D265"
+					type: "xp_levels"
+					xp_levels: 2
+				}
+			]
+		}
+		{
+			id: "7EABFB9EC82043D8"
+			x: 7.0d
+			y: 8.6d
+			icon: {
+				id: "silentgear:sinew_fiber"
+				count: 1
+			}
+			optional: true
+			dependencies: [
+				"569763008F19B86D"
+			]
+			tasks: [
+				{
+					id: "8BE5A0C89A13897C"
+					type: "item"
+					item: {
+						id: "silentgear:sinew_fiber"
+						count: 1
+					}
+					count: 3
+				}
+			]
+			rewards: [
+				{
+					id: "9BCB7F7A99701BD7"
+					type: "item"
+					item: {
+						id: "minecraft:cooked_beef"
+						count: 1
+					}
+					count: 8
+				}
+			]
+		}
+		{
+			id: "A0E0334D644B4B2E"
+			x: 8.8d
+			y: 8.6d
+			icon: {
+				id: "silentgear:flax_string"
+				count: 1
+			}
+			optional: true
+			dependencies: [
+				"569763008F19B86D"
+			]
+			tasks: [
+				{
+					id: "883070396291DFC0"
+					type: "item"
+					item: {
+						id: "silentgear:flax_string"
+						count: 1
+					}
+					count: 4
+				}
+			]
+			rewards: [
+				{
+					id: "89EF4876555DDF22"
+					type: "item"
+					item: {
+						id: "minecraft:bone_meal"
+						count: 1
+					}
+					count: 16
+				}
+			]
+		}
+		{
+			id: "1DBFA830E320D2D7"
+			x: 11.5d
+			y: 8.6d
+			icon: {
+				id: "minecraft:writable_book"
+				count: 1
+			}
+			optional: true
+			dependencies: [
+				"8A8331C8B4E4F190"
+			]
+			tasks: [
+				{
+					id: "E076857695CFA02C"
+					type: "checkmark"
+				}
+			]
+			rewards: [
+				{
+					id: "047EA6B5FC722417"
+					type: "xp_levels"
+					xp_levels: 3
+				}
+			]
+		}
+		{
+			id: "C96E8BE753E8080E"
+			x: 0.0d
+			y: 13.0d
+			icon: {
+				id: "silentgear:axe"
+				count: 1
+			}
+			size: 1.5d
+			shape: "square"
+			tasks: [
+				{
+					id: "F9E4DC0632FA01C8"
 					type: "item"
 					item: {
 						id: "silentgear:axe"
@@ -405,16 +739,565 @@
 			]
 			rewards: [
 				{
-					id: "D8209DD44DBAD109"
+					id: "C11D92B1781890BF"
+					type: "item"
+					item: {
+						id: "minecraft:oak_log"
+						count: 1
+					}
+					count: 16
+				}
+			]
+		}
+		{
+			id: "E59F51EC3C4E4C86"
+			x: 2.5d
+			y: 13.0d
+			icon: {
+				id: "silentgear:shovel"
+				count: 1
+			}
+			dependencies: [
+				"C96E8BE753E8080E"
+			]
+			tasks: [
+				{
+					id: "2904FDE5E7D2B8F9"
+					type: "item"
+					item: {
+						id: "silentgear:shovel"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "75022F16A4EB114B"
+					type: "xp_levels"
+					xp_levels: 3
+				}
+			]
+		}
+		{
+			id: "1D998758FB2F7CBE"
+			x: 4.5d
+			y: 13.0d
+			icon: {
+				id: "silentgear:sword"
+				count: 1
+			}
+			dependencies: [
+				"E59F51EC3C4E4C86"
+			]
+			tasks: [
+				{
+					id: "6AF489ACC1597D9D"
+					type: "item"
+					item: {
+						id: "silentgear:sword"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "69B756887C67CD1D"
 					type: "loot"
-					table_id: "870211AF0E412C54"
+					table_id: "1EBBC2B918151958"
 				}
 				{
-					id: "F2A9A28A83E1AF90"
+					id: "D4B6D454561C0E8D"
+					type: "xp_levels"
+					xp_levels: 3
+				}
+			]
+		}
+		{
+			id: "166777516EC1EE91"
+			x: 6.5d
+			y: 13.0d
+			icon: {
+				id: "silentgear:hammer"
+				count: 1
+			}
+			dependencies: [
+				"1D998758FB2F7CBE"
+			]
+			tasks: [
+				{
+					id: "DC9C34C4FF083310"
+					type: "item"
+					item: {
+						id: "silentgear:hammer"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "FBCA6C2743DDDCA0"
+					type: "item"
+					item: {
+						id: "minecraft:iron_ingot"
+						count: 1
+					}
+					count: 12
+				}
+				{
+					id: "CA6C8FDF0A7E8719"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+		}
+		{
+			id: "A6FD5D2A6517A395"
+			x: 2.5d
+			y: 15.0d
+			icon: {
+				id: "silentgear:helmet"
+				count: 1
+			}
+			optional: true
+			dependencies: [
+				"1D998758FB2F7CBE"
+			]
+			tasks: [
+				{
+					id: "0E8C7DD4653CF056"
+					type: "item"
+					item: {
+						id: "silentgear:helmet"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "C7BC3E973ACA4818"
+					type: "item"
+					item: {
+						id: "minecraft:leather"
+						count: 1
+					}
+					count: 4
+				}
+			]
+		}
+		{
+			id: "C30E48223DAFD0CA"
+			x: 4.5d
+			y: 15.0d
+			icon: {
+				id: "silentgear:knife"
+				count: 1
+			}
+			optional: true
+			dependencies: [
+				"1D998758FB2F7CBE"
+			]
+			tasks: [
+				{
+					id: "3DA35F197A0E1D6B"
+					type: "item"
+					item: {
+						id: "silentgear:knife"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "37A207CA7811B88C"
+					type: "xp_levels"
+					xp_levels: 3
+				}
+			]
+		}
+		{
+			id: "60D99C6145C42CE9"
+			x: 6.5d
+			y: 15.0d
+			icon: {
+				id: "silentgear:sickle"
+				count: 1
+			}
+			optional: true
+			dependencies: [
+				"166777516EC1EE91"
+			]
+			tasks: [
+				{
+					id: "30F161136BDF1F97"
+					type: "item"
+					item: {
+						id: "silentgear:sickle"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "FF8947839848F4F9"
+					type: "item"
+					item: {
+						id: "minecraft:wheat_seeds"
+						count: 1
+					}
+					count: 16
+				}
+			]
+		}
+		{
+			id: "75395000DC1488E3"
+			x: 8.5d
+			y: 15.0d
+			icon: {
+				id: "silentgear:paxel"
+				count: 1
+			}
+			optional: true
+			dependencies: [
+				"166777516EC1EE91"
+			]
+			tasks: [
+				{
+					id: "D7A426000C801082"
+					type: "item"
+					item: {
+						id: "silentgear:paxel"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "3A145ED7C06EA2DD"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+		}
+		{
+			id: "53BA9FC9153E9BD5"
+			x: 0.0d
+			y: 19.5d
+			icon: {
+				id: "silentgear:crude_repair_kit"
+				count: 1
+			}
+			size: 1.5d
+			shape: "square"
+			tasks: [
+				{
+					id: "7EF9F7BCE225FDAE"
+					type: "checkmark"
+				}
+			]
+			rewards: [
+				{
+					id: "4760132D0FADE7D3"
+					type: "xp_levels"
+					xp_levels: 2
+				}
+			]
+		}
+		{
+			id: "59CD1C187DA5DB28"
+			x: 2.5d
+			y: 19.5d
+			icon: {
+				id: "silentgear:crude_repair_kit"
+				count: 1
+			}
+			dependencies: [
+				"53BA9FC9153E9BD5"
+			]
+			tasks: [
+				{
+					id: "6270CDE1434D79A2"
+					type: "item"
+					item: {
+						id: "silentgear:crude_repair_kit"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "7EFA4755D963EA71"
+					type: "item"
+					item: {
+						id: "minecraft:iron_ingot"
+						count: 1
+					}
+					count: 8
+				}
+				{
+					id: "08F057669C02B81F"
+					type: "xp_levels"
+					xp_levels: 3
+				}
+			]
+		}
+		{
+			id: "55991B28EA0CB93E"
+			x: 4.5d
+			y: 19.5d
+			icon: {
+				id: "silentgear:binding"
+				count: 1
+			}
+			dependencies: [
+				"59CD1C187DA5DB28"
+			]
+			tasks: [
+				{
+					id: "F05C75F7D2268305"
+					type: "checkmark"
+				}
+			]
+			rewards: [
+				{
+					id: "A7811FCC80857661"
+					type: "xp_levels"
+					xp_levels: 3
+				}
+			]
+		}
+		{
+			id: "6D82B0CD4091CC36"
+			x: 6.5d
+			y: 19.5d
+			icon: {
+				id: "silentgear:mod_kit"
+				count: 1
+			}
+			optional: true
+			dependencies: [
+				"55991B28EA0CB93E"
+			]
+			tasks: [
+				{
+					id: "720F421C2D871357"
+					type: "item"
+					item: {
+						id: "silentgear:mod_kit"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "26CCE9CDB1311745"
+					type: "xp_levels"
+					xp_levels: 2
+				}
+			]
+		}
+		{
+			id: "637DDD3E3F186391"
+			x: 2.5d
+			y: 21.5d
+			icon: {
+				id: "silentgear:sturdy_repair_kit"
+				count: 1
+			}
+			optional: true
+			dependencies: [
+				"59CD1C187DA5DB28"
+			]
+			tasks: [
+				{
+					id: "179B325D3995C5DC"
+					type: "item"
+					item: {
+						id: "silentgear:sturdy_repair_kit"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "05D792E7F0B13D65"
+					type: "xp_levels"
+					xp_levels: 3
+				}
+			]
+		}
+		{
+			id: "C82BE2CA0AF0354A"
+			x: 16.0d
+			y: 10.0d
+			icon: {
+				id: "silentgear:hammer"
+				count: 1
+			}
+			size: 2.5d
+			shape: "gear"
+			dependencies: [
+				"8A8331C8B4E4F190"
+				"166777516EC1EE91"
+				"55991B28EA0CB93E"
+			]
+			tasks: [
+				{
+					id: "EB4AA57AD63FD4AE"
+					type: "item"
+					item: {
+						id: "silentgear:pickaxe"
+						count: 1
+					}
+					count: 1
+				}
+				{
+					id: "5B6B46FA8E02A007"
+					type: "item"
+					item: {
+						id: "silentgear:axe"
+						count: 1
+					}
+					count: 1
+				}
+				{
+					id: "8E37ECA6F5127BE7"
+					type: "item"
+					item: {
+						id: "silentgear:sword"
+						count: 1
+					}
+					count: 1
+				}
+				{
+					id: "C4C64F8F3B0E14A1"
+					type: "item"
+					item: {
+						id: "silentgear:hammer"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "6CE6F539BE99FC1E"
+					type: "loot"
+					table_id: "B5AA0F94577E6A3C"
+				}
+				{
+					id: "BDEE39B5299B1D5F"
 					type: "xp_levels"
 					xp_levels: 10
 				}
 			]
+		}
+		{
+			id: "396842F2E1B785BA"
+			x: 16.0d
+			y: 13.5d
+			icon: {
+				id: "minecraft:netherrack"
+				count: 1
+			}
+			optional: true
+			dependencies: [
+				"C82BE2CA0AF0354A"
+			]
+			tasks: [
+				{
+					id: "A75DD82087E9097C"
+					type: "checkmark"
+				}
+			]
+			rewards: [
+				{
+					id: "6DAEAC400D310F75"
+					type: "xp_levels"
+					xp_levels: 3
+				}
+			]
+		}
+	]
+	images: [
+		{
+			id: "EA84245A938CE4E9"
+			image: "kronwerke:textures/quests/silent_gear/title.png"
+			x: 4.4d
+			y: -4.0d
+			width: 7.89d
+			height: 1.8d
+			rotation: 0.0d
+			order: 1
+		}
+		{
+			id: "3EFAEEE2081F616C"
+			image: "kronwerke:textures/quests/silent_gear/first_steps.png"
+			x: 1.4d
+			y: -1.85d
+			width: 4.82d
+			height: 0.9d
+			rotation: 0.0d
+			order: 1
+		}
+		{
+			id: "634B628BC60E7AD8"
+			image: "kronwerke:textures/quests/silent_gear/templates.png"
+			x: 9.6d
+			y: -1.85d
+			width: 3.17d
+			height: 0.9d
+			rotation: 0.0d
+			order: 1
+		}
+		{
+			id: "106F01FC8A439084"
+			image: "kronwerke:textures/quests/silent_gear/parts.png"
+			x: 0.42d
+			y: 4.6d
+			width: 2.84d
+			height: 0.9d
+			rotation: 0.0d
+			order: 1
+		}
+		{
+			id: "71EC51597FCF864B"
+			image: "kronwerke:textures/quests/silent_gear/tools.png"
+			x: 0.83d
+			y: 11.1d
+			width: 3.66d
+			height: 0.9d
+			rotation: 0.0d
+			order: 1
+		}
+		{
+			id: "CE6ED4985701626F"
+			image: "kronwerke:textures/quests/silent_gear/repair.png"
+			x: 2.54d
+			y: 17.6d
+			width: 7.08d
+			height: 0.9d
+			rotation: 0.0d
+			order: 1
+		}
+		{
+			id: "B73D60EF4D252E62"
+			image: "kronwerke:textures/quests/silent_gear/goal.png"
+			x: 16.0d
+			y: 7.6d
+			width: 1.39d
+			height: 0.9d
+			rotation: 0.0d
+			order: 1
 		}
 	]
 }

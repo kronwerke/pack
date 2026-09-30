@@ -1,7 +1,6 @@
 {
 	id: "2EE3D32B8FC983B7"
 	filename: "botania"
-	title: "Botania"
 	icon: {
 		id: "botania:pure_daisy"
 		count: 1
@@ -10,21 +9,11 @@
 	order_index: 3
 	default_quest_shape: "circle"
 	default_hide_dependency_lines: false
-	subtitle: [
-		"Flowers, mana and the first pool."
-	]
 	quests: [
 		{
 			id: "9B8E811286D510AF"
 			x: 0.0d
 			y: 0.0d
-			title: "Botania"
-			subtitle: "Magic from flowers, no machines, no power cables."
-			description: [
-				"Botania is technology made of plants. Special flowers make &bmana&r, Mana Spreaders shoot it across the base, Mana Pools store it and turn items into better items."
-				""
-				"The &6Lexica Botania&r is the whole manual. A book and a sapling, shapeless."
-			]
 			icon: {
 				id: "botania:lexica_botania"
 				count: 1
@@ -61,16 +50,10 @@
 		}
 		{
 			id: "C868D3E932E58562"
-			x: 3.0d
+			x: 2.5d
 			y: 0.0d
-			title: "Mystical Petals"
-			subtitle: "Sixteen colours of flowers that only grow here."
-			description: [
-				"Mystical Flowers grow in patches on grass in most biomes. Craft a flower into two petals. &6Floral Fertilizer&r on grass makes new ones grow."
-				"Collect every colour you find. Almost every Botania recipe is a list of petals."
-			]
 			icon: {
-				id: "botania:white_mystical_flower"
+				id: "botania:white_mystical_petal"
 				count: 1
 			}
 			dependencies: [
@@ -100,18 +83,73 @@
 			]
 		}
 		{
-			id: "76B19AD46F39E477"
-			x: 6.0d
-			y: 0.0d
-			title: "Petal Apothecary"
-			subtitle: "Where special flowers are made."
-			description: [
-				"Fill the apothecary with a water bucket, throw in the petals of a recipe, then throw in a seed to finish it. The Lexica lists what each flower needs."
+			id: "3459C39EF219EF00"
+			x: 2.5d
+			y: 2.2d
+			optional: true
+			dependencies: [
+				"C868D3E932E58562"
 			]
+			tasks: [
+				{
+					id: "546F4641F3C3391D"
+					type: "item"
+					item: {
+						id: "botania:floral_fertilizer"
+						count: 1
+					}
+					count: 4
+				}
+			]
+			rewards: [
+				{
+					id: "15011F4BC92044A7"
+					type: "item"
+					item: {
+						id: "minecraft:bone_meal"
+						count: 1
+					}
+					count: 32
+				}
+			]
+		}
+		{
+			id: "DCB343338207B5C7"
+			x: 4.5d
+			y: 2.2d
+			optional: true
+			dependencies: [
+				"C868D3E932E58562"
+			]
+			tasks: [
+				{
+					id: "0C5C28C3D817BB3A"
+					type: "item"
+					item: {
+						id: "botania:flower_pouch"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "CB8A64E5BBE9657B"
+					type: "xp_levels"
+					xp_levels: 3
+				}
+			]
+		}
+		{
+			id: "76B19AD46F39E477"
+			x: 5.0d
+			y: 0.0d
 			icon: {
 				id: "botania:petal_apothecary"
 				count: 1
 			}
+			size: 1.5d
+			shape: "square"
 			dependencies: [
 				"C868D3E932E58562"
 			]
@@ -136,23 +174,27 @@
 					}
 					count: 16
 				}
+				{
+					id: "6F0F75CBC81A6EA5"
+					type: "item"
+					item: {
+						id: "minecraft:water_bucket"
+						count: 1
+					}
+					count: 1
+				}
 			]
 		}
 		{
 			id: "ED435C6A3BC3D3CA"
-			x: 9.0d
+			x: 7.5d
 			y: 0.0d
-			title: "Pure Daisy"
-			subtitle: "Turns stone and wood into their living versions."
-			description: [
-				"Four white petals. Place the Pure Daisy and put stone or logs in the eight blocks around it. After a short while stone becomes &6Livingrock&r and logs become &6Livingwood&r."
-				"Make two or three daisies, you will need a lot of both."
-			]
 			icon: {
 				id: "botania:pure_daisy"
 				count: 1
 			}
-			size: 1.5d
+			size: 2.0d
+			shape: "hexagon"
 			dependencies: [
 				"76B19AD46F39E477"
 			]
@@ -189,14 +231,43 @@
 			]
 		}
 		{
-			id: "412256F0A2AF34B5"
-			x: 12.0d
-			y: 0.0d
-			title: "Livingwood and Livingrock"
-			subtitle: "The building blocks of Botania."
-			description: [
-				"Everything that moves or holds mana is made of these two."
+			id: "D6EEF29F1CBC1249"
+			x: 10.0d
+			y: -1.2d
+			icon: {
+				id: "botania:livingwood_log"
+				count: 1
+			}
+			dependencies: [
+				"ED435C6A3BC3D3CA"
 			]
+			tasks: [
+				{
+					id: "360F4BD31DB06DA1"
+					type: "item"
+					item: {
+						id: "botania:livingwood_log"
+						count: 1
+					}
+					count: 16
+				}
+			]
+			rewards: [
+				{
+					id: "0620965240254980"
+					type: "item"
+					item: {
+						id: "minecraft:oak_log"
+						count: 1
+					}
+					count: 32
+				}
+			]
+		}
+		{
+			id: "4FF6E9B7E297083E"
+			x: 10.0d
+			y: 1.2d
 			icon: {
 				id: "botania:livingrock"
 				count: 1
@@ -206,16 +277,7 @@
 			]
 			tasks: [
 				{
-					id: "3A827DAD2F4B12E1"
-					type: "item"
-					item: {
-						id: "botania:livingwood_log"
-						count: 1
-					}
-					count: 16
-				}
-				{
-					id: "421A94C1332CAEF3"
+					id: "64C55F17B9033CCC"
 					type: "item"
 					item: {
 						id: "botania:livingrock"
@@ -226,7 +288,16 @@
 			]
 			rewards: [
 				{
-					id: "5605B4048E1FC3E5"
+					id: "BCB4A2C08D2BB261"
+					type: "item"
+					item: {
+						id: "minecraft:stone"
+						count: 1
+					}
+					count: 64
+				}
+				{
+					id: "26C37EE2AAAACE31"
 					type: "loot"
 					table_id: "1EBBC2B918151958"
 				}
@@ -234,19 +305,16 @@
 		}
 		{
 			id: "EF7281F66B996839"
-			x: 15.0d
-			y: -2.0d
-			title: "Wand of the Forest"
-			subtitle: "Links, rotates and reads everything in Botania."
-			description: [
-				"Livingwood twigs and petals. Look at a spreader, pool or flower with the wand to see its mana. Sneak and click a spreader, then click a pool or another spreader, to aim it there."
-			]
+			x: 12.5d
+			y: 0.0d
 			icon: {
 				id: "botania:wand_of_the_forest"
 				count: 1
 			}
+			size: 1.5d
+			shape: "square"
 			dependencies: [
-				"412256F0A2AF34B5"
+				"D6EEF29F1CBC1249"
 			]
 			tasks: [
 				{
@@ -262,27 +330,88 @@
 			rewards: [
 				{
 					id: "3193D9E682C17E79"
+					type: "item"
+					item: {
+						id: "botania:livingwood_log"
+						count: 1
+					}
+					count: 8
+				}
+				{
+					id: "B47E7929F230E997"
 					type: "xp_levels"
 					xp_levels: 5
 				}
 			]
 		}
 		{
-			id: "47432AC486C4BE0B"
-			x: 15.0d
-			y: 2.0d
-			title: "Endoflame"
-			subtitle: "Burns fuel into mana."
-			description: [
-				"Drop coal, charcoal, logs or any furnace fuel next to an Endoflame and it burns it for mana. Slow but steady, and it runs all night."
-				"Mana-making flowers only work when a spreader is close to collect their mana."
+			id: "1EA8CAAD238C4975"
+			x: 12.5d
+			y: 2.4d
+			optional: true
+			dependencies: [
+				"4FF6E9B7E297083E"
 			]
+			tasks: [
+				{
+					id: "835A84ECD421AA08"
+					type: "item"
+					item: {
+						id: "botania:livingrock_bricks"
+						count: 1
+					}
+					count: 16
+				}
+			]
+			rewards: [
+				{
+					id: "80B595706D02CC27"
+					type: "item"
+					item: {
+						id: "botania:livingrock"
+						count: 1
+					}
+					count: 16
+				}
+			]
+		}
+		{
+			id: "57A177EC4C84D738"
+			x: 0.0d
+			y: 6.5d
 			icon: {
 				id: "botania:endoflame"
 				count: 1
 			}
 			dependencies: [
-				"412256F0A2AF34B5"
+				"EF7281F66B996839"
+			]
+			tasks: [
+				{
+					id: "1968A0879515D14A"
+					type: "checkmark"
+				}
+			]
+			rewards: [
+				{
+					id: "56F026266BCD22F3"
+					type: "xp_levels"
+					xp_levels: 2
+				}
+			]
+		}
+		{
+			id: "47432AC486C4BE0B"
+			x: 2.5d
+			y: 6.5d
+			icon: {
+				id: "botania:endoflame"
+				count: 1
+			}
+			size: 1.5d
+			shape: "square"
+			dependencies: [
+				"57A177EC4C84D738"
 			]
 			tasks: [
 				{
@@ -309,16 +438,11 @@
 		}
 		{
 			id: "8896230628F1E72B"
-			x: 18.0d
-			y: 3.5d
-			title: "Hydroangeas"
-			subtitle: "Drinks still water for mana."
-			description: [
-				"Place it next to still water source blocks. It slowly drinks them and turns them into mana. Two infinite water sources keep it fed forever."
-			]
+			x: 2.5d
+			y: 8.7d
 			optional: true
 			dependencies: [
-				"47432AC486C4BE0B"
+				"57A177EC4C84D738"
 			]
 			tasks: [
 				{
@@ -341,23 +465,28 @@
 					}
 					count: 1
 				}
+				{
+					id: "C3D06B13013AD004"
+					type: "item"
+					item: {
+						id: "botania:blue_mystical_petal"
+						count: 1
+					}
+					count: 4
+				}
 			]
 		}
 		{
 			id: "C93A5D6E1304403E"
-			x: 18.0d
-			y: 0.0d
-			title: "Mana Spreader"
-			subtitle: "Shoots mana from flowers to where it is needed."
-			description: [
-				"Livingwood, a copper ingot and a petal. Place it near your flowers, it collects their mana automatically. Aim it at a pool with the wand."
-			]
+			x: 5.0d
+			y: 6.5d
 			icon: {
 				id: "botania:mana_spreader"
 				count: 1
 			}
+			size: 1.75d
+			shape: "square"
 			dependencies: [
-				"EF7281F66B996839"
 				"47432AC486C4BE0B"
 			]
 			tasks: [
@@ -381,23 +510,67 @@
 					}
 					count: 8
 				}
+				{
+					id: "6C7044D62308BB8A"
+					type: "item"
+					item: {
+						id: "minecraft:copper_ingot"
+						count: 1
+					}
+					count: 4
+				}
+			]
+		}
+		{
+			id: "824479AAA0A4414E"
+			x: 5.0d
+			y: 8.7d
+			optional: true
+			dependencies: [
+				"C93A5D6E1304403E"
+			]
+			tasks: [
+				{
+					id: "C18433AAC9667125"
+					type: "item"
+					item: {
+						id: "botania:open_crate"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "10D35BE002295DB8"
+					type: "item"
+					item: {
+						id: "minecraft:hopper"
+						count: 1
+					}
+					count: 1
+				}
+				{
+					id: "EB54EEE76BCE5AA5"
+					type: "item"
+					item: {
+						id: "minecraft:coal"
+						count: 1
+					}
+					count: 16
+				}
 			]
 		}
 		{
 			id: "21219E97B696428D"
-			x: 21.0d
-			y: 0.0d
-			title: "Mana Pool"
-			subtitle: "Stores mana and changes items thrown into it."
-			description: [
-				"Five livingrock in a U. A full pool holds a lot of mana. Throw an item in and, if the pool has enough mana, it comes back as something else. This is called &bmana infusion&r."
-				"A &6Diluted Mana Pool&r made from slabs is cheaper but much smaller."
-			]
+			x: 9.0d
+			y: 6.5d
 			icon: {
 				id: "botania:mana_pool"
 				count: 1
 			}
-			size: 1.5d
+			size: 2.5d
+			shape: "hexagon"
 			dependencies: [
 				"C93A5D6E1304403E"
 			]
@@ -415,24 +588,154 @@
 			rewards: [
 				{
 					id: "216CDA61D131D3F1"
+					type: "item"
+					item: {
+						id: "botania:livingrock"
+						count: 1
+					}
+					count: 16
+				}
+				{
+					id: "C87E8CF1FDB87F6B"
 					type: "loot"
 					table_id: "870211AF0E412C54"
 				}
 			]
 		}
 		{
-			id: "022D0F42C3CD2423"
-			x: 24.0d
-			y: -2.0d
-			title: "Mana Infusion"
-			subtitle: "Your first infused item."
-			description: [
-				"Throw glass into a pool with mana. It comes back as &6Managlass&r, which lets mana bursts pass through."
+			id: "741BD828F55C274C"
+			x: 9.0d
+			y: 9.3d
+			optional: true
+			dependencies: [
+				"21219E97B696428D"
 			]
+			tasks: [
+				{
+					id: "2BF1F58127BBECF3"
+					type: "item"
+					item: {
+						id: "botania:diluted_mana_pool"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "3D956C3865636B71"
+					type: "xp_levels"
+					xp_levels: 3
+				}
+			]
+		}
+		{
+			id: "FBD41068DBFF46C1"
+			x: 11.5d
+			y: 7.7d
+			icon: {
+				id: "botania:manastar"
+				count: 1
+			}
+			dependencies: [
+				"21219E97B696428D"
+			]
+			tasks: [
+				{
+					id: "B2B81BE3B0BF8D84"
+					type: "item"
+					item: {
+						id: "botania:manastar"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "777333E2539B8A7F"
+					type: "item"
+					item: {
+						id: "botania:light_blue_mystical_petal"
+						count: 1
+					}
+					count: 4
+				}
+				{
+					id: "B685DBFEDD120ECB"
+					type: "xp_levels"
+					xp_levels: 3
+				}
+			]
+		}
+		{
+			id: "0D0771FD5F02EF27"
+			x: 11.5d
+			y: 5.4d
+			optional: true
+			dependencies: [
+				"21219E97B696428D"
+			]
+			tasks: [
+				{
+					id: "928411D15E67B98F"
+					type: "item"
+					item: {
+						id: "botania:pulse_mana_spreader"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "61C0C4CDA19F9DCB"
+					type: "item"
+					item: {
+						id: "minecraft:redstone"
+						count: 1
+					}
+					count: 16
+				}
+			]
+		}
+		{
+			id: "FA2B16B925BE643E"
+			x: 13.7d
+			y: 5.4d
+			optional: true
+			dependencies: [
+				"0D0771FD5F02EF27"
+			]
+			tasks: [
+				{
+					id: "243DC8CCD56DA94B"
+					type: "item"
+					item: {
+						id: "botania:spreader_turntable"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "1C62BFEEE03FBA76"
+					type: "xp_levels"
+					xp_levels: 3
+				}
+			]
+		}
+		{
+			id: "022D0F42C3CD2423"
+			x: 0.0d
+			y: 13.5d
 			icon: {
 				id: "botania:managlass"
 				count: 1
 			}
+			size: 1.5d
+			shape: "square"
 			dependencies: [
 				"21219E97B696428D"
 			]
@@ -460,17 +763,109 @@
 			]
 		}
 		{
-			id: "6228D87AF0D862F2"
-			x: 24.0d
-			y: 2.0d
-			title: "Mana Diamond"
-			subtitle: "A diamond soaked in mana."
-			description: [
-				"A diamond in a full pool becomes a Mana Diamond. It costs a lot of mana, so make sure your flowers keep up."
+			id: "5ED69134FFF1E0FB"
+			x: 2.5d
+			y: 13.5d
+			dependencies: [
+				"022D0F42C3CD2423"
 			]
+			tasks: [
+				{
+					id: "5B61124F8B226E71"
+					type: "item"
+					item: {
+						id: "botania:mana_powder"
+						count: 1
+					}
+					count: 16
+				}
+			]
+			rewards: [
+				{
+					id: "C5BF4A1F77879708"
+					type: "item"
+					item: {
+						id: "minecraft:sugar_cane"
+						count: 1
+					}
+					count: 16
+				}
+			]
+		}
+		{
+			id: "93E44C13922F04E9"
+			x: 2.5d
+			y: 15.7d
 			optional: true
 			dependencies: [
-				"21219E97B696428D"
+				"5ED69134FFF1E0FB"
+			]
+			tasks: [
+				{
+					id: "CD0F199A789EB26E"
+					type: "item"
+					item: {
+						id: "botania:mana_string"
+						count: 1
+					}
+					count: 8
+				}
+			]
+			rewards: [
+				{
+					id: "986F8A37511D0473"
+					type: "item"
+					item: {
+						id: "minecraft:string"
+						count: 1
+					}
+					count: 16
+				}
+			]
+		}
+		{
+			id: "D23B99B6B09C28EE"
+			x: 4.7d
+			y: 15.7d
+			optional: true
+			dependencies: [
+				"93E44C13922F04E9"
+			]
+			tasks: [
+				{
+					id: "7FA247AAFADA3F61"
+					type: "item"
+					item: {
+						id: "botania:livingwood_bow"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "8BA3EFAEEBE072B2"
+					type: "item"
+					item: {
+						id: "minecraft:arrow"
+						count: 1
+					}
+					count: 32
+				}
+			]
+		}
+		{
+			id: "6228D87AF0D862F2"
+			x: 5.0d
+			y: 13.5d
+			icon: {
+				id: "botania:mana_diamond"
+				count: 1
+			}
+			size: 1.5d
+			shape: "diamond"
+			dependencies: [
+				"022D0F42C3CD2423"
 			]
 			tasks: [
 				{
@@ -480,7 +875,7 @@
 						id: "botania:mana_diamond"
 						count: 1
 					}
-					count: 1
+					count: 2
 				}
 			]
 			rewards: [
@@ -491,28 +886,287 @@
 						id: "minecraft:diamond"
 						count: 1
 					}
+					count: 2
+				}
+				{
+					id: "C43E797B35602C91"
+					type: "loot"
+					table_id: "870211AF0E412C54"
+				}
+			]
+		}
+		{
+			id: "7B838BB3540E8390"
+			x: 0.0d
+			y: 15.7d
+			optional: true
+			dependencies: [
+				"022D0F42C3CD2423"
+			]
+			tasks: [
+				{
+					id: "19F25273D3F4437A"
+					type: "item"
+					item: {
+						id: "botania:pasture_seeds"
+						count: 1
+					}
+					count: 4
+				}
+			]
+			rewards: [
+				{
+					id: "EDABEB8CFB6DDE72"
+					type: "item"
+					item: {
+						id: "minecraft:bone_meal"
+						count: 1
+					}
+					count: 16
+				}
+			]
+		}
+		{
+			id: "47E0E464E8552E7D"
+			x: 7.2d
+			y: 15.7d
+			optional: true
+			dependencies: [
+				"6228D87AF0D862F2"
+			]
+			tasks: [
+				{
+					id: "D2C14F02D8BAEEB0"
+					type: "item"
+					item: {
+						id: "botania:tiny_potato"
+						count: 1
+					}
 					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "BD8520657D072FE4"
+					type: "item"
+					item: {
+						id: "minecraft:baked_potato"
+						count: 1
+					}
+					count: 8
+				}
+			]
+		}
+		{
+			id: "32AEE5D46F3B2881"
+			x: 11.5d
+			y: 13.5d
+			icon: {
+				id: "botania:bellethorne"
+				count: 1
+			}
+			dependencies: [
+				"21219E97B696428D"
+			]
+			tasks: [
+				{
+					id: "214333373037B763"
+					type: "checkmark"
+				}
+			]
+			rewards: [
+				{
+					id: "99E6E5B79AD32F34"
+					type: "xp_levels"
+					xp_levels: 2
+				}
+			]
+		}
+		{
+			id: "BBE06264E07BD930"
+			x: 13.7d
+			y: 13.5d
+			icon: {
+				id: "botania:redstone_root"
+				count: 1
+			}
+			dependencies: [
+				"32AEE5D46F3B2881"
+			]
+			tasks: [
+				{
+					id: "C25676E51677498E"
+					type: "item"
+					item: {
+						id: "botania:redstone_root"
+						count: 1
+					}
+					count: 4
+				}
+			]
+			rewards: [
+				{
+					id: "30529DD3948D8E42"
+					type: "item"
+					item: {
+						id: "minecraft:redstone"
+						count: 1
+					}
+					count: 16
+				}
+			]
+		}
+		{
+			id: "FA7035218AA9DFF0"
+			x: 16.0d
+			y: 12.4d
+			icon: {
+				id: "botania:bellethorne"
+				count: 1
+			}
+			dependencies: [
+				"BBE06264E07BD930"
+			]
+			tasks: [
+				{
+					id: "8C9851C1B3CF7833"
+					type: "item"
+					item: {
+						id: "botania:bellethorne"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "9FDEE7C4FCF0A9EA"
+					type: "item"
+					item: {
+						id: "botania:red_mystical_petal"
+						count: 1
+					}
+					count: 4
+				}
+				{
+					id: "54AB23AF294FF191"
+					type: "xp_levels"
+					xp_levels: 3
+				}
+			]
+		}
+		{
+			id: "FD1A3E7ED49CEAF9"
+			x: 16.0d
+			y: 14.6d
+			optional: true
+			dependencies: [
+				"BBE06264E07BD930"
+			]
+			tasks: [
+				{
+					id: "A897A241E09AB3E9"
+					type: "item"
+					item: {
+						id: "botania:dreadthorne"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "1446CDBE2824B0CF"
+					type: "item"
+					item: {
+						id: "botania:black_mystical_petal"
+						count: 1
+					}
+					count: 4
+				}
+				{
+					id: "1F010303101B33D0"
+					type: "xp_levels"
+					xp_levels: 3
+				}
+			]
+		}
+		{
+			id: "FA07DC5E99D9AFEA"
+			x: 13.7d
+			y: 15.7d
+			optional: true
+			dependencies: [
+				"BBE06264E07BD930"
+			]
+			tasks: [
+				{
+					id: "7B012859109509D5"
+					type: "item"
+					item: {
+						id: "botania:bergamute"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "1D2970E93160E324"
+					type: "item"
+					item: {
+						id: "botania:green_mystical_petal"
+						count: 1
+					}
+					count: 4
+				}
+				{
+					id: "A3EE638C652B282F"
+					type: "xp_levels"
+					xp_levels: 3
+				}
+			]
+		}
+		{
+			id: "0DC314F2E335E176"
+			x: 11.5d
+			y: 15.7d
+			optional: true
+			dependencies: [
+				"BBE06264E07BD930"
+			]
+			tasks: [
+				{
+					id: "175F6BECD4D3F92B"
+					type: "item"
+					item: {
+						id: "botania:solegnolia"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "2CCAB95C3B39EB90"
+					type: "xp_levels"
+					xp_levels: 3
 				}
 			]
 		}
 		{
 			id: "A6A79D780C28D080"
-			x: 27.0d
-			y: 0.0d
-			title: "A Mana Farm"
-			subtitle: "Enough flowers to keep a pool full."
-			description: [
-				"Four Endoflames, two spreaders, one pool, and a hopper or a Create belt feeding them fuel. When it runs without you, you are ready for the next stage."
-				"Stage 2 opens the &6Runic Altar&r and &6Manasteel&r, and both drink a lot of mana. Start filling pools now."
-			]
+			x: 18.5d
+			y: 6.5d
 			icon: {
 				id: "botania:mana_spreader"
 				count: 1
 			}
-			size: 1.75d
+			size: 2.0d
 			shape: "gear"
 			dependencies: [
-				"022D0F42C3CD2423"
+				"21219E97B696428D"
+				"FBD41068DBFF46C1"
 			]
 			tasks: [
 				{
@@ -533,6 +1187,15 @@
 					}
 					count: 2
 				}
+				{
+					id: "75A22BEF6523EBF2"
+					type: "item"
+					item: {
+						id: "botania:mana_pool"
+						count: 1
+					}
+					count: 1
+				}
 			]
 			rewards: [
 				{
@@ -546,6 +1209,103 @@
 					xp_levels: 10
 				}
 			]
+		}
+		{
+			id: "A1AEB7D0E5FB1298"
+			x: 21.0d
+			y: 6.5d
+			icon: {
+				id: "botania:mana_pool"
+				count: 1
+			}
+			dependencies: [
+				"A6A79D780C28D080"
+			]
+			tasks: [
+				{
+					id: "ED80871CAB9C21B9"
+					type: "checkmark"
+				}
+			]
+			rewards: [
+				{
+					id: "DFF81EE8C9F333B9"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+		}
+	]
+	images: [
+		{
+			id: "AAE9E42276828934"
+			image: "kronwerke:textures/quests/botania/title.png"
+			x: 9.0d
+			y: -5.2d
+			width: 5.4d
+			height: 1.8d
+			rotation: 0.0d
+			order: 1
+		}
+		{
+			id: "F4D9215235E33F63"
+			image: "kronwerke:textures/quests/botania/blueten.png"
+			x: 3.5d
+			y: -2.6d
+			width: 3.82d
+			height: 0.9d
+			rotation: 0.0d
+			order: 1
+		}
+		{
+			id: "E973FF9EF0688456"
+			image: "kronwerke:textures/quests/botania/erzeugen.png"
+			x: 2.5d
+			y: 4.6d
+			width: 5.05d
+			height: 0.9d
+			rotation: 0.0d
+			order: 1
+		}
+		{
+			id: "4C2F785CDF2DFA96"
+			image: "kronwerke:textures/quests/botania/speichern.png"
+			x: 11.3d
+			y: 3.9d
+			width: 5.32d
+			height: 0.9d
+			rotation: 0.0d
+			order: 1
+		}
+		{
+			id: "2CBA545B90799AF6"
+			image: "kronwerke:textures/quests/botania/infusion.png"
+			x: 3.5d
+			y: 11.7d
+			width: 4.68d
+			height: 0.9d
+			rotation: 0.0d
+			order: 1
+		}
+		{
+			id: "801D4A2B1C315C63"
+			image: "kronwerke:textures/quests/botania/funktion.png"
+			x: 13.7d
+			y: 11.2d
+			width: 5.87d
+			height: 0.9d
+			rotation: 0.0d
+			order: 1
+		}
+		{
+			id: "2A99F048ED645553"
+			image: "kronwerke:textures/quests/botania/farm.png"
+			x: 19.7d
+			y: 4.6d
+			width: 3.02d
+			height: 0.9d
+			rotation: 0.0d
+			order: 1
 		}
 	]
 }

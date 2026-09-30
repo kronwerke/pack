@@ -1,7 +1,6 @@
 {
 	id: "B51DAF3B806AC689"
 	filename: "ars_apprentice"
-	title: "Ars Nouveau: Mage"
 	icon: {
 		id: "ars_nouveau:apprentice_spell_book"
 		count: 1
@@ -10,21 +9,11 @@
 	order_index: 12
 	default_quest_shape: "circle"
 	default_hide_dependency_lines: false
-	subtitle: [
-		"Stage 2. The second book, relays, rituals and turrets."
-	]
 	quests: [
 		{
 			id: "99471A3D24B0C45D"
 			x: 0.0d
 			y: 0.0d
-			title: "Mage's Spell Book"
-			subtitle: "The second book: more slots, stronger glyphs."
-			description: [
-				"Stage 2 opens the apprentice glyphs and the book that can hold them. Craft the &6Mage's Spell Book&r from your novice book, JEI shows the rest. The glyphs you know stay known."
-				""
-				"Ars is also where Create gets its heat on this server: every Empty Blaze Burner needs two Source Gems. Engineers will come knocking."
-			]
 			icon: {
 				id: "ars_nouveau:apprentice_spell_book"
 				count: 1
@@ -60,15 +49,600 @@
 			]
 		}
 		{
-			id: "FD9E4C504163EE17"
-			x: 3.0d
-			y: -2.0d
-			title: "Source Relay"
-			subtitle: "Source over distance, no jars in a row."
-			description: [
-				"A &6Source Relay&r pulls Source from one place and sends it to another. Link them with the &6Dominion Wand&r: click the source, then the relay, then the target."
-				"Put your sourcelinks at the farm and the jars where you work."
+			id: "5381268075777268"
+			x: 2.5d
+			y: 0.0d
+			icon: {
+				id: "ars_nouveau:scribes_table"
+				count: 1
+			}
+			dependencies: [
+				"99471A3D24B0C45D"
 			]
+			tasks: [
+				{
+					id: "BF92955998E606CB"
+					type: "checkmark"
+				}
+			]
+			rewards: [
+				{
+					id: "BD8C23762440F356"
+					type: "item"
+					item: {
+						id: "minecraft:experience_bottle"
+						count: 1
+					}
+					count: 16
+				}
+			]
+		}
+		{
+			id: "3D6231E91D67D708"
+			x: 4.7d
+			y: -1.8d
+			icon: {
+				id: "ars_nouveau:glyph_aoe"
+				count: 1
+			}
+			dependencies: [
+				"5381268075777268"
+			]
+			tasks: [
+				{
+					id: "0A52332A641C514B"
+					type: "item"
+					item: {
+						id: "ars_nouveau:glyph_aoe"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "79E7089CE766C5AE"
+					type: "item"
+					item: {
+						id: "minecraft:gunpowder"
+						count: 1
+					}
+					count: 16
+				}
+				{
+					id: "82935AEDC0E4E7C4"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+		}
+		{
+			id: "4A4B62CD2B7C049D"
+			x: 4.7d
+			y: 0.0d
+			icon: {
+				id: "ars_nouveau:glyph_pierce"
+				count: 1
+			}
+			dependencies: [
+				"5381268075777268"
+			]
+			tasks: [
+				{
+					id: "4F7B99113E5D637F"
+					type: "item"
+					item: {
+						id: "ars_nouveau:glyph_pierce"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "C16DCF293F00F82E"
+					type: "item"
+					item: {
+						id: "minecraft:arrow"
+						count: 1
+					}
+					count: 32
+				}
+				{
+					id: "D6A272238F8A848B"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+		}
+		{
+			id: "AF6F1FAF8BB5B7E1"
+			x: 4.7d
+			y: 1.8d
+			icon: {
+				id: "ars_nouveau:glyph_extend_time"
+				count: 1
+			}
+			dependencies: [
+				"5381268075777268"
+			]
+			tasks: [
+				{
+					id: "58F90C92F1146D56"
+					type: "item"
+					item: {
+						id: "ars_nouveau:glyph_extend_time"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "D5D57AB5563C2308"
+					type: "item"
+					item: {
+						id: "minecraft:redstone_block"
+						count: 1
+					}
+					count: 2
+				}
+				{
+					id: "E2083587A39F8FCC"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+		}
+		{
+			id: "1DA50B03201ABD15"
+			x: 6.7d
+			y: -1.8d
+			icon: {
+				id: "ars_nouveau:glyph_fortune"
+				count: 1
+			}
+			dependencies: [
+				"3D6231E91D67D708"
+			]
+			tasks: [
+				{
+					id: "B8971012541B9F50"
+					type: "item"
+					item: {
+						id: "ars_nouveau:glyph_fortune"
+						count: 1
+					}
+					count: 1
+				}
+				{
+					id: "11DD67785B7CE23A"
+					type: "item"
+					item: {
+						id: "ars_nouveau:glyph_extract"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "02BD3C10F59BE652"
+					type: "item"
+					item: {
+						id: "minecraft:emerald"
+						count: 1
+					}
+					count: 4
+				}
+				{
+					id: "7EA68A7B7091ED0A"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+		}
+		{
+			id: "B6155C1029AC1BDD"
+			x: 6.7d
+			y: 0.0d
+			icon: {
+				id: "ars_nouveau:glyph_dampen"
+				count: 1
+			}
+			optional: true
+			dependencies: [
+				"4A4B62CD2B7C049D"
+			]
+			tasks: [
+				{
+					id: "0F89C255B03D8BB1"
+					type: "item"
+					item: {
+						id: "ars_nouveau:glyph_dampen"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "CDEAC7CA99CB8642"
+					type: "item"
+					item: {
+						id: "minecraft:nether_brick"
+						count: 1
+					}
+					count: 16
+				}
+				{
+					id: "74E40DC607EBDBFB"
+					type: "xp_levels"
+					xp_levels: 3
+				}
+			]
+		}
+		{
+			id: "C23A922EF7C378AA"
+			x: 6.7d
+			y: 1.8d
+			icon: {
+				id: "ars_nouveau:glyph_heal"
+				count: 1
+			}
+			dependencies: [
+				"AF6F1FAF8BB5B7E1"
+			]
+			tasks: [
+				{
+					id: "82CBCFF093D81406"
+					type: "item"
+					item: {
+						id: "ars_nouveau:glyph_heal"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "2E391D332D34EF9F"
+					type: "item"
+					item: {
+						id: "minecraft:golden_apple"
+						count: 1
+					}
+					count: 1
+				}
+				{
+					id: "FD0148EE0AB2FAB4"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+		}
+		{
+			id: "0AA80C9F8759399D"
+			x: 8.7d
+			y: -1.8d
+			icon: {
+				id: "ars_nouveau:glyph_smelt"
+				count: 1
+			}
+			dependencies: [
+				"1DA50B03201ABD15"
+			]
+			tasks: [
+				{
+					id: "D0B0E11A24D0DA04"
+					type: "item"
+					item: {
+						id: "ars_nouveau:glyph_smelt"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "929D11BB2A844B83"
+					type: "item"
+					item: {
+						id: "minecraft:blaze_rod"
+						count: 1
+					}
+					count: 2
+				}
+				{
+					id: "697190F172D1CB8F"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+		}
+		{
+			id: "7507CAA88B395BE2"
+			x: 8.7d
+			y: 0.0d
+			icon: {
+				id: "ars_nouveau:glyph_grow"
+				count: 1
+			}
+			dependencies: [
+				"B6155C1029AC1BDD"
+				"C23A922EF7C378AA"
+			]
+			tasks: [
+				{
+					id: "2B68B3BB6E43C362"
+					type: "item"
+					item: {
+						id: "ars_nouveau:glyph_grow"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "9970067D2308A349"
+					type: "item"
+					item: {
+						id: "minecraft:bone_block"
+						count: 1
+					}
+					count: 8
+				}
+				{
+					id: "635DFBA797B3F0BE"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+		}
+		{
+			id: "B592A2F0D9F96A95"
+			x: 8.7d
+			y: 1.8d
+			icon: {
+				id: "ars_nouveau:glyph_crush"
+				count: 1
+			}
+			optional: true
+			dependencies: [
+				"C23A922EF7C378AA"
+			]
+			tasks: [
+				{
+					id: "8FEE4B7C2AF5C216"
+					type: "item"
+					item: {
+						id: "ars_nouveau:glyph_crush"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "DD0E2ABFABF29010"
+					type: "item"
+					item: {
+						id: "minecraft:sand"
+						count: 1
+					}
+					count: 32
+				}
+				{
+					id: "8458F295ADE32673"
+					type: "xp_levels"
+					xp_levels: 3
+				}
+			]
+		}
+		{
+			id: "6D2EE8FBD6DD201E"
+			x: 10.7d
+			y: -1.8d
+			icon: {
+				id: "ars_nouveau:glyph_slowfall"
+				count: 1
+			}
+			optional: true
+			dependencies: [
+				"0AA80C9F8759399D"
+			]
+			tasks: [
+				{
+					id: "3E6AD0A4DDE9A04C"
+					type: "item"
+					item: {
+						id: "ars_nouveau:glyph_slowfall"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "A96044042EC14CEF"
+					type: "item"
+					item: {
+						id: "minecraft:feather"
+						count: 1
+					}
+					count: 16
+				}
+				{
+					id: "8131D920A22F7E73"
+					type: "xp_levels"
+					xp_levels: 3
+				}
+			]
+		}
+		{
+			id: "765FAFAE6B59FA85"
+			x: 10.7d
+			y: 0.0d
+			icon: {
+				id: "ars_nouveau:glyph_conjure_water"
+				count: 1
+			}
+			optional: true
+			dependencies: [
+				"7507CAA88B395BE2"
+			]
+			tasks: [
+				{
+					id: "A3C05590EDF66D0D"
+					type: "item"
+					item: {
+						id: "ars_nouveau:glyph_conjure_water"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "B100411F28CB8D38"
+					type: "item"
+					item: {
+						id: "minecraft:water_bucket"
+						count: 1
+					}
+					count: 1
+				}
+				{
+					id: "A1F35DAA4D0AFC62"
+					type: "xp_levels"
+					xp_levels: 3
+				}
+			]
+		}
+		{
+			id: "2FD4F0B8CBCD3214"
+			x: 10.7d
+			y: 1.8d
+			icon: {
+				id: "ars_nouveau:glyph_flare"
+				count: 1
+			}
+			optional: true
+			dependencies: [
+				"B592A2F0D9F96A95"
+			]
+			tasks: [
+				{
+					id: "0482D544BF1EAE53"
+					type: "item"
+					item: {
+						id: "ars_nouveau:glyph_flare"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "46BB7B1496EE7E06"
+					type: "item"
+					item: {
+						id: "minecraft:fire_charge"
+						count: 1
+					}
+					count: 8
+				}
+				{
+					id: "763073FEF4A68C0E"
+					type: "xp_levels"
+					xp_levels: 3
+				}
+			]
+		}
+		{
+			id: "F0077B13AB29AB47"
+			x: 12.7d
+			y: -1.8d
+			icon: {
+				id: "ars_elemental:glyph_arc_projectile"
+				count: 1
+			}
+			optional: true
+			dependencies: [
+				"6D2EE8FBD6DD201E"
+			]
+			tasks: [
+				{
+					id: "96D3FEEE575F0E50"
+					type: "item"
+					item: {
+						id: "ars_elemental:glyph_arc_projectile"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "D02E0D481E93C9DB"
+					type: "item"
+					item: {
+						id: "minecraft:slime_ball"
+						count: 1
+					}
+					count: 8
+				}
+				{
+					id: "0A60C60742B7EC1F"
+					type: "xp_levels"
+					xp_levels: 3
+				}
+			]
+		}
+		{
+			id: "B32147EA99A0CA1A"
+			x: 12.7d
+			y: 0.6d
+			icon: {
+				id: "ars_nouveau:apprentice_spell_book"
+				count: 1
+			}
+			size: 1.5d
+			shape: "diamond"
+			dependencies: [
+				"0AA80C9F8759399D"
+				"7507CAA88B395BE2"
+			]
+			tasks: [
+				{
+					id: "A02994330EB6B3AB"
+					type: "checkmark"
+				}
+			]
+			rewards: [
+				{
+					id: "EFD5061CDA029390"
+					type: "loot"
+					table_id: "BA8E33E78A3B3A0C"
+				}
+				{
+					id: "DBAF0D46759864A3"
+					type: "xp_levels"
+					xp_levels: 10
+				}
+			]
+		}
+		{
+			id: "FD9E4C504163EE17"
+			x: 0.5d
+			y: 6.2d
+			icon: {
+				id: "ars_nouveau:relay"
+				count: 1
+			}
+			size: 1.5d
+			shape: "square"
 			dependencies: [
 				"99471A3D24B0C45D"
 			]
@@ -93,18 +667,21 @@
 					}
 					count: 8
 				}
+				{
+					id: "BB2A249270172FF7"
+					type: "loot"
+					table_id: "F2BA64790EBA3DF5"
+				}
 			]
 		}
 		{
 			id: "0C6FCD3B9D470860"
-			x: 6.0d
-			y: -3.5d
-			title: "Relay: Splitter"
-			subtitle: "One source, many targets."
-			description: [
-				"The splitter shares its Source evenly between everything it is linked to. Useful when the imbuement chamber and the apparatus both need feeding."
-			]
-			optional: true
+			x: 2.7d
+			y: 5.3d
+			icon: {
+				id: "ars_nouveau:relay_splitter"
+				count: 1
+			}
 			dependencies: [
 				"FD9E4C504163EE17"
 			]
@@ -124,27 +701,67 @@
 					id: "05D31904A5843501"
 					type: "item"
 					item: {
-						id: "ars_nouveau:source_gem"
+						id: "minecraft:quartz"
 						count: 1
 					}
-					count: 8
+					count: 16
+				}
+			]
+		}
+		{
+			id: "C74EE2E2316CDDAD"
+			x: 2.7d
+			y: 7.1d
+			icon: {
+				id: "ars_nouveau:relay_collector"
+				count: 1
+			}
+			optional: true
+			dependencies: [
+				"FD9E4C504163EE17"
+			]
+			tasks: [
+				{
+					id: "A92BE73759A449AC"
+					type: "item"
+					item: {
+						id: "ars_nouveau:relay_collector"
+						count: 1
+					}
+					count: 1
+				}
+				{
+					id: "A2E1C85147E2CC6D"
+					type: "item"
+					item: {
+						id: "ars_nouveau:relay_deposit"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "D57E9A4026554A39"
+					type: "item"
+					item: {
+						id: "minecraft:hopper"
+						count: 1
+					}
+					count: 2
 				}
 			]
 		}
 		{
 			id: "1896DC83DBFDFA42"
-			x: 3.0d
-			y: 2.0d
-			title: "Ritual Brazier"
-			subtitle: "Where rituals burn."
-			description: [
-				"Place a ritual tablet on the &6Ritual Brazier&r and right click it to start. Many rituals draw Source from jars nearby while they run."
-			]
+			x: 7.5d
+			y: 7.0d
 			icon: {
 				id: "ars_nouveau:ritual_brazier"
 				count: 1
 			}
-			size: 1.5d
+			size: 1.75d
+			shape: "square"
 			dependencies: [
 				"99471A3D24B0C45D"
 			]
@@ -177,20 +794,19 @@
 			]
 		}
 		{
-			id: "20985C6B05F11C3F"
-			x: 6.0d
-			y: 1.0d
-			title: "Ritual of Harvest"
-			subtitle: "The crops harvest themselves."
-			description: [
-				"Harvests the crops around the brazier and costs a little Source each time. Put a chest next to the brazier and the harvest goes straight in."
-			]
+			id: "D4196A047E1F6006"
+			x: 9.7d
+			y: 5.2d
+			icon: {
+				id: "ars_nouveau:ritual_harvest"
+				count: 1
+			}
 			dependencies: [
 				"1896DC83DBFDFA42"
 			]
 			tasks: [
 				{
-					id: "3B70778D1A6D1B42"
+					id: "DEE17C9E42B6F662"
 					type: "item"
 					item: {
 						id: "ars_nouveau:ritual_harvest"
@@ -201,16 +817,7 @@
 			]
 			rewards: [
 				{
-					id: "A7B5F8AF5CB32FF1"
-					type: "item"
-					item: {
-						id: "minecraft:wheat_seeds"
-						count: 1
-					}
-					count: 32
-				}
-				{
-					id: "21F5BE81657E37CC"
+					id: "6487361DA4C57F1D"
 					type: "item"
 					item: {
 						id: "minecraft:bone_meal"
@@ -218,24 +825,27 @@
 					}
 					count: 32
 				}
+				{
+					id: "641763EF574B8D5E"
+					type: "xp_levels"
+					xp_levels: 5
+				}
 			]
 		}
 		{
-			id: "BC5D05A0B6C457A9"
-			x: 6.0d
-			y: 3.5d
-			title: "Ritual of Scrying"
-			subtitle: "See one block through all the others."
-			description: [
-				"Give the ritual a block, and for a while you see every block of that kind through the ground. White particles are close, green further, blue far away. Good for zinc and osmium."
-			]
-			optional: true
+			id: "EBAF095A8D0F5B04"
+			x: 9.7d
+			y: 7.0d
+			icon: {
+				id: "ars_nouveau:ritual_scrying"
+				count: 1
+			}
 			dependencies: [
 				"1896DC83DBFDFA42"
 			]
 			tasks: [
 				{
-					id: "48367C1A7937F3C8"
+					id: "A500D41864FBB9D3"
 					type: "item"
 					item: {
 						id: "ars_nouveau:ritual_scrying"
@@ -246,29 +856,405 @@
 			]
 			rewards: [
 				{
-					id: "3B6F4C89FC2BFE88"
+					id: "768E7C243E196619"
+					type: "item"
+					item: {
+						id: "minecraft:spider_eye"
+						count: 1
+					}
+					count: 6
+				}
+				{
+					id: "FAE290A73AB97611"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+		}
+		{
+			id: "F35350BB35FCBF76"
+			x: 9.7d
+			y: 8.8d
+			icon: {
+				id: "ars_nouveau:ritual_fertility"
+				count: 1
+			}
+			optional: true
+			dependencies: [
+				"EBAF095A8D0F5B04"
+			]
+			tasks: [
+				{
+					id: "FF0C125B6DD8A20E"
+					type: "item"
+					item: {
+						id: "ars_nouveau:ritual_fertility"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "28DBC7D6996F2B0B"
+					type: "item"
+					item: {
+						id: "minecraft:wheat"
+						count: 1
+					}
+					count: 32
+				}
+			]
+		}
+		{
+			id: "0B35E9F6839801CB"
+			x: 11.7d
+			y: 5.2d
+			icon: {
+				id: "ars_nouveau:ritual_sanctuary"
+				count: 1
+			}
+			dependencies: [
+				"D4196A047E1F6006"
+			]
+			tasks: [
+				{
+					id: "16329ED8B7214A30"
+					type: "item"
+					item: {
+						id: "ars_nouveau:ritual_sanctuary"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "56F06A1154630D45"
+					type: "item"
+					item: {
+						id: "minecraft:rotten_flesh"
+						count: 1
+					}
+					count: 32
+				}
+				{
+					id: "487A48087BC219BA"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+		}
+		{
+			id: "4F349A5EDC7882FF"
+			x: 11.7d
+			y: 7.0d
+			icon: {
+				id: "ars_nouveau:ritual_restoration"
+				count: 1
+			}
+			optional: true
+			dependencies: [
+				"EBAF095A8D0F5B04"
+			]
+			tasks: [
+				{
+					id: "821593285A66DBE2"
+					type: "item"
+					item: {
+						id: "ars_nouveau:ritual_restoration"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "DF672F9BC077393B"
+					type: "item"
+					item: {
+						id: "minecraft:golden_apple"
+						count: 1
+					}
+					count: 1
+				}
+			]
+		}
+		{
+			id: "DCCFA741053E0FE5"
+			x: 11.7d
+			y: 8.8d
+			icon: {
+				id: "ars_nouveau:ritual_forestation"
+				count: 1
+			}
+			optional: true
+			dependencies: [
+				"4F349A5EDC7882FF"
+			]
+			tasks: [
+				{
+					id: "978CB7D003F2FA87"
+					type: "item"
+					item: {
+						id: "ars_nouveau:ritual_forestation"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "30A98479700794AB"
+					type: "item"
+					item: {
+						id: "minecraft:oak_sapling"
+						count: 1
+					}
+					count: 16
+				}
+			]
+		}
+		{
+			id: "39E117DEE84FA0D4"
+			x: 13.7d
+			y: 5.2d
+			icon: {
+				id: "ars_nouveau:ritual_binding"
+				count: 1
+			}
+			dependencies: [
+				"0B35E9F6839801CB"
+			]
+			tasks: [
+				{
+					id: "F286D6EC1E6210E0"
+					type: "item"
+					item: {
+						id: "ars_nouveau:ritual_binding"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "F59F6043CD499362"
+					type: "item"
+					item: {
+						id: "minecraft:ender_pearl"
+						count: 1
+					}
+					count: 2
+				}
+				{
+					id: "9C6DEF536757C44C"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+		}
+		{
+			id: "C7CAB45A545ACFE9"
+			x: 15.7d
+			y: 5.2d
+			icon: {
+				id: "ars_nouveau:familiar_starbuncle"
+				count: 1
+			}
+			dependencies: [
+				"39E117DEE84FA0D4"
+			]
+			tasks: [
+				{
+					id: "927D2E7193130647"
+					type: "item"
+					item: {
+						id: "ars_nouveau:familiar_starbuncle"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "9A7E6534A2C3FE1D"
 					type: "loot"
-					table_id: "F2BA64790EBA3DF5"
+					table_id: "BA8E33E78A3B3A0C"
+				}
+				{
+					id: "C66900F06DB1E405"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+		}
+		{
+			id: "CB439F3677CCED34"
+			x: 13.7d
+			y: 7.0d
+			icon: {
+				id: "ars_nouveau:mob_jar"
+				count: 1
+			}
+			optional: true
+			dependencies: [
+				"39E117DEE84FA0D4"
+			]
+			tasks: [
+				{
+					id: "7778D74A861B4051"
+					type: "item"
+					item: {
+						id: "ars_nouveau:ritual_containment"
+						count: 1
+					}
+					count: 1
+				}
+				{
+					id: "7D94574FB90E2C02"
+					type: "item"
+					item: {
+						id: "ars_nouveau:mob_jar"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "FCEA88E07631102C"
+					type: "item"
+					item: {
+						id: "minecraft:glass"
+						count: 1
+					}
+					count: 16
+				}
+			]
+		}
+		{
+			id: "266C890332CCA08C"
+			x: 13.7d
+			y: 8.8d
+			icon: {
+				id: "ars_nouveau:ritual_cloudshaping"
+				count: 1
+			}
+			optional: true
+			dependencies: [
+				"CB439F3677CCED34"
+			]
+			tasks: [
+				{
+					id: "9E51F53EEA73C6D5"
+					type: "item"
+					item: {
+						id: "ars_nouveau:ritual_cloudshaping"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "FC0B72A93DA4CAA8"
+					type: "item"
+					item: {
+						id: "minecraft:feather"
+						count: 1
+					}
+					count: 8
+				}
+			]
+		}
+		{
+			id: "08302206258B4B4E"
+			x: 15.7d
+			y: 7.0d
+			icon: {
+				id: "ars_elemental:ritual_squirrels"
+				count: 1
+			}
+			optional: true
+			dependencies: [
+				"C7CAB45A545ACFE9"
+			]
+			tasks: [
+				{
+					id: "ACCD65B97B24086C"
+					type: "item"
+					item: {
+						id: "ars_elemental:ritual_squirrels"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "92AEB7BEBA90D7C6"
+					type: "item"
+					item: {
+						id: "minecraft:sugar"
+						count: 1
+					}
+					count: 16
+				}
+			]
+		}
+		{
+			id: "B3B6AD1FCF591472"
+			x: 15.7d
+			y: 8.8d
+			icon: {
+				id: "ars_additions:ritual_locate_structure"
+				count: 1
+			}
+			optional: true
+			dependencies: [
+				"266C890332CCA08C"
+			]
+			tasks: [
+				{
+					id: "AD5210E750A02EA6"
+					type: "item"
+					item: {
+						id: "ars_additions:ritual_locate_structure"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "5C2284083C0404E9"
+					type: "item"
+					item: {
+						id: "minecraft:compass"
+						count: 1
+					}
+					count: 1
+				}
+				{
+					id: "1C2EA59C83EAC52C"
+					type: "xp_levels"
+					xp_levels: 3
 				}
 			]
 		}
 		{
 			id: "CFB03CF421652A7D"
-			x: 9.0d
-			y: 0.0d
-			title: "Basic Spell Turret"
-			subtitle: "A spell, cast by redstone."
-			description: [
-				"Inscribe a spell into the turret with your book and give it a redstone pulse. It casts from its front, using Source from jars nearby. Break and harvest spells make simple farms."
-			]
+			x: 0.5d
+			y: 13.0d
 			icon: {
 				id: "ars_nouveau:basic_spell_turret"
 				count: 1
 			}
 			size: 1.5d
+			shape: "square"
 			dependencies: [
-				"FD9E4C504163EE17"
-				"20985C6B05F11C3F"
+				"99471A3D24B0C45D"
 			]
 			tasks: [
 				{
@@ -299,21 +1285,58 @@
 			]
 		}
 		{
-			id: "3779BE83A65A245C"
-			x: 12.0d
-			y: -2.0d
-			title: "Warp Scroll"
-			subtitle: "Home, once."
-			description: [
-				"Set a location on the scroll, use it later to go back there. It is used up. The &6Stabilized Warp Scroll&r can be used again and again."
-			]
-			optional: true
+			id: "0787C8DEB600BA0C"
+			x: 2.7d
+			y: 13.0d
+			icon: {
+				id: "ars_nouveau:spell_turret"
+				count: 1
+			}
 			dependencies: [
 				"CFB03CF421652A7D"
 			]
 			tasks: [
 				{
-					id: "F956C3E23FBD9449"
+					id: "80EAC392FDEBEF96"
+					type: "item"
+					item: {
+						id: "ars_nouveau:spell_turret"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "055C3799374EEA39"
+					type: "item"
+					item: {
+						id: "minecraft:blaze_rod"
+						count: 1
+					}
+					count: 2
+				}
+				{
+					id: "D08BC10EA761072F"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+		}
+		{
+			id: "988E238B3070EB61"
+			x: 4.7d
+			y: 12.1d
+			icon: {
+				id: "ars_nouveau:warp_scroll"
+				count: 1
+			}
+			dependencies: [
+				"CFB03CF421652A7D"
+			]
+			tasks: [
+				{
+					id: "29A4985F7B39F7ED"
 					type: "item"
 					item: {
 						id: "ars_nouveau:warp_scroll"
@@ -324,10 +1347,45 @@
 			]
 			rewards: [
 				{
-					id: "84B8C8EA747E81A1"
+					id: "1BE6185B8DB84EA7"
 					type: "item"
 					item: {
-						id: "ars_nouveau:warp_scroll"
+						id: "minecraft:lapis_lazuli"
+						count: 1
+					}
+					count: 16
+				}
+			]
+		}
+		{
+			id: "2C42B48297417F2D"
+			x: 6.7d
+			y: 12.1d
+			icon: {
+				id: "ars_nouveau:stable_warp_scroll"
+				count: 1
+			}
+			optional: true
+			dependencies: [
+				"988E238B3070EB61"
+			]
+			tasks: [
+				{
+					id: "A901A577CA468831"
+					type: "item"
+					item: {
+						id: "ars_nouveau:stable_warp_scroll"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "CC00A6665BB99E18"
+					type: "item"
+					item: {
+						id: "minecraft:ender_pearl"
 						count: 1
 					}
 					count: 2
@@ -335,21 +1393,216 @@
 			]
 		}
 		{
-			id: "B23E88118DC60B60"
-			x: 12.0d
-			y: 2.0d
-			title: "A Proper Mage"
-			subtitle: "Source for the whole server."
-			description: [
-				"A Source farm big enough that you never think about it, relays that bring it where it is needed, and gems to spare for the engineers who need blaze burners."
+			id: "1E7256E1EF70D43C"
+			x: 4.7d
+			y: 13.9d
+			icon: {
+				id: "ars_nouveau:wixie_charm"
+				count: 1
+			}
+			dependencies: [
+				"988E238B3070EB61"
 			]
+			tasks: [
+				{
+					id: "52499F66B991C36C"
+					type: "item"
+					item: {
+						id: "ars_nouveau:wixie_charm"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "A0ED603897DF5997"
+					type: "item"
+					item: {
+						id: "minecraft:brewing_stand"
+						count: 1
+					}
+					count: 1
+				}
+				{
+					id: "24F2625271EAF18C"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+		}
+		{
+			id: "106F07EC971C7521"
+			x: 10.5d
+			y: 13.0d
+			icon: {
+				id: "create:empty_blaze_burner"
+				count: 1
+			}
+			size: 1.25d
+			dependencies: [
+				"99471A3D24B0C45D"
+			]
+			tasks: [
+				{
+					id: "C1E85AC50026851F"
+					type: "item"
+					item: {
+						id: "create:empty_blaze_burner"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "E248C67EB7B70366"
+					type: "item"
+					item: {
+						id: "ars_nouveau:source_gem"
+						count: 1
+					}
+					count: 8
+				}
+				{
+					id: "727D286842FCCB60"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+		}
+		{
+			id: "7F3598B183138DFD"
+			x: 12.5d
+			y: 13.0d
+			icon: {
+				id: "ars_technica:calibrated_precision_mechanism"
+				count: 1
+			}
+			dependencies: [
+				"106F07EC971C7521"
+			]
+			tasks: [
+				{
+					id: "71EAF05DE748806F"
+					type: "item"
+					item: {
+						id: "ars_technica:calibrated_precision_mechanism"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "475132953DD874C9"
+					type: "item"
+					item: {
+						id: "minecraft:amethyst_shard"
+						count: 1
+					}
+					count: 16
+				}
+				{
+					id: "AFCE63377A469FD3"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+		}
+		{
+			id: "99C86A5666F66BCC"
+			x: 14.7d
+			y: 13.0d
+			icon: {
+				id: "ars_technica:source_motor"
+				count: 1
+			}
+			size: 1.5d
+			shape: "gear"
+			dependencies: [
+				"7F3598B183138DFD"
+				"FD9E4C504163EE17"
+			]
+			tasks: [
+				{
+					id: "C4F76F21115E13F1"
+					type: "item"
+					item: {
+						id: "ars_technica:source_motor"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "E1ECD6C3B074013B"
+					type: "loot"
+					table_id: "BA8E33E78A3B3A0C"
+				}
+				{
+					id: "A82576256CB2D9AA"
+					type: "xp_levels"
+					xp_levels: 10
+				}
+			]
+		}
+		{
+			id: "A2710174B8567723"
+			x: 12.5d
+			y: 14.9d
+			icon: {
+				id: "ars_technica:glyph_press"
+				count: 1
+			}
+			optional: true
+			dependencies: [
+				"7F3598B183138DFD"
+			]
+			tasks: [
+				{
+					id: "7BB03AF8EAA9CDEC"
+					type: "item"
+					item: {
+						id: "ars_technica:glyph_press"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "7F7949BC912E4222"
+					type: "item"
+					item: {
+						id: "minecraft:iron_ingot"
+						count: 1
+					}
+					count: 16
+				}
+				{
+					id: "E6B311505325C87A"
+					type: "xp_levels"
+					xp_levels: 3
+				}
+			]
+		}
+		{
+			id: "B23E88118DC60B60"
+			x: 18.8d
+			y: 9.8d
 			icon: {
 				id: "ars_nouveau:source_gem_block"
 				count: 1
 			}
-			size: 1.75d
+			size: 2.5d
+			shape: "gear"
 			dependencies: [
-				"CFB03CF421652A7D"
+				"B32147EA99A0CA1A"
+				"C7CAB45A545ACFE9"
+				"0787C8DEB600BA0C"
+				"99C86A5666F66BCC"
 			]
 			tasks: [
 				{
@@ -374,6 +1627,78 @@
 					xp_levels: 15
 				}
 			]
+		}
+	]
+	images: [
+		{
+			id: "1DB51FB7FD862A9A"
+			image: "kronwerke:textures/quests/ars_apprentice/title.png"
+			x: 8.5d
+			y: -5.8d
+			width: 14.2d
+			height: 1.8d
+			rotation: 0.0d
+			order: 1
+		}
+		{
+			id: "EA07B1C2BA56846E"
+			image: "kronwerke:textures/quests/ars_apprentice/glyphen.png"
+			x: 7.7d
+			y: -3.6d
+			width: 6.5d
+			height: 0.9d
+			rotation: 0.0d
+			order: 1
+		}
+		{
+			id: "19F10A3C249FABBC"
+			image: "kronwerke:textures/quests/ars_apprentice/quelle.png"
+			x: 2.2d
+			y: 3.6d
+			width: 4.76d
+			height: 0.9d
+			rotation: 0.0d
+			order: 1
+		}
+		{
+			id: "868E4EC3A898F61C"
+			image: "kronwerke:textures/quests/ars_apprentice/rituale.png"
+			x: 12.2d
+			y: 3.6d
+			width: 2.53d
+			height: 0.9d
+			rotation: 0.0d
+			order: 1
+		}
+		{
+			id: "B375F8DA69009B01"
+			image: "kronwerke:textures/quests/ars_apprentice/automatisierung.png"
+			x: 3.6d
+			y: 10.6d
+			width: 5.58d
+			height: 0.9d
+			rotation: 0.0d
+			order: 1
+		}
+		{
+			id: "1A06A0B1F3F76025"
+			image: "kronwerke:textures/quests/ars_apprentice/technik.png"
+			x: 12.6d
+			y: 10.9d
+			width: 6.71d
+			height: 0.9d
+			rotation: 0.0d
+			order: 1
+		}
+		{
+			id: "CA7D551A50D5C7D4"
+			image: "kronwerke:textures/quests/ars_apprentice/ziel.png"
+			x: 18.8d
+			y: 7.4d
+			width: 3.52d
+			height: 0.9d
+			rotation: 0.0d
+			order: 1
 		}
 	]
 }

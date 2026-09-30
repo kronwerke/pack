@@ -1,7 +1,6 @@
 {
 	id: "1D6D168994F5F61E"
 	filename: "immersive"
-	title: "Immersive Engineering"
 	icon: {
 		id: "immersiveengineering:hammer"
 		count: 1
@@ -10,23 +9,13 @@
 	order_index: 14
 	default_quest_shape: "square"
 	default_hide_dependency_lines: false
-	subtitle: [
-		"Stage 2. Coke, treated wood, steel and wires."
-	]
 	quests: [
 		{
 			id: "8FE695089B5F6559"
 			x: 0.0d
-			y: 0.0d
-			title: "Immersive Engineering"
-			subtitle: "Big machines you walk around in."
-			description: [
-				"Immersive Engineering builds its machines as multiblocks: stack the right blocks in the right shape, hit them with the &6Engineer's Hammer&r, and they become one machine."
-				""
-				"The &6Engineer's Manual&r shows every structure layer by layer. Read it before you build."
-			]
+			y: 6.5d
 			icon: {
-				id: "immersiveengineering:hammer"
+				id: "immersiveengineering:manual"
 				count: 1
 			}
 			size: 2.0d
@@ -37,15 +26,6 @@
 					type: "item"
 					item: {
 						id: "immersiveengineering:manual"
-						count: 1
-					}
-					count: 1
-				}
-				{
-					id: "A87D7901D3C5FF48"
-					type: "item"
-					item: {
-						id: "immersiveengineering:hammer"
 						count: 1
 					}
 					count: 1
@@ -69,16 +49,11 @@
 			]
 		}
 		{
-			id: "570C72A66EDB786D"
-			x: 3.0d
-			y: 0.0d
-			title: "Coke Oven"
-			subtitle: "Twenty seven bricks, one machine."
-			description: [
-				"Build a 3x3x3 cube of &6Coke Bricks&r and hit the middle of one side with the hammer. Coal goes in, &6Coal Coke&r and &6Creosote Oil&r come out. Put a bucket in the oven to take the creosote."
-			]
+			id: "CEBEA82F8E132468"
+			x: 2.5d
+			y: 6.5d
 			icon: {
-				id: "immersiveengineering:cokebrick"
+				id: "immersiveengineering:hammer"
 				count: 1
 			}
 			size: 1.5d
@@ -87,7 +62,224 @@
 			]
 			tasks: [
 				{
-					id: "69E647546E2A0229"
+					id: "BA235F687A837B8D"
+					type: "item"
+					item: {
+						id: "immersiveengineering:hammer"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "8EEC875D802405CD"
+					type: "item"
+					item: {
+						id: "minecraft:iron_ingot"
+						count: 1
+					}
+					count: 8
+				}
+				{
+					id: "3F2EA4CBC86B408B"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+		}
+		{
+			id: "A8D21689C278C370"
+			x: 2.5d
+			y: 9.2d
+			icon: {
+				id: "immersiveengineering:plate_iron"
+				count: 1
+			}
+			dependencies: [
+				"CEBEA82F8E132468"
+			]
+			tasks: [
+				{
+					id: "B35D54A63D4E4F98"
+					type: "item"
+					item: {
+						id: "immersiveengineering:plate_iron"
+						count: 1
+					}
+					count: 4
+				}
+				{
+					id: "2989502FA705D99C"
+					type: "item"
+					item: {
+						id: "immersiveengineering:plate_copper"
+						count: 1
+					}
+					count: 2
+				}
+			]
+			rewards: [
+				{
+					id: "0E7939E7E39FC0D4"
+					type: "item"
+					item: {
+						id: "minecraft:iron_ingot"
+						count: 1
+					}
+					count: 8
+				}
+				{
+					id: "187C5C44755BA7E2"
+					type: "item"
+					item: {
+						id: "minecraft:copper_ingot"
+						count: 1
+					}
+					count: 8
+				}
+			]
+		}
+		{
+			id: "B2B9F48B7C9C8BD9"
+			x: 0.0d
+			y: 9.2d
+			dependencies: [
+				"8FE695089B5F6559"
+			]
+			tasks: [
+				{
+					id: "293B9E9E62B9CA72"
+					type: "item"
+					item: {
+						id: "immersiveengineering:wirecutter"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "F9993E3C8791856D"
+					type: "item"
+					item: {
+						id: "minecraft:copper_ingot"
+						count: 1
+					}
+					count: 8
+				}
+			]
+		}
+		{
+			id: "C130845001A9AB9D"
+			x: 0.0d
+			y: 3.8d
+			icon: {
+				id: "immersiveengineering:hemp_fiber"
+				count: 1
+			}
+			dependencies: [
+				"8FE695089B5F6559"
+			]
+			tasks: [
+				{
+					id: "938FB64E6A5FECFF"
+					type: "item"
+					item: {
+						id: "immersiveengineering:seed"
+						count: 1
+					}
+					count: 4
+				}
+				{
+					id: "CA253FBDEBFD773F"
+					type: "item"
+					item: {
+						id: "immersiveengineering:hemp_fiber"
+						count: 1
+					}
+					count: 16
+				}
+			]
+			rewards: [
+				{
+					id: "343F17BDD32340EC"
+					type: "item"
+					item: {
+						id: "minecraft:bone_meal"
+						count: 1
+					}
+					count: 16
+				}
+			]
+		}
+		{
+			id: "DF6C4EF2A2627DB2"
+			x: 2.5d
+			y: 3.8d
+			icon: {
+				id: "immersiveengineering:raw_silver"
+				count: 1
+			}
+			dependencies: [
+				"8FE695089B5F6559"
+			]
+			tasks: [
+				{
+					id: "FBE89B9A8070EF3B"
+					type: "item"
+					item: {
+						id: "immersiveengineering:ingot_lead"
+						count: 1
+					}
+					count: 4
+				}
+				{
+					id: "F877C5245DA8652C"
+					type: "item"
+					item: {
+						id: "immersiveengineering:ingot_silver"
+						count: 1
+					}
+					count: 4
+				}
+				{
+					id: "FDFC14781D5E895B"
+					type: "item"
+					item: {
+						id: "immersiveengineering:ingot_nickel"
+						count: 1
+					}
+					count: 4
+				}
+			]
+			rewards: [
+				{
+					id: "86BC31C861123797"
+					type: "item"
+					item: {
+						id: "minecraft:raw_iron"
+						count: 1
+					}
+					count: 16
+				}
+				{
+					id: "57DB15B454508BB9"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+		}
+		{
+			id: "49D51D26FC492787"
+			x: 6.0d
+			y: 0.0d
+			dependencies: [
+				"CEBEA82F8E132468"
+			]
+			tasks: [
+				{
+					id: "D77ED551B5D51842"
 					type: "item"
 					item: {
 						id: "immersiveengineering:cokebrick"
@@ -98,7 +290,7 @@
 			]
 			rewards: [
 				{
-					id: "1CC00A5B525392EC"
+					id: "9F7287C560B4D6FC"
 					type: "item"
 					item: {
 						id: "minecraft:clay_ball"
@@ -107,7 +299,40 @@
 					count: 32
 				}
 				{
-					id: "8186832DCC839476"
+					id: "B0D4CA9DE621757A"
+					type: "item"
+					item: {
+						id: "minecraft:sandstone"
+						count: 1
+					}
+					count: 8
+				}
+			]
+		}
+		{
+			id: "570C72A66EDB786D"
+			x: 8.5d
+			y: 0.0d
+			icon: {
+				id: "immersiveengineering:cokebrick"
+				count: 1
+			}
+			size: 1.75d
+			shape: "hexagon"
+			dependencies: [
+				"49D51D26FC492787"
+			]
+			tasks: [
+				{
+					id: "69E647546E2A0229"
+					type: "advancement"
+					advancement: "immersiveengineering:main/mb_cokeoven"
+					criterion: ""
+				}
+			]
+			rewards: [
+				{
+					id: "1CC00A5B525392EC"
 					type: "item"
 					item: {
 						id: "minecraft:coal"
@@ -115,23 +340,28 @@
 					}
 					count: 32
 				}
+				{
+					id: "8186832DCC839476"
+					type: "loot"
+					table_id: "F2BA64790EBA3DF5"
+				}
+				{
+					id: "42CE49B75EC317D6"
+					type: "xp_levels"
+					xp_levels: 10
+				}
 			]
 		}
 		{
-			id: "E6A09DA1E56FBCA2"
-			x: 6.0d
-			y: -2.0d
-			title: "Coal Coke"
-			subtitle: "Hotter than coal, and it makes steel."
-			description: [
-				"Coal coke burns longer than coal and is what the blast furnace wants. Start stockpiling."
-			]
+			id: "F21FDC201D52BB6D"
+			x: 11.0d
+			y: -1.0d
 			dependencies: [
 				"570C72A66EDB786D"
 			]
 			tasks: [
 				{
-					id: "17B9897FEB1A1211"
+					id: "2BF73DE2405B3D42"
 					type: "item"
 					item: {
 						id: "immersiveengineering:coal_coke"
@@ -142,7 +372,7 @@
 			]
 			rewards: [
 				{
-					id: "C6E0E6E520D3CDB4"
+					id: "BF2A4B11FA67B5FB"
 					type: "item"
 					item: {
 						id: "minecraft:coal_block"
@@ -153,16 +383,80 @@
 			]
 		}
 		{
-			id: "219BE3696F329A1E"
-			x: 6.0d
-			y: 2.0d
-			title: "Treated Wood"
-			subtitle: "Planks that do not rot."
-			description: [
-				"Craft planks with a bucket of creosote oil. Treated wood is in half the machines of this mod, and the sticks go into the windmill."
+			id: "C703E9B19D9BFE2E"
+			x: 11.0d
+			y: -2.8d
+			icon: {
+				id: "immersiveengineering:coke"
+				count: 1
+			}
+			optional: true
+			dependencies: [
+				"F21FDC201D52BB6D"
 			]
+			tasks: [
+				{
+					id: "33C14E1394E1B4A8"
+					type: "item"
+					item: {
+						id: "immersiveengineering:coke"
+						count: 1
+					}
+					count: 4
+				}
+			]
+			rewards: [
+				{
+					id: "D3F6AE881C4F2768"
+					type: "item"
+					item: {
+						id: "minecraft:coal"
+						count: 1
+					}
+					count: 16
+				}
+			]
+		}
+		{
+			id: "8FF700F613DF2D92"
+			x: 11.0d
+			y: 1.0d
 			dependencies: [
 				"570C72A66EDB786D"
+			]
+			tasks: [
+				{
+					id: "8F8A284FD3441BBD"
+					type: "item"
+					item: {
+						id: "immersiveengineering:creosote_bucket"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "16BA5351B2970B8A"
+					type: "item"
+					item: {
+						id: "minecraft:bucket"
+						count: 1
+					}
+					count: 2
+				}
+			]
+		}
+		{
+			id: "219BE3696F329A1E"
+			x: 13.5d
+			y: 1.0d
+			icon: {
+				id: "immersiveengineering:treated_wood_horizontal"
+				count: 1
+			}
+			dependencies: [
+				"8FF700F613DF2D92"
 			]
 			tasks: [
 				{
@@ -172,7 +466,7 @@
 						id: "immersiveengineering:treated_wood_horizontal"
 						count: 1
 					}
-					count: 16
+					count: 32
 				}
 			]
 			rewards: [
@@ -188,26 +482,76 @@
 			]
 		}
 		{
-			id: "5D3B2AA57876A325"
-			x: 9.0d
-			y: -2.0d
-			title: "Blast Furnace"
-			subtitle: "Iron in, steel out."
-			description: [
-				"Another 3x3x3 cube, this time of &6Blast Bricks&r, which need things from the Nether. Iron and coal coke go in, &6Steel&r comes out, slowly."
-				"Steel from here counts for the stage 3 goal exactly like Mekanism steel."
-			]
-			icon: {
-				id: "immersiveengineering:blastbrick"
-				count: 1
-			}
-			size: 1.5d
+			id: "7685BEEF797367AB"
+			x: 16.0d
+			y: 1.0d
 			dependencies: [
-				"E6A09DA1E56FBCA2"
+				"219BE3696F329A1E"
 			]
 			tasks: [
 				{
-					id: "0656BDE202A72D06"
+					id: "B8926F0F6E059B6F"
+					type: "item"
+					item: {
+						id: "immersiveengineering:stick_treated"
+						count: 1
+					}
+					count: 16
+				}
+			]
+			rewards: [
+				{
+					id: "65E075929A68640C"
+					type: "item"
+					item: {
+						id: "minecraft:stick"
+						count: 1
+					}
+					count: 32
+				}
+			]
+		}
+		{
+			id: "F2069EFD07BB1C25"
+			x: 13.5d
+			y: 2.8d
+			optional: true
+			dependencies: [
+				"219BE3696F329A1E"
+			]
+			tasks: [
+				{
+					id: "6B03DCE73E8FF071"
+					type: "item"
+					item: {
+						id: "immersiveengineering:craftingtable"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "2FE9A11BF8940474"
+					type: "item"
+					item: {
+						id: "immersiveengineering:treated_wood_horizontal"
+						count: 1
+					}
+					count: 16
+				}
+			]
+		}
+		{
+			id: "C804CE1BE6F8F515"
+			x: 19.0d
+			y: -1.0d
+			dependencies: [
+				"F21FDC201D52BB6D"
+			]
+			tasks: [
+				{
+					id: "D7A79E801E6AEAC3"
 					type: "item"
 					item: {
 						id: "immersiveengineering:blastbrick"
@@ -218,30 +562,77 @@
 			]
 			rewards: [
 				{
+					id: "CC4530AB9541C798"
+					type: "item"
+					item: {
+						id: "minecraft:magma_block"
+						count: 1
+					}
+					count: 4
+				}
+				{
+					id: "4ED661AA8C35CC5D"
+					type: "item"
+					item: {
+						id: "minecraft:brick"
+						count: 1
+					}
+					count: 16
+				}
+			]
+		}
+		{
+			id: "5D3B2AA57876A325"
+			x: 21.5d
+			y: -1.0d
+			icon: {
+				id: "immersiveengineering:blastbrick"
+				count: 1
+			}
+			size: 1.75d
+			shape: "hexagon"
+			dependencies: [
+				"C804CE1BE6F8F515"
+			]
+			tasks: [
+				{
+					id: "0656BDE202A72D06"
+					type: "advancement"
+					advancement: "immersiveengineering:main/mb_blastfurnace"
+					criterion: ""
+				}
+			]
+			rewards: [
+				{
 					id: "60A0BE25AE55E73B"
 					type: "item"
 					item: {
-						id: "minecraft:iron_ingot"
+						id: "immersiveengineering:coal_coke"
 						count: 1
 					}
-					count: 32
+					count: 16
 				}
 				{
 					id: "FA2BB4C4924CD09D"
 					type: "loot"
 					table_id: "BA8E33E78A3B3A0C"
 				}
+				{
+					id: "C4C09A5D80EDA080"
+					type: "xp_levels"
+					xp_levels: 10
+				}
 			]
 		}
 		{
 			id: "BB25DD50942C713A"
-			x: 12.0d
-			y: -2.0d
-			title: "Steel"
-			subtitle: "The first ingots."
-			description: [
-				"Run the blast furnace. It takes a while per ingot, so build two and keep them fed."
-			]
+			x: 24.0d
+			y: -1.0d
+			icon: {
+				id: "immersiveengineering:ingot_steel"
+				count: 1
+			}
+			size: 1.5d
 			dependencies: [
 				"5D3B2AA57876A325"
 			]
@@ -261,100 +652,7 @@
 					id: "4704ADDCE236CA45"
 					type: "item"
 					item: {
-						id: "immersiveengineering:coal_coke"
-						count: 1
-					}
-					count: 16
-				}
-			]
-		}
-		{
-			id: "5E25C12926B19AE5"
-			x: 9.0d
-			y: 2.0d
-			title: "Windmill and Kinetic Dynamo"
-			subtitle: "Rotation to power."
-			description: [
-				"A &6Windmill&r or &6Water Wheel&r turns a &6Kinetic Dynamo&r, which puts out power. Windmills work better high up with open space around them."
-			]
-			icon: {
-				id: "immersiveengineering:windmill"
-				count: 1
-			}
-			size: 1.5d
-			dependencies: [
-				"219BE3696F329A1E"
-			]
-			tasks: [
-				{
-					id: "E5FC9B1B0A478820"
-					type: "item"
-					item: {
-						id: "immersiveengineering:windmill"
-						count: 1
-					}
-					count: 1
-				}
-				{
-					id: "8D1AC506D7E72FEE"
-					type: "item"
-					item: {
-						id: "immersiveengineering:dynamo"
-						count: 1
-					}
-					count: 1
-				}
-			]
-			rewards: [
-				{
-					id: "64EFAA946722B6FA"
-					type: "item"
-					item: {
-						id: "immersiveengineering:treated_wood_horizontal"
-						count: 1
-					}
-					count: 16
-				}
-			]
-		}
-		{
-			id: "93E5418A474982C6"
-			x: 12.0d
-			y: 2.0d
-			title: "Copper Wire"
-			subtitle: "Power on poles, across the base."
-			description: [
-				"Place &6LV Wire Connectors&r on the dynamo and the machines, then right click them one after the other with a &6Copper Wire Coil&r. Wires hang in the air and can span long distances."
-			]
-			dependencies: [
-				"5E25C12926B19AE5"
-			]
-			tasks: [
-				{
-					id: "596356A30232744E"
-					type: "item"
-					item: {
-						id: "immersiveengineering:wirecoil_copper"
-						count: 1
-					}
-					count: 4
-				}
-				{
-					id: "EE0AAABAA93FB6B1"
-					type: "item"
-					item: {
-						id: "immersiveengineering:connector_lv"
-						count: 1
-					}
-					count: 4
-				}
-			]
-			rewards: [
-				{
-					id: "453C31B4FDDF4E3B"
-					type: "item"
-					item: {
-						id: "minecraft:copper_ingot"
+						id: "minecraft:iron_ingot"
 						count: 1
 					}
 					count: 32
@@ -362,51 +660,81 @@
 			]
 		}
 		{
-			id: "F27164CFA50C5EBE"
-			x: 15.0d
-			y: 2.0d
-			title: "LV Capacitor"
-			subtitle: "Keep the power for later."
-			description: [
-				"Stores power for when the wind drops. Put it between the dynamo and the machines."
-			]
+			id: "65047AB53B1126D5"
+			x: 24.0d
+			y: 1.0d
 			optional: true
 			dependencies: [
-				"93E5418A474982C6"
+				"BB25DD50942C713A"
 			]
 			tasks: [
 				{
-					id: "DE2E6F6FB35B972C"
+					id: "19924CA8934F78AC"
 					type: "item"
 					item: {
-						id: "immersiveengineering:capacitor_lv"
+						id: "immersiveengineering:slag"
 						count: 1
 					}
-					count: 1
+					count: 16
 				}
 			]
 			rewards: [
 				{
-					id: "E8DD5917DD4F6C2E"
-					type: "loot"
-					table_id: "F2BA64790EBA3DF5"
+					id: "8FDC7F1EB490A72E"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+		}
+		{
+			id: "209C39B820260A38"
+			x: 21.5d
+			y: 1.2d
+			icon: {
+				id: "immersiveengineering:blastbrick_reinforced"
+				count: 1
+			}
+			optional: true
+			dependencies: [
+				"BB25DD50942C713A"
+			]
+			tasks: [
+				{
+					id: "47A117654B5849B3"
+					type: "item"
+					item: {
+						id: "immersiveengineering:blastbrick_reinforced"
+						count: 1
+					}
+					count: 27
+				}
+			]
+			rewards: [
+				{
+					id: "8035017D71DEDFC3"
+					type: "item"
+					item: {
+						id: "immersiveengineering:ingot_steel"
+						count: 1
+					}
+					count: 8
+				}
+				{
+					id: "48E5FD5A4F7D1905"
+					type: "xp_levels"
+					xp_levels: 10
 				}
 			]
 		}
 		{
 			id: "9CC653727697EE2C"
-			x: 15.0d
-			y: -2.0d
-			title: "An Engineer"
-			subtitle: "Steel by the stack."
-			description: [
-				"The stage 3 goal asks for thousands of steel. Two or three blast furnaces running now make that a lot less painful later."
-			]
+			x: 27.0d
+			y: 0.0d
 			icon: {
-				id: "immersiveengineering:ingot_steel"
+				id: "immersiveengineering:storage_steel"
 				count: 1
 			}
-			size: 1.75d
+			size: 2.5d
 			shape: "gear"
 			dependencies: [
 				"BB25DD50942C713A"
@@ -430,10 +758,716 @@
 				}
 				{
 					id: "34AAF5FC53EC77FF"
+					type: "item"
+					item: {
+						id: "immersiveengineering:coal_coke"
+						count: 1
+					}
+					count: 32
+				}
+				{
+					id: "9704EA58C33DA321"
+					type: "xp_levels"
+					xp_levels: 20
+				}
+			]
+		}
+		{
+			id: "87B6E481044EF248"
+			x: 27.0d
+			y: 2.6d
+			optional: true
+			dependencies: [
+				"9CC653727697EE2C"
+			]
+			tasks: [
+				{
+					id: "16D270E7FE6B1992"
+					type: "item"
+					item: {
+						id: "immersiveengineering:pickaxe_steel"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "CA3365DEF5368931"
+					type: "item"
+					item: {
+						id: "immersiveengineering:ingot_steel"
+						count: 1
+					}
+					count: 4
+				}
+			]
+		}
+		{
+			id: "D7CD40382C9E4BEA"
+			x: 6.0d
+			y: 6.5d
+			dependencies: [
+				"CEBEA82F8E132468"
+			]
+			tasks: [
+				{
+					id: "B8EB4E1506532D8C"
+					type: "item"
+					item: {
+						id: "immersiveengineering:alloybrick"
+						count: 1
+					}
+					count: 8
+				}
+			]
+			rewards: [
+				{
+					id: "874009EB546D137C"
+					type: "item"
+					item: {
+						id: "minecraft:sandstone"
+						count: 1
+					}
+					count: 8
+				}
+			]
+		}
+		{
+			id: "1D1FC33927C70AF3"
+			x: 8.5d
+			y: 6.5d
+			icon: {
+				id: "immersiveengineering:alloybrick"
+				count: 1
+			}
+			size: 1.75d
+			shape: "hexagon"
+			dependencies: [
+				"D7CD40382C9E4BEA"
+			]
+			tasks: [
+				{
+					id: "A1AD6B1B5C6CD270"
+					type: "checkmark"
+				}
+			]
+			rewards: [
+				{
+					id: "1FBD8185238CBD57"
+					type: "item"
+					item: {
+						id: "minecraft:coal"
+						count: 1
+					}
+					count: 32
+				}
+				{
+					id: "0A0FA342168C3BFE"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+		}
+		{
+			id: "F0CF533BDB0144AF"
+			x: 11.0d
+			y: 6.5d
+			icon: {
+				id: "create:brass_ingot"
+				count: 1
+			}
+			dependencies: [
+				"1D1FC33927C70AF3"
+			]
+			tasks: [
+				{
+					id: "C7D63A3004F93CF0"
+					type: "item"
+					item: {
+						id: "create:brass_ingot"
+						count: 1
+					}
+					count: 16
+				}
+			]
+			rewards: [
+				{
+					id: "FD6E50DA44D37BF1"
+					type: "item"
+					item: {
+						id: "create:zinc_ingot"
+						count: 1
+					}
+					count: 16
+				}
+				{
+					id: "23A913052F83FB4E"
+					type: "item"
+					item: {
+						id: "minecraft:copper_ingot"
+						count: 1
+					}
+					count: 16
+				}
+			]
+		}
+		{
+			id: "0FF6A4979CED34EA"
+			x: 13.5d
+			y: 6.5d
+			icon: {
+				id: "mekanism:ingot_bronze"
+				count: 1
+			}
+			optional: true
+			dependencies: [
+				"F0CF533BDB0144AF"
+			]
+			tasks: [
+				{
+					id: "5736F32A82AA4C08"
+					type: "item"
+					item: {
+						id: "mekanism:ingot_bronze"
+						count: 1
+					}
+					count: 8
+				}
+			]
+			rewards: [
+				{
+					id: "03ADC787FE4A531D"
+					type: "item"
+					item: {
+						id: "minecraft:copper_ingot"
+						count: 1
+					}
+					count: 16
+				}
+			]
+		}
+		{
+			id: "A2D9D903A0AC27DD"
+			x: 11.0d
+			y: 4.6d
+			dependencies: [
+				"1D1FC33927C70AF3"
+			]
+			tasks: [
+				{
+					id: "E1AA237B1A48D9F4"
+					type: "item"
+					item: {
+						id: "immersiveengineering:ingot_electrum"
+						count: 1
+					}
+					count: 4
+				}
+			]
+			rewards: [
+				{
+					id: "23F78E2688A32186"
+					type: "item"
+					item: {
+						id: "minecraft:gold_ingot"
+						count: 1
+					}
+					count: 8
+				}
+			]
+		}
+		{
+			id: "A9BF5BB0EE711260"
+			x: 11.0d
+			y: 8.4d
+			dependencies: [
+				"1D1FC33927C70AF3"
+			]
+			tasks: [
+				{
+					id: "937BA8CA60E01D00"
+					type: "item"
+					item: {
+						id: "immersiveengineering:ingot_constantan"
+						count: 1
+					}
+					count: 4
+				}
+			]
+			rewards: [
+				{
+					id: "6885B6B3D19AFB35"
+					type: "item"
+					item: {
+						id: "minecraft:copper_ingot"
+						count: 1
+					}
+					count: 8
+				}
+			]
+		}
+		{
+			id: "91A0D58569EEFD06"
+			x: 6.0d
+			y: 12.0d
+			dependencies: [
+				"A8D21689C278C370"
+			]
+			tasks: [
+				{
+					id: "BDAF011EC76F6A26"
+					type: "item"
+					item: {
+						id: "immersiveengineering:component_iron"
+						count: 1
+					}
+					count: 2
+				}
+			]
+			rewards: [
+				{
+					id: "00F1B33DB5940AD0"
+					type: "item"
+					item: {
+						id: "minecraft:iron_ingot"
+						count: 1
+					}
+					count: 16
+				}
+			]
+		}
+		{
+			id: "3301C49EBE02D2C7"
+			x: 6.0d
+			y: 14.0d
+			dependencies: [
+				"B2B9F48B7C9C8BD9"
+			]
+			tasks: [
+				{
+					id: "995A68329F913E8C"
+					type: "item"
+					item: {
+						id: "immersiveengineering:wire_copper"
+						count: 1
+					}
+					count: 8
+				}
+			]
+			rewards: [
+				{
+					id: "51F76C03E9A81DCE"
+					type: "item"
+					item: {
+						id: "minecraft:copper_ingot"
+						count: 1
+					}
+					count: 16
+				}
+			]
+		}
+		{
+			id: "CFD37C0D735F7B6C"
+			x: 8.5d
+			y: 14.0d
+			dependencies: [
+				"3301C49EBE02D2C7"
+			]
+			tasks: [
+				{
+					id: "FE52C120725761BD"
+					type: "item"
+					item: {
+						id: "immersiveengineering:wirecoil_copper"
+						count: 1
+					}
+					count: 8
+				}
+			]
+			rewards: [
+				{
+					id: "B7B2F9DD117D7C30"
+					type: "item"
+					item: {
+						id: "minecraft:stick"
+						count: 1
+					}
+					count: 16
+				}
+			]
+		}
+		{
+			id: "84E66C88730FE8F6"
+			x: 11.0d
+			y: 14.0d
+			dependencies: [
+				"CFD37C0D735F7B6C"
+			]
+			tasks: [
+				{
+					id: "A7C6EC694906C552"
+					type: "item"
+					item: {
+						id: "immersiveengineering:coil_lv"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "9C8AAA54474CD16B"
+					type: "item"
+					item: {
+						id: "immersiveengineering:wirecoil_copper"
+						count: 1
+					}
+					count: 4
+				}
+			]
+		}
+		{
+			id: "E145E95636FC59C3"
+			x: 13.5d
+			y: 13.0d
+			icon: {
+				id: "immersiveengineering:dynamo"
+				count: 1
+			}
+			size: 1.5d
+			shape: "hexagon"
+			dependencies: [
+				"91A0D58569EEFD06"
+				"84E66C88730FE8F6"
+			]
+			tasks: [
+				{
+					id: "BC6D48D9168BB6A3"
+					type: "item"
+					item: {
+						id: "immersiveengineering:dynamo"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "30E8613BA1577E83"
+					type: "item"
+					item: {
+						id: "minecraft:redstone"
+						count: 1
+					}
+					count: 16
+				}
+				{
+					id: "D6C951429CF2F23C"
+					type: "loot"
+					table_id: "F2BA64790EBA3DF5"
+				}
+			]
+		}
+		{
+			id: "5E25C12926B19AE5"
+			x: 16.0d
+			y: 13.0d
+			icon: {
+				id: "immersiveengineering:windmill"
+				count: 1
+			}
+			size: 1.75d
+			shape: "gear"
+			dependencies: [
+				"E145E95636FC59C3"
+			]
+			tasks: [
+				{
+					id: "E5FC9B1B0A478820"
+					type: "item"
+					item: {
+						id: "immersiveengineering:windmill"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "64EFAA946722B6FA"
+					type: "item"
+					item: {
+						id: "immersiveengineering:treated_wood_horizontal"
+						count: 1
+					}
+					count: 16
+				}
+				{
+					id: "CEA4FCA16F2060A9"
+					type: "item"
+					item: {
+						id: "immersiveengineering:stick_treated"
+						count: 1
+					}
+					count: 16
+				}
+				{
+					id: "33FC86F344ACCC06"
+					type: "xp_levels"
+					xp_levels: 10
+				}
+			]
+		}
+		{
+			id: "E702A3135D8B054C"
+			x: 16.0d
+			y: 11.0d
+			optional: true
+			dependencies: [
+				"5E25C12926B19AE5"
+			]
+			tasks: [
+				{
+					id: "D8C6329497CECEE9"
+					type: "item"
+					item: {
+						id: "immersiveengineering:windmill_sail"
+						count: 1
+					}
+					count: 4
+				}
+			]
+			rewards: [
+				{
+					id: "E418DBF2805017D2"
+					type: "item"
+					item: {
+						id: "immersiveengineering:hemp_fiber"
+						count: 1
+					}
+					count: 16
+				}
+			]
+		}
+		{
+			id: "E2C42435D584F285"
+			x: 16.0d
+			y: 15.2d
+			optional: true
+			dependencies: [
+				"E145E95636FC59C3"
+			]
+			tasks: [
+				{
+					id: "8EACDD4B3AFF0680"
+					type: "item"
+					item: {
+						id: "immersiveengineering:watermill"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "8D7D92E108D11F66"
+					type: "item"
+					item: {
+						id: "immersiveengineering:ingot_steel"
+						count: 1
+					}
+					count: 4
+				}
+			]
+		}
+		{
+			id: "E767F6A0307AF055"
+			x: 18.5d
+			y: 13.0d
+			icon: {
+				id: "immersiveengineering:connector_lv"
+				count: 1
+			}
+			dependencies: [
+				"5E25C12926B19AE5"
+			]
+			tasks: [
+				{
+					id: "59D943781ED764ED"
+					type: "item"
+					item: {
+						id: "immersiveengineering:connector_lv"
+						count: 1
+					}
+					count: 4
+				}
+				{
+					id: "94AF3B7EE808F7D3"
+					type: "item"
+					item: {
+						id: "immersiveengineering:connector_lv_relay"
+						count: 1
+					}
+					count: 4
+				}
+				{
+					id: "864C5D7E493F954E"
+					type: "advancement"
+					advancement: "immersiveengineering:main/connect_wire"
+					criterion: ""
+				}
+			]
+			rewards: [
+				{
+					id: "1D329C77C6971EF6"
+					type: "item"
+					item: {
+						id: "minecraft:terracotta"
+						count: 1
+					}
+					count: 16
+				}
+				{
+					id: "99FAA88B1815E012"
+					type: "item"
+					item: {
+						id: "immersiveengineering:wirecoil_copper"
+						count: 1
+					}
+					count: 8
+				}
+			]
+		}
+		{
+			id: "F27164CFA50C5EBE"
+			x: 21.0d
+			y: 13.0d
+			icon: {
+				id: "immersiveengineering:capacitor_lv"
+				count: 1
+			}
+			size: 1.5d
+			shape: "hexagon"
+			dependencies: [
+				"E767F6A0307AF055"
+			]
+			tasks: [
+				{
+					id: "DE2E6F6FB35B972C"
+					type: "item"
+					item: {
+						id: "immersiveengineering:capacitor_lv"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "E8DD5917DD4F6C2E"
+					type: "loot"
+					table_id: "BA8E33E78A3B3A0C"
+				}
+				{
+					id: "C0EB672344B7DE78"
 					type: "xp_levels"
 					xp_levels: 15
 				}
 			]
+		}
+		{
+			id: "AF0F207349D0E998"
+			x: 21.0d
+			y: 15.0d
+			optional: true
+			dependencies: [
+				"E767F6A0307AF055"
+			]
+			tasks: [
+				{
+					id: "903B365670E23AB9"
+					type: "item"
+					item: {
+						id: "immersiveengineering:voltmeter"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "A1F1608FFDE24FB1"
+					type: "item"
+					item: {
+						id: "minecraft:copper_ingot"
+						count: 1
+					}
+					count: 8
+				}
+			]
+		}
+	]
+	images: [
+		{
+			id: "BBC95F425AF56EF5"
+			image: "kronwerke:textures/quests/immersive/title.png"
+			x: 13.0d
+			y: -5.0d
+			width: 13.04d
+			height: 1.5d
+			rotation: 0.0d
+			order: 1
+		}
+		{
+			id: "6A49D62C117C7D6B"
+			image: "kronwerke:textures/quests/immersive/basics.png"
+			x: 1.2d
+			y: 1.8d
+			width: 4.01d
+			height: 0.9d
+			rotation: 0.0d
+			order: 1
+		}
+		{
+			id: "676D53B2E65F6DD8"
+			image: "kronwerke:textures/quests/immersive/coke.png"
+			x: 7.2d
+			y: -2.3d
+			width: 5.9d
+			height: 0.9d
+			rotation: 0.0d
+			order: 1
+		}
+		{
+			id: "10009519FFCE541E"
+			image: "kronwerke:textures/quests/immersive/steel.png"
+			x: 22.5d
+			y: -2.8d
+			width: 1.94d
+			height: 0.9d
+			rotation: 0.0d
+			order: 1
+		}
+		{
+			id: "D7DF6F9673D93995"
+			image: "kronwerke:textures/quests/immersive/alloys.png"
+			x: 8.0d
+			y: 3.3d
+			width: 4.07d
+			height: 0.9d
+			rotation: 0.0d
+			order: 1
+		}
+		{
+			id: "E627E37BB7FB54A8"
+			image: "kronwerke:textures/quests/immersive/power.png"
+			x: 10.0d
+			y: 10.4d
+			width: 5.37d
+			height: 0.9d
+			rotation: 0.0d
+			order: 1
 		}
 	]
 }

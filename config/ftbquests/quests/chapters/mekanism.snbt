@@ -1,7 +1,6 @@
 {
 	id: "90138904D2605D92"
 	filename: "mekanism"
-	title: "Mekanism"
 	icon: {
 		id: "mekanism:metallurgic_infuser"
 		count: 1
@@ -10,21 +9,11 @@
 	order_index: 10
 	default_quest_shape: "square"
 	default_hide_dependency_lines: false
-	subtitle: [
-		"Stage 2. Osmium, steel and the basic machines."
-	]
 	quests: [
 		{
 			id: "80E04C1C72E49A84"
 			x: 0.0d
-			y: 0.0d
-			title: "Mekanism"
-			subtitle: "Machines that run on power and do it well."
-			description: [
-				"Mekanism is the big tech mod of this pack. It starts with one ore, osmium, and one machine, the Metallurgic Infuser, and ends with fusion reactors in stage 4."
-				""
-				"In stage 2 the basic tier is open: the first machines, steel, cables and power. The ore tripling machines, the digital miner and the elite tier wait for stage 3."
-			]
+			y: 1.0d
 			icon: {
 				id: "mekanism:ingot_osmium"
 				count: 1
@@ -61,13 +50,8 @@
 		}
 		{
 			id: "1AA1223E5333EA03"
-			x: 3.0d
+			x: 2.5d
 			y: 0.0d
-			title: "Osmium Ingots"
-			subtitle: "Smelt it. You will need a lot."
-			description: [
-				"Osmium ore is common in the overworld stone. Every Mekanism machine and circuit has osmium in it somewhere."
-			]
 			dependencies: [
 				"80E04C1C72E49A84"
 			]
@@ -92,26 +76,65 @@
 					}
 					count: 32
 				}
+				{
+					id: "A446305EBD627562"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+		}
+		{
+			id: "8A5AE0F34A91D904"
+			x: 2.5d
+			y: 2.0d
+			icon: {
+				id: "botania:manasteel_ingot"
+				count: 1
+			}
+			dependencies: [
+				"80E04C1C72E49A84"
+			]
+			tasks: [
+				{
+					id: "84AC8FBAF749EE47"
+					type: "item"
+					item: {
+						id: "botania:manasteel_ingot"
+						count: 1
+					}
+					count: 2
+				}
+			]
+			rewards: [
+				{
+					id: "D2B79EE231B88A3B"
+					type: "item"
+					item: {
+						id: "minecraft:iron_ingot"
+						count: 1
+					}
+					count: 8
+				}
+				{
+					id: "5F120DF77F1FC0F5"
+					type: "xp_levels"
+					xp_levels: 5
+				}
 			]
 		}
 		{
 			id: "6C4F838C1079AFFB"
-			x: 6.0d
-			y: 0.0d
-			title: "Metallurgic Infuser"
-			subtitle: "The first machine, and it needs mana."
-			description: [
-				"On this server the &6Metallurgic Infuser&r takes two &6Manasteel Ingots&r from a Botania mana pool. Find someone with a pool, or build one."
-				""
-				"The infuser pushes an infusion type into an item: coal gives carbon, redstone gives redstone. Put power in and it works on its own."
-			]
+			x: 5.5d
+			y: 1.0d
 			icon: {
 				id: "mekanism:metallurgic_infuser"
 				count: 1
 			}
-			size: 1.5d
+			size: 2.0d
+			shape: "gear"
 			dependencies: [
 				"1AA1223E5333EA03"
+				"8A5AE0F34A91D904"
 			]
 			tasks: [
 				{
@@ -139,81 +162,66 @@
 					type: "loot"
 					table_id: "F2BA64790EBA3DF5"
 				}
+				{
+					id: "0CF4B619946A9C2D"
+					type: "xp_levels"
+					xp_levels: 10
+				}
 			]
 		}
 		{
-			id: "D2437DB2E3BD2F63"
-			x: 6.0d
-			y: 3.5d
-			title: "Heat Generator"
-			subtitle: "Power from anything that burns."
-			description: [
-				"The &6Heat Generator&r burns fuel and gets a little extra from lava next to it. Enough for the first two or three machines. Wind and solar come after."
-			]
+			id: "2CB7E833DCA668D3"
+			x: 8.5d
+			y: 1.0d
+			icon: {
+				id: "mekanism:enriched_carbon"
+				count: 1
+			}
 			dependencies: [
-				"1AA1223E5333EA03"
+				"6C4F838C1079AFFB"
 			]
 			tasks: [
 				{
-					id: "434F428940BA2910"
-					type: "item"
-					item: {
-						id: "mekanismgenerators:heat_generator"
-						count: 1
-					}
-					count: 1
+					id: "A975970B876BE670"
+					type: "checkmark"
 				}
 			]
 			rewards: [
 				{
-					id: "86FB810AD956F4F9"
+					id: "8506FA9195B228DE"
 					type: "item"
 					item: {
 						id: "minecraft:coal_block"
 						count: 1
 					}
-					count: 8
+					count: 4
 				}
 			]
 		}
 		{
-			id: "24A9196C1811C3A6"
-			x: 9.0d
-			y: 3.5d
-			title: "Universal Cables"
-			subtitle: "Power from here to there."
-			description: [
-				"Cables carry power between generators and machines. The &6Basic Energy Cube&r stores it for when the generator is off."
-			]
+			id: "9F762C5C8BE9ED70"
+			x: 11.0d
+			y: -0.5d
 			dependencies: [
-				"D2437DB2E3BD2F63"
+				"2CB7E833DCA668D3"
 			]
 			tasks: [
 				{
-					id: "93575CB73D9B7936"
+					id: "302B5E416581CB6A"
 					type: "item"
 					item: {
-						id: "mekanism:basic_universal_cable"
+						id: "mekanism:enriched_iron"
 						count: 1
 					}
-					count: 16
-				}
-				{
-					id: "EC973C0E3BB4CA2D"
-					type: "item"
-					item: {
-						id: "mekanism:basic_energy_cube"
-						count: 1
-					}
-					count: 1
+					count: 8
 				}
 			]
 			rewards: [
 				{
-					id: "C090385178340EA9"
+					id: "A910F825DD7A10D0"
 					type: "item"
 					item: {
-						id: "mekanism:basic_universal_cable"
+						id: "minecraft:iron_ingot"
 						count: 1
 					}
 					count: 16
@@ -222,15 +230,10 @@
 		}
 		{
 			id: "42A695A19BD76174"
-			x: 9.0d
-			y: -2.0d
-			title: "Basic Control Circuit"
-			subtitle: "Osmium infused with redstone."
-			description: [
-				"Infuse osmium with redstone. Every machine past the infuser needs a circuit."
-			]
+			x: 11.0d
+			y: 1.0d
 			dependencies: [
-				"6C4F838C1079AFFB"
+				"2CB7E833DCA668D3"
 			]
 			tasks: [
 				{
@@ -253,29 +256,72 @@
 					}
 					count: 16
 				}
+				{
+					id: "AEB34B9A5ADA9494"
+					type: "item"
+					item: {
+						id: "minecraft:redstone_block"
+						count: 1
+					}
+					count: 2
+				}
+			]
+		}
+		{
+			id: "1F2B75676A4A2FB3"
+			x: 11.0d
+			y: 2.5d
+			dependencies: [
+				"2CB7E833DCA668D3"
+			]
+			tasks: [
+				{
+					id: "CE1DDDA920C89735"
+					type: "item"
+					item: {
+						id: "mekanism:alloy_infused"
+						count: 1
+					}
+					count: 4
+				}
+			]
+			rewards: [
+				{
+					id: "B6FDE7CA18C9303E"
+					type: "item"
+					item: {
+						id: "minecraft:copper_ingot"
+						count: 1
+					}
+					count: 24
+				}
 			]
 		}
 		{
 			id: "682143834F309275"
-			x: 9.0d
-			y: 0.0d
-			title: "Steel"
-			subtitle: "Iron, carbon, carbon again."
-			description: [
-				"Infuse iron with carbon and you get &6Enriched Iron&r. Infuse that with carbon again for &6Steel Dust&r. Smelt it."
-				"Steel goes into the casing of every Mekanism machine, and stage 3 asks the obelisk for thousands of it. Start early."
-			]
+			x: 13.5d
+			y: -0.5d
 			icon: {
 				id: "mekanism:ingot_steel"
 				count: 1
 			}
-			size: 1.5d
+			size: 1.75d
+			shape: "hexagon"
 			dependencies: [
-				"6C4F838C1079AFFB"
+				"9F762C5C8BE9ED70"
 			]
 			tasks: [
 				{
 					id: "1EADDA9E74BFB928"
+					type: "item"
+					item: {
+						id: "mekanism:dust_steel"
+						count: 1
+					}
+					count: 1
+				}
+				{
+					id: "5B552E6A5713F0BA"
 					type: "item"
 					item: {
 						id: "mekanism:ingot_steel"
@@ -299,21 +345,56 @@
 					type: "loot"
 					table_id: "BA8E33E78A3B3A0C"
 				}
+				{
+					id: "FE36F304E37035A0"
+					type: "xp_levels"
+					xp_levels: 10
+				}
+			]
+		}
+		{
+			id: "6DFD41C194A0DF40"
+			x: 16.0d
+			y: -1.3d
+			optional: true
+			dependencies: [
+				"682143834F309275"
+			]
+			tasks: [
+				{
+					id: "32F6E7FA9D2C5F27"
+					type: "item"
+					item: {
+						id: "mekanismtools:steel_pickaxe"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "0208146C05BCC8CD"
+					type: "item"
+					item: {
+						id: "mekanism:ingot_steel"
+						count: 1
+					}
+					count: 8
+				}
 			]
 		}
 		{
 			id: "6E4713E15FE7F816"
-			x: 12.0d
-			y: 0.0d
-			title: "Steel Casing"
-			subtitle: "The body of the machines."
-			description: [
-				"Steel, glass and osmium. From here on each machine is a casing plus whatever makes it special."
-			]
+			x: 16.0d
+			y: 1.3d
+			icon: {
+				id: "mekanism:steel_casing"
+				count: 1
+			}
+			size: 2.0d
+			shape: "gear"
 			dependencies: [
 				"682143834F309275"
-				"42A695A19BD76174"
-				"24A9196C1811C3A6"
 			]
 			tasks: [
 				{
@@ -336,23 +417,227 @@
 					}
 					count: 16
 				}
+				{
+					id: "9D0FD92E014B39C2"
+					type: "loot"
+					table_id: "F2BA64790EBA3DF5"
+				}
+			]
+		}
+		{
+			id: "0429B65ED6193623"
+			x: 0.0d
+			y: 7.0d
+			icon: {
+				id: "mekanismgenerators:heat_generator"
+				count: 1
+			}
+			size: 1.5d
+			shape: "hexagon"
+			dependencies: [
+				"80E04C1C72E49A84"
+			]
+			tasks: [
+				{
+					id: "57C22B2C3B500E77"
+					type: "item"
+					item: {
+						id: "mekanismgenerators:heat_generator"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "D4A95CF85DEC0E13"
+					type: "item"
+					item: {
+						id: "minecraft:coal_block"
+						count: 1
+					}
+					count: 8
+				}
+				{
+					id: "574859112E118A95"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+		}
+		{
+			id: "24A9196C1811C3A6"
+			x: 2.5d
+			y: 7.0d
+			dependencies: [
+				"0429B65ED6193623"
+			]
+			tasks: [
+				{
+					id: "93575CB73D9B7936"
+					type: "item"
+					item: {
+						id: "mekanism:basic_universal_cable"
+						count: 1
+					}
+					count: 16
+				}
+			]
+			rewards: [
+				{
+					id: "C090385178340EA9"
+					type: "item"
+					item: {
+						id: "mekanism:basic_universal_cable"
+						count: 1
+					}
+					count: 16
+				}
+			]
+		}
+		{
+			id: "F9BE67174B38E35E"
+			x: 2.5d
+			y: 9.0d
+			dependencies: [
+				"0429B65ED6193623"
+			]
+			tasks: [
+				{
+					id: "628840E7850E8CF0"
+					type: "item"
+					item: {
+						id: "mekanism:energy_tablet"
+						count: 1
+					}
+					count: 2
+				}
+			]
+			rewards: [
+				{
+					id: "468BB165F08D84A8"
+					type: "item"
+					item: {
+						id: "minecraft:gold_ingot"
+						count: 1
+					}
+					count: 8
+				}
+			]
+		}
+		{
+			id: "8F011EE8B29279EC"
+			x: 5.0d
+			y: 7.0d
+			icon: {
+				id: "mekanism:basic_energy_cube"
+				count: 1
+			}
+			dependencies: [
+				"24A9196C1811C3A6"
+				"F9BE67174B38E35E"
+			]
+			tasks: [
+				{
+					id: "2298D80A83E7E621"
+					type: "item"
+					item: {
+						id: "mekanism:basic_energy_cube"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "8AFBD836D323791D"
+					type: "loot"
+					table_id: "F2BA64790EBA3DF5"
+				}
+				{
+					id: "8EC9CA23E5D44263"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+		}
+		{
+			id: "0416DBEF41E814E7"
+			x: 7.5d
+			y: 7.0d
+			optional: true
+			dependencies: [
+				"8F011EE8B29279EC"
+			]
+			tasks: [
+				{
+					id: "039B9F534D9FE80D"
+					type: "item"
+					item: {
+						id: "mekanismgenerators:wind_generator"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "A9A3F7827820AB37"
+					type: "item"
+					item: {
+						id: "mekanism:basic_universal_cable"
+						count: 1
+					}
+					count: 16
+				}
+				{
+					id: "BD155F7D646B04EA"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+		}
+		{
+			id: "A0306B10C2AEC952"
+			x: 5.0d
+			y: 9.0d
+			optional: true
+			dependencies: [
+				"F9BE67174B38E35E"
+			]
+			tasks: [
+				{
+					id: "DA5E75935EA9A30D"
+					type: "item"
+					item: {
+						id: "mekanismgenerators:solar_generator"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "9333B17C0E06E3EF"
+					type: "item"
+					item: {
+						id: "mekanism:alloy_infused"
+						count: 1
+					}
+					count: 4
+				}
 			]
 		}
 		{
 			id: "FC298C9024BE1893"
-			x: 15.0d
-			y: -2.0d
-			title: "Enrichment Chamber"
-			subtitle: "More dust out of every ore."
-			description: [
-				"An ore block mined with silk touch becomes two dusts. Raw ore gives a third more than smelting it would. Smelt the dusts."
-				"It also turns coal into enriched carbon for the infuser, which is much faster than raw coal."
-			]
+			x: 11.0d
+			y: 7.0d
 			icon: {
 				id: "mekanism:enrichment_chamber"
 				count: 1
 			}
-			size: 1.5d
+			size: 1.75d
+			shape: "hexagon"
 			dependencies: [
 				"6E4713E15FE7F816"
 			]
@@ -382,19 +667,19 @@
 					type: "loot"
 					table_id: "BA8E33E78A3B3A0C"
 				}
+				{
+					id: "07FDBB6535C7A9AB"
+					type: "xp_levels"
+					xp_levels: 10
+				}
 			]
 		}
 		{
 			id: "877C48CC2333F037"
-			x: 15.0d
-			y: 2.0d
-			title: "Energized Smelter"
-			subtitle: "A furnace that runs on power."
-			description: [
-				"Faster than a furnace and no fuel. Put it right after the enrichment chamber and your ores come out as ingots."
-			]
+			x: 13.5d
+			y: 7.0d
 			dependencies: [
-				"6E4713E15FE7F816"
+				"FC298C9024BE1893"
 			]
 			tasks: [
 				{
@@ -420,15 +705,94 @@
 			]
 		}
 		{
-			id: "BD39D58490ECDCDF"
-			x: 18.0d
-			y: 2.0d
-			title: "Crusher"
-			subtitle: "Ingots to dust, and more."
-			description: [
-				"The &6Crusher&r grinds ingots back into dust and gravel into sand. Some recipes need dust instead of ingots."
+			id: "72AA0D4A1CE026D3"
+			x: 13.5d
+			y: 9.0d
+			dependencies: [
+				"FC298C9024BE1893"
 			]
-			optional: true
+			tasks: [
+				{
+					id: "8B5AFC5A87EF4378"
+					type: "item"
+					item: {
+						id: "mekanism:enriched_carbon"
+						count: 1
+					}
+					count: 16
+				}
+			]
+			rewards: [
+				{
+					id: "D5982BC04D30DF1E"
+					type: "item"
+					item: {
+						id: "minecraft:coal"
+						count: 1
+					}
+					count: 32
+				}
+			]
+		}
+		{
+			id: "655E42E49D1B7E75"
+			x: 16.0d
+			y: 7.0d
+			icon: {
+				id: "mekanism:dust_iron"
+				count: 1
+			}
+			size: 2.0d
+			shape: "diamond"
+			dependencies: [
+				"877C48CC2333F037"
+			]
+			tasks: [
+				{
+					id: "A19939EE27E7EB6D"
+					type: "item"
+					item: {
+						id: "mekanism:dust_iron"
+						count: 1
+					}
+					count: 64
+				}
+			]
+			rewards: [
+				{
+					id: "D04F9B283EF3CC8E"
+					type: "item"
+					item: {
+						id: "minecraft:raw_iron"
+						count: 1
+					}
+					count: 32
+				}
+				{
+					id: "279F3D2350C575C6"
+					type: "item"
+					item: {
+						id: "minecraft:raw_copper"
+						count: 1
+					}
+					count: 32
+				}
+				{
+					id: "47B31691058C326C"
+					type: "loot"
+					table_id: "BA8E33E78A3B3A0C"
+				}
+				{
+					id: "6C7E984F7590D808"
+					type: "xp_levels"
+					xp_levels: 10
+				}
+			]
+		}
+		{
+			id: "BD39D58490ECDCDF"
+			x: 16.0d
+			y: 9.0d
 			dependencies: [
 				"877C48CC2333F037"
 			]
@@ -456,26 +820,148 @@
 			]
 		}
 		{
-			id: "E5802595B371ECD8"
-			x: 18.0d
-			y: -2.0d
-			title: "An Ore Line"
-			subtitle: "Chest, enrichment chamber, smelter, chest."
-			description: [
-				"Connect them with the side configuration of each machine (the coloured tabs in the GUI) and a few &6Logistical Transporters&r. Drop ore into the first chest and collect the ingots at the end."
+			id: "6E3D25709EF50BAE"
+			x: 18.5d
+			y: 9.0d
+			optional: true
+			dependencies: [
+				"BD39D58490ECDCDF"
 			]
+			tasks: [
+				{
+					id: "D3741C199241CED2"
+					type: "item"
+					item: {
+						id: "mekanism:precision_sawmill"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "875DCEE6836C2DAA"
+					type: "item"
+					item: {
+						id: "minecraft:oak_log"
+						count: 1
+					}
+					count: 32
+				}
+			]
+		}
+		{
+			id: "4068D3CB12541380"
+			x: 18.5d
+			y: 7.0d
 			icon: {
-				id: "mekanism:basic_logistical_transporter"
+				id: "mekanism:ingot_bronze"
 				count: 1
 			}
-			size: 1.75d
-			shape: "gear"
+			optional: true
+			dependencies: [
+				"655E42E49D1B7E75"
+			]
+			tasks: [
+				{
+					id: "4F9D08B4E2D8FB32"
+					type: "item"
+					item: {
+						id: "mekanism:ingot_bronze"
+						count: 1
+					}
+					count: 8
+				}
+			]
+			rewards: [
+				{
+					id: "410D1B25C3370F8E"
+					type: "item"
+					item: {
+						id: "minecraft:copper_ingot"
+						count: 1
+					}
+					count: 24
+				}
+			]
+		}
+		{
+			id: "E6303DC9162B0830"
+			x: 21.0d
+			y: 7.0d
+			icon: {
+				id: "mekanism:ingot_lead"
+				count: 1
+			}
+			optional: true
+			dependencies: [
+				"4068D3CB12541380"
+			]
+			tasks: [
+				{
+					id: "D4BCAE017B180DD6"
+					type: "checkmark"
+				}
+			]
+			rewards: [
+				{
+					id: "1EB86E35CE229F7A"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+		}
+		{
+			id: "2363AB666B892877"
+			x: 11.0d
+			y: 13.0d
 			dependencies: [
 				"FC298C9024BE1893"
 			]
 			tasks: [
 				{
-					id: "077A43B0922D14C9"
+					id: "A71820EFDF8084C5"
+					type: "item"
+					item: {
+						id: "mekanism:configurator"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "98460D4FC3510E81"
+					type: "item"
+					item: {
+						id: "mekanism:ingot_steel"
+						count: 1
+					}
+					count: 8
+				}
+			]
+		}
+		{
+			id: "C7E126AFA6E34334"
+			x: 13.5d
+			y: 13.0d
+			dependencies: [
+				"2363AB666B892877"
+			]
+			tasks: [
+				{
+					id: "B87F0E6E284F2F2A"
+					type: "item"
+					item: {
+						id: "mekanism:basic_logistical_transporter"
+						count: 1
+					}
+					count: 16
+				}
+			]
+			rewards: [
+				{
+					id: "D2DB6546B0B16939"
 					type: "item"
 					item: {
 						id: "mekanism:basic_logistical_transporter"
@@ -483,8 +969,178 @@
 					}
 					count: 8
 				}
+			]
+		}
+		{
+			id: "2270C4D43A5F9FF3"
+			x: 16.0d
+			y: 13.0d
+			icon: {
+				id: "mekanism:basic_tier_installer"
+				count: 1
+			}
+			dependencies: [
+				"C7E126AFA6E34334"
+			]
+			tasks: [
 				{
-					id: "150C8AB1B608533A"
+					id: "45B69D6BBFF40773"
+					type: "item"
+					item: {
+						id: "mekanism:basic_tier_installer"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "0F9FAF95D7956DC1"
+					type: "item"
+					item: {
+						id: "mekanism:basic_control_circuit"
+						count: 1
+					}
+					count: 4
+				}
+				{
+					id: "58AA7800C0E35FB8"
+					type: "loot"
+					table_id: "F2BA64790EBA3DF5"
+				}
+			]
+		}
+		{
+			id: "43A9A68307C9EEF0"
+			x: 11.0d
+			y: 15.0d
+			icon: {
+				id: "mekanism:basic_fluid_tank"
+				count: 1
+			}
+			optional: true
+			dependencies: [
+				"2363AB666B892877"
+			]
+			tasks: [
+				{
+					id: "64063E4EB5EA6984"
+					type: "item"
+					item: {
+						id: "mekanism:basic_mechanical_pipe"
+						count: 1
+					}
+					count: 8
+				}
+				{
+					id: "B998D9F243BA41BF"
+					type: "item"
+					item: {
+						id: "mekanism:basic_fluid_tank"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "0A5861C3780514BC"
+					type: "item"
+					item: {
+						id: "minecraft:bucket"
+						count: 1
+					}
+					count: 4
+				}
+			]
+		}
+		{
+			id: "BDDA9A7C23487CEA"
+			x: 13.5d
+			y: 15.0d
+			optional: true
+			dependencies: [
+				"C7E126AFA6E34334"
+			]
+			tasks: [
+				{
+					id: "1D399CE92574AA6E"
+					type: "item"
+					item: {
+						id: "mekanism:basic_bin"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "5D5461FA07AD1D17"
+					type: "item"
+					item: {
+						id: "minecraft:cobblestone"
+						count: 1
+					}
+					count: 64
+				}
+			]
+		}
+		{
+			id: "B1A8FB77C4AAFE9B"
+			x: 16.0d
+			y: 15.0d
+			optional: true
+			dependencies: [
+				"2270C4D43A5F9FF3"
+			]
+			tasks: [
+				{
+					id: "EB277C8ED604EE6E"
+					type: "item"
+					item: {
+						id: "mekanism:upgrade_speed"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "18BB29218ED3167B"
+					type: "item"
+					item: {
+						id: "mekanism:alloy_infused"
+						count: 1
+					}
+					count: 8
+				}
+			]
+		}
+		{
+			id: "6A34F474AD47630C"
+			x: 19.0d
+			y: 14.0d
+			icon: {
+				id: "mekanism:basic_logistical_transporter"
+				count: 1
+			}
+			size: 2.5d
+			shape: "gear"
+			dependencies: [
+				"2270C4D43A5F9FF3"
+			]
+			tasks: [
+				{
+					id: "2917AE8E9E56A690"
+					type: "item"
+					item: {
+						id: "mekanism:basic_logistical_transporter"
+						count: 1
+					}
+					count: 16
+				}
+				{
+					id: "94C53AA5F194A1F9"
 					type: "item"
 					item: {
 						id: "mekanism:ingot_steel"
@@ -495,16 +1151,113 @@
 			]
 			rewards: [
 				{
-					id: "82D3CFA21E454ED8"
+					id: "5D4BFD8AE99B2A84"
 					type: "loot"
 					table_id: "C79EAEAE0F26AA7F"
 				}
 				{
-					id: "3D3411A5C887968F"
+					id: "A6420744A33ED07C"
+					type: "item"
+					item: {
+						id: "mekanism:basic_control_circuit"
+						count: 1
+					}
+					count: 4
+				}
+				{
+					id: "F0B411EEDFF9F69C"
 					type: "xp_levels"
-					xp_levels: 15
+					xp_levels: 20
 				}
 			]
+		}
+		{
+			id: "5388EBBAA83F340C"
+			x: 22.5d
+			y: 14.0d
+			icon: {
+				id: "mekanism:steel_casing"
+				count: 1
+			}
+			optional: true
+			dependencies: [
+				"6A34F474AD47630C"
+			]
+			tasks: [
+				{
+					id: "6E69768B4CBD5199"
+					type: "checkmark"
+				}
+			]
+			rewards: [
+				{
+					id: "E253B8B3342FC640"
+					type: "xp_levels"
+					xp_levels: 10
+				}
+			]
+		}
+	]
+	images: [
+		{
+			id: "0EF0FEF0B1931D9A"
+			image: "kronwerke:textures/quests/mekanism/title.png"
+			x: 7.5d
+			y: -5.0d
+			width: 6.96d
+			height: 1.75d
+			rotation: 0.0d
+			order: 1
+		}
+		{
+			id: "0254B658662AB989"
+			image: "kronwerke:textures/quests/mekanism/osmium.png"
+			x: 2.5d
+			y: -2.7d
+			width: 6.07d
+			height: 0.9d
+			rotation: 0.0d
+			order: 1
+		}
+		{
+			id: "DA8A437DC9836A80"
+			image: "kronwerke:textures/quests/mekanism/steel.png"
+			x: 12.5d
+			y: -2.7d
+			width: 1.94d
+			height: 0.9d
+			rotation: 0.0d
+			order: 1
+		}
+		{
+			id: "C2692D7A2E142669"
+			image: "kronwerke:textures/quests/mekanism/power.png"
+			x: 3.5d
+			y: 5.0d
+			width: 2.55d
+			height: 0.9d
+			rotation: 0.0d
+			order: 1
+		}
+		{
+			id: "F2E652931314F157"
+			image: "kronwerke:textures/quests/mekanism/ores.png"
+			x: 17.5d
+			y: 5.0d
+			width: 5.38d
+			height: 0.9d
+			rotation: 0.0d
+			order: 1
+		}
+		{
+			id: "2DDC0AA2E558F23A"
+			image: "kronwerke:textures/quests/mekanism/logistics.png"
+			x: 18.0d
+			y: 11.3d
+			width: 6.59d
+			height: 0.9d
+			rotation: 0.0d
+			order: 1
 		}
 	]
 }

@@ -1,7 +1,6 @@
 {
 	id: "FF3312C40747F84E"
 	filename: "exploration"
-	title: "Exploration"
 	icon: {
 		id: "minecraft:filled_map"
 		count: 1
@@ -10,32 +9,21 @@
 	order_index: 7
 	default_quest_shape: "circle"
 	default_hide_dependency_lines: false
-	subtitle: [
-		"Biomes, waystones, the Mining Dimension and loot."
-	]
 	quests: [
 		{
 			id: "9555F064C11E3AED"
 			x: 0.0d
-			y: 0.0d
-			title: "Exploration"
-			subtitle: "The world is bigger and stranger than vanilla."
-			description: [
-				"New terrain, new biomes, and a lot of new structures: villages, towers, dungeons, ruins and a few places you should not visit alone."
-				""
-				"Loot is per player. Every chest in a structure has its own loot for each person who opens it, so arriving second is not a loss."
-			]
+			y: 3.0d
 			icon: {
 				id: "minecraft:filled_map"
 				count: 1
 			}
-			size: 2.0d
+			size: 2.5d
 			shape: "hexagon"
 			tasks: [
 				{
 					id: "7D458A62A4F0B0B7"
 					type: "checkmark"
-					title: "Let's go outside"
 				}
 			]
 			rewards: [
@@ -56,16 +44,11 @@
 			]
 		}
 		{
-			id: "67BCF9AB89FDE137"
-			x: 3.0d
-			y: -2.0d
-			title: "Nature's Compass"
-			subtitle: "Points you to any biome."
-			description: [
-				"Pick a biome from the list and the compass points to the nearest one. Archwood Forests for Ars Nouveau are the classic first search."
-			]
+			id: "99A74282BA312818"
+			x: 4.5d
+			y: -7.0d
 			icon: {
-				id: "naturescompass:naturescompass"
+				id: "minecraft:map"
 				count: 1
 			}
 			dependencies: [
@@ -73,7 +56,65 @@
 			]
 			tasks: [
 				{
-					id: "23CE1391B173DF50"
+					id: "D5DF5C81278D5648"
+					type: "checkmark"
+				}
+			]
+			rewards: [
+				{
+					id: "F244F001999C43A8"
+					type: "item"
+					item: {
+						id: "minecraft:bread"
+						count: 1
+					}
+					count: 8
+				}
+			]
+		}
+		{
+			id: "75B154669CC87683"
+			x: 6.5d
+			y: -7.0d
+			icon: {
+				id: "minecraft:oak_sapling"
+				count: 1
+			}
+			dependencies: [
+				"99A74282BA312818"
+			]
+			tasks: [
+				{
+					id: "0D0366C58E9A5ECE"
+					type: "checkmark"
+				}
+			]
+			rewards: [
+				{
+					id: "A5330DB5D3A7551D"
+					type: "item"
+					item: {
+						id: "minecraft:bone_meal"
+						count: 1
+					}
+					count: 16
+				}
+			]
+		}
+		{
+			id: "527E863E0CB6197C"
+			x: 8.5d
+			y: -7.0d
+			icon: {
+				id: "naturescompass:naturescompass"
+				count: 1
+			}
+			dependencies: [
+				"75B154669CC87683"
+			]
+			tasks: [
+				{
+					id: "D3CCAD8AA20CDB15"
 					type: "item"
 					item: {
 						id: "naturescompass:naturescompass"
@@ -84,7 +125,7 @@
 			]
 			rewards: [
 				{
-					id: "C8FBD2C07851124A"
+					id: "0AA154A584525211"
 					type: "item"
 					item: {
 						id: "minecraft:bread"
@@ -95,75 +136,145 @@
 			]
 		}
 		{
-			id: "F4E65F98C9C59C60"
-			x: 3.0d
-			y: 2.0d
-			title: "Warp Stone"
-			subtitle: "Travel between the waystones you have found."
-			description: [
-				"Waystones stand in villages and along the roads. Right click one to activate it, and from then on you can travel to it from any other waystone."
-				"A &6Warp Stone&r lets you do that from anywhere, with a cooldown."
-			]
+			id: "1CDBB0A78C3677BA"
+			x: 10.5d
+			y: -7.0d
 			icon: {
-				id: "waystones:warp_stone"
+				id: "ars_nouveau:blue_archwood_sapling"
 				count: 1
 			}
+			dependencies: [
+				"527E863E0CB6197C"
+			]
+			tasks: [
+				{
+					id: "1024DEE0AD08449A"
+					type: "checkmark"
+				}
+			]
+			rewards: [
+				{
+					id: "7B666AC0F0A28637"
+					type: "item"
+					item: {
+						id: "minecraft:emerald"
+						count: 1
+					}
+					count: 4
+				}
+			]
+		}
+		{
+			id: "F4B5CFA5737D7EF0"
+			x: 12.5d
+			y: -7.0d
+			icon: {
+				id: "minecraft:emerald"
+				count: 1
+			}
+			dependencies: [
+				"527E863E0CB6197C"
+			]
+			tasks: [
+				{
+					id: "C7403E80FC11F8F6"
+					type: "checkmark"
+				}
+			]
+			rewards: [
+				{
+					id: "9EEC6C524B80A762"
+					type: "item"
+					item: {
+						id: "minecraft:emerald"
+						count: 1
+					}
+					count: 4
+				}
+			]
+		}
+		{
+			id: "1E0B4480640C1778"
+			x: 14.5d
+			y: -7.0d
+			icon: {
+				id: "bountiful:bountyboard"
+				count: 1
+			}
+			dependencies: [
+				"F4B5CFA5737D7EF0"
+			]
+			tasks: [
+				{
+					id: "C4B2D818CF477667"
+					type: "advancement"
+					advancement: "bountiful:bountiful/bounty_complete"
+					criterion: ""
+				}
+			]
+			rewards: [
+				{
+					id: "8A4E5FB01202EFF1"
+					type: "loot"
+					table_id: "1EBBC2B918151958"
+				}
+			]
+		}
+		{
+			id: "8BEB4ABABEC4AA2A"
+			x: 4.5d
+			y: 0.0d
+			icon: {
+				id: "waystones:waystone"
+				count: 1
+			}
+			size: 1.5d
 			dependencies: [
 				"9555F064C11E3AED"
 			]
 			tasks: [
 				{
-					id: "D37F17CD56DF5490"
-					type: "item"
-					item: {
-						id: "waystones:warp_stone"
-						count: 1
-					}
-					count: 1
+					id: "30B2E19FCE9C8FB2"
+					type: "checkmark"
 				}
 			]
 			rewards: [
 				{
-					id: "7064ADFDE6933EDF"
+					id: "C93715CE3B8B57D0"
 					type: "item"
 					item: {
-						id: "waystones:return_scroll"
+						id: "waystones:warp_dust"
 						count: 1
 					}
-					count: 2
+					count: 4
 				}
 			]
 		}
 		{
-			id: "D331B9D46C736583"
-			x: 6.0d
-			y: 2.0d
-			title: "Your Own Waystone"
-			subtitle: "Put one at your base."
-			description: [
-				"A waystone at home means one click back from anywhere you have been. Name it so everyone can find you."
-			]
+			id: "08128235F86E882E"
+			x: 7.0d
+			y: -1.0d
 			icon: {
-				id: "waystones:waystone"
+				id: "waystones:warp_dust"
 				count: 1
 			}
 			dependencies: [
-				"F4E65F98C9C59C60"
+				"8BEB4ABABEC4AA2A"
 			]
 			tasks: [
 				{
-					id: "25BADFEC7852560B"
+					id: "B90229B8AB422C42"
 					type: "item"
 					item: {
-						id: "waystones:waystone"
+						id: "waystones:warp_dust"
 						count: 1
 					}
-					count: 1
+					count: 4
 				}
 			]
 			rewards: [
 				{
-					id: "68C34A082186602E"
+					id: "4E2CBEF2286C3FA9"
 					type: "item"
 					item: {
 						id: "minecraft:ender_pearl"
@@ -174,26 +285,213 @@
 			]
 		}
 		{
-			id: "D7A1B81AC156EC68"
-			x: 6.0d
-			y: -2.0d
-			title: "The Enchanted Pickaxe"
-			subtitle: "The key to the Mining Dimension."
-			description: [
-				"A second world made for digging: the same ores and geodes as the overworld, and nobody minds the holes. Keep the overworld pretty and strip mine down there."
-				""
-				"Craft the &6Enchanted Pickaxe&r from two diamonds, a gold block and two sticks. Build a frame of &6Iron Blocks&r shaped like a Nether portal and use the pickaxe on the inside of the frame."
+			id: "08FE9C1329DBE9BB"
+			x: 9.0d
+			y: -1.0d
+			icon: {
+				id: "waystones:warp_stone"
+				count: 1
+			}
+			dependencies: [
+				"08128235F86E882E"
 			]
+			tasks: [
+				{
+					id: "E83C116C08C8A44D"
+					type: "item"
+					item: {
+						id: "waystones:warp_stone"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "EB92DEBF8FA30FF9"
+					type: "item"
+					item: {
+						id: "waystones:return_scroll"
+						count: 1
+					}
+					count: 2
+				}
+			]
+		}
+		{
+			id: "B5501AD98352DE31"
+			x: 11.0d
+			y: -1.0d
+			icon: {
+				id: "waystones:waystone"
+				count: 1
+			}
+			dependencies: [
+				"08FE9C1329DBE9BB"
+			]
+			tasks: [
+				{
+					id: "D1B40458CA80476B"
+					type: "item"
+					item: {
+						id: "waystones:waystone"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "8086485A603C1B4F"
+					type: "item"
+					item: {
+						id: "minecraft:ender_pearl"
+						count: 1
+					}
+					count: 2
+				}
+			]
+		}
+		{
+			id: "0CC45297F418C1C6"
+			x: 7.0d
+			y: 1.0d
+			icon: {
+				id: "waystones:return_scroll"
+				count: 1
+			}
+			dependencies: [
+				"8BEB4ABABEC4AA2A"
+			]
+			tasks: [
+				{
+					id: "124333BF1DAAE965"
+					type: "item"
+					item: {
+						id: "waystones:return_scroll"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "4C7250C932646E67"
+					type: "item"
+					item: {
+						id: "minecraft:paper"
+						count: 1
+					}
+					count: 6
+				}
+			]
+		}
+		{
+			id: "42E9875B96B119C7"
+			x: 9.0d
+			y: 1.0d
+			icon: {
+				id: "waystones:warp_scroll"
+				count: 1
+			}
+			dependencies: [
+				"0CC45297F418C1C6"
+			]
+			tasks: [
+				{
+					id: "7E185938EF456117"
+					type: "item"
+					item: {
+						id: "waystones:warp_scroll"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "4E4A5AA8CD92F6AB"
+					type: "xp_levels"
+					xp_levels: 3
+				}
+			]
+		}
+		{
+			id: "58E4F8A151C4D3FA"
+			x: 11.0d
+			y: 1.0d
+			icon: {
+				id: "waystones:purple_sharestone"
+				count: 1
+			}
+			optional: true
+			dependencies: [
+				"42E9875B96B119C7"
+			]
+			tasks: [
+				{
+					id: "604139B394E5F836"
+					type: "checkmark"
+				}
+			]
+			rewards: [
+				{
+					id: "1BE97E31DAB21D99"
+					type: "xp_levels"
+					xp_levels: 3
+				}
+			]
+		}
+		{
+			id: "702BC3916E92EB8B"
+			x: 13.0d
+			y: 1.0d
+			icon: {
+				id: "waystones:warp_plate"
+				count: 1
+			}
+			optional: true
+			dependencies: [
+				"58E4F8A151C4D3FA"
+			]
+			tasks: [
+				{
+					id: "A3253E0AAB9DBB44"
+					type: "item"
+					item: {
+						id: "waystones:warp_plate"
+						count: 1
+					}
+					count: 2
+				}
+			]
+			rewards: [
+				{
+					id: "EA70472674A3F1C5"
+					type: "item"
+					item: {
+						id: "waystones:warp_dust"
+						count: 1
+					}
+					count: 4
+				}
+			]
+		}
+		{
+			id: "315E8B453D8F082E"
+			x: 4.5d
+			y: 6.0d
 			icon: {
 				id: "ultimate_mining_dimension:ultimate_mining_dimension"
 				count: 1
 			}
+			size: 1.5d
 			dependencies: [
-				"67BCF9AB89FDE137"
+				"9555F064C11E3AED"
 			]
 			tasks: [
 				{
-					id: "0057D6CF6865EBB3"
+					id: "77B4C030ACBCD69E"
 					type: "item"
 					item: {
 						id: "ultimate_mining_dimension:ultimate_mining_dimension"
@@ -204,10 +502,413 @@
 			]
 			rewards: [
 				{
-					id: "DCD5735A84D0936A"
+					id: "6313B1BF41D88C19"
 					type: "item"
 					item: {
 						id: "minecraft:iron_block"
+						count: 1
+					}
+					count: 2
+				}
+			]
+		}
+		{
+			id: "B0627F9C20C520E4"
+			x: 7.0d
+			y: 6.0d
+			icon: {
+				id: "minecraft:iron_block"
+				count: 1
+			}
+			dependencies: [
+				"315E8B453D8F082E"
+			]
+			tasks: [
+				{
+					id: "ACDA839E9BAF84E9"
+					type: "item"
+					item: {
+						id: "minecraft:iron_block"
+						count: 1
+					}
+					count: 10
+				}
+			]
+			rewards: [
+				{
+					id: "2DB0962B3301185A"
+					type: "item"
+					item: {
+						id: "minecraft:torch"
+						count: 1
+					}
+					count: 32
+				}
+			]
+		}
+		{
+			id: "312C454633A81FA4"
+			x: 9.0d
+			y: 6.0d
+			icon: {
+				id: "minecraft:iron_pickaxe"
+				count: 1
+			}
+			size: 1.5d
+			dependencies: [
+				"B0627F9C20C520E4"
+			]
+			tasks: [
+				{
+					id: "FA36D30002824A23"
+					type: "dimension"
+					dimension: "ultimate_mining_dimension:ultimate_mining_dimension"
+				}
+			]
+			rewards: [
+				{
+					id: "8914EAA252451BC6"
+					type: "loot"
+					table_id: "870211AF0E412C54"
+				}
+			]
+		}
+		{
+			id: "024CFA5C2B1613E0"
+			x: 11.0d
+			y: 5.0d
+			icon: {
+				id: "minecraft:skeleton_skull"
+				count: 1
+			}
+			dependencies: [
+				"312C454633A81FA4"
+			]
+			tasks: [
+				{
+					id: "5675C1B00B3D3E0F"
+					type: "checkmark"
+				}
+			]
+			rewards: [
+				{
+					id: "FFFF841CE040ADC0"
+					type: "item"
+					item: {
+						id: "minecraft:torch"
+						count: 1
+					}
+					count: 32
+				}
+			]
+		}
+		{
+			id: "AC5101A01AB75191"
+			x: 11.0d
+			y: 7.0d
+			icon: {
+				id: "minecraft:raw_iron"
+				count: 1
+			}
+			dependencies: [
+				"312C454633A81FA4"
+			]
+			tasks: [
+				{
+					id: "CA9B9D78E7801939"
+					type: "item"
+					item: {
+						id: "minecraft:raw_iron"
+						count: 1
+					}
+					count: 64
+				}
+			]
+			rewards: [
+				{
+					id: "7625B6E64F6CA635"
+					type: "item"
+					item: {
+						id: "minecraft:coal"
+						count: 1
+					}
+					count: 32
+				}
+			]
+		}
+		{
+			id: "1CA230F450C992B9"
+			x: 13.0d
+			y: 5.0d
+			icon: {
+				id: "minecraft:cobblestone"
+				count: 1
+			}
+			dependencies: [
+				"024CFA5C2B1613E0"
+			]
+			tasks: [
+				{
+					id: "C3F7913A5FE5BFC5"
+					type: "item"
+					item: {
+						id: "minecraft:cobblestone"
+						count: 1
+					}
+					count: 512
+				}
+			]
+			rewards: [
+				{
+					id: "E4390179EDAAF8B1"
+					type: "loot"
+					table_id: "1EBBC2B918151958"
+				}
+			]
+		}
+		{
+			id: "26FB2686CB33709E"
+			x: 13.0d
+			y: 7.0d
+			icon: {
+				id: "minecraft:diamond"
+				count: 1
+			}
+			optional: true
+			dependencies: [
+				"AC5101A01AB75191"
+			]
+			tasks: [
+				{
+					id: "BE2AB598D7D85795"
+					type: "item"
+					item: {
+						id: "minecraft:diamond"
+						count: 1
+					}
+					count: 8
+				}
+			]
+			rewards: [
+				{
+					id: "AEC0B6AD6F0B7390"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+		}
+		{
+			id: "EC92CB282D5FECF5"
+			x: 4.5d
+			y: 12.0d
+			icon: {
+				id: "minecraft:mossy_stone_bricks"
+				count: 1
+			}
+			size: 1.5d
+			dependencies: [
+				"9555F064C11E3AED"
+			]
+			tasks: [
+				{
+					id: "31789200567F9574"
+					type: "checkmark"
+				}
+			]
+			rewards: [
+				{
+					id: "52ADC4701AD97CD0"
+					type: "item"
+					item: {
+						id: "minecraft:bread"
+						count: 1
+					}
+					count: 16
+				}
+			]
+		}
+		{
+			id: "86D9A6BE5191D78F"
+			x: 7.0d
+			y: 11.0d
+			icon: {
+				id: "minecraft:chest"
+				count: 1
+			}
+			dependencies: [
+				"EC92CB282D5FECF5"
+			]
+			tasks: [
+				{
+					id: "305BE8263CBE6783"
+					type: "checkmark"
+				}
+			]
+			rewards: [
+				{
+					id: "7072D4046724A45B"
+					type: "xp_levels"
+					xp_levels: 3
+				}
+			]
+		}
+		{
+			id: "3BF437761846EE2C"
+			x: 9.0d
+			y: 11.0d
+			icon: {
+				id: "minecraft:skeleton_skull"
+				count: 1
+			}
+			dependencies: [
+				"86D9A6BE5191D78F"
+			]
+			tasks: [
+				{
+					id: "518C89D0D1B8E740"
+					type: "checkmark"
+				}
+			]
+			rewards: [
+				{
+					id: "F43277DB1B9C0169"
+					type: "item"
+					item: {
+						id: "minecraft:golden_apple"
+						count: 1
+					}
+					count: 1
+				}
+			]
+		}
+		{
+			id: "CB36359B70DEBACF"
+			x: 7.0d
+			y: 13.0d
+			icon: {
+				id: "artifacts:running_shoes"
+				count: 1
+			}
+			dependencies: [
+				"EC92CB282D5FECF5"
+			]
+			tasks: [
+				{
+					id: "2A0E201E1DCA4B1D"
+					type: "checkmark"
+				}
+			]
+			rewards: [
+				{
+					id: "C106B54817D86547"
+					type: "xp_levels"
+					xp_levels: 3
+				}
+			]
+		}
+		{
+			id: "75E03EFBFAC50228"
+			x: 9.0d
+			y: 13.0d
+			icon: {
+				id: "artifacts:mimic_spawn_egg"
+				count: 1
+			}
+			optional: true
+			dependencies: [
+				"CB36359B70DEBACF"
+			]
+			tasks: [
+				{
+					id: "4BE3F31B692588A0"
+					type: "kill"
+					entity: "artifacts:mimic"
+					value: 1
+				}
+			]
+			rewards: [
+				{
+					id: "9EB9F424D7A00492"
+					type: "loot"
+					table_id: "870211AF0E412C54"
+				}
+			]
+		}
+		{
+			id: "961C2E303E9F730F"
+			x: 4.5d
+			y: 18.0d
+			icon: {
+				id: "minecraft:iron_sword"
+				count: 1
+			}
+			size: 1.5d
+			dependencies: [
+				"EC92CB282D5FECF5"
+			]
+			tasks: [
+				{
+					id: "48D4E14157D54B69"
+					type: "checkmark"
+				}
+			]
+			rewards: [
+				{
+					id: "22860805E98E90B7"
+					type: "xp_levels"
+					xp_levels: 3
+				}
+			]
+		}
+		{
+			id: "6783CC5D31EA58AF"
+			x: 7.0d
+			y: 19.0d
+			icon: {
+				id: "minecraft:book"
+				count: 1
+			}
+			optional: true
+			dependencies: [
+				"961C2E303E9F730F"
+			]
+			tasks: [
+				{
+					id: "8FC1B532439B434C"
+					type: "checkmark"
+				}
+			]
+			rewards: [
+				{
+					id: "CC623DDE4FAE8745"
+					type: "xp_levels"
+					xp_levels: 3
+				}
+			]
+		}
+		{
+			id: "03BC2C3A8D8C8FF6"
+			x: 7.0d
+			y: 17.0d
+			icon: {
+				id: "minecraft:emerald"
+				count: 1
+			}
+			dependencies: [
+				"961C2E303E9F730F"
+			]
+			tasks: [
+				{
+					id: "6169DA88E24B4A0E"
+					type: "checkmark"
+				}
+			]
+			rewards: [
+				{
+					id: "D3B3B4E62A9F7B4C"
+					type: "item"
+					item: {
+						id: "apotheosis:gem_dust"
 						count: 1
 					}
 					count: 4
@@ -215,58 +916,19 @@
 			]
 		}
 		{
-			id: "EEBFB35E99806320"
+			id: "A8E4309FE8B3560D"
 			x: 9.0d
-			y: -2.0d
-			title: "Into the Mine"
-			subtitle: "Step through."
-			description: [
-				"Bring torches, food and a way home. Cobblestone from down here counts for the community goal just the same."
-				"&cDeath in the Mining Dimension leaves your body down there.&r Note where the portal is."
-			]
-			icon: {
-				id: "minecraft:iron_pickaxe"
-				count: 1
-			}
-			size: 1.5d
-			dependencies: [
-				"D7A1B81AC156EC68"
-			]
-			tasks: [
-				{
-					id: "E90F29BC5B9B0D94"
-					type: "dimension"
-					dimension: "ultimate_mining_dimension:ultimate_mining_dimension"
-				}
-			]
-			rewards: [
-				{
-					id: "8D1FD57EE1521105"
-					type: "loot"
-					table_id: "870211AF0E412C54"
-				}
-			]
-		}
-		{
-			id: "DEEE699C3207BD90"
-			x: 9.0d
-			y: 2.0d
-			title: "Loot with Affixes"
-			subtitle: "Named gear from mobs, and what to do with it."
-			description: [
-				"Mobs and chests drop gear with random &6affixes&r: extra damage, life steal, faster mining. The rarer the colour of the name, the stronger the affixes."
-				"Gear you do not want goes into a &6Salvaging Table&r and comes out as materials. Some drops carry &6Gems&r you can socket into your own gear."
-			]
+			y: 17.0d
 			icon: {
 				id: "apotheosis:salvaging_table"
 				count: 1
 			}
 			dependencies: [
-				"D331B9D46C736583"
+				"03BC2C3A8D8C8FF6"
 			]
 			tasks: [
 				{
-					id: "439758B977313AD8"
+					id: "B6083789CE029834"
 					type: "item"
 					item: {
 						id: "apotheosis:salvaging_table"
@@ -277,84 +939,211 @@
 			]
 			rewards: [
 				{
-					id: "601FEF3224749797"
+					id: "C0D6169EFC54DBCF"
+					type: "loot"
+					table_id: "1EBBC2B918151958"
+				}
+				{
+					id: "E747D3443FF68516"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+		}
+		{
+			id: "30494BF1EB93E468"
+			x: 11.0d
+			y: 17.0d
+			icon: {
+				id: "apotheosis:gem_cutting_table"
+				count: 1
+			}
+			optional: true
+			dependencies: [
+				"A8E4309FE8B3560D"
+			]
+			tasks: [
+				{
+					id: "E57610DC58623EEA"
+					type: "item"
+					item: {
+						id: "apotheosis:gem_cutting_table"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "D3808B50864F733A"
 					type: "item"
 					item: {
 						id: "apotheosis:gem_dust"
 						count: 1
 					}
-					count: 8
+					count: 4
 				}
 			]
 		}
 		{
-			id: "7F9880685AC8CF09"
-			x: 12.0d
-			y: 3.5d
-			title: "Not a Chest"
-			subtitle: "Some chests bite back."
-			description: [
-				"Every now and then a chest in a structure is a &6Mimic&r. It hits hard, and it drops an artifact: a trinket with a special effect that you wear."
-			]
-			optional: true
+			id: "FA97E511DA4C2A3A"
+			x: 11.0d
+			y: 19.0d
+			icon: {
+				id: "apotheosis:sigil_of_socketing"
+				count: 1
+			}
 			dependencies: [
-				"DEEE699C3207BD90"
+				"A8E4309FE8B3560D"
 			]
 			tasks: [
 				{
-					id: "A4D7DC21F0053277"
-					type: "kill"
-					entity: "artifacts:mimic"
-					value: 1
+					id: "3C7A298603CBB8C9"
+					type: "item"
+					item: {
+						id: "apotheosis:sigil_of_socketing"
+						count: 1
+					}
+					count: 1
 				}
 			]
 			rewards: [
 				{
-					id: "34D6148BE87621E0"
+					id: "8D9EDDC9D3EF8177"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+		}
+		{
+			id: "E7E5984CF1E4297F"
+			x: 13.0d
+			y: 18.0d
+			icon: {
+				id: "apotheosis:simple_reforging_table"
+				count: 1
+			}
+			optional: true
+			dependencies: [
+				"30494BF1EB93E468"
+				"FA97E511DA4C2A3A"
+			]
+			tasks: [
+				{
+					id: "535EB267CD049A79"
+					type: "item"
+					item: {
+						id: "apotheosis:simple_reforging_table"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "926E38313E52A982"
 					type: "loot"
 					table_id: "870211AF0E412C54"
 				}
 			]
 		}
 		{
-			id: "2612DB12875FE336"
-			x: 12.0d
-			y: 0.0d
-			title: "Explorer"
-			subtitle: "Out there and back again."
-			description: [
-				"You know how to find biomes, travel between waystones and mine in a world made for it."
-				"The Nether opens with stage 2, on stream, through the portal at spawn. Save a few iron blocks for the trip."
-			]
+			id: "A3E562D043305A20"
+			x: 18.5d
+			y: 5.0d
 			icon: {
-				id: "minecraft:map"
+				id: "minecraft:compass"
 				count: 1
 			}
-			size: 1.5d
+			size: 2.5d
 			shape: "gear"
 			dependencies: [
-				"EEBFB35E99806320"
-				"DEEE699C3207BD90"
+				"1E0B4480640C1778"
+				"B5501AD98352DE31"
+				"1CA230F450C992B9"
+				"3BF437761846EE2C"
+				"A8E4309FE8B3560D"
 			]
 			tasks: [
 				{
-					id: "0485A47F6B75707A"
+					id: "DF8A3CFD4578D557"
 					type: "checkmark"
-					title: "I have been around"
 				}
 			]
 			rewards: [
 				{
-					id: "2012BF59EE985B01"
+					id: "3F7BCA069FFE702F"
 					type: "loot"
 					table_id: "B5AA0F94577E6A3C"
 				}
 				{
-					id: "5E5C6670F03424CF"
+					id: "1166C6D1AA39ADA6"
 					type: "xp_levels"
 					xp_levels: 10
 				}
 			]
+		}
+	]
+	images: [
+		{
+			id: "71A056B3B1E40170"
+			image: "kronwerke:textures/quests/exploration/title.png"
+			x: 0.0d
+			y: -2.4d
+			width: 7.68d
+			height: 1.8d
+			rotation: 0.0d
+			order: 1
+		}
+		{
+			id: "B646E1D6B34A63A7"
+			image: "kronwerke:textures/quests/exploration/orientation.png"
+			x: 9.5d
+			y: -8.8d
+			width: 4.33d
+			height: 0.9d
+			rotation: 0.0d
+			order: 1
+		}
+		{
+			id: "2D9E5CBD637CE629"
+			image: "kronwerke:textures/quests/exploration/travel.png"
+			x: 9.0d
+			y: -2.8d
+			width: 2.21d
+			height: 0.9d
+			rotation: 0.0d
+			order: 1
+		}
+		{
+			id: "72E9BCAD1CED3B97"
+			image: "kronwerke:textures/quests/exploration/mine.png"
+			x: 9.0d
+			y: 3.6d
+			width: 5.46d
+			height: 0.9d
+			rotation: 0.0d
+			order: 1
+		}
+		{
+			id: "DC74691AFDC18F1E"
+			image: "kronwerke:textures/quests/exploration/structures.png"
+			x: 7.0d
+			y: 9.4d
+			width: 6.81d
+			height: 0.9d
+			rotation: 0.0d
+			order: 1
+		}
+		{
+			id: "37E3BE60E1CEE00E"
+			image: "kronwerke:textures/quests/exploration/apotheosis.png"
+			x: 9.0d
+			y: 15.4d
+			width: 3.69d
+			height: 0.9d
+			rotation: 0.0d
+			order: 1
 		}
 	]
 }

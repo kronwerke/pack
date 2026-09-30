@@ -1,7 +1,6 @@
 {
 	id: "956D4C94B07E4CBE"
 	filename: "ars_nouveau"
-	title: "Ars Nouveau"
 	icon: {
 		id: "ars_nouveau:novice_spell_book"
 		count: 1
@@ -10,23 +9,11 @@
 	order_index: 2
 	default_quest_shape: "circle"
 	default_hide_dependency_lines: false
-	subtitle: [
-		"Glyphs, Source and the first familiar."
-	]
 	quests: [
 		{
 			id: "1E8B8DD851CC4A55"
 			x: 0.0d
 			y: 0.0d
-			title: "Ars Nouveau"
-			subtitle: "Build your own spells, one glyph at a time."
-			description: [
-				"In Ars Nouveau you write spells yourself. A spell is a form (how it is cast), then effects (what it does), then augments (how strong, how wide)."
-				""
-				"Everything runs on &dSource&r, the magic energy of the mod. Source Gems are also half of the first community goal, so every mage on the server helps the whole server move on."
-				""
-				"The &6Worn Notebook&r explains every block and glyph in detail."
-			]
 			icon: {
 				id: "ars_nouveau:novice_spell_book"
 				count: 1
@@ -37,7 +24,6 @@
 				{
 					id: "5D90497F61334081"
 					type: "checkmark"
-					title: "Open the notebook"
 				}
 			]
 			rewards: [
@@ -58,59 +44,14 @@
 			]
 		}
 		{
-			id: "6DD047C12EEA827D"
-			x: 3.0d
-			y: -2.0d
-			title: "Archwood"
-			subtitle: "The wood of every Ars block."
-			description: [
-				"Archwood trees grow in their own forests: red, blue, green and purple leaves, easy to spot from far away. Every colour works for planks."
-				"Take saplings home. Blazing (red) Archwood logs are the best fuel for a Volcanic Sourcelink later."
-			]
-			icon: {
-				id: "ars_nouveau:blue_archwood_log"
-				count: 1
-			}
-			dependencies: [
-				"1E8B8DD851CC4A55"
-			]
-			tasks: [
-				{
-					id: "4B847FC0B15683B4"
-					type: "item"
-					item: {
-						id: "ars_nouveau:archwood_planks"
-						count: 1
-					}
-					count: 32
-				}
-			]
-			rewards: [
-				{
-					id: "BAA6D351EFDEFEC7"
-					type: "item"
-					item: {
-						id: "ars_nouveau:blue_archwood_log"
-						count: 1
-					}
-					count: 16
-				}
-			]
-		}
-		{
 			id: "0DFC70D288521B7E"
-			x: 3.0d
-			y: 2.0d
-			title: "Novice Spell Book"
-			subtitle: "A book and a full set of iron tools."
-			description: [
-				"Craft a book with an iron sword, pickaxe, axe and shovel. The book holds your spells; switch between them with the spell radial menu (the key is under Controls, Ars Nouveau)."
-				"Right click to cast. Your mana bar shows how much you have left."
-			]
+			x: 2.5d
+			y: -0.9d
 			icon: {
 				id: "ars_nouveau:novice_spell_book"
 				count: 1
 			}
+			size: 1.25d
 			dependencies: [
 				"1E8B8DD851CC4A55"
 			]
@@ -143,21 +84,205 @@
 			]
 		}
 		{
-			id: "EB0B5B0BDEC1203C"
-			x: 6.0d
-			y: 0.0d
-			title: "Scribe's Table"
-			subtitle: "Where new glyphs are made."
-			description: [
-				"Use your spell book on the table to see every glyph you can learn. Pick one, throw the listed items onto the table, and it scribes the glyph for you. Each glyph also costs experience."
+			id: "6DD047C12EEA827D"
+			x: 2.5d
+			y: 1.2d
+			icon: {
+				id: "ars_nouveau:green_archwood_log"
+				count: 1
+			}
+			dependencies: [
+				"1E8B8DD851CC4A55"
 			]
+			tasks: [
+				{
+					id: "4B847FC0B15683B4"
+					type: "item"
+					item: {
+						id: "ars_nouveau:archwood_planks"
+						count: 1
+					}
+					count: 32
+				}
+			]
+			rewards: [
+				{
+					id: "BAA6D351EFDEFEC7"
+					type: "item"
+					item: {
+						id: "minecraft:gold_nugget"
+						count: 1
+					}
+					count: 18
+				}
+				{
+					id: "AFF50A87E6E3FCF9"
+					type: "xp_levels"
+					xp_levels: 3
+				}
+			]
+		}
+		{
+			id: "31943EB3EF1ED2C3"
+			x: 2.5d
+			y: 3.0d
+			icon: {
+				id: "ars_nouveau:red_archwood_sapling"
+				count: 1
+			}
+			optional: true
+			dependencies: [
+				"6DD047C12EEA827D"
+			]
+			tasks: [
+				{
+					id: "A848661AD205B398"
+					type: "item"
+					item: {
+						id: "ars_nouveau:red_archwood_sapling"
+						count: 1
+					}
+					count: 1
+				}
+				{
+					id: "A589967A6C4309F9"
+					type: "item"
+					item: {
+						id: "ars_nouveau:blue_archwood_sapling"
+						count: 1
+					}
+					count: 1
+				}
+				{
+					id: "11180EDD448D1FC4"
+					type: "item"
+					item: {
+						id: "ars_nouveau:green_archwood_sapling"
+						count: 1
+					}
+					count: 1
+				}
+				{
+					id: "0FF71A727E1258B8"
+					type: "item"
+					item: {
+						id: "ars_nouveau:purple_archwood_sapling"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "E9D1078C095FB2F4"
+					type: "item"
+					item: {
+						id: "minecraft:bone_meal"
+						count: 1
+					}
+					count: 32
+				}
+			]
+		}
+		{
+			id: "5911E81D6D6096F4"
+			x: 4.5d
+			y: -0.9d
+			icon: {
+				id: "minecraft:lapis_lazuli"
+				count: 1
+			}
+			dependencies: [
+				"0DFC70D288521B7E"
+			]
+			tasks: [
+				{
+					id: "A44A0EE93D8C172D"
+					type: "checkmark"
+				}
+			]
+			rewards: [
+				{
+					id: "4D60117BAFC5F84D"
+					type: "xp_levels"
+					xp_levels: 3
+				}
+			]
+		}
+		{
+			id: "B15CC271AAE15835"
+			x: 6.5d
+			y: -0.9d
+			icon: {
+				id: "ars_nouveau:blank_glyph"
+				count: 1
+			}
+			dependencies: [
+				"5911E81D6D6096F4"
+			]
+			tasks: [
+				{
+					id: "7335F9C56CD000CB"
+					type: "checkmark"
+				}
+			]
+			rewards: [
+				{
+					id: "D1FF0CF9CB6A900C"
+					type: "xp_levels"
+					xp_levels: 3
+				}
+			]
+		}
+		{
+			id: "2F11CFEBD1C69149"
+			x: 8.5d
+			y: -0.9d
+			icon: {
+				id: "ars_nouveau:glyph_projectile"
+				count: 1
+			}
+			size: 1.5d
+			shape: "diamond"
+			dependencies: [
+				"B15CC271AAE15835"
+			]
+			tasks: [
+				{
+					id: "D51CCBD592E90860"
+					type: "checkmark"
+				}
+			]
+			rewards: [
+				{
+					id: "AD8DB6DB1C225628"
+					type: "item"
+					item: {
+						id: "minecraft:experience_bottle"
+						count: 1
+					}
+					count: 8
+				}
+				{
+					id: "240971C52B7F9050"
+					type: "loot"
+					table_id: "1EBBC2B918151958"
+				}
+			]
+		}
+		{
+			id: "EB0B5B0BDEC1203C"
+			x: 10.8d
+			y: 0.0d
 			icon: {
 				id: "ars_nouveau:scribes_table"
 				count: 1
 			}
+			size: 1.5d
+			shape: "square"
 			dependencies: [
+				"2F11CFEBD1C69149"
 				"6DD047C12EEA827D"
-				"0DFC70D288521B7E"
 			]
 			tasks: [
 				{
@@ -178,20 +303,14 @@
 						id: "minecraft:experience_bottle"
 						count: 1
 					}
-					count: 8
+					count: 16
 				}
 			]
 		}
 		{
-			id: "6BEA056D3C9341DF"
-			x: 9.0d
-			y: -2.0d
-			title: "Let There Be Light"
-			subtitle: "Your first glyph of your own."
-			description: [
-				"Scribe the &6Light&r glyph and put it in a spell: Projectile, then Light. Cast it at a cave wall and you have a torch that never needs placing."
-				"Every novice glyph costs the same experience, so learn the ones you will use every day first."
-			]
+			id: "2126CA2EFC0A22FD"
+			x: 12.8d
+			y: -1.0d
 			icon: {
 				id: "ars_nouveau:glyph_light"
 				count: 1
@@ -201,7 +320,7 @@
 			]
 			tasks: [
 				{
-					id: "2F20CF9F5D149EEA"
+					id: "943CF04EE08A5FF6"
 					type: "item"
 					item: {
 						id: "ars_nouveau:glyph_light"
@@ -212,31 +331,38 @@
 			]
 			rewards: [
 				{
-					id: "D16F2FEC94EC87F5"
+					id: "903A234D1F022C0B"
+					type: "item"
+					item: {
+						id: "minecraft:torch"
+						count: 1
+					}
+					count: 32
+				}
+				{
+					id: "A3855CC411BB7455"
 					type: "xp_levels"
-					xp_levels: 10
+					xp_levels: 3
 				}
 			]
 		}
 		{
-			id: "DEC11B02322955D1"
-			x: 12.0d
-			y: -3.5d
-			title: "Harvest"
-			subtitle: "Crops in one cast."
-			description: [
-				"Touch, Harvest, then an area augment: a whole field harvested in one click. Worth it on day one."
-			]
-			optional: true
+			id: "F6A16BE5D767DC8F"
+			x: 12.8d
+			y: 1.0d
+			icon: {
+				id: "ars_nouveau:glyph_amplify"
+				count: 1
+			}
 			dependencies: [
-				"6BEA056D3C9341DF"
+				"EB0B5B0BDEC1203C"
 			]
 			tasks: [
 				{
-					id: "F1B03CE3D98D961B"
+					id: "C82A5BDCEECF281F"
 					type: "item"
 					item: {
-						id: "ars_nouveau:glyph_harvest"
+						id: "ars_nouveau:glyph_amplify"
 						count: 1
 					}
 					count: 1
@@ -244,33 +370,146 @@
 			]
 			rewards: [
 				{
-					id: "0BC2DADA8D1B707C"
+					id: "6E4760F57E25D7EC"
 					type: "item"
 					item: {
-						id: "minecraft:wheat_seeds"
+						id: "minecraft:iron_ingot"
 						count: 1
 					}
-					count: 32
+					count: 8
+				}
+				{
+					id: "6ADE899ABD897B43"
+					type: "xp_levels"
+					xp_levels: 3
+				}
+			]
+		}
+		{
+			id: "E78B2DFFBE0F2430"
+			x: 14.8d
+			y: -1.0d
+			icon: {
+				id: "ars_nouveau:glyph_pickup"
+				count: 1
+			}
+			dependencies: [
+				"2126CA2EFC0A22FD"
+				"F6A16BE5D767DC8F"
+			]
+			tasks: [
+				{
+					id: "7972BE4F1AF16D9B"
+					type: "item"
+					item: {
+						id: "ars_nouveau:glyph_pickup"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "F8A95950896D030C"
+					type: "item"
+					item: {
+						id: "minecraft:hopper"
+						count: 1
+					}
+					count: 1
+				}
+				{
+					id: "8C00DB5BDB864FCF"
+					type: "xp_levels"
+					xp_levels: 3
+				}
+			]
+		}
+		{
+			id: "115F973C3412D461"
+			x: 14.8d
+			y: 1.0d
+			icon: {
+				id: "ars_nouveau:glyph_phantom_block"
+				count: 1
+			}
+			dependencies: [
+				"2126CA2EFC0A22FD"
+				"F6A16BE5D767DC8F"
+			]
+			tasks: [
+				{
+					id: "F460C1658E6E7492"
+					type: "item"
+					item: {
+						id: "ars_nouveau:glyph_phantom_block"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "AD7F1008F8E778F8"
+					type: "item"
+					item: {
+						id: "minecraft:glass"
+						count: 1
+					}
+					count: 16
+				}
+				{
+					id: "EAEC8E7EE64640BC"
+					type: "xp_levels"
+					xp_levels: 3
+				}
+			]
+		}
+		{
+			id: "C74BFEB3C5381E6C"
+			x: 16.8d
+			y: 0.0d
+			icon: {
+				id: "ars_nouveau:novice_spell_book"
+				count: 1
+			}
+			size: 1.5d
+			shape: "diamond"
+			dependencies: [
+				"E78B2DFFBE0F2430"
+				"115F973C3412D461"
+			]
+			tasks: [
+				{
+					id: "07B27CB3FDAB8BED"
+					type: "checkmark"
+				}
+			]
+			rewards: [
+				{
+					id: "70C80FC7E1E41531"
+					type: "loot"
+					table_id: "870211AF0E412C54"
+				}
+				{
+					id: "4ADCD8260C72D7ED"
+					type: "xp_levels"
+					xp_levels: 5
 				}
 			]
 		}
 		{
 			id: "5C3DE80B81BB4577"
-			x: 9.0d
-			y: 2.0d
-			title: "Imbuement Chamber"
-			subtitle: "Turns amethyst into Source Gems."
-			description: [
-				"Put an &6Amethyst Shard&r or &6Lapis&r into the chamber and wait. On its own it gathers Source slowly; with a filled Source Jar within two blocks it works much faster."
-				"Amethyst geodes are common underground and in the Mining Dimension. Take a Budding Amethyst home if you can."
-			]
+			x: 0.5d
+			y: 6.5d
 			icon: {
 				id: "ars_nouveau:imbuement_chamber"
 				count: 1
 			}
-			size: 1.5d
+			size: 1.75d
+			shape: "square"
 			dependencies: [
-				"EB0B5B0BDEC1203C"
+				"6DD047C12EEA827D"
 			]
 			tasks: [
 				{
@@ -293,18 +532,21 @@
 					}
 					count: 32
 				}
+				{
+					id: "D8E876994A1E8612"
+					type: "item"
+					item: {
+						id: "minecraft:gold_ingot"
+						count: 1
+					}
+					count: 4
+				}
 			]
 		}
 		{
 			id: "A92D71E452CD19B1"
-			x: 12.0d
-			y: 2.0d
-			title: "Source Gems"
-			subtitle: "The magic half of the first community goal."
-			description: [
-				"Source Gems go into almost every Ars block, and the server needs &e1 500&r of them (scaled to the number of players) for the next stage."
-				"Make a few for yourself, then set up chambers and put the rest in with &e/kw deposit&r."
-			]
+			x: 2.7d
+			y: 6.5d
 			icon: {
 				id: "ars_nouveau:source_gem"
 				count: 1
@@ -326,20 +568,24 @@
 			rewards: [
 				{
 					id: "CFD8A38F5DA01CEA"
+					type: "item"
+					item: {
+						id: "minecraft:amethyst_shard"
+						count: 1
+					}
+					count: 16
+				}
+				{
+					id: "05B5E71C01453E9F"
 					type: "loot"
-					table_id: "870211AF0E412C54"
+					table_id: "1EBBC2B918151958"
 				}
 			]
 		}
 		{
 			id: "2C76AA98D0A4190A"
-			x: 15.0d
-			y: 0.0d
-			title: "Source Jar"
-			subtitle: "Stores Source for everything around it."
-			description: [
-				"A Source Jar holds Source made by Sourcelinks nearby and hands it to machines close to it. A comparator reads how full it is."
-			]
+			x: 4.7d
+			y: 6.5d
 			icon: {
 				id: "ars_nouveau:source_jar"
 				count: 1
@@ -372,14 +618,8 @@
 		}
 		{
 			id: "BFA7EB092C1DCFB2"
-			x: 18.0d
-			y: -2.0d
-			title: "Volcanic Sourcelink"
-			subtitle: "Burns fuel into Source."
-			description: [
-				"Put burnable items next to it or on a pedestal and it turns them into Source for the jars nearby. Archwood logs give more, Blazing Archwood the most."
-				"It also heats the ground: stone around it slowly turns into magma and lava. Build it on something that may melt."
-			]
+			x: 6.7d
+			y: 5.6d
 			icon: {
 				id: "ars_nouveau:volcanic_sourcelink"
 				count: 1
@@ -412,13 +652,8 @@
 		}
 		{
 			id: "E511FADB80273BAF"
-			x: 18.0d
-			y: 2.0d
-			title: "Agronomic Sourcelink"
-			subtitle: "Crops that grow make Source."
-			description: [
-				"Every crop and tree that grows within 15 blocks gives Source. Magical plants like Mageblooms, Sourceberries and Archwood saplings give more. Bonemeal does not count."
-			]
+			x: 6.7d
+			y: 7.4d
 			icon: {
 				id: "ars_nouveau:agronomic_sourcelink"
 				count: 1
@@ -443,7 +678,7 @@
 					id: "ADB4F5776C7E2A8D"
 					type: "item"
 					item: {
-						id: "minecraft:bone_meal"
+						id: "minecraft:wheat_seeds"
 						count: 1
 					}
 					count: 32
@@ -451,172 +686,58 @@
 			]
 		}
 		{
-			id: "16F467F182FEE1BF"
-			x: 21.0d
-			y: 0.0d
-			title: "Sourcestone"
-			subtitle: "Stone with a gem in it. The base of every altar."
-			description: [
-				"Eight stone around one Source Gem. You need it for pedestals and the Arcane Core, and it looks good in a mage tower."
-			]
+			id: "61B708DC9C836285"
+			x: 8.7d
+			y: 5.6d
 			icon: {
-				id: "ars_nouveau:sourcestone"
+				id: "ars_nouveau:mycelial_sourcelink"
 				count: 1
 			}
+			optional: true
 			dependencies: [
 				"BFA7EB092C1DCFB2"
 			]
 			tasks: [
 				{
-					id: "7FD8AF4B5D1D343C"
+					id: "D8698D541298F88E"
 					type: "item"
 					item: {
-						id: "ars_nouveau:sourcestone"
+						id: "ars_nouveau:mycelial_sourcelink"
 						count: 1
 					}
-					count: 16
+					count: 1
 				}
 			]
 			rewards: [
 				{
-					id: "98815618AC1E89FD"
+					id: "D8EE8AB91C79476B"
 					type: "item"
 					item: {
-						id: "minecraft:gold_ingot"
-						count: 1
-					}
-					count: 8
-				}
-			]
-		}
-		{
-			id: "083250A2C01779E4"
-			x: 24.0d
-			y: 0.0d
-			title: "Enchanting Apparatus"
-			subtitle: "The crafting altar of Ars Nouveau."
-			description: [
-				"Place the &6Enchanting Apparatus&r on top of an &6Arcane Core&r, and &6Arcane Pedestals&r around it. The item in your hand goes into the apparatus, the rest onto the pedestals."
-				"Most of the good Ars items are made here: charms, trinkets, enchanted tools."
-			]
-			icon: {
-				id: "ars_nouveau:enchanting_apparatus"
-				count: 1
-			}
-			size: 1.5d
-			dependencies: [
-				"16F467F182FEE1BF"
-			]
-			tasks: [
-				{
-					id: "255147B9F5E57D8A"
-					type: "item"
-					item: {
-						id: "ars_nouveau:enchanting_apparatus"
-						count: 1
-					}
-					count: 1
-				}
-				{
-					id: "56226EC92F66D008"
-					type: "item"
-					item: {
-						id: "ars_nouveau:arcane_core"
-						count: 1
-					}
-					count: 1
-				}
-				{
-					id: "AC5843556BF367D3"
-					type: "item"
-					item: {
-						id: "ars_nouveau:arcane_pedestal"
+						id: "minecraft:mushroom_stew"
 						count: 1
 					}
 					count: 4
 				}
 			]
-			rewards: [
-				{
-					id: "90419A28AFD28A20"
-					type: "loot"
-					table_id: "870211AF0E412C54"
-				}
-				{
-					id: "E6E5DC7C4725E42B"
-					type: "xp_levels"
-					xp_levels: 10
-				}
-			]
 		}
 		{
-			id: "B93E263D085A8C53"
-			x: 27.0d
-			y: -2.0d
-			title: "Starbuncle"
-			subtitle: "A small helper that carries items for you."
-			description: [
-				"Wild Starbuncles live in forests and love gold nuggets. Hold one out, let a Starbuncle take it, and it leaves a &6Starbuncle Token&r behind."
-				"Put the token in the apparatus with four gold ingots on the pedestals to get a &6Starbuncle Charm&r. Use the charm on the ground and your Starbuncle moves items from chest to chest, set up with the Dominion Wand."
-			]
+			id: "27F16548492AB61D"
+			x: 8.7d
+			y: 7.4d
 			icon: {
-				id: "ars_nouveau:starbuncle_charm"
-				count: 1
-			}
-			dependencies: [
-				"083250A2C01779E4"
-			]
-			tasks: [
-				{
-					id: "3B0810CC6FBFD01F"
-					type: "item"
-					item: {
-						id: "ars_nouveau:starbuncle_charm"
-						count: 1
-					}
-					count: 1
-				}
-			]
-			rewards: [
-				{
-					id: "42B08C926250F8D6"
-					type: "item"
-					item: {
-						id: "minecraft:gold_nugget"
-						count: 1
-					}
-					count: 32
-				}
-				{
-					id: "96DBFB6174C8B729"
-					type: "xp_levels"
-					xp_levels: 10
-				}
-			]
-		}
-		{
-			id: "7EA412607DB8DC09"
-			x: 27.0d
-			y: 2.0d
-			title: "Mage Trinkets"
-			subtitle: "More mana, faster mana."
-			description: [
-				"A &6Ring of Potential&r raises your maximum mana. Later rings and amulets from the apparatus add more mana and faster regeneration."
-			]
-			icon: {
-				id: "ars_nouveau:ring_of_potential"
+				id: "ars_nouveau:vitalic_sourcelink"
 				count: 1
 			}
 			optional: true
 			dependencies: [
-				"083250A2C01779E4"
+				"E511FADB80273BAF"
 			]
 			tasks: [
 				{
-					id: "52B7936196D9D3CF"
+					id: "FA390EB538511AF7"
 					type: "item"
 					item: {
-						id: "ars_nouveau:ring_of_potential"
+						id: "ars_nouveau:vitalic_sourcelink"
 						count: 1
 					}
 					count: 1
@@ -624,28 +745,27 @@
 			]
 			rewards: [
 				{
-					id: "03F7DA2A2546D613"
+					id: "6ACAB47771142C57"
 					type: "item"
 					item: {
-						id: "ars_nouveau:source_gem"
+						id: "minecraft:wheat"
 						count: 1
 					}
-					count: 8
+					count: 16
 				}
 			]
 		}
 		{
 			id: "99F9C465FB0CFF5C"
-			x: 24.0d
-			y: 3.5d
-			title: "Dowsing Rod"
-			subtitle: "Find amethyst through walls."
-			description: [
-				"Use it and nearby Budding Amethyst lights up through the stone for a while. Ideal before a mining trip for Source Gems."
-			]
+			x: 2.7d
+			y: 8.5d
+			icon: {
+				id: "ars_nouveau:dowsing_rod"
+				count: 1
+			}
 			optional: true
 			dependencies: [
-				"083250A2C01779E4"
+				"A92D71E452CD19B1"
 			]
 			tasks: [
 				{
@@ -671,22 +791,1109 @@
 			]
 		}
 		{
-			id: "3E9BF84C18A1F424"
-			x: 30.0d
-			y: 0.0d
-			title: "A Proper Mage"
-			subtitle: "Source running, altar built, gems for the server."
-			description: [
-				"You have a working Source setup and an altar. Put the extra gems into the community goal, and keep a stack for yourself: the next stage opens the Mage's Spell Book, Source Relays and rituals, and they all want gems."
+			id: "0777A8458BF84651"
+			x: 4.7d
+			y: 8.5d
+			icon: {
+				id: "ars_nouveau:sourceberry_bush"
+				count: 1
+			}
+			optional: true
+			dependencies: [
+				"2C76AA98D0A4190A"
 			]
+			tasks: [
+				{
+					id: "FAA71FB081AD1D50"
+					type: "item"
+					item: {
+						id: "ars_nouveau:sourceberry_bush"
+						count: 1
+					}
+					count: 8
+				}
+			]
+			rewards: [
+				{
+					id: "AECA840AE3523AF7"
+					type: "item"
+					item: {
+						id: "minecraft:bone_meal"
+						count: 1
+					}
+					count: 16
+				}
+			]
+		}
+		{
+			id: "16F467F182FEE1BF"
+			x: 11.0d
+			y: 6.5d
+			icon: {
+				id: "ars_nouveau:sourcestone"
+				count: 1
+			}
+			dependencies: [
+				"2C76AA98D0A4190A"
+			]
+			tasks: [
+				{
+					id: "7FD8AF4B5D1D343C"
+					type: "item"
+					item: {
+						id: "ars_nouveau:sourcestone"
+						count: 1
+					}
+					count: 16
+				}
+			]
+			rewards: [
+				{
+					id: "98815618AC1E89FD"
+					type: "item"
+					item: {
+						id: "minecraft:gold_ingot"
+						count: 1
+					}
+					count: 8
+				}
+			]
+		}
+		{
+			id: "DA5C573A21DF9229"
+			x: 13.0d
+			y: 6.5d
+			icon: {
+				id: "ars_nouveau:arcane_pedestal"
+				count: 1
+			}
+			dependencies: [
+				"16F467F182FEE1BF"
+			]
+			tasks: [
+				{
+					id: "820D9460721FEC51"
+					type: "item"
+					item: {
+						id: "ars_nouveau:arcane_pedestal"
+						count: 1
+					}
+					count: 4
+				}
+			]
+			rewards: [
+				{
+					id: "DB0F5A375848991E"
+					type: "item"
+					item: {
+						id: "minecraft:gold_nugget"
+						count: 1
+					}
+					count: 27
+				}
+			]
+		}
+		{
+			id: "083250A2C01779E4"
+			x: 15.2d
+			y: 6.5d
+			icon: {
+				id: "ars_nouveau:enchanting_apparatus"
+				count: 1
+			}
+			size: 1.75d
+			shape: "square"
+			dependencies: [
+				"DA5C573A21DF9229"
+			]
+			tasks: [
+				{
+					id: "255147B9F5E57D8A"
+					type: "item"
+					item: {
+						id: "ars_nouveau:enchanting_apparatus"
+						count: 1
+					}
+					count: 1
+				}
+				{
+					id: "56226EC92F66D008"
+					type: "item"
+					item: {
+						id: "ars_nouveau:arcane_core"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "90419A28AFD28A20"
+					type: "loot"
+					table_id: "870211AF0E412C54"
+				}
+				{
+					id: "E6E5DC7C4725E42B"
+					type: "xp_levels"
+					xp_levels: 10
+				}
+			]
+		}
+		{
+			id: "4A4B9B4007E35800"
+			x: 13.0d
+			y: 8.6d
+			icon: {
+				id: "ars_nouveau:earth_essence"
+				count: 1
+			}
+			dependencies: [
+				"DA5C573A21DF9229"
+				"5C3DE80B81BB4577"
+			]
+			tasks: [
+				{
+					id: "639701705F43EC83"
+					type: "item"
+					item: {
+						id: "ars_nouveau:earth_essence"
+						count: 1
+					}
+					count: 2
+				}
+			]
+			rewards: [
+				{
+					id: "71677528C9F463B3"
+					type: "item"
+					item: {
+						id: "minecraft:iron_ingot"
+						count: 1
+					}
+					count: 8
+				}
+			]
+		}
+		{
+			id: "52F8F5885AD1E40B"
+			x: 15.2d
+			y: 8.6d
+			icon: {
+				id: "ars_nouveau:manipulation_essence"
+				count: 1
+			}
+			dependencies: [
+				"DA5C573A21DF9229"
+				"5C3DE80B81BB4577"
+			]
+			tasks: [
+				{
+					id: "A006C016AF434C58"
+					type: "item"
+					item: {
+						id: "ars_nouveau:manipulation_essence"
+						count: 1
+					}
+					count: 2
+				}
+			]
+			rewards: [
+				{
+					id: "4D1CBF486216A755"
+					type: "item"
+					item: {
+						id: "minecraft:redstone"
+						count: 1
+					}
+					count: 16
+				}
+			]
+		}
+		{
+			id: "F481EC1D811960D0"
+			x: 17.2d
+			y: 8.6d
+			icon: {
+				id: "ars_nouveau:water_essence"
+				count: 1
+			}
+			optional: true
+			dependencies: [
+				"4A4B9B4007E35800"
+			]
+			tasks: [
+				{
+					id: "8E94FAA97A0C5811"
+					type: "item"
+					item: {
+						id: "ars_nouveau:water_essence"
+						count: 1
+					}
+					count: 1
+				}
+				{
+					id: "0321779C7E5D70D2"
+					type: "item"
+					item: {
+						id: "ars_nouveau:fire_essence"
+						count: 1
+					}
+					count: 1
+				}
+				{
+					id: "C72B3E8165158D6D"
+					type: "item"
+					item: {
+						id: "ars_nouveau:abjuration_essence"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "F5187548852EFB10"
+					type: "item"
+					item: {
+						id: "minecraft:amethyst_shard"
+						count: 1
+					}
+					count: 24
+				}
+				{
+					id: "7BDE0C171864AEB6"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+		}
+		{
+			id: "9030AFB1FCEF8E0E"
+			x: 19.2d
+			y: 8.6d
+			icon: {
+				id: "ars_nouveau:wilden_horn"
+				count: 1
+			}
+			optional: true
+			dependencies: [
+				"4A4B9B4007E35800"
+			]
+			tasks: [
+				{
+					id: "832D489D7F2E369C"
+					type: "item"
+					item: {
+						id: "ars_nouveau:wilden_horn"
+						count: 1
+					}
+					count: 1
+				}
+				{
+					id: "76113EA45D2533E6"
+					type: "item"
+					item: {
+						id: "ars_nouveau:wilden_wing"
+						count: 1
+					}
+					count: 1
+				}
+				{
+					id: "31A47DFB77FE5365"
+					type: "item"
+					item: {
+						id: "ars_nouveau:wilden_spike"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "6AF451B90B230721"
+					type: "loot"
+					table_id: "870211AF0E412C54"
+				}
+				{
+					id: "EB4B20CD151AC461"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+		}
+		{
+			id: "A4A3719685353C0E"
+			x: 17.2d
+			y: 5.6d
+			icon: {
+				id: "ars_nouveau:magebloom"
+				count: 1
+			}
+			dependencies: [
+				"083250A2C01779E4"
+			]
+			tasks: [
+				{
+					id: "63A5FAF3B0153440"
+					type: "item"
+					item: {
+						id: "ars_nouveau:magebloom_fiber"
+						count: 1
+					}
+					count: 8
+				}
+			]
+			rewards: [
+				{
+					id: "AEC4407E9A9B89E9"
+					type: "item"
+					item: {
+						id: "minecraft:bone_meal"
+						count: 1
+					}
+					count: 32
+				}
+			]
+		}
+		{
+			id: "4B7C517C27E44A58"
+			x: 19.2d
+			y: 5.6d
+			icon: {
+				id: "ars_nouveau:spell_parchment"
+				count: 1
+			}
+			optional: true
+			dependencies: [
+				"A4A3719685353C0E"
+			]
+			tasks: [
+				{
+					id: "BAF78F001DC6585B"
+					type: "item"
+					item: {
+						id: "ars_nouveau:spell_parchment"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "E7F86FAD83167D2C"
+					type: "item"
+					item: {
+						id: "minecraft:paper"
+						count: 1
+					}
+					count: 16
+				}
+				{
+					id: "8ADDA9152E7CD696"
+					type: "xp_levels"
+					xp_levels: 3
+				}
+			]
+		}
+		{
+			id: "7EA412607DB8DC09"
+			x: 19.2d
+			y: 7.1d
+			icon: {
+				id: "ars_nouveau:ring_of_potential"
+				count: 1
+			}
+			dependencies: [
+				"083250A2C01779E4"
+			]
+			tasks: [
+				{
+					id: "52B7936196D9D3CF"
+					type: "item"
+					item: {
+						id: "ars_nouveau:ring_of_potential"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "03F7DA2A2546D613"
+					type: "item"
+					item: {
+						id: "minecraft:iron_nugget"
+						count: 1
+					}
+					count: 16
+				}
+				{
+					id: "7EF5B06C16CDF08B"
+					type: "xp_levels"
+					xp_levels: 3
+				}
+			]
+		}
+		{
+			id: "B87961BD31DD6602"
+			x: 21.2d
+			y: 7.1d
+			icon: {
+				id: "ars_nouveau:amulet_of_mana_boost"
+				count: 1
+			}
+			optional: true
+			dependencies: [
+				"7EA412607DB8DC09"
+			]
+			tasks: [
+				{
+					id: "D421F2149CD6D597"
+					type: "item"
+					item: {
+						id: "ars_nouveau:amulet_of_mana_boost"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "5272A505FCFC756D"
+					type: "item"
+					item: {
+						id: "minecraft:diamond"
+						count: 1
+					}
+					count: 2
+				}
+				{
+					id: "9277C8A16BF25DDA"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+		}
+		{
+			id: "635694DA2A1998E1"
+			x: 13.0d
+			y: 10.6d
+			icon: {
+				id: "ars_nouveau:glyph_harvest"
+				count: 1
+			}
+			dependencies: [
+				"4A4B9B4007E35800"
+				"EB0B5B0BDEC1203C"
+			]
+			tasks: [
+				{
+					id: "613A93C82F3175F3"
+					type: "item"
+					item: {
+						id: "ars_nouveau:glyph_harvest"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "728F71DD37BF29CB"
+					type: "item"
+					item: {
+						id: "minecraft:wheat_seeds"
+						count: 1
+					}
+					count: 32
+				}
+				{
+					id: "C9643C874D286198"
+					type: "xp_levels"
+					xp_levels: 3
+				}
+			]
+		}
+		{
+			id: "6040879D670270F0"
+			x: 15.2d
+			y: 10.6d
+			icon: {
+				id: "ars_nouveau:glyph_leap"
+				count: 1
+			}
+			optional: true
+			dependencies: [
+				"9030AFB1FCEF8E0E"
+			]
+			tasks: [
+				{
+					id: "88AC08868FF95A44"
+					type: "item"
+					item: {
+						id: "ars_nouveau:glyph_leap"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "4C2A4BD65576ADE6"
+					type: "item"
+					item: {
+						id: "minecraft:feather"
+						count: 1
+					}
+					count: 16
+				}
+				{
+					id: "EF624301A2FD925F"
+					type: "xp_levels"
+					xp_levels: 3
+				}
+			]
+		}
+		{
+			id: "E89757E99790A33C"
+			x: 17.2d
+			y: 10.6d
+			icon: {
+				id: "ars_nouveau:glyph_dispel"
+				count: 1
+			}
+			optional: true
+			dependencies: [
+				"F481EC1D811960D0"
+			]
+			tasks: [
+				{
+					id: "42DE58A62FF20803"
+					type: "item"
+					item: {
+						id: "ars_nouveau:glyph_dispel"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "F30F88A6DE65D2C8"
+					type: "item"
+					item: {
+						id: "minecraft:milk_bucket"
+						count: 1
+					}
+					count: 1
+				}
+				{
+					id: "CCC880103E32D56A"
+					type: "xp_levels"
+					xp_levels: 3
+				}
+			]
+		}
+		{
+			id: "F8FB9C8CD9D63670"
+			x: 1.0d
+			y: 14.5d
+			icon: {
+				id: "ars_nouveau:dominion_wand"
+				count: 1
+			}
+			dependencies: [
+				"083250A2C01779E4"
+			]
+			tasks: [
+				{
+					id: "908EC935C76B1688"
+					type: "item"
+					item: {
+						id: "ars_nouveau:dominion_wand"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "415BC13A22C7C66B"
+					type: "item"
+					item: {
+						id: "minecraft:gold_ingot"
+						count: 1
+					}
+					count: 4
+				}
+			]
+		}
+		{
+			id: "64AA7604DA6F2FFC"
+			x: 1.0d
+			y: 16.5d
+			icon: {
+				id: "ars_nouveau:starbuncle_shards"
+				count: 1
+			}
+			dependencies: [
+				"083250A2C01779E4"
+			]
+			tasks: [
+				{
+					id: "A592D99D55FC8528"
+					type: "item"
+					item: {
+						id: "ars_nouveau:starbuncle_shards"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "8A7C66BF05D83916"
+					type: "item"
+					item: {
+						id: "minecraft:gold_nugget"
+						count: 1
+					}
+					count: 32
+				}
+			]
+		}
+		{
+			id: "DA558B0499746957"
+			x: 3.3d
+			y: 15.5d
+			icon: {
+				id: "ars_nouveau:starbuncle_charm"
+				count: 1
+			}
+			size: 1.5d
+			shape: "diamond"
+			dependencies: [
+				"F8FB9C8CD9D63670"
+				"64AA7604DA6F2FFC"
+			]
+			tasks: [
+				{
+					id: "668639D6F469E045"
+					type: "item"
+					item: {
+						id: "ars_nouveau:starbuncle_charm"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "84AEA9980C77E13C"
+					type: "loot"
+					table_id: "870211AF0E412C54"
+				}
+				{
+					id: "9173E2A8C26F7EC9"
+					type: "xp_levels"
+					xp_levels: 10
+				}
+			]
+		}
+		{
+			id: "AE2D89EFDAD9E138"
+			x: 5.5d
+			y: 15.5d
+			icon: {
+				id: "ars_nouveau:allow_scroll"
+				count: 1
+			}
+			dependencies: [
+				"DA558B0499746957"
+			]
+			tasks: [
+				{
+					id: "59C2257B65034D82"
+					type: "checkmark"
+				}
+			]
+			rewards: [
+				{
+					id: "D8335F1C8EBB93D7"
+					type: "item"
+					item: {
+						id: "minecraft:chest"
+						count: 1
+					}
+					count: 4
+				}
+				{
+					id: "CF95ACFB0AE66200"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+		}
+		{
+			id: "10C3EAE570CBC7DA"
+			x: 7.7d
+			y: 14.5d
+			icon: {
+				id: "ars_nouveau:drygmy_charm"
+				count: 1
+			}
+			optional: true
+			dependencies: [
+				"DA558B0499746957"
+				"9030AFB1FCEF8E0E"
+			]
+			tasks: [
+				{
+					id: "FD59F3E12CB05069"
+					type: "item"
+					item: {
+						id: "ars_nouveau:drygmy_charm"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "EC3BB2E376E6B80D"
+					type: "item"
+					item: {
+						id: "minecraft:mossy_cobblestone"
+						count: 1
+					}
+					count: 4
+				}
+				{
+					id: "7B33C72F82851E20"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+		}
+		{
+			id: "C042060596DA4E6A"
+			x: 7.7d
+			y: 16.5d
+			icon: {
+				id: "ars_nouveau:whirlisprig_charm"
+				count: 1
+			}
+			optional: true
+			dependencies: [
+				"DA558B0499746957"
+				"A4A3719685353C0E"
+			]
+			tasks: [
+				{
+					id: "580319B8F2EA05BC"
+					type: "item"
+					item: {
+						id: "ars_nouveau:whirlisprig_charm"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "4073EFF5B34B4B0C"
+					type: "item"
+					item: {
+						id: "minecraft:oak_sapling"
+						count: 1
+					}
+					count: 8
+				}
+				{
+					id: "9055278E745B9696"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+		}
+		{
+			id: "46632AC4CA9C6932"
+			x: 12.5d
+			y: 14.5d
+			icon: {
+				id: "ars_creo:starbuncle_wheel"
+				count: 1
+			}
+			optional: true
+			dependencies: [
+				"DA558B0499746957"
+			]
+			tasks: [
+				{
+					id: "6203CDC9B3924F66"
+					type: "item"
+					item: {
+						id: "ars_creo:starbuncle_wheel"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "A983D6C6B10A7B4E"
+					type: "item"
+					item: {
+						id: "minecraft:gold_block"
+						count: 1
+					}
+					count: 1
+				}
+				{
+					id: "B13BCE8CA66118A9"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+		}
+		{
+			id: "8DA4A08A2B00BA5E"
+			x: 12.5d
+			y: 16.5d
+			icon: {
+				id: "ars_additions:advanced_dominion_wand"
+				count: 1
+			}
+			optional: true
+			dependencies: [
+				"F8FB9C8CD9D63670"
+			]
+			tasks: [
+				{
+					id: "4A2717AD6EEA8BFA"
+					type: "item"
+					item: {
+						id: "ars_additions:advanced_dominion_wand"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "412F68E4E872D6A6"
+					type: "item"
+					item: {
+						id: "minecraft:amethyst_block"
+						count: 1
+					}
+					count: 2
+				}
+			]
+		}
+		{
+			id: "668C226660B1EF1E"
+			x: 14.5d
+			y: 14.5d
+			icon: {
+				id: "ars_elemental:curio_bag"
+				count: 1
+			}
+			optional: true
+			dependencies: [
+				"A4A3719685353C0E"
+			]
+			tasks: [
+				{
+					id: "36E99FF90E03BADB"
+					type: "item"
+					item: {
+						id: "ars_elemental:curio_bag"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "7757DE0B3A305B51"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+		}
+		{
+			id: "2D68AEC5831F6D62"
+			x: 14.5d
+			y: 16.5d
+			icon: {
+				id: "ars_elemental:lesser_earth_focus"
+				count: 1
+			}
+			optional: true
+			dependencies: [
+				"4A4B9B4007E35800"
+			]
+			tasks: [
+				{
+					id: "B7849A7A36098531"
+					type: "item"
+					item: {
+						id: "ars_elemental:lesser_earth_focus"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "2D377D546C6E9DDA"
+					type: "item"
+					item: {
+						id: "minecraft:gold_ingot"
+						count: 1
+					}
+					count: 6
+				}
+				{
+					id: "D06C883D12078E64"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+		}
+		{
+			id: "5435C45B65BED305"
+			x: 16.5d
+			y: 14.5d
+			icon: {
+				id: "ars_technica:glyph_pack"
+				count: 1
+			}
+			optional: true
+			dependencies: [
+				"52F8F5885AD1E40B"
+			]
+			tasks: [
+				{
+					id: "AFFFA7F42C00FC78"
+					type: "item"
+					item: {
+						id: "ars_technica:glyph_pack"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "3CEA782198ACB209"
+					type: "item"
+					item: {
+						id: "minecraft:iron_ingot"
+						count: 1
+					}
+					count: 9
+				}
+				{
+					id: "B9E0D100B6417DD8"
+					type: "xp_levels"
+					xp_levels: 3
+				}
+			]
+		}
+		{
+			id: "A7A5BA50FA1FA49E"
+			x: 16.5d
+			y: 16.5d
+			icon: {
+				id: "ars_additions:water_breathing_charm"
+				count: 1
+			}
+			optional: true
+			dependencies: [
+				"083250A2C01779E4"
+			]
+			tasks: [
+				{
+					id: "6CEF1968FAF7B997"
+					type: "item"
+					item: {
+						id: "ars_additions:water_breathing_charm"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "1736194CA431BBBE"
+					type: "item"
+					item: {
+						id: "minecraft:kelp"
+						count: 1
+					}
+					count: 16
+				}
+				{
+					id: "98C01EFBCE5A1CF6"
+					type: "xp_levels"
+					xp_levels: 3
+				}
+			]
+		}
+		{
+			id: "80126811246AC3FC"
+			x: 24.0d
+			y: 5.5d
+			icon: {
+				id: "ars_nouveau:source_gem"
+				count: 1
+			}
+			size: 1.5d
+			shape: "hexagon"
+			dependencies: [
+				"083250A2C01779E4"
+				"BFA7EB092C1DCFB2"
+			]
+			tasks: [
+				{
+					id: "756E62CA367520EC"
+					type: "item"
+					item: {
+						id: "ars_nouveau:source_gem"
+						count: 1
+					}
+					count: 64
+				}
+			]
+			rewards: [
+				{
+					id: "8397CA34AAFC0629"
+					type: "loot"
+					table_id: "B5AA0F94577E6A3C"
+				}
+				{
+					id: "CA20DFF1F9427672"
+					type: "xp_levels"
+					xp_levels: 10
+				}
+			]
+		}
+		{
+			id: "3E9BF84C18A1F424"
+			x: 24.0d
+			y: 8.3d
 			icon: {
 				id: "ars_nouveau:source_gem_block"
 				count: 1
 			}
-			size: 1.75d
+			size: 2.5d
 			shape: "gear"
 			dependencies: [
-				"B93E263D085A8C53"
+				"80126811246AC3FC"
+				"DA558B0499746957"
+				"C74BFEB3C5381E6C"
 			]
 			tasks: [
 				{
@@ -696,7 +1903,7 @@
 						id: "ars_nouveau:source_gem_block"
 						count: 1
 					}
-					count: 4
+					count: 8
 				}
 			]
 			rewards: [
@@ -711,6 +1918,88 @@
 					xp_levels: 15
 				}
 			]
+		}
+	]
+	images: [
+		{
+			id: "2920D015E0402EEC"
+			image: "kronwerke:textures/quests/ars_nouveau/title.png"
+			x: 9.5d
+			y: -4.6d
+			width: 8.7d
+			height: 1.8d
+			rotation: 0.0d
+			order: 1
+		}
+		{
+			id: "EDC1A2905E29409B"
+			image: "kronwerke:textures/quests/ars_nouveau/grundlagen.png"
+			x: 4.5d
+			y: -2.6d
+			width: 4.82d
+			height: 0.9d
+			rotation: 0.0d
+			order: 1
+		}
+		{
+			id: "C90A566DA524D892"
+			image: "kronwerke:textures/quests/ars_nouveau/glyphen.png"
+			x: 14.8d
+			y: -2.6d
+			width: 2.7d
+			height: 0.9d
+			rotation: 0.0d
+			order: 1
+		}
+		{
+			id: "B1C8C31D3E6AA110"
+			image: "kronwerke:textures/quests/ars_nouveau/quelle.png"
+			x: 4.5d
+			y: 4.3d
+			width: 2.05d
+			height: 0.9d
+			rotation: 0.0d
+			order: 1
+		}
+		{
+			id: "898BA9DC196FC347"
+			image: "kronwerke:textures/quests/ars_nouveau/apparat.png"
+			x: 16.2d
+			y: 4.3d
+			width: 7.23d
+			height: 0.9d
+			rotation: 0.0d
+			order: 1
+		}
+		{
+			id: "E3EDE46F440DA5A9"
+			image: "kronwerke:textures/quests/ars_nouveau/helfer.png"
+			x: 4.3d
+			y: 12.6d
+			width: 2.32d
+			height: 0.9d
+			rotation: 0.0d
+			order: 1
+		}
+		{
+			id: "88768372450D211C"
+			image: "kronwerke:textures/quests/ars_nouveau/erweiterungen.png"
+			x: 14.5d
+			y: 12.6d
+			width: 5.03d
+			height: 0.9d
+			rotation: 0.0d
+			order: 1
+		}
+		{
+			id: "591274E0668F7E06"
+			image: "kronwerke:textures/quests/ars_nouveau/ziel.png"
+			x: 24.0d
+			y: 3.6d
+			width: 3.52d
+			height: 0.9d
+			rotation: 0.0d
+			order: 1
 		}
 	]
 }

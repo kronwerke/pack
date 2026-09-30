@@ -53,3 +53,10 @@ First assembly. 222 mods on NeoForge 21.1.252, boots on a dedicated server. No q
 - No Chat Restrictions: chat works for accounts whose Microsoft settings block it.
 - Traveler's Titles no longer shows a title on every biome change; dimension titles stay.
 - Stage 3 now also locks what the design keeps for it: the Mekanism advanced tier (the stage 3 goal asks for advanced control circuits), the Immersive Engineering machines built from engineering blocks, Refined Storage and Cable Tiers, and dreamwood from the Alfheim trade.
+
+## 0.5.5
+
+- The quest book is rewritten in German and much deeper: 673 quests in 17 chapters instead of 180, step by step in the style of All the Mods, with chapter titles and section headings on the quest canvas.
+- The text lives in `config/ftbquests/quests/lang/` (de_de, and en_us as the fallback for every other language). The lettering is rendered by `tools/quests/banners.py` in Big Shoulders Display into `kubejs/assets/kronwerke/textures/quests/`, which KubeJS hands to the clients. `tools/quests/check_images.py` checks every picture against the mod jars.
+- Chapter groups and crates have German names.
+- `docs/STAGES.md`: stage 3 lists Refined Storage and the engineering-block machines, and the mana pearl goal is 9 million mana, not 750 000.

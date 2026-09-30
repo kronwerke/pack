@@ -1,0 +1,27 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "undergarden"
+    }
+  ],
+  "type": "malum:spirit_repair",
+  "durabilityPercentage": 0.5,
+  "repairMaterial": {
+    "item": "undergarden:cloggrum_ingot",
+    "count": 2
+  },
+  "spirits": [
+    {
+      "type": "malum:earthen",
+      "count": 12
+    }
+  ],
+  "validItems": [
+    "undergarden:cloggrum_sword"
+  ],
+  "regex": {
+    "itemIdRegex": "cloggrum_.+",
+    "modIdRegex": "undergarden"
+  }
+}

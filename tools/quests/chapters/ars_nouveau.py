@@ -21,7 +21,7 @@ quests = [
           description=[
               "Willkommen bei &dArs Nouveau&r! Hier lernst du keine fertigen Zauber, sondern baust sie dir selbst aus &dGlyphen&r zusammen, wie Wörter in einem Satz. Ein Zauber kann eine Spitzhacke ersetzen, eine Fackel, eine Brücke oder ein Schwert.",
               "",
-              "Die Energie der Mod heißt &dQuelle&r (Source). Mit ihr laufen alle Ars-Blöcke, und aus ihr entstehen die &6Quelljuwelen&r (Source Gems). Genau die braucht der Server: &e1 500 Quelljuwelen&r sind die magische Hälfte des Ziels von &6Stufe 1&r am Obelisken.",
+              "Die Energie der Mod heißt &dQuelle&r (Source). Mit ihr laufen alle Ars-Blöcke, und aus ihr entstehen die &6Quelljuwelen&r (Source Gems). Genau die braucht der Server: &e800 Quelljuwelen&r und &e12 Quellschlusssteine&r sind die magische Hälfte des Ziels von &6Stufe 1&r am Obelisken.",
               "",
               pic("ars_nouveau:worn_notebook"),
               "",
@@ -238,7 +238,7 @@ quests = [
               "",
               "Amethyst findest du in &eGeoden&r unter der Erde, auch reichlich in der Bergbau-Dimension. Nimm die Cluster mit, und wenn du eine Spitzhacke mit Behutsamkeit hast, kannst du Amethystblöcke mitnehmen. &6Knospender Amethyst&r lässt sich nicht bewegen, aber du kannst neben einer Geode eine kleine Außenstelle bauen.",
               "",
-              "Juwelen, die du nicht selbst brauchst, gehören in den &eObelisken&r an der Spawn: &e1 500&r braucht der ganze Server für Stufe 2. Das ist die magische Hälfte des Ziels.",
+              "Juwelen, die du nicht selbst brauchst, gehören in den &eObelisken&r an der Spawn: &e800&r braucht der ganze Server, damit Stufe 2 öffnet. Das ist, zusammen mit den Quellschlusssteinen, die magische Hälfte des Ziels.",
           ],
           tasks=[task_item("ars_nouveau:source_gem", 16)],
           rewards=[reward_item("minecraft:amethyst_shard", 16), reward_table("s1_common")],
@@ -669,7 +669,9 @@ quests = [
     quest("obelisk", 24, 5.5, "&dJuwelen für den Obelisken",
           subtitle="Die magische Hälfte von Stufe 1.",
           description=[
-              "Das Ziel von &6Stufe 1&r hat zwei Säulen: Technik (Andesitlegierung) und Magie. Die Magie-Säule sind &e1 500 Quelljuwelen&r, angepasst an die Zahl der aktiven Spieler.",
+              "Das Ziel von &6Stufe 1&r hat drei Säulen: Stein, Technik (Andesitlegierung) und Magie. Die Magie-Säule sind &e800 Quelljuwelen&r, angepasst an die Zahl der aktiven Spieler, und &e12 Quellschlusssteine&r, eine feste Zahl.",
+              "",
+              "Der &dQuellschlussstein&r ist der Meilenstein der Säule: vier Quelljuwelblöcke, ein Quellglas, zwei Manadiamanten aus Botania, eine Andesitlegierung und ein Gold Leaf aus Nature's Aura. Ein einziger zählt auf der Leiste so viel wie gut 60 Juwelen. Das genaue Rezept steht im Kapitel &6Hier geht's los&r.",
               "",
               "Rechtsklick mit einem Stapel Juwelen auf den &eObelisken&r an der Spawn gibt ihn ab, schleichend gibst du alles Passende auf einmal ab. Eine Truhe, die du neben den Obelisken stellst, wird zu deinem Zulieferer: was du hineinfüllst, zählt für dich. Unterwegs hilft &e/kw deposit&r.",
               "",

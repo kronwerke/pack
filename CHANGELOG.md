@@ -60,3 +60,14 @@ First assembly. 222 mods on NeoForge 21.1.252, boots on a dedicated server. No q
 - The text lives in `config/ftbquests/quests/lang/` (de_de, and en_us as the fallback for every other language). The lettering is rendered by `tools/quests/banners.py` in Big Shoulders Display into `kubejs/assets/kronwerke/textures/quests/`, which KubeJS hands to the clients. `tools/quests/check_images.py` checks every picture against the mod jars.
 - Chapter groups and crates have German names.
 - `docs/STAGES.md`: stage 3 lists Refined Storage and the engineering-block machines, and the mana pearl goal is 9 million mana, not 750 000.
+
+## 0.6.0
+
+- Recipes tie the mods together, slow at first and built for automation later: about a hundred changes in `kubejs/server_scripts/kronwerke/`, listed with their reasons in `docs/RECIPES.md`. Brass is a milestone (one ingot per blaze powder in a heated mixer, two in a superheated one), the precision mechanism takes five loops and only 60 percent come out, charged certus comes from the imbuement chamber or Powah's energizing orb, smart cables need an electron tube, the first manasteel comes from a Nature's Aura ritual, mana pearls need a brass casing under the pool, Mekanism's circuits need Create, AE2 and the End, and the big AE2 and MEGA cells need draconium.
+- Stages are generated: `tools/stages/spec.py` says which stage every item belongs to and `tools/stages/build.py` writes the Chapters files as plain item lists. Chapters opens an item as soon as any stage lists it, so "@mekanism" in stage 2 had opened the advanced, elite and ultimate tiers, the digital miner and the QIO in stage 2. CI checks that the files match the spec.
+- Every mod in the pack now has a stage, including the new addons and the ones that had none (Pipez, Modular Routers, LaserIO, XNet, Integrated Dynamics, Productive Bees, Productive Metalworks, Just Dire Things, Mystical Agriculture tiers, Iron Furnaces tiers, Sophisticated tiers, EvilCraft, Forbidden and Arcanus, Reliquary). The Mekanism elite tier moves to stage 4, Alfheim to stage 3, the spirit attuned gem to stage 2.
+- New addons: Advanced AE, MEGA Cells, Applied Flux, Mekanism More Machine, Create Ore Excavation, Steam 'n' Rails, Create Diesel Generators and Create: Power Grid. Create: New Age is gone, Power Grid replaces it.
+- Community goals ask for less bulk and add six milestone items, one per pillar in stages 1 to 3 (`kubejs/startup_scripts/milestones.js`). Milestones do not scale with the player count and are worth many points on the bar (Kronwerke Core 0.6.0).
+- Draconium ore only generates in the End.
+- The server console is much quieter: from 721 errors and 283 warnings at start to 5 and 240, by fixing the broken data of other mods rather than hiding it. Details in `docs/CONSOLE.md`.
+- The quest book follows the new recipes and stages, with a Power Grid line and quests for the milestones.

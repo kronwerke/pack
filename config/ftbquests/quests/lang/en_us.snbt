@@ -20,7 +20,7 @@
 	]
 	chapter.2EE3D32B8FC983B7.title: "Botania"
 	chapter.5BF91802FAFC8378.chapter_subtitle: [
-		"Stufe 2. Manastahl, Runen, Terrastahl und das Tor nach Alfheim."
+		"Stufe 2. Manastahl, Runen, Terrastahl und der Runenkern."
 	]
 	chapter.5BF91802FAFC8378.title: "Botania: Runen"
 	chapter.5F4AAB36EBD18AA6.chapter_subtitle: [
@@ -52,7 +52,7 @@
 	]
 	chapter.B51DAF3B806AC689.title: "Ars Nouveau: Magier"
 	chapter.C8DF34D772AEF66E.chapter_subtitle: [
-		"Stufe 2: Lohenbrenner, Messing, Präzisionsgetriebe und die Create-Addons."
+		"Stufe 2: Lohenbrenner, Messing, Präzisionsgetriebe, das Messingherz und die Create-Addons."
 	]
 	chapter.C8DF34D772AEF66E.title: "Create: Messing"
 	chapter.CF96B048882A141A.chapter_subtitle: [
@@ -94,7 +94,7 @@
 		""
 		"So funktioniert jede &eManainfusion&r: Gegenstand ins Becken werfen, und solange genug Mana für ein Stück da ist, wird es verwandelt. Ein ganzer Stapel wird Stück für Stück umgewandelt, bis Stapel oder Mana alle sind."
 		""
-		"Managlas brauchst du für Phiolen in der Botanischen Brauerei und als Tauschware beim Elfenportal in Stufe 2."
+		"Managlas brauchst du für Phiolen in der Botanischen Brauerei und später als Tauschware beim Elfenportal, das mit Stufe 3 öffnet."
 		""
 		"&eTipp:&r JEI zeigt dir unter dem Manabecken alle Infusionen mit ihrem Manapreis."
 	]
@@ -125,13 +125,6 @@
 	]
 	quest.03BC2C3A8D8C8FF6.quest_subtitle: "Mach deine Ausrüstung zu deiner eigenen."
 	quest.03BC2C3A8D8C8FF6.title: "&dEdelsteine und Sockel"
-	quest.03D8BE2D9B239A28.quest_desc: [
-		"Ein Manapylon, &e3 Terrastahlklumpen&r und ein &eEnderauge&r ergeben einen &aNaturapylon&r. Du brauchst mindestens &e2&r."
-		""
-		"Jeder Naturapylon steht &edirekt auf einem Manabecken&r. Beide Becken müssen im Umkreis von &e5 Blöcken&r um das Portal-Herzstück stehen (ein Würfel von 11x11x11). Das Portal zieht sein Mana gleichmäßig aus allen Becken mit Pylon."
-	]
-	quest.03D8BE2D9B239A28.quest_subtitle: "Er zapft die Becken für das Portal an."
-	quest.03D8BE2D9B239A28.title: "&aNaturapylon"
 	quest.0416DBEF41E814E7.quest_desc: [
 		"Der &6Windgenerator&r braucht keinen Brennstoff. Er liefert zwischen &d24 und 192 FE/t&r, und wie viel genau, hängt von der Höhe ab: tief im Tal fast nichts, hoch oben am Himmel das Maximum."
 		""
@@ -349,15 +342,15 @@
 	quest.0C6FCD3B9D470860.quest_subtitle: "Eine Quelle, viele Ziele."
 	quest.0C6FCD3B9D470860.title: "&aQuellrelais: Splitter"
 	quest.0CBB52F9CEC18DAE.quest_desc: [
-		"Auf Kronwerke ist die &aTerrestrische Agglomerationsplatte&r an Create gekoppelt. Im Originalrezept liegen oben drei Lapislazuliblöcke, hier sind es &eein Lapisblock zwischen zwei Create-Messinggehäusen&r."
+		"Auf Kronwerke hängt Botania an Create. Messing brauchst du an drei Stellen: ein &6Messinggehäuse&r direkt &eunter dem Manabecken&r, in dem Manaperlen entstehen, einen &6Messingbarren&r im Runenaltar und zwei Messinggehäuse in der Terrestrischen Agglomerationsplatte."
 		""
 		"{image:create:textures/block/brass_casing.png width:32 height:32 align:center}"
 		""
-		"Ein &6Messinggehäuse&r entsteht, wenn du einen &6Messingbarren&r auf einen &6entrindeten Stamm&r oder entrindetes Holz anwendest (Rechtsklick oder per Create-Aufträger). Messing wiederum kommt aus dem Create-Mixer mit Lodernder Brennkammer, und die braucht auf Kronwerke zwei Quellsteine aus Ars Nouveau."
+		"Ein &6Messinggehäuse&r entsteht, wenn du einen &6Messingbarren&r auf einen &6entrindeten Stamm&r oder entrindetes Holz anwendest, per Rechtsklick oder mit einem Einsatzgerät. Messing wiederum kommt aus dem Create-Mixer über einem &6Lohenbrenner&r, und dessen Gehäuse braucht auf Kronwerke zwei &dQuelljuwelen&r aus Ars Nouveau."
 		""
-		"Magie braucht Technik, Technik braucht Magie. Wenn du selbst keine Messinglinie hast, tausch mit jemandem, der eine hat: dein Manastahl gegen ihr Messing."
+		"Magie braucht Technik, Technik braucht Magie. Wenn du selbst keine Messinglinie hast, tausch mit jemandem, der eine hat: dein Manastahl oder deine Feuerrunen gegen ihr Messing."
 	]
-	quest.0CBB52F9CEC18DAE.quest_subtitle: "Terrastahl braucht auf Kronwerke die Technik."
+	quest.0CBB52F9CEC18DAE.quest_subtitle: "Perlen, Runen und Terrastahl brauchen die Technik."
 	quest.0CBB52F9CEC18DAE.title: "&6Messing vom Ingenieur"
 	quest.0CC45297F418C1C6.quest_desc: [
 		"{image:waystones:textures/item/return_scroll.png width:32 height:32 align:center}"
@@ -368,17 +361,6 @@
 	]
 	quest.0CC45297F418C1C6.quest_subtitle: "Der schnelle Weg zurück."
 	quest.0CC45297F418C1C6.title: "&6Rückkehr-Schriftrolle"
-	quest.0CD8BBF16987C23B.quest_desc: [
-		"Die Elfen tauschen gern Dinge aus ihrer Welt. In Stufe 2 kannst du davon schon benutzen:"
-		""
-		"&6Managlas&r wird zu &6Elfenglas&r, fast unsichtbarem Glas mit wechselndem Muster."
-		"&6Netherquarz&r wird zu &6Elfenquarz&r, grünlichem Bauquarz."
-		"&6Manadiamant&r wird zu &6Drachenstein&r, dem Edelstein der Elfen."
-		""
-		"&cNoch gesperrt:&r Manastahl zu &6Elementium&r, Manaperlen zu &6Feenstaub&r und Lebeholz zu &6Traumholz&r gehören zu &6Stufe 3 (Stahlwerk)&r. Du kannst sie tragen, aber noch nicht benutzen. Das Elementium-Ziel von Stufe 3 wird genau hier gefarmt."
-	]
-	quest.0CD8BBF16987C23B.quest_subtitle: "Was die Elfen jetzt schon tauschen."
-	quest.0CD8BBF16987C23B.title: "&aHandel mit Alfheim"
 	quest.0D0771FD5F02EF27.quest_desc: [
 		"Ein Manaverbreiter plus &e1 Redstone&r ergibt den &6Impuls-Manaverbreiter&r. Er feuert bei jedem &eRedstone-Impuls&r einen Stoß, ganz egal, ob er ein Ziel hat."
 		""
@@ -416,7 +398,7 @@
 	quest.0E6A70DE20166D82.quest_desc: [
 		"Lava und Wasser so nebeneinander, dass zwischen ihnen Bruchstein entsteht, und davor ein &6Mechanischer Bohrer&r: jedes Mal, wenn der Bohrer den Stein abbaut, bildet sich sofort ein neuer. Mehrere Generatoren an einer Welle vervielfachen das."
 		""
-		"Eine Schleuse oder ein Förderband sammelt die Steine ein. Das ist die ehrliche Antwort auf den &6Stein-Pfeiler&r des Obelisk-Ziels: bei 30 Spielern will der Obelisk 40 000 Bruchstein."
+		"Eine Schleuse oder ein Förderband sammelt die Steine ein. Das ist die ehrliche Antwort auf den &6Stein-Pfeiler&r des Obelisk-Ziels: bei 30 Spielern will der Obelisk 20 000 Bruchstein."
 		""
 		"Mit Mahlstein und Kieswäsche dahinter wird aus demselben Bruchstein noch Kies, Feuerstein und Eisenklumpen für deine Legierung."
 		""
@@ -424,6 +406,19 @@
 	]
 	quest.0E6A70DE20166D82.quest_subtitle: "Stein ohne Ende für den Obelisken."
 	quest.0E6A70DE20166D82.title: "&6Bruchsteingenerator"
+	quest.0F7A2EEE3F0CDC02.quest_desc: [
+		"Das Ritual ist für den Anfang. Für Runen, Terrastahl und die Mekanism-Leute brauchst du bald Dutzende Barren, und dafür gibt es den zweiten Weg: Wirf &6Infused Iron&r in ein Manabecken. Für &d3 000 Mana&r wird jedes Stück zu einem &bManastahlbarren&r."
+		""
+		"{image:botania:textures/item/manasteel_ingot.png width:32 height:32 align:center}"
+		""
+		"&6Infused Iron&r macht nur der &aNatural Altar&r von Nature's Aura, die Abkürzung an der Werkbank gibt es auf Kronwerke nicht. Ein Eisenbarren auf dem Altar zieht Aura aus der Umgebung und wird veredelt. Ein Trichter oder eine Schleuse bringt Eisen auf den Altar, holt das Infused Iron ab und wirft es ins Becken: fertig ist die Manastahl-Fabrik."
+		""
+		"&eBlöcke:&r Einen Manastahlblock gibt es nur noch aus neun Barren an der Werkbank, nicht mehr aus einem Eisenblock im Becken."
+		""
+		"Manastahl ist das Metall für alles, was jetzt kommt: Runen, Manatafel, Linsen, Werkzeuge und die Grundzutat von Terrastahl."
+	]
+	quest.0F7A2EEE3F0CDC02.quest_subtitle: "Der Weg für große Mengen."
+	quest.0F7A2EEE3F0CDC02.title: "&bManastahl aus dem Becken"
 	quest.0FB345A23360C5FA.quest_desc: [
 		"Es beginnt am &6Bauplantisch&r (Holzstufen und glatter Stein) mit &6Leeren Bauplänen&r (Papier und hellblauer Farbstoff). Mit &6Bauplan und Feder&r markierst du ein Gebäude in der Welt und speicherst es als Datei. Baupläne aus deinem eigenen Ordner &eschematics&r lädst du am Bauplantisch auf den Server hoch."
 		"{image:create:textures/item/schematic.png width:32 height:32 align:center}"
@@ -548,19 +543,6 @@
 	]
 	quest.13696C7BCABFF6AA.quest_subtitle: "Schneidet Stämme zu Brettern."
 	quest.13696C7BCABFF6AA.title: "Crude Knife"
-	quest.13845090627244ED.quest_desc: [
-		"Das &aElfenportal-Herzstück&r entsteht aus &e6 Lebeholzstämmen&r und &e3 Terrastahlklumpen&r."
-		""
-		"So baust du das Portal, von vorne gesehen, 5 Blöcke breit und 5 hoch:"
-		"&eUnten Mitte:&r das Herzstück, links und rechts davon je ein liegender Lebeholzstamm."
-		"&eOben:&r dieselbe Reihe, aber mit einem schimmernden Stamm in der Mitte."
-		"&eLinks und rechts:&r je drei stehende Stämme übereinander, der mittlere schimmernd."
-		"Innen bleibt ein 3x3-Feld Luft. Die Ecken bleiben frei."
-		""
-		"Dazu zwei Manabecken mit Naturapylonen darauf in der Nähe, und alle Becken gut gefüllt."
-	]
-	quest.13845090627244ED.quest_subtitle: "Das Tor nach Alfheim."
-	quest.13845090627244ED.title: "&aElfenportal-Herzstück"
 	quest.13D891DFD0CBEA83.quest_desc: [
 		"&6Reis&r im Topf mit einer Schüssel wird zu &6Gekochtem Reis&r. Er steckt in vielen größeren Gerichten, etwa in &6Steak und Kartoffeln&r oder im &6Honigglasierten Schinken&r."
 		""
@@ -736,7 +718,7 @@
 		""
 		"Im Fenster legst du die beiden Metalle in die zwei Eingänge und darunter einen &6Brennstoff&r wie Kohle oder Koks. Das Ergebnis erscheint rechts."
 		""
-		"&eWas er kann:&r Kupfer und Zink zu Messing, Gold und Silber zu Elektrum, Kupfer und Nickel zu Constantan, drei Kupfer und ein Zinn zu vier Bronze. Außerdem macht er Isolierglas für spätere Hochspannungsleitungen."
+		"&eWas er kann:&r Gold und Silber zu Elektrum, Kupfer und Nickel zu Constantan, drei Kupfer und ein Zinn zu vier Bronze. Außerdem macht er Isolierglas für spätere Hochspannungsleitungen. &cMessing macht er auf Kronwerke nicht&r, dazu gleich mehr."
 	]
 	quest.1D1FC33927C70AF3.quest_subtitle: "Zwei Metalle, ein Barren."
 	quest.1D1FC33927C70AF3.title: "&6&lLegierungsofen"
@@ -810,7 +792,7 @@
 	quest.1E8B8DD851CC4A55.quest_desc: [
 		"Willkommen bei &dArs Nouveau&r! Hier lernst du keine fertigen Zauber, sondern baust sie dir selbst aus &dGlyphen&r zusammen, wie Wörter in einem Satz. Ein Zauber kann eine Spitzhacke ersetzen, eine Fackel, eine Brücke oder ein Schwert."
 		""
-		"Die Energie der Mod heißt &dQuelle&r (Source). Mit ihr laufen alle Ars-Blöcke, und aus ihr entstehen die &6Quelljuwelen&r (Source Gems). Genau die braucht der Server: &e1 500 Quelljuwelen&r sind die magische Hälfte des Ziels von &6Stufe 1&r am Obelisken."
+		"Die Energie der Mod heißt &dQuelle&r (Source). Mit ihr laufen alle Ars-Blöcke, und aus ihr entstehen die &6Quelljuwelen&r (Source Gems). Genau die braucht der Server: &e800 Quelljuwelen&r und &e12 Quellschlusssteine&r sind die magische Hälfte des Ziels von &6Stufe 1&r am Obelisken."
 		""
 		"{image:ars_nouveau:textures/item/worn_notebook.png width:32 height:32 align:center}"
 		""
@@ -1002,13 +984,6 @@
 	]
 	quest.266C890332CCA08C.quest_subtitle: "Wetter nach Wunsch."
 	quest.266C890332CCA08C.title: "&aRitual: Wolkenformung"
-	quest.26AE3DF9F5BDF33D.quest_desc: [
-		"Der &6Manapylon&r entsteht aus &e2 Goldbarren&r, &e2 Manastahlbarren&r und &e1 Manadiamanten&r."
-		""
-		"Neben einem Zaubertisch wirkt er wie viele Bücherregale: Schon &e2 Pylonen&r reichen für Stufe 30. Vor allem ist er aber die Basis für den &6Naturapylon&r."
-	]
-	quest.26AE3DF9F5BDF33D.quest_subtitle: "Ein Kristall, der Energie aus der Erde zieht."
-	quest.26AE3DF9F5BDF33D.title: "&6Manapylon"
 	quest.26FB2686CB33709E.quest_desc: [
 		"Diamanten liegen ganz unten, knapp über dem Grundgestein. Du brauchst sie für die Verzauberte Spitzhacke, Obsidian, den Zaubertisch, Silent Gear und einige Zauber-Geräte."
 		""
@@ -1025,7 +1000,7 @@
 		""
 		"Verbreiter, die auf die Platte zielen, funktionieren, Manafunken sind schneller. Neun Terrastahlklumpen ergeben einen Barren, neun Barren einen Block."
 		""
-		"Terrastahl brauchst du für das Elfenportal (als Klumpen), für Terraklinge und Terrastahlrüstung, und &e100 Barren&r für den Obelisken."
+		"Terrastahl brauchst du für Terraklinge und Terrastahlrüstung, einen Barren für jeden &dRunenkern&r und &e50 Barren&r für den Obelisken. In Stufe 3 kommen als Klumpen noch Naturapylonen und das Elfenportal dazu."
 	]
 	quest.2703449D8AFB77AE.quest_subtitle: "Das stärkste Metall dieser Stufe."
 	quest.2703449D8AFB77AE.title: "&aTerrastahl"
@@ -1074,7 +1049,7 @@
 	quest.2A2980B09A6A07F8.quest_subtitle: "Deine Sachen warten, wo du gefallen bist."
 	quest.2A2980B09A6A07F8.title: "&cWenn du stirbst"
 	quest.2A2B15368150CEF9.quest_desc: [
-		"Der &aRunenaltar&r ist das Herz dieser Stufe. Rezept: &e5 Lebestein&r und ein &eManadiamant&r oder eine &eManaperle&r."
+		"Der &aRunenaltar&r ist das Herz dieser Stufe. Auf Kronwerke steckt Messing darin: oben &eLebestein&r, &6Messingbarren&r, &eLebestein&r, unten &eLebestein&r, ein &eManadiamant&r oder eine &eManaperle&r, &eLebestein&r. Also vier Lebestein, ein Messingbarren und ein Manajuwel."
 		""
 		"{image:botania:textures/block/runic_altar_top.png width:32 height:32 align:center}"
 		""
@@ -1090,13 +1065,6 @@
 	]
 	quest.2A2B15368150CEF9.quest_subtitle: "Hier entstehen die Runen."
 	quest.2A2B15368150CEF9.title: "&aRunenaltar"
-	quest.2B22ED96795A7EF9.quest_desc: [
-		"Ein &6Lebeholzstamm&r und ein &6Glowstonestaub&r ergeben formlos einen &6Schimmernden Lebeholzstamm&r. Glowstone findest du jetzt im Nether an den Decken."
-		""
-		"Das Elfenportal braucht &e3 davon&r und dazu &e8 normale Lebeholzstämme&r. Welche Variante (Stamm, Holz, entrindet) du nimmst, ist egal."
-	]
-	quest.2B22ED96795A7EF9.quest_subtitle: "Lebeholz, das leuchtet."
-	quest.2B22ED96795A7EF9.title: "&6Schimmerndes Lebeholz"
 	quest.2B451EE7CFDFF558.quest_desc: [
 		"Die &6Angelkiste&r hält deine Haken, Köder, Leinen und Schwimmer zusammen, und du kannst darin deine Rute ausrüsten. Rezept: eine Truhe, Eisenbarren, ein Eisenblock und oben zwei grüne Farbstoffe, Seetang oder Algen."
 	]
@@ -1154,7 +1122,7 @@
 		""
 		"&eRedstone:&r Redstone-Staub gibt 10 mB, ein Redstone-Block 90 mB, &6Angereichertes Redstone&r 80 mB."
 		""
-		"Die meisten Rezepte verbrauchen 10 mB pro Gegenstand, der Schaltkreis 20 mB. Solange du nur Kohle hast: nimm Kohleblöcke, dann musst du seltener nachlegen."
+		"Die meisten Rezepte verbrauchen 10 mB pro Gegenstand, der Schaltkreis 20 mB Redstone. Solange du nur Kohle hast: nimm Kohleblöcke, dann musst du seltener nachlegen."
 	]
 	quest.2CB7E833DCA668D3.quest_subtitle: "Kohlenstoff und Redstone, flüssig gedacht."
 	quest.2CB7E833DCA668D3.title: "&8Infusionsstoffe"
@@ -1166,13 +1134,13 @@
 	quest.2D68AEC5831F6D62.quest_subtitle: "Ars Elemental: ein Fokus für deine Schule."
 	quest.2D68AEC5831F6D62.title: "&6Lesser Focus of Earth"
 	quest.2DD498AA75B86A98.quest_desc: [
-		"Im Mixer ergibt ein &6Andesit&r und ein &6Eisen-&r oder &6Zinkklumpen&r eine &6Andesitlegierung&r. Das ist halb so viel Andesit wie in der Werkbank."
+		"Im Mixer ergeben ein &6Andesit&r und ein &6Eisen-&r oder &6Zinkklumpen&r &ezwei Andesitlegierungen&r. In der Werkbank kostet eine einzige Legierung zwei Andesit und zwei Klumpen, der Mixer braucht pro Legierung also nur ein Viertel davon."
 		""
 		"So baust du es: eine Kiste Andesit und eine Kiste Klumpen, je eine &6Andesitschleuse&r daran, die auf ein Förderband zum Becken legen. Der Mixer darüber, eine Schleuse an der Beckenseite, die die Legierung in eine Ausgabekiste fallen lässt."
 		""
 		"&cStockt es?&r Meistens fehlt eine Zutat: halte beide Kisten gefüllt. Oder das Becken ist mit fertiger Legierung voll, weil die Ausgabeschleuse falsch herum sitzt."
 	]
-	quest.2DD498AA75B86A98.quest_subtitle: "Doppelte Ausbeute, null Handarbeit."
+	quest.2DD498AA75B86A98.quest_subtitle: "Doppelte Legierung, halbes Material, null Handarbeit."
 	quest.2DD498AA75B86A98.title: "&6Legierung vom Band"
 	quest.2E476F6BD11012E2.quest_desc: [
 		"Du kennst jetzt alles, was der Nether für Stufe 2 hergibt. Zeit für einen Vorrat, der eine Weile hält."
@@ -1211,11 +1179,11 @@
 	quest.2FD4F0B8CBCD3214.quest_subtitle: "Feuer auf brennende Ziele."
 	quest.2FD4F0B8CBCD3214.title: "&dFackel"
 	quest.303D94AC159D99FF.quest_desc: [
-		"Bring deine Manaperlen und deinen Terrastahl zum &6Obelisken&r an der Spawn. Rechtsklick legt den Stapel in deiner Hand ab, Schleich-Rechtsklick alles, was passt. Oder stell eine Truhe daneben und füll sie per Förderband."
+		"Bring deine Manaperlen, deinen Terrastahl und deine Runenkerne zum &6Obelisken&r an der Spawn. Rechtsklick legt den Stapel in deiner Hand ab, Schleich-Rechtsklick alles, was passt. Oder stell eine Truhe daneben und füll sie per Förderband."
 		""
-		"Die Technikseite braucht Messing und Präzisionsmechanismen, die Magieseite deine Perlen und deinen Terrastahl. Erst wenn beide voll sind, öffnet &6Stufe 3&r, und zwar mit einem gemeinsamen Event im Stream."
+		"Die Technikseite braucht Messing, Präzisionsgetriebe und Messingherzen, die Magieseite &e600 Manaperlen&r, &e50 Terrastahlbarren&r und &e8 Runenkerne&r. Erst wenn beide voll sind, öffnet &6Stufe 3 (Stahlwerk)&r, und zwar mit einem gemeinsamen Event im Stream."
 		""
-		"Danach wartet in Alfheim das Elementium."
+		"&dUnd dann Alfheim:&r Mit dem Stahlwerk öffnet das &aElfenportal&r. Sein Herzstück, der Handel mit den Elfen, Elfenglas, Elfenquarz, Drachenstein und vor allem &6Elementium&r, das Magie-Ziel von Stufe 3, sind bis dahin gesperrt. Vorbereiten kannst du schon jetzt: Schimmerndes Lebeholz (Lebeholzstamm und Glowstonestaub), zwei Manapylonen, zwei Naturapylonen und viele volle Manabecken, denn das Portal verlangt beim Öffnen 200 000 Mana."
 	]
 	quest.303D94AC159D99FF.quest_subtitle: "Das Messingwerk wartet auf seine Blumen."
 	quest.303D94AC159D99FF.title: "&dMagie für den Obelisken"
@@ -1253,11 +1221,13 @@
 	quest.316366C37FD4E2B3.quest_subtitle: "Der goldene Mittelweg."
 	quest.316366C37FD4E2B3.title: "&2Witch Hazel Broom"
 	quest.3177D5A3CAF6502E.quest_desc: [
-		"Elektronenröhre, &6Messingrahmen&r und Werkbank ergeben drei &6Mechanische Handwerkseinheiten&r. Stell sie als Raster auf, eine pro Rezeptfeld, und verbinde sie mit dem Schraubenschlüssel: die Pfeile auf ihnen müssen alle zu einer Ausgabe-Einheit führen."
+		"Auf Kronwerke braucht Autocrafting mit Create den Meilenstein: ein &6Präzisionsgetriebe&r oben, ein &6Messingrahmen&r in der Mitte und eine &6Werkbank&r unten ergeben drei &6Mechanische Handwerkseinheiten&r."
 		""
-		"Leg die Zutaten hinein, von Hand oder per Schleuse, und gib dem Raster Rotation. Sind alle Felder belegt, legen sie los. Felder, die leer bleiben sollen, deckst du mit einer &6Handwerkseinheit Slot Abdeckung&r (drei Messingklumpen) ab; ein Redstone-Impuls startet ein Rezept auch unvollständig."
+		"Stell sie als Raster auf, eine pro Rezeptfeld, und verbinde sie mit dem Schraubenschlüssel: die Pfeile auf ihnen müssen alle zu einer Ausgabe-Einheit führen. Leg die Zutaten hinein, von Hand oder per Schleuse, und gib dem Raster Rotation. Sind alle Felder belegt, legen sie los."
 		""
-		"Manche Rezepte gibt es nur hier, bis 9 x 9 Felder groß: &6Mahlwerkräder&r, die Kartoffelkanone, der Mechanical Spawner und die Maschinen aus Crafts & Additions. Handwerkseinheiten kosten 2 SU pro RPM."
+		"Felder, die leer bleiben sollen, deckst du mit einer &6Handwerkseinheit Slot Abdeckung&r (drei Messingklumpen) ab; ein Redstone-Impuls startet ein Rezept auch unvollständig."
+		""
+		"Manche Rezepte gibt es nur hier, bis 9 x 9 Felder groß: &6Mahlwerkräder&r, die Kartoffelkanone, der Mechanical Spawner, der Generator von Power Grid und die Maschinen aus Crafts & Additions. Handwerkseinheiten kosten 2 SU pro RPM."
 	]
 	quest.3177D5A3CAF6502E.quest_subtitle: "Rezepte, größer als die Werkbank."
 	quest.3177D5A3CAF6502E.title: "&6Mechanische Handwerkseinheit"
@@ -1409,9 +1379,9 @@
 		""
 		"Leg die Zutaten ins Becken, von Hand, per Schacht oder per Schleuse, und er rührt los. Das Ergebnis bleibt im Becken, bis eine &6Andesitschleuse&r an der Beckenseite es herausholt."
 		""
-		"Ohne Hitze kann der Mixer in Stufe 1 schon eine Menge: &6Andesitlegierung&r aus einem Andesit und einem Klumpen, &6Teig&r aus Mehl und Wasser, &6Zellstoff&r für Karton, Schlamm, und viele formlose Handwerksrezepte ganz automatisch."
+		"Ohne Hitze kann der Mixer in Stufe 1 schon eine Menge: &ezwei&r &6Andesitlegierungen&r aus einem Andesit und einem Klumpen, &6Teig&r aus Mehl und Wasser, &6Zellstoff&r für Karton, Schlamm, und viele formlose Handwerksrezepte ganz automatisch."
 		""
-		"Rezepte mit dem Hinweis &cErhitzt&r oder &cÜberhitzt&r in JEI brauchen einen &6Lohenbrenner&r unter dem Becken. Der kommt mit Stufe 2, und auf diesem Server braucht sein Gehäuse zwei &dQuelljuwelen&r aus Ars Nouveau. Messing wird genau so gemischt."
+		"Rezepte mit dem Hinweis &cErhitzt&r oder &cÜberhitzt&r in JEI brauchen einen &6Lohenbrenner&r unter dem Becken. Der kommt mit Stufe 2, und auf diesem Server braucht sein Gehäuse zwei &dQuelljuwelen&r aus Ars Nouveau. Messing wird genau so gemischt: zwei Kupfer, ein Zink und ein &6Lohenstaub&r im erhitzten Becken."
 	]
 	quest.35E7FB9BFAB4A8C0.quest_subtitle: "Rühren statt kneten."
 	quest.35E7FB9BFAB4A8C0.title: "&6Mechanischer Mixer"
@@ -1422,6 +1392,15 @@
 	]
 	quest.3601992F7BE5B929.quest_subtitle: "Ordnung im Vorratsraum."
 	quest.3601992F7BE5B929.title: "&6Gemüsekisten"
+	quest.360DEF000E273CDC.quest_desc: [
+		"Ein &6Spannungsmesser&r entsteht aus einem Kompass, einer Kupferspule und einem Leitfähigen Gehäuse. An der Werkbank wandelst du ihn in einen &6Strommesser&r um, und beide zusammen ergeben ein &6Wattmeter&r."
+		""
+		"Der Spannungsmesser zeigt die Spannung zwischen zwei Klemmen, der Strommesser den Strom durch einen Draht, und das Wattmeter die Leistung: Spannung mal Strom. So siehst du, ob dein Generator unter Last einbricht, ob ein Draht zu viel tragen muss oder ob ein Motor mehr zieht, als du dachtest."
+		""
+		"Später kommt das &6Multimeter&r dazu, das beides in der Hand misst. Es braucht ein &6Elektrisches Gerät&r aus einer sequenziellen Montage."
+	]
+	quest.360DEF000E273CDC.quest_subtitle: "Wer misst, versteht sein Netz."
+	quest.360DEF000E273CDC.title: "&6Spannungs- und Strommesser"
 	quest.3709C8192189C4E0.quest_desc: [
 		"&6Impure White Chalk&r mit &6Research Fragment Dust&r, &6Smaragdstaub&r und einem &6Schleimball&r, danach in Spiritfire: &aLime Chalk&r."
 		""
@@ -1435,12 +1414,14 @@
 	quest.37A87E4E89EC365D.quest_subtitle: "Werkzeug aus Einzelteilen."
 	quest.37A87E4E89EC365D.title: "&6Silent Gear"
 	quest.3888962F267720FF.quest_desc: [
-		"Messing ist halb Kupfer, halb Zink, und das Obelisk-Ziel will tausende Barren. Zeit, Zink ernsthaft abzubauen: &6Zinkerz&r steckt in der Oberwelt im Stein, &6Tiefenschiefer-Zinkerz&r weiter unten. Die Mining Dimension ist dafür ideal, dort durchlöcherst du nicht die Landschaft rund um die Basen."
+		"Jeder Messingbarren kostet auf Kronwerke &ezwei Kupferbarren und einen Zinkbarren&r, und das Obelisk-Ziel will zweitausend Barren. Zeit, ernsthaft abzubauen: &6Zinkerz&r steckt in der Oberwelt im Stein, &6Tiefenschiefer-Zinkerz&r weiter unten, Kupfer findest du fast überall. Die Mining Dimension ist dafür ideal, dort durchlöcherst du nicht die Landschaft rund um die Basen."
 		"{image:create:textures/item/zinc_ingot.png width:32 height:32 align:center}"
-		"Sobald du &6Mahlwerkräder&r hast (Abschnitt Präzision), zerkleinerst du &6Rohzink&r mit Bonus-Chance zu &6Zerkleinertem Rohzink&r. Gewaschen gibt das Zinkklumpen, geschmolzen Barren. So holst du aus jedem Erz deutlich mehr heraus als im Ofen."
+		"Sobald du &6Mahlwerkräder&r hast (Abschnitt Präzision), zerkleinerst du &6Rohzink&r und &6Rohkupfer&r mit Bonus-Chance zu Zerkleinertem Erz. Gewaschen gibt das Klumpen, geschmolzen Barren. So holst du aus jedem Erz deutlich mehr heraus als im Ofen."
+		""
+		"&6Tipp:&r Rechne mit doppelt so viel Kupfer wie Zink. Wer nur Zink hortet, steht am Mixer schnell mit leerer Kupferkiste da."
 	]
-	quest.3888962F267720FF.quest_subtitle: "Die eine Hälfte jedes Messingbarrens."
-	quest.3888962F267720FF.title: "&6Zink in Mengen"
+	quest.3888962F267720FF.quest_subtitle: "Zwei Teile Kupfer, ein Teil Zink."
+	quest.3888962F267720FF.title: "&6Kupfer und Zink in Mengen"
 	quest.396842F2E1B785BA.quest_desc: [
 		"Mit Stufe 2 (Messingwerk) öffnet der Nether, und damit bekommt Silent Gear seine eigenen Metalle:"
 		""
@@ -1540,7 +1521,7 @@
 	quest.3D52E98FA8A66E0E.quest_desc: [
 		"Die zweite Stufe beginnt mit einem Event: Das &cNetherportal am Spawn&r wird live auf Stream entzündet."
 		""
-		"Dann kommen Messing und der Blaze-Brenner für Create, Züge und Kontraptionen, die Grundlagen von Mekanism und Immersive Engineering, der Runenaltar und Terrastahl in Botania, die Lehrlings-Glyphen in Ars Nouveau, die ersten Geister in Occultism und Hexerei."
+		"Dann kommen Messing und der Lohenbrenner für Create, Züge und Kontraptionen, die Grundlagen von Mekanism und Immersive Engineering, der Runenaltar und Terrastahl in Botania, die Lehrlings-Glyphen in Ars Nouveau, die ersten Geister in Occultism und Hexerei."
 	]
 	quest.3D52E98FA8A66E0E.quest_subtitle: "Messing, der Nether, die ersten Maschinen."
 	quest.3D52E98FA8A66E0E.title: "&6Stufe 2: Messingwerk"
@@ -1658,15 +1639,6 @@
 	]
 	quest.419885EF47C0DFA7.quest_subtitle: "Holz, Axt, Schneidebrett."
 	quest.419885EF47C0DFA7.title: "&6Baumrinde"
-	quest.41D236F7BC5E7589.quest_desc: [
-		"Create: New Age macht aus Rotation Strom. Das Herz ist die &6Generator Coil&r (acht Kupferbarren um einen Andesitlegierungsblock). Dreht sie sich und ist von &6Magneten&r umgeben, erzeugt sie Energie. &6Carbon Brushes&r (Legierung, Kohle, Welle) am Ende der Spulen nehmen den Strom ab."
-		""
-		"Den Anfang macht der &6Redstone Magnet&r (Eisenklumpen um einen Redstoneblock), stärkere Magnete folgen mit überladenem Metall. Je stärker die Magnete rundherum, desto mehr der eingesetzten SU wird zu Strom, desto mehr SU zieht die Spule aber auch."
-		""
-		"Leitungen legst du mit &6Copper Wire&r (Kupferblech in der Säge) zwischen &6Electrical Connectors&r (Legierung und Kupferklumpen). Ein Connector im Modus &ePull&r (Schraubenschlüssel) holt Energie aus Blöcken anderer Mods."
-	]
-	quest.41D236F7BC5E7589.quest_subtitle: "Create: New Age: Spulen, Magnete, Bürsten."
-	quest.41D236F7BC5E7589.title: "&6Strom aus Rotation"
 	quest.42599A8537E3F5A2.quest_desc: [
 		"Die &bManatafel&r craftest du aus &e8 Lebestein&r um einen &eManadiamanten&r oder eine &eManaperle&r. Sie speichert bis zu &d500 000 Mana&r."
 		""
@@ -1677,13 +1649,17 @@
 	quest.42599A8537E3F5A2.quest_subtitle: "Ein halbes Manabecken in der Tasche."
 	quest.42599A8537E3F5A2.title: "&bManatafel"
 	quest.42A695A19BD76174.quest_desc: [
-		"Tausch den Kohlenstoff gegen &cRedstone&r und leg einen &6Osmiumbarren&r in die Mitte. Für 20 mB Redstone bekommst du einen &6Einfachen Steuerschaltkreis&r."
+		"Tausch den Kohlenstoff gegen &cRedstone&r und leg eine &6Elektronenröhre&r in die Mitte der Infusionsanlage. Für &e20 mB Redstone&r bekommst du einen &6Einfachen Steuerschaltkreis&r."
+		""
+		"Das ist auf Kronwerke der einzige Weg: das alte Rezept mit einem Osmiumbarren und alle Abkürzungen anderer Mods gibt es nicht mehr."
 		""
 		"Jede Maschine nach der Infusionsanlage braucht mindestens einen Schaltkreis, dazu Kabel, Transporter, Fabriken und der Stufen-Installateur. Ein Vorrat von einem Dutzend spart später viele Wechsel des Infusionsstoffs."
 		""
 		"{image:mekanism:textures/item/basic_control_circuit.png width:32 height:32 align:center}"
+		""
+		"&cAusblick:&r Den &6Fortgeschrittenen Steuerschaltkreis&r gibt es erst mit &6Stufe 3&r. Er entsteht an der Werkbank aus einem einfachen Schaltkreis, zwei Infundierten Legierungen und einem &6Gedruckten Silizium&r aus dem Inscriber von Applied Energistics 2, das ebenfalls erst in Stufe 3 öffnet."
 	]
-	quest.42A695A19BD76174.quest_subtitle: "Osmium mit Redstone im Kopf."
+	quest.42A695A19BD76174.quest_subtitle: "Eine Röhre, getränkt in Redstone."
 	quest.42A695A19BD76174.title: "&aEinfacher Steuerschaltkreis"
 	quest.42E9875B96B119C7.quest_desc: [
 		"{image:waystones:textures/item/warp_scroll.png width:32 height:32 align:center}"
@@ -1808,6 +1784,8 @@
 		""
 		"Was oben zwischen die Räder fällt, wird zermahlen. Aus &6Roherz&r wird &6Zerkleinertes Erz&r mit einer Chance auf ein zweites und einen &6Erfahrungsklumpen&r. Netherrack wird zu Aschenmehl, Obsidian zu Pulverisiertem Obsidian für die Züge."
 		""
+		"&eGut zu wissen:&r Auch der &6Zerkleinerer&r von Mekanism braucht auf Kronwerke zwei Mahlwerkräder. Die Mekanism-Spieler werden bei dir anklopfen."
+		""
 		"&cVorsicht:&r Mahlwerkräder verletzen alles, was hineinfällt, auch dich. Jedes Rad kostet 8 SU pro RPM, zwei Räder bei 64 RPM also 1 024 SU. Ein Fall für die Dampfmaschine."
 	]
 	quest.47625193D4DF5F70.quest_subtitle: "Mehr aus jedem Erz."
@@ -1862,14 +1840,14 @@
 	quest.4906947CFD9F0C43.quest_desc: [
 		"Auf Kronwerke laufen mehrere Erweiterungen für Create. Die meisten öffnen mit dieser Stufe, weil sie auf Messing, Elektronenröhren oder Lohenbrennern aufbauen:"
 		"&6Create: Enchantment Industry&r: Erfahrung als Flüssigkeit, Verzaubern und Schmieden mit Lohen, Bücher drucken."
-		"&6Create: New Age&r: Strom aus Rotation mit Spulen und Magneten, Motoren und Aufladen."
+		"&6Create: Power Grid&r: ein richtiges Stromnetz mit Spannung, Strom und Widerstand, Generatoren, Motoren, Drähten und Messgeräten."
 		"&6Create Crafts & Additions&r: Walzwerk, Alternator, Elektromotor, Kabel, Akkus, Teslaspule und flüssige Brennstoffe."
 		"&6Create Connected&r: Kleinteile wie Bremse, Kurbelrad, Lüfter-Katalysatoren, Kinetische Batterie und Copycat-Blöcke."
 		"&6Create Mechanical Spawner&r: Mobs aus einer Flüssigkeit."
 		""
 		"Außerdem gibt es &6Create Jetpack&r (braucht Elytren, also frühestens Stufe 4) und &6Copycats+&r für Deko-Blöcke aus Zink, die das Aussehen jedes anderen Blocks annehmen."
 		""
-		"&eGut zu wissen:&r Strom aus Create-Addons in &dFE&r versteht auch Mekanism, das in dieser Stufe öffnet. Eine Dampfmaschine mit Alternator kann deine ersten Mekanism-Maschinen versorgen."
+		"&eGut zu wissen:&r Crafts & Additions macht &dFE&r, die Energie, die auch Mekanism versteht. Power Grid rechnet dagegen mit Volt und Ampere, kann über einen &6Adapter&r aber ebenfalls FE-Maschinen versorgen. Eine Dampfmaschine mit Alternator oder Generator kann deine ersten Mekanism-Maschinen antreiben."
 	]
 	quest.4906947CFD9F0C43.quest_subtitle: "Was es zu Create sonst noch gibt."
 	quest.4906947CFD9F0C43.title: "&dDie Create-Addons"
@@ -1923,7 +1901,7 @@
 		""
 		"{image:botania:textures/item/rune_of_fire.png width:32 height:32 align:center}"
 		""
-		"Den Netherziegel brennst du aus Netherrack, das jetzt mit dem Nether erreichbar ist. Feuer brauchst du für die Terraplatte, die Thermalilie, die Gourmaryllis und die Exoflamme."
+		"Den Netherziegel brennst du aus Netherrack, das jetzt mit dem Nether erreichbar ist. Feuer brauchst du für die Terraplatte, die Thermalilie, die Gourmaryllis, die Exoflamme und den Runenkern. Und die Ingenieure brauchen je eine für ihr &6Messingherz&r, den Meilenstein von Create: ein guter Tauschartikel gegen Messinggehäuse."
 	]
 	quest.4B1BF1525F54306D.quest_subtitle: "Ein Hauch Nether."
 	quest.4B1BF1525F54306D.title: "&cRune des Feuers"
@@ -1979,6 +1957,20 @@
 	]
 	quest.4F3895B47878B595.quest_subtitle: "Tief unten, feuerfest, jede Mühe wert."
 	quest.4F3895B47878B595.title: "&4&lAntiker Schrott"
+	quest.4F58611AAEBAD0CD.quest_desc: [
+		"Ein Eisenbarren im Manabecken bleibt auf Kronwerke einfach liegen. Den ersten &bManastahl&r machst du mit dem &aRitual des Waldes&r (Ritual of the Forest) aus &aNature's Aura&r."
+		""
+		"&eDu brauchst:&r &6Gold Powder&r (ein Gold Leaf ergibt zwei) für das Muster auf dem Boden, &6Wooden Stands&r (ein Gold Leaf auf einem Stamm) für die Zutaten und einen &6Eichensetzling&r."
+		"&eDie Zutaten:&r &e4&r &6Infused Iron&r, &e2&r &6Lebeholzzweige&r, &e1&r &bManadiamant&r und &e1&r &6Gold Leaf&r, je eins auf einen Stand."
+		""
+		"&eSo geht es:&r Leg das Gold Powder in dem Muster aus, das dir das Buch von Nature's Aura im Eintrag zum Ritual als Vorschau zeigt, stell die Stände darum und leg die acht Zutaten darauf. Dann pflanzt du den &6Eichensetzling&r in die Mitte und lässt ihn wachsen, am schnellsten mit Knochenmehl. Sein Wachstum startet das Ritual: der Baum verschlingt die Zutaten, und nach etwa 15 Sekunden liegen &e4 Manastahlbarren&r in der Mitte."
+		""
+		"&cHäufige Fehler:&r ein anderer Setzling als Eiche, eine fehlende Zutat oder ein Muster mit Lücken. Dann wächst nur ein ganz normaler Baum."
+		""
+		"&6Tipp:&r Das &6Infused Iron&r macht der &aNatural Altar&r aus Eisenbarren. Viele Bäume und Blumen rund um den Altar halten die Aura oben."
+	]
+	quest.4F58611AAEBAD0CD.quest_subtitle: "Der erste Manastahl wächst an einem Baum."
+	quest.4F58611AAEBAD0CD.title: "&aRitual des Waldes"
 	quest.4F7DAA47C968585F.quest_desc: [
 		"Nach Fahrplan fährt ein Zug nur, wenn ein &eSchaffner&r an der Zugsteuerung sitzt. Das kann jeder Mob sein, der auf einem Sitz direkt vor der Steuerung sitzt, ein Dorfbewohner zum Beispiel, oder ein &6Lohenbrenner&r an derselben Stelle. Einen Mob an der Leine setzt du bequem auf den Sitz, indem du den Sitz anklickst. Die Lohe ist der beliebteste Schaffner: sie braucht nichts und läuft nicht weg."
 		""
@@ -1987,7 +1979,7 @@
 	quest.4F7DAA47C968585F.quest_subtitle: "Jemand muss ja fahren."
 	quest.4F7DAA47C968585F.title: "&6Der Schaffner"
 	quest.4FF6E9B7E297083E.quest_desc: [
-		"Stein neben dem Gänseblümchen wird zu &6Lebestein&r. Du brauchst ihn in rauen Mengen: &e5&r für jedes &6Manabecken&r, &e5&r für den &6Runenaltar&r in Stufe 2, &e8&r für jede &6Manatafel&r und noch mehr unter der Terrestrischen Agglomerationsplatte."
+		"Stein neben dem Gänseblümchen wird zu &6Lebestein&r. Du brauchst ihn in rauen Mengen: &e5&r für jedes &6Manabecken&r, &e4&r für den &6Runenaltar&r in Stufe 2 (dazu ein Messingbarren), &e8&r für jede &6Manatafel&r und noch mehr unter der Terrestrischen Agglomerationsplatte."
 		""
 		"&eTipp:&r Stell die acht Steine um die Blume, geh eine Minute etwas anderes erledigen und tausch dann alle acht auf einmal aus. Mehrere Gänseblümchen nebeneinander, jedes mit eigenem Ring, vervielfachen die Ausbeute."
 	]
@@ -2005,7 +1997,9 @@
 	quest.514A73700EB8ED76.quest_desc: [
 		"Zeit, alles zusammenzusetzen. Andesit, abgebaut oder aus Feuerstein verdichtet, und Klumpen aus der Kieswäsche oder aus Zink laufen auf Förderbändern zu einem Mixer, der daraus &6Andesitlegierung&r macht. Wasserräder oder eine Windmühle treiben alles an, eine Schleuse lädt das Ergebnis ab."
 		""
-		"Das Obelisk-Ziel von Stufe 1 will im Technik-Pfeiler &63 000 Andesitlegierungen&r, gerechnet für 30 aktive Spieler; bei mehr oder weniger Spielern passt sich die Zahl beim Öffnen der Stufe an. Von Hand schafft das niemand, mit ein paar laufenden Linien schon."
+		"Das Obelisk-Ziel von Stufe 1 will im Technik-Pfeiler &61 500 Andesitlegierungen&r, gerechnet für 30 aktive Spieler; bei mehr oder weniger Spielern passt sich die Zahl beim Öffnen der Stufe an. Von Hand ist das zäh, mit einem Mixer, der pro Andesit zwei Legierungen ausspuckt, und ein paar laufenden Linien kein Problem."
+		""
+		"Dazu will derselbe Pfeiler &e12 Steinwerk-Getriebe&r, den Meilenstein der Stufe: Andesitgehäuse, ein Großes Zahnrad, Presse, Mahlstein, Wasserrad und ein Infused Iron vom Natural Altar. Jedes zählt auf der Leiste so viel wie 125 Legierungen. Das Rezept steht im Kapitel &6Hier geht's los&r."
 		""
 		"&eSo zahlst du ein:&r Halte die Legierung in der Hand und rechtsklicke den Obelisken am Spawn. Schleichen und Rechtsklick gibt alles Passende aus deinem Inventar auf einmal ab. Noch bequemer ist ein &eEinspeiser&r: eine Kiste oder ein Fass, das du selbst direkt neben den Obelisken stellst. Was deine Anlage dort hineinschiebt, zieht der Obelisk alle zwei Sekunden ein und schreibt es dir gut. &e/kw deposit&r geht zur Not auch."
 		""
@@ -2018,11 +2012,13 @@
 		""
 		"{image:create:textures/item/andesite_alloy.png width:32 height:32 align:center}"
 		""
-		"3 000 Stück von Hand wären mühsam. Wer eine Andesitquelle und eine Nuggetquelle aufbaut und den &6Mechanischen Mixer&r ranlässt, schafft ein paar Hundert in der Stunde und schickt sie per Zubringer direkt zum Obelisken."
+		"1 500 Stück von Hand wären mühsam: die Werkbank gibt pro Rezept nur eine Legierung. Der &6Mechanische Mixer&r macht aus einem Andesit und einem Nugget gleich &ezwei&r, braucht also nur ein Viertel des Materials. Wer eine Andesitquelle und eine Nuggetquelle aufbaut und den Mixer ranlässt, schafft ein paar Hundert in der Stunde und schickt sie per Zubringer direkt zum Obelisken."
+		""
+		"Dazu kommen &e12 Steinwerk-Getriebe&r, der Meilenstein dieser Säule. Mehr dazu in der Quest daneben."
 		""
 		"Wie das geht, zeigt dir das Kapitel &6Create&r."
 	]
-	quest.5201E5BDB258C810.quest_subtitle: "3 000 Andesitlegierung."
+	quest.5201E5BDB258C810.quest_subtitle: "1 500 Andesitlegierung und 12 Steinwerk-Getriebe."
 	quest.5201E5BDB258C810.title: "&6Säule: Technik"
 	quest.527E863E0CB6197C.quest_desc: [
 		"Der &6Kompass der Natur&r findet jedes Biom für dich. Das Rezept: ein normaler &6Kompass&r in der Mitte, vier &6Holzstämme&r an den Seiten und vier &6Setzlinge&r in den Ecken."
@@ -2073,7 +2069,9 @@
 	quest.5388EBBAA83F340C.quest_desc: [
 		"Wenn das Obelisk-Ziel für Stufe 3 gefüllt ist, öffnet Mekanism seine nächste Ebene: die &6Erzverdreifachung&r mit Sauerstoff und der Reinigungskammer, die Elite-Stufe für Kabel und Fabriken, den &6Digitalen Miner&r, der ganze Gebiete abbaut, und &6Teleporter&r."
 		""
-		"Das Ziel verlangt unter anderem viele &6Stahlbarren&r. Jede Stahlstraße, die jetzt läuft, bringt den Server dorthin. Stell eine Kiste neben den Obelisken und verbinde sie mit deiner Straße: Was hineinfällt, zählt für dich."
+		"Dazu kommt der &6Fortgeschrittene Steuerschaltkreis&r. Er ist auf Kronwerke ein Ziel für sich: ein einfacher Schaltkreis, zwei Infundierte Legierungen und ein &6Gedrucktes Silizium&r aus dem Inscriber von Applied Energistics 2. AE2 öffnet erst mit Stufe 3, vorher kann niemand diese Schaltkreise bauen."
+		""
+		"Das Ziel von Stufe 3 verlangt viele &6Stahlbarren&r und fortgeschrittene Schaltkreise. Jede Stahlstraße, die jetzt läuft, bringt den Server dorthin. Stell eine Kiste neben den Obelisken und verbinde sie mit deiner Straße: Was hineinfällt, zählt für dich."
 	]
 	quest.5388EBBAA83F340C.quest_subtitle: "Was hinter dem Stahlziel wartet."
 	quest.5388EBBAA83F340C.title: "&dAusblick auf Stufe 3"
@@ -2156,11 +2154,13 @@
 	quest.570C72A66EDB786D.quest_subtitle: "Reinheit durch Hitze."
 	quest.570C72A66EDB786D.title: "&8&lKoksofen"
 	quest.57350EBAE878C500.quest_desc: [
-		"&6Netherrack&r zwischen Mahlwerkrädern ergibt &6Aschenmehl&r. Eine Presse über einem Becken verdichtet Aschenmehl, Zucker und ein Ei zur &6Lohenkuchenbasis&r, und ein Ausguss füllt 250 mB &bLava&r hinein: fertig ist der &6Lohenkuchen&r."
+		"&6Netherrack&r im Mahlstein oder zwischen Mahlwerkrädern ergibt &6Aschenmehl&r. Eine Presse über einem Becken verdichtet Aschenmehl, Zucker und ein Ei zur &6Lohenkuchenbasis&r, und ein Ausguss füllt 250 mB &bLava&r hinein: fertig ist der &6Lohenkuchen&r."
 		"{image:create:textures/item/blaze_cake.png width:32 height:32 align:center}"
-		"Gib ihn dem Lohenbrenner, und er ist eine Weile &cüberhitzt&r. Das brauchen einige Rezepte in JEI, zum Beispiel Lava aus Bruchstein im Mixer. Ein Mechanischer Arm kann Kuchen automatisch nachlegen."
+		"Gib ihn dem Lohenbrenner, und er ist eine Weile &cüberhitzt&r. Das ist der Schlüssel zur Messing-Massenproduktion: Im überhitzten Becken ergeben &6zwei Kupfer und ein Zink&r gleich &6zwei Messingbarren&r, ganz ohne Lohenstaub. Doppelte Ausbeute, und die Lohenruten sparst du dir auch."
+		""
+		"Ein Kuchen hält nicht ewig. Ein Mechanischer Arm oder eine Schleuse legt automatisch nach, sobald der Brenner abkühlt. Eine kleine Kuchenlinie (Mahlstein, Presse, Ausguss mit Lava) neben jedem Messing-Mixer macht ihn zum Dauerläufer."
 	]
-	quest.57350EBAE878C500.quest_subtitle: "Superheiß, für kurze Zeit."
+	quest.57350EBAE878C500.quest_subtitle: "Überhitzt heißt: doppeltes Messing."
 	quest.57350EBAE878C500.title: "&6Lohenkuchen"
 	quest.57A177EC4C84D738.quest_desc: [
 		"&aErzeugende Blumen&r machen aus etwas, das du ihnen gibst, &dMana&r: aus Brennstoff, Wasser, später aus Lava, Blättern, Essen oder Erfahrung."
@@ -2273,7 +2273,7 @@
 		""
 		"Rezept: eine &6Enderperle&r oben, &6drei Obsidian&r um die &6Upgrade-Basis&r herum und &6zwei Redstone&r unten in den Ecken."
 		""
-		"&cAchtung:&r Bruchstein gehört nicht in den Filter! Der Obelisk braucht für das Ziel von Stufe 1 &e40 000 Bruchstein&r vom ganzen Server. Gib ihn lieber mit &e/kw deposit&r ab, jeder Block zählt."
+		"&cAchtung:&r Bruchstein gehört nicht in den Filter! Der Obelisk braucht für das Ziel von Stufe 1 &e20 000 Bruchstein&r vom ganzen Server (gerechnet für 30 Spieler). Gib ihn lieber mit &e/kw deposit&r ab, jeder Block zählt."
 	]
 	quest.5CED9FD808309030.quest_subtitle: "Löscht, was du nicht haben willst."
 	quest.5CED9FD808309030.title: "Leere-Upgrade"
@@ -2317,6 +2317,15 @@
 	]
 	quest.5ED69134FFF1E0FB.quest_subtitle: "Staub, der nach Magie riecht."
 	quest.5ED69134FFF1E0FB.title: "&6Manapuder"
+	quest.600566FCFCCB3B7D.quest_desc: [
+		"Zwei Grundbauteile brauchst du für fast alles in Power Grid. Das &6Leitfähige Gehäuse&r entsteht wie ein Messingrahmen: wende einen &6Zinkbarren&r auf ein &6Andesitgehäuse&r an, per Rechtsklick oder mit einem Einsatzgerät."
+		""
+		"Die &6Kupferspule&r wickelst du an der Werkbank aus vier Kupferdraht, zwei &6Karton&r und einem Stock. Spulen stecken in Generatoren, Motoren, Elektromagneten und Messgeräten, und du brauchst viele davon."
+		"{image:powergrid:textures/item/copper_coil.png width:32 height:32 align:center}"
+		"Für andere Mods gibt es den &6Adapter&r (ein Zinkblech, zwei Kupferbleche und eine Andesitlegierung). Er gibt Geräten Klemmen, die selbst keine haben, und kann sogar FE-Maschinen wie die von Mekanism mit Strom aus deinem Netz versorgen. Das &6Zinkblech&r presst die Mechanische Presse aus einem Zinkbarren."
+	]
+	quest.600566FCFCCB3B7D.quest_subtitle: "Die Bausteine jeder Maschine."
+	quest.600566FCFCCB3B7D.title: "&6Leitfähiges Gehäuse und Kupferspule"
 	quest.6040879D670270F0.quest_desc: [
 		"&dSprung&r (Leap) braucht eine &fLuftessenz&r und drei &6Wilden-Flügel&r. Mit &eSelbst, Sprung&r schleudert es dich in Blickrichtung nach vorne, mit Verstärken noch weiter."
 		""
@@ -2334,7 +2343,7 @@
 	quest.606D7598F3CB0BAC.quest_desc: [
 		"Wie beim Andesitgehäuse: rechtsklicke einen gesetzten, entrindeten Stamm mit einem &6Kupferbarren&r. Der &6Kupferrahmen&r steckt in Ausguss, Abfluss, Schlauchrolle und portabler Flüssigkeitsschnittstelle."
 		""
-		"Kupfer ist in dieser Stufe überhaupt wichtig: Rohre, Tanks und Tauchausrüstung schlucken es stapelweise, und in Stufe 2 wird es zur Hälfte jedes Messingbarrens."
+		"Kupfer ist in dieser Stufe überhaupt wichtig: Rohre, Tanks und Tauchausrüstung schlucken es stapelweise, und in Stufe 2 steckt es doppelt in jedem Messingbarren: zwei Kupfer auf ein Zink."
 	]
 	quest.606D7598F3CB0BAC.quest_subtitle: "Das Gehäuse für alles Flüssige."
 	quest.606D7598F3CB0BAC.title: "&6Kupferrahmen"
@@ -2381,11 +2390,12 @@
 		"Ein &6Diamant&r im Becken wird für &d10 000 Mana&r zum &bManadiamanten&r. Neun davon ergeben einen Manadiamantblock, den du auch direkt aus einem Diamantblock infundieren kannst (90 000 Mana)."
 		""
 		"Wofür du ihn brauchst:"
-		"&e1.&r Den &6Runenaltar&r in Stufe 2 (oder stattdessen eine Manaperle)."
-		"&e2.&r Den &6Manapylon&r und damit das Elfenportal."
-		"&e3.&r Jeden einzelnen &6Terrastahlbarren&r: einer pro Barren."
+		"&e1.&r Den &6Quellschlussstein&r, den Magie-Meilenstein von Stufe 1: zwei Manadiamanten pro Stein."
+		"&e2.&r Das &aRitual des Waldes&r, das in Stufe 2 den ersten &6Manastahl&r macht: einer pro Ritual."
+		"&e3.&r Den &6Runenaltar&r in Stufe 2 (oder stattdessen eine Manaperle) und später den &6Manapylon&r."
+		"&e4.&r Jeden einzelnen &6Terrastahlbarren&r: einer pro Barren."
 		""
-		"&cDenk voraus:&r Das Stufe-2-Ziel am Obelisken will &e100 Terrastahlbarren&r. Das sind 100 Manadiamanten, also 100 Diamanten. Jeder Diamant, den du jetzt nicht für Werkzeug verbrauchst, hilft später dem ganzen Server."
+		"&cDenk voraus:&r Das Stufe-2-Ziel am Obelisken will &e50 Terrastahlbarren&r und &e8 Runenkerne&r mit noch einmal je einem Barren darin. Das sind rund 60 Manadiamanten, also 60 Diamanten, nur für den Obelisken. Jeder Diamant, den du jetzt nicht für Werkzeug verbrauchst, hilft später dem ganzen Server."
 	]
 	quest.6228D87AF0D862F2.quest_subtitle: "Ein Diamant voller Mana."
 	quest.6228D87AF0D862F2.title: "&bManadiamant"
@@ -2419,6 +2429,24 @@
 	]
 	quest.637DDD3E3F186391.quest_subtitle: "Mehr Vorrat, bessere Reparatur."
 	quest.637DDD3E3F186391.title: "Robustes Reparaturkit"
+	quest.63969B96CAA509C8.quest_desc: [
+		"Neben Stein, Legierung und Juwelen in großen Mengen will jedes Stufenziel ein paar &6Meilensteine&r: besondere Gegenstände, die es nur für den Obelisken gibt und in denen Technik und Magie zusammenkommen. In Stufe 1 ist das für die Technik-Säule das &6Steinwerk-Getriebe&r."
+		""
+		"{image:kronwerke:textures/item/stone_gearbox.png width:32 height:32 align:center}"
+		""
+		"&eRezept an der Werkbank:&r"
+		"Oben: &6Andesitgehäuse&r, &6Großes Zahnrad&r, &6Andesitgehäuse&r."
+		"Mitte: &6Mechanische Presse&r, &6Infused Iron&r, &6Mahlstein&r."
+		"Unten: &6Andesitgehäuse&r, &6Wasserrad&r, &6Andesitgehäuse&r."
+		""
+		"Alles davon kommt aus dem Kapitel &6Create&r, bis auf das &6Infused Iron&r: Das entsteht am &aNatural Altar&r von Nature's Aura, wenn du einen Eisenbarren auf den Altar legst und genug Aura in der Umgebung ist. Wer keinen Altar hat, fragt einen Magier."
+		""
+		"&eWie viele:&r Der Obelisk will &e12 Steinwerk-Getriebe&r. Diese Zahl ist fest, sie wächst nicht mit der Spielerzahl. Dafür zählt ein einziges Getriebe auf der Fortschrittsleiste so viel wie &e125 Andesitlegierungen&r, die zwölf zusammen tragen etwa die Hälfte der Technik-Säule."
+		""
+		"&cWichtig:&r Meilensteine nimmt der Obelisk nur an, solange ihr Stufenziel aktiv ist. Das Ziel von Stufe 1 ist es vom ersten Tag an. In Stufe 2 folgen &6Messingherz&r und &6Runenkern&r, von denen der Obelisk dann je &e8&r will."
+	]
+	quest.63969B96CAA509C8.quest_subtitle: "Der Meilenstein der Technik-Säule."
+	quest.63969B96CAA509C8.title: "&6Steinwerk-Getriebe"
 	quest.63A257F18B8FB377.quest_desc: [
 		"Zutaten: ein &6Stable Otherworld Sapling&r, dazu Eichen-, Birken- und Fichtensetzling und eine &6Axt&r. Mit dem Holzfäller erscheint sein Book of Calling."
 		""
@@ -2674,9 +2702,11 @@
 	quest.6E3D25709EF50BAE.quest_subtitle: "Sechs Bretter pro Stamm."
 	quest.6E3D25709EF50BAE.title: "&ePräzisionssägewerk"
 	quest.6E4713E15FE7F816.quest_desc: [
-		"Vier &6Stahlbarren&r in die Ecken, vier &6Glas&r an die Seiten und ein &6Osmiumbarren&r in die Mitte ergeben ein &6Stahlgehäuse&r."
+		"Vier &6Stahlbarren&r in die Ecken, vier &6Andesitlegierungen&r aus Create an die Seiten und ein &6Osmiumbarren&r in die Mitte ergeben ein &6Stahlgehäuse&r. Auf Kronwerke ersetzt die Legierung das Glas aus dem Originalrezept."
 		""
-		"Ab hier ist jede Maschine ein Stahlgehäuse plus das, was sie besonders macht: Schaltkreise, Redstone, Eisen oder ein Lavaeimer. Mit vier Gehäusen kannst du Anreicherungskammer, Schmelzer, Zerkleinerer und den Energie-Würfel bauen."
+		"Andesitlegierung kennst du aus Stufe 1, und wer damals eine Mixer-Linie gebaut hat, hat jetzt genug davon. Sonst frag die Create-Spieler: der Mixer macht aus einem Andesit und einem Nugget gleich zwei."
+		""
+		"Ab hier ist jede Maschine ein Stahlgehäuse plus das, was sie besonders macht: Schaltkreise, Redstone, Eisen, Glas oder Mahlwerkräder. Mit vier Gehäusen kannst du Anreicherungskammer, Schmelzer, Zerkleinerer und den Energie-Würfel bauen."
 	]
 	quest.6E4713E15FE7F816.quest_subtitle: "Der Rumpf jeder Maschine."
 	quest.6E4713E15FE7F816.title: "&7&lStahlgehäuse"
@@ -2708,7 +2738,7 @@
 	quest.71ACBB04C125D6E9.quest_desc: [
 		"Polierter Rosenquarz auf einem &6Eisenblech&r ergibt eine &6Elektronenröhre&r. Sie steckt in Einsatzgeräten, Handwerkseinheiten, Messingschleusen und -tunneln, Zugsignalen, Anzeigetafeln und vielen Addon-Maschinen."
 		"{image:create:textures/item/electron_tube.png width:32 height:32 align:center}"
-		"Du wirst sehr viele brauchen. Richte früh eine kleine Linie ein: Rosenquarz aufs Band, ein Einsatzgerät mit Schmirgelpapier poliert ihn, und eine Handwerkseinheit setzt die Röhre zusammen."
+		"Du wirst sehr viele brauchen: in jeder Runde des Präzisionsgetriebes steckt eine, und Mekanism macht auf Kronwerke seinen &6Einfachen Steuerschaltkreis&r aus einer Elektronenröhre mit Redstone. Richte früh eine kleine Linie ein: Rosenquarz aufs Band, ein Einsatzgerät mit Schmirgelpapier poliert ihn, und ein zweites setzt ihn auf ein Eisenblech."
 	]
 	quest.71ACBB04C125D6E9.quest_subtitle: "Die Logik in jeder Messingmaschine."
 	quest.71ACBB04C125D6E9.title: "&6Elektronenröhre"
@@ -2860,6 +2890,24 @@
 	]
 	quest.77C91AA3D7D43887.quest_subtitle: "Ohne Bürste kein Flug."
 	quest.77C91AA3D7D43887.title: "&6Broom Brush"
+	quest.788710AF3DD1233F.quest_desc: [
+		"Das &6Messingherz&r ist der Meilenstein der Technik-Säule in Stufe 2. Es verbindet das Beste dieser Stufe: Messing, Präzision und das Feuer einer Lohe, dazu eine Rune aus Botania."
+		""
+		"{image:kronwerke:textures/item/brass_heart.png width:32 height:32 align:center}"
+		""
+		"&eRezept an der Werkbank:&r"
+		"Oben: &6Messingrahmen&r, &6Präzisionsgetriebe&r, &6Messingrahmen&r."
+		"Mitte: &6Elektronenröhre&r, &cRune des Feuers&r, &6Elektronenröhre&r."
+		"Unten: &6Messingrahmen&r, &6Lohenbrenner&r, &6Messingrahmen&r."
+		""
+		"Die &cRune des Feuers&r macht ein Botaniker am Runenaltar (Kapitel &aBotania: Runen&r). Tausch sie gegen Messingrahmen, die braucht er ohnehin für Terraplatte und Manaperlen."
+		""
+		"&eWie viele:&r Der Obelisk will &e8 Messingherzen&r. Die Zahl ist fest und wächst nicht mit der Spielerzahl, aber jedes Herz zählt auf der Leiste so viel wie &e300 Messingbarren&r. Die acht zusammen tragen fast die Hälfte der Technik-Säule."
+		""
+		"&cWichtig:&r Meilensteine nimmt der Obelisk nur an, solange ihr Stufenziel aktiv ist, und herstellen kannst du das Herz erst, wenn Stufe 2 offen ist. In Stufe 1 waren es 12 Steinwerk-Getriebe, jetzt sind es 8 Herzen."
+	]
+	quest.788710AF3DD1233F.quest_subtitle: "Der Meilenstein des Messingwerks."
+	quest.788710AF3DD1233F.title: "&6Messingherz"
 	quest.7985BAF435D6A8A8.quest_desc: [
 		"Füll den Kessel mit Wasser, heiz ihn von unten und wirf &e8 Animal Fat&r (oder Kerzen und Honigwaben) hinein. Das Wasser wird zu flüssigem &6Talg&r."
 		""
@@ -2965,7 +3013,9 @@
 	quest.7F3598B183138DFD.quest_subtitle: "Ars Technica: Präzision trifft Magie."
 	quest.7F3598B183138DFD.title: "&6Calibrated Precision Mechanism"
 	quest.80126811246AC3FC.quest_desc: [
-		"Das Ziel von &6Stufe 1&r hat zwei Säulen: Technik (Andesitlegierung) und Magie. Die Magie-Säule sind &e1 500 Quelljuwelen&r, angepasst an die Zahl der aktiven Spieler."
+		"Das Ziel von &6Stufe 1&r hat drei Säulen: Stein, Technik (Andesitlegierung) und Magie. Die Magie-Säule sind &e800 Quelljuwelen&r, angepasst an die Zahl der aktiven Spieler, und &e12 Quellschlusssteine&r, eine feste Zahl."
+		""
+		"Der &dQuellschlussstein&r ist der Meilenstein der Säule: vier Quelljuwelblöcke, ein Quellglas, zwei Manadiamanten aus Botania, eine Andesitlegierung und ein Gold Leaf aus Nature's Aura. Ein einziger zählt auf der Leiste so viel wie gut 60 Juwelen. Das genaue Rezept steht im Kapitel &6Hier geht's los&r."
 		""
 		"Rechtsklick mit einem Stapel Juwelen auf den &eObelisken&r an der Spawn gibt ihn ab, schleichend gibst du alles Passende auf einmal ab. Eine Truhe, die du neben den Obelisken stellst, wird zu deinem Zulieferer: was du hineinfüllst, zählt für dich. Unterwegs hilft &e/kw deposit&r."
 		""
@@ -2976,9 +3026,9 @@
 	quest.8028305A0B04BDE2.quest_desc: [
 		"Lager wächst in Kronwerke mit jeder Stufe, die der Server gemeinsam öffnet:"
 		""
-		"&6Stufe 2 (Messingwerk):&r &6Kupfer-&r und &6Eisenrucksack&r (Eisen hat zwei Upgrade-Plätze), die &6Compacting Drawer&r, die Nuggets, Barren und Blöcke in einem Block zusammenfasst, die Schubladen-Upgrades aus &6Kupfer&r und &6Gold&r (achtfacher und sechzehnfacher Platz) und mit dem Nether auch Quarz für den &6Storage Controller&r von Functional Storage."
+		"&6Stufe 2 (Messingwerk):&r &6Kupfer-&r und &6Eisenrucksack&r (Eisen hat zwei Upgrade-Plätze), die &6Compacting Drawer&r, die Nuggets, Barren und Blöcke in einem Block zusammenfasst, die Schubladen-Upgrades aus &6Kupfer&r und &6Gold&r (achtfacher und sechzehnfacher Platz), die &6Goldstufe&r für Truhen und Fässer (81 Plätze, drei Upgrade-Plätze) und mit dem Nether auch Quarz für den &6Storage Controller&r von Functional Storage."
 		""
-		"&6Stufe 3 (Stahlwerk):&r &6Gold-&r und &6Diamantrucksack&r, die &6Ender Drawer&r und &6Applied Energistics 2&r, das erste echte Speichernetzwerk mit Suche und Autocrafting."
+		"&6Stufe 3 (Stahlwerk):&r &6Gold-&r und &6Diamantrucksack&r, die &6Diamantstufe&r für Truhen, die &6Ender Drawer&r und &6Applied Energistics 2&r, das erste echte Speichernetzwerk mit Suche und Autocrafting."
 		""
 		"Gesperrte Items zeigen im Tooltip, in welcher Stufe sie öffnen. Du darfst sie schon sammeln, nur benutzen geht erst später."
 	]
@@ -3016,11 +3066,11 @@
 		""
 		"{image:ars_nouveau:textures/item/source_gem.png width:32 height:32 align:center}"
 		""
-		"Dafür brauchst du Quellgläser und etwas, das Source erzeugt. Eine kleine Anlage liefert ein paar Dutzend Juwelen in der Stunde, und auch die kannst du per Zubringer einzahlen."
+		"Dafür brauchst du Quellgläser und etwas, das Source erzeugt. Eine kleine Anlage liefert ein paar Dutzend Juwelen in der Stunde, und auch die kannst du per Zubringer einzahlen. &e800&r Juwelen will der Obelisk, dazu &e12 Quellschlusssteine&r als Meilenstein der Säule."
 		""
 		"Wie das geht, zeigt dir das Kapitel &6Ars Nouveau&r."
 	]
-	quest.82221FD1BB9A6413.quest_subtitle: "1 500 Quelljuwelen."
+	quest.82221FD1BB9A6413.quest_subtitle: "800 Quelljuwelen und 12 Quellschlusssteine."
 	quest.82221FD1BB9A6413.title: "&dSäule: Magie"
 	quest.824479AAA0A4414E.quest_desc: [
 		"Die &6Offene Kiste&r ist eine Kiste mit einem Loch im Boden: &e7 Lebeholzbretter&r in U-Form. Alles, was ein Trichter hineinschiebt, fällt direkt darunter auf den Boden."
@@ -3059,7 +3109,7 @@
 	quest.837F2F27DF3947E6.quest_subtitle: "Der schnellste Weg über eine große Karte."
 	quest.837F2F27DF3947E6.title: "&6&lZüge"
 	quest.83C6FE122EC13A6C.quest_desc: [
-		"Seit dem Event ist der Nether offen. Für Create holst du dort drei Dinge: &6Netherrack&r für das Lohenbrenner-Gehäuse, eine lebende &6Lohe&r zum Einfangen und &6Netherquarz&r für Rosenquarz und Elektronenröhren."
+		"Seit dem Event ist der Nether offen. Für Create holst du dort vier Dinge: &6Netherrack&r für das Lohenbrenner-Gehäuse, eine lebende &6Lohe&r zum Einfangen, &6Lohenruten&r für den Lohenstaub im Messing und &6Netherquarz&r für Rosenquarz und Elektronenröhren."
 		""
 		"Lohen findest du in &cNetherfestungen&r, meist rund um ihre Spawner. Nimm Feuerresistenz mit und halte Abstand: Lohen schießen Feuerbälle."
 		""
@@ -3227,27 +3277,16 @@
 	quest.8928E7CCAC5479D8.quest_subtitle: "Köder aus Küchenresten."
 	quest.8928E7CCAC5479D8.title: "&6Wurmfarm"
 	quest.897B5583009AF0A4.quest_desc: [
-		"Mit &6Stufe 2 (Messingwerk)&r zeigt das Manabecken, was es wirklich kann. Wirf einen &6Eisenbarren&r in ein Becken, und für &d3 000 Mana&r kommt er als &bManastahlbarren&r zurück. Ein Eisenblock wird für 27 000 Mana direkt zum Manastahlblock."
+		"Mit &6Stufe 2 (Messingwerk)&r öffnet der Rest von Botania: &bManastahl&r, &bManaperlen&r, der &aRunenaltar&r mit seinen sechzehn Runen, viel stärkere Blumen und am Ende &aTerrastahl&r."
 		""
-		"{image:botania:textures/item/manasteel_ingot.png width:32 height:32 align:center}"
+		"Auf Kronwerke ist Botania dabei eng mit den anderen Mods verflochten. Der erste Manastahl kommt aus einem Ritual von &aNature's Aura&r, Manaperlen gibt es nur mit einem &6Messinggehäuse&r aus Create unter dem Becken, und auch im Runenaltar und in der Terraplatte steckt Messing. Umgekehrt braucht Mekanism deinen Manastahl und Create deine Feuerrunen."
 		""
-		"Manastahl ist das Metall für alles, was jetzt kommt: Runen, Manatafel, Linsen, Pylonen, Werkzeuge und die Grundzutat von Terrastahl."
+		"&6Das Ziel am Obelisken:&r Für Stufe 3 will der Obelisk auf der Magieseite &e600 Manaperlen&r und &e50 Terrastahlbarren&r (die Mengen passen sich der Spielerzahl an), dazu &e8 Runenkerne&r, eine feste Zahl. Alles kommt aus diesem Kapitel, zusammen rund &d30 Millionen Mana&r. Baut jetzt Blumen, so viele ihr könnt."
 		""
-		"&6Das Ziel am Obelisken:&r Für Stufe 3 will der Obelisk auf der Magieseite &e1 500 Manaperlen&r und &e100 Terrastahlbarren&r (die Zahlen passen sich der Spielerzahl an). Beides kommt aus diesem Kapitel. Zusammen sind das über &d60 Millionen Mana&r, also baut jetzt Blumen, so viele ihr könnt."
-		""
-		"&eTipp:&r Mekanik-Spieler brauchen deinen Manastahl ebenfalls, dazu gleich mehr."
+		"&cNoch nicht offen:&r Das Elfenportal und der Handel mit Alfheim gehören zu &6Stufe 3 (Stahlwerk)&r."
 	]
-	quest.897B5583009AF0A4.quest_subtitle: "Stufe 2 ist offen. Eisen, getränkt in Mana."
-	quest.897B5583009AF0A4.title: "&bManastahl"
-	quest.8993DFA7D03105CF.quest_desc: [
-		"Der &6Basic Motor&r (Eisenklumpen, Andesitgehäuse, Welle und ein &6Magnetite Block&r) macht aus Strom wieder Rotation. Die Drehzahl stellst du mit dem Schraubenschlüssel ein, die Belastbarkeit bleibt dabei gleich. Ein Redstone-Signal schaltet ihn ab."
-		""
-		"&6Magnetite Blocks&r kannst du nicht herstellen: sie liegen als eigene Adern im Stein der Oberwelt, zwischen Höhe -20 und 60. Halte beim Graben die Augen offen."
-		""
-		"Motoren lohnen sich, wenn Kraft an einem Ort entsteht und an einem anderen gebraucht wird. Ein Kabel ist einfacher als eine hundert Blöcke lange Welle."
-	]
-	quest.8993DFA7D03105CF.quest_subtitle: "Strom zurück in Rotation."
-	quest.8993DFA7D03105CF.title: "&6Basic Motor"
+	quest.897B5583009AF0A4.quest_subtitle: "Stufe 2 ist offen. Jetzt zeigt Botania, was es kann."
+	quest.897B5583009AF0A4.title: "&bDas Messingwerk blüht"
 	quest.899C84C4C154CDCB.quest_desc: [
 		"&6Bastionsruinen&r sind riesige Bauten aus Schwarzstein. Hier leben &6Piglins&r und die kräftigen &6Piglin-Barbaren&r, die sich von Gold nicht ablenken lassen, dazu Hoglins in den Ställen."
 		""
@@ -3275,6 +3314,19 @@
 	]
 	quest.89C589728E7570CC.quest_subtitle: "Der graue Stein, auf dem alles aufbaut."
 	quest.89C589728E7570CC.title: "&6Andesit"
+	quest.89F241E959011E82.quest_desc: [
+		"&6Create: Power Grid&r ist kein gewöhnlicher Strom-Mod. Hier fließen keine FE durch ein Kabel, sondern der Mod rechnet mit echter Elektrotechnik: &dSpannung&r in Volt, &dStrom&r in Ampere, &dWiderstand&r in Ohm. Generatoren, Motoren, Lampen und Heizungen sind Bauteile in einem Stromkreis, und was passiert, hängt davon ab, wie du sie verschaltest."
+		""
+		"&eDie erste Regel:&r Strom fließt nur im &egeschlossenen Kreis&r. Jedes Gerät hat zwei Klemmen, Plus und Minus. Ein Draht vom Generator zur Lampe reicht nicht, es braucht auch den Rückweg."
+		""
+		"&6Kupferdraht&r schneidet die &6Mechanische Säge&r aus einem Kupferblech, vier Stück pro Blech. Mit dem Draht in der Hand klickst du erst eine Klemme an, dann die nächste. Ein &6Verbinder&r (drei Kupferklumpen auf einer Andesitlegierung) ist ein Pfosten, an dem du lange Leitungen aufhängst und verzweigst."
+		"{image:powergrid:textures/item/wire.png width:32 height:32 align:center}"
+		"&cVorsicht mit langen Leitungen:&r Jeder Draht hat einen Widerstand, und je länger er ist, desto größer. Fließt viel Strom, fällt an ihm Spannung ab, und die verlorene Leistung wird zu Wärme. Ist es zu viel, glüht der Draht durch. Kurze, dicke Wege sind also besser als lange Girlanden."
+		""
+		"&6Tipp:&r Draht und ein getrockneter Seetang ergeben &6Isolierten Kupferdraht&r, den du mit Farbstoff einfärbst. So behältst du bei vielen Leitungen den Überblick. Entfernen kannst du Drähte mit dem &6Seitenschneider&r."
+	]
+	quest.89F241E959011E82.quest_subtitle: "Create: Power Grid: Strom wie im echten Leben."
+	quest.89F241E959011E82.title: "&6Kupferdraht und Verbinder"
 	quest.89FC33824A470023.quest_desc: [
 		"Sechs &6getrockneter Seetang&r ergeben ein &6Förderband&r. Seetang trocknest du im Ofen, im Räucherofen oder vor einem Lüfter mit Feuer."
 		"{image:create:textures/item/belt_connector.png width:32 height:32 align:center}"
@@ -3289,7 +3341,7 @@
 	quest.8A5AE0F34A91D904.quest_desc: [
 		"Auf Kronwerke ist das Rezept der &6Metallurgischen Infusionsanlage&r geändert: Statt der beiden unteren Eisenbarren braucht sie zwei &6Manastahlbarren&r aus Botania. Technik kommt hier nicht ohne Magie aus, und genau so ist es gewollt."
 		""
-		"Manastahl entsteht, wenn du einen &6Eisenbarren&r in ein &aManabecken&r wirfst, das genug &dMana&r enthält. Das Becken zieht das Mana ab und gibt dir den Manastahl zurück. Wie du ein Becken baust und mit Blumen füllst, steht im Botania-Kapitel."
+		"Manastahl ist auf Kronwerke kein Eisen im Becken mehr. Der erste entsteht im &aRitual des Waldes&r von Nature's Aura (vier Infused Iron, zwei Lebeholzzweige, ein Manadiamant und ein Gold Leaf um einen Eichensetzling ergeben vier Barren). In Mengen wirft man &6Infused Iron&r vom Natural Altar in ein &aManabecken&r, für 3 000 Mana pro Barren. Wie beides geht, steht im Kapitel &aBotania: Runen&r."
 		""
 		"Kein eigenes Becken? Frag im Chat. Zwei Barren sind für jeden Magier eine Kleinigkeit, und ein paar Osmiumbarren als Dankeschön sind schnell getauscht."
 	]
@@ -3364,13 +3416,6 @@
 	]
 	quest.8DA4A08A2B00BA5E.quest_subtitle: "Ars Additions: viele Verbindungen auf einmal."
 	quest.8DA4A08A2B00BA5E.title: "&6Advanced Dominion Wand"
-	quest.8DADF04982C8CC41.quest_desc: [
-		"Der &6Basic Energiser&r (Andesitgehäuse und Blitzableiter) arbeitet wie eine Presse über einem Depot oder Band, nur mit Strom und Rotation: er lädt Items auf. Aus einem Eisenbarren wird &6Overcharged Iron&r, aus Gold &6Overcharged Gold&r. Daraus entstehen stärkere Magnete und Kabel."
-		"{image:create_new_age:textures/item/overcharged_iron.png width:32 height:32 align:center}"
-		"Überladenes Eisen steckt auch im &6Heater&r, der einen Dampfkessel mit Wärme statt mit Kohle heizt. Die Wärme liefern Solar-Heizplatten oder der Stirling Engine des Addons."
-	]
-	quest.8DADF04982C8CC41.quest_subtitle: "Aufladen mit Strom."
-	quest.8DADF04982C8CC41.title: "&6Basic Energiser"
 	quest.8F011EE8B29279EC.quest_desc: [
 		"Der &6Einfache Energie-Würfel&r speichert &d1,6 Millionen FE&r und gibt bis zu &d1.600 FE/t&r ab. Er fängt auf, was deine Generatoren tagsüber oder beim Kohlenachlegen zu viel machen."
 		""
@@ -3434,6 +3479,24 @@
 	]
 	quest.9030AFB1FCEF8E0E.quest_subtitle: "Horn, Flügel, Stachel."
 	quest.9030AFB1FCEF8E0E.title: "&cDie Wilden"
+	quest.912D389F4D1D3371.quest_desc: [
+		"Der &dRunenkern&r ist der Meilenstein der Magie-Säule in Stufe 2: die vier Elemente um einen Terrastahlbarren, gehalten von Messing aus Create."
+		""
+		"{image:kronwerke:textures/item/rune_core.png width:32 height:32 align:center}"
+		""
+		"&eRezept an der Werkbank:&r"
+		"Oben: &9Rune des Wassers&r, &bManaperle&r, &fRune der Luft&r."
+		"Mitte: &6Messingblech&r, &aTerrastahlbarren&r, &6Messingblech&r."
+		"Unten: &cRune des Feuers&r, &bManaperle&r, &6Rune der Erde&r."
+		""
+		"Anders als auf dem Runenaltar werden die Runen hier &cverbraucht&r. Ein Kern kostet also vier frische Elementarrunen, zwei Manaperlen, einen Terrastahlbarren und zwei &6Messingbleche&r, die dir ein Create-Spieler mit der Mechanischen Presse aus Messingbarren presst."
+		""
+		"&eWie viele:&r Der Obelisk will &e8 Runenkerne&r. Die Zahl ist fest und wächst nicht mit der Spielerzahl, dafür zählt jeder Kern auf der Leiste so viel wie &e150 Manaperlen&r. Die acht zusammen tragen gut die Hälfte der Magie-Säule."
+		""
+		"&cWichtig:&r Meilensteine nimmt der Obelisk nur an, solange ihr Stufenziel aktiv ist, und herstellen kannst du den Kern erst, wenn Stufe 2 offen ist. In Stufe 1 waren es 12 Quellschlusssteine, jetzt sind es 8 Runenkerne. Die Techniker liefern parallel 8 &6Messingherzen&r, und für jedes brauchen sie eine Rune des Feuers von dir."
+	]
+	quest.912D389F4D1D3371.quest_subtitle: "Der Meilenstein der Magie in Stufe 2."
+	quest.912D389F4D1D3371.title: "&dRunenkern"
 	quest.912F5B3F213A69D5.quest_desc: [
 		"Lass einen Lüfter durch einen Wasserblock blasen und schick &6Kies&r durch den Strom, am besten auf einem Förderband. Jeder Kies gibt mit etwas Glück &6Feuerstein&r und &6Eisenklumpen&r."
 		""
@@ -3544,7 +3607,7 @@
 	quest.951C5B3A9F9B05FA.quest_desc: [
 		"Wie gehabt: rechtsklicke einen gesetzten, entrindeten Stamm mit einem &6Messingbarren&r. Der &6Messingrahmen&r steckt in Mechanischen Handwerkseinheiten, im Mechanischen Arm, Drehzahlregler, Anzeige-Link und vielem mehr."
 		""
-		"&dBotania&r-Spieler werden dich danach fragen: auf Kronwerke braucht die &aTerrestrische Agglomerationsplatte&r zwei Messingrahmen statt zwei Lapisblöcken. Ohne sie gibt es kein Terrastahl, und Terrastahl ist die Magie-Hälfte dieses Obelisk-Ziels. Gib ein paar Rahmen ab, der Server braucht beide Pfeiler."
+		"&dBotania&r-Spieler werden dich danach fragen: auf Kronwerke braucht die &aTerrestrische Agglomerationsplatte&r zwei Messingrahmen statt zwei Lapisblöcken, und &6Manaperlen&r entstehen nur in einem Manabecken, unter dem ein Messingrahmen steht. Der &aRunenaltar&r will außerdem einen Messingbarren. Ohne all das gibt es weder Perlen noch Terrastahl, und beides ist die Magie-Hälfte dieses Obelisk-Ziels. Gib ein paar Rahmen ab, der Server braucht beide Pfeiler."
 	]
 	quest.951C5B3A9F9B05FA.quest_subtitle: "Das Gerüst jeder schlauen Maschine."
 	quest.951C5B3A9F9B05FA.title: "&6Messingrahmen"
@@ -3563,7 +3626,9 @@
 	quest.9555F064C11E3AED.quest_subtitle: "Die Welt ist größer und seltsamer als in Vanilla."
 	quest.9555F064C11E3AED.title: "&6Erkundung"
 	quest.95C4F06C94471306.quest_desc: [
-		"Die Zahlen oben (40 000 Bruchstein, 3 000 Andesitlegierung, 1 500 Quelljuwelen) gelten für &e30 aktive Spieler&r. Sind mehr oder weniger Leute regelmäßig dabei, wachsen oder schrumpfen die Mengen mit."
+		"Die Zahlen oben (20 000 Bruchstein, 1 500 Andesitlegierung, 800 Quelljuwelen) gelten für &e30 aktive Spieler&r. Sind mehr oder weniger Leute regelmäßig dabei, wachsen oder schrumpfen die Mengen mit."
+		""
+		"&eAusnahme Meilensteine:&r Die 12 Steinwerk-Getriebe und 12 Quellschlusssteine bleiben immer gleich, egal wie viele mitspielen."
 		""
 		"Die genaue Menge wird festgelegt, wenn eine Stufe öffnet, und bleibt dann für diese Stufe gleich. Was aktuell gilt, zeigen dir &e/kw goals&r und die Statusseite auf der Website."
 	]
@@ -3594,6 +3659,17 @@
 	]
 	quest.96CCFE6F632CA63D.quest_subtitle: "Pentakel zeichnen ohne Kopfzerbrechen."
 	quest.96CCFE6F632CA63D.title: "&6Apprentice Ritual Satchel"
+	quest.97EF820F3FAEADA8.quest_desc: [
+		"Der &6Elektromotor&r macht aus Strom wieder Rotation. Seine Drehzahl hängt von der &dSpannung&r ab, die du anlegst, und je mehr Last an seiner Welle hängt, desto mehr &dStrom&r zieht er. So treibt eine Dampfmaschine am Fluss über ein paar Drähte eine Fabrik am anderen Ende der Basis an."
+		""
+		"Er ist ein Rezept für die Handwerkseinheiten: vier Eisenbleche, vier Kupferspulen, zwei &6Magnete&r, eine Welle und ein Leitfähiges Gehäuse."
+		""
+		"&eMagnete&r kannst du nicht einfach craften. Ein &6Elektromagnet&r (Leitfähiges Gehäuse, Eisenblech, fünf Kupferspulen) magnetisiert eine &6Andesitlegierung&r, die auf einem Depot oder Band unter ihm liegt, aber nur, wenn er Strom bekommt. Deshalb kommt der Motor erst nach dem Generator. Mit Glück geht es auch natürlich: schlägt ein Blitz neben einem Eisenbarren ein, kann er magnetisch werden."
+		"{image:powergrid:textures/item/magnet.png width:32 height:32 align:center}"
+		"&6Tipp:&r Mit einem &6Präzisionsgetriebe&r wird der Motor zum &6Konstanten Geschwindigkeitsmotor&r. Der hält seine Drehzahl fest, und die Spannung bestimmt nur noch Belastbarkeit und Drehrichtung."
+	]
+	quest.97EF820F3FAEADA8.quest_subtitle: "Strom zurück in Rotation."
+	quest.97EF820F3FAEADA8.title: "&6Elektromotor"
 	quest.982C07A0B20D63BA.quest_desc: [
 		"Wirf die unreine Kreide in Spiritfire, und du hältst &fWhite Chalk&r in der Hand. Diese Kreide öffnet mit &6Stufe 2&r, vorher kannst du sie tragen, aber nicht benutzen."
 		""
@@ -3604,13 +3680,15 @@
 	quest.982C07A0B20D63BA.quest_subtitle: "Das Werkzeug jedes Beschwörers."
 	quest.982C07A0B20D63BA.title: "&fWhite Chalk"
 	quest.982D4F037A92C5A3.quest_desc: [
-		"Von unten nach oben: &6Lohenbrenner&r, darauf das &6Becken&r, ein Block Luft, darüber der &6Mechanische Mixer&r. Ein &6Kupferbarren&r und ein &6Zinkbarren&r im erhitzten Becken ergeben &6zwei Messingbarren&r."
+		"Von unten nach oben: &6Lohenbrenner&r, darauf das &6Becken&r, ein Block Luft, darüber der &6Mechanische Mixer&r. Das Kronwerke-Rezept im &cerhitzten&r Becken: &6zwei Kupferbarren&r, &6ein Zinkbarren&r und &6ein Lohenstaub&r ergeben &6einen Messingbarren&r."
 		"{image:create:textures/item/brass_ingot.png width:32 height:32 align:center}"
-		"Für den Dauerbetrieb: Kupfer und Zink kommen über Schleusen oder ein Band ins Becken, eine Schleuse an der Beckenseite holt das Messing heraus, und eine weitere hält den Brenner mit Kohle bei Laune. Ein gut versorgter Mixer schafft ein paar hundert Barren in der Stunde."
+		"Messing ist der Meilenstein dieser Stufe, deshalb gibt es genau diesen einen Weg. Der Legierungsofen von Immersive Engineering, die Gießerei von Productive Metalworks und die Maschinen von Oritech machen kein Messing mehr. Nur Klumpen und Blöcke kannst du weiter an der Werkbank umwandeln."
 		""
-		"&cBleibt der Mixer stehen?&r Schau mit der Ingenieursbrille auf den Brenner: glimmt er nur, fehlt Brennstoff. Und jeder Mixer braucht sein eigenes Becken und seinen eigenen Brenner."
+		"Für den Dauerbetrieb: Kupfer, Zink und Lohenstaub kommen über Schleusen oder ein Band ins Becken, eine Schleuse an der Beckenseite holt das Messing heraus, und eine weitere hält den Brenner mit Kohle bei Laune."
+		""
+		"&cBleibt der Mixer stehen?&r Schau mit der Ingenieursbrille auf den Brenner: glimmt er nur, fehlt Brennstoff. Fehlt eine der drei Zutaten, rührt er ebenfalls nicht. Und jeder Mixer braucht sein eigenes Becken und seinen eigenen Brenner."
 	]
-	quest.982D4F037A92C5A3.quest_subtitle: "Kupfer und Zink, heiß gerührt."
+	quest.982D4F037A92C5A3.quest_subtitle: "Kupfer, Zink und ein Hauch Lohe."
 	quest.982D4F037A92C5A3.title: "&6Messing mischen"
 	quest.988E238B3070EB61.quest_desc: [
 		"Die &6Warp-Schriftrolle&r craftest du formlos aus &e4 Lapislazuli&r, &e4 Quelljuwelen&r und einem &6Leeren Pergament&r. Benutz sie schleichend an einem Ort, um ihn zu speichern. Später bringt dich ein normaler Rechtsklick dorthin zurück, und die Rolle ist verbraucht."
@@ -3685,16 +3763,16 @@
 	quest.9AE12336FF9ED04E.quest_subtitle: "Ein Opfer, das weh tut."
 	quest.9AE12336FF9ED04E.title: "&4Blood Sigil"
 	quest.9B24B0423BFE31CC.quest_desc: [
-		"Das zweite Magieziel: &e100 Terrastahlbarren&r. Jeder braucht &d500 000 Mana&r plus je einen Manastahlbarren, eine Manaperle und einen Manadiamanten. Zusammen gut &d52 Millionen Mana&r, 100 Eisen, 100 Enderperlen und &e100 Diamanten&r."
+		"Das zweite Magieziel: &e50 Terrastahlbarren&r. Jeder braucht &d500 000 Mana&r plus je einen Manastahlbarren, eine Manaperle und einen Manadiamanten. Zusammen gut &d25 Millionen Mana&r, 50 Manastahl, 50 Enderperlen und &e50 Diamanten&r. Acht weitere Barren stecken in den Runenkernen."
 		""
 		"&eWas hilft:&r"
 		"&e1.&r Viele Becken, jedes mit einem Manafunken, rund um die Platte."
-		"&e2.&r Mehrere Terraplatten, denn Messinggehäuse sind jetzt kein Problem mehr."
+		"&e2.&r Mehrere Terraplatten, sobald die Ingenieure genug Messinggehäuse liefern."
 		"&e3.&r Starke Blumen: Thermalilien an Lava, Gourmaryllis mit wechselndem Essen, Rosa Arcana an der Mob-Farm, Mampftau an der Baumfarm."
 		""
 		"&cAchtung:&r Nichts aufheben, solange die Platte arbeitet."
 	]
-	quest.9B24B0423BFE31CC.quest_subtitle: "Hundert Barren, jeder ein halbes Becken."
+	quest.9B24B0423BFE31CC.quest_subtitle: "Fünfzig Barren, jeder ein halbes Becken."
 	quest.9B24B0423BFE31CC.title: "&aTerrastahl in Serie"
 	quest.9B554A689296B483.quest_desc: [
 		"So bringst du ihn auf die Schiene:"
@@ -3730,12 +3808,21 @@
 	]
 	quest.9B8E811286D510AF.quest_subtitle: "Ein Buch, ein Setzling und ein ganzer Garten voller Magie."
 	quest.9B8E811286D510AF.title: "&aLexica Botania"
+	quest.9BB21E79FC7CE294.quest_desc: [
+		"Jetzt kommt alles zusammen: ein Mixer über einem Becken, darunter ein Lohenbrenner, der dank Lohenkuchen &cüberhitzt&r bleibt. Zwei Kupfer und ein Zink rein, zwei Messingbarren raus."
+		""
+		"Rechne kurz nach: Der erhitzte Weg macht aus 2 000 Kupfer und 1 000 Zink nur 1 000 Barren und frisst dabei 1 000 Lohenstaub. Der überhitzte Weg macht aus denselben Erzen 2 000 Barren. Für das Obelisk-Ziel ist das der Unterschied zwischen einer Woche und einem Wochenende."
+		""
+		"&6Tipp:&r Stell zwei oder drei solcher Mixer nebeneinander und versorge sie aus einem gemeinsamen Tresor. Mit der Ingenieursbrille siehst du am Brenner sofort, ob er gerade überhitzt ist oder nur noch erhitzt."
+	]
+	quest.9BB21E79FC7CE294.quest_subtitle: "Der überhitzte Mixer läuft."
+	quest.9BB21E79FC7CE294.title: "&6Messing im Überfluss"
 	quest.9C71D744C46C4E40.quest_desc: [
 		"Mit dem Event am Obelisken hat sich &6Stufe 2, das Messingwerk&r, geöffnet: der Nether ist frei, und Create bekommt seine zweite Hälfte. Alles mit einem Messingrahmen kann mehr als die Andesit-Maschinen: filtern, zählen, sortieren, bauen und Rezepte in jeder Größe herstellen."
 		""
 		"Dieses Kapitel führt dich vom ersten Lohenbrenner über Messing, Elektronenröhren und Einsatzgeräte bis zum &6Präzisionsgetriebe&r. Dazu kommen Dampfkraft, die Messing-Logistik, neue Kontraptionen und die Create-Addons des Servers. Züge haben ihr eigenes Kapitel, &6Create: Züge&r."
 		""
-		"&eDas Ziel dieser Stufe:&r Der Obelisk will im Technik-Pfeiler &64 000 Messingbarren&r und &6300 Präzisionsgetriebe&r, gerechnet für 30 aktive Spieler. Wie du am besten einzahlst, steht ganz unten im Abschnitt &6Das Ziel&r. Den Stand zeigt dir &e/kw goals&r."
+		"&eDas Ziel dieser Stufe:&r Der Obelisk will im Technik-Pfeiler &62 000 Messingbarren&r und &6150 Präzisionsgetriebe&r, gerechnet für 30 aktive Spieler, dazu &68 Messingherzen&r als Meilenstein. Wie du am besten einzahlst, steht ganz unten im Abschnitt &6Das Ziel&r. Den Stand zeigt dir &e/kw goals&r."
 		""
 		"Das Starterpaket dieser Stufe mit ein paar Messingbarren und einem Lohenbrenner hilft über die ersten Schritte. Auf Dauer brauchst du aber deine eigene Messinglinie."
 	]
@@ -3769,7 +3856,7 @@
 	quest.9D0C2C9B2F0E878A.quest_subtitle: "Kräuter brauchen Zeit."
 	quest.9D0C2C9B2F0E878A.title: "&6Drying Rack"
 	quest.9D30A98E855FD4DF.quest_desc: [
-		"Wer erst in Woche drei oder vier einsteigt, bekommt die &6Starterpakete&r aller Stufen, die schon offen sind. Zum Beispiel gibt es mit Stufe 2 Messingbarren, einen Blaze-Brenner, ein Quellglas und Manaperlen."
+		"Wer erst in Woche drei oder vier einsteigt, bekommt die &6Starterpakete&r aller Stufen, die schon offen sind. Zum Beispiel gibt es mit Stufe 2 Messingbarren, einen Lohenbrenner, ein Quellglas und Manaperlen."
 		""
 		"So kannst du direkt bei den anderen mitmachen, statt wochenlang aufzuholen. Und wer Hilfe braucht, fragt einfach im Chat oder im Voice-Chat, hier hilft man sich."
 	]
@@ -3785,9 +3872,11 @@
 	quest.9F74FE18841B810E.quest_desc: [
 		"Wenn das Obelisk-Ziel voll ist, öffnet sich mit einem Event auf allen Streams &6Stufe 2, das Messingwerk&r, und mit ihr der Nether. Create bekommt dann seine zweite Hälfte: Messing, Einsatzgeräte, mechanische Handwerkseinheiten, Präzisionsgetriebe, Dampfmaschinen und Züge. Die Kapitel &6Create: Messing&r und &6Create: Züge&r warten schon."
 		""
-		"Der Schlüssel zu Messing ist der &6Lohenbrenner&r, denn nur mit Hitze mischt der Mixer Kupfer und Zink zu Messing. Auf Kronwerke braucht sein leeres Gehäuse neben Eisenblechen und Netherrack &dzwei Quelljuwelen&r aus Ars Nouveau. Technik kommt hier nicht ohne Magie aus."
+		"Der Schlüssel zu Messing ist der &6Lohenbrenner&r, denn nur mit Hitze mischt der Mixer Kupfer und Zink zu Messing. Auf Kronwerke kostet das erste Messing außerdem &6Lohenstaub&r: zwei Kupfer, ein Zink und ein Lohenstaub ergeben im erhitzten Becken einen Messingbarren. Erst ein mit Lohenkuchen &cüberhitzter&r Brenner macht aus zwei Kupfer und einem Zink zwei Barren, ganz ohne Staub."
 		""
-		"Was du jetzt schon tun kannst: &6Zink&r und &6Kupfer&r horten, &6Eisenbleche&r vorpressen und dich mit den Magiern des Servers anfreunden. Oder gleich selbst eine &aImbuement-Kammer&r bauen: Quelljuwelen braucht der Obelisk ohnehin für den Magie-Pfeiler dieser Stufe."
+		"Das leere Gehäuse des Lohenbrenners braucht neben Eisenblechen und Netherrack &dzwei Quelljuwelen&r aus Ars Nouveau. Technik kommt hier nicht ohne Magie aus."
+		""
+		"Was du jetzt schon tun kannst: &6Zink&r und vor allem &6Kupfer&r horten (jeder Messingbarren kostet zwei davon), &6Eisenbleche&r vorpressen und dich mit den Magiern des Servers anfreunden. Oder gleich selbst eine &aImbuement-Kammer&r bauen: Quelljuwelen braucht der Obelisk ohnehin für den Magie-Pfeiler dieser Stufe."
 	]
 	quest.9F74FE18841B810E.quest_subtitle: "Was als Nächstes kommt, und was du jetzt schon tun kannst."
 	quest.9F74FE18841B810E.title: "&6Ausblick: Messingwerk"
@@ -3843,16 +3932,15 @@
 	quest.A1AEB7D0E5FB1298.quest_desc: [
 		"Mit &6Stufe 2 (Messingwerk)&r öffnet Botania richtig. Dann geht es im Kapitel &aBotania: Runen&r weiter:"
 		""
-		"&6Manastahl&r: ein Eisenbarren im Becken, 3 000 Mana."
-		"&6Manaperle&r: eine Enderperle im Becken, 6 000 Mana."
+		"&6Manastahl&r: zuerst aus dem Ritual des Waldes von Nature's Aura (vier Barren pro Ritual), in Mengen aus &6Infused Iron&r im Becken für 3 000 Mana. Ein Eisenbarren im Becken tut nichts mehr."
+		"&6Manaperle&r: eine Enderperle im Becken, 6 000 Mana. Aber nur, wenn unter dem Becken ein &6Messinggehäuse&r aus Create steht."
 		"&6Manatafel&r: ein Manabecken zum Mitnehmen."
-		"&aRunenaltar&r: Runen der Elemente, Jahreszeiten und Sünden, und damit neue, viel stärkere Blumen."
+		"&aRunenaltar&r: Runen der Elemente, Jahreszeiten und Sünden, und damit neue, viel stärkere Blumen. Auf Kronwerke steckt ein Messingbarren darin."
 		"&aTerrestrische Agglomerationsplatte&r: Terrastahl. Auf Kronwerke braucht sie zwei Messinggehäuse aus Create."
-		"&aElfenportal&r: Handel mit Alfheim."
 		""
-		"Manastahl, Manaperlen und die Manatafel sind bis dahin &cgesperrt&r. Du kannst sie tragen, aber noch nicht benutzen, der Tooltip sagt dir, ab welcher Stufe."
+		"Manastahl, Manaperlen und die Manatafel sind bis dahin &cgesperrt&r. Du kannst sie tragen, aber noch nicht benutzen, der Tooltip sagt dir, ab welcher Stufe. Das Elfenportal und der Handel mit Alfheim folgen erst mit Stufe 3."
 		""
-		"Das Obelisk-Ziel von Stufe 2 will &e1 500 Manaperlen&r und &e100 Terrastahlbarren&r. Das sind zusammen über &d60 Millionen Mana&r. Fangt früh an, Becken zu füllen."
+		"Das Obelisk-Ziel von Stufe 2 will &e600 Manaperlen&r, &e50 Terrastahlbarren&r und &e8 Runenkerne&r. Das sind zusammen rund &d30 Millionen Mana&r. Fangt früh an, Becken zu füllen."
 	]
 	quest.A1AEB7D0E5FB1298.quest_subtitle: "Was hinter dem Obelisken wartet."
 	quest.A1AEB7D0E5FB1298.title: "Ausblick: Stufe 2"
@@ -3933,15 +4021,17 @@
 	quest.A4D89338D2D66A58.quest_subtitle: "Das Metall, das Geister respektieren."
 	quest.A4D89338D2D66A58.title: "&6Silver"
 	quest.A4E38347917EF53B.quest_desc: [
-		"Das &6Präzisionsgetriebe&r entsteht durch &esequenzielle Montage&r: ein Item durchläuft mehrere Arbeitsschritte in fester Reihenfolge, immer wieder, bis es fertig ist."
+		"Das &6Präzisionsgetriebe&r entsteht durch &esequenzielle Montage&r: ein Item durchläuft mehrere Arbeitsschritte in fester Reihenfolge, immer wieder, bis es fertig ist. Auf Kronwerke ist es das Meisterstück der Stufe, und das Rezept ist entsprechend anspruchsvoll."
 		""
-		"Der Ablauf: ein &6Goldblech&r kommt aufs Band. Das erste Einsatzgerät setzt ein &6Zahnrad&r ein, das zweite ein &6Großes Zahnrad&r, das dritte einen &6Eisenklumpen&r. Danach ist es ein &6Unfertiges Präzisionsgetriebe&r, das noch viermal durch dieselbe Strecke muss, fünf Runden insgesamt."
+		"&eDer Ablauf einer Runde:&r Ein &6Messingblech&r kommt aufs Band. Das erste Einsatzgerät setzt ein &6Zahnrad&r ein, das zweite eine &6Elektronenröhre&r, das dritte einen &6Eisenklumpen&r, und zum Schluss stampft eine &6Mechanische Presse&r darauf. Danach ist es ein &6Unfertiges Präzisionsgetriebe&r, das noch viermal durch dieselbe Strecke muss: &efünf Runden&r insgesamt."
 		"{image:create:textures/item/incomplete_precision_mechanism.png width:32 height:32 align:center}"
-		"Führ das Band im Kreis, dann drehen unfertige Teile von selbst ihre Runden. Am Ende kommt in rund acht von zehn Fällen ein Präzisionsgetriebe heraus, sonst Reste wie Goldbleche oder Zahnräder, die du wieder einspeist."
+		"Am Ende kommt nur in &e60 Prozent&r der Fälle ein Präzisionsgetriebe heraus. Sonst gibt es Schrott: &6Messingklumpen&r (25 Prozent) oder ein &6Zahnrad&r (15 Prozent). Neun Klumpen sind wieder ein Barren, die Zahnräder gehen zurück in die Linie."
 		""
-		"&6Tipp:&r In JEI siehst du jeden Schritt. Gib jedem Einsatzgerät per Filter nur sein eigenes Teil, dann verwechselt keins die Zutaten."
+		"Im Schnitt kostet ein Getriebe damit etwa &e1,7 Messingbleche&r und je gut &eacht Zahnräder, Elektronenröhren und Eisenklumpen&r. Vor allem die Röhren sind der Engpass."
+		""
+		"&6Tipp:&r Führ das Band im Kreis, dann drehen unfertige Teile von selbst ihre Runden. Gib jedem Einsatzgerät per Filter nur sein eigenes Teil. In JEI siehst du jeden Schritt."
 	]
-	quest.A4E38347917EF53B.quest_subtitle: "Deine erste sequenzielle Montage."
+	quest.A4E38347917EF53B.quest_subtitle: "Fünf Runden auf einem Messingblech."
 	quest.A4E38347917EF53B.title: "&6Präzisionsgetriebe"
 	quest.A56D9240BB25B222.quest_desc: [
 		"Eine &6Vorlage&r macht dasselbe wie eine Blaupause, verschwindet aber nach einem Teil. Die Spitzhacke Vorlage: &6drei Vorlagenbretter&r oben und &6zwei Stöcke&r senkrecht darunter."
@@ -4017,6 +4107,24 @@
 	]
 	quest.A7A5BA50FA1FA49E.quest_subtitle: "Ars Additions: Schutzzauber zum Umhängen."
 	quest.A7A5BA50FA1FA49E.title: "&6Charm of Ocean's Breath"
+	quest.A7C51A9763F1E7C6.quest_desc: [
+		"Der Meilenstein der Magie-Säule in Stufe 1 ist der &dQuellschlussstein&r. In ihm stecken alle drei Magie-Mods der ersten Stufe: Quelle aus Ars Nouveau, Mana aus Botania und Gold aus Nature's Aura, zusammengehalten von einer Andesitlegierung aus Create."
+		""
+		"{image:kronwerke:textures/item/source_keystone.png width:32 height:32 align:center}"
+		""
+		"&eRezept an der Werkbank:&r"
+		"Oben: &6Quelljuwelblock&r, &6Quellglas&r, &6Quelljuwelblock&r."
+		"Mitte: &bManadiamant&r, &6Andesitlegierung&r, &bManadiamant&r."
+		"Unten: &6Quelljuwelblock&r, &6Gold Leaf&r, &6Quelljuwelblock&r."
+		""
+		"Die &bManadiamanten&r infundierst du im Manabecken von Botania, je &d10 000 Mana&r. Das &6Gold Leaf&r wächst an einem &aBrilliant Tree&r von Nature's Aura: Leg etwas Brilliant Fiber in die Krone eines Baums, und mit der Zeit lassen seine Blätter beim Abbauen Gold Leaf fallen."
+		""
+		"&eWie viele:&r Der Obelisk will &e12 Quellschlusssteine&r, fest, egal wie viele Spieler dabei sind. Einer zählt auf der Leiste so viel wie gut &e60 Quelljuwelen&r, die zwölf zusammen tragen fast die Hälfte der Magie-Säule."
+		""
+		"&cWichtig:&r Wie alle Meilensteine geht er nur in den Obelisken, solange sein Stufenziel aktiv ist. Ab Stufe 2 will der Obelisk stattdessen &e8 Messingherzen&r und &e8 Runenkerne&r."
+	]
+	quest.A7C51A9763F1E7C6.quest_subtitle: "Der Meilenstein der Magie-Säule."
+	quest.A7C51A9763F1E7C6.title: "&dQuellschlussstein"
 	quest.A8D21689C278C370.quest_desc: [
 		"Leg einen Barren und den &6Ingenieurshammer&r zusammen in die Werkbank, dann bekommst du ein &6Blech&r. Der Hammer bleibt erhalten, verliert aber einen Punkt Haltbarkeit."
 		""
@@ -4058,7 +4166,7 @@
 		""
 		"Amethyst findest du in &eGeoden&r unter der Erde, auch reichlich in der Bergbau-Dimension. Nimm die Cluster mit, und wenn du eine Spitzhacke mit Behutsamkeit hast, kannst du Amethystblöcke mitnehmen. &6Knospender Amethyst&r lässt sich nicht bewegen, aber du kannst neben einer Geode eine kleine Außenstelle bauen."
 		""
-		"Juwelen, die du nicht selbst brauchst, gehören in den &eObelisken&r an der Spawn: &e1 500&r braucht der ganze Server für Stufe 2. Das ist die magische Hälfte des Ziels."
+		"Juwelen, die du nicht selbst brauchst, gehören in den &eObelisken&r an der Spawn: &e800&r braucht der ganze Server, damit Stufe 2 öffnet. Das ist, zusammen mit den Quellschlusssteinen, die magische Hälfte des Ziels."
 	]
 	quest.A92D71E452CD19B1.quest_subtitle: "Die Währung der Magie."
 	quest.A92D71E452CD19B1.title: "&dQuelljuwelen"
@@ -4140,6 +4248,20 @@
 	]
 	quest.ABE024A205775B96.quest_subtitle: "Deine erste echte Kraftquelle."
 	quest.ABE024A205775B96.title: "&6Wasserrad"
+	quest.ABE1ED568848DAC9.quest_desc: [
+		"Ein Power-Grid-Generator ist kein einzelner Block, sondern eine Baugruppe entlang einer Welle, aufgebaut wie ein echter Gleichstromgenerator. Er hat zwei Teile:"
+		""
+		"&eDer Läufer:&r An deine Create-Welle kommt zuerst die &6Generator-Kupplung&r (Create-Kupplung und Andesitlegierung). Dahinter folgen ein oder mehrere &6Generator-Induktionsrotoren&r und am Ende der &6Generator-Kollektor&r, an dessen Klemmen du deine Verbraucher anschließt."
+		"&eDer Ständer:&r Neben den Rotor legst du Wellen, und mit einer &6Kupferspule&r in der Hand klickst du zwei davon an: daraus wird eine &6Wicklung&r. Nebeneinanderliegende Wicklungen schalten sich in Reihe, ein &6Generatorgehäuse&r verbindet sie um die Ecke."
+		""
+		"&eErregung:&r Die Wicklungen müssen ein Magnetfeld aufbauen, sonst kommt nichts heraus. Dazu schickst du einen kleinen &dErregerstrom&r über einen Adapter hinein. Hast du noch keine Stromquelle, geht es auch &eselbsterregt&r: Plus an Plus und Minus an Minus zwischen Kollektor und Wicklungen, mit einem &6Rheostat&r dazwischen, der den Widerstand einstellt. Das klappt nur in einer Drehrichtung, mit passendem Widerstand und bei genug Drehzahl."
+		""
+		"Rotor und Kollektor sind Rezepte für die &6Mechanischen Handwerkseinheiten&r: der Rotor aus vier Andesitlegierungen, vier Kupferspulen und einer Welle, der Kollektor aus Pins (zwei Kupferklumpen), Kohle, Kupferblech, Andesitlegierungen, Welle und Andesitgehäuse."
+		""
+		"&6Tipp:&r Unter Last sinkt die Spannung eines Generators, ein &6Kohleschichtwiderstand&r als Regler hält sie stabiler. Mit einem Redstone-Signal an der Kupplung stellst du ein, wie stark sie greift. Die Ponder-Szenen (&eW&r auf den Generatorteilen) zeigen jeden Schritt. Und: Hände weg vom drehenden Rotor."
+	]
+	quest.ABE1ED568848DAC9.quest_subtitle: "Rotation rein, Spannung raus."
+	quest.ABE1ED568848DAC9.title: "&6&lDer Generator"
 	quest.AC00C2E9E0EB9370.quest_desc: [
 		"Ebenfalls in Hedyrin's Lure: &e4 Knochen&r in die Schalen, Foliot-Buch auf die Schale, und wenn die grauen Partikel kommen, opferst du ein &6Huhn&r in der Nähe des Pentakels."
 		""
@@ -4148,11 +4270,11 @@
 	quest.AC00C2E9E0EB9370.quest_subtitle: "Schädel für stärkere Pentakel."
 	quest.AC00C2E9E0EB9370.title: "&5Possessed Skeleton"
 	quest.AC39C948ACC593B6.quest_desc: [
-		"Das Obelisk-Ziel von Stufe 2 heißt &6Die Messingmaschine&r. Im Technik-Pfeiler will es &64 000 Messingbarren&r und &6300 Präzisionsgetriebe&r, gerechnet für 30 aktive Spieler. Im Magie-Pfeiler warten Manaperlen und Terrastahl aus Botania, und beide Pfeiler müssen voll werden."
+		"Das Obelisk-Ziel von Stufe 2 heißt &6Die Messingmaschine&r. Im Technik-Pfeiler will es &62 000 Messingbarren&r und &6150 Präzisionsgetriebe&r, gerechnet für 30 aktive Spieler, dazu &68 Messingherzen&r, die immer gleich viele bleiben. Im Magie-Pfeiler warten Manaperlen, Terrastahl und Runenkerne aus Botania, und beide Pfeiler müssen voll werden."
 		""
-		"Das heißt: mehrere Messing-Mixer, die rund um die Uhr laufen, eine Zink- und Kupferversorgung aus Mahlwerk und Wäsche, und mindestens eine Präzisionslinie. Stell einen &eEinspeiser&r auf, eine Kiste oder ein Fass direkt am Obelisken, und leite deine Ausgabe dorthin: per Band, Kette, Paket oder Zug. Der Obelisk holt sich alle zwei Sekunden, was er brauchen kann, und schreibt es dir gut."
+		"Das heißt: mehrere überhitzte Messing-Mixer, die rund um die Uhr laufen, eine Kupfer- und Zinkversorgung aus Mahlwerk und Wäsche, eine Röhrenlinie und mindestens eine Präzisionslinie. Stell einen &eEinspeiser&r auf, eine Kiste oder ein Fass direkt am Obelisken, und leite deine Ausgabe dorthin: per Band, Kette, Paket oder Zug. Der Obelisk holt sich alle zwei Sekunden, was er brauchen kann, und schreibt es dir gut."
 		""
-		"Und vergiss die Magier nicht: sie brauchen deine Messingrahmen für die Terrestrische Agglomerationsplatte, du brauchst ihre Quelljuwelen für die Lohenbrenner. Bei 98 Prozent hält der Obelisk an, die letzte Ladung geht gemeinsam auf den Streams hinein, und &6Stufe 3, das Stahlwerk&r, öffnet sich."
+		"Und vergiss die Magier nicht: sie brauchen deine Messingrahmen für Terraplatte und Manaperlen und einen Messingbarren für den Runenaltar, du brauchst ihre Quelljuwelen für die Lohenbrenner und ihre Feuerrunen für die Messingherzen. Bei 98 Prozent hält der Obelisk an, die letzte Ladung geht gemeinsam auf den Streams hinein, und &6Stufe 3, das Stahlwerk&r, öffnet sich."
 	]
 	quest.AC39C948ACC593B6.quest_subtitle: "Füttere den Obelisken."
 	quest.AC39C948ACC593B6.title: "&6&lDie Messingmaschine"
@@ -4364,6 +4486,19 @@
 	]
 	quest.B3B6AD1FCF591472.quest_subtitle: "Ars Additions: der Weg zum nächsten Bauwerk."
 	quest.B3B6AD1FCF591472.title: "&aRitual: Locate Structure"
+	quest.B435FA9F8A2B0B11.quest_desc: [
+		"Auf Kronwerke wird &6Manastahl&r nicht mehr aus einem Eisenbarren im Becken gemacht, ein Eisenbarren bleibt dort einfach liegen. Der erste Manastahl kommt aus einem Ritual von &aNature's Aura&r, und die Zutaten dafür kannst du schon in Stufe 1 sammeln."
+		""
+		"&eDas Ritual des Waldes:&r Leg &6Gold Powder&r (aus Gold Leaf zerrieben) im Muster aus dem Buch von Nature's Aura auf den Boden, stell &6Wooden Stands&r (Gold Leaf auf einem Stamm) darum und lege auf sie die Zutaten:"
+		"&e4&r &6Infused Iron&r vom Natural Altar, &e2&r &6Lebeholzzweige&r, &e1&r &bManadiamant&r und &e1&r &6Gold Leaf&r."
+		"Dann pflanzt du einen &6Eichensetzling&r in die Mitte und lässt ihn wachsen, mit Knochenmehl oder mit Geduld. Der Baum verschlingt die Zutaten, und heraus kommen &e4 Manastahlbarren&r."
+		""
+		"&eDer Weg für große Mengen:&r Ist Stufe 2 offen, wirfst du &6Infused Iron&r statt Eisen in ein Manabecken. Für &d3 000 Mana&r wird jedes Stück zu einem Manastahlbarren. Ein Natural Altar, der Eisen veredelt, und ein Becken dahinter sind eine kleine Manastahl-Fabrik."
+		""
+		"Manastahl selbst ist bis Stufe 2 &cgesperrt&r. Aber wer jetzt Infused Iron, Zweige und Manadiamanten bereitlegt, hat am ersten Abend von Stufe 2 seine Runen."
+	]
+	quest.B435FA9F8A2B0B11.quest_subtitle: "Das Ritual des Waldes, schon jetzt geplant."
+	quest.B435FA9F8A2B0B11.title: "&bVorbereitung: Manastahl"
 	quest.B538FC75A11EA5BA.quest_desc: [
 		"Ein Zugrahmen und ein Kompass ergeben zwei &6Bahnhöfe&r. Rechtsklicke mit dem Bahnhof in der Hand ein gerades Gleisstück und setz ihn dann daneben ab."
 		""
@@ -4491,15 +4626,6 @@
 	]
 	quest.BA911226C416703F.quest_subtitle: "Items fallen, wohin sie sollen."
 	quest.BA911226C416703F.title: "&6Schacht"
-	quest.BAD90EE4A1213C50.quest_desc: [
-		"Rechtsklick mit dem &aStab des Waldes&r auf das Herzstück. Stimmt der Aufbau, leuchten die Pylonen auf und das Portal öffnet sich. Das kostet einmalig &d200 000 Mana&r aus den Becken mit Naturapylon."
-		""
-		"Durch das Portal passen nur Gegenstände, keine Spieler. Wirf etwas hinein, und die Elfen schicken dir ihre Gegenleistung zurück. Jeder Tausch kostet &d500 Mana&r. Läuft eines der Becken leer, schließt sich das Portal wieder."
-		""
-		"&eTipp:&r Stell ein Verbreiter-Netz auf, das die Portalbecken ständig nachfüllt, dann bleibt das Tor offen."
-	]
-	quest.BAD90EE4A1213C50.quest_subtitle: "Alfheim ist nicht mehr ganz so fern."
-	quest.BAD90EE4A1213C50.title: "Das Tor öffnet sich"
 	quest.BB25DD50942C713A.quest_desc: [
 		"Lass den Hochofen laufen. Ein Barren pro Minute klingt nach wenig, aber ein voller Stapel Eisen und Koks ist in gut einer Stunde fertig, ohne dass du daneben stehen musst."
 		""
@@ -4553,13 +4679,15 @@
 	quest.BD277AE3F3547F8E.quest_subtitle: "Rohstoffe fahren von selbst."
 	quest.BD277AE3F3547F8E.title: "&6Der Güterzug"
 	quest.BD39D58490ECDCDF.quest_desc: [
-		"Der &6Zerkleinerer&r mahlt Barren zurück zu Staub, Bruchstein zu Kies, Kies zu Sand und Obsidian zu Obsidianstaub. &eRezept:&r Stahlgehäuse, zwei Lavaeimer, zwei Schaltkreise und Redstone."
+		"Der &6Zerkleinerer&r mahlt Barren zurück zu Staub, Bruchstein zu Kies, Kies zu Sand und Obsidian zu Obsidianstaub."
 		""
-		"&eNether-Tipp:&r Eine &6Lohenrute&r gibt im Zerkleinerer &6vier Lohenstaub&r statt zwei an der Werkbank. Das lohnt sich, wenn du Braustände oder Rezepte mit Lohenstaub versorgst."
+		"&eRezept auf Kronwerke:&r ein Stahlgehäuse in der Mitte, links und rechts je ein &6Mahlwerkrad&r aus Create statt der Lavaeimer, oben und unten ein Einfacher Steuerschaltkreis, Redstone in die Ecken. Mahlwerkräder entstehen in den Mechanischen Handwerkseinheiten von Create, und die brauchen ein Präzisionsgetriebe. Frag einen Create-Spieler, er bekommt immer zwei Räder pro Rezept."
+		""
+		"&eNether-Tipp:&r Eine &6Lohenrute&r gibt im Zerkleinerer &6vier Lohenstaub&r statt zwei an der Werkbank. Den brauchen die Create-Leute für jeden Messingbarren aus dem erhitzten Mixer."
 		""
 		"Außerdem macht er aus Pflanzen und Samen &6Bio-Brennstoff&r, falls du später einen Biogenerator bauen willst."
 	]
-	quest.BD39D58490ECDCDF.quest_subtitle: "Barren zu Staub, und noch mehr."
+	quest.BD39D58490ECDCDF.quest_subtitle: "Mahlt mit den Rädern von Create."
 	quest.BD39D58490ECDCDF.title: "&4Zerkleinerer"
 	quest.BDA5F6B45F83998C.quest_desc: [
 		"Eine Kontraption mit angeklebter Kiste sammelt, was ihre Bohrer und Erntemaschinen abbauen. Aber wie kommt es wieder heraus? Mit zwei &6Portablen Lagerschnittstellen&r (Andesitgehäuse und Schacht): eine sitzt auf der Kontraption, eine fest in der Welt."
@@ -4648,7 +4776,7 @@
 		""
 		"Es zählt jede Sorte &6Bruchstein&r: normaler, bemooster und Bruchtiefenschiefer. Mit Ultimine und in der Minendimension geht es am schnellsten."
 	]
-	quest.C16773D49EAC39AD.quest_subtitle: "40 000 Bruchstein."
+	quest.C16773D49EAC39AD.quest_subtitle: "20 000 Bruchstein."
 	quest.C16773D49EAC39AD.title: "&7Säule: Stein"
 	quest.C1B89DC3CE373DEA.quest_desc: [
 		"Die &6Mechanische Presse&r (Welle, Andesitgehäuse, Eisenblock) bekommt Rotation von oben oder von der Seite. Setz sie zwei Blöcke über ein &6Depot&r oder ein Förderband, also mit einem Block Luft dazwischen: dort fährt ihr Stempel hinunter. Das Depot baust du aus einer Legierung und einem Andesitgehäuse."
@@ -4706,12 +4834,21 @@
 	quest.C625026699EE0175.quest_desc: [
 		"Bau dir eine &6Holzspitzhacke&r und grab dich ein paar Blöcke in einen Hang. Stein wird beim Abbauen zu &6Bruchstein&r, und aus Bruchstein machst du dir &6Steinspitzhacke&r, &6Steinaxt&r, &6Steinschaufel&r und ein &6Steinschwert&r."
 		""
-		"Wirf keinen Bruchstein weg! Der Obelisk braucht in Stufe 1 davon &e40 000 Stück&r vom ganzen Server. Alles, was du ohnehin abbaust, ist ein Beitrag."
+		"Wirf keinen Bruchstein weg! Der Obelisk braucht in Stufe 1 davon &e20 000 Stück&r vom ganzen Server. Alles, was du ohnehin abbaust, ist ein Beitrag."
 		""
 		"Besseres Werkzeug kommt bald: Eisen gleich im Anschluss, und das Kapitel &6Silent Gear&r zeigt dir Werkzeug aus Einzelteilen, das du nach deinen Wünschen zusammenbaust."
 	]
 	quest.C625026699EE0175.quest_subtitle: "Holz reicht genau für eine Spitzhacke."
 	quest.C625026699EE0175.title: "&6Steinwerkzeug"
+	quest.C6753E505DED38F6.quest_desc: [
+		"Auf Kronwerke braucht jeder Messingbarren aus dem erhitzten Mixer einen &6Lohenstaub&r. Den bekommst du aus &6Lohenruten&r, die Lohen in Netherfestungen fallen lassen."
+		""
+		"An der Werkbank wird eine Rute zu zwei Staub. Der &6Mahlstein&r oder ein Paar &6Mahlwerkräder&r holen mehr aus ihr heraus, und der Zerkleinerer von Mekanism schafft sogar vier."
+		""
+		"Bei den ersten paar hundert Barren ist das noch ein Ausflug in die Festung. Wer auf Dauer Messing braucht, baut sich eine Lohenfarm, oder er stellt auf den &cüberhitzten&r Mixer um, der ganz ohne Staub auskommt. Mehr dazu beim Lohenkuchen."
+	]
+	quest.C6753E505DED38F6.quest_subtitle: "Der Preis für das erste Messing."
+	quest.C6753E505DED38F6.title: "&6Lohenstaub"
 	quest.C703E9B19D9BFE2E.quest_desc: [
 		"Neun Koks ergeben einen &6Koksblock&r, der auch als Brennstoff zehnmal so lange hält wie ein einzelner Koks. Praktisch für Öfen, die lange unbeaufsichtigt laufen sollen."
 		""
@@ -4772,7 +4909,7 @@
 		""
 		"Das neue Rezept: oben Eisen, Ofen, Eisen; in der Mitte Redstone, Osmiumbarren, Redstone; unten Manastahl, Ofen, Manastahl."
 		""
-		"Ohne Infusionierer gibt es keinen Stahl, keine Schaltkreise und keine Mekanism-Maschinen. Wenn du Manastahl übrig hast, sprich mit den Technikern auf dem Server. Umgekehrt brauchst du bald Messing von ihnen, siehe Terrastahl."
+		"Ohne Infusionierer gibt es keinen Stahl und keine Schaltkreise: selbst der &6Einfache Steuerschaltkreis&r entsteht auf Kronwerke im Infusionierer, aus einer Elektronenröhre von Create und Redstone. Wenn du Manastahl übrig hast, sprich mit den Technikern auf dem Server. Umgekehrt brauchst du Messing von ihnen, siehe links."
 	]
 	quest.C81BA31B899D5F2B.quest_subtitle: "Auf Kronwerke braucht Mekanism deine Blumen."
 	quest.C81BA31B899D5F2B.title: "Manastahl für Ingenieure"
@@ -4871,20 +5008,20 @@
 	quest.CDE4761F2FBA1D9B.quest_subtitle: "Immer das richtige Werkzeug in der Hand."
 	quest.CDE4761F2FBA1D9B.title: "Werkzeugtausch-Upgrade"
 	quest.CDF888D56AB321F0.quest_desc: [
-		"Eine &6Enderperle&r im Becken wird für &d6 000 Mana&r zur &bManaperle&r."
+		"Eine &6Enderperle&r im Becken wird für &d6 000 Mana&r zur &bManaperle&r. Auf Kronwerke aber nur, wenn direkt &eunter dem Manabecken&r ein &6Messinggehäuse&r aus Create steht. Es wirkt als Katalysator, so wie die Katalysatoren von Botania selbst. Ohne das Gehäuse bleibt die Perle einfach im Becken liegen."
 		""
 		"{image:botania:textures/item/mana_pearl.png width:32 height:32 align:center}"
 		""
-		"Du brauchst sie für die &6Rune des Manas&r, die &6Manatafel&r und für jeden einzelnen &6Terrastahlbarren&r. Und der Obelisk will &e1 500&r Stück für das Stufe-2-Ziel. Das sind allein &d9 Millionen Mana&r, neun randvolle Becken."
+		"Die anderen Infusionen stört das Gehäuse nicht: Manastahl aus Infused Iron, Manadiamanten und Managlas entstehen im selben Becken weiter wie gewohnt."
+		""
+		"Du brauchst Perlen für die &6Rune des Manas&r, die &6Manatafel&r, jeden einzelnen &6Terrastahlbarren&r und zwei für jeden &dRunenkern&r. Und der Obelisk will &e600&r Stück für das Stufe-2-Ziel, das sind allein &d3,6 Millionen Mana&r."
 		""
 		"&eWoher die Perlen kommen:&r"
 		"&e1.&r Endermen in der Oberwelt, nachts auf großen Ebenen."
 		"&e2.&r Der &cNether&r ist jetzt offen: Im &5Wirrwald&r wimmelt es von Endermen."
 		"&e3.&r Piglins tauschen gegen Gold gelegentlich Enderperlen ein."
-		""
-		"&eTipp:&r Ein &6Tolldorn&r auf einer Plattform im Wirrwald ist eine sehr faule Endermanfarm."
 	]
-	quest.CDF888D56AB321F0.quest_subtitle: "Eine Enderperle, die glüht."
+	quest.CDF888D56AB321F0.quest_subtitle: "Eine Enderperle, die glüht, auf Messing gebettet."
 	quest.CDF888D56AB321F0.title: "&bManaperle"
 	quest.CE1640D4F0A6D771.quest_desc: [
 		"Ein Zugrahmen und eine Druckplatte ergeben zwei &6Zugbeobachter&r. Aufs Gleis gesetzt wie ein Signal, gibt er ein Redstone-Signal, solange ein Zug über ihm ist. Mit einem Filter reagiert er nur auf Züge, die ein bestimmtes Item geladen haben."
@@ -5055,13 +5192,6 @@
 	]
 	quest.D419CDFEA245058F.quest_subtitle: "Rotation rein, FE raus."
 	quest.D419CDFEA245058F.title: "&6Alternator"
-	quest.D5312D8A843EEB62.quest_desc: [
-		"Ein &6Manadiamant&r ins Portal ergibt einen &dDrachenstein&r. Er steckt später in einigen der stärksten Geräte, etwa im Kristallbogen, in der Rute des Bifröst oder im Gaia-Manaverbreiter."
-		""
-		"Neun Drachensteine ergeben einen Drachensteinblock, einen hübschen Baublock. Aber jeder Diamant, den du hier eintauschst, fehlt beim Terrastahl."
-	]
-	quest.D5312D8A843EEB62.quest_subtitle: "Der Edelstein der Elfen."
-	quest.D5312D8A843EEB62.title: "&dDrachenstein"
 	quest.D59DFB18CD053CE6.quest_desc: [
 		"Die &6Sage Burning Plate&r mischst du aus &e8 Goldbarren&r im beheizten Lavakessel. Rechtsklick mit einem &6Dried Sage Bundle&r legt es auf die Platte, ein Feuerzeug zündet es an."
 		""
@@ -5083,7 +5213,7 @@
 	quest.D6EEF29F1CBC1249.quest_desc: [
 		"Jeder Stamm, den das Gänseblümchen berührt, wird zum &6Lebeholzstamm&r. Daraus baust du alles, was Mana bewegt: den &6Manaverbreiter&r (6 Stämme), den &6Lebeholzzweig&r für den Stab des Waldes und die &6Lebeholzbretter&r für die Offene Kiste."
 		""
-		"Vier Stämme ergeben im Quadrat drei Blöcke &6Lebeholz&r, das rundum Rinde zeigt. Für das Elfenportal in Stufe 2 brauchst du später acht Lebeholzstämme und drei schimmernde Varianten, leg also ruhig einen Vorrat an."
+		"Vier Stämme ergeben im Quadrat drei Blöcke &6Lebeholz&r, das rundum Rinde zeigt. Für das Elfenportal in Stufe 3 brauchst du später acht Lebeholzstämme und drei schimmernde Varianten, und zwei &6Lebeholzzweige&r stecken in jedem Ritual für Manastahl. Leg also ruhig einen Vorrat an."
 		""
 		"&eTipp:&r Jede Holzsorte funktioniert, auch Stämme aus dem Nether oder aus anderen Mods."
 	]
@@ -5092,9 +5222,9 @@
 	quest.D714EBDF3126946C.quest_desc: [
 		"Lege im Handwerksraster zwei &6Andesit&r und zwei &6Eisenklumpen&r schräg gegenüber, oder Zinkklumpen statt Eisen. Heraus kommt eine &6Andesitlegierung&r."
 		"{image:create:textures/item/andesite_alloy.png width:32 height:32 align:center}"
-		"Von Hand ist das teuer: zwei Andesit pro Legierung. Sobald du einen &6Mechanischen Mixer&r hast, mischt er aus einem Andesit und einem Klumpen eine Legierung, also doppelt so sparsam und ganz ohne dich."
+		"Von Hand ist das teuer: zwei Andesit und zwei Klumpen für eine einzige Legierung. Sobald du einen &6Mechanischen Mixer&r hast, mischt er aus einem Andesit und einem Klumpen gleich &ezwei&r Legierungen. Das ist viermal so sparsam, und er arbeitet ganz ohne dich."
 		""
-		"Aus Legierung entstehen Wellen, Zahnräder, Gehäuse, Schleusen und fast alles andere in diesem Kapitel. Außerdem ist sie der &6Technik-Pfeiler&r des Obelisk-Ziels von Stufe 1: bei 30 Spielern will der Obelisk 3 000 Stück sehen. Jede Legierung, die du übrig hast, ist dort gut aufgehoben."
+		"Aus Legierung entstehen Wellen, Zahnräder, Gehäuse, Schleusen und fast alles andere in diesem Kapitel. Außerdem ist sie der &6Technik-Pfeiler&r des Obelisk-Ziels von Stufe 1: bei 30 Spielern will der Obelisk 1 500 Stück sehen. Jede Legierung, die du übrig hast, ist dort gut aufgehoben."
 	]
 	quest.D714EBDF3126946C.quest_subtitle: "Das Herz jeder Maschine dieser Stufe."
 	quest.D714EBDF3126946C.title: "&6Andesitlegierung"
@@ -5129,7 +5259,7 @@
 		""
 		"Wie immer: Rechtsklick auf den platzierten Block. Für diese Quest brauchst du ein &6Eisenfass&r im Inventar. Das geht auch direkt im Handwerksraster: ein Fass in die Mitte, acht Eisenbarren drumherum."
 		""
-		"Die Stufen danach sind &6Gold&r (81 Plätze, 3 Upgrades) und &6Diamant&r (108 Plätze, 4 Upgrades). Die sind nicht gesperrt, aber teuer. &6Netherit&r braucht den Nether und damit Stufe 2."
+		"Die Stufen danach kommen mit dem Server: &6Gold&r (81 Plätze, 3 Upgrades) öffnet mit Stufe 2, &6Diamant&r (108 Plätze, 4 Upgrades) mit Stufe 3 und &6Netherit&r mit Stufe 4. Eisen ist also das Beste, was du in Stufe 1 bekommst, und mit einem Stack-Upgrade reicht das für lange Zeit."
 	]
 	quest.D8C129DB3D7AD17D.quest_subtitle: "Mehr Platz und ein zweiter Upgrade-Platz."
 	quest.D8C129DB3D7AD17D.title: "Eisenstufe"
@@ -5142,15 +5272,6 @@
 	]
 	quest.DA069A8E373778AB.quest_subtitle: "Eine Lohe, die für dich heizt."
 	quest.DA069A8E373778AB.title: "&6Lohenbrenner"
-	quest.DA3A442422436536.quest_desc: [
-		"Die Lexica weiß über Alfheim fast nichts, das Wissen der Elfen ist verloren. Aber vielleicht, wenn die Elfen einen Blick hineinwerfen könnten ..."
-		""
-		"Wirf deine &6Lexica Botania&r ins offene Portal. Du bekommst sie mit dem &eWissen der Elfen&r zurück, und ein ganzer neuer Bereich im Buch wird lesbar."
-		""
-		"&eKleines Geheimnis:&r Wirf auch mal ein &6Brot&r hinein."
-	]
-	quest.DA3A442422436536.quest_subtitle: "Lass die Elfen dein Buch lesen."
-	quest.DA3A442422436536.title: "Wissen der Elfen"
 	quest.DA558B0499746957.quest_desc: [
 		"Leg die &6Sternbunkel-Scherben&r in den Apparat und &e4 Goldbarren&r auf die Podeste. Heraus kommt der &6Sternbunkel-Charme&r. Rechtsklick auf den Boden, und dein eigener Sternbunkel erscheint."
 		""
@@ -5332,16 +5453,16 @@
 	quest.E491084B193A3E66.quest_subtitle: "Enchantment Industry: Erfahrung zum Abfüllen."
 	quest.E491084B193A3E66.title: "&6Mechanischer Schleifstein"
 	quest.E4FE22C633678D6D.quest_desc: [
-		"Das Ziel: &e1 500 Manaperlen&r für den Obelisken, das sind &d9 000 000 Mana&r und 1 500 Enderperlen. Das schafft niemand allein, aber zu dreißig ist es gut machbar."
+		"Das Ziel: &e600 Manaperlen&r für den Obelisken, das sind &d3,6 Millionen Mana&r und 600 Enderperlen, dazu zwei Perlen für jeden Runenkern. Das schafft niemand allein, aber zu dreißig ist es gut machbar."
 		""
 		"&eSo wird daraus eine Fabrik:&r"
 		"&e1.&r Eine Endermanfarm im Wirrwald oder in der Oberwelt, mit Tolldorn oder Schwert."
-		"&e2.&r Ein Trichter oder ein Create-Förderband wirft die Perlen in ein Becken, das von vielen Blumen gespeist wird."
+		"&e2.&r Ein Manabecken mit einem &6Messinggehäuse&r darunter, gespeist von vielen Blumen. Ein Trichter oder ein Create-Förderband wirft die Enderperlen hinein."
 		"&e3.&r Eine Trichtermalve am Beckenrand fischt die fertigen Manaperlen wieder heraus und steckt sie in eine Truhe."
 		""
 		"Eine Truhe neben dem Obelisken, die du selbst gestellt hast, wird zu deinem Zulieferer: Alle zwei Sekunden holt der Obelisk heraus, was er brauchen kann."
 	]
-	quest.E4FE22C633678D6D.quest_subtitle: "Tausendfünfhundert Perlen wollen verdient sein."
+	quest.E4FE22C633678D6D.quest_subtitle: "Sechshundert Perlen wollen verdient sein."
 	quest.E4FE22C633678D6D.title: "&bPerlen am Fließband"
 	quest.E511FADB80273BAF.quest_desc: [
 		"Gleiches Rezept wie der vulkanische, nur mit &6Weizen&r statt Lava. Jede Pflanze und jeder Baum, der im Umkreis von &e15 Blöcken&r wächst, bringt Quelle."
@@ -5396,9 +5517,12 @@
 	quest.E761F3A1D3D8DB7E.quest_desc: [
 		"Nicht nur die Ziele verlangen beides, auch einige Rezepte binden Technik und Magie aneinander. Ab Stufe 2 zum Beispiel:"
 		""
-		"Der &6Blaze-Brenner&r aus Create braucht zwei &6Quelljuwelen&r. Messing braucht also einen Magier."
-		"Die &6Terrestrische Agglomerationsplatte&r aus Botania braucht zwei &6Messinggehäuse&r. Terrastahl braucht also einen Ingenieur."
-		"Die &6Metallurgische Infusionsmaschine&r aus Mekanism braucht &6Manastahl&r."
+		"Der &6Lohenbrenner&r aus Create braucht zwei &6Quelljuwelen&r. Messing braucht also einen Magier."
+		"Die &6Terrestrische Agglomerationsplatte&r aus Botania braucht zwei &6Messinggehäuse&r, der &6Runenaltar&r einen Messingbarren, und &6Manaperlen&r gibt es nur aus einem Becken mit einem Messinggehäuse darunter. Botania braucht also einen Ingenieur."
+		"Die &6Metallurgische Infusionsmaschine&r aus Mekanism braucht &6Manastahl&r, und der erste Manastahl kommt aus einem Ritual von Nature's Aura."
+		"Der &6Einfache Steuerschaltkreis&r von Mekanism entsteht aus einer &6Elektronenröhre&r von Create."
+		""
+		"Schon in Stufe 1 verbinden die beiden &6Meilensteine&r des Obelisken alle Seiten: das Steinwerk-Getriebe braucht Infused Iron vom Natural Altar, der Quellschlussstein Manadiamanten und Andesitlegierung."
 		""
 		"Die betroffenen Quests erklären das geänderte Rezept jeweils genau. Sprich dich mit den anderen ab, wer was übernimmt."
 	]
@@ -5454,6 +5578,17 @@
 	]
 	quest.E9DAA25D08DA54B3.quest_subtitle: "Create Connected: Waschen ohne Wasserblock."
 	quest.E9DAA25D08DA54B3.title: "&6Lüfter-Katalysatoren"
+	quest.EA4AE1916414EFF9.quest_desc: [
+		"Auf Kronwerke steckt in jedem Mekanism-Schaltkreis ein Stück Create: der &6Einfache Steuerschaltkreis&r entsteht aus einer &6Elektronenröhre&r."
+		""
+		"{image:create:textures/item/electron_tube.png width:32 height:32 align:center}"
+		""
+		"Eine Elektronenröhre ist &6Polierter Rosenquarz&r auf einem &6Eisenblech&r. Rosenquarz machst du aus Netherquarz und acht Redstone, poliert wird er mit Schmirgelpapier oder von einem Einsatzgerät. Alles dazu steht im Kapitel &6Create: Messing&r."
+		""
+		"Kein Create-Spieler? Dann tausch: Osmium oder Stahl gegen einen Stapel Röhren. Die Create-Leute brauchen selbst sehr viele davon, denn in jedem Präzisionsgetriebe stecken im Schnitt über acht."
+	]
+	quest.EA4AE1916414EFF9.quest_subtitle: "Mekanism denkt mit Create-Röhren."
+	quest.EA4AE1916414EFF9.title: "&6Elektronenröhren von Create"
 	quest.EAAAFD04D2721064.quest_desc: [
 		"In Silent Gear baust du Werkzeuge, Waffen und Rüstung aus &eTeilen&r zusammen, und jedes Teil kann aus einem anderen Material sein. Eine Spitzhacke ist hier kein festes Item, sondern ein &6Kopf&r plus ein &6Stiel&r, dazu auf Wunsch eine &6Verbindung&r, ein &6Griff&r und eine &6Spitze&r."
 		""
@@ -5597,12 +5732,16 @@
 	quest.F0B8D7B3372EC244.quest_subtitle: "Aus Vanilla wird Sophisticated."
 	quest.F0B8D7B3372EC244.title: "Umwandlungsupgrade"
 	quest.F0CF533BDB0144AF.quest_desc: [
-		"Ein &6Kupferbarren&r und ein &6Zinkbarren&r ergeben im Legierungsofen &6zwei Messingbarren&r. Das ist dasselbe Messing, das Create im beheizten Mixer macht."
+		"Im Original macht der Legierungsofen aus Kupfer und Zink zwei Messingbarren. Auf Kronwerke nicht: &6Messing&r ist der Meilenstein von Stufe 2, und dafür gibt es genau einen Weg, den &6Mechanischen Mixer&r von Create über einem Lohenbrenner."
 		""
-		"&eKronwerke:&r Das Obelisk-Ziel dieser Stufe verlangt tausende &6Messingbarren&r. Der Mixer mit Lohenbrenner ist auf Dauer schneller, aber ein paar Legierungsöfen sind eine gute Ergänzung, solange die Create-Straße noch wächst."
+		"Das Rezept dort: zwei Kupfer, ein Zink und ein &6Lohenstaub&r im erhitzten Becken ergeben einen Barren. Mit einem Lohenkuchen &cüberhitzt&r werden aus zwei Kupfer und einem Zink zwei Barren, ganz ohne Staub. Alles dazu steht im Kapitel &6Create: Messing&r."
+		""
+		"&eWarum dich das betrifft:&r Immersive Engineering braucht auf Kronwerke selbst Create-Teile. Der &6Leichte Ingenieursbaustein&r bekommt ein &6Messingblech&r statt eines Kupferbarrens, der &6Schwere Ingenieursbaustein&r ein &6Präzisionsgetriebe&r statt einer Stahlkomponente. Beide Blöcke öffnen mit &6Stufe 3&r, aber wer jetzt schon Messing und Getriebe beiseitelegt, baut dann sofort die großen Maschinen."
+		""
+		"Dein Beitrag zum Messing-Ziel: &6Koks&r aus dem Koksofen und Holzkohle halten die Lohenbrenner der Mixer am Laufen, und Stahl aus dem Hochofen brauchen alle für ihre Werkzeuge. Tausch, was du hast, gegen das Messing der Create-Spieler."
 	]
-	quest.F0CF533BDB0144AF.quest_subtitle: "Für das Stufenziel zählt jeder Barren."
-	quest.F0CF533BDB0144AF.title: "&6Messing ohne Mixer"
+	quest.F0CF533BDB0144AF.quest_subtitle: "Warum der Legierungsofen hier kein Messing kann."
+	quest.F0CF533BDB0144AF.title: "&6Messing nur aus dem Mixer"
 	quest.F113895AA38387CC.quest_desc: [
 		"{image:sophisticatedbackpacks:textures/item/upgrade_base.png width:32 height:32 align:center}"
 		""
@@ -5761,19 +5900,10 @@
 		""
 		"Mit dem Schraubenschlüssel schaltest du zwischen &eBenutzen&r und &eSchlagen&r um, im Filterfeld legst du fest, was es annimmt. Es kostet 4 SU pro RPM."
 		""
-		"Das Einsatzgerät ist das Herz der &esequenziellen Montage&r und damit dein Weg zum Präzisionsgetriebe."
+		"Das Einsatzgerät ist das Herz der &esequenziellen Montage&r und damit dein Weg zum Präzisionsgetriebe. Für die Präzisionslinie brauchst du drei davon."
 	]
 	quest.F565F01F8794304F.quest_subtitle: "Eine Hand, die benutzt, was sie hält."
 	quest.F565F01F8794304F.title: "&6Einsatzgerät"
-	quest.F5B24A8E42E995A1.quest_desc: [
-		"{image:sophisticatedstorage:textures/item/iron_to_gold_tier_upgrade.png width:32 height:32 align:center}"
-		""
-		"Das &6Eisen zu Goldversion Upgrade&r (&6acht Goldbarren&r und ein &6Hebel&r) bringt eine Eisentruhe auf &e81 Plätze&r und &edrei Upgrade-Plätze&r."
-		""
-		"In Stufe 1 ist das ein Luxus, aber einer, der sich für dein Hauptlager lohnt. Mit Stack-Upgrade Stufe 1 passen über 10 000 Items hinein."
-	]
-	quest.F5B24A8E42E995A1.quest_subtitle: "Für die ganz großen Vorräte."
-	quest.F5B24A8E42E995A1.title: "Goldstufe"
 	quest.F6A16BE5D767DC8F.quest_desc: [
 		"&dVerstärken&r (Amplify) ist die wichtigste Verstärkung der ersten Stufe. Du bezahlst sie mit einer &6Diamantspitzhacke&r, es lohnt sich."
 		""
@@ -5899,9 +6029,11 @@
 	quest.FA5C561BBC69017D.quest_subtitle: "Feder, Tinte, Buch, alles aus Spiritfire."
 	quest.FA5C561BBC69017D.title: "&6Zutaten des Bindungsbuchs"
 	quest.FA6B3CDAF9360F83.quest_desc: [
-		"Ein Präzisionsgetriebe von Hand ist ein Erfolgserlebnis. Das Obelisk-Ziel will aber &6300&r davon, und viele Maschinen brauchen sie ebenfalls: Mechanischer Arm, Drehzahlregler, Zugsteuerung, Fabrikanzeige."
+		"Ein Präzisionsgetriebe von Hand ist ein Erfolgserlebnis. Das Obelisk-Ziel will aber &6150&r davon, jedes &6Messingherz&r braucht eins, und viele Maschinen ebenfalls: Mechanische Handwerkseinheit, Mechanischer Arm, Drehzahlregler, Zugsteuerung, Fabrikanzeige. Sogar der Molekulare Assembler von AE2 und der Schwere Ingenieursbaustein von Immersive Engineering wollen später welche."
 		""
-		"Automatisiere alle Zutaten: eine Presse macht Goldbleche, ein Einsatzgerät setzt Bretter auf Wellen für die Zahnräder, die Eisenklumpen kommen aus der Erzwäsche. Schleusen füllen die Einsatzgeräte nach, und die fertigen Getriebe landen in einer Kiste, oder gleich im Einspeiser am Obelisken."
+		"Automatisiere alle Zutaten: eine Presse macht Messingbleche, ein Einsatzgerät setzt Bretter auf Wellen für die Zahnräder, die Eisenklumpen kommen aus der Erzwäsche. Das Wichtigste ist eine eigene &6Röhrenlinie&r: Rosenquarz aus Quarz und Redstone, ein Einsatzgerät mit Schmirgelpapier poliert ihn, und eine Handwerkseinheit oder ein zweites Einsatzgerät setzt ihn auf ein Eisenblech. Pro Getriebe brauchst du im Schnitt über acht Röhren."
+		""
+		"Schleusen füllen die Einsatzgeräte nach, der Schrott läuft zurück, und die fertigen Getriebe landen in einer Kiste oder gleich im Einspeiser am Obelisken."
 	]
 	quest.FA6B3CDAF9360F83.quest_subtitle: "Getriebe am laufenden Band."
 	quest.FA6B3CDAF9360F83.title: "&6Die Präzisionslinie"
@@ -6068,7 +6200,6 @@
 	task.465B6A5D72E627E9.title: "Foliot Crusher beschworen"
 	task.471A21CFFED9210E.title: "Gelesen"
 	task.48D4E14157D54B69.title: "Verstanden"
-	task.49BDB8680E8DF9AD.title: "Portal geöffnet"
 	task.4B7E38B50D604E2D.title: "Verstanden"
 	task.4B9AB73F42584B3A.title: "Auf geht's"
 	task.4FC8C6E9B71BC49D.title: "Einen Djinni-Dienst genutzt"
@@ -6122,6 +6253,7 @@
 	task.C4B2D818CF477667.title: "Einen Auftrag erfüllt"
 	task.C50D45EF7A63CAAE.title: "Djinni Crusher beschworen"
 	task.C7403E80FC11F8F6.title: "Ein Dorf gefunden"
+	task.C7D63A3004F93CF0.title: "Verstanden"
 	task.CBED48A0879A9455.title: "Zug gebaut und gefahren"
 	task.D3A24673DA264C80.title: "Los geht's"
 	task.D4BCAE017B180DD6.title: "Gelesen"
@@ -6133,6 +6265,7 @@
 	task.DF6C5F6F3964499D.title: "Eine neue Struktur gefunden"
 	task.DF8A209F7D9F0608.title: "Abgeliefert"
 	task.DF8A3CFD4578D557.title: "Ich war unterwegs"
+	task.DFBFC0BFBAD8A912.title: "Los geht's"
 	task.E01B29EF9F53C1D3.title: "Angeschaut"
 	task.E076857695CFA02C.title: "Notiert"
 	task.E301538B14D14E27.title: "Einen Vertrauten gerufen"
@@ -6140,7 +6273,6 @@
 	task.E45639AFDEBB153A.title: "Der Güterzug fährt"
 	task.E753C1C1C55DECE3.title: "Foliot Smelter beschworen"
 	task.EA29E54E7B651A1A.title: "Ich bin dabei"
-	task.EB69458913493017.title: "Lexica zurückbekommen"
 	task.ED80871CAB9C21B9.title: "Gelesen"
 	task.F05C75F7D2268305.title: "Verstanden"
 	task.F0E74B646F6E85B7.title: "Eine Netherbahn gebaut"

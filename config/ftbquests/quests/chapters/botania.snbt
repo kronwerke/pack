@@ -1211,6 +1211,78 @@
 			]
 		}
 		{
+			id: "B435FA9F8A2B0B11"
+			x: 21.0d
+			y: 8.7d
+			icon: {
+				id: "naturesaura:infused_iron"
+				count: 1
+			}
+			optional: true
+			dependencies: [
+				"A6A79D780C28D080"
+			]
+			tasks: [
+				{
+					id: "E278281A26D40EDA"
+					type: "item"
+					item: {
+						id: "naturesaura:infused_iron"
+						count: 1
+					}
+					count: 4
+				}
+				{
+					id: "3785F5B4BC49F6EF"
+					type: "item"
+					item: {
+						id: "botania:livingwood_twig"
+						count: 1
+					}
+					count: 2
+				}
+				{
+					id: "4832E2B691E27DD7"
+					type: "item"
+					item: {
+						id: "botania:mana_diamond"
+						count: 1
+					}
+					count: 1
+				}
+				{
+					id: "A4F469F73C840ABC"
+					type: "item"
+					item: {
+						id: "naturesaura:gold_leaf"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "85D4051C2E22A289"
+					type: "item"
+					item: {
+						id: "minecraft:oak_sapling"
+						count: 1
+					}
+					count: 4
+				}
+				{
+					id: "DD32822667BCACBE"
+					type: "loot"
+					table_id: "870211AF0E412C54"
+				}
+				{
+					id: "01145880969A7F41"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+		}
+		{
 			id: "A1AEB7D0E5FB1298"
 			x: 21.0d
 			y: 6.5d

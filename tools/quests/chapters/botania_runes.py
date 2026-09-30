@@ -1,7 +1,8 @@
-"""Botania in stage 2: manasteel, mana pearls, the runic altar and its runes, the flowers that
-need runes, the terrestrial agglomeration plate (two Create brass casings on Kronwerke, see
-kubejs/server_scripts/tech_and_magic.js), terrasteel and the elven gateway. Elementium, pixie
-dust and dreamwood stay locked until stage 3 (stage3.json)."""
+"""Botania in stage 2: manasteel (Nature's Aura tree ritual, then infused iron in the pool), mana
+pearls (brass casing under the pool), the runic altar (with a brass ingot) and its runes, the
+flowers that need runes, the terrestrial agglomeration plate (two Create brass casings), terrasteel
+and the Runenkern milestone. See kubejs/server_scripts/kronwerke/magic.js and tech_and_magic.js.
+The elven gateway, the Alfheim trade, elementium, pixie dust and dreamwood are stage 3."""
 from ftbq import (chapter, quest, task_item, task_checkmark, reward_item, reward_table,
                   reward_xp, banner, img, item_texture)
 
@@ -15,44 +16,77 @@ def block_img(name, size=32):
 
 quests = [
     # ---- Manastahl --------------------------------------------------------
-    quest("welcome", 0, 0, "&bManastahl",
-          subtitle="Stufe 2 ist offen. Eisen, getränkt in Mana.",
+    quest("welcome", 0, 0, "&bDas Messingwerk blüht",
+          subtitle="Stufe 2 ist offen. Jetzt zeigt Botania, was es kann.",
           description=[
-              "Mit &6Stufe 2 (Messingwerk)&r zeigt das Manabecken, was es wirklich kann. Wirf einen &6Eisenbarren&r in ein Becken, und für &d3 000 Mana&r kommt er als &bManastahlbarren&r zurück. Ein Eisenblock wird für 27 000 Mana direkt zum Manastahlblock.",
+              "Mit &6Stufe 2 (Messingwerk)&r öffnet der Rest von Botania: &bManastahl&r, &bManaperlen&r, der &aRunenaltar&r mit seinen sechzehn Runen, viel stärkere Blumen und am Ende &aTerrastahl&r.",
+              "",
+              "Auf Kronwerke ist Botania dabei eng mit den anderen Mods verflochten. Der erste Manastahl kommt aus einem Ritual von &aNature's Aura&r, Manaperlen gibt es nur mit einem &6Messinggehäuse&r aus Create unter dem Becken, und auch im Runenaltar und in der Terraplatte steckt Messing. Umgekehrt braucht Mekanism deinen Manastahl und Create deine Feuerrunen.",
+              "",
+              "&6Das Ziel am Obelisken:&r Für Stufe 3 will der Obelisk auf der Magieseite &e600 Manaperlen&r und &e50 Terrastahlbarren&r (die Mengen passen sich der Spielerzahl an), dazu &e8 Runenkerne&r, eine feste Zahl. Alles kommt aus diesem Kapitel, zusammen rund &d30 Millionen Mana&r. Baut jetzt Blumen, so viele ihr könnt.",
+              "",
+              "&cNoch nicht offen:&r Das Elfenportal und der Handel mit Alfheim gehören zu &6Stufe 3 (Stahlwerk)&r.",
+          ],
+          tasks=[task_checkmark("Los geht's")],
+          rewards=[reward_item("botania:livingrock", 16), reward_table("s2_common")],
+          icon="botania:rune_of_mana", size=2.0, shape="hexagon"),
+
+    quest("ritual", 2.4, -1.2, "&aRitual des Waldes",
+          subtitle="Der erste Manastahl wächst an einem Baum.",
+          description=[
+              "Ein Eisenbarren im Manabecken bleibt auf Kronwerke einfach liegen. Den ersten &bManastahl&r machst du mit dem &aRitual des Waldes&r (Ritual of the Forest) aus &aNature's Aura&r.",
+              "",
+              "&eDu brauchst:&r &6Gold Powder&r (ein Gold Leaf ergibt zwei) für das Muster auf dem Boden, &6Wooden Stands&r (ein Gold Leaf auf einem Stamm) für die Zutaten und einen &6Eichensetzling&r.",
+              "&eDie Zutaten:&r &e4&r &6Infused Iron&r, &e2&r &6Lebeholzzweige&r, &e1&r &bManadiamant&r und &e1&r &6Gold Leaf&r, je eins auf einen Stand.",
+              "",
+              "&eSo geht es:&r Leg das Gold Powder in dem Muster aus, das dir das Buch von Nature's Aura im Eintrag zum Ritual als Vorschau zeigt, stell die Stände darum und leg die acht Zutaten darauf. Dann pflanzt du den &6Eichensetzling&r in die Mitte und lässt ihn wachsen, am schnellsten mit Knochenmehl. Sein Wachstum startet das Ritual: der Baum verschlingt die Zutaten, und nach etwa 15 Sekunden liegen &e4 Manastahlbarren&r in der Mitte.",
+              "",
+              "&cHäufige Fehler:&r ein anderer Setzling als Eiche, eine fehlende Zutat oder ein Muster mit Lücken. Dann wächst nur ein ganz normaler Baum.",
+              "",
+              "&6Tipp:&r Das &6Infused Iron&r macht der &aNatural Altar&r aus Eisenbarren. Viele Bäume und Blumen rund um den Altar halten die Aura oben.",
+          ],
+          tasks=[task_item("botania:manasteel_ingot", 4)],
+          rewards=[reward_item("naturesaura:gold_leaf", 2), reward_xp(5)],
+          deps=["welcome"], icon="naturesaura:wood_stand", size=1.5, shape="square"),
+
+    quest("infused_pool", 2.4, 1.2, "&bManastahl aus dem Becken",
+          subtitle="Der Weg für große Mengen.",
+          description=[
+              "Das Ritual ist für den Anfang. Für Runen, Terrastahl und die Mekanism-Leute brauchst du bald Dutzende Barren, und dafür gibt es den zweiten Weg: Wirf &6Infused Iron&r in ein Manabecken. Für &d3 000 Mana&r wird jedes Stück zu einem &bManastahlbarren&r.",
               "",
               img(item_texture("botania:manasteel_ingot"), 32, 32),
               "",
-              "Manastahl ist das Metall für alles, was jetzt kommt: Runen, Manatafel, Linsen, Pylonen, Werkzeuge und die Grundzutat von Terrastahl.",
+              "&6Infused Iron&r macht nur der &aNatural Altar&r von Nature's Aura, die Abkürzung an der Werkbank gibt es auf Kronwerke nicht. Ein Eisenbarren auf dem Altar zieht Aura aus der Umgebung und wird veredelt. Ein Trichter oder eine Schleuse bringt Eisen auf den Altar, holt das Infused Iron ab und wirft es ins Becken: fertig ist die Manastahl-Fabrik.",
               "",
-              "&6Das Ziel am Obelisken:&r Für Stufe 3 will der Obelisk auf der Magieseite &e1 500 Manaperlen&r und &e100 Terrastahlbarren&r (die Zahlen passen sich der Spielerzahl an). Beides kommt aus diesem Kapitel. Zusammen sind das über &d60 Millionen Mana&r, also baut jetzt Blumen, so viele ihr könnt.",
+              "&eBlöcke:&r Einen Manastahlblock gibt es nur noch aus neun Barren an der Werkbank, nicht mehr aus einem Eisenblock im Becken.",
               "",
-              "&eTipp:&r Mekanik-Spieler brauchen deinen Manastahl ebenfalls, dazu gleich mehr.",
+              "Manastahl ist das Metall für alles, was jetzt kommt: Runen, Manatafel, Linsen, Werkzeuge und die Grundzutat von Terrastahl.",
           ],
-          tasks=[task_item("botania:manasteel_ingot", 8)],
+          tasks=[task_item("botania:manasteel_ingot", 16)],
           rewards=[reward_item("minecraft:iron_ingot", 16), reward_table("s2_common")],
-          icon="botania:manasteel_ingot", size=2.0, shape="hexagon"),
+          deps=["welcome"], icon="botania:manasteel_ingot", size=1.5, shape="square"),
 
-    quest("mana_pearl", 2.7, -1.1, "&bManaperle",
-          subtitle="Eine Enderperle, die glüht.",
+    quest("mana_pearl", 7.2, -1.2, "&bManaperle",
+          subtitle="Eine Enderperle, die glüht, auf Messing gebettet.",
           description=[
-              "Eine &6Enderperle&r im Becken wird für &d6 000 Mana&r zur &bManaperle&r.",
+              "Eine &6Enderperle&r im Becken wird für &d6 000 Mana&r zur &bManaperle&r. Auf Kronwerke aber nur, wenn direkt &eunter dem Manabecken&r ein &6Messinggehäuse&r aus Create steht. Es wirkt als Katalysator, so wie die Katalysatoren von Botania selbst. Ohne das Gehäuse bleibt die Perle einfach im Becken liegen.",
               "",
               img(item_texture("botania:mana_pearl"), 32, 32),
               "",
-              "Du brauchst sie für die &6Rune des Manas&r, die &6Manatafel&r und für jeden einzelnen &6Terrastahlbarren&r. Und der Obelisk will &e1 500&r Stück für das Stufe-2-Ziel. Das sind allein &d9 Millionen Mana&r, neun randvolle Becken.",
+              "Die anderen Infusionen stört das Gehäuse nicht: Manastahl aus Infused Iron, Manadiamanten und Managlas entstehen im selben Becken weiter wie gewohnt.",
+              "",
+              "Du brauchst Perlen für die &6Rune des Manas&r, die &6Manatafel&r, jeden einzelnen &6Terrastahlbarren&r und zwei für jeden &dRunenkern&r. Und der Obelisk will &e600&r Stück für das Stufe-2-Ziel, das sind allein &d3,6 Millionen Mana&r.",
               "",
               "&eWoher die Perlen kommen:&r",
               "&e1.&r Endermen in der Oberwelt, nachts auf großen Ebenen.",
               "&e2.&r Der &cNether&r ist jetzt offen: Im &5Wirrwald&r wimmelt es von Endermen.",
               "&e3.&r Piglins tauschen gegen Gold gelegentlich Enderperlen ein.",
-              "",
-              "&eTipp:&r Ein &6Tolldorn&r auf einer Plattform im Wirrwald ist eine sehr faule Endermanfarm.",
           ],
           tasks=[task_item("botania:mana_pearl", 8)],
           rewards=[reward_item("minecraft:ender_pearl", 8)],
-          deps=["welcome"], icon="botania:mana_pearl"),
+          deps=["brass_casing"], icon="botania:mana_pearl"),
 
-    quest("mana_quartz", 2.7, 1.1, "&bManaquarz",
+    quest("mana_quartz", 4.8, 1.2, "&bManaquarz",
           subtitle="Nether-Quarz, blau gefärbt.",
           description=[
               "&6Netherquarz&r gibt es erst jetzt, mit dem Nether. Im Becken wird er für nur &d250 Mana&r zu &bManaquarz&r.",
@@ -65,7 +99,7 @@ quests = [
           rewards=[reward_item("minecraft:quartz", 16)],
           deps=["welcome"], icon="botania:mana_quartz"),
 
-    quest("mana_tablet", 5, -1.1, "&bManatafel",
+    quest("mana_tablet", 7.2, 1.2, "&bManatafel",
           subtitle="Ein halbes Manabecken in der Tasche.",
           description=[
               "Die &bManatafel&r craftest du aus &e8 Lebestein&r um einen &eManadiamanten&r oder eine &eManaperle&r. Sie speichert bis zu &d500 000 Mana&r.",
@@ -78,7 +112,7 @@ quests = [
           rewards=[reward_item("botania:livingrock", 16), reward_xp(5)],
           deps=["mana_pearl"], icon="botania:mana_tablet"),
 
-    quest("band_of_mana", 7.2, -1.1, "&6Manaband",
+    quest("band_of_mana", 7.2, 3.3, "&6Manaband",
           subtitle="Die Tafel als Ring.",
           description=[
               "Setz eine &6Manatafel&r mit &e4 Manastahlbarren&r zu einem Ring zusammen, und du bekommst das &6Manaband&r. Es funktioniert genau wie die Tafel, sitzt aber in einem Schmuckplatz statt im Inventar.",
@@ -89,7 +123,7 @@ quests = [
           rewards=[reward_item("botania:manasteel_ingot", 4)],
           deps=["mana_tablet"], optional=True),
 
-    quest("manasteel_gear", 5, 1.1, "&6Manastahl-Ausrüstung",
+    quest("manasteel_gear", 2.4, 3.3, "&6Manastahl-Ausrüstung",
           subtitle="Werkzeug, das sich selbst repariert.",
           description=[
               "Aus Manastahl und &6Lebeholzzweigen&r baust du Werkzeuge und aus Manastahl allein eine Rüstung, mit denselben Mustern wie bei Eisen.",
@@ -100,22 +134,22 @@ quests = [
           ],
           tasks=[task_item("botania:manasteel_pickaxe", 1)],
           rewards=[reward_item("botania:manasteel_ingot", 4)],
-          deps=["welcome"], optional=True),
+          deps=["infused_pool"], optional=True),
 
-    quest("mekanism_tie", 7.2, 1.1, "Manastahl für Ingenieure",
+    quest("mekanism_tie", 4.8, 3.3, "Manastahl für Ingenieure",
           subtitle="Auf Kronwerke braucht Mekanism deine Blumen.",
           description=[
               "Auf Kronwerke hängen Technik und Magie zusammen. Die erste Mekanism-Maschine, der &aMetallurgische Infusionierer&r, braucht hier &e2 Manastahlbarren&r in der unteren Reihe statt zwei Eisenbarren.",
               "",
               "Das neue Rezept: oben Eisen, Ofen, Eisen; in der Mitte Redstone, Osmiumbarren, Redstone; unten Manastahl, Ofen, Manastahl.",
               "",
-              "Ohne Infusionierer gibt es keinen Stahl, keine Schaltkreise und keine Mekanism-Maschinen. Wenn du Manastahl übrig hast, sprich mit den Technikern auf dem Server. Umgekehrt brauchst du bald Messing von ihnen, siehe Terrastahl.",
+              "Ohne Infusionierer gibt es keinen Stahl und keine Schaltkreise: selbst der &6Einfache Steuerschaltkreis&r entsteht auf Kronwerke im Infusionierer, aus einer Elektronenröhre von Create und Redstone. Wenn du Manastahl übrig hast, sprich mit den Technikern auf dem Server. Umgekehrt brauchst du Messing von ihnen, siehe links.",
           ],
           tasks=[task_checkmark("Gelesen")],
           rewards=[reward_xp(3)],
-          deps=["welcome"], icon="mekanism:metallurgic_infuser"),
+          deps=["infused_pool"], icon="mekanism:metallurgic_infuser"),
 
-    quest("mana_lens", 7.2, 3.3, "&6Manalinse",
+    quest("mana_lens", 0, 2.9, "&6Manalinse",
           subtitle="Mach aus einem Manastoß ein Werkzeug.",
           description=[
               "Die einfache &6Manalinse&r besteht aus &e4 Manastahlbarren&r um einen Block &eGlas&r. Mit Rechtsklick setzt du sie in einen Verbreiter ein. Allein tut sie nichts, aber sie ist die Grundlage für viele Spezial-Linsen.",
@@ -126,13 +160,13 @@ quests = [
           ],
           tasks=[task_item("botania:mana_lens", 1)],
           rewards=[reward_item("minecraft:glass", 16)],
-          deps=["mekanism_tie"], optional=True),
+          deps=["infused_pool"], optional=True),
 
     # ---- Runen ------------------------------------------------------------
     quest("runic_altar", 10.5, 0, "&aRunenaltar",
           subtitle="Hier entstehen die Runen.",
           description=[
-              "Der &aRunenaltar&r ist das Herz dieser Stufe. Rezept: &e5 Lebestein&r und ein &eManadiamant&r oder eine &eManaperle&r.",
+              "Der &aRunenaltar&r ist das Herz dieser Stufe. Auf Kronwerke steckt Messing darin: oben &eLebestein&r, &6Messingbarren&r, &eLebestein&r, unten &eLebestein&r, ein &eManadiamant&r oder eine &eManaperle&r, &eLebestein&r. Also vier Lebestein, ein Messingbarren und ein Manajuwel.",
               "",
               block_img("runic_altar_top"),
               "",
@@ -170,7 +204,7 @@ quests = [
               "",
               img(item_texture("botania:rune_of_fire"), 32, 32),
               "",
-              "Den Netherziegel brennst du aus Netherrack, das jetzt mit dem Nether erreichbar ist. Feuer brauchst du für die Terraplatte, die Thermalilie, die Gourmaryllis und die Exoflamme.",
+              "Den Netherziegel brennst du aus Netherrack, das jetzt mit dem Nether erreichbar ist. Feuer brauchst du für die Terraplatte, die Thermalilie, die Gourmaryllis, die Exoflamme und den Runenkern. Und die Ingenieure brauchen je eine für ihr &6Messingherz&r, den Meilenstein von Create: ein guter Tauschartikel gegen Messinggehäuse.",
           ],
           tasks=[task_item("botania:rune_of_fire", 2)],
           rewards=[reward_item("minecraft:gunpowder", 8)],
@@ -452,18 +486,18 @@ quests = [
           deps=["rune_air"], optional=True, icon="botania:jiyuulia"),
 
     # ---- Terrastahl -------------------------------------------------------
-    quest("brass_casing", 15, 6.5, "&6Messing vom Ingenieur",
-          subtitle="Terrastahl braucht auf Kronwerke die Technik.",
+    quest("brass_casing", 4.8, -1.2, "&6Messing vom Ingenieur",
+          subtitle="Perlen, Runen und Terrastahl brauchen die Technik.",
           description=[
-              "Auf Kronwerke ist die &aTerrestrische Agglomerationsplatte&r an Create gekoppelt. Im Originalrezept liegen oben drei Lapislazuliblöcke, hier sind es &eein Lapisblock zwischen zwei Create-Messinggehäusen&r.",
+              "Auf Kronwerke hängt Botania an Create. Messing brauchst du an drei Stellen: ein &6Messinggehäuse&r direkt &eunter dem Manabecken&r, in dem Manaperlen entstehen, einen &6Messingbarren&r im Runenaltar und zwei Messinggehäuse in der Terrestrischen Agglomerationsplatte.",
               "",
               img("create:textures/block/brass_casing.png", 32, 32),
               "",
-              "Ein &6Messinggehäuse&r entsteht, wenn du einen &6Messingbarren&r auf einen &6entrindeten Stamm&r oder entrindetes Holz anwendest (Rechtsklick oder per Create-Aufträger). Messing wiederum kommt aus dem Create-Mixer mit Lodernder Brennkammer, und die braucht auf Kronwerke zwei Quellsteine aus Ars Nouveau.",
+              "Ein &6Messinggehäuse&r entsteht, wenn du einen &6Messingbarren&r auf einen &6entrindeten Stamm&r oder entrindetes Holz anwendest, per Rechtsklick oder mit einem Einsatzgerät. Messing wiederum kommt aus dem Create-Mixer über einem &6Lohenbrenner&r, und dessen Gehäuse braucht auf Kronwerke zwei &dQuelljuwelen&r aus Ars Nouveau.",
               "",
-              "Magie braucht Technik, Technik braucht Magie. Wenn du selbst keine Messinglinie hast, tausch mit jemandem, der eine hat: dein Manastahl gegen ihr Messing.",
+              "Magie braucht Technik, Technik braucht Magie. Wenn du selbst keine Messinglinie hast, tausch mit jemandem, der eine hat: dein Manastahl oder deine Feuerrunen gegen ihr Messing.",
           ],
-          tasks=[task_item("create:brass_casing", 2)],
+          tasks=[task_item("create:brass_casing", 3), task_item("create:brass_ingot", 1)],
           rewards=[reward_item("create:brass_ingot", 4)],
           deps=["welcome"], icon="create:brass_casing"),
 
@@ -521,7 +555,7 @@ quests = [
               "",
               "Verbreiter, die auf die Platte zielen, funktionieren, Manafunken sind schneller. Neun Terrastahlklumpen ergeben einen Barren, neun Barren einen Block.",
               "",
-              "Terrastahl brauchst du für das Elfenportal (als Klumpen), für Terraklinge und Terrastahlrüstung, und &e100 Barren&r für den Obelisken.",
+              "Terrastahl brauchst du für Terraklinge und Terrastahlrüstung, einen Barren für jeden &dRunenkern&r und &e50 Barren&r für den Obelisken. In Stufe 3 kommen als Klumpen noch Naturapylonen und das Elfenportal dazu.",
           ],
           tasks=[task_item("botania:terrasteel_ingot", 2)],
           rewards=[reward_item("botania:mana_diamond", 2), reward_table("s2_uncommon")],
@@ -540,118 +574,15 @@ quests = [
           rewards=[reward_xp(10)],
           deps=["terrasteel"], optional=True, icon="botania:terra_blade"),
 
-    # ---- Alfheim ----------------------------------------------------------
-    quest("glimmering", 14, 13.8, "&6Schimmerndes Lebeholz",
-          subtitle="Lebeholz, das leuchtet.",
-          description=[
-              "Ein &6Lebeholzstamm&r und ein &6Glowstonestaub&r ergeben formlos einen &6Schimmernden Lebeholzstamm&r. Glowstone findest du jetzt im Nether an den Decken.",
-              "",
-              "Das Elfenportal braucht &e3 davon&r und dazu &e8 normale Lebeholzstämme&r. Welche Variante (Stamm, Holz, entrindet) du nimmst, ist egal.",
-          ],
-          tasks=[task_item("botania:glimmering_livingwood_log", 3)],
-          rewards=[reward_item("minecraft:glowstone_dust", 8)],
-          deps=["terrasteel"], icon="botania:glimmering_livingwood_log"),
-
-    quest("mana_pylon", 16.3, 13.8, "&6Manapylon",
-          subtitle="Ein Kristall, der Energie aus der Erde zieht.",
-          description=[
-              "Der &6Manapylon&r entsteht aus &e2 Goldbarren&r, &e2 Manastahlbarren&r und &e1 Manadiamanten&r.",
-              "",
-              "Neben einem Zaubertisch wirkt er wie viele Bücherregale: Schon &e2 Pylonen&r reichen für Stufe 30. Vor allem ist er aber die Basis für den &6Naturapylon&r.",
-          ],
-          tasks=[task_item("botania:mana_pylon", 2)],
-          rewards=[reward_item("minecraft:gold_ingot", 8)],
-          deps=["terrasteel"], icon="botania:mana_pylon"),
-
-    quest("natura_pylon", 18.6, 13.8, "&aNaturapylon",
-          subtitle="Er zapft die Becken für das Portal an.",
-          description=[
-              "Ein Manapylon, &e3 Terrastahlklumpen&r und ein &eEnderauge&r ergeben einen &aNaturapylon&r. Du brauchst mindestens &e2&r.",
-              "",
-              "Jeder Naturapylon steht &edirekt auf einem Manabecken&r. Beide Becken müssen im Umkreis von &e5 Blöcken&r um das Portal-Herzstück stehen (ein Würfel von 11x11x11). Das Portal zieht sein Mana gleichmäßig aus allen Becken mit Pylon.",
-          ],
-          tasks=[task_item("botania:natura_pylon", 2)],
-          rewards=[reward_item("minecraft:ender_eye", 2)],
-          deps=["mana_pylon"], icon="botania:natura_pylon"),
-
-    quest("gateway_core", 21, 13.8, "&aElfenportal-Herzstück",
-          subtitle="Das Tor nach Alfheim.",
-          description=[
-              "Das &aElfenportal-Herzstück&r entsteht aus &e6 Lebeholzstämmen&r und &e3 Terrastahlklumpen&r.",
-              "",
-              "So baust du das Portal, von vorne gesehen, 5 Blöcke breit und 5 hoch:",
-              "&eUnten Mitte:&r das Herzstück, links und rechts davon je ein liegender Lebeholzstamm.",
-              "&eOben:&r dieselbe Reihe, aber mit einem schimmernden Stamm in der Mitte.",
-              "&eLinks und rechts:&r je drei stehende Stämme übereinander, der mittlere schimmernd.",
-              "Innen bleibt ein 3x3-Feld Luft. Die Ecken bleiben frei.",
-              "",
-              "Dazu zwei Manabecken mit Naturapylonen darauf in der Nähe, und alle Becken gut gefüllt.",
-          ],
-          tasks=[task_item("botania:elven_gateway_core", 1)],
-          rewards=[reward_item("botania:livingwood_log", 16), reward_table("s2_uncommon")],
-          deps=["glimmering", "natura_pylon"], icon="botania:elven_gateway_core", size=1.75, shape="square"),
-
-    quest("portal_open", 23.5, 13.8, "Das Tor öffnet sich",
-          subtitle="Alfheim ist nicht mehr ganz so fern.",
-          description=[
-              "Rechtsklick mit dem &aStab des Waldes&r auf das Herzstück. Stimmt der Aufbau, leuchten die Pylonen auf und das Portal öffnet sich. Das kostet einmalig &d200 000 Mana&r aus den Becken mit Naturapylon.",
-              "",
-              "Durch das Portal passen nur Gegenstände, keine Spieler. Wirf etwas hinein, und die Elfen schicken dir ihre Gegenleistung zurück. Jeder Tausch kostet &d500 Mana&r. Läuft eines der Becken leer, schließt sich das Portal wieder.",
-              "",
-              "&eTipp:&r Stell ein Verbreiter-Netz auf, das die Portalbecken ständig nachfüllt, dann bleibt das Tor offen.",
-          ],
-          tasks=[task_checkmark("Portal geöffnet")],
-          rewards=[reward_xp(10)],
-          deps=["gateway_core"], icon="botania:natura_pylon", size=1.5),
-
-    quest("elven_lexicon", 23.5, 16, "Wissen der Elfen",
-          subtitle="Lass die Elfen dein Buch lesen.",
-          description=[
-              "Die Lexica weiß über Alfheim fast nichts, das Wissen der Elfen ist verloren. Aber vielleicht, wenn die Elfen einen Blick hineinwerfen könnten ...",
-              "",
-              "Wirf deine &6Lexica Botania&r ins offene Portal. Du bekommst sie mit dem &eWissen der Elfen&r zurück, und ein ganzer neuer Bereich im Buch wird lesbar.",
-              "",
-              "&eKleines Geheimnis:&r Wirf auch mal ein &6Brot&r hinein.",
-          ],
-          tasks=[task_checkmark("Lexica zurückbekommen")],
-          rewards=[reward_item("minecraft:bread", 8)],
-          deps=["portal_open"], optional=True, icon="botania:lexica_botania"),
-
-    quest("elven_trade", 26, 13.8, "&aHandel mit Alfheim",
-          subtitle="Was die Elfen jetzt schon tauschen.",
-          description=[
-              "Die Elfen tauschen gern Dinge aus ihrer Welt. In Stufe 2 kannst du davon schon benutzen:",
-              "",
-              "&6Managlas&r wird zu &6Elfenglas&r, fast unsichtbarem Glas mit wechselndem Muster.",
-              "&6Netherquarz&r wird zu &6Elfenquarz&r, grünlichem Bauquarz.",
-              "&6Manadiamant&r wird zu &6Drachenstein&r, dem Edelstein der Elfen.",
-              "",
-              "&cNoch gesperrt:&r Manastahl zu &6Elementium&r, Manaperlen zu &6Feenstaub&r und Lebeholz zu &6Traumholz&r gehören zu &6Stufe 3 (Stahlwerk)&r. Du kannst sie tragen, aber noch nicht benutzen. Das Elementium-Ziel von Stufe 3 wird genau hier gefarmt.",
-          ],
-          tasks=[task_item("botania:alfglass", 8), task_item("botania:elven_quartz", 8)],
-          rewards=[reward_item("minecraft:quartz", 16), reward_table("s2_uncommon")],
-          deps=["portal_open"], icon="botania:elven_quartz"),
-
-    quest("dragonstone", 26, 16, "&dDrachenstein",
-          subtitle="Der Edelstein der Elfen.",
-          description=[
-              "Ein &6Manadiamant&r ins Portal ergibt einen &dDrachenstein&r. Er steckt später in einigen der stärksten Geräte, etwa im Kristallbogen, in der Rute des Bifröst oder im Gaia-Manaverbreiter.",
-              "",
-              "Neun Drachensteine ergeben einen Drachensteinblock, einen hübschen Baublock. Aber jeder Diamant, den du hier eintauschst, fehlt beim Terrastahl.",
-          ],
-          tasks=[task_item("botania:dragonstone", 1)],
-          rewards=[reward_item("minecraft:diamond", 1)],
-          deps=["elven_trade"], optional=True),
-
     # ---- Fuer den Obelisken -----------------------------------------------
-    quest("pearl_factory", 24.5, 6.5, "&bPerlen am Fließband",
-          subtitle="Tausendfünfhundert Perlen wollen verdient sein.",
+    quest("pearl_factory", 23.5, 6.5, "&bPerlen am Fließband",
+          subtitle="Sechshundert Perlen wollen verdient sein.",
           description=[
-              "Das Ziel: &e1 500 Manaperlen&r für den Obelisken, das sind &d9 000 000 Mana&r und 1 500 Enderperlen. Das schafft niemand allein, aber zu dreißig ist es gut machbar.",
+              "Das Ziel: &e600 Manaperlen&r für den Obelisken, das sind &d3,6 Millionen Mana&r und 600 Enderperlen, dazu zwei Perlen für jeden Runenkern. Das schafft niemand allein, aber zu dreißig ist es gut machbar.",
               "",
               "&eSo wird daraus eine Fabrik:&r",
               "&e1.&r Eine Endermanfarm im Wirrwald oder in der Oberwelt, mit Tolldorn oder Schwert.",
-              "&e2.&r Ein Trichter oder ein Create-Förderband wirft die Perlen in ein Becken, das von vielen Blumen gespeist wird.",
+              "&e2.&r Ein Manabecken mit einem &6Messinggehäuse&r darunter, gespeist von vielen Blumen. Ein Trichter oder ein Create-Förderband wirft die Enderperlen hinein.",
               "&e3.&r Eine Trichtermalve am Beckenrand fischt die fertigen Manaperlen wieder heraus und steckt sie in eine Truhe.",
               "",
               "Eine Truhe neben dem Obelisken, die du selbst gestellt hast, wird zu deinem Zulieferer: Alle zwei Sekunden holt der Obelisk heraus, was er brauchen kann.",
@@ -660,14 +591,14 @@ quests = [
           rewards=[reward_item("minecraft:ender_pearl", 16), reward_table("s2_uncommon")],
           deps=["terrasteel", "mana_pearl"], icon="botania:mana_pearl"),
 
-    quest("terra_line", 27, 6.5, "&aTerrastahl in Serie",
-          subtitle="Hundert Barren, jeder ein halbes Becken.",
+    quest("terra_line", 26, 6.5, "&aTerrastahl in Serie",
+          subtitle="Fünfzig Barren, jeder ein halbes Becken.",
           description=[
-              "Das zweite Magieziel: &e100 Terrastahlbarren&r. Jeder braucht &d500 000 Mana&r plus je einen Manastahlbarren, eine Manaperle und einen Manadiamanten. Zusammen gut &d52 Millionen Mana&r, 100 Eisen, 100 Enderperlen und &e100 Diamanten&r.",
+              "Das zweite Magieziel: &e50 Terrastahlbarren&r. Jeder braucht &d500 000 Mana&r plus je einen Manastahlbarren, eine Manaperle und einen Manadiamanten. Zusammen gut &d25 Millionen Mana&r, 50 Manastahl, 50 Enderperlen und &e50 Diamanten&r. Acht weitere Barren stecken in den Runenkernen.",
               "",
               "&eWas hilft:&r",
               "&e1.&r Viele Becken, jedes mit einem Manafunken, rund um die Platte.",
-              "&e2.&r Mehrere Terraplatten, denn Messinggehäuse sind jetzt kein Problem mehr.",
+              "&e2.&r Mehrere Terraplatten, sobald die Ingenieure genug Messinggehäuse liefern.",
               "&e3.&r Starke Blumen: Thermalilien an Lava, Gourmaryllis mit wechselndem Essen, Rosa Arcana an der Mob-Farm, Mampftau an der Baumfarm.",
               "",
               "&cAchtung:&r Nichts aufheben, solange die Platte arbeitet.",
@@ -676,18 +607,41 @@ quests = [
           rewards=[reward_item("botania:mana_diamond", 4), reward_table("s2_uncommon")],
           deps=["terrasteel"], icon="botania:terrasteel_ingot"),
 
-    quest("obelisk", 25.7, 9.2, "&dMagie für den Obelisken",
+    quest("rune_core", 23.5, 9.3, "&dRunenkern",
+          subtitle="Der Meilenstein der Magie in Stufe 2.",
+          description=[
+              "Der &dRunenkern&r ist der Meilenstein der Magie-Säule in Stufe 2: die vier Elemente um einen Terrastahlbarren, gehalten von Messing aus Create.",
+              "",
+              img("kronwerke:textures/item/rune_core.png", 32, 32),
+              "",
+              "&eRezept an der Werkbank:&r",
+              "Oben: &9Rune des Wassers&r, &bManaperle&r, &fRune der Luft&r.",
+              "Mitte: &6Messingblech&r, &aTerrastahlbarren&r, &6Messingblech&r.",
+              "Unten: &cRune des Feuers&r, &bManaperle&r, &6Rune der Erde&r.",
+              "",
+              "Anders als auf dem Runenaltar werden die Runen hier &cverbraucht&r. Ein Kern kostet also vier frische Elementarrunen, zwei Manaperlen, einen Terrastahlbarren und zwei &6Messingbleche&r, die dir ein Create-Spieler mit der Mechanischen Presse aus Messingbarren presst.",
+              "",
+              "&eWie viele:&r Der Obelisk will &e8 Runenkerne&r. Die Zahl ist fest und wächst nicht mit der Spielerzahl, dafür zählt jeder Kern auf der Leiste so viel wie &e150 Manaperlen&r. Die acht zusammen tragen gut die Hälfte der Magie-Säule.",
+              "",
+              "&cWichtig:&r Meilensteine nimmt der Obelisk nur an, solange ihr Stufenziel aktiv ist, und herstellen kannst du den Kern erst, wenn Stufe 2 offen ist. In Stufe 1 waren es 12 Quellschlusssteine, jetzt sind es 8 Runenkerne. Die Techniker liefern parallel 8 &6Messingherzen&r, und für jedes brauchen sie eine Rune des Feuers von dir.",
+          ],
+          tasks=[task_item("kronwerke:rune_core", 1)],
+          rewards=[reward_table("s2_uncommon"), reward_xp(10)],
+          deps=["terrasteel"], icon="kronwerke:rune_core", size=1.75, shape="gear"),
+
+    quest("obelisk", 26, 9.3, "&dMagie für den Obelisken",
           subtitle="Das Messingwerk wartet auf seine Blumen.",
           description=[
-              "Bring deine Manaperlen und deinen Terrastahl zum &6Obelisken&r an der Spawn. Rechtsklick legt den Stapel in deiner Hand ab, Schleich-Rechtsklick alles, was passt. Oder stell eine Truhe daneben und füll sie per Förderband.",
+              "Bring deine Manaperlen, deinen Terrastahl und deine Runenkerne zum &6Obelisken&r an der Spawn. Rechtsklick legt den Stapel in deiner Hand ab, Schleich-Rechtsklick alles, was passt. Oder stell eine Truhe daneben und füll sie per Förderband.",
               "",
-              "Die Technikseite braucht Messing und Präzisionsmechanismen, die Magieseite deine Perlen und deinen Terrastahl. Erst wenn beide voll sind, öffnet &6Stufe 3&r, und zwar mit einem gemeinsamen Event im Stream.",
+              "Die Technikseite braucht Messing, Präzisionsgetriebe und Messingherzen, die Magieseite &e600 Manaperlen&r, &e50 Terrastahlbarren&r und &e8 Runenkerne&r. Erst wenn beide voll sind, öffnet &6Stufe 3 (Stahlwerk)&r, und zwar mit einem gemeinsamen Event im Stream.",
               "",
-              "Danach wartet in Alfheim das Elementium.",
+              "&dUnd dann Alfheim:&r Mit dem Stahlwerk öffnet das &aElfenportal&r. Sein Herzstück, der Handel mit den Elfen, Elfenglas, Elfenquarz, Drachenstein und vor allem &6Elementium&r, das Magie-Ziel von Stufe 3, sind bis dahin gesperrt. Vorbereiten kannst du schon jetzt: Schimmerndes Lebeholz (Lebeholzstamm und Glowstonestaub), zwei Manapylonen, zwei Naturapylonen und viele volle Manabecken, denn das Portal verlangt beim Öffnen 200 000 Mana.",
           ],
           tasks=[task_checkmark("Abgeliefert")],
           rewards=[reward_table("s2_rare"), reward_xp(15)],
-          deps=["pearl_factory", "terra_line"], icon="botania:terrasteel_block", size=2.0, shape="gear"),
+          deps=["pearl_factory", "terra_line", "rune_core"], icon="botania:terrasteel_block", size=2.0, shape="gear"),
+
 ]
 
 images = [
@@ -696,9 +650,8 @@ images = [
     banner("botania_runes/runen", "Runen", 16.3, -2.7, height=0.9, colour="magic"),
     banner("botania_runes/blumen", "Neue Blumen", 5.5, 4.7, height=0.9, colour="nature"),
     banner("botania_runes/terrastahl", "Terrastahl", 18, 4.3, height=0.9, colour="nature"),
-    banner("botania_runes/alfheim", "Alfheim", 20, 12.1, height=0.9, colour="magic"),
-    banner("botania_runes/obelisk", "Für den Obelisken", 26, 4.3, height=0.9, colour="magic"),
+    banner("botania_runes/obelisk", "Für den Obelisken", 24.8, 4.3, height=0.9, colour="magic"),
 ]
 
 chapter(C, "Botania: Runen", "botania:rune_of_mana", "magic", quests, shape="circle", order=11, stage=2,
-        subtitle=["Stufe 2. Manastahl, Runen, Terrastahl und das Tor nach Alfheim."], images=images)
+        subtitle=["Stufe 2. Manastahl, Runen, Terrastahl und der Runenkern."], images=images)

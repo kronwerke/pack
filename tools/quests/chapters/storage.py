@@ -1,6 +1,7 @@
 """Lager: Sophisticated Backpacks (Leder), Functional Storage (Holzschubladen), Sophisticated Storage
 (Truhen, Fässer, Lagerkern) und Trash Cans in Stufe 1. Kupfer- und Eisenrucksäcke, Kompaktier-Schubladen
-und Schubladen-Speicherupgrades öffnen in Stufe 2, Gold- und Diamantrucksäcke sowie AE2 in Stufe 3."""
+und Schubladen-Speicherupgrades sowie Gold-Truhen und -Fässer öffnen in Stufe 2, Gold- und Diamantrucksäcke,
+Diamant-Truhen und AE2 in Stufe 3."""
 from ftbq import (chapter, quest, task_item, task_checkmark, reward_item, reward_table, reward_xp,
                   banner, img, item_texture)
 
@@ -130,7 +131,7 @@ quests = [
               "",
               "Rezept: eine &6Enderperle&r oben, &6drei Obsidian&r um die &6Upgrade-Basis&r herum und &6zwei Redstone&r unten in den Ecken.",
               "",
-              "&cAchtung:&r Bruchstein gehört nicht in den Filter! Der Obelisk braucht für das Ziel von Stufe 1 &e40 000 Bruchstein&r vom ganzen Server. Gib ihn lieber mit &e/kw deposit&r ab, jeder Block zählt.",
+              "&cAchtung:&r Bruchstein gehört nicht in den Filter! Der Obelisk braucht für das Ziel von Stufe 1 &e20 000 Bruchstein&r vom ganzen Server (gerechnet für 30 Spieler). Gib ihn lieber mit &e/kw deposit&r ab, jeder Block zählt.",
           ],
           tasks=[task_item("sophisticatedbackpacks:void_upgrade", 1)],
           rewards=[reward_xp(3)],
@@ -391,7 +392,7 @@ quests = [
               "",
               "Wie immer: Rechtsklick auf den platzierten Block. Für diese Quest brauchst du ein &6Eisenfass&r im Inventar. Das geht auch direkt im Handwerksraster: ein Fass in die Mitte, acht Eisenbarren drumherum.",
               "",
-              "Die Stufen danach sind &6Gold&r (81 Plätze, 3 Upgrades) und &6Diamant&r (108 Plätze, 4 Upgrades). Die sind nicht gesperrt, aber teuer. &6Netherit&r braucht den Nether und damit Stufe 2.",
+              "Die Stufen danach kommen mit dem Server: &6Gold&r (81 Plätze, 3 Upgrades) öffnet mit Stufe 2, &6Diamant&r (108 Plätze, 4 Upgrades) mit Stufe 3 und &6Netherit&r mit Stufe 4. Eisen ist also das Beste, was du in Stufe 1 bekommst, und mit einem Stack-Upgrade reicht das für lange Zeit.",
           ],
           tasks=[task_item("sophisticatedstorage:iron_barrel", 1)],
           rewards=[reward_item("minecraft:iron_ingot", 16), reward_xp(5)],
@@ -503,19 +504,6 @@ quests = [
           rewards=[reward_xp(3)],
           deps=["copper_tier"], icon="sophisticatedstorage:basic_tier_upgrade", optional=True),
 
-    quest("gold_tier", 4.5, 16.5, "Goldstufe",
-          subtitle="Für die ganz großen Vorräte.",
-          description=[
-              img(item_texture("sophisticatedstorage:iron_to_gold_tier_upgrade"), 32, 32),
-              "",
-              "Das &6Eisen zu Goldversion Upgrade&r (&6acht Goldbarren&r und ein &6Hebel&r) bringt eine Eisentruhe auf &e81 Plätze&r und &edrei Upgrade-Plätze&r.",
-              "",
-              "In Stufe 1 ist das ein Luxus, aber einer, der sich für dein Hauptlager lohnt. Mit Stack-Upgrade Stufe 1 passen über 10 000 Items hinein.",
-          ],
-          tasks=[task_item("sophisticatedstorage:gold_barrel", 1)],
-          rewards=[reward_item("minecraft:gold_ingot", 8)],
-          deps=["iron_tier"], icon="sophisticatedstorage:iron_to_gold_tier_upgrade", optional=True),
-
     quest("limited_barrel", 8.5, 16.5, "Eingeschränktes Fass",
           subtitle="Schublade oder Fass? Beides.",
           description=[
@@ -610,9 +598,9 @@ quests = [
           description=[
               "Lager wächst in Kronwerke mit jeder Stufe, die der Server gemeinsam öffnet:",
               "",
-              "&6Stufe 2 (Messingwerk):&r &6Kupfer-&r und &6Eisenrucksack&r (Eisen hat zwei Upgrade-Plätze), die &6Compacting Drawer&r, die Nuggets, Barren und Blöcke in einem Block zusammenfasst, die Schubladen-Upgrades aus &6Kupfer&r und &6Gold&r (achtfacher und sechzehnfacher Platz) und mit dem Nether auch Quarz für den &6Storage Controller&r von Functional Storage.",
+              "&6Stufe 2 (Messingwerk):&r &6Kupfer-&r und &6Eisenrucksack&r (Eisen hat zwei Upgrade-Plätze), die &6Compacting Drawer&r, die Nuggets, Barren und Blöcke in einem Block zusammenfasst, die Schubladen-Upgrades aus &6Kupfer&r und &6Gold&r (achtfacher und sechzehnfacher Platz), die &6Goldstufe&r für Truhen und Fässer (81 Plätze, drei Upgrade-Plätze) und mit dem Nether auch Quarz für den &6Storage Controller&r von Functional Storage.",
               "",
-              "&6Stufe 3 (Stahlwerk):&r &6Gold-&r und &6Diamantrucksack&r, die &6Ender Drawer&r und &6Applied Energistics 2&r, das erste echte Speichernetzwerk mit Suche und Autocrafting.",
+              "&6Stufe 3 (Stahlwerk):&r &6Gold-&r und &6Diamantrucksack&r, die &6Diamantstufe&r für Truhen, die &6Ender Drawer&r und &6Applied Energistics 2&r, das erste echte Speichernetzwerk mit Suche und Autocrafting.",
               "",
               "Gesperrte Items zeigen im Tooltip, in welcher Stufe sie öffnen. Du darfst sie schon sammeln, nur benutzen geht erst später.",
           ],

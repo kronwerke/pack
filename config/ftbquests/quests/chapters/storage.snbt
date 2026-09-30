@@ -1207,41 +1207,6 @@
 			]
 		}
 		{
-			id: "F5B24A8E42E995A1"
-			x: 4.5d
-			y: 16.5d
-			icon: {
-				id: "sophisticatedstorage:iron_to_gold_tier_upgrade"
-				count: 1
-			}
-			optional: true
-			dependencies: [
-				"D8C129DB3D7AD17D"
-			]
-			tasks: [
-				{
-					id: "AABBDF98B11DDB82"
-					type: "item"
-					item: {
-						id: "sophisticatedstorage:gold_barrel"
-						count: 1
-					}
-					count: 1
-				}
-			]
-			rewards: [
-				{
-					id: "FF264AC4DE8B0B87"
-					type: "item"
-					item: {
-						id: "minecraft:gold_ingot"
-						count: 1
-					}
-					count: 8
-				}
-			]
-		}
-		{
 			id: "E24EDDA24E72E84C"
 			x: 8.5d
 			y: 16.5d

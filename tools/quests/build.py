@@ -16,4 +16,18 @@ for f in sorted(os.listdir(os.path.join(here, "chapters"))):
 out = sys.argv[1] if len(sys.argv) > 1 else os.path.join(here, "..", "..", "config", "ftbquests")
 assets = sys.argv[2] if len(sys.argv) > 2 else os.path.join(here, "..", "..", "kubejs", "assets")
 chapters, quests, tables = ftbq.write(out, assets_dir=assets)
+
+# banners of removed quests would linger, so drop every picture no chapter uses any more
+import re  # noqa: E402
+used = set()
+for root, _, files in os.walk(out):
+    for f in files:
+        if f.endswith(".snbt"):
+            used |= set(re.findall(r"kronwerke:textures/quests/([a-z0-9_/]+\.png)", open(os.path.join(root, f)).read()))
+pics = os.path.join(assets, "kronwerke", "textures", "quests")
+for root, _, files in os.walk(pics):
+    for f in files:
+        rel = os.path.relpath(os.path.join(root, f), pics).replace(os.sep, "/")
+        if f.endswith(".png") and rel not in used:
+            os.remove(os.path.join(root, f))
 print(f"{chapters} chapters, {quests} quests, {tables} reward tables -> {os.path.abspath(out)}")

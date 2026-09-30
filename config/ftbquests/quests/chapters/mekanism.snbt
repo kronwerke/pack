@@ -229,11 +229,51 @@
 			]
 		}
 		{
+			id: "EA4AE1916414EFF9"
+			x: 8.5d
+			y: 3.0d
+			icon: {
+				id: "create:electron_tube"
+				count: 1
+			}
+			dependencies: [
+				"6C4F838C1079AFFB"
+			]
+			tasks: [
+				{
+					id: "570D5504D4041264"
+					type: "item"
+					item: {
+						id: "create:electron_tube"
+						count: 1
+					}
+					count: 4
+				}
+			]
+			rewards: [
+				{
+					id: "4E9B06880E56A00D"
+					type: "item"
+					item: {
+						id: "minecraft:redstone"
+						count: 1
+					}
+					count: 16
+				}
+				{
+					id: "43E4FDEAFF567E23"
+					type: "xp_levels"
+					xp_levels: 3
+				}
+			]
+		}
+		{
 			id: "42A695A19BD76174"
 			x: 11.0d
 			y: 1.0d
 			dependencies: [
 				"2CB7E833DCA668D3"
+				"EA4AE1916414EFF9"
 			]
 			tasks: [
 				{
@@ -412,7 +452,7 @@
 					id: "24FD2C2F2DFE425A"
 					type: "item"
 					item: {
-						id: "minecraft:glass"
+						id: "create:andesite_alloy"
 						count: 1
 					}
 					count: 16

@@ -61,6 +61,15 @@
 					}
 					count: 64
 				}
+				{
+					id: "901BA781BB040A6E"
+					type: "item"
+					item: {
+						id: "minecraft:copper_ingot"
+						count: 1
+					}
+					count: 128
+				}
 			]
 			rewards: [
 				{
@@ -241,6 +250,45 @@
 			]
 		}
 		{
+			id: "C6753E505DED38F6"
+			x: 7.5d
+			y: 2.0d
+			icon: {
+				id: "minecraft:blaze_powder"
+				count: 1
+			}
+			dependencies: [
+				"DA069A8E373778AB"
+			]
+			tasks: [
+				{
+					id: "AED7AEBD49D4737E"
+					type: "item"
+					item: {
+						id: "minecraft:blaze_powder"
+						count: 1
+					}
+					count: 16
+				}
+			]
+			rewards: [
+				{
+					id: "D3E9D8E72DC06828"
+					type: "item"
+					item: {
+						id: "minecraft:blaze_rod"
+						count: 1
+					}
+					count: 4
+				}
+				{
+					id: "8A982E7BADC587CD"
+					type: "xp_levels"
+					xp_levels: 3
+				}
+			]
+		}
+		{
 			id: "982D4F037A92C5A3"
 			x: 10.0d
 			y: 2.75d
@@ -253,6 +301,7 @@
 			dependencies: [
 				"DA069A8E373778AB"
 				"3888962F267720FF"
+				"C6753E505DED38F6"
 			]
 			tasks: [
 				{
@@ -282,7 +331,7 @@
 						id: "create:zinc_ingot"
 						count: 1
 					}
-					count: 32
+					count: 16
 				}
 				{
 					id: "36EF8534FF0BF4AA"
@@ -295,7 +344,10 @@
 			id: "57350EBAE878C500"
 			x: 10.0d
 			y: 5.5d
-			optional: true
+			icon: {
+				id: "create:blaze_cake"
+				count: 1
+			}
 			dependencies: [
 				"DA069A8E373778AB"
 			]
@@ -328,6 +380,42 @@
 						count: 1
 					}
 					count: 16
+				}
+			]
+		}
+		{
+			id: "9BB21E79FC7CE294"
+			x: 12.5d
+			y: 5.5d
+			icon: {
+				id: "create:blaze_burner"
+				count: 1
+			}
+			dependencies: [
+				"57350EBAE878C500"
+				"982D4F037A92C5A3"
+			]
+			tasks: [
+				{
+					id: "99284F861E57DC94"
+					type: "item"
+					item: {
+						id: "create:brass_ingot"
+						count: 1
+					}
+					count: 256
+				}
+			]
+			rewards: [
+				{
+					id: "C2CCB3C71F7401CB"
+					type: "loot"
+					table_id: "BA8E33E78A3B3A0C"
+				}
+				{
+					id: "F7717639886C7CA3"
+					type: "xp_levels"
+					xp_levels: 8
 				}
 			]
 		}
@@ -474,7 +562,7 @@
 		{
 			id: "F565F01F8794304F"
 			x: 7.5d
-			y: 11.0d
+			y: 10.5d
 			icon: {
 				id: "create:deployer"
 				count: 1
@@ -493,7 +581,7 @@
 						id: "create:deployer"
 						count: 1
 					}
-					count: 2
+					count: 3
 				}
 			]
 			rewards: [
@@ -515,10 +603,10 @@
 		}
 		{
 			id: "3177D5A3CAF6502E"
-			x: 2.5d
+			x: 10.0d
 			y: 12.75d
 			dependencies: [
-				"71ACBB04C125D6E9"
+				"A4E38347917EF53B"
 			]
 			tasks: [
 				{
@@ -550,8 +638,8 @@
 		}
 		{
 			id: "47625193D4DF5F70"
-			x: 5.0d
-			y: 13.25d
+			x: 12.5d
+			y: 12.75d
 			dependencies: [
 				"3177D5A3CAF6502E"
 			]
@@ -585,8 +673,8 @@
 		}
 		{
 			id: "F849080267B6DDA8"
-			x: 7.5d
-			y: 13.5d
+			x: 12.5d
+			y: 14.75d
 			dependencies: [
 				"47625193D4DF5F70"
 			]
@@ -617,7 +705,7 @@
 		{
 			id: "A4E38347917EF53B"
 			x: 10.0d
-			y: 11.0d
+			y: 10.5d
 			icon: {
 				id: "create:precision_mechanism"
 				count: 1
@@ -643,7 +731,7 @@
 					id: "597797E5D67220E8"
 					type: "item"
 					item: {
-						id: "minecraft:gold_ingot"
+						id: "create:electron_tube"
 						count: 1
 					}
 					count: 16
@@ -658,7 +746,7 @@
 		{
 			id: "FA6B3CDAF9360F83"
 			x: 12.5d
-			y: 11.0d
+			y: 10.5d
 			dependencies: [
 				"A4E38347917EF53B"
 			]
@@ -907,6 +995,43 @@
 			]
 		}
 		{
+			id: "788710AF3DD1233F"
+			x: 4.5d
+			y: 25.5d
+			icon: {
+				id: "kronwerke:brass_heart"
+				count: 1
+			}
+			size: 1.75d
+			shape: "gear"
+			dependencies: [
+				"A4E38347917EF53B"
+			]
+			tasks: [
+				{
+					id: "281DC4907511B4C4"
+					type: "item"
+					item: {
+						id: "kronwerke:brass_heart"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "FF3F0FAA362075ED"
+					type: "loot"
+					table_id: "BA8E33E78A3B3A0C"
+				}
+				{
+					id: "2C0F9CFB4B9FE428"
+					type: "xp_levels"
+					xp_levels: 10
+				}
+			]
+		}
+		{
 			id: "AC39C948ACC593B6"
 			x: 8.0d
 			y: 25.5d
@@ -918,6 +1043,8 @@
 			shape: "gear"
 			dependencies: [
 				"FA6B3CDAF9360F83"
+				"9BB21E79FC7CE294"
+				"788710AF3DD1233F"
 			]
 			tasks: [
 				{
@@ -1472,11 +1599,11 @@
 			]
 		}
 		{
-			id: "41D236F7BC5E7589"
+			id: "89F241E959011E82"
 			x: 19.0d
 			y: 19.0d
 			icon: {
-				id: "create_new_age:generator_coil"
+				id: "powergrid:wire"
 				count: 1
 			}
 			dependencies: [
@@ -1484,28 +1611,19 @@
 			]
 			tasks: [
 				{
-					id: "D2E7C0496FC52084"
+					id: "27E3D30AFE217660"
 					type: "item"
 					item: {
-						id: "create_new_age:generator_coil"
+						id: "powergrid:wire"
 						count: 1
 					}
-					count: 1
+					count: 16
 				}
 				{
-					id: "8DBCC994DD3DE3F1"
+					id: "37264866B0E26E25"
 					type: "item"
 					item: {
-						id: "create_new_age:carbon_brushes"
-						count: 1
-					}
-					count: 1
-				}
-				{
-					id: "E731DCF0C0C0617D"
-					type: "item"
-					item: {
-						id: "create_new_age:redstone_magnet"
+						id: "powergrid:wire_connector"
 						count: 1
 					}
 					count: 4
@@ -1513,76 +1631,205 @@
 			]
 			rewards: [
 				{
-					id: "E0ABE0C757752DCA"
+					id: "6F0E4B0FB97025CE"
+					type: "item"
+					item: {
+						id: "minecraft:copper_ingot"
+						count: 1
+					}
+					count: 16
+				}
+				{
+					id: "76567D8C1E4ABBD4"
+					type: "xp_levels"
+					xp_levels: 3
+				}
+			]
+		}
+		{
+			id: "600566FCFCCB3B7D"
+			x: 21.5d
+			y: 19.0d
+			icon: {
+				id: "powergrid:copper_coil"
+				count: 1
+			}
+			dependencies: [
+				"89F241E959011E82"
+			]
+			tasks: [
+				{
+					id: "EE83B917F012137D"
+					type: "item"
+					item: {
+						id: "powergrid:conductive_casing"
+						count: 1
+					}
+					count: 4
+				}
+				{
+					id: "D57C0B4E493AEBB4"
+					type: "item"
+					item: {
+						id: "powergrid:copper_coil"
+						count: 1
+					}
+					count: 4
+				}
+			]
+			rewards: [
+				{
+					id: "592E028B451645F7"
+					type: "item"
+					item: {
+						id: "create:zinc_ingot"
+						count: 1
+					}
+					count: 8
+				}
+				{
+					id: "D43B5127E0265EB6"
+					type: "xp_levels"
+					xp_levels: 3
+				}
+			]
+		}
+		{
+			id: "ABE1ED568848DAC9"
+			x: 24.0d
+			y: 19.0d
+			icon: {
+				id: "powergrid:generator_induction_rotor"
+				count: 1
+			}
+			size: 1.5d
+			shape: "gear"
+			dependencies: [
+				"600566FCFCCB3B7D"
+			]
+			tasks: [
+				{
+					id: "B05DDD7314825474"
+					type: "item"
+					item: {
+						id: "powergrid:generator_clutch"
+						count: 1
+					}
+					count: 1
+				}
+				{
+					id: "4C4D33CF078FCC3B"
+					type: "item"
+					item: {
+						id: "powergrid:generator_induction_rotor"
+						count: 1
+					}
+					count: 1
+				}
+				{
+					id: "6DD3AC3FEA9EB9D3"
+					type: "item"
+					item: {
+						id: "powergrid:generator_commutator"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "C78D140079159D2C"
+					type: "loot"
+					table_id: "BA8E33E78A3B3A0C"
+				}
+				{
+					id: "C2ADE765792EBB27"
+					type: "xp_levels"
+					xp_levels: 8
+				}
+			]
+		}
+		{
+			id: "97EF820F3FAEADA8"
+			x: 26.5d
+			y: 19.0d
+			icon: {
+				id: "powergrid:electric_motor"
+				count: 1
+			}
+			dependencies: [
+				"ABE1ED568848DAC9"
+			]
+			tasks: [
+				{
+					id: "2C6031AB8A3060B5"
+					type: "item"
+					item: {
+						id: "powergrid:electromagnet"
+						count: 1
+					}
+					count: 1
+				}
+				{
+					id: "3F60324BA58B71AC"
+					type: "item"
+					item: {
+						id: "powergrid:electric_motor"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "BD21F31072175520"
 					type: "loot"
 					table_id: "F2BA64790EBA3DF5"
 				}
 				{
-					id: "283B34100C10A731"
+					id: "98702981E568AA7C"
 					type: "xp_levels"
 					xp_levels: 5
 				}
 			]
 		}
 		{
-			id: "8993DFA7D03105CF"
-			x: 21.5d
+			id: "360DEF000E273CDC"
+			x: 29.0d
 			y: 19.0d
-			dependencies: [
-				"41D236F7BC5E7589"
-			]
-			tasks: [
-				{
-					id: "EDDD023D1957DDBA"
-					type: "item"
-					item: {
-						id: "create_new_age:basic_motor"
-						count: 1
-					}
-					count: 1
-				}
-			]
-			rewards: [
-				{
-					id: "5034330418D75DFE"
-					type: "xp_levels"
-					xp_levels: 5
-				}
-			]
-		}
-		{
-			id: "8DADF04982C8CC41"
-			x: 24.0d
-			y: 19.0d
+			icon: {
+				id: "powergrid:voltage_gauge"
+				count: 1
+			}
 			optional: true
 			dependencies: [
-				"8993DFA7D03105CF"
+				"97EF820F3FAEADA8"
 			]
 			tasks: [
 				{
-					id: "E13D28F418433223"
+					id: "857FE9EEF7FD4280"
 					type: "item"
 					item: {
-						id: "create_new_age:basic_energiser"
+						id: "powergrid:voltage_gauge"
 						count: 1
 					}
 					count: 1
 				}
 				{
-					id: "03C671EEEE6F147D"
+					id: "A5C0CC95210AA3D5"
 					type: "item"
 					item: {
-						id: "create_new_age:overcharged_iron"
+						id: "powergrid:current_gauge"
 						count: 1
 					}
-					count: 4
+					count: 1
 				}
 			]
 			rewards: [
 				{
-					id: "4811F4F63C14A87D"
+					id: "2D7E70D1A9870395"
 					type: "xp_levels"
-					xp_levels: 3
+					xp_levels: 5
 				}
 			]
 		}
@@ -1853,7 +2100,7 @@
 		{
 			id: "682341A8DCD3922E"
 			image: "kronwerke:textures/quests/create_brass/goal.png"
-			x: 7.99d
+			x: 4.54d
 			y: 23.0d
 			width: 2.67d
 			height: 0.9d
@@ -1902,10 +2149,10 @@
 		}
 		{
 			id: "24D7F73E9831E52D"
-			image: "kronwerke:textures/quests/create_brass/note_cna.png"
-			x: 19.07d
+			image: "kronwerke:textures/quests/create_brass/note_pg.png"
+			x: 19.29d
 			y: 17.85d
-			width: 1.34d
+			width: 1.78d
 			height: 0.5d
 			rotation: 0.0d
 			order: 1

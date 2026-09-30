@@ -1,5 +1,7 @@
-"""Mekanism in stage 2: osmium, the metallurgic infuser (with manasteel), steel, the basic
-machines, power, ore doubling and the first logistics. Elite tier, ore tripling, the digital
+"""Mekanism in stage 2: osmium, the metallurgic infuser (with manasteel), the basic control circuit
+(electron tube and redstone), steel, the steel casing (andesite alloy), the basic machines, the
+crusher (Create crushing wheels), power, ore doubling and the first logistics. Recipes follow
+kubejs/server_scripts/kronwerke/tech.js. Elite tier, ore tripling, the digital
 miner and teleporters open in stage 3 and are only mentioned, never asked for."""
 from ftbq import (chapter, quest, task_item, task_checkmark, reward_item, reward_table, reward_xp,
                   banner, img, item_texture)
@@ -45,7 +47,7 @@ quests = [
           description=[
               "Auf Kronwerke ist das Rezept der &6Metallurgischen Infusionsanlage&r geändert: Statt der beiden unteren Eisenbarren braucht sie zwei &6Manastahlbarren&r aus Botania. Technik kommt hier nicht ohne Magie aus, und genau so ist es gewollt.",
               "",
-              "Manastahl entsteht, wenn du einen &6Eisenbarren&r in ein &aManabecken&r wirfst, das genug &dMana&r enthält. Das Becken zieht das Mana ab und gibt dir den Manastahl zurück. Wie du ein Becken baust und mit Blumen füllst, steht im Botania-Kapitel.",
+              "Manastahl ist auf Kronwerke kein Eisen im Becken mehr. Der erste entsteht im &aRitual des Waldes&r von Nature's Aura (vier Infused Iron, zwei Lebeholzzweige, ein Manadiamant und ein Gold Leaf um einen Eichensetzling ergeben vier Barren). In Mengen wirft man &6Infused Iron&r vom Natural Altar in ein &aManabecken&r, für 3 000 Mana pro Barren. Wie beides geht, steht im Kapitel &aBotania: Runen&r.",
               "",
               "Kein eigenes Becken? Frag im Chat. Zwei Barren sind für jeden Magier eine Kleinigkeit, und ein paar Osmiumbarren als Dankeschön sind schnell getauscht.",
           ],
@@ -80,7 +82,7 @@ quests = [
               "",
               "&eRedstone:&r Redstone-Staub gibt 10 mB, ein Redstone-Block 90 mB, &6Angereichertes Redstone&r 80 mB.",
               "",
-              "Die meisten Rezepte verbrauchen 10 mB pro Gegenstand, der Schaltkreis 20 mB. Solange du nur Kohle hast: nimm Kohleblöcke, dann musst du seltener nachlegen.",
+              "Die meisten Rezepte verbrauchen 10 mB pro Gegenstand, der Schaltkreis 20 mB Redstone. Solange du nur Kohle hast: nimm Kohleblöcke, dann musst du seltener nachlegen.",
           ],
           tasks=[task_checkmark("Verstanden")],
           rewards=[reward_item("minecraft:coal_block", 4)],
@@ -97,18 +99,37 @@ quests = [
           rewards=[reward_item("minecraft:iron_ingot", 16)],
           deps=["infusion"]),
 
-    quest("circuit", 11, 1, "&aEinfacher Steuerschaltkreis",
-          subtitle="Osmium mit Redstone im Kopf.",
+    quest("tube", 8.5, 3, "&6Elektronenröhren von Create",
+          subtitle="Mekanism denkt mit Create-Röhren.",
           description=[
-              "Tausch den Kohlenstoff gegen &cRedstone&r und leg einen &6Osmiumbarren&r in die Mitte. Für 20 mB Redstone bekommst du einen &6Einfachen Steuerschaltkreis&r.",
+              "Auf Kronwerke steckt in jedem Mekanism-Schaltkreis ein Stück Create: der &6Einfache Steuerschaltkreis&r entsteht aus einer &6Elektronenröhre&r.",
+              "",
+              img(item_texture("create:electron_tube"), 32, 32),
+              "",
+              "Eine Elektronenröhre ist &6Polierter Rosenquarz&r auf einem &6Eisenblech&r. Rosenquarz machst du aus Netherquarz und acht Redstone, poliert wird er mit Schmirgelpapier oder von einem Einsatzgerät. Alles dazu steht im Kapitel &6Create: Messing&r.",
+              "",
+              "Kein Create-Spieler? Dann tausch: Osmium oder Stahl gegen einen Stapel Röhren. Die Create-Leute brauchen selbst sehr viele davon, denn in jedem Präzisionsgetriebe stecken im Schnitt über acht.",
+          ],
+          tasks=[task_item("create:electron_tube", 4)],
+          rewards=[reward_item("minecraft:redstone", 16), reward_xp(3)],
+          deps=["infuser"], icon="create:electron_tube"),
+
+    quest("circuit", 11, 1, "&aEinfacher Steuerschaltkreis",
+          subtitle="Eine Röhre, getränkt in Redstone.",
+          description=[
+              "Tausch den Kohlenstoff gegen &cRedstone&r und leg eine &6Elektronenröhre&r in die Mitte der Infusionsanlage. Für &e20 mB Redstone&r bekommst du einen &6Einfachen Steuerschaltkreis&r.",
+              "",
+              "Das ist auf Kronwerke der einzige Weg: das alte Rezept mit einem Osmiumbarren und alle Abkürzungen anderer Mods gibt es nicht mehr.",
               "",
               "Jede Maschine nach der Infusionsanlage braucht mindestens einen Schaltkreis, dazu Kabel, Transporter, Fabriken und der Stufen-Installateur. Ein Vorrat von einem Dutzend spart später viele Wechsel des Infusionsstoffs.",
               "",
               img(item_texture("mekanism:basic_control_circuit"), 32, 32),
+              "",
+              "&cAusblick:&r Den &6Fortgeschrittenen Steuerschaltkreis&r gibt es erst mit &6Stufe 3&r. Er entsteht an der Werkbank aus einem einfachen Schaltkreis, zwei Infundierten Legierungen und einem &6Gedruckten Silizium&r aus dem Inscriber von Applied Energistics 2, das ebenfalls erst in Stufe 3 öffnet.",
           ],
           tasks=[task_item("mekanism:basic_control_circuit", 4)],
           rewards=[reward_item("mekanism:ingot_osmium", 16), reward_item("minecraft:redstone_block", 2)],
-          deps=["infusion"]),
+          deps=["infusion", "tube"]),
 
     quest("alloy", 11, 2.5, "&cInfundierte Legierung",
           subtitle="Kupfer, das Redstone geschluckt hat.",
@@ -150,12 +171,14 @@ quests = [
     quest("casing", 16, 1.3, "&7&lStahlgehäuse",
           subtitle="Der Rumpf jeder Maschine.",
           description=[
-              "Vier &6Stahlbarren&r in die Ecken, vier &6Glas&r an die Seiten und ein &6Osmiumbarren&r in die Mitte ergeben ein &6Stahlgehäuse&r.",
+              "Vier &6Stahlbarren&r in die Ecken, vier &6Andesitlegierungen&r aus Create an die Seiten und ein &6Osmiumbarren&r in die Mitte ergeben ein &6Stahlgehäuse&r. Auf Kronwerke ersetzt die Legierung das Glas aus dem Originalrezept.",
               "",
-              "Ab hier ist jede Maschine ein Stahlgehäuse plus das, was sie besonders macht: Schaltkreise, Redstone, Eisen oder ein Lavaeimer. Mit vier Gehäusen kannst du Anreicherungskammer, Schmelzer, Zerkleinerer und den Energie-Würfel bauen.",
+              "Andesitlegierung kennst du aus Stufe 1, und wer damals eine Mixer-Linie gebaut hat, hat jetzt genug davon. Sonst frag die Create-Spieler: der Mixer macht aus einem Andesit und einem Nugget gleich zwei.",
+              "",
+              "Ab hier ist jede Maschine ein Stahlgehäuse plus das, was sie besonders macht: Schaltkreise, Redstone, Eisen, Glas oder Mahlwerkräder. Mit vier Gehäusen kannst du Anreicherungskammer, Schmelzer, Zerkleinerer und den Energie-Würfel bauen.",
           ],
           tasks=[task_item("mekanism:steel_casing", 4)],
-          rewards=[reward_item("minecraft:glass", 16), reward_table("s2_common")],
+          rewards=[reward_item("create:andesite_alloy", 16), reward_table("s2_common")],
           deps=["steel"], icon="mekanism:steel_casing", size=2.0, shape="gear"),
 
     # ---- Energie -------------------------------------------------------------
@@ -285,11 +308,13 @@ quests = [
           deps=["smelter"], icon="mekanism:dust_iron", size=2.0, shape="diamond"),
 
     quest("crusher", 16, 9, "&4Zerkleinerer",
-          subtitle="Barren zu Staub, und noch mehr.",
+          subtitle="Mahlt mit den Rädern von Create.",
           description=[
-              "Der &6Zerkleinerer&r mahlt Barren zurück zu Staub, Bruchstein zu Kies, Kies zu Sand und Obsidian zu Obsidianstaub. &eRezept:&r Stahlgehäuse, zwei Lavaeimer, zwei Schaltkreise und Redstone.",
+              "Der &6Zerkleinerer&r mahlt Barren zurück zu Staub, Bruchstein zu Kies, Kies zu Sand und Obsidian zu Obsidianstaub.",
               "",
-              "&eNether-Tipp:&r Eine &6Lohenrute&r gibt im Zerkleinerer &6vier Lohenstaub&r statt zwei an der Werkbank. Das lohnt sich, wenn du Braustände oder Rezepte mit Lohenstaub versorgst.",
+              "&eRezept auf Kronwerke:&r ein Stahlgehäuse in der Mitte, links und rechts je ein &6Mahlwerkrad&r aus Create statt der Lavaeimer, oben und unten ein Einfacher Steuerschaltkreis, Redstone in die Ecken. Mahlwerkräder entstehen in den Mechanischen Handwerkseinheiten von Create, und die brauchen ein Präzisionsgetriebe. Frag einen Create-Spieler, er bekommt immer zwei Räder pro Rezept.",
+              "",
+              "&eNether-Tipp:&r Eine &6Lohenrute&r gibt im Zerkleinerer &6vier Lohenstaub&r statt zwei an der Werkbank. Den brauchen die Create-Leute für jeden Messingbarren aus dem erhitzten Mixer.",
               "",
               "Außerdem macht er aus Pflanzen und Samen &6Bio-Brennstoff&r, falls du später einen Biogenerator bauen willst.",
           ],
@@ -423,11 +448,14 @@ quests = [
           description=[
               "Wenn das Obelisk-Ziel für Stufe 3 gefüllt ist, öffnet Mekanism seine nächste Ebene: die &6Erzverdreifachung&r mit Sauerstoff und der Reinigungskammer, die Elite-Stufe für Kabel und Fabriken, den &6Digitalen Miner&r, der ganze Gebiete abbaut, und &6Teleporter&r.",
               "",
-              "Das Ziel verlangt unter anderem viele &6Stahlbarren&r. Jede Stahlstraße, die jetzt läuft, bringt den Server dorthin. Stell eine Kiste neben den Obelisken und verbinde sie mit deiner Straße: Was hineinfällt, zählt für dich.",
+              "Dazu kommt der &6Fortgeschrittene Steuerschaltkreis&r. Er ist auf Kronwerke ein Ziel für sich: ein einfacher Schaltkreis, zwei Infundierte Legierungen und ein &6Gedrucktes Silizium&r aus dem Inscriber von Applied Energistics 2. AE2 öffnet erst mit Stufe 3, vorher kann niemand diese Schaltkreise bauen.",
+              "",
+              "Das Ziel von Stufe 3 verlangt viele &6Stahlbarren&r und fortgeschrittene Schaltkreise. Jede Stahlstraße, die jetzt läuft, bringt den Server dorthin. Stell eine Kiste neben den Obelisken und verbinde sie mit deiner Straße: Was hineinfällt, zählt für dich.",
           ],
           tasks=[task_checkmark("Gelesen")],
           rewards=[reward_xp(10)],
           deps=["ore_line"], icon="mekanism:steel_casing", optional=True),
+
 ]
 
 images = [

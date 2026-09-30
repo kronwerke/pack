@@ -1,0 +1,28 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "botania"
+    }
+  ],
+  "type": "malum:spirit_repair",
+  "durabilityPercentage": 1,
+  "repairMaterial": {
+    "item": "botania:elementium_ingot",
+    "count": 1
+  },
+  "spirits": [
+    {
+      "type": "malum:arcane",
+      "count": 24
+    }
+  ],
+  "validItems": [
+    "botania:elementium_sword",
+    "botania:thundercaller"
+  ],
+  "regex": {
+    "itemIdRegex": "elementium_.+",
+    "modIdRegex": "botania"
+  }
+}

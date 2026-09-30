@@ -19,9 +19,10 @@ jobs:
       - uses: actions/setup-go@v5
         with:
           go-version: "1.24"
-      - name: Build the quest book and check it against the stage locks
+      - name: Check the stage files, build the quest book and check it against the stage locks
         run: |
           python3 -m pip install --quiet --break-system-packages Pillow
+          python3 tools/stages/build.py --check
           python3 tools/quests/build.py
           python3 tools/quests/check_quest_stages.py kubejs/data/kronwerke/chapters/stages
       - run: go install github.com/packwiz/packwiz@latest

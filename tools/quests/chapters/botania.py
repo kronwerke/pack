@@ -1,7 +1,8 @@
 """Botania in stage 1: petals, the Pure Daisy, living blocks, the Petal Apothecary, the two open
 generating flowers, spreaders, pools, mana infusion and the functional flowers without runes.
 Manasteel, mana pearls, the mana tablet and the runic altar are locked until stage 2
-(stage2.json) and live in botania_runes.py."""
+(stage2.json) and live in botania_runes.py. manasteel_prep collects the stage 1 inputs of the
+Nature's Aura manasteel ritual (kubejs/server_scripts/kronwerke/magic.js)."""
 from ftbq import (chapter, quest, task_item, task_checkmark, reward_item, reward_table,
                   reward_xp, banner, img, item_texture)
 
@@ -120,7 +121,7 @@ quests = [
           description=[
               "Jeder Stamm, den das Gänseblümchen berührt, wird zum &6Lebeholzstamm&r. Daraus baust du alles, was Mana bewegt: den &6Manaverbreiter&r (6 Stämme), den &6Lebeholzzweig&r für den Stab des Waldes und die &6Lebeholzbretter&r für die Offene Kiste.",
               "",
-              "Vier Stämme ergeben im Quadrat drei Blöcke &6Lebeholz&r, das rundum Rinde zeigt. Für das Elfenportal in Stufe 2 brauchst du später acht Lebeholzstämme und drei schimmernde Varianten, leg also ruhig einen Vorrat an.",
+              "Vier Stämme ergeben im Quadrat drei Blöcke &6Lebeholz&r, das rundum Rinde zeigt. Für das Elfenportal in Stufe 3 brauchst du später acht Lebeholzstämme und drei schimmernde Varianten, und zwei &6Lebeholzzweige&r stecken in jedem Ritual für Manastahl. Leg also ruhig einen Vorrat an.",
               "",
               "&eTipp:&r Jede Holzsorte funktioniert, auch Stämme aus dem Nether oder aus anderen Mods.",
           ],
@@ -131,7 +132,7 @@ quests = [
     quest("livingrock", 10, 1.2, "&6Lebestein",
           subtitle="Der Stein, aus dem Becken und Altäre sind.",
           description=[
-              "Stein neben dem Gänseblümchen wird zu &6Lebestein&r. Du brauchst ihn in rauen Mengen: &e5&r für jedes &6Manabecken&r, &e5&r für den &6Runenaltar&r in Stufe 2, &e8&r für jede &6Manatafel&r und noch mehr unter der Terrestrischen Agglomerationsplatte.",
+              "Stein neben dem Gänseblümchen wird zu &6Lebestein&r. Du brauchst ihn in rauen Mengen: &e5&r für jedes &6Manabecken&r, &e4&r für den &6Runenaltar&r in Stufe 2 (dazu ein Messingbarren), &e8&r für jede &6Manatafel&r und noch mehr unter der Terrestrischen Agglomerationsplatte.",
               "",
               "&eTipp:&r Stell die acht Steine um die Blume, geh eine Minute etwas anderes erledigen und tausch dann alle acht auf einmal aus. Mehrere Gänseblümchen nebeneinander, jedes mit eigenem Ring, vervielfachen die Ausbeute.",
           ],
@@ -328,7 +329,7 @@ quests = [
               "",
               "So funktioniert jede &eManainfusion&r: Gegenstand ins Becken werfen, und solange genug Mana für ein Stück da ist, wird es verwandelt. Ein ganzer Stapel wird Stück für Stück umgewandelt, bis Stapel oder Mana alle sind.",
               "",
-              "Managlas brauchst du für Phiolen in der Botanischen Brauerei und als Tauschware beim Elfenportal in Stufe 2.",
+              "Managlas brauchst du für Phiolen in der Botanischen Brauerei und später als Tauschware beim Elfenportal, das mit Stufe 3 öffnet.",
               "",
               "&eTipp:&r JEI zeigt dir unter dem Manabecken alle Infusionen mit ihrem Manapreis.",
           ],
@@ -377,11 +378,12 @@ quests = [
               "Ein &6Diamant&r im Becken wird für &d10 000 Mana&r zum &bManadiamanten&r. Neun davon ergeben einen Manadiamantblock, den du auch direkt aus einem Diamantblock infundieren kannst (90 000 Mana).",
               "",
               "Wofür du ihn brauchst:",
-              "&e1.&r Den &6Runenaltar&r in Stufe 2 (oder stattdessen eine Manaperle).",
-              "&e2.&r Den &6Manapylon&r und damit das Elfenportal.",
-              "&e3.&r Jeden einzelnen &6Terrastahlbarren&r: einer pro Barren.",
+              "&e1.&r Den &6Quellschlussstein&r, den Magie-Meilenstein von Stufe 1: zwei Manadiamanten pro Stein.",
+              "&e2.&r Das &aRitual des Waldes&r, das in Stufe 2 den ersten &6Manastahl&r macht: einer pro Ritual.",
+              "&e3.&r Den &6Runenaltar&r in Stufe 2 (oder stattdessen eine Manaperle) und später den &6Manapylon&r.",
+              "&e4.&r Jeden einzelnen &6Terrastahlbarren&r: einer pro Barren.",
               "",
-              "&cDenk voraus:&r Das Stufe-2-Ziel am Obelisken will &e100 Terrastahlbarren&r. Das sind 100 Manadiamanten, also 100 Diamanten. Jeder Diamant, den du jetzt nicht für Werkzeug verbrauchst, hilft später dem ganzen Server.",
+              "&cDenk voraus:&r Das Stufe-2-Ziel am Obelisken will &e50 Terrastahlbarren&r und &e8 Runenkerne&r mit noch einmal je einem Barren darin. Das sind rund 60 Manadiamanten, also 60 Diamanten, nur für den Obelisken. Jeder Diamant, den du jetzt nicht für Werkzeug verbrauchst, hilft später dem ganzen Server.",
           ],
           tasks=[task_item("botania:mana_diamond", 2)],
           rewards=[reward_item("minecraft:diamond", 2), reward_table("s1_uncommon")],
@@ -509,25 +511,43 @@ quests = [
           rewards=[reward_table("s1_rare"), reward_xp(10)],
           deps=["pool", "manastar"], icon="botania:mana_spreader", size=2.0, shape="gear"),
 
+    quest("manasteel_prep", 21, 8.7, "&bVorbereitung: Manastahl",
+          subtitle="Das Ritual des Waldes, schon jetzt geplant.",
+          description=[
+              "Auf Kronwerke wird &6Manastahl&r nicht mehr aus einem Eisenbarren im Becken gemacht, ein Eisenbarren bleibt dort einfach liegen. Der erste Manastahl kommt aus einem Ritual von &aNature's Aura&r, und die Zutaten dafür kannst du schon in Stufe 1 sammeln.",
+              "",
+              "&eDas Ritual des Waldes:&r Leg &6Gold Powder&r (aus Gold Leaf zerrieben) im Muster aus dem Buch von Nature's Aura auf den Boden, stell &6Wooden Stands&r (Gold Leaf auf einem Stamm) darum und lege auf sie die Zutaten:",
+              "&e4&r &6Infused Iron&r vom Natural Altar, &e2&r &6Lebeholzzweige&r, &e1&r &bManadiamant&r und &e1&r &6Gold Leaf&r.",
+              "Dann pflanzt du einen &6Eichensetzling&r in die Mitte und lässt ihn wachsen, mit Knochenmehl oder mit Geduld. Der Baum verschlingt die Zutaten, und heraus kommen &e4 Manastahlbarren&r.",
+              "",
+              "&eDer Weg für große Mengen:&r Ist Stufe 2 offen, wirfst du &6Infused Iron&r statt Eisen in ein Manabecken. Für &d3 000 Mana&r wird jedes Stück zu einem Manastahlbarren. Ein Natural Altar, der Eisen veredelt, und ein Becken dahinter sind eine kleine Manastahl-Fabrik.",
+              "",
+              "Manastahl selbst ist bis Stufe 2 &cgesperrt&r. Aber wer jetzt Infused Iron, Zweige und Manadiamanten bereitlegt, hat am ersten Abend von Stufe 2 seine Runen.",
+          ],
+          tasks=[task_item("naturesaura:infused_iron", 4), task_item("botania:livingwood_twig", 2),
+                 task_item("botania:mana_diamond", 1), task_item("naturesaura:gold_leaf", 1)],
+          rewards=[reward_item("minecraft:oak_sapling", 4), reward_table("s1_uncommon"), reward_xp(5)],
+          deps=["farm"], icon="naturesaura:infused_iron", optional=True),
+
     quest("outlook", 21, 6.5, "Ausblick: Stufe 2",
           subtitle="Was hinter dem Obelisken wartet.",
           description=[
               "Mit &6Stufe 2 (Messingwerk)&r öffnet Botania richtig. Dann geht es im Kapitel &aBotania: Runen&r weiter:",
               "",
-              "&6Manastahl&r: ein Eisenbarren im Becken, 3 000 Mana.",
-              "&6Manaperle&r: eine Enderperle im Becken, 6 000 Mana.",
+              "&6Manastahl&r: zuerst aus dem Ritual des Waldes von Nature's Aura (vier Barren pro Ritual), in Mengen aus &6Infused Iron&r im Becken für 3 000 Mana. Ein Eisenbarren im Becken tut nichts mehr.",
+              "&6Manaperle&r: eine Enderperle im Becken, 6 000 Mana. Aber nur, wenn unter dem Becken ein &6Messinggehäuse&r aus Create steht.",
               "&6Manatafel&r: ein Manabecken zum Mitnehmen.",
-              "&aRunenaltar&r: Runen der Elemente, Jahreszeiten und Sünden, und damit neue, viel stärkere Blumen.",
+              "&aRunenaltar&r: Runen der Elemente, Jahreszeiten und Sünden, und damit neue, viel stärkere Blumen. Auf Kronwerke steckt ein Messingbarren darin.",
               "&aTerrestrische Agglomerationsplatte&r: Terrastahl. Auf Kronwerke braucht sie zwei Messinggehäuse aus Create.",
-              "&aElfenportal&r: Handel mit Alfheim.",
               "",
-              "Manastahl, Manaperlen und die Manatafel sind bis dahin &cgesperrt&r. Du kannst sie tragen, aber noch nicht benutzen, der Tooltip sagt dir, ab welcher Stufe.",
+              "Manastahl, Manaperlen und die Manatafel sind bis dahin &cgesperrt&r. Du kannst sie tragen, aber noch nicht benutzen, der Tooltip sagt dir, ab welcher Stufe. Das Elfenportal und der Handel mit Alfheim folgen erst mit Stufe 3.",
               "",
-              "Das Obelisk-Ziel von Stufe 2 will &e1 500 Manaperlen&r und &e100 Terrastahlbarren&r. Das sind zusammen über &d60 Millionen Mana&r. Fangt früh an, Becken zu füllen.",
+              "Das Obelisk-Ziel von Stufe 2 will &e600 Manaperlen&r, &e50 Terrastahlbarren&r und &e8 Runenkerne&r. Das sind zusammen rund &d30 Millionen Mana&r. Fangt früh an, Becken zu füllen.",
           ],
           tasks=[task_checkmark("Gelesen")],
           rewards=[reward_xp(5)],
           deps=["farm"], icon="botania:mana_pool"),
+
 ]
 
 images = [

@@ -7,9 +7,9 @@
     "holdAt": 0.98,
     "scale": true,
     "pillars": [
-      { "id": "stone", "title": "Stone", "items": [ { "item": "#c:cobblestones", "base": 40000 } ] },
-      { "id": "tech", "title": "Tech", "items": [ { "item": "create:andesite_alloy", "base": 3000 } ] },
-      { "id": "magic", "title": "Magic", "items": [ { "item": "ars_nouveau:source_gem", "base": 1500 } ] }
+      { "id": "stone", "title": "Stone", "items": [ { "item": "#c:cobblestones", "base": 20000 } ] },
+      { "id": "tech", "title": "Tech", "items": [ { "item": "create:andesite_alloy", "base": 1500, "weight": 2 }, { "item": "kronwerke:stone_gearbox", "base": 12, "fixed": true, "weight": 250 } ] },
+      { "id": "magic", "title": "Magic", "items": [ { "item": "ars_nouveau:source_gem", "base": 800, "weight": 4 }, { "item": "kronwerke:source_keystone", "base": 12, "fixed": true, "weight": 250 } ] }
     ],
     "stages": ["kronwerke:stage2"],
     "onComplete": [
@@ -27,8 +27,8 @@
     "holdAt": 0.98,
     "scale": true,
     "pillars": [
-      { "id": "tech", "title": "Tech", "items": [ { "item": "create:brass_ingot", "base": 4000 }, { "item": "create:precision_mechanism", "base": 300 } ] },
-      { "id": "magic", "title": "Magic", "items": [ { "item": "botania:mana_pearl", "base": 1500 }, { "item": "botania:terrasteel_ingot", "base": 100 } ] }
+      { "id": "tech", "title": "Tech", "items": [ { "item": "create:brass_ingot", "base": 2000 }, { "item": "create:precision_mechanism", "base": 150, "weight": 5 }, { "item": "kronwerke:brass_heart", "base": 8, "fixed": true, "weight": 300 } ] },
+      { "id": "magic", "title": "Magic", "items": [ { "item": "botania:mana_pearl", "base": 600, "weight": 2 }, { "item": "botania:terrasteel_ingot", "base": 50, "weight": 20 }, { "item": "kronwerke:rune_core", "base": 8, "fixed": true, "weight": 300 } ] }
     ],
     "stages": ["kronwerke:stage3"],
     "onComplete": [
@@ -51,8 +51,8 @@
     "holdAt": 0.98,
     "scale": true,
     "pillars": [
-      { "id": "tech", "title": "Tech", "items": [ { "item": "#c:ingots/steel", "base": 8000 }, { "item": "mekanism:advanced_control_circuit", "base": 500 } ] },
-      { "id": "magic", "title": "Magic", "items": [ { "item": "botania:elementium_ingot", "base": 500 }, { "item": "occultism:spirit_attuned_gem", "base": 300 } ] }
+      { "id": "tech", "title": "Tech", "items": [ { "item": "#c:ingots/steel", "base": 4000 }, { "item": "mekanism:advanced_control_circuit", "base": 250, "weight": 8 }, { "item": "kronwerke:steel_core", "base": 8, "fixed": true, "weight": 400 } ] },
+      { "id": "magic", "title": "Magic", "items": [ { "item": "botania:elementium_ingot", "base": 400, "weight": 8 }, { "item": "occultism:afrit_essence", "base": 150, "weight": 10 }, { "item": "kronwerke:elven_star", "base": 8, "fixed": true, "weight": 400 } ] }
     ],
     "stages": ["kronwerke:stage4"],
     "onComplete": [
@@ -75,8 +75,8 @@
     "holdAt": 0.98,
     "scale": true,
     "pillars": [
-      { "id": "tech", "title": "Tech", "items": [ { "item": "mekanism:elite_control_circuit", "base": 300 }, { "item": "draconicevolution:draconium_ingot", "base": 2000 } ] },
-      { "id": "magic", "title": "Magic", "items": [ { "item": "botania:gaia_spirit", "base": 128 }, { "item": "mahoutsukai:mystic_staff", "base": 30 } ] }
+      { "id": "tech", "title": "Tech", "items": [ { "item": "mekanism:elite_control_circuit", "base": 150, "weight": 20 }, { "item": "draconicevolution:draconium_ingot", "base": 1000, "weight": 3 } ] },
+      { "id": "magic", "title": "Magic", "items": [ { "item": "botania:gaia_spirit", "base": 128, "fixed": true, "weight": 25 }, { "item": "mahoutsukai:mystic_staff", "base": 30, "fixed": true, "weight": 100 } ] }
     ],
     "stages": ["kronwerke:stage5"],
     "onComplete": [
@@ -98,8 +98,8 @@
     "holdAt": 0.98,
     "scale": true,
     "pillars": [
-      { "id": "tech", "title": "Tech", "items": [ { "item": "draconicevolution:awakened_draconium_block", "base": 64 }, { "item": "mekanism:pellet_antimatter", "base": 200 } ] },
-      { "id": "magic", "title": "Magic", "items": [ { "item": "botania:gaia_ingot", "base": 256 }, { "item": "ars_nouveau:wilden_tribute", "base": 64 } ] }
+      { "id": "tech", "title": "Tech", "items": [ { "item": "draconicevolution:awakened_draconium_block", "base": 64, "fixed": true, "weight": 50 }, { "item": "mekanism:pellet_antimatter", "base": 100, "weight": 30 } ] },
+      { "id": "magic", "title": "Magic", "items": [ { "item": "botania:gaia_ingot", "base": 128, "weight": 25 }, { "item": "ars_nouveau:wilden_tribute", "base": 64, "fixed": true, "weight": 50 } ] }
     ],
     "stages": [],
     "onComplete": [

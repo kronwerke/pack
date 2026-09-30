@@ -1,0 +1,35 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "undergarden"
+    }
+  ],
+  "type": "malum:spirit_repair",
+  "durabilityPercentage": 0.75,
+  "repairMaterial": {
+    "item": "undergarden:forgotten_ingot",
+    "count": 1
+  },
+  "spirits": [
+    {
+      "type": "malum:earthen",
+      "count": 20
+    },
+    {
+      "type": "malum:arcane",
+      "count": 12
+    },
+    {
+      "type": "malum:eldritch",
+      "count": 2
+    }
+  ],
+  "validItems": [
+    "undergarden:forgotten_sword"
+  ],
+  "regex": {
+    "itemIdRegex": "forgotten_.+",
+    "modIdRegex": "undergarden"
+  }
+}

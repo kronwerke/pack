@@ -1,0 +1,4 @@
+libpowergridNative7.so is the native solver of Create: Power Grid by patryk3211
+(https://github.com/patryk3211/PowerGrid), Apache License 2.0. Taken unchanged from
+powergrid-mc1.21.1-0.6.1.jar, because the 0.6.2 jar ships without it. Power Grid loads it
+from this folder and falls back to its slower Java solver when it is missing.

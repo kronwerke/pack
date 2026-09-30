@@ -1,0 +1,30 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "create"
+    }
+  ],
+  "type": "create:milling",
+  "ingredients": [
+    {
+      "item": "malum:grim_talc"
+    }
+  ],
+  "processing_time": 100,
+  "results": [
+    {
+      "count": 6,
+      "id": "minecraft:bone_meal"
+    },
+    {
+      "chance": 0.25,
+      "id": "minecraft:yellow_dye"
+    },
+    {
+      "chance": 0.25,
+      "count": 4,
+      "id": "minecraft:bone_meal"
+    }
+  ]
+}

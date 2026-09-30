@@ -1,0 +1,23 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "undergarden"
+    }
+  ],
+  "type": "malum:spirit_repair",
+  "durabilityPercentage": 0.5,
+  "repairMaterial": {
+    "item": "undergarden:twistytwig",
+    "count": 1
+  },
+  "spirits": [
+    {
+      "type": "malum:earthen",
+      "count": 2
+    }
+  ],
+  "validItems": [
+    "undergarden:slingshot"
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "hexerei"
+    }
+  ],
+  "type": "malum:spirit_repair",
+  "durabilityPercentage": 1.0,
+  "repairMaterial": {
+    "count": 4,
+    "item": "hexerei:mandrake_root"
+  },
+  "spirits": [
+    {
+      "type": "malum:arcane",
+      "count": 16
+    },
+    {
+      "type": "malum:aerial",
+      "count": 16
+    },
+    {
+      "type": "malum:eldritch",
+      "count": 16
+    }
+  ],
+  "validItems": [
+    "hexerei:herb_enhanced_broom_brush"
+  ],
+  "regex": {
+    "itemIdRegex": ".+broom_brush",
+    "modIdRegex": "hexerei"
+  }
+}

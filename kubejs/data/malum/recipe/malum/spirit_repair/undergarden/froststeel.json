@@ -1,0 +1,31 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "undergarden"
+    }
+  ],
+  "type": "malum:spirit_repair",
+  "durabilityPercentage": 0.5,
+  "repairMaterial": {
+    "item": "undergarden:froststeel_ingot",
+    "count": 2
+  },
+  "spirits": [
+    {
+      "type": "malum:aqueous",
+      "count": 8
+    },
+    {
+      "type": "malum:arcane",
+      "count": 4
+    }
+  ],
+  "validItems": [
+    "undergarden:froststeel_sword"
+  ],
+  "regex": {
+    "itemIdRegex": "froststeel_.+",
+    "modIdRegex": "undergarden"
+  }
+}

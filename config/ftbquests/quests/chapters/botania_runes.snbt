@@ -15,7 +15,7 @@
 			x: 0.0d
 			y: 0.0d
 			icon: {
-				id: "botania:manasteel_ingot"
+				id: "botania:rune_of_mana"
 				count: 1
 			}
 			size: 2.0d
@@ -23,12 +23,7 @@
 			tasks: [
 				{
 					id: "DFBFC0BFBAD8A912"
-					type: "item"
-					item: {
-						id: "botania:manasteel_ingot"
-						count: 1
-					}
-					count: 8
+					type: "checkmark"
 				}
 			]
 			rewards: [
@@ -36,7 +31,7 @@
 					id: "2A708618C81B15E7"
 					type: "item"
 					item: {
-						id: "minecraft:iron_ingot"
+						id: "botania:livingrock"
 						count: 1
 					}
 					count: 16
@@ -49,15 +44,97 @@
 			]
 		}
 		{
+			id: "4F58611AAEBAD0CD"
+			x: 2.4d
+			y: -1.2d
+			icon: {
+				id: "naturesaura:wood_stand"
+				count: 1
+			}
+			size: 1.5d
+			shape: "square"
+			dependencies: [
+				"897B5583009AF0A4"
+			]
+			tasks: [
+				{
+					id: "92D4661C2C1E13D6"
+					type: "item"
+					item: {
+						id: "botania:manasteel_ingot"
+						count: 1
+					}
+					count: 4
+				}
+			]
+			rewards: [
+				{
+					id: "A875D074AAF06122"
+					type: "item"
+					item: {
+						id: "naturesaura:gold_leaf"
+						count: 1
+					}
+					count: 2
+				}
+				{
+					id: "5C59F50226C6F3A4"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+		}
+		{
+			id: "0F7A2EEE3F0CDC02"
+			x: 2.4d
+			y: 1.2d
+			icon: {
+				id: "botania:manasteel_ingot"
+				count: 1
+			}
+			size: 1.5d
+			shape: "square"
+			dependencies: [
+				"897B5583009AF0A4"
+			]
+			tasks: [
+				{
+					id: "CD1B59D877296CCF"
+					type: "item"
+					item: {
+						id: "botania:manasteel_ingot"
+						count: 1
+					}
+					count: 16
+				}
+			]
+			rewards: [
+				{
+					id: "E3AD2B3B2E56CFFC"
+					type: "item"
+					item: {
+						id: "minecraft:iron_ingot"
+						count: 1
+					}
+					count: 16
+				}
+				{
+					id: "228C4F13FAB95DA3"
+					type: "loot"
+					table_id: "F2BA64790EBA3DF5"
+				}
+			]
+		}
+		{
 			id: "CDF888D56AB321F0"
-			x: 2.7d
-			y: -1.1d
+			x: 7.2d
+			y: -1.2d
 			icon: {
 				id: "botania:mana_pearl"
 				count: 1
 			}
 			dependencies: [
-				"897B5583009AF0A4"
+				"0CBB52F9CEC18DAE"
 			]
 			tasks: [
 				{
@@ -84,8 +161,8 @@
 		}
 		{
 			id: "2C0E066C9D7CE123"
-			x: 2.7d
-			y: 1.1d
+			x: 4.8d
+			y: 1.2d
 			icon: {
 				id: "botania:mana_quartz"
 				count: 1
@@ -118,8 +195,8 @@
 		}
 		{
 			id: "42599A8537E3F5A2"
-			x: 5.0d
-			y: -1.1d
+			x: 7.2d
+			y: 1.2d
 			icon: {
 				id: "botania:mana_tablet"
 				count: 1
@@ -158,7 +235,7 @@
 		{
 			id: "62DC15024652AB79"
 			x: 7.2d
-			y: -1.1d
+			y: 3.3d
 			optional: true
 			dependencies: [
 				"42599A8537E3F5A2"
@@ -188,11 +265,11 @@
 		}
 		{
 			id: "2293D8E1C9DCF430"
-			x: 5.0d
-			y: 1.1d
+			x: 2.4d
+			y: 3.3d
 			optional: true
 			dependencies: [
-				"897B5583009AF0A4"
+				"0F7A2EEE3F0CDC02"
 			]
 			tasks: [
 				{
@@ -219,14 +296,14 @@
 		}
 		{
 			id: "C81BA31B899D5F2B"
-			x: 7.2d
-			y: 1.1d
+			x: 4.8d
+			y: 3.3d
 			icon: {
 				id: "mekanism:metallurgic_infuser"
 				count: 1
 			}
 			dependencies: [
-				"897B5583009AF0A4"
+				"0F7A2EEE3F0CDC02"
 			]
 			tasks: [
 				{
@@ -244,11 +321,11 @@
 		}
 		{
 			id: "D26485A25C208EA9"
-			x: 7.2d
-			y: 3.3d
+			x: 0.0d
+			y: 2.9d
 			optional: true
 			dependencies: [
-				"C81BA31B899D5F2B"
+				"0F7A2EEE3F0CDC02"
 			]
 			tasks: [
 				{
@@ -1141,8 +1218,8 @@
 		}
 		{
 			id: "0CBB52F9CEC18DAE"
-			x: 15.0d
-			y: 6.5d
+			x: 4.8d
+			y: -1.2d
 			icon: {
 				id: "create:brass_casing"
 				count: 1
@@ -1158,7 +1235,16 @@
 						id: "create:brass_casing"
 						count: 1
 					}
-					count: 2
+					count: 3
+				}
+				{
+					id: "A8277E011EAD718F"
+					type: "item"
+					item: {
+						id: "create:brass_ingot"
+						count: 1
+					}
+					count: 1
 				}
 			]
 			rewards: [
@@ -1363,287 +1449,8 @@
 			]
 		}
 		{
-			id: "2B22ED96795A7EF9"
-			x: 14.0d
-			y: 13.8d
-			icon: {
-				id: "botania:glimmering_livingwood_log"
-				count: 1
-			}
-			dependencies: [
-				"2703449D8AFB77AE"
-			]
-			tasks: [
-				{
-					id: "CA7DEE3F2B405EE7"
-					type: "item"
-					item: {
-						id: "botania:glimmering_livingwood_log"
-						count: 1
-					}
-					count: 3
-				}
-			]
-			rewards: [
-				{
-					id: "F4C9CE29CCD3FC31"
-					type: "item"
-					item: {
-						id: "minecraft:glowstone_dust"
-						count: 1
-					}
-					count: 8
-				}
-			]
-		}
-		{
-			id: "26AE3DF9F5BDF33D"
-			x: 16.3d
-			y: 13.8d
-			icon: {
-				id: "botania:mana_pylon"
-				count: 1
-			}
-			dependencies: [
-				"2703449D8AFB77AE"
-			]
-			tasks: [
-				{
-					id: "430CC5B221AC1F61"
-					type: "item"
-					item: {
-						id: "botania:mana_pylon"
-						count: 1
-					}
-					count: 2
-				}
-			]
-			rewards: [
-				{
-					id: "D2E289893D886185"
-					type: "item"
-					item: {
-						id: "minecraft:gold_ingot"
-						count: 1
-					}
-					count: 8
-				}
-			]
-		}
-		{
-			id: "03D8BE2D9B239A28"
-			x: 18.6d
-			y: 13.8d
-			icon: {
-				id: "botania:natura_pylon"
-				count: 1
-			}
-			dependencies: [
-				"26AE3DF9F5BDF33D"
-			]
-			tasks: [
-				{
-					id: "50B92116E8ECB71E"
-					type: "item"
-					item: {
-						id: "botania:natura_pylon"
-						count: 1
-					}
-					count: 2
-				}
-			]
-			rewards: [
-				{
-					id: "D252C22BE77C29BB"
-					type: "item"
-					item: {
-						id: "minecraft:ender_eye"
-						count: 1
-					}
-					count: 2
-				}
-			]
-		}
-		{
-			id: "13845090627244ED"
-			x: 21.0d
-			y: 13.8d
-			icon: {
-				id: "botania:elven_gateway_core"
-				count: 1
-			}
-			size: 1.75d
-			shape: "square"
-			dependencies: [
-				"2B22ED96795A7EF9"
-				"03D8BE2D9B239A28"
-			]
-			tasks: [
-				{
-					id: "A396F6F0C8199D75"
-					type: "item"
-					item: {
-						id: "botania:elven_gateway_core"
-						count: 1
-					}
-					count: 1
-				}
-			]
-			rewards: [
-				{
-					id: "CC9A60AF864AB4EC"
-					type: "item"
-					item: {
-						id: "botania:livingwood_log"
-						count: 1
-					}
-					count: 16
-				}
-				{
-					id: "7AE3791D169E20E7"
-					type: "loot"
-					table_id: "BA8E33E78A3B3A0C"
-				}
-			]
-		}
-		{
-			id: "BAD90EE4A1213C50"
-			x: 23.5d
-			y: 13.8d
-			icon: {
-				id: "botania:natura_pylon"
-				count: 1
-			}
-			size: 1.5d
-			dependencies: [
-				"13845090627244ED"
-			]
-			tasks: [
-				{
-					id: "49BDB8680E8DF9AD"
-					type: "checkmark"
-				}
-			]
-			rewards: [
-				{
-					id: "9FB89BE8739DB8B0"
-					type: "xp_levels"
-					xp_levels: 10
-				}
-			]
-		}
-		{
-			id: "DA3A442422436536"
-			x: 23.5d
-			y: 16.0d
-			icon: {
-				id: "botania:lexica_botania"
-				count: 1
-			}
-			optional: true
-			dependencies: [
-				"BAD90EE4A1213C50"
-			]
-			tasks: [
-				{
-					id: "EB69458913493017"
-					type: "checkmark"
-				}
-			]
-			rewards: [
-				{
-					id: "827A50C2B22A15EA"
-					type: "item"
-					item: {
-						id: "minecraft:bread"
-						count: 1
-					}
-					count: 8
-				}
-			]
-		}
-		{
-			id: "0CD8BBF16987C23B"
-			x: 26.0d
-			y: 13.8d
-			icon: {
-				id: "botania:elven_quartz"
-				count: 1
-			}
-			dependencies: [
-				"BAD90EE4A1213C50"
-			]
-			tasks: [
-				{
-					id: "B79FC0638F8A6049"
-					type: "item"
-					item: {
-						id: "botania:alfglass"
-						count: 1
-					}
-					count: 8
-				}
-				{
-					id: "389351708182EC7C"
-					type: "item"
-					item: {
-						id: "botania:elven_quartz"
-						count: 1
-					}
-					count: 8
-				}
-			]
-			rewards: [
-				{
-					id: "A1FF8F4EB72B356A"
-					type: "item"
-					item: {
-						id: "minecraft:quartz"
-						count: 1
-					}
-					count: 16
-				}
-				{
-					id: "6AB90C3EB6745182"
-					type: "loot"
-					table_id: "BA8E33E78A3B3A0C"
-				}
-			]
-		}
-		{
-			id: "D5312D8A843EEB62"
-			x: 26.0d
-			y: 16.0d
-			optional: true
-			dependencies: [
-				"0CD8BBF16987C23B"
-			]
-			tasks: [
-				{
-					id: "F2374AE30BED5D88"
-					type: "item"
-					item: {
-						id: "botania:dragonstone"
-						count: 1
-					}
-					count: 1
-				}
-			]
-			rewards: [
-				{
-					id: "AAF4604AAF3B3298"
-					type: "item"
-					item: {
-						id: "minecraft:diamond"
-						count: 1
-					}
-					count: 1
-				}
-			]
-		}
-		{
 			id: "E4FE22C633678D6D"
-			x: 24.5d
+			x: 23.5d
 			y: 6.5d
 			icon: {
 				id: "botania:mana_pearl"
@@ -1683,7 +1490,7 @@
 		}
 		{
 			id: "9B24B0423BFE31CC"
-			x: 27.0d
+			x: 26.0d
 			y: 6.5d
 			icon: {
 				id: "botania:terrasteel_ingot"
@@ -1721,9 +1528,46 @@
 			]
 		}
 		{
+			id: "912D389F4D1D3371"
+			x: 23.5d
+			y: 9.3d
+			icon: {
+				id: "kronwerke:rune_core"
+				count: 1
+			}
+			size: 1.75d
+			shape: "gear"
+			dependencies: [
+				"2703449D8AFB77AE"
+			]
+			tasks: [
+				{
+					id: "FBBBB78088B5863F"
+					type: "item"
+					item: {
+						id: "kronwerke:rune_core"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "AA60ADBF6D3334ED"
+					type: "loot"
+					table_id: "BA8E33E78A3B3A0C"
+				}
+				{
+					id: "B0B202C69F95B4B0"
+					type: "xp_levels"
+					xp_levels: 10
+				}
+			]
+		}
+		{
 			id: "303D94AC159D99FF"
-			x: 25.7d
-			y: 9.2d
+			x: 26.0d
+			y: 9.3d
 			icon: {
 				id: "botania:terrasteel_block"
 				count: 1
@@ -1733,6 +1577,7 @@
 			dependencies: [
 				"E4FE22C633678D6D"
 				"9B24B0423BFE31CC"
+				"912D389F4D1D3371"
 			]
 			tasks: [
 				{
@@ -1807,18 +1652,8 @@
 		}
 		{
 			id: "B6DCB0CAB0E39BAB"
-			image: "kronwerke:textures/quests/botania_runes/alfheim.png"
-			x: 20.0d
-			y: 12.1d
-			width: 2.79d
-			height: 0.9d
-			rotation: 0.0d
-			order: 1
-		}
-		{
-			id: "B447CCB7AB22E72A"
 			image: "kronwerke:textures/quests/botania_runes/obelisk.png"
-			x: 26.0d
+			x: 24.8d
 			y: 4.3d
 			width: 5.3d
 			height: 0.9d

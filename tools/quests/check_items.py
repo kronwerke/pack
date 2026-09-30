@@ -1,7 +1,8 @@
 #!/usr/bin/env python3
 """Checks every item id in the built quest files against the items the mod jars register.
 An id counts as known when a jar has a lang entry, an item model, a blockstate or an
-item definition for it.
+item definition for it, or when it is in tools/stages/items.txt (the item registry of the
+test server, which also has the items KubeJS registers).
 Usage: check_items.py <quests dir> <mods dir>"""
 import json, os, re, sys, zipfile
 
@@ -34,6 +35,9 @@ for jar in os.listdir(mods):
                 mm = re.match(r"(item|block)\.([a-z0-9_.-]+)\.([a-z0-9_./-]+)$", k)
                 if mm:
                     known.add(f"{mm.group(2)}:{mm.group(3)}")
+registry = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "stages", "items.txt")
+if os.path.exists(registry):
+    known |= {l.strip() for l in open(registry) if l.strip()}
 # vanilla: accept anything under minecraft:
 missing = sorted(i for i in ids if not i.startswith("minecraft:") and i not in known and not i.startswith("ftbquests:"))
 print(f"{len(ids)} ids checked, {len(missing)} not found")

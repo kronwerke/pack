@@ -1,0 +1,27 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "botania"
+    }
+  ],
+  "type": "malum:spirit_repair",
+  "durabilityPercentage": 1,
+  "repairMaterial": {
+    "item": "botania:manasteel_ingot",
+    "count": 2
+  },
+  "spirits": [
+    {
+      "type": "malum:arcane",
+      "count": 16
+    }
+  ],
+  "validItems": [
+    "botania:soulscribe"
+  ],
+  "regex": {
+    "itemIdRegex": "manasteel_.+",
+    "modIdRegex": "botania"
+  }
+}

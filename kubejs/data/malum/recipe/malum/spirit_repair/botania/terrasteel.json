@@ -1,0 +1,27 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "botania"
+    }
+  ],
+  "type": "malum:spirit_repair",
+  "durabilityPercentage": 1,
+  "repairMaterial": {
+    "item": "botania:terrasteel_ingot",
+    "count": 1
+  },
+  "spirits": [
+    {
+      "type": "malum:arcane",
+      "count": 32
+    }
+  ],
+  "validItems": [
+    "botania:terra_blade"
+  ],
+  "regex": {
+    "itemIdRegex": "terra.+",
+    "modIdRegex": "botania"
+  }
+}

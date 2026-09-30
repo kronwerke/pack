@@ -515,6 +515,80 @@
 			]
 		}
 		{
+			id: "63969B96CAA509C8"
+			x: 13.5d
+			y: -1.75d
+			icon: {
+				id: "kronwerke:stone_gearbox"
+				count: 1
+			}
+			size: 1.25d
+			shape: "gear"
+			dependencies: [
+				"5201E5BDB258C810"
+			]
+			tasks: [
+				{
+					id: "48C5CE30F99D43FE"
+					type: "item"
+					item: {
+						id: "kronwerke:stone_gearbox"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "98754065E96DA716"
+					type: "loot"
+					table_id: "870211AF0E412C54"
+				}
+				{
+					id: "70E09948B872D845"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+		}
+		{
+			id: "A7C51A9763F1E7C6"
+			x: 13.5d
+			y: 1.75d
+			icon: {
+				id: "kronwerke:source_keystone"
+				count: 1
+			}
+			size: 1.25d
+			shape: "gear"
+			dependencies: [
+				"82221FD1BB9A6413"
+			]
+			tasks: [
+				{
+					id: "BE0D023116C2CEB3"
+					type: "item"
+					item: {
+						id: "kronwerke:source_keystone"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "75B132E6AC419881"
+					type: "loot"
+					table_id: "870211AF0E412C54"
+				}
+				{
+					id: "E96B89A1DE31D3BF"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+		}
+		{
 			id: "95C4F06C94471306"
 			x: 13.5d
 			y: 0.0d

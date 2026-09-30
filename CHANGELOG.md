@@ -42,3 +42,7 @@ First assembly. 222 mods on NeoForge 21.1.252, boots on a dedicated server. No q
 ## 0.5.2
 
 - Kronwerke Core 0.4.1, now on clients as well: Chapters hid every locked item in JEI with a call of its own, which kept the client busy for about ten minutes after joining until the server timed it out. Core batches those calls.
+
+## 0.5.3
+
+- Kronwerke Core 0.4.2: joining no longer freezes. After 0.4.1 Chapters still spent about eight minutes looking up every recipe that makes a locked item or fluid, to hide it in JEI. Core skips those lookups. Locked things stay out of JEI's list and the server still refuses to make them.

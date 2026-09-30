@@ -80,7 +80,7 @@ The id of each new recipe is `kronwerke:<family>/<name>`. "Remove all" means eve
 
 ### Milestones
 
-One crafted item per pillar in stages 1 to 3, registered in `kubejs/startup_scripts/milestones.js`, recipes in `kubejs/server_scripts/kronwerke/milestones.js`, textures drawn by `tools/items/draw.py`.
+One crafted item per pillar in stages 1 to 3, registered in `kubejs/startup_scripts/milestones.js`, recipes in `kubejs/server_scripts/kronwerke/milestones.js`, textures built by `tools/items/compose.py` from CC0 art (credits in `tools/items/sources/CREDITS.md`).
 
 | Stage | Item | Recipe |
 | --- | --- | --- |

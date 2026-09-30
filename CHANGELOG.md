@@ -71,3 +71,4 @@ First assembly. 222 mods on NeoForge 21.1.252, boots on a dedicated server. No q
 - Draconium ore only generates in the End.
 - The server console is much quieter: from 721 errors and 283 warnings at start to 5 and 240, by fixing the broken data of other mods rather than hiding it. Details in `docs/CONSOLE.md`.
 - The quest book follows the new recipes and stages, with a Power Grid line and quests for the milestones.
+- Neo Origins offers Kronwerke's own choices: nine origins (Herkunft) and seven roles (Rolle) instead of the generic forty, each with a real downside and none that flies or skips a stage (`docs/ORIGINS.md`). The kill counting evolution is off.

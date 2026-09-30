@@ -1,0 +1,15 @@
+{
+  "type": "neoorigins:action_on_event",
+  "event": "mod_exhaustion",
+  "modifier": {
+    "operation": "multiplication",
+    "value": 1.3
+  },
+  "condition": {
+    "type": "neoorigins:not",
+    "condition": {
+      "type": "neoorigins:dimension",
+      "dimension": "minecraft:overworld"
+    }
+  }
+}

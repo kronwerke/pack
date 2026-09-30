@@ -1,0 +1,24 @@
+{
+  "type": "neoorigins:condition_passive",
+  "interval": 40,
+  "condition": {
+    "type": "neoorigins:and",
+    "conditions": [
+      {
+        "type": "neoorigins:nearby_entities",
+        "entity_type": "minecraft:player",
+        "distance": 16
+      },
+      {
+        "type": "neoorigins:out_of_combat",
+        "ticks": 100
+      }
+    ]
+  },
+  "entity_action": {
+    "type": "neoorigins:apply_effect",
+    "effect": "minecraft:regeneration",
+    "duration": 60,
+    "amplifier": 0
+  }
+}

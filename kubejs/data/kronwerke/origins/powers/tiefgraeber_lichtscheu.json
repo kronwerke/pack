@@ -1,0 +1,31 @@
+{
+  "type": "neoorigins:persistent_effect",
+  "toggleable": false,
+  "condition": {
+    "type": "neoorigins:and",
+    "conditions": [
+      {
+        "type": "neoorigins:daytime"
+      },
+      {
+        "type": "neoorigins:exposed_to_sky"
+      }
+    ]
+  },
+  "effects": [
+    {
+      "effect": "minecraft:weakness",
+      "amplifier": 0,
+      "ambient": true,
+      "show_particles": false,
+      "show_icon": true
+    },
+    {
+      "effect": "minecraft:slowness",
+      "amplifier": 0,
+      "ambient": true,
+      "show_particles": false,
+      "show_icon": true
+    }
+  ]
+}

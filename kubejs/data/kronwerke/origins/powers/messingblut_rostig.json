@@ -1,0 +1,31 @@
+{
+  "type": "neoorigins:persistent_effect",
+  "toggleable": false,
+  "condition": {
+    "type": "neoorigins:or",
+    "conditions": [
+      {
+        "type": "neoorigins:in_water"
+      },
+      {
+        "type": "neoorigins:in_rain"
+      }
+    ]
+  },
+  "effects": [
+    {
+      "effect": "minecraft:slowness",
+      "amplifier": 0,
+      "ambient": true,
+      "show_particles": false,
+      "show_icon": true
+    },
+    {
+      "effect": "minecraft:mining_fatigue",
+      "amplifier": 0,
+      "ambient": true,
+      "show_particles": false,
+      "show_icon": true
+    }
+  ]
+}

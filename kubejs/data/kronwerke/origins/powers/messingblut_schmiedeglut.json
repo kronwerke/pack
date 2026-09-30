@@ -1,0 +1,32 @@
+{
+  "type": "neoorigins:condition_passive",
+  "interval": 20,
+  "condition": {
+    "type": "neoorigins:near_block",
+    "radius": 5,
+    "blocks": [
+      "minecraft:furnace",
+      "minecraft:blast_furnace",
+      "minecraft:smoker",
+      "create:blaze_burner",
+      "ironfurnaces:copper_furnace",
+      "ironfurnaces:iron_furnace",
+      "ironfurnaces:silver_furnace",
+      "ironfurnaces:gold_furnace",
+      "ironfurnaces:diamond_furnace",
+      "ironfurnaces:emerald_furnace",
+      "ironfurnaces:obsidian_furnace",
+      "ironfurnaces:crystal_furnace",
+      "ironfurnaces:netherite_furnace"
+    ],
+    "tags": [
+      "#minecraft:campfires"
+    ]
+  },
+  "entity_action": {
+    "type": "neoorigins:apply_effect",
+    "effect": "minecraft:haste",
+    "duration": 60,
+    "amplifier": 0
+  }
+}

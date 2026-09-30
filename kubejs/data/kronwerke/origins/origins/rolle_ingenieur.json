@@ -1,0 +1,12 @@
+{
+  "name": "origins.kronwerke.rolle_ingenieur.name",
+  "description": "origins.kronwerke.rolle_ingenieur.description",
+  "icon": "create:wrench",
+  "impact": "none",
+  "order": 1,
+  "powers": [
+    "kronwerke:rolle_ingenieur_werkzeugkiste",
+    "kronwerke:rolle_ingenieur_zahnradmacher",
+    "kronwerke:rolle_ingenieur_arbeitsschutz"
+  ]
+}

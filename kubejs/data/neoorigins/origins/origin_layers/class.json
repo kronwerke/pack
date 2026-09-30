@@ -1,0 +1,19 @@
+{
+  "replace": true,
+  "order": 2,
+  "name": "kronwerke.layer.class",
+  "origins": [
+    "kronwerke:rolle_ingenieur",
+    "kronwerke:rolle_arkanist",
+    "kronwerke:rolle_baumeister",
+    "kronwerke:rolle_entdecker",
+    "kronwerke:rolle_hueter",
+    "kronwerke:rolle_versorger",
+    "kronwerke:rolle_haendler"
+  ],
+  "exclude_random": [],
+  "allow_random": true,
+  "auto_choose": false,
+  "hidden": false,
+  "enabled": true
+}

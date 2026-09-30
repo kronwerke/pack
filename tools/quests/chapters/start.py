@@ -456,14 +456,16 @@ quests = [
           rewards=[reward_xp(3)],
           deps=["v_discord"], icon="minecraft:map"),
 
-    quest("v_origin", 7, 14, "&6Dein Ursprung",
+    quest("v_origin", 7, 14, "&6Herkunft und Rolle",
           subtitle="Wer du bist, ändert, wie du spielst.",
           description=[
-              "Beim ersten Betreten hast du einen &6Ursprung&r gewählt (Neo Origins). Jeder hat Stärken und Schwächen, und manche machen bestimmte Teile des Packs leichter oder schwerer.",
+              "Beim ersten Betreten wählst du zwei Dinge. Deine &6Herkunft&r sagt, woher du kommst: aus den Schmieden (&6Messingblut&r), vom Naturaltar (&6Aurakind&r), aus der Tiefe der Minendimension (&6Tiefgräber&r) oder von weiter her. Jede hat echte Stärken und eine echte Schwäche. Neu im Modpack? &6Kronbürger&r und &6Mühlenkind&r sind einfach zu spielen.",
               "",
-              "Wenn du noch unsicher bist, spiel ein paar Abende damit. Hast du wirklich etwas erwischt, das gar nicht passt, sprich die Streamer oder das Team an.",
+              "Deine &6Rolle&r ist, was du für die Gemeinschaft tust: &6Ingenieur&r, &6Arkanist&r, &6Baumeister&r, &6Entdecker&r, &6Hüter&r, &6Versorger&r oder &6Händler&r. Die Boni sind klein, aber sie passen zu dem, was der Obelisk verlangt. Sprecht euch ab, eine Gruppe mit verschiedenen Rollen kommt schneller voran.",
+              "",
+              "Keine Herkunft kann fliegen oder überspringt eine Stufe. Hast du wirklich etwas erwischt, das gar nicht passt, sprich das Team an. Alle Details stehen in der Auswahl, wenn du über eine Kraft fährst.",
           ],
-          tasks=[task_checkmark("Mein Ursprung steht")],
+          tasks=[task_checkmark("Herkunft und Rolle stehen")],
           rewards=[reward_xp(3)],
           deps=["v_discord"], icon="minecraft:player_head"),
 

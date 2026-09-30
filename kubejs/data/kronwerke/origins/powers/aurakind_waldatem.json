@@ -1,0 +1,25 @@
+{
+  "type": "neoorigins:condition_passive",
+  "interval": 80,
+  "condition": {
+    "type": "neoorigins:or",
+    "conditions": [
+      {
+        "type": "neoorigins:biome",
+        "tag": "minecraft:is_forest"
+      },
+      {
+        "type": "neoorigins:biome",
+        "tag": "minecraft:is_taiga"
+      },
+      {
+        "type": "neoorigins:biome",
+        "tag": "minecraft:is_jungle"
+      }
+    ]
+  },
+  "entity_action": {
+    "type": "neoorigins:heal",
+    "amount": 1.0
+  }
+}

@@ -38,3 +38,7 @@ First assembly. 222 mods on NeoForge 21.1.252, boots on a dedicated server. No q
 - TabTPS is gone. When a join fails, it throws on the quit event for a player it never saw, and that took the whole server down. spark still shows TPS.
 - Kronwerke Core 0.4.0: `/kw admin bypass`, a quiet console for RCON, old logs deleted after 30 days.
 - CI commits as Elchi.
+
+## 0.5.2
+
+- Kronwerke Core 0.4.1, now on clients as well: Chapters hid every locked item in JEI with a call of its own, which kept the client busy for about ten minutes after joining until the server timed it out. Core batches those calls.

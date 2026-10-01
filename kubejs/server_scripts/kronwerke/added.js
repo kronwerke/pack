@@ -125,4 +125,27 @@ ServerEvents.recipes(event => {
   // The brass bee would hand out the stage 2 milestone metal for free once a single bee
   // exists. Its comb gives nothing in the centrifuge; the bee itself stays as a curiosity.
   event.remove({ id: 'productivebees:centrifuge/alloys/honeycomb_brass' })
+
+  // Cataclysm's structure eyes all need an eye of ender, which needs blaze powder from the
+  // Nether. The overworld bosses are meant for stage 1 and 2, so each overworld eye gets a
+  // second recipe: a source gem where the eye of ender sat, and an ender pearl in one slot.
+  const P = 'minecraft:ender_pearl'
+  const G = 'ars_nouveau:source_gem'
+  event.shaped('cataclysm:desert_eye', ['gCE', 'DSG', 'PCB'], {
+    g: 'minecraft:gold_ingot', C: 'minecraft:chiseled_sandstone', E: 'minecraft:emerald',
+    D: 'minecraft:dead_bush', S: G, G: 'minecraft:cactus', P: P, B: 'minecraft:bone'
+  }).id('kronwerke:added/cataclysm_desert_eye')
+  event.shaped('cataclysm:cursed_eye', ['gBg', 'MSM', 'gPg'], {
+    g: 'minecraft:gold_ingot', B: 'minecraft:bone', M: 'minecraft:phantom_membrane', S: G, P: P
+  }).id('kronwerke:added/cataclysm_cursed_eye')
+  event.shaped('cataclysm:abyss_eye', ['#P#', 'OSO', '#O#'], {
+    '#': 'minecraft:crying_obsidian', O: 'minecraft:obsidian', S: G, P: P
+  }).id('kronwerke:added/cataclysm_abyss_eye')
+  event.shaped('cataclysm:mech_eye', ['#P#', 'iSi', '#i#'], {
+    '#': 'minecraft:redstone_block', i: 'minecraft:iron_ingot', S: G, P: P
+  }).id('kronwerke:added/cataclysm_mech_eye')
+  event.shaped('cataclysm:storm_eye', ['#L#', 'DSD', 'CPC'], {
+    '#': 'minecraft:prismarine_shard', L: 'minecraft:lightning_rod', D: 'minecraft:diamond',
+    S: G, C: 'minecraft:prismarine_crystals', P: P
+  }).id('kronwerke:added/cataclysm_storm_eye')
 })

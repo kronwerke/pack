@@ -843,13 +843,13 @@
 	quest.061098343E743312.quest_subtitle: "Die Erze für den Reaktor."
 	quest.061098343E743312.title: "&7Bau Uran, Bor und Lithium ab"
 	quest.06192D32943C61EB.quest_desc: [
-		"Buch anlegen, mit &eAlt + Mausrad&r oder im Zauberrad (&eV&r) den Zauber wählen, &eR&r drücken. Fertig."
+		"Buch anlegen, mit &eAlt + Mausrad&r oder im Zauberrad (&eR&r halten) den Zauber wählen, &eStrg+V&r drücken. Fertig."
 		""
-		"Der Tooltip jeder Rolle nennt die Art des Zaubers. &eInstant&r wirkt sofort. &eLong Cast&r und &eCharge&r brauchen eine Aufladezeit, in der du R hältst. Zauber mit &eHold&r in der Beschreibung (Fire Breath, Cone of Cold, Electrocute) laufen, solange du R hältst, und kosten Mana pro Sekunde."
+		"Der Tooltip jeder Rolle nennt die Art des Zaubers. &eInstant&r wirkt sofort. &eLong Cast&r und &eCharge&r brauchen eine Aufladezeit, in der du Strg+V hältst. Zauber mit &eHold&r in der Beschreibung (Fire Breath, Cone of Cold, Electrocute) laufen, solange du Strg+V hältst, und kosten Mana pro Sekunde."
 		""
 		"&eTipp:&r Vier gewöhnliche Zauber decken alles ab: ein Angriff (Magic Missile, Firebolt, Icicle), eine Flucht (Burning Dash, Volt Strike), ein Schutz (Shield, Oakskin) und eine Heilung (Healing Circle, Blessing of Life)."
 	]
-	quest.06192D32943C61EB.quest_subtitle: "Buch an, Zauber wählen, R."
+	quest.06192D32943C61EB.quest_subtitle: "Buch an, Zauber wählen, Strg+V."
 	quest.06192D32943C61EB.title: "&dWirke deinen ersten Zauber"
 	quest.062379C67E14B4C2.quest_desc: [
 		"Werkbank: eine &6Utherische Scherbe&r auf einen &6Stock&r ergibt eine &6Scherbenfackel&r."
@@ -1508,7 +1508,7 @@
 	quest.0D60F7B9916F92B1.quest_subtitle: "Sechzehn Ruten pro Vorhersage."
 	quest.0D60F7B9916F92B1.title: "&6Lerne die Lohe"
 	quest.0D68228F76A8678F.quest_desc: [
-		"Drück &eV&r für das Menü von &6Simple Voice Chat&r: Mikrofon wählen, Lautstärke, Push-to-Talk oder Sprachaktivierung. Wer bis &e48 Blöcke&r entfernt ist, hört dich, leiser mit der Entfernung. Flüstern reicht 24 Blöcke."
+		"Drück &eAlt+V&r für das Menü von &6Simple Voice Chat&r: Mikrofon wählen, Lautstärke, Push-to-Talk oder Sprachaktivierung. Wer bis &e48 Blöcke&r entfernt ist, hört dich, leiser mit der Entfernung. Flüstern reicht 24 Blöcke."
 		""
 		"Im selben Menü legst du eine &6Gruppe&r an oder trittst einer bei. Gruppenmitglieder hören sich überall, auch über Dimensionen hinweg. Ein Symbol am Bildschirmrand zeigt, wer gerade spricht, und Aufnahmen über das Menü sind auf dem Server erlaubt."
 	]
@@ -5694,13 +5694,13 @@
 	quest.3EEACBE873E2B758.quest_subtitle: "Portable Lagerschnittstellen."
 	quest.3EEACBE873E2B758.title: "&6Lad Fracht am Bahnsteig"
 	quest.3EF20F3F4BEAF5AF.quest_desc: [
-		"Die Tasten, die du brauchst: &eR&r und &eU&r Rezepte in JEI, &eM&r Karte und Claims, &eJ&r JourneyMap, &eB&r Wegpunkt, &eV&r Sprachchat-Menü, &eK&r Nachtsicht (Tiefgräber), &e`&r (links neben der 1) Ultimine, &eW&r gedrückt halten für Ponder, &eU&r außerhalb von Menüs die Todeshistorie."
+		"Deine Herkunft liegt auf &eZ&r, &eX&r, &eC&r und &eAlt+R&r (Fähigkeit 1 bis 4), die Rolle auf &eH&r, die Übersicht auf &eO&r. Dazu &eR&r und &eU&r in JEI, &eM&r Karte und Claims, &eB&r Rucksack, &eG&r Schmuckplätze, &e`&r (links neben der 1) Ultimine, &eW&r halten für Ponder, &eU&r außerhalb von Menüs die Todeshistorie."
 		""
-		"Einige davon sind &cdoppelt belegt&r, dann passiert beides auf einmal: &eV&r ist auch die erste Fähigkeit deiner Herkunft, &eG&r Sprachchat-Gruppen und die zweite Fähigkeit, &eH&r blendet Sprachchat-Symbole aus und ist die Rollen-Fähigkeit, &eM&r schaltet zusätzlich dein Mikrofon stumm, &eB&r sortiert außerdem das Inventar."
+		"Seltene Tasten liegen auf &eAlt&r, &eStrg&r oder &eShift&r plus Buchstabe, zum Beispiel &eAlt+V&r Sprachchat-Menü, &eShift+G&r Sprachchat-Gruppen, &eAlt+B&r Inventar sortieren. Rot markierte Tasten in den &eSteuerungseinstellungen&r liegen doppelt."
 		""
-		"Leg dir in den &eSteuerungseinstellungen&r die Sprachchat-Tasten (Kategorie Simple Voice Chat) und die Fähigkeitentasten (Kategorie NeoOrigins) auf freie Tasten, bevor dich der Mikrofon-Knopf mitten im Kampf überrascht."
+		"Hast du eine Taste schon selbst geändert, bleibt deine Belegung. Doppelt belegte Tasten legst du dann selbst um."
 	]
-	quest.3EF20F3F4BEAF5AF.quest_subtitle: "Ein paar Standardtasten liegen doppelt."
+	quest.3EF20F3F4BEAF5AF.quest_subtitle: "Kronwerke hat die Tasten schon sortiert."
 	quest.3EF20F3F4BEAF5AF.title: "&6Prüf deine Tasten"
 	quest.3EF70CDED4C9B534.quest_desc: [
 		"&6Mechanischer Mixer&r: &d4 SU pro RPM&r. Bei 64 RPM 256 SU, ein Wasserrad pro Mixer."
@@ -7341,9 +7341,9 @@
 	quest.50A6208CE0ADDB45.quest_subtitle: "Briefe und Pakete für Freunde."
 	quest.50A6208CE0ADDB45.title: "&6Schick Eulenpost"
 	quest.50D9C334A54D24D6.quest_desc: [
-		"&eV&r öffnet das Menü von Simple Voice Chat. Tritt der &eGruppe&r bei, die das Team für das Finale anlegt. In einer Gruppe hörst du die anderen über jede Entfernung."
+		"&eAlt+V&r öffnet das Menü von Simple Voice Chat. Tritt der &eGruppe&r bei, die das Team für das Finale anlegt. In einer Gruppe hörst du die anderen über jede Entfernung."
 		""
-		"Ohne Gruppe reicht deine Stimme nur 48 Blöcke, und die Insel ist viel größer. Prüf vorher, ob dein Mikrofon stumm ist (oft die Taste &eM&r, siehe &6Tipps und Tricks&r)."
+		"Ohne Gruppe reicht deine Stimme nur 48 Blöcke, und die Insel ist viel größer. Prüf vorher im Sprachchat-Menü (&eAlt+V&r), ob dein Mikrofon an ist."
 	]
 	quest.50D9C334A54D24D6.quest_subtitle: "Über die ganze Insel hören, wer was ansagt."
 	quest.50D9C334A54D24D6.title: "&eTritt der Sprachgruppe bei"
@@ -11680,7 +11680,7 @@
 	quest.8198D782FADB864F.quest_desc: [
 		"Beim ersten Betreten hast du eine &6Herkunft&r und eine &6Rolle&r gewählt. Mit &eO&r öffnest du jederzeit die Übersicht deiner Kräfte, mit Stärken und Schwäche."
 		""
-		"Die meisten Kräfte wirken von allein. Aktive brauchen eine Taste: Der &eSternensprung&r des Sternensplitters liegt auf der ersten Fähigkeitentaste (&eV&r), die &ePacktasche&r des Händlers auf der Rollen-Taste (&eH&r), die Nachtsicht des Tiefgräbers auf &eK&r. Siehe die Quest zu den Tasten, wenn V bei dir das Sprachchat-Menü öffnet."
+		"Die meisten Kräfte wirken von allein. Aktive brauchen eine Taste: Der &eSternensprung&r des Sternensplitters liegt auf der ersten Fähigkeitentaste (&eZ&r), die &ePacktasche&r des Händlers auf der Rollen-Taste (&eH&r), die Nachtsicht des Tiefgräbers auf &eK&r."
 		""
 		"Keine Herkunft kann fliegen oder überspringt eine Stufe. Passt deine Wahl gar nicht, sprich das Team an."
 	]
@@ -14577,11 +14577,11 @@
 	quest.9FC6B71CB35F1EC8.quest_subtitle: "Stapel in die Hand, Rechtsklick auf den Obelisken."
 	quest.9FC6B71CB35F1EC8.title: "&eGib deinen Bruchstein ab"
 	quest.A00BE4CC7BBC12F8.quest_desc: [
-		"&eV&r öffnet das Menü von &6Simple Voice Chat&r. Dort wählst du dein Mikrofon, stellst die Lautstärke ein und entscheidest zwischen &eSprachaktivierung&r und &ePush-to-Talk&r. Die Push-to-Talk-Taste legst du in den Steuerungseinstellungen fest, standardmäßig ist keine belegt."
+		"&eAlt+V&r öffnet das Menü von &6Simple Voice Chat&r. Dort wählst du dein Mikrofon, stellst die Lautstärke ein und entscheidest zwischen &eSprachaktivierung&r und &ePush-to-Talk&r. Die Push-to-Talk-Taste legst du in den Steuerungseinstellungen fest, standardmäßig ist keine belegt."
 		""
 		"Wer näher als &e48 Blöcke&r ist, hört dich, leiser mit der Entfernung. Flüstern reicht 24 Blöcke. Über das Menü legst du &eGruppen&r an, dann hört dich dein Team über jede Entfernung."
 		""
-		"Die Symbole unten zeigen dir, ob dein Mikrofon stumm ist. Wenn dich niemand hört, schau zuerst dort nach, meist war es die Taste &eM&r."
+		"Die Symbole unten zeigen dir, ob dein Mikrofon stumm ist. Stummschalten liegt auf keiner Taste, damit das nicht aus Versehen passiert; im Menü geht es mit einem Klick."
 	]
 	quest.A00BE4CC7BBC12F8.quest_subtitle: "48 Blöcke weit hört man dich."
 	quest.A00BE4CC7BBC12F8.title: "&6Richte den Sprachchat ein"
@@ -18533,7 +18533,7 @@
 	quest.CE3F4844B0942666.quest_subtitle: "Von der Fledermaus."
 	quest.CE3F4844B0942666.title: "&8Bat Wing"
 	quest.CE5766817EEA260D.quest_desc: [
-		"Öffne dein Inventar und leg das Zauberbuch in den &6Zauberbuch-Slot&r neben der Rüstung (Curios). Zaubern: &eR&r wirkt den gewählten Zauber, &eV&r öffnet das Zauberrad, &eAlt + Mausrad&r wechselt den Zauber."
+		"Öffne dein Inventar und leg das Zauberbuch in den &6Zauberbuch-Slot&r neben der Rüstung (Curios). Zaubern: &eStrg+V&r wirkt den gewählten Zauber, &eR&r gedrückt halten öffnet das Zauberrad, &eAlt + Mausrad&r wechselt den Zauber."
 		""
 		"Dein &bMana&r siehst du als blaue Leiste bei der Hotbar. Du startest mit &e100 Mana&r. Alle halbe Sekunde kommt &e1 Prozent&r deines Maximums zurück, bei 100 Mana also 2 pro Sekunde, eine volle Leiste in 50 Sekunden."
 		""

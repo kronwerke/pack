@@ -84,7 +84,7 @@
 		}
 		{
 			id: "3459C39EF219EF00"
-			x: 2.5d
+			x: 1.2d
 			y: 2.2d
 			optional: true
 			dependencies: [
@@ -115,7 +115,7 @@
 		}
 		{
 			id: "DCB343338207B5C7"
-			x: 4.5d
+			x: 3.0d
 			y: 2.2d
 			optional: true
 			dependencies: [
@@ -137,6 +137,41 @@
 					id: "CB8A64E5BBE9657B"
 					type: "xp_levels"
 					xp_levels: 3
+				}
+			]
+		}
+		{
+			id: "7760522667E003B6"
+			x: 4.8d
+			y: 2.2d
+			icon: {
+				id: "botania:white_shimmering_mushroom"
+				count: 1
+			}
+			optional: true
+			dependencies: [
+				"C868D3E932E58562"
+			]
+			tasks: [
+				{
+					id: "8389B4993477E5E3"
+					type: "item"
+					item: {
+						id: "botania:white_shimmering_mushroom"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "97F4E3D07BFE8BE2"
+					type: "item"
+					item: {
+						id: "minecraft:white_dye"
+						count: 1
+					}
+					count: 8
 				}
 			]
 		}
@@ -231,6 +266,41 @@
 			]
 		}
 		{
+			id: "6E2A3C1AEE32A999"
+			x: 7.5d
+			y: 2.4d
+			icon: {
+				id: "minecraft:calcite"
+				count: 1
+			}
+			optional: true
+			dependencies: [
+				"ED435C6A3BC3D3CA"
+			]
+			tasks: [
+				{
+					id: "61A0620C43F5278E"
+					type: "item"
+					item: {
+						id: "minecraft:calcite"
+						count: 1
+					}
+					count: 8
+				}
+			]
+			rewards: [
+				{
+					id: "BAB784137853AAE2"
+					type: "item"
+					item: {
+						id: "minecraft:ice"
+						count: 1
+					}
+					count: 8
+				}
+			]
+		}
+		{
 			id: "D6EEF29F1CBC1249"
 			x: 10.0d
 			y: -1.2d
@@ -304,9 +374,43 @@
 			]
 		}
 		{
-			id: "EF7281F66B996839"
+			id: "53BFED27B04021F4"
 			x: 12.5d
-			y: 0.0d
+			y: -1.2d
+			icon: {
+				id: "botania:livingwood_twig"
+				count: 1
+			}
+			dependencies: [
+				"D6EEF29F1CBC1249"
+			]
+			tasks: [
+				{
+					id: "48F81D28CD94DD84"
+					type: "item"
+					item: {
+						id: "botania:livingwood_twig"
+						count: 1
+					}
+					count: 6
+				}
+			]
+			rewards: [
+				{
+					id: "27D772C62F6AAFBF"
+					type: "item"
+					item: {
+						id: "botania:livingwood_log"
+						count: 1
+					}
+					count: 8
+				}
+			]
+		}
+		{
+			id: "EF7281F66B996839"
+			x: 15.0d
+			y: -1.2d
 			icon: {
 				id: "botania:wand_of_the_forest"
 				count: 1
@@ -314,7 +418,7 @@
 			size: 1.5d
 			shape: "square"
 			dependencies: [
-				"D6EEF29F1CBC1249"
+				"53BFED27B04021F4"
 			]
 			tasks: [
 				{
@@ -347,7 +451,7 @@
 		{
 			id: "1EA8CAAD238C4975"
 			x: 12.5d
-			y: 2.4d
+			y: 1.2d
 			optional: true
 			dependencies: [
 				"4FF6E9B7E297083E"
@@ -437,8 +541,42 @@
 			]
 		}
 		{
-			id: "8896230628F1E72B"
+			id: "9A860A74987EDCB4"
 			x: 2.5d
+			y: 8.7d
+			icon: {
+				id: "minecraft:charcoal"
+				count: 1
+			}
+			dependencies: [
+				"47432AC486C4BE0B"
+			]
+			tasks: [
+				{
+					id: "19A8A47F2A978054"
+					type: "item"
+					item: {
+						id: "minecraft:charcoal"
+						count: 1
+					}
+					count: 32
+				}
+			]
+			rewards: [
+				{
+					id: "D591CF335BC0A38E"
+					type: "item"
+					item: {
+						id: "minecraft:coal_block"
+						count: 1
+					}
+					count: 2
+				}
+			]
+		}
+		{
+			id: "8896230628F1E72B"
+			x: 0.0d
 			y: 8.7d
 			optional: true
 			dependencies: [
@@ -525,7 +663,6 @@
 			id: "824479AAA0A4414E"
 			x: 5.0d
 			y: 8.7d
-			optional: true
 			dependencies: [
 				"C93A5D6E1304403E"
 			]
@@ -558,6 +695,40 @@
 						count: 1
 					}
 					count: 16
+				}
+			]
+		}
+		{
+			id: "B7E22FDA80DAE530"
+			x: 7.2d
+			y: 8.7d
+			icon: {
+				id: "minecraft:hopper"
+				count: 1
+			}
+			dependencies: [
+				"824479AAA0A4414E"
+			]
+			tasks: [
+				{
+					id: "FDF457E06D87FE64"
+					type: "checkmark"
+				}
+			]
+			rewards: [
+				{
+					id: "BD46D1D8BDDF4E9D"
+					type: "item"
+					item: {
+						id: "minecraft:coal"
+						count: 1
+					}
+					count: 32
+				}
+				{
+					id: "B367C9CCCC775F22"
+					type: "xp_levels"
+					xp_levels: 5
 				}
 			]
 		}
@@ -727,6 +898,68 @@
 			]
 		}
 		{
+			id: "C11B31DAC9106109"
+			x: 13.7d
+			y: 7.7d
+			optional: true
+			dependencies: [
+				"FBD41068DBFF46C1"
+			]
+			tasks: [
+				{
+					id: "64DEB005FCE66816"
+					type: "item"
+					item: {
+						id: "botania:mana_detector"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "642635BE4F5C4A30"
+					type: "item"
+					item: {
+						id: "minecraft:redstone"
+						count: 1
+					}
+					count: 16
+				}
+			]
+		}
+		{
+			id: "D5D70FBDCB7037BA"
+			x: 11.5d
+			y: 9.9d
+			optional: true
+			dependencies: [
+				"21219E97B696428D"
+			]
+			tasks: [
+				{
+					id: "2BFD9F9FA7B5EEE1"
+					type: "item"
+					item: {
+						id: "botania:mana_void"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "DD30A9B7385A21E1"
+					type: "item"
+					item: {
+						id: "minecraft:obsidian"
+						count: 1
+					}
+					count: 4
+				}
+			]
+		}
+		{
 			id: "022D0F42C3CD2423"
 			x: 0.0d
 			y: 13.5d
@@ -793,12 +1026,38 @@
 			]
 		}
 		{
-			id: "93E44C13922F04E9"
+			id: "C64757CBBE5B7CB6"
 			x: 2.5d
 			y: 15.7d
 			optional: true
 			dependencies: [
 				"5ED69134FFF1E0FB"
+			]
+			tasks: [
+				{
+					id: "81DD3AA814D53224"
+					type: "item"
+					item: {
+						id: "botania:petal_pouch"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "BFD8E219F347E974"
+					type: "xp_levels"
+					xp_levels: 3
+				}
+			]
+		}
+		{
+			id: "93E44C13922F04E9"
+			x: 0.0d
+			y: 15.7d
+			dependencies: [
+				"022D0F42C3CD2423"
 			]
 			tasks: [
 				{
@@ -824,8 +1083,66 @@
 			]
 		}
 		{
+			id: "302BB31F7C41F6E7"
+			x: 0.0d
+			y: 17.9d
+			optional: true
+			dependencies: [
+				"93E44C13922F04E9"
+			]
+			tasks: [
+				{
+					id: "74D649453CCA0573"
+					type: "item"
+					item: {
+						id: "botania:manaweave_cloth"
+						count: 1
+					}
+					count: 4
+				}
+			]
+			rewards: [
+				{
+					id: "3B0CBD2FF04DFE27"
+					type: "item"
+					item: {
+						id: "minecraft:string"
+						count: 1
+					}
+					count: 32
+				}
+			]
+		}
+		{
+			id: "56E90CB505CEE239"
+			x: 2.2d
+			y: 17.9d
+			optional: true
+			dependencies: [
+				"302BB31F7C41F6E7"
+			]
+			tasks: [
+				{
+					id: "123D1AA7D718DF91"
+					type: "item"
+					item: {
+						id: "botania:manaweave_chestplate"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "0FA7EDF1FEEAFB8E"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+		}
+		{
 			id: "D23B99B6B09C28EE"
-			x: 4.7d
+			x: -2.2d
 			y: 15.7d
 			optional: true
 			dependencies: [
@@ -896,39 +1213,8 @@
 			]
 		}
 		{
-			id: "7B838BB3540E8390"
-			x: 0.0d
-			y: 15.7d
-			optional: true
-			dependencies: [
-				"022D0F42C3CD2423"
-			]
-			tasks: [
-				{
-					id: "19F25273D3F4437A"
-					type: "item"
-					item: {
-						id: "botania:pasture_seeds"
-						count: 1
-					}
-					count: 4
-				}
-			]
-			rewards: [
-				{
-					id: "EDABEB8CFB6DDE72"
-					type: "item"
-					item: {
-						id: "minecraft:bone_meal"
-						count: 1
-					}
-					count: 16
-				}
-			]
-		}
-		{
 			id: "47E0E464E8552E7D"
-			x: 7.2d
+			x: 5.0d
 			y: 15.7d
 			optional: true
 			dependencies: [
@@ -954,6 +1240,68 @@
 						count: 1
 					}
 					count: 8
+				}
+			]
+		}
+		{
+			id: "7B838BB3540E8390"
+			x: 7.4d
+			y: 13.5d
+			optional: true
+			dependencies: [
+				"6228D87AF0D862F2"
+			]
+			tasks: [
+				{
+					id: "19F25273D3F4437A"
+					type: "item"
+					item: {
+						id: "botania:pasture_seeds"
+						count: 1
+					}
+					count: 4
+				}
+			]
+			rewards: [
+				{
+					id: "EDABEB8CFB6DDE72"
+					type: "item"
+					item: {
+						id: "minecraft:bone_meal"
+						count: 1
+					}
+					count: 16
+				}
+			]
+		}
+		{
+			id: "307A58F922CC3B6F"
+			x: 7.4d
+			y: 15.7d
+			optional: true
+			dependencies: [
+				"7B838BB3540E8390"
+			]
+			tasks: [
+				{
+					id: "ACF82EB7F72CD1C2"
+					type: "item"
+					item: {
+						id: "botania:boreal_seeds"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "93BE3561B98945D5"
+					type: "item"
+					item: {
+						id: "minecraft:dead_bush"
+						count: 1
+					}
+					count: 4
 				}
 			]
 		}
@@ -1155,6 +1503,32 @@
 			]
 		}
 		{
+			id: "230412D9E675F8DC"
+			x: 16.0d
+			y: 16.8d
+			icon: {
+				id: "botania:agricarnation"
+				count: 1
+			}
+			optional: true
+			dependencies: [
+				"BBE06264E07BD930"
+			]
+			tasks: [
+				{
+					id: "AAA600359637C0D0"
+					type: "checkmark"
+				}
+			]
+			rewards: [
+				{
+					id: "DC12F4BAE1C60734"
+					type: "xp_levels"
+					xp_levels: 2
+				}
+			]
+		}
+		{
 			id: "A6A79D780C28D080"
 			x: 18.5d
 			y: 6.5d
@@ -1167,6 +1541,7 @@
 			dependencies: [
 				"21219E97B696428D"
 				"FBD41068DBFF46C1"
+				"B7E22FDA80DAE530"
 			]
 			tasks: [
 				{
@@ -1211,8 +1586,47 @@
 			]
 		}
 		{
-			id: "B435FA9F8A2B0B11"
+			id: "409FF7E6C4A446D3"
 			x: 21.0d
+			y: 8.7d
+			icon: {
+				id: "naturesaura:infused_iron"
+				count: 1
+			}
+			dependencies: [
+				"A6A79D780C28D080"
+			]
+			tasks: [
+				{
+					id: "5208FF4F0CC3B9F8"
+					type: "item"
+					item: {
+						id: "naturesaura:infused_iron"
+						count: 1
+					}
+					count: 8
+				}
+			]
+			rewards: [
+				{
+					id: "F675170C2D34028C"
+					type: "item"
+					item: {
+						id: "minecraft:iron_ingot"
+						count: 1
+					}
+					count: 16
+				}
+				{
+					id: "4BA36473CCB45310"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+		}
+		{
+			id: "B435FA9F8A2B0B11"
+			x: 23.4d
 			y: 8.7d
 			icon: {
 				id: "naturesaura:infused_iron"
@@ -1220,7 +1634,7 @@
 			}
 			optional: true
 			dependencies: [
-				"A6A79D780C28D080"
+				"409FF7E6C4A446D3"
 			]
 			tasks: [
 				{

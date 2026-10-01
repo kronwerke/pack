@@ -13,7 +13,7 @@
 		{
 			id: "B2930B06D06C5604"
 			x: 0.0d
-			y: 0.0d
+			y: 1.0d
 			icon: {
 				id: "sophisticatedbackpacks:backpack"
 				count: 1
@@ -257,6 +257,46 @@
 			]
 		}
 		{
+			id: "AB4E9B5A5A019147"
+			x: 12.5d
+			y: 0.0d
+			icon: {
+				id: "sophisticatedbackpacks:stack_upgrade_tier_1"
+				count: 1
+			}
+			optional: true
+			dependencies: [
+				"D379A1919AC771B0"
+			]
+			tasks: [
+				{
+					id: "ECD490BE217CF2B4"
+					type: "item"
+					item: {
+						id: "sophisticatedbackpacks:stack_upgrade_tier_1"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "183AE25EEF531366"
+					type: "item"
+					item: {
+						id: "minecraft:iron_block"
+						count: 1
+					}
+					count: 2
+				}
+				{
+					id: "61AD77B4AE7BD95D"
+					type: "xp_levels"
+					xp_levels: 8
+				}
+			]
+		}
+		{
 			id: "A27B30EC8AC36F66"
 			x: 2.5d
 			y: 2.0d
@@ -416,9 +456,155 @@
 			]
 		}
 		{
+			id: "81C442B20A631710"
+			x: 2.5d
+			y: 3.8d
+			icon: {
+				id: "sophisticatedbackpacks:smelting_upgrade"
+				count: 1
+			}
+			optional: true
+			dependencies: [
+				"A27B30EC8AC36F66"
+			]
+			tasks: [
+				{
+					id: "EEE0C7F10F6B5BC3"
+					type: "item"
+					item: {
+						id: "sophisticatedbackpacks:smelting_upgrade"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "630C2F50E65B845C"
+					type: "item"
+					item: {
+						id: "minecraft:coal"
+						count: 1
+					}
+					count: 16
+				}
+				{
+					id: "0518D6F45DF4DA0C"
+					type: "xp_levels"
+					xp_levels: 3
+				}
+			]
+		}
+		{
+			id: "BA9DEFF20142F889"
+			x: 4.5d
+			y: 3.8d
+			icon: {
+				id: "sophisticatedbackpacks:compacting_upgrade"
+				count: 1
+			}
+			optional: true
+			dependencies: [
+				"5CED9FD808309030"
+			]
+			tasks: [
+				{
+					id: "98FEC8299374CAD1"
+					type: "item"
+					item: {
+						id: "sophisticatedbackpacks:compacting_upgrade"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "253AE311A940B38E"
+					type: "item"
+					item: {
+						id: "minecraft:piston"
+						count: 1
+					}
+					count: 2
+				}
+				{
+					id: "74631CCFECFC282D"
+					type: "xp_levels"
+					xp_levels: 3
+				}
+			]
+		}
+		{
+			id: "61A8C46488896708"
+			x: 6.5d
+			y: 3.8d
+			icon: {
+				id: "sophisticatedbackpacks:tank_upgrade"
+				count: 1
+			}
+			optional: true
+			dependencies: [
+				"FCC62AD2062CC1D3"
+			]
+			tasks: [
+				{
+					id: "15F4A5061D0C8F00"
+					type: "item"
+					item: {
+						id: "sophisticatedbackpacks:tank_upgrade"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "25FE7328105042C6"
+					type: "item"
+					item: {
+						id: "minecraft:bucket"
+						count: 1
+					}
+					count: 2
+				}
+				{
+					id: "AD736241A36B0845"
+					type: "xp_levels"
+					xp_levels: 3
+				}
+			]
+		}
+		{
+			id: "6A24D44A10ADC82D"
+			x: 8.5d
+			y: 3.8d
+			icon: {
+				id: "sophisticatedbackpacks:filter_upgrade"
+				count: 1
+			}
+			optional: true
+			dependencies: [
+				"6915DD4065879162"
+			]
+			tasks: [
+				{
+					id: "0543887CB917F338"
+					type: "checkmark"
+				}
+			]
+			rewards: [
+				{
+					id: "7EA1FB998ABA606C"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+		}
+		{
 			id: "A70663EA49DDC090"
 			x: 0.0d
-			y: 6.5d
+			y: 8.5d
 			icon: {
 				id: "functionalstorage:oak_1"
 				count: 1
@@ -456,7 +642,7 @@
 		{
 			id: "F23E32DC044F6206"
 			x: 2.5d
-			y: 6.5d
+			y: 7.5d
 			icon: {
 				id: "functionalstorage:oak_2"
 				count: 1
@@ -490,7 +676,7 @@
 		{
 			id: "8738016492573B84"
 			x: 4.5d
-			y: 6.5d
+			y: 7.5d
 			icon: {
 				id: "functionalstorage:oak_4"
 				count: 1
@@ -529,7 +715,7 @@
 		{
 			id: "94EF9BAD0CC68B94"
 			x: 6.5d
-			y: 6.5d
+			y: 7.5d
 			icon: {
 				id: "functionalstorage:configuration_tool"
 				count: 1
@@ -568,7 +754,7 @@
 		{
 			id: "39DDDBA13B3BC629"
 			x: 8.5d
-			y: 6.5d
+			y: 7.5d
 			icon: {
 				id: "functionalstorage:puller_upgrade"
 				count: 1
@@ -602,7 +788,7 @@
 		{
 			id: "880777933A7972A3"
 			x: 10.5d
-			y: 6.5d
+			y: 7.5d
 			icon: {
 				id: "functionalstorage:pusher_upgrade"
 				count: 1
@@ -639,9 +825,44 @@
 			]
 		}
 		{
+			id: "AE9F87181606AF4A"
+			x: 12.5d
+			y: 7.5d
+			icon: {
+				id: "functionalstorage:redstone_upgrade"
+				count: 1
+			}
+			optional: true
+			dependencies: [
+				"880777933A7972A3"
+			]
+			tasks: [
+				{
+					id: "C80ACA9F022C1BCB"
+					type: "item"
+					item: {
+						id: "functionalstorage:redstone_upgrade"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "00D2250E8898280C"
+					type: "item"
+					item: {
+						id: "minecraft:redstone"
+						count: 1
+					}
+					count: 16
+				}
+			]
+		}
+		{
 			id: "E7617FAA55C09B6D"
 			x: 2.5d
-			y: 8.5d
+			y: 9.5d
 			icon: {
 				id: "functionalstorage:framed_1"
 				count: 1
@@ -676,7 +897,7 @@
 		{
 			id: "0D58EEC36BD48654"
 			x: 4.5d
-			y: 8.5d
+			y: 9.5d
 			icon: {
 				id: "functionalstorage:fluid_1"
 				count: 1
@@ -711,7 +932,7 @@
 		{
 			id: "A90915287F39E323"
 			x: 4.5d
-			y: 10.3d
+			y: 11.3d
 			icon: {
 				id: "functionalstorage:water_generator_upgrade"
 				count: 1
@@ -742,7 +963,7 @@
 		{
 			id: "E36D3B24716092EE"
 			x: 6.5d
-			y: 8.5d
+			y: 9.5d
 			icon: {
 				id: "functionalstorage:void_upgrade"
 				count: 1
@@ -773,7 +994,7 @@
 		{
 			id: "1BDAE54068A44274"
 			x: 8.5d
-			y: 8.5d
+			y: 9.5d
 			icon: {
 				id: "functionalstorage:collector_upgrade"
 				count: 1
@@ -802,23 +1023,24 @@
 			]
 		}
 		{
-			id: "AE9F87181606AF4A"
+			id: "D229F11F3730A0E7"
 			x: 10.5d
-			y: 8.5d
+			y: 9.5d
 			icon: {
-				id: "functionalstorage:redstone_upgrade"
+				id: "functionalstorage:dripping_upgrade"
 				count: 1
 			}
 			optional: true
 			dependencies: [
-				"880777933A7972A3"
+				"A90915287F39E323"
+				"1BDAE54068A44274"
 			]
 			tasks: [
 				{
-					id: "C80ACA9F022C1BCB"
+					id: "284F7131DBF2A062"
 					type: "item"
 					item: {
-						id: "functionalstorage:redstone_upgrade"
+						id: "functionalstorage:dripping_upgrade"
 						count: 1
 					}
 					count: 1
@@ -826,20 +1048,25 @@
 			]
 			rewards: [
 				{
-					id: "00D2250E8898280C"
+					id: "6F13EC2D0B8E9D65"
 					type: "item"
 					item: {
-						id: "minecraft:redstone"
+						id: "minecraft:obsidian"
 						count: 1
 					}
-					count: 16
+					count: 4
+				}
+				{
+					id: "7D2B849DACC2E843"
+					type: "xp_levels"
+					xp_levels: 5
 				}
 			]
 		}
 		{
 			id: "44A8F4160E0A0FD1"
 			x: 0.0d
-			y: 14.5d
+			y: 15.5d
 			icon: {
 				id: "sophisticatedstorage:barrel"
 				count: 1
@@ -1107,7 +1334,7 @@
 		}
 		{
 			id: "9237EF8B25F399B0"
-			x: 0.0d
+			x: 2.5d
 			y: 16.5d
 			icon: {
 				id: "sophisticatedstorage:chest"
@@ -1141,8 +1368,185 @@
 			]
 		}
 		{
+			id: "F0B8D7B3372EC244"
+			x: 4.5d
+			y: 16.5d
+			icon: {
+				id: "sophisticatedstorage:basic_tier_upgrade"
+				count: 1
+			}
+			optional: true
+			dependencies: [
+				"177F8A83983678C7"
+			]
+			tasks: [
+				{
+					id: "690C7034D85CEE5C"
+					type: "item"
+					item: {
+						id: "sophisticatedstorage:basic_tier_upgrade"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "C934FE2673B25874"
+					type: "xp_levels"
+					xp_levels: 3
+				}
+			]
+		}
+		{
+			id: "E24EDDA24E72E84C"
+			x: 6.5d
+			y: 16.5d
+			icon: {
+				id: "sophisticatedstorage:limited_barrel_1"
+				count: 1
+			}
+			optional: true
+			dependencies: [
+				"346DEBB1C869A0A6"
+			]
+			tasks: [
+				{
+					id: "46164F11A5A6C1FC"
+					type: "item"
+					item: {
+						id: "sophisticatedstorage:limited_barrel_1"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "A71BD73CAE93ADE6"
+					type: "xp_levels"
+					xp_levels: 3
+				}
+			]
+		}
+		{
+			id: "A4E3D7B177AD28B8"
+			x: 8.5d
+			y: 16.5d
+			icon: {
+				id: "sophisticatedstorage:stack_upgrade_tier_1_plus"
+				count: 1
+			}
+			optional: true
+			dependencies: [
+				"346DEBB1C869A0A6"
+			]
+			tasks: [
+				{
+					id: "924919B50A3D20A8"
+					type: "item"
+					item: {
+						id: "sophisticatedstorage:stack_upgrade_tier_1_plus"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "768F8DFE8CE132F3"
+					type: "item"
+					item: {
+						id: "minecraft:copper_block"
+						count: 1
+					}
+					count: 4
+				}
+				{
+					id: "7082DF0E5A4D7C92"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+		}
+		{
+			id: "6180B9E2F0DEBA48"
+			x: 12.5d
+			y: 16.5d
+			icon: {
+				id: "sophisticatedstorage:storage_io"
+				count: 1
+			}
+			optional: true
+			dependencies: [
+				"3CEC503F60C10794"
+			]
+			tasks: [
+				{
+					id: "79D7C745EF2735FE"
+					type: "item"
+					item: {
+						id: "sophisticatedstorage:storage_io"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "FE502C96FDBE0D04"
+					type: "item"
+					item: {
+						id: "minecraft:gold_ingot"
+						count: 1
+					}
+					count: 4
+				}
+				{
+					id: "DB7F95AA52776FA6"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+		}
+		{
+			id: "32BFA972276FD357"
+			x: 14.5d
+			y: 15.5d
+			icon: {
+				id: "sophisticatedstorage:storage_link"
+				count: 1
+			}
+			optional: true
+			dependencies: [
+				"3CEC503F60C10794"
+			]
+			tasks: [
+				{
+					id: "F1FA15FAF1A37CCC"
+					type: "item"
+					item: {
+						id: "sophisticatedstorage:storage_link"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "1C09D9EFD25DA194"
+					type: "item"
+					item: {
+						id: "minecraft:ender_pearl"
+						count: 1
+					}
+					count: 2
+				}
+			]
+		}
+		{
 			id: "EF39DA19C699832B"
-			x: 0.0d
+			x: 2.5d
 			y: 18.3d
 			icon: {
 				id: "sophisticatedstorage:packing_tape"
@@ -1176,106 +1580,120 @@
 			]
 		}
 		{
-			id: "F0B8D7B3372EC244"
+			id: "614DDB6D632143C6"
+			x: 6.5d
+			y: 18.3d
+			icon: {
+				id: "sophisticatedstorage:iron_barrel"
+				count: 1
+			}
+			optional: true
+			dependencies: [
+				"D8C129DB3D7AD17D"
+			]
+			tasks: [
+				{
+					id: "197358240D55D5BE"
+					type: "checkmark"
+				}
+			]
+			rewards: [
+				{
+					id: "776EA68B3B1BC10B"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+		}
+		{
+			id: "99465359444BFF1F"
+			x: 0.0d
+			y: 22.0d
+			icon: {
+				id: "create:item_vault"
+				count: 1
+			}
+			size: 1.5d
+			shape: "rsquare"
+			dependencies: [
+				"44A8F4160E0A0FD1"
+			]
+			tasks: [
+				{
+					id: "84A39D2EC738CA05"
+					type: "item"
+					item: {
+						id: "create:item_vault"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "114AF2B51851C60E"
+					type: "item"
+					item: {
+						id: "create:iron_sheet"
+						count: 1
+					}
+					count: 4
+				}
+				{
+					id: "76E68892E36216FF"
+					type: "xp_levels"
+					xp_levels: 3
+				}
+			]
+		}
+		{
+			id: "D4A151BC31EC2754"
 			x: 2.5d
-			y: 16.5d
+			y: 22.0d
 			icon: {
-				id: "sophisticatedstorage:basic_tier_upgrade"
+				id: "create:item_vault"
 				count: 1
 			}
-			optional: true
 			dependencies: [
-				"177F8A83983678C7"
+				"99465359444BFF1F"
 			]
 			tasks: [
 				{
-					id: "690C7034D85CEE5C"
+					id: "D2AD315305A828BF"
 					type: "item"
 					item: {
-						id: "sophisticatedstorage:basic_tier_upgrade"
+						id: "create:item_vault"
 						count: 1
 					}
-					count: 1
+					count: 9
 				}
 			]
 			rewards: [
 				{
-					id: "C934FE2673B25874"
+					id: "DAB9D3B2AE0A6BB3"
+					type: "item"
+					item: {
+						id: "create:andesite_alloy"
+						count: 1
+					}
+					count: 16
+				}
+				{
+					id: "E899B683CEAFBAB1"
+					type: "loot"
+					table_id: "870211AF0E412C54"
+				}
+				{
+					id: "17DC775F0B119EB4"
 					type: "xp_levels"
-					xp_levels: 3
-				}
-			]
-		}
-		{
-			id: "E24EDDA24E72E84C"
-			x: 8.5d
-			y: 16.5d
-			icon: {
-				id: "sophisticatedstorage:limited_barrel_1"
-				count: 1
-			}
-			optional: true
-			dependencies: [
-				"346DEBB1C869A0A6"
-			]
-			tasks: [
-				{
-					id: "46164F11A5A6C1FC"
-					type: "item"
-					item: {
-						id: "sophisticatedstorage:limited_barrel_1"
-						count: 1
-					}
-					count: 1
-				}
-			]
-			rewards: [
-				{
-					id: "A71BD73CAE93ADE6"
-					type: "xp_levels"
-					xp_levels: 3
-				}
-			]
-		}
-		{
-			id: "32BFA972276FD357"
-			x: 12.5d
-			y: 16.5d
-			icon: {
-				id: "sophisticatedstorage:storage_link"
-				count: 1
-			}
-			optional: true
-			dependencies: [
-				"3CEC503F60C10794"
-			]
-			tasks: [
-				{
-					id: "F1FA15FAF1A37CCC"
-					type: "item"
-					item: {
-						id: "sophisticatedstorage:storage_link"
-						count: 1
-					}
-					count: 1
-				}
-			]
-			rewards: [
-				{
-					id: "1C09D9EFD25DA194"
-					type: "item"
-					item: {
-						id: "minecraft:ender_pearl"
-						count: 1
-					}
-					count: 2
+					xp_levels: 5
 				}
 			]
 		}
 		{
 			id: "3D9AC8CB35883A98"
 			x: 0.0d
-			y: 22.0d
+			y: 25.5d
 			icon: {
 				id: "trashcans:item_trash_can"
 				count: 1
@@ -1309,7 +1727,7 @@
 		{
 			id: "EDF911F8B18CBBEF"
 			x: 2.5d
-			y: 22.0d
+			y: 25.5d
 			icon: {
 				id: "trashcans:liquid_trash_can"
 				count: 1
@@ -1338,9 +1756,40 @@
 			]
 		}
 		{
-			id: "5EB6BEEA844AAABE"
+			id: "734205C461FAB7B1"
 			x: 4.5d
-			y: 22.0d
+			y: 25.5d
+			icon: {
+				id: "trashcans:ultimate_trash_can"
+				count: 1
+			}
+			optional: true
+			dependencies: [
+				"EDF911F8B18CBBEF"
+			]
+			tasks: [
+				{
+					id: "4708D29CF4AB3D48"
+					type: "item"
+					item: {
+						id: "trashcans:ultimate_trash_can"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "1FDEEEB21892DD3B"
+					type: "xp_levels"
+					xp_levels: 3
+				}
+			]
+		}
+		{
+			id: "5EB6BEEA844AAABE"
+			x: 6.5d
+			y: 25.5d
 			icon: {
 				id: "supplementaries:sack"
 				count: 1
@@ -1374,7 +1823,7 @@
 		}
 		{
 			id: "901C3EC70E22F8DA"
-			x: 16.0d
+			x: 17.0d
 			y: 9.0d
 			icon: {
 				id: "sophisticatedstorage:iron_barrel"
@@ -1386,6 +1835,7 @@
 				"D379A1919AC771B0"
 				"880777933A7972A3"
 				"3CEC503F60C10794"
+				"99465359444BFF1F"
 			]
 			tasks: [
 				{
@@ -1415,6 +1865,15 @@
 					}
 					count: 1
 				}
+				{
+					id: "5EE2A60C35FB2458"
+					type: "item"
+					item: {
+						id: "create:item_vault"
+						count: 1
+					}
+					count: 1
+				}
 			]
 			rewards: [
 				{
@@ -1431,7 +1890,7 @@
 		}
 		{
 			id: "8028305A0B04BDE2"
-			x: 16.0d
+			x: 17.0d
 			y: 12.5d
 			icon: {
 				id: "minecraft:chest"
@@ -1460,18 +1919,18 @@
 		{
 			id: "1E97F3E9EDDC222E"
 			image: "kronwerke:textures/quests/storage/title.png"
-			x: 5.2d
-			y: -4.0d
-			width: 12.5d
-			height: 1.7d
+			x: 5.51d
+			y: -3.6d
+			width: 11.03d
+			height: 1.5d
 			rotation: 0.0d
 			order: 1
 		}
 		{
 			id: "062030B8492A4C45"
 			image: "kronwerke:textures/quests/storage/backpacks.png"
-			x: 0.6d
-			y: -1.85d
+			x: 3.6d
+			y: -1.4d
 			width: 3.2d
 			height: 0.9d
 			rotation: 0.0d
@@ -1480,8 +1939,8 @@
 		{
 			id: "D32DEFC12CBEC759"
 			image: "kronwerke:textures/quests/storage/drawers.png"
-			x: 0.98d
-			y: 4.6d
+			x: 1.98d
+			y: 6.0d
 			width: 3.95d
 			height: 0.9d
 			rotation: 0.0d
@@ -1490,8 +1949,8 @@
 		{
 			id: "D9DAC718A15268E9"
 			image: "kronwerke:textures/quests/storage/chests.png"
-			x: 1.75d
-			y: 12.6d
+			x: 2.75d
+			y: 13.0d
 			width: 5.5d
 			height: 0.9d
 			rotation: 0.0d
@@ -1499,19 +1958,29 @@
 		}
 		{
 			id: "DCD503A73A97BE09"
-			image: "kronwerke:textures/quests/storage/cleanup.png"
-			x: 0.7d
-			y: 20.3d
-			width: 3.37d
+			image: "kronwerke:textures/quests/storage/vault.png"
+			x: 2.38d
+			y: 20.4d
+			width: 4.76d
 			height: 0.9d
 			rotation: 0.0d
 			order: 1
 		}
 		{
 			id: "210DAA26300E71B8"
+			image: "kronwerke:textures/quests/storage/cleanup.png"
+			x: 1.69d
+			y: 23.9d
+			width: 3.37d
+			height: 0.9d
+			rotation: 0.0d
+			order: 1
+		}
+		{
+			id: "9C96013BD6557E5E"
 			image: "kronwerke:textures/quests/storage/goal.png"
-			x: 16.0d
-			y: 6.6d
+			x: 16.89d
+			y: 6.8d
 			width: 1.39d
 			height: 0.9d
 			rotation: 0.0d

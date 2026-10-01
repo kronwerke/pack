@@ -268,6 +268,43 @@
 			]
 		}
 		{
+			id: "1B140A50CBCAF2D0"
+			x: 7.75d
+			y: 2.5d
+			icon: {
+				id: "botania:gaia_head"
+				count: 1
+			}
+			optional: true
+			dependencies: [
+				"13CF74838C078848"
+			]
+			tasks: [
+				{
+					id: "FCCB5C2529E828A5"
+					type: "advancement"
+					advancement: "botania:challenge/gaia_guardian_no_armor"
+					criterion: ""
+				}
+			]
+			rewards: [
+				{
+					id: "DEA2887ADF2AE6A9"
+					type: "item"
+					item: {
+						id: "minecraft:enchanted_golden_apple"
+						count: 1
+					}
+					count: 1
+				}
+				{
+					id: "D0DC5E0462F35F3C"
+					type: "xp_levels"
+					xp_levels: 20
+				}
+			]
+		}
+		{
 			id: "648D6B68944ABA7C"
 			x: 10.25d
 			y: -2.5d
@@ -443,6 +480,43 @@
 			]
 		}
 		{
+			id: "7CB2BB336E1C636F"
+			x: 15.25d
+			y: 0.0d
+			icon: {
+				id: "botania:flugel_tiara"
+				count: 1
+			}
+			optional: true
+			dependencies: [
+				"47BAA1EE97F2F59F"
+			]
+			tasks: [
+				{
+					id: "4DDA72A24566C7B4"
+					type: "advancement"
+					advancement: "botania:main/tiara_wings"
+					criterion: ""
+				}
+			]
+			rewards: [
+				{
+					id: "67E1755A7FB0D075"
+					type: "item"
+					item: {
+						id: "minecraft:quartz"
+						count: 1
+					}
+					count: 16
+				}
+				{
+					id: "A77910C24B33755D"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+		}
+		{
 			id: "39E952C251A80C20"
 			x: 12.75d
 			y: 2.5d
@@ -483,9 +557,84 @@
 			]
 		}
 		{
+			id: "F59B423B20532EB5"
+			x: 12.75d
+			y: 4.6d
+			icon: {
+				id: "botania:cellular_block"
+				count: 1
+			}
+			optional: true
+			dependencies: [
+				"39E952C251A80C20"
+			]
+			tasks: [
+				{
+					id: "2429BA215EF53956"
+					type: "item"
+					item: {
+						id: "botania:cellular_block"
+						count: 1
+					}
+					count: 32
+				}
+			]
+			rewards: [
+				{
+					id: "D0B56E82C364DDA3"
+					type: "item"
+					item: {
+						id: "minecraft:cactus"
+						count: 1
+					}
+					count: 32
+				}
+			]
+		}
+		{
+			id: "1CA58CC28C140BE5"
+			x: 15.25d
+			y: 4.8d
+			icon: {
+				id: "botania:shulk_me_not"
+				count: 1
+			}
+			optional: true
+			dependencies: [
+				"39E952C251A80C20"
+			]
+			tasks: [
+				{
+					id: "567E850F111CF5CA"
+					type: "item"
+					item: {
+						id: "botania:shulk_me_not"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "3B05E13B406A8D7F"
+					type: "item"
+					item: {
+						id: "minecraft:shulker_shell"
+						count: 1
+					}
+					count: 2
+				}
+				{
+					id: "B2C45BAE475131F4"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+		}
+		{
 			id: "13C500BB8EBF1F7D"
 			x: 15.25d
-			y: -1.25d
+			y: -1.6d
 			icon: {
 				id: "botania:cloak_of_virtue"
 				count: 1
@@ -504,6 +653,24 @@
 					}
 					count: 1
 				}
+				{
+					id: "D21F293BCB262079"
+					type: "item"
+					item: {
+						id: "botania:cloak_of_sin"
+						count: 1
+					}
+					count: 1
+				}
+				{
+					id: "EF87F0B2EEA5C894"
+					type: "item"
+					item: {
+						id: "botania:cloak_of_balance"
+						count: 1
+					}
+					count: 1
+				}
 			]
 			rewards: [
 				{
@@ -515,12 +682,213 @@
 					}
 					count: 8
 				}
+				{
+					id: "9C455835784E1043"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+		}
+		{
+			id: "13623105DB6D5A1D"
+			x: 15.25d
+			y: -3.2d
+			icon: {
+				id: "botania:crimson_pendant"
+				count: 1
+			}
+			optional: true
+			dependencies: [
+				"13C500BB8EBF1F7D"
+			]
+			tasks: [
+				{
+					id: "D6B73F1483ABE89B"
+					type: "item"
+					item: {
+						id: "botania:crimson_pendant"
+						count: 1
+					}
+					count: 1
+				}
+				{
+					id: "BC511F8E2389FE44"
+					type: "item"
+					item: {
+						id: "botania:nimbus_amulet"
+						count: 1
+					}
+					count: 1
+				}
+				{
+					id: "20E417F6830C5B25"
+					type: "item"
+					item: {
+						id: "botania:globetrotters_sash"
+						count: 1
+					}
+					count: 1
+				}
+				{
+					id: "F566DB1C3B4E1581"
+					type: "item"
+					item: {
+						id: "botania:charm_of_the_diva"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "83E2BDFB86450A33"
+					type: "item"
+					item: {
+						id: "botania:elementium_ingot"
+						count: 1
+					}
+					count: 4
+				}
+				{
+					id: "FF0FE97FA3B95033"
+					type: "loot"
+					table_id: "A1C2F3302F73AD62"
+				}
+			]
+		}
+		{
+			id: "DC4E1A4E6B2CA48A"
+			x: 17.75d
+			y: -3.2d
+			icon: {
+				id: "botania:great_fairy_ring"
+				count: 1
+			}
+			optional: true
+			dependencies: [
+				"13623105DB6D5A1D"
+			]
+			tasks: [
+				{
+					id: "7E5661B2B047F3A5"
+					type: "item"
+					item: {
+						id: "botania:great_fairy_ring"
+						count: 1
+					}
+					count: 1
+				}
+				{
+					id: "D3686484D7833671"
+					type: "item"
+					item: {
+						id: "botania:ring_of_far_reach"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "8F213EE4A31835F5"
+					type: "item"
+					item: {
+						id: "botania:pixie_dust"
+						count: 1
+					}
+					count: 4
+				}
+				{
+					id: "BC4D6AB811B4E353"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+		}
+		{
+			id: "250C8F223355806F"
+			x: 17.75d
+			y: -1.6d
+			icon: {
+				id: "botania:black_hole_talisman"
+				count: 1
+			}
+			optional: true
+			dependencies: [
+				"13C500BB8EBF1F7D"
+			]
+			tasks: [
+				{
+					id: "7BD78DEA8004927A"
+					type: "item"
+					item: {
+						id: "botania:black_hole_talisman"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "58BCEB4E78E1E5CF"
+					type: "item"
+					item: {
+						id: "minecraft:cobblestone"
+						count: 1
+					}
+					count: 64
+				}
+				{
+					id: "B04CF80B8AC32E43"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+		}
+		{
+			id: "30995844B154C20D"
+			x: 20.25d
+			y: -1.6d
+			icon: {
+				id: "botania:worldshapers_astrolabe"
+				count: 1
+			}
+			optional: true
+			dependencies: [
+				"250C8F223355806F"
+			]
+			tasks: [
+				{
+					id: "8DB0E9A905B63613"
+					type: "item"
+					item: {
+						id: "botania:worldshapers_astrolabe"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "16A7D4A614491566"
+					type: "item"
+					item: {
+						id: "botania:dreamwood_log"
+						count: 1
+					}
+					count: 16
+				}
+				{
+					id: "6A711C454C5787EE"
+					type: "xp_levels"
+					xp_levels: 5
+				}
 			]
 		}
 		{
 			id: "60E57BF06C45A964"
 			x: 15.25d
-			y: 1.25d
+			y: 1.6d
 			icon: {
 				id: "botania:starcaller"
 				count: 1
@@ -546,6 +914,41 @@
 					type: "item"
 					item: {
 						id: "botania:pure_ender_essence"
+						count: 1
+					}
+					count: 2
+				}
+			]
+		}
+		{
+			id: "80C83E43A1C35408"
+			x: 15.25d
+			y: 3.2d
+			icon: {
+				id: "botania:thundercaller"
+				count: 1
+			}
+			optional: true
+			dependencies: [
+				"60E57BF06C45A964"
+			]
+			tasks: [
+				{
+					id: "07B747F9F3663DCF"
+					type: "item"
+					item: {
+						id: "botania:thundercaller"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "F96B5E3F721EB8B5"
+					type: "item"
+					item: {
+						id: "botania:mana_diamond"
 						count: 1
 					}
 					count: 2
@@ -622,7 +1025,7 @@
 			id: "71A2A3BF43A124B8"
 			image: "kronwerke:textures/quests/gaia/title.png"
 			x: 9.0d
-			y: -5.6d
+			y: -6.2d
 			width: 8.98d
 			height: 1.8d
 			rotation: 0.0d
@@ -651,8 +1054,8 @@
 		{
 			id: "8C5E503FE3ACC731"
 			image: "kronwerke:textures/quests/gaia/seelen.png"
-			x: 14.0d
-			y: -3.9d
+			x: 15.25d
+			y: -4.6d
 			width: 5.29d
 			height: 0.9d
 			rotation: 0.0d
@@ -661,8 +1064,8 @@
 		{
 			id: "F30FAD873342C960"
 			image: "kronwerke:textures/quests/gaia/obelisk.png"
-			x: 19.0d
-			y: -1.9d
+			x: 19.2d
+			y: 1.8d
 			width: 5.3d
 			height: 0.9d
 			rotation: 0.0d

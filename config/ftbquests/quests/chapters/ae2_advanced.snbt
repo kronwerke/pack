@@ -13,7 +13,7 @@
 		{
 			id: "982C1E9144D1B45D"
 			x: 0.0d
-			y: 4.5d
+			y: 1.0d
 			icon: {
 				id: "ae2:item_storage_cell_64k"
 				count: 1
@@ -54,11 +54,11 @@
 			]
 		}
 		{
-			id: "5E319C40AA564E5E"
+			id: "44296EC5F7545D24"
 			x: 2.5d
-			y: 1.0d
+			y: 0.0d
 			icon: {
-				id: "ae2:item_storage_cell_256k"
+				id: "ae2:item_storage_cell_64k"
 				count: 1
 			}
 			dependencies: [
@@ -66,7 +66,7 @@
 			]
 			tasks: [
 				{
-					id: "B15E6E0334C5921B"
+					id: "03AA45F0CF016945"
 					type: "item"
 					item: {
 						id: "ae2:item_storage_cell_64k"
@@ -75,7 +75,46 @@
 					count: 1
 				}
 				{
-					id: "594F49331DCCC381"
+					id: "5BC0F5A5763ECAE4"
+					type: "item"
+					item: {
+						id: "ae2:64k_crafting_storage"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "6C6BCF93724A013C"
+					type: "item"
+					item: {
+						id: "ae2:crafting_unit"
+						count: 1
+					}
+					count: 2
+				}
+				{
+					id: "CAEBED49A8629D47"
+					type: "xp_levels"
+					xp_levels: 8
+				}
+			]
+		}
+		{
+			id: "5E319C40AA564E5E"
+			x: 5.0d
+			y: 0.0d
+			icon: {
+				id: "ae2:item_storage_cell_256k"
+				count: 1
+			}
+			dependencies: [
+				"44296EC5F7545D24"
+			]
+			tasks: [
+				{
+					id: "B15E6E0334C5921B"
 					type: "item"
 					item: {
 						id: "ae2:item_storage_cell_256k"
@@ -102,14 +141,378 @@
 				{
 					id: "EA402FE6B43751BE"
 					type: "xp_levels"
+					xp_levels: 12
+				}
+			]
+		}
+		{
+			id: "B33523A58B9514E6"
+			x: 2.5d
+			y: 2.0d
+			icon: {
+				id: "ae2:fluid_storage_cell_64k"
+				count: 1
+			}
+			dependencies: [
+				"982C1E9144D1B45D"
+			]
+			tasks: [
+				{
+					id: "CD6D0D5617D4F2D5"
+					type: "item"
+					item: {
+						id: "ae2:fluid_storage_cell_64k"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "DD53BE15742077CA"
+					type: "item"
+					item: {
+						id: "minecraft:bucket"
+						count: 1
+					}
+					count: 4
+				}
+				{
+					id: "37CCF06BEA059252"
+					type: "xp_levels"
+					xp_levels: 6
+				}
+			]
+		}
+		{
+			id: "A35A1C79B4753DF4"
+			x: 5.0d
+			y: 2.0d
+			icon: {
+				id: "appflux:fe_64k_cell"
+				count: 1
+			}
+			dependencies: [
+				"982C1E9144D1B45D"
+			]
+			tasks: [
+				{
+					id: "BC607C34E919A5BD"
+					type: "item"
+					item: {
+						id: "appflux:fe_64k_cell"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "8F3C4062B548834B"
+					type: "item"
+					item: {
+						id: "minecraft:redstone_block"
+						count: 1
+					}
+					count: 8
+				}
+				{
+					id: "5B1CEAA05DE5B3D8"
+					type: "xp_levels"
+					xp_levels: 6
+				}
+			]
+		}
+		{
+			id: "F55C5A8DD75756BF"
+			x: 0.0d
+			y: 6.0d
+			icon: {
+				id: "ae2:matter_ball"
+				count: 1
+			}
+			dependencies: [
+				"982C1E9144D1B45D"
+			]
+			tasks: [
+				{
+					id: "1C3559E5A409A0BD"
+					type: "item"
+					item: {
+						id: "ae2:condenser"
+						count: 1
+					}
+					count: 1
+				}
+				{
+					id: "0AB9C547134C0D39"
+					type: "item"
+					item: {
+						id: "ae2:matter_ball"
+						count: 1
+					}
+					count: 64
+				}
+			]
+			rewards: [
+				{
+					id: "4543E42307C25C4A"
+					type: "item"
+					item: {
+						id: "minecraft:cobblestone"
+						count: 1
+					}
+					count: 64
+				}
+				{
+					id: "C0B5AFAF3DAAF28D"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+		}
+		{
+			id: "8D28DB17CFEEAC2E"
+			x: 2.5d
+			y: 6.0d
+			icon: {
+				id: "ae2:singularity"
+				count: 1
+			}
+			size: 1.5d
+			shape: "hexagon"
+			dependencies: [
+				"F55C5A8DD75756BF"
+			]
+			tasks: [
+				{
+					id: "C33CA6ECA10E7A11"
+					type: "item"
+					item: {
+						id: "ae2:singularity"
+						count: 1
+					}
+					count: 2
+				}
+			]
+			rewards: [
+				{
+					id: "F41FF7616986B98B"
+					type: "item"
+					item: {
+						id: "ae2:matter_ball"
+						count: 1
+					}
+					count: 32
+				}
+				{
+					id: "3B30C9B850E6280A"
+					type: "loot"
+					table_id: "F05AFC22088A36B6"
+				}
+				{
+					id: "019E517726FC402D"
+					type: "xp_levels"
 					xp_levels: 10
 				}
 			]
 		}
 		{
-			id: "60F34E96B1AFA4DD"
+			id: "C0F46F2CBB76B74C"
 			x: 5.0d
-			y: 0.0d
+			y: 6.0d
+			icon: {
+				id: "ae2:quantum_entangled_singularity"
+				count: 1
+			}
+			dependencies: [
+				"8D28DB17CFEEAC2E"
+			]
+			tasks: [
+				{
+					id: "AB88A5EAF74D65EE"
+					type: "item"
+					item: {
+						id: "ae2:quantum_entangled_singularity"
+						count: 1
+					}
+					count: 2
+				}
+			]
+			rewards: [
+				{
+					id: "7EE37C8106634BB3"
+					type: "item"
+					item: {
+						id: "minecraft:tnt"
+						count: 1
+					}
+					count: 4
+				}
+				{
+					id: "8339411D96C6432F"
+					type: "xp_levels"
+					xp_levels: 6
+				}
+			]
+		}
+		{
+			id: "37D5B411CBF8DA0E"
+			x: 7.5d
+			y: 5.0d
+			icon: {
+				id: "ae2:quantum_ring"
+				count: 1
+			}
+			dependencies: [
+				"8D28DB17CFEEAC2E"
+			]
+			tasks: [
+				{
+					id: "7D9FE43EBD8D971F"
+					type: "item"
+					item: {
+						id: "ae2:quantum_ring"
+						count: 1
+					}
+					count: 16
+				}
+				{
+					id: "ED6B20064A594EC2"
+					type: "item"
+					item: {
+						id: "ae2:quantum_link"
+						count: 1
+					}
+					count: 2
+				}
+			]
+			rewards: [
+				{
+					id: "A7D055AD0B942F01"
+					type: "item"
+					item: {
+						id: "ae2:fluix_pearl"
+						count: 1
+					}
+					count: 4
+				}
+				{
+					id: "899C76C17EFA7076"
+					type: "xp_levels"
+					xp_levels: 8
+				}
+			]
+		}
+		{
+			id: "AA72ED683B865E82"
+			x: 10.0d
+			y: 6.0d
+			icon: {
+				id: "ae2:quantum_link"
+				count: 1
+			}
+			size: 1.75d
+			shape: "gear"
+			dependencies: [
+				"C0F46F2CBB76B74C"
+				"37D5B411CBF8DA0E"
+			]
+			tasks: [
+				{
+					id: "92446E97D83C0214"
+					type: "item"
+					item: {
+						id: "ae2:quantum_ring"
+						count: 1
+					}
+					count: 16
+				}
+				{
+					id: "911B8447DBD16098"
+					type: "item"
+					item: {
+						id: "ae2:quantum_link"
+						count: 1
+					}
+					count: 2
+				}
+				{
+					id: "5ED1CEB1DED154E5"
+					type: "item"
+					item: {
+						id: "ae2:quantum_entangled_singularity"
+						count: 1
+					}
+					count: 2
+				}
+			]
+			rewards: [
+				{
+					id: "B35C2476170D9355"
+					type: "item"
+					item: {
+						id: "ae2:dense_energy_cell"
+						count: 1
+					}
+					count: 1
+				}
+				{
+					id: "46B2B74BFF39F786"
+					type: "loot"
+					table_id: "A1C2F3302F73AD62"
+				}
+				{
+					id: "8C306D00A39C7CD7"
+					type: "xp_levels"
+					xp_levels: 15
+				}
+			]
+		}
+		{
+			id: "F942F44C4E626DCD"
+			x: 12.5d
+			y: 6.0d
+			icon: {
+				id: "ae2wtlib:quantum_bridge_card"
+				count: 1
+			}
+			optional: true
+			dependencies: [
+				"AA72ED683B865E82"
+			]
+			tasks: [
+				{
+					id: "26E8171C1E105C53"
+					type: "item"
+					item: {
+						id: "ae2wtlib:quantum_bridge_card"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "61C307C30B1CE72B"
+					type: "item"
+					item: {
+						id: "ae2:wireless_booster"
+						count: 1
+					}
+					count: 2
+				}
+				{
+					id: "371554C9B0AC23CC"
+					type: "xp_levels"
+					xp_levels: 8
+				}
+			]
+		}
+		{
+			id: "60F34E96B1AFA4DD"
+			x: 0.0d
+			y: 11.0d
 			icon: {
 				id: "megacells:sky_steel_ingot"
 				count: 1
@@ -141,14 +544,14 @@
 				{
 					id: "8B9CF53765B218FF"
 					type: "xp_levels"
-					xp_levels: 5
+					xp_levels: 6
 				}
 			]
 		}
 		{
 			id: "F242B89C69770C2E"
-			x: 7.5d
-			y: 0.0d
+			x: 2.5d
+			y: 11.0d
 			icon: {
 				id: "megacells:accumulation_processor"
 				count: 1
@@ -196,15 +599,14 @@
 		}
 		{
 			id: "AB0355F97624DC9C"
-			x: 10.0d
-			y: 0.0d
+			x: 5.0d
+			y: 10.0d
 			icon: {
 				id: "megacells:item_storage_cell_1m"
 				count: 1
 			}
 			dependencies: [
 				"F242B89C69770C2E"
-				"5E319C40AA564E5E"
 			]
 			tasks: [
 				{
@@ -249,9 +651,87 @@
 			]
 		}
 		{
+			id: "00A0A019F1B3EAFB"
+			x: 5.0d
+			y: 12.0d
+			icon: {
+				id: "megacells:mega_pattern_provider"
+				count: 1
+			}
+			dependencies: [
+				"F242B89C69770C2E"
+			]
+			tasks: [
+				{
+					id: "446A1BE67AF9044F"
+					type: "item"
+					item: {
+						id: "megacells:mega_pattern_provider"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "5AFFACAE3A5A121B"
+					type: "item"
+					item: {
+						id: "ae2:blank_pattern"
+						count: 1
+					}
+					count: 16
+				}
+				{
+					id: "1BBBDA84E500E530"
+					type: "xp_levels"
+					xp_levels: 8
+				}
+			]
+		}
+		{
+			id: "D748E7ADE21A36AB"
+			x: 7.5d
+			y: 12.0d
+			icon: {
+				id: "megacells:mega_energy_cell"
+				count: 1
+			}
+			dependencies: [
+				"00A0A019F1B3EAFB"
+			]
+			tasks: [
+				{
+					id: "9D88C1EEE04EB16D"
+					type: "item"
+					item: {
+						id: "megacells:mega_energy_cell"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "5FC541AF341F7CFE"
+					type: "item"
+					item: {
+						id: "ae2:dense_energy_cell"
+						count: 1
+					}
+					count: 1
+				}
+				{
+					id: "9100B4130FBF3B7E"
+					type: "xp_levels"
+					xp_levels: 8
+				}
+			]
+		}
+		{
 			id: "739C6B0CD4570B26"
-			x: 12.5d
-			y: -1.0d
+			x: 7.5d
+			y: 10.0d
 			icon: {
 				id: "megacells:mega_crafting_accelerator"
 				count: 1
@@ -299,8 +779,8 @@
 		}
 		{
 			id: "A7E11756526EFA9D"
-			x: 12.75d
-			y: 1.75d
+			x: 10.0d
+			y: 11.0d
 			icon: {
 				id: "megacells:item_storage_cell_4m"
 				count: 1
@@ -309,6 +789,7 @@
 			shape: "gear"
 			dependencies: [
 				"AB0355F97624DC9C"
+				"D748E7ADE21A36AB"
 			]
 			tasks: [
 				{
@@ -353,197 +834,9 @@
 			]
 		}
 		{
-			id: "F55C5A8DD75756BF"
-			x: 2.5d
-			y: 4.5d
-			icon: {
-				id: "ae2:matter_ball"
-				count: 1
-			}
-			dependencies: [
-				"982C1E9144D1B45D"
-			]
-			tasks: [
-				{
-					id: "1C3559E5A409A0BD"
-					type: "item"
-					item: {
-						id: "ae2:condenser"
-						count: 1
-					}
-					count: 1
-				}
-				{
-					id: "0AB9C547134C0D39"
-					type: "item"
-					item: {
-						id: "ae2:matter_ball"
-						count: 1
-					}
-					count: 64
-				}
-			]
-			rewards: [
-				{
-					id: "4543E42307C25C4A"
-					type: "item"
-					item: {
-						id: "minecraft:cobblestone"
-						count: 1
-					}
-					count: 64
-				}
-				{
-					id: "C0B5AFAF3DAAF28D"
-					type: "xp_levels"
-					xp_levels: 5
-				}
-			]
-		}
-		{
-			id: "8D28DB17CFEEAC2E"
-			x: 5.0d
-			y: 4.5d
-			icon: {
-				id: "ae2:singularity"
-				count: 1
-			}
-			size: 1.5d
-			shape: "hexagon"
-			dependencies: [
-				"F55C5A8DD75756BF"
-			]
-			tasks: [
-				{
-					id: "C33CA6ECA10E7A11"
-					type: "item"
-					item: {
-						id: "ae2:singularity"
-						count: 1
-					}
-					count: 2
-				}
-			]
-			rewards: [
-				{
-					id: "F41FF7616986B98B"
-					type: "item"
-					item: {
-						id: "ae2:matter_ball"
-						count: 1
-					}
-					count: 32
-				}
-				{
-					id: "3B30C9B850E6280A"
-					type: "loot"
-					table_id: "F05AFC22088A36B6"
-				}
-				{
-					id: "019E517726FC402D"
-					type: "xp_levels"
-					xp_levels: 10
-				}
-			]
-		}
-		{
-			id: "C0F46F2CBB76B74C"
-			x: 7.5d
-			y: 4.5d
-			icon: {
-				id: "ae2:quantum_entangled_singularity"
-				count: 1
-			}
-			dependencies: [
-				"8D28DB17CFEEAC2E"
-			]
-			tasks: [
-				{
-					id: "AB88A5EAF74D65EE"
-					type: "item"
-					item: {
-						id: "ae2:quantum_entangled_singularity"
-						count: 1
-					}
-					count: 2
-				}
-			]
-			rewards: [
-				{
-					id: "7EE37C8106634BB3"
-					type: "item"
-					item: {
-						id: "minecraft:tnt"
-						count: 1
-					}
-					count: 4
-				}
-				{
-					id: "8339411D96C6432F"
-					type: "xp_levels"
-					xp_levels: 5
-				}
-			]
-		}
-		{
-			id: "AA72ED683B865E82"
-			x: 10.0d
-			y: 4.5d
-			icon: {
-				id: "ae2:quantum_link"
-				count: 1
-			}
-			size: 1.75d
-			shape: "gear"
-			dependencies: [
-				"C0F46F2CBB76B74C"
-			]
-			tasks: [
-				{
-					id: "92446E97D83C0214"
-					type: "item"
-					item: {
-						id: "ae2:quantum_ring"
-						count: 1
-					}
-					count: 16
-				}
-				{
-					id: "911B8447DBD16098"
-					type: "item"
-					item: {
-						id: "ae2:quantum_link"
-						count: 1
-					}
-					count: 2
-				}
-			]
-			rewards: [
-				{
-					id: "B35C2476170D9355"
-					type: "item"
-					item: {
-						id: "ae2:fluix_pearl"
-						count: 1
-					}
-					count: 4
-				}
-				{
-					id: "46B2B74BFF39F786"
-					type: "loot"
-					table_id: "A1C2F3302F73AD62"
-				}
-				{
-					id: "8C306D00A39C7CD7"
-					type: "xp_levels"
-					xp_levels: 15
-				}
-			]
-		}
-		{
 			id: "8E9CE08DE7F08C49"
-			x: 3.75d
-			y: 8.0d
+			x: 0.0d
+			y: 15.5d
 			icon: {
 				id: "ae2:spatial_pylon"
 				count: 1
@@ -560,15 +853,6 @@
 						count: 1
 					}
 					count: 16
-				}
-				{
-					id: "16CD69668E9AA847"
-					type: "item"
-					item: {
-						id: "ae2:spatial_io_port"
-						count: 1
-					}
-					count: 1
 				}
 			]
 			rewards: [
@@ -589,15 +873,54 @@
 			]
 		}
 		{
+			id: "E58E22BE3CD78D49"
+			x: 2.5d
+			y: 15.5d
+			icon: {
+				id: "ae2:spatial_io_port"
+				count: 1
+			}
+			dependencies: [
+				"8E9CE08DE7F08C49"
+			]
+			tasks: [
+				{
+					id: "718E76670AC40109"
+					type: "item"
+					item: {
+						id: "ae2:spatial_io_port"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "590189C69C0EDC1C"
+					type: "item"
+					item: {
+						id: "ae2:engineering_processor"
+						count: 1
+					}
+					count: 2
+				}
+				{
+					id: "4609E36B89BBBFE0"
+					type: "xp_levels"
+					xp_levels: 6
+				}
+			]
+		}
+		{
 			id: "72F09A3BCE9C4DCB"
-			x: 6.25d
-			y: 8.0d
+			x: 5.0d
+			y: 15.5d
 			icon: {
 				id: "ae2:spatial_storage_cell_16"
 				count: 1
 			}
 			dependencies: [
-				"8E9CE08DE7F08C49"
+				"E58E22BE3CD78D49"
 			]
 			tasks: [
 				{
@@ -623,14 +946,14 @@
 				{
 					id: "61A15C0DBAB9C455"
 					type: "xp_levels"
-					xp_levels: 10
+					xp_levels: 8
 				}
 			]
 		}
 		{
 			id: "1DADB45F8B139F87"
-			x: 8.75d
-			y: 8.0d
+			x: 7.5d
+			y: 15.5d
 			icon: {
 				id: "ae2:spatial_anchor"
 				count: 1
@@ -673,8 +996,8 @@
 		}
 		{
 			id: "B88B026AF2499D41"
-			x: 2.5d
-			y: 11.5d
+			x: 0.0d
+			y: 20.0d
 			icon: {
 				id: "advanced_ae:reaction_chamber"
 				count: 1
@@ -718,11 +1041,11 @@
 			]
 		}
 		{
-			id: "47BDA4588B381C5C"
-			x: 5.0d
-			y: 11.5d
+			id: "C8708E42C6635F0D"
+			x: 2.5d
+			y: 19.0d
 			icon: {
-				id: "advanced_ae:quantum_alloy"
+				id: "advanced_ae:shattered_singularity"
 				count: 1
 			}
 			dependencies: [
@@ -731,7 +1054,7 @@
 			]
 			tasks: [
 				{
-					id: "178EC548502AE991"
+					id: "606534A8B8D67AFE"
 					type: "item"
 					item: {
 						id: "advanced_ae:shattered_singularity"
@@ -740,7 +1063,46 @@
 					count: 4
 				}
 				{
-					id: "0AF8BB16B8C55390"
+					id: "BAF2DCB9699DBEF6"
+					type: "item"
+					item: {
+						id: "advanced_ae:quantum_infused_dust"
+						count: 1
+					}
+					count: 2
+				}
+			]
+			rewards: [
+				{
+					id: "F644FB4C7CA75B76"
+					type: "item"
+					item: {
+						id: "ae2:singularity"
+						count: 1
+					}
+					count: 1
+				}
+				{
+					id: "7713C333DD879133"
+					type: "xp_levels"
+					xp_levels: 8
+				}
+			]
+		}
+		{
+			id: "47BDA4588B381C5C"
+			x: 5.0d
+			y: 19.0d
+			icon: {
+				id: "advanced_ae:quantum_alloy"
+				count: 1
+			}
+			dependencies: [
+				"C8708E42C6635F0D"
+			]
+			tasks: [
+				{
+					id: "178EC548502AE991"
 					type: "item"
 					item: {
 						id: "advanced_ae:quantum_alloy"
@@ -769,7 +1131,7 @@
 		{
 			id: "27FA3A0C41F3F520"
 			x: 7.5d
-			y: 11.5d
+			y: 19.0d
 			icon: {
 				id: "advanced_ae:quantum_processor"
 				count: 1
@@ -806,6 +1168,46 @@
 				{
 					id: "BD1983F3CD79D139"
 					type: "xp_levels"
+					xp_levels: 12
+				}
+			]
+		}
+		{
+			id: "4132E72CB573902F"
+			x: 10.0d
+			y: 19.0d
+			icon: {
+				id: "advanced_ae:advanced_io_bus_part"
+				count: 1
+			}
+			optional: true
+			dependencies: [
+				"27FA3A0C41F3F520"
+			]
+			tasks: [
+				{
+					id: "8ADDD4158E219581"
+					type: "item"
+					item: {
+						id: "advanced_ae:advanced_io_bus_part"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "CBB0176CEAC07C04"
+					type: "item"
+					item: {
+						id: "ae2:speed_card"
+						count: 1
+					}
+					count: 4
+				}
+				{
+					id: "22E4FCC9E52D8DB0"
+					type: "xp_levels"
 					xp_levels: 10
 				}
 			]
@@ -813,7 +1215,7 @@
 		{
 			id: "751B9379079F445C"
 			x: 2.5d
-			y: 13.5d
+			y: 21.0d
 			icon: {
 				id: "advanced_ae:adv_pattern_provider"
 				count: 1
@@ -854,14 +1256,14 @@
 				{
 					id: "6594A1C391DE53AD"
 					type: "xp_levels"
-					xp_levels: 5
+					xp_levels: 6
 				}
 			]
 		}
 		{
 			id: "AB1FFEBB49E3BCCA"
 			x: 0.0d
-			y: 17.0d
+			y: 25.0d
 			icon: {
 				id: "extendedae:ex_drive"
 				count: 1
@@ -914,15 +1316,54 @@
 			]
 		}
 		{
-			id: "9F490F80873FF59F"
+			id: "CA632222EBEDA82E"
 			x: 2.5d
-			y: 16.0d
+			y: 24.0d
+			icon: {
+				id: "extendedae:ex_inscriber"
+				count: 1
+			}
+			dependencies: [
+				"AB1FFEBB49E3BCCA"
+			]
+			tasks: [
+				{
+					id: "602F66A4562D35EB"
+					type: "item"
+					item: {
+						id: "extendedae:ex_inscriber"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "26DA172F00A1A065"
+					type: "item"
+					item: {
+						id: "ae2:printed_silicon"
+						count: 1
+					}
+					count: 16
+				}
+				{
+					id: "DD9A619D213A9B9E"
+					type: "xp_levels"
+					xp_levels: 8
+				}
+			]
+		}
+		{
+			id: "9F490F80873FF59F"
+			x: 5.0d
+			y: 24.0d
 			icon: {
 				id: "extendedae:assembler_matrix_crafter"
 				count: 1
 			}
 			dependencies: [
-				"AB1FFEBB49E3BCCA"
+				"CA632222EBEDA82E"
 			]
 			tasks: [
 				{
@@ -964,7 +1405,7 @@
 		{
 			id: "32EC59B690C1CE41"
 			x: 2.5d
-			y: 18.0d
+			y: 26.0d
 			icon: {
 				id: "extendedae:wireless_connect"
 				count: 1
@@ -1005,7 +1446,7 @@
 				{
 					id: "AE64468B4AAC9B79"
 					type: "xp_levels"
-					xp_levels: 5
+					xp_levels: 6
 				}
 			]
 		}
@@ -1034,9 +1475,9 @@
 		{
 			id: "44002F735FCD9AC6"
 			image: "kronwerke:textures/quests/ae2_advanced/cells.png"
-			x: 7.56d
+			x: 4.33d
 			y: -1.3d
-			width: 7.93d
+			width: 4.67d
 			height: 0.9d
 			rotation: 0.0d
 			order: 1
@@ -1044,8 +1485,8 @@
 		{
 			id: "A6C1EDEE8938CD6C"
 			image: "kronwerke:textures/quests/ae2_advanced/singularity.png"
-			x: 6.29d
-			y: 3.1d
+			x: 4.7d
+			y: 3.9d
 			width: 9.39d
 			height: 0.9d
 			rotation: 0.0d
@@ -1053,29 +1494,39 @@
 		}
 		{
 			id: "85B9D2D10617C4A9"
-			image: "kronwerke:textures/quests/ae2_advanced/spatial.png"
-			x: 5.94d
-			y: 6.7d
-			width: 4.67d
+			image: "kronwerke:textures/quests/ae2_advanced/mega.png"
+			x: 1.89d
+			y: 8.7d
+			width: 3.78d
 			height: 0.9d
 			rotation: 0.0d
 			order: 1
 		}
 		{
 			id: "7AD5A262F464B826"
-			image: "kronwerke:textures/quests/ae2_advanced/advanced.png"
-			x: 3.65d
-			y: 10.1d
-			width: 4.09d
+			image: "kronwerke:textures/quests/ae2_advanced/spatial.png"
+			x: 2.33d
+			y: 14.0d
+			width: 4.67d
 			height: 0.9d
 			rotation: 0.0d
 			order: 1
 		}
 		{
 			id: "4AAC78432C98A7BE"
+			image: "kronwerke:textures/quests/ae2_advanced/advanced.png"
+			x: 2.04d
+			y: 17.7d
+			width: 4.09d
+			height: 0.9d
+			rotation: 0.0d
+			order: 1
+		}
+		{
+			id: "C2C5FD892604C52E"
 			image: "kronwerke:textures/quests/ae2_advanced/extended.png"
-			x: 1.46d
-			y: 14.9d
+			x: 2.06d
+			y: 23.0d
 			width: 4.11d
 			height: 0.9d
 			rotation: 0.0d

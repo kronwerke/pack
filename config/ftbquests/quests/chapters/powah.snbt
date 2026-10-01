@@ -216,9 +216,58 @@
 			]
 		}
 		{
+			id: "CA30DE88BFFE3BB6"
+			x: 8.25d
+			y: 3.5d
+			icon: {
+				id: "powah:energizing_rod_hardened"
+				count: 1
+			}
+			dependencies: [
+				"08F0A7B8A9B56687"
+				"61E39CB411FE5E3A"
+			]
+			tasks: [
+				{
+					id: "AA71190B13F2ACDF"
+					type: "item"
+					item: {
+						id: "powah:energizing_rod_basic"
+						count: 1
+					}
+					count: 2
+				}
+				{
+					id: "2975193CDB0D24CC"
+					type: "item"
+					item: {
+						id: "powah:energizing_rod_hardened"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "DC2213324D241B46"
+					type: "item"
+					item: {
+						id: "minecraft:quartz_block"
+						count: 1
+					}
+					count: 4
+				}
+				{
+					id: "F342C1702A2A78A2"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+		}
+		{
 			id: "24213EA5B410E502"
 			x: 11.0d
-			y: 0.0d
+			y: -1.0d
 			icon: {
 				id: "ae2:charged_certus_quartz_crystal"
 				count: 1
@@ -257,7 +306,7 @@
 		{
 			id: "61E39CB411FE5E3A"
 			x: 11.0d
-			y: 2.5d
+			y: 1.0d
 			icon: {
 				id: "powah:steel_energized"
 				count: 1
@@ -300,7 +349,7 @@
 		{
 			id: "8370451E2D9B08CE"
 			x: 13.5d
-			y: 2.5d
+			y: 1.0d
 			icon: {
 				id: "powah:crystal_blazing"
 				count: 1
@@ -331,15 +380,15 @@
 				}
 				{
 					id: "D9B35A01139C6B1E"
-					type: "loot"
-					table_id: "BB5E855731D4F100"
+					type: "xp_levels"
+					xp_levels: 5
 				}
 			]
 		}
 		{
 			id: "6E3468821B08280E"
 			x: 16.0d
-			y: 2.5d
+			y: 1.0d
 			icon: {
 				id: "powah:crystal_niotic"
 				count: 1
@@ -378,12 +427,11 @@
 		{
 			id: "DECD8000CD08C7FC"
 			x: 18.5d
-			y: 2.5d
+			y: 1.0d
 			icon: {
 				id: "powah:crystal_spirited"
 				count: 1
 			}
-			optional: true
 			dependencies: [
 				"6E3468821B08280E"
 			]
@@ -416,33 +464,68 @@
 			]
 		}
 		{
-			id: "CA30DE88BFFE3BB6"
+			id: "4E337253E9C1DBD3"
 			x: 13.5d
-			y: 4.5d
+			y: -1.0d
 			icon: {
-				id: "powah:energizing_rod_hardened"
+				id: "powah:dry_ice"
 				count: 1
 			}
+			optional: true
 			dependencies: [
-				"61E39CB411FE5E3A"
+				"24213EA5B410E502"
 			]
 			tasks: [
 				{
-					id: "AA71190B13F2ACDF"
+					id: "656A69A68D8FC4CF"
 					type: "item"
 					item: {
-						id: "powah:energizing_rod_hardened"
+						id: "powah:dry_ice"
 						count: 1
 					}
-					count: 1
+					count: 8
 				}
 			]
 			rewards: [
 				{
-					id: "DC2213324D241B46"
+					id: "733D244E34A76855"
 					type: "item"
 					item: {
-						id: "minecraft:quartz_block"
+						id: "minecraft:blue_ice"
+						count: 1
+					}
+					count: 8
+				}
+			]
+		}
+		{
+			id: "7E616E48FA1AEB02"
+			x: 16.0d
+			y: -1.0d
+			icon: {
+				id: "powah:ender_core"
+				count: 1
+			}
+			dependencies: [
+				"4E337253E9C1DBD3"
+			]
+			tasks: [
+				{
+					id: "3D815766E815E8AB"
+					type: "item"
+					item: {
+						id: "powah:ender_core"
+						count: 1
+					}
+					count: 2
+				}
+			]
+			rewards: [
+				{
+					id: "AFF334A3FC8266BE"
+					type: "item"
+					item: {
+						id: "minecraft:ender_pearl"
 						count: 1
 					}
 					count: 4
@@ -452,7 +535,7 @@
 		{
 			id: "C66832A8259D915F"
 			x: 0.0d
-			y: 8.5d
+			y: 7.5d
 			icon: {
 				id: "powah:furnator_starter"
 				count: 1
@@ -460,7 +543,8 @@
 			size: 1.5d
 			shape: "hexagon"
 			dependencies: [
-				"69B0BDFCF9C0F6D6"
+				"26C4AC549D3F6361"
+				"FF71A3F7ABF3A098"
 			]
 			tasks: [
 				{
@@ -481,33 +565,32 @@
 						id: "minecraft:coal_block"
 						count: 1
 					}
-					count: 8
+					count: 4
 				}
 				{
 					id: "8991D9B7AAB7A2A9"
 					type: "xp_levels"
-					xp_levels: 5
+					xp_levels: 3
 				}
 			]
 		}
 		{
-			id: "09418287F3BACF7D"
-			x: 2.75d
-			y: 10.0d
+			id: "B8C4E94FD0DA9735"
+			x: 2.5d
+			y: 7.5d
 			icon: {
-				id: "powah:solar_panel_starter"
+				id: "powah:furnator_basic"
 				count: 1
 			}
-			optional: true
 			dependencies: [
 				"C66832A8259D915F"
 			]
 			tasks: [
 				{
-					id: "6765597D9CB598ED"
+					id: "BFE417474805FFDA"
 					type: "item"
 					item: {
-						id: "powah:solar_panel_starter"
+						id: "powah:furnator_basic"
 						count: 1
 					}
 					count: 1
@@ -515,26 +598,32 @@
 			]
 			rewards: [
 				{
-					id: "282C6528155E54DE"
+					id: "B092E19DE141C8FC"
 					type: "item"
 					item: {
-						id: "minecraft:lapis_lazuli"
+						id: "minecraft:coal_block"
 						count: 1
 					}
-					count: 16
+					count: 6
+				}
+				{
+					id: "1B52EB7291D58D30"
+					type: "xp_levels"
+					xp_levels: 4
 				}
 			]
 		}
 		{
 			id: "E80E5A7BB23F44FA"
-			x: 2.75d
-			y: 7.0d
+			x: 5.0d
+			y: 7.5d
 			icon: {
 				id: "powah:furnator_hardened"
 				count: 1
 			}
 			dependencies: [
-				"C66832A8259D915F"
+				"B8C4E94FD0DA9735"
+				"61E39CB411FE5E3A"
 			]
 			tasks: [
 				{
@@ -557,131 +646,8 @@
 					}
 					count: 8
 				}
-			]
-		}
-		{
-			id: "89C1F344177EB2D4"
-			x: 8.25d
-			y: 8.5d
-			icon: {
-				id: "powah:reactor_starter"
-				count: 1
-			}
-			size: 1.75d
-			shape: "hexagon"
-			dependencies: [
-				"08F0A7B8A9B56687"
-			]
-			tasks: [
 				{
-					id: "13C2152F05BB1FC4"
-					type: "item"
-					item: {
-						id: "powah:reactor_starter"
-						count: 1
-					}
-					count: 36
-				}
-			]
-			rewards: [
-				{
-					id: "8E8526E81D88E35E"
-					type: "item"
-					item: {
-						id: "powah:uraninite"
-						count: 1
-					}
-					count: 16
-				}
-				{
-					id: "CDF23C81FC52B3CA"
-					type: "loot"
-					table_id: "6BD556482A471D58"
-				}
-				{
-					id: "C41B53FE6C823B49"
-					type: "xp_levels"
-					xp_levels: 15
-				}
-			]
-		}
-		{
-			id: "B702AA4D1BD32504"
-			x: 0.0d
-			y: 13.0d
-			icon: {
-				id: "powah:energy_cable_basic"
-				count: 1
-			}
-			dependencies: [
-				"C66832A8259D915F"
-			]
-			tasks: [
-				{
-					id: "92E4031F2DC95730"
-					type: "item"
-					item: {
-						id: "powah:energy_cable_basic"
-						count: 1
-					}
-					count: 12
-				}
-				{
-					id: "7A426B6D7AAA2E48"
-					type: "item"
-					item: {
-						id: "powah:wrench"
-						count: 1
-					}
-					count: 1
-				}
-			]
-			rewards: [
-				{
-					id: "8E2A238DB2C16A8B"
-					type: "item"
-					item: {
-						id: "powah:dielectric_paste"
-						count: 1
-					}
-					count: 16
-				}
-			]
-		}
-		{
-			id: "CDD1B12B8DC43E84"
-			x: 2.75d
-			y: 13.0d
-			icon: {
-				id: "powah:energy_cell_basic"
-				count: 1
-			}
-			dependencies: [
-				"B702AA4D1BD32504"
-			]
-			tasks: [
-				{
-					id: "62E8BEAB3919C77C"
-					type: "item"
-					item: {
-						id: "powah:energy_cell_basic"
-						count: 1
-					}
-					count: 1
-				}
-			]
-			rewards: [
-				{
-					id: "94E3DE379C813520"
-					type: "item"
-					item: {
-						id: "powah:capacitor_basic"
-						count: 1
-					}
-					count: 4
-				}
-				{
-					id: "F205C55384612995"
+					id: "38636691C9BB1167"
 					type: "xp_levels"
 					xp_levels: 5
 				}
@@ -689,18 +655,18 @@
 		}
 		{
 			id: "496F1F2F3A46E581"
-			x: 6.5d
-			y: 13.5d
+			x: 7.5d
+			y: 7.5d
 			icon: {
 				id: "powah:furnator_blazing"
 				count: 1
 			}
-			size: 2.5d
+			size: 2.0d
 			shape: "gear"
 			dependencies: [
-				"CDD1B12B8DC43E84"
 				"E80E5A7BB23F44FA"
 				"8370451E2D9B08CE"
+				"CDD1B12B8DC43E84"
 			]
 			tasks: [
 				{
@@ -744,6 +710,562 @@
 				}
 			]
 		}
+		{
+			id: "21352A27F84A0B73"
+			x: 10.0d
+			y: 7.5d
+			icon: {
+				id: "powah:furnator_niotic"
+				count: 1
+			}
+			optional: true
+			dependencies: [
+				"496F1F2F3A46E581"
+				"6E3468821B08280E"
+			]
+			tasks: [
+				{
+					id: "ECAFDAC540CA3D56"
+					type: "item"
+					item: {
+						id: "powah:furnator_niotic"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "C13FEA473D6C1127"
+					type: "item"
+					item: {
+						id: "minecraft:diamond"
+						count: 1
+					}
+					count: 2
+				}
+				{
+					id: "2A62913F6E84D1EA"
+					type: "xp_levels"
+					xp_levels: 10
+				}
+			]
+		}
+		{
+			id: "253FA47F042F9B19"
+			x: 12.5d
+			y: 7.5d
+			icon: {
+				id: "powah:furnator_spirited"
+				count: 1
+			}
+			optional: true
+			dependencies: [
+				"21352A27F84A0B73"
+				"DECD8000CD08C7FC"
+			]
+			tasks: [
+				{
+					id: "9147E93148FAE74C"
+					type: "item"
+					item: {
+						id: "powah:furnator_spirited"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "7995628C4CFBE2D2"
+					type: "item"
+					item: {
+						id: "minecraft:emerald"
+						count: 1
+					}
+					count: 4
+				}
+				{
+					id: "C0F324F4CD662DCC"
+					type: "xp_levels"
+					xp_levels: 12
+				}
+			]
+		}
+		{
+			id: "CA1B163535AD591B"
+			x: 2.5d
+			y: 9.5d
+			icon: {
+				id: "powah:magmator_starter"
+				count: 1
+			}
+			optional: true
+			dependencies: [
+				"C66832A8259D915F"
+			]
+			tasks: [
+				{
+					id: "BA57B26B4B3F9883"
+					type: "item"
+					item: {
+						id: "powah:magmator_starter"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "C21F2414E9DD805F"
+					type: "item"
+					item: {
+						id: "minecraft:lava_bucket"
+						count: 1
+					}
+					count: 1
+				}
+			]
+		}
+		{
+			id: "09418287F3BACF7D"
+			x: 5.0d
+			y: 9.5d
+			icon: {
+				id: "powah:solar_panel_starter"
+				count: 1
+			}
+			optional: true
+			dependencies: [
+				"C66832A8259D915F"
+			]
+			tasks: [
+				{
+					id: "6765597D9CB598ED"
+					type: "item"
+					item: {
+						id: "powah:solar_panel_starter"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "282C6528155E54DE"
+					type: "item"
+					item: {
+						id: "minecraft:lapis_lazuli"
+						count: 1
+					}
+					count: 16
+				}
+			]
+		}
+		{
+			id: "DF7B929837385409"
+			x: 7.5d
+			y: 9.5d
+			icon: {
+				id: "powah:thermo_generator_starter"
+				count: 1
+			}
+			optional: true
+			dependencies: [
+				"C66832A8259D915F"
+			]
+			tasks: [
+				{
+					id: "45293474EA20AD9F"
+					type: "item"
+					item: {
+						id: "powah:thermo_generator_starter"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "D05C31B026C972B8"
+					type: "item"
+					item: {
+						id: "minecraft:magma_block"
+						count: 1
+					}
+					count: 4
+				}
+			]
+		}
+		{
+			id: "F4E530778C8907C1"
+			x: 0.0d
+			y: 12.5d
+			icon: {
+				id: "powah:uraninite"
+				count: 1
+			}
+			dependencies: [
+				"08F0A7B8A9B56687"
+			]
+			tasks: [
+				{
+					id: "E8FD2FE51A3D1F9C"
+					type: "item"
+					item: {
+						id: "powah:uraninite"
+						count: 1
+					}
+					count: 36
+				}
+			]
+			rewards: [
+				{
+					id: "A1E501B306FE80DB"
+					type: "item"
+					item: {
+						id: "powah:dielectric_paste"
+						count: 1
+					}
+					count: 16
+				}
+				{
+					id: "63A2F909627803A0"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+		}
+		{
+			id: "89C1F344177EB2D4"
+			x: 2.5d
+			y: 12.5d
+			icon: {
+				id: "powah:reactor_starter"
+				count: 1
+			}
+			size: 1.75d
+			shape: "hexagon"
+			dependencies: [
+				"F4E530778C8907C1"
+				"C66832A8259D915F"
+			]
+			tasks: [
+				{
+					id: "13C2152F05BB1FC4"
+					type: "item"
+					item: {
+						id: "powah:reactor_starter"
+						count: 1
+					}
+					count: 36
+				}
+			]
+			rewards: [
+				{
+					id: "8E8526E81D88E35E"
+					type: "item"
+					item: {
+						id: "powah:uraninite"
+						count: 1
+					}
+					count: 16
+				}
+				{
+					id: "CDF23C81FC52B3CA"
+					type: "loot"
+					table_id: "6BD556482A471D58"
+				}
+				{
+					id: "C41B53FE6C823B49"
+					type: "xp_levels"
+					xp_levels: 15
+				}
+			]
+		}
+		{
+			id: "B5B97CB2CA0E9B27"
+			x: 5.0d
+			y: 12.5d
+			icon: {
+				id: "minecraft:packed_ice"
+				count: 1
+			}
+			dependencies: [
+				"89C1F344177EB2D4"
+			]
+			tasks: [
+				{
+					id: "4FE628880A624D66"
+					type: "item"
+					item: {
+						id: "minecraft:packed_ice"
+						count: 1
+					}
+					count: 16
+				}
+			]
+			rewards: [
+				{
+					id: "90DAE72295EE231D"
+					type: "item"
+					item: {
+						id: "minecraft:blue_ice"
+						count: 1
+					}
+					count: 8
+				}
+				{
+					id: "83253196A46A67DB"
+					type: "xp_levels"
+					xp_levels: 8
+				}
+			]
+		}
+		{
+			id: "DA199D43CFB76F94"
+			x: 7.5d
+			y: 12.5d
+			icon: {
+				id: "powah:reactor_basic"
+				count: 1
+			}
+			dependencies: [
+				"B5B97CB2CA0E9B27"
+			]
+			tasks: [
+				{
+					id: "B0DA49636CE76845"
+					type: "item"
+					item: {
+						id: "powah:reactor_basic"
+						count: 1
+					}
+					count: 36
+				}
+			]
+			rewards: [
+				{
+					id: "92F1F69B43251A6E"
+					type: "item"
+					item: {
+						id: "powah:uraninite"
+						count: 1
+					}
+					count: 32
+				}
+				{
+					id: "DC8F315F9FEC5C39"
+					type: "loot"
+					table_id: "6BD556482A471D58"
+				}
+				{
+					id: "C2AD7088A527705E"
+					type: "xp_levels"
+					xp_levels: 15
+				}
+			]
+		}
+		{
+			id: "B702AA4D1BD32504"
+			x: 0.0d
+			y: 16.5d
+			icon: {
+				id: "powah:energy_cable_basic"
+				count: 1
+			}
+			dependencies: [
+				"C66832A8259D915F"
+			]
+			tasks: [
+				{
+					id: "92E4031F2DC95730"
+					type: "item"
+					item: {
+						id: "powah:energy_cable_basic"
+						count: 1
+					}
+					count: 12
+				}
+			]
+			rewards: [
+				{
+					id: "8E2A238DB2C16A8B"
+					type: "item"
+					item: {
+						id: "powah:dielectric_paste"
+						count: 1
+					}
+					count: 16
+				}
+			]
+		}
+		{
+			id: "CF4DB33C72E95B9B"
+			x: 2.5d
+			y: 15.5d
+			icon: {
+				id: "powah:wrench"
+				count: 1
+			}
+			dependencies: [
+				"B702AA4D1BD32504"
+			]
+			tasks: [
+				{
+					id: "37F0E7E3B199E949"
+					type: "item"
+					item: {
+						id: "powah:wrench"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "6E5868A36C1A417E"
+					type: "item"
+					item: {
+						id: "minecraft:iron_ingot"
+						count: 1
+					}
+					count: 4
+				}
+			]
+		}
+		{
+			id: "CDD1B12B8DC43E84"
+			x: 2.5d
+			y: 17.5d
+			icon: {
+				id: "powah:energy_cell_basic"
+				count: 1
+			}
+			dependencies: [
+				"B702AA4D1BD32504"
+			]
+			tasks: [
+				{
+					id: "62E8BEAB3919C77C"
+					type: "item"
+					item: {
+						id: "powah:energy_cell_basic"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "94E3DE379C813520"
+					type: "item"
+					item: {
+						id: "powah:capacitor_basic"
+						count: 1
+					}
+					count: 4
+				}
+				{
+					id: "F205C55384612995"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+		}
+		{
+			id: "5B793CB096A2A159"
+			x: 5.0d
+			y: 17.5d
+			icon: {
+				id: "powah:ender_cell_starter"
+				count: 1
+			}
+			dependencies: [
+				"CDD1B12B8DC43E84"
+				"7E616E48FA1AEB02"
+			]
+			tasks: [
+				{
+					id: "C10860147A8CFA53"
+					type: "item"
+					item: {
+						id: "powah:ender_cell_starter"
+						count: 1
+					}
+					count: 2
+				}
+			]
+			rewards: [
+				{
+					id: "23711C447B91DC0A"
+					type: "item"
+					item: {
+						id: "minecraft:obsidian"
+						count: 1
+					}
+					count: 8
+				}
+				{
+					id: "7A9AED81471515B9"
+					type: "xp_levels"
+					xp_levels: 8
+				}
+			]
+		}
+		{
+			id: "097804BC1727BDAC"
+			x: 7.5d
+			y: 17.5d
+			icon: {
+				id: "powah:player_transmitter_starter"
+				count: 1
+			}
+			dependencies: [
+				"5B793CB096A2A159"
+			]
+			tasks: [
+				{
+					id: "4254DB28277C299A"
+					type: "item"
+					item: {
+						id: "powah:player_transmitter_starter"
+						count: 1
+					}
+					count: 1
+				}
+				{
+					id: "0B8B80864F10E775"
+					type: "item"
+					item: {
+						id: "powah:binding_card"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "B2C0419614096EC7"
+					type: "item"
+					item: {
+						id: "minecraft:ender_pearl"
+						count: 1
+					}
+					count: 4
+				}
+				{
+					id: "B5FF7140597B150A"
+					type: "loot"
+					table_id: "BB5E855731D4F100"
+				}
+				{
+					id: "574FA84A3BC351FA"
+					type: "xp_levels"
+					xp_levels: 10
+				}
+			]
+		}
 	]
 	images: [
 		{
@@ -770,7 +1292,7 @@
 			id: "E2F657EDF4B405CB"
 			image: "kronwerke:textures/quests/powah/energizing.png"
 			x: 12.85d
-			y: -1.4d
+			y: -2.4d
 			width: 4.9d
 			height: 0.9d
 			rotation: 0.0d
@@ -788,9 +1310,19 @@
 		}
 		{
 			id: "EBB092F3EC32336D"
+			image: "kronwerke:textures/quests/powah/reactor.png"
+			x: 2.27d
+			y: 10.9d
+			width: 2.75d
+			height: 0.9d
+			rotation: 0.0d
+			order: 1
+		}
+		{
+			id: "54701F48969FE6E3"
 			image: "kronwerke:textures/quests/powah/storage.png"
 			x: 4.33d
-			y: 11.4d
+			y: 14.2d
 			width: 6.86d
 			height: 0.9d
 			rotation: 0.0d

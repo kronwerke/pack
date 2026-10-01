@@ -272,7 +272,7 @@
 		}
 		{
 			id: "49D51D26FC492787"
-			x: 6.0d
+			x: 5.0d
 			y: 0.0d
 			dependencies: [
 				"CEBEA82F8E132468"
@@ -311,7 +311,7 @@
 		}
 		{
 			id: "570C72A66EDB786D"
-			x: 8.5d
+			x: 7.5d
 			y: 0.0d
 			icon: {
 				id: "immersiveengineering:cokebrick"
@@ -354,7 +354,7 @@
 		}
 		{
 			id: "F21FDC201D52BB6D"
-			x: 11.0d
+			x: 10.0d
 			y: -1.0d
 			dependencies: [
 				"570C72A66EDB786D"
@@ -384,8 +384,8 @@
 		}
 		{
 			id: "C703E9B19D9BFE2E"
-			x: 11.0d
-			y: -2.8d
+			x: 10.0d
+			y: -2.6d
 			icon: {
 				id: "immersiveengineering:coke"
 				count: 1
@@ -419,7 +419,7 @@
 		}
 		{
 			id: "8FF700F613DF2D92"
-			x: 11.0d
+			x: 10.0d
 			y: 1.0d
 			dependencies: [
 				"570C72A66EDB786D"
@@ -448,8 +448,58 @@
 			]
 		}
 		{
+			id: "5595D6F845056CC3"
+			x: 7.5d
+			y: 2.2d
+			icon: {
+				id: "immersiveengineering:fluid_pump"
+				count: 1
+			}
+			optional: true
+			dependencies: [
+				"8FF700F613DF2D92"
+				"91A0D58569EEFD06"
+			]
+			tasks: [
+				{
+					id: "3D0FECC9CBF1F29C"
+					type: "item"
+					item: {
+						id: "immersiveengineering:fluid_pump"
+						count: 1
+					}
+					count: 1
+				}
+				{
+					id: "80516EDCB454F79D"
+					type: "item"
+					item: {
+						id: "immersiveengineering:fluid_pipe"
+						count: 1
+					}
+					count: 8
+				}
+			]
+			rewards: [
+				{
+					id: "A18E39B5388DA1CC"
+					type: "item"
+					item: {
+						id: "immersiveengineering:plate_iron"
+						count: 1
+					}
+					count: 8
+				}
+				{
+					id: "933BF0B0B4DB8A5A"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+		}
+		{
 			id: "219BE3696F329A1E"
-			x: 13.5d
+			x: 12.5d
 			y: 1.0d
 			icon: {
 				id: "immersiveengineering:treated_wood_horizontal"
@@ -483,7 +533,7 @@
 		}
 		{
 			id: "7685BEEF797367AB"
-			x: 16.0d
+			x: 15.0d
 			y: 1.0d
 			dependencies: [
 				"219BE3696F329A1E"
@@ -513,9 +563,8 @@
 		}
 		{
 			id: "F2069EFD07BB1C25"
-			x: 13.5d
+			x: 12.5d
 			y: 2.8d
-			optional: true
 			dependencies: [
 				"219BE3696F329A1E"
 			]
@@ -543,8 +592,42 @@
 			]
 		}
 		{
+			id: "AFB0BD3991D5D212"
+			x: 15.0d
+			y: 2.8d
+			icon: {
+				id: "immersiveengineering:basic_engineering"
+				count: 1
+			}
+			dependencies: [
+				"219BE3696F329A1E"
+			]
+			tasks: [
+				{
+					id: "852B526A46AA338A"
+					type: "item"
+					item: {
+						id: "immersiveengineering:basic_engineering"
+						count: 1
+					}
+					count: 4
+				}
+			]
+			rewards: [
+				{
+					id: "E0EB719D74764212"
+					type: "item"
+					item: {
+						id: "minecraft:iron_ingot"
+						count: 1
+					}
+					count: 8
+				}
+			]
+		}
+		{
 			id: "C804CE1BE6F8F515"
-			x: 19.0d
+			x: 18.0d
 			y: -1.0d
 			dependencies: [
 				"F21FDC201D52BB6D"
@@ -583,7 +666,7 @@
 		}
 		{
 			id: "5D3B2AA57876A325"
-			x: 21.5d
+			x: 20.5d
 			y: -1.0d
 			icon: {
 				id: "immersiveengineering:blastbrick"
@@ -626,7 +709,7 @@
 		}
 		{
 			id: "BB25DD50942C713A"
-			x: 24.0d
+			x: 23.0d
 			y: -1.0d
 			icon: {
 				id: "immersiveengineering:ingot_steel"
@@ -661,7 +744,7 @@
 		}
 		{
 			id: "65047AB53B1126D5"
-			x: 24.0d
+			x: 23.0d
 			y: 1.0d
 			optional: true
 			dependencies: [
@@ -688,13 +771,12 @@
 		}
 		{
 			id: "209C39B820260A38"
-			x: 21.5d
+			x: 20.5d
 			y: 1.2d
 			icon: {
 				id: "immersiveengineering:blastbrick_reinforced"
 				count: 1
 			}
-			optional: true
 			dependencies: [
 				"BB25DD50942C713A"
 			]
@@ -722,14 +804,98 @@
 				{
 					id: "48E5FD5A4F7D1905"
 					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+		}
+		{
+			id: "8F8ECB8AFB57735C"
+			x: 20.5d
+			y: 3.2d
+			icon: {
+				id: "immersiveengineering:blastbrick_reinforced"
+				count: 1
+			}
+			size: 1.5d
+			shape: "hexagon"
+			dependencies: [
+				"209C39B820260A38"
+			]
+			tasks: [
+				{
+					id: "8D027F837FF6B3A2"
+					type: "advancement"
+					advancement: "immersiveengineering:multiblocks/mb_improvedblastfurnace"
+					criterion: ""
+				}
+			]
+			rewards: [
+				{
+					id: "B440D832F97F0B18"
+					type: "item"
+					item: {
+						id: "immersiveengineering:coal_coke"
+						count: 1
+					}
+					count: 32
+				}
+				{
+					id: "01CA317D2B8CA69C"
+					type: "loot"
+					table_id: "BA8E33E78A3B3A0C"
+				}
+				{
+					id: "7FCC746463BD379D"
+					type: "xp_levels"
+					xp_levels: 15
+				}
+			]
+		}
+		{
+			id: "1E4A171676F0E64A"
+			x: 23.0d
+			y: 3.2d
+			icon: {
+				id: "immersiveengineering:blastfurnace_preheater"
+				count: 1
+			}
+			optional: true
+			dependencies: [
+				"8F8ECB8AFB57735C"
+				"EF4C4D8429EE73BD"
+			]
+			tasks: [
+				{
+					id: "B73F105CF2B0CB02"
+					type: "item"
+					item: {
+						id: "immersiveengineering:blastfurnace_preheater"
+						count: 1
+					}
+					count: 2
+				}
+			]
+			rewards: [
+				{
+					id: "0230A685A9E5D159"
+					type: "item"
+					item: {
+						id: "immersiveengineering:ingot_steel"
+						count: 1
+					}
+					count: 8
+				}
+				{
+					id: "00479A8F3B32DA67"
+					type: "xp_levels"
 					xp_levels: 10
 				}
 			]
 		}
 		{
 			id: "9CC653727697EE2C"
-			x: 27.0d
-			y: 0.0d
+			x: 26.0d
+			y: -1.0d
 			icon: {
 				id: "immersiveengineering:storage_steel"
 				count: 1
@@ -774,8 +940,8 @@
 		}
 		{
 			id: "87B6E481044EF248"
-			x: 27.0d
-			y: 2.6d
+			x: 26.0d
+			y: 1.4d
 			optional: true
 			dependencies: [
 				"9CC653727697EE2C"
@@ -917,7 +1083,7 @@
 			}
 			optional: true
 			dependencies: [
-				"F0CF533BDB0144AF"
+				"1D1FC33927C70AF3"
 			]
 			tasks: [
 				{
@@ -948,6 +1114,7 @@
 			y: 4.6d
 			dependencies: [
 				"1D1FC33927C70AF3"
+				"DF6C4EF2A2627DB2"
 			]
 			tasks: [
 				{
@@ -978,6 +1145,7 @@
 			y: 8.4d
 			dependencies: [
 				"1D1FC33927C70AF3"
+				"DF6C4EF2A2627DB2"
 			]
 			tasks: [
 				{
@@ -999,6 +1167,144 @@
 						count: 1
 					}
 					count: 8
+				}
+			]
+		}
+		{
+			id: "F729F2D79A654B65"
+			x: 16.0d
+			y: 5.0d
+			icon: {
+				id: "immersiveengineering:workbench"
+				count: 1
+			}
+			dependencies: [
+				"F2069EFD07BB1C25"
+				"DF6C4EF2A2627DB2"
+			]
+			tasks: [
+				{
+					id: "7853848384626537"
+					type: "item"
+					item: {
+						id: "immersiveengineering:workbench"
+						count: 1
+					}
+					count: 1
+				}
+				{
+					id: "4DE006D470B2AFAC"
+					type: "item"
+					item: {
+						id: "immersiveengineering:blueprint"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "AD280D224D4882D7"
+					type: "item"
+					item: {
+						id: "minecraft:paper"
+						count: 1
+					}
+					count: 16
+				}
+				{
+					id: "4565D1ED317C0643"
+					type: "item"
+					item: {
+						id: "minecraft:blue_dye"
+						count: 1
+					}
+					count: 8
+				}
+				{
+					id: "B6930E4B31644FCC"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+		}
+		{
+			id: "77EED24FB3E047DC"
+			x: 18.5d
+			y: 5.0d
+			icon: {
+				id: "immersiveengineering:electron_tube"
+				count: 1
+			}
+			dependencies: [
+				"F729F2D79A654B65"
+			]
+			tasks: [
+				{
+					id: "1172FFAD9269B00E"
+					type: "item"
+					item: {
+						id: "immersiveengineering:electron_tube"
+						count: 1
+					}
+					count: 6
+				}
+			]
+			rewards: [
+				{
+					id: "05D65CC728CDDFE8"
+					type: "item"
+					item: {
+						id: "immersiveengineering:ingot_nickel"
+						count: 1
+					}
+					count: 4
+				}
+				{
+					id: "1CE618F247086CFD"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+		}
+		{
+			id: "E22377A76DEDA108"
+			x: 16.0d
+			y: 8.4d
+			icon: {
+				id: "immersiveengineering:cloche"
+				count: 1
+			}
+			optional: true
+			dependencies: [
+				"F729F2D79A654B65"
+				"AFB0BD3991D5D212"
+			]
+			tasks: [
+				{
+					id: "196A2260CFE91D47"
+					type: "item"
+					item: {
+						id: "immersiveengineering:cloche"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "9F4909A461B50CBC"
+					type: "item"
+					item: {
+						id: "immersiveengineering:seed"
+						count: 1
+					}
+					count: 8
+				}
+				{
+					id: "3334CC4858CEC475"
+					type: "xp_levels"
+					xp_levels: 5
 				}
 			]
 		}
@@ -1038,6 +1344,7 @@
 			y: 14.0d
 			dependencies: [
 				"B2B9F48B7C9C8BD9"
+				"A8D21689C278C370"
 			]
 			tasks: [
 				{
@@ -1176,6 +1483,7 @@
 			shape: "gear"
 			dependencies: [
 				"E145E95636FC59C3"
+				"7685BEEF797367AB"
 			]
 			tasks: [
 				{
@@ -1221,6 +1529,7 @@
 			optional: true
 			dependencies: [
 				"5E25C12926B19AE5"
+				"C130845001A9AB9D"
 			]
 			tasks: [
 				{
@@ -1230,7 +1539,7 @@
 						id: "immersiveengineering:windmill_sail"
 						count: 1
 					}
-					count: 4
+					count: 8
 				}
 			]
 			rewards: [
@@ -1252,6 +1561,7 @@
 			optional: true
 			dependencies: [
 				"E145E95636FC59C3"
+				"BB25DD50942C713A"
 			]
 			tasks: [
 				{
@@ -1335,6 +1645,40 @@
 			]
 		}
 		{
+			id: "51D6442CC6B1747B"
+			x: 18.5d
+			y: 11.0d
+			icon: {
+				id: "immersiveengineering:redstone_acid_bucket"
+				count: 1
+			}
+			dependencies: [
+				"E767F6A0307AF055"
+			]
+			tasks: [
+				{
+					id: "66D9E668F778F974"
+					type: "item"
+					item: {
+						id: "immersiveengineering:redstone_acid_bucket"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "76EE168A6A1D93BC"
+					type: "item"
+					item: {
+						id: "minecraft:redstone"
+						count: 1
+					}
+					count: 16
+				}
+			]
+		}
+		{
 			id: "F27164CFA50C5EBE"
 			x: 21.0d
 			y: 13.0d
@@ -1346,6 +1690,8 @@
 			shape: "hexagon"
 			dependencies: [
 				"E767F6A0307AF055"
+				"51D6442CC6B1747B"
+				"AFB0BD3991D5D212"
 			]
 			tasks: [
 				{
@@ -1402,6 +1748,458 @@
 				}
 			]
 		}
+		{
+			id: "A651C104B13CC0B6"
+			x: 13.5d
+			y: 15.5d
+			icon: {
+				id: "immersiveengineering:thermoelectric_generator"
+				count: 1
+			}
+			optional: true
+			dependencies: [
+				"84E66C88730FE8F6"
+				"A9BF5BB0EE711260"
+				"BB25DD50942C713A"
+			]
+			tasks: [
+				{
+					id: "BFBD5E1761B87E08"
+					type: "item"
+					item: {
+						id: "immersiveengineering:thermoelectric_generator"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "5045C3BBA9191D39"
+					type: "item"
+					item: {
+						id: "minecraft:magma_block"
+						count: 1
+					}
+					count: 4
+				}
+				{
+					id: "FA6BE907E94E022F"
+					type: "item"
+					item: {
+						id: "minecraft:packed_ice"
+						count: 1
+					}
+					count: 8
+				}
+				{
+					id: "2A9DD59F6D36C4E5"
+					type: "xp_levels"
+					xp_levels: 10
+				}
+			]
+		}
+		{
+			id: "EF4C4D8429EE73BD"
+			x: 11.0d
+			y: 16.0d
+			icon: {
+				id: "immersiveengineering:furnace_heater"
+				count: 1
+			}
+			dependencies: [
+				"CFD37C0D735F7B6C"
+			]
+			tasks: [
+				{
+					id: "E578190BE019EB60"
+					type: "item"
+					item: {
+						id: "immersiveengineering:furnace_heater"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "9E6BCEB6B1E7EE35"
+					type: "item"
+					item: {
+						id: "immersiveengineering:plate_copper"
+						count: 1
+					}
+					count: 4
+				}
+				{
+					id: "934679632DE3506E"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+		}
+		{
+			id: "017F837D68603172"
+			x: 8.5d
+			y: 18.5d
+			icon: {
+				id: "immersiveengineering:wirecoil_electrum"
+				count: 1
+			}
+			dependencies: [
+				"A2D9D903A0AC27DD"
+				"E767F6A0307AF055"
+			]
+			tasks: [
+				{
+					id: "2648E2C945AA8DAA"
+					type: "item"
+					item: {
+						id: "immersiveengineering:wirecoil_electrum"
+						count: 1
+					}
+					count: 8
+				}
+				{
+					id: "81C17606FB97C4DE"
+					type: "item"
+					item: {
+						id: "immersiveengineering:connector_mv"
+						count: 1
+					}
+					count: 4
+				}
+			]
+			rewards: [
+				{
+					id: "A856D26E06B15F5E"
+					type: "item"
+					item: {
+						id: "immersiveengineering:ingot_electrum"
+						count: 1
+					}
+					count: 4
+				}
+				{
+					id: "BA2D6D3B0709ACA4"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+		}
+		{
+			id: "3E7B584F2A7D37C9"
+			x: 11.0d
+			y: 18.5d
+			icon: {
+				id: "immersiveengineering:transformer"
+				count: 1
+			}
+			dependencies: [
+				"017F837D68603172"
+				"F729F2D79A654B65"
+			]
+			tasks: [
+				{
+					id: "4C635EEC27C462E5"
+					type: "item"
+					item: {
+						id: "immersiveengineering:transformer"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "83EC5A28436C644B"
+					type: "item"
+					item: {
+						id: "minecraft:quartz"
+						count: 1
+					}
+					count: 8
+				}
+				{
+					id: "1C1E4B787ABEFE35"
+					type: "xp_levels"
+					xp_levels: 10
+				}
+			]
+		}
+		{
+			id: "B6B6AFF9013FDCC8"
+			x: 13.5d
+			y: 18.5d
+			icon: {
+				id: "immersiveengineering:capacitor_mv"
+				count: 1
+			}
+			size: 1.5d
+			shape: "hexagon"
+			dependencies: [
+				"3E7B584F2A7D37C9"
+				"F27164CFA50C5EBE"
+			]
+			tasks: [
+				{
+					id: "56CE8B3F27B9BD05"
+					type: "item"
+					item: {
+						id: "immersiveengineering:capacitor_mv"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "88DE9AA34F66D3C0"
+					type: "loot"
+					table_id: "BA8E33E78A3B3A0C"
+				}
+				{
+					id: "A7965859EE21F110"
+					type: "xp_levels"
+					xp_levels: 15
+				}
+			]
+		}
+		{
+			id: "0DED5582591FB3EB"
+			x: 6.0d
+			y: 21.5d
+			icon: {
+				id: "immersiveengineering:conveyor_basic"
+				count: 1
+			}
+			dependencies: [
+				"A8D21689C278C370"
+			]
+			tasks: [
+				{
+					id: "80619BC784643B3F"
+					type: "item"
+					item: {
+						id: "immersiveengineering:conveyor_basic"
+						count: 1
+					}
+					count: 16
+				}
+				{
+					id: "791EFE161DA0B4F6"
+					type: "advancement"
+					advancement: "immersiveengineering:main/place_conveyor"
+					criterion: ""
+				}
+			]
+			rewards: [
+				{
+					id: "92EA16FEA162AE6C"
+					type: "item"
+					item: {
+						id: "minecraft:leather"
+						count: 1
+					}
+					count: 8
+				}
+			]
+		}
+		{
+			id: "FEA1FF9A52C75691"
+			x: 8.5d
+			y: 21.5d
+			icon: {
+				id: "immersiveengineering:sheetmetal_iron"
+				count: 1
+			}
+			dependencies: [
+				"0DED5582591FB3EB"
+				"219BE3696F329A1E"
+			]
+			tasks: [
+				{
+					id: "20C56C9E241FC679"
+					type: "advancement"
+					advancement: "immersiveengineering:multiblocks/mb_tank"
+					criterion: ""
+				}
+			]
+			rewards: [
+				{
+					id: "0AEC4AE516CB5467"
+					type: "item"
+					item: {
+						id: "immersiveengineering:sheetmetal_iron"
+						count: 1
+					}
+					count: 16
+				}
+				{
+					id: "C665AB4F10BC94C1"
+					type: "xp_levels"
+					xp_levels: 10
+				}
+			]
+		}
+		{
+			id: "91F7883E41F33971"
+			x: 11.0d
+			y: 21.5d
+			icon: {
+				id: "immersiveengineering:treated_fence"
+				count: 1
+			}
+			dependencies: [
+				"FEA1FF9A52C75691"
+			]
+			tasks: [
+				{
+					id: "3B063AE7A7C06B1A"
+					type: "advancement"
+					advancement: "immersiveengineering:multiblocks/mb_silo"
+					criterion: ""
+				}
+			]
+			rewards: [
+				{
+					id: "176521D83CCDBF69"
+					type: "item"
+					item: {
+						id: "immersiveengineering:sheetmetal_iron"
+						count: 1
+					}
+					count: 16
+				}
+				{
+					id: "DA712BACB49F462B"
+					type: "xp_levels"
+					xp_levels: 10
+				}
+			]
+		}
+		{
+			id: "B387317D537DB360"
+			x: 13.5d
+			y: 21.5d
+			icon: {
+				id: "immersiveengineering:crate"
+				count: 1
+			}
+			optional: true
+			dependencies: [
+				"91F7883E41F33971"
+				"BB25DD50942C713A"
+			]
+			tasks: [
+				{
+					id: "C96DDD2F77F3F044"
+					type: "item"
+					item: {
+						id: "immersiveengineering:steel_catwalk"
+						count: 1
+					}
+					count: 24
+				}
+				{
+					id: "33227F67022D13D0"
+					type: "checkmark"
+				}
+			]
+			rewards: [
+				{
+					id: "07BC4ACC0013B5E6"
+					type: "item"
+					item: {
+						id: "immersiveengineering:crate"
+						count: 1
+					}
+					count: 4
+				}
+				{
+					id: "ABBB48B3D1212D9B"
+					type: "xp_levels"
+					xp_levels: 10
+				}
+			]
+		}
+		{
+			id: "9103FCE0619584C1"
+			x: 16.5d
+			y: 21.5d
+			icon: {
+				id: "immersiveengineering:hammer"
+				count: 1
+			}
+			size: 1.75d
+			shape: "gear"
+			dependencies: [
+				"91F7883E41F33971"
+				"8F8ECB8AFB57735C"
+				"1D1FC33927C70AF3"
+			]
+			tasks: [
+				{
+					id: "D98EC4D2EC5A1E93"
+					type: "advancement"
+					advancement: "immersiveengineering:main/mb_cokeoven"
+					criterion: ""
+				}
+				{
+					id: "6C425631F24C7FE5"
+					type: "advancement"
+					advancement: "immersiveengineering:main/mb_blastfurnace"
+					criterion: ""
+				}
+				{
+					id: "7D7524C4044CF5D0"
+					type: "checkmark"
+				}
+				{
+					id: "CF7A12B58F623234"
+					type: "advancement"
+					advancement: "immersiveengineering:multiblocks/mb_improvedblastfurnace"
+					criterion: ""
+				}
+				{
+					id: "B2E256049116D747"
+					type: "advancement"
+					advancement: "immersiveengineering:multiblocks/mb_tank"
+					criterion: ""
+				}
+				{
+					id: "DE2A3839F1049F33"
+					type: "advancement"
+					advancement: "immersiveengineering:multiblocks/mb_silo"
+					criterion: ""
+				}
+				{
+					id: "130BA17DA9E7CAB4"
+					type: "checkmark"
+				}
+			]
+			rewards: [
+				{
+					id: "A8E78931DCAEBEE7"
+					type: "loot"
+					table_id: "BA8E33E78A3B3A0C"
+				}
+				{
+					id: "CA295DDAF77C9F2F"
+					type: "item"
+					item: {
+						id: "immersiveengineering:hammer"
+						count: 1
+					}
+					count: 1
+				}
+				{
+					id: "B3BCEDA3D201D40C"
+					type: "xp_levels"
+					xp_levels: 15
+				}
+			]
+		}
 	]
 	images: [
 		{
@@ -1427,7 +2225,7 @@
 		{
 			id: "676D53B2E65F6DD8"
 			image: "kronwerke:textures/quests/immersive/coke.png"
-			x: 7.2d
+			x: 6.0d
 			y: -2.3d
 			width: 5.9d
 			height: 0.9d
@@ -1437,7 +2235,7 @@
 		{
 			id: "10009519FFCE541E"
 			image: "kronwerke:textures/quests/immersive/steel.png"
-			x: 22.5d
+			x: 22.0d
 			y: -2.8d
 			width: 1.94d
 			height: 0.9d
@@ -1448,7 +2246,7 @@
 			id: "D7DF6F9673D93995"
 			image: "kronwerke:textures/quests/immersive/alloys.png"
 			x: 8.0d
-			y: 3.3d
+			y: 3.6d
 			width: 4.07d
 			height: 0.9d
 			rotation: 0.0d
@@ -1456,10 +2254,40 @@
 		}
 		{
 			id: "E627E37BB7FB54A8"
+			image: "kronwerke:textures/quests/immersive/bench.png"
+			x: 17.2d
+			y: 3.85d
+			width: 4.19d
+			height: 0.9d
+			rotation: 0.0d
+			order: 1
+		}
+		{
+			id: "C8A27B5FB2D2D951"
 			image: "kronwerke:textures/quests/immersive/power.png"
 			x: 10.0d
 			y: 10.4d
 			width: 5.37d
+			height: 0.9d
+			rotation: 0.0d
+			order: 1
+		}
+		{
+			id: "B74C7E3D8F106B18"
+			image: "kronwerke:textures/quests/immersive/mv.png"
+			x: 10.5d
+			y: 17.2d
+			width: 5.46d
+			height: 0.9d
+			rotation: 0.0d
+			order: 1
+		}
+		{
+			id: "E918B5E4AD5A19CD"
+			image: "kronwerke:textures/quests/immersive/storage.png"
+			x: 10.0d
+			y: 20.3d
+			width: 6.93d
 			height: 0.9d
 			rotation: 0.0d
 			order: 1

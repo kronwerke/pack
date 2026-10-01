@@ -50,7 +50,7 @@
 		}
 		{
 			id: "4A5BE12CDFF717E6"
-			x: 2.6d
+			x: 2.5d
 			y: 0.0d
 			icon: {
 				id: "oritech:steel_ingot"
@@ -65,15 +65,6 @@
 					type: "item"
 					item: {
 						id: "oritech:steel_ingot"
-						count: 1
-					}
-					count: 16
-				}
-				{
-					id: "C572E4B8B3C0BD06"
-					type: "item"
-					item: {
-						id: "oritech:nickel_ingot"
 						count: 1
 					}
 					count: 16
@@ -93,7 +84,7 @@
 		}
 		{
 			id: "D675E878710CEEC7"
-			x: 2.6d
+			x: 2.5d
 			y: 2.0d
 			dependencies: [
 				"AD0D2B41CE5E29E8"
@@ -132,10 +123,10 @@
 		}
 		{
 			id: "DDCB1A7478CBECD6"
-			x: 5.2d
+			x: 5.0d
 			y: 0.0d
 			icon: {
-				id: "oritech:motor"
+				id: "oritech:magnetic_coil"
 				count: 1
 			}
 			dependencies: [
@@ -151,17 +142,33 @@
 					}
 					count: 8
 				}
+			]
+			rewards: [
 				{
-					id: "3203745F834B3020"
+					id: "19F14B1273118AA6"
 					type: "item"
 					item: {
-						id: "oritech:motor"
+						id: "oritech:nickel_ingot"
 						count: 1
 					}
 					count: 4
 				}
+			]
+		}
+		{
+			id: "E284ED7119CBE5A5"
+			x: 5.0d
+			y: 2.0d
+			icon: {
+				id: "oritech:machine_plating_block"
+				count: 1
+			}
+			dependencies: [
+				"4A5BE12CDFF717E6"
+			]
+			tasks: [
 				{
-					id: "B9AD70AC5092EBDC"
+					id: "5190482FE73ED3DA"
 					type: "item"
 					item: {
 						id: "oritech:machine_plating_block"
@@ -172,16 +179,50 @@
 			]
 			rewards: [
 				{
-					id: "19F14B1273118AA6"
+					id: "F4CD03D5BB468956"
 					type: "item"
 					item: {
-						id: "oritech:nickel_ingot"
+						id: "minecraft:copper_ingot"
 						count: 1
 					}
-					count: 8
+					count: 16
+				}
+			]
+		}
+		{
+			id: "7D92AB179B32250C"
+			x: 7.5d
+			y: 0.0d
+			icon: {
+				id: "oritech:motor"
+				count: 1
+			}
+			dependencies: [
+				"DDCB1A7478CBECD6"
+			]
+			tasks: [
+				{
+					id: "BCBF94ABE9D47723"
+					type: "item"
+					item: {
+						id: "oritech:motor"
+						count: 1
+					}
+					count: 4
+				}
+			]
+			rewards: [
+				{
+					id: "8422ECCB2290CDB3"
+					type: "item"
+					item: {
+						id: "oritech:magnetic_coil"
+						count: 1
+					}
+					count: 4
 				}
 				{
-					id: "2A2BE95CD5586AFB"
+					id: "83926B3999236112"
 					type: "xp_levels"
 					xp_levels: 5
 				}
@@ -189,17 +230,16 @@
 		}
 		{
 			id: "B839D543483B6704"
-			x: 5.2d
-			y: 2.4d
+			x: 2.5d
+			y: 5.0d
 			icon: {
 				id: "oritech:basic_generator_block"
 				count: 1
 			}
-			size: 1.75d
-			shape: "gear"
+			size: 1.5d
+			shape: "hexagon"
 			dependencies: [
 				"DDCB1A7478CBECD6"
-				"D675E878710CEEC7"
 			]
 			tasks: [
 				{
@@ -210,15 +250,6 @@
 						count: 1
 					}
 					count: 1
-				}
-				{
-					id: "5BB5CD927881AA7F"
-					type: "item"
-					item: {
-						id: "oritech:machine_core_1"
-						count: 1
-					}
-					count: 4
 				}
 			]
 			rewards: [
@@ -239,20 +270,69 @@
 				{
 					id: "477013D1E6F31B2A"
 					type: "xp_levels"
-					xp_levels: 10
+					xp_levels: 5
+				}
+			]
+		}
+		{
+			id: "31989F8CB685EA37"
+			x: 5.0d
+			y: 5.0d
+			icon: {
+				id: "oritech:machine_core_2"
+				count: 1
+			}
+			dependencies: [
+				"B839D543483B6704"
+			]
+			tasks: [
+				{
+					id: "AC816F169CE6CB35"
+					type: "item"
+					item: {
+						id: "oritech:machine_core_1"
+						count: 1
+					}
+					count: 8
+				}
+				{
+					id: "8AEDB246FAAABEBA"
+					type: "item"
+					item: {
+						id: "oritech:machine_core_2"
+						count: 1
+					}
+					count: 2
+				}
+			]
+			rewards: [
+				{
+					id: "12397F0DAB9EA745"
+					type: "item"
+					item: {
+						id: "minecraft:lapis_lazuli"
+						count: 1
+					}
+					count: 16
+				}
+				{
+					id: "8A1C98CC506C5DB5"
+					type: "xp_levels"
+					xp_levels: 5
 				}
 			]
 		}
 		{
 			id: "B1E6E80E2A3ADDEB"
-			x: 7.8d
-			y: 2.4d
+			x: 2.5d
+			y: 7.0d
 			icon: {
 				id: "oritech:energy_pipe"
 				count: 1
 			}
 			dependencies: [
 				"B839D543483B6704"
+				"D675E878710CEEC7"
 			]
 			tasks: [
 				{
@@ -273,6 +353,15 @@
 					}
 					count: 12
 				}
+				{
+					id: "E85DEB68DC0B4AD2"
+					type: "item"
+					item: {
+						id: "oritech:wrench"
+						count: 1
+					}
+					count: 1
+				}
 			]
 			rewards: [
 				{
@@ -288,14 +377,17 @@
 		}
 		{
 			id: "FD2F9072A71F8DDE"
-			x: 7.8d
+			x: 10.0d
 			y: 0.0d
 			icon: {
 				id: "oritech:pulverizer_block"
 				count: 1
 			}
+			size: 1.5d
+			shape: "hexagon"
 			dependencies: [
-				"DDCB1A7478CBECD6"
+				"7D92AB179B32250C"
+				"B839D543483B6704"
 			]
 			tasks: [
 				{
@@ -327,12 +419,17 @@
 					}
 					count: 16
 				}
+				{
+					id: "AB8EE9517F7DE426"
+					type: "xp_levels"
+					xp_levels: 5
+				}
 			]
 		}
 		{
 			id: "376948D055D00873"
-			x: 10.4d
-			y: -1.2d
+			x: 12.5d
+			y: -1.0d
 			icon: {
 				id: "oritech:powered_furnace_block"
 				count: 1
@@ -383,13 +480,13 @@
 		}
 		{
 			id: "2171B896C15529B3"
-			x: 10.4d
-			y: 0.8d
+			x: 12.5d
+			y: 1.0d
 			icon: {
 				id: "oritech:foundry_block"
 				count: 1
 			}
-			size: 1.75d
+			size: 1.5d
 			shape: "hexagon"
 			dependencies: [
 				"FD2F9072A71F8DDE"
@@ -438,10 +535,10 @@
 		}
 		{
 			id: "BDA365C7D37A7AB5"
-			x: 13.0d
-			y: -1.2d
+			x: 15.0d
+			y: -1.0d
 			icon: {
-				id: "oritech:plastic_sheet"
+				id: "oritech:centrifuge_block"
 				count: 1
 			}
 			dependencies: [
@@ -461,24 +558,63 @@
 					id: "28792CF60CE34B31"
 					type: "item"
 					item: {
+						id: "oritech:carbon_fibre_strands"
+						count: 1
+					}
+					count: 16
+				}
+			]
+			rewards: [
+				{
+					id: "B654A4081E77537D"
+					type: "item"
+					item: {
+						id: "minecraft:coal"
+						count: 1
+					}
+					count: 32
+				}
+				{
+					id: "D970601201270EE4"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+		}
+		{
+			id: "1893D9A947F62A14"
+			x: 17.5d
+			y: -1.0d
+			icon: {
+				id: "oritech:plastic_sheet"
+				count: 1
+			}
+			dependencies: [
+				"BDA365C7D37A7AB5"
+			]
+			tasks: [
+				{
+					id: "5F2AE65039F3F005"
+					type: "item"
+					item: {
 						id: "oritech:machine_fluid_addon"
 						count: 1
 					}
 					count: 1
 				}
 				{
-					id: "7AC68BB0BE8A1567"
+					id: "4BA78C2852D97B34"
 					type: "item"
 					item: {
 						id: "oritech:plastic_sheet"
 						count: 1
 					}
-					count: 8
+					count: 16
 				}
 			]
 			rewards: [
 				{
-					id: "B654A4081E77537D"
+					id: "8862A05C88F68BF4"
 					type: "item"
 					item: {
 						id: "minecraft:wheat"
@@ -487,7 +623,7 @@
 					count: 64
 				}
 				{
-					id: "D970601201270EE4"
+					id: "8FAAD238B173D8B4"
 					type: "xp_levels"
 					xp_levels: 10
 				}
@@ -495,15 +631,17 @@
 		}
 		{
 			id: "BCF76C7A691F9E0A"
-			x: 13.0d
-			y: 0.8d
+			x: 17.5d
+			y: 1.0d
 			icon: {
 				id: "oritech:assembler_block"
 				count: 1
 			}
+			size: 1.5d
+			shape: "hexagon"
 			dependencies: [
 				"2171B896C15529B3"
-				"BDA365C7D37A7AB5"
+				"1893D9A947F62A14"
 			]
 			tasks: [
 				{
@@ -537,6 +675,11 @@
 				}
 				{
 					id: "DF021DB60C89C4BA"
+					type: "loot"
+					table_id: "BB5E855731D4F100"
+				}
+				{
+					id: "6C23CF4768C98E7A"
 					type: "xp_levels"
 					xp_levels: 10
 				}
@@ -544,8 +687,8 @@
 		}
 		{
 			id: "77CDF17B55F34B16"
-			x: 15.6d
-			y: 0.8d
+			x: 20.5d
+			y: 1.0d
 			icon: {
 				id: "oritech:laser_arm_block"
 				count: 1
@@ -574,6 +717,15 @@
 					}
 					count: 1
 				}
+				{
+					id: "A9AB07062E813195"
+					type: "item"
+					item: {
+						id: "oritech:fluxite"
+						count: 1
+					}
+					count: 8
+				}
 			]
 			rewards: [
 				{
@@ -598,14 +750,53 @@
 			]
 		}
 		{
+			id: "5963096E96DF4F85"
+			x: 23.0d
+			y: 1.0d
+			icon: {
+				id: "oritech:atomic_forge_block"
+				count: 1
+			}
+			dependencies: [
+				"77CDF17B55F34B16"
+				"F47F69D31871D1E3"
+			]
+			tasks: [
+				{
+					id: "D725E84A1A916C7E"
+					type: "item"
+					item: {
+						id: "oritech:atomic_forge_block"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "E8B6E961E2111063"
+					type: "item"
+					item: {
+						id: "oritech:fluxite"
+						count: 1
+					}
+					count: 8
+				}
+				{
+					id: "4F9CAE2656B83EFC"
+					type: "xp_levels"
+					xp_levels: 10
+				}
+			]
+		}
+		{
 			id: "BE9DE4DC5D916B35"
-			x: 18.6d
-			y: 0.8d
+			x: 23.0d
+			y: 3.2d
 			icon: {
 				id: "oritech:destroyer_block"
 				count: 1
 			}
-			optional: true
 			dependencies: [
 				"77CDF17B55F34B16"
 			]
@@ -647,13 +838,190 @@
 			]
 		}
 		{
+			id: "6F29AD01DDC6671A"
+			x: 12.5d
+			y: 5.0d
+			icon: {
+				id: "oritech:platinum_ingot"
+				count: 1
+			}
+			dependencies: [
+				"FD2F9072A71F8DDE"
+			]
+			tasks: [
+				{
+					id: "C7A5B33589810D00"
+					type: "item"
+					item: {
+						id: "oritech:raw_platinum"
+						count: 1
+					}
+					count: 16
+				}
+			]
+			rewards: [
+				{
+					id: "FCB0ECE22BACF10F"
+					type: "item"
+					item: {
+						id: "minecraft:raw_iron"
+						count: 1
+					}
+					count: 16
+				}
+			]
+		}
+		{
+			id: "F47F69D31871D1E3"
+			x: 15.0d
+			y: 5.0d
+			icon: {
+				id: "oritech:fragment_forge_block"
+				count: 1
+			}
+			size: 1.5d
+			shape: "hexagon"
+			dependencies: [
+				"6F29AD01DDC6671A"
+				"77CDF17B55F34B16"
+			]
+			tasks: [
+				{
+					id: "33B15BF8E48B4F70"
+					type: "item"
+					item: {
+						id: "oritech:flux_gate"
+						count: 1
+					}
+					count: 1
+				}
+				{
+					id: "D7D6242EEA011A13"
+					type: "item"
+					item: {
+						id: "oritech:fragment_forge_block"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "6421C09FA8C5227E"
+					type: "item"
+					item: {
+						id: "minecraft:raw_iron"
+						count: 1
+					}
+					count: 32
+				}
+				{
+					id: "3E795FE5AEC2398B"
+					type: "loot"
+					table_id: "BB5E855731D4F100"
+				}
+				{
+					id: "1C1DA84611485E95"
+					type: "xp_levels"
+					xp_levels: 10
+				}
+			]
+		}
+		{
+			id: "2A49B6EB93A7DFC9"
+			x: 17.5d
+			y: 5.0d
+			icon: {
+				id: "oritech:iron_clump"
+				count: 1
+			}
+			dependencies: [
+				"F47F69D31871D1E3"
+			]
+			tasks: [
+				{
+					id: "929C6EED596938AB"
+					type: "item"
+					item: {
+						id: "oritech:iron_clump"
+						count: 1
+					}
+					count: 32
+				}
+			]
+			rewards: [
+				{
+					id: "2A0876F526E1762D"
+					type: "item"
+					item: {
+						id: "minecraft:raw_iron"
+						count: 1
+					}
+					count: 48
+				}
+				{
+					id: "EA92D00595557000"
+					type: "xp_levels"
+					xp_levels: 10
+				}
+			]
+		}
+		{
+			id: "7E83D0230D353EA6"
+			x: 20.5d
+			y: 5.0d
+			icon: {
+				id: "oritech:iron_gem"
+				count: 1
+			}
+			size: 2.5d
+			shape: "gear"
+			dependencies: [
+				"2A49B6EB93A7DFC9"
+			]
+			tasks: [
+				{
+					id: "D04519099CBA8352"
+					type: "item"
+					item: {
+						id: "oritech:iron_gem"
+						count: 1
+					}
+					count: 64
+				}
+			]
+			rewards: [
+				{
+					id: "9E8DFE1A14B1956A"
+					type: "loot"
+					table_id: "6320E512778B48ED"
+				}
+				{
+					id: "D51CAE00EE6DD037"
+					type: "item"
+					item: {
+						id: "minecraft:raw_iron"
+						count: 1
+					}
+					count: 64
+				}
+				{
+					id: "617CF75DB90AF91D"
+					type: "xp_levels"
+					xp_levels: 20
+				}
+			]
+		}
+		{
 			id: "2CADA5FC7DA5BF7A"
-			x: 10.4d
-			y: 3.6d
+			x: 0.0d
+			y: 12.0d
 			icon: {
 				id: "oritech:machine_speed_addon"
 				count: 1
 			}
+			size: 1.5d
+			shape: "hexagon"
 			dependencies: [
 				"BCF76C7A691F9E0A"
 			]
@@ -663,15 +1031,6 @@
 					type: "item"
 					item: {
 						id: "oritech:machine_speed_addon"
-						count: 1
-					}
-					count: 1
-				}
-				{
-					id: "B2DBC14B0DF80ECC"
-					type: "item"
-					item: {
-						id: "oritech:machine_efficiency_addon"
 						count: 1
 					}
 					count: 1
@@ -687,19 +1046,602 @@
 					}
 					count: 8
 				}
+				{
+					id: "9522CB4A8AAD5AA1"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+		}
+		{
+			id: "B88FE4A385F1949A"
+			x: 2.5d
+			y: 10.0d
+			icon: {
+				id: "oritech:machine_efficiency_addon"
+				count: 1
+			}
+			dependencies: [
+				"2CADA5FC7DA5BF7A"
+			]
+			tasks: [
+				{
+					id: "329CC2F8A5770819"
+					type: "item"
+					item: {
+						id: "oritech:machine_efficiency_addon"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "20A25077AC5ECB11"
+					type: "item"
+					item: {
+						id: "oritech:electrum_ingot"
+						count: 1
+					}
+					count: 2
+				}
+			]
+		}
+		{
+			id: "19EADE5742D50649"
+			x: 5.0d
+			y: 10.0d
+			icon: {
+				id: "oritech:machine_capacitor_addon"
+				count: 1
+			}
+			dependencies: [
+				"2CADA5FC7DA5BF7A"
+			]
+			tasks: [
+				{
+					id: "20619B582BD08898"
+					type: "item"
+					item: {
+						id: "oritech:machine_capacitor_addon"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "AD55F2B1A64F79A8"
+					type: "item"
+					item: {
+						id: "oritech:fluxite"
+						count: 1
+					}
+					count: 2
+				}
+			]
+		}
+		{
+			id: "D35B50CF89EA398C"
+			x: 7.5d
+			y: 10.0d
+			icon: {
+				id: "oritech:machine_acceptor_addon"
+				count: 1
+			}
+			dependencies: [
+				"2CADA5FC7DA5BF7A"
+			]
+			tasks: [
+				{
+					id: "371D43C2C797D5BB"
+					type: "item"
+					item: {
+						id: "oritech:machine_acceptor_addon"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "3CA4D41F1E6113C2"
+					type: "item"
+					item: {
+						id: "oritech:electrum_ingot"
+						count: 1
+					}
+					count: 2
+				}
+			]
+		}
+		{
+			id: "7B81E126757BB138"
+			x: 10.0d
+			y: 10.0d
+			icon: {
+				id: "oritech:machine_burst_addon"
+				count: 1
+			}
+			dependencies: [
+				"2CADA5FC7DA5BF7A"
+			]
+			tasks: [
+				{
+					id: "A419667326517F4F"
+					type: "item"
+					item: {
+						id: "oritech:machine_burst_addon"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "6A08C5D9A0631293"
+					type: "item"
+					item: {
+						id: "minecraft:redstone"
+						count: 1
+					}
+					count: 16
+				}
+			]
+		}
+		{
+			id: "90F980E70ADDF20D"
+			x: 12.5d
+			y: 10.0d
+			icon: {
+				id: "oritech:machine_yield_addon"
+				count: 1
+			}
+			dependencies: [
+				"2CADA5FC7DA5BF7A"
+			]
+			tasks: [
+				{
+					id: "B5B36CC073594318"
+					type: "item"
+					item: {
+						id: "oritech:machine_yield_addon"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "4242F0BB277AED58"
+					type: "item"
+					item: {
+						id: "minecraft:raw_iron"
+						count: 1
+					}
+					count: 16
+				}
+			]
+		}
+		{
+			id: "816A245196723867"
+			x: 2.5d
+			y: 12.0d
+			icon: {
+				id: "oritech:quarry_addon"
+				count: 1
+			}
+			dependencies: [
+				"2CADA5FC7DA5BF7A"
+			]
+			tasks: [
+				{
+					id: "A3307C8BB5D82449"
+					type: "item"
+					item: {
+						id: "oritech:quarry_addon"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "E2D4A6A5A43F6EDB"
+					type: "item"
+					item: {
+						id: "minecraft:diamond"
+						count: 1
+					}
+					count: 1
+				}
+			]
+		}
+		{
+			id: "7746B9436369F1FF"
+			x: 5.0d
+			y: 12.0d
+			icon: {
+				id: "oritech:machine_silk_touch_addon"
+				count: 1
+			}
+			dependencies: [
+				"2CADA5FC7DA5BF7A"
+			]
+			tasks: [
+				{
+					id: "6CD39A9BF6C69C01"
+					type: "item"
+					item: {
+						id: "oritech:machine_silk_touch_addon"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "C950EE0C5799F46E"
+					type: "item"
+					item: {
+						id: "minecraft:white_wool"
+						count: 1
+					}
+					count: 8
+				}
+			]
+		}
+		{
+			id: "68D3A72191B3BE31"
+			x: 7.5d
+			y: 12.0d
+			icon: {
+				id: "oritech:crop_filter_addon"
+				count: 1
+			}
+			dependencies: [
+				"2CADA5FC7DA5BF7A"
+			]
+			tasks: [
+				{
+					id: "914B1BC7594B2F50"
+					type: "item"
+					item: {
+						id: "oritech:crop_filter_addon"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "972DE55AFA5566C7"
+					type: "item"
+					item: {
+						id: "minecraft:wheat_seeds"
+						count: 1
+					}
+					count: 16
+				}
+			]
+		}
+		{
+			id: "F03431A086674ED6"
+			x: 10.0d
+			y: 12.0d
+			icon: {
+				id: "oritech:machine_hunter_addon"
+				count: 1
+			}
+			dependencies: [
+				"2CADA5FC7DA5BF7A"
+			]
+			tasks: [
+				{
+					id: "FC026D0BE002FB2E"
+					type: "item"
+					item: {
+						id: "oritech:machine_hunter_addon"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "BD56D0FA2AA98104"
+					type: "item"
+					item: {
+						id: "minecraft:iron_sword"
+						count: 1
+					}
+					count: 1
+				}
+			]
+		}
+		{
+			id: "E08211ED2A00C4F6"
+			x: 12.5d
+			y: 12.0d
+			icon: {
+				id: "oritech:machine_redstone_addon"
+				count: 1
+			}
+			dependencies: [
+				"2CADA5FC7DA5BF7A"
+			]
+			tasks: [
+				{
+					id: "8ED3997F97BE4805"
+					type: "item"
+					item: {
+						id: "oritech:machine_redstone_addon"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "960825BEACD931C3"
+					type: "item"
+					item: {
+						id: "minecraft:redstone"
+						count: 1
+					}
+					count: 16
+				}
+			]
+		}
+		{
+			id: "77A8D8F1BA111955"
+			x: 2.5d
+			y: 14.0d
+			icon: {
+				id: "oritech:machine_inventory_proxy_addon"
+				count: 1
+			}
+			dependencies: [
+				"2CADA5FC7DA5BF7A"
+			]
+			tasks: [
+				{
+					id: "926B14A4B5BB760D"
+					type: "item"
+					item: {
+						id: "oritech:machine_inventory_proxy_addon"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "BEC526F4AEE7BAFE"
+					type: "item"
+					item: {
+						id: "minecraft:chest"
+						count: 1
+					}
+					count: 4
+				}
+			]
+		}
+		{
+			id: "442DFEB3A370F944"
+			x: 5.0d
+			y: 14.0d
+			icon: {
+				id: "oritech:steam_boiler_addon"
+				count: 1
+			}
+			dependencies: [
+				"2CADA5FC7DA5BF7A"
+			]
+			tasks: [
+				{
+					id: "ACF09969E993E7A0"
+					type: "item"
+					item: {
+						id: "oritech:steam_boiler_addon"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "C2F6BDF05ED75149"
+					type: "item"
+					item: {
+						id: "minecraft:water_bucket"
+						count: 1
+					}
+					count: 1
+				}
+			]
+		}
+		{
+			id: "7730217F0940D4E7"
+			x: 7.5d
+			y: 14.0d
+			icon: {
+				id: "oritech:machine_processing_addon"
+				count: 1
+			}
+			dependencies: [
+				"2CADA5FC7DA5BF7A"
+			]
+			tasks: [
+				{
+					id: "B6BB159A47E07B46"
+					type: "item"
+					item: {
+						id: "oritech:machine_processing_addon"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "CB7FDFC72644F35A"
+					type: "item"
+					item: {
+						id: "oritech:processing_unit"
+						count: 1
+					}
+					count: 2
+				}
+			]
+		}
+		{
+			id: "5177AB9F8D678B41"
+			x: 10.0d
+			y: 14.0d
+			icon: {
+				id: "oritech:machine_extender"
+				count: 1
+			}
+			dependencies: [
+				"2CADA5FC7DA5BF7A"
+			]
+			tasks: [
+				{
+					id: "D43F328A40B416BF"
+					type: "item"
+					item: {
+						id: "oritech:machine_extender"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "60564FACC3CA1AA7"
+					type: "item"
+					item: {
+						id: "oritech:machine_core_2"
+						count: 1
+					}
+					count: 2
+				}
+			]
+		}
+		{
+			id: "2B9DC1FA5D32439D"
+			x: 15.5d
+			y: 11.0d
+			icon: {
+				id: "oritech:jetpack"
+				count: 1
+			}
+			dependencies: [
+				"1893D9A947F62A14"
+			]
+			tasks: [
+				{
+					id: "958D7C1929BE2C4A"
+					type: "item"
+					item: {
+						id: "oritech:jetpack"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "2FA18EAD147D8871"
+					type: "item"
+					item: {
+						id: "minecraft:blaze_powder"
+						count: 1
+					}
+					count: 8
+				}
+				{
+					id: "834A6C98E135F63F"
+					type: "xp_levels"
+					xp_levels: 10
+				}
+			]
+		}
+		{
+			id: "EEEDF8B5BC5C01E4"
+			x: 18.0d
+			y: 11.0d
+			icon: {
+				id: "oritech:exo_chestplate"
+				count: 1
+			}
+			dependencies: [
+				"2B9DC1FA5D32439D"
+				"77CDF17B55F34B16"
+			]
+			tasks: [
+				{
+					id: "30E4CEE4D9CE1157"
+					type: "item"
+					item: {
+						id: "oritech:exo_helmet"
+						count: 1
+					}
+					count: 1
+				}
+				{
+					id: "4D1EC8C9CA659ECD"
+					type: "item"
+					item: {
+						id: "oritech:exo_chestplate"
+						count: 1
+					}
+					count: 1
+				}
+				{
+					id: "97DF25FF167C2370"
+					type: "item"
+					item: {
+						id: "oritech:exo_leggings"
+						count: 1
+					}
+					count: 1
+				}
+				{
+					id: "11B38308BA02EA08"
+					type: "item"
+					item: {
+						id: "oritech:exo_boots"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "538790F354EBB429"
+					type: "loot"
+					table_id: "6BD556482A471D58"
+				}
+				{
+					id: "6443BE728BB046E4"
+					type: "xp_levels"
+					xp_levels: 15
+				}
 			]
 		}
 		{
 			id: "7ADC26DE74E315D7"
-			x: 13.0d
-			y: 3.6d
+			x: 20.5d
+			y: 11.0d
 			icon: {
 				id: "oritech:simple_augment_station"
 				count: 1
 			}
 			optional: true
 			dependencies: [
-				"BCF76C7A691F9E0A"
+				"EEEDF8B5BC5C01E4"
 			]
 			tasks: [
 				{
@@ -744,55 +1686,139 @@
 			]
 		}
 		{
-			id: "7E83D0230D353EA6"
-			x: 16.2d
-			y: 4.0d
+			id: "EBAF2C84EE920765"
+			x: 15.5d
+			y: 15.3d
 			icon: {
-				id: "oritech:fragment_forge_block"
+				id: "oritech:uranium_pellet"
 				count: 1
 			}
-			size: 2.5d
-			shape: "gear"
 			dependencies: [
-				"77CDF17B55F34B16"
+				"5963096E96DF4F85"
 			]
 			tasks: [
 				{
-					id: "D04519099CBA8352"
+					id: "286A1789DFF726AB"
 					type: "item"
 					item: {
-						id: "oritech:fragment_forge_block"
+						id: "oritech:raw_uranium"
+						count: 1
+					}
+					count: 16
+				}
+				{
+					id: "71441D1DD24A9DA9"
+					type: "item"
+					item: {
+						id: "oritech:uranium_pellet"
+						count: 1
+					}
+					count: 8
+				}
+			]
+			rewards: [
+				{
+					id: "D2D58354D738B59C"
+					type: "item"
+					item: {
+						id: "oritech:plastic_sheet"
+						count: 1
+					}
+					count: 8
+				}
+				{
+					id: "36D9E097B859FE49"
+					type: "xp_levels"
+					xp_levels: 10
+				}
+			]
+		}
+		{
+			id: "DC3B104A734F0E17"
+			x: 18.0d
+			y: 15.3d
+			icon: {
+				id: "oritech:reactor_controller"
+				count: 1
+			}
+			size: 2.0d
+			shape: "hexagon"
+			dependencies: [
+				"EBAF2C84EE920765"
+			]
+			tasks: [
+				{
+					id: "F177D133C7BDFCF6"
+					type: "item"
+					item: {
+						id: "oritech:reactor_controller"
 						count: 1
 					}
 					count: 1
 				}
 				{
-					id: "45B7DD88EF12C31A"
+					id: "DE014A8066D13846"
 					type: "item"
 					item: {
-						id: "oritech:iron_gem"
+						id: "oritech:reactor_wall"
 						count: 1
 					}
-					count: 64
+					count: 32
+				}
+				{
+					id: "E94845DC6E721044"
+					type: "item"
+					item: {
+						id: "oritech:reactor_rod"
+						count: 1
+					}
+					count: 1
+				}
+				{
+					id: "DB7927E09783FF9E"
+					type: "item"
+					item: {
+						id: "oritech:reactor_vent"
+						count: 1
+					}
+					count: 4
+				}
+				{
+					id: "AB2C779EF10C45C3"
+					type: "item"
+					item: {
+						id: "oritech:reactor_fuel_port"
+						count: 1
+					}
+					count: 1
+				}
+				{
+					id: "5BC1DF089F0E7000"
+					type: "item"
+					item: {
+						id: "oritech:reactor_energy_port"
+						count: 1
+					}
+					count: 1
 				}
 			]
 			rewards: [
 				{
-					id: "9E8DFE1A14B1956A"
-					type: "loot"
-					table_id: "6320E512778B48ED"
-				}
-				{
-					id: "D51CAE00EE6DD037"
+					id: "870D7D7D1E32F437"
 					type: "item"
 					item: {
-						id: "minecraft:raw_iron"
+						id: "oritech:uranium_pellet"
 						count: 1
 					}
-					count: 64
+					count: 4
 				}
 				{
-					id: "617CF75DB90AF91D"
+					id: "388C1A24B19E07CC"
+					type: "loot"
+					table_id: "6BD556482A471D58"
+				}
+				{
+					id: "34058C6BC6A23C2B"
 					type: "xp_levels"
 					xp_levels: 20
 				}
@@ -803,8 +1829,8 @@
 		{
 			id: "4F2113431E51D257"
 			image: "kronwerke:textures/quests/oritech/title.png"
-			x: 9.0d
-			y: -4.6d
+			x: 11.0d
+			y: -4.4d
 			width: 5.18d
 			height: 1.75d
 			rotation: 0.0d
@@ -813,8 +1839,8 @@
 		{
 			id: "0D5D5FB42296492B"
 			image: "kronwerke:textures/quests/oritech/nickel.png"
-			x: 2.4d
-			y: -1.5d
+			x: 3.75d
+			y: -1.6d
 			width: 5.57d
 			height: 0.9d
 			rotation: 0.0d
@@ -823,9 +1849,9 @@
 		{
 			id: "FC3947182692DDCD"
 			image: "kronwerke:textures/quests/oritech/power.png"
-			x: 6.5d
-			y: 3.9d
-			width: 2.55d
+			x: 3.75d
+			y: 3.6d
+			width: 5.69d
 			height: 0.9d
 			rotation: 0.0d
 			order: 1
@@ -833,8 +1859,8 @@
 		{
 			id: "E7A2546827B11058"
 			image: "kronwerke:textures/quests/oritech/processing.png"
-			x: 10.4d
-			y: -2.8d
+			x: 13.75d
+			y: -2.6d
 			width: 4.47d
 			height: 0.9d
 			rotation: 0.0d
@@ -843,8 +1869,8 @@
 		{
 			id: "D6007C600BF15D04"
 			image: "kronwerke:textures/quests/oritech/laser.png"
-			x: 17.1d
-			y: -0.9d
+			x: 21.75d
+			y: -0.6d
 			width: 1.97d
 			height: 0.9d
 			rotation: 0.0d
@@ -852,10 +1878,40 @@
 		}
 		{
 			id: "E1C6DAEEB2C7A922"
+			image: "kronwerke:textures/quests/oritech/ore.png"
+			x: 16.5d
+			y: 3.6d
+			width: 3.77d
+			height: 0.9d
+			rotation: 0.0d
+			order: 1
+		}
+		{
+			id: "16FC793E86FB5EC4"
 			image: "kronwerke:textures/quests/oritech/upgrades.png"
-			x: 11.7d
-			y: 5.3d
-			width: 2.46d
+			x: 6.25d
+			y: 8.6d
+			width: 2.55d
+			height: 0.9d
+			rotation: 0.0d
+			order: 1
+		}
+		{
+			id: "B39D241441DA83E6"
+			image: "kronwerke:textures/quests/oritech/gear.png"
+			x: 18.0d
+			y: 9.6d
+			width: 3.59d
+			height: 0.9d
+			rotation: 0.0d
+			order: 1
+		}
+		{
+			id: "490EEE893673F010"
+			image: "kronwerke:textures/quests/oritech/reactor.png"
+			x: 16.75d
+			y: 13.3d
+			width: 2.75d
 			height: 0.9d
 			rotation: 0.0d
 			order: 1

@@ -126,6 +126,49 @@
 			]
 		}
 		{
+			id: "0CBB52F9CEC18DAE"
+			x: 4.8d
+			y: -1.2d
+			icon: {
+				id: "create:brass_casing"
+				count: 1
+			}
+			dependencies: [
+				"897B5583009AF0A4"
+			]
+			tasks: [
+				{
+					id: "7F5F232BF0F60612"
+					type: "item"
+					item: {
+						id: "create:brass_casing"
+						count: 1
+					}
+					count: 3
+				}
+				{
+					id: "A8277E011EAD718F"
+					type: "item"
+					item: {
+						id: "create:brass_ingot"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "D6B1F732B2619F11"
+					type: "item"
+					item: {
+						id: "create:brass_ingot"
+						count: 1
+					}
+					count: 4
+				}
+			]
+		}
+		{
 			id: "CDF888D56AB321F0"
 			x: 7.2d
 			y: -1.2d
@@ -156,6 +199,46 @@
 						count: 1
 					}
 					count: 8
+				}
+			]
+		}
+		{
+			id: "10210ADA8839D3DA"
+			x: 7.2d
+			y: -3.3d
+			icon: {
+				id: "botania:alchemy_catalyst"
+				count: 1
+			}
+			optional: true
+			dependencies: [
+				"CDF888D56AB321F0"
+			]
+			tasks: [
+				{
+					id: "217723EF80A3311B"
+					type: "item"
+					item: {
+						id: "botania:alchemy_catalyst"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "5BC6400B811DAE97"
+					type: "item"
+					item: {
+						id: "minecraft:brewing_stand"
+						count: 1
+					}
+					count: 1
+				}
+				{
+					id: "940E5FEC2523078C"
+					type: "xp_levels"
+					xp_levels: 4
 				}
 			]
 		}
@@ -744,6 +827,246 @@
 			]
 		}
 		{
+			id: "748710E83268A906"
+			x: 24.5d
+			y: -1.8d
+			icon: {
+				id: "botania:rune_of_lust"
+				count: 1
+			}
+			optional: true
+			dependencies: [
+				"E258B180FD76A96D"
+			]
+			tasks: [
+				{
+					id: "BC5F936AC6A18FF1"
+					type: "item"
+					item: {
+						id: "botania:rune_of_lust"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "A6D83C7C885C6F11"
+					type: "item"
+					item: {
+						id: "botania:mana_quartz"
+						count: 1
+					}
+					count: 4
+				}
+				{
+					id: "D1393B3316ADA467"
+					type: "xp_levels"
+					xp_levels: 4
+				}
+			]
+		}
+		{
+			id: "8A66B27AF145480F"
+			x: 26.7d
+			y: -1.8d
+			icon: {
+				id: "botania:rune_of_greed"
+				count: 1
+			}
+			optional: true
+			dependencies: [
+				"748710E83268A906"
+			]
+			tasks: [
+				{
+					id: "BADBAE44D8E324A4"
+					type: "item"
+					item: {
+						id: "botania:rune_of_greed"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "D4088F7E8F376978"
+					type: "item"
+					item: {
+						id: "botania:mana_quartz"
+						count: 1
+					}
+					count: 4
+				}
+				{
+					id: "4C960959D6CAD771"
+					type: "xp_levels"
+					xp_levels: 4
+				}
+			]
+		}
+		{
+			id: "66750A841E948105"
+			x: 24.5d
+			y: 0.0d
+			icon: {
+				id: "botania:rune_of_sloth"
+				count: 1
+			}
+			optional: true
+			dependencies: [
+				"E258B180FD76A96D"
+			]
+			tasks: [
+				{
+					id: "EA0FAA71F998A740"
+					type: "item"
+					item: {
+						id: "botania:rune_of_sloth"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "19B98CD9EC1182FF"
+					type: "item"
+					item: {
+						id: "botania:mana_quartz"
+						count: 1
+					}
+					count: 4
+				}
+				{
+					id: "E6499BD937EA532D"
+					type: "xp_levels"
+					xp_levels: 4
+				}
+			]
+		}
+		{
+			id: "368286D85AD797D5"
+			x: 26.7d
+			y: 0.0d
+			icon: {
+				id: "botania:rune_of_wrath"
+				count: 1
+			}
+			optional: true
+			dependencies: [
+				"66750A841E948105"
+			]
+			tasks: [
+				{
+					id: "0EC437EB5EDF53C9"
+					type: "item"
+					item: {
+						id: "botania:rune_of_wrath"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "9F0881C7F8F6BA95"
+					type: "item"
+					item: {
+						id: "botania:mana_quartz"
+						count: 1
+					}
+					count: 4
+				}
+				{
+					id: "B317DA220B1AEB36"
+					type: "xp_levels"
+					xp_levels: 4
+				}
+			]
+		}
+		{
+			id: "1CC3FAEFCE83AF0F"
+			x: 24.5d
+			y: 1.8d
+			icon: {
+				id: "botania:rune_of_envy"
+				count: 1
+			}
+			optional: true
+			dependencies: [
+				"E258B180FD76A96D"
+			]
+			tasks: [
+				{
+					id: "EDBB944C5730674D"
+					type: "item"
+					item: {
+						id: "botania:rune_of_envy"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "86F835F29DA575D0"
+					type: "item"
+					item: {
+						id: "botania:mana_quartz"
+						count: 1
+					}
+					count: 4
+				}
+				{
+					id: "337252D2D4DD3F66"
+					type: "xp_levels"
+					xp_levels: 4
+				}
+			]
+		}
+		{
+			id: "F9BB74D50C2B5086"
+			x: 26.7d
+			y: 1.8d
+			icon: {
+				id: "botania:rune_of_pride"
+				count: 1
+			}
+			optional: true
+			dependencies: [
+				"1CC3FAEFCE83AF0F"
+			]
+			tasks: [
+				{
+					id: "AED6252A7FB4A1F9"
+					type: "item"
+					item: {
+						id: "botania:rune_of_pride"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "2DBF6DF4D3D544DA"
+					type: "item"
+					item: {
+						id: "botania:mana_quartz"
+						count: 1
+					}
+					count: 4
+				}
+				{
+					id: "BC99EFBBA328D45F"
+					type: "xp_levels"
+					xp_levels: 4
+				}
+			]
+		}
+		{
 			id: "328F8FE120E20C54"
 			x: 13.0d
 			y: 3.3d
@@ -780,6 +1103,31 @@
 					id: "D098466373F25DF5"
 					type: "xp_levels"
 					xp_levels: 5
+				}
+			]
+		}
+		{
+			id: "CDEEC20BEA0BEE49"
+			x: -2.4d
+			y: 6.5d
+			icon: {
+				id: "botania:thermalily"
+				count: 1
+			}
+			dependencies: [
+				"3A63D4D567B48BB9"
+			]
+			tasks: [
+				{
+					id: "441EA4CC6ED7148E"
+					type: "checkmark"
+				}
+			]
+			rewards: [
+				{
+					id: "E16ED4E815608B99"
+					type: "xp_levels"
+					xp_levels: 3
 				}
 			]
 		}
@@ -966,6 +1314,46 @@
 						count: 1
 					}
 					count: 8
+				}
+			]
+		}
+		{
+			id: "7EEBAD3477910989"
+			x: 11.0d
+			y: 6.5d
+			icon: {
+				id: "botania:jiyuulia"
+				count: 1
+			}
+			optional: true
+			dependencies: [
+				"F2F80B8DD1443E01"
+			]
+			tasks: [
+				{
+					id: "ED09A2ED7156B0A5"
+					type: "item"
+					item: {
+						id: "botania:tangleberrie"
+						count: 1
+					}
+					count: 1
+				}
+				{
+					id: "AD2ED9BD6D838DC5"
+					type: "item"
+					item: {
+						id: "botania:jiyuulia"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "5EBC048E3B4555A7"
+					type: "loot"
+					table_id: "F2BA64790EBA3DF5"
 				}
 			]
 		}
@@ -1177,32 +1565,41 @@
 			]
 		}
 		{
-			id: "7EEBAD3477910989"
-			x: 11.0d
-			y: 6.5d
+			id: "F6F99701DE6670F8"
+			x: 0.0d
+			y: 11.0d
 			icon: {
-				id: "botania:jiyuulia"
+				id: "botania:tigerseye"
 				count: 1
 			}
 			optional: true
 			dependencies: [
-				"F2F80B8DD1443E01"
+				"750B19122018682E"
 			]
 			tasks: [
 				{
-					id: "ED09A2ED7156B0A5"
+					id: "72DDE7F744599E18"
 					type: "item"
 					item: {
-						id: "botania:tangleberrie"
+						id: "botania:tigerseye"
 						count: 1
 					}
 					count: 1
 				}
 				{
-					id: "AD2ED9BD6D838DC5"
+					id: "72EBBCA0037F0492"
 					type: "item"
 					item: {
-						id: "botania:jiyuulia"
+						id: "botania:fallen_kanade"
+						count: 1
+					}
+					count: 1
+				}
+				{
+					id: "A44DC1A71F0D096A"
+					type: "item"
+					item: {
+						id: "botania:medumone"
 						count: 1
 					}
 					count: 1
@@ -1210,38 +1607,48 @@
 			]
 			rewards: [
 				{
-					id: "5EBC048E3B4555A7"
-					type: "loot"
-					table_id: "F2BA64790EBA3DF5"
+					id: "89028830A70D00C6"
+					type: "item"
+					item: {
+						id: "minecraft:golden_apple"
+						count: 1
+					}
+					count: 1
+				}
+				{
+					id: "C1F1477F444B50EA"
+					type: "xp_levels"
+					xp_levels: 5
 				}
 			]
 		}
 		{
-			id: "0CBB52F9CEC18DAE"
-			x: 4.8d
-			y: -1.2d
+			id: "343BF49FB69032A0"
+			x: 2.2d
+			y: 11.0d
 			icon: {
-				id: "create:brass_casing"
+				id: "botania:pollidisiac"
 				count: 1
 			}
+			optional: true
 			dependencies: [
-				"897B5583009AF0A4"
+				"C122D0CE9C0E01BC"
 			]
 			tasks: [
 				{
-					id: "7F5F232BF0F60612"
+					id: "FB88DECC9380FAC3"
 					type: "item"
 					item: {
-						id: "create:brass_casing"
+						id: "botania:daffomill"
 						count: 1
 					}
-					count: 3
+					count: 1
 				}
 				{
-					id: "A8277E011EAD718F"
+					id: "7AD7821164813A88"
 					type: "item"
 					item: {
-						id: "create:brass_ingot"
+						id: "botania:pollidisiac"
 						count: 1
 					}
 					count: 1
@@ -1249,13 +1656,430 @@
 			]
 			rewards: [
 				{
-					id: "D6B1F732B2619F11"
+					id: "62749646FED8304D"
 					type: "item"
 					item: {
-						id: "create:brass_ingot"
+						id: "minecraft:wheat"
+						count: 1
+					}
+					count: 32
+				}
+				{
+					id: "1005D4EBFB866194"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+		}
+		{
+			id: "0149FC31C6D283BD"
+			x: 4.4d
+			y: 11.0d
+			icon: {
+				id: "botania:vinculotus"
+				count: 1
+			}
+			optional: true
+			dependencies: [
+				"14B30BCE6EA39A6C"
+			]
+			tasks: [
+				{
+					id: "78DE8F1BC44D3445"
+					type: "item"
+					item: {
+						id: "botania:marimorphosis"
+						count: 1
+					}
+					count: 1
+				}
+				{
+					id: "7FF1C1FCC381E367"
+					type: "item"
+					item: {
+						id: "botania:hyacidus"
+						count: 1
+					}
+					count: 1
+				}
+				{
+					id: "385CCFC13B9047A5"
+					type: "item"
+					item: {
+						id: "botania:vinculotus"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "E6F6EFB5231F1CB2"
+					type: "item"
+					item: {
+						id: "minecraft:ender_pearl"
+						count: 1
+					}
+					count: 8
+				}
+				{
+					id: "267F5723C1ACC700"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+		}
+		{
+			id: "75BEC326A8052C3E"
+			x: 7.7d
+			y: 13.5d
+			icon: {
+				id: "botania:ring_of_magnetization"
+				count: 1
+			}
+			optional: true
+			dependencies: [
+				"62DC15024652AB79"
+			]
+			tasks: [
+				{
+					id: "A0FFEF7205ABC699"
+					type: "item"
+					item: {
+						id: "botania:band_of_aura"
+						count: 1
+					}
+					count: 1
+				}
+				{
+					id: "43E46D01BD7E131D"
+					type: "item"
+					item: {
+						id: "botania:ring_of_magnetization"
+						count: 1
+					}
+					count: 1
+				}
+				{
+					id: "8CD216FB0D47C5BC"
+					type: "item"
+					item: {
+						id: "botania:ring_of_dexterous_motion"
+						count: 1
+					}
+					count: 1
+				}
+				{
+					id: "808E855742D15871"
+					type: "item"
+					item: {
+						id: "botania:ring_of_the_mantle"
+						count: 1
+					}
+					count: 1
+				}
+				{
+					id: "E268E64C90921730"
+					type: "item"
+					item: {
+						id: "botania:ring_of_correction"
+						count: 1
+					}
+					count: 1
+				}
+				{
+					id: "59A5059DE05FCA3A"
+					type: "item"
+					item: {
+						id: "botania:ring_of_chordata"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "6BF58B3C6908E462"
+					type: "item"
+					item: {
+						id: "botania:manasteel_ingot"
+						count: 1
+					}
+					count: 8
+				}
+				{
+					id: "5CD38BA166D05A32"
+					type: "loot"
+					table_id: "BA8E33E78A3B3A0C"
+				}
+			]
+		}
+		{
+			id: "5A9B352D1311E946"
+			x: 7.7d
+			y: 15.6d
+			icon: {
+				id: "botania:greater_band_of_mana"
+				count: 1
+			}
+			optional: true
+			dependencies: [
+				"75BEC326A8052C3E"
+				"2703449D8AFB77AE"
+			]
+			tasks: [
+				{
+					id: "CFE60920A84640FB"
+					type: "item"
+					item: {
+						id: "botania:greater_band_of_mana"
+						count: 1
+					}
+					count: 1
+				}
+				{
+					id: "DAC60129C7A7A221"
+					type: "item"
+					item: {
+						id: "botania:greater_band_of_aura"
+						count: 1
+					}
+					count: 1
+				}
+				{
+					id: "74F3E336A819E4F5"
+					type: "item"
+					item: {
+						id: "botania:greater_ring_of_magnetization"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "8CC0B33C06F47B96"
+					type: "item"
+					item: {
+						id: "botania:mana_pearl"
 						count: 1
 					}
 					count: 4
+				}
+				{
+					id: "6E055FB84EB76CDF"
+					type: "xp_levels"
+					xp_levels: 8
+				}
+			]
+		}
+		{
+			id: "B8DE9117C21BCE2E"
+			x: 10.1d
+			y: 13.5d
+			icon: {
+				id: "botania:cirrus_amulet"
+				count: 1
+			}
+			optional: true
+			dependencies: [
+				"75BEC326A8052C3E"
+			]
+			tasks: [
+				{
+					id: "D94983E9B54433EA"
+					type: "item"
+					item: {
+						id: "botania:cirrus_amulet"
+						count: 1
+					}
+					count: 1
+				}
+				{
+					id: "E696D955B47606E5"
+					type: "item"
+					item: {
+						id: "botania:snowflake_pendant"
+						count: 1
+					}
+					count: 1
+				}
+				{
+					id: "93CFCE4A734FF013"
+					type: "item"
+					item: {
+						id: "botania:pyroclast_pendant"
+						count: 1
+					}
+					count: 1
+				}
+				{
+					id: "2531196E1F52E585"
+					type: "item"
+					item: {
+						id: "botania:tainted_blood_pendant"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "1BA63CBDF8AC258E"
+					type: "item"
+					item: {
+						id: "botania:mana_string"
+						count: 1
+					}
+					count: 8
+				}
+				{
+					id: "8268A1822946F93E"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+		}
+		{
+			id: "EF166311ADC91093"
+			x: 12.5d
+			y: 13.5d
+			icon: {
+				id: "botania:sojournors_sash"
+				count: 1
+			}
+			optional: true
+			dependencies: [
+				"B8DE9117C21BCE2E"
+			]
+			tasks: [
+				{
+					id: "ED3F8204DBD6C01D"
+					type: "item"
+					item: {
+						id: "botania:sojournors_sash"
+						count: 1
+					}
+					count: 1
+				}
+				{
+					id: "4C7FA09E2E7F7B12"
+					type: "item"
+					item: {
+						id: "botania:planestriders_sash"
+						count: 1
+					}
+					count: 1
+				}
+				{
+					id: "BC4C0FBCBB43949D"
+					type: "item"
+					item: {
+						id: "botania:tectonic_girdle"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "4ADD16EF27B6D890"
+					type: "item"
+					item: {
+						id: "minecraft:leather"
+						count: 1
+					}
+					count: 16
+				}
+				{
+					id: "2AB5A769065CB6E6"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+		}
+		{
+			id: "04AA6E5793BFA6B0"
+			x: 14.9d
+			y: 13.5d
+			icon: {
+				id: "botania:third_eye"
+				count: 1
+			}
+			optional: true
+			dependencies: [
+				"EF166311ADC91093"
+			]
+			tasks: [
+				{
+					id: "AFE111D19608F36C"
+					type: "item"
+					item: {
+						id: "botania:manaseer_monocle"
+						count: 1
+					}
+					count: 1
+				}
+				{
+					id: "998EEF612FB1245F"
+					type: "item"
+					item: {
+						id: "botania:tiny_planet"
+						count: 1
+					}
+					count: 1
+				}
+				{
+					id: "61DC88FB777023E3"
+					type: "item"
+					item: {
+						id: "botania:benevolent_goddess_charm"
+						count: 1
+					}
+					count: 1
+				}
+				{
+					id: "D43D2719F3399E11"
+					type: "item"
+					item: {
+						id: "botania:the_spectator"
+						count: 1
+					}
+					count: 1
+				}
+				{
+					id: "0719C245CF38B0A1"
+					type: "item"
+					item: {
+						id: "botania:third_eye"
+						count: 1
+					}
+					count: 1
+				}
+				{
+					id: "1451E5A540A72CBB"
+					type: "item"
+					item: {
+						id: "botania:invisibility_cloak"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "56AC1C88C1DEB63F"
+					type: "item"
+					item: {
+						id: "botania:mana_diamond"
+						count: 1
+					}
+					count: 2
+				}
+				{
+					id: "C58827E47D88DF8D"
+					type: "loot"
+					table_id: "BA8E33E78A3B3A0C"
 				}
 			]
 		}
@@ -1613,8 +2437,8 @@
 		{
 			id: "A64C10A45E48EF22"
 			image: "kronwerke:textures/quests/botania_runes/manastahl.png"
-			x: 4.2d
-			y: -2.7d
+			x: 2.6d
+			y: -2.9d
 			width: 3.72d
 			height: 0.9d
 			rotation: 0.0d
@@ -1632,6 +2456,16 @@
 		}
 		{
 			id: "0B701B8B797EA922"
+			image: "kronwerke:textures/quests/botania_runes/suenden.png"
+			x: 25.6d
+			y: -3.3d
+			width: 4.02d
+			height: 0.9d
+			rotation: 0.0d
+			order: 1
+		}
+		{
+			id: "90F4715BF137AFB5"
 			image: "kronwerke:textures/quests/botania_runes/blumen.png"
 			x: 5.5d
 			y: 4.7d
@@ -1641,7 +2475,17 @@
 			order: 1
 		}
 		{
-			id: "90F4715BF137AFB5"
+			id: "B6DCB0CAB0E39BAB"
+			image: "kronwerke:textures/quests/botania_runes/schmuck.png"
+			x: 11.3d
+			y: 12.0d
+			width: 3.1d
+			height: 0.9d
+			rotation: 0.0d
+			order: 1
+		}
+		{
+			id: "B447CCB7AB22E72A"
 			image: "kronwerke:textures/quests/botania_runes/terrastahl.png"
 			x: 18.0d
 			y: 4.3d
@@ -1651,7 +2495,7 @@
 			order: 1
 		}
 		{
-			id: "B6DCB0CAB0E39BAB"
+			id: "DBD072F3EE1ACC1D"
 			image: "kronwerke:textures/quests/botania_runes/obelisk.png"
 			x: 24.8d
 			y: 4.3d

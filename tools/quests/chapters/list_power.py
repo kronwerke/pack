@@ -275,7 +275,7 @@ quests = [
               "",
               "&eMekanism, Einfaches Universalkabel:&r &d3 200 FE/t&r. Fortgeschritten 51 200 FE/t (Stufe 3), Elite 409 600 und Ultimativ 3 276 800 FE/t (Stufe 4). Kabel verbinden sich mit jedem FE-Gerät im Pack.",
               "",
-              "&eMekanism, Einfacher Energie-Würfel:&r &d1,6 Millionen FE&r, Abgabe 1 600 FE/t. Fortgeschritten 6,4 Millionen und 6 400 FE/t (Stufe 3), Elite 25,6 Millionen und 25 600, Ultimativ 102,4 Millionen und 102 400 FE/t (Stufe 4). Die &6Induktionsmatrix&r (Gehäuse, Zellen, Anschlüsse) speichert schon mit einfachen Zellen &d3,2 Milliarden FE&r je Zelle, der einfache Anschluss schafft 102 400 FE/t. Offen ab Stufe 2.",
+              "&eMekanism, Einfacher Energie-Würfel:&r &d1,6 Millionen FE&r, Abgabe 1 600 FE/t. Fortgeschritten 6,4 Millionen und 6 400 FE/t (Stufe 3), Elite 25,6 Millionen und 25 600, Ultimativ 102,4 Millionen und 102 400 FE/t (Stufe 4). Die &6Induktionsmatrix&r (Gehäuse, Zellen, Anschlüsse) speichert schon mit einfachen Zellen &d3,2 Milliarden FE&r je Zelle, der einfache Anschluss schafft 102 400 FE/t. Kommt erst in Stufe 4: der Anschluss braucht Elite-Schaltkreise, die Zellen Lithiumstaub aus dem Kristallisator, siehe Kapitel &6Mekanism: Elite&r.",
           ],
           "minecraft:redstone_block", ["s2_choice"], xp=3),
 
@@ -356,7 +356,7 @@ quests = [
           [
               "Der &6Erweiterte Solargenerator&r: vier Solargeneratoren, Legierung, Schaltkreise und ein Eisenblock, drei Blöcke hoch. Fortgeschrittene Kabel und Würfel entstehen aus den einfachen mit Infundierter Legierung und Fortschrittlichen Schaltkreisen.",
               "",
-              "&eMekanism, Erweiterter Solargenerator:&r &d120 FE/t&r bei Tag, sechsmal der kleine. &eFortgeschrittenes Universalkabel:&r &d51 200 FE/t&r. &eFortgeschrittener Energie-Würfel:&r &d6,4 Millionen FE&r, 6 400 FE/t. Fortgeschrittene Induktionszellen speichern 25,6 Milliarden FE je Zelle, der Anschluss schafft 819 200 FE/t. Offen ab Stufe 3, siehe Kapitel &6Mekanism: Fortgeschritten&r.",
+              "&eMekanism, Erweiterter Solargenerator:&r &d120 FE/t&r bei Tag, sechsmal der kleine. &eFortgeschrittenes Universalkabel:&r &d51 200 FE/t&r. &eFortgeschrittener Energie-Würfel:&r &d6,4 Millionen FE&r, 6 400 FE/t. Fortgeschrittene Induktionszellen speichern 25,6 Milliarden FE je Zelle, der Anschluss schafft 819 200 FE/t. Wie die ganze Matrix erst ab Stufe 4.",
           ],
           "minecraft:iron_block", ["s3_choice"]),
 

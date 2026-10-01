@@ -300,7 +300,12 @@ RULES = [
 
     # Items whose recipes need a later stage than their mod: the tooltip should say so.
     (2, ["pylons:harvester_pylon", "mysticalagriculture:tinkering_table"]),
-    (3, ["mekanism:atomic_disassembler"]),
+    (2, ["occultism:spirit_attuned_gem"]),
+    (3, ["mekanism:atomic_disassembler", "mekanism:osmium_compressor", "mekanism:teleporter_frame",
+         "re:^mekanism:thermal_evaporation_", "mekanism:boiler_valve", "mekanism:painting_machine", "mekanism:flamethrower"]),
+    (4, ["mekanism:combiner", "mekanism:solar_neutron_activator", "re:^mekanism:(basic|advanced|elite|ultimate)_induction_",
+         "mekanism:induction_casing", "mekanism:induction_port", "mekanism:dust_lithium", "mekanism:dimensional_stabilizer",
+         "mekanism:pigment_mixer", "mekanism:modification_station", "mekmm:presser", "mekmm:planting_station", "mekmm:ambient_gas_collector"]),
     (4, ["@create_jetpack", "mekanism:hdpe_elytra", "re:^cabletiers:.*mega_"]),
     # The large wind generator makes more than the nitro reactor and the fusion reactor together.
     (5, ["mekmm:large_wind_generator"]),

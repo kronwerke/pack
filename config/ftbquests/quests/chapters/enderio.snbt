@@ -1,0 +1,866 @@
+{
+	id: "7A46ADF0010DA400"
+	filename: "enderio"
+	icon: {
+		id: "enderio:alloy_smelter"
+		count: 1
+	}
+	group: "AEAA9718BAF5A32A"
+	order_index: 21
+	default_quest_shape: "square"
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			id: "C457126D31A12BB2"
+			x: 0.0d
+			y: 1.0d
+			icon: {
+				id: "enderio:grains_of_infinity"
+				count: 1
+			}
+			size: 2.0d
+			shape: "hexagon"
+			tasks: [
+				{
+					id: "5DF08AEFB33684D3"
+					type: "item"
+					item: {
+						id: "enderio:grains_of_infinity"
+						count: 1
+					}
+					count: 8
+				}
+			]
+			rewards: [
+				{
+					id: "72279F3001AF5FC7"
+					type: "item"
+					item: {
+						id: "minecraft:flint_and_steel"
+						count: 1
+					}
+					count: 1
+				}
+				{
+					id: "89DA61D4820F6FEF"
+					type: "loot"
+					table_id: "BB5E855731D4F100"
+				}
+			]
+		}
+		{
+			id: "ECC96C3B9616C7C4"
+			x: 2.6d
+			y: 0.0d
+			dependencies: [
+				"C457126D31A12BB2"
+			]
+			tasks: [
+				{
+					id: "F36DF72736C6B598"
+					type: "item"
+					item: {
+						id: "enderio:basic_capacitor"
+						count: 1
+					}
+					count: 4
+				}
+			]
+			rewards: [
+				{
+					id: "15BE702303191C3A"
+					type: "item"
+					item: {
+						id: "minecraft:gold_nugget"
+						count: 1
+					}
+					count: 16
+				}
+				{
+					id: "84B2FC9F7F5F3480"
+					type: "item"
+					item: {
+						id: "minecraft:copper_ingot"
+						count: 1
+					}
+					count: 8
+				}
+			]
+		}
+		{
+			id: "2D3132A8699F69CD"
+			x: 2.6d
+			y: 2.0d
+			icon: {
+				id: "enderio:void_chassis"
+				count: 1
+			}
+			dependencies: [
+				"C457126D31A12BB2"
+			]
+			tasks: [
+				{
+					id: "C35D44E712EC023D"
+					type: "item"
+					item: {
+						id: "enderio:void_chassis"
+						count: 1
+					}
+					count: 2
+				}
+				{
+					id: "CEDA2A25C97C566A"
+					type: "item"
+					item: {
+						id: "enderio:iron_gear"
+						count: 1
+					}
+					count: 4
+				}
+			]
+			rewards: [
+				{
+					id: "D92F9E114FCB0505"
+					type: "item"
+					item: {
+						id: "minecraft:iron_ingot"
+						count: 1
+					}
+					count: 16
+				}
+			]
+		}
+		{
+			id: "6BBA588FE89BA602"
+			x: 5.2d
+			y: 1.0d
+			icon: {
+				id: "enderio:alloy_smelter"
+				count: 1
+			}
+			size: 2.0d
+			shape: "gear"
+			dependencies: [
+				"ECC96C3B9616C7C4"
+				"2D3132A8699F69CD"
+			]
+			tasks: [
+				{
+					id: "3BC6C341A6C6C51A"
+					type: "item"
+					item: {
+						id: "enderio:alloy_smelter"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "876B7F2FA47BCB64"
+					type: "item"
+					item: {
+						id: "minecraft:obsidian"
+						count: 1
+					}
+					count: 8
+				}
+				{
+					id: "D9F6E8C8E1EAABA7"
+					type: "loot"
+					table_id: "BB5E855731D4F100"
+				}
+				{
+					id: "C083C070261AD651"
+					type: "xp_levels"
+					xp_levels: 10
+				}
+			]
+		}
+		{
+			id: "4A2FE6F6337F2177"
+			x: 2.6d
+			y: 4.0d
+			dependencies: [
+				"6BBA588FE89BA602"
+			]
+			tasks: [
+				{
+					id: "148EFD48BC1394F6"
+					type: "item"
+					item: {
+						id: "enderio:stirling_generator"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "81236BEAD1917845"
+					type: "item"
+					item: {
+						id: "minecraft:coal_block"
+						count: 1
+					}
+					count: 8
+				}
+				{
+					id: "DCA58FFDB592950D"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+		}
+		{
+			id: "8EFB9894648EA1FC"
+			x: 8.0d
+			y: -0.6d
+			dependencies: [
+				"6BBA588FE89BA602"
+			]
+			tasks: [
+				{
+					id: "B377DD38D3301F18"
+					type: "item"
+					item: {
+						id: "enderio:conductive_alloy_ingot"
+						count: 1
+					}
+					count: 16
+				}
+			]
+			rewards: [
+				{
+					id: "2C530604D8C4DC9D"
+					type: "item"
+					item: {
+						id: "minecraft:copper_ingot"
+						count: 1
+					}
+					count: 16
+				}
+				{
+					id: "B4D338CD0519E8D7"
+					type: "item"
+					item: {
+						id: "minecraft:iron_ingot"
+						count: 1
+					}
+					count: 8
+				}
+			]
+		}
+		{
+			id: "D09426BD7E90A173"
+			x: 10.6d
+			y: -1.4d
+			icon: {
+				id: "enderio:energetic_alloy_ingot"
+				count: 1
+			}
+			dependencies: [
+				"8EFB9894648EA1FC"
+			]
+			tasks: [
+				{
+					id: "0057BF0F59AF1869"
+					type: "item"
+					item: {
+						id: "enderio:energetic_alloy_ingot"
+						count: 1
+					}
+					count: 8
+				}
+				{
+					id: "066542A17CCE06C1"
+					type: "item"
+					item: {
+						id: "enderio:vibrant_alloy_ingot"
+						count: 1
+					}
+					count: 4
+				}
+			]
+			rewards: [
+				{
+					id: "1CDBB6AF05546B82"
+					type: "item"
+					item: {
+						id: "minecraft:glowstone_dust"
+						count: 1
+					}
+					count: 16
+				}
+				{
+					id: "7B9DDAF90AF601DC"
+					type: "item"
+					item: {
+						id: "minecraft:gold_ingot"
+						count: 1
+					}
+					count: 8
+				}
+			]
+		}
+		{
+			id: "023034F796E93A0F"
+			x: 10.6d
+			y: 0.2d
+			dependencies: [
+				"8EFB9894648EA1FC"
+			]
+			tasks: [
+				{
+					id: "519BA7E81E71679D"
+					type: "item"
+					item: {
+						id: "enderio:pulsating_alloy_ingot"
+						count: 1
+					}
+					count: 8
+				}
+			]
+			rewards: [
+				{
+					id: "64A769769BD286E7"
+					type: "item"
+					item: {
+						id: "minecraft:ender_pearl"
+						count: 1
+					}
+					count: 4
+				}
+			]
+		}
+		{
+			id: "05CE1B1CCE2C7E16"
+			x: 8.0d
+			y: 1.0d
+			dependencies: [
+				"6BBA588FE89BA602"
+			]
+			tasks: [
+				{
+					id: "E076689B1E379FA4"
+					type: "item"
+					item: {
+						id: "enderio:dark_steel_ingot"
+						count: 1
+					}
+					count: 8
+				}
+			]
+			rewards: [
+				{
+					id: "8C403B1D3596096B"
+					type: "item"
+					item: {
+						id: "minecraft:obsidian"
+						count: 1
+					}
+					count: 8
+				}
+				{
+					id: "B9A8C6B7D14CA23C"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+		}
+		{
+			id: "9938FCAFCD22C593"
+			x: 5.2d
+			y: 7.8d
+			icon: {
+				id: "enderio:sag_mill"
+				count: 1
+			}
+			size: 1.75d
+			shape: "hexagon"
+			dependencies: [
+				"6BBA588FE89BA602"
+			]
+			tasks: [
+				{
+					id: "8F16963F3C5728E5"
+					type: "item"
+					item: {
+						id: "enderio:sag_mill"
+						count: 1
+					}
+					count: 1
+				}
+				{
+					id: "5A0ED3969BF36B96"
+					type: "item"
+					item: {
+						id: "enderio:silicon"
+						count: 1
+					}
+					count: 8
+				}
+			]
+			rewards: [
+				{
+					id: "812CAB3CE608B2FA"
+					type: "item"
+					item: {
+						id: "minecraft:raw_iron"
+						count: 1
+					}
+					count: 32
+				}
+				{
+					id: "01DE203544AA9FF1"
+					type: "loot"
+					table_id: "BB5E855731D4F100"
+				}
+				{
+					id: "31DEE7057C1489D2"
+					type: "xp_levels"
+					xp_levels: 10
+				}
+			]
+		}
+		{
+			id: "746C9B3D40018F33"
+			x: 7.8d
+			y: 7.0d
+			dependencies: [
+				"6BBA588FE89BA602"
+			]
+			tasks: [
+				{
+					id: "DE463EE24414234D"
+					type: "item"
+					item: {
+						id: "enderio:conduit_binder"
+						count: 1
+					}
+					count: 16
+				}
+			]
+			rewards: [
+				{
+					id: "168926819F1682D1"
+					type: "item"
+					item: {
+						id: "minecraft:gravel"
+						count: 1
+					}
+					count: 32
+				}
+				{
+					id: "070B93517193B23B"
+					type: "item"
+					item: {
+						id: "minecraft:clay_ball"
+						count: 1
+					}
+					count: 16
+				}
+			]
+		}
+		{
+			id: "13E8A5E844224DC2"
+			x: 10.4d
+			y: 7.8d
+			icon: {
+				id: "enderio:conduit_binder"
+				count: 1
+			}
+			size: 1.75d
+			shape: "gear"
+			dependencies: [
+				"746C9B3D40018F33"
+			]
+			tasks: [
+				{
+					id: "FEDA0EADACD7BF24"
+					type: "item"
+					item: {
+						id: "enderio:conduit"
+						count: 1
+					}
+					count: 16
+				}
+				{
+					id: "F6545E3BB3C0509C"
+					type: "item"
+					item: {
+						id: "enderio:yeta_wrench"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "7C518F0793A84648"
+					type: "item"
+					item: {
+						id: "enderio:conduit_binder"
+						count: 1
+					}
+					count: 16
+				}
+				{
+					id: "3E4F8C0A764B5C77"
+					type: "loot"
+					table_id: "6BD556482A471D58"
+				}
+				{
+					id: "80A8BCD9ACF1F832"
+					type: "xp_levels"
+					xp_levels: 10
+				}
+			]
+		}
+		{
+			id: "F03FF09F26BF9F08"
+			x: 13.0d
+			y: 7.0d
+			dependencies: [
+				"13E8A5E844224DC2"
+			]
+			tasks: [
+				{
+					id: "FFB3E9E0D18AB115"
+					type: "item"
+					item: {
+						id: "enderio:fluid_tank"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "92C65616A8142283"
+					type: "item"
+					item: {
+						id: "minecraft:bucket"
+						count: 1
+					}
+					count: 4
+				}
+			]
+		}
+		{
+			id: "D2BA1962B9592168"
+			x: 8.0d
+			y: 2.6d
+			dependencies: [
+				"6BBA588FE89BA602"
+			]
+			tasks: [
+				{
+					id: "E632320E0B5F96DC"
+					type: "item"
+					item: {
+						id: "enderio:soularium_ingot"
+						count: 1
+					}
+					count: 16
+				}
+			]
+			rewards: [
+				{
+					id: "0C9574BFFA562EC8"
+					type: "item"
+					item: {
+						id: "minecraft:soul_sand"
+						count: 1
+					}
+					count: 32
+				}
+				{
+					id: "1A4656E4D2237482"
+					type: "item"
+					item: {
+						id: "minecraft:gold_ingot"
+						count: 1
+					}
+					count: 8
+				}
+			]
+		}
+		{
+			id: "DC973B72686966B2"
+			x: 10.6d
+			y: 2.6d
+			dependencies: [
+				"D2BA1962B9592168"
+			]
+			tasks: [
+				{
+					id: "1F36418D5872101B"
+					type: "item"
+					item: {
+						id: "enderio:soul_vial"
+						count: 1
+					}
+					count: 2
+				}
+			]
+			rewards: [
+				{
+					id: "742FE3C919C4C087"
+					type: "item"
+					item: {
+						id: "minecraft:quartz"
+						count: 1
+					}
+					count: 16
+				}
+			]
+		}
+		{
+			id: "5531D5799455DC28"
+			x: 10.6d
+			y: 4.2d
+			dependencies: [
+				"D2BA1962B9592168"
+			]
+			tasks: [
+				{
+					id: "42384C3DA2881D1C"
+					type: "item"
+					item: {
+						id: "enderio:ensouled_chassis"
+						count: 1
+					}
+					count: 2
+				}
+			]
+			rewards: [
+				{
+					id: "B60DA07010FEA63D"
+					type: "item"
+					item: {
+						id: "enderio:soularium_ingot"
+						count: 1
+					}
+					count: 4
+				}
+			]
+		}
+		{
+			id: "B691C24AC6851B3A"
+			x: 13.2d
+			y: 4.2d
+			icon: {
+				id: "enderio:slice_and_splice"
+				count: 1
+			}
+			dependencies: [
+				"5531D5799455DC28"
+			]
+			tasks: [
+				{
+					id: "D9389EAA98538F3D"
+					type: "item"
+					item: {
+						id: "enderio:slice_and_splice"
+						count: 1
+					}
+					count: 1
+				}
+				{
+					id: "84404F04CD248143"
+					type: "item"
+					item: {
+						id: "enderio:z_logic_controller"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "212545E53C79CAE1"
+					type: "item"
+					item: {
+						id: "enderio:energized_gear"
+						count: 1
+					}
+					count: 2
+				}
+				{
+					id: "00DB55E9BB42E5C7"
+					type: "xp_levels"
+					xp_levels: 10
+				}
+			]
+		}
+		{
+			id: "5EC19C284A47EA2D"
+			x: 13.2d
+			y: 2.6d
+			icon: {
+				id: "malum:soul_stained_steel_ingot"
+				count: 1
+			}
+			dependencies: [
+				"DC973B72686966B2"
+			]
+			tasks: [
+				{
+					id: "D4448E2EDF5525AE"
+					type: "item"
+					item: {
+						id: "malum:soul_stained_steel_ingot"
+						count: 1
+					}
+					count: 4
+				}
+			]
+			rewards: [
+				{
+					id: "26675E101ACE0A60"
+					type: "item"
+					item: {
+						id: "enderio:soularium_ingot"
+						count: 1
+					}
+					count: 4
+				}
+				{
+					id: "726436FDC14D769F"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+		}
+		{
+			id: "9554DFECC9BB20A5"
+			x: 15.8d
+			y: 3.4d
+			icon: {
+				id: "enderio:soul_binder"
+				count: 1
+			}
+			size: 2.5d
+			shape: "gear"
+			dependencies: [
+				"B691C24AC6851B3A"
+				"5EC19C284A47EA2D"
+			]
+			tasks: [
+				{
+					id: "A3DA8923B19DFFF6"
+					type: "item"
+					item: {
+						id: "enderio:soul_binder"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "00B8FFD6248190EE"
+					type: "loot"
+					table_id: "6320E512778B48ED"
+				}
+				{
+					id: "5E524E097BE7A589"
+					type: "item"
+					item: {
+						id: "enderio:soul_vial"
+						count: 1
+					}
+					count: 2
+				}
+				{
+					id: "349EAB872C07A4AF"
+					type: "xp_levels"
+					xp_levels: 20
+				}
+			]
+		}
+		{
+			id: "37DCFAE50AC52582"
+			x: 18.6d
+			y: 4.4d
+			icon: {
+				id: "minecraft:wheat"
+				count: 1
+			}
+			optional: true
+			dependencies: [
+				"9554DFECC9BB20A5"
+			]
+			tasks: [
+				{
+					id: "7899384FDF579C8C"
+					type: "checkmark"
+				}
+			]
+			rewards: [
+				{
+					id: "30AE22C6ACFBF567"
+					type: "item"
+					item: {
+						id: "minecraft:bone_meal"
+						count: 1
+					}
+					count: 32
+				}
+			]
+		}
+	]
+	images: [
+		{
+			id: "1E7EAE8A497472E3"
+			image: "kronwerke:textures/quests/enderio/title.png"
+			x: 8.0d
+			y: -4.4d
+			width: 5.65d
+			height: 1.75d
+			rotation: 0.0d
+			order: 1
+		}
+		{
+			id: "4D9DDBDC862E7740"
+			image: "kronwerke:textures/quests/enderio/basics.png"
+			x: 2.6d
+			y: -1.5d
+			width: 4.01d
+			height: 0.9d
+			rotation: 0.0d
+			order: 1
+		}
+		{
+			id: "2E864B1476347562"
+			image: "kronwerke:textures/quests/enderio/alloys.png"
+			x: 9.3d
+			y: -2.8d
+			width: 4.07d
+			height: 0.9d
+			rotation: 0.0d
+			order: 1
+		}
+		{
+			id: "EAC1F2C45F6F7762"
+			image: "kronwerke:textures/quests/enderio/souls.png"
+			x: 13.6d
+			y: 1.1d
+			width: 2.29d
+			height: 0.9d
+			rotation: 0.0d
+			order: 1
+		}
+		{
+			id: "7E4E531CFE1A0690"
+			image: "kronwerke:textures/quests/enderio/conduits.png"
+			x: 9.1d
+			y: 5.6d
+			width: 6.22d
+			height: 0.9d
+			rotation: 0.0d
+			order: 1
+		}
+	]
+}

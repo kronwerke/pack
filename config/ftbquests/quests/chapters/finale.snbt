@@ -1,0 +1,454 @@
+{
+	id: "A02C4F191D41BC9F"
+	filename: "finale"
+	icon: {
+		id: "draconicevolution:chaos_shard"
+		count: 1
+	}
+	group: "520042A0F9159BC8"
+	order_index: 44
+	default_quest_shape: "circle"
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			id: "62AC572B1AB63138"
+			x: 0.0d
+			y: 1.5d
+			icon: {
+				id: "draconicevolution:chaos_shard"
+				count: 1
+			}
+			size: 2.0d
+			shape: "hexagon"
+			tasks: [
+				{
+					id: "DD3B3FBFA7C8F897"
+					type: "item"
+					item: {
+						id: "botania:gaia_ingot"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "4EA73390DC39D6AA"
+					type: "loot"
+					table_id: "688F492DF36E9682"
+				}
+				{
+					id: "20E90414FC3E2C57"
+					type: "xp_levels"
+					xp_levels: 10
+				}
+			]
+		}
+		{
+			id: "5B059580EA028A54"
+			x: 2.75d
+			y: 0.0d
+			icon: {
+				id: "draconicevolution:awakened_draconium_block"
+				count: 1
+			}
+			dependencies: [
+				"62AC572B1AB63138"
+			]
+			tasks: [
+				{
+					id: "FE3013D557A58D1A"
+					type: "item"
+					item: {
+						id: "draconicevolution:awakened_draconium_block"
+						count: 1
+					}
+					count: 1
+				}
+				{
+					id: "0B17FE25580813FF"
+					type: "item"
+					item: {
+						id: "mekanism:pellet_antimatter"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "F01142BE022E330A"
+					type: "loot"
+					table_id: "688F492DF36E9682"
+				}
+				{
+					id: "48E2C2113E24D525"
+					type: "xp_levels"
+					xp_levels: 10
+				}
+			]
+		}
+		{
+			id: "0FDFA0956359CF09"
+			x: 2.75d
+			y: 3.0d
+			icon: {
+				id: "ars_nouveau:wilden_tribute"
+				count: 1
+			}
+			dependencies: [
+				"62AC572B1AB63138"
+			]
+			tasks: [
+				{
+					id: "57A2581722D62AA4"
+					type: "item"
+					item: {
+						id: "botania:gaia_ingot"
+						count: 1
+					}
+					count: 4
+				}
+				{
+					id: "2CEEE13C24234462"
+					type: "item"
+					item: {
+						id: "ars_nouveau:wilden_tribute"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "AA7CFA30957DE199"
+					type: "loot"
+					table_id: "688F492DF36E9682"
+				}
+				{
+					id: "9EA5C7E9B5DCA357"
+					type: "xp_levels"
+					xp_levels: 10
+				}
+			]
+		}
+		{
+			id: "4EC64D932C53D550"
+			x: 5.5d
+			y: 1.5d
+			icon: {
+				id: "minecraft:beacon"
+				count: 1
+			}
+			size: 1.75d
+			shape: "gear"
+			dependencies: [
+				"5B059580EA028A54"
+				"0FDFA0956359CF09"
+			]
+			tasks: [
+				{
+					id: "C3DB43616852CE7E"
+					type: "checkmark"
+				}
+			]
+			rewards: [
+				{
+					id: "BC284B3DB1B5771E"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+		}
+		{
+			id: "3B82B0A09009404B"
+			x: 8.25d
+			y: 0.0d
+			icon: {
+				id: "draconicevolution:draconic_chestpiece"
+				count: 1
+			}
+			dependencies: [
+				"4EC64D932C53D550"
+			]
+			tasks: [
+				{
+					id: "6AAFFA44C128A995"
+					type: "checkmark"
+				}
+				{
+					id: "BD504D5F1F988650"
+					type: "checkmark"
+				}
+				{
+					id: "A70A0AEC1253299E"
+					type: "checkmark"
+				}
+				{
+					id: "A3C449AB13B9F0D5"
+					type: "checkmark"
+				}
+			]
+			rewards: [
+				{
+					id: "48C20A8ADB8CAA41"
+					type: "item"
+					item: {
+						id: "minecraft:firework_rocket"
+						count: 1
+					}
+					count: 64
+				}
+				{
+					id: "70300813DCDF73B7"
+					type: "xp_levels"
+					xp_levels: 10
+				}
+			]
+		}
+		{
+			id: "CB680DC809E4DF01"
+			x: 11.0d
+			y: 0.0d
+			icon: {
+				id: "draconicevolution:advanced_dislocator"
+				count: 1
+			}
+			dependencies: [
+				"3B82B0A09009404B"
+			]
+			tasks: [
+				{
+					id: "8D21BBF6FDE91AD9"
+					type: "item"
+					item: {
+						id: "minecraft:totem_of_undying"
+						count: 1
+					}
+					count: 2
+				}
+				{
+					id: "9110911AF038538C"
+					type: "item"
+					item: {
+						id: "draconicevolution:advanced_dislocator"
+						count: 1
+					}
+					count: 1
+				}
+				{
+					id: "A3EFBDDC1788764D"
+					type: "item"
+					item: {
+						id: "minecraft:ender_pearl"
+						count: 1
+					}
+					count: 16
+				}
+			]
+			rewards: [
+				{
+					id: "3786E46981970369"
+					type: "item"
+					item: {
+						id: "minecraft:golden_carrot"
+						count: 1
+					}
+					count: 32
+				}
+				{
+					id: "2750A527DF281A5D"
+					type: "xp_levels"
+					xp_levels: 10
+				}
+			]
+		}
+		{
+			id: "56A68AD992FAC9FD"
+			x: 8.25d
+			y: 3.0d
+			icon: {
+				id: "minecraft:end_crystal"
+				count: 1
+			}
+			dependencies: [
+				"4EC64D932C53D550"
+			]
+			tasks: [
+				{
+					id: "51742A3DDCA73378"
+					type: "checkmark"
+				}
+			]
+			rewards: [
+				{
+					id: "FDEDDA921EA69685"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+		}
+		{
+			id: "51908B1DD17D4CB6"
+			x: 13.75d
+			y: 1.5d
+			icon: {
+				id: "minecraft:end_portal_frame"
+				count: 1
+			}
+			size: 1.5d
+			dependencies: [
+				"3B82B0A09009404B"
+				"56A68AD992FAC9FD"
+			]
+			tasks: [
+				{
+					id: "EEAA86F0CD13A4A3"
+					type: "dimension"
+					dimension: "minecraft:the_end"
+				}
+			]
+			rewards: [
+				{
+					id: "3B5CBAB876DB4538"
+					type: "xp_levels"
+					xp_levels: 10
+				}
+			]
+		}
+		{
+			id: "5A241CE5D0BECCDA"
+			x: 16.5d
+			y: 1.5d
+			icon: {
+				id: "draconicevolution:chaos_shard"
+				count: 1
+			}
+			size: 2.5d
+			shape: "gear"
+			dependencies: [
+				"51908B1DD17D4CB6"
+			]
+			tasks: [
+				{
+					id: "D518559AF11BF3C0"
+					type: "checkmark"
+				}
+			]
+			rewards: [
+				{
+					id: "C1C8DAD8D3A50EED"
+					type: "loot"
+					table_id: "688F492DF36E9682"
+				}
+				{
+					id: "A958EE89930267B6"
+					type: "xp_levels"
+					xp_levels: 20
+				}
+			]
+		}
+		{
+			id: "EF4878BA75F6A16B"
+			x: 16.5d
+			y: 4.5d
+			icon: {
+				id: "minecraft:dragon_head"
+				count: 1
+			}
+			optional: true
+			dependencies: [
+				"51908B1DD17D4CB6"
+			]
+			tasks: [
+				{
+					id: "942E431A2B2CF3CF"
+					type: "kill"
+					entity: "draconicevolution:draconic_guardian"
+					value: 1
+				}
+			]
+			rewards: [
+				{
+					id: "E95913A28353B9CA"
+					type: "xp_levels"
+					xp_levels: 10
+				}
+			]
+		}
+		{
+			id: "EC79E8F0E3E0364C"
+			x: 20.25d
+			y: 1.5d
+			icon: {
+				id: "minecraft:dragon_egg"
+				count: 1
+			}
+			size: 3.0d
+			shape: "hexagon"
+			dependencies: [
+				"5A241CE5D0BECCDA"
+			]
+			tasks: [
+				{
+					id: "970EDF5F8FCE7BB5"
+					type: "checkmark"
+				}
+			]
+			rewards: [
+				{
+					id: "E7D0BE82880FFFC4"
+					type: "loot"
+					table_id: "578264AD654E114F"
+				}
+				{
+					id: "8AA24D8B83FA6BEB"
+					type: "xp_levels"
+					xp_levels: 50
+				}
+			]
+		}
+	]
+	images: [
+		{
+			id: "AB36EA83B570EE05"
+			image: "kronwerke:textures/quests/finale/title.png"
+			x: 3.2d
+			y: -3.0d
+			width: 6.4d
+			height: 1.6d
+			rotation: 0.0d
+			order: 1
+		}
+		{
+			id: "37CCAB25CFDD7CCA"
+			image: "kronwerke:textures/quests/finale/stage.png"
+			x: 1.67d
+			y: -1.6d
+			width: 3.34d
+			height: 0.55d
+			rotation: 0.0d
+			order: 1
+		}
+		{
+			id: "ED5E1001CA6669F3"
+			image: "kronwerke:textures/quests/finale/ready.png"
+			x: 9.98d
+			y: -1.4d
+			width: 4.77d
+			height: 0.9d
+			rotation: 0.0d
+			order: 1
+		}
+		{
+			id: "8509C4C8B3489253"
+			image: "kronwerke:textures/quests/finale/fight.png"
+			x: 15.02d
+			y: -1.4d
+			width: 3.65d
+			height: 0.9d
+			rotation: 0.0d
+			order: 1
+		}
+	]
+}

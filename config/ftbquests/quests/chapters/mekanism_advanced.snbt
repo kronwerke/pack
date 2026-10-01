@@ -1,0 +1,1183 @@
+{
+	id: "534F3C1C3A583494"
+	filename: "mekanism_advanced"
+	icon: {
+		id: "mekanism:purification_chamber"
+		count: 1
+	}
+	group: "AEAA9718BAF5A32A"
+	order_index: 19
+	default_quest_shape: "square"
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			id: "B4963D0F4E454E78"
+			x: 0.0d
+			y: 1.5d
+			icon: {
+				id: "mekanism:advanced_control_circuit"
+				count: 1
+			}
+			size: 2.0d
+			shape: "hexagon"
+			tasks: [
+				{
+					id: "E50FE5B947FC7D29"
+					type: "item"
+					item: {
+						id: "mekanism:advanced_control_circuit"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "0164F83BEA05C658"
+					type: "item"
+					item: {
+						id: "mekanism:alloy_infused"
+						count: 1
+					}
+					count: 8
+				}
+				{
+					id: "FD9D65EABA368C13"
+					type: "loot"
+					table_id: "BB5E855731D4F100"
+				}
+				{
+					id: "CC53CBD36FE18FE6"
+					type: "xp_levels"
+					xp_levels: 10
+				}
+			]
+		}
+		{
+			id: "CB7068DB0C72C3E9"
+			x: 2.75d
+			y: 0.0d
+			dependencies: [
+				"B4963D0F4E454E78"
+			]
+			tasks: [
+				{
+					id: "9B0AC9BAD4ADAF92"
+					type: "item"
+					item: {
+						id: "mekanism:advanced_control_circuit"
+						count: 1
+					}
+					count: 16
+				}
+			]
+			rewards: [
+				{
+					id: "78581F2297123649"
+					type: "item"
+					item: {
+						id: "mekanism:basic_control_circuit"
+						count: 1
+					}
+					count: 8
+				}
+				{
+					id: "299520E577EF2A94"
+					type: "item"
+					item: {
+						id: "mekanism:alloy_infused"
+						count: 1
+					}
+					count: 16
+				}
+			]
+		}
+		{
+			id: "064E85F64A2ECCFA"
+			x: 2.75d
+			y: 3.0d
+			icon: {
+				id: "mekanism:electrolytic_separator"
+				count: 1
+			}
+			dependencies: [
+				"B4963D0F4E454E78"
+			]
+			tasks: [
+				{
+					id: "3FFEFD45BEEB9CDD"
+					type: "item"
+					item: {
+						id: "mekanism:electrolytic_separator"
+						count: 1
+					}
+					count: 1
+				}
+				{
+					id: "9C85BEEC80BB01D4"
+					type: "item"
+					item: {
+						id: "mekanism:basic_pressurized_tube"
+						count: 1
+					}
+					count: 8
+				}
+			]
+			rewards: [
+				{
+					id: "AD60A4913C70A6A3"
+					type: "item"
+					item: {
+						id: "mekanism:basic_pressurized_tube"
+						count: 1
+					}
+					count: 8
+				}
+				{
+					id: "F2965CD104238642"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+		}
+		{
+			id: "2E46052B6824722C"
+			x: 5.25d
+			y: 1.5d
+			icon: {
+				id: "mekanism:purification_chamber"
+				count: 1
+			}
+			size: 1.75d
+			shape: "hexagon"
+			dependencies: [
+				"064E85F64A2ECCFA"
+			]
+			tasks: [
+				{
+					id: "E50B3FD2135BF4E3"
+					type: "item"
+					item: {
+						id: "mekanism:purification_chamber"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "B514CD05E0A55111"
+					type: "item"
+					item: {
+						id: "mekanism:raw_osmium"
+						count: 1
+					}
+					count: 32
+				}
+				{
+					id: "026EC1736EFEC85D"
+					type: "loot"
+					table_id: "BB5E855731D4F100"
+				}
+				{
+					id: "CCC91BCF46C56C8E"
+					type: "xp_levels"
+					xp_levels: 10
+				}
+			]
+		}
+		{
+			id: "A09257E165728EFA"
+			x: 7.75d
+			y: 1.5d
+			dependencies: [
+				"2E46052B6824722C"
+			]
+			tasks: [
+				{
+					id: "6F35AF97EF6BC290"
+					type: "item"
+					item: {
+						id: "mekanism:clump_iron"
+						count: 1
+					}
+					count: 16
+				}
+			]
+			rewards: [
+				{
+					id: "7267DB1D455FC2E7"
+					type: "item"
+					item: {
+						id: "minecraft:raw_iron"
+						count: 1
+					}
+					count: 32
+				}
+			]
+		}
+		{
+			id: "7779848ACD43C7BB"
+			x: 10.25d
+			y: 1.5d
+			dependencies: [
+				"A09257E165728EFA"
+			]
+			tasks: [
+				{
+					id: "8B790D1EE80B8F55"
+					type: "item"
+					item: {
+						id: "mekanism:dirty_dust_iron"
+						count: 1
+					}
+					count: 16
+				}
+			]
+			rewards: [
+				{
+					id: "D925E7F7A588441A"
+					type: "item"
+					item: {
+						id: "mekanism:enriched_carbon"
+						count: 1
+					}
+					count: 16
+				}
+			]
+		}
+		{
+			id: "031DD97B303EF35C"
+			x: 12.75d
+			y: 1.5d
+			icon: {
+				id: "mekanism:clump_gold"
+				count: 1
+			}
+			size: 2.0d
+			shape: "gear"
+			dependencies: [
+				"7779848ACD43C7BB"
+			]
+			tasks: [
+				{
+					id: "AFDE88200D044606"
+					type: "item"
+					item: {
+						id: "mekanism:clump_copper"
+						count: 1
+					}
+					count: 32
+				}
+				{
+					id: "E917B576FA670D72"
+					type: "item"
+					item: {
+						id: "mekanism:clump_gold"
+						count: 1
+					}
+					count: 16
+				}
+			]
+			rewards: [
+				{
+					id: "76D552E275E63C35"
+					type: "item"
+					item: {
+						id: "minecraft:raw_iron"
+						count: 1
+					}
+					count: 64
+				}
+				{
+					id: "BD5C972F3AC0549F"
+					type: "loot"
+					table_id: "6BD556482A471D58"
+				}
+				{
+					id: "3858CA3AD9E609DC"
+					type: "xp_levels"
+					xp_levels: 15
+				}
+			]
+		}
+		{
+			id: "58967A484BEC3E05"
+			x: 5.25d
+			y: 3.75d
+			optional: true
+			dependencies: [
+				"2E46052B6824722C"
+			]
+			tasks: [
+				{
+					id: "626DCECCBFF08EA4"
+					type: "item"
+					item: {
+						id: "mekanism:upgrade_chemical"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "F5E5FDBA27BBEF3A"
+					type: "item"
+					item: {
+						id: "mekanism:alloy_infused"
+						count: 1
+					}
+					count: 4
+				}
+			]
+		}
+		{
+			id: "CF6EA58FA88DA7AB"
+			x: 15.5d
+			y: 1.5d
+			icon: {
+				id: "mekanism:shard_iron"
+				count: 1
+			}
+			optional: true
+			dependencies: [
+				"031DD97B303EF35C"
+			]
+			tasks: [
+				{
+					id: "A41BAA08DCC47CEC"
+					type: "checkmark"
+				}
+			]
+			rewards: [
+				{
+					id: "2621BCE668A650C8"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+		}
+		{
+			id: "26EDB6B17D96E31E"
+			x: 0.0d
+			y: 7.5d
+			icon: {
+				id: "mekanism:enriched_diamond"
+				count: 1
+			}
+			dependencies: [
+				"B4963D0F4E454E78"
+			]
+			tasks: [
+				{
+					id: "1B7F31308EDF8027"
+					type: "item"
+					item: {
+						id: "mekanism:enriched_diamond"
+						count: 1
+					}
+					count: 4
+				}
+			]
+			rewards: [
+				{
+					id: "6A3A64A7D4871055"
+					type: "item"
+					item: {
+						id: "minecraft:diamond"
+						count: 1
+					}
+					count: 2
+				}
+				{
+					id: "3B1ADCC2BB6A25DD"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+		}
+		{
+			id: "5FD207C48096D020"
+			x: 2.5d
+			y: 6.5d
+			dependencies: [
+				"26EDB6B17D96E31E"
+			]
+			tasks: [
+				{
+					id: "5DAC1755315738B6"
+					type: "item"
+					item: {
+						id: "mekanism:alloy_reinforced"
+						count: 1
+					}
+					count: 8
+				}
+			]
+			rewards: [
+				{
+					id: "48F27E2B85484D00"
+					type: "item"
+					item: {
+						id: "mekanism:alloy_infused"
+						count: 1
+					}
+					count: 8
+				}
+				{
+					id: "525E88C49B64ABFA"
+					type: "loot"
+					table_id: "BB5E855731D4F100"
+				}
+			]
+		}
+		{
+			id: "4D2F7A3290E4A328"
+			x: 2.5d
+			y: 8.5d
+			icon: {
+				id: "mekanism:ingot_refined_obsidian"
+				count: 1
+			}
+			dependencies: [
+				"26EDB6B17D96E31E"
+			]
+			tasks: [
+				{
+					id: "DD0464BF3F98CF35"
+					type: "item"
+					item: {
+						id: "mekanism:dust_refined_obsidian"
+						count: 1
+					}
+					count: 8
+				}
+				{
+					id: "00C85DCB3C2B27F4"
+					type: "item"
+					item: {
+						id: "mekanism:ingot_refined_obsidian"
+						count: 1
+					}
+					count: 8
+				}
+			]
+			rewards: [
+				{
+					id: "549CBA8BBCD2858C"
+					type: "item"
+					item: {
+						id: "minecraft:obsidian"
+						count: 1
+					}
+					count: 16
+				}
+				{
+					id: "ED127AABDC48613F"
+					type: "loot"
+					table_id: "BB5E855731D4F100"
+				}
+				{
+					id: "28EA4FADEA9FBD23"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+		}
+		{
+			id: "3A16044EE4AB1568"
+			x: 5.0d
+			y: 7.5d
+			icon: {
+				id: "mekanism:alloy_atomic"
+				count: 1
+			}
+			size: 1.5d
+			shape: "hexagon"
+			dependencies: [
+				"5FD207C48096D020"
+				"4D2F7A3290E4A328"
+			]
+			tasks: [
+				{
+					id: "F2B19BBAE1911568"
+					type: "item"
+					item: {
+						id: "mekanism:alloy_atomic"
+						count: 1
+					}
+					count: 4
+				}
+			]
+			rewards: [
+				{
+					id: "EC3E2AC3DA7E2EC4"
+					type: "item"
+					item: {
+						id: "mekanism:alloy_reinforced"
+						count: 1
+					}
+					count: 4
+				}
+				{
+					id: "5FD4C35605C8D04A"
+					type: "loot"
+					table_id: "6BD556482A471D58"
+				}
+				{
+					id: "3563AD07F3830666"
+					type: "xp_levels"
+					xp_levels: 10
+				}
+			]
+		}
+		{
+			id: "9681668078CC3487"
+			x: 7.5d
+			y: 6.5d
+			icon: {
+				id: "mekanism:teleporter"
+				count: 1
+			}
+			dependencies: [
+				"3A16044EE4AB1568"
+			]
+			tasks: [
+				{
+					id: "B40385167801FCEC"
+					type: "item"
+					item: {
+						id: "mekanism:teleporter"
+						count: 1
+					}
+					count: 1
+				}
+				{
+					id: "6241877F6F26AC9F"
+					type: "item"
+					item: {
+						id: "mekanism:teleporter_frame"
+						count: 1
+					}
+					count: 13
+				}
+			]
+			rewards: [
+				{
+					id: "4AE74E498A1714C0"
+					type: "item"
+					item: {
+						id: "mekanism:ingot_refined_obsidian"
+						count: 1
+					}
+					count: 8
+				}
+				{
+					id: "5F11ED26F784A0C0"
+					type: "item"
+					item: {
+						id: "minecraft:ender_pearl"
+						count: 1
+					}
+					count: 4
+				}
+				{
+					id: "661AC97C7E8FA48A"
+					type: "xp_levels"
+					xp_levels: 10
+				}
+			]
+		}
+		{
+			id: "9794F3541B11A4F9"
+			x: 7.5d
+			y: 8.75d
+			icon: {
+				id: "mekanism:digital_miner"
+				count: 1
+			}
+			size: 1.75d
+			shape: "gear"
+			dependencies: [
+				"3A16044EE4AB1568"
+			]
+			tasks: [
+				{
+					id: "3CB1024BD06CB9B8"
+					type: "item"
+					item: {
+						id: "mekanism:digital_miner"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "1A97B758D9F90E71"
+					type: "item"
+					item: {
+						id: "mekanism:upgrade_speed"
+						count: 1
+					}
+					count: 2
+				}
+				{
+					id: "8828D9AD3C8EF832"
+					type: "loot"
+					table_id: "6BD556482A471D58"
+				}
+				{
+					id: "714B31BCBC489CF8"
+					type: "xp_levels"
+					xp_levels: 15
+				}
+			]
+		}
+		{
+			id: "698C4551585C1E96"
+			x: 10.25d
+			y: 7.5d
+			icon: {
+				id: "mekanism:advanced_tier_installer"
+				count: 1
+			}
+			size: 1.5d
+			shape: "hexagon"
+			dependencies: [
+				"2E46052B6824722C"
+			]
+			tasks: [
+				{
+					id: "B9C2798F52F4499D"
+					type: "item"
+					item: {
+						id: "mekanism:advanced_tier_installer"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "8425B188CD22A134"
+					type: "item"
+					item: {
+						id: "mekanism:advanced_control_circuit"
+						count: 1
+					}
+					count: 2
+				}
+				{
+					id: "00BE8B8D07724677"
+					type: "loot"
+					table_id: "BB5E855731D4F100"
+				}
+			]
+		}
+		{
+			id: "05C8A97E51E1DD37"
+			x: 12.75d
+			y: 6.5d
+			icon: {
+				id: "mekanism:advanced_purifying_factory"
+				count: 1
+			}
+			dependencies: [
+				"698C4551585C1E96"
+			]
+			tasks: [
+				{
+					id: "83CE68825C53FE6B"
+					type: "item"
+					item: {
+						id: "mekanism:advanced_purifying_factory"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "AA2937641E6DA440"
+					type: "item"
+					item: {
+						id: "minecraft:raw_gold"
+						count: 1
+					}
+					count: 32
+				}
+				{
+					id: "1A8D43F300DF14A5"
+					type: "loot"
+					table_id: "6BD556482A471D58"
+				}
+				{
+					id: "CDA031A074C4A39E"
+					type: "xp_levels"
+					xp_levels: 10
+				}
+			]
+		}
+		{
+			id: "E135C188C41A2A52"
+			x: 12.75d
+			y: 8.5d
+			icon: {
+				id: "mekanism:advanced_universal_cable"
+				count: 1
+			}
+			dependencies: [
+				"698C4551585C1E96"
+			]
+			tasks: [
+				{
+					id: "25FAB3E55C69307A"
+					type: "item"
+					item: {
+						id: "mekanism:advanced_universal_cable"
+						count: 1
+					}
+					count: 16
+				}
+				{
+					id: "FB2B5987032805B7"
+					type: "item"
+					item: {
+						id: "mekanism:advanced_logistical_transporter"
+						count: 1
+					}
+					count: 16
+				}
+			]
+			rewards: [
+				{
+					id: "D49EE4EB7A23DA73"
+					type: "item"
+					item: {
+						id: "mekanism:alloy_infused"
+						count: 1
+					}
+					count: 8
+				}
+			]
+		}
+		{
+			id: "03844516D73F8074"
+			x: 15.25d
+			y: 7.5d
+			optional: true
+			dependencies: [
+				"E135C188C41A2A52"
+			]
+			tasks: [
+				{
+					id: "77C5CE2EF4D1B9D7"
+					type: "item"
+					item: {
+						id: "mekanism:advanced_energy_cube"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "E7C005EB8E197B47"
+					type: "item"
+					item: {
+						id: "mekanism:energy_tablet"
+						count: 1
+					}
+					count: 2
+				}
+			]
+		}
+		{
+			id: "2CBACA26528A2779"
+			x: 0.0d
+			y: 13.0d
+			optional: true
+			tasks: [
+				{
+					id: "5FC99AD656CB25A9"
+					type: "item"
+					item: {
+						id: "mekanismgenerators:advanced_solar_generator"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "41E35A40720503AC"
+					type: "item"
+					item: {
+						id: "mekanismgenerators:solar_generator"
+						count: 1
+					}
+					count: 2
+				}
+				{
+					id: "3635AD353ACE932C"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+		}
+		{
+			id: "90B377D49F482D69"
+			x: 2.75d
+			y: 13.0d
+			icon: {
+				id: "mekanismgenerators:turbine_blade"
+				count: 1
+			}
+			dependencies: [
+				"B4963D0F4E454E78"
+			]
+			tasks: [
+				{
+					id: "3C27FC3925F17EBC"
+					type: "item"
+					item: {
+						id: "mekanismgenerators:turbine_rotor"
+						count: 1
+					}
+					count: 2
+				}
+				{
+					id: "44FB5C8492EA97F0"
+					type: "item"
+					item: {
+						id: "mekanismgenerators:turbine_blade"
+						count: 1
+					}
+					count: 4
+				}
+				{
+					id: "F5419E5301D58F07"
+					type: "item"
+					item: {
+						id: "mekanismgenerators:rotational_complex"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "B16385C9E436D271"
+					type: "item"
+					item: {
+						id: "mekanism:ingot_steel"
+						count: 1
+					}
+					count: 32
+				}
+			]
+		}
+		{
+			id: "C74FA4D9163B17A3"
+			x: 5.5d
+			y: 13.0d
+			icon: {
+				id: "mekanismgenerators:turbine_casing"
+				count: 1
+			}
+			size: 2.0d
+			shape: "gear"
+			dependencies: [
+				"90B377D49F482D69"
+			]
+			tasks: [
+				{
+					id: "F5BDE3E7F5466F49"
+					type: "item"
+					item: {
+						id: "mekanismgenerators:electromagnetic_coil"
+						count: 1
+					}
+					count: 1
+				}
+				{
+					id: "02971274E8732ED8"
+					type: "item"
+					item: {
+						id: "mekanismgenerators:turbine_valve"
+						count: 1
+					}
+					count: 2
+				}
+				{
+					id: "7693827818E5DD9A"
+					type: "item"
+					item: {
+						id: "mekanismgenerators:turbine_vent"
+						count: 1
+					}
+					count: 4
+				}
+				{
+					id: "631E062B02C15B3E"
+					type: "item"
+					item: {
+						id: "mekanism:pressure_disperser"
+						count: 1
+					}
+					count: 8
+				}
+			]
+			rewards: [
+				{
+					id: "FF4FD751804AAB62"
+					type: "item"
+					item: {
+						id: "mekanismgenerators:turbine_casing"
+						count: 1
+					}
+					count: 16
+				}
+				{
+					id: "40E4B314A233D77B"
+					type: "loot"
+					table_id: "6BD556482A471D58"
+				}
+				{
+					id: "15EB467DFFA4F92F"
+					type: "xp_levels"
+					xp_levels: 15
+				}
+			]
+		}
+		{
+			id: "44C48D8C04913A6E"
+			x: 10.25d
+			y: 13.0d
+			icon: {
+				id: "mekmm:cnc_stamper"
+				count: 1
+			}
+			dependencies: [
+				"698C4551585C1E96"
+			]
+			tasks: [
+				{
+					id: "2BB88FFEFBF1DD83"
+					type: "item"
+					item: {
+						id: "mekmm:cnc_stamper"
+						count: 1
+					}
+					count: 1
+				}
+				{
+					id: "6FFE1F2765EBA9E0"
+					type: "item"
+					item: {
+						id: "ae2:printed_silicon"
+						count: 1
+					}
+					count: 16
+				}
+			]
+			rewards: [
+				{
+					id: "3DA4194FA9C0D9DE"
+					type: "item"
+					item: {
+						id: "ae2:silicon"
+						count: 1
+					}
+					count: 16
+				}
+				{
+					id: "3FE40A5C1D43B587"
+					type: "loot"
+					table_id: "BB5E855731D4F100"
+				}
+				{
+					id: "0D5BBD004C7B0212"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+		}
+		{
+			id: "9CCE4F6E158FA081"
+			x: 10.25d
+			y: 16.5d
+			icon: {
+				id: "kronwerke:steel_core"
+				count: 1
+			}
+			size: 1.75d
+			shape: "gear"
+			dependencies: [
+				"44C48D8C04913A6E"
+			]
+			tasks: [
+				{
+					id: "99505E12F70FF304"
+					type: "item"
+					item: {
+						id: "kronwerke:steel_core"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "D600E6946257843E"
+					type: "loot"
+					table_id: "6BD556482A471D58"
+				}
+				{
+					id: "8DD2918EF7C5DBA9"
+					type: "xp_levels"
+					xp_levels: 10
+				}
+			]
+		}
+		{
+			id: "81C041B791510B65"
+			x: 13.25d
+			y: 16.5d
+			icon: {
+				id: "mekanism:ingot_steel"
+				count: 1
+			}
+			size: 2.5d
+			shape: "gear"
+			dependencies: [
+				"9CCE4F6E158FA081"
+			]
+			tasks: [
+				{
+					id: "4B39DF3C339796EB"
+					type: "item"
+					item: {
+						id: "mekanism:ingot_steel"
+						count: 1
+					}
+					count: 256
+				}
+				{
+					id: "8AE83A0BC8E57E1E"
+					type: "item"
+					item: {
+						id: "mekanism:advanced_control_circuit"
+						count: 1
+					}
+					count: 32
+				}
+			]
+			rewards: [
+				{
+					id: "AAD2A4D411DF0FDF"
+					type: "loot"
+					table_id: "6320E512778B48ED"
+				}
+				{
+					id: "A33AB85EE8E537C9"
+					type: "item"
+					item: {
+						id: "mekanism:advanced_control_circuit"
+						count: 1
+					}
+					count: 4
+				}
+				{
+					id: "2D0D5D3D986F4DE4"
+					type: "xp_levels"
+					xp_levels: 20
+				}
+			]
+		}
+	]
+	images: [
+		{
+			id: "6C41F82F3BF7E778"
+			image: "kronwerke:textures/quests/mekanism_advanced/title.png"
+			x: 8.43d
+			y: -3.0d
+			width: 16.86d
+			height: 1.6d
+			rotation: 0.0d
+			order: 1
+		}
+		{
+			id: "6AD576594EB32359"
+			image: "kronwerke:textures/quests/mekanism_advanced/stage.png"
+			x: 1.62d
+			y: -1.6d
+			width: 3.24d
+			height: 0.55d
+			rotation: 0.0d
+			order: 1
+		}
+		{
+			id: "7531E6C4FBBFF93F"
+			image: "kronwerke:textures/quests/mekanism_advanced/ores.png"
+			x: 8.12d
+			y: -0.4d
+			width: 6.25d
+			height: 0.9d
+			rotation: 0.0d
+			order: 1
+		}
+		{
+			id: "E59A2BF3FEAEAAEB"
+			image: "kronwerke:textures/quests/mekanism_advanced/obsidian.png"
+			x: 4.49d
+			y: 5.2d
+			width: 7.17d
+			height: 0.9d
+			rotation: 0.0d
+			order: 1
+		}
+		{
+			id: "94C9CDE7895C8DD7"
+			image: "kronwerke:textures/quests/mekanism_advanced/advanced.png"
+			x: 13.36d
+			y: 5.2d
+			width: 7.52d
+			height: 0.9d
+			rotation: 0.0d
+			order: 1
+		}
+		{
+			id: "F50D7567180CA29F"
+			image: "kronwerke:textures/quests/mekanism_advanced/power.png"
+			x: 5.52d
+			y: 11.2d
+			width: 4.24d
+			height: 0.9d
+			rotation: 0.0d
+			order: 1
+		}
+		{
+			id: "FDC881DC9C234523"
+			image: "kronwerke:textures/quests/mekanism_advanced/mekmm.png"
+			x: 11.88d
+			y: 11.2d
+			width: 4.56d
+			height: 0.9d
+			rotation: 0.0d
+			order: 1
+		}
+		{
+			id: "0586B086C8161346"
+			image: "kronwerke:textures/quests/mekanism_advanced/goal.png"
+			x: 10.93d
+			y: 14.8d
+			width: 2.67d
+			height: 0.9d
+			rotation: 0.0d
+			order: 1
+		}
+	]
+}

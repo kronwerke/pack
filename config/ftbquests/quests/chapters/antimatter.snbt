@@ -1,0 +1,886 @@
+{
+	id: "AE6E4B36D29DCB35"
+	filename: "antimatter"
+	icon: {
+		id: "mekanism:pellet_antimatter"
+		count: 1
+	}
+	group: "AEAA9718BAF5A32A"
+	order_index: 43
+	default_quest_shape: "square"
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			id: "E0F8558625071230"
+			x: 0.0d
+			y: 1.5d
+			icon: {
+				id: "mekanismgenerators:fission_reactor_casing"
+				count: 1
+			}
+			size: 2.0d
+			shape: "hexagon"
+			tasks: [
+				{
+					id: "CE1AD9F592D6BB48"
+					type: "item"
+					item: {
+						id: "mekanismgenerators:fission_reactor_casing"
+						count: 1
+					}
+					count: 16
+				}
+			]
+			rewards: [
+				{
+					id: "DB14D758D01230AB"
+					type: "item"
+					item: {
+						id: "mekanism:ingot_lead"
+						count: 1
+					}
+					count: 32
+				}
+				{
+					id: "85EE2B54E20A8EF6"
+					type: "loot"
+					table_id: "688F492DF36E9682"
+				}
+				{
+					id: "47DE55F7EAA61A27"
+					type: "xp_levels"
+					xp_levels: 10
+				}
+			]
+		}
+		{
+			id: "634F1686C67FA8D3"
+			x: 2.75d
+			y: 0.0d
+			icon: {
+				id: "mekanism:isotopic_centrifuge"
+				count: 1
+			}
+			dependencies: [
+				"E0F8558625071230"
+			]
+			tasks: [
+				{
+					id: "69A3CB2F7ADF553C"
+					type: "item"
+					item: {
+						id: "mekanism:isotopic_centrifuge"
+						count: 1
+					}
+					count: 1
+				}
+				{
+					id: "1215FA12D4AFF42D"
+					type: "item"
+					item: {
+						id: "mekanism:chemical_dissolution_chamber"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "E8B0598BDC4E5222"
+					type: "item"
+					item: {
+						id: "mekanism:yellow_cake_uranium"
+						count: 1
+					}
+					count: 16
+				}
+				{
+					id: "60F24F26A09415CD"
+					type: "xp_levels"
+					xp_levels: 10
+				}
+			]
+		}
+		{
+			id: "33FD84871F042818"
+			x: 2.75d
+			y: 3.0d
+			icon: {
+				id: "mekanismgenerators:fission_fuel_assembly"
+				count: 1
+			}
+			dependencies: [
+				"E0F8558625071230"
+			]
+			tasks: [
+				{
+					id: "5909311D2F1A677B"
+					type: "item"
+					item: {
+						id: "mekanismgenerators:fission_fuel_assembly"
+						count: 1
+					}
+					count: 4
+				}
+				{
+					id: "ECC871A93ABE60AD"
+					type: "item"
+					item: {
+						id: "mekanismgenerators:control_rod_assembly"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "167BFFBB216EF5EB"
+					type: "item"
+					item: {
+						id: "mekanism:ingot_steel"
+						count: 1
+					}
+					count: 32
+				}
+			]
+		}
+		{
+			id: "E3FDC94071DCFD69"
+			x: 5.5d
+			y: 1.5d
+			icon: {
+				id: "mekanismgenerators:fission_reactor_port"
+				count: 1
+			}
+			size: 2.0d
+			shape: "gear"
+			dependencies: [
+				"634F1686C67FA8D3"
+				"33FD84871F042818"
+			]
+			tasks: [
+				{
+					id: "C2350AD2E8218B34"
+					type: "item"
+					item: {
+						id: "mekanismgenerators:fission_reactor_port"
+						count: 1
+					}
+					count: 4
+				}
+			]
+			rewards: [
+				{
+					id: "4FEBFBC26545C373"
+					type: "item"
+					item: {
+						id: "mekanismgenerators:fission_reactor_casing"
+						count: 1
+					}
+					count: 16
+				}
+				{
+					id: "13F15DD68C29550A"
+					type: "loot"
+					table_id: "688F492DF36E9682"
+				}
+				{
+					id: "3A950577B46BC5C8"
+					type: "xp_levels"
+					xp_levels: 20
+				}
+			]
+		}
+		{
+			id: "E7BAC4745A5B11D3"
+			x: 5.5d
+			y: 4.5d
+			icon: {
+				id: "mekanismgenerators:fission_reactor_logic_adapter"
+				count: 1
+			}
+			dependencies: [
+				"E3FDC94071DCFD69"
+			]
+			tasks: [
+				{
+					id: "5C5BD651023BABCE"
+					type: "item"
+					item: {
+						id: "mekanismgenerators:fission_reactor_logic_adapter"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "C8F37CA9BC0825DB"
+					type: "item"
+					item: {
+						id: "minecraft:redstone_block"
+						count: 1
+					}
+					count: 8
+				}
+				{
+					id: "F1D49A24ABD7DC3F"
+					type: "xp_levels"
+					xp_levels: 10
+				}
+			]
+		}
+		{
+			id: "69519058384B590D"
+			x: 2.75d
+			y: 6.0d
+			icon: {
+				id: "mekanism:geiger_counter"
+				count: 1
+			}
+			optional: true
+			dependencies: [
+				"E7BAC4745A5B11D3"
+			]
+			tasks: [
+				{
+					id: "66D9989A1C45B998"
+					type: "item"
+					item: {
+						id: "mekanism:geiger_counter"
+						count: 1
+					}
+					count: 1
+				}
+				{
+					id: "AF53928DCC57904F"
+					type: "item"
+					item: {
+						id: "mekanism:radioactive_waste_barrel"
+						count: 1
+					}
+					count: 2
+				}
+			]
+			rewards: [
+				{
+					id: "3A815857580A00DA"
+					type: "item"
+					item: {
+						id: "mekanism:hazmat_mask"
+						count: 1
+					}
+					count: 1
+				}
+				{
+					id: "9B78AA47E9382B3A"
+					type: "item"
+					item: {
+						id: "mekanism:hazmat_gown"
+						count: 1
+					}
+					count: 1
+				}
+			]
+		}
+		{
+			id: "AD09AA1B102B1CA6"
+			x: 8.25d
+			y: 1.5d
+			icon: {
+				id: "mekanism:solar_neutron_activator"
+				count: 1
+			}
+			dependencies: [
+				"E3FDC94071DCFD69"
+			]
+			tasks: [
+				{
+					id: "171FAAA6C0C3AC88"
+					type: "item"
+					item: {
+						id: "mekanism:solar_neutron_activator"
+						count: 1
+					}
+					count: 4
+				}
+			]
+			rewards: [
+				{
+					id: "1959D18CEC42ACAE"
+					type: "item"
+					item: {
+						id: "mekanism:hdpe_sheet"
+						count: 1
+					}
+					count: 8
+				}
+				{
+					id: "8E57C8DE20BCA4B9"
+					type: "xp_levels"
+					xp_levels: 10
+				}
+			]
+		}
+		{
+			id: "12CBF9FB64E02066"
+			x: 11.0d
+			y: 0.0d
+			icon: {
+				id: "mekanism:pellet_polonium"
+				count: 1
+			}
+			dependencies: [
+				"AD09AA1B102B1CA6"
+			]
+			tasks: [
+				{
+					id: "3CBC21A259B59A37"
+					type: "item"
+					item: {
+						id: "mekanism:pellet_polonium"
+						count: 1
+					}
+					count: 8
+				}
+			]
+			rewards: [
+				{
+					id: "F9F078BB68C6857E"
+					type: "item"
+					item: {
+						id: "mekanism:dust_fluorite"
+						count: 1
+					}
+					count: 16
+				}
+				{
+					id: "282020A89ECD119B"
+					type: "xp_levels"
+					xp_levels: 10
+				}
+			]
+		}
+		{
+			id: "ACD76CF6A51A5ABE"
+			x: 11.0d
+			y: 3.0d
+			icon: {
+				id: "mekanism:pellet_plutonium"
+				count: 1
+			}
+			dependencies: [
+				"AD09AA1B102B1CA6"
+			]
+			tasks: [
+				{
+					id: "08E8DF1E91245561"
+					type: "item"
+					item: {
+						id: "mekanism:pellet_plutonium"
+						count: 1
+					}
+					count: 4
+				}
+			]
+			rewards: [
+				{
+					id: "2763D92E12C42FC2"
+					type: "item"
+					item: {
+						id: "mekanism:dust_fluorite"
+						count: 1
+					}
+					count: 16
+				}
+				{
+					id: "B767C87120BC396A"
+					type: "xp_levels"
+					xp_levels: 10
+				}
+			]
+		}
+		{
+			id: "8C99E43E9EEE0329"
+			x: 13.75d
+			y: 3.0d
+			icon: {
+				id: "mekanism:sps_casing"
+				count: 1
+			}
+			dependencies: [
+				"12CBF9FB64E02066"
+				"ACD76CF6A51A5ABE"
+			]
+			tasks: [
+				{
+					id: "1C22EB7BE2B010AA"
+					type: "item"
+					item: {
+						id: "mekanism:sps_casing"
+						count: 1
+					}
+					count: 8
+				}
+				{
+					id: "295E5689A665EAB8"
+					type: "item"
+					item: {
+						id: "mekanism:sps_port"
+						count: 1
+					}
+					count: 2
+				}
+			]
+			rewards: [
+				{
+					id: "771792E0E711660E"
+					type: "item"
+					item: {
+						id: "mekanism:hdpe_sheet"
+						count: 1
+					}
+					count: 16
+				}
+				{
+					id: "3BD6A57860D0FFB7"
+					type: "xp_levels"
+					xp_levels: 10
+				}
+			]
+		}
+		{
+			id: "4463E9D915FF277A"
+			x: 13.75d
+			y: 0.0d
+			icon: {
+				id: "mekanism:supercharged_coil"
+				count: 1
+			}
+			dependencies: [
+				"12CBF9FB64E02066"
+			]
+			tasks: [
+				{
+					id: "2CF400D6736EB0A3"
+					type: "item"
+					item: {
+						id: "mekanism:supercharged_coil"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "92B6937307724857"
+					type: "item"
+					item: {
+						id: "mekanism:ultimate_control_circuit"
+						count: 1
+					}
+					count: 2
+				}
+				{
+					id: "11FA61C247995DEC"
+					type: "xp_levels"
+					xp_levels: 10
+				}
+			]
+		}
+		{
+			id: "021FA56ECD84E569"
+			x: 16.5d
+			y: 1.5d
+			icon: {
+				id: "mekanism:sps_port"
+				count: 1
+			}
+			size: 2.0d
+			shape: "gear"
+			dependencies: [
+				"8C99E43E9EEE0329"
+				"4463E9D915FF277A"
+			]
+			tasks: [
+				{
+					id: "0E874FDBC3E8DB4E"
+					type: "checkmark"
+				}
+			]
+			rewards: [
+				{
+					id: "A7B973AF2032D131"
+					type: "loot"
+					table_id: "688F492DF36E9682"
+				}
+				{
+					id: "92F36584066D97FB"
+					type: "xp_levels"
+					xp_levels: 20
+				}
+			]
+		}
+		{
+			id: "42759E7E9C236B7C"
+			x: 19.25d
+			y: 1.5d
+			icon: {
+				id: "mekanism:pellet_antimatter"
+				count: 1
+			}
+			dependencies: [
+				"021FA56ECD84E569"
+			]
+			tasks: [
+				{
+					id: "5069EE81E259A6AC"
+					type: "item"
+					item: {
+						id: "mekanism:pellet_antimatter"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "97876F6B4C51F95A"
+					type: "loot"
+					table_id: "688F492DF36E9682"
+				}
+				{
+					id: "900FD2C83E603FAC"
+					type: "xp_levels"
+					xp_levels: 20
+				}
+			]
+		}
+		{
+			id: "4DFC4452A45FBEC6"
+			x: 22.0d
+			y: 0.0d
+			icon: {
+				id: "mekanism:antiprotonic_nucleosynthesizer"
+				count: 1
+			}
+			optional: true
+			dependencies: [
+				"42759E7E9C236B7C"
+			]
+			tasks: [
+				{
+					id: "990107C013B01ACC"
+					type: "item"
+					item: {
+						id: "mekanism:antiprotonic_nucleosynthesizer"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "405D7C0D5EC3697E"
+					type: "item"
+					item: {
+						id: "mekanism:alloy_atomic"
+						count: 1
+					}
+					count: 8
+				}
+				{
+					id: "4F1D7A8F6046A4EF"
+					type: "xp_levels"
+					xp_levels: 15
+				}
+			]
+		}
+		{
+			id: "250B190B1B98A9CF"
+			x: 22.0d
+			y: 3.0d
+			icon: {
+				id: "mekmm:replicator"
+				count: 1
+			}
+			optional: true
+			dependencies: [
+				"42759E7E9C236B7C"
+			]
+			tasks: [
+				{
+					id: "41DFC375F41F5477"
+					type: "item"
+					item: {
+						id: "mekmm:replicator"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "072D3A2F06E000B7"
+					type: "xp_levels"
+					xp_levels: 15
+				}
+			]
+		}
+		{
+			id: "9347183F57D71512"
+			x: 19.25d
+			y: 5.0d
+			icon: {
+				id: "mekanism:pellet_antimatter"
+				count: 1
+			}
+			size: 2.5d
+			shape: "gear"
+			dependencies: [
+				"42759E7E9C236B7C"
+			]
+			tasks: [
+				{
+					id: "0A8DBF50DB632144"
+					type: "item"
+					item: {
+						id: "mekanism:pellet_antimatter"
+						count: 1
+					}
+					count: 4
+				}
+			]
+			rewards: [
+				{
+					id: "864E876968ABC5C8"
+					type: "loot"
+					table_id: "578264AD654E114F"
+				}
+				{
+					id: "2716BD1D0C8479A8"
+					type: "xp_levels"
+					xp_levels: 30
+				}
+			]
+		}
+		{
+			id: "10674BCB83B73A35"
+			x: 8.25d
+			y: 8.5d
+			icon: {
+				id: "megacells:cell_component_16m"
+				count: 1
+			}
+			tasks: [
+				{
+					id: "D0FA4F7DF0994B34"
+					type: "item"
+					item: {
+						id: "megacells:cell_component_16m"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "84FCD3854F455B64"
+					type: "item"
+					item: {
+						id: "megacells:accumulation_processor"
+						count: 1
+					}
+					count: 4
+				}
+				{
+					id: "4172C786E0D92832"
+					type: "xp_levels"
+					xp_levels: 10
+				}
+			]
+		}
+		{
+			id: "00FC0C3B2554BEF2"
+			x: 11.0d
+			y: 8.5d
+			icon: {
+				id: "megacells:item_storage_cell_256m"
+				count: 1
+			}
+			optional: true
+			dependencies: [
+				"10674BCB83B73A35"
+			]
+			tasks: [
+				{
+					id: "1E2A70A83A283746"
+					type: "item"
+					item: {
+						id: "megacells:item_storage_cell_256m"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "E1941A2875A37235"
+					type: "xp_levels"
+					xp_levels: 15
+				}
+			]
+		}
+		{
+			id: "32848B904B06B075"
+			x: 8.25d
+			y: 11.5d
+			icon: {
+				id: "megacells:bulk_item_cell"
+				count: 1
+			}
+			optional: true
+			dependencies: [
+				"10674BCB83B73A35"
+			]
+			tasks: [
+				{
+					id: "0055B34856FB37CC"
+					type: "item"
+					item: {
+						id: "megacells:bulk_item_cell"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "05E13F6689317D50"
+					type: "item"
+					item: {
+						id: "ae2:sky_dust"
+						count: 1
+					}
+					count: 16
+				}
+				{
+					id: "90DC4BE5C2D0D634"
+					type: "xp_levels"
+					xp_levels: 10
+				}
+			]
+		}
+		{
+			id: "C41773C1B4BF6436"
+			x: 11.0d
+			y: 11.5d
+			icon: {
+				id: "advanced_ae:quantum_core"
+				count: 1
+			}
+			optional: true
+			dependencies: [
+				"10674BCB83B73A35"
+			]
+			tasks: [
+				{
+					id: "847BDB30E5C161A3"
+					type: "item"
+					item: {
+						id: "advanced_ae:quantum_core"
+						count: 1
+					}
+					count: 1
+				}
+				{
+					id: "CCBC2F8F7C725B42"
+					type: "item"
+					item: {
+						id: "advanced_ae:quantum_structure"
+						count: 1
+					}
+					count: 16
+				}
+			]
+			rewards: [
+				{
+					id: "8C8B69C4C878C244"
+					type: "item"
+					item: {
+						id: "ae2:singularity"
+						count: 1
+					}
+					count: 4
+				}
+				{
+					id: "3FD1C296F3D8C2A8"
+					type: "xp_levels"
+					xp_levels: 15
+				}
+			]
+		}
+	]
+	images: [
+		{
+			id: "3EDA705FD5C04A58"
+			image: "kronwerke:textures/quests/antimatter/title.png"
+			x: 7.05d
+			y: -3.0d
+			width: 14.1d
+			height: 1.6d
+			rotation: 0.0d
+			order: 1
+		}
+		{
+			id: "3DC1198D00BF6745"
+			image: "kronwerke:textures/quests/antimatter/stage.png"
+			x: 1.67d
+			y: -1.6d
+			width: 3.34d
+			height: 0.55d
+			rotation: 0.0d
+			order: 1
+		}
+		{
+			id: "FF6B5C6F10E4BB8D"
+			image: "kronwerke:textures/quests/antimatter/waste.png"
+			x: 9.14d
+			y: -1.4d
+			width: 3.08d
+			height: 0.9d
+			rotation: 0.0d
+			order: 1
+		}
+		{
+			id: "757018BBA9BAF018"
+			image: "kronwerke:textures/quests/antimatter/sps.png"
+			x: 14.52d
+			y: -1.4d
+			width: 2.64d
+			height: 0.9d
+			rotation: 0.0d
+			order: 1
+		}
+		{
+			id: "E82DE93D94B2D9ED"
+			image: "kronwerke:textures/quests/antimatter/use.png"
+			x: 22.47d
+			y: -1.4d
+			width: 7.34d
+			height: 0.9d
+			rotation: 0.0d
+			order: 1
+		}
+		{
+			id: "B8696D5719E30CFD"
+			image: "kronwerke:textures/quests/antimatter/millions.png"
+			x: 9.82d
+			y: 6.9d
+			width: 4.45d
+			height: 0.9d
+			rotation: 0.0d
+			order: 1
+		}
+	]
+}

@@ -1,0 +1,874 @@
+{
+	id: "7C0EABBBC134CBB9"
+	filename: "malum"
+	icon: {
+		id: "malum:spirit_altar"
+		count: 1
+	}
+	group: "03203A1312E25E36"
+	order_index: 29
+	default_quest_shape: "circle"
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			id: "39D2C35E7815A9C3"
+			x: 0.0d
+			y: 0.0d
+			icon: {
+				id: "malum:encyclopedia_arcana"
+				count: 1
+			}
+			size: 2.0d
+			shape: "hexagon"
+			tasks: [
+				{
+					id: "9A272239381A2251"
+					type: "item"
+					item: {
+						id: "malum:encyclopedia_arcana"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "2180A9AB8C847F75"
+					type: "item"
+					item: {
+						id: "malum:raw_soulstone"
+						count: 1
+					}
+					count: 8
+				}
+				{
+					id: "A255AFAC5D45BCE4"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+		}
+		{
+			id: "E6FDEAE8FE6F38F3"
+			x: 2.5d
+			y: -1.0d
+			icon: {
+				id: "malum:refined_soulstone"
+				count: 1
+			}
+			dependencies: [
+				"39D2C35E7815A9C3"
+			]
+			tasks: [
+				{
+					id: "FD0CB24F4C80BF7A"
+					type: "item"
+					item: {
+						id: "malum:refined_soulstone"
+						count: 1
+					}
+					count: 32
+				}
+			]
+			rewards: [
+				{
+					id: "5700785AE1AD46EA"
+					type: "item"
+					item: {
+						id: "malum:raw_soulstone"
+						count: 1
+					}
+					count: 16
+				}
+			]
+		}
+		{
+			id: "CA657D4C208E284E"
+			x: 2.5d
+			y: 1.2d
+			icon: {
+				id: "malum:runewood_sapling"
+				count: 1
+			}
+			dependencies: [
+				"39D2C35E7815A9C3"
+			]
+			tasks: [
+				{
+					id: "C7C8951AB3DABD78"
+					type: "item"
+					item: {
+						id: "malum:runewood_log"
+						count: 1
+					}
+					count: 16
+				}
+			]
+			rewards: [
+				{
+					id: "F3D186B00150F269"
+					type: "item"
+					item: {
+						id: "malum:runewood_sapling"
+						count: 1
+					}
+					count: 4
+				}
+			]
+		}
+		{
+			id: "E1F768CC20126B4C"
+			x: 4.5d
+			y: -1.0d
+			icon: {
+				id: "malum:crude_scythe"
+				count: 1
+			}
+			dependencies: [
+				"E6FDEAE8FE6F38F3"
+			]
+			tasks: [
+				{
+					id: "DBB8B81FF6F15F32"
+					type: "item"
+					item: {
+						id: "malum:crude_scythe"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "F61B4EECF97DC7CC"
+					type: "item"
+					item: {
+						id: "minecraft:iron_ingot"
+						count: 1
+					}
+					count: 4
+				}
+				{
+					id: "22B002B7AD7090AB"
+					type: "xp_levels"
+					xp_levels: 3
+				}
+			]
+		}
+		{
+			id: "D0F64B61EF46DCDC"
+			x: 6.5d
+			y: 0.0d
+			icon: {
+				id: "malum:arcane_spirit"
+				count: 1
+			}
+			dependencies: [
+				"E1F768CC20126B4C"
+			]
+			tasks: [
+				{
+					id: "7A28069F628991D8"
+					type: "item"
+					item: {
+						id: "malum:sacred_spirit"
+						count: 1
+					}
+					count: 8
+				}
+				{
+					id: "E448E0A2F139D422"
+					type: "item"
+					item: {
+						id: "malum:wicked_spirit"
+						count: 1
+					}
+					count: 8
+				}
+				{
+					id: "0CD0103BA0C63E7C"
+					type: "item"
+					item: {
+						id: "malum:arcane_spirit"
+						count: 1
+					}
+					count: 8
+				}
+			]
+			rewards: [
+				{
+					id: "F010ADAF814F6C3C"
+					type: "item"
+					item: {
+						id: "minecraft:gunpowder"
+						count: 1
+					}
+					count: 8
+				}
+				{
+					id: "B5FCEF7CFD5AF5E9"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+		}
+		{
+			id: "2FB85D1B934FD6D2"
+			x: 8.7d
+			y: 0.0d
+			icon: {
+				id: "malum:spirit_altar"
+				count: 1
+			}
+			size: 1.5d
+			shape: "diamond"
+			dependencies: [
+				"D0F64B61EF46DCDC"
+				"CA657D4C208E284E"
+			]
+			tasks: [
+				{
+					id: "3764C254C3CA8451"
+					type: "item"
+					item: {
+						id: "malum:spirit_altar"
+						count: 1
+					}
+					count: 1
+				}
+				{
+					id: "00B54BA9CB0DC8F1"
+					type: "item"
+					item: {
+						id: "malum:runewood_item_stand"
+						count: 1
+					}
+					count: 4
+				}
+			]
+			rewards: [
+				{
+					id: "C48AB1B74C5926BA"
+					type: "item"
+					item: {
+						id: "malum:runewood_planks"
+						count: 1
+					}
+					count: 16
+				}
+				{
+					id: "4159ECE625284BE2"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+		}
+		{
+			id: "398BFF9BF8A70355"
+			x: 0.5d
+			y: 5.5d
+			icon: {
+				id: "malum:hex_ash"
+				count: 1
+			}
+			dependencies: [
+				"2FB85D1B934FD6D2"
+			]
+			tasks: [
+				{
+					id: "68607E8A9D44FF23"
+					type: "item"
+					item: {
+						id: "malum:hex_ash"
+						count: 1
+					}
+					count: 16
+				}
+			]
+			rewards: [
+				{
+					id: "B271EA023878ACE5"
+					type: "item"
+					item: {
+						id: "minecraft:gunpowder"
+						count: 1
+					}
+					count: 16
+				}
+			]
+		}
+		{
+			id: "9446C4E82E2EEF4A"
+			x: 2.5d
+			y: 5.5d
+			icon: {
+				id: "malum:hallowed_gold_ingot"
+				count: 1
+			}
+			dependencies: [
+				"398BFF9BF8A70355"
+			]
+			tasks: [
+				{
+					id: "9AD9B3E4121B1277"
+					type: "item"
+					item: {
+						id: "malum:hallowed_gold_ingot"
+						count: 1
+					}
+					count: 4
+				}
+			]
+			rewards: [
+				{
+					id: "BA22D066B38A52A7"
+					type: "item"
+					item: {
+						id: "minecraft:quartz"
+						count: 1
+					}
+					count: 16
+				}
+				{
+					id: "5AA6A6430C166EAD"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+		}
+		{
+			id: "66DFF95BF66289DB"
+			x: 2.5d
+			y: 7.7d
+			icon: {
+				id: "malum:spirit_jar"
+				count: 1
+			}
+			optional: true
+			dependencies: [
+				"9446C4E82E2EEF4A"
+			]
+			tasks: [
+				{
+					id: "38553C07C6AF1BEC"
+					type: "item"
+					item: {
+						id: "malum:spirit_jar"
+						count: 1
+					}
+					count: 4
+				}
+			]
+			rewards: [
+				{
+					id: "F28B9AD9D77E49EC"
+					type: "item"
+					item: {
+						id: "minecraft:glass"
+						count: 1
+					}
+					count: 8
+				}
+			]
+		}
+		{
+			id: "BEFF84C54AFE6D05"
+			x: 4.7d
+			y: 6.6d
+			icon: {
+				id: "malum:soul_stained_steel_ingot"
+				count: 1
+			}
+			size: 1.75d
+			shape: "diamond"
+			dependencies: [
+				"398BFF9BF8A70355"
+				"E6FDEAE8FE6F38F3"
+			]
+			tasks: [
+				{
+					id: "F06FC1AD1EC9136D"
+					type: "item"
+					item: {
+						id: "malum:soul_stained_steel_ingot"
+						count: 1
+					}
+					count: 8
+				}
+			]
+			rewards: [
+				{
+					id: "7AC7F1805FC91E4F"
+					type: "loot"
+					table_id: "6BD556482A471D58"
+				}
+				{
+					id: "02815AFC669FEFD0"
+					type: "xp_levels"
+					xp_levels: 10
+				}
+			]
+		}
+		{
+			id: "FEE42153BDFA1EEB"
+			x: 6.9d
+			y: 5.5d
+			icon: {
+				id: "malum:soul_stained_steel_scythe"
+				count: 1
+			}
+			optional: true
+			dependencies: [
+				"BEFF84C54AFE6D05"
+			]
+			tasks: [
+				{
+					id: "BE7485FFDD00D6A3"
+					type: "item"
+					item: {
+						id: "malum:soul_stained_steel_scythe"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "961977A05FE7AA4C"
+					type: "item"
+					item: {
+						id: "malum:earthen_spirit"
+						count: 1
+					}
+					count: 16
+				}
+				{
+					id: "D4DA073439372E2B"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+		}
+		{
+			id: "369CD8475322E3E0"
+			x: 0.5d
+			y: 11.5d
+			icon: {
+				id: "malum:twisted_rock"
+				count: 1
+			}
+			dependencies: [
+				"398BFF9BF8A70355"
+			]
+			tasks: [
+				{
+					id: "5450F48A816DE252"
+					type: "item"
+					item: {
+						id: "malum:twisted_rock"
+						count: 1
+					}
+					count: 16
+				}
+				{
+					id: "5BE1C7F88DCBC83B"
+					type: "item"
+					item: {
+						id: "malum:tainted_rock"
+						count: 1
+					}
+					count: 16
+				}
+			]
+			rewards: [
+				{
+					id: "A4EF4E58701B0741"
+					type: "item"
+					item: {
+						id: "minecraft:stone"
+						count: 1
+					}
+					count: 64
+				}
+			]
+		}
+		{
+			id: "2C30C1242203AFE6"
+			x: 2.5d
+			y: 11.5d
+			icon: {
+				id: "malum:spirit_crucible"
+				count: 1
+			}
+			dependencies: [
+				"369CD8475322E3E0"
+			]
+			tasks: [
+				{
+					id: "79DBB40018AE4844"
+					type: "item"
+					item: {
+						id: "malum:spirit_crucible"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "8091F865BD449299"
+					type: "item"
+					item: {
+						id: "malum:infernal_spirit"
+						count: 1
+					}
+					count: 8
+				}
+				{
+					id: "C12FD03BACA89362"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+		}
+		{
+			id: "E2F0B504A60EC51D"
+			x: 0.5d
+			y: 13.7d
+			icon: {
+				id: "malum:alchemical_calx"
+				count: 1
+			}
+			dependencies: [
+				"369CD8475322E3E0"
+			]
+			tasks: [
+				{
+					id: "8C04DA86B03FEFA5"
+					type: "item"
+					item: {
+						id: "malum:alchemical_calx"
+						count: 1
+					}
+					count: 4
+				}
+			]
+			rewards: [
+				{
+					id: "C723F056D7812063"
+					type: "item"
+					item: {
+						id: "minecraft:clay_ball"
+						count: 1
+					}
+					count: 16
+				}
+			]
+		}
+		{
+			id: "2345AFD00341532D"
+			x: 4.5d
+			y: 12.6d
+			icon: {
+				id: "malum:alchemical_impetus"
+				count: 1
+			}
+			dependencies: [
+				"2C30C1242203AFE6"
+				"E2F0B504A60EC51D"
+			]
+			tasks: [
+				{
+					id: "B8DF6B06F753F007"
+					type: "item"
+					item: {
+						id: "malum:alchemical_impetus"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "E41CD04CE821EFFA"
+					type: "item"
+					item: {
+						id: "malum:arcane_spirit"
+						count: 1
+					}
+					count: 8
+				}
+				{
+					id: "40A4D6D2636CB87A"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+		}
+		{
+			id: "C30880A06D01CC32"
+			x: 6.7d
+			y: 12.6d
+			icon: {
+				id: "malum:iron_node"
+				count: 1
+			}
+			optional: true
+			dependencies: [
+				"2345AFD00341532D"
+			]
+			tasks: [
+				{
+					id: "607C255E2D934ED6"
+					type: "item"
+					item: {
+						id: "malum:iron_node"
+						count: 1
+					}
+					count: 6
+				}
+			]
+			rewards: [
+				{
+					id: "936726C170AD761E"
+					type: "item"
+					item: {
+						id: "minecraft:raw_iron"
+						count: 1
+					}
+					count: 16
+				}
+				{
+					id: "1AEF456BFD2083E4"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+		}
+		{
+			id: "F0375037881AC816"
+			x: 11.0d
+			y: 5.5d
+			icon: {
+				id: "malum:runewood_totem_base"
+				count: 1
+			}
+			dependencies: [
+				"9446C4E82E2EEF4A"
+			]
+			tasks: [
+				{
+					id: "9B99001E946F7D7A"
+					type: "item"
+					item: {
+						id: "malum:runewood_totem_base"
+						count: 1
+					}
+					count: 4
+				}
+			]
+			rewards: [
+				{
+					id: "E1BFC8937EF83206"
+					type: "item"
+					item: {
+						id: "malum:runewood_log"
+						count: 1
+					}
+					count: 16
+				}
+				{
+					id: "542B592C7E03AC9A"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+		}
+		{
+			id: "7DCDAF2EF0DEA6C0"
+			x: 13.0d
+			y: 5.5d
+			icon: {
+				id: "malum:sacred_spirit"
+				count: 1
+			}
+			dependencies: [
+				"F0375037881AC816"
+			]
+			tasks: [
+				{
+					id: "D8F7C83A06EEAB85"
+					type: "item"
+					item: {
+						id: "malum:totemic_staff"
+						count: 1
+					}
+					count: 1
+				}
+				{
+					id: "7C343213D26DA24C"
+					type: "checkmark"
+				}
+			]
+			rewards: [
+				{
+					id: "CFEF26CD2EFE5A3B"
+					type: "item"
+					item: {
+						id: "malum:sacred_spirit"
+						count: 1
+					}
+					count: 16
+				}
+				{
+					id: "E4611DE6181C90AB"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+		}
+		{
+			id: "51EBAF73D8AE43B0"
+			x: 13.0d
+			y: 7.7d
+			icon: {
+				id: "malum:infernal_spirit"
+				count: 1
+			}
+			dependencies: [
+				"7DCDAF2EF0DEA6C0"
+			]
+			tasks: [
+				{
+					id: "BEDE7B1E7241C413"
+					type: "checkmark"
+				}
+			]
+			rewards: [
+				{
+					id: "190AB558A5694D2C"
+					type: "item"
+					item: {
+						id: "malum:infernal_spirit"
+						count: 1
+					}
+					count: 16
+				}
+				{
+					id: "0311B2A2E2DC30B4"
+					type: "item"
+					item: {
+						id: "minecraft:coal_block"
+						count: 1
+					}
+					count: 8
+				}
+				{
+					id: "089F8FCB2A20E814"
+					type: "xp_levels"
+					xp_levels: 10
+				}
+			]
+		}
+		{
+			id: "5CF971351F3417E4"
+			x: 17.0d
+			y: 9.5d
+			icon: {
+				id: "malum:soul_stained_steel_ingot"
+				count: 1
+			}
+			size: 2.5d
+			shape: "gear"
+			dependencies: [
+				"BEFF84C54AFE6D05"
+				"2345AFD00341532D"
+				"51EBAF73D8AE43B0"
+			]
+			tasks: [
+				{
+					id: "3A28CC41BD76FEC6"
+					type: "item"
+					item: {
+						id: "malum:soul_stained_steel_ingot"
+						count: 1
+					}
+					count: 16
+				}
+				{
+					id: "BD7A195CFAAA8152"
+					type: "item"
+					item: {
+						id: "malum:hallowed_gold_ingot"
+						count: 1
+					}
+					count: 8
+				}
+			]
+			rewards: [
+				{
+					id: "BE422D3B5AB88269"
+					type: "loot"
+					table_id: "6320E512778B48ED"
+				}
+				{
+					id: "E34D544122911E62"
+					type: "xp_levels"
+					xp_levels: 15
+				}
+			]
+		}
+	]
+	images: [
+		{
+			id: "AE866E7C9D7E8C9C"
+			image: "kronwerke:textures/quests/malum/title.png"
+			x: 4.5d
+			y: -4.4d
+			width: 5.05d
+			height: 1.8d
+			rotation: 0.0d
+			order: 1
+		}
+		{
+			id: "1044A53D0FE035BE"
+			image: "kronwerke:textures/quests/malum/ernten.png"
+			x: 4.5d
+			y: -2.5d
+			width: 4.7d
+			height: 0.9d
+			rotation: 0.0d
+			order: 1
+		}
+		{
+			id: "C284F4E30C2F9B42"
+			image: "kronwerke:textures/quests/malum/altar.png"
+			x: 3.7d
+			y: 3.9d
+			width: 5.48d
+			height: 0.9d
+			rotation: 0.0d
+			order: 1
+		}
+		{
+			id: "5061F19A43DA0168"
+			image: "kronwerke:textures/quests/malum/totems.png"
+			x: 12.0d
+			y: 3.9d
+			width: 5.75d
+			height: 0.9d
+			rotation: 0.0d
+			order: 1
+		}
+		{
+			id: "83706B4A14DC7D92"
+			image: "kronwerke:textures/quests/malum/tiegel.png"
+			x: 3.5d
+			y: 9.9d
+			width: 5.51d
+			height: 0.9d
+			rotation: 0.0d
+			order: 1
+		}
+	]
+}

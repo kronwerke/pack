@@ -1,0 +1,952 @@
+{
+	id: "549A869702656A02"
+	filename: "draconic"
+	icon: {
+		id: "draconicevolution:draconium_core"
+		count: 1
+	}
+	group: "AEAA9718BAF5A32A"
+	order_index: 38
+	default_quest_shape: "circle"
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			id: "62552248B9D40CAB"
+			x: 0.0d
+			y: 0.0d
+			icon: {
+				id: "draconicevolution:draconium_dust"
+				count: 1
+			}
+			size: 2.0d
+			shape: "hexagon"
+			tasks: [
+				{
+					id: "5F572E84B9B339DE"
+					type: "item"
+					item: {
+						id: "draconicevolution:draconium_dust"
+						count: 1
+					}
+					count: 16
+				}
+			]
+			rewards: [
+				{
+					id: "E290A3BF35AE4992"
+					type: "item"
+					item: {
+						id: "minecraft:ender_pearl"
+						count: 1
+					}
+					count: 16
+				}
+				{
+					id: "E249E23FAE39CA95"
+					type: "loot"
+					table_id: "F05AFC22088A36B6"
+				}
+				{
+					id: "808180E37F1AD31F"
+					type: "xp_levels"
+					xp_levels: 10
+				}
+			]
+		}
+		{
+			id: "B33A9512C7763E2A"
+			x: 2.75d
+			y: 0.0d
+			icon: {
+				id: "draconicevolution:draconium_ingot"
+				count: 1
+			}
+			dependencies: [
+				"62552248B9D40CAB"
+			]
+			tasks: [
+				{
+					id: "399B5EF36BD45D89"
+					type: "item"
+					item: {
+						id: "draconicevolution:draconium_ingot"
+						count: 1
+					}
+					count: 32
+				}
+			]
+			rewards: [
+				{
+					id: "8E4BA7B7FF0B4575"
+					type: "item"
+					item: {
+						id: "minecraft:diamond"
+						count: 1
+					}
+					count: 4
+				}
+				{
+					id: "D6E6363CB62A5A03"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+		}
+		{
+			id: "5C2B1BD2D8AEBFBA"
+			x: 2.75d
+			y: -2.5d
+			icon: {
+				id: "mekanism:elite_control_circuit"
+				count: 1
+			}
+			dependencies: [
+				"62552248B9D40CAB"
+			]
+			tasks: [
+				{
+					id: "81C063B390432B03"
+					type: "item"
+					item: {
+						id: "mekanism:elite_control_circuit"
+						count: 1
+					}
+					count: 4
+				}
+			]
+			rewards: [
+				{
+					id: "850FE7A18A68DCD3"
+					type: "item"
+					item: {
+						id: "draconicevolution:draconium_dust"
+						count: 1
+					}
+					count: 8
+				}
+				{
+					id: "19A20BF4DACFF08E"
+					type: "loot"
+					table_id: "F05AFC22088A36B6"
+				}
+			]
+		}
+		{
+			id: "9737D2A7DB049D7F"
+			x: 5.25d
+			y: 0.0d
+			icon: {
+				id: "draconicevolution:draconium_core"
+				count: 1
+			}
+			size: 1.5d
+			shape: "square"
+			dependencies: [
+				"B33A9512C7763E2A"
+			]
+			tasks: [
+				{
+					id: "695D3BE80EBC8EB4"
+					type: "item"
+					item: {
+						id: "draconicevolution:draconium_core"
+						count: 1
+					}
+					count: 4
+				}
+			]
+			rewards: [
+				{
+					id: "0990054BB497B563"
+					type: "item"
+					item: {
+						id: "minecraft:gold_ingot"
+						count: 1
+					}
+					count: 16
+				}
+				{
+					id: "D8A2E82BFBD4759F"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+		}
+		{
+			id: "ADBA08F6961CD3FE"
+			x: 2.75d
+			y: 2.5d
+			icon: {
+				id: "draconicevolution:dislocator"
+				count: 1
+			}
+			optional: true
+			dependencies: [
+				"62552248B9D40CAB"
+			]
+			tasks: [
+				{
+					id: "EAAC63F638661139"
+					type: "item"
+					item: {
+						id: "draconicevolution:dislocator"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "89331BED3B07CFBD"
+					type: "item"
+					item: {
+						id: "minecraft:ender_pearl"
+						count: 1
+					}
+					count: 8
+				}
+			]
+		}
+		{
+			id: "251815CD1D7CBAA0"
+			x: 5.25d
+			y: 2.5d
+			icon: {
+				id: "draconicevolution:generator"
+				count: 1
+			}
+			optional: true
+			dependencies: [
+				"9737D2A7DB049D7F"
+			]
+			tasks: [
+				{
+					id: "B7B724A7B10A42FD"
+					type: "item"
+					item: {
+						id: "draconicevolution:generator"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "A05A68AE7E441D7D"
+					type: "item"
+					item: {
+						id: "minecraft:coal_block"
+						count: 1
+					}
+					count: 8
+				}
+			]
+		}
+		{
+			id: "F07CCFAD971797F7"
+			x: 5.25d
+			y: 5.0d
+			icon: {
+				id: "draconicevolution:grinder"
+				count: 1
+			}
+			optional: true
+			dependencies: [
+				"251815CD1D7CBAA0"
+				"DCA531D29134EB9C"
+			]
+			tasks: [
+				{
+					id: "9A016CF34F99B837"
+					type: "item"
+					item: {
+						id: "draconicevolution:grinder"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "855252164CA0E616"
+					type: "item"
+					item: {
+						id: "minecraft:experience_bottle"
+						count: 1
+					}
+					count: 16
+				}
+			]
+		}
+		{
+			id: "41D7B0370F10EEFA"
+			x: 7.75d
+			y: 0.0d
+			icon: {
+				id: "draconicevolution:crafting_core"
+				count: 1
+			}
+			dependencies: [
+				"9737D2A7DB049D7F"
+			]
+			tasks: [
+				{
+					id: "34EC004CEC119F9D"
+					type: "item"
+					item: {
+						id: "draconicevolution:crafting_core"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "E69AC18EB9F513FE"
+					type: "item"
+					item: {
+						id: "minecraft:lapis_block"
+						count: 1
+					}
+					count: 4
+				}
+				{
+					id: "FDF29C17B3CE6F72"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+		}
+		{
+			id: "DDAC654AEFC2881A"
+			x: 7.75d
+			y: 2.5d
+			icon: {
+				id: "draconicevolution:basic_crafting_injector"
+				count: 1
+			}
+			dependencies: [
+				"41D7B0370F10EEFA"
+			]
+			tasks: [
+				{
+					id: "DDE93081DD5DF7D9"
+					type: "item"
+					item: {
+						id: "draconicevolution:basic_crafting_injector"
+						count: 1
+					}
+					count: 8
+				}
+			]
+			rewards: [
+				{
+					id: "E609D4A6E6B6D10E"
+					type: "item"
+					item: {
+						id: "minecraft:iron_block"
+						count: 1
+					}
+					count: 4
+				}
+				{
+					id: "FD17E943C47387AF"
+					type: "loot"
+					table_id: "F05AFC22088A36B6"
+				}
+			]
+		}
+		{
+			id: "A1CD7D49F64CE2C5"
+			x: 10.25d
+			y: 0.0d
+			icon: {
+				id: "draconicevolution:wyvern_core"
+				count: 1
+			}
+			dependencies: [
+				"41D7B0370F10EEFA"
+			]
+			tasks: [
+				{
+					id: "79450EBBB14DF4A3"
+					type: "item"
+					item: {
+						id: "draconicevolution:wyvern_core"
+						count: 1
+					}
+					count: 2
+				}
+			]
+			rewards: [
+				{
+					id: "1AF1CA61C7B2BB66"
+					type: "item"
+					item: {
+						id: "draconicevolution:draconium_ingot"
+						count: 1
+					}
+					count: 8
+				}
+				{
+					id: "20F1AF0C1CA8D581"
+					type: "xp_levels"
+					xp_levels: 10
+				}
+			]
+		}
+		{
+			id: "B0025CC2C67A07B2"
+			x: 10.25d
+			y: 2.5d
+			icon: {
+				id: "draconicevolution:wyvern_crafting_injector"
+				count: 1
+			}
+			size: 1.5d
+			shape: "diamond"
+			dependencies: [
+				"DDAC654AEFC2881A"
+				"A1CD7D49F64CE2C5"
+			]
+			tasks: [
+				{
+					id: "BD1EFA8D7F505C3E"
+					type: "item"
+					item: {
+						id: "draconicevolution:wyvern_crafting_injector"
+						count: 1
+					}
+					count: 6
+				}
+			]
+			rewards: [
+				{
+					id: "B48B50C621E0B2DA"
+					type: "item"
+					item: {
+						id: "minecraft:diamond"
+						count: 1
+					}
+					count: 8
+				}
+				{
+					id: "6839BE9CE2A135DB"
+					type: "loot"
+					table_id: "A1C2F3302F73AD62"
+				}
+				{
+					id: "EC7E96732BB85A9E"
+					type: "xp_levels"
+					xp_levels: 10
+				}
+			]
+		}
+		{
+			id: "DCA531D29134EB9C"
+			x: 7.75d
+			y: -2.5d
+			icon: {
+				id: "draconicevolution:wyvern_energy_core"
+				count: 1
+			}
+			dependencies: [
+				"9737D2A7DB049D7F"
+			]
+			tasks: [
+				{
+					id: "8DF1B731250BCB3A"
+					type: "item"
+					item: {
+						id: "draconicevolution:wyvern_energy_core"
+						count: 1
+					}
+					count: 2
+				}
+			]
+			rewards: [
+				{
+					id: "673FBD5825EDDFF7"
+					type: "item"
+					item: {
+						id: "minecraft:redstone_block"
+						count: 1
+					}
+					count: 8
+				}
+			]
+		}
+		{
+			id: "CD6081D5BBBB4B85"
+			x: 10.25d
+			y: -3.75d
+			icon: {
+				id: "draconicevolution:energy_core"
+				count: 1
+			}
+			size: 1.75d
+			shape: "hexagon"
+			dependencies: [
+				"DCA531D29134EB9C"
+				"A1CD7D49F64CE2C5"
+			]
+			tasks: [
+				{
+					id: "AB70EB5AAA753E60"
+					type: "item"
+					item: {
+						id: "draconicevolution:energy_core"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "B2C813A30CB5F70C"
+					type: "item"
+					item: {
+						id: "draconicevolution:draconium_ingot"
+						count: 1
+					}
+					count: 8
+				}
+				{
+					id: "B43B4A04303E0E4C"
+					type: "loot"
+					table_id: "F05AFC22088A36B6"
+				}
+				{
+					id: "69C1261BAA41F610"
+					type: "xp_levels"
+					xp_levels: 10
+				}
+			]
+		}
+		{
+			id: "6EF5D341251BB592"
+			x: 12.75d
+			y: -3.75d
+			icon: {
+				id: "draconicevolution:energy_core_stabilizer"
+				count: 1
+			}
+			size: 1.5d
+			shape: "diamond"
+			dependencies: [
+				"CD6081D5BBBB4B85"
+			]
+			tasks: [
+				{
+					id: "DDBBE1962E39CD06"
+					type: "item"
+					item: {
+						id: "draconicevolution:energy_core_stabilizer"
+						count: 1
+					}
+					count: 4
+				}
+			]
+			rewards: [
+				{
+					id: "E45575B6D3C3540F"
+					type: "item"
+					item: {
+						id: "minecraft:diamond"
+						count: 1
+					}
+					count: 8
+				}
+				{
+					id: "EE6C7E546CD8C734"
+					type: "loot"
+					table_id: "A1C2F3302F73AD62"
+				}
+				{
+					id: "BB26DC0CF103D966"
+					type: "xp_levels"
+					xp_levels: 10
+				}
+			]
+		}
+		{
+			id: "4F44F4D8DEF195D0"
+			x: 15.25d
+			y: -2.5d
+			icon: {
+				id: "draconicevolution:draconium_block"
+				count: 1
+			}
+			optional: true
+			dependencies: [
+				"6EF5D341251BB592"
+			]
+			tasks: [
+				{
+					id: "14FDB6F0251F70F3"
+					type: "item"
+					item: {
+						id: "draconicevolution:draconium_block"
+						count: 1
+					}
+					count: 26
+				}
+			]
+			rewards: [
+				{
+					id: "1F1EFE383FC29E19"
+					type: "item"
+					item: {
+						id: "minecraft:redstone_block"
+						count: 1
+					}
+					count: 16
+				}
+				{
+					id: "D6DBD389156BB70A"
+					type: "xp_levels"
+					xp_levels: 10
+				}
+			]
+		}
+		{
+			id: "5D99B10F1027142E"
+			x: 15.25d
+			y: -5.0d
+			icon: {
+				id: "draconicevolution:energy_pylon"
+				count: 1
+			}
+			dependencies: [
+				"6EF5D341251BB592"
+			]
+			tasks: [
+				{
+					id: "6F3D8C0D675241FB"
+					type: "item"
+					item: {
+						id: "draconicevolution:energy_pylon"
+						count: 1
+					}
+					count: 2
+				}
+			]
+			rewards: [
+				{
+					id: "E57B20DFE35CBA01"
+					type: "item"
+					item: {
+						id: "minecraft:emerald"
+						count: 1
+					}
+					count: 8
+				}
+				{
+					id: "29F89C178323A311"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+		}
+		{
+			id: "1C0FA41EB83CB8D9"
+			x: 12.75d
+			y: 2.5d
+			icon: {
+				id: "draconicevolution:basic_relay_crystal"
+				count: 1
+			}
+			dependencies: [
+				"B0025CC2C67A07B2"
+				"DCA531D29134EB9C"
+			]
+			tasks: [
+				{
+					id: "B2EECE3129DAC6F4"
+					type: "item"
+					item: {
+						id: "draconicevolution:basic_relay_crystal"
+						count: 1
+					}
+					count: 4
+				}
+			]
+			rewards: [
+				{
+					id: "95FD9FF9759467B5"
+					type: "item"
+					item: {
+						id: "minecraft:diamond"
+						count: 1
+					}
+					count: 4
+				}
+			]
+		}
+		{
+			id: "747222A2E72EC38E"
+			x: 15.25d
+			y: 1.25d
+			icon: {
+				id: "draconicevolution:wyvern_pickaxe"
+				count: 1
+			}
+			size: 1.75d
+			shape: "gear"
+			dependencies: [
+				"1C0FA41EB83CB8D9"
+			]
+			tasks: [
+				{
+					id: "866360BC2872156D"
+					type: "item"
+					item: {
+						id: "draconicevolution:wyvern_pickaxe"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "8E9A634A96271600"
+					type: "item"
+					item: {
+						id: "draconicevolution:draconium_core"
+						count: 1
+					}
+					count: 2
+				}
+				{
+					id: "67526FFDAA6BA7E2"
+					type: "loot"
+					table_id: "A1C2F3302F73AD62"
+				}
+				{
+					id: "F856A64839AAB691"
+					type: "xp_levels"
+					xp_levels: 15
+				}
+			]
+		}
+		{
+			id: "2276D4835390192C"
+			x: 17.75d
+			y: 2.5d
+			icon: {
+				id: "draconicevolution:wyvern_chestpiece"
+				count: 1
+			}
+			dependencies: [
+				"1C0FA41EB83CB8D9"
+			]
+			tasks: [
+				{
+					id: "D9FBC459FB481FD2"
+					type: "item"
+					item: {
+						id: "draconicevolution:wyvern_chestpiece"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "EEFCAFB41D8FEBF2"
+					type: "item"
+					item: {
+						id: "minecraft:netherite_scrap"
+						count: 1
+					}
+					count: 2
+				}
+				{
+					id: "FD6EBE7E77F1FC8F"
+					type: "xp_levels"
+					xp_levels: 10
+				}
+			]
+		}
+		{
+			id: "59D4965D9560FA59"
+			x: 17.75d
+			y: 0.0d
+			icon: {
+				id: "draconicevolution:module_core"
+				count: 1
+			}
+			optional: true
+			dependencies: [
+				"747222A2E72EC38E"
+			]
+			tasks: [
+				{
+					id: "12A05F6CED575C45"
+					type: "item"
+					item: {
+						id: "draconicevolution:module_core"
+						count: 1
+					}
+					count: 4
+				}
+			]
+			rewards: [
+				{
+					id: "00EA9BBEF90492E6"
+					type: "item"
+					item: {
+						id: "draconicevolution:draconium_ingot"
+						count: 1
+					}
+					count: 4
+				}
+			]
+		}
+		{
+			id: "5313C6F87318E0DB"
+			x: 20.25d
+			y: -3.75d
+			icon: {
+				id: "draconicevolution:draconium_block"
+				count: 1
+			}
+			size: 2.0d
+			shape: "gear"
+			dependencies: [
+				"4F44F4D8DEF195D0"
+				"5D99B10F1027142E"
+			]
+			tasks: [
+				{
+					id: "F4CB20234C3E4A43"
+					type: "item"
+					item: {
+						id: "draconicevolution:draconium_ingot"
+						count: 1
+					}
+					count: 256
+				}
+				{
+					id: "D7CBDF547010785F"
+					type: "item"
+					item: {
+						id: "mekanism:elite_control_circuit"
+						count: 1
+					}
+					count: 16
+				}
+			]
+			rewards: [
+				{
+					id: "87398359CDBC890E"
+					type: "loot"
+					table_id: "B37D68E8A5AC1C1D"
+				}
+				{
+					id: "4C862CBF0399AE79"
+					type: "xp_levels"
+					xp_levels: 20
+				}
+			]
+		}
+		{
+			id: "9BC4D16CB68CEC1B"
+			x: 22.75d
+			y: -3.75d
+			icon: {
+				id: "draconicevolution:draconium_core"
+				count: 1
+			}
+			optional: true
+			dependencies: [
+				"5313C6F87318E0DB"
+			]
+			tasks: [
+				{
+					id: "0D620E7BE581986A"
+					type: "checkmark"
+				}
+			]
+			rewards: [
+				{
+					id: "BFC13618FA854FF5"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+		}
+	]
+	images: [
+		{
+			id: "226075949F841DCF"
+			image: "kronwerke:textures/quests/draconic/title.png"
+			x: 11.5d
+			y: -8.4d
+			width: 13.4d
+			height: 1.8d
+			rotation: 0.0d
+			order: 1
+		}
+		{
+			id: "3436970E66EC2F38"
+			image: "kronwerke:textures/quests/draconic/draconium.png"
+			x: 1.4d
+			y: -4.2d
+			width: 3.71d
+			height: 0.9d
+			rotation: 0.0d
+			order: 1
+		}
+		{
+			id: "8864D0D0F6378E95"
+			image: "kronwerke:textures/quests/draconic/fusion.png"
+			x: 9.0d
+			y: 4.1d
+			width: 2.29d
+			height: 0.9d
+			rotation: 0.0d
+			order: 1
+		}
+		{
+			id: "FD004DB89B1EAE07"
+			image: "kronwerke:textures/quests/draconic/kern.png"
+			x: 10.25d
+			y: -6.0d
+			width: 5.37d
+			height: 0.9d
+			rotation: 0.0d
+			order: 1
+		}
+		{
+			id: "A68B6E06B62BC76A"
+			image: "kronwerke:textures/quests/draconic/wyvern.png"
+			x: 15.5d
+			y: 4.3d
+			width: 6.15d
+			height: 0.9d
+			rotation: 0.0d
+			order: 1
+		}
+		{
+			id: "0A67FC6FD90DEB50"
+			image: "kronwerke:textures/quests/draconic/nuetzlich.png"
+			x: 1.6d
+			y: 6.3d
+			width: 3.26d
+			height: 0.9d
+			rotation: 0.0d
+			order: 1
+		}
+		{
+			id: "CAE41D33E29884E2"
+			image: "kronwerke:textures/quests/draconic/obelisk.png"
+			x: 21.5d
+			y: -6.0d
+			width: 5.3d
+			height: 0.9d
+			rotation: 0.0d
+			order: 1
+		}
+	]
+}

@@ -1,0 +1,101 @@
+{
+	id: "F05AFC22088A36B6"
+	icon: {
+		id: "ftbquests:lootcrate"
+		count: 1
+	}
+	loot_size: 1
+	order_index: 9
+	rewards: [
+		{
+			id: "A866807CAADF40CD"
+			item: {
+				id: "draconicevolution:draconium_ingot"
+				count: 4
+			}
+			weight: 10.0f
+			random_bonus: 4
+		}
+		{
+			id: "4BE957AB7E791E05"
+			item: {
+				id: "mekanism:alloy_atomic"
+				count: 4
+			}
+			weight: 8.0f
+			random_bonus: 4
+		}
+		{
+			id: "9999CB74EABE8E47"
+			item: {
+				id: "mekanism:ingot_refined_obsidian"
+				count: 8
+			}
+			weight: 8.0f
+			random_bonus: 8
+		}
+		{
+			id: "71DBB59487B94FE0"
+			item: {
+				id: "ae2:fluix_crystal"
+				count: 16
+			}
+			weight: 6.0f
+			random_bonus: 16
+		}
+		{
+			id: "C0D1E0DF3FCA84B9"
+			item: {
+				id: "botania:elementium_ingot"
+				count: 8
+			}
+			weight: 6.0f
+			random_bonus: 8
+		}
+		{
+			id: "F8ED7A3A31DA55E1"
+			item: {
+				id: "eternal_starlight:blue_starlight_crystal_shard"
+				count: 4
+			}
+			weight: 6.0f
+			random_bonus: 4
+		}
+		{
+			id: "50099B4D51CC9686"
+			item: {
+				id: "eternal_starlight:thermal_springstone_ingot"
+				count: 4
+			}
+			weight: 5.0f
+			random_bonus: 4
+		}
+		{
+			id: "242FF099008E0A28"
+			item: {
+				id: "minecraft:ender_pearl"
+				count: 16
+			}
+			weight: 6.0f
+			random_bonus: 16
+		}
+		{
+			id: "AA23C396B6807CE4"
+			item: {
+				id: "minecraft:shulker_shell"
+				count: 2
+			}
+			weight: 4.0f
+			random_bonus: 2
+		}
+		{
+			id: "AA72648CC34B7D0F"
+			item: {
+				id: "minecraft:experience_bottle"
+				count: 32
+			}
+			weight: 5.0f
+			random_bonus: 32
+		}
+	]
+}

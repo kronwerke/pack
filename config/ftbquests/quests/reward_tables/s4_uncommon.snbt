@@ -1,0 +1,78 @@
+{
+	id: "A1C2F3302F73AD62"
+	icon: {
+		id: "ftbquests:lootcrate"
+		count: 1
+	}
+	loot_size: 1
+	order_index: 10
+	rewards: [
+		{
+			id: "989113931B511508"
+			item: {
+				id: "mekanism:elite_control_circuit"
+				count: 2
+			}
+			weight: 8.0f
+			random_bonus: 2
+		}
+		{
+			id: "C87BBA6C70DC61C3"
+			item: {
+				id: "draconicevolution:draconium_core"
+				count: 1
+			}
+			weight: 6.0f
+		}
+		{
+			id: "70B15626AFADF624"
+			item: {
+				id: "ae2:cell_component_64k"
+				count: 1
+			}
+			weight: 6.0f
+		}
+		{
+			id: "C7E5ADCF5D550FBC"
+			item: {
+				id: "megacells:cell_component_1m"
+				count: 1
+			}
+			weight: 3.0f
+		}
+		{
+			id: "89F77AD07531BA03"
+			item: {
+				id: "nuclearcraft:uranium_ingot"
+				count: 4
+			}
+			weight: 5.0f
+			random_bonus: 4
+		}
+		{
+			id: "BBF5715C99706A0D"
+			item: {
+				id: "minecraft:dragon_breath"
+				count: 4
+			}
+			weight: 5.0f
+			random_bonus: 4
+		}
+		{
+			id: "4995619EC4CA576F"
+			item: {
+				id: "minecraft:nether_star"
+				count: 1
+			}
+			weight: 3.0f
+		}
+		{
+			id: "582A4730A46559CA"
+			item: {
+				id: "minecraft:netherite_ingot"
+				count: 1
+			}
+			weight: 3.0f
+		}
+	]
+}

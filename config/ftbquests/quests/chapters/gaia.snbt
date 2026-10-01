@@ -1,0 +1,672 @@
+{
+	id: "13B53D11E362753C"
+	filename: "gaia"
+	icon: {
+		id: "botania:gaia_spirit"
+		count: 1
+	}
+	group: "03203A1312E25E36"
+	order_index: 39
+	default_quest_shape: "circle"
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			id: "6F2FD7A5D5AF43E8"
+			x: 0.0d
+			y: 0.0d
+			icon: {
+				id: "botania:gaia_pylon"
+				count: 1
+			}
+			size: 2.0d
+			shape: "hexagon"
+			tasks: [
+				{
+					id: "4F431DDCDF0A3A91"
+					type: "item"
+					item: {
+						id: "botania:gaia_pylon"
+						count: 1
+					}
+					count: 4
+				}
+			]
+			rewards: [
+				{
+					id: "F7FFA22A33380A97"
+					type: "item"
+					item: {
+						id: "botania:pixie_dust"
+						count: 1
+					}
+					count: 4
+				}
+				{
+					id: "C22ED5E95AB36EE7"
+					type: "loot"
+					table_id: "F05AFC22088A36B6"
+				}
+				{
+					id: "C9DD155F5B4057F1"
+					type: "xp_levels"
+					xp_levels: 10
+				}
+			]
+		}
+		{
+			id: "39D9760C4025EA05"
+			x: 2.75d
+			y: -1.25d
+			icon: {
+				id: "minecraft:beacon"
+				count: 1
+			}
+			dependencies: [
+				"6F2FD7A5D5AF43E8"
+			]
+			tasks: [
+				{
+					id: "B1AC923AFD1F06C8"
+					type: "item"
+					item: {
+						id: "minecraft:beacon"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "F97AFDC61D640F30"
+					type: "item"
+					item: {
+						id: "minecraft:iron_block"
+						count: 1
+					}
+					count: 9
+				}
+			]
+		}
+		{
+			id: "ACA057DCFC11E077"
+			x: 2.75d
+			y: 1.25d
+			icon: {
+				id: "botania:terrasteel_ingot"
+				count: 1
+			}
+			dependencies: [
+				"6F2FD7A5D5AF43E8"
+			]
+			tasks: [
+				{
+					id: "BE067F6908AEB327"
+					type: "item"
+					item: {
+						id: "botania:terrasteel_ingot"
+						count: 1
+					}
+					count: 4
+				}
+			]
+			rewards: [
+				{
+					id: "E857DF6ADE908E51"
+					type: "item"
+					item: {
+						id: "botania:mana_pearl"
+						count: 1
+					}
+					count: 4
+				}
+			]
+		}
+		{
+			id: "285B4DD277CDEC98"
+			x: 5.25d
+			y: 0.0d
+			icon: {
+				id: "minecraft:beacon"
+				count: 1
+			}
+			dependencies: [
+				"39D9760C4025EA05"
+				"ACA057DCFC11E077"
+			]
+			tasks: [
+				{
+					id: "68B7A204E1F7D61B"
+					type: "checkmark"
+				}
+			]
+			rewards: [
+				{
+					id: "85A969B711EC0381"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+		}
+		{
+			id: "8E2CC411937BE96F"
+			x: 5.25d
+			y: 2.5d
+			icon: {
+				id: "botania:terra_blade"
+				count: 1
+			}
+			dependencies: [
+				"285B4DD277CDEC98"
+			]
+			tasks: [
+				{
+					id: "A73E435C50E461DB"
+					type: "item"
+					item: {
+						id: "botania:terra_blade"
+						count: 1
+					}
+					count: 1
+				}
+				{
+					id: "53E71FD2C4283304"
+					type: "item"
+					item: {
+						id: "botania:elementium_chestplate"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "1204EDAC0EF94134"
+					type: "item"
+					item: {
+						id: "minecraft:golden_apple"
+						count: 1
+					}
+					count: 4
+				}
+				{
+					id: "2685A155F7B96AD1"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+		}
+		{
+			id: "46B7D8A29D5AB2C9"
+			x: 7.75d
+			y: -2.5d
+			icon: {
+				id: "botania:gaia_head"
+				count: 1
+			}
+			dependencies: [
+				"285B4DD277CDEC98"
+			]
+			tasks: [
+				{
+					id: "70D0C3F72F9EF612"
+					type: "checkmark"
+				}
+			]
+			rewards: [
+				{
+					id: "859E19481503699E"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+		}
+		{
+			id: "13CF74838C078848"
+			x: 7.75d
+			y: 0.0d
+			icon: {
+				id: "botania:gaia_spirit"
+				count: 1
+			}
+			size: 2.0d
+			shape: "gear"
+			dependencies: [
+				"8E2CC411937BE96F"
+				"46B7D8A29D5AB2C9"
+			]
+			tasks: [
+				{
+					id: "4B27039A642BC0F9"
+					type: "item"
+					item: {
+						id: "botania:gaia_spirit"
+						count: 1
+					}
+					count: 6
+				}
+			]
+			rewards: [
+				{
+					id: "B97E037A686D9475"
+					type: "item"
+					item: {
+						id: "botania:terrasteel_ingot"
+						count: 1
+					}
+					count: 2
+				}
+				{
+					id: "6AEB887187884AFA"
+					type: "loot"
+					table_id: "A1C2F3302F73AD62"
+				}
+				{
+					id: "03918AADE53AF8F2"
+					type: "xp_levels"
+					xp_levels: 15
+				}
+			]
+		}
+		{
+			id: "648D6B68944ABA7C"
+			x: 10.25d
+			y: -2.5d
+			icon: {
+				id: "botania:gaia_spirit"
+				count: 1
+			}
+			dependencies: [
+				"13CF74838C078848"
+			]
+			tasks: [
+				{
+					id: "542D28C1285D9AD9"
+					type: "checkmark"
+				}
+			]
+			rewards: [
+				{
+					id: "220056DB7AEB945D"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+		}
+		{
+			id: "1C8D8C51B0FAD7AE"
+			x: 10.25d
+			y: 2.5d
+			icon: {
+				id: "botania:gaia_head"
+				count: 1
+			}
+			optional: true
+			dependencies: [
+				"13CF74838C078848"
+			]
+			tasks: [
+				{
+					id: "EB30EA55045D4976"
+					type: "item"
+					item: {
+						id: "botania:gaia_head"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "3D524FF2B77F1C93"
+					type: "xp_levels"
+					xp_levels: 10
+				}
+			]
+		}
+		{
+			id: "C0F0EBDABFEC3826"
+			x: 10.25d
+			y: 0.0d
+			icon: {
+				id: "botania:gaia_spirit"
+				count: 1
+			}
+			dependencies: [
+				"13CF74838C078848"
+			]
+			tasks: [
+				{
+					id: "6327477FA297B094"
+					type: "item"
+					item: {
+						id: "botania:gaia_spirit"
+						count: 1
+					}
+					count: 24
+				}
+			]
+			rewards: [
+				{
+					id: "17F2C8B436072067"
+					type: "item"
+					item: {
+						id: "botania:terrasteel_ingot"
+						count: 1
+					}
+					count: 4
+				}
+				{
+					id: "15C96FBE9FF5D756"
+					type: "loot"
+					table_id: "F05AFC22088A36B6"
+				}
+			]
+		}
+		{
+			id: "32C8E7A307A40CFB"
+			x: 12.75d
+			y: -2.5d
+			icon: {
+				id: "botania:gaia_mana_spreader"
+				count: 1
+			}
+			dependencies: [
+				"C0F0EBDABFEC3826"
+			]
+			tasks: [
+				{
+					id: "18FFF79907B96921"
+					type: "item"
+					item: {
+						id: "botania:gaia_mana_spreader"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "560A486E1E3F22F9"
+					type: "item"
+					item: {
+						id: "botania:dragonstone"
+						count: 1
+					}
+					count: 2
+				}
+			]
+		}
+		{
+			id: "47BAA1EE97F2F59F"
+			x: 12.75d
+			y: 0.0d
+			icon: {
+				id: "botania:flugel_tiara"
+				count: 1
+			}
+			size: 1.5d
+			shape: "diamond"
+			dependencies: [
+				"C0F0EBDABFEC3826"
+			]
+			tasks: [
+				{
+					id: "5C970D6E686F846D"
+					type: "item"
+					item: {
+						id: "botania:flugel_tiara"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "A07B6C54E70470B8"
+					type: "item"
+					item: {
+						id: "botania:mana_pearl"
+						count: 1
+					}
+					count: 4
+				}
+				{
+					id: "5D0DE085A65CF756"
+					type: "loot"
+					table_id: "A1C2F3302F73AD62"
+				}
+				{
+					id: "0EDD38A850A3F045"
+					type: "xp_levels"
+					xp_levels: 10
+				}
+			]
+		}
+		{
+			id: "39E952C251A80C20"
+			x: 12.75d
+			y: 2.5d
+			icon: {
+				id: "botania:dandelifeon"
+				count: 1
+			}
+			optional: true
+			dependencies: [
+				"C0F0EBDABFEC3826"
+			]
+			tasks: [
+				{
+					id: "573270ABC1958102"
+					type: "item"
+					item: {
+						id: "botania:dandelifeon"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "2D154EA428799F9C"
+					type: "item"
+					item: {
+						id: "botania:redstone_root"
+						count: 1
+					}
+					count: 4
+				}
+				{
+					id: "6524443CD2026007"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+		}
+		{
+			id: "13C500BB8EBF1F7D"
+			x: 15.25d
+			y: -1.25d
+			icon: {
+				id: "botania:cloak_of_virtue"
+				count: 1
+			}
+			optional: true
+			dependencies: [
+				"47BAA1EE97F2F59F"
+			]
+			tasks: [
+				{
+					id: "DC730235D2DD7245"
+					type: "item"
+					item: {
+						id: "botania:cloak_of_virtue"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "7DB7BCCE77DF98E6"
+					type: "item"
+					item: {
+						id: "minecraft:white_wool"
+						count: 1
+					}
+					count: 8
+				}
+			]
+		}
+		{
+			id: "60E57BF06C45A964"
+			x: 15.25d
+			y: 1.25d
+			icon: {
+				id: "botania:starcaller"
+				count: 1
+			}
+			optional: true
+			dependencies: [
+				"47BAA1EE97F2F59F"
+			]
+			tasks: [
+				{
+					id: "EAEE8B63AC2DEFCA"
+					type: "item"
+					item: {
+						id: "botania:starcaller"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "F4C9E0899E623400"
+					type: "item"
+					item: {
+						id: "botania:pure_ender_essence"
+						count: 1
+					}
+					count: 2
+				}
+			]
+		}
+		{
+			id: "B7451DBD7AFA514C"
+			x: 17.75d
+			y: 0.0d
+			icon: {
+				id: "botania:gaia_spirit"
+				count: 1
+			}
+			size: 2.0d
+			shape: "gear"
+			dependencies: [
+				"32C8E7A307A40CFB"
+				"47BAA1EE97F2F59F"
+			]
+			tasks: [
+				{
+					id: "F350B1F0368650C8"
+					type: "item"
+					item: {
+						id: "botania:gaia_spirit"
+						count: 1
+					}
+					count: 64
+				}
+			]
+			rewards: [
+				{
+					id: "368F266C9F95E7D1"
+					type: "loot"
+					table_id: "B37D68E8A5AC1C1D"
+				}
+				{
+					id: "07E44D657149921E"
+					type: "xp_levels"
+					xp_levels: 20
+				}
+			]
+		}
+		{
+			id: "C311295C04882C49"
+			x: 20.25d
+			y: 0.0d
+			icon: {
+				id: "botania:terrasteel_ingot"
+				count: 1
+			}
+			optional: true
+			dependencies: [
+				"B7451DBD7AFA514C"
+			]
+			tasks: [
+				{
+					id: "F0EA966A08E71E62"
+					type: "checkmark"
+				}
+			]
+			rewards: [
+				{
+					id: "5BA01C767A179520"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+		}
+	]
+	images: [
+		{
+			id: "71A2A3BF43A124B8"
+			image: "kronwerke:textures/quests/gaia/title.png"
+			x: 9.0d
+			y: -5.6d
+			width: 8.98d
+			height: 1.8d
+			rotation: 0.0d
+			order: 1
+		}
+		{
+			id: "432B4540255F6962"
+			image: "kronwerke:textures/quests/gaia/vorbereitung.png"
+			x: 2.6d
+			y: -3.0d
+			width: 4.47d
+			height: 0.9d
+			rotation: 0.0d
+			order: 1
+		}
+		{
+			id: "7E6B2E3CD93D3A39"
+			image: "kronwerke:textures/quests/gaia/kampf.png"
+			x: 9.0d
+			y: 4.0d
+			width: 3.65d
+			height: 0.9d
+			rotation: 0.0d
+			order: 1
+		}
+		{
+			id: "8C5E503FE3ACC731"
+			image: "kronwerke:textures/quests/gaia/seelen.png"
+			x: 14.0d
+			y: -3.9d
+			width: 5.29d
+			height: 0.9d
+			rotation: 0.0d
+			order: 1
+		}
+		{
+			id: "F30FAD873342C960"
+			image: "kronwerke:textures/quests/gaia/obelisk.png"
+			x: 19.0d
+			y: -1.9d
+			width: 5.3d
+			height: 0.9d
+			rotation: 0.0d
+			order: 1
+		}
+	]
+}

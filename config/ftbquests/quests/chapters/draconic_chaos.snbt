@@ -1,0 +1,781 @@
+{
+	id: "189FC4D37ABCF4FC"
+	filename: "draconic_chaos"
+	icon: {
+		id: "draconicevolution:awakened_draconium_block"
+		count: 1
+	}
+	group: "AEAA9718BAF5A32A"
+	order_index: 42
+	default_quest_shape: "square"
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			id: "5324699F9751BF51"
+			x: 0.0d
+			y: 1.5d
+			icon: {
+				id: "draconicevolution:awakened_draconium_block"
+				count: 1
+			}
+			size: 2.0d
+			shape: "hexagon"
+			tasks: [
+				{
+					id: "45AFAE55BDDC51AF"
+					type: "item"
+					item: {
+						id: "botania:gaia_ingot"
+						count: 1
+					}
+					count: 2
+				}
+			]
+			rewards: [
+				{
+					id: "184A713DEBBC0311"
+					type: "item"
+					item: {
+						id: "draconicevolution:draconium_ingot"
+						count: 1
+					}
+					count: 16
+				}
+				{
+					id: "1323AEEAE68035BF"
+					type: "loot"
+					table_id: "688F492DF36E9682"
+				}
+				{
+					id: "D0BA69E6F2BCF9AC"
+					type: "xp_levels"
+					xp_levels: 10
+				}
+			]
+		}
+		{
+			id: "E5E3804A31A1BA56"
+			x: 2.75d
+			y: 0.0d
+			dependencies: [
+				"5324699F9751BF51"
+			]
+			tasks: [
+				{
+					id: "17380A35A789E5FD"
+					type: "item"
+					item: {
+						id: "draconicevolution:dragon_heart"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "DE7091BBFF958D5D"
+					type: "item"
+					item: {
+						id: "minecraft:end_crystal"
+						count: 1
+					}
+					count: 4
+				}
+				{
+					id: "C40BF753BC9DC776"
+					type: "xp_levels"
+					xp_levels: 10
+				}
+			]
+		}
+		{
+			id: "6B4D78ECE0B99E9F"
+			x: 2.75d
+			y: 3.0d
+			icon: {
+				id: "draconicevolution:draconium_core"
+				count: 1
+			}
+			dependencies: [
+				"5324699F9751BF51"
+			]
+			tasks: [
+				{
+					id: "40AF50B0EA9CB8DD"
+					type: "item"
+					item: {
+						id: "draconicevolution:draconium_core"
+						count: 1
+					}
+					count: 4
+				}
+				{
+					id: "6E5D76F6A485DCAE"
+					type: "item"
+					item: {
+						id: "draconicevolution:draconium_block"
+						count: 1
+					}
+					count: 4
+				}
+			]
+			rewards: [
+				{
+					id: "04441F3654F01049"
+					type: "item"
+					item: {
+						id: "draconicevolution:draconium_ingot"
+						count: 1
+					}
+					count: 16
+				}
+			]
+		}
+		{
+			id: "192803D15DEC7A34"
+			x: 5.5d
+			y: 1.5d
+			icon: {
+				id: "draconicevolution:awakened_draconium_block"
+				count: 1
+			}
+			size: 2.0d
+			shape: "gear"
+			dependencies: [
+				"E5E3804A31A1BA56"
+				"6B4D78ECE0B99E9F"
+			]
+			tasks: [
+				{
+					id: "60177C2B1407B845"
+					type: "item"
+					item: {
+						id: "draconicevolution:awakened_draconium_block"
+						count: 1
+					}
+					count: 4
+				}
+			]
+			rewards: [
+				{
+					id: "E2CCE607CCE37D93"
+					type: "loot"
+					table_id: "688F492DF36E9682"
+				}
+				{
+					id: "271DDA18712550ED"
+					type: "xp_levels"
+					xp_levels: 20
+				}
+			]
+		}
+		{
+			id: "BC3B984CE25BA9B7"
+			x: 8.25d
+			y: 0.0d
+			icon: {
+				id: "draconicevolution:awakened_crafting_injector"
+				count: 1
+			}
+			dependencies: [
+				"192803D15DEC7A34"
+			]
+			tasks: [
+				{
+					id: "7865C7D1D03CA970"
+					type: "item"
+					item: {
+						id: "draconicevolution:awakened_crafting_injector"
+						count: 1
+					}
+					count: 8
+				}
+			]
+			rewards: [
+				{
+					id: "8453F0DD15AF8F77"
+					type: "item"
+					item: {
+						id: "minecraft:diamond"
+						count: 1
+					}
+					count: 16
+				}
+				{
+					id: "934B340B6CFC5C25"
+					type: "xp_levels"
+					xp_levels: 10
+				}
+			]
+		}
+		{
+			id: "B456AEE1F1ED202A"
+			x: 8.25d
+			y: 3.0d
+			icon: {
+				id: "draconicevolution:awakened_core"
+				count: 1
+			}
+			dependencies: [
+				"192803D15DEC7A34"
+			]
+			tasks: [
+				{
+					id: "F25B38CB98DBE740"
+					type: "item"
+					item: {
+						id: "draconicevolution:awakened_core"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "59BE7DF6A27C454F"
+					type: "item"
+					item: {
+						id: "minecraft:nether_star"
+						count: 1
+					}
+					count: 1
+				}
+				{
+					id: "1BF91DBB2A3058CF"
+					type: "xp_levels"
+					xp_levels: 10
+				}
+			]
+		}
+		{
+			id: "DB9CE2B18B64FD29"
+			x: 11.0d
+			y: 3.0d
+			icon: {
+				id: "draconicevolution:draconic_energy_core"
+				count: 1
+			}
+			dependencies: [
+				"B456AEE1F1ED202A"
+			]
+			tasks: [
+				{
+					id: "29F526C586EC8C5B"
+					type: "item"
+					item: {
+						id: "draconicevolution:draconic_energy_core"
+						count: 1
+					}
+					count: 2
+				}
+			]
+			rewards: [
+				{
+					id: "9EAA2832DA16533B"
+					type: "item"
+					item: {
+						id: "draconicevolution:wyvern_core"
+						count: 1
+					}
+					count: 2
+				}
+				{
+					id: "D58CED2BFE24813D"
+					type: "xp_levels"
+					xp_levels: 10
+				}
+			]
+		}
+		{
+			id: "D61038536A3F396F"
+			x: 11.0d
+			y: 8.0d
+			icon: {
+				id: "draconicevolution:draconic_pickaxe"
+				count: 1
+			}
+			dependencies: [
+				"DB9CE2B18B64FD29"
+			]
+			tasks: [
+				{
+					id: "C68057C91E751D22"
+					type: "item"
+					item: {
+						id: "draconicevolution:draconic_pickaxe"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "0EE122F4F441C443"
+					type: "item"
+					item: {
+						id: "minecraft:netherite_ingot"
+						count: 1
+					}
+					count: 2
+				}
+				{
+					id: "498D7C2458E435F9"
+					type: "loot"
+					table_id: "688F492DF36E9682"
+				}
+				{
+					id: "BB81EB2CF36A6FAC"
+					type: "xp_levels"
+					xp_levels: 15
+				}
+			]
+		}
+		{
+			id: "2AEDADF7F021D005"
+			x: 13.75d
+			y: 8.0d
+			icon: {
+				id: "draconicevolution:draconic_bow"
+				count: 1
+			}
+			dependencies: [
+				"D61038536A3F396F"
+			]
+			tasks: [
+				{
+					id: "82C28B20E274DB07"
+					type: "item"
+					item: {
+						id: "draconicevolution:draconic_bow"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "883A0F2EB7C741DD"
+					type: "item"
+					item: {
+						id: "minecraft:dragon_breath"
+						count: 1
+					}
+					count: 8
+				}
+				{
+					id: "A55BECE4241F72C7"
+					type: "xp_levels"
+					xp_levels: 10
+				}
+			]
+		}
+		{
+			id: "1DEBCBC68071A08E"
+			x: 11.0d
+			y: 11.0d
+			icon: {
+				id: "draconicevolution:draconic_chestpiece"
+				count: 1
+			}
+			dependencies: [
+				"D61038536A3F396F"
+			]
+			tasks: [
+				{
+					id: "160E6646C97A2879"
+					type: "item"
+					item: {
+						id: "draconicevolution:draconic_chestpiece"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "D3DAFD51DCE1FAF2"
+					type: "item"
+					item: {
+						id: "minecraft:netherite_ingot"
+						count: 1
+					}
+					count: 2
+				}
+				{
+					id: "E659C70B34556B2A"
+					type: "xp_levels"
+					xp_levels: 15
+				}
+			]
+		}
+		{
+			id: "07F70E299E6DCB46"
+			x: 13.75d
+			y: 11.0d
+			icon: {
+				id: "draconicevolution:item_draconic_shield_capacity"
+				count: 1
+			}
+			dependencies: [
+				"1DEBCBC68071A08E"
+			]
+			tasks: [
+				{
+					id: "9BD4FC96E443980C"
+					type: "item"
+					item: {
+						id: "draconicevolution:item_draconic_shield_capacity"
+						count: 1
+					}
+					count: 2
+				}
+				{
+					id: "6FBB9BFC5C171B87"
+					type: "item"
+					item: {
+						id: "draconicevolution:item_draconic_undying"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "BD4110C5E30D065C"
+					type: "loot"
+					table_id: "688F492DF36E9682"
+				}
+				{
+					id: "4BB90330DE1501B1"
+					type: "xp_levels"
+					xp_levels: 10
+				}
+			]
+		}
+		{
+			id: "E545A0CB3299D6C2"
+			x: 8.25d
+			y: 9.5d
+			icon: {
+				id: "draconicevolution:draconic_staff"
+				count: 1
+			}
+			optional: true
+			dependencies: [
+				"D61038536A3F396F"
+			]
+			tasks: [
+				{
+					id: "3FD14CEB6A891472"
+					type: "item"
+					item: {
+						id: "draconicevolution:draconic_staff"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "B1D94681989373F4"
+					type: "xp_levels"
+					xp_levels: 20
+				}
+			]
+		}
+		{
+			id: "E30C3E1F3FC193D0"
+			x: 14.5d
+			y: 1.5d
+			icon: {
+				id: "draconicevolution:chaos_shard"
+				count: 1
+			}
+			size: 1.5d
+			shape: "diamond"
+			optional: true
+			dependencies: [
+				"BC3B984CE25BA9B7"
+			]
+			tasks: [
+				{
+					id: "B7D4F61A8C0C84E2"
+					type: "item"
+					item: {
+						id: "draconicevolution:chaos_shard"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "0CAC93E68D425537"
+					type: "xp_levels"
+					xp_levels: 30
+				}
+			]
+		}
+		{
+			id: "C1897AFF1AC84E9D"
+			x: 17.25d
+			y: 0.0d
+			icon: {
+				id: "draconicevolution:chaotic_core"
+				count: 1
+			}
+			optional: true
+			dependencies: [
+				"E30C3E1F3FC193D0"
+			]
+			tasks: [
+				{
+					id: "2F8C1205F5C58EE8"
+					type: "item"
+					item: {
+						id: "draconicevolution:chaotic_core"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "EB37046C6703CDC8"
+					type: "xp_levels"
+					xp_levels: 20
+				}
+			]
+		}
+		{
+			id: "3D0475CCF887E8EF"
+			x: 20.0d
+			y: 0.0d
+			icon: {
+				id: "draconicevolution:chaotic_sword"
+				count: 1
+			}
+			optional: true
+			dependencies: [
+				"C1897AFF1AC84E9D"
+			]
+			tasks: [
+				{
+					id: "6E892F059539D80B"
+					type: "item"
+					item: {
+						id: "draconicevolution:chaotic_sword"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "DBABEDC83603BC9F"
+					type: "xp_levels"
+					xp_levels: 30
+				}
+			]
+		}
+		{
+			id: "66C895F54D4751D1"
+			x: 14.5d
+			y: 5.0d
+			icon: {
+				id: "draconicevolution:reactor_prt_rotor_full"
+				count: 1
+			}
+			optional: true
+			dependencies: [
+				"DB9CE2B18B64FD29"
+			]
+			tasks: [
+				{
+					id: "59ECF50F17BE44EE"
+					type: "item"
+					item: {
+						id: "draconicevolution:reactor_prt_rotor_full"
+						count: 1
+					}
+					count: 1
+				}
+				{
+					id: "99825031B91F18E4"
+					type: "item"
+					item: {
+						id: "draconicevolution:reactor_prt_focus_ring"
+						count: 1
+					}
+					count: 1
+				}
+				{
+					id: "D1742A0F23C0B100"
+					type: "item"
+					item: {
+						id: "draconicevolution:reactor_prt_stab_frame"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "F17B66F2108745E7"
+					type: "item"
+					item: {
+						id: "draconicevolution:wyvern_core"
+						count: 1
+					}
+					count: 2
+				}
+				{
+					id: "3F9EEE0D9D3F0B90"
+					type: "xp_levels"
+					xp_levels: 10
+				}
+			]
+		}
+		{
+			id: "479E9B53C7DCC979"
+			x: 17.25d
+			y: 5.0d
+			icon: {
+				id: "draconicevolution:reactor_core"
+				count: 1
+			}
+			size: 1.75d
+			shape: "gear"
+			optional: true
+			dependencies: [
+				"66C895F54D4751D1"
+				"C1897AFF1AC84E9D"
+			]
+			tasks: [
+				{
+					id: "84ED5E36434FAEF3"
+					type: "item"
+					item: {
+						id: "draconicevolution:reactor_core"
+						count: 1
+					}
+					count: 1
+				}
+				{
+					id: "9C42152C1D60F334"
+					type: "item"
+					item: {
+						id: "draconicevolution:reactor_stabilizer"
+						count: 1
+					}
+					count: 4
+				}
+				{
+					id: "969FDFD04BCA7615"
+					type: "item"
+					item: {
+						id: "draconicevolution:reactor_injector"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "12DE1DC4F922EC29"
+					type: "xp_levels"
+					xp_levels: 40
+				}
+			]
+		}
+		{
+			id: "4952DC83553966F6"
+			x: 5.5d
+			y: 5.0d
+			icon: {
+				id: "draconicevolution:awakened_draconium_block"
+				count: 1
+			}
+			size: 2.5d
+			shape: "gear"
+			dependencies: [
+				"192803D15DEC7A34"
+			]
+			tasks: [
+				{
+					id: "00EF42CEC8D083BA"
+					type: "item"
+					item: {
+						id: "draconicevolution:awakened_draconium_block"
+						count: 1
+					}
+					count: 16
+				}
+			]
+			rewards: [
+				{
+					id: "48204312B889A485"
+					type: "loot"
+					table_id: "578264AD654E114F"
+				}
+				{
+					id: "BBD676EE55AB25EE"
+					type: "xp_levels"
+					xp_levels: 30
+				}
+			]
+		}
+	]
+	images: [
+		{
+			id: "F54C8DB7E7E77525"
+			image: "kronwerke:textures/quests/draconic_chaos/title.png"
+			x: 9.04d
+			y: -3.0d
+			width: 18.09d
+			height: 1.6d
+			rotation: 0.0d
+			order: 1
+		}
+		{
+			id: "92F7853BE538E06D"
+			image: "kronwerke:textures/quests/draconic_chaos/stage.png"
+			x: 1.67d
+			y: -1.6d
+			width: 3.34d
+			height: 0.55d
+			rotation: 0.0d
+			order: 1
+		}
+		{
+			id: "424F9E0D039E34B3"
+			image: "kronwerke:textures/quests/draconic_chaos/gear.png"
+			x: 11.4d
+			y: 6.6d
+			width: 6.8d
+			height: 0.9d
+			rotation: 0.0d
+			order: 1
+		}
+		{
+			id: "FFF4D2DEE2393CFF"
+			image: "kronwerke:textures/quests/draconic_chaos/chaos.png"
+			x: 15.05d
+			y: -1.2d
+			width: 2.11d
+			height: 0.9d
+			rotation: 0.0d
+			order: 1
+		}
+		{
+			id: "088D366B60C1B614"
+			image: "kronwerke:textures/quests/draconic_chaos/reactor.png"
+			x: 16.02d
+			y: 3.6d
+			width: 4.04d
+			height: 0.9d
+			rotation: 0.0d
+			order: 1
+		}
+	]
+}

@@ -1,0 +1,770 @@
+{
+	id: "C31133F44EAFDEF8"
+	filename: "alfheim"
+	icon: {
+		id: "botania:elven_gateway_core"
+		count: 1
+	}
+	group: "03203A1312E25E36"
+	order_index: 24
+	default_quest_shape: "circle"
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			id: "21DFCD789CB24B82"
+			x: 0.0d
+			y: 0.0d
+			icon: {
+				id: "botania:elven_gateway_core"
+				count: 1
+			}
+			size: 2.0d
+			shape: "hexagon"
+			tasks: [
+				{
+					id: "FF97A69C0FC6B7F6"
+					type: "item"
+					item: {
+						id: "botania:elven_gateway_core"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "867AB0C25E3159D3"
+					type: "item"
+					item: {
+						id: "botania:livingwood_log"
+						count: 1
+					}
+					count: 16
+				}
+				{
+					id: "26762E3D48B3C390"
+					type: "loot"
+					table_id: "BB5E855731D4F100"
+				}
+			]
+		}
+		{
+			id: "0AC6CDBCF96FAF14"
+			x: 2.6d
+			y: 0.0d
+			icon: {
+				id: "botania:natura_pylon"
+				count: 1
+			}
+			dependencies: [
+				"21DFCD789CB24B82"
+			]
+			tasks: [
+				{
+					id: "C3324178EE707B47"
+					type: "item"
+					item: {
+						id: "botania:natura_pylon"
+						count: 1
+					}
+					count: 2
+				}
+				{
+					id: "042C76CDF8B3EB99"
+					type: "item"
+					item: {
+						id: "botania:glimmering_livingwood_log"
+						count: 1
+					}
+					count: 3
+				}
+			]
+			rewards: [
+				{
+					id: "52651159C59DC022"
+					type: "item"
+					item: {
+						id: "minecraft:ender_eye"
+						count: 1
+					}
+					count: 2
+				}
+				{
+					id: "93621B00E271D462"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+		}
+		{
+			id: "D572883DBF11E881"
+			x: 5.2d
+			y: 0.0d
+			icon: {
+				id: "botania:wand_of_the_forest"
+				count: 1
+			}
+			size: 1.75d
+			shape: "diamond"
+			dependencies: [
+				"0AC6CDBCF96FAF14"
+			]
+			tasks: [
+				{
+					id: "BA9A79497DB149AF"
+					type: "advancement"
+					advancement: "botania:main/elf_portal_open"
+					criterion: ""
+				}
+			]
+			rewards: [
+				{
+					id: "9AEEA5E1C7B959D5"
+					type: "item"
+					item: {
+						id: "botania:mana_diamond"
+						count: 1
+					}
+					count: 2
+				}
+				{
+					id: "5CF7D19D480D46B9"
+					type: "loot"
+					table_id: "BB5E855731D4F100"
+				}
+			]
+		}
+		{
+			id: "45F30A273E86C937"
+			x: 5.2d
+			y: 2.4d
+			icon: {
+				id: "botania:lexica_botania"
+				count: 1
+			}
+			dependencies: [
+				"D572883DBF11E881"
+			]
+			tasks: [
+				{
+					id: "B4B0337454D47C0F"
+					type: "advancement"
+					advancement: "botania:main/elf_lexicon_pickup"
+					criterion: ""
+				}
+			]
+			rewards: [
+				{
+					id: "FF1FA4D983E88B41"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+		}
+		{
+			id: "22640781356AF5A5"
+			x: 7.8d
+			y: 0.0d
+			icon: {
+				id: "botania:dreamwood_log"
+				count: 1
+			}
+			dependencies: [
+				"D572883DBF11E881"
+			]
+			tasks: [
+				{
+					id: "B35C1EC152B7E896"
+					type: "item"
+					item: {
+						id: "botania:dreamwood_log"
+						count: 1
+					}
+					count: 16
+				}
+			]
+			rewards: [
+				{
+					id: "2E9F635C190C3FB0"
+					type: "item"
+					item: {
+						id: "botania:livingwood_log"
+						count: 1
+					}
+					count: 16
+				}
+			]
+		}
+		{
+			id: "D0FACC2FA8C71BAD"
+			x: 10.4d
+			y: 0.0d
+			icon: {
+				id: "botania:elementium_ingot"
+				count: 1
+			}
+			size: 1.5d
+			shape: "square"
+			dependencies: [
+				"22640781356AF5A5"
+			]
+			tasks: [
+				{
+					id: "0DADEA147F4BB7F8"
+					type: "item"
+					item: {
+						id: "botania:elementium_ingot"
+						count: 1
+					}
+					count: 8
+				}
+			]
+			rewards: [
+				{
+					id: "D368577ABC307087"
+					type: "item"
+					item: {
+						id: "botania:manasteel_ingot"
+						count: 1
+					}
+					count: 8
+				}
+				{
+					id: "EA537CB49949DD1D"
+					type: "loot"
+					table_id: "6BD556482A471D58"
+				}
+			]
+		}
+		{
+			id: "EA98FA4E62659939"
+			x: 10.4d
+			y: -2.4d
+			icon: {
+				id: "botania:pixie_dust"
+				count: 1
+			}
+			dependencies: [
+				"22640781356AF5A5"
+			]
+			tasks: [
+				{
+					id: "DAB865E5E3F81E0F"
+					type: "item"
+					item: {
+						id: "botania:pixie_dust"
+						count: 1
+					}
+					count: 8
+				}
+			]
+			rewards: [
+				{
+					id: "4436FE43B47FD4A5"
+					type: "item"
+					item: {
+						id: "botania:mana_pearl"
+						count: 1
+					}
+					count: 4
+				}
+			]
+		}
+		{
+			id: "656E5E64739B4ECC"
+			x: 10.4d
+			y: 2.4d
+			icon: {
+				id: "botania:dragonstone"
+				count: 1
+			}
+			dependencies: [
+				"22640781356AF5A5"
+			]
+			tasks: [
+				{
+					id: "E090C590E6195C36"
+					type: "item"
+					item: {
+						id: "botania:dragonstone"
+						count: 1
+					}
+					count: 8
+				}
+			]
+			rewards: [
+				{
+					id: "F460CB2878F666D0"
+					type: "item"
+					item: {
+						id: "botania:mana_diamond"
+						count: 1
+					}
+					count: 4
+				}
+			]
+		}
+		{
+			id: "E91E5992C63081AB"
+			x: 13.0d
+			y: -3.4d
+			icon: {
+				id: "botania:orechid"
+				count: 1
+			}
+			dependencies: [
+				"EA98FA4E62659939"
+			]
+			tasks: [
+				{
+					id: "01392FD43F583D8E"
+					type: "item"
+					item: {
+						id: "botania:orechid"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "C07C5388E678AD19"
+					type: "item"
+					item: {
+						id: "botania:redstone_root"
+						count: 1
+					}
+					count: 4
+				}
+				{
+					id: "7B1F1B8A996590A8"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+		}
+		{
+			id: "139A1A3F6C28A402"
+			x: 13.0d
+			y: -1.6d
+			icon: {
+				id: "botania:kekimurus"
+				count: 1
+			}
+			optional: true
+			dependencies: [
+				"EA98FA4E62659939"
+			]
+			tasks: [
+				{
+					id: "38E3D09E3C8C0B86"
+					type: "item"
+					item: {
+						id: "botania:kekimurus"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "50D8826B5C73EFA6"
+					type: "item"
+					item: {
+						id: "minecraft:cake"
+						count: 1
+					}
+					count: 4
+				}
+				{
+					id: "348030CF0209920E"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+		}
+		{
+			id: "04A7B89153B487BA"
+			x: 13.0d
+			y: 0.0d
+			icon: {
+				id: "botania:elven_mana_spreader"
+				count: 1
+			}
+			dependencies: [
+				"D0FACC2FA8C71BAD"
+			]
+			tasks: [
+				{
+					id: "9B68E1845E3CD60D"
+					type: "item"
+					item: {
+						id: "botania:elven_mana_spreader"
+						count: 1
+					}
+					count: 4
+				}
+			]
+			rewards: [
+				{
+					id: "B0E0136A4C975F21"
+					type: "item"
+					item: {
+						id: "botania:dreamwood_log"
+						count: 1
+					}
+					count: 16
+				}
+				{
+					id: "835E258020E34ACF"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+		}
+		{
+			id: "8167ECF6D0B5ABD4"
+			x: 13.0d
+			y: 1.6d
+			icon: {
+				id: "botania:conjuration_catalyst"
+				count: 1
+			}
+			dependencies: [
+				"D0FACC2FA8C71BAD"
+			]
+			tasks: [
+				{
+					id: "0AABDB7E863E2A64"
+					type: "item"
+					item: {
+						id: "botania:conjuration_catalyst"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "18CE73EBDF267E1E"
+					type: "item"
+					item: {
+						id: "minecraft:redstone"
+						count: 1
+					}
+					count: 32
+				}
+				{
+					id: "670BB2953844C768"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+		}
+		{
+			id: "8ABB97A55E126FDB"
+			x: 13.0d
+			y: 3.2d
+			icon: {
+				id: "botania:elementium_pickaxe"
+				count: 1
+			}
+			optional: true
+			dependencies: [
+				"D0FACC2FA8C71BAD"
+			]
+			tasks: [
+				{
+					id: "C3331B0E69B06434"
+					type: "item"
+					item: {
+						id: "botania:elementium_pickaxe"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "CD227EA07484592B"
+					type: "item"
+					item: {
+						id: "botania:elementium_ingot"
+						count: 1
+					}
+					count: 3
+				}
+			]
+		}
+		{
+			id: "D34A2C6D76766A84"
+			x: 7.8d
+			y: 2.4d
+			icon: {
+				id: "botania:diluted_ender_essence"
+				count: 1
+			}
+			dependencies: [
+				"22640781356AF5A5"
+			]
+			tasks: [
+				{
+					id: "4707E5C83C59B767"
+					type: "item"
+					item: {
+						id: "botania:diluted_ender_essence"
+						count: 1
+					}
+					count: 4
+				}
+			]
+			rewards: [
+				{
+					id: "ACCCFD674964769B"
+					type: "item"
+					item: {
+						id: "minecraft:ender_pearl"
+						count: 1
+					}
+					count: 8
+				}
+			]
+		}
+		{
+			id: "E400ABE7C8241782"
+			x: 7.8d
+			y: 5.2d
+			icon: {
+				id: "botania:corporea_spark"
+				count: 1
+			}
+			dependencies: [
+				"D34A2C6D76766A84"
+			]
+			tasks: [
+				{
+					id: "94DD7225A6444B8D"
+					type: "item"
+					item: {
+						id: "botania:corporea_spark"
+						count: 1
+					}
+					count: 4
+				}
+				{
+					id: "653F4E883B9BB74A"
+					type: "item"
+					item: {
+						id: "botania:master_corporea_spark"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "E92E69E4F32892C6"
+					type: "item"
+					item: {
+						id: "botania:mana_spark"
+						count: 1
+					}
+					count: 4
+				}
+				{
+					id: "D74F308DEEBCD559"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+		}
+		{
+			id: "692CAC6875EDC6E8"
+			x: 10.4d
+			y: 5.2d
+			icon: {
+				id: "botania:corporea_funnel"
+				count: 1
+			}
+			dependencies: [
+				"E400ABE7C8241782"
+				"656E5E64739B4ECC"
+			]
+			tasks: [
+				{
+					id: "52EE02B10DC913D4"
+					type: "item"
+					item: {
+						id: "botania:corporea_funnel"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "640358934868B12E"
+					type: "item"
+					item: {
+						id: "minecraft:redstone"
+						count: 1
+					}
+					count: 16
+				}
+				{
+					id: "B738B4AA4611DEE7"
+					type: "loot"
+					table_id: "BB5E855731D4F100"
+				}
+			]
+		}
+		{
+			id: "9401A84C8A05AB99"
+			x: 15.6d
+			y: 0.0d
+			icon: {
+				id: "botania:elementium_block"
+				count: 1
+			}
+			dependencies: [
+				"04A7B89153B487BA"
+			]
+			tasks: [
+				{
+					id: "AC546421504C5C19"
+					type: "item"
+					item: {
+						id: "botania:elementium_ingot"
+						count: 1
+					}
+					count: 64
+				}
+			]
+			rewards: [
+				{
+					id: "98BB750896378964"
+					type: "item"
+					item: {
+						id: "botania:manasteel_block"
+						count: 1
+					}
+					count: 4
+				}
+				{
+					id: "8252257015CA443A"
+					type: "loot"
+					table_id: "6BD556482A471D58"
+				}
+			]
+		}
+		{
+			id: "6D3956C3E885BEE2"
+			x: 18.2d
+			y: 0.0d
+			icon: {
+				id: "kronwerke:elven_star"
+				count: 1
+			}
+			size: 2.0d
+			shape: "gear"
+			dependencies: [
+				"9401A84C8A05AB99"
+			]
+			tasks: [
+				{
+					id: "AD6F7BF9B4A4D359"
+					type: "item"
+					item: {
+						id: "kronwerke:elven_star"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "8DFF76AB8E5FF072"
+					type: "loot"
+					table_id: "6320E512778B48ED"
+				}
+				{
+					id: "D6EE5227C4BE75B0"
+					type: "xp_levels"
+					xp_levels: 15
+				}
+			]
+		}
+	]
+	images: [
+		{
+			id: "2F2003A1B98D685E"
+			image: "kronwerke:textures/quests/alfheim/title.png"
+			x: 9.0d
+			y: -6.6d
+			width: 11.41d
+			height: 1.8d
+			rotation: 0.0d
+			order: 1
+		}
+		{
+			id: "B0D0F33B488CAA39"
+			image: "kronwerke:textures/quests/alfheim/portal.png"
+			x: 2.6d
+			y: -1.8d
+			width: 5.37d
+			height: 0.9d
+			rotation: 0.0d
+			order: 1
+		}
+		{
+			id: "EF994EBC1436856E"
+			image: "kronwerke:textures/quests/alfheim/handel.png"
+			x: 8.6d
+			y: -3.7d
+			width: 3.84d
+			height: 0.9d
+			rotation: 0.0d
+			order: 1
+		}
+		{
+			id: "67D10F6F332B997E"
+			image: "kronwerke:textures/quests/alfheim/blumen.png"
+			x: 13.2d
+			y: -4.6d
+			width: 4.34d
+			height: 0.9d
+			rotation: 0.0d
+			order: 1
+		}
+		{
+			id: "AAFD98737B267869"
+			image: "kronwerke:textures/quests/alfheim/werkzeug.png"
+			x: 16.4d
+			y: 2.6d
+			width: 5.06d
+			height: 0.9d
+			rotation: 0.0d
+			order: 1
+		}
+		{
+			id: "E74366BB35A49134"
+			image: "kronwerke:textures/quests/alfheim/corporea.png"
+			x: 5.0d
+			y: 5.2d
+			width: 3.2d
+			height: 0.9d
+			rotation: 0.0d
+			order: 1
+		}
+		{
+			id: "5C8A3493E21C3A51"
+			image: "kronwerke:textures/quests/alfheim/obelisk.png"
+			x: 16.9d
+			y: -1.6d
+			width: 5.3d
+			height: 0.9d
+			rotation: 0.0d
+			order: 1
+		}
+	]
+}

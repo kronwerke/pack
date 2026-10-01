@@ -1,0 +1,657 @@
+{
+	id: "E3FF87CF7CB17F5B"
+	filename: "eternal_starlight"
+	icon: {
+		id: "eternal_starlight:orb_of_prophecy"
+		count: 1
+	}
+	group: "D1C7157F1269A7DC"
+	order_index: 33
+	default_quest_shape: "circle"
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			id: "F2FA0CD5D7FD2963"
+			x: 0.0d
+			y: 5.0d
+			icon: {
+				id: "eternal_starlight:orb_of_prophecy"
+				count: 1
+			}
+			size: 2.0d
+			shape: "hexagon"
+			tasks: [
+				{
+					id: "2ABBB5508F3F9164"
+					type: "item"
+					item: {
+						id: "eternal_starlight:orb_of_prophecy"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "D5CD7768B0A6277E"
+					type: "loot"
+					table_id: "F05AFC22088A36B6"
+				}
+				{
+					id: "43A1ABC01A4594BF"
+					type: "xp_levels"
+					xp_levels: 10
+				}
+			]
+		}
+		{
+			id: "D74DEEABA69B5920"
+			x: 2.8d
+			y: 5.0d
+			icon: {
+				id: "eternal_starlight:chiseled_voidstone"
+				count: 1
+			}
+			size: 1.75d
+			shape: "hexagon"
+			dependencies: [
+				"F2FA0CD5D7FD2963"
+			]
+			tasks: [
+				{
+					id: "2B712DD4493E4207"
+					type: "dimension"
+					dimension: "eternal_starlight:starlight"
+				}
+			]
+			rewards: [
+				{
+					id: "B127DE1FEE25CE83"
+					type: "item"
+					item: {
+						id: "minecraft:torch"
+						count: 1
+					}
+					count: 64
+				}
+				{
+					id: "92C05930C509CEC6"
+					type: "item"
+					item: {
+						id: "minecraft:cooked_beef"
+						count: 1
+					}
+					count: 16
+				}
+				{
+					id: "4C56EA04CAA767BC"
+					type: "xp_levels"
+					xp_levels: 10
+				}
+			]
+		}
+		{
+			id: "D76B28B4DB8899BD"
+			x: 2.8d
+			y: 7.8d
+			icon: {
+				id: "eternal_starlight:seeking_eye"
+				count: 1
+			}
+			optional: true
+			dependencies: [
+				"D74DEEABA69B5920"
+			]
+			tasks: [
+				{
+					id: "8AE118F66343F113"
+					type: "item"
+					item: {
+						id: "eternal_starlight:seeking_eye"
+						count: 1
+					}
+					count: 4
+				}
+			]
+			rewards: [
+				{
+					id: "87236673D2C63E63"
+					type: "item"
+					item: {
+						id: "minecraft:ender_pearl"
+						count: 1
+					}
+					count: 4
+				}
+				{
+					id: "46704B451B6AC9F6"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+		}
+		{
+			id: "675C3E702F10EB4F"
+			x: 6.0d
+			y: 2.0d
+			icon: {
+				id: "eternal_starlight:lunar_log"
+				count: 1
+			}
+			dependencies: [
+				"D74DEEABA69B5920"
+			]
+			tasks: [
+				{
+					id: "8E1BDD958F1785AA"
+					type: "item"
+					item: {
+						id: "eternal_starlight:lunar_log"
+						count: 1
+					}
+					count: 16
+				}
+			]
+			rewards: [
+				{
+					id: "448C73B358FB7652"
+					type: "item"
+					item: {
+						id: "minecraft:bone_meal"
+						count: 1
+					}
+					count: 16
+				}
+				{
+					id: "D3E5A1B330437625"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+		}
+		{
+			id: "5BEC1B344E31ADB5"
+			x: 8.5d
+			y: 2.0d
+			icon: {
+				id: "eternal_starlight:raw_amaramber"
+				count: 1
+			}
+			dependencies: [
+				"675C3E702F10EB4F"
+			]
+			tasks: [
+				{
+					id: "DC173479D6F03E21"
+					type: "item"
+					item: {
+						id: "eternal_starlight:raw_amaramber"
+						count: 1
+					}
+					count: 9
+				}
+			]
+			rewards: [
+				{
+					id: "BB7FA8A9475E3888"
+					type: "xp_levels"
+					xp_levels: 10
+				}
+			]
+		}
+		{
+			id: "C3E9606ACC59DBDA"
+			x: 6.0d
+			y: 4.5d
+			icon: {
+				id: "eternal_starlight:blue_starlight_crystal_shard"
+				count: 1
+			}
+			dependencies: [
+				"D74DEEABA69B5920"
+			]
+			tasks: [
+				{
+					id: "92E7C73F384CE0C0"
+					type: "item"
+					item: {
+						id: "eternal_starlight:blue_starlight_crystal_shard"
+						count: 1
+					}
+					count: 16
+				}
+				{
+					id: "7E8524FA98A3F528"
+					type: "item"
+					item: {
+						id: "eternal_starlight:tooth_of_hunger"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "F40264328CB2FCDC"
+					type: "item"
+					item: {
+						id: "minecraft:glass"
+						count: 1
+					}
+					count: 16
+				}
+				{
+					id: "994F417834D819A3"
+					type: "xp_levels"
+					xp_levels: 10
+				}
+			]
+		}
+		{
+			id: "BB5277928B3141A4"
+			x: 6.0d
+			y: 7.0d
+			icon: {
+				id: "eternal_starlight:malarite"
+				count: 1
+			}
+			dependencies: [
+				"D74DEEABA69B5920"
+			]
+			tasks: [
+				{
+					id: "5D91038E7B799AAE"
+					type: "item"
+					item: {
+						id: "eternal_starlight:malarite"
+						count: 1
+					}
+					count: 8
+				}
+			]
+			rewards: [
+				{
+					id: "684B85686C4C3E01"
+					type: "xp_levels"
+					xp_levels: 10
+				}
+			]
+		}
+		{
+			id: "ECB4D625B817C55B"
+			x: 8.5d
+			y: 7.0d
+			icon: {
+				id: "eternal_starlight:glacite_shard"
+				count: 1
+			}
+			dependencies: [
+				"BB5277928B3141A4"
+			]
+			tasks: [
+				{
+					id: "B2E7B46794AC1295"
+					type: "item"
+					item: {
+						id: "eternal_starlight:glacite_shard"
+						count: 1
+					}
+					count: 8
+				}
+			]
+			rewards: [
+				{
+					id: "1BA4F4934022BF20"
+					type: "xp_levels"
+					xp_levels: 10
+				}
+			]
+		}
+		{
+			id: "EB0FDB7860008B62"
+			x: 3.5d
+			y: 1.5d
+			icon: {
+				id: "eternal_starlight:aethersent_ingot"
+				count: 1
+			}
+			optional: true
+			dependencies: [
+				"D74DEEABA69B5920"
+			]
+			tasks: [
+				{
+					id: "BB2F9B01061CC8C8"
+					type: "item"
+					item: {
+						id: "eternal_starlight:aethersent_ingot"
+						count: 1
+					}
+					count: 4
+				}
+			]
+			rewards: [
+				{
+					id: "77CF6F6435399EB5"
+					type: "xp_levels"
+					xp_levels: 10
+				}
+			]
+		}
+		{
+			id: "511078A14A0A729A"
+			x: 11.5d
+			y: 3.0d
+			icon: {
+				id: "eternal_starlight:starlit_diamond"
+				count: 1
+			}
+			size: 1.5d
+			dependencies: [
+				"5BEC1B344E31ADB5"
+				"C3E9606ACC59DBDA"
+			]
+			tasks: [
+				{
+					id: "A1E11F856BF5E1CF"
+					type: "item"
+					item: {
+						id: "eternal_starlight:deepsilver_ingot"
+						count: 1
+					}
+					count: 16
+				}
+				{
+					id: "1405ECAB3C67CE6E"
+					type: "item"
+					item: {
+						id: "eternal_starlight:starlit_diamond"
+						count: 1
+					}
+					count: 4
+				}
+			]
+			rewards: [
+				{
+					id: "129B16F91B618B2C"
+					type: "loot"
+					table_id: "F05AFC22088A36B6"
+				}
+				{
+					id: "4386E2CB374A8124"
+					type: "xp_levels"
+					xp_levels: 10
+				}
+			]
+		}
+		{
+			id: "5B7AB17A8FB04252"
+			x: 11.5d
+			y: 6.0d
+			icon: {
+				id: "eternal_starlight:thermal_springstone_ingot"
+				count: 1
+			}
+			dependencies: [
+				"ECB4D625B817C55B"
+			]
+			tasks: [
+				{
+					id: "56E8F4773BE7DA32"
+					type: "item"
+					item: {
+						id: "eternal_starlight:thermal_springstone_ingot"
+						count: 1
+					}
+					count: 8
+				}
+			]
+			rewards: [
+				{
+					id: "B9F40CE1CBE6AA23"
+					type: "xp_levels"
+					xp_levels: 10
+				}
+			]
+		}
+		{
+			id: "0EA3C3DBE67D7E81"
+			x: 14.0d
+			y: 4.5d
+			icon: {
+				id: "eternal_starlight:thermal_springstone_scythe"
+				count: 1
+			}
+			dependencies: [
+				"511078A14A0A729A"
+				"5B7AB17A8FB04252"
+			]
+			tasks: [
+				{
+					id: "CF2A7D501995F350"
+					type: "advancement"
+					advancement: "eternal_starlight:obtain_scythe"
+					criterion: ""
+				}
+			]
+			rewards: [
+				{
+					id: "3B30AEEC1C00984C"
+					type: "item"
+					item: {
+						id: "eternal_starlight:thermal_springstone_ingot"
+						count: 1
+					}
+					count: 4
+				}
+				{
+					id: "236B2BE8C0E8FF3D"
+					type: "xp_levels"
+					xp_levels: 10
+				}
+			]
+		}
+		{
+			id: "FE971AFB2F8AEA99"
+			x: 17.0d
+			y: 2.0d
+			icon: {
+				id: "eternal_starlight:golem_steel_ingot"
+				count: 1
+			}
+			size: 1.75d
+			shape: "hexagon"
+			dependencies: [
+				"0EA3C3DBE67D7E81"
+			]
+			tasks: [
+				{
+					id: "A224E1A34E226FC2"
+					type: "kill"
+					entity: "eternal_starlight:starlight_golem"
+					value: 1
+				}
+			]
+			rewards: [
+				{
+					id: "B05064D625B4F617"
+					type: "loot"
+					table_id: "A1C2F3302F73AD62"
+				}
+				{
+					id: "C44034BB5A24F99D"
+					type: "xp_levels"
+					xp_levels: 20
+				}
+			]
+		}
+		{
+			id: "AD185A026BB61908"
+			x: 17.0d
+			y: 4.5d
+			icon: {
+				id: "eternal_starlight:frozen_tube"
+				count: 1
+			}
+			size: 1.75d
+			shape: "hexagon"
+			dependencies: [
+				"0EA3C3DBE67D7E81"
+			]
+			tasks: [
+				{
+					id: "4A34B274CCC91BDF"
+					type: "kill"
+					entity: "eternal_starlight:permafrost"
+					value: 1
+				}
+			]
+			rewards: [
+				{
+					id: "10E9802E17696DB6"
+					type: "loot"
+					table_id: "A1C2F3302F73AD62"
+				}
+				{
+					id: "878CDF29E7330806"
+					type: "xp_levels"
+					xp_levels: 20
+				}
+			]
+		}
+		{
+			id: "3C4808B2A74297E8"
+			x: 17.0d
+			y: 7.0d
+			icon: {
+				id: "eternal_starlight:crescent_spear"
+				count: 1
+			}
+			size: 1.75d
+			shape: "hexagon"
+			dependencies: [
+				"0EA3C3DBE67D7E81"
+			]
+			tasks: [
+				{
+					id: "1E73A1342934F583"
+					type: "kill"
+					entity: "eternal_starlight:lunar_monstrosity"
+					value: 1
+				}
+			]
+			rewards: [
+				{
+					id: "1B533B1D46967EE4"
+					type: "loot"
+					table_id: "A1C2F3302F73AD62"
+				}
+				{
+					id: "512B3A00F26B21A5"
+					type: "xp_levels"
+					xp_levels: 20
+				}
+			]
+		}
+		{
+			id: "37700BF8F6EE2234"
+			x: 19.8d
+			y: 4.5d
+			icon: {
+				id: "eternal_starlight:orb_of_prophecy"
+				count: 1
+			}
+			size: 2.5d
+			shape: "gear"
+			dependencies: [
+				"FE971AFB2F8AEA99"
+				"AD185A026BB61908"
+				"3C4808B2A74297E8"
+			]
+			tasks: [
+				{
+					id: "4A81B37DB37C5218"
+					type: "item"
+					item: {
+						id: "eternal_starlight:golem_steel_ingot"
+						count: 1
+					}
+					count: 8
+				}
+				{
+					id: "83F79902E32B1F1B"
+					type: "item"
+					item: {
+						id: "eternal_starlight:deepsilver_ingot"
+						count: 1
+					}
+					count: 32
+				}
+			]
+			rewards: [
+				{
+					id: "A8BFA308C96B2356"
+					type: "loot"
+					table_id: "B37D68E8A5AC1C1D"
+				}
+				{
+					id: "573AD7C66962DBFD"
+					type: "xp_levels"
+					xp_levels: 25
+				}
+			]
+		}
+	]
+	images: [
+		{
+			id: "F9860DD9FE102D83"
+			image: "kronwerke:textures/quests/eternal_starlight/title.png"
+			x: 10.0d
+			y: -1.2d
+			width: 11.91d
+			height: 1.75d
+			rotation: 0.0d
+			order: 1
+		}
+		{
+			id: "E831D71CCF92B8B9"
+			image: "kronwerke:textures/quests/eternal_starlight/entry.png"
+			x: 1.4d
+			y: 3.0d
+			width: 4.94d
+			height: 0.9d
+			rotation: 0.0d
+			order: 1
+		}
+		{
+			id: "779C1C00416B77A2"
+			image: "kronwerke:textures/quests/eternal_starlight/biomes.png"
+			x: 7.25d
+			y: 0.4d
+			width: 3.14d
+			height: 0.9d
+			rotation: 0.0d
+			order: 1
+		}
+		{
+			id: "1E4690DE0BBBB6A0"
+			image: "kronwerke:textures/quests/eternal_starlight/gear.png"
+			x: 12.75d
+			y: 1.3d
+			width: 6.2d
+			height: 0.9d
+			rotation: 0.0d
+			order: 1
+		}
+		{
+			id: "CBF5922960070BB9"
+			image: "kronwerke:textures/quests/eternal_starlight/bosses.png"
+			x: 17.0d
+			y: 0.4d
+			width: 2.03d
+			height: 0.9d
+			rotation: 0.0d
+			order: 1
+		}
+	]
+}

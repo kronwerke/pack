@@ -1,0 +1,708 @@
+{
+	id: "02F8943426E99456"
+	filename: "ars_epic"
+	icon: {
+		id: "ars_nouveau:glyph_linger"
+		count: 1
+	}
+	group: "03203A1312E25E36"
+	order_index: 41
+	default_quest_shape: "circle"
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			id: "93F7F1791C5B1363"
+			x: 0.0d
+			y: 0.0d
+			icon: {
+				id: "minecraft:dragon_breath"
+				count: 1
+			}
+			size: 2.0d
+			shape: "hexagon"
+			tasks: [
+				{
+					id: "F564ABE25E46E18A"
+					type: "item"
+					item: {
+						id: "minecraft:dragon_breath"
+						count: 1
+					}
+					count: 4
+				}
+			]
+			rewards: [
+				{
+					id: "0D389F6E6E8884C7"
+					type: "item"
+					item: {
+						id: "minecraft:glass_bottle"
+						count: 1
+					}
+					count: 16
+				}
+				{
+					id: "821F3422BF0ADBBF"
+					type: "loot"
+					table_id: "F05AFC22088A36B6"
+				}
+			]
+		}
+		{
+			id: "93A77C7A7B152D16"
+			x: 3.0d
+			y: -2.2d
+			icon: {
+				id: "ars_nouveau:glyph_linger"
+				count: 1
+			}
+			dependencies: [
+				"93F7F1791C5B1363"
+			]
+			tasks: [
+				{
+					id: "AAEF472FBFC5CE1D"
+					type: "item"
+					item: {
+						id: "ars_nouveau:glyph_linger"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "DFB2F59DF7274D15"
+					type: "item"
+					item: {
+						id: "minecraft:blaze_rod"
+						count: 1
+					}
+					count: 4
+				}
+			]
+		}
+		{
+			id: "D7A7D5A5A2260EED"
+			x: 3.0d
+			y: 0.0d
+			icon: {
+				id: "ars_nouveau:glyph_wall"
+				count: 1
+			}
+			dependencies: [
+				"93F7F1791C5B1363"
+			]
+			tasks: [
+				{
+					id: "661A69DC029B3416"
+					type: "item"
+					item: {
+						id: "ars_nouveau:glyph_wall"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "4BB78D98A0B91D46"
+					type: "item"
+					item: {
+						id: "ars_nouveau:manipulation_essence"
+						count: 1
+					}
+					count: 2
+				}
+			]
+		}
+		{
+			id: "253F16A76929DD09"
+			x: 3.0d
+			y: 2.2d
+			icon: {
+				id: "ars_nouveau:glyph_glide"
+				count: 1
+			}
+			dependencies: [
+				"93F7F1791C5B1363"
+			]
+			tasks: [
+				{
+					id: "D6E539919F676C1C"
+					type: "item"
+					item: {
+						id: "ars_nouveau:glyph_glide"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "EE0670E6C9BFC959"
+					type: "item"
+					item: {
+						id: "minecraft:firework_rocket"
+						count: 1
+					}
+					count: 16
+				}
+			]
+		}
+		{
+			id: "63C9BA439B941704"
+			x: 5.6d
+			y: 0.0d
+			icon: {
+				id: "ars_nouveau:void_prism"
+				count: 1
+			}
+			optional: true
+			dependencies: [
+				"D7A7D5A5A2260EED"
+			]
+			tasks: [
+				{
+					id: "58F91B2F0ED5C170"
+					type: "item"
+					item: {
+						id: "ars_nouveau:void_prism"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "3ABBC6E767A53438"
+					type: "item"
+					item: {
+						id: "minecraft:obsidian"
+						count: 1
+					}
+					count: 8
+				}
+			]
+		}
+		{
+			id: "EAC343C22B140EAE"
+			x: 5.6d
+			y: -2.2d
+			icon: {
+				id: "ars_additions:ender_source_jar"
+				count: 1
+			}
+			dependencies: [
+				"93A77C7A7B152D16"
+			]
+			tasks: [
+				{
+					id: "63258BF49D29A79F"
+					type: "item"
+					item: {
+						id: "ars_additions:ender_source_jar"
+						count: 1
+					}
+					count: 2
+				}
+			]
+			rewards: [
+				{
+					id: "08C5D40909875CE2"
+					type: "item"
+					item: {
+						id: "ars_nouveau:source_gem_block"
+						count: 1
+					}
+					count: 4
+				}
+			]
+		}
+		{
+			id: "F6EE0B03130837E5"
+			x: 8.2d
+			y: -2.2d
+			icon: {
+				id: "ars_elemental:air_upstream"
+				count: 1
+			}
+			optional: true
+			dependencies: [
+				"EAC343C22B140EAE"
+			]
+			tasks: [
+				{
+					id: "A7B7BACC8DA54DD3"
+					type: "item"
+					item: {
+						id: "ars_elemental:air_upstream"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "07251427A2BBDDD5"
+					type: "item"
+					item: {
+						id: "minecraft:shulker_shell"
+						count: 1
+					}
+					count: 2
+				}
+			]
+		}
+		{
+			id: "195EFC76A885DEF6"
+			x: 5.6d
+			y: 2.2d
+			icon: {
+				id: "ars_additions:ritual_locate_structure"
+				count: 1
+			}
+			dependencies: [
+				"253F16A76929DD09"
+			]
+			tasks: [
+				{
+					id: "34FD88FC68322C8C"
+					type: "item"
+					item: {
+						id: "ars_additions:ritual_locate_structure"
+						count: 1
+					}
+					count: 1
+				}
+				{
+					id: "8E8F7DA9F5210740"
+					type: "item"
+					item: {
+						id: "minecraft:purpur_block"
+						count: 1
+					}
+					count: 4
+				}
+			]
+			rewards: [
+				{
+					id: "E2F1DF6CA8D622FA"
+					type: "item"
+					item: {
+						id: "ars_nouveau:source_gem"
+						count: 1
+					}
+					count: 8
+				}
+				{
+					id: "459026017EEF0B72"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+		}
+		{
+			id: "15CB1BB0DA8F1897"
+			x: 8.2d
+			y: 2.2d
+			icon: {
+				id: "ars_additions:void_protection_charm"
+				count: 1
+			}
+			dependencies: [
+				"195EFC76A885DEF6"
+			]
+			tasks: [
+				{
+					id: "1AB9395B335E1D77"
+					type: "item"
+					item: {
+						id: "ars_additions:void_protection_charm"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "AE15DC14A7C7F892"
+					type: "item"
+					item: {
+						id: "minecraft:end_stone_bricks"
+						count: 1
+					}
+					count: 8
+				}
+				{
+					id: "9356A69322174F71"
+					type: "loot"
+					table_id: "F05AFC22088A36B6"
+				}
+			]
+		}
+		{
+			id: "ABE4EE2D7DB86A2B"
+			x: 0.0d
+			y: 4.6d
+			icon: {
+				id: "ars_nouveau:sorcerer_robes"
+				count: 1
+			}
+			dependencies: [
+				"93F7F1791C5B1363"
+			]
+			tasks: [
+				{
+					id: "81D493BC965F65F1"
+					type: "item"
+					item: {
+						id: "ars_nouveau:sorcerer_hood"
+						count: 1
+					}
+					count: 1
+				}
+				{
+					id: "AABA256C4ECA79E7"
+					type: "item"
+					item: {
+						id: "ars_nouveau:sorcerer_robes"
+						count: 1
+					}
+					count: 1
+				}
+				{
+					id: "9A0D85D631C49A1C"
+					type: "item"
+					item: {
+						id: "ars_nouveau:sorcerer_leggings"
+						count: 1
+					}
+					count: 1
+				}
+				{
+					id: "61133428B5EBFAA0"
+					type: "item"
+					item: {
+						id: "ars_nouveau:sorcerer_boots"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "DBEC7768D56E3A4D"
+					type: "item"
+					item: {
+						id: "ars_nouveau:magebloom_fiber"
+						count: 1
+					}
+					count: 16
+				}
+				{
+					id: "5639C95162109528"
+					type: "loot"
+					table_id: "F05AFC22088A36B6"
+				}
+			]
+		}
+		{
+			id: "37566F80FFE3045F"
+			x: 3.0d
+			y: 4.6d
+			icon: {
+				id: "minecraft:chorus_fruit"
+				count: 1
+			}
+			dependencies: [
+				"ABE4EE2D7DB86A2B"
+			]
+			tasks: [
+				{
+					id: "E76B8E1F7CDB2EEC"
+					type: "item"
+					item: {
+						id: "minecraft:chorus_fruit"
+						count: 1
+					}
+					count: 4
+				}
+				{
+					id: "E68A59BCF533C5F1"
+					type: "checkmark"
+				}
+			]
+			rewards: [
+				{
+					id: "E2384F2507EEE726"
+					type: "item"
+					item: {
+						id: "minecraft:ender_pearl"
+						count: 1
+					}
+					count: 8
+				}
+				{
+					id: "040F15CDEF71D4D9"
+					type: "xp_levels"
+					xp_levels: 10
+				}
+			]
+		}
+		{
+			id: "310E7D8D1C690956"
+			x: 5.6d
+			y: 4.6d
+			icon: {
+				id: "ars_nouveau:thread_gliding"
+				count: 1
+			}
+			dependencies: [
+				"37566F80FFE3045F"
+				"253F16A76929DD09"
+			]
+			tasks: [
+				{
+					id: "1B149F9529C2FB7A"
+					type: "item"
+					item: {
+						id: "ars_nouveau:thread_gliding"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "43F54B1561E3C7F5"
+					type: "item"
+					item: {
+						id: "ars_nouveau:air_essence"
+						count: 1
+					}
+					count: 4
+				}
+			]
+		}
+		{
+			id: "AE660E87434B97A1"
+			x: 0.0d
+			y: 7.4d
+			icon: {
+				id: "ars_nouveau:wilden_spike"
+				count: 1
+			}
+			dependencies: [
+				"ABE4EE2D7DB86A2B"
+			]
+			tasks: [
+				{
+					id: "98B8CF2CF9C10598"
+					type: "item"
+					item: {
+						id: "ars_nouveau:wilden_spike"
+						count: 1
+					}
+					count: 4
+				}
+				{
+					id: "77FCC84D0755E9E0"
+					type: "item"
+					item: {
+						id: "ars_nouveau:wilden_horn"
+						count: 1
+					}
+					count: 4
+				}
+				{
+					id: "002F7FC596BC745C"
+					type: "item"
+					item: {
+						id: "ars_nouveau:wilden_wing"
+						count: 1
+					}
+					count: 4
+				}
+			]
+			rewards: [
+				{
+					id: "C037C36766710D92"
+					type: "item"
+					item: {
+						id: "minecraft:lapis_block"
+						count: 1
+					}
+					count: 4
+				}
+				{
+					id: "B84C0083B839FEB1"
+					type: "loot"
+					table_id: "F05AFC22088A36B6"
+				}
+			]
+		}
+		{
+			id: "2F1EF055276CDA53"
+			x: 3.0d
+			y: 7.4d
+			icon: {
+				id: "ars_nouveau:ritual_wilden_summon"
+				count: 1
+			}
+			dependencies: [
+				"AE660E87434B97A1"
+			]
+			tasks: [
+				{
+					id: "F20EFCFA27BC79A6"
+					type: "checkmark"
+				}
+			]
+			rewards: [
+				{
+					id: "C6481B5B4913BD11"
+					type: "item"
+					item: {
+						id: "minecraft:golden_apple"
+						count: 1
+					}
+					count: 4
+				}
+			]
+		}
+		{
+			id: "9168948D2B18FF4E"
+			x: 5.6d
+			y: 7.4d
+			icon: {
+				id: "ars_nouveau:wilden_tribute"
+				count: 1
+			}
+			dependencies: [
+				"2F1EF055276CDA53"
+			]
+			tasks: [
+				{
+					id: "9196B0F4CA7E4D32"
+					type: "item"
+					item: {
+						id: "ars_nouveau:wilden_tribute"
+						count: 1
+					}
+					count: 4
+				}
+			]
+			rewards: [
+				{
+					id: "D23BA3998F63CF5C"
+					type: "item"
+					item: {
+						id: "ars_nouveau:source_gem_block"
+						count: 1
+					}
+					count: 8
+				}
+				{
+					id: "0548EB4638E9B72F"
+					type: "loot"
+					table_id: "A1C2F3302F73AD62"
+				}
+			]
+		}
+		{
+			id: "2ED9F8C49E3CEF37"
+			x: 9.2d
+			y: 6.0d
+			icon: {
+				id: "ars_nouveau:wilden_tribute"
+				count: 1
+			}
+			size: 2.5d
+			shape: "gear"
+			dependencies: [
+				"9168948D2B18FF4E"
+				"310E7D8D1C690956"
+			]
+			tasks: [
+				{
+					id: "0B6897648402C229"
+					type: "item"
+					item: {
+						id: "ars_nouveau:wilden_tribute"
+						count: 1
+					}
+					count: 8
+				}
+				{
+					id: "9056C37AB7E112BE"
+					type: "checkmark"
+				}
+			]
+			rewards: [
+				{
+					id: "E4967B7E777C0D4B"
+					type: "loot"
+					table_id: "B37D68E8A5AC1C1D"
+				}
+				{
+					id: "7D76B05D18BC6E43"
+					type: "xp_levels"
+					xp_levels: 20
+				}
+			]
+		}
+	]
+	images: [
+		{
+			id: "303CE92778845B65"
+			image: "kronwerke:textures/quests/ars_epic/title.png"
+			x: 4.6d
+			y: -5.4d
+			width: 13.77d
+			height: 1.8d
+			rotation: 0.0d
+			order: 1
+		}
+		{
+			id: "221D4F82D16A04AD"
+			image: "kronwerke:textures/quests/ars_epic/glyphen.png"
+			x: 1.6d
+			y: -3.6d
+			width: 6.85d
+			height: 0.9d
+			rotation: 0.0d
+			order: 1
+		}
+		{
+			id: "9BFD6A7973415A27"
+			image: "kronwerke:textures/quests/ars_epic/erweiterungen.png"
+			x: 8.2d
+			y: -3.6d
+			width: 5.03d
+			height: 0.9d
+			rotation: 0.0d
+			order: 1
+		}
+		{
+			id: "5B851239CBDCD74E"
+			image: "kronwerke:textures/quests/ars_epic/roben.png"
+			x: 2.8d
+			y: 3.4d
+			width: 6.41d
+			height: 0.9d
+			rotation: 0.0d
+			order: 1
+		}
+		{
+			id: "E0F988FFE646301B"
+			image: "kronwerke:textures/quests/ars_epic/chimaere.png"
+			x: 2.8d
+			y: 6.1d
+			width: 3.49d
+			height: 0.9d
+			rotation: 0.0d
+			order: 1
+		}
+	]
+}

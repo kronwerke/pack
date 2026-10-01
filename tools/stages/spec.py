@@ -73,10 +73,12 @@ RULES = [
         "re:^mekanism:module_", "re:^mekanismgenerators:fusion_", "mekanismgenerators:laser_focus_matrix", "mekanismgenerators:hohlraum",
         "mekanismgenerators:reactor_glass",
         "re:^mekmm:(elite|ultimate)_", "re:^mekmm:large_",
+        # the fusion reactor frame needs polonium pellets, and NuclearCraft makes polonium in stage 4
+        "mekanism:pellet_polonium",
     ]),
     (5, [
         "mekanism:pellet_antimatter", "mekanism:antiprotonic_nucleosynthesizer", "mekanism:sps_casing", "mekanism:sps_port",
-        "mekanism:pellet_plutonium", "mekanism:pellet_polonium", "mekanism:supercharged_coil",
+        "mekanism:pellet_plutonium", "mekanism:supercharged_coil",
         "re:^mekanismgenerators:(fission_|control_rod_assembly)",
         "mekmm:replicator", "mekmm:fluid_replicator", "mekmm:chemical_replicator", "mekmm:uu_matter",
         "re:^mekmm:.*replicating_factory$", "mekmm:large_antiprotonic_nucleosynthesizer",
@@ -263,7 +265,6 @@ RULES = [
     (5, [
         "re:^draconicevolution:(awakened|chaotic|chaos|draconic)_", "re:^draconicevolution:item_(draconic|chaotic)_",
         "re:^draconicevolution:(large|medium|small)_chaos_frag$", "re:^draconicevolution:reactor_",
-        "draconicevolution:p2p_dislocator", "draconicevolution:player_dislocator",
     ]),
 
     # ---------------------------------------------------------------- Milestones (kubejs/startup_scripts/milestones.js)

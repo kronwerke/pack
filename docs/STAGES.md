@@ -123,7 +123,7 @@ Theme: the End, the stars, the machines that eat power.
 | --- | --- | --- | --- | --- |
 | Tech | Elite Control Circuit | 150 | 20 | Needs draconium dust from the End. |
 | Tech | Draconium Ingot | 1 000 | 3 | Draconium only generates in the End now. |
-| Magic | Gaia Spirit | 128, fixed | 25 | Every Gaia fight gives 8. Sixteen fights, on stream. |
+| Magic | Gaia Spirit | 128, fixed | 25 | Every player in a Gaia fight gets 6, the last hit 8. Several fights on stream. |
 | Magic | Mahou Tsukai Mystic Staff | 30, fixed | 100 | Each needs a mana investment from a player. |
 
 **Starter kit:** 16 draconium ingots, 1 gaia spirit, 64 ender pearls.

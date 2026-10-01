@@ -155,3 +155,59 @@ loot_table("s3_rare", "Elfenkiste", stage=3, entries=[
     ("minecraft:diamond_block", 2, 5),
     ("minecraft:totem_of_undying", 1, 2),
 ])
+
+# ---- Stage 4: Sternwerk ---------------------------------------------------
+
+loot_table("s4_common", "Sternkiste", stage=4, entries=[
+    ("draconicevolution:draconium_ingot", 4, 10, 4),
+    ("mekanism:alloy_atomic", 4, 8, 4),
+    ("mekanism:ingot_refined_obsidian", 8, 8, 8),
+    ("ae2:fluix_crystal", 16, 6, 16),
+    ("botania:elementium_ingot", 8, 6, 8),
+    ("eternal_starlight:blue_starlight_crystal_shard", 4, 6, 4),
+    ("eternal_starlight:thermal_springstone_ingot", 4, 5, 4),
+    ("minecraft:ender_pearl", 16, 6, 16),
+    ("minecraft:shulker_shell", 2, 4, 2),
+    ("minecraft:experience_bottle", 32, 5, 32),
+])
+
+loot_table("s4_uncommon", "Drachenkiste", stage=4, entries=[
+    ("mekanism:elite_control_circuit", 2, 8, 2),
+    ("draconicevolution:draconium_core", 1, 6),
+    ("ae2:cell_component_64k", 1, 6),
+    ("megacells:cell_component_1m", 1, 3),
+    ("nuclearcraft:uranium_ingot", 4, 5, 4),
+    ("minecraft:dragon_breath", 4, 5, 4),
+    ("minecraft:nether_star", 1, 3),
+    ("minecraft:netherite_ingot", 1, 3),
+])
+
+loot_table("s4_rare", "Gaiakiste", stage=4, entries=[
+    ("mekanism:ultimate_control_circuit", 1, 5),
+    ("draconicevolution:wyvern_core", 1, 5),
+    ("botania:gaia_spirit", 1, 4),
+    ("ae2:cell_component_256k", 1, 5),
+    ("megacells:cell_component_4m", 1, 3),
+    ("minecraft:elytra", 1, 2),
+    ("minecraft:totem_of_undying", 1, 3),
+])
+
+# ---- Stage 5: Chaoswerk ---------------------------------------------------
+
+loot_table("s5_common", "Chaoskiste", stage=5, entries=[
+    ("draconicevolution:draconium_ingot", 8, 10, 8),
+    ("mekanism:elite_control_circuit", 4, 8, 4),
+    ("mekanism:pellet_polonium", 2, 5, 2),
+    ("mekanism:pellet_plutonium", 2, 5, 2),
+    ("megacells:cell_component_1m", 1, 6),
+    ("minecraft:experience_bottle", 64, 6, 32),
+])
+
+loot_table("s5_rare", "Erwachte Kiste", stage=5, entries=[
+    ("draconicevolution:awakened_draconium_ingot", 2, 8, 2),
+    ("draconicevolution:awakened_core", 1, 5),
+    ("botania:gaia_ingot", 1, 5),
+    ("mekanism:pellet_antimatter", 1, 4),
+    ("megacells:cell_component_16m", 1, 4),
+    ("draconicevolution:chaos_shard", 1, 2),
+])

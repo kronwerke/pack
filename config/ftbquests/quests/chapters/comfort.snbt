@@ -197,7 +197,7 @@
 			x: 12.5d
 			y: 0.0d
 			icon: {
-				id: "pylons:harvester_pylon"
+				id: "minecraft:hay_block"
 				count: 1
 			}
 			optional: true
@@ -207,12 +207,7 @@
 			tasks: [
 				{
 					id: "DFF9D66331F89BD2"
-					type: "item"
-					item: {
-						id: "pylons:harvester_pylon"
-						count: 1
-					}
-					count: 1
+					type: "checkmark"
 				}
 			]
 			rewards: [
@@ -224,11 +219,6 @@
 						count: 1
 					}
 					count: 16
-				}
-				{
-					id: "C1C10846CBB77687"
-					type: "loot"
-					table_id: "870211AF0E412C54"
 				}
 			]
 		}

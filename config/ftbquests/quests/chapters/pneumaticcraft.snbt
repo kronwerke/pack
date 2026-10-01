@@ -1,0 +1,1886 @@
+{
+	id: "E56BF6F681F7E14E"
+	filename: "pneumaticcraft"
+	icon: {
+		id: "pneumaticcraft:air_compressor"
+		count: 1
+	}
+	group: "AEAA9718BAF5A32A"
+	order_index: 60
+	default_quest_shape: "circle"
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			id: "6BD585B291576480"
+			x: 0.0d
+			y: 0.0d
+			icon: {
+				id: "pneumaticcraft:ingot_iron_compressed"
+				count: 1
+			}
+			size: 2.0d
+			shape: "hexagon"
+			tasks: [
+				{
+					id: "CBA14728D7F34200"
+					type: "item"
+					item: {
+						id: "pneumaticcraft:ingot_iron_compressed"
+						count: 1
+					}
+					count: 8
+				}
+			]
+			rewards: [
+				{
+					id: "88BDEC7DBDBB53E5"
+					type: "item"
+					item: {
+						id: "pneumaticcraft:ingot_iron_compressed"
+						count: 1
+					}
+					count: 8
+				}
+				{
+					id: "DC4D54457728E58A"
+					type: "item"
+					item: {
+						id: "minecraft:tnt"
+						count: 1
+					}
+					count: 4
+				}
+				{
+					id: "777CA0FC2C5A2EBA"
+					type: "loot"
+					table_id: "F2BA64790EBA3DF5"
+				}
+			]
+		}
+		{
+			id: "E39EF5EA4E974EA6"
+			x: 2.5d
+			y: -1.0d
+			icon: {
+				id: "pneumaticcraft:reinforced_bricks"
+				count: 1
+			}
+			dependencies: [
+				"6BD585B291576480"
+			]
+			tasks: [
+				{
+					id: "2D6AE0B1666D84F9"
+					type: "item"
+					item: {
+						id: "pneumaticcraft:reinforced_bricks"
+						count: 1
+					}
+					count: 16
+				}
+			]
+			rewards: [
+				{
+					id: "E5118D4B3C138575"
+					type: "item"
+					item: {
+						id: "minecraft:stone"
+						count: 1
+					}
+					count: 32
+				}
+				{
+					id: "62B275999448358C"
+					type: "xp_levels"
+					xp_levels: 3
+				}
+			]
+		}
+		{
+			id: "8263E27B807021B9"
+			x: 2.5d
+			y: 1.0d
+			dependencies: [
+				"6BD585B291576480"
+			]
+			tasks: [
+				{
+					id: "AD3301C5DCBCAD02"
+					type: "item"
+					item: {
+						id: "pneumaticcraft:pressure_tube"
+						count: 1
+					}
+					count: 16
+				}
+			]
+			rewards: [
+				{
+					id: "4C5C9805A6F6E1BD"
+					type: "item"
+					item: {
+						id: "pneumaticcraft:pressure_tube"
+						count: 1
+					}
+					count: 8
+				}
+				{
+					id: "D50F345A3D8D73C0"
+					type: "item"
+					item: {
+						id: "minecraft:glass"
+						count: 1
+					}
+					count: 16
+				}
+			]
+		}
+		{
+			id: "42FA15A0664F4074"
+			x: 5.0d
+			y: 0.0d
+			icon: {
+				id: "pneumaticcraft:air_compressor"
+				count: 1
+			}
+			size: 1.75d
+			shape: "gear"
+			dependencies: [
+				"E39EF5EA4E974EA6"
+				"8263E27B807021B9"
+			]
+			tasks: [
+				{
+					id: "4479408F3DBAE900"
+					type: "item"
+					item: {
+						id: "pneumaticcraft:air_compressor"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "1DEA9C4C37224E69"
+					type: "item"
+					item: {
+						id: "minecraft:coal_block"
+						count: 1
+					}
+					count: 4
+				}
+				{
+					id: "D5B27099E3FD6164"
+					type: "loot"
+					table_id: "F2BA64790EBA3DF5"
+				}
+				{
+					id: "51AABA97EAE23A47"
+					type: "xp_levels"
+					xp_levels: 8
+				}
+			]
+		}
+		{
+			id: "050E6494E7D3E1C4"
+			x: 7.5d
+			y: 0.0d
+			icon: {
+				id: "pneumaticcraft:pressure_gauge"
+				count: 1
+			}
+			dependencies: [
+				"42FA15A0664F4074"
+			]
+			tasks: [
+				{
+					id: "719C6DB12810A5A4"
+					type: "checkmark"
+				}
+			]
+			rewards: [
+				{
+					id: "991F518BDC213F04"
+					type: "item"
+					item: {
+						id: "pneumaticcraft:pressure_tube"
+						count: 1
+					}
+					count: 8
+				}
+			]
+		}
+		{
+			id: "92B8034D36B5E2CE"
+			x: 10.0d
+			y: 0.0d
+			dependencies: [
+				"050E6494E7D3E1C4"
+			]
+			tasks: [
+				{
+					id: "4F97F764E557FEF2"
+					type: "item"
+					item: {
+						id: "pneumaticcraft:pressure_gauge"
+						count: 1
+					}
+					count: 4
+				}
+			]
+			rewards: [
+				{
+					id: "150BA2084520CAD8"
+					type: "item"
+					item: {
+						id: "minecraft:copper_ingot"
+						count: 1
+					}
+					count: 16
+				}
+			]
+		}
+		{
+			id: "69156144A7641C76"
+			x: 12.5d
+			y: 0.0d
+			icon: {
+				id: "pneumaticcraft:safety_tube_module"
+				count: 1
+			}
+			size: 1.5d
+			shape: "hexagon"
+			dependencies: [
+				"92B8034D36B5E2CE"
+			]
+			tasks: [
+				{
+					id: "E8974AAAE1FC8433"
+					type: "item"
+					item: {
+						id: "pneumaticcraft:safety_tube_module"
+						count: 1
+					}
+					count: 1
+				}
+				{
+					id: "DC26334F0F95127D"
+					type: "item"
+					item: {
+						id: "pneumaticcraft:pressure_gauge_module"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "48935998FECFBBB2"
+					type: "item"
+					item: {
+						id: "minecraft:redstone"
+						count: 1
+					}
+					count: 16
+				}
+				{
+					id: "80479D77BF5C78EB"
+					type: "loot"
+					table_id: "F2BA64790EBA3DF5"
+				}
+				{
+					id: "2A66333888049AC4"
+					type: "xp_levels"
+					xp_levels: 8
+				}
+			]
+		}
+		{
+			id: "98717A01E8CB085A"
+			x: 0.0d
+			y: 5.0d
+			icon: {
+				id: "pneumaticcraft:pressure_chamber_glass"
+				count: 1
+			}
+			dependencies: [
+				"8263E27B807021B9"
+			]
+			tasks: [
+				{
+					id: "3C7F0D6676083017"
+					type: "item"
+					item: {
+						id: "pneumaticcraft:pressure_chamber_wall"
+						count: 1
+					}
+					count: 16
+				}
+				{
+					id: "0AB0C6157E30F5AB"
+					type: "item"
+					item: {
+						id: "pneumaticcraft:pressure_chamber_glass"
+						count: 1
+					}
+					count: 4
+				}
+			]
+			rewards: [
+				{
+					id: "5B7325502FBA240A"
+					type: "item"
+					item: {
+						id: "pneumaticcraft:reinforced_bricks"
+						count: 1
+					}
+					count: 16
+				}
+				{
+					id: "29B51639675857D7"
+					type: "xp_levels"
+					xp_levels: 3
+				}
+			]
+		}
+		{
+			id: "9771E1B2BAFF5EC4"
+			x: 2.5d
+			y: 5.0d
+			icon: {
+				id: "pneumaticcraft:pressure_chamber_valve"
+				count: 1
+			}
+			dependencies: [
+				"98717A01E8CB085A"
+			]
+			tasks: [
+				{
+					id: "6CFF7469EB45513A"
+					type: "item"
+					item: {
+						id: "pneumaticcraft:pressure_chamber_valve"
+						count: 1
+					}
+					count: 1
+				}
+				{
+					id: "F9262355BB840B4B"
+					type: "item"
+					item: {
+						id: "pneumaticcraft:pressure_chamber_interface"
+						count: 1
+					}
+					count: 2
+				}
+			]
+			rewards: [
+				{
+					id: "162FE2C66FC35E27"
+					type: "item"
+					item: {
+						id: "minecraft:hopper"
+						count: 1
+					}
+					count: 2
+				}
+			]
+		}
+		{
+			id: "8AB1B8F745B30491"
+			x: 5.0d
+			y: 5.0d
+			icon: {
+				id: "pneumaticcraft:pressure_chamber_wall"
+				count: 1
+			}
+			size: 2.0d
+			shape: "hexagon"
+			dependencies: [
+				"9771E1B2BAFF5EC4"
+				"42FA15A0664F4074"
+			]
+			tasks: [
+				{
+					id: "0359C5E661397ED1"
+					type: "advancement"
+					advancement: "pneumaticcraft:pressure_chamber"
+					criterion: ""
+				}
+			]
+			rewards: [
+				{
+					id: "4C37ADC2BE3D9515"
+					type: "item"
+					item: {
+						id: "pneumaticcraft:pressure_chamber_glass"
+						count: 1
+					}
+					count: 8
+				}
+				{
+					id: "92B8CF554FE93D4E"
+					type: "loot"
+					table_id: "BA8E33E78A3B3A0C"
+				}
+				{
+					id: "6E5A9EB4172E1020"
+					type: "xp_levels"
+					xp_levels: 12
+				}
+			]
+		}
+		{
+			id: "0D274D6E98168F3E"
+			x: 7.5d
+			y: 4.0d
+			icon: {
+				id: "pneumaticcraft:compressed_iron_block"
+				count: 1
+			}
+			dependencies: [
+				"8AB1B8F745B30491"
+			]
+			tasks: [
+				{
+					id: "9D7B5F7C54848D14"
+					type: "item"
+					item: {
+						id: "pneumaticcraft:compressed_iron_block"
+						count: 1
+					}
+					count: 2
+				}
+			]
+			rewards: [
+				{
+					id: "D9FC3B9C8666407D"
+					type: "item"
+					item: {
+						id: "minecraft:iron_block"
+						count: 1
+					}
+					count: 4
+				}
+				{
+					id: "1212D29F4B1B4B16"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+		}
+		{
+			id: "D7663E309333E311"
+			x: 7.5d
+			y: 6.0d
+			icon: {
+				id: "pneumaticcraft:compressed_stone"
+				count: 1
+			}
+			dependencies: [
+				"8AB1B8F745B30491"
+			]
+			tasks: [
+				{
+					id: "3210988BA5C20E7C"
+					type: "item"
+					item: {
+						id: "pneumaticcraft:compressed_stone"
+						count: 1
+					}
+					count: 8
+				}
+			]
+			rewards: [
+				{
+					id: "6E2127D5B5306591"
+					type: "item"
+					item: {
+						id: "minecraft:coal_block"
+						count: 1
+					}
+					count: 8
+				}
+				{
+					id: "D9B923BAA300F0E0"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+		}
+		{
+			id: "57200176F22FC2FE"
+			x: 12.5d
+			y: 5.0d
+			icon: {
+				id: "pneumaticcraft:manometer"
+				count: 1
+			}
+			dependencies: [
+				"42FA15A0664F4074"
+			]
+			tasks: [
+				{
+					id: "CD293AC6BC05F1FD"
+					type: "item"
+					item: {
+						id: "pneumaticcraft:air_canister"
+						count: 1
+					}
+					count: 2
+				}
+				{
+					id: "F6F88B1A6772F755"
+					type: "item"
+					item: {
+						id: "pneumaticcraft:manometer"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "E38FF9131FE3F0A9"
+					type: "item"
+					item: {
+						id: "minecraft:redstone"
+						count: 1
+					}
+					count: 16
+				}
+				{
+					id: "39842B54A24DF1CF"
+					type: "xp_levels"
+					xp_levels: 3
+				}
+			]
+		}
+		{
+			id: "3F5873DF949D30FD"
+			x: 15.0d
+			y: 5.0d
+			icon: {
+				id: "pneumaticcraft:charging_station"
+				count: 1
+			}
+			size: 1.5d
+			shape: "gear"
+			dependencies: [
+				"57200176F22FC2FE"
+			]
+			tasks: [
+				{
+					id: "8532E30CFD1F3B98"
+					type: "item"
+					item: {
+						id: "pneumaticcraft:charging_station"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "F99A62F7BD0D5B95"
+					type: "item"
+					item: {
+						id: "minecraft:brick"
+						count: 1
+					}
+					count: 8
+				}
+				{
+					id: "5BE1729CBF09EE3D"
+					type: "loot"
+					table_id: "F2BA64790EBA3DF5"
+				}
+				{
+					id: "0059B23C9BF02CFF"
+					type: "xp_levels"
+					xp_levels: 8
+				}
+			]
+		}
+		{
+			id: "94E1C7B532DAD3E9"
+			x: 17.5d
+			y: 5.0d
+			dependencies: [
+				"3F5873DF949D30FD"
+			]
+			tasks: [
+				{
+					id: "5E41AD50CEC4DBA5"
+					type: "item"
+					item: {
+						id: "pneumaticcraft:pneumatic_wrench"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "D5F987EF91A632A2"
+					type: "item"
+					item: {
+						id: "pneumaticcraft:ingot_iron_compressed"
+						count: 1
+					}
+					count: 8
+				}
+				{
+					id: "7A30374CA17ABE83"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+		}
+		{
+			id: "732DD0CAAE8EFC95"
+			x: 20.0d
+			y: 5.0d
+			icon: {
+				id: "pneumaticcraft:omnidirectional_hopper"
+				count: 1
+			}
+			dependencies: [
+				"94E1C7B532DAD3E9"
+			]
+			tasks: [
+				{
+					id: "A1C711E90C98319E"
+					type: "item"
+					item: {
+						id: "pneumaticcraft:omnidirectional_hopper"
+						count: 1
+					}
+					count: 2
+				}
+			]
+			rewards: [
+				{
+					id: "A9D1CE83B6A664CC"
+					type: "item"
+					item: {
+						id: "minecraft:chest"
+						count: 1
+					}
+					count: 4
+				}
+				{
+					id: "914C8E60D74D9B2B"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+		}
+		{
+			id: "D3DF9A35D7131F95"
+			x: 0.0d
+			y: 9.0d
+			icon: {
+				id: "pneumaticcraft:liquid_compressor"
+				count: 1
+			}
+			size: 1.5d
+			dependencies: [
+				"42FA15A0664F4074"
+			]
+			tasks: [
+				{
+					id: "20C64F75926BCC90"
+					type: "item"
+					item: {
+						id: "pneumaticcraft:liquid_compressor"
+						count: 1
+					}
+					count: 1
+				}
+				{
+					id: "EDA1D4AB6E454DE0"
+					type: "item"
+					item: {
+						id: "pneumaticcraft:small_tank"
+						count: 1
+					}
+					count: 2
+				}
+			]
+			rewards: [
+				{
+					id: "B603E1DE358E2842"
+					type: "item"
+					item: {
+						id: "minecraft:leather"
+						count: 1
+					}
+					count: 8
+				}
+				{
+					id: "959E02F614F16A2A"
+					type: "loot"
+					table_id: "F2BA64790EBA3DF5"
+				}
+				{
+					id: "4D76E5EF86786329"
+					type: "xp_levels"
+					xp_levels: 8
+				}
+			]
+		}
+		{
+			id: "2B963BA9115EAA68"
+			x: 2.5d
+			y: 9.0d
+			dependencies: [
+				"D3DF9A35D7131F95"
+			]
+			tasks: [
+				{
+					id: "79BC6E9530F4458E"
+					type: "item"
+					item: {
+						id: "pneumaticcraft:seismic_sensor"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "1AA1F535782CB60A"
+					type: "item"
+					item: {
+						id: "minecraft:glass"
+						count: 1
+					}
+					count: 8
+				}
+				{
+					id: "A65A4FC58D3BF6C7"
+					type: "xp_levels"
+					xp_levels: 3
+				}
+			]
+		}
+		{
+			id: "E59897AC9FA16B2A"
+			x: 5.0d
+			y: 9.0d
+			icon: {
+				id: "pneumaticcraft:gas_lift"
+				count: 1
+			}
+			size: 1.5d
+			dependencies: [
+				"2B963BA9115EAA68"
+			]
+			tasks: [
+				{
+					id: "F1C4E866AA471F76"
+					type: "item"
+					item: {
+						id: "pneumaticcraft:gas_lift"
+						count: 1
+					}
+					count: 1
+				}
+				{
+					id: "7F52C28BFABD653E"
+					type: "item"
+					item: {
+						id: "pneumaticcraft:oil_bucket"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "11E02B52C6C9BE33"
+					type: "item"
+					item: {
+						id: "pneumaticcraft:drill_pipe"
+						count: 1
+					}
+					count: 12
+				}
+				{
+					id: "C07A57297536DBB0"
+					type: "loot"
+					table_id: "BA8E33E78A3B3A0C"
+				}
+				{
+					id: "4071422572AAEF15"
+					type: "xp_levels"
+					xp_levels: 8
+				}
+			]
+		}
+		{
+			id: "C0E3DED33ED9EAEA"
+			x: 7.5d
+			y: 9.0d
+			icon: {
+				id: "pneumaticcraft:refinery"
+				count: 1
+			}
+			size: 1.75d
+			shape: "gear"
+			dependencies: [
+				"E59897AC9FA16B2A"
+				"06BEAA0377506D18"
+			]
+			tasks: [
+				{
+					id: "FBFF909251B8152A"
+					type: "item"
+					item: {
+						id: "pneumaticcraft:refinery"
+						count: 1
+					}
+					count: 1
+				}
+				{
+					id: "5449CE60F4797715"
+					type: "item"
+					item: {
+						id: "pneumaticcraft:refinery_output"
+						count: 1
+					}
+					count: 2
+				}
+			]
+			rewards: [
+				{
+					id: "E58920801DE6D8F5"
+					type: "item"
+					item: {
+						id: "minecraft:diamond"
+						count: 1
+					}
+					count: 2
+				}
+				{
+					id: "05FF99059C264494"
+					type: "loot"
+					table_id: "BA8E33E78A3B3A0C"
+				}
+				{
+					id: "AFB85A9BC452DD5C"
+					type: "xp_levels"
+					xp_levels: 12
+				}
+			]
+		}
+		{
+			id: "74B18FEB229F27A2"
+			x: 10.0d
+			y: 9.0d
+			icon: {
+				id: "pneumaticcraft:diesel_bucket"
+				count: 1
+			}
+			dependencies: [
+				"C0E3DED33ED9EAEA"
+			]
+			tasks: [
+				{
+					id: "45B0D44F9B3CAB14"
+					type: "item"
+					item: {
+						id: "pneumaticcraft:diesel_bucket"
+						count: 1
+					}
+					count: 1
+				}
+				{
+					id: "49A6260A8974F4DE"
+					type: "item"
+					item: {
+						id: "pneumaticcraft:lpg_bucket"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "32C2A43280873FE8"
+					type: "item"
+					item: {
+						id: "pneumaticcraft:kerosene_lamp"
+						count: 1
+					}
+					count: 1
+				}
+				{
+					id: "4BAEC0F806A17E13"
+					type: "item"
+					item: {
+						id: "minecraft:bucket"
+						count: 1
+					}
+					count: 4
+				}
+				{
+					id: "5DB3C1B5802E2D39"
+					type: "xp_levels"
+					xp_levels: 8
+				}
+			]
+		}
+		{
+			id: "A1AA998DC5B64780"
+			x: 12.5d
+			y: 9.0d
+			icon: {
+				id: "pneumaticcraft:thermopneumatic_processing_plant"
+				count: 1
+			}
+			size: 1.5d
+			shape: "gear"
+			dependencies: [
+				"74B18FEB229F27A2"
+			]
+			tasks: [
+				{
+					id: "6148CC2B814B8D42"
+					type: "item"
+					item: {
+						id: "pneumaticcraft:thermopneumatic_processing_plant"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "4C6D2B5894E925AF"
+					type: "item"
+					item: {
+						id: "pneumaticcraft:small_tank"
+						count: 1
+					}
+					count: 2
+				}
+				{
+					id: "CF61ADEC0C1FD5F1"
+					type: "loot"
+					table_id: "BA8E33E78A3B3A0C"
+				}
+				{
+					id: "8628879938E394EB"
+					type: "xp_levels"
+					xp_levels: 10
+				}
+			]
+		}
+		{
+			id: "06BEAA0377506D18"
+			x: 15.0d
+			y: 9.0d
+			icon: {
+				id: "pneumaticcraft:vortex_tube"
+				count: 1
+			}
+			size: 1.5d
+			shape: "hexagon"
+			dependencies: [
+				"69156144A7641C76"
+			]
+			tasks: [
+				{
+					id: "ED2A845B26BBECE5"
+					type: "item"
+					item: {
+						id: "pneumaticcraft:vortex_tube"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "B3E348F6BAD4B465"
+					type: "item"
+					item: {
+						id: "minecraft:copper_ingot"
+						count: 1
+					}
+					count: 16
+				}
+				{
+					id: "E57D980258926DEE"
+					type: "loot"
+					table_id: "F2BA64790EBA3DF5"
+				}
+				{
+					id: "88AD24CB29C10D60"
+					type: "xp_levels"
+					xp_levels: 8
+				}
+			]
+		}
+		{
+			id: "E97EC4C400B2FEF2"
+			x: 17.5d
+			y: 8.0d
+			icon: {
+				id: "create:blaze_burner"
+				count: 1
+			}
+			dependencies: [
+				"06BEAA0377506D18"
+			]
+			tasks: [
+				{
+					id: "1B40314AE5052846"
+					type: "checkmark"
+				}
+			]
+			rewards: [
+				{
+					id: "A370D64E38B0A588"
+					type: "item"
+					item: {
+						id: "minecraft:magma_block"
+						count: 1
+					}
+					count: 8
+				}
+				{
+					id: "AEBCBC81E8221E66"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+		}
+		{
+			id: "2D0467FF96E935BF"
+			x: 17.5d
+			y: 10.0d
+			dependencies: [
+				"06BEAA0377506D18"
+			]
+			tasks: [
+				{
+					id: "1E97BC3CD4B03E49"
+					type: "item"
+					item: {
+						id: "pneumaticcraft:heat_sink"
+						count: 1
+					}
+					count: 2
+				}
+			]
+			rewards: [
+				{
+					id: "3CD5B32E093D24F1"
+					type: "item"
+					item: {
+						id: "minecraft:iron_bars"
+						count: 1
+					}
+					count: 16
+				}
+				{
+					id: "EABFA8C0C1B88E9A"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+		}
+		{
+			id: "2C2CACC751E69389"
+			x: 20.0d
+			y: 9.0d
+			icon: {
+				id: "pneumaticcraft:heat_frame"
+				count: 1
+			}
+			dependencies: [
+				"E97EC4C400B2FEF2"
+				"2D0467FF96E935BF"
+			]
+			tasks: [
+				{
+					id: "6A83683AB0E2E349"
+					type: "item"
+					item: {
+						id: "pneumaticcraft:heat_frame"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "4C4F8D2FC3A4924B"
+					type: "item"
+					item: {
+						id: "pneumaticcraft:ingot_iron_compressed"
+						count: 1
+					}
+					count: 8
+				}
+				{
+					id: "EF0E9459EF354534"
+					type: "loot"
+					table_id: "F2BA64790EBA3DF5"
+				}
+				{
+					id: "63B2B1688E2B6C73"
+					type: "xp_levels"
+					xp_levels: 8
+				}
+			]
+		}
+		{
+			id: "CEE7E899D25E0E86"
+			x: 0.0d
+			y: 13.0d
+			icon: {
+				id: "pneumaticcraft:plastic"
+				count: 1
+			}
+			size: 1.75d
+			shape: "hexagon"
+			dependencies: [
+				"A1AA998DC5B64780"
+			]
+			tasks: [
+				{
+					id: "E6F44E0367423883"
+					type: "item"
+					item: {
+						id: "pneumaticcraft:plastic"
+						count: 1
+					}
+					count: 8
+				}
+			]
+			rewards: [
+				{
+					id: "67FD7191AC786DED"
+					type: "item"
+					item: {
+						id: "pneumaticcraft:plastic"
+						count: 1
+					}
+					count: 8
+				}
+				{
+					id: "9B540C935ABC3BBE"
+					type: "loot"
+					table_id: "BA8E33E78A3B3A0C"
+				}
+				{
+					id: "F95CC8838346D6A6"
+					type: "xp_levels"
+					xp_levels: 10
+				}
+			]
+		}
+		{
+			id: "6F6A8E3E4A53FCB6"
+			x: 2.5d
+			y: 12.0d
+			icon: {
+				id: "pneumaticcraft:reinforced_pressure_tube"
+				count: 1
+			}
+			dependencies: [
+				"CEE7E899D25E0E86"
+			]
+			tasks: [
+				{
+					id: "2A7AEF9D1611A473"
+					type: "item"
+					item: {
+						id: "pneumaticcraft:reinforced_pressure_tube"
+						count: 1
+					}
+					count: 8
+				}
+			]
+			rewards: [
+				{
+					id: "7318A6DFB6C86F93"
+					type: "item"
+					item: {
+						id: "pneumaticcraft:regulator_tube_module"
+						count: 1
+					}
+					count: 1
+				}
+				{
+					id: "9474DE7A96963500"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+		}
+		{
+			id: "9A99D1120ADDCF38"
+			x: 2.5d
+			y: 14.0d
+			icon: {
+				id: "pneumaticcraft:pneumatic_cylinder"
+				count: 1
+			}
+			dependencies: [
+				"CEE7E899D25E0E86"
+			]
+			tasks: [
+				{
+					id: "47FDC96925FA9572"
+					type: "item"
+					item: {
+						id: "pneumaticcraft:pneumatic_cylinder"
+						count: 1
+					}
+					count: 4
+				}
+			]
+			rewards: [
+				{
+					id: "FEA36E257336860F"
+					type: "item"
+					item: {
+						id: "pneumaticcraft:cannon_barrel"
+						count: 1
+					}
+					count: 1
+				}
+				{
+					id: "59EE8529829F3A67"
+					type: "item"
+					item: {
+						id: "pneumaticcraft:plastic"
+						count: 1
+					}
+					count: 4
+				}
+				{
+					id: "75746D5881999414"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+		}
+		{
+			id: "185933080676CF6D"
+			x: 7.5d
+			y: 12.0d
+			icon: {
+				id: "pneumaticcraft:elevator_base"
+				count: 1
+			}
+			size: 1.5d
+			dependencies: [
+				"9A99D1120ADDCF38"
+			]
+			tasks: [
+				{
+					id: "673B1F8A80D714BE"
+					type: "item"
+					item: {
+						id: "pneumaticcraft:elevator_base"
+						count: 1
+					}
+					count: 1
+				}
+				{
+					id: "5EAA1467EAB20779"
+					type: "item"
+					item: {
+						id: "pneumaticcraft:elevator_frame"
+						count: 1
+					}
+					count: 4
+				}
+				{
+					id: "B35926AE8A1F5208"
+					type: "item"
+					item: {
+						id: "pneumaticcraft:elevator_caller"
+						count: 1
+					}
+					count: 2
+				}
+			]
+			rewards: [
+				{
+					id: "A6A7B76E2E8B565C"
+					type: "item"
+					item: {
+						id: "pneumaticcraft:elevator_frame"
+						count: 1
+					}
+					count: 8
+				}
+				{
+					id: "7E6F73FF914D75E8"
+					type: "loot"
+					table_id: "BA8E33E78A3B3A0C"
+				}
+				{
+					id: "3B3A7071C739BFB2"
+					type: "xp_levels"
+					xp_levels: 10
+				}
+			]
+		}
+		{
+			id: "E89F82BBD4851952"
+			x: 7.5d
+			y: 14.0d
+			icon: {
+				id: "pneumaticcraft:pneumatic_door_base"
+				count: 1
+			}
+			dependencies: [
+				"9A99D1120ADDCF38"
+			]
+			tasks: [
+				{
+					id: "30A41E2F33F3B1EA"
+					type: "item"
+					item: {
+						id: "pneumaticcraft:pneumatic_door"
+						count: 1
+					}
+					count: 1
+				}
+				{
+					id: "250AC681C86C249C"
+					type: "item"
+					item: {
+						id: "pneumaticcraft:pneumatic_door_base"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "C9E234924ED93019"
+					type: "item"
+					item: {
+						id: "pneumaticcraft:range_upgrade"
+						count: 1
+					}
+					count: 1
+				}
+				{
+					id: "1A20C57A9A27824C"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+		}
+		{
+			id: "F844A9541FB30F74"
+			x: 10.0d
+			y: 13.0d
+			icon: {
+				id: "pneumaticcraft:air_cannon"
+				count: 1
+			}
+			dependencies: [
+				"9A99D1120ADDCF38"
+			]
+			tasks: [
+				{
+					id: "E464442FD14FC78C"
+					type: "item"
+					item: {
+						id: "pneumaticcraft:air_cannon"
+						count: 1
+					}
+					count: 1
+				}
+				{
+					id: "805E9E49E7B7101E"
+					type: "item"
+					item: {
+						id: "pneumaticcraft:gps_tool"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "F13306C0EED637E0"
+					type: "item"
+					item: {
+						id: "minecraft:diamond"
+						count: 1
+					}
+					count: 1
+				}
+				{
+					id: "CEB4DD9D2C0FF2A1"
+					type: "loot"
+					table_id: "F2BA64790EBA3DF5"
+				}
+				{
+					id: "89111841037D4064"
+					type: "xp_levels"
+					xp_levels: 8
+				}
+			]
+		}
+		{
+			id: "0EA4F45543676377"
+			x: 13.5d
+			y: 13.0d
+			icon: {
+				id: "pneumaticcraft:lubricant_bucket"
+				count: 1
+			}
+			dependencies: [
+				"A1AA998DC5B64780"
+			]
+			tasks: [
+				{
+					id: "EB7E2952EEE049B1"
+					type: "item"
+					item: {
+						id: "pneumaticcraft:lubricant_bucket"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "DEF2E58281E76BBB"
+					type: "item"
+					item: {
+						id: "minecraft:redstone"
+						count: 1
+					}
+					count: 16
+				}
+				{
+					id: "5CD785713073F63C"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+		}
+		{
+			id: "8C14D240A8474F7A"
+			x: 16.0d
+			y: 13.0d
+			icon: {
+				id: "pneumaticcraft:speed_upgrade"
+				count: 1
+			}
+			size: 1.5d
+			shape: "hexagon"
+			dependencies: [
+				"0EA4F45543676377"
+			]
+			tasks: [
+				{
+					id: "E13CC9B5DF3E5DF0"
+					type: "item"
+					item: {
+						id: "pneumaticcraft:volume_upgrade"
+						count: 1
+					}
+					count: 1
+				}
+				{
+					id: "571EF9260E99E317"
+					type: "item"
+					item: {
+						id: "pneumaticcraft:speed_upgrade"
+						count: 1
+					}
+					count: 1
+				}
+				{
+					id: "59B2A40F7A18458D"
+					type: "item"
+					item: {
+						id: "pneumaticcraft:security_upgrade"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "B9137F50B921CE65"
+					type: "item"
+					item: {
+						id: "minecraft:lapis_lazuli"
+						count: 1
+					}
+					count: 16
+				}
+				{
+					id: "D0988EFEA0737070"
+					type: "loot"
+					table_id: "BA8E33E78A3B3A0C"
+				}
+				{
+					id: "9F1D71CC7932B4C8"
+					type: "xp_levels"
+					xp_levels: 10
+				}
+			]
+		}
+		{
+			id: "598F03C1F29CA1B2"
+			x: 0.0d
+			y: 16.0d
+			icon: {
+				id: "pneumaticcraft:amadron_tablet"
+				count: 1
+			}
+			dependencies: [
+				"CEE7E899D25E0E86"
+			]
+			tasks: [
+				{
+					id: "4C0BE26F8E8980D7"
+					type: "item"
+					item: {
+						id: "pneumaticcraft:pcb_blueprint"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "930A91686C7A5B45"
+					type: "item"
+					item: {
+						id: "minecraft:emerald"
+						count: 1
+					}
+					count: 8
+				}
+				{
+					id: "081D778E9BCD502E"
+					type: "xp_levels"
+					xp_levels: 8
+				}
+			]
+		}
+		{
+			id: "AFB0B8DEE6BF0527"
+			x: 0.0d
+			y: 18.0d
+			dependencies: [
+				"CEE7E899D25E0E86"
+				"8AB1B8F745B30491"
+			]
+			tasks: [
+				{
+					id: "45389E47CB56FDCF"
+					type: "item"
+					item: {
+						id: "pneumaticcraft:empty_pcb"
+						count: 1
+					}
+					count: 6
+				}
+			]
+			rewards: [
+				{
+					id: "C32CA7F720DA1DF4"
+					type: "item"
+					item: {
+						id: "minecraft:copper_ingot"
+						count: 1
+					}
+					count: 16
+				}
+				{
+					id: "E6CC72E292211247"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+		}
+		{
+			id: "5C85F16F076CFE8B"
+			x: 2.5d
+			y: 16.0d
+			dependencies: [
+				"598F03C1F29CA1B2"
+			]
+			tasks: [
+				{
+					id: "3E0BDD457A7387A7"
+					type: "item"
+					item: {
+						id: "pneumaticcraft:uv_light_box"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "1967A95D36E341BF"
+					type: "item"
+					item: {
+						id: "minecraft:redstone_lamp"
+						count: 1
+					}
+					count: 3
+				}
+				{
+					id: "393F7EDF3D29023F"
+					type: "loot"
+					table_id: "F2BA64790EBA3DF5"
+				}
+				{
+					id: "2999E59EE8231379"
+					type: "xp_levels"
+					xp_levels: 8
+				}
+			]
+		}
+		{
+			id: "2E24BBEAB88789C9"
+			x: 2.5d
+			y: 18.0d
+			icon: {
+				id: "pneumaticcraft:etching_tank"
+				count: 1
+			}
+			dependencies: [
+				"AFB0B8DEE6BF0527"
+				"5C85F16F076CFE8B"
+			]
+			tasks: [
+				{
+					id: "44741CFEF4095A2C"
+					type: "item"
+					item: {
+						id: "pneumaticcraft:etching_tank"
+						count: 1
+					}
+					count: 1
+				}
+				{
+					id: "AE56FC3DE4DBC66A"
+					type: "item"
+					item: {
+						id: "pneumaticcraft:unassembled_pcb"
+						count: 1
+					}
+					count: 2
+				}
+			]
+			rewards: [
+				{
+					id: "DF0AF3C9A9644F75"
+					type: "item"
+					item: {
+						id: "minecraft:obsidian"
+						count: 1
+					}
+					count: 4
+				}
+				{
+					id: "69A7FAAC866E9815"
+					type: "loot"
+					table_id: "F2BA64790EBA3DF5"
+				}
+				{
+					id: "402A1D9F8284C8BC"
+					type: "xp_levels"
+					xp_levels: 8
+				}
+			]
+		}
+		{
+			id: "49CBA4C5D0E1A0A0"
+			x: 5.5d
+			y: 17.0d
+			icon: {
+				id: "pneumaticcraft:printed_circuit_board"
+				count: 1
+			}
+			size: 2.5d
+			shape: "gear"
+			dependencies: [
+				"2E24BBEAB88789C9"
+			]
+			tasks: [
+				{
+					id: "F4D8C6890D5FCA09"
+					type: "item"
+					item: {
+						id: "pneumaticcraft:printed_circuit_board"
+						count: 1
+					}
+					count: 2
+				}
+			]
+			rewards: [
+				{
+					id: "2691F1C5D9843ED0"
+					type: "loot"
+					table_id: "C79EAEAE0F26AA7F"
+				}
+				{
+					id: "E76B5DE61771A0BF"
+					type: "item"
+					item: {
+						id: "pneumaticcraft:module_expansion_card"
+						count: 1
+					}
+					count: 4
+				}
+				{
+					id: "9BC4A5C9CE8B5582"
+					type: "xp_levels"
+					xp_levels: 20
+				}
+			]
+		}
+		{
+			id: "9F83E83146927BEA"
+			x: 8.5d
+			y: 17.0d
+			icon: {
+				id: "pneumaticcraft:turbine_rotor"
+				count: 1
+			}
+			optional: true
+			dependencies: [
+				"49CBA4C5D0E1A0A0"
+			]
+			tasks: [
+				{
+					id: "87EE15B841466820"
+					type: "checkmark"
+				}
+			]
+			rewards: [
+				{
+					id: "80D400E1418FDCFD"
+					type: "xp_levels"
+					xp_levels: 10
+				}
+			]
+		}
+	]
+	images: [
+		{
+			id: "614D19EDCC21B33E"
+			image: "kronwerke:textures/quests/pneumaticcraft/title.png"
+			x: 9.0d
+			y: -5.0d
+			width: 10.79d
+			height: 1.75d
+			rotation: 0.0d
+			order: 1
+		}
+		{
+			id: "90EE0E126B806096"
+			image: "kronwerke:textures/quests/pneumaticcraft/air.png"
+			x: 6.5d
+			y: -2.7d
+			width: 3.51d
+			height: 0.9d
+			rotation: 0.0d
+			order: 1
+		}
+		{
+			id: "A29EFC4E3B0A9F90"
+			image: "kronwerke:textures/quests/pneumaticcraft/chamber.png"
+			x: 4.0d
+			y: 3.3d
+			width: 5.87d
+			height: 0.9d
+			rotation: 0.0d
+			order: 1
+		}
+		{
+			id: "86423B760036513D"
+			image: "kronwerke:textures/quests/pneumaticcraft/tools.png"
+			x: 16.5d
+			y: 3.3d
+			width: 3.34d
+			height: 0.9d
+			rotation: 0.0d
+			order: 1
+		}
+		{
+			id: "3952D70B7F2C7790"
+			image: "kronwerke:textures/quests/pneumaticcraft/oil.png"
+			x: 6.5d
+			y: 7.3d
+			width: 5.11d
+			height: 0.9d
+			rotation: 0.0d
+			order: 1
+		}
+		{
+			id: "758D57764971D6E6"
+			image: "kronwerke:textures/quests/pneumaticcraft/heat.png"
+			x: 17.5d
+			y: 7.3d
+			width: 1.8d
+			height: 0.9d
+			rotation: 0.0d
+			order: 1
+		}
+		{
+			id: "76461D42AA75F05F"
+			image: "kronwerke:textures/quests/pneumaticcraft/plastic.png"
+			x: 1.5d
+			y: 11.3d
+			width: 3.84d
+			height: 0.9d
+			rotation: 0.0d
+			order: 1
+		}
+		{
+			id: "CBAFE97684449C5E"
+			image: "kronwerke:textures/quests/pneumaticcraft/machines.png"
+			x: 8.5d
+			y: 11.3d
+			width: 3.68d
+			height: 0.9d
+			rotation: 0.0d
+			order: 1
+		}
+		{
+			id: "23A07505E9FD86A3"
+			image: "kronwerke:textures/quests/pneumaticcraft/upgrades.png"
+			x: 15.0d
+			y: 11.3d
+			width: 3.19d
+			height: 0.9d
+			rotation: 0.0d
+			order: 1
+		}
+		{
+			id: "348958060FE6199F"
+			image: "kronwerke:textures/quests/pneumaticcraft/pcb.png"
+			x: 4.0d
+			y: 15.3d
+			width: 3.71d
+			height: 0.9d
+			rotation: 0.0d
+			order: 1
+		}
+	]
+}

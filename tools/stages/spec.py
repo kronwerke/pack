@@ -213,10 +213,10 @@ RULES = [
         "botania:elven_gateway_core", "re:^botania:dragonstone",
         "botania:elven_mana_spreader", "botania:spectrolus", "botania:dandelifeon", "botania:kekimurus", "botania:rafflowsia",
         "botania:entropinnyum", "botania:orechid", "botania:orechid_ignem", "re:^botania:.*corporea", "botania:conjuration_catalyst",
-        "botania:ring_of_thor", "botania:ring_of_loki", "botania:ring_of_odin", "botania:flugel_tiara",
+        "botania:ring_of_thor", "botania:ring_of_loki", "botania:ring_of_odin",
     ]),
     (4, [
-        "botania:gaia_pylon", "botania:gaia_spirit", "botania:gaia_head", "botania:gaia_mana_spreader",
+        "botania:flugel_tiara", "botania:gaia_pylon", "botania:gaia_spirit", "botania:gaia_head", "botania:gaia_mana_spreader",
         "botania:dice_of_fate", "botania:starcaller", "botania:key_of_the_kings_law", "botania:eye_of_the_flugel",
     ]),
     (5, ["botania:gaia_ingot"]),
@@ -273,7 +273,7 @@ RULES = [
     (3, ["re:^aether:(gravitite|enchanted_gravitite|valkyrie|phoenix|neptune|obsidian_)", "aether:sun_altar"]),
     # Deeper and Darker: the Otherside in stage 3, the warden's gear in stage 4.
     (3, ["@deeperdarker"]),
-    (4, ["re:^deeperdarker:(warden_|heart_of_the_deep|soul_elytra|sonorous_staff)"]),
+    (4, ["re:^deeperdarker:(warden_(helmet|chestplate|leggings|boots|upgrade_smithing_template)|soul_elytra|sonorous_staff)$"]),
     # Hostile Neural Networks: learn in stage 2, simulate in stage 3, fabricate in stage 4.
     (2, ["@hostilenetworks"]),
     (3, ["hostilenetworks:sim_chamber", "hostilenetworks:prediction_matrix", "hostilenetworks:overworld_prediction", "hostilenetworks:nether_prediction"]),
@@ -298,6 +298,12 @@ RULES = [
     # day one, the rest with the first machines.
     (2, ["pylons:infusion_pylon", "pylons:interdiction_pylon", "pylons:expulsion_pylon", "pylons:protection_pylon", "itemcollectors:advanced_collector", "rangedpumps:pump"]),
 
+    # Items whose recipes need a later stage than their mod: the tooltip should say so.
+    (2, ["pylons:harvester_pylon", "mysticalagriculture:tinkering_table"]),
+    (3, ["mekanism:atomic_disassembler"]),
+    (4, ["@create_jetpack", "mekanism:hdpe_elytra", "re:^cabletiers:.*mega_"]),
+    # The large wind generator makes more than the nitro reactor and the fusion reactor together.
+    (5, ["mekmm:large_wind_generator"]),
     # ---------------------------------------------------------------- Milestones (kubejs/startup_scripts/milestones.js)
     (2, ["kronwerke:brass_heart", "kronwerke:rune_core"]),
     (3, ["kronwerke:steel_core", "kronwerke:elven_star"]),

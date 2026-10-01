@@ -1,4 +1,5 @@
-// The mods added in 0.8.0: PneumaticCraft, Flux Networks, Hostile Neural Networks.
+// The mods added in 0.8.0: PneumaticCraft, Flux Networks, Hostile Neural Networks,
+// Productive Trees, Deeper and Darker, and the Productive Bees shortcut around brass.
 // See docs/RECIPES.md for the reasons behind each change.
 
 ServerEvents.recipes(event => {
@@ -45,7 +46,8 @@ ServerEvents.recipes(event => {
   // Flux Networks: the core takes a source gem instead of the eye of ender, so wireless
   // power is where magic meets tech; the controller gets the advanced circuit of its stage.
   event.remove({ id: 'fluxnetworks:flux_core' })
-  event.shaped('fluxnetworks:flux_core', [
+  // Four cores per craft, as in the mod's own recipe.
+  event.shaped('4x fluxnetworks:flux_core', [
     'fof',
     'oso',
     'fof'
@@ -93,4 +95,34 @@ ServerEvents.recipes(event => {
     N: '#c:ingots/gold',
     P: 'ae2:engineering_processor'
   }).id('kronwerke:added/loot_fabricator')
+
+  // Productive Trees ships its pollen sifter recipe only when Productive Bees is absent.
+  // Breeding by hand should work without bees, so the sifter gets its recipe back.
+  event.shaped('productivetrees:pollen_sifter', [
+    '#S#',
+    'IBI',
+    '###'
+  ], {
+    '#': '#minecraft:planks',
+    S: 'minecraft:sticky_piston',
+    I: '#c:ingots/iron',
+    B: 'minecraft:brush'
+  }).id('kronwerke:added/pollen_sifter')
+
+  // Reinforced deepslate frames the Otherside portal. Vanilla never drops it and the only
+  // recipe in the pack is an Occultism ritual that eats a warden per block. Steel, deepslate
+  // and an echo shard make two, so the stage 3 dimension is reachable in stage 3.
+  event.shaped('2x minecraft:reinforced_deepslate', [
+    'DSD',
+    'SES',
+    'DSD'
+  ], {
+    D: 'minecraft:deepslate',
+    S: '#c:ingots/steel',
+    E: 'minecraft:echo_shard'
+  }).id('kronwerke:added/reinforced_deepslate')
+
+  // The brass bee would hand out the stage 2 milestone metal for free once a single bee
+  // exists. Its comb gives nothing in the centrifuge; the bee itself stays as a curiosity.
+  event.remove({ id: 'productivebees:centrifuge/alloys/honeycomb_brass' })
 })

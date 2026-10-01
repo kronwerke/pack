@@ -86,20 +86,20 @@ quests = [
           deps=["magnet"], icon="itemcollectors:basic_collector"),
 
     # ---- Pylonen -------------------------------------------------------------------
-    quest("harvester", 12.5, 0, "&eBau den Erntepylon",
-          subtitle="Ein Feld, das sich selbst erntet.",
+    quest("harvester", 12.5, 0, "&dLies, was der Erntepylon tut",
+          subtitle="Ein Feld, das sich selbst erntet, ab Stufe 2.",
           description=[
               "&eRezept:&r drei &6Quarzstufen&r oben, &6Eisengitter&r, &6Heuballen&r, &6Eisengitter&r in der Mitte, drei &6Polierter Schwarzstein&r unten. Ein &6Erntepylon&r.",
               "",
               "Stell ihn in oder über den Wasserblock deines Feldes, eine &6Truhe&r direkt darüber und eine &6Hacke&r in den Pylon. Alle &e3 Sekunden&r erntet er reife Pflanzen im eingestellten Bereich, pflanzt nach und legt den Ertrag in die Truhe. Jede Ernte kostet die Hacke einen Punkt Haltbarkeit.",
               "",
-              "&cHinweis:&r Quarz und Schwarzstein kommen aus dem Nether. Der Pylon ist in Stufe 1 freigegeben, bauen kannst du ihn aber erst mit &eStufe 2&r. Sammle bis dahin den Heuballen und die Gitter.",
+              "&cHinweis:&r Quarz und Schwarzstein kommen aus dem Nether, der Pylon öffnet mit &eStufe 2&r. Sammle bis dahin den Heuballen und die Gitter. In Stufe 1 ernten der Trichter-Pflanztopf und die Create-Erntemaschine, siehe Kapitel Erste Farmen.",
               "",
               "Die Hacke lässt sich nicht per Rohr nachfüllen. Eine unzerbrechliche Hacke von Silent Gear oder einfach ein Stapel Steinhacken daneben hilft.",
           ],
-          tasks=[task_item("pylons:harvester_pylon", 1)],
-          rewards=[reward_item("minecraft:bread", 16), reward_table("s1_uncommon")],
-          deps=["collector"], icon="pylons:harvester_pylon", optional=True),
+          tasks=[task_checkmark("Gelesen")],
+          rewards=[reward_item("minecraft:bread", 16)],
+          deps=["collector"], icon="minecraft:hay_block", optional=True),
 
     quest("pylons", 15.5, 0, "&dLies, was die anderen Pylonen tun",
           subtitle="Vier Pylonen für Stufe 2.",

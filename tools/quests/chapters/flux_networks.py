@@ -1,0 +1,395 @@
+"""Flux Networks in stage 3: flux dust on bedrock, the flux core (Kronwerke: a source gem instead
+of the eye of ender) and the flux block, networks with name, colour, security and members, the
+plug and the point with priority, transfer limit and surge mode, the controller (Kronwerke: an
+advanced control circuit) with wireless charging, the basic storage (herculean is stage 4,
+gargantuan stage 5, only named), statistics, chunk loading and three typical setups. Numbers
+follow config/fluxnetworks-server.toml and the jar; recipes follow
+kubejs/server_scripts/kronwerke/added.js."""
+from ftbq import (chapter, quest, task_item, task_checkmark, reward_item, reward_table, reward_xp,
+                  banner, img, item_texture)
+
+C = "flux_networks"
+
+quests = [
+    # ---- Flux herstellen -------------------------------------------------------
+    quest("dust", 0, 1, "&c&lMach Flux-Staub",
+          subtitle="Redstone, auf Grundgestein zerquetscht.",
+          description=[
+              "Such &6Grundgestein&r, lass darüber einen Block Luft und setz darauf einen &6Obsidian&r. Wirf &6Redstone&r in die Lücke, so dass es auf dem Grundgestein liegt, und schlag mit der Faust (Linksklick) auf den Obsidian.",
+              "",
+              "Jedes Redstone wird zu einem &6Flux-Staub&r, bis zu &d512&r (acht Stapel) auf einen Schlag. Der Obsidian rutscht dabei in die Lücke. Bei weniger als acht Redstone bleibt er immer heil, ab acht kann er zu Bruchstein zerfallen, und bei acht Stapeln tut er das fast sicher.",
+              "",
+              img(item_texture("fluxnetworks:flux_dust"), 32, 32),
+              "",
+              "&eTipp:&r Wirf gleich acht Stapel hinein. Ein Obsidian für 512 Staub ist ein guter Preis, und Bruchstein ist schneller weggehackt als Obsidian. Grundgestein liegt ganz unten in der Oberwelt und im Nether. JEI zeigt das Ganze unter &eCreating Flux&r.",
+              "",
+              "&eSpäter:&r Statt Grundgestein tut es auch ein &6Flux-Block&r. Sobald du einen hast, machst du den Staub zu Hause.",
+              "",
+              "&eWas in Stufe 3 offen ist:&r alles von Flux Networks bis zum Einfachen Speicher. Der Herkulische Speicher kommt in Stufe 4, der Gigantische in Stufe 5.",
+          ],
+          tasks=[task_item("fluxnetworks:flux_dust", 32)],
+          rewards=[reward_item("minecraft:redstone", 32), reward_table("s3_common")],
+          icon="fluxnetworks:flux_dust", size=2.0, shape="hexagon"),
+
+    quest("core", 2.5, 1, "&dBau Flux-Kerne",
+          subtitle="Auf Kronwerke mit einem Quelljuwel.",
+          description=[
+              "&eRezept auf Kronwerke:&r vier &6Flux-Staub&r in die Ecken, vier &6Obsidian&r an die Seiten, in die Mitte ein &6Quelljuwel&r aus Ars Nouveau statt des Enderauges. Ergibt vier &6Flux-Kerne&r.",
+              "",
+              img(item_texture("fluxnetworks:flux_core"), 32, 32),
+              "",
+              "Der Kern steckt in jedem Gerät: vier pro Stecker oder Punkt, vier in jedem Flux-Block. Ein Quelljuwel kostet 500 Quelle in der Imbuement-Kammer, siehe Kapitel &aArs Nouveau&r. Ein Juwel macht vier Kerne, rechne für den Anfang mit zwanzig Kernen, also fünf Juwelen.",
+              "",
+              "Kein eigenes Quellglas? Die Magier haben Juwelen übrig, seit das Ziel von Stufe 1 voll ist. Flux-Staub ist eine gute Tauschware, den brauchen sie selbst nicht.",
+          ],
+          tasks=[task_item("fluxnetworks:flux_core", 8)],
+          rewards=[reward_item("ars_nouveau:source_gem", 8), reward_item("minecraft:obsidian", 16)],
+          deps=["dust"], icon="fluxnetworks:flux_core"),
+
+    quest("block", 5, 1, "&9Presse Flux-Blöcke",
+          subtitle="Vier Kerne, fünf Staub.",
+          description=[
+              "Vier &6Flux-Kerne&r und fünf &6Flux-Staub&r im Schachbrett (Staub in die Ecken und die Mitte, Kerne an die Seiten) ergeben einen &6Flux-Block&r.",
+              "",
+              img("fluxnetworks:textures/block/flux_block.png", 32, 32),
+              "",
+              "Der Block ist das Gehäuse des Steckers, fünf stecken im Controller und sechs in jedem Speicher. Und er ersetzt das Grundgestein beim Staubmachen: Flux-Block unten, Luft mit Redstone, Obsidian oben, Linksklick.",
+          ],
+          tasks=[task_item("fluxnetworks:flux_block", 2)],
+          rewards=[reward_item("fluxnetworks:flux_dust", 16), reward_xp(5)],
+          deps=["core"], icon="fluxnetworks:flux_block"),
+
+    quest("configurator", 2.5, 3.2, "&bBau den Flux-Konfigurator",
+          subtitle="Das Netz in der Tasche.",
+          description=[
+              "Ein &6Enderauge&r oben rechts, zwei &6Flux-Staub&r und zwei &6Obsidian&r in einer Diagonale von unten links nach oben rechts ergeben den &6Flux-Konfigurator&r.",
+              "",
+              "Rechtsklick in die Luft öffnet dein Netzwerk-Fenster von überall, ohne an einem Gerät zu stehen. &eSchleichen und Rechtsklick&r auf ein Flux-Gerät kopiert dessen Einstellungen (Netz, Priorität, Limit), &eRechtsklick&r auf das nächste Gerät fügt sie ein.",
+              "",
+              "Du brauchst ihn nicht zwingend, aber sobald du mehr als fünf Punkte setzt, sparst du dir mit ihm jedes einzelne Verbinden.",
+          ],
+          tasks=[task_item("fluxnetworks:flux_configurator", 1)],
+          rewards=[reward_item("minecraft:ender_eye", 2), reward_xp(5)],
+          deps=["dust"]),
+
+    # ---- Das Netzwerk ----------------------------------------------------------
+    quest("network", 7.5, 1, "&a&lLeg ein Netzwerk an",
+          subtitle="Name, Farbe, und wem es gehört.",
+          description=[
+              "Öffne ein Flux-Gerät oder den Konfigurator, Reiter &eEin neues Netzwerk erstellen&r: Namen eingeben, Farbe wählen, &eErstellen&r. Jeder Spieler kann bis zu &d5&r Netzwerke besitzen.",
+              "",
+              "Ein Netzwerk ist kein Block und kein Ort. Es ist eine Liste: Alle Stecker, Punkte, Controller und Speicher, die du ihm zuweist, teilen sich den Strom, egal wie weit sie auseinanderstehen und in welcher Dimension. Es gibt keine Reichweite und keine Verluste.",
+              "",
+              "Die Farbe siehst du an den Geräten in der Welt, so erkennst du im Keller des Nachbarn, wessen Punkt das ist. In den &eNetzwerkeinstellungen&r änderst du Name und Farbe später, stellst die Anzeige auf FE oder EU um und löschst das Netz (doppelt Shift halten).",
+          ],
+          tasks=[task_checkmark("Netzwerk erstellt")],
+          rewards=[reward_item("fluxnetworks:flux_dust", 8), reward_xp(5)],
+          deps=["block", "configurator"], icon="fluxnetworks:flux_configurator", size=1.5, shape="hexagon"),
+
+    quest("security", 10, 0, "&eSichere dein Netzwerk",
+          subtitle="Öffentlich, verschlüsselt oder privat.",
+          description=[
+              "Unter &eSicherheit&r wählst du: &6Öffentlich&r (jeder kann Geräte anschließen), &6Verschlüsselt&r (nur mit &ePasswort&r) oder &6Privat&r (nur eingetragene Mitglieder).",
+              "",
+              "Auf einem Server mit vielen Spielern ist verschlüsselt der gute Mittelweg: Freunde bekommen das Passwort und hängen ihre Punkte an deinen Strom, Fremde nicht. Wer nicht ans Netz darf, bekommt am Gerät &cZugriff verweigert&r.",
+              "",
+              "Server-Admins können sich zum Super-Admin machen und in jedes Netz schauen. Das ist für Streit um Strom gedacht, nicht für Alltag.",
+          ],
+          tasks=[task_checkmark("Sicherheit eingestellt")],
+          rewards=[reward_xp(5)],
+          deps=["network"], icon="minecraft:iron_door"),
+
+    quest("members", 10, 2.2, "&eLade Mitglieder ein",
+          subtitle="Besitzer, Admin, Benutzer.",
+          description=[
+              "Im Reiter &eNetzwerkmitglieder&r trägst du einen Spielernamen ein und setzt ihn als &6Benutzer&r oder &6Admin&r. Benutzer dürfen Geräte anschließen und bedienen, Admins auch Einstellungen ändern und Mitglieder verwalten.",
+              "",
+              "Nur der &6Besitzer&r kann das Netz löschen oder den Besitz übertragen. Für ein gemeinsames Team-Kraftwerk macht einer das Netz auf und setzt die anderen als Admins. Wer nicht eingetragen ist, gilt als &7Fremder&r.",
+              "",
+              "Mitglieder zählen auch fürs drahtlose Laden: Nur wer im Netz ist, kann sich daraus laden lassen.",
+          ],
+          tasks=[task_checkmark("Mitglied eingetragen")],
+          rewards=[reward_item("minecraft:redstone_block", 4), reward_xp(5)],
+          deps=["network"], icon="minecraft:name_tag"),
+
+    quest("foreign", 12.5, 1, "&eHäng dich an ein fremdes Netz",
+          subtitle="Passwort rein, Strom raus.",
+          description=[
+              "Öffne deinen Punkt, Reiter &eNetzwerkauswahl&r. Dort steht jedes Netzwerk des Servers mit seinem Besitzer. Öffentliche verbindest du direkt, verschlüsselte nach dem Passwort, private nur, wenn der Besitzer dich eingetragen hat.",
+              "",
+              "So teilt ihr euch ein Kraftwerk: Einer baut den Reaktor und den Stecker, alle anderen setzen nur Punkte. Wer Strom gibt, sollte im Reiter Statistik ab und zu nachsehen, ob der Eingang noch über dem Ausgang liegt.",
+          ],
+          tasks=[task_checkmark("Mit einem fremden Netz verbunden")],
+          rewards=[reward_table("s3_common"), reward_xp(5)],
+          deps=["security", "members"], icon="minecraft:writable_book", optional=True),
+
+    # ---- Stecker und Punkt -----------------------------------------------------
+    quest("plug", 2.5, 6.5, "&a&lBau einen Flux-Stecker",
+          subtitle="Hier geht der Strom ins Netz.",
+          description=[
+              "Vier &6Flux-Kerne&r in Kreuzform um einen &6Flux-Block&r ergeben den &6Flux-Stecker&r (Flux Plug).",
+              "",
+              "Ein Stecker nimmt Strom von allen Blöcken an, die an ihm anliegen, und schiebt ihn ins Netzwerk. Er zieht nichts von selbst: Der Generator, die Energiezelle oder das Kabel daneben muss den Strom hineindrücken, so wie in eine Maschine. Setz ihn also direkt an den Generator oder ans Ende des Kabels.",
+              "",
+              "Ein Stecker schafft bis zu &d800.000 FE/t&r. Das reicht für jedes Kraftwerk dieser Stufe. Mit Blöcken und Kernen kostet er 13 Staub, 8 Obsidian und 2 Quelljuwelen, und du brauchst nur einen pro Kraftwerk.",
+          ],
+          tasks=[task_item("fluxnetworks:flux_plug", 1)],
+          rewards=[reward_table("s3_common"), reward_xp(10)],
+          deps=["block"], icon="fluxnetworks:flux_plug", size=1.5, shape="hexagon"),
+
+    quest("point", 5, 6.5, "&c&lBau einen Flux-Punkt",
+          subtitle="Hier kommt der Strom wieder heraus.",
+          description=[
+              "Vier &6Flux-Kerne&r in Kreuzform um einen &6Redstoneblock&r ergeben den &6Flux-Punkt&r (Flux Point). Er ist das billigere Gerät, denn davon brauchst du viele.",
+              "",
+              "Ein Punkt drückt Strom aus dem Netz aktiv in alle Blöcke, die an ihm anliegen: Maschinen, Speicher, Kabel. Er holt sich pro Tick so viel aus dem Netz, wie seine Nachbarn annehmen, bis zu &d800.000 FE/t&r.",
+              "",
+              "Ein Punkt hat sechs Seiten, ein Punkt zwischen zwei Maschinen versorgt also beide. Kosten pro Punkt: 4 Staub, 4 Obsidian, ein Quelljuwel, ein Redstoneblock.",
+          ],
+          tasks=[task_item("fluxnetworks:flux_point", 2)],
+          rewards=[reward_item("minecraft:redstone_block", 4), reward_xp(10)],
+          deps=["block"], icon="fluxnetworks:flux_point", size=1.5, shape="hexagon"),
+
+    quest("first_link", 7.5, 6.5, "&6&lSchließe die erste Maschine an",
+          subtitle="Stecker am Generator, Punkt an der Maschine, kein Kabel.",
+          description=[
+              "Setz den &6Stecker&r neben deinen Generator und den &6Punkt&r neben eine Maschine, egal wo. Öffne beide (Rechtsklick), Reiter &eNetzwerkauswahl&r, dein Netz anklicken, &eVerbinden&r. Die Lämpchen am Gerät gehen an, die Maschine läuft.",
+              "",
+              "Im Reiter &eHome&r jedes Geräts siehst du den Namen, den Puffer und wie viel gerade fließt. Mit &eThe One Probe&r siehst du Netz und Durchfluss auch beim Hinsehen, Limit und Priorität beim Schleichen.",
+              "",
+              "&eKronwerke:&r Ab hier brauchen deine Stahlstraßen für das Ziel von Stufe 3 keinen Kabelkanal mehr. Jede neue Fabrik bekommt einen Punkt, fertig.",
+          ],
+          tasks=[task_checkmark("Erste Maschine läuft über Flux")],
+          rewards=[reward_table("s3_uncommon"), reward_xp(10)],
+          deps=["plug", "point", "network"], icon="fluxnetworks:flux_point", size=1.75, shape="gear"),
+
+    quest("sides", 10, 5.5, "&7Lies die Seiten ab",
+          subtitle="Alle sechs Seiten verbinden sich von selbst.",
+          description=[
+              "Ein Stecker oder Punkt verbindet sich automatisch mit jedem Nachbarn, der Strom nimmt oder gibt. Am Block siehst du an jeder verbundenen Seite einen kleinen Anschluss, im Reiter &eHome&r stehen alle sechs Seiten mit dem Nachbarblock und seinem Durchfluss.",
+              "",
+              "Eine einzelne Seite abschalten gibt es nicht. Soll ein Nachbar nichts bekommen, stell seine eigene Seite ab (bei Mekanism mit dem Konfigurator auf &eKeine&r) oder lass einen Block Abstand.",
+          ],
+          tasks=[task_checkmark("Verstanden")],
+          rewards=[reward_xp(5)],
+          deps=["first_link"], icon="minecraft:compass"),
+
+    quest("priority", 10, 7.7, "&ePrioritäten setzen",
+          subtitle="Wer zuerst Strom bekommt.",
+          description=[
+              "Im Reiter &eHome&r stellst du die &ePriorität&r von &d-9999&r bis &d9999&r. Punkte mit hoher Zahl werden zuerst versorgt, Stecker mit hoher Zahl zuerst abgeschöpft. Reicht der Strom nicht, bleiben die niedrigen leer.",
+              "",
+              "Beispiel: Erzstraße auf 10, Beleuchtung und Deko auf 0, der Punkt am Energiewürfel auf -10. Dann wird gespeichert, was übrig ist, und die Straße stottert nie.",
+          ],
+          tasks=[task_checkmark("Priorität gesetzt")],
+          rewards=[reward_xp(5)],
+          deps=["first_link"], icon="minecraft:repeater"),
+
+    quest("limit", 12.5, 5.5, "&eStell das Übertragungslimit",
+          subtitle="Wie viel pro Tick höchstens durch darf.",
+          description=[
+              "Das &eÜbertragungslimit&r steht bei Stecker, Punkt und Controller auf &d800.000 FE/t&r, je Gerät und Tick. Du kannst es senken oder mit &eLimit umgehen&r ganz aufheben.",
+              "",
+              "Ein Limit ist nützlich, wenn ein Punkt einem Nachbarn nicht alles geben soll, etwa einem Energiewürfel neben der Fabrik, der sonst die ganze Reihe leer saugt. Gib ihm 2.000 FE/t, dann füllt er sich langsam im Hintergrund.",
+              "",
+              "Der &ePuffer&r eines Steckers oder Punkts ist höchstens ein Tick Limit groß. Strom liegt also nirgends im Netz herum, nur in Speichern.",
+          ],
+          tasks=[task_checkmark("Limit eingestellt")],
+          rewards=[reward_xp(5)],
+          deps=["sides"], icon="minecraft:comparator"),
+
+    quest("surge", 12.5, 7.7, "&cSchalte Überspannung ein",
+          subtitle="Dieser Punkt kommt vor allen anderen.",
+          description=[
+              "&eÜberspannungsmodus&r (Power Surge) setzt die Priorität des Geräts auf &d100.000&r, über alles, was du von Hand einstellen kannst. Gedacht für den einen Verbraucher, der nie ausgehen darf: der Controller fürs Laden, die Pumpe am Reaktor.",
+              "",
+              "Mehrere Geräte mit Überspannung teilen sich dann gleichberechtigt. Mehr als ein oder zwei solltest du nicht haben, sonst ist der Modus wertlos.",
+          ],
+          tasks=[task_checkmark("Überspannung gesetzt")],
+          rewards=[reward_xp(5)],
+          deps=["priority"], icon="minecraft:redstone_torch"),
+
+    quest("devices_move", 15, 6.6, "&7Setz Geräte um",
+          subtitle="Einstellungen bleiben am Gerät.",
+          description=[
+              "Ein abgebautes Flux-Gerät behält Netz, Namen, Priorität und Limit, ein Speicher auch seinen Strom. Setz es woanders hin, und es ist sofort wieder verbunden.",
+              "",
+              "Willst du ein Gerät verschenken oder neu einrichten, leg es allein in die Werkbank: Das Rezept setzt die Einstellungen zurück. Oder kopier mit dem Konfigurator die Einstellungen eines fertigen Punkts (Schleichen und Rechtsklick) und füg sie auf jeden neuen Punkt (Rechtsklick), dann sparst du dir das Verbinden.",
+          ],
+          tasks=[task_checkmark("Verstanden")],
+          rewards=[reward_xp(5)],
+          deps=["limit", "surge"], icon="fluxnetworks:flux_configurator", optional=True),
+
+    # ---- Drahtloses Laden ------------------------------------------------------
+    quest("controller", 2.5, 12, "&5&lBau den Flux-Controller",
+          subtitle="Lädt alles, was du am Körper trägst.",
+          description=[
+              "&eRezept auf Kronwerke:&r fünf &6Flux-Blöcke&r (oben links, oben rechts, unten alle drei), oben in der Mitte ein &6Flux-Kern&r, links und rechts je ein &6Flux-Staub&r und in die Mitte ein &6Fortschrittlicher Steuerschaltkreis&r von Mekanism.",
+              "",
+              img("fluxnetworks:textures/block/flux_controller.png", 32, 32),
+              "",
+              "Der Controller ist das Gerät für &edrahtloses Laden&r: Er zieht Strom aus dem Netz und füllt die Gegenstände, die Mitglieder am Körper tragen, überall auf der Welt. Pro Netzwerk ist nur &dein&r Controller erlaubt.",
+              "",
+              "Der Schaltkreis braucht Gedrucktes Silizium aus dem AE2-Inscriber, siehe Kapitel &5Mekanism: Fortgeschritten&r. Mit Blöcken, Kern und Staub stecken 21 Kerne im Controller, also 48 Staub, 21 Obsidian und sechs Quelljuwelen.",
+          ],
+          tasks=[task_item("fluxnetworks:flux_controller", 1)],
+          rewards=[reward_table("s3_uncommon"), reward_item("mekanism:advanced_control_circuit", 2), reward_xp(15)],
+          deps=["first_link"], icon="fluxnetworks:flux_controller", size=2.0, shape="gear"),
+
+    quest("wireless", 5, 12, "&dRichte drahtloses Laden ein",
+          subtitle="Hände, Schnellzugriff, Rüstung, Curios.",
+          description=[
+              "Öffne den Controller oder den Konfigurator, Reiter &eDrahtloses Laden&r. Hak &eDrahtlos aktivieren&r an und wähle die Plätze: &6Haupthand&r, &6Nebenhand&r, &6Schnellzugriff&r, &6Rüstung&r, &6Curios&r. Das Hauptinventar lässt sich nicht laden.",
+              "",
+              "Die Einstellung gilt für dich: Jedes Mitglied wählt selbst, ob und aus welchem Netz es geladen wird. Du musst online und am Leben sein, Entfernung und Dimension sind egal.",
+              "",
+              "Geladen wird alles, was FE annimmt, mit bis zu &d800.000 FE/t&r für alle zusammen. Schalte am Controller &eÜberspannung&r ein, dann kommt er immer vor den Maschinen dran.",
+          ],
+          tasks=[task_checkmark("Drahtloses Laden aktiv")],
+          rewards=[reward_item("mekanism:energy_tablet", 1), reward_xp(10)],
+          deps=["controller"], icon="mekanism:energy_tablet"),
+
+    quest("charge_items", 7.5, 12, "&dTrag Werkzeug, das sich selbst lädt",
+          subtitle="Nie wieder an die Ladestation.",
+          description=[
+              "Alles mit FE-Speicher füllt sich am Körper von selbst: Mekanisms &6Energietablett&r, &6Atomzerleger&r und &6Freiläufer&r, die &6Drahtlose Konsole&r von AE2 im Schnellzugriff, Oritechs &6Jetpack&r auf dem Rücken.",
+              "",
+              "Nicht geladen wird, was keinen Strom nimmt: Der Mekanism-Jetpack fliegt mit Wasserstoff, Create-Rückentanks mit Druckluft. Die bleiben an ihrer Füllstation.",
+              "",
+              "Ein Energietablett im Schnellzugriff ist der einfachste Test: Wenn seine Anzeige steigt, läuft das Laden.",
+          ],
+          tasks=[task_item("mekanism:energy_tablet", 1)],
+          rewards=[reward_item("mekanism:alloy_infused", 4), reward_xp(10)],
+          deps=["wireless"], icon="mekanism:free_runners", optional=True),
+
+    # ---- Speicher und Übersicht ------------------------------------------------
+    quest("storage", 10, 12, "&9&lBau einen Flux-Speicher",
+          subtitle="Zwei Millionen FE im Netz.",
+          description=[
+              "Sechs &6Flux-Blöcke&r oben und unten, zwei &6Glasscheiben&r links und rechts ergeben den &6Einfachen Flux-Speicher&r (Basic Flux Storage): &d2.000.000 FE&r, und er nimmt oder gibt bis zu &d20.000 FE/t&r.",
+              "",
+              "Ein Speicher hängt direkt im Netz, ohne Stecker oder Punkt. Er füllt sich, wenn mehr hereinkommt als die Punkte verlangen, und gibt ab, wenn die Stecker nicht reichen. Die Anzeige am Block zeigt den Füllstand.",
+              "",
+              "Abgebaut behält er seinen Strom. 24 Kerne (54 Staub, 24 Obsidian, 6 Quelljuwelen) sind nicht wenig; eine Powah-Energiezelle neben einem Punkt ist billiger, aber ein Flux-Speicher puffert für das ganze Netz, auch über Dimensionen hinweg.",
+          ],
+          tasks=[task_item("fluxnetworks:basic_flux_storage", 1)],
+          rewards=[reward_table("s3_common"), reward_item("minecraft:glass", 16), reward_xp(10)],
+          deps=["first_link"], icon="fluxnetworks:basic_flux_storage", size=1.5, shape="hexagon"),
+
+    quest("stats", 12.5, 11, "&bSchau in die Statistik",
+          subtitle="Was rein, was raus, was übrig.",
+          description=[
+              "Reiter &eNetzwerkstatistik&r: Anzahl der Stecker, Punkte, Controller und Speicher, Energie-Eingang und -Ausgang pro Tick, der gesamte Puffer, der gespeicherte Strom und ein Verlauf der Änderung. &eAverage Tick&r zeigt, wie viel Rechenzeit dein Netz dem Server kostet.",
+              "",
+              "Steht beim Eingang weniger als beim Ausgang, leeren sich die Speicher, und die niedrigste Priorität fällt bald aus. Dann ist Zeit für einen weiteren Generator am Stecker.",
+              "",
+              "Im Reiter &eNetzwerkverbindungen&r steht jedes Gerät mit Ort, Priorität und Limit. Mit &eGegenstände auswählen&r bearbeitest du viele auf einmal oder trennst sie vom Netz.",
+          ],
+          tasks=[task_checkmark("Statistik gelesen")],
+          rewards=[reward_xp(5)],
+          deps=["storage"], icon="minecraft:spyglass"),
+
+    quest("chunks", 12.5, 13.2, "&aHalte Chunks geladen",
+          subtitle="Der Reaktor läuft, auch wenn keiner da ist.",
+          description=[
+              "Jedes Flux-Gerät hat im Reiter &eHome&r den Schalter &eChunk laden&r. Er hält den Chunk des Geräts geladen, solange das Gerät im Netz steht. Auf Kronwerke ist das erlaubt.",
+              "",
+              "Das brauchst du am Stecker beim Kraftwerk, sonst steht der Reaktor still, sobald du außer Sicht bist, und die Punkte zu Hause bekommen nichts. Ein Gerät in einem entladenen Chunk zeigt in der Verbindungsliste &eChunk entladen&r.",
+              "",
+              "Jeder geladene Chunk kostet den Server. Lade nur den Stecker am Generator und die Fabrikhalle, nicht jeden Punkt einzeln.",
+          ],
+          tasks=[task_checkmark("Chunk laden eingeschaltet")],
+          rewards=[reward_xp(5)],
+          deps=["storage"], icon="minecraft:lodestone"),
+
+    quest("bigger_storage", 15, 12.1, "&9Größere Speicher",
+          subtitle="Herkulisch in Stufe 4, Gigantisch in Stufe 5.",
+          description=[
+              "Der &6Herkulische Flux-Speicher&r (Herculean) fasst &d16 Millionen FE&r bei &d120.000 FE/t&r und öffnet mit &6Stufe 4&r. Der &6Gigantische Flux-Speicher&r (Gargantuan) fasst &d128 Millionen FE&r bei &d720.000 FE/t&r und kommt in &6Stufe 5&r.",
+              "",
+              "Beide baust du wie den einfachen, nur mit sechs Speichern der Stufe darunter statt der Flux-Blöcke. Der Strom der sechs wandert dabei in den neuen Block, nichts geht verloren.",
+              "",
+              "Bis dahin: Mehrere einfache Speicher im selben Netz addieren sich einfach.",
+          ],
+          tasks=[task_checkmark("Gelesen")],
+          rewards=[reward_xp(5)],
+          deps=["stats", "chunks"], icon="fluxnetworks:basic_flux_storage", optional=True),
+
+    # ---- Die ganze Basis -------------------------------------------------------
+    quest("whole_base", 5, 18, "&6&lVersorge die ganze Basis",
+          subtitle="Ein Stecker am Kraftwerk, ein Punkt an jeder Maschine.",
+          description=[
+              "Zieh die Kabel aus der Basis. &e1.&r Ein &6Stecker&r an jeden Generator oder an den Ausgang der Energiezelle. &e2.&r Ein &6Punkt&r an jede Maschine oder zwischen zwei. &e3.&r Alle ins selbe Netz, die Punkte mit dem Konfigurator kopieren.",
+              "",
+              "Für eine Basis mit zwanzig Maschinen rechne mit zehn bis zwanzig Punkten, also 10 bis 20 Quelljuwelen und ein Stapel Obsidian. Das ist eine Stunde an der Imbuement-Kammer, und danach verlegst du nie wieder ein Kabel.",
+              "",
+              "&eKronwerke:&r Stahlstraßen, Infusionsanlagen, der AE2-Controller und die Elfen-Automatik laufen alle am selben Netz. Wenn der Nachbar Strom übrig hat, hängt er einen Stecker an sein Kraftwerk und gibt dir das Passwort.",
+          ],
+          tasks=[task_item("fluxnetworks:flux_point", 8), task_item("fluxnetworks:flux_plug", 2)],
+          rewards=[reward_table("s3_uncommon"), reward_item("fluxnetworks:flux_core", 8), reward_xp(15)],
+          deps=["charge_items", "chunks"], icon="fluxnetworks:flux_plug", size=2.0, shape="hexagon"),
+
+    quest("setup_mek", 8, 16, "&5Fabrikreihe von Mekanism",
+          subtitle="Fünf Fabriken, kein Kabel.",
+          description=[
+              "Stell die Fabriken mit einem Block Abstand in eine Reihe und setz in jede Lücke einen &6Flux-Punkt&r: Fabrik, Punkt, Fabrik, Punkt, Fabrik. Jeder Punkt versorgt beide Nachbarn. Oder ein Punkt auf jede Fabrik, wenn die Transporter die Lücken brauchen.",
+              "",
+              "Mekanism nimmt Strom auf jeder Seite, die in der Seitenkonfiguration für Energie auf Eingang steht, und rechnet in Joule: 1 FE sind 2,5 J. Eine Anreicherungskammer braucht 20 FE/t, eine Klärkammer 80, Fabriken mit fünf Plätzen entsprechend mehr. Ein Punkt mit 800.000 FE/t langweilt sich.",
+              "",
+              "Gib den Fabriken Priorität 10, dann bleiben sie an, wenn der Energiewürfel am Lager den Rest schluckt. Wie die Straße selbst gebaut wird, steht im Kapitel &5Mekanism: Fortgeschritten&r.",
+          ],
+          tasks=[task_checkmark("Fabrikreihe am Netz")],
+          rewards=[reward_table("s3_common"), reward_xp(10)],
+          deps=["whole_base"], icon="mekanism:advanced_tier_installer"),
+
+    quest("setup_reactor", 8, 18, "&aReaktorstrom in die Ferne",
+          subtitle="Powah-Reaktor hier, Basis dort.",
+          description=[
+              "Setz einen &6Stecker&r direkt an den Powah-Reaktor oder an die Energiezelle dahinter und schalte am Stecker &eChunk laden&r ein. Zu Hause ein &6Punkt&r pro Maschine. Mehr ist es nicht.",
+              "",
+              "Ein Spirited-Reaktor macht bis zu &d100.000 FE/t&r und gibt bis zu &d400.000 FE/t&r ab, der Stecker nimmt &d800.000&r. Ein Stecker reicht also für den ganzen Reaktor, auch für die Nitro-Stufe aus Stufe 4.",
+              "",
+              "So steht das Kraftwerk da, wo das Uraninit liegt, und die Basis da, wo es schön ist. Das geht auch über Dimensionen hinweg. Wie der Reaktor gebaut und gekühlt wird, steht im Kapitel &bPowah&r.",
+          ],
+          tasks=[task_checkmark("Reaktor speist das Netz")],
+          rewards=[reward_table("s3_common"), reward_item("powah:uraninite", 8), reward_xp(10)],
+          deps=["whole_base"], icon="powah:reactor_starter"),
+
+    quest("setup_jetpack", 8, 20, "&bLade den Jetpack von unterwegs",
+          subtitle="Oritech-Jetpack, voll, überall.",
+          description=[
+              "Der &6Jetpack&r von Oritech fasst &d100.000 FE&r, verbraucht &d128 FE/t&r unter Schub und lädt mit höchstens &d1.024 FE/t&r. Zieh ihn an, hak im Reiter &eDrahtloses Laden&r die &6Rüstung&r an, und der Controller zu Hause hält ihn voll, auch am anderen Ende der Karte.",
+              "",
+              "Ohne Controller ist eine Füllung nach etwa 40 Sekunden Schub leer. Mit Controller kommen im Flug 1.024 FE/t herein und 128 heraus, er wird also unterwegs voller statt leerer.",
+              "",
+              "Der &6Exo-Jetpack&r fasst 5 Millionen FE und lädt mit 10.000 FE/t, braucht aber die Kybernetik aus dem Kapitel &6Oritech&r. Das Laden läuft bei ihm genauso.",
+          ],
+          tasks=[task_item("oritech:jetpack", 1)],
+          rewards=[reward_table("s3_common"), reward_xp(10)],
+          deps=["whole_base"], icon="oritech:jetpack", optional=True),
+
+    quest("final", 11, 18, "&6&lMach Kabel überflüssig",
+          subtitle="Das Netz, das die Basis trägt.",
+          description=[
+              "Ein Netz mit &6Stecker&r am Kraftwerk, einem &6Controller&r, einem &6Speicher&r und mindestens sechzehn &6Punkten&r: Das ist der Stand, mit dem der Rest von Kronwerke läuft. Alles, was ab Stufe 4 kommt, der Fusionsreaktor, Draconic, die großen AE2-Netze, hängt einfach an einem weiteren Punkt.",
+              "",
+              "&eKronwerke:&r Die Technikseite des Ziels von Stufe 3 will 4.000 Stahl und 250 Fortschrittliche Steuerschaltkreise. Jede Stahlstraße, die du jetzt ohne Kabelsalat irgendwo hinstellst, zahlt darauf ein.",
+          ],
+          tasks=[task_item("fluxnetworks:flux_point", 16), task_item("fluxnetworks:basic_flux_storage", 1)],
+          rewards=[reward_table("s3_rare"), reward_item("ars_nouveau:source_gem", 16), reward_xp(25)],
+          deps=["setup_mek", "setup_reactor"], icon="fluxnetworks:flux_controller", size=2.5, shape="gear"),
+]
+
+images = [
+    banner("flux_networks/title", "Flux Networks", 7.5, -5, height=1.75, kind="title", colour="water"),
+    banner("flux_networks/flux", "Flux herstellen", 2.5, -1.6, height=0.9, colour="fire"),
+    banner("flux_networks/network", "Das Netzwerk", 10, -1.6, height=0.9, colour="water"),
+    banner("flux_networks/devices", "Stecker und Punkt", 8, 4.4, height=0.9, colour="brass"),
+    banner("flux_networks/wireless", "Drahtloses Laden", 4.5, 9.8, height=0.9, colour="magic"),
+    banner("flux_networks/storage", "Speicher und Übersicht", 12.5, 9.8, height=0.9, colour="water"),
+    banner("flux_networks/base", "Die ganze Basis", 2.5, 15.4, height=0.9, colour="brass"),
+]
+
+chapter(C, "Flux Networks", "fluxnetworks:flux_plug", "tech", quests, shape="circle", order=62, stage=3,
+        subtitle=["Stufe 3: Strom ohne Kabel. Stecker am Kraftwerk, Punkt an der Maschine, Controller für die Tasche."],
+        images=images)

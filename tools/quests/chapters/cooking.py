@@ -233,7 +233,7 @@ quests = [
     quest("sifter", 2.5, 12, "&eSieb Pollen aus Blättern",
           subtitle="Kreuzen ohne Bienen.",
           description=[
-              "&eRezept:&r oben Bretter, &6Klebriger Kolben&r, Bretter, in der Mitte Eisenbarren, &6Pinsel&r, Eisenbarren, unten drei Bretter. Der &6Pollensieber&r holt aus Blättern &6Pollen&r der jeweiligen Baumart heraus.",
+              "&eRezept auf Kronwerke:&r oben Bretter, &6Klebriger Kolben&r, Bretter, in der Mitte Eisenbarren, &6Pinsel&r, Eisenbarren, unten drei Bretter. Die Mod lässt das Rezept weg, sobald Productive Bees dabei ist, Kronwerke gibt es zurück. Der &6Pollensieber&r holt aus Blättern &6Pollen&r der jeweiligen Baumart heraus.",
               "",
               pic("productivetrees:pollen"),
               "",

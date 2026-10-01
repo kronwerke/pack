@@ -1,0 +1,516 @@
+"""The Aether in stage 2: the glowstone portal lit with water, arriving with parachute and Book of
+Lore, skyroot, holystone, ambrosium and zanite, the altar, incubator and freezer, moas, aerclouds,
+the mobs, the food, the accessories (the Aether uses the Accessories API with its own menu, not
+Curios) and the dungeons in order. Gravitite, enchanted gravitite, valkyrie, phoenix and neptune
+gear, obsidian armour and the sun altar are stage 3 and are only named. The mod ships no German
+lang file, so item names stay English. Mechanics and numbers come from the mod jar (recipes, loot
+tables, data maps, lang) and the server configs."""
+from ftbq import (chapter, quest, task_item, task_checkmark, task_dimension, task_kill, task_advancement,
+                  reward_item, reward_table, reward_xp, banner, img)
+
+C = "aether"
+
+
+def pic(path, size=32):
+    return img(f"aether:textures/item/{path}.png", size, size)
+
+
+quests = [
+    # ---- Ankunft -------------------------------------------------------------
+    quest("portal", 0, 0, "&bBau das Glowstone-Portal",
+          subtitle="Ein Rahmen aus Glowstone, gezündet mit Wasser.",
+          description=[
+              "Bau einen Rahmen aus &6Glowstone&r wie ein Netherportal: mindestens vier breit und fünf hoch, ohne Ecken reichen &610 Glowstone&r. Dann gieß einen &6Wassereimer&r in den Rahmen. Das Wasser wird zum Portal.",
+              "",
+              "Glowstone hängt an der Decke des Nethers (siehe Kapitel &cDer Nether&r). Vier Glowstonestaub ergeben einen Block. Pass beim Bauen auf, wohin du klickst: Ein Rechtsklick mit dem Eimer neben den Rahmen verschüttet das Wasser nur.",
+              "",
+              "Das Portal geht nur von der Oberwelt aus. Im Aether entsteht ein passendes Gegenstück, durch das du zurückkommst.",
+          ],
+          tasks=[task_item("minecraft:glowstone", 10), task_item("minecraft:water_bucket", 1)],
+          rewards=[reward_item("minecraft:glowstone", 4), reward_xp(5)],
+          icon="minecraft:glowstone", size=1.5, shape="hexagon"),
+
+    quest("arrive", 0, 2.6, "&b&lBetritt den Aether",
+          subtitle="Schwebende Inseln, ewiger Tag, kein Boden.",
+          description=[
+              "Geh durch das Portal. Beim ersten Besuch bekommst du einen &6Golden Parachute&r und das &6Book of Lore&r geschenkt. Das Buch erklärt jeden Gegenstand des Aethers, leg einfach einen hinein.",
+              "",
+              "Der Aether besteht aus Inseln, die in den Wolken schweben. &cWer von einer Insel fällt, fällt in die Oberwelt zurück&r, hoch über dem Boden. Der Fallschirm öffnet sich dabei von selbst. Hier ist immer Tag, bis jemand den Sun Spirit besiegt hat.",
+              "",
+              "Betten funktionieren hier, anders als im Nether. Ein Wegstein neben dem Portal spart dir später viele Wege.",
+              "",
+              "Der Aether hat keine deutsche Übersetzung, darum stehen die Namen in diesem Kapitel auf Englisch, so wie du sie im Spiel siehst.",
+          ],
+          tasks=[task_dimension("aether:the_aether")],
+          rewards=[reward_table("s2_common"), reward_xp(10)],
+          deps=["portal"], icon="aether:aether_portal_frame", size=2.0, shape="hexagon"),
+
+    quest("parachute", 0, 5.2, "&fBehalte den Fallschirm",
+          subtitle="Er rettet dich, wenn du über den Rand gehst.",
+          description=[
+              "Der &6Golden Parachute&r aus dem Begrüßungsgeschenk hält &e20 Stürze&r. Lass ihn im Inventar: Sobald du von einer Insel fällst, öffnet er sich allein und trägt dich sanft zur Oberwelt hinunter.",
+              "",
+              "Verloren? Einen neuen gibt es aus &6Golden Aerclouds&r, oder du baust den einfachen &6Cold Parachute&r, siehe Abschnitt Aerwolken.",
+              "",
+              "&eTipp:&r Bau Brücken aus Holystone zwischen den Inseln, statt zu springen. Quicksoil am Inselrand ist rutschig und schiebt dich über die Kante.",
+          ],
+          tasks=[task_item("aether:golden_parachute", 1)],
+          rewards=[reward_item("aether:cold_aercloud", 8), reward_xp(5)],
+          deps=["arrive"], icon="aether:golden_parachute"),
+
+    # ---- Aerwolken -----------------------------------------------------------
+    quest("cold_aercloud", -4.5, 5.4, "&fSammle Cold Aerclouds",
+          subtitle="Weiche Wolken, die jeden Sturz abfangen.",
+          description=[
+              "&6Cold Aerclouds&r schweben als weiße Wolkenbänke zwischen &eY 32 und Y 96&r. Bau sie mit irgendeinem Werkzeug ab, mit Skyroot-Werkzeug fallen doppelt so viele. &6Zephyre&r lassen beim Tod 0 bis 2 davon fallen.",
+              "",
+              "Wer auf einer Cold Aercloud landet, nimmt keinen Fallschaden. Eine Lage unter deinem Bauplatz, und Stürze sind kein Thema mehr.",
+          ],
+          tasks=[task_item("aether:cold_aercloud", 8)],
+          rewards=[reward_item("aether:cold_aercloud", 8)],
+          deps=["parachute"], icon="aether:cold_aercloud"),
+
+    quest("blue_aercloud", -7, 5.4, "&9Spring auf eine Blue Aercloud",
+          subtitle="Die Wolke, die dich in die Luft schleudert.",
+          description=[
+              "&6Blue Aerclouds&r sind blassblau und seltener als die kalten. Wer darauf tritt, wird hoch in die Luft geschleudert. So kommst du auf Inseln, die über dir hängen.",
+              "",
+              "Du kannst sie auch herstellen: Eine &6Cold Aercloud&r wird im &6Freezer&r in 20 Sekunden zur Blue Aercloud. &6Blue Swets&r lassen manchmal eine fallen.",
+              "",
+              "&eTipp:&r Eine Blue Aercloud unten, eine Cold Aercloud oben als Landeplatz, fertig ist der Aufzug ohne Strom.",
+          ],
+          tasks=[task_advancement("aether:blue_aercloud", "Auf einer Blue Aercloud hüpfen")],
+          rewards=[reward_item("aether:blue_aercloud", 4), reward_xp(5)],
+          deps=["cold_aercloud"], icon="aether:blue_aercloud"),
+
+    quest("cold_parachute", -4.5, 7.8, "&fBau einen Cold Parachute",
+          subtitle="Vier Wolken, ein Sprung.",
+          description=[
+              "&64 Cold Aerclouds&r im Quadrat ergeben einen &6Cold Parachute&r. Er hält genau &eeinen&r Sturz, dann ist er weg. Mach also gleich mehrere.",
+              "",
+              "Der &6Golden Parachute&r hält 20 Stürze. Dafür brauchst du 4 &6Golden Aerclouds&r: Die hängen selten über &eY 96&r, oder du verzauberst eine Cold Aercloud im &6Altar&r (50 Sekunden, 4 Ambrosium Shards).",
+          ],
+          tasks=[task_item("aether:cold_parachute", 2)],
+          rewards=[reward_item("aether:golden_aercloud", 4), reward_xp(5)],
+          deps=["cold_aercloud"], icon="aether:cold_parachute"),
+
+    # ---- Essen ---------------------------------------------------------------
+    quest("blue_berry", 0, 8.4, "&9Pflück Blue Berries",
+          subtitle="Das Brot des Aethers, nur dünner.",
+          description=[
+              "&6Berry Bushes&r wachsen überall auf den Inseln. Abbauen gibt &e1 bis 3 Blue Berries&r, mit Glück mehr. Der Busch wird zum kahlen Stiel und wächst nach.",
+              "",
+              pic("food/blue_berry"),
+              "",
+              "Eine Beere füllt nur &eeine Keule&r, sättigt aber schnell. Auf &6Enchanted Aether Grass&r (Rechtsklick mit einem Ambrosium Shard auf Aether-Gras) fallen doppelt so viele Beeren.",
+          ],
+          tasks=[task_item("aether:blue_berry", 16)],
+          rewards=[reward_item("aether:berry_bush", 4), reward_xp(3)],
+          deps=["parachute"], icon="aether:blue_berry"),
+
+    quest("enchanted_berry", 0, 10.8, "&dVerzaubere Beeren",
+          subtitle="Aus einer Keule werden drei.",
+          description=[
+              "Leg &6Blue Berries&r in den &6Altar&r und feuere mit &6Ambrosium Shards&r. Nach 12,5 Sekunden kommt eine &6Enchanted Berry&r heraus, genau ein Shard pro Beere. Sie füllt &edrei Keulen&r und sättigt stark.",
+              "",
+              pic("food/enchanted_berry"),
+              "",
+              "Für Bosskämpfe gibt es Besseres: &6Blue&r und &6Golden Gummy Swets&r aus den Truhen der Bronze- und Silber-Dungeons füllen die &eganze Hungerleiste&r auf einmal. Ein &6Healing Stone&r (Holystone 25 Sekunden im Altar) gibt Regeneration, ein roher &6Ambrosium Shard&r heilt ein halbes Herz.",
+          ],
+          tasks=[task_item("aether:enchanted_berry", 8)],
+          rewards=[reward_item("aether:ambrosium_shard", 8), reward_xp(5)],
+          deps=["blue_berry"], icon="aether:enchanted_berry"),
+
+    # ---- Rohstoffe -----------------------------------------------------------
+    quest("skyroot", 3.5, 0, "&2Fäll einen Skyroot-Baum",
+          subtitle="Das Holz des Aethers.",
+          description=[
+              "&6Skyroot Trees&r stehen überall mit grünem oder blauem Laub. Ein &6Skyroot Log&r ergibt 4 &6Skyroot Planks&r, zwei Bretter übereinander 4 &6Skyroot Sticks&r.",
+              "",
+              "&cWichtig:&r Werkzeuge aus der Oberwelt bauen Aether-Blöcke auf Kronwerke &elangsamer&r ab. Mach dir gleich hier Skyroot-Werkzeug, sonst kratzt du an jedem Block.",
+              "",
+              "Bäume mit goldenem Laub sind &6Golden Oaks&r. Lass sie stehen, bis du eine Zanite-Axt hast, siehe Quest Golden Amber.",
+          ],
+          tasks=[task_item("aether:skyroot_log", 16)],
+          rewards=[reward_item("aether:skyroot_sapling", 4), reward_xp(3)],
+          deps=["arrive"], icon="aether:skyroot_log"),
+
+    quest("skyroot_tools", 6, 0, "&2Bau Skyroot-Werkzeug",
+          subtitle="Holzwerkzeug, das doppelt erntet.",
+          description=[
+              "&6Skyroot Planks&r und &6Skyroot Sticks&r ergeben Werkzeug wie aus Holz: 3 Bretter und 2 Stöcke für die &6Skyroot Pickaxe&r, 3 Bretter und 2 Stöcke für die Axt.",
+              "",
+              "Skyroot-Werkzeug hat einen Trick: Alles aus dem Aether (Holystone, Ambrosium-Erz, Aerclouds, Beerenbüsche, Skyroot-Stämme) fällt &edoppelt&r. Mit Glück auf einer Skyroot Pickaxe wird Ambrosium zur Massenware.",
+              "",
+              "Zwei Bretter oben und eines darunter ergeben den &6Skyroot Bucket&r, einen Holzeimer für Wasser, Milch und das Gift der Aechor-Pflanzen.",
+          ],
+          tasks=[task_item("aether:skyroot_pickaxe", 1), task_item("aether:skyroot_axe", 1)],
+          rewards=[reward_item("aether:skyroot_bucket", 1), reward_xp(5)],
+          deps=["skyroot"], icon="aether:skyroot_pickaxe"),
+
+    quest("holystone", 8.5, 0, "&7Grab Holystone",
+          subtitle="Der Stein, aus dem die Inseln sind.",
+          description=[
+              "&6Holystone&r ist der Stein des Aethers. Grab mit der &6Skyroot Pickaxe&r, dann fallen zwei pro Block. Vier ergeben &6Holystone Bricks&r, der Steinschneider macht Treppen, Stufen und Mauern daraus.",
+              "",
+              "Du brauchst viel davon: 8 für den Altar, 8 für den Incubator, 5 für den Freezer, dazu Werkzeug und Brücken zwischen den Inseln.",
+          ],
+          tasks=[task_item("aether:holystone", 64)],
+          rewards=[reward_item("aether:holystone_bricks", 32)],
+          deps=["skyroot_tools"], icon="aether:holystone"),
+
+    quest("holystone_tools", 11, 0, "&7Bau Holystone-Werkzeug",
+          subtitle="Steinwerkzeug mit einem Nebenverdienst.",
+          description=[
+              "3 &6Holystone&r und 2 &6Skyroot Sticks&r ergeben die &6Holystone Pickaxe&r, genauso Axt, Schaufel, Hacke und Schwert. Sie zählt wie Stein und ist die erste Spitzhacke, die &6Zanite&r abbauen kann.",
+              "",
+              "Beim Abbauen lässt Holystone-Werkzeug ab und zu einen &6Ambrosium Shard&r zusätzlich fallen, egal was du gerade abbaust.",
+          ],
+          tasks=[task_item("aether:holystone_pickaxe", 1)],
+          rewards=[reward_item("aether:ambrosium_shard", 6), reward_xp(5)],
+          deps=["holystone"], icon="aether:holystone_pickaxe"),
+
+    quest("ambrosium", 8.5, 2.2, "&eFinde Ambrosium",
+          subtitle="Kohle, Fackel, Medizin und Brennstoff des Altars.",
+          description=[
+              "&6Ambrosium Ore&r ist das häufigste Erz des Aethers und steckt auf jeder Höhe im Holystone. Es lässt &6Ambrosium Shards&r fallen, mit Skyroot Pickaxe doppelt, mit Glück noch mehr.",
+              "",
+              pic("materials/ambrosium_shard"),
+              "",
+              "&eWofür:&r Ein Shard über einem Skyroot Stick ergibt 4 &6Ambrosium Torches&r, das Licht des Aethers. Ein Shard im &6Altar&r brennt 12,5 Sekunden. Gegessen heilt er ein halbes Herz. Rechtsklick auf Aether-Gras macht &6Enchanted Grass&r für doppelte Beeren.",
+              "",
+              "Neun Shards ergeben einen &6Ambrosium Block&r, der im Altar 125 Sekunden brennt.",
+          ],
+          tasks=[task_item("aether:ambrosium_shard", 32)],
+          rewards=[reward_item("aether:ambrosium_torch", 16), reward_xp(5)],
+          deps=["holystone_tools"], icon="aether:ambrosium_shard"),
+
+    quest("zanite", 13.5, 0, "&5Finde Zanite",
+          subtitle="Das Eisen des Aethers, lila und glänzend.",
+          description=[
+              "&6Zanite Ore&r liegt im Holystone &eunter Y 75&r, am besten gräbst du in die Inseln hinein oder suchst die Unterseiten ab. Du brauchst mindestens eine &6Holystone Pickaxe&r. Jedes Erz gibt einen &6Zanite Gemstone&r, mit Glück mehr.",
+              "",
+              pic("materials/zanite_gemstone"),
+              "",
+              "Zanite ist Werkzeug- und Rüstungsmaterial auf Eisenniveau, dazu der Kern des Altars und die Spitze des Nature Staff. Neun Gemstones ergeben einen &6Zanite Block&r.",
+          ],
+          tasks=[task_item("aether:zanite_gemstone", 12)],
+          rewards=[reward_item("aether:zanite_gemstone", 4), reward_table("s2_common"), reward_xp(5)],
+          deps=["holystone_tools"], icon="aether:zanite_gemstone"),
+
+    quest("zanite_gear", 16, 0, "&5Schmiede Zanite",
+          subtitle="Werkzeug, das mit jedem Schlag schneller wird.",
+          description=[
+              "&6Zanite Gemstones&r und &6Skyroot Sticks&r ergeben Werkzeug wie Eisen: 3 Gemstones und 2 Stöcke für die &6Zanite Pickaxe&r, 2 Gemstones und ein Stock für das &6Zanite Sword&r. Rüstung kostet 24 Gemstones, die &6Zanite Gloves&r 2 dazu.",
+              "",
+              "Zanite-Werkzeug wird &eschneller, je abgenutzter&r es ist. Kurz vor dem Bruch ist es am besten. Reparierst du es im Altar, ist es wieder so langsam wie am Anfang.",
+              "",
+              "Die &6Zanite Axe&r ist die einzige Axt dieser Stufe, die aus Golden Oaks &6Golden Amber&r holt.",
+          ],
+          tasks=[task_item("aether:zanite_pickaxe", 1), task_item("aether:zanite_sword", 1)],
+          rewards=[reward_item("aether:zanite_gemstone", 6), reward_table("s2_uncommon"), reward_xp(8)],
+          deps=["zanite"], icon="aether:zanite_pickaxe", size=1.5, shape="square"),
+
+    quest("golden_amber", 16, 2.2, "&6Ernte Golden Amber",
+          subtitle="Harz aus den goldenen Eichen.",
+          description=[
+              "&6Golden Oaks&r erkennst du am goldenen Laub. Fäll die Stämme mit einer &6Zanite Axe&r, dann fallen &e1 bis 2 Golden Amber&r pro Stamm. Mit jeder anderen Axt bekommst du nur Skyroot Logs.",
+              "",
+              pic("materials/golden_amber"),
+              "",
+              "Aus dem Laub fällt mit etwas Glück ein &6Goldener Apfel&r. Pflanz die &6Golden Oak Saplings&r nach, mit Knochenmehl wachsen sie schnell.",
+              "",
+              "Golden Amber brauchst du für den &6Golden Dart Shooter&r und seine Pfeile, siehe Abschnitt Dungeons.",
+          ],
+          tasks=[task_item("aether:golden_amber", 4)],
+          rewards=[reward_item("aether:golden_oak_sapling", 2), reward_xp(5)],
+          deps=["zanite_gear"], icon="aether:golden_amber"),
+
+    # ---- Werkbaenke ----------------------------------------------------------
+    quest("altar", 8.5, 5.6, "&d&lBau einen Altar",
+          subtitle="Verzaubern und reparieren mit Ambrosium.",
+          description=[
+              "8 &6Holystone&r um einen &6Zanite Gemstone&r ergeben den &6Altar&r. Er läuft mit &6Ambrosium Shards&r (12,5 Sekunden pro Shard) oder Ambrosium Blocks.",
+              "",
+              "&eVerzaubern:&r Blue Berry zu Enchanted Berry (12,5 s), Holystone zu &6Healing Stone&r (25 s), Cold Aercloud zu &6Golden Aercloud&r (50 s), Quicksoil zu &6Quicksoil Glass&r (12,5 s), Golden Dart zu &6Enchanted Dart&r (2,5 s), Skyroot Poison Bucket zu &6Remedy Bucket&r (25 s), Golden Dart Shooter zu &6Enchanted Dart Shooter&r.",
+              "",
+              "&eReparieren:&r Leg ein beschädigtes Werkzeug oder Rüstungsteil hinein, der Altar flickt es für ein paar Shards. Eine Zanite Pickaxe braucht 37,5 Sekunden.",
+              "",
+              "&eStufe 3:&r Dann verzaubert der Altar auch &6Gravitite Ore&r zu &6Enchanted Gravitite&r, dem besten Material des Aethers.",
+          ],
+          tasks=[task_item("aether:altar", 1)],
+          rewards=[reward_item("aether:ambrosium_shard", 16), reward_table("s2_common"), reward_xp(10)],
+          deps=["ambrosium", "zanite"], icon="aether:altar", size=1.75, shape="gear"),
+
+    quest("incubator", 11, 5.6, "&6Bau einen Incubator",
+          subtitle="Der Brutkasten für Moa-Eier.",
+          description=[
+              "8 &6Holystone&r um eine &6Ambrosium Torch&r ergeben den &6Incubator&r. Er brennt &6Ambrosium Torches&r, jede hält 25 Sekunden.",
+              "",
+              "Ein &6Moa Egg&r in den oberen Slot, Fackeln in den unteren, dann warten. Das Brüten dauert eine ganze Weile, leg also einen Stapel Fackeln hinein und bau in der Zeit weiter. Alles zu den Moas im Abschnitt Moas.",
+          ],
+          tasks=[task_item("aether:incubator", 1)],
+          rewards=[reward_item("aether:ambrosium_torch", 32), reward_xp(5)],
+          deps=["ambrosium"], icon="aether:incubator"),
+
+    quest("freezer", 13.5, 5.6, "&bBau einen Freezer",
+          subtitle="Icestone macht aus Wasser Eis und aus Lava Obsidian.",
+          description=[
+              "Erst das Erz: &6Icestone&r liegt wie Ambrosium auf jeder Höhe im Holystone und sieht aus wie vereister Stein. Gesetzt friert es Wasser daneben zu Eis und Lava zu Obsidian.",
+              "",
+              "Der &6Freezer&r: oben 3 &6Holystone&r, in der Mitte Holystone, &6Icestone&r, Holystone, unten 3 &6Skyroot Planks&r. Brennstoff ist Icestone, ein Block hält 20 Sekunden.",
+              "",
+              "&eRezepte:&r Wassereimer zu &6Eis&r (10 s), Lavaeimer zu &6Obsidian&r (10 s), Eis zu Packeis (15 s), Packeis zu Blaueis (25 s), Cold Aercloud zu &6Blue Aercloud&r (20 s), Skyroot Leaves zu Crystal Leaves, Iron oder Golden Ring und Pendant zu &6Ice Ring&r und &6Ice Pendant&r (40 s).",
+          ],
+          tasks=[task_item("aether:icestone", 8), task_item("aether:freezer", 1)],
+          rewards=[reward_item("aether:icestone", 8), reward_item("minecraft:packed_ice", 8), reward_xp(5)],
+          deps=["zanite"], icon="aether:freezer"),
+
+    # ---- Moas ----------------------------------------------------------------
+    quest("moa_egg", 11, 9, "&eFinde ein Moa-Ei",
+          subtitle="Blau, weiß oder schwarz, und jedes fliegt anders.",
+          description=[
+              "&6Moas&r sind die großen Laufvögel des Aethers. Jedes erwachsene Moa legt nach einer Weile ein &6Moa Egg&r, auch die wilden, solange niemand darauf sitzt. Folge einer Herde oder sperr ein paar in einen Zaun.",
+              "",
+              "&eDie Farben:&r &9Blue Moa&r, häufig, &e3 Sprünge&r in der Luft. &fWhite Moa&r, seltener, &e4 Sprünge&r. &8Black Moa&r, das seltenste, &e8 Sprünge&r.",
+              "",
+              "Weiße und blaue Eier liegen auch in den Truhen der Silber-Dungeons. Ein Moa-Ei ist zudem Zutat für Kürbiskuchen und Kuchen.",
+          ],
+          tasks=[task_advancement("aether:obtain_egg", "Ein Moa Egg bekommen")],
+          rewards=[reward_item("aether:aechor_petal", 4), reward_xp(5)],
+          deps=["incubator"], icon="aether:blue_moa_egg"),
+
+    quest("aechor", 13.5, 9, "&dPflück Aechor Petals",
+          subtitle="Das Lieblingsfutter der Moas, mit Dornen.",
+          description=[
+              "&6Aechor Plants&r sind die großen, grünen Pflanzen mit Zähnen, die auf dem Gras sitzen und nicht laufen können. Sie spucken &6Poison Needles&r. Komm von hinten oder von oben, dann lassen sie ein &6Aechor Petal&r fallen, mit Plünderung mehr.",
+              "",
+              pic("materials/aechor_petal"),
+              "",
+              "Rechtsklick mit einem &6Skyroot Bucket&r auf eine lebende Pflanze füllt ihn mit &6Gift&r, Zutat für Poison Darts und, im Altar verzaubert, für den &6Remedy Bucket&r gegen Vergiftung.",
+              "",
+              "Eine Blume auf Enchanted Grass neben deinem Haus hält Aechor Plants vom Spawnen ab.",
+          ],
+          tasks=[task_item("aether:aechor_petal", 4)],
+          rewards=[reward_item("aether:skyroot_bucket", 1), reward_xp(5)],
+          deps=["moa_egg"], icon="aether:aechor_petal"),
+
+    quest("hatch", 11, 11.4, "&eBrüte ein Moa aus",
+          subtitle="Vier Blütenblätter bis zum Reittier.",
+          description=[
+              "Leg das &6Moa Egg&r in den &6Incubator&r und feuere mit Ambrosium Torches, bis das Küken schlüpft.",
+              "",
+              "Das Küken ist &ehungrig&r: Füttere es mit einem &6Aechor Petal&r, sobald es Hunger zeigt. Nach insgesamt &e4 Blütenblättern&r ist es erwachsen. Nur ein Moa, das du selbst ausgebrütet hast, lässt sich satteln und reiten.",
+              "",
+              "Ein &6Nature Staff&r (Zanite Gemstone auf Skyroot Stick) kommandiert deine Moas: Rechtsklick lässt sie sitzen oder wieder aufstehen, Schleichen plus Rechtsklick lässt sie dir folgen.",
+          ],
+          tasks=[task_advancement("aether:incubate_moa", "Ein Moa ausbrüten")],
+          rewards=[reward_item("minecraft:saddle", 1), reward_item("aether:nature_staff", 1), reward_table("s2_uncommon"), reward_xp(10)],
+          deps=["moa_egg", "aechor"], icon="aether:nature_staff", size=1.5, shape="diamond"),
+
+    quest("ride", 11, 13.8, "&eReite ein Moa",
+          subtitle="Sprünge in der Luft, so viele wie die Farbe erlaubt.",
+          description=[
+              "Leg einem erwachsenen, selbst gezogenen Moa einen &6Sattel&r an und steig auf. Mit der Sprungtaste springst du, und in der Luft noch einmal: &e3-mal&r beim blauen, &e4-mal&r beim weißen, &e8-mal&r beim schwarzen Moa. Die Anzeige über der Hungerleiste zeigt die restlichen Sprünge, am Boden füllen sie sich auf.",
+              "",
+              "So kommst du zwischen den Inseln hin und her, ohne Brücken zu bauen. Ein Sturz ins Leere endet trotzdem in der Oberwelt, also mit Fallschirm fliegen.",
+              "",
+              "&eAuch ein Reittier:&r &6Phygs&r, die fliegenden Schweine, lassen sich satteln und gleiten langsam nach unten. Kein Ersatz für ein Moa, aber lustig.",
+          ],
+          tasks=[task_checkmark("Ein Moa gesattelt und geflogen")],
+          rewards=[reward_item("aether:aechor_petal", 8), reward_xp(10)],
+          deps=["hatch"], icon="minecraft:saddle"),
+
+    # ---- Bewohner ------------------------------------------------------------
+    quest("swet", 4.5, 9, "&9Besiege Swets",
+          subtitle="Klebrige Würfel, die dich mitnehmen.",
+          description=[
+              "&6Blue Swets&r und &6Golden Swets&r sind hüpfende Schleimwürfel. Treffen sie dich, nehmen sie dich mit und hüpfen weiter. Töte sie schnell oder spring heraus.",
+              "",
+              pic("materials/swet_ball"),
+              "",
+              "&eBeute:&r Blue Swets lassen einen &6Swet Ball&r fallen (gilt als Schleimball für Leinen und Co.) und manchmal eine &6Blue Aercloud&r. Mit einem Swet Ball in der Hand wird aus Erde Gras, aus Gras Podsol und aus Netherrack Nezel. Golden Swets lassen &6Glowstone&r fallen.",
+              "",
+              "Ein &6Swet Cape&r aus dem Bronze-Dungeon macht Swets friedlich, dann kannst du auf ihnen reiten. Ein &6Swet Banner&r vor dem Haus hält sie fern.",
+          ],
+          tasks=[task_kill("aether:blue_swet", 3), task_item("aether:swet_ball", 2)],
+          rewards=[reward_item("aether:swet_ball", 4), reward_xp(5)],
+          deps=["arrive"], icon="aether:swet_ball"),
+
+    quest("cockatrice", 7, 9, "&2Erlege einen Cockatrice",
+          subtitle="Sein Gift lässt die Welt schwanken.",
+          description=[
+              "Der &6Cockatrice&r ist der grüne Hahn mit Schlangenschwanz. Er spuckt &6Poison Needles&r, die &5Inebriation&r auslösen, das Gift des Aethers: Es schadet über Zeit und lässt dein Bild schwanken.",
+              "",
+              "&eHeilung:&r Ein &6White Apple&r von den weißen &6Crystal Trees&r oder ein &6Skyroot Remedy Bucket&r (Giftkübel im Altar verzaubert). Pack immer eins davon ein.",
+              "",
+              "Er lässt &e2 bis 3 Federn&r fallen, die du für Golden Darts brauchst.",
+          ],
+          tasks=[task_kill("aether:cockatrice", 2)],
+          rewards=[reward_item("aether:white_apple", 2), reward_item("minecraft:feather", 8), reward_xp(5)],
+          deps=["swet"], icon="minecraft:feather"),
+
+    quest("zephyr", 4.5, 11.4, "&fSchieß einen Zephyr ab",
+          subtitle="Der Wind, der dich von der Insel pustet.",
+          description=[
+              "&6Zephyre&r sind die fliegenden Wolkenwesen. Sie schießen &6Schneebälle&r mit so viel Wucht, dass du über die Kante fliegst. Ein &6Schild&r fängt den Stoß ab, ein Bogen oder der Dart Shooter holt sie herunter. Sie lassen 0 bis 2 &6Cold Aerclouds&r fallen.",
+              "",
+              "&eUngefährlich:&r &6Aerwhales&r, die riesigen Wale am Himmel, schwimmen nur vorbei und lassen nichts fallen. &6Whirlwinds&r heben alles hoch, was ihnen zu nahe kommt, die dunklen &cEvil Whirlwinds&r tun dabei weh.",
+              "",
+              "Steh nie mit dem Rücken zum Abgrund, wenn ein Zephyr in der Nähe ist.",
+          ],
+          tasks=[task_kill("aether:zephyr", 2)],
+          rewards=[reward_item("aether:cold_aercloud", 8), reward_xp(5)],
+          deps=["swet"], icon="aether:cold_aercloud"),
+
+    # ---- Accessoires ---------------------------------------------------------
+    quest("gloves", 21, 0, "&6Trag Handschuhe",
+          subtitle="Das fünfte Rüstungsteil und das Accessoire-Menü.",
+          description=[
+              "Zwei &6Zanite Gemstones&r nebeneinander ergeben &6Zanite Gloves&r, genauso Handschuhe aus Leder, Eisen, Gold oder Diamant. Sie geben Rüstung und machen ein Set erst komplett: Auf Kronwerke brauchen Set-Fähigkeiten die passenden Handschuhe.",
+              "",
+              "&eDas Menü:&r Der Aether nutzt den &6Accessories&r-Rahmen mit einem eigenen Menü, der Knopf dafür sitzt im Inventar. Die Slots: &e1 Gloves&r, &e2 Rings&r, &e1 Pendant&r, &e1 Cape&r, &e1 Shield&r und &e2 Misc&r für Dinge wie Iron Bubble oder Regeneration Stone.",
+              "",
+              "Curios-Gegenstände anderer Mods (Ars Nouveau, Iron's Spells) gehören in das getrennte Curios-Menü, nicht hierher.",
+          ],
+          tasks=[task_item("aether:zanite_gloves", 1)],
+          rewards=[reward_item("aether:zanite_gemstone", 4), reward_xp(5)],
+          deps=["zanite_gear"], icon="aether:zanite_gloves"),
+
+    quest("pendant_ring", 23.5, 0, "&5Ring und Anhänger",
+          subtitle="Schmuck mit und ohne Wirkung.",
+          description=[
+              "Ein &6Ring&r ist ein Rahmen aus 4 Barren oder Gemstones mit leerer Mitte, ein &6Pendant&r hängt an 5 Fäden über einem Barren oder Gemstone.",
+              "",
+              "&eEisen und Gold&r sind reiner Schmuck. &5Zanite Ring&r und &5Zanite Pendant&r lassen dich &eschneller abbauen&r, nutzen sich dabei aber ab. &bIce Ring&r und &bIce Pendant&r (Eisen oder Gold 40 Sekunden im Freezer) frieren Wasser und Lava unter deinen Füßen ein, du läufst also über Lavaseen.",
+              "",
+              "Zwei Ringe gleichzeitig sind erlaubt, der Anhänger-Slot ist einer.",
+          ],
+          tasks=[task_item("aether:zanite_ring", 1), task_item("aether:zanite_pendant", 1)],
+          rewards=[reward_item("aether:ice_ring", 1), reward_xp(5)],
+          deps=["gloves"], icon="aether:zanite_pendant"),
+
+    quest("capes", 26, 0, "&cNäh einen Umhang",
+          subtitle="Sechs Wolle, ein Cape.",
+          description=[
+              "&66 Wolle&r, zwei breit und drei hoch, ergeben ein Cape: &cRed Cape&r, &eYellow Cape&r, &fWhite Cape&r oder &9Blue Cape&r (auch aus Cyan oder Hellblau). Reine Zierde, aber sichtbar.",
+              "",
+              "Die Capes mit Wirkung kommen aus den Dungeons: das &6Swet Cape&r zum Reiten auf Swets, das &6Agility Cape&r, mit dem du Blöcke hochgehst ohne zu springen, der &6Invisibility Cloak&r, der dich unsichtbar macht, und in Stufe 3 das &6Valkyrie Cape&r.",
+          ],
+          tasks=[task_item("aether:red_cape", 1)],
+          rewards=[reward_item("minecraft:white_wool", 6), reward_xp(3)],
+          deps=["pendant_ring"], icon="aether:red_cape", optional=True),
+
+    # ---- Dungeons ------------------------------------------------------------
+    quest("dart_shooter", 18.5, 2.2, "&6Bau einen Dart Shooter",
+          subtitle="Die Fernwaffe für Dungeons.",
+          description=[
+              "2 &6Skyroot Planks&r über einem &6Golden Amber&r ergeben den &6Golden Dart Shooter&r. Munition: eine Feder, ein Skyroot Stick und ein Golden Amber übereinander ergeben &e4 Golden Darts&r. Darts fliegen schnurgerade, ohne Bogen.",
+              "",
+              "&6Poison Dart Shooter&r: Shooter plus Aechor Petal. 8 Golden Darts um einen &6Skyroot Poison Bucket&r ergeben 8 &6Poison Darts&r, die vergiften. Im Altar wird ein Golden Dart in 2,5 Sekunden zum stärkeren &6Enchanted Dart&r.",
+              "",
+              "Gegen Zephyre, Valkyries und alles, was fliegt, ist der Dart Shooter besser als jeder Bogen.",
+          ],
+          tasks=[task_item("aether:golden_dart_shooter", 1), task_item("aether:golden_dart", 16)],
+          rewards=[reward_item("aether:golden_dart", 16), reward_xp(5)],
+          deps=["golden_amber"], icon="aether:golden_dart_shooter"),
+
+    quest("bronze", 18.5, 5.6, "&6&lBronze-Dungeon",
+          subtitle="Graue Gänge in den Inseln, mit Wachen und falschen Truhen.",
+          description=[
+              "&6Bronze Dungeons&r stecken im Inneren von Inseln. Du erkennst sie an &6Carved Stone&r und dem hellen &6Sentry Stone&r, oft schaut ein Stück aus dem Hang. Sie sind häufig, in Abständen von wenigen hundert Blöcken.",
+              "",
+              "&eDrinnen:&r &6Sentries&r, hüpfende Steinwürfel, die explodieren, und &6Chest Mimics&r, Truhen, die beim Öffnen aufspringen und beißen. Die Wände sind gesperrt, solange der Boss lebt.",
+              "",
+              "&eDie Truhen:&r Zanite-Werkzeug, Golden Darts, Iron und Golden Rings, Swet Cape, Ice Pendant, Gummy Swets. Dank Lootr hat jede für jeden Spieler eigenen Inhalt (siehe Kapitel &6Erkundung&r). Bring einen Stapel Carved Stone als Beweis.",
+          ],
+          tasks=[task_item("aether:carved_stone", 16)],
+          rewards=[reward_item("aether:blue_gummy_swet", 2), reward_table("s2_common"), reward_xp(10)],
+          deps=["dart_shooter"], icon="aether:carved_stone", size=1.5, shape="hexagon"),
+
+    quest("slider", 21, 5.6, "&7&lBesiege den Slider",
+          subtitle="Ein Steinwürfel, der nur Spitzhacken fürchtet.",
+          description=[
+              "Der &6Slider&r ist der riesige Würfel in der Bosshalle. Er schläft, bis du ihn mit einer &6Spitzhacke&r schlägst. Dann rast er in geraden Linien auf dich zu und kracht in die Wände. &cNur Spitzhacken machen ihm Schaden&r, Schwerter prallen ab.",
+              "",
+              "&eTaktik:&r Weich seitlich aus, wenn er anrollt, dann schlag mit der Zanite Pickaxe zu, solange er neu Anlauf nimmt. Essen auf Vorrat, die Halle schließt sich während des Kampfes.",
+              "",
+              pic("miscellaneous/bronze_dungeon_key"),
+              "",
+              "&eBeute:&r Er lässt den &6Bronze Dungeon Key&r und 7 bis 9 Carved Stone fallen, und die Wände werden abbaubar. Mit dem Key öffnest du die &6Treasure Doorway&r zur &6Treasure Chest&r: Zanite-Rüstung, Zanite Ring und Pendant, &6Shield of Repulsion&r, &6Cloud Staff&r, &6Flaming Sword&r, &6Agility Cape&r, &6Sentry Boots&r, &6Hammer of Kingbdogz&r, Lightning Knives, ein Sattel. &eStufe 3:&r &6Neptune Armor&r, &6Phoenix Bow&r und &6Valkyrie Lance&r liegen auch hier, lassen sich aber erst dann tragen.",
+          ],
+          tasks=[task_kill("aether:slider", 1)],
+          rewards=[reward_item("aether:zanite_gemstone", 8), reward_table("s2_uncommon"), reward_xp(20)],
+          deps=["bronze"], icon="aether:sentry_stone", size=1.75, shape="diamond"),
+
+    quest("silver", 18.5, 8.2, "&f&lSilber-Dungeon",
+          subtitle="Ein weißer Tempel in den Wolken.",
+          description=[
+              "&6Silver Dungeons&r sind große Tempel aus &6Angelic Stone&r mit Säulen und Treppen, die frei im Himmel schweben. Sie sind selten, oft hunderte Blöcke voneinander entfernt. Ein Moa oder viel Holystone für Brücken bringt dich hin.",
+              "",
+              "Der Stein ist gesperrt, bis die Königin besiegt ist, und einige Blöcke sind Fallen. Chest Mimics gibt es auch hier.",
+              "",
+              "&eDie Truhen:&r Zanite Swords, Golden, Enchanted und Poison Dart Shooter, &6Moa Eggs&r (weiß und blau), Zanite Ring und Pendant, Healing Stones, Enchanted Berries, Golden Gummy Swets. Nimm einen Block Angelic Stone als Beleg mit, nach dem Sieg geht das.",
+          ],
+          tasks=[task_item("aether:angelic_stone", 1)],
+          rewards=[reward_item("aether:golden_gummy_swet", 2), reward_table("s2_uncommon"), reward_xp(10)],
+          deps=["slider"], icon="aether:angelic_stone", size=1.5, shape="hexagon"),
+
+    quest("valkyrie", 21, 8.2, "&fSammle Victory Medals",
+          subtitle="Zehn Medaillen, sonst kämpft die Königin nicht.",
+          description=[
+              "In den oberen Stockwerken des Tempels warten &6Valkyries&r. Sie fliegen, teleportieren sich und stoßen mit dem Speer nach dir. Jede besiegte Valkyrie lässt eine &6Victory Medal&r fallen.",
+              "",
+              pic("miscellaneous/victory_medal"),
+              "",
+              "Die &6Valkyrie Queen&r redet erst mit dir, wenn du ihr &e10 Medaillen&r zeigst. Ohne Medaillen schickt sie dich weg. Sammle also, bevor du nach oben gehst.",
+              "",
+              "&eTipp:&r Der Dart Shooter trifft fliegende Valkyries besser als jedes Schwert. Kämpfe mit dem Rücken zur Wand, Valkyries werfen dich gern über die Kante.",
+          ],
+          tasks=[task_item("aether:victory_medal", 10)],
+          rewards=[reward_item("aether:enchanted_berry", 8), reward_xp(15)],
+          deps=["silver"], icon="aether:victory_medal"),
+
+    quest("queen", 23.5, 8.2, "&f&lBesiege die Valkyrie Queen",
+          subtitle="Der große Kampf dieser Stufe im Aether.",
+          description=[
+              "Sprich die &6Valkyrie Queen&r mit 10 Victory Medals im Gepäck an und fordere sie heraus. Sie teleportiert sich durch den Saal, stößt mit der Lanze nach dir und schickt &6Thunder Crystals&r, die auf dich zufliegen. Gummy Swets und ein Healing Stone gehören in die Leiste.",
+              "",
+              "&eBeute:&r Sie lässt den &6Silver Dungeon Key&r und ein Goldschwert fallen. Der Key öffnet die Schatzkammer: &6Lightning Sword&r, &6Holy Sword&r, &6Invisibility Cloak&r, &6Regeneration Stone&r, Enchanted und Poison Dart Shooter, Moa-Eier, Enchanted Berries.",
+              "",
+              "&eStufe 3:&r Das Beste aus der Kammer ist gesperrt, bis das Stahlwerk öffnet: die &6Valkyrie Armor&r (zeitweise fliegen, wenn alle Teile samt Valkyrie Gloves getragen werden), &6Valkyrie Pickaxe, Axe, Shovel und Hoe&r, das &6Valkyrie Cape&r und &6Gravitite&r-Rüstung und -Werkzeug. Heb alles auf, tragen kannst du es jetzt schon.",
+          ],
+          tasks=[task_kill("aether:valkyrie_queen", 1)],
+          rewards=[reward_table("s2_rare"), reward_item("aether:regeneration_stone", 1), reward_xp(30)],
+          deps=["valkyrie"], icon="aether:silver_dungeon_key", size=2.5, shape="gear"),
+
+    quest("gold", 23.5, 10.8, "&c&lGold-Dungeon: kommt in Stufe 3",
+          subtitle="Der Sun Spirit und das Ende des ewigen Tages.",
+          description=[
+              "Der &6Gold Dungeon&r ist eine große Insel aus rotem &6Hellfire Stone&r, bewacht von &6Fire Minions&r. Drinnen sitzt der &cSun Spirit&r, der Grund, warum im Aether nie die Sonne untergeht. Er schießt Feuerkugeln und &6Fire Crystals&r, dazwischen &6Ice Crystals&r, die durch den Raum springen. Prallt einer seiner eigenen Eiskristalle gegen ihn, ist er kurz eingefroren, und &enur dann&r kannst du ihn verletzen.",
+              "",
+              "&eBeute:&r der &6Gold Dungeon Key&r, der &6Sun Altar&r, mit dem du die Tageszeit im Aether stellst, und die Schatzkammer mit &6Phoenix Armor&r (Feuerresistenz, schwimmen in Lava; in Wasser wird sie zur &6Obsidian Armor&r), &6Gravitite&r-Rüstung und -Waffen, &6Enchanted Gravitite&r, &6Life Shards&r (ein Herz mehr, bis zu zehn), &6Vampire Blade&r, &6Pig Slayer&r und &6Iron Bubble&r.",
+              "",
+              "Sun Altar, Phoenix-, Obsidian- und Gravitite-Ausrüstung öffnen mit &6Stufe 3 (Stahlwerk)&r. Der Kampf lohnt sich darum erst dann. Nach seinem Tod wird es im Aether zum ersten Mal Nacht.",
+          ],
+          tasks=[task_checkmark("Verstanden")],
+          rewards=[reward_xp(5)],
+          deps=["queen"], icon="aether:hellfire_stone", optional=True),
+]
+
+images = [
+    banner("aether/title", "Der Aether", 9.5, -4.4, height=1.75, kind="title", colour="water"),
+    banner("aether/arrival", "Ankunft", 0, -1.6, height=0.9, colour="water"),
+    banner("aether/clouds", "Aerwolken", -5.7, 4.2, height=0.9, colour="water"),
+    banner("aether/food", "Essen", 0, 7.2, height=0.9, colour="nature"),
+    banner("aether/resources", "Rohstoffe", 9.5, -1.8, height=0.9, colour="stone"),
+    banner("aether/benches", "Altar, Incubator, Freezer", 11, 4.3, height=0.9, colour="magic"),
+    banner("aether/moas", "Moas", 12.2, 7.8, height=0.9, colour="nature"),
+    banner("aether/mobs", "Bewohner", 5.7, 7.8, height=0.9, colour="water"),
+    banner("aether/accessories", "Accessoires", 23.5, -1.8, height=0.9, colour="magic"),
+    banner("aether/dungeons", "Dungeons", 21, 4.3, height=0.9, colour="brass"),
+]
+
+chapter(C, "Der Aether", "aether:aether_portal_frame", "world", quests, shape="circle", order=64, stage=2,
+        subtitle=["Stufe 2: das Glowstone-Portal, Skyroot und Zanite, Moas, Altar und Freezer und die Dungeons bis zur Valkyrie Queen."],
+        images=images)

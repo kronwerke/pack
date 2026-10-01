@@ -1,0 +1,488 @@
+"""Erste Farmen: one automated farm per quest for streamers who want their base to produce
+while they talk. Stage 1 rows (stone, wood, crops, animals, mobs, water and lava, magic) use
+only stage 1 items and the cheapest working setup of this pack: Create andesite machines,
+Botany Pots, Productive Trees, Mystical Agriculture inferium, Botania flowers without runes,
+Ars Nouveau sourcelinks, Farming for Blockheads and Apotheosis spawners. The stage 2 column
+names the upgrades (brass, Mekanism, prudentium, Enchantment Industry, Productive Bees,
+Pylons, Reliquary) as checkmarks and points to their chapters; later stages are one outlook.
+Numbers come from the mod jars and the server configs (create-server.toml, pylons-server.toml,
+Mekanism general.toml)."""
+from ftbq import (chapter, quest, task_item, task_checkmark, reward_item, reward_table, reward_xp,
+                  banner, img, item_texture)
+
+C = "farms"
+
+
+def pic(item_id, size=32):
+    return img(item_texture(item_id), size, size)
+
+
+# Stage 1 rows at x 4, 6.5, 9; the stage 2 column at x 13.5 (and 16 for a second quest).
+# Row y positions, top to bottom: stone, wood, crops, animals, mobs, fluids, magic.
+R = {"stone": -7, "wood": -3.5, "crops": 0, "animals": 3.5, "mobs": 7, "fluids": 10.5, "magic": 14}
+S2 = 13.5
+
+quests = [
+    quest("welcome", 0, 3.5, "&6&lLass die Basis arbeiten",
+          subtitle="Eine Farm pro Quest, drei Zeilen Aufbau, und es läuft, während du redest.",
+          description=[
+              "Jede Quest in diesem Kapitel ist &eeine Farm&r: Was du brauchst, wie du es hinstellst, was hinten herauskommt. Alles in der linken Hälfte geht in &6Stufe 1&r mit Andesit, Blumen, Töpfen und Samen. Die rechte Spalte sagt dir, womit du dieselbe Farm in &6Stufe 2&r aufrüstest.",
+              "",
+              "Die Reihen von oben nach unten: &eStein&r, &eHolz&r, &eFelder&r, &eTiere&r, &eMonster&r, &eWasser und Lava&r, &eMagie&r. Jede Reihe steht für sich, fang mit der an, die dir gerade fehlt.",
+              "",
+              "&eKronwerke:&r Der Obelisk will in Stufe 1 &e20 000 Bruchstein&r, &e1 500 Andesitlegierung&r und &e800 Quelljuwelen&r. Eine Truhe neben dem Obelisken ist dein Zubringer: Was deine Farm dort hineinschiebt, zählt alle 2 Sekunden für dich.",
+              "",
+              "Die Rezepte stehen in den Kapiteln &6Create&r, &aBotania&r, &dArs Nouveau&r, &aMystical Agriculture&r, &6Essen und Landwirtschaft&r und &6Kochen&r. Hier steht nur, wie man sie zu einer Farm zusammensteckt.",
+          ],
+          tasks=[task_checkmark("Los geht's")],
+          rewards=[reward_item("minecraft:hopper", 2), reward_table("s1_common")],
+          icon="minecraft:hopper", size=2.5, shape="hexagon"),
+
+    # ---- Stein, Kies und Sand ------------------------------------------------
+    quest("cobble_drill", 4, R["stone"], "&7Bau einen Bruchsteingenerator",
+          subtitle="Stein ohne Ende, auch während du redest.",
+          description=[
+              "&bWasser&r und &cLava&r so nebeneinander, dass zwischen ihnen Bruchstein entsteht, davor ein &6Mechanischer Bohrer&r an einer Welle mit Wasserrad. Eine &6Andesitschleuse&r oder ein Förderband unter dem Bohrer sammelt die Steine ein.",
+              "",
+              "Jeder abgebaute Stein wächst sofort nach. Mehrere Bohrer an derselben Welle vervielfachen das, ein Bohrer kostet 4 SU pro RPM, ein Wasserrad trägt 256 SU.",
+              "",
+              "&eKronwerke:&r Ein Förderband bis zu deiner Zubringer-Truhe am Obelisken, und du zahlst Bruchstein ein, während du schläfst. Alle Teile stehen im Kapitel &6Create&r (Bruchsteingenerator).",
+          ],
+          tasks=[task_item("minecraft:cobblestone", 256)],
+          rewards=[reward_table("s1_common"), reward_xp(5)],
+          deps=["welcome"], icon="create:mechanical_drill", size=1.25),
+
+    quest("stone_seeds", 6.5, R["stone"], "&7Pflanze Steinsamen",
+          subtitle="Bruchstein vom Feld, ganz ohne Lava.",
+          description=[
+              "Im &6Infusionsaltar&r: eine Prosperiumsamenbasis, 4 &6Inferiumessenz&r, 4 Stein (geschmolzen). Die &6Steinsamen&r auf Ackerland, darunter &6Wachstumsbeschleuniger&r. 8 &6Steinessenz&r im Ring ergeben &e24 Bruchstein&r.",
+              "",
+              img("mysticalagriculture:textures/item/essence/stone_essence.png", 32, 32),
+              "",
+              "Jeder Beschleuniger gibt der Pflanze über sich alle &e10 Sekunden&r einen Wachstumstick, bis zu 9 Blöcke hoch gestapelt. Knochenmehl wirkt auf Essenzpflanzen nicht, die Gießkanne schon. Geerntet wird mit der &6Sense&r, 7 mal 7 Felder pro Klick.",
+              "",
+              "Altar, Sockel und Beschleuniger stehen im Kapitel &aMystical Agriculture&r.",
+          ],
+          tasks=[task_item("mysticalagriculture:stone_essence", 32)],
+          rewards=[reward_item("mysticalagriculture:inferium_essence", 8), reward_xp(5)],
+          deps=["cobble_drill"], icon="mysticalagriculture:stone_seeds"),
+
+    quest("gravel_sand", 9, R["stone"], "&7Mahl Kies und Sand",
+          subtitle="Aus Bruchstein wird Kies, aus Essenz wird Sand.",
+          description=[
+              "Ein &6Mahlstein&r hinter dem Bruchsteingenerator macht aus Bruchstein &6Kies&r und aus Kies &6Feuerstein&r, je 250 Ticks pro Stück. Für &6Sand&r legst du 2 &6Feueressenz&r und 2 &6Erdessenz&r schräg ins Raster: 16 Sand. 2 Stein- und 2 Erdessenz ergeben 16 Kies.",
+              "",
+              "Kies vor einen &6Lüfter&r mit Wasser (Kieswäsche): Feuerstein und Eisenklumpen, also die Klumpen für deine Andesitlegierung. Sandstein im Mahlstein wird wieder zu Sand.",
+              "",
+              "&cStufe 2:&r Mahlwerkräder und der Zerkleinerer von Mekanism machen Kies direkt zu Sand, siehe rechts.",
+          ],
+          tasks=[task_item("minecraft:gravel", 64)],
+          rewards=[reward_item("minecraft:flint", 16), reward_xp(3)],
+          deps=["cobble_drill"], icon="minecraft:gravel"),
+
+    # ---- Holz ------------------------------------------------------------------
+    quest("wood_pots", 4, R["wood"], "&6Stell Baumtöpfe auf",
+          subtitle="Ein Baum in einem Block, alle zwei Minuten Stämme.",
+          description=[
+              "&6Trichter-Pflanztopf&r (Pflanztopf und Trichter), Erde hinein, einen &6Setzling&r darauf, darunter eine Truhe oder Schublade. Alle &e2 Minuten&r fallen &e1 bis 4 Stämme&r in die Truhe, der Baum bleibt stehen.",
+              "",
+              "Jeder Setzling im Pack geht, auch &dArchwood&r für Ars Nouveau. Ein Topf bringt in der Stunde rund 75 Stämme, vier Töpfe neben der Küche versorgen Ofen, Gehäuse und Endoflammen.",
+              "",
+              "Töpfe, Böden und Werkzeugplatz stehen im Kapitel &6Kochen&r (Blumentöpfe).",
+          ],
+          tasks=[task_item("botanypots:terracotta_hopper_botany_pot", 2)],
+          rewards=[reward_item("minecraft:oak_sapling", 4), reward_table("s1_common")],
+          deps=["welcome"], icon="botanypots:terracotta_hopper_botany_pot", size=1.25),
+
+    quest("wood_sawmill", 6.5, R["wood"], "&6Säge im Sägewerk",
+          subtitle="Sechs Bretter und Sägemehl aus jedem Stamm, ohne Strom.",
+          description=[
+              "&6Sägewerk&r von Productive Trees (Steinschneider, 3 Eisenbarren, Bretter), ein Trichter vom Baumtopf hinein, ein Trichter unten heraus. Jeder Stamm wird zu &e6 Brettern&r und &e2 Sägemehl&r.",
+              "",
+              pic("productivetrees:sawdust"),
+              "",
+              "8 Sägemehl um einen Wassereimer ergeben 2 Papier. Die &6Mechanische Säge&r von Create auf einem Förderband schneidet Stämme ebenfalls zu mehr Brettern als die Werkbank, wenn du ohnehin Rotation hast.",
+              "",
+              "Ein Ofen daneben macht aus den restlichen Stämmen &6Holzkohle&r, den Brennstoff für die Endoflammen unten.",
+          ],
+          tasks=[task_item("productivetrees:sawdust", 16)],
+          rewards=[reward_item("minecraft:paper", 8), reward_xp(3)],
+          deps=["wood_pots"], icon="productivetrees:sawmill"),
+
+    quest("wood_saw", 9, R["wood"], "&6Lass Sägen Bäume fällen",
+          subtitle="Ein Sägekarussell für große Bäume.",
+          description=[
+              "Ein &6Mechanisches Lager&r, daran ein Arm aus Blöcken mit &6Mechanischen Sägen&r an der Spitze, mit &6Sekundenkleber&r verbunden, Setzlinge im Kreis darum. Dreht sich das Lager, fällt jede Säge den Baum, an dem sie vorbeikommt, samt Blättern.",
+              "",
+              "Eine angeklebte Truhe fängt das Holz, eine &6Portable Lagerschnittstelle&r lädt es im Vorbeifahren aus. Ohne Truhe fallen die Stämme zu Boden, wo Trichter sie aufsammeln.",
+              "",
+              "In Stufe 1 setzt du die Setzlinge noch von Hand nach. Das &6Einsatzgerät&r aus Stufe 2 übernimmt das, siehe rechts. Für kleine Mengen sind die Töpfe leiser und billiger.",
+          ],
+          tasks=[task_item("create:mechanical_saw", 2), task_item("create:mechanical_bearing", 1)],
+          rewards=[reward_item("minecraft:oak_log", 32), reward_table("s1_uncommon")],
+          deps=["wood_pots"], icon="create:mechanical_saw"),
+
+    # ---- Felder --------------------------------------------------------------
+    quest("crops_pots", 4, R["crops"], "&aPflanze Weizen in Töpfe",
+          subtitle="Die kleinste Farm, die es gibt.",
+          description=[
+              "&6Trichter-Pflanztopf&r mit Erde oder &6Reichhaltiger Erde&r, &6Weizen&r, Karotten, Kartoffeln oder Zuckerrohr hinein, eine Truhe darunter. Der Topf erntet reife Pflanzen von selbst, die Pflanze bleibt stehen, Samen musst du nie nachlegen.",
+              "",
+              "Reichhaltige Erde wächst 10 Prozent schneller als Erde, ein Werkzeug mit &6Effizienz&r im Werkzeugplatz noch einmal 5 Prozent je Stufe. Tomaten, Weißkohl, Zwiebeln und Reis aus Farmer's Delight gehen genauso.",
+              "",
+              "Eine Reihe Töpfe über einer Reihe Schubladen füttert Kochtopf, Futtertrog und den Myzel-Quellenlink.",
+          ],
+          tasks=[task_item("minecraft:wheat", 64)],
+          rewards=[reward_item("farmersdelight:rich_soil", 4), reward_item("minecraft:bread", 8)],
+          deps=["welcome"], icon="minecraft:wheat", size=1.25),
+
+    quest("crops_harvester", 6.5, R["crops"], "&aBau eine Erntemaschine",
+          subtitle="Ein Arm, der übers Feld fährt.",
+          description=[
+              "&6Mechanische Erntemaschinen&r und eine Truhe an ein &6Mechanisches Lager&r kleben, das Lager langsam über ein rundes Feld drehen lassen. Reife Pflanzen werden geerntet und wachsen nach, unreife bleiben stehen.",
+              "",
+              "Eine &6Portable Lagerschnittstelle&r am Rand nimmt die Ernte im Vorbeifahren ab, eine Andesitschleuse zieht sie in deine Kiste. Mit einem &6Portalkran&r statt Lager fährt dieselbe Maschine über ein eckiges Feld hin und her.",
+              "",
+              "Gesät wird einmal von Hand. Danach läuft das Feld, solange sich das Lager dreht. Lager, Kran und Ernter stehen im Kapitel &6Create&r (Kontraptionen).",
+          ],
+          tasks=[task_item("create:mechanical_harvester", 2)],
+          rewards=[reward_item("minecraft:wheat_seeds", 32), reward_table("s1_common")],
+          deps=["crops_pots"], icon="create:mechanical_harvester"),
+
+    quest("crops_essence", 9, R["crops"], "&aLeg ein Essenzfeld an",
+          subtitle="Inferium, Beschleuniger, Sense.",
+          description=[
+              "&6Inferium-Ackerland&r (Rechtsklick mit Essenz auf Ackerland), unter jedem Block eine Säule &6Wachstumsbeschleuniger&r, oben &6Inferiumsamen&r und Rohstoffsamen. Ernte mit der &6Sense&r: 7 mal 7 Felder, die Samen bleiben stehen.",
+              "",
+              "Auf Inferium-Ackerland fällt mit 20 Prozent ein zweiter Samen. Die Erntemaschine von Create erntet Essenzpflanzen wie Weizen, dann brauchst du nicht einmal mehr die Sense.",
+              "",
+              "&cStufe 2:&r Vier Inferium werden zu einer Prudentiumessenz, und der Ernter von Mystical Agriculture übernimmt das Feld, siehe rechts. Alles weitere im Kapitel &aMystical Agriculture&r.",
+          ],
+          tasks=[task_item("mysticalagriculture:inferium_essence", 64)],
+          rewards=[reward_item("mysticalagriculture:inferium_essence", 16), reward_xp(5)],
+          deps=["crops_pots"], icon="mysticalagriculture:inferium_growth_accelerator"),
+
+    # ---- Tiere ---------------------------------------------------------------
+    quest("animals_trough", 4, R["animals"], "&6Stell einen Futtertrog auf",
+          subtitle="Die Herde füttert sich selbst.",
+          description=[
+              "&6Futtertrog&r (Bretter, Heuballen, Goldene Karotte) ins Gehege, mit &6Weizen&r, Karotten oder Samen füllen. Tiere in der Nähe fressen daraus und vermehren sich, solange Futter drin ist.",
+              "",
+              "Ein Trichter vom Weizentopf oben in den Trog, und der Nachschub kommt von allein. Ein Zaun und ein Tor, mehr Gehege braucht es nicht.",
+              "",
+              "Trog, Nest und Markt stehen im Kapitel &6Essen und Landwirtschaft&r (Tiere und Markt).",
+          ],
+          tasks=[task_item("farmingforblockheads:feeding_trough", 1)],
+          rewards=[reward_item("minecraft:wheat", 32), reward_xp(3)],
+          deps=["welcome"], icon="farmingforblockheads:feeding_trough", size=1.25),
+
+    quest("animals_thorn", 6.5, R["animals"], "&6Pflanze einen Schreckdorn",
+          subtitle="Fleisch und Leder ohne Schwert, die Kälber bleiben.",
+          description=[
+              "&6Schreckdorn&r (3 schwarze, 2 türkise Blütenblätter, Redstone-Wurzel) in der Apotheke, ins Gehege pflanzen, ein &6Manabecken&r in höchstens 10 Blöcken. Er verletzt nur &eausgewachsene Tiere&r, Jungtiere lässt er in Ruhe.",
+              "",
+              "Ein Boden aus Trichtern unter dem Gehege sammelt Fleisch, Leder, Wolle und Federn ein. Mit dem Futtertrog daneben läuft die Tierfarm komplett ohne dich.",
+              "",
+              "Ein Redstone-Signal schaltet ihn ab, wenn die Herde zu klein wird. Blume und Becken stehen im Kapitel &aBotania&r.",
+          ],
+          tasks=[task_item("botania:dreadthorne", 1)],
+          rewards=[reward_item("minecraft:leather", 8), reward_table("s1_common")],
+          deps=["animals_trough"], icon="botania:dreadthorne"),
+
+    quest("animals_nest", 9, R["animals"], "&6Nest für die Hühner, Glas für die Kuh",
+          subtitle="Eier und Milch, ohne hinterherzulaufen.",
+          description=[
+              "&6Hühnernest&r (Heuballen zwischen zwei Brettern) ins Hühnergehege, Trichter darunter: die Hühner legen hinein. &6Kuh im Glas&r: ein Milchglas aufstellen, eine Kuh darauf locken, einen Amboss auf sie fallen lassen. Danach gibt das Glas &e1 mB Milch pro Tick&r.",
+              "",
+              "Ein Eimer voll alle 50 Sekunden, solange der Chunk geladen ist, und der Kochtisch nimmt die Milch direkt aus dem Glas.",
+              "",
+              "Das Nest steht im Kapitel &6Essen und Landwirtschaft&r, die Kuh im Glas im Kapitel &6Kochen&r.",
+          ],
+          tasks=[task_item("farmingforblockheads:chicken_nest", 1)],
+          rewards=[reward_item("minecraft:egg", 16), reward_xp(3)],
+          deps=["animals_trough"], icon="cookingforblockheads:cow_jar"),
+
+    # ---- Monster -------------------------------------------------------------
+    quest("mobs_dark", 4, R["mobs"], "&cBau einen dunklen Raum",
+          subtitle="Monster, die von selbst in den Schacht laufen.",
+          description=[
+              "Ein Raum ohne jedes Licht, mindestens &e24 Blöcke&r von deinem Standplatz, Plattformen mit offenen &6Falltüren&r an den Kanten, dazwischen ein Schacht &e22 Blöcke&r tief. Monster halten offene Falltüren für Boden, treten darauf und fallen.",
+              "",
+              "Nach 22 Blöcken landen Zombies und Skelette mit einem halben Herz: ein Schlag genügt, und die Erfahrung gehört dir. Ab 23 Blöcken sterben sie von selbst, dann gibt es Beute, aber keine Erfahrung.",
+              "",
+              "Trichter am Boden sammeln Knochen, Pfeile, Fleisch und Schwarzpulver. Ein &6Ummantelter Lüfter&r schiebt zögernde Monster zum Loch.",
+          ],
+          tasks=[task_item("minecraft:bone", 32)],
+          rewards=[reward_item("minecraft:arrow", 16), reward_table("s1_common")],
+          deps=["welcome"], icon="minecraft:oak_trapdoor", size=1.25),
+
+    quest("mobs_spawner", 6.5, R["mobs"], "&cHol dir einen Spawner",
+          subtitle="Eine Monsterquelle, die du aufstellst, wo du willst.",
+          description=[
+              "Einen &6Monsterspawner&r mit einer Spitzhacke mit &6Behutsamkeit&r abbauen (kostet 100 Haltbarkeit), zu Hause über einem Schacht aufstellen. Er spawnt bis zu &e4 Monster&r alle 10 bis 40 Sekunden, solange du in &e16 Blöcken&r stehst.",
+              "",
+              "Wasser auf dem Spawnerboden schwemmt die Monster zum Schacht. Mit &6Spawner-Runen&r stellst du Takt, Zahl und Reichweite um, das &6Frontiersman's Rune&r macht 7 Monster pro Spawn bei 24 Blöcken Aktivierung.",
+              "",
+              "Spawner stehen in Verliesen, Minen und als Rogue Spawner frei in Höhlen. Runen und Spawn-Eier stehen im Kapitel &6Apotheosis&r.",
+          ],
+          tasks=[task_item("minecraft:spawner", 1)],
+          rewards=[reward_table("s1_uncommon"), reward_xp(5)],
+          deps=["mobs_dark"], icon="minecraft:spawner"),
+
+    quest("mobs_killer", 9, R["mobs"], "&cTöte automatisch",
+          subtitle="Ein Dorn oder ein heißer Wind statt deines Schwerts.",
+          description=[
+              "&6Tolldorn&r (3 rote, 2 türkise Blütenblätter, Redstone-Wurzel) neben den Landeplatz, ein &6Manabecken&r in 10 Blöcken: er verletzt alles außer Spielern. Oder ein &6Ummantelter Lüfter&r, der durch &cLava&r auf die Monster bläst: sie fangen Feuer.",
+              "",
+              "Beides tötet ohne Erfahrung. Willst du Level, lässt du die Monster mit einem halben Herz landen und schlägst selbst zu. Beute sammeln Trichter oder eine Andesitschleuse am Boden.",
+              "",
+              "&cAchtung:&r Der Tolldorn trifft auch Dorfbewohner und Haustiere. &cStufe 2:&r Mahlwerkräder, Spawnflüssigkeit und der Beutesammler, siehe rechts.",
+          ],
+          tasks=[task_item("botania:bellethorne", 1)],
+          rewards=[reward_table("s1_common"), reward_xp(5)],
+          deps=["mobs_dark"], icon="botania:bellethorne"),
+
+    # ---- Wasser und Lava -----------------------------------------------------
+    quest("water", 4, R["fluids"], "&bPump Wasser ohne Ende",
+          subtitle="Ein Teich, ein Rohr, ein Tank.",
+          description=[
+              "&6Mechanische Pumpe&r (Zahnrad, Rohr) an eine Welle, ein offenes &6Flüssigkeitsrohr&r in einen Teich von mindestens 2 mal 2 Quellblöcken, das andere Ende in einen &6Flüssigkeitstank&r (8 Eimer pro Block). Der Teich füllt sich selbst nach, die Pumpe läuft ewig.",
+              "",
+              "Die Pumpe reicht &e16 Blöcke&r je Seite und kostet 4 SU pro RPM. Ein &6Ausguss&r über einem Depot füllt daraus Eimer und Flaschen, der Mixer nimmt Wasser für Teig und Zellstoff per Rohr.",
+              "",
+              "Für weite Wege: Die &6Schlauchrolle&r saugt bis 128 Blöcke tief, und ein See mit über 10 000 Blöcken gilt als unendlich. Rohre und Pumpe stehen im Kapitel &6Create&r (Fluide).",
+          ],
+          tasks=[task_item("create:mechanical_pump", 1), task_item("create:fluid_tank", 1)],
+          rewards=[reward_item("minecraft:copper_ingot", 8), reward_table("s1_common")],
+          deps=["welcome"], icon="create:mechanical_pump", size=1.25),
+
+    quest("lava", 6.5, R["fluids"], "&cZapf einen Lavasee an",
+          subtitle="Lava für Bohrer, Lüfter und Andesit.",
+          description=[
+              "Dieselbe &6Mechanische Pumpe&r, das offene Rohrende in einen &cLavasee&r, dahinter &6Flüssigkeitstanks&r. Ein &6Abfluss&r im Band leert Lavaeimer aus der Mine ebenfalls in den Tank.",
+              "",
+              "Lava brauchst du öfter, als du denkst: am Bruchsteingenerator, vor dem Lüfter zum Schmelzen, und die &6Mechanische Presse&r verdichtet über einem Becken 2 Feuerstein, 1 Kies und etwas Lava zu neuem &6Andesit&r, dem Rohstoff der Technik-Säule.",
+              "",
+              "Ein See in der Oberwelt ist endlich, die Pumpe holt ihn Block für Block leer. Unendlich wird Lava erst mit dem Lavameer im Nether (Stufe 2) oder mit Feuersamen, nächste Quest.",
+          ],
+          tasks=[task_item("minecraft:lava_bucket", 2)],
+          rewards=[reward_item("minecraft:bucket", 2), reward_xp(3)],
+          deps=["water"], icon="minecraft:lava_bucket"),
+
+    quest("lava_seeds", 9, R["fluids"], "&cZüchte Lava auf dem Feld",
+          subtitle="Feuersamen, Essenz, Lavaeimer.",
+          description=[
+              "&6Feuersamen&r im Infusionsaltar: Samenbasis, 4 Inferiumessenz, 4 &6Feuer-Agglomerat&r (Lavaeimer, Kies, Erde, Tonklumpen im 2x2). 4 &6Feueressenz&r um einen Eimer ergeben einen &6Lavaeimer&r, ein &6Abfluss&r leert ihn in den Tank.",
+              "",
+              "Damit ist Lava in Stufe 1 unendlich, ohne Nether: Feld, Werkbank, Abfluss, Tank. Dieselbe Essenz gibt mit Erdessenz Sand und mit Steinessenz Feuerstein.",
+              "",
+              "&eKronwerke:&r Lava aus Feuersamen und Feuerstein aus dem Mahlstein ergeben in der Presse Andesit, und der Mixer macht daraus Andesitlegierung für den Obelisken.",
+          ],
+          tasks=[task_item("mysticalagriculture:fire_essence", 16)],
+          rewards=[reward_table("s1_uncommon"), reward_xp(5)],
+          deps=["lava"], icon="mysticalagriculture:fire_seeds"),
+
+    # ---- Magie ---------------------------------------------------------------
+    quest("source_berries", 4, R["magic"], "&dPflanze Quellbeeren",
+          subtitle="Ein Beet, das Quelle macht, während es wächst.",
+          description=[
+              "&6Quellbeerbüsche&r aus dem Archwood-Wald in Reihen pflanzen, dazwischen ein &6Agronomischer Quellenlink&r (2 Quelljuwelen, 2 Goldbarren, Weizen) und ein &6Quellglas&r. Jeder Wachstumsschritt im Umkreis von &e15 Blöcken&r bringt Quelle, der Link füllt Gläser bis 5 Blöcke weit.",
+              "",
+              "Ein &6Sternbunkel&r erntet die reifen Büsche in eine Truhe, die Beeren füttern den Myzel-Quellenlink oder dich. &6Magieblüten&r im selben Beet zählen als magische Pflanzen und geben mehr.",
+              "",
+              "&eKronwerke:&r Eine &6Imbuement-Kammer&r höchstens 2 Blöcke vom Glas, Trichter für Amethyst oben und Juwelen unten, und die Quelljuwelen für den Obelisken entstehen von selbst. Siehe Kapitel &dArs Nouveau&r (Quelle).",
+          ],
+          tasks=[task_item("ars_nouveau:sourceberry_bush", 8), task_item("ars_nouveau:agronomic_sourcelink", 1)],
+          rewards=[reward_item("ars_nouveau:source_gem", 4), reward_table("s1_common")],
+          deps=["welcome"], icon="ars_nouveau:agronomic_sourcelink", size=1.25),
+
+    quest("mana_endoflame", 6.5, R["magic"], "&dFüttere Endoflammen mit Holzkohle",
+          subtitle="Mana, das aus deinen Baumtöpfen kommt.",
+          description=[
+              "4 bis 8 &6Endoflammen&r um einen &6Manaverbreiter&r, am Beetrand eine &6Offene Kiste&r mit Trichter und Truhe darüber, der Verbreiter zielt auf ein &6Manabecken&r. Holzkohle aus den Baumtöpfen und einem Ofen in die Truhe. Eine &6Holzkohle&r gibt rund &d2 400 Mana&r.",
+              "",
+              "Jede Endoflamme liefert etwa 60 Mana pro Sekunde. Acht davon füllen ein Becken (1 000 000 Mana) in gut einer halben Stunde und fressen dafür rund 420 Holzkohle, also etwa 100 Stämme.",
+              "",
+              "&cAchtung:&r Items auf dem Boden verschwinden nach 5 Minuten. Eine Druckplatte unter der Kiste, die den Trichter sperrt, solange Kohle liegt, löst das. &cStufe 2:&r Thermalilie und Gourmaryllis, siehe rechts. Siehe Kapitel &aBotania&r.",
+          ],
+          tasks=[task_item("botania:endoflame", 4), task_item("botania:open_crate", 1)],
+          rewards=[reward_item("minecraft:charcoal", 32), reward_table("s1_common")],
+          deps=["source_berries"], icon="botania:endoflame"),
+
+    # ---- Stufe 2: die Aufruestungen ------------------------------------------
+    quest("s2_sand", S2, R["stone"], "&6Stufe 2: Kies zu Sand",
+          subtitle="Mahlwerkräder und der Zerkleinerer.",
+          description=[
+              "Zwei &6Mahlwerkräder&r aus den Handwerkseinheiten, einen Block auseinander, drehen sich aufeinander zu: Kies wird zu &6Sand&r, mit 10 Prozent Feuerstein und 5 Prozent Ton dazu. Der &6Zerkleinerer&r von Mekanism macht mit Strom Bruchstein zu Kies und Kies zu Sand.",
+              "",
+              "Die Kette: Bohrer, Mahlstein, Mahlwerkräder. Bruchstein rein, Sand raus. Diorit zwischen den Rädern gibt mit 25 Prozent Netherquarz.",
+              "",
+              "Siehe Kapitel &6Create: Messing&r (Mahlwerkräder) und &5Mekanism&r (Zerkleinerer).",
+          ],
+          tasks=[task_checkmark("Gelesen")],
+          rewards=[reward_xp(5)],
+          deps=["gravel_sand"], icon="minecraft:sand"),
+
+    quest("s2_wood", S2, R["wood"], "&6Stufe 2: Nachpflanzen ohne dich",
+          subtitle="Einsatzgerät und Präzisionssägewerk.",
+          description=[
+              "Ein &6Einsatzgerät&r mit Setzlingen in der Hand setzt am Sägekarussell nach, was die Säge gefällt hat, dann läuft die Baumfarm ohne dich. Das &6Präzisionssägewerk&r von Mekanism macht 6 Bretter pro Stamm und wirft mit etwas Glück Sägespäne ab.",
+              "",
+              "Das Einsatzgerät wirkt 2 Blöcke vor sich und bekommt seine Setzlinge per Schleuse aus der Erntetruhe. Eine Messingschleuse mit Filter lässt nur Setzlinge durch.",
+              "",
+              "Siehe Kapitel &6Create: Messing&r (Einsatzgerät) und &5Mekanism&r (Präzisionssägewerk).",
+          ],
+          tasks=[task_checkmark("Gelesen")],
+          rewards=[reward_xp(5)],
+          deps=["wood_saw"], icon="minecraft:oak_sapling"),
+
+    quest("s2_crops", S2, R["crops"], "&aStufe 2: Prudentium und der Ernter",
+          subtitle="Mehr Essenz, und eine Maschine, die erntet und sät.",
+          description=[
+              "Der &6Infusionskristall&r macht aus 4 Inferiumessenz 1 &6Prudentiumessenz&r. Damit kommen Prudentium-Ackerland, Prudentium-Beschleuniger und die Samen für Kohle, Natur, Farbstoff und Tiere. Der &6Ernter&r (Eisen, 2 Souliumbarren, 2 Diamantsensen, Maschinenrahmen) erntet reife Pflanzen und pflanzt sie nach.",
+              "",
+              "Der Ernter läuft mit Kohle oder Holzkohle, legt die Ernte in sein eigenes Inventar und lässt sich mit Redstone abschalten. Maschinen-Upgrades machen ihn schneller.",
+              "",
+              "Siehe Kapitel &aMystical Agriculture&r (Ausblick).",
+          ],
+          tasks=[task_checkmark("Gelesen")],
+          rewards=[reward_xp(5)],
+          deps=["crops_essence"], icon="mysticalagriculture:infusion_crystal"),
+
+    quest("s2_pylon", S2 + 2.5, R["crops"], "&aStufe 2: Ernte-Pylon",
+          subtitle="Pylons: eine Hacke im Block, eine Truhe darüber.",
+          description=[
+              "&6Harvester Pylon&r (oben 3 Quarzstufen, Eisengitter, Heuballen, Eisengitter, unten 3 Polierter Schwarzstein) in den Wasserblock des Feldes setzen oder auf Höhe der Pflanzen, eine &6Hacke&r hinein, eine Truhe darüber. Alle &e3 Sekunden&r erntet er &e3 mal 3 bis 9 mal 9&r Felder und legt die Ernte in die Truhe.",
+              "",
+              "Jede Ernte kostet die Hacke 1 Haltbarkeit, Haltbarkeit-Verzauberungen zählen. Ein Redstone-Signal hält ihn an.",
+              "",
+              "Quarz und Schwarzstein kommen aus dem Nether, deshalb Stufe 2.",
+          ],
+          tasks=[task_checkmark("Gelesen")],
+          rewards=[reward_xp(3)],
+          deps=["s2_crops"], icon="minecraft:iron_hoe"),
+
+    quest("s2_animals", S2, R["animals"], "&6Stufe 2: Scheren und Schwerter von allein",
+          subtitle="Einsatzgerät und Reliquary-Pedestal.",
+          description=[
+              "Ein &6Einsatzgerät&r mit einer &6Schere&r vor dem Schafgehege schert alles, was 2 Blöcke vor ihm steht. Im Schlag-Modus (Schraubenschlüssel) mit einem Schwert tötet es Tiere und Monster. Das &6Pedestal&r von Reliquary tut dasselbe ohne Rotation: ein Schwert darin schlägt 5 Blöcke weit, eine Schere schert Schafe.",
+              "",
+              "Wolle und Fleisch sammelt eine Andesitschleuse am Boden oder die Trichtermalve aus Botania ein.",
+              "",
+              "Siehe Kapitel &6Create: Messing&r (Einsatzgerät) und &dReliquary&r (Pedestal).",
+          ],
+          tasks=[task_checkmark("Gelesen")],
+          rewards=[reward_xp(5)],
+          deps=["animals_nest"], icon="minecraft:shears"),
+
+    quest("s2_bees", S2 + 2.5, R["animals"], "&eStufe 2: Bienen",
+          subtitle="Productive Bees: Waben aus Eisen, Kupfer und Zink.",
+          description=[
+              "Mit Stufe 2 öffnet &6Productive Bees&r: ein &6Fortgeschrittener Bienenstock&r, Bienen im Käfig, eine &6Zentrifuge&r für die Waben. Eisen-, Kupfer-, Gold-, Zink- und Osmiumbienen tragen Metall ein, während du etwas anderes tust.",
+              "",
+              "Die Zucht beginnt mit Vanilla-Bienen aus dem Nest und einer Futterplatte. Alles Schritt für Schritt im Kapitel &eProductive Bees&r.",
+          ],
+          tasks=[task_checkmark("Gelesen")],
+          rewards=[reward_xp(3)],
+          deps=["s2_animals"], icon="minecraft:bee_nest"),
+
+    quest("s2_mobs", S2, R["mobs"], "&cStufe 2: Mahlwerk und Spawnflüssigkeit",
+          subtitle="Töten ohne Mana, spawnen ohne Spawner.",
+          description=[
+              "Zwei &6Mahlwerkräder&r unter dem Fallschacht verletzen alles, was hineinfällt, ohne Schwert und ohne Mana. Der &6Mechanical Spawner&r spawnt Mobs aus &6Spawnflüssigkeit&r (erhitzter Mixer: flüssige Erfahrung und Wasser), &e100 mB pro Mob&r bei mindestens 100 RPM. Der &6Beutesammler&r an seinem Spawnpunkt fängt die Beute, ohne dass ein Mob erscheint.",
+              "",
+              "Mit Verrottetem Fleisch, Knochen oder Schwarzpulver im Mixer wird aus der zufälligen Sorte Zombie, Skelett oder Creeper. Spawner-Runen mit Seelenlaterne ignorieren das Licht.",
+              "",
+              "Siehe Kapitel &6Create: Messing&r (Mahlwerkräder, Mechanical Spawner), &6Create: Erweiterungen&r (Spawnflüssigkeit) und &6Apotheosis&r (Runen).",
+          ],
+          tasks=[task_checkmark("Gelesen")],
+          rewards=[reward_xp(5)],
+          deps=["mobs_killer"], icon="minecraft:spawner"),
+
+    quest("s2_xp", S2 + 2.5, R["mobs"], "&5Stufe 2: Erfahrung in Flaschen",
+          subtitle="Enchantment Industry: Schleifstein, Abfluss, Luke.",
+          description=[
+              "Einen &6Mechanischen Schleifstein&r (8 Andesitlegierung um eine Welle) auf einen &6Abfluss&r anwenden: ein Schleifstein-Abfluss. Ein zweiter Schleifstein obendrauf mahlt &6Erfahrungsklumpen&r zu je &b3 mB flüssiger Erfahrung&r, der Abfluss leert Erfahrungsflaschen zu je &b10 mB&r.",
+              "",
+              "Erfahrungsklumpen fallen aus Roherz zwischen den Mahlwerkrädern. Die &6Erfahrungsluke&r (Flüssigkeitsluke und Erfahrungsblock) am Tank ist deine Bank: Rechtsklick zahlt Level ein, Schleichen holt sie wieder heraus.",
+              "",
+              "Siehe Kapitel &6Create: Erweiterungen&r (Enchantment Industry).",
+          ],
+          tasks=[task_checkmark("Gelesen")],
+          rewards=[reward_item("minecraft:experience_bottle", 4)],
+          deps=["s2_mobs"], icon="minecraft:experience_bottle"),
+
+    quest("s2_fluids", S2, R["fluids"], "&bStufe 2: Pumpe und Tank von Mekanism",
+          subtitle="Strom statt Rotation, 80 Blöcke weit.",
+          description=[
+              "Eine &6Elektrische Pumpe&r über einem Wasserblock, Strom dran: Sie holt Wasser bis &e80 Blöcke&r weit, ohne dass der See leerer wird. Der &6Einfache Flüssigkeitsbehälter&r fasst 32 Eimer, &6Einfache Rohrleitungen&r pumpen 250 mB pro Tick.",
+              "",
+              "Lava unendlich: eine &6Schlauchrolle&r über dem Lavameer im Nether, über 10 000 Blöcke gelten als unendlich. Neben einem &6Wärmegenerator&r bringt jede angrenzende Lava 12 FE/t, ohne verbraucht zu werden.",
+              "",
+              "Siehe Kapitel &5Mekanism&r (Rohre und Tanks) und &cDer Nether&r.",
+          ],
+          tasks=[task_checkmark("Gelesen")],
+          rewards=[reward_xp(5)],
+          deps=["lava_seeds"], icon="minecraft:water_bucket"),
+
+    quest("s2_mana", S2, R["magic"], "&dStufe 2: Blumen, die arbeiten",
+          subtitle="Runen öffnen die Helfer.",
+          description=[
+              "Mit dem &6Runenaltar&r kommen die Blumen, die Farmen zusammenhalten: die &6Trichtermalve&r sammelt Drops in eine Truhe, die &6Agrarnelke&r lässt Felder und Bäume schneller wachsen, die &6Rannawurzel&r pflanzt nach. Für Mana frisst die &6Thermalilie&r einen Lavablock für 30 Sekunden, die &6Gourmaryllis&r frisst Essen, am liebsten abwechslungsreich.",
+              "",
+              "Eine Thermalilie am Lavatank aus der Feuersamen-Farm und eine Gourmaryllis an der Küche ersetzen ein ganzes Beet Endoflammen.",
+              "",
+              "Siehe Kapitel &aBotania: Runen&r. Der &6Kekimurus&r, der Kuchen frisst, kommt mit Alfheim in Stufe 3.",
+          ],
+          tasks=[task_checkmark("Gelesen")],
+          rewards=[reward_xp(5)],
+          deps=["mana_endoflame"], icon="botania:mana_pool"),
+
+    # ---- Abschluss -----------------------------------------------------------
+    quest("running", 6.5, 17.5, "&6&lDie Basis läuft",
+          subtitle="Stein, Holz, Weizen und Leder, ohne dass du daneben stehst.",
+          description=[
+              "Zeig, dass es läuft: ein Stapel Bruchstein vom Generator, Holzkohle aus den Töpfen, Weizen aus dem Feld und Leder aus dem Gehege, alles aus Farmen, die ohne dich arbeiten.",
+              "",
+              "Jetzt hast du Zeit für den Chat. Die Farmen füllen Truhen, der Zubringer am Obelisken zählt, und was übrig ist, tauschst du mit den anderen: Create-Spieler brauchen Stämme und Kohle, Magier brauchen Quelljuwelen und Mana.",
+              "",
+              "&eTipp:&r Lade die Chunks deiner Farmen dauerhaft (Shift und linke Maustaste auf der Karte, bis zu 25 Chunks), sonst stehen sie still, sobald du weit weg bist.",
+          ],
+          tasks=[task_item("minecraft:cobblestone", 512), task_item("minecraft:charcoal", 32),
+                 task_item("minecraft:wheat", 64), task_item("minecraft:leather", 16)],
+          rewards=[reward_table("s1_rare"), reward_item("minecraft:hopper", 4), reward_xp(15)],
+          deps=["gravel_sand", "wood_saw", "crops_essence", "animals_nest", "mobs_killer", "lava_seeds",
+                "mana_endoflame"],
+          icon="minecraft:hopper", size=2.5, shape="gear"),
+
+    quest("outlook", 13.5, 17.5, "&dAusblick: Stufe 3 und später",
+          subtitle="Die großen Maschinen, kurz genannt.",
+          description=[
+              "&cStufe 3:&r Industrial Foregoing mit seinen Pflanzen- und Tiermaschinen, der &6Digitale Miner&r von Mekanism, Ender IO, Applied Energistics als Lager für alle Farmen, Create Ore Excavation für Erzadern, bei Botania die &6Erchidee&r (Stein zu Erz) und der &6Kekimurus&r.",
+              "",
+              "&cStufe 4:&r der RFTools Builder und Quarry Plus für ganze Landstriche, Mekanism Elite, der Erweckungsaltar von Mystical Agriculture.",
+              "",
+              "Jedes davon hat sein eigenes Kapitel, sobald die Stufe offen ist. Bis dahin: Was hier steht, läuft die ganze Season weiter.",
+          ],
+          tasks=[task_checkmark("Gelesen")],
+          rewards=[reward_xp(5)],
+          deps=["running"], icon="minecraft:clock", optional=True),
+]
+
+images = [
+    banner("farms/title", "Erste Farmen", 8, -11.4, height=1.8, kind="title", colour="nature"),
+    banner("farms/stage1", "Stufe 1: Steinwerk", 6.5, -9.7, height=0.6, kind="note", colour="stone"),
+    banner("farms/stage2", "Stufe 2: Messingwerk", 14.75, -9.7, height=0.6, kind="note", colour="fire"),
+    banner("farms/stone", "Stein, Kies und Sand", 6.5, R["stone"] - 1.7, height=0.9, colour="stone"),
+    banner("farms/wood", "Holz", 6.5, R["wood"] - 1.7, height=0.9, colour="nature"),
+    banner("farms/crops", "Felder", 6.5, R["crops"] - 1.7, height=0.9, colour="nature"),
+    banner("farms/animals", "Tiere", 6.5, R["animals"] - 1.7, height=0.9, colour="brass"),
+    banner("farms/mobs", "Monster", 6.5, R["mobs"] - 1.7, height=0.9, colour="fire"),
+    banner("farms/fluids", "Wasser und Lava", 6.5, R["fluids"] - 1.7, height=0.9, colour="water"),
+    banner("farms/magic", "Magie", 6.5, R["magic"] - 1.7, height=0.9, colour="magic"),
+    banner("farms/done", "Die Basis läuft", 10, 15.8, height=0.9, colour="brass"),
+]
+
+chapter(C, "Erste Farmen", "minecraft:hopper", "start", quests, shape="circle", order=2, stage=1,
+        subtitle=["Eine automatische Farm pro Quest: Stein, Holz, Felder, Tiere, Monster, Lava und Mana in Stufe 1, die Aufrüstungen von Stufe 2 daneben."],
+        images=images)

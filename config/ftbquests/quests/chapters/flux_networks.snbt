@@ -1,0 +1,1068 @@
+{
+	id: "3E5745D0EB57D8EC"
+	filename: "flux_networks"
+	icon: {
+		id: "fluxnetworks:flux_plug"
+		count: 1
+	}
+	group: "AEAA9718BAF5A32A"
+	order_index: 62
+	default_quest_shape: "circle"
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			id: "FD96716A23CE3BA0"
+			x: 0.0d
+			y: 1.0d
+			icon: {
+				id: "fluxnetworks:flux_dust"
+				count: 1
+			}
+			size: 2.0d
+			shape: "hexagon"
+			tasks: [
+				{
+					id: "1E55DCE8A106FB23"
+					type: "item"
+					item: {
+						id: "fluxnetworks:flux_dust"
+						count: 1
+					}
+					count: 32
+				}
+			]
+			rewards: [
+				{
+					id: "06B79554E046203D"
+					type: "item"
+					item: {
+						id: "minecraft:redstone"
+						count: 1
+					}
+					count: 32
+				}
+				{
+					id: "19F9D861B8E1BB65"
+					type: "loot"
+					table_id: "BB5E855731D4F100"
+				}
+			]
+		}
+		{
+			id: "9B72F94064E45DB0"
+			x: 2.5d
+			y: 1.0d
+			icon: {
+				id: "fluxnetworks:flux_core"
+				count: 1
+			}
+			dependencies: [
+				"FD96716A23CE3BA0"
+			]
+			tasks: [
+				{
+					id: "9282B93A47D4763D"
+					type: "item"
+					item: {
+						id: "fluxnetworks:flux_core"
+						count: 1
+					}
+					count: 8
+				}
+			]
+			rewards: [
+				{
+					id: "9CC47D105A76FA08"
+					type: "item"
+					item: {
+						id: "ars_nouveau:source_gem"
+						count: 1
+					}
+					count: 8
+				}
+				{
+					id: "4A51E498D29A10AF"
+					type: "item"
+					item: {
+						id: "minecraft:obsidian"
+						count: 1
+					}
+					count: 16
+				}
+			]
+		}
+		{
+			id: "FA237AEF4A42416D"
+			x: 5.0d
+			y: 1.0d
+			icon: {
+				id: "fluxnetworks:flux_block"
+				count: 1
+			}
+			dependencies: [
+				"9B72F94064E45DB0"
+			]
+			tasks: [
+				{
+					id: "8635902AA225480B"
+					type: "item"
+					item: {
+						id: "fluxnetworks:flux_block"
+						count: 1
+					}
+					count: 2
+				}
+			]
+			rewards: [
+				{
+					id: "5022532BFEC8CC9D"
+					type: "item"
+					item: {
+						id: "fluxnetworks:flux_dust"
+						count: 1
+					}
+					count: 16
+				}
+				{
+					id: "3EFAB0E4FEA5B349"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+		}
+		{
+			id: "9D7B3B704740B2A8"
+			x: 2.5d
+			y: 3.2d
+			dependencies: [
+				"FD96716A23CE3BA0"
+			]
+			tasks: [
+				{
+					id: "C60E0A73A1EDA022"
+					type: "item"
+					item: {
+						id: "fluxnetworks:flux_configurator"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "D2BD4C3B5AA2768C"
+					type: "item"
+					item: {
+						id: "minecraft:ender_eye"
+						count: 1
+					}
+					count: 2
+				}
+				{
+					id: "39AA8B3A44898F7F"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+		}
+		{
+			id: "4AB8BCA25458279B"
+			x: 7.5d
+			y: 1.0d
+			icon: {
+				id: "fluxnetworks:flux_configurator"
+				count: 1
+			}
+			size: 1.5d
+			shape: "hexagon"
+			dependencies: [
+				"FA237AEF4A42416D"
+				"9D7B3B704740B2A8"
+			]
+			tasks: [
+				{
+					id: "D28D7144F2369098"
+					type: "checkmark"
+				}
+			]
+			rewards: [
+				{
+					id: "3C20E74AFA663DFC"
+					type: "item"
+					item: {
+						id: "fluxnetworks:flux_dust"
+						count: 1
+					}
+					count: 8
+				}
+				{
+					id: "3BD77088427BCDEA"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+		}
+		{
+			id: "49D727E21E41F5C9"
+			x: 10.0d
+			y: 0.0d
+			icon: {
+				id: "minecraft:iron_door"
+				count: 1
+			}
+			dependencies: [
+				"4AB8BCA25458279B"
+			]
+			tasks: [
+				{
+					id: "03A1B18C54C9DAA8"
+					type: "checkmark"
+				}
+			]
+			rewards: [
+				{
+					id: "C39AC3DB1B8A5284"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+		}
+		{
+			id: "F3C2815B15F0590F"
+			x: 10.0d
+			y: 2.2d
+			icon: {
+				id: "minecraft:name_tag"
+				count: 1
+			}
+			dependencies: [
+				"4AB8BCA25458279B"
+			]
+			tasks: [
+				{
+					id: "8DE27E20F66AA565"
+					type: "checkmark"
+				}
+			]
+			rewards: [
+				{
+					id: "BECA371382453684"
+					type: "item"
+					item: {
+						id: "minecraft:redstone_block"
+						count: 1
+					}
+					count: 4
+				}
+				{
+					id: "C08AA6C41148860E"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+		}
+		{
+			id: "1601A102B4B93A06"
+			x: 12.5d
+			y: 1.0d
+			icon: {
+				id: "minecraft:writable_book"
+				count: 1
+			}
+			optional: true
+			dependencies: [
+				"49D727E21E41F5C9"
+				"F3C2815B15F0590F"
+			]
+			tasks: [
+				{
+					id: "051F2DC2D200AB08"
+					type: "checkmark"
+				}
+			]
+			rewards: [
+				{
+					id: "2AD7BEA14E36F496"
+					type: "loot"
+					table_id: "BB5E855731D4F100"
+				}
+				{
+					id: "85830ACE44E44599"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+		}
+		{
+			id: "4684A0F706CC1C22"
+			x: 2.5d
+			y: 6.5d
+			icon: {
+				id: "fluxnetworks:flux_plug"
+				count: 1
+			}
+			size: 1.5d
+			shape: "hexagon"
+			dependencies: [
+				"FA237AEF4A42416D"
+			]
+			tasks: [
+				{
+					id: "B8B908669470CAF9"
+					type: "item"
+					item: {
+						id: "fluxnetworks:flux_plug"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "DBDBE7CF0251D610"
+					type: "loot"
+					table_id: "BB5E855731D4F100"
+				}
+				{
+					id: "6B659BCE60A3BB1F"
+					type: "xp_levels"
+					xp_levels: 10
+				}
+			]
+		}
+		{
+			id: "3BF5047D4A9055F9"
+			x: 5.0d
+			y: 6.5d
+			icon: {
+				id: "fluxnetworks:flux_point"
+				count: 1
+			}
+			size: 1.5d
+			shape: "hexagon"
+			dependencies: [
+				"FA237AEF4A42416D"
+			]
+			tasks: [
+				{
+					id: "D32948FCA9DFF7F8"
+					type: "item"
+					item: {
+						id: "fluxnetworks:flux_point"
+						count: 1
+					}
+					count: 2
+				}
+			]
+			rewards: [
+				{
+					id: "6C08B7DE22A9115B"
+					type: "item"
+					item: {
+						id: "minecraft:redstone_block"
+						count: 1
+					}
+					count: 4
+				}
+				{
+					id: "C9609BEE93385402"
+					type: "xp_levels"
+					xp_levels: 10
+				}
+			]
+		}
+		{
+			id: "B78757F7D00B0EFC"
+			x: 7.5d
+			y: 6.5d
+			icon: {
+				id: "fluxnetworks:flux_point"
+				count: 1
+			}
+			size: 1.75d
+			shape: "gear"
+			dependencies: [
+				"4684A0F706CC1C22"
+				"3BF5047D4A9055F9"
+				"4AB8BCA25458279B"
+			]
+			tasks: [
+				{
+					id: "D467AD8C5A7D59CA"
+					type: "checkmark"
+				}
+			]
+			rewards: [
+				{
+					id: "6D79814C328D9E4F"
+					type: "loot"
+					table_id: "6BD556482A471D58"
+				}
+				{
+					id: "474A79B424268D30"
+					type: "xp_levels"
+					xp_levels: 10
+				}
+			]
+		}
+		{
+			id: "B01774DAD692CFF7"
+			x: 10.0d
+			y: 5.5d
+			icon: {
+				id: "minecraft:compass"
+				count: 1
+			}
+			dependencies: [
+				"B78757F7D00B0EFC"
+			]
+			tasks: [
+				{
+					id: "0D5CE27123A9409C"
+					type: "checkmark"
+				}
+			]
+			rewards: [
+				{
+					id: "2765BA5730975A74"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+		}
+		{
+			id: "61234B86620B9460"
+			x: 10.0d
+			y: 7.7d
+			icon: {
+				id: "minecraft:repeater"
+				count: 1
+			}
+			dependencies: [
+				"B78757F7D00B0EFC"
+			]
+			tasks: [
+				{
+					id: "BE2CA5E85A371BF0"
+					type: "checkmark"
+				}
+			]
+			rewards: [
+				{
+					id: "22A309B1D4B0932B"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+		}
+		{
+			id: "1A301EBCE4C292F9"
+			x: 12.5d
+			y: 5.5d
+			icon: {
+				id: "minecraft:comparator"
+				count: 1
+			}
+			dependencies: [
+				"B01774DAD692CFF7"
+			]
+			tasks: [
+				{
+					id: "77EC9799ED2FC07F"
+					type: "checkmark"
+				}
+			]
+			rewards: [
+				{
+					id: "6C61CE8913164E18"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+		}
+		{
+			id: "BE6FF7DF9793C34E"
+			x: 12.5d
+			y: 7.7d
+			icon: {
+				id: "minecraft:redstone_torch"
+				count: 1
+			}
+			dependencies: [
+				"61234B86620B9460"
+			]
+			tasks: [
+				{
+					id: "227DEDB2BD1A4112"
+					type: "checkmark"
+				}
+			]
+			rewards: [
+				{
+					id: "6FB247F7A7A9F1C2"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+		}
+		{
+			id: "BF10428E7D8BBB53"
+			x: 15.0d
+			y: 6.6d
+			icon: {
+				id: "fluxnetworks:flux_configurator"
+				count: 1
+			}
+			optional: true
+			dependencies: [
+				"1A301EBCE4C292F9"
+				"BE6FF7DF9793C34E"
+			]
+			tasks: [
+				{
+					id: "42046C9E5020AEC2"
+					type: "checkmark"
+				}
+			]
+			rewards: [
+				{
+					id: "F4787AB7878F663B"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+		}
+		{
+			id: "AC9C97509CF300BC"
+			x: 2.5d
+			y: 12.0d
+			icon: {
+				id: "fluxnetworks:flux_controller"
+				count: 1
+			}
+			size: 2.0d
+			shape: "gear"
+			dependencies: [
+				"B78757F7D00B0EFC"
+			]
+			tasks: [
+				{
+					id: "D4430D3AD411A032"
+					type: "item"
+					item: {
+						id: "fluxnetworks:flux_controller"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "E63CEA40F94D04FA"
+					type: "loot"
+					table_id: "6BD556482A471D58"
+				}
+				{
+					id: "E6998793C194453C"
+					type: "item"
+					item: {
+						id: "mekanism:advanced_control_circuit"
+						count: 1
+					}
+					count: 2
+				}
+				{
+					id: "1D9F57E0B0137FA1"
+					type: "xp_levels"
+					xp_levels: 15
+				}
+			]
+		}
+		{
+			id: "1C44F2CB55F34D57"
+			x: 5.0d
+			y: 12.0d
+			icon: {
+				id: "mekanism:energy_tablet"
+				count: 1
+			}
+			dependencies: [
+				"AC9C97509CF300BC"
+			]
+			tasks: [
+				{
+					id: "F71B86E1EDDCD36D"
+					type: "checkmark"
+				}
+			]
+			rewards: [
+				{
+					id: "E77987FC9D3946FF"
+					type: "item"
+					item: {
+						id: "mekanism:energy_tablet"
+						count: 1
+					}
+					count: 1
+				}
+				{
+					id: "F8690A05A547384C"
+					type: "xp_levels"
+					xp_levels: 10
+				}
+			]
+		}
+		{
+			id: "62A7A5C8817A1244"
+			x: 7.5d
+			y: 12.0d
+			icon: {
+				id: "mekanism:free_runners"
+				count: 1
+			}
+			optional: true
+			dependencies: [
+				"1C44F2CB55F34D57"
+			]
+			tasks: [
+				{
+					id: "B31AD6F773581BBB"
+					type: "item"
+					item: {
+						id: "mekanism:energy_tablet"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "D9D367CC267E1E16"
+					type: "item"
+					item: {
+						id: "mekanism:alloy_infused"
+						count: 1
+					}
+					count: 4
+				}
+				{
+					id: "DDD60D2F48B69B13"
+					type: "xp_levels"
+					xp_levels: 10
+				}
+			]
+		}
+		{
+			id: "C98B1FF1187D7466"
+			x: 10.0d
+			y: 12.0d
+			icon: {
+				id: "fluxnetworks:basic_flux_storage"
+				count: 1
+			}
+			size: 1.5d
+			shape: "hexagon"
+			dependencies: [
+				"B78757F7D00B0EFC"
+			]
+			tasks: [
+				{
+					id: "E9B3789B4CAEC7D1"
+					type: "item"
+					item: {
+						id: "fluxnetworks:basic_flux_storage"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "44903347846EB874"
+					type: "loot"
+					table_id: "BB5E855731D4F100"
+				}
+				{
+					id: "94654EA8428901F1"
+					type: "item"
+					item: {
+						id: "minecraft:glass"
+						count: 1
+					}
+					count: 16
+				}
+				{
+					id: "57A93464676CA89A"
+					type: "xp_levels"
+					xp_levels: 10
+				}
+			]
+		}
+		{
+			id: "D83E84F0CBE1A688"
+			x: 12.5d
+			y: 11.0d
+			icon: {
+				id: "minecraft:spyglass"
+				count: 1
+			}
+			dependencies: [
+				"C98B1FF1187D7466"
+			]
+			tasks: [
+				{
+					id: "4C7DF4128F17F921"
+					type: "checkmark"
+				}
+			]
+			rewards: [
+				{
+					id: "975C2C6D77C1A3F0"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+		}
+		{
+			id: "D2C01A75F410D949"
+			x: 12.5d
+			y: 13.2d
+			icon: {
+				id: "minecraft:lodestone"
+				count: 1
+			}
+			dependencies: [
+				"C98B1FF1187D7466"
+			]
+			tasks: [
+				{
+					id: "C18321DB594CA199"
+					type: "checkmark"
+				}
+			]
+			rewards: [
+				{
+					id: "0673E3EE0A2B09A3"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+		}
+		{
+			id: "67598B153AEA326C"
+			x: 15.0d
+			y: 12.1d
+			icon: {
+				id: "fluxnetworks:basic_flux_storage"
+				count: 1
+			}
+			optional: true
+			dependencies: [
+				"D83E84F0CBE1A688"
+				"D2C01A75F410D949"
+			]
+			tasks: [
+				{
+					id: "DE4B1BB734C06D60"
+					type: "checkmark"
+				}
+			]
+			rewards: [
+				{
+					id: "E02E4D81C3F7D943"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+		}
+		{
+			id: "B38B0C7E814E36A3"
+			x: 5.0d
+			y: 18.0d
+			icon: {
+				id: "fluxnetworks:flux_plug"
+				count: 1
+			}
+			size: 2.0d
+			shape: "hexagon"
+			dependencies: [
+				"62A7A5C8817A1244"
+				"D2C01A75F410D949"
+			]
+			tasks: [
+				{
+					id: "A4A1973AF09D4BDF"
+					type: "item"
+					item: {
+						id: "fluxnetworks:flux_point"
+						count: 1
+					}
+					count: 8
+				}
+				{
+					id: "319A9BBED662220C"
+					type: "item"
+					item: {
+						id: "fluxnetworks:flux_plug"
+						count: 1
+					}
+					count: 2
+				}
+			]
+			rewards: [
+				{
+					id: "79CCF0D142F9343D"
+					type: "loot"
+					table_id: "6BD556482A471D58"
+				}
+				{
+					id: "89B4F13907855359"
+					type: "item"
+					item: {
+						id: "fluxnetworks:flux_core"
+						count: 1
+					}
+					count: 8
+				}
+				{
+					id: "AAAEE62B7F12857E"
+					type: "xp_levels"
+					xp_levels: 15
+				}
+			]
+		}
+		{
+			id: "3E12BB7D1E0FD62B"
+			x: 8.0d
+			y: 16.0d
+			icon: {
+				id: "mekanism:advanced_tier_installer"
+				count: 1
+			}
+			dependencies: [
+				"B38B0C7E814E36A3"
+			]
+			tasks: [
+				{
+					id: "1A138284FF9EB299"
+					type: "checkmark"
+				}
+			]
+			rewards: [
+				{
+					id: "B2FB905E50DF7F97"
+					type: "loot"
+					table_id: "BB5E855731D4F100"
+				}
+				{
+					id: "E827D492BA9A34B0"
+					type: "xp_levels"
+					xp_levels: 10
+				}
+			]
+		}
+		{
+			id: "0A2AC9C2E76DB05F"
+			x: 8.0d
+			y: 18.0d
+			icon: {
+				id: "powah:reactor_starter"
+				count: 1
+			}
+			dependencies: [
+				"B38B0C7E814E36A3"
+			]
+			tasks: [
+				{
+					id: "ED916F103064E996"
+					type: "checkmark"
+				}
+			]
+			rewards: [
+				{
+					id: "6043ADE5340E9640"
+					type: "loot"
+					table_id: "BB5E855731D4F100"
+				}
+				{
+					id: "737A5945F16CFAF5"
+					type: "item"
+					item: {
+						id: "powah:uraninite"
+						count: 1
+					}
+					count: 8
+				}
+				{
+					id: "8835E930A6221111"
+					type: "xp_levels"
+					xp_levels: 10
+				}
+			]
+		}
+		{
+			id: "F5A0BEA42EF796C4"
+			x: 8.0d
+			y: 20.0d
+			icon: {
+				id: "oritech:jetpack"
+				count: 1
+			}
+			optional: true
+			dependencies: [
+				"B38B0C7E814E36A3"
+			]
+			tasks: [
+				{
+					id: "36DE9F4AF795DF48"
+					type: "item"
+					item: {
+						id: "oritech:jetpack"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "CE138947FA57015E"
+					type: "loot"
+					table_id: "BB5E855731D4F100"
+				}
+				{
+					id: "28F5E5A7C4E71E89"
+					type: "xp_levels"
+					xp_levels: 10
+				}
+			]
+		}
+		{
+			id: "48FD8C4C0463E126"
+			x: 11.0d
+			y: 18.0d
+			icon: {
+				id: "fluxnetworks:flux_controller"
+				count: 1
+			}
+			size: 2.5d
+			shape: "gear"
+			dependencies: [
+				"3E12BB7D1E0FD62B"
+				"0A2AC9C2E76DB05F"
+			]
+			tasks: [
+				{
+					id: "08B58E3A8202EE53"
+					type: "item"
+					item: {
+						id: "fluxnetworks:flux_point"
+						count: 1
+					}
+					count: 16
+				}
+				{
+					id: "3DB4EF8EF6D3CB98"
+					type: "item"
+					item: {
+						id: "fluxnetworks:basic_flux_storage"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "663513EDA47B966C"
+					type: "loot"
+					table_id: "6320E512778B48ED"
+				}
+				{
+					id: "7459C0C69ED6A0D1"
+					type: "item"
+					item: {
+						id: "ars_nouveau:source_gem"
+						count: 1
+					}
+					count: 16
+				}
+				{
+					id: "83D95F0B74F302BA"
+					type: "xp_levels"
+					xp_levels: 25
+				}
+			]
+		}
+	]
+	images: [
+		{
+			id: "9C99CE701EA9BCC8"
+			image: "kronwerke:textures/quests/flux_networks/title.png"
+			x: 7.5d
+			y: -5.0d
+			width: 10.1d
+			height: 1.75d
+			rotation: 0.0d
+			order: 1
+		}
+		{
+			id: "404EDA2404627692"
+			image: "kronwerke:textures/quests/flux_networks/flux.png"
+			x: 2.5d
+			y: -1.6d
+			width: 5.28d
+			height: 0.9d
+			rotation: 0.0d
+			order: 1
+		}
+		{
+			id: "81F5FC7FD46000EB"
+			image: "kronwerke:textures/quests/flux_networks/network.png"
+			x: 10.0d
+			y: -1.6d
+			width: 4.65d
+			height: 0.9d
+			rotation: 0.0d
+			order: 1
+		}
+		{
+			id: "76CD2029BE09407F"
+			image: "kronwerke:textures/quests/flux_networks/devices.png"
+			x: 8.0d
+			y: 4.4d
+			width: 6.21d
+			height: 0.9d
+			rotation: 0.0d
+			order: 1
+		}
+		{
+			id: "E952780DA2CCBDA4"
+			image: "kronwerke:textures/quests/flux_networks/wireless.png"
+			x: 4.5d
+			y: 9.8d
+			width: 5.87d
+			height: 0.9d
+			rotation: 0.0d
+			order: 1
+		}
+		{
+			id: "EE93CCBE9A611577"
+			image: "kronwerke:textures/quests/flux_networks/storage.png"
+			x: 12.5d
+			y: 9.8d
+			width: 6.85d
+			height: 0.9d
+			rotation: 0.0d
+			order: 1
+		}
+		{
+			id: "E31C0340EBB88B65"
+			image: "kronwerke:textures/quests/flux_networks/base.png"
+			x: 2.5d
+			y: 15.4d
+			width: 5.0d
+			height: 0.9d
+			rotation: 0.0d
+			order: 1
+		}
+	]
+}

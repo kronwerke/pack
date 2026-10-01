@@ -73,6 +73,13 @@ First assembly. 222 mods on NeoForge 21.1.252, boots on a dedicated server. No q
 - The quest book follows the new recipes and stages, with a Power Grid line and quests for the milestones.
 - Neo Origins offers Kronwerke's own choices: nine origins (Herkunft) and seven roles (Rolle) instead of the generic forty, each with a real downside and none that flies or skips a stage (`docs/ORIGINS.md`). The kill counting evolution is off.
 
+## Unreleased
+
+- New mods: PneumaticCraft: Repressurized, Flux Networks, Hostile Neural Networks, The Aether, Deeper and Darker, Productive Trees, Botany Pots and Botany Trees, Cooking for Blockheads, FramedBlocks, Chipped, Pylons, Item Collectors, Ranged Pumps, Simple Magnets, Cobweb. 250 mod files. All staged in `tools/stages/spec.py`: the Aether opens with the Nether, the Otherside with the Undergarden, PneumaticCraft and the deep learner start in stage 2, Flux Networks, drones and the simulation chamber in stage 3, the loot fabricator and the pneumatic armor in stage 4.
+- Six recipes tie the new mods in (`kubejs/server_scripts/kronwerke/added.js`, reasons in `docs/RECIPES.md`): the flux compressor, the dynamo and the Flux controller take Mekanism circuits, the drone a precision mechanism, the Flux core a source gem, the simulation chamber a source gem block, the loot fabricator an engineering processor.
+- PneumaticCraft's heat entry for Botania's blaze block points at a block that exists in the pack's Botania build.
+- The item registry (`tools/stages/items.txt`) has 32 306 items now.
+
 ## 0.7.0
 
 - The quest book for stages 4 and 5: thirteen chapters, about 235 quests. The End, Eternal Starlight, Mekanism elite with fusion and the MekaSuit, NuclearCraft, AE2 advanced with MEGA, quarries (RFTools Builder, Quarry Plus), Draconic Evolution, Botania Gaia, Mahou Tsukai, Ars Nouveau epic; then Draconic awakened and chaos, Mekanism antimatter with the millions of AE2, and the finale. Crates for both stages.

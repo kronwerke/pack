@@ -14,8 +14,8 @@ Stage 1 means open from the start. Anything no rule matches is stage 1.
 """
 
 DIMENSIONS = {
-    2: ["minecraft:the_nether"],
-    3: ["undergarden:undergarden"],
+    2: ["minecraft:the_nether", "aether:the_aether"],
+    3: ["undergarden:undergarden", "deeperdarker:otherside"],
     4: ["minecraft:the_end", "eternal_starlight:starlight", "mahoutsukai:reality_marble"],
 }
 
@@ -266,6 +266,37 @@ RULES = [
         "re:^draconicevolution:(awakened|chaotic|chaos|draconic)_", "re:^draconicevolution:item_(draconic|chaotic)_",
         "re:^draconicevolution:(large|medium|small)_chaos_frag$", "re:^draconicevolution:reactor_",
     ]),
+
+    # ---------------------------------------------------------------- Added in 0.8.0
+    # The Aether opens with the Nether; its dungeon gear is a stage later.
+    (2, ["@aether"]),
+    (3, ["re:^aether:(gravitite|enchanted_gravitite|valkyrie|phoenix|neptune|obsidian_)", "aether:sun_altar"]),
+    # Deeper and Darker: the Otherside in stage 3, the warden's gear in stage 4.
+    (3, ["@deeperdarker"]),
+    (4, ["re:^deeperdarker:(warden_|heart_of_the_deep|soul_elytra|sonorous_staff)"]),
+    # Hostile Neural Networks: learn in stage 2, simulate in stage 3, fabricate in stage 4.
+    (2, ["@hostilenetworks"]),
+    (3, ["hostilenetworks:sim_chamber", "hostilenetworks:prediction_matrix", "hostilenetworks:overworld_prediction", "hostilenetworks:nether_prediction"]),
+    (4, ["hostilenetworks:loot_fabricator", "hostilenetworks:end_prediction", "hostilenetworks:data_center", "hostilenetworks:data_center_io_port"]),
+    # Flux Networks: wireless power is a stage 3 thing, the big storages later.
+    (3, ["@fluxnetworks"]),
+    (4, ["fluxnetworks:herculean_flux_storage"]),
+    (5, ["fluxnetworks:gargantuan_flux_storage"]),
+    # PneumaticCraft: compressed iron and the first machines in stage 2, advanced tubes,
+    # assembly and drones in stage 3, the pneumatic armor and weapons in stage 4.
+    (2, ["@pneumaticcraft"]),
+    (3, [
+        "re:^pneumaticcraft:advanced_", "re:^pneumaticcraft:.*drone$", "pneumaticcraft:programmer", "pneumaticcraft:programming_puzzle",
+        "re:^pneumaticcraft:assembly_", "pneumaticcraft:electrostatic_compressor", "pneumaticcraft:flux_compressor", "pneumaticcraft:pneumatic_dynamo",
+        "pneumaticcraft:aerial_interface", "pneumaticcraft:thermal_compressor", "pneumaticcraft:solar_compressor", "pneumaticcraft:solar_cell", "pneumaticcraft:solar_wafer",
+        "pneumaticcraft:programmable_controller", "re:^pneumaticcraft:network_", "pneumaticcraft:security_station", "pneumaticcraft:universal_sensor",
+        "pneumaticcraft:pressurized_spawner", "pneumaticcraft:spawner_extractor", "pneumaticcraft:spawner_agitator", "pneumaticcraft:vacuum_trap",
+        "re:^pneumaticcraft:drill_bit_(diamond|netherite)$", "pneumaticcraft:unassembled_netherite_drill_bit",
+    ]),
+    (4, ["re:^pneumaticcraft:pneumatic_(helmet|chestplate|leggings|boots)$", "pneumaticcraft:minigun", "pneumaticcraft:micromissiles", "pneumaticcraft:nuke_virus", "pneumaticcraft:stop_worm"]),
+    # Pylons, Item Collectors and Ranged Pumps: the harvester and the basic collector from
+    # day one, the rest with the first machines.
+    (2, ["pylons:infusion_pylon", "pylons:interdiction_pylon", "pylons:expulsion_pylon", "pylons:protection_pylon", "itemcollectors:advanced_collector", "rangedpumps:pump"]),
 
     # ---------------------------------------------------------------- Milestones (kubejs/startup_scripts/milestones.js)
     (2, ["kronwerke:brass_heart", "kronwerke:rune_core"]),

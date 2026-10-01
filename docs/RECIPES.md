@@ -67,6 +67,12 @@ The id of each new recipe is `kronwerke:<family>/<name>`. "Remove all" means eve
 | Awakened draconium (fusion) | Gaia spirit ingots in the injectors. | The finale needs both. |
 | Oritech foundry netherite | Removed. | One gold and one scrap made an ingot, a quarter of the vanilla price. |
 | Mekanism More Machine replicators | The item replicator copies stones, ores, logs, planks and only iron, copper and gold ingots; the chemical replicator copies nothing (`kubejs/data/mekmm/data_maps/`). | It copied every ingot, including Gaia spirit and awakened draconium ingots of the stage 5 goal, and multiplied fissile fuel and antimatter. |
+| PneumaticCraft flux compressor and pneumatic dynamo | A Mekanism basic control circuit instead of the printed circuit board. | The FE side of PneumaticCraft starts with the one circuit route of the pack. |
+| PneumaticCraft drone | A precision mechanism under the circuit board. | A flying machine, like the AE2 assembler. |
+| Flux Networks core | A source gem instead of the eye of ender. | Wireless power is where magic meets tech. |
+| Flux Networks controller | An advanced control circuit in the middle. | The controller is the stage 3 unlock of the mod. |
+| Hostile Neural Networks simulation chamber | A source gem block instead of obsidian in the middle. | Simulations run on source. |
+| Hostile Neural Networks loot fabricator | An engineering processor instead of the comparator. | The fabricator is a stage 4 machine. |
 | Mahou Tsukai Mystic Staff | Summoning costs 2 000 mana instead of 100 (`config/mahoutsukai-server.toml`). | The stage 4 goal asks for 30 staffs, each meant as a real investment of one mage. |
 
 ### Magic

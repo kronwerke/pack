@@ -9,6 +9,7 @@ group("tech", "Technik")
 group("magic", "Magie")
 group("world", "Welt und Erkundung")
 group("storage", "Lager und Werkzeug")
+group("lists", "Checklisten")
 
 # ---- Stage 1: Steinwerk ---------------------------------------------------
 # Weights are relative inside one table. The fourth value is a random bonus on the count.

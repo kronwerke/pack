@@ -43,14 +43,14 @@
 				}
 				{
 					id: "076BF1865BDC3E99"
-					type: "xp_levels"
-					xp_levels: 5
+					type: "loot"
+					table_id: "BB5E855731D4F100"
 				}
 			]
 		}
 		{
 			id: "5388E371270BCADB"
-			x: 2.2d
+			x: 2.5d
 			y: 0.0d
 			icon: {
 				id: "eidolon_repraised:pewter_ingot"
@@ -89,7 +89,7 @@
 		}
 		{
 			id: "39D349DC5DA9B7AD"
-			x: 4.4d
+			x: 5.0d
 			y: -1.0d
 			icon: {
 				id: "eidolon_repraised:crucible"
@@ -128,8 +128,8 @@
 		}
 		{
 			id: "F7DB12A43DAC9AA8"
-			x: 4.4d
-			y: 1.2d
+			x: 5.0d
+			y: 1.0d
 			icon: {
 				id: "eidolon_repraised:brazier"
 				count: 1
@@ -167,12 +167,17 @@
 					}
 					count: 1
 				}
+				{
+					id: "29155E56C33DEAA4"
+					type: "xp_levels"
+					xp_levels: 3
+				}
 			]
 		}
 		{
 			id: "B541B240F8B684F1"
-			x: 6.6d
-			y: 1.2d
+			x: 7.5d
+			y: 1.0d
 			icon: {
 				id: "eidolon_repraised:soul_shard"
 				count: 1
@@ -210,8 +215,8 @@
 		}
 		{
 			id: "E23725C13E555178"
-			x: 8.8d
-			y: 0.0d
+			x: 7.5d
+			y: -1.0d
 			icon: {
 				id: "eidolon_repraised:arcane_gold_ingot"
 				count: 1
@@ -229,15 +234,6 @@
 						count: 1
 					}
 					count: 6
-				}
-				{
-					id: "4C826B3C7142634C"
-					type: "item"
-					item: {
-						id: "eidolon_repraised:lesser_soul_gem"
-						count: 1
-					}
-					count: 1
 				}
 			]
 			rewards: [
@@ -258,9 +254,301 @@
 			]
 		}
 		{
+			id: "77CAF7CDCF6B9A76"
+			x: 10.0d
+			y: -1.0d
+			icon: {
+				id: "eidolon_repraised:lesser_soul_gem"
+				count: 1
+			}
+			dependencies: [
+				"E23725C13E555178"
+			]
+			tasks: [
+				{
+					id: "A33EDEBC3E341C6B"
+					type: "item"
+					item: {
+						id: "eidolon_repraised:lesser_soul_gem"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "DD26042A72E51DFB"
+					type: "item"
+					item: {
+						id: "minecraft:lapis_lazuli"
+						count: 1
+					}
+					count: 8
+				}
+				{
+					id: "3A35D80C8EB40CD2"
+					type: "xp_levels"
+					xp_levels: 6
+				}
+			]
+		}
+		{
+			id: "450CA1FE94FDEAAB"
+			x: 10.0d
+			y: 1.5d
+			icon: {
+				id: "minecraft:sunflower"
+				count: 1
+			}
+			shape: "square"
+			optional: true
+			dependencies: [
+				"B541B240F8B684F1"
+			]
+			tasks: [
+				{
+					id: "57C4540946A7E808"
+					type: "checkmark"
+				}
+			]
+			rewards: [
+				{
+					id: "940FBA92D4A2CDC0"
+					type: "item"
+					item: {
+						id: "eidolon_repraised:soul_shard"
+						count: 1
+					}
+					count: 2
+				}
+				{
+					id: "A2B17A2DF8397914"
+					type: "xp_levels"
+					xp_levels: 3
+				}
+			]
+		}
+		{
+			id: "5C0F2CADB6D54B7F"
+			x: 12.5d
+			y: 1.5d
+			icon: {
+				id: "minecraft:black_dye"
+				count: 1
+			}
+			shape: "square"
+			optional: true
+			dependencies: [
+				"B541B240F8B684F1"
+			]
+			tasks: [
+				{
+					id: "512112D606E72BF6"
+					type: "checkmark"
+				}
+			]
+			rewards: [
+				{
+					id: "6B1F05872F61F3CC"
+					type: "item"
+					item: {
+						id: "eidolon_repraised:soul_shard"
+						count: 1
+					}
+					count: 2
+				}
+				{
+					id: "99B0BCBFE736A7AF"
+					type: "xp_levels"
+					xp_levels: 3
+				}
+			]
+		}
+		{
+			id: "722E41C394FECF3B"
+			x: 10.0d
+			y: 3.0d
+			icon: {
+				id: "minecraft:rose_bush"
+				count: 1
+			}
+			shape: "square"
+			optional: true
+			dependencies: [
+				"B541B240F8B684F1"
+			]
+			tasks: [
+				{
+					id: "FA3A22FB5F4F7298"
+					type: "checkmark"
+				}
+			]
+			rewards: [
+				{
+					id: "DDD04CC67DFF1372"
+					type: "item"
+					item: {
+						id: "eidolon_repraised:soul_shard"
+						count: 1
+					}
+					count: 2
+				}
+				{
+					id: "F3E4194E9BEEB262"
+					type: "xp_levels"
+					xp_levels: 3
+				}
+			]
+		}
+		{
+			id: "4C7D2202DE97FCA6"
+			x: 12.5d
+			y: 3.0d
+			icon: {
+				id: "minecraft:nautilus_shell"
+				count: 1
+			}
+			shape: "square"
+			optional: true
+			dependencies: [
+				"B541B240F8B684F1"
+			]
+			tasks: [
+				{
+					id: "C599FAEC7D505AA0"
+					type: "checkmark"
+				}
+			]
+			rewards: [
+				{
+					id: "33EC9906E2651691"
+					type: "item"
+					item: {
+						id: "eidolon_repraised:soul_shard"
+						count: 1
+					}
+					count: 2
+				}
+				{
+					id: "8F0E2DF858F6505F"
+					type: "xp_levels"
+					xp_levels: 3
+				}
+			]
+		}
+		{
+			id: "E73D201980468B57"
+			x: 15.0d
+			y: 1.5d
+			icon: {
+				id: "minecraft:glistering_melon_slice"
+				count: 1
+			}
+			shape: "square"
+			optional: true
+			dependencies: [
+				"B541B240F8B684F1"
+			]
+			tasks: [
+				{
+					id: "644D67993E302DEA"
+					type: "checkmark"
+				}
+			]
+			rewards: [
+				{
+					id: "73D34B03D406C617"
+					type: "item"
+					item: {
+						id: "eidolon_repraised:soul_shard"
+						count: 1
+					}
+					count: 2
+				}
+				{
+					id: "A2E8761A766DA882"
+					type: "xp_levels"
+					xp_levels: 3
+				}
+			]
+		}
+		{
+			id: "11A78DEEAE931C17"
+			x: 15.0d
+			y: 3.0d
+			icon: {
+				id: "minecraft:emerald"
+				count: 1
+			}
+			shape: "square"
+			optional: true
+			dependencies: [
+				"B541B240F8B684F1"
+			]
+			tasks: [
+				{
+					id: "1C3C9108294983B9"
+					type: "checkmark"
+				}
+			]
+			rewards: [
+				{
+					id: "B1A53EAC11965AC7"
+					type: "item"
+					item: {
+						id: "eidolon_repraised:soul_shard"
+						count: 1
+					}
+					count: 2
+				}
+				{
+					id: "B015A4C0137BE07A"
+					type: "xp_levels"
+					xp_levels: 3
+				}
+			]
+		}
+		{
+			id: "41FCD63D2E9D22C7"
+			x: 17.5d
+			y: 2.25d
+			icon: {
+				id: "minecraft:rotten_flesh"
+				count: 1
+			}
+			shape: "square"
+			optional: true
+			dependencies: [
+				"450CA1FE94FDEAAB"
+				"4C7D2202DE97FCA6"
+			]
+			tasks: [
+				{
+					id: "5378AF99EF1E9092"
+					type: "checkmark"
+				}
+			]
+			rewards: [
+				{
+					id: "EF4C995ADFDBB9DB"
+					type: "item"
+					item: {
+						id: "eidolon_repraised:soul_shard"
+						count: 1
+					}
+					count: 2
+				}
+				{
+					id: "2E77CED9A2E54295"
+					type: "xp_levels"
+					xp_levels: 3
+				}
+			]
+		}
+		{
 			id: "B746D276745D966B"
-			x: 0.5d
-			y: 5.5d
+			x: 0.0d
+			y: 6.0d
 			icon: {
 				id: "eidolon_repraised:straw_effigy"
 				count: 1
@@ -308,7 +596,7 @@
 		{
 			id: "22B5546E756BD485"
 			x: 2.5d
-			y: 5.5d
+			y: 6.0d
 			icon: {
 				id: "eidolon_repraised:unholy_symbol"
 				count: 1
@@ -341,8 +629,8 @@
 		}
 		{
 			id: "D9A3A67D91E5D3CB"
-			x: 4.5d
-			y: 5.5d
+			x: 5.0d
+			y: 6.0d
 			icon: {
 				id: "eidolon_repraised:codex"
 				count: 1
@@ -360,20 +648,45 @@
 				{
 					id: "F175DFDED8698EC0"
 					type: "xp_levels"
-					xp_levels: 5
+					xp_levels: 6
+				}
+			]
+		}
+		{
+			id: "5F47E5B16CB6D71F"
+			x: 7.5d
+			y: 6.0d
+			icon: {
+				id: "minecraft:redstone"
+				count: 1
+			}
+			dependencies: [
+				"D9A3A67D91E5D3CB"
+			]
+			tasks: [
+				{
+					id: "2D53B7404D363A62"
+					type: "checkmark"
+				}
+			]
+			rewards: [
+				{
+					id: "7A74620215758555"
+					type: "xp_levels"
+					xp_levels: 6
 				}
 			]
 		}
 		{
 			id: "F78B3C9DD0AB3709"
-			x: 6.5d
-			y: 5.5d
+			x: 10.0d
+			y: 6.0d
 			icon: {
 				id: "eidolon_repraised:goblet"
 				count: 1
 			}
 			dependencies: [
-				"D9A3A67D91E5D3CB"
+				"5F47E5B16CB6D71F"
 				"E23725C13E555178"
 			]
 			tasks: [
@@ -406,20 +719,46 @@
 				{
 					id: "E0219CB8100DE578"
 					type: "xp_levels"
-					xp_levels: 5
+					xp_levels: 7
+				}
+			]
+		}
+		{
+			id: "3DDB9EE8673EB902"
+			x: 12.5d
+			y: 6.0d
+			icon: {
+				id: "eidolon_repraised:soul_shard"
+				count: 1
+			}
+			dependencies: [
+				"F78B3C9DD0AB3709"
+			]
+			tasks: [
+				{
+					id: "D875EF9902FA5FC5"
+					type: "checkmark"
+				}
+			]
+			rewards: [
+				{
+					id: "C8BE1E9871C15B96"
+					type: "xp_levels"
+					xp_levels: 7
 				}
 			]
 		}
 		{
 			id: "2A463C4E8D2B6BB4"
 			x: 2.5d
-			y: 7.7d
+			y: 8.2d
 			icon: {
 				id: "eidolon_repraised:worktable"
 				count: 1
 			}
 			dependencies: [
 				"5388E371270BCADB"
+				"B746D276745D966B"
 			]
 			tasks: [
 				{
@@ -442,18 +781,23 @@
 					}
 					count: 4
 				}
+				{
+					id: "21380232667E7692"
+					type: "xp_levels"
+					xp_levels: 4
+				}
 			]
 		}
 		{
 			id: "4BE023B3A7A0D8B5"
-			x: 6.5d
-			y: 7.7d
+			x: 15.0d
+			y: 6.0d
 			icon: {
 				id: "eidolon_repraised:unholy_symbol"
 				count: 1
 			}
 			dependencies: [
-				"F78B3C9DD0AB3709"
+				"3DDB9EE8673EB902"
 				"2A463C4E8D2B6BB4"
 			]
 			tasks: [
@@ -480,14 +824,14 @@
 				{
 					id: "39589A3728015D64"
 					type: "xp_levels"
-					xp_levels: 5
+					xp_levels: 8
 				}
 			]
 		}
 		{
 			id: "0B6DDCE4570E6AEA"
-			x: 8.8d
-			y: 6.6d
+			x: 17.5d
+			y: 6.0d
 			icon: {
 				id: "eidolon_repraised:unholy_effigy"
 				count: 1
@@ -531,8 +875,87 @@
 			]
 		}
 		{
+			id: "E26A56CDB69A34BA"
+			x: 0.0d
+			y: 11.5d
+			icon: {
+				id: "eidolon_repraised:athame"
+				count: 1
+			}
+			optional: true
+			dependencies: [
+				"2A463C4E8D2B6BB4"
+			]
+			tasks: [
+				{
+					id: "7FE9BCD0D2EAFD81"
+					type: "item"
+					item: {
+						id: "eidolon_repraised:athame"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "FFF4D1CF4D6C5DF0"
+					type: "item"
+					item: {
+						id: "minecraft:fern"
+						count: 1
+					}
+					count: 8
+				}
+				{
+					id: "5167E672EAD033C3"
+					type: "xp_levels"
+					xp_levels: 4
+				}
+			]
+		}
+		{
+			id: "5A8C83E6372A07F8"
+			x: 2.5d
+			y: 11.5d
+			icon: {
+				id: "eidolon_repraised:death_essence"
+				count: 1
+			}
+			dependencies: [
+				"77CAF7CDCF6B9A76"
+			]
+			tasks: [
+				{
+					id: "975509DE4C450DF5"
+					type: "item"
+					item: {
+						id: "eidolon_repraised:death_essence"
+						count: 1
+					}
+					count: 4
+				}
+			]
+			rewards: [
+				{
+					id: "51840F8FF92AEFCE"
+					type: "item"
+					item: {
+						id: "minecraft:bone_meal"
+						count: 1
+					}
+					count: 16
+				}
+				{
+					id: "E7DE9BC502692322"
+					type: "xp_levels"
+					xp_levels: 6
+				}
+			]
+		}
+		{
 			id: "D27B589420F29226"
-			x: 0.5d
+			x: 5.0d
 			y: 11.5d
 			icon: {
 				id: "eidolon_repraised:reaper_scythe"
@@ -557,21 +980,21 @@
 					id: "B82D72AC91E75819"
 					type: "item"
 					item: {
-						id: "minecraft:bone_meal"
+						id: "eidolon_repraised:soul_shard"
 						count: 1
 					}
-					count: 16
+					count: 8
 				}
 				{
 					id: "F38D932E53FD0E77"
 					type: "xp_levels"
-					xp_levels: 5
+					xp_levels: 8
 				}
 			]
 		}
 		{
 			id: "C9C7E3C6C2F50FFF"
-			x: 2.5d
+			x: 7.5d
 			y: 11.5d
 			icon: {
 				id: "eidolon_repraised:soul_enchanter"
@@ -611,8 +1034,8 @@
 		}
 		{
 			id: "1BFA588E704FB320"
-			x: 13.0d
-			y: 6.5d
+			x: 12.5d
+			y: 11.5d
 			icon: {
 				id: "eidolon_repraised:shadow_gem"
 				count: 1
@@ -623,6 +1046,7 @@
 				"0B6DDCE4570E6AEA"
 				"D27B589420F29226"
 				"C9C7E3C6C2F50FFF"
+				"5A8C83E6372A07F8"
 			]
 			tasks: [
 				{
@@ -662,8 +1086,8 @@
 		{
 			id: "D0D80AC09AF81FC4"
 			image: "kronwerke:textures/quests/eidolon/title.png"
-			x: 4.4d
-			y: -4.4d
+			x: 5.0d
+			y: -4.6d
 			width: 5.42d
 			height: 1.8d
 			rotation: 0.0d
@@ -672,8 +1096,8 @@
 		{
 			id: "B351A9EC05585F63"
 			image: "kronwerke:textures/quests/eidolon/seelen.png"
-			x: 4.4d
-			y: -2.5d
+			x: 5.0d
+			y: -2.7d
 			width: 6.24d
 			height: 0.9d
 			rotation: 0.0d
@@ -681,18 +1105,28 @@
 		}
 		{
 			id: "A1DCA590B9F89E4F"
-			image: "kronwerke:textures/quests/eidolon/altar.png"
-			x: 4.6d
-			y: 3.9d
-			width: 5.22d
+			image: "kronwerke:textures/quests/eidolon/rituale.png"
+			x: 13.75d
+			y: -0.2d
+			width: 2.53d
 			height: 0.9d
 			rotation: 0.0d
 			order: 1
 		}
 		{
 			id: "7A6260D22F866F8C"
+			image: "kronwerke:textures/quests/eidolon/altar.png"
+			x: 7.5d
+			y: 4.4d
+			width: 5.22d
+			height: 0.9d
+			rotation: 0.0d
+			order: 1
+		}
+		{
+			id: "ED3FE494B7D7DC3C"
 			image: "kronwerke:textures/quests/eidolon/werkzeuge.png"
-			x: 1.5d
+			x: 4.0d
 			y: 9.9d
 			width: 3.66d
 			height: 0.9d

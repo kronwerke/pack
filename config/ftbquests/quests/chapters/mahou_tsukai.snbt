@@ -13,7 +13,7 @@
 		{
 			id: "3BCEFE5EDA745EF0"
 			x: 0.0d
-			y: 0.0d
+			y: 1.0d
 			icon: {
 				id: "mahoutsukai:guidebook"
 				count: 1
@@ -59,10 +59,10 @@
 		}
 		{
 			id: "A02282C84DFC4F3C"
-			x: 2.6d
+			x: 2.5d
 			y: 0.0d
 			icon: {
-				id: "mahoutsukai:dagger"
+				id: "minecraft:redstone"
 				count: 1
 			}
 			dependencies: [
@@ -74,15 +74,6 @@
 					type: "advancement"
 					advancement: "mahoutsukai:root"
 					criterion: ""
-				}
-				{
-					id: "83017F2E8042A46A"
-					type: "item"
-					item: {
-						id: "mahoutsukai:dagger"
-						count: 1
-					}
-					count: 1
 				}
 			]
 			rewards: [
@@ -103,15 +94,55 @@
 			]
 		}
 		{
+			id: "7A7CDAB05109A076"
+			x: 2.5d
+			y: 2.0d
+			icon: {
+				id: "mahoutsukai:dagger"
+				count: 1
+			}
+			dependencies: [
+				"3BCEFE5EDA745EF0"
+			]
+			tasks: [
+				{
+					id: "8EBCC15B416135A8"
+					type: "item"
+					item: {
+						id: "mahoutsukai:dagger"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "3FEC6B62C6F67DD4"
+					type: "item"
+					item: {
+						id: "minecraft:iron_ingot"
+						count: 1
+					}
+					count: 8
+				}
+				{
+					id: "CD9A439720034700"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+		}
+		{
 			id: "BDE1E6545FBC512D"
-			x: 5.2d
-			y: 0.0d
+			x: 5.0d
+			y: 1.0d
 			icon: {
 				id: "mahoutsukai:powdered_gold"
 				count: 1
 			}
 			dependencies: [
 				"A02282C84DFC4F3C"
+				"7A7CDAB05109A076"
 			]
 			tasks: [
 				{
@@ -196,8 +227,48 @@
 			]
 		}
 		{
+			id: "A3A6A31DB3A4D41E"
+			x: 7.5d
+			y: 2.0d
+			icon: {
+				id: "mahoutsukai:mortar_and_pestle"
+				count: 1
+			}
+			optional: true
+			dependencies: [
+				"BDE1E6545FBC512D"
+			]
+			tasks: [
+				{
+					id: "A4AA6FF8F4A14CC9"
+					type: "item"
+					item: {
+						id: "mahoutsukai:mortar_and_pestle"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "CCA4C6EE0194338C"
+					type: "item"
+					item: {
+						id: "minecraft:gold_ingot"
+						count: 1
+					}
+					count: 8
+				}
+				{
+					id: "97A9650F0EBDEC58"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+		}
+		{
 			id: "4A7068DE34B7B447"
-			x: 7.8d
+			x: 7.5d
 			y: 0.0d
 			icon: {
 				id: "mahoutsukai:spell_cloth"
@@ -231,12 +302,14 @@
 		}
 		{
 			id: "8DA3B68C411E69AE"
-			x: 10.4d
-			y: 0.0d
+			x: 0.0d
+			y: 5.5d
 			icon: {
 				id: "mahoutsukai:scroll_strengthening"
 				count: 1
 			}
+			size: 1.5d
+			shape: "hexagon"
 			dependencies: [
 				"4A7068DE34B7B447"
 			]
@@ -270,8 +343,8 @@
 		}
 		{
 			id: "E817D2FB52533855"
-			x: 10.4d
-			y: -2.6d
+			x: 2.5d
+			y: 4.5d
 			icon: {
 				id: "mahoutsukai:scroll_rho_aias"
 				count: 1
@@ -301,19 +374,225 @@
 					}
 					count: 8
 				}
+				{
+					id: "83BC2F627E605DB0"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+		}
+		{
+			id: "315C88030B6FDB7C"
+			x: 5.0d
+			y: 4.5d
+			icon: {
+				id: "mahoutsukai:scroll_gandr"
+				count: 1
+			}
+			optional: true
+			dependencies: [
+				"E817D2FB52533855"
+			]
+			tasks: [
+				{
+					id: "005E5F486E4C21EF"
+					type: "item"
+					item: {
+						id: "mahoutsukai:scroll_gandr"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "C053C593B427F5C2"
+					type: "item"
+					item: {
+						id: "mahoutsukai:powdered_gold"
+						count: 1
+					}
+					count: 4
+				}
+				{
+					id: "45B07ECD1FCE37D0"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+		}
+		{
+			id: "63B84AA7EAB16619"
+			x: 7.5d
+			y: 4.5d
+			icon: {
+				id: "mahoutsukai:scroll_projectile_displacement"
+				count: 1
+			}
+			optional: true
+			dependencies: [
+				"315C88030B6FDB7C"
+			]
+			tasks: [
+				{
+					id: "8A61D74CB64120B3"
+					type: "item"
+					item: {
+						id: "mahoutsukai:scroll_projectile_displacement"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "B0C20E8641E1ECE5"
+					type: "item"
+					item: {
+						id: "minecraft:arrow"
+						count: 1
+					}
+					count: 32
+				}
+				{
+					id: "BDD2A72CD71BE85B"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+		}
+		{
+			id: "464E9C3B7C911095"
+			x: 2.5d
+			y: 6.5d
+			icon: {
+				id: "mahoutsukai:scroll_projection"
+				count: 1
+			}
+			optional: true
+			dependencies: [
+				"8DA3B68C411E69AE"
+			]
+			tasks: [
+				{
+					id: "6B15D6A898E6774B"
+					type: "item"
+					item: {
+						id: "mahoutsukai:scroll_projection"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "4DD0B82A4879E533"
+					type: "item"
+					item: {
+						id: "mahoutsukai:powdered_quartz"
+						count: 1
+					}
+					count: 4
+				}
+				{
+					id: "ADB131AB5A8F72E7"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+		}
+		{
+			id: "FEE8820FFE75B976"
+			x: 5.0d
+			y: 6.5d
+			icon: {
+				id: "mahoutsukai:scroll_summon_familiar"
+				count: 1
+			}
+			optional: true
+			dependencies: [
+				"464E9C3B7C911095"
+			]
+			tasks: [
+				{
+					id: "678870BFE0D4E325"
+					type: "item"
+					item: {
+						id: "mahoutsukai:scroll_summon_familiar"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "CC46BFA7CC134E2A"
+					type: "item"
+					item: {
+						id: "minecraft:quartz"
+						count: 1
+					}
+					count: 16
+				}
+				{
+					id: "DF0CEFF59FC79AD2"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+		}
+		{
+			id: "39309AAE0825F254"
+			x: 7.5d
+			y: 6.5d
+			icon: {
+				id: "mahoutsukai:scroll_damage_exchange"
+				count: 1
+			}
+			optional: true
+			dependencies: [
+				"FEE8820FFE75B976"
+			]
+			tasks: [
+				{
+					id: "4B19DE0CE59D76D2"
+					type: "item"
+					item: {
+						id: "mahoutsukai:scroll_damage_exchange"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "1F62B7B020695282"
+					type: "item"
+					item: {
+						id: "mahoutsukai:powdered_emerald"
+						count: 1
+					}
+					count: 4
+				}
+				{
+					id: "8145B382322B8B16"
+					type: "xp_levels"
+					xp_levels: 5
+				}
 			]
 		}
 		{
 			id: "D99DA40238182256"
-			x: 10.4d
-			y: -4.8d
+			x: 10.0d
+			y: 5.5d
 			icon: {
 				id: "mahoutsukai:caliburn"
 				count: 1
 			}
 			optional: true
 			dependencies: [
-				"E817D2FB52533855"
+				"63B84AA7EAB16619"
+				"39309AAE0825F254"
 			]
 			tasks: [
 				{
@@ -342,8 +621,8 @@
 		}
 		{
 			id: "6ECA5B60B8219BC7"
-			x: 2.6d
-			y: 3.0d
+			x: 0.0d
+			y: 10.5d
 			icon: {
 				id: "mahoutsukai:attuned_diamond"
 				count: 1
@@ -372,16 +651,62 @@
 					}
 					count: 16
 				}
+				{
+					id: "4039E778EC843C34"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+		}
+		{
+			id: "3F737437D2FC07A9"
+			x: 2.5d
+			y: 9.5d
+			icon: {
+				id: "mahoutsukai:attuned_emerald"
+				count: 1
+			}
+			optional: true
+			dependencies: [
+				"6ECA5B60B8219BC7"
+			]
+			tasks: [
+				{
+					id: "B027FBE2D998B8DA"
+					type: "item"
+					item: {
+						id: "mahoutsukai:attuned_emerald"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "FD450382C692349D"
+					type: "item"
+					item: {
+						id: "minecraft:emerald"
+						count: 1
+					}
+					count: 4
+				}
+				{
+					id: "7A39ECA437CDC88A"
+					type: "xp_levels"
+					xp_levels: 5
+				}
 			]
 		}
 		{
 			id: "5CF12EE37E15668A"
-			x: 5.2d
-			y: 3.0d
+			x: 2.5d
+			y: 11.5d
 			icon: {
 				id: "mahoutsukai:mana_circuit_magitech"
 				count: 1
 			}
+			size: 1.5d
 			dependencies: [
 				"6ECA5B60B8219BC7"
 			]
@@ -408,6 +733,46 @@
 				}
 				{
 					id: "C01B7F26900FB284"
+					type: "loot"
+					table_id: "F05AFC22088A36B6"
+				}
+				{
+					id: "A16E01227738B325"
+					type: "xp_levels"
+					xp_levels: 10
+				}
+			]
+		}
+		{
+			id: "02DB5706111A2D3F"
+			x: 5.0d
+			y: 10.5d
+			icon: {
+				id: "mahoutsukai:powdered_emerald"
+				count: 1
+			}
+			optional: true
+			dependencies: [
+				"5CF12EE37E15668A"
+			]
+			tasks: [
+				{
+					id: "51D08B473C10F938"
+					type: "checkmark"
+				}
+			]
+			rewards: [
+				{
+					id: "45AB62C66E2C2E83"
+					type: "item"
+					item: {
+						id: "mahoutsukai:powdered_emerald"
+						count: 1
+					}
+					count: 4
+				}
+				{
+					id: "5D838AD17C9443FA"
 					type: "xp_levels"
 					xp_levels: 5
 				}
@@ -415,15 +780,15 @@
 		}
 		{
 			id: "2CB342F10C2D0DFF"
-			x: 7.8d
-			y: 3.0d
+			x: 7.5d
+			y: 10.5d
 			icon: {
 				id: "mahoutsukai:kodoku"
 				count: 1
 			}
 			optional: true
 			dependencies: [
-				"5CF12EE37E15668A"
+				"02DB5706111A2D3F"
 			]
 			tasks: [
 				{
@@ -450,8 +815,8 @@
 		}
 		{
 			id: "B7D0E496FCC33454"
-			x: 10.4d
-			y: 3.0d
+			x: 0.0d
+			y: 14.5d
 			icon: {
 				id: "mahoutsukai:scroll_fay_sight"
 				count: 1
@@ -484,8 +849,8 @@
 		}
 		{
 			id: "80C1E1177B3D5FDE"
-			x: 13.0d
-			y: 3.0d
+			x: 2.5d
+			y: 14.5d
 			icon: {
 				id: "mahoutsukai:fae_essence"
 				count: 1
@@ -522,15 +887,56 @@
 			]
 		}
 		{
+			id: "BDF59C92B3D28C4C"
+			x: 5.0d
+			y: 14.5d
+			icon: {
+				id: "mahoutsukai:mana_circuit"
+				count: 1
+			}
+			optional: true
+			dependencies: [
+				"80C1E1177B3D5FDE"
+			]
+			tasks: [
+				{
+					id: "4C77E573AC474051"
+					type: "item"
+					item: {
+						id: "mahoutsukai:mana_circuit"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "C7C85C88DCBECF94"
+					type: "item"
+					item: {
+						id: "mahoutsukai:fae_essence"
+						count: 1
+					}
+					count: 4
+				}
+				{
+					id: "A9CC161BD4382DE3"
+					type: "xp_levels"
+					xp_levels: 10
+				}
+			]
+		}
+		{
 			id: "1928F62C8F098F92"
-			x: 5.2d
-			y: 5.4d
+			x: 7.5d
+			y: 13.5d
 			icon: {
 				id: "mahoutsukai:scroll_reality_marble"
 				count: 1
 			}
 			dependencies: [
 				"5CF12EE37E15668A"
+				"B7D0E496FCC33454"
 			]
 			tasks: [
 				{
@@ -541,11 +947,6 @@
 						count: 1
 					}
 					count: 1
-				}
-				{
-					id: "AAB1B4B1C86AC082"
-					type: "dimension"
-					dimension: "mahoutsukai:reality_marble"
 				}
 			]
 			rewards: [
@@ -560,15 +961,46 @@
 				}
 				{
 					id: "EC520704E7BAED64"
+					type: "xp_levels"
+					xp_levels: 10
+				}
+			]
+		}
+		{
+			id: "22D06105B65DC280"
+			x: 10.0d
+			y: 13.5d
+			icon: {
+				id: "minecraft:iron_sword"
+				count: 1
+			}
+			dependencies: [
+				"1928F62C8F098F92"
+			]
+			tasks: [
+				{
+					id: "EEB38C3CA42240DC"
+					type: "dimension"
+					dimension: "mahoutsukai:reality_marble"
+				}
+			]
+			rewards: [
+				{
+					id: "0D5FB2468A076A63"
 					type: "loot"
 					table_id: "A1C2F3302F73AD62"
+				}
+				{
+					id: "0430CEEFEEFF7A3D"
+					type: "xp_levels"
+					xp_levels: 15
 				}
 			]
 		}
 		{
 			id: "8B59AABCCAFA469D"
-			x: 13.0d
-			y: 0.0d
+			x: 0.0d
+			y: 18.5d
 			icon: {
 				id: "mahoutsukai:mystic_code"
 				count: 1
@@ -597,12 +1029,102 @@
 					}
 					count: 4
 				}
+				{
+					id: "3CA4D0427B24B34C"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+		}
+		{
+			id: "6A40E0852DB36EE6"
+			x: 2.5d
+			y: 17.5d
+			icon: {
+				id: "mahoutsukai:scroll_mystic_staff"
+				count: 1
+			}
+			dependencies: [
+				"8B59AABCCAFA469D"
+			]
+			tasks: [
+				{
+					id: "E3A29F7BB43B1828"
+					type: "item"
+					item: {
+						id: "mahoutsukai:scroll_mystic_staff"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "3CBD5D4DFBF8869F"
+					type: "item"
+					item: {
+						id: "mahoutsukai:powdered_gold"
+						count: 1
+					}
+					count: 8
+				}
+				{
+					id: "2861B58E6F10DB1F"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+		}
+		{
+			id: "9D346F0F81C0F4C4"
+			x: 5.0d
+			y: 17.5d
+			icon: {
+				id: "mahoutsukai:mystic_staff"
+				count: 1
+			}
+			size: 1.5d
+			shape: "hexagon"
+			dependencies: [
+				"6A40E0852DB36EE6"
+			]
+			tasks: [
+				{
+					id: "4E255AF8EF381D34"
+					type: "item"
+					item: {
+						id: "mahoutsukai:mystic_staff"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "8EE5EEB17C2E837A"
+					type: "item"
+					item: {
+						id: "mahoutsukai:attuned_emerald"
+						count: 1
+					}
+					count: 1
+				}
+				{
+					id: "6DD1F56BD827B8AB"
+					type: "loot"
+					table_id: "A1C2F3302F73AD62"
+				}
+				{
+					id: "50AB6C698D2B8E8A"
+					type: "xp_levels"
+					xp_levels: 10
+				}
 			]
 		}
 		{
 			id: "23A292ED1B7739D0"
-			x: 15.6d
-			y: 0.0d
+			x: 2.5d
+			y: 19.5d
 			icon: {
 				id: "mahoutsukai:mystic_code_first_sorcery"
 				count: 1
@@ -640,82 +1162,9 @@
 			]
 		}
 		{
-			id: "6A40E0852DB36EE6"
-			x: 13.0d
-			y: -2.6d
-			icon: {
-				id: "mahoutsukai:scroll_mystic_staff"
-				count: 1
-			}
-			dependencies: [
-				"8DA3B68C411E69AE"
-			]
-			tasks: [
-				{
-					id: "E3A29F7BB43B1828"
-					type: "item"
-					item: {
-						id: "mahoutsukai:scroll_mystic_staff"
-						count: 1
-					}
-					count: 1
-				}
-			]
-			rewards: [
-				{
-					id: "3CBD5D4DFBF8869F"
-					type: "item"
-					item: {
-						id: "mahoutsukai:powdered_gold"
-						count: 1
-					}
-					count: 8
-				}
-			]
-		}
-		{
-			id: "9D346F0F81C0F4C4"
-			x: 15.6d
-			y: -2.6d
-			icon: {
-				id: "mahoutsukai:mystic_staff"
-				count: 1
-			}
-			dependencies: [
-				"6A40E0852DB36EE6"
-			]
-			tasks: [
-				{
-					id: "4E255AF8EF381D34"
-					type: "item"
-					item: {
-						id: "mahoutsukai:mystic_staff"
-						count: 1
-					}
-					count: 1
-				}
-			]
-			rewards: [
-				{
-					id: "8EE5EEB17C2E837A"
-					type: "item"
-					item: {
-						id: "mahoutsukai:attuned_emerald"
-						count: 1
-					}
-					count: 1
-				}
-				{
-					id: "6DD1F56BD827B8AB"
-					type: "xp_levels"
-					xp_levels: 10
-				}
-			]
-		}
-		{
 			id: "F8E9D43755E0221E"
-			x: 19.0d
-			y: -1.3d
+			x: 8.0d
+			y: 18.5d
 			icon: {
 				id: "mahoutsukai:mystic_staff"
 				count: 1
@@ -759,48 +1208,58 @@
 		{
 			id: "F0182746FF94DE24"
 			image: "kronwerke:textures/quests/mahou_tsukai/title.png"
-			x: 9.5d
-			y: -7.6d
-			width: 9.43d
-			height: 1.8d
+			x: 4.19d
+			y: -3.4d
+			width: 8.38d
+			height: 1.6d
 			rotation: 0.0d
 			order: 1
 		}
 		{
 			id: "C0913EA2ECEA5D97"
-			image: "kronwerke:textures/quests/mahou_tsukai/blutkreis.png"
-			x: 2.6d
-			y: -1.6d
-			width: 4.53d
-			height: 0.9d
+			image: "kronwerke:textures/quests/mahou_tsukai/stage.png"
+			x: 1.65d
+			y: -2.0d
+			width: 3.3d
+			height: 0.55d
 			rotation: 0.0d
 			order: 1
 		}
 		{
 			id: "8E7D73660A817E4A"
-			image: "kronwerke:textures/quests/mahou_tsukai/mana.png"
-			x: 5.2d
-			y: 1.6d
-			width: 5.32d
+			image: "kronwerke:textures/quests/mahou_tsukai/spells.png"
+			x: 2.13d
+			y: 3.3d
+			width: 4.27d
 			height: 0.9d
 			rotation: 0.0d
 			order: 1
 		}
 		{
 			id: "3ECBA48827704BC6"
-			image: "kronwerke:textures/quests/mahou_tsukai/feen.png"
-			x: 11.7d
-			y: 4.6d
-			width: 5.76d
+			image: "kronwerke:textures/quests/mahou_tsukai/mana.png"
+			x: 2.66d
+			y: 8.3d
+			width: 5.32d
 			height: 0.9d
 			rotation: 0.0d
 			order: 1
 		}
 		{
 			id: "84B8826801A12367"
-			image: "kronwerke:textures/quests/mahou_tsukai/stab.png"
-			x: 14.3d
-			y: -4.1d
+			image: "kronwerke:textures/quests/mahou_tsukai/fae.png"
+			x: 2.88d
+			y: 12.9d
+			width: 5.76d
+			height: 0.9d
+			rotation: 0.0d
+			order: 1
+		}
+		{
+			id: "BCD2CA983B929481"
+			image: "kronwerke:textures/quests/mahou_tsukai/staff.png"
+			x: 3.21d
+			y: 16.1d
 			width: 6.41d
 			height: 0.9d
 			rotation: 0.0d

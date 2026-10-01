@@ -37,7 +37,7 @@ quests = [
     quest("equip", 2.5, 0, "&dLeg das Buch an",
           subtitle="Buch in den Slot, R zum Zaubern, V fürs Rad.",
           description=[
-              "Öffne dein Inventar und leg das Zauberbuch in den &6Zauberbuch-Slot&r neben der Rüstung (Curios). Zaubern: &eR&r wirkt den gewählten Zauber, &eV&r öffnet das Zauberrad, &eAlt + Mausrad&r wechselt den Zauber.",
+              "Öffne dein Inventar und leg das Zauberbuch in den &6Zauberbuch-Slot&r neben der Rüstung (Curios). Zaubern: &eStrg+V&r wirkt den gewählten Zauber, &eR&r gedrückt halten öffnet das Zauberrad, &eAlt + Mausrad&r wechselt den Zauber.",
               "",
               "Dein &bMana&r siehst du als blaue Leiste bei der Hotbar. Du startest mit &e100 Mana&r. Alle halbe Sekunde kommt &e1 Prozent&r deines Maximums zurück, bei 100 Mana also 2 pro Sekunde, eine volle Leiste in 50 Sekunden.",
               "",
@@ -120,11 +120,11 @@ quests = [
           deps=["scroll"], icon="irons_spellbooks:inscription_table", size=1.75, shape="hexagon"),
 
     quest("cast", 12.5, 1, "&dWirke deinen ersten Zauber",
-          subtitle="Buch an, Zauber wählen, R.",
+          subtitle="Buch an, Zauber wählen, Strg+V.",
           description=[
-              "Buch anlegen, mit &eAlt + Mausrad&r oder im Zauberrad (&eV&r) den Zauber wählen, &eR&r drücken. Fertig.",
+              "Buch anlegen, mit &eAlt + Mausrad&r oder im Zauberrad (&eR&r halten) den Zauber wählen, &eStrg+V&r drücken. Fertig.",
               "",
-              "Der Tooltip jeder Rolle nennt die Art des Zaubers. &eInstant&r wirkt sofort. &eLong Cast&r und &eCharge&r brauchen eine Aufladezeit, in der du R hältst. Zauber mit &eHold&r in der Beschreibung (Fire Breath, Cone of Cold, Electrocute) laufen, solange du R hältst, und kosten Mana pro Sekunde.",
+              "Der Tooltip jeder Rolle nennt die Art des Zaubers. &eInstant&r wirkt sofort. &eLong Cast&r und &eCharge&r brauchen eine Aufladezeit, in der du Strg+V hältst. Zauber mit &eHold&r in der Beschreibung (Fire Breath, Cone of Cold, Electrocute) laufen, solange du Strg+V hältst, und kosten Mana pro Sekunde.",
               "",
               "&eTipp:&r Vier gewöhnliche Zauber decken alles ab: ein Angriff (Magic Missile, Firebolt, Icicle), eine Flucht (Burning Dash, Volt Strike), ein Schutz (Shield, Oakskin) und eine Heilung (Healing Circle, Blessing of Life).",
           ],

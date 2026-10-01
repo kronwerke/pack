@@ -224,7 +224,7 @@ quests = [
     quest("voice", 6, 13, "&6Sprich mit deinen Nachbarn",
           subtitle="Simple Voice Chat, nach Entfernung.",
           description=[
-              "Drück &eV&r für das Menü von &6Simple Voice Chat&r: Mikrofon wählen, Lautstärke, Push-to-Talk oder Sprachaktivierung. Wer bis &e48 Blöcke&r entfernt ist, hört dich, leiser mit der Entfernung. Flüstern reicht 24 Blöcke.",
+              "Drück &eAlt+V&r für das Menü von &6Simple Voice Chat&r: Mikrofon wählen, Lautstärke, Push-to-Talk oder Sprachaktivierung. Wer bis &e48 Blöcke&r entfernt ist, hört dich, leiser mit der Entfernung. Flüstern reicht 24 Blöcke.",
               "",
               "Im selben Menü legst du eine &6Gruppe&r an oder trittst einer bei. Gruppenmitglieder hören sich überall, auch über Dimensionen hinweg. Ein Symbol am Bildschirmrand zeigt, wer gerade spricht, und Aufnahmen über das Menü sind auf dem Server erlaubt.",
           ],

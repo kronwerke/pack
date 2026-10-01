@@ -132,9 +132,9 @@ quests = [
     quest("g_voice", 13.25, 1.5, "&eTritt der Sprachgruppe bei",
           subtitle="Über die ganze Insel hören, wer was ansagt.",
           description=[
-              "&eV&r öffnet das Menü von Simple Voice Chat. Tritt der &eGruppe&r bei, die das Team für das Finale anlegt. In einer Gruppe hörst du die anderen über jede Entfernung.",
+              "&eAlt+V&r öffnet das Menü von Simple Voice Chat. Tritt der &eGruppe&r bei, die das Team für das Finale anlegt. In einer Gruppe hörst du die anderen über jede Entfernung.",
               "",
-              "Ohne Gruppe reicht deine Stimme nur 48 Blöcke, und die Insel ist viel größer. Prüf vorher, ob dein Mikrofon stumm ist (oft die Taste &eM&r, siehe &6Tipps und Tricks&r).",
+              "Ohne Gruppe reicht deine Stimme nur 48 Blöcke, und die Insel ist viel größer. Prüf vorher im Sprachchat-Menü (&eAlt+V&r), ob dein Mikrofon an ist.",
           ],
           tasks=[task_checkmark("Ich bin in der Gruppe")],
           rewards=[reward_xp(5)],

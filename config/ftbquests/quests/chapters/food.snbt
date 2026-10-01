@@ -79,6 +79,41 @@
 			]
 		}
 		{
+			id: "CABC6EFAB9C1B498"
+			x: 4.5d
+			y: -9.5d
+			icon: {
+				id: "farmersdelight:iron_knife"
+				count: 1
+			}
+			optional: true
+			dependencies: [
+				"0C58857CA43411EE"
+			]
+			tasks: [
+				{
+					id: "107CE42F6B87B2C8"
+					type: "item"
+					item: {
+						id: "farmersdelight:iron_knife"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "8D7B0C6AB62EFBCC"
+					type: "item"
+					item: {
+						id: "minecraft:iron_ingot"
+						count: 1
+					}
+					count: 2
+				}
+			]
+		}
+		{
 			id: "BC8FB7B228CE9B39"
 			x: 7.0d
 			y: -8.0d
@@ -149,7 +184,7 @@
 		{
 			id: "61BA402B36393E94"
 			x: 9.0d
-			y: -7.0d
+			y: -8.0d
 			icon: {
 				id: "farmersdelight:tomato"
 				count: 1
@@ -168,17 +203,34 @@
 					}
 					count: 4
 				}
+			]
+			rewards: [
 				{
-					id: "AC082661602ED0F3"
+					id: "279970AE2CE0904B"
 					type: "item"
 					item: {
-						id: "farmersdelight:onion"
+						id: "minecraft:bone_meal"
 						count: 1
 					}
-					count: 4
+					count: 16
 				}
+			]
+		}
+		{
+			id: "235AFF1EF49F4F5A"
+			x: 9.0d
+			y: -6.0d
+			icon: {
+				id: "farmersdelight:cabbage"
+				count: 1
+			}
+			dependencies: [
+				"BC8FB7B228CE9B39"
+				"52E55426A50447DF"
+			]
+			tasks: [
 				{
-					id: "08DD5EBF350CE9C7"
+					id: "B8F8F4AC8B5363B0"
 					type: "item"
 					item: {
 						id: "farmersdelight:cabbage"
@@ -189,26 +241,66 @@
 			]
 			rewards: [
 				{
-					id: "279970AE2CE0904B"
+					id: "97D33266C8BA9837"
 					type: "item"
 					item: {
 						id: "minecraft:bone_meal"
 						count: 1
 					}
-					count: 32
+					count: 16
+				}
+			]
+		}
+		{
+			id: "4E5FC305B736FA54"
+			x: 11.0d
+			y: -7.0d
+			icon: {
+				id: "farmersdelight:onion"
+				count: 1
+			}
+			dependencies: [
+				"61BA402B36393E94"
+				"235AFF1EF49F4F5A"
+			]
+			tasks: [
+				{
+					id: "1828C8D801C038E7"
+					type: "item"
+					item: {
+						id: "farmersdelight:onion"
+						count: 1
+					}
+					count: 4
+				}
+			]
+			rewards: [
+				{
+					id: "330D970742B0BDA3"
+					type: "item"
+					item: {
+						id: "minecraft:bone_meal"
+						count: 1
+					}
+					count: 16
+				}
+				{
+					id: "6517F4761A363EEB"
+					type: "xp_levels"
+					xp_levels: 2
 				}
 			]
 		}
 		{
 			id: "E28344D4FB2BEBDC"
-			x: 11.0d
+			x: 13.0d
 			y: -8.0d
 			icon: {
 				id: "farmersdelight:rice"
 				count: 1
 			}
 			dependencies: [
-				"61BA402B36393E94"
+				"4E5FC305B736FA54"
 			]
 			tasks: [
 				{
@@ -231,11 +323,16 @@
 					}
 					count: 1
 				}
+				{
+					id: "A879081DDFD36DCA"
+					type: "xp_levels"
+					xp_levels: 2
+				}
 			]
 		}
 		{
 			id: "F2CB07376FA940F8"
-			x: 11.0d
+			x: 13.0d
 			y: -6.0d
 			icon: {
 				id: "farmersdelight:rope"
@@ -243,7 +340,7 @@
 			}
 			optional: true
 			dependencies: [
-				"61BA402B36393E94"
+				"4E5FC305B736FA54"
 			]
 			tasks: [
 				{
@@ -337,6 +434,11 @@
 					}
 					count: 16
 				}
+				{
+					id: "6D75A8246898E37C"
+					type: "xp_levels"
+					xp_levels: 3
+				}
 			]
 		}
 		{
@@ -384,7 +486,7 @@
 			}
 			dependencies: [
 				"880F4CCBBF5D04BE"
-				"61BA402B36393E94"
+				"235AFF1EF49F4F5A"
 			]
 			tasks: [
 				{
@@ -510,6 +612,45 @@
 			]
 		}
 		{
+			id: "F5CDDBCCDA94E967"
+			x: 14.5d
+			y: -2.2d
+			icon: {
+				id: "farmersdelight:steak_and_potatoes"
+				count: 1
+			}
+			dependencies: [
+				"13D891DFD0CBEA83"
+			]
+			tasks: [
+				{
+					id: "40B3670DF1E958FB"
+					type: "item"
+					item: {
+						id: "farmersdelight:steak_and_potatoes"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "998BCD4C03A14EFE"
+					type: "item"
+					item: {
+						id: "minecraft:baked_potato"
+						count: 1
+					}
+					count: 8
+				}
+				{
+					id: "9990E32533284BE1"
+					type: "xp_levels"
+					xp_levels: 3
+				}
+			]
+		}
+		{
 			id: "11BAD57C35D63EE0"
 			x: 14.5d
 			y: 0.0d
@@ -530,6 +671,80 @@
 			rewards: [
 				{
 					id: "B44B6A48FFA8ADD8"
+					type: "xp_levels"
+					xp_levels: 3
+				}
+			]
+		}
+		{
+			id: "50511EA1602C8C5C"
+			x: 12.0d
+			y: 3.0d
+			icon: {
+				id: "farmersdelight:wheat_dough"
+				count: 1
+			}
+			optional: true
+			dependencies: [
+				"329F0D4C3D0BF1C4"
+			]
+			tasks: [
+				{
+					id: "A05DBEF8FA1D79F5"
+					type: "item"
+					item: {
+						id: "farmersdelight:wheat_dough"
+						count: 1
+					}
+					count: 3
+				}
+			]
+			rewards: [
+				{
+					id: "C4CC6DDDD0E2951B"
+					type: "item"
+					item: {
+						id: "minecraft:wheat"
+						count: 1
+					}
+					count: 16
+				}
+			]
+		}
+		{
+			id: "978D44026E7721E3"
+			x: 14.5d
+			y: 2.4d
+			icon: {
+				id: "farmersdelight:hamburger"
+				count: 1
+			}
+			dependencies: [
+				"11BAD57C35D63EE0"
+			]
+			tasks: [
+				{
+					id: "DB731A9F5DAC0B8D"
+					type: "item"
+					item: {
+						id: "farmersdelight:hamburger"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "06E4DBE44E88B8AD"
+					type: "item"
+					item: {
+						id: "minecraft:beef"
+						count: 1
+					}
+					count: 8
+				}
+				{
+					id: "92DE55081535E1DA"
 					type: "xp_levels"
 					xp_levels: 3
 				}
@@ -562,6 +777,11 @@
 					id: "2FC42AF3B4FE0AA3"
 					type: "loot"
 					table_id: "1EBBC2B918151958"
+				}
+				{
+					id: "6234A069BB265071"
+					type: "xp_levels"
+					xp_levels: 4
 				}
 			]
 		}
@@ -697,6 +917,11 @@
 					type: "loot"
 					table_id: "1EBBC2B918151958"
 				}
+				{
+					id: "F303540A0E36F60B"
+					type: "xp_levels"
+					xp_levels: 3
+				}
 			]
 		}
 		{
@@ -737,7 +962,7 @@
 		{
 			id: "EC3B1246BF2F4CD8"
 			x: 11.0d
-			y: 5.0d
+			y: 4.6d
 			icon: {
 				id: "farmingforblockheads:red_fertilizer"
 				count: 1
@@ -769,9 +994,79 @@
 			]
 		}
 		{
-			id: "3601992F7BE5B929"
+			id: "DF0E3492824D8AAD"
 			x: 13.0d
-			y: 6.0d
+			y: 4.6d
+			icon: {
+				id: "farmingforblockheads:green_fertilizer"
+				count: 1
+			}
+			optional: true
+			dependencies: [
+				"EC3B1246BF2F4CD8"
+			]
+			tasks: [
+				{
+					id: "A43D19302C259934"
+					type: "item"
+					item: {
+						id: "farmingforblockheads:green_fertilizer"
+						count: 1
+					}
+					count: 4
+				}
+			]
+			rewards: [
+				{
+					id: "9F89F3656C3DA745"
+					type: "item"
+					item: {
+						id: "minecraft:gold_nugget"
+						count: 1
+					}
+					count: 8
+				}
+			]
+		}
+		{
+			id: "D3F5AAB79AA73C86"
+			x: 13.0d
+			y: 6.4d
+			icon: {
+				id: "farmingforblockheads:yellow_fertilizer"
+				count: 1
+			}
+			optional: true
+			dependencies: [
+				"EC3B1246BF2F4CD8"
+			]
+			tasks: [
+				{
+					id: "077D5042B494050B"
+					type: "item"
+					item: {
+						id: "farmingforblockheads:yellow_fertilizer"
+						count: 1
+					}
+					count: 4
+				}
+			]
+			rewards: [
+				{
+					id: "07677F3F99EC142C"
+					type: "item"
+					item: {
+						id: "minecraft:gold_nugget"
+						count: 1
+					}
+					count: 8
+				}
+			]
+		}
+		{
+			id: "3601992F7BE5B929"
+			x: 15.0d
+			y: 7.0d
 			icon: {
 				id: "farmersdelight:tomato_crate"
 				count: 1
@@ -899,6 +1194,11 @@
 						count: 1
 					}
 					count: 8
+				}
+				{
+					id: "EE234734F8918851"
+					type: "xp_levels"
+					xp_levels: 3
 				}
 			]
 		}
@@ -1148,6 +1448,11 @@
 					type: "loot"
 					table_id: "1EBBC2B918151958"
 				}
+				{
+					id: "10BB91D26DEC83FE"
+					type: "xp_levels"
+					xp_levels: 3
+				}
 			]
 		}
 		{
@@ -1241,6 +1546,11 @@
 					type: "loot"
 					table_id: "870211AF0E412C54"
 				}
+				{
+					id: "92463BE21EB1345A"
+					type: "xp_levels"
+					xp_levels: 5
+				}
 			]
 		}
 		{
@@ -1292,7 +1602,7 @@
 				{
 					id: "B6F4C5E92E382DF1"
 					type: "loot"
-					table_id: "870211AF0E412C54"
+					table_id: "B5AA0F94577E6A3C"
 				}
 				{
 					id: "4D45E40D7D06D843"
@@ -1317,7 +1627,7 @@
 			id: "0B7BBB1F26AF78D1"
 			image: "kronwerke:textures/quests/food/basics.png"
 			x: 8.5d
-			y: -9.6d
+			y: -11.0d
 			width: 4.01d
 			height: 0.9d
 			rotation: 0.0d
@@ -1327,7 +1637,7 @@
 			id: "496AC693D2B0E49D"
 			image: "kronwerke:textures/quests/food/cooking.png"
 			x: 10.5d
-			y: -2.6d
+			y: -3.6d
 			width: 2.49d
 			height: 0.9d
 			rotation: 0.0d
@@ -1336,8 +1646,8 @@
 		{
 			id: "26AFDB84C5CF1B61"
 			image: "kronwerke:textures/quests/food/farming.png"
-			x: 9.0d
-			y: 3.9d
+			x: 7.0d
+			y: 4.2d
 			width: 2.16d
 			height: 0.9d
 			rotation: 0.0d

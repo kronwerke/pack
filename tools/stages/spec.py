@@ -309,6 +309,8 @@ RULES = [
     (4, ["@create_jetpack", "mekanism:hdpe_elytra", "re:^cabletiers:.*mega_"]),
     # The large wind generator makes more than the nitro reactor and the fusion reactor together.
     (5, ["mekmm:large_wind_generator"]),
+    # Azure ore only generates in end stone.
+    (4, ["re:^silentgear:(azure_silver|azure_electrum|tyrian_steel)"]),
     # ---------------------------------------------------------------- Milestones (kubejs/startup_scripts/milestones.js)
     (2, ["kronwerke:brass_heart", "kronwerke:rune_core"]),
     (3, ["kronwerke:steel_core", "kronwerke:elven_star"]),

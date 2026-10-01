@@ -65,6 +65,15 @@
 			rewards: [
 				{
 					id: "E26D9E6FF3C431F0"
+					type: "item"
+					item: {
+						id: "create:track"
+						count: 1
+					}
+					count: 16
+				}
+				{
+					id: "C0B8561282735D7E"
 					type: "xp_levels"
 					xp_levels: 3
 				}
@@ -167,11 +176,46 @@
 			]
 		}
 		{
-			id: "BFC39F15F47658CE"
+			id: "D5252D5A74788A46"
 			x: 2.5d
 			y: 9.5d
 			dependencies: [
 				"062A01626BD35D4C"
+			]
+			tasks: [
+				{
+					id: "AF0418058B516F78"
+					type: "item"
+					item: {
+						id: "create:unprocessed_obsidian_sheet"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "F180109BB7D2A5FF"
+					type: "item"
+					item: {
+						id: "minecraft:lava_bucket"
+						count: 1
+					}
+					count: 1
+				}
+				{
+					id: "595B7E8DFD2239C5"
+					type: "xp_levels"
+					xp_levels: 3
+				}
+			]
+		}
+		{
+			id: "BFC39F15F47658CE"
+			x: 5.0d
+			y: 9.5d
+			dependencies: [
+				"D5252D5A74788A46"
 			]
 			tasks: [
 				{
@@ -189,21 +233,21 @@
 					id: "EB4460AFA7A02610"
 					type: "item"
 					item: {
-						id: "minecraft:lava_bucket"
+						id: "minecraft:obsidian"
 						count: 1
 					}
-					count: 1
+					count: 8
 				}
 				{
 					id: "7E461D0B13778CA0"
 					type: "xp_levels"
-					xp_levels: 3
+					xp_levels: 4
 				}
 			]
 		}
 		{
 			id: "ED444AAC25024D92"
-			x: 5.0d
+			x: 7.5d
 			y: 9.5d
 			icon: {
 				id: "create:railway_casing"
@@ -237,13 +281,13 @@
 				{
 					id: "6C278235D723F51D"
 					type: "xp_levels"
-					xp_levels: 3
+					xp_levels: 4
 				}
 			]
 		}
 		{
 			id: "B538FC75A11EA5BA"
-			x: 7.5d
+			x: 10.0d
 			y: 8.5d
 			dependencies: [
 				"ED444AAC25024D92"
@@ -272,13 +316,13 @@
 				{
 					id: "540127A0F87F6E2D"
 					type: "xp_levels"
-					xp_levels: 3
+					xp_levels: 4
 				}
 			]
 		}
 		{
 			id: "A140EEBB772BD4AC"
-			x: 7.5d
+			x: 10.0d
 			y: 10.5d
 			icon: {
 				id: "create:railway_casing"
@@ -306,13 +350,13 @@
 				{
 					id: "32DD5B12120E0C73"
 					type: "xp_levels"
-					xp_levels: 3
+					xp_levels: 4
 				}
 			]
 		}
 		{
 			id: "994F060D274014B2"
-			x: 10.0d
+			x: 12.5d
 			y: 9.5d
 			icon: {
 				id: "create:controls"
@@ -343,13 +387,13 @@
 				{
 					id: "1EC9270FFF275C68"
 					type: "xp_levels"
-					xp_levels: 3
+					xp_levels: 5
 				}
 			]
 		}
 		{
 			id: "9B554A689296B483"
-			x: 12.5d
+			x: 15.0d
 			y: 9.5d
 			icon: {
 				id: "create:controls"
@@ -379,13 +423,63 @@
 				{
 					id: "95B6C13496FE622A"
 					type: "xp_levels"
-					xp_levels: 10
+					xp_levels: 8
+				}
+			]
+		}
+		{
+			id: "A16DBD57A4EDBCD1"
+			x: 17.5d
+			y: 8.5d
+			icon: {
+				id: "minecraft:lever"
+				count: 1
+			}
+			dependencies: [
+				"9B554A689296B483"
+			]
+			tasks: [
+				{
+					id: "72A58736A72CD017"
+					type: "checkmark"
+				}
+			]
+			rewards: [
+				{
+					id: "7F6492A3499AE4A2"
+					type: "xp_levels"
+					xp_levels: 4
+				}
+			]
+		}
+		{
+			id: "CC0470E74CFDA0DC"
+			x: 17.5d
+			y: 10.5d
+			icon: {
+				id: "create:track_station"
+				count: 1
+			}
+			dependencies: [
+				"9B554A689296B483"
+			]
+			tasks: [
+				{
+					id: "661EBD856DE2FD3D"
+					type: "checkmark"
+				}
+			]
+			rewards: [
+				{
+					id: "DF8BA9731AFA5E32"
+					type: "xp_levels"
+					xp_levels: 4
 				}
 			]
 		}
 		{
 			id: "1FE76D89B8BB41ED"
-			x: 12.5d
+			x: 15.0d
 			y: 12.0d
 			optional: true
 			dependencies: [
@@ -412,7 +506,7 @@
 		}
 		{
 			id: "6701AFCD425DC02F"
-			x: 17.0d
+			x: 20.0d
 			y: 2.5d
 			icon: {
 				id: "create:schedule"
@@ -442,13 +536,13 @@
 				{
 					id: "985673A950C7A338"
 					type: "xp_levels"
-					xp_levels: 3
+					xp_levels: 4
 				}
 			]
 		}
 		{
 			id: "4F7DAA47C968585F"
-			x: 19.5d
+			x: 22.5d
 			y: 2.5d
 			icon: {
 				id: "create:blaze_burner"
@@ -473,7 +567,7 @@
 		}
 		{
 			id: "F90477188DE42ABC"
-			x: 22.0d
+			x: 25.0d
 			y: 2.5d
 			icon: {
 				id: "create:track_station"
@@ -502,13 +596,13 @@
 				{
 					id: "CE2B6BF4BAB847DA"
 					type: "xp_levels"
-					xp_levels: 5
+					xp_levels: 6
 				}
 			]
 		}
 		{
 			id: "16D99DD63F3E5821"
-			x: 24.5d
+			x: 27.5d
 			y: 2.5d
 			optional: true
 			dependencies: [
@@ -543,9 +637,139 @@
 			]
 		}
 		{
+			id: "8F69AF6DB1641D62"
+			x: 20.0d
+			y: 6.0d
+			icon: {
+				id: "create:schedule"
+				count: 1
+			}
+			optional: true
+			dependencies: [
+				"6701AFCD425DC02F"
+			]
+			tasks: [
+				{
+					id: "6964C02F4C572F0F"
+					type: "checkmark"
+				}
+			]
+			rewards: [
+				{
+					id: "86F36FA3D3221E75"
+					type: "xp_levels"
+					xp_levels: 2
+				}
+			]
+		}
+		{
+			id: "59E0EC05B3CAA42C"
+			x: 22.0d
+			y: 6.0d
+			icon: {
+				id: "create:schedule"
+				count: 1
+			}
+			optional: true
+			dependencies: [
+				"6701AFCD425DC02F"
+			]
+			tasks: [
+				{
+					id: "3EFC2B72A5468BC1"
+					type: "checkmark"
+				}
+			]
+			rewards: [
+				{
+					id: "7BAE2758C7A67A1F"
+					type: "xp_levels"
+					xp_levels: 2
+				}
+			]
+		}
+		{
+			id: "D1F54037FD20BAE2"
+			x: 24.0d
+			y: 6.0d
+			icon: {
+				id: "create:schedule"
+				count: 1
+			}
+			optional: true
+			dependencies: [
+				"6701AFCD425DC02F"
+			]
+			tasks: [
+				{
+					id: "DD1227E80B33AFFD"
+					type: "checkmark"
+				}
+			]
+			rewards: [
+				{
+					id: "DC6F36DF52365FA3"
+					type: "xp_levels"
+					xp_levels: 2
+				}
+			]
+		}
+		{
+			id: "3103ABC9164E225E"
+			x: 26.0d
+			y: 6.0d
+			icon: {
+				id: "create:schedule"
+				count: 1
+			}
+			optional: true
+			dependencies: [
+				"6701AFCD425DC02F"
+			]
+			tasks: [
+				{
+					id: "7414BEE9C796AC95"
+					type: "checkmark"
+				}
+			]
+			rewards: [
+				{
+					id: "0E396FE30D54C21D"
+					type: "xp_levels"
+					xp_levels: 2
+				}
+			]
+		}
+		{
+			id: "B54BB902855E5DC6"
+			x: 28.0d
+			y: 6.0d
+			icon: {
+				id: "create:schedule"
+				count: 1
+			}
+			optional: true
+			dependencies: [
+				"6701AFCD425DC02F"
+			]
+			tasks: [
+				{
+					id: "C3365B20CA745AA6"
+					type: "checkmark"
+				}
+			]
+			rewards: [
+				{
+					id: "E4218BE0336E5241"
+					type: "xp_levels"
+					xp_levels: 2
+				}
+			]
+		}
+		{
 			id: "7D527FD4BD11E420"
-			x: 17.0d
-			y: 8.0d
+			x: 20.0d
+			y: 10.0d
 			icon: {
 				id: "create:track_signal"
 				count: 1
@@ -577,14 +801,14 @@
 				{
 					id: "AB865534A22E5AC0"
 					type: "xp_levels"
-					xp_levels: 3
+					xp_levels: 4
 				}
 			]
 		}
 		{
 			id: "CD1DCCF8FBC15F5C"
-			x: 19.5d
-			y: 8.0d
+			x: 22.5d
+			y: 10.0d
 			icon: {
 				id: "create:track_signal"
 				count: 1
@@ -609,8 +833,8 @@
 		}
 		{
 			id: "CE1640D4F0A6D771"
-			x: 22.0d
-			y: 8.0d
+			x: 25.0d
+			y: 10.0d
 			optional: true
 			dependencies: [
 				"CD1DCCF8FBC15F5C"
@@ -636,8 +860,8 @@
 		}
 		{
 			id: "3EEACBE873E2B758"
-			x: 17.0d
-			y: 13.5d
+			x: 20.0d
+			y: 14.5d
 			icon: {
 				id: "create:portable_storage_interface"
 				count: 1
@@ -675,14 +899,14 @@
 				{
 					id: "E9E64C23930D42B2"
 					type: "xp_levels"
-					xp_levels: 3
+					xp_levels: 4
 				}
 			]
 		}
 		{
 			id: "11F5E8D8D5381565"
-			x: 17.0d
-			y: 15.75d
+			x: 20.0d
+			y: 16.5d
 			optional: true
 			dependencies: [
 				"3EEACBE873E2B758"
@@ -711,14 +935,14 @@
 				{
 					id: "7236C6AF604D600F"
 					type: "xp_levels"
-					xp_levels: 3
+					xp_levels: 4
 				}
 			]
 		}
 		{
 			id: "BD277AE3F3547F8E"
-			x: 19.5d
-			y: 13.5d
+			x: 22.5d
+			y: 14.5d
 			icon: {
 				id: "create:item_vault"
 				count: 1
@@ -742,14 +966,53 @@
 				{
 					id: "87F93BD1DB2D849D"
 					type: "xp_levels"
-					xp_levels: 10
+					xp_levels: 8
+				}
+			]
+		}
+		{
+			id: "AEA52E5BB217772E"
+			x: 22.5d
+			y: 16.5d
+			icon: {
+				id: "create:white_postbox"
+				count: 1
+			}
+			dependencies: [
+				"3EEACBE873E2B758"
+			]
+			tasks: [
+				{
+					id: "FF4F7F15B9C92BE3"
+					type: "item"
+					item: {
+						id: "create:white_postbox"
+						count: 1
+					}
+					count: 2
+				}
+			]
+			rewards: [
+				{
+					id: "294973CA2096FC87"
+					type: "item"
+					item: {
+						id: "create:cardboard"
+						count: 1
+					}
+					count: 16
+				}
+				{
+					id: "FD56616929EA740D"
+					type: "xp_levels"
+					xp_levels: 4
 				}
 			]
 		}
 		{
 			id: "B6EF2EFA989FDA9F"
-			x: 22.5d
-			y: 20.0d
+			x: 26.0d
+			y: 20.5d
 			icon: {
 				id: "create:track_station"
 				count: 1
@@ -798,7 +1061,7 @@
 		{
 			id: "3CEE4653FDACC0C1"
 			image: "kronwerke:textures/quests/create_trains/title.png"
-			x: 12.5d
+			x: 14.0d
 			y: -3.0d
 			width: 6.66d
 			height: 1.6d
@@ -808,7 +1071,7 @@
 		{
 			id: "615F93200771B432"
 			image: "kronwerke:textures/quests/create_trains/stage.png"
-			x: 12.5d
+			x: 14.0d
 			y: -1.6d
 			width: 3.71d
 			height: 0.55d
@@ -838,7 +1101,7 @@
 		{
 			id: "0E02BC9059735A5D"
 			image: "kronwerke:textures/quests/create_trains/schedule.png"
-			x: 18.02d
+			x: 21.02d
 			y: 0.1d
 			width: 3.24d
 			height: 0.9d
@@ -847,29 +1110,39 @@
 		}
 		{
 			id: "B35B7036B0526049"
-			image: "kronwerke:textures/quests/create_trains/signals.png"
-			x: 17.7d
-			y: 5.8d
-			width: 2.59d
+			image: "kronwerke:textures/quests/create_trains/conditions.png"
+			x: 22.98d
+			y: 4.6d
+			width: 7.17d
 			height: 0.9d
 			rotation: 0.0d
 			order: 1
 		}
 		{
 			id: "6E2B09A6247CF037"
-			image: "kronwerke:textures/quests/create_trains/cargo.png"
-			x: 17.58d
-			y: 11.3d
-			width: 2.36d
+			image: "kronwerke:textures/quests/create_trains/signals.png"
+			x: 20.7d
+			y: 8.2d
+			width: 2.59d
 			height: 0.9d
 			rotation: 0.0d
 			order: 1
 		}
 		{
 			id: "2A5E1E3F94811A7D"
+			image: "kronwerke:textures/quests/create_trains/cargo.png"
+			x: 20.58d
+			y: 12.6d
+			width: 2.36d
+			height: 0.9d
+			rotation: 0.0d
+			order: 1
+		}
+		{
+			id: "C071C6EA941C1F99"
 			image: "kronwerke:textures/quests/create_trains/goal.png"
-			x: 22.48d
-			y: 17.6d
+			x: 25.94d
+			y: 18.2d
 			width: 2.67d
 			height: 0.9d
 			rotation: 0.0d

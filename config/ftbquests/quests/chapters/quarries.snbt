@@ -139,15 +139,49 @@
 			]
 		}
 		{
-			id: "4AF6780F712BF3C4"
+			id: "C5593E372EC8FD9B"
 			x: 7.5d
+			y: 2.0d
+			icon: {
+				id: "minecraft:chest"
+				count: 1
+			}
+			dependencies: [
+				"5F301E6815986CAB"
+			]
+			tasks: [
+				{
+					id: "8D64BDB1C2B5D0F8"
+					type: "checkmark"
+				}
+			]
+			rewards: [
+				{
+					id: "4A19277D8180DB7E"
+					type: "item"
+					item: {
+						id: "minecraft:chest"
+						count: 1
+					}
+					count: 4
+				}
+				{
+					id: "E15BE42D12068CD7"
+					type: "xp_levels"
+					xp_levels: 10
+				}
+			]
+		}
+		{
+			id: "4AF6780F712BF3C4"
+			x: 10.0d
 			y: 1.0d
 			icon: {
 				id: "rftoolsbuilder:shape_card_quarry_clear"
 				count: 1
 			}
 			dependencies: [
-				"5F301E6815986CAB"
+				"C5593E372EC8FD9B"
 			]
 			tasks: [
 				{
@@ -178,87 +212,8 @@
 			]
 		}
 		{
-			id: "70EA5410ED9559AD"
-			x: 7.5d
-			y: 3.0d
-			icon: {
-				id: "rftoolsbuilder:shape_card_quarry_fortune"
-				count: 1
-			}
-			dependencies: [
-				"5F301E6815986CAB"
-			]
-			tasks: [
-				{
-					id: "256AB77EBDB34FA7"
-					type: "item"
-					item: {
-						id: "rftoolsbuilder:shape_card_quarry_fortune"
-						count: 1
-					}
-					count: 1
-				}
-			]
-			rewards: [
-				{
-					id: "3F8820E40732D316"
-					type: "item"
-					item: {
-						id: "rftoolsbase:dimensionalshard"
-						count: 1
-					}
-					count: 16
-				}
-				{
-					id: "BDFE91BDCC1AF74B"
-					type: "xp_levels"
-					xp_levels: 10
-				}
-			]
-		}
-		{
-			id: "AE8B779EE711879F"
-			x: 10.0d
-			y: 3.0d
-			icon: {
-				id: "rftoolsbuilder:shape_card_quarry_silk"
-				count: 1
-			}
-			optional: true
-			dependencies: [
-				"70EA5410ED9559AD"
-			]
-			tasks: [
-				{
-					id: "6202CB66BF661AB6"
-					type: "item"
-					item: {
-						id: "rftoolsbuilder:shape_card_quarry_silk"
-						count: 1
-					}
-					count: 1
-				}
-			]
-			rewards: [
-				{
-					id: "749EB546A9A00854"
-					type: "item"
-					item: {
-						id: "minecraft:diamond"
-						count: 1
-					}
-					count: 4
-				}
-				{
-					id: "17B2969231D8D5AF"
-					type: "xp_levels"
-					xp_levels: 10
-				}
-			]
-		}
-		{
 			id: "338E930A257A8803"
-			x: 10.0d
+			x: 12.5d
 			y: 1.0d
 			icon: {
 				id: "rftoolsbuilder:shape_card_void"
@@ -297,9 +252,128 @@
 			]
 		}
 		{
+			id: "70EA5410ED9559AD"
+			x: 10.0d
+			y: 3.0d
+			icon: {
+				id: "rftoolsbuilder:shape_card_quarry_fortune"
+				count: 1
+			}
+			dependencies: [
+				"C5593E372EC8FD9B"
+			]
+			tasks: [
+				{
+					id: "256AB77EBDB34FA7"
+					type: "item"
+					item: {
+						id: "rftoolsbuilder:shape_card_quarry_fortune"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "3F8820E40732D316"
+					type: "item"
+					item: {
+						id: "rftoolsbase:dimensionalshard"
+						count: 1
+					}
+					count: 16
+				}
+				{
+					id: "BDFE91BDCC1AF74B"
+					type: "xp_levels"
+					xp_levels: 10
+				}
+			]
+		}
+		{
+			id: "AE8B779EE711879F"
+			x: 12.5d
+			y: 3.0d
+			icon: {
+				id: "rftoolsbuilder:shape_card_quarry_silk"
+				count: 1
+			}
+			optional: true
+			dependencies: [
+				"70EA5410ED9559AD"
+			]
+			tasks: [
+				{
+					id: "6202CB66BF661AB6"
+					type: "item"
+					item: {
+						id: "rftoolsbuilder:shape_card_quarry_silk"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "749EB546A9A00854"
+					type: "item"
+					item: {
+						id: "minecraft:diamond"
+						count: 1
+					}
+					count: 4
+				}
+				{
+					id: "17B2969231D8D5AF"
+					type: "xp_levels"
+					xp_levels: 10
+				}
+			]
+		}
+		{
+			id: "13896ACA781626DA"
+			x: 7.5d
+			y: 4.0d
+			icon: {
+				id: "rftoolsbuilder:shape_card_pump"
+				count: 1
+			}
+			optional: true
+			dependencies: [
+				"C5593E372EC8FD9B"
+			]
+			tasks: [
+				{
+					id: "F9E83CF3A24F6A4D"
+					type: "item"
+					item: {
+						id: "rftoolsbuilder:shape_card_pump"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "D48C019FFA45AE37"
+					type: "item"
+					item: {
+						id: "minecraft:bucket"
+						count: 1
+					}
+					count: 4
+				}
+				{
+					id: "B80305F6E507E1F1"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+		}
+		{
 			id: "1EB6198ADB8AD286"
 			x: 5.0d
-			y: 4.25d
+			y: 4.0d
 			icon: {
 				id: "rftoolsbase:machine_infuser"
 				count: 1
@@ -385,6 +459,46 @@
 			]
 		}
 		{
+			id: "2B882A8FE3DD2678"
+			x: 0.0d
+			y: 10.0d
+			icon: {
+				id: "quarryplus:chunk_marker"
+				count: 1
+			}
+			optional: true
+			dependencies: [
+				"BF9D6DC01EEFF26F"
+			]
+			tasks: [
+				{
+					id: "44AD9E2C01BF1D6A"
+					type: "item"
+					item: {
+						id: "quarryplus:chunk_marker"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "69991B30B8275EB0"
+					type: "item"
+					item: {
+						id: "minecraft:redstone"
+						count: 1
+					}
+					count: 16
+				}
+				{
+					id: "C5F2CB48D5808C54"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+		}
+		{
 			id: "344B9286FB5F51E1"
 			x: 2.5d
 			y: 8.0d
@@ -431,9 +545,58 @@
 			]
 		}
 		{
+			id: "B21891764C51A6E3"
+			x: 5.0d
+			y: 10.0d
+			icon: {
+				id: "quarryplus:y_setter"
+				count: 1
+			}
+			optional: true
+			dependencies: [
+				"344B9286FB5F51E1"
+			]
+			tasks: [
+				{
+					id: "56F704006B9D748D"
+					type: "item"
+					item: {
+						id: "quarryplus:y_setter"
+						count: 1
+					}
+					count: 1
+				}
+				{
+					id: "A5CFEF5597A0462A"
+					type: "item"
+					item: {
+						id: "quarryplus:status_checker"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "928846571F9578F0"
+					type: "item"
+					item: {
+						id: "minecraft:lapis_lazuli"
+						count: 1
+					}
+					count: 16
+				}
+				{
+					id: "6526EFA2FDA79A5C"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+		}
+		{
 			id: "BF968E63BD4F3887"
 			x: 5.0d
-			y: 7.0d
+			y: 8.0d
 			icon: {
 				id: "quarryplus:mover"
 				count: 1
@@ -471,14 +634,14 @@
 		}
 		{
 			id: "BFFE1D2FC9FFF4EE"
-			x: 5.0d
-			y: 9.0d
+			x: 7.5d
+			y: 7.0d
 			icon: {
 				id: "quarryplus:filter_module"
 				count: 1
 			}
 			dependencies: [
-				"344B9286FB5F51E1"
+				"BF968E63BD4F3887"
 			]
 			tasks: [
 				{
@@ -509,9 +672,49 @@
 			]
 		}
 		{
-			id: "A3ECD9AEB4E153A7"
+			id: "949CCA6EA1ECEA3F"
 			x: 7.5d
 			y: 9.0d
+			icon: {
+				id: "quarryplus:exp_module"
+				count: 1
+			}
+			optional: true
+			dependencies: [
+				"BF968E63BD4F3887"
+			]
+			tasks: [
+				{
+					id: "29AD28C853AC5C83"
+					type: "item"
+					item: {
+						id: "quarryplus:exp_module"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "F0EE9F10B6CEE9BD"
+					type: "item"
+					item: {
+						id: "minecraft:experience_bottle"
+						count: 1
+					}
+					count: 8
+				}
+				{
+					id: "89F1C9E5C88652B8"
+					type: "xp_levels"
+					xp_levels: 10
+				}
+			]
+		}
+		{
+			id: "A3ECD9AEB4E153A7"
+			x: 10.0d
+			y: 7.0d
 			icon: {
 				id: "quarryplus:repeat_tick_module"
 				count: 1
@@ -548,8 +751,48 @@
 			]
 		}
 		{
-			id: "8F3AB3A170C9C031"
+			id: "CA70633074FE9942"
 			x: 10.0d
+			y: 9.0d
+			icon: {
+				id: "quarryplus:remove_bedrock_module"
+				count: 1
+			}
+			optional: true
+			dependencies: [
+				"949CCA6EA1ECEA3F"
+			]
+			tasks: [
+				{
+					id: "8B3AD5F283FDEAD0"
+					type: "item"
+					item: {
+						id: "quarryplus:remove_bedrock_module"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "B3D260EE915E3326"
+					type: "item"
+					item: {
+						id: "minecraft:diamond"
+						count: 1
+					}
+					count: 4
+				}
+				{
+					id: "D23E4332E59B2849"
+					type: "xp_levels"
+					xp_levels: 10
+				}
+			]
+		}
+		{
+			id: "8F3AB3A170C9C031"
+			x: 12.5d
 			y: 8.0d
 			icon: {
 				id: "quarryplus:adv_quarry"
@@ -558,8 +801,8 @@
 			size: 2.5d
 			shape: "gear"
 			dependencies: [
-				"BF968E63BD4F3887"
 				"A3ECD9AEB4E153A7"
+				"2B882A8FE3DD2678"
 			]
 			tasks: [
 				{
@@ -604,9 +847,126 @@
 			]
 		}
 		{
-			id: "E46B81741AB4AAA1"
+			id: "D77579350670FC20"
+			x: 0.0d
+			y: 13.5d
+			icon: {
+				id: "mekanism:digital_miner"
+				count: 1
+			}
+			optional: true
+			dependencies: [
+				"A8137713AF962996"
+			]
+			tasks: [
+				{
+					id: "A081F3A36B83BCA8"
+					type: "checkmark"
+				}
+			]
+			rewards: [
+				{
+					id: "83252C701F7E8F0F"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+		}
+		{
+			id: "68745BBBF2444F1F"
 			x: 2.5d
-			y: 12.0d
+			y: 13.5d
+			icon: {
+				id: "createoreexcavation:drill"
+				count: 1
+			}
+			optional: true
+			dependencies: [
+				"A8137713AF962996"
+			]
+			tasks: [
+				{
+					id: "BDF06D8D4321C4C2"
+					type: "checkmark"
+				}
+			]
+			rewards: [
+				{
+					id: "7C6B9E42AFB959A5"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+		}
+		{
+			id: "EC75BD1FD19521C8"
+			x: 5.0d
+			y: 13.5d
+			icon: {
+				id: "createoreexcavation:netherite_drill"
+				count: 1
+			}
+			dependencies: [
+				"68745BBBF2444F1F"
+			]
+			tasks: [
+				{
+					id: "C993BA48DE5D5CE0"
+					type: "item"
+					item: {
+						id: "createoreexcavation:netherite_drill"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "DCFD16CED4F2D2C0"
+					type: "item"
+					item: {
+						id: "minecraft:diamond"
+						count: 1
+					}
+					count: 4
+				}
+				{
+					id: "FE4873759AE4FD66"
+					type: "xp_levels"
+					xp_levels: 15
+				}
+			]
+		}
+		{
+			id: "FB440566D09838BA"
+			x: 7.5d
+			y: 13.5d
+			icon: {
+				id: "oritech:destroyer_block"
+				count: 1
+			}
+			optional: true
+			dependencies: [
+				"A8137713AF962996"
+			]
+			tasks: [
+				{
+					id: "3191AB1FAD9197DD"
+					type: "checkmark"
+				}
+			]
+			rewards: [
+				{
+					id: "557F5598E10333B6"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+		}
+		{
+			id: "E46B81741AB4AAA1"
+			x: 0.0d
+			y: 17.0d
 			icon: {
 				id: "minecraft:map"
 				count: 1
@@ -639,8 +999,8 @@
 		}
 		{
 			id: "5E86618148BB3FB8"
-			x: 5.0d
-			y: 12.0d
+			x: 2.5d
+			y: 17.0d
 			icon: {
 				id: "mekanism:elite_universal_cable"
 				count: 1
@@ -701,8 +1061,8 @@
 		{
 			id: "332F606329C9C8A5"
 			image: "kronwerke:textures/quests/quarries/builder.png"
-			x: 4.23d
-			y: 0.2d
+			x: 5.13d
+			y: 0.0d
 			width: 5.26d
 			height: 0.9d
 			rotation: 0.0d
@@ -711,7 +1071,7 @@
 		{
 			id: "1C15D5F0B6E99DB2"
 			image: "kronwerke:textures/quests/quarries/quarryplus.png"
-			x: 1.25d
+			x: 1.85d
 			y: 6.4d
 			width: 3.71d
 			height: 0.9d
@@ -720,9 +1080,19 @@
 		}
 		{
 			id: "41669B0F709C5C16"
+			image: "kronwerke:textures/quests/quarries/other.png"
+			x: 2.13d
+			y: 12.0d
+			width: 4.27d
+			height: 0.9d
+			rotation: 0.0d
+			order: 1
+		}
+		{
+			id: "76B80CCF37548202"
 			image: "kronwerke:textures/quests/quarries/around.png"
-			x: 3.64d
-			y: 10.6d
+			x: 2.04d
+			y: 15.5d
 			width: 4.08d
 			height: 0.9d
 			rotation: 0.0d

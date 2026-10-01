@@ -50,7 +50,7 @@
 		}
 		{
 			id: "0AC6CDBCF96FAF14"
-			x: 2.6d
+			x: 2.5d
 			y: 0.0d
 			icon: {
 				id: "botania:natura_pylon"
@@ -98,7 +98,7 @@
 		}
 		{
 			id: "D572883DBF11E881"
-			x: 5.2d
+			x: 5.0d
 			y: 0.0d
 			icon: {
 				id: "botania:wand_of_the_forest"
@@ -136,7 +136,7 @@
 		}
 		{
 			id: "45F30A273E86C937"
-			x: 5.2d
+			x: 5.0d
 			y: 2.4d
 			icon: {
 				id: "botania:lexica_botania"
@@ -163,7 +163,7 @@
 		}
 		{
 			id: "22640781356AF5A5"
-			x: 7.8d
+			x: 7.5d
 			y: 0.0d
 			icon: {
 				id: "botania:dreamwood_log"
@@ -193,11 +193,134 @@
 					}
 					count: 16
 				}
+				{
+					id: "0FB7C788C6BD3F9C"
+					type: "xp_levels"
+					xp_levels: 3
+				}
+			]
+		}
+		{
+			id: "4CE2422F8345AA82"
+			x: 7.5d
+			y: -2.4d
+			icon: {
+				id: "botania:dreamwood_twig"
+				count: 1
+			}
+			dependencies: [
+				"22640781356AF5A5"
+			]
+			tasks: [
+				{
+					id: "6A0832E5527020B8"
+					type: "item"
+					item: {
+						id: "botania:dreamwood_twig"
+						count: 1
+					}
+					count: 4
+				}
+			]
+			rewards: [
+				{
+					id: "36872B289FCF14D7"
+					type: "item"
+					item: {
+						id: "botania:dreamwood_log"
+						count: 1
+					}
+					count: 8
+				}
+				{
+					id: "951FB82F368AFAB2"
+					type: "xp_levels"
+					xp_levels: 3
+				}
+			]
+		}
+		{
+			id: "901358D2DA4DB758"
+			x: 5.0d
+			y: -2.4d
+			icon: {
+				id: "botania:elven_quartz"
+				count: 1
+			}
+			optional: true
+			dependencies: [
+				"D572883DBF11E881"
+			]
+			tasks: [
+				{
+					id: "EA7E7CFCD3786BBF"
+					type: "item"
+					item: {
+						id: "botania:elven_quartz"
+						count: 1
+					}
+					count: 8
+				}
+			]
+			rewards: [
+				{
+					id: "362501A24E7DBE10"
+					type: "item"
+					item: {
+						id: "minecraft:quartz"
+						count: 1
+					}
+					count: 8
+				}
+				{
+					id: "2EB44431C97C6DF5"
+					type: "xp_levels"
+					xp_levels: 3
+				}
+			]
+		}
+		{
+			id: "F7DF6FBCD9173F7B"
+			x: 2.5d
+			y: 2.4d
+			icon: {
+				id: "botania:alfglass"
+				count: 1
+			}
+			dependencies: [
+				"D572883DBF11E881"
+			]
+			tasks: [
+				{
+					id: "68DEF85199992B72"
+					type: "item"
+					item: {
+						id: "botania:alfglass"
+						count: 1
+					}
+					count: 6
+				}
+			]
+			rewards: [
+				{
+					id: "CC2FEC93F4227BB2"
+					type: "item"
+					item: {
+						id: "botania:managlass"
+						count: 1
+					}
+					count: 6
+				}
+				{
+					id: "7F9A322EADC0F1EA"
+					type: "xp_levels"
+					xp_levels: 4
+				}
 			]
 		}
 		{
 			id: "D0FACC2FA8C71BAD"
-			x: 10.4d
+			x: 10.0d
 			y: 0.0d
 			icon: {
 				id: "botania:elementium_ingot"
@@ -237,8 +360,47 @@
 			]
 		}
 		{
+			id: "97719D3B37B6475B"
+			x: 12.5d
+			y: 0.0d
+			icon: {
+				id: "botania:elementium_block"
+				count: 1
+			}
+			dependencies: [
+				"D0FACC2FA8C71BAD"
+			]
+			tasks: [
+				{
+					id: "91BEDD86E9510CD0"
+					type: "item"
+					item: {
+						id: "botania:elementium_block"
+						count: 1
+					}
+					count: 2
+				}
+			]
+			rewards: [
+				{
+					id: "57FDB68DD18442FA"
+					type: "item"
+					item: {
+						id: "botania:manasteel_block"
+						count: 1
+					}
+					count: 2
+				}
+				{
+					id: "2AB7B7C819241ED1"
+					type: "xp_levels"
+					xp_levels: 8
+				}
+			]
+		}
+		{
 			id: "EA98FA4E62659939"
-			x: 10.4d
+			x: 10.0d
 			y: -2.4d
 			icon: {
 				id: "botania:pixie_dust"
@@ -268,11 +430,16 @@
 					}
 					count: 4
 				}
+				{
+					id: "372512ADF6606632"
+					type: "xp_levels"
+					xp_levels: 5
+				}
 			]
 		}
 		{
 			id: "656E5E64739B4ECC"
-			x: 10.4d
+			x: 10.0d
 			y: 2.4d
 			icon: {
 				id: "botania:dragonstone"
@@ -302,12 +469,17 @@
 					}
 					count: 4
 				}
+				{
+					id: "9F96E21A6A98C554"
+					type: "xp_levels"
+					xp_levels: 6
+				}
 			]
 		}
 		{
 			id: "E91E5992C63081AB"
-			x: 13.0d
-			y: -3.4d
+			x: 12.5d
+			y: -5.0d
 			icon: {
 				id: "botania:orechid"
 				count: 1
@@ -339,19 +511,18 @@
 				{
 					id: "7B1F1B8A996590A8"
 					type: "xp_levels"
-					xp_levels: 5
+					xp_levels: 6
 				}
 			]
 		}
 		{
 			id: "139A1A3F6C28A402"
-			x: 13.0d
-			y: -1.6d
+			x: 15.0d
+			y: -5.0d
 			icon: {
 				id: "botania:kekimurus"
 				count: 1
 			}
-			optional: true
 			dependencies: [
 				"EA98FA4E62659939"
 			]
@@ -379,14 +550,94 @@
 				{
 					id: "348030CF0209920E"
 					type: "xp_levels"
-					xp_levels: 5
+					xp_levels: 6
+				}
+			]
+		}
+		{
+			id: "78B2462389B61992"
+			x: 17.5d
+			y: -5.0d
+			icon: {
+				id: "botania:rafflowsia"
+				count: 1
+			}
+			optional: true
+			dependencies: [
+				"EA98FA4E62659939"
+			]
+			tasks: [
+				{
+					id: "F0C8E7E3E3022A31"
+					type: "item"
+					item: {
+						id: "botania:rafflowsia"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "6EE1E19C1CF74D63"
+					type: "item"
+					item: {
+						id: "botania:redstone_root"
+						count: 1
+					}
+					count: 2
+				}
+				{
+					id: "CA68C2A9CAFD5912"
+					type: "xp_levels"
+					xp_levels: 6
+				}
+			]
+		}
+		{
+			id: "9F1B1C788F85F428"
+			x: 20.0d
+			y: -5.0d
+			icon: {
+				id: "botania:spectrolus"
+				count: 1
+			}
+			optional: true
+			dependencies: [
+				"EA98FA4E62659939"
+			]
+			tasks: [
+				{
+					id: "A7EB425A36EB9F62"
+					type: "item"
+					item: {
+						id: "botania:spectrolus"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "2DBADA8B0981B53A"
+					type: "item"
+					item: {
+						id: "minecraft:white_wool"
+						count: 1
+					}
+					count: 16
+				}
+				{
+					id: "FB784E2707B1EA5F"
+					type: "xp_levels"
+					xp_levels: 6
 				}
 			]
 		}
 		{
 			id: "04A7B89153B487BA"
-			x: 13.0d
-			y: 0.0d
+			x: 12.5d
+			y: -2.4d
 			icon: {
 				id: "botania:elven_mana_spreader"
 				count: 1
@@ -418,14 +669,14 @@
 				{
 					id: "835E258020E34ACF"
 					type: "xp_levels"
-					xp_levels: 5
+					xp_levels: 6
 				}
 			]
 		}
 		{
 			id: "8167ECF6D0B5ABD4"
-			x: 13.0d
-			y: 1.6d
+			x: 12.5d
+			y: 2.4d
 			icon: {
 				id: "botania:conjuration_catalyst"
 				count: 1
@@ -457,21 +708,21 @@
 				{
 					id: "670BB2953844C768"
 					type: "xp_levels"
-					xp_levels: 5
+					xp_levels: 6
 				}
 			]
 		}
 		{
 			id: "8ABB97A55E126FDB"
-			x: 13.0d
-			y: 3.2d
+			x: 15.0d
+			y: 2.4d
 			icon: {
 				id: "botania:elementium_pickaxe"
 				count: 1
 			}
-			optional: true
 			dependencies: [
-				"D0FACC2FA8C71BAD"
+				"4CE2422F8345AA82"
+				"8167ECF6D0B5ABD4"
 			]
 			tasks: [
 				{
@@ -494,18 +745,208 @@
 					}
 					count: 3
 				}
+				{
+					id: "EB7A597784F68F57"
+					type: "xp_levels"
+					xp_levels: 8
+				}
+			]
+		}
+		{
+			id: "C294F9AFC6525E6C"
+			x: 17.5d
+			y: 2.4d
+			icon: {
+				id: "botania:elementium_chestplate"
+				count: 1
+			}
+			dependencies: [
+				"8ABB97A55E126FDB"
+			]
+			tasks: [
+				{
+					id: "8292D6E627D3FD69"
+					type: "item"
+					item: {
+						id: "botania:elementium_helmet"
+						count: 1
+					}
+					count: 1
+				}
+				{
+					id: "4D731AB81E59ACED"
+					type: "item"
+					item: {
+						id: "botania:elementium_chestplate"
+						count: 1
+					}
+					count: 1
+				}
+				{
+					id: "C005128796752D8F"
+					type: "item"
+					item: {
+						id: "botania:elementium_leggings"
+						count: 1
+					}
+					count: 1
+				}
+				{
+					id: "DE3355423DA46BF7"
+					type: "item"
+					item: {
+						id: "botania:elementium_boots"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "A0092C451378C35E"
+					type: "item"
+					item: {
+						id: "botania:elementium_ingot"
+						count: 1
+					}
+					count: 4
+				}
+				{
+					id: "BAD8E2F70BC00E1E"
+					type: "xp_levels"
+					xp_levels: 10
+				}
+			]
+		}
+		{
+			id: "D16E660668E868DB"
+			x: 20.0d
+			y: 2.4d
+			icon: {
+				id: "botania:great_fairy_ring"
+				count: 1
+			}
+			optional: true
+			dependencies: [
+				"C294F9AFC6525E6C"
+			]
+			tasks: [
+				{
+					id: "9AD0260FB2AE642F"
+					type: "item"
+					item: {
+						id: "botania:great_fairy_ring"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "CF4BA1A91834B6B1"
+					type: "item"
+					item: {
+						id: "botania:pixie_dust"
+						count: 1
+					}
+					count: 4
+				}
+				{
+					id: "CAFC24C65B306920"
+					type: "xp_levels"
+					xp_levels: 8
+				}
+			]
+		}
+		{
+			id: "C4D80DC38DB41433"
+			x: 10.0d
+			y: 4.8d
+			icon: {
+				id: "botania:crystal_bow"
+				count: 1
+			}
+			optional: true
+			dependencies: [
+				"656E5E64739B4ECC"
+			]
+			tasks: [
+				{
+					id: "9286AEEE343C7FB7"
+					type: "item"
+					item: {
+						id: "botania:crystal_bow"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "D845F6AFAEAB2457"
+					type: "item"
+					item: {
+						id: "botania:dragonstone"
+						count: 1
+					}
+					count: 2
+				}
+				{
+					id: "933A23C7AC79E177"
+					type: "xp_levels"
+					xp_levels: 8
+				}
+			]
+		}
+		{
+			id: "ECAC05AB22B596CC"
+			x: 2.5d
+			y: 4.8d
+			icon: {
+				id: "botania:alfglass_flask"
+				count: 1
+			}
+			dependencies: [
+				"F7DF6FBCD9173F7B"
+			]
+			tasks: [
+				{
+					id: "9C3191898EDF93A2"
+					type: "item"
+					item: {
+						id: "botania:alfglass_flask"
+						count: 1
+					}
+					count: 6
+				}
+			]
+			rewards: [
+				{
+					id: "4FF953F15E4E4FE6"
+					type: "item"
+					item: {
+						id: "botania:alfglass"
+						count: 1
+					}
+					count: 3
+				}
+				{
+					id: "92977BA17CE4A456"
+					type: "xp_levels"
+					xp_levels: 4
+				}
 			]
 		}
 		{
 			id: "D34A2C6D76766A84"
-			x: 7.8d
-			y: 2.4d
+			x: 5.0d
+			y: 4.8d
 			icon: {
 				id: "botania:diluted_ender_essence"
 				count: 1
 			}
 			dependencies: [
-				"22640781356AF5A5"
+				"ECAC05AB22B596CC"
 			]
 			tasks: [
 				{
@@ -528,18 +969,64 @@
 					}
 					count: 8
 				}
+				{
+					id: "4752F678A4E996A8"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+		}
+		{
+			id: "1CEE2D36FA860A6E"
+			x: 2.5d
+			y: 7.2d
+			icon: {
+				id: "botania:pure_ender_essence"
+				count: 1
+			}
+			dependencies: [
+				"ECAC05AB22B596CC"
+			]
+			tasks: [
+				{
+					id: "A6572D7BF6824E44"
+					type: "item"
+					item: {
+						id: "botania:pure_ender_essence"
+						count: 1
+					}
+					count: 4
+				}
+			]
+			rewards: [
+				{
+					id: "175437F3318FC3CE"
+					type: "item"
+					item: {
+						id: "minecraft:cobbled_deepslate"
+						count: 1
+					}
+					count: 16
+				}
+				{
+					id: "A31D241764586AC0"
+					type: "xp_levels"
+					xp_levels: 8
+				}
 			]
 		}
 		{
 			id: "E400ABE7C8241782"
-			x: 7.8d
-			y: 5.2d
+			x: 7.5d
+			y: 7.2d
 			icon: {
 				id: "botania:corporea_spark"
 				count: 1
 			}
 			dependencies: [
 				"D34A2C6D76766A84"
+				"EA98FA4E62659939"
+				"656E5E64739B4ECC"
 			]
 			tasks: [
 				{
@@ -574,21 +1061,20 @@
 				{
 					id: "D74F308DEEBCD559"
 					type: "xp_levels"
-					xp_levels: 5
+					xp_levels: 6
 				}
 			]
 		}
 		{
 			id: "692CAC6875EDC6E8"
-			x: 10.4d
-			y: 5.2d
+			x: 10.0d
+			y: 7.2d
 			icon: {
 				id: "botania:corporea_funnel"
 				count: 1
 			}
 			dependencies: [
 				"E400ABE7C8241782"
-				"656E5E64739B4ECC"
 			]
 			tasks: [
 				{
@@ -619,14 +1105,55 @@
 			]
 		}
 		{
+			id: "B3A3C71A0B5C3715"
+			x: 12.5d
+			y: 7.2d
+			icon: {
+				id: "botania:corporea_index"
+				count: 1
+			}
+			dependencies: [
+				"692CAC6875EDC6E8"
+				"1CEE2D36FA860A6E"
+			]
+			tasks: [
+				{
+					id: "C424C2DF86CCD180"
+					type: "item"
+					item: {
+						id: "botania:corporea_index"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "F85CE4CE2BB24A7B"
+					type: "item"
+					item: {
+						id: "botania:corporea_spark"
+						count: 1
+					}
+					count: 4
+				}
+				{
+					id: "F2FE92E7D0C2EF44"
+					type: "xp_levels"
+					xp_levels: 10
+				}
+			]
+		}
+		{
 			id: "9401A84C8A05AB99"
-			x: 15.6d
+			x: 15.0d
 			y: 0.0d
 			icon: {
 				id: "botania:elementium_block"
 				count: 1
 			}
 			dependencies: [
+				"97719D3B37B6475B"
 				"04A7B89153B487BA"
 			]
 			tasks: [
@@ -659,7 +1186,7 @@
 		}
 		{
 			id: "6D3956C3E885BEE2"
-			x: 18.2d
+			x: 17.5d
 			y: 0.0d
 			icon: {
 				id: "kronwerke:elven_star"
@@ -699,8 +1226,8 @@
 		{
 			id: "2F2003A1B98D685E"
 			image: "kronwerke:textures/quests/alfheim/title.png"
-			x: 9.0d
-			y: -6.6d
+			x: 10.0d
+			y: -8.2d
 			width: 11.41d
 			height: 1.8d
 			rotation: 0.0d
@@ -709,8 +1236,8 @@
 		{
 			id: "B0D0F33B488CAA39"
 			image: "kronwerke:textures/quests/alfheim/portal.png"
-			x: 2.6d
-			y: -1.8d
+			x: 2.5d
+			y: -1.4d
 			width: 5.37d
 			height: 0.9d
 			rotation: 0.0d
@@ -719,8 +1246,8 @@
 		{
 			id: "EF994EBC1436856E"
 			image: "kronwerke:textures/quests/alfheim/handel.png"
-			x: 8.6d
-			y: -3.7d
+			x: 8.75d
+			y: -4.4d
 			width: 3.84d
 			height: 0.9d
 			rotation: 0.0d
@@ -729,8 +1256,8 @@
 		{
 			id: "67D10F6F332B997E"
 			image: "kronwerke:textures/quests/alfheim/blumen.png"
-			x: 13.2d
-			y: -4.6d
+			x: 16.25d
+			y: -6.6d
 			width: 4.34d
 			height: 0.9d
 			rotation: 0.0d
@@ -739,8 +1266,8 @@
 		{
 			id: "AAFD98737B267869"
 			image: "kronwerke:textures/quests/alfheim/werkzeug.png"
-			x: 16.4d
-			y: 2.6d
+			x: 17.5d
+			y: 3.9d
 			width: 5.06d
 			height: 0.9d
 			rotation: 0.0d
@@ -749,9 +1276,9 @@
 		{
 			id: "E74366BB35A49134"
 			image: "kronwerke:textures/quests/alfheim/corporea.png"
-			x: 5.0d
-			y: 5.2d
-			width: 3.2d
+			x: 7.5d
+			y: 8.8d
+			width: 9.17d
 			height: 0.9d
 			rotation: 0.0d
 			order: 1
@@ -759,8 +1286,8 @@
 		{
 			id: "5C8A3493E21C3A51"
 			image: "kronwerke:textures/quests/alfheim/obelisk.png"
-			x: 16.9d
-			y: -1.6d
+			x: 16.25d
+			y: -1.3d
 			width: 5.3d
 			height: 0.9d
 			rotation: 0.0d

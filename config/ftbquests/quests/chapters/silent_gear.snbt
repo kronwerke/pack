@@ -46,7 +46,7 @@
 		{
 			id: "A92213BF837C450A"
 			x: 2.5d
-			y: 0.0d
+			y: -1.0d
 			icon: {
 				id: "silentgear:blueprint_package"
 				count: 1
@@ -84,8 +84,8 @@
 		}
 		{
 			id: "CFE18D935573B6E9"
-			x: 4.5d
-			y: 0.0d
+			x: 5.0d
+			y: -1.0d
 			icon: {
 				id: "silentgear:blueprint_paper"
 				count: 1
@@ -128,14 +128,14 @@
 		{
 			id: "9CD016B0B821A4FD"
 			x: 2.5d
-			y: 2.0d
+			y: 1.0d
 			icon: {
 				id: "silentgear:material_book"
 				count: 1
 			}
 			optional: true
 			dependencies: [
-				"A92213BF837C450A"
+				"EAAAFD04D2721064"
 			]
 			tasks: [
 				{
@@ -157,13 +157,48 @@
 			]
 		}
 		{
+			id: "A62B27F826F1C5C1"
+			x: 5.0d
+			y: 1.0d
+			icon: {
+				id: "silentgear:blueprint_book"
+				count: 1
+			}
+			optional: true
+			dependencies: [
+				"CFE18D935573B6E9"
+				"0AB7B71E7A9DBD86"
+			]
+			tasks: [
+				{
+					id: "D89E268EE2D69F1C"
+					type: "item"
+					item: {
+						id: "silentgear:blueprint_book"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "8885B870CAAAC077"
+					type: "xp_levels"
+					xp_levels: 3
+				}
+			]
+		}
+		{
 			id: "AF512F0BF2B89FF9"
 			x: 8.0d
-			y: 0.0d
+			y: -1.0d
 			icon: {
 				id: "silentgear:crude_tool_parts"
 				count: 1
 			}
+			dependencies: [
+				"EAAAFD04D2721064"
+			]
 			tasks: [
 				{
 					id: "45A1D5F3BFA8DD7F"
@@ -189,8 +224,8 @@
 		}
 		{
 			id: "13696C7BCABFF6AA"
-			x: 10.0d
-			y: 0.0d
+			x: 10.5d
+			y: -1.0d
 			icon: {
 				id: "silentgear:crude_knife"
 				count: 1
@@ -219,8 +254,8 @@
 		}
 		{
 			id: "D410F345AE764B6F"
-			x: 10.0d
-			y: 2.0d
+			x: 8.0d
+			y: 1.0d
 			icon: {
 				id: "silentgear:stone_anvil"
 				count: 1
@@ -253,8 +288,8 @@
 		}
 		{
 			id: "0AB7B71E7A9DBD86"
-			x: 12.0d
-			y: 0.0d
+			x: 10.5d
+			y: 1.0d
 			icon: {
 				id: "silentgear:template_board"
 				count: 1
@@ -293,7 +328,7 @@
 		}
 		{
 			id: "A56D9240BB25B222"
-			x: 14.0d
+			x: 13.0d
 			y: 0.0d
 			icon: {
 				id: "silentgear:pickaxe_template"
@@ -323,46 +358,18 @@
 			]
 		}
 		{
-			id: "A62B27F826F1C5C1"
-			x: 14.0d
-			y: 2.0d
-			icon: {
-				id: "silentgear:blueprint_book"
-				count: 1
-			}
-			optional: true
-			dependencies: [
-				"0AB7B71E7A9DBD86"
-			]
-			tasks: [
-				{
-					id: "D89E268EE2D69F1C"
-					type: "item"
-					item: {
-						id: "silentgear:blueprint_book"
-						count: 1
-					}
-					count: 1
-				}
-			]
-			rewards: [
-				{
-					id: "8885B870CAAAC077"
-					type: "xp_levels"
-					xp_levels: 3
-				}
-			]
-		}
-		{
 			id: "F3C1BF990844FCC7"
 			x: 0.0d
-			y: 6.5d
+			y: 5.0d
 			icon: {
 				id: "silentgear:rod"
 				count: 1
 			}
 			size: 1.5d
 			shape: "square"
+			dependencies: [
+				"EAAAFD04D2721064"
+			]
 			tasks: [
 				{
 					id: "EF1371DDE5D136BB"
@@ -387,9 +394,40 @@
 			]
 		}
 		{
+			id: "AA4F4A2424EF0F38"
+			x: 0.0d
+			y: 7.0d
+			icon: {
+				id: "silentgear:iron_rod"
+				count: 1
+			}
+			optional: true
+			dependencies: [
+				"F3C1BF990844FCC7"
+			]
+			tasks: [
+				{
+					id: "65EE61110019AFC3"
+					type: "item"
+					item: {
+						id: "silentgear:iron_rod"
+						count: 1
+					}
+					count: 4
+				}
+			]
+			rewards: [
+				{
+					id: "6F033749BC49D265"
+					type: "xp_levels"
+					xp_levels: 2
+				}
+			]
+		}
+		{
 			id: "74D5258ACC4A915E"
 			x: 2.5d
-			y: 6.5d
+			y: 5.0d
 			icon: {
 				id: "silentgear:pickaxe_head"
 				count: 1
@@ -423,7 +461,7 @@
 		{
 			id: "8CB746E24B79A224"
 			x: 5.0d
-			y: 6.5d
+			y: 5.0d
 			icon: {
 				id: "silentgear:pickaxe"
 				count: 1
@@ -460,7 +498,7 @@
 		{
 			id: "848023F0CD98A515"
 			x: 5.0d
-			y: 8.8d
+			y: 7.5d
 			icon: {
 				id: "minecraft:spyglass"
 				count: 1
@@ -483,9 +521,44 @@
 			]
 		}
 		{
+			id: "C8C1AE0C047671EE"
+			x: 2.5d
+			y: 7.5d
+			icon: {
+				id: "minecraft:gold_ingot"
+				count: 1
+			}
+			optional: true
+			dependencies: [
+				"74D5258ACC4A915E"
+			]
+			tasks: [
+				{
+					id: "BE93EF8562BB7587"
+					type: "checkmark"
+				}
+			]
+			rewards: [
+				{
+					id: "22CA8FC78D6C8FE9"
+					type: "item"
+					item: {
+						id: "minecraft:gold_ingot"
+						count: 1
+					}
+					count: 3
+				}
+				{
+					id: "773125C177D878B4"
+					type: "xp_levels"
+					xp_levels: 3
+				}
+			]
+		}
+		{
 			id: "569763008F19B86D"
 			x: 7.5d
-			y: 6.5d
+			y: 4.0d
 			icon: {
 				id: "silentgear:binding"
 				count: 1
@@ -517,9 +590,79 @@
 			]
 		}
 		{
+			id: "7EABFB9EC82043D8"
+			x: 10.0d
+			y: 3.0d
+			icon: {
+				id: "silentgear:sinew_fiber"
+				count: 1
+			}
+			optional: true
+			dependencies: [
+				"569763008F19B86D"
+			]
+			tasks: [
+				{
+					id: "8BE5A0C89A13897C"
+					type: "item"
+					item: {
+						id: "silentgear:sinew_fiber"
+						count: 1
+					}
+					count: 3
+				}
+			]
+			rewards: [
+				{
+					id: "9BCB7F7A99701BD7"
+					type: "item"
+					item: {
+						id: "minecraft:cooked_beef"
+						count: 1
+					}
+					count: 8
+				}
+			]
+		}
+		{
+			id: "A0E0334D644B4B2E"
+			x: 10.0d
+			y: 5.0d
+			icon: {
+				id: "silentgear:flax_string"
+				count: 1
+			}
+			optional: true
+			dependencies: [
+				"569763008F19B86D"
+			]
+			tasks: [
+				{
+					id: "883070396291DFC0"
+					type: "item"
+					item: {
+						id: "silentgear:flax_string"
+						count: 1
+					}
+					count: 4
+				}
+			]
+			rewards: [
+				{
+					id: "89EF4876555DDF22"
+					type: "item"
+					item: {
+						id: "minecraft:bone_meal"
+						count: 1
+					}
+					count: 16
+				}
+			]
+		}
+		{
 			id: "405367F09EC096FA"
-			x: 9.5d
-			y: 6.5d
+			x: 7.5d
+			y: 6.0d
 			icon: {
 				id: "silentgear:grip"
 				count: 1
@@ -552,8 +695,8 @@
 		}
 		{
 			id: "8A8331C8B4E4F190"
-			x: 11.5d
-			y: 6.5d
+			x: 7.5d
+			y: 8.0d
 			icon: {
 				id: "silentgear:tip"
 				count: 1
@@ -590,110 +733,9 @@
 			]
 		}
 		{
-			id: "AA4F4A2424EF0F38"
-			x: 0.0d
-			y: 8.6d
-			icon: {
-				id: "silentgear:iron_rod"
-				count: 1
-			}
-			optional: true
-			dependencies: [
-				"F3C1BF990844FCC7"
-			]
-			tasks: [
-				{
-					id: "65EE61110019AFC3"
-					type: "item"
-					item: {
-						id: "silentgear:iron_rod"
-						count: 1
-					}
-					count: 4
-				}
-			]
-			rewards: [
-				{
-					id: "6F033749BC49D265"
-					type: "xp_levels"
-					xp_levels: 2
-				}
-			]
-		}
-		{
-			id: "7EABFB9EC82043D8"
-			x: 7.0d
-			y: 8.6d
-			icon: {
-				id: "silentgear:sinew_fiber"
-				count: 1
-			}
-			optional: true
-			dependencies: [
-				"569763008F19B86D"
-			]
-			tasks: [
-				{
-					id: "8BE5A0C89A13897C"
-					type: "item"
-					item: {
-						id: "silentgear:sinew_fiber"
-						count: 1
-					}
-					count: 3
-				}
-			]
-			rewards: [
-				{
-					id: "9BCB7F7A99701BD7"
-					type: "item"
-					item: {
-						id: "minecraft:cooked_beef"
-						count: 1
-					}
-					count: 8
-				}
-			]
-		}
-		{
-			id: "A0E0334D644B4B2E"
-			x: 8.8d
-			y: 8.6d
-			icon: {
-				id: "silentgear:flax_string"
-				count: 1
-			}
-			optional: true
-			dependencies: [
-				"569763008F19B86D"
-			]
-			tasks: [
-				{
-					id: "883070396291DFC0"
-					type: "item"
-					item: {
-						id: "silentgear:flax_string"
-						count: 1
-					}
-					count: 4
-				}
-			]
-			rewards: [
-				{
-					id: "89EF4876555DDF22"
-					type: "item"
-					item: {
-						id: "minecraft:bone_meal"
-						count: 1
-					}
-					count: 16
-				}
-			]
-		}
-		{
 			id: "1DBFA830E320D2D7"
-			x: 11.5d
-			y: 8.6d
+			x: 10.0d
+			y: 8.0d
 			icon: {
 				id: "minecraft:writable_book"
 				count: 1
@@ -717,6 +759,77 @@
 			]
 		}
 		{
+			id: "1D15A75BAEEEFEC4"
+			x: 2.5d
+			y: 9.5d
+			icon: {
+				id: "silentgear:crude_mixer"
+				count: 1
+			}
+			dependencies: [
+				"C8C1AE0C047671EE"
+				"A0E0334D644B4B2E"
+			]
+			tasks: [
+				{
+					id: "348E2309049A41CF"
+					type: "item"
+					item: {
+						id: "silentgear:crude_mixer"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "A8CB626BB8B44E92"
+					type: "item"
+					item: {
+						id: "minecraft:stone"
+						count: 1
+					}
+					count: 16
+				}
+				{
+					id: "313A5B8D1F89776F"
+					type: "xp_levels"
+					xp_levels: 4
+				}
+			]
+		}
+		{
+			id: "3A055E359602E3DD"
+			x: 5.0d
+			y: 9.5d
+			icon: {
+				id: "silentgear:crude_alloy"
+				count: 1
+			}
+			optional: true
+			dependencies: [
+				"1D15A75BAEEEFEC4"
+			]
+			tasks: [
+				{
+					id: "86E84F416B4C4F63"
+					type: "item"
+					item: {
+						id: "silentgear:crude_alloy"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "213227E4F28C45C9"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+		}
+		{
 			id: "C96E8BE753E8080E"
 			x: 0.0d
 			y: 13.0d
@@ -726,6 +839,9 @@
 			}
 			size: 1.5d
 			shape: "square"
+			dependencies: [
+				"8CB746E24B79A224"
+			]
 			tasks: [
 				{
 					id: "F9E4DC0632FA01C8"
@@ -752,7 +868,7 @@
 		{
 			id: "E59F51EC3C4E4C86"
 			x: 2.5d
-			y: 13.0d
+			y: 12.0d
 			icon: {
 				id: "silentgear:shovel"
 				count: 1
@@ -775,20 +891,20 @@
 				{
 					id: "75022F16A4EB114B"
 					type: "xp_levels"
-					xp_levels: 3
+					xp_levels: 2
 				}
 			]
 		}
 		{
 			id: "1D998758FB2F7CBE"
-			x: 4.5d
-			y: 13.0d
+			x: 2.5d
+			y: 14.0d
 			icon: {
 				id: "silentgear:sword"
 				count: 1
 			}
 			dependencies: [
-				"E59F51EC3C4E4C86"
+				"C96E8BE753E8080E"
 			]
 			tasks: [
 				{
@@ -815,15 +931,47 @@
 			]
 		}
 		{
+			id: "C30E48223DAFD0CA"
+			x: 5.0d
+			y: 14.0d
+			icon: {
+				id: "silentgear:knife"
+				count: 1
+			}
+			optional: true
+			dependencies: [
+				"1D998758FB2F7CBE"
+			]
+			tasks: [
+				{
+					id: "3DA35F197A0E1D6B"
+					type: "item"
+					item: {
+						id: "silentgear:knife"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "37A207CA7811B88C"
+					type: "xp_levels"
+					xp_levels: 2
+				}
+			]
+		}
+		{
 			id: "166777516EC1EE91"
-			x: 6.5d
-			y: 13.0d
+			x: 5.0d
+			y: 12.0d
 			icon: {
 				id: "silentgear:hammer"
 				count: 1
 			}
+			size: 1.5d
 			dependencies: [
-				"1D998758FB2F7CBE"
+				"E59F51EC3C4E4C86"
 			]
 			tasks: [
 				{
@@ -854,9 +1002,187 @@
 			]
 		}
 		{
+			id: "556C9871CA44A8BE"
+			x: 7.5d
+			y: 12.0d
+			icon: {
+				id: "silentgear:excavator"
+				count: 1
+			}
+			optional: true
+			dependencies: [
+				"166777516EC1EE91"
+			]
+			tasks: [
+				{
+					id: "EEEAC91A44D3A949"
+					type: "item"
+					item: {
+						id: "silentgear:excavator"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "85A16F7EA7FE5C3B"
+					type: "xp_levels"
+					xp_levels: 4
+				}
+			]
+		}
+		{
+			id: "D6F9B41791872AB2"
+			x: 10.0d
+			y: 12.0d
+			icon: {
+				id: "silentgear:saw"
+				count: 1
+			}
+			optional: true
+			dependencies: [
+				"166777516EC1EE91"
+			]
+			tasks: [
+				{
+					id: "28AF015AD3E1DE95"
+					type: "item"
+					item: {
+						id: "silentgear:saw"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "E9F26047AF5B1AEE"
+					type: "item"
+					item: {
+						id: "minecraft:oak_sapling"
+						count: 1
+					}
+					count: 8
+				}
+				{
+					id: "5DA166D258F2F926"
+					type: "xp_levels"
+					xp_levels: 4
+				}
+			]
+		}
+		{
+			id: "75395000DC1488E3"
+			x: 7.5d
+			y: 14.0d
+			icon: {
+				id: "silentgear:paxel"
+				count: 1
+			}
+			optional: true
+			dependencies: [
+				"166777516EC1EE91"
+			]
+			tasks: [
+				{
+					id: "D7A426000C801082"
+					type: "item"
+					item: {
+						id: "silentgear:paxel"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "3A145ED7C06EA2DD"
+					type: "xp_levels"
+					xp_levels: 4
+				}
+			]
+		}
+		{
+			id: "60D99C6145C42CE9"
+			x: 10.0d
+			y: 14.0d
+			icon: {
+				id: "silentgear:sickle"
+				count: 1
+			}
+			optional: true
+			dependencies: [
+				"75395000DC1488E3"
+			]
+			tasks: [
+				{
+					id: "30F161136BDF1F97"
+					type: "item"
+					item: {
+						id: "silentgear:sickle"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "FF8947839848F4F9"
+					type: "item"
+					item: {
+						id: "minecraft:wheat_seeds"
+						count: 1
+					}
+					count: 16
+				}
+			]
+		}
+		{
+			id: "4C7EBE075FC52CE4"
+			x: 12.5d
+			y: 13.0d
+			icon: {
+				id: "silentgear:prospector_hammer"
+				count: 1
+			}
+			optional: true
+			dependencies: [
+				"D6F9B41791872AB2"
+				"60D99C6145C42CE9"
+			]
+			tasks: [
+				{
+					id: "868664E3F6890719"
+					type: "item"
+					item: {
+						id: "silentgear:prospector_hammer"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "1B263115C1D182AB"
+					type: "item"
+					item: {
+						id: "minecraft:raw_iron"
+						count: 1
+					}
+					count: 8
+				}
+				{
+					id: "56A4B0E7B482B974"
+					type: "xp_levels"
+					xp_levels: 4
+				}
+			]
+		}
+		{
 			id: "A6FD5D2A6517A395"
-			x: 2.5d
-			y: 15.0d
+			x: 0.0d
+			y: 16.0d
 			icon: {
 				id: "silentgear:helmet"
 				count: 1
@@ -889,11 +1215,11 @@
 			]
 		}
 		{
-			id: "C30E48223DAFD0CA"
-			x: 4.5d
-			y: 15.0d
+			id: "CCC5E60D27AA22FA"
+			x: 2.5d
+			y: 16.0d
 			icon: {
-				id: "silentgear:knife"
+				id: "silentgear:bow"
 				count: 1
 			}
 			optional: true
@@ -902,10 +1228,10 @@
 			]
 			tasks: [
 				{
-					id: "3DA35F197A0E1D6B"
+					id: "2BF46C1D24248C0C"
 					type: "item"
 					item: {
-						id: "silentgear:knife"
+						id: "silentgear:bow"
 						count: 1
 					}
 					count: 1
@@ -913,41 +1239,44 @@
 			]
 			rewards: [
 				{
-					id: "37A207CA7811B88C"
-					type: "xp_levels"
-					xp_levels: 3
+					id: "05727CECBF56EA4C"
+					type: "item"
+					item: {
+						id: "minecraft:arrow"
+						count: 1
+					}
+					count: 32
 				}
 			]
 		}
 		{
-			id: "60D99C6145C42CE9"
-			x: 6.5d
-			y: 15.0d
+			id: "6842B08C47819192"
+			x: 0.0d
+			y: 20.0d
 			icon: {
-				id: "silentgear:sickle"
+				id: "silentgear:upgrade_base"
 				count: 1
 			}
-			optional: true
 			dependencies: [
-				"166777516EC1EE91"
+				"8A8331C8B4E4F190"
 			]
 			tasks: [
 				{
-					id: "30F161136BDF1F97"
+					id: "82B1E0042BA947AD"
 					type: "item"
 					item: {
-						id: "silentgear:sickle"
+						id: "silentgear:upgrade_base"
 						count: 1
 					}
-					count: 1
+					count: 4
 				}
 			]
 			rewards: [
 				{
-					id: "FF8947839848F4F9"
+					id: "214FE87CE0EA161A"
 					type: "item"
 					item: {
-						id: "minecraft:wheat_seeds"
+						id: "minecraft:paper"
 						count: 1
 					}
 					count: 16
@@ -955,23 +1284,23 @@
 			]
 		}
 		{
-			id: "75395000DC1488E3"
-			x: 8.5d
-			y: 15.0d
+			id: "C862EBE6C610E4BB"
+			x: 2.5d
+			y: 20.0d
 			icon: {
-				id: "silentgear:paxel"
+				id: "silentgear:advanced_upgrade_base"
 				count: 1
 			}
 			optional: true
 			dependencies: [
-				"166777516EC1EE91"
+				"6842B08C47819192"
 			]
 			tasks: [
 				{
-					id: "D7A426000C801082"
+					id: "8F4F38772C0029BB"
 					type: "item"
 					item: {
-						id: "silentgear:paxel"
+						id: "silentgear:advanced_upgrade_base"
 						count: 1
 					}
 					count: 1
@@ -979,22 +1308,34 @@
 			]
 			rewards: [
 				{
-					id: "3A145ED7C06EA2DD"
+					id: "AF41EB0D42C59BEC"
+					type: "item"
+					item: {
+						id: "minecraft:gold_nugget"
+						count: 1
+					}
+					count: 9
+				}
+				{
+					id: "4B454D708889EC27"
 					type: "xp_levels"
-					xp_levels: 5
+					xp_levels: 3
 				}
 			]
 		}
 		{
 			id: "53BA9FC9153E9BD5"
 			x: 0.0d
-			y: 19.5d
+			y: 24.0d
 			icon: {
-				id: "silentgear:crude_repair_kit"
+				id: "silentgear:very_crude_repair_kit"
 				count: 1
 			}
 			size: 1.5d
 			shape: "square"
+			dependencies: [
+				"8CB746E24B79A224"
+			]
 			tasks: [
 				{
 					id: "7EF9F7BCE225FDAE"
@@ -1012,13 +1353,14 @@
 		{
 			id: "59CD1C187DA5DB28"
 			x: 2.5d
-			y: 19.5d
+			y: 24.0d
 			icon: {
 				id: "silentgear:crude_repair_kit"
 				count: 1
 			}
 			dependencies: [
 				"53BA9FC9153E9BD5"
+				"0AB7B71E7A9DBD86"
 			]
 			tasks: [
 				{
@@ -1049,9 +1391,49 @@
 			]
 		}
 		{
+			id: "637DDD3E3F186391"
+			x: 5.0d
+			y: 24.0d
+			icon: {
+				id: "silentgear:sturdy_repair_kit"
+				count: 1
+			}
+			optional: true
+			dependencies: [
+				"59CD1C187DA5DB28"
+			]
+			tasks: [
+				{
+					id: "179B325D3995C5DC"
+					type: "item"
+					item: {
+						id: "silentgear:sturdy_repair_kit"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "05D792E7F0B13D65"
+					type: "item"
+					item: {
+						id: "minecraft:iron_ingot"
+						count: 1
+					}
+					count: 12
+				}
+				{
+					id: "1EFB4B25648BFFA3"
+					type: "xp_levels"
+					xp_levels: 4
+				}
+			]
+		}
+		{
 			id: "55991B28EA0CB93E"
-			x: 4.5d
-			y: 19.5d
+			x: 2.5d
+			y: 26.0d
 			icon: {
 				id: "silentgear:binding"
 				count: 1
@@ -1075,8 +1457,8 @@
 		}
 		{
 			id: "6D82B0CD4091CC36"
-			x: 6.5d
-			y: 19.5d
+			x: 5.0d
+			y: 26.0d
 			icon: {
 				id: "silentgear:mod_kit"
 				count: 1
@@ -1105,40 +1487,240 @@
 			]
 		}
 		{
-			id: "637DDD3E3F186391"
-			x: 2.5d
-			y: 21.5d
+			id: "ABCD51D154767897"
+			x: 16.0d
+			y: -1.0d
 			icon: {
-				id: "silentgear:sturdy_repair_kit"
+				id: "minecraft:cobblestone"
 				count: 1
 			}
-			optional: true
+			shape: "square"
 			dependencies: [
-				"59CD1C187DA5DB28"
+				"74D5258ACC4A915E"
 			]
 			tasks: [
 				{
-					id: "179B325D3995C5DC"
+					id: "3F20B42D50CB0216"
 					type: "item"
 					item: {
-						id: "silentgear:sturdy_repair_kit"
+						id: "minecraft:cobblestone"
 						count: 1
 					}
-					count: 1
+					count: 3
 				}
 			]
 			rewards: [
 				{
-					id: "05D792E7F0B13D65"
+					id: "14C0F63A16EC724F"
 					type: "xp_levels"
-					xp_levels: 3
+					xp_levels: 2
+				}
+			]
+		}
+		{
+			id: "FCC312C9B78D7436"
+			x: 16.0d
+			y: 0.5d
+			icon: {
+				id: "minecraft:flint"
+				count: 1
+			}
+			shape: "square"
+			dependencies: [
+				"ABCD51D154767897"
+			]
+			tasks: [
+				{
+					id: "9354F1FD7112769E"
+					type: "item"
+					item: {
+						id: "minecraft:flint"
+						count: 1
+					}
+					count: 3
+				}
+			]
+			rewards: [
+				{
+					id: "EC11BD20C4B7AEC9"
+					type: "xp_levels"
+					xp_levels: 2
+				}
+			]
+		}
+		{
+			id: "E0154E2A9EFDAEFA"
+			x: 16.0d
+			y: 2.0d
+			icon: {
+				id: "minecraft:copper_ingot"
+				count: 1
+			}
+			shape: "square"
+			dependencies: [
+				"FCC312C9B78D7436"
+			]
+			tasks: [
+				{
+					id: "B7E4D99255C02025"
+					type: "item"
+					item: {
+						id: "minecraft:copper_ingot"
+						count: 1
+					}
+					count: 3
+				}
+			]
+			rewards: [
+				{
+					id: "A1E23144B11619C0"
+					type: "xp_levels"
+					xp_levels: 2
+				}
+			]
+		}
+		{
+			id: "40625DB768C232D9"
+			x: 16.0d
+			y: 3.5d
+			icon: {
+				id: "minecraft:iron_ingot"
+				count: 1
+			}
+			shape: "square"
+			dependencies: [
+				"E0154E2A9EFDAEFA"
+			]
+			tasks: [
+				{
+					id: "8A2CA19210ADCA43"
+					type: "item"
+					item: {
+						id: "minecraft:iron_ingot"
+						count: 1
+					}
+					count: 3
+				}
+			]
+			rewards: [
+				{
+					id: "540BB15F1FA776E7"
+					type: "item"
+					item: {
+						id: "minecraft:iron_ingot"
+						count: 1
+					}
+					count: 3
+				}
+				{
+					id: "36270979FA1EF350"
+					type: "xp_levels"
+					xp_levels: 2
+				}
+			]
+		}
+		{
+			id: "11FB5CD917828F41"
+			x: 16.0d
+			y: 5.0d
+			icon: {
+				id: "minecraft:gold_ingot"
+				count: 1
+			}
+			shape: "square"
+			dependencies: [
+				"40625DB768C232D9"
+			]
+			tasks: [
+				{
+					id: "A8CC2F5B0F07A9A8"
+					type: "item"
+					item: {
+						id: "minecraft:gold_ingot"
+						count: 1
+					}
+					count: 3
+				}
+			]
+			rewards: [
+				{
+					id: "4B7D0C1EB9AEC70A"
+					type: "xp_levels"
+					xp_levels: 2
+				}
+			]
+		}
+		{
+			id: "705CEFE3C09F8743"
+			x: 16.0d
+			y: 6.5d
+			icon: {
+				id: "minecraft:emerald"
+				count: 1
+			}
+			shape: "square"
+			dependencies: [
+				"11FB5CD917828F41"
+			]
+			tasks: [
+				{
+					id: "8B7DE3ADD4B470A7"
+					type: "item"
+					item: {
+						id: "minecraft:emerald"
+						count: 1
+					}
+					count: 3
+				}
+			]
+			rewards: [
+				{
+					id: "085A83EAE1B8EAA3"
+					type: "xp_levels"
+					xp_levels: 2
+				}
+			]
+		}
+		{
+			id: "499FDC8D45DCD789"
+			x: 16.0d
+			y: 8.0d
+			icon: {
+				id: "minecraft:diamond"
+				count: 1
+			}
+			shape: "square"
+			dependencies: [
+				"705CEFE3C09F8743"
+			]
+			tasks: [
+				{
+					id: "9A030D32C6CC8425"
+					type: "item"
+					item: {
+						id: "minecraft:diamond"
+						count: 1
+					}
+					count: 3
+				}
+			]
+			rewards: [
+				{
+					id: "C2D0CAB8FBC7DAEF"
+					type: "loot"
+					table_id: "870211AF0E412C54"
+				}
+				{
+					id: "36F407DFF8DDEBE5"
+					type: "xp_levels"
+					xp_levels: 4
 				}
 			]
 		}
 		{
 			id: "C82BE2CA0AF0354A"
-			x: 16.0d
-			y: 10.0d
+			x: 19.5d
+			y: 3.5d
 			icon: {
 				id: "silentgear:hammer"
 				count: 1
@@ -1148,7 +1730,8 @@
 			dependencies: [
 				"8A8331C8B4E4F190"
 				"166777516EC1EE91"
-				"55991B28EA0CB93E"
+				"59CD1C187DA5DB28"
+				"499FDC8D45DCD789"
 			]
 			tasks: [
 				{
@@ -1204,9 +1787,9 @@
 		{
 			id: "396842F2E1B785BA"
 			x: 16.0d
-			y: 13.5d
+			y: 11.5d
 			icon: {
-				id: "minecraft:netherrack"
+				id: "silentgear:raw_crimson_iron"
 				count: 1
 			}
 			optional: true
@@ -1227,13 +1810,248 @@
 				}
 			]
 		}
+		{
+			id: "B5A8F6E3D3A4098A"
+			x: 18.5d
+			y: 11.5d
+			icon: {
+				id: "silentgear:blaze_gold_dust"
+				count: 1
+			}
+			optional: true
+			dependencies: [
+				"396842F2E1B785BA"
+			]
+			tasks: [
+				{
+					id: "6F6AB05123CBA6A4"
+					type: "checkmark"
+				}
+			]
+			rewards: [
+				{
+					id: "244199F3E76FFBCF"
+					type: "xp_levels"
+					xp_levels: 3
+				}
+			]
+		}
+		{
+			id: "3C6B8A361409ED3A"
+			x: 21.0d
+			y: 11.5d
+			icon: {
+				id: "minecraft:iron_block"
+				count: 1
+			}
+			optional: true
+			dependencies: [
+				"396842F2E1B785BA"
+			]
+			tasks: [
+				{
+					id: "91F4368BFB54A243"
+					type: "checkmark"
+				}
+			]
+			rewards: [
+				{
+					id: "BE47F7C557B2F31C"
+					type: "xp_levels"
+					xp_levels: 3
+				}
+			]
+		}
+		{
+			id: "66B2A47FC48E97A9"
+			x: 16.0d
+			y: 13.5d
+			icon: {
+				id: "silentgear:crimson_repair_kit"
+				count: 1
+			}
+			optional: true
+			dependencies: [
+				"396842F2E1B785BA"
+			]
+			tasks: [
+				{
+					id: "8FD1257A6EADC836"
+					type: "checkmark"
+				}
+			]
+			rewards: [
+				{
+					id: "1775C50CAD914B49"
+					type: "xp_levels"
+					xp_levels: 3
+				}
+			]
+		}
+		{
+			id: "D29F1279CD6A9918"
+			x: 18.5d
+			y: 13.5d
+			icon: {
+				id: "silentgear:alloy_forge"
+				count: 1
+			}
+			optional: true
+			dependencies: [
+				"66B2A47FC48E97A9"
+			]
+			tasks: [
+				{
+					id: "14B9235288312443"
+					type: "checkmark"
+				}
+			]
+			rewards: [
+				{
+					id: "ACC3C4A0E233AEDF"
+					type: "xp_levels"
+					xp_levels: 3
+				}
+			]
+		}
+		{
+			id: "602A0AE6AA12A45C"
+			x: 21.0d
+			y: 13.5d
+			icon: {
+				id: "silentgear:salvager"
+				count: 1
+			}
+			optional: true
+			dependencies: [
+				"396842F2E1B785BA"
+			]
+			tasks: [
+				{
+					id: "491EC38D1B5A7785"
+					type: "checkmark"
+				}
+			]
+			rewards: [
+				{
+					id: "C9430AC2CC7CB1FD"
+					type: "xp_levels"
+					xp_levels: 3
+				}
+			]
+		}
+		{
+			id: "859E2E5E439C5298"
+			x: 16.0d
+			y: 15.5d
+			icon: {
+				id: "silentgear:material_grader"
+				count: 1
+			}
+			optional: true
+			dependencies: [
+				"B5A8F6E3D3A4098A"
+			]
+			tasks: [
+				{
+					id: "A2C884B0724D175F"
+					type: "checkmark"
+				}
+			]
+			rewards: [
+				{
+					id: "8D98B9BBAE1561CC"
+					type: "xp_levels"
+					xp_levels: 3
+				}
+			]
+		}
+		{
+			id: "3B049DD65F08B03B"
+			x: 18.5d
+			y: 15.5d
+			icon: {
+				id: "silentgear:starlight_charger"
+				count: 1
+			}
+			optional: true
+			dependencies: [
+				"B5A8F6E3D3A4098A"
+			]
+			tasks: [
+				{
+					id: "B52B6BB137FECEFE"
+					type: "checkmark"
+				}
+			]
+			rewards: [
+				{
+					id: "DB3DE0418874C41D"
+					type: "xp_levels"
+					xp_levels: 3
+				}
+			]
+		}
+		{
+			id: "783BC0A0E2E3D785"
+			x: 16.0d
+			y: 17.5d
+			icon: {
+				id: "silentgear:raw_azure_silver"
+				count: 1
+			}
+			optional: true
+			dependencies: [
+				"3B049DD65F08B03B"
+			]
+			tasks: [
+				{
+					id: "7DF4F92074D7F0D5"
+					type: "checkmark"
+				}
+			]
+			rewards: [
+				{
+					id: "F8AB9D16C0B0B8F0"
+					type: "xp_levels"
+					xp_levels: 3
+				}
+			]
+		}
+		{
+			id: "F4A2AAACA482D4A1"
+			x: 18.5d
+			y: 17.5d
+			icon: {
+				id: "minecraft:purple_dye"
+				count: 1
+			}
+			optional: true
+			dependencies: [
+				"783BC0A0E2E3D785"
+				"D29F1279CD6A9918"
+			]
+			tasks: [
+				{
+					id: "93FB90E9DF42C7E2"
+					type: "checkmark"
+				}
+			]
+			rewards: [
+				{
+					id: "447EB6452CE90FBC"
+					type: "xp_levels"
+					xp_levels: 3
+				}
+			]
+		}
 	]
 	images: [
 		{
 			id: "EA84245A938CE4E9"
 			image: "kronwerke:textures/quests/silent_gear/title.png"
-			x: 4.4d
-			y: -4.0d
+			x: 5.0d
+			y: -4.2d
 			width: 7.89d
 			height: 1.8d
 			rotation: 0.0d
@@ -1242,8 +2060,8 @@
 		{
 			id: "3EFAEEE2081F616C"
 			image: "kronwerke:textures/quests/silent_gear/first_steps.png"
-			x: 1.4d
-			y: -1.85d
+			x: 2.5d
+			y: -2.4d
 			width: 4.82d
 			height: 0.9d
 			rotation: 0.0d
@@ -1252,8 +2070,8 @@
 		{
 			id: "634B628BC60E7AD8"
 			image: "kronwerke:textures/quests/silent_gear/templates.png"
-			x: 9.6d
-			y: -1.85d
+			x: 10.5d
+			y: -2.4d
 			width: 3.17d
 			height: 0.9d
 			rotation: 0.0d
@@ -1262,9 +2080,9 @@
 		{
 			id: "106F01FC8A439084"
 			image: "kronwerke:textures/quests/silent_gear/parts.png"
-			x: 0.42d
-			y: 4.6d
-			width: 2.84d
+			x: 3.5d
+			y: 2.8d
+			width: 5.11d
 			height: 0.9d
 			rotation: 0.0d
 			order: 1
@@ -1272,8 +2090,8 @@
 		{
 			id: "71EC51597FCF864B"
 			image: "kronwerke:textures/quests/silent_gear/tools.png"
-			x: 0.83d
-			y: 11.1d
+			x: 5.0d
+			y: 10.9d
 			width: 3.66d
 			height: 0.9d
 			rotation: 0.0d
@@ -1281,20 +2099,40 @@
 		}
 		{
 			id: "CE6ED4985701626F"
-			image: "kronwerke:textures/quests/silent_gear/repair.png"
-			x: 2.54d
-			y: 17.6d
-			width: 7.08d
+			image: "kronwerke:textures/quests/silent_gear/upgrades.png"
+			x: 2.5d
+			y: 18.0d
+			width: 3.19d
 			height: 0.9d
 			rotation: 0.0d
 			order: 1
 		}
 		{
 			id: "B73D60EF4D252E62"
-			image: "kronwerke:textures/quests/silent_gear/goal.png"
+			image: "kronwerke:textures/quests/silent_gear/repair.png"
+			x: 2.5d
+			y: 22.6d
+			width: 7.08d
+			height: 0.9d
+			rotation: 0.0d
+			order: 1
+		}
+		{
+			id: "DF6F66572832C7C7"
+			image: "kronwerke:textures/quests/silent_gear/tiers.png"
 			x: 16.0d
-			y: 7.6d
-			width: 1.39d
+			y: -2.4d
+			width: 5.2d
+			height: 0.9d
+			rotation: 0.0d
+			order: 1
+		}
+		{
+			id: "0645F75D5EE9D213"
+			image: "kronwerke:textures/quests/silent_gear/later.png"
+			x: 18.5d
+			y: 10.0d
+			width: 3.45d
 			height: 0.9d
 			rotation: 0.0d
 			order: 1

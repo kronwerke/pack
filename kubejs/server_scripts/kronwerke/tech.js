@@ -13,6 +13,10 @@ ServerEvents.recipes(event => {
     event.remove({ id: `oritech:atomicforge/compat/mekanism/${tier}_control_circuit` })
   }
 
+  // The Oritech foundry makes netherite from one gold and one scrap, a quarter of the
+  // vanilla price. Netherite stays at the smithing table.
+  event.remove({ id: 'oritech:foundry/alloy/netherite' })
+
   // Basic circuit: an electron tube from Create infused with redstone.
   event.custom({
     type: 'mekanism:metallurgic_infusing',

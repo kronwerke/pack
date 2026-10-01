@@ -13,7 +13,7 @@ quests = [
     quest("welcome", 0, 1, "&5&lMekanism",
           subtitle="Aus einem Erz wird eine ganze Fabrik.",
           description=[
-              "Willkommen bei &5Mekanism&r, dem großen Technikmod von Kronwerke. Mekanism zerlegt Erze in ihre Bestandteile, legiert Metalle mit Kohlenstoff und Redstone und holt aus jedem Erzbrocken mehr heraus, als ein Ofen es je könnte.",
+              "&5Mekanism&r ist der große Technikmod von Kronwerke. Mekanism zerlegt Erze in ihre Bestandteile, legiert Metalle mit Kohlenstoff und Redstone und holt aus jedem Erzbrocken mehr heraus, als ein Ofen es je könnte.",
               "",
               "Alles beginnt mit einem einzigen Erz: &6Osmium&r. Es steckt in fast jeder Maschine, jedem Kabel und jedem Schaltkreis. Die erste Maschine ist die &6Metallurgische Infusionsanlage&r, und auf Kronwerke braucht sie ein wenig Magie.",
               "",

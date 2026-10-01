@@ -65,6 +65,7 @@ The id of each new recipe is `kronwerke:<family>/<name>`. "Remove all" means eve
 | Draconic energy core stabilizer | A Gaia spirit. | The dragon's power needs Gaia. |
 | Mekanism laser focus matrix | Ars Nouveau source gem block. | Fusion needs magic to start. |
 | Awakened draconium (fusion) | Gaia spirit ingots in the injectors. | The finale needs both. |
+| Oritech foundry netherite | Removed. | One gold and one scrap made an ingot, a quarter of the vanilla price. |
 
 ### Magic
 

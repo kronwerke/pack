@@ -19,7 +19,7 @@ quests = [
     quest("welcome", 0, 0, "&dArs Nouveau",
           subtitle="Zauber, die du selbst zusammensetzt.",
           description=[
-              "Willkommen bei &dArs Nouveau&r! Hier lernst du keine fertigen Zauber, sondern baust sie dir selbst aus &dGlyphen&r zusammen, wie Wörter in einem Satz. Ein Zauber kann eine Spitzhacke ersetzen, eine Fackel, eine Brücke oder ein Schwert.",
+              "In &dArs Nouveau&r lernst du keine fertigen Zauber, sondern baust sie dir selbst aus &dGlyphen&r zusammen, wie Wörter in einem Satz. Ein Zauber kann eine Spitzhacke ersetzen, eine Fackel, eine Brücke oder ein Schwert.",
               "",
               "Die Energie der Mod heißt &dQuelle&r (Source). Mit ihr laufen alle Ars-Blöcke, und aus ihr entstehen die &6Quelljuwelen&r (Source Gems). Genau die braucht der Server: &e800 Quelljuwelen&r und &e12 Quellschlusssteine&r sind die magische Hälfte des Ziels von &6Stufe 1&r am Obelisken.",
               "",

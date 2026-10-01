@@ -51,8 +51,9 @@ RULES = [
     (3, [
         "re:^mekanism:advanced_", "re:^mekanismtools:refined_obsidian_",
         "mekanism:digital_miner", "mekanism:teleporter", "mekanism:portable_teleporter", "mekanism:teleportation_core",
-        "mekanism:quantum_entangloporter", "mekanism:chemical_injection_chamber", "mekanism:purification_chamber",
-        "mekanism:chemical_dissolution_chamber", "mekanism:chemical_washer", "mekanism:chemical_crystallizer",
+        "mekanism:purification_chamber",
+        # the teleporter, the digital miner and the robit all need atomic alloy, so it opens here
+        "mekanism:alloy_atomic", "mekanism:robit",
         "mekanism:antiprotonic_nucleosynthesizer", "mekanism:isotopic_centrifuge", "mekanism:nutritional_liquifier",
         "mekanism:modification_station", "re:^mekanism:module_",
         "mekanism:hdpe_sheet", "mekanism:hdpe_rod", "mekanism:hdpe_stick", "mekanism:hdpe_elytra",
@@ -64,7 +65,10 @@ RULES = [
     ]),
     (4, [
         "re:^mekanism:(elite|ultimate)_", "re:^mekanism:qio_", "mekanism:portable_qio_dashboard",
-        "mekanism:alloy_atomic", "mekanism:laser", "mekanism:laser_amplifier", "mekanism:laser_tractor_beam",
+        "mekanism:laser", "mekanism:laser_amplifier", "mekanism:laser_tractor_beam",
+        # the 4x and 5x ore lines and the entangloporter need elite or ultimate circuits anyway
+        "mekanism:quantum_entangloporter", "mekanism:chemical_injection_chamber",
+        "mekanism:chemical_dissolution_chamber", "mekanism:chemical_washer", "mekanism:chemical_crystallizer",
         "mekanism:meka_tool", "re:^mekanism:mekasuit_", "mekanism:elite_control_circuit",
         "re:^mekanism:module_", "re:^mekanismgenerators:fusion_", "mekanismgenerators:laser_focus_matrix", "mekanismgenerators:hohlraum",
         "mekanismgenerators:reactor_glass",

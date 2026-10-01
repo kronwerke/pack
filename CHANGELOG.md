@@ -72,3 +72,11 @@ First assembly. 222 mods on NeoForge 21.1.252, boots on a dedicated server. No q
 - The server console is much quieter: from 721 errors and 283 warnings at start to 5 and 240, by fixing the broken data of other mods rather than hiding it. Details in `docs/CONSOLE.md`.
 - The quest book follows the new recipes and stages, with a Power Grid line and quests for the milestones.
 - Neo Origins offers Kronwerke's own choices: nine origins (Herkunft) and seven roles (Rolle) instead of the generic forty, each with a real downside and none that flies or skips a stage (`docs/ORIGINS.md`). The kill counting evolution is off.
+
+## Unreleased
+
+- The quest book for stage 3: fifteen chapters, about 280 quests. Applied Energistics 2, Logistics (Integrated Dynamics, XNet, LaserIO, Compact Machines, Mining Gadgets), Mekanism advanced, Powah, Ender IO, Industrial Foregoing, Oritech, Immersive Engineering heavy industry, Botania Alfheim, Ars Nouveau master, Occultism Afrit and Marid, Theurgy, Eidolon, Malum and the Undergarden. Stage 3 crates `s3_common`, `s3_uncommon`, `s3_rare`.
+- Atomic alloy and the robit open in stage 3, so the teleporter and the digital miner, which the design promises for stage 3, can be built there. The quantum entangloporter and the 4x and 5x ore machines move to stage 4, where the elite and ultimate circuits they need open.
+- Compact Machines can be crafted: its room templates and machine recipes ship in a built-in datapack that new worlds leave disabled, so the pack carries them in `kubejs/data/compactmachines/`.
+- The Oritech foundry no longer makes netherite from one gold and one scrap.
+- Quest texts: the stage 3 goal in the Occultism chapter names afrit essence, as the goal does; four chapter openings read less like a brochure.

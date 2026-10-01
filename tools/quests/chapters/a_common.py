@@ -108,3 +108,50 @@ loot_table("s2_rare", "Terrastahlkiste", stage=2, entries=[
     ("create:blaze_cake", 4, 5, 4),
     ("waystones:waystone", 1, 4),
 ])
+
+# ---- Stage 3: Stahlwerk ---------------------------------------------------
+
+loot_table("s3_common", "Werkskiste", stage=3, entries=[
+    ("mekanism:ingot_steel", 16, 10, 16),
+    ("mekanism:alloy_infused", 8, 8, 8),
+    ("ae2:certus_quartz_crystal", 16, 8, 16),
+    ("ae2:charged_certus_quartz_crystal", 4, 6, 4),
+    ("ae2:fluix_crystal", 8, 6, 8),
+    ("create:brass_ingot", 16, 6, 16),
+    ("botania:manasteel_ingot", 8, 6, 8),
+    ("enderio:conductive_alloy_ingot", 8, 6, 8),
+    ("industrialforegoing:plastic", 8, 5, 8),
+    ("minecraft:ender_pearl", 4, 5, 4),
+    ("minecraft:experience_bottle", 16, 5, 16),
+    ("undergarden:cloggrum_ingot", 4, 4, 4),
+])
+
+loot_table("s3_uncommon", "Elementiumkiste", stage=3, entries=[
+    ("mekanism:alloy_reinforced", 4, 8, 4),
+    ("mekanism:advanced_control_circuit", 2, 8, 2),
+    ("mekanism:ingot_refined_obsidian", 4, 6, 4),
+    ("ae2:logic_processor", 4, 6, 4),
+    ("ae2:calculation_processor", 4, 6, 4),
+    ("ae2:engineering_processor", 4, 6, 4),
+    ("botania:elementium_ingot", 4, 6, 4),
+    ("botania:pixie_dust", 2, 5, 2),
+    ("enderio:energetic_alloy_ingot", 4, 5, 4),
+    ("powah:steel_energized", 8, 5, 8),
+    ("malum:soul_stained_steel_ingot", 4, 4, 4),
+    ("theurgy:alchemical_sulfur_iron", 4, 4, 4),
+])
+
+loot_table("s3_rare", "Elfenkiste", stage=3, entries=[
+    ("ae2:cell_component_16k", 1, 6),
+    ("ae2:cell_component_4k", 2, 8),
+    ("mekanism:teleportation_core", 1, 4),
+    ("botania:dragonstone", 2, 5, 2),
+    ("occultism:afrit_essence", 2, 4, 2),
+    ("enderio:vibrant_alloy_ingot", 4, 5, 4),
+    ("powah:crystal_blazing", 4, 4, 4),
+    ("malum:hallowed_gold_ingot", 4, 4, 4),
+    ("undergarden:froststeel_ingot", 4, 4, 4),
+    ("sophisticatedbackpacks:gold_backpack", 1, 3),
+    ("minecraft:diamond_block", 2, 5),
+    ("minecraft:totem_of_undying", 1, 2),
+])

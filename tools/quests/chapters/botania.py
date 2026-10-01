@@ -19,7 +19,7 @@ quests = [
     quest("welcome", 0, 0, "&aLexica Botania",
           subtitle="Ein Buch, ein Setzling und ein ganzer Garten voller Magie.",
           description=[
-              "Willkommen bei &aBotania&r! Auf den ersten Blick ist das ein Blumenmod, im Kern ist es aber Technik aus Pflanzen: Besondere Blumen erzeugen &dMana&r, &6Manaverbreiter&r schießen es als Strahl durch die Luft, &6Manabecken&r speichern es und verwandeln Gegenstände, die du hineinwirfst, in bessere.",
+              "&aBotania&r sieht auf den ersten Blick aus wie ein Blumenmod, im Kern ist es aber Technik aus Pflanzen: Besondere Blumen erzeugen &dMana&r, &6Manaverbreiter&r schießen es als Strahl durch die Luft, &6Manabecken&r speichern es und verwandeln Gegenstände, die du hineinwirfst, in bessere.",
               "",
               "Das Handbuch zu allem ist die &6Lexica Botania&r. Du craftest sie formlos aus einem &6Buch&r und einem beliebigen &6Setzling&r.",
               "",

@@ -1,0 +1,275 @@
+"""Logistics in stage 3: Integrated Dynamics with Tunnels, Terminals and Crafting, XNet,
+LaserIO, Compact Machines and Mining Gadgets. None of these recipes are changed by Kronwerke.
+Tier 3 mining gadget upgrades are stage 4 and only mentioned."""
+from ftbq import (chapter, quest, task_item, reward_item, reward_table, reward_xp, banner)
+
+C = "logistics"
+
+quests = [
+    # ---- Start -----------------------------------------------------------------
+    quest("welcome", 0, 9.5, "&3&lLogistik",
+          subtitle="Rohre waren gestern.",
+          description=[
+              "Mit Stufe 3 öffnen die Mods, die Gegenstände, Flüssigkeiten und Strom ohne Rohrsalat bewegen. Jede hat ihre eigene Art zu denken:",
+              "",
+              "&6Integrated Dynamics&r ist ein Baukasten aus Kabeln, Lesern und Logik. Mit &6Integrated Tunnels&r, &6Terminals&r und &6Crafting&r wird daraus ein Lager mit Autocrafting, das genau das tut, was du programmierst.",
+              "",
+              "&6XNet&r verbindet viele Maschinen über dünne Kabel mit einem Controller, in dem du alles an einer Stelle einstellst. &6LaserIO&r macht dasselbe mit Lasern zwischen Nodes, ganz ohne Kabel.",
+              "",
+              "&6Compact Machines&r steckt einen Raum in einen Block, und der &6Mining Gadget&r baut mit einem Laser ganze Tunnel ab.",
+              "",
+              "Der Einstieg ist Integrated Dynamics: Bau einen &6Squeezer&r und ein &6Drying Basin&r. Die anderen Abschnitte kannst du in beliebiger Reihenfolge machen.",
+          ],
+          tasks=[task_item("integrateddynamics:squeezer", 1), task_item("integrateddynamics:drying_basin", 1)],
+          rewards=[reward_item("minecraft:iron_ingot", 16), reward_table("s3_common")],
+          icon="xnet:controller", size=2.0, shape="hexagon"),
+
+    # ---- Integrated Dynamics -------------------------------------------------
+    quest("menril", 3, 0, "&9Menril",
+          subtitle="Blaue Bäume voller Harz.",
+          description=[
+              "&6Menril-Bäume&r sind hoch und blau, ihre Blätter leuchten. Am leichtesten findest du sie im &6Meneglin&r-Biom, vereinzelt stehen sie auch anderswo. Nimm Setzlinge mit, dann hast du bald eine eigene Plantage.",
+              "",
+              "Leg einen &6Menril Log&r auf den Squeezer und spring darauf, bis er platt ist. Das gibt &d1 000 mB Menril Resin&r, das in ein Drying Basin daneben fließt. Ein Redstone-Signal setzt den Squeezer zurück.",
+              "",
+              "Im Drying Basin trocknet ein voller Eimer Harz zu einem &6Crystalized Menril Block&r, und der gibt an der Werkbank neun &6Crystalized Menril Chunks&r. Fast alles in Integrated Dynamics wird daraus gebaut.",
+              "",
+              "&eTipp:&r Später übernehmen der &6Mechanical Squeezer&r und das &6Mechanical Drying Basin&r die Arbeit mit Strom.",
+          ],
+          tasks=[task_item("integrateddynamics:crystalized_menril_chunk", 32)],
+          rewards=[reward_item("integrateddynamics:crystalized_menril_chunk", 16), reward_xp(5)],
+          deps=["welcome"], icon="integrateddynamics:menril_log"),
+
+    quest("cables", 5.5, 0, "&9Logic Cables und Variable Cards",
+          subtitle="Das Netz und seine Notizzettel.",
+          description=[
+              "Sechs Menril Chunks, zwei Stöcke und ein Redstone ergeben drei &6Logic Cables&r. Sie bilden das Netz, an das du alle Teile steckst.",
+              "",
+              "Acht Menril Chunks um ein Papier ergeben 24 &6Variable Cards&r. Eine Variable Card speichert einen Verweis auf einen Wert: eine Zahl, einen Gegenstand, eine Liste oder sogar eine Rechenvorschrift.",
+              "",
+              "Dazu kommen die &6Variable Transformers&r (Input und Output). Du brauchst sie nicht direkt, aber jeder Reader und Writer wird aus ihnen gebaut.",
+          ],
+          tasks=[task_item("integrateddynamics:cable", 16), task_item("integrateddynamics:variable", 16)],
+          rewards=[reward_item("minecraft:paper", 16), reward_xp(5)],
+          deps=["menril"], icon="integrateddynamics:cable"),
+
+    quest("programmer", 8, 0, "&9&lLesen, rechnen, anzeigen",
+          subtitle="Der Logic Programmer.",
+          description=[
+              "Ein &6Reader&r liest Werte aus dem Block, auf den er zeigt. Steck einen &6Redstone Reader&r an ein Kabel, ziel auf eine Redstone-Fackel, öffne ihn und leg eine leere Variable Card in den Aspekt &eRedstone Value&r. Die Karte ist jetzt an diesen Wert gebunden.",
+              "",
+              "Ein &6Display Panel&r am selben Netz zeigt den Wert an, sobald du die Karte hineinlegst.",
+              "",
+              "Der &6Logic Programmer&r (Crystalized Menril Block und Werkbank) schreibt eigene Karten: feste Zahlen, Gegenstände, Listen und Operatoren wie Addition oder Vergleich. Karten, auf die andere Karten verweisen, müssen im Netz liegen, am besten in einem &6Variable Store&r.",
+              "",
+              "Das Buch &6On the Dynamics of Integration&r erklärt alles Schritt für Schritt, mit eigenen Übungen.",
+          ],
+          tasks=[task_item("integrateddynamics:logic_programmer", 1), task_item("integrateddynamics:part_redstone_reader", 1),
+                 task_item("integrateddynamics:part_display_panel", 1)],
+          rewards=[reward_item("minecraft:redstone_block", 4), reward_table("s3_common"), reward_xp(10)],
+          deps=["cables"], icon="integrateddynamics:logic_programmer", size=1.5, shape="hexagon"),
+
+    quest("tunnels", 10.5, 0, "&3Integrated Tunnels",
+          subtitle="Gegenstände durch Logic Cables.",
+          description=[
+              "Integrated Tunnels macht aus dem Logiknetz ein Transportnetz. Ein &6Item Interface&r an einer Truhe stellt deren Inhalt dem Netz zur Verfügung. Mehrere Interfaces bilden zusammen dein Lager.",
+              "",
+              "Ein &6Item Exporter&r schiebt Gegenstände aus dem Netz in den Block vor sich, ein &6Item Importer&r holt sie heraus. Was genau sie bewegen, sagst du ihnen mit einer Variable Card.",
+              "",
+              "&eSo fängst du an:&r Leg eine leere Variable Card in einen Importer, dann holt er alles aus seinem Ziel. Für einen Exporter schreibst du eine Karte mit dem Gegenstand, den er liefern soll.",
+              "",
+              "Für Flüssigkeiten und Strom gibt es dieselben Teile in eigenen Versionen.",
+          ],
+          tasks=[task_item("integratedtunnels:part_interface_item", 2), task_item("integratedtunnels:part_exporter_item", 1),
+                 task_item("integratedtunnels:part_importer_item", 1)],
+          rewards=[reward_item("minecraft:chest", 8), reward_xp(5)],
+          deps=["programmer"], icon="integratedtunnels:part_interface_item"),
+
+    quest("terminal", 13, 0, "&3Storage Terminal",
+          subtitle="Alles auf einen Blick.",
+          description=[
+              "Das &6Storage Terminal&r von Integrated Terminals zeigt alles, was über Interfaces im Netz liegt. Gegenstände, Flüssigkeiten und Strom haben eigene Reiter. Du brauchst dafür &6Menril Glass&r.",
+              "",
+              "&eSuchen:&r Normaler Text sucht im Namen, &e@&r davor nach Mod, &e#&r im Tooltip und &e$&r nach Tags.",
+              "",
+              "&eTipp:&r Rechtsklick mit einem Enderauge auf das Terminal schaltet einen Reiter für deine Endertruhe frei. Das Auge bekommst du zurück, wenn du das Terminal abbaust.",
+          ],
+          tasks=[task_item("integratedterminals:part_terminal_storage", 1)],
+          rewards=[reward_item("integrateddynamics:crystalized_menril_chunk", 16), reward_xp(5)],
+          deps=["tunnels"], icon="integratedterminals:part_terminal_storage"),
+
+    quest("crafting", 15.5, 0, "&3Integrated Crafting",
+          subtitle="Autocrafting, selbst geschrieben.",
+          description=[
+              "Ein &6Crafting Interface&r schaut auf eine Werkbank oder eine Maschine. Du gibst ihm Rezepte als Variable Cards, die du im Logic Programmer &eselbst&r baust. Ein automatisch ausgefülltes Rezept aus JEI funktioniert hier nicht. Ein grüner Haken zeigt, dass das Rezept gültig ist.",
+              "",
+              "Der &6Crafting Writer&r startet Aufträge: Leg eine Karte mit dem gewünschten Gegenstand hinein, und das Netz baut ihn aus dem, was im Lager liegt.",
+              "",
+              "Das ist mehr Arbeit als bei AE2, dafür kannst du jeden Auftrag an Bedingungen knüpfen, die du selbst programmierst.",
+          ],
+          tasks=[task_item("integratedcrafting:part_interface_crafting", 1), task_item("integratedcrafting:part_crafting_writer", 1)],
+          rewards=[reward_item("minecraft:crafting_table", 4), reward_xp(10)],
+          deps=["terminal"], icon="integratedcrafting:part_interface_crafting", optional=True),
+
+    quest("counter", 11.75, 2.4, "&6&lDer Stahlzähler",
+          subtitle="Wie viel fehlt noch zum Obelisken?",
+          description=[
+              "Zeit, das Gelernte für den Server zu nutzen. Stell eine Pufferkiste vor die Kiste am Obelisken, in die deine Stahlstraße liefert.",
+              "",
+              "Ein &6Inventory Reader&r auf diese Pufferkiste liest mit dem Aspekt &eInventory Count&r, wie viele Gegenstände darin liegen. Leg die Karte in ein &6Display Panel&r, und du siehst den Stand von weitem.",
+              "",
+              "&eNoch besser:&r Im Logic Programmer vergleichst du die Zahl mit einem festen Wert und lässt einen &6Redstone Writer&r eine Lampe schalten, sobald genug Stahl für die nächste Lieferung bereitliegt. Ein Item Exporter kann den Stapel dann in die Obelisk-Kiste schieben.",
+              "",
+              "&eKronwerke:&r &e\"Der Ofen schläft nie\"&r will &e4 000 Stahlbarren&r, &e250 Fortgeschrittene Steuerschaltkreise&r und &e8 Stahlkerne&r. Was in die Kiste neben dem Obelisken fällt, zählt für den, der sie hingestellt hat.",
+          ],
+          tasks=[task_item("integrateddynamics:part_inventory_reader", 1), task_item("integrateddynamics:variablestore", 1),
+                 task_item("mekanism:ingot_steel", 64)],
+          rewards=[reward_table("s3_rare"), reward_item("mekanism:ingot_steel", 32), reward_xp(25)],
+          deps=["programmer", "tunnels"], icon="integrateddynamics:part_display_panel", size=2.5, shape="gear"),
+
+    # ---- XNet ------------------------------------------------------------------
+    quest("xnet_controller", 3, 5.5, "&eXNet Controller",
+          subtitle="Ein Block, der alles steuert.",
+          description=[
+              "XNet baut auf dem &6Machine Frame&r von RFTools Base auf (Eisen, blauer Farbstoff, Goldnuggets). Mit Komparator, Repeatern, Redstone, Eisen und Gold wird daraus der &6Controller&r.",
+              "",
+              "Der Controller hat &e8 Kanäle&r. Jeder Kanal hat einen Typ: &6Item&r, &6Fluid&r, &6Energy&r oder &6Logic&r. In einem Kanal legst du fest, welche angeschlossenen Blöcke etwas abgeben und welche etwas bekommen.",
+              "",
+              "Der Controller braucht etwas Strom: 1 RF/t pro aktivem Kanal und ein wenig pro Vorgang. Ein Kabel von deinem Energienetz reicht völlig.",
+          ],
+          tasks=[task_item("rftoolsbase:machine_frame", 1), task_item("xnet:controller", 1)],
+          rewards=[reward_item("minecraft:comparator", 4), reward_xp(5)],
+          deps=["welcome"], icon="xnet:controller", size=1.5, shape="hexagon"),
+
+    quest("xnet_connectors", 5.5, 5.5, "&eConnectors und Kabel",
+          subtitle="Dünn, bunt, unauffällig.",
+          description=[
+              "Ein &6Connector&r sitzt direkt neben einer Maschine oder Truhe. Die &6Network Cables&r führen von den Connectors zum Controller. Kabel und Connectors gibt es in vier Farben, und verschiedene Farben verbinden sich nicht miteinander. So laufen zwei Netze dicht nebeneinander.",
+              "",
+              "&eEinrichten:&r Öffne einen Connector und gib ihm einen Namen, dann findest du ihn im Controller leichter. Im Controller legst du einen Kanal an und klickst bei jedem Connector auf das Feld des Kanals. Dort stellst du ein, ob er &eeinfügt&r oder &eherauszieht&r, mit welcher Priorität und mit welchem Filter.",
+              "",
+              "&eTipp:&r Mit &6Facades&r versteckst du Kabel hinter beliebigen Blöcken.",
+          ],
+          tasks=[task_item("xnet:connector_blue", 4), task_item("xnet:netcable_blue", 32)],
+          rewards=[reward_item("xnet:netcable_blue", 32), reward_xp(5)],
+          deps=["xnet_controller"], icon="xnet:connector_blue"),
+
+    quest("xnet_advanced", 8, 5.5, "&eAdvanced Connector",
+          subtitle="Mehr Durchsatz, jede Seite.",
+          description=[
+              "Ein normaler Connector schaut nur auf die Seite, an der er sitzt. Der &6Advanced Connector&r (Connector, Diamant, Enderperle, Redstone) darf jede Seite des Blocks ansprechen, und das ist bei Mekanism-Maschinen mit fester Seitenbelegung oft genau das, was du brauchst.",
+              "",
+              "Er ist auch schneller: bis &d100 000 RF/t&r statt 10 000 und &b5 000 mB&r Flüssigkeit pro Vorgang statt 1 000. Gegenstände bewegt er ebenfalls schneller.",
+              "",
+              "&eKronwerke:&r Ein XNet-Netz mit einem Energy-Kanal und einem Item-Kanal ist eine saubere Art, eine ganze Stahlstraße zu versorgen: Strom an alle Infusionsanlagen, Kohle und Eisen hinein, Stahl heraus in die Kiste am Obelisken.",
+          ],
+          tasks=[task_item("xnet:advanced_connector_blue", 2)],
+          rewards=[reward_item("minecraft:diamond", 2), reward_table("s3_uncommon"), reward_xp(10)],
+          deps=["xnet_connectors"], icon="xnet:advanced_connector_blue"),
+
+    # ---- LaserIO -------------------------------------------------------------
+    quest("laser_node", 3, 9.5, "&cLaser Nodes",
+          subtitle="Logistik ohne Kabel.",
+          description=[
+              "Alles in LaserIO beginnt mit dem &6Logic Chip&r: Rohe Logic Chips aus Redstone, Goldnuggets, Ton und einem Quarzblock, im Ofen gebrannt.",
+              "",
+              "Ein &6Laser Node&r sitzt neben Maschinen und Truhen. Mit dem &6Laser Wrench&r klickst du erst einen Node an und dann einen zweiten, dann verbindet sie ein Laser. Nodes dürfen höchstens &e8 Blöcke&r auseinander stehen. Für größere Strecken setzt du &6Laser Connectors&r dazwischen, sie reichen die Verbindung weiter.",
+              "",
+              "Alle verbundenen Nodes bilden ein Netz, egal wie viele Sprünge dazwischen liegen.",
+          ],
+          tasks=[task_item("laserio:laser_node", 2), task_item("laserio:laser_wrench", 1)],
+          rewards=[reward_item("laserio:logic_chip", 4), reward_xp(5)],
+          deps=["welcome"], icon="laserio:laser_node", size=1.5, shape="hexagon"),
+
+    quest("laser_cards", 5.5, 9.5, "&cKarten",
+          subtitle="Was, wohin, wie schnell.",
+          description=[
+              "Öffne einen Laser Node, dann siehst du seine sechs Seiten. Auf jede Seite steckst du &6Karten&r, die bestimmen, was dort passiert: &6Item Card&r, &6Fluid Card&r, &6Energy Card&r, &6Redstone Card&r und die &6Chemical Card&r für Mekanism.",
+              "",
+              "&eModi:&r &eExtract&r zieht aus dem Block, &eInsert&r legt hinein, &eStock&r hält einen bestimmten Bestand vorrätig. Karten finden sich über ihren &eKanal&r: Eine Extract-Karte auf Kanal 0 liefert an Insert-Karten auf Kanal 0.",
+              "",
+              "Eine Energy Card schafft bis zu &d1 000 000 FE/t&r. Mit Prioritäten und Round Robin verteilst du die Last auf mehrere Ziele.",
+          ],
+          tasks=[task_item("laserio:card_item", 2), task_item("laserio:card_energy", 1)],
+          rewards=[reward_item("minecraft:lapis_lazuli", 16), reward_table("s3_common"), reward_xp(5)],
+          deps=["laser_node"], icon="laserio:card_item"),
+
+    quest("laser_upgrades", 8, 9.5, "&cFilter und Overclocker",
+          subtitle="Feiner sortieren, schneller schieben.",
+          description=[
+              "Filter kommen in den Filterplatz einer Karte. Der &6Basic Filter&r lässt nur bestimmte Gegenstände durch oder sperrt sie. Es gibt außerdem Filter nach Anzahl, Tag, Mod und Daten.",
+              "",
+              "Der &6Card Overclocker&r in einer Karte erhöht, wie viel sie pro Vorgang bewegt. Der &6Node Overclocker&r macht den ganzen Node schneller.",
+              "",
+              "&eTipp:&r Mit dem &6Card Holder&r trägst du Karten und Filter griffbereit im Inventar, und der &6Card Cloner&r kopiert eine fertig eingestellte Karte auf eine andere.",
+          ],
+          tasks=[task_item("laserio:filter_basic", 1), task_item("laserio:overclocker_card", 1)],
+          rewards=[reward_item("minecraft:gold_ingot", 8), reward_xp(5)],
+          deps=["laser_cards"], icon="laserio:overclocker_card", optional=True),
+
+    # ---- Compact Machines ------------------------------------------------------
+    quest("cm_psd", 3, 13.5, "&dPersonal Shrinking Device",
+          subtitle="Klein genug, um hineinzugehen.",
+          description=[
+              "Für Compact Machines brauchst du zuerst Wände und zwei Module. Acht Blöcke polierter Tiefenschiefer im Kreis ergeben acht &6Compact Machine Walls&r. Das &6Atom Shrinking Module&r und das &6Atom Enlarging Module&r bestehen aus Knöpfen, einem Enderauge, einer Wägeplatte und einem Kolben (klebrig beim Shrinking Module).",
+              "",
+              "Beide Module zusammen mit Eisen, Kupfer, Glas und einem Enderauge ergeben das &6Personal Shrinking Device&r, kurz PSD. Damit betrittst du später jede Maschine.",
+          ],
+          tasks=[task_item("compactmachines:wall", 16), task_item("compactmachines:personal_shrinking_device", 1)],
+          rewards=[reward_item("minecraft:ender_eye", 4), reward_xp(5)],
+          deps=["welcome"], icon="compactmachines:personal_shrinking_device", size=1.5, shape="hexagon"),
+
+    quest("cm_machine", 5.5, 13.5, "&dCompact Machine",
+          subtitle="Innen größer als außen.",
+          description=[
+              "Sechs Wände, die beiden Module und ein Kern in der Mitte ergeben eine &6Compact Machine&r. Der Kern bestimmt die Größe des Raums: Kupfer 3, Eisen 5, Gold 7, Diamant 9, Obsidian 11 und Netherit 13 Blöcke im Würfel. Mit einer Diamanthacke gibt es einen flachen Farmraum mit Gras als Boden.",
+              "",
+              "Stell die Maschine hin und mach mit dem PSD einen Rechtsklick darauf, dann stehst du im Raum. Mit dem PSD kommst du auch wieder hinaus. Baust du die Maschine ab, bleibt der Raum mit ihr verbunden, auch an einem neuen Ort.",
+              "",
+              "&cWichtig:&r In dieser Version gibt es keine Tunnel. Gegenstände, Flüssigkeiten und Strom gehen nicht durch die Wände. Ein Raum ist ein eigener kleiner Ort, etwa für eine Werkstatt, ein Lager oder eine Farm, die keinen Platz in deiner Basis kosten soll.",
+          ],
+          tasks=[task_item("compactmachines:new_machine", 1)],
+          rewards=[reward_item("compactmachines:wall", 16), reward_table("s3_common"), reward_xp(10)],
+          deps=["cm_psd"], icon="compactmachines:new_machine"),
+
+    # ---- Mining Gadgets --------------------------------------------------------
+    quest("mg_gadget", 3, 17.5, "&bMining Gadget",
+          subtitle="Ein Laser statt einer Spitzhacke.",
+          description=[
+              "Alles beginnt mit dem &6Blank Upgrade Module&r aus Redstone, Lapis, Diamanten und Glas. Daraus, mit Diamanten, Eisen, Gold und Redstone, baust du den &6Mining Gadget&r.",
+              "",
+              "Halt die rechte Maustaste gedrückt, und der Laser baut ab, worauf du zielst. Der Gadget läuft mit Strom und fasst &d1 000 000 FE&r, jeder Block kostet etwa 200 FE. Aufladen kannst du ihn zum Beispiel im Ladeplatz eines Mekanism-Energie-Würfels.",
+              "",
+              "Schleich-Rechtsklick öffnet die Einstellungen: Größe, Reichweite und ein Modus, der Gänge zwei Blöcke hoch gräbt.",
+          ],
+          tasks=[task_item("mininggadgets:mininggadget_simple", 1)],
+          rewards=[reward_item("minecraft:diamond", 3), reward_xp(5)],
+          deps=["welcome"], icon="mininggadgets:mininggadget_simple", size=1.5, shape="hexagon"),
+
+    quest("mg_upgrades", 5.5, 17.5, "&bModification Table",
+          subtitle="Upgrades einbauen.",
+          description=[
+              "Upgrades baust du am &6Modification Table&r ein: Gadget hineinlegen, Upgrade auf den freien Platz ziehen. Jedes Upgrade beginnt als Blank Upgrade Module.",
+              "",
+              "&eNützlich in Stufe 3:&r &63x3&r und &65x5&r für breitere Tunnel, &6Magnet&r für das Einsammeln, &6Void Junk&r gegen Bruchstein und Erde, &6Fortune&r oder &6Silk Touch&r (nur eins von beiden), &6Freezing&r gegen Lava und Wasser, Batterie- und Reichweiten-Upgrades.",
+              "",
+              "Jedes Upgrade erhöht den Stromverbrauch pro Block, schau also auf den Tooltip.",
+              "",
+              "&cAusblick:&r Die Upgrades der dritten Stufe, also 7x7, Fortune III, Battery III, Range III und Efficiency III, öffnen in Stufe 4.",
+          ],
+          tasks=[task_item("mininggadgets:modificationtable", 1), task_item("mininggadgets:upgrade_size_1", 1)],
+          rewards=[reward_item("minecraft:redstone_block", 4), reward_table("s3_uncommon"), reward_xp(10)],
+          deps=["mg_gadget"], icon="mininggadgets:modificationtable"),
+]
+
+images = [
+    banner("logistics/title", "Logistik", 9, -4, height=1.75, kind="title", colour="water"),
+    banner("logistics/id", "Integrated Dynamics", 7, -1.8, height=0.9, colour="water"),
+    banner("logistics/xnet", "XNet", 4, 4, height=0.9, colour="brass"),
+    banner("logistics/laserio", "LaserIO", 4.3, 8, height=0.9, colour="fire"),
+    banner("logistics/compact", "Compact Machines", 6.5, 12, height=0.9, colour="magic"),
+    banner("logistics/mining", "Mining Gadgets", 5.9, 16, height=0.9, colour="stone"),
+]
+
+chapter(C, "Logistik", "xnet:controller", "tech", quests, shape="square", order=18, stage=3,
+        subtitle=["Stufe 3: Integrated Dynamics, XNet, LaserIO, Compact Machines und Mining Gadgets."], images=images)

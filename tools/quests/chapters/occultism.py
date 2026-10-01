@@ -564,7 +564,7 @@ quests = [
           description=[
               "Crusher, Schmelzer, Träger und Holzfäller arbeiten für dich, du kennst vier Pentakel und rufst Djinni aus der Anderswelt. Leg dir einen Vorrat an gebundenen Büchern und Limettenkreide an.",
               "",
-              "Mit &6Stufe 3&r öffnen die &cAfrit&r und die &9Marid&r, der &6Spirit Attuned Gem&r, das Iesnium aus dem Nether, die Bergbau-Geister und das dimensionale Lager. Das Ziel von Stufe 3 verlangt sogar Spirit Attuned Gems in großer Zahl, dafür brauchst du dann alles, was du hier gelernt hast.",
+              "Mit &6Stufe 3&r öffnen die &cAfrit&r und die &9Marid&r, der &6Spirit Attuned Gem&r, das Iesnium aus dem Nether, die Bergbau-Geister und das dimensionale Lager. Das Ziel von Stufe 3 verlangt 150 &6Afrit-Essenzen&r, jede von einem beschworenen und besiegten Afrit. Dafür brauchst du dann alles, was du hier gelernt hast.",
           ],
           tasks=[task_item("occultism:book_of_binding_bound_djinni", 4), task_item("occultism:chalk_lime", 2)],
           rewards=[reward_table("s2_rare"), reward_xp(15)],

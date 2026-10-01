@@ -12,7 +12,7 @@ quests = [
     quest("welcome", 0, 0, "&6Rucksack",
           subtitle="Dein Lager zum Mitnehmen.",
           description=[
-              "Willkommen im Lagerkapitel! Drei Mods halten hier Ordnung: &6Sophisticated Backpacks&r für alles, was du mitnimmst, &6Functional Storage&r für große Mengen einer Sorte und &6Sophisticated Storage&r für Truhen und Fässer, die mit dir mitwachsen. Dazu kommen ein paar kleine Helfer zum Aufräumen.",
+              "Drei Mods halten hier Ordnung: &6Sophisticated Backpacks&r für alles, was du mitnimmst, &6Functional Storage&r für große Mengen einer Sorte und &6Sophisticated Storage&r für Truhen und Fässer, die mit dir mitwachsen. Dazu kommen ein paar kleine Helfer zum Aufräumen.",
               "",
               "Den Anfang macht der &6Rucksack&r. Rezept: eine &6Holztruhe&r in der Mitte, darum &6vier Leder&r (eins oben, drei unten) und &6vier Fäden&r an den Seiten.",
               "",

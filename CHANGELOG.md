@@ -73,7 +73,7 @@ First assembly. 222 mods on NeoForge 21.1.252, boots on a dedicated server. No q
 - The quest book follows the new recipes and stages, with a Power Grid line and quests for the milestones.
 - Neo Origins offers Kronwerke's own choices: nine origins (Herkunft) and seven roles (Rolle) instead of the generic forty, each with a real downside and none that flies or skips a stage (`docs/ORIGINS.md`). The kill counting evolution is off.
 
-## Unreleased
+## 0.7.0
 
 - The quest book for stages 4 and 5: thirteen chapters, about 235 quests. The End, Eternal Starlight, Mekanism elite with fusion and the MekaSuit, NuclearCraft, AE2 advanced with MEGA, quarries (RFTools Builder, Quarry Plus), Draconic Evolution, Botania Gaia, Mahou Tsukai, Ars Nouveau epic; then Draconic awakened and chaos, Mekanism antimatter with the millions of AE2, and the finale. Crates for both stages.
 - Polonium pellets open in stage 4: the fusion reactor frame needs them, and NuclearCraft makes polonium there. MekaSuit and Meka-Tool become craftable with them. Bound dislocators open with the unbound ones in stage 4.

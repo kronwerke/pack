@@ -1,0 +1,1077 @@
+{
+	id: "BF317967CDFC610F"
+	filename: "building"
+	icon: {
+		id: "framedblocks:framing_saw"
+		count: 1
+	}
+	group: "E25CBCE1B745D8F7"
+	order_index: 58
+	default_quest_shape: "circle"
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			id: "2B83A37BE1681C9E"
+			x: 0.0d
+			y: 1.0d
+			icon: {
+				id: "framedblocks:framed_cube"
+				count: 1
+			}
+			size: 2.0d
+			shape: "hexagon"
+			tasks: [
+				{
+					id: "EFBB89335FA0D525"
+					type: "item"
+					item: {
+						id: "framedblocks:framed_cube"
+						count: 1
+					}
+					count: 16
+				}
+			]
+			rewards: [
+				{
+					id: "F1B9D3DB62AD071A"
+					type: "item"
+					item: {
+						id: "minecraft:oak_log"
+						count: 1
+					}
+					count: 16
+				}
+				{
+					id: "33444F2967D8CD58"
+					type: "loot"
+					table_id: "1EBBC2B918151958"
+				}
+			]
+		}
+		{
+			id: "985A70A310BB363C"
+			x: 2.5d
+			y: 0.0d
+			icon: {
+				id: "framedblocks:framed_hammer"
+				count: 1
+			}
+			dependencies: [
+				"2B83A37BE1681C9E"
+			]
+			tasks: [
+				{
+					id: "2DBD80D2C4EF0D76"
+					type: "item"
+					item: {
+						id: "framedblocks:framed_hammer"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "4F0DA7539E223712"
+					type: "item"
+					item: {
+						id: "minecraft:torch"
+						count: 1
+					}
+					count: 16
+				}
+			]
+		}
+		{
+			id: "86E0CFED88D85727"
+			x: 2.5d
+			y: 2.0d
+			icon: {
+				id: "framedblocks:framing_saw"
+				count: 1
+			}
+			size: 1.75d
+			shape: "gear"
+			dependencies: [
+				"2B83A37BE1681C9E"
+			]
+			tasks: [
+				{
+					id: "B9772919855C1224"
+					type: "item"
+					item: {
+						id: "framedblocks:framing_saw"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "6360596EF8861C4C"
+					type: "item"
+					item: {
+						id: "framedblocks:framed_cube"
+						count: 1
+					}
+					count: 32
+				}
+				{
+					id: "5EB66A4E6E68F7B5"
+					type: "loot"
+					table_id: "1EBBC2B918151958"
+				}
+				{
+					id: "5C2E4B93F934FB61"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+		}
+		{
+			id: "FD943D441CEA3885"
+			x: 5.0d
+			y: 2.0d
+			icon: {
+				id: "framedblocks:framed_slope"
+				count: 1
+			}
+			dependencies: [
+				"86E0CFED88D85727"
+			]
+			tasks: [
+				{
+					id: "DA3F024838F14A58"
+					type: "item"
+					item: {
+						id: "framedblocks:framed_slope"
+						count: 1
+					}
+					count: 16
+				}
+			]
+			rewards: [
+				{
+					id: "5795ED74C4AA3774"
+					type: "item"
+					item: {
+						id: "framedblocks:framed_cube"
+						count: 1
+					}
+					count: 16
+				}
+				{
+					id: "7532179CF3D9A33B"
+					type: "xp_levels"
+					xp_levels: 3
+				}
+			]
+		}
+		{
+			id: "80AC1121F3B1DE67"
+			x: 5.0d
+			y: 0.0d
+			icon: {
+				id: "framedblocks:framed_blueprint"
+				count: 1
+			}
+			dependencies: [
+				"985A70A310BB363C"
+			]
+			tasks: [
+				{
+					id: "62AEA15D050F8FA1"
+					type: "item"
+					item: {
+						id: "framedblocks:framed_wrench"
+						count: 1
+					}
+					count: 1
+				}
+				{
+					id: "43CE2F1D0E1110DF"
+					type: "item"
+					item: {
+						id: "framedblocks:framed_blueprint"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "DCCA3E694D8D368C"
+					type: "item"
+					item: {
+						id: "minecraft:paper"
+						count: 1
+					}
+					count: 8
+				}
+				{
+					id: "9410E23F6B5058F1"
+					type: "xp_levels"
+					xp_levels: 3
+				}
+			]
+		}
+		{
+			id: "8CCB01D83B51655D"
+			x: 7.5d
+			y: 1.0d
+			icon: {
+				id: "framedblocks:framed_reinforcement"
+				count: 1
+			}
+			optional: true
+			dependencies: [
+				"80AC1121F3B1DE67"
+				"FD943D441CEA3885"
+			]
+			tasks: [
+				{
+					id: "A6A2BFFC66A98723"
+					type: "item"
+					item: {
+						id: "framedblocks:framed_reinforcement"
+						count: 1
+					}
+					count: 16
+				}
+			]
+			rewards: [
+				{
+					id: "23A74B969F4FE598"
+					type: "item"
+					item: {
+						id: "minecraft:obsidian"
+						count: 1
+					}
+					count: 4
+				}
+			]
+		}
+		{
+			id: "71BA3B9F87029256"
+			x: 0.0d
+			y: 6.0d
+			icon: {
+				id: "chipped:mason_table"
+				count: 1
+			}
+			size: 1.5d
+			shape: "hexagon"
+			tasks: [
+				{
+					id: "B1634A7312151B23"
+					type: "item"
+					item: {
+						id: "chipped:mason_table"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "6F45A728EDF93C7E"
+					type: "item"
+					item: {
+						id: "minecraft:stone_bricks"
+						count: 1
+					}
+					count: 32
+				}
+				{
+					id: "D961F259E6FFB05D"
+					type: "loot"
+					table_id: "1EBBC2B918151958"
+				}
+			]
+		}
+		{
+			id: "C7250A4081A3B621"
+			x: 2.5d
+			y: 5.0d
+			icon: {
+				id: "chipped:carpenters_table"
+				count: 1
+			}
+			dependencies: [
+				"71BA3B9F87029256"
+			]
+			tasks: [
+				{
+					id: "FE1A588DC432F48A"
+					type: "item"
+					item: {
+						id: "chipped:carpenters_table"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "67FC6D2521FEFA38"
+					type: "item"
+					item: {
+						id: "minecraft:oak_planks"
+						count: 1
+					}
+					count: 32
+				}
+			]
+		}
+		{
+			id: "86AB540A3B4BCAF6"
+			x: 2.5d
+			y: 7.0d
+			icon: {
+				id: "chipped:glassblower"
+				count: 1
+			}
+			dependencies: [
+				"71BA3B9F87029256"
+			]
+			tasks: [
+				{
+					id: "EDF88D69616931B4"
+					type: "item"
+					item: {
+						id: "chipped:glassblower"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "EC8AE5265A4A59B0"
+					type: "item"
+					item: {
+						id: "minecraft:glass"
+						count: 1
+					}
+					count: 32
+				}
+			]
+		}
+		{
+			id: "801400F32E9DF3E4"
+			x: 5.0d
+			y: 6.0d
+			icon: {
+				id: "chipped:chisel"
+				count: 1
+			}
+			size: 1.5d
+			dependencies: [
+				"C7250A4081A3B621"
+				"86AB540A3B4BCAF6"
+			]
+			tasks: [
+				{
+					id: "2124131D765EC649"
+					type: "item"
+					item: {
+						id: "chipped:chisel"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "483798050A503023"
+					type: "item"
+					item: {
+						id: "minecraft:iron_ingot"
+						count: 1
+					}
+					count: 8
+				}
+				{
+					id: "5B166605A40FB692"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+		}
+		{
+			id: "B40C81F69CC129F8"
+			x: 0.0d
+			y: 11.0d
+			icon: {
+				id: "supplementaries:sconce"
+				count: 1
+			}
+			size: 1.5d
+			shape: "hexagon"
+			tasks: [
+				{
+					id: "056BFAE6D583469A"
+					type: "item"
+					item: {
+						id: "supplementaries:sconce"
+						count: 1
+					}
+					count: 8
+				}
+			]
+			rewards: [
+				{
+					id: "4E064E4033383FB4"
+					type: "item"
+					item: {
+						id: "minecraft:torch"
+						count: 1
+					}
+					count: 32
+				}
+				{
+					id: "1408D8E9E2446F65"
+					type: "loot"
+					table_id: "1EBBC2B918151958"
+				}
+			]
+		}
+		{
+			id: "4B4A45220537CBE1"
+			x: 2.5d
+			y: 10.0d
+			icon: {
+				id: "supplementaries:timber_frame"
+				count: 1
+			}
+			dependencies: [
+				"B40C81F69CC129F8"
+			]
+			tasks: [
+				{
+					id: "F9807B7E5ED9F728"
+					type: "item"
+					item: {
+						id: "supplementaries:timber_frame"
+						count: 1
+					}
+					count: 8
+				}
+				{
+					id: "BDEB802FD22F81EE"
+					type: "item"
+					item: {
+						id: "supplementaries:daub"
+						count: 1
+					}
+					count: 8
+				}
+			]
+			rewards: [
+				{
+					id: "E74C02A3922EEB74"
+					type: "item"
+					item: {
+						id: "minecraft:clay_ball"
+						count: 1
+					}
+					count: 16
+				}
+				{
+					id: "2BAEAA10DD5C23C1"
+					type: "xp_levels"
+					xp_levels: 3
+				}
+			]
+		}
+		{
+			id: "EBD27D3045508B31"
+			x: 2.5d
+			y: 12.0d
+			icon: {
+				id: "supplementaries:rope"
+				count: 1
+			}
+			dependencies: [
+				"B40C81F69CC129F8"
+			]
+			tasks: [
+				{
+					id: "5330A3FC70D0456E"
+					type: "item"
+					item: {
+						id: "supplementaries:rope"
+						count: 1
+					}
+					count: 16
+				}
+			]
+			rewards: [
+				{
+					id: "A6AAE1B08D047A89"
+					type: "item"
+					item: {
+						id: "supplementaries:flax_seeds"
+						count: 1
+					}
+					count: 4
+				}
+				{
+					id: "130C7DF379F7A5B5"
+					type: "item"
+					item: {
+						id: "minecraft:string"
+						count: 1
+					}
+					count: 8
+				}
+			]
+		}
+		{
+			id: "05B8249EF0C1A236"
+			x: 5.0d
+			y: 10.0d
+			icon: {
+				id: "supplementaries:notice_board"
+				count: 1
+			}
+			dependencies: [
+				"4B4A45220537CBE1"
+			]
+			tasks: [
+				{
+					id: "305DBE38721CCCC0"
+					type: "item"
+					item: {
+						id: "supplementaries:item_shelf"
+						count: 1
+					}
+					count: 4
+				}
+				{
+					id: "B3FF4DDA85EF0DC1"
+					type: "item"
+					item: {
+						id: "supplementaries:notice_board"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "0027F3121CA7E759"
+					type: "item"
+					item: {
+						id: "minecraft:paper"
+						count: 1
+					}
+					count: 8
+				}
+				{
+					id: "CE80119871E38D80"
+					type: "item"
+					item: {
+						id: "minecraft:book"
+						count: 1
+					}
+					count: 2
+				}
+			]
+		}
+		{
+			id: "602B5491F8F27A8D"
+			x: 5.0d
+			y: 12.0d
+			icon: {
+				id: "supplementaries:sack"
+				count: 1
+			}
+			dependencies: [
+				"EBD27D3045508B31"
+			]
+			tasks: [
+				{
+					id: "7777C78AA208D0F7"
+					type: "item"
+					item: {
+						id: "supplementaries:sack"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "EC12993D980342C2"
+					type: "item"
+					item: {
+						id: "minecraft:wheat"
+						count: 1
+					}
+					count: 16
+				}
+			]
+		}
+		{
+			id: "520E5F31B282373E"
+			x: 7.5d
+			y: 10.0d
+			icon: {
+				id: "supplementaries:way_sign_oak"
+				count: 1
+			}
+			optional: true
+			dependencies: [
+				"05B8249EF0C1A236"
+			]
+			tasks: [
+				{
+					id: "AECC133EE1B642A8"
+					type: "item"
+					item: {
+						id: "supplementaries:way_sign_oak"
+						count: 1
+					}
+					count: 2
+				}
+			]
+			rewards: [
+				{
+					id: "EDA353A646C2AA7A"
+					type: "item"
+					item: {
+						id: "minecraft:oak_sign"
+						count: 1
+					}
+					count: 4
+				}
+			]
+		}
+		{
+			id: "4AD7F3AA6B280385"
+			x: 7.5d
+			y: 12.0d
+			icon: {
+				id: "supplementaries:lock_block"
+				count: 1
+			}
+			optional: true
+			dependencies: [
+				"602B5491F8F27A8D"
+			]
+			tasks: [
+				{
+					id: "2C5C0CDD93DED11B"
+					type: "item"
+					item: {
+						id: "supplementaries:lock_block"
+						count: 1
+					}
+					count: 1
+				}
+				{
+					id: "246DF0EE8EA901B5"
+					type: "item"
+					item: {
+						id: "supplementaries:key"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "2C87AB274D782BC5"
+					type: "item"
+					item: {
+						id: "minecraft:gold_ingot"
+						count: 1
+					}
+					count: 4
+				}
+			]
+		}
+		{
+			id: "8C5BEE521A7393D9"
+			x: 11.0d
+			y: 1.0d
+			icon: {
+				id: "create:copycat_panel"
+				count: 1
+			}
+			size: 1.5d
+			shape: "gear"
+			tasks: [
+				{
+					id: "B6F5018E838DB6DD"
+					type: "item"
+					item: {
+						id: "create:copycat_panel"
+						count: 1
+					}
+					count: 8
+				}
+			]
+			rewards: [
+				{
+					id: "5C0C96935E1D3142"
+					type: "item"
+					item: {
+						id: "create:zinc_ingot"
+						count: 1
+					}
+					count: 8
+				}
+				{
+					id: "0861715E74EA42D1"
+					type: "loot"
+					table_id: "1EBBC2B918151958"
+				}
+			]
+		}
+		{
+			id: "E5BBD662E2DBC3C3"
+			x: 13.5d
+			y: 0.0d
+			icon: {
+				id: "create:metal_girder"
+				count: 1
+			}
+			dependencies: [
+				"8C5BEE521A7393D9"
+			]
+			tasks: [
+				{
+					id: "B2C160080B83B5BE"
+					type: "item"
+					item: {
+						id: "create:metal_girder"
+						count: 1
+					}
+					count: 8
+				}
+				{
+					id: "84E74EA8B3E08DAF"
+					type: "item"
+					item: {
+						id: "create:oak_window"
+						count: 1
+					}
+					count: 4
+				}
+			]
+			rewards: [
+				{
+					id: "27F1A4ACEF150319"
+					type: "item"
+					item: {
+						id: "create:andesite_alloy"
+						count: 1
+					}
+					count: 8
+				}
+				{
+					id: "761CDD0D6521E070"
+					type: "xp_levels"
+					xp_levels: 3
+				}
+			]
+		}
+		{
+			id: "4581893B22CBA4C0"
+			x: 13.5d
+			y: 2.0d
+			icon: {
+				id: "create:copper_shingles"
+				count: 1
+			}
+			optional: true
+			dependencies: [
+				"8C5BEE521A7393D9"
+			]
+			tasks: [
+				{
+					id: "CA2C4324FC5AAEFC"
+					type: "item"
+					item: {
+						id: "create:copper_shingles"
+						count: 1
+					}
+					count: 16
+				}
+			]
+			rewards: [
+				{
+					id: "8D1F279CA1648FFA"
+					type: "item"
+					item: {
+						id: "minecraft:copper_ingot"
+						count: 1
+					}
+					count: 16
+				}
+				{
+					id: "3FDDAFE8D4AD7A05"
+					type: "item"
+					item: {
+						id: "minecraft:honeycomb"
+						count: 1
+					}
+					count: 4
+				}
+			]
+		}
+		{
+			id: "4B709BC504B96D05"
+			x: 11.0d
+			y: 5.0d
+			icon: {
+				id: "minecraft:filled_map"
+				count: 1
+			}
+			tasks: [
+				{
+					id: "4CCB916E0695AE11"
+					type: "checkmark"
+				}
+			]
+			rewards: [
+				{
+					id: "236D89A1C7050338"
+					type: "item"
+					item: {
+						id: "minecraft:torch"
+						count: 1
+					}
+					count: 16
+				}
+				{
+					id: "AC15A1640A329A1A"
+					type: "xp_levels"
+					xp_levels: 3
+				}
+			]
+		}
+		{
+			id: "0F59313B69E3CBA4"
+			x: 11.0d
+			y: 7.0d
+			icon: {
+				id: "minecraft:lantern"
+				count: 1
+			}
+			dependencies: [
+				"4B709BC504B96D05"
+			]
+			tasks: [
+				{
+					id: "4F62022FCFFF3B2D"
+					type: "checkmark"
+				}
+			]
+			rewards: [
+				{
+					id: "AFD36AE307263D02"
+					type: "item"
+					item: {
+						id: "minecraft:lantern"
+						count: 1
+					}
+					count: 8
+				}
+				{
+					id: "C45CBE8C603D233B"
+					type: "item"
+					item: {
+						id: "minecraft:torch"
+						count: 1
+					}
+					count: 16
+				}
+			]
+		}
+		{
+			id: "5901DD2F58427A21"
+			x: 13.5d
+			y: 5.0d
+			icon: {
+				id: "minecraft:lapis_lazuli"
+				count: 1
+			}
+			optional: true
+			dependencies: [
+				"4B709BC504B96D05"
+			]
+			tasks: [
+				{
+					id: "5D685768A74BE2BD"
+					type: "checkmark"
+				}
+			]
+			rewards: [
+				{
+					id: "765FBA5E93E46114"
+					type: "xp_levels"
+					xp_levels: 3
+				}
+			]
+		}
+		{
+			id: "7C7BD39CB453595A"
+			x: 13.5d
+			y: 7.0d
+			icon: {
+				id: "create:schematic_table"
+				count: 1
+			}
+			optional: true
+			dependencies: [
+				"0F59313B69E3CBA4"
+			]
+			tasks: [
+				{
+					id: "40994DE11F522C9E"
+					type: "checkmark"
+				}
+			]
+			rewards: [
+				{
+					id: "D5654195D7954668"
+					type: "xp_levels"
+					xp_levels: 3
+				}
+			]
+		}
+		{
+			id: "3E257FC7D1897C14"
+			x: 13.5d
+			y: 11.0d
+			icon: {
+				id: "framedblocks:framed_slope"
+				count: 1
+			}
+			size: 2.5d
+			shape: "gear"
+			dependencies: [
+				"86E0CFED88D85727"
+				"801400F32E9DF3E4"
+				"B40C81F69CC129F8"
+				"8C5BEE521A7393D9"
+				"0F59313B69E3CBA4"
+			]
+			tasks: [
+				{
+					id: "7678DDF08B22DC4F"
+					type: "item"
+					item: {
+						id: "framedblocks:framed_cube"
+						count: 1
+					}
+					count: 64
+				}
+				{
+					id: "177DE2FCBEB04F1D"
+					type: "item"
+					item: {
+						id: "create:copycat_panel"
+						count: 1
+					}
+					count: 16
+				}
+				{
+					id: "2AF2DC0EB355AFD1"
+					type: "item"
+					item: {
+						id: "supplementaries:sconce"
+						count: 1
+					}
+					count: 16
+				}
+			]
+			rewards: [
+				{
+					id: "DD404C04B132B0D7"
+					type: "loot"
+					table_id: "B5AA0F94577E6A3C"
+				}
+				{
+					id: "8145FF5546DFB99F"
+					type: "item"
+					item: {
+						id: "framedblocks:framed_cube"
+						count: 1
+					}
+					count: 64
+				}
+				{
+					id: "86780E757BBF2FFD"
+					type: "xp_levels"
+					xp_levels: 15
+				}
+			]
+		}
+	]
+	images: [
+		{
+			id: "DD257F8CE9441BBA"
+			image: "kronwerke:textures/quests/building/title.png"
+			x: 7.0d
+			y: -4.6d
+			width: 4.29d
+			height: 1.8d
+			rotation: 0.0d
+			order: 1
+		}
+		{
+			id: "57463D36FD7325EB"
+			image: "kronwerke:textures/quests/building/frames.png"
+			x: 3.75d
+			y: -1.7d
+			width: 4.35d
+			height: 0.9d
+			rotation: 0.0d
+			order: 1
+		}
+		{
+			id: "584C1BFBF0CB5CAF"
+			image: "kronwerke:textures/quests/building/chipped.png"
+			x: 2.5d
+			y: 3.6d
+			width: 2.61d
+			height: 0.9d
+			rotation: 0.0d
+			order: 1
+		}
+		{
+			id: "F08F9AF8812EEAA7"
+			image: "kronwerke:textures/quests/building/supplementaries.png"
+			x: 3.75d
+			y: 8.6d
+			width: 5.63d
+			height: 0.9d
+			rotation: 0.0d
+			order: 1
+		}
+		{
+			id: "EC3DA55B46755788"
+			image: "kronwerke:textures/quests/building/create.png"
+			x: 12.25d
+			y: -1.7d
+			width: 5.25d
+			height: 0.9d
+			rotation: 0.0d
+			order: 1
+		}
+		{
+			id: "865A96C660345C57"
+			image: "kronwerke:textures/quests/building/base.png"
+			x: 12.25d
+			y: 3.6d
+			width: 3.78d
+			height: 0.9d
+			rotation: 0.0d
+			order: 1
+		}
+	]
+}

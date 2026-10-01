@@ -1,0 +1,1071 @@
+{
+	id: "F74F2829369D934C"
+	filename: "pipes"
+	icon: {
+		id: "pipez:item_pipe"
+		count: 1
+	}
+	group: "AEAA9718BAF5A32A"
+	order_index: 54
+	default_quest_shape: "square"
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			id: "7FA36163E8BA2478"
+			x: 0.0d
+			y: 0.0d
+			icon: {
+				id: "pipez:item_pipe"
+				count: 1
+			}
+			size: 2.0d
+			shape: "hexagon"
+			tasks: [
+				{
+					id: "627581B324C49046"
+					type: "item"
+					item: {
+						id: "pipez:item_pipe"
+						count: 1
+					}
+					count: 16
+				}
+			]
+			rewards: [
+				{
+					id: "E7F337E1F8CBA14B"
+					type: "item"
+					item: {
+						id: "minecraft:iron_ingot"
+						count: 1
+					}
+					count: 12
+				}
+				{
+					id: "5AA945BDC546EECE"
+					type: "loot"
+					table_id: "F2BA64790EBA3DF5"
+				}
+			]
+		}
+		{
+			id: "D2A545400BC9E18B"
+			x: 2.6d
+			y: -1.3d
+			icon: {
+				id: "pipez:wrench"
+				count: 1
+			}
+			dependencies: [
+				"7FA36163E8BA2478"
+			]
+			tasks: [
+				{
+					id: "AA945E0F759477D4"
+					type: "item"
+					item: {
+						id: "pipez:wrench"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "88A9B83078098F33"
+					type: "item"
+					item: {
+						id: "minecraft:flint"
+						count: 1
+					}
+					count: 8
+				}
+				{
+					id: "3CDB9B47062F6BED"
+					type: "xp_levels"
+					xp_levels: 3
+				}
+			]
+		}
+		{
+			id: "8FAC967952DAFADF"
+			x: 2.6d
+			y: 1.3d
+			icon: {
+				id: "minecraft:hopper"
+				count: 1
+			}
+			dependencies: [
+				"D2A545400BC9E18B"
+			]
+			tasks: [
+				{
+					id: "4A1B69855671D554"
+					type: "checkmark"
+				}
+			]
+			rewards: [
+				{
+					id: "732452B58D1E5C47"
+					type: "item"
+					item: {
+						id: "pipez:item_pipe"
+						count: 1
+					}
+					count: 16
+				}
+			]
+		}
+		{
+			id: "02A9F572E7CCF75D"
+			x: 5.2d
+			y: -1.3d
+			icon: {
+				id: "pipez:fluid_pipe"
+				count: 1
+			}
+			dependencies: [
+				"8FAC967952DAFADF"
+			]
+			tasks: [
+				{
+					id: "E3ABAA5B03861BE5"
+					type: "item"
+					item: {
+						id: "pipez:fluid_pipe"
+						count: 1
+					}
+					count: 16
+				}
+			]
+			rewards: [
+				{
+					id: "BA7CB186CEF3B8E0"
+					type: "item"
+					item: {
+						id: "minecraft:bucket"
+						count: 1
+					}
+					count: 2
+				}
+				{
+					id: "3E43F37B7D109787"
+					type: "xp_levels"
+					xp_levels: 3
+				}
+			]
+		}
+		{
+			id: "968808DE4B76F8D7"
+			x: 5.2d
+			y: 1.3d
+			icon: {
+				id: "pipez:energy_pipe"
+				count: 1
+			}
+			dependencies: [
+				"8FAC967952DAFADF"
+			]
+			tasks: [
+				{
+					id: "E999E58E8B236842"
+					type: "item"
+					item: {
+						id: "pipez:energy_pipe"
+						count: 1
+					}
+					count: 16
+				}
+			]
+			rewards: [
+				{
+					id: "E94FE964B38D19C5"
+					type: "item"
+					item: {
+						id: "minecraft:redstone"
+						count: 1
+					}
+					count: 16
+				}
+				{
+					id: "C0C354CC8CEF0C9F"
+					type: "xp_levels"
+					xp_levels: 3
+				}
+			]
+		}
+		{
+			id: "CDAFDB6BCF3980F1"
+			x: 7.8d
+			y: 1.3d
+			icon: {
+				id: "pipez:gas_pipe"
+				count: 1
+			}
+			optional: true
+			dependencies: [
+				"968808DE4B76F8D7"
+			]
+			tasks: [
+				{
+					id: "F358F45C9F7C4F76"
+					type: "item"
+					item: {
+						id: "pipez:gas_pipe"
+						count: 1
+					}
+					count: 16
+				}
+			]
+			rewards: [
+				{
+					id: "3A91673358B4E019"
+					type: "item"
+					item: {
+						id: "mekanism:alloy_infused"
+						count: 1
+					}
+					count: 4
+				}
+			]
+		}
+		{
+			id: "46974D2C235B8A69"
+			x: 7.8d
+			y: -1.3d
+			icon: {
+				id: "pipez:basic_upgrade"
+				count: 1
+			}
+			dependencies: [
+				"02A9F572E7CCF75D"
+			]
+			tasks: [
+				{
+					id: "B49D21509BC93677"
+					type: "item"
+					item: {
+						id: "pipez:basic_upgrade"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "E7E96762D8F30289"
+					type: "item"
+					item: {
+						id: "minecraft:iron_ingot"
+						count: 1
+					}
+					count: 8
+				}
+				{
+					id: "C307A48B386FBFD5"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+		}
+		{
+			id: "325B0AAB92520850"
+			x: 10.4d
+			y: -1.3d
+			icon: {
+				id: "pipez:improved_upgrade"
+				count: 1
+			}
+			dependencies: [
+				"46974D2C235B8A69"
+			]
+			tasks: [
+				{
+					id: "F4CE89DC04080EF7"
+					type: "item"
+					item: {
+						id: "pipez:improved_upgrade"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "45CA19B72B545189"
+					type: "item"
+					item: {
+						id: "minecraft:gold_ingot"
+						count: 1
+					}
+					count: 6
+				}
+				{
+					id: "DEDC878E280E9697"
+					type: "loot"
+					table_id: "F2BA64790EBA3DF5"
+				}
+			]
+		}
+		{
+			id: "CCD62F70FB9C1EFD"
+			x: 13.0d
+			y: -1.3d
+			icon: {
+				id: "pipez:filter_destination_tool"
+				count: 1
+			}
+			optional: true
+			dependencies: [
+				"325B0AAB92520850"
+			]
+			tasks: [
+				{
+					id: "0415829FF0FF9025"
+					type: "checkmark"
+				}
+			]
+			rewards: [
+				{
+					id: "E1DF73D64CD78361"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+		}
+		{
+			id: "37CED511AFFC09E4"
+			x: 0.0d
+			y: 6.0d
+			icon: {
+				id: "modularrouters:blank_module"
+				count: 1
+			}
+			size: 2.0d
+			shape: "hexagon"
+			tasks: [
+				{
+					id: "D617503AB0D214D8"
+					type: "item"
+					item: {
+						id: "modularrouters:blank_module"
+						count: 1
+					}
+					count: 12
+				}
+			]
+			rewards: [
+				{
+					id: "4ABECA7CE713F585"
+					type: "item"
+					item: {
+						id: "minecraft:paper"
+						count: 1
+					}
+					count: 16
+				}
+				{
+					id: "54B3FF1E18071CA0"
+					type: "item"
+					item: {
+						id: "minecraft:gold_ingot"
+						count: 1
+					}
+					count: 4
+				}
+				{
+					id: "121C260A4762FBA0"
+					type: "loot"
+					table_id: "F2BA64790EBA3DF5"
+				}
+			]
+		}
+		{
+			id: "9BB494BCD3F4FEA9"
+			x: 2.6d
+			y: 6.0d
+			icon: {
+				id: "modularrouters:modular_router"
+				count: 1
+			}
+			size: 1.5d
+			shape: "gear"
+			dependencies: [
+				"37CED511AFFC09E4"
+			]
+			tasks: [
+				{
+					id: "8E366872BC1B24A8"
+					type: "item"
+					item: {
+						id: "modularrouters:modular_router"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "E83D72D2F9B9E19C"
+					type: "item"
+					item: {
+						id: "minecraft:iron_bars"
+						count: 1
+					}
+					count: 8
+				}
+				{
+					id: "18020C38B7B8B651"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+		}
+		{
+			id: "BA9AAE5DD2619FB7"
+			x: 5.2d
+			y: 4.5d
+			icon: {
+				id: "modularrouters:puller_module_1"
+				count: 1
+			}
+			dependencies: [
+				"9BB494BCD3F4FEA9"
+			]
+			tasks: [
+				{
+					id: "FBC22DE3AEFC5BFF"
+					type: "item"
+					item: {
+						id: "modularrouters:puller_module_1"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "ADC615D5043AC90A"
+					type: "item"
+					item: {
+						id: "minecraft:slime_ball"
+						count: 1
+					}
+					count: 4
+				}
+				{
+					id: "3F14E83215E00D82"
+					type: "xp_levels"
+					xp_levels: 3
+				}
+			]
+		}
+		{
+			id: "66F04AA589DA5238"
+			x: 5.2d
+			y: 7.5d
+			icon: {
+				id: "modularrouters:sender_module_1"
+				count: 1
+			}
+			dependencies: [
+				"9BB494BCD3F4FEA9"
+			]
+			tasks: [
+				{
+					id: "F5CA1BF350D4C653"
+					type: "item"
+					item: {
+						id: "modularrouters:sender_module_1"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "5943C1032418C15F"
+					type: "item"
+					item: {
+						id: "minecraft:piston"
+						count: 1
+					}
+					count: 2
+				}
+				{
+					id: "8708F4609331CF81"
+					type: "xp_levels"
+					xp_levels: 3
+				}
+			]
+		}
+		{
+			id: "9C7B2F68E0B5998E"
+			x: 7.8d
+			y: 6.0d
+			icon: {
+				id: "modularrouters:sender_module_2"
+				count: 1
+			}
+			dependencies: [
+				"BA9AAE5DD2619FB7"
+				"66F04AA589DA5238"
+			]
+			tasks: [
+				{
+					id: "3A7287E19E9E2ECB"
+					type: "item"
+					item: {
+						id: "modularrouters:sender_module_2"
+						count: 1
+					}
+					count: 1
+				}
+				{
+					id: "09DD47267D2520B3"
+					type: "item"
+					item: {
+						id: "modularrouters:puller_module_2"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "629E94D06A4E20B8"
+					type: "item"
+					item: {
+						id: "minecraft:ender_pearl"
+						count: 1
+					}
+					count: 4
+				}
+				{
+					id: "FC31BBFD2FC481A5"
+					type: "loot"
+					table_id: "F2BA64790EBA3DF5"
+				}
+			]
+		}
+		{
+			id: "7CD3D976FC257AAE"
+			x: 10.4d
+			y: 4.5d
+			icon: {
+				id: "modularrouters:vacuum_module"
+				count: 1
+			}
+			dependencies: [
+				"9C7B2F68E0B5998E"
+			]
+			tasks: [
+				{
+					id: "04059B3CAE987043"
+					type: "item"
+					item: {
+						id: "modularrouters:vacuum_module"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "E84D2122E75715E0"
+					type: "item"
+					item: {
+						id: "minecraft:hopper"
+						count: 1
+					}
+					count: 2
+				}
+				{
+					id: "A244B43A60AA3116"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+		}
+		{
+			id: "E1A153DA0A016018"
+			x: 10.4d
+			y: 7.5d
+			icon: {
+				id: "modularrouters:void_module"
+				count: 1
+			}
+			dependencies: [
+				"9C7B2F68E0B5998E"
+			]
+			tasks: [
+				{
+					id: "B19B62806C53AE66"
+					type: "item"
+					item: {
+						id: "modularrouters:void_module"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "596E39DF7342FF43"
+					type: "item"
+					item: {
+						id: "minecraft:lava_bucket"
+						count: 1
+					}
+					count: 1
+				}
+				{
+					id: "37287CDA34641343"
+					type: "xp_levels"
+					xp_levels: 3
+				}
+			]
+		}
+		{
+			id: "4A14AA4A7BC2D925"
+			x: 13.0d
+			y: 4.5d
+			icon: {
+				id: "modularrouters:breaker_module"
+				count: 1
+			}
+			dependencies: [
+				"7CD3D976FC257AAE"
+			]
+			tasks: [
+				{
+					id: "450F5453D2ECEF7E"
+					type: "item"
+					item: {
+						id: "modularrouters:breaker_module"
+						count: 1
+					}
+					count: 1
+				}
+				{
+					id: "00D109B424CFA217"
+					type: "item"
+					item: {
+						id: "modularrouters:placer_module"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "77944AEDB17ED53C"
+					type: "item"
+					item: {
+						id: "minecraft:iron_pickaxe"
+						count: 1
+					}
+					count: 1
+				}
+				{
+					id: "6E577A8FE5E81813"
+					type: "loot"
+					table_id: "F2BA64790EBA3DF5"
+				}
+			]
+		}
+		{
+			id: "50934AC64E99612A"
+			x: 13.0d
+			y: 7.5d
+			icon: {
+				id: "modularrouters:fluid_module"
+				count: 1
+			}
+			optional: true
+			dependencies: [
+				"E1A153DA0A016018"
+			]
+			tasks: [
+				{
+					id: "200F52FB50131943"
+					type: "item"
+					item: {
+						id: "modularrouters:fluid_module"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "97075963552CB6F2"
+					type: "item"
+					item: {
+						id: "minecraft:bucket"
+						count: 1
+					}
+					count: 2
+				}
+				{
+					id: "B3DDB0E7EFB7E494"
+					type: "xp_levels"
+					xp_levels: 3
+				}
+			]
+		}
+		{
+			id: "75BE6537FF06CEDF"
+			x: 2.6d
+			y: 10.0d
+			icon: {
+				id: "modularrouters:speed_upgrade"
+				count: 1
+			}
+			dependencies: [
+				"9BB494BCD3F4FEA9"
+			]
+			tasks: [
+				{
+					id: "6CC5D3AD69FCBF3D"
+					type: "item"
+					item: {
+						id: "modularrouters:speed_upgrade"
+						count: 1
+					}
+					count: 1
+				}
+				{
+					id: "0FC8825DC5E33E89"
+					type: "item"
+					item: {
+						id: "modularrouters:stack_upgrade"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "C47E48376D05076B"
+					type: "item"
+					item: {
+						id: "modularrouters:blank_upgrade"
+						count: 1
+					}
+					count: 4
+				}
+				{
+					id: "5ECABD43A8A1C32C"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+		}
+		{
+			id: "F1AF38196989803D"
+			x: 5.2d
+			y: 10.0d
+			icon: {
+				id: "modularrouters:augment_core"
+				count: 1
+			}
+			dependencies: [
+				"75BE6537FF06CEDF"
+			]
+			tasks: [
+				{
+					id: "8DDB884A3FDB844C"
+					type: "item"
+					item: {
+						id: "modularrouters:augment_core"
+						count: 1
+					}
+					count: 4
+				}
+				{
+					id: "C4BAD328AF145E9E"
+					type: "item"
+					item: {
+						id: "modularrouters:range_up_augment"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "D135C678AF983CEF"
+					type: "item"
+					item: {
+						id: "minecraft:quartz"
+						count: 1
+					}
+					count: 8
+				}
+				{
+					id: "A1EB765D8AC2FD38"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+		}
+		{
+			id: "E6D75FCFEEA0FCB8"
+			x: 7.8d
+			y: 10.0d
+			icon: {
+				id: "modularrouters:bulk_item_filter"
+				count: 1
+			}
+			dependencies: [
+				"F1AF38196989803D"
+			]
+			tasks: [
+				{
+					id: "D2FA3D095778831A"
+					type: "item"
+					item: {
+						id: "modularrouters:bulk_item_filter"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "79480B9B3C417F8F"
+					type: "item"
+					item: {
+						id: "minecraft:diamond"
+						count: 1
+					}
+					count: 1
+				}
+				{
+					id: "A83AC22F9E318E30"
+					type: "loot"
+					table_id: "BA8E33E78A3B3A0C"
+				}
+			]
+		}
+		{
+			id: "14BE0A6B973ADB1C"
+			x: 10.4d
+			y: 10.0d
+			icon: {
+				id: "modularrouters:distributor_module"
+				count: 1
+			}
+			dependencies: [
+				"E6D75FCFEEA0FCB8"
+				"9C7B2F68E0B5998E"
+			]
+			tasks: [
+				{
+					id: "971BFA3D541D0A8B"
+					type: "item"
+					item: {
+						id: "modularrouters:distributor_module"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "0E073D1D255166B4"
+					type: "item"
+					item: {
+						id: "minecraft:ender_pearl"
+						count: 1
+					}
+					count: 4
+				}
+				{
+					id: "F82AE87B9693432F"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+		}
+		{
+			id: "E79CF2AACC3D7BAE"
+			x: 13.5d
+			y: 10.5d
+			icon: {
+				id: "modularrouters:bulk_item_filter"
+				count: 1
+			}
+			size: 2.5d
+			shape: "gear"
+			dependencies: [
+				"14BE0A6B973ADB1C"
+			]
+			tasks: [
+				{
+					id: "21EE03DDAD75AC15"
+					type: "item"
+					item: {
+						id: "modularrouters:modular_router"
+						count: 1
+					}
+					count: 2
+				}
+				{
+					id: "8F7D572F44AD722F"
+					type: "item"
+					item: {
+						id: "modularrouters:sender_module_2"
+						count: 1
+					}
+					count: 4
+				}
+				{
+					id: "CA172E79AFFF1540"
+					type: "item"
+					item: {
+						id: "modularrouters:bulk_item_filter"
+						count: 1
+					}
+					count: 4
+				}
+			]
+			rewards: [
+				{
+					id: "DA0710D4D9E08582"
+					type: "loot"
+					table_id: "C79EAEAE0F26AA7F"
+				}
+				{
+					id: "DD6E5D1DA9769328"
+					type: "item"
+					item: {
+						id: "modularrouters:stack_upgrade"
+						count: 1
+					}
+					count: 2
+				}
+				{
+					id: "DD98BD22B134FE68"
+					type: "xp_levels"
+					xp_levels: 20
+				}
+			]
+		}
+		{
+			id: "AE9375CD7886E0FA"
+			x: 0.0d
+			y: 14.5d
+			icon: {
+				id: "rangedpumps:pump"
+				count: 1
+			}
+			size: 1.5d
+			shape: "hexagon"
+			dependencies: [
+				"02A9F572E7CCF75D"
+			]
+			tasks: [
+				{
+					id: "1CD8A6A22F2B9FB2"
+					type: "item"
+					item: {
+						id: "rangedpumps:pump"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "BF2DDE9CF2AD6F1E"
+					type: "item"
+					item: {
+						id: "pipez:fluid_pipe"
+						count: 1
+					}
+					count: 16
+				}
+				{
+					id: "7747BE20C8EB48DC"
+					type: "loot"
+					table_id: "BA8E33E78A3B3A0C"
+				}
+				{
+					id: "51DDF1232ED82F1B"
+					type: "xp_levels"
+					xp_levels: 10
+				}
+			]
+		}
+		{
+			id: "D6C1C8012DCC11CD"
+			x: 3.0d
+			y: 14.5d
+			icon: {
+				id: "minecraft:clock"
+				count: 1
+			}
+			optional: true
+			dependencies: [
+				"AE9375CD7886E0FA"
+			]
+			tasks: [
+				{
+					id: "8663054419BFFAC3"
+					type: "checkmark"
+				}
+			]
+			rewards: [
+				{
+					id: "141465F0B2C52EFA"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+		}
+	]
+	images: [
+		{
+			id: "2EF8EB270B6721E2"
+			image: "kronwerke:textures/quests/pipes/title.png"
+			x: 7.0d
+			y: -5.0d
+			width: 11.78d
+			height: 1.75d
+			rotation: 0.0d
+			order: 1
+		}
+		{
+			id: "595BE910403BD11D"
+			image: "kronwerke:textures/quests/pipes/pipez.png"
+			x: 6.5d
+			y: -2.9d
+			width: 1.83d
+			height: 0.9d
+			rotation: 0.0d
+			order: 1
+		}
+		{
+			id: "9880270A1C1F4679"
+			image: "kronwerke:textures/quests/pipes/routers.png"
+			x: 6.8d
+			y: 2.9d
+			width: 5.78d
+			height: 0.9d
+			rotation: 0.0d
+			order: 1
+		}
+		{
+			id: "AA5D9D93E791FB03"
+			image: "kronwerke:textures/quests/pipes/pumps.png"
+			x: 1.5d
+			y: 12.8d
+			width: 5.52d
+			height: 0.9d
+			rotation: 0.0d
+			order: 1
+		}
+	]
+}

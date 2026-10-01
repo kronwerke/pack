@@ -1,0 +1,1253 @@
+{
+	id: "79478114E89F20C7"
+	filename: "refined_storage"
+	icon: {
+		id: "refinedstorage:controller"
+		count: 1
+	}
+	group: "AEAA9718BAF5A32A"
+	order_index: 53
+	default_quest_shape: "square"
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			id: "1E8CEA97A3CC10BC"
+			x: 0.0d
+			y: 1.0d
+			icon: {
+				id: "refinedstorage:controller"
+				count: 1
+			}
+			size: 2.0d
+			shape: "hexagon"
+			tasks: [
+				{
+					id: "CD14EA8E187436EC"
+					type: "item"
+					item: {
+						id: "refinedstorage:quartz_enriched_iron"
+						count: 1
+					}
+					count: 16
+				}
+			]
+			rewards: [
+				{
+					id: "177BDB925016A596"
+					type: "item"
+					item: {
+						id: "minecraft:quartz"
+						count: 1
+					}
+					count: 16
+				}
+				{
+					id: "7599C43CDD8B8AE1"
+					type: "loot"
+					table_id: "BB5E855731D4F100"
+				}
+			]
+		}
+		{
+			id: "7268725CEAC4C6AA"
+			x: 2.5d
+			y: 0.0d
+			dependencies: [
+				"1E8CEA97A3CC10BC"
+			]
+			tasks: [
+				{
+					id: "9BD07BC66A543941"
+					type: "item"
+					item: {
+						id: "refinedstorage:silicon"
+						count: 1
+					}
+					count: 16
+				}
+			]
+			rewards: [
+				{
+					id: "DC49ECF804253D2B"
+					type: "item"
+					item: {
+						id: "minecraft:quartz"
+						count: 1
+					}
+					count: 16
+				}
+				{
+					id: "43B9A04DC0F87F3B"
+					type: "xp_levels"
+					xp_levels: 3
+				}
+			]
+		}
+		{
+			id: "55398B8ADE85B09A"
+			x: 2.5d
+			y: 2.0d
+			icon: {
+				id: "refinedstorage:processor_binding"
+				count: 1
+			}
+			dependencies: [
+				"1E8CEA97A3CC10BC"
+			]
+			tasks: [
+				{
+					id: "BAC83318B3C039EA"
+					type: "item"
+					item: {
+						id: "refinedstorage:processor_binding"
+						count: 1
+					}
+					count: 8
+				}
+			]
+			rewards: [
+				{
+					id: "281D1115B3B9224B"
+					type: "item"
+					item: {
+						id: "minecraft:slime_ball"
+						count: 1
+					}
+					count: 4
+				}
+				{
+					id: "314D2F4FB546EE36"
+					type: "item"
+					item: {
+						id: "minecraft:string"
+						count: 1
+					}
+					count: 16
+				}
+			]
+		}
+		{
+			id: "61B1B80464BB336C"
+			x: 5.0d
+			y: 1.0d
+			icon: {
+				id: "refinedstorage:advanced_processor"
+				count: 1
+			}
+			size: 2.0d
+			shape: "gear"
+			dependencies: [
+				"7268725CEAC4C6AA"
+				"55398B8ADE85B09A"
+			]
+			tasks: [
+				{
+					id: "953F94AEBF50B58C"
+					type: "item"
+					item: {
+						id: "refinedstorage:basic_processor"
+						count: 1
+					}
+					count: 4
+				}
+				{
+					id: "78A2ECE14B875911"
+					type: "item"
+					item: {
+						id: "refinedstorage:improved_processor"
+						count: 1
+					}
+					count: 4
+				}
+				{
+					id: "B1AC1F552AB340D9"
+					type: "item"
+					item: {
+						id: "refinedstorage:advanced_processor"
+						count: 1
+					}
+					count: 4
+				}
+			]
+			rewards: [
+				{
+					id: "D788B272487F428D"
+					type: "item"
+					item: {
+						id: "minecraft:diamond"
+						count: 1
+					}
+					count: 4
+				}
+				{
+					id: "876DB9C719FCC5FE"
+					type: "loot"
+					table_id: "6BD556482A471D58"
+				}
+				{
+					id: "3032C03E60962D4F"
+					type: "xp_levels"
+					xp_levels: 10
+				}
+			]
+		}
+		{
+			id: "3049757F890F8E58"
+			x: 7.5d
+			y: 0.0d
+			icon: {
+				id: "refinedstorage:machine_casing"
+				count: 1
+			}
+			dependencies: [
+				"1E8CEA97A3CC10BC"
+			]
+			tasks: [
+				{
+					id: "804D4FD8D72A7785"
+					type: "item"
+					item: {
+						id: "refinedstorage:machine_casing"
+						count: 1
+					}
+					count: 4
+				}
+			]
+			rewards: [
+				{
+					id: "89DE1AD900EC92CC"
+					type: "item"
+					item: {
+						id: "refinedstorage:quartz_enriched_iron"
+						count: 1
+					}
+					count: 16
+				}
+			]
+		}
+		{
+			id: "6287772E5712B0C0"
+			x: 7.5d
+			y: 2.0d
+			icon: {
+				id: "refinedstorage:construction_core"
+				count: 1
+			}
+			dependencies: [
+				"61B1B80464BB336C"
+			]
+			tasks: [
+				{
+					id: "E8BC5C6F5C31EA5F"
+					type: "item"
+					item: {
+						id: "refinedstorage:construction_core"
+						count: 1
+					}
+					count: 2
+				}
+				{
+					id: "4C5943ABEEE55F5A"
+					type: "item"
+					item: {
+						id: "refinedstorage:destruction_core"
+						count: 1
+					}
+					count: 2
+				}
+			]
+			rewards: [
+				{
+					id: "E97E835A90CA3136"
+					type: "item"
+					item: {
+						id: "minecraft:glowstone_dust"
+						count: 1
+					}
+					count: 8
+				}
+				{
+					id: "050B55331CF51D03"
+					type: "item"
+					item: {
+						id: "minecraft:quartz"
+						count: 1
+					}
+					count: 8
+				}
+				{
+					id: "2DEA5872570C59BF"
+					type: "xp_levels"
+					xp_levels: 3
+				}
+			]
+		}
+		{
+			id: "BCE05A7727557306"
+			x: 10.5d
+			y: 1.0d
+			icon: {
+				id: "refinedstorage:controller"
+				count: 1
+			}
+			size: 1.75d
+			shape: "gear"
+			dependencies: [
+				"61B1B80464BB336C"
+				"3049757F890F8E58"
+			]
+			tasks: [
+				{
+					id: "290EE6387616827D"
+					type: "item"
+					item: {
+						id: "refinedstorage:controller"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "423FA9C246EA1191"
+					type: "item"
+					item: {
+						id: "mekanism:basic_universal_cable"
+						count: 1
+					}
+					count: 16
+				}
+				{
+					id: "61FD85B4FF552FF9"
+					type: "loot"
+					table_id: "BB5E855731D4F100"
+				}
+				{
+					id: "3B16440C891A1640"
+					type: "xp_levels"
+					xp_levels: 10
+				}
+			]
+		}
+		{
+			id: "501ADF29871509C8"
+			x: 13.0d
+			y: 0.0d
+			dependencies: [
+				"BCE05A7727557306"
+			]
+			tasks: [
+				{
+					id: "D57AB53E40810D46"
+					type: "item"
+					item: {
+						id: "refinedstorage:cable"
+						count: 1
+					}
+					count: 24
+				}
+			]
+			rewards: [
+				{
+					id: "8166B339EC8041C4"
+					type: "item"
+					item: {
+						id: "refinedstorage:cable"
+						count: 1
+					}
+					count: 24
+				}
+				{
+					id: "573280CDBF025F51"
+					type: "xp_levels"
+					xp_levels: 3
+				}
+			]
+		}
+		{
+			id: "18A140EFA693F97A"
+			x: 13.0d
+			y: 2.0d
+			icon: {
+				id: "refinedstorage:grid"
+				count: 1
+			}
+			dependencies: [
+				"BCE05A7727557306"
+				"6287772E5712B0C0"
+			]
+			tasks: [
+				{
+					id: "3CFC3F1070406129"
+					type: "item"
+					item: {
+						id: "refinedstorage:grid"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "F17A245698D78D3B"
+					type: "item"
+					item: {
+						id: "minecraft:glass"
+						count: 1
+					}
+					count: 16
+				}
+				{
+					id: "92CC8A06596F5EA7"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+		}
+		{
+			id: "99521344142AA0CA"
+			x: 15.5d
+			y: 1.0d
+			icon: {
+				id: "refinedstorage:disk_drive"
+				count: 1
+			}
+			size: 1.75d
+			shape: "hexagon"
+			dependencies: [
+				"18A140EFA693F97A"
+			]
+			tasks: [
+				{
+					id: "5BA3CCDCCE18789E"
+					type: "item"
+					item: {
+						id: "refinedstorage:disk_drive"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "31A1EE6640AE3EED"
+					type: "item"
+					item: {
+						id: "refinedstorage:storage_housing"
+						count: 1
+					}
+					count: 2
+				}
+				{
+					id: "23AAECE49B73831B"
+					type: "loot"
+					table_id: "BB5E855731D4F100"
+				}
+				{
+					id: "E597FB2AEBD229EA"
+					type: "xp_levels"
+					xp_levels: 10
+				}
+			]
+		}
+		{
+			id: "8A0C1E2EB1048AD7"
+			x: 18.0d
+			y: 0.0d
+			icon: {
+				id: "refinedstorage:1k_storage_disk"
+				count: 1
+			}
+			dependencies: [
+				"99521344142AA0CA"
+			]
+			tasks: [
+				{
+					id: "D6CFD476BD68ECBD"
+					type: "item"
+					item: {
+						id: "refinedstorage:1k_storage_disk"
+						count: 1
+					}
+					count: 2
+				}
+			]
+			rewards: [
+				{
+					id: "BD4CDAAF26DBD441"
+					type: "item"
+					item: {
+						id: "refinedstorage:1k_storage_part"
+						count: 1
+					}
+					count: 2
+				}
+				{
+					id: "2BA389A460E01FFF"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+		}
+		{
+			id: "5AB3A70FA2E18096"
+			x: 20.5d
+			y: 0.0d
+			icon: {
+				id: "refinedstorage:16k_storage_disk"
+				count: 1
+			}
+			dependencies: [
+				"8A0C1E2EB1048AD7"
+			]
+			tasks: [
+				{
+					id: "A0E32CDC172D4248"
+					type: "item"
+					item: {
+						id: "refinedstorage:4k_storage_disk"
+						count: 1
+					}
+					count: 1
+				}
+				{
+					id: "6A0B20E80B3941FC"
+					type: "item"
+					item: {
+						id: "refinedstorage:16k_storage_disk"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "3D0BB101DB13C7AC"
+					type: "item"
+					item: {
+						id: "refinedstorage:basic_processor"
+						count: 1
+					}
+					count: 8
+				}
+				{
+					id: "A6B9BED0BC019EBF"
+					type: "loot"
+					table_id: "6BD556482A471D58"
+				}
+				{
+					id: "07681FB9D11F828B"
+					type: "xp_levels"
+					xp_levels: 10
+				}
+			]
+		}
+		{
+			id: "4C4E0AB60F5F5436"
+			x: 18.0d
+			y: 2.0d
+			icon: {
+				id: "refinedstorage:crafting_grid"
+				count: 1
+			}
+			dependencies: [
+				"18A140EFA693F97A"
+			]
+			tasks: [
+				{
+					id: "1DF5A60631C6BC5D"
+					type: "item"
+					item: {
+						id: "refinedstorage:crafting_grid"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "745C0528195133FD"
+					type: "item"
+					item: {
+						id: "refinedstorage:improved_processor"
+						count: 1
+					}
+					count: 4
+				}
+				{
+					id: "67FB85C5DB6D41E1"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+		}
+		{
+			id: "BC9FC3E47AEA9B2E"
+			x: 20.5d
+			y: 2.0d
+			icon: {
+				id: "refinedstorage:64b_fluid_storage_disk"
+				count: 1
+			}
+			optional: true
+			dependencies: [
+				"8A0C1E2EB1048AD7"
+			]
+			tasks: [
+				{
+					id: "F2FEF7FEABB62BA7"
+					type: "item"
+					item: {
+						id: "refinedstorage:64b_fluid_storage_disk"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "6EC5876963FC7827"
+					type: "item"
+					item: {
+						id: "minecraft:bucket"
+						count: 1
+					}
+					count: 4
+				}
+				{
+					id: "23484B4C9BA9E6FC"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+		}
+		{
+			id: "02E91EC55D17EDB2"
+			x: 0.0d
+			y: 7.0d
+			icon: {
+				id: "refinedstorage:importer"
+				count: 1
+			}
+			dependencies: [
+				"99521344142AA0CA"
+			]
+			tasks: [
+				{
+					id: "5032026EAFF9605E"
+					type: "item"
+					item: {
+						id: "refinedstorage:importer"
+						count: 1
+					}
+					count: 2
+				}
+			]
+			rewards: [
+				{
+					id: "0382B233A4D2D43A"
+					type: "item"
+					item: {
+						id: "refinedstorage:cable"
+						count: 1
+					}
+					count: 12
+				}
+				{
+					id: "273C82E293D44E8B"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+		}
+		{
+			id: "F48C590974DD4523"
+			x: 2.5d
+			y: 7.0d
+			icon: {
+				id: "refinedstorage:exporter"
+				count: 1
+			}
+			dependencies: [
+				"02E91EC55D17EDB2"
+			]
+			tasks: [
+				{
+					id: "B0F9E4873F3D969C"
+					type: "item"
+					item: {
+						id: "refinedstorage:exporter"
+						count: 1
+					}
+					count: 2
+				}
+			]
+			rewards: [
+				{
+					id: "9C7A2D5A3D927B56"
+					type: "item"
+					item: {
+						id: "refinedstorage:construction_core"
+						count: 1
+					}
+					count: 2
+				}
+				{
+					id: "6185BAF8D19E3A55"
+					type: "item"
+					item: {
+						id: "refinedstorage:destruction_core"
+						count: 1
+					}
+					count: 2
+				}
+				{
+					id: "10235E8BC134E383"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+		}
+		{
+			id: "55A1592CA61E4C74"
+			x: 2.5d
+			y: 9.0d
+			icon: {
+				id: "refinedstorage:stack_upgrade"
+				count: 1
+			}
+			optional: true
+			dependencies: [
+				"F48C590974DD4523"
+			]
+			tasks: [
+				{
+					id: "0E4C97944F0ED1BF"
+					type: "item"
+					item: {
+						id: "refinedstorage:speed_upgrade"
+						count: 1
+					}
+					count: 2
+				}
+				{
+					id: "0718604A6DC3AABD"
+					type: "item"
+					item: {
+						id: "refinedstorage:stack_upgrade"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "0A1D030EB84298FB"
+					type: "item"
+					item: {
+						id: "minecraft:sugar"
+						count: 1
+					}
+					count: 32
+				}
+				{
+					id: "C37E861EE36C181D"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+		}
+		{
+			id: "70DF5349940BE080"
+			x: 5.0d
+			y: 7.0d
+			icon: {
+				id: "refinedstorage:external_storage"
+				count: 1
+			}
+			dependencies: [
+				"02E91EC55D17EDB2"
+			]
+			tasks: [
+				{
+					id: "9E681BC6194756A4"
+					type: "item"
+					item: {
+						id: "refinedstorage:external_storage"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "AA0D2CD0F3A6D9CB"
+					type: "item"
+					item: {
+						id: "minecraft:chest"
+						count: 1
+					}
+					count: 8
+				}
+				{
+					id: "1EC73137B93D8270"
+					type: "loot"
+					table_id: "BB5E855731D4F100"
+				}
+				{
+					id: "0BCAD7929D6A6A1B"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+		}
+		{
+			id: "519872B74EBD9A2C"
+			x: 5.0d
+			y: 9.0d
+			icon: {
+				id: "refinedstorage:interface"
+				count: 1
+			}
+			optional: true
+			dependencies: [
+				"F48C590974DD4523"
+			]
+			tasks: [
+				{
+					id: "8F9413497FAFFE8E"
+					type: "item"
+					item: {
+						id: "refinedstorage:interface"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "1F64AD06AD536E93"
+					type: "item"
+					item: {
+						id: "minecraft:hopper"
+						count: 1
+					}
+					count: 4
+				}
+				{
+					id: "4F319F6E544BF95A"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+		}
+		{
+			id: "D9AA3AB276C25FB6"
+			x: 7.5d
+			y: 7.0d
+			icon: {
+				id: "refinedstorage:wireless_grid"
+				count: 1
+			}
+			size: 1.5d
+			shape: "hexagon"
+			dependencies: [
+				"4C4E0AB60F5F5436"
+			]
+			tasks: [
+				{
+					id: "83061B10186BCAEA"
+					type: "item"
+					item: {
+						id: "refinedstorage:wireless_transmitter"
+						count: 1
+					}
+					count: 1
+				}
+				{
+					id: "EE56AF322A02AC37"
+					type: "item"
+					item: {
+						id: "refinedstorage:wireless_grid"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "C1744E15988EE4C7"
+					type: "item"
+					item: {
+						id: "minecraft:ender_pearl"
+						count: 1
+					}
+					count: 8
+				}
+				{
+					id: "F1602765577535F8"
+					type: "loot"
+					table_id: "6BD556482A471D58"
+				}
+				{
+					id: "CB3FD9823CB7F3D7"
+					type: "xp_levels"
+					xp_levels: 10
+				}
+			]
+		}
+		{
+			id: "0318044860D7CA81"
+			x: 7.5d
+			y: 9.0d
+			icon: {
+				id: "refinedstorage:destructor"
+				count: 1
+			}
+			optional: true
+			dependencies: [
+				"70DF5349940BE080"
+			]
+			tasks: [
+				{
+					id: "5FB38E7995D03412"
+					type: "item"
+					item: {
+						id: "refinedstorage:constructor"
+						count: 1
+					}
+					count: 1
+				}
+				{
+					id: "6976B7028EDCF57F"
+					type: "item"
+					item: {
+						id: "refinedstorage:destructor"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "3DAA7A681B744C6E"
+					type: "item"
+					item: {
+						id: "minecraft:diamond"
+						count: 1
+					}
+					count: 4
+				}
+				{
+					id: "5692E16E7040FEAA"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+		}
+		{
+			id: "362A34FB49DF9AFF"
+			x: 11.0d
+			y: 7.0d
+			icon: {
+				id: "refinedstorage:pattern_grid"
+				count: 1
+			}
+			dependencies: [
+				"4C4E0AB60F5F5436"
+			]
+			tasks: [
+				{
+					id: "C30435AB7056832A"
+					type: "item"
+					item: {
+						id: "refinedstorage:pattern_grid"
+						count: 1
+					}
+					count: 1
+				}
+				{
+					id: "EE5C585C38713B08"
+					type: "item"
+					item: {
+						id: "refinedstorage:pattern"
+						count: 1
+					}
+					count: 8
+				}
+			]
+			rewards: [
+				{
+					id: "DADC72109DC78D9A"
+					type: "item"
+					item: {
+						id: "refinedstorage:pattern"
+						count: 1
+					}
+					count: 8
+				}
+				{
+					id: "7DE202C87FD0ABC2"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+		}
+		{
+			id: "A619DA1F4243B667"
+			x: 13.5d
+			y: 7.0d
+			icon: {
+				id: "refinedstorage:autocrafter"
+				count: 1
+			}
+			size: 1.75d
+			shape: "gear"
+			dependencies: [
+				"362A34FB49DF9AFF"
+			]
+			tasks: [
+				{
+					id: "8C0A4F2E6CA15CB8"
+					type: "item"
+					item: {
+						id: "refinedstorage:autocrafter"
+						count: 1
+					}
+					count: 2
+				}
+			]
+			rewards: [
+				{
+					id: "0DF02C559A893CCD"
+					type: "item"
+					item: {
+						id: "refinedstorage:advanced_processor"
+						count: 1
+					}
+					count: 4
+				}
+				{
+					id: "9249F10ADEB6A4AF"
+					type: "loot"
+					table_id: "6BD556482A471D58"
+				}
+				{
+					id: "630D137CC0A82247"
+					type: "xp_levels"
+					xp_levels: 10
+				}
+			]
+		}
+		{
+			id: "C55126D028749A52"
+			x: 13.5d
+			y: 9.0d
+			icon: {
+				id: "refinedstorage:autocrafting_monitor"
+				count: 1
+			}
+			dependencies: [
+				"A619DA1F4243B667"
+			]
+			tasks: [
+				{
+					id: "51D1D7B9D8C15B51"
+					type: "item"
+					item: {
+						id: "refinedstorage:autocrafting_monitor"
+						count: 1
+					}
+					count: 1
+				}
+				{
+					id: "96D54A783E54C5A1"
+					type: "item"
+					item: {
+						id: "refinedstorage:autocrafting_upgrade"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "A606F011B22D92D0"
+					type: "item"
+					item: {
+						id: "refinedstorage:pattern"
+						count: 1
+					}
+					count: 8
+				}
+				{
+					id: "3A42EA6C175389AA"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+		}
+		{
+			id: "03BB52981D33238D"
+			x: 16.0d
+			y: 7.0d
+			icon: {
+				id: "cabletiers:elite_importer"
+				count: 1
+			}
+			dependencies: [
+				"A619DA1F4243B667"
+				"F48C590974DD4523"
+			]
+			tasks: [
+				{
+					id: "5611A995F7A5CA10"
+					type: "item"
+					item: {
+						id: "cabletiers:elite_importer"
+						count: 1
+					}
+					count: 1
+				}
+				{
+					id: "50CA13A247974FF2"
+					type: "item"
+					item: {
+						id: "cabletiers:elite_exporter"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "A41B97E0FBDD6B66"
+					type: "item"
+					item: {
+						id: "minecraft:iron_block"
+						count: 1
+					}
+					count: 8
+				}
+				{
+					id: "AB8954482A1F6249"
+					type: "loot"
+					table_id: "6BD556482A471D58"
+				}
+				{
+					id: "A5C9190EB9486DE9"
+					type: "xp_levels"
+					xp_levels: 10
+				}
+			]
+		}
+		{
+			id: "592BB8E34F1C80AA"
+			x: 18.5d
+			y: 8.0d
+			icon: {
+				id: "mekanism:advanced_control_circuit"
+				count: 1
+			}
+			size: 2.5d
+			shape: "gear"
+			dependencies: [
+				"C55126D028749A52"
+				"5AB3A70FA2E18096"
+			]
+			tasks: [
+				{
+					id: "FE7A24812E6AFB80"
+					type: "item"
+					item: {
+						id: "mekanism:advanced_control_circuit"
+						count: 1
+					}
+					count: 32
+				}
+				{
+					id: "676B92FFA4964BC8"
+					type: "item"
+					item: {
+						id: "refinedstorage:16k_storage_disk"
+						count: 1
+					}
+					count: 2
+				}
+			]
+			rewards: [
+				{
+					id: "DFE85500220A1964"
+					type: "loot"
+					table_id: "6320E512778B48ED"
+				}
+				{
+					id: "4260CDE22FEDC1F8"
+					type: "item"
+					item: {
+						id: "refinedstorage:16k_storage_part"
+						count: 1
+					}
+					count: 1
+				}
+				{
+					id: "E38003F264EA2313"
+					type: "xp_levels"
+					xp_levels: 25
+				}
+			]
+		}
+	]
+	images: [
+		{
+			id: "EE071BCC9E0C4D77"
+			image: "kronwerke:textures/quests/refined_storage/title.png"
+			x: 10.0d
+			y: -5.0d
+			width: 10.68d
+			height: 1.75d
+			rotation: 0.0d
+			order: 1
+		}
+		{
+			id: "377591D7815AF4EB"
+			image: "kronwerke:textures/quests/refined_storage/processors.png"
+			x: 3.7d
+			y: -2.7d
+			width: 7.01d
+			height: 0.9d
+			rotation: 0.0d
+			order: 1
+		}
+		{
+			id: "7FFA9B6F09053E34"
+			image: "kronwerke:textures/quests/refined_storage/network.png"
+			x: 15.5d
+			y: -2.7d
+			width: 4.65d
+			height: 0.9d
+			rotation: 0.0d
+			order: 1
+		}
+		{
+			id: "0E0C2E6F7CD10FB0"
+			image: "kronwerke:textures/quests/refined_storage/io.png"
+			x: 3.7d
+			y: 4.6d
+			width: 4.62d
+			height: 0.9d
+			rotation: 0.0d
+			order: 1
+		}
+		{
+			id: "8ABDBB6F857B2E3F"
+			image: "kronwerke:textures/quests/refined_storage/autocrafting.png"
+			x: 14.7d
+			y: 4.6d
+			width: 4.48d
+			height: 0.9d
+			rotation: 0.0d
+			order: 1
+		}
+	]
+}

@@ -1,0 +1,1165 @@
+{
+	id: "3340A80A91A38798"
+	filename: "apotheosis"
+	icon: {
+		id: "apotheosis:salvaging_table"
+		count: 1
+	}
+	group: "E25CBCE1B745D8F7"
+	order_index: 49
+	default_quest_shape: "circle"
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			id: "F821C33E0BCF27F2"
+			x: 0.0d
+			y: 1.0d
+			icon: {
+				id: "minecraft:iron_sword"
+				count: 1
+			}
+			size: 2.0d
+			shape: "hexagon"
+			tasks: [
+				{
+					id: "86FE4B471450B74A"
+					type: "advancement"
+					advancement: "apotheosis:progression/haven"
+					criterion: ""
+				}
+			]
+			rewards: [
+				{
+					id: "D01B173D9FD192D2"
+					type: "loot"
+					table_id: "1EBBC2B918151958"
+				}
+				{
+					id: "45A1FDCFAD997F0C"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+		}
+		{
+			id: "9E6A3398CEDD686B"
+			x: 2.5d
+			y: 0.0d
+			icon: {
+				id: "minecraft:name_tag"
+				count: 1
+			}
+			dependencies: [
+				"F821C33E0BCF27F2"
+			]
+			tasks: [
+				{
+					id: "86BD280ED3D29033"
+					type: "checkmark"
+				}
+			]
+			rewards: [
+				{
+					id: "8E9AAE4DE909883B"
+					type: "xp_levels"
+					xp_levels: 3
+				}
+			]
+		}
+		{
+			id: "B2CDB5AFF4147675"
+			x: 2.5d
+			y: 2.0d
+			icon: {
+				id: "minecraft:compass"
+				count: 1
+			}
+			dependencies: [
+				"F821C33E0BCF27F2"
+			]
+			tasks: [
+				{
+					id: "20038CB74C779091"
+					type: "checkmark"
+				}
+			]
+			rewards: [
+				{
+					id: "A209516C2A3DAD02"
+					type: "xp_levels"
+					xp_levels: 3
+				}
+			]
+		}
+		{
+			id: "67A44B861E5D9B45"
+			x: 5.0d
+			y: 1.0d
+			icon: {
+				id: "minecraft:iron_chestplate"
+				count: 1
+			}
+			size: 1.5d
+			shape: "diamond"
+			dependencies: [
+				"9E6A3398CEDD686B"
+				"B2CDB5AFF4147675"
+			]
+			tasks: [
+				{
+					id: "5509567E74FFF2D5"
+					type: "advancement"
+					advancement: "apotheosis:progression/frontier"
+					criterion: ""
+				}
+			]
+			rewards: [
+				{
+					id: "B36315A226E3F969"
+					type: "loot"
+					table_id: "870211AF0E412C54"
+				}
+				{
+					id: "0CB928AF40631EB5"
+					type: "xp_levels"
+					xp_levels: 10
+				}
+			]
+		}
+		{
+			id: "DAB490BEF1B45400"
+			x: 7.5d
+			y: 1.0d
+			icon: {
+				id: "minecraft:beacon"
+				count: 1
+			}
+			optional: true
+			dependencies: [
+				"67A44B861E5D9B45"
+			]
+			tasks: [
+				{
+					id: "542277380A5DA4DE"
+					type: "checkmark"
+				}
+			]
+			rewards: [
+				{
+					id: "5F52390AEBDBBBEF"
+					type: "loot"
+					table_id: "1EBBC2B918151958"
+				}
+				{
+					id: "8D8B5882E399C552"
+					type: "xp_levels"
+					xp_levels: 10
+				}
+			]
+		}
+		{
+			id: "559044911D6B77C7"
+			x: 0.0d
+			y: 7.0d
+			icon: {
+				id: "apotheosis:gem"
+				count: 1
+			}
+			size: 1.5d
+			dependencies: [
+				"F821C33E0BCF27F2"
+			]
+			tasks: [
+				{
+					id: "C5741EB51CF62F99"
+					type: "item"
+					item: {
+						id: "apotheosis:gem"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "C1A0B11C517FB600"
+					type: "item"
+					item: {
+						id: "apotheosis:gem_dust"
+						count: 1
+					}
+					count: 2
+				}
+				{
+					id: "FD4B5025BBC0A455"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+		}
+		{
+			id: "F0ACF671564976EB"
+			x: 2.5d
+			y: 7.0d
+			dependencies: [
+				"559044911D6B77C7"
+			]
+			tasks: [
+				{
+					id: "642CADB8B42C3C3F"
+					type: "item"
+					item: {
+						id: "apotheosis:gem_dust"
+						count: 1
+					}
+					count: 2
+				}
+			]
+			rewards: [
+				{
+					id: "562FF336EACBD4E3"
+					type: "item"
+					item: {
+						id: "minecraft:iron_ingot"
+						count: 1
+					}
+					count: 8
+				}
+				{
+					id: "E9D630EB5952EF23"
+					type: "xp_levels"
+					xp_levels: 3
+				}
+			]
+		}
+		{
+			id: "079FC6925ECB4AB2"
+			x: 5.0d
+			y: 7.0d
+			icon: {
+				id: "apotheosis:salvaging_table"
+				count: 1
+			}
+			size: 1.5d
+			shape: "hexagon"
+			dependencies: [
+				"F0ACF671564976EB"
+			]
+			tasks: [
+				{
+					id: "5668C4EA0A68D56E"
+					type: "item"
+					item: {
+						id: "apotheosis:salvaging_table"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "444D4116CAD88CB0"
+					type: "loot"
+					table_id: "1EBBC2B918151958"
+				}
+				{
+					id: "E7095FBB53B7D023"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+		}
+		{
+			id: "FD861CC9DB08F9E7"
+			x: 7.5d
+			y: 6.0d
+			icon: {
+				id: "apotheosis:mysterious_scrap_metal"
+				count: 1
+			}
+			dependencies: [
+				"079FC6925ECB4AB2"
+			]
+			tasks: [
+				{
+					id: "F0695BF364EA884B"
+					type: "item"
+					item: {
+						id: "apotheosis:mysterious_scrap_metal"
+						count: 1
+					}
+					count: 8
+				}
+				{
+					id: "5A63CEA65DEC32DC"
+					type: "item"
+					item: {
+						id: "apotheosis:timeworn_fabric"
+						count: 1
+					}
+					count: 3
+				}
+			]
+			rewards: [
+				{
+					id: "7519BE92CA693FDC"
+					type: "item"
+					item: {
+						id: "apotheosis:gem_dust"
+						count: 1
+					}
+					count: 4
+				}
+				{
+					id: "B6D0237ECBC0FFA5"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+		}
+		{
+			id: "BE7A3C423AC985EB"
+			x: 7.5d
+			y: 8.0d
+			icon: {
+				id: "apotheosis:gem_cutting_table"
+				count: 1
+			}
+			dependencies: [
+				"FD861CC9DB08F9E7"
+			]
+			tasks: [
+				{
+					id: "8E33812A59572822"
+					type: "item"
+					item: {
+						id: "apotheosis:gem_cutting_table"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "2E040636933D62B3"
+					type: "item"
+					item: {
+						id: "apotheosis:gem_dust"
+						count: 1
+					}
+					count: 4
+				}
+				{
+					id: "B6E43CEE6558C245"
+					type: "loot"
+					table_id: "1EBBC2B918151958"
+				}
+			]
+		}
+		{
+			id: "D9EFB06B93DA8A64"
+			x: 12.5d
+			y: 1.0d
+			icon: {
+				id: "apotheosis:gem_fused_slate"
+				count: 1
+			}
+			dependencies: [
+				"079FC6925ECB4AB2"
+			]
+			tasks: [
+				{
+					id: "17D9448EC9B6ABFB"
+					type: "item"
+					item: {
+						id: "apotheosis:gem_fused_slate"
+						count: 1
+					}
+					count: 8
+				}
+			]
+			rewards: [
+				{
+					id: "A98FCA73CCAC7109"
+					type: "item"
+					item: {
+						id: "apotheosis:gem_dust"
+						count: 1
+					}
+					count: 2
+				}
+				{
+					id: "7E3B8D36F4B27B12"
+					type: "xp_levels"
+					xp_levels: 3
+				}
+			]
+		}
+		{
+			id: "C0D275D1E33B82BB"
+			x: 15.0d
+			y: 0.0d
+			icon: {
+				id: "apotheosis:sigil_of_socketing"
+				count: 1
+			}
+			dependencies: [
+				"D9EFB06B93DA8A64"
+			]
+			tasks: [
+				{
+					id: "23A88AEFDF9CC7E9"
+					type: "item"
+					item: {
+						id: "apotheosis:sigil_of_socketing"
+						count: 1
+					}
+					count: 3
+				}
+			]
+			rewards: [
+				{
+					id: "C9862E0C66D885CF"
+					type: "item"
+					item: {
+						id: "minecraft:amethyst_shard"
+						count: 1
+					}
+					count: 8
+				}
+				{
+					id: "D78536348170BBB6"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+		}
+		{
+			id: "143FC08551254DCB"
+			x: 15.0d
+			y: 2.0d
+			icon: {
+				id: "apotheosis:sigil_of_rebirth"
+				count: 1
+			}
+			dependencies: [
+				"D9EFB06B93DA8A64"
+			]
+			tasks: [
+				{
+					id: "3B2844A3664AF06C"
+					type: "item"
+					item: {
+						id: "apotheosis:sigil_of_rebirth"
+						count: 1
+					}
+					count: 6
+				}
+			]
+			rewards: [
+				{
+					id: "B0B4B4FE1B1267B3"
+					type: "item"
+					item: {
+						id: "apotheosis:gem_dust"
+						count: 1
+					}
+					count: 3
+				}
+				{
+					id: "998F07B8FD87D48F"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+		}
+		{
+			id: "CD00C3D5725F225F"
+			x: 17.5d
+			y: 1.0d
+			icon: {
+				id: "apotheosis:simple_reforging_table"
+				count: 1
+			}
+			size: 1.5d
+			shape: "hexagon"
+			dependencies: [
+				"143FC08551254DCB"
+			]
+			tasks: [
+				{
+					id: "8D590B4988446791"
+					type: "item"
+					item: {
+						id: "apotheosis:simple_reforging_table"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "F3AF6C081D863014"
+					type: "loot"
+					table_id: "870211AF0E412C54"
+				}
+				{
+					id: "C70D2451071FB07E"
+					type: "xp_levels"
+					xp_levels: 10
+				}
+			]
+		}
+		{
+			id: "19052538655CDCA9"
+			x: 20.0d
+			y: 1.0d
+			icon: {
+				id: "apotheosis:sigil_of_withdrawal"
+				count: 1
+			}
+			optional: true
+			dependencies: [
+				"CD00C3D5725F225F"
+			]
+			tasks: [
+				{
+					id: "CEA61E47839B84CA"
+					type: "checkmark"
+				}
+			]
+			rewards: [
+				{
+					id: "8E2BFEAD5EC64E6E"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+		}
+		{
+			id: "099535D60605F9A5"
+			x: 0.0d
+			y: 13.0d
+			icon: {
+				id: "minecraft:enchanting_table"
+				count: 1
+			}
+			size: 1.5d
+			dependencies: [
+				"F821C33E0BCF27F2"
+			]
+			tasks: [
+				{
+					id: "5AD642820FCEC7C9"
+					type: "item"
+					item: {
+						id: "minecraft:enchanting_table"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "585F164804F20589"
+					type: "item"
+					item: {
+						id: "minecraft:lapis_lazuli"
+						count: 1
+					}
+					count: 16
+				}
+				{
+					id: "5953D1365380B944"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+		}
+		{
+			id: "7FDDDEC3ACEFDA33"
+			x: 2.5d
+			y: 12.0d
+			icon: {
+				id: "minecraft:bookshelf"
+				count: 1
+			}
+			dependencies: [
+				"099535D60605F9A5"
+			]
+			tasks: [
+				{
+					id: "20C4FB3E0E34F681"
+					type: "item"
+					item: {
+						id: "minecraft:bookshelf"
+						count: 1
+					}
+					count: 15
+				}
+			]
+			rewards: [
+				{
+					id: "46F39B2F8383B974"
+					type: "item"
+					item: {
+						id: "minecraft:book"
+						count: 1
+					}
+					count: 8
+				}
+				{
+					id: "B2526F132FBD5166"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+		}
+		{
+			id: "FAFDDA6FB7F92C4F"
+			x: 2.5d
+			y: 14.0d
+			icon: {
+				id: "apothic_enchanting:scrap_tome"
+				count: 1
+			}
+			optional: true
+			dependencies: [
+				"099535D60605F9A5"
+			]
+			tasks: [
+				{
+					id: "56071E4A12665F7E"
+					type: "item"
+					item: {
+						id: "apothic_enchanting:scrap_tome"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "D73A4144585D339F"
+					type: "item"
+					item: {
+						id: "minecraft:experience_bottle"
+						count: 1
+					}
+					count: 8
+				}
+			]
+		}
+		{
+			id: "3DDB29BABEFA3AD6"
+			x: 5.0d
+			y: 12.0d
+			icon: {
+				id: "apothic_enchanting:seashelf"
+				count: 1
+			}
+			dependencies: [
+				"7FDDDEC3ACEFDA33"
+			]
+			tasks: [
+				{
+					id: "130387DCC8129C8B"
+					type: "item"
+					item: {
+						id: "apothic_enchanting:seashelf"
+						count: 1
+					}
+					count: 5
+				}
+			]
+			rewards: [
+				{
+					id: "B794D15D63EDE209"
+					type: "item"
+					item: {
+						id: "minecraft:prismarine_shard"
+						count: 1
+					}
+					count: 16
+				}
+				{
+					id: "EEAEFD51FB5A857D"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+		}
+		{
+			id: "3BFFFD5215CE391C"
+			x: 5.0d
+			y: 14.0d
+			icon: {
+				id: "minecraft:golden_carrot"
+				count: 1
+			}
+			dependencies: [
+				"7FDDDEC3ACEFDA33"
+			]
+			tasks: [
+				{
+					id: "EDB6408FF141133D"
+					type: "checkmark"
+				}
+			]
+			rewards: [
+				{
+					id: "D23BBA8EE90BF023"
+					type: "item"
+					item: {
+						id: "minecraft:golden_carrot"
+						count: 1
+					}
+					count: 8
+				}
+				{
+					id: "D842BE6D85FA6E52"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+		}
+		{
+			id: "412C74E760831B20"
+			x: 7.5d
+			y: 13.0d
+			icon: {
+				id: "apothic_enchanting:infused_seashelf"
+				count: 1
+			}
+			size: 1.5d
+			shape: "diamond"
+			dependencies: [
+				"3DDB29BABEFA3AD6"
+				"3BFFFD5215CE391C"
+				"67A44B861E5D9B45"
+			]
+			tasks: [
+				{
+					id: "B21E6D67B91CF768"
+					type: "item"
+					item: {
+						id: "apothic_enchanting:infused_seashelf"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "49A40FD54AD0347B"
+					type: "loot"
+					table_id: "870211AF0E412C54"
+				}
+				{
+					id: "39FC39FAF6AB4D59"
+					type: "item"
+					item: {
+						id: "minecraft:lapis_lazuli"
+						count: 1
+					}
+					count: 32
+				}
+				{
+					id: "7C44B999139131D7"
+					type: "xp_levels"
+					xp_levels: 10
+				}
+			]
+		}
+		{
+			id: "DA8DD7B14F4F4BEC"
+			x: 10.0d
+			y: 13.0d
+			icon: {
+				id: "apothic_enchanting:library"
+				count: 1
+			}
+			optional: true
+			dependencies: [
+				"412C74E760831B20"
+			]
+			tasks: [
+				{
+					id: "1AD9A504B02205A2"
+					type: "checkmark"
+				}
+			]
+			rewards: [
+				{
+					id: "E2AEC72EA7BB85AA"
+					type: "item"
+					item: {
+						id: "minecraft:book"
+						count: 1
+					}
+					count: 16
+				}
+			]
+		}
+		{
+			id: "B551DF3525B3507A"
+			x: 12.5d
+			y: 7.0d
+			icon: {
+				id: "minecraft:spawner"
+				count: 1
+			}
+			size: 1.5d
+			dependencies: [
+				"F821C33E0BCF27F2"
+			]
+			tasks: [
+				{
+					id: "67E362889C508B78"
+					type: "item"
+					item: {
+						id: "minecraft:spawner"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "B5C4597217693B24"
+					type: "loot"
+					table_id: "1EBBC2B918151958"
+				}
+				{
+					id: "AADB95C4838E7D7F"
+					type: "xp_levels"
+					xp_levels: 10
+				}
+			]
+		}
+		{
+			id: "FB99AA887C15BA2B"
+			x: 15.0d
+			y: 7.0d
+			icon: {
+				id: "apotheosis:spawner_rune"
+				count: 1
+			}
+			dependencies: [
+				"B551DF3525B3507A"
+				"D9EFB06B93DA8A64"
+			]
+			tasks: [
+				{
+					id: "DA4E885123F0BA22"
+					type: "item"
+					item: {
+						id: "apotheosis:spawner_rune"
+						count: 1
+					}
+					count: 2
+				}
+			]
+			rewards: [
+				{
+					id: "1A9AA9C4CFB7333F"
+					type: "item"
+					item: {
+						id: "minecraft:tnt"
+						count: 1
+					}
+					count: 4
+				}
+				{
+					id: "1C4EAD6E9F5F08CF"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+		}
+		{
+			id: "D5C29E23C9F0E45C"
+			x: 17.5d
+			y: 6.0d
+			icon: {
+				id: "apotheosis:frontier_spawner_upgrade_rune"
+				count: 1
+			}
+			dependencies: [
+				"FB99AA887C15BA2B"
+				"FD861CC9DB08F9E7"
+			]
+			tasks: [
+				{
+					id: "535BABCC610085E5"
+					type: "item"
+					item: {
+						id: "apotheosis:frontier_spawner_upgrade_rune"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "4EFA8CE500220A5D"
+					type: "loot"
+					table_id: "870211AF0E412C54"
+				}
+				{
+					id: "BBC9AC72F1ACB731"
+					type: "xp_levels"
+					xp_levels: 10
+				}
+			]
+		}
+		{
+			id: "394A21B1D6812CA7"
+			x: 17.5d
+			y: 8.0d
+			icon: {
+				id: "apotheosis:redstone_control_spawner_rune"
+				count: 1
+			}
+			dependencies: [
+				"FB99AA887C15BA2B"
+			]
+			tasks: [
+				{
+					id: "156555174B85FCB8"
+					type: "advancement"
+					advancement: "apothic_spawners:modifier"
+					criterion: ""
+				}
+			]
+			rewards: [
+				{
+					id: "004466AE3870EB29"
+					type: "item"
+					item: {
+						id: "minecraft:piston"
+						count: 1
+					}
+					count: 4
+				}
+				{
+					id: "6ABB6626BE7FBDBC"
+					type: "item"
+					item: {
+						id: "minecraft:comparator"
+						count: 1
+					}
+					count: 4
+				}
+				{
+					id: "3494C85813F90549"
+					type: "xp_levels"
+					xp_levels: 10
+				}
+			]
+		}
+		{
+			id: "596F84A6E32481C2"
+			x: 20.0d
+			y: 7.0d
+			icon: {
+				id: "minecraft:zombie_spawn_egg"
+				count: 1
+			}
+			optional: true
+			dependencies: [
+				"B551DF3525B3507A"
+			]
+			tasks: [
+				{
+					id: "C5086319AA91A7AF"
+					type: "checkmark"
+				}
+			]
+			rewards: [
+				{
+					id: "775AE0AE7913777F"
+					type: "item"
+					item: {
+						id: "minecraft:experience_bottle"
+						count: 1
+					}
+					count: 8
+				}
+			]
+		}
+		{
+			id: "F415F481AB3173D5"
+			x: 12.5d
+			y: 13.0d
+			icon: {
+				id: "minecraft:iron_boots"
+				count: 1
+			}
+			size: 1.5d
+			dependencies: [
+				"F821C33E0BCF27F2"
+			]
+			tasks: [
+				{
+					id: "44248A06933250E6"
+					type: "checkmark"
+				}
+			]
+			rewards: [
+				{
+					id: "A618DD58DC7FA727"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+		}
+		{
+			id: "7C76F044A6C17945"
+			x: 15.0d
+			y: 13.0d
+			icon: {
+				id: "minecraft:spyglass"
+				count: 1
+			}
+			dependencies: [
+				"F415F481AB3173D5"
+			]
+			tasks: [
+				{
+					id: "18962BD5B008790A"
+					type: "checkmark"
+				}
+			]
+			rewards: [
+				{
+					id: "1C38457E9E87B63A"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+		}
+		{
+			id: "BE7AD20C9249F102"
+			x: 18.0d
+			y: 13.0d
+			icon: {
+				id: "apotheosis:luminous_crystal_shard"
+				count: 1
+			}
+			size: 2.5d
+			shape: "gear"
+			dependencies: [
+				"67A44B861E5D9B45"
+				"CD00C3D5725F225F"
+				"412C74E760831B20"
+				"394A21B1D6812CA7"
+				"7C76F044A6C17945"
+			]
+			tasks: [
+				{
+					id: "E0A306F2A1C12D65"
+					type: "item"
+					item: {
+						id: "apotheosis:luminous_crystal_shard"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "7894756389F9B648"
+					type: "loot"
+					table_id: "B5AA0F94577E6A3C"
+				}
+				{
+					id: "999695DEDCA2AD68"
+					type: "item"
+					item: {
+						id: "apotheosis:gem_dust"
+						count: 1
+					}
+					count: 8
+				}
+				{
+					id: "6768FAF34857B247"
+					type: "xp_levels"
+					xp_levels: 15
+				}
+			]
+		}
+	]
+	images: [
+		{
+			id: "4D0DA3E43AC7E481"
+			image: "kronwerke:textures/quests/apotheosis/title.png"
+			x: 10.0d
+			y: -4.6d
+			width: 7.66d
+			height: 1.8d
+			rotation: 0.0d
+			order: 1
+		}
+		{
+			id: "99FC6505E278E3FF"
+			image: "kronwerke:textures/quests/apotheosis/affixe.png"
+			x: 3.5d
+			y: -1.8d
+			width: 7.72d
+			height: 0.9d
+			rotation: 0.0d
+			order: 1
+		}
+		{
+			id: "1416D47F9B5BF362"
+			image: "kronwerke:textures/quests/apotheosis/siegel.png"
+			x: 16.3d
+			y: -1.8d
+			width: 8.07d
+			height: 0.9d
+			rotation: 0.0d
+			order: 1
+		}
+		{
+			id: "3D8FA6CA2B4F5881"
+			image: "kronwerke:textures/quests/apotheosis/edelsteine.png"
+			x: 3.5d
+			y: 4.6d
+			width: 3.52d
+			height: 0.9d
+			rotation: 0.0d
+			order: 1
+		}
+		{
+			id: "D3F6F5377A94C28F"
+			image: "kronwerke:textures/quests/apotheosis/spawner.png"
+			x: 16.3d
+			y: 4.6d
+			width: 6.01d
+			height: 0.9d
+			rotation: 0.0d
+			order: 1
+		}
+		{
+			id: "A77849BE70E5333E"
+			image: "kronwerke:textures/quests/apotheosis/enchanting.png"
+			x: 5.0d
+			y: 10.6d
+			width: 6.48d
+			height: 0.9d
+			rotation: 0.0d
+			order: 1
+		}
+		{
+			id: "C7227BCC68B592B9"
+			image: "kronwerke:textures/quests/apotheosis/attribute.png"
+			x: 15.3d
+			y: 10.6d
+			width: 6.15d
+			height: 0.9d
+			rotation: 0.0d
+			order: 1
+		}
+	]
+}

@@ -71,7 +71,7 @@ Test on a server: install NeoForge 21.1.252, then run `packwiz-installer-bootstr
 
 ## Status
 
-Before the beta. 233 mod files, boots clean on a dedicated server. Stage locks, community goals with milestones and about a hundred recipe changes are in; the numbers are untested until the beta in December. The quest book covers all five stages: 45 chapters, about 1 190 quests, in German. Every id is checked against the jars and every item against the stage locks.
+Before the beta. 250 mod files, boots clean on a dedicated server. Stage locks, community goals with milestones and about a hundred recipe changes are in; the numbers are untested until the beta in December. The quest book covers all five stages: 61 chapters, about 1 640 quests, in German. Every id is checked against the jars and every item against the stage locks.
 
 ## Docs
 

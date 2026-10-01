@@ -1,0 +1,1447 @@
+{
+	id: "ED991909CAA455D2"
+	filename: "bees"
+	icon: {
+		id: "productivebees:advanced_oak_beehive"
+		count: 1
+	}
+	group: "D1C7157F1269A7DC"
+	order_index: 46
+	default_quest_shape: "circle"
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			id: "46F4EE9836D3B386"
+			x: 0.0d
+			y: 1.0d
+			icon: {
+				id: "productivebees:advanced_oak_beehive"
+				count: 1
+			}
+			size: 2.0d
+			shape: "hexagon"
+			tasks: [
+				{
+					id: "D1E8FF6A0BA15CDF"
+					type: "item"
+					item: {
+						id: "productivebees:advanced_oak_beehive"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "5C9F4BECC58B92D7"
+					type: "item"
+					item: {
+						id: "productivebees:bee_cage"
+						count: 1
+					}
+					count: 4
+				}
+				{
+					id: "9570785D921A91F0"
+					type: "loot"
+					table_id: "F2BA64790EBA3DF5"
+				}
+				{
+					id: "C987A53214CC7481"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+		}
+		{
+			id: "53512703AA48FD9F"
+			x: 2.5d
+			y: 0.0d
+			icon: {
+				id: "productivebees:bee_cage"
+				count: 1
+			}
+			dependencies: [
+				"46F4EE9836D3B386"
+			]
+			tasks: [
+				{
+					id: "0ED16B6ABA004D34"
+					type: "item"
+					item: {
+						id: "productivebees:bee_cage"
+						count: 1
+					}
+					count: 4
+				}
+			]
+			rewards: [
+				{
+					id: "8D8C6BE083CF1495"
+					type: "item"
+					item: {
+						id: "minecraft:honey_bottle"
+						count: 1
+					}
+					count: 4
+				}
+				{
+					id: "31D7296DD0987613"
+					type: "xp_levels"
+					xp_levels: 3
+				}
+			]
+		}
+		{
+			id: "518368E50612B008"
+			x: 2.5d
+			y: 2.6d
+			icon: {
+				id: "productivebees:oak_wood_nest"
+				count: 1
+			}
+			dependencies: [
+				"46F4EE9836D3B386"
+			]
+			tasks: [
+				{
+					id: "2D3F4863E826F0BA"
+					type: "item"
+					item: {
+						id: "productivebees:oak_wood_nest"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "E7C6A53853B1AA3F"
+					type: "item"
+					item: {
+						id: "productivebees:honey_treat"
+						count: 1
+					}
+					count: 4
+				}
+				{
+					id: "44E0DA26A192088F"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+		}
+		{
+			id: "4422E4D6D824DD27"
+			x: 5.0d
+			y: 0.0d
+			icon: {
+				id: "productivebees:honey_treat"
+				count: 1
+			}
+			dependencies: [
+				"53512703AA48FD9F"
+			]
+			tasks: [
+				{
+					id: "B9EB32EE79D1A960"
+					type: "item"
+					item: {
+						id: "productivebees:honey_treat"
+						count: 1
+					}
+					count: 4
+				}
+			]
+			rewards: [
+				{
+					id: "62A5FFF8D8418CFA"
+					type: "item"
+					item: {
+						id: "minecraft:honeycomb"
+						count: 1
+					}
+					count: 8
+				}
+				{
+					id: "9BE3F7EF430513D6"
+					type: "xp_levels"
+					xp_levels: 3
+				}
+			]
+		}
+		{
+			id: "85331D09B9C67341"
+			x: 5.0d
+			y: 2.0d
+			icon: {
+				id: "productivebees:expansion_box_oak"
+				count: 1
+			}
+			dependencies: [
+				"46F4EE9836D3B386"
+			]
+			tasks: [
+				{
+					id: "46950666A682F660"
+					type: "item"
+					item: {
+						id: "productivebees:expansion_box_oak"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "F79D35E7019BC777"
+					type: "item"
+					item: {
+						id: "minecraft:honeycomb"
+						count: 1
+					}
+					count: 8
+				}
+				{
+					id: "40D2F77DD8865950"
+					type: "loot"
+					table_id: "F2BA64790EBA3DF5"
+				}
+			]
+		}
+		{
+			id: "A53D647301198DB3"
+			x: 7.5d
+			y: 0.4d
+			icon: {
+				id: "productivelib:upgrade_time"
+				count: 1
+			}
+			optional: true
+			dependencies: [
+				"85331D09B9C67341"
+			]
+			tasks: [
+				{
+					id: "BC8F9EA4009CAF4B"
+					type: "item"
+					item: {
+						id: "productivelib:upgrade_base"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "4C70638BB8BA6DE3"
+					type: "item"
+					item: {
+						id: "minecraft:emerald"
+						count: 1
+					}
+					count: 3
+				}
+				{
+					id: "BEF560F69E5E4C4E"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+		}
+		{
+			id: "5D5FB00B76C782D4"
+			x: 7.5d
+			y: 2.6d
+			icon: {
+				id: "productivebees:nether_quartz_nest"
+				count: 1
+			}
+			size: 1.5d
+			dependencies: [
+				"518368E50612B008"
+			]
+			tasks: [
+				{
+					id: "6B77623E888E12CE"
+					type: "item"
+					item: {
+						id: "productivebees:nether_quartz_nest"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "A5A5E804DAF3C9B2"
+					type: "item"
+					item: {
+						id: "minecraft:quartz"
+						count: 1
+					}
+					count: 16
+				}
+				{
+					id: "07912CF0F0D680E8"
+					type: "loot"
+					table_id: "F2BA64790EBA3DF5"
+				}
+				{
+					id: "33446EC83E39EBE3"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+		}
+		{
+			id: "19D33BAB626DA04B"
+			x: 10.5d
+			y: 1.0d
+			icon: {
+				id: "productivebees:centrifuge"
+				count: 1
+			}
+			size: 1.75d
+			shape: "hexagon"
+			dependencies: [
+				"46F4EE9836D3B386"
+			]
+			tasks: [
+				{
+					id: "F26BDE07C8F347B6"
+					type: "item"
+					item: {
+						id: "productivebees:centrifuge"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "1D14431494A0A5D1"
+					type: "item"
+					item: {
+						id: "productivebees:wax"
+						count: 1
+					}
+					count: 8
+				}
+				{
+					id: "A7AAF1A057EB395E"
+					type: "loot"
+					table_id: "F2BA64790EBA3DF5"
+				}
+				{
+					id: "FAD96FE7C9C37C30"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+		}
+		{
+			id: "A672D39A10188888"
+			x: 13.0d
+			y: 0.0d
+			icon: {
+				id: "productivebees:powered_centrifuge"
+				count: 1
+			}
+			dependencies: [
+				"19D33BAB626DA04B"
+			]
+			tasks: [
+				{
+					id: "F7117961070FF64C"
+					type: "item"
+					item: {
+						id: "productivebees:powered_centrifuge"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "85DD69200EA05121"
+					type: "item"
+					item: {
+						id: "mekanism:basic_control_circuit"
+						count: 1
+					}
+					count: 2
+				}
+				{
+					id: "A1CFB86358899DE6"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+		}
+		{
+			id: "D708120107D7E9FC"
+			x: 13.0d
+			y: 2.0d
+			icon: {
+				id: "productivebees:bottler"
+				count: 1
+			}
+			dependencies: [
+				"19D33BAB626DA04B"
+			]
+			tasks: [
+				{
+					id: "C871FC823A34526F"
+					type: "item"
+					item: {
+						id: "productivebees:bottler"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "5DC8175A66E27DEE"
+					type: "item"
+					item: {
+						id: "minecraft:glass_bottle"
+						count: 1
+					}
+					count: 8
+				}
+				{
+					id: "A91E6D574A9012AD"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+		}
+		{
+			id: "968CFB9C4C3937D6"
+			x: 18.5d
+			y: 1.0d
+			icon: {
+				id: "productivebees:gene"
+				count: 1
+			}
+			dependencies: [
+				"D708120107D7E9FC"
+			]
+			tasks: [
+				{
+					id: "15A7E39293ED0EB5"
+					type: "item"
+					item: {
+						id: "productivebees:gene_bottle"
+						count: 1
+					}
+					count: 1
+				}
+				{
+					id: "B96155C4104BE2A0"
+					type: "item"
+					item: {
+						id: "productivebees:gene"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "855778D9B71D86A5"
+					type: "item"
+					item: {
+						id: "minecraft:glass_bottle"
+						count: 1
+					}
+					count: 8
+				}
+				{
+					id: "3A1BB71917CFBF8C"
+					type: "loot"
+					table_id: "F2BA64790EBA3DF5"
+				}
+				{
+					id: "2FACB70A97A9B61D"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+		}
+		{
+			id: "9A180D47CB1D866B"
+			x: 21.0d
+			y: 1.0d
+			icon: {
+				id: "productivebees:honey_treat"
+				count: 1
+			}
+			dependencies: [
+				"968CFB9C4C3937D6"
+			]
+			tasks: [
+				{
+					id: "14F10890C7298ED7"
+					type: "checkmark"
+				}
+			]
+			rewards: [
+				{
+					id: "B8E08BC142A1BA92"
+					type: "item"
+					item: {
+						id: "productivebees:honey_treat"
+						count: 1
+					}
+					count: 8
+				}
+				{
+					id: "85C600498FAF4FF1"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+		}
+		{
+			id: "13B4ED8AC87648BC"
+			x: 23.5d
+			y: 1.0d
+			icon: {
+				id: "productivebees:incubator"
+				count: 1
+			}
+			size: 1.75d
+			shape: "diamond"
+			dependencies: [
+				"9A180D47CB1D866B"
+			]
+			tasks: [
+				{
+					id: "FC046534E0986B7C"
+					type: "item"
+					item: {
+						id: "productivebees:incubator"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "C1F6A2A5B19648FB"
+					type: "item"
+					item: {
+						id: "minecraft:egg"
+						count: 1
+					}
+					count: 16
+				}
+				{
+					id: "E3DC725DFAFD615D"
+					type: "loot"
+					table_id: "BA8E33E78A3B3A0C"
+				}
+				{
+					id: "C29FC94B53D19B3B"
+					type: "xp_levels"
+					xp_levels: 10
+				}
+			]
+		}
+		{
+			id: "970E2FC1062A001C"
+			x: 2.5d
+			y: 7.0d
+			icon: {
+				id: "productivebees:spawn_egg_lumber_bee"
+				count: 1
+			}
+			size: 1.75d
+			shape: "hexagon"
+			dependencies: [
+				"518368E50612B008"
+			]
+			tasks: [
+				{
+					id: "9FBA18DCA2841577"
+					type: "checkmark"
+				}
+			]
+			rewards: [
+				{
+					id: "27D2CB0402520477"
+					type: "item"
+					item: {
+						id: "minecraft:oak_log"
+						count: 1
+					}
+					count: 32
+				}
+				{
+					id: "CCBFE5FEDC0DF706"
+					type: "loot"
+					table_id: "F2BA64790EBA3DF5"
+				}
+				{
+					id: "E4F50919176D4BA2"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+		}
+		{
+			id: "A26E75EA528A4918"
+			x: 0.0d
+			y: 8.6d
+			icon: {
+				id: "productivebees:feeder"
+				count: 1
+			}
+			dependencies: [
+				"970E2FC1062A001C"
+			]
+			tasks: [
+				{
+					id: "40C8A1BC0F0E1039"
+					type: "item"
+					item: {
+						id: "productivebees:feeder"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "DDBA9A0AC1FFCA2A"
+					type: "item"
+					item: {
+						id: "minecraft:smooth_stone_slab"
+						count: 1
+					}
+					count: 4
+				}
+				{
+					id: "36206CCA90B00293"
+					type: "xp_levels"
+					xp_levels: 3
+				}
+			]
+		}
+		{
+			id: "1BEE4AFB22C4B99B"
+			x: 5.0d
+			y: 8.6d
+			icon: {
+				id: "productivebees:breeding_chamber"
+				count: 1
+			}
+			dependencies: [
+				"970E2FC1062A001C"
+			]
+			tasks: [
+				{
+					id: "3EDAB0D43C340A31"
+					type: "item"
+					item: {
+						id: "productivebees:breeding_chamber"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "FD647B297263138F"
+					type: "item"
+					item: {
+						id: "productivebees:bee_cage"
+						count: 1
+					}
+					count: 8
+				}
+				{
+					id: "EAF454915E952DC5"
+					type: "loot"
+					table_id: "BA8E33E78A3B3A0C"
+				}
+				{
+					id: "CEEC321D17AAE7DF"
+					type: "xp_levels"
+					xp_levels: 10
+				}
+			]
+		}
+		{
+			id: "AD2B46C883E7C574"
+			x: 8.5d
+			y: 7.0d
+			icon: {
+				id: "minecraft:quartz"
+				count: 1
+			}
+			dependencies: [
+				"5D5FB00B76C782D4"
+			]
+			tasks: [
+				{
+					id: "E6FF81D88442B827"
+					type: "checkmark"
+				}
+			]
+			rewards: [
+				{
+					id: "A974691F21FA4750"
+					type: "item"
+					item: {
+						id: "minecraft:quartz"
+						count: 1
+					}
+					count: 8
+				}
+			]
+		}
+		{
+			id: "54E5F1C5F5143A66"
+			x: 10.5d
+			y: 7.0d
+			icon: {
+				id: "minecraft:raw_iron"
+				count: 1
+			}
+			dependencies: [
+				"AD2B46C883E7C574"
+			]
+			tasks: [
+				{
+					id: "846CD0D43C2FB70C"
+					type: "checkmark"
+				}
+			]
+			rewards: [
+				{
+					id: "90DC96EF7E30C920"
+					type: "item"
+					item: {
+						id: "minecraft:raw_iron"
+						count: 1
+					}
+					count: 16
+				}
+				{
+					id: "AF6AEC9D0A596599"
+					type: "xp_levels"
+					xp_levels: 3
+				}
+			]
+		}
+		{
+			id: "38156A74AC2685B4"
+			x: 12.5d
+			y: 7.0d
+			icon: {
+				id: "minecraft:raw_copper"
+				count: 1
+			}
+			dependencies: [
+				"54E5F1C5F5143A66"
+			]
+			tasks: [
+				{
+					id: "612815A458404D74"
+					type: "checkmark"
+				}
+			]
+			rewards: [
+				{
+					id: "677AFEA9F943301A"
+					type: "item"
+					item: {
+						id: "minecraft:raw_copper"
+						count: 1
+					}
+					count: 16
+				}
+				{
+					id: "730E006163EB7B06"
+					type: "xp_levels"
+					xp_levels: 3
+				}
+			]
+		}
+		{
+			id: "0BB61C3F5F8A6961"
+			x: 14.5d
+			y: 7.0d
+			icon: {
+				id: "minecraft:raw_gold"
+				count: 1
+			}
+			dependencies: [
+				"38156A74AC2685B4"
+			]
+			tasks: [
+				{
+					id: "8459E02EC8B97D7D"
+					type: "checkmark"
+				}
+			]
+			rewards: [
+				{
+					id: "05ECB0AB847E69DB"
+					type: "item"
+					item: {
+						id: "minecraft:raw_gold"
+						count: 1
+					}
+					count: 8
+				}
+				{
+					id: "4BC13B1019DD4695"
+					type: "xp_levels"
+					xp_levels: 3
+				}
+			]
+		}
+		{
+			id: "969FEB1F391DF329"
+			x: 16.5d
+			y: 7.0d
+			icon: {
+				id: "create:raw_zinc"
+				count: 1
+			}
+			dependencies: [
+				"0BB61C3F5F8A6961"
+			]
+			tasks: [
+				{
+					id: "AA663CB005C37452"
+					type: "checkmark"
+				}
+			]
+			rewards: [
+				{
+					id: "5319CF5202FD6467"
+					type: "item"
+					item: {
+						id: "create:raw_zinc"
+						count: 1
+					}
+					count: 12
+				}
+				{
+					id: "7BD342FFB2C767BF"
+					type: "xp_levels"
+					xp_levels: 3
+				}
+			]
+		}
+		{
+			id: "312AB5C73A97212A"
+			x: 18.5d
+			y: 7.0d
+			icon: {
+				id: "mekanism:raw_osmium"
+				count: 1
+			}
+			dependencies: [
+				"969FEB1F391DF329"
+			]
+			tasks: [
+				{
+					id: "82C74C84B3AD24F5"
+					type: "checkmark"
+				}
+			]
+			rewards: [
+				{
+					id: "C32124F2E3C3C408"
+					type: "item"
+					item: {
+						id: "mekanism:raw_osmium"
+						count: 1
+					}
+					count: 12
+				}
+				{
+					id: "13658A1609964AA7"
+					type: "xp_levels"
+					xp_levels: 3
+				}
+			]
+		}
+		{
+			id: "E6F522DCB6C730BC"
+			x: 20.5d
+			y: 7.0d
+			icon: {
+				id: "mekanism:ingot_steel"
+				count: 1
+			}
+			dependencies: [
+				"A643921A15D7ABC6"
+			]
+			tasks: [
+				{
+					id: "9CBA8133D908CAF2"
+					type: "checkmark"
+				}
+			]
+			rewards: [
+				{
+					id: "B1BA9943D2738B76"
+					type: "item"
+					item: {
+						id: "mekanism:ingot_steel"
+						count: 1
+					}
+					count: 16
+				}
+				{
+					id: "597D586FBCC168F6"
+					type: "loot"
+					table_id: "BA8E33E78A3B3A0C"
+				}
+				{
+					id: "5A1541489A8D92D0"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+		}
+		{
+			id: "352344199990D8C6"
+			x: 8.5d
+			y: 8.6d
+			icon: {
+				id: "minecraft:glowstone_dust"
+				count: 1
+			}
+			dependencies: [
+				"AD2B46C883E7C574"
+			]
+			tasks: [
+				{
+					id: "8A474BFCF40FD485"
+					type: "checkmark"
+				}
+			]
+			rewards: [
+				{
+					id: "B00DB3B6844EC206"
+					type: "item"
+					item: {
+						id: "minecraft:glowstone_dust"
+						count: 1
+					}
+					count: 16
+				}
+			]
+		}
+		{
+			id: "E1F01E509D869534"
+			x: 10.5d
+			y: 8.6d
+			icon: {
+				id: "minecraft:redstone"
+				count: 1
+			}
+			dependencies: [
+				"352344199990D8C6"
+			]
+			tasks: [
+				{
+					id: "C699704F1C030607"
+					type: "checkmark"
+				}
+			]
+			rewards: [
+				{
+					id: "370D916BAF10EA24"
+					type: "item"
+					item: {
+						id: "minecraft:redstone"
+						count: 1
+					}
+					count: 32
+				}
+				{
+					id: "71A0D631B172E906"
+					type: "xp_levels"
+					xp_levels: 3
+				}
+			]
+		}
+		{
+			id: "CF6546647C0552B4"
+			x: 12.5d
+			y: 8.6d
+			icon: {
+				id: "minecraft:lapis_lazuli"
+				count: 1
+			}
+			dependencies: [
+				"E1F01E509D869534"
+			]
+			tasks: [
+				{
+					id: "E08FEB1F05601DBB"
+					type: "checkmark"
+				}
+			]
+			rewards: [
+				{
+					id: "8F7FFC15DFC49E2B"
+					type: "item"
+					item: {
+						id: "minecraft:lapis_lazuli"
+						count: 1
+					}
+					count: 32
+				}
+				{
+					id: "F77ADF5FF0DACBFE"
+					type: "xp_levels"
+					xp_levels: 3
+				}
+			]
+		}
+		{
+			id: "748DD1118AF7A40B"
+			x: 8.5d
+			y: 10.2d
+			icon: {
+				id: "minecraft:magma_cream"
+				count: 1
+			}
+			dependencies: [
+				"352344199990D8C6"
+			]
+			tasks: [
+				{
+					id: "13C91F244C995AE3"
+					type: "checkmark"
+				}
+			]
+			rewards: [
+				{
+					id: "E9EE5ECB16DFCD44"
+					type: "item"
+					item: {
+						id: "minecraft:magma_cream"
+						count: 1
+					}
+					count: 8
+				}
+			]
+		}
+		{
+			id: "B5AEB4AA6B7BC5D6"
+			x: 10.5d
+			y: 10.2d
+			icon: {
+				id: "minecraft:coal"
+				count: 1
+			}
+			dependencies: [
+				"748DD1118AF7A40B"
+			]
+			tasks: [
+				{
+					id: "4160C2E3775E4B33"
+					type: "checkmark"
+				}
+			]
+			rewards: [
+				{
+					id: "79AC1524C009F081"
+					type: "item"
+					item: {
+						id: "minecraft:coal"
+						count: 1
+					}
+					count: 32
+				}
+				{
+					id: "D0107B0504FEDBCE"
+					type: "xp_levels"
+					xp_levels: 3
+				}
+			]
+		}
+		{
+			id: "212C367F7A5E874C"
+			x: 12.5d
+			y: 10.2d
+			icon: {
+				id: "minecraft:blaze_powder"
+				count: 1
+			}
+			dependencies: [
+				"B5AEB4AA6B7BC5D6"
+			]
+			tasks: [
+				{
+					id: "E799CE9E4DFE0638"
+					type: "checkmark"
+				}
+			]
+			rewards: [
+				{
+					id: "6DA7BF562C11BEB3"
+					type: "item"
+					item: {
+						id: "minecraft:blaze_powder"
+						count: 1
+					}
+					count: 8
+				}
+				{
+					id: "2E5C12881A828ECD"
+					type: "xp_levels"
+					xp_levels: 3
+				}
+			]
+		}
+		{
+			id: "F72177F2A37920CE"
+			x: 23.5d
+			y: 7.0d
+			icon: {
+				id: "botania:manasteel_ingot"
+				count: 1
+			}
+			dependencies: [
+				"13B4ED8AC87648BC"
+			]
+			tasks: [
+				{
+					id: "D6607A3F5456BEF0"
+					type: "checkmark"
+				}
+			]
+			rewards: [
+				{
+					id: "3D18FEE7B339339F"
+					type: "item"
+					item: {
+						id: "botania:manasteel_ingot"
+						count: 1
+					}
+					count: 4
+				}
+				{
+					id: "B6D098EC5AE07D70"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+		}
+		{
+			id: "4A8894E4E8E5B9F9"
+			x: 23.5d
+			y: 8.6d
+			icon: {
+				id: "naturesaura:infused_iron"
+				count: 1
+			}
+			dependencies: [
+				"13B4ED8AC87648BC"
+			]
+			tasks: [
+				{
+					id: "E2D382789814D502"
+					type: "checkmark"
+				}
+			]
+			rewards: [
+				{
+					id: "C45AF0AC994E82D9"
+					type: "item"
+					item: {
+						id: "naturesaura:infused_iron"
+						count: 1
+					}
+					count: 8
+				}
+				{
+					id: "90AE68089EB5EF7E"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+		}
+		{
+			id: "4CD0A072FD54E586"
+			x: 15.5d
+			y: 13.5d
+			icon: {
+				id: "productivemetalworks:black_foundry_controller"
+				count: 1
+			}
+			size: 2.0d
+			shape: "gear"
+			tasks: [
+				{
+					id: "46AA7F955F175A40"
+					type: "item"
+					item: {
+						id: "productivemetalworks:black_foundry_controller"
+						count: 1
+					}
+					count: 1
+				}
+				{
+					id: "3FD8DB0C38F4D033"
+					type: "item"
+					item: {
+						id: "productivemetalworks:black_foundry_tank"
+						count: 1
+					}
+					count: 1
+				}
+				{
+					id: "743FB2C579E0F401"
+					type: "item"
+					item: {
+						id: "productivemetalworks:black_foundry_drain"
+						count: 1
+					}
+					count: 1
+				}
+				{
+					id: "E2D18C32BEDC6DE6"
+					type: "item"
+					item: {
+						id: "productivemetalworks:liquid_heating_coil"
+						count: 1
+					}
+					count: 4
+				}
+			]
+			rewards: [
+				{
+					id: "ECFF3598DA5F3AA7"
+					type: "item"
+					item: {
+						id: "productivemetalworks:fire_brick"
+						count: 1
+					}
+					count: 32
+				}
+				{
+					id: "6DDC8C2FF16D1380"
+					type: "loot"
+					table_id: "BA8E33E78A3B3A0C"
+				}
+				{
+					id: "15E6BDE341A71A45"
+					type: "xp_levels"
+					xp_levels: 10
+				}
+			]
+		}
+		{
+			id: "FC6F665730B82E41"
+			x: 18.0d
+			y: 13.5d
+			icon: {
+				id: "productivemetalworks:ingot_cast"
+				count: 1
+			}
+			dependencies: [
+				"4CD0A072FD54E586"
+			]
+			tasks: [
+				{
+					id: "507360A558A07737"
+					type: "item"
+					item: {
+						id: "productivemetalworks:casting_table"
+						count: 1
+					}
+					count: 1
+				}
+				{
+					id: "516284F584242601"
+					type: "item"
+					item: {
+						id: "productivemetalworks:ingot_cast"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "38ECCAC683ACFC37"
+					type: "item"
+					item: {
+						id: "minecraft:iron_ingot"
+						count: 1
+					}
+					count: 16
+				}
+				{
+					id: "626FB3EDBF1797FA"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+		}
+		{
+			id: "A643921A15D7ABC6"
+			x: 20.5d
+			y: 13.5d
+			icon: {
+				id: "productivebees:spawn_egg_configurable_bee"
+				count: 1
+			}
+			size: 2.5d
+			shape: "gear"
+			dependencies: [
+				"FC6F665730B82E41"
+				"13B4ED8AC87648BC"
+			]
+			tasks: [
+				{
+					id: "2CBB671AABAD5362"
+					type: "checkmark"
+				}
+			]
+			rewards: [
+				{
+					id: "4CFA4D2458F67375"
+					type: "loot"
+					table_id: "C79EAEAE0F26AA7F"
+				}
+				{
+					id: "38E32CB2B5146B82"
+					type: "item"
+					item: {
+						id: "mekanism:ingot_steel"
+						count: 1
+					}
+					count: 16
+				}
+				{
+					id: "B1826F4595A8B0DA"
+					type: "xp_levels"
+					xp_levels: 20
+				}
+			]
+		}
+		{
+			id: "F558B50FF49D1626"
+			x: 23.0d
+			y: 13.5d
+			icon: {
+				id: "productivebees:spawn_egg_configurable_bee"
+				count: 1
+			}
+			optional: true
+			dependencies: [
+				"A643921A15D7ABC6"
+			]
+			tasks: [
+				{
+					id: "C79DD1D61C2E5716"
+					type: "checkmark"
+				}
+			]
+			rewards: [
+				{
+					id: "62DEEB2521730A64"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+		}
+	]
+	images: [
+		{
+			id: "A90668AC3A2E2A5F"
+			image: "kronwerke:textures/quests/bees/title.png"
+			x: 12.0d
+			y: -4.6d
+			width: 10.73d
+			height: 1.75d
+			rotation: 0.0d
+			order: 1
+		}
+		{
+			id: "687EDDE97D281F42"
+			image: "kronwerke:textures/quests/bees/first.png"
+			x: 3.75d
+			y: -2.2d
+			width: 4.18d
+			height: 0.9d
+			rotation: 0.0d
+			order: 1
+		}
+		{
+			id: "CB43D1EF69C9CC60"
+			image: "kronwerke:textures/quests/bees/centrifuge.png"
+			x: 12.5d
+			y: -2.2d
+			width: 6.97d
+			height: 0.9d
+			rotation: 0.0d
+			order: 1
+		}
+		{
+			id: "3FFF2BB84AA84F67"
+			image: "kronwerke:textures/quests/bees/genes.png"
+			x: 21.0d
+			y: -2.2d
+			width: 1.66d
+			height: 0.9d
+			rotation: 0.0d
+			order: 1
+		}
+		{
+			id: "2A2491B219BA97D5"
+			image: "kronwerke:textures/quests/bees/breeding.png"
+			x: 2.5d
+			y: 5.0d
+			width: 2.01d
+			height: 0.9d
+			rotation: 0.0d
+			order: 1
+		}
+		{
+			id: "08951CD0032FA293"
+			image: "kronwerke:textures/quests/bees/resources.png"
+			x: 14.5d
+			y: 5.0d
+			width: 6.03d
+			height: 0.9d
+			rotation: 0.0d
+			order: 1
+		}
+		{
+			id: "30CCC35A6E6F4668"
+			image: "kronwerke:textures/quests/bees/magic.png"
+			x: 23.5d
+			y: 5.0d
+			width: 4.12d
+			height: 0.9d
+			rotation: 0.0d
+			order: 1
+		}
+		{
+			id: "832272E070CFC4B7"
+			image: "kronwerke:textures/quests/bees/metalworks.png"
+			x: 19.0d
+			y: 11.6d
+			width: 7.95d
+			height: 0.9d
+			rotation: 0.0d
+			order: 1
+		}
+	]
+}

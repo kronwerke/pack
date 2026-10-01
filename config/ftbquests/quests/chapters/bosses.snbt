@@ -1,0 +1,1089 @@
+{
+	id: "FA25D1A2C851F11B"
+	filename: "bosses"
+	icon: {
+		id: "cataclysm:ancient_remnant_spawn_egg"
+		count: 1
+	}
+	group: "D1C7157F1269A7DC"
+	order_index: 57
+	default_quest_shape: "circle"
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			id: "EE958EEC8D2F80D4"
+			x: 0.0d
+			y: 0.0d
+			icon: {
+				id: "cataclysm:ancient_remnant_spawn_egg"
+				count: 1
+			}
+			size: 2.0d
+			shape: "hexagon"
+			tasks: [
+				{
+					id: "8358EC74D210D35D"
+					type: "checkmark"
+				}
+			]
+			rewards: [
+				{
+					id: "2BDEB932B7821516"
+					type: "item"
+					item: {
+						id: "minecraft:golden_apple"
+						count: 1
+					}
+					count: 1
+				}
+				{
+					id: "9D289ACFCCE1BAD6"
+					type: "xp_levels"
+					xp_levels: 3
+				}
+			]
+		}
+		{
+			id: "FE2324F215DB379A"
+			x: 2.5d
+			y: -1.3d
+			icon: {
+				id: "minecraft:iron_sword"
+				count: 1
+			}
+			dependencies: [
+				"EE958EEC8D2F80D4"
+			]
+			tasks: [
+				{
+					id: "EC7D668B12961307"
+					type: "checkmark"
+				}
+			]
+			rewards: [
+				{
+					id: "755886DA54F1468C"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+		}
+		{
+			id: "BF3FA1E5797417C2"
+			x: 2.5d
+			y: 1.3d
+			icon: {
+				id: "minecraft:shield"
+				count: 1
+			}
+			dependencies: [
+				"EE958EEC8D2F80D4"
+			]
+			tasks: [
+				{
+					id: "46770B65811D53CB"
+					type: "item"
+					item: {
+						id: "minecraft:shield"
+						count: 1
+					}
+					count: 1
+				}
+				{
+					id: "A6E85676BBDF9823"
+					type: "item"
+					item: {
+						id: "minecraft:golden_apple"
+						count: 1
+					}
+					count: 2
+				}
+			]
+			rewards: [
+				{
+					id: "A8B8442BC531EDE1"
+					type: "item"
+					item: {
+						id: "minecraft:arrow"
+						count: 1
+					}
+					count: 32
+				}
+				{
+					id: "E17445674DAAE33E"
+					type: "loot"
+					table_id: "1EBBC2B918151958"
+				}
+			]
+		}
+		{
+			id: "416DEFBAEAFDECA8"
+			x: 5.5d
+			y: 0.0d
+			icon: {
+				id: "minecraft:sandstone"
+				count: 1
+			}
+			dependencies: [
+				"BF3FA1E5797417C2"
+			]
+			tasks: [
+				{
+					id: "E4C7BBA46D295445"
+					type: "advancement"
+					advancement: "cataclysm:find_cursed_pyramid"
+					criterion: ""
+				}
+			]
+			rewards: [
+				{
+					id: "049519F2AD5E4B4A"
+					type: "item"
+					item: {
+						id: "cataclysm:sticky_gloves"
+						count: 1
+					}
+					count: 1
+				}
+				{
+					id: "9BD25F16DD5078AB"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+		}
+		{
+			id: "D7DEC15445D078C1"
+			x: 8.0d
+			y: -1.3d
+			icon: {
+				id: "cataclysm:kobolediator_skull"
+				count: 1
+			}
+			dependencies: [
+				"416DEFBAEAFDECA8"
+			]
+			tasks: [
+				{
+					id: "09777424A18644EE"
+					type: "kill"
+					entity: "cataclysm:wadjet"
+					value: 1
+				}
+				{
+					id: "C2BA2E7A564CA503"
+					type: "kill"
+					entity: "cataclysm:kobolediator"
+					value: 1
+				}
+			]
+			rewards: [
+				{
+					id: "449B2B43DA427877"
+					type: "item"
+					item: {
+						id: "cataclysm:koboleton_bone"
+						count: 1
+					}
+					count: 4
+				}
+				{
+					id: "55DB286BEBF04BF8"
+					type: "item"
+					item: {
+						id: "minecraft:golden_apple"
+						count: 1
+					}
+					count: 1
+				}
+				{
+					id: "74A1969CD32FE2B5"
+					type: "xp_levels"
+					xp_levels: 10
+				}
+			]
+		}
+		{
+			id: "C238590FD0D265ED"
+			x: 8.0d
+			y: 1.3d
+			icon: {
+				id: "cataclysm:necklace_of_the_desert"
+				count: 1
+			}
+			dependencies: [
+				"416DEFBAEAFDECA8"
+			]
+			tasks: [
+				{
+					id: "BDE60259C79218C1"
+					type: "item"
+					item: {
+						id: "cataclysm:necklace_of_the_desert"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "2F1C67AC876792D3"
+					type: "item"
+					item: {
+						id: "minecraft:golden_apple"
+						count: 1
+					}
+					count: 2
+				}
+				{
+					id: "BC25D6E39DE8991A"
+					type: "loot"
+					table_id: "1EBBC2B918151958"
+				}
+			]
+		}
+		{
+			id: "AB98DC0BAB7B907B"
+			x: 10.5d
+			y: 0.0d
+			icon: {
+				id: "cataclysm:sandstorm_in_a_bottle"
+				count: 1
+			}
+			size: 1.5d
+			shape: "diamond"
+			dependencies: [
+				"C238590FD0D265ED"
+			]
+			tasks: [
+				{
+					id: "32031384BB0FFE5C"
+					type: "kill"
+					entity: "cataclysm:ancient_remnant"
+					value: 1
+				}
+			]
+			rewards: [
+				{
+					id: "D7EF66AE8A92A8E1"
+					type: "loot"
+					table_id: "870211AF0E412C54"
+				}
+				{
+					id: "9D3DFC9CA1E2E4B0"
+					type: "item"
+					item: {
+						id: "cataclysm:ancient_metal_ingot"
+						count: 1
+					}
+					count: 4
+				}
+				{
+					id: "E47781CDFA768183"
+					type: "xp_levels"
+					xp_levels: 20
+				}
+			]
+		}
+		{
+			id: "F9097D6A1803461D"
+			x: 13.5d
+			y: 0.0d
+			icon: {
+				id: "cataclysm:frosted_stone_bricks"
+				count: 1
+			}
+			dependencies: [
+				"AB98DC0BAB7B907B"
+			]
+			tasks: [
+				{
+					id: "E4E5CC63E1F2DBD4"
+					type: "advancement"
+					advancement: "cataclysm:find_frosted_prison"
+					criterion: ""
+				}
+			]
+			rewards: [
+				{
+					id: "AF98C7D889CFAE5A"
+					type: "item"
+					item: {
+						id: "cataclysm:black_steel_ingot"
+						count: 1
+					}
+					count: 2
+				}
+				{
+					id: "7F6E8279E75358E2"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+		}
+		{
+			id: "C0786E7399FA932A"
+			x: 16.0d
+			y: 0.0d
+			icon: {
+				id: "cataclysm:strange_key"
+				count: 1
+			}
+			dependencies: [
+				"F9097D6A1803461D"
+			]
+			tasks: [
+				{
+					id: "AB76191D5F0EB063"
+					type: "kill"
+					entity: "cataclysm:aptrgangr"
+					value: 1
+				}
+				{
+					id: "59834DF143AEC38E"
+					type: "item"
+					item: {
+						id: "cataclysm:strange_key"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "143BBE7F5AFB821E"
+					type: "item"
+					item: {
+						id: "cataclysm:black_steel_ingot"
+						count: 1
+					}
+					count: 4
+				}
+				{
+					id: "B32221961F9C9CD8"
+					type: "xp_levels"
+					xp_levels: 10
+				}
+			]
+		}
+		{
+			id: "59FE80CC6AEEE44F"
+			x: 18.5d
+			y: 0.0d
+			icon: {
+				id: "cataclysm:cursium_ingot"
+				count: 1
+			}
+			size: 1.5d
+			shape: "diamond"
+			dependencies: [
+				"C0786E7399FA932A"
+			]
+			tasks: [
+				{
+					id: "EEF7D544F3B82BAF"
+					type: "kill"
+					entity: "cataclysm:maledictus"
+					value: 1
+				}
+			]
+			rewards: [
+				{
+					id: "F88115465E258515"
+					type: "loot"
+					table_id: "870211AF0E412C54"
+				}
+				{
+					id: "4FB5A465221E4A15"
+					type: "item"
+					item: {
+						id: "cataclysm:cursium_ingot"
+						count: 1
+					}
+					count: 1
+				}
+				{
+					id: "11B20CC4E860B5E7"
+					type: "xp_levels"
+					xp_levels: 20
+				}
+			]
+		}
+		{
+			id: "565A8E14EE9DBEC2"
+			x: 21.5d
+			y: 0.0d
+			icon: {
+				id: "minecraft:dark_prismarine"
+				count: 1
+			}
+			dependencies: [
+				"59FE80CC6AEEE44F"
+			]
+			tasks: [
+				{
+					id: "9190853A0FD28E3C"
+					type: "advancement"
+					advancement: "cataclysm:find_sunken_city"
+					criterion: ""
+				}
+			]
+			rewards: [
+				{
+					id: "FD10C1EEF5FCCE92"
+					type: "item"
+					item: {
+						id: "minecraft:nautilus_shell"
+						count: 1
+					}
+					count: 2
+				}
+				{
+					id: "64EFDB28A5D9BBED"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+		}
+		{
+			id: "2CA381ECFA0C98DD"
+			x: 24.0d
+			y: 0.0d
+			icon: {
+				id: "cataclysm:abyssal_sacrifice"
+				count: 1
+			}
+			dependencies: [
+				"565A8E14EE9DBEC2"
+			]
+			tasks: [
+				{
+					id: "D9C4F4AC797A9422"
+					type: "item"
+					item: {
+						id: "cataclysm:abyssal_sacrifice"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "CB142AD918BC5AF2"
+					type: "item"
+					item: {
+						id: "minecraft:golden_apple"
+						count: 1
+					}
+					count: 2
+				}
+				{
+					id: "7E02F451B00A6816"
+					type: "loot"
+					table_id: "1EBBC2B918151958"
+				}
+			]
+		}
+		{
+			id: "84C16F473F81E15A"
+			x: 26.5d
+			y: 0.0d
+			icon: {
+				id: "cataclysm:tidal_claws"
+				count: 1
+			}
+			size: 1.5d
+			shape: "diamond"
+			dependencies: [
+				"2CA381ECFA0C98DD"
+			]
+			tasks: [
+				{
+					id: "9B8993FEA47B0A97"
+					type: "kill"
+					entity: "cataclysm:the_leviathan"
+					value: 1
+				}
+			]
+			rewards: [
+				{
+					id: "CFE4FFE085FAF811"
+					type: "loot"
+					table_id: "870211AF0E412C54"
+				}
+				{
+					id: "F76A884A7498FF82"
+					type: "item"
+					item: {
+						id: "minecraft:diamond"
+						count: 1
+					}
+					count: 4
+				}
+				{
+					id: "27EF345B27FB1509"
+					type: "xp_levels"
+					xp_levels: 25
+				}
+			]
+		}
+		{
+			id: "A11AA013329F1B8F"
+			x: 13.5d
+			y: 5.0d
+			icon: {
+				id: "cataclysm:mech_eye"
+				count: 1
+			}
+			dependencies: [
+				"59FE80CC6AEEE44F"
+			]
+			tasks: [
+				{
+					id: "0137A15DC568978D"
+					type: "advancement"
+					advancement: "cataclysm:find_ancient_factory"
+					criterion: ""
+				}
+			]
+			rewards: [
+				{
+					id: "8BB50132679B7546"
+					type: "item"
+					item: {
+						id: "minecraft:redstone"
+						count: 1
+					}
+					count: 32
+				}
+				{
+					id: "D4629692A0718359"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+		}
+		{
+			id: "7A5E0B3BA2BF74D5"
+			x: 16.0d
+			y: 5.0d
+			icon: {
+				id: "cataclysm:witherite_ingot"
+				count: 1
+			}
+			size: 1.5d
+			shape: "diamond"
+			dependencies: [
+				"A11AA013329F1B8F"
+			]
+			tasks: [
+				{
+					id: "16799A1441A7B116"
+					type: "kill"
+					entity: "cataclysm:the_harbinger"
+					value: 1
+				}
+			]
+			rewards: [
+				{
+					id: "F5A1182FF5577EB1"
+					type: "loot"
+					table_id: "870211AF0E412C54"
+				}
+				{
+					id: "6DA3CCD6EF259B0C"
+					type: "item"
+					item: {
+						id: "minecraft:redstone_block"
+						count: 1
+					}
+					count: 4
+				}
+				{
+					id: "C67CEAE0EDB0A37A"
+					type: "xp_levels"
+					xp_levels: 25
+				}
+			]
+		}
+		{
+			id: "90FC11AB7F872C1E"
+			x: 21.5d
+			y: 5.0d
+			icon: {
+				id: "cataclysm:azure_seastone_bricks"
+				count: 1
+			}
+			dependencies: [
+				"84C16F473F81E15A"
+			]
+			tasks: [
+				{
+					id: "4D896E1394720890"
+					type: "advancement"
+					advancement: "cataclysm:find_acropolis"
+					criterion: ""
+				}
+			]
+			rewards: [
+				{
+					id: "570DFB78E65B6382"
+					type: "item"
+					item: {
+						id: "cataclysm:lacrima"
+						count: 1
+					}
+					count: 4
+				}
+				{
+					id: "7A914D8B5834E2B6"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+		}
+		{
+			id: "F4067129B28A80C5"
+			x: 24.0d
+			y: 5.0d
+			icon: {
+				id: "cataclysm:essence_of_the_storm"
+				count: 1
+			}
+			size: 1.5d
+			shape: "diamond"
+			dependencies: [
+				"90FC11AB7F872C1E"
+			]
+			tasks: [
+				{
+					id: "24A010F5C495076B"
+					type: "kill"
+					entity: "cataclysm:scylla"
+					value: 1
+				}
+			]
+			rewards: [
+				{
+					id: "46DE5A4F93E77849"
+					type: "loot"
+					table_id: "870211AF0E412C54"
+				}
+				{
+					id: "500EA037DEC8823E"
+					type: "item"
+					item: {
+						id: "cataclysm:lacrima"
+						count: 1
+					}
+					count: 8
+				}
+				{
+					id: "2C924D19ABC2EC80"
+					type: "xp_levels"
+					xp_levels: 30
+				}
+			]
+		}
+		{
+			id: "4EF139C16005FBBE"
+			x: 27.5d
+			y: 5.0d
+			icon: {
+				id: "cataclysm:music_disc_the_cataclysmfarer"
+				count: 1
+			}
+			size: 2.0d
+			shape: "hexagon"
+			dependencies: [
+				"F4067129B28A80C5"
+				"7A5E0B3BA2BF74D5"
+			]
+			tasks: [
+				{
+					id: "59F01A198E2B1AA9"
+					type: "checkmark"
+				}
+			]
+			rewards: [
+				{
+					id: "5400522062DFC76D"
+					type: "loot"
+					table_id: "B5AA0F94577E6A3C"
+				}
+				{
+					id: "715504D091CC954B"
+					type: "xp_levels"
+					xp_levels: 30
+				}
+			]
+		}
+		{
+			id: "3520027E5F654845"
+			x: 0.0d
+			y: 9.0d
+			icon: {
+				id: "born_in_chaos_v1:pieceofdarkmetal"
+				count: 1
+			}
+			size: 1.5d
+			dependencies: [
+				"EE958EEC8D2F80D4"
+			]
+			tasks: [
+				{
+					id: "27C1347F7C15A2AB"
+					type: "item"
+					item: {
+						id: "born_in_chaos_v1:pieceofdarkmetal"
+						count: 1
+					}
+					count: 9
+				}
+			]
+			rewards: [
+				{
+					id: "A7230F9C7086B406"
+					type: "loot"
+					table_id: "1EBBC2B918151958"
+				}
+				{
+					id: "AF0F4D85FAF3F03A"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+		}
+		{
+			id: "DC955614AFE47EC9"
+			x: 2.5d
+			y: 9.0d
+			icon: {
+				id: "born_in_chaos_v1:dark_metal_ingot"
+				count: 1
+			}
+			dependencies: [
+				"3520027E5F654845"
+			]
+			tasks: [
+				{
+					id: "849B363849EDF197"
+					type: "item"
+					item: {
+						id: "born_in_chaos_v1:dark_metal_ingot"
+						count: 1
+					}
+					count: 2
+				}
+			]
+			rewards: [
+				{
+					id: "FB3EA350CE60DAE9"
+					type: "item"
+					item: {
+						id: "born_in_chaos_v1:pieceofdarkmetal"
+						count: 1
+					}
+					count: 9
+				}
+				{
+					id: "1F6AEA2C61C6E59B"
+					type: "xp_levels"
+					xp_levels: 10
+				}
+			]
+		}
+		{
+			id: "8949F53EF3148917"
+			x: 5.0d
+			y: 8.0d
+			icon: {
+				id: "born_in_chaos_v1:shattered_skull"
+				count: 1
+			}
+			dependencies: [
+				"DC955614AFE47EC9"
+			]
+			tasks: [
+				{
+					id: "0A882BB0F027C24C"
+					type: "advancement"
+					advancement: "born_in_chaos_v1:dismantledto_bones"
+					criterion: ""
+				}
+			]
+			rewards: [
+				{
+					id: "BD4B3EF614E18B79"
+					type: "loot"
+					table_id: "870211AF0E412C54"
+				}
+				{
+					id: "00AF93075FFFABFA"
+					type: "xp_levels"
+					xp_levels: 15
+				}
+			]
+		}
+		{
+			id: "95D1BC9B4DD69C2B"
+			x: 5.0d
+			y: 10.0d
+			icon: {
+				id: "minecraft:bone"
+				count: 1
+			}
+			dependencies: [
+				"DC955614AFE47EC9"
+			]
+			tasks: [
+				{
+					id: "3080460973FD46C8"
+					type: "kill"
+					entity: "born_in_chaos_v1:dire_hound_leader"
+					value: 1
+				}
+			]
+			rewards: [
+				{
+					id: "D0B398F510A1367F"
+					type: "item"
+					item: {
+						id: "minecraft:cooked_beef"
+						count: 1
+					}
+					count: 8
+				}
+				{
+					id: "B681EC9EBCA24E5E"
+					type: "xp_levels"
+					xp_levels: 10
+				}
+			]
+		}
+		{
+			id: "3302C8F783572309"
+			x: 7.5d
+			y: 8.0d
+			icon: {
+				id: "minecraft:leather"
+				count: 1
+			}
+			dependencies: [
+				"DC955614AFE47EC9"
+			]
+			tasks: [
+				{
+					id: "51EBC7C80A45918A"
+					type: "kill"
+					entity: "born_in_chaos_v1:nightmare_stalker"
+					value: 1
+				}
+			]
+			rewards: [
+				{
+					id: "5C08CAAB75ED5D01"
+					type: "item"
+					item: {
+						id: "born_in_chaos_v1:monster_skin"
+						count: 1
+					}
+					count: 4
+				}
+				{
+					id: "A647771C8F4C5156"
+					type: "xp_levels"
+					xp_levels: 15
+				}
+			]
+		}
+		{
+			id: "D7D0A9312611B7B3"
+			x: 7.5d
+			y: 10.0d
+			icon: {
+				id: "born_in_chaos_v1:great_reaper_axe"
+				count: 1
+			}
+			dependencies: [
+				"DC955614AFE47EC9"
+			]
+			tasks: [
+				{
+					id: "ECE1D979130B7BD7"
+					type: "advancement"
+					advancement: "born_in_chaos_v1:horror_underthe_mantle"
+					criterion: ""
+				}
+			]
+			rewards: [
+				{
+					id: "12EC87386D7902CE"
+					type: "loot"
+					table_id: "870211AF0E412C54"
+				}
+				{
+					id: "5F19B6C2EB8B7F39"
+					type: "xp_levels"
+					xp_levels: 15
+				}
+			]
+		}
+		{
+			id: "FB0AA104CC0C908D"
+			x: -3.0d
+			y: 9.0d
+			icon: {
+				id: "mowziesmobs:wrought_helmet"
+				count: 1
+			}
+			dependencies: [
+				"EE958EEC8D2F80D4"
+			]
+			tasks: [
+				{
+					id: "450F272661CC7760"
+					type: "kill"
+					entity: "mowziesmobs:ferrous_wroughtnaut"
+					value: 1
+				}
+			]
+			rewards: [
+				{
+					id: "9A1AF974B8825D25"
+					type: "loot"
+					table_id: "870211AF0E412C54"
+				}
+				{
+					id: "EBDFCDA31B8C20EB"
+					type: "xp_levels"
+					xp_levels: 20
+				}
+			]
+		}
+		{
+			id: "8E2F39B985AF12DF"
+			x: -3.0d
+			y: 11.5d
+			icon: {
+				id: "mowziesmobs:ice_crystal"
+				count: 1
+			}
+			dependencies: [
+				"FB0AA104CC0C908D"
+			]
+			tasks: [
+				{
+					id: "ABD0BA39CD55117A"
+					type: "kill"
+					entity: "mowziesmobs:frostmaw"
+					value: 1
+				}
+			]
+			rewards: [
+				{
+					id: "E1DA94E33E082849"
+					type: "loot"
+					table_id: "870211AF0E412C54"
+				}
+				{
+					id: "9EEDA28CB8CE1340"
+					type: "xp_levels"
+					xp_levels: 20
+				}
+			]
+		}
+	]
+	images: [
+		{
+			id: "696DCC2AD04CB2BA"
+			image: "kronwerke:textures/quests/bosses/title.png"
+			x: 13.0d
+			y: -5.6d
+			width: 13.56d
+			height: 1.8d
+			rotation: 0.0d
+			order: 1
+		}
+		{
+			id: "FAFECC489FA9AA6F"
+			image: "kronwerke:textures/quests/bosses/prep.png"
+			x: 1.2d
+			y: -3.0d
+			width: 4.47d
+			height: 0.9d
+			rotation: 0.0d
+			order: 1
+		}
+		{
+			id: "FC8D5E39A7DC26F9"
+			image: "kronwerke:textures/quests/bosses/pyramid.png"
+			x: 8.0d
+			y: -3.0d
+			width: 7.96d
+			height: 0.9d
+			rotation: 0.0d
+			order: 1
+		}
+		{
+			id: "8E8810A8331AFA46"
+			image: "kronwerke:textures/quests/bosses/prison.png"
+			x: 16.0d
+			y: -3.0d
+			width: 6.8d
+			height: 0.9d
+			rotation: 0.0d
+			order: 1
+		}
+		{
+			id: "4394B708E7D8E913"
+			image: "kronwerke:textures/quests/bosses/city.png"
+			x: 24.0d
+			y: -3.0d
+			width: 6.99d
+			height: 0.9d
+			rotation: 0.0d
+			order: 1
+		}
+		{
+			id: "61F1AD29D55868C7"
+			image: "kronwerke:textures/quests/bosses/factory.png"
+			x: 14.75d
+			y: 3.0d
+			width: 4.91d
+			height: 0.9d
+			rotation: 0.0d
+			order: 1
+		}
+		{
+			id: "CB2BA39BBA632EFB"
+			image: "kronwerke:textures/quests/bosses/acropolis.png"
+			x: 22.75d
+			y: 3.0d
+			width: 4.45d
+			height: 0.9d
+			rotation: 0.0d
+			order: 1
+		}
+		{
+			id: "8EC19E957E8A427A"
+			image: "kronwerke:textures/quests/bosses/chaos.png"
+			x: 3.75d
+			y: 7.0d
+			width: 4.68d
+			height: 0.9d
+			rotation: 0.0d
+			order: 1
+		}
+		{
+			id: "16F7AB204BBBCB51"
+			image: "kronwerke:textures/quests/bosses/others.png"
+			x: -3.0d
+			y: 7.0d
+			width: 5.78d
+			height: 0.9d
+			rotation: 0.0d
+			order: 1
+		}
+	]
+}

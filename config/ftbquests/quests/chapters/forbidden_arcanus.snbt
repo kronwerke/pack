@@ -1,0 +1,1181 @@
+{
+	id: "34AB771EE72F1086"
+	filename: "forbidden_arcanus"
+	icon: {
+		id: "forbidden_arcanus:hephaestus_forge_tier_1"
+		count: 1
+	}
+	group: "03203A1312E25E36"
+	order_index: 52
+	default_quest_shape: "circle"
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			id: "2CDF0C46E508B917"
+			x: 0.0d
+			y: 1.0d
+			icon: {
+				id: "forbidden_arcanus:arcane_crystal"
+				count: 1
+			}
+			size: 2.0d
+			shape: "hexagon"
+			tasks: [
+				{
+					id: "1C9F5F1EF348610A"
+					type: "item"
+					item: {
+						id: "forbidden_arcanus:arcane_crystal"
+						count: 1
+					}
+					count: 8
+				}
+			]
+			rewards: [
+				{
+					id: "400996B31F1C2FA9"
+					type: "item"
+					item: {
+						id: "forbidden_arcanus:arcane_crystal"
+						count: 1
+					}
+					count: 8
+				}
+				{
+					id: "DF45DE2B81396A2F"
+					type: "loot"
+					table_id: "F2BA64790EBA3DF5"
+				}
+			]
+		}
+		{
+			id: "AAAAA9F78B6C3881"
+			x: 2.5d
+			y: 0.0d
+			dependencies: [
+				"2CDF0C46E508B917"
+			]
+			tasks: [
+				{
+					id: "D2056219F4D1DECA"
+					type: "item"
+					item: {
+						id: "forbidden_arcanus:arcane_crystal_dust"
+						count: 1
+					}
+					count: 8
+				}
+			]
+			rewards: [
+				{
+					id: "6E079427F8AE972B"
+					type: "item"
+					item: {
+						id: "forbidden_arcanus:arcane_crystal"
+						count: 1
+					}
+					count: 8
+				}
+				{
+					id: "45AA434E00385CA8"
+					type: "xp_levels"
+					xp_levels: 3
+				}
+			]
+		}
+		{
+			id: "1127879A6CFC403D"
+			x: 2.5d
+			y: 2.0d
+			icon: {
+				id: "forbidden_arcanus:polished_darkstone"
+				count: 1
+			}
+			dependencies: [
+				"2CDF0C46E508B917"
+			]
+			tasks: [
+				{
+					id: "CE987456D2DDF5DA"
+					type: "item"
+					item: {
+						id: "forbidden_arcanus:polished_darkstone"
+						count: 1
+					}
+					count: 64
+				}
+			]
+			rewards: [
+				{
+					id: "2B7B9827D1E41E91"
+					type: "item"
+					item: {
+						id: "forbidden_arcanus:polished_darkstone"
+						count: 1
+					}
+					count: 32
+				}
+				{
+					id: "A072291345D6574B"
+					type: "xp_levels"
+					xp_levels: 3
+				}
+			]
+		}
+		{
+			id: "B1E593A88A66EDF2"
+			x: 5.0d
+			y: 0.0d
+			icon: {
+				id: "forbidden_arcanus:mundabitur_dust"
+				count: 1
+			}
+			dependencies: [
+				"AAAAA9F78B6C3881"
+			]
+			tasks: [
+				{
+					id: "6EB9D176F21AD2A9"
+					type: "item"
+					item: {
+						id: "forbidden_arcanus:mundabitur_dust"
+						count: 1
+					}
+					count: 4
+				}
+			]
+			rewards: [
+				{
+					id: "E90F3874636BB6AA"
+					type: "item"
+					item: {
+						id: "minecraft:phantom_membrane"
+						count: 1
+					}
+					count: 2
+				}
+				{
+					id: "480D54DB0022B8F3"
+					type: "item"
+					item: {
+						id: "minecraft:gunpowder"
+						count: 1
+					}
+					count: 8
+				}
+				{
+					id: "A2CDE1C790331696"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+		}
+		{
+			id: "F86509E51E65F29D"
+			x: 7.5d
+			y: 0.0d
+			icon: {
+				id: "forbidden_arcanus:deorum_ingot"
+				count: 1
+			}
+			size: 1.5d
+			shape: "square"
+			dependencies: [
+				"B1E593A88A66EDF2"
+			]
+			tasks: [
+				{
+					id: "83FD59F774BF3D6C"
+					type: "item"
+					item: {
+						id: "forbidden_arcanus:deorum_ingot"
+						count: 1
+					}
+					count: 5
+				}
+			]
+			rewards: [
+				{
+					id: "0E74094E0DEA479C"
+					type: "item"
+					item: {
+						id: "minecraft:gold_ingot"
+						count: 1
+					}
+					count: 8
+				}
+				{
+					id: "4D609982F396E7E5"
+					type: "item"
+					item: {
+						id: "forbidden_arcanus:mundabitur_dust"
+						count: 1
+					}
+					count: 4
+				}
+				{
+					id: "C964B4F1C4A09A9B"
+					type: "loot"
+					table_id: "F2BA64790EBA3DF5"
+				}
+			]
+		}
+		{
+			id: "099036A08D2100E8"
+			x: 5.0d
+			y: 2.0d
+			icon: {
+				id: "forbidden_arcanus:rune"
+				count: 1
+			}
+			optional: true
+			dependencies: [
+				"1127879A6CFC403D"
+			]
+			tasks: [
+				{
+					id: "28C666CC6206D4FE"
+					type: "item"
+					item: {
+						id: "forbidden_arcanus:rune"
+						count: 1
+					}
+					count: 4
+				}
+			]
+			rewards: [
+				{
+					id: "C5A52B293262BF35"
+					type: "item"
+					item: {
+						id: "forbidden_arcanus:rune"
+						count: 1
+					}
+					count: 2
+				}
+				{
+					id: "2CB82A79E9BAA1DE"
+					type: "xp_levels"
+					xp_levels: 3
+				}
+			]
+		}
+		{
+			id: "C9161FEA6C5C569B"
+			x: 7.5d
+			y: 2.0d
+			icon: {
+				id: "forbidden_arcanus:stellarite_piece"
+				count: 1
+			}
+			dependencies: [
+				"1127879A6CFC403D"
+			]
+			tasks: [
+				{
+					id: "9E3402C00512BE5F"
+					type: "item"
+					item: {
+						id: "forbidden_arcanus:stellarite_piece"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "69A8C3F7E1E15DAB"
+					type: "item"
+					item: {
+						id: "forbidden_arcanus:stellarite_piece"
+						count: 1
+					}
+					count: 1
+				}
+				{
+					id: "DE7B278674D380C7"
+					type: "loot"
+					table_id: "F2BA64790EBA3DF5"
+				}
+			]
+		}
+		{
+			id: "9A6F605AA8A2AECB"
+			x: 10.5d
+			y: 1.0d
+			icon: {
+				id: "forbidden_arcanus:gilded_chiseled_polished_darkstone"
+				count: 1
+			}
+			size: 1.5d
+			shape: "square"
+			dependencies: [
+				"F86509E51E65F29D"
+				"1127879A6CFC403D"
+			]
+			tasks: [
+				{
+					id: "6F94BBFBE4A192D6"
+					type: "item"
+					item: {
+						id: "forbidden_arcanus:gilded_chiseled_polished_darkstone"
+						count: 1
+					}
+					count: 9
+				}
+				{
+					id: "38B2681C7B6AF465"
+					type: "item"
+					item: {
+						id: "forbidden_arcanus:chiseled_arcane_polished_darkstone"
+						count: 1
+					}
+					count: 4
+				}
+			]
+			rewards: [
+				{
+					id: "F34DCF989F7875C5"
+					type: "item"
+					item: {
+						id: "forbidden_arcanus:polished_darkstone"
+						count: 1
+					}
+					count: 16
+				}
+				{
+					id: "AD4A524C85D574A6"
+					type: "loot"
+					table_id: "F2BA64790EBA3DF5"
+				}
+				{
+					id: "8672B667ED4F9152"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+		}
+		{
+			id: "44CBF0CE4350507E"
+			x: 13.0d
+			y: 1.0d
+			icon: {
+				id: "forbidden_arcanus:hephaestus_forge_tier_1"
+				count: 1
+			}
+			size: 2.0d
+			shape: "gear"
+			dependencies: [
+				"9A6F605AA8A2AECB"
+				"B1E593A88A66EDF2"
+			]
+			tasks: [
+				{
+					id: "7B2D970327BC14DF"
+					type: "checkmark"
+				}
+			]
+			rewards: [
+				{
+					id: "E959DE3622F8EB43"
+					type: "item"
+					item: {
+						id: "forbidden_arcanus:mundabitur_dust"
+						count: 1
+					}
+					count: 4
+				}
+				{
+					id: "4ED0792FD70D0CA2"
+					type: "loot"
+					table_id: "BA8E33E78A3B3A0C"
+				}
+				{
+					id: "8C2CBA690B970ACE"
+					type: "xp_levels"
+					xp_levels: 10
+				}
+			]
+		}
+		{
+			id: "E131CB21A6634931"
+			x: 15.5d
+			y: 0.0d
+			icon: {
+				id: "forbidden_arcanus:darkstone_pedestal"
+				count: 1
+			}
+			dependencies: [
+				"44CBF0CE4350507E"
+			]
+			tasks: [
+				{
+					id: "0C5A9157C8074177"
+					type: "item"
+					item: {
+						id: "forbidden_arcanus:darkstone_pedestal"
+						count: 1
+					}
+					count: 4
+				}
+			]
+			rewards: [
+				{
+					id: "790685368F562A6C"
+					type: "item"
+					item: {
+						id: "forbidden_arcanus:deorum_ingot"
+						count: 1
+					}
+					count: 2
+				}
+				{
+					id: "9EB160C7ED52D8DB"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+		}
+		{
+			id: "653480535AEC8A1A"
+			x: 15.5d
+			y: 2.0d
+			icon: {
+				id: "forbidden_arcanus:arcane_crystal_obelisk"
+				count: 1
+			}
+			dependencies: [
+				"44CBF0CE4350507E"
+			]
+			tasks: [
+				{
+					id: "49F420F2535FBA61"
+					type: "item"
+					item: {
+						id: "forbidden_arcanus:arcane_crystal_block"
+						count: 1
+					}
+					count: 4
+				}
+			]
+			rewards: [
+				{
+					id: "F7B6C86C107C9EE2"
+					type: "item"
+					item: {
+						id: "forbidden_arcanus:arcane_crystal"
+						count: 1
+					}
+					count: 16
+				}
+				{
+					id: "F14DEA3A683F9E12"
+					type: "loot"
+					table_id: "F2BA64790EBA3DF5"
+				}
+				{
+					id: "D3FA10949CB704E1"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+		}
+		{
+			id: "E635091111ED4E18"
+			x: 18.0d
+			y: 1.0d
+			icon: {
+				id: "forbidden_arcanus:iron_blacksmith_gavel"
+				count: 1
+			}
+			dependencies: [
+				"44CBF0CE4350507E"
+			]
+			tasks: [
+				{
+					id: "4A12F0422A102CC0"
+					type: "item"
+					item: {
+						id: "forbidden_arcanus:iron_blacksmith_gavel"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "72BDAD153C10F522"
+					type: "item"
+					item: {
+						id: "minecraft:iron_ingot"
+						count: 1
+					}
+					count: 8
+				}
+				{
+					id: "C055E439DFFC58F0"
+					type: "item"
+					item: {
+						id: "minecraft:clay_ball"
+						count: 1
+					}
+					count: 10
+				}
+				{
+					id: "26D3DD95CD3F152F"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+		}
+		{
+			id: "2DF00E2C1755CB3F"
+			x: 10.5d
+			y: 7.0d
+			icon: {
+				id: "forbidden_arcanus:test_tube"
+				count: 1
+			}
+			dependencies: [
+				"44CBF0CE4350507E"
+			]
+			tasks: [
+				{
+					id: "0F887888FD269AA4"
+					type: "item"
+					item: {
+						id: "forbidden_arcanus:test_tube"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "6CC15E3426890FE6"
+					type: "item"
+					item: {
+						id: "minecraft:experience_bottle"
+						count: 1
+					}
+					count: 4
+				}
+				{
+					id: "B6BE08B240D9357C"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+		}
+		{
+			id: "72FFA45EAC31C4F5"
+			x: 13.0d
+			y: 7.0d
+			icon: {
+				id: "forbidden_arcanus:soul"
+				count: 1
+			}
+			dependencies: [
+				"44CBF0CE4350507E"
+			]
+			tasks: [
+				{
+					id: "585AB0CF44C8BC46"
+					type: "item"
+					item: {
+						id: "forbidden_arcanus:soul"
+						count: 1
+					}
+					count: 10
+				}
+			]
+			rewards: [
+				{
+					id: "F1D3F16B764923CF"
+					type: "item"
+					item: {
+						id: "forbidden_arcanus:soul"
+						count: 1
+					}
+					count: 5
+				}
+				{
+					id: "940A0AF61C500E87"
+					type: "loot"
+					table_id: "F2BA64790EBA3DF5"
+				}
+				{
+					id: "55624EBECDC19D09"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+		}
+		{
+			id: "27E6700350A65082"
+			x: 15.5d
+			y: 7.0d
+			icon: {
+				id: "forbidden_arcanus:aureal_bottle"
+				count: 1
+			}
+			dependencies: [
+				"653480535AEC8A1A"
+			]
+			tasks: [
+				{
+					id: "4A19BBF29793F2F7"
+					type: "item"
+					item: {
+						id: "forbidden_arcanus:aureal_bottle"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "31E98C32E9E9EB8A"
+					type: "item"
+					item: {
+						id: "forbidden_arcanus:arcane_crystal_dust"
+						count: 1
+					}
+					count: 8
+				}
+				{
+					id: "AD3EC6C8A44BB5FC"
+					type: "item"
+					item: {
+						id: "minecraft:glowstone_dust"
+						count: 1
+					}
+					count: 4
+				}
+				{
+					id: "32C8887798E51AF4"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+		}
+		{
+			id: "B2393952DFA0BCC3"
+			x: 18.0d
+			y: 7.0d
+			icon: {
+				id: "forbidden_arcanus:quantum_catcher"
+				count: 1
+			}
+			size: 1.75d
+			shape: "hexagon"
+			dependencies: [
+				"E635091111ED4E18"
+				"27E6700350A65082"
+			]
+			tasks: [
+				{
+					id: "945510D219D5FBBE"
+					type: "item"
+					item: {
+						id: "forbidden_arcanus:quantum_catcher"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "8F6D48F937B350BC"
+					type: "item"
+					item: {
+						id: "forbidden_arcanus:aureal_bottle"
+						count: 1
+					}
+					count: 2
+				}
+				{
+					id: "C1498295911D1C0B"
+					type: "loot"
+					table_id: "BA8E33E78A3B3A0C"
+				}
+				{
+					id: "CC4DF6A79FF8AE65"
+					type: "xp_levels"
+					xp_levels: 10
+				}
+			]
+		}
+		{
+			id: "D98C61E2D65E1512"
+			x: 20.5d
+			y: 7.0d
+			icon: {
+				id: "forbidden_arcanus:hephaestus_forge_tier_2"
+				count: 1
+			}
+			size: 2.5d
+			shape: "gear"
+			dependencies: [
+				"B2393952DFA0BCC3"
+				"53FDA154B0A4BBDF"
+			]
+			tasks: [
+				{
+					id: "18CCFA6FC6993AAC"
+					type: "item"
+					item: {
+						id: "forbidden_arcanus:edelwood_planks"
+						count: 1
+					}
+					count: 1
+				}
+				{
+					id: "17612BA7DFB4ECDE"
+					type: "item"
+					item: {
+						id: "forbidden_arcanus:spawner_scrap"
+						count: 1
+					}
+					count: 4
+				}
+				{
+					id: "2631BB3C2258C5C4"
+					type: "checkmark"
+				}
+			]
+			rewards: [
+				{
+					id: "37A5654914AE25EB"
+					type: "loot"
+					table_id: "C79EAEAE0F26AA7F"
+				}
+				{
+					id: "47C2755126698EB4"
+					type: "item"
+					item: {
+						id: "forbidden_arcanus:deorum_ingot"
+						count: 1
+					}
+					count: 4
+				}
+				{
+					id: "663C0EF061E1757E"
+					type: "xp_levels"
+					xp_levels: 20
+				}
+			]
+		}
+		{
+			id: "C0C4426ACBBC9B57"
+			x: 23.0d
+			y: 6.0d
+			icon: {
+				id: "forbidden_arcanus:terrastomp_prism"
+				count: 1
+			}
+			optional: true
+			dependencies: [
+				"D98C61E2D65E1512"
+			]
+			tasks: [
+				{
+					id: "009E02A69CE36059"
+					type: "item"
+					item: {
+						id: "forbidden_arcanus:terrastomp_prism"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "E30E3ED91E6795E9"
+					type: "item"
+					item: {
+						id: "minecraft:diamond"
+						count: 1
+					}
+					count: 4
+				}
+				{
+					id: "25809A40CDDF72F5"
+					type: "loot"
+					table_id: "BA8E33E78A3B3A0C"
+				}
+			]
+		}
+		{
+			id: "64B4B0D844DF0F98"
+			x: 23.0d
+			y: 8.0d
+			icon: {
+				id: "forbidden_arcanus:artisan_relic"
+				count: 1
+			}
+			optional: true
+			dependencies: [
+				"D98C61E2D65E1512"
+			]
+			tasks: [
+				{
+					id: "0A985E2A5F3F9F7E"
+					type: "checkmark"
+				}
+			]
+			rewards: [
+				{
+					id: "0423FC0B3FEAD438"
+					type: "item"
+					item: {
+						id: "minecraft:emerald"
+						count: 1
+					}
+					count: 6
+				}
+			]
+		}
+		{
+			id: "0418C05012C55DA7"
+			x: 25.5d
+			y: 7.0d
+			icon: {
+				id: "forbidden_arcanus:dark_nether_star"
+				count: 1
+			}
+			optional: true
+			dependencies: [
+				"D98C61E2D65E1512"
+			]
+			tasks: [
+				{
+					id: "210BEF57B1DB9866"
+					type: "checkmark"
+				}
+			]
+			rewards: [
+				{
+					id: "55F01B3DD82FBEA2"
+					type: "xp_levels"
+					xp_levels: 10
+				}
+			]
+		}
+		{
+			id: "2DFBD8D19758869F"
+			x: 13.0d
+			y: 13.0d
+			icon: {
+				id: "forbidden_arcanus:clibano_core"
+				count: 1
+			}
+			size: 1.5d
+			shape: "hexagon"
+			dependencies: [
+				"72FFA45EAC31C4F5"
+			]
+			tasks: [
+				{
+					id: "40B56C269F38FD34"
+					type: "item"
+					item: {
+						id: "forbidden_arcanus:clibano_core"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "1F0F74380625037A"
+					type: "item"
+					item: {
+						id: "forbidden_arcanus:polished_darkstone"
+						count: 1
+					}
+					count: 32
+				}
+				{
+					id: "F60B55B43636A9F1"
+					type: "loot"
+					table_id: "BA8E33E78A3B3A0C"
+				}
+				{
+					id: "8F2F9BCEBE8C4279"
+					type: "xp_levels"
+					xp_levels: 10
+				}
+			]
+		}
+		{
+			id: "46ED1C8245FC7FA8"
+			x: 15.5d
+			y: 13.0d
+			icon: {
+				id: "forbidden_arcanus:obsidiansteel_ingot"
+				count: 1
+			}
+			dependencies: [
+				"2DFBD8D19758869F"
+			]
+			tasks: [
+				{
+					id: "5121CACD21931B84"
+					type: "item"
+					item: {
+						id: "forbidden_arcanus:obsidiansteel_ingot"
+						count: 1
+					}
+					count: 8
+				}
+			]
+			rewards: [
+				{
+					id: "84415E28719813A1"
+					type: "item"
+					item: {
+						id: "minecraft:obsidian"
+						count: 1
+					}
+					count: 8
+				}
+				{
+					id: "1BE88C5C8C0CCCE1"
+					type: "item"
+					item: {
+						id: "minecraft:raw_iron"
+						count: 1
+					}
+					count: 16
+				}
+				{
+					id: "BC1BBDE223CDF2A5"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+		}
+		{
+			id: "BFA55EFFFE67255C"
+			x: 18.0d
+			y: 14.0d
+			icon: {
+				id: "forbidden_arcanus:obsidian_skull"
+				count: 1
+			}
+			optional: true
+			dependencies: [
+				"46ED1C8245FC7FA8"
+			]
+			tasks: [
+				{
+					id: "EBE5CE6956065F53"
+					type: "item"
+					item: {
+						id: "forbidden_arcanus:obsidian_skull"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "07FF72B90BA02CEB"
+					type: "item"
+					item: {
+						id: "forbidden_arcanus:obsidiansteel_ingot"
+						count: 1
+					}
+					count: 4
+				}
+				{
+					id: "782B3D5332A08CF6"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+		}
+		{
+			id: "53FDA154B0A4BBDF"
+			x: 18.0d
+			y: 12.0d
+			icon: {
+				id: "forbidden_arcanus:edelwood_log"
+				count: 1
+			}
+			dependencies: [
+				"46ED1C8245FC7FA8"
+			]
+			tasks: [
+				{
+					id: "A77AF6B88CC70497"
+					type: "item"
+					item: {
+						id: "forbidden_arcanus:edelwood_log"
+						count: 1
+					}
+					count: 4
+				}
+			]
+			rewards: [
+				{
+					id: "9AA5850D46947B63"
+					type: "item"
+					item: {
+						id: "minecraft:ender_pearl"
+						count: 1
+					}
+					count: 4
+				}
+				{
+					id: "A1181A9F0E4E6FD3"
+					type: "loot"
+					table_id: "F2BA64790EBA3DF5"
+				}
+				{
+					id: "BE03E7AFA963AC4A"
+					type: "xp_levels"
+					xp_levels: 10
+				}
+			]
+		}
+		{
+			id: "446620819774F109"
+			x: 20.5d
+			y: 12.0d
+			icon: {
+				id: "forbidden_arcanus:dark_matter"
+				count: 1
+			}
+			dependencies: [
+				"53FDA154B0A4BBDF"
+			]
+			tasks: [
+				{
+					id: "C0BD8A442727D743"
+					type: "item"
+					item: {
+						id: "forbidden_arcanus:dark_matter"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "292B3D48BFCC1C58"
+					type: "item"
+					item: {
+						id: "forbidden_arcanus:edelwood_log"
+						count: 1
+					}
+					count: 4
+				}
+				{
+					id: "21A9561FA2EDD407"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+		}
+		{
+			id: "94B5F648108F682A"
+			x: 20.5d
+			y: 14.0d
+			icon: {
+				id: "forbidden_arcanus:dark_nether_star"
+				count: 1
+			}
+			optional: true
+			dependencies: [
+				"BFA55EFFFE67255C"
+			]
+			tasks: [
+				{
+					id: "2D7DE7AEFDD50678"
+					type: "item"
+					item: {
+						id: "forbidden_arcanus:dark_nether_star"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "89B6F26BAEC5D94E"
+					type: "loot"
+					table_id: "BA8E33E78A3B3A0C"
+				}
+				{
+					id: "0ECD3229C54A676C"
+					type: "xp_levels"
+					xp_levels: 10
+				}
+			]
+		}
+	]
+	images: [
+		{
+			id: "680E0B373613F097"
+			image: "kronwerke:textures/quests/forbidden_arcanus/title.png"
+			x: 12.0d
+			y: -5.4d
+			width: 15.48d
+			height: 1.75d
+			rotation: 0.0d
+			order: 1
+		}
+		{
+			id: "CB1B5A976CB6B0A4"
+			image: "kronwerke:textures/quests/forbidden_arcanus/kristalle.png"
+			x: 3.7d
+			y: -2.7d
+			width: 5.11d
+			height: 0.9d
+			rotation: 0.0d
+			order: 1
+		}
+		{
+			id: "AC7FB11EAB8BCE52"
+			image: "kronwerke:textures/quests/forbidden_arcanus/schmiede.png"
+			x: 14.2d
+			y: -2.7d
+			width: 8.1d
+			height: 0.9d
+			rotation: 0.0d
+			order: 1
+		}
+		{
+			id: "0598C7CB60EBD27E"
+			image: "kronwerke:textures/quests/forbidden_arcanus/essenzen.png"
+			x: 13.0d
+			y: 4.8d
+			width: 3.11d
+			height: 0.9d
+			rotation: 0.0d
+			order: 1
+		}
+		{
+			id: "6D31049DE5450876"
+			image: "kronwerke:textures/quests/forbidden_arcanus/rituale.png"
+			x: 21.7d
+			y: 4.8d
+			width: 2.53d
+			height: 0.9d
+			rotation: 0.0d
+			order: 1
+		}
+		{
+			id: "BA7BEDFF63B8964D"
+			image: "kronwerke:textures/quests/forbidden_arcanus/edelholz.png"
+			x: 17.0d
+			y: 10.3d
+			width: 9.49d
+			height: 0.9d
+			rotation: 0.0d
+			order: 1
+		}
+	]
+}

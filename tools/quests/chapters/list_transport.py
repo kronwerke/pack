@@ -235,7 +235,7 @@ quests = [
           description=[
               "&6Modular Routers&r, &6Router&r: ein Puffer von einem Stapel, neun Module (Ziehen, Senden bis 24 Blöcke durch Wände, Saugen, Vernichten, Abbauen, Setzen), alle 20 Ticks ein Durchlauf, mit Upgrades alle 2 Ticks und 64 Stück. Neun Filterplätze je Modul, der Massenfilter 54. &eStufe 2.&r",
               "",
-              "Vier Eisen, vier Eisengitter, ein Leeres Modul ergeben vier Router. Siehe Kapitel Rohre und Router, dort steht auch die Sortieranlage.",
+              "&eRezept auf Kronwerke:&r Vier Andesitlegierungen, vier Eisengitter und ein Leeres Modul ergeben vier Router. Siehe Kapitel Rohre und Router, dort steht auch die Sortieranlage.",
           ],
           tasks=[task_checkmark("Gelesen")],
           rewards=[reward_xp(2)],
@@ -422,7 +422,7 @@ quests = [
           description=[
               "&6Ranged Pumps&r, &6Pumpe&r: pumpt von ihrem Standort aus Ring um Ring bis Reichweite &e64&r alles unter sich weg, &e100 FE pro Block&r, einer alle 8 Ticks, Tank 32 Eimer. Was weg ist, wird zu Stein. Kein Filter, Redstone hält sie an. &eStufe 2.&r",
               "",
-              "Obsidian, zwei Eisenspitzhacken, Lava- und Wassereimer, ein Diamantblock. Siehe Kapitel Rohre und Router.",
+              "&eRezept auf Kronwerke:&r Obsidian, zwei Eisenspitzhacken, Lava- und Wassereimer, in der Mitte eine Mechanische Pumpe von Create. Siehe Kapitel Rohre und Router.",
           ],
           tasks=[task_checkmark("Gelesen")],
           rewards=[reward_xp(2)],

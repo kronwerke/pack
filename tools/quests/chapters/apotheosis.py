@@ -112,7 +112,7 @@ quests = [
     quest("salvaging", 5, 7, "&6&lBau einen Salvaging Table",
           subtitle="Aus Beute werden Materialien.",
           description=[
-              "&eRezept:&r oben drei &6Kupferbarren&r, in der Mitte &6Eisenspitzhacke&r, &6Schmiedetisch&r und &6Eisenaxt&r, unten zwei &6Gem Dust&r mit einem &6Lavaeimer&r dazwischen.",
+              "&eRezept auf Kronwerke:&r oben drei &6Kupferbleche&r, in der Mitte &6Eisenspitzhacke&r, &6Schmiedetisch&r und &6Eisenaxt&r, unten zwei &6Gem Dust&r mit einem &6Lavaeimer&r dazwischen.",
               "",
               "Leg Affix-Items hinein, die du nicht trägst. Jedes gibt ein bis vier &6Seltenheitsmaterialien&r seiner Stufe. Edelsteine werden zu Gem Dust, und normale Ausrüstung gibt einen Teil ihres Metalls zurück: eine Eisenrüstung ein bis drei Eisenbarren, eine Diamantrüstung ein bis drei Diamanten.",
               "",
@@ -187,7 +187,7 @@ quests = [
     quest("reforge_table", 17.5, 1, "&6&lBau einen Simple Reforging Table",
           subtitle="Neu würfeln, bis es passt.",
           description=[
-              "&eRezept:&r ein &6Eisenbarren&r oben, in der Mitte ein &6Zaubertisch&r zwischen zwei &6Gem Dust&r, unten drei &6Glatte Steine&r.",
+              "&eRezept auf Kronwerke:&r ein &6Quelljuwel&r von Ars Nouveau oben, in der Mitte ein &6Zaubertisch&r zwischen zwei &6Gem Dust&r, unten drei &6Glatte Steine&r.",
               "",
               "&eSo geht es:&r Item in die Mitte, oben links Seltenheitsmaterial der Stufe, die das Item bekommen soll, unten rechts Sigils of Rebirth. Wie am Zaubertisch siehst du drei Angebote, keines ist besser als das andere. Auch Items ohne Affixe lassen sich umschmieden, so oft du willst.",
               "",

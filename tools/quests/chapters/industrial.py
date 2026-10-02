@@ -28,14 +28,14 @@ quests = [
     quest("welcome", 0, 1, "&a&lBau zwei Primitive Maschinengehäuse",
           subtitle="Das Gehäuse der ersten Maschinen.",
           description=[
-              "Vier &6Stämme&r in die Ecken, vier &6Eisenbarren&r an die Seiten, ein &6Redstoneblock&r in die Mitte ergeben ein &6Primitives Maschinengehäuse&r.",
+              "&eRezept auf Kronwerke:&r Vier &6Stämme&r in die Ecken, vier &6Eisenbarren&r an die Seiten, ein &6Andesitgehäuse&r von Create in die Mitte ergeben ein &6Primitives Maschinengehäuse&r.",
               "",
               "&aIndustrial Foregoing&r baut Maschinen, die Felder ernten, Tiere versorgen, Mobs verarbeiten und mit dem Laser Erz bohren. Der Mod öffnet mit &6Stufe 3&r. Jede Maschine sitzt in einem von vier Gehäusen: Primitiv, Einfach, Fortschrittlich, Überlegen.",
               "",
               "Ein Buch, ein Redstone und ein Erdblock formlos ergeben das &6Industrial Foregoing: Handbuch&r.",
           ],
           tasks=[task_item("industrialforegoing:machine_frame_pity", 2)],
-          rewards=[reward_item("minecraft:redstone_block", 2), reward_table("s3_common")],
+          rewards=[reward_item("create:andesite_casing", 2), reward_table("s3_common")],
           icon="industrialforegoing:machine_frame_pity", size=2.0, shape="hexagon"),
 
     quest("extractor", 2.5, 0, "&6Bau einen Flüssigkeitsextraktor",

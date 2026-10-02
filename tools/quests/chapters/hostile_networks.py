@@ -21,7 +21,7 @@ quests = [
     quest("deep_learner", 0, 1, "&3&lBau einen Deep Learner",
           subtitle="Eine Mobfarm, die keine Mobs braucht.",
           description=[
-              "&eRezept:&r oben &6Obsidian&r, &6Redstone-Verstärker&r, Obsidian. Mitte Verstärker, &6Glasscheibe&r, Verstärker. Unten Obsidian, &6Redstone&r, Obsidian.",
+              "&eRezept auf Kronwerke:&r oben &6Obsidian&r, &6Redstone-Verstärker&r, Obsidian. Mitte Verstärker, &6Elektronenröhre&r von Create, Verstärker. Unten Obsidian, &6Redstone&r, Obsidian.",
               "",
               "&3Hostile Neural Networks&r baut Monsterdrops am Computer nach. Du tötest einen Mob ein paar Dutzend Mal, der &6Deep Learner&r lernt dabei, wie der Mob funktioniert, und später simuliert eine Maschine den Kampf und wirft die Drops aus. Ohne Spawner, ohne Dunkelheit, ohne Lag.",
               "",

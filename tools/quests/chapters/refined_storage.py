@@ -59,7 +59,7 @@ quests = [
               "",
               "Anders als bei AE2 gibt es keine Gravurmaschine und keine Pressen. Ein Ofen reicht, und der Schmelzofen ist doppelt so schnell.",
               "",
-              "&eWofür:&r Basisprozessoren für Kerne und 4k-Speicherkerne. Verbesserte für Konsole, Importeur, Exporteur und 16k-Kerne. Fortschrittliche für Kontrollblock, Laufwerk, Autohersteller und alles Drahtlose. Ein Dutzend von jeder Sorte ist ein guter Vorrat.",
+              "&eWofür:&r Basisprozessoren für Kerne und 4k-Speicherkerne. Verbesserte für Konsole, Importeur, Exporteur und 16k-Kerne. Fortschrittliche für Autohersteller und alles Drahtlose, Kontrollblock und Laufwerk nehmen auf Kronwerke einen Fortgeschrittenen Steuerschaltkreis. Ein Dutzend von jeder Sorte ist ein guter Vorrat.",
           ],
           tasks=[task_item("refinedstorage:basic_processor", 4), task_item("refinedstorage:improved_processor", 4),
                  task_item("refinedstorage:advanced_processor", 4)],
@@ -82,7 +82,7 @@ quests = [
           description=[
               "&eRezept:&r Ein &6Basisprozessor&r und ein &6Glowstone-Staub&r formlos ergeben einen &6Konstruktionskern&r. Ein Basisprozessor und ein &6Netherquarz&r ergeben einen &6Zerstörungskern&r.",
               "",
-              "Der Konstruktionskern steckt in allem, was aus dem Netz hinausgibt (Exporteur, Konstruktor), der Zerstörungskern in allem, was hineinholt (Importeur, Destruktor). Die Konsole und das Autocrafting wollen beide.",
+              "Der Konstruktionskern steckt in allem, was aus dem Netz hinausgibt (Exporteur, Konstruktor), der Zerstörungskern in allem, was hineinholt (Importeur, Destruktor). Die Konsole will beide, der Autohersteller auf Kronwerke nur den Zerstörungskern.",
           ],
           tasks=[task_item("refinedstorage:construction_core", 2), task_item("refinedstorage:destruction_core", 2)],
           rewards=[reward_item("minecraft:glowstone_dust", 8), reward_item("minecraft:quartz", 8), reward_xp(3)],
@@ -92,7 +92,7 @@ quests = [
     quest("controller", 10.5, 1, "&3&lBau den Kontrollblock",
           subtitle="Der Strom für das ganze Netz.",
           description=[
-              "&eRezept:&r Quarzeisen in die vier Ecken, ein &6Fortschrittlicher Prozessor&r oben in die Mitte, &6Silizium&r links, rechts und unten, ein &6Maschinengehäuse&r ins Zentrum.",
+              "&eRezept auf Kronwerke:&r Quarzeisen in die vier Ecken, ein &6Fortgeschrittener Steuerschaltkreis&r von Mekanism oben in die Mitte, &6Silizium&r links, rechts und unten, ein &6Maschinengehäuse&r ins Zentrum.",
               "",
               "Der &6Kontrollblock&r nimmt &dFE&r von jeder Seite an, ein Universalkabel von Mekanism oder Powah genügt. Er speichert &d1 000 FE&r und gibt sie an alle Geräte im Netz weiter. Was das Netz braucht, siehst du, wenn du ihn anklickst.",
               "",
@@ -135,7 +135,7 @@ quests = [
     quest("drive", 15.5, 1, "&3&lBau ein Laufwerk",
           subtitle="Acht Zellen in einem Block.",
           description=[
-              "&eRezept:&r Quarzeisen rundherum, eine &6Truhe&r oben in die Mitte, ein &6Maschinengehäuse&r ins Zentrum, ein &6Fortschrittlicher Prozessor&r unten in die Mitte.",
+              "&eRezept auf Kronwerke:&r Quarzeisen rundherum, eine &6Truhe&r oben in die Mitte, ein &6Maschinengehäuse&r ins Zentrum, ein &6Fortgeschrittener Steuerschaltkreis&r von Mekanism unten in die Mitte.",
               "",
               "Das &6Laufwerk&r hat &e8 Plätze&r für Speicherzellen. Es braucht 10 FE/t plus 4 FE/t für jede Zelle darin. Stell es direkt an den Kontrollblock oder an ein Kabel.",
               "",
@@ -312,7 +312,7 @@ quests = [
     quest("autocrafter", 13.5, 7, "&a&lBau einen Autohersteller",
           subtitle="Neun Rezepte, kein Multiblock.",
           description=[
-              "&eRezept:&r Quarzeisen in die Ecken, ein &6Konstruktionskern&r oben in die Mitte, zwei &6Fortschrittliche Prozessoren&r links und rechts, ein Maschinengehäuse ins Zentrum, ein &6Zerstörungskern&r unten.",
+              "&eRezept auf Kronwerke:&r Quarzeisen in die Ecken, ein &6Präzisionsmechanismus&r von Create oben in die Mitte, zwei &6Fortschrittliche Prozessoren&r links und rechts, ein Maschinengehäuse ins Zentrum, ein &6Zerstörungskern&r unten.",
               "",
               "Der &6Autohersteller&r hält &e9 Rezepte&r. Herstellungsrezepte craftet er selbst, direkt im Block. Keine Fertigungs-CPU, kein Molekularassembler, keine Präzisionsgetriebe wie bei AE2. Er braucht 4 FE/t plus 2 pro Rezept.",
               "",

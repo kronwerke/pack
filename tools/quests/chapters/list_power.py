@@ -157,7 +157,7 @@ quests = [
     check("alternator", X[2], Y2, "&6Mach aus Rotation Strom",
           "Crafts & Additions, Alternator: 360 FE/t bei 256 RPM.",
           [
-              "Der &6Alternator&r ist ein Rezept der Handwerkseinheiten: Kupferspulen, Eisenbleche, eine Eisenrute, Andesitlegierung. Eine Welle hinein, ein Kabel oder eine Maschine daneben, fertig.",
+              "&eRezept auf Kronwerke:&r Der &6Alternator&r entsteht in den Handwerkseinheiten aus Kupferspulen, Eisenblechen, einem &6Einfachen Steuerschaltkreis&r und Andesitlegierung. Eine Welle hinein, ein Kabel oder eine Maschine daneben, fertig.",
               "",
               "&eCrafts & Additions, Alternator:&r Brennstoff Rotation. Bei 256 RPM zieht er &d16 384 SU&r und macht &d360 FE/t&r (480 mal 0,75 Wirkungsgrad), bei 64 RPM entsprechend 4 096 SU und 90 FE/t. Puffer 5 000 FE, Abgabe bis 5 000 FE/t. Der &6Elektromotor&r ist der Rückweg: bis 480 FE/t rein, bis 256 RPM und 16 384 SU raus. Offen ab Stufe 2.",
           ],
@@ -242,7 +242,7 @@ quests = [
     check("jdt_gens", X[2], Y2 + 2, "&6Heiz mit Primal Coal",
           "Just Dire Things: 60 bis 240 FE/t fest, 5 000 FE/t flüssig.",
           [
-              "&6Generator:&r Ferricore in die Ecken, Redstone oben und unten, Kohle links und rechts, ein Schmelzofen in der Mitte. &6Brennstoffgenerator:&r dasselbe mit Blazegold und Eimern. &6Taschengenerator&r: Rechtsklick, Kohle rein, lädt alles in deinem Inventar.",
+              "&eRezept auf Kronwerke:&r Der &6Generator&r ist Ferricore in den Ecken, Redstone oben und unten, Kohle links und rechts, ein &6Einfacher Steuerschaltkreis&r in der Mitte. Der &6Brennstoffgenerator&r hat dort Blazegold, Redstone, Eimer und einen Schmelzofen. &6Taschengenerator&r: Rechtsklick, Kohle rein, lädt alles in deinem Inventar.",
               "",
               "&eJust Dire Things, Generator:&r 15 FE je Brenntick, vierfache Brenngeschwindigkeit. Kohle &d60 FE/t&r (24 000 FE), Primal Coal &d120 FE/t&r (72 000), Blaze Ember &d240 FE/t&r (216 000). Puffer &d1 Million FE&r, Abgabe 1 000 FE/t an alle Nachbarn.",
               "",
@@ -372,7 +372,7 @@ quests = [
     check("oritech_gens", X[6], Y3, "&cStell die Oritech-Generatoren",
           "Oritech: 32 FE/t Basis, 64 Bio und Lava, 256 Brennstoff, 32 Solar.",
           [
-              "&6Grundlegender Generator:&r Nickel oben und an den Seiten, Kupfer in der Mitte, unten Spule, Ofen, Spule, dazu Maschinenkerne um ihn herum. Bio-, Lava- und Brennstoffgenerator sind größere Multiblöcke mit Kernen.",
+              "&eRezept auf Kronwerke:&r Der &6Grundlegende Generator&r ist Nickel oben und an den Seiten, Kupfer in der Mitte, unten Spule, Andesitgehäuse, Spule, dazu Maschinenkerne um ihn herum. Bio-, Lava- und Brennstoffgenerator sind größere Multiblöcke mit Kernen.",
               "",
               "&eOritech, Generatoren:&r Grundlegender Generator &d32 FE/t&r aus allem Brennbaren, Puffer 50 000. &6Biogenerator&r &d64 FE/t&r aus Biomasse, &6Lavagenerator&r &d64 FE/t&r aus Lava, &6Brennstoffgenerator&r &d256 FE/t&r aus Öl-Brennstoff, Puffer 100 000 bis 250 000. Das &6Große Solarmodul&r &d32 FE/t&r bei Tag. Mit dem Dampfkessel-Addon machen die Generatoren statt Strom Dampf, den die &6Dampfmaschine&r eins zu eins zurück in FE wandelt. Offen ab Stufe 3, siehe Kapitel &6Oritech&r.",
           ],

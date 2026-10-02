@@ -101,7 +101,7 @@ quests = [
     quest("d_undergarden", 4.5, 0, "&2Öffne den Undergarden",
           subtitle="Steinziegel und ein Katalysator. Stufe 3.",
           description=[
-              "&eDer Schlüssel:&r Der &6Katalysator&r sind &e4 Kupferbarren&r in den Ecken, &e4 Stein&r an den Seiten und eine &6Enderperle&r in der Mitte.",
+              "&eDer Schlüssel:&r der &6Katalysator&r. &eRezept auf Kronwerke:&r &e4 Stahlbarren&r in den Ecken, &e4 Stein&r an den Seiten und eine &6Enderperle&r in der Mitte.",
               "&eDas Portal:&r Ein Rahmen aus &6Steinziegeln&r (auch rissig, bemoost, gemeißelt, oder Tiefschieferziegel) wie ein Netherportal, dann Rechtsklick mit dem Katalysator.",
               "",
               "&eDrüben:&r ewige Nacht, Pilze, Moderwesen, die dich anstecken, und vier Erze: &6Cloggrum&r, &6Froststahl&r, &6Utherium&r und &6Regalium&r. Betten funktionieren. Ein Block dort sind &evier&r in der Oberwelt.",
@@ -286,20 +286,20 @@ quests = [
     quest("r_tempad", 8.5, 11, "&dÖffne eine Zeittür",
           subtitle="Tempad: 1 000 Chronon pro Tür, auch zwischen Welten. Stufe 3.",
           description=[
-              "&eDas Gerät:&r Das &6Tempad&r sind 3 getöntes Glas oben, Quarz, Enderperle und Redstonelampe in der Mitte, unten Zeitstahl, &6Chronon-Batterie&r, Zeitstahl. Es speichert Orte und öffnet eine &6Zeittür&r dorthin, Dimension egal.",
+              "&eRezept auf Kronwerke:&r Das &6Tempad&r sind 3 getöntes Glas oben, Quarz, &6Warpstaub&r und Redstonelampe in der Mitte, unten Zeitstahl, &6Chronon-Batterie&r, Zeitstahl. Es speichert Orte und öffnet eine &6Zeittür&r dorthin, Dimension egal.",
               "",
               "&eWas es kostet (Serverconfig):&r &e1 000 Chronon&r für 10 Sekunden Tür, jede weitere Sekunde 10. Das Tempad fasst 6 000, also sechs Türen. Chronon macht das &6Chronometer&r in der Hand (1 je 36 Ticks) oder das &6Metronom&r als Block (1 je 24 Ticks, 6 000 Speicher).",
               "",
-              "Wer Zeitstahl und Enderperlen schon in Stufe 2 sammelt, baut sein Gerät am ersten Abend von Stufe 3. Siehe Kapitel &6Rohre und Router&r.",
+              "Wer Zeitstahl und Warpstaub schon in Stufe 2 sammelt, baut sein Gerät am ersten Abend von Stufe 3. Siehe Kapitel &6Rohre und Router&r.",
           ],
           tasks=[task_checkmark("Verstanden")],
-          rewards=[reward_item("minecraft:ender_pearl", 2), reward_xp(3)],
+          rewards=[reward_item("waystones:warp_dust", 2), reward_xp(3)],
           deps=["r_ars"], icon="minecraft:clock"),
 
     quest("r_mekanism", 10.5, 11, "&dBau einen Teleporter",
           subtitle="Mekanism: Rahmen, Frequenz, Strom. Stufe 3.",
           description=[
-              "&eSo geht es:&r Ein &6Teleportationskern&r (4 Enderperlen, 2 Atomlegierungen, 2 Gold, Diamant) wird mit 4 Stahlgehäusen und 4 einfachen Schaltkreisen zum &6Teleporter&r. Dazu &e9 Teleporter-Rahmen&r aus raffiniertem Obsidian und Glowstone, als Rahmen 4 breit und 5 hoch, der Teleporter ist einer der Rahmenblöcke.",
+              "&eSo geht es:&r Ein &6Teleportationskern&r (&eRezept auf Kronwerke:&r 4 Manaperlen, 2 Atomlegierungen, 2 Gold, Diamant) wird mit 4 Stahlgehäusen und 4 einfachen Schaltkreisen zum &6Teleporter&r. Dazu &e9 Teleporter-Rahmen&r aus raffiniertem Obsidian und Glowstone, als Rahmen 4 breit und 5 hoch, der Teleporter ist einer der Rahmenblöcke.",
               "",
               "&eWarum:&r Zwei Teleporter mit derselben &eFrequenz&r verbinden zwei Basen oder zwei Dimensionen, ohne Level und ohne Wartezeit. Nur Strom, mehr je weiter. Der &6Tragbare Teleportierer&r springt von überall zu jedem Teleporter deiner Frequenz.",
               "",

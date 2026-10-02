@@ -2,7 +2,7 @@
 readers, the logic programmer, writers) with Tunnels, Terminals and Crafting; XNet (controller,
 connectors, advanced connectors, logic channels, routers); LaserIO (nodes, item, energy, fluid
 and chemical cards, filters); Compact Machines; Mining Gadgets and its upgrades. None of these
-recipes are changed by Kronwerke. Tier 3 mining gadget upgrades are stage 4 and only named.
+recipes are changed by Kronwerke except the mining gadget MK3 (links.js). Tier 3 mining gadget upgrades are stage 4 and only named.
 Pipez and Modular Routers live in pipes.py, the overview of all transport in list_transport.py."""
 from ftbq import (chapter, quest, task_item, reward_item, reward_table, reward_xp, banner)
 
@@ -303,7 +303,7 @@ quests = [
     quest("mg_gadget", 3, 18, "&bBau einen Mining Gadget",
           subtitle="Ein Laser statt einer Spitzhacke.",
           description=[
-              "&6Blank Upgrade Module:&r Redstone, Lapis, Diamanten und eine Glasscheibe. Daraus mit Diamanten, Eisen, Gold und Redstone der &6Mining Gadget&r.",
+              "&6Blank Upgrade Module:&r Redstone, Lapis, Diamanten und eine Glasscheibe. Daraus mit Diamanten, Eisen, Gold und Redstone der &6Mining Gadget&r. &eRezept auf Kronwerke:&r Der &6Mining Gadget MK3&r nimmt statt Redstone einen &6Einfachen Steuerschaltkreis&r, MK1 und MK2 bleiben wie im Mod.",
               "",
               "Rechte Maustaste halten, und der Laser baut ab, worauf du zielst. Er fasst &d1 000 000 FE&r, ein Block kostet etwa 200 FE. Aufladen geht zum Beispiel im Ladeplatz eines Mekanism-Energiewürfels. Schleich-Rechtsklick öffnet Größe, Reichweite und Modus.",
           ],

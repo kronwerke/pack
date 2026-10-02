@@ -114,14 +114,14 @@ quests = [
     quest("improved_upgrade", 10.4, -1.3, "&6Bau die Verbesserte Modifikation",
           subtitle="Schneller, und du bestimmst, wohin.",
           description=[
-              "&eRezept:&r vier &6Goldbarren&r in die Ecken, vier &6Redstone&r an die Seiten, die &6Normale Modifikation&r in die Mitte.",
+              "&eRezept auf Kronwerke:&r vier &6Messingbarren&r in die Ecken, vier &6Redstone&r an die Seiten, die &6Normale Modifikation&r in die Mitte.",
               "",
               "Jetzt zieht das Ende &e16 Gegenstände alle 10 Ticks&r, &e500 mB&r Flüssigkeit, &e8 192 FE&r oder &e2 000 mB&r Gas pro Tick.",
               "",
               "Neu ist die &eVerteilung&r: &6Nächste zuerst&r, &6Weiteste zuerst&r, &6Rundlauf&r oder &6Zufällig&r. Für eine Reihe Fabriken nimm Rundlauf, dann bekommt jede gleich viel. Für Überlauf in eine Mülltonne nimm Nächste zuerst und stell die Tonne ans Ende.",
           ],
           tasks=[task_item("pipez:improved_upgrade", 1)],
-          rewards=[reward_item("minecraft:gold_ingot", 6), reward_table("s2_common")],
+          rewards=[reward_item("create:brass_ingot", 6), reward_table("s2_common")],
           deps=["basic_upgrade"], icon="pipez:improved_upgrade"),
 
     quest("outlook", 13, -1.3, "&dLies, was in Stufe 3 kommt",
@@ -154,7 +154,7 @@ quests = [
     quest("router", 2.6, 6, "&e&lBau einen Router",
           subtitle="Ein Block, neun Module, ein Puffer.",
           description=[
-              "&eRezept:&r vier &6Eisenbarren&r in die Ecken, vier &6Eisengitter&r an die Seiten, ein &6Leeres Modul&r in die Mitte. Das gibt &64 Router&r.",
+              "&eRezept auf Kronwerke:&r vier &6Andesitlegierungen&r in die Ecken, vier &6Eisengitter&r an die Seiten, ein &6Leeres Modul&r in die Mitte. Das gibt &64 Router&r.",
               "",
               "Ein Router hat einen &ePuffer&r von einem Stapel, &eneun Modulplätze&r und &efünf Upgradeplätze&r. Jede Sekunde arbeitet er alle Module von links nach rechts ab. Trichter und Rohre dürfen den Puffer befüllen und leeren.",
               "",
@@ -339,7 +339,7 @@ quests = [
     quest("pump", 0, 14.5, "&9Bau die Pumpe",
           subtitle="Ein See verschwindet, Block für Block.",
           description=[
-              "&eRezept:&r vier &6Obsidian&r in die Ecken, zwei &6Eisenspitzhacken&r oben und unten, links ein &6Lavaeimer&r, rechts ein &6Wassereimer&r, in der Mitte ein &6Diamantblock&r. Eine &6Pumpe&r von Ranged Pumps.",
+              "&eRezept auf Kronwerke:&r vier &6Obsidian&r in die Ecken, zwei &6Eisenspitzhacken&r oben und unten, links ein &6Lavaeimer&r, rechts ein &6Wassereimer&r, in der Mitte eine &6Mechanische Pumpe&r von Create. Eine &6Pumpe&r von Ranged Pumps.",
               "",
               "Stell sie über das Wasser oder die Lava und gib ihr Strom. Sie arbeitet sich von ihrem Standort aus Ring für Ring nach außen, bis zur Reichweite &e64&r, und saugt alles unter sich leer. Jeder Block kostet &e100 FE&r und dauert 8 Ticks, der Puffer fasst 32 000 FE.",
               "",

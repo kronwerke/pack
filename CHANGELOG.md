@@ -113,3 +113,7 @@ Needs a new world: the stage files, the quest ids and the goal data changed.
 - Six recipes tie the new mods in (`kubejs/server_scripts/kronwerke/added.js`, reasons in `docs/RECIPES.md`): the flux compressor, the dynamo and the Flux controller take Mekanism circuits, the drone a precision mechanism, the Flux core a source gem, the simulation chamber a source gem block, the loot fabricator an engineering processor.
 - PneumaticCraft's heat entry for Botania's blaze block points at a block that exists in the pack's Botania build.
 - The item registry (`tools/stages/items.txt`) has 32 306 items now.
+
+## 0.8.1
+
+- Cross links: 25 recipes take one part from another mod of their stage (andesite alloy, circuits, brass, source gems, mana pearls), and Iron's Spells ink and the Forbidden and Arcanus artisan relic get recipes. Reasons in `docs/RECIPES.md`, the quest texts name the new recipes.

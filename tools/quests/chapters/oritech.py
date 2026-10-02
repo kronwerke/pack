@@ -96,7 +96,7 @@ quests = [
     quest("generator", 2.5, 5, "&c&lStell einen Grundlegenden Generator auf",
           subtitle="Kohle rein, 32 RF pro Tick raus.",
           description=[
-              "&6Nickel&r oben und an den Seiten, ein &6Kupferbarren&r in die Mitte, unten &6Magnetspule&r, &6Ofen&r, Magnetspule.",
+              "&eRezept auf Kronwerke:&r &6Nickel&r oben und an den Seiten, ein &6Kupferbarren&r in die Mitte, unten &6Magnetspule&r, ein &6Andesitgehäuse&r von Create, Magnetspule.",
               "",
               "Er verbrennt alles, was im Ofen brennt, macht &e32 RF/t&r und puffert 50 000 RF. Er braucht keine Kerne und nimmt keine Addons. Zwei oder drei davon tragen Pulverizer, Ofen und Gießerei.",
           ],

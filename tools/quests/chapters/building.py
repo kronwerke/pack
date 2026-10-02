@@ -3,7 +3,7 @@
 sacks, signs, locks), Create's decorative parts (copycats, andesite alloy decor, copper roofing)
 and tips for a streamer's base (claims, chunk loading, lighting). Building Gadgets 2, the
 schematicannon, the wand of symmetry and the extendo grip are stage 2, the copy paste gadget and
-Mining Gadgets stage 3; they are only mentioned. No Kronwerke recipe touches these mods."""
+Mining Gadgets stage 3; they are only mentioned. The framing saw takes andesite alloy on Kronwerke (links.js)."""
 from ftbq import (chapter, quest, task_item, task_checkmark, reward_item, reward_table, reward_xp,
                   banner, img, item_texture)
 
@@ -47,7 +47,7 @@ quests = [
     quest("saw", 2.5, 2, "&6&lBau eine Rahmensäge",
           subtitle="Doppelt so viele Formen aus demselben Holz.",
           description=[
-              "&eRezept:&r ein &6Eisenbarren&r über drei &6Rahmenblöcken&r ergibt die &6Rahmensäge&r (Framing Saw). Rechtsklick öffnet sie: links die Rahmenblöcke hinein, rechts die Form aussuchen, das Suchfeld hilft bei über 200 Einträgen.",
+              "&eRezept auf Kronwerke:&r eine &6Andesitlegierung&r über drei &6Rahmenblöcken&r ergibt die &6Rahmensäge&r (Framing Saw). Rechtsklick öffnet sie: links die Rahmenblöcke hinein, rechts die Form aussuchen, das Suchfeld hilft bei über 200 Einträgen.",
               "",
               "Die Säge rechnet in &eMaterialwert&r: Ein Rahmenblock ist 6 144 wert, eine Schräge 3 072, eine Stufe 3 072, eine Ecksäule 1 536. Aus einem Rahmenblock werden also zwei Schrägen oder vier Ecksäulen, ohne Rest.",
               "",

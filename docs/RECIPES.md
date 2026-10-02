@@ -80,6 +80,34 @@ The id of each new recipe is `kronwerke:<family>/<name>`. "Remove all" means eve
 | Farming for Blockheads market | Sells the Productive Trees hybrids of generations 1 to 3 and the five mutation saplings: 1, 2 and 4 emeralds by generation (`kubejs/data/kronwerke/recipe/market/productivetrees`). | The mod's trees do not generate in this version; the market is the way in. Generations 4 to 9, the glowing trees and the loot saplings stay with breeding and loot. |
 | Mahou Tsukai Mystic Staff | Summoning costs 2 000 mana instead of 100 (`config/mahoutsukai-server.toml`). | The stage 4 goal asks for 30 staffs, each meant as a real investment of one mage. |
 
+### Cross links
+
+One part from another mod in a recipe that only used its own mod, so every machine leans on a pillar of its stage. All in `kubejs/server_scripts/kronwerke/links.js`; each swap replaces every occurrence of the old ingredient in that one recipe.
+
+| Recipe | Change | Why |
+|---|---|---|
+| FramedBlocks framing saw, Productive Trees sawmill, Mystical Agriculture inferium growth accelerator | Iron or stone becomes andesite alloy | The first building and farm tools need the stage 1 tech goal item |
+| Apotheosis salvaging table | Copper ingots become copper sheets | A reason to build the press early |
+| Apotheosis simple reforging table | Iron ingot becomes a source gem | Reforging is magic |
+| Just Dire Things coal generator, Create Diesel Generators engine, Crafts & Additions alternator | A basic control circuit | Every generator goes through the one circuit route of the pack |
+| Hostile Neural Networks deep learner | Glass pane becomes an electron tube | Its only stage 2 machine touches tech |
+| Productive Bees centrifuge | Grindstone becomes a millstone | A grinder from the grinding mod |
+| Modular Routers router | Iron becomes andesite alloy | Logistics block on the Create base |
+| Ranged Pumps pump | Diamond block becomes a mechanical pump | It is a pump |
+| Pipez improved upgrade | Gold becomes brass | The stage 2 pipe tier needs the stage 2 metal |
+| Silent Gear alloy forge | Iron block becomes a brass casing | The stage 2 forge sits in the brass tier |
+| Refined Storage controller and disk drive | Advanced processor becomes an advanced control circuit | The same gate as the AE2 drive; Refined Storage is no way around it |
+| Refined Storage autocrafter | Construction core becomes a precision mechanism | Autocrafting needs Create, as in AE2 |
+| Ender IO SAG mill, alloy smelter | Piston becomes a crushing wheel, obsidian becomes a brass casing | Ender IO starts from Create like the Mekanism crusher |
+| Oritech basic generator, Industrial Foregoing pity frame | A furnace or redstone block becomes an andesite casing | Their first machines start on the Create base |
+| Mining Gadgets gadget (MK3) | Redstone becomes a basic control circuit | An FE tool needs the circuit |
+| Undergarden catalyst | Copper becomes steel | A stage 3 portal costs a stage 3 metal |
+| Mekanism teleportation core | Ender pearls become mana pearls | Teleporting is where magic helps |
+| Tempad | The ender pearl becomes warp dust | The travel mods share a resource |
+| Draconic fusion crafting core | Lapis blocks become source gem blocks | Fusion starts from source, like the fusion reactor |
+| Iron's Spells common ink | New: glass bottle, ink sac, source gem | Ink was loot only and stalled the whole mod |
+| Forbidden and Arcanus artisan relic | New: four deorum around a precision mechanism | It gated the forge progression and was loot only |
+
 ### Magic
 
 | Item | Change | Why |

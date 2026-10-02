@@ -188,7 +188,7 @@ quests = [
     quest("accelerator", 5, 8, "&aLeg Wachstumsbeschleuniger unter das Feld",
           subtitle="Alle zehn Sekunden ein Wachstumstick, ohne dass du dabei bist.",
           description=[
-              "&e4 Inferiumessenz&r in die Ecken, &e4 Stein&r an die Seiten und ein &6Inferium-Edelstein&r in die Mitte ergeben &e3 Inferium-Wachstumsbeschleuniger&r.",
+              "&eRezept auf Kronwerke:&r &e4 Inferiumessenz&r in die Ecken, &e4 Andesitlegierungen&r an die Seiten und ein &6Inferium-Edelstein&r in die Mitte ergeben &e3 Inferium-Wachstumsbeschleuniger&r.",
               "",
               "Ein Beschleuniger gibt der &eersten Pflanze über sich&r alle &e10 Sekunden&r einen zufälligen Wachstumstick. Der Inferium-Beschleuniger reicht &e9 Blöcke&r nach oben, und du kannst beliebig viele übereinander stapeln: unter jedem Feldblock eine Säule aus Beschleunigern, und jeder zählt.",
               "",

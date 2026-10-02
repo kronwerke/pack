@@ -747,7 +747,7 @@ quests = [
     quest("alternator", B + 5, 24.5, "&6Mach FE aus Rotation",
           subtitle="Der Alternator.",
           description=[
-              "Handwerkseinheiten-Rezept: vier &6Kupferspulen&r, Eisenbleche, eine &6Eisenrute&r und zwei &6Andesitlegierungen&r ergeben den &6Alternator&r.",
+              "&eRezept auf Kronwerke:&r In den Handwerkseinheiten ergeben vier &6Kupferspulen&r, Eisenbleche, ein &6Einfacher Steuerschaltkreis&r von Mekanism und zwei &6Andesitlegierungen&r den &6Alternator&r.",
               "",
               "Bei 256 RPM liefert er &d360 FE pro Tick&r und zieht dabei &d16 384 SU&r. Ein Kessel mit Alternator ist ein solides erstes Kraftwerk für Mekanism.",
               "",

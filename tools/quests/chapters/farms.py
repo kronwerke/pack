@@ -97,7 +97,7 @@ quests = [
     quest("wood_sawmill", 6.5, R["wood"], "&6Säge im Sägewerk",
           subtitle="Sechs Bretter und Sägemehl aus jedem Stamm, ohne Strom.",
           description=[
-              "&6Sägewerk&r von Productive Trees (Steinschneider, 3 Eisenbarren, Bretter), ein Trichter vom Baumtopf hinein, ein Trichter unten heraus. Jeder Stamm wird zu &e6 Brettern&r und &e2 Sägemehl&r.",
+              "&eRezept auf Kronwerke:&r Steinschneider, 3 &6Andesitlegierungen&r und Bretter ergeben das &6Sägewerk&r von Productive Trees. Ein Trichter vom Baumtopf hinein, ein Trichter unten heraus. Jeder Stamm wird zu &e6 Brettern&r und &e2 Sägemehl&r.",
               "",
               pic("productivetrees:sawdust"),
               "",

@@ -586,7 +586,7 @@ quests = [
           ["outlook"], "silentgear:crimson_repair_kit"),
     later("alloy_forge", 18.5, 13.5, "&6Bau die Legierungsschmiede",
           "Legierungen ohne Raster, mehr pro Erz.",
-          ["Oben &6Purpur-Stahl, Schwarzstein, Purpur-Stahl&r. Mitte zwei &6Purpur-Stahl&r. Unten &6Schwarzstein, Eisenblock, Schwarzstein&r.",
+          ["&eRezept auf Kronwerke:&r Oben &6Purpur-Stahl, Schwarzstein, Purpur-Stahl&r. Mitte zwei &6Purpur-Stahl&r. Unten &6Schwarzstein&r, ein &6Messinggehäuse&r von Create, &6Schwarzstein&r.",
            "",
            "Sie macht Purpur-Stahl, Lohengold, Azur-Elektrum und Tyrann-Stahl. Dazu &6Kohlenstoffstahl&r: ein Eisen und drei Kohle, 420 Haltbarkeit und +4 Schaden."],
           ["crimson_steel"], "silentgear:alloy_forge"),

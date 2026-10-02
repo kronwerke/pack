@@ -168,12 +168,12 @@ quests = [
     quest("crafting_core", 0, 10.5, "&dBau einen Fusionskern",
           subtitle="Die Werkbank von Draconic Evolution.",
           description=[
-              "&6Lapislazuliblöcke&r in die Ecken, &6Diamanten&r an die Seiten, ein &6Draconiumkern&r in die Mitte.",
+              "&eRezept auf Kronwerke:&r &6Quelljuwelblöcke&r von Ars Nouveau in die Ecken, &6Diamanten&r an die Seiten, ein &6Draconiumkern&r in die Mitte.",
               "",
               "In den Kern kommt der &eKatalysator&r, das Teil, das verwandelt wird. Um ihn herum stehen &eInjektoren&r mit je einer Zutat. Den Strom bekommen die Injektoren, nicht der Kern. Im Fenster des Kerns drückst du auf &eCraft&r.",
           ],
           tasks=[task_item("draconicevolution:crafting_core", 1)],
-          rewards=[reward_item("minecraft:lapis_block", 4), reward_xp(5)],
+          rewards=[reward_item("ars_nouveau:source_gem_block", 4), reward_xp(5)],
           deps=["core"], icon="draconicevolution:crafting_core"),
 
     quest("injectors", 2.5, 10.5, "&dStell acht Draconium-Injektoren auf",

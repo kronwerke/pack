@@ -255,7 +255,7 @@ quests = [
     quest("generator", 0, 7.5, "&6&lBau den einfachen Generator",
           subtitle="Strom aus Kohle, 1 000 FE pro Tick.",
           description=[
-              "&eRezept:&r vier &6Ferricore Ingots&r in die Ecken, ein &6Schmelzofen&r in die Mitte, &6Kohle&r links und rechts, &6Redstone&r oben und unten.",
+              "&eRezept auf Kronwerke:&r vier &6Ferricore Ingots&r in die Ecken, ein &6Einfacher Steuerschaltkreis&r von Mekanism in die Mitte, &6Kohle&r links und rechts, &6Redstone&r oben und unten.",
               "",
               "Der &6Simple Coal Generator&r frisst alles, was im Ofen brennt, und macht &e15 FE pro Brenntick&r, viermal so schnell wie ein Ofen. Eine Kohle gibt &e24 000 FE&r in 20 Sekunden (60 FE/t), ein &6Primal Coal&r 72 000 FE bei 120 FE/t, ein &6Blaze Ember&r 216 000 FE bei 240 FE/t.",
               "",

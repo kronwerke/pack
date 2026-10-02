@@ -127,7 +127,7 @@ quests = [
           task_checkmark("Purpur-Eisen-Werkzeug gebaut"), "silentgear:pickaxe_head", ["s2"]),
 
     entry("sg_crimson_steel", 2, 0, S2, "&cLegiere Purpur-Stahl", "Silent Gear: das Endgame-Metall des Nethers.",
-          ["An der Werkbank: 4 &6Purpur-Eisen&r, 2 Lohenruten, 1 Magmacreme ergeben 1 Barren. In der &6Alloy Forge&r (Purpur-Stahl, Schwarzstein, Eisenblock): ein Block Purpur-Eisen, 2 Lohenruten, Magmacreme ergeben 3.",
+          ["An der Werkbank: 4 &6Purpur-Eisen&r, 2 Lohenruten, 1 Magmacreme ergeben 1 Barren. In der &6Alloy Forge&r (&eRezept auf Kronwerke:&r Purpur-Stahl, Schwarzstein, Messinggehäuse): ein Block Purpur-Eisen, 2 Lohenruten, Magmacreme ergeben 3.",
            "",
            "2 400 Haltbarkeit, Tempo 15, +6 Schaden, Rüstung 22 mit Zähigkeit 10, Flammenwächter (Feuerschutz im ganzen Satz). &6Lohengold&r (Gold und 4 Lohenstaub) hält nur 69, gräbt aber mit Tempo 15 und taugt als Spitze."],
           task_checkmark("Purpur-Stahl-Werkzeug gebaut"), "silentgear:hammer_head", ["s2"]),

@@ -121,12 +121,12 @@ quests = [
     quest("teleport_core", 0, 7, "&dBau einen Teleportationskern",
           subtitle="Das Herz von Teleporter und Miner.",
           description=[
-              "Enderperlen in die Ecken, &6Atomlegierung&r oben und unten, Gold links und rechts, ein Diamant in die Mitte.",
+              "&eRezept auf Kronwerke:&r &6Manaperlen&r von Botania in die Ecken, &6Atomlegierung&r oben und unten, Gold links und rechts, ein Diamant in die Mitte.",
               "",
               "Teleporter, Tragbarer Teleportierer und Digitaler Miner brauchen einen, der Miner sogar zwei. In Stufe 4 kommen Quantenverschränkungsporter und QIO dazu.",
           ],
           tasks=[task_item("mekanism:teleportation_core", 2)],
-          rewards=[reward_item("minecraft:ender_pearl", 8), reward_xp(5)],
+          rewards=[reward_item("botania:mana_pearl", 8), reward_xp(5)],
           deps=["atomic"], icon="mekanism:teleportation_core"),
 
     quest("teleporter", 2.5, 6.25, "&d&lStell zwei Teleporter auf",

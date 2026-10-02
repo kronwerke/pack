@@ -205,7 +205,7 @@ quests = [
     quest("sawmill", 0, 11, "&6&lBau ein Sägewerk",
           subtitle="Sechs Bretter und Sägemehl aus jedem Stamm.",
           description=[
-              "&eRezept:&r oben Bretter, &6Steinschneider&r, Bretter, in der Mitte drei &6Eisenbarren&r, unten drei Bretter. Das &6Sägewerk&r von &6Productive Trees&r braucht keinen Strom: Stamm hinein, warten, fertig.",
+              "&eRezept auf Kronwerke:&r oben Bretter, &6Steinschneider&r, Bretter, in der Mitte drei &6Andesitlegierungen&r, unten drei Bretter. Das &6Sägewerk&r von &6Productive Trees&r braucht keinen Strom: Stamm hinein, warten, fertig.",
               "",
               "Jeder Stamm wird zu &e6 Brettern&r statt 4 an der Werkbank, dazu &e2 Sägemehl&r. Acht Sägemehl um einen Wassereimer ergeben zwei &6Papier&r, ein Buch mit einem Sägemehl das Handbuch des Mods.",
               "",

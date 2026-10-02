@@ -92,9 +92,11 @@ quests = [
           deps=["equip"], icon="irons_spellbooks:scroll"),
 
     quest("ink", 7.5, 2, "&fSammle Common Ink",
-          subtitle="Keine Werkbank, nur Beute.",
+          subtitle="Aus Kisten, von Magiern oder von der Werkbank.",
           description=[
-              "&6Common Ink&r gibt es nicht an der Werkbank. Sie liegt in denselben Kisten wie die Rollen (10 Prozent pro Kiste, zwei Versuche), in Festungsbibliotheken fast immer, und jeder &6Magier&r lässt 1 bis 3 Fläschchen fallen. Der Fahrende Händler verkauft sie gegen Smaragde.",
+              "&eRezept auf Kronwerke:&r Eine &6Glasflasche&r, ein &6Tintenbeutel&r und ein &6Quelljuwel&r von Ars Nouveau formlos ergeben eine &6Common Ink&r.",
+              "",
+              "Sie liegt außerdem in denselben Kisten wie die Rollen (10 Prozent pro Kiste, zwei Versuche), in Festungsbibliotheken fast immer, und jeder &6Magier&r lässt 1 bis 3 Fläschchen fallen. Der Fahrende Händler verkauft sie gegen Smaragde.",
               "",
               pic("irons_spellbooks:common_ink"),
               "",

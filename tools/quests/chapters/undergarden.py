@@ -19,7 +19,7 @@ quests = [
     quest("catalyst", 0, 0, "&2&lBau den Katalysator",
           subtitle="Der Schlüssel zum Undergarden.",
           description=[
-              "Werkbank: &64 Kupferbarren&r in die Ecken, &64 Stein&r an die Seiten, &61 Enderperle&r in die Mitte. Das ergibt den &6Katalysator&r.",
+              "&eRezept auf Kronwerke:&r &64 Stahlbarren&r in die Ecken, &64 Stein&r an die Seiten, &61 Enderperle&r in die Mitte. Das ergibt den &6Katalysator&r.",
               "",
               pic("undergarden:catalyst"),
               "",

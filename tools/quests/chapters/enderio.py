@@ -77,12 +77,12 @@ quests = [
     quest("smelter", 5, 1.5, "&6&lBau die Legierungsschmelze",
           subtitle="Drei Zutaten rein, ein Barren raus.",
           description=[
-              "Oben Zahnrad, &6Ofen&r, Zahnrad. Mitte Ofen, &6Gehäuse der Leere&r, Ofen. Unten Eisenbarren, &6Obsidian&r, Eisenbarren. Kondensator in den Slot.",
+              "&eRezept auf Kronwerke:&r Oben Zahnrad, &6Ofen&r, Zahnrad. Mitte Ofen, &6Gehäuse der Leere&r, Ofen. Unten Eisenbarren, ein &6Messinggehäuse&r von Create, Eisenbarren. Kondensator in den Slot.",
               "",
               "Oben im Fenster wählst du den Modus: Legieren und Schmelzen, nur Legieren, nur Schmelzen. Im Schmelzmodus ist sie ein elektrischer Ofen. Sie zieht &e20 µI/t&r, µI ist dasselbe wie FE.",
           ],
           tasks=[task_item("enderio:alloy_smelter", 1)],
-          rewards=[reward_item("minecraft:obsidian", 8), reward_table("s3_common"), reward_xp(10)],
+          rewards=[reward_item("create:brass_casing", 8), reward_table("s3_common"), reward_xp(10)],
           deps=["capacitor", "gear", "chassis"], icon="enderio:alloy_smelter", size=2.0, shape="gear"),
 
     quest("stirling", 5, 4, "&cStell einen Stirling Generator auf",
@@ -175,7 +175,7 @@ quests = [
     quest("sag_mill", 0, 8, "&7&lBau eine Sägemühle",
           subtitle="Mehr Staub aus jedem Erz.",
           description=[
-              "Oben Zahnrad, &6Feuerstein&r, Zahnrad. Mitte Eisen, &6Gehäuse der Leere&r, Eisen. Unten Obsidian, &6Kolben&r, Obsidian. Sie heißt &6SAG Mill&r und mahlt, statt zu sägen.",
+              "&eRezept auf Kronwerke:&r Oben Zahnrad, &6Feuerstein&r, Zahnrad. Mitte Eisen, &6Gehäuse der Leere&r, Eisen. Unten Obsidian, ein &6Mahlwerkrad&r von Create, Obsidian. Sie heißt &6SAG Mill&r und mahlt, statt zu sägen.",
               "",
               "Ein Rohes Eisen wird ein &6Pulverisiertes Eisen&r und mit 80 Prozent ein zweites. Kohle wird &6Pulverisierte Kohle&r, Sand mit 50 Prozent &6Silikon&r.",
               "",

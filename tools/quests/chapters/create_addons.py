@@ -371,7 +371,7 @@ quests = [
     quest("diesel_engine", B + 5, 13, "&6&lBau einen Dieselmotor",
           subtitle="96 RPM und 4 096 SU aus einem Block.",
           description=[
-              "&eRezept:&r &6Feuerzeug&r oben, zwei &6Motorkolben&r links und rechts von einem &6Messingblock&r, unten zwei &6polierte Schwarzsteinstufen&r mit einem &6Flüssigkeitstank&r dazwischen. Ein Motorkolben entsteht aus Andesitlegierung, Welle und Zinkklumpen schräg, zwei Stück pro Rezept.",
+              "&eRezept auf Kronwerke:&r ein &6Einfacher Steuerschaltkreis&r von Mekanism oben, zwei &6Motorkolben&r links und rechts von einem &6Messingblock&r, unten zwei &6polierte Schwarzsteinstufen&r mit einem &6Flüssigkeitstank&r dazwischen. Ein Motorkolben entsteht aus Andesitlegierung, Welle und Zinkklumpen schräg, zwei Stück pro Rezept.",
               img(item_texture("createdieselgenerators:engine_piston"), 32, 32),
               "Pump Brennstoff hinein, Eimer nimmt er auf Kronwerke nicht. Mit &bBiodiesel&r läuft er mit &e96 RPM&r und &e4 096 SU&r, mit &bDiesel&r 6 144 SU, mit Ethanol 2 048 SU, und er trinkt dabei &e1 mB pro Sekunde&r. Ein Eimer hält also 16 Minuten. Ein Redstone-Signal hält ihn an, ein analoger Hebel regelt ihn.",
               "",

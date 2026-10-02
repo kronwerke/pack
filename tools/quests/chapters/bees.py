@@ -126,7 +126,7 @@ quests = [
     quest("centrifuge", 10.5, 1, "&7&lBau eine Zentrifuge",
           subtitle="Aus Waben werden Rohstoffe, Honig und Wachs.",
           description=[
-              "&eRezept:&r sieben &6Eisenbarren&r um einen &6Schleifstein&r, oben in der Mitte bleibt frei. Wirf Waben hinein oder leg sie ins Fenster, nach &e15 Sekunden&r kommt heraus, was die Biene gesammelt hat, dazu &6Wachs&r.",
+              "&eRezept auf Kronwerke:&r sieben &6Eisenbarren&r um einen &6Mahlstein&r von Create, oben in der Mitte bleibt frei. Wirf Waben hinein oder leg sie ins Fenster, nach &e15 Sekunden&r kommt heraus, was die Biene gesammelt hat, dazu &6Wachs&r.",
               "",
               pic("productivebees:centrifuge"),
               "",

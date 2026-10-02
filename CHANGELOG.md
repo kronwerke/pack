@@ -73,6 +73,18 @@ First assembly. 222 mods on NeoForge 21.1.252, boots on a dedicated server. No q
 - The quest book follows the new recipes and stages, with a Power Grid line and quests for the milestones.
 - Neo Origins offers Kronwerke's own choices: nine origins (Herkunft) and seven roles (Rolle) instead of the generic forty, each with a real downside and none that flies or skips a stage (`docs/ORIGINS.md`). The kill counting evolution is off.
 
+## 0.7.0
+
+- The quest book for stages 4 and 5: thirteen chapters, about 235 quests. The End, Eternal Starlight, Mekanism elite with fusion and the MekaSuit, NuclearCraft, AE2 advanced with MEGA, quarries (RFTools Builder, Quarry Plus), Draconic Evolution, Botania Gaia, Mahou Tsukai, Ars Nouveau epic; then Draconic awakened and chaos, Mekanism antimatter with the millions of AE2, and the finale. Crates for both stages.
+- Polonium pellets open in stage 4: the fusion reactor frame needs them, and NuclearCraft makes polonium there. MekaSuit and Meka-Tool become craftable with them. Bound dislocators open with the unbound ones in stage 4.
+- The Mekanism More Machine replicators no longer copy every ingot (including the Gaia spirit and awakened draconium ingots of the stage 5 goal) or multiply fissile fuel and antimatter.
+- Summoning a Mahou Tsukai Mystic Staff costs 2 000 mana instead of 100; the stage 4 goal asks for thirty of them.
+- The quest book for stage 3: fifteen chapters, about 280 quests. Applied Energistics 2, Logistics (Integrated Dynamics, XNet, LaserIO, Compact Machines, Mining Gadgets), Mekanism advanced, Powah, Ender IO, Industrial Foregoing, Oritech, Immersive Engineering heavy industry, Botania Alfheim, Ars Nouveau master, Occultism Afrit and Marid, Theurgy, Eidolon, Malum and the Undergarden. Stage 3 crates `s3_common`, `s3_uncommon`, `s3_rare`.
+- Atomic alloy and the robit open in stage 3, so the teleporter and the digital miner, which the design promises for stage 3, can be built there. The quantum entangloporter and the 4x and 5x ore machines move to stage 4, where the elite and ultimate circuits they need open.
+- Compact Machines can be crafted: its room templates and machine recipes ship in a built-in datapack that new worlds leave disabled, so the pack carries them in `kubejs/data/compactmachines/`.
+- The Oritech foundry no longer makes netherite from one gold and one scrap.
+- Quest texts: the stage 3 goal in the Occultism chapter names afrit essence, as the goal does; four chapter openings read less like a brochure.
+
 ## 0.8.0
 
 Needs a new world: the stage files, the quest ids and the goal data changed.
@@ -101,15 +113,3 @@ Needs a new world: the stage files, the quest ids and the goal data changed.
 - Six recipes tie the new mods in (`kubejs/server_scripts/kronwerke/added.js`, reasons in `docs/RECIPES.md`): the flux compressor, the dynamo and the Flux controller take Mekanism circuits, the drone a precision mechanism, the Flux core a source gem, the simulation chamber a source gem block, the loot fabricator an engineering processor.
 - PneumaticCraft's heat entry for Botania's blaze block points at a block that exists in the pack's Botania build.
 - The item registry (`tools/stages/items.txt`) has 32 306 items now.
-
-## 0.7.0
-
-- The quest book for stages 4 and 5: thirteen chapters, about 235 quests. The End, Eternal Starlight, Mekanism elite with fusion and the MekaSuit, NuclearCraft, AE2 advanced with MEGA, quarries (RFTools Builder, Quarry Plus), Draconic Evolution, Botania Gaia, Mahou Tsukai, Ars Nouveau epic; then Draconic awakened and chaos, Mekanism antimatter with the millions of AE2, and the finale. Crates for both stages.
-- Polonium pellets open in stage 4: the fusion reactor frame needs them, and NuclearCraft makes polonium there. MekaSuit and Meka-Tool become craftable with them. Bound dislocators open with the unbound ones in stage 4.
-- The Mekanism More Machine replicators no longer copy every ingot (including the Gaia spirit and awakened draconium ingots of the stage 5 goal) or multiply fissile fuel and antimatter.
-- Summoning a Mahou Tsukai Mystic Staff costs 2 000 mana instead of 100; the stage 4 goal asks for thirty of them.
-- The quest book for stage 3: fifteen chapters, about 280 quests. Applied Energistics 2, Logistics (Integrated Dynamics, XNet, LaserIO, Compact Machines, Mining Gadgets), Mekanism advanced, Powah, Ender IO, Industrial Foregoing, Oritech, Immersive Engineering heavy industry, Botania Alfheim, Ars Nouveau master, Occultism Afrit and Marid, Theurgy, Eidolon, Malum and the Undergarden. Stage 3 crates `s3_common`, `s3_uncommon`, `s3_rare`.
-- Atomic alloy and the robit open in stage 3, so the teleporter and the digital miner, which the design promises for stage 3, can be built there. The quantum entangloporter and the 4x and 5x ore machines move to stage 4, where the elite and ultimate circuits they need open.
-- Compact Machines can be crafted: its room templates and machine recipes ship in a built-in datapack that new worlds leave disabled, so the pack carries them in `kubejs/data/compactmachines/`.
-- The Oritech foundry no longer makes netherite from one gold and one scrap.
-- Quest texts: the stage 3 goal in the Occultism chapter names afrit essence, as the goal does; four chapter openings read less like a brochure.

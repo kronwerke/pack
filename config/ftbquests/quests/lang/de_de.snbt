@@ -5046,7 +5046,7 @@
 		""
 		"Du hast &e500 Chunks&r. Das ist viel, aber nicht das ganze Tal: Ein Chunk ist 16 mal 16 Blöcke, 500 reichen für eine große Basis mit Feldern und Fabrik."
 		""
-		"&eShift&r und linke Maustaste ziehen lädt Chunks &edauerhaft&r, bis zu &e25&r. Maschinen darin laufen weiter, während du anderswo bist, allerdings nur, solange jemand aus deinem Team online ist."
+		"&eShift&r und linke Maustaste ziehen lädt Chunks &edauerhaft&r, bis zu &e25&r. Maschinen darin laufen weiter, auch wenn du offline bist."
 	]
 	quest.37A0BA899F7092C0.quest_subtitle: "500 Chunks für dich, 25 davon dauerhaft geladen."
 	quest.37A0BA899F7092C0.title: "&6Sichere deine Basis"
@@ -5122,11 +5122,11 @@
 	quest.384E378E6FC7D9F5.quest_desc: [
 		"&eSo geht es:&r &eM&r öffnet die Karte von FTB Chunks, &eC&r die Claim-Ansicht. Linke Maustaste ziehen beansprucht, &eShift&r und ziehen lädt dauerhaft. Dein Team hat &e500 Claims&r und &e25 geladene Chunks&r, zusammen, nicht pro Kopf."
 		""
-		"&eWas das heißt:&r Geladene Chunks laufen weiter, während du anderswo bist, aber laut Serverconfig nur, solange &ejemand aus deinem Team online&r ist. Maschinen an einem Portal, eine Pumpe im Nether, ein Bahnhof: alles, was ohne dich arbeiten soll, braucht einen geladenen Chunk."
+		"&eWas das heißt:&r Geladene Chunks laufen weiter, während du anderswo bist, auch wenn dein ganzes Team offline ist. Maschinen an einem Portal, eine Pumpe im Nether, ein Bahnhof: alles, was ohne dich arbeiten soll, braucht einen geladenen Chunk."
 		""
 		"&eTipp:&r Lad nicht die Strecke, lad die Enden. Ein Zug fährt auch durch ungeladene Chunks, der Bahnhof am Ziel muss aber geladen sein, damit die Fracht ankommt."
 	]
-	quest.384E378E6FC7D9F5.quest_subtitle: "25 Chunks bleiben geladen, solange einer online ist."
+	quest.384E378E6FC7D9F5.quest_subtitle: "25 Chunks bleiben geladen, auch über Nacht."
 	quest.384E378E6FC7D9F5.title: "&6Lade Chunks auf dem Weg"
 	quest.3865FD84899DDCDA.quest_desc: [
 		"Halt &e`&r gedrückt (die Taste links neben der 1), schau auf einen Block und bau ihn ab. Alle passenden Nachbarblöcke gehen mit, bis zu &e64&r auf einmal. Das kostet Hunger, &e20-mal&r so viel wie ein normaler Block, also iss vorher."
@@ -6920,7 +6920,7 @@
 		""
 		"&eChunkgrenzen:&r &eF3 und G&r blendet sie ein. Bau Maschinenreihen so, dass sie nicht über eine Grenze laufen. Wenn der Nachbarchunk gerade nicht geladen ist, steht die halbe Anlage still, und Förderbänder oder Rohre über der Grenze stauen."
 		""
-		"&eLaden:&r Mit Schleichen und Linksklick auf der Karte lädst du bis zu &e25 Chunks&r dauerhaft. Auf Kronwerke bleiben sie nur geladen, solange jemand aus deinem Team online ist. Farmen laufen also nicht über Nacht, aber dein Mitspieler hält sie am Laufen, während du streamst."
+		"&eLaden:&r Mit Schleichen und Linksklick auf der Karte lädst du bis zu &e25 Chunks&r dauerhaft. Auf Kronwerke bleiben sie auch geladen, wenn dein ganzes Team offline ist. Farmen laufen also über Nacht weiter."
 	]
 	quest.4B709BC504B96D05.quest_subtitle: "Claims, Chunkgrenzen und was geladen bleibt."
 	quest.4B709BC504B96D05.title: "&aSichere deine Basis"
@@ -12596,7 +12596,7 @@
 	quest.8BF6AF79B91BDBE7.quest_desc: [
 		"In der Claim-Ansicht ziehst du mit &eShift und linker Maustaste&r über beanspruchte Chunks, um sie zu laden, mit &eShift und rechter&r lädst du sie wieder aus. Geladene Chunks werden auf der Karte eigens markiert. Bis zu &e25 Chunks&r pro Team."
 		""
-		"Geladen heißt: Maschinen, Farmen und Rohre laufen dort weiter, auch wenn niemand in der Nähe ist. Auf Kronwerke gilt aber: Sie laufen nur, solange &ejemand aus deinem Team online&r ist. Loggt sich der letzte aus, steht die Farm bis zum nächsten Login."
+		"Geladen heißt: Maschinen, Farmen und Rohre laufen dort weiter, auch wenn niemand in der Nähe ist. Auf Kronwerke laufen sie auch, wenn &edein ganzes Team offline&r ist. Die Farm arbeitet über Nacht weiter."
 		""
 		"Mit dem &eMausrad&r über einem geladenen Chunk stellst du ein, wann das Laden von selbst endet. Für einen Nachtlauf des Brass-Mixers genügt das."
 	]

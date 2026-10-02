@@ -133,7 +133,7 @@ quests = [
           description=[
               "In der Claim-Ansicht ziehst du mit &eShift und linker Maustaste&r über beanspruchte Chunks, um sie zu laden, mit &eShift und rechter&r lädst du sie wieder aus. Geladene Chunks werden auf der Karte eigens markiert. Bis zu &e25 Chunks&r pro Team.",
               "",
-              "Geladen heißt: Maschinen, Farmen und Rohre laufen dort weiter, auch wenn niemand in der Nähe ist. Auf Kronwerke gilt aber: Sie laufen nur, solange &ejemand aus deinem Team online&r ist. Loggt sich der letzte aus, steht die Farm bis zum nächsten Login.",
+              "Geladen heißt: Maschinen, Farmen und Rohre laufen dort weiter, auch wenn niemand in der Nähe ist. Auf Kronwerke laufen sie auch, wenn &edein ganzes Team offline&r ist. Die Farm arbeitet über Nacht weiter.",
               "",
               "Mit dem &eMausrad&r über einem geladenen Chunk stellst du ein, wann das Laden von selbst endet. Für einen Nachtlauf des Brass-Mixers genügt das.",
           ],

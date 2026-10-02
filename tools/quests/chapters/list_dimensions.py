@@ -323,11 +323,11 @@ quests = [
           deps=["r_mekanism"], icon="minecraft:iron_block"),
 
     quest("r_chunks", 12.5, 8.5, "&6Lade Chunks auf dem Weg",
-          subtitle="25 Chunks bleiben geladen, solange einer online ist.",
+          subtitle="25 Chunks bleiben geladen, auch über Nacht.",
           description=[
               "&eSo geht es:&r &eM&r öffnet die Karte von FTB Chunks, &eC&r die Claim-Ansicht. Linke Maustaste ziehen beansprucht, &eShift&r und ziehen lädt dauerhaft. Dein Team hat &e500 Claims&r und &e25 geladene Chunks&r, zusammen, nicht pro Kopf.",
               "",
-              "&eWas das heißt:&r Geladene Chunks laufen weiter, während du anderswo bist, aber laut Serverconfig nur, solange &ejemand aus deinem Team online&r ist. Maschinen an einem Portal, eine Pumpe im Nether, ein Bahnhof: alles, was ohne dich arbeiten soll, braucht einen geladenen Chunk.",
+              "&eWas das heißt:&r Geladene Chunks laufen weiter, während du anderswo bist, auch wenn dein ganzes Team offline ist. Maschinen an einem Portal, eine Pumpe im Nether, ein Bahnhof: alles, was ohne dich arbeiten soll, braucht einen geladenen Chunk.",
               "",
               "&eTipp:&r Lad nicht die Strecke, lad die Enden. Ein Zug fährt auch durch ungeladene Chunks, der Bahnhof am Ziel muss aber geladen sein, damit die Fracht ankommt.",
           ],

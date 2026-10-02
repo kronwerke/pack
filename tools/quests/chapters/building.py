@@ -293,7 +293,7 @@ quests = [
               "",
               "&eChunkgrenzen:&r &eF3 und G&r blendet sie ein. Bau Maschinenreihen so, dass sie nicht über eine Grenze laufen. Wenn der Nachbarchunk gerade nicht geladen ist, steht die halbe Anlage still, und Förderbänder oder Rohre über der Grenze stauen.",
               "",
-              "&eLaden:&r Mit Schleichen und Linksklick auf der Karte lädst du bis zu &e25 Chunks&r dauerhaft. Auf Kronwerke bleiben sie nur geladen, solange jemand aus deinem Team online ist. Farmen laufen also nicht über Nacht, aber dein Mitspieler hält sie am Laufen, während du streamst.",
+              "&eLaden:&r Mit Schleichen und Linksklick auf der Karte lädst du bis zu &e25 Chunks&r dauerhaft. Auf Kronwerke bleiben sie auch geladen, wenn dein ganzes Team offline ist. Farmen laufen also über Nacht weiter.",
           ],
           tasks=[task_checkmark("Basis gesichert")],
           rewards=[reward_item("minecraft:torch", 16), reward_xp(3)],

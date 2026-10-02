@@ -73,7 +73,11 @@ First assembly. 222 mods on NeoForge 21.1.252, boots on a dedicated server. No q
 - The quest book follows the new recipes and stages, with a Power Grid line and quests for the milestones.
 - Neo Origins offers Kronwerke's own choices: nine origins (Herkunft) and seven roles (Rolle) instead of the generic forty, each with a real downside and none that flies or skips a stage (`docs/ORIGINS.md`). The kill counting evolution is off.
 
-## Unreleased
+## 0.8.0
+
+Needs a new world: the stage files, the quest ids and the goal data changed.
+
+- FTB Chunks keeps force loaded chunks loaded while the whole team is offline (`config/ftbchunks-world.snbt`), so farms run overnight.
 
 - The last sixteen older chapters rewritten too: Create (three), Undergarden, Eternal Starlight, Alfheim, Silent Gear, food, Theurgy, Eidolon, Malum, Draconic Evolution (two), antimatter, NuclearCraft, quarries and Mahou Tsukai. The whole book is in the short format now: 74 chapters, 2 820 quests.
 - Kronwerke Core 0.6.2: FTB Quests failed to load the book once it passed about twelve thousand objects; it loads now at any size.

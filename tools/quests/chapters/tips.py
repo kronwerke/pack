@@ -202,7 +202,7 @@ quests = [
               "",
               "Du hast &e500 Chunks&r. Das ist viel, aber nicht das ganze Tal: Ein Chunk ist 16 mal 16 Blöcke, 500 reichen für eine große Basis mit Feldern und Fabrik.",
               "",
-              "&eShift&r und linke Maustaste ziehen lädt Chunks &edauerhaft&r, bis zu &e25&r. Maschinen darin laufen weiter, während du anderswo bist, allerdings nur, solange jemand aus deinem Team online ist.",
+              "&eShift&r und linke Maustaste ziehen lädt Chunks &edauerhaft&r, bis zu &e25&r. Maschinen darin laufen weiter, auch wenn du offline bist.",
           ],
           tasks=[task_checkmark("Basis gesichert")],
           rewards=[reward_table("s1_common"), reward_xp(3)],

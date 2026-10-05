@@ -150,3 +150,5 @@ Needs a new world: the stage files, the quest ids and the goal data changed.
 - Loot crates work: the reward tables carried the crate under the wrong key, so a quest's crate opened to nothing. A crate now gives three rolls (rare: two) of its table.
 - Trims: Elytra Trims, More Armor Trims (13 new patterns), Tool Trims (weapons and tools on the smithing table) and Trims Expanded (more materials, glow ink among them).
 - Kronwerke Core 0.8.1: `/kw` opens the hub with the goals and buttons, `/kw team` the team screen for slots and moving players between streamers.
+- Kronwerke Core 0.8.2: bosses grow with the group (more health and damage per player nearby; with two or more players lightning, shockwaves and a rage), the Chaos Guardian fight is explained once to a player who comes close, and `/kw testworld` takes operators into the screenshot world.
+- The screenshot world: `kronwerke:testworld` is a void dimension with one grey concrete box per scene and a sign for each; `/kw testworld` builds it on the first visit.

@@ -127,3 +127,7 @@ Needs a new world: the stage files, the quest ids and the goal data changed.
 - Healing Campfire.
 - Voice chat uses the server port (`port=-1` in `config/voicechat/voicechat-server.properties`): the host forwards one port, and UDP 24454 never reached the server.
 - The guide books of every mod are stage 1.
+
+## 0.9.1
+
+- Kronwerke Core 0.7.3: the streamer menu (`/kw menu`, also `/kw invite` without a name) with heads, online dots and a field to invite, and a German `/kw` help with clickable lines.

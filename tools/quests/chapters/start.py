@@ -101,7 +101,7 @@ quests = [
     quest("o_obelisk", 4.5, 0, "&6Lies die Bossleiste",
           subtitle="Ein Ziel, mehrere Säulen, alle müssen voll werden.",
           description=[
-              "Die &eBossleiste&r oben zeigt das aktive Ziel. In Stufe 1 heißt es &6Foundation of the Kronwerk&r und hat drei Säulen: &7Stein&r, &6Technik&r und &dMagie&r.",
+              "Die &eBossleiste&r oben zeigt das aktive Ziel. In Stufe 1 heißt es &6Das Fundament des Kronwerks&r und hat drei Säulen: &7Stein&r, &6Technik&r und &dMagie&r.",
               "",
               "Die Stufe öffnet sich erst, wenn &ealle&r Säulen voll sind. Ein Server, der nur Maschinen baut oder nur zaubert, kommt nicht weiter.",
           ],

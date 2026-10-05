@@ -13,6 +13,10 @@ file = "config/defaultoptions/keybindings.txt"
 hash = "9245e2b587d148773bfa14c98b080f31fd67b47a2494299cfd68d4874006c624"
 
 [[files]]
+file = "config/defaultoptions/options.txt"
+hash = "43e2673fdb880d3c780d922609a527649984ea4d09cac96a71aa37d3ad16b0ec"
+
+[[files]]
 file = "config/ftbchunks-world.snbt"
 hash = "720e74ba8431182e80c355da9e7e512262aa69680778bc9aadb58889c2557b79"
 
@@ -322,11 +326,11 @@ hash = "93c982c2e09101877cba15ed69d2eee71ed5be2243ee8dcdcc0734845932c8b6"
 
 [[files]]
 file = "config/ftbquests/quests/lang/de_de.snbt"
-hash = "474b4dec2b7b04263039cfc90148c608ac74c69dbed9414f03823233e7534919"
+hash = "22ebceea25c0173d3f1550c97226af83d2eb563856abe4f731338bde6b141e42"
 
 [[files]]
 file = "config/ftbquests/quests/lang/en_us.snbt"
-hash = "474b4dec2b7b04263039cfc90148c608ac74c69dbed9414f03823233e7534919"
+hash = "22ebceea25c0173d3f1550c97226af83d2eb563856abe4f731338bde6b141e42"
 
 [[files]]
 file = "config/ftbquests/quests/reward_tables/s1_common.snbt"
@@ -386,7 +390,7 @@ hash = "c06b301eda4129fc5df94ed334073c46a65f7f151b74fc64f61f3d62dbcf8fcb"
 
 [[files]]
 file = "config/kronwerke/goals.json"
-hash = "34464b5dac0d2a9a6bbbcbf91a1ef7cf45980b3257c72555b7f4c121dc7932fc"
+hash = "0425120de26fd5f165054f2b2697b5202c66a1356433b4a671ea945b6b1eef89"
 
 [[files]]
 file = "config/lithium.properties"
@@ -411,6 +415,10 @@ hash = "a291580fbc93f9c9c6049e34e413d3cf86b8c457746ce11e20f8dfb8c94bf0bb"
 [[files]]
 file = "config/travelerstitles-neoforge-1_21.toml"
 hash = "a93f4b57547a2840c7c06e4a6442a1239a6f19d383e0cfdfa86d6813589506a8"
+
+[[files]]
+file = "config/voicechat/voicechat-server.properties"
+hash = "6943016ae1c3d125f4dbda75f5688cb19c9d14ad12ce9ce31a894ae3572230ac"
 
 [[files]]
 file = "kubejs/assets/bountiful/lang/de_de.json"
@@ -5426,6 +5434,11 @@ hash = "bc3920a3fb291a8bc8df9717233e54dd1c909b65528afbe1b617373c7b4b38c0"
 metafile = true
 
 [[files]]
+file = "mods/healing-campfire.pw.toml"
+hash = "3389ec0bbe65b1c35d29636261e7b90df600f9217f41f082c792a56b9f2fb874"
+metafile = true
+
+[[files]]
 file = "mods/hexerei.pw.toml"
 hash = "bd496127dfae8939188c1eb6d6e77930a2f89514308169abed5d27a7b3199ac2"
 metafile = true
@@ -5542,7 +5555,7 @@ metafile = true
 
 [[files]]
 file = "mods/kronwerke-core.pw.toml"
-hash = "477c9fee37ba44b8cb861a12b4496d110bd5151ae265bfc6037b807dcd8a3b06"
+hash = "ae71e5b679ceee914a8bb2d9047de8880e4883cf53a0187da7c7c0a684b81a3a"
 metafile = true
 
 [[files]]
@@ -6109,3 +6122,7 @@ metafile = true
 file = "mods/zeta.pw.toml"
 hash = "cb474b6c0dde741836ed4f796f3b6ab0b9d3cdc0453e651122cd002d5d1f8df8"
 metafile = true
+
+[[files]]
+file = "resourcepacks/Nautical-Ranks-V3-Java.zip"
+hash = "99874947da691c21fc30e9bc6386e640cc4d35b26cc6b17305316a3c9f09afae"

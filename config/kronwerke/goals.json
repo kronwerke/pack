@@ -1,40 +1,40 @@
 [
   {
     "id": "stage1",
-    "title": "Foundation of the Kronwerk",
-    "description": "Stone for the walls, alloy for the machines, gems for the spells. When the obelisk is full, the Nether opens.",
+    "title": "Das Fundament des Kronwerks",
+    "description": "Stein für die Mauern, Legierung für die Maschinen, Juwelen für die Zauber. Ist der Obelisk voll, öffnet sich der Nether.",
     "requires": [],
     "holdAt": 0.98,
     "scale": true,
     "pillars": [
-      { "id": "stone", "title": "Stone", "items": [ { "item": "#c:cobblestones", "base": 20000 } ] },
-      { "id": "tech", "title": "Tech", "items": [ { "item": "create:andesite_alloy", "base": 1500, "weight": 2 }, { "item": "kronwerke:stone_gearbox", "base": 12, "fixed": true, "weight": 250 } ] },
-      { "id": "magic", "title": "Magic", "items": [ { "item": "ars_nouveau:source_gem", "base": 800, "weight": 4 }, { "item": "kronwerke:source_keystone", "base": 12, "fixed": true, "weight": 250 } ] }
+      { "id": "stone", "title": "Stein", "items": [ { "item": "#c:cobblestones", "base": 20000 } ] },
+      { "id": "tech", "title": "Technik", "items": [ { "item": "create:andesite_alloy", "base": 1500, "weight": 2 }, { "item": "kronwerke:stone_gearbox", "base": 12, "fixed": true, "weight": 250 } ] },
+      { "id": "magic", "title": "Magie", "items": [ { "item": "ars_nouveau:source_gem", "base": 800, "weight": 4 }, { "item": "kronwerke:source_keystone", "base": 12, "fixed": true, "weight": 250 } ] }
     ],
     "stages": ["kronwerke:stage2"],
     "onComplete": [
       "title @a title {\"text\":\"Messingwerk\",\"color\":\"gold\"}",
-      "title @a subtitle {\"text\":\"The Nether is open. Brass, mana and the first machines.\"}",
-      "say The foundation is complete. Stage 2, Messingwerk, is open."
+      "title @a subtitle {\"text\":\"Der Nether ist offen. Messing, Mana und die ersten Maschinen.\"}",
+      "say Das Fundament steht. Stufe 2, Messingwerk, ist offen."
     ],
     "starterKit": []
   },
   {
     "id": "stage2",
-    "title": "The Brass Engine",
-    "description": "Brass and mana. Machines that work while you sleep.",
+    "title": "Das Messingwerk",
+    "description": "Messing und Mana. Maschinen, die arbeiten, während du schläfst.",
     "requires": ["stage1"],
     "holdAt": 0.98,
     "scale": true,
     "pillars": [
-      { "id": "tech", "title": "Tech", "items": [ { "item": "create:brass_ingot", "base": 2000 }, { "item": "create:precision_mechanism", "base": 150, "weight": 5 }, { "item": "kronwerke:brass_heart", "base": 8, "fixed": true, "weight": 300 } ] },
-      { "id": "magic", "title": "Magic", "items": [ { "item": "botania:mana_pearl", "base": 600, "weight": 2 }, { "item": "botania:terrasteel_ingot", "base": 50, "weight": 20 }, { "item": "kronwerke:rune_core", "base": 8, "fixed": true, "weight": 300 } ] }
+      { "id": "tech", "title": "Technik", "items": [ { "item": "create:brass_ingot", "base": 2000 }, { "item": "create:precision_mechanism", "base": 150, "weight": 5 }, { "item": "kronwerke:brass_heart", "base": 8, "fixed": true, "weight": 300 } ] },
+      { "id": "magic", "title": "Magie", "items": [ { "item": "botania:mana_pearl", "base": 600, "weight": 2 }, { "item": "botania:terrasteel_ingot", "base": 50, "weight": 20 }, { "item": "kronwerke:rune_core", "base": 8, "fixed": true, "weight": 300 } ] }
     ],
     "stages": ["kronwerke:stage3"],
     "onComplete": [
       "title @a title {\"text\":\"Stahlwerk\",\"color\":\"gold\"}",
-      "title @a subtitle {\"text\":\"Steel, ore multiplication, storage networks, rituals.\"}",
-      "say The brass engine runs. Stage 3, Stahlwerk, is open."
+      "title @a subtitle {\"text\":\"Stahl, Erzvermehrung, Lagernetze, Rituale.\"}",
+      "say Das Messingwerk läuft. Stufe 3, Stahlwerk, ist offen."
     ],
     "starterKit": [
       { "item": "create:brass_ingot", "count": 16 },
@@ -45,20 +45,20 @@
   },
   {
     "id": "stage3",
-    "title": "The Furnace Never Sleeps",
-    "description": "Steel by the thousand, circuits, elven metal and rituals run at scale.",
+    "title": "Der Ofen schläft nie",
+    "description": "Stahl zu Tausenden, Schaltkreise, Elfenmetall und Rituale am Fließband.",
     "requires": ["stage2"],
     "holdAt": 0.98,
     "scale": true,
     "pillars": [
-      { "id": "tech", "title": "Tech", "items": [ { "item": "#c:ingots/steel", "base": 4000 }, { "item": "mekanism:advanced_control_circuit", "base": 250, "weight": 8 }, { "item": "kronwerke:steel_core", "base": 8, "fixed": true, "weight": 400 } ] },
-      { "id": "magic", "title": "Magic", "items": [ { "item": "botania:elementium_ingot", "base": 400, "weight": 8 }, { "item": "occultism:afrit_essence", "base": 150, "weight": 10 }, { "item": "kronwerke:elven_star", "base": 8, "fixed": true, "weight": 400 } ] }
+      { "id": "tech", "title": "Technik", "items": [ { "item": "#c:ingots/steel", "base": 4000 }, { "item": "mekanism:advanced_control_circuit", "base": 250, "weight": 8 }, { "item": "kronwerke:steel_core", "base": 8, "fixed": true, "weight": 400 } ] },
+      { "id": "magic", "title": "Magie", "items": [ { "item": "botania:elementium_ingot", "base": 400, "weight": 8 }, { "item": "occultism:afrit_essence", "base": 150, "weight": 10 }, { "item": "kronwerke:elven_star", "base": 8, "fixed": true, "weight": 400 } ] }
     ],
     "stages": ["kronwerke:stage4"],
     "onComplete": [
       "title @a title {\"text\":\"Sternwerk\",\"color\":\"gold\"}",
-      "title @a subtitle {\"text\":\"The End is open. The stars, fusion, the dragon's metal.\"}",
-      "say The furnace never sleeps. Stage 4, Sternwerk, is open."
+      "title @a subtitle {\"text\":\"Das End ist offen. Die Sterne, Fusion, das Metall des Drachen.\"}",
+      "say Der Ofen schläft nie. Stufe 4, Sternwerk, ist offen."
     ],
     "starterKit": [
       { "item": "mekanism:ingot_steel", "count": 32 },
@@ -69,20 +69,20 @@
   },
   {
     "id": "stage4",
-    "title": "Light of the Dragon",
-    "description": "Circuits from the top of Mekanism, draconium from the End, Gaia's spirit and thirty staves.",
+    "title": "Das Licht des Drachen",
+    "description": "Schaltkreise von der Spitze von Mekanism, Draconium aus dem End, Gaias Geist und dreißig Stäbe.",
     "requires": ["stage3"],
     "holdAt": 0.98,
     "scale": true,
     "pillars": [
-      { "id": "tech", "title": "Tech", "items": [ { "item": "mekanism:elite_control_circuit", "base": 150, "weight": 20 }, { "item": "draconicevolution:draconium_ingot", "base": 1000, "weight": 3 } ] },
-      { "id": "magic", "title": "Magic", "items": [ { "item": "botania:gaia_spirit", "base": 128, "fixed": true, "weight": 25 }, { "item": "mahoutsukai:mystic_staff", "base": 30, "fixed": true, "weight": 100 } ] }
+      { "id": "tech", "title": "Technik", "items": [ { "item": "mekanism:elite_control_circuit", "base": 150, "weight": 20 }, { "item": "draconicevolution:draconium_ingot", "base": 1000, "weight": 3 } ] },
+      { "id": "magic", "title": "Magie", "items": [ { "item": "botania:gaia_spirit", "base": 128, "fixed": true, "weight": 25 }, { "item": "mahoutsukai:mystic_staff", "base": 30, "fixed": true, "weight": 100 } ] }
     ],
     "stages": ["kronwerke:stage5"],
     "onComplete": [
       "title @a title {\"text\":\"Chaoswerk\",\"color\":\"dark_purple\"}",
-      "title @a subtitle {\"text\":\"Everything is open. The last fight is coming.\"}",
-      "say The dragon's light burns. Stage 5, Chaoswerk, is open."
+      "title @a subtitle {\"text\":\"Alles ist offen. Der letzte Kampf kommt.\"}",
+      "say Das Licht des Drachen brennt. Stufe 5, Chaoswerk, ist offen."
     ],
     "starterKit": [
       { "item": "draconicevolution:draconium_ingot", "count": 16 },
@@ -92,19 +92,19 @@
   },
   {
     "id": "stage5",
-    "title": "The Chaos Guardian",
-    "description": "Awakened draconium, antimatter, Gaia's ingots and the tribute of the Wilden. Then the fight.",
+    "title": "Der Chaoswächter",
+    "description": "Erwachtes Draconium, Antimaterie, Gaia-Barren und der Tribut der Wilden. Dann der Kampf.",
     "requires": ["stage4"],
     "holdAt": 0.98,
     "scale": true,
     "pillars": [
-      { "id": "tech", "title": "Tech", "items": [ { "item": "draconicevolution:awakened_draconium_block", "base": 64, "fixed": true, "weight": 50 }, { "item": "mekanism:pellet_antimatter", "base": 100, "weight": 30 } ] },
-      { "id": "magic", "title": "Magic", "items": [ { "item": "botania:gaia_ingot", "base": 128, "weight": 25 }, { "item": "ars_nouveau:wilden_tribute", "base": 64, "fixed": true, "weight": 50 } ] }
+      { "id": "tech", "title": "Technik", "items": [ { "item": "draconicevolution:awakened_draconium_block", "base": 64, "fixed": true, "weight": 50 }, { "item": "mekanism:pellet_antimatter", "base": 100, "weight": 30 } ] },
+      { "id": "magic", "title": "Magie", "items": [ { "item": "botania:gaia_ingot", "base": 128, "weight": 25 }, { "item": "ars_nouveau:wilden_tribute", "base": 64, "fixed": true, "weight": 50 } ] }
     ],
     "stages": [],
     "onComplete": [
-      "title @a title {\"text\":\"The Chaos Island awaits\",\"color\":\"dark_purple\"}",
-      "say The obelisk is full. The Chaos Guardian fight is on. Watch the announcements for the date."
+      "title @a title {\"text\":\"Die Chaosinsel wartet\",\"color\":\"dark_purple\"}",
+      "say Der Obelisk ist voll. Der Kampf gegen den Chaoswächter steht an. Der Termin kommt in den Ankündigungen."
     ],
     "starterKit": []
   }

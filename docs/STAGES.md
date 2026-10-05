@@ -51,7 +51,7 @@ Theme: wood, stone, water wheels, the first spells. Everyone starts here on day 
 
 **Locked:** the Nether; Create brass and everything needing it, with all Create addons; Mekanism; AE2 and Refined Storage; Ender IO; Industrial Foregoing; Immersive Engineering; Powah; Oritech; Pipez, Modular Routers, LaserIO, XNet, Integrated Dynamics; Productive Bees and Productive Metalworks; Ars apprentice glyphs and above; Botania runic altar and above; Occultism rituals; Theurgy; Hexerei; Eidolon; Malum; EvilCraft; Forbidden and Arcanus; Reliquary; Mahou Tsukai; Iron's Spells above common; Undergarden, Eternal Starlight; Draconic Evolution; NuclearCraft.
 
-**Goal:** Foundation of the Kronwerk.
+**Goal:** Das Fundament des Kronwerks (shown in German in game).
 
 | Pillar | Item | Base amount | Points each | Why |
 | --- | --- | --- | --- | --- |
@@ -73,7 +73,7 @@ Theme: brass, the Nether, mana, the first machines that do work while you sleep.
 
 **Still locked:** Alfheim; AE2; Ender IO; Industrial Foregoing; Powah; Oritech; Mekanism advanced tier and up; Theurgy; Eidolon; Malum; Mahou Tsukai; Undergarden and Eternal Starlight; the End; Draconic Evolution; NuclearCraft.
 
-**Goal:** The Brass Engine.
+**Goal:** Das Messingwerk.
 
 | Pillar | Item | Base amount | Points each | Why |
 | --- | --- | --- | --- | --- |
@@ -94,7 +94,7 @@ Theme: steel, ore multiplication, storage networks, rituals with consequences.
 
 **Still locked:** the End; Mekanism elite and ultimate tier, fusion, antimatter; AE2 64k and up, quantum and spatial; MEGA and Advanced AE; Mahou Tsukai; Eternal Starlight; Gaia Guardian; Draconic Evolution; NuclearCraft.
 
-**Goal:** The Furnace Never Sleeps.
+**Goal:** Der Ofen schläft nie.
 
 | Pillar | Item | Base amount | Points each | Why |
 | --- | --- | --- | --- | --- |
@@ -117,7 +117,7 @@ Theme: the End, the stars, the machines that eat power.
 
 **Still locked:** Draconic awakened and chaos tier; Mekanism antimatter and fission; MEGA 16M and up, bulk cells, the Advanced AE quantum computer; Mystical Agriculture supremium.
 
-**Goal:** Light of the Dragon. The goal items are hard enough on their own, so there is no extra milestone.
+**Goal:** Das Licht des Drachen. The goal items are hard enough on their own, so there is no extra milestone.
 
 | Pillar | Item | Base amount | Points each | Why |
 | --- | --- | --- | --- | --- |
@@ -134,7 +134,7 @@ Theme: the last machines and the last fight.
 
 **Newly open:** everything. Draconic awakened and chaos tiers, Mekanism antimatter and fission, the millions of items: MEGA 16M to 256M cells, bulk cells and the quantum computer.
 
-**Goal:** The Chaos Guardian. The obelisk asks for the things that make the fight possible, and the fight itself is the finale.
+**Goal:** Der Chaoswächter. The obelisk asks for the things that make the fight possible, and the fight itself is the finale.
 
 | Pillar | Item | Base amount | Points each | Why |
 | --- | --- | --- | --- | --- |

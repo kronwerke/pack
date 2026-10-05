@@ -117,3 +117,13 @@ Needs a new world: the stage files, the quest ids and the goal data changed.
 ## 0.8.1
 
 - Cross links: 25 recipes take one part from another mod of their stage (andesite alloy, circuits, brass, source gems, mana pearls), and Iron's Spells ink and the Forbidden and Arcanus artisan relic get recipes. Reasons in `docs/RECIPES.md`, the quest texts name the new recipes.
+
+## 0.9.0
+
+- Quest book: FTB Quests reads ids with Long.parseLong, so every id starting with 8 to F was replaced with a random one on load. That cut the lang keys and the dependencies of about half the chapters ("Unnamed" chapters, "Checkmark" quests, missing groups). Ids now start with 1 to 7. Chapters are laid out from the dependency graph (`tools/quests/layout.py`): one band per heading, columns by depth, tall columns wrap, checklists as a grid, lines into another band hidden. The start chapter goes from a claimed base to the first obelisk deposit without crafting table, furnace or bed quests; the players know Minecraft.
+- Kronwerke Core 0.7.2: the obelisk block (four blocks tall, crystal on top, unbreakable; an operator places it and it registers itself), a waystone and warp dust for every player on the first join, dimensions locked by stage (Nether and Aether with stage 2, Undergarden and Otherside with 3, End, Starlight and Reality Marble with 4), spawn protection 96 blocks around the world spawn, ranks in the tab list and above heads, German messages, items shown by name.
+- Goals in `config/kronwerke/goals.json` are German: Das Fundament des Kronwerks, Das Messingwerk, Der Ofen schläft nie, Das Licht des Drachen, Der Chaoswächter.
+- Nautical Ranks (by seavitas) ships in `resourcepacks/`, repacked with a 1.21.1 pack format, and is on by default through Default Options. Core uses its glyphs for the rank badges.
+- Healing Campfire.
+- Voice chat uses the server port (`port=-1` in `config/voicechat/voicechat-server.properties`): the host forwards one port, and UDP 24454 never reached the server.
+- The guide books of every mod are stage 1.

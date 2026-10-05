@@ -43,6 +43,11 @@ def kit(*keys, blocks=(), items=(), mobs=(), note=None, w=9, d=9):
         SCENES[k] = Spec(fn, w, d)
 
 
+# entities that only work inside their own fight and break the save when summoned alone
+NO_SUMMON = {"draconicevolution:guardian_crystal", "draconicevolution:chaos_guardian",
+             "minecraft:ender_dragon", "minecraft:wither"}
+
+
 def auto(b, info):
     """No hand made scene: a small stage with the quest's task items, blocks standing on it,
     other items in glowing frames on a backdrop wall, mobs to kill standing in front."""
@@ -72,8 +77,11 @@ def auto(b, info):
     for i, it in enumerate(items):
         x = min(w - 2, fx + i * 2)
         b.cmd(f"summon glow_item_frame {b.ox + x} {FLOOR_Y + 1 + 2} {b.oz + 2} {{Facing:3b,Fixed:1b,Tags:[\"kw_shot\"],Item:{{id:\"{it}\",count:1}}}}")
-    for i, e in enumerate(info["kill"][:3]):
+    mobs = [e for e in info["kill"] if e not in NO_SUMMON][:3]
+    for i, e in enumerate(mobs):
         b.m(e, 2 + i * 3, 0, 6)
+    if len(mobs) < len(info["kill"][:3]):
+        b.note("Boss vor Ort aufnehmen")
     for d in info["dim"]:
         b.note("Aufnahme in " + d.split(":")[-1].replace("_", " "))
 

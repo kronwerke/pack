@@ -14,7 +14,7 @@ hash = "9245e2b587d148773bfa14c98b080f31fd67b47a2494299cfd68d4874006c624"
 
 [[files]]
 file = "config/defaultoptions/options.txt"
-hash = "43e2673fdb880d3c780d922609a527649984ea4d09cac96a71aa37d3ad16b0ec"
+hash = "ee724c1c5fae33f5f53312baaf8993af08d93f28d9fd72cd1a809f0ca71890a0"
 
 [[files]]
 file = "config/ftbchunks-world.snbt"
@@ -190,11 +190,11 @@ hash = "8e6cc61b509e6df73496b37f59ae50affc374cf2156113ea5110c050731a7eeb"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/irons_spells.snbt"
-hash = "692a120d80dcc52d83d6bc59f3ae192a8f0d2119979cb431de869cfb98f32b46"
+hash = "05ba16b07e395b720a3455cdb3188de44704ee99f79a6fa5dc5002eb25476c05"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/list_dimensions.snbt"
-hash = "930240dbf48f29093dd976b32b8caf16587ce63a9005ab1b01131e20470131c6"
+hash = "5ed4959d6d8e205b07bedb9b0db93534e93ea6bf27d9241b08bbf8cb0fc3b077"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/list_gear.snbt"
@@ -206,11 +206,11 @@ hash = "9b4ce641d52a86fb8ec2756fa05ab24a07e7cd3eade764be772a83b6fa8a8f40"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/list_transport.snbt"
-hash = "70c1df4802ca8b34348d29dc25761ac20367090bc13bdfa6e77d702680febd9b"
+hash = "fce1864892524d98707035cd21ac0e99590a704030225b87aef5e169d0f673b5"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/logistics.snbt"
-hash = "13fe2f3f2cd69197246ce7bc65bf694e9a9e8d9ad9b808d29c03ea023a5c014c"
+hash = "4a161c8769ee1ed82a2fb98c86b7cb39488f1fcdd7c0e7d8c895abe16a4300d2"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/mahou_tsukai.snbt"
@@ -326,11 +326,11 @@ hash = "93c982c2e09101877cba15ed69d2eee71ed5be2243ee8dcdcc0734845932c8b6"
 
 [[files]]
 file = "config/ftbquests/quests/lang/de_de.snbt"
-hash = "22ebceea25c0173d3f1550c97226af83d2eb563856abe4f731338bde6b141e42"
+hash = "4a517d342c160e34d3efda584d3f36cb907e6d756c49e31a34c0c35236eb67c3"
 
 [[files]]
 file = "config/ftbquests/quests/lang/en_us.snbt"
-hash = "22ebceea25c0173d3f1550c97226af83d2eb563856abe4f731338bde6b141e42"
+hash = "4a517d342c160e34d3efda584d3f36cb907e6d756c49e31a34c0c35236eb67c3"
 
 [[files]]
 file = "config/ftbquests/quests/reward_tables/s1_common.snbt"
@@ -418,7 +418,7 @@ hash = "a93f4b57547a2840c7c06e4a6442a1239a6f19d383e0cfdfa86d6813589506a8"
 
 [[files]]
 file = "config/voicechat/voicechat-server.properties"
-hash = "6943016ae1c3d125f4dbda75f5688cb19c9d14ad12ce9ce31a894ae3572230ac"
+hash = "77e4b2dc41a27b6d70e49b1c482ca47fe65c6ab0b16c0a0d7c7418074bf20632"
 
 [[files]]
 file = "kubejs/assets/bountiful/lang/de_de.json"
@@ -429,16 +429,12 @@ file = "kubejs/assets/bountiful/lang/en_us.json"
 hash = "5312909b4c3f0c0c4cf031f00cc849b14133623b96fe11a374a2baadf268e554"
 
 [[files]]
-file = "kubejs/assets/compactmachines/lang/en_us.json"
-hash = "d9a2b06b58bfe9593a92935cc19805be2d812b5c37dc0c449a8cb11205ee1cd2"
-
-[[files]]
 file = "kubejs/assets/kronwerke/lang/de_de.json"
-hash = "4104a7af7a1dac4c54a891575add47804c2123fae39032ad5354b29da571e386"
+hash = "14a7a12e2d707cbc9fa5097852b7312571e7cc33abe5d5be812259836c74746f"
 
 [[files]]
 file = "kubejs/assets/kronwerke/lang/en_us.json"
-hash = "a7c7e412c41cfa690f2d749372e20ff989192e796cf30998fc55e67e14049d95"
+hash = "00c1b718eb4a93d7a4a14c062d1db365d7011524511b6f8ae49e039f935b6304"
 
 [[files]]
 file = "kubejs/assets/kronwerke/textures/item/brass_heart.png"
@@ -1753,10 +1749,6 @@ file = "kubejs/assets/kronwerke/textures/quests/list_transport/title.png"
 hash = "0e1193c33ccbb0383f0ae13b86289cbeb9d2037de826e0083a93686ce23662c6"
 
 [[files]]
-file = "kubejs/assets/kronwerke/textures/quests/logistics/compact.png"
-hash = "4ccf6789990823f1969ccb6ea7d12ea000e6beefcb3a1379309ec8575e0ff1c3"
-
-[[files]]
 file = "kubejs/assets/kronwerke/textures/quests/logistics/id.png"
 hash = "8d1085a05def4f880e0acb0697d9f7c2a4e2c9b944675cba9c49f5804e06b199"
 
@@ -2545,102 +2537,6 @@ file = "kubejs/data/cataclysm/tags/block/needs_monstrosity_tool.json"
 hash = "f74498097708215ee46031db7467ce3abed880ed8188eff156e81993d9787e31"
 
 [[files]]
-file = "kubejs/data/compactmachines/advancement/recipes/misc/new_machine_colossal.json"
-hash = "1ad9404a050d76af01e484f7cc382f10af802b29afc2b96262d98b0769f4bace"
-
-[[files]]
-file = "kubejs/data/compactmachines/advancement/recipes/misc/new_machine_farming.json"
-hash = "b1fc7a3aac3bf0cba883f65c906444083e11a4178732734376ddd62c24ebb419"
-
-[[files]]
-file = "kubejs/data/compactmachines/advancement/recipes/misc/new_machine_giant.json"
-hash = "95a4d84b6016a4c9d54bbc4a9c7d2c86a21a0f99dbf85deceb4f10f81db3796d"
-
-[[files]]
-file = "kubejs/data/compactmachines/advancement/recipes/misc/new_machine_large.json"
-hash = "ce33ef0fd79215388f3995887ca63dcf70273bcf7e35a5c6578b2e8a64a9bc21"
-
-[[files]]
-file = "kubejs/data/compactmachines/advancement/recipes/misc/new_machine_normal.json"
-hash = "f6abf9bed22d17b227d88e4846c08b2874d586b62ace970a0e85f7ecb216532a"
-
-[[files]]
-file = "kubejs/data/compactmachines/advancement/recipes/misc/new_machine_small.json"
-hash = "38243e2802c486a8026b893302fea0208c057761413def55d28fc6407087b519"
-
-[[files]]
-file = "kubejs/data/compactmachines/advancement/recipes/misc/new_machine_soaryn.json"
-hash = "cb67d6fe0e08b452583a3ac5e638e51217c782461b149229956d6ea5446fc1ce"
-
-[[files]]
-file = "kubejs/data/compactmachines/advancement/recipes/misc/new_machine_tiny.json"
-hash = "04cb2235ca9f0243b0b69f1ae1b19b6abb562316b14e2cf8b1065adbff5d0d2c"
-
-[[files]]
-file = "kubejs/data/compactmachines/compactmachines/room_templates/colossal.json"
-hash = "c28a269847e1bdaa6db987031ea2ae79ffee0097c05cb3095fc0ba457cd977df"
-
-[[files]]
-file = "kubejs/data/compactmachines/compactmachines/room_templates/farming.json"
-hash = "e3c7c86f0eae23ba548c95579ac36f2bc2f738500796a770cda5ceea3edb8b47"
-
-[[files]]
-file = "kubejs/data/compactmachines/compactmachines/room_templates/giant.json"
-hash = "14c3199b8e1d35648023b072ce6a517e7059cecdf13591cd342bcc65d9e13d48"
-
-[[files]]
-file = "kubejs/data/compactmachines/compactmachines/room_templates/large.json"
-hash = "0070d88b49cda8e15939169d521ea42bee986e0cf9065619d8436e0d4c760d8e"
-
-[[files]]
-file = "kubejs/data/compactmachines/compactmachines/room_templates/normal.json"
-hash = "0758199a651784d778edc664ba1ceb6812af7166d76dc12f318414fe7e696785"
-
-[[files]]
-file = "kubejs/data/compactmachines/compactmachines/room_templates/small.json"
-hash = "7c4f9267bf8dd6697e38c08132f364c95cfd6c85ead29ab5351588720026b6e6"
-
-[[files]]
-file = "kubejs/data/compactmachines/compactmachines/room_templates/soaryn.json"
-hash = "94ef3ceef0ae2f20723d09beb57815c285ebc56f07d2dc5182ea474a784caea3"
-
-[[files]]
-file = "kubejs/data/compactmachines/compactmachines/room_templates/tiny.json"
-hash = "afd82b64178bf2601c42ebb92c44013b53a965ce77b4aec0f0fe4ed265404693"
-
-[[files]]
-file = "kubejs/data/compactmachines/recipe/new_machine_colossal.json"
-hash = "93055065a34444b2779f0d572ea29e4bb61beea96bb7478b2554f247f3b473aa"
-
-[[files]]
-file = "kubejs/data/compactmachines/recipe/new_machine_farming.json"
-hash = "12a365a279e7081789b7bffe5776a7b52a3d7a69525ba152ada39647a6058d88"
-
-[[files]]
-file = "kubejs/data/compactmachines/recipe/new_machine_giant.json"
-hash = "305f8966c1524ec7424c72f884dfa1640563487e4004efb87994883e63f85021"
-
-[[files]]
-file = "kubejs/data/compactmachines/recipe/new_machine_large.json"
-hash = "b0e362a83e555a067860bb99f681ca7d94d060240c7582bea1cf919a71eef783"
-
-[[files]]
-file = "kubejs/data/compactmachines/recipe/new_machine_normal.json"
-hash = "a90ab29b7be62d73af77a388448082e866bcd500c81ac5998ec965ccae0c34a4"
-
-[[files]]
-file = "kubejs/data/compactmachines/recipe/new_machine_small.json"
-hash = "28b3d7ab1d182e3dfd278ed49998681d428887cbf29f64af7d823b8ee21a4fa5"
-
-[[files]]
-file = "kubejs/data/compactmachines/recipe/new_machine_soaryn.json"
-hash = "10b6059140820589374353590711f0b458870c791798cc60dc727deeeaa2b77b"
-
-[[files]]
-file = "kubejs/data/compactmachines/recipe/new_machine_tiny.json"
-hash = "4642f835cebdc5a12fdd60dd983c16737388a6b8a8c7c83ef53897bfb1728035"
-
-[[files]]
 file = "kubejs/data/create_connected/loot_table/blocks/dye_depot_amber_fan_dyeing_catalyst.json"
 hash = "496798c8c0398861ba9cb828e56db9670bf0b65d6fdfcd30b59d342fe49b562b"
 
@@ -2762,11 +2658,11 @@ hash = "5179f2cb833123bb0b18b01ca7bbb87bfc407f9b1ce70e364d32d4812c06cb72"
 
 [[files]]
 file = "kubejs/data/kronwerke/chapters/stages/stage2.json"
-hash = "f5b8e3171f2549cd9c4d7c1b1f0282876ddb6c1de243ef1ed8526df2ae913dd9"
+hash = "21fb57fd1a6bf9cfa9ed0ddcbe6199d15724d238b62e5c7e9734b6d1cd5445d6"
 
 [[files]]
 file = "kubejs/data/kronwerke/chapters/stages/stage3.json"
-hash = "207d15b266573d863c3ab6d137598db796c58d09dd67840fd0e861b09a6e49af"
+hash = "9e930f439a3aef9856ef34e6749a24d55c95dffc3bd4fdea2eb115b37cc2dda0"
 
 [[files]]
 file = "kubejs/data/kronwerke/chapters/stages/stage4.json"
@@ -2806,7 +2702,7 @@ hash = "0e1afae28b8995e65a100519b3e43e4907096d3543ad3abb6271fa4fd0cb506b"
 
 [[files]]
 file = "kubejs/data/kronwerke/origins/origins/muehlenkind.json"
-hash = "f233f811cab69bbc20cdb216b3461f5180cd04d46afdcf4f4cf48da92f9ee977"
+hash = "bb46cf4c4c99fe5dbdac511ecee55b340f16fbec3cd71f068d07e99d95d35479"
 
 [[files]]
 file = "kubejs/data/kronwerke/origins/origins/quellgeborene.json"
@@ -2850,11 +2746,11 @@ hash = "6141e5fd46ecfe6e8cd276d1f9680115a550b48b6f25daeb71d81f5e9e966648"
 
 [[files]]
 file = "kubejs/data/kronwerke/origins/origins/tiefgraeber.json"
-hash = "3cbe79c2d3949e9c7d2a7180e3f816198ceddd5fae181d5077d1c3a69361ae62"
+hash = "b0d52ce6467b6a10c5c42dad9a09ed4902b39f3a7c136eb0f3e5a2da20027824"
 
 [[files]]
 file = "kubejs/data/kronwerke/origins/powers/aurakind_fern_der_wurzeln.json"
-hash = "3fd3cacca0a7c6f31c8862c7ec026ea80236a7c202fba33ba0b7d25cfd89b8be"
+hash = "58c17f8b372e028b7da51534a8a269139e64a16a8897a7f08f17367449617c22"
 
 [[files]]
 file = "kubejs/data/kronwerke/origins/powers/aurakind_kraeuterblut.json"
@@ -2874,7 +2770,7 @@ hash = "c5d199aec8909e7ddd5cffdbe7d6ed3e3b5638dcf07b067d4a6c27f9edd335ec"
 
 [[files]]
 file = "kubejs/data/kronwerke/origins/powers/chaosgezeichnete_unstet.json"
-hash = "dee75fe94bd57b53321d3c98bb79a6e411d77d71dd97afbd0a0ccafed98154e5"
+hash = "bcaa7e34cb666a8537b4006f066cbfe8d52dc2cb0a0a7b294a1c1e8df714ba4e"
 
 [[files]]
 file = "kubejs/data/kronwerke/origins/powers/chaosgezeichnete_zehrendes_chaos.json"
@@ -2898,7 +2794,7 @@ hash = "39151ba5a36afc6d634ca08ae720fb8976ad92f6773be3db4cafc5da9a3946fa"
 
 [[files]]
 file = "kubejs/data/kronwerke/origins/powers/messingblut_rostig.json"
-hash = "944fa9c1c5ed2145153cc7926de8e240c77e9766cf484a9b499b05262c22f16a"
+hash = "e8f46ec02dcf9aba7e28806505a754cad4534c0477514cb3e7f5b1f0fadd6e6b"
 
 [[files]]
 file = "kubejs/data/kronwerke/origins/powers/messingblut_schmiedeglut.json"
@@ -2918,7 +2814,11 @@ hash = "5e5e7cf9e0b7fab30e09407866e249a16cb84d281b2cbb9e815cd63e3b96efcb"
 
 [[files]]
 file = "kubejs/data/kronwerke/origins/powers/muehlenkind_trockene_kehle.json"
-hash = "c2456ab7a7da9c00c844e286c9cf2bc3ce7472c51e2d88aea3cabc95fc56ca7f"
+hash = "5489ed1d952b4158357278eac052bfc661107fe2eac6be08ae6938a30cf7dbbd"
+
+[[files]]
+file = "kubejs/data/kronwerke/origins/powers/muehlenkind_zunder.json"
+hash = "33611a78007188e3b793a6f0260160061a8d0887fb7d4d987d7198ebc7fbbdb8"
 
 [[files]]
 file = "kubejs/data/kronwerke/origins/powers/quellgeborene_kein_eisen.json"
@@ -3030,7 +2930,7 @@ hash = "c81291dc3dc8d521ccbd741bb72796212f4647e9742e44398415a880461ff4ba"
 
 [[files]]
 file = "kubejs/data/kronwerke/origins/powers/runentraeger_schwere_zeichen.json"
-hash = "e71803e278440b5e2c3d73db8647fbc9d7f7013d2434a29a330d4297d971d82b"
+hash = "a8e053dac7328df6e122537f086ab8787e9c1ce98eca4e7c0cb9083449e34b52"
 
 [[files]]
 file = "kubejs/data/kronwerke/origins/powers/runentraeger_standfest.json"
@@ -3062,11 +2962,15 @@ hash = "abeaca4f27e8a9aea3ed1e4796edef9fd9049260efb59b038832e58a7f39a295"
 
 [[files]]
 file = "kubejs/data/kronwerke/origins/powers/tiefgraeber_lichtscheu.json"
-hash = "4442615116eb7f884f86d69c4d5b8481c9abc5dd90b3c4f5a41f5f294dd0a75a"
+hash = "fa6ea7992dd1170c421da5bafc9f4d20b4bc52a20efbbd13a820c2f1ba134b27"
 
 [[files]]
 file = "kubejs/data/kronwerke/origins/powers/tiefgraeber_stollenaugen.json"
 hash = "1a0e224dd061164197281ce55cbc0b9cd697c33b2e00f6e454cf07318ec16878"
+
+[[files]]
+file = "kubejs/data/kronwerke/origins/powers/tiefgraeber_tiefenschlag.json"
+hash = "9c48f27f0776ebd1e6fa625df2fc4133db18ddea40a48df03a12c7aa19ed8440"
 
 [[files]]
 file = "kubejs/data/kronwerke/recipe/market/productivetrees/alder_sapling.json"
@@ -3291,6 +3195,302 @@ hash = "8d899861e420c1163c18a6ee81538729421c6e2d31bf8cce433e3b1ce1363b04"
 [[files]]
 file = "kubejs/data/kronwerke/recipe/market/productivetrees/yew_sapling.json"
 hash = "8e6f2dd9d5f00b4aa3b11a06874f64ff545093017c5756520a54a0ebc467a6f4"
+
+[[files]]
+file = "kubejs/data/kronwerke/tags/block/deepslate_instamine.json"
+hash = "65e310a28b409ead959bfcf6e3fcdc3ed2815d67fc100fe70ab685af2b306a83"
+
+[[files]]
+file = "kubejs/data/kronwerke/worldgen/biome/mine.json"
+hash = "e25af6ecde7d3fac1e49446b3cf84c0b9e142558adbaab828c78df39f6ac98c9"
+
+[[files]]
+file = "kubejs/data/kronwerke/worldgen/configured_feature/mine_aluminum.json"
+hash = "f2e1af453b9c51483006112b94eb04d43d09705fe260b981d539d619b30f426c"
+
+[[files]]
+file = "kubejs/data/kronwerke/worldgen/configured_feature/mine_arcane_crystal.json"
+hash = "71ef697d37ab9327f8154efe94da9454fd13e810098acab2d72bacc59d3b6a12"
+
+[[files]]
+file = "kubejs/data/kronwerke/worldgen/configured_feature/mine_boron.json"
+hash = "52850cbc2f93e714c9ce4f3e8e8a2e770f6ba96b17930192161c22c766c909c2"
+
+[[files]]
+file = "kubejs/data/kronwerke/worldgen/configured_feature/mine_bort.json"
+hash = "970aff92935c4d4b6bb5257f5997232802ca52f1b0a08e13bd0375d51f9f5ed9"
+
+[[files]]
+file = "kubejs/data/kronwerke/worldgen/configured_feature/mine_coal.json"
+hash = "5a19da8f4eacefa03f54b195732fdd9700d586ecb0942d4f28013bac610fafcf"
+
+[[files]]
+file = "kubejs/data/kronwerke/worldgen/configured_feature/mine_cobalt.json"
+hash = "e12c197534a24942f7c48b42d7e205ad90750f8f9ec92e2d9cf3e925024ca65e"
+
+[[files]]
+file = "kubejs/data/kronwerke/worldgen/configured_feature/mine_copper.json"
+hash = "fbb1a0278a5edc393d32c0f424f87ed3b70acd94e783426b90be2424851aba1b"
+
+[[files]]
+file = "kubejs/data/kronwerke/worldgen/configured_feature/mine_dark.json"
+hash = "435501d666ed06fecb0d6956fbf0d30c3d8dfbfb685f98ef89886ffbf29bee77"
+
+[[files]]
+file = "kubejs/data/kronwerke/worldgen/configured_feature/mine_diamond.json"
+hash = "ed72550aa440e446196c81bfada7d31dbb8c7cfdbc3d4d046cbd3f140a19ab43"
+
+[[files]]
+file = "kubejs/data/kronwerke/worldgen/configured_feature/mine_eidolon_lead.json"
+hash = "aeb22e0563a2a844af8822410706bb19ac8812509b643a57f5f27355116ad736"
+
+[[files]]
+file = "kubejs/data/kronwerke/worldgen/configured_feature/mine_eidolon_silver.json"
+hash = "136d68e76dd1c8d8ea04ea038c57d246c94a6b8143164ff52c715f1a9174b08d"
+
+[[files]]
+file = "kubejs/data/kronwerke/worldgen/configured_feature/mine_emerald.json"
+hash = "673d840cc793e25a23e045b472d129a22eedfc6ded2b11f1d88a10b6a5912622"
+
+[[files]]
+file = "kubejs/data/kronwerke/worldgen/configured_feature/mine_fluorite.json"
+hash = "ceeca36bf638d1eb0799b49032b13fb36c75b3a9a64d7d6db03739a185b03168"
+
+[[files]]
+file = "kubejs/data/kronwerke/worldgen/configured_feature/mine_gold.json"
+hash = "db63cc2c8891f8e6bd8180cc7d589c279e3e0167541a802e8426f3ef75a54618"
+
+[[files]]
+file = "kubejs/data/kronwerke/worldgen/configured_feature/mine_inferium.json"
+hash = "f40d37ae411d1f0842b8820921407c63d4b00d523bbd071edc6a85f5367a6e65"
+
+[[files]]
+file = "kubejs/data/kronwerke/worldgen/configured_feature/mine_iron.json"
+hash = "f5f19240b652e73ae8d0274ada3cb5b0b070b33ad1aa270d83e8f1a36fa7307d"
+
+[[files]]
+file = "kubejs/data/kronwerke/worldgen/configured_feature/mine_lapis.json"
+hash = "5e75d2950f6e7061e8a6c1e53487630a4d4c5f988958a1a5b49d7b10b9119b39"
+
+[[files]]
+file = "kubejs/data/kronwerke/worldgen/configured_feature/mine_lead.json"
+hash = "54c44e36f6a0c35202137ae5e0c7bd6218256f375fa14383ff043c483b6e82ac"
+
+[[files]]
+file = "kubejs/data/kronwerke/worldgen/configured_feature/mine_lithium.json"
+hash = "162291f5765ed0ba48614ae4ed60bde1155d5aa5cf006d048d1e36399f1d892f"
+
+[[files]]
+file = "kubejs/data/kronwerke/worldgen/configured_feature/mine_magnesium.json"
+hash = "45f13fe6fe95b8fc4d74ca63250cf30dad01364d69d830f99defc2dc7107caa4"
+
+[[files]]
+file = "kubejs/data/kronwerke/worldgen/configured_feature/mine_mithril.json"
+hash = "4c9b24256dee661c16baf2c43ae21a3c3ff96805b7d2d51d6e749411e5037805"
+
+[[files]]
+file = "kubejs/data/kronwerke/worldgen/configured_feature/mine_nickel.json"
+hash = "aaba4b103659a3dd6a1aafb00461c3aac64164063b078c760087d33ca2819455"
+
+[[files]]
+file = "kubejs/data/kronwerke/worldgen/configured_feature/mine_occultism_silver.json"
+hash = "71eac8a1317a9d69e07360679ed501fa43177024712f9b08f24a27a3bf15a638"
+
+[[files]]
+file = "kubejs/data/kronwerke/worldgen/configured_feature/mine_oritech_nickel.json"
+hash = "1de68c7fb9d3b4b029cfaddbc0998954a67dd508ebf054dfdd1f084c77bb4388"
+
+[[files]]
+file = "kubejs/data/kronwerke/worldgen/configured_feature/mine_osmium.json"
+hash = "74c3fc6245e89a2df68ee8466394885330040052e0261fb6215a8a62fcf88e87"
+
+[[files]]
+file = "kubejs/data/kronwerke/worldgen/configured_feature/mine_prosperity.json"
+hash = "84243c74dd826d9ad493fc63deaef7ea0625014c011705fa884f418ad3753f6d"
+
+[[files]]
+file = "kubejs/data/kronwerke/worldgen/configured_feature/mine_quartz.json"
+hash = "16756fd57c9ca1217aabb7fae83ea0ddfebd39d3d3eb4467f3522b5ade745f25"
+
+[[files]]
+file = "kubejs/data/kronwerke/worldgen/configured_feature/mine_redstone.json"
+hash = "ae7a4634f87c8ab5a2943c1320488335c2e14070009f1fccf2b3a34d464a6895"
+
+[[files]]
+file = "kubejs/data/kronwerke/worldgen/configured_feature/mine_sal_ammoniac.json"
+hash = "7e5f5b2bf8d5e6593dda24e15f1d3190f66cc294514c608de3bf0e497e982597"
+
+[[files]]
+file = "kubejs/data/kronwerke/worldgen/configured_feature/mine_silver.json"
+hash = "113700c67c2a45960ea42d2e8839e592206cddd605bc9e42eaf9ea9bf495a927"
+
+[[files]]
+file = "kubejs/data/kronwerke/worldgen/configured_feature/mine_soulstone.json"
+hash = "63b44c31df7ccb96766a6439cd261f004a31b3aafa610327777ec7b380767d6e"
+
+[[files]]
+file = "kubejs/data/kronwerke/worldgen/configured_feature/mine_thorium.json"
+hash = "e339ab5df2d2526bd2df59eb3b4ef7de25de1a985c6b59365f61ea91afd85c83"
+
+[[files]]
+file = "kubejs/data/kronwerke/worldgen/configured_feature/mine_tin.json"
+hash = "95b581e923707f1d51fc981d84ad72e8d978126d4fbcdeb11a5ee11e6278c2e6"
+
+[[files]]
+file = "kubejs/data/kronwerke/worldgen/configured_feature/mine_uraninite.json"
+hash = "27720f47e892dd1d115d1f3a434839edc13e43e71d0e202aefe828fa1dad19cb"
+
+[[files]]
+file = "kubejs/data/kronwerke/worldgen/configured_feature/mine_uranium.json"
+hash = "faa277b3121c6dc8cfe76e0b8d4251c6650cefe2385365a3922d87685e32cae7"
+
+[[files]]
+file = "kubejs/data/kronwerke/worldgen/configured_feature/mine_zinc.json"
+hash = "508b0a765a8f74ac1830147d648bf44d33203260bb95eafe0e5d2b3512c934c8"
+
+[[files]]
+file = "kubejs/data/kronwerke/worldgen/placed_feature/mine_aluminum.json"
+hash = "6923c4cdf17eee007e1957c89e60f06731af082159e182c0384a16f8c457d933"
+
+[[files]]
+file = "kubejs/data/kronwerke/worldgen/placed_feature/mine_arcane_crystal.json"
+hash = "21748a82e27726fd9c46e517c0d698e87854e2849f8fea2459685177da83bb35"
+
+[[files]]
+file = "kubejs/data/kronwerke/worldgen/placed_feature/mine_boron.json"
+hash = "6df53abe02fb8459f2e81b2e14da21ef94600eaf379f839a65261e575452973f"
+
+[[files]]
+file = "kubejs/data/kronwerke/worldgen/placed_feature/mine_bort.json"
+hash = "7b9378717cd770729a1f12cdbf90155aa693da42e212419ba681c729eb03ea64"
+
+[[files]]
+file = "kubejs/data/kronwerke/worldgen/placed_feature/mine_coal.json"
+hash = "8198fca9813334b2f59b008c563e9112f8c641e9deba44c599d24697d6b5931b"
+
+[[files]]
+file = "kubejs/data/kronwerke/worldgen/placed_feature/mine_cobalt.json"
+hash = "3b928d23732014ca784a381f556513d433e077ab3693c0fa1cf76c99258ce7b6"
+
+[[files]]
+file = "kubejs/data/kronwerke/worldgen/placed_feature/mine_copper.json"
+hash = "f5c1263006075b3d117da57af4a10e10ca579cdb3e8a189f32011f9651cd6fa4"
+
+[[files]]
+file = "kubejs/data/kronwerke/worldgen/placed_feature/mine_dark.json"
+hash = "31b7b5c600d5f07d801df1c4984a8ebbcc0297dc49afa4a663ef302514f702ca"
+
+[[files]]
+file = "kubejs/data/kronwerke/worldgen/placed_feature/mine_diamond.json"
+hash = "fefceaf9c35a56c19a862af562aa5168eb0092d2f05412fa84a1b8576bc8af1e"
+
+[[files]]
+file = "kubejs/data/kronwerke/worldgen/placed_feature/mine_eidolon_lead.json"
+hash = "e774f67cfb08ce317936926d19a561eebca4348a389488565630b49c2afd32a8"
+
+[[files]]
+file = "kubejs/data/kronwerke/worldgen/placed_feature/mine_eidolon_silver.json"
+hash = "e92c8552334fa5fd726078540f633e94bb6fb51519fb9cc2aa5113d2ad0445d2"
+
+[[files]]
+file = "kubejs/data/kronwerke/worldgen/placed_feature/mine_emerald.json"
+hash = "5722e20d918782522613c51f440d4685bc89c85ce7a56b54d3cfa91b8e469b67"
+
+[[files]]
+file = "kubejs/data/kronwerke/worldgen/placed_feature/mine_fluorite.json"
+hash = "129801e035ad75cc8535e74902bf817c68da9c5e42256ef0f2edfba99f99adbc"
+
+[[files]]
+file = "kubejs/data/kronwerke/worldgen/placed_feature/mine_gold.json"
+hash = "4e6610558b950c6c1bde83ad87d0c7c40ab1c3972df63a7554a840333615e76c"
+
+[[files]]
+file = "kubejs/data/kronwerke/worldgen/placed_feature/mine_inferium.json"
+hash = "2dcf518662ca237fd161ac93aab5e5989653e7128e2f048845f9ce739074f3dd"
+
+[[files]]
+file = "kubejs/data/kronwerke/worldgen/placed_feature/mine_iron.json"
+hash = "f16abaf8aaa1a16fbed9673f0b8422f532d7824a811f24829f22aab75260855e"
+
+[[files]]
+file = "kubejs/data/kronwerke/worldgen/placed_feature/mine_lapis.json"
+hash = "cba8b9afda461677a3e49ff73a315d71096e500251075fe595bee9db9ae2778b"
+
+[[files]]
+file = "kubejs/data/kronwerke/worldgen/placed_feature/mine_lead.json"
+hash = "33d60fa6761c9d47e02d373af75268e28c8e236a4e56250508cc69de2c0d179c"
+
+[[files]]
+file = "kubejs/data/kronwerke/worldgen/placed_feature/mine_lithium.json"
+hash = "3dfe8eb3ad36412e39ce2c53408dda431f1d4fe693f84e302c2bb0b72dda6c93"
+
+[[files]]
+file = "kubejs/data/kronwerke/worldgen/placed_feature/mine_magnesium.json"
+hash = "2cb9e72b3ff118fb3bf1fb3df2a02f4d492f65fcbb2619e9f902f99eb84b26c4"
+
+[[files]]
+file = "kubejs/data/kronwerke/worldgen/placed_feature/mine_mithril.json"
+hash = "acecf70a6de68d54f1416de47c4dda114bf9a95e74cba36f0c634b0457201b94"
+
+[[files]]
+file = "kubejs/data/kronwerke/worldgen/placed_feature/mine_nickel.json"
+hash = "4145b6c514638eb1893748e82bcd16f33640a6f88a0a24cb20d924b62f73c52b"
+
+[[files]]
+file = "kubejs/data/kronwerke/worldgen/placed_feature/mine_occultism_silver.json"
+hash = "7650e0e61f6fe59f9046f6afca4108ba5354a1ed3a0f7765945e0994f6157540"
+
+[[files]]
+file = "kubejs/data/kronwerke/worldgen/placed_feature/mine_oritech_nickel.json"
+hash = "ae1921041e80459384b8a3f6d50236bfda3814a2280b6f3aa4523cb078de264d"
+
+[[files]]
+file = "kubejs/data/kronwerke/worldgen/placed_feature/mine_osmium.json"
+hash = "c72f8cb0a76aa1710554882a1ee16299962cbf455396e4d1177aa06ccea866c3"
+
+[[files]]
+file = "kubejs/data/kronwerke/worldgen/placed_feature/mine_prosperity.json"
+hash = "e4a57b182b086b9f88c52af5a18e0bcb5cda8c3e4a8bba1fde0b554cd7acaa06"
+
+[[files]]
+file = "kubejs/data/kronwerke/worldgen/placed_feature/mine_quartz.json"
+hash = "943b4d916cdf498ea60e98e1040e5b5c407225ae2f167407fe10d45489955c25"
+
+[[files]]
+file = "kubejs/data/kronwerke/worldgen/placed_feature/mine_redstone.json"
+hash = "3fd948502bdf3c56785490437ae1417d5a95c197bedf9c7f7abee8fa321cee69"
+
+[[files]]
+file = "kubejs/data/kronwerke/worldgen/placed_feature/mine_sal_ammoniac.json"
+hash = "2b5c769dc440ed3a490445a21dce05a9384b2284d8ea596141a5016d09c9ca66"
+
+[[files]]
+file = "kubejs/data/kronwerke/worldgen/placed_feature/mine_silver.json"
+hash = "d7e492dbeb31183023155c94f2b41cdd031f402dd45ca5cb7b60aa90f61b78d4"
+
+[[files]]
+file = "kubejs/data/kronwerke/worldgen/placed_feature/mine_soulstone.json"
+hash = "c2c9e46caf5359ed8c232958afc6c2cfc1f711f726d78377b9a06d245220f205"
+
+[[files]]
+file = "kubejs/data/kronwerke/worldgen/placed_feature/mine_thorium.json"
+hash = "f6b9696dccce08e5397d8dcab96affb2486d96e25bba050e46a0030e68ecd2ee"
+
+[[files]]
+file = "kubejs/data/kronwerke/worldgen/placed_feature/mine_tin.json"
+hash = "4f9c79214b424f61795311d9a9bf85969ad5fbcca2cf0743f7ce7ad54d1da288"
+
+[[files]]
+file = "kubejs/data/kronwerke/worldgen/placed_feature/mine_uraninite.json"
+hash = "ab481e9ac7625d60ea68425dd87649deaf78d97902a2fa319a52e53e9e064941"
+
+[[files]]
+file = "kubejs/data/kronwerke/worldgen/placed_feature/mine_uranium.json"
+hash = "335adf9205a36222bbd912690dc78ed4ab33dfb9f36a4ca15b4ad3617e0d0e7c"
+
+[[files]]
+file = "kubejs/data/kronwerke/worldgen/placed_feature/mine_zinc.json"
+hash = "c3d83235c90c8a0845fdd9be903a7fe32dfed6ae84fe5e63c80c9fcbfa3846de"
 
 [[files]]
 file = "kubejs/data/malum/recipe/aluminum_from_node_smelting.json"
@@ -3727,6 +3927,10 @@ hash = "9ca0da91d1d3b4a9099d1d4ae8c7ceeaf6c871b101cc26125150179f62f500b1"
 [[files]]
 file = "kubejs/data/minecraft/advancement/wander_add_map.json"
 hash = "21b11674b18c3fb0d8292095cf7c12bca82ef4054ec3f1cd8d1e0222d1655629"
+
+[[files]]
+file = "kubejs/data/minecraft/dimension_type/overworld.json"
+hash = "ce1954f5921b4e7b5c691c9667d38c66c883938e0c430d17a023dd060937285f"
 
 [[files]]
 file = "kubejs/data/mysticalagradditions/recipe/essence/gaia_spirit.json"
@@ -4803,6 +5007,14 @@ hash = "ddf2dfb5eba85b51c8184cb1d9b151e3ea170c6378b52352709d2e4c124a2246"
 [[files]]
 file = "kubejs/data/twilightforest/tags/worldgen/biome/in_twilight_forest.json"
 hash = "f74498097708215ee46031db7467ce3abed880ed8188eff156e81993d9787e31"
+
+[[files]]
+file = "kubejs/data/ultimate_mining_dimension/dimension/ultimate_mining_dimension.json"
+hash = "3b0929d4e469ee70a47f710084f076e2eaefd3399388703ebb04ad5fada4e73e"
+
+[[files]]
+file = "kubejs/data/ultimate_mining_dimension/dimension_type/ultimate_mining_dimension.json"
+hash = "4e244ffc12b70931d82383e027f8231858339202feb21cbba6e8d719c0a7a6a9"
 
 [[files]]
 file = "kubejs/server_scripts/kronwerke/added.js"

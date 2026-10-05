@@ -10,6 +10,15 @@
     "minecraft:deepslate_redstone_ore",
     "minecraft:deepslate_lapis_ore",
     "minecraft:deepslate_diamond_ore",
-    "minecraft:deepslate_emerald_ore"
+    "minecraft:deepslate_emerald_ore",
+    {
+      "id": "#c:ores_in_ground/deepslate",
+      "required": false
+    },
+    "mekanism:deepslate_silver_ore",
+    "nuclearcraft:boron_deepslate_ore",
+    "nuclearcraft:cobalt_deepslate_ore",
+    "nuclearcraft:magnesium_deepslate_ore",
+    "nuclearcraft:thorium_deepslate_ore"
   ]
 }

@@ -62,6 +62,7 @@ The id of each new recipe is `kronwerke:<family>/<name>`. "Remove all" means eve
 | Heavy engineering block | A precision mechanism in place of one steel component. | IE's big machines need Create. |
 | Powah energizing orb | A Botania mana diamond on top. | The power mod needs mana to start. |
 | Ender IO soul binder | Malum soul stained steel. | The soul side of Ender IO is Malum. |
+| Ender IO broken spawner | One spawner (picked up with silk touch) in the crafting grid. | Ender IO's own drop is off: with Apothic Spawners' silk touch drop a spawner gave both items on every break, and placing the spawner again made that a loop. The soul binder gives the broken spawner its mob as before. |
 | Draconic energy core stabilizer | A Gaia spirit. | The dragon's power needs Gaia. |
 | Mekanism laser focus matrix | Ars Nouveau source gem block. | Fusion needs magic to start. |
 | Awakened draconium (fusion) | Gaia spirit ingots in the injectors. | The finale needs both. |

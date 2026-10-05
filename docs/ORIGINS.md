@@ -59,7 +59,7 @@ Icon: the Mining Dimension's enchanted pickaxe. Impact: medium. From the tunnels
 | --- | --- | --- |
 | Stollenaugen | Night vision, toggled with the Night Vision key (default K). | The classic miner perk. |
 | Hauerhand | Breaks pickaxe blocks 25 percent faster. | Speed only. No Fortune, no extra ore, so the ore economy is untouched. |
-| Tiefenschlag | Deepslate, cobbled deepslate, tuff and the deepslate ores break in one hit (`#kronwerke:deepslate_instamine`). | The deep layers of the Mining Dimension are the Tiefgräber's home. |
+| Tiefenschlag | Deepslate, cobbled deepslate, tuff and every deepslate ore break in one hit (`#kronwerke:deepslate_instamine`, which includes `#c:ores_in_ground/deepslate` and the Mekanism and NuclearCraft ores that lack the tag). | The deep layers of the Mining Dimension are the Tiefgräber's home. |
 | Heimat unter Tage | Haste I in the Mining Dimension. | Ties the origin to a place that opens on day one. |
 | Lichtscheu (downside) | 50 percent more damage taken in daylight under open sky. | The Tiefgräber builds under a roof or works at night. No ticking damage, just a worse fight in the sun. |
 

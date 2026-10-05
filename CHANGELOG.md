@@ -145,6 +145,13 @@ Needs a new world: the stage files, the quest ids and the goal data changed.
 - Voice chat on UDP 19132.
 - Blocks that survive every explosion: bedrock, end portal frames and portals, reinforced deepslate, the Cataclysm altars and boss respawners (`spawn.blastProof` in the Core config).
 
+## 0.10.2
+
+- Radiation: the career dose from Nuclear Radiation gave permanent Weakness, Mining Fatigue and Bad Luck after half a sievert and faded at a rate that never mattered. The stages now start at 1, 3, 6 and 10 Sv, the dose fades 300 times faster (about 0.3 Sv per hour), and the warning band for ambient radiation starts at 10 instead of 1 mSv/h. An operator clears a player with `/nr clear <name>`.
+- Spawner loop closed: a silk touched spawner (Apothic Spawners) also dropped Ender IO's broken spawner, so one spawner gave both items on every break. Ender IO's drop is off; a broken spawner is crafted from a spawner instead (1:1) and the soul binder gives it its mob as before.
+- Tiefgräber: Tiefenschlag covers every deepslate ore, modded ones included (`#c:ores_in_ground/deepslate` plus the Mekanism and NuclearCraft ores without the tag).
+- The class skill (the Händler's bag, among others) is pinned to H in the default keys.
+
 ## 0.10.1
 
 - Loot crates work: the reward tables carried the crate under the wrong key, so a quest's crate opened to nothing. A crate now gives three rolls (rare: two) of its table.

@@ -10,11 +10,15 @@ hash = "c90e98869ed32ed8bff68aa5a856f4507ca09025a6152d9df718115637c8e837"
 
 [[files]]
 file = "config/defaultoptions/keybindings.txt"
-hash = "9245e2b587d148773bfa14c98b080f31fd67b47a2494299cfd68d4874006c624"
+hash = "3f75e1544197f9c7e978da36361f8dccc1d27fd589c861a3b43e3d206b2806a5"
 
 [[files]]
 file = "config/defaultoptions/options.txt"
 hash = "ee724c1c5fae33f5f53312baaf8993af08d93f28d9fd72cd1a809f0ca71890a0"
+
+[[files]]
+file = "config/enderio/base-common.toml"
+hash = "e5efc1965708f75918276837d3cddb13a32b8703becfe1d65a9f4a1c2238c88a"
 
 [[files]]
 file = "config/ftbchunks-world.snbt"
@@ -411,6 +415,14 @@ hash = "1ebceca7d1a74dc2df258e47efe0a4a163a381312a92998d01577180b6aebead"
 [[files]]
 file = "config/neoorigins/gameplay.toml"
 hash = "d2f4e4b074699e9ce6d63e89fbce27ccc66c127b6da665e6e9cd2066dc3c013f"
+
+[[files]]
+file = "config/nuclear_radiation-common.toml"
+hash = "7696b4397f22d96592063ebaf959a2950433410d1b1a41df2af44ebcb17e0264"
+
+[[files]]
+file = "config/nuclear_radiation-radiation.toml"
+hash = "72c78f1ae2edb2146ff84178f9c7292f65aaf8685518638d6e95df0b12e966cf"
 
 [[files]]
 file = "config/pneumaticcraft-common.toml"
@@ -3218,7 +3230,7 @@ hash = "8e6f2dd9d5f00b4aa3b11a06874f64ff545093017c5756520a54a0ebc467a6f4"
 
 [[files]]
 file = "kubejs/data/kronwerke/tags/block/deepslate_instamine.json"
-hash = "65e310a28b409ead959bfcf6e3fcdc3ed2815d67fc100fe70ab685af2b306a83"
+hash = "1fadd904d2ef41b6140575a93677140cfb294e692ccc0ea0f857191a419eddb3"
 
 [[files]]
 file = "kubejs/data/kronwerke/worldgen/biome/mine.json"
@@ -5066,7 +5078,7 @@ hash = "584000faceb796099fddcb3050c262965a4ae8da82645a3df1f1412721150100"
 
 [[files]]
 file = "kubejs/server_scripts/kronwerke/tech.js"
-hash = "d739b3c749faabc2d81b66e8d5a513ec5cb14d94e46a472ef6c9428ac216ff73"
+hash = "8a3f99766d2c94acea6a0d29efbe79807b72d3281c0d488da27943407da74678"
 
 [[files]]
 file = "kubejs/server_scripts/mining_dimension.js"

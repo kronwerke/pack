@@ -110,6 +110,11 @@ ServerEvents.recipes(event => {
   }).id('kronwerke:tech/energizing_orb')
 
   // Soul binder: Malum's soul stained steel instead of soularium.
+  // A spawner picked up with silk touch (Apothic Spawners) is the only way to a broken
+  // spawner. Ender IO's own drop is off in its config, because together with the silk
+  // touch drop one spawner gave both items on every break.
+  event.shapeless('enderio:broken_spawner', ['minecraft:spawner']).id('kronwerke:tech/broken_spawner')
+
   event.remove({ id: 'enderio:soul_binder' })
   event.shaped('enderio:soul_binder', [
     'IVI',

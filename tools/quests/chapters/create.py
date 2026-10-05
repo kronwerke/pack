@@ -818,5 +818,5 @@ images = [
 images[0]["x"] = 15.5
 images[1]["x"] = 15.5
 
-chapter(C, "Create", "create:large_cogwheel", "tech", quests, shape="gear", order=1,
+chapter(C, "Create", "create:large_cogwheel", "tech", quests, shape="circle", order=1,
         subtitle=["Rotation, Förderbänder und die ersten Maschinen des Steinwerks."], images=images)

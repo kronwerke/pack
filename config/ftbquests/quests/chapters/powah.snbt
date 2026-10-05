@@ -13,7 +13,7 @@
 		{
 			id: "79B0BDFCF9C0F6D6"
 			x: 0.5d
-			y: 2.5d
+			y: 2.8200000000000003d
 			icon: {
 				id: "powah:dielectric_paste"
 				count: 1
@@ -56,7 +56,7 @@
 		{
 			id: "2F71A3F7ABF3A098"
 			x: 0.0d
-			y: 7.3d
+			y: 7.62d
 			icon: {
 				id: "powah:dielectric_casing"
 				count: 1
@@ -91,7 +91,7 @@
 		{
 			id: "36C4AC549D3F6361"
 			x: 17.25d
-			y: 7.3d
+			y: 7.62d
 			icon: {
 				id: "powah:capacitor_basic"
 				count: 1
@@ -135,7 +135,7 @@
 		{
 			id: "120D28E8E18E4715"
 			x: 2.75d
-			y: 7.8d
+			y: 8.120000000000001d
 			icon: {
 				id: "powah:energizing_orb"
 				count: 1
@@ -181,7 +181,7 @@
 		{
 			id: "18F0A7B8A9B56687"
 			x: 5.5d
-			y: 7.3d
+			y: 7.62d
 			icon: {
 				id: "powah:energizing_rod_starter"
 				count: 1
@@ -220,7 +220,7 @@
 		{
 			id: "6A30DE88BFFE3BB6"
 			x: 10.0d
-			y: 9.4d
+			y: 9.72d
 			icon: {
 				id: "powah:energizing_rod_hardened"
 				count: 1
@@ -269,7 +269,7 @@
 		{
 			id: "34213EA5B410E502"
 			x: 7.75d
-			y: 7.3d
+			y: 7.62d
 			icon: {
 				id: "ae2:charged_certus_quartz_crystal"
 				count: 1
@@ -308,7 +308,7 @@
 		{
 			id: "71E39CB411FE5E3A"
 			x: 7.75d
-			y: 9.4d
+			y: 9.72d
 			icon: {
 				id: "powah:steel_energized"
 				count: 1
@@ -351,7 +351,7 @@
 		{
 			id: "2370451E2D9B08CE"
 			x: 10.0d
-			y: 11.5d
+			y: 11.82d
 			icon: {
 				id: "powah:crystal_blazing"
 				count: 1
@@ -390,7 +390,7 @@
 		{
 			id: "7E3468821B08280E"
 			x: 12.25d
-			y: 9.4d
+			y: 9.72d
 			icon: {
 				id: "powah:crystal_niotic"
 				count: 1
@@ -429,7 +429,7 @@
 		{
 			id: "7ECD8000CD08C7FC"
 			x: 14.5d
-			y: 7.3d
+			y: 7.62d
 			icon: {
 				id: "powah:crystal_spirited"
 				count: 1
@@ -468,7 +468,7 @@
 		{
 			id: "5E337253E9C1DBD3"
 			x: 10.0d
-			y: 7.3d
+			y: 7.62d
 			icon: {
 				id: "powah:dry_ice"
 				count: 1
@@ -503,7 +503,7 @@
 		{
 			id: "1E616E48FA1AEB02"
 			x: 12.25d
-			y: 7.3d
+			y: 7.62d
 			icon: {
 				id: "powah:ender_core"
 				count: 1
@@ -537,7 +537,7 @@
 		{
 			id: "666832A8259D915F"
 			x: 0.25d
-			y: 17.05d
+			y: 17.37d
 			icon: {
 				id: "powah:furnator_starter"
 				count: 1
@@ -545,6 +545,7 @@
 			size: 1.5d
 			shape: "hexagon"
 			hide_dependency_lines: true
+			hide_dependent_lines: true
 			dependencies: [
 				"36C4AC549D3F6361"
 				"2F71A3F7ABF3A098"
@@ -580,7 +581,7 @@
 		{
 			id: "58C4E94FD0DA9735"
 			x: 2.75d
-			y: 16.8d
+			y: 17.12d
 			icon: {
 				id: "powah:furnator_basic"
 				count: 1
@@ -619,7 +620,7 @@
 		{
 			id: "180E5A7BB23F44FA"
 			x: 5.0d
-			y: 16.8d
+			y: 17.12d
 			icon: {
 				id: "powah:furnator_hardened"
 				count: 1
@@ -660,7 +661,7 @@
 		{
 			id: "596F1F2F3A46E581"
 			x: 7.75d
-			y: 17.3d
+			y: 17.62d
 			icon: {
 				id: "powah:furnator_blazing"
 				count: 1
@@ -718,7 +719,7 @@
 		{
 			id: "31352A27F84A0B73"
 			x: 10.5d
-			y: 16.8d
+			y: 17.12d
 			icon: {
 				id: "powah:furnator_niotic"
 				count: 1
@@ -760,7 +761,7 @@
 		{
 			id: "353FA47F042F9B19"
 			x: 12.75d
-			y: 16.8d
+			y: 17.12d
 			icon: {
 				id: "powah:furnator_spirited"
 				count: 1
@@ -802,7 +803,7 @@
 		{
 			id: "6A1B163535AD591B"
 			x: 2.75d
-			y: 18.900000000000002d
+			y: 19.220000000000002d
 			icon: {
 				id: "powah:magmator_starter"
 				count: 1
@@ -837,7 +838,7 @@
 		{
 			id: "19418287F3BACF7D"
 			x: 2.75d
-			y: 21.0d
+			y: 21.32d
 			icon: {
 				id: "powah:solar_panel_starter"
 				count: 1
@@ -872,7 +873,7 @@
 		{
 			id: "7F7B929837385409"
 			x: 2.75d
-			y: 23.1d
+			y: 23.42d
 			icon: {
 				id: "powah:thermo_generator_starter"
 				count: 1
@@ -907,7 +908,7 @@
 		{
 			id: "24E530778C8907C1"
 			x: 0.0d
-			y: 28.400000000000002d
+			y: 28.720000000000002d
 			icon: {
 				id: "powah:uraninite"
 				count: 1
@@ -947,7 +948,7 @@
 		{
 			id: "29C1F344177EB2D4"
 			x: 2.625d
-			y: 28.775000000000002d
+			y: 29.095000000000002d
 			icon: {
 				id: "powah:reactor_starter"
 				count: 1
@@ -995,7 +996,7 @@
 		{
 			id: "55B97CB2CA0E9B27"
 			x: 5.25d
-			y: 28.400000000000002d
+			y: 28.720000000000002d
 			icon: {
 				id: "minecraft:packed_ice"
 				count: 1
@@ -1034,7 +1035,7 @@
 		{
 			id: "7A199D43CFB76F94"
 			x: 7.5d
-			y: 28.400000000000002d
+			y: 28.720000000000002d
 			icon: {
 				id: "powah:reactor_basic"
 				count: 1
@@ -1078,7 +1079,7 @@
 		{
 			id: "5702AA4D1BD32504"
 			x: 0.0d
-			y: 33.575d
+			y: 33.895d
 			icon: {
 				id: "powah:energy_cable_basic"
 				count: 1
@@ -1113,7 +1114,7 @@
 		{
 			id: "6F4DB33C72E95B9B"
 			x: 2.25d
-			y: 33.575d
+			y: 33.895d
 			icon: {
 				id: "powah:wrench"
 				count: 1
@@ -1147,7 +1148,7 @@
 		{
 			id: "6DD1B12B8DC43E84"
 			x: 2.25d
-			y: 35.175000000000004d
+			y: 35.495000000000005d
 			icon: {
 				id: "powah:energy_cell_basic"
 				count: 1
@@ -1186,7 +1187,7 @@
 		{
 			id: "6B793CB096A2A159"
 			x: 4.5d
-			y: 33.575d
+			y: 33.895d
 			icon: {
 				id: "powah:ender_cell_starter"
 				count: 1
@@ -1227,7 +1228,7 @@
 		{
 			id: "197804BC1727BDAC"
 			x: 6.75d
-			y: 33.575d
+			y: 33.895d
 			icon: {
 				id: "powah:player_transmitter_starter"
 				count: 1
@@ -1282,18 +1283,18 @@
 		{
 			id: "1E0A64F5F4973109"
 			image: "kronwerke:textures/quests/powah/title.png"
-			x: 1.62d
+			x: 2.455d
 			y: 0.0d
-			width: 4.24d
-			height: 1.6d
+			width: 5.91d
+			height: 2.24d
 			rotation: 0.0d
 			order: 1
 		}
 		{
 			id: "4B73DBF6644469DC"
 			image: "kronwerke:textures/quests/powah/stage.png"
-			x: 5.96d
-			y: 0.525d
+			x: 7.629999999999999d
+			y: 0.8450000000000001d
 			width: 3.24d
 			height: 0.55d
 			rotation: 0.0d
@@ -1303,7 +1304,7 @@
 			id: "12F657EDF4B405CB"
 			image: "kronwerke:textures/quests/powah/energizing.png"
 			x: 1.9500000000000002d
-			y: 5.95d
+			y: 6.2700000000000005d
 			width: 4.9d
 			height: 0.9d
 			rotation: 0.0d
@@ -1313,7 +1314,7 @@
 			id: "7C96DF1CA229CDED"
 			image: "kronwerke:textures/quests/powah/generators.png"
 			x: 2.17d
-			y: 15.450000000000001d
+			y: 15.770000000000001d
 			width: 5.34d
 			height: 0.9d
 			rotation: 0.0d
@@ -1323,7 +1324,7 @@
 			id: "1BB092F3EC32336D"
 			image: "kronwerke:textures/quests/powah/reactor.png"
 			x: 0.875d
-			y: 27.05d
+			y: 27.37d
 			width: 2.75d
 			height: 0.9d
 			rotation: 0.0d
@@ -1333,7 +1334,7 @@
 			id: "64701F48969FE6E3"
 			image: "kronwerke:textures/quests/powah/storage.png"
 			x: 2.93d
-			y: 32.225d
+			y: 32.54500000000001d
 			width: 6.86d
 			height: 0.9d
 			rotation: 0.0d

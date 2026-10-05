@@ -138,6 +138,9 @@ def banner(name, text, x, y, height=1.0, kind="section", colour="brass"):
     texture = f"kronwerke:textures/quests/{name}.png"
     _banners[texture] = (text, kind, colour)
     w, h = banners.measure(text, kind)
+    if kind == "title":
+        # the plate around a title takes a third of its height, so the letters keep their size
+        height = round(height * 1.4, 2)
     return canvas(texture, x, y, round(height * w / h, 2), height, order=1)
 
 
@@ -204,6 +207,12 @@ def _build_chapter(ch, order_index, lang):
     import layout
     layout.layout(ch, lambda tex: _banners.get(tex, ("", "section", ""))[1])
     cid = qid("chapter", ch["name"])
+    # a hub with many children, or a goal that needs many quests, draws no web of lines;
+    # the big packs do the same for their lists, the position tells the story
+    children = {}
+    for q in ch["quests"]:
+        for d in q["deps"]:
+            children[d] = children.get(d, 0) + 1
     quests_out = []
     for q in ch["quests"]:
         quest_id = qid("quest", ch["name"], q["name"])
@@ -226,8 +235,10 @@ def _build_chapter(ch, order_index, lang):
             qd["optional"] = True
         if q["hide"]:
             qd["hide"] = True
-        if q.get("hide_lines"):
+        if q.get("hide_lines") or len(q["deps"]) > 3:
             qd["hide_dependency_lines"] = True
+        if children.get(q["name"], 0) > 4:
+            qd["hide_dependent_lines"] = True
         if q["min_width"]:
             qd["min_width"] = int(q["min_width"])
         if q["deps"]:

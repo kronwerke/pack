@@ -13,7 +13,7 @@
 		{
 			id: "5E17FDE633086052"
 			x: 0.5d
-			y: 2.575d
+			y: 2.925d
 			icon: {
 				id: "minecraft:netherrack"
 				count: 1
@@ -52,7 +52,7 @@
 		{
 			id: "3365667E01139DBD"
 			x: 0.25d
-			y: 7.625000000000001d
+			y: 7.9750000000000005d
 			icon: {
 				id: "minecraft:golden_helmet"
 				count: 1
@@ -106,7 +106,7 @@
 		{
 			id: "7CEC6A06FD70C26D"
 			x: 0.25d
-			y: 11.075000000000001d
+			y: 11.425d
 			icon: {
 				id: "minecraft:flint_and_steel"
 				count: 1
@@ -155,7 +155,7 @@
 		{
 			id: "1E0EDE401E04DF28"
 			x: 2.75d
-			y: 11.075000000000001d
+			y: 11.425d
 			icon: {
 				id: "minecraft:compass"
 				count: 1
@@ -192,7 +192,7 @@
 		{
 			id: "6B350BA417B7DDA4"
 			x: 3.25d
-			y: 2.075d
+			y: 2.425d
 			icon: {
 				id: "waystones:waystone"
 				count: 1
@@ -227,11 +227,12 @@
 		{
 			id: "26B8179E0B2761F8"
 			x: 2.75d
-			y: 7.375000000000001d
+			y: 7.7250000000000005d
 			icon: {
 				id: "minecraft:netherrack"
 				count: 1
 			}
+			hide_dependent_lines: true
 			dependencies: [
 				"3365667E01139DBD"
 			]
@@ -261,7 +262,7 @@
 		{
 			id: "285C15B0C586A75D"
 			x: 0.0d
-			y: 16.125d
+			y: 16.475d
 			hide_dependency_lines: true
 			dependencies: [
 				"26B8179E0B2761F8"
@@ -292,7 +293,7 @@
 		{
 			id: "71FBBD10C8CECAFA"
 			x: 2.25d
-			y: 16.125d
+			y: 16.475d
 			icon: {
 				id: "create:electron_tube"
 				count: 1
@@ -340,7 +341,7 @@
 		{
 			id: "3CB130AE8CB3BDAB"
 			x: 5.0d
-			y: 7.375000000000001d
+			y: 7.7250000000000005d
 			dependencies: [
 				"26B8179E0B2761F8"
 			]
@@ -370,7 +371,7 @@
 		{
 			id: "33EB694A7328B285"
 			x: 5.0d
-			y: 16.125d
+			y: 16.475d
 			icon: {
 				id: "minecraft:gold_nugget"
 				count: 1
@@ -405,7 +406,7 @@
 		{
 			id: "75D30FCED20A52EC"
 			x: 5.0d
-			y: 9.225000000000001d
+			y: 9.575000000000001d
 			icon: {
 				id: "minecraft:magma_cream"
 				count: 1
@@ -448,7 +449,7 @@
 		{
 			id: "3B7E57D017C67709"
 			x: 0.0d
-			y: 17.725d
+			y: 18.075000000000003d
 			icon: {
 				id: "silentgear:raw_crimson_iron"
 				count: 1
@@ -488,7 +489,7 @@
 		{
 			id: "2A75A6F7DEC25645"
 			x: 2.25d
-			y: 17.725d
+			y: 18.075000000000003d
 			icon: {
 				id: "mysticalagriculture:soulstone"
 				count: 1
@@ -527,7 +528,7 @@
 		{
 			id: "13C377F1066A64A3"
 			x: 0.0d
-			y: 32.775d
+			y: 33.125d
 			icon: {
 				id: "minecraft:crimson_stem"
 				count: 1
@@ -562,7 +563,7 @@
 		{
 			id: "222490603A8FDD4B"
 			x: 2.25d
-			y: 32.775d
+			y: 33.125d
 			icon: {
 				id: "minecraft:warped_stem"
 				count: 1
@@ -596,7 +597,7 @@
 		{
 			id: "147FE01F3C49853B"
 			x: 2.25d
-			y: 34.625d
+			y: 34.975d
 			icon: {
 				id: "minecraft:soul_sand"
 				count: 1
@@ -630,7 +631,7 @@
 		{
 			id: "3F9AD9EA5C86450D"
 			x: 4.5d
-			y: 32.775d
+			y: 33.125d
 			icon: {
 				id: "minecraft:basalt"
 				count: 1
@@ -664,7 +665,7 @@
 		{
 			id: "285179CB6F3B3FE8"
 			x: 7.0d
-			y: 33.025d
+			y: 33.375d
 			icon: {
 				id: "minecraft:warped_fungus"
 				count: 1
@@ -699,7 +700,7 @@
 		{
 			id: "2150A004C512D253"
 			x: 9.5d
-			y: 32.775d
+			y: 33.125d
 			icon: {
 				id: "biomesoplenty:rose_quartz_chunk"
 				count: 1
@@ -730,7 +731,7 @@
 		{
 			id: "403CF2A90894462C"
 			x: 2.75d
-			y: 9.225000000000001d
+			y: 9.575000000000001d
 			icon: {
 				id: "minecraft:ghast_tear"
 				count: 1
@@ -769,7 +770,7 @@
 		{
 			id: "6C80C675E18AF462"
 			x: 2.25d
-			y: 36.475d
+			y: 36.825d
 			icon: {
 				id: "minecraft:porkchop"
 				count: 1
@@ -800,7 +801,7 @@
 		{
 			id: "2F59991ADFDD40F2"
 			x: 9.5d
-			y: 34.625d
+			y: 34.975d
 			icon: {
 				id: "minecraft:warped_fungus_on_a_stick"
 				count: 1
@@ -837,7 +838,7 @@
 		{
 			id: "4313FC57036C08F2"
 			x: 0.25d
-			y: 22.775d
+			y: 23.125d
 			icon: {
 				id: "minecraft:nether_bricks"
 				count: 1
@@ -879,7 +880,7 @@
 		{
 			id: "5891582657C05B8A"
 			x: 3.125d
-			y: 22.9d
+			y: 23.25d
 			icon: {
 				id: "minecraft:blaze_rod"
 				count: 1
@@ -931,7 +932,7 @@
 		{
 			id: "2DDE69DD79E59127"
 			x: 6.25d
-			y: 23.025d
+			y: 23.375d
 			icon: {
 				id: "create:blaze_burner"
 				count: 1
@@ -977,7 +978,7 @@
 		{
 			id: "4E45E68481EC6D3E"
 			x: 3.125d
-			y: 27.224999999999998d
+			y: 27.575d
 			dependencies: [
 				"4313FC57036C08F2"
 			]
@@ -1007,7 +1008,7 @@
 		{
 			id: "53598BFDD376FB7D"
 			x: 6.25d
-			y: 27.224999999999998d
+			y: 27.575d
 			icon: {
 				id: "minecraft:brewing_stand"
 				count: 1
@@ -1050,7 +1051,7 @@
 		{
 			id: "503C6BA0D59469CB"
 			x: 3.125d
-			y: 24.875d
+			y: 25.225d
 			icon: {
 				id: "minecraft:wither_skeleton_skull"
 				count: 1
@@ -1090,7 +1091,7 @@
 		{
 			id: "67767F8673273C00"
 			x: 6.25d
-			y: 25.125d
+			y: 25.475d
 			icon: {
 				id: "minecraft:nether_star"
 				count: 1
@@ -1137,7 +1138,7 @@
 		{
 			id: "19EA6DAA0CE81B6C"
 			x: 0.0d
-			y: 46.574999999999996d
+			y: 46.92499999999999d
 			icon: {
 				id: "minecraft:gold_ingot"
 				count: 1
@@ -1169,7 +1170,7 @@
 		{
 			id: "299C84C4C154CDCB"
 			x: 2.5d
-			y: 46.824999999999996d
+			y: 47.17499999999999d
 			icon: {
 				id: "minecraft:gilded_blackstone"
 				count: 1
@@ -1215,7 +1216,7 @@
 		{
 			id: "5F3895B47878B595"
 			x: 5.375d
-			y: 46.949999999999996d
+			y: 47.29999999999999d
 			icon: {
 				id: "minecraft:ancient_debris"
 				count: 1
@@ -1261,7 +1262,7 @@
 		{
 			id: "55C7983DEA86CE05"
 			x: 8.0d
-			y: 46.574999999999996d
+			y: 46.92499999999999d
 			icon: {
 				id: "minecraft:netherite_ingot"
 				count: 1
@@ -1292,7 +1293,7 @@
 		{
 			id: "10E321A328F2FFE3"
 			x: 0.25d
-			y: 41.775d
+			y: 42.12499999999999d
 			icon: {
 				id: "minecraft:chiseled_polished_blackstone"
 				count: 1
@@ -1324,7 +1325,7 @@
 		{
 			id: "581F00E6AA61DA37"
 			x: 2.75d
-			y: 41.525d
+			y: 41.87499999999999d
 			icon: {
 				id: "minecraft:polished_blackstone_bricks"
 				count: 1
@@ -1359,7 +1360,7 @@
 		{
 			id: "326EB49B64046721"
 			x: 0.25d
-			y: 51.99999999999999d
+			y: 52.34999999999999d
 			icon: {
 				id: "minecraft:blaze_powder"
 				count: 1
@@ -1396,7 +1397,7 @@
 		{
 			id: "48B0D1BFA29C5682"
 			x: 2.75d
-			y: 51.74999999999999d
+			y: 52.09999999999999d
 			icon: {
 				id: "cataclysm:flame_eye"
 				count: 1
@@ -1432,7 +1433,7 @@
 		{
 			id: "70624AB6F4B0554A"
 			x: 5.0d
-			y: 51.74999999999999d
+			y: 52.09999999999999d
 			icon: {
 				id: "cataclysm:burning_ashes"
 				count: 1
@@ -1477,7 +1478,7 @@
 		{
 			id: "3746F93CEBAB57B1"
 			x: 7.75d
-			y: 52.24999999999999d
+			y: 52.59999999999999d
 			icon: {
 				id: "cataclysm:ignitium_ingot"
 				count: 1
@@ -1520,7 +1521,7 @@
 		{
 			id: "2AB3983F2812DCDC"
 			x: 10.5d
-			y: 51.74999999999999d
+			y: 52.09999999999999d
 			icon: {
 				id: "cataclysm:ignitium_helmet"
 				count: 1
@@ -1560,7 +1561,7 @@
 		{
 			id: "33E8181BC27158DC"
 			x: 10.5d
-			y: 53.849999999999994d
+			y: 54.19999999999999d
 			icon: {
 				id: "cataclysm:monstrous_eye"
 				count: 1
@@ -1598,7 +1599,7 @@
 		{
 			id: "302B5E8A68ED44DD"
 			x: 13.25d
-			y: 52.24999999999999d
+			y: 52.59999999999999d
 			icon: {
 				id: "cataclysm:infernal_forge"
 				count: 1
@@ -1641,7 +1642,7 @@
 		{
 			id: "5C7F097F734DF56F"
 			x: 16.0d
-			y: 51.74999999999999d
+			y: 52.09999999999999d
 			icon: {
 				id: "cataclysm:monstrous_helm"
 				count: 1
@@ -1681,7 +1682,7 @@
 		{
 			id: "3E476F6BD11012E2"
 			x: 9.75d
-			y: 23.275d
+			y: 23.625d
 			icon: {
 				id: "minecraft:blaze_powder"
 				count: 1
@@ -1749,10 +1750,10 @@
 		{
 			id: "11276E88D2E6D57F"
 			image: "kronwerke:textures/quests/nether/title.png"
-			x: 3.18d
+			x: 4.19d
 			y: 0.0d
-			width: 7.36d
-			height: 1.75d
+			width: 9.38d
+			height: 2.45d
 			rotation: 0.0d
 			order: 1
 		}
@@ -1760,7 +1761,7 @@
 			id: "46C8D1540039F849"
 			image: "kronwerke:textures/quests/nether/arrival.png"
 			x: 0.9650000000000001d
-			y: 6.025000000000001d
+			y: 6.375000000000001d
 			width: 2.93d
 			height: 0.9d
 			rotation: 0.0d
@@ -1770,7 +1771,7 @@
 			id: "46BFABE29A4E9549"
 			image: "kronwerke:textures/quests/nether/resources.png"
 			x: 1.21d
-			y: 14.775d
+			y: 15.125000000000002d
 			width: 3.42d
 			height: 0.9d
 			rotation: 0.0d
@@ -1780,7 +1781,7 @@
 			id: "2B4A57D5DD7E02CB"
 			image: "kronwerke:textures/quests/nether/fortresses.png"
 			x: 1.255d
-			y: 21.174999999999997d
+			y: 21.525d
 			width: 3.51d
 			height: 0.9d
 			rotation: 0.0d
@@ -1790,7 +1791,7 @@
 			id: "2F80E3DC53DE8A39"
 			image: "kronwerke:textures/quests/nether/biomes.png"
 			x: 0.53d
-			y: 31.424999999999997d
+			y: 31.775d
 			width: 2.06d
 			height: 0.9d
 			rotation: 0.0d
@@ -1800,7 +1801,7 @@
 			id: "27E757FDE245D8E2"
 			image: "kronwerke:textures/quests/nether/structures.png"
 			x: 1.205d
-			y: 40.175000000000004d
+			y: 40.525d
 			width: 3.41d
 			height: 0.9d
 			rotation: 0.0d
@@ -1810,7 +1811,7 @@
 			id: "2A09BB9F75C31234"
 			image: "kronwerke:textures/quests/nether/bastions.png"
 			x: 1.2d
-			y: 45.225d
+			y: 45.574999999999996d
 			width: 3.4d
 			height: 0.9d
 			rotation: 0.0d
@@ -1820,7 +1821,7 @@
 			id: "6DA0029C70B7CFE5"
 			image: "kronwerke:textures/quests/nether/bosses.png"
 			x: 0.5149999999999999d
-			y: 50.4d
+			y: 50.74999999999999d
 			width: 2.03d
 			height: 0.9d
 			rotation: 0.0d

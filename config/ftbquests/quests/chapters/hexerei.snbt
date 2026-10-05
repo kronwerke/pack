@@ -13,13 +13,14 @@
 		{
 			id: "448228BD326C7E34"
 			x: 0.5d
-			y: 2.6d
+			y: 2.96d
 			icon: {
 				id: "hexerei:book_of_shadows"
 				count: 1
 			}
 			size: 2.0d
 			shape: "hexagon"
+			hide_dependent_lines: true
 			tasks: [
 				{
 					id: "2483EFEEAEB10394"
@@ -51,7 +52,7 @@
 		{
 			id: "590AEE3D4B76B666"
 			x: 3.25d
-			y: 2.1d
+			y: 2.46d
 			icon: {
 				id: "hexerei:animal_fat"
 				count: 1
@@ -85,7 +86,7 @@
 		{
 			id: "780E0900D2373001"
 			x: 3.25d
-			y: 6.300000000000001d
+			y: 6.66d
 			icon: {
 				id: "hexerei:book_of_shadows_altar"
 				count: 1
@@ -116,7 +117,7 @@
 		{
 			id: "271428BF38732875"
 			x: 0.0d
-			y: 11.600000000000001d
+			y: 11.960000000000003d
 			icon: {
 				id: "hexerei:dowsing_rod"
 				count: 1
@@ -151,7 +152,7 @@
 		{
 			id: "63B98263B476A026"
 			x: 3.25d
-			y: 4.2d
+			y: 4.5600000000000005d
 			icon: {
 				id: "hexerei:selenite_shard"
 				count: 1
@@ -182,11 +183,12 @@
 		{
 			id: "7274747BA1993556"
 			x: 2.25d
-			y: 11.600000000000001d
+			y: 11.960000000000003d
 			icon: {
 				id: "hexerei:mandrake_flowers"
 				count: 1
 			}
+			hide_dependent_lines: true
 			dependencies: [
 				"271428BF38732875"
 			]
@@ -248,7 +250,7 @@
 		{
 			id: "2210ED2A8D9BD49A"
 			x: 4.5d
-			y: 11.600000000000001d
+			y: 11.960000000000003d
 			icon: {
 				id: "hexerei:mandrake_root"
 				count: 1
@@ -291,7 +293,7 @@
 		{
 			id: "315BD29D3E7DF517"
 			x: 4.5d
-			y: 13.200000000000001d
+			y: 13.560000000000002d
 			icon: {
 				id: "hexerei:belladonna_berries"
 				count: 1
@@ -334,7 +336,7 @@
 		{
 			id: "617C3AFAEF929D13"
 			x: 4.5d
-			y: 14.8d
+			y: 15.160000000000004d
 			icon: {
 				id: "hexerei:mugwort_flowers"
 				count: 1
@@ -377,7 +379,7 @@
 		{
 			id: "13B1AD70D0753150"
 			x: 4.5d
-			y: 16.400000000000002d
+			y: 16.760000000000005d
 			icon: {
 				id: "hexerei:yellow_dock_flowers"
 				count: 1
@@ -420,7 +422,7 @@
 		{
 			id: "7CD7F18DC4EE3DD4"
 			x: 2.25d
-			y: 13.200000000000001d
+			y: 13.560000000000002d
 			icon: {
 				id: "hexerei:willow_log"
 				count: 1
@@ -463,7 +465,7 @@
 		{
 			id: "15DF5F6346BEB7E0"
 			x: 0.375d
-			y: 21.575d
+			y: 21.935000000000002d
 			icon: {
 				id: "hexerei:mixing_cauldron"
 				count: 1
@@ -509,7 +511,7 @@
 		{
 			id: "1985BAF435D6A8A8"
 			x: 3.0d
-			y: 21.2d
+			y: 21.560000000000002d
 			icon: {
 				id: "hexerei:tallow_bottle"
 				count: 1
@@ -543,7 +545,7 @@
 		{
 			id: "62AB82D6E5AA08DF"
 			x: 5.25d
-			y: 21.2d
+			y: 21.560000000000002d
 			icon: {
 				id: "hexerei:candle_dipper"
 				count: 1
@@ -577,7 +579,7 @@
 		{
 			id: "5E515F5CD5128504"
 			x: 7.5d
-			y: 21.2d
+			y: 21.560000000000002d
 			icon: {
 				id: "hexerei:candle"
 				count: 1
@@ -616,7 +618,7 @@
 		{
 			id: "3876D429D5CE1277"
 			x: 9.75d
-			y: 21.2d
+			y: 21.560000000000002d
 			icon: {
 				id: "hexerei:candelabra"
 				count: 1
@@ -651,11 +653,12 @@
 		{
 			id: "7952E48CECDB3BEC"
 			x: 9.75d
-			y: 23.175d
+			y: 23.535000000000004d
 			icon: {
 				id: "minecraft:potion"
 				count: 1
 			}
+			hide_dependent_lines: true
 			dependencies: [
 				"5E515F5CD5128504"
 			]
@@ -685,7 +688,7 @@
 		{
 			id: "3AE12336FF9ED04E"
 			x: 3.0d
-			y: 23.175d
+			y: 23.535000000000004d
 			icon: {
 				id: "hexerei:blood_sigil"
 				count: 1
@@ -733,7 +736,7 @@
 		{
 			id: "46D89965516574CE"
 			x: 5.25d
-			y: 23.175d
+			y: 23.535000000000004d
 			icon: {
 				id: "hexerei:herb_jar"
 				count: 1
@@ -768,7 +771,7 @@
 		{
 			id: "503AABEE9CC92494"
 			x: 7.5d
-			y: 23.175d
+			y: 23.535000000000004d
 			icon: {
 				id: "hexerei:coffer"
 				count: 1
@@ -803,7 +806,7 @@
 		{
 			id: "3F108701026EFF92"
 			x: 7.5d
-			y: 25.15d
+			y: 25.51d
 			icon: {
 				id: "hexerei:small_satchel"
 				count: 1
@@ -838,7 +841,7 @@
 		{
 			id: "22C1332ED7FAEE7F"
 			x: 9.75d
-			y: 25.15d
+			y: 25.51d
 			icon: {
 				id: "hexerei:witch_helmet"
 				count: 1
@@ -896,7 +899,7 @@
 		{
 			id: "1438A506F83E986D"
 			x: 3.0d
-			y: 25.15d
+			y: 25.51d
 			icon: {
 				id: "hexerei:crystal_ball"
 				count: 1
@@ -931,7 +934,7 @@
 		{
 			id: "3D0C2C9B2F0E878A"
 			x: 0.0d
-			y: 34.275d
+			y: 34.635d
 			icon: {
 				id: "hexerei:herb_drying_rack"
 				count: 1
@@ -966,7 +969,7 @@
 		{
 			id: "314242C058D73400"
 			x: 2.25d
-			y: 34.275d
+			y: 34.635d
 			icon: {
 				id: "hexerei:dried_mandrake_flowers"
 				count: 1
@@ -996,7 +999,7 @@
 		{
 			id: "2AF19A157D9CAAE2"
 			x: 4.5d
-			y: 34.275d
+			y: 34.635d
 			icon: {
 				id: "hexerei:pestle_and_mortar"
 				count: 1
@@ -1030,7 +1033,7 @@
 		{
 			id: "77E2BA7E6004DF15"
 			x: 7.0d
-			y: 34.275d
+			y: 34.635d
 			icon: {
 				id: "hexerei:mindful_trance_blend"
 				count: 1
@@ -1061,7 +1064,7 @@
 		{
 			id: "5117E9E50A8546C5"
 			x: 2.25d
-			y: 36.125d
+			y: 36.485d
 			icon: {
 				id: "hexerei:sage"
 				count: 1
@@ -1095,7 +1098,7 @@
 		{
 			id: "3828F18000825CC2"
 			x: 4.5d
-			y: 37.975d
+			y: 38.335d
 			icon: {
 				id: "hexerei:dried_sage_bundle"
 				count: 1
@@ -1129,7 +1132,7 @@
 		{
 			id: "759DFB18CD053CE6"
 			x: 7.0d
-			y: 38.225d
+			y: 38.585d
 			icon: {
 				id: "hexerei:sage_burning_plate"
 				count: 1
@@ -1166,7 +1169,7 @@
 		{
 			id: "27809909862773DA"
 			x: 7.0d
-			y: 36.125d
+			y: 36.485d
 			icon: {
 				id: "hexerei:seed_mixture"
 				count: 1
@@ -1200,7 +1203,7 @@
 		{
 			id: "618E9D2E071570EF"
 			x: 12.0d
-			y: 21.2d
+			y: 21.560000000000002d
 			icon: {
 				id: "minecraft:blaze_powder"
 				count: 1
@@ -1229,7 +1232,7 @@
 		{
 			id: "2E932C385529C7CC"
 			x: 12.0d
-			y: 23.175d
+			y: 23.535000000000004d
 			icon: {
 				id: "minecraft:sugar"
 				count: 1
@@ -1258,7 +1261,7 @@
 		{
 			id: "20AE535EE804F883"
 			x: 12.0d
-			y: 25.15d
+			y: 25.51d
 			icon: {
 				id: "minecraft:magma_cream"
 				count: 1
@@ -1287,7 +1290,7 @@
 		{
 			id: "32352D5A1345019C"
 			x: 12.0d
-			y: 27.125d
+			y: 27.485000000000003d
 			icon: {
 				id: "minecraft:glowstone_dust"
 				count: 1
@@ -1316,7 +1319,7 @@
 		{
 			id: "2AE4542C3AE5DBDB"
 			x: 12.0d
-			y: 29.1d
+			y: 29.46d
 			icon: {
 				id: "minecraft:fermented_spider_eye"
 				count: 1
@@ -1346,7 +1349,7 @@
 		{
 			id: "17C91AA3D7D43887"
 			x: 0.0d
-			y: 49.825d
+			y: 50.185d
 			icon: {
 				id: "hexerei:broom_brush"
 				count: 1
@@ -1381,7 +1384,7 @@
 		{
 			id: "1594B2996DD40ED9"
 			x: 2.75d
-			y: 50.325d
+			y: 50.685d
 			icon: {
 				id: "hexerei:willow_broom"
 				count: 1
@@ -1420,7 +1423,7 @@
 		{
 			id: "26ECA6444DDF8B64"
 			x: 5.75d
-			y: 49.825d
+			y: 50.185d
 			icon: {
 				id: "hexerei:herb_enhanced_broom_brush"
 				count: 1
@@ -1451,7 +1454,7 @@
 		{
 			id: "6CB96BE277CE5B5E"
 			x: 8.25d
-			y: 49.825d
+			y: 50.185d
 			icon: {
 				id: "hexerei:moon_dust_brush"
 				count: 1
@@ -1486,7 +1489,7 @@
 		{
 			id: "416366C37FD4E2B3"
 			x: 5.75d
-			y: 54.525000000000006d
+			y: 54.885000000000005d
 			icon: {
 				id: "hexerei:witch_hazel_broom"
 				count: 1
@@ -1521,7 +1524,7 @@
 		{
 			id: "58753FE55EDBEE1B"
 			x: 5.75d
-			y: 52.425000000000004d
+			y: 52.785000000000004d
 			icon: {
 				id: "hexerei:mahogany_broom"
 				count: 1
@@ -1558,7 +1561,7 @@
 		{
 			id: "1518C78A930F0F34"
 			x: 8.25d
-			y: 52.175000000000004d
+			y: 52.535000000000004d
 			icon: {
 				id: "hexerei:broom_netherite_tip"
 				count: 1
@@ -1588,7 +1591,7 @@
 		{
 			id: "596ADDFDC00D322E"
 			x: 0.25d
-			y: 43.275d
+			y: 43.635d
 			icon: {
 				id: "hexerei:crow_flute"
 				count: 1
@@ -1629,7 +1632,7 @@
 		{
 			id: "7FE94C618861F9CC"
 			x: 2.75d
-			y: 44.875d
+			y: 45.235d
 			icon: {
 				id: "hexerei:crow_blank_amulet"
 				count: 1
@@ -1664,7 +1667,7 @@
 		{
 			id: "60A6208CE0ADDB45"
 			x: 2.75d
-			y: 43.025d
+			y: 43.385d
 			icon: {
 				id: "hexerei:courier_package"
 				count: 1
@@ -1713,7 +1716,7 @@
 		{
 			id: "26AB1A4423157CE6"
 			x: 11.25d
-			y: 50.575d
+			y: 50.935d
 			icon: {
 				id: "hexerei:mixing_cauldron"
 				count: 1
@@ -1764,10 +1767,10 @@
 		{
 			id: "2153DCDCFE821624"
 			image: "kronwerke:textures/quests/hexerei/title.png"
-			x: 2.095d
+			x: 3.05d
 			y: 0.0d
-			width: 5.19d
-			height: 1.8d
+			width: 7.1d
+			height: 2.52d
 			rotation: 0.0d
 			order: 1
 		}
@@ -1775,7 +1778,7 @@
 			id: "3F729595804CC377"
 			image: "kronwerke:textures/quests/hexerei/hexenkunst.png"
 			x: 1.475d
-			y: 10.25d
+			y: 10.610000000000001d
 			width: 3.95d
 			height: 0.9d
 			rotation: 0.0d
@@ -1785,7 +1788,7 @@
 			id: "3EFC4E85877FA166"
 			image: "kronwerke:textures/quests/hexerei/kessel.png"
 			x: 2.255d
-			y: 19.849999999999998d
+			y: 20.21d
 			width: 5.51d
 			height: 0.9d
 			rotation: 0.0d
@@ -1795,7 +1798,7 @@
 			id: "35A142E1635474D9"
 			image: "kronwerke:textures/quests/hexerei/kraeuter.png"
 			x: 1.5950000000000002d
-			y: 32.925000000000004d
+			y: 33.285000000000004d
 			width: 4.19d
 			height: 0.9d
 			rotation: 0.0d
@@ -1805,7 +1808,7 @@
 			id: "2D0B7951AE1E9CB8"
 			image: "kronwerke:textures/quests/hexerei/vertraute.png"
 			x: 1.23d
-			y: 41.675000000000004d
+			y: 42.035000000000004d
 			width: 3.46d
 			height: 0.9d
 			rotation: 0.0d
@@ -1815,7 +1818,7 @@
 			id: "4FCFFA2F442A4A1F"
 			image: "kronwerke:textures/quests/hexerei/kerzen.png"
 			x: 1.36d
-			y: 48.525d
+			y: 48.885d
 			width: 3.72d
 			height: 0.8d
 			rotation: 0.0d

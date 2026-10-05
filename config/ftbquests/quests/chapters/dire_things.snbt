@@ -13,7 +13,7 @@
 		{
 			id: "258F3B682E550EF2"
 			x: 0.5d
-			y: 2.575d
+			y: 2.925d
 			icon: {
 				id: "justdirethings:gooblock_tier1"
 				count: 1
@@ -51,7 +51,7 @@
 		{
 			id: "7E1BE432C8DB6E50"
 			x: 0.0d
-			y: 21.675d
+			y: 22.025000000000002d
 			icon: {
 				id: "justdirethings:raw_ferricore"
 				count: 1
@@ -91,7 +91,7 @@
 		{
 			id: "7471697E85315437"
 			x: 2.25d
-			y: 21.675d
+			y: 22.025000000000002d
 			icon: {
 				id: "justdirethings:ferricore_ingot"
 				count: 1
@@ -130,7 +130,7 @@
 		{
 			id: "7F0E750CD5DC2AA1"
 			x: 0.0d
-			y: 23.525000000000002d
+			y: 23.875000000000004d
 			icon: {
 				id: "justdirethings:coal_t1"
 				count: 1
@@ -170,7 +170,7 @@
 		{
 			id: "6419F71C4889F09D"
 			x: 2.25d
-			y: 23.525000000000002d
+			y: 23.875000000000004d
 			icon: {
 				id: "justdirethings:gooblock_tier2"
 				count: 1
@@ -214,7 +214,7 @@
 		{
 			id: "4989628BEC9FD746"
 			x: 4.75d
-			y: 21.925d
+			y: 22.275000000000002d
 			icon: {
 				id: "justdirethings:blazegold_ingot"
 				count: 1
@@ -260,7 +260,7 @@
 		{
 			id: "2476CE04E449338C"
 			x: 4.75d
-			y: 23.525000000000002d
+			y: 23.875000000000004d
 			icon: {
 				id: "justdirethings:coal_t2"
 				count: 1
@@ -296,7 +296,7 @@
 		{
 			id: "322E1E0595ABED73"
 			x: 0.0d
-			y: 7.375000000000001d
+			y: 7.7250000000000005d
 			hide_dependency_lines: true
 			dependencies: [
 				"7471697E85315437"
@@ -332,11 +332,12 @@
 		{
 			id: "208E02F95486BC7D"
 			x: 2.25d
-			y: 7.375000000000001d
+			y: 7.7250000000000005d
 			icon: {
 				id: "justdirethings:upgrade_blank"
 				count: 1
 			}
+			hide_dependent_lines: true
 			dependencies: [
 				"322E1E0595ABED73"
 			]
@@ -366,7 +367,7 @@
 		{
 			id: "55173FA1D9E683F8"
 			x: 4.5d
-			y: 7.375000000000001d
+			y: 7.7250000000000005d
 			icon: {
 				id: "justdirethings:upgrade_oreminer"
 				count: 1
@@ -405,7 +406,7 @@
 		{
 			id: "5440DEEC6D2A6496"
 			x: 4.5d
-			y: 9.225000000000001d
+			y: 9.575000000000001d
 			icon: {
 				id: "justdirethings:upgrade_orescanner"
 				count: 1
@@ -444,7 +445,7 @@
 		{
 			id: "23355607F2145B57"
 			x: 7.0d
-			y: 7.375000000000001d
+			y: 7.7250000000000005d
 			icon: {
 				id: "justdirethings:ferricore_pickaxe"
 				count: 1
@@ -470,7 +471,7 @@
 		{
 			id: "2A692A4F13D1A05C"
 			x: 4.5d
-			y: 11.075000000000001d
+			y: 11.425d
 			icon: {
 				id: "justdirethings:ferricore_axe"
 				count: 1
@@ -527,7 +528,7 @@
 		{
 			id: "1ABA02C2563297F6"
 			x: 4.5d
-			y: 12.925d
+			y: 13.275000000000002d
 			icon: {
 				id: "justdirethings:ferricore_shovel"
 				count: 1
@@ -566,7 +567,7 @@
 		{
 			id: "2F4026AC59803510"
 			x: 4.5d
-			y: 14.775000000000002d
+			y: 15.125d
 			icon: {
 				id: "justdirethings:ferricore_sword"
 				count: 1
@@ -614,7 +615,7 @@
 		{
 			id: "3A1AA854F1841139"
 			x: 4.5d
-			y: 16.625d
+			y: 16.975d
 			icon: {
 				id: "justdirethings:ferricore_chestplate"
 				count: 1
@@ -667,7 +668,7 @@
 		{
 			id: "6A93D87D730FE408"
 			x: 7.0d
-			y: 9.475000000000001d
+			y: 9.825000000000001d
 			icon: {
 				id: "justdirethings:template_blazegold"
 				count: 1
@@ -723,7 +724,7 @@
 		{
 			id: "3381A3C719E9B490"
 			x: 0.25d
-			y: 28.825d
+			y: 29.175d
 			icon: {
 				id: "justdirethings:generatort1"
 				count: 1
@@ -770,7 +771,7 @@
 		{
 			id: "6E88EA9560076981"
 			x: 2.75d
-			y: 30.425d
+			y: 30.775000000000002d
 			icon: {
 				id: "justdirethings:pocket_generator"
 				count: 1
@@ -809,7 +810,7 @@
 		{
 			id: "4654581A43834892"
 			x: 0.25d
-			y: 32.275d
+			y: 32.625d
 			icon: {
 				id: "justdirethings:blockbreakert1"
 				count: 1
@@ -849,7 +850,7 @@
 		{
 			id: "4B9042DBF504BABB"
 			x: 2.75d
-			y: 32.275d
+			y: 32.625d
 			icon: {
 				id: "justdirethings:blockplacert1"
 				count: 1
@@ -888,7 +889,7 @@
 		{
 			id: "758BB8B008C59E1B"
 			x: 5.25d
-			y: 30.425d
+			y: 30.775000000000002d
 			icon: {
 				id: "justdirethings:droppert1"
 				count: 1
@@ -927,7 +928,7 @@
 		{
 			id: "40C0C0197F80B5B4"
 			x: 7.75d
-			y: 28.575d
+			y: 28.925d
 			icon: {
 				id: "justdirethings:sensort1"
 				count: 1
@@ -966,7 +967,7 @@
 		{
 			id: "1931ED5B42A4DB77"
 			x: 10.0d
-			y: 28.575d
+			y: 28.925d
 			icon: {
 				id: "justdirethings:clickert1"
 				count: 1
@@ -1005,7 +1006,7 @@
 		{
 			id: "2AF3D2BE896174C2"
 			x: 0.0d
-			y: 37.324999999999996d
+			y: 37.675d
 			icon: {
 				id: "justdirethings:itemcollector"
 				count: 1
@@ -1050,7 +1051,7 @@
 		{
 			id: "246711927734B9C2"
 			x: 2.75d
-			y: 28.575d
+			y: 28.925d
 			icon: {
 				id: "justdirethings:generatorfluidt1"
 				count: 1
@@ -1094,7 +1095,7 @@
 		{
 			id: "749C9E514BE7D62F"
 			x: 5.25d
-			y: 28.825d
+			y: 29.175d
 			icon: {
 				id: "justdirethings:portalgun"
 				count: 1
@@ -1140,7 +1141,7 @@
 		{
 			id: "3498BD79F8814B33"
 			x: 10.0d
-			y: 30.425d
+			y: 30.775000000000002d
 			icon: {
 				id: "justdirethings:blockswappert1"
 				count: 1
@@ -1197,7 +1198,7 @@
 		{
 			id: "607C4773D367465D"
 			x: 3.0d
-			y: 38.074999999999996d
+			y: 38.425d
 			icon: {
 				id: "justdirethings:ferricore_block"
 				count: 1
@@ -1252,7 +1253,7 @@
 		{
 			id: "192FB7D25FFEA23C"
 			x: 6.0d
-			y: 37.324999999999996d
+			y: 37.675d
 			icon: {
 				id: "justdirethings:gooblock_tier2"
 				count: 1
@@ -1280,10 +1281,10 @@
 		{
 			id: "5BBCC5F09C31B03C"
 			image: "kronwerke:textures/quests/dire_things/title.png"
-			x: 4.92d
+			x: 6.05d
 			y: 0.0d
-			width: 10.84d
-			height: 1.75d
+			width: 13.1d
+			height: 2.45d
 			rotation: 0.0d
 			order: 1
 		}
@@ -1291,7 +1292,7 @@
 			id: "1872A41CAFA7481D"
 			image: "kronwerke:textures/quests/dire_things/tools.png"
 			x: 3.465d
-			y: 6.025000000000001d
+			y: 6.375000000000001d
 			width: 7.93d
 			height: 0.9d
 			rotation: 0.0d
@@ -1301,7 +1302,7 @@
 			id: "7F999278BC62DC21"
 			image: "kronwerke:textures/quests/dire_things/goo.png"
 			x: 0.8400000000000001d
-			y: 20.325d
+			y: 20.675d
 			width: 2.68d
 			height: 0.9d
 			rotation: 0.0d
@@ -1311,7 +1312,7 @@
 			id: "6ED51371433E4B7A"
 			image: "kronwerke:textures/quests/dire_things/machines.png"
 			x: 1.34d
-			y: 27.224999999999998d
+			y: 27.575d
 			width: 3.68d
 			height: 0.9d
 			rotation: 0.0d
@@ -1321,7 +1322,7 @@
 			id: "75CD6538B65A0842"
 			image: "kronwerke:textures/quests/dire_things/factory.png"
 			x: 2.175d
-			y: 35.975d
+			y: 36.325d
 			width: 5.35d
 			height: 0.9d
 			rotation: 0.0d

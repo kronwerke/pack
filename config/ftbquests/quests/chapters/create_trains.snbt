@@ -7,13 +7,13 @@
 	}
 	group: "4EAA9718BAF5A32A"
 	order_index: 15
-	default_quest_shape: "gear"
+	default_quest_shape: "circle"
 	default_hide_dependency_lines: false
 	quests: [
 		{
 			id: "237F2F27DF3947E6"
 			x: 0.5d
-			y: 2.5d
+			y: 2.8200000000000003d
 			icon: {
 				id: "create:track"
 				count: 1
@@ -47,7 +47,7 @@
 		{
 			id: "6A354EC0C917FB13"
 			x: 0.0d
-			y: 7.3d
+			y: 7.62d
 			icon: {
 				id: "create:track"
 				count: 1
@@ -83,7 +83,7 @@
 		{
 			id: "16E57009060AEC86"
 			x: 3.25d
-			y: 2.0d
+			y: 2.3200000000000003d
 			dependencies: [
 				"237F2F27DF3947E6"
 			]
@@ -118,7 +118,7 @@
 		{
 			id: "708941A82D1AB8D8"
 			x: 2.25d
-			y: 7.3d
+			y: 7.62d
 			icon: {
 				id: "minecraft:obsidian"
 				count: 1
@@ -144,7 +144,7 @@
 		{
 			id: "162A01626BD35D4C"
 			x: 0.0d
-			y: 26.400000000000002d
+			y: 26.720000000000002d
 			hide_dependency_lines: true
 			dependencies: [
 				"237F2F27DF3947E6"
@@ -180,7 +180,7 @@
 		{
 			id: "75252D5A74788A46"
 			x: 2.25d
-			y: 26.400000000000002d
+			y: 26.720000000000002d
 			dependencies: [
 				"162A01626BD35D4C"
 			]
@@ -215,7 +215,7 @@
 		{
 			id: "5FC39F15F47658CE"
 			x: 4.5d
-			y: 26.400000000000002d
+			y: 26.720000000000002d
 			dependencies: [
 				"75252D5A74788A46"
 			]
@@ -250,7 +250,7 @@
 		{
 			id: "1D444AAC25024D92"
 			x: 7.0d
-			y: 26.650000000000002d
+			y: 26.970000000000002d
 			icon: {
 				id: "create:railway_casing"
 				count: 1
@@ -290,7 +290,7 @@
 		{
 			id: "5538FC75A11EA5BA"
 			x: 0.0d
-			y: 31.450000000000003d
+			y: 31.770000000000003d
 			hide_dependency_lines: true
 			dependencies: [
 				"1D444AAC25024D92"
@@ -326,7 +326,7 @@
 		{
 			id: "4140EEBB772BD4AC"
 			x: 2.25d
-			y: 31.450000000000003d
+			y: 31.770000000000003d
 			icon: {
 				id: "create:railway_casing"
 				count: 1
@@ -360,7 +360,7 @@
 		{
 			id: "394F060D274014B2"
 			x: 4.75d
-			y: 31.700000000000003d
+			y: 32.02d
 			icon: {
 				id: "create:controls"
 				count: 1
@@ -397,13 +397,14 @@
 		{
 			id: "3B554A689296B483"
 			x: 7.75d
-			y: 31.950000000000003d
+			y: 32.27d
 			icon: {
 				id: "create:controls"
 				count: 1
 			}
 			size: 2.0d
 			shape: "diamond"
+			hide_dependent_lines: true
 			dependencies: [
 				"394F060D274014B2"
 			]
@@ -433,7 +434,7 @@
 		{
 			id: "416DBD57A4EDBCD1"
 			x: 10.5d
-			y: 31.450000000000003d
+			y: 31.770000000000003d
 			icon: {
 				id: "minecraft:lever"
 				count: 1
@@ -458,7 +459,7 @@
 		{
 			id: "6C0470E74CFDA0DC"
 			x: 10.5d
-			y: 35.650000000000006d
+			y: 35.970000000000006d
 			icon: {
 				id: "create:track_station"
 				count: 1
@@ -483,7 +484,7 @@
 		{
 			id: "2FE76D89B8BB41ED"
 			x: 10.5d
-			y: 37.75d
+			y: 38.07000000000001d
 			optional: true
 			dependencies: [
 				"3B554A689296B483"
@@ -510,13 +511,14 @@
 		{
 			id: "7701AFCD425DC02F"
 			x: 0.25d
-			y: 12.350000000000001d
+			y: 12.670000000000002d
 			icon: {
 				id: "create:schedule"
 				count: 1
 			}
 			size: 1.5d
 			hide_dependency_lines: true
+			hide_dependent_lines: true
 			dependencies: [
 				"3B554A689296B483"
 			]
@@ -547,7 +549,7 @@
 		{
 			id: "5F7DAA47C968585F"
 			x: 2.75d
-			y: 12.100000000000001d
+			y: 12.420000000000002d
 			icon: {
 				id: "create:blaze_burner"
 				count: 1
@@ -572,7 +574,7 @@
 		{
 			id: "290477188DE42ABC"
 			x: 5.25d
-			y: 12.350000000000001d
+			y: 12.670000000000002d
 			icon: {
 				id: "create:track_station"
 				count: 1
@@ -607,7 +609,7 @@
 		{
 			id: "26D99DD63F3E5821"
 			x: 7.75d
-			y: 12.100000000000001d
+			y: 12.420000000000002d
 			optional: true
 			dependencies: [
 				"290477188DE42ABC"
@@ -643,7 +645,7 @@
 		{
 			id: "2F69AF6DB1641D62"
 			x: 2.75d
-			y: 13.950000000000001d
+			y: 14.270000000000001d
 			icon: {
 				id: "create:schedule"
 				count: 1
@@ -669,7 +671,7 @@
 		{
 			id: "69E0EC05B3CAA42C"
 			x: 2.75d
-			y: 15.8d
+			y: 16.12d
 			icon: {
 				id: "create:schedule"
 				count: 1
@@ -695,7 +697,7 @@
 		{
 			id: "71F54037FD20BAE2"
 			x: 2.75d
-			y: 17.650000000000002d
+			y: 17.970000000000002d
 			icon: {
 				id: "create:schedule"
 				count: 1
@@ -721,7 +723,7 @@
 		{
 			id: "4103ABC9164E225E"
 			x: 2.75d
-			y: 19.5d
+			y: 19.82d
 			icon: {
 				id: "create:schedule"
 				count: 1
@@ -747,7 +749,7 @@
 		{
 			id: "554BB902855E5DC6"
 			x: 2.75d
-			y: 21.35d
+			y: 21.67d
 			icon: {
 				id: "create:schedule"
 				count: 1
@@ -773,7 +775,7 @@
 		{
 			id: "1D527FD4BD11E420"
 			x: 10.5d
-			y: 33.550000000000004d
+			y: 33.870000000000005d
 			icon: {
 				id: "create:track_signal"
 				count: 1
@@ -812,7 +814,7 @@
 		{
 			id: "6D1DCCF8FBC15F5C"
 			x: 12.75d
-			y: 31.450000000000003d
+			y: 31.770000000000003d
 			icon: {
 				id: "create:track_signal"
 				count: 1
@@ -838,7 +840,7 @@
 		{
 			id: "6E1640D4F0A6D771"
 			x: 15.0d
-			y: 31.450000000000003d
+			y: 31.770000000000003d
 			optional: true
 			dependencies: [
 				"6D1DCCF8FBC15F5C"
@@ -865,7 +867,7 @@
 		{
 			id: "4EEACBE873E2B758"
 			x: 0.25d
-			y: 43.3d
+			y: 43.62d
 			icon: {
 				id: "create:portable_storage_interface"
 				count: 1
@@ -911,7 +913,7 @@
 		{
 			id: "21F5E8D8D5381565"
 			x: 2.75d
-			y: 44.9d
+			y: 45.22d
 			optional: true
 			dependencies: [
 				"4EEACBE873E2B758"
@@ -947,7 +949,7 @@
 		{
 			id: "5D277AE3F3547F8E"
 			x: 2.75d
-			y: 43.05d
+			y: 43.37d
 			icon: {
 				id: "create:item_vault"
 				count: 1
@@ -979,7 +981,7 @@
 		{
 			id: "4EA52E5BB217772E"
 			x: 2.75d
-			y: 46.75d
+			y: 47.07d
 			icon: {
 				id: "create:white_postbox"
 				count: 1
@@ -1018,7 +1020,7 @@
 		{
 			id: "56EF2EFA989FDA9F"
 			x: 0.0d
-			y: 51.79999999999999d
+			y: 52.12d
 			icon: {
 				id: "create:track_station"
 				count: 1
@@ -1068,18 +1070,18 @@
 		{
 			id: "4CEE4653FDACC0C1"
 			image: "kronwerke:textures/quests/create_trains/title.png"
-			x: 2.83d
+			x: 3.79d
 			y: 0.0d
-			width: 6.66d
-			height: 1.6d
+			width: 8.58d
+			height: 2.24d
 			rotation: 0.0d
 			order: 1
 		}
 		{
 			id: "715F93200771B432"
 			image: "kronwerke:textures/quests/create_trains/stage.png"
-			x: 8.615d
-			y: 0.525d
+			x: 10.535d
+			y: 0.8450000000000001d
 			width: 3.71d
 			height: 0.55d
 			rotation: 0.0d
@@ -1089,7 +1091,7 @@
 			id: "511BAC91D2CC9715"
 			image: "kronwerke:textures/quests/create_trains/track.png"
 			x: 0.5549999999999999d
-			y: 5.95d
+			y: 6.2700000000000005d
 			width: 2.11d
 			height: 0.9d
 			rotation: 0.0d
@@ -1099,7 +1101,7 @@
 			id: "4478211EBA775F7A"
 			image: "kronwerke:textures/quests/create_trains/schedule.png"
 			x: 1.12d
-			y: 10.75d
+			y: 11.07d
 			width: 3.24d
 			height: 0.9d
 			rotation: 0.0d
@@ -1109,7 +1111,7 @@
 			id: "1E02BC9059735A5D"
 			image: "kronwerke:textures/quests/create_trains/trains.png"
 			x: 0.22499999999999998d
-			y: 25.05d
+			y: 25.37d
 			width: 1.45d
 			height: 0.9d
 			rotation: 0.0d
@@ -1119,7 +1121,7 @@
 			id: "535B7036B0526049"
 			image: "kronwerke:textures/quests/create_trains/signals.png"
 			x: 0.7949999999999999d
-			y: 30.1d
+			y: 30.42d
 			width: 2.59d
 			height: 0.9d
 			rotation: 0.0d
@@ -1129,7 +1131,7 @@
 			id: "7E2B09A6247CF037"
 			image: "kronwerke:textures/quests/create_trains/cargo.png"
 			x: 0.6799999999999999d
-			y: 41.7d
+			y: 42.02d
 			width: 2.36d
 			height: 0.9d
 			rotation: 0.0d
@@ -1139,7 +1141,7 @@
 			id: "3A5E1E3F94811A7D"
 			image: "kronwerke:textures/quests/create_trains/goal.png"
 			x: 0.835d
-			y: 50.449999999999996d
+			y: 50.77d
 			width: 2.67d
 			height: 0.9d
 			rotation: 0.0d

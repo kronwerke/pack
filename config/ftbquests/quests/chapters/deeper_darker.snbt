@@ -13,7 +13,7 @@
 		{
 			id: "65112CE2572657C6"
 			x: 0.5d
-			y: 2.575d
+			y: 2.925d
 			icon: {
 				id: "minecraft:sculk"
 				count: 1
@@ -48,7 +48,7 @@
 		{
 			id: "5C7605B8D9AE7222"
 			x: 3.25d
-			y: 2.075d
+			y: 2.425d
 			icon: {
 				id: "minecraft:sculk_sensor"
 				count: 1
@@ -96,7 +96,7 @@
 		{
 			id: "1C73E7DE9BF8CAA8"
 			x: 5.0d
-			y: 7.375000000000001d
+			y: 7.7250000000000005d
 			icon: {
 				id: "minecraft:echo_shard"
 				count: 1
@@ -139,7 +139,7 @@
 		{
 			id: "7056FC6DBFCD7835"
 			x: 0.375d
-			y: 26.475d
+			y: 26.825000000000003d
 			icon: {
 				id: "deeperdarker:heart_of_the_deep"
 				count: 1
@@ -192,7 +192,7 @@
 		{
 			id: "6019E024D0CFA393"
 			x: 3.0d
-			y: 26.1d
+			y: 26.450000000000003d
 			icon: {
 				id: "deeperdarker:reinforced_echo_shard"
 				count: 1
@@ -240,7 +240,7 @@
 		{
 			id: "3126B18D4588AAA3"
 			x: 6.6d
-			y: 7.375000000000001d
+			y: 7.7250000000000005d
 			icon: {
 				id: "minecraft:reinforced_deepslate"
 				count: 1
@@ -282,7 +282,7 @@
 		{
 			id: "79D63CED3782198B"
 			x: 0.375d
-			y: 21.3d
+			y: 21.650000000000002d
 			icon: {
 				id: "deeperdarker:sculk_stone"
 				count: 1
@@ -290,6 +290,7 @@
 			size: 1.75d
 			shape: "hexagon"
 			hide_dependency_lines: true
+			hide_dependent_lines: true
 			dependencies: [
 				"3126B18D4588AAA3"
 			]
@@ -329,7 +330,7 @@
 		{
 			id: "5030F9D7D837F573"
 			x: 0.0d
-			y: 7.375000000000001d
+			y: 7.7250000000000005d
 			icon: {
 				id: "deeperdarker:sculk_gleam"
 				count: 1
@@ -369,7 +370,7 @@
 		{
 			id: "5804CBE7C2BE0961"
 			x: 0.0d
-			y: 12.175000000000002d
+			y: 12.525000000000002d
 			icon: {
 				id: "deeperdarker:echo_log"
 				count: 1
@@ -409,7 +410,7 @@
 		{
 			id: "1A5942A994C46EF6"
 			x: 0.0d
-			y: 14.025000000000002d
+			y: 14.375000000000002d
 			icon: {
 				id: "deeperdarker:bloom_berries"
 				count: 1
@@ -458,7 +459,7 @@
 		{
 			id: "17E9A2D481705080"
 			x: 0.0d
-			y: 15.875000000000004d
+			y: 16.225d
 			icon: {
 				id: "deeperdarker:gloomslate"
 				count: 1
@@ -498,13 +499,14 @@
 		{
 			id: "2CAACEC5BA948074"
 			x: 2.5d
-			y: 14.275000000000002d
+			y: 14.625000000000002d
 			icon: {
 				id: "minecraft:recovery_compass"
 				count: 1
 			}
 			size: 1.5d
 			shape: "diamond"
+			hide_dependency_lines: true
 			dependencies: [
 				"5030F9D7D837F573"
 				"5804CBE7C2BE0961"
@@ -535,7 +537,7 @@
 		{
 			id: "2983E934CA8AEC75"
 			x: 3.0d
-			y: 20.925d
+			y: 21.275000000000002d
 			icon: {
 				id: "deeperdarker:sculk_stone_bricks"
 				count: 1
@@ -583,7 +585,7 @@
 		{
 			id: "6302968036571E8A"
 			x: 5.25d
-			y: 20.925d
+			y: 21.275000000000002d
 			icon: {
 				id: "deeperdarker:gloomslate_light"
 				count: 1
@@ -622,7 +624,7 @@
 		{
 			id: "66D79B61D760D2D0"
 			x: 2.5d
-			y: 12.175000000000002d
+			y: 12.525000000000002d
 			icon: {
 				id: "deeperdarker:echo_planks"
 				count: 1
@@ -670,7 +672,7 @@
 		{
 			id: "2FB7345AABF89207"
 			x: 2.25d
-			y: 7.375000000000001d
+			y: 7.7250000000000005d
 			icon: {
 				id: "deeperdarker:gleam_gel"
 				count: 1
@@ -709,7 +711,7 @@
 		{
 			id: "6BEF9F3B83B02EDA"
 			x: 8.5d
-			y: 26.1d
+			y: 26.450000000000003d
 			icon: {
 				id: "deeperdarker:sculk_snapper_spawn_egg"
 				count: 1
@@ -755,7 +757,7 @@
 		{
 			id: "4256647EF926EB9F"
 			x: 0.375d
-			y: 28.075000000000003d
+			y: 28.425000000000004d
 			icon: {
 				id: "deeperdarker:sculk_bone"
 				count: 1
@@ -797,7 +799,7 @@
 		{
 			id: "4C6EC1A3A1353E98"
 			x: 3.0d
-			y: 28.075000000000003d
+			y: 28.425000000000004d
 			icon: {
 				id: "deeperdarker:infested_sculk"
 				count: 1
@@ -833,7 +835,7 @@
 		{
 			id: "172457095726767C"
 			x: 5.5d
-			y: 26.35d
+			y: 26.700000000000003d
 			icon: {
 				id: "deeperdarker:shriek_worm_spawn_egg"
 				count: 1
@@ -867,7 +869,7 @@
 		{
 			id: "79AF3C572A89ADA2"
 			x: 0.375d
-			y: 33.25d
+			y: 33.6d
 			icon: {
 				id: "deeperdarker:resonarium"
 				count: 1
@@ -913,7 +915,7 @@
 		{
 			id: "605DFC279042734B"
 			x: 0.375d
-			y: 35.6d
+			y: 35.95d
 			icon: {
 				id: "deeperdarker:sculk_stone_tiles"
 				count: 1
@@ -957,7 +959,7 @@
 		{
 			id: "6638841DC971D9F3"
 			x: 3.375d
-			y: 35.6d
+			y: 35.95d
 			icon: {
 				id: "deeperdarker:soul_crystal"
 				count: 1
@@ -1009,7 +1011,7 @@
 		{
 			id: "1A0BED7B0A6A3FBA"
 			x: 3.375d
-			y: 37.45d
+			y: 37.800000000000004d
 			icon: {
 				id: "deeperdarker:sculk_transmitter"
 				count: 1
@@ -1046,7 +1048,7 @@
 		{
 			id: "52365814DA71B494"
 			x: 5.5d
-			y: 28.075000000000003d
+			y: 28.425000000000004d
 			icon: {
 				id: "deeperdarker:soul_dust"
 				count: 1
@@ -1103,7 +1105,7 @@
 		{
 			id: "3AFF728DE116035B"
 			x: 3.375d
-			y: 33.625d
+			y: 33.975d
 			icon: {
 				id: "deeperdarker:resonarium_chestplate"
 				count: 1
@@ -1158,7 +1160,7 @@
 		{
 			id: "3A6736BDD169D06B"
 			x: 0.0d
-			y: 42.37499999999999d
+			y: 42.725d
 			icon: {
 				id: "deeperdarker:sculk_bone"
 				count: 1
@@ -1204,7 +1206,7 @@
 		{
 			id: "60564CC10A27AA74"
 			x: 6.0d
-			y: 33.25d
+			y: 33.6d
 			icon: {
 				id: "deeperdarker:reinforced_echo_shard"
 				count: 1
@@ -1236,10 +1238,10 @@
 		{
 			id: "42FF8591A53A54C6"
 			image: "kronwerke:textures/quests/deeper_darker/title.png"
-			x: 5.735d
+			x: 6.91d
 			y: 0.0d
-			width: 12.47d
-			height: 1.75d
+			width: 14.82d
+			height: 2.45d
 			rotation: 0.0d
 			order: 1
 		}
@@ -1247,7 +1249,7 @@
 			id: "3FB6678AE54B05A9"
 			image: "kronwerke:textures/quests/deeper_darker/way.png"
 			x: 2.43d
-			y: 6.025000000000001d
+			y: 6.375000000000001d
 			width: 5.86d
 			height: 0.9d
 			rotation: 0.0d
@@ -1257,7 +1259,7 @@
 			id: "224497E1772F1FE4"
 			image: "kronwerke:textures/quests/deeper_darker/biomes.png"
 			x: 1.07d
-			y: 10.825000000000001d
+			y: 11.175d
 			width: 3.14d
 			height: 0.9d
 			rotation: 0.0d
@@ -1267,7 +1269,7 @@
 			id: "2D19CF4D2FE26799"
 			image: "kronwerke:textures/quests/deeper_darker/stone.png"
 			x: 1.9249999999999998d
-			y: 19.575d
+			y: 19.925d
 			width: 4.85d
 			height: 0.9d
 			rotation: 0.0d
@@ -1277,7 +1279,7 @@
 			id: "2C74DEFF932B74FE"
 			image: "kronwerke:textures/quests/deeper_darker/mobs.png"
 			x: 2.625d
-			y: 24.75d
+			y: 25.1d
 			width: 6.25d
 			height: 0.9d
 			rotation: 0.0d
@@ -1287,7 +1289,7 @@
 			id: "1009D40DA699E9E7"
 			image: "kronwerke:textures/quests/deeper_darker/temple.png"
 			x: 2.57d
-			y: 31.9d
+			y: 32.25d
 			width: 6.14d
 			height: 0.9d
 			rotation: 0.0d
@@ -1297,7 +1299,7 @@
 			id: "7EA38C1AD4FDD6F9"
 			image: "kronwerke:textures/quests/deeper_darker/souls.png"
 			x: 3.35d
-			y: 41.025d
+			y: 41.37500000000001d
 			width: 7.7d
 			height: 0.9d
 			rotation: 0.0d

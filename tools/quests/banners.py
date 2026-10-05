@@ -34,10 +34,11 @@ def render(text, kind="section", colour="brass"):
     """The lettering as an RGBA image."""
     font = ImageFont.truetype(FONT[kind], SIZE[kind])
     text = text.upper()
-    pad = max(6, SIZE[kind] // 10)
+    padx, pady = pads(kind)
+    pad = pady
     left, top, right, bottom = font.getbbox(text)
-    w, h = right - left + 2 * pad, bottom - top + 2 * pad
-    ox, oy = pad - left, pad - top
+    w, h = right - left + 2 * padx, bottom - top + 2 * pady
+    ox, oy = padx - left, pady - top
 
     mask = Image.new("L", (w, h), 0)
     ImageDraw.Draw(mask).text((ox, oy), text, font=font, fill=255)
@@ -53,6 +54,17 @@ def render(text, kind="section", colour="brass"):
             px[x, y] = c + (255,)
 
     out = Image.new("RGBA", (w, h), (0, 0, 0, 0))
+    if kind == "title":
+        # a dark plate behind chapter titles, like the stone banners of the big packs
+        plate = Image.new("RGBA", (w, h), (0, 0, 0, 0))
+        pd = ImageDraw.Draw(plate)
+        pd.rounded_rectangle((2, 2, w - 3, h - 3), radius=pady, fill=(16, 12, 20, 215), outline=(34, 26, 16, 255), width=5)
+        pd.rounded_rectangle((5, 5, w - 6, h - 6), radius=pady - 3, outline=bottom_c + (255,), width=2)
+        # small rivets in the corners
+        for cx in (12, w - 13):
+            for cy in (12, h - 13):
+                pd.ellipse((cx - 3, cy - 3, cx + 3, cy + 3), fill=top_c + (255,), outline=OUTLINE)
+        out.alpha_composite(plate)
     # outline and a small shadow, then the letters
     stroke = max(2, SIZE[kind] // 24)
     edge = Image.new("L", (w, h), 0)
@@ -62,11 +74,6 @@ def render(text, kind="section", colour="brass"):
     out.paste(Image.new("RGBA", (w, h), (0, 0, 0, 150)), (0, 0), shadow)
     out.paste(Image.new("RGBA", (w, h), OUTLINE), (0, 0), edge)
     out.paste(grad, (0, 0), mask)
-    if kind == "title":
-        # a thin rule under chapter titles
-        d = ImageDraw.Draw(out)
-        y = h - pad // 2
-        d.rectangle((pad, y - 2, w - pad, y), fill=bottom_c + (255,))
     return out
 
 
@@ -78,9 +85,17 @@ def write(path, text, kind, colour):
     return img.size
 
 
+def pads(kind):
+    """Horizontal and vertical padding around the letters."""
+    if kind == "title":
+        return SIZE[kind] // 2, SIZE[kind] // 4
+    pad = max(6, SIZE[kind] // 10)
+    return pad, pad
+
+
 def measure(text, kind):
     """The size render() would produce, without drawing."""
     font = ImageFont.truetype(FONT[kind], SIZE[kind])
-    pad = max(6, SIZE[kind] // 10)
+    padx, pady = pads(kind)
     left, top, right, bottom = font.getbbox(text.upper())
-    return right - left + 2 * pad, bottom - top + 2 * pad
+    return right - left + 2 * padx, bottom - top + 2 * pady

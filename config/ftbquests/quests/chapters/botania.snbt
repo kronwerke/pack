@@ -13,7 +13,7 @@
 		{
 			id: "3B8E811286D510AF"
 			x: 0.5d
-			y: 2.6d
+			y: 2.96d
 			icon: {
 				id: "botania:lexica_botania"
 				count: 1
@@ -51,7 +51,7 @@
 		{
 			id: "6868D3E932E58562"
 			x: 0.0d
-			y: 7.3999999999999995d
+			y: 7.760000000000001d
 			icon: {
 				id: "botania:white_mystical_petal"
 				count: 1
@@ -86,7 +86,7 @@
 		{
 			id: "4459C39EF219EF00"
 			x: 2.5d
-			y: 9.5d
+			y: 9.860000000000001d
 			optional: true
 			dependencies: [
 				"6868D3E932E58562"
@@ -117,7 +117,7 @@
 		{
 			id: "7CB343338207B5C7"
 			x: 2.5d
-			y: 11.6d
+			y: 11.96d
 			optional: true
 			dependencies: [
 				"6868D3E932E58562"
@@ -144,7 +144,7 @@
 		{
 			id: "1760522667E003B6"
 			x: 2.5d
-			y: 13.7d
+			y: 14.060000000000002d
 			icon: {
 				id: "botania:white_shimmering_mushroom"
 				count: 1
@@ -179,7 +179,7 @@
 		{
 			id: "16B19AD46F39E477"
 			x: 2.5d
-			y: 7.6499999999999995d
+			y: 8.010000000000002d
 			icon: {
 				id: "botania:petal_apothecary"
 				count: 1
@@ -224,7 +224,7 @@
 		{
 			id: "1D435C6A3BC3D3CA"
 			x: 5.5d
-			y: 7.8999999999999995d
+			y: 8.260000000000002d
 			icon: {
 				id: "botania:pure_daisy"
 				count: 1
@@ -269,7 +269,7 @@
 		{
 			id: "7E2A3C1AEE32A999"
 			x: 8.25d
-			y: 11.6d
+			y: 11.96d
 			icon: {
 				id: "minecraft:calcite"
 				count: 1
@@ -304,7 +304,7 @@
 		{
 			id: "76EEF29F1CBC1249"
 			x: 8.25d
-			y: 7.3999999999999995d
+			y: 7.760000000000001d
 			icon: {
 				id: "botania:livingwood_log"
 				count: 1
@@ -338,7 +338,7 @@
 		{
 			id: "5FF6E9B7E297083E"
 			x: 8.25d
-			y: 9.5d
+			y: 9.860000000000001d
 			icon: {
 				id: "botania:livingrock"
 				count: 1
@@ -377,7 +377,7 @@
 		{
 			id: "63BFED27B04021F4"
 			x: 10.5d
-			y: 7.3999999999999995d
+			y: 7.760000000000001d
 			icon: {
 				id: "botania:livingwood_twig"
 				count: 1
@@ -411,7 +411,7 @@
 		{
 			id: "1F7281F66B996839"
 			x: 13.0d
-			y: 7.6499999999999995d
+			y: 8.010000000000002d
 			icon: {
 				id: "botania:wand_of_the_forest"
 				count: 1
@@ -452,7 +452,7 @@
 		{
 			id: "2EA8CAAD238C4975"
 			x: 10.5d
-			y: 9.5d
+			y: 9.860000000000001d
 			optional: true
 			dependencies: [
 				"5FF6E9B7E297083E"
@@ -483,7 +483,7 @@
 		{
 			id: "67A177EC4C84D738"
 			x: 0.0d
-			y: 31.599999999999998d
+			y: 31.959999999999997d
 			icon: {
 				id: "botania:endoflame"
 				count: 1
@@ -509,7 +509,7 @@
 		{
 			id: "57432AC486C4BE0B"
 			x: 2.5d
-			y: 31.849999999999998d
+			y: 32.209999999999994d
 			icon: {
 				id: "botania:endoflame"
 				count: 1
@@ -545,7 +545,7 @@
 		{
 			id: "3A860A74987EDCB4"
 			x: 5.375d
-			y: 33.574999999999996d
+			y: 33.934999999999995d
 			icon: {
 				id: "minecraft:charcoal"
 				count: 1
@@ -579,7 +579,7 @@
 		{
 			id: "2896230628F1E72B"
 			x: 2.5d
-			y: 33.574999999999996d
+			y: 33.934999999999995d
 			optional: true
 			dependencies: [
 				"67A177EC4C84D738"
@@ -619,7 +619,7 @@
 		{
 			id: "693A5D6E1304403E"
 			x: 5.375d
-			y: 31.974999999999998d
+			y: 32.334999999999994d
 			icon: {
 				id: "botania:mana_spreader"
 				count: 1
@@ -664,7 +664,7 @@
 		{
 			id: "224479AAA0A4414E"
 			x: 8.0d
-			y: 31.599999999999998d
+			y: 31.959999999999997d
 			dependencies: [
 				"693A5D6E1304403E"
 			]
@@ -703,7 +703,7 @@
 		{
 			id: "57E22FDA80DAE530"
 			x: 10.25d
-			y: 31.599999999999998d
+			y: 31.959999999999997d
 			icon: {
 				id: "minecraft:hopper"
 				count: 1
@@ -737,7 +737,7 @@
 		{
 			id: "31219E97B696428D"
 			x: 0.75d
-			y: 19.75d
+			y: 20.11d
 			icon: {
 				id: "botania:mana_pool"
 				count: 1
@@ -745,6 +745,7 @@
 			size: 2.5d
 			shape: "hexagon"
 			hide_dependency_lines: true
+			hide_dependent_lines: true
 			dependencies: [
 				"693A5D6E1304403E"
 			]
@@ -779,7 +780,7 @@
 		{
 			id: "141BD828F55C274C"
 			x: 3.75d
-			y: 23.7d
+			y: 24.06d
 			optional: true
 			dependencies: [
 				"31219E97B696428D"
@@ -806,7 +807,7 @@
 		{
 			id: "2BD41068DBFF46C1"
 			x: 3.75d
-			y: 21.35d
+			y: 21.71d
 			icon: {
 				id: "botania:manastar"
 				count: 1
@@ -845,7 +846,7 @@
 		{
 			id: "1D0771FD5F02EF27"
 			x: 3.75d
-			y: 19.0d
+			y: 19.36d
 			optional: true
 			dependencies: [
 				"31219E97B696428D"
@@ -876,7 +877,7 @@
 		{
 			id: "2A2B16B925BE643E"
 			x: 6.0d
-			y: 19.0d
+			y: 19.36d
 			optional: true
 			dependencies: [
 				"1D0771FD5F02EF27"
@@ -903,7 +904,7 @@
 		{
 			id: "611B31DAC9106109"
 			x: 6.0d
-			y: 21.35d
+			y: 21.71d
 			optional: true
 			dependencies: [
 				"2BD41068DBFF46C1"
@@ -934,7 +935,7 @@
 		{
 			id: "75D70FBDCB7037BA"
 			x: 3.75d
-			y: 26.05d
+			y: 26.41d
 			optional: true
 			dependencies: [
 				"31219E97B696428D"
@@ -965,7 +966,7 @@
 		{
 			id: "122D0F42C3CD2423"
 			x: 0.25d
-			y: 46.39999999999999d
+			y: 46.75999999999999d
 			icon: {
 				id: "botania:managlass"
 				count: 1
@@ -1002,7 +1003,7 @@
 		{
 			id: "6ED69134FFF1E0FB"
 			x: 3.0d
-			y: 46.14999999999999d
+			y: 46.50999999999999d
 			dependencies: [
 				"122D0F42C3CD2423"
 			]
@@ -1032,7 +1033,7 @@
 		{
 			id: "664757CBBE5B7CB6"
 			x: 5.5d
-			y: 46.14999999999999d
+			y: 46.50999999999999d
 			optional: true
 			dependencies: [
 				"6ED69134FFF1E0FB"
@@ -1059,7 +1060,7 @@
 		{
 			id: "33E44C13922F04E9"
 			x: 3.0d
-			y: 51.69999999999999d
+			y: 52.05999999999999d
 			dependencies: [
 				"122D0F42C3CD2423"
 			]
@@ -1089,7 +1090,7 @@
 		{
 			id: "402BB31F7C41F6E7"
 			x: 5.5d
-			y: 53.54999999999999d
+			y: 53.90999999999999d
 			optional: true
 			dependencies: [
 				"33E44C13922F04E9"
@@ -1120,7 +1121,7 @@
 		{
 			id: "66E90CB505CEE239"
 			x: 7.75d
-			y: 47.99999999999999d
+			y: 48.35999999999999d
 			optional: true
 			dependencies: [
 				"402BB31F7C41F6E7"
@@ -1147,7 +1148,7 @@
 		{
 			id: "723B99B6B09C28EE"
 			x: 5.5d
-			y: 51.69999999999999d
+			y: 52.05999999999999d
 			optional: true
 			dependencies: [
 				"33E44C13922F04E9"
@@ -1178,7 +1179,7 @@
 		{
 			id: "7228D87AF0D862F2"
 			x: 3.0d
-			y: 48.24999999999999d
+			y: 48.60999999999999d
 			icon: {
 				id: "botania:mana_diamond"
 				count: 1
@@ -1219,7 +1220,7 @@
 		{
 			id: "57E0E464E8552E7D"
 			x: 5.5d
-			y: 49.849999999999994d
+			y: 50.209999999999994d
 			optional: true
 			dependencies: [
 				"7228D87AF0D862F2"
@@ -1250,7 +1251,7 @@
 		{
 			id: "1B838BB3540E8390"
 			x: 5.5d
-			y: 47.99999999999999d
+			y: 48.35999999999999d
 			optional: true
 			dependencies: [
 				"7228D87AF0D862F2"
@@ -1281,7 +1282,7 @@
 		{
 			id: "407A58F922CC3B6F"
 			x: 7.75d
-			y: 46.14999999999999d
+			y: 46.50999999999999d
 			optional: true
 			dependencies: [
 				"1B838BB3540E8390"
@@ -1312,7 +1313,7 @@
 		{
 			id: "42AEE5D46F3B2881"
 			x: 0.0d
-			y: 58.59999999999999d
+			y: 58.95999999999999d
 			icon: {
 				id: "botania:bellethorne"
 				count: 1
@@ -1338,11 +1339,12 @@
 		{
 			id: "5BE06264E07BD930"
 			x: 2.25d
-			y: 58.59999999999999d
+			y: 58.95999999999999d
 			icon: {
 				id: "botania:redstone_root"
 				count: 1
 			}
+			hide_dependent_lines: true
 			dependencies: [
 				"42AEE5D46F3B2881"
 			]
@@ -1372,7 +1374,7 @@
 		{
 			id: "2A7035218AA9DFF0"
 			x: 4.5d
-			y: 58.59999999999999d
+			y: 58.95999999999999d
 			icon: {
 				id: "botania:bellethorne"
 				count: 1
@@ -1411,7 +1413,7 @@
 		{
 			id: "2D1A3E7ED49CEAF9"
 			x: 4.5d
-			y: 60.19999999999999d
+			y: 60.55999999999999d
 			optional: true
 			dependencies: [
 				"5BE06264E07BD930"
@@ -1447,7 +1449,7 @@
 		{
 			id: "2A07DC5E99D9AFEA"
 			x: 4.5d
-			y: 63.39999999999999d
+			y: 63.75999999999999d
 			optional: true
 			dependencies: [
 				"5BE06264E07BD930"
@@ -1483,7 +1485,7 @@
 		{
 			id: "1DC314F2E335E176"
 			x: 4.5d
-			y: 61.79999999999999d
+			y: 62.15999999999999d
 			optional: true
 			dependencies: [
 				"5BE06264E07BD930"
@@ -1510,7 +1512,7 @@
 		{
 			id: "330412D9E675F8DC"
 			x: 4.5d
-			y: 64.99999999999999d
+			y: 65.35999999999999d
 			icon: {
 				id: "botania:agricarnation"
 				count: 1
@@ -1536,7 +1538,7 @@
 		{
 			id: "46A79D780C28D080"
 			x: 0.5d
-			y: 39.24999999999999d
+			y: 39.60999999999999d
 			icon: {
 				id: "botania:mana_spreader"
 				count: 1
@@ -1594,7 +1596,7 @@
 		{
 			id: "509FF7E6C4A446D3"
 			x: 3.25d
-			y: 40.849999999999994d
+			y: 41.209999999999994d
 			icon: {
 				id: "naturesaura:infused_iron"
 				count: 1
@@ -1633,7 +1635,7 @@
 		{
 			id: "5435FA9F8A2B0B11"
 			x: 5.5d
-			y: 38.74999999999999d
+			y: 39.10999999999999d
 			icon: {
 				id: "naturesaura:infused_iron"
 				count: 1
@@ -1705,7 +1707,7 @@
 		{
 			id: "41AEB7D0E5FB1298"
 			x: 3.25d
-			y: 38.74999999999999d
+			y: 39.10999999999999d
 			icon: {
 				id: "botania:mana_pool"
 				count: 1
@@ -1732,10 +1734,10 @@
 		{
 			id: "4AE9E42276828934"
 			image: "kronwerke:textures/quests/botania/title.png"
-			x: 2.2d
+			x: 3.16d
 			y: 0.0d
-			width: 5.4d
-			height: 1.8d
+			width: 7.32d
+			height: 2.52d
 			rotation: 0.0d
 			order: 1
 		}
@@ -1743,7 +1745,7 @@
 			id: "24D9215235E33F63"
 			image: "kronwerke:textures/quests/botania/blueten.png"
 			x: 1.41d
-			y: 6.05d
+			y: 6.410000000000001d
 			width: 3.82d
 			height: 0.9d
 			rotation: 0.0d
@@ -1753,7 +1755,7 @@
 			id: "1973FF9EF0688456"
 			image: "kronwerke:textures/quests/botania/speichern.png"
 			x: 2.16d
-			y: 17.65d
+			y: 18.009999999999998d
 			width: 5.32d
 			height: 0.9d
 			rotation: 0.0d
@@ -1763,7 +1765,7 @@
 			id: "5C2F785CDF2DFA96"
 			image: "kronwerke:textures/quests/botania/erzeugen.png"
 			x: 2.025d
-			y: 30.249999999999996d
+			y: 30.609999999999996d
 			width: 5.05d
 			height: 0.9d
 			rotation: 0.0d
@@ -1773,7 +1775,7 @@
 			id: "3CBA545B90799AF6"
 			image: "kronwerke:textures/quests/botania/farm.png"
 			x: 1.01d
-			y: 37.4d
+			y: 37.76d
 			width: 3.02d
 			height: 0.9d
 			rotation: 0.0d
@@ -1783,7 +1785,7 @@
 			id: "201D4A2B1C315C63"
 			image: "kronwerke:textures/quests/botania/infusion.png"
 			x: 1.8399999999999999d
-			y: 44.8d
+			y: 45.16d
 			width: 4.68d
 			height: 0.9d
 			rotation: 0.0d
@@ -1793,7 +1795,7 @@
 			id: "3A99F048ED645553"
 			image: "kronwerke:textures/quests/botania/funktion.png"
 			x: 2.435d
-			y: 57.24999999999999d
+			y: 57.60999999999999d
 			width: 5.87d
 			height: 0.9d
 			rotation: 0.0d

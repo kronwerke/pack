@@ -38,7 +38,7 @@ The stage locks come from Chapters, the quests from FTB Quests, the goals from [
 | --- | --- |
 | `pack.toml`, `index.toml`, `mods/` | The packwiz pack: every mod pinned to a version and a hash |
 | `config/ftbquests/` | The quest book, generated from `tools/quests/` by CI on every push, never edited by hand |
-| `tools/quests/` | Quest definitions in Python, the generator (`build.py`), `check_items.py` (every id exists in a jar) and `check_quest_stages.py` (no quest or crate hands out an item before its stage) |
+| `tools/quests/` | Quest definitions in Python, the generator (`build.py`), the theme of the book (`theme.py`, `banners.py`), `check_items.py` (every id exists in a jar) and `check_quest_stages.py` (no quest or crate hands out an item before its stage) |
 | `kubejs/data/kronwerke/chapters/stages/` | What each stage unlocks, one file per stage, read by Chapters |
 | `kubejs/server_scripts/` | Recipe changes: the tech and magic cross recipes, the Mining Dimension key |
 | `config/kronwerke/goals.json` | The five community goals, read by Kronwerke Core |

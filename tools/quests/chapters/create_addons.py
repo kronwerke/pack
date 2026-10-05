@@ -453,6 +453,6 @@ images = [
 images[0]["x"] = 13.5
 images[1]["x"] = 13.5
 
-chapter(C, "Create: Erweiterungen", "railways:track_switch_brass", "tech", quests, shape="gear", order=56, stage=2,
+chapter(C, "Create: Erweiterungen", "railways:track_switch_brass", "tech", quests, shape="circle", order=56, stage=2,
         subtitle=["Stufe 2: Steam 'n' Rails, Connected, Dragons Plus, Enchantment Industry, Mechanical Spawner und Dieselmotoren."],
         images=images)

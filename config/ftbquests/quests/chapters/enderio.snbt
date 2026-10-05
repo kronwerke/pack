@@ -13,7 +13,7 @@
 		{
 			id: "6457126D31A12BB2"
 			x: 0.5d
-			y: 2.575d
+			y: 2.925d
 			icon: {
 				id: "enderio:grains_of_infinity"
 				count: 1
@@ -51,7 +51,7 @@
 		{
 			id: "1CC96C3B9616C7C4"
 			x: 0.0d
-			y: 7.375000000000001d
+			y: 7.7250000000000005d
 			hide_dependency_lines: true
 			dependencies: [
 				"6457126D31A12BB2"
@@ -91,7 +91,7 @@
 		{
 			id: "562CC8F6129C299C"
 			x: 0.0d
-			y: 9.475000000000001d
+			y: 9.825000000000001d
 			icon: {
 				id: "enderio:iron_gear"
 				count: 1
@@ -126,7 +126,7 @@
 		{
 			id: "3D3132A8699F69CD"
 			x: 7.25d
-			y: 24.675d
+			y: 25.025000000000002d
 			icon: {
 				id: "enderio:void_chassis"
 				count: 1
@@ -161,13 +161,14 @@
 		{
 			id: "7BBA588FE89BA602"
 			x: 2.75d
-			y: 7.875000000000001d
+			y: 8.225000000000001d
 			icon: {
 				id: "enderio:alloy_smelter"
 				count: 1
 			}
 			size: 2.0d
 			shape: "gear"
+			hide_dependent_lines: true
 			dependencies: [
 				"1CC96C3B9616C7C4"
 				"562CC8F6129C299C"
@@ -209,7 +210,7 @@
 		{
 			id: "5A2FE6F6337F2177"
 			x: 0.0d
-			y: 24.675d
+			y: 25.025000000000002d
 			hide_dependency_lines: true
 			dependencies: [
 				"7BBA588FE89BA602"
@@ -245,7 +246,7 @@
 		{
 			id: "7742956E268B3FA5"
 			x: 2.25d
-			y: 24.675d
+			y: 25.025000000000002d
 			icon: {
 				id: "enderio:basic_capacitor_bank"
 				count: 1
@@ -284,7 +285,7 @@
 		{
 			id: "165D0CA7D15D818F"
 			x: 4.5d
-			y: 24.675d
+			y: 25.025000000000002d
 			icon: {
 				id: "enderio:double_layer_capacitor"
 				count: 1
@@ -325,7 +326,7 @@
 		{
 			id: "34258E9C18DB5A9F"
 			x: 11.0d
-			y: 36.625d
+			y: 36.975d
 			icon: {
 				id: "enderio:octadic_capacitor"
 				count: 1
@@ -371,7 +372,7 @@
 		{
 			id: "2EFB9894648EA1FC"
 			x: 0.0d
-			y: 16.875d
+			y: 17.225d
 			icon: {
 				id: "enderio:conductive_alloy_ingot"
 				count: 1
@@ -406,7 +407,7 @@
 		{
 			id: "53CC16710B5323D4"
 			x: 5.5d
-			y: 7.375000000000001d
+			y: 7.7250000000000005d
 			icon: {
 				id: "enderio:redstone_alloy_ingot"
 				count: 1
@@ -440,7 +441,7 @@
 		{
 			id: "709426BD7E90A173"
 			x: 2.25d
-			y: 16.875d
+			y: 17.225d
 			icon: {
 				id: "enderio:energetic_alloy_ingot"
 				count: 1
@@ -474,7 +475,7 @@
 		{
 			id: "3DBC8EF3BCC7BE54"
 			x: 4.5d
-			y: 16.875d
+			y: 17.225d
 			icon: {
 				id: "enderio:vibrant_alloy_ingot"
 				count: 1
@@ -508,7 +509,7 @@
 		{
 			id: "123034F796E93A0F"
 			x: 0.0d
-			y: 18.475d
+			y: 18.825000000000003d
 			icon: {
 				id: "enderio:pulsating_alloy_ingot"
 				count: 1
@@ -543,7 +544,7 @@
 		{
 			id: "15CE1B1CCE2C7E16"
 			x: 0.0d
-			y: 20.075d
+			y: 20.425d
 			icon: {
 				id: "enderio:dark_steel_ingot"
 				count: 1
@@ -583,7 +584,7 @@
 		{
 			id: "4B2A67A0EE7062A7"
 			x: 5.5d
-			y: 9.475000000000001d
+			y: 9.825000000000001d
 			icon: {
 				id: "oritech:steel_ingot"
 				count: 1
@@ -622,7 +623,7 @@
 		{
 			id: "10F5975BE0FF3E12"
 			x: 7.25d
-			y: 16.875d
+			y: 17.225d
 			icon: {
 				id: "enderio:fused_quartz"
 				count: 1
@@ -657,7 +658,7 @@
 		{
 			id: "3938FCAFCD22C593"
 			x: 0.375d
-			y: 29.85d
+			y: 30.200000000000003d
 			icon: {
 				id: "enderio:sag_mill"
 				count: 1
@@ -713,7 +714,7 @@
 		{
 			id: "6DFD0126FEC2B19A"
 			x: 3.0d
-			y: 29.475d
+			y: 29.825000000000003d
 			icon: {
 				id: "enderio:conductive_alloy_grinding_ball"
 				count: 1
@@ -749,7 +750,7 @@
 		{
 			id: "146C9B3D40018F33"
 			x: 3.0d
-			y: 31.450000000000003d
+			y: 31.800000000000004d
 			dependencies: [
 				"3938FCAFCD22C593"
 			]
@@ -788,7 +789,7 @@
 		{
 			id: "23E8A5E844224DC2"
 			x: 5.625d
-			y: 29.85d
+			y: 30.200000000000003d
 			icon: {
 				id: "enderio:conduit_binder"
 				count: 1
@@ -836,7 +837,7 @@
 		{
 			id: "2FD44501D6EFF51C"
 			x: 8.25d
-			y: 29.475d
+			y: 29.825000000000003d
 			icon: {
 				id: "enderio:yeta_wrench"
 				count: 1
@@ -879,7 +880,7 @@
 		{
 			id: "203FF09F26BF9F08"
 			x: 8.25d
-			y: 31.450000000000003d
+			y: 31.800000000000004d
 			dependencies: [
 				"23E8A5E844224DC2"
 			]
@@ -909,7 +910,7 @@
 		{
 			id: "72BA1962B9592168"
 			x: 11.0d
-			y: 29.475d
+			y: 29.825000000000003d
 			hide_dependency_lines: true
 			dependencies: [
 				"7BBA588FE89BA602"
@@ -940,7 +941,7 @@
 		{
 			id: "7C973B72686966B2"
 			x: 0.0d
-			y: 36.625d
+			y: 36.975d
 			hide_dependency_lines: true
 			dependencies: [
 				"72BA1962B9592168"
@@ -972,7 +973,7 @@
 		{
 			id: "6531D5799455DC28"
 			x: 0.0d
-			y: 38.975d
+			y: 39.325d
 			hide_dependency_lines: true
 			dependencies: [
 				"72BA1962B9592168"
@@ -1003,7 +1004,7 @@
 		{
 			id: "5691C24AC6851B3A"
 			x: 2.25d
-			y: 38.975d
+			y: 39.325d
 			icon: {
 				id: "enderio:slice_and_splice"
 				count: 1
@@ -1053,7 +1054,7 @@
 		{
 			id: "6EC19C284A47EA2D"
 			x: 2.25d
-			y: 36.625d
+			y: 36.975d
 			icon: {
 				id: "malum:soul_stained_steel_ingot"
 				count: 1
@@ -1092,7 +1093,7 @@
 		{
 			id: "3554DFECC9BB20A5"
 			x: 5.25d
-			y: 37.375d
+			y: 37.725d
 			icon: {
 				id: "enderio:soul_binder"
 				count: 1
@@ -1139,7 +1140,7 @@
 		{
 			id: "1FF3E7840F0F5373"
 			x: 8.25d
-			y: 36.625d
+			y: 36.975d
 			icon: {
 				id: "enderio:frank_n_zombie"
 				count: 1
@@ -1178,7 +1179,7 @@
 		{
 			id: "29D5C0BD8486862F"
 			x: 2.25d
-			y: 20.075d
+			y: 20.425d
 			icon: {
 				id: "enderio:enchanter"
 				count: 1
@@ -1217,7 +1218,7 @@
 		{
 			id: "3FBD2E86F3809056"
 			x: 2.25d
-			y: 18.475d
+			y: 18.825000000000003d
 			icon: {
 				id: "enderio:vacuum_chest"
 				count: 1
@@ -1251,7 +1252,7 @@
 		{
 			id: "47DCFAE50AC52582"
 			x: 5.5d
-			y: 11.575000000000001d
+			y: 11.925d
 			icon: {
 				id: "minecraft:wheat"
 				count: 1
@@ -1283,10 +1284,10 @@
 		{
 			id: "2E7EAE8A497472E3"
 			image: "kronwerke:textures/quests/enderio/title.png"
-			x: 2.325d
+			x: 3.27d
 			y: 0.0d
-			width: 5.65d
-			height: 1.75d
+			width: 7.54d
+			height: 2.45d
 			rotation: 0.0d
 			order: 1
 		}
@@ -1294,7 +1295,7 @@
 			id: "5D9DDBDC862E7740"
 			image: "kronwerke:textures/quests/enderio/basics.png"
 			x: 1.505d
-			y: 6.025000000000001d
+			y: 6.375000000000001d
 			width: 4.01d
 			height: 0.9d
 			rotation: 0.0d
@@ -1304,7 +1305,7 @@
 			id: "3E864B1476347562"
 			image: "kronwerke:textures/quests/enderio/alloys.png"
 			x: 1.5350000000000001d
-			y: 15.525d
+			y: 15.875000000000002d
 			width: 4.07d
 			height: 0.9d
 			rotation: 0.0d
@@ -1314,7 +1315,7 @@
 			id: "1AC1F2C45F6F7762"
 			image: "kronwerke:textures/quests/enderio/power.png"
 			x: 1.485d
-			y: 23.425d
+			y: 23.775000000000002d
 			width: 3.97d
 			height: 0.7d
 			rotation: 0.0d
@@ -1324,7 +1325,7 @@
 			id: "1E4E531CFE1A0690"
 			image: "kronwerke:textures/quests/enderio/conduits.png"
 			x: 2.61d
-			y: 28.125d
+			y: 28.475d
 			width: 6.22d
 			height: 0.9d
 			rotation: 0.0d
@@ -1334,7 +1335,7 @@
 			id: "17370679735111F2"
 			image: "kronwerke:textures/quests/enderio/souls.png"
 			x: 0.645d
-			y: 35.275000000000006d
+			y: 35.62500000000001d
 			width: 2.29d
 			height: 0.9d
 			rotation: 0.0d

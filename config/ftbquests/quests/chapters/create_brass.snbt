@@ -7,13 +7,13 @@
 	}
 	group: "4EAA9718BAF5A32A"
 	order_index: 9
-	default_quest_shape: "gear"
+	default_quest_shape: "circle"
 	default_hide_dependency_lines: false
 	quests: [
 		{
 			id: "3C71D744C46C4E40"
 			x: 0.5d
-			y: 2.5d
+			y: 2.8200000000000003d
 			icon: {
 				id: "create:brass_ingot"
 				count: 1
@@ -47,7 +47,7 @@
 		{
 			id: "4888962F267720FF"
 			x: 0.0d
-			y: 7.3d
+			y: 7.62d
 			hide_dependency_lines: true
 			dependencies: [
 				"3C71D744C46C4E40"
@@ -92,7 +92,7 @@
 		{
 			id: "21C0F8215FA94C81"
 			x: 0.0d
-			y: 9.4d
+			y: 9.72d
 			hide_dependency_lines: true
 			dependencies: [
 				"3C71D744C46C4E40"
@@ -128,7 +128,7 @@
 		{
 			id: "23C6FE122EC13A6C"
 			x: 0.0d
-			y: 11.5d
+			y: 11.82d
 			icon: {
 				id: "minecraft:netherrack"
 				count: 1
@@ -173,7 +173,7 @@
 		{
 			id: "425CD718A1DA8E47"
 			x: 2.5d
-			y: 7.55d
+			y: 7.87d
 			icon: {
 				id: "create:empty_blaze_burner"
 				count: 1
@@ -214,7 +214,7 @@
 		{
 			id: "7A069A8E373778AB"
 			x: 5.5d
-			y: 7.8d
+			y: 8.120000000000001d
 			icon: {
 				id: "create:blaze_burner"
 				count: 1
@@ -255,7 +255,7 @@
 		{
 			id: "66753E505DED38F6"
 			x: 2.5d
-			y: 9.4d
+			y: 9.72d
 			icon: {
 				id: "minecraft:blaze_powder"
 				count: 1
@@ -294,7 +294,7 @@
 		{
 			id: "382D4F037A92C5A3"
 			x: 8.75d
-			y: 7.8d
+			y: 8.120000000000001d
 			icon: {
 				id: "create:brass_ingot"
 				count: 1
@@ -346,7 +346,7 @@
 		{
 			id: "351C5B3A9F9B05FA"
 			x: 0.0d
-			y: 16.8d
+			y: 17.12d
 			hide_dependency_lines: true
 			dependencies: [
 				"382D4F037A92C5A3"
@@ -382,7 +382,7 @@
 		{
 			id: "3CAA00684E4307E5"
 			x: 10.25d
-			y: 16.8d
+			y: 17.12d
 			hide_dependency_lines: true
 			dependencies: [
 				"382D4F037A92C5A3"
@@ -418,7 +418,7 @@
 		{
 			id: "14C8B1A307A5278A"
 			x: 0.0d
-			y: 27.900000000000002d
+			y: 28.220000000000002d
 			hide_dependency_lines: true
 			dependencies: [
 				"23C6FE122EC13A6C"
@@ -454,7 +454,7 @@
 		{
 			id: "740888978FAE8C47"
 			x: 2.25d
-			y: 25.925d
+			y: 26.245d
 			dependencies: [
 				"14C8B1A307A5278A"
 			]
@@ -489,7 +489,7 @@
 		{
 			id: "11ACBB04C125D6E9"
 			x: 4.5d
-			y: 25.925d
+			y: 26.245d
 			dependencies: [
 				"740888978FAE8C47"
 			]
@@ -524,7 +524,7 @@
 		{
 			id: "1B47A9F155721187"
 			x: 0.0d
-			y: 25.925d
+			y: 26.245d
 			hide_dependency_lines: true
 			dependencies: [
 				"3CAA00684E4307E5"
@@ -560,7 +560,7 @@
 		{
 			id: "2565F01F8794304F"
 			x: 7.125d
-			y: 26.3d
+			y: 26.62d
 			icon: {
 				id: "create:deployer"
 				count: 1
@@ -602,7 +602,7 @@
 		{
 			id: "7A3EB4D902822D91"
 			x: 9.75d
-			y: 25.925d
+			y: 26.245d
 			dependencies: [
 				"2565F01F8794304F"
 			]
@@ -637,7 +637,7 @@
 		{
 			id: "44E38347917EF53B"
 			x: 0.5d
-			y: 33.574999999999996d
+			y: 33.894999999999996d
 			icon: {
 				id: "create:precision_mechanism"
 				count: 1
@@ -679,7 +679,7 @@
 		{
 			id: "2A6B3CDAF9360F83"
 			x: 3.25d
-			y: 33.074999999999996d
+			y: 33.394999999999996d
 			dependencies: [
 				"44E38347917EF53B"
 			]
@@ -710,7 +710,7 @@
 		{
 			id: "4177D5A3CAF6502E"
 			x: 3.25d
-			y: 35.175d
+			y: 35.495d
 			dependencies: [
 				"44E38347917EF53B"
 			]
@@ -745,7 +745,7 @@
 		{
 			id: "457B6225C03AECEE"
 			x: 7.2d
-			y: 33.074999999999996d
+			y: 33.394999999999996d
 			icon: {
 				id: "create:electron_tube"
 				count: 1
@@ -784,7 +784,7 @@
 		{
 			id: "57625193D4DF5F70"
 			x: 0.25d
-			y: 44.67499999999999d
+			y: 44.99499999999999d
 			hide_dependency_lines: true
 			dependencies: [
 				"4177D5A3CAF6502E"
@@ -820,7 +820,7 @@
 		{
 			id: "2849080267B6DDA8"
 			x: 2.75d
-			y: 46.52499999999999d
+			y: 46.84499999999999d
 			dependencies: [
 				"57625193D4DF5F70"
 			]
@@ -851,7 +851,7 @@
 		{
 			id: "48F1253019E91931"
 			x: 2.75d
-			y: 44.67499999999999d
+			y: 44.99499999999999d
 			dependencies: [
 				"57625193D4DF5F70"
 			]
@@ -886,7 +886,7 @@
 		{
 			id: "67350EBAE878C500"
 			x: 5.0d
-			y: 44.67499999999999d
+			y: 44.99499999999999d
 			icon: {
 				id: "create:blaze_cake"
 				count: 1
@@ -934,7 +934,7 @@
 		{
 			id: "3BB21E79FC7CE294"
 			x: 7.5d
-			y: 44.92499999999999d
+			y: 45.24499999999999d
 			icon: {
 				id: "create:blaze_burner"
 				count: 1
@@ -970,7 +970,7 @@
 		{
 			id: "4C0F41780FE33540"
 			x: 0.0d
-			y: 56.374999999999986d
+			y: 56.694999999999986d
 			hide_dependency_lines: true
 			dependencies: [
 				"11ACBB04C125D6E9"
@@ -1006,7 +1006,7 @@
 		{
 			id: "1A3ECCB16419ADC0"
 			x: 2.5d
-			y: 56.374999999999986d
+			y: 56.694999999999986d
 			dependencies: [
 				"4C0F41780FE33540"
 			]
@@ -1041,7 +1041,7 @@
 		{
 			id: "337C2FBA530088F3"
 			x: 2.5d
-			y: 60.07499999999999d
+			y: 60.39499999999999d
 			optional: true
 			dependencies: [
 				"4C0F41780FE33540"
@@ -1068,7 +1068,7 @@
 		{
 			id: "221D83290E829480"
 			x: 2.5d
-			y: 58.47499999999999d
+			y: 58.79499999999999d
 			icon: {
 				id: "create:mechanical_arm"
 				count: 1
@@ -1110,7 +1110,7 @@
 		{
 			id: "55695389CA849C35"
 			x: 5.25d
-			y: 56.374999999999986d
+			y: 56.694999999999986d
 			optional: true
 			dependencies: [
 				"221D83290E829480"
@@ -1146,7 +1146,7 @@
 		{
 			id: "556CE436EDE2179A"
 			x: 5.25d
-			y: 60.07499999999999d
+			y: 60.39499999999999d
 			optional: true
 			dependencies: [
 				"221D83290E829480"
@@ -1182,7 +1182,7 @@
 		{
 			id: "3C2C0B2C5A644F3E"
 			x: 5.25d
-			y: 58.47499999999999d
+			y: 58.79499999999999d
 			icon: {
 				id: "create:factory_gauge"
 				count: 1
@@ -1218,7 +1218,7 @@
 		{
 			id: "188710AF3DD1233F"
 			x: 0.375d
-			y: 67.84999999999998d
+			y: 68.16999999999999d
 			icon: {
 				id: "kronwerke:brass_heart"
 				count: 1
@@ -1256,7 +1256,7 @@
 		{
 			id: "4C39C948ACC593B6"
 			x: 3.75d
-			y: 68.22499999999998d
+			y: 68.54499999999999d
 			icon: {
 				id: "create:precision_mechanism"
 				count: 1
@@ -1305,7 +1305,7 @@
 		{
 			id: "147692EDD311083C"
 			x: 2.625d
-			y: 17.175d
+			y: 17.495d
 			icon: {
 				id: "create:steam_engine"
 				count: 1
@@ -1355,7 +1355,7 @@
 		{
 			id: "68E11E26D9DEED7A"
 			x: 5.25d
-			y: 16.8d
+			y: 17.12d
 			dependencies: [
 				"147692EDD311083C"
 			]
@@ -1395,7 +1395,7 @@
 		{
 			id: "171A711FCBA75243"
 			x: 5.25d
-			y: 18.775000000000002d
+			y: 19.095000000000002d
 			optional: true
 			dependencies: [
 				"147692EDD311083C"
@@ -1422,7 +1422,7 @@
 		{
 			id: "27D6C68140ACD32B"
 			x: 7.5d
-			y: 16.8d
+			y: 17.12d
 			dependencies: [
 				"68E11E26D9DEED7A"
 			]
@@ -1448,7 +1448,7 @@
 		{
 			id: "1C5237FB9264571A"
 			x: 5.25d
-			y: 20.75d
+			y: 21.07d
 			optional: true
 			dependencies: [
 				"147692EDD311083C"
@@ -1475,13 +1475,14 @@
 		{
 			id: "1FB345A23360C5FA"
 			x: 0.5d
-			y: 35.425d
+			y: 35.745d
 			icon: {
 				id: "create:schematicannon"
 				count: 1
 			}
 			size: 1.5d
 			hide_dependency_lines: true
+			hide_dependent_lines: true
 			dependencies: [
 				"351C5B3A9F9B05FA"
 			]
@@ -1525,7 +1526,7 @@
 		{
 			id: "2D79122C70C6289E"
 			x: 3.25d
-			y: 37.275d
+			y: 37.595d
 			optional: true
 			dependencies: [
 				"1FB345A23360C5FA"
@@ -1561,7 +1562,7 @@
 		{
 			id: "2D42A558F2DED9B8"
 			x: 4.95d
-			y: 35.175d
+			y: 35.495d
 			optional: true
 			dependencies: [
 				"1FB345A23360C5FA"
@@ -1588,7 +1589,7 @@
 		{
 			id: "426B4445204B3689"
 			x: 3.25d
-			y: 39.375d
+			y: 39.69499999999999d
 			optional: true
 			dependencies: [
 				"1FB345A23360C5FA"
@@ -1633,7 +1634,7 @@
 		{
 			id: "6FAA15595AE66000"
 			x: 4.95d
-			y: 37.275d
+			y: 37.595d
 			optional: true
 			dependencies: [
 				"1FB345A23360C5FA"
@@ -1660,7 +1661,7 @@
 		{
 			id: "15012F1389F55928"
 			x: 4.95d
-			y: 33.074999999999996d
+			y: 33.394999999999996d
 			optional: true
 			dependencies: [
 				"1FB345A23360C5FA"
@@ -1696,7 +1697,7 @@
 		{
 			id: "5906947CFD9F0C43"
 			x: 0.25d
-			y: 48.62499999999999d
+			y: 48.94499999999999d
 			icon: {
 				id: "create:brass_casing"
 				count: 1
@@ -1724,7 +1725,7 @@
 		{
 			id: "1491084B193A3E66"
 			x: 2.75d
-			y: 48.37499999999999d
+			y: 48.69499999999999d
 			dependencies: [
 				"5906947CFD9F0C43"
 			]
@@ -1759,7 +1760,7 @@
 		{
 			id: "32DB942428FAD3DA"
 			x: 5.0d
-			y: 46.52499999999999d
+			y: 46.84499999999999d
 			dependencies: [
 				"1491084B193A3E66"
 			]
@@ -1790,7 +1791,7 @@
 		{
 			id: "30F5B626E01D3EC4"
 			x: 7.5d
-			y: 46.52499999999999d
+			y: 46.84499999999999d
 			optional: true
 			dependencies: [
 				"32DB942428FAD3DA"
@@ -1826,7 +1827,7 @@
 		{
 			id: "29F241E959011E82"
 			x: 2.75d
-			y: 50.224999999999994d
+			y: 50.54499999999999d
 			icon: {
 				id: "powergrid:wire"
 				count: 1
@@ -1874,7 +1875,7 @@
 		{
 			id: "700566FCFCCB3B7D"
 			x: 5.0d
-			y: 48.37499999999999d
+			y: 48.69499999999999d
 			icon: {
 				id: "powergrid:copper_coil"
 				count: 1
@@ -1913,7 +1914,7 @@
 		{
 			id: "2EF578B2DFFAC333"
 			x: 7.5d
-			y: 48.37499999999999d
+			y: 48.69499999999999d
 			icon: {
 				id: "powergrid:conductive_casing"
 				count: 1
@@ -1952,7 +1953,7 @@
 		{
 			id: "26552006DCDB4A9C"
 			x: 10.0d
-			y: 44.67499999999999d
+			y: 44.99499999999999d
 			icon: {
 				id: "powergrid:device_connector"
 				count: 1
@@ -1991,7 +1992,7 @@
 		{
 			id: "1F4D464886477BCF"
 			x: 12.25d
-			y: 44.67499999999999d
+			y: 44.99499999999999d
 			icon: {
 				id: "powergrid:generator_clutch"
 				count: 1
@@ -2030,7 +2031,7 @@
 		{
 			id: "7EDAADB26F769CA5"
 			x: 14.5d
-			y: 44.67499999999999d
+			y: 44.99499999999999d
 			icon: {
 				id: "powergrid:generator_induction_rotor"
 				count: 1
@@ -2069,7 +2070,7 @@
 		{
 			id: "56BA74D32B562B28"
 			x: 16.75d
-			y: 44.67499999999999d
+			y: 44.99499999999999d
 			icon: {
 				id: "powergrid:generator_housing"
 				count: 1
@@ -2112,7 +2113,7 @@
 		{
 			id: "4BE1ED568848DAC9"
 			x: 19.25d
-			y: 44.92499999999999d
+			y: 45.24499999999999d
 			icon: {
 				id: "powergrid:generator_commutator"
 				count: 1
@@ -2149,7 +2150,7 @@
 		{
 			id: "68131C46039879E9"
 			x: 21.75d
-			y: 44.67499999999999d
+			y: 44.99499999999999d
 			icon: {
 				id: "powergrid:rheostat"
 				count: 1
@@ -2188,7 +2189,7 @@
 		{
 			id: "4BE4170AF0226CEE"
 			x: 24.0d
-			y: 44.67499999999999d
+			y: 44.99499999999999d
 			icon: {
 				id: "powergrid:magnet"
 				count: 1
@@ -2236,7 +2237,7 @@
 		{
 			id: "37EF820F3FAEADA8"
 			x: 26.25d
-			y: 44.67499999999999d
+			y: 44.99499999999999d
 			icon: {
 				id: "powergrid:electric_motor"
 				count: 1
@@ -2271,7 +2272,7 @@
 		{
 			id: "460DEF000E273CDC"
 			x: 28.5d
-			y: 44.67499999999999d
+			y: 44.99499999999999d
 			icon: {
 				id: "powergrid:voltage_gauge"
 				count: 1
@@ -2311,7 +2312,7 @@
 		{
 			id: "1298361CE320525B"
 			x: 0.375d
-			y: 65.12499999999999d
+			y: 65.445d
 			hide_dependency_lines: true
 			dependencies: [
 				"5906947CFD9F0C43"
@@ -2356,7 +2357,7 @@
 		{
 			id: "7419CDFEA245058F"
 			x: 3.75d
-			y: 65.12499999999999d
+			y: 65.445d
 			icon: {
 				id: "createaddition:alternator"
 				count: 1
@@ -2391,7 +2392,7 @@
 		{
 			id: "227F132D6A4F1186"
 			x: 6.75d
-			y: 65.12499999999999d
+			y: 65.445d
 			dependencies: [
 				"7419CDFEA245058F"
 			]
@@ -2417,7 +2418,7 @@
 		{
 			id: "63A10BD536201FFA"
 			x: 9.0d
-			y: 65.12499999999999d
+			y: 65.445d
 			optional: true
 			dependencies: [
 				"227F132D6A4F1186"
@@ -2444,7 +2445,7 @@
 		{
 			id: "19DAA25D08DA54B3"
 			x: 0.375d
-			y: 69.82499999999999d
+			y: 70.145d
 			hide_dependency_lines: true
 			dependencies: [
 				"5906947CFD9F0C43"
@@ -2471,7 +2472,7 @@
 		{
 			id: "7054E30ADE9AE64C"
 			x: 3.75d
-			y: 69.82499999999999d
+			y: 70.145d
 			optional: true
 			dependencies: [
 				"19DAA25D08DA54B3"
@@ -2498,7 +2499,7 @@
 		{
 			id: "5867F04FD180EAE5"
 			x: 3.75d
-			y: 72.17499999999998d
+			y: 72.49499999999999d
 			optional: true
 			dependencies: [
 				"19DAA25D08DA54B3"
@@ -2527,18 +2528,18 @@
 		{
 			id: "36332FFB18363382"
 			image: "kronwerke:textures/quests/create_brass/title.png"
-			x: 4.43d
+			x: 5.46d
 			y: 0.0d
-			width: 9.86d
-			height: 1.6d
+			width: 11.92d
+			height: 2.24d
 			rotation: 0.0d
 			order: 1
 		}
 		{
 			id: "407B3453301498AC"
 			image: "kronwerke:textures/quests/create_brass/stage.png"
-			x: 11.815d
-			y: 0.525d
+			x: 13.875d
+			y: 0.8450000000000001d
 			width: 3.71d
 			height: 0.55d
 			rotation: 0.0d
@@ -2548,7 +2549,7 @@
 			id: "29D37EFDEAABA089"
 			image: "kronwerke:textures/quests/create_brass/brass.png"
 			x: 0.935d
-			y: 5.95d
+			y: 6.2700000000000005d
 			width: 2.87d
 			height: 0.9d
 			rotation: 0.0d
@@ -2558,7 +2559,7 @@
 			id: "57F1FB2AD3396AC0"
 			image: "kronwerke:textures/quests/create_brass/steam.png"
 			x: 0.655d
-			y: 15.450000000000001d
+			y: 15.770000000000001d
 			width: 2.31d
 			height: 0.9d
 			rotation: 0.0d
@@ -2568,7 +2569,7 @@
 			id: "180FAE260458AAED"
 			image: "kronwerke:textures/quests/create_brass/precision.png"
 			x: 0.94d
-			y: 24.575d
+			y: 24.895d
 			width: 2.88d
 			height: 0.9d
 			rotation: 0.0d
@@ -2578,7 +2579,7 @@
 			id: "782341A8DCD3922E"
 			image: "kronwerke:textures/quests/create_brass/contraptions.png"
 			x: 1.9700000000000002d
-			y: 31.724999999999998d
+			y: 32.045d
 			width: 4.94d
 			height: 0.9d
 			rotation: 0.0d
@@ -2588,7 +2589,7 @@
 			id: "4A6210B49D2F76AE"
 			image: "kronwerke:textures/quests/create_brass/addons.png"
 			x: 0.7749999999999999d
-			y: 43.324999999999996d
+			y: 43.644999999999996d
 			width: 2.55d
 			height: 0.9d
 			rotation: 0.0d
@@ -2598,7 +2599,7 @@
 			id: "3A410D330B5A4DC7"
 			image: "kronwerke:textures/quests/create_brass/note_cei.png"
 			x: 1.24d
-			y: 52.32499999999999d
+			y: 52.64499999999999d
 			width: 3.48d
 			height: 0.5d
 			rotation: 0.0d
@@ -2608,7 +2609,7 @@
 			id: "223C1EEE03B491F0"
 			image: "kronwerke:textures/quests/create_brass/note_pg.png"
 			x: 4.47d
-			y: 52.32499999999999d
+			y: 52.64499999999999d
 			width: 1.78d
 			height: 0.5d
 			rotation: 0.0d
@@ -2618,7 +2619,7 @@
 			id: "564C83EC975B191A"
 			image: "kronwerke:textures/quests/create_brass/logistics.png"
 			x: 2.39d
-			y: 55.02499999999999d
+			y: 55.34499999999999d
 			width: 5.78d
 			height: 0.9d
 			rotation: 0.0d
@@ -2628,7 +2629,7 @@
 			id: "34D7F73E9831E52D"
 			image: "kronwerke:textures/quests/create_brass/goal.png"
 			x: 0.835d
-			y: 63.774999999999984d
+			y: 64.09499999999998d
 			width: 2.67d
 			height: 0.9d
 			rotation: 0.0d
@@ -2638,7 +2639,7 @@
 			id: "7274BE605A5AED16"
 			image: "kronwerke:textures/quests/create_brass/note_cca.png"
 			x: 0.9650000000000001d
-			y: 74.77499999999999d
+			y: 75.095d
 			width: 2.93d
 			height: 0.5d
 			rotation: 0.0d
@@ -2648,7 +2649,7 @@
 			id: "2EE5C527A974C38E"
 			image: "kronwerke:textures/quests/create_brass/note_cc.png"
 			x: 4.625d
-			y: 74.77499999999999d
+			y: 75.095d
 			width: 3.19d
 			height: 0.5d
 			rotation: 0.0d

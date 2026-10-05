@@ -17,6 +17,10 @@ out = sys.argv[1] if len(sys.argv) > 1 else os.path.join(here, "..", "..", "conf
 assets = sys.argv[2] if len(sys.argv) > 2 else os.path.join(here, "..", "..", "kubejs", "assets")
 chapters, quests, tables = ftbq.write(out, assets_dir=assets)
 
+# the theme of the book: colours, quest shapes, dependency lines, background
+import theme  # noqa: E402
+theme.write(assets)
+
 # banners of removed quests would linger, so drop every picture no chapter uses any more
 import re  # noqa: E402
 used = set()

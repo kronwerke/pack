@@ -370,5 +370,5 @@ images = [
 images[0]["x"] = 14
 images[1]["x"] = 14
 
-chapter(C, "Create: Züge", "create:controls", "tech", quests, shape="gear", order=15, stage=2,
+chapter(C, "Create: Züge", "create:controls", "tech", quests, shape="circle", order=15, stage=2,
         subtitle=["Stufe 2: Gleise, Bahnhöfe und Züge, die von selbst fahren."], images=images)

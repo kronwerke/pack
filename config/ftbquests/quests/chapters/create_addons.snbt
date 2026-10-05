@@ -7,19 +7,20 @@
 	}
 	group: "4EAA9718BAF5A32A"
 	order_index: 56
-	default_quest_shape: "gear"
+	default_quest_shape: "circle"
 	default_hide_dependency_lines: false
 	quests: [
 		{
 			id: "1B37A19EEAA27DF1"
 			x: 0.5d
-			y: 2.5d
+			y: 2.8200000000000003d
 			icon: {
 				id: "railways:track_switch_andesite"
 				count: 1
 			}
 			size: 2.0d
 			shape: "hexagon"
+			hide_dependent_lines: true
 			tasks: [
 				{
 					id: "5B8427876CF88D12"
@@ -51,7 +52,7 @@
 		{
 			id: "2B62F934479B6975"
 			x: 3.25d
-			y: 2.0d
+			y: 2.3200000000000003d
 			dependencies: [
 				"1B37A19EEAA27DF1"
 			]
@@ -86,7 +87,7 @@
 		{
 			id: "1972D89B7EF32F06"
 			x: 0.0d
-			y: 7.3d
+			y: 7.62d
 			hide_dependency_lines: true
 			dependencies: [
 				"1B37A19EEAA27DF1"
@@ -122,7 +123,7 @@
 		{
 			id: "149B7F0FB9F7BFD9"
 			x: 0.0d
-			y: 9.15d
+			y: 9.47d
 			hide_dependency_lines: true
 			dependencies: [
 				"1B37A19EEAA27DF1"
@@ -158,7 +159,7 @@
 		{
 			id: "623F6294DD8F0F79"
 			x: 2.5d
-			y: 7.55d
+			y: 7.87d
 			icon: {
 				id: "railways:white_conductor_cap"
 				count: 1
@@ -198,7 +199,7 @@
 		{
 			id: "19C83A4649BF475E"
 			x: 5.0d
-			y: 7.3d
+			y: 7.62d
 			icon: {
 				id: "railways:conductor_whistle"
 				count: 1
@@ -246,7 +247,7 @@
 		{
 			id: "16153C5F8F8E85AA"
 			x: 2.5d
-			y: 9.15d
+			y: 9.47d
 			icon: {
 				id: "railways:fuel_tank"
 				count: 1
@@ -294,7 +295,7 @@
 		{
 			id: "57002C5A6625DA69"
 			x: 7.5d
-			y: 7.55d
+			y: 7.87d
 			icon: {
 				id: "railways:smokestack_streamlined"
 				count: 1
@@ -344,7 +345,7 @@
 		{
 			id: "634227EE9AA2F8EC"
 			x: 10.0d
-			y: 7.3d
+			y: 7.62d
 			icon: {
 				id: "railways:track_monorail"
 				count: 1
@@ -384,7 +385,7 @@
 		{
 			id: "27CB62653A416B09"
 			x: 0.25d
-			y: 21.6d
+			y: 21.92d
 			icon: {
 				id: "create_connected:brass_gearbox"
 				count: 1
@@ -434,7 +435,7 @@
 		{
 			id: "4735B7BB1918C1E6"
 			x: 2.75d
-			y: 21.35d
+			y: 21.67d
 			icon: {
 				id: "create_connected:control_chip"
 				count: 1
@@ -473,7 +474,7 @@
 		{
 			id: "3731E360C6DB4730"
 			x: 5.0d
-			y: 21.35d
+			y: 21.67d
 			icon: {
 				id: "create_connected:sequenced_pulse_generator"
 				count: 1
@@ -521,7 +522,7 @@
 		{
 			id: "40625177532CB7E4"
 			x: 2.75d
-			y: 23.200000000000003d
+			y: 23.520000000000003d
 			icon: {
 				id: "create_connected:inventory_bridge"
 				count: 1
@@ -569,7 +570,7 @@
 		{
 			id: "1EC7DBE5AE3B7A5E"
 			x: 2.75d
-			y: 25.05d
+			y: 25.37d
 			icon: {
 				id: "create_connected:kinetic_bridge"
 				count: 1
@@ -626,7 +627,7 @@
 		{
 			id: "46ADBE97B9F0BBE6"
 			x: 0.0d
-			y: 37.0d
+			y: 37.32d
 			icon: {
 				id: "create_dragons_plus:white_dye_bucket"
 				count: 1
@@ -662,7 +663,7 @@
 		{
 			id: "224DCBA53BB0D930"
 			x: 2.5d
-			y: 37.25d
+			y: 37.57d
 			icon: {
 				id: "create_connected:fan_freezing_catalyst"
 				count: 1
@@ -711,7 +712,7 @@
 		{
 			id: "284980C25D9713B1"
 			x: 2.5d
-			y: 38.85d
+			y: 39.17d
 			icon: {
 				id: "create_enchantment_industry:experience_hatch"
 				count: 1
@@ -759,7 +760,7 @@
 		{
 			id: "32ED2F26BE02AF93"
 			x: 0.25d
-			y: 14.450000000000001d
+			y: 14.770000000000001d
 			icon: {
 				id: "create_enchantment_industry:enchanting_template"
 				count: 1
@@ -800,7 +801,7 @@
 		{
 			id: "14B34EE27BD94109"
 			x: 3.125d
-			y: 14.575000000000001d
+			y: 14.895000000000001d
 			icon: {
 				id: "create_enchantment_industry:blaze_forger"
 				count: 1
@@ -837,7 +838,7 @@
 		{
 			id: "78DA48D3B9D7F31C"
 			x: 3.125d
-			y: 16.175d
+			y: 16.495d
 			icon: {
 				id: "create_enchantment_industry:experience_cake"
 				count: 1
@@ -881,7 +882,7 @@
 		{
 			id: "6C5BB64AA39F5970"
 			x: 5.75d
-			y: 14.200000000000001d
+			y: 14.520000000000001d
 			icon: {
 				id: "create_enchantment_industry:infuser"
 				count: 1
@@ -920,7 +921,7 @@
 		{
 			id: "5036E615F5774276"
 			x: 0.25d
-			y: 30.35d
+			y: 30.67d
 			icon: {
 				id: "create_mechanical_spawner:spawn_fluid_random_bucket"
 				count: 1
@@ -961,7 +962,7 @@
 		{
 			id: "349A54CD94529E4C"
 			x: 3.0d
-			y: 30.1d
+			y: 30.42d
 			icon: {
 				id: "create_mechanical_spawner:spawn_fluid_zombie_bucket"
 				count: 1
@@ -1000,7 +1001,7 @@
 		{
 			id: "677B8B1F5C5139D6"
 			x: 3.0d
-			y: 32.2d
+			y: 32.52d
 			icon: {
 				id: "create_mechanical_spawner:loot_collector"
 				count: 1
@@ -1036,7 +1037,7 @@
 		{
 			id: "17F2803C43A50024"
 			x: 0.25d
-			y: 44.15d
+			y: 44.47d
 			icon: {
 				id: "createdieselgenerators:bulk_fermenter"
 				count: 1
@@ -1090,7 +1091,7 @@
 		{
 			id: "1023FB2248B920D6"
 			x: 2.75d
-			y: 43.9d
+			y: 44.22d
 			icon: {
 				id: "createdieselgenerators:biodiesel_bucket"
 				count: 1
@@ -1129,7 +1130,7 @@
 		{
 			id: "50BB336485F2AB6B"
 			x: 5.375d
-			y: 44.275d
+			y: 44.595d
 			icon: {
 				id: "createdieselgenerators:diesel_engine"
 				count: 1
@@ -1175,7 +1176,7 @@
 		{
 			id: "789E312149280497"
 			x: 8.75d
-			y: 44.65d
+			y: 44.97d
 			icon: {
 				id: "createdieselgenerators:large_diesel_engine"
 				count: 1
@@ -1212,7 +1213,7 @@
 		{
 			id: "1CB83D6658D893E5"
 			x: 8.75d
-			y: 46.25d
+			y: 46.57d
 			icon: {
 				id: "createdieselgenerators:oil_scanner"
 				count: 1
@@ -1251,7 +1252,7 @@
 		{
 			id: "6C16F7A979EACAB8"
 			x: 0.0d
-			y: 51.8d
+			y: 52.12d
 			icon: {
 				id: "create:mechanical_drill"
 				count: 1
@@ -1279,7 +1280,7 @@
 		{
 			id: "19E6B4F9832A34B0"
 			x: 2.25d
-			y: 51.8d
+			y: 52.12d
 			icon: {
 				id: "create:copper_backtank"
 				count: 1
@@ -1308,18 +1309,18 @@
 		{
 			id: "3AB178E5FFF30775"
 			image: "kronwerke:textures/quests/create_addons/title.png"
-			x: 6.435d
+			x: 7.605d
 			y: 0.0d
-			width: 13.87d
-			height: 1.6d
+			width: 16.21d
+			height: 2.24d
 			rotation: 0.0d
 			order: 1
 		}
 		{
 			id: "403E14127D9285A9"
 			image: "kronwerke:textures/quests/create_addons/stage.png"
-			x: 15.825d
-			y: 0.525d
+			x: 18.165000000000003d
+			y: 0.8450000000000001d
 			width: 3.71d
 			height: 0.55d
 			rotation: 0.0d
@@ -1329,7 +1330,7 @@
 			id: "6ED2674FA2974640"
 			image: "kronwerke:textures/quests/create_addons/rails.png"
 			x: 1.98d
-			y: 5.95d
+			y: 6.2700000000000005d
 			width: 4.96d
 			height: 0.9d
 			rotation: 0.0d
@@ -1339,7 +1340,7 @@
 			id: "475805FAC73A87F8"
 			image: "kronwerke:textures/quests/create_addons/enchant.png"
 			x: 3.27d
-			y: 12.85d
+			y: 13.17d
 			width: 7.54d
 			height: 0.9d
 			rotation: 0.0d
@@ -1349,7 +1350,7 @@
 			id: "5BEAD5FEEC63309C"
 			image: "kronwerke:textures/quests/create_addons/connected.png"
 			x: 2.435d
-			y: 20.0d
+			y: 20.32d
 			width: 5.87d
 			height: 0.9d
 			rotation: 0.0d
@@ -1359,7 +1360,7 @@
 			id: "318C96BEA384F1C6"
 			image: "kronwerke:textures/quests/create_addons/spawner.png"
 			x: 2.995d
-			y: 28.75d
+			y: 29.07d
 			width: 6.99d
 			height: 0.9d
 			rotation: 0.0d
@@ -1369,7 +1370,7 @@
 			id: "36E802D311B40BD4"
 			image: "kronwerke:textures/quests/create_addons/dragons.png"
 			x: 1.7799999999999998d
-			y: 35.650000000000006d
+			y: 35.970000000000006d
 			width: 4.56d
 			height: 0.9d
 			rotation: 0.0d
@@ -1379,7 +1380,7 @@
 			id: "556BAEBF86C34E4E"
 			image: "kronwerke:textures/quests/create_addons/diesel.png"
 			x: 0.5549999999999999d
-			y: 42.550000000000004d
+			y: 42.870000000000005d
 			width: 2.11d
 			height: 0.9d
 			rotation: 0.0d
@@ -1389,7 +1390,7 @@
 			id: "2DF6D8F55975F43D"
 			image: "kronwerke:textures/quests/create_addons/outlook.png"
 			x: 0.9950000000000001d
-			y: 50.45d
+			y: 50.77d
 			width: 2.99d
 			height: 0.9d
 			rotation: 0.0d

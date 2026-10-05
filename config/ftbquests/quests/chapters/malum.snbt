@@ -13,7 +13,7 @@
 		{
 			id: "49D2C35E7815A9C3"
 			x: 0.5d
-			y: 2.6d
+			y: 2.96d
 			icon: {
 				id: "malum:encyclopedia_arcana"
 				count: 1
@@ -51,7 +51,7 @@
 		{
 			id: "16FDEAE8FE6F38F3"
 			x: 0.0d
-			y: 7.3999999999999995d
+			y: 7.760000000000001d
 			icon: {
 				id: "malum:refined_soulstone"
 				count: 1
@@ -91,7 +91,7 @@
 		{
 			id: "6A657D4C208E284E"
 			x: 7.25d
-			y: 7.3999999999999995d
+			y: 7.760000000000001d
 			icon: {
 				id: "malum:runewood_sapling"
 				count: 1
@@ -131,7 +131,7 @@
 		{
 			id: "11F768CC20126B4C"
 			x: 2.25d
-			y: 7.3999999999999995d
+			y: 7.760000000000001d
 			icon: {
 				id: "malum:crude_scythe"
 				count: 1
@@ -170,11 +170,12 @@
 		{
 			id: "70F64B61EF46DCDC"
 			x: 4.5d
-			y: 7.3999999999999995d
+			y: 7.760000000000001d
 			icon: {
 				id: "malum:arcane_spirit"
 				count: 1
 			}
+			hide_dependent_lines: true
 			dependencies: [
 				"11F768CC20126B4C"
 			]
@@ -227,7 +228,7 @@
 		{
 			id: "4699EA2A9F63B8AD"
 			x: 0.0d
-			y: 12.200000000000001d
+			y: 12.560000000000002d
 			icon: {
 				id: "malum:earthen_spirit"
 				count: 1
@@ -268,7 +269,7 @@
 		{
 			id: "1BC47FEDF2DE0457"
 			x: 0.0d
-			y: 13.8d
+			y: 14.160000000000002d
 			icon: {
 				id: "malum:infernal_spirit"
 				count: 1
@@ -309,7 +310,7 @@
 		{
 			id: "61EEF6A526AC137D"
 			x: 0.0d
-			y: 15.400000000000002d
+			y: 15.760000000000002d
 			icon: {
 				id: "malum:aerial_spirit"
 				count: 1
@@ -350,7 +351,7 @@
 		{
 			id: "1DE8A2FA39111898"
 			x: 0.0d
-			y: 17.0d
+			y: 17.360000000000003d
 			icon: {
 				id: "malum:aqueous_spirit"
 				count: 1
@@ -391,12 +392,13 @@
 		{
 			id: "5EABB3E140D80052"
 			x: 2.25d
-			y: 12.200000000000001d
+			y: 12.560000000000002d
 			icon: {
 				id: "malum:eldritch_spirit"
 				count: 1
 			}
 			shape: "square"
+			hide_dependency_lines: true
 			dependencies: [
 				"4699EA2A9F63B8AD"
 				"1BC47FEDF2DE0457"
@@ -434,7 +436,7 @@
 		{
 			id: "3FB85D1B934FD6D2"
 			x: 0.25d
-			y: 22.05d
+			y: 22.41d
 			icon: {
 				id: "malum:spirit_altar"
 				count: 1
@@ -486,11 +488,12 @@
 		{
 			id: "498BFF9BF8A70355"
 			x: 2.75d
-			y: 21.8d
+			y: 22.16d
 			icon: {
 				id: "malum:hex_ash"
 				count: 1
 			}
+			hide_dependent_lines: true
 			dependencies: [
 				"3FB85D1B934FD6D2"
 			]
@@ -525,7 +528,7 @@
 		{
 			id: "3446C4E82E2EEF4A"
 			x: 5.375d
-			y: 21.8d
+			y: 22.16d
 			icon: {
 				id: "malum:hallowed_gold_ingot"
 				count: 1
@@ -564,7 +567,7 @@
 		{
 			id: "76DFF95BF66289DB"
 			x: 8.0d
-			y: 21.8d
+			y: 22.16d
 			icon: {
 				id: "malum:spirit_jar"
 				count: 1
@@ -599,7 +602,7 @@
 		{
 			id: "6880C52DD0366C72"
 			x: 10.25d
-			y: 21.8d
+			y: 22.16d
 			icon: {
 				id: "malum:runewood_obelisk"
 				count: 1
@@ -640,7 +643,7 @@
 		{
 			id: "33F393874DB2429A"
 			x: 5.375d
-			y: 25.75d
+			y: 26.11d
 			icon: {
 				id: "malum:arcane_charcoal"
 				count: 1
@@ -682,7 +685,7 @@
 		{
 			id: "5EFF84C54AFE6D05"
 			x: 5.375d
-			y: 24.150000000000002d
+			y: 24.51d
 			icon: {
 				id: "malum:soul_stained_steel_ingot"
 				count: 1
@@ -721,7 +724,7 @@
 		{
 			id: "4FDB5B94CAF85475"
 			x: 8.0d
-			y: 23.775000000000002d
+			y: 24.135d
 			icon: {
 				id: "malum:soul_stained_steel_sword"
 				count: 1
@@ -761,7 +764,7 @@
 		{
 			id: "2EE42153BDFA1EEB"
 			x: 8.0d
-			y: 27.725d
+			y: 28.085d
 			icon: {
 				id: "malum:soul_stained_steel_scythe"
 				count: 1
@@ -800,7 +803,7 @@
 		{
 			id: "11FBF871F00AFDEF"
 			x: 8.0d
-			y: 25.75d
+			y: 26.11d
 			icon: {
 				id: "enderio:soul_binder"
 				count: 1
@@ -840,7 +843,7 @@
 		{
 			id: "3E57B5C07A82A6AB"
 			x: 5.375d
-			y: 29.700000000000003d
+			y: 30.060000000000002d
 			icon: {
 				id: "malum:soulwoven_silk"
 				count: 1
@@ -882,7 +885,7 @@
 		{
 			id: "2049A8B037D98CD5"
 			x: 8.0d
-			y: 29.700000000000003d
+			y: 30.060000000000002d
 			icon: {
 				id: "malum:soul_hunter_cloak"
 				count: 1
@@ -922,7 +925,7 @@
 		{
 			id: "469CD8475322E3E0"
 			x: 0.0d
-			y: 40.425d
+			y: 40.78499999999999d
 			icon: {
 				id: "malum:twisted_rock"
 				count: 1
@@ -971,7 +974,7 @@
 		{
 			id: "3C30C1242203AFE6"
 			x: 2.25d
-			y: 40.425d
+			y: 40.78499999999999d
 			icon: {
 				id: "malum:spirit_crucible"
 				count: 1
@@ -1012,7 +1015,7 @@
 		{
 			id: "12F0B504A60EC51D"
 			x: 2.25d
-			y: 42.025d
+			y: 42.38499999999999d
 			icon: {
 				id: "malum:alchemical_calx"
 				count: 1
@@ -1051,7 +1054,7 @@
 		{
 			id: "3345AFD00341532D"
 			x: 4.5d
-			y: 40.425d
+			y: 40.78499999999999d
 			icon: {
 				id: "malum:alchemical_impetus"
 				count: 1
@@ -1091,7 +1094,7 @@
 		{
 			id: "630880A06D01CC32"
 			x: 6.75d
-			y: 40.425d
+			y: 40.78499999999999d
 			icon: {
 				id: "malum:iron_node"
 				count: 1
@@ -1131,7 +1134,7 @@
 		{
 			id: "68623CAB44AB2D5B"
 			x: 4.5d
-			y: 42.025d
+			y: 42.38499999999999d
 			icon: {
 				id: "malum:ring_of_curative_talent"
 				count: 1
@@ -1173,7 +1176,7 @@
 		{
 			id: "20375037881AC816"
 			x: 0.0d
-			y: 34.875d
+			y: 35.23499999999999d
 			icon: {
 				id: "malum:runewood_totem_base"
 				count: 1
@@ -1214,7 +1217,7 @@
 		{
 			id: "1DCDAF2EF0DEA6C0"
 			x: 2.25d
-			y: 34.875d
+			y: 35.23499999999999d
 			icon: {
 				id: "malum:sacred_spirit"
 				count: 1
@@ -1257,7 +1260,7 @@
 		{
 			id: "61EBAF73D8AE43B0"
 			x: 4.5d
-			y: 34.875d
+			y: 35.23499999999999d
 			icon: {
 				id: "malum:infernal_spirit"
 				count: 1
@@ -1300,7 +1303,7 @@
 		{
 			id: "6CF971351F3417E4"
 			x: 7.5d
-			y: 35.625d
+			y: 35.98499999999999d
 			icon: {
 				id: "malum:soul_stained_steel_ingot"
 				count: 1
@@ -1351,10 +1354,10 @@
 		{
 			id: "4E866E7C9D7E8C9C"
 			image: "kronwerke:textures/quests/malum/title.png"
-			x: 2.025d
+			x: 2.97d
 			y: 0.0d
-			width: 5.05d
-			height: 1.8d
+			width: 6.94d
+			height: 2.52d
 			rotation: 0.0d
 			order: 1
 		}
@@ -1362,7 +1365,7 @@
 			id: "2044A53D0FE035BE"
 			image: "kronwerke:textures/quests/malum/ernten.png"
 			x: 1.85d
-			y: 6.05d
+			y: 6.410000000000001d
 			width: 4.7d
 			height: 0.9d
 			rotation: 0.0d
@@ -1372,7 +1375,7 @@
 			id: "6284F4E30C2F9B42"
 			image: "kronwerke:textures/quests/malum/arcana.png"
 			x: 2.115d
-			y: 10.85d
+			y: 11.21d
 			width: 5.23d
 			height: 0.9d
 			rotation: 0.0d
@@ -1382,7 +1385,7 @@
 			id: "6061F19A43DA0168"
 			image: "kronwerke:textures/quests/malum/altar.png"
 			x: 2.24d
-			y: 20.45d
+			y: 20.81d
 			width: 5.48d
 			height: 0.9d
 			rotation: 0.0d
@@ -1392,7 +1395,7 @@
 			id: "23706B4A14DC7D92"
 			image: "kronwerke:textures/quests/malum/totems.png"
 			x: 2.375d
-			y: 33.525000000000006d
+			y: 33.885d
 			width: 5.75d
 			height: 0.9d
 			rotation: 0.0d
@@ -1402,7 +1405,7 @@
 			id: "1375CBC1758954E1"
 			image: "kronwerke:textures/quests/malum/tiegel.png"
 			x: 2.255d
-			y: 39.075d
+			y: 39.434999999999995d
 			width: 5.51d
 			height: 0.9d
 			rotation: 0.0d

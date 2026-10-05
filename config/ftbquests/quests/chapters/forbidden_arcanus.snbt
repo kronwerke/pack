@@ -13,7 +13,7 @@
 		{
 			id: "3CDF0C46E508B917"
 			x: 0.5d
-			y: 2.575d
+			y: 2.925d
 			icon: {
 				id: "forbidden_arcanus:arcane_crystal"
 				count: 1
@@ -51,7 +51,7 @@
 		{
 			id: "4AAAA9F78B6C3881"
 			x: 0.0d
-			y: 7.375000000000001d
+			y: 7.7250000000000005d
 			hide_dependency_lines: true
 			dependencies: [
 				"3CDF0C46E508B917"
@@ -87,7 +87,7 @@
 		{
 			id: "2127879A6CFC403D"
 			x: 0.0d
-			y: 9.225000000000001d
+			y: 9.575000000000001d
 			icon: {
 				id: "forbidden_arcanus:polished_darkstone"
 				count: 1
@@ -127,7 +127,7 @@
 		{
 			id: "51E593A88A66EDF2"
 			x: 2.25d
-			y: 7.375000000000001d
+			y: 7.7250000000000005d
 			icon: {
 				id: "forbidden_arcanus:mundabitur_dust"
 				count: 1
@@ -175,7 +175,7 @@
 		{
 			id: "286509E51E65F29D"
 			x: 4.75d
-			y: 7.625000000000001d
+			y: 7.9750000000000005d
 			icon: {
 				id: "forbidden_arcanus:deorum_ingot"
 				count: 1
@@ -225,7 +225,7 @@
 		{
 			id: "199036A08D2100E8"
 			x: 2.25d
-			y: 9.225000000000001d
+			y: 9.575000000000001d
 			icon: {
 				id: "forbidden_arcanus:rune"
 				count: 1
@@ -265,7 +265,7 @@
 		{
 			id: "69161FEA6C5C569B"
 			x: 2.25d
-			y: 11.075000000000001d
+			y: 11.425d
 			icon: {
 				id: "forbidden_arcanus:stellarite_piece"
 				count: 1
@@ -304,7 +304,7 @@
 		{
 			id: "3A6F605AA8A2AECB"
 			x: 0.25d
-			y: 16.375d
+			y: 16.725d
 			icon: {
 				id: "forbidden_arcanus:gilded_chiseled_polished_darkstone"
 				count: 1
@@ -361,7 +361,7 @@
 		{
 			id: "54CBF0CE4350507E"
 			x: 3.25d
-			y: 16.625d
+			y: 16.975d
 			icon: {
 				id: "forbidden_arcanus:hephaestus_forge_tier_1"
 				count: 1
@@ -369,6 +369,7 @@
 			size: 2.0d
 			shape: "gear"
 			hide_dependency_lines: true
+			hide_dependent_lines: true
 			dependencies: [
 				"3A6F605AA8A2AECB"
 				"51E593A88A66EDF2"
@@ -404,7 +405,7 @@
 		{
 			id: "1131CB21A6634931"
 			x: 6.0d
-			y: 16.125d
+			y: 16.475d
 			icon: {
 				id: "forbidden_arcanus:darkstone_pedestal"
 				count: 1
@@ -443,7 +444,7 @@
 		{
 			id: "753480535AEC8A1A"
 			x: 6.0d
-			y: 20.325d
+			y: 20.675d
 			icon: {
 				id: "forbidden_arcanus:arcane_crystal_obelisk"
 				count: 1
@@ -487,7 +488,7 @@
 		{
 			id: "1635091111ED4E18"
 			x: 6.0d
-			y: 18.225d
+			y: 18.575000000000003d
 			icon: {
 				id: "forbidden_arcanus:iron_blacksmith_gavel"
 				count: 1
@@ -535,7 +536,7 @@
 		{
 			id: "3DF00E2C1755CB3F"
 			x: 6.0d
-			y: 22.425d
+			y: 22.775000000000002d
 			icon: {
 				id: "forbidden_arcanus:test_tube"
 				count: 1
@@ -574,7 +575,7 @@
 		{
 			id: "12FFA45EAC31C4F5"
 			x: 0.0d
-			y: 27.724999999999998d
+			y: 28.075d
 			icon: {
 				id: "forbidden_arcanus:soul"
 				count: 1
@@ -619,7 +620,7 @@
 		{
 			id: "37E6700350A65082"
 			x: 1.6d
-			y: 27.724999999999998d
+			y: 28.075d
 			icon: {
 				id: "forbidden_arcanus:aureal_bottle"
 				count: 1
@@ -668,7 +669,7 @@
 		{
 			id: "52393952DFA0BCC3"
 			x: 0.375d
-			y: 32.9d
+			y: 33.25d
 			icon: {
 				id: "forbidden_arcanus:quantum_catcher"
 				count: 1
@@ -716,7 +717,7 @@
 		{
 			id: "798C61E2D65E1512"
 			x: 3.75d
-			y: 33.275d
+			y: 33.625d
 			icon: {
 				id: "forbidden_arcanus:hephaestus_forge_tier_2"
 				count: 1
@@ -777,7 +778,7 @@
 		{
 			id: "60C4426ACBBC9B57"
 			x: 6.75d
-			y: 32.525d
+			y: 32.875d
 			icon: {
 				id: "forbidden_arcanus:terrastomp_prism"
 				count: 1
@@ -817,7 +818,7 @@
 		{
 			id: "74B4B0D844DF0F98"
 			x: 6.75d
-			y: 37.225d
+			y: 37.575d
 			icon: {
 				id: "forbidden_arcanus:artisan_relic"
 				count: 1
@@ -847,7 +848,7 @@
 		{
 			id: "1418C05012C55DA7"
 			x: 6.75d
-			y: 34.875d
+			y: 35.225d
 			icon: {
 				id: "forbidden_arcanus:dark_nether_star"
 				count: 1
@@ -873,7 +874,7 @@
 		{
 			id: "3DFBD8D19758869F"
 			x: 0.25d
-			y: 43.025d
+			y: 43.37499999999999d
 			icon: {
 				id: "forbidden_arcanus:clibano_core"
 				count: 1
@@ -920,7 +921,7 @@
 		{
 			id: "56ED1C8245FC7FA8"
 			x: 2.75d
-			y: 42.775d
+			y: 43.12499999999999d
 			icon: {
 				id: "forbidden_arcanus:obsidiansteel_ingot"
 				count: 1
@@ -968,7 +969,7 @@
 		{
 			id: "5FA55EFFFE67255C"
 			x: 5.0d
-			y: 44.625d
+			y: 44.974999999999994d
 			icon: {
 				id: "forbidden_arcanus:obsidian_skull"
 				count: 1
@@ -1008,7 +1009,7 @@
 		{
 			id: "63FDA154B0A4BBDF"
 			x: 5.0d
-			y: 42.775d
+			y: 43.12499999999999d
 			icon: {
 				id: "forbidden_arcanus:edelwood_log"
 				count: 1
@@ -1052,7 +1053,7 @@
 		{
 			id: "546620819774F109"
 			x: 7.25d
-			y: 42.775d
+			y: 43.12499999999999d
 			icon: {
 				id: "forbidden_arcanus:dark_matter"
 				count: 1
@@ -1091,7 +1092,7 @@
 		{
 			id: "34B5F648108F682A"
 			x: 7.25d
-			y: 44.625d
+			y: 44.974999999999994d
 			icon: {
 				id: "forbidden_arcanus:dark_nether_star"
 				count: 1
@@ -1129,10 +1130,10 @@
 		{
 			id: "780E0B373613F097"
 			image: "kronwerke:textures/quests/forbidden_arcanus/title.png"
-			x: 7.24d
+			x: 8.53d
 			y: 0.0d
-			width: 15.48d
-			height: 1.75d
+			width: 18.06d
+			height: 2.45d
 			rotation: 0.0d
 			order: 1
 		}
@@ -1140,7 +1141,7 @@
 			id: "6B1B5A976CB6B0A4"
 			image: "kronwerke:textures/quests/forbidden_arcanus/kristalle.png"
 			x: 2.055d
-			y: 6.025000000000001d
+			y: 6.375000000000001d
 			width: 5.11d
 			height: 0.9d
 			rotation: 0.0d
@@ -1150,7 +1151,7 @@
 			id: "4C7FB11EAB8BCE52"
 			image: "kronwerke:textures/quests/forbidden_arcanus/schmiede.png"
 			x: 3.55d
-			y: 14.775d
+			y: 15.125000000000002d
 			width: 8.1d
 			height: 0.9d
 			rotation: 0.0d
@@ -1160,7 +1161,7 @@
 			id: "1598C7CB60EBD27E"
 			image: "kronwerke:textures/quests/forbidden_arcanus/essenzen.png"
 			x: 1.055d
-			y: 26.374999999999996d
+			y: 26.724999999999998d
 			width: 3.11d
 			height: 0.9d
 			rotation: 0.0d
@@ -1170,7 +1171,7 @@
 			id: "7D31049DE5450876"
 			image: "kronwerke:textures/quests/forbidden_arcanus/rituale.png"
 			x: 0.7649999999999999d
-			y: 31.174999999999997d
+			y: 31.525d
 			width: 2.53d
 			height: 0.9d
 			rotation: 0.0d
@@ -1180,7 +1181,7 @@
 			id: "5A7BEDFF63B8964D"
 			image: "kronwerke:textures/quests/forbidden_arcanus/edelholz.png"
 			x: 4.245d
-			y: 41.425000000000004d
+			y: 41.775d
 			width: 9.49d
 			height: 0.9d
 			rotation: 0.0d

@@ -832,5 +832,5 @@ images = [
 images[0]["x"] = 15
 images[1]["x"] = 15
 
-chapter(C, "Create: Messing", "create:brass_casing", "tech", quests, shape="gear", order=9, stage=2,
+chapter(C, "Create: Messing", "create:brass_casing", "tech", quests, shape="circle", order=9, stage=2,
         subtitle=["Stufe 2: Lohenbrenner, Messing, Präzisionsgetriebe, das Messingherz und die Create-Addons."], images=images)

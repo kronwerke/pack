@@ -13,7 +13,7 @@
 		{
 			id: "5FB9FCCC02BA9AD6"
 			x: 0.5d
-			y: 2.575d
+			y: 2.925d
 			icon: {
 				id: "hostilenetworks:deep_learner"
 				count: 1
@@ -51,7 +51,7 @@
 		{
 			id: "1DC1331FA523CAC6"
 			x: 0.0d
-			y: 7.375000000000001d
+			y: 7.7250000000000005d
 			icon: {
 				id: "hostilenetworks:blank_data_model"
 				count: 1
@@ -91,7 +91,7 @@
 		{
 			id: "681CB92F88800613"
 			x: 0.0d
-			y: 9.475000000000001d
+			y: 9.825000000000001d
 			icon: {
 				id: "minecraft:spyglass"
 				count: 1
@@ -117,7 +117,7 @@
 		{
 			id: "7C68B4CD2CADFA5A"
 			x: 2.5d
-			y: 7.625000000000001d
+			y: 7.9750000000000005d
 			icon: {
 				id: "hostilenetworks:blank_data_model"
 				count: 1
@@ -164,7 +164,7 @@
 		{
 			id: "4CB2B54E2B6F8BE8"
 			x: 5.0d
-			y: 7.375000000000001d
+			y: 7.7250000000000005d
 			icon: {
 				id: "minecraft:rotten_flesh"
 				count: 1
@@ -200,7 +200,7 @@
 		{
 			id: "7BE5B5BDC535A3FC"
 			x: 7.25d
-			y: 7.375000000000001d
+			y: 7.7250000000000005d
 			icon: {
 				id: "minecraft:iron_ingot"
 				count: 1
@@ -241,7 +241,7 @@
 		{
 			id: "157ABCC6AB733128"
 			x: 9.5d
-			y: 7.375000000000001d
+			y: 7.7250000000000005d
 			icon: {
 				id: "minecraft:iron_block"
 				count: 1
@@ -282,7 +282,7 @@
 		{
 			id: "1460AD2C9D62D06E"
 			x: 12.25d
-			y: 7.875000000000001d
+			y: 8.225000000000001d
 			icon: {
 				id: "minecraft:golden_apple"
 				count: 1
@@ -325,7 +325,7 @@
 		{
 			id: "180C17CAE1E36A20"
 			x: 15.0d
-			y: 7.375000000000001d
+			y: 7.7250000000000005d
 			icon: {
 				id: "minecraft:ender_eye"
 				count: 1
@@ -351,7 +351,7 @@
 		{
 			id: "2F75D7990B5FFDC1"
 			x: 0.25d
-			y: 15.025000000000002d
+			y: 15.375000000000002d
 			icon: {
 				id: "minecraft:book"
 				count: 1
@@ -359,6 +359,7 @@
 			size: 1.5d
 			shape: "hexagon"
 			hide_dependency_lines: true
+			hide_dependent_lines: true
 			dependencies: [
 				"7C68B4CD2CADFA5A"
 			]
@@ -379,7 +380,7 @@
 		{
 			id: "65CF736881DA0C97"
 			x: 2.75d
-			y: 14.775000000000002d
+			y: 15.125000000000002d
 			icon: {
 				id: "minecraft:wither_skeleton_skull"
 				count: 1
@@ -424,7 +425,7 @@
 		{
 			id: "1D60F7B9916F92B1"
 			x: 4.45d
-			y: 14.775000000000002d
+			y: 15.125000000000002d
 			icon: {
 				id: "minecraft:blaze_rod"
 				count: 1
@@ -465,7 +466,7 @@
 		{
 			id: "6AA8FAEAF3F7E15A"
 			x: 2.75d
-			y: 16.625000000000004d
+			y: 16.975d
 			icon: {
 				id: "minecraft:ender_pearl"
 				count: 1
@@ -501,7 +502,7 @@
 		{
 			id: "17FFAA591909DA98"
 			x: 4.45d
-			y: 16.625000000000004d
+			y: 16.975d
 			icon: {
 				id: "minecraft:ghast_tear"
 				count: 1
@@ -538,7 +539,7 @@
 		{
 			id: "314331A7919C935F"
 			x: 2.75d
-			y: 18.475d
+			y: 18.825000000000003d
 			icon: {
 				id: "minecraft:glowstone_dust"
 				count: 1
@@ -584,7 +585,7 @@
 		{
 			id: "467BFAD9554B014C"
 			x: 4.45d
-			y: 18.475d
+			y: 18.825000000000003d
 			icon: {
 				id: "ars_nouveau:wilden_horn"
 				count: 1
@@ -621,7 +622,7 @@
 		{
 			id: "7EFFC40035977105"
 			x: 2.75d
-			y: 20.325000000000003d
+			y: 20.675000000000004d
 			icon: {
 				id: "minecraft:chest"
 				count: 1
@@ -654,7 +655,7 @@
 		{
 			id: "7B2AA4ED5FBC6D2E"
 			x: 4.45d
-			y: 20.325000000000003d
+			y: 20.675000000000004d
 			icon: {
 				id: "minecraft:wither_skeleton_skull"
 				count: 1
@@ -680,7 +681,7 @@
 		{
 			id: "2CCF6BD423383093"
 			x: 0.25d
-			y: 25.625000000000004d
+			y: 25.975d
 			icon: {
 				id: "minecraft:comparator"
 				count: 1
@@ -721,7 +722,7 @@
 		{
 			id: "1578E32783E066D2"
 			x: 2.75d
-			y: 25.375000000000004d
+			y: 25.725d
 			icon: {
 				id: "minecraft:clay_ball"
 				count: 1
@@ -759,7 +760,7 @@
 		{
 			id: "3EE3670FBEA66FE6"
 			x: 2.75d
-			y: 27.225000000000005d
+			y: 27.575000000000003d
 			icon: {
 				id: "minecraft:clay"
 				count: 1
@@ -798,7 +799,7 @@
 		{
 			id: "260723F843366317"
 			x: 5.25d
-			y: 25.625000000000004d
+			y: 25.975d
 			icon: {
 				id: "minecraft:ender_eye"
 				count: 1
@@ -831,7 +832,7 @@
 		{
 			id: "1C3B7E2EEA87A725"
 			x: 7.75d
-			y: 25.375000000000004d
+			y: 25.725d
 			icon: {
 				id: "minecraft:experience_bottle"
 				count: 1
@@ -861,7 +862,7 @@
 		{
 			id: "39949DD23D8542B2"
 			x: 7.75d
-			y: 29.075000000000003d
+			y: 29.425d
 			icon: {
 				id: "minecraft:iron_ingot"
 				count: 1
@@ -899,7 +900,7 @@
 		{
 			id: "2A7DACF11F66F62A"
 			x: 7.75d
-			y: 27.225000000000005d
+			y: 27.575000000000003d
 			icon: {
 				id: "mekanism:basic_energy_cube"
 				count: 1
@@ -933,7 +934,7 @@
 		{
 			id: "784FBE05FF45B4E4"
 			x: 10.25d
-			y: 25.625000000000004d
+			y: 25.975d
 			icon: {
 				id: "minecraft:hopper"
 				count: 1
@@ -965,7 +966,7 @@
 		{
 			id: "7EA7F4A9070E15E8"
 			x: 0.25d
-			y: 34.375d
+			y: 34.725d
 			icon: {
 				id: "minecraft:anvil"
 				count: 1
@@ -1006,7 +1007,7 @@
 		{
 			id: "52329B282B1E5A1E"
 			x: 3.125d
-			y: 34.125d
+			y: 34.475d
 			icon: {
 				id: "minecraft:blaze_rod"
 				count: 1
@@ -1044,7 +1045,7 @@
 		{
 			id: "71B5C3CA4158995A"
 			x: 3.125d
-			y: 38.075d
+			y: 38.425000000000004d
 			icon: {
 				id: "minecraft:paper"
 				count: 1
@@ -1074,7 +1075,7 @@
 		{
 			id: "3B5313E3CE0CBCDE"
 			x: 3.125d
-			y: 36.475d
+			y: 36.825d
 			icon: {
 				id: "minecraft:black_stained_glass"
 				count: 1
@@ -1121,7 +1122,7 @@
 		{
 			id: "17E8FDE47210D7F1"
 			x: 5.75d
-			y: 34.125d
+			y: 34.475d
 			icon: {
 				id: "minecraft:redstone_block"
 				count: 1
@@ -1159,7 +1160,7 @@
 		{
 			id: "656D85B162A33182"
 			x: 5.75d
-			y: 36.1d
+			y: 36.45d
 			icon: {
 				id: "minecraft:nether_star"
 				count: 1
@@ -1189,7 +1190,7 @@
 		{
 			id: "3AC5EB06EAA9E7C7"
 			x: 8.0d
-			y: 34.125d
+			y: 34.475d
 			icon: {
 				id: "hostilenetworks:deep_learner"
 				count: 1
@@ -1236,10 +1237,10 @@
 		{
 			id: "49CB7284F6035715"
 			image: "kronwerke:textures/quests/hostile_networks/title.png"
-			x: 7.9350000000000005d
+			x: 9.27d
 			y: 0.0d
-			width: 16.87d
-			height: 1.75d
+			width: 19.54d
+			height: 2.45d
 			rotation: 0.0d
 			order: 1
 		}
@@ -1247,7 +1248,7 @@
 			id: "4B923B6C0F208DFE"
 			image: "kronwerke:textures/quests/hostile_networks/learn.png"
 			x: 2.1d
-			y: 6.025000000000001d
+			y: 6.375000000000001d
 			width: 5.2d
 			height: 0.9d
 			rotation: 0.0d
@@ -1257,7 +1258,7 @@
 			id: "30A9C0AD6CC48A83"
 			image: "kronwerke:textures/quests/hostile_networks/models.png"
 			x: 4.205d
-			y: 13.425d
+			y: 13.775d
 			width: 9.41d
 			height: 0.9d
 			rotation: 0.0d
@@ -1267,7 +1268,7 @@
 			id: "313D966E262BCFE9"
 			image: "kronwerke:textures/quests/hostile_networks/simulate.png"
 			x: 2.705d
-			y: 24.025000000000002d
+			y: 24.375d
 			width: 6.41d
 			height: 0.9d
 			rotation: 0.0d
@@ -1277,7 +1278,7 @@
 			id: "4FC56500E51C502C"
 			image: "kronwerke:textures/quests/hostile_networks/fabricate.png"
 			x: 2.75d
-			y: 32.775000000000006d
+			y: 33.12500000000001d
 			width: 6.5d
 			height: 0.9d
 			rotation: 0.0d

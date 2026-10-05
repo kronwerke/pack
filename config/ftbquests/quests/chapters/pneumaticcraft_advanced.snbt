@@ -13,7 +13,7 @@
 		{
 			id: "674C304FB40CDEAC"
 			x: 0.5d
-			y: 2.575d
+			y: 2.925d
 			icon: {
 				id: "pneumaticcraft:assembly_controller"
 				count: 1
@@ -51,7 +51,7 @@
 		{
 			id: "5A072D8F78E05A22"
 			x: 0.0d
-			y: 7.375000000000001d
+			y: 7.7250000000000005d
 			icon: {
 				id: "pneumaticcraft:assembly_program_laser"
 				count: 1
@@ -100,7 +100,7 @@
 		{
 			id: "4F06DE55387ECBCE"
 			x: 0.0d
-			y: 9.225000000000001d
+			y: 9.575000000000001d
 			hide_dependency_lines: true
 			dependencies: [
 				"674C304FB40CDEAC"
@@ -136,7 +136,7 @@
 		{
 			id: "20773ED6F473E146"
 			x: 2.25d
-			y: 7.375000000000001d
+			y: 7.7250000000000005d
 			icon: {
 				id: "pneumaticcraft:assembly_io_unit_import"
 				count: 1
@@ -184,7 +184,7 @@
 		{
 			id: "572B2ECDCDEB5B72"
 			x: 2.25d
-			y: 9.225000000000001d
+			y: 9.575000000000001d
 			dependencies: [
 				"4F06DE55387ECBCE"
 			]
@@ -219,7 +219,7 @@
 		{
 			id: "18D8DE96327D89F9"
 			x: 2.25d
-			y: 11.075000000000001d
+			y: 11.425d
 			dependencies: [
 				"4F06DE55387ECBCE"
 			]
@@ -254,13 +254,14 @@
 		{
 			id: "217A0BFE64EE5773"
 			x: 4.75d
-			y: 7.625000000000001d
+			y: 7.9750000000000005d
 			icon: {
 				id: "pneumaticcraft:assembly_program_drill"
 				count: 1
 			}
 			size: 1.5d
 			shape: "gear"
+			hide_dependency_lines: true
 			dependencies: [
 				"5A072D8F78E05A22"
 				"20773ED6F473E146"
@@ -303,7 +304,7 @@
 		{
 			id: "50AB5CA48E1320D3"
 			x: 0.25d
-			y: 16.375d
+			y: 16.725d
 			icon: {
 				id: "pneumaticcraft:advanced_pressure_tube"
 				count: 1
@@ -311,6 +312,7 @@
 			size: 1.5d
 			shape: "hexagon"
 			hide_dependency_lines: true
+			hide_dependent_lines: true
 			dependencies: [
 				"217A0BFE64EE5773"
 			]
@@ -350,7 +352,7 @@
 		{
 			id: "510403A293E4A17C"
 			x: 2.75d
-			y: 16.125d
+			y: 16.475d
 			icon: {
 				id: "pneumaticcraft:advanced_air_compressor"
 				count: 1
@@ -394,7 +396,7 @@
 		{
 			id: "551A07D8E07E72B9"
 			x: 2.75d
-			y: 19.825d
+			y: 20.175d
 			icon: {
 				id: "pneumaticcraft:advanced_liquid_compressor"
 				count: 1
@@ -434,7 +436,7 @@
 		{
 			id: "749BFCFBFE7FBD99"
 			x: 5.0d
-			y: 16.125d
+			y: 16.475d
 			icon: {
 				id: "pneumaticcraft:flux_compressor"
 				count: 1
@@ -478,7 +480,7 @@
 		{
 			id: "2943E707A8F30D04"
 			x: 2.75d
-			y: 21.675d
+			y: 22.025000000000002d
 			icon: {
 				id: "pneumaticcraft:pneumatic_dynamo"
 				count: 1
@@ -518,7 +520,7 @@
 		{
 			id: "3F05BE6E2C01A787"
 			x: 5.0d
-			y: 17.975d
+			y: 18.325000000000003d
 			icon: {
 				id: "pneumaticcraft:electrostatic_compressor"
 				count: 1
@@ -563,7 +565,7 @@
 		{
 			id: "55DAFBA4EDCEC57F"
 			x: 2.75d
-			y: 23.525d
+			y: 23.875d
 			icon: {
 				id: "pneumaticcraft:thermal_compressor"
 				count: 1
@@ -603,7 +605,7 @@
 		{
 			id: "2B5CA14619486FF0"
 			x: 2.75d
-			y: 17.975d
+			y: 18.325000000000003d
 			icon: {
 				id: "pneumaticcraft:solar_cell"
 				count: 1
@@ -652,7 +654,7 @@
 		{
 			id: "763F899230A030F8"
 			x: 5.0d
-			y: 19.825d
+			y: 20.175d
 			icon: {
 				id: "pneumaticcraft:solar_compressor"
 				count: 1
@@ -697,7 +699,7 @@
 		{
 			id: "139110C5F8434A03"
 			x: 0.0d
-			y: 28.575d
+			y: 28.925d
 			icon: {
 				id: "pneumaticcraft:unassembled_pcb"
 				count: 1
@@ -746,7 +748,7 @@
 		{
 			id: "1EBD80B5168BEC29"
 			x: 2.5d
-			y: 28.825d
+			y: 29.175d
 			icon: {
 				id: "pneumaticcraft:printed_circuit_board"
 				count: 1
@@ -792,7 +794,7 @@
 		{
 			id: "3256C9684CC2EC3A"
 			x: 0.25d
-			y: 39.175d
+			y: 39.525d
 			icon: {
 				id: "pneumaticcraft:programmer"
 				count: 1
@@ -839,7 +841,7 @@
 		{
 			id: "385C6799DC742026"
 			x: 2.75d
-			y: 38.925d
+			y: 39.275d
 			dependencies: [
 				"3256C9684CC2EC3A"
 			]
@@ -874,7 +876,7 @@
 		{
 			id: "3231356B06AD1A32"
 			x: 2.75d
-			y: 40.775d
+			y: 41.125d
 			icon: {
 				id: "pneumaticcraft:gps_area_tool"
 				count: 1
@@ -922,7 +924,7 @@
 		{
 			id: "17CA3655D2C5898B"
 			x: 0.5d
-			y: 46.324999999999996d
+			y: 46.675d
 			icon: {
 				id: "pneumaticcraft:drone"
 				count: 1
@@ -969,7 +971,7 @@
 		{
 			id: "7F11A7C56DB50529"
 			x: 5.0d
-			y: 38.925d
+			y: 39.275d
 			icon: {
 				id: "pneumaticcraft:programming_puzzle"
 				count: 1
@@ -998,7 +1000,7 @@
 		{
 			id: "40A70B21ED71996E"
 			x: 7.25d
-			y: 38.925d
+			y: 39.275d
 			icon: {
 				id: "minecraft:hopper"
 				count: 1
@@ -1027,7 +1029,7 @@
 		{
 			id: "6E0F9169C15D1706"
 			x: 9.5d
-			y: 38.925d
+			y: 39.275d
 			icon: {
 				id: "minecraft:dropper"
 				count: 1
@@ -1056,7 +1058,7 @@
 		{
 			id: "41FD0D218C6DDD62"
 			x: 11.75d
-			y: 38.925d
+			y: 39.275d
 			icon: {
 				id: "pneumaticcraft:gps_tool"
 				count: 1
@@ -1085,7 +1087,7 @@
 		{
 			id: "574BCA422130FCBB"
 			x: 0.5d
-			y: 52.125d
+			y: 52.474999999999994d
 			icon: {
 				id: "minecraft:iron_pickaxe"
 				count: 1
@@ -1115,7 +1117,7 @@
 		{
 			id: "44477DCB55DFF3B0"
 			x: 3.25d
-			y: 52.125d
+			y: 52.474999999999994d
 			icon: {
 				id: "minecraft:bricks"
 				count: 1
@@ -1144,7 +1146,7 @@
 		{
 			id: "1A33962F72337913"
 			x: 5.5d
-			y: 47.925d
+			y: 48.275d
 			icon: {
 				id: "minecraft:iron_hoe"
 				count: 1
@@ -1173,7 +1175,7 @@
 		{
 			id: "3AF7C5D41B08E881"
 			x: 0.5d
-			y: 60.02499999999999d
+			y: 60.37499999999999d
 			icon: {
 				id: "pneumaticcraft:drone"
 				count: 1
@@ -1226,7 +1228,7 @@
 		{
 			id: "7BA5A8754283846C"
 			x: 3.25d
-			y: 45.824999999999996d
+			y: 46.175d
 			icon: {
 				id: "pneumaticcraft:logistics_frame_requester"
 				count: 1
@@ -1274,7 +1276,7 @@
 		{
 			id: "7406572C8402420F"
 			x: 5.5d
-			y: 45.824999999999996d
+			y: 46.175d
 			icon: {
 				id: "pneumaticcraft:logistics_drone"
 				count: 1
@@ -1318,7 +1320,7 @@
 		{
 			id: "146623D846D8F44F"
 			x: 3.25d
-			y: 47.925d
+			y: 48.275d
 			icon: {
 				id: "pneumaticcraft:harvesting_drone"
 				count: 1
@@ -1358,7 +1360,7 @@
 		{
 			id: "2A72E38C0FC2E6EF"
 			x: 3.25d
-			y: 50.025d
+			y: 50.375d
 			icon: {
 				id: "pneumaticcraft:guard_drone"
 				count: 1
@@ -1398,7 +1400,7 @@
 		{
 			id: "1C41349412676BFC"
 			x: 8.0d
-			y: 46.074999999999996d
+			y: 46.425d
 			icon: {
 				id: "pneumaticcraft:aerial_interface"
 				count: 1
@@ -1444,7 +1446,7 @@
 		{
 			id: "14650F4827AE0381"
 			x: 0.5d
-			y: 57.42499999999999d
+			y: 57.77499999999999d
 			icon: {
 				id: "pneumaticcraft:universal_sensor"
 				count: 1
@@ -1493,7 +1495,7 @@
 		{
 			id: "61BDE2340B6537C7"
 			x: 3.25d
-			y: 57.42499999999999d
+			y: 57.77499999999999d
 			icon: {
 				id: "pneumaticcraft:security_station"
 				count: 1
@@ -1542,7 +1544,7 @@
 		{
 			id: "68B0BEF2F3D4B62B"
 			x: 3.25d
-			y: 59.52499999999999d
+			y: 59.87499999999999d
 			icon: {
 				id: "pneumaticcraft:programmable_controller"
 				count: 1
@@ -1587,7 +1589,7 @@
 		{
 			id: "22E942AC131830D5"
 			x: 0.0d
-			y: 33.625d
+			y: 33.975d
 			icon: {
 				id: "pneumaticcraft:spawner_extractor"
 				count: 1
@@ -1632,7 +1634,7 @@
 		{
 			id: "6339F26E1BC04DA9"
 			x: 2.25d
-			y: 33.625d
+			y: 33.975d
 			icon: {
 				id: "pneumaticcraft:vacuum_trap"
 				count: 1
@@ -1680,7 +1682,7 @@
 		{
 			id: "499EDB78A6E55E5B"
 			x: 5.0d
-			y: 34.125d
+			y: 34.475d
 			icon: {
 				id: "pneumaticcraft:pressurized_spawner"
 				count: 1
@@ -1726,7 +1728,7 @@
 		{
 			id: "766D489304D08574"
 			x: 7.75d
-			y: 33.625d
+			y: 33.975d
 			icon: {
 				id: "pneumaticcraft:programming_puzzle"
 				count: 1
@@ -1754,10 +1756,10 @@
 		{
 			id: "6BC4F2E346A50F54"
 			image: "kronwerke:textures/quests/pneumaticcraft_advanced/title.png"
-			x: 11.65d
+			x: 13.245d
 			y: 0.0d
-			width: 24.3d
-			height: 1.75d
+			width: 27.49d
+			height: 2.45d
 			rotation: 0.0d
 			order: 1
 		}
@@ -1765,7 +1767,7 @@
 			id: "20DA0DD4ECBCDD38"
 			image: "kronwerke:textures/quests/pneumaticcraft_advanced/assembly.png"
 			x: 2.81d
-			y: 6.025000000000001d
+			y: 6.375000000000001d
 			width: 6.62d
 			height: 0.9d
 			rotation: 0.0d
@@ -1775,7 +1777,7 @@
 			id: "46094F97B93BDC68"
 			image: "kronwerke:textures/quests/pneumaticcraft_advanced/pressure.png"
 			x: 3.535d
-			y: 14.775d
+			y: 15.125000000000002d
 			width: 8.07d
 			height: 0.9d
 			rotation: 0.0d
@@ -1785,7 +1787,7 @@
 			id: "3CFE849EBD2A28CC"
 			image: "kronwerke:textures/quests/pneumaticcraft_advanced/pcb.png"
 			x: 1.83d
-			y: 27.224999999999998d
+			y: 27.575d
 			width: 4.66d
 			height: 0.9d
 			rotation: 0.0d
@@ -1795,7 +1797,7 @@
 			id: "6A37BB98B7C86B58"
 			image: "kronwerke:textures/quests/pneumaticcraft_advanced/spawner.png"
 			x: 1.01d
-			y: 32.275d
+			y: 32.62500000000001d
 			width: 3.02d
 			height: 0.9d
 			rotation: 0.0d
@@ -1805,7 +1807,7 @@
 			id: "34B331FBAD40A253"
 			image: "kronwerke:textures/quests/pneumaticcraft_advanced/drones.png"
 			x: 3.62d
-			y: 37.575d
+			y: 37.925000000000004d
 			width: 8.24d
 			height: 0.9d
 			rotation: 0.0d
@@ -1815,7 +1817,7 @@
 			id: "6105267E502D4B75"
 			image: "kronwerke:textures/quests/pneumaticcraft_advanced/ready.png"
 			x: 2.185d
-			y: 44.475d
+			y: 44.825d
 			width: 5.37d
 			height: 0.9d
 			rotation: 0.0d
@@ -1825,7 +1827,7 @@
 			id: "2D4A6130AA5B923E"
 			image: "kronwerke:textures/quests/pneumaticcraft_advanced/control.png"
 			x: 3.155d
-			y: 56.074999999999996d
+			y: 56.425d
 			width: 7.31d
 			height: 0.9d
 			rotation: 0.0d

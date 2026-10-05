@@ -13,13 +13,14 @@
 		{
 			id: "297B5583009AF0A4"
 			x: 0.5d
-			y: 2.6d
+			y: 2.96d
 			icon: {
 				id: "botania:rune_of_mana"
 				count: 1
 			}
 			size: 2.0d
 			shape: "hexagon"
+			hide_dependent_lines: true
 			tasks: [
 				{
 					id: "7FBFC0BFBAD8A912"
@@ -46,7 +47,7 @@
 		{
 			id: "5F58611AAEBAD0CD"
 			x: 3.5d
-			y: 2.35d
+			y: 2.71d
 			icon: {
 				id: "naturesaura:wood_stand"
 				count: 1
@@ -87,7 +88,7 @@
 		{
 			id: "1F7A2EEE3F0CDC02"
 			x: 0.25d
-			y: 9.5d
+			y: 9.860000000000001d
 			icon: {
 				id: "botania:manasteel_ingot"
 				count: 1
@@ -129,7 +130,7 @@
 		{
 			id: "1CBB52F9CEC18DAE"
 			x: 0.25d
-			y: 7.3999999999999995d
+			y: 7.760000000000001d
 			icon: {
 				id: "create:brass_casing"
 				count: 1
@@ -173,7 +174,7 @@
 		{
 			id: "6DF888D56AB321F0"
 			x: 2.75d
-			y: 7.3999999999999995d
+			y: 7.760000000000001d
 			icon: {
 				id: "botania:mana_pearl"
 				count: 1
@@ -207,7 +208,7 @@
 		{
 			id: "20210ADA8839D3DA"
 			x: 5.0d
-			y: 7.3999999999999995d
+			y: 7.760000000000001d
 			icon: {
 				id: "botania:alchemy_catalyst"
 				count: 1
@@ -247,7 +248,7 @@
 		{
 			id: "3C0E066C9D7CE123"
 			x: 10.0d
-			y: 7.3999999999999995d
+			y: 7.760000000000001d
 			icon: {
 				id: "botania:mana_quartz"
 				count: 1
@@ -282,7 +283,7 @@
 		{
 			id: "52599A8537E3F5A2"
 			x: 5.0d
-			y: 9.25d
+			y: 9.610000000000001d
 			icon: {
 				id: "botania:mana_tablet"
 				count: 1
@@ -321,7 +322,7 @@
 		{
 			id: "72DC15024652AB79"
 			x: 7.25d
-			y: 7.3999999999999995d
+			y: 7.760000000000001d
 			optional: true
 			dependencies: [
 				"52599A8537E3F5A2"
@@ -352,7 +353,7 @@
 		{
 			id: "3293D8E1C9DCF430"
 			x: 2.75d
-			y: 11.1d
+			y: 11.46d
 			optional: true
 			dependencies: [
 				"1F7A2EEE3F0CDC02"
@@ -383,7 +384,7 @@
 		{
 			id: "681BA31B899D5F2B"
 			x: 2.75d
-			y: 12.95d
+			y: 13.310000000000002d
 			icon: {
 				id: "mekanism:metallurgic_infuser"
 				count: 1
@@ -408,7 +409,7 @@
 		{
 			id: "726485A25C208EA9"
 			x: 2.75d
-			y: 9.25d
+			y: 9.610000000000001d
 			optional: true
 			dependencies: [
 				"1F7A2EEE3F0CDC02"
@@ -439,7 +440,7 @@
 		{
 			id: "3A2B15368150CEF9"
 			x: 0.5d
-			y: 18.5d
+			y: 18.86d
 			icon: {
 				id: "botania:runic_altar"
 				count: 1
@@ -447,6 +448,7 @@
 			size: 2.0d
 			shape: "square"
 			hide_dependency_lines: true
+			hide_dependent_lines: true
 			dependencies: [
 				"297B5583009AF0A4"
 			]
@@ -481,7 +483,7 @@
 		{
 			id: "506FEA0AE13804CF"
 			x: 3.25d
-			y: 18.0d
+			y: 18.36d
 			icon: {
 				id: "botania:rune_of_water"
 				count: 1
@@ -515,11 +517,12 @@
 		{
 			id: "5B1BF1525F54306D"
 			x: 3.25d
-			y: 20.1d
+			y: 20.46d
 			icon: {
 				id: "botania:rune_of_fire"
 				count: 1
 			}
+			hide_dependent_lines: true
 			dependencies: [
 				"3A2B15368150CEF9"
 			]
@@ -549,11 +552,12 @@
 		{
 			id: "2166FA7D96245830"
 			x: 3.25d
-			y: 22.2d
+			y: 22.56d
 			icon: {
 				id: "botania:rune_of_earth"
 				count: 1
 			}
+			hide_dependent_lines: true
 			dependencies: [
 				"3A2B15368150CEF9"
 			]
@@ -583,11 +587,12 @@
 		{
 			id: "22F80B8DD1443E01"
 			x: 3.25d
-			y: 24.3d
+			y: 24.66d
 			icon: {
 				id: "botania:rune_of_air"
 				count: 1
 			}
+			hide_dependent_lines: true
 			dependencies: [
 				"3A2B15368150CEF9"
 			]
@@ -617,7 +622,7 @@
 		{
 			id: "6C9398D392459A07"
 			x: 3.25d
-			y: 26.4d
+			y: 26.759999999999998d
 			icon: {
 				id: "botania:rune_of_mana"
 				count: 1
@@ -653,7 +658,7 @@
 		{
 			id: "63BE3A31ADD1CC1F"
 			x: 5.5d
-			y: 18.0d
+			y: 18.36d
 			icon: {
 				id: "botania:rune_of_spring"
 				count: 1
@@ -688,7 +693,7 @@
 		{
 			id: "2E067B80B7EA60F2"
 			x: 7.2d
-			y: 18.0d
+			y: 18.36d
 			icon: {
 				id: "botania:rune_of_summer"
 				count: 1
@@ -723,7 +728,7 @@
 		{
 			id: "555DD9CA6B18F83F"
 			x: 5.5d
-			y: 22.2d
+			y: 22.56d
 			icon: {
 				id: "botania:rune_of_autumn"
 				count: 1
@@ -759,7 +764,7 @@
 		{
 			id: "1F82C8B834DEE977"
 			x: 5.5d
-			y: 20.1d
+			y: 20.46d
 			icon: {
 				id: "botania:rune_of_winter"
 				count: 1
@@ -794,7 +799,7 @@
 		{
 			id: "1258B180FD76A96D"
 			x: 0.0d
-			y: 31.7d
+			y: 32.059999999999995d
 			icon: {
 				id: "botania:rune_of_gluttony"
 				count: 1
@@ -835,7 +840,7 @@
 		{
 			id: "148710E83268A906"
 			x: 2.25d
-			y: 31.7d
+			y: 32.059999999999995d
 			icon: {
 				id: "botania:rune_of_lust"
 				count: 1
@@ -875,7 +880,7 @@
 		{
 			id: "2A66B27AF145480F"
 			x: 4.5d
-			y: 31.7d
+			y: 32.059999999999995d
 			icon: {
 				id: "botania:rune_of_greed"
 				count: 1
@@ -915,7 +920,7 @@
 		{
 			id: "76750A841E948105"
 			x: 2.25d
-			y: 33.3d
+			y: 33.66d
 			icon: {
 				id: "botania:rune_of_sloth"
 				count: 1
@@ -955,7 +960,7 @@
 		{
 			id: "468286D85AD797D5"
 			x: 4.5d
-			y: 33.3d
+			y: 33.66d
 			icon: {
 				id: "botania:rune_of_wrath"
 				count: 1
@@ -995,7 +1000,7 @@
 		{
 			id: "2CC3FAEFCE83AF0F"
 			x: 2.25d
-			y: 34.9d
+			y: 35.26d
 			icon: {
 				id: "botania:rune_of_envy"
 				count: 1
@@ -1035,7 +1040,7 @@
 		{
 			id: "29BB74D50C2B5086"
 			x: 4.5d
-			y: 34.9d
+			y: 35.26d
 			icon: {
 				id: "botania:rune_of_pride"
 				count: 1
@@ -1075,7 +1080,7 @@
 		{
 			id: "428F8FE120E20C54"
 			x: 7.2d
-			y: 22.2d
+			y: 22.56d
 			icon: {
 				id: "botania:botanical_brewery"
 				count: 1
@@ -1115,7 +1120,7 @@
 		{
 			id: "6DEEC20BEA0BEE49"
 			x: 2.75d
-			y: 58.699999999999996d
+			y: 59.05999999999998d
 			icon: {
 				id: "botania:thermalily"
 				count: 1
@@ -1140,7 +1145,7 @@
 		{
 			id: "4A63D4D567B48BB9"
 			x: 0.25d
-			y: 58.949999999999996d
+			y: 59.30999999999998d
 			icon: {
 				id: "botania:thermalily"
 				count: 1
@@ -1187,7 +1192,7 @@
 		{
 			id: "12DA47F7E7862DF2"
 			x: 9.45d
-			y: 20.1d
+			y: 20.46d
 			icon: {
 				id: "botania:gourmaryllis"
 				count: 1
@@ -1222,7 +1227,7 @@
 		{
 			id: "28524AFE78419B4C"
 			x: 2.25d
-			y: 36.5d
+			y: 36.86d
 			icon: {
 				id: "botania:munchdew"
 				count: 1
@@ -1257,7 +1262,7 @@
 		{
 			id: "142D9BD38196A6BA"
 			x: 7.2d
-			y: 24.3d
+			y: 24.66d
 			icon: {
 				id: "botania:rosa_arcana"
 				count: 1
@@ -1291,7 +1296,7 @@
 		{
 			id: "6D8713C88B54A04A"
 			x: 9.45d
-			y: 18.0d
+			y: 18.36d
 			icon: {
 				id: "botania:narslimmus"
 				count: 1
@@ -1327,7 +1332,7 @@
 		{
 			id: "1EEBAD3477910989"
 			x: 7.2d
-			y: 20.1d
+			y: 20.46d
 			icon: {
 				id: "botania:jiyuulia"
 				count: 1
@@ -1367,7 +1372,7 @@
 		{
 			id: "150B19122018682E"
 			x: 0.25d
-			y: 60.55d
+			y: 60.90999999999998d
 			icon: {
 				id: "botania:jaded_amaranthus"
 				count: 1
@@ -1402,7 +1407,7 @@
 		{
 			id: "6122D0CE9C0E01BC"
 			x: 0.25d
-			y: 62.4d
+			y: 62.759999999999984d
 			icon: {
 				id: "botania:agricarnation"
 				count: 1
@@ -1437,7 +1442,7 @@
 		{
 			id: "24B30BCE6EA39A6C"
 			x: 0.25d
-			y: 64.25d
+			y: 64.60999999999999d
 			icon: {
 				id: "botania:hopperhock"
 				count: 1
@@ -1472,7 +1477,7 @@
 		{
 			id: "214BD8F87F380F6B"
 			x: 5.5d
-			y: 24.3d
+			y: 24.66d
 			icon: {
 				id: "botania:rannuncarpus"
 				count: 1
@@ -1507,7 +1512,7 @@
 		{
 			id: "4486F05415B07D3B"
 			x: 5.5d
-			y: 26.4d
+			y: 26.759999999999998d
 			icon: {
 				id: "botania:clayconia"
 				count: 1
@@ -1542,7 +1547,7 @@
 		{
 			id: "2F88027D3CD23E8B"
 			x: 9.45d
-			y: 22.2d
+			y: 22.56d
 			icon: {
 				id: "botania:exoflame"
 				count: 1
@@ -1577,7 +1582,7 @@
 		{
 			id: "26F99701DE6670F8"
 			x: 2.75d
-			y: 60.55d
+			y: 60.90999999999998d
 			icon: {
 				id: "botania:tigerseye"
 				count: 1
@@ -1635,7 +1640,7 @@
 		{
 			id: "443BF49FB69032A0"
 			x: 2.75d
-			y: 62.4d
+			y: 62.759999999999984d
 			icon: {
 				id: "botania:pollidisiac"
 				count: 1
@@ -1684,7 +1689,7 @@
 		{
 			id: "1149FC31C6D283BD"
 			x: 2.75d
-			y: 64.25d
+			y: 64.60999999999999d
 			icon: {
 				id: "botania:vinculotus"
 				count: 1
@@ -1742,7 +1747,7 @@
 		{
 			id: "15BEC326A8052C3E"
 			x: 0.0d
-			y: 69.3d
+			y: 69.65999999999998d
 			icon: {
 				id: "botania:ring_of_magnetization"
 				count: 1
@@ -1828,7 +1833,7 @@
 		{
 			id: "6A9B352D1311E946"
 			x: 2.25d
-			y: 70.89999999999999d
+			y: 71.25999999999998d
 			icon: {
 				id: "botania:greater_band_of_mana"
 				count: 1
@@ -1888,7 +1893,7 @@
 		{
 			id: "58DE9117C21BCE2E"
 			x: 2.25d
-			y: 69.3d
+			y: 69.65999999999998d
 			icon: {
 				id: "botania:cirrus_amulet"
 				count: 1
@@ -1955,7 +1960,7 @@
 		{
 			id: "1F166311ADC91093"
 			x: 4.5d
-			y: 69.3d
+			y: 69.65999999999998d
 			icon: {
 				id: "botania:sojournors_sash"
 				count: 1
@@ -2013,7 +2018,7 @@
 		{
 			id: "14AA6E5793BFA6B0"
 			x: 6.75d
-			y: 69.3d
+			y: 69.65999999999998d
 			icon: {
 				id: "botania:third_eye"
 				count: 1
@@ -2098,7 +2103,7 @@
 		{
 			id: "54DFDC3FDB8A5994"
 			x: 0.5d
-			y: 41.8d
+			y: 42.15999999999999d
 			icon: {
 				id: "botania:terrestrial_agglomeration_plate"
 				count: 1
@@ -2146,7 +2151,7 @@
 		{
 			id: "1BDB06C5A22FC75F"
 			x: 3.25d
-			y: 43.65d
+			y: 44.00999999999999d
 			icon: {
 				id: "minecraft:lapis_block"
 				count: 1
@@ -2185,7 +2190,7 @@
 		{
 			id: "2B1FF34C1DF3246D"
 			x: 3.25d
-			y: 41.3d
+			y: 41.65999999999999d
 			optional: true
 			dependencies: [
 				"54DFDC3FDB8A5994"
@@ -2216,13 +2221,14 @@
 		{
 			id: "3703449D8AFB77AE"
 			x: 6.25d
-			y: 42.05d
+			y: 42.40999999999999d
 			icon: {
 				id: "botania:terrasteel_ingot"
 				count: 1
 			}
 			size: 2.5d
 			shape: "diamond"
+			hide_dependent_lines: true
 			dependencies: [
 				"1BDB06C5A22FC75F"
 			]
@@ -2257,7 +2263,7 @@
 		{
 			id: "7FB207510E507DA1"
 			x: 9.25d
-			y: 41.3d
+			y: 41.65999999999999d
 			icon: {
 				id: "botania:terra_blade"
 				count: 1
@@ -2288,7 +2294,7 @@
 		{
 			id: "14FE22C633678D6D"
 			x: 0.375d
-			y: 49.199999999999996d
+			y: 49.55999999999999d
 			icon: {
 				id: "botania:mana_pearl"
 				count: 1
@@ -2329,7 +2335,7 @@
 		{
 			id: "3B24B0423BFE31CC"
 			x: 0.375d
-			y: 51.3d
+			y: 51.65999999999999d
 			icon: {
 				id: "botania:terrasteel_ingot"
 				count: 1
@@ -2369,7 +2375,7 @@
 		{
 			id: "312D389F4D1D3371"
 			x: 0.375d
-			y: 53.775d
+			y: 54.13499999999999d
 			icon: {
 				id: "kronwerke:rune_core"
 				count: 1
@@ -2407,7 +2413,7 @@
 		{
 			id: "403D94AC159D99FF"
 			x: 3.5d
-			y: 49.699999999999996d
+			y: 50.05999999999999d
 			icon: {
 				id: "botania:terrasteel_block"
 				count: 1
@@ -2443,10 +2449,10 @@
 		{
 			id: "12D65943A9EC1605"
 			image: "kronwerke:textures/quests/botania_runes/title.png"
-			x: 4.65d
+			x: 5.78d
 			y: 0.0d
-			width: 10.3d
-			height: 1.8d
+			width: 12.56d
+			height: 2.52d
 			rotation: 0.0d
 			order: 1
 		}
@@ -2454,7 +2460,7 @@
 			id: "464C10A45E48EF22"
 			image: "kronwerke:textures/quests/botania_runes/manastahl.png"
 			x: 1.36d
-			y: 6.05d
+			y: 6.410000000000001d
 			width: 3.72d
 			height: 0.9d
 			rotation: 0.0d
@@ -2464,7 +2470,7 @@
 			id: "5873F71C3278090A"
 			image: "kronwerke:textures/quests/botania_runes/runen.png"
 			x: 0.595d
-			y: 16.65d
+			y: 17.009999999999998d
 			width: 2.19d
 			height: 0.9d
 			rotation: 0.0d
@@ -2474,7 +2480,7 @@
 			id: "1B701B8B797EA922"
 			image: "kronwerke:textures/quests/botania_runes/suenden.png"
 			x: 1.5099999999999998d
-			y: 30.349999999999998d
+			y: 30.709999999999997d
 			width: 4.02d
 			height: 0.9d
 			rotation: 0.0d
@@ -2484,7 +2490,7 @@
 			id: "30F4715BF137AFB5"
 			image: "kronwerke:textures/quests/botania_runes/terrastahl.png"
 			x: 1.37d
-			y: 39.95d
+			y: 40.309999999999995d
 			width: 3.74d
 			height: 0.9d
 			rotation: 0.0d
@@ -2494,7 +2500,7 @@
 			id: "56DCB0CAB0E39BAB"
 			image: "kronwerke:textures/quests/botania_runes/obelisk.png"
 			x: 2.15d
-			y: 47.85d
+			y: 48.209999999999994d
 			width: 5.3d
 			height: 0.9d
 			rotation: 0.0d
@@ -2504,7 +2510,7 @@
 			id: "5447CCB7AB22E72A"
 			image: "kronwerke:textures/quests/botania_runes/blumen.png"
 			x: 1.67d
-			y: 57.35d
+			y: 57.70999999999999d
 			width: 4.34d
 			height: 0.9d
 			rotation: 0.0d
@@ -2514,7 +2520,7 @@
 			id: "7BD072F3EE1ACC1D"
 			image: "kronwerke:textures/quests/botania_runes/schmuck.png"
 			x: 1.05d
-			y: 67.95d
+			y: 68.30999999999999d
 			width: 3.1d
 			height: 0.9d
 			rotation: 0.0d

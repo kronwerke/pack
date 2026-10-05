@@ -1,0 +1,44 @@
+[*]
+background:          kronwerke:textures/gui/quests/background.png; color=#F4FFFFFF; tile_size=64
+chapter_panel_background: hollow_rectangle:{{widget_border}}; round_edges + {{background}}; color=#FFFFFF; padding=1
+key_reference_background: kronwerke:textures/gui/quests/background.png; color=#F4FFFFFF; tile_size=64
+selected_chapter_highlight_1: #60d4a24a
+selected_chapter_highlight_2: #28d4a24a
+
+text_color:          #EDE6F5
+hover_text_color:    #F6D68C
+disabled_text_color: #9a90a8
+
+widget_border:     #8a6420
+widget_background: #B4141019
+symbol_in:         #d4a24a
+symbol_out:        #8a6420
+
+button:                hollow_rectangle:{{widget_border}}
+panel:                 {{container_slot}}
+disabled_button:       hollow_rectangle:#3a3146
+hover_button:          {{button}} + #C02c2438; padding=1
+context_menu:          hollow_rectangle:{{widget_border}}; round_edges + {{background}}; color=#FFFFFF; padding=1
+scroll_bar_background: {{widget_background}}
+scroll_bar:            {{button}} + #FF3a3146; padding=1
+container_slot:        {{button}}; padding=-1
+text_box:              hollow_rectangle:{{widget_border}} + #FF0e0b12; padding=1
+
+tasks_text_color:                   #9a6fd6
+rewards_text_color:                 #d4a24a
+quest_view_background:              {{context_menu}}
+quest_view_border:                  {{widget_border}}
+quest_view_title:                   #d4a24a
+quest_completed_color:              #FFd4a24a
+quest_started_color:                #FF9a6fd6
+quest_not_started_color:            #FFEDE6F5
+quest_locked_color:                 #FF6a6276
+dependency_line_texture:            kronwerke:textures/gui/quests/dependency.png
+dependency_line_completed_color:    #FFd4a24a
+dependency_line_uncompleted_color:  #D2c0b6d2
+dependency_line_unavailable_color:  #50807890
+dependency_line_requires_color:     #FF5fd3d3
+dependency_line_required_for_color: #FFf0c860
+dependency_line_selected_speed:     1.0
+dependency_line_unselected_speed:   0.0
+dependency_line_thickness:          0.16

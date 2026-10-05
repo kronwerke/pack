@@ -1,19 +1,19 @@
 {
-	id: "32F4545024F13413"
+	id: "42F4545024F13413"
 	filename: "ae2"
 	icon: {
 		id: "ae2:controller"
 		count: 1
 	}
-	group: "AEAA9718BAF5A32A"
+	group: "4EAA9718BAF5A32A"
 	order_index: 17
 	default_quest_shape: "square"
 	default_hide_dependency_lines: false
 	quests: [
 		{
-			id: "7F3D0C194EC97397"
-			x: 0.0d
-			y: 1.0d
+			id: "1F3D0C194EC97397"
+			x: 0.5d
+			y: 2.45d
 			icon: {
 				id: "ae2:controller"
 				count: 1
@@ -22,7 +22,7 @@
 			shape: "hexagon"
 			tasks: [
 				{
-					id: "7B88E4115F3E15DA"
+					id: "1B88E4115F3E15DA"
 					type: "item"
 					item: {
 						id: "ae2:meteorite_compass"
@@ -33,7 +33,7 @@
 			]
 			rewards: [
 				{
-					id: "3BDA795EB7496E7E"
+					id: "4BDA795EB7496E7E"
 					type: "item"
 					item: {
 						id: "ae2:certus_quartz_crystal"
@@ -42,26 +42,27 @@
 					count: 8
 				}
 				{
-					id: "5E3D94A7D81FE632"
+					id: "6E3D94A7D81FE632"
 					type: "loot"
-					table_id: "BB5E855731D4F100"
+					table_id: "5B5E855731D4F100"
 				}
 			]
 		}
 		{
-			id: "F3A9E0041A4918F2"
-			x: 2.5d
-			y: 0.0d
+			id: "23A9E0041A4918F2"
+			x: 0.25d
+			y: 7.249999999999999d
 			icon: {
 				id: "ae2:sky_stone_block"
 				count: 1
 			}
+			hide_dependency_lines: true
 			dependencies: [
-				"7F3D0C194EC97397"
+				"1F3D0C194EC97397"
 			]
 			tasks: [
 				{
-					id: "31C0A5A2643BDAFA"
+					id: "41C0A5A2643BDAFA"
 					type: "item"
 					item: {
 						id: "ae2:certus_quartz_crystal"
@@ -70,7 +71,7 @@
 					count: 16
 				}
 				{
-					id: "D839F7972E71CE4F"
+					id: "7839F7972E71CE4F"
 					type: "item"
 					item: {
 						id: "ae2:sky_stone_block"
@@ -81,7 +82,7 @@
 			]
 			rewards: [
 				{
-					id: "F6F9541B2444C409"
+					id: "26F9541B2444C409"
 					type: "item"
 					item: {
 						id: "minecraft:iron_ingot"
@@ -90,26 +91,26 @@
 					count: 16
 				}
 				{
-					id: "78E42EE50E13C2B8"
+					id: "18E42EE50E13C2B8"
 					type: "xp_levels"
 					xp_levels: 5
 				}
 			]
 		}
 		{
-			id: "0DDCF058D133D244"
-			x: 5.0d
-			y: 0.0d
+			id: "1DDCF058D133D244"
+			x: 2.75d
+			y: 7.249999999999999d
 			icon: {
 				id: "ae2:mysterious_cube"
 				count: 1
 			}
 			dependencies: [
-				"F3A9E0041A4918F2"
+				"23A9E0041A4918F2"
 			]
 			tasks: [
 				{
-					id: "E9DE83469F9D1360"
+					id: "19DE83469F9D1360"
 					type: "item"
 					item: {
 						id: "ae2:silicon_press"
@@ -118,7 +119,7 @@
 					count: 1
 				}
 				{
-					id: "D47DCA85454934A1"
+					id: "747DCA85454934A1"
 					type: "item"
 					item: {
 						id: "ae2:logic_processor_press"
@@ -127,7 +128,7 @@
 					count: 1
 				}
 				{
-					id: "9E970413A9E6D2BA"
+					id: "3E970413A9E6D2BA"
 					type: "item"
 					item: {
 						id: "ae2:calculation_processor_press"
@@ -136,7 +137,7 @@
 					count: 1
 				}
 				{
-					id: "E47C55CA60AA2E10"
+					id: "147C55CA60AA2E10"
 					type: "item"
 					item: {
 						id: "ae2:engineering_processor_press"
@@ -147,7 +148,7 @@
 			]
 			rewards: [
 				{
-					id: "C1F29310698C87A4"
+					id: "61F29310698C87A4"
 					type: "item"
 					item: {
 						id: "minecraft:iron_block"
@@ -156,28 +157,29 @@
 					count: 2
 				}
 				{
-					id: "7DD0FEE03204A009"
+					id: "1DD0FEE03204A009"
 					type: "xp_levels"
 					xp_levels: 8
 				}
 			]
 		}
 		{
-			id: "609FC144CB431019"
-			x: 2.5d
-			y: 2.0d
+			id: "709FC144CB431019"
+			x: 0.25d
+			y: 9.35d
 			icon: {
 				id: "ae2:charged_certus_quartz_crystal"
 				count: 1
 			}
 			size: 1.5d
 			shape: "hexagon"
+			hide_dependency_lines: true
 			dependencies: [
-				"7F3D0C194EC97397"
+				"1F3D0C194EC97397"
 			]
 			tasks: [
 				{
-					id: "E7154C2881378394"
+					id: "17154C2881378394"
 					type: "item"
 					item: {
 						id: "ae2:charged_certus_quartz_crystal"
@@ -188,7 +190,7 @@
 			]
 			rewards: [
 				{
-					id: "796925E319ECEACD"
+					id: "196925E319ECEACD"
 					type: "item"
 					item: {
 						id: "minecraft:glowstone_dust"
@@ -197,7 +199,7 @@
 					count: 16
 				}
 				{
-					id: "27F4BE2A99F01D36"
+					id: "37F4BE2A99F01D36"
 					type: "item"
 					item: {
 						id: "minecraft:redstone"
@@ -206,26 +208,26 @@
 					count: 16
 				}
 				{
-					id: "C60859D7A0878770"
+					id: "660859D7A0878770"
 					type: "xp_levels"
 					xp_levels: 5
 				}
 			]
 		}
 		{
-			id: "F0289A0EF28C852A"
-			x: 5.0d
-			y: 2.0d
+			id: "20289A0EF28C852A"
+			x: 2.75d
+			y: 9.1d
 			icon: {
 				id: "ae2:fluix_crystal"
 				count: 1
 			}
 			dependencies: [
-				"609FC144CB431019"
+				"709FC144CB431019"
 			]
 			tasks: [
 				{
-					id: "C0777867243D2997"
+					id: "60777867243D2997"
 					type: "item"
 					item: {
 						id: "ae2:fluix_crystal"
@@ -236,7 +238,7 @@
 			]
 			rewards: [
 				{
-					id: "2EFAAFD131B4771D"
+					id: "3EFAAFD131B4771D"
 					type: "item"
 					item: {
 						id: "minecraft:quartz"
@@ -245,26 +247,26 @@
 					count: 32
 				}
 				{
-					id: "5FE60DA83E4BC104"
+					id: "6FE60DA83E4BC104"
 					type: "xp_levels"
 					xp_levels: 5
 				}
 			]
 		}
 		{
-			id: "A74868EB59887384"
-			x: 7.5d
-			y: 2.0d
+			id: "474868EB59887384"
+			x: 5.0d
+			y: 7.249999999999999d
 			icon: {
 				id: "ae2:flawed_budding_quartz"
 				count: 1
 			}
 			dependencies: [
-				"F0289A0EF28C852A"
+				"20289A0EF28C852A"
 			]
 			tasks: [
 				{
-					id: "3F9D9A09CE7BBC8C"
+					id: "4F9D9A09CE7BBC8C"
 					type: "item"
 					item: {
 						id: "ae2:growth_accelerator"
@@ -275,7 +277,7 @@
 			]
 			rewards: [
 				{
-					id: "3DA765E00D42A282"
+					id: "4DA765E00D42A282"
 					type: "item"
 					item: {
 						id: "ae2:charged_certus_quartz_crystal"
@@ -284,26 +286,27 @@
 					count: 4
 				}
 				{
-					id: "23D7B5AFCA19B20D"
+					id: "33D7B5AFCA19B20D"
 					type: "xp_levels"
 					xp_levels: 8
 				}
 			]
 		}
 		{
-			id: "8C0843DE3D831B45"
+			id: "2C0843DE3D831B45"
 			x: 0.0d
-			y: 5.5d
+			y: 14.15d
 			icon: {
 				id: "ae2:inscriber"
 				count: 1
 			}
+			hide_dependency_lines: true
 			dependencies: [
-				"0DDCF058D133D244"
+				"1DDCF058D133D244"
 			]
 			tasks: [
 				{
-					id: "E98B7B71918AF61B"
+					id: "198B7B71918AF61B"
 					type: "item"
 					item: {
 						id: "ae2:inscriber"
@@ -314,7 +317,7 @@
 			]
 			rewards: [
 				{
-					id: "2FAB0F7FDCF51AC3"
+					id: "3FAB0F7FDCF51AC3"
 					type: "item"
 					item: {
 						id: "minecraft:iron_ingot"
@@ -323,26 +326,26 @@
 					count: 16
 				}
 				{
-					id: "92CDF35D4AB6029A"
+					id: "32CDF35D4AB6029A"
 					type: "xp_levels"
 					xp_levels: 5
 				}
 			]
 		}
 		{
-			id: "A19F003B27288373"
-			x: 2.5d
-			y: 5.5d
+			id: "419F003B27288373"
+			x: 2.25d
+			y: 14.15d
 			icon: {
 				id: "ae2:printed_silicon"
 				count: 1
 			}
 			dependencies: [
-				"8C0843DE3D831B45"
+				"2C0843DE3D831B45"
 			]
 			tasks: [
 				{
-					id: "8A56856AD5CA8EB9"
+					id: "2A56856AD5CA8EB9"
 					type: "item"
 					item: {
 						id: "ae2:printed_silicon"
@@ -353,7 +356,7 @@
 			]
 			rewards: [
 				{
-					id: "C624FA1FCA35ACE9"
+					id: "6624FA1FCA35ACE9"
 					type: "item"
 					item: {
 						id: "mekanism:alloy_infused"
@@ -362,26 +365,26 @@
 					count: 8
 				}
 				{
-					id: "622018AF1CA809A2"
+					id: "722018AF1CA809A2"
 					type: "xp_levels"
 					xp_levels: 5
 				}
 			]
 		}
 		{
-			id: "5FB0CE50046D4F85"
-			x: 5.0d
-			y: 4.5d
+			id: "6FB0CE50046D4F85"
+			x: 4.5d
+			y: 14.15d
 			icon: {
 				id: "ae2:logic_processor"
 				count: 1
 			}
 			dependencies: [
-				"A19F003B27288373"
+				"419F003B27288373"
 			]
 			tasks: [
 				{
-					id: "35661A767559F33F"
+					id: "45661A767559F33F"
 					type: "item"
 					item: {
 						id: "ae2:logic_processor"
@@ -392,7 +395,7 @@
 			]
 			rewards: [
 				{
-					id: "DFC0CE43511C05AE"
+					id: "7FC0CE43511C05AE"
 					type: "item"
 					item: {
 						id: "minecraft:gold_ingot"
@@ -401,26 +404,26 @@
 					count: 8
 				}
 				{
-					id: "BD13BB65375394FA"
+					id: "5D13BB65375394FA"
 					type: "xp_levels"
 					xp_levels: 5
 				}
 			]
 		}
 		{
-			id: "319C965074DD94BD"
-			x: 5.0d
-			y: 6.5d
+			id: "419C965074DD94BD"
+			x: 4.5d
+			y: 16.125d
 			icon: {
 				id: "ae2:calculation_processor"
 				count: 1
 			}
 			dependencies: [
-				"A19F003B27288373"
+				"419F003B27288373"
 			]
 			tasks: [
 				{
-					id: "0964DA8934A58FF9"
+					id: "1964DA8934A58FF9"
 					type: "item"
 					item: {
 						id: "ae2:calculation_processor"
@@ -431,7 +434,7 @@
 			]
 			rewards: [
 				{
-					id: "1BEFD9B41C59AA52"
+					id: "2BEFD9B41C59AA52"
 					type: "item"
 					item: {
 						id: "ae2:certus_quartz_crystal"
@@ -440,16 +443,16 @@
 					count: 16
 				}
 				{
-					id: "C8CBEF7BA8BC793E"
+					id: "68CBEF7BA8BC793E"
 					type: "xp_levels"
 					xp_levels: 6
 				}
 			]
 		}
 		{
-			id: "E8D3447E793BAC9F"
-			x: 7.5d
-			y: 5.5d
+			id: "18D3447E793BAC9F"
+			x: 7.125d
+			y: 14.525d
 			icon: {
 				id: "ae2:engineering_processor"
 				count: 1
@@ -457,12 +460,12 @@
 			size: 1.75d
 			shape: "gear"
 			dependencies: [
-				"5FB0CE50046D4F85"
-				"319C965074DD94BD"
+				"6FB0CE50046D4F85"
+				"419C965074DD94BD"
 			]
 			tasks: [
 				{
-					id: "C14F92B36EC86E26"
+					id: "614F92B36EC86E26"
 					type: "item"
 					item: {
 						id: "ae2:engineering_processor"
@@ -473,7 +476,7 @@
 			]
 			rewards: [
 				{
-					id: "EEA33A6EC717D596"
+					id: "1EA33A6EC717D596"
 					type: "item"
 					item: {
 						id: "minecraft:diamond"
@@ -482,31 +485,32 @@
 					count: 4
 				}
 				{
-					id: "5D4E9E5894FDA271"
+					id: "6D4E9E5894FDA271"
 					type: "loot"
-					table_id: "6BD556482A471D58"
+					table_id: "7BD556482A471D58"
 				}
 				{
-					id: "A83E380FB676016E"
+					id: "483E380FB676016E"
 					type: "xp_levels"
 					xp_levels: 10
 				}
 			]
 		}
 		{
-			id: "B55D9BA5A85FCD28"
+			id: "555D9BA5A85FCD28"
 			x: 0.0d
-			y: 10.0d
+			y: 21.3d
 			icon: {
 				id: "ae2:drive"
 				count: 1
 			}
+			hide_dependency_lines: true
 			dependencies: [
-				"E8D3447E793BAC9F"
+				"18D3447E793BAC9F"
 			]
 			tasks: [
 				{
-					id: "09056D9B4F5AFBE8"
+					id: "19056D9B4F5AFBE8"
 					type: "item"
 					item: {
 						id: "ae2:drive"
@@ -517,7 +521,7 @@
 			]
 			rewards: [
 				{
-					id: "FE57BBED0CE7C492"
+					id: "2E57BBED0CE7C492"
 					type: "item"
 					item: {
 						id: "mekanism:advanced_control_circuit"
@@ -526,16 +530,16 @@
 					count: 2
 				}
 				{
-					id: "703DA31FF92942C5"
+					id: "103DA31FF92942C5"
 					type: "xp_levels"
 					xp_levels: 8
 				}
 			]
 		}
 		{
-			id: "C8DB324F17A467F3"
-			x: 2.5d
-			y: 10.0d
+			id: "68DB324F17A467F3"
+			x: 2.625d
+			y: 21.675d
 			icon: {
 				id: "ae2:terminal"
 				count: 1
@@ -543,11 +547,11 @@
 			size: 1.75d
 			shape: "hexagon"
 			dependencies: [
-				"B55D9BA5A85FCD28"
+				"555D9BA5A85FCD28"
 			]
 			tasks: [
 				{
-					id: "517879C87341C8BC"
+					id: "617879C87341C8BC"
 					type: "item"
 					item: {
 						id: "ae2:energy_acceptor"
@@ -556,7 +560,7 @@
 					count: 1
 				}
 				{
-					id: "19E99A90A36316C6"
+					id: "29E99A90A36316C6"
 					type: "item"
 					item: {
 						id: "ae2:terminal"
@@ -565,7 +569,7 @@
 					count: 1
 				}
 				{
-					id: "22A816CDAC7A5D12"
+					id: "32A816CDAC7A5D12"
 					type: "item"
 					item: {
 						id: "ae2:fluix_glass_cable"
@@ -576,7 +580,7 @@
 			]
 			rewards: [
 				{
-					id: "E580119C935E484D"
+					id: "1580119C935E484D"
 					type: "item"
 					item: {
 						id: "ae2:fluix_covered_cable"
@@ -585,31 +589,31 @@
 					count: 16
 				}
 				{
-					id: "A705310C463D46A4"
+					id: "4705310C463D46A4"
 					type: "loot"
-					table_id: "BB5E855731D4F100"
+					table_id: "5B5E855731D4F100"
 				}
 				{
-					id: "51FDBCABDAF44610"
+					id: "61FDBCABDAF44610"
 					type: "xp_levels"
 					xp_levels: 10
 				}
 			]
 		}
 		{
-			id: "41E5531618D4B793"
-			x: 5.0d
-			y: 9.0d
+			id: "51E5531618D4B793"
+			x: 5.625d
+			y: 21.3d
 			icon: {
 				id: "ae2:item_storage_cell_1k"
 				count: 1
 			}
 			dependencies: [
-				"C8DB324F17A467F3"
+				"68DB324F17A467F3"
 			]
 			tasks: [
 				{
-					id: "787632B58CF24A70"
+					id: "187632B58CF24A70"
 					type: "item"
 					item: {
 						id: "ae2:item_storage_cell_1k"
@@ -620,7 +624,7 @@
 			]
 			rewards: [
 				{
-					id: "0C33E989CE20160B"
+					id: "1C33E989CE20160B"
 					type: "item"
 					item: {
 						id: "ae2:item_cell_housing"
@@ -629,26 +633,26 @@
 					count: 2
 				}
 				{
-					id: "E39175CB0DBB9F9B"
+					id: "139175CB0DBB9F9B"
 					type: "xp_levels"
 					xp_levels: 5
 				}
 			]
 		}
 		{
-			id: "BC1BE0D2A1DC8D0B"
-			x: 7.5d
-			y: 9.0d
+			id: "5C1BE0D2A1DC8D0B"
+			x: 8.5d
+			y: 21.3d
 			icon: {
 				id: "ae2:item_storage_cell_4k"
 				count: 1
 			}
 			dependencies: [
-				"41E5531618D4B793"
+				"51E5531618D4B793"
 			]
 			tasks: [
 				{
-					id: "D07B3F32DC6121AD"
+					id: "707B3F32DC6121AD"
 					type: "item"
 					item: {
 						id: "ae2:item_storage_cell_4k"
@@ -659,7 +663,7 @@
 			]
 			rewards: [
 				{
-					id: "A8030F3A6951BC27"
+					id: "48030F3A6951BC27"
 					type: "item"
 					item: {
 						id: "minecraft:redstone"
@@ -668,26 +672,26 @@
 					count: 32
 				}
 				{
-					id: "C8F4636EDE555A79"
+					id: "68F4636EDE555A79"
 					type: "xp_levels"
 					xp_levels: 6
 				}
 			]
 		}
 		{
-			id: "2107F38F6765E074"
-			x: 10.0d
-			y: 9.0d
+			id: "3107F38F6765E074"
+			x: 11.0d
+			y: 21.3d
 			icon: {
 				id: "ae2:item_storage_cell_16k"
 				count: 1
 			}
 			dependencies: [
-				"BC1BE0D2A1DC8D0B"
+				"5C1BE0D2A1DC8D0B"
 			]
 			tasks: [
 				{
-					id: "71140C8250A8E625"
+					id: "11140C8250A8E625"
 					type: "item"
 					item: {
 						id: "ae2:item_storage_cell_16k"
@@ -698,7 +702,7 @@
 			]
 			rewards: [
 				{
-					id: "ACE2DA10B6EC6256"
+					id: "4CE2DA10B6EC6256"
 					type: "item"
 					item: {
 						id: "minecraft:glowstone_dust"
@@ -707,21 +711,21 @@
 					count: 16
 				}
 				{
-					id: "431BCD44CFA8E0E5"
+					id: "531BCD44CFA8E0E5"
 					type: "loot"
-					table_id: "6BD556482A471D58"
+					table_id: "7BD556482A471D58"
 				}
 				{
-					id: "08CF4CC33C04B7BC"
+					id: "18CF4CC33C04B7BC"
 					type: "xp_levels"
 					xp_levels: 8
 				}
 			]
 		}
 		{
-			id: "44AF6ABEE259F331"
-			x: 5.0d
-			y: 11.0d
+			id: "54AF6ABEE259F331"
+			x: 5.625d
+			y: 23.650000000000002d
 			icon: {
 				id: "ae2:controller"
 				count: 1
@@ -729,11 +733,11 @@
 			size: 1.75d
 			shape: "gear"
 			dependencies: [
-				"C8DB324F17A467F3"
+				"68DB324F17A467F3"
 			]
 			tasks: [
 				{
-					id: "EF7CFBAB17D3882B"
+					id: "1F7CFBAB17D3882B"
 					type: "item"
 					item: {
 						id: "ae2:controller"
@@ -744,7 +748,7 @@
 			]
 			rewards: [
 				{
-					id: "EF9F74512DBD9966"
+					id: "1F9F74512DBD9966"
 					type: "item"
 					item: {
 						id: "ae2:fluix_crystal"
@@ -753,21 +757,21 @@
 					count: 16
 				}
 				{
-					id: "6E1EF2C6C251A599"
+					id: "7E1EF2C6C251A599"
 					type: "loot"
-					table_id: "6BD556482A471D58"
+					table_id: "7BD556482A471D58"
 				}
 				{
-					id: "2B3B01C6CDFE5780"
+					id: "3B3B01C6CDFE5780"
 					type: "xp_levels"
 					xp_levels: 10
 				}
 			]
 		}
 		{
-			id: "3C1E38CDD2758689"
-			x: 7.5d
-			y: 11.0d
+			id: "4C1E38CDD2758689"
+			x: 8.5d
+			y: 23.525000000000002d
 			icon: {
 				id: "ae2:fluix_smart_cable"
 				count: 1
@@ -775,11 +779,11 @@
 			size: 1.5d
 			shape: "hexagon"
 			dependencies: [
-				"44AF6ABEE259F331"
+				"54AF6ABEE259F331"
 			]
 			tasks: [
 				{
-					id: "DC1A3789657BC449"
+					id: "7C1A3789657BC449"
 					type: "item"
 					item: {
 						id: "ae2:fluix_smart_cable"
@@ -788,7 +792,7 @@
 					count: 16
 				}
 				{
-					id: "CF92C802FB614D88"
+					id: "6F92C802FB614D88"
 					type: "item"
 					item: {
 						id: "ae2:fluix_covered_dense_cable"
@@ -799,7 +803,7 @@
 			]
 			rewards: [
 				{
-					id: "BCF81CA2227EAFF7"
+					id: "5CF81CA2227EAFF7"
 					type: "item"
 					item: {
 						id: "create:electron_tube"
@@ -808,26 +812,26 @@
 					count: 8
 				}
 				{
-					id: "EC0294774B8DE189"
+					id: "1C0294774B8DE189"
 					type: "xp_levels"
 					xp_levels: 8
 				}
 			]
 		}
 		{
-			id: "E88B5DA5652EFC13"
-			x: 10.0d
-			y: 11.0d
+			id: "188B5DA5652EFC13"
+			x: 11.0d
+			y: 23.275000000000002d
 			icon: {
 				id: "ae2:import_bus"
 				count: 1
 			}
 			dependencies: [
-				"3C1E38CDD2758689"
+				"4C1E38CDD2758689"
 			]
 			tasks: [
 				{
-					id: "2D6652AFF6EAD085"
+					id: "3D6652AFF6EAD085"
 					type: "item"
 					item: {
 						id: "ae2:import_bus"
@@ -836,7 +840,7 @@
 					count: 1
 				}
 				{
-					id: "44201F56731EEDB9"
+					id: "54201F56731EEDB9"
 					type: "item"
 					item: {
 						id: "ae2:export_bus"
@@ -847,7 +851,7 @@
 			]
 			rewards: [
 				{
-					id: "B84B6006AE8EEF22"
+					id: "584B6006AE8EEF22"
 					type: "item"
 					item: {
 						id: "minecraft:piston"
@@ -856,26 +860,26 @@
 					count: 8
 				}
 				{
-					id: "DA46B4455A2E8A44"
+					id: "7A46B4455A2E8A44"
 					type: "xp_levels"
 					xp_levels: 6
 				}
 			]
 		}
 		{
-			id: "12026B4EDB5B0C43"
-			x: 12.5d
-			y: 10.0d
+			id: "22026B4EDB5B0C43"
+			x: 13.25d
+			y: 23.275000000000002d
 			icon: {
 				id: "ae2:speed_card"
 				count: 1
 			}
 			dependencies: [
-				"E88B5DA5652EFC13"
+				"188B5DA5652EFC13"
 			]
 			tasks: [
 				{
-					id: "0C8BD63EB25ED39F"
+					id: "1C8BD63EB25ED39F"
 					type: "item"
 					item: {
 						id: "ae2:speed_card"
@@ -884,7 +888,7 @@
 					count: 2
 				}
 				{
-					id: "3B3EFB6D71E4E0B0"
+					id: "4B3EFB6D71E4E0B0"
 					type: "item"
 					item: {
 						id: "ae2:capacity_card"
@@ -895,7 +899,7 @@
 			]
 			rewards: [
 				{
-					id: "E77B0ABB2EDAA87A"
+					id: "177B0ABB2EDAA87A"
 					type: "item"
 					item: {
 						id: "minecraft:gold_ingot"
@@ -904,26 +908,26 @@
 					count: 8
 				}
 				{
-					id: "F8F32B07F3D2F50B"
+					id: "28F32B07F3D2F50B"
 					type: "xp_levels"
 					xp_levels: 6
 				}
 			]
 		}
 		{
-			id: "27EB4DD214F449A0"
-			x: 12.5d
-			y: 12.0d
+			id: "37EB4DD214F449A0"
+			x: 13.25d
+			y: 25.25d
 			icon: {
 				id: "ae2:storage_bus"
 				count: 1
 			}
 			dependencies: [
-				"E88B5DA5652EFC13"
+				"188B5DA5652EFC13"
 			]
 			tasks: [
 				{
-					id: "3E57C70EAA58F2DE"
+					id: "4E57C70EAA58F2DE"
 					type: "item"
 					item: {
 						id: "ae2:storage_bus"
@@ -934,7 +938,7 @@
 			]
 			rewards: [
 				{
-					id: "EC63F67D2AA34298"
+					id: "1C63F67D2AA34298"
 					type: "item"
 					item: {
 						id: "functionalstorage:oak_4"
@@ -943,26 +947,26 @@
 					count: 4
 				}
 				{
-					id: "11A56DC49824A39F"
+					id: "21A56DC49824A39F"
 					type: "xp_levels"
 					xp_levels: 6
 				}
 			]
 		}
 		{
-			id: "C6E6A917F19C6D28"
-			x: 7.5d
-			y: 13.0d
+			id: "66E6A917F19C6D28"
+			x: 11.0d
+			y: 25.25d
 			icon: {
 				id: "ae2:wireless_crafting_terminal"
 				count: 1
 			}
 			dependencies: [
-				"3C1E38CDD2758689"
+				"4C1E38CDD2758689"
 			]
 			tasks: [
 				{
-					id: "EB12D24E84C0AA54"
+					id: "1B12D24E84C0AA54"
 					type: "item"
 					item: {
 						id: "ae2:wireless_access_point"
@@ -971,7 +975,7 @@
 					count: 1
 				}
 				{
-					id: "73B3AED1DD134206"
+					id: "13B3AED1DD134206"
 					type: "item"
 					item: {
 						id: "ae2:wireless_crafting_terminal"
@@ -982,7 +986,7 @@
 			]
 			rewards: [
 				{
-					id: "F79D1788BBF41AE1"
+					id: "279D1788BBF41AE1"
 					type: "item"
 					item: {
 						id: "ae2:dense_energy_cell"
@@ -991,26 +995,27 @@
 					count: 1
 				}
 				{
-					id: "A215985784A8344F"
+					id: "4215985784A8344F"
 					type: "xp_levels"
 					xp_levels: 10
 				}
 			]
 		}
 		{
-			id: "0BB37084A4AB6D92"
+			id: "1BB37084A4AB6D92"
 			x: 0.0d
-			y: 17.0d
+			y: 32.4d
 			icon: {
 				id: "ae2:pattern_encoding_terminal"
 				count: 1
 			}
+			hide_dependency_lines: true
 			dependencies: [
-				"C8DB324F17A467F3"
+				"68DB324F17A467F3"
 			]
 			tasks: [
 				{
-					id: "F4B38C89DBB9E8A8"
+					id: "24B38C89DBB9E8A8"
 					type: "item"
 					item: {
 						id: "ae2:pattern_encoding_terminal"
@@ -1019,7 +1024,7 @@
 					count: 1
 				}
 				{
-					id: "AEA2207E1B1BAA0F"
+					id: "4EA2207E1B1BAA0F"
 					type: "item"
 					item: {
 						id: "ae2:blank_pattern"
@@ -1030,7 +1035,7 @@
 			]
 			rewards: [
 				{
-					id: "E82C702401696641"
+					id: "182C702401696641"
 					type: "item"
 					item: {
 						id: "ae2:blank_pattern"
@@ -1039,26 +1044,26 @@
 					count: 8
 				}
 				{
-					id: "84AEEACCABF76385"
+					id: "24AEEACCABF76385"
 					type: "xp_levels"
 					xp_levels: 5
 				}
 			]
 		}
 		{
-			id: "0B34C1F6E7AC9249"
-			x: 2.5d
-			y: 17.0d
+			id: "1B34C1F6E7AC9249"
+			x: 2.25d
+			y: 32.4d
 			icon: {
 				id: "ae2:crafting_pattern"
 				count: 1
 			}
 			dependencies: [
-				"0BB37084A4AB6D92"
+				"1BB37084A4AB6D92"
 			]
 			tasks: [
 				{
-					id: "71BBDAEF85513460"
+					id: "11BBDAEF85513460"
 					type: "item"
 					item: {
 						id: "ae2:crafting_pattern"
@@ -1069,26 +1074,26 @@
 			]
 			rewards: [
 				{
-					id: "694714AD16547AEA"
+					id: "794714AD16547AEA"
 					type: "xp_levels"
 					xp_levels: 5
 				}
 			]
 		}
 		{
-			id: "799E588067D9CF9F"
-			x: 5.0d
-			y: 17.0d
+			id: "199E588067D9CF9F"
+			x: 4.5d
+			y: 32.4d
 			icon: {
 				id: "ae2:pattern_provider"
 				count: 1
 			}
 			dependencies: [
-				"0B34C1F6E7AC9249"
+				"1B34C1F6E7AC9249"
 			]
 			tasks: [
 				{
-					id: "D70C11D499E4229B"
+					id: "770C11D499E4229B"
 					type: "item"
 					item: {
 						id: "ae2:pattern_provider"
@@ -1099,7 +1104,7 @@
 			]
 			rewards: [
 				{
-					id: "E294D0371F358EA9"
+					id: "1294D0371F358EA9"
 					type: "item"
 					item: {
 						id: "create:precision_mechanism"
@@ -1108,16 +1113,16 @@
 					count: 1
 				}
 				{
-					id: "350E0E98207A22EF"
+					id: "450E0E98207A22EF"
 					type: "xp_levels"
 					xp_levels: 6
 				}
 			]
 		}
 		{
-			id: "661A5ACAEE9A1588"
-			x: 7.5d
-			y: 17.0d
+			id: "761A5ACAEE9A1588"
+			x: 7.125d
+			y: 32.775d
 			icon: {
 				id: "ae2:molecular_assembler"
 				count: 1
@@ -1125,11 +1130,11 @@
 			size: 1.75d
 			shape: "gear"
 			dependencies: [
-				"799E588067D9CF9F"
+				"199E588067D9CF9F"
 			]
 			tasks: [
 				{
-					id: "DA77845277605D95"
+					id: "7A77845277605D95"
 					type: "item"
 					item: {
 						id: "ae2:molecular_assembler"
@@ -1140,7 +1145,7 @@
 			]
 			rewards: [
 				{
-					id: "F1205F9D505123DC"
+					id: "21205F9D505123DC"
 					type: "item"
 					item: {
 						id: "create:precision_mechanism"
@@ -1149,31 +1154,31 @@
 					count: 2
 				}
 				{
-					id: "906D10DED92DD43E"
+					id: "306D10DED92DD43E"
 					type: "loot"
-					table_id: "6BD556482A471D58"
+					table_id: "7BD556482A471D58"
 				}
 				{
-					id: "DED970CB97949E7D"
+					id: "7ED970CB97949E7D"
 					type: "xp_levels"
 					xp_levels: 10
 				}
 			]
 		}
 		{
-			id: "9256D8605808D07A"
-			x: 10.0d
-			y: 16.0d
+			id: "3256D8605808D07A"
+			x: 9.75d
+			y: 32.4d
 			icon: {
 				id: "ae2:1k_crafting_storage"
 				count: 1
 			}
 			dependencies: [
-				"661A5ACAEE9A1588"
+				"761A5ACAEE9A1588"
 			]
 			tasks: [
 				{
-					id: "9252823153B2BA7F"
+					id: "3252823153B2BA7F"
 					type: "item"
 					item: {
 						id: "ae2:1k_crafting_storage"
@@ -1182,7 +1187,7 @@
 					count: 1
 				}
 				{
-					id: "AA05ABCE60F854B8"
+					id: "4A05ABCE60F854B8"
 					type: "item"
 					item: {
 						id: "ae2:crafting_accelerator"
@@ -1193,7 +1198,7 @@
 			]
 			rewards: [
 				{
-					id: "7235A4E8C779E301"
+					id: "1235A4E8C779E301"
 					type: "item"
 					item: {
 						id: "ae2:crafting_unit"
@@ -1202,26 +1207,26 @@
 					count: 2
 				}
 				{
-					id: "7E6CF4EE08C01A7B"
+					id: "1E6CF4EE08C01A7B"
 					type: "xp_levels"
 					xp_levels: 8
 				}
 			]
 		}
 		{
-			id: "AC251A5FBF288288"
-			x: 10.0d
-			y: 18.0d
+			id: "4C251A5FBF288288"
+			x: 9.75d
+			y: 34.75d
 			icon: {
 				id: "ae2:processing_pattern"
 				count: 1
 			}
 			dependencies: [
-				"661A5ACAEE9A1588"
+				"761A5ACAEE9A1588"
 			]
 			tasks: [
 				{
-					id: "03A5D3FABB8D03D5"
+					id: "13A5D3FABB8D03D5"
 					type: "item"
 					item: {
 						id: "ae2:processing_pattern"
@@ -1232,7 +1237,7 @@
 			]
 			rewards: [
 				{
-					id: "C4352B07DDD5D17A"
+					id: "64352B07DDD5D17A"
 					type: "item"
 					item: {
 						id: "ae2:printed_silicon"
@@ -1241,28 +1246,28 @@
 					count: 8
 				}
 				{
-					id: "C869C008A9E33BDF"
+					id: "6869C008A9E33BDF"
 					type: "xp_levels"
 					xp_levels: 8
 				}
 			]
 		}
 		{
-			id: "C28BB49DC2AAA41F"
-			x: 12.5d
-			y: 17.0d
+			id: "628BB49DC2AAA41F"
+			x: 12.0d
+			y: 32.4d
 			icon: {
 				id: "ae2:crafting_card"
 				count: 1
 			}
 			dependencies: [
-				"9256D8605808D07A"
-				"AC251A5FBF288288"
-				"12026B4EDB5B0C43"
+				"3256D8605808D07A"
+				"4C251A5FBF288288"
+				"22026B4EDB5B0C43"
 			]
 			tasks: [
 				{
-					id: "39DB31CD62DC4C0F"
+					id: "49DB31CD62DC4C0F"
 					type: "item"
 					item: {
 						id: "ae2:crafting_card"
@@ -1271,7 +1276,7 @@
 					count: 1
 				}
 				{
-					id: "5F7A4937A3F92A9A"
+					id: "6F7A4937A3F92A9A"
 					type: "item"
 					item: {
 						id: "ae2:level_emitter"
@@ -1282,7 +1287,7 @@
 			]
 			rewards: [
 				{
-					id: "6CF2C05CF84CC3B8"
+					id: "7CF2C05CF84CC3B8"
 					type: "item"
 					item: {
 						id: "ae2:crafting_accelerator"
@@ -1291,16 +1296,16 @@
 					count: 1
 				}
 				{
-					id: "4EFA6C886A9AD88A"
+					id: "5EFA6C886A9AD88A"
 					type: "xp_levels"
 					xp_levels: 8
 				}
 			]
 		}
 		{
-			id: "A81D143950165232"
+			id: "481D143950165232"
 			x: 15.0d
-			y: 17.0d
+			y: 33.15d
 			icon: {
 				id: "mekanism:advanced_control_circuit"
 				count: 1
@@ -1308,11 +1313,11 @@
 			size: 2.5d
 			shape: "gear"
 			dependencies: [
-				"C28BB49DC2AAA41F"
+				"628BB49DC2AAA41F"
 			]
 			tasks: [
 				{
-					id: "EF8038A73D6D3912"
+					id: "1F8038A73D6D3912"
 					type: "item"
 					item: {
 						id: "mekanism:advanced_control_circuit"
@@ -1321,7 +1326,7 @@
 					count: 64
 				}
 				{
-					id: "D84CFFC9576CAAD7"
+					id: "784CFFC9576CAAD7"
 					type: "item"
 					item: {
 						id: "ae2:engineering_processor"
@@ -1332,12 +1337,12 @@
 			]
 			rewards: [
 				{
-					id: "6C35933359A973D0"
+					id: "7C35933359A973D0"
 					type: "loot"
-					table_id: "6320E512778B48ED"
+					table_id: "7320E512778B48ED"
 				}
 				{
-					id: "59F4BDA2B38BD526"
+					id: "69F4BDA2B38BD526"
 					type: "item"
 					item: {
 						id: "ae2:cell_component_16k"
@@ -1346,28 +1351,29 @@
 					count: 1
 				}
 				{
-					id: "C80FA582EB034A70"
+					id: "680FA582EB034A70"
 					type: "xp_levels"
 					xp_levels: 25
 				}
 			]
 		}
 		{
-			id: "3647FC22948329C2"
-			x: 0.0d
-			y: 22.0d
+			id: "4647FC22948329C2"
+			x: 0.25d
+			y: 40.55d
 			icon: {
 				id: "ae2:me_p2p_tunnel"
 				count: 1
 			}
 			size: 1.5d
 			shape: "hexagon"
+			hide_dependency_lines: true
 			dependencies: [
-				"3C1E38CDD2758689"
+				"4C1E38CDD2758689"
 			]
 			tasks: [
 				{
-					id: "9E41211A5A0B20CC"
+					id: "3E41211A5A0B20CC"
 					type: "item"
 					item: {
 						id: "ae2:me_p2p_tunnel"
@@ -1376,7 +1382,7 @@
 					count: 2
 				}
 				{
-					id: "B11BF734400DB366"
+					id: "511BF734400DB366"
 					type: "item"
 					item: {
 						id: "ae2:memory_card"
@@ -1387,7 +1393,7 @@
 			]
 			rewards: [
 				{
-					id: "3994138736D07A71"
+					id: "4994138736D07A71"
 					type: "item"
 					item: {
 						id: "ae2:engineering_processor"
@@ -1396,26 +1402,26 @@
 					count: 2
 				}
 				{
-					id: "5355EDE3FD5FA761"
+					id: "6355EDE3FD5FA761"
 					type: "xp_levels"
 					xp_levels: 8
 				}
 			]
 		}
 		{
-			id: "858381499B40FD89"
-			x: 2.5d
-			y: 21.0d
+			id: "258381499B40FD89"
+			x: 2.75d
+			y: 40.3d
 			icon: {
 				id: "ae2:item_p2p_tunnel"
 				count: 1
 			}
 			dependencies: [
-				"3647FC22948329C2"
+				"4647FC22948329C2"
 			]
 			tasks: [
 				{
-					id: "8499934BC6F9BD76"
+					id: "2499934BC6F9BD76"
 					type: "item"
 					item: {
 						id: "ae2:item_p2p_tunnel"
@@ -1426,26 +1432,26 @@
 			]
 			rewards: [
 				{
-					id: "AD58BD8AAFAC642A"
+					id: "4D58BD8AAFAC642A"
 					type: "xp_levels"
 					xp_levels: 3
 				}
 			]
 		}
 		{
-			id: "740A199B9A2126CC"
-			x: 4.5d
-			y: 21.0d
+			id: "140A199B9A2126CC"
+			x: 2.75d
+			y: 42.15d
 			icon: {
 				id: "ae2:fluid_p2p_tunnel"
 				count: 1
 			}
 			dependencies: [
-				"3647FC22948329C2"
+				"4647FC22948329C2"
 			]
 			tasks: [
 				{
-					id: "64E159B41368BBDF"
+					id: "74E159B41368BBDF"
 					type: "item"
 					item: {
 						id: "ae2:fluid_p2p_tunnel"
@@ -1456,26 +1462,26 @@
 			]
 			rewards: [
 				{
-					id: "81E4B5978839D62A"
+					id: "21E4B5978839D62A"
 					type: "xp_levels"
 					xp_levels: 3
 				}
 			]
 		}
 		{
-			id: "25DED8695B795B84"
-			x: 6.5d
-			y: 21.0d
+			id: "35DED8695B795B84"
+			x: 2.75d
+			y: 44.0d
 			icon: {
 				id: "ae2:fe_p2p_tunnel"
 				count: 1
 			}
 			dependencies: [
-				"3647FC22948329C2"
+				"4647FC22948329C2"
 			]
 			tasks: [
 				{
-					id: "823DDC8D2ED6E07F"
+					id: "223DDC8D2ED6E07F"
 					type: "item"
 					item: {
 						id: "ae2:fe_p2p_tunnel"
@@ -1486,26 +1492,26 @@
 			]
 			rewards: [
 				{
-					id: "D84B800C546B0865"
+					id: "784B800C546B0865"
 					type: "xp_levels"
 					xp_levels: 3
 				}
 			]
 		}
 		{
-			id: "F388E279E0CADF62"
-			x: 2.5d
-			y: 23.0d
+			id: "2388E279E0CADF62"
+			x: 2.75d
+			y: 45.849999999999994d
 			icon: {
 				id: "ae2:redstone_p2p_tunnel"
 				count: 1
 			}
 			dependencies: [
-				"3647FC22948329C2"
+				"4647FC22948329C2"
 			]
 			tasks: [
 				{
-					id: "2748FD4B97D9CE2A"
+					id: "3748FD4B97D9CE2A"
 					type: "item"
 					item: {
 						id: "ae2:redstone_p2p_tunnel"
@@ -1516,26 +1522,26 @@
 			]
 			rewards: [
 				{
-					id: "31BDE32725E3CFEA"
+					id: "41BDE32725E3CFEA"
 					type: "xp_levels"
 					xp_levels: 3
 				}
 			]
 		}
 		{
-			id: "D201DEE5406460F3"
-			x: 4.5d
-			y: 23.0d
+			id: "7201DEE5406460F3"
+			x: 2.75d
+			y: 47.699999999999996d
 			icon: {
 				id: "ae2:light_p2p_tunnel"
 				count: 1
 			}
 			dependencies: [
-				"3647FC22948329C2"
+				"4647FC22948329C2"
 			]
 			tasks: [
 				{
-					id: "17CDC8CF82BFBDE9"
+					id: "27CDC8CF82BFBDE9"
 					type: "item"
 					item: {
 						id: "ae2:light_p2p_tunnel"
@@ -1546,26 +1552,26 @@
 			]
 			rewards: [
 				{
-					id: "A87D932C624BC43E"
+					id: "487D932C624BC43E"
 					type: "xp_levels"
 					xp_levels: 3
 				}
 			]
 		}
 		{
-			id: "C8751490DDDE0237"
-			x: 6.5d
-			y: 23.0d
+			id: "68751490DDDE0237"
+			x: 2.75d
+			y: 49.55d
 			icon: {
 				id: "appmek:chemical_p2p_tunnel"
 				count: 1
 			}
 			dependencies: [
-				"3647FC22948329C2"
+				"4647FC22948329C2"
 			]
 			tasks: [
 				{
-					id: "6014E6822FC6259A"
+					id: "7014E6822FC6259A"
 					type: "item"
 					item: {
 						id: "appmek:chemical_p2p_tunnel"
@@ -1576,26 +1582,26 @@
 			]
 			rewards: [
 				{
-					id: "D4EE23B72F528F33"
+					id: "74EE23B72F528F33"
 					type: "xp_levels"
 					xp_levels: 3
 				}
 			]
 		}
 		{
-			id: "E0683B41B8A2569B"
-			x: 10.0d
-			y: 22.0d
+			id: "10683B41B8A2569B"
+			x: 13.25d
+			y: 27.225d
 			icon: {
 				id: "ae2:interface"
 				count: 1
 			}
 			dependencies: [
-				"E88B5DA5652EFC13"
+				"188B5DA5652EFC13"
 			]
 			tasks: [
 				{
-					id: "8F6B978D2ABC2BC8"
+					id: "2F6B978D2ABC2BC8"
 					type: "item"
 					item: {
 						id: "ae2:interface"
@@ -1606,7 +1612,7 @@
 			]
 			rewards: [
 				{
-					id: "381843732C27C29B"
+					id: "481843732C27C29B"
 					type: "item"
 					item: {
 						id: "ae2:formation_core"
@@ -1615,76 +1621,77 @@
 					count: 2
 				}
 				{
-					id: "271172137D6B311E"
+					id: "371172137D6B311E"
 					type: "xp_levels"
 					xp_levels: 5
 				}
 			]
 		}
 		{
-			id: "B2D1CFF3595407C9"
-			x: 12.5d
-			y: 21.0d
+			id: "52D1CFF3595407C9"
+			x: 5.625d
+			y: 25.25d
 			icon: {
 				id: "ae2:network_tool"
 				count: 1
 			}
 			dependencies: [
-				"C8DB324F17A467F3"
+				"68DB324F17A467F3"
 			]
 			tasks: [
 				{
-					id: "EF78BF585ED1EED9"
+					id: "1F78BF585ED1EED9"
 					type: "checkmark"
 				}
 			]
 			rewards: [
 				{
-					id: "EB2AF35A87CF2767"
+					id: "1B2AF35A87CF2767"
 					type: "xp_levels"
 					xp_levels: 5
 				}
 			]
 		}
 		{
-			id: "67FEE5209B67A4B4"
-			x: 12.5d
-			y: 23.0d
+			id: "77FEE5209B67A4B4"
+			x: 13.25d
+			y: 21.3d
 			icon: {
 				id: "ae2:item_cell_housing"
 				count: 1
 			}
 			dependencies: [
-				"2107F38F6765E074"
+				"3107F38F6765E074"
 			]
 			tasks: [
 				{
-					id: "6FB59C0923272A51"
+					id: "7FB59C0923272A51"
 					type: "checkmark"
 				}
 			]
 			rewards: [
 				{
-					id: "902864B64F79CB3E"
+					id: "302864B64F79CB3E"
 					type: "xp_levels"
 					xp_levels: 5
 				}
 			]
 		}
 		{
-			id: "A342DA54864C265F"
+			id: "4342DA54864C265F"
 			x: 0.0d
-			y: 27.0d
+			y: 54.599999999999994d
 			icon: {
 				id: "extendedae:entro_crystal"
 				count: 1
 			}
+			hide_dependency_lines: true
 			dependencies: [
-				"F0289A0EF28C852A"
+				"20289A0EF28C852A"
 			]
 			tasks: [
 				{
-					id: "2F0EC84AE7B006B6"
+					id: "3F0EC84AE7B006B6"
 					type: "item"
 					item: {
 						id: "extendedae:entro_crystal"
@@ -1695,7 +1702,7 @@
 			]
 			rewards: [
 				{
-					id: "870F8831C2E3DCE1"
+					id: "270F8831C2E3DCE1"
 					type: "item"
 					item: {
 						id: "minecraft:ender_pearl"
@@ -1704,26 +1711,26 @@
 					count: 8
 				}
 				{
-					id: "79CC84E4C6D3B6DE"
+					id: "19CC84E4C6D3B6DE"
 					type: "xp_levels"
 					xp_levels: 5
 				}
 			]
 		}
 		{
-			id: "710707208D725711"
-			x: 2.5d
-			y: 27.0d
+			id: "110707208D725711"
+			x: 2.25d
+			y: 54.599999999999994d
 			icon: {
 				id: "extendedae:crystal_assembler"
 				count: 1
 			}
 			dependencies: [
-				"A342DA54864C265F"
+				"4342DA54864C265F"
 			]
 			tasks: [
 				{
-					id: "6A540EA7AC403877"
+					id: "7A540EA7AC403877"
 					type: "item"
 					item: {
 						id: "extendedae:machine_frame"
@@ -1732,7 +1739,7 @@
 					count: 1
 				}
 				{
-					id: "0664A2ABEE7980EE"
+					id: "1664A2ABEE7980EE"
 					type: "item"
 					item: {
 						id: "extendedae:crystal_assembler"
@@ -1743,7 +1750,7 @@
 			]
 			rewards: [
 				{
-					id: "DB24DC7F54B96BAB"
+					id: "7B24DC7F54B96BAB"
 					type: "item"
 					item: {
 						id: "ae2:fluix_block"
@@ -1752,32 +1759,32 @@
 					count: 4
 				}
 				{
-					id: "9F1A85354EB2C649"
+					id: "3F1A85354EB2C649"
 					type: "loot"
-					table_id: "BB5E855731D4F100"
+					table_id: "5B5E855731D4F100"
 				}
 				{
-					id: "DA51BA51EA90C599"
+					id: "7A51BA51EA90C599"
 					type: "xp_levels"
 					xp_levels: 10
 				}
 			]
 		}
 		{
-			id: "4BBDB9E4B8166E3A"
-			x: 5.0d
-			y: 27.0d
+			id: "5BBDB9E4B8166E3A"
+			x: 4.5d
+			y: 54.599999999999994d
 			icon: {
 				id: "extendedae:circuit_cutter"
 				count: 1
 			}
 			optional: true
 			dependencies: [
-				"710707208D725711"
+				"110707208D725711"
 			]
 			tasks: [
 				{
-					id: "23C5BAD7F365CC23"
+					id: "33C5BAD7F365CC23"
 					type: "item"
 					item: {
 						id: "extendedae:circuit_cutter"
@@ -1788,7 +1795,7 @@
 			]
 			rewards: [
 				{
-					id: "18B623FC796E5E45"
+					id: "28B623FC796E5E45"
 					type: "item"
 					item: {
 						id: "minecraft:gold_block"
@@ -1797,26 +1804,27 @@
 					count: 2
 				}
 				{
-					id: "3CD263E59BF0D358"
+					id: "4CD263E59BF0D358"
 					type: "xp_levels"
 					xp_levels: 12
 				}
 			]
 		}
 		{
-			id: "AA401167020FBDB9"
-			x: 9.0d
-			y: 27.0d
+			id: "4A401167020FBDB9"
+			x: 0.0d
+			y: 59.39999999999999d
 			icon: {
 				id: "appflux:energy_processor"
 				count: 1
 			}
+			hide_dependency_lines: true
 			dependencies: [
-				"E8D3447E793BAC9F"
+				"18D3447E793BAC9F"
 			]
 			tasks: [
 				{
-					id: "F435B884B6F9BE26"
+					id: "2435B884B6F9BE26"
 					type: "item"
 					item: {
 						id: "appflux:charged_redstone"
@@ -1825,7 +1833,7 @@
 					count: 8
 				}
 				{
-					id: "106FC983B024CD6A"
+					id: "206FC983B024CD6A"
 					type: "item"
 					item: {
 						id: "appflux:energy_processor"
@@ -1836,7 +1844,7 @@
 			]
 			rewards: [
 				{
-					id: "5A8D3A71B9017573"
+					id: "6A8D3A71B9017573"
 					type: "item"
 					item: {
 						id: "minecraft:redstone_block"
@@ -1845,26 +1853,26 @@
 					count: 8
 				}
 				{
-					id: "BF1CCEE6335711BA"
+					id: "5F1CCEE6335711BA"
 					type: "xp_levels"
 					xp_levels: 6
 				}
 			]
 		}
 		{
-			id: "B9EE5DF5D7393061"
-			x: 11.5d
-			y: 27.0d
+			id: "59EE5DF5D7393061"
+			x: 2.25d
+			y: 59.39999999999999d
 			icon: {
 				id: "appflux:fe_1k_cell"
 				count: 1
 			}
 			dependencies: [
-				"AA401167020FBDB9"
+				"4A401167020FBDB9"
 			]
 			tasks: [
 				{
-					id: "C832ACDBC54F2E5F"
+					id: "6832ACDBC54F2E5F"
 					type: "item"
 					item: {
 						id: "appflux:fe_1k_cell"
@@ -1873,7 +1881,7 @@
 					count: 1
 				}
 				{
-					id: "30717163C1C345EE"
+					id: "40717163C1C345EE"
 					type: "item"
 					item: {
 						id: "appflux:flux_accessor"
@@ -1884,7 +1892,7 @@
 			]
 			rewards: [
 				{
-					id: "5B41DA225589CB6D"
+					id: "6B41DA225589CB6D"
 					type: "item"
 					item: {
 						id: "ae2:energy_cell"
@@ -1893,12 +1901,12 @@
 					count: 1
 				}
 				{
-					id: "69C0C5CAAEDAB17B"
+					id: "79C0C5CAAEDAB17B"
 					type: "loot"
-					table_id: "BB5E855731D4F100"
+					table_id: "5B5E855731D4F100"
 				}
 				{
-					id: "601EF8F6927D7803"
+					id: "701EF8F6927D7803"
 					type: "xp_levels"
 					xp_levels: 10
 				}
@@ -1907,90 +1915,80 @@
 	]
 	images: [
 		{
-			id: "6ECB080AE897D6F2"
+			id: "7ECB080AE897D6F2"
 			image: "kronwerke:textures/quests/ae2/title.png"
-			x: 6.05d
-			y: -3.2d
+			x: 5.555d
+			y: 0.0d
 			width: 12.11d
 			height: 1.5d
 			rotation: 0.0d
 			order: 1
 		}
 		{
-			id: "82A3533AAA5CE3FC"
+			id: "22A3533AAA5CE3FC"
 			image: "kronwerke:textures/quests/ae2/certus.png"
-			x: 3.79d
-			y: -1.4d
+			x: 3.285d
+			y: 5.8999999999999995d
 			width: 7.57d
 			height: 0.9d
 			rotation: 0.0d
 			order: 1
 		}
 		{
-			id: "F40C502FD7A3FA87"
+			id: "240C502FD7A3FA87"
 			image: "kronwerke:textures/quests/ae2/processors.png"
-			x: 2.13d
-			y: 3.4d
+			x: 1.6349999999999998d
+			y: 12.799999999999999d
 			width: 4.27d
 			height: 0.9d
 			rotation: 0.0d
 			order: 1
 		}
 		{
-			id: "6C6FA9ED143BB8E7"
+			id: "7C6FA9ED143BB8E7"
 			image: "kronwerke:textures/quests/ae2/network.png"
-			x: 2.1d
-			y: 7.6d
+			x: 1.5950000000000002d
+			y: 19.95d
 			width: 4.19d
 			height: 0.9d
 			rotation: 0.0d
 			order: 1
 		}
 		{
-			id: "D698525BFB53BB0B"
+			id: "7698525BFB53BB0B"
 			image: "kronwerke:textures/quests/ae2/autocrafting.png"
-			x: 4.49d
-			y: 14.6d
+			x: 3.99d
+			y: 31.05d
 			width: 8.98d
 			height: 0.9d
 			rotation: 0.0d
 			order: 1
 		}
 		{
-			id: "40D92E69F3A79DE3"
+			id: "50D92E69F3A79DE3"
 			image: "kronwerke:textures/quests/ae2/p2p.png"
-			x: 1.93d
-			y: 19.6d
+			x: 1.43d
+			y: 38.95d
 			width: 3.86d
 			height: 0.9d
 			rotation: 0.0d
 			order: 1
 		}
 		{
-			id: "8626D4821CAB6853"
-			image: "kronwerke:textures/quests/ae2/devices.png"
-			x: 12.24d
-			y: 19.6d
-			width: 5.29d
-			height: 0.9d
-			rotation: 0.0d
-			order: 1
-		}
-		{
-			id: "427492AA3E7E912D"
+			id: "2626D4821CAB6853"
 			image: "kronwerke:textures/quests/ae2/extended.png"
-			x: 2.06d
-			y: 25.4d
+			x: 1.5550000000000002d
+			y: 53.25d
 			width: 4.11d
 			height: 0.9d
 			rotation: 0.0d
 			order: 1
 		}
 		{
-			id: "140E153BFC0E1424"
+			id: "527492AA3E7E912D"
 			image: "kronwerke:textures/quests/ae2/flux.png"
-			x: 10.7d
-			y: 25.4d
+			x: 1.5950000000000002d
+			y: 58.05d
 			width: 4.19d
 			height: 0.9d
 			rotation: 0.0d

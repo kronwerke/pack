@@ -1,19 +1,19 @@
 {
-	id: "B51DAF3B806AC689"
+	id: "551DAF3B806AC689"
 	filename: "ars_apprentice"
 	icon: {
 		id: "ars_nouveau:apprentice_spell_book"
 		count: 1
 	}
-	group: "03203A1312E25E36"
+	group: "13203A1312E25E36"
 	order_index: 12
 	default_quest_shape: "circle"
 	default_hide_dependency_lines: false
 	quests: [
 		{
-			id: "99471A3D24B0C45D"
-			x: 0.0d
-			y: 2.0d
+			id: "39471A3D24B0C45D"
+			x: 0.5d
+			y: 2.6d
 			icon: {
 				id: "ars_nouveau:apprentice_spell_book"
 				count: 1
@@ -22,7 +22,7 @@
 			shape: "hexagon"
 			tasks: [
 				{
-					id: "A50CAF9E8E811348"
+					id: "450CAF9E8E811348"
 					type: "item"
 					item: {
 						id: "ars_nouveau:apprentice_spell_book"
@@ -33,7 +33,7 @@
 			]
 			rewards: [
 				{
-					id: "01056C4881333C26"
+					id: "11056C4881333C26"
 					type: "item"
 					item: {
 						id: "ars_nouveau:source_gem"
@@ -42,32 +42,33 @@
 					count: 8
 				}
 				{
-					id: "B6E30E66494697BB"
+					id: "56E30E66494697BB"
 					type: "loot"
-					table_id: "F2BA64790EBA3DF5"
+					table_id: "22BA64790EBA3DF5"
 				}
 			]
 		}
 		{
-			id: "5381268075777268"
-			x: 2.5d
-			y: 2.0d
+			id: "6381268075777268"
+			x: 0.0d
+			y: 7.3999999999999995d
 			icon: {
 				id: "ars_nouveau:scribes_table"
 				count: 1
 			}
+			hide_dependency_lines: true
 			dependencies: [
-				"99471A3D24B0C45D"
+				"39471A3D24B0C45D"
 			]
 			tasks: [
 				{
-					id: "BF92955998E606CB"
+					id: "5F92955998E606CB"
 					type: "checkmark"
 				}
 			]
 			rewards: [
 				{
-					id: "BD8C23762440F356"
+					id: "5D8C23762440F356"
 					type: "item"
 					item: {
 						id: "minecraft:experience_bottle"
@@ -78,19 +79,19 @@
 			]
 		}
 		{
-			id: "3D6231E91D67D708"
-			x: 5.0d
-			y: 0.0d
+			id: "4D6231E91D67D708"
+			x: 2.25d
+			y: 7.3999999999999995d
 			icon: {
 				id: "ars_nouveau:glyph_aoe"
 				count: 1
 			}
 			dependencies: [
-				"5381268075777268"
+				"6381268075777268"
 			]
 			tasks: [
 				{
-					id: "0A52332A641C514B"
+					id: "1A52332A641C514B"
 					type: "item"
 					item: {
 						id: "ars_nouveau:glyph_aoe"
@@ -101,7 +102,7 @@
 			]
 			rewards: [
 				{
-					id: "79E7089CE766C5AE"
+					id: "19E7089CE766C5AE"
 					type: "item"
 					item: {
 						id: "minecraft:gunpowder"
@@ -110,26 +111,26 @@
 					count: 8
 				}
 				{
-					id: "82935AEDC0E4E7C4"
+					id: "22935AEDC0E4E7C4"
 					type: "xp_levels"
 					xp_levels: 4
 				}
 			]
 		}
 		{
-			id: "4A4B62CD2B7C049D"
-			x: 5.0d
-			y: 2.0d
+			id: "5A4B62CD2B7C049D"
+			x: 2.25d
+			y: 9.25d
 			icon: {
 				id: "ars_nouveau:glyph_pierce"
 				count: 1
 			}
 			dependencies: [
-				"5381268075777268"
+				"6381268075777268"
 			]
 			tasks: [
 				{
-					id: "4F7B99113E5D637F"
+					id: "5F7B99113E5D637F"
 					type: "item"
 					item: {
 						id: "ars_nouveau:glyph_pierce"
@@ -140,7 +141,7 @@
 			]
 			rewards: [
 				{
-					id: "C16DCF293F00F82E"
+					id: "616DCF293F00F82E"
 					type: "item"
 					item: {
 						id: "minecraft:arrow"
@@ -149,26 +150,26 @@
 					count: 16
 				}
 				{
-					id: "D6A272238F8A848B"
+					id: "76A272238F8A848B"
 					type: "xp_levels"
 					xp_levels: 4
 				}
 			]
 		}
 		{
-			id: "AF6F1FAF8BB5B7E1"
-			x: 5.0d
-			y: 4.0d
+			id: "4F6F1FAF8BB5B7E1"
+			x: 2.25d
+			y: 11.1d
 			icon: {
 				id: "ars_nouveau:glyph_extend_time"
 				count: 1
 			}
 			dependencies: [
-				"5381268075777268"
+				"6381268075777268"
 			]
 			tasks: [
 				{
-					id: "58F90C92F1146D56"
+					id: "68F90C92F1146D56"
 					type: "item"
 					item: {
 						id: "ars_nouveau:glyph_extend_time"
@@ -177,7 +178,7 @@
 					count: 1
 				}
 				{
-					id: "B8D40086388C02F9"
+					id: "58D40086388C02F9"
 					type: "item"
 					item: {
 						id: "ars_nouveau:glyph_duration_down"
@@ -188,7 +189,7 @@
 			]
 			rewards: [
 				{
-					id: "D5D57AB5563C2308"
+					id: "75D57AB5563C2308"
 					type: "item"
 					item: {
 						id: "minecraft:redstone_block"
@@ -197,26 +198,26 @@
 					count: 1
 				}
 				{
-					id: "E2083587A39F8FCC"
+					id: "12083587A39F8FCC"
 					type: "xp_levels"
 					xp_levels: 4
 				}
 			]
 		}
 		{
-			id: "1DA50B03201ABD15"
-			x: 7.5d
-			y: 0.0d
+			id: "2DA50B03201ABD15"
+			x: 4.5d
+			y: 7.3999999999999995d
 			icon: {
 				id: "ars_nouveau:glyph_fortune"
 				count: 1
 			}
 			dependencies: [
-				"3D6231E91D67D708"
+				"4D6231E91D67D708"
 			]
 			tasks: [
 				{
-					id: "B8971012541B9F50"
+					id: "58971012541B9F50"
 					type: "item"
 					item: {
 						id: "ars_nouveau:glyph_fortune"
@@ -225,7 +226,7 @@
 					count: 1
 				}
 				{
-					id: "11DD67785B7CE23A"
+					id: "21DD67785B7CE23A"
 					type: "item"
 					item: {
 						id: "ars_nouveau:glyph_extract"
@@ -236,7 +237,7 @@
 			]
 			rewards: [
 				{
-					id: "02BD3C10F59BE652"
+					id: "12BD3C10F59BE652"
 					type: "item"
 					item: {
 						id: "minecraft:emerald"
@@ -245,27 +246,27 @@
 					count: 2
 				}
 				{
-					id: "7EA68A7B7091ED0A"
+					id: "1EA68A7B7091ED0A"
 					type: "xp_levels"
 					xp_levels: 5
 				}
 			]
 		}
 		{
-			id: "B6155C1029AC1BDD"
-			x: 7.5d
-			y: 2.0d
+			id: "56155C1029AC1BDD"
+			x: 4.5d
+			y: 9.25d
 			icon: {
 				id: "ars_nouveau:glyph_dampen"
 				count: 1
 			}
 			optional: true
 			dependencies: [
-				"4A4B62CD2B7C049D"
+				"5A4B62CD2B7C049D"
 			]
 			tasks: [
 				{
-					id: "0F89C255B03D8BB1"
+					id: "1F89C255B03D8BB1"
 					type: "item"
 					item: {
 						id: "ars_nouveau:glyph_dampen"
@@ -276,7 +277,7 @@
 			]
 			rewards: [
 				{
-					id: "CDEAC7CA99CB8642"
+					id: "6DEAC7CA99CB8642"
 					type: "item"
 					item: {
 						id: "minecraft:nether_brick"
@@ -285,26 +286,26 @@
 					count: 8
 				}
 				{
-					id: "74E40DC607EBDBFB"
+					id: "14E40DC607EBDBFB"
 					type: "xp_levels"
 					xp_levels: 3
 				}
 			]
 		}
 		{
-			id: "C23A922EF7C378AA"
-			x: 7.5d
-			y: 4.0d
+			id: "623A922EF7C378AA"
+			x: 4.5d
+			y: 11.1d
 			icon: {
 				id: "ars_nouveau:glyph_heal"
 				count: 1
 			}
 			dependencies: [
-				"AF6F1FAF8BB5B7E1"
+				"4F6F1FAF8BB5B7E1"
 			]
 			tasks: [
 				{
-					id: "82CBCFF093D81406"
+					id: "22CBCFF093D81406"
 					type: "item"
 					item: {
 						id: "ars_nouveau:glyph_heal"
@@ -315,7 +316,7 @@
 			]
 			rewards: [
 				{
-					id: "2E391D332D34EF9F"
+					id: "3E391D332D34EF9F"
 					type: "item"
 					item: {
 						id: "minecraft:golden_apple"
@@ -324,26 +325,26 @@
 					count: 1
 				}
 				{
-					id: "FD0148EE0AB2FAB4"
+					id: "2D0148EE0AB2FAB4"
 					type: "xp_levels"
 					xp_levels: 5
 				}
 			]
 		}
 		{
-			id: "0AA80C9F8759399D"
-			x: 10.0d
-			y: 0.0d
+			id: "1AA80C9F8759399D"
+			x: 6.75d
+			y: 7.3999999999999995d
 			icon: {
 				id: "ars_nouveau:glyph_smelt"
 				count: 1
 			}
 			dependencies: [
-				"1DA50B03201ABD15"
+				"2DA50B03201ABD15"
 			]
 			tasks: [
 				{
-					id: "D0B0E11A24D0DA04"
+					id: "70B0E11A24D0DA04"
 					type: "item"
 					item: {
 						id: "ars_nouveau:glyph_smelt"
@@ -354,7 +355,7 @@
 			]
 			rewards: [
 				{
-					id: "929D11BB2A844B83"
+					id: "329D11BB2A844B83"
 					type: "item"
 					item: {
 						id: "minecraft:blaze_rod"
@@ -363,27 +364,27 @@
 					count: 2
 				}
 				{
-					id: "697190F172D1CB8F"
+					id: "797190F172D1CB8F"
 					type: "xp_levels"
 					xp_levels: 5
 				}
 			]
 		}
 		{
-			id: "7507CAA88B395BE2"
-			x: 10.0d
-			y: 2.0d
+			id: "1507CAA88B395BE2"
+			x: 6.75d
+			y: 9.25d
 			icon: {
 				id: "ars_nouveau:glyph_grow"
 				count: 1
 			}
 			dependencies: [
-				"B6155C1029AC1BDD"
-				"C23A922EF7C378AA"
+				"56155C1029AC1BDD"
+				"623A922EF7C378AA"
 			]
 			tasks: [
 				{
-					id: "2B68B3BB6E43C362"
+					id: "3B68B3BB6E43C362"
 					type: "item"
 					item: {
 						id: "ars_nouveau:glyph_grow"
@@ -394,7 +395,7 @@
 			]
 			rewards: [
 				{
-					id: "9970067D2308A349"
+					id: "3970067D2308A349"
 					type: "item"
 					item: {
 						id: "minecraft:bone_block"
@@ -403,27 +404,27 @@
 					count: 4
 				}
 				{
-					id: "635DFBA797B3F0BE"
+					id: "735DFBA797B3F0BE"
 					type: "xp_levels"
 					xp_levels: 5
 				}
 			]
 		}
 		{
-			id: "B592A2F0D9F96A95"
-			x: 10.0d
-			y: 4.0d
+			id: "5592A2F0D9F96A95"
+			x: 6.75d
+			y: 12.95d
 			icon: {
 				id: "ars_nouveau:glyph_crush"
 				count: 1
 			}
 			optional: true
 			dependencies: [
-				"C23A922EF7C378AA"
+				"623A922EF7C378AA"
 			]
 			tasks: [
 				{
-					id: "8FEE4B7C2AF5C216"
+					id: "2FEE4B7C2AF5C216"
 					type: "item"
 					item: {
 						id: "ars_nouveau:glyph_crush"
@@ -434,7 +435,7 @@
 			]
 			rewards: [
 				{
-					id: "DD0E2ABFABF29010"
+					id: "7D0E2ABFABF29010"
 					type: "item"
 					item: {
 						id: "minecraft:sand"
@@ -443,27 +444,27 @@
 					count: 16
 				}
 				{
-					id: "8458F295ADE32673"
+					id: "2458F295ADE32673"
 					type: "xp_levels"
 					xp_levels: 3
 				}
 			]
 		}
 		{
-			id: "6D2EE8FBD6DD201E"
-			x: 12.5d
-			y: 0.0d
+			id: "7D2EE8FBD6DD201E"
+			x: 9.25d
+			y: 7.3999999999999995d
 			icon: {
 				id: "ars_nouveau:glyph_slowfall"
 				count: 1
 			}
 			optional: true
 			dependencies: [
-				"0AA80C9F8759399D"
+				"1AA80C9F8759399D"
 			]
 			tasks: [
 				{
-					id: "3E6AD0A4DDE9A04C"
+					id: "4E6AD0A4DDE9A04C"
 					type: "item"
 					item: {
 						id: "ars_nouveau:glyph_slowfall"
@@ -474,7 +475,7 @@
 			]
 			rewards: [
 				{
-					id: "A96044042EC14CEF"
+					id: "496044042EC14CEF"
 					type: "item"
 					item: {
 						id: "minecraft:feather"
@@ -483,27 +484,27 @@
 					count: 8
 				}
 				{
-					id: "8131D920A22F7E73"
+					id: "2131D920A22F7E73"
 					type: "xp_levels"
 					xp_levels: 3
 				}
 			]
 		}
 		{
-			id: "765FAFAE6B59FA85"
-			x: 12.5d
-			y: 2.0d
+			id: "165FAFAE6B59FA85"
+			x: 9.25d
+			y: 11.1d
 			icon: {
 				id: "ars_nouveau:glyph_conjure_water"
 				count: 1
 			}
 			optional: true
 			dependencies: [
-				"7507CAA88B395BE2"
+				"1507CAA88B395BE2"
 			]
 			tasks: [
 				{
-					id: "A3C05590EDF66D0D"
+					id: "43C05590EDF66D0D"
 					type: "item"
 					item: {
 						id: "ars_nouveau:glyph_conjure_water"
@@ -514,7 +515,7 @@
 			]
 			rewards: [
 				{
-					id: "B100411F28CB8D38"
+					id: "5100411F28CB8D38"
 					type: "item"
 					item: {
 						id: "minecraft:water_bucket"
@@ -523,27 +524,27 @@
 					count: 1
 				}
 				{
-					id: "A1F35DAA4D0AFC62"
+					id: "41F35DAA4D0AFC62"
 					type: "xp_levels"
 					xp_levels: 3
 				}
 			]
 		}
 		{
-			id: "2FD4F0B8CBCD3214"
-			x: 12.5d
-			y: 4.0d
+			id: "3FD4F0B8CBCD3214"
+			x: 9.25d
+			y: 12.95d
 			icon: {
 				id: "ars_nouveau:glyph_flare"
 				count: 1
 			}
 			optional: true
 			dependencies: [
-				"B592A2F0D9F96A95"
+				"5592A2F0D9F96A95"
 			]
 			tasks: [
 				{
-					id: "0482D544BF1EAE53"
+					id: "1482D544BF1EAE53"
 					type: "item"
 					item: {
 						id: "ars_nouveau:glyph_flare"
@@ -554,7 +555,7 @@
 			]
 			rewards: [
 				{
-					id: "46BB7B1496EE7E06"
+					id: "56BB7B1496EE7E06"
 					type: "item"
 					item: {
 						id: "minecraft:fire_charge"
@@ -563,27 +564,27 @@
 					count: 4
 				}
 				{
-					id: "763073FEF4A68C0E"
+					id: "163073FEF4A68C0E"
 					type: "xp_levels"
 					xp_levels: 3
 				}
 			]
 		}
 		{
-			id: "F0077B13AB29AB47"
-			x: 15.0d
-			y: 0.0d
+			id: "20077B13AB29AB47"
+			x: 11.75d
+			y: 7.3999999999999995d
 			icon: {
 				id: "ars_elemental:glyph_arc_projectile"
 				count: 1
 			}
 			optional: true
 			dependencies: [
-				"6D2EE8FBD6DD201E"
+				"7D2EE8FBD6DD201E"
 			]
 			tasks: [
 				{
-					id: "96D3FEEE575F0E50"
+					id: "36D3FEEE575F0E50"
 					type: "item"
 					item: {
 						id: "ars_elemental:glyph_arc_projectile"
@@ -594,7 +595,7 @@
 			]
 			rewards: [
 				{
-					id: "D02E0D481E93C9DB"
+					id: "702E0D481E93C9DB"
 					type: "item"
 					item: {
 						id: "minecraft:slime_ball"
@@ -603,16 +604,16 @@
 					count: 4
 				}
 				{
-					id: "0A60C60742B7EC1F"
+					id: "1A60C60742B7EC1F"
 					type: "xp_levels"
 					xp_levels: 3
 				}
 			]
 		}
 		{
-			id: "B32147EA99A0CA1A"
-			x: 15.0d
-			y: 2.5d
+			id: "532147EA99A0CA1A"
+			x: 9.25d
+			y: 9.5d
 			icon: {
 				id: "ars_nouveau:apprentice_spell_book"
 				count: 1
@@ -620,42 +621,42 @@
 			size: 1.5d
 			shape: "diamond"
 			dependencies: [
-				"0AA80C9F8759399D"
-				"7507CAA88B395BE2"
+				"1AA80C9F8759399D"
+				"1507CAA88B395BE2"
 			]
 			tasks: [
 				{
-					id: "A02994330EB6B3AB"
+					id: "402994330EB6B3AB"
 					type: "checkmark"
 				}
 			]
 			rewards: [
 				{
-					id: "EFD5061CDA029390"
+					id: "1FD5061CDA029390"
 					type: "loot"
-					table_id: "BA8E33E78A3B3A0C"
+					table_id: "5A8E33E78A3B3A0C"
 				}
 				{
-					id: "DBAF0D46759864A3"
+					id: "7BAF0D46759864A3"
 					type: "xp_levels"
 					xp_levels: 8
 				}
 			]
 		}
 		{
-			id: "667C72971E325444"
-			x: 5.0d
-			y: 6.5d
+			id: "767C72971E325444"
+			x: 4.5d
+			y: 12.95d
 			icon: {
 				id: "ars_nouveau:glyph_accelerate"
 				count: 1
 			}
 			dependencies: [
-				"AF6F1FAF8BB5B7E1"
+				"4F6F1FAF8BB5B7E1"
 			]
 			tasks: [
 				{
-					id: "CF55CFA671DCAC4C"
+					id: "6F55CFA671DCAC4C"
 					type: "item"
 					item: {
 						id: "ars_nouveau:glyph_accelerate"
@@ -664,7 +665,7 @@
 					count: 1
 				}
 				{
-					id: "D878F1136DDE17B2"
+					id: "7878F1136DDE17B2"
 					type: "item"
 					item: {
 						id: "ars_nouveau:glyph_decelerate"
@@ -673,7 +674,7 @@
 					count: 1
 				}
 				{
-					id: "663D72ACB396B54C"
+					id: "763D72ACB396B54C"
 					type: "item"
 					item: {
 						id: "ars_nouveau:glyph_gravity"
@@ -682,7 +683,7 @@
 					count: 1
 				}
 				{
-					id: "3E9B11C272A1377F"
+					id: "4E9B11C272A1377F"
 					type: "item"
 					item: {
 						id: "ars_nouveau:glyph_exchange"
@@ -693,7 +694,7 @@
 			]
 			rewards: [
 				{
-					id: "2855ADD07D2EED06"
+					id: "3855ADD07D2EED06"
 					type: "item"
 					item: {
 						id: "minecraft:emerald"
@@ -702,26 +703,26 @@
 					count: 2
 				}
 				{
-					id: "AA9941705A7BEBF6"
+					id: "4A9941705A7BEBF6"
 					type: "xp_levels"
 					xp_levels: 4
 				}
 			]
 		}
 		{
-			id: "F40A7AC4D860B5AF"
-			x: 7.5d
-			y: 6.5d
+			id: "240A7AC4D860B5AF"
+			x: 11.75d
+			y: 9.25d
 			icon: {
 				id: "ars_nouveau:glyph_explosion"
 				count: 1
 			}
 			dependencies: [
-				"2FD4F0B8CBCD3214"
+				"3FD4F0B8CBCD3214"
 			]
 			tasks: [
 				{
-					id: "F1AA6C0141286656"
+					id: "21AA6C0141286656"
 					type: "item"
 					item: {
 						id: "ars_nouveau:glyph_explosion"
@@ -730,7 +731,7 @@
 					count: 1
 				}
 				{
-					id: "8CE2181E653404EF"
+					id: "2CE2181E653404EF"
 					type: "item"
 					item: {
 						id: "ars_nouveau:glyph_firework"
@@ -739,7 +740,7 @@
 					count: 1
 				}
 				{
-					id: "FC7993B37E675ADB"
+					id: "2C7993B37E675ADB"
 					type: "item"
 					item: {
 						id: "ars_nouveau:glyph_wind_shear"
@@ -748,7 +749,7 @@
 					count: 1
 				}
 				{
-					id: "BC7AD17EB8FB439C"
+					id: "5C7AD17EB8FB439C"
 					type: "item"
 					item: {
 						id: "ars_nouveau:glyph_cold_snap"
@@ -759,7 +760,7 @@
 			]
 			rewards: [
 				{
-					id: "4474D313C30A6AEC"
+					id: "5474D313C30A6AEC"
 					type: "item"
 					item: {
 						id: "minecraft:tnt"
@@ -768,26 +769,26 @@
 					count: 4
 				}
 				{
-					id: "0E2568B110EB4967"
+					id: "1E2568B110EB4967"
 					type: "xp_levels"
 					xp_levels: 4
 				}
 			]
 		}
 		{
-			id: "3348580594C97569"
-			x: 10.0d
-			y: 6.5d
+			id: "4348580594C97569"
+			x: 2.25d
+			y: 12.95d
 			icon: {
 				id: "ars_nouveau:glyph_ender_inventory"
 				count: 1
 			}
 			dependencies: [
-				"5381268075777268"
+				"6381268075777268"
 			]
 			tasks: [
 				{
-					id: "7DA3779A55A1FA9A"
+					id: "1DA3779A55A1FA9A"
 					type: "item"
 					item: {
 						id: "ars_nouveau:glyph_ender_inventory"
@@ -796,7 +797,7 @@
 					count: 1
 				}
 				{
-					id: "95245E959BDC2BD7"
+					id: "35245E959BDC2BD7"
 					type: "item"
 					item: {
 						id: "ars_nouveau:glyph_name"
@@ -805,7 +806,7 @@
 					count: 1
 				}
 				{
-					id: "29CB398314394723"
+					id: "39CB398314394723"
 					type: "item"
 					item: {
 						id: "ars_nouveau:glyph_sense_magic"
@@ -814,7 +815,7 @@
 					count: 1
 				}
 				{
-					id: "2148295D35ADD421"
+					id: "3148295D35ADD421"
 					type: "item"
 					item: {
 						id: "ars_nouveau:glyph_invisibility"
@@ -823,7 +824,7 @@
 					count: 1
 				}
 				{
-					id: "F4ACE5539AF6DEDE"
+					id: "24ACE5539AF6DEDE"
 					type: "item"
 					item: {
 						id: "ars_nouveau:glyph_infuse"
@@ -832,7 +833,7 @@
 					count: 1
 				}
 				{
-					id: "8FB63E9474CFF67A"
+					id: "2FB63E9474CFF67A"
 					type: "item"
 					item: {
 						id: "ars_nouveau:glyph_animate_block"
@@ -843,7 +844,7 @@
 			]
 			rewards: [
 				{
-					id: "21A84DF8CAA995D7"
+					id: "31A84DF8CAA995D7"
 					type: "item"
 					item: {
 						id: "minecraft:ender_pearl"
@@ -852,27 +853,27 @@
 					count: 2
 				}
 				{
-					id: "687C322264288FDB"
+					id: "787C322264288FDB"
 					type: "xp_levels"
 					xp_levels: 5
 				}
 			]
 		}
 		{
-			id: "9BFB66351D27C53D"
-			x: 12.5d
-			y: 6.5d
+			id: "3BFB66351D27C53D"
+			x: 14.0d
+			y: 7.3999999999999995d
 			icon: {
 				id: "ars_elemental:glyph_bubble_shield"
 				count: 1
 			}
 			optional: true
 			dependencies: [
-				"F0077B13AB29AB47"
+				"20077B13AB29AB47"
 			]
 			tasks: [
 				{
-					id: "D7497126263F653A"
+					id: "77497126263F653A"
 					type: "item"
 					item: {
 						id: "ars_elemental:glyph_watery_grave"
@@ -881,7 +882,7 @@
 					count: 1
 				}
 				{
-					id: "D919157D9EA7D3DF"
+					id: "7919157D9EA7D3DF"
 					type: "item"
 					item: {
 						id: "ars_elemental:glyph_geyser"
@@ -890,7 +891,7 @@
 					count: 1
 				}
 				{
-					id: "D078041A4C823F4D"
+					id: "7078041A4C823F4D"
 					type: "item"
 					item: {
 						id: "ars_elemental:glyph_mist"
@@ -899,7 +900,7 @@
 					count: 1
 				}
 				{
-					id: "CD2E1C430EDFFCC4"
+					id: "6D2E1C430EDFFCC4"
 					type: "item"
 					item: {
 						id: "ars_elemental:glyph_bubble_shield"
@@ -908,7 +909,7 @@
 					count: 1
 				}
 				{
-					id: "C3A278D314651C14"
+					id: "63A278D314651C14"
 					type: "item"
 					item: {
 						id: "ars_elemental:glyph_slip_feet"
@@ -917,7 +918,7 @@
 					count: 1
 				}
 				{
-					id: "3D35EED2E75ACCF7"
+					id: "4D35EED2E75ACCF7"
 					type: "item"
 					item: {
 						id: "ars_elemental:glyph_discharge"
@@ -928,7 +929,7 @@
 			]
 			rewards: [
 				{
-					id: "40B6BF97DC749281"
+					id: "50B6BF97DC749281"
 					type: "item"
 					item: {
 						id: "minecraft:prismarine_shard"
@@ -937,27 +938,27 @@
 					count: 8
 				}
 				{
-					id: "11E0E5BD23A2520E"
+					id: "21E0E5BD23A2520E"
 					type: "xp_levels"
 					xp_levels: 5
 				}
 			]
 		}
 		{
-			id: "7A35F04F63E9A5FD"
-			x: 15.0d
-			y: 6.5d
+			id: "1A35F04F63E9A5FD"
+			x: 16.25d
+			y: 7.3999999999999995d
 			icon: {
 				id: "ars_elemental:glyph_poison_spores"
 				count: 1
 			}
 			optional: true
 			dependencies: [
-				"9BFB66351D27C53D"
+				"3BFB66351D27C53D"
 			]
 			tasks: [
 				{
-					id: "726890CE031FC3DD"
+					id: "126890CE031FC3DD"
 					type: "item"
 					item: {
 						id: "ars_elemental:glyph_poison_spores"
@@ -966,7 +967,7 @@
 					count: 1
 				}
 				{
-					id: "843A85D08482B096"
+					id: "243A85D08482B096"
 					type: "item"
 					item: {
 						id: "ars_elemental:glyph_envenom"
@@ -975,7 +976,7 @@
 					count: 1
 				}
 				{
-					id: "744A314A65F0B211"
+					id: "144A314A65F0B211"
 					type: "item"
 					item: {
 						id: "ars_elemental:glyph_spike"
@@ -984,7 +985,7 @@
 					count: 1
 				}
 				{
-					id: "7B1CD560FE5BBDA4"
+					id: "1B1CD560FE5BBDA4"
 					type: "item"
 					item: {
 						id: "ars_elemental:glyph_summon_bee"
@@ -993,7 +994,7 @@
 					count: 1
 				}
 				{
-					id: "EFC5E3B6B061F2B0"
+					id: "1FC5E3B6B061F2B0"
 					type: "item"
 					item: {
 						id: "ars_elemental:glyph_summon_slime"
@@ -1004,7 +1005,7 @@
 			]
 			rewards: [
 				{
-					id: "213A1F3C836DD205"
+					id: "313A1F3C836DD205"
 					type: "item"
 					item: {
 						id: "minecraft:honeycomb"
@@ -1013,27 +1014,27 @@
 					count: 4
 				}
 				{
-					id: "60E02F7EACCDF366"
+					id: "70E02F7EACCDF366"
 					type: "xp_levels"
 					xp_levels: 5
 				}
 			]
 		}
 		{
-			id: "D3AE58B371D00F13"
-			x: 17.5d
-			y: 6.5d
+			id: "73AE58B371D00F13"
+			x: 18.5d
+			y: 7.3999999999999995d
 			icon: {
 				id: "sauce:anima_essence"
 				count: 1
 			}
 			optional: true
 			dependencies: [
-				"7A35F04F63E9A5FD"
+				"1A35F04F63E9A5FD"
 			]
 			tasks: [
 				{
-					id: "4C6AA440BCA0E133"
+					id: "5C6AA440BCA0E133"
 					type: "item"
 					item: {
 						id: "sauce:anima_essence"
@@ -1042,7 +1043,7 @@
 					count: 1
 				}
 				{
-					id: "834B1166A79B1074"
+					id: "234B1166A79B1074"
 					type: "item"
 					item: {
 						id: "ars_elemental:glyph_charm"
@@ -1051,7 +1052,7 @@
 					count: 1
 				}
 				{
-					id: "F43514E0F54E0410"
+					id: "243514E0F54E0410"
 					type: "item"
 					item: {
 						id: "ars_elemental:glyph_phantom_grasp"
@@ -1060,7 +1061,7 @@
 					count: 1
 				}
 				{
-					id: "97B7D92AEAA53675"
+					id: "37B7D92AEAA53675"
 					type: "item"
 					item: {
 						id: "ars_elemental:glyph_propagator_arc"
@@ -1071,7 +1072,7 @@
 			]
 			rewards: [
 				{
-					id: "F5F0095AA166E070"
+					id: "25F0095AA166E070"
 					type: "item"
 					item: {
 						id: "minecraft:golden_apple"
@@ -1080,28 +1081,29 @@
 					count: 1
 				}
 				{
-					id: "2F8537C9E69CF118"
+					id: "3F8537C9E69CF118"
 					type: "xp_levels"
 					xp_levels: 5
 				}
 			]
 		}
 		{
-			id: "FD9E4C504163EE17"
-			x: 0.0d
-			y: 10.5d
+			id: "2D9E4C504163EE17"
+			x: 0.25d
+			y: 18.25d
 			icon: {
 				id: "ars_nouveau:relay"
 				count: 1
 			}
 			size: 1.5d
 			shape: "square"
+			hide_dependency_lines: true
 			dependencies: [
-				"99471A3D24B0C45D"
+				"39471A3D24B0C45D"
 			]
 			tasks: [
 				{
-					id: "93B97EFD0299F4AA"
+					id: "33B97EFD0299F4AA"
 					type: "item"
 					item: {
 						id: "ars_nouveau:relay"
@@ -1112,7 +1114,7 @@
 			]
 			rewards: [
 				{
-					id: "22B0261C8BA898E2"
+					id: "32B0261C8BA898E2"
 					type: "item"
 					item: {
 						id: "ars_nouveau:source_gem"
@@ -1121,26 +1123,26 @@
 					count: 8
 				}
 				{
-					id: "BB2A249270172FF7"
+					id: "5B2A249270172FF7"
 					type: "loot"
-					table_id: "F2BA64790EBA3DF5"
+					table_id: "22BA64790EBA3DF5"
 				}
 			]
 		}
 		{
-			id: "0C6FCD3B9D470860"
-			x: 2.5d
-			y: 9.5d
+			id: "1C6FCD3B9D470860"
+			x: 2.75d
+			y: 18.0d
 			icon: {
 				id: "ars_nouveau:relay_splitter"
 				count: 1
 			}
 			dependencies: [
-				"FD9E4C504163EE17"
+				"2D9E4C504163EE17"
 			]
 			tasks: [
 				{
-					id: "A28F9A7B23B262F0"
+					id: "428F9A7B23B262F0"
 					type: "item"
 					item: {
 						id: "ars_nouveau:relay_splitter"
@@ -1151,7 +1153,7 @@
 			]
 			rewards: [
 				{
-					id: "05D31904A5843501"
+					id: "15D31904A5843501"
 					type: "item"
 					item: {
 						id: "minecraft:quartz"
@@ -1160,26 +1162,26 @@
 					count: 8
 				}
 				{
-					id: "D59B83010B0C4C88"
+					id: "759B83010B0C4C88"
 					type: "xp_levels"
 					xp_levels: 4
 				}
 			]
 		}
 		{
-			id: "C74EE2E2316CDDAD"
-			x: 2.5d
-			y: 11.5d
+			id: "674EE2E2316CDDAD"
+			x: 2.75d
+			y: 19.85d
 			icon: {
 				id: "ars_nouveau:relay_collector"
 				count: 1
 			}
 			dependencies: [
-				"FD9E4C504163EE17"
+				"2D9E4C504163EE17"
 			]
 			tasks: [
 				{
-					id: "A92BE73759A449AC"
+					id: "492BE73759A449AC"
 					type: "item"
 					item: {
 						id: "ars_nouveau:relay_collector"
@@ -1188,7 +1190,7 @@
 					count: 1
 				}
 				{
-					id: "A2E1C85147E2CC6D"
+					id: "42E1C85147E2CC6D"
 					type: "item"
 					item: {
 						id: "ars_nouveau:relay_deposit"
@@ -1199,7 +1201,7 @@
 			]
 			rewards: [
 				{
-					id: "D57E9A4026554A39"
+					id: "757E9A4026554A39"
 					type: "item"
 					item: {
 						id: "minecraft:hopper"
@@ -1208,28 +1210,29 @@
 					count: 2
 				}
 				{
-					id: "FD4BBE828E350894"
+					id: "2D4BBE828E350894"
 					type: "xp_levels"
 					xp_levels: 5
 				}
 			]
 		}
 		{
-			id: "1896DC83DBFDFA42"
-			x: 0.0d
-			y: 17.0d
+			id: "2896DC83DBFDFA42"
+			x: 0.375d
+			y: 30.075d
 			icon: {
 				id: "ars_nouveau:ritual_brazier"
 				count: 1
 			}
 			size: 1.75d
 			shape: "square"
+			hide_dependency_lines: true
 			dependencies: [
-				"99471A3D24B0C45D"
+				"39471A3D24B0C45D"
 			]
 			tasks: [
 				{
-					id: "6E014E02303CA817"
+					id: "7E014E02303CA817"
 					type: "item"
 					item: {
 						id: "ars_nouveau:ritual_brazier"
@@ -1240,7 +1243,7 @@
 			]
 			rewards: [
 				{
-					id: "E0639321BAD950FC"
+					id: "10639321BAD950FC"
 					type: "item"
 					item: {
 						id: "ars_nouveau:source_gem"
@@ -1249,26 +1252,26 @@
 					count: 8
 				}
 				{
-					id: "D4277BD14549C69F"
+					id: "74277BD14549C69F"
 					type: "loot"
-					table_id: "F2BA64790EBA3DF5"
+					table_id: "22BA64790EBA3DF5"
 				}
 			]
 		}
 		{
-			id: "D4196A047E1F6006"
-			x: 2.5d
-			y: 15.0d
+			id: "74196A047E1F6006"
+			x: 3.0d
+			y: 29.7d
 			icon: {
 				id: "ars_nouveau:ritual_harvest"
 				count: 1
 			}
 			dependencies: [
-				"1896DC83DBFDFA42"
+				"2896DC83DBFDFA42"
 			]
 			tasks: [
 				{
-					id: "DEE17C9E42B6F662"
+					id: "7EE17C9E42B6F662"
 					type: "item"
 					item: {
 						id: "ars_nouveau:ritual_harvest"
@@ -1279,7 +1282,7 @@
 			]
 			rewards: [
 				{
-					id: "6487361DA4C57F1D"
+					id: "7487361DA4C57F1D"
 					type: "item"
 					item: {
 						id: "minecraft:bone_meal"
@@ -1288,26 +1291,26 @@
 					count: 16
 				}
 				{
-					id: "641763EF574B8D5E"
+					id: "741763EF574B8D5E"
 					type: "xp_levels"
 					xp_levels: 4
 				}
 			]
 		}
 		{
-			id: "EBAF095A8D0F5B04"
-			x: 2.5d
-			y: 17.0d
+			id: "1BAF095A8D0F5B04"
+			x: 3.0d
+			y: 31.675d
 			icon: {
 				id: "ars_nouveau:ritual_scrying"
 				count: 1
 			}
 			dependencies: [
-				"1896DC83DBFDFA42"
+				"2896DC83DBFDFA42"
 			]
 			tasks: [
 				{
-					id: "A500D41864FBB9D3"
+					id: "4500D41864FBB9D3"
 					type: "item"
 					item: {
 						id: "ars_nouveau:ritual_scrying"
@@ -1318,7 +1321,7 @@
 			]
 			rewards: [
 				{
-					id: "768E7C243E196619"
+					id: "168E7C243E196619"
 					type: "item"
 					item: {
 						id: "minecraft:spider_eye"
@@ -1327,27 +1330,27 @@
 					count: 4
 				}
 				{
-					id: "FAE290A73AB97611"
+					id: "2AE290A73AB97611"
 					type: "xp_levels"
 					xp_levels: 4
 				}
 			]
 		}
 		{
-			id: "F35350BB35FCBF76"
-			x: 2.5d
-			y: 19.0d
+			id: "235350BB35FCBF76"
+			x: 5.25d
+			y: 33.65d
 			icon: {
 				id: "ars_nouveau:ritual_fertility"
 				count: 1
 			}
 			optional: true
 			dependencies: [
-				"EBAF095A8D0F5B04"
+				"1BAF095A8D0F5B04"
 			]
 			tasks: [
 				{
-					id: "FF0C125B6DD8A20E"
+					id: "2F0C125B6DD8A20E"
 					type: "item"
 					item: {
 						id: "ars_nouveau:ritual_fertility"
@@ -1358,7 +1361,7 @@
 			]
 			rewards: [
 				{
-					id: "28DBC7D6996F2B0B"
+					id: "38DBC7D6996F2B0B"
 					type: "item"
 					item: {
 						id: "minecraft:wheat"
@@ -1369,19 +1372,19 @@
 			]
 		}
 		{
-			id: "0B35E9F6839801CB"
-			x: 5.0d
-			y: 15.0d
+			id: "1B35E9F6839801CB"
+			x: 5.25d
+			y: 29.7d
 			icon: {
 				id: "ars_nouveau:ritual_sanctuary"
 				count: 1
 			}
 			dependencies: [
-				"D4196A047E1F6006"
+				"74196A047E1F6006"
 			]
 			tasks: [
 				{
-					id: "16329ED8B7214A30"
+					id: "26329ED8B7214A30"
 					type: "item"
 					item: {
 						id: "ars_nouveau:ritual_sanctuary"
@@ -1392,7 +1395,7 @@
 			]
 			rewards: [
 				{
-					id: "56F06A1154630D45"
+					id: "66F06A1154630D45"
 					type: "item"
 					item: {
 						id: "minecraft:rotten_flesh"
@@ -1401,27 +1404,27 @@
 					count: 16
 				}
 				{
-					id: "487A48087BC219BA"
+					id: "587A48087BC219BA"
 					type: "xp_levels"
 					xp_levels: 5
 				}
 			]
 		}
 		{
-			id: "4F349A5EDC7882FF"
-			x: 5.0d
-			y: 17.0d
+			id: "5F349A5EDC7882FF"
+			x: 5.25d
+			y: 31.675d
 			icon: {
 				id: "ars_nouveau:ritual_restoration"
 				count: 1
 			}
 			optional: true
 			dependencies: [
-				"EBAF095A8D0F5B04"
+				"1BAF095A8D0F5B04"
 			]
 			tasks: [
 				{
-					id: "821593285A66DBE2"
+					id: "221593285A66DBE2"
 					type: "item"
 					item: {
 						id: "ars_nouveau:ritual_restoration"
@@ -1432,7 +1435,7 @@
 			]
 			rewards: [
 				{
-					id: "DF672F9BC077393B"
+					id: "7F672F9BC077393B"
 					type: "item"
 					item: {
 						id: "minecraft:golden_apple"
@@ -1443,20 +1446,20 @@
 			]
 		}
 		{
-			id: "DCCFA741053E0FE5"
-			x: 5.0d
-			y: 19.0d
+			id: "7CCFA741053E0FE5"
+			x: 7.5d
+			y: 33.65d
 			icon: {
 				id: "ars_nouveau:ritual_forestation"
 				count: 1
 			}
 			optional: true
 			dependencies: [
-				"4F349A5EDC7882FF"
+				"5F349A5EDC7882FF"
 			]
 			tasks: [
 				{
-					id: "978CB7D003F2FA87"
+					id: "378CB7D003F2FA87"
 					type: "item"
 					item: {
 						id: "ars_nouveau:ritual_forestation"
@@ -1467,7 +1470,7 @@
 			]
 			rewards: [
 				{
-					id: "30A98479700794AB"
+					id: "40A98479700794AB"
 					type: "item"
 					item: {
 						id: "minecraft:oak_sapling"
@@ -1478,19 +1481,19 @@
 			]
 		}
 		{
-			id: "39E117DEE84FA0D4"
+			id: "49E117DEE84FA0D4"
 			x: 7.5d
-			y: 15.0d
+			y: 29.7d
 			icon: {
 				id: "ars_nouveau:ritual_binding"
 				count: 1
 			}
 			dependencies: [
-				"0B35E9F6839801CB"
+				"1B35E9F6839801CB"
 			]
 			tasks: [
 				{
-					id: "F286D6EC1E6210E0"
+					id: "2286D6EC1E6210E0"
 					type: "item"
 					item: {
 						id: "ars_nouveau:ritual_binding"
@@ -1501,7 +1504,7 @@
 			]
 			rewards: [
 				{
-					id: "F59F6043CD499362"
+					id: "259F6043CD499362"
 					type: "item"
 					item: {
 						id: "minecraft:ender_pearl"
@@ -1510,26 +1513,26 @@
 					count: 2
 				}
 				{
-					id: "9C6DEF536757C44C"
+					id: "3C6DEF536757C44C"
 					type: "xp_levels"
 					xp_levels: 5
 				}
 			]
 		}
 		{
-			id: "C7CAB45A545ACFE9"
-			x: 10.0d
-			y: 15.0d
+			id: "67CAB45A545ACFE9"
+			x: 9.75d
+			y: 29.7d
 			icon: {
 				id: "ars_nouveau:familiar_starbuncle"
 				count: 1
 			}
 			dependencies: [
-				"39E117DEE84FA0D4"
+				"49E117DEE84FA0D4"
 			]
 			tasks: [
 				{
-					id: "927D2E7193130647"
+					id: "327D2E7193130647"
 					type: "item"
 					item: {
 						id: "ars_nouveau:familiar_starbuncle"
@@ -1540,33 +1543,34 @@
 			]
 			rewards: [
 				{
-					id: "9A7E6534A2C3FE1D"
+					id: "3A7E6534A2C3FE1D"
 					type: "loot"
-					table_id: "BA8E33E78A3B3A0C"
+					table_id: "5A8E33E78A3B3A0C"
 				}
 				{
-					id: "C66900F06DB1E405"
+					id: "666900F06DB1E405"
 					type: "xp_levels"
 					xp_levels: 5
 				}
 			]
 		}
 		{
-			id: "E59E09196BDDFFAA"
-			x: 12.5d
-			y: 15.0d
+			id: "159E09196BDDFFAA"
+			x: 12.0d
+			y: 29.7d
 			icon: {
 				id: "ars_nouveau:familiar_whirlisprig"
 				count: 1
 			}
 			optional: true
+			hide_dependency_lines: true
 			dependencies: [
-				"C7CAB45A545ACFE9"
-				"1E7256E1EF70D43C"
+				"67CAB45A545ACFE9"
+				"2E7256E1EF70D43C"
 			]
 			tasks: [
 				{
-					id: "F3FFB3E4CBF8327E"
+					id: "23FFB3E4CBF8327E"
 					type: "item"
 					item: {
 						id: "ars_nouveau:familiar_whirlisprig"
@@ -1575,7 +1579,7 @@
 					count: 1
 				}
 				{
-					id: "EE12B22E99C57833"
+					id: "1E12B22E99C57833"
 					type: "item"
 					item: {
 						id: "ars_nouveau:familiar_drygmy"
@@ -1584,7 +1588,7 @@
 					count: 1
 				}
 				{
-					id: "FF38DD59770F73C6"
+					id: "2F38DD59770F73C6"
 					type: "item"
 					item: {
 						id: "ars_nouveau:familiar_wixie"
@@ -1595,7 +1599,7 @@
 			]
 			rewards: [
 				{
-					id: "1CDCF37EBA89507E"
+					id: "2CDCF37EBA89507E"
 					type: "item"
 					item: {
 						id: "ars_nouveau:source_gem_block"
@@ -1604,27 +1608,27 @@
 					count: 1
 				}
 				{
-					id: "0D45E1A67B599F83"
+					id: "1D45E1A67B599F83"
 					type: "xp_levels"
 					xp_levels: 5
 				}
 			]
 		}
 		{
-			id: "F07D8B35CFC434C4"
-			x: 15.0d
-			y: 15.0d
+			id: "207D8B35CFC434C4"
+			x: 12.0d
+			y: 31.675d
 			icon: {
 				id: "ars_elemental:firenando_charm"
 				count: 1
 			}
 			optional: true
 			dependencies: [
-				"C7CAB45A545ACFE9"
+				"67CAB45A545ACFE9"
 			]
 			tasks: [
 				{
-					id: "56E7C88B9EE7D629"
+					id: "66E7C88B9EE7D629"
 					type: "item"
 					item: {
 						id: "ars_elemental:siren_familiar"
@@ -1633,7 +1637,7 @@
 					count: 1
 				}
 				{
-					id: "A01B0D5AA75B7E46"
+					id: "401B0D5AA75B7E46"
 					type: "item"
 					item: {
 						id: "ars_elemental:flashjack_familiar"
@@ -1642,7 +1646,7 @@
 					count: 1
 				}
 				{
-					id: "4E6AC8952C30D8C2"
+					id: "5E6AC8952C30D8C2"
 					type: "item"
 					item: {
 						id: "ars_elemental:firenando_familiar"
@@ -1653,7 +1657,7 @@
 			]
 			rewards: [
 				{
-					id: "05E794A1729F1C95"
+					id: "15E794A1729F1C95"
 					type: "item"
 					item: {
 						id: "minecraft:magma_cream"
@@ -1662,27 +1666,27 @@
 					count: 4
 				}
 				{
-					id: "3C86897573FDBCDF"
+					id: "4C86897573FDBCDF"
 					type: "xp_levels"
 					xp_levels: 5
 				}
 			]
 		}
 		{
-			id: "CB439F3677CCED34"
-			x: 7.5d
-			y: 17.0d
+			id: "6B439F3677CCED34"
+			x: 9.75d
+			y: 35.625d
 			icon: {
 				id: "ars_nouveau:mob_jar"
 				count: 1
 			}
 			optional: true
 			dependencies: [
-				"39E117DEE84FA0D4"
+				"49E117DEE84FA0D4"
 			]
 			tasks: [
 				{
-					id: "7778D74A861B4051"
+					id: "1778D74A861B4051"
 					type: "item"
 					item: {
 						id: "ars_nouveau:ritual_containment"
@@ -1691,7 +1695,7 @@
 					count: 1
 				}
 				{
-					id: "7D94574FB90E2C02"
+					id: "1D94574FB90E2C02"
 					type: "item"
 					item: {
 						id: "ars_nouveau:mob_jar"
@@ -1702,7 +1706,7 @@
 			]
 			rewards: [
 				{
-					id: "FCEA88E07631102C"
+					id: "2CEA88E07631102C"
 					type: "item"
 					item: {
 						id: "minecraft:glass"
@@ -1713,20 +1717,20 @@
 			]
 		}
 		{
-			id: "266C890332CCA08C"
-			x: 10.0d
-			y: 17.0d
+			id: "366C890332CCA08C"
+			x: 12.0d
+			y: 35.625d
 			icon: {
 				id: "ars_nouveau:ritual_cloudshaping"
 				count: 1
 			}
 			optional: true
 			dependencies: [
-				"CB439F3677CCED34"
+				"6B439F3677CCED34"
 			]
 			tasks: [
 				{
-					id: "9E51F53EEA73C6D5"
+					id: "3E51F53EEA73C6D5"
 					type: "item"
 					item: {
 						id: "ars_nouveau:ritual_cloudshaping"
@@ -1737,7 +1741,7 @@
 			]
 			rewards: [
 				{
-					id: "FC0B72A93DA4CAA8"
+					id: "2C0B72A93DA4CAA8"
 					type: "item"
 					item: {
 						id: "minecraft:feather"
@@ -1748,20 +1752,20 @@
 			]
 		}
 		{
-			id: "E33D2F88D3F438C7"
-			x: 12.5d
-			y: 17.0d
+			id: "133D2F88D3F438C7"
+			x: 14.25d
+			y: 29.7d
 			icon: {
 				id: "ars_nouveau:ritual_sunrise"
 				count: 1
 			}
 			optional: true
 			dependencies: [
-				"266C890332CCA08C"
+				"366C890332CCA08C"
 			]
 			tasks: [
 				{
-					id: "0AA01848120A6792"
+					id: "1AA01848120A6792"
 					type: "item"
 					item: {
 						id: "ars_nouveau:ritual_sunrise"
@@ -1770,7 +1774,7 @@
 					count: 1
 				}
 				{
-					id: "E2E3DC5343BA5ECB"
+					id: "12E3DC5343BA5ECB"
 					type: "item"
 					item: {
 						id: "ars_nouveau:ritual_moonfall"
@@ -1781,7 +1785,7 @@
 			]
 			rewards: [
 				{
-					id: "E5B2854666BAB7E7"
+					id: "15B2854666BAB7E7"
 					type: "item"
 					item: {
 						id: "minecraft:clock"
@@ -1790,27 +1794,27 @@
 					count: 1
 				}
 				{
-					id: "9C97F2CB03F09660"
+					id: "3C97F2CB03F09660"
 					type: "xp_levels"
 					xp_levels: 3
 				}
 			]
 		}
 		{
-			id: "B3B6AD1FCF591472"
-			x: 15.0d
-			y: 17.0d
+			id: "53B6AD1FCF591472"
+			x: 16.5d
+			y: 29.7d
 			icon: {
 				id: "ars_additions:ritual_locate_structure"
 				count: 1
 			}
 			optional: true
 			dependencies: [
-				"E33D2F88D3F438C7"
+				"133D2F88D3F438C7"
 			]
 			tasks: [
 				{
-					id: "AD5210E750A02EA6"
+					id: "4D5210E750A02EA6"
 					type: "item"
 					item: {
 						id: "ars_additions:ritual_locate_structure"
@@ -1821,7 +1825,7 @@
 			]
 			rewards: [
 				{
-					id: "5C2284083C0404E9"
+					id: "6C2284083C0404E9"
 					type: "item"
 					item: {
 						id: "minecraft:compass"
@@ -1830,27 +1834,27 @@
 					count: 1
 				}
 				{
-					id: "1C2EA59C83EAC52C"
+					id: "2C2EA59C83EAC52C"
 					type: "xp_levels"
 					xp_levels: 3
 				}
 			]
 		}
 		{
-			id: "860EC40B9EB29AA6"
-			x: 7.5d
-			y: 19.0d
+			id: "260EC40B9EB29AA6"
+			x: 9.75d
+			y: 37.6d
 			icon: {
 				id: "ars_nouveau:ritual_overgrowth"
 				count: 1
 			}
 			optional: true
 			dependencies: [
-				"DCCFA741053E0FE5"
+				"7CCFA741053E0FE5"
 			]
 			tasks: [
 				{
-					id: "20859910CC976A30"
+					id: "30859910CC976A30"
 					type: "item"
 					item: {
 						id: "ars_nouveau:ritual_flowering"
@@ -1859,7 +1863,7 @@
 					count: 1
 				}
 				{
-					id: "3CFEF37168BA160E"
+					id: "4CFEF37168BA160E"
 					type: "item"
 					item: {
 						id: "ars_nouveau:ritual_overgrowth"
@@ -1870,7 +1874,7 @@
 			]
 			rewards: [
 				{
-					id: "CA30F5A0188655BB"
+					id: "6A30F5A0188655BB"
 					type: "item"
 					item: {
 						id: "minecraft:bone_meal"
@@ -1879,27 +1883,27 @@
 					count: 16
 				}
 				{
-					id: "9945A722C8EC7E07"
+					id: "3945A722C8EC7E07"
 					type: "xp_levels"
 					xp_levels: 3
 				}
 			]
 		}
 		{
-			id: "F14F844BB9B5A18C"
-			x: 10.0d
-			y: 19.0d
+			id: "214F844BB9B5A18C"
+			x: 12.0d
+			y: 37.6d
 			icon: {
 				id: "ars_nouveau:ritual_burrowing"
 				count: 1
 			}
 			optional: true
 			dependencies: [
-				"860EC40B9EB29AA6"
+				"260EC40B9EB29AA6"
 			]
 			tasks: [
 				{
-					id: "FE28803379F1032E"
+					id: "2E28803379F1032E"
 					type: "item"
 					item: {
 						id: "ars_nouveau:ritual_animal_summon"
@@ -1908,7 +1912,7 @@
 					count: 1
 				}
 				{
-					id: "620857156B0635D8"
+					id: "720857156B0635D8"
 					type: "item"
 					item: {
 						id: "ars_nouveau:ritual_challenge"
@@ -1917,7 +1921,7 @@
 					count: 1
 				}
 				{
-					id: "72F7EAA04F388F54"
+					id: "12F7EAA04F388F54"
 					type: "item"
 					item: {
 						id: "ars_nouveau:ritual_burrowing"
@@ -1926,7 +1930,7 @@
 					count: 1
 				}
 				{
-					id: "2754198495E40542"
+					id: "3754198495E40542"
 					type: "item"
 					item: {
 						id: "ars_nouveau:ritual_gravity"
@@ -1937,7 +1941,7 @@
 			]
 			rewards: [
 				{
-					id: "B0D71A059981A786"
+					id: "50D71A059981A786"
 					type: "item"
 					item: {
 						id: "minecraft:emerald"
@@ -1946,27 +1950,27 @@
 					count: 2
 				}
 				{
-					id: "63D6EC6008D8F25C"
+					id: "73D6EC6008D8F25C"
 					type: "xp_levels"
 					xp_levels: 4
 				}
 			]
 		}
 		{
-			id: "08302206258B4B4E"
-			x: 12.5d
-			y: 19.0d
+			id: "18302206258B4B4E"
+			x: 12.0d
+			y: 33.65d
 			icon: {
 				id: "ars_elemental:ritual_squirrels"
 				count: 1
 			}
 			optional: true
 			dependencies: [
-				"C7CAB45A545ACFE9"
+				"67CAB45A545ACFE9"
 			]
 			tasks: [
 				{
-					id: "ACCD65B97B24086C"
+					id: "4CCD65B97B24086C"
 					type: "item"
 					item: {
 						id: "ars_elemental:ritual_squirrels"
@@ -1977,7 +1981,7 @@
 			]
 			rewards: [
 				{
-					id: "92AEB7BEBA90D7C6"
+					id: "32AEB7BEBA90D7C6"
 					type: "item"
 					item: {
 						id: "minecraft:sugar"
@@ -1988,20 +1992,21 @@
 			]
 		}
 		{
-			id: "E173CCA07DACD7FB"
-			x: 15.0d
-			y: 19.0d
+			id: "1173CCA07DACD7FB"
+			x: 0.0d
+			y: 24.9d
 			icon: {
 				id: "ars_elemental:ritual_detection"
 				count: 1
 			}
 			optional: true
+			hide_dependency_lines: true
 			dependencies: [
-				"08302206258B4B4E"
+				"18302206258B4B4E"
 			]
 			tasks: [
 				{
-					id: "AD71213D486AE997"
+					id: "4D71213D486AE997"
 					type: "item"
 					item: {
 						id: "ars_elemental:ritual_attraction"
@@ -2010,7 +2015,7 @@
 					count: 1
 				}
 				{
-					id: "EBB22F0889FFE030"
+					id: "1BB22F0889FFE030"
 					type: "item"
 					item: {
 						id: "ars_elemental:ritual_repulsion"
@@ -2019,7 +2024,7 @@
 					count: 1
 				}
 				{
-					id: "C5302D274BF275B7"
+					id: "65302D274BF275B7"
 					type: "item"
 					item: {
 						id: "ars_elemental:ritual_detection"
@@ -2028,7 +2033,7 @@
 					count: 1
 				}
 				{
-					id: "14E2020A1CFB3808"
+					id: "24E2020A1CFB3808"
 					type: "item"
 					item: {
 						id: "ars_elemental:ritual_tesla_coil"
@@ -2039,7 +2044,7 @@
 			]
 			rewards: [
 				{
-					id: "232F8665DCF76733"
+					id: "332F8665DCF76733"
 					type: "item"
 					item: {
 						id: "minecraft:lightning_rod"
@@ -2048,28 +2053,29 @@
 					count: 2
 				}
 				{
-					id: "EE718910C8800654"
+					id: "1E718910C8800654"
 					type: "xp_levels"
 					xp_levels: 4
 				}
 			]
 		}
 		{
-			id: "61272D050AFF0EA7"
-			x: 17.5d
-			y: 19.0d
+			id: "71272D050AFF0EA7"
+			x: 2.25d
+			y: 24.9d
 			icon: {
 				id: "ars_elemental:ritual_archwood_forest"
 				count: 1
 			}
 			optional: true
+			hide_dependency_lines: true
 			dependencies: [
-				"E173CCA07DACD7FB"
-				"DCCFA741053E0FE5"
+				"1173CCA07DACD7FB"
+				"7CCFA741053E0FE5"
 			]
 			tasks: [
 				{
-					id: "23718EE9865AE8CC"
+					id: "33718EE9865AE8CC"
 					type: "item"
 					item: {
 						id: "ars_elemental:ritual_archwood_forestation"
@@ -2078,7 +2084,7 @@
 					count: 1
 				}
 				{
-					id: "757A747271F1CD4D"
+					id: "157A747271F1CD4D"
 					type: "item"
 					item: {
 						id: "ars_elemental:ritual_archwood_forest"
@@ -2087,7 +2093,7 @@
 					count: 1
 				}
 				{
-					id: "D80AAD0146414B25"
+					id: "780AAD0146414B25"
 					type: "item"
 					item: {
 						id: "ars_elemental:ritual_pollination"
@@ -2098,7 +2104,7 @@
 			]
 			rewards: [
 				{
-					id: "C088C93D68628454"
+					id: "6088C93D68628454"
 					type: "item"
 					item: {
 						id: "ars_elemental:yellow_archwood_sapling"
@@ -2107,28 +2113,29 @@
 					count: 4
 				}
 				{
-					id: "DC8B60114FDE8233"
+					id: "7C8B60114FDE8233"
 					type: "xp_levels"
 					xp_levels: 4
 				}
 			]
 		}
 		{
-			id: "CFB03CF421652A7D"
-			x: 0.0d
-			y: 24.0d
+			id: "6FB03CF421652A7D"
+			x: 0.25d
+			y: 43.025d
 			icon: {
 				id: "ars_nouveau:basic_spell_turret"
 				count: 1
 			}
 			size: 1.5d
 			shape: "square"
+			hide_dependency_lines: true
 			dependencies: [
-				"99471A3D24B0C45D"
+				"39471A3D24B0C45D"
 			]
 			tasks: [
 				{
-					id: "1CA22D0BD5D0B480"
+					id: "2CA22D0BD5D0B480"
 					type: "item"
 					item: {
 						id: "ars_nouveau:basic_spell_turret"
@@ -2139,7 +2146,7 @@
 			]
 			rewards: [
 				{
-					id: "FF93711568BD7DA0"
+					id: "2F93711568BD7DA0"
 					type: "item"
 					item: {
 						id: "minecraft:redstone"
@@ -2148,26 +2155,26 @@
 					count: 16
 				}
 				{
-					id: "8AE1EA0F56A71582"
+					id: "2AE1EA0F56A71582"
 					type: "loot"
-					table_id: "BA8E33E78A3B3A0C"
+					table_id: "5A8E33E78A3B3A0C"
 				}
 			]
 		}
 		{
-			id: "0787C8DEB600BA0C"
-			x: 2.5d
-			y: 23.0d
+			id: "1787C8DEB600BA0C"
+			x: 2.75d
+			y: 42.775d
 			icon: {
 				id: "ars_nouveau:spell_turret"
 				count: 1
 			}
 			dependencies: [
-				"CFB03CF421652A7D"
+				"6FB03CF421652A7D"
 			]
 			tasks: [
 				{
-					id: "80EAC392FDEBEF96"
+					id: "20EAC392FDEBEF96"
 					type: "item"
 					item: {
 						id: "ars_nouveau:spell_turret"
@@ -2178,7 +2185,7 @@
 			]
 			rewards: [
 				{
-					id: "055C3799374EEA39"
+					id: "155C3799374EEA39"
 					type: "item"
 					item: {
 						id: "minecraft:blaze_rod"
@@ -2187,27 +2194,27 @@
 					count: 2
 				}
 				{
-					id: "D08BC10EA761072F"
+					id: "708BC10EA761072F"
 					type: "xp_levels"
 					xp_levels: 5
 				}
 			]
 		}
 		{
-			id: "F1D70A0798C0D3AC"
+			id: "21D70A0798C0D3AC"
 			x: 5.0d
-			y: 23.0d
+			y: 42.775d
 			icon: {
 				id: "ars_nouveau:spell_prism"
 				count: 1
 			}
 			optional: true
 			dependencies: [
-				"0787C8DEB600BA0C"
+				"1787C8DEB600BA0C"
 			]
 			tasks: [
 				{
-					id: "4E6153F167F5B502"
+					id: "5E6153F167F5B502"
 					type: "item"
 					item: {
 						id: "ars_nouveau:spell_prism"
@@ -2216,7 +2223,7 @@
 					count: 1
 				}
 				{
-					id: "7391A04FC9BD6AB5"
+					id: "1391A04FC9BD6AB5"
 					type: "item"
 					item: {
 						id: "ars_elemental:advanced_prism"
@@ -2225,7 +2232,7 @@
 					count: 1
 				}
 				{
-					id: "FEE0C53AAD42C58E"
+					id: "2EE0C53AAD42C58E"
 					type: "item"
 					item: {
 						id: "ars_elemental:spell_mirror"
@@ -2236,7 +2243,7 @@
 			]
 			rewards: [
 				{
-					id: "07317DAD3510F5D7"
+					id: "17317DAD3510F5D7"
 					type: "item"
 					item: {
 						id: "minecraft:quartz"
@@ -2245,26 +2252,26 @@
 					count: 8
 				}
 				{
-					id: "626463CEDAE8703F"
+					id: "726463CEDAE8703F"
 					type: "xp_levels"
 					xp_levels: 4
 				}
 			]
 		}
 		{
-			id: "988E238B3070EB61"
-			x: 2.5d
-			y: 25.0d
+			id: "388E238B3070EB61"
+			x: 2.75d
+			y: 48.325d
 			icon: {
 				id: "ars_nouveau:warp_scroll"
 				count: 1
 			}
 			dependencies: [
-				"CFB03CF421652A7D"
+				"6FB03CF421652A7D"
 			]
 			tasks: [
 				{
-					id: "29A4985F7B39F7ED"
+					id: "39A4985F7B39F7ED"
 					type: "item"
 					item: {
 						id: "ars_nouveau:warp_scroll"
@@ -2275,7 +2282,7 @@
 			]
 			rewards: [
 				{
-					id: "1BE6185B8DB84EA7"
+					id: "2BE6185B8DB84EA7"
 					type: "item"
 					item: {
 						id: "minecraft:lapis_lazuli"
@@ -2284,27 +2291,27 @@
 					count: 8
 				}
 				{
-					id: "C145BC2B04C06E12"
+					id: "6145BC2B04C06E12"
 					type: "xp_levels"
 					xp_levels: 3
 				}
 			]
 		}
 		{
-			id: "2C42B48297417F2D"
+			id: "3C42B48297417F2D"
 			x: 5.0d
-			y: 25.0d
+			y: 48.325d
 			icon: {
 				id: "ars_nouveau:stable_warp_scroll"
 				count: 1
 			}
 			optional: true
 			dependencies: [
-				"988E238B3070EB61"
+				"388E238B3070EB61"
 			]
 			tasks: [
 				{
-					id: "A901A577CA468831"
+					id: "4901A577CA468831"
 					type: "item"
 					item: {
 						id: "ars_nouveau:stable_warp_scroll"
@@ -2315,7 +2322,7 @@
 			]
 			rewards: [
 				{
-					id: "CC00A6665BB99E18"
+					id: "6C00A6665BB99E18"
 					type: "item"
 					item: {
 						id: "minecraft:ender_pearl"
@@ -2324,26 +2331,26 @@
 					count: 2
 				}
 				{
-					id: "2C175237FA4432FC"
+					id: "3C175237FA4432FC"
 					type: "xp_levels"
 					xp_levels: 4
 				}
 			]
 		}
 		{
-			id: "1E7256E1EF70D43C"
-			x: 7.5d
-			y: 24.0d
+			id: "2E7256E1EF70D43C"
+			x: 2.75d
+			y: 44.625d
 			icon: {
 				id: "ars_nouveau:wixie_charm"
 				count: 1
 			}
 			dependencies: [
-				"CFB03CF421652A7D"
+				"6FB03CF421652A7D"
 			]
 			tasks: [
 				{
-					id: "52499F66B991C36C"
+					id: "62499F66B991C36C"
 					type: "item"
 					item: {
 						id: "ars_nouveau:wixie_charm"
@@ -2354,7 +2361,7 @@
 			]
 			rewards: [
 				{
-					id: "A0ED603897DF5997"
+					id: "40ED603897DF5997"
 					type: "item"
 					item: {
 						id: "minecraft:brewing_stand"
@@ -2363,27 +2370,27 @@
 					count: 1
 				}
 				{
-					id: "24F2625271EAF18C"
+					id: "34F2625271EAF18C"
 					type: "xp_levels"
 					xp_levels: 5
 				}
 			]
 		}
 		{
-			id: "6CEDA7A5E67ADD17"
-			x: 10.0d
-			y: 24.0d
+			id: "7CEDA7A5E67ADD17"
+			x: 5.0d
+			y: 44.625d
 			icon: {
 				id: "ars_nouveau:potion_jar"
 				count: 1
 			}
 			optional: true
 			dependencies: [
-				"1E7256E1EF70D43C"
+				"2E7256E1EF70D43C"
 			]
 			tasks: [
 				{
-					id: "4914A5861D283A25"
+					id: "5914A5861D283A25"
 					type: "item"
 					item: {
 						id: "ars_nouveau:potion_jar"
@@ -2392,7 +2399,7 @@
 					count: 1
 				}
 				{
-					id: "DA1F86161CDA1DA3"
+					id: "7A1F86161CDA1DA3"
 					type: "item"
 					item: {
 						id: "ars_nouveau:alchemical_sourcelink"
@@ -2403,7 +2410,7 @@
 			]
 			rewards: [
 				{
-					id: "C7EAA7E3370C00FE"
+					id: "67EAA7E3370C00FE"
 					type: "item"
 					item: {
 						id: "minecraft:nether_wart"
@@ -2412,27 +2419,27 @@
 					count: 8
 				}
 				{
-					id: "939864B740676DEF"
+					id: "339864B740676DEF"
 					type: "xp_levels"
 					xp_levels: 5
 				}
 			]
 		}
 		{
-			id: "8F32CA00AFD64FD1"
-			x: 12.5d
-			y: 24.0d
+			id: "2F32CA00AFD64FD1"
+			x: 5.0d
+			y: 46.475d
 			icon: {
 				id: "ars_additions:fire_resistance_charm"
 				count: 1
 			}
 			optional: true
 			dependencies: [
-				"1E7256E1EF70D43C"
+				"2E7256E1EF70D43C"
 			]
 			tasks: [
 				{
-					id: "7A0FD168B6C36AB2"
+					id: "1A0FD168B6C36AB2"
 					type: "item"
 					item: {
 						id: "ars_additions:fire_resistance_charm"
@@ -2441,7 +2448,7 @@
 					count: 1
 				}
 				{
-					id: "6192F30AB0B10061"
+					id: "7192F30AB0B10061"
 					type: "item"
 					item: {
 						id: "ars_additions:golden_charm"
@@ -2450,7 +2457,7 @@
 					count: 1
 				}
 				{
-					id: "B98EFCA43904145B"
+					id: "598EFCA43904145B"
 					type: "item"
 					item: {
 						id: "ars_additions:wither_protection_charm"
@@ -2461,7 +2468,7 @@
 			]
 			rewards: [
 				{
-					id: "54B8130F655E742C"
+					id: "64B8130F655E742C"
 					type: "item"
 					item: {
 						id: "minecraft:magma_cream"
@@ -2470,27 +2477,27 @@
 					count: 4
 				}
 				{
-					id: "CBA7EBD61868B95D"
+					id: "6BA7EBD61868B95D"
 					type: "xp_levels"
 					xp_levels: 5
 				}
 			]
 		}
 		{
-			id: "170AB5C03077AD8B"
-			x: 15.0d
-			y: 24.0d
+			id: "270AB5C03077AD8B"
+			x: 7.25d
+			y: 42.775d
 			icon: {
 				id: "ars_elemental:caster_bag"
 				count: 1
 			}
 			optional: true
 			dependencies: [
-				"8F32CA00AFD64FD1"
+				"2F32CA00AFD64FD1"
 			]
 			tasks: [
 				{
-					id: "3A40E2FE3E9B8A8E"
+					id: "4A40E2FE3E9B8A8E"
 					type: "item"
 					item: {
 						id: "ars_elemental:caster_bag"
@@ -2499,7 +2506,7 @@
 					count: 1
 				}
 				{
-					id: "B83341FFB07842D7"
+					id: "583341FFB07842D7"
 					type: "item"
 					item: {
 						id: "ars_elemental:water_upstream"
@@ -2510,7 +2517,7 @@
 			]
 			rewards: [
 				{
-					id: "D3EAD228BFDA9852"
+					id: "73EAD228BFDA9852"
 					type: "item"
 					item: {
 						id: "minecraft:soul_sand"
@@ -2519,27 +2526,28 @@
 					count: 4
 				}
 				{
-					id: "6A10521C8412B873"
+					id: "7A10521C8412B873"
 					type: "xp_levels"
 					xp_levels: 4
 				}
 			]
 		}
 		{
-			id: "106F07EC971C7521"
-			x: 0.0d
-			y: 29.0d
+			id: "206F07EC971C7521"
+			x: 0.125d
+			y: 53.49999999999999d
 			icon: {
 				id: "create:empty_blaze_burner"
 				count: 1
 			}
 			size: 1.25d
+			hide_dependency_lines: true
 			dependencies: [
-				"99471A3D24B0C45D"
+				"39471A3D24B0C45D"
 			]
 			tasks: [
 				{
-					id: "C1E85AC50026851F"
+					id: "61E85AC50026851F"
 					type: "item"
 					item: {
 						id: "create:empty_blaze_burner"
@@ -2550,7 +2558,7 @@
 			]
 			rewards: [
 				{
-					id: "E248C67EB7B70366"
+					id: "1248C67EB7B70366"
 					type: "item"
 					item: {
 						id: "ars_nouveau:source_gem"
@@ -2559,26 +2567,26 @@
 					count: 8
 				}
 				{
-					id: "727D286842FCCB60"
+					id: "127D286842FCCB60"
 					type: "xp_levels"
 					xp_levels: 5
 				}
 			]
 		}
 		{
-			id: "7F3598B183138DFD"
+			id: "1F3598B183138DFD"
 			x: 2.5d
-			y: 29.0d
+			y: 53.37499999999999d
 			icon: {
 				id: "ars_technica:calibrated_precision_mechanism"
 				count: 1
 			}
 			dependencies: [
-				"106F07EC971C7521"
+				"206F07EC971C7521"
 			]
 			tasks: [
 				{
-					id: "71EAF05DE748806F"
+					id: "11EAF05DE748806F"
 					type: "item"
 					item: {
 						id: "ars_technica:calibrated_precision_mechanism"
@@ -2589,7 +2597,7 @@
 			]
 			rewards: [
 				{
-					id: "475132953DD874C9"
+					id: "575132953DD874C9"
 					type: "item"
 					item: {
 						id: "minecraft:amethyst_shard"
@@ -2598,29 +2606,30 @@
 					count: 8
 				}
 				{
-					id: "AFCE63377A469FD3"
+					id: "4FCE63377A469FD3"
 					type: "xp_levels"
 					xp_levels: 5
 				}
 			]
 		}
 		{
-			id: "99C86A5666F66BCC"
+			id: "39C86A5666F66BCC"
 			x: 5.0d
-			y: 29.0d
+			y: 53.62499999999999d
 			icon: {
 				id: "ars_technica:source_motor"
 				count: 1
 			}
 			size: 1.5d
 			shape: "gear"
+			hide_dependency_lines: true
 			dependencies: [
-				"7F3598B183138DFD"
-				"FD9E4C504163EE17"
+				"1F3598B183138DFD"
+				"2D9E4C504163EE17"
 			]
 			tasks: [
 				{
-					id: "C4F76F21115E13F1"
+					id: "64F76F21115E13F1"
 					type: "item"
 					item: {
 						id: "ars_technica:source_motor"
@@ -2631,32 +2640,32 @@
 			]
 			rewards: [
 				{
-					id: "E1ECD6C3B074013B"
+					id: "11ECD6C3B074013B"
 					type: "loot"
-					table_id: "BA8E33E78A3B3A0C"
+					table_id: "5A8E33E78A3B3A0C"
 				}
 				{
-					id: "A82576256CB2D9AA"
+					id: "482576256CB2D9AA"
 					type: "xp_levels"
 					xp_levels: 8
 				}
 			]
 		}
 		{
-			id: "A2710174B8567723"
-			x: 2.5d
-			y: 31.0d
+			id: "42710174B8567723"
+			x: 5.0d
+			y: 55.224999999999994d
 			icon: {
 				id: "ars_technica:glyph_press"
 				count: 1
 			}
 			optional: true
 			dependencies: [
-				"7F3598B183138DFD"
+				"1F3598B183138DFD"
 			]
 			tasks: [
 				{
-					id: "7BB03AF8EAA9CDEC"
+					id: "1BB03AF8EAA9CDEC"
 					type: "item"
 					item: {
 						id: "ars_technica:glyph_press"
@@ -2667,7 +2676,7 @@
 			]
 			rewards: [
 				{
-					id: "7F7949BC912E4222"
+					id: "1F7949BC912E4222"
 					type: "item"
 					item: {
 						id: "minecraft:iron_ingot"
@@ -2676,27 +2685,27 @@
 					count: 8
 				}
 				{
-					id: "E6B311505325C87A"
+					id: "16B311505325C87A"
 					type: "xp_levels"
 					xp_levels: 3
 				}
 			]
 		}
 		{
-			id: "67F0D85FF6203B4B"
-			x: 5.0d
-			y: 31.0d
+			id: "77F0D85FF6203B4B"
+			x: 7.5d
+			y: 53.37499999999999d
 			icon: {
 				id: "ars_technica:glyph_fuse"
 				count: 1
 			}
 			optional: true
 			dependencies: [
-				"A2710174B8567723"
+				"42710174B8567723"
 			]
 			tasks: [
 				{
-					id: "34BC3C6466D185F4"
+					id: "44BC3C6466D185F4"
 					type: "item"
 					item: {
 						id: "ars_technica:glyph_fuse"
@@ -2705,7 +2714,7 @@
 					count: 1
 				}
 				{
-					id: "82B6A24521369E67"
+					id: "22B6A24521369E67"
 					type: "item"
 					item: {
 						id: "ars_technica:glyph_polish"
@@ -2714,7 +2723,7 @@
 					count: 1
 				}
 				{
-					id: "16F9CEFA3DC079B0"
+					id: "26F9CEFA3DC079B0"
 					type: "item"
 					item: {
 						id: "ars_technica:glyph_whirl"
@@ -2723,7 +2732,7 @@
 					count: 1
 				}
 				{
-					id: "179B5A426208AFF0"
+					id: "279B5A426208AFF0"
 					type: "item"
 					item: {
 						id: "ars_technica:glyph_carve"
@@ -2732,7 +2741,7 @@
 					count: 1
 				}
 				{
-					id: "747090699C364410"
+					id: "147090699C364410"
 					type: "item"
 					item: {
 						id: "ars_technica:glyph_insert"
@@ -2741,7 +2750,7 @@
 					count: 1
 				}
 				{
-					id: "0D79F0BD112CB777"
+					id: "1D79F0BD112CB777"
 					type: "item"
 					item: {
 						id: "ars_technica:glyph_apply"
@@ -2752,7 +2761,7 @@
 			]
 			rewards: [
 				{
-					id: "C71B30FF302457EE"
+					id: "671B30FF302457EE"
 					type: "item"
 					item: {
 						id: "create:brass_ingot"
@@ -2761,31 +2770,32 @@
 					count: 4
 				}
 				{
-					id: "971E23A2AFE440D8"
+					id: "371E23A2AFE440D8"
 					type: "xp_levels"
 					xp_levels: 5
 				}
 			]
 		}
 		{
-			id: "B23E88118DC60B60"
-			x: 20.0d
-			y: 15.0d
+			id: "523E88118DC60B60"
+			x: 5.0d
+			y: 24.9d
 			icon: {
 				id: "ars_nouveau:source_gem_block"
 				count: 1
 			}
 			size: 2.5d
 			shape: "gear"
+			hide_dependency_lines: true
 			dependencies: [
-				"B32147EA99A0CA1A"
-				"C7CAB45A545ACFE9"
-				"0787C8DEB600BA0C"
-				"99C86A5666F66BCC"
+				"532147EA99A0CA1A"
+				"67CAB45A545ACFE9"
+				"1787C8DEB600BA0C"
+				"39C86A5666F66BCC"
 			]
 			tasks: [
 				{
-					id: "E19C8ED15E4A397F"
+					id: "119C8ED15E4A397F"
 					type: "item"
 					item: {
 						id: "ars_nouveau:source_gem_block"
@@ -2796,12 +2806,12 @@
 			]
 			rewards: [
 				{
-					id: "2A31BE646416F347"
+					id: "3A31BE646416F347"
 					type: "loot"
-					table_id: "C79EAEAE0F26AA7F"
+					table_id: "679EAEAE0F26AA7F"
 				}
 				{
-					id: "5872727015E9FC81"
+					id: "6872727015E9FC81"
 					type: "xp_levels"
 					xp_levels: 15
 				}
@@ -2810,71 +2820,71 @@
 	]
 	images: [
 		{
-			id: "1DB51FB7FD862A9A"
+			id: "2DB51FB7FD862A9A"
 			image: "kronwerke:textures/quests/ars_apprentice/title.png"
-			x: 10.0d
-			y: -2.4d
+			x: 6.6d
+			y: 0.0d
 			width: 14.2d
 			height: 1.8d
 			rotation: 0.0d
 			order: 1
 		}
 		{
-			id: "EA07B1C2BA56846E"
+			id: "1A07B1C2BA56846E"
 			image: "kronwerke:textures/quests/ars_apprentice/glyphen.png"
-			x: 21.25d
-			y: 0.6d
+			x: 2.75d
+			y: 6.05d
 			width: 6.5d
 			height: 0.9d
 			rotation: 0.0d
 			order: 1
 		}
 		{
-			id: "19F10A3C249FABBC"
+			id: "29F10A3C249FABBC"
 			image: "kronwerke:textures/quests/ars_apprentice/quelle.png"
-			x: 2.38d
-			y: 7.9d
+			x: 1.88d
+			y: 16.65d
 			width: 4.76d
 			height: 0.9d
 			rotation: 0.0d
 			order: 1
 		}
 		{
-			id: "868E4EC3A898F61C"
+			id: "268E4EC3A898F61C"
+			image: "kronwerke:textures/quests/ars_apprentice/ziel.png"
+			x: 1.26d
+			y: 23.549999999999997d
+			width: 3.52d
+			height: 0.9d
+			rotation: 0.0d
+			order: 1
+		}
+		{
+			id: "5375F8DA69009B01"
 			image: "kronwerke:textures/quests/ars_apprentice/rituale.png"
-			x: 3.7d
-			y: 13.6d
+			x: 3.2d
+			y: 28.349999999999998d
 			width: 7.4d
 			height: 0.9d
 			rotation: 0.0d
 			order: 1
 		}
 		{
-			id: "B375F8DA69009B01"
+			id: "2A06A0B1F3F76025"
 			image: "kronwerke:textures/quests/ars_apprentice/automatisierung.png"
-			x: 2.79d
-			y: 21.6d
+			x: 2.29d
+			y: 41.425000000000004d
 			width: 5.58d
 			height: 0.9d
 			rotation: 0.0d
 			order: 1
 		}
 		{
-			id: "1A06A0B1F3F76025"
+			id: "6A7D551A50D5C7D4"
 			image: "kronwerke:textures/quests/ars_apprentice/technik.png"
-			x: 3.35d
-			y: 27.6d
+			x: 2.855d
+			y: 52.025d
 			width: 6.71d
-			height: 0.9d
-			rotation: 0.0d
-			order: 1
-		}
-		{
-			id: "CA7D551A50D5C7D4"
-			image: "kronwerke:textures/quests/ars_apprentice/ziel.png"
-			x: 20.0d
-			y: 13.2d
-			width: 3.52d
 			height: 0.9d
 			rotation: 0.0d
 			order: 1

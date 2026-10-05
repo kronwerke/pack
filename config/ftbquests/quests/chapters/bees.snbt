@@ -1,19 +1,19 @@
 {
-	id: "ED991909CAA455D2"
+	id: "1D991909CAA455D2"
 	filename: "bees"
 	icon: {
 		id: "productivebees:advanced_oak_beehive"
 		count: 1
 	}
-	group: "D1C7157F1269A7DC"
+	group: "71C7157F1269A7DC"
 	order_index: 46
 	default_quest_shape: "circle"
 	default_hide_dependency_lines: false
 	quests: [
 		{
-			id: "46F4EE9836D3B386"
-			x: 0.0d
-			y: 1.0d
+			id: "56F4EE9836D3B386"
+			x: 0.5d
+			y: 2.575d
 			icon: {
 				id: "productivebees:advanced_oak_beehive"
 				count: 1
@@ -22,7 +22,7 @@
 			shape: "hexagon"
 			tasks: [
 				{
-					id: "D1E8FF6A0BA15CDF"
+					id: "71E8FF6A0BA15CDF"
 					type: "item"
 					item: {
 						id: "productivebees:advanced_oak_beehive"
@@ -33,7 +33,7 @@
 			]
 			rewards: [
 				{
-					id: "5C9F4BECC58B92D7"
+					id: "6C9F4BECC58B92D7"
 					type: "item"
 					item: {
 						id: "productivebees:bee_cage"
@@ -42,31 +42,32 @@
 					count: 4
 				}
 				{
-					id: "9570785D921A91F0"
+					id: "3570785D921A91F0"
 					type: "loot"
-					table_id: "F2BA64790EBA3DF5"
+					table_id: "22BA64790EBA3DF5"
 				}
 				{
-					id: "C987A53214CC7481"
+					id: "6987A53214CC7481"
 					type: "xp_levels"
 					xp_levels: 5
 				}
 			]
 		}
 		{
-			id: "53512703AA48FD9F"
-			x: 2.5d
-			y: 0.0d
+			id: "63512703AA48FD9F"
+			x: 0.0d
+			y: 7.375000000000001d
 			icon: {
 				id: "productivebees:bee_cage"
 				count: 1
 			}
+			hide_dependency_lines: true
 			dependencies: [
-				"46F4EE9836D3B386"
+				"56F4EE9836D3B386"
 			]
 			tasks: [
 				{
-					id: "0ED16B6ABA004D34"
+					id: "1ED16B6ABA004D34"
 					type: "item"
 					item: {
 						id: "productivebees:bee_cage"
@@ -77,7 +78,7 @@
 			]
 			rewards: [
 				{
-					id: "8D8C6BE083CF1495"
+					id: "2D8C6BE083CF1495"
 					type: "item"
 					item: {
 						id: "minecraft:honey_bottle"
@@ -86,26 +87,27 @@
 					count: 4
 				}
 				{
-					id: "31D7296DD0987613"
+					id: "41D7296DD0987613"
 					type: "xp_levels"
 					xp_levels: 3
 				}
 			]
 		}
 		{
-			id: "518368E50612B008"
-			x: 2.5d
-			y: 2.6d
+			id: "618368E50612B008"
+			x: 5.0d
+			y: 7.375000000000001d
 			icon: {
 				id: "productivebees:oak_wood_nest"
 				count: 1
 			}
+			hide_dependency_lines: true
 			dependencies: [
-				"46F4EE9836D3B386"
+				"56F4EE9836D3B386"
 			]
 			tasks: [
 				{
-					id: "2D3F4863E826F0BA"
+					id: "3D3F4863E826F0BA"
 					type: "item"
 					item: {
 						id: "productivebees:oak_wood_nest"
@@ -116,7 +118,7 @@
 			]
 			rewards: [
 				{
-					id: "E7C6A53853B1AA3F"
+					id: "17C6A53853B1AA3F"
 					type: "item"
 					item: {
 						id: "productivebees:honey_treat"
@@ -125,26 +127,26 @@
 					count: 4
 				}
 				{
-					id: "44E0DA26A192088F"
+					id: "54E0DA26A192088F"
 					type: "xp_levels"
 					xp_levels: 5
 				}
 			]
 		}
 		{
-			id: "4422E4D6D824DD27"
-			x: 5.0d
-			y: 0.0d
+			id: "5422E4D6D824DD27"
+			x: 2.25d
+			y: 7.375000000000001d
 			icon: {
 				id: "productivebees:honey_treat"
 				count: 1
 			}
 			dependencies: [
-				"53512703AA48FD9F"
+				"63512703AA48FD9F"
 			]
 			tasks: [
 				{
-					id: "B9EB32EE79D1A960"
+					id: "59EB32EE79D1A960"
 					type: "item"
 					item: {
 						id: "productivebees:honey_treat"
@@ -155,7 +157,7 @@
 			]
 			rewards: [
 				{
-					id: "62A5FFF8D8418CFA"
+					id: "72A5FFF8D8418CFA"
 					type: "item"
 					item: {
 						id: "minecraft:honeycomb"
@@ -164,26 +166,27 @@
 					count: 8
 				}
 				{
-					id: "9BE3F7EF430513D6"
+					id: "3BE3F7EF430513D6"
 					type: "xp_levels"
 					xp_levels: 3
 				}
 			]
 		}
 		{
-			id: "85331D09B9C67341"
-			x: 5.0d
-			y: 2.0d
+			id: "25331D09B9C67341"
+			x: 0.0d
+			y: 8.975000000000001d
 			icon: {
 				id: "productivebees:expansion_box_oak"
 				count: 1
 			}
+			hide_dependency_lines: true
 			dependencies: [
-				"46F4EE9836D3B386"
+				"56F4EE9836D3B386"
 			]
 			tasks: [
 				{
-					id: "46950666A682F660"
+					id: "56950666A682F660"
 					type: "item"
 					item: {
 						id: "productivebees:expansion_box_oak"
@@ -194,7 +197,7 @@
 			]
 			rewards: [
 				{
-					id: "F79D35E7019BC777"
+					id: "279D35E7019BC777"
 					type: "item"
 					item: {
 						id: "minecraft:honeycomb"
@@ -203,27 +206,27 @@
 					count: 8
 				}
 				{
-					id: "40D2F77DD8865950"
+					id: "50D2F77DD8865950"
 					type: "loot"
-					table_id: "F2BA64790EBA3DF5"
+					table_id: "22BA64790EBA3DF5"
 				}
 			]
 		}
 		{
-			id: "A53D647301198DB3"
-			x: 7.5d
-			y: 0.4d
+			id: "453D647301198DB3"
+			x: 2.25d
+			y: 8.975000000000001d
 			icon: {
 				id: "productivelib:upgrade_time"
 				count: 1
 			}
 			optional: true
 			dependencies: [
-				"85331D09B9C67341"
+				"25331D09B9C67341"
 			]
 			tasks: [
 				{
-					id: "BC8F9EA4009CAF4B"
+					id: "5C8F9EA4009CAF4B"
 					type: "item"
 					item: {
 						id: "productivelib:upgrade_base"
@@ -234,7 +237,7 @@
 			]
 			rewards: [
 				{
-					id: "4C70638BB8BA6DE3"
+					id: "5C70638BB8BA6DE3"
 					type: "item"
 					item: {
 						id: "minecraft:emerald"
@@ -243,27 +246,28 @@
 					count: 3
 				}
 				{
-					id: "BEF560F69E5E4C4E"
+					id: "5EF560F69E5E4C4E"
 					type: "xp_levels"
 					xp_levels: 5
 				}
 			]
 		}
 		{
-			id: "5D5FB00B76C782D4"
-			x: 7.5d
-			y: 2.6d
+			id: "6D5FB00B76C782D4"
+			x: 5.75d
+			y: 13.775000000000002d
 			icon: {
 				id: "productivebees:nether_quartz_nest"
 				count: 1
 			}
 			size: 1.5d
+			hide_dependency_lines: true
 			dependencies: [
-				"518368E50612B008"
+				"618368E50612B008"
 			]
 			tasks: [
 				{
-					id: "6B77623E888E12CE"
+					id: "7B77623E888E12CE"
 					type: "item"
 					item: {
 						id: "productivebees:nether_quartz_nest"
@@ -274,7 +278,7 @@
 			]
 			rewards: [
 				{
-					id: "A5A5E804DAF3C9B2"
+					id: "45A5E804DAF3C9B2"
 					type: "item"
 					item: {
 						id: "minecraft:quartz"
@@ -283,33 +287,34 @@
 					count: 16
 				}
 				{
-					id: "07912CF0F0D680E8"
+					id: "17912CF0F0D680E8"
 					type: "loot"
-					table_id: "F2BA64790EBA3DF5"
+					table_id: "22BA64790EBA3DF5"
 				}
 				{
-					id: "33446EC83E39EBE3"
+					id: "43446EC83E39EBE3"
 					type: "xp_levels"
 					xp_levels: 5
 				}
 			]
 		}
 		{
-			id: "19D33BAB626DA04B"
-			x: 10.5d
-			y: 1.0d
+			id: "29D33BAB626DA04B"
+			x: 0.375d
+			y: 14.150000000000002d
 			icon: {
 				id: "productivebees:centrifuge"
 				count: 1
 			}
 			size: 1.75d
 			shape: "hexagon"
+			hide_dependency_lines: true
 			dependencies: [
-				"46F4EE9836D3B386"
+				"56F4EE9836D3B386"
 			]
 			tasks: [
 				{
-					id: "F26BDE07C8F347B6"
+					id: "226BDE07C8F347B6"
 					type: "item"
 					item: {
 						id: "productivebees:centrifuge"
@@ -320,7 +325,7 @@
 			]
 			rewards: [
 				{
-					id: "1D14431494A0A5D1"
+					id: "2D14431494A0A5D1"
 					type: "item"
 					item: {
 						id: "productivebees:wax"
@@ -329,31 +334,31 @@
 					count: 8
 				}
 				{
-					id: "A7AAF1A057EB395E"
+					id: "47AAF1A057EB395E"
 					type: "loot"
-					table_id: "F2BA64790EBA3DF5"
+					table_id: "22BA64790EBA3DF5"
 				}
 				{
-					id: "FAD96FE7C9C37C30"
+					id: "2AD96FE7C9C37C30"
 					type: "xp_levels"
 					xp_levels: 5
 				}
 			]
 		}
 		{
-			id: "A672D39A10188888"
-			x: 13.0d
-			y: 0.0d
+			id: "4672D39A10188888"
+			x: 3.0d
+			y: 13.775000000000002d
 			icon: {
 				id: "productivebees:powered_centrifuge"
 				count: 1
 			}
 			dependencies: [
-				"19D33BAB626DA04B"
+				"29D33BAB626DA04B"
 			]
 			tasks: [
 				{
-					id: "F7117961070FF64C"
+					id: "27117961070FF64C"
 					type: "item"
 					item: {
 						id: "productivebees:powered_centrifuge"
@@ -364,7 +369,7 @@
 			]
 			rewards: [
 				{
-					id: "85DD69200EA05121"
+					id: "25DD69200EA05121"
 					type: "item"
 					item: {
 						id: "mekanism:basic_control_circuit"
@@ -373,26 +378,26 @@
 					count: 2
 				}
 				{
-					id: "A1CFB86358899DE6"
+					id: "41CFB86358899DE6"
 					type: "xp_levels"
 					xp_levels: 5
 				}
 			]
 		}
 		{
-			id: "D708120107D7E9FC"
-			x: 13.0d
-			y: 2.0d
+			id: "7708120107D7E9FC"
+			x: 3.0d
+			y: 15.750000000000002d
 			icon: {
 				id: "productivebees:bottler"
 				count: 1
 			}
 			dependencies: [
-				"19D33BAB626DA04B"
+				"29D33BAB626DA04B"
 			]
 			tasks: [
 				{
-					id: "C871FC823A34526F"
+					id: "6871FC823A34526F"
 					type: "item"
 					item: {
 						id: "productivebees:bottler"
@@ -403,7 +408,7 @@
 			]
 			rewards: [
 				{
-					id: "5DC8175A66E27DEE"
+					id: "6DC8175A66E27DEE"
 					type: "item"
 					item: {
 						id: "minecraft:glass_bottle"
@@ -412,26 +417,27 @@
 					count: 8
 				}
 				{
-					id: "A91E6D574A9012AD"
+					id: "491E6D574A9012AD"
 					type: "xp_levels"
 					xp_levels: 5
 				}
 			]
 		}
 		{
-			id: "968CFB9C4C3937D6"
-			x: 18.5d
-			y: 1.0d
+			id: "368CFB9C4C3937D6"
+			x: 0.0d
+			y: 20.925d
 			icon: {
 				id: "productivebees:gene"
 				count: 1
 			}
+			hide_dependency_lines: true
 			dependencies: [
-				"D708120107D7E9FC"
+				"7708120107D7E9FC"
 			]
 			tasks: [
 				{
-					id: "15A7E39293ED0EB5"
+					id: "25A7E39293ED0EB5"
 					type: "item"
 					item: {
 						id: "productivebees:gene_bottle"
@@ -440,7 +446,7 @@
 					count: 1
 				}
 				{
-					id: "B96155C4104BE2A0"
+					id: "596155C4104BE2A0"
 					type: "item"
 					item: {
 						id: "productivebees:gene"
@@ -451,7 +457,7 @@
 			]
 			rewards: [
 				{
-					id: "855778D9B71D86A5"
+					id: "255778D9B71D86A5"
 					type: "item"
 					item: {
 						id: "minecraft:glass_bottle"
@@ -460,37 +466,37 @@
 					count: 8
 				}
 				{
-					id: "3A1BB71917CFBF8C"
+					id: "4A1BB71917CFBF8C"
 					type: "loot"
-					table_id: "F2BA64790EBA3DF5"
+					table_id: "22BA64790EBA3DF5"
 				}
 				{
-					id: "2FACB70A97A9B61D"
+					id: "3FACB70A97A9B61D"
 					type: "xp_levels"
 					xp_levels: 5
 				}
 			]
 		}
 		{
-			id: "9A180D47CB1D866B"
-			x: 21.0d
-			y: 1.0d
+			id: "3A180D47CB1D866B"
+			x: 2.25d
+			y: 20.925d
 			icon: {
 				id: "productivebees:honey_treat"
 				count: 1
 			}
 			dependencies: [
-				"968CFB9C4C3937D6"
+				"368CFB9C4C3937D6"
 			]
 			tasks: [
 				{
-					id: "14F10890C7298ED7"
+					id: "24F10890C7298ED7"
 					type: "checkmark"
 				}
 			]
 			rewards: [
 				{
-					id: "B8E08BC142A1BA92"
+					id: "58E08BC142A1BA92"
 					type: "item"
 					item: {
 						id: "productivebees:honey_treat"
@@ -499,16 +505,16 @@
 					count: 8
 				}
 				{
-					id: "85C600498FAF4FF1"
+					id: "25C600498FAF4FF1"
 					type: "xp_levels"
 					xp_levels: 5
 				}
 			]
 		}
 		{
-			id: "13B4ED8AC87648BC"
-			x: 23.5d
-			y: 1.0d
+			id: "23B4ED8AC87648BC"
+			x: 4.875d
+			y: 21.3d
 			icon: {
 				id: "productivebees:incubator"
 				count: 1
@@ -516,11 +522,11 @@
 			size: 1.75d
 			shape: "diamond"
 			dependencies: [
-				"9A180D47CB1D866B"
+				"3A180D47CB1D866B"
 			]
 			tasks: [
 				{
-					id: "FC046534E0986B7C"
+					id: "2C046534E0986B7C"
 					type: "item"
 					item: {
 						id: "productivebees:incubator"
@@ -531,7 +537,7 @@
 			]
 			rewards: [
 				{
-					id: "C1F6A2A5B19648FB"
+					id: "61F6A2A5B19648FB"
 					type: "item"
 					item: {
 						id: "minecraft:egg"
@@ -540,39 +546,40 @@
 					count: 16
 				}
 				{
-					id: "E3DC725DFAFD615D"
+					id: "13DC725DFAFD615D"
 					type: "loot"
-					table_id: "BA8E33E78A3B3A0C"
+					table_id: "5A8E33E78A3B3A0C"
 				}
 				{
-					id: "C29FC94B53D19B3B"
+					id: "629FC94B53D19B3B"
 					type: "xp_levels"
 					xp_levels: 10
 				}
 			]
 		}
 		{
-			id: "970E2FC1062A001C"
-			x: 2.5d
-			y: 7.0d
+			id: "370E2FC1062A001C"
+			x: 0.375d
+			y: 28.45d
 			icon: {
 				id: "productivebees:spawn_egg_lumber_bee"
 				count: 1
 			}
 			size: 1.75d
 			shape: "hexagon"
+			hide_dependency_lines: true
 			dependencies: [
-				"518368E50612B008"
+				"618368E50612B008"
 			]
 			tasks: [
 				{
-					id: "9FBA18DCA2841577"
+					id: "3FBA18DCA2841577"
 					type: "checkmark"
 				}
 			]
 			rewards: [
 				{
-					id: "27D2CB0402520477"
+					id: "37D2CB0402520477"
 					type: "item"
 					item: {
 						id: "minecraft:oak_log"
@@ -581,31 +588,31 @@
 					count: 32
 				}
 				{
-					id: "CCBFE5FEDC0DF706"
+					id: "6CBFE5FEDC0DF706"
 					type: "loot"
-					table_id: "F2BA64790EBA3DF5"
+					table_id: "22BA64790EBA3DF5"
 				}
 				{
-					id: "E4F50919176D4BA2"
+					id: "14F50919176D4BA2"
 					type: "xp_levels"
 					xp_levels: 5
 				}
 			]
 		}
 		{
-			id: "A26E75EA528A4918"
-			x: 0.0d
-			y: 8.6d
+			id: "426E75EA528A4918"
+			x: 3.0d
+			y: 28.075d
 			icon: {
 				id: "productivebees:feeder"
 				count: 1
 			}
 			dependencies: [
-				"970E2FC1062A001C"
+				"370E2FC1062A001C"
 			]
 			tasks: [
 				{
-					id: "40C8A1BC0F0E1039"
+					id: "50C8A1BC0F0E1039"
 					type: "item"
 					item: {
 						id: "productivebees:feeder"
@@ -616,7 +623,7 @@
 			]
 			rewards: [
 				{
-					id: "DDBA9A0AC1FFCA2A"
+					id: "7DBA9A0AC1FFCA2A"
 					type: "item"
 					item: {
 						id: "minecraft:smooth_stone_slab"
@@ -625,26 +632,26 @@
 					count: 4
 				}
 				{
-					id: "36206CCA90B00293"
+					id: "46206CCA90B00293"
 					type: "xp_levels"
 					xp_levels: 3
 				}
 			]
 		}
 		{
-			id: "1BEE4AFB22C4B99B"
-			x: 5.0d
-			y: 8.6d
+			id: "2BEE4AFB22C4B99B"
+			x: 3.0d
+			y: 30.05d
 			icon: {
 				id: "productivebees:breeding_chamber"
 				count: 1
 			}
 			dependencies: [
-				"970E2FC1062A001C"
+				"370E2FC1062A001C"
 			]
 			tasks: [
 				{
-					id: "3EDAB0D43C340A31"
+					id: "4EDAB0D43C340A31"
 					type: "item"
 					item: {
 						id: "productivebees:breeding_chamber"
@@ -655,7 +662,7 @@
 			]
 			rewards: [
 				{
-					id: "FD647B297263138F"
+					id: "2D647B297263138F"
 					type: "item"
 					item: {
 						id: "productivebees:bee_cage"
@@ -664,37 +671,38 @@
 					count: 8
 				}
 				{
-					id: "EAF454915E952DC5"
+					id: "1AF454915E952DC5"
 					type: "loot"
-					table_id: "BA8E33E78A3B3A0C"
+					table_id: "5A8E33E78A3B3A0C"
 				}
 				{
-					id: "CEEC321D17AAE7DF"
+					id: "6EEC321D17AAE7DF"
 					type: "xp_levels"
 					xp_levels: 10
 				}
 			]
 		}
 		{
-			id: "AD2B46C883E7C574"
-			x: 8.5d
-			y: 7.0d
+			id: "4D2B46C883E7C574"
+			x: 0.0d
+			y: 35.224999999999994d
 			icon: {
 				id: "minecraft:quartz"
 				count: 1
 			}
+			hide_dependency_lines: true
 			dependencies: [
-				"5D5FB00B76C782D4"
+				"6D5FB00B76C782D4"
 			]
 			tasks: [
 				{
-					id: "E6FF81D88442B827"
+					id: "16FF81D88442B827"
 					type: "checkmark"
 				}
 			]
 			rewards: [
 				{
-					id: "A974691F21FA4750"
+					id: "4974691F21FA4750"
 					type: "item"
 					item: {
 						id: "minecraft:quartz"
@@ -705,25 +713,25 @@
 			]
 		}
 		{
-			id: "54E5F1C5F5143A66"
-			x: 10.5d
-			y: 7.0d
+			id: "64E5F1C5F5143A66"
+			x: 2.25d
+			y: 35.224999999999994d
 			icon: {
 				id: "minecraft:raw_iron"
 				count: 1
 			}
 			dependencies: [
-				"AD2B46C883E7C574"
+				"4D2B46C883E7C574"
 			]
 			tasks: [
 				{
-					id: "846CD0D43C2FB70C"
+					id: "246CD0D43C2FB70C"
 					type: "checkmark"
 				}
 			]
 			rewards: [
 				{
-					id: "90DC96EF7E30C920"
+					id: "30DC96EF7E30C920"
 					type: "item"
 					item: {
 						id: "minecraft:raw_iron"
@@ -732,32 +740,32 @@
 					count: 16
 				}
 				{
-					id: "AF6AEC9D0A596599"
+					id: "4F6AEC9D0A596599"
 					type: "xp_levels"
 					xp_levels: 3
 				}
 			]
 		}
 		{
-			id: "38156A74AC2685B4"
-			x: 12.5d
-			y: 7.0d
+			id: "48156A74AC2685B4"
+			x: 4.5d
+			y: 35.224999999999994d
 			icon: {
 				id: "minecraft:raw_copper"
 				count: 1
 			}
 			dependencies: [
-				"54E5F1C5F5143A66"
+				"64E5F1C5F5143A66"
 			]
 			tasks: [
 				{
-					id: "612815A458404D74"
+					id: "712815A458404D74"
 					type: "checkmark"
 				}
 			]
 			rewards: [
 				{
-					id: "677AFEA9F943301A"
+					id: "777AFEA9F943301A"
 					type: "item"
 					item: {
 						id: "minecraft:raw_copper"
@@ -766,32 +774,32 @@
 					count: 16
 				}
 				{
-					id: "730E006163EB7B06"
+					id: "130E006163EB7B06"
 					type: "xp_levels"
 					xp_levels: 3
 				}
 			]
 		}
 		{
-			id: "0BB61C3F5F8A6961"
-			x: 14.5d
-			y: 7.0d
+			id: "1BB61C3F5F8A6961"
+			x: 6.75d
+			y: 35.224999999999994d
 			icon: {
 				id: "minecraft:raw_gold"
 				count: 1
 			}
 			dependencies: [
-				"38156A74AC2685B4"
+				"48156A74AC2685B4"
 			]
 			tasks: [
 				{
-					id: "8459E02EC8B97D7D"
+					id: "2459E02EC8B97D7D"
 					type: "checkmark"
 				}
 			]
 			rewards: [
 				{
-					id: "05ECB0AB847E69DB"
+					id: "15ECB0AB847E69DB"
 					type: "item"
 					item: {
 						id: "minecraft:raw_gold"
@@ -800,32 +808,32 @@
 					count: 8
 				}
 				{
-					id: "4BC13B1019DD4695"
+					id: "5BC13B1019DD4695"
 					type: "xp_levels"
 					xp_levels: 3
 				}
 			]
 		}
 		{
-			id: "969FEB1F391DF329"
-			x: 16.5d
-			y: 7.0d
+			id: "369FEB1F391DF329"
+			x: 9.0d
+			y: 35.224999999999994d
 			icon: {
 				id: "create:raw_zinc"
 				count: 1
 			}
 			dependencies: [
-				"0BB61C3F5F8A6961"
+				"1BB61C3F5F8A6961"
 			]
 			tasks: [
 				{
-					id: "AA663CB005C37452"
+					id: "4A663CB005C37452"
 					type: "checkmark"
 				}
 			]
 			rewards: [
 				{
-					id: "5319CF5202FD6467"
+					id: "6319CF5202FD6467"
 					type: "item"
 					item: {
 						id: "create:raw_zinc"
@@ -834,32 +842,32 @@
 					count: 12
 				}
 				{
-					id: "7BD342FFB2C767BF"
+					id: "1BD342FFB2C767BF"
 					type: "xp_levels"
 					xp_levels: 3
 				}
 			]
 		}
 		{
-			id: "312AB5C73A97212A"
-			x: 18.5d
-			y: 7.0d
+			id: "412AB5C73A97212A"
+			x: 11.25d
+			y: 35.224999999999994d
 			icon: {
 				id: "mekanism:raw_osmium"
 				count: 1
 			}
 			dependencies: [
-				"969FEB1F391DF329"
+				"369FEB1F391DF329"
 			]
 			tasks: [
 				{
-					id: "82C74C84B3AD24F5"
+					id: "22C74C84B3AD24F5"
 					type: "checkmark"
 				}
 			]
 			rewards: [
 				{
-					id: "C32124F2E3C3C408"
+					id: "632124F2E3C3C408"
 					type: "item"
 					item: {
 						id: "mekanism:raw_osmium"
@@ -868,32 +876,32 @@
 					count: 12
 				}
 				{
-					id: "13658A1609964AA7"
+					id: "23658A1609964AA7"
 					type: "xp_levels"
 					xp_levels: 3
 				}
 			]
 		}
 		{
-			id: "E6F522DCB6C730BC"
-			x: 20.5d
-			y: 7.0d
+			id: "16F522DCB6C730BC"
+			x: 9.25d
+			y: 43.22499999999999d
 			icon: {
 				id: "mekanism:ingot_steel"
 				count: 1
 			}
 			dependencies: [
-				"A643921A15D7ABC6"
+				"4643921A15D7ABC6"
 			]
 			tasks: [
 				{
-					id: "9CBA8133D908CAF2"
+					id: "3CBA8133D908CAF2"
 					type: "checkmark"
 				}
 			]
 			rewards: [
 				{
-					id: "B1BA9943D2738B76"
+					id: "51BA9943D2738B76"
 					type: "item"
 					item: {
 						id: "mekanism:ingot_steel"
@@ -902,37 +910,37 @@
 					count: 16
 				}
 				{
-					id: "597D586FBCC168F6"
+					id: "697D586FBCC168F6"
 					type: "loot"
-					table_id: "BA8E33E78A3B3A0C"
+					table_id: "5A8E33E78A3B3A0C"
 				}
 				{
-					id: "5A1541489A8D92D0"
+					id: "6A1541489A8D92D0"
 					type: "xp_levels"
 					xp_levels: 5
 				}
 			]
 		}
 		{
-			id: "352344199990D8C6"
-			x: 8.5d
-			y: 8.6d
+			id: "452344199990D8C6"
+			x: 2.25d
+			y: 36.824999999999996d
 			icon: {
 				id: "minecraft:glowstone_dust"
 				count: 1
 			}
 			dependencies: [
-				"AD2B46C883E7C574"
+				"4D2B46C883E7C574"
 			]
 			tasks: [
 				{
-					id: "8A474BFCF40FD485"
+					id: "2A474BFCF40FD485"
 					type: "checkmark"
 				}
 			]
 			rewards: [
 				{
-					id: "B00DB3B6844EC206"
+					id: "500DB3B6844EC206"
 					type: "item"
 					item: {
 						id: "minecraft:glowstone_dust"
@@ -943,25 +951,25 @@
 			]
 		}
 		{
-			id: "E1F01E509D869534"
-			x: 10.5d
-			y: 8.6d
+			id: "11F01E509D869534"
+			x: 4.5d
+			y: 36.824999999999996d
 			icon: {
 				id: "minecraft:redstone"
 				count: 1
 			}
 			dependencies: [
-				"352344199990D8C6"
+				"452344199990D8C6"
 			]
 			tasks: [
 				{
-					id: "C699704F1C030607"
+					id: "6699704F1C030607"
 					type: "checkmark"
 				}
 			]
 			rewards: [
 				{
-					id: "370D916BAF10EA24"
+					id: "470D916BAF10EA24"
 					type: "item"
 					item: {
 						id: "minecraft:redstone"
@@ -970,32 +978,32 @@
 					count: 32
 				}
 				{
-					id: "71A0D631B172E906"
+					id: "11A0D631B172E906"
 					type: "xp_levels"
 					xp_levels: 3
 				}
 			]
 		}
 		{
-			id: "CF6546647C0552B4"
-			x: 12.5d
-			y: 8.6d
+			id: "6F6546647C0552B4"
+			x: 6.75d
+			y: 36.824999999999996d
 			icon: {
 				id: "minecraft:lapis_lazuli"
 				count: 1
 			}
 			dependencies: [
-				"E1F01E509D869534"
+				"11F01E509D869534"
 			]
 			tasks: [
 				{
-					id: "E08FEB1F05601DBB"
+					id: "108FEB1F05601DBB"
 					type: "checkmark"
 				}
 			]
 			rewards: [
 				{
-					id: "8F7FFC15DFC49E2B"
+					id: "2F7FFC15DFC49E2B"
 					type: "item"
 					item: {
 						id: "minecraft:lapis_lazuli"
@@ -1004,32 +1012,32 @@
 					count: 32
 				}
 				{
-					id: "F77ADF5FF0DACBFE"
+					id: "277ADF5FF0DACBFE"
 					type: "xp_levels"
 					xp_levels: 3
 				}
 			]
 		}
 		{
-			id: "748DD1118AF7A40B"
-			x: 8.5d
-			y: 10.2d
+			id: "148DD1118AF7A40B"
+			x: 4.5d
+			y: 38.425d
 			icon: {
 				id: "minecraft:magma_cream"
 				count: 1
 			}
 			dependencies: [
-				"352344199990D8C6"
+				"452344199990D8C6"
 			]
 			tasks: [
 				{
-					id: "13C91F244C995AE3"
+					id: "23C91F244C995AE3"
 					type: "checkmark"
 				}
 			]
 			rewards: [
 				{
-					id: "E9EE5ECB16DFCD44"
+					id: "19EE5ECB16DFCD44"
 					type: "item"
 					item: {
 						id: "minecraft:magma_cream"
@@ -1040,25 +1048,25 @@
 			]
 		}
 		{
-			id: "B5AEB4AA6B7BC5D6"
-			x: 10.5d
-			y: 10.2d
+			id: "55AEB4AA6B7BC5D6"
+			x: 6.75d
+			y: 38.425d
 			icon: {
 				id: "minecraft:coal"
 				count: 1
 			}
 			dependencies: [
-				"748DD1118AF7A40B"
+				"148DD1118AF7A40B"
 			]
 			tasks: [
 				{
-					id: "4160C2E3775E4B33"
+					id: "5160C2E3775E4B33"
 					type: "checkmark"
 				}
 			]
 			rewards: [
 				{
-					id: "79AC1524C009F081"
+					id: "19AC1524C009F081"
 					type: "item"
 					item: {
 						id: "minecraft:coal"
@@ -1067,32 +1075,32 @@
 					count: 32
 				}
 				{
-					id: "D0107B0504FEDBCE"
+					id: "70107B0504FEDBCE"
 					type: "xp_levels"
 					xp_levels: 3
 				}
 			]
 		}
 		{
-			id: "212C367F7A5E874C"
-			x: 12.5d
-			y: 10.2d
+			id: "312C367F7A5E874C"
+			x: 9.0d
+			y: 36.824999999999996d
 			icon: {
 				id: "minecraft:blaze_powder"
 				count: 1
 			}
 			dependencies: [
-				"B5AEB4AA6B7BC5D6"
+				"55AEB4AA6B7BC5D6"
 			]
 			tasks: [
 				{
-					id: "E799CE9E4DFE0638"
+					id: "1799CE9E4DFE0638"
 					type: "checkmark"
 				}
 			]
 			rewards: [
 				{
-					id: "6DA7BF562C11BEB3"
+					id: "7DA7BF562C11BEB3"
 					type: "item"
 					item: {
 						id: "minecraft:blaze_powder"
@@ -1101,32 +1109,32 @@
 					count: 8
 				}
 				{
-					id: "2E5C12881A828ECD"
+					id: "3E5C12881A828ECD"
 					type: "xp_levels"
 					xp_levels: 3
 				}
 			]
 		}
 		{
-			id: "F72177F2A37920CE"
-			x: 23.5d
-			y: 7.0d
+			id: "272177F2A37920CE"
+			x: 7.5d
+			y: 20.925d
 			icon: {
 				id: "botania:manasteel_ingot"
 				count: 1
 			}
 			dependencies: [
-				"13B4ED8AC87648BC"
+				"23B4ED8AC87648BC"
 			]
 			tasks: [
 				{
-					id: "D6607A3F5456BEF0"
+					id: "76607A3F5456BEF0"
 					type: "checkmark"
 				}
 			]
 			rewards: [
 				{
-					id: "3D18FEE7B339339F"
+					id: "4D18FEE7B339339F"
 					type: "item"
 					item: {
 						id: "botania:manasteel_ingot"
@@ -1135,32 +1143,32 @@
 					count: 4
 				}
 				{
-					id: "B6D098EC5AE07D70"
+					id: "56D098EC5AE07D70"
 					type: "xp_levels"
 					xp_levels: 5
 				}
 			]
 		}
 		{
-			id: "4A8894E4E8E5B9F9"
-			x: 23.5d
-			y: 8.6d
+			id: "5A8894E4E8E5B9F9"
+			x: 7.5d
+			y: 22.900000000000002d
 			icon: {
 				id: "naturesaura:infused_iron"
 				count: 1
 			}
 			dependencies: [
-				"13B4ED8AC87648BC"
+				"23B4ED8AC87648BC"
 			]
 			tasks: [
 				{
-					id: "E2D382789814D502"
+					id: "12D382789814D502"
 					type: "checkmark"
 				}
 			]
 			rewards: [
 				{
-					id: "C45AF0AC994E82D9"
+					id: "645AF0AC994E82D9"
 					type: "item"
 					item: {
 						id: "naturesaura:infused_iron"
@@ -1169,16 +1177,16 @@
 					count: 8
 				}
 				{
-					id: "90AE68089EB5EF7E"
+					id: "30AE68089EB5EF7E"
 					type: "xp_levels"
 					xp_levels: 5
 				}
 			]
 		}
 		{
-			id: "4CD0A072FD54E586"
-			x: 15.5d
-			y: 13.5d
+			id: "5CD0A072FD54E586"
+			x: 0.5d
+			y: 43.72499999999999d
 			icon: {
 				id: "productivemetalworks:black_foundry_controller"
 				count: 1
@@ -1187,7 +1195,7 @@
 			shape: "gear"
 			tasks: [
 				{
-					id: "46AA7F955F175A40"
+					id: "56AA7F955F175A40"
 					type: "item"
 					item: {
 						id: "productivemetalworks:black_foundry_controller"
@@ -1196,7 +1204,7 @@
 					count: 1
 				}
 				{
-					id: "3FD8DB0C38F4D033"
+					id: "4FD8DB0C38F4D033"
 					type: "item"
 					item: {
 						id: "productivemetalworks:black_foundry_tank"
@@ -1205,7 +1213,7 @@
 					count: 1
 				}
 				{
-					id: "743FB2C579E0F401"
+					id: "143FB2C579E0F401"
 					type: "item"
 					item: {
 						id: "productivemetalworks:black_foundry_drain"
@@ -1214,7 +1222,7 @@
 					count: 1
 				}
 				{
-					id: "E2D18C32BEDC6DE6"
+					id: "12D18C32BEDC6DE6"
 					type: "item"
 					item: {
 						id: "productivemetalworks:liquid_heating_coil"
@@ -1225,7 +1233,7 @@
 			]
 			rewards: [
 				{
-					id: "ECFF3598DA5F3AA7"
+					id: "1CFF3598DA5F3AA7"
 					type: "item"
 					item: {
 						id: "productivemetalworks:fire_brick"
@@ -1234,31 +1242,31 @@
 					count: 32
 				}
 				{
-					id: "6DDC8C2FF16D1380"
+					id: "7DDC8C2FF16D1380"
 					type: "loot"
-					table_id: "BA8E33E78A3B3A0C"
+					table_id: "5A8E33E78A3B3A0C"
 				}
 				{
-					id: "15E6BDE341A71A45"
+					id: "25E6BDE341A71A45"
 					type: "xp_levels"
 					xp_levels: 10
 				}
 			]
 		}
 		{
-			id: "FC6F665730B82E41"
-			x: 18.0d
-			y: 13.5d
+			id: "2C6F665730B82E41"
+			x: 3.25d
+			y: 43.22499999999999d
 			icon: {
 				id: "productivemetalworks:ingot_cast"
 				count: 1
 			}
 			dependencies: [
-				"4CD0A072FD54E586"
+				"5CD0A072FD54E586"
 			]
 			tasks: [
 				{
-					id: "507360A558A07737"
+					id: "607360A558A07737"
 					type: "item"
 					item: {
 						id: "productivemetalworks:casting_table"
@@ -1267,7 +1275,7 @@
 					count: 1
 				}
 				{
-					id: "516284F584242601"
+					id: "616284F584242601"
 					type: "item"
 					item: {
 						id: "productivemetalworks:ingot_cast"
@@ -1278,7 +1286,7 @@
 			]
 			rewards: [
 				{
-					id: "38ECCAC683ACFC37"
+					id: "48ECCAC683ACFC37"
 					type: "item"
 					item: {
 						id: "minecraft:iron_ingot"
@@ -1287,40 +1295,41 @@
 					count: 16
 				}
 				{
-					id: "626FB3EDBF1797FA"
+					id: "726FB3EDBF1797FA"
 					type: "xp_levels"
 					xp_levels: 5
 				}
 			]
 		}
 		{
-			id: "A643921A15D7ABC6"
-			x: 20.5d
-			y: 13.5d
+			id: "4643921A15D7ABC6"
+			x: 6.25d
+			y: 43.97499999999999d
 			icon: {
 				id: "productivebees:spawn_egg_configurable_bee"
 				count: 1
 			}
 			size: 2.5d
 			shape: "gear"
+			hide_dependency_lines: true
 			dependencies: [
-				"FC6F665730B82E41"
-				"13B4ED8AC87648BC"
+				"2C6F665730B82E41"
+				"23B4ED8AC87648BC"
 			]
 			tasks: [
 				{
-					id: "2CBB671AABAD5362"
+					id: "3CBB671AABAD5362"
 					type: "checkmark"
 				}
 			]
 			rewards: [
 				{
-					id: "4CFA4D2458F67375"
+					id: "5CFA4D2458F67375"
 					type: "loot"
-					table_id: "C79EAEAE0F26AA7F"
+					table_id: "679EAEAE0F26AA7F"
 				}
 				{
-					id: "38E32CB2B5146B82"
+					id: "48E32CB2B5146B82"
 					type: "item"
 					item: {
 						id: "mekanism:ingot_steel"
@@ -1329,33 +1338,33 @@
 					count: 16
 				}
 				{
-					id: "B1826F4595A8B0DA"
+					id: "51826F4595A8B0DA"
 					type: "xp_levels"
 					xp_levels: 20
 				}
 			]
 		}
 		{
-			id: "F558B50FF49D1626"
-			x: 23.0d
-			y: 13.5d
+			id: "2558B50FF49D1626"
+			x: 9.25d
+			y: 45.57499999999999d
 			icon: {
 				id: "productivebees:spawn_egg_configurable_bee"
 				count: 1
 			}
 			optional: true
 			dependencies: [
-				"A643921A15D7ABC6"
+				"4643921A15D7ABC6"
 			]
 			tasks: [
 				{
-					id: "C79DD1D61C2E5716"
+					id: "679DD1D61C2E5716"
 					type: "checkmark"
 				}
 			]
 			rewards: [
 				{
-					id: "62DEEB2521730A64"
+					id: "72DEEB2521730A64"
 					type: "xp_levels"
 					xp_levels: 5
 				}
@@ -1364,80 +1373,70 @@
 	]
 	images: [
 		{
-			id: "A90668AC3A2E2A5F"
+			id: "490668AC3A2E2A5F"
 			image: "kronwerke:textures/quests/bees/title.png"
-			x: 12.0d
-			y: -4.6d
+			x: 4.865d
+			y: 0.0d
 			width: 10.73d
 			height: 1.75d
 			rotation: 0.0d
 			order: 1
 		}
 		{
-			id: "687EDDE97D281F42"
+			id: "787EDDE97D281F42"
 			image: "kronwerke:textures/quests/bees/first.png"
-			x: 3.75d
-			y: -2.2d
+			x: 1.5899999999999999d
+			y: 6.025000000000001d
 			width: 4.18d
 			height: 0.9d
 			rotation: 0.0d
 			order: 1
 		}
 		{
-			id: "CB43D1EF69C9CC60"
+			id: "6B43D1EF69C9CC60"
 			image: "kronwerke:textures/quests/bees/centrifuge.png"
-			x: 12.5d
-			y: -2.2d
+			x: 2.985d
+			y: 12.425d
 			width: 6.97d
 			height: 0.9d
 			rotation: 0.0d
 			order: 1
 		}
 		{
-			id: "3FFF2BB84AA84F67"
+			id: "4FFF2BB84AA84F67"
 			image: "kronwerke:textures/quests/bees/genes.png"
-			x: 21.0d
-			y: -2.2d
+			x: 0.32999999999999996d
+			y: 19.575d
 			width: 1.66d
 			height: 0.9d
 			rotation: 0.0d
 			order: 1
 		}
 		{
-			id: "2A2491B219BA97D5"
+			id: "3A2491B219BA97D5"
 			image: "kronwerke:textures/quests/bees/breeding.png"
-			x: 2.5d
-			y: 5.0d
+			x: 0.5049999999999999d
+			y: 26.724999999999998d
 			width: 2.01d
 			height: 0.9d
 			rotation: 0.0d
 			order: 1
 		}
 		{
-			id: "08951CD0032FA293"
+			id: "18951CD0032FA293"
 			image: "kronwerke:textures/quests/bees/resources.png"
-			x: 14.5d
-			y: 5.0d
+			x: 2.515d
+			y: 33.875d
 			width: 6.03d
 			height: 0.9d
 			rotation: 0.0d
 			order: 1
 		}
 		{
-			id: "30CCC35A6E6F4668"
-			image: "kronwerke:textures/quests/bees/magic.png"
-			x: 23.5d
-			y: 5.0d
-			width: 4.12d
-			height: 0.9d
-			rotation: 0.0d
-			order: 1
-		}
-		{
-			id: "832272E070CFC4B7"
+			id: "40CCC35A6E6F4668"
 			image: "kronwerke:textures/quests/bees/metalworks.png"
-			x: 19.0d
-			y: 11.6d
+			x: 3.475d
+			y: 41.87499999999999d
 			width: 7.95d
 			height: 0.9d
 			rotation: 0.0d

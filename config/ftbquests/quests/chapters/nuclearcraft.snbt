@@ -1,19 +1,19 @@
 {
-	id: "F172C79BA0AFB97C"
+	id: "2172C79BA0AFB97C"
 	filename: "nuclearcraft"
 	icon: {
 		id: "nuclearcraft:fission_reactor_controller"
 		count: 1
 	}
-	group: "AEAA9718BAF5A32A"
+	group: "4EAA9718BAF5A32A"
 	order_index: 35
 	default_quest_shape: "square"
 	default_hide_dependency_lines: false
 	quests: [
 		{
-			id: "D6C7E94B78DE11C2"
-			x: 0.0d
-			y: 1.5d
+			id: "76C7E94B78DE11C2"
+			x: 0.5d
+			y: 2.5d
 			icon: {
 				id: "nuclearcraft:manufactory"
 				count: 1
@@ -22,7 +22,7 @@
 			shape: "hexagon"
 			tasks: [
 				{
-					id: "487F5302A5E8E8BE"
+					id: "587F5302A5E8E8BE"
 					type: "item"
 					item: {
 						id: "nuclearcraft:manufactory"
@@ -33,7 +33,7 @@
 			]
 			rewards: [
 				{
-					id: "A9A79C7F531E7131"
+					id: "49A79C7F531E7131"
 					type: "item"
 					item: {
 						id: "nuclearcraft:coil_copper"
@@ -42,31 +42,32 @@
 					count: 4
 				}
 				{
-					id: "E04C5E9A9BEDCBE5"
+					id: "104C5E9A9BEDCBE5"
 					type: "loot"
-					table_id: "F05AFC22088A36B6"
+					table_id: "205AFC22088A36B6"
 				}
 				{
-					id: "2221F19D94A9AF43"
+					id: "3221F19D94A9AF43"
 					type: "xp_levels"
 					xp_levels: 10
 				}
 			]
 		}
 		{
-			id: "061098343E743312"
-			x: 2.5d
-			y: 0.5d
+			id: "161098343E743312"
+			x: 0.0d
+			y: 7.3d
 			icon: {
 				id: "nuclearcraft:raw_uranium"
 				count: 1
 			}
+			hide_dependency_lines: true
 			dependencies: [
-				"D6C7E94B78DE11C2"
+				"76C7E94B78DE11C2"
 			]
 			tasks: [
 				{
-					id: "0D0AC209578856DB"
+					id: "1D0AC209578856DB"
 					type: "item"
 					item: {
 						id: "nuclearcraft:raw_uranium"
@@ -75,7 +76,7 @@
 					count: 16
 				}
 				{
-					id: "C7D452CA8C03CA0F"
+					id: "67D452CA8C03CA0F"
 					type: "item"
 					item: {
 						id: "nuclearcraft:raw_boron"
@@ -84,7 +85,7 @@
 					count: 8
 				}
 				{
-					id: "3EA1CC0FFEE826D0"
+					id: "4EA1CC0FFEE826D0"
 					type: "item"
 					item: {
 						id: "nuclearcraft:raw_lithium"
@@ -95,7 +96,7 @@
 			]
 			rewards: [
 				{
-					id: "6872A740F225C29E"
+					id: "7872A740F225C29E"
 					type: "item"
 					item: {
 						id: "mekanism:ingot_lead"
@@ -104,26 +105,27 @@
 					count: 16
 				}
 				{
-					id: "DF8A11B24919404E"
+					id: "7F8A11B24919404E"
 					type: "xp_levels"
 					xp_levels: 5
 				}
 			]
 		}
 		{
-			id: "065246D8B7236EBA"
-			x: 2.5d
-			y: 2.5d
+			id: "165246D8B7236EBA"
+			x: 0.0d
+			y: 9.15d
 			icon: {
 				id: "nuclearcraft:graphite_dust"
 				count: 1
 			}
+			hide_dependency_lines: true
 			dependencies: [
-				"D6C7E94B78DE11C2"
+				"76C7E94B78DE11C2"
 			]
 			tasks: [
 				{
-					id: "0B5352B6741C19D1"
+					id: "1B5352B6741C19D1"
 					type: "item"
 					item: {
 						id: "nuclearcraft:graphite_dust"
@@ -134,7 +136,7 @@
 			]
 			rewards: [
 				{
-					id: "2ADFC0FFD78A0FE3"
+					id: "3ADFC0FFD78A0FE3"
 					type: "item"
 					item: {
 						id: "minecraft:coal"
@@ -143,26 +145,26 @@
 					count: 32
 				}
 				{
-					id: "5A4BCECB860CD158"
+					id: "6A4BCECB860CD158"
 					type: "xp_levels"
 					xp_levels: 5
 				}
 			]
 		}
 		{
-			id: "485EC3D75E9B9AB9"
-			x: 5.0d
-			y: 2.5d
+			id: "585EC3D75E9B9AB9"
+			x: 2.5d
+			y: 7.3d
 			icon: {
 				id: "nuclearcraft:plate_basic"
 				count: 1
 			}
 			dependencies: [
-				"065246D8B7236EBA"
+				"165246D8B7236EBA"
 			]
 			tasks: [
 				{
-					id: "B13A07CEA782648A"
+					id: "513A07CEA782648A"
 					type: "item"
 					item: {
 						id: "nuclearcraft:plate_basic"
@@ -173,7 +175,7 @@
 			]
 			rewards: [
 				{
-					id: "4A73ED1760BFF249"
+					id: "5A73ED1760BFF249"
 					type: "item"
 					item: {
 						id: "mekanism:ingot_lead"
@@ -182,26 +184,26 @@
 					count: 16
 				}
 				{
-					id: "C10A99AC22CD6FBA"
+					id: "610A99AC22CD6FBA"
 					type: "xp_levels"
 					xp_levels: 5
 				}
 			]
 		}
 		{
-			id: "EEAD067E49C19340"
-			x: 7.5d
-			y: 2.5d
+			id: "1EAD067E49C19340"
+			x: 5.0d
+			y: 7.3d
 			icon: {
 				id: "nuclearcraft:alloy_smelter"
 				count: 1
 			}
 			dependencies: [
-				"485EC3D75E9B9AB9"
+				"585EC3D75E9B9AB9"
 			]
 			tasks: [
 				{
-					id: "5D80A04169674167"
+					id: "6D80A04169674167"
 					type: "item"
 					item: {
 						id: "nuclearcraft:alloy_smelter"
@@ -212,7 +214,7 @@
 			]
 			rewards: [
 				{
-					id: "280E72545DE9E0AE"
+					id: "380E72545DE9E0AE"
 					type: "item"
 					item: {
 						id: "minecraft:bricks"
@@ -221,27 +223,27 @@
 					count: 16
 				}
 				{
-					id: "E6E119862269EEB0"
+					id: "16E119862269EEB0"
 					type: "xp_levels"
 					xp_levels: 5
 				}
 			]
 		}
 		{
-			id: "F9FAFDD9D2F3F21A"
-			x: 10.0d
-			y: 1.5d
+			id: "29FAFDD9D2F3F21A"
+			x: 7.25d
+			y: 7.3d
 			icon: {
 				id: "nuclearcraft:ferroboron_ingot"
 				count: 1
 			}
 			dependencies: [
-				"EEAD067E49C19340"
-				"061098343E743312"
+				"1EAD067E49C19340"
+				"161098343E743312"
 			]
 			tasks: [
 				{
-					id: "5E040AD6FD5D47AB"
+					id: "6E040AD6FD5D47AB"
 					type: "item"
 					item: {
 						id: "nuclearcraft:ferroboron_ingot"
@@ -252,7 +254,7 @@
 			]
 			rewards: [
 				{
-					id: "C4B03BB6E72DA38C"
+					id: "64B03BB6E72DA38C"
 					type: "item"
 					item: {
 						id: "mekanism:ingot_steel"
@@ -261,26 +263,26 @@
 					count: 8
 				}
 				{
-					id: "67E81A1ACE8C2148"
+					id: "77E81A1ACE8C2148"
 					type: "xp_levels"
 					xp_levels: 5
 				}
 			]
 		}
 		{
-			id: "6F35186F803C8F15"
-			x: 12.5d
-			y: 1.5d
+			id: "7F35186F803C8F15"
+			x: 9.5d
+			y: 7.3d
 			icon: {
 				id: "nuclearcraft:tough_alloy_ingot"
 				count: 1
 			}
 			dependencies: [
-				"F9FAFDD9D2F3F21A"
+				"29FAFDD9D2F3F21A"
 			]
 			tasks: [
 				{
-					id: "94F7B230FE3CAF71"
+					id: "34F7B230FE3CAF71"
 					type: "item"
 					item: {
 						id: "nuclearcraft:tough_alloy_ingot"
@@ -291,7 +293,7 @@
 			]
 			rewards: [
 				{
-					id: "7A14E2A96AE100E6"
+					id: "1A14E2A96AE100E6"
 					type: "item"
 					item: {
 						id: "mekanism:ingot_steel"
@@ -300,31 +302,32 @@
 					count: 16
 				}
 				{
-					id: "95A343B0B0E286AF"
+					id: "35A343B0B0E286AF"
 					type: "loot"
-					table_id: "F05AFC22088A36B6"
+					table_id: "205AFC22088A36B6"
 				}
 				{
-					id: "EDAABA8D66397FB0"
+					id: "1DAABA8D66397FB0"
 					type: "xp_levels"
 					xp_levels: 10
 				}
 			]
 		}
 		{
-			id: "C87BFE692FDDE430"
+			id: "687BFE692FDDE430"
 			x: 0.0d
-			y: 6.0d
+			y: 16.05d
 			icon: {
 				id: "nuclearcraft:plate_advanced"
 				count: 1
 			}
+			hide_dependency_lines: true
 			dependencies: [
-				"6F35186F803C8F15"
+				"7F35186F803C8F15"
 			]
 			tasks: [
 				{
-					id: "3BDE6CE9202613F3"
+					id: "4BDE6CE9202613F3"
 					type: "item"
 					item: {
 						id: "nuclearcraft:plate_advanced"
@@ -335,7 +338,7 @@
 			]
 			rewards: [
 				{
-					id: "BD005E5DCA96441C"
+					id: "5D005E5DCA96441C"
 					type: "item"
 					item: {
 						id: "nuclearcraft:plate_basic"
@@ -344,26 +347,26 @@
 					count: 4
 				}
 				{
-					id: "ABAEB9F215DE1DD9"
+					id: "4BAEB9F215DE1DD9"
 					type: "xp_levels"
 					xp_levels: 5
 				}
 			]
 		}
 		{
-			id: "FFAD545FC27D4FD4"
-			x: 2.5d
-			y: 6.0d
+			id: "2FAD545FC27D4FD4"
+			x: 2.25d
+			y: 16.05d
 			icon: {
 				id: "nuclearcraft:chassis"
 				count: 1
 			}
 			dependencies: [
-				"C87BFE692FDDE430"
+				"687BFE692FDDE430"
 			]
 			tasks: [
 				{
-					id: "7FF4C2E95B8DC828"
+					id: "1FF4C2E95B8DC828"
 					type: "item"
 					item: {
 						id: "nuclearcraft:chassis"
@@ -374,7 +377,7 @@
 			]
 			rewards: [
 				{
-					id: "07A61D12E1F6D89D"
+					id: "17A61D12E1F6D89D"
 					type: "item"
 					item: {
 						id: "mekanism:ingot_steel"
@@ -383,26 +386,26 @@
 					count: 16
 				}
 				{
-					id: "65F981B9D6280979"
+					id: "75F981B9D6280979"
 					type: "xp_levels"
 					xp_levels: 5
 				}
 			]
 		}
 		{
-			id: "29433CE0D184C9BD"
-			x: 5.0d
-			y: 6.0d
+			id: "39433CE0D184C9BD"
+			x: 4.5d
+			y: 16.05d
 			icon: {
 				id: "nuclearcraft:motor"
 				count: 1
 			}
 			dependencies: [
-				"FFAD545FC27D4FD4"
+				"2FAD545FC27D4FD4"
 			]
 			tasks: [
 				{
-					id: "365556472E1562DF"
+					id: "465556472E1562DF"
 					type: "item"
 					item: {
 						id: "nuclearcraft:motor"
@@ -413,7 +416,7 @@
 			]
 			rewards: [
 				{
-					id: "5B3F6B78EA0615BF"
+					id: "6B3F6B78EA0615BF"
 					type: "item"
 					item: {
 						id: "nuclearcraft:coil_copper"
@@ -422,26 +425,26 @@
 					count: 4
 				}
 				{
-					id: "6BA849C77A0279D3"
+					id: "7BA849C77A0279D3"
 					type: "xp_levels"
 					xp_levels: 5
 				}
 			]
 		}
 		{
-			id: "7730DFD7EEF30884"
-			x: 7.5d
-			y: 6.0d
+			id: "1730DFD7EEF30884"
+			x: 6.75d
+			y: 16.05d
 			icon: {
 				id: "nuclearcraft:servo"
 				count: 1
 			}
 			dependencies: [
-				"29433CE0D184C9BD"
+				"39433CE0D184C9BD"
 			]
 			tasks: [
 				{
-					id: "3BA2A64476D2746C"
+					id: "4BA2A64476D2746C"
 					type: "item"
 					item: {
 						id: "nuclearcraft:servo"
@@ -452,7 +455,7 @@
 			]
 			rewards: [
 				{
-					id: "111F13E6B5DBC4A7"
+					id: "211F13E6B5DBC4A7"
 					type: "item"
 					item: {
 						id: "nuclearcraft:ferroboron_ingot"
@@ -461,26 +464,26 @@
 					count: 4
 				}
 				{
-					id: "BB0F21827DC08C0E"
+					id: "5B0F21827DC08C0E"
 					type: "xp_levels"
 					xp_levels: 5
 				}
 			]
 		}
 		{
-			id: "38E12C44C7750F0F"
-			x: 10.0d
-			y: 6.0d
+			id: "48E12C44C7750F0F"
+			x: 9.0d
+			y: 16.05d
 			icon: {
 				id: "nuclearcraft:actuator"
 				count: 1
 			}
 			dependencies: [
-				"7730DFD7EEF30884"
+				"1730DFD7EEF30884"
 			]
 			tasks: [
 				{
-					id: "3AD8604CC78F1F01"
+					id: "4AD8604CC78F1F01"
 					type: "item"
 					item: {
 						id: "nuclearcraft:actuator"
@@ -491,7 +494,7 @@
 			]
 			rewards: [
 				{
-					id: "CFB2FF8DF6F403E2"
+					id: "6FB2FF8DF6F403E2"
 					type: "item"
 					item: {
 						id: "nuclearcraft:ferroboron_ingot"
@@ -500,26 +503,27 @@
 					count: 4
 				}
 				{
-					id: "3059731F3339B4AF"
+					id: "4059731F3339B4AF"
 					type: "xp_levels"
 					xp_levels: 5
 				}
 			]
 		}
 		{
-			id: "1880174B6CFC2589"
-			x: 12.5d
-			y: 6.0d
+			id: "2880174B6CFC2589"
+			x: 0.0d
+			y: 11.0d
 			icon: {
 				id: "nuclearcraft:isotope_separator"
 				count: 1
 			}
+			hide_dependency_lines: true
 			dependencies: [
-				"38E12C44C7750F0F"
+				"48E12C44C7750F0F"
 			]
 			tasks: [
 				{
-					id: "D7FFB39F9AFDC3A7"
+					id: "77FFB39F9AFDC3A7"
 					type: "item"
 					item: {
 						id: "nuclearcraft:isotope_separator"
@@ -528,7 +532,7 @@
 					count: 1
 				}
 				{
-					id: "0AB6C49B115E9122"
+					id: "1AB6C49B115E9122"
 					type: "item"
 					item: {
 						id: "nuclearcraft:uranium_235"
@@ -539,7 +543,7 @@
 			]
 			rewards: [
 				{
-					id: "D4A11D37BE385D2F"
+					id: "74A11D37BE385D2F"
 					type: "item"
 					item: {
 						id: "nuclearcraft:raw_uranium"
@@ -548,16 +552,16 @@
 					count: 16
 				}
 				{
-					id: "16CDA26030BA279B"
+					id: "26CDA26030BA279B"
 					type: "xp_levels"
 					xp_levels: 10
 				}
 			]
 		}
 		{
-			id: "85B4DA49C85D1B2B"
-			x: 15.0d
-			y: 6.0d
+			id: "25B4DA49C85D1B2B"
+			x: 2.5d
+			y: 9.4d
 			icon: {
 				id: "nuclearcraft:fuel_uranium_leu_235"
 				count: 1
@@ -565,11 +569,11 @@
 			size: 1.5d
 			shape: "hexagon"
 			dependencies: [
-				"1880174B6CFC2589"
+				"2880174B6CFC2589"
 			]
 			tasks: [
 				{
-					id: "345B5E9884C72277"
+					id: "445B5E9884C72277"
 					type: "item"
 					item: {
 						id: "nuclearcraft:fuel_uranium_leu_235"
@@ -580,7 +584,7 @@
 			]
 			rewards: [
 				{
-					id: "D13CC263B78F4DFE"
+					id: "713CC263B78F4DFE"
 					type: "item"
 					item: {
 						id: "nuclearcraft:uranium_238"
@@ -589,31 +593,32 @@
 					count: 8
 				}
 				{
-					id: "7955E733B9478677"
+					id: "1955E733B9478677"
 					type: "loot"
-					table_id: "F05AFC22088A36B6"
+					table_id: "205AFC22088A36B6"
 				}
 				{
-					id: "434B84AD8795E52B"
+					id: "534B84AD8795E52B"
 					type: "xp_levels"
 					xp_levels: 10
 				}
 			]
 		}
 		{
-			id: "2BE2CE767844989E"
+			id: "3BE2CE767844989E"
 			x: 0.0d
-			y: 10.0d
+			y: 20.85d
 			icon: {
 				id: "nuclearcraft:pressurizer"
 				count: 1
 			}
+			hide_dependency_lines: true
 			dependencies: [
-				"38E12C44C7750F0F"
+				"48E12C44C7750F0F"
 			]
 			tasks: [
 				{
-					id: "0B4C8A4D5AC45947"
+					id: "1B4C8A4D5AC45947"
 					type: "item"
 					item: {
 						id: "nuclearcraft:pressurizer"
@@ -624,7 +629,7 @@
 			]
 			rewards: [
 				{
-					id: "D808FFE0F93CF6A7"
+					id: "7808FFE0F93CF6A7"
 					type: "item"
 					item: {
 						id: "mekanism:ingot_lead"
@@ -633,26 +638,26 @@
 					count: 32
 				}
 				{
-					id: "23C8B7D0E7AE2B11"
+					id: "33C8B7D0E7AE2B11"
 					type: "xp_levels"
 					xp_levels: 10
 				}
 			]
 		}
 		{
-			id: "CDA829C325374BF3"
-			x: 2.5d
-			y: 10.0d
+			id: "6DA829C325374BF3"
+			x: 2.25d
+			y: 20.85d
 			icon: {
 				id: "nuclearcraft:fission_reactor_casing"
 				count: 1
 			}
 			dependencies: [
-				"2BE2CE767844989E"
+				"3BE2CE767844989E"
 			]
 			tasks: [
 				{
-					id: "EFEFA12F6F62BD11"
+					id: "1FEFA12F6F62BD11"
 					type: "item"
 					item: {
 						id: "nuclearcraft:fission_reactor_casing"
@@ -661,7 +666,7 @@
 					count: 36
 				}
 				{
-					id: "37D3C5B728E78AE2"
+					id: "47D3C5B728E78AE2"
 					type: "item"
 					item: {
 						id: "nuclearcraft:fission_reactor_glass"
@@ -672,7 +677,7 @@
 			]
 			rewards: [
 				{
-					id: "1E318DD0EF81C3DD"
+					id: "2E318DD0EF81C3DD"
 					type: "item"
 					item: {
 						id: "mekanism:ingot_lead"
@@ -681,26 +686,26 @@
 					count: 32
 				}
 				{
-					id: "229998FACF9E2311"
+					id: "329998FACF9E2311"
 					type: "xp_levels"
 					xp_levels: 10
 				}
 			]
 		}
 		{
-			id: "1B99F004F95F24A3"
-			x: 5.0d
-			y: 9.0d
+			id: "2B99F004F95F24A3"
+			x: 4.5d
+			y: 20.85d
 			icon: {
 				id: "nuclearcraft:decay_hastener"
 				count: 1
 			}
 			dependencies: [
-				"CDA829C325374BF3"
+				"6DA829C325374BF3"
 			]
 			tasks: [
 				{
-					id: "C462ADDEDA67BDB1"
+					id: "6462ADDEDA67BDB1"
 					type: "item"
 					item: {
 						id: "nuclearcraft:decay_hastener"
@@ -711,7 +716,7 @@
 			]
 			rewards: [
 				{
-					id: "EED5E0C13A03D895"
+					id: "1ED5E0C13A03D895"
 					type: "item"
 					item: {
 						id: "nuclearcraft:raw_boron"
@@ -720,26 +725,26 @@
 					count: 8
 				}
 				{
-					id: "72AE2B5E7A23A632"
+					id: "12AE2B5E7A23A632"
 					type: "xp_levels"
 					xp_levels: 10
 				}
 			]
 		}
 		{
-			id: "A8591788BD0ABF5E"
-			x: 5.0d
-			y: 11.0d
+			id: "48591788BD0ABF5E"
+			x: 4.5d
+			y: 22.950000000000003d
 			icon: {
 				id: "nuclearcraft:assembler"
 				count: 1
 			}
 			dependencies: [
-				"CDA829C325374BF3"
+				"6DA829C325374BF3"
 			]
 			tasks: [
 				{
-					id: "E765C47C8BAE6946"
+					id: "1765C47C8BAE6946"
 					type: "item"
 					item: {
 						id: "nuclearcraft:assembler"
@@ -750,7 +755,7 @@
 			]
 			rewards: [
 				{
-					id: "7A4A61FFDFB87BB4"
+					id: "1A4A61FFDFB87BB4"
 					type: "item"
 					item: {
 						id: "minecraft:diamond"
@@ -759,26 +764,26 @@
 					count: 2
 				}
 				{
-					id: "D7C3AC8828D5BC1C"
+					id: "77C3AC8828D5BC1C"
 					type: "xp_levels"
 					xp_levels: 10
 				}
 			]
 		}
 		{
-			id: "F0C468130E41EA87"
-			x: 7.5d
-			y: 11.0d
+			id: "20C468130E41EA87"
+			x: 6.75d
+			y: 20.85d
 			icon: {
 				id: "nuclearcraft:basic_electric_circuit"
 				count: 1
 			}
 			dependencies: [
-				"A8591788BD0ABF5E"
+				"48591788BD0ABF5E"
 			]
 			tasks: [
 				{
-					id: "2858AC9FCD1FCE4A"
+					id: "3858AC9FCD1FCE4A"
 					type: "item"
 					item: {
 						id: "nuclearcraft:basic_electric_circuit"
@@ -789,7 +794,7 @@
 			]
 			rewards: [
 				{
-					id: "1C5FCEA05A646197"
+					id: "2C5FCEA05A646197"
 					type: "item"
 					item: {
 						id: "minecraft:sugar_cane"
@@ -798,28 +803,28 @@
 					count: 32
 				}
 				{
-					id: "B15EA21E1F3B144A"
+					id: "515EA21E1F3B144A"
 					type: "xp_levels"
 					xp_levels: 10
 				}
 			]
 		}
 		{
-			id: "DBE786BD2341276A"
-			x: 10.0d
-			y: 10.0d
+			id: "7BE786BD2341276A"
+			x: 9.25d
+			y: 21.1d
 			icon: {
 				id: "nuclearcraft:fission_reactor_controller"
 				count: 1
 			}
 			size: 1.5d
 			dependencies: [
-				"1B99F004F95F24A3"
-				"F0C468130E41EA87"
+				"2B99F004F95F24A3"
+				"20C468130E41EA87"
 			]
 			tasks: [
 				{
-					id: "85789F7A2E76E9D5"
+					id: "25789F7A2E76E9D5"
 					type: "item"
 					item: {
 						id: "nuclearcraft:fission_reactor_controller"
@@ -830,7 +835,7 @@
 			]
 			rewards: [
 				{
-					id: "9DD8BC0BABAD6433"
+					id: "3DD8BC0BABAD6433"
 					type: "item"
 					item: {
 						id: "nuclearcraft:plate_advanced"
@@ -839,31 +844,32 @@
 					count: 4
 				}
 				{
-					id: "62FA86C919F23D9D"
+					id: "72FA86C919F23D9D"
 					type: "loot"
-					table_id: "A1C2F3302F73AD62"
+					table_id: "41C2F3302F73AD62"
 				}
 				{
-					id: "12D4DF0391C2D72E"
+					id: "22D4DF0391C2D72E"
 					type: "xp_levels"
 					xp_levels: 15
 				}
 			]
 		}
 		{
-			id: "54E7C69711777B4B"
+			id: "64E7C69711777B4B"
 			x: 0.0d
-			y: 13.0d
+			y: 22.950000000000003d
 			icon: {
 				id: "nuclearcraft:rock_crusher"
 				count: 1
 			}
+			hide_dependency_lines: true
 			dependencies: [
-				"FFAD545FC27D4FD4"
+				"2FAD545FC27D4FD4"
 			]
 			tasks: [
 				{
-					id: "0D6C63FAB46A3BC8"
+					id: "1D6C63FAB46A3BC8"
 					type: "item"
 					item: {
 						id: "nuclearcraft:rock_crusher"
@@ -874,7 +880,7 @@
 			]
 			rewards: [
 				{
-					id: "0417096E0A802F99"
+					id: "1417096E0A802F99"
 					type: "item"
 					item: {
 						id: "minecraft:diorite"
@@ -883,26 +889,26 @@
 					count: 64
 				}
 				{
-					id: "C6C3B58ABFE8FDE4"
+					id: "66C3B58ABFE8FDE4"
 					type: "xp_levels"
 					xp_levels: 10
 				}
 			]
 		}
 		{
-			id: "E9169A02C0545372"
-			x: 2.5d
-			y: 13.0d
+			id: "19169A02C0545372"
+			x: 2.25d
+			y: 22.950000000000003d
 			icon: {
 				id: "nuclearcraft:fission_reactor_solid_fuel_cell"
 				count: 1
 			}
 			dependencies: [
-				"54E7C69711777B4B"
+				"64E7C69711777B4B"
 			]
 			tasks: [
 				{
-					id: "B859BB83B215326B"
+					id: "5859BB83B215326B"
 					type: "item"
 					item: {
 						id: "nuclearcraft:fission_reactor_solid_fuel_cell"
@@ -913,7 +919,7 @@
 			]
 			rewards: [
 				{
-					id: "DF1FC9BF33253DEB"
+					id: "7F1FC9BF33253DEB"
 					type: "item"
 					item: {
 						id: "minecraft:glass"
@@ -922,26 +928,26 @@
 					count: 16
 				}
 				{
-					id: "06F402D44AB1C859"
+					id: "16F402D44AB1C859"
 					type: "xp_levels"
 					xp_levels: 10
 				}
 			]
 		}
 		{
-			id: "720DBA3E6237920F"
-			x: 5.0d
-			y: 13.0d
+			id: "120DBA3E6237920F"
+			x: 4.5d
+			y: 25.05d
 			icon: {
 				id: "nuclearcraft:graphite_block"
 				count: 1
 			}
 			dependencies: [
-				"E9169A02C0545372"
+				"19169A02C0545372"
 			]
 			tasks: [
 				{
-					id: "EC0185005C941864"
+					id: "1C0185005C941864"
 					type: "item"
 					item: {
 						id: "nuclearcraft:graphite_block"
@@ -952,7 +958,7 @@
 			]
 			rewards: [
 				{
-					id: "333F47610339CCA3"
+					id: "433F47610339CCA3"
 					type: "item"
 					item: {
 						id: "minecraft:coal_block"
@@ -961,27 +967,28 @@
 					count: 8
 				}
 				{
-					id: "E90D4AB2FB8E8D56"
+					id: "190D4AB2FB8E8D56"
 					type: "xp_levels"
 					xp_levels: 5
 				}
 			]
 		}
 		{
-			id: "8F65CA23BBDCEF00"
-			x: 7.5d
-			y: 13.0d
+			id: "2F65CA23BBDCEF00"
+			x: 2.25d
+			y: 27.150000000000002d
 			icon: {
 				id: "nuclearcraft:thermoconducting_plate"
 				count: 1
 			}
+			hide_dependency_lines: true
 			dependencies: [
-				"54E7C69711777B4B"
-				"EEAD067E49C19340"
+				"64E7C69711777B4B"
+				"1EAD067E49C19340"
 			]
 			tasks: [
 				{
-					id: "F53B8A38EA26EE5A"
+					id: "253B8A38EA26EE5A"
 					type: "item"
 					item: {
 						id: "nuclearcraft:thermoconducting_plate"
@@ -992,7 +999,7 @@
 			]
 			rewards: [
 				{
-					id: "76AD9CEFC7F7E448"
+					id: "16AD9CEFC7F7E448"
 					type: "item"
 					item: {
 						id: "nuclearcraft:tough_alloy_ingot"
@@ -1001,26 +1008,26 @@
 					count: 8
 				}
 				{
-					id: "98EFB2581C8A6B11"
+					id: "38EFB2581C8A6B11"
 					type: "xp_levels"
 					xp_levels: 10
 				}
 			]
 		}
 		{
-			id: "6E4780CE393BFDD3"
-			x: 10.0d
-			y: 13.0d
+			id: "7E4780CE393BFDD3"
+			x: 4.5d
+			y: 27.150000000000002d
 			icon: {
 				id: "nuclearcraft:water_heat_sink"
 				count: 1
 			}
 			dependencies: [
-				"8F65CA23BBDCEF00"
+				"2F65CA23BBDCEF00"
 			]
 			tasks: [
 				{
-					id: "F1C0C17B84C6B88E"
+					id: "21C0C17B84C6B88E"
 					type: "item"
 					item: {
 						id: "nuclearcraft:empty_heat_sink"
@@ -1029,7 +1036,7 @@
 					count: 1
 				}
 				{
-					id: "E4F4AAE47DAF0136"
+					id: "14F4AAE47DAF0136"
 					type: "item"
 					item: {
 						id: "nuclearcraft:water_heat_sink"
@@ -1040,7 +1047,7 @@
 			]
 			rewards: [
 				{
-					id: "C986382B7E1C4854"
+					id: "6986382B7E1C4854"
 					type: "item"
 					item: {
 						id: "nuclearcraft:tough_alloy_ingot"
@@ -1049,31 +1056,31 @@
 					count: 8
 				}
 				{
-					id: "866668FF7C05533C"
+					id: "266668FF7C05533C"
 					type: "loot"
-					table_id: "F05AFC22088A36B6"
+					table_id: "205AFC22088A36B6"
 				}
 				{
-					id: "637CF037A111EAC7"
+					id: "737CF037A111EAC7"
 					type: "xp_levels"
 					xp_levels: 10
 				}
 			]
 		}
 		{
-			id: "2DB212CA2A66BF80"
-			x: 12.5d
-			y: 10.0d
+			id: "3DB212CA2A66BF80"
+			x: 11.75d
+			y: 20.85d
 			icon: {
 				id: "nuclearcraft:fission_reactor_port"
 				count: 1
 			}
 			dependencies: [
-				"DBE786BD2341276A"
+				"7BE786BD2341276A"
 			]
 			tasks: [
 				{
-					id: "8BA6C88CB24F46E4"
+					id: "2BA6C88CB24F46E4"
 					type: "item"
 					item: {
 						id: "nuclearcraft:fission_reactor_port"
@@ -1084,7 +1091,7 @@
 			]
 			rewards: [
 				{
-					id: "E27532467A07A513"
+					id: "127532467A07A513"
 					type: "item"
 					item: {
 						id: "nuclearcraft:servo"
@@ -1093,16 +1100,16 @@
 					count: 2
 				}
 				{
-					id: "BC5C510871985BB4"
+					id: "5C5C510871985BB4"
 					type: "xp_levels"
 					xp_levels: 10
 				}
 			]
 		}
 		{
-			id: "82EE3CFB439CE226"
-			x: 15.0d
-			y: 11.5d
+			id: "22EE3CFB439CE226"
+			x: 14.5d
+			y: 21.35d
 			icon: {
 				id: "nuclearcraft:fission_reactor_controller"
 				count: 1
@@ -1110,14 +1117,14 @@
 			size: 2.0d
 			shape: "gear"
 			dependencies: [
-				"2DB212CA2A66BF80"
-				"6E4780CE393BFDD3"
-				"720DBA3E6237920F"
-				"85B4DA49C85D1B2B"
+				"3DB212CA2A66BF80"
+				"7E4780CE393BFDD3"
+				"120DBA3E6237920F"
+				"25B4DA49C85D1B2B"
 			]
 			tasks: [
 				{
-					id: "EDB9C77E241EB239"
+					id: "1DB9C77E241EB239"
 					type: "item"
 					item: {
 						id: "nuclearcraft:depleted_fuel_uranium_leu_235"
@@ -1128,7 +1135,7 @@
 			]
 			rewards: [
 				{
-					id: "A0FD4E81A4EEBFA5"
+					id: "40FD4E81A4EEBFA5"
 					type: "item"
 					item: {
 						id: "nuclearcraft:fuel_uranium_leu_235"
@@ -1137,31 +1144,31 @@
 					count: 6
 				}
 				{
-					id: "93F4C644A90A9190"
+					id: "33F4C644A90A9190"
 					type: "loot"
-					table_id: "A1C2F3302F73AD62"
+					table_id: "41C2F3302F73AD62"
 				}
 				{
-					id: "69FCBA12311EF734"
+					id: "79FCBA12311EF734"
 					type: "xp_levels"
 					xp_levels: 20
 				}
 			]
 		}
 		{
-			id: "85BD64271101CF3B"
-			x: 17.5d
-			y: 10.5d
+			id: "25BD64271101CF3B"
+			x: 17.25d
+			y: 20.85d
 			icon: {
 				id: "nuclearcraft:fuel_reprocessor"
 				count: 1
 			}
 			dependencies: [
-				"82EE3CFB439CE226"
+				"22EE3CFB439CE226"
 			]
 			tasks: [
 				{
-					id: "9161C0891972FAA2"
+					id: "3161C0891972FAA2"
 					type: "item"
 					item: {
 						id: "nuclearcraft:fuel_reprocessor"
@@ -1170,7 +1177,7 @@
 					count: 1
 				}
 				{
-					id: "8936DFF582D3A4C6"
+					id: "2936DFF582D3A4C6"
 					type: "item"
 					item: {
 						id: "nuclearcraft:plutonium_239"
@@ -1181,7 +1188,7 @@
 			]
 			rewards: [
 				{
-					id: "FC9016F351789D95"
+					id: "2C9016F351789D95"
 					type: "item"
 					item: {
 						id: "nuclear_radiation:radaway"
@@ -1190,27 +1197,27 @@
 					count: 2
 				}
 				{
-					id: "43B6E57515A35493"
+					id: "53B6E57515A35493"
 					type: "xp_levels"
 					xp_levels: 10
 				}
 			]
 		}
 		{
-			id: "DD220B21FC4DA04A"
-			x: 17.5d
-			y: 12.5d
+			id: "7D220B21FC4DA04A"
+			x: 17.25d
+			y: 22.950000000000003d
 			icon: {
 				id: "nuclearcraft:fission_reactor_irradiation_chamber"
 				count: 1
 			}
 			optional: true
 			dependencies: [
-				"82EE3CFB439CE226"
+				"22EE3CFB439CE226"
 			]
 			tasks: [
 				{
-					id: "EF584F67710B078D"
+					id: "1F584F67710B078D"
 					type: "item"
 					item: {
 						id: "nuclearcraft:fission_reactor_irradiation_chamber"
@@ -1219,7 +1226,7 @@
 					count: 1
 				}
 				{
-					id: "EB19A7CB969CF81E"
+					id: "1B19A7CB969CF81E"
 					type: "item"
 					item: {
 						id: "nuclearcraft:irradiator"
@@ -1230,7 +1237,7 @@
 			]
 			rewards: [
 				{
-					id: "24355DD702247AF7"
+					id: "34355DD702247AF7"
 					type: "item"
 					item: {
 						id: "nuclearcraft:graphite_block"
@@ -1239,26 +1246,27 @@
 					count: 4
 				}
 				{
-					id: "B51E584E0F775E8D"
+					id: "551E584E0F775E8D"
 					type: "xp_levels"
 					xp_levels: 10
 				}
 			]
 		}
 		{
-			id: "114CE55749B67920"
+			id: "214CE55749B67920"
 			x: 0.0d
-			y: 17.0d
+			y: 32.449999999999996d
 			icon: {
 				id: "nuclear_radiation:geiger_counter"
 				count: 1
 			}
+			hide_dependency_lines: true
 			dependencies: [
-				"D6C7E94B78DE11C2"
+				"76C7E94B78DE11C2"
 			]
 			tasks: [
 				{
-					id: "CEBCAB58D5B8D1E4"
+					id: "6EBCAB58D5B8D1E4"
 					type: "item"
 					item: {
 						id: "nuclear_radiation:geiger_counter"
@@ -1267,7 +1275,7 @@
 					count: 1
 				}
 				{
-					id: "F8D40407ACE9C045"
+					id: "28D40407ACE9C045"
 					type: "item"
 					item: {
 						id: "nuclear_radiation:dosimeter"
@@ -1278,7 +1286,7 @@
 			]
 			rewards: [
 				{
-					id: "0E38D36DFB0442BB"
+					id: "1E38D36DFB0442BB"
 					type: "item"
 					item: {
 						id: "nuclear_radiation:iodine_pill"
@@ -1287,26 +1295,26 @@
 					count: 4
 				}
 				{
-					id: "20C2065B4824FCFC"
+					id: "30C2065B4824FCFC"
 					type: "xp_levels"
 					xp_levels: 5
 				}
 			]
 		}
 		{
-			id: "02D5E27A63081433"
-			x: 2.5d
-			y: 17.0d
+			id: "12D5E27A63081433"
+			x: 2.25d
+			y: 32.449999999999996d
 			icon: {
 				id: "nuclear_radiation:hazmat_helmet"
 				count: 1
 			}
 			dependencies: [
-				"114CE55749B67920"
+				"214CE55749B67920"
 			]
 			tasks: [
 				{
-					id: "AFB4F94D225CA81C"
+					id: "4FB4F94D225CA81C"
 					type: "item"
 					item: {
 						id: "nuclear_radiation:hazmat_helmet"
@@ -1315,7 +1323,7 @@
 					count: 1
 				}
 				{
-					id: "3572985C73F355E0"
+					id: "4572985C73F355E0"
 					type: "item"
 					item: {
 						id: "nuclear_radiation:hazmat_chestplate"
@@ -1324,7 +1332,7 @@
 					count: 1
 				}
 				{
-					id: "B12955DAB2266DF0"
+					id: "512955DAB2266DF0"
 					type: "item"
 					item: {
 						id: "nuclear_radiation:hazmat_leggings"
@@ -1333,7 +1341,7 @@
 					count: 1
 				}
 				{
-					id: "AED85A4EEB853E7C"
+					id: "4ED85A4EEB853E7C"
 					type: "item"
 					item: {
 						id: "nuclear_radiation:hazmat_boots"
@@ -1344,7 +1352,7 @@
 			]
 			rewards: [
 				{
-					id: "C64494EB0BAC1753"
+					id: "664494EB0BAC1753"
 					type: "item"
 					item: {
 						id: "nuclear_radiation:radaway"
@@ -1353,26 +1361,26 @@
 					count: 2
 				}
 				{
-					id: "60724F6FB13F20D8"
+					id: "70724F6FB13F20D8"
 					type: "xp_levels"
 					xp_levels: 10
 				}
 			]
 		}
 		{
-			id: "4E51D73471E48A4A"
-			x: 5.0d
-			y: 17.0d
+			id: "5E51D73471E48A4A"
+			x: 4.5d
+			y: 32.449999999999996d
 			icon: {
 				id: "nuclear_radiation:radaway"
 				count: 1
 			}
 			dependencies: [
-				"02D5E27A63081433"
+				"12D5E27A63081433"
 			]
 			tasks: [
 				{
-					id: "A47F5EF2F3B37A4E"
+					id: "447F5EF2F3B37A4E"
 					type: "item"
 					item: {
 						id: "nuclear_radiation:iodine_pill"
@@ -1381,7 +1389,7 @@
 					count: 4
 				}
 				{
-					id: "736BBB86820E17BB"
+					id: "136BBB86820E17BB"
 					type: "item"
 					item: {
 						id: "nuclear_radiation:radaway"
@@ -1392,7 +1400,7 @@
 			]
 			rewards: [
 				{
-					id: "BFA4D8C997CFCA6E"
+					id: "5FA4D8C997CFCA6E"
 					type: "item"
 					item: {
 						id: "nuclear_radiation:radaway"
@@ -1401,7 +1409,7 @@
 					count: 2
 				}
 				{
-					id: "58CB5301498AF837"
+					id: "68CB5301498AF837"
 					type: "item"
 					item: {
 						id: "nuclear_radiation:iodine_pill"
@@ -1410,29 +1418,30 @@
 					count: 4
 				}
 				{
-					id: "A4AC487150792F67"
+					id: "44AC487150792F67"
 					type: "xp_levels"
 					xp_levels: 10
 				}
 			]
 		}
 		{
-			id: "9C6D148714AB274A"
-			x: 8.0d
-			y: 17.0d
+			id: "3C6D148714AB274A"
+			x: 7.5d
+			y: 33.199999999999996d
 			icon: {
 				id: "nuclearcraft:fuel_uranium_heu_235"
 				count: 1
 			}
 			size: 2.5d
 			shape: "gear"
+			hide_dependency_lines: true
 			dependencies: [
-				"82EE3CFB439CE226"
-				"4E51D73471E48A4A"
+				"22EE3CFB439CE226"
+				"5E51D73471E48A4A"
 			]
 			tasks: [
 				{
-					id: "61A38F94DCBFFA4D"
+					id: "71A38F94DCBFFA4D"
 					type: "item"
 					item: {
 						id: "nuclearcraft:depleted_fuel_uranium_leu_235"
@@ -1441,7 +1450,7 @@
 					count: 12
 				}
 				{
-					id: "3284035C3024095C"
+					id: "4284035C3024095C"
 					type: "item"
 					item: {
 						id: "nuclearcraft:fission_reactor_solid_fuel_cell"
@@ -1452,12 +1461,12 @@
 			]
 			rewards: [
 				{
-					id: "F971D6246AC14BA8"
+					id: "2971D6246AC14BA8"
 					type: "loot"
-					table_id: "B37D68E8A5AC1C1D"
+					table_id: "537D68E8A5AC1C1D"
 				}
 				{
-					id: "DB343C08FA4827A5"
+					id: "7B343C08FA4827A5"
 					type: "item"
 					item: {
 						id: "nuclearcraft:fuel_uranium_heu_235"
@@ -1466,7 +1475,7 @@
 					count: 3
 				}
 				{
-					id: "A5084F55A363A6F7"
+					id: "45084F55A363A6F7"
 					type: "xp_levels"
 					xp_levels: 25
 				}
@@ -1475,60 +1484,60 @@
 	]
 	images: [
 		{
-			id: "CC9F1C56154F8911"
+			id: "6C9F1C56154F8911"
 			image: "kronwerke:textures/quests/nuclearcraft/title.png"
-			x: 4.25d
-			y: -3.0d
+			x: 3.745d
+			y: 0.0d
 			width: 8.49d
 			height: 1.6d
 			rotation: 0.0d
 			order: 1
 		}
 		{
-			id: "63419DC6E43A5324"
+			id: "73419DC6E43A5324"
 			image: "kronwerke:textures/quests/nuclearcraft/stage.png"
-			x: 1.65d
-			y: -1.6d
+			x: 10.24d
+			y: 0.525d
 			width: 3.3d
 			height: 0.55d
 			rotation: 0.0d
 			order: 1
 		}
 		{
-			id: "9D6F9CB435E0A89F"
+			id: "3D6F9CB435E0A89F"
 			image: "kronwerke:textures/quests/nuclearcraft/machines.png"
-			x: 8.32d
-			y: -0.6d
+			x: 2.82d
+			y: 5.95d
 			width: 6.64d
 			height: 0.9d
 			rotation: 0.0d
 			order: 1
 		}
 		{
-			id: "EE7C51AB682DA1A6"
+			id: "1E7C51AB682DA1A6"
 			image: "kronwerke:textures/quests/nuclearcraft/parts.png"
-			x: 1.42d
-			y: 4.4d
+			x: 0.9199999999999999d
+			y: 14.700000000000001d
 			width: 2.84d
 			height: 0.9d
 			rotation: 0.0d
 			order: 1
 		}
 		{
-			id: "9E751C8D00535036"
+			id: "3E751C8D00535036"
 			image: "kronwerke:textures/quests/nuclearcraft/reactor.png"
-			x: 2.87d
-			y: 7.7d
+			x: 2.37d
+			y: 19.5d
 			width: 5.74d
 			height: 0.9d
 			rotation: 0.0d
 			order: 1
 		}
 		{
-			id: "091615CC649689DB"
+			id: "191615CC649689DB"
 			image: "kronwerke:textures/quests/nuclearcraft/radiation.png"
-			x: 1.78d
-			y: 15.2d
+			x: 1.285d
+			y: 31.099999999999998d
 			width: 3.57d
 			height: 0.9d
 			rotation: 0.0d

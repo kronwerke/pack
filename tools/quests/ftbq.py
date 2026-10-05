@@ -32,9 +32,15 @@ _banners = {}   # texture path -> (text, kind, colour)
 
 
 def qid(*parts):
-    """Stable 16 hex character id from a path of names."""
+    """Stable 16 hex character id from a path of names.
+
+    FTB Quests parses ids with Long.parseLong, so the value has to fit a signed
+    long: the first hex digit is kept in 1..7. An id outside that range is
+    silently replaced with a random one on load, which breaks every lang key
+    and dependency that points at it."""
     h = hashlib.sha1("/".join(parts).encode()).hexdigest()
-    return h[:16].upper()
+    first = "1234567"[int(h[0], 16) % 7]
+    return (first + h[1:16]).upper()
 
 
 # ---- building blocks ------------------------------------------------------
@@ -190,6 +196,8 @@ def _float(v):
 
 def _build_chapter(ch, order_index, lang):
     """The chapter file, and its text into lang (key -> value)."""
+    import layout
+    layout.layout(ch, lambda tex: _banners.get(tex, ("", "section", ""))[1])
     cid = qid("chapter", ch["name"])
     quests_out = []
     for q in ch["quests"]:
@@ -213,6 +221,8 @@ def _build_chapter(ch, order_index, lang):
             qd["optional"] = True
         if q["hide"]:
             qd["hide"] = True
+        if q.get("hide_lines"):
+            qd["hide_dependency_lines"] = True
         if q["min_width"]:
             qd["min_width"] = int(q["min_width"])
         if q["deps"]:

@@ -1,19 +1,19 @@
 {
-	id: "E3FF87CF7CB17F5B"
+	id: "13FF87CF7CB17F5B"
 	filename: "eternal_starlight"
 	icon: {
 		id: "eternal_starlight:orb_of_prophecy"
 		count: 1
 	}
-	group: "D1C7157F1269A7DC"
+	group: "71C7157F1269A7DC"
 	order_index: 33
 	default_quest_shape: "circle"
 	default_hide_dependency_lines: false
 	quests: [
 		{
-			id: "F2FA0CD5D7FD2963"
-			x: 0.0d
-			y: 0.0d
+			id: "22FA0CD5D7FD2963"
+			x: 0.5d
+			y: 2.575d
 			icon: {
 				id: "eternal_starlight:orb_of_prophecy"
 				count: 1
@@ -22,7 +22,7 @@
 			shape: "hexagon"
 			tasks: [
 				{
-					id: "2ABBB5508F3F9164"
+					id: "3ABBB5508F3F9164"
 					type: "item"
 					item: {
 						id: "eternal_starlight:orb_of_prophecy"
@@ -33,40 +33,41 @@
 			]
 			rewards: [
 				{
-					id: "D5CD7768B0A6277E"
+					id: "75CD7768B0A6277E"
 					type: "loot"
-					table_id: "F05AFC22088A36B6"
+					table_id: "205AFC22088A36B6"
 				}
 				{
-					id: "43A1ABC01A4594BF"
+					id: "53A1ABC01A4594BF"
 					type: "xp_levels"
 					xp_levels: 10
 				}
 			]
 		}
 		{
-			id: "D74DEEABA69B5920"
-			x: 2.5d
-			y: 0.0d
+			id: "774DEEABA69B5920"
+			x: 0.375d
+			y: 23.650000000000002d
 			icon: {
 				id: "eternal_starlight:chiseled_voidstone"
 				count: 1
 			}
 			size: 1.75d
 			shape: "hexagon"
+			hide_dependency_lines: true
 			dependencies: [
-				"F2FA0CD5D7FD2963"
+				"22FA0CD5D7FD2963"
 			]
 			tasks: [
 				{
-					id: "2B712DD4493E4207"
+					id: "3B712DD4493E4207"
 					type: "dimension"
 					dimension: "eternal_starlight:starlight"
 				}
 			]
 			rewards: [
 				{
-					id: "B127DE1FEE25CE83"
+					id: "5127DE1FEE25CE83"
 					type: "item"
 					item: {
 						id: "minecraft:torch"
@@ -75,7 +76,7 @@
 					count: 64
 				}
 				{
-					id: "92C05930C509CEC6"
+					id: "32C05930C509CEC6"
 					type: "item"
 					item: {
 						id: "minecraft:cooked_beef"
@@ -84,26 +85,27 @@
 					count: 16
 				}
 				{
-					id: "4C56EA04CAA767BC"
+					id: "5C56EA04CAA767BC"
 					type: "xp_levels"
 					xp_levels: 10
 				}
 			]
 		}
 		{
-			id: "D76B28B4DB8899BD"
-			x: 2.5d
-			y: 2.4d
+			id: "776B28B4DB8899BD"
+			x: 7.25d
+			y: 39.55d
 			icon: {
 				id: "eternal_starlight:seeking_eye"
 				count: 1
 			}
+			hide_dependency_lines: true
 			dependencies: [
-				"D74DEEABA69B5920"
+				"774DEEABA69B5920"
 			]
 			tasks: [
 				{
-					id: "8AE118F66343F113"
+					id: "2AE118F66343F113"
 					type: "item"
 					item: {
 						id: "eternal_starlight:seeking_eye"
@@ -114,7 +116,7 @@
 			]
 			rewards: [
 				{
-					id: "87236673D2C63E63"
+					id: "27236673D2C63E63"
 					type: "item"
 					item: {
 						id: "minecraft:ender_pearl"
@@ -123,26 +125,27 @@
 					count: 4
 				}
 				{
-					id: "46704B451B6AC9F6"
+					id: "56704B451B6AC9F6"
 					type: "xp_levels"
 					xp_levels: 5
 				}
 			]
 		}
 		{
-			id: "675C3E702F10EB4F"
-			x: 5.0d
-			y: -6.0d
+			id: "775C3E702F10EB4F"
+			x: 0.0d
+			y: 7.375000000000001d
 			icon: {
 				id: "eternal_starlight:lunar_log"
 				count: 1
 			}
+			hide_dependency_lines: true
 			dependencies: [
-				"D74DEEABA69B5920"
+				"774DEEABA69B5920"
 			]
 			tasks: [
 				{
-					id: "8E1BDD958F1785AA"
+					id: "2E1BDD958F1785AA"
 					type: "item"
 					item: {
 						id: "eternal_starlight:lunar_log"
@@ -153,7 +156,7 @@
 			]
 			rewards: [
 				{
-					id: "448C73B358FB7652"
+					id: "548C73B358FB7652"
 					type: "item"
 					item: {
 						id: "minecraft:bone_meal"
@@ -162,32 +165,32 @@
 					count: 16
 				}
 				{
-					id: "D3E5A1B330437625"
+					id: "73E5A1B330437625"
 					type: "xp_levels"
 					xp_levels: 5
 				}
 			]
 		}
 		{
-			id: "C465AA2E36E8285F"
-			x: 7.5d
-			y: -6.0d
+			id: "6465AA2E36E8285F"
+			x: 2.25d
+			y: 7.375000000000001d
 			icon: {
 				id: "eternal_starlight:starfire"
 				count: 1
 			}
 			dependencies: [
-				"675C3E702F10EB4F"
+				"775C3E702F10EB4F"
 			]
 			tasks: [
 				{
-					id: "4E1CCC33C7C803B7"
+					id: "5E1CCC33C7C803B7"
 					type: "advancement"
 					advancement: "eternal_starlight:put_seeds_into_starfire_bird_nest"
 					criterion: ""
 				}
 				{
-					id: "652E9A1788D440F5"
+					id: "752E9A1788D440F5"
 					type: "item"
 					item: {
 						id: "eternal_starlight:starfire"
@@ -198,7 +201,7 @@
 			]
 			rewards: [
 				{
-					id: "40532EDA16BA4944"
+					id: "50532EDA16BA4944"
 					type: "item"
 					item: {
 						id: "minecraft:wheat_seeds"
@@ -207,26 +210,26 @@
 					count: 32
 				}
 				{
-					id: "8AD381C3C5476D76"
+					id: "2AD381C3C5476D76"
 					type: "xp_levels"
 					xp_levels: 8
 				}
 			]
 		}
 		{
-			id: "5BEC1B344E31ADB5"
-			x: 10.0d
-			y: -6.0d
+			id: "6BEC1B344E31ADB5"
+			x: 2.25d
+			y: 8.975000000000001d
 			icon: {
 				id: "eternal_starlight:raw_amaramber"
 				count: 1
 			}
 			dependencies: [
-				"675C3E702F10EB4F"
+				"775C3E702F10EB4F"
 			]
 			tasks: [
 				{
-					id: "DC173479D6F03E21"
+					id: "7C173479D6F03E21"
 					type: "item"
 					item: {
 						id: "eternal_starlight:raw_amaramber"
@@ -237,7 +240,7 @@
 			]
 			rewards: [
 				{
-					id: "BB7FA8A9475E3888"
+					id: "5B7FA8A9475E3888"
 					type: "item"
 					item: {
 						id: "minecraft:string"
@@ -246,26 +249,26 @@
 					count: 8
 				}
 				{
-					id: "3F13A3F55A75C342"
+					id: "4F13A3F55A75C342"
 					type: "xp_levels"
 					xp_levels: 8
 				}
 			]
 		}
 		{
-			id: "FF319ACAAAD4952D"
-			x: 12.5d
-			y: -6.0d
+			id: "2F319ACAAAD4952D"
+			x: 4.5d
+			y: 7.375000000000001d
 			icon: {
 				id: "eternal_starlight:amaramber_candle"
 				count: 1
 			}
 			dependencies: [
-				"5BEC1B344E31ADB5"
+				"6BEC1B344E31ADB5"
 			]
 			tasks: [
 				{
-					id: "032EBD42CA42E72E"
+					id: "132EBD42CA42E72E"
 					type: "item"
 					item: {
 						id: "eternal_starlight:amaramber_candle"
@@ -276,7 +279,7 @@
 			]
 			rewards: [
 				{
-					id: "FD6A6A44FEEF6376"
+					id: "2D6A6A44FEEF6376"
 					type: "item"
 					item: {
 						id: "eternal_starlight:raw_amaramber"
@@ -285,26 +288,27 @@
 					count: 4
 				}
 				{
-					id: "DAE919AE41C49262"
+					id: "7AE919AE41C49262"
 					type: "xp_levels"
 					xp_levels: 8
 				}
 			]
 		}
 		{
-			id: "C3E9606ACC59DBDA"
-			x: 5.0d
-			y: -4.0d
+			id: "63E9606ACC59DBDA"
+			x: 0.0d
+			y: 10.575000000000001d
 			icon: {
 				id: "eternal_starlight:blue_starlight_crystal_shard"
 				count: 1
 			}
+			hide_dependency_lines: true
 			dependencies: [
-				"D74DEEABA69B5920"
+				"774DEEABA69B5920"
 			]
 			tasks: [
 				{
-					id: "92E7C73F384CE0C0"
+					id: "32E7C73F384CE0C0"
 					type: "item"
 					item: {
 						id: "eternal_starlight:blue_starlight_crystal_shard"
@@ -315,7 +319,7 @@
 			]
 			rewards: [
 				{
-					id: "F40264328CB2FCDC"
+					id: "240264328CB2FCDC"
 					type: "item"
 					item: {
 						id: "minecraft:glass"
@@ -324,26 +328,26 @@
 					count: 16
 				}
 				{
-					id: "994F417834D819A3"
+					id: "394F417834D819A3"
 					type: "xp_levels"
 					xp_levels: 8
 				}
 			]
 		}
 		{
-			id: "CCAD20CEB435895A"
-			x: 7.5d
-			y: -4.0d
+			id: "6CAD20CEB435895A"
+			x: 2.25d
+			y: 10.575000000000001d
 			icon: {
 				id: "eternal_starlight:dagger_of_hunger"
 				count: 1
 			}
 			dependencies: [
-				"C3E9606ACC59DBDA"
+				"63E9606ACC59DBDA"
 			]
 			tasks: [
 				{
-					id: "EB151253AB3B1687"
+					id: "1B151253AB3B1687"
 					type: "item"
 					item: {
 						id: "eternal_starlight:dagger_of_hunger"
@@ -354,7 +358,7 @@
 			]
 			rewards: [
 				{
-					id: "D08209C8F43D1CF1"
+					id: "708209C8F43D1CF1"
 					type: "item"
 					item: {
 						id: "eternal_starlight:tooth_of_hunger"
@@ -363,26 +367,26 @@
 					count: 2
 				}
 				{
-					id: "B273C8EFFE8A09F3"
+					id: "5273C8EFFE8A09F3"
 					type: "xp_levels"
 					xp_levels: 10
 				}
 			]
 		}
 		{
-			id: "BB5277928B3141A4"
-			x: 5.0d
-			y: -2.0d
+			id: "5B5277928B3141A4"
+			x: 3.0d
+			y: 23.275000000000002d
 			icon: {
 				id: "eternal_starlight:malarite"
 				count: 1
 			}
 			dependencies: [
-				"D74DEEABA69B5920"
+				"774DEEABA69B5920"
 			]
 			tasks: [
 				{
-					id: "5D91038E7B799AAE"
+					id: "6D91038E7B799AAE"
 					type: "item"
 					item: {
 						id: "eternal_starlight:malarite"
@@ -393,27 +397,27 @@
 			]
 			rewards: [
 				{
-					id: "684B85686C4C3E01"
+					id: "784B85686C4C3E01"
 					type: "xp_levels"
 					xp_levels: 10
 				}
 			]
 		}
 		{
-			id: "3F86631B97461E25"
-			x: 7.5d
-			y: -2.0d
+			id: "4F86631B97461E25"
+			x: 5.25d
+			y: 23.275000000000002d
 			icon: {
 				id: "eternal_starlight:pungency_stew"
 				count: 1
 			}
 			optional: true
 			dependencies: [
-				"BB5277928B3141A4"
+				"5B5277928B3141A4"
 			]
 			tasks: [
 				{
-					id: "05272547454BC9DB"
+					id: "15272547454BC9DB"
 					type: "advancement"
 					advancement: "eternal_starlight:hire_stranghoul"
 					criterion: ""
@@ -421,7 +425,7 @@
 			]
 			rewards: [
 				{
-					id: "99C6C60CD4C8C818"
+					id: "39C6C60CD4C8C818"
 					type: "item"
 					item: {
 						id: "eternal_starlight:malarite"
@@ -430,26 +434,26 @@
 					count: 4
 				}
 				{
-					id: "6BE0E854133E9EA6"
+					id: "7BE0E854133E9EA6"
 					type: "xp_levels"
 					xp_levels: 8
 				}
 			]
 		}
 		{
-			id: "ECB4D625B817C55B"
-			x: 10.0d
-			y: -2.0d
+			id: "1CB4D625B817C55B"
+			x: 3.0d
+			y: 25.250000000000004d
 			icon: {
 				id: "eternal_starlight:glacite_shard"
 				count: 1
 			}
 			dependencies: [
-				"D74DEEABA69B5920"
+				"774DEEABA69B5920"
 			]
 			tasks: [
 				{
-					id: "B2E7B46794AC1295"
+					id: "52E7B46794AC1295"
 					type: "item"
 					item: {
 						id: "eternal_starlight:glacite_shard"
@@ -460,7 +464,7 @@
 			]
 			rewards: [
 				{
-					id: "1BA4F4934022BF20"
+					id: "2BA4F4934022BF20"
 					type: "item"
 					item: {
 						id: "minecraft:packed_ice"
@@ -469,27 +473,27 @@
 					count: 8
 				}
 				{
-					id: "2EF2295F21C78F77"
+					id: "3EF2295F21C78F77"
 					type: "xp_levels"
 					xp_levels: 10
 				}
 			]
 		}
 		{
-			id: "EB0FDB7860008B62"
-			x: 12.5d
-			y: -2.0d
+			id: "1B0FDB7860008B62"
+			x: 3.0d
+			y: 27.225d
 			icon: {
 				id: "eternal_starlight:aethersent_ingot"
 				count: 1
 			}
 			optional: true
 			dependencies: [
-				"D74DEEABA69B5920"
+				"774DEEABA69B5920"
 			]
 			tasks: [
 				{
-					id: "BB2F9B01061CC8C8"
+					id: "5B2F9B01061CC8C8"
 					type: "item"
 					item: {
 						id: "eternal_starlight:aethersent_ingot"
@@ -500,27 +504,28 @@
 			]
 			rewards: [
 				{
-					id: "77CF6F6435399EB5"
+					id: "17CF6F6435399EB5"
 					type: "xp_levels"
 					xp_levels: 10
 				}
 			]
 		}
 		{
-			id: "12B567B43404FD85"
-			x: 5.0d
-			y: 1.5d
+			id: "22B567B43404FD85"
+			x: 0.25d
+			y: 34.625d
 			icon: {
 				id: "eternal_starlight:deepsilver_ingot"
 				count: 1
 			}
 			size: 1.5d
+			hide_dependency_lines: true
 			dependencies: [
-				"D74DEEABA69B5920"
+				"774DEEABA69B5920"
 			]
 			tasks: [
 				{
-					id: "75303F81A8682B5F"
+					id: "15303F81A8682B5F"
 					type: "item"
 					item: {
 						id: "eternal_starlight:raw_deepsilver"
@@ -529,7 +534,7 @@
 					count: 16
 				}
 				{
-					id: "20599C99480EDD6B"
+					id: "30599C99480EDD6B"
 					type: "item"
 					item: {
 						id: "eternal_starlight:deepsilver_ingot"
@@ -540,31 +545,31 @@
 			]
 			rewards: [
 				{
-					id: "B3CFC182EDC4E089"
+					id: "53CFC182EDC4E089"
 					type: "loot"
-					table_id: "F05AFC22088A36B6"
+					table_id: "205AFC22088A36B6"
 				}
 				{
-					id: "CCE8E67F8BFCFD44"
+					id: "6CE8E67F8BFCFD44"
 					type: "xp_levels"
 					xp_levels: 8
 				}
 			]
 		}
 		{
-			id: "0FD04F305DDCBF59"
-			x: 7.5d
-			y: 1.5d
+			id: "1FD04F305DDCBF59"
+			x: 3.125d
+			y: 34.375d
 			icon: {
 				id: "eternal_starlight:starlit_diamond_pickaxe"
 				count: 1
 			}
 			dependencies: [
-				"12B567B43404FD85"
+				"22B567B43404FD85"
 			]
 			tasks: [
 				{
-					id: "FB595B140398A04D"
+					id: "2B595B140398A04D"
 					type: "item"
 					item: {
 						id: "eternal_starlight:starlit_diamond_pickaxe"
@@ -575,7 +580,7 @@
 			]
 			rewards: [
 				{
-					id: "DD26D62B34BF27D3"
+					id: "7D26D62B34BF27D3"
 					type: "item"
 					item: {
 						id: "eternal_starlight:starlit_diamond"
@@ -584,26 +589,26 @@
 					count: 2
 				}
 				{
-					id: "B435DF91E1C7ECC4"
+					id: "5435DF91E1C7ECC4"
 					type: "xp_levels"
 					xp_levels: 10
 				}
 			]
 		}
 		{
-			id: "5B7AB17A8FB04252"
-			x: 10.0d
-			y: 1.5d
+			id: "6B7AB17A8FB04252"
+			x: 5.75d
+			y: 34.375d
 			icon: {
 				id: "eternal_starlight:thermal_springstone_ingot"
 				count: 1
 			}
 			dependencies: [
-				"0FD04F305DDCBF59"
+				"1FD04F305DDCBF59"
 			]
 			tasks: [
 				{
-					id: "56E8F4773BE7DA32"
+					id: "66E8F4773BE7DA32"
 					type: "item"
 					item: {
 						id: "eternal_starlight:thermal_springstone_ingot"
@@ -614,28 +619,29 @@
 			]
 			rewards: [
 				{
-					id: "B9F40CE1CBE6AA23"
+					id: "59F40CE1CBE6AA23"
 					type: "xp_levels"
 					xp_levels: 10
 				}
 			]
 		}
 		{
-			id: "AD9B0790A54A7014"
-			x: 12.5d
-			y: 1.5d
+			id: "4D9B0790A54A7014"
+			x: 8.0d
+			y: 32.4d
 			icon: {
 				id: "eternal_starlight:starcore"
 				count: 1
 			}
+			hide_dependency_lines: true
 			dependencies: [
-				"5B7AB17A8FB04252"
-				"BB5277928B3141A4"
-				"ECB4D625B817C55B"
+				"6B7AB17A8FB04252"
+				"5B5277928B3141A4"
+				"1CB4D625B817C55B"
 			]
 			tasks: [
 				{
-					id: "46EEA4E4D156F0FF"
+					id: "56EEA4E4D156F0FF"
 					type: "item"
 					item: {
 						id: "eternal_starlight:raw_deepsilver"
@@ -644,7 +650,7 @@
 					count: 1
 				}
 				{
-					id: "78E577BAA143EFF0"
+					id: "18E577BAA143EFF0"
 					type: "item"
 					item: {
 						id: "eternal_starlight:starlit_diamond"
@@ -653,7 +659,7 @@
 					count: 1
 				}
 				{
-					id: "CCB52BCFC752020A"
+					id: "6CB52BCFC752020A"
 					type: "item"
 					item: {
 						id: "eternal_starlight:starcore"
@@ -662,7 +668,7 @@
 					count: 1
 				}
 				{
-					id: "6C661D29B90BF75F"
+					id: "7C661D29B90BF75F"
 					type: "item"
 					item: {
 						id: "eternal_starlight:saltpeter_powder"
@@ -671,7 +677,7 @@
 					count: 1
 				}
 				{
-					id: "49971F4C098FB5AA"
+					id: "59971F4C098FB5AA"
 					type: "item"
 					item: {
 						id: "eternal_starlight:malarite"
@@ -680,7 +686,7 @@
 					count: 1
 				}
 				{
-					id: "CA2D4790190D0295"
+					id: "6A2D4790190D0295"
 					type: "item"
 					item: {
 						id: "eternal_starlight:glacite"
@@ -689,7 +695,7 @@
 					count: 1
 				}
 				{
-					id: "5C90CB68E9AB053C"
+					id: "6C90CB68E9AB053C"
 					type: "item"
 					item: {
 						id: "eternal_starlight:thermal_springstone"
@@ -700,31 +706,32 @@
 			]
 			rewards: [
 				{
-					id: "85D3C6741E0AC8B8"
+					id: "25D3C6741E0AC8B8"
 					type: "loot"
-					table_id: "F05AFC22088A36B6"
+					table_id: "205AFC22088A36B6"
 				}
 				{
-					id: "B05C52A71B4362E3"
+					id: "505C52A71B4362E3"
 					type: "xp_levels"
 					xp_levels: 12
 				}
 			]
 		}
 		{
-			id: "0EA3C3DBE67D7E81"
-			x: 10.0d
-			y: 4.0d
+			id: "1EA3C3DBE67D7E81"
+			x: 0.0d
+			y: 39.55d
 			icon: {
 				id: "eternal_starlight:thermal_springstone_scythe"
 				count: 1
 			}
+			hide_dependency_lines: true
 			dependencies: [
-				"5B7AB17A8FB04252"
+				"6B7AB17A8FB04252"
 			]
 			tasks: [
 				{
-					id: "CF2A7D501995F350"
+					id: "6F2A7D501995F350"
 					type: "item"
 					item: {
 						id: "eternal_starlight:thermal_springstone_scythe"
@@ -735,7 +742,7 @@
 			]
 			rewards: [
 				{
-					id: "3B30AEEC1C00984C"
+					id: "4B30AEEC1C00984C"
 					type: "item"
 					item: {
 						id: "eternal_starlight:thermal_springstone_ingot"
@@ -744,27 +751,28 @@
 					count: 4
 				}
 				{
-					id: "236B2BE8C0E8FF3D"
+					id: "336B2BE8C0E8FF3D"
 					type: "xp_levels"
 					xp_levels: 10
 				}
 			]
 		}
 		{
-			id: "E27D84087F7EB2D6"
-			x: 7.5d
-			y: 4.0d
+			id: "127D84087F7EB2D6"
+			x: 2.25d
+			y: 39.55d
 			icon: {
 				id: "eternal_starlight:glacite_scythe"
 				count: 1
 			}
+			hide_dependency_lines: true
 			dependencies: [
-				"ECB4D625B817C55B"
-				"0EA3C3DBE67D7E81"
+				"1CB4D625B817C55B"
+				"1EA3C3DBE67D7E81"
 			]
 			tasks: [
 				{
-					id: "5FF04DEA1D1C0486"
+					id: "6FF04DEA1D1C0486"
 					type: "item"
 					item: {
 						id: "eternal_starlight:glacite_scythe"
@@ -775,7 +783,7 @@
 			]
 			rewards: [
 				{
-					id: "EAD744E43B3A567C"
+					id: "1AD744E43B3A567C"
 					type: "item"
 					item: {
 						id: "eternal_starlight:glacite_shard"
@@ -784,28 +792,29 @@
 					count: 4
 				}
 				{
-					id: "B96AA50E970D508B"
+					id: "596AA50E970D508B"
 					type: "xp_levels"
 					xp_levels: 10
 				}
 			]
 		}
 		{
-			id: "A712B9DC80714F1F"
-			x: 12.5d
-			y: 4.0d
+			id: "4712B9DC80714F1F"
+			x: 2.25d
+			y: 41.15d
 			icon: {
 				id: "eternal_starlight:starfire_scythe"
 				count: 1
 			}
+			hide_dependency_lines: true
 			dependencies: [
-				"0EA3C3DBE67D7E81"
-				"C465AA2E36E8285F"
-				"C27DFF4E5C474F59"
+				"1EA3C3DBE67D7E81"
+				"6465AA2E36E8285F"
+				"627DFF4E5C474F59"
 			]
 			tasks: [
 				{
-					id: "F25641F02D17E821"
+					id: "225641F02D17E821"
 					type: "item"
 					item: {
 						id: "eternal_starlight:starfire_scythe"
@@ -816,7 +825,7 @@
 			]
 			rewards: [
 				{
-					id: "9DB95ED654E2F31F"
+					id: "3DB95ED654E2F31F"
 					type: "item"
 					item: {
 						id: "eternal_starlight:starfire"
@@ -825,28 +834,29 @@
 					count: 4
 				}
 				{
-					id: "2B77B6B07E36F16B"
+					id: "3B77B6B07E36F16B"
 					type: "xp_levels"
 					xp_levels: 15
 				}
 			]
 		}
 		{
-			id: "7A53E760EB884BAC"
-			x: 5.0d
-			y: 4.0d
+			id: "1A53E760EB884BAC"
+			x: 4.5d
+			y: 39.55d
 			icon: {
 				id: "eternal_starlight:flowglaze_scythe"
 				count: 1
 			}
+			hide_dependency_lines: true
 			dependencies: [
-				"E27D84087F7EB2D6"
-				"C465AA2E36E8285F"
-				"C27DFF4E5C474F59"
+				"127D84087F7EB2D6"
+				"6465AA2E36E8285F"
+				"627DFF4E5C474F59"
 			]
 			tasks: [
 				{
-					id: "342D8801A97D67CE"
+					id: "442D8801A97D67CE"
 					type: "item"
 					item: {
 						id: "eternal_starlight:flowglaze_scythe"
@@ -857,7 +867,7 @@
 			]
 			rewards: [
 				{
-					id: "163C1A5BDB9B363A"
+					id: "263C1A5BDB9B363A"
 					type: "item"
 					item: {
 						id: "eternal_starlight:glacite_shard"
@@ -866,27 +876,27 @@
 					count: 8
 				}
 				{
-					id: "4C1C4A585D41E83C"
+					id: "5C1C4A585D41E83C"
 					type: "xp_levels"
 					xp_levels: 15
 				}
 			]
 		}
 		{
-			id: "10B338BCE21915E3"
-			x: 10.0d
-			y: 6.2d
+			id: "20B338BCE21915E3"
+			x: 2.25d
+			y: 42.75d
 			icon: {
 				id: "eternal_starlight:thermal_springstone_hammer"
 				count: 1
 			}
 			optional: true
 			dependencies: [
-				"0EA3C3DBE67D7E81"
+				"1EA3C3DBE67D7E81"
 			]
 			tasks: [
 				{
-					id: "20F4275F9065F03B"
+					id: "30F4275F9065F03B"
 					type: "item"
 					item: {
 						id: "eternal_starlight:thermal_springstone_hammer"
@@ -895,7 +905,7 @@
 					count: 1
 				}
 				{
-					id: "3C82349CB0895345"
+					id: "4C82349CB0895345"
 					type: "advancement"
 					advancement: "eternal_starlight:hammer_critical_hit"
 					criterion: ""
@@ -903,7 +913,7 @@
 			]
 			rewards: [
 				{
-					id: "FFA8377AFB4B94D4"
+					id: "2FA8377AFB4B94D4"
 					type: "item"
 					item: {
 						id: "eternal_starlight:thermal_springstone_ingot"
@@ -912,68 +922,69 @@
 					count: 4
 				}
 				{
-					id: "7E86D11C974BD074"
+					id: "1E86D11C974BD074"
 					type: "xp_levels"
 					xp_levels: 10
 				}
 			]
 		}
 		{
-			id: "F4DA5D11B4BFD78C"
-			x: 5.0d
-			y: 7.0d
+			id: "24DA5D11B4BFD78C"
+			x: 0.0d
+			y: 47.54999999999999d
 			icon: {
 				id: "eternal_starlight:nightfall_spider_eye"
 				count: 1
 			}
+			hide_dependency_lines: true
 			dependencies: [
-				"D76B28B4DB8899BD"
+				"776B28B4DB8899BD"
 			]
 			tasks: [
 				{
-					id: "2D7937D337068C6F"
+					id: "3D7937D337068C6F"
 					type: "kill"
 					entity: "eternal_starlight:nightfall_spider"
 					value: 1
 				}
 				{
-					id: "2EA238322E8FE911"
+					id: "3EA238322E8FE911"
 					type: "kill"
 					entity: "eternal_starlight:lonestar_skeleton"
 					value: 1
 				}
 				{
-					id: "C496B73E544D029F"
+					id: "6496B73E544D029F"
 					type: "kill"
 					entity: "eternal_starlight:seeker"
 					value: 1
 				}
 				{
-					id: "D816D06775743700"
+					id: "7816D06775743700"
 					type: "kill"
 					entity: "eternal_starlight:thirst_walker"
 					value: 1
 				}
 				{
-					id: "21B771E97D91CBF0"
+					id: "31B771E97D91CBF0"
 					type: "kill"
 					entity: "eternal_starlight:creteor"
 					value: 1
 				}
 				{
-					id: "D4CFB361906C237E"
+					id: "74CFB361906C237E"
 					type: "kill"
 					entity: "eternal_starlight:gleech"
 					value: 1
 				}
 				{
-					id: "B5458EC035C29C6C"
+					id: "55458EC035C29C6C"
 					type: "kill"
 					entity: "eternal_starlight:tangled"
 					value: 1
 				}
 				{
-					id: "887235E85C78F429"
+					id: "287235E85C78F429"
 					type: "kill"
 					entity: "eternal_starlight:freeze"
 					value: 1
@@ -981,31 +992,31 @@
 			]
 			rewards: [
 				{
-					id: "908FF55F8AD57E6D"
+					id: "308FF55F8AD57E6D"
 					type: "loot"
-					table_id: "F05AFC22088A36B6"
+					table_id: "205AFC22088A36B6"
 				}
 				{
-					id: "37960427F25E3567"
+					id: "47960427F25E3567"
 					type: "xp_levels"
 					xp_levels: 15
 				}
 			]
 		}
 		{
-			id: "C3FFA1520C119810"
-			x: 7.5d
-			y: 7.0d
+			id: "63FFA1520C119810"
+			x: 2.25d
+			y: 47.54999999999999d
 			icon: {
 				id: "eternal_starlight:aurora_deer_steak"
 				count: 1
 			}
 			dependencies: [
-				"F4DA5D11B4BFD78C"
+				"24DA5D11B4BFD78C"
 			]
 			tasks: [
 				{
-					id: "DEC750E56F8691B1"
+					id: "7EC750E56F8691B1"
 					type: "item"
 					item: {
 						id: "eternal_starlight:aurora_deer_steak"
@@ -1014,7 +1025,7 @@
 					count: 1
 				}
 				{
-					id: "95219AA8D30802E7"
+					id: "35219AA8D30802E7"
 					type: "item"
 					item: {
 						id: "eternal_starlight:white_yeti_fur"
@@ -1023,7 +1034,7 @@
 					count: 1
 				}
 				{
-					id: "2FC9CB186EF7AE25"
+					id: "3FC9CB186EF7AE25"
 					type: "item"
 					item: {
 						id: "eternal_starlight:ratlin_meat"
@@ -1032,7 +1043,7 @@
 					count: 1
 				}
 				{
-					id: "6AF4B7CA79A400B9"
+					id: "7AF4B7CA79A400B9"
 					type: "item"
 					item: {
 						id: "eternal_starlight:shadow_snail_shell"
@@ -1041,7 +1052,7 @@
 					count: 1
 				}
 				{
-					id: "07CB8300D85D9C8B"
+					id: "17CB8300D85D9C8B"
 					type: "item"
 					item: {
 						id: "eternal_starlight:lunar_berries"
@@ -1050,7 +1061,7 @@
 					count: 1
 				}
 				{
-					id: "D096BEDFB98FB22D"
+					id: "7096BEDFB98FB22D"
 					type: "item"
 					item: {
 						id: "eternal_starlight:shivering_gel"
@@ -1059,7 +1070,7 @@
 					count: 1
 				}
 				{
-					id: "470221E6560046E4"
+					id: "570221E6560046E4"
 					type: "item"
 					item: {
 						id: "eternal_starlight:rookfish_air_sac"
@@ -1068,7 +1079,7 @@
 					count: 1
 				}
 				{
-					id: "FA68C5AF2312DA59"
+					id: "2A68C5AF2312DA59"
 					type: "item"
 					item: {
 						id: "eternal_starlight:luminofish"
@@ -1079,7 +1090,7 @@
 			]
 			rewards: [
 				{
-					id: "D9EB0B7E680B77A2"
+					id: "79EB0B7E680B77A2"
 					type: "item"
 					item: {
 						id: "minecraft:golden_carrot"
@@ -1088,34 +1099,35 @@
 					count: 16
 				}
 				{
-					id: "BC82A9A60DB0EA01"
+					id: "5C82A9A60DB0EA01"
 					type: "xp_levels"
 					xp_levels: 12
 				}
 			]
 		}
 		{
-			id: "C27DFF4E5C474F59"
-			x: 16.0d
-			y: -4.0d
+			id: "627DFF4E5C474F59"
+			x: 0.125d
+			y: 15.500000000000002d
 			icon: {
 				id: "eternal_starlight:frozen_tube"
 				count: 1
 			}
 			size: 1.25d
+			hide_dependency_lines: true
 			dependencies: [
-				"AD9B0790A54A7014"
-				"D76B28B4DB8899BD"
+				"4D9B0790A54A7014"
+				"776B28B4DB8899BD"
 			]
 			tasks: [
 				{
-					id: "0AC22FED88F37961"
+					id: "1AC22FED88F37961"
 					type: "advancement"
 					advancement: "eternal_starlight:enter_golem_forge"
 					criterion: ""
 				}
 				{
-					id: "1676234270FCC255"
+					id: "2676234270FCC255"
 					type: "item"
 					item: {
 						id: "eternal_starlight:frozen_tube"
@@ -1126,21 +1138,21 @@
 			]
 			rewards: [
 				{
-					id: "E96A7351263E2691"
+					id: "196A7351263E2691"
 					type: "loot"
-					table_id: "F05AFC22088A36B6"
+					table_id: "205AFC22088A36B6"
 				}
 				{
-					id: "E3B0190F254ADA06"
+					id: "13B0190F254ADA06"
 					type: "xp_levels"
 					xp_levels: 10
 				}
 			]
 		}
 		{
-			id: "FE971AFB2F8AEA99"
-			x: 18.5d
-			y: -4.0d
+			id: "2E971AFB2F8AEA99"
+			x: 2.875d
+			y: 15.750000000000002d
 			icon: {
 				id: "eternal_starlight:energy_sword"
 				count: 1
@@ -1148,11 +1160,11 @@
 			size: 1.75d
 			shape: "hexagon"
 			dependencies: [
-				"C27DFF4E5C474F59"
+				"627DFF4E5C474F59"
 			]
 			tasks: [
 				{
-					id: "A224E1A34E226FC2"
+					id: "4224E1A34E226FC2"
 					type: "kill"
 					entity: "eternal_starlight:starlight_golem"
 					value: 1
@@ -1160,31 +1172,31 @@
 			]
 			rewards: [
 				{
-					id: "B05064D625B4F617"
+					id: "505064D625B4F617"
 					type: "loot"
-					table_id: "A1C2F3302F73AD62"
+					table_id: "41C2F3302F73AD62"
 				}
 				{
-					id: "C44034BB5A24F99D"
+					id: "644034BB5A24F99D"
 					type: "xp_levels"
 					xp_levels: 20
 				}
 			]
 		}
 		{
-			id: "C6C788F17E38778F"
-			x: 21.0d
-			y: -4.0d
+			id: "66C788F17E38778F"
+			x: 5.625d
+			y: 15.375000000000002d
 			icon: {
 				id: "eternal_starlight:golem_steel_ingot"
 				count: 1
 			}
 			dependencies: [
-				"FE971AFB2F8AEA99"
+				"2E971AFB2F8AEA99"
 			]
 			tasks: [
 				{
-					id: "BCE0892740F254B4"
+					id: "5CE0892740F254B4"
 					type: "item"
 					item: {
 						id: "eternal_starlight:golem_steel_ingot"
@@ -1195,7 +1207,7 @@
 			]
 			rewards: [
 				{
-					id: "4825D071EFEB414B"
+					id: "5825D071EFEB414B"
 					type: "item"
 					item: {
 						id: "eternal_starlight:deepsilver_ingot"
@@ -1204,27 +1216,27 @@
 					count: 8
 				}
 				{
-					id: "DF3FD3D965BFE19D"
+					id: "7F3FD3D965BFE19D"
 					type: "xp_levels"
 					xp_levels: 15
 				}
 			]
 		}
 		{
-			id: "0B9414D2647002C8"
-			x: 16.0d
-			y: -1.5d
+			id: "1B9414D2647002C8"
+			x: 5.625d
+			y: 17.85d
 			icon: {
 				id: "eternal_starlight:oxidized_golem_steel_nugget"
 				count: 1
 			}
 			size: 1.25d
 			dependencies: [
-				"FE971AFB2F8AEA99"
+				"2E971AFB2F8AEA99"
 			]
 			tasks: [
 				{
-					id: "9918F4F722D56EB3"
+					id: "3918F4F722D56EB3"
 					type: "kill"
 					entity: "eternal_starlight:freeze"
 					value: 5
@@ -1232,7 +1244,7 @@
 			]
 			rewards: [
 				{
-					id: "26FAEA1E476A9286"
+					id: "36FAEA1E476A9286"
 					type: "item"
 					item: {
 						id: "minecraft:cooked_beef"
@@ -1241,16 +1253,16 @@
 					count: 16
 				}
 				{
-					id: "A5F26C5677E00EEC"
+					id: "45F26C5677E00EEC"
 					type: "xp_levels"
 					xp_levels: 10
 				}
 			]
 		}
 		{
-			id: "AD185A026BB61908"
-			x: 18.5d
-			y: -1.5d
+			id: "4D185A026BB61908"
+			x: 8.375d
+			y: 15.750000000000002d
 			icon: {
 				id: "eternal_starlight:coldsnap"
 				count: 1
@@ -1258,11 +1270,11 @@
 			size: 1.75d
 			shape: "hexagon"
 			dependencies: [
-				"0B9414D2647002C8"
+				"1B9414D2647002C8"
 			]
 			tasks: [
 				{
-					id: "4A34B274CCC91BDF"
+					id: "5A34B274CCC91BDF"
 					type: "kill"
 					entity: "eternal_starlight:permafrost"
 					value: 1
@@ -1270,38 +1282,39 @@
 			]
 			rewards: [
 				{
-					id: "10E9802E17696DB6"
+					id: "20E9802E17696DB6"
 					type: "loot"
-					table_id: "A1C2F3302F73AD62"
+					table_id: "41C2F3302F73AD62"
 				}
 				{
-					id: "878CDF29E7330806"
+					id: "278CDF29E7330806"
 					type: "xp_levels"
 					xp_levels: 20
 				}
 			]
 		}
 		{
-			id: "3B32735919C952AE"
-			x: 16.0d
-			y: 1.0d
+			id: "4B32735919C952AE"
+			x: 0.25d
+			y: 32.525d
 			icon: {
 				id: "eternal_starlight:tangled_skull"
 				count: 1
 			}
 			size: 1.25d
+			hide_dependency_lines: true
 			dependencies: [
-				"AD185A026BB61908"
+				"4D185A026BB61908"
 			]
 			tasks: [
 				{
-					id: "55F96AE36DCDEA91"
+					id: "65F96AE36DCDEA91"
 					type: "kill"
 					entity: "eternal_starlight:tangled"
 					value: 10
 				}
 				{
-					id: "7F4C39ECAD829558"
+					id: "1F4C39ECAD829558"
 					type: "item"
 					item: {
 						id: "minecraft:flint_and_steel"
@@ -1312,7 +1325,7 @@
 			]
 			rewards: [
 				{
-					id: "8641E708ABE54B73"
+					id: "2641E708ABE54B73"
 					type: "item"
 					item: {
 						id: "eternal_starlight:soul_dew"
@@ -1321,16 +1334,16 @@
 					count: 2
 				}
 				{
-					id: "629542F4DC173CC0"
+					id: "729542F4DC173CC0"
 					type: "xp_levels"
 					xp_levels: 10
 				}
 			]
 		}
 		{
-			id: "3C4808B2A74297E8"
-			x: 18.5d
-			y: 1.0d
+			id: "4C4808B2A74297E8"
+			x: 3.125d
+			y: 32.775d
 			icon: {
 				id: "eternal_starlight:crescent_spear"
 				count: 1
@@ -1338,11 +1351,11 @@
 			size: 1.75d
 			shape: "hexagon"
 			dependencies: [
-				"3B32735919C952AE"
+				"4B32735919C952AE"
 			]
 			tasks: [
 				{
-					id: "1E73A1342934F583"
+					id: "2E73A1342934F583"
 					type: "kill"
 					entity: "eternal_starlight:lunar_monstrosity"
 					value: 1
@@ -1350,31 +1363,31 @@
 			]
 			rewards: [
 				{
-					id: "1B533B1D46967EE4"
+					id: "2B533B1D46967EE4"
 					type: "loot"
-					table_id: "A1C2F3302F73AD62"
+					table_id: "41C2F3302F73AD62"
 				}
 				{
-					id: "512B3A00F26B21A5"
+					id: "612B3A00F26B21A5"
 					type: "xp_levels"
 					xp_levels: 20
 				}
 			]
 		}
 		{
-			id: "3C911CA3C95AB42A"
-			x: 21.0d
-			y: 1.0d
+			id: "4C911CA3C95AB42A"
+			x: 5.75d
+			y: 32.4d
 			icon: {
 				id: "eternal_starlight:petal_scythe"
 				count: 1
 			}
 			dependencies: [
-				"3C4808B2A74297E8"
+				"4C4808B2A74297E8"
 			]
 			tasks: [
 				{
-					id: "481B2F149DA5C2B5"
+					id: "581B2F149DA5C2B5"
 					type: "item"
 					item: {
 						id: "eternal_starlight:petal_scythe"
@@ -1385,7 +1398,7 @@
 			]
 			rewards: [
 				{
-					id: "99C0944127FC042B"
+					id: "39C0944127FC042B"
 					type: "item"
 					item: {
 						id: "eternal_starlight:soul_dew"
@@ -1394,16 +1407,16 @@
 					count: 2
 				}
 				{
-					id: "49DEECA53E0CDCD8"
+					id: "59DEECA53E0CDCD8"
 					type: "xp_levels"
 					xp_levels: 15
 				}
 			]
 		}
 		{
-			id: "37700BF8F6EE2234"
-			x: 23.5d
-			y: -1.5d
+			id: "47700BF8F6EE2234"
+			x: 11.75d
+			y: 16.125d
 			icon: {
 				id: "eternal_starlight:orb_of_prophecy"
 				count: 1
@@ -1411,13 +1424,13 @@
 			size: 2.5d
 			shape: "gear"
 			dependencies: [
-				"C6C788F17E38778F"
-				"AD185A026BB61908"
-				"3C4808B2A74297E8"
+				"66C788F17E38778F"
+				"4D185A026BB61908"
+				"4C4808B2A74297E8"
 			]
 			tasks: [
 				{
-					id: "4A81B37DB37C5218"
+					id: "5A81B37DB37C5218"
 					type: "item"
 					item: {
 						id: "eternal_starlight:golem_steel_ingot"
@@ -1426,7 +1439,7 @@
 					count: 8
 				}
 				{
-					id: "83F79902E32B1F1B"
+					id: "23F79902E32B1F1B"
 					type: "item"
 					item: {
 						id: "eternal_starlight:deepsilver_ingot"
@@ -1437,12 +1450,12 @@
 			]
 			rewards: [
 				{
-					id: "A8BFA308C96B2356"
+					id: "48BFA308C96B2356"
 					type: "loot"
-					table_id: "B37D68E8A5AC1C1D"
+					table_id: "537D68E8A5AC1C1D"
 				}
 				{
-					id: "573AD7C66962DBFD"
+					id: "673AD7C66962DBFD"
 					type: "xp_levels"
 					xp_levels: 25
 				}
@@ -1451,71 +1464,71 @@
 	]
 	images: [
 		{
-			id: "F9860DD9FE102D83"
+			id: "29860DD9FE102D83"
 			image: "kronwerke:textures/quests/eternal_starlight/title.png"
-			x: 12.0d
-			y: -9.0d
+			x: 5.455d
+			y: 0.0d
 			width: 11.91d
 			height: 1.75d
 			rotation: 0.0d
 			order: 1
 		}
 		{
-			id: "E831D71CCF92B8B9"
-			image: "kronwerke:textures/quests/eternal_starlight/entry.png"
-			x: 1.25d
-			y: -1.6d
-			width: 4.94d
-			height: 0.9d
-			rotation: 0.0d
-			order: 1
-		}
-		{
-			id: "779C1C00416B77A2"
+			id: "1831D71CCF92B8B9"
 			image: "kronwerke:textures/quests/eternal_starlight/biomes.png"
-			x: 8.75d
-			y: -7.4d
+			x: 1.07d
+			y: 6.025000000000001d
 			width: 3.14d
 			height: 0.9d
 			rotation: 0.0d
 			order: 1
 		}
 		{
-			id: "1E4690DE0BBBB6A0"
+			id: "179C1C00416B77A2"
+			image: "kronwerke:textures/quests/eternal_starlight/bosses.png"
+			x: 0.5149999999999999d
+			y: 14.025d
+			width: 2.03d
+			height: 0.9d
+			rotation: 0.0d
+			order: 1
+		}
+		{
+			id: "2E4690DE0BBBB6A0"
+			image: "kronwerke:textures/quests/eternal_starlight/entry.png"
+			x: 1.9700000000000002d
+			y: 21.925d
+			width: 4.94d
+			height: 0.9d
+			rotation: 0.0d
+			order: 1
+		}
+		{
+			id: "6BF5922960070BB9"
 			image: "kronwerke:textures/quests/eternal_starlight/gear.png"
-			x: 8.75d
-			y: 0.3d
+			x: 0.29500000000000004d
+			y: 31.05d
 			width: 1.59d
 			height: 0.9d
 			rotation: 0.0d
 			order: 1
 		}
 		{
-			id: "CBF5922960070BB9"
+			id: "102737BBCF61CE62"
 			image: "kronwerke:textures/quests/eternal_starlight/scythes.png"
-			x: 8.75d
-			y: 2.9d
+			x: 0.73d
+			y: 38.2d
 			width: 2.46d
 			height: 0.9d
 			rotation: 0.0d
 			order: 1
 		}
 		{
-			id: "002737BBCF61CE62"
+			id: "37EA55306DC513BC"
 			image: "kronwerke:textures/quests/eternal_starlight/mobs.png"
-			x: 6.25d
-			y: 5.8d
+			x: 1.215d
+			y: 46.199999999999996d
 			width: 3.43d
-			height: 0.9d
-			rotation: 0.0d
-			order: 1
-		}
-		{
-			id: "27EA55306DC513BC"
-			image: "kronwerke:textures/quests/eternal_starlight/bosses.png"
-			x: 18.5d
-			y: -5.6d
-			width: 2.03d
 			height: 0.9d
 			rotation: 0.0d
 			order: 1

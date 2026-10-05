@@ -1,19 +1,19 @@
 {
-	id: "189FC4D37ABCF4FC"
+	id: "289FC4D37ABCF4FC"
 	filename: "draconic_chaos"
 	icon: {
 		id: "draconicevolution:awakened_draconium_block"
 		count: 1
 	}
-	group: "AEAA9718BAF5A32A"
+	group: "4EAA9718BAF5A32A"
 	order_index: 42
 	default_quest_shape: "square"
 	default_hide_dependency_lines: false
 	quests: [
 		{
-			id: "5324699F9751BF51"
-			x: 0.0d
-			y: 1.5d
+			id: "6324699F9751BF51"
+			x: 0.5d
+			y: 2.5d
 			icon: {
 				id: "botania:gaia_ingot"
 				count: 1
@@ -22,7 +22,7 @@
 			shape: "hexagon"
 			tasks: [
 				{
-					id: "45AFAE55BDDC51AF"
+					id: "55AFAE55BDDC51AF"
 					type: "item"
 					item: {
 						id: "botania:gaia_ingot"
@@ -33,7 +33,7 @@
 			]
 			rewards: [
 				{
-					id: "184A713DEBBC0311"
+					id: "284A713DEBBC0311"
 					type: "item"
 					item: {
 						id: "draconicevolution:draconium_ingot"
@@ -42,27 +42,28 @@
 					count: 16
 				}
 				{
-					id: "1323AEEAE68035BF"
+					id: "2323AEEAE68035BF"
 					type: "loot"
-					table_id: "688F492DF36E9682"
+					table_id: "788F492DF36E9682"
 				}
 				{
-					id: "D0BA69E6F2BCF9AC"
+					id: "70BA69E6F2BCF9AC"
 					type: "xp_levels"
 					xp_levels: 10
 				}
 			]
 		}
 		{
-			id: "E5E3804A31A1BA56"
-			x: 2.5d
-			y: 0.0d
+			id: "15E3804A31A1BA56"
+			x: 0.0d
+			y: 7.3d
+			hide_dependency_lines: true
 			dependencies: [
-				"5324699F9751BF51"
+				"6324699F9751BF51"
 			]
 			tasks: [
 				{
-					id: "17380A35A789E5FD"
+					id: "27380A35A789E5FD"
 					type: "item"
 					item: {
 						id: "draconicevolution:dragon_heart"
@@ -73,7 +74,7 @@
 			]
 			rewards: [
 				{
-					id: "DE7091BBFF958D5D"
+					id: "7E7091BBFF958D5D"
 					type: "item"
 					item: {
 						id: "minecraft:end_crystal"
@@ -82,26 +83,27 @@
 					count: 4
 				}
 				{
-					id: "C40BF753BC9DC776"
+					id: "640BF753BC9DC776"
 					type: "xp_levels"
 					xp_levels: 10
 				}
 			]
 		}
 		{
-			id: "6B4D78ECE0B99E9F"
-			x: 2.5d
-			y: 1.75d
+			id: "7B4D78ECE0B99E9F"
+			x: 0.0d
+			y: 9.65d
 			icon: {
 				id: "draconicevolution:draconium_core"
 				count: 1
 			}
+			hide_dependency_lines: true
 			dependencies: [
-				"5324699F9751BF51"
+				"6324699F9751BF51"
 			]
 			tasks: [
 				{
-					id: "40AF50B0EA9CB8DD"
+					id: "50AF50B0EA9CB8DD"
 					type: "item"
 					item: {
 						id: "draconicevolution:draconium_core"
@@ -112,7 +114,7 @@
 			]
 			rewards: [
 				{
-					id: "04441F3654F01049"
+					id: "14441F3654F01049"
 					type: "item"
 					item: {
 						id: "minecraft:gold_ingot"
@@ -123,19 +125,20 @@
 			]
 		}
 		{
-			id: "6DEE7B15D6C0B4D0"
-			x: 2.5d
-			y: 3.5d
+			id: "7DEE7B15D6C0B4D0"
+			x: 0.0d
+			y: 12.0d
 			icon: {
 				id: "draconicevolution:draconium_block"
 				count: 1
 			}
+			hide_dependency_lines: true
 			dependencies: [
-				"5324699F9751BF51"
+				"6324699F9751BF51"
 			]
 			tasks: [
 				{
-					id: "A4131CC1169B154F"
+					id: "44131CC1169B154F"
 					type: "item"
 					item: {
 						id: "draconicevolution:draconium_block"
@@ -146,7 +149,7 @@
 			]
 			rewards: [
 				{
-					id: "46A788AE0CDE48B9"
+					id: "56A788AE0CDE48B9"
 					type: "item"
 					item: {
 						id: "draconicevolution:draconium_ingot"
@@ -157,9 +160,9 @@
 			]
 		}
 		{
-			id: "192803D15DEC7A34"
-			x: 5.0d
-			y: 1.75d
+			id: "292803D15DEC7A34"
+			x: 2.75d
+			y: 7.8d
 			icon: {
 				id: "draconicevolution:awakened_draconium_block"
 				count: 1
@@ -167,13 +170,13 @@
 			size: 2.0d
 			shape: "gear"
 			dependencies: [
-				"E5E3804A31A1BA56"
-				"6B4D78ECE0B99E9F"
-				"6DEE7B15D6C0B4D0"
+				"15E3804A31A1BA56"
+				"7B4D78ECE0B99E9F"
+				"7DEE7B15D6C0B4D0"
 			]
 			tasks: [
 				{
-					id: "60177C2B1407B845"
+					id: "70177C2B1407B845"
 					type: "item"
 					item: {
 						id: "draconicevolution:awakened_draconium_block"
@@ -184,31 +187,31 @@
 			]
 			rewards: [
 				{
-					id: "E2CCE607CCE37D93"
+					id: "12CCE607CCE37D93"
 					type: "loot"
-					table_id: "688F492DF36E9682"
+					table_id: "788F492DF36E9682"
 				}
 				{
-					id: "271DDA18712550ED"
+					id: "371DDA18712550ED"
 					type: "xp_levels"
 					xp_levels: 20
 				}
 			]
 		}
 		{
-			id: "029B699332552A54"
-			x: 7.5d
-			y: 1.75d
+			id: "129B699332552A54"
+			x: 6.25d
+			y: 7.3d
 			icon: {
 				id: "draconicevolution:awakened_draconium_ingot"
 				count: 1
 			}
 			dependencies: [
-				"192803D15DEC7A34"
+				"292803D15DEC7A34"
 			]
 			tasks: [
 				{
-					id: "537574BE73A8B510"
+					id: "637574BE73A8B510"
 					type: "item"
 					item: {
 						id: "draconicevolution:awakened_draconium_ingot"
@@ -219,26 +222,26 @@
 			]
 			rewards: [
 				{
-					id: "7EB4615BC71E492F"
+					id: "1EB4615BC71E492F"
 					type: "xp_levels"
 					xp_levels: 10
 				}
 			]
 		}
 		{
-			id: "BC3B984CE25BA9B7"
-			x: 10.0d
-			y: 0.5d
+			id: "5C3B984CE25BA9B7"
+			x: 9.25d
+			y: 7.3d
 			icon: {
 				id: "draconicevolution:awakened_crafting_injector"
 				count: 1
 			}
 			dependencies: [
-				"029B699332552A54"
+				"129B699332552A54"
 			]
 			tasks: [
 				{
-					id: "7865C7D1D03CA970"
+					id: "1865C7D1D03CA970"
 					type: "item"
 					item: {
 						id: "draconicevolution:awakened_crafting_injector"
@@ -249,7 +252,7 @@
 			]
 			rewards: [
 				{
-					id: "8453F0DD15AF8F77"
+					id: "2453F0DD15AF8F77"
 					type: "item"
 					item: {
 						id: "minecraft:diamond"
@@ -258,26 +261,26 @@
 					count: 16
 				}
 				{
-					id: "934B340B6CFC5C25"
+					id: "334B340B6CFC5C25"
 					type: "xp_levels"
 					xp_levels: 10
 				}
 			]
 		}
 		{
-			id: "B456AEE1F1ED202A"
-			x: 10.0d
-			y: 3.0d
+			id: "5456AEE1F1ED202A"
+			x: 9.25d
+			y: 9.65d
 			icon: {
 				id: "draconicevolution:awakened_core"
 				count: 1
 			}
 			dependencies: [
-				"029B699332552A54"
+				"129B699332552A54"
 			]
 			tasks: [
 				{
-					id: "F25B38CB98DBE740"
+					id: "225B38CB98DBE740"
 					type: "item"
 					item: {
 						id: "draconicevolution:awakened_core"
@@ -288,7 +291,7 @@
 			]
 			rewards: [
 				{
-					id: "59BE7DF6A27C454F"
+					id: "69BE7DF6A27C454F"
 					type: "item"
 					item: {
 						id: "minecraft:nether_star"
@@ -297,26 +300,26 @@
 					count: 1
 				}
 				{
-					id: "1BF91DBB2A3058CF"
+					id: "2BF91DBB2A3058CF"
 					type: "xp_levels"
 					xp_levels: 10
 				}
 			]
 		}
 		{
-			id: "DB9CE2B18B64FD29"
-			x: 12.5d
-			y: 3.0d
+			id: "7B9CE2B18B64FD29"
+			x: 11.5d
+			y: 7.3d
 			icon: {
 				id: "draconicevolution:draconic_energy_core"
 				count: 1
 			}
 			dependencies: [
-				"B456AEE1F1ED202A"
+				"5456AEE1F1ED202A"
 			]
 			tasks: [
 				{
-					id: "29F526C586EC8C5B"
+					id: "39F526C586EC8C5B"
 					type: "item"
 					item: {
 						id: "draconicevolution:draconic_energy_core"
@@ -327,7 +330,7 @@
 			]
 			rewards: [
 				{
-					id: "9EAA2832DA16533B"
+					id: "3EAA2832DA16533B"
 					type: "item"
 					item: {
 						id: "draconicevolution:wyvern_core"
@@ -336,16 +339,16 @@
 					count: 2
 				}
 				{
-					id: "D58CED2BFE24813D"
+					id: "758CED2BFE24813D"
 					type: "xp_levels"
 					xp_levels: 10
 				}
 			]
 		}
 		{
-			id: "D61038536A3F396F"
-			x: 12.5d
-			y: 6.0d
+			id: "761038536A3F396F"
+			x: 14.0d
+			y: 7.55d
 			icon: {
 				id: "draconicevolution:draconic_pickaxe"
 				count: 1
@@ -353,12 +356,12 @@
 			size: 1.5d
 			shape: "gear"
 			dependencies: [
-				"DB9CE2B18B64FD29"
-				"BC3B984CE25BA9B7"
+				"7B9CE2B18B64FD29"
+				"5C3B984CE25BA9B7"
 			]
 			tasks: [
 				{
-					id: "C68057C91E751D22"
+					id: "668057C91E751D22"
 					type: "item"
 					item: {
 						id: "draconicevolution:draconic_pickaxe"
@@ -369,7 +372,7 @@
 			]
 			rewards: [
 				{
-					id: "0EE122F4F441C443"
+					id: "1EE122F4F441C443"
 					type: "item"
 					item: {
 						id: "minecraft:netherite_ingot"
@@ -378,31 +381,31 @@
 					count: 2
 				}
 				{
-					id: "498D7C2458E435F9"
+					id: "598D7C2458E435F9"
 					type: "loot"
-					table_id: "688F492DF36E9682"
+					table_id: "788F492DF36E9682"
 				}
 				{
-					id: "BB81EB2CF36A6FAC"
+					id: "5B81EB2CF36A6FAC"
 					type: "xp_levels"
 					xp_levels: 15
 				}
 			]
 		}
 		{
-			id: "2AEDADF7F021D005"
-			x: 15.0d
-			y: 5.0d
+			id: "3AEDADF7F021D005"
+			x: 16.5d
+			y: 7.3d
 			icon: {
 				id: "draconicevolution:draconic_bow"
 				count: 1
 			}
 			dependencies: [
-				"D61038536A3F396F"
+				"761038536A3F396F"
 			]
 			tasks: [
 				{
-					id: "82C28B20E274DB07"
+					id: "22C28B20E274DB07"
 					type: "item"
 					item: {
 						id: "draconicevolution:draconic_bow"
@@ -413,7 +416,7 @@
 			]
 			rewards: [
 				{
-					id: "883A0F2EB7C741DD"
+					id: "283A0F2EB7C741DD"
 					type: "item"
 					item: {
 						id: "minecraft:dragon_breath"
@@ -422,26 +425,26 @@
 					count: 8
 				}
 				{
-					id: "A55BECE4241F72C7"
+					id: "455BECE4241F72C7"
 					type: "xp_levels"
 					xp_levels: 10
 				}
 			]
 		}
 		{
-			id: "1DEBCBC68071A08E"
-			x: 15.0d
-			y: 7.0d
+			id: "2DEBCBC68071A08E"
+			x: 16.5d
+			y: 9.65d
 			icon: {
 				id: "draconicevolution:draconic_chestpiece"
 				count: 1
 			}
 			dependencies: [
-				"D61038536A3F396F"
+				"761038536A3F396F"
 			]
 			tasks: [
 				{
-					id: "160E6646C97A2879"
+					id: "260E6646C97A2879"
 					type: "item"
 					item: {
 						id: "draconicevolution:draconic_chestpiece"
@@ -452,7 +455,7 @@
 			]
 			rewards: [
 				{
-					id: "D3DAFD51DCE1FAF2"
+					id: "73DAFD51DCE1FAF2"
 					type: "item"
 					item: {
 						id: "minecraft:netherite_ingot"
@@ -461,26 +464,26 @@
 					count: 2
 				}
 				{
-					id: "E659C70B34556B2A"
+					id: "1659C70B34556B2A"
 					type: "xp_levels"
 					xp_levels: 15
 				}
 			]
 		}
 		{
-			id: "0A83E832A9F554FE"
-			x: 17.5d
-			y: 6.0d
+			id: "1A83E832A9F554FE"
+			x: 18.75d
+			y: 7.3d
 			icon: {
 				id: "draconicevolution:item_draconic_shield_capacity"
 				count: 1
 			}
 			dependencies: [
-				"1DEBCBC68071A08E"
+				"2DEBCBC68071A08E"
 			]
 			tasks: [
 				{
-					id: "0F90C5232C92F739"
+					id: "1F90C5232C92F739"
 					type: "item"
 					item: {
 						id: "draconicevolution:item_draconic_shield_capacity"
@@ -491,7 +494,7 @@
 			]
 			rewards: [
 				{
-					id: "59A52EF456A7FB07"
+					id: "69A52EF456A7FB07"
 					type: "item"
 					item: {
 						id: "minecraft:netherite_ingot"
@@ -500,26 +503,26 @@
 					count: 1
 				}
 				{
-					id: "2E5846B63696AF35"
+					id: "3E5846B63696AF35"
 					type: "xp_levels"
 					xp_levels: 10
 				}
 			]
 		}
 		{
-			id: "07F70E299E6DCB46"
-			x: 17.5d
-			y: 8.0d
+			id: "17F70E299E6DCB46"
+			x: 21.0d
+			y: 7.3d
 			icon: {
 				id: "draconicevolution:item_draconic_undying"
 				count: 1
 			}
 			dependencies: [
-				"0A83E832A9F554FE"
+				"1A83E832A9F554FE"
 			]
 			tasks: [
 				{
-					id: "9BD4FC96E443980C"
+					id: "3BD4FC96E443980C"
 					type: "item"
 					item: {
 						id: "draconicevolution:item_draconic_undying"
@@ -530,32 +533,32 @@
 			]
 			rewards: [
 				{
-					id: "BD4110C5E30D065C"
+					id: "5D4110C5E30D065C"
 					type: "loot"
-					table_id: "688F492DF36E9682"
+					table_id: "788F492DF36E9682"
 				}
 				{
-					id: "4BB90330DE1501B1"
+					id: "5BB90330DE1501B1"
 					type: "xp_levels"
 					xp_levels: 10
 				}
 			]
 		}
 		{
-			id: "AD7B04EAD8E9BF79"
-			x: 20.0d
-			y: 7.0d
+			id: "4D7B04EAD8E9BF79"
+			x: 18.75d
+			y: 9.65d
 			icon: {
 				id: "draconicevolution:item_draconic_flight"
 				count: 1
 			}
 			optional: true
 			dependencies: [
-				"1DEBCBC68071A08E"
+				"2DEBCBC68071A08E"
 			]
 			tasks: [
 				{
-					id: "302A3142F094FEF1"
+					id: "402A3142F094FEF1"
 					type: "item"
 					item: {
 						id: "draconicevolution:item_draconic_flight"
@@ -566,7 +569,7 @@
 			]
 			rewards: [
 				{
-					id: "35C108E0F2F37AEE"
+					id: "45C108E0F2F37AEE"
 					type: "item"
 					item: {
 						id: "minecraft:firework_rocket"
@@ -575,27 +578,27 @@
 					count: 32
 				}
 				{
-					id: "B245AD9FDC93D4EE"
+					id: "5245AD9FDC93D4EE"
 					type: "xp_levels"
 					xp_levels: 10
 				}
 			]
 		}
 		{
-			id: "E545A0CB3299D6C2"
-			x: 15.0d
-			y: 9.0d
+			id: "1545A0CB3299D6C2"
+			x: 16.5d
+			y: 12.0d
 			icon: {
 				id: "draconicevolution:draconic_staff"
 				count: 1
 			}
 			optional: true
 			dependencies: [
-				"D61038536A3F396F"
+				"761038536A3F396F"
 			]
 			tasks: [
 				{
-					id: "3FD14CEB6A891472"
+					id: "4FD14CEB6A891472"
 					type: "item"
 					item: {
 						id: "draconicevolution:draconic_staff"
@@ -606,33 +609,34 @@
 			]
 			rewards: [
 				{
-					id: "B1D94681989373F4"
+					id: "51D94681989373F4"
 					type: "xp_levels"
 					xp_levels: 20
 				}
 			]
 		}
 		{
-			id: "C9A7367B6C584860"
+			id: "69A7367B6C584860"
 			x: 0.0d
-			y: 12.5d
+			y: 17.55d
 			icon: {
 				id: "minecraft:end_stone"
 				count: 1
 			}
 			shape: "diamond"
+			hide_dependency_lines: true
 			dependencies: [
-				"192803D15DEC7A34"
+				"292803D15DEC7A34"
 			]
 			tasks: [
 				{
-					id: "4D96B0CE9AA684DB"
+					id: "5D96B0CE9AA684DB"
 					type: "checkmark"
 				}
 			]
 			rewards: [
 				{
-					id: "E10BD1612A670150"
+					id: "110BD1612A670150"
 					type: "item"
 					item: {
 						id: "minecraft:golden_apple"
@@ -641,26 +645,26 @@
 					count: 4
 				}
 				{
-					id: "BD2924925693C816"
+					id: "5D2924925693C816"
 					type: "xp_levels"
 					xp_levels: 10
 				}
 			]
 		}
 		{
-			id: "087DA804F6421655"
-			x: 2.5d
-			y: 12.5d
+			id: "187DA804F6421655"
+			x: 2.25d
+			y: 17.55d
 			icon: {
 				id: "minecraft:end_crystal"
 				count: 1
 			}
 			dependencies: [
-				"C9A7367B6C584860"
+				"69A7367B6C584860"
 			]
 			tasks: [
 				{
-					id: "EA523B87B201C550"
+					id: "1A523B87B201C550"
 					type: "kill"
 					entity: "draconicevolution:guardian_crystal"
 					value: 1
@@ -668,7 +672,7 @@
 			]
 			rewards: [
 				{
-					id: "27D4C9C360E856C7"
+					id: "37D4C9C360E856C7"
 					type: "item"
 					item: {
 						id: "minecraft:golden_apple"
@@ -677,29 +681,30 @@
 					count: 4
 				}
 				{
-					id: "A8BA68B1E29C688E"
+					id: "48BA68B1E29C688E"
 					type: "xp_levels"
 					xp_levels: 15
 				}
 			]
 		}
 		{
-			id: "ACC27A8782DF499A"
+			id: "4CC27A8782DF499A"
 			x: 5.0d
-			y: 12.5d
+			y: 18.05d
 			icon: {
 				id: "draconicevolution:chaos_shard"
 				count: 1
 			}
 			size: 2.0d
 			shape: "gear"
+			hide_dependency_lines: true
 			dependencies: [
-				"087DA804F6421655"
-				"2AEDADF7F021D005"
+				"187DA804F6421655"
+				"3AEDADF7F021D005"
 			]
 			tasks: [
 				{
-					id: "6A408933DA30406D"
+					id: "7A408933DA30406D"
 					type: "kill"
 					entity: "draconicevolution:draconic_guardian"
 					value: 1
@@ -707,32 +712,32 @@
 			]
 			rewards: [
 				{
-					id: "646D6135D26FD93A"
+					id: "746D6135D26FD93A"
 					type: "loot"
-					table_id: "578264AD654E114F"
+					table_id: "678264AD654E114F"
 				}
 				{
-					id: "EAADDDE0130DFEC3"
+					id: "1AADDDE0130DFEC3"
 					type: "xp_levels"
 					xp_levels: 50
 				}
 			]
 		}
 		{
-			id: "E30C3E1F3FC193D0"
-			x: 7.5d
-			y: 12.5d
+			id: "130C3E1F3FC193D0"
+			x: 7.75d
+			y: 17.55d
 			icon: {
 				id: "draconicevolution:chaos_shard"
 				count: 1
 			}
 			optional: true
 			dependencies: [
-				"ACC27A8782DF499A"
+				"4CC27A8782DF499A"
 			]
 			tasks: [
 				{
-					id: "B7D4F61A8C0C84E2"
+					id: "57D4F61A8C0C84E2"
 					type: "item"
 					item: {
 						id: "draconicevolution:chaos_shard"
@@ -743,27 +748,27 @@
 			]
 			rewards: [
 				{
-					id: "0CAC93E68D425537"
+					id: "1CAC93E68D425537"
 					type: "xp_levels"
 					xp_levels: 30
 				}
 			]
 		}
 		{
-			id: "EE3E4CB8EA60759B"
+			id: "1E3E4CB8EA60759B"
 			x: 10.0d
-			y: 12.5d
+			y: 17.55d
 			icon: {
 				id: "draconicevolution:large_chaos_frag"
 				count: 1
 			}
 			optional: true
 			dependencies: [
-				"E30C3E1F3FC193D0"
+				"130C3E1F3FC193D0"
 			]
 			tasks: [
 				{
-					id: "ACF53EE939486884"
+					id: "4CF53EE939486884"
 					type: "item"
 					item: {
 						id: "draconicevolution:large_chaos_frag"
@@ -774,27 +779,27 @@
 			]
 			rewards: [
 				{
-					id: "06ECDCAC431F80D9"
+					id: "16ECDCAC431F80D9"
 					type: "xp_levels"
 					xp_levels: 15
 				}
 			]
 		}
 		{
-			id: "099342F33A3546F7"
-			x: 12.5d
-			y: 11.5d
+			id: "199342F33A3546F7"
+			x: 12.25d
+			y: 17.55d
 			icon: {
 				id: "draconicevolution:chaotic_crafting_injector"
 				count: 1
 			}
 			optional: true
 			dependencies: [
-				"EE3E4CB8EA60759B"
+				"1E3E4CB8EA60759B"
 			]
 			tasks: [
 				{
-					id: "D5B11F6C799E072A"
+					id: "75B11F6C799E072A"
 					type: "item"
 					item: {
 						id: "draconicevolution:chaotic_crafting_injector"
@@ -805,27 +810,27 @@
 			]
 			rewards: [
 				{
-					id: "CAFC609BDD00B98F"
+					id: "6AFC609BDD00B98F"
 					type: "xp_levels"
 					xp_levels: 20
 				}
 			]
 		}
 		{
-			id: "C1897AFF1AC84E9D"
-			x: 12.5d
-			y: 13.5d
+			id: "61897AFF1AC84E9D"
+			x: 12.25d
+			y: 19.650000000000002d
 			icon: {
 				id: "draconicevolution:chaotic_core"
 				count: 1
 			}
 			optional: true
 			dependencies: [
-				"EE3E4CB8EA60759B"
+				"1E3E4CB8EA60759B"
 			]
 			tasks: [
 				{
-					id: "2F8C1205F5C58EE8"
+					id: "3F8C1205F5C58EE8"
 					type: "item"
 					item: {
 						id: "draconicevolution:chaotic_core"
@@ -836,28 +841,28 @@
 			]
 			rewards: [
 				{
-					id: "EB37046C6703CDC8"
+					id: "1B37046C6703CDC8"
 					type: "xp_levels"
 					xp_levels: 20
 				}
 			]
 		}
 		{
-			id: "3D0475CCF887E8EF"
-			x: 15.0d
-			y: 12.5d
+			id: "4D0475CCF887E8EF"
+			x: 14.5d
+			y: 17.55d
 			icon: {
 				id: "draconicevolution:chaotic_sword"
 				count: 1
 			}
 			optional: true
 			dependencies: [
-				"099342F33A3546F7"
-				"C1897AFF1AC84E9D"
+				"199342F33A3546F7"
+				"61897AFF1AC84E9D"
 			]
 			tasks: [
 				{
-					id: "6E892F059539D80B"
+					id: "7E892F059539D80B"
 					type: "item"
 					item: {
 						id: "draconicevolution:chaotic_sword"
@@ -868,27 +873,28 @@
 			]
 			rewards: [
 				{
-					id: "DBABEDC83603BC9F"
+					id: "7BABEDC83603BC9F"
 					type: "xp_levels"
 					xp_levels: 30
 				}
 			]
 		}
 		{
-			id: "66C895F54D4751D1"
+			id: "76C895F54D4751D1"
 			x: 0.0d
-			y: 17.0d
+			y: 24.95d
 			icon: {
 				id: "draconicevolution:reactor_prt_rotor_full"
 				count: 1
 			}
 			optional: true
+			hide_dependency_lines: true
 			dependencies: [
-				"DB9CE2B18B64FD29"
+				"7B9CE2B18B64FD29"
 			]
 			tasks: [
 				{
-					id: "59ECF50F17BE44EE"
+					id: "69ECF50F17BE44EE"
 					type: "item"
 					item: {
 						id: "draconicevolution:reactor_prt_rotor_full"
@@ -897,7 +903,7 @@
 					count: 1
 				}
 				{
-					id: "99825031B91F18E4"
+					id: "39825031B91F18E4"
 					type: "item"
 					item: {
 						id: "draconicevolution:reactor_prt_focus_ring"
@@ -906,7 +912,7 @@
 					count: 1
 				}
 				{
-					id: "D1742A0F23C0B100"
+					id: "71742A0F23C0B100"
 					type: "item"
 					item: {
 						id: "draconicevolution:reactor_prt_stab_frame"
@@ -917,7 +923,7 @@
 			]
 			rewards: [
 				{
-					id: "F17B66F2108745E7"
+					id: "217B66F2108745E7"
 					type: "item"
 					item: {
 						id: "draconicevolution:wyvern_core"
@@ -926,16 +932,16 @@
 					count: 2
 				}
 				{
-					id: "3F9EEE0D9D3F0B90"
+					id: "4F9EEE0D9D3F0B90"
 					type: "xp_levels"
 					xp_levels: 10
 				}
 			]
 		}
 		{
-			id: "479E9B53C7DCC979"
-			x: 2.5d
-			y: 17.0d
+			id: "579E9B53C7DCC979"
+			x: 2.625d
+			y: 25.325d
 			icon: {
 				id: "draconicevolution:reactor_core"
 				count: 1
@@ -943,13 +949,14 @@
 			size: 1.75d
 			shape: "gear"
 			optional: true
+			hide_dependency_lines: true
 			dependencies: [
-				"66C895F54D4751D1"
-				"C1897AFF1AC84E9D"
+				"76C895F54D4751D1"
+				"61897AFF1AC84E9D"
 			]
 			tasks: [
 				{
-					id: "84ED5E36434FAEF3"
+					id: "24ED5E36434FAEF3"
 					type: "item"
 					item: {
 						id: "draconicevolution:reactor_core"
@@ -958,7 +965,7 @@
 					count: 1
 				}
 				{
-					id: "9C42152C1D60F334"
+					id: "3C42152C1D60F334"
 					type: "item"
 					item: {
 						id: "draconicevolution:reactor_stabilizer"
@@ -967,7 +974,7 @@
 					count: 4
 				}
 				{
-					id: "969FDFD04BCA7615"
+					id: "369FDFD04BCA7615"
 					type: "item"
 					item: {
 						id: "draconicevolution:reactor_injector"
@@ -978,16 +985,16 @@
 			]
 			rewards: [
 				{
-					id: "12DE1DC4F922EC29"
+					id: "22DE1DC4F922EC29"
 					type: "xp_levels"
 					xp_levels: 40
 				}
 			]
 		}
 		{
-			id: "4952DC83553966F6"
-			x: 5.0d
-			y: 17.0d
+			id: "5952DC83553966F6"
+			x: 6.25d
+			y: 10.4d
 			icon: {
 				id: "draconicevolution:awakened_draconium_block"
 				count: 1
@@ -995,11 +1002,11 @@
 			size: 2.5d
 			shape: "gear"
 			dependencies: [
-				"192803D15DEC7A34"
+				"292803D15DEC7A34"
 			]
 			tasks: [
 				{
-					id: "00EF42CEC8D083BA"
+					id: "10EF42CEC8D083BA"
 					type: "item"
 					item: {
 						id: "draconicevolution:awakened_draconium_block"
@@ -1010,12 +1017,12 @@
 			]
 			rewards: [
 				{
-					id: "48204312B889A485"
+					id: "58204312B889A485"
 					type: "loot"
-					table_id: "578264AD654E114F"
+					table_id: "678264AD654E114F"
 				}
 				{
-					id: "BBD676EE55AB25EE"
+					id: "5BD676EE55AB25EE"
 					type: "xp_levels"
 					xp_levels: 30
 				}
@@ -1024,50 +1031,50 @@
 	]
 	images: [
 		{
-			id: "F54C8DB7E7E77525"
+			id: "254C8DB7E7E77525"
 			image: "kronwerke:textures/quests/draconic_chaos/title.png"
-			x: 9.04d
-			y: -3.0d
+			x: 8.545d
+			y: 0.0d
 			width: 18.09d
 			height: 1.6d
 			rotation: 0.0d
 			order: 1
 		}
 		{
-			id: "92F7853BE538E06D"
+			id: "32F7853BE538E06D"
 			image: "kronwerke:textures/quests/draconic_chaos/stage.png"
-			x: 1.67d
-			y: -1.6d
+			x: 19.86d
+			y: 0.525d
 			width: 3.34d
 			height: 0.55d
 			rotation: 0.0d
 			order: 1
 		}
 		{
-			id: "424F9E0D039E34B3"
+			id: "524F9E0D039E34B3"
 			image: "kronwerke:textures/quests/draconic_chaos/gear.png"
-			x: 11.94d
-			y: -1.0d
+			x: 1.435d
+			y: 5.95d
 			width: 3.87d
 			height: 0.9d
 			rotation: 0.0d
 			order: 1
 		}
 		{
-			id: "FFF4D2DEE2393CFF"
+			id: "2FF4D2DEE2393CFF"
 			image: "kronwerke:textures/quests/draconic_chaos/fight.png"
-			x: 2.75d
-			y: 10.6d
+			x: 2.255d
+			y: 16.200000000000003d
 			width: 5.51d
 			height: 0.9d
 			rotation: 0.0d
 			order: 1
 		}
 		{
-			id: "088D366B60C1B614"
+			id: "188D366B60C1B614"
 			image: "kronwerke:textures/quests/draconic_chaos/reactor.png"
-			x: 2.75d
-			y: 15.2d
+			x: 2.255d
+			y: 23.599999999999998d
 			width: 5.51d
 			height: 0.9d
 			rotation: 0.0d

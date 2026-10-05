@@ -1,19 +1,19 @@
 {
-	id: "4C60B1EDCD803261"
+	id: "5C60B1EDCD803261"
 	filename: "dire_things"
 	icon: {
 		id: "justdirethings:gooblock_tier1"
 		count: 1
 	}
-	group: "AEAA9718BAF5A32A"
+	group: "4EAA9718BAF5A32A"
 	order_index: 47
 	default_quest_shape: "circle"
 	default_hide_dependency_lines: false
 	quests: [
 		{
-			id: "F58F3B682E550EF2"
-			x: 0.0d
-			y: 0.0d
+			id: "258F3B682E550EF2"
+			x: 0.5d
+			y: 2.575d
 			icon: {
 				id: "justdirethings:gooblock_tier1"
 				count: 1
@@ -22,7 +22,7 @@
 			shape: "hexagon"
 			tasks: [
 				{
-					id: "D6B86317873F6484"
+					id: "76B86317873F6484"
 					type: "item"
 					item: {
 						id: "justdirethings:gooblock_tier1"
@@ -33,7 +33,7 @@
 			]
 			rewards: [
 				{
-					id: "EEECB3D5862D4F2C"
+					id: "1EECB3D5862D4F2C"
 					type: "item"
 					item: {
 						id: "minecraft:sugar"
@@ -42,26 +42,27 @@
 					count: 16
 				}
 				{
-					id: "A7AC9990C99EF2CA"
+					id: "47AC9990C99EF2CA"
 					type: "loot"
-					table_id: "F2BA64790EBA3DF5"
+					table_id: "22BA64790EBA3DF5"
 				}
 			]
 		}
 		{
-			id: "DE1BE432C8DB6E50"
-			x: 2.5d
-			y: -1.0d
+			id: "7E1BE432C8DB6E50"
+			x: 0.0d
+			y: 21.675d
 			icon: {
 				id: "justdirethings:raw_ferricore"
 				count: 1
 			}
+			hide_dependency_lines: true
 			dependencies: [
-				"F58F3B682E550EF2"
+				"258F3B682E550EF2"
 			]
 			tasks: [
 				{
-					id: "F492DC8289F84D12"
+					id: "2492DC8289F84D12"
 					type: "item"
 					item: {
 						id: "justdirethings:raw_ferricore"
@@ -72,7 +73,7 @@
 			]
 			rewards: [
 				{
-					id: "DBEA76787F599732"
+					id: "7BEA76787F599732"
 					type: "item"
 					item: {
 						id: "minecraft:iron_ingot"
@@ -81,26 +82,26 @@
 					count: 32
 				}
 				{
-					id: "14FB1D1E93711B61"
+					id: "24FB1D1E93711B61"
 					type: "xp_levels"
 					xp_levels: 3
 				}
 			]
 		}
 		{
-			id: "6471697E85315437"
-			x: 5.0d
-			y: -1.0d
+			id: "7471697E85315437"
+			x: 2.25d
+			y: 21.675d
 			icon: {
 				id: "justdirethings:ferricore_ingot"
 				count: 1
 			}
 			dependencies: [
-				"DE1BE432C8DB6E50"
+				"7E1BE432C8DB6E50"
 			]
 			tasks: [
 				{
-					id: "B2F4654673E531DF"
+					id: "52F4654673E531DF"
 					type: "item"
 					item: {
 						id: "justdirethings:ferricore_ingot"
@@ -111,7 +112,7 @@
 			]
 			rewards: [
 				{
-					id: "EF28902A0DACF7B4"
+					id: "1F28902A0DACF7B4"
 					type: "item"
 					item: {
 						id: "justdirethings:ferricore_ingot"
@@ -120,26 +121,27 @@
 					count: 8
 				}
 				{
-					id: "C0D17F1122DA17DD"
+					id: "60D17F1122DA17DD"
 					type: "loot"
-					table_id: "F2BA64790EBA3DF5"
+					table_id: "22BA64790EBA3DF5"
 				}
 			]
 		}
 		{
-			id: "6F0E750CD5DC2AA1"
-			x: 2.5d
-			y: 1.0d
+			id: "7F0E750CD5DC2AA1"
+			x: 0.0d
+			y: 23.525000000000002d
 			icon: {
 				id: "justdirethings:coal_t1"
 				count: 1
 			}
+			hide_dependency_lines: true
 			dependencies: [
-				"F58F3B682E550EF2"
+				"258F3B682E550EF2"
 			]
 			tasks: [
 				{
-					id: "B2008D8B57D14BDC"
+					id: "52008D8B57D14BDC"
 					type: "item"
 					item: {
 						id: "justdirethings:coal_t1"
@@ -150,7 +152,7 @@
 			]
 			rewards: [
 				{
-					id: "914DD40F3279F771"
+					id: "314DD40F3279F771"
 					type: "item"
 					item: {
 						id: "minecraft:coal_block"
@@ -159,26 +161,26 @@
 					count: 4
 				}
 				{
-					id: "27AA94A826C6E93E"
+					id: "37AA94A826C6E93E"
 					type: "xp_levels"
 					xp_levels: 3
 				}
 			]
 		}
 		{
-			id: "C419F71C4889F09D"
-			x: 5.0d
-			y: 1.0d
+			id: "6419F71C4889F09D"
+			x: 2.25d
+			y: 23.525000000000002d
 			icon: {
 				id: "justdirethings:gooblock_tier2"
 				count: 1
 			}
 			dependencies: [
-				"6F0E750CD5DC2AA1"
+				"7F0E750CD5DC2AA1"
 			]
 			tasks: [
 				{
-					id: "23F9AEDCF4CE39E3"
+					id: "33F9AEDCF4CE39E3"
 					type: "item"
 					item: {
 						id: "justdirethings:gooblock_tier2"
@@ -189,7 +191,7 @@
 			]
 			rewards: [
 				{
-					id: "717B1D54E126D049"
+					id: "117B1D54E126D049"
 					type: "item"
 					item: {
 						id: "minecraft:blaze_powder"
@@ -198,21 +200,21 @@
 					count: 8
 				}
 				{
-					id: "09E5AC995DC00022"
+					id: "19E5AC995DC00022"
 					type: "loot"
-					table_id: "F2BA64790EBA3DF5"
+					table_id: "22BA64790EBA3DF5"
 				}
 				{
-					id: "B822313E1A818B49"
+					id: "5822313E1A818B49"
 					type: "xp_levels"
 					xp_levels: 5
 				}
 			]
 		}
 		{
-			id: "3989628BEC9FD746"
-			x: 7.5d
-			y: 1.0d
+			id: "4989628BEC9FD746"
+			x: 4.75d
+			y: 21.925d
 			icon: {
 				id: "justdirethings:blazegold_ingot"
 				count: 1
@@ -220,11 +222,11 @@
 			size: 1.5d
 			shape: "hexagon"
 			dependencies: [
-				"C419F71C4889F09D"
+				"6419F71C4889F09D"
 			]
 			tasks: [
 				{
-					id: "A8215E20109059FF"
+					id: "48215E20109059FF"
 					type: "item"
 					item: {
 						id: "justdirethings:blazegold_ingot"
@@ -235,7 +237,7 @@
 			]
 			rewards: [
 				{
-					id: "25AB0A738B7B208B"
+					id: "35AB0A738B7B208B"
 					type: "item"
 					item: {
 						id: "minecraft:gold_ingot"
@@ -244,33 +246,33 @@
 					count: 16
 				}
 				{
-					id: "AD671FDCCA4CEAE8"
+					id: "4D671FDCCA4CEAE8"
 					type: "loot"
-					table_id: "BA8E33E78A3B3A0C"
+					table_id: "5A8E33E78A3B3A0C"
 				}
 				{
-					id: "004911FEB9D1B2AA"
+					id: "104911FEB9D1B2AA"
 					type: "xp_levels"
 					xp_levels: 5
 				}
 			]
 		}
 		{
-			id: "F476CE04E449338C"
-			x: 7.5d
-			y: 2.75d
+			id: "2476CE04E449338C"
+			x: 4.75d
+			y: 23.525000000000002d
 			icon: {
 				id: "justdirethings:coal_t2"
 				count: 1
 			}
 			optional: true
 			dependencies: [
-				"C419F71C4889F09D"
-				"6F0E750CD5DC2AA1"
+				"6419F71C4889F09D"
+				"7F0E750CD5DC2AA1"
 			]
 			tasks: [
 				{
-					id: "12EFAC02C28CA0BC"
+					id: "22EFAC02C28CA0BC"
 					type: "item"
 					item: {
 						id: "justdirethings:coal_t2"
@@ -281,7 +283,7 @@
 			]
 			rewards: [
 				{
-					id: "500438D0AD36F17D"
+					id: "600438D0AD36F17D"
 					type: "item"
 					item: {
 						id: "justdirethings:coal_t1"
@@ -292,15 +294,16 @@
 			]
 		}
 		{
-			id: "222E1E0595ABED73"
-			x: 10.5d
-			y: -1.0d
+			id: "322E1E0595ABED73"
+			x: 0.0d
+			y: 7.375000000000001d
+			hide_dependency_lines: true
 			dependencies: [
-				"6471697E85315437"
+				"7471697E85315437"
 			]
 			tasks: [
 				{
-					id: "96C35B5DECB803EA"
+					id: "36C35B5DECB803EA"
 					type: "item"
 					item: {
 						id: "justdirethings:ferricore_pickaxe"
@@ -311,7 +314,7 @@
 			]
 			rewards: [
 				{
-					id: "6F091AA97AE58A6A"
+					id: "7F091AA97AE58A6A"
 					type: "item"
 					item: {
 						id: "justdirethings:ferricore_ingot"
@@ -320,26 +323,26 @@
 					count: 6
 				}
 				{
-					id: "584039F0812D2732"
+					id: "684039F0812D2732"
 					type: "xp_levels"
 					xp_levels: 3
 				}
 			]
 		}
 		{
-			id: "808E02F95486BC7D"
-			x: 13.0d
-			y: -1.0d
+			id: "208E02F95486BC7D"
+			x: 2.25d
+			y: 7.375000000000001d
 			icon: {
 				id: "justdirethings:upgrade_blank"
 				count: 1
 			}
 			dependencies: [
-				"222E1E0595ABED73"
+				"322E1E0595ABED73"
 			]
 			tasks: [
 				{
-					id: "BD4A5C99BD70E2D2"
+					id: "5D4A5C99BD70E2D2"
 					type: "item"
 					item: {
 						id: "justdirethings:upgrade_blank"
@@ -350,7 +353,7 @@
 			]
 			rewards: [
 				{
-					id: "7D2E26737BBCCE3C"
+					id: "1D2E26737BBCCE3C"
 					type: "item"
 					item: {
 						id: "justdirethings:ferricore_ingot"
@@ -361,19 +364,19 @@
 			]
 		}
 		{
-			id: "B5173FA1D9E683F8"
-			x: 15.5d
-			y: -3.0d
+			id: "55173FA1D9E683F8"
+			x: 4.5d
+			y: 7.375000000000001d
 			icon: {
 				id: "justdirethings:upgrade_oreminer"
 				count: 1
 			}
 			dependencies: [
-				"808E02F95486BC7D"
+				"208E02F95486BC7D"
 			]
 			tasks: [
 				{
-					id: "22AC533401191C38"
+					id: "32AC533401191C38"
 					type: "item"
 					item: {
 						id: "justdirethings:upgrade_oreminer"
@@ -384,7 +387,7 @@
 			]
 			rewards: [
 				{
-					id: "8E3F00F506EED2C3"
+					id: "2E3F00F506EED2C3"
 					type: "item"
 					item: {
 						id: "minecraft:iron_ingot"
@@ -393,26 +396,26 @@
 					count: 12
 				}
 				{
-					id: "D85AC74ED974B2BF"
+					id: "785AC74ED974B2BF"
 					type: "xp_levels"
 					xp_levels: 5
 				}
 			]
 		}
 		{
-			id: "4440DEEC6D2A6496"
-			x: 15.5d
-			y: -1.5d
+			id: "5440DEEC6D2A6496"
+			x: 4.5d
+			y: 9.225000000000001d
 			icon: {
 				id: "justdirethings:upgrade_orescanner"
 				count: 1
 			}
 			dependencies: [
-				"808E02F95486BC7D"
+				"208E02F95486BC7D"
 			]
 			tasks: [
 				{
-					id: "0B0A13EE938225A2"
+					id: "1B0A13EE938225A2"
 					type: "item"
 					item: {
 						id: "justdirethings:upgrade_orescanner"
@@ -423,7 +426,7 @@
 			]
 			rewards: [
 				{
-					id: "21DDE482E44B1578"
+					id: "31DDE482E44B1578"
 					type: "item"
 					item: {
 						id: "minecraft:amethyst_shard"
@@ -432,52 +435,52 @@
 					count: 8
 				}
 				{
-					id: "E679901F2290ED49"
+					id: "1679901F2290ED49"
 					type: "xp_levels"
 					xp_levels: 3
 				}
 			]
 		}
 		{
-			id: "13355607F2145B57"
-			x: 18.0d
-			y: -2.25d
+			id: "23355607F2145B57"
+			x: 7.0d
+			y: 7.375000000000001d
 			icon: {
 				id: "justdirethings:ferricore_pickaxe"
 				count: 1
 			}
 			dependencies: [
-				"B5173FA1D9E683F8"
-				"4440DEEC6D2A6496"
+				"55173FA1D9E683F8"
+				"5440DEEC6D2A6496"
 			]
 			tasks: [
 				{
-					id: "63940789695E95EE"
+					id: "73940789695E95EE"
 					type: "checkmark"
 				}
 			]
 			rewards: [
 				{
-					id: "87AA95AB3E1E3E5C"
+					id: "27AA95AB3E1E3E5C"
 					type: "xp_levels"
 					xp_levels: 5
 				}
 			]
 		}
 		{
-			id: "FA692A4F13D1A05C"
-			x: 15.5d
-			y: 0.0d
+			id: "2A692A4F13D1A05C"
+			x: 4.5d
+			y: 11.075000000000001d
 			icon: {
 				id: "justdirethings:ferricore_axe"
 				count: 1
 			}
 			dependencies: [
-				"808E02F95486BC7D"
+				"208E02F95486BC7D"
 			]
 			tasks: [
 				{
-					id: "8F4FEC6B3D3A9461"
+					id: "2F4FEC6B3D3A9461"
 					type: "item"
 					item: {
 						id: "justdirethings:ferricore_axe"
@@ -486,7 +489,7 @@
 					count: 1
 				}
 				{
-					id: "55713B6EE80B202B"
+					id: "65713B6EE80B202B"
 					type: "item"
 					item: {
 						id: "justdirethings:upgrade_treefeller"
@@ -497,7 +500,7 @@
 			]
 			rewards: [
 				{
-					id: "1497D99D2E7FE53C"
+					id: "2497D99D2E7FE53C"
 					type: "item"
 					item: {
 						id: "minecraft:diamond"
@@ -506,7 +509,7 @@
 					count: 2
 				}
 				{
-					id: "1D0F1CDFD7597EE8"
+					id: "2D0F1CDFD7597EE8"
 					type: "item"
 					item: {
 						id: "minecraft:oak_log"
@@ -515,26 +518,26 @@
 					count: 32
 				}
 				{
-					id: "EEB8266FA967333E"
+					id: "1EB8266FA967333E"
 					type: "xp_levels"
 					xp_levels: 3
 				}
 			]
 		}
 		{
-			id: "EABA02C2563297F6"
-			x: 15.5d
-			y: 1.5d
+			id: "1ABA02C2563297F6"
+			x: 4.5d
+			y: 12.925d
 			icon: {
 				id: "justdirethings:ferricore_shovel"
 				count: 1
 			}
 			dependencies: [
-				"808E02F95486BC7D"
+				"208E02F95486BC7D"
 			]
 			tasks: [
 				{
-					id: "7E705A3836E612B4"
+					id: "1E705A3836E612B4"
 					type: "item"
 					item: {
 						id: "justdirethings:ferricore_shovel"
@@ -545,7 +548,7 @@
 			]
 			rewards: [
 				{
-					id: "70F930C05B64A5C3"
+					id: "10F930C05B64A5C3"
 					type: "item"
 					item: {
 						id: "justdirethings:ferricore_ingot"
@@ -554,26 +557,26 @@
 					count: 4
 				}
 				{
-					id: "18238549BB00F270"
+					id: "28238549BB00F270"
 					type: "xp_levels"
 					xp_levels: 3
 				}
 			]
 		}
 		{
-			id: "1F4026AC59803510"
-			x: 15.5d
-			y: 3.0d
+			id: "2F4026AC59803510"
+			x: 4.5d
+			y: 14.775000000000002d
 			icon: {
 				id: "justdirethings:ferricore_sword"
 				count: 1
 			}
 			dependencies: [
-				"808E02F95486BC7D"
+				"208E02F95486BC7D"
 			]
 			tasks: [
 				{
-					id: "E093C5FFE5ADE6C6"
+					id: "1093C5FFE5ADE6C6"
 					type: "item"
 					item: {
 						id: "justdirethings:ferricore_sword"
@@ -582,7 +585,7 @@
 					count: 1
 				}
 				{
-					id: "3B90656952AE81AC"
+					id: "4B90656952AE81AC"
 					type: "item"
 					item: {
 						id: "justdirethings:upgrade_mobscanner"
@@ -593,7 +596,7 @@
 			]
 			rewards: [
 				{
-					id: "A43D7F7F120CDE68"
+					id: "443D7F7F120CDE68"
 					type: "item"
 					item: {
 						id: "minecraft:arrow"
@@ -602,26 +605,26 @@
 					count: 32
 				}
 				{
-					id: "DAD17C8C19E233E4"
+					id: "7AD17C8C19E233E4"
 					type: "xp_levels"
 					xp_levels: 3
 				}
 			]
 		}
 		{
-			id: "9A1AA854F1841139"
-			x: 15.5d
-			y: 4.5d
+			id: "3A1AA854F1841139"
+			x: 4.5d
+			y: 16.625d
 			icon: {
 				id: "justdirethings:ferricore_chestplate"
 				count: 1
 			}
 			dependencies: [
-				"808E02F95486BC7D"
+				"208E02F95486BC7D"
 			]
 			tasks: [
 				{
-					id: "86A5AACDD49ABFE2"
+					id: "26A5AACDD49ABFE2"
 					type: "item"
 					item: {
 						id: "justdirethings:ferricore_boots"
@@ -630,7 +633,7 @@
 					count: 1
 				}
 				{
-					id: "137CCB530E5A7871"
+					id: "237CCB530E5A7871"
 					type: "item"
 					item: {
 						id: "justdirethings:upgrade_stepheight"
@@ -641,7 +644,7 @@
 			]
 			rewards: [
 				{
-					id: "6C3E05112568D929"
+					id: "7C3E05112568D929"
 					type: "item"
 					item: {
 						id: "justdirethings:ferricore_ingot"
@@ -650,21 +653,21 @@
 					count: 8
 				}
 				{
-					id: "24E4ED84F52E184F"
+					id: "34E4ED84F52E184F"
 					type: "loot"
-					table_id: "F2BA64790EBA3DF5"
+					table_id: "22BA64790EBA3DF5"
 				}
 				{
-					id: "AF460B2EC16AF799"
+					id: "4F460B2EC16AF799"
 					type: "xp_levels"
 					xp_levels: 5
 				}
 			]
 		}
 		{
-			id: "5A93D87D730FE408"
-			x: 18.0d
-			y: 3.75d
+			id: "6A93D87D730FE408"
+			x: 7.0d
+			y: 9.475000000000001d
 			icon: {
 				id: "justdirethings:template_blazegold"
 				count: 1
@@ -672,12 +675,12 @@
 			size: 1.5d
 			shape: "diamond"
 			dependencies: [
-				"1F4026AC59803510"
-				"9A1AA854F1841139"
+				"2F4026AC59803510"
+				"3A1AA854F1841139"
 			]
 			tasks: [
 				{
-					id: "F42B4AFB65889FE7"
+					id: "242B4AFB65889FE7"
 					type: "item"
 					item: {
 						id: "justdirethings:template_blazegold"
@@ -686,7 +689,7 @@
 					count: 1
 				}
 				{
-					id: "1C6FCE452D03D8AE"
+					id: "2C6FCE452D03D8AE"
 					type: "item"
 					item: {
 						id: "justdirethings:blazegold_pickaxe"
@@ -697,7 +700,7 @@
 			]
 			rewards: [
 				{
-					id: "066C709BC9507422"
+					id: "166C709BC9507422"
 					type: "item"
 					item: {
 						id: "justdirethings:blazegold_ingot"
@@ -706,33 +709,34 @@
 					count: 4
 				}
 				{
-					id: "E762534F1BA59F33"
+					id: "1762534F1BA59F33"
 					type: "loot"
-					table_id: "BA8E33E78A3B3A0C"
+					table_id: "5A8E33E78A3B3A0C"
 				}
 				{
-					id: "E256573FF47F5B7A"
+					id: "1256573FF47F5B7A"
 					type: "xp_levels"
 					xp_levels: 10
 				}
 			]
 		}
 		{
-			id: "2381A3C719E9B490"
-			x: 0.0d
-			y: 7.5d
+			id: "3381A3C719E9B490"
+			x: 0.25d
+			y: 28.825d
 			icon: {
 				id: "justdirethings:generatort1"
 				count: 1
 			}
 			size: 1.5d
 			shape: "hexagon"
+			hide_dependency_lines: true
 			dependencies: [
-				"6471697E85315437"
+				"7471697E85315437"
 			]
 			tasks: [
 				{
-					id: "70A77DE228A6A739"
+					id: "10A77DE228A6A739"
 					type: "item"
 					item: {
 						id: "justdirethings:generatort1"
@@ -743,7 +747,7 @@
 			]
 			rewards: [
 				{
-					id: "A60DA733F457F711"
+					id: "460DA733F457F711"
 					type: "item"
 					item: {
 						id: "justdirethings:coal_t1"
@@ -752,31 +756,31 @@
 					count: 16
 				}
 				{
-					id: "FAF76E709DCF059F"
+					id: "2AF76E709DCF059F"
 					type: "loot"
-					table_id: "F2BA64790EBA3DF5"
+					table_id: "22BA64790EBA3DF5"
 				}
 				{
-					id: "2B686B9E1E0E0F1A"
+					id: "3B686B9E1E0E0F1A"
 					type: "xp_levels"
 					xp_levels: 5
 				}
 			]
 		}
 		{
-			id: "5E88EA9560076981"
-			x: 2.5d
-			y: 10.0d
+			id: "6E88EA9560076981"
+			x: 2.75d
+			y: 30.425d
 			icon: {
 				id: "justdirethings:pocket_generator"
 				count: 1
 			}
 			dependencies: [
-				"2381A3C719E9B490"
+				"3381A3C719E9B490"
 			]
 			tasks: [
 				{
-					id: "847A10FBBF1FE572"
+					id: "247A10FBBF1FE572"
 					type: "item"
 					item: {
 						id: "justdirethings:pocket_generator"
@@ -787,7 +791,7 @@
 			]
 			rewards: [
 				{
-					id: "CBA96D47DA8FEFDB"
+					id: "6BA96D47DA8FEFDB"
 					type: "item"
 					item: {
 						id: "justdirethings:coal_t1"
@@ -796,26 +800,27 @@
 					count: 16
 				}
 				{
-					id: "A2EED27C881C2CF1"
+					id: "42EED27C881C2CF1"
 					type: "xp_levels"
 					xp_levels: 5
 				}
 			]
 		}
 		{
-			id: "3654581A43834892"
-			x: 2.5d
-			y: 7.5d
+			id: "4654581A43834892"
+			x: 0.25d
+			y: 32.275d
 			icon: {
 				id: "justdirethings:blockbreakert1"
 				count: 1
 			}
+			hide_dependency_lines: true
 			dependencies: [
-				"6471697E85315437"
+				"7471697E85315437"
 			]
 			tasks: [
 				{
-					id: "5E003C69331B9FCB"
+					id: "6E003C69331B9FCB"
 					type: "item"
 					item: {
 						id: "justdirethings:blockbreakert1"
@@ -826,7 +831,7 @@
 			]
 			rewards: [
 				{
-					id: "0EAFA16E985D0E5A"
+					id: "1EAFA16E985D0E5A"
 					type: "item"
 					item: {
 						id: "justdirethings:ferricore_ingot"
@@ -835,26 +840,26 @@
 					count: 4
 				}
 				{
-					id: "9CA95BFE417193F3"
+					id: "3CA95BFE417193F3"
 					type: "loot"
-					table_id: "F2BA64790EBA3DF5"
+					table_id: "22BA64790EBA3DF5"
 				}
 			]
 		}
 		{
-			id: "3B9042DBF504BABB"
-			x: 5.0d
-			y: 7.5d
+			id: "4B9042DBF504BABB"
+			x: 2.75d
+			y: 32.275d
 			icon: {
 				id: "justdirethings:blockplacert1"
 				count: 1
 			}
 			dependencies: [
-				"3654581A43834892"
+				"4654581A43834892"
 			]
 			tasks: [
 				{
-					id: "8F0057384B8FBA3B"
+					id: "2F0057384B8FBA3B"
 					type: "item"
 					item: {
 						id: "justdirethings:blockplacert1"
@@ -865,7 +870,7 @@
 			]
 			rewards: [
 				{
-					id: "2F33844B777208F3"
+					id: "3F33844B777208F3"
 					type: "item"
 					item: {
 						id: "minecraft:iron_block"
@@ -874,26 +879,26 @@
 					count: 2
 				}
 				{
-					id: "6BEF3B0E9AD2BCFB"
+					id: "7BEF3B0E9AD2BCFB"
 					type: "xp_levels"
 					xp_levels: 3
 				}
 			]
 		}
 		{
-			id: "D58BB8B008C59E1B"
-			x: 7.5d
-			y: 7.5d
+			id: "758BB8B008C59E1B"
+			x: 5.25d
+			y: 30.425d
 			icon: {
 				id: "justdirethings:droppert1"
 				count: 1
 			}
 			dependencies: [
-				"3B9042DBF504BABB"
+				"4B9042DBF504BABB"
 			]
 			tasks: [
 				{
-					id: "D7D913809C86B91B"
+					id: "77D913809C86B91B"
 					type: "item"
 					item: {
 						id: "justdirethings:droppert1"
@@ -904,7 +909,7 @@
 			]
 			rewards: [
 				{
-					id: "A08538A72087B105"
+					id: "408538A72087B105"
 					type: "item"
 					item: {
 						id: "minecraft:ender_pearl"
@@ -913,26 +918,26 @@
 					count: 4
 				}
 				{
-					id: "B6203E44157E315A"
+					id: "56203E44157E315A"
 					type: "xp_levels"
 					xp_levels: 3
 				}
 			]
 		}
 		{
-			id: "30C0C0197F80B5B4"
-			x: 10.0d
-			y: 7.5d
+			id: "40C0C0197F80B5B4"
+			x: 7.75d
+			y: 28.575d
 			icon: {
 				id: "justdirethings:sensort1"
 				count: 1
 			}
 			dependencies: [
-				"D58BB8B008C59E1B"
+				"758BB8B008C59E1B"
 			]
 			tasks: [
 				{
-					id: "37A76D765169927D"
+					id: "47A76D765169927D"
 					type: "item"
 					item: {
 						id: "justdirethings:sensort1"
@@ -943,7 +948,7 @@
 			]
 			rewards: [
 				{
-					id: "A012EFF210D0118C"
+					id: "4012EFF210D0118C"
 					type: "item"
 					item: {
 						id: "minecraft:redstone"
@@ -952,26 +957,26 @@
 					count: 32
 				}
 				{
-					id: "DCB666B6D7D10A1E"
+					id: "7CB666B6D7D10A1E"
 					type: "xp_levels"
 					xp_levels: 5
 				}
 			]
 		}
 		{
-			id: "E931ED5B42A4DB77"
-			x: 12.5d
-			y: 7.5d
+			id: "1931ED5B42A4DB77"
+			x: 10.0d
+			y: 28.575d
 			icon: {
 				id: "justdirethings:clickert1"
 				count: 1
 			}
 			dependencies: [
-				"30C0C0197F80B5B4"
+				"40C0C0197F80B5B4"
 			]
 			tasks: [
 				{
-					id: "D7E666764A9396FB"
+					id: "77E666764A9396FB"
 					type: "item"
 					item: {
 						id: "justdirethings:clickert1"
@@ -982,7 +987,7 @@
 			]
 			rewards: [
 				{
-					id: "A80DB7A66AB83E1B"
+					id: "480DB7A66AB83E1B"
 					type: "item"
 					item: {
 						id: "minecraft:sugar"
@@ -991,26 +996,27 @@
 					count: 32
 				}
 				{
-					id: "B895A298D0BD3D3E"
+					id: "5895A298D0BD3D3E"
 					type: "xp_levels"
 					xp_levels: 5
 				}
 			]
 		}
 		{
-			id: "FAF3D2BE896174C2"
-			x: 15.0d
-			y: 7.5d
+			id: "2AF3D2BE896174C2"
+			x: 0.0d
+			y: 37.324999999999996d
 			icon: {
 				id: "justdirethings:itemcollector"
 				count: 1
 			}
+			hide_dependency_lines: true
 			dependencies: [
-				"E931ED5B42A4DB77"
+				"1931ED5B42A4DB77"
 			]
 			tasks: [
 				{
-					id: "4446A7A49EBFE443"
+					id: "5446A7A49EBFE443"
 					type: "item"
 					item: {
 						id: "justdirethings:itemcollector"
@@ -1021,7 +1027,7 @@
 			]
 			rewards: [
 				{
-					id: "91AE8F41A4034E91"
+					id: "31AE8F41A4034E91"
 					type: "item"
 					item: {
 						id: "minecraft:hopper"
@@ -1030,31 +1036,31 @@
 					count: 4
 				}
 				{
-					id: "DA34FF65AD7B366E"
+					id: "7A34FF65AD7B366E"
 					type: "loot"
-					table_id: "BA8E33E78A3B3A0C"
+					table_id: "5A8E33E78A3B3A0C"
 				}
 				{
-					id: "2B9CFF99DBD8E6B1"
+					id: "3B9CFF99DBD8E6B1"
 					type: "xp_levels"
 					xp_levels: 5
 				}
 			]
 		}
 		{
-			id: "846711927734B9C2"
-			x: 0.0d
-			y: 10.0d
+			id: "246711927734B9C2"
+			x: 2.75d
+			y: 28.575d
 			icon: {
 				id: "justdirethings:generatorfluidt1"
 				count: 1
 			}
 			dependencies: [
-				"2381A3C719E9B490"
+				"3381A3C719E9B490"
 			]
 			tasks: [
 				{
-					id: "1FEA67A3D2DDFB99"
+					id: "2FEA67A3D2DDFB99"
 					type: "item"
 					item: {
 						id: "justdirethings:generatorfluidt1"
@@ -1065,7 +1071,7 @@
 			]
 			rewards: [
 				{
-					id: "FF16735C98111B63"
+					id: "2F16735C98111B63"
 					type: "item"
 					item: {
 						id: "justdirethings:blazegold_ingot"
@@ -1074,21 +1080,21 @@
 					count: 4
 				}
 				{
-					id: "DF84BEB5F157D01E"
+					id: "7F84BEB5F157D01E"
 					type: "loot"
-					table_id: "BA8E33E78A3B3A0C"
+					table_id: "5A8E33E78A3B3A0C"
 				}
 				{
-					id: "14CEC3C093511BA7"
+					id: "24CEC3C093511BA7"
 					type: "xp_levels"
 					xp_levels: 10
 				}
 			]
 		}
 		{
-			id: "D49C9E514BE7D62F"
-			x: 5.0d
-			y: 10.0d
+			id: "749C9E514BE7D62F"
+			x: 5.25d
+			y: 28.825d
 			icon: {
 				id: "justdirethings:portalgun"
 				count: 1
@@ -1096,11 +1102,11 @@
 			size: 1.5d
 			shape: "diamond"
 			dependencies: [
-				"5E88EA9560076981"
+				"6E88EA9560076981"
 			]
 			tasks: [
 				{
-					id: "4B4D54FF817B7B5A"
+					id: "5B4D54FF817B7B5A"
 					type: "item"
 					item: {
 						id: "justdirethings:portalgun"
@@ -1111,7 +1117,7 @@
 			]
 			rewards: [
 				{
-					id: "E19FC54E9EA2F4AD"
+					id: "119FC54E9EA2F4AD"
 					type: "item"
 					item: {
 						id: "justdirethings:blazegold_ingot"
@@ -1120,31 +1126,31 @@
 					count: 4
 				}
 				{
-					id: "CE25C47C24DA393F"
+					id: "6E25C47C24DA393F"
 					type: "loot"
-					table_id: "BA8E33E78A3B3A0C"
+					table_id: "5A8E33E78A3B3A0C"
 				}
 				{
-					id: "67413E074B8FFCA5"
+					id: "77413E074B8FFCA5"
 					type: "xp_levels"
 					xp_levels: 10
 				}
 			]
 		}
 		{
-			id: "9498BD79F8814B33"
+			id: "3498BD79F8814B33"
 			x: 10.0d
-			y: 10.0d
+			y: 30.425d
 			icon: {
 				id: "justdirethings:blockswappert1"
 				count: 1
 			}
 			dependencies: [
-				"30C0C0197F80B5B4"
+				"40C0C0197F80B5B4"
 			]
 			tasks: [
 				{
-					id: "BA7F6CEC462B03EE"
+					id: "5A7F6CEC462B03EE"
 					type: "item"
 					item: {
 						id: "justdirethings:blockswappert1"
@@ -1153,7 +1159,7 @@
 					count: 1
 				}
 				{
-					id: "539643E5AF6FE9B3"
+					id: "639643E5AF6FE9B3"
 					type: "item"
 					item: {
 						id: "justdirethings:ferricore_wrench"
@@ -1164,7 +1170,7 @@
 			]
 			rewards: [
 				{
-					id: "180FC575617B4878"
+					id: "280FC575617B4878"
 					type: "item"
 					item: {
 						id: "minecraft:ender_eye"
@@ -1173,7 +1179,7 @@
 					count: 2
 				}
 				{
-					id: "F47D0F809CE6451C"
+					id: "247D0F809CE6451C"
 					type: "item"
 					item: {
 						id: "justdirethings:blazegold_ingot"
@@ -1182,16 +1188,16 @@
 					count: 2
 				}
 				{
-					id: "C9678B41C5A6604F"
+					id: "69678B41C5A6604F"
 					type: "xp_levels"
 					xp_levels: 5
 				}
 			]
 		}
 		{
-			id: "507C4773D367465D"
-			x: 17.5d
-			y: 7.5d
+			id: "607C4773D367465D"
+			x: 3.0d
+			y: 38.074999999999996d
 			icon: {
 				id: "justdirethings:ferricore_block"
 				count: 1
@@ -1199,11 +1205,11 @@
 			size: 2.5d
 			shape: "gear"
 			dependencies: [
-				"FAF3D2BE896174C2"
+				"2AF3D2BE896174C2"
 			]
 			tasks: [
 				{
-					id: "A2707E8D545953E4"
+					id: "42707E8D545953E4"
 					type: "item"
 					item: {
 						id: "justdirethings:ferricore_ingot"
@@ -1212,7 +1218,7 @@
 					count: 64
 				}
 				{
-					id: "E6ED1CD7BC0E7FC2"
+					id: "16ED1CD7BC0E7FC2"
 					type: "item"
 					item: {
 						id: "justdirethings:blazegold_ingot"
@@ -1223,12 +1229,12 @@
 			]
 			rewards: [
 				{
-					id: "D6CA0F551E92858A"
+					id: "76CA0F551E92858A"
 					type: "loot"
-					table_id: "C79EAEAE0F26AA7F"
+					table_id: "679EAEAE0F26AA7F"
 				}
 				{
-					id: "B41B11ABD926C41B"
+					id: "541B11ABD926C41B"
 					type: "item"
 					item: {
 						id: "justdirethings:blazegold_ingot"
@@ -1237,33 +1243,33 @@
 					count: 8
 				}
 				{
-					id: "F5898C7DD1D4A5E7"
+					id: "25898C7DD1D4A5E7"
 					type: "xp_levels"
 					xp_levels: 20
 				}
 			]
 		}
 		{
-			id: "792FB7D25FFEA23C"
-			x: 20.5d
-			y: 7.5d
+			id: "192FB7D25FFEA23C"
+			x: 6.0d
+			y: 37.324999999999996d
 			icon: {
 				id: "justdirethings:gooblock_tier2"
 				count: 1
 			}
 			optional: true
 			dependencies: [
-				"507C4773D367465D"
+				"607C4773D367465D"
 			]
 			tasks: [
 				{
-					id: "8FDE99575F493049"
+					id: "2FDE99575F493049"
 					type: "checkmark"
 				}
 			]
 			rewards: [
 				{
-					id: "5963F1F6B3749CFE"
+					id: "6963F1F6B3749CFE"
 					type: "xp_levels"
 					xp_levels: 5
 				}
@@ -1272,50 +1278,50 @@
 	]
 	images: [
 		{
-			id: "BBBCC5F09C31B03C"
+			id: "5BBCC5F09C31B03C"
 			image: "kronwerke:textures/quests/dire_things/title.png"
-			x: 9.0d
-			y: -6.5d
+			x: 4.92d
+			y: 0.0d
 			width: 10.84d
 			height: 1.75d
 			rotation: 0.0d
 			order: 1
 		}
 		{
-			id: "7872A41CAFA7481D"
-			image: "kronwerke:textures/quests/dire_things/goo.png"
-			x: 3.75d
-			y: -2.7d
-			width: 2.68d
-			height: 0.9d
-			rotation: 0.0d
-			order: 1
-		}
-		{
-			id: "6F999278BC62DC21"
+			id: "1872A41CAFA7481D"
 			image: "kronwerke:textures/quests/dire_things/tools.png"
-			x: 15.5d
-			y: -4.6d
+			x: 3.465d
+			y: 6.025000000000001d
 			width: 7.93d
 			height: 0.9d
 			rotation: 0.0d
 			order: 1
 		}
 		{
-			id: "CED51371433E4B7A"
+			id: "7F999278BC62DC21"
+			image: "kronwerke:textures/quests/dire_things/goo.png"
+			x: 0.8400000000000001d
+			y: 20.325d
+			width: 2.68d
+			height: 0.9d
+			rotation: 0.0d
+			order: 1
+		}
+		{
+			id: "6ED51371433E4B7A"
 			image: "kronwerke:textures/quests/dire_things/machines.png"
-			x: 7.5d
-			y: 5.5d
+			x: 1.34d
+			y: 27.224999999999998d
 			width: 3.68d
 			height: 0.9d
 			rotation: 0.0d
 			order: 1
 		}
 		{
-			id: "65CD6538B65A0842"
+			id: "75CD6538B65A0842"
 			image: "kronwerke:textures/quests/dire_things/factory.png"
-			x: 19.0d
-			y: 5.5d
+			x: 2.175d
+			y: 35.975d
 			width: 5.35d
 			height: 0.9d
 			rotation: 0.0d

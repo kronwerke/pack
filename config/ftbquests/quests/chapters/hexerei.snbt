@@ -1,19 +1,19 @@
 {
-	id: "2D557E138EE8E5B4"
+	id: "3D557E138EE8E5B4"
 	filename: "hexerei"
 	icon: {
 		id: "hexerei:mixing_cauldron"
 		count: 1
 	}
-	group: "03203A1312E25E36"
+	group: "13203A1312E25E36"
 	order_index: 16
 	default_quest_shape: "circle"
 	default_hide_dependency_lines: false
 	quests: [
 		{
-			id: "348228BD326C7E34"
-			x: 0.0d
-			y: 0.0d
+			id: "448228BD326C7E34"
+			x: 0.5d
+			y: 2.6d
 			icon: {
 				id: "hexerei:book_of_shadows"
 				count: 1
@@ -22,7 +22,7 @@
 			shape: "hexagon"
 			tasks: [
 				{
-					id: "F483EFEEAEB10394"
+					id: "2483EFEEAEB10394"
 					type: "item"
 					item: {
 						id: "hexerei:book_of_shadows"
@@ -33,7 +33,7 @@
 			]
 			rewards: [
 				{
-					id: "6F07561389AAC86B"
+					id: "7F07561389AAC86B"
 					type: "item"
 					item: {
 						id: "hexerei:sage_seed"
@@ -42,26 +42,26 @@
 					count: 8
 				}
 				{
-					id: "F129CB1794BF368F"
+					id: "2129CB1794BF368F"
 					type: "loot"
-					table_id: "F2BA64790EBA3DF5"
+					table_id: "22BA64790EBA3DF5"
 				}
 			]
 		}
 		{
-			id: "B90AEE3D4B76B666"
-			x: 2.5d
-			y: -1.8d
+			id: "590AEE3D4B76B666"
+			x: 3.25d
+			y: 2.1d
 			icon: {
 				id: "hexerei:animal_fat"
 				count: 1
 			}
 			dependencies: [
-				"348228BD326C7E34"
+				"448228BD326C7E34"
 			]
 			tasks: [
 				{
-					id: "AC0EEF9F704E90E4"
+					id: "4C0EEF9F704E90E4"
 					type: "item"
 					item: {
 						id: "hexerei:animal_fat"
@@ -72,7 +72,7 @@
 			]
 			rewards: [
 				{
-					id: "BD75A0E50C7AEB8B"
+					id: "5D75A0E50C7AEB8B"
 					type: "item"
 					item: {
 						id: "minecraft:leather"
@@ -83,20 +83,20 @@
 			]
 		}
 		{
-			id: "D80E0900D2373001"
-			x: 2.5d
-			y: 2.0d
+			id: "780E0900D2373001"
+			x: 3.25d
+			y: 6.300000000000001d
 			icon: {
 				id: "hexerei:book_of_shadows_altar"
 				count: 1
 			}
 			optional: true
 			dependencies: [
-				"348228BD326C7E34"
+				"448228BD326C7E34"
 			]
 			tasks: [
 				{
-					id: "3C5974B75E596489"
+					id: "4C5974B75E596489"
 					type: "item"
 					item: {
 						id: "hexerei:book_of_shadows_altar"
@@ -107,26 +107,27 @@
 			]
 			rewards: [
 				{
-					id: "8EF3CE6B6DD9D443"
+					id: "2EF3CE6B6DD9D443"
 					type: "xp_levels"
 					xp_levels: 3
 				}
 			]
 		}
 		{
-			id: "871428BF38732875"
-			x: 4.5d
-			y: -1.0d
+			id: "271428BF38732875"
+			x: 0.0d
+			y: 11.600000000000001d
 			icon: {
 				id: "hexerei:dowsing_rod"
 				count: 1
 			}
+			hide_dependency_lines: true
 			dependencies: [
-				"348228BD326C7E34"
+				"448228BD326C7E34"
 			]
 			tasks: [
 				{
-					id: "CFE2142A99ACA774"
+					id: "6FE2142A99ACA774"
 					type: "item"
 					item: {
 						id: "hexerei:dowsing_rod"
@@ -137,7 +138,7 @@
 			]
 			rewards: [
 				{
-					id: "A9E490965D94543A"
+					id: "49E490965D94543A"
 					type: "item"
 					item: {
 						id: "minecraft:compass"
@@ -148,20 +149,20 @@
 			]
 		}
 		{
-			id: "C3B98263B476A026"
-			x: 4.5d
-			y: 1.2d
+			id: "63B98263B476A026"
+			x: 3.25d
+			y: 4.2d
 			icon: {
 				id: "hexerei:selenite_shard"
 				count: 1
 			}
 			optional: true
 			dependencies: [
-				"348228BD326C7E34"
+				"448228BD326C7E34"
 			]
 			tasks: [
 				{
-					id: "B417882F2BD312F8"
+					id: "5417882F2BD312F8"
 					type: "item"
 					item: {
 						id: "hexerei:selenite_shard"
@@ -172,26 +173,26 @@
 			]
 			rewards: [
 				{
-					id: "E1CCA2B615496E06"
+					id: "11CCA2B615496E06"
 					type: "xp_levels"
 					xp_levels: 3
 				}
 			]
 		}
 		{
-			id: "D274747BA1993556"
-			x: 6.5d
-			y: -1.0d
+			id: "7274747BA1993556"
+			x: 2.25d
+			y: 11.600000000000001d
 			icon: {
 				id: "hexerei:mandrake_flowers"
 				count: 1
 			}
 			dependencies: [
-				"871428BF38732875"
+				"271428BF38732875"
 			]
 			tasks: [
 				{
-					id: "DB45DA970E76FA2E"
+					id: "7B45DA970E76FA2E"
 					type: "item"
 					item: {
 						id: "hexerei:mandrake_plant"
@@ -200,7 +201,7 @@
 					count: 1
 				}
 				{
-					id: "6B697D2C91231F53"
+					id: "7B697D2C91231F53"
 					type: "item"
 					item: {
 						id: "hexerei:belladonna_plant"
@@ -209,7 +210,7 @@
 					count: 1
 				}
 				{
-					id: "868193A6B2AD685D"
+					id: "268193A6B2AD685D"
 					type: "item"
 					item: {
 						id: "hexerei:mugwort_bush"
@@ -218,7 +219,7 @@
 					count: 1
 				}
 				{
-					id: "1345DC5506AF01DD"
+					id: "2345DC5506AF01DD"
 					type: "item"
 					item: {
 						id: "hexerei:yellow_dock_bush"
@@ -229,7 +230,7 @@
 			]
 			rewards: [
 				{
-					id: "B6A100F9B025B4ED"
+					id: "56A100F9B025B4ED"
 					type: "item"
 					item: {
 						id: "minecraft:bone_meal"
@@ -238,26 +239,26 @@
 					count: 32
 				}
 				{
-					id: "804F4D7F89B8A6AC"
+					id: "204F4D7F89B8A6AC"
 					type: "xp_levels"
 					xp_levels: 5
 				}
 			]
 		}
 		{
-			id: "8210ED2A8D9BD49A"
-			x: 8.7d
-			y: -2.6d
+			id: "2210ED2A8D9BD49A"
+			x: 4.5d
+			y: 11.600000000000001d
 			icon: {
 				id: "hexerei:mandrake_root"
 				count: 1
 			}
 			dependencies: [
-				"D274747BA1993556"
+				"7274747BA1993556"
 			]
 			tasks: [
 				{
-					id: "860EB2E10C6976B7"
+					id: "260EB2E10C6976B7"
 					type: "item"
 					item: {
 						id: "hexerei:mandrake_root"
@@ -266,7 +267,7 @@
 					count: 8
 				}
 				{
-					id: "A4CB93DCFD413E84"
+					id: "44CB93DCFD413E84"
 					type: "item"
 					item: {
 						id: "hexerei:mandrake_flowers"
@@ -277,7 +278,7 @@
 			]
 			rewards: [
 				{
-					id: "D3E1C20D1A86E1F9"
+					id: "73E1C20D1A86E1F9"
 					type: "item"
 					item: {
 						id: "minecraft:bone_meal"
@@ -288,19 +289,19 @@
 			]
 		}
 		{
-			id: "915BD29D3E7DF517"
-			x: 8.7d
-			y: -1.4d
+			id: "315BD29D3E7DF517"
+			x: 4.5d
+			y: 13.200000000000001d
 			icon: {
 				id: "hexerei:belladonna_berries"
 				count: 1
 			}
 			dependencies: [
-				"D274747BA1993556"
+				"7274747BA1993556"
 			]
 			tasks: [
 				{
-					id: "FDEA815A76464CF5"
+					id: "2DEA815A76464CF5"
 					type: "item"
 					item: {
 						id: "hexerei:belladonna_berries"
@@ -309,7 +310,7 @@
 					count: 8
 				}
 				{
-					id: "060BCCD05639614D"
+					id: "160BCCD05639614D"
 					type: "item"
 					item: {
 						id: "hexerei:belladonna_flowers"
@@ -320,7 +321,7 @@
 			]
 			rewards: [
 				{
-					id: "B8648CACF2FE64B2"
+					id: "58648CACF2FE64B2"
 					type: "item"
 					item: {
 						id: "minecraft:bone_meal"
@@ -331,19 +332,19 @@
 			]
 		}
 		{
-			id: "517C3AFAEF929D13"
-			x: 8.7d
-			y: -0.2d
+			id: "617C3AFAEF929D13"
+			x: 4.5d
+			y: 14.8d
 			icon: {
 				id: "hexerei:mugwort_flowers"
 				count: 1
 			}
 			dependencies: [
-				"D274747BA1993556"
+				"7274747BA1993556"
 			]
 			tasks: [
 				{
-					id: "782B58BBD744F0EB"
+					id: "182B58BBD744F0EB"
 					type: "item"
 					item: {
 						id: "hexerei:mugwort_leaves"
@@ -352,7 +353,7 @@
 					count: 4
 				}
 				{
-					id: "D1C9F1DC2CE32F46"
+					id: "71C9F1DC2CE32F46"
 					type: "item"
 					item: {
 						id: "hexerei:mugwort_flowers"
@@ -363,7 +364,7 @@
 			]
 			rewards: [
 				{
-					id: "DF7720A4F32230FD"
+					id: "7F7720A4F32230FD"
 					type: "item"
 					item: {
 						id: "minecraft:bone_meal"
@@ -374,19 +375,19 @@
 			]
 		}
 		{
-			id: "03B1AD70D0753150"
-			x: 8.7d
-			y: 1.0d
+			id: "13B1AD70D0753150"
+			x: 4.5d
+			y: 16.400000000000002d
 			icon: {
 				id: "hexerei:yellow_dock_flowers"
 				count: 1
 			}
 			dependencies: [
-				"D274747BA1993556"
+				"7274747BA1993556"
 			]
 			tasks: [
 				{
-					id: "C5155A81B259AB15"
+					id: "65155A81B259AB15"
 					type: "item"
 					item: {
 						id: "hexerei:yellow_dock_leaves"
@@ -395,7 +396,7 @@
 					count: 4
 				}
 				{
-					id: "06F1DBFBEB937E57"
+					id: "16F1DBFBEB937E57"
 					type: "item"
 					item: {
 						id: "hexerei:yellow_dock_flowers"
@@ -406,7 +407,7 @@
 			]
 			rewards: [
 				{
-					id: "39F44B9435416BA0"
+					id: "49F44B9435416BA0"
 					type: "item"
 					item: {
 						id: "minecraft:bone_meal"
@@ -417,19 +418,19 @@
 			]
 		}
 		{
-			id: "DCD7F18DC4EE3DD4"
-			x: 6.5d
-			y: 1.2d
+			id: "7CD7F18DC4EE3DD4"
+			x: 2.25d
+			y: 13.200000000000001d
 			icon: {
 				id: "hexerei:willow_log"
 				count: 1
 			}
 			dependencies: [
-				"871428BF38732875"
+				"271428BF38732875"
 			]
 			tasks: [
 				{
-					id: "111E06E3BAFAF766"
+					id: "211E06E3BAFAF766"
 					type: "item"
 					item: {
 						id: "hexerei:willow_log"
@@ -438,7 +439,7 @@
 					count: 8
 				}
 				{
-					id: "7F862028F4E30D80"
+					id: "1F862028F4E30D80"
 					type: "item"
 					item: {
 						id: "hexerei:mahogany_log"
@@ -449,7 +450,7 @@
 			]
 			rewards: [
 				{
-					id: "6AA4374C6E5E02FB"
+					id: "7AA4374C6E5E02FB"
 					type: "item"
 					item: {
 						id: "minecraft:iron_axe"
@@ -460,21 +461,22 @@
 			]
 		}
 		{
-			id: "05DF5F6346BEB7E0"
-			x: 0.5d
-			y: 6.0d
+			id: "15DF5F6346BEB7E0"
+			x: 0.375d
+			y: 21.575d
 			icon: {
 				id: "hexerei:mixing_cauldron"
 				count: 1
 			}
 			size: 1.75d
 			shape: "square"
+			hide_dependency_lines: true
 			dependencies: [
-				"348228BD326C7E34"
+				"448228BD326C7E34"
 			]
 			tasks: [
 				{
-					id: "40D7B510DD1C05A0"
+					id: "50D7B510DD1C05A0"
 					type: "item"
 					item: {
 						id: "hexerei:mixing_cauldron"
@@ -485,7 +487,7 @@
 			]
 			rewards: [
 				{
-					id: "DA3C3EBCE85B02B2"
+					id: "7A3C3EBCE85B02B2"
 					type: "item"
 					item: {
 						id: "minecraft:water_bucket"
@@ -494,7 +496,7 @@
 					count: 1
 				}
 				{
-					id: "C367AE2B7EF99C4E"
+					id: "6367AE2B7EF99C4E"
 					type: "item"
 					item: {
 						id: "minecraft:lava_bucket"
@@ -505,19 +507,19 @@
 			]
 		}
 		{
-			id: "7985BAF435D6A8A8"
-			x: 2.7d
-			y: 5.2d
+			id: "1985BAF435D6A8A8"
+			x: 3.0d
+			y: 21.2d
 			icon: {
 				id: "hexerei:tallow_bottle"
 				count: 1
 			}
 			dependencies: [
-				"05DF5F6346BEB7E0"
+				"15DF5F6346BEB7E0"
 			]
 			tasks: [
 				{
-					id: "6FA5AADCB9A60CBA"
+					id: "7FA5AADCB9A60CBA"
 					type: "item"
 					item: {
 						id: "hexerei:tallow_bottle"
@@ -528,7 +530,7 @@
 			]
 			rewards: [
 				{
-					id: "B8028CD4A9F71657"
+					id: "58028CD4A9F71657"
 					type: "item"
 					item: {
 						id: "minecraft:glass_bottle"
@@ -539,19 +541,19 @@
 			]
 		}
 		{
-			id: "52AB82D6E5AA08DF"
-			x: 4.7d
-			y: 5.2d
+			id: "62AB82D6E5AA08DF"
+			x: 5.25d
+			y: 21.2d
 			icon: {
 				id: "hexerei:candle_dipper"
 				count: 1
 			}
 			dependencies: [
-				"7985BAF435D6A8A8"
+				"1985BAF435D6A8A8"
 			]
 			tasks: [
 				{
-					id: "01EB7CA690FFB2CA"
+					id: "11EB7CA690FFB2CA"
 					type: "item"
 					item: {
 						id: "hexerei:candle_dipper"
@@ -562,7 +564,7 @@
 			]
 			rewards: [
 				{
-					id: "D2CA9F0B86CAABE4"
+					id: "72CA9F0B86CAABE4"
 					type: "item"
 					item: {
 						id: "minecraft:string"
@@ -573,19 +575,19 @@
 			]
 		}
 		{
-			id: "4E515F5CD5128504"
-			x: 6.7d
-			y: 5.2d
+			id: "5E515F5CD5128504"
+			x: 7.5d
+			y: 21.2d
 			icon: {
 				id: "hexerei:candle"
 				count: 1
 			}
 			dependencies: [
-				"52AB82D6E5AA08DF"
+				"62AB82D6E5AA08DF"
 			]
 			tasks: [
 				{
-					id: "E60E533F9389675A"
+					id: "160E533F9389675A"
 					type: "item"
 					item: {
 						id: "hexerei:candle"
@@ -596,7 +598,7 @@
 			]
 			rewards: [
 				{
-					id: "5055FE572098A581"
+					id: "6055FE572098A581"
 					type: "item"
 					item: {
 						id: "minecraft:flint_and_steel"
@@ -605,27 +607,27 @@
 					count: 1
 				}
 				{
-					id: "9500885515BEB69B"
+					id: "3500885515BEB69B"
 					type: "xp_levels"
 					xp_levels: 5
 				}
 			]
 		}
 		{
-			id: "9876D429D5CE1277"
-			x: 8.7d
-			y: 5.2d
+			id: "3876D429D5CE1277"
+			x: 9.75d
+			y: 21.2d
 			icon: {
 				id: "hexerei:candelabra"
 				count: 1
 			}
 			optional: true
 			dependencies: [
-				"4E515F5CD5128504"
+				"5E515F5CD5128504"
 			]
 			tasks: [
 				{
-					id: "A9BAED07F70C35DA"
+					id: "49BAED07F70C35DA"
 					type: "item"
 					item: {
 						id: "hexerei:candelabra"
@@ -636,7 +638,7 @@
 			]
 			rewards: [
 				{
-					id: "BEBADE1CE3E7FEE9"
+					id: "5EBADE1CE3E7FEE9"
 					type: "item"
 					item: {
 						id: "minecraft:chain"
@@ -647,25 +649,25 @@
 			]
 		}
 		{
-			id: "6952E48CECDB3BEC"
-			x: 8.7d
-			y: 7.0d
+			id: "7952E48CECDB3BEC"
+			x: 9.75d
+			y: 23.175d
 			icon: {
 				id: "minecraft:potion"
 				count: 1
 			}
 			dependencies: [
-				"4E515F5CD5128504"
+				"5E515F5CD5128504"
 			]
 			tasks: [
 				{
-					id: "7B065F03CE57E447"
+					id: "1B065F03CE57E447"
 					type: "checkmark"
 				}
 			]
 			rewards: [
 				{
-					id: "32707E83399E50C2"
+					id: "42707E83399E50C2"
 					type: "item"
 					item: {
 						id: "minecraft:glass_bottle"
@@ -674,26 +676,26 @@
 					count: 8
 				}
 				{
-					id: "897B40032CD280BF"
+					id: "297B40032CD280BF"
 					type: "xp_levels"
 					xp_levels: 5
 				}
 			]
 		}
 		{
-			id: "9AE12336FF9ED04E"
-			x: 2.7d
-			y: 7.0d
+			id: "3AE12336FF9ED04E"
+			x: 3.0d
+			y: 23.175d
 			icon: {
 				id: "hexerei:blood_sigil"
 				count: 1
 			}
 			dependencies: [
-				"05DF5F6346BEB7E0"
+				"15DF5F6346BEB7E0"
 			]
 			tasks: [
 				{
-					id: "AF9DA6BAE0C61130"
+					id: "4F9DA6BAE0C61130"
 					type: "item"
 					item: {
 						id: "hexerei:blood_sigil"
@@ -702,7 +704,7 @@
 					count: 1
 				}
 				{
-					id: "F8D363C5BC217E09"
+					id: "28D363C5BC217E09"
 					type: "item"
 					item: {
 						id: "hexerei:blood_bottle"
@@ -713,7 +715,7 @@
 			]
 			rewards: [
 				{
-					id: "4E669148BC3952E1"
+					id: "5E669148BC3952E1"
 					type: "item"
 					item: {
 						id: "minecraft:cooked_beef"
@@ -722,27 +724,27 @@
 					count: 8
 				}
 				{
-					id: "F5C75DAB92BD8D5C"
+					id: "25C75DAB92BD8D5C"
 					type: "xp_levels"
 					xp_levels: 5
 				}
 			]
 		}
 		{
-			id: "A6D89965516574CE"
-			x: 4.7d
-			y: 7.0d
+			id: "46D89965516574CE"
+			x: 5.25d
+			y: 23.175d
 			icon: {
 				id: "hexerei:herb_jar"
 				count: 1
 			}
 			optional: true
 			dependencies: [
-				"9AE12336FF9ED04E"
+				"3AE12336FF9ED04E"
 			]
 			tasks: [
 				{
-					id: "3E715CDA4AB395AA"
+					id: "4E715CDA4AB395AA"
 					type: "item"
 					item: {
 						id: "hexerei:herb_jar"
@@ -753,7 +755,7 @@
 			]
 			rewards: [
 				{
-					id: "0492F83CEA35A1D6"
+					id: "1492F83CEA35A1D6"
 					type: "item"
 					item: {
 						id: "minecraft:sand"
@@ -764,20 +766,20 @@
 			]
 		}
 		{
-			id: "403AABEE9CC92494"
-			x: 6.7d
-			y: 7.0d
+			id: "503AABEE9CC92494"
+			x: 7.5d
+			y: 23.175d
 			icon: {
 				id: "hexerei:coffer"
 				count: 1
 			}
 			optional: true
 			dependencies: [
-				"A6D89965516574CE"
+				"46D89965516574CE"
 			]
 			tasks: [
 				{
-					id: "84B3938BCD1E5FBB"
+					id: "24B3938BCD1E5FBB"
 					type: "item"
 					item: {
 						id: "hexerei:coffer"
@@ -788,7 +790,7 @@
 			]
 			rewards: [
 				{
-					id: "DB423365ADF795AB"
+					id: "7B423365ADF795AB"
 					type: "item"
 					item: {
 						id: "minecraft:gold_ingot"
@@ -799,20 +801,20 @@
 			]
 		}
 		{
-			id: "9F108701026EFF92"
-			x: 4.7d
-			y: 8.8d
+			id: "3F108701026EFF92"
+			x: 7.5d
+			y: 25.15d
 			icon: {
 				id: "hexerei:small_satchel"
 				count: 1
 			}
 			optional: true
 			dependencies: [
-				"A6D89965516574CE"
+				"46D89965516574CE"
 			]
 			tasks: [
 				{
-					id: "EFD21A71F0279B90"
+					id: "1FD21A71F0279B90"
 					type: "item"
 					item: {
 						id: "hexerei:small_satchel"
@@ -823,7 +825,7 @@
 			]
 			rewards: [
 				{
-					id: "68A78E5C8686522A"
+					id: "78A78E5C8686522A"
 					type: "item"
 					item: {
 						id: "minecraft:leather"
@@ -834,20 +836,20 @@
 			]
 		}
 		{
-			id: "82C1332ED7FAEE7F"
-			x: 6.7d
-			y: 8.8d
+			id: "22C1332ED7FAEE7F"
+			x: 9.75d
+			y: 25.15d
 			icon: {
 				id: "hexerei:witch_helmet"
 				count: 1
 			}
 			optional: true
 			dependencies: [
-				"403AABEE9CC92494"
+				"503AABEE9CC92494"
 			]
 			tasks: [
 				{
-					id: "159A8FD1AD89A160"
+					id: "259A8FD1AD89A160"
 					type: "item"
 					item: {
 						id: "hexerei:witch_helmet"
@@ -856,7 +858,7 @@
 					count: 1
 				}
 				{
-					id: "991C62B4944B0375"
+					id: "391C62B4944B0375"
 					type: "item"
 					item: {
 						id: "hexerei:witch_chestplate"
@@ -865,7 +867,7 @@
 					count: 1
 				}
 				{
-					id: "E4CA3CB204879C1F"
+					id: "14CA3CB204879C1F"
 					type: "item"
 					item: {
 						id: "hexerei:witch_boots"
@@ -876,7 +878,7 @@
 			]
 			rewards: [
 				{
-					id: "736431F461A18961"
+					id: "136431F461A18961"
 					type: "item"
 					item: {
 						id: "minecraft:black_dye"
@@ -885,27 +887,27 @@
 					count: 8
 				}
 				{
-					id: "56E10D863BADB068"
+					id: "66E10D863BADB068"
 					type: "xp_levels"
 					xp_levels: 5
 				}
 			]
 		}
 		{
-			id: "E438A506F83E986D"
-			x: -1.5d
-			y: 7.5d
+			id: "1438A506F83E986D"
+			x: 3.0d
+			y: 25.15d
 			icon: {
 				id: "hexerei:crystal_ball"
 				count: 1
 			}
 			optional: true
 			dependencies: [
-				"05DF5F6346BEB7E0"
+				"15DF5F6346BEB7E0"
 			]
 			tasks: [
 				{
-					id: "373288E58E227748"
+					id: "473288E58E227748"
 					type: "item"
 					item: {
 						id: "hexerei:crystal_ball"
@@ -916,7 +918,7 @@
 			]
 			rewards: [
 				{
-					id: "252D526C2FC58C9D"
+					id: "352D526C2FC58C9D"
 					type: "item"
 					item: {
 						id: "minecraft:glass"
@@ -927,19 +929,20 @@
 			]
 		}
 		{
-			id: "9D0C2C9B2F0E878A"
-			x: 11.0d
-			y: 5.2d
+			id: "3D0C2C9B2F0E878A"
+			x: 0.0d
+			y: 34.275d
 			icon: {
 				id: "hexerei:herb_drying_rack"
 				count: 1
 			}
+			hide_dependency_lines: true
 			dependencies: [
-				"D274747BA1993556"
+				"7274747BA1993556"
 			]
 			tasks: [
 				{
-					id: "B2FC3B299B33019D"
+					id: "52FC3B299B33019D"
 					type: "item"
 					item: {
 						id: "hexerei:herb_drying_rack"
@@ -950,7 +953,7 @@
 			]
 			rewards: [
 				{
-					id: "7D30CB3CBC14F931"
+					id: "1D30CB3CBC14F931"
 					type: "item"
 					item: {
 						id: "minecraft:string"
@@ -961,19 +964,19 @@
 			]
 		}
 		{
-			id: "214242C058D73400"
-			x: 13.0d
-			y: 5.2d
+			id: "314242C058D73400"
+			x: 2.25d
+			y: 34.275d
 			icon: {
 				id: "hexerei:dried_mandrake_flowers"
 				count: 1
 			}
 			dependencies: [
-				"9D0C2C9B2F0E878A"
+				"3D0C2C9B2F0E878A"
 			]
 			tasks: [
 				{
-					id: "7F34FB3066B4F788"
+					id: "1F34FB3066B4F788"
 					type: "item"
 					item: {
 						id: "hexerei:dried_mandrake_flowers"
@@ -984,26 +987,26 @@
 			]
 			rewards: [
 				{
-					id: "B675A83CA835BAF9"
+					id: "5675A83CA835BAF9"
 					type: "xp_levels"
 					xp_levels: 3
 				}
 			]
 		}
 		{
-			id: "1AF19A157D9CAAE2"
-			x: 15.0d
-			y: 5.2d
+			id: "2AF19A157D9CAAE2"
+			x: 4.5d
+			y: 34.275d
 			icon: {
 				id: "hexerei:pestle_and_mortar"
 				count: 1
 			}
 			dependencies: [
-				"214242C058D73400"
+				"314242C058D73400"
 			]
 			tasks: [
 				{
-					id: "42FF4B8B60E79B2E"
+					id: "52FF4B8B60E79B2E"
 					type: "item"
 					item: {
 						id: "hexerei:pestle_and_mortar"
@@ -1014,7 +1017,7 @@
 			]
 			rewards: [
 				{
-					id: "9192E9DA317612A6"
+					id: "3192E9DA317612A6"
 					type: "item"
 					item: {
 						id: "minecraft:quartz"
@@ -1025,20 +1028,20 @@
 			]
 		}
 		{
-			id: "D7E2BA7E6004DF15"
-			x: 17.0d
-			y: 5.2d
+			id: "77E2BA7E6004DF15"
+			x: 7.0d
+			y: 34.275d
 			icon: {
 				id: "hexerei:mindful_trance_blend"
 				count: 1
 			}
 			optional: true
 			dependencies: [
-				"1AF19A157D9CAAE2"
+				"2AF19A157D9CAAE2"
 			]
 			tasks: [
 				{
-					id: "B83D985414693719"
+					id: "583D985414693719"
 					type: "item"
 					item: {
 						id: "hexerei:mindful_trance_blend"
@@ -1049,26 +1052,26 @@
 			]
 			rewards: [
 				{
-					id: "4893F1799D151C9F"
+					id: "5893F1799D151C9F"
 					type: "xp_levels"
 					xp_levels: 3
 				}
 			]
 		}
 		{
-			id: "B117E9E50A8546C5"
-			x: 11.0d
-			y: 7.0d
+			id: "5117E9E50A8546C5"
+			x: 2.25d
+			y: 36.125d
 			icon: {
 				id: "hexerei:sage"
 				count: 1
 			}
 			dependencies: [
-				"9D0C2C9B2F0E878A"
+				"3D0C2C9B2F0E878A"
 			]
 			tasks: [
 				{
-					id: "FAA0C3AE06C1D8C5"
+					id: "2AA0C3AE06C1D8C5"
 					type: "item"
 					item: {
 						id: "hexerei:sage"
@@ -1079,7 +1082,7 @@
 			]
 			rewards: [
 				{
-					id: "C1FF66828A9AF313"
+					id: "61FF66828A9AF313"
 					type: "item"
 					item: {
 						id: "hexerei:sage_seed"
@@ -1090,19 +1093,19 @@
 			]
 		}
 		{
-			id: "2828F18000825CC2"
-			x: 13.0d
-			y: 7.0d
+			id: "3828F18000825CC2"
+			x: 4.5d
+			y: 37.975d
 			icon: {
 				id: "hexerei:dried_sage_bundle"
 				count: 1
 			}
 			dependencies: [
-				"B117E9E50A8546C5"
+				"5117E9E50A8546C5"
 			]
 			tasks: [
 				{
-					id: "65C60AB7C7514629"
+					id: "75C60AB7C7514629"
 					type: "item"
 					item: {
 						id: "hexerei:dried_sage_bundle"
@@ -1113,7 +1116,7 @@
 			]
 			rewards: [
 				{
-					id: "9AEA54A84BB2E56C"
+					id: "3AEA54A84BB2E56C"
 					type: "item"
 					item: {
 						id: "minecraft:string"
@@ -1124,9 +1127,9 @@
 			]
 		}
 		{
-			id: "D59DFB18CD053CE6"
-			x: 15.0d
-			y: 7.0d
+			id: "759DFB18CD053CE6"
+			x: 7.0d
+			y: 38.225d
 			icon: {
 				id: "hexerei:sage_burning_plate"
 				count: 1
@@ -1134,11 +1137,11 @@
 			size: 1.5d
 			shape: "diamond"
 			dependencies: [
-				"2828F18000825CC2"
+				"3828F18000825CC2"
 			]
 			tasks: [
 				{
-					id: "B8B4E545DBE0562F"
+					id: "58B4E545DBE0562F"
 					type: "item"
 					item: {
 						id: "hexerei:sage_burning_plate"
@@ -1149,31 +1152,31 @@
 			]
 			rewards: [
 				{
-					id: "7E61ADD237EC7754"
+					id: "1E61ADD237EC7754"
 					type: "loot"
-					table_id: "BA8E33E78A3B3A0C"
+					table_id: "5A8E33E78A3B3A0C"
 				}
 				{
-					id: "8227F8BC8791C567"
+					id: "2227F8BC8791C567"
 					type: "xp_levels"
 					xp_levels: 10
 				}
 			]
 		}
 		{
-			id: "F7809909862773DA"
-			x: 17.0d
-			y: 7.0d
+			id: "27809909862773DA"
+			x: 7.0d
+			y: 36.125d
 			icon: {
 				id: "hexerei:seed_mixture"
 				count: 1
 			}
 			dependencies: [
-				"1AF19A157D9CAAE2"
+				"2AF19A157D9CAAE2"
 			]
 			tasks: [
 				{
-					id: "14CFC32E33DE7BCA"
+					id: "24CFC32E33DE7BCA"
 					type: "item"
 					item: {
 						id: "hexerei:seed_mixture"
@@ -1184,7 +1187,7 @@
 			]
 			rewards: [
 				{
-					id: "7DE092F09871C827"
+					id: "1DE092F09871C827"
 					type: "item"
 					item: {
 						id: "minecraft:wheat_seeds"
@@ -1195,25 +1198,25 @@
 			]
 		}
 		{
-			id: "518E9D2E071570EF"
-			x: 8.7d
-			y: 9.4d
+			id: "618E9D2E071570EF"
+			x: 12.0d
+			y: 21.2d
 			icon: {
 				id: "minecraft:blaze_powder"
 				count: 1
 			}
 			dependencies: [
-				"6952E48CECDB3BEC"
+				"7952E48CECDB3BEC"
 			]
 			tasks: [
 				{
-					id: "06C6303DAA53F7C3"
+					id: "16C6303DAA53F7C3"
 					type: "checkmark"
 				}
 			]
 			rewards: [
 				{
-					id: "B7E6D34D8FCB2D8E"
+					id: "57E6D34D8FCB2D8E"
 					type: "item"
 					item: {
 						id: "hexerei:candle"
@@ -1224,25 +1227,25 @@
 			]
 		}
 		{
-			id: "8E932C385529C7CC"
-			x: 10.7d
-			y: 9.4d
+			id: "2E932C385529C7CC"
+			x: 12.0d
+			y: 23.175d
 			icon: {
 				id: "minecraft:sugar"
 				count: 1
 			}
 			dependencies: [
-				"6952E48CECDB3BEC"
+				"7952E48CECDB3BEC"
 			]
 			tasks: [
 				{
-					id: "9261D800EB0B756B"
+					id: "3261D800EB0B756B"
 					type: "checkmark"
 				}
 			]
 			rewards: [
 				{
-					id: "04C2F1178128E148"
+					id: "14C2F1178128E148"
 					type: "item"
 					item: {
 						id: "minecraft:sugar"
@@ -1253,25 +1256,25 @@
 			]
 		}
 		{
-			id: "10AE535EE804F883"
-			x: 12.7d
-			y: 9.4d
+			id: "20AE535EE804F883"
+			x: 12.0d
+			y: 25.15d
 			icon: {
 				id: "minecraft:magma_cream"
 				count: 1
 			}
 			dependencies: [
-				"6952E48CECDB3BEC"
+				"7952E48CECDB3BEC"
 			]
 			tasks: [
 				{
-					id: "7CFCAFBC06C4CF2C"
+					id: "1CFCAFBC06C4CF2C"
 					type: "checkmark"
 				}
 			]
 			rewards: [
 				{
-					id: "F4D3B9377A5566D4"
+					id: "24D3B9377A5566D4"
 					type: "item"
 					item: {
 						id: "minecraft:magma_cream"
@@ -1282,25 +1285,25 @@
 			]
 		}
 		{
-			id: "92352D5A1345019C"
-			x: 14.7d
-			y: 9.4d
+			id: "32352D5A1345019C"
+			x: 12.0d
+			y: 27.125d
 			icon: {
 				id: "minecraft:glowstone_dust"
 				count: 1
 			}
 			dependencies: [
-				"6952E48CECDB3BEC"
+				"7952E48CECDB3BEC"
 			]
 			tasks: [
 				{
-					id: "0B263346669B6191"
+					id: "1B263346669B6191"
 					type: "checkmark"
 				}
 			]
 			rewards: [
 				{
-					id: "BAE605A21E711911"
+					id: "5AE605A21E711911"
 					type: "item"
 					item: {
 						id: "minecraft:glowstone_dust"
@@ -1311,26 +1314,26 @@
 			]
 		}
 		{
-			id: "8AE4542C3AE5DBDB"
-			x: 16.7d
-			y: 9.4d
+			id: "2AE4542C3AE5DBDB"
+			x: 12.0d
+			y: 29.1d
 			icon: {
 				id: "minecraft:fermented_spider_eye"
 				count: 1
 			}
 			optional: true
 			dependencies: [
-				"6952E48CECDB3BEC"
+				"7952E48CECDB3BEC"
 			]
 			tasks: [
 				{
-					id: "0A644FD925E5303A"
+					id: "1A644FD925E5303A"
 					type: "checkmark"
 				}
 			]
 			rewards: [
 				{
-					id: "68151CF8E936FA07"
+					id: "78151CF8E936FA07"
 					type: "item"
 					item: {
 						id: "minecraft:fermented_spider_eye"
@@ -1341,19 +1344,20 @@
 			]
 		}
 		{
-			id: "77C91AA3D7D43887"
-			x: 0.5d
-			y: 12.5d
+			id: "17C91AA3D7D43887"
+			x: 0.0d
+			y: 49.825d
 			icon: {
 				id: "hexerei:broom_brush"
 				count: 1
 			}
+			hide_dependency_lines: true
 			dependencies: [
-				"05DF5F6346BEB7E0"
+				"15DF5F6346BEB7E0"
 			]
 			tasks: [
 				{
-					id: "55BFCC89DEAC9D82"
+					id: "65BFCC89DEAC9D82"
 					type: "item"
 					item: {
 						id: "hexerei:broom_brush"
@@ -1364,7 +1368,7 @@
 			]
 			rewards: [
 				{
-					id: "A8C2DABE31E64CCE"
+					id: "48C2DABE31E64CCE"
 					type: "item"
 					item: {
 						id: "minecraft:wheat"
@@ -1375,22 +1379,23 @@
 			]
 		}
 		{
-			id: "0594B2996DD40ED9"
-			x: 2.8d
-			y: 12.5d
+			id: "1594B2996DD40ED9"
+			x: 2.75d
+			y: 50.325d
 			icon: {
 				id: "hexerei:willow_broom"
 				count: 1
 			}
 			size: 2.0d
 			shape: "diamond"
+			hide_dependency_lines: true
 			dependencies: [
-				"77C91AA3D7D43887"
-				"9AE12336FF9ED04E"
+				"17C91AA3D7D43887"
+				"3AE12336FF9ED04E"
 			]
 			tasks: [
 				{
-					id: "18F6B1B252CFBB6F"
+					id: "28F6B1B252CFBB6F"
 					type: "item"
 					item: {
 						id: "hexerei:willow_broom"
@@ -1401,32 +1406,32 @@
 			]
 			rewards: [
 				{
-					id: "97B2C2589F3647C2"
+					id: "37B2C2589F3647C2"
 					type: "loot"
-					table_id: "BA8E33E78A3B3A0C"
+					table_id: "5A8E33E78A3B3A0C"
 				}
 				{
-					id: "79F7A6C20292C07D"
+					id: "19F7A6C20292C07D"
 					type: "xp_levels"
 					xp_levels: 10
 				}
 			]
 		}
 		{
-			id: "F6ECA6444DDF8B64"
-			x: 5.2d
-			y: 11.6d
+			id: "26ECA6444DDF8B64"
+			x: 5.75d
+			y: 49.825d
 			icon: {
 				id: "hexerei:herb_enhanced_broom_brush"
 				count: 1
 			}
 			optional: true
 			dependencies: [
-				"0594B2996DD40ED9"
+				"1594B2996DD40ED9"
 			]
 			tasks: [
 				{
-					id: "31258408B18AB381"
+					id: "41258408B18AB381"
 					type: "item"
 					item: {
 						id: "hexerei:herb_enhanced_broom_brush"
@@ -1437,27 +1442,27 @@
 			]
 			rewards: [
 				{
-					id: "BDE342D7FE1DE02E"
+					id: "5DE342D7FE1DE02E"
 					type: "xp_levels"
 					xp_levels: 5
 				}
 			]
 		}
 		{
-			id: "5CB96BE277CE5B5E"
-			x: 7.6d
-			y: 10.9d
+			id: "6CB96BE277CE5B5E"
+			x: 8.25d
+			y: 49.825d
 			icon: {
 				id: "hexerei:moon_dust_brush"
 				count: 1
 			}
 			optional: true
 			dependencies: [
-				"F6ECA6444DDF8B64"
+				"26ECA6444DDF8B64"
 			]
 			tasks: [
 				{
-					id: "A4FC2BE51842EE2A"
+					id: "44FC2BE51842EE2A"
 					type: "item"
 					item: {
 						id: "hexerei:moon_dust_brush"
@@ -1468,7 +1473,7 @@
 			]
 			rewards: [
 				{
-					id: "A00602ADDE3F702C"
+					id: "400602ADDE3F702C"
 					type: "item"
 					item: {
 						id: "minecraft:redstone"
@@ -1479,20 +1484,20 @@
 			]
 		}
 		{
-			id: "316366C37FD4E2B3"
-			x: 5.2d
-			y: 13.4d
+			id: "416366C37FD4E2B3"
+			x: 5.75d
+			y: 54.525000000000006d
 			icon: {
 				id: "hexerei:witch_hazel_broom"
 				count: 1
 			}
 			optional: true
 			dependencies: [
-				"0594B2996DD40ED9"
+				"1594B2996DD40ED9"
 			]
 			tasks: [
 				{
-					id: "A7AA007F4022D9B7"
+					id: "47AA007F4022D9B7"
 					type: "item"
 					item: {
 						id: "hexerei:witch_hazel_broom"
@@ -1503,7 +1508,7 @@
 			]
 			rewards: [
 				{
-					id: "DD98614A664E2E8C"
+					id: "7D98614A664E2E8C"
 					type: "item"
 					item: {
 						id: "minecraft:diamond"
@@ -1514,9 +1519,9 @@
 			]
 		}
 		{
-			id: "48753FE55EDBEE1B"
-			x: 7.6d
-			y: 12.5d
+			id: "58753FE55EDBEE1B"
+			x: 5.75d
+			y: 52.425000000000004d
 			icon: {
 				id: "hexerei:mahogany_broom"
 				count: 1
@@ -1524,11 +1529,11 @@
 			size: 1.5d
 			shape: "diamond"
 			dependencies: [
-				"0594B2996DD40ED9"
+				"1594B2996DD40ED9"
 			]
 			tasks: [
 				{
-					id: "EE4932A64B7D5455"
+					id: "1E4932A64B7D5455"
 					type: "item"
 					item: {
 						id: "hexerei:mahogany_broom"
@@ -1539,38 +1544,38 @@
 			]
 			rewards: [
 				{
-					id: "805009434AEE74D7"
+					id: "205009434AEE74D7"
 					type: "loot"
-					table_id: "C79EAEAE0F26AA7F"
+					table_id: "679EAEAE0F26AA7F"
 				}
 				{
-					id: "646CA5B2F75B3D60"
+					id: "746CA5B2F75B3D60"
 					type: "xp_levels"
 					xp_levels: 10
 				}
 			]
 		}
 		{
-			id: "E518C78A930F0F34"
-			x: 9.8d
-			y: 12.5d
+			id: "1518C78A930F0F34"
+			x: 8.25d
+			y: 52.175000000000004d
 			icon: {
 				id: "hexerei:broom_netherite_tip"
 				count: 1
 			}
 			optional: true
 			dependencies: [
-				"48753FE55EDBEE1B"
+				"58753FE55EDBEE1B"
 			]
 			tasks: [
 				{
-					id: "AB8CDCF0BD27E200"
+					id: "4B8CDCF0BD27E200"
 					type: "checkmark"
 				}
 			]
 			rewards: [
 				{
-					id: "77A8FFC0979EDA89"
+					id: "17A8FFC0979EDA89"
 					type: "item"
 					item: {
 						id: "minecraft:prismarine_shard"
@@ -1581,20 +1586,21 @@
 			]
 		}
 		{
-			id: "B96ADDFDC00D322E"
-			x: 19.0d
-			y: 7.0d
+			id: "596ADDFDC00D322E"
+			x: 0.25d
+			y: 43.275d
 			icon: {
 				id: "hexerei:crow_flute"
 				count: 1
 			}
 			size: 1.5d
+			hide_dependency_lines: true
 			dependencies: [
-				"F7809909862773DA"
+				"27809909862773DA"
 			]
 			tasks: [
 				{
-					id: "213817D1886E9C8C"
+					id: "313817D1886E9C8C"
 					type: "item"
 					item: {
 						id: "hexerei:crow_flute"
@@ -1605,7 +1611,7 @@
 			]
 			rewards: [
 				{
-					id: "0061CFA7BBFCC7C7"
+					id: "1061CFA7BBFCC7C7"
 					type: "item"
 					item: {
 						id: "hexerei:seed_mixture"
@@ -1614,27 +1620,27 @@
 					count: 8
 				}
 				{
-					id: "EC7BBF9D3F902077"
+					id: "1C7BBF9D3F902077"
 					type: "xp_levels"
 					xp_levels: 5
 				}
 			]
 		}
 		{
-			id: "6FE94C618861F9CC"
-			x: 21.0d
-			y: 7.0d
+			id: "7FE94C618861F9CC"
+			x: 2.75d
+			y: 44.875d
 			icon: {
 				id: "hexerei:crow_blank_amulet"
 				count: 1
 			}
 			optional: true
 			dependencies: [
-				"B96ADDFDC00D322E"
+				"596ADDFDC00D322E"
 			]
 			tasks: [
 				{
-					id: "CC5BEBDBB71161F6"
+					id: "6C5BEBDBB71161F6"
 					type: "item"
 					item: {
 						id: "hexerei:crow_blank_amulet"
@@ -1645,7 +1651,7 @@
 			]
 			rewards: [
 				{
-					id: "14F8D6680CDD533A"
+					id: "24F8D6680CDD533A"
 					type: "item"
 					item: {
 						id: "minecraft:gold_nugget"
@@ -1656,20 +1662,20 @@
 			]
 		}
 		{
-			id: "50A6208CE0ADDB45"
-			x: 21.0d
-			y: 5.2d
+			id: "60A6208CE0ADDB45"
+			x: 2.75d
+			y: 43.025d
 			icon: {
 				id: "hexerei:courier_package"
 				count: 1
 			}
 			optional: true
 			dependencies: [
-				"B96ADDFDC00D322E"
+				"596ADDFDC00D322E"
 			]
 			tasks: [
 				{
-					id: "57C83B494A59AFBE"
+					id: "67C83B494A59AFBE"
 					type: "item"
 					item: {
 						id: "hexerei:courier_package"
@@ -1678,7 +1684,7 @@
 					count: 1
 				}
 				{
-					id: "4821965D051DE226"
+					id: "5821965D051DE226"
 					type: "item"
 					item: {
 						id: "hexerei:willow_courier_depot"
@@ -1689,7 +1695,7 @@
 			]
 			rewards: [
 				{
-					id: "133D203C31BC4FD4"
+					id: "233D203C31BC4FD4"
 					type: "item"
 					item: {
 						id: "minecraft:cod"
@@ -1698,30 +1704,31 @@
 					count: 8
 				}
 				{
-					id: "9C87FC458E879DB6"
+					id: "3C87FC458E879DB6"
 					type: "xp_levels"
 					xp_levels: 5
 				}
 			]
 		}
 		{
-			id: "F6AB1A4423157CE6"
-			x: 21.0d
-			y: 10.5d
+			id: "26AB1A4423157CE6"
+			x: 11.25d
+			y: 50.575d
 			icon: {
 				id: "hexerei:mixing_cauldron"
 				count: 1
 			}
 			size: 2.5d
 			shape: "gear"
+			hide_dependency_lines: true
 			dependencies: [
-				"D59DFB18CD053CE6"
-				"E518C78A930F0F34"
-				"6FE94C618861F9CC"
+				"759DFB18CD053CE6"
+				"1518C78A930F0F34"
+				"7FE94C618861F9CC"
 			]
 			tasks: [
 				{
-					id: "BD899E915D512AC1"
+					id: "5D899E915D512AC1"
 					type: "item"
 					item: {
 						id: "hexerei:candle"
@@ -1730,7 +1737,7 @@
 					count: 16
 				}
 				{
-					id: "60BBEA58316CCC36"
+					id: "70BBEA58316CCC36"
 					type: "item"
 					item: {
 						id: "hexerei:dried_sage_bundle"
@@ -1741,12 +1748,12 @@
 			]
 			rewards: [
 				{
-					id: "12D34FDC4B24FC67"
+					id: "22D34FDC4B24FC67"
 					type: "loot"
-					table_id: "C79EAEAE0F26AA7F"
+					table_id: "679EAEAE0F26AA7F"
 				}
 				{
-					id: "0BDC10B259B7D3E0"
+					id: "1BDC10B259B7D3E0"
 					type: "xp_levels"
 					xp_levels: 15
 				}
@@ -1755,72 +1762,62 @@
 	]
 	images: [
 		{
-			id: "8153DCDCFE821624"
+			id: "2153DCDCFE821624"
 			image: "kronwerke:textures/quests/hexerei/title.png"
-			x: 4.5d
-			y: -4.6d
+			x: 2.095d
+			y: 0.0d
 			width: 5.19d
 			height: 1.8d
 			rotation: 0.0d
 			order: 1
 		}
 		{
-			id: "9F729595804CC377"
+			id: "3F729595804CC377"
 			image: "kronwerke:textures/quests/hexerei/hexenkunst.png"
-			x: 4.5d
-			y: -2.8d
+			x: 1.475d
+			y: 10.25d
 			width: 3.95d
 			height: 0.9d
 			rotation: 0.0d
 			order: 1
 		}
 		{
-			id: "9EFC4E85877FA166"
+			id: "3EFC4E85877FA166"
 			image: "kronwerke:textures/quests/hexerei/kessel.png"
-			x: 3.7d
-			y: 3.6d
+			x: 2.255d
+			y: 19.849999999999998d
 			width: 5.51d
 			height: 0.9d
 			rotation: 0.0d
 			order: 1
 		}
 		{
-			id: "95A142E1635474D9"
+			id: "35A142E1635474D9"
 			image: "kronwerke:textures/quests/hexerei/kraeuter.png"
-			x: 14.0d
-			y: 3.6d
+			x: 1.5950000000000002d
+			y: 32.925000000000004d
 			width: 4.19d
 			height: 0.9d
 			rotation: 0.0d
 			order: 1
 		}
 		{
-			id: "8D0B7951AE1E9CB8"
-			image: "kronwerke:textures/quests/hexerei/kerzen.png"
-			x: 12.7d
-			y: 10.9d
-			width: 3.72d
-			height: 0.8d
-			rotation: 0.0d
-			order: 1
-		}
-		{
-			id: "3FCFFA2F442A4A1F"
-			image: "kronwerke:textures/quests/hexerei/besen.png"
-			x: 4.1d
-			y: 14.9d
-			width: 2.03d
-			height: 0.9d
-			rotation: 0.0d
-			order: 1
-		}
-		{
-			id: "FC69296F68C37EE4"
+			id: "2D0B7951AE1E9CB8"
 			image: "kronwerke:textures/quests/hexerei/vertraute.png"
-			x: 20.0d
-			y: 3.6d
+			x: 1.23d
+			y: 41.675000000000004d
 			width: 3.46d
 			height: 0.9d
+			rotation: 0.0d
+			order: 1
+		}
+		{
+			id: "4FCFFA2F442A4A1F"
+			image: "kronwerke:textures/quests/hexerei/kerzen.png"
+			x: 1.36d
+			y: 48.525d
+			width: 3.72d
+			height: 0.8d
 			rotation: 0.0d
 			order: 1
 		}

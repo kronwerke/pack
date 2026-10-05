@@ -1,19 +1,19 @@
 {
-	id: "FF29F86179E17906"
+	id: "2F29F86179E17906"
 	filename: "hostile_networks"
 	icon: {
 		id: "hostilenetworks:deep_learner"
 		count: 1
 	}
-	group: "AEAA9718BAF5A32A"
+	group: "4EAA9718BAF5A32A"
 	order_index: 63
 	default_quest_shape: "circle"
 	default_hide_dependency_lines: false
 	quests: [
 		{
-			id: "4FB9FCCC02BA9AD6"
-			x: 0.0d
-			y: 1.0d
+			id: "5FB9FCCC02BA9AD6"
+			x: 0.5d
+			y: 2.575d
 			icon: {
 				id: "hostilenetworks:deep_learner"
 				count: 1
@@ -22,7 +22,7 @@
 			shape: "hexagon"
 			tasks: [
 				{
-					id: "8B74AEA2A0D313D4"
+					id: "2B74AEA2A0D313D4"
 					type: "item"
 					item: {
 						id: "hostilenetworks:deep_learner"
@@ -33,7 +33,7 @@
 			]
 			rewards: [
 				{
-					id: "809479166DE6C1FD"
+					id: "209479166DE6C1FD"
 					type: "item"
 					item: {
 						id: "minecraft:obsidian"
@@ -42,26 +42,27 @@
 					count: 8
 				}
 				{
-					id: "3D525853705D5E37"
+					id: "4D525853705D5E37"
 					type: "loot"
-					table_id: "F2BA64790EBA3DF5"
+					table_id: "22BA64790EBA3DF5"
 				}
 			]
 		}
 		{
-			id: "7DC1331FA523CAC6"
-			x: 2.5d
-			y: 0.0d
+			id: "1DC1331FA523CAC6"
+			x: 0.0d
+			y: 7.375000000000001d
 			icon: {
 				id: "hostilenetworks:blank_data_model"
 				count: 1
 			}
+			hide_dependency_lines: true
 			dependencies: [
-				"4FB9FCCC02BA9AD6"
+				"5FB9FCCC02BA9AD6"
 			]
 			tasks: [
 				{
-					id: "7A60297C8767044D"
+					id: "1A60297C8767044D"
 					type: "item"
 					item: {
 						id: "hostilenetworks:blank_data_model"
@@ -72,7 +73,7 @@
 			]
 			rewards: [
 				{
-					id: "0201FEE064EB8150"
+					id: "1201FEE064EB8150"
 					type: "item"
 					item: {
 						id: "minecraft:clay_ball"
@@ -81,41 +82,42 @@
 					count: 16
 				}
 				{
-					id: "F2BD2BD76D740C71"
+					id: "22BD2BD76D740C71"
 					type: "xp_levels"
 					xp_levels: 3
 				}
 			]
 		}
 		{
-			id: "581CB92F88800613"
-			x: 2.5d
-			y: 2.0d
+			id: "681CB92F88800613"
+			x: 0.0d
+			y: 9.475000000000001d
 			icon: {
 				id: "minecraft:spyglass"
 				count: 1
 			}
+			hide_dependency_lines: true
 			dependencies: [
-				"4FB9FCCC02BA9AD6"
+				"5FB9FCCC02BA9AD6"
 			]
 			tasks: [
 				{
-					id: "D3F14799DB397A66"
+					id: "73F14799DB397A66"
 					type: "checkmark"
 				}
 			]
 			rewards: [
 				{
-					id: "696C2117E5FBDD33"
+					id: "796C2117E5FBDD33"
 					type: "xp_levels"
 					xp_levels: 3
 				}
 			]
 		}
 		{
-			id: "6C68B4CD2CADFA5A"
-			x: 5.0d
-			y: 1.0d
+			id: "7C68B4CD2CADFA5A"
+			x: 2.5d
+			y: 7.625000000000001d
 			icon: {
 				id: "hostilenetworks:blank_data_model"
 				count: 1
@@ -123,12 +125,12 @@
 			size: 1.5d
 			shape: "diamond"
 			dependencies: [
-				"7DC1331FA523CAC6"
-				"581CB92F88800613"
+				"1DC1331FA523CAC6"
+				"681CB92F88800613"
 			]
 			tasks: [
 				{
-					id: "1253055BA4617C77"
+					id: "2253055BA4617C77"
 					type: "item"
 					item: {
 						id: "hostilenetworks:data_model"
@@ -139,7 +141,7 @@
 			]
 			rewards: [
 				{
-					id: "4B468F2F0D6E36E7"
+					id: "5B468F2F0D6E36E7"
 					type: "item"
 					item: {
 						id: "hostilenetworks:blank_data_model"
@@ -148,31 +150,31 @@
 					count: 1
 				}
 				{
-					id: "55AFFBA861C837DE"
+					id: "65AFFBA861C837DE"
 					type: "loot"
-					table_id: "F2BA64790EBA3DF5"
+					table_id: "22BA64790EBA3DF5"
 				}
 				{
-					id: "0E24FDBF40964BB2"
+					id: "1E24FDBF40964BB2"
 					type: "xp_levels"
 					xp_levels: 5
 				}
 			]
 		}
 		{
-			id: "ACB2B54E2B6F8BE8"
-			x: 7.5d
-			y: 1.0d
+			id: "4CB2B54E2B6F8BE8"
+			x: 5.0d
+			y: 7.375000000000001d
 			icon: {
 				id: "minecraft:rotten_flesh"
 				count: 1
 			}
 			dependencies: [
-				"6C68B4CD2CADFA5A"
+				"7C68B4CD2CADFA5A"
 			]
 			tasks: [
 				{
-					id: "92272E0B7556673E"
+					id: "32272E0B7556673E"
 					type: "kill"
 					entity: "minecraft:zombie"
 					value: 6
@@ -180,7 +182,7 @@
 			]
 			rewards: [
 				{
-					id: "D1BE8CB35FA5F2B6"
+					id: "71BE8CB35FA5F2B6"
 					type: "item"
 					item: {
 						id: "minecraft:iron_ingot"
@@ -189,26 +191,26 @@
 					count: 8
 				}
 				{
-					id: "EF88CF4AB56ED14D"
+					id: "1F88CF4AB56ED14D"
 					type: "xp_levels"
 					xp_levels: 5
 				}
 			]
 		}
 		{
-			id: "DBE5B5BDC535A3FC"
-			x: 9.5d
-			y: 1.0d
+			id: "7BE5B5BDC535A3FC"
+			x: 7.25d
+			y: 7.375000000000001d
 			icon: {
 				id: "minecraft:iron_ingot"
 				count: 1
 			}
 			dependencies: [
-				"ACB2B54E2B6F8BE8"
+				"4CB2B54E2B6F8BE8"
 			]
 			tasks: [
 				{
-					id: "F4250CA2FAB902AC"
+					id: "24250CA2FAB902AC"
 					type: "kill"
 					entity: "minecraft:zombie"
 					value: 12
@@ -216,7 +218,7 @@
 			]
 			rewards: [
 				{
-					id: "6AA74B4FE2AE3CF7"
+					id: "7AA74B4FE2AE3CF7"
 					type: "item"
 					item: {
 						id: "minecraft:iron_ingot"
@@ -225,31 +227,31 @@
 					count: 16
 				}
 				{
-					id: "1CCBBC59C73FA889"
+					id: "2CCBBC59C73FA889"
 					type: "loot"
-					table_id: "F2BA64790EBA3DF5"
+					table_id: "22BA64790EBA3DF5"
 				}
 				{
-					id: "2607E991176A2C5C"
+					id: "3607E991176A2C5C"
 					type: "xp_levels"
 					xp_levels: 8
 				}
 			]
 		}
 		{
-			id: "E57ABCC6AB733128"
-			x: 11.5d
-			y: 1.0d
+			id: "157ABCC6AB733128"
+			x: 9.5d
+			y: 7.375000000000001d
 			icon: {
 				id: "minecraft:iron_block"
 				count: 1
 			}
 			dependencies: [
-				"DBE5B5BDC535A3FC"
+				"7BE5B5BDC535A3FC"
 			]
 			tasks: [
 				{
-					id: "A097C7D45BEEDBE6"
+					id: "4097C7D45BEEDBE6"
 					type: "kill"
 					entity: "minecraft:zombie"
 					value: 30
@@ -257,7 +259,7 @@
 			]
 			rewards: [
 				{
-					id: "D729E79D062AD6EE"
+					id: "7729E79D062AD6EE"
 					type: "item"
 					item: {
 						id: "minecraft:iron_ingot"
@@ -266,21 +268,21 @@
 					count: 24
 				}
 				{
-					id: "39037C3E4385E787"
+					id: "49037C3E4385E787"
 					type: "loot"
-					table_id: "BA8E33E78A3B3A0C"
+					table_id: "5A8E33E78A3B3A0C"
 				}
 				{
-					id: "2F666BB4A6870378"
+					id: "3F666BB4A6870378"
 					type: "xp_levels"
 					xp_levels: 10
 				}
 			]
 		}
 		{
-			id: "E460AD2C9D62D06E"
-			x: 14.0d
-			y: 1.0d
+			id: "1460AD2C9D62D06E"
+			x: 12.25d
+			y: 7.875000000000001d
 			icon: {
 				id: "minecraft:golden_apple"
 				count: 1
@@ -288,11 +290,11 @@
 			size: 2.0d
 			shape: "gear"
 			dependencies: [
-				"E57ABCC6AB733128"
+				"157ABCC6AB733128"
 			]
 			tasks: [
 				{
-					id: "A05A97F6CAE9CD8C"
+					id: "405A97F6CAE9CD8C"
 					type: "kill"
 					entity: "minecraft:zombie"
 					value: 50
@@ -300,12 +302,12 @@
 			]
 			rewards: [
 				{
-					id: "6886D64A67C19C02"
+					id: "7886D64A67C19C02"
 					type: "loot"
-					table_id: "C79EAEAE0F26AA7F"
+					table_id: "679EAEAE0F26AA7F"
 				}
 				{
-					id: "BF6DB351E99CC378"
+					id: "5F6DB351E99CC378"
 					type: "item"
 					item: {
 						id: "hostilenetworks:blank_data_model"
@@ -314,79 +316,80 @@
 					count: 2
 				}
 				{
-					id: "98DE5504ED60D929"
+					id: "38DE5504ED60D929"
 					type: "xp_levels"
 					xp_levels: 20
 				}
 			]
 		}
 		{
-			id: "E80C17CAE1E36A20"
-			x: 16.5d
-			y: 1.0d
+			id: "180C17CAE1E36A20"
+			x: 15.0d
+			y: 7.375000000000001d
 			icon: {
 				id: "minecraft:ender_eye"
 				count: 1
 			}
 			optional: true
 			dependencies: [
-				"E460AD2C9D62D06E"
+				"1460AD2C9D62D06E"
 			]
 			tasks: [
 				{
-					id: "7FD71C9257BBA69D"
+					id: "1FD71C9257BBA69D"
 					type: "checkmark"
 				}
 			]
 			rewards: [
 				{
-					id: "2CB4622F0AB6F8B4"
+					id: "3CB4622F0AB6F8B4"
 					type: "xp_levels"
 					xp_levels: 5
 				}
 			]
 		}
 		{
-			id: "1F75D7990B5FFDC1"
-			x: 0.0d
-			y: 6.5d
+			id: "2F75D7990B5FFDC1"
+			x: 0.25d
+			y: 15.025000000000002d
 			icon: {
 				id: "minecraft:book"
 				count: 1
 			}
 			size: 1.5d
 			shape: "hexagon"
+			hide_dependency_lines: true
 			dependencies: [
-				"6C68B4CD2CADFA5A"
+				"7C68B4CD2CADFA5A"
 			]
 			tasks: [
 				{
-					id: "60658F6BE606E0A0"
+					id: "70658F6BE606E0A0"
 					type: "checkmark"
 				}
 			]
 			rewards: [
 				{
-					id: "CA914C08BB8F8823"
+					id: "6A914C08BB8F8823"
 					type: "xp_levels"
 					xp_levels: 5
 				}
 			]
 		}
 		{
-			id: "55CF736881DA0C97"
-			x: 3.0d
-			y: 5.5d
+			id: "65CF736881DA0C97"
+			x: 2.75d
+			y: 14.775000000000002d
 			icon: {
 				id: "minecraft:wither_skeleton_skull"
 				count: 1
 			}
 			dependencies: [
-				"1F75D7990B5FFDC1"
+				"2F75D7990B5FFDC1"
 			]
 			tasks: [
 				{
-					id: "6B448E9ED4E7EFCD"
+					id: "7B448E9ED4E7EFCD"
 					type: "kill"
 					entity: "minecraft:wither_skeleton"
 					value: 18
@@ -394,7 +397,7 @@
 			]
 			rewards: [
 				{
-					id: "F0F062309E6C05BB"
+					id: "20F062309E6C05BB"
 					type: "item"
 					item: {
 						id: "minecraft:bone"
@@ -403,7 +406,7 @@
 					count: 16
 				}
 				{
-					id: "54141880FFDBDC54"
+					id: "64141880FFDBDC54"
 					type: "item"
 					item: {
 						id: "minecraft:coal"
@@ -412,26 +415,26 @@
 					count: 16
 				}
 				{
-					id: "3B66F86A899630DA"
+					id: "4B66F86A899630DA"
 					type: "xp_levels"
 					xp_levels: 8
 				}
 			]
 		}
 		{
-			id: "0D60F7B9916F92B1"
-			x: 3.0d
-			y: 7.5d
+			id: "1D60F7B9916F92B1"
+			x: 4.45d
+			y: 14.775000000000002d
 			icon: {
 				id: "minecraft:blaze_rod"
 				count: 1
 			}
 			dependencies: [
-				"1F75D7990B5FFDC1"
+				"2F75D7990B5FFDC1"
 			]
 			tasks: [
 				{
-					id: "97D2E242C0B70F9C"
+					id: "37D2E242C0B70F9C"
 					type: "kill"
 					entity: "minecraft:blaze"
 					value: 18
@@ -439,7 +442,7 @@
 			]
 			rewards: [
 				{
-					id: "96FFB5F77DF157A8"
+					id: "36FFB5F77DF157A8"
 					type: "item"
 					item: {
 						id: "minecraft:blaze_rod"
@@ -448,31 +451,31 @@
 					count: 6
 				}
 				{
-					id: "FDD2194D99EF50E3"
+					id: "2DD2194D99EF50E3"
 					type: "loot"
-					table_id: "F2BA64790EBA3DF5"
+					table_id: "22BA64790EBA3DF5"
 				}
 				{
-					id: "55B7FD8FAC4D5A78"
+					id: "65B7FD8FAC4D5A78"
 					type: "xp_levels"
 					xp_levels: 8
 				}
 			]
 		}
 		{
-			id: "5AA8FAEAF3F7E15A"
-			x: 5.5d
-			y: 5.5d
+			id: "6AA8FAEAF3F7E15A"
+			x: 2.75d
+			y: 16.625000000000004d
 			icon: {
 				id: "minecraft:ender_pearl"
 				count: 1
 			}
 			dependencies: [
-				"1F75D7990B5FFDC1"
+				"2F75D7990B5FFDC1"
 			]
 			tasks: [
 				{
-					id: "A6D118E59431ABD7"
+					id: "46D118E59431ABD7"
 					type: "kill"
 					entity: "minecraft:enderman"
 					value: 18
@@ -480,7 +483,7 @@
 			]
 			rewards: [
 				{
-					id: "B1A50A84628D1A82"
+					id: "51A50A84628D1A82"
 					type: "item"
 					item: {
 						id: "minecraft:ender_pearl"
@@ -489,27 +492,27 @@
 					count: 8
 				}
 				{
-					id: "3D316F321E6933D3"
+					id: "4D316F321E6933D3"
 					type: "xp_levels"
 					xp_levels: 8
 				}
 			]
 		}
 		{
-			id: "77FFAA591909DA98"
-			x: 5.5d
-			y: 7.5d
+			id: "17FFAA591909DA98"
+			x: 4.45d
+			y: 16.625000000000004d
 			icon: {
 				id: "minecraft:ghast_tear"
 				count: 1
 			}
 			optional: true
 			dependencies: [
-				"1F75D7990B5FFDC1"
+				"2F75D7990B5FFDC1"
 			]
 			tasks: [
 				{
-					id: "9573AD9C58F7CCA4"
+					id: "3573AD9C58F7CCA4"
 					type: "kill"
 					entity: "minecraft:ghast"
 					value: 6
@@ -517,7 +520,7 @@
 			]
 			rewards: [
 				{
-					id: "0A1CC5CEC0F97BA6"
+					id: "1A1CC5CEC0F97BA6"
 					type: "item"
 					item: {
 						id: "minecraft:ghast_tear"
@@ -526,27 +529,27 @@
 					count: 2
 				}
 				{
-					id: "AB60DABECD5DB327"
+					id: "4B60DABECD5DB327"
 					type: "xp_levels"
 					xp_levels: 5
 				}
 			]
 		}
 		{
-			id: "914331A7919C935F"
-			x: 8.0d
-			y: 5.5d
+			id: "314331A7919C935F"
+			x: 2.75d
+			y: 18.475d
 			icon: {
 				id: "minecraft:glowstone_dust"
 				count: 1
 			}
 			optional: true
 			dependencies: [
-				"1F75D7990B5FFDC1"
+				"2F75D7990B5FFDC1"
 			]
 			tasks: [
 				{
-					id: "DB3BB99D97F0FEE4"
+					id: "7B3BB99D97F0FEE4"
 					type: "kill"
 					entity: "minecraft:witch"
 					value: 12
@@ -554,7 +557,7 @@
 			]
 			rewards: [
 				{
-					id: "82B9AB808FAC4538"
+					id: "22B9AB808FAC4538"
 					type: "item"
 					item: {
 						id: "minecraft:redstone"
@@ -563,7 +566,7 @@
 					count: 16
 				}
 				{
-					id: "3E0CBA52DAAADD6F"
+					id: "4E0CBA52DAAADD6F"
 					type: "item"
 					item: {
 						id: "minecraft:glowstone_dust"
@@ -572,27 +575,27 @@
 					count: 8
 				}
 				{
-					id: "FF911C32130C925E"
+					id: "2F911C32130C925E"
 					type: "xp_levels"
 					xp_levels: 5
 				}
 			]
 		}
 		{
-			id: "367BFAD9554B014C"
-			x: 8.0d
-			y: 7.5d
+			id: "467BFAD9554B014C"
+			x: 4.45d
+			y: 18.475d
 			icon: {
 				id: "ars_nouveau:wilden_horn"
 				count: 1
 			}
 			optional: true
 			dependencies: [
-				"1F75D7990B5FFDC1"
+				"2F75D7990B5FFDC1"
 			]
 			tasks: [
 				{
-					id: "0D3EE28B66A1F3CE"
+					id: "1D3EE28B66A1F3CE"
 					type: "kill"
 					entity: "ars_nouveau:wilden_hunter"
 					value: 6
@@ -600,7 +603,7 @@
 			]
 			rewards: [
 				{
-					id: "29B0E6562909E3BC"
+					id: "39B0E6562909E3BC"
 					type: "item"
 					item: {
 						id: "ars_nouveau:wilden_horn"
@@ -609,27 +612,27 @@
 					count: 2
 				}
 				{
-					id: "5FC16B6045C06B3E"
+					id: "6FC16B6045C06B3E"
 					type: "xp_levels"
 					xp_levels: 5
 				}
 			]
 		}
 		{
-			id: "DEFFC40035977105"
-			x: 10.5d
-			y: 5.5d
+			id: "7EFFC40035977105"
+			x: 2.75d
+			y: 20.325000000000003d
 			icon: {
 				id: "minecraft:chest"
 				count: 1
 			}
 			optional: true
 			dependencies: [
-				"1F75D7990B5FFDC1"
+				"2F75D7990B5FFDC1"
 			]
 			tasks: [
 				{
-					id: "97DBFF5EF7942335"
+					id: "37DBFF5EF7942335"
 					type: "kill"
 					entity: "artifacts:mimic"
 					value: 1
@@ -637,65 +640,66 @@
 			]
 			rewards: [
 				{
-					id: "286401B252F37102"
+					id: "386401B252F37102"
 					type: "loot"
-					table_id: "BA8E33E78A3B3A0C"
+					table_id: "5A8E33E78A3B3A0C"
 				}
 				{
-					id: "B3C711BFF989AEBC"
+					id: "53C711BFF989AEBC"
 					type: "xp_levels"
 					xp_levels: 10
 				}
 			]
 		}
 		{
-			id: "6B2AA4ED5FBC6D2E"
-			x: 10.5d
-			y: 7.5d
+			id: "7B2AA4ED5FBC6D2E"
+			x: 4.45d
+			y: 20.325000000000003d
 			icon: {
 				id: "minecraft:wither_skeleton_skull"
 				count: 1
 			}
 			optional: true
 			dependencies: [
-				"1F75D7990B5FFDC1"
+				"2F75D7990B5FFDC1"
 			]
 			tasks: [
 				{
-					id: "49AAF4646058B82B"
+					id: "59AAF4646058B82B"
 					type: "checkmark"
 				}
 			]
 			rewards: [
 				{
-					id: "2F5DE5034A4CEF0B"
+					id: "3F5DE5034A4CEF0B"
 					type: "xp_levels"
 					xp_levels: 5
 				}
 			]
 		}
 		{
-			id: "FCCF6BD423383093"
-			x: 0.0d
-			y: 12.5d
+			id: "2CCF6BD423383093"
+			x: 0.25d
+			y: 25.625000000000004d
 			icon: {
 				id: "minecraft:comparator"
 				count: 1
 			}
 			size: 1.5d
 			shape: "hexagon"
+			hide_dependency_lines: true
 			dependencies: [
-				"ACB2B54E2B6F8BE8"
+				"4CB2B54E2B6F8BE8"
 			]
 			tasks: [
 				{
-					id: "C4B0245FD46E50F8"
+					id: "64B0245FD46E50F8"
 					type: "checkmark"
 				}
 			]
 			rewards: [
 				{
-					id: "C10EF049B43D2849"
+					id: "610EF049B43D2849"
 					type: "item"
 					item: {
 						id: "minecraft:ender_pearl"
@@ -704,7 +708,7 @@
 					count: 4
 				}
 				{
-					id: "BCDCAAF047AC2A73"
+					id: "5CDCAAF047AC2A73"
 					type: "item"
 					item: {
 						id: "minecraft:lapis_lazuli"
@@ -715,25 +719,25 @@
 			]
 		}
 		{
-			id: "0578E32783E066D2"
-			x: 2.5d
-			y: 11.5d
+			id: "1578E32783E066D2"
+			x: 2.75d
+			y: 25.375000000000004d
 			icon: {
 				id: "minecraft:clay_ball"
 				count: 1
 			}
 			dependencies: [
-				"FCCF6BD423383093"
+				"2CCF6BD423383093"
 			]
 			tasks: [
 				{
-					id: "9762F8E357ED2F93"
+					id: "3762F8E357ED2F93"
 					type: "checkmark"
 				}
 			]
 			rewards: [
 				{
-					id: "2A4829FF2DFDF06A"
+					id: "3A4829FF2DFDF06A"
 					type: "item"
 					item: {
 						id: "minecraft:glass_pane"
@@ -742,7 +746,7 @@
 					count: 16
 				}
 				{
-					id: "6D141ED743605FDE"
+					id: "7D141ED743605FDE"
 					type: "item"
 					item: {
 						id: "minecraft:gold_ingot"
@@ -753,26 +757,26 @@
 			]
 		}
 		{
-			id: "9EE3670FBEA66FE6"
-			x: 2.5d
-			y: 13.5d
+			id: "3EE3670FBEA66FE6"
+			x: 2.75d
+			y: 27.225000000000005d
 			icon: {
 				id: "minecraft:clay"
 				count: 1
 			}
 			optional: true
 			dependencies: [
-				"FCCF6BD423383093"
+				"2CCF6BD423383093"
 			]
 			tasks: [
 				{
-					id: "821654AC38CA73D8"
+					id: "221654AC38CA73D8"
 					type: "checkmark"
 				}
 			]
 			rewards: [
 				{
-					id: "4264BF908F7EC88D"
+					id: "5264BF908F7EC88D"
 					type: "item"
 					item: {
 						id: "minecraft:clay_ball"
@@ -781,7 +785,7 @@
 					count: 32
 				}
 				{
-					id: "8E42AB57AAD64713"
+					id: "2E42AB57AAD64713"
 					type: "item"
 					item: {
 						id: "minecraft:sand"
@@ -792,9 +796,9 @@
 			]
 		}
 		{
-			id: "860723F843366317"
-			x: 5.0d
-			y: 12.5d
+			id: "260723F843366317"
+			x: 5.25d
+			y: 25.625000000000004d
 			icon: {
 				id: "minecraft:ender_eye"
 				count: 1
@@ -802,49 +806,49 @@
 			size: 1.5d
 			shape: "diamond"
 			dependencies: [
-				"FCCF6BD423383093"
-				"0578E32783E066D2"
+				"2CCF6BD423383093"
+				"1578E32783E066D2"
 			]
 			tasks: [
 				{
-					id: "14DB9693CA10B7EE"
+					id: "24DB9693CA10B7EE"
 					type: "checkmark"
 				}
 			]
 			rewards: [
 				{
-					id: "DD05B71ACEA2149E"
+					id: "7D05B71ACEA2149E"
 					type: "loot"
-					table_id: "F2BA64790EBA3DF5"
+					table_id: "22BA64790EBA3DF5"
 				}
 				{
-					id: "FEEDAA018FC8BC63"
+					id: "2EEDAA018FC8BC63"
 					type: "xp_levels"
 					xp_levels: 8
 				}
 			]
 		}
 		{
-			id: "EC3B7E2EEA87A725"
-			x: 7.5d
-			y: 11.5d
+			id: "1C3B7E2EEA87A725"
+			x: 7.75d
+			y: 25.375000000000004d
 			icon: {
 				id: "minecraft:experience_bottle"
 				count: 1
 			}
 			optional: true
 			dependencies: [
-				"860723F843366317"
+				"260723F843366317"
 			]
 			tasks: [
 				{
-					id: "1F59CC76114F5A6F"
+					id: "2F59CC76114F5A6F"
 					type: "checkmark"
 				}
 			]
 			rewards: [
 				{
-					id: "9F00A47E6EC93C44"
+					id: "3F00A47E6EC93C44"
 					type: "item"
 					item: {
 						id: "minecraft:experience_bottle"
@@ -855,25 +859,25 @@
 			]
 		}
 		{
-			id: "99949DD23D8542B2"
-			x: 7.5d
-			y: 13.5d
+			id: "39949DD23D8542B2"
+			x: 7.75d
+			y: 29.075000000000003d
 			icon: {
 				id: "minecraft:iron_ingot"
 				count: 1
 			}
 			dependencies: [
-				"860723F843366317"
+				"260723F843366317"
 			]
 			tasks: [
 				{
-					id: "855DD7BD1168FECE"
+					id: "255DD7BD1168FECE"
 					type: "checkmark"
 				}
 			]
 			rewards: [
 				{
-					id: "1D95DF2A2C3A2F2A"
+					id: "2D95DF2A2C3A2F2A"
 					type: "item"
 					item: {
 						id: "minecraft:iron_ingot"
@@ -882,7 +886,7 @@
 					count: 16
 				}
 				{
-					id: "605FAAC62F5FDC00"
+					id: "705FAAC62F5FDC00"
 					type: "item"
 					item: {
 						id: "minecraft:bone_meal"
@@ -893,25 +897,25 @@
 			]
 		}
 		{
-			id: "8A7DACF11F66F62A"
-			x: 10.0d
-			y: 12.5d
+			id: "2A7DACF11F66F62A"
+			x: 7.75d
+			y: 27.225000000000005d
 			icon: {
 				id: "mekanism:basic_energy_cube"
 				count: 1
 			}
 			dependencies: [
-				"860723F843366317"
+				"260723F843366317"
 			]
 			tasks: [
 				{
-					id: "0D11B7AD5789FF03"
+					id: "1D11B7AD5789FF03"
 					type: "checkmark"
 				}
 			]
 			rewards: [
 				{
-					id: "D8D4215003C133EF"
+					id: "78D4215003C133EF"
 					type: "item"
 					item: {
 						id: "mekanism:basic_universal_cable"
@@ -920,16 +924,16 @@
 					count: 8
 				}
 				{
-					id: "130923AF1FDF2621"
+					id: "230923AF1FDF2621"
 					type: "xp_levels"
 					xp_levels: 5
 				}
 			]
 		}
 		{
-			id: "D84FBE05FF45B4E4"
-			x: 12.5d
-			y: 12.5d
+			id: "784FBE05FF45B4E4"
+			x: 10.25d
+			y: 25.625000000000004d
 			icon: {
 				id: "minecraft:hopper"
 				count: 1
@@ -937,49 +941,50 @@
 			size: 1.5d
 			shape: "gear"
 			dependencies: [
-				"8A7DACF11F66F62A"
+				"2A7DACF11F66F62A"
 			]
 			tasks: [
 				{
-					id: "DE8A2915D66115AD"
+					id: "7E8A2915D66115AD"
 					type: "checkmark"
 				}
 			]
 			rewards: [
 				{
-					id: "D1C9E3BEA2E653DA"
+					id: "71C9E3BEA2E653DA"
 					type: "loot"
-					table_id: "BA8E33E78A3B3A0C"
+					table_id: "5A8E33E78A3B3A0C"
 				}
 				{
-					id: "1EDD392228D871EB"
+					id: "2EDD392228D871EB"
 					type: "xp_levels"
 					xp_levels: 10
 				}
 			]
 		}
 		{
-			id: "DEA7F4A9070E15E8"
-			x: 0.0d
-			y: 18.5d
+			id: "7EA7F4A9070E15E8"
+			x: 0.25d
+			y: 34.375d
 			icon: {
 				id: "minecraft:anvil"
 				count: 1
 			}
 			size: 1.5d
 			shape: "hexagon"
+			hide_dependency_lines: true
 			dependencies: [
-				"860723F843366317"
+				"260723F843366317"
 			]
 			tasks: [
 				{
-					id: "88F537F0FABA44D8"
+					id: "28F537F0FABA44D8"
 					type: "checkmark"
 				}
 			]
 			rewards: [
 				{
-					id: "12E75E84F24D26BD"
+					id: "22E75E84F24D26BD"
 					type: "item"
 					item: {
 						id: "minecraft:gold_ingot"
@@ -988,7 +993,7 @@
 					count: 8
 				}
 				{
-					id: "61449684ED426F5F"
+					id: "71449684ED426F5F"
 					type: "item"
 					item: {
 						id: "minecraft:diamond"
@@ -999,25 +1004,25 @@
 			]
 		}
 		{
-			id: "42329B282B1E5A1E"
-			x: 2.5d
-			y: 17.5d
+			id: "52329B282B1E5A1E"
+			x: 3.125d
+			y: 34.125d
 			icon: {
 				id: "minecraft:blaze_rod"
 				count: 1
 			}
 			dependencies: [
-				"DEA7F4A9070E15E8"
+				"7EA7F4A9070E15E8"
 			]
 			tasks: [
 				{
-					id: "8B57DDB4F6DFECCC"
+					id: "2B57DDB4F6DFECCC"
 					type: "checkmark"
 				}
 			]
 			rewards: [
 				{
-					id: "49CA1E9A8ECFE2F4"
+					id: "59CA1E9A8ECFE2F4"
 					type: "item"
 					item: {
 						id: "minecraft:gunpowder"
@@ -1026,7 +1031,7 @@
 					count: 16
 				}
 				{
-					id: "420B6E330AD119E1"
+					id: "520B6E330AD119E1"
 					type: "item"
 					item: {
 						id: "minecraft:bone"
@@ -1037,26 +1042,26 @@
 			]
 		}
 		{
-			id: "61B5C3CA4158995A"
-			x: 2.5d
-			y: 19.5d
+			id: "71B5C3CA4158995A"
+			x: 3.125d
+			y: 38.075d
 			icon: {
 				id: "minecraft:paper"
 				count: 1
 			}
 			optional: true
 			dependencies: [
-				"DEA7F4A9070E15E8"
+				"7EA7F4A9070E15E8"
 			]
 			tasks: [
 				{
-					id: "642EFDD121EA4C8B"
+					id: "742EFDD121EA4C8B"
 					type: "checkmark"
 				}
 			]
 			rewards: [
 				{
-					id: "6A226470108C0957"
+					id: "7A226470108C0957"
 					type: "item"
 					item: {
 						id: "minecraft:paper"
@@ -1067,28 +1072,29 @@
 			]
 		}
 		{
-			id: "9B5313E3CE0CBCDE"
-			x: 5.0d
-			y: 18.5d
+			id: "3B5313E3CE0CBCDE"
+			x: 3.125d
+			y: 36.475d
 			icon: {
 				id: "minecraft:black_stained_glass"
 				count: 1
 			}
 			size: 1.75d
 			shape: "hexagon"
+			hide_dependency_lines: true
 			dependencies: [
-				"DEA7F4A9070E15E8"
-				"D84FBE05FF45B4E4"
+				"7EA7F4A9070E15E8"
+				"784FBE05FF45B4E4"
 			]
 			tasks: [
 				{
-					id: "53497484244BB9A1"
+					id: "63497484244BB9A1"
 					type: "checkmark"
 				}
 			]
 			rewards: [
 				{
-					id: "4CE0D984452BE3B8"
+					id: "5CE0D984452BE3B8"
 					type: "item"
 					item: {
 						id: "minecraft:obsidian"
@@ -1097,7 +1103,7 @@
 					count: 16
 				}
 				{
-					id: "9839440396C48E9C"
+					id: "3839440396C48E9C"
 					type: "item"
 					item: {
 						id: "minecraft:black_stained_glass"
@@ -1106,32 +1112,32 @@
 					count: 32
 				}
 				{
-					id: "B264B033D1F4C33E"
+					id: "5264B033D1F4C33E"
 					type: "xp_levels"
 					xp_levels: 10
 				}
 			]
 		}
 		{
-			id: "77E8FDE47210D7F1"
-			x: 7.5d
-			y: 17.5d
+			id: "17E8FDE47210D7F1"
+			x: 5.75d
+			y: 34.125d
 			icon: {
 				id: "minecraft:redstone_block"
 				count: 1
 			}
 			dependencies: [
-				"9B5313E3CE0CBCDE"
+				"3B5313E3CE0CBCDE"
 			]
 			tasks: [
 				{
-					id: "388520903D43A1A8"
+					id: "488520903D43A1A8"
 					type: "checkmark"
 				}
 			]
 			rewards: [
 				{
-					id: "8309CA62552D997D"
+					id: "2309CA62552D997D"
 					type: "item"
 					item: {
 						id: "minecraft:redstone_block"
@@ -1140,7 +1146,7 @@
 					count: 2
 				}
 				{
-					id: "6085AA45E7562B2E"
+					id: "7085AA45E7562B2E"
 					type: "item"
 					item: {
 						id: "minecraft:iron_ingot"
@@ -1151,50 +1157,50 @@
 			]
 		}
 		{
-			id: "C56D85B162A33182"
-			x: 7.5d
-			y: 19.5d
+			id: "656D85B162A33182"
+			x: 5.75d
+			y: 36.1d
 			icon: {
 				id: "minecraft:nether_star"
 				count: 1
 			}
 			dependencies: [
-				"9B5313E3CE0CBCDE"
+				"3B5313E3CE0CBCDE"
 			]
 			tasks: [
 				{
-					id: "704B4B295D519C59"
+					id: "104B4B295D519C59"
 					type: "checkmark"
 				}
 			]
 			rewards: [
 				{
-					id: "321476264F1BEB86"
+					id: "421476264F1BEB86"
 					type: "loot"
-					table_id: "BA8E33E78A3B3A0C"
+					table_id: "5A8E33E78A3B3A0C"
 				}
 				{
-					id: "DFB6F055973102FC"
+					id: "7FB6F055973102FC"
 					type: "xp_levels"
 					xp_levels: 10
 				}
 			]
 		}
 		{
-			id: "2AC5EB06EAA9E7C7"
-			x: 10.5d
-			y: 18.5d
+			id: "3AC5EB06EAA9E7C7"
+			x: 8.0d
+			y: 34.125d
 			icon: {
 				id: "hostilenetworks:deep_learner"
 				count: 1
 			}
 			shape: "diamond"
 			dependencies: [
-				"C56D85B162A33182"
+				"656D85B162A33182"
 			]
 			tasks: [
 				{
-					id: "809216E789D93EF1"
+					id: "209216E789D93EF1"
 					type: "item"
 					item: {
 						id: "hostilenetworks:blank_data_model"
@@ -1205,7 +1211,7 @@
 			]
 			rewards: [
 				{
-					id: "310310825585DC52"
+					id: "410310825585DC52"
 					type: "item"
 					item: {
 						id: "hostilenetworks:deep_learner"
@@ -1214,12 +1220,12 @@
 					count: 1
 				}
 				{
-					id: "5B4EC6CCE80067D5"
+					id: "6B4EC6CCE80067D5"
 					type: "loot"
-					table_id: "F2BA64790EBA3DF5"
+					table_id: "22BA64790EBA3DF5"
 				}
 				{
-					id: "E8169ABB7C8851FA"
+					id: "18169ABB7C8851FA"
 					type: "xp_levels"
 					xp_levels: 10
 				}
@@ -1228,50 +1234,50 @@
 	]
 	images: [
 		{
-			id: "39CB7284F6035715"
+			id: "49CB7284F6035715"
 			image: "kronwerke:textures/quests/hostile_networks/title.png"
-			x: 8.0d
-			y: -4.5d
+			x: 7.9350000000000005d
+			y: 0.0d
 			width: 16.87d
 			height: 1.75d
 			rotation: 0.0d
 			order: 1
 		}
 		{
-			id: "AB923B6C0F208DFE"
+			id: "4B923B6C0F208DFE"
 			image: "kronwerke:textures/quests/hostile_networks/learn.png"
-			x: 8.0d
-			y: -2.2d
+			x: 2.1d
+			y: 6.025000000000001d
 			width: 5.2d
 			height: 0.9d
 			rotation: 0.0d
 			order: 1
 		}
 		{
-			id: "20A9C0AD6CC48A83"
+			id: "30A9C0AD6CC48A83"
 			image: "kronwerke:textures/quests/hostile_networks/models.png"
-			x: 5.5d
-			y: 3.9d
+			x: 4.205d
+			y: 13.425d
 			width: 9.41d
 			height: 0.9d
 			rotation: 0.0d
 			order: 1
 		}
 		{
-			id: "913D966E262BCFE9"
+			id: "313D966E262BCFE9"
 			image: "kronwerke:textures/quests/hostile_networks/simulate.png"
-			x: 6.0d
-			y: 9.9d
+			x: 2.705d
+			y: 24.025000000000002d
 			width: 6.41d
 			height: 0.9d
 			rotation: 0.0d
 			order: 1
 		}
 		{
-			id: "3FC56500E51C502C"
+			id: "4FC56500E51C502C"
 			image: "kronwerke:textures/quests/hostile_networks/fabricate.png"
-			x: 5.5d
-			y: 15.9d
+			x: 2.75d
+			y: 32.775000000000006d
 			width: 6.5d
 			height: 0.9d
 			rotation: 0.0d

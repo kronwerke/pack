@@ -1,19 +1,19 @@
 {
-	id: "D8CFBE2010B681F3"
+	id: "78CFBE2010B681F3"
 	filename: "food"
 	icon: {
 		id: "farmersdelight:cooking_pot"
 		count: 1
 	}
-	group: "D1C7157F1269A7DC"
+	group: "71C7157F1269A7DC"
 	order_index: 4
 	default_quest_shape: "circle"
 	default_hide_dependency_lines: false
 	quests: [
 		{
-			id: "F51007087FB0E302"
-			x: 0.0d
-			y: 3.0d
+			id: "251007087FB0E302"
+			x: 0.75d
+			y: 2.85d
 			icon: {
 				id: "farmersdelight:cooking_pot"
 				count: 1
@@ -22,13 +22,13 @@
 			shape: "hexagon"
 			tasks: [
 				{
-					id: "B377113B844909E4"
+					id: "5377113B844909E4"
 					type: "checkmark"
 				}
 			]
 			rewards: [
 				{
-					id: "65F3A1C263A0F964"
+					id: "75F3A1C263A0F964"
 					type: "item"
 					item: {
 						id: "minecraft:bread"
@@ -37,27 +37,28 @@
 					count: 16
 				}
 				{
-					id: "6EBDD8CF5BB726D3"
+					id: "7EBDD8CF5BB726D3"
 					type: "loot"
-					table_id: "1EBBC2B918151958"
+					table_id: "2EBBC2B918151958"
 				}
 			]
 		}
 		{
-			id: "0C58857CA43411EE"
-			x: 4.5d
-			y: -7.0d
+			id: "1C58857CA43411EE"
+			x: 0.25d
+			y: 7.8999999999999995d
 			icon: {
 				id: "farmersdelight:flint_knife"
 				count: 1
 			}
 			size: 1.5d
+			hide_dependency_lines: true
 			dependencies: [
-				"F51007087FB0E302"
+				"251007087FB0E302"
 			]
 			tasks: [
 				{
-					id: "13CB9850BE7880DD"
+					id: "23CB9850BE7880DD"
 					type: "item"
 					item: {
 						id: "farmersdelight:flint_knife"
@@ -68,7 +69,7 @@
 			]
 			rewards: [
 				{
-					id: "0899E796EC56755A"
+					id: "1899E796EC56755A"
 					type: "item"
 					item: {
 						id: "minecraft:bread"
@@ -79,20 +80,20 @@
 			]
 		}
 		{
-			id: "CABC6EFAB9C1B498"
-			x: 4.5d
-			y: -9.5d
+			id: "6ABC6EFAB9C1B498"
+			x: 2.75d
+			y: 7.6499999999999995d
 			icon: {
 				id: "farmersdelight:iron_knife"
 				count: 1
 			}
 			optional: true
 			dependencies: [
-				"0C58857CA43411EE"
+				"1C58857CA43411EE"
 			]
 			tasks: [
 				{
-					id: "107CE42F6B87B2C8"
+					id: "207CE42F6B87B2C8"
 					type: "item"
 					item: {
 						id: "farmersdelight:iron_knife"
@@ -103,7 +104,7 @@
 			]
 			rewards: [
 				{
-					id: "8D7B0C6AB62EFBCC"
+					id: "2D7B0C6AB62EFBCC"
 					type: "item"
 					item: {
 						id: "minecraft:iron_ingot"
@@ -114,19 +115,19 @@
 			]
 		}
 		{
-			id: "BC8FB7B228CE9B39"
-			x: 7.0d
-			y: -8.0d
+			id: "5C8FB7B228CE9B39"
+			x: 2.75d
+			y: 9.5d
 			icon: {
 				id: "farmersdelight:straw"
 				count: 1
 			}
 			dependencies: [
-				"0C58857CA43411EE"
+				"1C58857CA43411EE"
 			]
 			tasks: [
 				{
-					id: "2946D9B17A61175D"
+					id: "3946D9B17A61175D"
 					type: "item"
 					item: {
 						id: "farmersdelight:straw"
@@ -137,7 +138,7 @@
 			]
 			rewards: [
 				{
-					id: "BA8031F86B75E650"
+					id: "5A8031F86B75E650"
 					type: "item"
 					item: {
 						id: "minecraft:bone_meal"
@@ -148,19 +149,19 @@
 			]
 		}
 		{
-			id: "52E55426A50447DF"
-			x: 7.0d
-			y: -6.0d
+			id: "62E55426A50447DF"
+			x: 2.75d
+			y: 11.35d
 			icon: {
 				id: "farmersdelight:cutting_board"
 				count: 1
 			}
 			dependencies: [
-				"0C58857CA43411EE"
+				"1C58857CA43411EE"
 			]
 			tasks: [
 				{
-					id: "5C15067A2D94BC64"
+					id: "6C15067A2D94BC64"
 					type: "item"
 					item: {
 						id: "farmersdelight:cutting_board"
@@ -171,7 +172,7 @@
 			]
 			rewards: [
 				{
-					id: "3C76C176DB5E763D"
+					id: "4C76C176DB5E763D"
 					type: "item"
 					item: {
 						id: "minecraft:beef"
@@ -182,20 +183,20 @@
 			]
 		}
 		{
-			id: "61BA402B36393E94"
-			x: 9.0d
-			y: -8.0d
+			id: "71BA402B36393E94"
+			x: 5.0d
+			y: 7.6499999999999995d
 			icon: {
 				id: "farmersdelight:tomato"
 				count: 1
 			}
 			dependencies: [
-				"BC8FB7B228CE9B39"
-				"52E55426A50447DF"
+				"5C8FB7B228CE9B39"
+				"62E55426A50447DF"
 			]
 			tasks: [
 				{
-					id: "D65F4C4130CFC0E3"
+					id: "765F4C4130CFC0E3"
 					type: "item"
 					item: {
 						id: "farmersdelight:tomato"
@@ -206,7 +207,7 @@
 			]
 			rewards: [
 				{
-					id: "279970AE2CE0904B"
+					id: "379970AE2CE0904B"
 					type: "item"
 					item: {
 						id: "minecraft:bone_meal"
@@ -217,20 +218,20 @@
 			]
 		}
 		{
-			id: "235AFF1EF49F4F5A"
-			x: 9.0d
-			y: -6.0d
+			id: "335AFF1EF49F4F5A"
+			x: 5.0d
+			y: 9.5d
 			icon: {
 				id: "farmersdelight:cabbage"
 				count: 1
 			}
 			dependencies: [
-				"BC8FB7B228CE9B39"
-				"52E55426A50447DF"
+				"5C8FB7B228CE9B39"
+				"62E55426A50447DF"
 			]
 			tasks: [
 				{
-					id: "B8F8F4AC8B5363B0"
+					id: "58F8F4AC8B5363B0"
 					type: "item"
 					item: {
 						id: "farmersdelight:cabbage"
@@ -241,7 +242,7 @@
 			]
 			rewards: [
 				{
-					id: "97D33266C8BA9837"
+					id: "37D33266C8BA9837"
 					type: "item"
 					item: {
 						id: "minecraft:bone_meal"
@@ -252,20 +253,20 @@
 			]
 		}
 		{
-			id: "4E5FC305B736FA54"
-			x: 11.0d
-			y: -7.0d
+			id: "5E5FC305B736FA54"
+			x: 7.25d
+			y: 7.6499999999999995d
 			icon: {
 				id: "farmersdelight:onion"
 				count: 1
 			}
 			dependencies: [
-				"61BA402B36393E94"
-				"235AFF1EF49F4F5A"
+				"71BA402B36393E94"
+				"335AFF1EF49F4F5A"
 			]
 			tasks: [
 				{
-					id: "1828C8D801C038E7"
+					id: "2828C8D801C038E7"
 					type: "item"
 					item: {
 						id: "farmersdelight:onion"
@@ -276,7 +277,7 @@
 			]
 			rewards: [
 				{
-					id: "330D970742B0BDA3"
+					id: "430D970742B0BDA3"
 					type: "item"
 					item: {
 						id: "minecraft:bone_meal"
@@ -285,26 +286,26 @@
 					count: 16
 				}
 				{
-					id: "6517F4761A363EEB"
+					id: "7517F4761A363EEB"
 					type: "xp_levels"
 					xp_levels: 2
 				}
 			]
 		}
 		{
-			id: "E28344D4FB2BEBDC"
-			x: 13.0d
-			y: -8.0d
+			id: "128344D4FB2BEBDC"
+			x: 9.5d
+			y: 7.6499999999999995d
 			icon: {
 				id: "farmersdelight:rice"
 				count: 1
 			}
 			dependencies: [
-				"4E5FC305B736FA54"
+				"5E5FC305B736FA54"
 			]
 			tasks: [
 				{
-					id: "8B201AE6F9DF5AC8"
+					id: "2B201AE6F9DF5AC8"
 					type: "item"
 					item: {
 						id: "farmersdelight:rice"
@@ -315,7 +316,7 @@
 			]
 			rewards: [
 				{
-					id: "B996F477F69B90AE"
+					id: "5996F477F69B90AE"
 					type: "item"
 					item: {
 						id: "minecraft:water_bucket"
@@ -324,27 +325,27 @@
 					count: 1
 				}
 				{
-					id: "A879081DDFD36DCA"
+					id: "4879081DDFD36DCA"
 					type: "xp_levels"
 					xp_levels: 2
 				}
 			]
 		}
 		{
-			id: "F2CB07376FA940F8"
-			x: 13.0d
-			y: -6.0d
+			id: "22CB07376FA940F8"
+			x: 9.5d
+			y: 9.5d
 			icon: {
 				id: "farmersdelight:rope"
 				count: 1
 			}
 			optional: true
 			dependencies: [
-				"4E5FC305B736FA54"
+				"5E5FC305B736FA54"
 			]
 			tasks: [
 				{
-					id: "A1A4310F76E02C81"
+					id: "41A4310F76E02C81"
 					type: "item"
 					item: {
 						id: "farmersdelight:rope"
@@ -355,7 +356,7 @@
 			]
 			rewards: [
 				{
-					id: "03CC5272C529444D"
+					id: "13CC5272C529444D"
 					type: "item"
 					item: {
 						id: "farmersdelight:tomato_seeds"
@@ -366,20 +367,21 @@
 			]
 		}
 		{
-			id: "7EFCF559720990BB"
-			x: 4.5d
-			y: 0.0d
+			id: "1EFCF559720990BB"
+			x: 0.25d
+			y: 16.65d
 			icon: {
 				id: "farmersdelight:stove"
 				count: 1
 			}
 			size: 1.5d
+			hide_dependency_lines: true
 			dependencies: [
-				"F51007087FB0E302"
+				"251007087FB0E302"
 			]
 			tasks: [
 				{
-					id: "7B578090A0524741"
+					id: "1B578090A0524741"
 					type: "item"
 					item: {
 						id: "farmersdelight:stove"
@@ -390,7 +392,7 @@
 			]
 			rewards: [
 				{
-					id: "A5031DCCCEC66AC7"
+					id: "45031DCCCEC66AC7"
 					type: "item"
 					item: {
 						id: "minecraft:coal"
@@ -401,9 +403,9 @@
 			]
 		}
 		{
-			id: "880F4CCBBF5D04BE"
-			x: 7.0d
-			y: 0.0d
+			id: "280F4CCBBF5D04BE"
+			x: 3.125d
+			y: 16.775d
 			icon: {
 				id: "farmersdelight:cooking_pot"
 				count: 1
@@ -411,11 +413,11 @@
 			size: 1.75d
 			shape: "hexagon"
 			dependencies: [
-				"7EFCF559720990BB"
+				"1EFCF559720990BB"
 			]
 			tasks: [
 				{
-					id: "EFE67FED914B83A4"
+					id: "1FE67FED914B83A4"
 					type: "item"
 					item: {
 						id: "farmersdelight:cooking_pot"
@@ -426,7 +428,7 @@
 			]
 			rewards: [
 				{
-					id: "792C79F361B0D63A"
+					id: "192C79F361B0D63A"
 					type: "item"
 					item: {
 						id: "minecraft:bowl"
@@ -435,27 +437,27 @@
 					count: 16
 				}
 				{
-					id: "6D75A8246898E37C"
+					id: "7D75A8246898E37C"
 					type: "xp_levels"
 					xp_levels: 3
 				}
 			]
 		}
 		{
-			id: "604CBA0CA99C2603"
-			x: 7.0d
-			y: 2.4d
+			id: "704CBA0CA99C2603"
+			x: 3.125d
+			y: 18.375d
 			icon: {
 				id: "farmersdelight:skillet"
 				count: 1
 			}
 			optional: true
 			dependencies: [
-				"7EFCF559720990BB"
+				"1EFCF559720990BB"
 			]
 			tasks: [
 				{
-					id: "5D1C277CC5B07559"
+					id: "6D1C277CC5B07559"
 					type: "item"
 					item: {
 						id: "farmersdelight:skillet"
@@ -466,7 +468,7 @@
 			]
 			rewards: [
 				{
-					id: "682AEA548C32A0E0"
+					id: "782AEA548C32A0E0"
 					type: "item"
 					item: {
 						id: "minecraft:egg"
@@ -477,20 +479,21 @@
 			]
 		}
 		{
-			id: "06E4A34E23E054B5"
-			x: 9.5d
-			y: -1.0d
+			id: "16E4A34E23E054B5"
+			x: 5.75d
+			y: 16.4d
 			icon: {
 				id: "farmersdelight:vegetable_soup"
 				count: 1
 			}
+			hide_dependency_lines: true
 			dependencies: [
-				"880F4CCBBF5D04BE"
-				"235AFF1EF49F4F5A"
+				"280F4CCBBF5D04BE"
+				"335AFF1EF49F4F5A"
 			]
 			tasks: [
 				{
-					id: "1F26FD7C7FE1E179"
+					id: "2F26FD7C7FE1E179"
 					type: "item"
 					item: {
 						id: "farmersdelight:vegetable_soup"
@@ -501,27 +504,28 @@
 			]
 			rewards: [
 				{
-					id: "9CAF806D88CC825B"
+					id: "3CAF806D88CC825B"
 					type: "loot"
-					table_id: "1EBBC2B918151958"
+					table_id: "2EBBC2B918151958"
 				}
 			]
 		}
 		{
-			id: "329F0D4C3D0BF1C4"
-			x: 9.5d
-			y: 1.0d
+			id: "429F0D4C3D0BF1C4"
+			x: 5.75d
+			y: 18.375d
 			icon: {
 				id: "farmersdelight:tomato_sauce"
 				count: 1
 			}
+			hide_dependency_lines: true
 			dependencies: [
-				"880F4CCBBF5D04BE"
-				"61BA402B36393E94"
+				"280F4CCBBF5D04BE"
+				"71BA402B36393E94"
 			]
 			tasks: [
 				{
-					id: "C721B667CE2DC117"
+					id: "6721B667CE2DC117"
 					type: "item"
 					item: {
 						id: "farmersdelight:tomato_sauce"
@@ -532,7 +536,7 @@
 			]
 			rewards: [
 				{
-					id: "7641A34FA76F8C41"
+					id: "1641A34FA76F8C41"
 					type: "item"
 					item: {
 						id: "minecraft:wheat"
@@ -543,19 +547,19 @@
 			]
 		}
 		{
-			id: "33FC78E4F0295D41"
-			x: 12.0d
-			y: -1.0d
+			id: "43FC78E4F0295D41"
+			x: 8.0d
+			y: 16.4d
 			icon: {
 				id: "farmersdelight:beef_stew"
 				count: 1
 			}
 			dependencies: [
-				"06E4A34E23E054B5"
+				"16E4A34E23E054B5"
 			]
 			tasks: [
 				{
-					id: "C8DF3596F30665FB"
+					id: "68DF3596F30665FB"
 					type: "item"
 					item: {
 						id: "farmersdelight:beef_stew"
@@ -566,7 +570,7 @@
 			]
 			rewards: [
 				{
-					id: "622B68F86D51C71A"
+					id: "722B68F86D51C71A"
 					type: "item"
 					item: {
 						id: "minecraft:carrot"
@@ -577,20 +581,21 @@
 			]
 		}
 		{
-			id: "13D891DFD0CBEA83"
-			x: 12.0d
-			y: 1.0d
+			id: "23D891DFD0CBEA83"
+			x: 8.0d
+			y: 18.375d
 			icon: {
 				id: "farmersdelight:cooked_rice"
 				count: 1
 			}
+			hide_dependency_lines: true
 			dependencies: [
-				"329F0D4C3D0BF1C4"
-				"E28344D4FB2BEBDC"
+				"429F0D4C3D0BF1C4"
+				"128344D4FB2BEBDC"
 			]
 			tasks: [
 				{
-					id: "165EF3E4B60F2942"
+					id: "265EF3E4B60F2942"
 					type: "item"
 					item: {
 						id: "farmersdelight:cooked_rice"
@@ -601,7 +606,7 @@
 			]
 			rewards: [
 				{
-					id: "1170FDEEF1BB4AEB"
+					id: "2170FDEEF1BB4AEB"
 					type: "item"
 					item: {
 						id: "minecraft:egg"
@@ -612,19 +617,19 @@
 			]
 		}
 		{
-			id: "F5CDDBCCDA94E967"
-			x: 14.5d
-			y: -2.2d
+			id: "25CDDBCCDA94E967"
+			x: 10.25d
+			y: 18.375d
 			icon: {
 				id: "farmersdelight:steak_and_potatoes"
 				count: 1
 			}
 			dependencies: [
-				"13D891DFD0CBEA83"
+				"23D891DFD0CBEA83"
 			]
 			tasks: [
 				{
-					id: "40B3670DF1E958FB"
+					id: "50B3670DF1E958FB"
 					type: "item"
 					item: {
 						id: "farmersdelight:steak_and_potatoes"
@@ -635,7 +640,7 @@
 			]
 			rewards: [
 				{
-					id: "998BCD4C03A14EFE"
+					id: "398BCD4C03A14EFE"
 					type: "item"
 					item: {
 						id: "minecraft:baked_potato"
@@ -644,53 +649,53 @@
 					count: 8
 				}
 				{
-					id: "9990E32533284BE1"
+					id: "3990E32533284BE1"
 					type: "xp_levels"
 					xp_levels: 3
 				}
 			]
 		}
 		{
-			id: "11BAD57C35D63EE0"
-			x: 14.5d
-			y: 0.0d
+			id: "21BAD57C35D63EE0"
+			x: 10.25d
+			y: 16.4d
 			icon: {
 				id: "farmersdelight:fried_rice"
 				count: 1
 			}
 			dependencies: [
-				"33FC78E4F0295D41"
-				"13D891DFD0CBEA83"
+				"43FC78E4F0295D41"
+				"23D891DFD0CBEA83"
 			]
 			tasks: [
 				{
-					id: "F6BFF296000158B2"
+					id: "26BFF296000158B2"
 					type: "checkmark"
 				}
 			]
 			rewards: [
 				{
-					id: "B44B6A48FFA8ADD8"
+					id: "544B6A48FFA8ADD8"
 					type: "xp_levels"
 					xp_levels: 3
 				}
 			]
 		}
 		{
-			id: "50511EA1602C8C5C"
-			x: 12.0d
-			y: 3.0d
+			id: "60511EA1602C8C5C"
+			x: 8.0d
+			y: 20.349999999999998d
 			icon: {
 				id: "farmersdelight:wheat_dough"
 				count: 1
 			}
 			optional: true
 			dependencies: [
-				"329F0D4C3D0BF1C4"
+				"429F0D4C3D0BF1C4"
 			]
 			tasks: [
 				{
-					id: "A05DBEF8FA1D79F5"
+					id: "405DBEF8FA1D79F5"
 					type: "item"
 					item: {
 						id: "farmersdelight:wheat_dough"
@@ -701,7 +706,7 @@
 			]
 			rewards: [
 				{
-					id: "C4CC6DDDD0E2951B"
+					id: "64CC6DDDD0E2951B"
 					type: "item"
 					item: {
 						id: "minecraft:wheat"
@@ -712,19 +717,19 @@
 			]
 		}
 		{
-			id: "978D44026E7721E3"
-			x: 14.5d
-			y: 2.4d
+			id: "378D44026E7721E3"
+			x: 12.5d
+			y: 18.375d
 			icon: {
 				id: "farmersdelight:hamburger"
 				count: 1
 			}
 			dependencies: [
-				"11BAD57C35D63EE0"
+				"21BAD57C35D63EE0"
 			]
 			tasks: [
 				{
-					id: "DB731A9F5DAC0B8D"
+					id: "7B731A9F5DAC0B8D"
 					type: "item"
 					item: {
 						id: "farmersdelight:hamburger"
@@ -735,7 +740,7 @@
 			]
 			rewards: [
 				{
-					id: "06E4DBE44E88B8AD"
+					id: "16E4DBE44E88B8AD"
 					type: "item"
 					item: {
 						id: "minecraft:beef"
@@ -744,26 +749,26 @@
 					count: 8
 				}
 				{
-					id: "92DE55081535E1DA"
+					id: "32DE55081535E1DA"
 					type: "xp_levels"
 					xp_levels: 3
 				}
 			]
 		}
 		{
-			id: "55AB8C6A77115271"
-			x: 17.0d
-			y: 0.0d
+			id: "65AB8C6A77115271"
+			x: 12.5d
+			y: 16.4d
 			icon: {
 				id: "farmersdelight:roast_chicken_block"
 				count: 1
 			}
 			dependencies: [
-				"11BAD57C35D63EE0"
+				"21BAD57C35D63EE0"
 			]
 			tasks: [
 				{
-					id: "7C6CAF868F9452ED"
+					id: "1C6CAF868F9452ED"
 					type: "item"
 					item: {
 						id: "farmersdelight:roast_chicken_block"
@@ -774,32 +779,32 @@
 			]
 			rewards: [
 				{
-					id: "2FC42AF3B4FE0AA3"
+					id: "3FC42AF3B4FE0AA3"
 					type: "loot"
-					table_id: "1EBBC2B918151958"
+					table_id: "2EBBC2B918151958"
 				}
 				{
-					id: "6234A069BB265071"
+					id: "7234A069BB265071"
 					type: "xp_levels"
 					xp_levels: 4
 				}
 			]
 		}
 		{
-			id: "8910CD1D7775A23C"
-			x: 17.0d
-			y: 2.4d
+			id: "2910CD1D7775A23C"
+			x: 12.5d
+			y: 20.349999999999998d
 			icon: {
 				id: "farmersdelight:apple_pie"
 				count: 1
 			}
 			optional: true
 			dependencies: [
-				"11BAD57C35D63EE0"
+				"21BAD57C35D63EE0"
 			]
 			tasks: [
 				{
-					id: "BC98834D28E9AEC0"
+					id: "5C98834D28E9AEC0"
 					type: "item"
 					item: {
 						id: "farmersdelight:apple_pie"
@@ -810,7 +815,7 @@
 			]
 			rewards: [
 				{
-					id: "EF78296CE0A49FF4"
+					id: "1F78296CE0A49FF4"
 					type: "item"
 					item: {
 						id: "minecraft:apple"
@@ -821,19 +826,20 @@
 			]
 		}
 		{
-			id: "419885EF47C0DFA7"
-			x: 4.5d
-			y: 6.0d
+			id: "519885EF47C0DFA7"
+			x: 0.0d
+			y: 25.525d
 			icon: {
 				id: "farmersdelight:tree_bark"
 				count: 1
 			}
+			hide_dependency_lines: true
 			dependencies: [
-				"F51007087FB0E302"
+				"251007087FB0E302"
 			]
 			tasks: [
 				{
-					id: "EBA50AE4E8D201F1"
+					id: "1BA50AE4E8D201F1"
 					type: "item"
 					item: {
 						id: "farmersdelight:tree_bark"
@@ -844,7 +850,7 @@
 			]
 			rewards: [
 				{
-					id: "A6A7ADA675881702"
+					id: "46A7ADA675881702"
 					type: "item"
 					item: {
 						id: "minecraft:bone_meal"
@@ -855,19 +861,19 @@
 			]
 		}
 		{
-			id: "157C717C0E99363E"
-			x: 7.0d
-			y: 6.0d
+			id: "257C717C0E99363E"
+			x: 2.25d
+			y: 25.525d
 			icon: {
 				id: "farmersdelight:organic_compost"
 				count: 1
 			}
 			dependencies: [
-				"419885EF47C0DFA7"
+				"519885EF47C0DFA7"
 			]
 			tasks: [
 				{
-					id: "210A2F67000762C0"
+					id: "310A2F67000762C0"
 					type: "item"
 					item: {
 						id: "farmersdelight:organic_compost"
@@ -878,7 +884,7 @@
 			]
 			rewards: [
 				{
-					id: "CB71EFD77944275F"
+					id: "6B71EFD77944275F"
 					type: "item"
 					item: {
 						id: "minecraft:bone_meal"
@@ -889,20 +895,20 @@
 			]
 		}
 		{
-			id: "B305899DAF8A4495"
-			x: 9.0d
-			y: 6.0d
+			id: "5305899DAF8A4495"
+			x: 4.75d
+			y: 25.775d
 			icon: {
 				id: "farmersdelight:rich_soil"
 				count: 1
 			}
 			size: 1.5d
 			dependencies: [
-				"157C717C0E99363E"
+				"257C717C0E99363E"
 			]
 			tasks: [
 				{
-					id: "40674FB1223EDF8A"
+					id: "50674FB1223EDF8A"
 					type: "item"
 					item: {
 						id: "farmersdelight:rich_soil"
@@ -913,32 +919,32 @@
 			]
 			rewards: [
 				{
-					id: "AF630619A0F597CF"
+					id: "4F630619A0F597CF"
 					type: "loot"
-					table_id: "1EBBC2B918151958"
+					table_id: "2EBBC2B918151958"
 				}
 				{
-					id: "F303540A0E36F60B"
+					id: "2303540A0E36F60B"
 					type: "xp_levels"
 					xp_levels: 3
 				}
 			]
 		}
 		{
-			id: "1DFC7ECAACFBDEFD"
-			x: 11.0d
-			y: 7.5d
+			id: "2DFC7ECAACFBDEFD"
+			x: 8.0d
+			y: 30.224999999999998d
 			icon: {
 				id: "farmersdelight:brown_mushroom_colony"
 				count: 1
 			}
 			optional: true
 			dependencies: [
-				"B305899DAF8A4495"
+				"5305899DAF8A4495"
 			]
 			tasks: [
 				{
-					id: "41AD6770C0B0035D"
+					id: "51AD6770C0B0035D"
 					type: "item"
 					item: {
 						id: "farmersdelight:brown_mushroom_colony"
@@ -949,7 +955,7 @@
 			]
 			rewards: [
 				{
-					id: "29769EEDB48307A2"
+					id: "39769EEDB48307A2"
 					type: "item"
 					item: {
 						id: "minecraft:red_mushroom"
@@ -960,19 +966,19 @@
 			]
 		}
 		{
-			id: "EC3B1246BF2F4CD8"
-			x: 11.0d
-			y: 4.6d
+			id: "1C3B1246BF2F4CD8"
+			x: 8.0d
+			y: 25.525d
 			icon: {
 				id: "farmingforblockheads:red_fertilizer"
 				count: 1
 			}
 			dependencies: [
-				"B305899DAF8A4495"
+				"5305899DAF8A4495"
 			]
 			tasks: [
 				{
-					id: "31A72A0937ED6229"
+					id: "41A72A0937ED6229"
 					type: "item"
 					item: {
 						id: "farmingforblockheads:red_fertilizer"
@@ -983,7 +989,7 @@
 			]
 			rewards: [
 				{
-					id: "44A0229FBCB1BBBB"
+					id: "54A0229FBCB1BBBB"
 					type: "item"
 					item: {
 						id: "minecraft:gold_nugget"
@@ -994,20 +1000,20 @@
 			]
 		}
 		{
-			id: "DF0E3492824D8AAD"
-			x: 13.0d
-			y: 4.6d
+			id: "7F0E3492824D8AAD"
+			x: 11.0d
+			y: 25.525d
 			icon: {
 				id: "farmingforblockheads:green_fertilizer"
 				count: 1
 			}
 			optional: true
 			dependencies: [
-				"EC3B1246BF2F4CD8"
+				"1C3B1246BF2F4CD8"
 			]
 			tasks: [
 				{
-					id: "A43D19302C259934"
+					id: "443D19302C259934"
 					type: "item"
 					item: {
 						id: "farmingforblockheads:green_fertilizer"
@@ -1018,7 +1024,7 @@
 			]
 			rewards: [
 				{
-					id: "9F89F3656C3DA745"
+					id: "3F89F3656C3DA745"
 					type: "item"
 					item: {
 						id: "minecraft:gold_nugget"
@@ -1029,20 +1035,20 @@
 			]
 		}
 		{
-			id: "D3F5AAB79AA73C86"
-			x: 13.0d
-			y: 6.4d
+			id: "73F5AAB79AA73C86"
+			x: 11.0d
+			y: 27.875d
 			icon: {
 				id: "farmingforblockheads:yellow_fertilizer"
 				count: 1
 			}
 			optional: true
 			dependencies: [
-				"EC3B1246BF2F4CD8"
+				"1C3B1246BF2F4CD8"
 			]
 			tasks: [
 				{
-					id: "077D5042B494050B"
+					id: "177D5042B494050B"
 					type: "item"
 					item: {
 						id: "farmingforblockheads:yellow_fertilizer"
@@ -1053,7 +1059,7 @@
 			]
 			rewards: [
 				{
-					id: "07677F3F99EC142C"
+					id: "17677F3F99EC142C"
 					type: "item"
 					item: {
 						id: "minecraft:gold_nugget"
@@ -1064,20 +1070,20 @@
 			]
 		}
 		{
-			id: "3601992F7BE5B929"
-			x: 15.0d
-			y: 7.0d
+			id: "4601992F7BE5B929"
+			x: 11.0d
+			y: 30.224999999999998d
 			icon: {
 				id: "farmersdelight:tomato_crate"
 				count: 1
 			}
 			optional: true
 			dependencies: [
-				"EC3B1246BF2F4CD8"
+				"1C3B1246BF2F4CD8"
 			]
 			tasks: [
 				{
-					id: "1D64C064553326D4"
+					id: "2D64C064553326D4"
 					type: "item"
 					item: {
 						id: "farmersdelight:tomato_crate"
@@ -1088,27 +1094,28 @@
 			]
 			rewards: [
 				{
-					id: "7F34DA88B6D59C84"
+					id: "1F34DA88B6D59C84"
 					type: "xp_levels"
 					xp_levels: 3
 				}
 			]
 		}
 		{
-			id: "E16242A29E7AC583"
-			x: 4.5d
-			y: 12.0d
+			id: "116242A29E7AC583"
+			x: 0.25d
+			y: 36.025d
 			icon: {
 				id: "farmingforblockheads:feeding_trough"
 				count: 1
 			}
 			size: 1.5d
+			hide_dependency_lines: true
 			dependencies: [
-				"F51007087FB0E302"
+				"251007087FB0E302"
 			]
 			tasks: [
 				{
-					id: "F253C992CAA29285"
+					id: "2253C992CAA29285"
 					type: "item"
 					item: {
 						id: "farmingforblockheads:feeding_trough"
@@ -1119,7 +1126,7 @@
 			]
 			rewards: [
 				{
-					id: "6BD93F3ED53CC49A"
+					id: "7BD93F3ED53CC49A"
 					type: "item"
 					item: {
 						id: "minecraft:wheat"
@@ -1130,19 +1137,19 @@
 			]
 		}
 		{
-			id: "B83982681E14CDD1"
-			x: 7.0d
-			y: 11.0d
+			id: "583982681E14CDD1"
+			x: 2.75d
+			y: 35.775d
 			icon: {
 				id: "farmingforblockheads:chicken_nest"
 				count: 1
 			}
 			dependencies: [
-				"E16242A29E7AC583"
+				"116242A29E7AC583"
 			]
 			tasks: [
 				{
-					id: "E5BFBF68DC351314"
+					id: "15BFBF68DC351314"
 					type: "item"
 					item: {
 						id: "farmingforblockheads:chicken_nest"
@@ -1153,7 +1160,7 @@
 			]
 			rewards: [
 				{
-					id: "C51EF504B2D26706"
+					id: "651EF504B2D26706"
 					type: "item"
 					item: {
 						id: "minecraft:egg"
@@ -1164,19 +1171,19 @@
 			]
 		}
 		{
-			id: "3E7DD988C3B81C0C"
-			x: 7.0d
-			y: 13.0d
+			id: "4E7DD988C3B81C0C"
+			x: 2.75d
+			y: 37.625d
 			icon: {
 				id: "farmingforblockheads:market"
 				count: 1
 			}
 			dependencies: [
-				"E16242A29E7AC583"
+				"116242A29E7AC583"
 			]
 			tasks: [
 				{
-					id: "B11FC5D7AA0DCF17"
+					id: "511FC5D7AA0DCF17"
 					type: "item"
 					item: {
 						id: "farmingforblockheads:market"
@@ -1187,7 +1194,7 @@
 			]
 			rewards: [
 				{
-					id: "1BFA88394D921EFE"
+					id: "2BFA88394D921EFE"
 					type: "item"
 					item: {
 						id: "minecraft:emerald"
@@ -1196,27 +1203,27 @@
 					count: 8
 				}
 				{
-					id: "EE234734F8918851"
+					id: "1E234734F8918851"
 					type: "xp_levels"
 					xp_levels: 3
 				}
 			]
 		}
 		{
-			id: "FFAE0B849425E8B2"
-			x: 9.5d
-			y: 11.0d
+			id: "2FAE0B849425E8B2"
+			x: 5.0d
+			y: 35.775d
 			icon: {
 				id: "farmersdelight:ham"
 				count: 1
 			}
 			optional: true
 			dependencies: [
-				"B83982681E14CDD1"
+				"583982681E14CDD1"
 			]
 			tasks: [
 				{
-					id: "601E1762D2B6ACBB"
+					id: "701E1762D2B6ACBB"
 					type: "item"
 					item: {
 						id: "farmersdelight:ham"
@@ -1227,7 +1234,7 @@
 			]
 			rewards: [
 				{
-					id: "1CD1268734ACF8EB"
+					id: "2CD1268734ACF8EB"
 					type: "item"
 					item: {
 						id: "minecraft:porkchop"
@@ -1238,20 +1245,20 @@
 			]
 		}
 		{
-			id: "DE94BCD72AFBE5BE"
-			x: 12.0d
-			y: 11.0d
+			id: "7E94BCD72AFBE5BE"
+			x: 7.25d
+			y: 35.775d
 			icon: {
 				id: "farmersdelight:dog_food"
 				count: 1
 			}
 			optional: true
 			dependencies: [
-				"FFAE0B849425E8B2"
+				"2FAE0B849425E8B2"
 			]
 			tasks: [
 				{
-					id: "600038616A84ABEB"
+					id: "700038616A84ABEB"
 					type: "item"
 					item: {
 						id: "farmersdelight:dog_food"
@@ -1262,7 +1269,7 @@
 			]
 			rewards: [
 				{
-					id: "C360F8DFE6D4F120"
+					id: "6360F8DFE6D4F120"
 					type: "item"
 					item: {
 						id: "minecraft:bone"
@@ -1273,20 +1280,20 @@
 			]
 		}
 		{
-			id: "079650EABEFBB8BD"
-			x: 9.5d
-			y: 13.0d
+			id: "179650EABEFBB8BD"
+			x: 5.0d
+			y: 37.625d
 			icon: {
 				id: "farmersdelight:horse_feed"
 				count: 1
 			}
 			optional: true
 			dependencies: [
-				"3E7DD988C3B81C0C"
+				"4E7DD988C3B81C0C"
 			]
 			tasks: [
 				{
-					id: "BCF3459E6741E190"
+					id: "5CF3459E6741E190"
 					type: "item"
 					item: {
 						id: "farmersdelight:horse_feed"
@@ -1297,7 +1304,7 @@
 			]
 			rewards: [
 				{
-					id: "5E38F3EC366CF6C1"
+					id: "6E38F3EC366CF6C1"
 					type: "item"
 					item: {
 						id: "minecraft:apple"
@@ -1308,20 +1315,21 @@
 			]
 		}
 		{
-			id: "89B281C9D1703AE3"
-			x: 4.5d
-			y: 18.0d
+			id: "29B281C9D1703AE3"
+			x: 0.25d
+			y: 42.925d
 			icon: {
 				id: "aquaculture:iron_fishing_rod"
 				count: 1
 			}
 			size: 1.5d
+			hide_dependency_lines: true
 			dependencies: [
-				"F51007087FB0E302"
+				"251007087FB0E302"
 			]
 			tasks: [
 				{
-					id: "975C941652C775B1"
+					id: "375C941652C775B1"
 					type: "item"
 					item: {
 						id: "aquaculture:iron_fishing_rod"
@@ -1332,7 +1340,7 @@
 			]
 			rewards: [
 				{
-					id: "54635B1B5B5C1362"
+					id: "64635B1B5B5C1362"
 					type: "item"
 					item: {
 						id: "minecraft:cod"
@@ -1343,19 +1351,19 @@
 			]
 		}
 		{
-			id: "070B41317E141485"
-			x: 7.0d
-			y: 17.0d
+			id: "170B41317E141485"
+			x: 2.75d
+			y: 42.675d
 			icon: {
 				id: "aquaculture:iron_hook"
 				count: 1
 			}
 			dependencies: [
-				"89B281C9D1703AE3"
+				"29B281C9D1703AE3"
 			]
 			tasks: [
 				{
-					id: "3BBE482539185997"
+					id: "4BBE482539185997"
 					type: "item"
 					item: {
 						id: "aquaculture:iron_hook"
@@ -1366,7 +1374,7 @@
 			]
 			rewards: [
 				{
-					id: "EBA43AEF518E7FBA"
+					id: "1BA43AEF518E7FBA"
 					type: "item"
 					item: {
 						id: "minecraft:iron_nugget"
@@ -1377,19 +1385,19 @@
 			]
 		}
 		{
-			id: "8928E7CCAC5479D8"
-			x: 7.0d
-			y: 19.0d
+			id: "2928E7CCAC5479D8"
+			x: 2.75d
+			y: 44.525d
 			icon: {
 				id: "aquaculture:worm_farm"
 				count: 1
 			}
 			dependencies: [
-				"89B281C9D1703AE3"
+				"29B281C9D1703AE3"
 			]
 			tasks: [
 				{
-					id: "3DA9338122D48DE5"
+					id: "4DA9338122D48DE5"
 					type: "item"
 					item: {
 						id: "aquaculture:worm_farm"
@@ -1400,7 +1408,7 @@
 			]
 			rewards: [
 				{
-					id: "F805EB7926C394FA"
+					id: "2805EB7926C394FA"
 					type: "item"
 					item: {
 						id: "minecraft:bone_meal"
@@ -1411,20 +1419,20 @@
 			]
 		}
 		{
-			id: "D36B78161A7C4DE3"
-			x: 9.5d
-			y: 18.0d
+			id: "736B78161A7C4DE3"
+			x: 5.0d
+			y: 42.675d
 			icon: {
 				id: "aquaculture:iron_fillet_knife"
 				count: 1
 			}
 			dependencies: [
-				"070B41317E141485"
-				"8928E7CCAC5479D8"
+				"170B41317E141485"
+				"2928E7CCAC5479D8"
 			]
 			tasks: [
 				{
-					id: "BFB82CCD64350828"
+					id: "5FB82CCD64350828"
 					type: "item"
 					item: {
 						id: "aquaculture:iron_fillet_knife"
@@ -1433,7 +1441,7 @@
 					count: 1
 				}
 				{
-					id: "A26F5F7B474BCE12"
+					id: "426F5F7B474BCE12"
 					type: "item"
 					item: {
 						id: "aquaculture:fish_fillet_raw"
@@ -1444,32 +1452,32 @@
 			]
 			rewards: [
 				{
-					id: "A3397DD44E4AD8E8"
+					id: "43397DD44E4AD8E8"
 					type: "loot"
-					table_id: "1EBBC2B918151958"
+					table_id: "2EBBC2B918151958"
 				}
 				{
-					id: "10BB91D26DEC83FE"
+					id: "20BB91D26DEC83FE"
 					type: "xp_levels"
 					xp_levels: 3
 				}
 			]
 		}
 		{
-			id: "2B451EE7CFDFF558"
-			x: 12.0d
-			y: 17.0d
+			id: "3B451EE7CFDFF558"
+			x: 7.25d
+			y: 42.675d
 			icon: {
 				id: "aquaculture:tackle_box"
 				count: 1
 			}
 			optional: true
 			dependencies: [
-				"D36B78161A7C4DE3"
+				"736B78161A7C4DE3"
 			]
 			tasks: [
 				{
-					id: "0E97F0849B05C229"
+					id: "1E97F0849B05C229"
 					type: "item"
 					item: {
 						id: "aquaculture:tackle_box"
@@ -1480,27 +1488,27 @@
 			]
 			rewards: [
 				{
-					id: "B5E09246A30DE191"
+					id: "55E09246A30DE191"
 					type: "xp_levels"
 					xp_levels: 3
 				}
 			]
 		}
 		{
-			id: "83D508FC25FC4941"
-			x: 12.0d
-			y: 19.0d
+			id: "23D508FC25FC4941"
+			x: 7.25d
+			y: 44.525d
 			icon: {
 				id: "aquaculture:sushi"
 				count: 1
 			}
 			optional: true
 			dependencies: [
-				"D36B78161A7C4DE3"
+				"736B78161A7C4DE3"
 			]
 			tasks: [
 				{
-					id: "06F06015A2D722B7"
+					id: "16F06015A2D722B7"
 					type: "item"
 					item: {
 						id: "aquaculture:sushi"
@@ -1511,27 +1519,27 @@
 			]
 			rewards: [
 				{
-					id: "B2220EA693B7AA8B"
+					id: "52220EA693B7AA8B"
 					type: "xp_levels"
 					xp_levels: 3
 				}
 			]
 		}
 		{
-			id: "434A7C35D49D8DEF"
-			x: 14.5d
-			y: 18.0d
+			id: "534A7C35D49D8DEF"
+			x: 9.5d
+			y: 42.675d
 			icon: {
 				id: "aquaculture:neptunium_ingot"
 				count: 1
 			}
 			optional: true
 			dependencies: [
-				"2B451EE7CFDFF558"
+				"3B451EE7CFDFF558"
 			]
 			tasks: [
 				{
-					id: "0F16F44FAEBA2B75"
+					id: "1F16F44FAEBA2B75"
 					type: "item"
 					item: {
 						id: "aquaculture:neptunium_ingot"
@@ -1542,36 +1550,37 @@
 			]
 			rewards: [
 				{
-					id: "A770C0B5E29F7EF6"
+					id: "4770C0B5E29F7EF6"
 					type: "loot"
-					table_id: "870211AF0E412C54"
+					table_id: "270211AF0E412C54"
 				}
 				{
-					id: "92463BE21EB1345A"
+					id: "32463BE21EB1345A"
 					type: "xp_levels"
 					xp_levels: 5
 				}
 			]
 		}
 		{
-			id: "6A0AD641B6612345"
-			x: 20.0d
-			y: 6.0d
+			id: "7A0AD641B6612345"
+			x: 8.0d
+			y: 28.625d
 			icon: {
 				id: "farmersdelight:fried_rice"
 				count: 1
 			}
 			size: 2.5d
 			shape: "gear"
+			hide_dependency_lines: true
 			dependencies: [
-				"11BAD57C35D63EE0"
-				"B305899DAF8A4495"
-				"3E7DD988C3B81C0C"
-				"D36B78161A7C4DE3"
+				"21BAD57C35D63EE0"
+				"5305899DAF8A4495"
+				"4E7DD988C3B81C0C"
+				"736B78161A7C4DE3"
 			]
 			tasks: [
 				{
-					id: "80B13192831B381A"
+					id: "20B13192831B381A"
 					type: "item"
 					item: {
 						id: "farmersdelight:vegetable_soup"
@@ -1580,7 +1589,7 @@
 					count: 8
 				}
 				{
-					id: "9406923846C629F7"
+					id: "3406923846C629F7"
 					type: "item"
 					item: {
 						id: "farmersdelight:beef_stew"
@@ -1589,7 +1598,7 @@
 					count: 8
 				}
 				{
-					id: "201568490229F1FC"
+					id: "301568490229F1FC"
 					type: "item"
 					item: {
 						id: "farmersdelight:fried_rice"
@@ -1600,12 +1609,12 @@
 			]
 			rewards: [
 				{
-					id: "B6F4C5E92E382DF1"
+					id: "56F4C5E92E382DF1"
 					type: "loot"
-					table_id: "B5AA0F94577E6A3C"
+					table_id: "55AA0F94577E6A3C"
 				}
 				{
-					id: "4D45E40D7D06D843"
+					id: "5D45E40D7D06D843"
 					type: "xp_levels"
 					xp_levels: 10
 				}
@@ -1614,60 +1623,60 @@
 	]
 	images: [
 		{
-			id: "BE8E2EBF42BDBDE0"
+			id: "5E8E2EBF42BDBDE0"
 			image: "kronwerke:textures/quests/food/title.png"
-			x: 0.0d
-			y: -2.4d
+			x: 1.5899999999999999d
+			y: 0.0d
 			width: 4.18d
 			height: 1.8d
 			rotation: 0.0d
 			order: 1
 		}
 		{
-			id: "0B7BBB1F26AF78D1"
+			id: "1B7BBB1F26AF78D1"
 			image: "kronwerke:textures/quests/food/basics.png"
-			x: 8.5d
-			y: -11.0d
+			x: 1.505d
+			y: 6.3d
 			width: 4.01d
 			height: 0.9d
 			rotation: 0.0d
 			order: 1
 		}
 		{
-			id: "496AC693D2B0E49D"
+			id: "596AC693D2B0E49D"
 			image: "kronwerke:textures/quests/food/cooking.png"
-			x: 10.5d
-			y: -3.6d
+			x: 0.7450000000000001d
+			y: 15.049999999999999d
 			width: 2.49d
 			height: 0.9d
 			rotation: 0.0d
 			order: 1
 		}
 		{
-			id: "26AFDB84C5CF1B61"
+			id: "36AFDB84C5CF1B61"
 			image: "kronwerke:textures/quests/food/farming.png"
-			x: 7.0d
-			y: 4.2d
+			x: 0.5800000000000001d
+			y: 24.174999999999997d
 			width: 2.16d
 			height: 0.9d
 			rotation: 0.0d
 			order: 1
 		}
 		{
-			id: "B7666636DBD608EE"
+			id: "57666636DBD608EE"
 			image: "kronwerke:textures/quests/food/animals.png"
-			x: 8.0d
-			y: 9.6d
+			x: 2.24d
+			y: 34.425000000000004d
 			width: 5.48d
 			height: 0.9d
 			rotation: 0.0d
 			order: 1
 		}
 		{
-			id: "61B435AFB710702B"
+			id: "71B435AFB710702B"
 			image: "kronwerke:textures/quests/food/fishing.png"
-			x: 9.0d
-			y: 15.6d
+			x: 1.035d
+			y: 41.325d
 			width: 3.07d
 			height: 0.9d
 			rotation: 0.0d

@@ -298,6 +298,12 @@ RULES = [
     # day one, the rest with the first machines.
     (2, ["pylons:infusion_pylon", "pylons:interdiction_pylon", "pylons:expulsion_pylon", "pylons:protection_pylon", "itemcollectors:advanced_collector", "rangedpumps:pump"]),
 
+    # Every guide book is open from the start: reading ahead is the point of the stages.
+    (1, ["ae2:guide", "aether:book_of_lore", "create_enchantment_industry:blazes_enchanting_handbook",
+         "eidolon_repraised:codex", "eternal_starlight:book", "hexerei:book_of_shadows", "immersiveengineering:manual",
+         "mahoutsukai:guidebook", "malum:encyclopedia_arcana", "malum:encyclopedia_esoterica", "mekanism:dictionary",
+         "nuclear_radiation:guide_book", "pneumaticcraft:manual_compressor", "powah:book", "rftoolsbase:manual",
+         "theurgy:the_hermetica_icon", "occultism:dictionary_of_spirits", "occultism:dictionary_of_spirits_icon"]),
     # Items whose recipes need a later stage than their mod: the tooltip should say so.
     (2, ["pylons:harvester_pylon", "mysticalagriculture:tinkering_table"]),
     (2, ["occultism:spirit_attuned_gem"]),

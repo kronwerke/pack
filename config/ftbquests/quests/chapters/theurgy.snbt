@@ -1,19 +1,19 @@
 {
-	id: "06C17FAC00190D88"
+	id: "16C17FAC00190D88"
 	filename: "theurgy"
 	icon: {
 		id: "theurgy:incubator"
 		count: 1
 	}
-	group: "03203A1312E25E36"
+	group: "13203A1312E25E36"
 	order_index: 27
 	default_quest_shape: "circle"
 	default_hide_dependency_lines: false
 	quests: [
 		{
-			id: "44D8B864DFB7142B"
-			x: 0.0d
-			y: 0.0d
+			id: "54D8B864DFB7142B"
+			x: 0.5d
+			y: 2.6d
 			icon: {
 				id: "theurgy:pyromantic_brazier"
 				count: 1
@@ -22,7 +22,7 @@
 			shape: "hexagon"
 			tasks: [
 				{
-					id: "7C2E68898EF0D319"
+					id: "1C2E68898EF0D319"
 					type: "item"
 					item: {
 						id: "theurgy:pyromantic_brazier"
@@ -33,7 +33,7 @@
 			]
 			rewards: [
 				{
-					id: "2093B39BE8AE8066"
+					id: "3093B39BE8AE8066"
 					type: "item"
 					item: {
 						id: "minecraft:coal"
@@ -42,26 +42,27 @@
 					count: 32
 				}
 				{
-					id: "BC12D34A6CD4F42F"
+					id: "5C12D34A6CD4F42F"
 					type: "loot"
-					table_id: "BB5E855731D4F100"
+					table_id: "5B5E855731D4F100"
 				}
 			]
 		}
 		{
-			id: "E6DC70DFAA10B102"
-			x: 2.5d
-			y: -2.0d
+			id: "16DC70DFAA10B102"
+			x: 0.0d
+			y: 7.3999999999999995d
 			icon: {
 				id: "theurgy:sal_ammoniac_ore"
 				count: 1
 			}
+			hide_dependency_lines: true
 			dependencies: [
-				"44D8B864DFB7142B"
+				"54D8B864DFB7142B"
 			]
 			tasks: [
 				{
-					id: "7F838D359385C5A1"
+					id: "1F838D359385C5A1"
 					type: "item"
 					item: {
 						id: "theurgy:sal_ammoniac_crystal"
@@ -72,7 +73,7 @@
 			]
 			rewards: [
 				{
-					id: "EBC7D1A9495DB4EB"
+					id: "1BC7D1A9495DB4EB"
 					type: "item"
 					item: {
 						id: "minecraft:iron_ingot"
@@ -81,26 +82,26 @@
 					count: 4
 				}
 				{
-					id: "CAE0848E356C1DFF"
+					id: "6AE0848E356C1DFF"
 					type: "xp_levels"
 					xp_levels: 3
 				}
 			]
 		}
 		{
-			id: "45E7999B4727CDA4"
-			x: 5.0d
-			y: -2.0d
+			id: "55E7999B4727CDA4"
+			x: 2.25d
+			y: 7.3999999999999995d
 			icon: {
 				id: "theurgy:sal_ammoniac_tank"
 				count: 1
 			}
 			dependencies: [
-				"E6DC70DFAA10B102"
+				"16DC70DFAA10B102"
 			]
 			tasks: [
 				{
-					id: "52406F2AB37EB2BB"
+					id: "62406F2AB37EB2BB"
 					type: "item"
 					item: {
 						id: "theurgy:sal_ammoniac_tank"
@@ -109,7 +110,7 @@
 					count: 1
 				}
 				{
-					id: "D0C83940F694D82F"
+					id: "70C83940F694D82F"
 					type: "item"
 					item: {
 						id: "theurgy:sal_ammoniac_accumulator"
@@ -120,7 +121,7 @@
 			]
 			rewards: [
 				{
-					id: "D2535729A6125463"
+					id: "72535729A6125463"
 					type: "item"
 					item: {
 						id: "minecraft:water_bucket"
@@ -129,26 +130,26 @@
 					count: 1
 				}
 				{
-					id: "1C0C85554151E182"
+					id: "2C0C85554151E182"
 					type: "xp_levels"
 					xp_levels: 3
 				}
 			]
 		}
 		{
-			id: "573406096246C326"
-			x: 7.5d
-			y: -2.0d
+			id: "673406096246C326"
+			x: 4.5d
+			y: 7.3999999999999995d
 			icon: {
 				id: "theurgy:sal_ammoniac_bucket"
 				count: 1
 			}
 			dependencies: [
-				"45E7999B4727CDA4"
+				"55E7999B4727CDA4"
 			]
 			tasks: [
 				{
-					id: "9CFBC9CB5C325787"
+					id: "3CFBC9CB5C325787"
 					type: "item"
 					item: {
 						id: "theurgy:sal_ammoniac_bucket"
@@ -159,7 +160,7 @@
 			]
 			rewards: [
 				{
-					id: "917A8AD821AF5987"
+					id: "317A8AD821AF5987"
 					type: "item"
 					item: {
 						id: "theurgy:sal_ammoniac_crystal"
@@ -168,26 +169,26 @@
 					count: 4
 				}
 				{
-					id: "608CC5CEB4E016C0"
+					id: "708CC5CEB4E016C0"
 					type: "xp_levels"
 					xp_levels: 4
 				}
 			]
 		}
 		{
-			id: "86C4940747B7A7AC"
-			x: 10.0d
-			y: -2.0d
+			id: "26C4940747B7A7AC"
+			x: 6.75d
+			y: 7.3999999999999995d
 			icon: {
 				id: "theurgy:liquefaction_cauldron"
 				count: 1
 			}
 			dependencies: [
-				"573406096246C326"
+				"673406096246C326"
 			]
 			tasks: [
 				{
-					id: "6B1BEB9D512C0E06"
+					id: "7B1BEB9D512C0E06"
 					type: "item"
 					item: {
 						id: "theurgy:liquefaction_cauldron"
@@ -196,7 +197,7 @@
 					count: 1
 				}
 				{
-					id: "77CC87D2C5B8D013"
+					id: "17CC87D2C5B8D013"
 					type: "item"
 					item: {
 						id: "theurgy:alchemical_sulfur_iron"
@@ -207,7 +208,7 @@
 			]
 			rewards: [
 				{
-					id: "ED8BCD7A8C314A83"
+					id: "1D8BCD7A8C314A83"
 					type: "item"
 					item: {
 						id: "minecraft:raw_iron"
@@ -216,26 +217,27 @@
 					count: 16
 				}
 				{
-					id: "B811A0C42821CA36"
+					id: "5811A0C42821CA36"
 					type: "xp_levels"
 					xp_levels: 5
 				}
 			]
 		}
 		{
-			id: "B7FF5F324DC7988B"
-			x: 2.5d
-			y: 0.5d
+			id: "57FF5F324DC7988B"
+			x: 0.0d
+			y: 9.375d
 			icon: {
 				id: "theurgy:calcination_oven"
 				count: 1
 			}
+			hide_dependency_lines: true
 			dependencies: [
-				"44D8B864DFB7142B"
+				"54D8B864DFB7142B"
 			]
 			tasks: [
 				{
-					id: "9BDA1A602FDDD5AB"
+					id: "3BDA1A602FDDD5AB"
 					type: "item"
 					item: {
 						id: "theurgy:calcination_oven"
@@ -244,7 +246,7 @@
 					count: 1
 				}
 				{
-					id: "922FAD6C5DA05374"
+					id: "322FAD6C5DA05374"
 					type: "item"
 					item: {
 						id: "theurgy:alchemical_salt_mineral"
@@ -255,7 +257,7 @@
 			]
 			rewards: [
 				{
-					id: "49546363E7C2431D"
+					id: "59546363E7C2431D"
 					type: "item"
 					item: {
 						id: "minecraft:charcoal"
@@ -264,26 +266,27 @@
 					count: 16
 				}
 				{
-					id: "747D4ADB25997EBB"
+					id: "147D4ADB25997EBB"
 					type: "xp_levels"
 					xp_levels: 3
 				}
 			]
 		}
 		{
-			id: "DCE5BA05B419B715"
-			x: 5.0d
-			y: 0.5d
+			id: "7CE5BA05B419B715"
+			x: 0.0d
+			y: 11.35d
 			icon: {
 				id: "theurgy:distiller"
 				count: 1
 			}
+			hide_dependency_lines: true
 			dependencies: [
-				"44D8B864DFB7142B"
+				"54D8B864DFB7142B"
 			]
 			tasks: [
 				{
-					id: "D36E8A941C704289"
+					id: "736E8A941C704289"
 					type: "item"
 					item: {
 						id: "theurgy:distiller"
@@ -292,7 +295,7 @@
 					count: 1
 				}
 				{
-					id: "580D7764C50360C1"
+					id: "680D7764C50360C1"
 					type: "item"
 					item: {
 						id: "theurgy:mercury_shard"
@@ -303,7 +306,7 @@
 			]
 			rewards: [
 				{
-					id: "E935415928405997"
+					id: "1935415928405997"
 					type: "item"
 					item: {
 						id: "minecraft:cobblestone"
@@ -312,27 +315,27 @@
 					count: 64
 				}
 				{
-					id: "0455EB7E75E1945D"
+					id: "1455EB7E75E1945D"
 					type: "xp_levels"
 					xp_levels: 3
 				}
 			]
 		}
 		{
-			id: "61DAFB58443656B6"
-			x: 7.5d
-			y: 0.5d
+			id: "71DAFB58443656B6"
+			x: 2.25d
+			y: 9.375d
 			icon: {
 				id: "theurgy:incubator"
 				count: 1
 			}
 			dependencies: [
-				"B7FF5F324DC7988B"
-				"DCE5BA05B419B715"
+				"57FF5F324DC7988B"
+				"7CE5BA05B419B715"
 			]
 			tasks: [
 				{
-					id: "3FD6DBEA634C2A2A"
+					id: "4FD6DBEA634C2A2A"
 					type: "item"
 					item: {
 						id: "theurgy:incubator"
@@ -343,7 +346,7 @@
 			]
 			rewards: [
 				{
-					id: "A658073D0B2DA08D"
+					id: "4658073D0B2DA08D"
 					type: "item"
 					item: {
 						id: "theurgy:pyromantic_brazier"
@@ -352,27 +355,27 @@
 					count: 1
 				}
 				{
-					id: "FE92C9718701C176"
+					id: "2E92C9718701C176"
 					type: "xp_levels"
 					xp_levels: 4
 				}
 			]
 		}
 		{
-			id: "3DD82BD2E67B049E"
-			x: 10.0d
-			y: 0.5d
+			id: "4DD82BD2E67B049E"
+			x: 9.0d
+			y: 7.3999999999999995d
 			icon: {
 				id: "theurgy:incubator_sulfur_vessel"
 				count: 1
 			}
 			dependencies: [
-				"61DAFB58443656B6"
-				"86C4940747B7A7AC"
+				"71DAFB58443656B6"
+				"26C4940747B7A7AC"
 			]
 			tasks: [
 				{
-					id: "77920A5322FEBBBA"
+					id: "17920A5322FEBBBA"
 					type: "item"
 					item: {
 						id: "theurgy:incubator_salt_vessel"
@@ -381,7 +384,7 @@
 					count: 1
 				}
 				{
-					id: "E894954AC56435F9"
+					id: "1894954AC56435F9"
 					type: "item"
 					item: {
 						id: "theurgy:incubator_sulfur_vessel"
@@ -390,7 +393,7 @@
 					count: 1
 				}
 				{
-					id: "232578DEE3DEBB1E"
+					id: "332578DEE3DEBB1E"
 					type: "item"
 					item: {
 						id: "theurgy:incubator_mercury_vessel"
@@ -401,7 +404,7 @@
 			]
 			rewards: [
 				{
-					id: "353BDCDEAE056ECB"
+					id: "453BDCDEAE056ECB"
 					type: "item"
 					item: {
 						id: "minecraft:copper_ingot"
@@ -410,16 +413,16 @@
 					count: 12
 				}
 				{
-					id: "A0DC5DE2ABCB9127"
+					id: "40DC5DE2ABCB9127"
 					type: "xp_levels"
 					xp_levels: 5
 				}
 			]
 		}
 		{
-			id: "E2A0A8C0F29E767D"
-			x: 12.5d
-			y: 0.5d
+			id: "12A0A8C0F29E767D"
+			x: 11.625d
+			y: 7.7749999999999995d
 			icon: {
 				id: "minecraft:iron_ingot"
 				count: 1
@@ -427,22 +430,22 @@
 			size: 1.75d
 			shape: "diamond"
 			dependencies: [
-				"3DD82BD2E67B049E"
+				"4DD82BD2E67B049E"
 			]
 			tasks: [
 				{
-					id: "E90ACBFAD17D14CC"
+					id: "190ACBFAD17D14CC"
 					type: "checkmark"
 				}
 			]
 			rewards: [
 				{
-					id: "3F2652BE66121D2C"
+					id: "4F2652BE66121D2C"
 					type: "loot"
-					table_id: "6BD556482A471D58"
+					table_id: "7BD556482A471D58"
 				}
 				{
-					id: "FEAC0A3D5579C325"
+					id: "2EAC0A3D5579C325"
 					type: "item"
 					item: {
 						id: "minecraft:raw_iron"
@@ -451,26 +454,27 @@
 					count: 32
 				}
 				{
-					id: "5DC9628B35E4571A"
+					id: "6DC9628B35E4571A"
 					type: "xp_levels"
 					xp_levels: 10
 				}
 			]
 		}
 		{
-			id: "07BFB9C5252AD792"
+			id: "17BFB9C5252AD792"
 			x: 0.0d
-			y: 5.0d
+			y: 16.525d
 			icon: {
 				id: "theurgy:alchemical_salt_strata"
 				count: 1
 			}
+			hide_dependency_lines: true
 			dependencies: [
-				"E2A0A8C0F29E767D"
+				"12A0A8C0F29E767D"
 			]
 			tasks: [
 				{
-					id: "4B1048EA0409865D"
+					id: "5B1048EA0409865D"
 					type: "item"
 					item: {
 						id: "theurgy:alchemical_salt_strata"
@@ -481,7 +485,7 @@
 			]
 			rewards: [
 				{
-					id: "0B053082AD87599F"
+					id: "1B053082AD87599F"
 					type: "item"
 					item: {
 						id: "minecraft:cobblestone"
@@ -490,26 +494,26 @@
 					count: 64
 				}
 				{
-					id: "ECD2B7C12AF89D6D"
+					id: "1CD2B7C12AF89D6D"
 					type: "xp_levels"
 					xp_levels: 3
 				}
 			]
 		}
 		{
-			id: "3EE32856F3E9D1B0"
-			x: 2.5d
-			y: 5.0d
+			id: "4EE32856F3E9D1B0"
+			x: 2.25d
+			y: 16.525d
 			icon: {
 				id: "theurgy:alchemical_salt_mineral"
 				count: 1
 			}
 			dependencies: [
-				"07BFB9C5252AD792"
+				"17BFB9C5252AD792"
 			]
 			tasks: [
 				{
-					id: "ABD9F8A6B72BDE48"
+					id: "4BD9F8A6B72BDE48"
 					type: "item"
 					item: {
 						id: "theurgy:alchemical_salt_mineral"
@@ -520,7 +524,7 @@
 			]
 			rewards: [
 				{
-					id: "5BBBD6D2FED70493"
+					id: "6BBBD6D2FED70493"
 					type: "item"
 					item: {
 						id: "minecraft:raw_iron"
@@ -529,27 +533,27 @@
 					count: 8
 				}
 				{
-					id: "498D1D50F074657D"
+					id: "598D1D50F074657D"
 					type: "xp_levels"
 					xp_levels: 4
 				}
 			]
 		}
 		{
-			id: "6A167C2F59DD7CF9"
-			x: 0.0d
-			y: 7.2d
+			id: "7A167C2F59DD7CF9"
+			x: 2.25d
+			y: 18.125d
 			icon: {
 				id: "theurgy:crystallized_water"
 				count: 1
 			}
 			optional: true
 			dependencies: [
-				"07BFB9C5252AD792"
+				"17BFB9C5252AD792"
 			]
 			tasks: [
 				{
-					id: "FD231FD9D56FAD3C"
+					id: "2D231FD9D56FAD3C"
 					type: "item"
 					item: {
 						id: "theurgy:crystallized_water"
@@ -560,7 +564,7 @@
 			]
 			rewards: [
 				{
-					id: "7C7A22AD5D0B9652"
+					id: "1C7A22AD5D0B9652"
 					type: "item"
 					item: {
 						id: "minecraft:bucket"
@@ -569,26 +573,27 @@
 					count: 2
 				}
 				{
-					id: "7D29A9A64BA6126F"
+					id: "1D29A9A64BA6126F"
 					type: "xp_levels"
 					xp_levels: 3
 				}
 			]
 		}
 		{
-			id: "C39D8F237FAFF578"
-			x: 5.0d
-			y: 5.0d
+			id: "639D8F237FAFF578"
+			x: 0.0d
+			y: 21.325d
 			icon: {
 				id: "theurgy:mercury_catalyst"
 				count: 1
 			}
+			hide_dependency_lines: true
 			dependencies: [
-				"E2A0A8C0F29E767D"
+				"12A0A8C0F29E767D"
 			]
 			tasks: [
 				{
-					id: "528CC230FA0CB575"
+					id: "628CC230FA0CB575"
 					type: "item"
 					item: {
 						id: "theurgy:mercury_catalyst"
@@ -599,7 +604,7 @@
 			]
 			rewards: [
 				{
-					id: "2B93F3C6BA97655A"
+					id: "3B93F3C6BA97655A"
 					type: "item"
 					item: {
 						id: "theurgy:mercury_shard"
@@ -608,26 +613,26 @@
 					count: 16
 				}
 				{
-					id: "8DB2B1878334E27D"
+					id: "2DB2B1878334E27D"
 					type: "xp_levels"
 					xp_levels: 4
 				}
 			]
 		}
 		{
-			id: "CDD32E5E899C84F2"
-			x: 7.5d
-			y: 5.0d
+			id: "6DD32E5E899C84F2"
+			x: 2.25d
+			y: 21.325d
 			icon: {
 				id: "theurgy:caloric_flux_emitter"
 				count: 1
 			}
 			dependencies: [
-				"C39D8F237FAFF578"
+				"639D8F237FAFF578"
 			]
 			tasks: [
 				{
-					id: "4868947DC74380A1"
+					id: "5868947DC74380A1"
 					type: "item"
 					item: {
 						id: "theurgy:caloric_flux_emitter"
@@ -638,7 +643,7 @@
 			]
 			rewards: [
 				{
-					id: "097E6793FC05BB8F"
+					id: "197E6793FC05BB8F"
 					type: "item"
 					item: {
 						id: "minecraft:gold_ingot"
@@ -647,27 +652,27 @@
 					count: 4
 				}
 				{
-					id: "5C32B42BA6F4FEAA"
+					id: "6C32B42BA6F4FEAA"
 					type: "xp_levels"
 					xp_levels: 5
 				}
 			]
 		}
 		{
-			id: "1F30F00339DAF75D"
-			x: 2.5d
-			y: 7.2d
+			id: "2F30F00339DAF75D"
+			x: 2.25d
+			y: 19.724999999999998d
 			icon: {
 				id: "theurgy:divination_rod_t1"
 				count: 1
 			}
 			optional: true
 			dependencies: [
-				"07BFB9C5252AD792"
+				"17BFB9C5252AD792"
 			]
 			tasks: [
 				{
-					id: "D5DB0F278A9E7BAB"
+					id: "75DB0F278A9E7BAB"
 					type: "item"
 					item: {
 						id: "theurgy:divination_rod_t1"
@@ -678,7 +683,7 @@
 			]
 			rewards: [
 				{
-					id: "2BC311C7E8814F69"
+					id: "3BC311C7E8814F69"
 					type: "item"
 					item: {
 						id: "minecraft:amethyst_shard"
@@ -689,20 +694,20 @@
 			]
 		}
 		{
-			id: "D2ABD48D90A74784"
-			x: 5.0d
-			y: 7.2d
+			id: "72ABD48D90A74784"
+			x: 4.5d
+			y: 16.525d
 			icon: {
 				id: "theurgy:divination_rod_t2"
 				count: 1
 			}
 			optional: true
 			dependencies: [
-				"1F30F00339DAF75D"
+				"2F30F00339DAF75D"
 			]
 			tasks: [
 				{
-					id: "D2E06105DBF7357A"
+					id: "72E06105DBF7357A"
 					type: "item"
 					item: {
 						id: "theurgy:divination_rod_t2"
@@ -713,7 +718,7 @@
 			]
 			rewards: [
 				{
-					id: "84ACB9D90226DE00"
+					id: "24ACB9D90226DE00"
 					type: "item"
 					item: {
 						id: "minecraft:gold_nugget"
@@ -722,26 +727,27 @@
 					count: 9
 				}
 				{
-					id: "D2161B6F5A4AEE55"
+					id: "72161B6F5A4AEE55"
 					type: "xp_levels"
 					xp_levels: 3
 				}
 			]
 		}
 		{
-			id: "C86214DB6E62E69A"
-			x: 10.0d
-			y: 5.0d
+			id: "686214DB6E62E69A"
+			x: 0.0d
+			y: 26.124999999999996d
 			icon: {
 				id: "theurgy:mercurial_wand"
 				count: 1
 			}
+			hide_dependency_lines: true
 			dependencies: [
-				"C39D8F237FAFF578"
+				"639D8F237FAFF578"
 			]
 			tasks: [
 				{
-					id: "DA082634FA66E3B3"
+					id: "7A082634FA66E3B3"
 					type: "item"
 					item: {
 						id: "theurgy:mercurial_wand"
@@ -752,7 +758,7 @@
 			]
 			rewards: [
 				{
-					id: "007C37FF7B1D532E"
+					id: "107C37FF7B1D532E"
 					type: "item"
 					item: {
 						id: "minecraft:copper_ingot"
@@ -761,26 +767,26 @@
 					count: 8
 				}
 				{
-					id: "233AA30F6ED945A1"
+					id: "333AA30F6ED945A1"
 					type: "xp_levels"
 					xp_levels: 3
 				}
 			]
 		}
 		{
-			id: "04042D0E4B70B4FF"
-			x: 12.5d
-			y: 5.0d
+			id: "14042D0E4B70B4FF"
+			x: 2.25d
+			y: 26.124999999999996d
 			icon: {
 				id: "theurgy:logistics_item_extractor"
 				count: 1
 			}
 			dependencies: [
-				"C86214DB6E62E69A"
+				"686214DB6E62E69A"
 			]
 			tasks: [
 				{
-					id: "4894720E7368C32A"
+					id: "5894720E7368C32A"
 					type: "item"
 					item: {
 						id: "theurgy:logistics_item_extractor"
@@ -789,7 +795,7 @@
 					count: 2
 				}
 				{
-					id: "23BBE19A28A588E9"
+					id: "33BBE19A28A588E9"
 					type: "item"
 					item: {
 						id: "theurgy:logistics_item_inserter"
@@ -800,7 +806,7 @@
 			]
 			rewards: [
 				{
-					id: "484B020D39499E7B"
+					id: "584B020D39499E7B"
 					type: "item"
 					item: {
 						id: "theurgy:mercury_shard"
@@ -809,26 +815,26 @@
 					count: 16
 				}
 				{
-					id: "72D10A2233FDFC6C"
+					id: "12D10A2233FDFC6C"
 					type: "xp_levels"
 					xp_levels: 4
 				}
 			]
 		}
 		{
-			id: "7D014BD9B00876E4"
-			x: 12.5d
-			y: 7.2d
+			id: "1D014BD9B00876E4"
+			x: 4.5d
+			y: 26.124999999999996d
 			icon: {
 				id: "theurgy:copper_wire"
 				count: 1
 			}
 			dependencies: [
-				"04042D0E4B70B4FF"
+				"14042D0E4B70B4FF"
 			]
 			tasks: [
 				{
-					id: "7255ECDB1473B481"
+					id: "1255ECDB1473B481"
 					type: "item"
 					item: {
 						id: "theurgy:copper_wire"
@@ -839,7 +845,7 @@
 			]
 			rewards: [
 				{
-					id: "C394548F05FB0A9F"
+					id: "6394548F05FB0A9F"
 					type: "item"
 					item: {
 						id: "minecraft:copper_ingot"
@@ -848,59 +854,61 @@
 					count: 16
 				}
 				{
-					id: "A0EA0C3B3BA628A3"
+					id: "40EA0C3B3BA628A3"
 					type: "xp_levels"
 					xp_levels: 4
 				}
 			]
 		}
 		{
-			id: "FCBF22171BB2128E"
-			x: 15.0d
-			y: 6.0d
+			id: "2CBF22171BB2128E"
+			x: 7.0d
+			y: 26.374999999999996d
 			icon: {
 				id: "theurgy:list_filter"
 				count: 1
 			}
 			size: 1.5d
 			shape: "diamond"
+			hide_dependency_lines: true
 			dependencies: [
-				"7D014BD9B00876E4"
-				"CDD32E5E899C84F2"
+				"1D014BD9B00876E4"
+				"6DD32E5E899C84F2"
 			]
 			tasks: [
 				{
-					id: "5B4BFE9493D0CBD5"
+					id: "6B4BFE9493D0CBD5"
 					type: "checkmark"
 				}
 			]
 			rewards: [
 				{
-					id: "644DACCBE592BCF1"
+					id: "744DACCBE592BCF1"
 					type: "loot"
-					table_id: "6BD556482A471D58"
+					table_id: "7BD556482A471D58"
 				}
 				{
-					id: "9A2D065010D99934"
+					id: "3A2D065010D99934"
 					type: "xp_levels"
 					xp_levels: 10
 				}
 			]
 		}
 		{
-			id: "C0697FF98DA3A3AE"
+			id: "60697FF98DA3A3AE"
 			x: 0.0d
-			y: 11.5d
+			y: 31.674999999999997d
 			icon: {
 				id: "theurgy:reformation_target_pedestal"
 				count: 1
 			}
+			hide_dependency_lines: true
 			dependencies: [
-				"C39D8F237FAFF578"
+				"639D8F237FAFF578"
 			]
 			tasks: [
 				{
-					id: "382CFBE532557E5C"
+					id: "482CFBE532557E5C"
 					type: "item"
 					item: {
 						id: "theurgy:reformation_source_pedestal"
@@ -909,7 +917,7 @@
 					count: 2
 				}
 				{
-					id: "90FB1401150FA88B"
+					id: "30FB1401150FA88B"
 					type: "item"
 					item: {
 						id: "theurgy:reformation_target_pedestal"
@@ -918,7 +926,7 @@
 					count: 1
 				}
 				{
-					id: "B81A3DCAE8BADE03"
+					id: "581A3DCAE8BADE03"
 					type: "item"
 					item: {
 						id: "theurgy:reformation_result_pedestal"
@@ -929,7 +937,7 @@
 			]
 			rewards: [
 				{
-					id: "F9315C982F26356D"
+					id: "29315C982F26356D"
 					type: "item"
 					item: {
 						id: "minecraft:blackstone"
@@ -938,26 +946,26 @@
 					count: 16
 				}
 				{
-					id: "BF9B132E2D3E215B"
+					id: "5F9B132E2D3E215B"
 					type: "xp_levels"
 					xp_levels: 4
 				}
 			]
 		}
 		{
-			id: "605A1D339FC496C6"
-			x: 2.5d
-			y: 11.5d
+			id: "705A1D339FC496C6"
+			x: 2.25d
+			y: 31.674999999999997d
 			icon: {
 				id: "theurgy:sulfuric_flux_emitter"
 				count: 1
 			}
 			dependencies: [
-				"C0697FF98DA3A3AE"
+				"60697FF98DA3A3AE"
 			]
 			tasks: [
 				{
-					id: "CE9C871EF931A94D"
+					id: "6E9C871EF931A94D"
 					type: "item"
 					item: {
 						id: "theurgy:sulfuric_flux_emitter"
@@ -968,7 +976,7 @@
 			]
 			rewards: [
 				{
-					id: "1CA5BB70DB9F6264"
+					id: "2CA5BB70DB9F6264"
 					type: "item"
 					item: {
 						id: "minecraft:gold_ingot"
@@ -977,26 +985,26 @@
 					count: 4
 				}
 				{
-					id: "C3893BCA2C13BA9E"
+					id: "63893BCA2C13BA9E"
 					type: "xp_levels"
 					xp_levels: 5
 				}
 			]
 		}
 		{
-			id: "EE2CAD1F8BA3B7CF"
-			x: 5.0d
-			y: 11.5d
+			id: "1E2CAD1F8BA3B7CF"
+			x: 4.5d
+			y: 31.674999999999997d
 			icon: {
 				id: "theurgy:alchemical_sulfur_quartz"
 				count: 1
 			}
 			dependencies: [
-				"605A1D339FC496C6"
+				"705A1D339FC496C6"
 			]
 			tasks: [
 				{
-					id: "D83923362B835831"
+					id: "783923362B835831"
 					type: "item"
 					item: {
 						id: "theurgy:alchemical_sulfur_quartz"
@@ -1007,7 +1015,7 @@
 			]
 			rewards: [
 				{
-					id: "93A9079C00448AD2"
+					id: "33A9079C00448AD2"
 					type: "item"
 					item: {
 						id: "minecraft:lapis_lazuli"
@@ -1016,26 +1024,26 @@
 					count: 16
 				}
 				{
-					id: "8CC5BF1A1B7C92D8"
+					id: "2CC5BF1A1B7C92D8"
 					type: "xp_levels"
 					xp_levels: 6
 				}
 			]
 		}
 		{
-			id: "DAF997BBC949C119"
-			x: 7.5d
-			y: 11.5d
+			id: "7AF997BBC949C119"
+			x: 6.75d
+			y: 31.674999999999997d
 			icon: {
 				id: "theurgy:fermentation_vat"
 				count: 1
 			}
 			dependencies: [
-				"EE2CAD1F8BA3B7CF"
+				"1E2CAD1F8BA3B7CF"
 			]
 			tasks: [
 				{
-					id: "64651CF1194E3382"
+					id: "74651CF1194E3382"
 					type: "item"
 					item: {
 						id: "theurgy:fermentation_vat"
@@ -1044,7 +1052,7 @@
 					count: 1
 				}
 				{
-					id: "E419E72B15671185"
+					id: "1419E72B15671185"
 					type: "item"
 					item: {
 						id: "theurgy:alchemical_niter_gems_common"
@@ -1055,7 +1063,7 @@
 			]
 			rewards: [
 				{
-					id: "9AC34CC85124C10E"
+					id: "3AC34CC85124C10E"
 					type: "item"
 					item: {
 						id: "minecraft:sugar"
@@ -1064,27 +1072,27 @@
 					count: 32
 				}
 				{
-					id: "C31CEFF3785076AA"
+					id: "631CEFF3785076AA"
 					type: "xp_levels"
 					xp_levels: 6
 				}
 			]
 		}
 		{
-			id: "9DE4DC5484068C06"
-			x: 7.5d
-			y: 13.7d
+			id: "3DE4DC5484068C06"
+			x: 9.0d
+			y: 33.525d
 			icon: {
 				id: "theurgy:fermentation_starter"
 				count: 1
 			}
 			optional: true
 			dependencies: [
-				"DAF997BBC949C119"
+				"7AF997BBC949C119"
 			]
 			tasks: [
 				{
-					id: "D54ECDCC51260A3C"
+					id: "754ECDCC51260A3C"
 					type: "item"
 					item: {
 						id: "theurgy:fermentation_starter"
@@ -1095,7 +1103,7 @@
 			]
 			rewards: [
 				{
-					id: "1D37B1352417CDD4"
+					id: "2D37B1352417CDD4"
 					type: "item"
 					item: {
 						id: "minecraft:sugar_cane"
@@ -1104,26 +1112,26 @@
 					count: 16
 				}
 				{
-					id: "BE9419F54DC19BEB"
+					id: "5E9419F54DC19BEB"
 					type: "xp_levels"
 					xp_levels: 3
 				}
 			]
 		}
 		{
-			id: "1C05DFCA19817882"
-			x: 10.0d
-			y: 11.5d
+			id: "2C05DFCA19817882"
+			x: 9.0d
+			y: 31.674999999999997d
 			icon: {
 				id: "theurgy:alchemical_niter_metals_common"
 				count: 1
 			}
 			dependencies: [
-				"DAF997BBC949C119"
+				"7AF997BBC949C119"
 			]
 			tasks: [
 				{
-					id: "BBAD029ED801F632"
+					id: "5BAD029ED801F632"
 					type: "item"
 					item: {
 						id: "theurgy:alchemical_niter_metals_common"
@@ -1134,7 +1142,7 @@
 			]
 			rewards: [
 				{
-					id: "A9D3D4D9D5D4B167"
+					id: "49D3D4D9D5D4B167"
 					type: "item"
 					item: {
 						id: "theurgy:alchemical_sulfur_iron"
@@ -1143,26 +1151,26 @@
 					count: 8
 				}
 				{
-					id: "8F5876C7D49A0523"
+					id: "2F5876C7D49A0523"
 					type: "xp_levels"
 					xp_levels: 7
 				}
 			]
 		}
 		{
-			id: "51C8DBA871625226"
-			x: 10.0d
-			y: 13.7d
+			id: "61C8DBA871625226"
+			x: 11.25d
+			y: 31.674999999999997d
 			icon: {
 				id: "theurgy:purified_gold"
 				count: 1
 			}
 			dependencies: [
-				"1C05DFCA19817882"
+				"2C05DFCA19817882"
 			]
 			tasks: [
 				{
-					id: "30468EFAF6F70ABC"
+					id: "40468EFAF6F70ABC"
 					type: "item"
 					item: {
 						id: "theurgy:digestion_vat"
@@ -1171,7 +1179,7 @@
 					count: 1
 				}
 				{
-					id: "367C6DA274CA7CC1"
+					id: "467C6DA274CA7CC1"
 					type: "item"
 					item: {
 						id: "theurgy:purified_gold"
@@ -1182,7 +1190,7 @@
 			]
 			rewards: [
 				{
-					id: "6C34F08F2CF72C1C"
+					id: "7C34F08F2CF72C1C"
 					type: "item"
 					item: {
 						id: "minecraft:gold_ingot"
@@ -1191,16 +1199,16 @@
 					count: 8
 				}
 				{
-					id: "B45CBDEDA3C7C8F3"
+					id: "545CBDEDA3C7C8F3"
 					type: "xp_levels"
 					xp_levels: 7
 				}
 			]
 		}
 		{
-			id: "FED7398A8BF9E75D"
-			x: 12.5d
-			y: 12.6d
+			id: "2ED7398A8BF9E75D"
+			x: 13.75d
+			y: 31.924999999999997d
 			icon: {
 				id: "theurgy:digestion_vat"
 				count: 1
@@ -1208,11 +1216,11 @@
 			size: 1.5d
 			shape: "diamond"
 			dependencies: [
-				"51C8DBA871625226"
+				"61C8DBA871625226"
 			]
 			tasks: [
 				{
-					id: "C5EF778CB4864B49"
+					id: "65EF778CB4864B49"
 					type: "item"
 					item: {
 						id: "theurgy:alchemical_niter_metals_rare"
@@ -1223,34 +1231,35 @@
 			]
 			rewards: [
 				{
-					id: "C8B26B0BACCB30CF"
+					id: "68B26B0BACCB30CF"
 					type: "loot"
-					table_id: "BB5E855731D4F100"
+					table_id: "5B5E855731D4F100"
 				}
 				{
-					id: "D9E2BC5EF3410C7B"
+					id: "79E2BC5EF3410C7B"
 					type: "xp_levels"
 					xp_levels: 10
 				}
 			]
 		}
 		{
-			id: "7BFAAF2C6B540335"
-			x: 17.5d
-			y: 9.0d
+			id: "1BFAAF2C6B540335"
+			x: 10.25d
+			y: 26.874999999999996d
 			icon: {
 				id: "theurgy:incubator"
 				count: 1
 			}
 			size: 2.5d
 			shape: "gear"
+			hide_dependency_lines: true
 			dependencies: [
-				"FCBF22171BB2128E"
-				"FED7398A8BF9E75D"
+				"2CBF22171BB2128E"
+				"2ED7398A8BF9E75D"
 			]
 			tasks: [
 				{
-					id: "74ADF91F4AABC339"
+					id: "14ADF91F4AABC339"
 					type: "item"
 					item: {
 						id: "theurgy:alchemical_sulfur_iron"
@@ -1259,7 +1268,7 @@
 					count: 64
 				}
 				{
-					id: "636A3451F72431F4"
+					id: "736A3451F72431F4"
 					type: "item"
 					item: {
 						id: "theurgy:alchemical_sulfur_gold"
@@ -1270,12 +1279,12 @@
 			]
 			rewards: [
 				{
-					id: "70695B67376CFDAF"
+					id: "10695B67376CFDAF"
 					type: "loot"
-					table_id: "6320E512778B48ED"
+					table_id: "7320E512778B48ED"
 				}
 				{
-					id: "02BACE526230A16A"
+					id: "12BACE526230A16A"
 					type: "xp_levels"
 					xp_levels: 15
 				}
@@ -1284,50 +1293,50 @@
 	]
 	images: [
 		{
-			id: "89E8C3F04949B760"
+			id: "29E8C3F04949B760"
 			image: "kronwerke:textures/quests/theurgy/title.png"
-			x: 6.0d
-			y: -5.6d
+			x: 2.35d
+			y: 0.0d
 			width: 5.7d
 			height: 1.8d
 			rotation: 0.0d
 			order: 1
 		}
 		{
-			id: "5B1243BD0829A95C"
+			id: "6B1243BD0829A95C"
 			image: "kronwerke:textures/quests/theurgy/spagyrik.png"
-			x: 6.0d
-			y: -3.7d
+			x: 0.9950000000000001d
+			y: 6.05d
 			width: 2.99d
 			height: 0.9d
 			rotation: 0.0d
 			order: 1
 		}
 		{
-			id: "66B852DEFD2F65E5"
+			id: "76B852DEFD2F65E5"
 			image: "kronwerke:textures/quests/theurgy/waerme.png"
-			x: 3.5d
-			y: 3.3d
+			x: 2.935d
+			y: 15.174999999999999d
 			width: 6.87d
 			height: 0.9d
 			rotation: 0.0d
 			order: 1
 		}
 		{
-			id: "47313B76BCE3AE47"
+			id: "57313B76BCE3AE47"
 			image: "kronwerke:textures/quests/theurgy/logistik.png"
-			x: 12.5d
-			y: 3.3d
+			x: 0.875d
+			y: 24.774999999999995d
 			width: 2.75d
 			height: 0.9d
 			rotation: 0.0d
 			order: 1
 		}
 		{
-			id: "BE9872BC568FCC80"
+			id: "5E9872BC568FCC80"
 			image: "kronwerke:textures/quests/theurgy/umwandlung.png"
-			x: 6.0d
-			y: 9.8d
+			x: 1.75d
+			y: 30.324999999999996d
 			width: 4.5d
 			height: 0.9d
 			rotation: 0.0d

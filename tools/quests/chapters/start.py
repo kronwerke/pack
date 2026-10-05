@@ -1,5 +1,5 @@
-"""Start here: the first ten quests take a new player from spawn to a base and the first obelisk
-deposit, then the rest of day one, the obelisk (hand in, /kw, feeders, pillars, scaling, the 98
+"""Start here: the first quests take a new player from spawn to a claimed base and the first
+obelisk deposit (no vanilla tutorial, the players know Minecraft), then the obelisk (hand in, /kw, feeders, pillars, scaling, the 98
 percent hold), the Nature's Aura steps behind both stage 1 milestones (brilliant fiber, gold leaf,
 ritual of the forest, token of joy, natural altar, infused iron), the five stages and locked items,
 the server, and a hub that points to every stage 1 chapter. Rules from docs/STAGES.md and
@@ -17,9 +17,9 @@ P1, P2 = 27.5, 30  # the two columns of chapter links
 quests = [
     # ---- Die ersten Schritte ---------------------------------------------------------
     quest("welcome", 0, 3, "&6Fang hier an",
-          subtitle="Zehn kurze Schritte bis zur ersten Abgabe am Obelisken.",
+          subtitle="Sechs kurze Schritte bis zur ersten Abgabe am Obelisken.",
           description=[
-              "Folge der Reihe oben von links nach rechts: Werkbank, Werkzeug, Ofen, Essen, Hütte, Claim, Bruchstein, Obelisk. Jede Quest ist ein Handgriff.",
+              "Folge der Reihe oben von links nach rechts: Basis sichern, Bruchstein sammeln, zum Obelisken, abgeben. Minecraft kennst du, hier geht es nur um das, was auf Kronwerke anders ist.",
               "",
               "&6Kronwerke Season 2&r: rund dreißig Leute, eine Welt, fünf &6Stufen&r. Jede Stufe öffnet sich für alle, sobald der Server am &6Obelisken&r am Spawn ein gemeinsames Ziel gefüllt hat.",
               "",
@@ -29,78 +29,23 @@ quests = [
           rewards=[reward_item("minecraft:bread", 16), reward_table("s1_common")],
           icon="ftbquests:book", size=2.5, shape="hexagon"),
 
-    quest("d_table", 3.5, DAY, "&6Bau eine Werkbank",
-          subtitle="Holz von Hand, dann das 3x3-Feld.",
-          description=[
-              "Schlag mit der Hand auf einen &6Baumstamm&r, bis er herausfällt. Ein Stamm gibt 4 &6Bretter&r, 4 Bretter im Quadrat eine &6Werkbank&r.",
-              "",
-              "Jede Holzart geht, auch die neuen Bäume aus Terralith und Biomes O' Plenty. Nimm gleich 8 bis 10 Stämme mit.",
-              "",
-              "&eTipp:&r Weißt du ein Rezept nicht, fahr mit der Maus über den Gegenstand und drück &eR&r.",
-          ],
-          tasks=[task_item("minecraft:crafting_table", 1)],
-          rewards=[reward_item("minecraft:apple", 6)],
-          deps=["welcome"], icon="minecraft:crafting_table"),
-
-    quest("d_tools", 5.5, DAY, "&6Bau eine Steinspitzhacke",
-          subtitle="Holz reicht genau für den Anfang.",
-          description=[
-              "&6Holzspitzhacke&r bauen, ein paar Blöcke Stein abbauen. Aus &6Bruchstein&r und Stöcken baust du &6Steinspitzhacke&r, &6Steinaxt&r und &6Steinschwert&r.",
-              "",
-              "Wirf keinen Bruchstein weg. Der Obelisk will in Stufe 1 &e20 000 Stück&r vom ganzen Server.",
-          ],
-          tasks=[task_item("minecraft:stone_pickaxe", 1)],
-          rewards=[reward_item("minecraft:coal", 8)],
-          deps=["d_table"], icon="minecraft:stone_pickaxe"),
-
-    quest("d_furnace", 7.5, DAY, "&6Bau einen Ofen",
-          subtitle="8 Bruchstein, und du hast Holzkohle, Glas und Eisen.",
-          description=[
-              "8 &6Bruchstein&r im Ring an der Werkbank, die Mitte bleibt frei. Stämme oben hinein, Bretter unten als Brennstoff: Heraus kommt &6Holzkohle&r.",
-              "",
-              "Holzkohle brennt wie Kohle und ergibt mit Stöcken &6Fackeln&r. Später schmilzt der Ofen dein Eisen.",
-          ],
-          tasks=[task_item("minecraft:furnace", 1)],
-          rewards=[reward_item("minecraft:charcoal", 8)],
-          deps=["d_tools"], icon="minecraft:furnace"),
-
-    quest("d_food", 9.5, DAY, "&6Stell ein Lagerfeuer auf",
-          subtitle="Warmes Essen, ganz ohne Brennstoff.",
-          description=[
-              "&6Lagerfeuer&r: 3 Stöcke, 1 Kohle oder Holzkohle, 3 Stämme. Rohes Fleisch darauf legen, es brät bis zu vier Stücke auf einmal.",
-              "",
-              "Rohes Fleisch macht kaum satt, gebratenes schon. Die Werte siehst du dank &6AppleSkin&r im Tooltip. Später dient das Feuer als Hitze unter dem &6Kochtopf&r.",
-          ],
-          tasks=[task_item("minecraft:campfire", 1)],
-          rewards=[reward_item("minecraft:cooked_beef", 8)],
-          deps=["d_furnace"], icon="minecraft:campfire"),
-
-    quest("d_shelter", 11.5, DAY, "&6Bau dir eine Hütte",
-          subtitle="Vier Wände, eine Tür, Licht, eine Truhe.",
-          description=[
-              "Vier Wände, ein Dach, eine Tür, &616 Fackeln&r drinnen und rundherum, eine &6Truhe&r. Ein Loch im Berg reicht für die erste Nacht.",
-              "",
-              "Monster erscheinen nur im Dunkeln. Neben Zombies und Skeletten ziehen die Kreaturen aus &6Born in Chaos&r durch die Nacht, und einige sind zäh.",
-          ],
-          tasks=[task_item("minecraft:torch", 16), task_item("minecraft:chest", 1)],
-          rewards=[reward_table("s1_common")],
-          deps=["d_food"], icon="minecraft:torch"),
-
-    quest("v_claim", 13.5, DAY, "&6Sichere deine Basis",
+    quest("v_claim", 3.5, DAY, "&6Sichere deine Basis",
           subtitle="M, dann C, dann über die Chunks ziehen.",
           description=[
-              "&eM&r öffnet die Karte, &eC&r die Claim-Ansicht. Mit gedrückter &elinker Maustaste&r über die Chunks deiner Hütte ziehen.",
+              "Such dir einen Platz, bau was Festes hin und sichere es: &eM&r öffnet die Karte, &eC&r die Claim-Ansicht. Mit gedrückter &elinker Maustaste&r über die Chunks deiner Basis ziehen.",
               "",
               "In deinen Chunks kann niemand außer deinem Team abbauen oder Truhen öffnen. Wie viele Chunks du hast und wie du sie dauerhaft lädst, steht im Kapitel &6Tipps und Tricks&r.",
+              "",
+              "Nachts ziehen neben Zombies und Skeletten die Kreaturen aus &6Born in Chaos&r herum, und einige sind zäh. Licht und Wände helfen wie immer.",
           ],
           tasks=[task_checkmark("Meine Basis ist gesichert")],
           rewards=[reward_table("s1_common")],
-          deps=["d_shelter"], icon="minecraft:filled_map"),
+          deps=["welcome"], icon="minecraft:filled_map"),
 
-    quest("d_stone", 15.5, DAY, "&7Sammle 64 Bruchstein",
+    quest("d_stone", 5.5, DAY, "&7Sammle 64 Bruchstein",
           subtitle="Dein erster Stapel für den Obelisken.",
           description=[
-              "Grab einen Gang in den Berg, bis du einen Stapel &6Bruchstein&r hast. Jede Sorte zählt: normaler, bemooster und Bruchtiefenschiefer.",
+              "Wirf keinen Bruchstein weg. Der Obelisk will in Stufe 1 &e20 000 Stück&r vom ganzen Server, und jede Sorte zählt: normaler, bemooster und Bruchtiefenschiefer.",
               "",
               "&eTipp:&r Halte &e`&r (links neben der 1) beim Abbauen, dann nimmt &6Ultimine&r eine ganze Reihe auf einmal mit.",
           ],
@@ -108,7 +53,7 @@ quests = [
           rewards=[reward_xp(3)],
           deps=["v_claim"], icon="minecraft:cobblestone"),
 
-    quest("o_find", 17.5, DAY, "&6Geh zum Obelisken",
+    quest("o_find", 7.5, DAY, "&6Geh zum Obelisken",
           subtitle="Er steht am Spawn.",
           description=[
               "Der &6Obelisk&r steht am Weltspawn. Weißt du nicht mehr, wo das ist: Am Spawn steht ein &6Wegstein&r, und jeder aktivierte Wegstein bringt dich dorthin zurück.",
@@ -119,7 +64,7 @@ quests = [
           rewards=[reward_item("waystones:warp_dust", 4)],
           deps=["d_stone"], icon="minecraft:lodestone"),
 
-    quest("o_handin", 19.5, DAY, "&eGib deinen Bruchstein ab",
+    quest("o_handin", 9.5, DAY, "&eGib deinen Bruchstein ab",
           subtitle="Stapel in die Hand, Rechtsklick auf den Obelisken.",
           description=[
               "Halte den Bruchstein in der Hand und mach einen &eRechtsklick&r auf den Obelisken. Der ganze Stapel geht hinein und wird dir gutgeschrieben.",
@@ -130,52 +75,27 @@ quests = [
           rewards=[reward_table("s1_uncommon"), reward_xp(5)],
           deps=["o_find"], icon="minecraft:cobblestone", size=1.5, shape="gear"),
 
-    # ---- Der Rest des ersten Tages ----------------------------------------------------
-    quest("d_bed", 11.5, -5.5, "&6Stell ein Bett auf",
-          subtitle="Schlafen setzt deinen Spawnpunkt.",
+    quest("d_iron", 11.5, DAY, "&6Schmilz 16 Eisen",
+          subtitle="Das Metall, das in jeder Mod steckt.",
           description=[
-              "3 Wolle von Schafen, 3 Bretter darunter: ein &6Bett&r. Rechtsklick darauf setzt deinen &eSpawnpunkt&r, nach dem Tod wachst du hier auf.",
+              "Eisen steckt in den Teilen für Create, den ersten Zauber-Geräten, dem Kochtopf und dem Werkzeug von Silent Gear. Eisennuggets und Andesit ergeben &6Andesitlegierung&r, das Material der Technik-Säule am Obelisken.",
               "",
-              "Die Nacht überspringst du nur, wenn genug Spieler auf dem Server mitschlafen.",
-              "",
-              "&cAchtung:&r In der Minendimension explodieren Betten, genau wie im Nether.",
-          ],
-          tasks=[task_checkmark("Mein Bett steht")],
-          rewards=[reward_xp(3)],
-          deps=["d_shelter"], icon="minecraft:red_bed", optional=True),
-
-    quest("d_iron", 15.5, -5.5, "&6Schmilz 16 Eisen",
-          subtitle="Das Metall, das du überall brauchst.",
-          description=[
-              "&6Eisenerz&r mit der Steinspitzhacke abbauen, das &6Roheisen&r in den Ofen. Ein Roheisen, ein &6Eisenbarren&r.",
-              "",
-              "Eisen steckt in Eimer, Werkzeug, Rüstung, Kochtopf, den Teilen für Create und den ersten Zauber-Geräten. Eisennuggets und Andesit ergeben &6Andesitlegierung&r, das Material der Technik-Säule.",
+              "Zwei Diamanten, ein Goldblock und zwei Stöcke ergeben später die &6Verzauberte Spitzhacke&r, den Schlüssel zur &6Minendimension&r. Alles dazu im Kapitel &6Erkundung&r.",
           ],
           tasks=[task_item("minecraft:iron_ingot", 16)],
           rewards=[reward_item("minecraft:coal", 16)],
           deps=["d_stone"], icon="minecraft:iron_ingot"),
 
-    quest("d_pick", 17.5, -5.5, "&6Bau eine Eisenspitzhacke",
-          subtitle="Jetzt geht es an die Diamanten.",
+    quest("d_done", 13.5, DAY, "&6Schaff den ersten Tag",
+          subtitle="Basis, Eisen und die erste Abgabe.",
           description=[
-              "3 Eisenbarren, 2 Stöcke. Damit baust du Gold, Redstone, Lapislazuli und &bDiamanten&r ab.",
-              "",
-              "Zwei Diamanten, ein Goldblock und zwei Stöcke ergeben die &6Verzauberte Spitzhacke&r, den Schlüssel zur &6Minendimension&r. Dort gräbst du, so viel du willst. Alles dazu im Kapitel &6Erkundung&r.",
-          ],
-          tasks=[task_item("minecraft:iron_pickaxe", 1)],
-          rewards=[reward_table("s1_common")],
-          deps=["d_iron"], icon="minecraft:iron_pickaxe"),
-
-    quest("d_done", 21.5, -6.75, "&6Schaff den ersten Tag",
-          subtitle="Werkzeug, Essen, ein Dach, Eisen und die erste Abgabe.",
-          description=[
-              "Du hast eine Basis, Eisenwerkzeug und schon etwas am Obelisken abgegeben. Das ist mehr, als die meisten nach dem ersten Abend haben.",
+              "Du hast eine gesicherte Basis, Eisen und schon etwas am Obelisken abgegeben. Das ist mehr, als die meisten nach dem ersten Abend haben.",
               "",
               "Ab hier gibt es keinen festen Pfad mehr. Unten erklärt dieses Kapitel den Obelisken und die Stufen genauer, rechts bei &eDeine Wege&r findest du alle Kapitel von Stufe 1.",
           ],
           tasks=[task_checkmark("Geschafft")],
           rewards=[reward_table("s1_uncommon"), reward_xp(5)],
-          deps=["d_pick", "o_handin"], icon="minecraft:clock", size=1.5, shape="gear"),
+          deps=["d_iron", "o_handin"], icon="minecraft:clock", size=1.5, shape="gear"),
 
     # ---- Der Obelisk -----------------------------------------------------------------
     quest("o_obelisk", 4.5, 0, "&6Lies die Bossleiste",

@@ -44,191 +44,16 @@
 			]
 		}
 		{
-			id: "45E5FBCBF73CD53C"
-			x: 0.0d
-			y: 7.6499999999999995d
-			icon: {
-				id: "minecraft:crafting_table"
-				count: 1
-			}
-			hide_dependency_lines: true
-			dependencies: [
-				"74C1A6A6E06565BE"
-			]
-			tasks: [
-				{
-					id: "256A945AC1E793A7"
-					type: "item"
-					item: {
-						id: "minecraft:crafting_table"
-						count: 1
-					}
-					count: 1
-				}
-			]
-			rewards: [
-				{
-					id: "4832BF719DB867E5"
-					type: "item"
-					item: {
-						id: "minecraft:apple"
-						count: 1
-					}
-					count: 6
-				}
-			]
-		}
-		{
-			id: "6625026699EE0175"
-			x: 2.25d
-			y: 7.6499999999999995d
-			icon: {
-				id: "minecraft:stone_pickaxe"
-				count: 1
-			}
-			dependencies: [
-				"45E5FBCBF73CD53C"
-			]
-			tasks: [
-				{
-					id: "201080BF225081D6"
-					type: "item"
-					item: {
-						id: "minecraft:stone_pickaxe"
-						count: 1
-					}
-					count: 1
-				}
-			]
-			rewards: [
-				{
-					id: "3974846F6037B9B9"
-					type: "item"
-					item: {
-						id: "minecraft:coal"
-						count: 1
-					}
-					count: 8
-				}
-			]
-		}
-		{
-			id: "6563A349A1B5FDDD"
-			x: 4.5d
-			y: 7.6499999999999995d
-			icon: {
-				id: "minecraft:furnace"
-				count: 1
-			}
-			dependencies: [
-				"6625026699EE0175"
-			]
-			tasks: [
-				{
-					id: "51207131AF5BC406"
-					type: "item"
-					item: {
-						id: "minecraft:furnace"
-						count: 1
-					}
-					count: 1
-				}
-			]
-			rewards: [
-				{
-					id: "32A2B9504BEC833E"
-					type: "item"
-					item: {
-						id: "minecraft:charcoal"
-						count: 1
-					}
-					count: 8
-				}
-			]
-		}
-		{
-			id: "3A23B5C0133E71E0"
-			x: 6.75d
-			y: 7.6499999999999995d
-			icon: {
-				id: "minecraft:campfire"
-				count: 1
-			}
-			dependencies: [
-				"6563A349A1B5FDDD"
-			]
-			tasks: [
-				{
-					id: "2163D53FE6A42127"
-					type: "item"
-					item: {
-						id: "minecraft:campfire"
-						count: 1
-					}
-					count: 1
-				}
-			]
-			rewards: [
-				{
-					id: "61608A6FE2B2BCC6"
-					type: "item"
-					item: {
-						id: "minecraft:cooked_beef"
-						count: 1
-					}
-					count: 8
-				}
-			]
-		}
-		{
-			id: "12156B1E87F8851C"
-			x: 9.0d
-			y: 7.6499999999999995d
-			icon: {
-				id: "minecraft:torch"
-				count: 1
-			}
-			dependencies: [
-				"3A23B5C0133E71E0"
-			]
-			tasks: [
-				{
-					id: "7707149EFFA6A8BC"
-					type: "item"
-					item: {
-						id: "minecraft:torch"
-						count: 1
-					}
-					count: 16
-				}
-				{
-					id: "337AAE75C8915D67"
-					type: "item"
-					item: {
-						id: "minecraft:chest"
-						count: 1
-					}
-					count: 1
-				}
-			]
-			rewards: [
-				{
-					id: "2B53E68D7B7CDC48"
-					type: "loot"
-					table_id: "2EBBC2B918151958"
-				}
-			]
-		}
-		{
 			id: "272FE9EFA8115D91"
-			x: 11.25d
+			x: 0.0d
 			y: 7.6499999999999995d
 			icon: {
 				id: "minecraft:filled_map"
 				count: 1
 			}
+			hide_dependency_lines: true
 			dependencies: [
-				"12156B1E87F8851C"
+				"74C1A6A6E06565BE"
 			]
 			tasks: [
 				{
@@ -246,7 +71,7 @@
 		}
 		{
 			id: "5A0F9713892A89DA"
-			x: 13.5d
+			x: 2.25d
 			y: 7.6499999999999995d
 			icon: {
 				id: "minecraft:cobblestone"
@@ -276,7 +101,7 @@
 		}
 		{
 			id: "11D263EF5B3745A7"
-			x: 15.75d
+			x: 4.5d
 			y: 7.6499999999999995d
 			icon: {
 				id: "minecraft:lodestone"
@@ -305,7 +130,7 @@
 		}
 		{
 			id: "3FC6B71CB35F1EC8"
-			x: 18.25d
+			x: 7.0d
 			y: 7.8999999999999995d
 			icon: {
 				id: "minecraft:cobblestone"
@@ -336,34 +161,8 @@
 			]
 		}
 		{
-			id: "4F7045678078D5A4"
-			x: 11.25d
-			y: 9.5d
-			icon: {
-				id: "minecraft:red_bed"
-				count: 1
-			}
-			optional: true
-			dependencies: [
-				"12156B1E87F8851C"
-			]
-			tasks: [
-				{
-					id: "2688A5F395E8CB94"
-					type: "checkmark"
-				}
-			]
-			rewards: [
-				{
-					id: "4EEB894F6C44F3C1"
-					type: "xp_levels"
-					xp_levels: 3
-				}
-			]
-		}
-		{
 			id: "289E809B78ACB014"
-			x: 15.75d
+			x: 4.5d
 			y: 9.5d
 			icon: {
 				id: "minecraft:iron_ingot"
@@ -396,38 +195,8 @@
 			]
 		}
 		{
-			id: "50B67D023DAEF45D"
-			x: 18.25d
-			y: 9.5d
-			icon: {
-				id: "minecraft:iron_pickaxe"
-				count: 1
-			}
-			dependencies: [
-				"289E809B78ACB014"
-			]
-			tasks: [
-				{
-					id: "1905D63DF025298C"
-					type: "item"
-					item: {
-						id: "minecraft:iron_pickaxe"
-						count: 1
-					}
-					count: 1
-				}
-			]
-			rewards: [
-				{
-					id: "3ECB83C96894B108"
-					type: "loot"
-					table_id: "2EBBC2B918151958"
-				}
-			]
-		}
-		{
 			id: "723F3B7A023BACD9"
-			x: 21.0d
+			x: 9.75d
 			y: 7.8999999999999995d
 			icon: {
 				id: "minecraft:clock"
@@ -436,7 +205,7 @@
 			size: 1.5d
 			shape: "gear"
 			dependencies: [
-				"50B67D023DAEF45D"
+				"289E809B78ACB014"
 				"3FC6B71CB35F1EC8"
 			]
 			tasks: [

@@ -843,13 +843,6 @@
 	]
 	quest.120E466F21A0C847.quest_subtitle: "Schaltkreise für den Obelisken."
 	quest.120E466F21A0C847.title: "&5&lBring Licht des Drachen zum Obelisken"
-	quest.12156B1E87F8851C.quest_desc: [
-		"Vier Wände, ein Dach, eine Tür, &616 Fackeln&r drinnen und rundherum, eine &6Truhe&r. Ein Loch im Berg reicht für die erste Nacht."
-		""
-		"Monster erscheinen nur im Dunkeln. Neben Zombies und Skeletten ziehen die Kreaturen aus &6Born in Chaos&r durch die Nacht, und einige sind zäh."
-	]
-	quest.12156B1E87F8851C.quest_subtitle: "Vier Wände, eine Tür, Licht, eine Truhe."
-	quest.12156B1E87F8851C.title: "&6Bau dir eine Hütte"
 	quest.121FA56ECD84E569.quest_desc: [
 		"Gehäuse als Kasten, Ports in die Hülle, Spule an einen Port, Strom an die Spule, Polonium in den Eingangsport."
 		""
@@ -6524,9 +6517,11 @@
 	quest.2729F2D79A654B65.quest_subtitle: "Der Tisch für Blaupausen."
 	quest.2729F2D79A654B65.title: "&6Bau einen Ingenieursarbeitstisch"
 	quest.272FE9EFA8115D91.quest_desc: [
-		"&eM&r öffnet die Karte, &eC&r die Claim-Ansicht. Mit gedrückter &elinker Maustaste&r über die Chunks deiner Hütte ziehen."
+		"Such dir einen Platz, bau was Festes hin und sichere es: &eM&r öffnet die Karte, &eC&r die Claim-Ansicht. Mit gedrückter &elinker Maustaste&r über die Chunks deiner Basis ziehen."
 		""
 		"In deinen Chunks kann niemand außer deinem Team abbauen oder Truhen öffnen. Wie viele Chunks du hast und wie du sie dauerhaft lädst, steht im Kapitel &6Tipps und Tricks&r."
+		""
+		"Nachts ziehen neben Zombies und Skeletten die Kreaturen aus &6Born in Chaos&r herum, und einige sind zäh. Licht und Wände helfen wie immer."
 	]
 	quest.272FE9EFA8115D91.quest_subtitle: "M, dann C, dann über die Chunks ziehen."
 	quest.272FE9EFA8115D91.title: "&6Sichere deine Basis"
@@ -6959,11 +6954,11 @@
 	quest.289E1506658A9E6B.quest_subtitle: "Ender IO, Energy Conduit: 8 000, 48 000 oder 192 000 FE pro Tick."
 	quest.289E1506658A9E6B.title: "Lies: Ender-IO-Stromleitungen"
 	quest.289E809B78ACB014.quest_desc: [
-		"&6Eisenerz&r mit der Steinspitzhacke abbauen, das &6Roheisen&r in den Ofen. Ein Roheisen, ein &6Eisenbarren&r."
+		"Eisen steckt in den Teilen für Create, den ersten Zauber-Geräten, dem Kochtopf und dem Werkzeug von Silent Gear. Eisennuggets und Andesit ergeben &6Andesitlegierung&r, das Material der Technik-Säule am Obelisken."
 		""
-		"Eisen steckt in Eimer, Werkzeug, Rüstung, Kochtopf, den Teilen für Create und den ersten Zauber-Geräten. Eisennuggets und Andesit ergeben &6Andesitlegierung&r, das Material der Technik-Säule."
+		"Zwei Diamanten, ein Goldblock und zwei Stöcke ergeben später die &6Verzauberte Spitzhacke&r, den Schlüssel zur &6Minendimension&r. Alles dazu im Kapitel &6Erkundung&r."
 	]
-	quest.289E809B78ACB014.quest_subtitle: "Das Metall, das du überall brauchst."
+	quest.289E809B78ACB014.quest_subtitle: "Das Metall, das in jeder Mod steckt."
 	quest.289E809B78ACB014.title: "&6Schmilz 16 Eisen"
 	quest.28A0D7D640D88988.quest_desc: [
 		"&bWasser&r und &cLava&r so nebeneinander, dass zwischen ihnen Bruchstein entsteht, davor ein &6Mechanischer Bohrer&r an einer Welle mit Wasserrad. Eine &6Andesitschleuse&r oder ein Förderband unter dem Bohrer sammelt die Steine ein."
@@ -10584,13 +10579,6 @@
 	]
 	quest.3A1AA854F1841139.quest_subtitle: "Schneller laufen, höher springen, Blöcke hochsteigen."
 	quest.3A1AA854F1841139.title: "&7Schmiede Ferricore-Rüstung"
-	quest.3A23B5C0133E71E0.quest_desc: [
-		"&6Lagerfeuer&r: 3 Stöcke, 1 Kohle oder Holzkohle, 3 Stämme. Rohes Fleisch darauf legen, es brät bis zu vier Stücke auf einmal."
-		""
-		"Rohes Fleisch macht kaum satt, gebratenes schon. Die Werte siehst du dank &6AppleSkin&r im Tooltip. Später dient das Feuer als Hitze unter dem &6Kochtopf&r."
-	]
-	quest.3A23B5C0133E71E0.quest_subtitle: "Warmes Essen, ganz ohne Brennstoff."
-	quest.3A23B5C0133E71E0.title: "&6Stell ein Lagerfeuer auf"
 	quest.3A2903CA526F6364.quest_desc: [
 		"In den oberen Stockwerken des Tempels warten &6Valkyries&r. Sie fliegen, teleportieren sich und stoßen mit dem Speer nach dir. Jede besiegte Valkyrie lässt eine &6Victory Medal&r fallen."
 		""
@@ -12790,15 +12778,6 @@
 	]
 	quest.45DC4C7499B73924.quest_subtitle: "Zwei Wahlen pro Stufe."
 	quest.45DC4C7499B73924.title: "&7&lWas wann: Lager"
-	quest.45E5FBCBF73CD53C.quest_desc: [
-		"Schlag mit der Hand auf einen &6Baumstamm&r, bis er herausfällt. Ein Stamm gibt 4 &6Bretter&r, 4 Bretter im Quadrat eine &6Werkbank&r."
-		""
-		"Jede Holzart geht, auch die neuen Bäume aus Terralith und Biomes O' Plenty. Nimm gleich 8 bis 10 Stämme mit."
-		""
-		"&eTipp:&r Weißt du ein Rezept nicht, fahr mit der Maus über den Gegenstand und drück &eR&r."
-	]
-	quest.45E5FBCBF73CD53C.quest_subtitle: "Holz von Hand, dann das 3x3-Feld."
-	quest.45E5FBCBF73CD53C.title: "&6Bau eine Werkbank"
 	quest.45E7FB9BFAB4A8C0.quest_desc: [
 		"&6Zahnrad&r, &6Andesitgehäuse&r und &6Rührstab&r untereinander ergeben den &6Mechanischen Mixer&r. Setz ihn zwei Blöcke über das Becken, mit einem Block Luft dazwischen."
 		""
@@ -14547,15 +14526,6 @@
 	]
 	quest.4F6F1FAF8BB5B7E1.quest_subtitle: "Länger leuchten, kürzer warten."
 	quest.4F6F1FAF8BB5B7E1.title: "&dLern Zeit verlängern und verkürzen"
-	quest.4F7045678078D5A4.quest_desc: [
-		"3 Wolle von Schafen, 3 Bretter darunter: ein &6Bett&r. Rechtsklick darauf setzt deinen &eSpawnpunkt&r, nach dem Tod wachst du hier auf."
-		""
-		"Die Nacht überspringst du nur, wenn genug Spieler auf dem Server mitschlafen."
-		""
-		"&cAchtung:&r In der Minendimension explodieren Betten, genau wie im Nether."
-	]
-	quest.4F7045678078D5A4.quest_subtitle: "Schlafen setzt deinen Spawnpunkt."
-	quest.4F7045678078D5A4.title: "&6Stell ein Bett auf"
 	quest.4F737437D2FC07A9.quest_desc: [
 		"Einstimmer und ein &6Smaragd&r, formlos. Hält &d5 000 Mana&r."
 		""
@@ -14763,13 +14733,6 @@
 	]
 	quest.50B1264EBE14692D.quest_subtitle: "Drei neue Biome zwischen den Inseln."
 	quest.50B1264EBE14692D.title: "&dBesuch die Biome von Biomes O' Plenty"
-	quest.50B67D023DAEF45D.quest_desc: [
-		"3 Eisenbarren, 2 Stöcke. Damit baust du Gold, Redstone, Lapislazuli und &bDiamanten&r ab."
-		""
-		"Zwei Diamanten, ein Goldblock und zwei Stöcke ergeben die &6Verzauberte Spitzhacke&r, den Schlüssel zur &6Minendimension&r. Dort gräbst du, so viel du willst. Alles dazu im Kapitel &6Erkundung&r."
-	]
-	quest.50B67D023DAEF45D.quest_subtitle: "Jetzt geht es an die Diamanten."
-	quest.50B67D023DAEF45D.title: "&6Bau eine Eisenspitzhacke"
 	quest.50BB336485F2AB6B.quest_desc: [
 		"&eRezept auf Kronwerke:&r ein &6Einfacher Steuerschaltkreis&r von Mekanism oben, zwei &6Motorkolben&r links und rechts von einem &6Messingblock&r, unten zwei &6polierte Schwarzsteinstufen&r mit einem &6Flüssigkeitstank&r dazwischen. Ein Motorkolben entsteht aus Andesitlegierung, Welle und Zinkklumpen schräg, zwei Stück pro Rezept."
 		"{image:createdieselgenerators:textures/item/engine_piston.png width:32 height:32 align:center}"
@@ -16408,7 +16371,7 @@
 	quest.5A0F97042370EA0C.quest_subtitle: "Die einfachste Leitung für Drehbewegung."
 	quest.5A0F97042370EA0C.title: "&6Leg eine Welle"
 	quest.5A0F9713892A89DA.quest_desc: [
-		"Grab einen Gang in den Berg, bis du einen Stapel &6Bruchstein&r hast. Jede Sorte zählt: normaler, bemooster und Bruchtiefenschiefer."
+		"Wirf keinen Bruchstein weg. Der Obelisk will in Stufe 1 &e20 000 Stück&r vom ganzen Server, und jede Sorte zählt: normaler, bemooster und Bruchtiefenschiefer."
 		""
 		"&eTipp:&r Halte &e`&r (links neben der 1) beim Abbauen, dann nimmt &6Ultimine&r eine ganze Reihe auf einmal mit."
 	]
@@ -18421,13 +18384,6 @@
 	]
 	quest.65593E372EC8FD9B.quest_subtitle: "Karte rein, Truhe dran, Strom an."
 	quest.65593E372EC8FD9B.title: "&6Lass den Builder graben"
-	quest.6563A349A1B5FDDD.quest_desc: [
-		"8 &6Bruchstein&r im Ring an der Werkbank, die Mitte bleibt frei. Stämme oben hinein, Bretter unten als Brennstoff: Heraus kommt &6Holzkohle&r."
-		""
-		"Holzkohle brennt wie Kohle und ergibt mit Stöcken &6Fackeln&r. Später schmilzt der Ofen dein Eisen."
-	]
-	quest.6563A349A1B5FDDD.quest_subtitle: "8 Bruchstein, und du hast Holzkohle, Glas und Eisen."
-	quest.6563A349A1B5FDDD.title: "&6Bau einen Ofen"
 	quest.656C9871CA44A8BE.quest_desc: [
 		"&eBlaupause:&r oben zwei Blaues Papier mit Lücke, Mitte drei, unten ein Stock in der Mitte. Der Kopf braucht &efünf&r Material, dazu ein Stiel."
 		""
@@ -18559,13 +18515,6 @@
 	]
 	quest.661D0642B6785157.quest_subtitle: "Create, 4 RPM, 512 SU, drei Blöcke groß."
 	quest.661D0642B6785157.title: "&6Bau ein großes Wasserrad"
-	quest.6625026699EE0175.quest_desc: [
-		"&6Holzspitzhacke&r bauen, ein paar Blöcke Stein abbauen. Aus &6Bruchstein&r und Stöcken baust du &6Steinspitzhacke&r, &6Steinaxt&r und &6Steinschwert&r."
-		""
-		"Wirf keinen Bruchstein weg. Der Obelisk will in Stufe 1 &e20 000 Stück&r vom ganzen Server."
-	]
-	quest.6625026699EE0175.quest_subtitle: "Holz reicht genau für den Anfang."
-	quest.6625026699EE0175.title: "&6Bau eine Steinspitzhacke"
 	quest.6638841DC971D9F3.quest_desc: [
 		"Der &4Beobachter&r (Stalker) ist drei Blöcke hoch, hat &e200 Lebenspunkte&r, Rüstung und schlägt mit &c22 Schaden&r zu. Wenn er dich trifft, lässt er &6Sculk-Egel&r auf dich los. Er kommt aus unechten Vasen im Tempel."
 		""
@@ -20636,11 +20585,11 @@
 	quest.723B99B6B09C28EE.quest_subtitle: "Ein Bogen aus lebendem Holz."
 	quest.723B99B6B09C28EE.title: "&6Spann einen Lebeholzbogen"
 	quest.723F3B7A023BACD9.quest_desc: [
-		"Du hast eine Basis, Eisenwerkzeug und schon etwas am Obelisken abgegeben. Das ist mehr, als die meisten nach dem ersten Abend haben."
+		"Du hast eine gesicherte Basis, Eisen und schon etwas am Obelisken abgegeben. Das ist mehr, als die meisten nach dem ersten Abend haben."
 		""
 		"Ab hier gibt es keinen festen Pfad mehr. Unten erklärt dieses Kapitel den Obelisken und die Stufen genauer, rechts bei &eDeine Wege&r findest du alle Kapitel von Stufe 1."
 	]
-	quest.723F3B7A023BACD9.quest_subtitle: "Werkzeug, Essen, ein Dach, Eisen und die erste Abgabe."
+	quest.723F3B7A023BACD9.quest_subtitle: "Basis, Eisen und die erste Abgabe."
 	quest.723F3B7A023BACD9.title: "&6Schaff den ersten Tag"
 	quest.724DE8D2EAF33DAA.quest_desc: [
 		"Stufe 4 bringt Powah Nitro, Mekanism Elite und Ultimativ mit der Fusion, NuclearCraft, Draconic Evolution und die großen Generatoren von Mekanism More Machine."
@@ -21117,13 +21066,13 @@
 	quest.74B6FF1C541A1121.quest_subtitle: "Einer pro Stabilisator."
 	quest.74B6FF1C541A1121.title: "&cBau Partikelgeneratoren"
 	quest.74C1A6A6E06565BE.quest_desc: [
-		"Folge der Reihe oben von links nach rechts: Werkbank, Werkzeug, Ofen, Essen, Hütte, Claim, Bruchstein, Obelisk. Jede Quest ist ein Handgriff."
+		"Folge der Reihe oben von links nach rechts: Basis sichern, Bruchstein sammeln, zum Obelisken, abgeben. Minecraft kennst du, hier geht es nur um das, was auf Kronwerke anders ist."
 		""
 		"&6Kronwerke Season 2&r: rund dreißig Leute, eine Welt, fünf &6Stufen&r. Jede Stufe öffnet sich für alle, sobald der Server am &6Obelisken&r am Spawn ein gemeinsames Ziel gefüllt hat."
 		""
 		"Fertige Quests klickst du an und holst dir die Belohnung. Wie das Buch, JEI und die Karte funktionieren, steht im Kapitel &6Tipps und Tricks&r."
 	]
-	quest.74C1A6A6E06565BE.quest_subtitle: "Zehn kurze Schritte bis zur ersten Abgabe am Obelisken."
+	quest.74C1A6A6E06565BE.quest_subtitle: "Sechs kurze Schritte bis zur ersten Abgabe am Obelisken."
 	quest.74C1A6A6E06565BE.title: "&6Fang hier an"
 	quest.74CE32FE8435DCDD.quest_desc: [
 		"Kauf ein &6Ceylon-Ebenholz&r (Generation 3, 4 Smaragde). Es trägt keine Früchte, dafür sind seine Bretter fast schwarz. Mit Kapok wird daraus das Gelbe Meranti, daraus mit Kapok der &6Mahagoni&r, der Vater von Brasilholz, Palisander, Greenheart, Gelbholz und Sandelholz."
@@ -22065,7 +22014,7 @@
 	quest.7A069A8E373778AB.quest_subtitle: "Der Lohenbrenner heizt für dich."
 	quest.7A069A8E373778AB.title: "&6Fang eine Lohe ein"
 	quest.7A096582D8DC418E.quest_desc: [
-		"&eDas Portal:&r &610 Obsidian&r als Rahmen, 4 breit und 5 hoch ohne Ecken, dann &6Feuerzeug&r auf die Innenseite. Obsidian entsteht, wo Wasser auf stehende Lava trifft, abbauen geht nur mit Diamant."
+		"&eDas Portal:&r Das am Spawn teilen sich alle, ein eigenes an der Basis geht ab Stufe 2 wie gewohnt."
 		""
 		"&eDrüben:&r Lohenruten für den Lohenbrenner, Netherquarz, Leuchtstein, Magma, Netherwarze, Antiker Schrott. Jeder Block im Nether zählt oben wie &eacht&r, ein Portal pro Basis macht den Server klein."
 		""
@@ -22578,11 +22527,9 @@
 	quest.7CE5BA05B419B715.quest_subtitle: "Die Energie, kristallisiert."
 	quest.7CE5BA05B419B715.title: "&6Destillier Mercury Shards"
 	quest.7CEC6A06FD70C26D.quest_desc: [
-		"Ein Rahmen aus &6Obsidian&r, 4 breit und 5 hoch, ohne Ecken reichen &610 Obsidian&r. Entzünde ihn mit einem &6Feuerzeug&r."
+		"Das Portal am Spawn teilen sich alle. Ein eigenes an der Basis spart den Weg, und jeder Block im Nether zählt oben wie acht."
 		""
-		"Auf der anderen Seite entsteht ein Gegenstück. Bau eine Hütte aus Bruchstein darum, damit Ghasts es nicht ausschießen, und hab immer ein zweites Feuerzeug dabei."
-		""
-		"&eTipp:&r Obsidian entsteht, wo Wasser auf stehende Lava trifft. Abbauen geht nur mit einer Diamantspitzhacke."
+		"Bau eine Hütte aus Bruchstein um die Gegenseite, damit Ghasts sie nicht ausschießen, und hab immer ein zweites Feuerzeug dabei. Die Ghasts aus &6Born in Chaos&r und &6Cataclysm&r sind nicht die einzigen Gäste dort."
 	]
 	quest.7CEC6A06FD70C26D.quest_subtitle: "Zehn Obsidian und ein Feuerzeug."
 	quest.7CEC6A06FD70C26D.title: "&5Bau ein eigenes Portal"
@@ -23367,7 +23314,6 @@
 	task.2663E6496388CF6E.title: "Eisenstaub aus Dreckigem Staub"
 	task.26675ABD876FCEB2.title: "Gewürznelke (Kaffee + Teak, 10 %)"
 	task.266B501C944DD561.title: "Adlerholz (Teak + Ipe, 10 %)"
-	task.2688A5F395E8CB94.title: "Mein Bett steht"
 	task.26BD280ED3D29033.title: "Verstanden"
 	task.26BFF296000158B2.title: "Verstanden"
 	task.26F1F09B30E4451F.title: "Sägewerk gebaut und geformt"

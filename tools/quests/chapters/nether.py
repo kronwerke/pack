@@ -46,11 +46,9 @@ quests = [
     quest("portal", 0, 2.5, "&5Bau ein eigenes Portal",
           subtitle="Zehn Obsidian und ein Feuerzeug.",
           description=[
-              "Ein Rahmen aus &6Obsidian&r, 4 breit und 5 hoch, ohne Ecken reichen &610 Obsidian&r. Entzünde ihn mit einem &6Feuerzeug&r.",
+              "Das Portal am Spawn teilen sich alle. Ein eigenes an der Basis spart den Weg, und jeder Block im Nether zählt oben wie acht.",
               "",
-              "Auf der anderen Seite entsteht ein Gegenstück. Bau eine Hütte aus Bruchstein darum, damit Ghasts es nicht ausschießen, und hab immer ein zweites Feuerzeug dabei.",
-              "",
-              "&eTipp:&r Obsidian entsteht, wo Wasser auf stehende Lava trifft. Abbauen geht nur mit einer Diamantspitzhacke.",
+              "Bau eine Hütte aus Bruchstein um die Gegenseite, damit Ghasts sie nicht ausschießen, und hab immer ein zweites Feuerzeug dabei. Die Ghasts aus &6Born in Chaos&r und &6Cataclysm&r sind nicht die einzigen Gäste dort.",
           ],
           tasks=[task_item("minecraft:obsidian", 10), task_item("minecraft:flint_and_steel", 1)],
           rewards=[reward_item("minecraft:obsidian", 4), reward_xp(5)],

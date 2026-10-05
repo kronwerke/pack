@@ -74,7 +74,7 @@ quests = [
     quest("d_nether", 6.5, -4, "&cBau ein Netherportal",
           subtitle="Zehn Obsidian und ein Funke. Stufe 2.",
           description=[
-              "&eDas Portal:&r &610 Obsidian&r als Rahmen, 4 breit und 5 hoch ohne Ecken, dann &6Feuerzeug&r auf die Innenseite. Obsidian entsteht, wo Wasser auf stehende Lava trifft, abbauen geht nur mit Diamant.",
+              "&eDas Portal:&r Das am Spawn teilen sich alle, ein eigenes an der Basis geht ab Stufe 2 wie gewohnt.",
               "",
               "&eDrüben:&r Lohenruten für den Lohenbrenner, Netherquarz, Leuchtstein, Magma, Netherwarze, Antiker Schrott. Jeder Block im Nether zählt oben wie &eacht&r, ein Portal pro Basis macht den Server klein.",
               "",

@@ -394,7 +394,7 @@ hash = "27031493d45e03c170a2ff72fa2f3595ffced90e259830e73952d33984291bad"
 
 [[files]]
 file = "config/kronwerke-common.toml"
-hash = "56a08c2ae3e3fc5da0a3448e84d55efae18a57b1983104b0bef49008f712a6bf"
+hash = "eea045201484f005d9a03bf8ea9421705fa89f4e68ae0bac1fabbd0d0707cecd"
 
 [[files]]
 file = "config/kronwerke/goals.json"
@@ -427,6 +427,10 @@ hash = "72c78f1ae2edb2146ff84178f9c7292f65aaf8685518638d6e95df0b12e966cf"
 [[files]]
 file = "config/pneumaticcraft-common.toml"
 hash = "a291580fbc93f9c9c6049e34e413d3cf86b8c457746ce11e20f8dfb8c94bf0bb"
+
+[[files]]
+file = "config/tectonic.json"
+hash = "57705cf68bf27b94254d88c119a5a7e362dfc836581dc403a90140d1140907b4"
 
 [[files]]
 file = "config/travelerstitles-neoforge-1_21.toml"
@@ -2697,8 +2701,992 @@ file = "kubejs/data/kronwerke/dimension_type/testworld.json"
 hash = "6161929acf1a33bbfbc357d3c8f6e201f5924f4c707c94d76191b6f1de1ccd12"
 
 [[files]]
-file = "kubejs/data/kronwerke/function/shots/build.mcfunction"
-hash = "e80f80d01f6dfd8475817d5d8c22ee4be05a5c4484c8264198b2ea7d66b92399"
+file = "kubejs/data/kronwerke/function/shots/box/001.mcfunction"
+hash = "8347bac5bd2cd62b9a1807e155fc37abbfc8d4a7c4eafd3287f43fd4896b46c8"
+
+[[files]]
+file = "kubejs/data/kronwerke/function/shots/box/002.mcfunction"
+hash = "3f70657fa95698f1ea9b73a649f86af2eac3b65eb717b7f9439eca8f4d49665e"
+
+[[files]]
+file = "kubejs/data/kronwerke/function/shots/box/003.mcfunction"
+hash = "b26510da907f788784d00d4c1a7e3054bf9980dcb8684a71f117e455804d42c3"
+
+[[files]]
+file = "kubejs/data/kronwerke/function/shots/box/004.mcfunction"
+hash = "1ffefabbd53720de5b32a29411f14b2150d8487930166546341f360120465215"
+
+[[files]]
+file = "kubejs/data/kronwerke/function/shots/box/005.mcfunction"
+hash = "99c0fa7bdda117f763830d02b4e5f067fbbc6960b4d70f3cbb3ed2dd6ea49623"
+
+[[files]]
+file = "kubejs/data/kronwerke/function/shots/box/006.mcfunction"
+hash = "f1ceeaec7bb74f2b0cff2132a8e4ae56262281b41bfca0cc0f5c912a2ac44d3d"
+
+[[files]]
+file = "kubejs/data/kronwerke/function/shots/box/007.mcfunction"
+hash = "d20dec0c61ca79fc0f78145412fb269f2eff52d636df689e3d340fa47dced803"
+
+[[files]]
+file = "kubejs/data/kronwerke/function/shots/box/008.mcfunction"
+hash = "e68267ba080620e8b7c47d9f1acb03036d5a4d7ee709e07aada2d06a6f53276e"
+
+[[files]]
+file = "kubejs/data/kronwerke/function/shots/box/009.mcfunction"
+hash = "fa5742ee903feca84ab388d482e829794834878cfa906f0b2ad2da871b48f93a"
+
+[[files]]
+file = "kubejs/data/kronwerke/function/shots/box/010.mcfunction"
+hash = "b020a93a10fe33817114b0e35f203b281e53ade3ff8afba7e6b62c9eeea2c9e3"
+
+[[files]]
+file = "kubejs/data/kronwerke/function/shots/box/011.mcfunction"
+hash = "06eee221c881f6555efecfc396bd0b4b17275884f3676c92914628dcf7fd3b3a"
+
+[[files]]
+file = "kubejs/data/kronwerke/function/shots/box/012.mcfunction"
+hash = "6d0e90ecb40e6a1694feaac4a96650c36cfa0e85b216b667f74502b3afd9059c"
+
+[[files]]
+file = "kubejs/data/kronwerke/function/shots/box/013.mcfunction"
+hash = "0ae04ab662f36b30cc6a0c1beea3d6dd9c780fde56a7881bdc3e709d164d5233"
+
+[[files]]
+file = "kubejs/data/kronwerke/function/shots/box/014.mcfunction"
+hash = "77a864b26e76a0dfd3088ce23db79961ac46b598a5a7e20e4742636b9ba86b79"
+
+[[files]]
+file = "kubejs/data/kronwerke/function/shots/box/015.mcfunction"
+hash = "312406034b18b3e8327ba7cd08636453ab8a1492e21dfd8cda7eac6841498176"
+
+[[files]]
+file = "kubejs/data/kronwerke/function/shots/box/016.mcfunction"
+hash = "fb00889e29685480ef9b946f19c12cc6198575b47cf3fddca317731f29b7b8d2"
+
+[[files]]
+file = "kubejs/data/kronwerke/function/shots/box/017.mcfunction"
+hash = "303eb06ef5484682908e8635b6c1841f760ddb1c135385bfbe1141763ee4f9b5"
+
+[[files]]
+file = "kubejs/data/kronwerke/function/shots/box/018.mcfunction"
+hash = "3bced4b60dab38ff3bc6ca819f41de1cb70bee659bcca50481e2f4486a5feb73"
+
+[[files]]
+file = "kubejs/data/kronwerke/function/shots/box/019.mcfunction"
+hash = "adbe6245b469cbd7277cad1960b23ed292bd317394e6dc96916230f8bc181a28"
+
+[[files]]
+file = "kubejs/data/kronwerke/function/shots/box/020.mcfunction"
+hash = "8c94c01343ac8ce523307bc5e9a1e5c879cbc0c7226c1095c7ac2399d2b88af6"
+
+[[files]]
+file = "kubejs/data/kronwerke/function/shots/box/021.mcfunction"
+hash = "746d8e184f14c5288cb2130a5c54549c1adda25c6e4cf612ab9faa8d9fede36d"
+
+[[files]]
+file = "kubejs/data/kronwerke/function/shots/box/022.mcfunction"
+hash = "a78fd66bed85630d9a4c558c8b0d8df9d54ddccface5e165ac0c6867a42fe355"
+
+[[files]]
+file = "kubejs/data/kronwerke/function/shots/box/023.mcfunction"
+hash = "54781f7de46c147c5712e9d544fd9bdf7f97b5a321c4572d78e34ce7a480ffe5"
+
+[[files]]
+file = "kubejs/data/kronwerke/function/shots/box/024.mcfunction"
+hash = "ec1d67ca098b8ffc9ecdbd9a425582c73dbc0e0bce5fc1ee4c32829e71459529"
+
+[[files]]
+file = "kubejs/data/kronwerke/function/shots/box/025.mcfunction"
+hash = "60e8e635f4414a6b1f8262f3a22b4abcc7edc3f4c6fd7c7e6dba2ceb1710d4b9"
+
+[[files]]
+file = "kubejs/data/kronwerke/function/shots/box/026.mcfunction"
+hash = "9530e349a65cc01b025109cdb4047b30b4935c1fe7dccdb637666359b2b785fd"
+
+[[files]]
+file = "kubejs/data/kronwerke/function/shots/box/027.mcfunction"
+hash = "3828984e5caf1eb1650b660a608c5c56a4245168f6a67dcc3d6fa7fb5d9a3456"
+
+[[files]]
+file = "kubejs/data/kronwerke/function/shots/box/028.mcfunction"
+hash = "00f14744a43f905ea082515cff6e910557294427235eec5ca2a96f7e391a5e6a"
+
+[[files]]
+file = "kubejs/data/kronwerke/function/shots/box/029.mcfunction"
+hash = "5759dc8e53dfed504498b6f09190013a6f71569b57105e13c1bb064e4b7e797f"
+
+[[files]]
+file = "kubejs/data/kronwerke/function/shots/box/030.mcfunction"
+hash = "9c18f77a24ab6eecc247cd807100b39f2b5ee790feb576aeed84670b26c558a5"
+
+[[files]]
+file = "kubejs/data/kronwerke/function/shots/box/031.mcfunction"
+hash = "e4c775ad225adccd9bef55263e459f5e0a1c74d9db48f3d252f19a7645e34a2c"
+
+[[files]]
+file = "kubejs/data/kronwerke/function/shots/box/032.mcfunction"
+hash = "42fc7d0c502298606738b561f4dd1c8266664f364e2f1278027284287d664c62"
+
+[[files]]
+file = "kubejs/data/kronwerke/function/shots/box/033.mcfunction"
+hash = "afcac7cfbdbc67534983fc027694ed1f310d91a7b433d762bf5198c8ae0c853f"
+
+[[files]]
+file = "kubejs/data/kronwerke/function/shots/box/034.mcfunction"
+hash = "fc69464d81729d9a5b68fe2d468a817ca919919d2e87f4b090c3b187e5003a0c"
+
+[[files]]
+file = "kubejs/data/kronwerke/function/shots/box/035.mcfunction"
+hash = "d6d8f78a7cfcdf3d2eecb6c1b9168ce730f702b926e8d40e56399aa553818144"
+
+[[files]]
+file = "kubejs/data/kronwerke/function/shots/box/036.mcfunction"
+hash = "fb4f29485314ddaaa963a72a578059c947d1c2cf621f3476316057fdcee77c73"
+
+[[files]]
+file = "kubejs/data/kronwerke/function/shots/box/037.mcfunction"
+hash = "fe7232ed7ab0910925ac20537da91c814e962e2ef92093ca1232a2ce25a219b4"
+
+[[files]]
+file = "kubejs/data/kronwerke/function/shots/box/038.mcfunction"
+hash = "663407d14f926e802209d5dbf0a01ddb62b39a19422ca95149a5c8f2c2be2919"
+
+[[files]]
+file = "kubejs/data/kronwerke/function/shots/box/039.mcfunction"
+hash = "9cd6593ca43ed1a3df12aa7ce706ed895b12817096836a0ccd2424a0e022a450"
+
+[[files]]
+file = "kubejs/data/kronwerke/function/shots/box/040.mcfunction"
+hash = "a5c9a2ddddcbef31eedc541431fbe951d9f19fdf25c6df658c11298d57f0d56f"
+
+[[files]]
+file = "kubejs/data/kronwerke/function/shots/box/041.mcfunction"
+hash = "cbcc88857395a42d94e082afb86bcc66b7a20b8d549c1676bd3c66f1c1645213"
+
+[[files]]
+file = "kubejs/data/kronwerke/function/shots/box/042.mcfunction"
+hash = "7983a518159feb5decf42b84673a55b12be4627f926083007432d2a1c8dc104b"
+
+[[files]]
+file = "kubejs/data/kronwerke/function/shots/box/043.mcfunction"
+hash = "a2b30b6597989aaf816c3d54736c522dff551293a5b1cc655fb0dad8961fb9b6"
+
+[[files]]
+file = "kubejs/data/kronwerke/function/shots/box/044.mcfunction"
+hash = "2855ba1a6d330834ec2e78408b8a750ad21fbaf37043592791fa2d9a972d9cc0"
+
+[[files]]
+file = "kubejs/data/kronwerke/function/shots/box/045.mcfunction"
+hash = "c09bb8b12aa8d4fb2cfa3930413b4a3a66a85c5a52cf834a7ec01acecd321b50"
+
+[[files]]
+file = "kubejs/data/kronwerke/function/shots/box/046.mcfunction"
+hash = "06f14adf9b1e3ea1079f6b131cf574586da7eb79e8054aca5e8c3c5efd96c170"
+
+[[files]]
+file = "kubejs/data/kronwerke/function/shots/box/047.mcfunction"
+hash = "cade5cc5761d0b7a928f47114bc579c1515bce36fc7c6c66210f51558f3eef81"
+
+[[files]]
+file = "kubejs/data/kronwerke/function/shots/box/048.mcfunction"
+hash = "65c1053817f363e474e33706285fb0628e51a99d57d54d2a54721d504e732191"
+
+[[files]]
+file = "kubejs/data/kronwerke/function/shots/box/049.mcfunction"
+hash = "a1a8b01f7c8598bf9258a8fc028b71ce18b975c4de29666f0afce0d822c1ebd2"
+
+[[files]]
+file = "kubejs/data/kronwerke/function/shots/box/050.mcfunction"
+hash = "6f6d6edafac14503d16b59729c61933968424029aac820dda5e574666ba05f7d"
+
+[[files]]
+file = "kubejs/data/kronwerke/function/shots/box/051.mcfunction"
+hash = "25abd4c5fb80e142cb5f0d4afba18de1ef0965b71c1d321dc0d21e1a7318e8e0"
+
+[[files]]
+file = "kubejs/data/kronwerke/function/shots/box/052.mcfunction"
+hash = "d5eb8eade09c0cfa131f9e0dcdef446dfe080a155b7dbc3909c4b483f6ff6cec"
+
+[[files]]
+file = "kubejs/data/kronwerke/function/shots/box/053.mcfunction"
+hash = "3c896d5e1ed17c97991c1dac6d7dabdd8e24d7ac45d9baf520c8996c98edc102"
+
+[[files]]
+file = "kubejs/data/kronwerke/function/shots/box/054.mcfunction"
+hash = "cd30d47c9a9a1cd2f55d508c4c3f878986427cd5aa7bf8a72a68b09b60278fef"
+
+[[files]]
+file = "kubejs/data/kronwerke/function/shots/box/055.mcfunction"
+hash = "1fc3b850399ef72348dfe02949fbf8bdb745953e31c5e65810ee732c45295e4b"
+
+[[files]]
+file = "kubejs/data/kronwerke/function/shots/box/056.mcfunction"
+hash = "6f212258dd289f91783dddf2073eb87377a4c2acdaefd8d3aa299b15a3cb31e8"
+
+[[files]]
+file = "kubejs/data/kronwerke/function/shots/box/057.mcfunction"
+hash = "4a6bc404510e3110eb06377b8c44e566afc81459c4241df742bea11d94f2823a"
+
+[[files]]
+file = "kubejs/data/kronwerke/function/shots/box/058.mcfunction"
+hash = "5f6f9435309b78246921be280f1f06b9c5a41d0fc4002c0336685d43805e8d27"
+
+[[files]]
+file = "kubejs/data/kronwerke/function/shots/box/059.mcfunction"
+hash = "7db438e6c792f11f9c6bce428b4e51931283ec816d8fca39b9d2ab07189cc923"
+
+[[files]]
+file = "kubejs/data/kronwerke/function/shots/box/060.mcfunction"
+hash = "3ce95da3aee62b6f6c068072961ec4caf318430d9b1372085cfdff95d4644a36"
+
+[[files]]
+file = "kubejs/data/kronwerke/function/shots/box/061.mcfunction"
+hash = "bfef91d114d8550b4b5f7c4a8f08a16c3d85d2201dc16f448421a367ab068b1d"
+
+[[files]]
+file = "kubejs/data/kronwerke/function/shots/box/062.mcfunction"
+hash = "623721e54a2fc06ade3b8f143873d91a560c3dce481557774f3c8cac8b07d670"
+
+[[files]]
+file = "kubejs/data/kronwerke/function/shots/box/063.mcfunction"
+hash = "760e768b73c4f9d8f870eb5c270ad73f62c7395fa89febeb3fb286a30d886c8c"
+
+[[files]]
+file = "kubejs/data/kronwerke/function/shots/box/064.mcfunction"
+hash = "19391c8700cbad8ba98e339288374b6d115df0d267b34eb3ae6e736153db4304"
+
+[[files]]
+file = "kubejs/data/kronwerke/function/shots/box/065.mcfunction"
+hash = "26501092ca3a99b6cf932865698e010ed1406d67b2870d102c752f63afdaa449"
+
+[[files]]
+file = "kubejs/data/kronwerke/function/shots/box/066.mcfunction"
+hash = "e68e1295b6a80f8a1c952cea03bb9e375324231dcf72656e94218bd2edab27b6"
+
+[[files]]
+file = "kubejs/data/kronwerke/function/shots/box/067.mcfunction"
+hash = "e9ac69e644e160357a1b04e6b54306223f7cea1d949dafc37e86d349f0b3c2d6"
+
+[[files]]
+file = "kubejs/data/kronwerke/function/shots/box/068.mcfunction"
+hash = "2ae572544acb0a3307037c9a9250cd809c2207e92457dc3ed115119769608d8c"
+
+[[files]]
+file = "kubejs/data/kronwerke/function/shots/box/069.mcfunction"
+hash = "951e4fe3dde724d81e3a08eaf2653466026e42316d9641caacccc7f4a1ac0a10"
+
+[[files]]
+file = "kubejs/data/kronwerke/function/shots/box/070.mcfunction"
+hash = "a54d5a8aab0dd3b5705b2c2ee96fd48c736b0c2df2c8358b71111e5097656130"
+
+[[files]]
+file = "kubejs/data/kronwerke/function/shots/box/071.mcfunction"
+hash = "fccfad64869062d25d31f76b83471e25dbdd77f47909888d24962cdd6c7ed4f0"
+
+[[files]]
+file = "kubejs/data/kronwerke/function/shots/box/072.mcfunction"
+hash = "aadb5f5d2c11f02ec2e560472ccb783eefb6e78c97c1fbb5780a0034ee1e62eb"
+
+[[files]]
+file = "kubejs/data/kronwerke/function/shots/box/073.mcfunction"
+hash = "0c0301bfd150ccba32031d341c4cf3d349b73cc0c5f65eed0e5c8a92fddfd3d3"
+
+[[files]]
+file = "kubejs/data/kronwerke/function/shots/box/074.mcfunction"
+hash = "c1a58dbd7fd41e4da8991dfe9d4d1ad1ae5b4fec26a1b6cd7a3db2810bd86467"
+
+[[files]]
+file = "kubejs/data/kronwerke/function/shots/box/075.mcfunction"
+hash = "d35aa7a9b9d6ade597c156922e8f29042a5018e8bbbd7921d60b3ab78f77058a"
+
+[[files]]
+file = "kubejs/data/kronwerke/function/shots/box/076.mcfunction"
+hash = "7baed4785606a5b4608862c372ea039a0543331f417f4b03bee742734f5d3caa"
+
+[[files]]
+file = "kubejs/data/kronwerke/function/shots/box/077.mcfunction"
+hash = "89ab03586ef2e211811b02fce5e03833c347651e34cb5b5a5764aeca7e286511"
+
+[[files]]
+file = "kubejs/data/kronwerke/function/shots/box/078.mcfunction"
+hash = "58623b1e19bc6bd2eca70352b580777562807f1441e2620668949ea6d0242a6b"
+
+[[files]]
+file = "kubejs/data/kronwerke/function/shots/box/079.mcfunction"
+hash = "b0b06da236fbdeb724316e88144681b93685938fa270252527d4d7cd44fe7d7b"
+
+[[files]]
+file = "kubejs/data/kronwerke/function/shots/box/080.mcfunction"
+hash = "6d1f684fec2de7f10acfde80329889595201ab9459f510f9978f77911b6dcf28"
+
+[[files]]
+file = "kubejs/data/kronwerke/function/shots/box/081.mcfunction"
+hash = "b9d6521e8ab48f6692656cf0e8ed3cd48eb5207a01f42d21a2f7ea0ad6fb971a"
+
+[[files]]
+file = "kubejs/data/kronwerke/function/shots/box/082.mcfunction"
+hash = "d12c8b42f8ba0ea7ba24afc66f1e3409726fa8225b737ae2304331e7a9378637"
+
+[[files]]
+file = "kubejs/data/kronwerke/function/shots/box/083.mcfunction"
+hash = "aa769631a7ba5448b85cc86d45b5da2b05cf65ed6886adb8bcd6633dd4582c7a"
+
+[[files]]
+file = "kubejs/data/kronwerke/function/shots/box/084.mcfunction"
+hash = "366eaf6009da654c0b0e465a28a6ec1fda9eb4e1b66e3c88a5d9864025921a32"
+
+[[files]]
+file = "kubejs/data/kronwerke/function/shots/box/085.mcfunction"
+hash = "821912e1a03b7f46156a23bd2cfaa4c24d36d5ab9c0126a1858dde417d838eb2"
+
+[[files]]
+file = "kubejs/data/kronwerke/function/shots/box/086.mcfunction"
+hash = "a2e38a0602898b7cb17f3e01ad1fa9429117d7c1bef644f14b503331445d1e28"
+
+[[files]]
+file = "kubejs/data/kronwerke/function/shots/box/087.mcfunction"
+hash = "f346439b3a548444892454b8c8b9a97d87f7cb39db517d4424ecba8cdc5a3760"
+
+[[files]]
+file = "kubejs/data/kronwerke/function/shots/box/088.mcfunction"
+hash = "d0d3c2ed4fc554932a73090f7b59f62d98ec070d844ce555fa9f6da443048618"
+
+[[files]]
+file = "kubejs/data/kronwerke/function/shots/box/089.mcfunction"
+hash = "d6b0e47c62f611362c16764e94608ed1d35a9a9da8759359d9968d0fe596eb37"
+
+[[files]]
+file = "kubejs/data/kronwerke/function/shots/box/090.mcfunction"
+hash = "6768c09704f8bd8bf07b151aa62dc82cc25550e9676e958b41aa0c9e8c15f586"
+
+[[files]]
+file = "kubejs/data/kronwerke/function/shots/box/091.mcfunction"
+hash = "0643dca17381966ac19c31328fc463eae127a7a9639a7271f8be5301212f540a"
+
+[[files]]
+file = "kubejs/data/kronwerke/function/shots/box/092.mcfunction"
+hash = "c3694ffcbccc02c7bf477147769f92e34cc1cbb97cb0d1caf3d7d76b4f6abbc9"
+
+[[files]]
+file = "kubejs/data/kronwerke/function/shots/box/093.mcfunction"
+hash = "6b698fbd23a5b75a85e7d8a84359f45924348dcc71bbd2699bd69853ed0fd685"
+
+[[files]]
+file = "kubejs/data/kronwerke/function/shots/box/094.mcfunction"
+hash = "63ef9fc87aae2c5a5ef40d11fb660d31705f4e172f6674facbac7d5df849ebf7"
+
+[[files]]
+file = "kubejs/data/kronwerke/function/shots/box/095.mcfunction"
+hash = "a6b931a4881973a26817e86226c5a7ae20d474b907bc98defe0469db48ced014"
+
+[[files]]
+file = "kubejs/data/kronwerke/function/shots/box/096.mcfunction"
+hash = "69005436561def1e4e9f40cd39072ff882883586c55002f0ebc2a2f079677f3e"
+
+[[files]]
+file = "kubejs/data/kronwerke/function/shots/box/097.mcfunction"
+hash = "645a592ad77da027afd66c912d779e831e9f228350505632a529a8f5ba748c5f"
+
+[[files]]
+file = "kubejs/data/kronwerke/function/shots/box/098.mcfunction"
+hash = "2b68c3a4b8328756eb4fd30a240f3bc8d1d1fcef2fdace31c7b144583293132e"
+
+[[files]]
+file = "kubejs/data/kronwerke/function/shots/box/099.mcfunction"
+hash = "9d5fee27a36e4ad136a08fa86982d4824c1592f9fcbc24e92458be9a3e801bab"
+
+[[files]]
+file = "kubejs/data/kronwerke/function/shots/box/100.mcfunction"
+hash = "8d0cb41859a90e25dce560912ce17e400bc98b7ff54ccd0daafc38a5421dac31"
+
+[[files]]
+file = "kubejs/data/kronwerke/function/shots/box/101.mcfunction"
+hash = "4612879cdf79b8447490065ce0a8a819c95252a93d954cd3721ef51d806ce6fd"
+
+[[files]]
+file = "kubejs/data/kronwerke/function/shots/box/102.mcfunction"
+hash = "e912fee7a68b694d01669b5b971e4030a025c48fe3e1c9861d81aad0006f075c"
+
+[[files]]
+file = "kubejs/data/kronwerke/function/shots/box/103.mcfunction"
+hash = "d0b1e67af10507d131769cad5fa457189808166a2da12eaa0f838f8a6ebe8c7d"
+
+[[files]]
+file = "kubejs/data/kronwerke/function/shots/box/104.mcfunction"
+hash = "63ee307c707c02abb8a0c02118306ddcb39b2c93419000c1e7605632014f6e86"
+
+[[files]]
+file = "kubejs/data/kronwerke/function/shots/box/105.mcfunction"
+hash = "b54d54343d0a19c3eb8c28a71598ca83adc04eeadea352ba702530b9a44ac247"
+
+[[files]]
+file = "kubejs/data/kronwerke/function/shots/box/106.mcfunction"
+hash = "63cf06ad45f5606be1537350e754074c282a4a99bb9c4e1dc2d7d8d6ee4b2aab"
+
+[[files]]
+file = "kubejs/data/kronwerke/function/shots/box/107.mcfunction"
+hash = "1cfd6a369787eee4da7abf6e95f0d3949789149ec33c1d1e61ba37b262bb8c63"
+
+[[files]]
+file = "kubejs/data/kronwerke/function/shots/box/108.mcfunction"
+hash = "e661cfcdb7f4b0b3d8219d489e0ead4643f206ec475d92f6e89dfc07dd4de099"
+
+[[files]]
+file = "kubejs/data/kronwerke/function/shots/box/109.mcfunction"
+hash = "8715473830c550bfb2abdf3ea16550807f6bebc87d12d38a185269d62b82e414"
+
+[[files]]
+file = "kubejs/data/kronwerke/function/shots/box/110.mcfunction"
+hash = "7be211047690853e1f3551762f29c53c00b1f536726c76e70650340a6520893d"
+
+[[files]]
+file = "kubejs/data/kronwerke/function/shots/box/111.mcfunction"
+hash = "275304450d9d417bfd8090054c97f86e57146f7355857a502dee38c49faa071e"
+
+[[files]]
+file = "kubejs/data/kronwerke/function/shots/box/112.mcfunction"
+hash = "066dca30d2a3289cfaf75a29a52befb0458f3b87fdf71a17197fe16d304a41d0"
+
+[[files]]
+file = "kubejs/data/kronwerke/function/shots/box/113.mcfunction"
+hash = "92a18b56142e7d73b8e28652ea60d2e36eb95d1968fb3501bec7be9f6bf88d53"
+
+[[files]]
+file = "kubejs/data/kronwerke/function/shots/box/114.mcfunction"
+hash = "8bd61d6e64fbeedcb332b912fb62ccd7ee50106861288e4009a6d053964f5d55"
+
+[[files]]
+file = "kubejs/data/kronwerke/function/shots/box/115.mcfunction"
+hash = "1e2b292dcbe99192a5b3a822c02e8f357ce168736e894cdf702ba29f1ef364d1"
+
+[[files]]
+file = "kubejs/data/kronwerke/function/shots/box/116.mcfunction"
+hash = "bee388ab4ba0e6e3c96d5d39e994e8ff9b81dcfb93945eff2fac3b27b753ae33"
+
+[[files]]
+file = "kubejs/data/kronwerke/function/shots/box/117.mcfunction"
+hash = "291f71e9dadc102be4497a0fed1870aa00d639e46148dd856749ff4341327d21"
+
+[[files]]
+file = "kubejs/data/kronwerke/function/shots/box/118.mcfunction"
+hash = "558e981e5edb6cb2f37c926b4649cefd670988e2cc839b793d1aa73c94d708e8"
+
+[[files]]
+file = "kubejs/data/kronwerke/function/shots/box/119.mcfunction"
+hash = "6d38b3b9b935e13476aae21e39edaec0eed3c7587c7448d162493928fcc5caa2"
+
+[[files]]
+file = "kubejs/data/kronwerke/function/shots/box/120.mcfunction"
+hash = "0b4727882ae88b098871f1ae175e861e0fdee01f7e1da5b3fab8d44b8848cd43"
+
+[[files]]
+file = "kubejs/data/kronwerke/function/shots/box/121.mcfunction"
+hash = "f42fc31132ad86d1180a42b50571dfbd1d160984ce86228f95d4c2db7b3c0e92"
+
+[[files]]
+file = "kubejs/data/kronwerke/function/shots/box/122.mcfunction"
+hash = "19db18432b6b4717a42d48152fe2ae38156b8ed140aeb918394aa1a90bcbcccb"
+
+[[files]]
+file = "kubejs/data/kronwerke/function/shots/box/123.mcfunction"
+hash = "d4de922e73b1c8794bcd2c393ca465f23ca6105f9ee3f06d76f333c4b85a69a3"
+
+[[files]]
+file = "kubejs/data/kronwerke/function/shots/box/124.mcfunction"
+hash = "74658afacd7f952ce2a1978b202c19925318e1a5d4d236b3025d6c03bf573b62"
+
+[[files]]
+file = "kubejs/data/kronwerke/function/shots/box/125.mcfunction"
+hash = "a4eca6e19d11d6d2032d905b0149adcf9e447a98947c6c3c3964e3cc44837a4d"
+
+[[files]]
+file = "kubejs/data/kronwerke/function/shots/box/126.mcfunction"
+hash = "e2b7fa00ce76c1b0194711878c29318c053a9458a8deb3fda01c66905eb699d7"
+
+[[files]]
+file = "kubejs/data/kronwerke/function/shots/box/127.mcfunction"
+hash = "9903c2e63e9c3b68a59bebb3e66996e819cbfd4d84442912b9b6132c96b601c5"
+
+[[files]]
+file = "kubejs/data/kronwerke/function/shots/box/128.mcfunction"
+hash = "3c70e75079b45d9d3155047eb73f0292753cea410926ba494718b6fb4331aeb6"
+
+[[files]]
+file = "kubejs/data/kronwerke/function/shots/box/129.mcfunction"
+hash = "bb182f85a7fd1831849fa2d6a8bf32c613eff7c5d343634d98a885aecc19e354"
+
+[[files]]
+file = "kubejs/data/kronwerke/function/shots/box/130.mcfunction"
+hash = "c79213aecb07523fa3c5930539c460e4d8bb4340433ad92019d510cf123ef362"
+
+[[files]]
+file = "kubejs/data/kronwerke/function/shots/box/131.mcfunction"
+hash = "78384447be0e67f763d43c4f19ec71e6c860a7cc2f9f98b9980feebd97449237"
+
+[[files]]
+file = "kubejs/data/kronwerke/function/shots/box/132.mcfunction"
+hash = "4ef1987ab20f3173692f3829cf38e649fd43a8e3671e81fd3036627c310220b4"
+
+[[files]]
+file = "kubejs/data/kronwerke/function/shots/box/133.mcfunction"
+hash = "487d65434776f1bcbeb7fbd22d162f1ae0832c7b03fcb4cc6116236cee81454f"
+
+[[files]]
+file = "kubejs/data/kronwerke/function/shots/box/134.mcfunction"
+hash = "62ae687918b95a9b57129a12127c7ef1ade05adb7cd1ec62992d958a46edfa36"
+
+[[files]]
+file = "kubejs/data/kronwerke/function/shots/box/135.mcfunction"
+hash = "aa19f67191917cd0f08a5b9b2711f9d2c6b895bd6ba99da3539e13424950cdf2"
+
+[[files]]
+file = "kubejs/data/kronwerke/function/shots/box/136.mcfunction"
+hash = "18f07a1663de278323d7a6382876eb2c266f629d6873e2ecb140cf649e7aeae4"
+
+[[files]]
+file = "kubejs/data/kronwerke/function/shots/box/137.mcfunction"
+hash = "06dfd9bc0098758460dfbfc8932597964205786aa4a9f3c72b400c6cf812ee69"
+
+[[files]]
+file = "kubejs/data/kronwerke/function/shots/box/138.mcfunction"
+hash = "22df287135ee42f4d5bb88f83df54f27d6e74a98243b994ad4f4cca8fb7779f2"
+
+[[files]]
+file = "kubejs/data/kronwerke/function/shots/box/139.mcfunction"
+hash = "b51d417bd55a94784a291c7ec99293685e79f2dc3c05a743250483a87c17c1a3"
+
+[[files]]
+file = "kubejs/data/kronwerke/function/shots/box/140.mcfunction"
+hash = "4198a13b059a031e255e774fe26441dd3850bc5b091267a26d547b54bfe03966"
+
+[[files]]
+file = "kubejs/data/kronwerke/function/shots/box/141.mcfunction"
+hash = "45a664c6c1769d20fcd1f3b9880853f12d96ab6f5531953255a10dbb5a1f1659"
+
+[[files]]
+file = "kubejs/data/kronwerke/function/shots/box/142.mcfunction"
+hash = "1ad987cb8275ebc3d28df1fa055073d26e9e7e1a3a90fcfc814b41e535a18f47"
+
+[[files]]
+file = "kubejs/data/kronwerke/function/shots/box/143.mcfunction"
+hash = "20b37cff0aef4292b55f64b70b15da8a0ac0f3130d0351f6284ec17dddf7cd6d"
+
+[[files]]
+file = "kubejs/data/kronwerke/function/shots/box/144.mcfunction"
+hash = "83cd285c71a88a352624f7b232314baee7b4530510d6ac09a25be9464b2897bc"
+
+[[files]]
+file = "kubejs/data/kronwerke/function/shots/box/145.mcfunction"
+hash = "be40438b1ec664a1df63f32c9a81a06165b783a18776a8fe363328562638a598"
+
+[[files]]
+file = "kubejs/data/kronwerke/function/shots/box/146.mcfunction"
+hash = "9993bf8c000beab25f38d8e09351589c505406bf91b6b54952bcc4fcfb995dd3"
+
+[[files]]
+file = "kubejs/data/kronwerke/function/shots/box/147.mcfunction"
+hash = "0d0f9a77a5256b11e38cf1c2ca09f9ead72a16d566656a06573dcc79e082d3da"
+
+[[files]]
+file = "kubejs/data/kronwerke/function/shots/box/148.mcfunction"
+hash = "c32e119872d0a34cd0ea6dc4f14cdf87cd3395b11f43be9955f0d344512956c4"
+
+[[files]]
+file = "kubejs/data/kronwerke/function/shots/box/149.mcfunction"
+hash = "a2d1dea7a8c8556e3f6655f329f7565cdbb7d7808e5c262cbde80c33d400cf25"
+
+[[files]]
+file = "kubejs/data/kronwerke/function/shots/box/150.mcfunction"
+hash = "a3529b55937cf664456feb12af14b99cb3041fc84bffa93947c86e6b3fb39b56"
+
+[[files]]
+file = "kubejs/data/kronwerke/function/shots/box/151.mcfunction"
+hash = "2cb3977ea876dead5c03562cd9c00bc20273547cdb5e952da0a19f8282ca0202"
+
+[[files]]
+file = "kubejs/data/kronwerke/function/shots/box/152.mcfunction"
+hash = "00755bbd688966c937d97e191d79d588f837b304cb712c0e66a20070b7cd1e60"
+
+[[files]]
+file = "kubejs/data/kronwerke/function/shots/box/153.mcfunction"
+hash = "16483bfbd5ba8aabd77d711761cc43e17d798c15176a33b7e87213ca3bd790f4"
+
+[[files]]
+file = "kubejs/data/kronwerke/function/shots/box/154.mcfunction"
+hash = "5ddd0ee8b50c0922d2128fe516ed1f4f1b4136262d7acfe23cee7243f36cfbdf"
+
+[[files]]
+file = "kubejs/data/kronwerke/function/shots/box/155.mcfunction"
+hash = "bb9071e2ac3f7f94d3349afa9140e2cd6505b931bfe46b0b16215766a79e8c0f"
+
+[[files]]
+file = "kubejs/data/kronwerke/function/shots/box/156.mcfunction"
+hash = "2f99872e7857e2c9695c48448b9f515a1f7071a53ce61b2c9fcac72f00177c88"
+
+[[files]]
+file = "kubejs/data/kronwerke/function/shots/box/157.mcfunction"
+hash = "3ffbfabf4a867061f01e74fe7cb634b5cec7e56db9268f184a99da79a003f1c1"
+
+[[files]]
+file = "kubejs/data/kronwerke/function/shots/box/158.mcfunction"
+hash = "e55fd8003ef3b8a61f640495105c6fab6cb3d38eb9ca1a7e0ad6721ff0342467"
+
+[[files]]
+file = "kubejs/data/kronwerke/function/shots/box/159.mcfunction"
+hash = "a6557bdb823ffa75672aef49cb09e7ce3e0fe9b221a30841e788292c5e4f6cae"
+
+[[files]]
+file = "kubejs/data/kronwerke/function/shots/box/160.mcfunction"
+hash = "4dd7b37e284d73c207b4e2d9eaf5849261bbef67e2d20eaf47a8e0f80464f1db"
+
+[[files]]
+file = "kubejs/data/kronwerke/function/shots/box/161.mcfunction"
+hash = "5480a0e1b9f18fcffa391c684cacff69bb8d182155c5924d51321ef5f13dad98"
+
+[[files]]
+file = "kubejs/data/kronwerke/function/shots/box/162.mcfunction"
+hash = "72736dfe37126e96fcaac12c7612b842e37c2af10fb360d86e6910ee20351da8"
+
+[[files]]
+file = "kubejs/data/kronwerke/function/shots/box/163.mcfunction"
+hash = "7375af7a626051bc79bc62ca4a33d056891e6b5064adf7c10e702f2c8f6b9fe0"
+
+[[files]]
+file = "kubejs/data/kronwerke/function/shots/box/164.mcfunction"
+hash = "db6ba8bb13750921f619c33b768686c65c04bfbe82f03c5ab3ca7f10499fd57e"
+
+[[files]]
+file = "kubejs/data/kronwerke/function/shots/box/165.mcfunction"
+hash = "3531ca9856a1a8f67443daf22e6c81f0f931b265c339face56070cdd937c8f43"
+
+[[files]]
+file = "kubejs/data/kronwerke/function/shots/box/166.mcfunction"
+hash = "6f2b5385293f79b3df92d968a8e9714e16ebf376d9580a892d7e299e855ad648"
+
+[[files]]
+file = "kubejs/data/kronwerke/function/shots/box/167.mcfunction"
+hash = "7e412a521ec375459e83b45da35d7c5f521b3c5c2b9ecf9c8086c64b98cc0550"
+
+[[files]]
+file = "kubejs/data/kronwerke/function/shots/box/168.mcfunction"
+hash = "7c325cf14857f66ed7d65046bf493b3144ef4b605a4538bf02e5d4e5778b1263"
+
+[[files]]
+file = "kubejs/data/kronwerke/function/shots/box/169.mcfunction"
+hash = "2a095865e6526ae93d3db7f49853f305f8fdf196221e9a133f8ec9325c20c4d6"
+
+[[files]]
+file = "kubejs/data/kronwerke/function/shots/box/170.mcfunction"
+hash = "7d6bca6d6c3335ce3a9df8976997e3f13422b6e4a164de23f07c643855be5481"
+
+[[files]]
+file = "kubejs/data/kronwerke/function/shots/box/171.mcfunction"
+hash = "daf199bf442719054f1e32d0b5c4c7e5f49f05cc4012047fcb8a4f76378b5117"
+
+[[files]]
+file = "kubejs/data/kronwerke/function/shots/box/172.mcfunction"
+hash = "ffe29419bc5465154b2c05660955f93a9dd9126a7dc8baadef45b69a681ab063"
+
+[[files]]
+file = "kubejs/data/kronwerke/function/shots/box/173.mcfunction"
+hash = "d61a4300c46cf8bf8574d85266e2df5685a09a5f05f5e82e8b5a59a7b904edbb"
+
+[[files]]
+file = "kubejs/data/kronwerke/function/shots/box/174.mcfunction"
+hash = "3685c2358b527d6996eb38eff909b2d6d3916703162b51774beb8e5ef3a872f9"
+
+[[files]]
+file = "kubejs/data/kronwerke/function/shots/box/175.mcfunction"
+hash = "61c4e7074e032de95617498ed9e112135299cb60c78f0e179b57a94ed90bf0d1"
+
+[[files]]
+file = "kubejs/data/kronwerke/function/shots/box/176.mcfunction"
+hash = "6671dec1860d21afab95d919d75de561f455e693f6af9694675bb6716e8456c9"
+
+[[files]]
+file = "kubejs/data/kronwerke/function/shots/box/177.mcfunction"
+hash = "40399c141b4aa8d309adff93e10f2751cb43668ba5c2be022088032e49cb079e"
+
+[[files]]
+file = "kubejs/data/kronwerke/function/shots/box/178.mcfunction"
+hash = "46436fac9ddaeb2c8187e84aee4b56046862945a62679b615dd2c3e3e20378ab"
+
+[[files]]
+file = "kubejs/data/kronwerke/function/shots/box/179.mcfunction"
+hash = "a18e0af8318101d269848916caf94f4103e85937a2f3e25d1e44d660267dd8b2"
+
+[[files]]
+file = "kubejs/data/kronwerke/function/shots/box/180.mcfunction"
+hash = "56a6762c88c4020f8817fa48b068df25faee8acd0bcec3c1ac80643aac524814"
+
+[[files]]
+file = "kubejs/data/kronwerke/function/shots/box/181.mcfunction"
+hash = "c20ed070751aa1957305950dfcb91310c0445d76779160c3087a0526ab6455a7"
+
+[[files]]
+file = "kubejs/data/kronwerke/function/shots/box/182.mcfunction"
+hash = "ec44dcc18c89ce744187a3818ff0425fc347c628aa3f8d7281298be44f9312df"
+
+[[files]]
+file = "kubejs/data/kronwerke/function/shots/box/183.mcfunction"
+hash = "49742bb8dd45633a575a7727db31eb9b36257ec72786d30b629afbbdf954fb74"
+
+[[files]]
+file = "kubejs/data/kronwerke/function/shots/box/184.mcfunction"
+hash = "ba3f02ac13c8f40d44ce4e6d60ee9326dd79e9e230dc6c6d0b557b8561c69618"
+
+[[files]]
+file = "kubejs/data/kronwerke/function/shots/box/185.mcfunction"
+hash = "2a4248ef3759f24fe73beb2e85f1c910521ab5abd0607b1f733a4972c76b9bd8"
+
+[[files]]
+file = "kubejs/data/kronwerke/function/shots/box/186.mcfunction"
+hash = "b41e1de58781960d36b42fb9d6d1ed1aa12121b638ae3968007bbc0bab8fa8df"
+
+[[files]]
+file = "kubejs/data/kronwerke/function/shots/box/187.mcfunction"
+hash = "a159c2e5757a58c63ecddd33c9e9b39bc79e2280834f3e169ca029062d076ab7"
+
+[[files]]
+file = "kubejs/data/kronwerke/function/shots/box/188.mcfunction"
+hash = "97bfee35e6049daea37f10ed0190fd6af4b428fbb08d4941d2f72f5eac964925"
+
+[[files]]
+file = "kubejs/data/kronwerke/function/shots/box/189.mcfunction"
+hash = "5670df1237b22a99a11d80048c1a5626493763ec09289b3b457d234c609e7b71"
+
+[[files]]
+file = "kubejs/data/kronwerke/function/shots/box/190.mcfunction"
+hash = "eec54fc2fea1ba8596246d3189fc11493d7fd56e1b1082df15fb49bec9015fe6"
+
+[[files]]
+file = "kubejs/data/kronwerke/function/shots/box/191.mcfunction"
+hash = "2fb2ef51c7624e83853c4e5a07c60be330f90065b78490adb1523a5ca4457e8f"
+
+[[files]]
+file = "kubejs/data/kronwerke/function/shots/box/192.mcfunction"
+hash = "d0fd8053e28c858abd34cc0a74dca8df78524def6014e20adaa1370396527734"
+
+[[files]]
+file = "kubejs/data/kronwerke/function/shots/box/193.mcfunction"
+hash = "90eaae1bf503d064ed8dc67524df1ddd013f14920867f953eadb69a46fde0157"
+
+[[files]]
+file = "kubejs/data/kronwerke/function/shots/box/194.mcfunction"
+hash = "4e804e601a2c3fcc1cb3bbc680759031c071d05d5c61c430bc8f81fab59d69f7"
+
+[[files]]
+file = "kubejs/data/kronwerke/function/shots/box/195.mcfunction"
+hash = "915d5d04882780d2fc909a8a6a9890149eee1fcb6c049b6ea00b4817c288c624"
+
+[[files]]
+file = "kubejs/data/kronwerke/function/shots/box/196.mcfunction"
+hash = "d20c1eb7d677ab5c056ed7dc007f7f51fb0bb688960326ee91bcbba3949706eb"
+
+[[files]]
+file = "kubejs/data/kronwerke/function/shots/box/197.mcfunction"
+hash = "d6f7411584f9eda2704a12e1665377b703f23be60c91fb77a7e334600f9b7a68"
+
+[[files]]
+file = "kubejs/data/kronwerke/function/shots/box/198.mcfunction"
+hash = "0521655a56d37e9120e4a9240d49f02bd404d1617092968792c81b3588429b53"
+
+[[files]]
+file = "kubejs/data/kronwerke/function/shots/box/199.mcfunction"
+hash = "7ee6177fb357d1df68588db1c41ce9fbd2a76760c8b708a85489b7ebc6e81158"
+
+[[files]]
+file = "kubejs/data/kronwerke/function/shots/box/200.mcfunction"
+hash = "5db09fb7fbf6123768782a445d107ec1ab7de30a4ad610603cdf5df8a003af5e"
+
+[[files]]
+file = "kubejs/data/kronwerke/function/shots/box/201.mcfunction"
+hash = "31d672a3a7d6caefbd812024af498a14c3fa385e79914bbd0c51c92c69fed6e3"
+
+[[files]]
+file = "kubejs/data/kronwerke/function/shots/box/202.mcfunction"
+hash = "a0289b068035f259ee2075926819a2c4ac3c638fb3cf219c55ab381b4248427b"
+
+[[files]]
+file = "kubejs/data/kronwerke/function/shots/box/203.mcfunction"
+hash = "7b11131961d09fc9efa2ca6a8d9c4403190714662ac2ecd7179e48203845dd36"
+
+[[files]]
+file = "kubejs/data/kronwerke/function/shots/box/204.mcfunction"
+hash = "56b0f3a0c073ecb33965e0b511f54d5216af877164b95f78c1345a20271d38db"
+
+[[files]]
+file = "kubejs/data/kronwerke/function/shots/box/205.mcfunction"
+hash = "1b37ce33e996094cae658970f3722ebb80d618c81ae59a0c76749a8627d55aa7"
+
+[[files]]
+file = "kubejs/data/kronwerke/function/shots/box/206.mcfunction"
+hash = "ccf6c358054ed60bb4c596954049252fee36dcf35532a7f0d9030554fd4f674f"
+
+[[files]]
+file = "kubejs/data/kronwerke/function/shots/box/207.mcfunction"
+hash = "bad7a68a4b7e1e60b1ca32ff2387bdc1e6d77b3edf87ad578dc7d645754220ab"
+
+[[files]]
+file = "kubejs/data/kronwerke/function/shots/box/208.mcfunction"
+hash = "2a928b533cb82f939feeffc4ad6a4b15cc6e7521693f1fe8362299d52cff8c91"
+
+[[files]]
+file = "kubejs/data/kronwerke/function/shots/box/209.mcfunction"
+hash = "195c2f5c31bf2c5721a64550de22ab8a048b709e8a50625aba84b3e3e3bd9d81"
+
+[[files]]
+file = "kubejs/data/kronwerke/function/shots/box/210.mcfunction"
+hash = "8184c1868d4b55b8bafc66986312add38643f51714618e6fa323cc4d237aa8dc"
+
+[[files]]
+file = "kubejs/data/kronwerke/function/shots/box/211.mcfunction"
+hash = "8c35d96f2a2bce035fc4cd1f00d3c175e4c5c9e4e59db4254289e9e91cc6715f"
+
+[[files]]
+file = "kubejs/data/kronwerke/function/shots/box/212.mcfunction"
+hash = "7d6b41f458d78a1ddd426ca63e1faaaa88a5f788224e01077d7dae4adb861a98"
+
+[[files]]
+file = "kubejs/data/kronwerke/function/shots/box/213.mcfunction"
+hash = "20544109d34d0c0af70ebdbc93452884e3d471d6e851467eab160c4006018b28"
+
+[[files]]
+file = "kubejs/data/kronwerke/function/shots/box/214.mcfunction"
+hash = "3f377e7dbb1cb6bbabc403f2587c23fa96595a4645ad6e2c80bd36ec435ef947"
+
+[[files]]
+file = "kubejs/data/kronwerke/function/shots/box/215.mcfunction"
+hash = "744600440ee3e9b7cd12c3f52ab1484c54454297529f3bc6f602f8295c069fcf"
+
+[[files]]
+file = "kubejs/data/kronwerke/function/shots/box/216.mcfunction"
+hash = "767ee832ba8afd5343702cc42e9e6644a262a124206f7f9fdb91cbe405f1ae75"
+
+[[files]]
+file = "kubejs/data/kronwerke/function/shots/box/217.mcfunction"
+hash = "161a8388c9986e755ad7c2706c9876d49252c694bb09e7ec979c45bee0f3415b"
+
+[[files]]
+file = "kubejs/data/kronwerke/function/shots/box/218.mcfunction"
+hash = "73fd9230347ec3203ff22a6d6e1043baf5d7beb76b00a1c3b0b07d86b75f547f"
+
+[[files]]
+file = "kubejs/data/kronwerke/function/shots/box/219.mcfunction"
+hash = "1fc6edda1c6277df927b60341c8a88948871e8bc789d0eee253678d7e22e79fd"
+
+[[files]]
+file = "kubejs/data/kronwerke/function/shots/box/220.mcfunction"
+hash = "4a294766651ac1c907d2b4eb2c2893bc30ce2ff919b59eaadd50981b02ef6fd5"
+
+[[files]]
+file = "kubejs/data/kronwerke/function/shots/box/221.mcfunction"
+hash = "141056a50a0782b99bb41a5fbef20e838e55287fcc993e006a5493909fd9366b"
+
+[[files]]
+file = "kubejs/data/kronwerke/function/shots/box/222.mcfunction"
+hash = "01a78b6a13a0ce3aa2ba47f904f3c7260372a01085266a8c0f76d56b3ff132cc"
+
+[[files]]
+file = "kubejs/data/kronwerke/function/shots/box/223.mcfunction"
+hash = "9ac62d3a882b6ee3995177175f98c56b91b39e5ed601ab8017daab40aaba7c1a"
+
+[[files]]
+file = "kubejs/data/kronwerke/function/shots/box/224.mcfunction"
+hash = "edb801337e8a258ace1d47da44fc777bdb56080dc94f934aebd59ae3b3dfa948"
+
+[[files]]
+file = "kubejs/data/kronwerke/function/shots/row_00.mcfunction"
+hash = "86eef15cd1a3d530e11926810b14320777f990c6bc21d619d7a1e94e7457c82c"
+
+[[files]]
+file = "kubejs/data/kronwerke/function/shots/row_01.mcfunction"
+hash = "01b1f124381591e69c53c33edeebba3b0d31606afc39410314874d6fc48bd4f8"
+
+[[files]]
+file = "kubejs/data/kronwerke/function/shots/row_02.mcfunction"
+hash = "269eb1fa3ee6f8d788f0ebda59bbb5b70c52193538c1a597b46b67eed9e51d48"
+
+[[files]]
+file = "kubejs/data/kronwerke/function/shots/row_03.mcfunction"
+hash = "3575e8fa34d721119b91181fc54b4e09dcda2184f2b1e21f4918f35959d494c5"
+
+[[files]]
+file = "kubejs/data/kronwerke/function/shots/row_04.mcfunction"
+hash = "a024694465d31b1cefdc91be617cf5eb44057a584919714bd0dbc7184664cf17"
+
+[[files]]
+file = "kubejs/data/kronwerke/function/shots/row_05.mcfunction"
+hash = "19681b7d0c6148d72e26e5d43e9478a9c5c401d831d031e4bfd0118aff91be23"
+
+[[files]]
+file = "kubejs/data/kronwerke/function/shots/row_06.mcfunction"
+hash = "8fb9bd9c6bf7094ae9bc0bc12883794fa83d7b4fc15f2ce782b764a9d836a29c"
+
+[[files]]
+file = "kubejs/data/kronwerke/function/shots/row_07.mcfunction"
+hash = "8e68b9c747b9a698410156f57a53770f310eb7d3768f9130b84a1eb657d5527f"
+
+[[files]]
+file = "kubejs/data/kronwerke/function/shots/row_08.mcfunction"
+hash = "d6a16d76566f13b08c67134dd8279ad86dfff1e02bc69096e1fcc201a6b01a62"
+
+[[files]]
+file = "kubejs/data/kronwerke/function/shots/row_09.mcfunction"
+hash = "5c2352ddbdf9e0dca477cf8f0081176e4c2d3b21134a0d9babd1d98bcbdb5baf"
+
+[[files]]
+file = "kubejs/data/kronwerke/function/shots/row_10.mcfunction"
+hash = "8cc5739dcbb535febf580720dd03ba8d63c89cd2507f561962f5bc74cd816926"
+
+[[files]]
+file = "kubejs/data/kronwerke/function/shots/row_11.mcfunction"
+hash = "ab861d7ddc7a59f5f67bd36b467a438a129a582f00ec9f928a459457da660954"
+
+[[files]]
+file = "kubejs/data/kronwerke/function/shots/row_12.mcfunction"
+hash = "68f5502e14d9447a33fd12131ad1b327c1afdd65526273dd1818de73053255a8"
+
+[[files]]
+file = "kubejs/data/kronwerke/function/shots/row_13.mcfunction"
+hash = "e19afb16958ba1795744b49086b1b754dc0659f475e286f59cf5fa631998c516"
+
+[[files]]
+file = "kubejs/data/kronwerke/function/shots/row_14.mcfunction"
+hash = "058253c23fb409f34570f4eef2a65415d703c51004af041e4de0fd7ae830b4e6"
+
+[[files]]
+file = "kubejs/data/kronwerke/function/shots/row_15.mcfunction"
+hash = "0a93ae1476b6113bb38a0099582497778e253813f90a15b89d8194ebf7f1c975"
+
+[[files]]
+file = "kubejs/data/kronwerke/function/shots/row_16.mcfunction"
+hash = "4959b0fc555951d974e81c5f90486bee98f038c9169683007dd92dadf1c2d2b9"
+
+[[files]]
+file = "kubejs/data/kronwerke/function/shots/row_17.mcfunction"
+hash = "3394372e947edd3f308fad0a621a0921f8f89f78d62310c69889cade627cb87f"
+
+[[files]]
+file = "kubejs/data/kronwerke/function/shots/row_18.mcfunction"
+hash = "8ce0ddce4ca60123c2fd1a87ebfd475183be2d5f740a119645415293c634d98a"
+
+[[files]]
+file = "kubejs/data/kronwerke/function/shots/row_19.mcfunction"
+hash = "5c4d962aeddeb6c3f4b583fdba8b9d5fbe7d5e31a0b93f53e966bbb9b4629709"
+
+[[files]]
+file = "kubejs/data/kronwerke/function/shots/row_20.mcfunction"
+hash = "aeff82346d44888a8d3e2bb40effd7ccc5b53919bffc8471dbb022da8bd1e1b5"
+
+[[files]]
+file = "kubejs/data/kronwerke/function/shots/row_21.mcfunction"
+hash = "2c3c7d14061f2142eb4573497ba561d63753d7c577cac29372d1d88e43fe8f0b"
+
+[[files]]
+file = "kubejs/data/kronwerke/function/shots/row_22.mcfunction"
+hash = "88b2adeea30186b8e540e97b988fa7429d020ad5f96de296ca52b71520dec773"
 
 [[files]]
 file = "kubejs/data/kronwerke/market_presets/productivetrees_saplings_1.json"
@@ -3227,6 +4215,10 @@ hash = "8d899861e420c1163c18a6ee81538729421c6e2d31bf8cce433e3b1ce1363b04"
 [[files]]
 file = "kubejs/data/kronwerke/recipe/market/productivetrees/yew_sapling.json"
 hash = "8e6f2dd9d5f00b4aa3b11a06874f64ff545093017c5756520a54a0ebc467a6f4"
+
+[[files]]
+file = "kubejs/data/kronwerke/shots/rows.json"
+hash = "c3f4ec0ff0ced9059ed3de839624e8c02233d3d7cc6e8cda031e1215c4c07c8d"
 
 [[files]]
 file = "kubejs/data/kronwerke/tags/block/deepslate_instamine.json"
@@ -5808,7 +6800,7 @@ metafile = true
 
 [[files]]
 file = "mods/kronwerke-core.pw.toml"
-hash = "6f502393174c091ab3954a44a2b5f085b9a14e68c9fed5b20ed51b67eac7b2c1"
+hash = "da84e710be0c7bbe7f2d79f33c2ca69c105d6ad92dbbc9a6269c12428c821fb7"
 metafile = true
 
 [[files]]

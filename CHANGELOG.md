@@ -171,3 +171,8 @@ Needs a new world: the stage files, the quest ids and the goal data changed.
 
 - The test world is whole again: every water and lava source sits in a basin, the obelisk scene builds the real obelisk, empty scenes have a stage with glow frames and a label, the wither scene shows a skull instead of a live wither, and the crystals stand on obsidian over bedrock.
 - The quest book has its own theme: a dark stone background in a gold frame, Kronwerke colours for open, started, done and locked quests, redrawn quest shapes with a rim, softer dependency lines in gold once a quest is done. Hubs with more than four follow-up quests and quests with more than three requirements hide their lines, so chapters stop looking like spiderwebs. The Create chapters use circles instead of gears by default, and chapter titles sit on a plate.
+
+## 0.11.2
+
+- Kronwerke Core 0.10.0: every screen on one frame with a brass border, tooltips and a grow-in; the hub with the stages as a path of rings and the selected stage with icons, counts and bars; the admin panel with a tab rail and player heads; the whitelist screen and the language question in the same look.
+- The test world no longer summons the Draconic guardian crystal or a dragon in automatic scenes; such scenes get a note instead.

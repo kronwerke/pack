@@ -1,5 +1,5 @@
-setblock -6 63 49 minecraft:smooth_stone
-setblock -6 64 49 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Create"}','{"text": ""}','{"text": ""}','{"text": ""}']}}
+setblock -6 63 53 minecraft:smooth_stone
+setblock -6 64 53 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Create"}','{"text": ""}','{"text": ""}','{"text": ""}']}}
 function kronwerke:shots/box/020
 function kronwerke:shots/box/021
 function kronwerke:shots/box/022

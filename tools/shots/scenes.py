@@ -9,6 +9,7 @@ and a note on the sign.
 """
 
 SCENES = {}
+FLOOR_Y = 63
 
 
 class Spec:
@@ -43,30 +44,86 @@ def kit(*keys, blocks=(), items=(), mobs=(), note=None, w=9, d=9):
 
 
 def auto(b, info):
-    """No hand made scene: the quest's task items and icon, blocks standing, items in frames."""
+    """No hand made scene: a small stage with the quest's task items, blocks standing on it,
+    other items in glowing frames on a backdrop wall, mobs to kill standing in front."""
     import json
     import os
     cat = None
     p = os.environ.get("KW_CATALOG", "/tmp/claude-0/cat/catalog.json")
     if os.path.exists(p):
         cat = json.load(open(p))["blocks"]
-    things = list(dict.fromkeys(info["items"] + ([info["icon"]] if info.get("icon") else [])))
-    col = 0
-    for it in things[:6]:
-        x = 1 + col * 2
-        if cat is not None and it in cat:
-            b.b(x, 0, 3, it)
-        else:
-            b.b(x, 0, 3, "minecraft:polished_andesite")
-            b.fr(x, 0, 4, "south", it)
-        col += 1
-    for i, e in enumerate(info["kill"][:2]):
-        b.m(e, 2 + i * 4, 0, 6)
+    things = list(dict.fromkeys(info["items"] + ([info["icon"]] if info.get("icon") else [])))[:6]
+    w = b.w
+    # the stage: a raised deepslate platform with a gold trim, a backdrop wall behind it
+    b.f(1, -1, 1, w - 2, -1, 4, "minecraft:polished_deepslate")
+    b.f(1, 0, 1, w - 2, 3, 1, "minecraft:deepslate_tiles")
+    b.f(1, 0, 1, w - 2, 0, 1, "minecraft:polished_blackstone")
+    b.f(1, 3, 1, w - 2, 3, 1, "minecraft:polished_blackstone")
+    b.b(1, 0, 4, "minecraft:lantern")
+    b.b(w - 2, 0, 4, "minecraft:lantern")
+    blocks = [t for t in things if cat is not None and t in cat]
+    items = [t for t in things if t not in blocks]
+    # blocks stand on the stage, spaced out
+    start = max(2, (w - 2 * len(blocks)) // 2) if blocks else 2
+    for i, bl in enumerate(blocks):
+        b.b(start + i * 2, 0, 3, bl)
+    # items hang in glow frames on the wall, centred
+    fx = max(2, (w - 2 * len(items)) // 2) if items else 2
+    for i, it in enumerate(items):
+        x = min(w - 2, fx + i * 2)
+        b.cmd(f"summon glow_item_frame {b.ox + x} {FLOOR_Y + 1 + 2} {b.oz + 2} {{Facing:3b,Fixed:1b,Tags:[\"kw_shot\"],Item:{{id:\"{it}\",count:1}}}}")
+    for i, e in enumerate(info["kill"][:3]):
+        b.m(e, 2 + i * 3, 0, 6)
     for d in info["dim"]:
         b.note("Aufnahme in " + d.split(":")[-1].replace("_", " "))
 
 
 # ---- helpers ---------------------------------------------------------------------
+
+def basin(b, x, y, z, fluid, wall="minecraft:glass"):
+    """One fluid source block with a ring of wall around it and a floor under it, so nothing runs out."""
+    for dx in (-1, 0, 1):
+        for dz in (-1, 0, 1):
+            if dx or dz:
+                b.b(x + dx, y, z + dz, wall)
+    b.b(x, y - 1, z, wall)
+    b.b(x, y, z, fluid)
+
+
+def cobble_generator(b, x, y, z, wall="minecraft:glass"):
+    """Water at x-1, lava at x+1, cobblestone between, all in glass; z is the row."""
+    for dx in range(-2, 3):
+        for dz in (-1, 1):
+            b.b(x + dx, y, z + dz, wall)
+    b.b(x - 2, y, z, wall)
+    b.b(x + 2, y, z, wall)
+    b.f(x - 2, y - 1, z - 1, x + 2, y - 1, z + 1, wall)
+    b.b(x - 1, y, z, "minecraft:water")
+    b.b(x, y, z, "minecraft:cobblestone")
+    b.b(x + 1, y, z, "minecraft:lava")
+
+
+def obelisk(b, cx, cz):
+    """The whole obelisk build the way Core places it: core, stepped plinth, trunk with rune bands, cap, tip, crystal, four pedestals."""
+    b.b(cx, 0, cz, "kronwerke:obelisk")
+    for dx in range(-4, 5):
+        for dz in range(-4, 5):
+            r = max(abs(dx), abs(dz))
+            if r > 0:
+                b.b(cx + dx, 0, cz + dz, "kronwerke:obelisk_plinth")
+            if r <= 3:
+                b.b(cx + dx, 1, cz + dz, "kronwerke:obelisk_plinth")
+            if r <= 2:
+                b.b(cx + dx, 2, cz + dz, "kronwerke:obelisk_plinth")
+            if r <= 1:
+                for y in range(3, 15):
+                    b.b(cx + dx, y, cz + dz, "kronwerke:obelisk_runes" if (y == 5 or y == 12) and r == 1 else "kronwerke:obelisk_trunk")
+                b.b(cx + dx, 15, cz + dz, "kronwerke:obelisk_plinth")
+    b.b(cx, 16, cz, "kronwerke:obelisk_shaft")
+    b.b(cx, 17, cz, "kronwerke:obelisk_top")
+    for dx, dz in ((-6, -6), (6, -6), (-6, 6), (6, 6)):
+        b.b(cx + dx, 0, cz + dz, "kronwerke:obelisk_plinth")
+        b.b(cx + dx, 1, cz + dz, "kronwerke:obelisk_pedestal")
 
 def motor(b, x, y, z, facing="east", speed=64):
     b.b(x, y, z, f"create:creative_motor[facing={facing}]", f"{{ScrollValue:{speed}}}")
@@ -82,21 +139,18 @@ def gold_ring(b, cx, cz, r=2):
 # ===================================================================================
 # Start
 
-@scene("start_here/o_handin", "start_here/o_obelisk", w=11, d=11)
+@scene("start_here/o_handin", "start_here/o_obelisk", w=15, d=15)
 def _(b):
-    b.f(3, 0, 3, 7, 0, 7, "minecraft:polished_deepslate")
-    b.b(5, 1, 5, "kronwerke:obelisk")
-    b.c(1, 0, 9, [("minecraft:cobblestone", 64)] * 6)
-    b.note("Obelisk: /kw admin obelisk build auf den Sockel, dann Rechtsklick")
+    obelisk(b, 7, 7)
+    b.c(1, 0, 13, [("minecraft:cobblestone", 64)] * 6)
 
 
-@scene("start_here/o_feeder", w=11, d=11)
+@scene("start_here/o_feeder", w=15, d=15)
 def _(b):
-    b.f(3, 0, 3, 7, 0, 7, "minecraft:polished_deepslate")
-    b.b(5, 1, 5, "kronwerke:obelisk")
-    b.b(5, 0, 8, "kronwerke:obelisk_intake")
-    b.b(5, 1, 8, "minecraft:hopper[facing=down]")
-    b.c(5, 2, 8, [("minecraft:cobblestone", 64)] * 3)
+    obelisk(b, 7, 7)
+    b.b(7, 0, 12, "kronwerke:obelisk_intake")
+    b.b(7, 1, 12, "minecraft:hopper[facing=down]")
+    b.c(7, 2, 12, [("minecraft:cobblestone", 64)] * 3)
 
 
 kit("start_here/s_locked", blocks=["minecraft:crafting_table"],
@@ -133,13 +187,8 @@ kit("start_here/v_claim", blocks=["minecraft:lectern"], note="Karte mit M, Claim
 
 @scene("farms/cobble_drill", w=11)
 def _(b):
-    b.b(3, 0, 4, "minecraft:water")
-    b.b(5, 0, 4, "minecraft:lava")
-    b.f(2, 0, 3, 6, 0, 3, "minecraft:glass")
-    b.f(2, 0, 5, 6, 0, 5, "minecraft:glass")
-    b.b(2, 0, 4, "minecraft:glass")
-    b.b(6, 0, 4, "minecraft:glass")
-    b.b(4, 0, 4, "minecraft:cobblestone")
+    cobble_generator(b, 4, 0, 4)
+    b.b(4, 0, 5, "minecraft:air")
     b.b(4, 0, 6, "create:mechanical_drill[facing=north]")
     b.b(4, 0, 7, "create:shaft[axis=z]")
     motor(b, 4, 0, 8, "north")
@@ -165,6 +214,7 @@ def _(b):
 def _(b):
     b.f(1, -1, 1, 9, -1, 9, "minecraft:farmland")
     b.f(1, 0, 1, 9, 0, 9, "minecraft:wheat[age=7]")
+    b.b(5, -2, 5, "minecraft:stone")
     b.b(5, -1, 5, "minecraft:water")
     b.b(5, 0, 5, "create:mechanical_bearing[facing=up]")
     b.f(5, 1, 5, 8, 1, 5, "create:andesite_casing")
@@ -261,7 +311,10 @@ def _(b):
     for i in range(4):
         b.b(2 + i, 1, 4, "create:water_wheel[facing=east]")
     b.f(1, 0, 3, 7, 0, 5, "minecraft:stone")
-    b.f(2, 3, 4, 5, 3, 4, "minecraft:water")
+    # a trough of water above the wheels, closed on every side
+    b.f(1, 3, 3, 6, 3, 5, "minecraft:stone")
+    b.f(1, 4, 3, 6, 4, 5, "minecraft:stone")
+    b.f(2, 4, 4, 5, 4, 4, "minecraft:water")
     b.b(6, 1, 4, "create:shaft[axis=x]")
 
 
@@ -350,12 +403,7 @@ def _(b):
 
 @scene("create/cobble_gen")
 def _(b):
-    b.b(3, 0, 4, "minecraft:water")
-    b.b(5, 0, 4, "minecraft:lava")
-    b.b(4, 0, 4, "minecraft:cobblestone")
-    b.f(2, 0, 3, 6, 0, 3, "minecraft:glass")
-    b.f(2, 0, 5, 3, 0, 5, "minecraft:glass")
-    b.f(5, 0, 5, 6, 0, 5, "minecraft:glass")
+    cobble_generator(b, 4, 0, 4)
     b.b(4, 0, 5, "create:mechanical_drill[facing=north]")
     b.b(4, 0, 6, "create:shaft[axis=z]")
     motor(b, 4, 0, 7, "north")
@@ -372,12 +420,11 @@ def _(b):
     b.note("Lager oder Kolben davor, Kleber auf das Chassis")
 
 
-@scene("create/factory", w=13, d=11)
+@scene("create/factory", w=27, d=15)
 def _(b):
-    b.f(2, 0, 2, 6, 0, 6, "minecraft:polished_deepslate")
-    b.b(4, 1, 4, "kronwerke:obelisk")
-    b.b(4, 0, 7, "kronwerke:obelisk_intake")
-    b.t("create:gametest/processing/brass_mixing", 7, 0, 3)
+    obelisk(b, 7, 7)
+    b.b(7, 0, 12, "kronwerke:obelisk_intake")
+    b.t("create:gametest/processing/brass_mixing", 15, 0, 2)
 
 
 kit("create_brass/blaze_burner", blocks=["create:blaze_burner"], mobs=["minecraft:blaze"],
@@ -497,14 +544,13 @@ def _(b):
     b.b(5, 0, 4, "create:white_postbox")
 
 
-@scene("create_trains/obelisk_line", w=13, d=11)
+@scene("create_trains/obelisk_line", w=15, d=21)
 def _(b):
-    b.f(2, 0, 2, 6, 0, 6, "minecraft:polished_deepslate")
-    b.b(4, 1, 4, "kronwerke:obelisk")
-    b.b(4, 0, 7, "kronwerke:obelisk_intake")
-    track(b, 8, 0, 12)
-    b.b(8, 0, 7, "create:track_station")
-    b.b(6, 0, 7, "create:portable_storage_interface[facing=west]")
+    obelisk(b, 7, 7)
+    b.b(7, 0, 12, "kronwerke:obelisk_intake")
+    track(b, 17, 0, 14)
+    b.b(7, 0, 16, "create:track_station")
+    b.b(7, 0, 14, "create:portable_storage_interface[facing=north]")
 
 
 # ===================================================================================
@@ -791,9 +837,8 @@ def _(b):
 
 @scene("ars_apprentice/turret")
 def _(b):
-    b.b(3, 0, 4, "minecraft:water")
-    b.b(5, 0, 4, "minecraft:lava")
-    b.b(4, 0, 4, "minecraft:cobblestone")
+    cobble_generator(b, 4, 0, 4)
+    b.b(4, 0, 5, "minecraft:air")
     b.b(4, 0, 6, "ars_nouveau:basic_spell_turret[facing=north]")
 
 
@@ -938,11 +983,10 @@ def _(b):
                 b.b(x, 0, z, "botania:cellular_block")
 
 
-@scene("gaia/goal")
+@scene("gaia/goal", w=15, d=15)
 def _(b):
-    b.f(2, 0, 2, 6, 0, 6, "minecraft:polished_deepslate")
-    b.b(4, 1, 4, "kronwerke:obelisk")
-    b.c(7, 0, 7, [("botania:gaia_spirit", 64)])
+    obelisk(b, 7, 7)
+    b.c(1, 0, 13, [("botania:gaia_spirit", 64)])
 
 
 @scene("alfheim/frame", "alfheim/open", "alfheim/elementium_line", w=13, d=11)
@@ -1026,7 +1070,7 @@ def _(b):
 
 @scene("hexerei/cauldron", "hexerei/blood", "hexerei/potion_brew")
 def _(b):
-    b.b(2, -1, 4, "minecraft:lava")
+    basin(b, 2, -1, 4, "minecraft:lava", "minecraft:stone_bricks")
     b.b(2, 0, 4, "hexerei:mixing_cauldron")
     b.b(6, 0, 4, "hexerei:mixing_cauldron")
     b.b(4, 0, 2, "hexerei:candle_dipper")
@@ -1078,6 +1122,12 @@ def _(b):
 
 @scene("immersive/watermill", w=13)
 def _(b):
+    # a channel of water: stone on both sides and under it
+    b.f(0, 0, 3, 11, 0, 3, "minecraft:stone")
+    b.f(0, 0, 5, 11, 0, 5, "minecraft:stone")
+    b.f(0, -1, 3, 11, -1, 5, "minecraft:stone")
+    b.b(0, 0, 4, "minecraft:stone")
+    b.b(11, 0, 4, "minecraft:stone")
     b.f(1, 0, 4, 10, 0, 4, "minecraft:water")
     for x in (3, 6, 9):
         b.b(x, 2, 4, "immersiveengineering:watermill")
@@ -1186,7 +1236,10 @@ def _(b):
     b.b(5, 0, 5, "industrialforegoing:fluid_laser_base")
     for x, z in [(3, 3), (7, 3), (3, 7), (7, 7)]:
         b.b(x, 0, z, "industrialforegoing:laser_drill")
-    b.m("minecraft:wither", 5, 2, 8)
+    b.b(5, 0, 8, "minecraft:soul_sand")
+    b.b(5, 1, 8, "minecraft:soul_sand")
+    b.b(5, 2, 8, "minecraft:wither_skeleton_skull[rotation=0]")
+    b.note("Wither dort selbst beschwören, dann Laser drauf")
 
 
 kit("industrial/washing", blocks=["industrialforegoing:washing_factory", "industrialforegoing:fermentation_station",
@@ -1317,7 +1370,9 @@ def _(b):
     b.f(2, 0, 2, 6, 0, 6, "minecraft:bedrock")
     b.b(4, 1, 4, "minecraft:dragon_egg")
     for x, z in [(4, 1), (4, 7), (1, 4), (7, 4)]:
-        b.m("minecraft:end_crystal", x, 0, z, "ShowBottom:0b", ai=True)
+        b.b(x, 0, z, "minecraft:obsidian")
+        b.b(x, 1, z, "minecraft:bedrock")
+        b.m("minecraft:end_crystal", x, 2, z, "ShowBottom:0b", ai=True)
 
 
 kit("the_end/elytra", items=["minecraft:elytra"], note="Mit Elytra fliegen")

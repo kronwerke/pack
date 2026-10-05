@@ -1,53 +1,54 @@
 # 147 occultism/satchel
-fill 105 63 224 116 63 237 minecraft:light_gray_concrete
-fill 105 64 224 116 71 224 minecraft:light_gray_concrete
-fill 105 64 224 105 71 237 minecraft:light_gray_concrete
-setblock 106 64 236 minecraft:air
-setblock 106 64 236 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "147"}','{"text": "occultism"}','{"text": "satchel"}','{"text": ""}']}}
-setblock 107 64 236 minecraft:air
-setblock 107 64 236 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "the Dictionary"}','{"text": "pentacle"}','{"text": "preview in the"}','{"text": "world"}']}}
-setblock 108 64 236 minecraft:air
-setblock 108 64 236 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Kreideglyphen"}','{"text": "sind"}','{"text": "Platzhalter: im"}','{"text": "Buch das"}']}}
-setblock 109 64 236 minecraft:air
-setblock 109 64 236 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Pentakel"}','{"text": "ansehen"}','{"text": ""}','{"text": ""}']}}
-setblock 110 64 229 occultism:golden_sacrificial_bowl
-setblock 107 64 226 occultism:chalk_glyph_white
-setblock 107 64 227 occultism:chalk_glyph_white
-setblock 107 64 228 occultism:chalk_glyph_white
-setblock 107 64 229 occultism:chalk_glyph_white
-setblock 107 64 230 occultism:chalk_glyph_white
-setblock 107 64 231 occultism:chalk_glyph_white
-setblock 107 64 232 occultism:chalk_glyph_white
-setblock 108 64 226 occultism:chalk_glyph_white
-setblock 108 64 227 occultism:chalk_glyph_white
-setblock 108 64 231 occultism:chalk_glyph_white
-setblock 108 64 232 occultism:chalk_glyph_white
-setblock 109 64 226 occultism:chalk_glyph_white
-setblock 109 64 228 occultism:chalk_glyph_white
-setblock 109 64 230 occultism:chalk_glyph_white
-setblock 109 64 232 occultism:chalk_glyph_white
-setblock 110 64 226 occultism:chalk_glyph_white
-setblock 110 64 232 occultism:chalk_glyph_white
-setblock 111 64 226 occultism:chalk_glyph_white
-setblock 111 64 228 occultism:chalk_glyph_white
-setblock 111 64 230 occultism:chalk_glyph_white
-setblock 111 64 232 occultism:chalk_glyph_white
-setblock 112 64 226 occultism:chalk_glyph_white
-setblock 112 64 227 occultism:chalk_glyph_white
-setblock 112 64 231 occultism:chalk_glyph_white
-setblock 112 64 232 occultism:chalk_glyph_white
-setblock 113 64 226 occultism:chalk_glyph_white
-setblock 113 64 227 occultism:chalk_glyph_white
-setblock 113 64 228 occultism:chalk_glyph_white
-setblock 113 64 229 occultism:chalk_glyph_white
-setblock 113 64 230 occultism:chalk_glyph_white
-setblock 113 64 231 occultism:chalk_glyph_white
-setblock 113 64 232 occultism:chalk_glyph_white
-setblock 107 64 226 occultism:sacrificial_bowl
-setblock 113 64 226 occultism:sacrificial_bowl
-setblock 107 64 232 occultism:sacrificial_bowl
-setblock 113 64 232 occultism:sacrificial_bowl
-setblock 110 64 225 occultism:large_candle_white
-setblock 106 64 229 occultism:large_candle_white
-setblock 114 64 229 occultism:large_candle_white
-setblock 110 64 233 occultism:large_candle_white
+fill 105 63 242 116 63 255 minecraft:light_gray_concrete
+fill 105 64 242 116 71 242 minecraft:light_gray_concrete
+fill 105 64 242 105 71 255 minecraft:light_gray_concrete
+setblock 106 64 254 minecraft:air
+setblock 106 64 254 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "147"}','{"text": "occultism"}','{"text": "satchel"}','{"text": ""}']}}
+setblock 107 64 254 minecraft:air
+setblock 107 64 254 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "the Dictionary"}','{"text": "pentacle"}','{"text": "preview in the"}','{"text": "world"}']}}
+setblock 108 64 254 minecraft:air
+setblock 108 64 254 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Kreideglyphen"}','{"text": "sind"}','{"text": "Platzhalter: im"}','{"text": "Buch das"}']}}
+setblock 109 64 254 minecraft:air
+setblock 109 64 254 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Pentakel"}','{"text": "ansehen"}','{"text": ""}','{"text": ""}']}}
+summon text_display 110.5 71 247.5 {text:'[{"text": "147  ", "color": "gold"}, {"text": "occultism/satchel", "color": "gray"}, {"text": "\\nBinde eine Apprentice Ritual Satchel", "color": "white"}]',billboard:"center",background:1275068416,Tags:["kw_shot"],alignment:"center",line_width:200,transformation:{scale:[1.6f,1.6f,1.6f],translation:[0f,0f,0f],left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f]}}
+setblock 110 64 247 occultism:golden_sacrificial_bowl
+setblock 107 64 244 occultism:chalk_glyph_white
+setblock 107 64 245 occultism:chalk_glyph_white
+setblock 107 64 246 occultism:chalk_glyph_white
+setblock 107 64 247 occultism:chalk_glyph_white
+setblock 107 64 248 occultism:chalk_glyph_white
+setblock 107 64 249 occultism:chalk_glyph_white
+setblock 107 64 250 occultism:chalk_glyph_white
+setblock 108 64 244 occultism:chalk_glyph_white
+setblock 108 64 245 occultism:chalk_glyph_white
+setblock 108 64 249 occultism:chalk_glyph_white
+setblock 108 64 250 occultism:chalk_glyph_white
+setblock 109 64 244 occultism:chalk_glyph_white
+setblock 109 64 246 occultism:chalk_glyph_white
+setblock 109 64 248 occultism:chalk_glyph_white
+setblock 109 64 250 occultism:chalk_glyph_white
+setblock 110 64 244 occultism:chalk_glyph_white
+setblock 110 64 250 occultism:chalk_glyph_white
+setblock 111 64 244 occultism:chalk_glyph_white
+setblock 111 64 246 occultism:chalk_glyph_white
+setblock 111 64 248 occultism:chalk_glyph_white
+setblock 111 64 250 occultism:chalk_glyph_white
+setblock 112 64 244 occultism:chalk_glyph_white
+setblock 112 64 245 occultism:chalk_glyph_white
+setblock 112 64 249 occultism:chalk_glyph_white
+setblock 112 64 250 occultism:chalk_glyph_white
+setblock 113 64 244 occultism:chalk_glyph_white
+setblock 113 64 245 occultism:chalk_glyph_white
+setblock 113 64 246 occultism:chalk_glyph_white
+setblock 113 64 247 occultism:chalk_glyph_white
+setblock 113 64 248 occultism:chalk_glyph_white
+setblock 113 64 249 occultism:chalk_glyph_white
+setblock 113 64 250 occultism:chalk_glyph_white
+setblock 107 64 244 occultism:sacrificial_bowl
+setblock 113 64 244 occultism:sacrificial_bowl
+setblock 107 64 250 occultism:sacrificial_bowl
+setblock 113 64 250 occultism:sacrificial_bowl
+setblock 110 64 243 occultism:large_candle_white
+setblock 106 64 247 occultism:large_candle_white
+setblock 114 64 247 occultism:large_candle_white
+setblock 110 64 251 occultism:large_candle_white

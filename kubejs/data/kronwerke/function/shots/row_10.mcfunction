@@ -1,5 +1,5 @@
-setblock -6 63 225 minecraft:smooth_stone
-setblock -6 64 225 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Occultism and"}','{"text": "Hexerei"}','{"text": ""}','{"text": ""}']}}
+setblock -6 63 243 minecraft:smooth_stone
+setblock -6 64 243 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Occultism and"}','{"text": "Hexerei"}','{"text": ""}','{"text": ""}']}}
 function kronwerke:shots/box/140
 function kronwerke:shots/box/141
 function kronwerke:shots/box/142

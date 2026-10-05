@@ -165,10 +165,15 @@ def chapter(name, title, icon, group, quests, subtitle=(), shape="circle", order
 
 # ---- SNBT writer ----------------------------------------------------------
 
+class L(int):
+    """A long tag (written with the L suffix)."""
+
 def _s(v, ind=0):
     pad = "\t" * ind
     if isinstance(v, bool):
         return "true" if v else "false"
+    if isinstance(v, L):
+        return f"{int(v)}L"
     if isinstance(v, int):
         return str(v)
     if isinstance(v, F):
@@ -239,7 +244,9 @@ def _build_chapter(ch, order_index, lang):
         for i, r in enumerate(q["rewards"]):
             r = dict(r)
             if r["type"] == "loot":
-                r["table_id"] = qid("table", r.pop("table"))
+                # FTB Quests reads table_id with getLong: a hex string reads as 0,
+                # which leaves the reward without a table (empty "Loot Reward").
+                r["table_id"] = L(int(qid("table", r.pop("table")), 16))
             r = {"id": qid("reward", ch["name"], q["name"], str(i)), **r}
             qd["rewards"].append(r)
         quests_out.append(qd)

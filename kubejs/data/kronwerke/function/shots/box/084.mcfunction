@@ -1,0 +1,20 @@
+# 084 ars_nouveau/imbuement, first_gem
+fill 0 63 130 21 63 143 minecraft:light_gray_concrete
+fill 0 64 130 21 71 130 minecraft:light_gray_concrete
+fill 0 64 130 0 71 143 minecraft:light_gray_concrete
+setblock 1 64 142 minecraft:air
+setblock 1 64 142 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "084.1"}','{"text": "ars_nouveau"}','{"text": "imbuement"}','{"text": ""}']}}
+setblock 2 64 142 minecraft:air
+setblock 2 64 142 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "the chamber"}','{"text": "with an"}','{"text": "amethyst shard,"}','{"text": "then with a"}']}}
+setblock 3 64 142 minecraft:air
+setblock 3 64 142 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "finished gem"}','{"text": ""}','{"text": ""}','{"text": ""}']}}
+setblock 5 64 135 ars_nouveau:imbuement_chamber
+setblock 3 64 135 ars_nouveau:source_jar
+setblock 9 64 139 minecraft:chest[facing=south]{Items:[{Slot:0b,id:"minecraft:amethyst_shard",count:16},{Slot:1b,id:"ars_nouveau:source_gem",count:4}]}
+setblock 11 64 142 minecraft:air
+setblock 11 64 142 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "084.2"}','{"text": "ars_nouveau"}','{"text": "first_gem"}','{"text": ""}']}}
+setblock 12 64 142 minecraft:air
+setblock 12 64 142 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Mach dein"}','{"text": "erstes"}','{"text": "Quelljuwel"}','{"text": ""}']}}
+setblock 15 64 135 ars_nouveau:imbuement_chamber
+setblock 13 64 135 ars_nouveau:source_jar
+setblock 19 64 139 minecraft:chest[facing=south]{Items:[{Slot:0b,id:"minecraft:amethyst_shard",count:16},{Slot:1b,id:"ars_nouveau:source_gem",count:4}]}

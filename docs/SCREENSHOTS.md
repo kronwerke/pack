@@ -2,6 +2,8 @@
 
 Pictures the quests should get, by chapter. Each line is the quest id and what the shot should show. Take them at 16:9, GUI scale 2 or 3, HUD hidden (F1) unless the line says the HUD matters. Save as PNG named `<chapter>_<quest id>.png`; they go into `kubejs/assets/kronwerke/textures/quests/shots/` and get wired into the chapters afterwards.
 
+The test world has every line of this list as a grey box: `/kw testworld` takes an operator there (it builds the world on the first visit), `/kw testworld rebuild` builds it again after a change. Each box holds the scene for its shot, a chest with what still has to happen by hand, and signs facing the path. The boxes are generated from this list and `tools/shots/scenes.py` by `tools/shots/build.py`; a line without a hand made scene shows the quest's task items.
+
 Chapters without a list here (most of the stage 1 gap chapters from the first wave) work without pictures for now.
 
 ## Start
@@ -224,7 +226,7 @@ Chapters without a list here (most of the stage 1 gap chapters from the first wa
 - ae2/channels: controller with dense cables branching into normal smart cables, channel stripes visible
 - ae2/meteorite, presses, inscriber, network, controller, autocraft, cpu, p2p, factory
 - ae2_advanced/bridge, spatial, reaction, matrix, mega_4m
-- logistics/menril, programmer, counter, xnet_connectors, laser_node, cm_machine, mg_gadget
+- logistics/menril, programmer, counter, xnet_connectors, laser_node, mg_gadget
 - storage/welcome, drawers_4, config_tool, copper_tier, controller, vault_big, trash
 - refined_storage: the network grid and the autocrafter
 - list_transport/belt, packages, create_tank, hose_pulley, ie_wire, mek_transporter, vault, drawers
@@ -249,7 +251,7 @@ Chapters without a list here (most of the stage 1 gap chapters from the first wa
 - deeper_darker/portal, arrival, deeplands, echoing_forest, blooming_caverns, overcast_columns, temple, transmitter, resonarium, stalker, echo_shard
 - undergarden/arrival, catacombs, guardian, forgotten, depths, infuser, b_cold
 - eternal_starlight/orb, portal, starfire, desert, forge, golem, garden, monstrosity
-- list_dimensions/d_mining, d_aether, d_undergarden, d_otherside, d_compact, r_plates, r_mekanism, r_enderio, r_chunks
+- list_dimensions/d_mining, d_aether, d_undergarden, d_otherside, r_plates, r_mekanism, r_enderio, r_chunks
 - productive_trees/first_tree, mega, pots, sawmill_run, stripper, wood_set, station, pollinated, loot_saplings, amber, time_traveller
 
 ## Late game

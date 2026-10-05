@@ -113,7 +113,7 @@ RULES = [
     (3, [
         "@enderio", "@industrialforegoing", "@powah", "@oritech",
         "@integrateddynamics", "@integratedcrafting", "@integratedterminals", "@integratedtunnels",
-        "@xnet", "@rftoolsbase", "@compactmachines", "@mininggadgets", "@laserio", "@tempad",
+        "@xnet", "@rftoolsbase", "@mininggadgets", "@laserio", "@tempad",
     ]),
     (4, [
         "@rftoolsbuilder", "@quarryplus", "re:^mininggadgets:upgrade_.*_3$",
@@ -253,6 +253,14 @@ RULES = [
     (2, ["irons_spellbooks:uncommon_ink", "irons_spellbooks:rare_ink", "irons_spellbooks:gold_spell_book",
          "irons_spellbooks:arcane_anvil", "re:^irons_spellbooks:.*_upgrade_orb$"]),
     (3, ["irons_spellbooks:epic_ink", "irons_spellbooks:diamond_spell_book", "irons_spellbooks:netherite_spell_book"]),
+    # the loot books follow the tier they match: the mob drops of stage 2 (evoker, blaze, druidic,
+    # villager, ice, rotten, cursed doll) sit with the gold book, the necronomicon with netherite,
+    # the unchained book is the chained one opened, the archevoker's logbook belongs to the citadel
+    (2, ["irons_spellbooks:evoker_spell_book", "irons_spellbooks:blaze_spell_book", "irons_spellbooks:druidic_spell_book",
+         "irons_spellbooks:villager_spell_book", "irons_spellbooks:ice_spell_book", "irons_spellbooks:rotten_spell_book",
+         "irons_spellbooks:cursed_doll_spell_book", "irons_spellbooks:chained_book", "irons_spellbooks:unchained_book"]),
+    (3, ["irons_spellbooks:necronomicon_spell_book", "irons_spellbooks:archevoker_logbook_translated",
+         "irons_spellbooks:archevoker_logbook_untranslated"]),
     (4, ["irons_spellbooks:legendary_ink", "irons_spellbooks:legendary_spell_book", "irons_spellbooks:dragonskin_spell_book",
          "irons_spellbooks:dragonskin"]),
 

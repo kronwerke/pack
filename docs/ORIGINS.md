@@ -4,6 +4,8 @@ How Kronwerke uses Neo Origins, and why each choice looks the way it does. Every
 
 ## Principles
 
+Downsides are trades, not nuisances: no Slowness, no Mining Fatigue. A heart less, more damage from one source, a place that hurts. Each one is a sentence the player remembers.
+
 1. **Fewer, better choices.** Nine origins, seven roles. Each one says in its first sentence where it comes from in Kronwerke and what it is for.
 2. **Every origin has a real downside.** Something a player notices every session, not a footnote. The upsides are sized against it.
 3. **Nothing skips progression.** No flight (not even in stage 4), no extra ore, no bonus output on goal items, no way to make a stage item early. Powers make you faster or tougher at what you are already allowed to do.
@@ -46,7 +48,8 @@ Icon: Water Wheel. Impact: low. The second newcomer pick: grew up under the wate
 | Flussatem | +2 oxygen bonus (air lasts about three times as long). | Building water wheels, locks and river foundations in stage 1. |
 | Stromschwimmer | Swims 30 percent faster. | Same. |
 | Nasse Hände | No mining penalty under water. | Same. No extra drops. |
-| Trockene Kehle (downside) | Slowness I and Hunger I in biomes with a base temperature of 1.5 or more (desert, savanna, badlands, the Nether) unless standing in water. | Makes the Nether (stage 2) a place to visit with others, and deserts a detour. |
+| Landratte (downside) | One heart less. | Built for water, not for fighting. |
+| Zunder (downside) | Double damage from fire and lava. | The forge and the Nether are for others. |
 
 ### Tiefgräber (Deepdigger)
 
@@ -56,8 +59,9 @@ Icon: the Mining Dimension's enchanted pickaxe. Impact: medium. From the tunnels
 | --- | --- | --- |
 | Stollenaugen | Night vision, toggled with the Night Vision key (default K). | The classic miner perk. |
 | Hauerhand | Breaks pickaxe blocks 25 percent faster. | Speed only. No Fortune, no extra ore, so the ore economy is untouched. |
+| Tiefenschlag | Deepslate, cobbled deepslate, tuff and the deepslate ores break in one hit (`#kronwerke:deepslate_instamine`). | The deep layers of the Mining Dimension are the Tiefgräber's home. |
 | Heimat unter Tage | Haste I in the Mining Dimension. | Ties the origin to a place that opens on day one. |
-| Lichtscheu (downside) | Weakness I and Slowness I in daytime under open sky. A helmet does not help. | Real every day: the Tiefgräber builds under a roof or works at night. Uses `daytime` plus `exposed_to_sky` instead of the mod's sun check, which a helmet would cancel. |
+| Lichtscheu (downside) | Half a heart every 4 seconds in direct sunlight (not in water). | The Tiefgräber builds under a roof or works at night. A clear price instead of a nagging effect. |
 
 ### Messingblut (Brassblood)
 
@@ -67,7 +71,7 @@ Icon: Brass Ingot. Impact: medium. Born in the forges of the Messingwerk.
 | --- | --- | --- |
 | Hitzefest | Half damage from everything in `#minecraft:is_fire` (fire, lava, burning). | The Nether pioneer for stage 2: blaze powder feeds brass, and brass is the stage 2 goal. Lava is still deadly, just slower. |
 | Schmiedeglut | Haste I while within 5 blocks of a furnace, blast furnace, smoker, Iron Furnaces furnace, blaze burner or campfire (checked once per second). | Rewards the forge corner of a base. |
-| Rostig (downside) | Slowness I and Mining Fatigue I in water and in rain. | Rain hits everywhere in the Overworld, so this is felt often. |
+| Rostig (downside) | Half a heart every 2 seconds in water. Rain does nothing. | Boats and bridges instead of swimming. |
 
 ### Aurakind (Aurachild)
 
@@ -78,7 +82,7 @@ Icon: Natural Altar. Impact: medium. Grew up next to a Nature's Aura altar.
 | Waldatem | Heals half a heart every 4 seconds in forest, taiga and jungle biomes. | Nature magic without touching crops. |
 | Kräuterblut | Immune to Poison. | Small, thematic. |
 | Naturglück | +1 Luck. | Better fishing and chest loot, no ore. |
-| Fern der Wurzeln (downside) | Weakness I and Mining Fatigue I in the Nether and the End. | Stage 2 and stage 4 are exactly where others have to dig for the Aurakind. |
+| Fern der Wurzeln (downside) | 50 percent more damage taken in the Nether and the End. | Stage 2 and stage 4 are where the Aurakind goes with friends. |
 
 Deliberately not used: crop growth acceleration and extra bone meal. Neo Origins' growth power and its extra bone meal applications both call `performBonemeal` directly, which bypasses Mystical Agriculture's "no bone meal" rule on resource crops. That would be free ore essence.
 
@@ -102,7 +106,7 @@ Icon: Rune of Earth. Impact: medium. The obelisk's runes are burned into the ski
 | Runenhaut | +2 natural armor. | Boss fights: Afrits, the dragon, Gaia, the Chaos Guardian. |
 | Bannzeichen | 30 percent less damage from `#minecraft:witch_resistant_to` (magic, indirect magic, thorns, sonic boom). | Fits the rune theme; useful against witches, Gaia and spell mobs. |
 | Standfest | +0.25 knockback resistance. | Holds the line. |
-| Schwere Zeichen (downside) | 10 percent slower movement. | Felt on every walk. |
+| Schwere Zeichen (downside) | Double fall damage. | The tank builds stairs. |
 
 ### Sternensplitter (Starshard)
 
@@ -123,7 +127,7 @@ Icon: Chaos Shard. Impact: high. Marked by the chaos at the end of all stages. T
 | --- | --- | --- |
 | Chaosfunke | +2 attack damage. | Straight damage for streamers who want to fight. |
 | Zehrendes Chaos | Heals one heart on every kill. | Sustain in a fight. |
-| Unstet (downside) | Natural regeneration from food at half speed. | Between fights the Chaosgezeichnete heals slowly and leans on potions or a Kronbürger nearby. |
+| Chaosgeruch (downside) | Every monster within 32 blocks hunts the Chaosgezeichnete, seen or not. | The fighter never has a quiet night. |
 
 ## Rolle (roles)
 
@@ -146,14 +150,14 @@ Deliberately not used for roles: the mod's `trade_availability` (villagers resto
 | Origin | Impact | Upsides | Downside |
 | --- | --- | --- | --- |
 | Kronbürger | low | Regen near friends, less hunger | More hunger outside the Overworld |
-| Mühlenkind | low | Air, swim speed, underwater mining | Slow and hungry in hot biomes |
-| Tiefgräber | medium | Night vision, faster pickaxe, Haste in the Mining Dimension | Weak and slow in daylight under open sky |
-| Messingblut | medium | Half fire damage, Haste at the forge | Slow and fatigued in water and rain |
-| Aurakind | medium | Forest healing, poison immunity, Luck | Weak and fatigued in Nether and End |
+| Mühlenkind | low | Air, swim speed, underwater mining | One heart less, double fire damage |
+| Tiefgräber | medium | Night vision, faster pickaxe, deepslate in one hit, Haste in the Mining Dimension | Sunlight hurts |
+| Messingblut | medium | Half fire damage, Haste at the forge | Water hurts |
+| Aurakind | medium | Forest healing, poison immunity, Luck | 50 percent more damage in Nether and End |
 | Quellgeborene | medium | +50 mana in Ars Nouveau and Iron's Spells | One heart less, no heavy armor |
-| Runenträger | medium | Armor, magic resistance, knockback resistance | 10 percent slower |
+| Runenträger | medium | Armor, magic resistance, knockback resistance | Double fall damage |
 | Sternensplitter | high | Short teleport, half fall damage, enderman calm | Two hearts less |
-| Chaosgezeichnete | high | +2 damage, heal on kill | Half natural regeneration |
+| Chaosgezeichnete | high | +2 damage, heal on kill | Monsters hunt them from 32 blocks |
 
 ## Notes for the owner
 

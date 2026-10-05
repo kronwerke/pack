@@ -131,3 +131,15 @@ Needs a new world: the stage files, the quest ids and the goal data changed.
 ## 0.9.1
 
 - Kronwerke Core 0.7.3: the streamer menu (`/kw menu`, also `/kw invite` without a name) with heads, online dots and a field to invite, and a German `/kw` help with clickable lines.
+
+## 0.10.0
+
+- The Mining Dimension is a flat world 500 blocks deep (bedrock at the bottom, deepslate up to y 160, stone up to y 435), full of ore: 36 ore features from vanilla and the mods, from coal to thorium, spread over the whole depth (`kubejs/data/kronwerke/worldgen`). The build limit there is 512.
+- The Overworld build limit is 608 (`kubejs/data/minecraft/dimension_type/overworld.json`).
+- Compact Machines is out: pocket dimensions cost more performance than they give. Its quests and the room templates are gone.
+- Incendium (eight Nether biomes, structures and bosses) and Nether Depths Upgrade (lava fishing and Nether fish).
+- Origins: the downsides are trades instead of nuisances. No Slowness and no Mining Fatigue anywhere: the Mühlenkind has a heart less and burns twice as hard, the Tiefgräber takes damage in direct sunlight and breaks deepslate in one hit, the Messingblut rusts in water, the Aurakind takes more damage in Nether and End, the Runenträger takes double fall damage, the Chaosgezeichnete is hunted by every monster within 32 blocks.
+- Iron's Spells: the loot spell books are staged like the tier they match (evoker, blaze, druidic, villager, ice, rotten, cursed doll with gold in stage 2; the necronomicon and the archevoker's logbook in stage 3).
+- Default Options sets GUI scale 2, master volume 50 percent and music 5 percent. Core 0.7.4 asks for the language after the first join.
+- Voice chat on UDP 19132.
+- Blocks that survive every explosion: bedrock, end portal frames and portals, reinforced deepslate, the Cataclysm altars and boss respawners (`spawn.blastProof` in the Core config).

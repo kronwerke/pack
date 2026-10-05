@@ -1,7 +1,7 @@
 """Logistics in stage 3, one step per quest: Integrated Dynamics (menril, cables and cards,
 readers, the logic programmer, writers) with Tunnels, Terminals and Crafting; XNet (controller,
 connectors, advanced connectors, logic channels, routers); LaserIO (nodes, item, energy, fluid
-and chemical cards, filters); Compact Machines; Mining Gadgets and its upgrades. None of these
+and chemical cards, filters); Mining Gadgets and its upgrades. None of these
 recipes are changed by Kronwerke except the mining gadget MK3 (links.js). Tier 3 mining gadget upgrades are stage 4 and only named.
 Pipez and Modular Routers live in pipes.py, the overview of all transport in list_transport.py."""
 from ftbq import (chapter, quest, task_item, reward_item, reward_table, reward_xp, banner)
@@ -23,7 +23,7 @@ quests = [
           description=[
               "&6Squeezer:&r Stöcke an den Seiten, ein Eisenblock oben in der Mitte, unten Bretter und ein Eisenbarren. &6Drying Basin:&r Stämme, schwarzer Farbstoff oben und unten, Eisen an den Seiten.",
               "",
-              "Dieses Kapitel sammelt die Mods, die Dinge ohne Rohrsalat bewegen: &6Integrated Dynamics&r (programmierbar), &6XNet&r (alles an einem Controller), &6LaserIO&r (Laser statt Kabel), dazu &6Compact Machines&r und den &6Mining Gadget&r. Die Abschnitte gehen in beliebiger Reihenfolge.",
+              "Dieses Kapitel sammelt die Mods, die Dinge ohne Rohrsalat bewegen: &6Integrated Dynamics&r (programmierbar), &6XNet&r (alles an einem Controller), &6LaserIO&r (Laser statt Kabel), dazu der &6Mining Gadget&r. Die Abschnitte gehen in beliebiger Reihenfolge.",
               "",
               "Einfache Rohre und Router stehen im Kapitel &bRohre und Router&r, ein Überblick über alles im Kapitel &6Checkliste: Transport und Lager&r.",
           ],
@@ -274,31 +274,6 @@ quests = [
           rewards=[reward_item("minecraft:gold_ingot", 8), reward_xp(8)],
           deps=["laser_energy", "laser_fluid"], icon="laserio:overclocker_card", optional=True),
 
-    # ---- Compact Machines ------------------------------------------------------
-    quest("cm_psd", 3, 14, "&dBau ein Personal Shrinking Device",
-          subtitle="Klein genug, um hineinzugehen.",
-          description=[
-              "Acht polierte Tiefenschiefer im Kreis ergeben acht &6Compact Machine Walls&r. &6Atom Shrinking&r und &6Atom Enlarging Module&r: Knöpfe, Enderauge, Wägeplatte, Kolben (klebrig beim Shrinking Module). Beide Module mit Eisen, Kupfer, Glas und Enderauge: das &6PSD&r.",
-              "",
-              "Mit dem PSD betrittst und verlässt du jede Maschine.",
-          ],
-          tasks=[task_item("compactmachines:wall", 16), task_item("compactmachines:personal_shrinking_device", 1)],
-          rewards=[reward_item("minecraft:ender_eye", 4), reward_xp(5)],
-          deps=["welcome"], icon="compactmachines:personal_shrinking_device", size=1.5, shape="hexagon"),
-
-    quest("cm_machine", 5.5, 14, "&dBetritt eine Compact Machine",
-          subtitle="Innen größer als außen.",
-          description=[
-              "Sechs Wände, die beiden Module und ein Kern ergeben eine &6Compact Machine&r. Der Kern bestimmt die Größe: Kupfer 3, Eisen 5, Gold 7, Diamant 9, Obsidian 11, Netherit 13 Blöcke im Würfel. Eine Diamanthacke gibt einen flachen Farmraum mit Gras.",
-              "",
-              "Rechtsklick mit dem PSD, und du stehst drin. Baust du die Maschine ab, bleibt der Raum mit ihr verbunden.",
-              "",
-              "&cWichtig:&r In dieser Version gibt es keine Tunnel. Nichts geht durch die Wände. Ein Raum ist Werkstatt, Lager oder Farm, kein Teil einer Leitung.",
-          ],
-          tasks=[task_item("compactmachines:new_machine", 1)],
-          rewards=[reward_item("compactmachines:wall", 16), reward_table("s3_common"), reward_xp(10)],
-          deps=["cm_psd"], icon="compactmachines:new_machine"),
-
     # ---- Mining Gadgets --------------------------------------------------------
     quest("mg_gadget", 3, 18, "&bBau einen Mining Gadget",
           subtitle="Ein Laser statt einer Spitzhacke.",
@@ -350,9 +325,8 @@ images = [
     head("id", "Integrated Dynamics", 3, -1.6, colour="water"),
     head("xnet", "XNet", 2.4, 4.4, colour="brass"),
     head("laserio", "LaserIO", 2.4, 8.2, colour="fire"),
-    head("compact", "Compact Machines", 2.4, 12.4, colour="magic"),
     head("mining", "Mining Gadgets", 2.4, 16.2, colour="stone"),
 ]
 
 chapter(C, "Logistik", "xnet:controller", "tech", quests, shape="square", order=18, stage=3,
-        subtitle=["Stufe 3: Integrated Dynamics, XNet, LaserIO, Compact Machines und Mining Gadgets."], images=images)
+        subtitle=["Stufe 3: Integrated Dynamics, XNet, LaserIO und Mining Gadgets."], images=images)

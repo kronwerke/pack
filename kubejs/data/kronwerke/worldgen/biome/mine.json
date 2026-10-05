@@ -1,0 +1,117 @@
+{
+  "temperature": 0.5,
+  "downfall": 0.5,
+  "has_precipitation": false,
+  "effects": {
+    "sky_color": 2302755,
+    "fog_color": 1052688,
+    "water_color": 4159204,
+    "water_fog_color": 329011,
+    "mood_sound": {
+      "sound": "minecraft:ambient.cave",
+      "tick_delay": 6000,
+      "block_search_extent": 8,
+      "offset": 2.0
+    }
+  },
+  "spawners": {
+    "monster": [
+      {
+        "type": "minecraft:zombie",
+        "weight": 95,
+        "minCount": 4,
+        "maxCount": 4
+      },
+      {
+        "type": "minecraft:skeleton",
+        "weight": 100,
+        "minCount": 4,
+        "maxCount": 4
+      },
+      {
+        "type": "minecraft:creeper",
+        "weight": 100,
+        "minCount": 4,
+        "maxCount": 4
+      },
+      {
+        "type": "minecraft:spider",
+        "weight": 100,
+        "minCount": 4,
+        "maxCount": 4
+      },
+      {
+        "type": "minecraft:enderman",
+        "weight": 10,
+        "minCount": 1,
+        "maxCount": 4
+      }
+    ],
+    "creature": [],
+    "ambient": [
+      {
+        "type": "minecraft:bat",
+        "weight": 10,
+        "minCount": 8,
+        "maxCount": 8
+      }
+    ],
+    "axolotls": [],
+    "underground_water_creature": [],
+    "water_creature": [],
+    "water_ambient": [],
+    "misc": []
+  },
+  "spawn_costs": {},
+  "features": [
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [
+      "kronwerke:mine_coal",
+      "kronwerke:mine_iron",
+      "kronwerke:mine_copper",
+      "kronwerke:mine_gold",
+      "kronwerke:mine_redstone",
+      "kronwerke:mine_lapis",
+      "kronwerke:mine_diamond",
+      "kronwerke:mine_emerald",
+      "kronwerke:mine_zinc",
+      "kronwerke:mine_osmium",
+      "kronwerke:mine_tin",
+      "kronwerke:mine_lead",
+      "kronwerke:mine_silver",
+      "kronwerke:mine_uranium",
+      "kronwerke:mine_fluorite",
+      "kronwerke:mine_nickel",
+      "kronwerke:mine_aluminum",
+      "kronwerke:mine_uraninite",
+      "kronwerke:mine_inferium",
+      "kronwerke:mine_prosperity",
+      "kronwerke:mine_bort",
+      "kronwerke:mine_sal_ammoniac",
+      "kronwerke:mine_arcane_crystal",
+      "kronwerke:mine_soulstone",
+      "kronwerke:mine_quartz",
+      "kronwerke:mine_dark",
+      "kronwerke:mine_mithril",
+      "kronwerke:mine_boron",
+      "kronwerke:mine_cobalt",
+      "kronwerke:mine_magnesium",
+      "kronwerke:mine_thorium",
+      "kronwerke:mine_lithium",
+      "kronwerke:mine_eidolon_lead",
+      "kronwerke:mine_eidolon_silver",
+      "kronwerke:mine_occultism_silver",
+      "kronwerke:mine_oritech_nickel"
+    ],
+    [],
+    [],
+    [],
+    []
+  ],
+  "carvers": {}
+}

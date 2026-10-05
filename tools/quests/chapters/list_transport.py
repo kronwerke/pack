@@ -740,17 +740,6 @@ quests = [
           rewards=[reward_xp(2)],
           deps=["storage_when"], icon="minecraft:compass"),
 
-    quest("compact", col(5), 22.4, "Lies: Compact Machines",
-          subtitle="Compact Machines, Maschine: ein Raum von 3 bis 13 Blöcken in einem Block.",
-          description=[
-              "&6Compact Machines&r, &6Compact Machine&r: ein Würfelraum von &e3 bis 13 Blöcken&r Kante je nach Kern (Kupfer bis Netherit) in einem Block, betreten mit dem Personal Shrinking Device. &eStufe 3.&r",
-              "",
-              "&cIn dieser Version ohne Tunnel:&r Nichts geht durch die Wände, der Raum ist Werkstatt oder Lager, kein Teil einer Leitung. Siehe Kapitel Logistik.",
-          ],
-          tasks=[task_checkmark("Gelesen")],
-          rewards=[reward_xp(2)],
-          deps=["storage_when"], icon="minecraft:iron_block"),
-
     quest("done", 0, 26, "&6&lAlles verbunden",
           subtitle="Fünfmal gelesen, einmal gebaut.",
           description=[

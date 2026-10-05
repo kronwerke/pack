@@ -1,6 +1,7 @@
 {
-  "type": "neoorigins:persistent_effect",
-  "toggleable": false,
+  "type": "neoorigins:modify_damage",
+  "direction": "in",
+  "multiplier": 1.5,
   "condition": {
     "type": "neoorigins:or",
     "conditions": [
@@ -13,21 +14,5 @@
         "dimension": "minecraft:the_end"
       }
     ]
-  },
-  "effects": [
-    {
-      "effect": "minecraft:weakness",
-      "amplifier": 0,
-      "ambient": true,
-      "show_particles": false,
-      "show_icon": true
-    },
-    {
-      "effect": "minecraft:mining_fatigue",
-      "amplifier": 0,
-      "ambient": true,
-      "show_particles": false,
-      "show_icon": true
-    }
-  ]
+  }
 }

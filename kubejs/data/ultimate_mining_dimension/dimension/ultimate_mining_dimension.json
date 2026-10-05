@@ -1,0 +1,25 @@
+{
+  "type": "ultimate_mining_dimension:ultimate_mining_dimension",
+  "generator": {
+    "type": "minecraft:flat",
+    "settings": {
+      "biome": "kronwerke:mine",
+      "lakes": false,
+      "features": true,
+      "layers": [
+        {
+          "block": "minecraft:bedrock",
+          "height": 1
+        },
+        {
+          "block": "minecraft:deepslate",
+          "height": 224
+        },
+        {
+          "block": "minecraft:stone",
+          "height": 275
+        }
+      ]
+    }
+  }
+}

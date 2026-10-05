@@ -1,6 +1,6 @@
 {
-  "type": "neoorigins:attribute_modifier",
-  "attribute": "minecraft:movement_speed",
-  "amount": -0.1,
-  "operation": "add_multiplied_base"
+  "type": "neoorigins:modify_damage",
+  "direction": "in",
+  "damage_type": "#minecraft:is_fall",
+  "multiplier": 2.0
 }

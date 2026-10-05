@@ -1,36 +1,6 @@
 {
-  "type": "neoorigins:persistent_effect",
-  "toggleable": false,
-  "condition": {
-    "type": "neoorigins:and",
-    "conditions": [
-      {
-        "type": "neoorigins:temperature",
-        "comparison": ">=",
-        "compare_to": 1.5
-      },
-      {
-        "type": "neoorigins:not",
-        "condition": {
-          "type": "neoorigins:in_water"
-        }
-      }
-    ]
-  },
-  "effects": [
-    {
-      "effect": "minecraft:slowness",
-      "amplifier": 0,
-      "ambient": true,
-      "show_particles": false,
-      "show_icon": true
-    },
-    {
-      "effect": "minecraft:hunger",
-      "amplifier": 0,
-      "ambient": true,
-      "show_particles": false,
-      "show_icon": true
-    }
-  ]
+  "type": "neoorigins:attribute_modifier",
+  "attribute": "minecraft:max_health",
+  "amount": -2.0,
+  "operation": "add_value"
 }

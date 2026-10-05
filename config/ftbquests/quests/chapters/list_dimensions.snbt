@@ -298,40 +298,6 @@
 			]
 		}
 		{
-			id: "216669229D03E6F6"
-			x: 2.25d
-			y: 20.150000000000002d
-			icon: {
-				id: "minecraft:polished_deepslate"
-				count: 1
-			}
-			dependencies: [
-				"4C6403D8C1E5AABA"
-			]
-			tasks: [
-				{
-					id: "2CE5CAA73C4A5043"
-					type: "checkmark"
-				}
-			]
-			rewards: [
-				{
-					id: "6420C3E7957BD7D0"
-					type: "item"
-					item: {
-						id: "minecraft:polished_deepslate"
-						count: 1
-					}
-					count: 16
-				}
-				{
-					id: "4BECCEFFC3834C81"
-					type: "xp_levels"
-					xp_levels: 3
-				}
-			]
-		}
-		{
 			id: "7C15F7F39DE06D46"
 			x: 4.5d
 			y: 18.55d
@@ -340,7 +306,7 @@
 				count: 1
 			}
 			dependencies: [
-				"216669229D03E6F6"
+				"606EE253AF4C1C9A"
 			]
 			tasks: [
 				{
@@ -368,7 +334,7 @@
 		{
 			id: "11FC2FD44440810E"
 			x: 0.0d
-			y: 24.95d
+			y: 23.35d
 			icon: {
 				id: "minecraft:ender_pearl"
 				count: 1
@@ -403,7 +369,7 @@
 		{
 			id: "581C3F4B706ED10E"
 			x: 2.25d
-			y: 24.95d
+			y: 23.35d
 			icon: {
 				id: "minecraft:cracked_stone_bricks"
 				count: 1
@@ -437,7 +403,7 @@
 		{
 			id: "174C898FB90A67BB"
 			x: 2.25d
-			y: 26.55d
+			y: 24.950000000000003d
 			icon: {
 				id: "minecraft:glass"
 				count: 1
@@ -471,7 +437,7 @@
 		{
 			id: "592E1500C47B722A"
 			x: 4.5d
-			y: 24.95d
+			y: 23.35d
 			icon: {
 				id: "minecraft:iron_sword"
 				count: 1
@@ -505,7 +471,7 @@
 		{
 			id: "7F3AEE771B0AE0B7"
 			x: 0.0d
-			y: 31.349999999999998d
+			y: 29.75d
 			icon: {
 				id: "waystones:waystone"
 				count: 1
@@ -545,7 +511,7 @@
 		{
 			id: "208EBDB907C592AB"
 			x: 2.25d
-			y: 31.349999999999998d
+			y: 29.75d
 			icon: {
 				id: "waystones:warp_plate"
 				count: 1
@@ -584,7 +550,7 @@
 		{
 			id: "1E70DD338A79C4E3"
 			x: 2.25d
-			y: 33.449999999999996d
+			y: 31.85d
 			icon: {
 				id: "minecraft:obsidian"
 				count: 1
@@ -618,7 +584,7 @@
 		{
 			id: "12071FDFA1DDC340"
 			x: 4.5d
-			y: 31.349999999999998d
+			y: 29.75d
 			icon: {
 				id: "minecraft:rail"
 				count: 1
@@ -652,7 +618,7 @@
 		{
 			id: "2530A228C1123622"
 			x: 2.25d
-			y: 35.55d
+			y: 33.95d
 			icon: {
 				id: "ars_nouveau:sourcestone"
 				count: 1
@@ -686,7 +652,7 @@
 		{
 			id: "6D9190ECBF886CFE"
 			x: 4.5d
-			y: 33.449999999999996d
+			y: 31.85d
 			icon: {
 				id: "minecraft:leather"
 				count: 1
@@ -720,7 +686,7 @@
 		{
 			id: "22D20AE07EF7575D"
 			x: 4.5d
-			y: 35.55d
+			y: 33.95d
 			icon: {
 				id: "minecraft:clock"
 				count: 1
@@ -754,7 +720,7 @@
 		{
 			id: "700F030FDF18CD64"
 			x: 6.75d
-			y: 33.449999999999996d
+			y: 31.85d
 			icon: {
 				id: "minecraft:diamond"
 				count: 1
@@ -788,7 +754,7 @@
 		{
 			id: "3EB7E04048C1259C"
 			x: 9.0d
-			y: 31.349999999999998d
+			y: 29.75d
 			icon: {
 				id: "minecraft:iron_block"
 				count: 1
@@ -822,7 +788,7 @@
 		{
 			id: "484E378E6FC7D9F5"
 			x: 6.75d
-			y: 31.349999999999998d
+			y: 29.75d
 			icon: {
 				id: "minecraft:map"
 				count: 1
@@ -852,7 +818,7 @@
 		{
 			id: "658523ED3531FD1D"
 			x: 0.0d
-			y: 40.849999999999994d
+			y: 39.24999999999999d
 			icon: {
 				id: "minecraft:filled_map"
 				count: 1
@@ -887,7 +853,7 @@
 		{
 			id: "6040DCEC91532345"
 			x: 2.25d
-			y: 40.849999999999994d
+			y: 39.24999999999999d
 			icon: {
 				id: "naturescompass:naturescompass"
 				count: 1
@@ -926,7 +892,7 @@
 		{
 			id: "30F93CDFA1068185"
 			x: 2.25d
-			y: 42.449999999999996d
+			y: 40.849999999999994d
 			icon: {
 				id: "ars_nouveau:dowsing_rod"
 				count: 1
@@ -965,7 +931,7 @@
 		{
 			id: "75E7A2290688BDB6"
 			x: 4.5d
-			y: 40.849999999999994d
+			y: 39.24999999999999d
 			icon: {
 				id: "minecraft:spyglass"
 				count: 1
@@ -999,7 +965,7 @@
 		{
 			id: "41B4CE956EA13CE4"
 			x: 6.75d
-			y: 40.849999999999994d
+			y: 39.24999999999999d
 			icon: {
 				id: "minecraft:compass"
 				count: 1
@@ -1033,7 +999,7 @@
 		{
 			id: "13BDC551D5250B0B"
 			x: 11.75d
-			y: 31.849999999999998d
+			y: 30.25d
 			icon: {
 				id: "waystones:waystone"
 				count: 1
@@ -1124,7 +1090,7 @@
 			id: "21CF1B6B0CC3105F"
 			image: "kronwerke:textures/quests/list_dimensions/s4.png"
 			x: 2.74d
-			y: 23.599999999999998d
+			y: 22.0d
 			width: 6.48d
 			height: 0.9d
 			rotation: 0.0d
@@ -1134,7 +1100,7 @@
 			id: "12B49714267FA78F"
 			image: "kronwerke:textures/quests/list_dimensions/travel.png"
 			x: 0.605d
-			y: 29.999999999999996d
+			y: 28.4d
 			width: 2.21d
 			height: 0.9d
 			rotation: 0.0d
@@ -1144,7 +1110,7 @@
 			id: "4812C5EBD7B4B69E"
 			image: "kronwerke:textures/quests/list_dimensions/map.png"
 			x: 0.5249999999999999d
-			y: 39.5d
+			y: 37.9d
 			width: 2.05d
 			height: 0.9d
 			rotation: 0.0d

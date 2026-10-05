@@ -335,7 +335,7 @@ quests = [
           ],
           tasks=[task_kill("irons_spellbooks:dead_king", 1)],
           rewards=[reward_table("s1_rare"), reward_item("irons_spellbooks:arcane_essence", 32), reward_xp(25)],
-          deps=["catacombs"], icon="irons_spellbooks:necronomicon_spell_book", size=2.0, shape="gear"),
+          deps=["catacombs"], icon="minecraft:wither_skeleton_skull", size=2.0, shape="gear"),
 
     quest("cryomancer", 0, 13.5, "&bErklimm den Mountain Tower",
           subtitle="Eis, Amethyst und eine Karte.",

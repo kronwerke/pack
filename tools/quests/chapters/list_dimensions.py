@@ -125,19 +125,6 @@ quests = [
           rewards=[reward_item("minecraft:lantern", 8), reward_xp(3)],
           deps=["d_undergarden"], icon="minecraft:reinforced_deepslate"),
 
-    quest("d_compact", 8.5, 0, "&dBetritt eine Compact Machine",
-          subtitle="Ein Raum im Würfel. Stufe 3.",
-          description=[
-              "&eDie Wände:&r &e8 Polierter Tiefenschiefer&r im Ring ergeben 8 &6Compact-Machine-Wände&r. Sechs Wände, ein &6Schrumpf-&r und ein &6Vergrößerungsmodul&r und ein Kern in der Mitte ergeben die Maschine.",
-              "&eDer Kern bestimmt die Größe:&r Kupfer 3, Eisen 5, Gold 7, Diamant 9, Obsidian 11, Netherit 13 Blöcke im Würfel.",
-              "&eHinein:&r Rechtsklick mit dem &6Personal Shrinking Device&r (beide Module, Enderauge, Eisen, Kupfer, Glas) auf die Maschine. Damit kommst du auch wieder hinaus.",
-              "",
-              "&eDrüben:&r ein leerer Raum, der keinen Platz in deiner Basis kostet, mit eigenem Spawnpunkt. In dieser Version gibt es keine Tunnel: Items, Flüssigkeiten und Strom gehen nicht durch die Wand. Alles Weitere im Kapitel &6Logistik&r.",
-          ],
-          tasks=[task_checkmark("Verstanden")],
-          rewards=[reward_item("minecraft:polished_deepslate", 16), reward_xp(3)],
-          deps=["d_undergarden"], icon="minecraft:polished_deepslate"),
-
     quest("d_alfheim", 10.5, 0, "&aÖffne das Tor nach Alfheim",
           subtitle="Ein Portal, durch das nur Waren gehen. Stufe 3.",
           description=[
@@ -149,7 +136,7 @@ quests = [
           ],
           tasks=[task_checkmark("Verstanden")],
           rewards=[reward_item("botania:livingwood_log", 8), reward_xp(3)],
-          deps=["d_compact"], icon="botania:livingwood_log"),
+          deps=["d_otherside"], icon="botania:livingwood_log"),
 
     # ---- Stufe 4 -------------------------------------------------------------------
     quest("d_end_event", 4.5, 4, "&5Warte auf das End-Event",

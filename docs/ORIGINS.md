@@ -4,7 +4,7 @@ How Kronwerke uses Neo Origins, and why each choice looks the way it does. Every
 
 ## Principles
 
-Downsides are trades, not nuisances: no Slowness, no Mining Fatigue. A heart less, more damage from one source, a place that hurts. Each one is a sentence the player remembers.
+Downsides are trades, not nuisances: no Slowness, no Mining Fatigue, no damage that ticks by itself. A heart less, more damage from one source or in one place. Each one is a sentence the player remembers.
 
 1. **Fewer, better choices.** Nine origins, seven roles. Each one says in its first sentence where it comes from in Kronwerke and what it is for.
 2. **Every origin has a real downside.** Something a player notices every session, not a footnote. The upsides are sized against it.
@@ -61,7 +61,7 @@ Icon: the Mining Dimension's enchanted pickaxe. Impact: medium. From the tunnels
 | Hauerhand | Breaks pickaxe blocks 25 percent faster. | Speed only. No Fortune, no extra ore, so the ore economy is untouched. |
 | Tiefenschlag | Deepslate, cobbled deepslate, tuff and the deepslate ores break in one hit (`#kronwerke:deepslate_instamine`). | The deep layers of the Mining Dimension are the Tiefgräber's home. |
 | Heimat unter Tage | Haste I in the Mining Dimension. | Ties the origin to a place that opens on day one. |
-| Lichtscheu (downside) | Half a heart every 4 seconds in direct sunlight (not in water). | The Tiefgräber builds under a roof or works at night. A clear price instead of a nagging effect. |
+| Lichtscheu (downside) | 50 percent more damage taken in daylight under open sky. | The Tiefgräber builds under a roof or works at night. No ticking damage, just a worse fight in the sun. |
 
 ### Messingblut (Brassblood)
 
@@ -71,7 +71,8 @@ Icon: Brass Ingot. Impact: medium. Born in the forges of the Messingwerk.
 | --- | --- | --- |
 | Hitzefest | Half damage from everything in `#minecraft:is_fire` (fire, lava, burning). | The Nether pioneer for stage 2: blaze powder feeds brass, and brass is the stage 2 goal. Lava is still deadly, just slower. |
 | Schmiedeglut | Haste I while within 5 blocks of a furnace, blast furnace, smoker, Iron Furnaces furnace, blaze burner or campfire (checked once per second). | Rewards the forge corner of a base. |
-| Rostig (downside) | Half a heart every 2 seconds in water. Rain does nothing. | Boats and bridges instead of swimming. |
+| Leitfähig (downside) | Double damage from magic, spells and lightning (`#minecraft:witch_resistant_to`, lightning). | Brass conducts. Witches, Gaia and spell mobs are the Messingblut's problem. |
+| Schweres Blut (downside) | One heart less. | The forge worker is not a fighter. |
 
 ### Aurakind (Aurachild)
 
@@ -151,8 +152,8 @@ Deliberately not used for roles: the mod's `trade_availability` (villagers resto
 | --- | --- | --- | --- |
 | Kronbürger | low | Regen near friends, less hunger | More hunger outside the Overworld |
 | Mühlenkind | low | Air, swim speed, underwater mining | One heart less, double fire damage |
-| Tiefgräber | medium | Night vision, faster pickaxe, deepslate in one hit, Haste in the Mining Dimension | Sunlight hurts |
-| Messingblut | medium | Half fire damage, Haste at the forge | Water hurts |
+| Tiefgräber | medium | Night vision, faster pickaxe, deepslate in one hit, Haste in the Mining Dimension | 50 percent more damage in daylight |
+| Messingblut | medium | Half fire damage, Haste at the forge | One heart less, double magic damage |
 | Aurakind | medium | Forest healing, poison immunity, Luck | 50 percent more damage in Nether and End |
 | Quellgeborene | medium | +50 mana in Ars Nouveau and Iron's Spells | One heart less, no heavy armor |
 | Runenträger | medium | Armor, magic resistance, knockback resistance | Double fall damage |

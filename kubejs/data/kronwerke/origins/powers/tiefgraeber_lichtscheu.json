@@ -1,5 +1,16 @@
 {
-  "type": "neoorigins:damage_in_daylight",
-  "damage_per_second": 0.25,
-  "ignite": false
+  "type": "neoorigins:modify_damage",
+  "direction": "in",
+  "multiplier": 1.5,
+  "condition": {
+    "type": "neoorigins:and",
+    "conditions": [
+      {
+        "type": "neoorigins:daytime"
+      },
+      {
+        "type": "neoorigins:exposed_to_sky"
+      }
+    ]
+  }
 }

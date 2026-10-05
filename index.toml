@@ -389,6 +389,10 @@ file = "config/ftbquests/quests/reward_tables/s5_rare.snbt"
 hash = "c06b301eda4129fc5df94ed334073c46a65f7f151b74fc64f61f3d62dbcf8fcb"
 
 [[files]]
+file = "config/kronwerke-common.toml"
+hash = "56a08c2ae3e3fc5da0a3448e84d55efae18a57b1983104b0bef49008f712a6bf"
+
+[[files]]
 file = "config/kronwerke/goals.json"
 hash = "0425120de26fd5f165054f2b2697b5202c66a1356433b4a671ea945b6b1eef89"
 
@@ -430,11 +434,11 @@ hash = "5312909b4c3f0c0c4cf031f00cc849b14133623b96fe11a374a2baadf268e554"
 
 [[files]]
 file = "kubejs/assets/kronwerke/lang/de_de.json"
-hash = "14a7a12e2d707cbc9fa5097852b7312571e7cc33abe5d5be812259836c74746f"
+hash = "a0cc89b176a143fbbc28ba89e2967973435cb9d836cb33528960fc118d0f3913"
 
 [[files]]
 file = "kubejs/assets/kronwerke/lang/en_us.json"
-hash = "00c1b718eb4a93d7a4a14c062d1db365d7011524511b6f8ae49e039f935b6304"
+hash = "f21948951e65a90d54e31a2891e26385782b3d47b948d2493eae16f9434b17e9"
 
 [[files]]
 file = "kubejs/assets/kronwerke/textures/item/brass_heart.png"
@@ -2698,7 +2702,7 @@ hash = "dc02b5654e18e37da7a0e616b3b262df44fa67a90ac3b653093f7bcf5f8c9f32"
 
 [[files]]
 file = "kubejs/data/kronwerke/origins/origins/messingblut.json"
-hash = "0e1afae28b8995e65a100519b3e43e4907096d3543ad3abb6271fa4fd0cb506b"
+hash = "77be0e4847376470eb7f7629aa458466c3ce972aac28c52b0a21eae1942d3d47"
 
 [[files]]
 file = "kubejs/data/kronwerke/origins/origins/muehlenkind.json"
@@ -2793,12 +2797,16 @@ file = "kubejs/data/kronwerke/origins/powers/messingblut_hitzefest.json"
 hash = "39151ba5a36afc6d634ca08ae720fb8976ad92f6773be3db4cafc5da9a3946fa"
 
 [[files]]
-file = "kubejs/data/kronwerke/origins/powers/messingblut_rostig.json"
-hash = "e8f46ec02dcf9aba7e28806505a754cad4534c0477514cb3e7f5b1f0fadd6e6b"
+file = "kubejs/data/kronwerke/origins/powers/messingblut_leitfaehig.json"
+hash = "a0d0202c2313ba2b75a2ded3cc7dce8acdb57fdf9d0938904f3041c4fbe5471b"
 
 [[files]]
 file = "kubejs/data/kronwerke/origins/powers/messingblut_schmiedeglut.json"
 hash = "b10ccd10252963a4cf63618e69fca81dfd86e1475add4665443327376aa22d54"
+
+[[files]]
+file = "kubejs/data/kronwerke/origins/powers/messingblut_schwer.json"
+hash = "5489ed1d952b4158357278eac052bfc661107fe2eac6be08ae6938a30cf7dbbd"
 
 [[files]]
 file = "kubejs/data/kronwerke/origins/powers/muehlenkind_flussatem.json"
@@ -2962,7 +2970,7 @@ hash = "abeaca4f27e8a9aea3ed1e4796edef9fd9049260efb59b038832e58a7f39a295"
 
 [[files]]
 file = "kubejs/data/kronwerke/origins/powers/tiefgraeber_lichtscheu.json"
-hash = "fa6ea7992dd1170c421da5bafc9f4d20b4bc52a20efbbd13a820c2f1ba134b27"
+hash = "dc9fb38fba248d5d38a5cb2d60360e998fd8982761d86d0758a3befedcb629fa"
 
 [[files]]
 file = "kubejs/data/kronwerke/origins/powers/tiefgraeber_stollenaugen.json"
@@ -5041,6 +5049,10 @@ file = "kubejs/server_scripts/kronwerke/milestones.js"
 hash = "3fcffdd19cff65f47501fdd3cc4e4bf07f8e84f8f526078ed56a049261e0264c"
 
 [[files]]
+file = "kubejs/server_scripts/kronwerke/obelisk.js"
+hash = "584000faceb796099fddcb3050c262965a4ae8da82645a3df1f1412721150100"
+
+[[files]]
 file = "kubejs/server_scripts/kronwerke/tech.js"
 hash = "d739b3c749faabc2d81b66e8d5a513ec5cb14d94e46a472ef6c9428ac216ff73"
 
@@ -5767,7 +5779,7 @@ metafile = true
 
 [[files]]
 file = "mods/kronwerke-core.pw.toml"
-hash = "041dcb2e262b18aa56d82f5a434aacf6d29823c112722b489a7a6bd7433171f2"
+hash = "ba5187a6e037fbd63e911d1eb7d5c8154bf2cdf106600c4ccac6ec2f8aea1ca5"
 metafile = true
 
 [[files]]

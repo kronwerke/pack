@@ -151,3 +151,7 @@ python3 tools/check_progression.py /path/to/kubejs/exported/kw_recipes.json /pat
 ```
 
 Every goal item must show up as reachable in its stage and nowhere in the leak list before it.
+
+## The obelisk intake
+
+`kronwerke:obelisk_intake` (Zubringer): a hopper over an andesite alloy between cobbled deepslate (`kubejs/server_scripts/kronwerke/obelisk.js`). Machines feed the obelisk through it, credited to the player who placed it. Cheap on purpose: everyone should have one on the first evening.

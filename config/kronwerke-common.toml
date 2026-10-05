@@ -1,0 +1,89 @@
+[slots]
+	#How many whitelist slots a streamer gets by default. Bonus slots are added on top per streamer.
+	# Default: 5
+	# Range: 0 ~ 1000
+	defaultSlots = 5
+	#Turn the vanilla whitelist on when the server starts. Invited players are added to it automatically.
+	enforceWhitelist = true
+	#Allow streamers to invite and revoke players themselves with /kw invite and /kw revoke.
+	streamersManageOwnSlots = true
+
+[goals]
+	#Show the currently active community goal as a boss bar for everyone.
+	showBossBar = true
+	#Announce deposits in chat.
+	broadcastDeposits = true
+	#Only announce deposits of at least this many items.
+	# Default: 64
+	# Range: 1 ~ 1000000
+	broadcastDepositMin = 64
+
+[dimensions]
+	#Dimensions that open with a stage, as dimension=stage. A player without the stage cannot enter; creative players can.
+	locked = ["minecraft:the_nether=kronwerke:stage2", "aether:the_aether=kronwerke:stage2", "undergarden:undergarden=kronwerke:stage3", "deeperdarker:otherside=kronwerke:stage3", "minecraft:the_end=kronwerke:stage4", "eternal_starlight:starlight=kronwerke:stage4", "mahoutsukai:reality_marble=kronwerke:stage4"]
+
+[obelisk]
+	#The zone around the obelisk's core, in blocks: intakes work there, and inside the spawn protection anyone may place and take back their own hoppers, pipes and belts there.
+	# Default: 8
+	# Range: 1 ~ 32
+	feederRadius = 8
+	#How many feeders one player can have.
+	# Default: 2
+	# Range: 0 ~ 64
+	feedersPerPlayer = 2
+	#Empty the feeders into the active goal every this many seconds.
+	# Default: 2
+	# Range: 1 ~ 600
+	feederInterval = 2
+	#Old behaviour: any container placed next to the obelisk becomes a feeder. Off, the intake block is the only way in for machines.
+	containerFeeders = false
+
+[scaling]
+	#The base amounts in goals.json assume this many active players.
+	# Default: 30
+	# Range: 1 ~ 1000
+	basePlayers = 30
+	#Look back this many days when counting active players.
+	# Default: 7
+	# Range: 1 ~ 60
+	days = 7
+	#A player counts as active with at least this many hours in the window.
+	# Default: 1.0
+	# Range: 0.0 ~ 1000.0
+	minHours = 1.0
+	#Lowest factor a goal can be scaled to.
+	# Default: 0.4
+	# Range: 0.01 ~ 10.0
+	minFactor = 0.4
+	#Highest factor a goal can be scaled to.
+	# Default: 1.5
+	# Range: 0.01 ~ 10.0
+	maxFactor = 1.5
+
+[privacy]
+	#Delete old server logs (logs/*.log.gz, with names and addresses of players) after this many days, checked at every start. 0 keeps them.
+	# Default: 30
+	# Range: 0 ~ 3650
+	logDays = 30
+
+[testing]
+	#Register /kw test, which creates server side test players. Only for test servers, never in a season.
+	testCommands = false
+
+[join]
+	#Items every player gets once, on the first join, as item or item*count.
+	kit = ["waystones:waystone", "waystones:warp_dust*4"]
+
+[spawn]
+	#Half the side of the protected square around the overworld spawn, in blocks. 0 turns the protection off. Operators and creative players build freely; containers next to the obelisk stay allowed for feeders.
+	# Default: 96
+	# Range: 0 ~ 2048
+	radius = 96
+	#Blocks no explosion removes, anywhere: block ids, or a namespace prefix ending in *. Bedrock, end portal frames, end portals and gateways and reinforced deepslate are always kept.
+	blastProof = ["cataclysm:altar_of_*", "cataclysm:boss_respawner", "cataclysm:*spawner*"]
+
+[tab]
+	#Players shown with the owner rank. Operators get admin, players with whitelist slots streamer, everyone else member.
+	owners = ["Elchi_Sam"]
+	#The second line of the tab list header.
+	line = "ein Projekt von Elchi Studios"

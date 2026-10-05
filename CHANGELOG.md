@@ -144,3 +144,9 @@ Needs a new world: the stage files, the quest ids and the goal data changed.
 - Kronwerke Core 0.8.0: the obelisk is a build ten blocks tall with a beacon style beam (`/kw admin obelisk build`), machines feed it through the intake block (`kronwerke:obelisk_intake`, recipe in `kubejs/server_scripts/kronwerke/obelisk.js`), the zone around it (8 blocks) is open for pipes inside the spawn protection. The Core config ships in `config/kronwerke-common.toml`.
 - Voice chat on UDP 19132.
 - Blocks that survive every explosion: bedrock, end portal frames and portals, reinforced deepslate, the Cataclysm altars and boss respawners (`spawn.blastProof` in the Core config).
+
+## 0.10.1
+
+- Loot crates work: the reward tables carried the crate under the wrong key, so a quest's crate opened to nothing. A crate now gives three rolls (rare: two) of its table.
+- Trims: Elytra Trims, More Armor Trims (13 new patterns), Tool Trims (weapons and tools on the smithing table) and Trims Expanded (more materials, glow ink among them).
+- Kronwerke Core 0.8.1: `/kw` opens the hub with the goals and buttons, `/kw team` the team screen for slots and moving players between streamers.

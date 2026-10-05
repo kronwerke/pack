@@ -4,7 +4,7 @@
 		id: "ftbquests:lootcrate"
 		count: 1
 	}
-	loot_size: 1
+	loot_size: 3
 	order_index: 0
 	rewards: [
 		{
@@ -131,4 +131,15 @@
 			random_bonus: 4
 		}
 	]
+	loot_crate: {
+		string_id: "s1_common"
+		item_name: "Steinkiste"
+		color: 10329501
+		glow: false
+		drops: {
+			passive: 0
+			monster: 0
+			boss: 0
+		}
+	}
 }

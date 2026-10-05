@@ -4,7 +4,7 @@
 		id: "ftbquests:lootcrate"
 		count: 1
 	}
-	loot_size: 1
+	loot_size: 2
 	order_index: 2
 	rewards: [
 		{
@@ -106,4 +106,15 @@
 			weight: 1.0f
 		}
 	]
+	loot_crate: {
+		string_id: "s1_rare"
+		item_name: "Goldkiste"
+		color: 13935178
+		glow: true
+		drops: {
+			passive: 0
+			monster: 0
+			boss: 0
+		}
+	}
 }

@@ -4,7 +4,7 @@
 		id: "ftbquests:lootcrate"
 		count: 1
 	}
-	loot_size: 1
+	loot_size: 3
 	order_index: 3
 	rewards: [
 		{
@@ -125,4 +125,15 @@
 			random_bonus: 8
 		}
 	]
+	loot_crate: {
+		string_id: "s2_common"
+		item_name: "Messingkiste"
+		color: 10329501
+		glow: false
+		drops: {
+			passive: 0
+			monster: 0
+			boss: 0
+		}
+	}
 }

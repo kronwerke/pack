@@ -321,8 +321,13 @@ def write(out_dir, pack_icon="create:large_cogwheel", assets_dir=None):
             if len(e) > 3:
                 r["random_bonus"] = int(e[3])
             rewards.append(r)
+        # the crate itself: without this block the "loot" reward hands out a crate that opens to nothing
+        colours = {"common": 0x9d9d9d, "uncommon": 0x4a9bd4, "rare": 0xd4a24a}
+        kind = name.split("_")[-1]
         out = {"id": qid("table", name), "icon": item(tbl["icon"]),
-               "loot_size": tbl["loot_size"], "order_index": i, "rewards": rewards}
+               "loot_size": tbl["loot_size"], "order_index": i, "rewards": rewards,
+               "loot_crate": {"string_id": name, "item_name": tbl["title"], "color": colours.get(kind, 0xffffff),
+                             "glow": kind == "rare", "drops": {"passive": 0, "monster": 0, "boss": 0}}}
         with open(os.path.join(qdir, "reward_tables", name + ".snbt"), "w") as f:
             f.write(_s(out) + "\n")
 

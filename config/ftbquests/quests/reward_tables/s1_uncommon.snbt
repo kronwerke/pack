@@ -4,7 +4,7 @@
 		id: "ftbquests:lootcrate"
 		count: 1
 	}
-	loot_size: 1
+	loot_size: 3
 	order_index: 1
 	rewards: [
 		{
@@ -128,4 +128,15 @@
 			random_bonus: 4
 		}
 	]
+	loot_crate: {
+		string_id: "s1_uncommon"
+		item_name: "Eisenkiste"
+		color: 4889556
+		glow: false
+		drops: {
+			passive: 0
+			monster: 0
+			boss: 0
+		}
+	}
 }

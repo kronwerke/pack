@@ -13,8 +13,10 @@ group("lists", "Checklisten")
 
 # ---- Stage 1: Steinwerk ---------------------------------------------------
 # Weights are relative inside one table. The fourth value is a random bonus on the count.
+# loot_size is how many rolls one crate gives: three for common and uncommon, two for rare,
+# so a crate is worth opening and not one stack of iron.
 
-loot_table("s1_common", "Steinkiste", stage=1, entries=[
+loot_table("s1_common", "Steinkiste", stage=1, loot_size=3, entries=[
     ("minecraft:iron_ingot", 8, 10, 8),
     ("minecraft:copper_ingot", 12, 10, 12),
     ("minecraft:coal", 16, 10, 16),
@@ -31,7 +33,7 @@ loot_table("s1_common", "Steinkiste", stage=1, entries=[
     ("waystones:warp_dust", 4, 3, 4),
 ])
 
-loot_table("s1_uncommon", "Eisenkiste", stage=1, entries=[
+loot_table("s1_uncommon", "Eisenkiste", stage=1, loot_size=3, entries=[
     ("minecraft:iron_block", 2, 10, 2),
     ("minecraft:gold_ingot", 8, 8, 8),
     ("minecraft:diamond", 2, 6, 2),
@@ -48,7 +50,7 @@ loot_table("s1_uncommon", "Eisenkiste", stage=1, entries=[
     ("apotheosis:gem_dust", 4, 3, 4),
 ])
 
-loot_table("s1_rare", "Goldkiste", stage=1, entries=[
+loot_table("s1_rare", "Goldkiste", stage=1, loot_size=2, entries=[
     ("minecraft:diamond", 8, 8, 8),
     ("minecraft:diamond_block", 1, 4),
     ("minecraft:emerald_block", 2, 5),
@@ -65,7 +67,7 @@ loot_table("s1_rare", "Goldkiste", stage=1, entries=[
 
 # ---- Stage 2: Messingwerk -------------------------------------------------
 
-loot_table("s2_common", "Messingkiste", stage=2, entries=[
+loot_table("s2_common", "Messingkiste", stage=2, loot_size=3, entries=[
     ("create:brass_ingot", 8, 10, 8),
     ("create:zinc_ingot", 12, 10, 12),
     ("mekanism:ingot_osmium", 8, 8, 8),
@@ -81,7 +83,7 @@ loot_table("s2_common", "Messingkiste", stage=2, entries=[
     ("minecraft:cooked_beef", 8, 6, 8),
 ])
 
-loot_table("s2_uncommon", "Stahlkiste", stage=2, entries=[
+loot_table("s2_uncommon", "Stahlkiste", stage=2, loot_size=3, entries=[
     ("mekanism:ingot_steel", 8, 10, 8),
     ("mekanism:basic_control_circuit", 4, 8, 4),
     ("create:brass_casing", 8, 8, 8),
@@ -96,7 +98,7 @@ loot_table("s2_uncommon", "Stahlkiste", stage=2, entries=[
     ("minecraft:experience_bottle", 16, 6, 16),
 ])
 
-loot_table("s2_rare", "Terrastahlkiste", stage=2, entries=[
+loot_table("s2_rare", "Terrastahlkiste", stage=2, loot_size=2, entries=[
     ("botania:terrasteel_ingot", 1, 6),
     ("create:precision_mechanism", 4, 8, 4),
     ("mekanism:basic_energy_cube", 1, 5),
@@ -112,7 +114,7 @@ loot_table("s2_rare", "Terrastahlkiste", stage=2, entries=[
 
 # ---- Stage 3: Stahlwerk ---------------------------------------------------
 
-loot_table("s3_common", "Werkskiste", stage=3, entries=[
+loot_table("s3_common", "Werkskiste", stage=3, loot_size=3, entries=[
     ("mekanism:ingot_steel", 16, 10, 16),
     ("mekanism:alloy_infused", 8, 8, 8),
     ("ae2:certus_quartz_crystal", 16, 8, 16),
@@ -127,7 +129,7 @@ loot_table("s3_common", "Werkskiste", stage=3, entries=[
     ("undergarden:cloggrum_ingot", 4, 4, 4),
 ])
 
-loot_table("s3_uncommon", "Elementiumkiste", stage=3, entries=[
+loot_table("s3_uncommon", "Elementiumkiste", stage=3, loot_size=3, entries=[
     ("mekanism:alloy_reinforced", 4, 8, 4),
     ("mekanism:advanced_control_circuit", 2, 8, 2),
     ("mekanism:ingot_refined_obsidian", 4, 6, 4),
@@ -142,7 +144,7 @@ loot_table("s3_uncommon", "Elementiumkiste", stage=3, entries=[
     ("theurgy:alchemical_sulfur_iron", 4, 4, 4),
 ])
 
-loot_table("s3_rare", "Elfenkiste", stage=3, entries=[
+loot_table("s3_rare", "Elfenkiste", stage=3, loot_size=2, entries=[
     ("ae2:cell_component_16k", 1, 6),
     ("ae2:cell_component_4k", 2, 8),
     ("mekanism:teleportation_core", 1, 4),
@@ -159,7 +161,7 @@ loot_table("s3_rare", "Elfenkiste", stage=3, entries=[
 
 # ---- Stage 4: Sternwerk ---------------------------------------------------
 
-loot_table("s4_common", "Sternkiste", stage=4, entries=[
+loot_table("s4_common", "Sternkiste", stage=4, loot_size=3, entries=[
     ("draconicevolution:draconium_ingot", 4, 10, 4),
     ("mekanism:alloy_atomic", 4, 8, 4),
     ("mekanism:ingot_refined_obsidian", 8, 8, 8),
@@ -172,7 +174,7 @@ loot_table("s4_common", "Sternkiste", stage=4, entries=[
     ("minecraft:experience_bottle", 32, 5, 32),
 ])
 
-loot_table("s4_uncommon", "Drachenkiste", stage=4, entries=[
+loot_table("s4_uncommon", "Drachenkiste", stage=4, loot_size=3, entries=[
     ("mekanism:elite_control_circuit", 2, 8, 2),
     ("draconicevolution:draconium_core", 1, 6),
     ("ae2:cell_component_64k", 1, 6),
@@ -183,7 +185,7 @@ loot_table("s4_uncommon", "Drachenkiste", stage=4, entries=[
     ("minecraft:netherite_ingot", 1, 3),
 ])
 
-loot_table("s4_rare", "Gaiakiste", stage=4, entries=[
+loot_table("s4_rare", "Gaiakiste", stage=4, loot_size=2, entries=[
     ("mekanism:ultimate_control_circuit", 1, 5),
     ("draconicevolution:wyvern_core", 1, 5),
     ("botania:gaia_spirit", 1, 4),
@@ -195,7 +197,7 @@ loot_table("s4_rare", "Gaiakiste", stage=4, entries=[
 
 # ---- Stage 5: Chaoswerk ---------------------------------------------------
 
-loot_table("s5_common", "Chaoskiste", stage=5, entries=[
+loot_table("s5_common", "Chaoskiste", stage=5, loot_size=3, entries=[
     ("draconicevolution:draconium_ingot", 8, 10, 8),
     ("mekanism:elite_control_circuit", 4, 8, 4),
     ("mekanism:pellet_polonium", 2, 5, 2),
@@ -204,7 +206,7 @@ loot_table("s5_common", "Chaoskiste", stage=5, entries=[
     ("minecraft:experience_bottle", 64, 6, 32),
 ])
 
-loot_table("s5_rare", "Erwachte Kiste", stage=5, entries=[
+loot_table("s5_rare", "Erwachte Kiste", stage=5, loot_size=2, entries=[
     ("draconicevolution:awakened_draconium_ingot", 2, 8, 2),
     ("draconicevolution:awakened_core", 1, 5),
     ("botania:gaia_ingot", 1, 5),

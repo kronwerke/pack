@@ -4,7 +4,7 @@
 		id: "ftbquests:lootcrate"
 		count: 1
 	}
-	loot_size: 1
+	loot_size: 2
 	order_index: 8
 	rewards: [
 		{
@@ -110,4 +110,15 @@
 			weight: 2.0f
 		}
 	]
+	loot_crate: {
+		string_id: "s3_rare"
+		item_name: "Elfenkiste"
+		color: 13935178
+		glow: true
+		drops: {
+			passive: 0
+			monster: 0
+			boss: 0
+		}
+	}
 }

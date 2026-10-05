@@ -4,7 +4,7 @@
 		id: "ftbquests:lootcrate"
 		count: 1
 	}
-	loot_size: 1
+	loot_size: 3
 	order_index: 10
 	rewards: [
 		{
@@ -75,4 +75,15 @@
 			weight: 3.0f
 		}
 	]
+	loot_crate: {
+		string_id: "s4_uncommon"
+		item_name: "Drachenkiste"
+		color: 4889556
+		glow: false
+		drops: {
+			passive: 0
+			monster: 0
+			boss: 0
+		}
+	}
 }

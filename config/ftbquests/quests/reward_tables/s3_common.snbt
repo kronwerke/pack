@@ -4,7 +4,7 @@
 		id: "ftbquests:lootcrate"
 		count: 1
 	}
-	loot_size: 1
+	loot_size: 3
 	order_index: 6
 	rewards: [
 		{
@@ -116,4 +116,15 @@
 			random_bonus: 4
 		}
 	]
+	loot_crate: {
+		string_id: "s3_common"
+		item_name: "Werkskiste"
+		color: 10329501
+		glow: false
+		drops: {
+			passive: 0
+			monster: 0
+			boss: 0
+		}
+	}
 }

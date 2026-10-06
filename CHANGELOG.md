@@ -189,3 +189,7 @@ Needs a new world: the stage files, the quest ids and the goal data changed.
 ## 0.11.5
 
 - Kronwerke Core 0.13.1: the obelisk's own sounds (hum, riser, tear, fanfare), the personal ledger by sneaking with an empty hand, the item flying into the trunk on a hand deposit, the awakening title when the hold is lifted, a third rune band at the third stage.
+
+## 0.11.6
+
+- Kronwerke Core 0.13.2: the rite tears the sky first and the beam comes out of the tear, the burst runs in slow motion with a flash, the crystal leans towards whoever comes close, `bossBarRadius` in the config.

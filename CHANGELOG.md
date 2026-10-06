@@ -214,3 +214,7 @@ Needs a new world: the stage files, the quest ids and the goal data changed.
 ## 0.11.11
 
 - Kronwerke Core 0.15.1: the obelisk notices the players (gaze flare and whisper, crowd chord, whispers about the pillar furthest behind), the arch stone drawn again.
+
+## 0.11.12
+
+- Kronwerke Core 0.15.2: the gift flies from the hand to the crystal, the amount rises from it, a ring of light runs over the pavement.

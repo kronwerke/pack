@@ -222,3 +222,7 @@ Needs a new world: the stage files, the quest ids and the goal data changed.
 ## 0.11.13
 
 - Kronwerke Core 0.15.3: the sleeping stone puts its lights out, the first gift after a day of sleep wakes them ring by ring; `/kw admin obelisk sleep` for previews.
+
+## 0.11.14
+
+- Kronwerke Core 0.15.4: gauges above the pedestals show each pillar as a column of light, the weakest one flickering.

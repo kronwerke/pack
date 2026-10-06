@@ -197,3 +197,7 @@ Needs a new world: the stage files, the quest ids and the goal data changed.
 ## 0.11.7
 
 - Kronwerke Core 0.13.3: ambient particles on every tier block, a shard that visits the pedestals every few minutes, `tier` and `slumbering` in the season json.
+
+## 0.11.8
+
+- Kronwerke Core 0.14.0: the obelisk seen from far away (signal into the sky, rune rings on the pavement, the rite beam across the map), a fuller torn sky with two star bands and six planets.

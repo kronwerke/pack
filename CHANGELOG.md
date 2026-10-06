@@ -210,3 +210,7 @@ Needs a new world: the stage files, the quest ids and the goal data changed.
 
 - Kronwerke Core 0.15.0: paving, flagstone and shard blocks for the grounds, the masonry textures drawn again.
 - The connected textures of the plinth and the trunk carry detail inside the surface now: slabs with a grout cross on top of the plinth, two courses on its sides, chisel marks on the trunk.
+
+## 0.11.11
+
+- Kronwerke Core 0.15.1: the obelisk notices the players (gaze flare and whisper, crowd chord, whispers about the pillar furthest behind), the arch stone drawn again.

@@ -176,3 +176,8 @@ Needs a new world: the stage files, the quest ids and the goal data changed.
 
 - Kronwerke Core 0.10.0: every screen on one frame with a brass border, tooltips and a grow-in; the hub with the stages as a path of rings and the selected stage with icons, counts and bars; the admin panel with a tab rail and player heads; the whitelist screen and the language question in the same look.
 - The test world no longer summons the Draconic guardian crystal or a dragon in automatic scenes; such scenes get a note instead.
+
+## 0.11.3
+
+- Kronwerke Core 0.11.0: the crystal floats and turns above the obelisk with three shards circling it, coloured by the goal (cyan to gold as it fills, purple on hold, gold when done) and flaring on every deposit; animated rune bands, glowing motes and sparks.
+- Connected textures for the obelisk through Athena: the steps of the plinth read as one slab each with a brass rim, the trunk as one monolith with a brass seam only at its outline. The tiles come from `tools/textures/ctm.py`; the models are written by a client script into KubeJS's last virtual pack, since `kubejs/assets` sits below the mods in the resource pack order and cannot override a mod's model.

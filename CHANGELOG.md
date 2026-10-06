@@ -185,3 +185,7 @@ Needs a new world: the stage files, the quest ids and the goal data changed.
 ## 0.11.4
 
 - Kronwerke Core 0.13.0: the obelisk grows a tier with every completed stage (its own glowing blocks), the completion rite with the sky torn open into a galaxy for everyone, the great beam, shockwave and veil shaders, deposits answered by size, hum, slumber, daily streaks, rune particles, fog by tier, aurora and half gravity on the plinth from the fourth stage. `/kw admin obelisk rite` rehearses the rite, `/kw admin obelisk tier <n>` previews a tier.
+
+## 0.11.5
+
+- Kronwerke Core 0.13.1: the obelisk's own sounds (hum, riser, tear, fanfare), the personal ledger by sneaking with an empty hand, the item flying into the trunk on a hand deposit, the awakening title when the hold is lifted, a third rune band at the third stage.

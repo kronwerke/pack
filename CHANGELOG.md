@@ -181,3 +181,7 @@ Needs a new world: the stage files, the quest ids and the goal data changed.
 
 - Kronwerke Core 0.11.0: the crystal floats and turns above the obelisk with three shards circling it, coloured by the goal (cyan to gold as it fills, purple on hold, gold when done) and flaring on every deposit; animated rune bands, glowing motes and sparks.
 - Connected textures for the obelisk through Athena: the steps of the plinth read as one slab each with a brass rim, the trunk as one monolith with a brass seam only at its outline. The tiles come from `tools/textures/ctm.py`; the models are written by a client script into KubeJS's last virtual pack, since `kubejs/assets` sits below the mods in the resource pack order and cannot override a mod's model.
+
+## 0.11.4
+
+- Kronwerke Core 0.13.0: the obelisk grows a tier with every completed stage (its own glowing blocks), the completion rite with the sky torn open into a galaxy for everyone, the great beam, shockwave and veil shaders, deposits answered by size, hum, slumber, daily streaks, rune particles, fog by tier, aurora and half gravity on the plinth from the fourth stage. `/kw admin obelisk rite` rehearses the rite, `/kw admin obelisk tier <n>` previews a tier.

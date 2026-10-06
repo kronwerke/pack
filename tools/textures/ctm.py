@@ -42,6 +42,38 @@ def stone(seed, base=SLATE, amount=4):
     return im
 
 
+def detail(im, kind, seed):
+    """What the inside of a surface shows, so a nine block slab is not nine blocks of noise:
+    the top of the plinth is laid in slabs with a grout cross, its sides run in two courses,
+    the trunk carries a few chisel marks. Every tile of a set gets the same pattern, so the
+    quarters Athena picks always join."""
+    rnd = random.Random(seed)
+    px = im.load()
+
+    def shade(x, y, t):
+        c = px[x, y][:3]
+        px[x, y] = tuple(max(0, min(255, round(c[i] + t))) for i in range(3)) + (255,)
+
+    if kind == "slabs":
+        for i in range(16):
+            shade(7, i, -14)
+            shade(i, 7, -14)
+            if i != 7:
+                shade(8, i, 6)
+                shade(i, 8, 6)
+    elif kind == "courses":
+        for i in range(16):
+            shade(i, 5, 7)
+            shade(i, 6, -12)
+            shade(i, 11, 7)
+            shade(i, 12, -12)
+    for _ in range(4 if kind == "chisel" else 2):
+        x, y = rnd.randint(1, 13), rnd.randint(1, 13)
+        shade(x, y, 9)
+        shade(x + 1, y + 1, -12)
+    return im
+
+
 def edges(im, top, bottom, left, right, trim):
     """Draws the edge treatment on the sides that are open: a brass line with a dark seam."""
     d = ImageDraw.Draw(im)
@@ -84,14 +116,14 @@ def edges(im, top, bottom, left, right, trim):
     return im
 
 
-def tile_set(folder, seed, base, trim):
+def tile_set(folder, seed, base, trim, kind):
     """empty, horizontal, vertical, center for one surface."""
     out = os.path.join(ASSETS, "textures", "block", "ctm", folder)
     os.makedirs(out, exist_ok=True)
-    edges(stone(seed, base), True, True, True, True, trim).save(os.path.join(out, "center.png"))
-    edges(stone(seed + 1, base), True, True, False, False, trim).save(os.path.join(out, "horizontal.png"))
-    edges(stone(seed + 2, base), False, False, True, True, trim).save(os.path.join(out, "vertical.png"))
-    edges(stone(seed + 3, base), False, False, False, False, trim).save(os.path.join(out, "empty.png"))
+    edges(detail(stone(seed, base), kind, seed), True, True, True, True, trim).save(os.path.join(out, "center.png"))
+    edges(detail(stone(seed + 1, base), kind, seed + 1), True, True, False, False, trim).save(os.path.join(out, "horizontal.png"))
+    edges(detail(stone(seed + 2, base), kind, seed + 2), False, False, True, True, trim).save(os.path.join(out, "vertical.png"))
+    edges(detail(stone(seed + 3, base), kind, seed + 3), False, False, False, False, trim).save(os.path.join(out, "empty.png"))
     return "kronwerke:block/ctm/" + folder
 
 
@@ -129,9 +161,9 @@ def write_script():
 
 
 if __name__ == "__main__":
-    plinth_top = tile_set("plinth_top", 10, SLATE, "brass")
-    plinth_side = tile_set("plinth_side", 20, SLATE_DARK, "plain")
-    trunk = tile_set("trunk", 30, SLATE, "brass")
+    plinth_top = tile_set("plinth_top", 10, SLATE, "brass", "slabs")
+    plinth_side = tile_set("plinth_side", 20, SLATE_DARK, "plain", "courses")
+    trunk = tile_set("trunk", 30, SLATE, "brass", "chisel")
     model("obelisk_plinth", "kronwerke:block/obelisk_plinth_top", {"up": plinth_top, "down": plinth_side, "default": plinth_side})
     model("obelisk_trunk", "kronwerke:block/obelisk_trunk", {"default": trunk})
     write_script()

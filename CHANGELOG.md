@@ -205,3 +205,8 @@ Needs a new world: the stage files, the quest ids and the goal data changed.
 ## 0.11.9
 
 - Kronwerke Core 0.14.1: the thin sky above the obelisk between rites, the pylons firing into the crystal during the intake, cracks of light at the burst.
+
+## 0.11.10
+
+- Kronwerke Core 0.15.0: paving, flagstone and shard blocks for the grounds, the masonry textures drawn again.
+- The connected textures of the plinth and the trunk carry detail inside the surface now: slabs with a grout cross on top of the plinth, two courses on its sides, chisel marks on the trunk.

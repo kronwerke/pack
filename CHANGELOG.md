@@ -226,3 +226,7 @@ Needs a new world: the stage files, the quest ids and the goal data changed.
 ## 0.11.14
 
 - Kronwerke Core 0.15.4: gauges above the pedestals show each pillar as a column of light, the weakest one flickering.
+
+## 0.11.15
+
+- Kronwerke Core 0.15.5: the champion of each pillar on its pedestal as a head, the gauge as a hollow column.

@@ -256,3 +256,7 @@ Needs a new world: the stage files, the quest ids and the goal data changed.
 ## 0.11.21
 
 - The quests name the reset time of the mining world: every three days at 4:45.
+
+## 0.11.22
+
+- Kronwerke Core 0.19.0: the mods' wireless things work between the main world and the mining world. Quantum Entangloporters, AE2 quantum bridges (main's ME storage as a drive in the mining world), Flux Networks, Powah's ender channels, and one FTB quest book for both worlds.

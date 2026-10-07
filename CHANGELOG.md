@@ -234,3 +234,7 @@ Needs a new world: the stage files, the quest ids and the goal data changed.
 ## 0.11.16
 
 - Kronwerke Core 0.15.6: the clouds at 448 across the whole sky, a fewer-flashes setting.
+
+## 0.11.17
+
+- Kronwerke Core 0.16.0: the rite in five acts (vortex of ground blocks, players lifted, the obelisk breaking apart and rejoining, arcs of light), the obelisk's own beam shader, the galaxy under shader packs.

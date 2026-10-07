@@ -242,3 +242,7 @@ Needs a new world: the stage files, the quest ids and the goal data changed.
 ## 0.11.18
 
 - Kronwerke Core 0.16.1: the roster of streamers and slots for the web console, plain names in deposits, a calmer lift in the rite.
+
+## 0.11.19
+
+- Kronwerke Core 0.17.0: chat, joins and the tab list across the servers of the network, side worlds like the mining world without obelisk, season and slots.

@@ -46,7 +46,7 @@ quests = [
           description=[
               "Sammle &664 Zinkbarren&r und &6128 Kupferbarren&r. Jeder Messingbarren kostet zwei Kupfer und ein Zink.",
               pic("create:zinc_ingot"),
-              "Die Mining Dimension ist dafür ideal, dort bleibt die Landschaft um die Basen heil. Wer nur Zink hortet, steht am Mixer mit leerer Kupferkiste da.",
+              "Die Minenwelt ist dafür ideal, dort bleibt die Landschaft um die Basen heil. Wer nur Zink hortet, steht am Mixer mit leerer Kupferkiste da.",
           ],
           tasks=[task_item("create:zinc_ingot", 64), task_item("minecraft:copper_ingot", 128)],
           rewards=[reward_item("create:raw_zinc", 32), reward_xp(3)],

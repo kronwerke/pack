@@ -503,7 +503,7 @@
 			x: 0.25d
 			y: 21.560000000000002d
 			icon: {
-				id: "ultimate_mining_dimension:ultimate_mining_dimension"
+				id: "kronwerke:grubenrahmen"
 				count: 1
 			}
 			size: 1.5d
@@ -516,10 +516,10 @@
 					id: "17B4C030ACBCD69E"
 					type: "item"
 					item: {
-						id: "ultimate_mining_dimension:ultimate_mining_dimension"
+						id: "kronwerke:grubenrahmen"
 						count: 1
 					}
-					count: 1
+					count: 10
 				}
 			]
 			rewards: [
@@ -539,7 +539,7 @@
 			x: 2.75d
 			y: 21.310000000000002d
 			icon: {
-				id: "minecraft:iron_block"
+				id: "ars_nouveau:source_gem"
 				count: 1
 			}
 			dependencies: [
@@ -550,10 +550,10 @@
 					id: "4CDA839E9BAF84E9"
 					type: "item"
 					item: {
-						id: "minecraft:iron_block"
+						id: "ars_nouveau:source_gem"
 						count: 1
 					}
-					count: 10
+					count: 1
 				}
 			]
 			rewards: [
@@ -584,8 +584,9 @@
 			tasks: [
 				{
 					id: "2A36D30002824A23"
-					type: "dimension"
-					dimension: "ultimate_mining_dimension:ultimate_mining_dimension"
+					type: "advancement"
+					advancement: "kronwerke:minenwelt"
+					criterion: ""
 				}
 			]
 			rewards: [
@@ -1622,9 +1623,9 @@
 		{
 			id: "12E9BCAD1CED3B97"
 			image: "kronwerke:textures/quests/exploration/mine.png"
-			x: 2.23d
+			x: 1.42d
 			y: 19.96d
-			width: 5.46d
+			width: 3.84d
 			height: 0.9d
 			rotation: 0.0d
 			order: 1

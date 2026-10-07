@@ -1,6 +1,6 @@
 """Exploration in stage 1: the map and Nature's Compass, villages and bounties, waystones and their
-items, the Ultimate Mining Dimension (kubejs/server_scripts/mining_dimension.js, the dimension
-type from the jar), and a checklist of the overworld structures of the pack: Lootr, Artifacts
+items, the mining world (a server of its own: the Grubenrahmen portal of Kronwerke Core,
+kubejs/server_scripts/grubenrahmen.js, reset every three days), and a checklist of the overworld structures of the pack: Lootr, Artifacts
 campsites and mimics, the YUNG's mods, Towns and Towers, Dungeons and Taverns (with the quest
 trader of the taverns), When Dungeons Arise, Formations Overworld and Explorify. Bosses point to
 bosses.py, affix gear to apotheosis.py, the other dimensions to list_dimensions.py and their own
@@ -9,7 +9,8 @@ from ftbq import (chapter, quest, task_item, task_checkmark, task_dimension, tas
                   reward_item, reward_table, reward_xp, banner, img, item_texture)
 
 C = "exploration"
-MINING = "ultimate_mining_dimension:ultimate_mining_dimension"
+FRAME = "kronwerke:grubenrahmen"
+MINING_ADV = "kronwerke:minenwelt"
 
 
 def pic(item_id, size=32):
@@ -20,7 +21,7 @@ quests = [
     quest("welcome", 0, 0, "&6&lZieh los und erkunde",
           subtitle="Die Welt ist größer und seltsamer als in Vanilla.",
           description=[
-              "Hak ab und zieh los. Die Quests hier zeigen dir, wie du dich zurechtfindest, schnell reist, in der Minendimension gräbst und was in den Bauwerken wartet.",
+              "Hak ab und zieh los. Die Quests hier zeigen dir, wie du dich zurechtfindest, schnell reist, in der Minenwelt gräbst und was in den Bauwerken wartet.",
               "",
               "&6Terralith&r und &6Biomes O' Plenty&r bringen Dutzende neue Biome, &6Tectonic&r höhere Berge und tiefere Täler. Dazwischen stehen Bauwerke aus einem Dutzend Mods.",
               "",
@@ -194,46 +195,46 @@ quests = [
           rewards=[reward_item("waystones:warp_dust", 4), reward_xp(5)],
           deps=["e_sharestone"], icon="waystones:warp_plate", optional=True),
 
-    # ---- Minendimension -------------------------------------------------------
-    quest("e_pickaxe", 4.5, 3, "&6Bau die Verzauberte Spitzhacke",
-          subtitle="Der Schlüssel zur Minendimension.",
+    # ---- Minenwelt -----------------------------------------------------------
+    quest("e_pickaxe", 4.5, 3, "&6Bau zehn Grubenrahmen",
+          subtitle="Der Rahmen für das Tor zur Minenwelt.",
           description=[
-              "&eRezept auf Kronwerke:&r &62 Diamanten&r und ein &6Goldblock&r in der oberen Reihe, &62 Stöcke&r darunter in der Mitte. Das Rezept des Mods lädt auf 1.21 nicht und bräuchte Netherit.",
+              "&eRezept:&r &64 Andesit-Gehäuse&r, &64 Infundiertes Eisen&r und ein &6Quellstein&r in der Mitte ergeben &e2 Grubenrahmen&r. Für ein Portal brauchst du &e10&r.",
               "",
-              "Die &6Minendimension&r ist eine zweite Welt zum Graben. Dort darfst du Löcher machen, so viel du willst, und die Oberwelt bleibt schön.",
+              "Die &6Minenwelt&r ist eine eigene Welt zum Graben. Dort darfst du Löcher machen, so viel du willst, und die Oberwelt bleibt schön.",
           ],
-          tasks=[task_item(MINING, 1)],
+          tasks=[task_item(FRAME, 10)],
           rewards=[reward_item("minecraft:iron_block", 2)],
-          deps=["welcome"], icon=MINING, size=1.5),
+          deps=["welcome"], icon=FRAME, size=1.5),
 
-    quest("e_frame", 7, 3, "&6Bau den Rahmen aus Eisen",
-          subtitle="Wie ein Netherportal, nur aus Eisenblöcken.",
+    quest("e_frame", 7, 3, "&6Entzünde das Minenportal",
+          subtitle="Wie ein Netherportal, nur aus Grubenrahmen.",
           description=[
-              "Bau einen Rahmen aus &6Eisenblöcken&r, 4 breit und 5 hoch, innen 2 mal 3 frei. Ohne Ecken reichen &e10 Eisenblöcke&r.",
+              "Bau einen Rahmen aus &6Grubenrahmen&r, 4 breit und 5 hoch, innen 2 mal 3 frei. Ohne Ecken reichen &e10&r. Größer geht auch, bis 21 mal 21.",
               "",
-              "Dann Rechtsklick mit der &6Verzauberten Spitzhacke&r auf die Innenseite, und das Portal öffnet sich. Bau es in oder neben deiner Basis.",
+              "Dann Rechtsklick mit einem &6Quellstein&r auf die Innenseite, und das Portal leuchtet blau. Bau es in oder neben deiner Basis: wer zurückkommt, steht vor genau diesem Portal.",
           ],
-          tasks=[task_item("minecraft:iron_block", 10)],
+          tasks=[task_item("ars_nouveau:source_gem", 1)],
           rewards=[reward_item("minecraft:torch", 32)],
-          deps=["e_pickaxe"], icon="minecraft:iron_block"),
+          deps=["e_pickaxe"], icon="ars_nouveau:source_gem"),
 
-    quest("e_enter", 9, 3, "&6&lBetritt die Minendimension",
-          subtitle="Tritt durch das Portal.",
+    quest("e_enter", 9, 3, "&6&lReise in die Minenwelt",
+          subtitle="Stell dich einen Moment ins Portal.",
           description=[
-              "Geh durch dein Portal. Drüben entsteht ein Rückweg.",
+              "Bleib kurz im Portal stehen, bis das Licht dich holt. Du kommst auf dem Ankunftsplatz der Minenwelt an, das Portal dort bringt dich zurück zu deinem.",
               "",
-              "Es gibt kein Tageslicht, es bleibt immer dämmrig. Stein, Erz und Höhlen wie in der Oberwelt, nur nimmt dir hier niemand die Löcher übel. Nimm Fackeln, Essen und Baublöcke mit.",
+              "Dein Inventar, deine Enderkiste und deine Rucksäcke reisen mit. Was du durchs Portal wirfst, kommt auf der anderen Seite heraus.",
           ],
-          tasks=[task_dimension(MINING)],
+          tasks=[task_advancement(MINING_ADV)],
           rewards=[reward_table("s1_uncommon"), reward_xp(5)],
           deps=["e_frame"], icon="minecraft:iron_pickaxe", size=1.5, shape="hexagon"),
 
-    quest("e_dangers", 11, 2, "&cMerk dir die Regeln da unten",
-          subtitle="Kein Bett, kein Anker, viele Fackeln.",
+    quest("e_dangers", 11, 2, "&cMerk dir die Regeln der Minenwelt",
+          subtitle="Alle drei Tage ist sie neu.",
           description=[
-              "&cBetten explodieren&r in der Minendimension, Seelenanker funktionieren nicht. Einen Spawnpunkt setzt du dort nicht.",
+              "Die Minenwelt wird &calle drei Tage um 5 Uhr&r zurückgesetzt. Die Tabliste zählt herunter, im Chat wird vorher gewarnt. Wer dann drüben ist, reist mit allem, was er trägt, nach Hause.",
               "",
-              "Monster erscheinen überall, wo gar kein Licht ist. Leuchte deine Gänge aus. Stirbst du, liegt dein Körper unten, merk dir also, wo das Portal steht.",
+              "&cWas in der Minenwelt steht, ist danach weg:&r Maschinen, Kisten, Steinbrüche, dein Körper nach einem Tod. Bring deine Beute rechtzeitig heim.",
           ],
           tasks=[task_checkmark("Verstanden")],
           rewards=[reward_item("minecraft:torch", 32)],
@@ -275,7 +276,7 @@ quests = [
     quest("e_veins", 11, 6, "&6Finde eine große Erzader",
           subtitle="Kupfer bei Granit, Eisen bei Tuff.",
           description=[
-              "Grab eine große &6Erzader&r an und bring einen &6Rohkupferblock&r mit. Die Adern ziehen sich als lange Bänder durch den Stein, auch in der Minendimension.",
+              "Grab eine große &6Erzader&r an und bring einen &6Rohkupferblock&r mit. Die Adern ziehen sich als lange Bänder durch den Stein, auch in der Minenwelt.",
               "",
               "&eKupferadern&r liegen zwischen Y 0 und 50 in Granit, &eEisenadern&r zwischen Y -60 und -8 in Tuff. Darin stecken Erz und ganze Rohblöcke.",
           ],
@@ -283,14 +284,14 @@ quests = [
           rewards=[reward_item("minecraft:raw_iron", 16), reward_xp(5)],
           deps=["e_ores"], icon="minecraft:raw_copper_block", optional=True),
 
-    quest("e_mine_waystone", 15, 2, "&6Stell einen Wegstein in die Mine",
-          subtitle="Kurze Wege unten, ein teurer Sprung nach oben.",
+    quest("e_mine_waystone", 15, 2, "&6Finde den Heimweg",
+          subtitle="Das Portal am Ankunftsplatz bringt dich zu deinem.",
           description=[
-              "Stell einen &6Wegstein&r direkt neben dein Portal in der Mine. Wilde Wegsteine gibt es dort nicht.",
+              "Der Heimweg führt immer durchs &6Portal am Ankunftsplatz&r, oder durch jedes Minenportal, das du drüben selbst baust. Du kommst vor dem Portal heraus, durch das du gegangen bist.",
               "",
-              "Innerhalb der Mine kostet ein Sprung 1 Level pro 100 Blöcke, der Sprung in die Oberwelt 27 Level. Für den Heimweg sind Portal oder Rückkehr-Schriftrolle billiger.",
+              "Ein &6Wegstein&r in der Minenwelt verbindet nur Orte in der Minenwelt und ist beim nächsten Reset weg. Deine Wegsteine zuhause bleiben dir erhalten.",
           ],
-          tasks=[task_checkmark("Wegstein in der Mine aufgestellt")],
+          tasks=[task_checkmark("Verstanden")],
           rewards=[reward_item("waystones:return_scroll", 3), reward_xp(5)],
           deps=["e_cobble"], icon="waystones:waystone", optional=True),
 
@@ -544,7 +545,7 @@ quests = [
     quest("e_dimensions", 17.5, 4, "&5Schau, welche Welten noch kommen",
           subtitle="Sechs Dimensionen öffnen mit den Stufen.",
           description=[
-              "Die Minendimension ist offen. Die anderen kommen mit den Stufen: &cNether&r und &bAether&r in Stufe 2, &2Undergarden&r und &3Otherside&r in Stufe 3, &5End&r und &bEternal Starlight&r in Stufe 4.",
+              "Die Minenwelt ist offen. Die anderen Welten kommen mit den Stufen: &cNether&r und &bAether&r in Stufe 2, &2Undergarden&r und &3Otherside&r in Stufe 3, &5End&r und &bEternal Starlight&r in Stufe 4.",
               "",
               "Jedes Portal in drei Zeilen steht in der &6Checkliste: Dimensionen und Reisen&r, jede Welt hat ihr eigenes Kapitel: &cDer Nether&r, &bDer Aether&r, &2Der Undergarden&r, &3Deeper and Darker&r, &5Das End&r, &bEternal Starlight&r.",
           ],
@@ -556,7 +557,7 @@ quests = [
     quest("e_explorer", 20, 7.5, "&6&lWerd zum Entdecker",
           subtitle="Hin und wieder zurück.",
           description=[
-              "Hak ab, wenn du Biome findest, zwischen Wegsteinen reist, in der Minendimension gräbst und weißt, welche Bauwerke wohin gehören.",
+              "Hak ab, wenn du Biome findest, zwischen Wegsteinen reist, in der Minenwelt gräbst und weißt, welche Bauwerke wohin gehören.",
               "",
               "Der &cNether&r öffnet sich mit Stufe 2 live auf Stream durch das Portal am Spawn. Leg dir bis dahin einen Vorrat an Essen, Fackeln und Eisen an.",
           ],
@@ -570,11 +571,11 @@ images = [
     banner("exploration/title", "Erkundung", 0, -5, height=1.8, kind="title", colour="nature"),
     banner("exploration/orientation", "Orientierung", 9.5, -9.8, height=0.9, colour="nature"),
     banner("exploration/travel", "Reisen", 9, -5.3, height=0.9, colour="magic"),
-    banner("exploration/mine", "Minendimension", 9, 0.6, height=0.9, colour="stone"),
+    banner("exploration/mine", "Minenwelt", 9, 0.6, height=0.9, colour="stone"),
     banner("exploration/structures", "Bauwerke und Beute", 11, 9.2, height=0.9, colour="fire"),
     banner("exploration/onward", "Weiter", 17.5, 2.2, height=0.9, colour="brass"),
 ]
 
 chapter(C, "Erkundung", "minecraft:filled_map", "world", quests, shape="circle", order=7,
-        subtitle=["Biome, Wegsteine, die Minendimension und die Bauwerke der Oberwelt."],
+        subtitle=["Biome, Wegsteine, die Minenwelt und die Bauwerke der Oberwelt."],
         images=images)

@@ -37,7 +37,7 @@ Icon: Waystone. Impact: low. The default pick for newcomers: grew up in the town
 | --- | --- | --- |
 | Gemeinsinn | Regeneration I while another player is within 16 blocks and you have been out of combat for 5 seconds. | The theme of the season as a power. Rewards playing together without making solo play worse than vanilla. |
 | Zupackende Hände | Hunger drains 15 percent slower. | Small, always useful, nothing to learn. |
-| Heimweh (downside) | Hunger drains 30 percent faster outside the Overworld (Nether, End, Mining Dimension and every other dimension). | Net 10 percent faster away from home. Noticeable on long Nether and End trips, harmless in the base. |
+| Heimweh (downside) | Hunger drains 30 percent faster outside the Overworld (Nether, End and every other dimension; the mining world is a world of its own and counts as home). | Net 10 percent faster away from home. Noticeable on long Nether and End trips, harmless in the base. |
 
 ### Mühlenkind (Millchild)
 
@@ -53,14 +53,14 @@ Icon: Water Wheel. Impact: low. The second newcomer pick: grew up under the wate
 
 ### Tiefgräber (Deepdigger)
 
-Icon: the Mining Dimension's enchanted pickaxe. Impact: medium. From the tunnels of the Mining Dimension.
+Icon: the Grubenrahmen. Impact: medium. From the tunnels of the mining world.
 
 | Power | Effect | Why |
 | --- | --- | --- |
 | Stollenaugen | Night vision, toggled with the Night Vision key (default K). | The classic miner perk. |
 | Hauerhand | Breaks pickaxe blocks 25 percent faster. | Speed only. No Fortune, no extra ore, so the ore economy is untouched. |
 | Tiefenschlag | Deepslate, cobbled deepslate, tuff and every deepslate ore break in one hit (`#kronwerke:deepslate_instamine`, which includes `#c:ores_in_ground/deepslate` and the Mekanism and NuclearCraft ores that lack the tag). | The deep layers of the Mining Dimension are the Tiefgräber's home. |
-| Heimat unter Tage | Haste I in the Mining Dimension. | Ties the origin to a place that opens on day one. |
+| Heimat unter Tage | Haste I in the mining world (given by Kronwerke Core on the mining server; the power's own condition never holds). | Ties the origin to a place that opens on day one. |
 | Lichtscheu (downside) | 50 percent more damage taken in daylight under open sky. | The Tiefgräber builds under a roof or works at night. No ticking damage, just a worse fight in the sun. |
 
 ### Messingblut (Brassblood)
@@ -152,7 +152,7 @@ Deliberately not used for roles: the mod's `trade_availability` (villagers resto
 | --- | --- | --- | --- |
 | Kronbürger | low | Regen near friends, less hunger | More hunger outside the Overworld |
 | Mühlenkind | low | Air, swim speed, underwater mining | One heart less, double fire damage |
-| Tiefgräber | medium | Night vision, faster pickaxe, deepslate in one hit, Haste in the Mining Dimension | 50 percent more damage in daylight |
+| Tiefgräber | medium | Night vision, faster pickaxe, deepslate in one hit, Haste in the mining world | 50 percent more damage in daylight |
 | Messingblut | medium | Half fire damage, Haste at the forge | One heart less, double magic damage |
 | Aurakind | medium | Forest healing, poison immunity, Luck | 50 percent more damage in Nether and End |
 | Quellgeborene | medium | +50 mana in Ars Nouveau and Iron's Spells | One heart less, no heavy armor |

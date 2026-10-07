@@ -1666,7 +1666,7 @@
 			x: 5.2d
 			y: 56.074999999999996d
 			icon: {
-				id: "ultimate_mining_dimension:ultimate_mining_dimension"
+				id: "kronwerke:grubenrahmen"
 				count: 1
 			}
 			dependencies: [
@@ -1675,8 +1675,9 @@
 			tasks: [
 				{
 					id: "641E41DE9CB57C78"
-					type: "dimension"
-					dimension: "ultimate_mining_dimension:ultimate_mining_dimension"
+					type: "advancement"
+					advancement: "kronwerke:minenwelt"
+					criterion: ""
 				}
 			]
 			rewards: [

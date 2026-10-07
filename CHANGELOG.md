@@ -246,3 +246,9 @@ Needs a new world: the stage files, the quest ids and the goal data changed.
 ## 0.11.19
 
 - Kronwerke Core 0.17.0: chat, joins and the tab list across the servers of the network, side worlds like the mining world without obelisk, season and slots.
+
+## 0.11.20
+
+- The mining world is a server of its own: Kronwerke Core 0.18.0 adds the Grubenrahmen (4 andesite casings, 4 infused iron and a source gem make two) and the Minenportal, lit with a source gem. Players move with their whole state, thrown items go along, the world is reset every three days.
+- The Ultimate Mining Dimension is gone, with its pickaxe recipe; its quests now lead to the mining world. Tiefgräber get their Haste there.
+- Connected textures for the Grubenrahmen with labPBR maps (tools/textures/grubenrahmen.py).

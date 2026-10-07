@@ -9,7 +9,7 @@ from ftbq import (chapter, quest, task_item, task_checkmark, reward_item, reward
                   banner, img, item_texture)
 
 C = "list_dimensions"
-MINING = "ultimate_mining_dimension:ultimate_mining_dimension"
+FRAME = "kronwerke:grubenrahmen"
 
 
 def pic(item_id, size=32):
@@ -31,27 +31,25 @@ quests = [
           icon="minecraft:filled_map", size=2.5, shape="hexagon"),
 
     # ---- Stufe 1 -------------------------------------------------------------------
-    quest("d_mining", 4.5, -8, "&6Öffne die Minendimension",
-          subtitle="Eisenblöcke, eine Spitzhacke, Stufe 1.",
+    quest("d_mining", 4.5, -8, "&6Die Minenwelt",
+          subtitle="Grubenrahmen, ein Quellstein, Stufe 1.",
           description=[
-              "&eRezept auf Kronwerke:&r Die &6Verzauberte Spitzhacke&r sind &e2 Diamanten&r und ein &6Goldblock&r in der oberen Reihe, &e2 Stöcke&r darunter in der Mitte. Das Rezept des Mods selbst lädt auf 1.21 nicht und bräuchte Netherit.",
+              "&eDas Portal:&r ein Rahmen aus &6Grubenrahmen&r wie ein Netherportal, 4 breit und 5 hoch, ohne Ecken &e10 Blöcke&r. Rechtsklick mit einem &6Quellstein&r auf die Innenseite, und es öffnet sich.",
               "",
-              "&eDas Portal:&r Ein Rahmen aus &6Eisenblöcken&r wie ein Netherportal, 4 breit und 5 hoch, ohne Ecken &e10 Blöcke&r. Rechtsklick mit der Spitzhacke auf die Innenseite, und es öffnet sich.",
-              "",
-              "&eDrüben:&r Stein, Erz und Höhlen ohne Ende, ewige Dämmerung, und niemand stört sich an Löchern. Alles Weitere im Kapitel &aErkundung&r.",
+              "&eDrüben:&r eine eigene Welt nur zum Graben, alle drei Tage neu. Alles Weitere im Kapitel &aErkundung&r.",
           ],
-          tasks=[task_item(MINING, 1)],
+          tasks=[task_item(FRAME, 10)],
           rewards=[reward_item("minecraft:iron_block", 4), reward_xp(3)],
-          deps=["welcome"], icon=MINING),
+          deps=["welcome"], icon=FRAME),
 
-    quest("d_mining_rules", 6.5, -8, "&6Überleb in der Mine",
-          subtitle="Kein Bett, kein Anker, dafür viele Fackeln.",
+    quest("d_mining_rules", 6.5, -8, "&6Überleb in der Minenwelt",
+          subtitle="Alle drei Tage neu, also bring deine Beute heim.",
           description=[
-              "&eMitnehmen:&r einen Stapel &6Fackeln&r, Essen, eine &6Rückkehr-Schriftrolle&r und Blöcke zum Abstützen. &eF3&r oder ein Wegpunkt am Portal, bevor du losgräbst.",
+              "&eMitnehmen:&r einen Stapel &6Fackeln&r, Essen und Blöcke zum Abstützen. &eF3&r oder ein Wegpunkt am Ankunftsplatz, bevor du losgräbst.",
               "",
-              "&cBetten explodieren&r dort unten, und Seelenanker funktionieren nicht. Stirbst du, liegt dein Körper in der Mine, und auf Kronwerke kann jeder ihn öffnen. Also zügig zurück oder einen Freund fragen.",
+              "&cAlle drei Tage um 5 Uhr&r wird die Minenwelt neu erzeugt. Wer dann drüben ist, reist mit allem, was er trägt, nach Hause. Maschinen, Kisten und dein Körper nach einem Tod bleiben drüben und sind danach weg.",
               "",
-              "&eTipp:&r Ein &6Wegstein&r direkt neben dem Portal in der Mine spart den Rückweg zu Fuß. Er kostet dich auf dem Sprung zurück in die Oberwelt 27 Level, innerhalb der Mine aber fast nichts.",
+              "&eTipp:&r Wirf Beute einfach ins Portal, sie kommt vor deinem Portal zuhause heraus. Inventar, Enderkiste und Rucksäcke reisen mit.",
           ],
           tasks=[task_checkmark("Verstanden")],
           rewards=[reward_item("minecraft:torch", 32), reward_xp(2)],

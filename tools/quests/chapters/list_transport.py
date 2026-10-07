@@ -6,11 +6,12 @@ from the server configs (Mekanism tiers.toml, pipez-server.toml, create-server.t
 immersiveengineering-server.toml, powah.json5, fluxnetworks-server.toml, itemcollectors,
 simplemagnets, rangedpumps, waystones) and the conduit data of Ender IO. Details live in
 the mod chapters, which the lines point to."""
-from ftbq import (chapter, quest, task_item, task_checkmark, task_dimension, reward_item,
+from ftbq import (chapter, quest, task_item, task_checkmark, task_dimension, task_advancement, reward_item,
                   reward_table, reward_xp, banner)
 
 C = "list_transport"
-MINING = "ultimate_mining_dimension:ultimate_mining_dimension"
+MINING_ADV = "kronwerke:minenwelt"
+FRAME = "kronwerke:grubenrahmen"
 
 # Column and row spacing of the list rows
 X0, DX = 2.6, 2.2
@@ -663,16 +664,16 @@ quests = [
           rewards=[reward_item("minecraft:slime_ball", 2)],
           deps=["storage_when"], icon="sophisticatedstorage:packing_tape"),
 
-    quest("mining_dim", col(5), 20.6, "Geh in die Minendimension",
-          subtitle="Ultimate Mining Dimension: Platz für Löcher, Erz ohne Ende.",
+    quest("mining_dim", col(5), 20.6, "Reise in die Minenwelt",
+          subtitle="Grubenrahmen und ein Quellstein: Platz für Löcher, Erz ohne Ende.",
           description=[
-              "&6Ultimate Mining Dimension&r: ein Portal aus &e10 Eisenblöcken&r (vier breit, fünf hoch, Ecken frei), angezündet mit der &6Verzauberten Spitzhacke&r. Drüben ist Dämmerung, Erz wie in der Oberwelt und niemand, dem du die Löcher erklären musst. &eStufe 1.&r",
+              "&6Minenwelt&r: ein Portal aus &e10 Grubenrahmen&r (vier breit, fünf hoch, Ecken frei), angezündet mit einem &6Quellstein&r. Drüben ist eine eigene Welt zum Graben, alle drei Tage neu. &eStufe 1.&r",
               "",
-              "&eRezept auf Kronwerke:&r zwei Diamanten und ein Goldblock oben, zwei Stöcke darunter. Betten explodieren dort, nimm eine Rückkehr-Schriftrolle mit. Siehe Kapitel Erkundung.",
+              "&eWas mitreist:&r Inventar, Enderkiste, Rucksäcke, und alles, was du durchs Portal wirfst. Siehe Kapitel Erkundung.",
           ],
-          tasks=[task_dimension(MINING)],
+          tasks=[task_advancement(MINING_ADV)],
           rewards=[reward_item("minecraft:torch", 32), reward_table("s1_uncommon")],
-          deps=["storage_when"], icon=MINING),
+          deps=["storage_when"], icon=FRAME),
 
     quest("waystones", col(6), 20.6, "Schreib eine Rückkehr-Schriftrolle",
           subtitle="Waystones, Wegsteine: ein Level je 100 Blöcke, Schriftrollen kostenlos.",

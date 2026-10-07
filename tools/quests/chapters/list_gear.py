@@ -96,11 +96,11 @@ quests = [
            "Kostet 20-mal so viel Hunger wie ein Block, also iss vorher. Jede Herkunft darf das. Kapitel &6Komfort&r."],
           task_checkmark("Eine Ader auf einmal abgebaut"), "minecraft:iron_pickaxe", ["s1"]),
 
-    entry("mining_dim", 2, 1, S1, "&6Bau die Verzauberte Spitzhacke", "Der Schlüssel zur Minendimension.",
-          ["&eRezept auf Kronwerke:&r 2 Diamanten und ein Goldblock oben, 2 Stöcke darunter. Damit zündest du einen Rahmen aus Eisenblöcken.",
+    entry("mining_dim", 2, 1, S1, "&6Bau den Grubenrahmen", "Der Rahmen für das Tor zur Minenwelt.",
+          ["&eRezept:&r 4 Andesit-Gehäuse, 4 Infundiertes Eisen und ein Quellstein in der Mitte ergeben 2 Grubenrahmen. Zehn davon und ein Quellstein öffnen das Portal.",
            "",
-           "Dahinter liegt eine zweite Welt nur zum Graben, voller Erz und Höhlen. Kapitel &6Erkundung&r."],
-          task_item("ultimate_mining_dimension:ultimate_mining_dimension", 1), "ultimate_mining_dimension:ultimate_mining_dimension", ["s1"]),
+           "Dahinter liegt eine eigene Welt nur zum Graben, alle drei Tage neu. Kapitel &6Erkundung&r."],
+          task_item("kronwerke:grubenrahmen", 1), "kronwerke:grubenrahmen", ["s1"]),
 
     # ---- Stufe 2: Messingwerk --------------------------------------------------------------------
     quest("s2", 0, S2 + 1, "&6&lRüste dich für Stufe 2",

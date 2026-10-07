@@ -80,7 +80,7 @@ quests = [
           description=[
               "Eisen steckt in den Teilen für Create, den ersten Zauber-Geräten, dem Kochtopf und dem Werkzeug von Silent Gear. Eisennuggets und Andesit ergeben &6Andesitlegierung&r, das Material der Technik-Säule am Obelisken.",
               "",
-              "Zwei Diamanten, ein Goldblock und zwei Stöcke ergeben später die &6Verzauberte Spitzhacke&r, den Schlüssel zur &6Minendimension&r. Alles dazu im Kapitel &6Erkundung&r.",
+              "Andesit-Gehäuse, Infundiertes Eisen und ein Quellstein ergeben den &6Grubenrahmen&r, das Tor zur &6Minenwelt&r. Alles dazu im Kapitel &6Erkundung&r.",
           ],
           tasks=[task_item("minecraft:iron_ingot", 16)],
           rewards=[reward_item("minecraft:coal", 16)],
@@ -158,7 +158,7 @@ quests = [
           description=[
               "Jede Sorte &6Bruchstein&r zählt, je ein Punkt. Die Säule für alle: Jeder hilft ab der ersten Minute, ohne Maschinen und Zauber.",
               "",
-              "Am schnellsten geht es mit Ultimine in der Minendimension oder mit einem Bruchsteingenerator am Zubringer.",
+              "Am schnellsten geht es mit Ultimine in der Minenwelt oder mit einem Bruchsteingenerator am Zubringer.",
           ],
           tasks=[task_checkmark("Verstanden")],
           rewards=[reward_xp(2)],

@@ -5,7 +5,7 @@ fill 279 64 439 279 71 452 minecraft:light_gray_concrete
 setblock 280 64 451 minecraft:air
 setblock 280 64 451 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "211.1"}','{"text": "list_dimensions"}','{"text": "d_mining"}','{"text": ""}']}}
 setblock 281 64 451 minecraft:air
-setblock 281 64 451 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Öffne die"}','{"text": "Minendimension"}','{"text": ""}','{"text": ""}']}}
+setblock 281 64 451 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Öffne die"}','{"text": "Minenwelt"}','{"text": ""}','{"text": ""}']}}
 summon text_display 284.5 71 444.5 {text:'[{"text": "211.1  ", "color": "gold"}, {"text": "list_dimensions/d_mining", "color": "gray"}, {"text": "\\nÖffne die Minendimension", "color": "white"}]',billboard:"center",background:1275068416,Tags:["kw_shot"],alignment:"center",line_width:200,transformation:{scale:[1.6f,1.6f,1.6f],translation:[0f,0f,0f],left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f]}}
 fill 281 63 441 287 63 444 minecraft:polished_deepslate
 fill 281 64 441 287 67 441 minecraft:deepslate_tiles
@@ -13,7 +13,7 @@ fill 281 64 441 287 64 441 minecraft:polished_blackstone
 fill 281 67 441 287 67 441 minecraft:polished_blackstone
 setblock 281 64 444 minecraft:lantern
 setblock 287 64 444 minecraft:lantern
-summon glow_item_frame 283 66 442 {Facing:3b,Fixed:1b,Tags:["kw_shot"],Item:{id:"ultimate_mining_dimension:ultimate_mining_dimension",count:1}}
+summon glow_item_frame 283 66 442 {Facing:3b,Fixed:1b,Tags:["kw_shot"],Item:{id:"kronwerke:grubenrahmen",count:1}}
 setblock 290 64 451 minecraft:air
 setblock 290 64 451 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "211.2"}','{"text": "list_dimensions"}','{"text": "d_aether"}','{"text": ""}']}}
 setblock 291 64 451 minecraft:air

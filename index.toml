@@ -146,7 +146,7 @@ hash = "174b0b013bb3c4d19453650d434edc5d8d41ea2345cdf4b34d1b443132f7e7bc"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/exploration.snbt"
-hash = "690bab8c214d988d2cec228dc3cc5a125fc8a0e1538727b14bd2b45a1d8d0470"
+hash = "36ad22cfa16060268f4e78e22c7bbc6dcbc0da04cc5efb3ccd19bc205ef139b8"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/farms.snbt"
@@ -198,11 +198,11 @@ hash = "872b4fa1bdafdae3f9970a3ef245eb1212a20882d932dcd4d5137fcfd6bb2c67"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/list_dimensions.snbt"
-hash = "899255a532bde06e7d8e8dac2f299dc7e524d414a3c0675b329656ef3a4bd849"
+hash = "7f3a170b8464060c4de71744d3b0bb95dbc1f4ea46a6c29eed7753b912059b61"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/list_gear.snbt"
-hash = "8f3d51689b63a0c5b6c69d58934c6383ebdd1b13d22570e9381d67bf736c56f8"
+hash = "d1b0d4978886b7151cfee25534050374350ff53af4d9e0b452b576fb085706c7"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/list_power.snbt"
@@ -210,7 +210,7 @@ hash = "d4821837cfb17fe56a11129a2dd6aac6631665170612010b5462a77fe95420a6"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/list_transport.snbt"
-hash = "c1a4c17ead9aac724526ecd738f22a168d54458f12f6a5f292c0963e75ba8abe"
+hash = "8012a512b4d0675d59658b52a408708d8c822f8ac6f58581336f1c97a6ad8116"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/logistics.snbt"
@@ -330,11 +330,11 @@ hash = "93c982c2e09101877cba15ed69d2eee71ed5be2243ee8dcdcc0734845932c8b6"
 
 [[files]]
 file = "config/ftbquests/quests/lang/de_de.snbt"
-hash = "4a517d342c160e34d3efda584d3f36cb907e6d756c49e31a34c0c35236eb67c3"
+hash = "acb0678bd710f4bfd0b324efc343d599ac723912932cddfcd944dd89896a8cee"
 
 [[files]]
 file = "config/ftbquests/quests/lang/en_us.snbt"
-hash = "4a517d342c160e34d3efda584d3f36cb907e6d756c49e31a34c0c35236eb67c3"
+hash = "acb0678bd710f4bfd0b324efc343d599ac723912932cddfcd944dd89896a8cee"
 
 [[files]]
 file = "config/ftbquests/quests/reward_tables/s1_common.snbt"
@@ -550,11 +550,59 @@ hash = "154245b386499916bba4b1f4cce63a22039198095fe839ff354ebe19e0d9f62d"
 
 [[files]]
 file = "kubejs/assets/kronwerke/lang/de_de.json"
-hash = "a0cc89b176a143fbbc28ba89e2967973435cb9d836cb33528960fc118d0f3913"
+hash = "74d71251bc5ce80c7b1e53461e50e256340f41ed3425d6db32323f2738a8ac10"
 
 [[files]]
 file = "kubejs/assets/kronwerke/lang/en_us.json"
-hash = "f21948951e65a90d54e31a2891e26385782b3d47b948d2493eae16f9434b17e9"
+hash = "8aeda7d16ce3ff318f4126c855b390771a41d5fc1bd1cdf06b0c51f5bf39701c"
+
+[[files]]
+file = "kubejs/assets/kronwerke/textures/block/ctm/grubenrahmen/center.png"
+hash = "16fc12b3106d41c93f5af2e8839ea3f5560493e12d3496a5bb000893d7ef43f9"
+
+[[files]]
+file = "kubejs/assets/kronwerke/textures/block/ctm/grubenrahmen/center_n.png"
+hash = "16d6e1740be8f58fcd4723a188a73ec778d884175707d882c428a387e177006e"
+
+[[files]]
+file = "kubejs/assets/kronwerke/textures/block/ctm/grubenrahmen/center_s.png"
+hash = "ccac743946b1c32dec17d30b093a26e76a1ee4ebf8354579bccd71e67f56597f"
+
+[[files]]
+file = "kubejs/assets/kronwerke/textures/block/ctm/grubenrahmen/empty.png"
+hash = "292ad57de197df04005d7b87bc1618cb3a0ef02303d93d8766aef698391aa9be"
+
+[[files]]
+file = "kubejs/assets/kronwerke/textures/block/ctm/grubenrahmen/empty_n.png"
+hash = "184cb6f0154d9826099179ebf40fb7f843929f6b3cfb9ffbe342753899b094a5"
+
+[[files]]
+file = "kubejs/assets/kronwerke/textures/block/ctm/grubenrahmen/empty_s.png"
+hash = "6007dba2c7f9557645cab88a10c9855f559c493cb87dd7fc30f238f6f07bc027"
+
+[[files]]
+file = "kubejs/assets/kronwerke/textures/block/ctm/grubenrahmen/horizontal.png"
+hash = "002323044fe20e46a881a4ca1d7b5b76608132715bf74dea2b8f40e4867e4239"
+
+[[files]]
+file = "kubejs/assets/kronwerke/textures/block/ctm/grubenrahmen/horizontal_n.png"
+hash = "e02336203f824b53bacc1c2101d006398e2a34b3878ed2e7f479ae568d80a123"
+
+[[files]]
+file = "kubejs/assets/kronwerke/textures/block/ctm/grubenrahmen/horizontal_s.png"
+hash = "a7b24b40ef25698c0f557993e2b3f4566429ae1292045870f6f2b0877c52609c"
+
+[[files]]
+file = "kubejs/assets/kronwerke/textures/block/ctm/grubenrahmen/vertical.png"
+hash = "c0c2244af0b36ad70f8ffb639030ecbb292dbebce5bf293b078699c34aa4b9c9"
+
+[[files]]
+file = "kubejs/assets/kronwerke/textures/block/ctm/grubenrahmen/vertical_n.png"
+hash = "2b8124ee5145ab3dbc77aee58c2b4624d96a6e9262946f6d0f0d65c910d9423d"
+
+[[files]]
+file = "kubejs/assets/kronwerke/textures/block/ctm/grubenrahmen/vertical_s.png"
+hash = "34e30c799843602accb7e1260ecacc9dc04cf97bf890ca62718cb5761acde100"
 
 [[files]]
 file = "kubejs/assets/kronwerke/textures/block/ctm/plinth_side/center.png"
@@ -1486,7 +1534,7 @@ hash = "b0826cc5b724dac1baa424a394e40e935e8c31e2e7c27802a8c061df9233e2d5"
 
 [[files]]
 file = "kubejs/assets/kronwerke/textures/quests/exploration/mine.png"
-hash = "796a00e995b1e5c9e93ae188fd9e44d2f9444d7051fbb62ea483b6b35e4febab"
+hash = "a12e1b643bbf3ffc25a7f3e889520e14015c4e88b51dd52235124b33d0210c81"
 
 [[files]]
 file = "kubejs/assets/kronwerke/textures/quests/exploration/onward.png"
@@ -2693,6 +2741,10 @@ file = "kubejs/assets/kronwerke/textures/quests/undergarden/title.png"
 hash = "b5d53e67ad301f32cb05a9b162fb426f926bf75ff82e705227294dbd349bc062"
 
 [[files]]
+file = "kubejs/client_scripts/grubenrahmen_ctm.js"
+hash = "0e87a41e9941626a1fbf44014a40c8e996f6b2b343e1ccabadb57cbeb0b57622"
+
+[[files]]
 file = "kubejs/client_scripts/obelisk_ctm.js"
 hash = "a9b10f97b616ecc562b0cd9ab5eed5021e3e8e8b9bba6dd9dcc04a6e1212f2a5"
 
@@ -3706,7 +3758,7 @@ hash = "61bf4c3f0c6364efbe79adfd1a0f3b07c1ad8c094506022c02467d123f5aa626"
 
 [[files]]
 file = "kubejs/data/kronwerke/function/shots/box/211.mcfunction"
-hash = "442a2171374234c5152e97be248e82a71402d754973d82f285e2fae5653e4ebf"
+hash = "a4eb0ad46640dd17dcb237910036d39239eaa5b4eb08940c3ede15200ea74d47"
 
 [[files]]
 file = "kubejs/data/kronwerke/function/shots/box/212.mcfunction"
@@ -3926,7 +3978,7 @@ hash = "6141e5fd46ecfe6e8cd276d1f9680115a550b48b6f25daeb71d81f5e9e966648"
 
 [[files]]
 file = "kubejs/data/kronwerke/origins/origins/tiefgraeber.json"
-hash = "b0d52ce6467b6a10c5c42dad9a09ed4902b39f3a7c136eb0f3e5a2da20027824"
+hash = "a7aaec8b9bb146d37c393d8670768eb4f9ba3b842d37724e8e8f69ef4c156990"
 
 [[files]]
 file = "kubejs/data/kronwerke/origins/powers/aurakind_fern_der_wurzeln.json"
@@ -4142,7 +4194,7 @@ hash = "5e3e2c1ef0ae62448515464f36fc06daae1225c570c6e1f2ef602ccb431e9213"
 
 [[files]]
 file = "kubejs/data/kronwerke/origins/powers/tiefgraeber_heimat_unter_tage.json"
-hash = "abeaca4f27e8a9aea3ed1e4796edef9fd9049260efb59b038832e58a7f39a295"
+hash = "5c13058486a11f85b38699b8195abd22f0fa5f7cbcbeba1fa4907e0171a9bf69"
 
 [[files]]
 file = "kubejs/data/kronwerke/origins/powers/tiefgraeber_lichtscheu.json"
@@ -6197,12 +6249,8 @@ file = "kubejs/data/twilightforest/tags/worldgen/biome/in_twilight_forest.json"
 hash = "f74498097708215ee46031db7467ce3abed880ed8188eff156e81993d9787e31"
 
 [[files]]
-file = "kubejs/data/ultimate_mining_dimension/dimension/ultimate_mining_dimension.json"
-hash = "3b0929d4e469ee70a47f710084f076e2eaefd3399388703ebb04ad5fada4e73e"
-
-[[files]]
-file = "kubejs/data/ultimate_mining_dimension/dimension_type/ultimate_mining_dimension.json"
-hash = "4e244ffc12b70931d82383e027f8231858339202feb21cbba6e8d719c0a7a6a9"
+file = "kubejs/server_scripts/grubenrahmen.js"
+hash = "f3727063ddcd3df9afe51cd70438cc70b713051c9e497e9776e70014aeddb377"
 
 [[files]]
 file = "kubejs/server_scripts/kronwerke/added.js"
@@ -6235,10 +6283,6 @@ hash = "584000faceb796099fddcb3050c262965a4ae8da82645a3df1f1412721150100"
 [[files]]
 file = "kubejs/server_scripts/kronwerke/tech.js"
 hash = "8a3f99766d2c94acea6a0d29efbe79807b72d3281c0d488da27943407da74678"
-
-[[files]]
-file = "kubejs/server_scripts/mining_dimension.js"
-hash = "de43c703226e741dc1d6d8099fa96310d4a8f9d80b3c5d21761b64dc05b99df4"
 
 [[files]]
 file = "kubejs/server_scripts/tech_and_magic.js"
@@ -6964,7 +7008,7 @@ metafile = true
 
 [[files]]
 file = "mods/kronwerke-core.pw.toml"
-hash = "86bbf91f42cacde4467b21d643d70f174839e42c47bbe5b92c7f649e3d69de99"
+hash = "4c3504457280cd38f2255b3d2b23e67a6418987ce6b499883152da400490efab"
 metafile = true
 
 [[files]]
@@ -7465,11 +7509,6 @@ metafile = true
 [[files]]
 file = "mods/trims-expanded.pw.toml"
 hash = "e200369250d329f23c3a9980e0596c9706cd1a477cbce9222dde41dea205f07b"
-metafile = true
-
-[[files]]
-file = "mods/ultimate-mining-dimension.pw.toml"
-hash = "d6aed23b91953124b6270a8e444f9e204804deafa494ad2447d96fdee1344c82"
 metafile = true
 
 [[files]]

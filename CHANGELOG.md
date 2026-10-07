@@ -252,3 +252,7 @@ Needs a new world: the stage files, the quest ids and the goal data changed.
 - The mining world is a server of its own: Kronwerke Core 0.18.0 adds the Grubenrahmen (4 andesite casings, 4 infused iron and a source gem make two) and the Minenportal, lit with a source gem. Players move with their whole state, thrown items go along, the world is reset every three days.
 - The Ultimate Mining Dimension is gone, with its pickaxe recipe; its quests now lead to the mining world. Tiefgräber get their Haste there.
 - Connected textures for the Grubenrahmen with labPBR maps (tools/textures/grubenrahmen.py).
+
+## 0.11.21
+
+- The quests name the reset time of the mining world: every three days at 4:45.

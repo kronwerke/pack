@@ -232,7 +232,7 @@ quests = [
     quest("e_dangers", 11, 2, "&cMerk dir die Regeln der Minenwelt",
           subtitle="Alle drei Tage ist sie neu.",
           description=[
-              "Die Minenwelt wird &calle drei Tage um 5 Uhr&r zurückgesetzt. Die Tabliste zählt herunter, im Chat wird vorher gewarnt. Wer dann drüben ist, reist mit allem, was er trägt, nach Hause.",
+              "Die Minenwelt wird &calle drei Tage um 4:45 Uhr&r zurückgesetzt. Die Tabliste zählt herunter, im Chat wird vorher gewarnt. Wer dann drüben ist, reist mit allem, was er trägt, nach Hause.",
               "",
               "&cWas in der Minenwelt steht, ist danach weg:&r Maschinen, Kisten, Steinbrüche, dein Körper nach einem Tod. Bring deine Beute rechtzeitig heim.",
           ],

@@ -47,7 +47,7 @@ quests = [
           description=[
               "&eMitnehmen:&r einen Stapel &6Fackeln&r, Essen und Blöcke zum Abstützen. &eF3&r oder ein Wegpunkt am Ankunftsplatz, bevor du losgräbst.",
               "",
-              "&cAlle drei Tage um 5 Uhr&r wird die Minenwelt neu erzeugt. Wer dann drüben ist, reist mit allem, was er trägt, nach Hause. Maschinen, Kisten und dein Körper nach einem Tod bleiben drüben und sind danach weg.",
+              "&cAlle drei Tage um 4:45 Uhr&r wird die Minenwelt neu erzeugt. Wer dann drüben ist, reist mit allem, was er trägt, nach Hause. Maschinen, Kisten und dein Körper nach einem Tod bleiben drüben und sind danach weg.",
               "",
               "&eTipp:&r Wirf Beute einfach ins Portal, sie kommt vor deinem Portal zuhause heraus. Inventar, Enderkiste und Rucksäcke reisen mit.",
           ],

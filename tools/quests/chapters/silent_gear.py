@@ -624,6 +624,106 @@ quests = [
            "",
            "&6Tyrann-Stahl&r: &e3 652&r Haltbarkeit, Tempo &e18&r, +8 Schaden, Robust III, Leerenwächter. Das Ende der Leiter."],
           ["azure", "alloy_forge"], "minecraft:purple_dye", stage=4),
+
+    # ---- neue Quests -----------------------------------------------------------------
+    quest("fluffy", 12.5, 5, "&7Ernte Flauschpflanzen",
+          subtitle="Weiche Fasern für Sehne und Verbindung.",
+          description=[
+              "&6Wilde Flauschpflanzen&r wachsen wie Flachs überall in der Oberwelt. Abbauen gibt &6Flauschige Samen&r für Ackerland, reife Pflanzen geben &6Flauschbälle&r, mit Glück mehr.",
+              "",
+              "Drei Flauschbälle in einer Reihe ergeben einen &6Flauschigen Strang&r. Als Verbindung bringt er Flexibel III, als Sehne (Cord) +5 Prozent Fernschaden bei etwas langsamerem Spannen. Vier im Quadrat ergeben &6Flauschigen Stoff&r, fünf schräg eine &6Flauschige Feder&r.",
+          ],
+          tasks=[task_item("silentgear:fluffy_string", 4)],
+          rewards=[reward_item("minecraft:bone_meal", 16)],
+          deps=["flax"], icon="silentgear:fluffy_string", optional=True),
+
+    quest("mattock", 12.5, 12, "&7Bau eine Breithacke",
+          subtitle="Hacke, Schaufel und Axt für den Hof.",
+          description=[
+              "&eBlaupause:&r vier Blaues Papier und zwei Stöcke. Der Kopf braucht &evier&r Material.",
+              "",
+              "Die &6Breithacke&r pflügt Ackerland, gräbt Erde und fällt Holz. Etwas langsamer als Schaufel oder Axt, dafür haltbarer, und sie zählt überall, wo eine Hacke verlangt wird.",
+          ],
+          tasks=[task_item("silentgear:mattock", 1)],
+          rewards=[reward_item("minecraft:wheat_seeds", 16), reward_xp(3)],
+          deps=["shovel"], icon="silentgear:mattock", optional=True),
+
+    quest("machete", 12.5, 15, "&7Bau eine Machete",
+          subtitle="Schwert, Axt und Sichel in einem.",
+          description=[
+              "&eBlaupause:&r drei Blaues Papier und ein Stock. Die Klinge braucht &edrei&r Material.",
+              "",
+              "Die &6Machete&r ist vor allem ein Schwert, etwas schneller und schwächer als das normale. Dazu fällt sie Holz und mäht wie eine Sichel Pflanzen um den Block, nur auf kleinerer Fläche. Für den Dschungel genau richtig.",
+          ],
+          tasks=[task_item("silentgear:machete", 1)],
+          rewards=[reward_xp(3)],
+          deps=["sickle"], icon="silentgear:machete", optional=True),
+
+    quest("katana", 0, 15, "&7Schmiede ein Katana",
+          subtitle="Schwerer und stärker als ein Schwert.",
+          description=[
+              "&eBlaupause:&r drei Blaues Papier und ein Stock. Die Klinge braucht &edrei&r Material statt zwei.",
+              "",
+              "Das &6Katana&r ist schwerer und stärker als das Schwert. Wer es lieber schnell mag: Der &6Dolch&r (ein Material) schlägt sehr schnell und verkürzt die Schutzzeit des Ziels. Der &6Speer&r (ein Material) ist schwächer, reicht aber weiter.",
+          ],
+          tasks=[task_item("silentgear:katana", 1)],
+          rewards=[reward_table("s1_common"), reward_xp(3)],
+          deps=["sword"], icon="silentgear:katana"),
+
+    quest("shield", 0, 17, "&7Bau einen Schild",
+          subtitle="Ein Schild, der so viel hält wie sein Material.",
+          description=[
+              "&eBlaupause:&r Blaues Papier, Eisenbarren, Blaues Papier oben, drei Stöcke in der Mitte, ein Blaues Papier unten. Die Schildplatte braucht &ezwei&r Material.",
+              "",
+              "Der Schild blockt wie der aus Vanilla, seine Haltbarkeit kommt aus dem Material. Repariert wird er wie jedes Silent-Gear-Teil mit einem Reparaturkit.",
+          ],
+          tasks=[task_item("silentgear:shield", 1)],
+          rewards=[reward_item("minecraft:iron_ingot", 4), reward_xp(3)],
+          deps=["armor"], icon="silentgear:shield", optional=True),
+
+    quest("crossbow", 5, 16, "&7Spann eine Armbrust",
+          subtitle="Wie die der Plünderer, nur aus deinem Material.",
+          description=[
+              "&eBlaupause:&r vier Blaues Papier und drei Stöcke. Die Armbrustglieder brauchen &edrei&r Material, dazu ein Stiel und eine Sehne wie beim Bogen.",
+              "",
+              "Sie schießt wie eine Vanilla-Armbrust. Mit Sehnenfaser oder Flauschigem Strang als Sehne trifft sie härter.",
+          ],
+          tasks=[task_item("silentgear:crossbow", 1)],
+          rewards=[reward_item("minecraft:arrow", 32), reward_xp(3)],
+          deps=["bow"], icon="silentgear:crossbow", optional=True),
+
+    quest("arrows", 5, 17, "&7Bau eigene Pfeile",
+          subtitle="Pfeilspitzen aus jedem Material.",
+          description=[
+              "&eBlaupause:&r Blaues Papier, Stock und Feder übereinander. Die &6Pfeilspitzen&r brauchen &eein&r Material, dazu ein Stiel und eine &6Befiederung&r. Welche Teile genau, zeigt JEI.",
+              "",
+              "Die Pfeile passen in Bogen und Armbrust. Das Material der Spitze bestimmt den Schaden.",
+          ],
+          tasks=[task_item("silentgear:arrow", 1)],
+          rewards=[reward_item("minecraft:feather", 16), reward_xp(3)],
+          deps=["bow"], icon="silentgear:arrow", optional=True),
+
+    quest("ring", 7.5, 16, "&eSchmiede einen Ring",
+          subtitle="Schmuck mit den Eigenschaften des Metalls.",
+          description=[
+              "&eBlaupause:&r vier Blaues Papier und zwei Metallbarren. Mit der Ring-Blaupause und &ezwei&r Metallbarren entsteht ein &6Ring&r.",
+              "",
+              "Er kommt in einen &eRing-Slot&r (Curios) und trägt die Eigenschaften seines Metalls. Was ein Metall mitbringt, steht im &6Material Book&r. Armband und Halskette folgen demselben Prinzip.",
+          ],
+          tasks=[task_item("silentgear:ring", 1)],
+          rewards=[reward_item("minecraft:gold_ingot", 4), reward_xp(3)],
+          deps=["armor"], icon="silentgear:ring", optional=True),
+
+    quest("fishing_rod", 7.5, 17.2, "&7Bau eine Angel",
+          subtitle="Rolle, Haken, Stiel, Sehne.",
+          description=[
+              "&eBlaupause:&r zwei Blaues Papier und drei Stöcke. &6Angelspule und Haken&r brauchen &ezwei&r Material, dazu ein Stiel und eine Sehne.",
+              "",
+              "Sie angelt wie die Vanilla-Angel, hält aber so lange wie ihr Material und lässt sich reparieren statt neu bauen.",
+          ],
+          tasks=[task_item("silentgear:fishing_rod", 1)],
+          rewards=[reward_item("minecraft:cod", 8), reward_xp(3)],
+          deps=["bow"], icon="silentgear:fishing_rod", optional=True),
 ]
 
 images = [

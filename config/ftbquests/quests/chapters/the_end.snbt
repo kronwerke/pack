@@ -115,7 +115,7 @@
 		{
 			id: "570C009149EFE96F"
 			x: 3.3d
-			y: 3.225d
+			y: 4.725d
 			icon: {
 				id: "minecraft:ender_eye"
 				count: 1
@@ -155,7 +155,7 @@
 		{
 			id: "709D024E47EC8723"
 			x: 8.95d
-			y: 5.875d
+			y: 4.375d
 			icon: {
 				id: "minecraft:ender_pearl"
 				count: 1
@@ -198,13 +198,48 @@
 			]
 		}
 		{
+			id: "1DCE65F307FDCDFB"
+			x: 3.3d
+			y: 3.225d
+			icon: {
+				id: "minecraft:iron_chestplate"
+				count: 1
+			}
+			dependencies: [
+				"103E0D07B09DD4A1"
+			]
+			tasks: [
+				{
+					id: "4191C443FDD96082"
+					type: "checkmark"
+				}
+			]
+			rewards: [
+				{
+					id: "776109F400F0356C"
+					type: "item"
+					item: {
+						id: "minecraft:golden_apple"
+						count: 1
+					}
+					count: 2
+				}
+				{
+					id: "4625FA3E2BABFBDF"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+		}
+		{
 			id: "5A3D0D49D3F4C874"
-			x: 8.95d
-			y: 4.375d
+			x: 11.95d
+			y: 4.875d
 			icon: {
 				id: "minecraft:end_crystal"
 				count: 1
 			}
+			hide_dependency_lines: true
 			dependencies: [
 				"58C003978D129BBB"
 			]
@@ -233,15 +268,14 @@
 		}
 		{
 			id: "1021176E185BAD4C"
-			x: 12.7d
-			y: 5.475d
+			x: 13.95d
+			y: 4.875d
 			icon: {
 				id: "minecraft:dragon_head"
 				count: 1
 			}
 			size: 2.5d
 			shape: "gear"
-			hide_dependency_lines: true
 			hide_dependent_lines: true
 			dependencies: [
 				"5A3D0D49D3F4C874"
@@ -267,8 +301,8 @@
 		}
 		{
 			id: "1C73B22811770C4C"
-			x: 16.049999999999997d
-			y: 4.125d
+			x: 17.299999999999997d
+			y: 6.625d
 			icon: {
 				id: "minecraft:dragon_breath"
 				count: 1
@@ -307,8 +341,8 @@
 		}
 		{
 			id: "6CDE49941E4635C0"
-			x: 14.7d
-			y: 4.125d
+			x: 15.95d
+			y: 6.625d
 			icon: {
 				id: "draconicevolution:dragon_heart"
 				count: 1
@@ -348,8 +382,8 @@
 		}
 		{
 			id: "6F6F095C201A9182"
-			x: 14.7d
-			y: 5.475d
+			x: 15.95d
+			y: 7.975d
 			icon: {
 				id: "minecraft:dragon_egg"
 				count: 1
@@ -380,8 +414,8 @@
 		}
 		{
 			id: "502F7E8E5BA8DF0E"
-			x: 14.7d
-			y: 6.825d
+			x: 15.95d
+			y: 9.325d
 			icon: {
 				id: "mysticalagradditions:dragon_scale"
 				count: 1
@@ -412,14 +446,13 @@
 		}
 		{
 			id: "1946BDB9D5AB99DC"
-			x: 0.25d
-			y: 11.925d
+			x: 17.15d
+			y: 4.875d
 			icon: {
 				id: "minecraft:end_crystal"
 				count: 1
 			}
 			size: 1.5d
-			hide_dependency_lines: true
 			dependencies: [
 				"1021176E185BAD4C"
 			]
@@ -461,8 +494,8 @@
 		}
 		{
 			id: "2F8D32F7B0484959"
-			x: 13.899999999999999d
-			y: 13.425d
+			x: 11.75d
+			y: 17.424999999999997d
 			icon: {
 				id: "minecraft:ender_pearl"
 				count: 1
@@ -500,8 +533,8 @@
 		}
 		{
 			id: "18115C7028F2DE4B"
-			x: 16.299999999999997d
-			y: 13.425d
+			x: 14.15d
+			y: 17.424999999999997d
 			icon: {
 				id: "minecraft:purpur_block"
 				count: 1
@@ -532,8 +565,8 @@
 		}
 		{
 			id: "2BEFC0DE050F0E96"
-			x: 18.299999999999997d
-			y: 13.425d
+			x: 16.15d
+			y: 17.424999999999997d
 			icon: {
 				id: "minecraft:shulker_shell"
 				count: 1
@@ -580,8 +613,8 @@
 		}
 		{
 			id: "29374643DC18B3D2"
-			x: 18.299999999999997d
-			y: 15.175d
+			x: 16.15d
+			y: 20.424999999999997d
 			icon: {
 				id: "minecraft:elytra"
 				count: 1
@@ -629,8 +662,8 @@
 		}
 		{
 			id: "426DAFC0C10CD0AA"
-			x: 16.299999999999997d
-			y: 11.925d
+			x: 14.15d
+			y: 12.924999999999999d
 			icon: {
 				id: "minecraft:chorus_fruit"
 				count: 1
@@ -677,8 +710,8 @@
 		}
 		{
 			id: "50B1264EBE14692D"
-			x: 18.299999999999997d
-			y: 11.925d
+			x: 16.15d
+			y: 14.424999999999999d
 			icon: {
 				id: "biomesoplenty:algal_end_stone"
 				count: 1
@@ -702,9 +735,171 @@
 			]
 		}
 		{
+			id: "659476FBDC55EFDF"
+			x: 18.55d
+			y: 17.424999999999997d
+			icon: {
+				id: "minecraft:shulker_shell"
+				count: 1
+			}
+			optional: true
+			dependencies: [
+				"2BEFC0DE050F0E96"
+			]
+			tasks: [
+				{
+					id: "332955DC9EC2607D"
+					type: "kill"
+					entity: "minecraft:shulker"
+					value: 10
+				}
+			]
+			rewards: [
+				{
+					id: "3953907DC6242004"
+					type: "item"
+					item: {
+						id: "minecraft:shulker_shell"
+						count: 1
+					}
+					count: 2
+				}
+				{
+					id: "1330AE30374196D4"
+					type: "xp_levels"
+					xp_levels: 10
+				}
+			]
+		}
+		{
+			id: "6DD91D3A69E46F9A"
+			x: 18.55d
+			y: 18.924999999999997d
+			icon: {
+				id: "minecraft:feather"
+				count: 1
+			}
+			optional: true
+			dependencies: [
+				"2BEFC0DE050F0E96"
+			]
+			tasks: [
+				{
+					id: "34C8AAE80961D8C0"
+					type: "advancement"
+					advancement: "minecraft:end/levitate"
+					criterion: ""
+				}
+			]
+			rewards: [
+				{
+					id: "77B507D1B076E138"
+					type: "item"
+					item: {
+						id: "minecraft:feather"
+						count: 1
+					}
+					count: 8
+				}
+				{
+					id: "1FBA168D16779A3E"
+					type: "xp_levels"
+					xp_levels: 10
+				}
+			]
+		}
+		{
+			id: "115F30162901E42F"
+			x: 18.55d
+			y: 20.424999999999997d
+			icon: {
+				id: "minecraft:dragon_head"
+				count: 1
+			}
+			dependencies: [
+				"29374643DC18B3D2"
+			]
+			tasks: [
+				{
+					id: "1879F4A31891493F"
+					type: "item"
+					item: {
+						id: "minecraft:dragon_head"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "1CA20DFFAD739B2F"
+					type: "item"
+					item: {
+						id: "minecraft:ender_pearl"
+						count: 1
+					}
+					count: 4
+				}
+				{
+					id: "55E9F80ED66BB4DD"
+					type: "xp_levels"
+					xp_levels: 10
+				}
+			]
+		}
+		{
+			id: "36CC726D0ECB54E7"
+			x: 16.15d
+			y: 12.924999999999999d
+			icon: {
+				id: "minecraft:chorus_flower"
+				count: 1
+			}
+			optional: true
+			dependencies: [
+				"426DAFC0C10CD0AA"
+			]
+			tasks: [
+				{
+					id: "1F82899D54BA7ABE"
+					type: "item"
+					item: {
+						id: "minecraft:chorus_flower"
+						count: 1
+					}
+					count: 1
+				}
+				{
+					id: "16E6C418AF2F5030"
+					type: "item"
+					item: {
+						id: "minecraft:end_rod"
+						count: 1
+					}
+					count: 4
+				}
+			]
+			rewards: [
+				{
+					id: "310E0726E8B0C4A9"
+					type: "item"
+					item: {
+						id: "minecraft:end_stone"
+						count: 1
+					}
+					count: 16
+				}
+				{
+					id: "554DB879341EE34E"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+		}
+		{
 			id: "5DBF690D83BCA083"
-			x: 16.299999999999997d
-			y: 10.425d
+			x: 14.15d
+			y: 15.924999999999999d
 			icon: {
 				id: "minecraft:end_stone_bricks"
 				count: 1
@@ -733,8 +928,8 @@
 		}
 		{
 			id: "70A9D4BB89E0A4CD"
-			x: 18.299999999999997d
-			y: 10.425d
+			x: 16.15d
+			y: 15.924999999999999d
 			icon: {
 				id: "minecraft:feather"
 				count: 1
@@ -767,7 +962,7 @@
 		{
 			id: "59C434572D86FC9A"
 			x: 0.25d
-			y: 19.525d
+			y: 24.775d
 			icon: {
 				id: "cataclysm:void_eye"
 				count: 1
@@ -806,7 +1001,7 @@
 		{
 			id: "4DFFFCD38E78B9EE"
 			x: 2.65d
-			y: 19.525d
+			y: 24.775d
 			icon: {
 				id: "cataclysm:void_core"
 				count: 1
@@ -851,7 +1046,7 @@
 		{
 			id: "67FA11CA596E1630"
 			x: 2.65d
-			y: 21.025d
+			y: 26.275d
 			icon: {
 				id: "cataclysm:void_jaw"
 				count: 1
@@ -888,7 +1083,7 @@
 		{
 			id: "263ED650110DB737"
 			x: 4.65d
-			y: 19.525d
+			y: 24.775d
 			icon: {
 				id: "cataclysm:gauntlet_of_guard"
 				count: 1
@@ -931,7 +1126,7 @@
 		{
 			id: "6D3749D5AA5C85C9"
 			x: 7.45d
-			y: 19.525d
+			y: 24.775d
 			icon: {
 				id: "cataclysm:void_forge"
 				count: 1
@@ -970,14 +1165,15 @@
 		}
 		{
 			id: "2BE98D793C03A54D"
-			x: 2.65d
-			y: 11.925d
+			x: 0.5d
+			y: 15.174999999999999d
 			icon: {
 				id: "draconicevolution:draconium_ingot"
 				count: 1
 			}
 			size: 2.0d
 			shape: "hexagon"
+			hide_dependency_lines: true
 			dependencies: [
 				"1946BDB9D5AB99DC"
 			]
@@ -1025,8 +1221,8 @@
 		}
 		{
 			id: "4D37F7EA25BFE552"
-			x: 5.449999999999999d
-			y: 11.925d
+			x: 3.3d
+			y: 15.174999999999999d
 			icon: {
 				id: "mekanism:elite_control_circuit"
 				count: 1
@@ -1064,8 +1260,8 @@
 		}
 		{
 			id: "47FE078672EBF5E2"
-			x: 5.449999999999999d
-			y: 10.425d
+			x: 3.3d
+			y: 12.924999999999999d
 			icon: {
 				id: "ae2:cell_component_256k"
 				count: 1
@@ -1103,8 +1299,8 @@
 		}
 		{
 			id: "2ABC5EF31B47C4DC"
-			x: 5.449999999999999d
-			y: 13.425d
+			x: 3.3d
+			y: 17.424999999999997d
 			icon: {
 				id: "silentgear:raw_azure_silver"
 				count: 1
@@ -1141,9 +1337,128 @@
 			]
 		}
 		{
+			id: "7CCC047D427FE194"
+			x: 5.3d
+			y: 17.424999999999997d
+			icon: {
+				id: "silentgear:azure_electrum_ingot"
+				count: 1
+			}
+			optional: true
+			dependencies: [
+				"2ABC5EF31B47C4DC"
+			]
+			tasks: [
+				{
+					id: "57813AEC6A7411C8"
+					type: "item"
+					item: {
+						id: "silentgear:azure_electrum_ingot"
+						count: 1
+					}
+					count: 3
+				}
+			]
+			rewards: [
+				{
+					id: "4ADCA58FC2A4A60F"
+					type: "item"
+					item: {
+						id: "minecraft:gold_ingot"
+						count: 1
+					}
+					count: 8
+				}
+				{
+					id: "219AFFC1372FF79A"
+					type: "xp_levels"
+					xp_levels: 10
+				}
+			]
+		}
+		{
+			id: "4A0E42528E807FF4"
+			x: 0.5d
+			y: 18.924999999999997d
+			icon: {
+				id: "apothic_enchanting:endshelf"
+				count: 1
+			}
+			optional: true
+			hide_dependency_lines: true
+			dependencies: [
+				"1C73B22811770C4C"
+			]
+			tasks: [
+				{
+					id: "75C1EDD57559ED2F"
+					type: "item"
+					item: {
+						id: "apothic_enchanting:endshelf"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "22227BE5877E4B80"
+					type: "item"
+					item: {
+						id: "minecraft:dragon_breath"
+						count: 1
+					}
+					count: 4
+				}
+				{
+					id: "18F0A72B47F69395"
+					type: "xp_levels"
+					xp_levels: 15
+				}
+			]
+		}
+		{
+			id: "38F1B56EDE51ECA3"
+			x: 3.3d
+			y: 18.924999999999997d
+			icon: {
+				id: "apothic_enchanting:draconic_endshelf"
+				count: 1
+			}
+			optional: true
+			hide_dependency_lines: true
+			dependencies: [
+				"4A0E42528E807FF4"
+				"115F30162901E42F"
+			]
+			tasks: [
+				{
+					id: "3E889117C7FA891B"
+					type: "item"
+					item: {
+						id: "apothic_enchanting:draconic_endshelf"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "4A109349BA69D8E7"
+					type: "loot"
+					table_id: 4738617146227273058L
+				}
+				{
+					id: "7CEC8AE6900EB473"
+					type: "xp_levels"
+					xp_levels: 20
+				}
+			]
+		}
+		{
 			id: "1E94209EC38D1030"
-			x: 7.449999999999999d
-			y: 11.925d
+			x: 5.3d
+			y: 15.174999999999999d
 			icon: {
 				id: "minecraft:dragon_egg"
 				count: 1
@@ -1198,8 +1513,8 @@
 		}
 		{
 			id: "3D3A8DCEA26335EF"
-			x: 10.649999999999999d
-			y: 11.925d
+			x: 8.5d
+			y: 15.174999999999999d
 			icon: {
 				id: "minecraft:end_portal_frame"
 				count: 1
@@ -1258,7 +1573,7 @@
 			id: "63D59138B205C6AF"
 			image: "kronwerke:textures/quests/the_end/tech.png"
 			x: 2.78d
-			y: 8.975d
+			y: 11.474999999999998d
 			width: 6.56d
 			height: 0.9d
 			rotation: 0.0d
@@ -1267,8 +1582,8 @@
 		{
 			id: "4AD99FB7D93416E5"
 			image: "kronwerke:textures/quests/the_end/islands.png"
-			x: 16.055d
-			y: 8.975d
+			x: 13.905d
+			y: 11.474999999999998d
 			width: 5.81d
 			height: 0.9d
 			rotation: 0.0d
@@ -1278,7 +1593,7 @@
 			id: "48FAEB6EBBE3F6DD"
 			image: "kronwerke:textures/quests/the_end/citadel.png"
 			x: 1.645d
-			y: 17.575d
+			y: 22.825d
 			width: 4.29d
 			height: 0.9d
 			rotation: 0.0d

@@ -530,6 +530,125 @@ quests = [
           rewards=[reward_item("minecraft:golden_apple", 1)],
           deps=["e_formations"], icon="minecraft:skeleton_skull"),
 
+    # ---- Neu: Reisen ------------------------------------------------------------
+    quest("e_bound_scroll", 15, -3.5, "&6Binde eine Schriftrolle an einen Wegstein",
+          subtitle="Immer zum selben Ziel, ohne Level.",
+          description=[
+              "&62 Goldnuggets&r, eine &6Feder&r und &63 Papier&r ergeben drei &6Leere Schriftrollen&r. Rechtsklick mit einer davon auf einen Wegstein, und sie wird zur &6Gebundenen Schriftrolle&r.",
+              "",
+              pic("waystones:bound_scroll"),
+              "",
+              "Sie bringt dich einmal genau zu diesem Wegstein, ohne Auswahl und wie alle Schriftrollen ohne Levelkosten. Binde ein paar an deine Basis und gib sie Freunden mit.",
+          ],
+          tasks=[task_item("waystones:bound_scroll", 1)],
+          rewards=[reward_item("minecraft:feather", 8), reward_xp(3)],
+          deps=["e_return_scroll"], icon="waystones:bound_scroll"),
+
+    # ---- Neu: Minenwelt ---------------------------------------------------------
+    quest("e_altimeter", 11, 0.5, "&6Bau einen Höhenmesser",
+          subtitle="Wie tief bist du gerade?",
+          description=[
+              "&64 Kupferbarren&r um einen &6Redstone&r ergeben den &6Höhenmesser&r von Supplementaries. Ein Klick zeigt deine Höhe als Y-Wert.",
+              "",
+              "Praktisch beim Erzsuchen: Diamanten liegen ganz unten, Kupferadern zwischen Y 0 und 50, Eisenadern zwischen Y -60 und -8.",
+          ],
+          tasks=[task_item("supplementaries:altimeter", 1)],
+          rewards=[reward_item("minecraft:copper_ingot", 8)],
+          deps=["e_enter"], icon="supplementaries:altimeter", optional=True),
+
+    quest("e_slice_map", 13, 0.5, "&6Zeichne eine Schichtkarte",
+          subtitle="Eine Karte für unter der Erde.",
+          description=[
+              "Ein &6Höhenmesser&r und eine leere &6Karte&r ergeben eine &6Schichtkarte&r. Sie zeigt die Welt als Schnitt auf der Höhe, auf der du sie aufziehst, mit allen Höhlen und Gängen.",
+              "",
+              pic("supplementaries:slice_map"),
+              "",
+              "Sie deckt nur ein Viertel der Fläche einer normalen Karte ab. Zieh sie in deiner Grubenebene auf, dann siehst du, wo du schon warst.",
+          ],
+          tasks=[task_item("supplementaries:slice_map", 1)],
+          rewards=[reward_item("minecraft:paper", 8), reward_xp(3)],
+          deps=["e_altimeter"], icon="supplementaries:slice_map", optional=True),
+
+    # ---- Neu: Bauwerke ---------------------------------------------------------
+    quest("e_quiver", 7, 23.5, "&6Erbeute einen Köcher",
+          subtitle="Sechs Stapel Pfeile in einem Platz.",
+          description=[
+              "Manche Skelette tragen einen &6Köcher&r auf dem Rücken. Erleg eines davon und nimm ihn mit. Je schwieriger die Gegend, desto öfter siehst du sie.",
+              "",
+              "Der Köcher fasst &d6&r Stapel Pfeile, auch Trankpfeile. Aufgesammelte Pfeile wandern von selbst hinein, die Sorte zum Schießen wählst du mit der Köcher-Taste.",
+          ],
+          tasks=[task_item("supplementaries:quiver", 1)],
+          rewards=[reward_item("minecraft:arrow", 32), reward_xp(3)],
+          deps=["e_lootr"], icon="supplementaries:quiver", optional=True),
+
+    quest("e_trial_chamber", 7, 21, "&6Hol dir einen Prüfungsschlüssel",
+          subtitle="Prüfungskammern liegen tief im Stein.",
+          description=[
+              "Finde eine &6Prüfungskammer&r aus Kupfer und Tuff und besiege die Wellen eines &6Prüfungs-Spawners&r. Er wirft dabei einen &6Prüfungsschlüssel&r aus.",
+              "",
+              "Mit dem Schlüssel öffnest du einen &6Tresor&r der Kammer. Jeder Tresor gibt jedem Spieler einmal Beute, also lohnt sich die Kammer auch zu mehreren.",
+          ],
+          tasks=[task_item("minecraft:trial_key", 1)],
+          rewards=[reward_table("s1_common"), reward_xp(5)],
+          deps=["e_structures"], icon="minecraft:trial_key"),
+
+    quest("e_breeze", 9, 21, "&bBesiege eine Böe",
+          subtitle="Der Wächter der Prüfungskammern.",
+          description=[
+              "Erleg eine &bBöe&r. Sie springt herum und schießt &6Windkugeln&r, die dich zurückstoßen. Pfeile lenkt sie ab, also geh nah heran.",
+              "",
+              "Sie lässt &6Böenruten&r fallen. Vier &6Windkugeln&r aus einer Rute kannst du selbst werfen: auf den Boden geworfen schleudern sie dich hoch.",
+          ],
+          tasks=[task_kill("minecraft:breeze", 1)],
+          rewards=[reward_item("minecraft:wind_charge", 8), reward_xp(5)],
+          deps=["e_trial_chamber"], icon="minecraft:breeze_rod"),
+
+    quest("e_mace", 11, 21, "&5Schmiede einen Streitkolben",
+          subtitle="Je tiefer der Fall, desto härter der Schlag.",
+          description=[
+              "Ein &6Schwerer Kern&r über einer &6Böenrute&r ergibt den &6Streitkolben&r. Sein Schaden wächst mit der Fallhöhe, und ein Treffer aus dem Sprung fängt deinen Sturz ab.",
+              "",
+              "Den Kern gibt es nur in &5Unheilvollen Tresoren&r. Trink eine &6Unheilvolle Flasche&r, die Hauptleute von Plündererbanden fallen lassen, und betritt dann eine Prüfungskammer. Die Spawner werden härter und werfen &5Unheilvolle Prüfungsschlüssel&r aus.",
+              "",
+              "Zusammen mit Windkugeln wird er zur gefährlichsten Nahkampfwaffe der Oberwelt.",
+          ],
+          tasks=[task_item("minecraft:mace", 1)],
+          rewards=[reward_table("s1_uncommon"), reward_xp(10)],
+          deps=["e_breeze"], icon="minecraft:mace", optional=True),
+
+    quest("e_evoker", 13, 21, "&cBesiege einen Magier",
+          subtitle="Er trägt ein Totem der Unsterblichkeit.",
+          description=[
+              "Erleg einen &cMagier&r. Er wohnt in Waldanwesen und kommt in den späteren Wellen eines Überfalls auf ein Dorf.",
+              "",
+              "Weich seinen Fangzähnen aus dem Boden aus und töte die Plagegeister zuerst. Er lässt immer ein &6Totem der Unsterblichkeit&r fallen. Halt es in der zweiten Hand, und es rettet dich einmal vor dem Tod.",
+          ],
+          tasks=[task_kill("minecraft:evoker", 1)],
+          rewards=[reward_table("s1_uncommon"), reward_xp(8)],
+          deps=["e_dnt_crypts"], icon="minecraft:totem_of_undying"),
+
+    quest("e_elder_guardian", 13, 23.5, "&3Besiege einen Großen Wächter",
+          subtitle="Drei wachen über jedes Ozeanmonument.",
+          description=[
+              "Erleg einen &3Großen Wächter&r im Ozeanmonument. Jedes Monument hat drei, und solange einer lebt, lähmt er dich immer wieder mit Abbaulähmung.",
+              "",
+              "Jeder lässt einen &6Nassen Schwamm&r fallen. Erst wenn alle drei tot sind, kannst du das Monument in Ruhe ausräumen.",
+          ],
+          tasks=[task_kill("minecraft:elder_guardian", 1)],
+          rewards=[reward_item("minecraft:prismarine_shard", 16), reward_xp(8)],
+          deps=["e_yung_ocean"], icon="minecraft:wet_sponge", optional=True),
+
+    quest("e_heart_sea", 15, 23.5, "&bGrab ein Herz des Meeres aus",
+          subtitle="Folge der Schatzkarte zum Kreuz.",
+          description=[
+              "In Schiffswracks und Ozeanruinen liegen &6Schatzkarten&r. Folge ihr bis zum roten Kreuz und grab dort nach der vergrabenen Truhe. Darin liegt immer ein &6Herz des Meeres&r.",
+              "",
+              "Acht &6Nautilusschalen&r um das Herz ergeben einen &6Aquisator&r. In einem Rahmen aus Prismarin gibt er dir unter Wasser Atem, Sicht und schnelleres Abbauen.",
+          ],
+          tasks=[task_item("minecraft:heart_of_the_sea", 1)],
+          rewards=[reward_item("minecraft:nautilus_shell", 2), reward_xp(5)],
+          deps=["e_yung_ocean"], icon="minecraft:heart_of_the_sea", optional=True),
+
     # ---- Weiter ------------------------------------------------------------------
     quest("a_affix", 17.5, 11, "&6Lern Beute mit Affixen kennen",
           subtitle="Kein Schwert gleicht dem anderen.",

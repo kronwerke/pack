@@ -425,8 +425,8 @@
 		}
 		{
 			id: "1D60F7B9916F92B1"
-			x: 3.5999999999999996d
-			y: 11.075000000000001d
+			x: 6.300000000000001d
+			y: 9.725000000000001d
 			icon: {
 				id: "minecraft:blaze_rod"
 				count: 1
@@ -504,8 +504,8 @@
 		}
 		{
 			id: "17FFAA591909DA98"
-			x: 3.5999999999999996d
-			y: 12.425d
+			x: 6.300000000000001d
+			y: 11.075000000000001d
 			icon: {
 				id: "minecraft:ghast_tear"
 				count: 1
@@ -589,8 +589,8 @@
 		}
 		{
 			id: "467BFAD9554B014C"
-			x: 4.95d
-			y: 9.725000000000001d
+			x: 6.300000000000001d
+			y: 12.425d
 			icon: {
 				id: "ars_nouveau:wilden_horn"
 				count: 1
@@ -661,8 +661,8 @@
 		}
 		{
 			id: "7B2AA4ED5FBC6D2E"
-			x: 4.95d
-			y: 11.075000000000001d
+			x: 7.65d
+			y: 9.725000000000001d
 			icon: {
 				id: "minecraft:wither_skeleton_skull"
 				count: 1
@@ -687,8 +687,389 @@
 			]
 		}
 		{
+			id: "11A651F50710E9D5"
+			x: 3.5999999999999996d
+			y: 11.075000000000001d
+			icon: {
+				id: "minecraft:skeleton_skull"
+				count: 1
+			}
+			hide_dependency_lines: true
+			dependencies: [
+				"2F75D7990B5FFDC1"
+			]
+			tasks: [
+				{
+					id: "41AE8BA9B4A96EFD"
+					type: "kill"
+					entity: "minecraft:skeleton"
+					value: 18
+				}
+			]
+			rewards: [
+				{
+					id: "14533BB85C227D8F"
+					type: "item"
+					item: {
+						id: "minecraft:arrow"
+						count: 1
+					}
+					count: 32
+				}
+				{
+					id: "2611093806FEA5E4"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+		}
+		{
+			id: "39CA473B386A001B"
+			x: 7.65d
+			y: 11.075000000000001d
+			icon: {
+				id: "minecraft:gunpowder"
+				count: 1
+			}
+			hide_dependency_lines: true
+			dependencies: [
+				"2F75D7990B5FFDC1"
+			]
+			tasks: [
+				{
+					id: "5BDA7FB040E65882"
+					type: "kill"
+					entity: "minecraft:creeper"
+					value: 18
+				}
+			]
+			rewards: [
+				{
+					id: "1055163700D2CF46"
+					type: "item"
+					item: {
+						id: "minecraft:gunpowder"
+						count: 1
+					}
+					count: 16
+				}
+				{
+					id: "285D00A4125403CA"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+		}
+		{
+			id: "52B519D3FC982D6C"
+			x: 3.5999999999999996d
+			y: 12.425d
+			icon: {
+				id: "minecraft:string"
+				count: 1
+			}
+			hide_dependency_lines: true
+			dependencies: [
+				"2F75D7990B5FFDC1"
+			]
+			tasks: [
+				{
+					id: "67BF71298FDBBFA7"
+					type: "kill"
+					entity: "minecraft:spider"
+					value: 18
+				}
+			]
+			rewards: [
+				{
+					id: "7879F8922CEBE5B4"
+					type: "item"
+					item: {
+						id: "minecraft:string"
+						count: 1
+					}
+					count: 16
+				}
+				{
+					id: "574DA7B259E44A13"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+		}
+		{
+			id: "6857EF089C45D3F2"
+			x: 7.65d
+			y: 12.425d
+			icon: {
+				id: "minecraft:slime_ball"
+				count: 1
+			}
+			optional: true
+			hide_dependency_lines: true
+			dependencies: [
+				"2F75D7990B5FFDC1"
+			]
+			tasks: [
+				{
+					id: "7FEC77578137FE60"
+					type: "kill"
+					entity: "minecraft:slime"
+					value: 18
+				}
+			]
+			rewards: [
+				{
+					id: "2F40926FB1EB284D"
+					type: "item"
+					item: {
+						id: "minecraft:slime_ball"
+						count: 1
+					}
+					count: 16
+				}
+				{
+					id: "2A862EA8905BD8F8"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+		}
+		{
+			id: "2B27204C1938F33D"
+			x: 4.95d
+			y: 9.725000000000001d
+			icon: {
+				id: "minecraft:copper_ingot"
+				count: 1
+			}
+			optional: true
+			hide_dependency_lines: true
+			dependencies: [
+				"2F75D7990B5FFDC1"
+			]
+			tasks: [
+				{
+					id: "1208D30AD004624B"
+					type: "kill"
+					entity: "minecraft:drowned"
+					value: 18
+				}
+			]
+			rewards: [
+				{
+					id: "1F252B62B98443C9"
+					type: "item"
+					item: {
+						id: "minecraft:copper_ingot"
+						count: 1
+					}
+					count: 16
+				}
+				{
+					id: "7D28ADBA2C0E4C11"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+		}
+		{
+			id: "5A3CC3DE11EAC4A4"
+			x: 9.0d
+			y: 9.725000000000001d
+			icon: {
+				id: "minecraft:prismarine_crystals"
+				count: 1
+			}
+			optional: true
+			hide_dependency_lines: true
+			dependencies: [
+				"2F75D7990B5FFDC1"
+			]
+			tasks: [
+				{
+					id: "2E2B2D7C2CBA92DB"
+					type: "kill"
+					entity: "minecraft:guardian"
+					value: 18
+				}
+			]
+			rewards: [
+				{
+					id: "63216F1C7579BA7C"
+					type: "item"
+					item: {
+						id: "minecraft:prismarine_crystals"
+						count: 1
+					}
+					count: 8
+				}
+				{
+					id: "1CEBA7F9DA063A52"
+					type: "xp_levels"
+					xp_levels: 8
+				}
+			]
+		}
+		{
+			id: "4E38985D02BBEDB4"
+			x: 4.95d
+			y: 11.075000000000001d
+			icon: {
+				id: "minecraft:magma_cream"
+				count: 1
+			}
+			optional: true
+			hide_dependency_lines: true
+			dependencies: [
+				"2F75D7990B5FFDC1"
+			]
+			tasks: [
+				{
+					id: "5B5094BCA87312DD"
+					type: "kill"
+					entity: "minecraft:magma_cube"
+					value: 18
+				}
+			]
+			rewards: [
+				{
+					id: "624CD3BE658EF746"
+					type: "item"
+					item: {
+						id: "minecraft:magma_cream"
+						count: 1
+					}
+					count: 8
+				}
+				{
+					id: "35170AE7E4ABF5D5"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+		}
+		{
+			id: "2CBFBFFECBA609EA"
+			x: 9.0d
+			y: 11.075000000000001d
+			icon: {
+				id: "minecraft:breeze_rod"
+				count: 1
+			}
+			optional: true
+			hide_dependency_lines: true
+			dependencies: [
+				"2F75D7990B5FFDC1"
+			]
+			tasks: [
+				{
+					id: "6D310F64A07FC5E0"
+					type: "kill"
+					entity: "minecraft:breeze"
+					value: 18
+				}
+			]
+			rewards: [
+				{
+					id: "7C59F1F9942A8BF5"
+					type: "item"
+					item: {
+						id: "minecraft:breeze_rod"
+						count: 1
+					}
+					count: 4
+				}
+				{
+					id: "6089264F9B0E71E2"
+					type: "xp_levels"
+					xp_levels: 8
+				}
+			]
+		}
+		{
+			id: "53F2A17B30390747"
+			x: 4.95d
+			y: 12.425d
+			icon: {
+				id: "minecraft:phantom_membrane"
+				count: 1
+			}
+			optional: true
+			hide_dependency_lines: true
+			dependencies: [
+				"2F75D7990B5FFDC1"
+			]
+			tasks: [
+				{
+					id: "4B10510063BFC94C"
+					type: "kill"
+					entity: "minecraft:phantom"
+					value: 6
+				}
+			]
+			rewards: [
+				{
+					id: "2BEE709DAD19CC76"
+					type: "item"
+					item: {
+						id: "minecraft:phantom_membrane"
+						count: 1
+					}
+					count: 4
+				}
+				{
+					id: "183D9A83ED519D1C"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+		}
+		{
+			id: "5748C3D01E57ADBA"
+			x: 9.0d
+			y: 12.425d
+			icon: {
+				id: "minecraft:totem_of_undying"
+				count: 1
+			}
+			hide_dependency_lines: true
+			dependencies: [
+				"2F75D7990B5FFDC1"
+			]
+			tasks: [
+				{
+					id: "13CB383219A9457F"
+					type: "kill"
+					entity: "minecraft:evoker"
+					value: 6
+				}
+			]
+			rewards: [
+				{
+					id: "7FD0B7BDC41273D7"
+					type: "item"
+					item: {
+						id: "minecraft:emerald"
+						count: 1
+					}
+					count: 8
+				}
+				{
+					id: "36537261660DC195"
+					type: "loot"
+					table_id: 2502423014058638837L
+				}
+				{
+					id: "3C6EA8A63B4D3B3D"
+					type: "xp_levels"
+					xp_levels: 10
+				}
+			]
+		}
+		{
 			id: "2CCF6BD423383093"
-			x: 11.66d
+			x: 12.25d
 			y: 11.225000000000001d
 			icon: {
 				id: "minecraft:comparator"
@@ -729,7 +1110,7 @@
 		}
 		{
 			id: "1578E32783E066D2"
-			x: 14.06d
+			x: 14.65d
 			y: 11.225000000000001d
 			icon: {
 				id: "minecraft:clay_ball"
@@ -767,7 +1148,7 @@
 		}
 		{
 			id: "3EE3670FBEA66FE6"
-			x: 14.06d
+			x: 14.65d
 			y: 12.725000000000001d
 			icon: {
 				id: "minecraft:clay"
@@ -806,7 +1187,7 @@
 		}
 		{
 			id: "260723F843366317"
-			x: 16.060000000000002d
+			x: 16.65d
 			y: 11.225000000000001d
 			icon: {
 				id: "minecraft:ender_eye"
@@ -840,7 +1221,7 @@
 		}
 		{
 			id: "1C3B7E2EEA87A725"
-			x: 18.46d
+			x: 19.05d
 			y: 9.725000000000001d
 			icon: {
 				id: "minecraft:experience_bottle"
@@ -870,7 +1251,7 @@
 		}
 		{
 			id: "39949DD23D8542B2"
-			x: 18.46d
+			x: 19.05d
 			y: 12.725000000000001d
 			icon: {
 				id: "minecraft:iron_ingot"
@@ -908,7 +1289,7 @@
 		}
 		{
 			id: "2A7DACF11F66F62A"
-			x: 18.46d
+			x: 19.05d
 			y: 11.225000000000001d
 			icon: {
 				id: "mekanism:basic_energy_cube"
@@ -942,7 +1323,7 @@
 		}
 		{
 			id: "784FBE05FF45B4E4"
-			x: 20.46d
+			x: 21.05d
 			y: 11.225000000000001d
 			icon: {
 				id: "minecraft:hopper"
@@ -1276,7 +1657,7 @@
 		{
 			id: "313D966E262BCFE9"
 			image: "kronwerke:textures/quests/hostile_networks/simulate.png"
-			x: 14.115d
+			x: 14.705d
 			y: 8.275d
 			width: 6.41d
 			height: 0.9d

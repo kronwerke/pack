@@ -50,8 +50,8 @@
 		}
 		{
 			id: "7E1BE432C8DB6E50"
-			x: 14.6d
-			y: 5.625d
+			x: 0.0d
+			y: 13.674999999999999d
 			icon: {
 				id: "justdirethings:raw_ferricore"
 				count: 1
@@ -90,8 +90,8 @@
 		}
 		{
 			id: "7471697E85315437"
-			x: 16.6d
-			y: 5.625d
+			x: 2.0d
+			y: 13.674999999999999d
 			icon: {
 				id: "justdirethings:ferricore_ingot"
 				count: 1
@@ -129,8 +129,8 @@
 		}
 		{
 			id: "7F0E750CD5DC2AA1"
-			x: 14.6d
-			y: 4.125d
+			x: 0.0d
+			y: 15.174999999999999d
 			icon: {
 				id: "justdirethings:coal_t1"
 				count: 1
@@ -169,8 +169,8 @@
 		}
 		{
 			id: "6419F71C4889F09D"
-			x: 16.6d
-			y: 4.125d
+			x: 2.0d
+			y: 15.174999999999999d
 			icon: {
 				id: "justdirethings:gooblock_tier2"
 				count: 1
@@ -213,8 +213,8 @@
 		}
 		{
 			id: "4989628BEC9FD746"
-			x: 18.6d
-			y: 5.875d
+			x: 4.0d
+			y: 15.174999999999999d
 			icon: {
 				id: "justdirethings:blazegold_ingot"
 				count: 1
@@ -259,14 +259,13 @@
 		}
 		{
 			id: "2476CE04E449338C"
-			x: 18.6d
-			y: 4.125d
+			x: 4.0d
+			y: 16.924999999999997d
 			icon: {
 				id: "justdirethings:coal_t2"
 				count: 1
 			}
 			optional: true
-			hide_dependency_lines: true
 			dependencies: [
 				"6419F71C4889F09D"
 				"7F0E750CD5DC2AA1"
@@ -730,7 +729,7 @@
 		}
 		{
 			id: "3381A3C719E9B490"
-			x: 0.25d
+			x: 9.65d
 			y: 16.674999999999997d
 			icon: {
 				id: "justdirethings:generatort1"
@@ -777,8 +776,8 @@
 		}
 		{
 			id: "6E88EA9560076981"
-			x: 2.65d
-			y: 16.674999999999997d
+			x: 12.05d
+			y: 18.424999999999997d
 			icon: {
 				id: "justdirethings:pocket_generator"
 				count: 1
@@ -816,7 +815,7 @@
 		}
 		{
 			id: "4654581A43834892"
-			x: 0.25d
+			x: 9.65d
 			y: 13.674999999999999d
 			icon: {
 				id: "justdirethings:blockbreakert1"
@@ -856,7 +855,7 @@
 		}
 		{
 			id: "4B9042DBF504BABB"
-			x: 2.65d
+			x: 12.05d
 			y: 13.674999999999999d
 			icon: {
 				id: "justdirethings:blockplacert1"
@@ -895,7 +894,7 @@
 		}
 		{
 			id: "758BB8B008C59E1B"
-			x: 4.65d
+			x: 14.05d
 			y: 13.674999999999999d
 			icon: {
 				id: "justdirethings:droppert1"
@@ -934,7 +933,7 @@
 		}
 		{
 			id: "40C0C0197F80B5B4"
-			x: 7.050000000000001d
+			x: 16.450000000000003d
 			y: 13.674999999999999d
 			icon: {
 				id: "justdirethings:sensort1"
@@ -973,7 +972,7 @@
 		}
 		{
 			id: "1931ED5B42A4DB77"
-			x: 9.05d
+			x: 18.450000000000003d
 			y: 13.674999999999999d
 			icon: {
 				id: "justdirethings:clickert1"
@@ -1012,13 +1011,12 @@
 		}
 		{
 			id: "2AF3D2BE896174C2"
-			x: 12.05d
-			y: 14.424999999999999d
+			x: 20.450000000000003d
+			y: 13.674999999999999d
 			icon: {
 				id: "justdirethings:itemcollector"
 				count: 1
 			}
-			hide_dependency_lines: true
 			dependencies: [
 				"1931ED5B42A4DB77"
 			]
@@ -1057,8 +1055,8 @@
 		}
 		{
 			id: "246711927734B9C2"
-			x: 2.65d
-			y: 15.174999999999999d
+			x: 12.05d
+			y: 16.674999999999997d
 			icon: {
 				id: "justdirethings:generatorfluidt1"
 				count: 1
@@ -1101,8 +1099,8 @@
 		}
 		{
 			id: "749C9E514BE7D62F"
-			x: 4.65d
-			y: 16.674999999999997d
+			x: 14.05d
+			y: 18.424999999999997d
 			icon: {
 				id: "justdirethings:portalgun"
 				count: 1
@@ -1147,7 +1145,7 @@
 		}
 		{
 			id: "3498BD79F8814B33"
-			x: 9.05d
+			x: 18.450000000000003d
 			y: 15.174999999999999d
 			icon: {
 				id: "justdirethings:blockswappert1"
@@ -1204,14 +1202,15 @@
 		}
 		{
 			id: "607C4773D367465D"
-			x: 14.05d
-			y: 14.424999999999999d
+			x: 0.75d
+			y: 23.025d
 			icon: {
 				id: "justdirethings:ferricore_block"
 				count: 1
 			}
 			size: 2.5d
 			shape: "gear"
+			hide_dependency_lines: true
 			dependencies: [
 				"2AF3D2BE896174C2"
 			]
@@ -1259,8 +1258,8 @@
 		}
 		{
 			id: "192FB7D25FFEA23C"
-			x: 17.25d
-			y: 14.424999999999999d
+			x: 3.95d
+			y: 23.025d
 			icon: {
 				id: "justdirethings:gooblock_tier2"
 				count: 1
@@ -1278,6 +1277,371 @@
 			rewards: [
 				{
 					id: "6963F1F6B3749CFE"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+		}
+		{
+			id: "24EAC21DC0DA7BDB"
+			x: 13.75d
+			y: 5.875d
+			icon: {
+				id: "justdirethings:upgrade_hammer"
+				count: 1
+			}
+			dependencies: [
+				"6A93D87D730FE408"
+			]
+			tasks: [
+				{
+					id: "41EEF3CBDE2DB82E"
+					type: "item"
+					item: {
+						id: "justdirethings:upgrade_hammer"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "255B6B3B80972D7B"
+					type: "item"
+					item: {
+						id: "minecraft:diamond"
+						count: 1
+					}
+					count: 2
+				}
+				{
+					id: "4E5829C6341DBA7C"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+		}
+		{
+			id: "34310FFCEB81B1EB"
+			x: 13.75d
+			y: 4.375d
+			icon: {
+				id: "justdirethings:upgrade_smelter"
+				count: 1
+			}
+			optional: true
+			dependencies: [
+				"6A93D87D730FE408"
+			]
+			tasks: [
+				{
+					id: "3D3F14CB3EAA82F1"
+					type: "item"
+					item: {
+						id: "justdirethings:upgrade_smelter"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "53646BF19B5DE4A3"
+					type: "item"
+					item: {
+						id: "minecraft:blaze_rod"
+						count: 1
+					}
+					count: 4
+				}
+				{
+					id: "129D90706851EDBA"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+		}
+		{
+			id: "379A5D8E0884E384"
+			x: 13.75d
+			y: 7.375d
+			icon: {
+				id: "justdirethings:blazegold_sword"
+				count: 1
+			}
+			optional: true
+			dependencies: [
+				"6A93D87D730FE408"
+			]
+			tasks: [
+				{
+					id: "5BA2076569F86CAF"
+					type: "item"
+					item: {
+						id: "justdirethings:blazegold_sword"
+						count: 1
+					}
+					count: 1
+				}
+				{
+					id: "5F1FF0384443596A"
+					type: "item"
+					item: {
+						id: "justdirethings:upgrade_cauterizewounds"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "564A9C5267FAFB25"
+					type: "item"
+					item: {
+						id: "minecraft:golden_apple"
+						count: 1
+					}
+					count: 2
+				}
+				{
+					id: "1936A5FFF3D5D379"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+		}
+		{
+			id: "4F0F188EA19FFC81"
+			x: 6.4d
+			y: 15.174999999999999d
+			icon: {
+				id: "justdirethings:totem_of_death_recall"
+				count: 1
+			}
+			dependencies: [
+				"4989628BEC9FD746"
+			]
+			tasks: [
+				{
+					id: "3F2C2FBDC850E585"
+					type: "item"
+					item: {
+						id: "justdirethings:totem_of_death_recall"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "128A4360E527F301"
+					type: "item"
+					item: {
+						id: "minecraft:ender_pearl"
+						count: 1
+					}
+					count: 4
+				}
+				{
+					id: "4E5D4F1B8E27F430"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+		}
+		{
+			id: "244ED98B6DF2405F"
+			x: 6.4d
+			y: 18.174999999999997d
+			icon: {
+				id: "justdirethings:creaturecatcher"
+				count: 1
+			}
+			dependencies: [
+				"4989628BEC9FD746"
+			]
+			tasks: [
+				{
+					id: "49B5B9C62F466337"
+					type: "item"
+					item: {
+						id: "justdirethings:creaturecatcher"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "13F8A6D6CCBF6BF7"
+					type: "item"
+					item: {
+						id: "minecraft:lead"
+						count: 1
+					}
+					count: 2
+				}
+				{
+					id: "28780262527CA304"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+		}
+		{
+			id: "646839758B334A0F"
+			x: 6.4d
+			y: 16.674999999999997d
+			icon: {
+				id: "justdirethings:experienceholder"
+				count: 1
+			}
+			dependencies: [
+				"4989628BEC9FD746"
+			]
+			tasks: [
+				{
+					id: "3C3DE3C877349DD6"
+					type: "item"
+					item: {
+						id: "justdirethings:experienceholder"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "50F0E7BBB888BCC2"
+					type: "item"
+					item: {
+						id: "minecraft:experience_bottle"
+						count: 1
+					}
+					count: 16
+				}
+				{
+					id: "4892661632BAE3A9"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+		}
+		{
+			id: "7242970D694B0A03"
+			x: 12.05d
+			y: 15.174999999999999d
+			icon: {
+				id: "justdirethings:machinesettingscopier"
+				count: 1
+			}
+			optional: true
+			dependencies: [
+				"4654581A43834892"
+			]
+			tasks: [
+				{
+					id: "1BA2B1BABD2FE91B"
+					type: "item"
+					item: {
+						id: "justdirethings:machinesettingscopier"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "6C55DFDB3886EB37"
+					type: "item"
+					item: {
+						id: "justdirethings:coal_t1"
+						count: 1
+					}
+					count: 8
+				}
+				{
+					id: "686FA5FA74C2F544"
+					type: "xp_levels"
+					xp_levels: 3
+				}
+			]
+		}
+		{
+			id: "7377A7885BC0F072"
+			x: 14.05d
+			y: 15.174999999999999d
+			icon: {
+				id: "justdirethings:fluidplacert1"
+				count: 1
+			}
+			optional: true
+			dependencies: [
+				"4B9042DBF504BABB"
+			]
+			tasks: [
+				{
+					id: "14E08BF55B8068C6"
+					type: "item"
+					item: {
+						id: "justdirethings:fluidplacert1"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "38F2638DC77104F3"
+					type: "item"
+					item: {
+						id: "minecraft:bucket"
+						count: 1
+					}
+					count: 2
+				}
+				{
+					id: "167C5A73C5E4AD9F"
+					type: "xp_levels"
+					xp_levels: 3
+				}
+			]
+		}
+		{
+			id: "2A0778EF409BE97F"
+			x: 14.05d
+			y: 16.674999999999997d
+			icon: {
+				id: "justdirethings:polymorphic_wand"
+				count: 1
+			}
+			optional: true
+			dependencies: [
+				"246711927734B9C2"
+			]
+			tasks: [
+				{
+					id: "4B3F12A1E949F7B7"
+					type: "item"
+					item: {
+						id: "justdirethings:polymorphic_wand"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "218E4782108BC680"
+					type: "item"
+					item: {
+						id: "justdirethings:blazegold_ingot"
+						count: 1
+					}
+					count: 2
+				}
+				{
+					id: "798799B75D7B33FF"
 					type: "xp_levels"
 					xp_levels: 5
 				}
@@ -1308,8 +1672,8 @@
 		{
 			id: "7F999278BC62DC21"
 			image: "kronwerke:textures/quests/dire_things/goo.png"
-			x: 15.44d
-			y: 2.6750000000000003d
+			x: 0.8400000000000001d
+			y: 12.224999999999998d
 			width: 2.68d
 			height: 0.9d
 			rotation: 0.0d
@@ -1318,7 +1682,7 @@
 		{
 			id: "6ED51371433E4B7A"
 			image: "kronwerke:textures/quests/dire_things/machines.png"
-			x: 1.34d
+			x: 10.74d
 			y: 12.224999999999998d
 			width: 3.68d
 			height: 0.9d
@@ -1328,8 +1692,8 @@
 		{
 			id: "75CD6538B65A0842"
 			image: "kronwerke:textures/quests/dire_things/factory.png"
-			x: 14.225000000000001d
-			y: 12.224999999999998d
+			x: 2.175d
+			y: 20.825d
 			width: 5.35d
 			height: 0.9d
 			rotation: 0.0d

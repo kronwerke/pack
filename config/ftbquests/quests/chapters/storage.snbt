@@ -331,7 +331,7 @@
 		{
 			id: "6CED9FD808309030"
 			x: 8.0d
-			y: 5.449999999999999d
+			y: 9.95d
 			icon: {
 				id: "sophisticatedbackpacks:void_upgrade"
 				count: 1
@@ -362,7 +362,7 @@
 		{
 			id: "2CC62AD2062CC1D3"
 			x: 10.0d
-			y: 8.45d
+			y: 5.449999999999999d
 			icon: {
 				id: "sophisticatedbackpacks:feeding_upgrade"
 				count: 1
@@ -397,7 +397,7 @@
 		{
 			id: "7915DD4065879162"
 			x: 12.0d
-			y: 5.449999999999999d
+			y: 9.95d
 			icon: {
 				id: "sophisticatedbackpacks:restock_upgrade"
 				count: 1
@@ -499,7 +499,7 @@
 		{
 			id: "5A9DEFF20142F889"
 			x: 10.0d
-			y: 5.449999999999999d
+			y: 9.95d
 			icon: {
 				id: "sophisticatedbackpacks:compacting_upgrade"
 				count: 1
@@ -539,7 +539,7 @@
 		{
 			id: "71A8C46488896708"
 			x: 12.0d
-			y: 8.45d
+			y: 5.449999999999999d
 			icon: {
 				id: "sophisticatedbackpacks:tank_upgrade"
 				count: 1
@@ -579,7 +579,7 @@
 		{
 			id: "7A24D44A10ADC82D"
 			x: 14.0d
-			y: 5.449999999999999d
+			y: 9.95d
 			icon: {
 				id: "sophisticatedbackpacks:filter_upgrade"
 				count: 1
@@ -603,9 +603,200 @@
 			]
 		}
 		{
+			id: "1D676F3F50213DC1"
+			x: 14.0d
+			y: 11.45d
+			icon: {
+				id: "sophisticatedbackpacks:refill_upgrade"
+				count: 1
+			}
+			optional: true
+			dependencies: [
+				"7915DD4065879162"
+			]
+			tasks: [
+				{
+					id: "1215AC02C686F9DD"
+					type: "item"
+					item: {
+						id: "sophisticatedbackpacks:refill_upgrade"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "63BE09105E4A417F"
+					type: "item"
+					item: {
+						id: "minecraft:torch"
+						count: 1
+					}
+					count: 32
+				}
+				{
+					id: "161CC71F9BF801B6"
+					type: "xp_levels"
+					xp_levels: 3
+				}
+			]
+		}
+		{
+			id: "628049EA9161CA53"
+			x: 10.0d
+			y: 8.45d
+			icon: {
+				id: "sophisticatedbackpacks:mob_catcher_upgrade"
+				count: 1
+			}
+			optional: true
+			dependencies: [
+				"584B3705D44CD470"
+			]
+			tasks: [
+				{
+					id: "2B5272BE7E6833E3"
+					type: "item"
+					item: {
+						id: "sophisticatedbackpacks:mob_catcher_upgrade"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "175EC6F95A34FB9D"
+					type: "item"
+					item: {
+						id: "minecraft:lead"
+						count: 1
+					}
+					count: 2
+				}
+				{
+					id: "3D48BA93E12F4734"
+					type: "xp_levels"
+					xp_levels: 3
+				}
+			]
+		}
+		{
+			id: "3948F3EBDC55383B"
+			x: 8.0d
+			y: 5.449999999999999d
+			icon: {
+				id: "sophisticatedbackpacks:anvil_upgrade"
+				count: 1
+			}
+			optional: true
+			dependencies: [
+				"427B30EC8AC36F66"
+			]
+			tasks: [
+				{
+					id: "2A8BDBAA3190E5D2"
+					type: "item"
+					item: {
+						id: "sophisticatedbackpacks:anvil_upgrade"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "786ACDFEE9482E8F"
+					type: "item"
+					item: {
+						id: "minecraft:iron_block"
+						count: 1
+					}
+					count: 1
+				}
+				{
+					id: "5FB92150BBF5144B"
+					type: "xp_levels"
+					xp_levels: 3
+				}
+			]
+		}
+		{
+			id: "37E1A7E54EDBC0F0"
+			x: 10.0d
+			y: 3.9499999999999997d
+			icon: {
+				id: "sophisticatedbackpacks:auto_smelting_upgrade"
+				count: 1
+			}
+			optional: true
+			dependencies: [
+				"21C442B20A631710"
+			]
+			tasks: [
+				{
+					id: "76C33008DE665ABF"
+					type: "item"
+					item: {
+						id: "sophisticatedbackpacks:auto_smelting_upgrade"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "18C5FEFB06D90DB7"
+					type: "item"
+					item: {
+						id: "minecraft:coal"
+						count: 1
+					}
+					count: 32
+				}
+				{
+					id: "6751E46835CE337D"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+		}
+		{
+			id: "7145CCA78C92AFDA"
+			x: 6.0d
+			y: 8.45d
+			icon: {
+				id: "sophisticatedbackpacks:jukebox_upgrade"
+				count: 1
+			}
+			optional: true
+			dependencies: [
+				"2113895AA38387CC"
+			]
+			tasks: [
+				{
+					id: "5B6DB1E3505D5C61"
+					type: "item"
+					item: {
+						id: "sophisticatedbackpacks:jukebox_upgrade"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "5F0C664148251F29"
+					type: "xp_levels"
+					xp_levels: 3
+				}
+			]
+		}
+		{
 			id: "470663EA49DDC090"
 			x: 0.375d
-			y: 13.549999999999999d
+			y: 16.549999999999997d
 			icon: {
 				id: "functionalstorage:oak_1"
 				count: 1
@@ -643,7 +834,7 @@
 		{
 			id: "223E32DC044F6206"
 			x: 2.975d
-			y: 13.549999999999999d
+			y: 16.549999999999997d
 			icon: {
 				id: "functionalstorage:oak_2"
 				count: 1
@@ -677,7 +868,7 @@
 		{
 			id: "2738016492573B84"
 			x: 4.975d
-			y: 13.549999999999999d
+			y: 16.549999999999997d
 			icon: {
 				id: "functionalstorage:oak_4"
 				count: 1
@@ -716,7 +907,7 @@
 		{
 			id: "34EF9BAD0CC68B94"
 			x: 6.975d
-			y: 13.549999999999999d
+			y: 16.549999999999997d
 			icon: {
 				id: "functionalstorage:configuration_tool"
 				count: 1
@@ -755,7 +946,7 @@
 		{
 			id: "49DDDBA13B3BC629"
 			x: 8.975d
-			y: 13.549999999999999d
+			y: 16.549999999999997d
 			icon: {
 				id: "functionalstorage:puller_upgrade"
 				count: 1
@@ -788,13 +979,12 @@
 		}
 		{
 			id: "280777933A7972A3"
-			x: 15.975d
-			y: 12.799999999999999d
+			x: 10.975d
+			y: 18.049999999999997d
 			icon: {
 				id: "functionalstorage:pusher_upgrade"
 				count: 1
 			}
-			hide_dependency_lines: true
 			dependencies: [
 				"49DDDBA13B3BC629"
 			]
@@ -828,8 +1018,8 @@
 		}
 		{
 			id: "4E9F87181606AF4A"
-			x: 17.975d
-			y: 15.049999999999999d
+			x: 12.975d
+			y: 18.049999999999997d
 			icon: {
 				id: "functionalstorage:redstone_upgrade"
 				count: 1
@@ -864,7 +1054,7 @@
 		{
 			id: "17617FAA55C09B6D"
 			x: 4.975d
-			y: 15.049999999999999d
+			y: 18.049999999999997d
 			icon: {
 				id: "functionalstorage:framed_1"
 				count: 1
@@ -899,7 +1089,7 @@
 		{
 			id: "1D58EEC36BD48654"
 			x: 6.975d
-			y: 12.049999999999999d
+			y: 15.049999999999999d
 			icon: {
 				id: "functionalstorage:fluid_1"
 				count: 1
@@ -934,7 +1124,7 @@
 		{
 			id: "490915287F39E323"
 			x: 8.975d
-			y: 12.049999999999999d
+			y: 15.049999999999999d
 			icon: {
 				id: "functionalstorage:water_generator_upgrade"
 				count: 1
@@ -965,7 +1155,7 @@
 		{
 			id: "136D3B24716092EE"
 			x: 8.975d
-			y: 15.049999999999999d
+			y: 18.049999999999997d
 			icon: {
 				id: "functionalstorage:void_upgrade"
 				count: 1
@@ -996,7 +1186,7 @@
 		{
 			id: "2BDAE54068A44274"
 			x: 10.975d
-			y: 13.549999999999999d
+			y: 16.549999999999997d
 			icon: {
 				id: "functionalstorage:collector_upgrade"
 				count: 1
@@ -1027,7 +1217,7 @@
 		{
 			id: "7229F11F3730A0E7"
 			x: 12.975d
-			y: 13.549999999999999d
+			y: 16.549999999999997d
 			icon: {
 				id: "functionalstorage:dripping_upgrade"
 				count: 1
@@ -1068,7 +1258,7 @@
 		{
 			id: "54A8F4160E0A0FD1"
 			x: 0.375d
-			y: 20.15d
+			y: 23.15d
 			icon: {
 				id: "sophisticatedstorage:barrel"
 				count: 1
@@ -1106,7 +1296,7 @@
 		{
 			id: "277F8A83983678C7"
 			x: 2.975d
-			y: 20.15d
+			y: 23.15d
 			icon: {
 				id: "sophisticatedstorage:basic_to_copper_tier_upgrade"
 				count: 1
@@ -1140,7 +1330,7 @@
 		{
 			id: "78C129DB3D7AD17D"
 			x: 4.975d
-			y: 20.15d
+			y: 23.15d
 			icon: {
 				id: "sophisticatedstorage:basic_to_iron_tier_upgrade"
 				count: 1
@@ -1179,7 +1369,7 @@
 		{
 			id: "53514A25A75A41BB"
 			x: 6.975d
-			y: 20.15d
+			y: 23.15d
 			icon: {
 				id: "sophisticatedstorage:upgrade_base"
 				count: 1
@@ -1213,7 +1403,7 @@
 		{
 			id: "446DEBB1C869A0A6"
 			x: 8.975d
-			y: 20.15d
+			y: 23.15d
 			icon: {
 				id: "sophisticatedstorage:stack_upgrade_tier_1"
 				count: 1
@@ -1252,7 +1442,7 @@
 		{
 			id: "45AA055EE166E261"
 			x: 10.975d
-			y: 20.15d
+			y: 23.15d
 			icon: {
 				id: "sophisticatedstorage:hopper_upgrade"
 				count: 1
@@ -1291,7 +1481,7 @@
 		{
 			id: "4CEC503F60C10794"
 			x: 12.975d
-			y: 20.15d
+			y: 23.15d
 			icon: {
 				id: "sophisticatedstorage:controller"
 				count: 1
@@ -1337,7 +1527,7 @@
 		{
 			id: "3237EF8B25F399B0"
 			x: 2.975d
-			y: 18.65d
+			y: 24.65d
 			icon: {
 				id: "sophisticatedstorage:chest"
 				count: 1
@@ -1403,7 +1593,7 @@
 		{
 			id: "124EDDA24E72E84C"
 			x: 10.975d
-			y: 18.65d
+			y: 21.65d
 			icon: {
 				id: "sophisticatedstorage:limited_barrel_1"
 				count: 1
@@ -1434,7 +1624,7 @@
 		{
 			id: "44E3D7B177AD28B8"
 			x: 10.975d
-			y: 21.65d
+			y: 24.65d
 			icon: {
 				id: "sophisticatedstorage:stack_upgrade_tier_1_plus"
 				count: 1
@@ -1474,7 +1664,7 @@
 		{
 			id: "7180B9E2F0DEBA48"
 			x: 15.375d
-			y: 21.65d
+			y: 24.65d
 			icon: {
 				id: "sophisticatedstorage:storage_io"
 				count: 1
@@ -1514,7 +1704,7 @@
 		{
 			id: "42BFA972276FD357"
 			x: 15.375d
-			y: 20.15d
+			y: 23.15d
 			icon: {
 				id: "sophisticatedstorage:storage_link"
 				count: 1
@@ -1549,7 +1739,7 @@
 		{
 			id: "1F39DA19C699832B"
 			x: 4.975d
-			y: 18.65d
+			y: 24.65d
 			icon: {
 				id: "sophisticatedstorage:packing_tape"
 				count: 1
@@ -1584,7 +1774,7 @@
 		{
 			id: "714DDB6D632143C6"
 			x: 6.975d
-			y: 21.65d
+			y: 24.65d
 			icon: {
 				id: "sophisticatedstorage:iron_barrel"
 				count: 1
@@ -1608,9 +1798,177 @@
 			]
 		}
 		{
+			id: "66D6605BE9DEE23A"
+			x: 8.975d
+			y: 21.65d
+			icon: {
+				id: "sophisticatedstorage:magnet_upgrade"
+				count: 1
+			}
+			dependencies: [
+				"53514A25A75A41BB"
+			]
+			tasks: [
+				{
+					id: "18A580EE5B20DE8E"
+					type: "item"
+					item: {
+						id: "sophisticatedstorage:magnet_upgrade"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "59E49847E7831B25"
+					type: "item"
+					item: {
+						id: "minecraft:ender_pearl"
+						count: 1
+					}
+					count: 2
+				}
+				{
+					id: "202319FADAEBF57E"
+					type: "xp_levels"
+					xp_levels: 4
+				}
+			]
+		}
+		{
+			id: "351037E72765B497"
+			x: 8.975d
+			y: 26.15d
+			icon: {
+				id: "sophisticatedstorage:compacting_upgrade"
+				count: 1
+			}
+			optional: true
+			dependencies: [
+				"53514A25A75A41BB"
+			]
+			tasks: [
+				{
+					id: "34838653062D8E93"
+					type: "item"
+					item: {
+						id: "sophisticatedstorage:compacting_upgrade"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "7B93FEE63403840A"
+					type: "item"
+					item: {
+						id: "minecraft:piston"
+						count: 1
+					}
+					count: 2
+				}
+				{
+					id: "24F2A9B9A3DF8F34"
+					type: "xp_levels"
+					xp_levels: 3
+				}
+			]
+		}
+		{
+			id: "13CDD1AB8FAB07A3"
+			x: 10.975d
+			y: 26.15d
+			icon: {
+				id: "sophisticatedstorage:compression_upgrade"
+				count: 1
+			}
+			optional: true
+			dependencies: [
+				"351037E72765B497"
+			]
+			tasks: [
+				{
+					id: "291BE6B152546B48"
+					type: "item"
+					item: {
+						id: "sophisticatedstorage:compression_upgrade"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "1086E57AE56A0D84"
+					type: "item"
+					item: {
+						id: "minecraft:iron_ingot"
+						count: 1
+					}
+					count: 9
+				}
+				{
+					id: "178C6D23F6BCB0E4"
+					type: "xp_levels"
+					xp_levels: 4
+				}
+			]
+		}
+		{
+			id: "3425074AB5460589"
+			x: 4.975d
+			y: 26.15d
+			icon: {
+				id: "sophisticatedstorage:paintbrush"
+				count: 1
+			}
+			optional: true
+			dependencies: [
+				"3237EF8B25F399B0"
+			]
+			tasks: [
+				{
+					id: "14289A22B78516C7"
+					type: "item"
+					item: {
+						id: "sophisticatedstorage:decoration_table"
+						count: 1
+					}
+					count: 1
+				}
+				{
+					id: "128E99CDD8D0F68D"
+					type: "item"
+					item: {
+						id: "sophisticatedstorage:paintbrush"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "1131FD3FE5B94B3B"
+					type: "item"
+					item: {
+						id: "minecraft:white_wool"
+						count: 1
+					}
+					count: 8
+				}
+				{
+					id: "501089EFC2D3DD73"
+					type: "xp_levels"
+					xp_levels: 3
+				}
+			]
+		}
+		{
 			id: "39465359444BFF1F"
 			x: 18.625d
-			y: 18.9d
+			y: 21.9d
 			icon: {
 				id: "create:item_vault"
 				count: 1
@@ -1652,7 +2010,7 @@
 		{
 			id: "74A151BC31EC2754"
 			x: 21.025d
-			y: 18.9d
+			y: 21.9d
 			icon: {
 				id: "create:item_vault"
 				count: 1
@@ -1696,7 +2054,7 @@
 		{
 			id: "4D9AC8CB35883A98"
 			x: 0.25d
-			y: 25.5d
+			y: 30.0d
 			icon: {
 				id: "trashcans:item_trash_can"
 				count: 1
@@ -1730,7 +2088,7 @@
 		{
 			id: "1DF911F8B18CBBEF"
 			x: 2.65d
-			y: 25.5d
+			y: 30.0d
 			icon: {
 				id: "trashcans:liquid_trash_can"
 				count: 1
@@ -1761,7 +2119,7 @@
 		{
 			id: "134205C461FAB7B1"
 			x: 4.65d
-			y: 25.5d
+			y: 30.0d
 			icon: {
 				id: "trashcans:ultimate_trash_can"
 				count: 1
@@ -1792,7 +2150,7 @@
 		{
 			id: "6EB6BEEA844AAABE"
 			x: 2.65d
-			y: 27.0d
+			y: 31.5d
 			icon: {
 				id: "supplementaries:sack"
 				count: 1
@@ -1826,8 +2184,8 @@
 		}
 		{
 			id: "301C3EC70E22F8DA"
-			x: 17.975d
-			y: 12.799999999999999d
+			x: 16.725d
+			y: 15.799999999999999d
 			icon: {
 				id: "sophisticatedstorage:iron_barrel"
 				count: 1
@@ -1894,8 +2252,8 @@
 		}
 		{
 			id: "2028305A0B04BDE2"
-			x: 21.175d
-			y: 12.799999999999999d
+			x: 19.925d
+			y: 15.799999999999999d
 			icon: {
 				id: "minecraft:chest"
 				count: 1
@@ -1944,7 +2302,7 @@
 			id: "732DEFC12CBEC759"
 			image: "kronwerke:textures/quests/storage/drawers.png"
 			x: 1.475d
-			y: 10.599999999999998d
+			y: 13.599999999999998d
 			width: 3.95d
 			height: 0.9d
 			rotation: 0.0d
@@ -1954,7 +2312,7 @@
 			id: "79DAC718A15268E9"
 			image: "kronwerke:textures/quests/storage/goal.png"
 			x: 16.169999999999998d
-			y: 10.599999999999998d
+			y: 13.599999999999998d
 			width: 1.39d
 			height: 0.9d
 			rotation: 0.0d
@@ -1964,7 +2322,7 @@
 			id: "7CD503A73A97BE09"
 			image: "kronwerke:textures/quests/storage/chests.png"
 			x: 2.25d
-			y: 17.2d
+			y: 20.2d
 			width: 5.5d
 			height: 0.9d
 			rotation: 0.0d
@@ -1974,7 +2332,7 @@
 			id: "310DAA26300E71B8"
 			image: "kronwerke:textures/quests/storage/vault.png"
 			x: 20.255d
-			y: 17.2d
+			y: 20.2d
 			width: 4.76d
 			height: 0.9d
 			rotation: 0.0d
@@ -1984,7 +2342,7 @@
 			id: "3C96013BD6557E5E"
 			image: "kronwerke:textures/quests/storage/cleanup.png"
 			x: 1.185d
-			y: 23.8d
+			y: 28.3d
 			width: 3.37d
 			height: 0.9d
 			rotation: 0.0d

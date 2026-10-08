@@ -150,6 +150,19 @@ quests = [
           rewards=[reward_item("mekanism:ingot_steel", 8)],
           deps=["steel"], optional=True),
 
+    quest("paxel", 17.5, 2, "&7Bau eine Stahlpaxel",
+          subtitle="Drei Werkzeuge, ein Slot.",
+          description=[
+              "Leg &6Stahlaxt&r, &6Stahlspitzhacke&r und &6Stahlschaufel&r nebeneinander in die obere Reihe, darunter zwei &6Eisenbarren&r als Stiel. Heraus kommt die &6Stahlpaxel&r.",
+              "",
+              "Sie baut Stein, Holz und Erde gleich schnell ab, du wechselst beim Graben nie mehr das Werkzeug. Verzaubern kannst du sie wie jede Spitzhacke.",
+              "",
+              "Paxel gibt es für jedes Material von Mekanism Tools, auch für Holz, Stein, Eisen, Diamant und Netherit.",
+          ],
+          tasks=[task_item("mekanismtools:steel_paxel", 1)],
+          rewards=[reward_item("mekanism:ingot_steel", 8), reward_xp(5)],
+          deps=["tools"], icon="mekanismtools:steel_paxel", optional=True),
+
     quest("tube", 7.5, 3, "&6Hol dir Elektronenröhren",
           subtitle="Mekanism denkt mit Create-Röhren.",
           description=[
@@ -254,6 +267,32 @@ quests = [
           rewards=[reward_item("minecraft:oak_log", 32)],
           deps=["crusher"], optional=True),
 
+    quest("cardboard", 5, 10.5, "&eFalte eine Kartonschachtel",
+          subtitle="Umziehen, ohne auszuräumen.",
+          description=[
+              "Vier &6Sägespäne&r aus dem Präzisionssägewerk im Quadrat ergeben eine &6Kartonschachtel&r.",
+              "",
+              "&eSchleichen und Rechtsklick&r auf einen Block packt ihn samt Inhalt ein: eine volle Truhe, eine Maschine mitten in der Arbeit. Setz die Schachtel woanders ab, und der Block steht dort wieder, mit allem, was drin war.",
+              "",
+              "Betten, Türen, Prüfungsspawner und Tresore lassen sich nicht einpacken.",
+          ],
+          tasks=[task_item("mekanism:cardboard_box", 2)],
+          rewards=[reward_item("minecraft:oak_log", 16), reward_xp(3)],
+          deps=["sawmill"], icon="mekanism:cardboard_box", optional=True),
+
+    quest("seismic", 0, 10.5, "&6Hör in den Boden",
+          subtitle="Seismischer Vibrator und Lesegerät.",
+          description=[
+              "&6Seismischer Vibrator:&r oben Zinn, Lapislazuli, Zinn, Mitte Schaltkreis, &6Stahlgehäuse&r, Schaltkreis, unten drei Zinn. &6Seismisches Lesegerät:&r Stahl rundherum, oben in der Mitte Lapislazuli, in der Mitte ein &6Energietablett&r.",
+              "",
+              "Stell den Vibrator auf und gib ihm Strom. Er bringt seinen ganzen Chunk zum Schwingen. Stell dich in denselben Chunk und benutz das geladene Lesegerät: Es zeigt dir jeden Block der Säule unter dir bis zum Grundgestein, mit der Häufigkeit jeder Sorte.",
+              "",
+              "So weißt du vor dem ersten Spatenstich, ob unter der Basis Osmium, Diamant oder nur Stein liegt.",
+          ],
+          tasks=[task_item("mekanism:seismic_vibrator", 1), task_item("mekanism:seismic_reader", 1)],
+          rewards=[reward_item("mekanism:ingot_tin", 8), reward_xp(5)],
+          deps=["enrichment"], icon="mekanism:seismic_vibrator", optional=True),
+
     # ---- Energie ----------------------------------------------------------------------
     quest("heat_gen", 8, 8, "&6&lBau einen Wärmegenerator",
           subtitle="Strom aus allem, was brennt.",
@@ -347,6 +386,32 @@ quests = [
           rewards=[reward_item("mekanism:alloy_infused", 8), reward_xp(5)],
           deps=["cube"], icon="mekanismgenerators:gas_burning_generator"),
 
+    quest("chargepad", 13, 10, "&aStell dich auf ein Ladepad",
+          subtitle="Laden im Vorbeigehen.",
+          description=[
+              "Drei &6Polierte Schwarzsteindruckplatten&r oben, darunter Stahl, &6Energietablett&r, Stahl.",
+              "",
+              "Häng es per Kabel an deinen Würfel. Wer darauf steht, bekommt alles mit Stromspeicher im Inventar und in der Rüstung geladen, egal aus welchem Mod. Später parkt hier auch der Robit.",
+              "",
+              "Leg es vor die Tür der Werkstatt, dann ist das Tablett jedes Mal voll, wenn du hinausgehst.",
+          ],
+          tasks=[task_item("mekanism:chargepad", 1)],
+          rewards=[reward_item("minecraft:polished_blackstone_pressure_plate", 3), reward_xp(3)],
+          deps=["cube"], icon="mekanism:chargepad", optional=True),
+
+    quest("free_runners", 10.5, 10.5, "&bZieh Freiläufer an",
+          subtitle="Kein Fallschaden, keine Stufe zu hoch.",
+          description=[
+              "Schaltkreise oben links und rechts, darunter zwei &6Infundierte Legierungen&r, unten zwei &6Energietabletts&r, die Mitte bleibt frei.",
+              "",
+              "Die Stiefel laufen mit Strom: Du steigst ohne Springen eine Stufe hoch, und Fallschaden schlucken sie ganz, solange Strom drin ist. Pro halbem Herz kostet das &e50 J&r, voll fassen sie &e64 000 J&r.",
+              "",
+              "&eGepanzerte Freiläufer:&r ein Stahlblock oben, Diamantstaub links und rechts der Freiläufer, unten zwei Bronzebarren. Dazu &d3&r Rüstung.",
+          ],
+          tasks=[task_item("mekanism:free_runners", 1)],
+          rewards=[reward_item("mekanism:energy_tablet", 1), reward_xp(5)],
+          deps=["tablet"], icon="mekanism:free_runners", optional=True),
+
     quest("ethene", 20.5, 8, "&e&lMach Ethen in der Druckreaktionskammer",
           subtitle="Bio-Brennstoff, Wasser, Wasserstoff.",
           description=[
@@ -415,6 +480,32 @@ quests = [
           tasks=[task_item("mekanism:jetpack", 1)],
           rewards=[reward_item("mekanism:ingot_bronze", 8), reward_xp(5)],
           deps=["chem_tank"], optional=True),
+
+    quest("jetpack_armored", 5, 14.75, "&ePanzer dein Jetpack",
+          subtitle="Fliegen, ohne die Brustplatte abzulegen.",
+          description=[
+              "Oben links und rechts &6Diamantstaub&r, in der Mitte Bronze, &6Stahlblock&r, Bronze, unten in der Mitte dein &6Jetpack&r. Der Wasserstoff im Tank bleibt erhalten.",
+              "",
+              "Das Jetpack sitzt im Brustplatz, also trägst du damit keine Rüstung. Das &6Gepanzerte Jetpack&r bringt &d8&r Rüstung und &d2&r Härte mit, so viel wie eine Diamantbrustplatte.",
+              "",
+              "Diamantstaub macht der Zerkleinerer aus einem Diamanten.",
+          ],
+          tasks=[task_item("mekanism:jetpack_armored", 1)],
+          rewards=[reward_item("mekanism:ingot_bronze", 8), reward_xp(5)],
+          deps=["jetpack"], icon="mekanism:jetpack_armored", optional=True),
+
+    quest("scuba", 7.5, 14.75, "&bTauch mit Sauerstoff",
+          subtitle="Tauchermaske und Taucherflasche.",
+          description=[
+              "&6Tauchermaske:&r oben Stahl, Mitte Glas, Schaltkreis, Glas, unten links und rechts Stahl. &6Taucherflasche:&r oben ein Schaltkreis, Mitte Legierung, &6Einfacher Chemikalienbehälter&r, Legierung, unten drei Stahl.",
+              "",
+              "Die Flasche fasst &e24 000 mB Sauerstoff&r. Füllen wie beim Jetpack: in den Itemslot eines Chemikalienbehälters voller Sauerstoff legen. Den Sauerstoff liefert der Elektrolyseur.",
+              "",
+              "Zieh beides an und schalte die Flasche ein. Solange Sauerstoff drin ist, ertrinkst du nicht. Ideal für Ozeanmonumente und Salz unter Wasser.",
+          ],
+          tasks=[task_item("mekanism:scuba_mask", 1), task_item("mekanism:scuba_tank", 1)],
+          rewards=[reward_item("minecraft:prismarine_shard", 8), reward_xp(5)],
+          deps=["chem_tank"], icon="mekanism:scuba_mask", optional=True),
 
     # ---- Gase -------------------------------------------------------------------------
     gas("gas_hydrogen", 13.5, 13, "&fWasserstoff",
@@ -530,6 +621,32 @@ quests = [
           rewards=[reward_item("mekanism:basic_logistical_transporter", 8)],
           deps=["configurator"]),
 
+    quest("config_card", 0, 25, "&3Kopier Einstellungen mit der Konfigurationskarte",
+          subtitle="Einmal einstellen, zehnmal einfügen.",
+          description=[
+              "Vier &6Infundierte Legierungen&r im Kreuz um einen &6Einfachen Steuerschaltkreis&r.",
+              "",
+              "&eSchleichen und Rechtsklick&r auf eine fertig eingestellte Maschine liest Seitenkonfiguration und Auto-Auswurf ein. &eRechtsklick&r auf die nächste Maschine gleicher Art schreibt alles hinein. Schleichen und Rechtsklick in die Luft leert die Karte.",
+              "",
+              "Bei einer Reihe aus fünf Fabriken spart das jedes Mal fünf Fenster voller Farbklötze.",
+          ],
+          tasks=[task_item("mekanism:configuration_card", 1)],
+          rewards=[reward_item("mekanism:alloy_infused", 4), reward_xp(3)],
+          deps=["configurator"], icon="mekanism:configuration_card", optional=True),
+
+    quest("personal_chest", 0, 27, "&3Stell eine Persönliche Truhe auf",
+          subtitle="54 Plätze, die nur dir gehören.",
+          description=[
+              "Oben Stahl, Glas, Stahl, Mitte Truhe, Schaltkreis, Truhe, unten drei Stahl.",
+              "",
+              "Sie hat &e54&r Plätze wie eine große Truhe. Wer sie öffnen darf, stellst du im Sicherheitsreiter ein. Abgebaut behält sie ihren Inhalt, und als Gegenstand öffnest du sie mit Rechtsklick direkt aus dem Inventar: ein Rucksack.",
+              "",
+              "Der Chemische Oxidierer und später Robit und QIO brauchen sie als Zutat.",
+          ],
+          tasks=[task_item("mekanism:personal_chest", 1)],
+          rewards=[reward_item("minecraft:chest", 4), reward_xp(3)],
+          deps=["configurator"], icon="mekanism:personal_chest", optional=True),
+
     quest("sorter", 2.5, 25, "&eStell einen Logistischen Sortierer auf",
           subtitle="Filtert aus Kisten in Transporter.",
           description=[
@@ -575,6 +692,19 @@ quests = [
     factory("f_sawing", 13.5, "&aEinfache Sägefabrik", "Drei Sägen.",
             ["Das Präzisionssägewerk mit Installateur. Für Holzfarmen, die Bretter in Mengen brauchen."],
             "mekanism:basic_sawing_factory"),
+
+    quest("oredict", 7.5, 27, "&3Vereinheitliche Metalle",
+          subtitle="Kupfer ist Kupfer, egal aus welchem Mod.",
+          description=[
+              "Erst das &6Lexikon&r: ein Schaltkreis über einem Buch. Dann das &6Erz-Diagnosegerät&r (Oredictionificator): oben Stahl, Glasscheibe, Stahl, Mitte Schaltkreis, Lexikon, Schaltkreis, unten Stahl, Truhe, Stahl.",
+              "",
+              "Gib ihm einen Filter mit einem Tag, etwa &ec:ingots/copper&r, und wähl mit den Pfeilen, welcher Barren herauskommen soll. Alles mit diesem Tag wird dann in genau diese Sorte getauscht. Mit dem Lexikon in der Hand siehst du per Rechtsklick die Tags jedes Gegenstands.",
+              "",
+              "&eErlaubt sind auf Kronwerke:&r Staub, Barren, Nuggets, Erze, Rohes Erz und Speicherblöcke. Hinter die Stahlstraße gestellt, landen Stahl aus Immersive Engineering und Stahl aus Mekanism als eine Sorte in der Kiste.",
+          ],
+          tasks=[task_item("mekanism:oredictionificator", 1)],
+          rewards=[reward_item("mekanism:basic_control_circuit", 2), reward_xp(5)],
+          deps=["sorter"], icon="mekanism:oredictionificator", optional=True),
 
     quest("assemblicator", 7.5, 25, "&3Lass den Formelfertigungsfabrikator craften",
           subtitle="Die erste Autocrafting-Maschine von Mekanism.",

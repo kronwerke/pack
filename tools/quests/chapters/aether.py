@@ -264,7 +264,7 @@ quests = [
           ],
           tasks=[task_item("aether:icestone", 8), task_item("aether:freezer", 1)],
           rewards=[reward_item("aether:icestone", 8), reward_item("minecraft:packed_ice", 8), reward_xp(5)],
-          deps=["zanite"], icon="aether:freezer"),
+          deps=["zanite"], icon="aether:freezer", section="benches"),
 
     # ---- Moas ----------------------------------------------------------------
     quest("moa_egg", 11, 9, "&eFinde ein Moa-Ei",
@@ -496,6 +496,96 @@ quests = [
           tasks=[task_checkmark("Verstanden")],
           rewards=[reward_xp(5)],
           deps=["queen"], icon="aether:hellfire_stone", optional=True),
+    # ---- Neu ------------------------------------------------------------------
+    quest("ae_enchanted_grass", -2.5, 10.8, "&aVerzaubere das Gras",
+          subtitle="Mehr Beeren, keine Aechor Plants.",
+          description=[
+              "Rechtsklick mit einem &6Ambrosium Shard&r auf &6Aether Grass&r macht daraus &6Enchanted Aether Grass&r. Blue Berry Bushes darauf tragen mehr Beeren.",
+              "",
+              "Pflanz eine Blume auf verzaubertes Gras. In der Nähe wachsen dann keine &6Aechor Plants&r mehr, die dich mit Gift bespucken. So wird deine Insel zum sicheren Garten.",
+          ],
+          tasks=[task_advancement("aether:prevent_aechor_petal_spawning", "Eine Blume auf Enchanted Aether Grass gepflanzt")],
+          rewards=[reward_item("aether:ambrosium_shard", 16), reward_xp(5)],
+          deps=["blue_berry", "ambrosium"], icon="aether:enchanted_aether_grass_block", optional=True),
+
+    quest("ae_aerogel", 11, 2.2, "&bGieß Lava in den Aether",
+          subtitle="Was oben aus Lava wird.",
+          description=[
+              "Gieß einen Eimer &6Lava&r im Aether aus. In der Kälte dort oben wird sie sofort zu &6Aerogel&r.",
+              "",
+              "Aerogel ist durchsichtig und hält Explosionen aus. Gut für Fenster, die ein Creeper nicht wegsprengt, und als Treppen, Stufen und Mauern.",
+          ],
+          tasks=[task_item("aether:aerogel", 8)],
+          rewards=[reward_item("minecraft:lava_bucket", 1), reward_xp(5)],
+          deps=["holystone"], icon="aether:aerogel", optional=True),
+
+    quest("ae_zanite_armor", 16, -1, "&5Trag die volle Zanite-Rüstung",
+          subtitle="Schutz wie Eisen, aus dem Himmel.",
+          description=[
+              "Schmiede &6Helm&r, &6Harnisch&r, &6Beinschutz&r und &6Stiefel&r aus Zanite Gemstones, wie bei Eisen: zusammen &e24 Gemstones&r. Zanite schützt genau so gut wie Eisen.",
+              "",
+              "Abgenutzte Zanite-Teile reparierst du im &6Altar&r, Ambrosium ist der Brennstoff. Mit den &6Zanite Gloves&r aus dem Kapitel weiter rechts ist das Set komplett.",
+          ],
+          tasks=[task_item("aether:zanite_helmet", 1), task_item("aether:zanite_chestplate", 1),
+                 task_item("aether:zanite_leggings", 1), task_item("aether:zanite_boots", 1)],
+          rewards=[reward_item("aether:zanite_gemstone", 8), reward_table("s2_common"), reward_xp(8)],
+          deps=["zanite_gear"], icon="aether:zanite_chestplate"),
+
+    quest("ae_remedy", 6, 5.6, "&aFüll einen Remedy Bucket",
+          subtitle="Das Gegengift des Aethers.",
+          description=[
+              "Halt einen leeren &6Skyroot Bucket&r an eine lebende &6Aechor Plant&r, und er füllt sich mit Gift. Im &6Altar&r verzaubert wird daraus der &6Skyroot Remedy Bucket&r.",
+              "",
+              "Trink ihn, wenn dich Aechor Plants oder Cockatrices vergiftet haben, und das Gift ist weg. Pack immer einen ein, bevor du in einen Dungeon gehst.",
+          ],
+          tasks=[task_item("aether:skyroot_remedy_bucket", 1)],
+          rewards=[reward_item("aether:white_apple", 2), reward_xp(5)],
+          deps=["altar"], icon="aether:skyroot_remedy_bucket"),
+
+    quest("ae_swet_banner", 7, 11.4, "&9Häng ein Swet Banner auf",
+          subtitle="Ein Umhang, der Swets fernhält.",
+          description=[
+              "Ein beliebiges &6Banner&r und ein &6Swet Cape&r aus dem Bronze-Dungeon ergeben das &6Swet Banner&r. Stell es auf.",
+              "",
+              "In seiner Nähe tauchen keine Swets mehr auf. Zusammen mit verzaubertem Gras und Blumen hast du dann eine Insel, auf der dich nichts mehr anspringt.",
+          ],
+          tasks=[task_advancement("aether:prevent_swet_spawning", "Ein Swet Banner aufgestellt")],
+          rewards=[reward_item("aether:swet_ball", 8), reward_xp(5)],
+          deps=["swet", "bronze"], icon="aether:swet_cape", optional=True),
+
+    quest("ae_black_moa", 13.5, 11.4, "&8Reite ein Black Moa",
+          subtitle="Acht Sprünge in der Luft.",
+          description=[
+              "Brüte ein &8Black Moa&r aus und reite es. Es ist das seltenste Moa und springt &e8-mal&r in der Luft, mehr als jedes andere.",
+              "",
+              "Black Moas laufen nur selten wild herum, und in keiner Dungeontruhe liegt ihr Ei. Findest du eines, bleib in der Nähe, bis es ein Ei legt, und gib es gleich in den Incubator.",
+          ],
+          tasks=[task_advancement("aether:black_moa", "Ein Black Moa geritten")],
+          rewards=[reward_table("s2_uncommon"), reward_xp(15)],
+          deps=["ride"], icon="aether:black_moa_egg", optional=True),
+
+    quest("ae_phyg", 13.5, 13.8, "&dSattel ein Phyg",
+          subtitle="Schweine können doch fliegen.",
+          description=[
+              "Leg einem &6Phyg&r, dem geflügelten Schwein des Aethers, einen &6Sattel&r an und steig auf.",
+              "",
+              "Es fliegt nicht so weit und hoch wie ein Moa und gleitet langsam nach unten, aber dafür musst du es nicht erst ausbrüten. Phygs laufen überall auf den Wiesen herum.",
+          ],
+          tasks=[task_advancement("aether:mount_phyg", "Auf einem Phyg geflogen")],
+          rewards=[reward_item("minecraft:saddle", 1), reward_xp(5)],
+          deps=["ride"], icon="minecraft:saddle", optional=True),
+
+    quest("ae_hammer", 23.5, 5.6, "&6Hol den Hammer of Kingbdogz",
+          subtitle="Eine Waffe aus der Schatzkammer des Sliders.",
+          description=[
+              "In der &6Treasure Chest&r des Bronze-Dungeons liegt mit Glück der &6Hammer of Kingbdogz&r. Lootr gibt jedem Spieler seine eigene Truhe, ihr könnt also alle euer Glück versuchen.",
+              "",
+              "Der Hammer schießt schwere Geschosse auf Gegner. Probier ihn an einem &6Zephyr&r aus, der dich vorher von der Insel geschubst hat.",
+          ],
+          tasks=[task_advancement("aether:hammer_loot", "Den Hammer of Kingbdogz gefunden")],
+          rewards=[reward_item("aether:golden_dart", 16), reward_xp(10)],
+          deps=["slider"], icon="aether:hammer_of_kingbdogz", optional=True),
+
 ]
 
 images = [

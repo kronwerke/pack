@@ -154,7 +154,7 @@ quests = [
               "",
               "Podeste gehören auf die &eacht äußeren vergoldeten Blöcke&r. Rechtsklick mit einem Gegenstand legt genau einen darauf, Rechtsklick mit leerer Hand nimmt ihn wieder. Die Schmiede sieht jedes Podest im Umkreis von &e4 Blöcken&r.",
               "",
-              "Vier Podeste reichen für jedes Ritual bis Stufe 2. Die übrigen vier Plätze sind für Obelisken da.",
+              "Für die ersten Rituale reichen vier Podeste. Spätere Rituale brauchen mehr: das Upgrade der Schmiede auf Stufe 2 legt acht Zutaten aus, die Ferrognetic Mixture sieben. Bau mit der Zeit alle acht.",
           ],
           tasks=[task_item("forbidden_arcanus:darkstone_pedestal", 4)],
           rewards=[reward_item("forbidden_arcanus:deorum_ingot", 2), reward_xp(5)],
@@ -198,7 +198,7 @@ quests = [
           ],
           tasks=[task_item("forbidden_arcanus:test_tube", 1)],
           rewards=[reward_item("minecraft:experience_bottle", 4), reward_xp(5)],
-          deps=["awaken"], icon="forbidden_arcanus:test_tube"),
+          deps=["awaken"], icon="forbidden_arcanus:test_tube", section="essenzen"),
 
     quest("souls", 13, 7, "&bFang Seelen",
           subtitle="Lost Souls, Seelensand und ein Extraktor.",
@@ -374,6 +374,110 @@ quests = [
           tasks=[task_item("forbidden_arcanus:dark_nether_star", 1)],
           rewards=[reward_table("s2_uncommon"), reward_xp(10)],
           deps=["skull"], icon="forbidden_arcanus:dark_nether_star", optional=True),
+
+    # ---- Neue Quests -------------------------------------------------------------
+    quest("magic_farmland", 5, -1.2, "&aMach magisches Ackerland",
+          subtitle="Doppelte Ernte auf jedem Feld.",
+          description=[
+              "&e4 Knochenmehl&r im Kreuz um einen &6Arcane Crystal Dust&r ergeben &e4 Arcane Bone Meal&r.",
+              "",
+              "Es wirkt auf Pflanzen wie Knochenmehl. Rechtsklick auf &6Ackerland&r verwandelt es aber in &6Magical Farmland&r: Reife Feldfrüchte darauf lassen ihre Ernte &edoppelt&r fallen.",
+              "",
+              "&cAchtung:&r Baust du das magische Ackerland ab, bleibt nur Erde übrig. Leg es dort an, wo es liegen bleiben soll.",
+          ],
+          tasks=[task_item("forbidden_arcanus:arcane_bone_meal", 8)],
+          rewards=[reward_item("minecraft:bone_meal", 16), reward_xp(4)],
+          deps=["dust"], icon="forbidden_arcanus:arcane_bone_meal", optional=True),
+
+    quest("diamond_gavel", 20.5, 1, "&7Baue einen Diamond Blacksmith Gavel",
+          subtitle="31 Rituale statt 5.",
+          description=[
+              "Wie der Eisenhammer, nur mit &e4 Diamanten&r: oben Diamant, &6Blacksmith Gavel Head&r, Diamant, in der Mitte Diamant, Stock, Diamant, unten ein Stock.",
+              "",
+              "Jedes Ritual kostet den Hammer &e50 Haltbarkeit&r. Der Diamanthammer hält &e31&r Rituale durch, der eiserne nur 5. Wer regelmäßig an der Schmiede steht, spart sich so viele Ersatzhämmer.",
+          ],
+          tasks=[task_item("forbidden_arcanus:diamond_blacksmith_gavel", 1)],
+          rewards=[reward_item("minecraft:diamond", 2), reward_xp(5)],
+          deps=["gavel"], icon="forbidden_arcanus:diamond_blacksmith_gavel", optional=True),
+
+    quest("enchanted_soul", 13, 8.8, "&bVerzaubere eine Lost Soul",
+          subtitle="Eine Seele, die zehn zählt.",
+          description=[
+              "Rechtsklick mit einer &6Aureal Bottle&r auf eine &6Lost Soul&r macht daraus eine &6Enchanted Lost Soul&r. Besiegt lässt sie eine &6Enchanted Soul&r fallen.",
+              "",
+              "In der Schmiede zählt sie &e10 Seelen&r statt einer. Im Clibano macht sie &dverzaubertes Feuer&r, 2,5 mal so schnell wie normal.",
+          ],
+          tasks=[task_item("forbidden_arcanus:enchanted_soul", 1)],
+          rewards=[reward_item("forbidden_arcanus:aureal_bottle", 1), reward_xp(5)],
+          deps=["souls", "aureal"], icon="forbidden_arcanus:enchanted_soul", optional=True),
+
+    quest("ferrognetic", 18, 9, "&5Ritual: Ferrognetic Mixture",
+          subtitle="Ein Podest, das selbst einsammelt.",
+          description=[
+              "&6Wax&r: Honigflasche und Schleimball formlos, gibt zwei.",
+              "&eHauptgegenstand:&r ein &6Leitstein&r. &eAuf den Podesten:&r &e2 Tonklumpen&r, &e2 Wax&r, &e2 Schleimbälle&r, &e1 Eisenbarren&r. &eEssenzen:&r 100 Aureal, 1 250 Blut, 2 Seelen. Kein Verstärker nötig.",
+              "",
+              "Rechtsklick mit der Mixture auf ein &6Darkstone Pedestal&r macht es magnetisch: Es sammelt Gegenstände in der Nähe von selbst ein. Auf dem Schmiedetisch gibt sie einem Werkzeug den Modifikator &eMagnetized&r.",
+          ],
+          tasks=[task_item("forbidden_arcanus:ferrognetic_mixture", 1)],
+          rewards=[reward_item("minecraft:slime_ball", 8), reward_xp(8)],
+          deps=["quantum"], icon="forbidden_arcanus:ferrognetic_mixture", optional=True),
+
+    quest("smelter_prism", 20.5, 9, "&6Ritual: Smelter Prism",
+          subtitle="Werkzeug, das beim Abbauen schmilzt.",
+          description=[
+              "&eVerstärker:&r &6Elementarium&r. &eHauptgegenstand:&r ein &6Arcane Crystal Block&r. &eAuf den Podesten:&r &e2 Kohle&r, &e4 Lohenstaub&r. &eEssenzen:&r 200 Aureal, 1 250 Blut, 4 Seelen.",
+              "",
+              "Auf dem &6Schmiedetisch&r mit dem Smithing Template der Mod und deinem Werkzeug bekommt es den Modifikator &eFiery&r: Alles, was es abbaut, fällt schon geschmolzen heraus. Erz wird Barren, Sand wird Glas, Bruchstein wird Stein.",
+          ],
+          tasks=[task_item("forbidden_arcanus:smelter_prism", 1)],
+          rewards=[reward_item("minecraft:blaze_powder", 8), reward_table("s2_common"), reward_xp(8)],
+          deps=["quantum"], icon="forbidden_arcanus:smelter_prism", optional=True),
+
+    quest("magic_wand", 23, 12, "&dBaue einen Magic Wand",
+          subtitle="Zaubern mit deinem eigenen Aureal.",
+          description=[
+              "Diagonal: ein &6Edelwood Stick&r oben rechts, ein &6Deorum Ingot&r in der Mitte, ein &6Arcane Crystal&r unten links.",
+              "",
+              "Rechtsklick halten lädt den Stab in &e1,5 Sekunden&r auf. Loslassen schießt ein Geschoss für &e5 Aureal&r aus deinem eigenen Vorrat, das &e5 magischen Schaden&r macht. Eine Aureal Bottle füllt dich wieder auf.",
+          ],
+          tasks=[task_item("forbidden_arcanus:magic_wand", 1)],
+          rewards=[reward_item("forbidden_arcanus:aureal_bottle", 2), reward_xp(5)],
+          deps=["edelwood", "aureal"], icon="forbidden_arcanus:magic_wand", optional=True),
+
+    quest("soul_extractor", 23, 14, "&bBaue einen Soul Extractor",
+          subtitle="Seelen aus Seelensand.",
+          description=[
+              "&6Utrem Jar&r: &e7 Glas&r als Glas mit offenem Deckel, ein &6Edelwood Plank&r oben in der Mitte.",
+              "&6Soul Extractor&r: das Utrem Jar oben links, in der Mitte &e2 Netherziegel&r und ein &6Quarzblock&r, unten links ein &6Netherquarz&r.",
+              "",
+              "Halt Rechtsklick auf &6Seelensand&r: Er wird zu Soulless Sand, und du bekommst eine &6Soul&r. Ein Netherbesuch mit dem Extractor füllt die Seelen der Schmiede schneller als jede Lost-Soul-Jagd.",
+          ],
+          tasks=[task_item("forbidden_arcanus:soul_extractor", 1)],
+          rewards=[reward_item("minecraft:soul_sand", 16), reward_xp(5)],
+          deps=["edelwood", "souls"], icon="forbidden_arcanus:soul_extractor"),
+
+    quest("edelwood_bucket", 25.5, 12, "&2Schnitz einen Edelwood Bucket",
+          subtitle="Vier Eimer in einem.",
+          description=[
+              "&e5 Edelwood Planks&r in Eimerform.",
+              "",
+              "Der Holzeimer fasst &e4 Eimer&r Wasser, Lava, Milch oder Pulverschnee. Mit Lava gefüllt verkohlt er aber irgendwann in der Tasche, nimm ihn lieber für Wasser und Milch.",
+          ],
+          tasks=[task_item("forbidden_arcanus:edelwood_bucket", 1)],
+          rewards=[reward_item("forbidden_arcanus:edelwood_log", 2), reward_xp(3)],
+          deps=["edelwood"], icon="forbidden_arcanus:edelwood_bucket", optional=True),
+
+    quest("xpetrified", 25.5, 14, "&aSammle Xpetrified Orbs",
+          subtitle="Erfahrung zum Mitnehmen.",
+          description=[
+              "Füttere ein &6Black Hole&r mit Erfahrung, zum Beispiel neben einer Mobfalle. Aus je &e60 Erfahrungspunkten&r spuckt es einen &6Xpetrified Orb&r aus.",
+              "",
+              "Rechtsklick gibt &e91 Erfahrungspunkte&r, mehr als hineingeflossen sind. In der Schmiede liefert ein Orb 91 Erfahrung als Essenz. Drei Orbs braucht die &6Eternal Stella&r, wenn die Forge-Stufe 3 mit Stufe 3 öffnet.",
+          ],
+          tasks=[task_item("forbidden_arcanus:xpetrified_orb", 3)],
+          rewards=[reward_item("minecraft:experience_bottle", 8), reward_xp(8)],
+          deps=["dark_matter"], icon="forbidden_arcanus:xpetrified_orb", optional=True),
 ]
 
 images = [

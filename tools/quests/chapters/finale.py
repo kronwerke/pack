@@ -219,6 +219,62 @@ quests = [
           tasks=[task_checkmark("Die Season ist geschafft")],
           rewards=[reward_table("s5_rare"), reward_xp(50)],
           deps=["fight"], icon="minecraft:dragon_egg", size=3.0, shape="hexagon"),
+
+    # ---- Neue Quests ---------------------------------------------------------------------
+    quest("t_pellets", 7.75, -0.5, "&6&lFüll das Antimaterie-Lager",
+          subtitle="Zehn Pellets, zehn Millionen mB Polonium.",
+          description=[
+              "Ein Pellet ist der Anfang, hundert will der Obelisk. Bring &e10 Antimaterie-Pellets&r zusammen, bevor sie in die Kiste wandern.",
+              "",
+              "Zehn Pellets sind zehn Millionen mB Polonium aus euren Spaltreaktoren, verarbeitet im SPS. Wenn das hier geschafft ist, läuft eure Antimaterie-Straße, und der Rest ist eine Frage der Zeit.",
+          ],
+          tasks=[task_item("mekanism:pellet_antimatter", 10)],
+          rewards=[reward_table("s5_common"), reward_xp(25)],
+          deps=["t_pellet"], icon="mekanism:pellet_antimatter", size=1.5, shape="diamond"),
+
+    quest("m_ingots", 5.25, 5, "&d&lSchmiede 32 Gaia-Geistbarren",
+          subtitle="Genug für 16 Fusionen.",
+          description=[
+              "&e32 Gaia-Geistbarren&r sind 128 Gaia-Geister, also viele Kämpfe gegen die Gaia-Wächterin. Genau so viele brauchen die Techniker für alle 16 Fusionen von Erwachtem Draconium.",
+              "",
+              "Wer sie hat, entscheidet gemeinsam, was zuerst geht: in den Fusionskern oder in den Obelisken. Beides zählt für dasselbe Ziel.",
+          ],
+          tasks=[task_item("botania:gaia_ingot", 32)],
+          rewards=[reward_table("s5_common"), reward_xp(25)],
+          deps=["magic"], icon="botania:gaia_ingot", size=1.5, shape="diamond"),
+
+    quest("m_tributes", 7.75, 3.5, "&dSammle vier Wilden-Tribute",
+          subtitle="Vier Chimären, vier Tribute.",
+          description=[
+              "Eine Chimäre ist ein Kampf, &e4 Tribute&r sind ein Abend mit Übung. Wer die Kämpfe einmal sicher kann, nimmt beim nächsten Mal jemanden mit, der es noch lernt.",
+              "",
+              "Jeder Tribut zählt am Obelisken 50 Punkte, 64 sind das feste Ziel.",
+          ],
+          tasks=[task_item("ars_nouveau:wilden_tribute", 4)],
+          rewards=[reward_table("s5_common"), reward_xp(20)],
+          deps=["m_tribute"], icon="ars_nouveau:wilden_tribute", optional=True),
+
+    quest("r_bow", 10.75, -2, "&dSpann den Drakonischen Bogen",
+          subtitle="Die Waffe gegen den Schild.",
+          description=[
+              "Fusioniere den &6Drakonischen Bogen&r aus deinem Wyvern-Bogen und bestück ihn mit drakonischen Projektil-Modulen. Rezept und Module stehen im Kapitel &5Draconic: Erwacht und Chaos&r.",
+              "",
+              "Der Schild des Wächters hat 16 000 Punkte und lässt sich so schnell treffen, wie ihr schießt. Je mehr Bögen gleichzeitig feuern, desto kürzer der Kampf.",
+          ],
+          tasks=[task_item("draconicevolution:draconic_bow", 1)],
+          rewards=[reward_item("minecraft:arrow", 64), reward_xp(15)],
+          deps=["gear"], icon="draconicevolution:draconic_bow", optional=True),
+
+    quest("r_chest", 13.25, -2, "&dRüste die Drakonische Brustplatte aus",
+          subtitle="Schild und ein zweites Leben.",
+          description=[
+              "Die &6Drakonische Brustplatte&r mit mindestens einem &6Drakonischen Untod-Modul&r: Es fängt einen tödlichen Treffer ab, dann lädt es nach. Den Rest des Rasters füllst du mit Schildmodulen und Energie.",
+              "",
+              "Wie du beides baust, steht im Kapitel &5Draconic: Erwacht und Chaos&r. Wer keine Draconic-Rüstung hat, nimmt Totems mit, siehe &ePack deine Taschen&r.",
+          ],
+          tasks=[task_item("draconicevolution:draconic_chestpiece", 1), task_item("draconicevolution:item_draconic_undying", 1)],
+          rewards=[reward_item("minecraft:golden_apple", 4), reward_xp(15)],
+          deps=["gear"], icon="draconicevolution:item_draconic_undying", optional=True),
 ]
 
 images = [

@@ -210,6 +210,61 @@ quests = [
           rewards=[reward_xp(5)],
           deps=["restock"], icon="sophisticatedbackpacks:filter_upgrade", optional=True),
 
+    quest("refill", 10.5, 3.8, "Bau ein Nachfüll-Upgrade",
+          subtitle="Die Hotbar wird nie leer.",
+          description=[
+              "Eine &6Enderperle&r oben, &6zwei Eisenbarren&r neben der Upgrade-Basis, unten &6Redstone&r, eine &6Holztruhe&r und &6Redstone&r.",
+              "",
+              "Leg im Filter fest, welche Items du immer dabeihaben willst. Wird ein Stapel davon im Inventar kleiner, füllt das Upgrade ihn aus dem Rucksack nach. Fackeln, Baublöcke, Essen: du merkst nie, dass etwas ausgeht.",
+          ],
+          tasks=[task_item("sophisticatedbackpacks:refill_upgrade", 1)],
+          rewards=[reward_item("minecraft:torch", 32), reward_xp(3)],
+          deps=["restock"], icon="sophisticatedbackpacks:refill_upgrade", optional=True),
+
+    quest("mob_catcher", 12.5, 2, "Steck ein Schaf in den Rucksack",
+          subtitle="Das Mob Catcher Upgrade.",
+          description=[
+              "Eine &6Enderperle&r oben, &6zwei Eisenbarren&r neben der Upgrade-Basis, unten links und rechts je eine &6Leine&r.",
+              "",
+              "Mit dem Upgrade im Rucksack fängst du &efriedliche Tiere&r per Schleich-Rechtsklick ein, sie landen in einem Platz des Rucksacks. So ziehen Kühe, Schafe und Hühner mit dir in die neue Basis, ganz ohne Leine und Zaun.",
+          ],
+          tasks=[task_item("sophisticatedbackpacks:mob_catcher_upgrade", 1)],
+          rewards=[reward_item("minecraft:lead", 2), reward_xp(3)],
+          deps=["magnet"], icon="sophisticatedbackpacks:mob_catcher_upgrade", optional=True),
+
+    quest("bp_anvil", 0, 3.8, "Nimm einen Amboss mit",
+          subtitle="Das Amboss-Upgrade.",
+          description=[
+              "Oben &6Amboss&r, &6Diamant&r, Amboss, in der Mitte &6Eisenbarren&r, Upgrade-Basis, Eisenbarren, unten eine &6Holztruhe&r.",
+              "",
+              "Ein Amboss in einem eigenen Tab des Rucksacks: reparieren, umbenennen und Bücher anwenden, wo immer du bist.",
+          ],
+          tasks=[task_item("sophisticatedbackpacks:anvil_upgrade", 1)],
+          rewards=[reward_item("minecraft:iron_block", 1), reward_xp(3)],
+          deps=["crafting"], icon="sophisticatedbackpacks:anvil_upgrade", optional=True),
+
+    quest("bp_auto_smelting", 2.5, 5.2, "Lass den Rucksack selbst schmelzen",
+          subtitle="Das Auto-Ofen-Upgrade.",
+          description=[
+              "Das &6Ofen-Upgrade&r in die Mitte, oben &6Diamant&r, &6Trichter&r, Diamant, in der Mitte &6Redstone&r links und ein Trichter rechts, unten &6Goldbarren&r, Trichter, Goldbarren.",
+              "",
+              "Anders als das einfache Ofen-Upgrade holt es Erz und Brennstoff selbst aus dem Rucksack und legt die Barren wieder hinein. Im Filter stellst du ein, was geschmolzen wird.",
+          ],
+          tasks=[task_item("sophisticatedbackpacks:auto_smelting_upgrade", 1)],
+          rewards=[reward_item("minecraft:coal", 32), reward_xp(5)],
+          deps=["bp_smelting"], icon="sophisticatedbackpacks:auto_smelting_upgrade", optional=True),
+
+    quest("bp_jukebox", 8.5, 5.2, "Hör Musik unterwegs",
+          subtitle="Das Jukebox-Upgrade.",
+          description=[
+              "Eine &6Jukebox&r oben, &6zwei Eisenbarren&r neben der Upgrade-Basis, ein &6Redstone&r unten.",
+              "",
+              "Leg eine Schallplatte in den Tab, und dein Rucksack spielt sie ab, wohin du auch gehst.",
+          ],
+          tasks=[task_item("sophisticatedbackpacks:jukebox_upgrade", 1)],
+          rewards=[reward_xp(3)],
+          deps=["upgrade_base"], icon="sophisticatedbackpacks:jukebox_upgrade", optional=True),
+
     # ---- Schubladen (Functional Storage) -----------------------------------------------------
     quest("drawers", 0, 8.5, "&6&lBau eine Schublade",
           subtitle="Tausende einer Sorte in einem Block.",
@@ -525,6 +580,52 @@ quests = [
           rewards=[reward_xp(5)],
           deps=["iron_tier"], icon="sophisticatedstorage:iron_barrel", optional=True),
 
+    quest("st_magnet", 10.5, 18.3, "Lass das Fass einsammeln",
+          subtitle="Pickup- und Magnet-Upgrade für Truhen.",
+          description=[
+              "&6Pickup-Upgrade für Truhen:&r ein &6Klebriger Kolben&r oben, &6Bretter&r neben der Upgrade-Basis für Truhen, drei &6Redstone&r unten. Mit &6Enderperlen&r, &6Eisen&r, &6Redstone&r und &6Lapislazuli&r drumherum wird es zum &6Magnet-Upgrade&r.",
+              "",
+              "Ein Fass mit Magnet zieht Items aus &e3 Blöcken&r Umkreis zu sich, das Erweiterte Magnet-Upgrade aus &e5&r. Unter einer Kaktus- oder Zuckerrohrfarm oder neben dem Bruchsteinbohrer ersetzt es Trichter und Bänder.",
+          ],
+          tasks=[task_item("sophisticatedstorage:magnet_upgrade", 1)],
+          rewards=[reward_item("minecraft:ender_pearl", 2), reward_xp(4)],
+          deps=["storage_upgrade_base"], icon="sophisticatedstorage:magnet_upgrade"),
+
+    quest("st_compacting", 12.5, 18.3, "Press im Fass zu Blöcken",
+          subtitle="Das Presse-Upgrade für Truhen.",
+          description=[
+              "Oben &6Eisenbarren&r, &6Kolben&r, Eisenbarren, in der Mitte Kolben, Upgrade-Basis für Truhen, Kolben, unten &6Redstone&r, Kolben, Redstone.",
+              "",
+              "Was hineinkommt und ein 2x2-Rezept hat, presst es sofort zum Block: Quarz, Ton, Schnee. 3x3 wie Barren zu Blöcken kann das &6Erweiterte Presse-Upgrade&r.",
+          ],
+          tasks=[task_item("sophisticatedstorage:compacting_upgrade", 1)],
+          rewards=[reward_item("minecraft:piston", 2), reward_xp(3)],
+          deps=["storage_upgrade_base"], icon="sophisticatedstorage:compacting_upgrade", optional=True),
+
+    quest("compression", 14.5, 17.5, "Lager Klumpen, Barren und Blöcke zusammen",
+          subtitle="Das Kompression-Upgrade.",
+          description=[
+              "Ein &6Eisenbarren&r oben, &6Kolben&r neben der Upgrade-Basis für Truhen, unten &6Redstone&r, Eisenbarren, Redstone.",
+              "",
+              "Leg in aufeinanderfolgende Plätze eine Kette derselben Sorte, etwa Eisenklumpen, Eisenbarren und Eisenblock. Das Upgrade presst und zerlegt dann von selbst hin und her, bis zu &e5 Plätze&r lang. Du nimmst einfach heraus, welche Stufe du gerade brauchst.",
+              "",
+              "Ein Upgrade dieser Art pro Lager.",
+          ],
+          tasks=[task_item("sophisticatedstorage:compression_upgrade", 1)],
+          rewards=[reward_item("minecraft:iron_ingot", 9), reward_xp(4)],
+          deps=["st_compacting"], icon="sophisticatedstorage:compression_upgrade", optional=True),
+
+    quest("decoration", 8.5, 19.8, "Gib deinen Fässern Farbe",
+          subtitle="Dekorationstisch und Pinsel.",
+          description=[
+              "&6Dekorationstisch:&r drei &6Stämme&r oben, &6Bretter&r neben der Upgrade-Basis für Truhen, zwei Bretter unten in den Ecken. &6Pinsel:&r zwei &6Wolle&r und zwei &6Stöcke&r schräg.",
+              "",
+              "Am Tisch legst du Material und Farbe für Truhen und Fässer fest. Den Pinsel stellst du dort ein, dann streichst du damit Lager direkt in der Welt an, ohne sie abzubauen.",
+          ],
+          tasks=[task_item("sophisticatedstorage:decoration_table", 1), task_item("sophisticatedstorage:paintbrush", 1)],
+          rewards=[reward_item("minecraft:white_wool", 8), reward_xp(3)],
+          deps=["chest"], icon="sophisticatedstorage:paintbrush", optional=True),
+
     # ---- Create-Tresor -----------------------------------------------------------------------
     quest("vault", 0, 22, "&6Bau einen Tresor",
           subtitle="Das Lager am Ende der Create-Straße.",
@@ -596,7 +697,7 @@ quests = [
           deps=["trash"], icon="supplementaries:sack", optional=True),
 
     # ---- Ziel und Ausblick ---------------------------------------------------------------------
-    quest("organised", 17, 9, "&6&lBring Ordnung ins Kronwerk",
+    quest("organised", 22.7, 9, "&6&lBring Ordnung ins Kronwerk",
           subtitle="Eine Basis, in der man Dinge wiederfindet.",
           description=[
               "Zeig acht 2x2-Schubladen, zwei Eisenfässer, einen Lagerkern und einen Tresor.",
@@ -609,7 +710,7 @@ quests = [
           deps=["stack_starter", "pusher", "controller", "vault"], icon="sophisticatedstorage:iron_barrel",
           size=2.5, shape="gear"),
 
-    quest("outlook", 17, 12.5, "Lies, was die nächsten Stufen bringen",
+    quest("outlook", 22.7, 12.5, "Lies, was die nächsten Stufen bringen",
           subtitle="Mehr Platz mit jeder Stufe.",
           description=[
               "&6Stufe 2:&r Kupfer- und Eisenrucksack, die &6Compacting Drawer&r (Nuggets, Barren und Blöcke in einem), Kupfer- und Gold-Upgrades für Schubladen, Goldtruhen und -fässer, fortgeschrittene Rucksack-Upgrades. Mit Netherquarz der &6Storage Controller&r von Functional Storage, der alle Schubladen im Umkreis von 8 Blöcken an einer Front sammelt.",
@@ -626,11 +727,11 @@ quests = [
 images = [
     head("title", "Lager und Ordnung", 0, -3.6, height=1.5, kind="title"),
     head("backpacks", "Rucksäcke", 2.0, -1.4, colour="brass"),
-    head("drawers", "Schubladen", 0, 6.0, colour="nature"),
+    head("drawers", "Schubladen", 3, 6.0, colour="nature"),
     head("chests", "Truhen und Fässer", 0, 13.0, colour="stone"),
     head("vault", "Create-Tresor", 0, 20.4, colour="brass"),
     head("cleanup", "Aufräumen", 0, 23.9, colour="stone"),
-    head("goal", "Ziel", 16.2, 6.8, colour="brass"),
+    head("goal", "Ziel", 22, 6.8, colour="brass"),
 ]
 
 chapter(C, "Lager", "sophisticatedbackpacks:backpack", "storage", quests, shape="circle", order=5,

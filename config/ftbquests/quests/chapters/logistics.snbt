@@ -587,6 +587,355 @@
 			]
 		}
 		{
+			id: "61A0C23A207FEE35"
+			x: 19.6d
+			y: 7.125d
+			icon: {
+				id: "integratedterminals:part_terminal_crafting_job"
+				count: 1
+			}
+			optional: true
+			dependencies: [
+				"69790E9D943B0BE4"
+			]
+			tasks: [
+				{
+					id: "55C10C5A38C2ED87"
+					type: "item"
+					item: {
+						id: "integratedterminals:part_terminal_crafting_job"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "1363DB38A3B09FBC"
+					type: "item"
+					item: {
+						id: "minecraft:glowstone_dust"
+						count: 1
+					}
+					count: 16
+				}
+				{
+					id: "6D12DCC61064F743"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+		}
+		{
+			id: "585B83C32EBBE8C7"
+			x: 12.4d
+			y: 8.625d
+			icon: {
+				id: "integrateddynamics:labeller"
+				count: 1
+			}
+			optional: true
+			dependencies: [
+				"3DAE52B7AADD884C"
+			]
+			tasks: [
+				{
+					id: "16878EFB4AFE7225"
+					type: "item"
+					item: {
+						id: "integrateddynamics:labeller"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "22B1393D25754B91"
+					type: "item"
+					item: {
+						id: "integrateddynamics:variable"
+						count: 1
+					}
+					count: 8
+				}
+				{
+					id: "36AFD6E45FA4B7EA"
+					type: "xp_levels"
+					xp_levels: 3
+				}
+			]
+		}
+		{
+			id: "7290070AC6443383"
+			x: 8.65d
+			y: 12.475d
+			icon: {
+				id: "xnet:wireless_router"
+				count: 1
+			}
+			optional: true
+			dependencies: [
+				"7F834519EF899D38"
+			]
+			tasks: [
+				{
+					id: "2CC36D72C1770C03"
+					type: "item"
+					item: {
+						id: "xnet:wireless_router"
+						count: 1
+					}
+					count: 1
+				}
+				{
+					id: "3E57301B564C4D75"
+					type: "item"
+					item: {
+						id: "xnet:antenna"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "470DF0C0C5A7A6A5"
+					type: "item"
+					item: {
+						id: "minecraft:ender_pearl"
+						count: 1
+					}
+					count: 4
+				}
+				{
+					id: "38140394743005F9"
+					type: "xp_levels"
+					xp_levels: 8
+				}
+			]
+		}
+		{
+			id: "217EFB1D8A58F4CF"
+			x: 16.3d
+			y: 15.225d
+			icon: {
+				id: "laserio:card_redstone"
+				count: 1
+			}
+			optional: true
+			dependencies: [
+				"292680ABCC01F192"
+			]
+			tasks: [
+				{
+					id: "7F11BA14F4DE85C9"
+					type: "item"
+					item: {
+						id: "laserio:card_redstone"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "24517E7476137D7C"
+					type: "item"
+					item: {
+						id: "minecraft:redstone"
+						count: 1
+					}
+					count: 16
+				}
+				{
+					id: "27ABC661C7203156"
+					type: "xp_levels"
+					xp_levels: 4
+				}
+			]
+		}
+		{
+			id: "1040C139EA8F7DF9"
+			x: 20.3d
+			y: 13.725d
+			icon: {
+				id: "laserio:filter_count"
+				count: 1
+			}
+			optional: true
+			dependencies: [
+				"22AB88F3BE2CEC25"
+			]
+			tasks: [
+				{
+					id: "2C1B4786CD409D85"
+					type: "item"
+					item: {
+						id: "laserio:filter_count"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "20D5E5F8733CE106"
+					type: "item"
+					item: {
+						id: "minecraft:observer"
+						count: 1
+					}
+					count: 2
+				}
+				{
+					id: "783649F42A3E731A"
+					type: "xp_levels"
+					xp_levels: 4
+				}
+			]
+		}
+		{
+			id: "527289BB5DBD0AFC"
+			x: 6.0d
+			y: 18.825d
+			icon: {
+				id: "mininggadgets:upgrade_battery_1"
+				count: 1
+			}
+			hide_dependency_lines: true
+			dependencies: [
+				"4A08EA7A64BF48A5"
+			]
+			tasks: [
+				{
+					id: "461BB50F0C6D8B8F"
+					type: "item"
+					item: {
+						id: "mininggadgets:upgrade_battery_1"
+						count: 1
+					}
+					count: 1
+				}
+				{
+					id: "2741345F9F36DE39"
+					type: "item"
+					item: {
+						id: "mininggadgets:upgrade_efficiency_1"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "42326C82750E9A9F"
+					type: "item"
+					item: {
+						id: "minecraft:quartz"
+						count: 1
+					}
+					count: 16
+				}
+				{
+					id: "4C361D508064A7CA"
+					type: "xp_levels"
+					xp_levels: 6
+				}
+			]
+		}
+		{
+			id: "2204C95C148D2A7B"
+			x: 4.65d
+			y: 21.525d
+			icon: {
+				id: "mininggadgets:upgrade_range_1"
+				count: 1
+			}
+			optional: true
+			hide_dependency_lines: true
+			dependencies: [
+				"4A08EA7A64BF48A5"
+			]
+			tasks: [
+				{
+					id: "3058E99ED71A8B77"
+					type: "item"
+					item: {
+						id: "mininggadgets:upgrade_range_1"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "27D49112B5585B82"
+					type: "item"
+					item: {
+						id: "minecraft:lapis_lazuli"
+						count: 1
+					}
+					count: 16
+				}
+				{
+					id: "2A5B41906FF6B554"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+		}
+		{
+			id: "2E85B54CE853B2F6"
+			x: 6.0d
+			y: 20.175d
+			icon: {
+				id: "mininggadgets:upgrade_freezing"
+				count: 1
+			}
+			optional: true
+			hide_dependency_lines: true
+			dependencies: [
+				"4A08EA7A64BF48A5"
+			]
+			tasks: [
+				{
+					id: "63F9E97374952A6D"
+					type: "item"
+					item: {
+						id: "mininggadgets:upgrade_freezing"
+						count: 1
+					}
+					count: 1
+				}
+				{
+					id: "3ED279D30A66742B"
+					type: "item"
+					item: {
+						id: "mininggadgets:upgrade_light_placer"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "6D3F7F01FBBF4957"
+					type: "item"
+					item: {
+						id: "minecraft:snowball"
+						count: 1
+					}
+					count: 16
+				}
+				{
+					id: "68DB3292A680F825"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+		}
+		{
 			id: "648CAB31EAF1E136"
 			x: 0.25d
 			y: 12.475d
@@ -732,7 +1081,7 @@
 		{
 			id: "4DD9D739F3D66B95"
 			x: 6.65d
-			y: 12.475d
+			y: 13.975d
 			icon: {
 				id: "xnet:redstone_proxy"
 				count: 1
@@ -772,7 +1121,7 @@
 		{
 			id: "7F834519EF899D38"
 			x: 6.65d
-			y: 13.975d
+			y: 12.475d
 			icon: {
 				id: "xnet:router"
 				count: 1
@@ -819,8 +1168,8 @@
 		}
 		{
 			id: "38935DC4215FFC4E"
-			x: 9.9d
-			y: 12.475d
+			x: 11.9d
+			y: 13.725d
 			icon: {
 				id: "laserio:laser_node"
 				count: 1
@@ -870,8 +1219,8 @@
 		}
 		{
 			id: "292680ABCC01F192"
-			x: 12.3d
-			y: 12.475d
+			x: 14.3d
+			y: 13.725d
 			icon: {
 				id: "laserio:card_item"
 				count: 1
@@ -909,8 +1258,8 @@
 		}
 		{
 			id: "18F38B9AEDA7F6B0"
-			x: 14.3d
-			y: 12.475d
+			x: 16.3d
+			y: 13.725d
 			icon: {
 				id: "laserio:card_energy"
 				count: 1
@@ -953,8 +1302,8 @@
 		}
 		{
 			id: "3AD9DFAD24F3E861"
-			x: 14.3d
-			y: 13.975d
+			x: 16.3d
+			y: 12.225d
 			icon: {
 				id: "laserio:card_fluid"
 				count: 1
@@ -1001,8 +1350,8 @@
 		}
 		{
 			id: "22AB88F3BE2CEC25"
-			x: 16.3d
-			y: 12.475d
+			x: 18.3d
+			y: 13.725d
 			icon: {
 				id: "laserio:overclocker_card"
 				count: 1
@@ -1052,7 +1401,7 @@
 		{
 			id: "10C78A2E961A0ECA"
 			x: 0.25d
-			y: 17.825d
+			y: 20.175d
 			icon: {
 				id: "mininggadgets:mininggadget_simple"
 				count: 1
@@ -1094,11 +1443,12 @@
 		{
 			id: "4A08EA7A64BF48A5"
 			x: 2.65d
-			y: 17.825d
+			y: 20.175d
 			icon: {
 				id: "mininggadgets:modificationtable"
 				count: 1
 			}
+			hide_dependent_lines: true
 			dependencies: [
 				"10C78A2E961A0ECA"
 			]
@@ -1142,11 +1492,12 @@
 		{
 			id: "745BD1BC645BAF3B"
 			x: 4.65d
-			y: 17.825d
+			y: 18.825d
 			icon: {
 				id: "mininggadgets:upgrade_fortune_1"
 				count: 1
 			}
+			hide_dependency_lines: true
 			dependencies: [
 				"4A08EA7A64BF48A5"
 			]
@@ -1186,12 +1537,13 @@
 		{
 			id: "18AB2B55C51DA457"
 			x: 4.65d
-			y: 19.325d
+			y: 20.175d
 			icon: {
 				id: "mininggadgets:upgrade_magnet"
 				count: 1
 			}
 			optional: true
+			hide_dependency_lines: true
 			dependencies: [
 				"4A08EA7A64BF48A5"
 			]
@@ -1267,7 +1619,7 @@
 		{
 			id: "16BE96E616D280CC"
 			image: "kronwerke:textures/quests/logistics/laserio.png"
-			x: 10.425d
+			x: 12.425d
 			y: 10.774999999999999d
 			width: 2.55d
 			height: 0.9d
@@ -1278,7 +1630,7 @@
 			id: "2583755DAAC7FE31"
 			image: "kronwerke:textures/quests/logistics/mining.png"
 			x: 2.085d
-			y: 16.125d
+			y: 17.375d
 			width: 5.17d
 			height: 0.9d
 			rotation: 0.0d

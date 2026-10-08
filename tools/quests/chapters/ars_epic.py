@@ -198,6 +198,106 @@ quests = [
           rewards=[reward_item("minecraft:ender_pearl", 4), reward_xp(6)],
           deps=["charms"], icon="ars_additions:warp_index", optional=True),
 
+    # ---- Neu: Nebenquests -------------------------------------------------------------
+    quest("illusions", 5, 1, "&dBau mit Illusionsblöcken",
+          subtitle="Wände, die keine sind.",
+          description=[
+              "&6Magebloom-Block&r: &e4 Magieblütenfasern&r im Quadrat. &e8&r davon um eine Essenz ergeben &e8&r Illusionsblöcke:",
+              "&6Spiegelgewebe&r (Beschwörungsessenz): sieht aus wie der Block, mit dem du es anklickst, mit dessen Kollision und Licht.",
+              "&6Falschgewebe&r (Luftessenz): sieht genauso aus, aber du läufst hindurch.",
+              "&6Geistergewebe&r (Abschwörungsessenz): wird mit &dUnsichtbarkeit&r zur unsichtbaren Wand, &dZerstreuen&r zeigt es wieder.",
+              "&6Skyweave&r (Manipulationsessenz): zeigt den Himmel der Dimension.",
+              "",
+              "&dMagie spüren&r verrät jede Illusion. Gut für geheime Gänge in der End-Basis.",
+          ],
+          tasks=[task_item("ars_nouveau:mirrorweave", 8), task_item("ars_nouveau:falseweave", 8)],
+          rewards=[reward_item("ars_nouveau:magebloom_fiber", 16), reward_xp(4)],
+          deps=["void_prism"], icon="ars_nouveau:mirrorweave", optional=True),
+
+    quest("air_relay", 15, -2, "&bBau ein Wind Warper Relay",
+          subtitle="Ars Elemental: Quelle ohne Verlust.",
+          description=[
+              "Im Apparat: &6Warper-Relais&r in die Mitte, &e2 Luftessenzen&r und &e2 Diamanten&r auf die Podeste.",
+              "",
+              "Wie das Warper-Relais, aber es verliert auch über weite Strecken keine Quelle mehr und hält mehr davon. Zwei davon verbinden die Link-Farm zu Hause mit der Basis am anderen Ende der Welt.",
+          ],
+          tasks=[task_item("ars_elemental:air_relay", 2)],
+          rewards=[reward_item("minecraft:diamond", 2), reward_xp(5)],
+          deps=["relay_warp"], icon="ars_elemental:air_relay", optional=True),
+
+    quest("bangles_more", 12.5, 0, "&6Stimm Beschwörung und Anima ab",
+          subtitle="Ars Elemental: die zwei letzten Armreife.",
+          description=[
+              "Armreif des Verzauberers in den Apparat, dazu:",
+              "&dBeschwörung&r: &e2 Beschwörungsessenzen&r, &6Knochen&r, &6Wilden-Horn&r. Deine Beschwörungen greifen an, was du triffst, und machen mehr Schaden.",
+              "&5Anima&r: &e2 Anima-Essenzen&r, &6Ghast-Träne&r, &6Wither-Rose&r. Mehr Schaden mit Anima-Zaubern, Treffer heilen oder verdorren zufällig, dazu etwas mehr Gesundheit für dich.",
+          ],
+          tasks=[task_item("ars_elemental:summon_bangle", 1), task_item("ars_elemental:anima_bangle", 1)],
+          rewards=[reward_item("minecraft:ghast_tear", 2), reward_xp(5)],
+          deps=["bangles"], icon="ars_elemental:summon_bangle", optional=True),
+
+    quest("spell_horn", 12.5, 1, "&6Bau das Enchanter's Horn",
+          subtitle="Ars Elemental: ein Zauber für die ganze Gruppe.",
+          description=[
+              "Im Apparat: &6Wilden-Horn&r in die Mitte, &6Luftessenz&r, &e3 Goldbarren&r und &e4 Quelljuwelen&r auf die Podeste.",
+              "",
+              "Schreib am Tisch einen Zauber &eohne Form&r ein, etwa &eHeilen, Verstärken&r. Das Horn wirkt ihn auf dich und alle Wesen in der Nähe. Je länger du es hältst, desto größer die Reichweite, voll geladen gibt es dir dazu Zauberschaden.",
+          ],
+          tasks=[task_item("ars_elemental:spell_horn", 1)],
+          rewards=[reward_item("ars_nouveau:air_essence", 2), reward_xp(5)],
+          deps=["bangles"], icon="ars_elemental:spell_horn", optional=True),
+
+    quest("stabilized_index", 15, 2, "&bStabilisier den Warp Index",
+          subtitle="Ars Additions: dein Lager aus jeder Dimension.",
+          description=[
+              "Im Apparat: &6Warp Index&r in die Mitte, &6Netheritbarren&r, &6Netherstern&r und &6Endertruhe&r auf die Podeste.",
+              "",
+              "Der &6Stabilized Warp Index&r öffnet dein Aufbewahrungspult nicht nur in derselben Dimension, sondern aus jeder Dimension.",
+          ],
+          tasks=[task_item("ars_additions:stabilized_warp_index", 1)],
+          rewards=[reward_item("minecraft:ender_pearl", 8), reward_table("s4_common")],
+          deps=["warp_index"], icon="ars_additions:stabilized_warp_index", optional=True),
+
+    quest("planarium", 15, 0, "&5Bau ein Planarium",
+          subtitle="Eine eigene Welt im Glas.",
+          description=[
+              "Im Apparat: &6Eindämmungsglas&r in die Mitte, &6Stabilisierte Warp-Schriftrolle&r, &6Beschwörungsessenz&r und &6Diamant&r auf die Podeste.",
+              "",
+              "Benenn das Planarium am Amboss oder mit &dName&r, dann gehört eine eigene kleine Dimension dazu. Schleichend benutzt betrittst du sie. Was du darin baust, siehst du draußen verkleinert im Glas.",
+              "",
+              "Den Startpunkt setzt du mit dem Dominion-Zauberstab: erst auf eine Wand der Dimension, dann auf den gewünschten Platz. Heraus kommst du, indem du eine Wand abbaust.",
+          ],
+          tasks=[task_item("ars_nouveau:planarium", 1)],
+          rewards=[reward_item("minecraft:diamond", 2), reward_xp(6)],
+          deps=["warp_index"], icon="ars_nouveau:planarium", optional=True),
+
+    quest("nexus_tower", 7.5, 3, "&aFinde einen Nexus-Turm",
+          subtitle="Ars Additions: ein Reiseknoten auf einer Kraftlinie.",
+          description=[
+              "Nexus-Türme stehen dort, wo verfallene Warp-Portale vorkommen, und in den Biomen der Endstädte. Auch eine Explorer's Warp Scroll aus einem verfallenen Warp-Portal kann dich zu einem bringen.",
+              "",
+              "Oben steht ein &6Warp Nexus&r. Schleichend benutzt öffnet er ein Fach für &e9 Warp-Schriftrollen&r, normal benutzt wählst du ein Ziel, auch in anderen Dimensionen. Im Turm kostet das nichts. Baust du ihn ab und woanders auf, kostet jeder Sprung &d1 000 Quelle&r.",
+              "",
+              "In der Truhe liegen Kodex-Seiten mit zufälligen Glyphen und Archwood-Früchte.",
+          ],
+          tasks=[task_checkmark("Einen Nexus-Turm gefunden")],
+          rewards=[reward_item("ars_nouveau:stable_warp_scroll", 1), reward_table("s4_common")],
+          deps=["locate"], icon="ars_additions:warp_nexus", optional=True),
+
+    quest("fruits", 10, 3.2, "&aSammle die Archwood-Früchte",
+          subtitle="Zutaten für die Tränke von Ars Nouveau.",
+          description=[
+              "Vier Früchte, die du in den Truhen von Nexus-Türmen und Arkanen Bibliotheken findest:",
+              "&6Bastionsfrucht&r: Trank der Verteidigung, weniger Schaden.",
+              "&6Frostaya&r: Trank des Frierens, friert das Ziel nach und nach ein. Macht die Insel-Tafel verschneit.",
+              "&6Mendosteen&r: Trank der Erholung, jede Heilung wirkt stärker. Steckt auch im Faden des Lebensentzugs.",
+              "&6Bombengranat&r: Trank der Sprengung, das Ziel explodiert, wenn der Effekt endet.",
+          ],
+          tasks=[task_item("ars_nouveau:bastion_pod", 1), task_item("ars_nouveau:frostaya_pod", 1),
+                 task_item("ars_nouveau:mendosteen_pod", 1), task_item("ars_nouveau:bombegranate_pod", 1)],
+          rewards=[reward_item("minecraft:nether_wart", 16), reward_xp(4)],
+          deps=["nexus_tower"], icon="ars_nouveau:mendosteen_pod", optional=True),
+
     # ---- Roben der dritten Stufe ------------------------------------------------------
     quest("sorcerer", 0, 6, "&6Näh die Roben des Zauberers",
           subtitle="Wenig Schutz, die stärksten Fäden.",
@@ -315,7 +415,7 @@ quests = [
           rewards=[reward_item("ars_nouveau:source_gem_block", 8), reward_table("s4_uncommon")],
           deps=["chimera_kill"], icon="ars_nouveau:wilden_tribute"),
 
-    quest("epic", 11, 8.5, "&d&lMach dich bereit für Stufe 5",
+    quest("epic", 10, 11, "&d&lMach dich bereit für Stufe 5",
           subtitle="Alles bereit für den Chaoswächter.",
           description=[
               "Bring &e8 Wilden-Tribute&r zusammen und benutz Verweilen oder Wand im Kampf.",
@@ -333,7 +433,7 @@ quests = [
 images = [
     banner("ars_epic/title", "Ars Nouveau: Episch", 6.5, -5.4, height=1.8, kind="title", colour="end"),
     head("glyphen", "Glyphen aus dem End", 0, -3.6),
-    banner("ars_epic/erweiterungen", "Erweiterungen", 11, -3.6, height=0.9, colour="water"),
+    banner("ars_epic/erweiterungen", "Erweiterungen", 10, -3.6, height=0.9, colour="water"),
     head("roben", "Roben der dritten Stufe", 0, 4.0, colour="brass"),
     head("chimaere", "Die Chimäre", 0, 9.4, colour="fire"),
 ]

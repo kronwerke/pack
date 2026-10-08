@@ -141,7 +141,7 @@ quests = [
           description=[
               "Wie die Spitzhacke, mit dem &6Wyvern-Bogen&r als Katalysator.",
               "",
-              "Rüste ihn mit drakonischen Projektil-Modulen aus. Das Schadensmodul: Drachenatem, Erwachte Nuggets, ein Wyvern-Kern und das Wyvern-Schadensmodul.",
+              "Rüste ihn mit drakonischen Projektil-Modulen aus. Das drakonische Projektil-Schadensmodul: sechs Erwachte Draconium-Nuggets, zwei Wyvern-Projektil-Schadensmodule und ein Wyvern-Kern in der Mitte.",
               "",
               "Der Schild des Chaoswächters schmilzt laut Draconic Evolution am schnellsten unter einem starken Bogen, der schnell feuert.",
           ],
@@ -334,7 +334,107 @@ quests = [
           ],
           tasks=[task_item("draconicevolution:awakened_draconium_block", 16)],
           rewards=[reward_table("s5_rare"), reward_xp(30)],
-          deps=["awakened"], icon="draconicevolution:awakened_draconium_block", size=2.5, shape="gear"),
+          deps=["awakened"], icon="draconicevolution:awakened_draconium_block", size=2.5, shape="gear", section="reactor"),
+
+    # ---- Neue Quests -------------------------------------------------------------------
+    quest("awakened_magnet", 7.5, 3.5, "&bBau einen Erwachten Item-Magneten",
+          subtitle="Der Magnet aus Stufe 4, nur stärker.",
+          description=[
+              "Draconiumbarren oben links und rechts, Redstone darunter, unten &6Erwachter Barren&r, &6Item-Magnet&r, &6Erwachter Barren&r.",
+              "",
+              "Wie der normale Item-Magnet zieht er Gegenstände zu dir und lässt sich per Taste an- und ausschalten, nur kräftiger. Zwei Erwachte Barren sind wenig für ein Werkzeug, das du jeden Tag trägst.",
+          ],
+          tasks=[task_item("draconicevolution:advanced_magnet", 1)],
+          rewards=[reward_item("minecraft:redstone", 16), reward_xp(8)],
+          deps=["awakened_ingot"], icon="draconicevolution:advanced_magnet", optional=True),
+
+    quest("d_capacitor", 15, 18, "&dFusionier einen Drakonischen Kondensator",
+          subtitle="Der Akku für die drakonische Ausrüstung.",
+          description=[
+              "Drakonische Stufe. Katalysator: der &6Wyvern-Kondensator&r. In acht Injektoren: &64 Erwachte Barren&r, &63 Drakonische Energiekontroller&r und ein &6Drakonischer Kern&r. Kostet 32 Millionen Energie.",
+              "",
+              "Er lädt Werkzeuge und Rüstung in deinem Inventar und fasst viel mehr als der Wyvern-Kondensator. Im Kampf gegen den Wächter frisst der Schild Strom, ein voller Kondensator hält ihn oben.",
+          ],
+          tasks=[task_item("draconicevolution:draconic_capacitor", 1)],
+          rewards=[reward_table("s5_common"), reward_xp(15)],
+          deps=["d_energy_mod", "energy_core"], icon="draconicevolution:draconic_capacitor"),
+
+    quest("d_energy_mod", 12.5, 17, "&dBau ein Drakonisches Energiemodul",
+          subtitle="16 Millionen pro Modul.",
+          description=[
+              "&6Erwachte Nuggets&r oben und unten, in der Mitte &6Wyvern-Energiemodul, Wyvern-Kern, Wyvern-Energiemodul&r.",
+              "",
+              "Es speichert &d16 Millionen&r Energie und lädt mit &d256 000&r pro Tick. Bögen, Schild und Flug ziehen im Kampf viel, also gehören mehrere in Bogen und Brustplatte.",
+          ],
+          tasks=[task_item("draconicevolution:item_draconic_energy", 1)],
+          rewards=[reward_item("draconicevolution:wyvern_core", 1), reward_xp(10)],
+          deps=["tools"], icon="draconicevolution:item_draconic_energy"),
+
+    quest("d_aoe", 15, 16.5, "&dBau ein Drakonisches AOE-Modul",
+          subtitle="7 x 7 auf einen Schlag.",
+          description=[
+              "&6Netheritbarren&r in die Ecken, &6Erwachte Barren&r oben und unten, in der Mitte &6Wyvern-AOE-Modul, Drakonischer Kern, Wyvern-AOE-Modul&r.",
+              "",
+              "In der Drakonischen Spitzhacke baut es bis &e7 x 7&r ab. Der Safe Mode schützt deine Maschinen auch hier.",
+          ],
+          tasks=[task_item("draconicevolution:item_draconic_aoe", 1)],
+          rewards=[reward_item("minecraft:netherite_ingot", 1), reward_xp(10)],
+          deps=["d_energy_mod"], icon="draconicevolution:item_draconic_aoe", optional=True),
+
+    quest("d_recovery", 17.5, 17, "&dBau ein Drakonisches Schildregenerationsmodul",
+          subtitle="Der Schild kommt schneller zurück.",
+          description=[
+              "Erst das Wyvern-Modul: Draconiumbarren in die Ecken, &6Netherit-Bruchstücke&r oben und unten, Redstone links und rechts, ein Modulkern in die Mitte. Dann: Netheritbarren in die Ecken, Draconiumkern oben, Wyvern-Kern unten, Erwachte Barren links und rechts, das Wyvern-Modul in die Mitte.",
+              "",
+              "Es lädt den Schild &e2,5-mal&r so schnell nach wie das Wyvern-Modul. Im Kampf zählt nicht nur, wie groß der Schild ist, sondern wie schnell er wiederkommt.",
+          ],
+          tasks=[task_item("draconicevolution:item_draconic_shield_recovery", 1)],
+          rewards=[reward_item("minecraft:netherite_ingot", 1), reward_xp(10)],
+          deps=["d_energy_mod", "shield_mod"], icon="draconicevolution:item_draconic_shield_recovery"),
+
+    quest("d_sword", 15, 17, "&dFusionier ein Drakonisches Schwert",
+          subtitle="Mit Drachenatem im Schadensmodul.",
+          description=[
+              "Wie die Spitzhacke, mit dem &6Wyvern-Schwert&r als Katalysator: 4 Netheritbarren, ein Wyvern-Kern, 2 Erwachte Barren, ein Drakonischer Energiekontroller. Kostet 32 Millionen Energie.",
+              "",
+              "&6Drakonisches Schadensmodul:&r Erwachte Nuggets in die Ecken, &6Drachenatem&r oben und unten, in der Mitte Wyvern-Schadensmodul, Wyvern-Kern, Wyvern-Schadensmodul. Das Schwert ist für alles, was auf der Insel zu nah kommt.",
+          ],
+          tasks=[task_item("draconicevolution:draconic_sword", 1), task_item("draconicevolution:item_draconic_damage", 1)],
+          rewards=[reward_item("minecraft:dragon_breath", 8), reward_xp(15)],
+          deps=["d_energy_mod"], icon="draconicevolution:draconic_sword", optional=True),
+
+    quest("chaotic_armor", 17.5, 12.5, "&8Fusionier die Chaotische Brustplatte",
+          subtitle="Der stärkste Schild der Season.",
+          description=[
+              "Chaotische Stufe. Katalysator: die &6Drakonische Brustplatte&r. In acht Injektoren: &66 Erwachte Barren&r, ein &6Chaotischer Kern&r, ein &6Chaotischer Energiekern&r. Kostet 128 Millionen Energie. Der Chaotische Bogen geht genauso aus dem drakonischen.",
+              "",
+              "Module bleiben drin, die chaotischen Module passen jetzt auch. Damit sind weitere Wächter auf anderen Inseln keine Gruppenaufgabe mehr.",
+          ],
+          tasks=[task_item("draconicevolution:chaotic_chestpiece", 1)],
+          rewards=[reward_table("s5_common"), reward_xp(30)],
+          deps=["chaotic_gear"], icon="draconicevolution:chaotic_chestpiece", optional=True),
+
+    quest("chaotic_shield", 20, 12.5, "&8Bau ein Chaotisches Schildmodul",
+          subtitle="Chaosfragmente im Schild.",
+          description=[
+              "Erwachte Barren in die Ecken, ein &6Wyvern-Kern&r oben, ein &6Drakonischer Kern&r unten, &6Große Chaosfragmente&r links und rechts, ein &6Drakonisches Schildmodul&r in die Mitte.",
+              "",
+              "Es fasst deutlich mehr Schild als das drakonische und passt nur in chaotische Rüstung.",
+          ],
+          tasks=[task_item("draconicevolution:item_chaotic_shield_capacity", 1)],
+          rewards=[reward_xp(25)],
+          deps=["chaotic_armor"], icon="draconicevolution:item_chaotic_shield_capacity", optional=True),
+
+    quest("chaotic_capacitor", 20, 14, "&8Fusionier einen Chaotischen Kondensator",
+          subtitle="Der letzte Akku.",
+          description=[
+              "Chaotische Stufe. Katalysator: der &6Drakonische Kondensator&r. In acht Injektoren: &64 Erwachte Barren&r, &63 Chaotische Energiekerne&r und ein &6Chaotischer Kern&r. Kostet 128 Millionen Energie.",
+              "",
+              "Er hält chaotische Ausrüstung im Feld voll, ohne dass du zurück zum Energiekern musst.",
+          ],
+          tasks=[task_item("draconicevolution:chaotic_capacitor", 1)],
+          rewards=[reward_xp(25)],
+          deps=["chaotic_armor", "d_capacitor"], icon="draconicevolution:chaotic_capacitor", optional=True),
 ]
 
 images = [
@@ -343,6 +443,7 @@ images = [
     head("gear", "Drakonisch", 10, -1.0, colour="magic"),
     head("fight", "Der Chaoswächter", 0, 10.6, colour="fire"),
     head("reactor", "Reaktor und Ziel", 0, 15.2, colour="brass"),
+    head("module", "Module und Akkus", 12, 15.2, colour="magic"),
 ]
 
 chapter(C, "Draconic: Erwacht und Chaos", "draconicevolution:awakened_draconium_block", "tech", quests,

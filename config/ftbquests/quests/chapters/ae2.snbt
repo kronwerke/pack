@@ -51,7 +51,7 @@
 		{
 			id: "23A9E0041A4918F2"
 			x: 4.25d
-			y: 3.9499999999999997d
+			y: 5.949999999999999d
 			icon: {
 				id: "ae2:sky_stone_block"
 				count: 1
@@ -100,7 +100,7 @@
 		{
 			id: "1DDCF058D133D244"
 			x: 6.65d
-			y: 3.9499999999999997d
+			y: 5.949999999999999d
 			icon: {
 				id: "ae2:mysterious_cube"
 				count: 1
@@ -166,7 +166,7 @@
 		{
 			id: "709FC144CB431019"
 			x: 4.25d
-			y: 5.699999999999999d
+			y: 4.199999999999999d
 			icon: {
 				id: "ae2:charged_certus_quartz_crystal"
 				count: 1
@@ -217,7 +217,7 @@
 		{
 			id: "20289A0EF28C852A"
 			x: 6.65d
-			y: 5.699999999999999d
+			y: 4.199999999999999d
 			icon: {
 				id: "ae2:fluix_crystal"
 				count: 1
@@ -499,7 +499,7 @@
 		{
 			id: "555D9BA5A85FCD28"
 			x: 0.0d
-			y: 11.425d
+			y: 12.925d
 			icon: {
 				id: "ae2:drive"
 				count: 1
@@ -539,13 +539,14 @@
 		{
 			id: "68DB324F17A467F3"
 			x: 2.0d
-			y: 11.425d
+			y: 12.925d
 			icon: {
 				id: "ae2:terminal"
 				count: 1
 			}
 			size: 1.75d
 			shape: "hexagon"
+			hide_dependent_lines: true
 			dependencies: [
 				"555D9BA5A85FCD28"
 			]
@@ -725,7 +726,7 @@
 		{
 			id: "54AF6ABEE259F331"
 			x: 4.6d
-			y: 11.425d
+			y: 12.925d
 			icon: {
 				id: "ae2:controller"
 				count: 1
@@ -771,7 +772,7 @@
 		{
 			id: "4C1E38CDD2758689"
 			x: 7.199999999999999d
-			y: 11.425d
+			y: 12.925d
 			icon: {
 				id: "ae2:fluix_smart_cable"
 				count: 1
@@ -821,7 +822,7 @@
 		{
 			id: "188B5DA5652EFC13"
 			x: 9.6d
-			y: 11.425d
+			y: 12.925d
 			icon: {
 				id: "ae2:import_bus"
 				count: 1
@@ -917,7 +918,7 @@
 		{
 			id: "37EB4DD214F449A0"
 			x: 11.6d
-			y: 11.425d
+			y: 14.425d
 			icon: {
 				id: "ae2:storage_bus"
 				count: 1
@@ -956,7 +957,7 @@
 		{
 			id: "66E6A917F19C6D28"
 			x: 9.6d
-			y: 12.925d
+			y: 14.425d
 			icon: {
 				id: "ae2:wireless_crafting_terminal"
 				count: 1
@@ -1004,7 +1005,7 @@
 		{
 			id: "1BB37084A4AB6D92"
 			x: 0.0d
-			y: 18.775d
+			y: 19.525d
 			icon: {
 				id: "ae2:pattern_encoding_terminal"
 				count: 1
@@ -1053,7 +1054,7 @@
 		{
 			id: "1B34C1F6E7AC9249"
 			x: 2.0d
-			y: 18.775d
+			y: 19.525d
 			icon: {
 				id: "ae2:crafting_pattern"
 				count: 1
@@ -1083,7 +1084,7 @@
 		{
 			id: "199E588067D9CF9F"
 			x: 4.0d
-			y: 18.775d
+			y: 19.525d
 			icon: {
 				id: "ae2:pattern_provider"
 				count: 1
@@ -1122,7 +1123,7 @@
 		{
 			id: "761A5ACAEE9A1588"
 			x: 6.0d
-			y: 18.775d
+			y: 19.525d
 			icon: {
 				id: "ae2:molecular_assembler"
 				count: 1
@@ -1168,7 +1169,7 @@
 		{
 			id: "3256D8605808D07A"
 			x: 8.6d
-			y: 18.775d
+			y: 19.525d
 			icon: {
 				id: "ae2:1k_crafting_storage"
 				count: 1
@@ -1216,7 +1217,7 @@
 		{
 			id: "4C251A5FBF288288"
 			x: 8.6d
-			y: 20.275d
+			y: 18.025d
 			icon: {
 				id: "ae2:processing_pattern"
 				count: 1
@@ -1255,7 +1256,7 @@
 		{
 			id: "628BB49DC2AAA41F"
 			x: 10.6d
-			y: 18.775d
+			y: 19.525d
 			icon: {
 				id: "ae2:crafting_card"
 				count: 1
@@ -1306,7 +1307,7 @@
 		{
 			id: "481D143950165232"
 			x: 12.6d
-			y: 18.775d
+			y: 19.525d
 			icon: {
 				id: "mekanism:advanced_control_circuit"
 				count: 1
@@ -1598,12 +1599,13 @@
 		}
 		{
 			id: "10683B41B8A2569B"
-			x: 11.6d
-			y: 14.425d
+			x: 0.0d
+			y: 25.0d
 			icon: {
 				id: "ae2:interface"
 				count: 1
 			}
+			hide_dependency_lines: true
 			dependencies: [
 				"188B5DA5652EFC13"
 			]
@@ -1637,12 +1639,13 @@
 		}
 		{
 			id: "52D1CFF3595407C9"
-			x: 4.6d
-			y: 13.3d
+			x: 0.0d
+			y: 26.6d
 			icon: {
 				id: "ae2:network_tool"
 				count: 1
 			}
+			hide_dependency_lines: true
 			dependencies: [
 				"68DB324F17A467F3"
 			]
@@ -1662,12 +1665,13 @@
 		}
 		{
 			id: "77FEE5209B67A4B4"
-			x: 11.6d
-			y: 9.55d
+			x: 1.6d
+			y: 26.6d
 			icon: {
 				id: "ae2:item_cell_housing"
 				count: 1
 			}
+			hide_dependency_lines: true
 			dependencies: [
 				"3107F38F6765E074"
 			]
@@ -1687,8 +1691,8 @@
 		}
 		{
 			id: "4342DA54864C265F"
-			x: 0.0d
-			y: 24.324999999999996d
+			x: 7.29d
+			y: 25.0d
 			icon: {
 				id: "extendedae:entro_crystal"
 				count: 1
@@ -1727,8 +1731,8 @@
 		}
 		{
 			id: "110707208D725711"
-			x: 2.0d
-			y: 24.324999999999996d
+			x: 9.29d
+			y: 25.0d
 			icon: {
 				id: "extendedae:crystal_assembler"
 				count: 1
@@ -1780,8 +1784,8 @@
 		}
 		{
 			id: "5BBDB9E4B8166E3A"
-			x: 4.0d
-			y: 24.324999999999996d
+			x: 11.29d
+			y: 25.0d
 			icon: {
 				id: "extendedae:circuit_cutter"
 				count: 1
@@ -1820,8 +1824,8 @@
 		}
 		{
 			id: "4A401167020FBDB9"
-			x: 7.0d
-			y: 24.324999999999996d
+			x: 14.29d
+			y: 25.0d
 			icon: {
 				id: "appflux:energy_processor"
 				count: 1
@@ -1869,8 +1873,8 @@
 		}
 		{
 			id: "59EE5DF5D7393061"
-			x: 9.0d
-			y: 24.324999999999996d
+			x: 16.29d
+			y: 25.0d
 			icon: {
 				id: "appflux:fe_1k_cell"
 				count: 1
@@ -1917,6 +1921,417 @@
 					id: "701EF8F6927D7803"
 					type: "xp_levels"
 					xp_levels: 10
+				}
+			]
+		}
+		{
+			id: "197AD24AEA823E90"
+			x: 8.65d
+			y: 4.199999999999999d
+			icon: {
+				id: "ae2:fluix_pickaxe"
+				count: 1
+			}
+			optional: true
+			dependencies: [
+				"20289A0EF28C852A"
+			]
+			tasks: [
+				{
+					id: "48C2A51EE3FBE5F3"
+					type: "item"
+					item: {
+						id: "ae2:fluix_pickaxe"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "30DE479F3C0CDF1F"
+					type: "item"
+					item: {
+						id: "ae2:fluix_crystal"
+						count: 1
+					}
+					count: 8
+				}
+				{
+					id: "5C908F0A6514140D"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+		}
+		{
+			id: "667B8F1B1F4833EA"
+			x: 4.6d
+			y: 11.05d
+			icon: {
+				id: "ae2:crystal_resonance_generator"
+				count: 1
+			}
+			dependencies: [
+				"68DB324F17A467F3"
+			]
+			tasks: [
+				{
+					id: "1F2796EA3585B07C"
+					type: "item"
+					item: {
+						id: "ae2:crystal_resonance_generator"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "53DDD293C9918426"
+					type: "item"
+					item: {
+						id: "ae2:charged_certus_quartz_crystal"
+						count: 1
+					}
+					count: 2
+				}
+				{
+					id: "201DE0DBE4CB75AE"
+					type: "xp_levels"
+					xp_levels: 6
+				}
+			]
+		}
+		{
+			id: "752AFBB1F67EAA89"
+			x: 7.199999999999999d
+			y: 11.05d
+			icon: {
+				id: "ae2:fluid_storage_cell_1k"
+				count: 1
+			}
+			dependencies: [
+				"51E5531618D4B793"
+			]
+			tasks: [
+				{
+					id: "42544A9192063ABD"
+					type: "item"
+					item: {
+						id: "ae2:fluid_storage_cell_1k"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "27B69C848109C34A"
+					type: "item"
+					item: {
+						id: "ae2:cell_component_1k"
+						count: 1
+					}
+					count: 1
+				}
+				{
+					id: "636AE2E6A5FE9764"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+		}
+		{
+			id: "59DEA4114D1D5E3B"
+			x: 13.6d
+			y: 12.925d
+			icon: {
+				id: "ae2:cell_workbench"
+				count: 1
+			}
+			dependencies: [
+				"22026B4EDB5B0C43"
+			]
+			tasks: [
+				{
+					id: "202ADDC865004701"
+					type: "item"
+					item: {
+						id: "ae2:cell_workbench"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "60BC157AB738B223"
+					type: "item"
+					item: {
+						id: "ae2:basic_card"
+						count: 1
+					}
+					count: 2
+				}
+				{
+					id: "77D6F6662900EE8A"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+		}
+		{
+			id: "689CD3C6861A5DC5"
+			x: 9.6d
+			y: 11.05d
+			icon: {
+				id: "ae2:io_port"
+				count: 1
+			}
+			dependencies: [
+				"5C1BE0D2A1DC8D0B"
+			]
+			tasks: [
+				{
+					id: "5F6D840257C413D3"
+					type: "item"
+					item: {
+						id: "ae2:io_port"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "6227AD27D51B3C94"
+					type: "item"
+					item: {
+						id: "ae2:speed_card"
+						count: 1
+					}
+					count: 1
+				}
+				{
+					id: "4CFF0F4BD63B722F"
+					type: "xp_levels"
+					xp_levels: 6
+				}
+			]
+		}
+		{
+			id: "3D4C6F4E8F84D8E6"
+			x: 2.0d
+			y: 25.0d
+			icon: {
+				id: "ae2:annihilation_plane"
+				count: 1
+			}
+			dependencies: [
+				"10683B41B8A2569B"
+			]
+			tasks: [
+				{
+					id: "2EB696867F3EB13B"
+					type: "item"
+					item: {
+						id: "ae2:annihilation_plane"
+						count: 1
+					}
+					count: 1
+				}
+				{
+					id: "1049C7E9FBEE7EE3"
+					type: "item"
+					item: {
+						id: "ae2:formation_plane"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "7334A025E40792F6"
+					type: "item"
+					item: {
+						id: "ae2:annihilation_core"
+						count: 1
+					}
+					count: 2
+				}
+				{
+					id: "1623FE9B5422CAC3"
+					type: "xp_levels"
+					xp_levels: 6
+				}
+			]
+		}
+		{
+			id: "2DE72750DFE6D2F0"
+			x: 10.6d
+			y: 21.025d
+			icon: {
+				id: "ae2:crafting_monitor"
+				count: 1
+			}
+			dependencies: [
+				"3256D8605808D07A"
+			]
+			tasks: [
+				{
+					id: "2756BBFEEEF4A7D4"
+					type: "item"
+					item: {
+						id: "ae2:4k_crafting_storage"
+						count: 1
+					}
+					count: 1
+				}
+				{
+					id: "7DABDFD7B6DA9515"
+					type: "item"
+					item: {
+						id: "ae2:crafting_monitor"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "7B66D25C207D29A9"
+					type: "item"
+					item: {
+						id: "ae2:crafting_unit"
+						count: 1
+					}
+					count: 2
+				}
+				{
+					id: "19F49E09287992E1"
+					type: "xp_levels"
+					xp_levels: 6
+				}
+			]
+		}
+		{
+			id: "53A2D8B1C75626E4"
+			x: 6.0d
+			y: 21.4d
+			icon: {
+				id: "ae2:pattern_access_terminal"
+				count: 1
+			}
+			dependencies: [
+				"199E588067D9CF9F"
+			]
+			tasks: [
+				{
+					id: "38336FCFCFCA0F84"
+					type: "item"
+					item: {
+						id: "ae2:pattern_access_terminal"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "306B4219C284EDEE"
+					type: "item"
+					item: {
+						id: "ae2:blank_pattern"
+						count: 1
+					}
+					count: 4
+				}
+				{
+					id: "6E7C70DD1A98D917"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+		}
+		{
+			id: "2585FB9E1C72E61B"
+			x: 11.29d
+			y: 26.5d
+			icon: {
+				id: "extendedae:crystal_fixer"
+				count: 1
+			}
+			optional: true
+			dependencies: [
+				"110707208D725711"
+			]
+			tasks: [
+				{
+					id: "5F26D1FE3F833A46"
+					type: "item"
+					item: {
+						id: "extendedae:crystal_fixer"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "42135EC179FA6380"
+					type: "item"
+					item: {
+						id: "ae2:charged_certus_quartz_crystal"
+						count: 1
+					}
+					count: 4
+				}
+				{
+					id: "6543807EBD6108C5"
+					type: "xp_levels"
+					xp_levels: 8
+				}
+			]
+		}
+		{
+			id: "5C15963A121D43D5"
+			x: 13.6d
+			y: 14.425d
+			icon: {
+				id: "extendedae:tag_storage_bus"
+				count: 1
+			}
+			optional: true
+			dependencies: [
+				"37EB4DD214F449A0"
+			]
+			tasks: [
+				{
+					id: "415F5C49F297AD54"
+					type: "item"
+					item: {
+						id: "extendedae:tag_storage_bus"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "5137F4F2A59424ED"
+					type: "item"
+					item: {
+						id: "ae2:logic_processor"
+						count: 1
+					}
+					count: 2
+				}
+				{
+					id: "6A00E60460BA6A73"
+					type: "xp_levels"
+					xp_levels: 5
 				}
 			]
 		}
@@ -1984,19 +2399,29 @@
 		}
 		{
 			id: "2626D4821CAB6853"
-			image: "kronwerke:textures/quests/ae2/extended.png"
-			x: 1.5550000000000002d
-			y: 22.874999999999996d
-			width: 4.11d
+			image: "kronwerke:textures/quests/ae2/devices.png"
+			x: 2.145d
+			y: 23.55d
+			width: 5.29d
 			height: 0.9d
 			rotation: 0.0d
 			order: 1
 		}
 		{
 			id: "527492AA3E7E912D"
+			image: "kronwerke:textures/quests/ae2/extended.png"
+			x: 8.845d
+			y: 23.55d
+			width: 4.11d
+			height: 0.9d
+			rotation: 0.0d
+			order: 1
+		}
+		{
+			id: "240E153BFC0E1424"
 			image: "kronwerke:textures/quests/ae2/flux.png"
-			x: 8.595d
-			y: 22.874999999999996d
+			x: 15.885d
+			y: 23.55d
 			width: 4.19d
 			height: 0.9d
 			rotation: 0.0d

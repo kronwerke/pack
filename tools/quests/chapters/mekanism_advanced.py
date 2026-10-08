@@ -117,6 +117,33 @@ quests = [
           rewards=[reward_item("mekanism:alloy_reinforced", 4), reward_table("s3_uncommon"), reward_xp(10)],
           deps=["reinforced", "refined_obsidian"], icon="mekanism:alloy_atomic", size=1.5, shape="hexagon"),
 
+    quest("ro_paxel", 13, 3, "&5Schmied ein Obsidian-Paxel",
+          subtitle="Das härteste Werkzeug ohne Strom.",
+          description=[
+              "Spitzhacke, Axt und Schaufel aus &6Raffiniertem Obsidian&r, dann alle drei oben in eine Reihe, zwei Stöcke darunter in die Mitte.",
+              "",
+              "&eWerte laut Config:&r Abbautempo &d12&r (Netherit hat 9), &d8 192&r Haltbarkeit, Verzauberbarkeit 18. Ein Werkzeug für Stein, Holz und Erde, das lange hält und sich gut verzaubern lässt.",
+              "",
+              "Wer lieber mit Strom gräbt, nimmt den Atomic Disassembler weiter unten.",
+          ],
+          tasks=[task_item("mekanismtools:refined_obsidian_paxel", 1)],
+          rewards=[reward_item("mekanism:ingot_refined_obsidian", 4), reward_xp(5)],
+          deps=["refined_obsidian"], icon="mekanismtools:refined_obsidian_paxel", optional=True),
+
+    quest("ro_armor", 15.5, 3, "&5Zieh Raffinierten Obsidian an",
+          subtitle="Mehr Rüstung als Netherit.",
+          description=[
+              "Helm, Brustpanzer, Hose und Stiefel aus &6Raffinierten Obsidianbarren&r, gelegt wie jede Rüstung. Für den Satz brauchst du &e24 Barren&r.",
+              "",
+              "&eWerte laut Config:&r zusammen &d31&r Rüstung, &d5&r Härte pro Teil und 20 Prozent Rückstoßschutz pro Teil. Netherit hat 20 Rüstung und 3 Härte.",
+              "",
+              "Bis zur MekaSuit in Stufe 4 ist das die stärkste Rüstung von Mekanism.",
+          ],
+          tasks=[task_item("mekanismtools:refined_obsidian_helmet", 1), task_item("mekanismtools:refined_obsidian_chestplate", 1),
+                 task_item("mekanismtools:refined_obsidian_leggings", 1), task_item("mekanismtools:refined_obsidian_boots", 1)],
+          rewards=[reward_item("mekanism:ingot_refined_obsidian", 8), reward_table("s3_common"), reward_xp(10)],
+          deps=["refined_obsidian"], icon="mekanismtools:refined_obsidian_chestplate", optional=True),
+
     # ---- Teleporter und Miner ----------------------------------------------------------
     quest("teleport_core", 0, 7, "&dBau einen Teleportationskern",
           subtitle="Das Herz von Teleporter und Miner.",
@@ -188,6 +215,45 @@ quests = [
           rewards=[reward_item("mekanism:alloy_infused", 8), reward_xp(5)],
           deps=["atomic"], icon="mekanism:atomic_disassembler", optional=True),
 
+    quest("robit_use", 2.5, 9.25, "&eLass den Robit für dich arbeiten",
+          subtitle="Werkbank, Ofen und Amboss auf Rädern.",
+          description=[
+              "Rechtsklick auf den Robit öffnet sein Fenster. Die Reiter: &6Inventar&r, &6Werkbank&r, &6Schmelzen&r (ein Ofen) und &6Reparatur&r (ein Amboss).",
+              "",
+              "Mit den Knöpfen schaltest du &eFolgen&r und &eAufsammeln&r ein, gibst ihm einen Namen und ein anderes Aussehen. &eNach Hause&r schickt ihn zurück zum Ladepad, auf das du ihn gesetzt hast.",
+              "",
+              "Ein Robit, der dir in die Mine folgt, sammelt die Drops ein, schmilzt das Erz und flickt die Spitzhacke.",
+          ],
+          tasks=[task_checkmark("Robit benutzt")],
+          rewards=[reward_item("mekanism:energy_tablet", 1), reward_xp(5)],
+          deps=["robit"], icon="mekanism:robit", optional=True),
+
+    quest("miner_setup", 5, 9.25, "&6Stell den Miner richtig ein",
+          subtitle="Filter, Höhe, Ersatzblock.",
+          description=[
+              "&eFilter:&r Ein Tag-Filter mit &ec:ores&r nimmt jedes Erz. Ohne Filter baut er nichts ab. Der &eUmgekehrte Modus&r baut dagegen alles ab, was keinem Filter entspricht.",
+              "",
+              "&eHöhe und Radius:&r Min- und Max-Y begrenzen die Arbeit, der Radius geht bis &e32&r. Ein schmales Band um die Höhe deines Erzes spart viel Zeit.",
+              "",
+              "&eErsatz:&r Pro Filter kannst du einen Block wählen, der statt des Erzes gesetzt wird, zum Beispiel Bruchstein, den du in sein Inventar legst. So bleiben keine Löcher zurück.",
+              "",
+              "&eBehutsamkeit&r kostet zwölfmal so viel Strom. Pro Block braucht er ohne Upgrades 80 Ticks, Geschwindigkeitsupgrades machen ihn schneller.",
+          ],
+          tasks=[task_checkmark("Miner läuft mit Filter")],
+          rewards=[reward_item("mekanism:upgrade_speed", 2), reward_xp(5)],
+          deps=["miner"], icon="mekanism:digital_miner", optional=True),
+
+    quest("security", 7.5, 9.25, "&8Mach Frequenzen privat",
+          subtitle="Dein Teleporter gehört dir.",
+          description=[
+              "Teleporter, Miner und Maschinen haben im Fenster einen Schalter für die Sicherheit: &6Öffentlich&r, &6Privat&r oder &6Vertraut&r (nur Spieler auf deiner Liste).",
+              "",
+              "Auch Frequenzen gibt es öffentlich und privat. Eine öffentliche Teleporter-Frequenz sieht jeder auf dem Server in seiner Liste, und jeder kann in deine Basis springen. Leg für zu Hause eine &eprivate&r Frequenz an.",
+          ],
+          tasks=[task_checkmark("Private Frequenz angelegt")],
+          rewards=[reward_item("minecraft:ender_pearl", 4), reward_xp(3)],
+          deps=["teleporter"], icon="mekanism:teleporter_frame", optional=True),
+
     # ---- Fortschrittliche Stufe --------------------------------------------------------
     quest("installer", 10.5, 7, "&a&lStuf eine Fabrik auf Fortschrittlich",
           subtitle="Aus drei Plätzen werden fünf.",
@@ -232,6 +298,18 @@ quests = [
           tasks=[task_item("mekanism:advanced_energy_cube", 1)],
           rewards=[reward_item("mekanism:energy_tablet", 2)],
           deps=["adv_transmit"], optional=True),
+
+    quest("adv_line", 13, 9.5, "&a&lStuf die ganze Straße hoch",
+          subtitle="Fünf Plätze an jeder Station.",
+          description=[
+              "Die Reinigungsfabrik allein bringt wenig, wenn dahinter einfache Maschinen warten. Stuf auch &6Brecherfabrik&r, &6Anreicherungsfabrik&r und &6Schmelzfabrik&r auf Fortschrittlich, jede mit dem Fortgeschrittenen Installateur.",
+              "",
+              "Dann laufen an jeder Station fünf Erze gleichzeitig, und die fortschrittlichen Transporter halten mit. Steck in alle Fabriken dieselben Upgrades, sonst staut es vor der langsamsten.",
+          ],
+          tasks=[task_item("mekanism:advanced_crushing_factory", 1), task_item("mekanism:advanced_enriching_factory", 1),
+                 task_item("mekanism:advanced_smelting_factory", 1)],
+          rewards=[reward_item("mekanism:advanced_control_circuit", 4), reward_table("s3_uncommon"), reward_xp(15)],
+          deps=["adv_factory", "adv_transmit"], icon="mekanism:advanced_enriching_factory"),
 
     quest("adv_tanks", 15.5, 6.25, "&bStuf Tanks und Tonnen hoch",
           subtitle="Doppelt, vierfach, doppelt so viel.",
@@ -288,6 +366,19 @@ quests = [
           tasks=[task_item("mekanism:resistive_heater", 1), task_item("mekanism:basic_thermodynamic_conductor", 8)],
           rewards=[reward_item("mekanism:dust_tin", 8), reward_xp(5)],
           deps=["welcome"], icon="mekanism:resistive_heater"),
+
+    quest("fuelwood", 0, 14.9, "&6Heiz mit Holz",
+          subtitle="Der Brennholz-Heizer.",
+          description=[
+              "Oben Stahl, Schaltkreis, Stahl, Mitte Ofen, &6Stahlgehäuse&r, Ofen, unten drei Stahl. Er ist schon in Stufe 2 offen.",
+              "",
+              "Er verbrennt alles, was im Ofen brennt, und macht daraus &eWärme&r statt Strom: laut Config 400 Einheiten pro Brenntick. Wärmeleiter tragen sie zum Kessel, wie beim Widerstandsheizer.",
+              "",
+              "Der Vorteil: Er braucht keinen Strom. Mit Kohleblöcken aus einer Holzfarm heizt er den Kessel an, bevor die Turbine überhaupt läuft.",
+          ],
+          tasks=[task_item("mekanism:fuelwood_heater", 1)],
+          rewards=[reward_item("minecraft:coal_block", 8), reward_xp(5)],
+          deps=["heater"], icon="mekanism:fuelwood_heater", optional=True),
 
     quest("boiler", 2.5, 14, "&6&lBau einen Thermoelektrischen Dampfkessel",
           subtitle="Wasser rein, Dampf raus.",
@@ -368,7 +459,7 @@ quests = [
           ],
           tasks=[task_item("mekanismgenerators:advanced_solar_generator", 1)],
           rewards=[reward_item("mekanismgenerators:solar_generator", 2), reward_xp(5)],
-          deps=["welcome"], optional=True),
+          deps=["welcome"], optional=True, section="more"),
 
     quest("liquifier", 2.5, 17.5, "&aBau einen Nährstoffverflüssiger",
           subtitle="Essen aus dem Schlauch.",
@@ -379,7 +470,20 @@ quests = [
           ],
           tasks=[task_item("mekanism:nutritional_liquifier", 1), task_item("mekanism:canteen", 1)],
           rewards=[reward_item("minecraft:bread", 16), reward_xp(3)],
-          deps=["welcome"], icon="mekanism:nutritional_liquifier", optional=True),
+          deps=["welcome"], icon="mekanism:nutritional_liquifier", optional=True, section="more"),
+
+    quest("chem_cell", 2.5, 19, "&3Lager Gase im ME-Netz",
+          subtitle="Applied Mekanistics verbindet beides.",
+          description=[
+              "&6ME-Chemikalienzellengehäuse:&r oben Quarzglas, Redstone, Quarzglas, Mitte Redstone links und rechts, unten drei &6Osmiumbarren&r. Mit einer &61k-ME-Speicherkomponente&r wird daraus die &6Chemikalienzelle&r.",
+              "",
+              "Ins ME-Laufwerk gesteckt, speichert sie Gase und andere Chemikalien von Mekanism. Import- und Exportbusse, Speicherbusse und Interfaces von AE2 arbeiten dann auch mit Chemikalien, das Terminal zeigt sie neben Gegenständen und Flüssigkeiten.",
+              "",
+              "So kommt Sauerstoff oder Wasserstoff aus dem Netz direkt in deine Maschinen. Wie ME-Netze gebaut werden, steht im Kapitel &bApplied Energistics 2&r.",
+          ],
+          tasks=[task_item("appmek:chemical_storage_cell_1k", 1)],
+          rewards=[reward_item("mekanism:ingot_osmium", 16), reward_xp(5)],
+          deps=["welcome"], icon="appmek:chemical_storage_cell_1k", optional=True, section="more"),
 
     quest("flamethrower", 5, 17.5, "&cBau einen Flammenwerfer",
           subtitle="Wasserstoff als Waffe.",
@@ -390,7 +494,7 @@ quests = [
           ],
           tasks=[task_item("mekanism:flamethrower", 1)],
           rewards=[reward_item("mekanism:ingot_bronze", 8), reward_xp(3)],
-          deps=["welcome"], optional=True),
+          deps=["welcome"], optional=True, section="more"),
 
     # ---- MoreMachine -------------------------------------------------------------------
     quest("cnc_stamper", 8.5, 17.5, "&3&lBau eine CNC Stamper",

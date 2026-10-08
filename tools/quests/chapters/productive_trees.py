@@ -335,6 +335,58 @@ quests = [
           deps=["first_tree"], icon="botanypots:terracotta_hopper_botany_pot"),
 
     # ---- Holz --------------------------------------------------------------------------
+    quest("fan_roast", 7.5, 0, "&6Röste Nüsse mit dem Lüfter",
+          subtitle="Ein Band, ein Feuer, ganze Kisten auf einmal.",
+          description=[
+              "Ein &6Ummantelter Lüfter&r von Create, der durch ein &6Lagerfeuer&r bläst, räuchert alles in seinem Luftstrom, so wie ein Räucherofen. Leg die Nüsse aus deinen Pflanztöpfen auf ein Band, das am Lüfter vorbeiläuft, und hinten kommen sie geröstet an.",
+              "",
+              "Kisten rösten genauso, neun Nüsse in einem Stück. Weder Ofen noch Brennstoff, und das Lagerfeuer brennt von allein weiter.",
+          ],
+          tasks=[task_item("productivetrees:roasted_walnut", 64)],
+          rewards=[reward_item("minecraft:campfire", 1), reward_xp(4)],
+          deps=["crates"], icon="create:encased_fan", optional=True, section="holz"),
+
+    quest("nut_list", 7.5, -1.5, "&6Röste jede Nusssorte",
+          subtitle="Zwölf Nüsse, vom Markt bis zur letzten Kreuzung.",
+          description=[
+              "Eine Checkliste für lange Abende: von jeder der zwölf Nusssorten eine geröstete Nuss. Walnuss, Pekannuss, Buchecker, Paranuss, Cashew, Butternuss und Edelkastanie wachsen an Bäumen aus dem Markt.",
+              "",
+              "&6Hasel&r, &6Mandel&r, &6Pistazie&r, &6Kerzennuss&r und &6Ginkgo&r musst du züchten. JEI zeigt unter &eBaumbestäubung&r die Eltern.",
+          ],
+          tasks=[task_item("productivetrees:roasted_walnut", 1), task_item("productivetrees:roasted_pecan", 1),
+                 task_item("productivetrees:roasted_beechnut", 1), task_item("productivetrees:roasted_brazil_nut", 1),
+                 task_item("productivetrees:roasted_cashew", 1), task_item("productivetrees:roasted_butternut", 1),
+                 task_item("productivetrees:roasted_chestnut", 1), task_item("productivetrees:roasted_hazelnut", 1),
+                 task_item("productivetrees:roasted_almond", 1), task_item("productivetrees:roasted_pistachio", 1),
+                 task_item("productivetrees:roasted_candlenut", 1), task_item("productivetrees:roasted_ginkgo_nut", 1)],
+          rewards=[reward_item("minecraft:emerald", 8), reward_table("s1_uncommon")],
+          deps=["crates"], icon="productivetrees:roasted_hazelnut", optional=True, section="holz"),
+
+    quest("fruit_basket", 7.5, 1.1, "&aFüll einen Obstkorb",
+          subtitle="Sechs Früchte von Bäumen aus dem Markt.",
+          description=[
+              "Kauf am Markt die Setzlinge und ernte je vier &6Granny-Smith-Äpfel&r, &6Nashi-Birnen&r, &6Vogelkirschen&r, &6Bananen&r, &6Oliven&r und &6Golden-Delicious-Äpfel&r. Alle sechs stammen aus Generation 2 und 3 und kosten 2 oder 4 Smaragde.",
+              "",
+              "Dazu ein &6Fruchtkorb&r von Cooking for Blockheads (Holzstufe, Holzdruckplatte, Holzstufe nebeneinander). Er lagert Obst sichtbar an der Wand, und berührt er die Küche, nimmt der Kochtisch daraus.",
+          ],
+          tasks=[task_item("productivetrees:granny_smith_apple", 4), task_item("productivetrees:sand_pear", 4),
+                 task_item("productivetrees:wild_cherry", 4), task_item("productivetrees:banana", 4),
+                 task_item("productivetrees:olive", 4), task_item("productivetrees:golden_delicious_apple", 4),
+                 task_item("cookingforblockheads:fruit_basket", 1)],
+          rewards=[reward_item("minecraft:emerald", 6), reward_xp(5)],
+          deps=["pots"], icon="cookingforblockheads:fruit_basket", section="holz"),
+
+    quest("compost", 7.5, 2.4, "&aMach Knochenmehl aus Laub",
+          subtitle="Blätter aus dem Topf, Reife für den Baum.",
+          description=[
+              "Jeder Pflanztopf mit Setzling wirft bei jeder Ernte auch ein &6Blatt&r ab. Leite die Blätter in einen &6Komposter&r, und daraus wird &6Knochenmehl&r.",
+              "",
+              "Das Knochenmehl geht zurück an die Bäume: Sieben Stück machen ein Fruchtblatt reif, und Setzlinge wachsen damit schneller. So füttert die Plantage sich selbst.",
+          ],
+          tasks=[task_item("minecraft:bone_meal", 64)],
+          rewards=[reward_item("minecraft:composter", 1), reward_xp(3)],
+          deps=["pots"], icon="minecraft:composter", section="holz"),
+
     quest("sawmill_run", 0, 5.5, "&6Säge Stämme im Sägewerk",
           subtitle="Sechs Bretter und zwei Sägemehl pro Stamm, 10 Sekunden.",
           description=[
@@ -391,6 +443,19 @@ quests = [
           rewards=[reward_item("create:andesite_alloy", 8), reward_xp(5)],
           deps=["wood_set"], icon="create:mechanical_saw", optional=True),
 
+    quest("wood_palette", 5, 7.7, "&6Leg dir eine Holzpalette an",
+          subtitle="Fünf Farben Holz für den nächsten Bau.",
+          description=[
+              "Kauf am Markt Teak, Balsa, Ipe, Rotahorn und Eibe und säge je 16 Bretter. Balsa ist fast weiß, die anderen reichen von hell bis dunkel.",
+              "",
+              "Fünf Holzfarben, die es in Vanilla nicht gibt, alle aus den ersten beiden Generationen. Die Eibe wächst nur aus vier Setzlingen im Quadrat, im Pflanztopf reicht einer.",
+          ],
+          tasks=[task_item("productivetrees:teak_planks", 16), task_item("productivetrees:balsa_planks", 16),
+                 task_item("productivetrees:ipe_planks", 16), task_item("productivetrees:red_maple_planks", 16),
+                 task_item("productivetrees:yew_planks", 16)],
+          rewards=[reward_item("minecraft:emerald", 4), reward_xp(3)],
+          deps=["wood_set"], icon="productivetrees:teak_planks", optional=True),
+
     quest("upgrades", 2.5, 7.7, "&6Ausblick: Zeit-Upgrades",
           subtitle="Sägewerk, Entrinder und Sieb werden schneller.",
           description=[
@@ -419,7 +484,7 @@ quests = [
           ],
           tasks=[task_item("productivetrees:granny_smith_apple_sapling", 1)],
           rewards=[reward_item("minecraft:emerald", 2), reward_xp(3)],
-          deps=["first_tree"], icon="productivetrees:granny_smith_apple"),
+          deps=["first_tree"], icon="productivetrees:granny_smith_apple", section="familien"),
 
     quest("citrus", 13.5, -1.2, "&eZüchte die Zitronatzitrone",
           subtitle="Der Stammvater von dreizehn Zitrusarten.",
@@ -432,7 +497,7 @@ quests = [
           ],
           tasks=[task_item("productivetrees:citron_sapling", 1)],
           rewards=[reward_item("minecraft:emerald", 4), reward_xp(5)],
-          deps=["pollinated"], icon="productivetrees:lemon", optional=True),
+          deps=["pollinated"], icon="productivetrees:lemon", optional=True, section="familien"),
 
     quest("tropical", 16, -1.2, "&aPflanz eine Banane",
           subtitle="Bananen, Mango, Kokos und Kakao, die großen Früchte.",
@@ -448,7 +513,7 @@ quests = [
           ],
           tasks=[task_item("productivetrees:banana_sapling", 1)],
           rewards=[reward_item("minecraft:emerald", 2), reward_xp(3)],
-          deps=["first_tree"], icon="productivetrees:banana"),
+          deps=["first_tree"], icon="productivetrees:banana", section="familien"),
 
     quest("berries", 18.5, -1.2, "&dZüchte einen Holunder",
           subtitle="Beeren: schneller Snack, fünf pro Blatt.",
@@ -461,7 +526,7 @@ quests = [
           ],
           tasks=[task_item("productivetrees:elderberry_sapling", 1)],
           rewards=[reward_item("minecraft:emerald", 3), reward_xp(5)],
-          deps=["pollinated"], icon="productivetrees:elderberry", optional=True),
+          deps=["pollinated"], icon="productivetrees:elderberry", optional=True, section="familien"),
 
     quest("nuts", 11, 1.0, "&6Pflanz einen Cashewbaum",
           subtitle="Zwölf Nussbäume, geröstet dreimal so sättigend.",
@@ -476,7 +541,7 @@ quests = [
           ],
           tasks=[task_item("productivetrees:cashew_sapling", 1)],
           rewards=[reward_item("minecraft:emerald", 2), reward_xp(3)],
-          deps=["first_tree"], icon="productivetrees:cashew"),
+          deps=["first_tree"], icon="productivetrees:cashew", section="familien"),
 
     quest("spices", 13.5, 1.0, "&6Züchte Gewürzbäume",
           subtitle="Piment, Nelke, Muskat, Sternanis und Zimt.",
@@ -519,7 +584,7 @@ quests = [
           ],
           tasks=[task_item("productivetrees:ceylon_ebony_sapling", 1)],
           rewards=[reward_item("minecraft:emerald", 3), reward_xp(3)],
-          deps=["first_tree"], icon="productivetrees:ceylon_ebony_planks"),
+          deps=["first_tree"], icon="productivetrees:ceylon_ebony_planks", section="familien"),
 
     quest("conifers", 11, 3.2, "&2Pflanz eine Lawson-Zypresse",
           subtitle="Nadelbäume: Lärche, Tannen, Kiefern, Mammutbaum.",
@@ -562,7 +627,7 @@ quests = [
           ],
           tasks=[task_checkmark("Gelesen")],
           rewards=[reward_item("minecraft:emerald", 2), reward_xp(3)],
-          deps=["first_tree"], icon="productivetrees:rubber_tree_sapling", optional=True),
+          deps=["first_tree"], icon="productivetrees:rubber_tree_sapling", optional=True, section="familien"),
 
     quest("mutations", 18.5, 3.2, "&dLass einen Setzling mutieren",
           subtitle="Jeder zwanzigste Baum wird eine andere Art.",
@@ -575,7 +640,7 @@ quests = [
           ],
           tasks=[task_item("productivetrees:white_ipe_sapling", 1)],
           rewards=[reward_item("productivetrees:ipe_sapling", 4), reward_table("s1_uncommon")],
-          deps=["first_tree"], icon="productivetrees:white_ipe_sapling", optional=True),
+          deps=["first_tree"], icon="productivetrees:white_ipe_sapling", optional=True, section="familien"),
 
     # ---- Fundstücke und leuchtende Bäume ----------------------------------------------
     quest("loot_saplings", 11, 5.8, "&bFinde einen Setzling in einer Truhe",
@@ -592,6 +657,17 @@ quests = [
           tasks=[task_item("productivetrees:blue_yonder_sapling", 1)],
           rewards=[reward_item("minecraft:emerald", 4), reward_table("s1_uncommon")],
           deps=["first_tree"], icon="productivetrees:blue_yonder_sapling", optional=True),
+
+    quest("planet_peach", 11, 7.5, "&bErnte Planetenpfirsiche",
+          subtitle="Das beste Obst des Mods, aus einem Schiffswrack.",
+          description=[
+              "Der &6Blue Yonder&r aus der Schiffswrack-Schatztruhe trägt den &6Planetenpfirsich&r. Er macht satt wie eine &6Goldene Karotte&r und ist damit das stärkste Obst von Productive Trees.",
+              "",
+              "Am Baum reift er extrem langsam. Steck den Setzling in einen &6Trichter-Pflanztopf&r, dort fällt die Frucht bei jeder Ernte mit ab.",
+          ],
+          tasks=[task_item("productivetrees:planet_peach", 4)],
+          rewards=[reward_item("minecraft:golden_carrot", 4), reward_xp(5)],
+          deps=["loot_saplings"], icon="productivetrees:planet_peach", optional=True),
 
     quest("amber", 13.5, 5.8, "&6Grab den Brown Amber aus",
           subtitle="Ein Baum, der Bernstein tropft.",
@@ -645,6 +721,28 @@ quests = [
           tasks=[task_item("minecraft:beehive", 1), task_item("minecraft:spyglass", 1)],
           rewards=[reward_item("minecraft:honeycomb", 6), reward_table("s1_common")],
           deps=["first_tree"], icon="minecraft:bee_nest", size=1.5, shape="hexagon"),
+
+    quest("honey", 2.5, 12.5, "&eErnte Honig an der Zuchtstation",
+          subtitle="Die Bienen arbeiten ohnehin.",
+          description=[
+              "Die Bienen deiner Zuchtstation füllen den Stock mit Honig. Ist er voll, tropft er außen. Eine &6Glasflasche&r holt eine &6Honigflasche&r heraus, die &6Schere&r Honigwaben. Ein &6Lagerfeuer&r unter dem Stock hält die Bienen dabei friedlich.",
+              "",
+              "Honig brauchst du für den Honigglasierten Schinken und den Gleaming Salad aus dem Kapitel &6Kochen&r, Waben für Kerzen und die Bienenstöcke von Stufe 2.",
+          ],
+          tasks=[task_item("minecraft:honey_bottle", 4)],
+          rewards=[reward_item("minecraft:glass_bottle", 8), reward_xp(3)],
+          deps=["station"], icon="minecraft:honey_bottle"),
+
+    quest("sapling_bank", 5, 12.5, "&eLeg eine Setzlingsbank an",
+          subtitle="Keine gezüchtete Art geht wieder verloren.",
+          description=[
+              "Jede neue Art, die du züchtest, ist anfangs ein einziger Setzling. Pflanz ihn, fäll den Baum und leg die Setzlinge, die abfallen, in eine eigene Schublade, mindestens zwei pro Art.",
+              "",
+              "Eine Wand aus &6Schubladen&r von Functional Storage ist deine Bank, jede Schublade zeigt vorn, welche Art darin liegt. So hast du für jede Kreuzung beide Eltern zur Hand und musst nie wieder am Markt nachkaufen.",
+          ],
+          tasks=[task_item("functionalstorage:oak_4", 2)],
+          rewards=[reward_item("minecraft:bone_meal", 16), reward_xp(3)],
+          deps=["pollinated"], icon="functionalstorage:oak_4", optional=True),
 
     quest("pairs", 2.5, 10.5, "&eLies die Chancen richtig",
           subtitle="5, 10 oder 50 Prozent, und ein Paar mit zwei Kindern.",

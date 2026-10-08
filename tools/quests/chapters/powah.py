@@ -165,6 +165,32 @@ quests = [
           rewards=[reward_item("minecraft:emerald", 4), reward_xp(10)],
           deps=["niotic"], icon="powah:crystal_spirited"),
 
+    quest("rod_spirited", 21, 1, "&aBau einen Spirited-Stab",
+          subtitle="40 000 FE pro Tick an der Kugel.",
+          description=[
+              "Der Weg geht Stufe für Stufe: ein &6Quarzblock&r oben, zwei Kondensatoren der neuen Stufe links und rechts vom Casing, unten der Stab darunter. Erst Blazing, dann Niotic, dann &aSpirited&r.",
+              "",
+              "Ein &6Spirited Capacitor&r sind vier Spirited-Kristalle um einen Large Capacitor, mit Paste in den Ecken. Für den Stab brauchst du zwei, also acht Smaragde und acht Millionen FE.",
+              "",
+              "Ein Spirited-Stab schiebt &e40 000 FE/t&r. Vier davon laden einen Spirited-Kristall in wenigen Sekunden. Die Leitung zu den Stäben muss das tragen: Blazing-Kabel schaffen 20 000 FE/t, Niotic 50 000.",
+          ],
+          tasks=[task_item("powah:energizing_rod_spirited", 1)],
+          rewards=[reward_item("powah:crystal_spirited", 2), reward_table("s3_uncommon"), reward_xp(15)],
+          deps=["spirited", "rod_upgrade"], icon="powah:energizing_rod_spirited", optional=True),
+
+    quest("snowball", 18.5, -1, "&bLade einen Schneeball",
+          subtitle="Ein Blitz zum Werfen.",
+          description=[
+              "Ein &6Schneeball&r in der Energizing Orb wird für &e500 000 FE&r zum &6Charged Snowball&r.",
+              "",
+              "Geworfen schlägt dort, wo er auftrifft, ein &eBlitz&r ein. Damit machst du aus einem Creeper einen geladenen Creeper, aus einem Schwein einen Zombifizierten Piglin und aus einem Dorfbewohner eine Hexe, ganz ohne Gewitter.",
+              "",
+              "&cVorsicht:&r Der Blitz zündet, was brennen kann. Nicht im Holzhaus werfen.",
+          ],
+          tasks=[task_item("powah:charged_snowball", 4)],
+          rewards=[reward_item("minecraft:snowball", 16), reward_xp(5)],
+          deps=["blazing"], icon="powah:charged_snowball", optional=True),
+
     quest("dry_ice", 13.5, -1, "&bMach Trockeneis",
           subtitle="Das beste Kühlmittel für den Reaktor.",
           description=[
@@ -336,6 +362,19 @@ quests = [
           rewards=[reward_item("powah:uraninite", 32), reward_table("s3_uncommon"), reward_xp(15)],
           deps=["reactor_fuel"], icon="powah:reactor_basic"),
 
+    quest("reactor_blazing", 10, 12.5, "&6&lBau einen Blazing-Reaktor",
+          subtitle="Zehntausend FE pro Tick.",
+          description=[
+              "Zwei Schritte: 36 Basic-Reaktoren werden mit Hardened-Kondensatoren und Uraninit zu 36 &8Hardened&r (2 500 FE/t), die dann mit Blazing-Kondensatoren zu 36 &6Blazing&r. Das Muster ist immer dasselbe: vier alte Blöcke in die Ecken, vier Kondensatoren an die Seiten, Uraninit in die Mitte.",
+              "",
+              "Ein Blazing-Reaktor macht bis &e10 000 FE/t&r, mehr als zwölf Blazing Furnators. Kühl ihn mit Trockeneis und füttere Kohle und Redstone nach.",
+              "",
+              "&eKabel nicht vergessen:&r Ab hier reichen Basic-Kabel (2 000 FE/t) nicht mehr.",
+          ],
+          tasks=[task_item("powah:reactor_blazing", 36)],
+          rewards=[reward_item("powah:uraninite", 32), reward_table("s3_rare"), reward_xp(25)],
+          deps=["reactor_upgrade", "blazing"], icon="powah:reactor_blazing", optional=True),
+
     # ---- Leiten und Speichern -------------------------------------------------------
     quest("cables", 0, 16.5, "&eLeg Energiekabel",
           subtitle="Zwölf Kabel aus Stäben und Nuggets.",
@@ -395,6 +434,80 @@ quests = [
           tasks=[task_item("powah:player_transmitter_starter", 1), task_item("powah:binding_card", 1)],
           rewards=[reward_item("minecraft:ender_pearl", 4), reward_table("s3_common"), reward_xp(10)],
           deps=["ender_cell"], icon="powah:player_transmitter_starter"),
+
+    quest("ender_hunt", 10, 16.5, "&5Geh auf Endermanjagd",
+          subtitle="Zwei Teile gibt es nur vom Enderman.",
+          description=[
+              "Rechtsklick mit einer &6Photoelectric Pane&r auf einen &5Enderman&r oder eine Endermite macht daraus die &6Lens Of Ender&r. Rechtsklick mit einer &6Binding Card&r macht die &6Binding Card (Dimensional)&r.",
+              "",
+              "&eDie Linse:&r Rechtsklick damit auf ein Solar Panel, und es sieht den Himmel auch durch Blöcke darüber. So bauen sich Solarfelder unter dem Dach oder unter der Erde.",
+              "",
+              "&eDie Karte:&r Im Player Transmitter lädt sie dich auch, wenn du in einer anderen Dimension bist.",
+          ],
+          tasks=[task_item("powah:lens_of_ender", 1), task_item("powah:binding_card_dim", 1)],
+          rewards=[reward_item("minecraft:ender_pearl", 8), reward_xp(10)],
+          deps=["transmitter"], icon="powah:lens_of_ender", optional=True),
+
+    quest("battery", 0, 18.75, "&aBau eine Battery",
+          subtitle="Eine Million FE für die Tasche.",
+          description=[
+              "&6Battery (Starter):&r Paste in die Ecken, vier Basic Capacitors an die Seiten, ein &6Redstoneblock&r in die Mitte. Sie fasst &e1 000 000 FE&r, höhere Stufen bis 400 Millionen.",
+              "",
+              "&eSchleichen und Rechtsklick&r schaltet das Laden ein: Dann gibt sie ihren Strom an die anderen Stromgeräte in deinem Inventar ab. Eine volle Battery in der Tasche hält Werkzeug und Jetpack auf langen Ausflügen am Leben.",
+              "",
+              "Im Fenster einer Ender Cell macht eine Battery per Shift-Klick den Speicher größer.",
+          ],
+          tasks=[task_item("powah:battery_starter", 1)],
+          rewards=[reward_item("powah:capacitor_basic", 4), reward_xp(5)],
+          deps=["cells"], icon="powah:battery_starter", optional=True),
+
+    quest("hopper", 2.5, 19.75, "&eLade eine ganze Kiste",
+          subtitle="Der Energy Hopper.",
+          description=[
+              "&6Energy Hopper (Starter):&r drei Paste oben, Tiny links und rechts vom Casing, unten Paste, ein &6Trichter&r, Paste.",
+              "",
+              "Er zeigt wie ein Trichter in eine Richtung und lädt alle Stromgeräte in der Kiste oder dem Behälter davor, Starter mit &e500 FE/t&r. Strom bekommt er per Kabel.",
+              "",
+              "Eine Kiste voller Batteries, Tabletts und Werkzeug, ein Hopper dran, und alles ist am nächsten Morgen voll.",
+          ],
+          tasks=[task_item("powah:energy_hopper_starter", 1)],
+          rewards=[reward_item("minecraft:hopper", 2), reward_xp(5)],
+          deps=["battery"], icon="powah:energy_hopper_starter", optional=True),
+
+    quest("discharger", 5, 19.75, "&eEntlade Batteries",
+          subtitle="Der Energy Discharger.",
+          description=[
+              "&6Energy Discharger (Starter):&r Paste in die Ecken und an die Seiten, Tiny oben und unten in der Mitte, das Casing in die Mitte.",
+              "",
+              "Er zieht den Strom aus den Gegenständen in seinen Plätzen und gibt ihn an Kabel und Maschinen daneben ab. Das Gegenstück zum Energy Hopper.",
+              "",
+              "So trägst du Strom ohne Kabel: Batteries am Kraftwerk mit dem Hopper laden, zur Baustelle tragen, im Discharger leeren.",
+          ],
+          tasks=[task_item("powah:energy_discharger_starter", 1)],
+          rewards=[reward_item("powah:dielectric_paste", 16), reward_xp(5)],
+          deps=["battery"], icon="powah:energy_discharger_starter", optional=True),
+
+    quest("cable_up", 10, 18.5, "&6Leg Blazing-Kabel",
+          subtitle="Die Leitung muss mit dem Reaktor wachsen.",
+          description=[
+              "Sechs waagerechte Dielectric Rods oben und unten, in der Mitte Blazing-Kristall, &6Blazing Capacitor&r, Blazing-Kristall: zwölf &6Blazing-Kabel&r mit &e20 000 FE/t&r. Hardened-Kabel gehen genauso mit Energized Steel, 5 000 FE/t.",
+              "",
+              "Ein Kabel ist so stark wie sein schwächstes Stück. Ein Basic-Kabel (2 000 FE/t) zwischen Blazing-Reaktor und Zelle bremst alles auf ein Fünftel.",
+          ],
+          tasks=[task_item("powah:energy_cable_blazing", 12)],
+          rewards=[reward_item("powah:crystal_blazing", 4), reward_xp(5)],
+          deps=["cables", "blazing"], icon="powah:energy_cable_blazing", optional=True),
+
+    quest("cell_niotic", 2.5, 21, "&bBau eine Niotic Energy Cell",
+          subtitle="100 Millionen FE in einem Block.",
+          description=[
+              "Vier Niotic-Kristalle in die Ecken, zwei &6Niotic Capacitors&r oben und unten, zwei &6Blazing Energy Cells&r links und rechts, das Casing in die Mitte.",
+              "",
+              "Sie speichert &e100 Millionen FE&r, mehr als die beiden Blazing-Zellen zusammen (80 Millionen). Stell sie hinter den Reaktor, dann verpufft im Auto-Modus nichts.",
+          ],
+          tasks=[task_item("powah:energy_cell_niotic", 1)],
+          rewards=[reward_item("powah:crystal_niotic", 2), reward_table("s3_uncommon"), reward_xp(15)],
+          deps=["cells", "niotic"], icon="powah:energy_cell_niotic", optional=True),
 ]
 
 images = [

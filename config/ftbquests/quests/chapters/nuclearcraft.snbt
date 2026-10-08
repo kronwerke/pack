@@ -55,8 +55,8 @@
 		}
 		{
 			id: "161098343E743312"
-			x: 4.0d
-			y: 5.52d
+			x: 6.3d
+			y: 4.02d
 			icon: {
 				id: "nuclearcraft:raw_uranium"
 				count: 1
@@ -113,8 +113,8 @@
 		}
 		{
 			id: "165246D8B7236EBA"
-			x: 4.0d
-			y: 4.02d
+			x: 6.3d
+			y: 5.52d
 			icon: {
 				id: "nuclearcraft:graphite_dust"
 				count: 1
@@ -153,8 +153,8 @@
 		}
 		{
 			id: "585EC3D75E9B9AB9"
-			x: 6.0d
-			y: 4.02d
+			x: 8.3d
+			y: 5.52d
 			icon: {
 				id: "nuclearcraft:plate_basic"
 				count: 1
@@ -192,8 +192,8 @@
 		}
 		{
 			id: "1EAD067E49C19340"
-			x: 8.4d
-			y: 4.02d
+			x: 10.3d
+			y: 5.52d
 			icon: {
 				id: "nuclearcraft:alloy_smelter"
 				count: 1
@@ -231,8 +231,8 @@
 		}
 		{
 			id: "29FAFDD9D2F3F21A"
-			x: 10.4d
-			y: 4.02d
+			x: 12.3d
+			y: 5.52d
 			icon: {
 				id: "nuclearcraft:ferroboron_ingot"
 				count: 1
@@ -272,8 +272,8 @@
 		}
 		{
 			id: "7F35186F803C8F15"
-			x: 12.4d
-			y: 4.02d
+			x: 14.3d
+			y: 5.52d
 			icon: {
 				id: "nuclearcraft:tough_alloy_ingot"
 				count: 1
@@ -512,13 +512,12 @@
 		}
 		{
 			id: "2880174B6CFC2589"
-			x: 4.0d
-			y: 7.02d
+			x: 10.0d
+			y: 10.870000000000001d
 			icon: {
 				id: "nuclearcraft:isotope_separator"
 				count: 1
 			}
-			hide_dependency_lines: true
 			dependencies: [
 				"48E12C44C7750F0F"
 			]
@@ -561,8 +560,8 @@
 		}
 		{
 			id: "25B4DA49C85D1B2B"
-			x: 6.0d
-			y: 7.02d
+			x: 12.0d
+			y: 10.870000000000001d
 			icon: {
 				id: "nuclearcraft:fuel_uranium_leu_235"
 				count: 1
@@ -608,7 +607,7 @@
 		{
 			id: "3BE2CE767844989E"
 			x: 0.0d
-			y: 17.47d
+			y: 17.72d
 			icon: {
 				id: "nuclearcraft:pressurizer"
 				count: 1
@@ -648,7 +647,7 @@
 		{
 			id: "6DA829C325374BF3"
 			x: 2.0d
-			y: 17.47d
+			y: 17.72d
 			icon: {
 				id: "nuclearcraft:fission_reactor_casing"
 				count: 1
@@ -696,7 +695,7 @@
 		{
 			id: "2B99F004F95F24A3"
 			x: 4.0d
-			y: 18.97d
+			y: 19.22d
 			icon: {
 				id: "nuclearcraft:decay_hastener"
 				count: 1
@@ -735,7 +734,7 @@
 		{
 			id: "48591788BD0ABF5E"
 			x: 4.0d
-			y: 17.47d
+			y: 17.72d
 			icon: {
 				id: "nuclearcraft:assembler"
 				count: 1
@@ -774,7 +773,7 @@
 		{
 			id: "20C468130E41EA87"
 			x: 6.0d
-			y: 17.47d
+			y: 17.72d
 			icon: {
 				id: "nuclearcraft:basic_electric_circuit"
 				count: 1
@@ -813,7 +812,7 @@
 		{
 			id: "7BE786BD2341276A"
 			x: 8.0d
-			y: 17.47d
+			y: 17.72d
 			icon: {
 				id: "nuclearcraft:fission_reactor_controller"
 				count: 1
@@ -859,7 +858,7 @@
 		{
 			id: "64E7C69711777B4B"
 			x: 0.0d
-			y: 14.47d
+			y: 14.72d
 			icon: {
 				id: "nuclearcraft:rock_crusher"
 				count: 1
@@ -899,7 +898,7 @@
 		{
 			id: "19169A02C0545372"
 			x: 2.0d
-			y: 14.47d
+			y: 16.22d
 			icon: {
 				id: "nuclearcraft:fission_reactor_solid_fuel_cell"
 				count: 1
@@ -938,7 +937,7 @@
 		{
 			id: "120DBA3E6237920F"
 			x: 4.0d
-			y: 14.47d
+			y: 16.22d
 			icon: {
 				id: "nuclearcraft:graphite_block"
 				count: 1
@@ -977,7 +976,7 @@
 		{
 			id: "2F65CA23BBDCEF00"
 			x: 2.0d
-			y: 15.97d
+			y: 14.72d
 			icon: {
 				id: "nuclearcraft:thermoconducting_plate"
 				count: 1
@@ -1018,7 +1017,7 @@
 		{
 			id: "7E4780CE393BFDD3"
 			x: 4.0d
-			y: 15.97d
+			y: 14.72d
 			icon: {
 				id: "nuclearcraft:water_heat_sink"
 				count: 1
@@ -1071,7 +1070,7 @@
 		{
 			id: "3DB212CA2A66BF80"
 			x: 10.4d
-			y: 17.47d
+			y: 17.72d
 			icon: {
 				id: "nuclearcraft:fission_reactor_port"
 				count: 1
@@ -1110,7 +1109,7 @@
 		{
 			id: "22EE3CFB439CE226"
 			x: 12.4d
-			y: 17.47d
+			y: 17.72d
 			icon: {
 				id: "nuclearcraft:fission_reactor_controller"
 				count: 1
@@ -1160,7 +1159,7 @@
 		{
 			id: "25BD64271101CF3B"
 			x: 15.2d
-			y: 17.47d
+			y: 19.22d
 			icon: {
 				id: "nuclearcraft:fuel_reprocessor"
 				count: 1
@@ -1208,7 +1207,7 @@
 		{
 			id: "7D220B21FC4DA04A"
 			x: 15.2d
-			y: 18.97d
+			y: 20.72d
 			icon: {
 				id: "nuclearcraft:fission_reactor_irradiation_chamber"
 				count: 1
@@ -1257,7 +1256,7 @@
 		{
 			id: "214CE55749B67920"
 			x: 0.0d
-			y: 23.32d
+			y: 25.07d
 			icon: {
 				id: "nuclear_radiation:geiger_counter"
 				count: 1
@@ -1306,7 +1305,7 @@
 		{
 			id: "12D5E27A63081433"
 			x: 2.0d
-			y: 23.32d
+			y: 25.07d
 			icon: {
 				id: "nuclear_radiation:hazmat_helmet"
 				count: 1
@@ -1372,7 +1371,7 @@
 		{
 			id: "5E51D73471E48A4A"
 			x: 4.0d
-			y: 23.32d
+			y: 25.07d
 			icon: {
 				id: "nuclear_radiation:radaway"
 				count: 1
@@ -1429,7 +1428,7 @@
 		{
 			id: "3C6D148714AB274A"
 			x: 6.0d
-			y: 23.32d
+			y: 25.07d
 			icon: {
 				id: "nuclearcraft:fuel_uranium_heu_235"
 				count: 1
@@ -1483,6 +1482,425 @@
 				}
 			]
 		}
+		{
+			id: "5E66A70264E14A40"
+			x: 8.3d
+			y: 7.02d
+			icon: {
+				id: "nuclearcraft:speed_upgrade"
+				count: 1
+			}
+			dependencies: [
+				"165246D8B7236EBA"
+			]
+			tasks: [
+				{
+					id: "2865CFF094EE314E"
+					type: "item"
+					item: {
+						id: "nuclearcraft:speed_upgrade"
+						count: 1
+					}
+					count: 4
+				}
+				{
+					id: "7E8E9DAA2C84DD67"
+					type: "item"
+					item: {
+						id: "nuclearcraft:energy_upgrade"
+						count: 1
+					}
+					count: 4
+				}
+			]
+			rewards: [
+				{
+					id: "1B5F19390F4D2793"
+					type: "item"
+					item: {
+						id: "minecraft:lapis_lazuli"
+						count: 1
+					}
+					count: 16
+				}
+				{
+					id: "2EA1C48F28C721EF"
+					type: "item"
+					item: {
+						id: "minecraft:redstone"
+						count: 1
+					}
+					count: 16
+				}
+				{
+					id: "1384BDFE55066AD9"
+					type: "xp_levels"
+					xp_levels: 10
+				}
+			]
+		}
+		{
+			id: "5A351A0F00D7D554"
+			x: 3.3d
+			y: 3.12d
+			icon: {
+				id: "nuclearcraft:solar_panel_basic"
+				count: 1
+			}
+			dependencies: [
+				"76C7E94B78DE11C2"
+			]
+			tasks: [
+				{
+					id: "161A30C5B39EE9CA"
+					type: "item"
+					item: {
+						id: "nuclearcraft:solar_panel_basic"
+						count: 1
+					}
+					count: 2
+				}
+			]
+			rewards: [
+				{
+					id: "1EC12DE4F8EF064C"
+					type: "item"
+					item: {
+						id: "minecraft:daylight_detector"
+						count: 1
+					}
+					count: 2
+				}
+				{
+					id: "1B2EAF7FE5C036C2"
+					type: "xp_levels"
+					xp_levels: 10
+				}
+			]
+		}
+		{
+			id: "3FFE8D768FF434F2"
+			x: 10.3d
+			y: 7.02d
+			icon: {
+				id: "nuclearcraft:nuclear_furnace"
+				count: 1
+			}
+			optional: true
+			hide_dependency_lines: true
+			dependencies: [
+				"585EC3D75E9B9AB9"
+				"161098343E743312"
+			]
+			tasks: [
+				{
+					id: "292F8E9A0903087B"
+					type: "item"
+					item: {
+						id: "nuclearcraft:nuclear_furnace"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "75773B65ACB6DBD1"
+					type: "item"
+					item: {
+						id: "minecraft:raw_iron"
+						count: 1
+					}
+					count: 32
+				}
+				{
+					id: "5E2497E7ED521FA3"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+		}
+		{
+			id: "30A5612E83BC2AFF"
+			x: 16.3d
+			y: 5.52d
+			icon: {
+				id: "nuclearcraft:tough_chestplate"
+				count: 1
+			}
+			optional: true
+			dependencies: [
+				"7F35186F803C8F15"
+			]
+			tasks: [
+				{
+					id: "4C2C3471A1112807"
+					type: "item"
+					item: {
+						id: "nuclearcraft:tough_helmet"
+						count: 1
+					}
+					count: 1
+				}
+				{
+					id: "2BB9654B32E82885"
+					type: "item"
+					item: {
+						id: "nuclearcraft:tough_chestplate"
+						count: 1
+					}
+					count: 1
+				}
+				{
+					id: "79B305ECF438C20A"
+					type: "item"
+					item: {
+						id: "nuclearcraft:tough_leggings"
+						count: 1
+					}
+					count: 1
+				}
+				{
+					id: "6281F6F2C1C81114"
+					type: "item"
+					item: {
+						id: "nuclearcraft:tough_boots"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "30FB8983B6779F86"
+					type: "item"
+					item: {
+						id: "nuclearcraft:tough_alloy_ingot"
+						count: 1
+					}
+					count: 8
+				}
+				{
+					id: "3F59659DFD925D88"
+					type: "xp_levels"
+					xp_levels: 10
+				}
+			]
+		}
+		{
+			id: "3E8E13AF9A5B34EA"
+			x: 6.0d
+			y: 14.72d
+			icon: {
+				id: "nuclearcraft:redstone_heat_sink"
+				count: 1
+			}
+			dependencies: [
+				"7E4780CE393BFDD3"
+			]
+			tasks: [
+				{
+					id: "7A30D3074D264A61"
+					type: "item"
+					item: {
+						id: "nuclearcraft:redstone_heat_sink"
+						count: 1
+					}
+					count: 4
+				}
+			]
+			rewards: [
+				{
+					id: "3CF46746A637F390"
+					type: "item"
+					item: {
+						id: "minecraft:redstone_block"
+						count: 1
+					}
+					count: 4
+				}
+				{
+					id: "18BB234A20D03AEA"
+					type: "xp_levels"
+					xp_levels: 10
+				}
+			]
+		}
+		{
+			id: "3F2240D98B16A9AF"
+			x: 12.4d
+			y: 19.72d
+			icon: {
+				id: "nuclearcraft:steam_turbine"
+				count: 1
+			}
+			optional: true
+			dependencies: [
+				"3DB212CA2A66BF80"
+			]
+			tasks: [
+				{
+					id: "74C0B577EE6B0F0D"
+					type: "item"
+					item: {
+						id: "nuclearcraft:steam_turbine"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "2C6545FDF2A6E1B0"
+					type: "item"
+					item: {
+						id: "nuclearcraft:coil_copper"
+						count: 1
+					}
+					count: 4
+				}
+				{
+					id: "1A82058C7FE5FC65"
+					type: "xp_levels"
+					xp_levels: 10
+				}
+			]
+		}
+		{
+			id: "2D746AF6714EE01D"
+			x: 15.2d
+			y: 17.72d
+			icon: {
+				id: "nuclearcraft:fuel_uranium_heu_235"
+				count: 1
+			}
+			dependencies: [
+				"22EE3CFB439CE226"
+			]
+			tasks: [
+				{
+					id: "5BC4F5DEF6E84784"
+					type: "item"
+					item: {
+						id: "nuclearcraft:fuel_uranium_heu_235"
+						count: 1
+					}
+					count: 3
+				}
+			]
+			rewards: [
+				{
+					id: "32A3E630919425B0"
+					type: "item"
+					item: {
+						id: "nuclearcraft:uranium_238"
+						count: 1
+					}
+					count: 8
+				}
+				{
+					id: "70EECC68975D874E"
+					type: "xp_levels"
+					xp_levels: 10
+				}
+			]
+		}
+		{
+			id: "61FE2E780F3FEA60"
+			x: 4.0d
+			y: 26.57d
+			icon: {
+				id: "nuclear_radiation:rad_shielding_light"
+				count: 1
+			}
+			dependencies: [
+				"12D5E27A63081433"
+			]
+			tasks: [
+				{
+					id: "3F2E8AE4462B7545"
+					type: "item"
+					item: {
+						id: "nuclear_radiation:rad_shielding_light"
+						count: 1
+					}
+					count: 4
+				}
+				{
+					id: "7CF9FA75B82FC831"
+					type: "item"
+					item: {
+						id: "nuclear_radiation:rad_shielding_medium"
+						count: 1
+					}
+					count: 2
+				}
+			]
+			rewards: [
+				{
+					id: "39BCB4C0DED01691"
+					type: "item"
+					item: {
+						id: "minecraft:copper_ingot"
+						count: 1
+					}
+					count: 16
+				}
+				{
+					id: "447F515815EACFFD"
+					type: "xp_levels"
+					xp_levels: 10
+				}
+			]
+		}
+		{
+			id: "2F41A2CC82C7E211"
+			x: 6.0d
+			y: 27.32d
+			icon: {
+				id: "nuclear_radiation:prussian_blue"
+				count: 1
+			}
+			dependencies: [
+				"5E51D73471E48A4A"
+			]
+			tasks: [
+				{
+					id: "1421D54D1B9DAE11"
+					type: "item"
+					item: {
+						id: "nuclear_radiation:prussian_blue"
+						count: 1
+					}
+					count: 4
+				}
+				{
+					id: "5FB469A8012376FC"
+					type: "item"
+					item: {
+						id: "nuclear_radiation:rad_protection_potion"
+						count: 1
+					}
+					count: 2
+				}
+			]
+			rewards: [
+				{
+					id: "2A49F50EBF9F9CDF"
+					type: "item"
+					item: {
+						id: "minecraft:lapis_lazuli"
+						count: 1
+					}
+					count: 16
+				}
+				{
+					id: "7AE20888E19474D2"
+					type: "xp_levels"
+					xp_levels: 10
+				}
+			]
+		}
 	]
 	images: [
 		{
@@ -1508,7 +1926,7 @@
 		{
 			id: "3D6F9CB435E0A89F"
 			image: "kronwerke:textures/quests/nuclearcraft/machines.png"
-			x: 6.82d
+			x: 9.12d
 			y: 2.5700000000000003d
 			width: 6.64d
 			height: 0.9d
@@ -1519,7 +1937,7 @@
 			id: "1E7C51AB682DA1A6"
 			image: "kronwerke:textures/quests/nuclearcraft/parts.png"
 			x: 0.9199999999999999d
-			y: 9.42d
+			y: 9.17d
 			width: 2.84d
 			height: 0.9d
 			rotation: 0.0d
@@ -1529,7 +1947,7 @@
 			id: "3E751C8D00535036"
 			image: "kronwerke:textures/quests/nuclearcraft/reactor.png"
 			x: 2.37d
-			y: 13.02d
+			y: 13.27d
 			width: 5.74d
 			height: 0.9d
 			rotation: 0.0d
@@ -1539,7 +1957,7 @@
 			id: "191615CC649689DB"
 			image: "kronwerke:textures/quests/nuclearcraft/radiation.png"
 			x: 1.285d
-			y: 21.12d
+			y: 22.87d
 			width: 3.57d
 			height: 0.9d
 			rotation: 0.0d

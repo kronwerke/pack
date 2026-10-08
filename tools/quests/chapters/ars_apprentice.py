@@ -717,8 +717,131 @@ quests = [
           rewards=[reward_item("create:brass_ingot", 4), reward_xp(5)],
           deps=["glyph_press"], icon="ars_technica:glyph_fuse", optional=True),
 
+    # ---- Neu: Nebenquests -------------------------------------------------------------
+    quest("el_relays", 5, 10.5, "&aVerstärk deine Relais",
+          subtitle="Ars Elemental: mehr Speicher, mehr Durchsatz.",
+          description=[
+              "Im Apparat kommt das Relais in die Mitte, dazu &e2 Essenzen&r seines Elements und &e2 Diamanten&r auf die Podeste:",
+              "&cFiery Collector Relay&r: Kollektor mit Feueressenz.",
+              "&bFlow Splitter Relay&r: Splitter mit Wasseressenz.",
+              "&2Deep Depositor Relay&r: Einzahler mit Erdessenz.",
+              "",
+              "Die verstärkten Relais halten mehr Quelle und schieben sie schneller weiter. Lohnt sich überall, wo viele Links oder Kammern an einem Relais hängen.",
+          ],
+          tasks=[task_item("ars_elemental:fire_relay", 1), task_item("ars_elemental:water_relay", 1),
+                 task_item("ars_elemental:earth_relay", 1)],
+          rewards=[reward_item("minecraft:diamond", 2), reward_xp(5)],
+          deps=["splitter", "collector"], icon="ars_elemental:fire_relay", optional=True),
+
+    quest("brazier_relay", 0, 19, "&aBau ein Kohlenbecken-Relais",
+          subtitle="Das Ritual wirkt woanders.",
+          description=[
+              "Im Apparat: &6Ritual-Kohlenbecken&r in die Mitte, &e3 Manipulationsessenzen&r auf die Podeste.",
+              "",
+              "Dominion-Zauberstab: erst auf das Kohlenbecken, dann auf das &6Ritual-Kohlenbecken-Relais&r. Das Ritual wirkt dann am Relais, die Quelle zahlt weiter das ursprüngliche Becken. Reichweite &e15 Blöcke&r, mehrere Becken dürfen an dasselbe Relais.",
+              "",
+              "&eTipp:&r So stehen alle Becken mit ihren Gläsern an einem Ort, und Ernte oder Fruchtbarkeit wirken trotzdem mitten auf dem Feld.",
+          ],
+          tasks=[task_item("ars_nouveau:brazier_relay", 1)],
+          rewards=[reward_item("ars_nouveau:manipulation_essence", 2), reward_xp(5)],
+          deps=["brazier"], icon="ars_nouveau:brazier_relay", optional=True),
+
+    quest("redstone_magic", 2.5, 26, "&aSchalte mit Magie",
+          subtitle="Redstone ohne Kabel.",
+          description=[
+              "&6Redstone-Relais&r: &e6 Goldbarren&r, oben und unten Mitte &6Redstone&r, ein &6Quelljuwelblock&r in die Mitte. Mit dem Dominion-Zauberstab verbunden schicken Relais ein Signal bis &e30 Blöcke&r weit. Eingang ist eine Seite, ausgegeben wird an allen anderen.",
+              "",
+              "&6Schaukasten&r: oben &e3 Glas&r, Mitte Glas, &6Beobachter&r, Glas, unten &e3 Archwood-Planken&r. Binde mit dem Zauberstab eine Truhe daran, klick das Item darauf, das gezählt werden soll. Rechtsklick erhöht die Schwelle, Schlagen senkt sie. Über der Schwelle gibt er ein Signal.",
+              "",
+              "Schleichend mit dem Zauberstab gebunden dreht sich das um: dann gibt es ein Signal, solange weniger in der Truhe liegt.",
+          ],
+          tasks=[task_item("ars_nouveau:redstone_relay", 2), task_item("ars_nouveau:item_detector", 1)],
+          rewards=[reward_item("minecraft:redstone", 16), reward_xp(5)],
+          deps=["turret"], icon="ars_nouveau:redstone_relay", optional=True),
+
+    quest("enchanters_eye", 5, 26, "&6Bau das Auge des Zauberers",
+          subtitle="Zaubern durch einen Kristall.",
+          description=[
+              "Im Apparat: &6Hellseher-Kristall&r in die Mitte, &e4 Lohenstaub&r und &e4 Enderperlen&r auf die Podeste.",
+              "",
+              "Benutz das Auge auf einem gesetzten Hellseher-Kristall, um es zu binden, oder halt eine gebundene &6Schriftrolle des Sehers&r in der Zweithand. Der eingeschriebene Zauber wirkt dann am Kristall, wie bei einem Zauberturm, aber mit dir als Zauberer.",
+              "",
+              "Gut für Teleport oder Items bewegen aus der Ferne.",
+          ],
+          tasks=[task_item("ars_nouveau:enchanters_eye", 1)],
+          rewards=[reward_item("minecraft:blaze_powder", 4), reward_xp(5)],
+          deps=["spell_turret"], icon="ars_nouveau:enchanters_eye", optional=True),
+
+    quest("potion_melder", 10, 25.5, "&dMisch Tränke im Trankmelder",
+          subtitle="Zwei Tränke werden einer.",
+          description=[
+              "Im Apparat: &6Trankglas&r in die Mitte, &e2 Abschwörungsessenzen&r, &e2 Goldblöcke&r und &e4 Lohenruten&r auf die Podeste.",
+              "",
+              "Dominion-Zauberstab von zwei Trankgläsern zum Melder, das sind die Eingänge. Dann vom Melder zu einem dritten Glas, das ist der Ausgang. Der Melder nimmt Dosen aus beiden Gläsern und füllt einen Trank mit beiden Effekten ab. Jede Mischung kostet Quelle.",
+          ],
+          tasks=[task_item("ars_nouveau:potion_melder", 1)],
+          rewards=[reward_item("minecraft:blaze_rod", 2), reward_xp(5)],
+          deps=["potions"], icon="ars_nouveau:potion_melder", optional=True),
+
+    quest("potion_diffuser", 12.5, 25.5, "&dStell einen Trankdiffusor auf",
+          subtitle="Ein Trank für die ganze Basis.",
+          description=[
+              "Im Apparat: &6Lagerfeuer&r in die Mitte, &e3 Goldbarren&r und &e3 Archwood-Planken&r auf die Podeste.",
+              "",
+              "Binde mit dem Dominion-Zauberstab ein Trankglas an den Diffusor. Alle &e10 Minuten&r nimmt er einen Trank aus dem Glas und gibt den Effekt alle paar Sekunden an alle in der Nähe.",
+              "",
+              "Ein Glas mit Nachtsicht oder Feuerresistenz in der Werkstatt, und keiner muss mehr trinken.",
+          ],
+          tasks=[task_item("ars_nouveau:potion_diffuser", 1)],
+          rewards=[reward_item("minecraft:campfire", 1), reward_xp(4)],
+          deps=["potions"], icon="ars_nouveau:potion_diffuser", optional=True),
+
+    quest("flask_cannon", 10, 26.5, "&dBau eine Spritzflaschenkanone",
+          subtitle="Tränke werfen, ohne Spritztränke zu brauen.",
+          description=[
+              "Im Apparat: &6Werfer&r in die Mitte, &e2 Goldbarren&r, &e2 Lohenruten&r und &e4 Schwarzpulver&r auf die Podeste.",
+              "",
+              "Die Kanone nimmt Tränke aus Flaschen und Trankflaschen in deinem Inventar und verschießt sie als Wurftrank. Welchen, wählst du im Auswahlrad.",
+          ],
+          tasks=[task_item("ars_nouveau:splash_flask_cannon", 1)],
+          rewards=[reward_item("minecraft:gunpowder", 8), reward_xp(4)],
+          deps=["potions"], icon="ars_nouveau:splash_flask_cannon", optional=True),
+
+    quest("transmutation_focus", 5, 30, "&6Bau den Fokus der Transmutation",
+          subtitle="Ars Technica: doppelte Ausbeute für die Create-Glyphen.",
+          description=[
+              "Im Apparat: &6Manipulationsessenz&r in die Mitte, &6Messingbarren&r, &6Hasenpfote&r, &6Calibrated Precision Mechanism&r und &6Smaragd&r auf die Podeste. Getragen wird er als Curio.",
+              "",
+              "Press, Polish und Whirl laufen &edoppelt so schnell&r, Press und Polish verarbeiten &edoppelt so viele&r Items. Zufallsausbeute von Zerkleinern und Whirl ist doppelt so wahrscheinlich. Dazu zählt jede Glyphe im Zauber wie eine zusätzliche &dGlück&r-Verstärkung.",
+          ],
+          tasks=[task_item("ars_technica:transmutation_focus", 1)],
+          rewards=[reward_item("minecraft:emerald", 4), reward_xp(6)],
+          deps=["calibrated_mechanism"], icon="ars_technica:transmutation_focus", optional=True),
+
+    quest("transmutation_turret", 7.5, 30, "&6Bau einen Transmutationsturm",
+          subtitle="Ars Technica: der Fokus als Zauberturm.",
+          description=[
+              "Im Apparat: &6Verzauberter Zauberturm&r in die Mitte, &e3 Manipulationsessenzen&r und der &6Fokus der Transmutation&r auf die Podeste.",
+              "",
+              "Der &6Transmutation Infused Turret&r wirkt jeden Zauber so, als trüge er den Fokus. Dafür kostet jeder Schuss mehr Quelle.",
+          ],
+          tasks=[task_item("ars_technica:transmutation_turret", 1)],
+          rewards=[reward_item("ars_nouveau:manipulation_essence", 3), reward_table("s2_common")],
+          deps=["transmutation_focus", "spell_turret"], icon="ars_technica:transmutation_turret", optional=True),
+
+    quest("telefeast", 7.5, 31, "&dLern Telefeast",
+          subtitle="Ars Technica: essen aus der Truhe.",
+          description=[
+              "Am Tisch, Stufe 2: &6Manipulationsessenz&r, &6Goldener Apfel&r, &6Eimer&r, &6Glasflasche&r, &6Enderperle&r.",
+              "",
+              "Auf eine Truhe oder einen Tank gewirkt, isst oder trinkst du das erste Essen oder den ersten Trank darin, bei Tanks einen Teil der Flüssigkeit. Mit &dEmpfindlich&r benutzt er auch Items, die kein Essen sind, etwa Erfahrungsjuwelen.",
+          ],
+          tasks=[task_item("ars_technica:glyph_telefeast", 1)],
+          rewards=[reward_item("minecraft:golden_apple", 1), reward_xp(4)],
+          deps=["tech_glyphs"], icon="ars_technica:glyph_telefeast", optional=True),
+
     # ---- Stufenziel ---------------------------------------------------------------------
-    quest("mage", 20, 15, "&d&lWerde Meister der Quelle",
+    quest("mage", 27.5, 15, "&d&lWerde Meister der Quelle",
           subtitle="Quelle für die ganze Stadt.",
           description=[
               "Leg &e16 Quelljuwelblöcke&r auf Vorrat.",
@@ -735,12 +858,12 @@ quests = [
 
 images = [
     banner("ars_apprentice/title", "Ars Nouveau: Magier", 10, -2.4, height=1.8, kind="title", colour="magic"),
-    head("glyphen", "Glyphen der Stufe 2", 18, 0.6),
+    head("glyphen", "Glyphen der Stufe 2", 5, -1),
     head("quelle", "Quelle bewegen", 0, 7.9),
-    head("rituale", "Rituale und Vertraute", 0, 13.6),
+    head("rituale", "Rituale und Vertraute", 3.8, 13.6),
     head("automatisierung", "Automatisierung", 0, 21.6),
     head("technik", "Technik trifft Magie", 0, 27.6, colour="brass"),
-    banner("ars_apprentice/ziel", "Stufenziel", 20, 13.2, height=0.9, colour="magic"),
+    banner("ars_apprentice/ziel", "Stufenziel", 27.5, 13.6, height=0.9, colour="magic"),
 ]
 
 chapter(C, "Ars Nouveau: Magier", "ars_nouveau:apprentice_spell_book", "magic", quests, shape="circle", order=12,

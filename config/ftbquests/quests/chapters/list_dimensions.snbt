@@ -230,6 +230,41 @@
 			]
 		}
 		{
+			id: "7D27952BFCAE93F3"
+			x: 16.59d
+			y: 3.7399999999999998d
+			icon: {
+				id: "minecraft:respawn_anchor"
+				count: 1
+			}
+			optional: true
+			dependencies: [
+				"7A096582D8DC418E"
+			]
+			tasks: [
+				{
+					id: "159A813030B63D16"
+					type: "checkmark"
+				}
+			]
+			rewards: [
+				{
+					id: "48289342702222E8"
+					type: "item"
+					item: {
+						id: "minecraft:obsidian"
+						count: 1
+					}
+					count: 4
+				}
+				{
+					id: "339DC1B3E77D8A31"
+					type: "xp_levels"
+					xp_levels: 3
+				}
+			]
+		}
+		{
 			id: "4C6403D8C1E5AABA"
 			x: 0.0d
 			y: 8.84d
@@ -472,12 +507,13 @@
 		{
 			id: "7F3AEE771B0AE0B7"
 			x: 0.0d
-			y: 15.44d
+			y: 16.939999999999998d
 			icon: {
 				id: "waystones:waystone"
 				count: 1
 			}
 			hide_dependency_lines: true
+			hide_dependent_lines: true
 			dependencies: [
 				"76B0AB0DFE921AAC"
 			]
@@ -512,7 +548,7 @@
 		{
 			id: "208EBDB907C592AB"
 			x: 2.0d
-			y: 16.939999999999998d
+			y: 15.44d
 			icon: {
 				id: "waystones:warp_plate"
 				count: 1
@@ -551,7 +587,7 @@
 		{
 			id: "1E70DD338A79C4E3"
 			x: 2.0d
-			y: 13.94d
+			y: 19.939999999999998d
 			icon: {
 				id: "minecraft:obsidian"
 				count: 1
@@ -585,7 +621,7 @@
 		{
 			id: "12071FDFA1DDC340"
 			x: 4.0d
-			y: 13.94d
+			y: 19.939999999999998d
 			icon: {
 				id: "minecraft:rail"
 				count: 1
@@ -619,7 +655,7 @@
 		{
 			id: "2530A228C1123622"
 			x: 2.0d
-			y: 15.44d
+			y: 16.939999999999998d
 			icon: {
 				id: "ars_nouveau:sourcestone"
 				count: 1
@@ -653,7 +689,7 @@
 		{
 			id: "6D9190ECBF886CFE"
 			x: 4.0d
-			y: 16.939999999999998d
+			y: 15.44d
 			icon: {
 				id: "minecraft:leather"
 				count: 1
@@ -687,7 +723,7 @@
 		{
 			id: "22D20AE07EF7575D"
 			x: 4.0d
-			y: 15.44d
+			y: 16.939999999999998d
 			icon: {
 				id: "minecraft:clock"
 				count: 1
@@ -721,7 +757,7 @@
 		{
 			id: "700F030FDF18CD64"
 			x: 6.0d
-			y: 15.44d
+			y: 16.939999999999998d
 			icon: {
 				id: "minecraft:diamond"
 				count: 1
@@ -755,7 +791,7 @@
 		{
 			id: "3EB7E04048C1259C"
 			x: 8.0d
-			y: 15.44d
+			y: 16.939999999999998d
 			icon: {
 				id: "minecraft:iron_block"
 				count: 1
@@ -789,7 +825,7 @@
 		{
 			id: "484E378E6FC7D9F5"
 			x: 6.0d
-			y: 13.94d
+			y: 19.939999999999998d
 			icon: {
 				id: "minecraft:map"
 				count: 1
@@ -817,9 +853,225 @@
 			]
 		}
 		{
+			id: "2D05320EA8DB2E02"
+			x: 2.0d
+			y: 13.94d
+			icon: {
+				id: "waystones:warp_scroll"
+				count: 1
+			}
+			dependencies: [
+				"7F3AEE771B0AE0B7"
+			]
+			tasks: [
+				{
+					id: "5D09E9894DFCF4F9"
+					type: "item"
+					item: {
+						id: "waystones:warp_scroll"
+						count: 1
+					}
+					count: 3
+				}
+			]
+			rewards: [
+				{
+					id: "13BFCE8B0834B347"
+					type: "item"
+					item: {
+						id: "minecraft:ender_pearl"
+						count: 1
+					}
+					count: 2
+				}
+				{
+					id: "4BAC2F38106E86CF"
+					type: "xp_levels"
+					xp_levels: 3
+				}
+			]
+		}
+		{
+			id: "1B205E95FF765410"
+			x: 4.0d
+			y: 13.94d
+			icon: {
+				id: "waystones:orange_sharestone"
+				count: 1
+			}
+			dependencies: [
+				"2D05320EA8DB2E02"
+			]
+			tasks: [
+				{
+					id: "21136BB02BCE2C91"
+					type: "item"
+					item: {
+						id: "waystones:orange_sharestone"
+						count: 1
+					}
+					count: 2
+				}
+			]
+			rewards: [
+				{
+					id: "38235C820220F974"
+					type: "item"
+					item: {
+						id: "waystones:warp_dust"
+						count: 1
+					}
+					count: 8
+				}
+				{
+					id: "7C54673AE9CD4C34"
+					type: "xp_levels"
+					xp_levels: 3
+				}
+			]
+		}
+		{
+			id: "727B7DEB1A173563"
+			x: 2.0d
+			y: 18.439999999999998d
+			icon: {
+				id: "minecraft:saddle"
+				count: 1
+			}
+			optional: true
+			dependencies: [
+				"7F3AEE771B0AE0B7"
+			]
+			tasks: [
+				{
+					id: "56102E687098B012"
+					type: "checkmark"
+				}
+			]
+			rewards: [
+				{
+					id: "26D1F43DA4577B9F"
+					type: "item"
+					item: {
+						id: "minecraft:golden_carrot"
+						count: 1
+					}
+					count: 4
+				}
+				{
+					id: "70F23421058BE133"
+					type: "xp_levels"
+					xp_levels: 2
+				}
+			]
+		}
+		{
+			id: "71E84A6ECC039752"
+			x: 4.0d
+			y: 21.439999999999998d
+			icon: {
+				id: "minecraft:ice"
+				count: 1
+			}
+			dependencies: [
+				"1E70DD338A79C4E3"
+			]
+			tasks: [
+				{
+					id: "2B84C6501F98E750"
+					type: "checkmark"
+				}
+			]
+			rewards: [
+				{
+					id: "16DB5DB8452E49A4"
+					type: "item"
+					item: {
+						id: "minecraft:oak_boat"
+						count: 1
+					}
+					count: 1
+				}
+				{
+					id: "5FCDC81890112554"
+					type: "xp_levels"
+					xp_levels: 3
+				}
+			]
+		}
+		{
+			id: "10FACE4768501B1F"
+			x: 6.0d
+			y: 21.439999999999998d
+			icon: {
+				id: "minecraft:ladder"
+				count: 1
+			}
+			optional: true
+			dependencies: [
+				"12071FDFA1DDC340"
+			]
+			tasks: [
+				{
+					id: "7E15EB0F0F56A9F8"
+					type: "checkmark"
+				}
+			]
+			rewards: [
+				{
+					id: "36FE546DFB351742"
+					type: "item"
+					item: {
+						id: "minecraft:ladder"
+						count: 1
+					}
+					count: 16
+				}
+				{
+					id: "243BB5AAE5A0B6B9"
+					type: "xp_levels"
+					xp_levels: 2
+				}
+			]
+		}
+		{
+			id: "65ECCBAF60F06897"
+			x: 4.0d
+			y: 18.439999999999998d
+			icon: {
+				id: "minecraft:ender_pearl"
+				count: 1
+			}
+			dependencies: [
+				"2530A228C1123622"
+			]
+			tasks: [
+				{
+					id: "4B2784E06919FD55"
+					type: "checkmark"
+				}
+			]
+			rewards: [
+				{
+					id: "1FCFF97C4249149F"
+					type: "item"
+					item: {
+						id: "ars_nouveau:source_gem"
+						count: 1
+					}
+					count: 4
+				}
+				{
+					id: "11E572B93D846064"
+					type: "xp_levels"
+					xp_levels: 3
+				}
+			]
+		}
+		{
 			id: "658523ED3531FD1D"
-			x: 0.0d
-			y: 20.54d
+			x: 13.5d
+			y: 15.44d
 			icon: {
 				id: "minecraft:filled_map"
 				count: 1
@@ -853,8 +1105,8 @@
 		}
 		{
 			id: "6040DCEC91532345"
-			x: 2.0d
-			y: 20.54d
+			x: 15.5d
+			y: 15.44d
 			icon: {
 				id: "naturescompass:naturescompass"
 				count: 1
@@ -892,8 +1144,8 @@
 		}
 		{
 			id: "30F93CDFA1068185"
-			x: 2.0d
-			y: 22.04d
+			x: 15.5d
+			y: 13.94d
 			icon: {
 				id: "ars_nouveau:dowsing_rod"
 				count: 1
@@ -931,8 +1183,8 @@
 		}
 		{
 			id: "75E7A2290688BDB6"
-			x: 4.0d
-			y: 20.54d
+			x: 17.5d
+			y: 15.44d
 			icon: {
 				id: "minecraft:spyglass"
 				count: 1
@@ -965,8 +1217,8 @@
 		}
 		{
 			id: "41B4CE956EA13CE4"
-			x: 6.0d
-			y: 20.54d
+			x: 19.5d
+			y: 15.44d
 			icon: {
 				id: "minecraft:compass"
 				count: 1
@@ -998,9 +1250,44 @@
 			]
 		}
 		{
+			id: "389B283F7B0E73C7"
+			x: 15.5d
+			y: 16.939999999999998d
+			icon: {
+				id: "minecraft:white_banner"
+				count: 1
+			}
+			optional: true
+			dependencies: [
+				"658523ED3531FD1D"
+			]
+			tasks: [
+				{
+					id: "271927D81AEF3337"
+					type: "checkmark"
+				}
+			]
+			rewards: [
+				{
+					id: "5722E513A9950D60"
+					type: "item"
+					item: {
+						id: "minecraft:map"
+						count: 1
+					}
+					count: 2
+				}
+				{
+					id: "56EA13563308609B"
+					type: "xp_levels"
+					xp_levels: 2
+				}
+			]
+		}
+		{
 			id: "13BDC551D5250B0B"
 			x: 10.0d
-			y: 15.44d
+			y: 16.939999999999998d
 			icon: {
 				id: "waystones:waystone"
 				count: 1
@@ -1110,8 +1397,8 @@
 		{
 			id: "4812C5EBD7B4B69E"
 			image: "kronwerke:textures/quests/list_dimensions/map.png"
-			x: 0.5249999999999999d
-			y: 19.09d
+			x: 14.025d
+			y: 12.489999999999998d
 			width: 2.05d
 			height: 0.9d
 			rotation: 0.0d

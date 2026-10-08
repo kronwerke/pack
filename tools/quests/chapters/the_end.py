@@ -66,6 +66,19 @@ quests = [
           rewards=[reward_item("minecraft:ender_pearl", 8), reward_xp(5)],
           deps=["prepare"], icon="minecraft:ender_pearl"),
 
+    quest("t_scaling", -2.5, 0, "&cKenn die Stärke der Monster",
+          subtitle="Mit jeder Stufe werden sie härter.",
+          description=[
+              "&eKronwerke Core&r macht feindliche Mobs mit jeder offenen Stufe stärker. In &eStufe 4&r haben sie &d120 Prozent&r mehr Leben, &d75 Prozent&r mehr Schaden und &d7&r Rüstungspunkte dazu.",
+              "",
+              "Ein Enderman steckt jetzt also mehr als doppelt so viel ein wie in Stufe 1. Geh mit verzauberter Rüstung und einer guten Waffe hinüber.",
+              "",
+              "&eBosse&r wie der Drache und der Ender Guardian wachsen außerdem mit der Gruppe: für jeden weiteren Spieler &d60 Prozent&r mehr Leben und &d15 Prozent&r mehr Schaden, bis zu acht Spielern. Ab zwei Spielern setzen sie alle zwölf Sekunden Blitz und Schockwelle ein.",
+          ],
+          tasks=[task_checkmark("Verstanden")],
+          rewards=[reward_item("minecraft:golden_apple", 2), reward_xp(5)],
+          deps=["arrival"], icon="minecraft:iron_chestplate"),
+
     # ---- Der Drache ----------------------------------------------------------
     quest("crystals", 5, 0, "&dZerstör die Endkristalle",
           subtitle="Erst die Kristalle, dann der Drache.",
@@ -227,6 +240,50 @@ quests = [
           rewards=[reward_xp(10)],
           deps=["chorus"], icon="biomesoplenty:algal_end_stone", optional=True),
 
+    quest("t_shulker_hunt", 12.5, 6, "&dVermehr die Shulker",
+          subtitle="Shulker kommen nicht wieder, aber sie teilen sich.",
+          description=[
+              "Erleg &e10 Shulker&r. Jeder lässt mit etwas Glück eine Schale fallen.",
+              "",
+              "&eTrick:&r Trifft das Geschoss eines Shulkers einen anderen Shulker, kann der sich teilen, und ein neuer erscheint daneben. Stell dich so, dass sie sich gegenseitig treffen, und lass ein paar übrig. So bleibt die Endsiedlung eine Quelle für Schalen.",
+          ],
+          tasks=[task_kill("minecraft:shulker", 10)],
+          rewards=[reward_item("minecraft:shulker_shell", 2), reward_xp(10)],
+          deps=["shulker"], icon="minecraft:shulker_shell", optional=True),
+
+    quest("t_levitate", 12.5, 7.5, "&dSchwebe fünfzig Blöcke hoch",
+          subtitle="Ein Shulker als Aufzug.",
+          description=[
+              "Lass dich von Shulkergeschossen treffen, bis du &e50 Blöcke&r nach oben geschwebt bist.",
+              "",
+              "Mach das über festem Boden, am besten an einer Endsiedlung, nicht über der Leere. Ein Wassereimer oder ein Trank des Sanften Falls fängt die Landung ab.",
+          ],
+          tasks=[task_advancement("minecraft:end/levitate", "Fünfzig Blöcke schweben")],
+          rewards=[reward_item("minecraft:feather", 8), reward_xp(10)],
+          deps=["shulker"], icon="minecraft:feather", optional=True),
+
+    quest("t_dragon_head", 12.5, 9, "&5Nimm den Drachenkopf mit",
+          subtitle="Am Bug jedes Endschiffs.",
+          description=[
+              "Am vorderen Ende jedes &5Endschiffs&r hängt ein &6Drachenkopf&r. Bau ihn ab und nimm ihn mit.",
+              "",
+              "Er ist schön an der Wand, bewegt mit Redstone sein Maul, und er ist die Krone des besten Bücherregals für den Zaubertisch (Quest &6Drachenregal&r weiter rechts).",
+          ],
+          tasks=[task_item("minecraft:dragon_head", 1)],
+          rewards=[reward_item("minecraft:ender_pearl", 4), reward_xp(10)],
+          deps=["elytra"], icon="minecraft:dragon_head"),
+
+    quest("t_chorus_garden", 7.5, 5, "&dPflanz Chorus zuhause an",
+          subtitle="Chorus wächst nur auf Endstein.",
+          description=[
+              "Bau eine &6Chorusblüte&r von der Spitze einer Choruspflanze ab und nimm Endstein mit. Auf Endstein gepflanzt wächst sie auch in der Oberwelt zu einer ganzen Pflanze.",
+              "",
+              "Aus geplatzten Chorusfrüchten werden &6Purpurblöcke&r (vier ergeben vier) und mit einer Lohenrute &e4 Endstäbe&r, helle Lampen für jede Basis.",
+          ],
+          tasks=[task_item("minecraft:chorus_flower", 1), task_item("minecraft:end_rod", 4)],
+          rewards=[reward_item("minecraft:end_stone", 16), reward_xp(5)],
+          deps=["chorus"], icon="minecraft:chorus_flower", optional=True),
+
     # ---- Bauwerke ------------------------------------------------------------
     quest("structures", 2.5, 7, "&6Finde ein Bauwerk der anderen Mods",
           subtitle="Mehr als Purpur auf den äußeren Inseln.",
@@ -361,6 +418,43 @@ quests = [
           rewards=[reward_item("minecraft:ender_pearl", 8), reward_xp(10)],
           deps=["draconium"], icon="silentgear:raw_azure_silver"),
 
+    quest("t_azure_electrum", 17.5, 3.5, "&3Legier Azur-Elektrum",
+          subtitle="Das beste Metall von Silent Gear in Stufe 4.",
+          description=[
+              "In der &6Legierungsschmiede&r von Silent Gear ergeben ein &6Azur-Silberblock&r, &62 Goldbarren&r und eine &6Enderperle&r drei &6Azur-Elektrumbarren&r.",
+              "",
+              pic("silentgear:azure_electrum_ingot"),
+              "",
+              "Azur-Elektrum ist ein weiteres Metall für Werkzeugköpfe und Rüstung. Was es kann, zeigt dir JEI am Barren, die Teile baust du wie immer (Kapitel &6Silent Gear&r).",
+          ],
+          tasks=[task_item("silentgear:azure_electrum_ingot", 3)],
+          rewards=[reward_item("minecraft:gold_ingot", 8), reward_xp(10)],
+          deps=["r_ores"], icon="silentgear:azure_electrum_ingot", optional=True),
+
+    quest("t_endshelf", 20, -1.5, "&5Bau ein Endregal",
+          subtitle="Drachenatem für den Zaubertisch.",
+          description=[
+              "Infundier &6Drachenatem&r am Zaubertisch zu &e3 Infundiertem Drachenatem&r. Das Rezept will Eterna mindestens &b80&r, Quanta zwischen &d15 und 30 Prozent&r und Arcana mindestens &560 Prozent&r. Eterna über 75 erlaubt erst die Weltstufe Pinnacle, und die bringt der Drache.",
+              "",
+              "&66 Endsteinziegel&r, ein &6Infundierter Drachenatem&r, ein &6Bücherregal&r und eine &6Enderperle&r ergeben ein &6Endregal&r: &b5 Eterna&r bis maximal 90, dazu je &d5 Quanta&r und &55 Arcana&r.",
+              "",
+              "Mehr dazu im Kapitel &6Apotheosis&r.",
+          ],
+          tasks=[task_item("apothic_enchanting:endshelf", 1)],
+          rewards=[reward_item("minecraft:dragon_breath", 4), reward_xp(15)],
+          deps=["breath"], icon="apothic_enchanting:endshelf", optional=True),
+
+    quest("t_draconic_endshelf", 22.5, -1.5, "&5Krön es zum Drachenregal",
+          subtitle="Das letzte Bücherregal.",
+          description=[
+              "Ein &6Drachenkopf&r über einem &6Endregal&r und &65 Enderperlen&r darunter ergeben ein &6Drachenregal&r.",
+              "",
+              "Es gibt &b20 Eterna&r und hebt die Grenze bis &b100&r, das Maximum des Zaubertischs. Wenige davon ersetzen eine ganze Wand gewöhnlicher Regale.",
+          ],
+          tasks=[task_item("apothic_enchanting:draconic_endshelf", 1)],
+          rewards=[reward_table("s4_uncommon"), reward_xp(20)],
+          deps=["t_endshelf", "t_dragon_head"], icon="apothic_enchanting:draconic_endshelf", optional=True),
+
     # ---- Abschluss -----------------------------------------------------------
     quest("supply", 20, 0, "&5&lFüll das Licht des Drachen",
           subtitle="Was das End für das Stufenziel hergibt.",
@@ -390,7 +484,7 @@ quests = [
 images = [
     banner("the_end/title", "Das End", 10, -5.4, height=1.75, kind="title", colour="end"),
     banner("the_end/arrival", "Anreise", 1.25, -2.4, height=0.9, colour="end"),
-    banner("the_end/dragon", "Der Drache", 8.75, -3.2, height=0.9, colour="end"),
+    banner("the_end/dragon", "Der Drache", 8.25, -2.4, height=0.9, colour="end"),
     banner("the_end/islands", "Die äußeren Inseln", 6.25, 4.9, height=0.9, colour="end"),
     banner("the_end/citadel", "Die Zitadelle", 7.5, 11.6, height=0.9, colour="end"),
     banner("the_end/tech", "Für Technik und Magie", 17.5, -3.2, height=0.9, colour="magic"),

@@ -52,7 +52,7 @@
 		{
 			id: "3365667E01139DBD"
 			x: 6.55d
-			y: 4.375d
+			y: 5.975d
 			icon: {
 				id: "minecraft:golden_helmet"
 				count: 1
@@ -106,7 +106,7 @@
 		{
 			id: "7CEC6A06FD70C26D"
 			x: 6.55d
-			y: 7.375d
+			y: 4.125d
 			icon: {
 				id: "minecraft:flint_and_steel"
 				count: 1
@@ -154,8 +154,8 @@
 		}
 		{
 			id: "1E0EDE401E04DF28"
-			x: 8.95d
-			y: 7.375d
+			x: 8.55d
+			y: 4.125d
 			icon: {
 				id: "minecraft:compass"
 				count: 1
@@ -226,12 +226,13 @@
 		}
 		{
 			id: "26B8179E0B2761F8"
-			x: 8.95d
-			y: 4.375d
+			x: 11.55d
+			y: 7.125d
 			icon: {
 				id: "minecraft:netherrack"
 				count: 1
 			}
+			hide_dependency_lines: true
 			hide_dependent_lines: true
 			dependencies: [
 				"3365667E01139DBD"
@@ -261,9 +262,8 @@
 		}
 		{
 			id: "285C15B0C586A75D"
-			x: 13.95d
-			y: 4.125d
-			hide_dependency_lines: true
+			x: 13.55d
+			y: 7.125d
 			dependencies: [
 				"26B8179E0B2761F8"
 			]
@@ -292,8 +292,8 @@
 		}
 		{
 			id: "71FBBD10C8CECAFA"
-			x: 15.95d
-			y: 4.125d
+			x: 15.55d
+			y: 7.125d
 			icon: {
 				id: "create:electron_tube"
 				count: 1
@@ -340,8 +340,8 @@
 		}
 		{
 			id: "3CB130AE8CB3BDAB"
-			x: 10.95d
-			y: 4.375d
+			x: 13.55d
+			y: 4.125d
 			dependencies: [
 				"26B8179E0B2761F8"
 			]
@@ -370,13 +370,12 @@
 		}
 		{
 			id: "33EB694A7328B285"
-			x: 13.95d
-			y: 7.225d
+			x: 13.55d
+			y: 5.625d
 			icon: {
 				id: "minecraft:gold_nugget"
 				count: 1
 			}
-			hide_dependency_lines: true
 			dependencies: [
 				"26B8179E0B2761F8"
 			]
@@ -405,8 +404,8 @@
 		}
 		{
 			id: "75D30FCED20A52EC"
-			x: 10.95d
-			y: 5.875d
+			x: 13.55d
+			y: 8.625d
 			icon: {
 				id: "minecraft:magma_cream"
 				count: 1
@@ -448,13 +447,12 @@
 		}
 		{
 			id: "3B7E57D017C67709"
-			x: 13.95d
-			y: 5.625d
+			x: 13.55d
+			y: 10.125d
 			icon: {
 				id: "silentgear:raw_crimson_iron"
 				count: 1
 			}
-			hide_dependency_lines: true
 			dependencies: [
 				"26B8179E0B2761F8"
 			]
@@ -488,8 +486,8 @@
 		}
 		{
 			id: "2A75A6F7DEC25645"
-			x: 15.95d
-			y: 5.625d
+			x: 15.55d
+			y: 10.125d
 			icon: {
 				id: "mysticalagriculture:soulstone"
 				count: 1
@@ -528,7 +526,7 @@
 		{
 			id: "13C377F1066A64A3"
 			x: 11.8d
-			y: 12.475000000000001d
+			y: 13.975d
 			icon: {
 				id: "minecraft:crimson_stem"
 				count: 1
@@ -563,7 +561,7 @@
 		{
 			id: "222490603A8FDD4B"
 			x: 13.8d
-			y: 10.975000000000001d
+			y: 15.475d
 			icon: {
 				id: "minecraft:warped_stem"
 				count: 1
@@ -597,7 +595,7 @@
 		{
 			id: "147FE01F3C49853B"
 			x: 13.8d
-			y: 12.475000000000001d
+			y: 13.975d
 			icon: {
 				id: "minecraft:soul_sand"
 				count: 1
@@ -631,7 +629,7 @@
 		{
 			id: "3F9AD9EA5C86450D"
 			x: 15.8d
-			y: 12.475000000000001d
+			y: 13.975d
 			icon: {
 				id: "minecraft:basalt"
 				count: 1
@@ -665,7 +663,7 @@
 		{
 			id: "285179CB6F3B3FE8"
 			x: 17.8d
-			y: 12.475000000000001d
+			y: 13.975d
 			icon: {
 				id: "minecraft:warped_fungus"
 				count: 1
@@ -700,7 +698,7 @@
 		{
 			id: "2150A004C512D253"
 			x: 20.200000000000003d
-			y: 12.475000000000001d
+			y: 13.975d
 			icon: {
 				id: "biomesoplenty:rose_quartz_chunk"
 				count: 1
@@ -730,12 +728,13 @@
 		}
 		{
 			id: "403CF2A90894462C"
-			x: 8.95d
-			y: 5.875d
+			x: 17.65d
+			y: 21.825d
 			icon: {
 				id: "minecraft:ghast_tear"
 				count: 1
 			}
+			hide_dependency_lines: true
 			dependencies: [
 				"3365667E01139DBD"
 			]
@@ -769,12 +768,13 @@
 		}
 		{
 			id: "6C80C675E18AF462"
-			x: 13.8d
-			y: 13.975000000000001d
+			x: 17.65d
+			y: 23.425d
 			icon: {
 				id: "minecraft:porkchop"
 				count: 1
 			}
+			hide_dependency_lines: true
 			dependencies: [
 				"13C377F1066A64A3"
 			]
@@ -800,13 +800,14 @@
 		}
 		{
 			id: "2F59991ADFDD40F2"
-			x: 20.200000000000003d
-			y: 13.975000000000001d
+			x: 19.25d
+			y: 23.425d
 			icon: {
 				id: "minecraft:warped_fungus_on_a_stick"
 				count: 1
 			}
 			optional: true
+			hide_dependency_lines: true
 			dependencies: [
 				"285179CB6F3B3FE8"
 			]
@@ -836,9 +837,128 @@
 			]
 		}
 		{
+			id: "3F580EF5D09F4B98"
+			x: 19.65d
+			y: 21.825d
+			icon: {
+				id: "minecraft:fire_charge"
+				count: 1
+			}
+			optional: true
+			dependencies: [
+				"403CF2A90894462C"
+			]
+			tasks: [
+				{
+					id: "7CA254212E5A0523"
+					type: "advancement"
+					advancement: "minecraft:nether/return_to_sender"
+					criterion: ""
+				}
+			]
+			rewards: [
+				{
+					id: "65B4CBEBEA4D65DD"
+					type: "item"
+					item: {
+						id: "minecraft:ghast_tear"
+						count: 1
+					}
+					count: 1
+				}
+				{
+					id: "29FC21F0149E54B2"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+		}
+		{
+			id: "5EB482ABC77C8101"
+			x: 20.849999999999998d
+			y: 23.425d
+			icon: {
+				id: "minecraft:soul_lantern"
+				count: 1
+			}
+			optional: true
+			hide_dependency_lines: true
+			dependencies: [
+				"147FE01F3C49853B"
+			]
+			tasks: [
+				{
+					id: "24BA1453B7F2524F"
+					type: "item"
+					item: {
+						id: "minecraft:soul_lantern"
+						count: 1
+					}
+					count: 4
+				}
+			]
+			rewards: [
+				{
+					id: "6B7B449365C540C1"
+					type: "item"
+					item: {
+						id: "minecraft:soul_torch"
+						count: 1
+					}
+					count: 16
+				}
+				{
+					id: "680FAA44DAE0C9ED"
+					type: "xp_levels"
+					xp_levels: 3
+				}
+			]
+		}
+		{
+			id: "20CA7AFF5AFFCCF3"
+			x: 22.45d
+			y: 23.425d
+			icon: {
+				id: "minecraft:ochre_froglight"
+				count: 1
+			}
+			optional: true
+			hide_dependency_lines: true
+			dependencies: [
+				"75D30FCED20A52EC"
+			]
+			tasks: [
+				{
+					id: "351D4FA197629B64"
+					type: "item"
+					item: {
+						id: "minecraft:ochre_froglight"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "527EADB10A38D4C5"
+					type: "item"
+					item: {
+						id: "minecraft:slime_ball"
+						count: 1
+					}
+					count: 8
+				}
+				{
+					id: "1F538BB05D857559"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+		}
+		{
 			id: "4313FC57036C08F2"
 			x: 0.25d
-			y: 13.475000000000001d
+			y: 16.225d
 			icon: {
 				id: "minecraft:nether_bricks"
 				count: 1
@@ -880,7 +1000,7 @@
 		{
 			id: "5891582657C05B8A"
 			x: 2.65d
-			y: 13.475000000000001d
+			y: 16.225d
 			icon: {
 				id: "minecraft:blaze_rod"
 				count: 1
@@ -932,7 +1052,7 @@
 		{
 			id: "2DDE69DD79E59127"
 			x: 5.25d
-			y: 13.475000000000001d
+			y: 16.225d
 			icon: {
 				id: "create:blaze_burner"
 				count: 1
@@ -978,7 +1098,7 @@
 		{
 			id: "4E45E68481EC6D3E"
 			x: 2.65d
-			y: 15.475000000000001d
+			y: 18.225d
 			dependencies: [
 				"4313FC57036C08F2"
 			]
@@ -1008,7 +1128,7 @@
 		{
 			id: "53598BFDD376FB7D"
 			x: 5.25d
-			y: 15.475000000000001d
+			y: 18.225d
 			icon: {
 				id: "minecraft:brewing_stand"
 				count: 1
@@ -1051,7 +1171,7 @@
 		{
 			id: "503C6BA0D59469CB"
 			x: 2.65d
-			y: 11.225000000000001d
+			y: 13.975d
 			icon: {
 				id: "minecraft:wither_skeleton_skull"
 				count: 1
@@ -1091,7 +1211,7 @@
 		{
 			id: "67767F8673273C00"
 			x: 5.25d
-			y: 11.225000000000001d
+			y: 13.975d
 			icon: {
 				id: "minecraft:nether_star"
 				count: 1
@@ -1138,7 +1258,7 @@
 		{
 			id: "19EA6DAA0CE81B6C"
 			x: 5.65d
-			y: 19.45d
+			y: 22.2d
 			icon: {
 				id: "minecraft:gold_ingot"
 				count: 1
@@ -1170,7 +1290,7 @@
 		{
 			id: "299C84C4C154CDCB"
 			x: 7.65d
-			y: 19.45d
+			y: 22.2d
 			icon: {
 				id: "minecraft:gilded_blackstone"
 				count: 1
@@ -1216,7 +1336,7 @@
 		{
 			id: "5F3895B47878B595"
 			x: 10.05d
-			y: 19.45d
+			y: 22.2d
 			icon: {
 				id: "minecraft:ancient_debris"
 				count: 1
@@ -1262,7 +1382,7 @@
 		{
 			id: "55C7983DEA86CE05"
 			x: 12.65d
-			y: 19.45d
+			y: 22.2d
 			icon: {
 				id: "minecraft:netherite_ingot"
 				count: 1
@@ -1291,9 +1411,202 @@
 			]
 		}
 		{
+			id: "18B75BDBBDC20C9A"
+			x: 7.65d
+			y: 23.95d
+			icon: {
+				id: "minecraft:respawn_anchor"
+				count: 1
+			}
+			dependencies: [
+				"19EA6DAA0CE81B6C"
+			]
+			tasks: [
+				{
+					id: "2000E6CDE98D4946"
+					type: "item"
+					item: {
+						id: "minecraft:respawn_anchor"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "23692F64C9D89F75"
+					type: "item"
+					item: {
+						id: "minecraft:glowstone"
+						count: 1
+					}
+					count: 8
+				}
+				{
+					id: "3DF8DCA898320AA4"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+		}
+		{
+			id: "4AA332C66BC04F8C"
+			x: 10.05d
+			y: 24.075d
+			icon: {
+				id: "minecraft:golden_axe"
+				count: 1
+			}
+			dependencies: [
+				"299C84C4C154CDCB"
+			]
+			tasks: [
+				{
+					id: "50AC8DBE84212435"
+					type: "kill"
+					entity: "minecraft:piglin_brute"
+					value: 1
+				}
+			]
+			rewards: [
+				{
+					id: "3A3D9D490A94B502"
+					type: "item"
+					item: {
+						id: "minecraft:gold_ingot"
+						count: 1
+					}
+					count: 8
+				}
+				{
+					id: "1A3864FCE5D2EB59"
+					type: "xp_levels"
+					xp_levels: 8
+				}
+			]
+		}
+		{
+			id: "168C26275A5D318C"
+			x: 12.65d
+			y: 23.7d
+			icon: {
+				id: "netherdepthsupgrade:lava_fishing_rod"
+				count: 1
+			}
+			optional: true
+			hide_dependency_lines: true
+			dependencies: [
+				"5F3895B47878B595"
+				"5891582657C05B8A"
+			]
+			tasks: [
+				{
+					id: "4B7A38338ABE72FA"
+					type: "item"
+					item: {
+						id: "netherdepthsupgrade:lava_fishing_rod"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "57ACF8BFA7255B2F"
+					type: "item"
+					item: {
+						id: "minecraft:blaze_rod"
+						count: 1
+					}
+					count: 4
+				}
+				{
+					id: "41564C1E64808048"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+		}
+		{
+			id: "3F8004ECF578813E"
+			x: 14.65d
+			y: 23.7d
+			icon: {
+				id: "minecraft:netherite_pickaxe"
+				count: 1
+			}
+			optional: true
+			dependencies: [
+				"55C7983DEA86CE05"
+			]
+			tasks: [
+				{
+					id: "5662232C04BF17F7"
+					type: "item"
+					item: {
+						id: "minecraft:netherite_pickaxe"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "301A55FE88196F60"
+					type: "loot"
+					table_id: 6525209979656026636L
+				}
+				{
+					id: "4128F57C5C4D6E14"
+					type: "xp_levels"
+					xp_levels: 10
+				}
+			]
+		}
+		{
+			id: "661D89EE5F6C7FD9"
+			x: 14.65d
+			y: 22.2d
+			icon: {
+				id: "minecraft:lodestone"
+				count: 1
+			}
+			optional: true
+			dependencies: [
+				"55C7983DEA86CE05"
+			]
+			tasks: [
+				{
+					id: "1B7D6C9AC5B9AA6F"
+					type: "item"
+					item: {
+						id: "minecraft:lodestone"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "5C2FC74971DAE4FE"
+					type: "item"
+					item: {
+						id: "minecraft:compass"
+						count: 1
+					}
+					count: 2
+				}
+				{
+					id: "3A5AB8ADD2FA0C93"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+		}
+		{
 			id: "10E321A328F2FFE3"
 			x: 0.25d
-			y: 19.325d
+			y: 22.075d
 			icon: {
 				id: "minecraft:chiseled_polished_blackstone"
 				count: 1
@@ -1325,7 +1638,7 @@
 		{
 			id: "581F00E6AA61DA37"
 			x: 2.65d
-			y: 19.325d
+			y: 22.075d
 			icon: {
 				id: "minecraft:polished_blackstone_bricks"
 				count: 1
@@ -1360,7 +1673,7 @@
 		{
 			id: "326EB49B64046721"
 			x: 0.25d
-			y: 23.924999999999997d
+			y: 28.175d
 			icon: {
 				id: "minecraft:blaze_powder"
 				count: 1
@@ -1397,7 +1710,7 @@
 		{
 			id: "48B0D1BFA29C5682"
 			x: 2.65d
-			y: 23.924999999999997d
+			y: 28.175d
 			icon: {
 				id: "cataclysm:flame_eye"
 				count: 1
@@ -1433,7 +1746,7 @@
 		{
 			id: "70624AB6F4B0554A"
 			x: 4.65d
-			y: 23.924999999999997d
+			y: 28.175d
 			icon: {
 				id: "cataclysm:burning_ashes"
 				count: 1
@@ -1478,7 +1791,7 @@
 		{
 			id: "3746F93CEBAB57B1"
 			x: 6.65d
-			y: 23.924999999999997d
+			y: 28.175d
 			icon: {
 				id: "cataclysm:ignitium_ingot"
 				count: 1
@@ -1521,7 +1834,7 @@
 		{
 			id: "2AB3983F2812DCDC"
 			x: 9.45d
-			y: 25.424999999999997d
+			y: 29.675d
 			icon: {
 				id: "cataclysm:ignitium_helmet"
 				count: 1
@@ -1561,7 +1874,7 @@
 		{
 			id: "33E8181BC27158DC"
 			x: 9.45d
-			y: 23.924999999999997d
+			y: 28.175d
 			icon: {
 				id: "cataclysm:monstrous_eye"
 				count: 1
@@ -1599,7 +1912,7 @@
 		{
 			id: "302B5E8A68ED44DD"
 			x: 11.45d
-			y: 23.924999999999997d
+			y: 28.175d
 			icon: {
 				id: "cataclysm:infernal_forge"
 				count: 1
@@ -1642,7 +1955,7 @@
 		{
 			id: "5C7F097F734DF56F"
 			x: 14.25d
-			y: 23.924999999999997d
+			y: 28.175d
 			icon: {
 				id: "cataclysm:monstrous_helm"
 				count: 1
@@ -1682,7 +1995,7 @@
 		{
 			id: "3E476F6BD11012E2"
 			x: 8.05d
-			y: 13.475000000000001d
+			y: 16.225d
 			icon: {
 				id: "minecraft:blaze_powder"
 				count: 1
@@ -1771,7 +2084,7 @@
 		{
 			id: "46BFABE29A4E9549"
 			image: "kronwerke:textures/quests/nether/resources.png"
-			x: 15.16d
+			x: 12.760000000000002d
 			y: 2.6750000000000003d
 			width: 3.42d
 			height: 0.9d
@@ -1782,7 +2095,7 @@
 			id: "2B4A57D5DD7E02CB"
 			image: "kronwerke:textures/quests/nether/fortresses.png"
 			x: 1.255d
-			y: 9.525d
+			y: 12.274999999999999d
 			width: 3.51d
 			height: 0.9d
 			rotation: 0.0d
@@ -1792,7 +2105,7 @@
 			id: "2F80E3DC53DE8A39"
 			image: "kronwerke:textures/quests/nether/biomes.png"
 			x: 12.33d
-			y: 9.525d
+			y: 12.274999999999999d
 			width: 2.06d
 			height: 0.9d
 			rotation: 0.0d
@@ -1802,7 +2115,7 @@
 			id: "27E757FDE245D8E2"
 			image: "kronwerke:textures/quests/nether/structures.png"
 			x: 1.205d
-			y: 17.625d
+			y: 20.375d
 			width: 3.41d
 			height: 0.9d
 			rotation: 0.0d
@@ -1812,7 +2125,7 @@
 			id: "2A09BB9F75C31234"
 			image: "kronwerke:textures/quests/nether/bastions.png"
 			x: 6.8500000000000005d
-			y: 17.625d
+			y: 20.375d
 			width: 3.4d
 			height: 0.9d
 			rotation: 0.0d
@@ -1820,9 +2133,19 @@
 		}
 		{
 			id: "6DA0029C70B7CFE5"
+			image: "kronwerke:textures/quests/nether/mobs.png"
+			x: 18.11d
+			y: 20.375d
+			width: 1.92d
+			height: 0.9d
+			rotation: 0.0d
+			order: 1
+		}
+		{
+			id: "77CE106F2D6B2132"
 			image: "kronwerke:textures/quests/nether/bosses.png"
 			x: 0.5149999999999999d
-			y: 21.974999999999998d
+			y: 26.225d
 			width: 2.03d
 			height: 0.9d
 			rotation: 0.0d

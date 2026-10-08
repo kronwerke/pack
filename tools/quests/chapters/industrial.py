@@ -447,6 +447,133 @@ quests = [
                  task_item("industrialforegoing:spores_recreator", 1)],
           rewards=[reward_item("minecraft:diamond", 4), reward_table("s3_uncommon"), reward_xp(25)],
           deps=["list_mobs"], icon="industrialforegoing:ore_laser_base", size=1.5, shape="gear"),
+
+    # ---- neue Quests: Gehäuse --------------------------------------------------
+    quest("infinity_drill", 10, 7.5, "&5Bau einen Infinity Bohrer",
+          subtitle="Ein Bohrer, der mit Strom immer größer wird.",
+          description=[
+              "Im Auflösungsapparat: drei &6Diamantblöcke&r, eine &6Diamantschaufel&r, das Addon &6Reichweite Stufe 12&r (Redstone, Glasscheiben und vier Smaragde in Latex), drei &6Goldzahnräder&r und &e2 000 mB Pinker Schleim&r.",
+              "",
+              "Je mehr Strom er gespeichert hat, desto höher kann seine Stufe sein, von &eArmseelig&r bis &eArtefakt&r, sieben Stufen. Höhere Stufen bohren größere Flächen. Schleichend Rechtsklick öffnet sein Fenster.",
+              "",
+              "Alles, was er abbaut, landet direkt bei dir. Mit &6Biokraftstoff&r im Tank verbraucht er den Treibstoff statt Strom. Laden geht in der &6Infinity Ladestation&r: Kunststoff, Verstärker, Diamantzahnrad, Redstoneblöcke und ein Fortschrittliches Gehäuse.",
+          ],
+          tasks=[task_item("industrialforegoing:infinity_drill", 1), task_item("industrialforegoing:infinity_charger", 1)],
+          rewards=[reward_item("minecraft:diamond", 4), reward_table("s3_uncommon"), reward_xp(20)],
+          deps=["frame_adv", "addons"], icon="industrialforegoing:infinity_drill", optional=True),
+
+    # ---- neue Quests: Mobs -----------------------------------------------------
+    quest("mechanical_dirt", 10, 12.5, "&cLeg Mechanische Erde aus",
+          subtitle="Ein Boden, auf dem Mobs schnell spawnen.",
+          description=[
+              "Im Auflösungsapparat: zwei &6Erde&r, zwei &6Verrottetes Fleisch&r, ein &6Primitives Gehäuse&r und &e1 000 mB Flüssigfleisch&r.",
+              "",
+              "Sie spawnt Mobs in schnellem Takt, für &d1 000 FE&r und &e20 mB Flüssigfleisch&r pro Vorgang. Die normalen Spawnregeln gelten: Lichtstufe 7 oder weniger, der Block muss geladen sein.",
+              "",
+              "Strom und Fleisch teilt sie mit allen angrenzenden Blöcken Mechanischer Erde. Leg eine Fläche aus, darüber einen Monsterschnetzler, fertig ist die Mobfarm.",
+          ],
+          tasks=[task_item("industrialforegoing:mechanical_dirt", 4)],
+          rewards=[reward_item("industrialforegoing:meat_bucket", 2), reward_xp(10)],
+          deps=["slaughter", "crusher"], icon="industrialforegoing:mechanical_dirt", optional=True),
+
+    # ---- neue Quests: Myzel-Generatoren ----------------------------------------
+    quest("myc_furnace", 16, 10.5, "&6Stell einen Ofen Myzel-Generator auf",
+          subtitle="Strom aus allem, was im Ofen brennt.",
+          description=[
+              "Fünf &6Kohleblöcke&r oben und an den Seiten, ein &6Ofen&r in der Mitte, unten &6Redstone&r, &6Einfaches Gehäuse&r, Redstone ergeben den &6Ofen Myzel-Generator&r.",
+              "",
+              "Er verbrennt jeden Brennstoff, den auch ein Ofen nimmt. Je länger etwas brennt, desto mehr Strom gibt es.",
+              "",
+              "Die &aMyzel-Generatoren&r sind eine Familie: jede Sorte frisst einen anderen Brennstoff, und alle zusammen treiben am Ende den Myzel-Reaktor an.",
+          ],
+          tasks=[task_item("industrialforegoing:mycelial_furnace", 1)],
+          rewards=[reward_item("minecraft:coal_block", 8), reward_xp(10)],
+          deps=["frame_simple"], icon="industrialforegoing:mycelial_furnace"),
+
+    quest("myc_culinary", 18.5, 10.5, "&6Füttere einen Kulinarischen Myzel-Generator",
+          subtitle="Strom aus Essen.",
+          description=[
+              "Fünf &6Feldfrüchte&r oben und an den Seiten, ein &6Gebratenes Rindfleisch&r in der Mitte, unten &6Redstone&r, &6Einfaches Gehäuse&r, Redstone.",
+              "",
+              "Er isst alles, was ein Spieler essen kann. Nährwert und Sättigung bestimmen, wie viel Strom und wie lange. Eine Kartoffel- oder Karottenfarm mit Erntemaschine hält ihn satt.",
+          ],
+          tasks=[task_item("industrialforegoing:mycelial_culinary", 1)],
+          rewards=[reward_item("minecraft:cooked_beef", 16), reward_xp(10)],
+          deps=["myc_furnace"], icon="industrialforegoing:mycelial_culinary"),
+
+    quest("myc_slimey", 16, 12.5, "&aStell einen Schleimigen Myzel-Generator auf",
+          subtitle="Schleimbälle und Milch.",
+          description=[
+              "Fünf &6Schleimblöcke&r oben und an den Seiten, ein &6Milcheimer&r in der Mitte, unten &6Redstone&r, &6Fortschrittliches Gehäuse&r, Redstone.",
+              "",
+              "Er braucht beides gleichzeitig: &6Schleimbälle&r in den Platz und &6Milch&r in den Tank. Milch liefert der Tierfarmer von Kühen.",
+          ],
+          tasks=[task_item("industrialforegoing:mycelial_slimey", 1)],
+          rewards=[reward_item("minecraft:slime_ball", 16), reward_xp(10)],
+          deps=["myc_furnace", "frame_adv"], icon="industrialforegoing:mycelial_slimey", optional=True),
+
+    quest("myc_magma", 18.5, 12.5, "&cStell einen Magma Myzel-Generator auf",
+          subtitle="Lava und Redstone.",
+          description=[
+              "Fünf &6Redstoneblöcke&r oben und an den Seiten, ein &6Lavaeimer&r in der Mitte, unten &6Redstone&r, &6Fortschrittliches Gehäuse&r, Redstone.",
+              "",
+              "Er verbraucht &6Lava&r aus dem Tank zusammen mit &6Redstone&r im Platz. Lava bohrt dir die Flüssigkeits-Laserbasis mit Oranger Linse im Nether.",
+          ],
+          tasks=[task_item("industrialforegoing:mycelial_magma", 1)],
+          rewards=[reward_item("minecraft:redstone_block", 4), reward_xp(10)],
+          deps=["myc_furnace", "frame_adv"], icon="industrialforegoing:mycelial_magma", optional=True),
+
+    quest("myc_reactor", 21, 11.5, "&5&lBau einen Myzel-Reaktor",
+          subtitle="Alle Myzel-Generatoren auf einmal.",
+          description=[
+              "Im Auflösungsapparat: zwei &6Kunststoff&r, ein &6Überlegenes Gehäuse&r, zwei &6Netheritbarren&r, zwei &6Diamantzahnräder&r, ein &6Netherstern&r und &e500 mB Ethergas&r.",
+              "",
+              "Der Reaktor spürt über das Myzelnetz deine anderen Myzel-Generatoren auf. Er erzeugt riesige Mengen Strom, aber nur, solange von &ejeder Sorte&r einer gleichzeitig läuft.",
+              "",
+              "Das ist ein Langzeitprojekt: JEI zeigt unter jedem Generator, was er verbrennt, vom Schneeball bis zum Netherstern.",
+          ],
+          tasks=[task_item("industrialforegoing:mycelial_reactor", 1)],
+          rewards=[reward_table("s3_rare"), reward_xp(30)],
+          deps=["myc_culinary", "myc_slimey", "myc_magma", "frame_supreme"], icon="industrialforegoing:mycelial_reactor",
+          size=1.5, shape="gear", optional=True),
+
+    # ---- neue Quests: Transport ------------------------------------------------
+    quest("conveyor_upgrades", 2.5, 21, "&eRüste Förderbänder auf",
+          subtitle="Herausziehen und Einfügen.",
+          description=[
+              "&6Herausziehen:&r Eisen, Kunststoff, Eisen oben, Eisen, &6Spender&r, Eisen in der Mitte, Eisen, &6Förderband&r, Eisen unten. &6Einfügen:&r genauso, mit einem &6Trichter&r statt des Spenders.",
+              "",
+              "Rechtsklick mit dem Upgrade auf ein Band setzt es ein. Herausziehen zieht Gegenstände und Flüssigkeiten aus dem Inventar daneben, sogar aus Spielerinventaren. Einfügen schiebt sie hinein. Im Fenster filterst du, was durch darf.",
+              "",
+              "Die anderen Upgrades: Erkennen gibt Redstone, Abwerfen lässt fallen, Hochschleudern wirft, Blinken teleportiert, Aufteilen verteilt im eingestellten Verhältnis.",
+          ],
+          tasks=[task_item("industrialforegoing:conveyor_extraction_upgrade", 1), task_item("industrialforegoing:conveyor_insertion_upgrade", 1)],
+          rewards=[reward_item("industrialforegoing:conveyor", 6), reward_xp(5)],
+          deps=["conveyor"], icon="industrialforegoing:conveyor_extraction_upgrade"),
+
+    quest("settings_copier", 0, 21, "&7Kopier Maschineneinstellungen",
+          subtitle="Einmal einstellen, überall übernehmen.",
+          description=[
+              "Papier in die Ecken, &6Kunststoff&r oben und an den Seiten, &6Redstone&r in die Mitte und unten in die Mitte ergeben den &6Maschineneinstellungskopierer&r.",
+              "",
+              "Er speichert die Einstellungen einer Maschine, etwa Seitenkonfiguration und Filter, und überträgt sie auf eine zweite Maschine derselben Art. Spart viel Klicken, wenn du zehn Sämaschinen oder Erntemaschinen gleich einrichten willst.",
+          ],
+          tasks=[task_item("industrialforegoing:machine_settings_copier", 1)],
+          rewards=[reward_item("industrialforegoing:plastic", 4)],
+          deps=["conveyor"], icon="industrialforegoing:machine_settings_copier", optional=True),
+
+    quest("potion_brewer", 12.5, 12.5, "&dBrau Tränke automatisch",
+          subtitle="Die Braumaschine.",
+          description=[
+              "Kunststoff, &6Braustand&r, Kunststoff oben, &6Goldzahnrad&r, &6Fortschrittliches Gehäuse&r, Goldzahnrad in der Mitte, Verstärker, Goldzahnrad, Verstärker unten.",
+              "",
+              "Mit Strom braut sie Tränke aus den Zutaten, die du ihr gibst. Leere Flaschen füllt sie aus ihrem Wassertank, das Wasser wird dabei nicht verbraucht.",
+              "",
+              "&eWichtig:&r Im grünen Filter stellst du ein, welcher Trank herauskommen soll. Ohne Eintrag dort lässt sie nichts heraus.",
+          ],
+          tasks=[task_item("industrialforegoing:potion_brewer", 1)],
+          rewards=[reward_item("minecraft:nether_wart", 16), reward_item("minecraft:glass_bottle", 16), reward_xp(10)],
+          deps=["frame_adv"], icon="industrialforegoing:potion_brewer", optional=True),
 ]
 
 images = [
@@ -459,6 +586,7 @@ images = [
     head("meat", "Erzfleisch", 8.0, 13.5, colour="fire"),
     head("transport", "Transport", 0, 17.5, colour="water"),
     head("lists", "Checklisten", 5.5, 17.5, colour="stone"),
+    head("mycelial", "Myzel-Generatoren", 15.5, 9.0, colour="magic"),
 ]
 
 chapter(C, "Industrial Foregoing", "industrialforegoing:plastic", "tech", quests, shape="square", order=22, stage=3,

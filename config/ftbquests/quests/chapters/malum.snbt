@@ -436,7 +436,7 @@
 		{
 			id: "3FB85D1B934FD6D2"
 			x: 0.25d
-			y: 14.135d
+			y: 13.61d
 			icon: {
 				id: "malum:spirit_altar"
 				count: 1
@@ -488,7 +488,7 @@
 		{
 			id: "498BFF9BF8A70355"
 			x: 2.65d
-			y: 14.135d
+			y: 13.61d
 			icon: {
 				id: "malum:hex_ash"
 				count: 1
@@ -528,7 +528,7 @@
 		{
 			id: "3446C4E82E2EEF4A"
 			x: 4.65d
-			y: 12.26d
+			y: 16.46d
 			icon: {
 				id: "malum:hallowed_gold_ingot"
 				count: 1
@@ -567,7 +567,7 @@
 		{
 			id: "76DFF95BF66289DB"
 			x: 7.25d
-			y: 12.26d
+			y: 16.46d
 			icon: {
 				id: "malum:spirit_jar"
 				count: 1
@@ -601,8 +601,8 @@
 		}
 		{
 			id: "6880C52DD0366C72"
-			x: 9.25d
-			y: 12.26d
+			x: 10.6d
+			y: 16.46d
 			icon: {
 				id: "malum:runewood_obelisk"
 				count: 1
@@ -643,7 +643,7 @@
 		{
 			id: "33F393874DB2429A"
 			x: 4.65d
-			y: 16.009999999999998d
+			y: 17.96d
 			icon: {
 				id: "malum:arcane_charcoal"
 				count: 1
@@ -685,7 +685,7 @@
 		{
 			id: "5EFF84C54AFE6D05"
 			x: 4.65d
-			y: 14.135d
+			y: 13.61d
 			icon: {
 				id: "malum:soul_stained_steel_ingot"
 				count: 1
@@ -723,13 +723,14 @@
 		}
 		{
 			id: "4FDB5B94CAF85475"
-			x: 7.25d
-			y: 15.635d
+			x: 6.65d
+			y: 12.26d
 			icon: {
 				id: "malum:soul_stained_steel_sword"
 				count: 1
 			}
 			optional: true
+			hide_dependency_lines: true
 			dependencies: [
 				"5EFF84C54AFE6D05"
 			]
@@ -763,12 +764,13 @@
 		}
 		{
 			id: "2EE42153BDFA1EEB"
-			x: 7.25d
-			y: 17.134999999999998d
+			x: 6.65d
+			y: 14.96d
 			icon: {
 				id: "malum:soul_stained_steel_scythe"
 				count: 1
 			}
+			hide_dependency_lines: true
 			dependencies: [
 				"5EFF84C54AFE6D05"
 			]
@@ -802,13 +804,14 @@
 		}
 		{
 			id: "11FBF871F00AFDEF"
-			x: 7.25d
-			y: 14.135d
+			x: 6.65d
+			y: 13.61d
 			icon: {
 				id: "enderio:soul_binder"
 				count: 1
 			}
 			optional: true
+			hide_dependency_lines: true
 			dependencies: [
 				"5EFF84C54AFE6D05"
 			]
@@ -843,7 +846,7 @@
 		{
 			id: "3E57B5C07A82A6AB"
 			x: 4.65d
-			y: 18.634999999999998d
+			y: 19.46d
 			icon: {
 				id: "malum:soulwoven_silk"
 				count: 1
@@ -885,7 +888,7 @@
 		{
 			id: "2049A8B037D98CD5"
 			x: 7.25d
-			y: 18.634999999999998d
+			y: 19.46d
 			icon: {
 				id: "malum:soul_hunter_cloak"
 				count: 1
@@ -925,7 +928,7 @@
 		{
 			id: "469CD8475322E3E0"
 			x: 0.0d
-			y: 22.235d
+			y: 24.559999999999995d
 			icon: {
 				id: "malum:twisted_rock"
 				count: 1
@@ -974,7 +977,7 @@
 		{
 			id: "3C30C1242203AFE6"
 			x: 2.0d
-			y: 22.235d
+			y: 24.559999999999995d
 			icon: {
 				id: "malum:spirit_crucible"
 				count: 1
@@ -1015,7 +1018,7 @@
 		{
 			id: "12F0B504A60EC51D"
 			x: 2.0d
-			y: 23.735d
+			y: 26.059999999999995d
 			icon: {
 				id: "malum:alchemical_calx"
 				count: 1
@@ -1054,7 +1057,7 @@
 		{
 			id: "3345AFD00341532D"
 			x: 4.0d
-			y: 22.235d
+			y: 24.559999999999995d
 			icon: {
 				id: "malum:alchemical_impetus"
 				count: 1
@@ -1094,7 +1097,7 @@
 		{
 			id: "630880A06D01CC32"
 			x: 6.0d
-			y: 22.235d
+			y: 26.059999999999995d
 			icon: {
 				id: "malum:iron_node"
 				count: 1
@@ -1134,7 +1137,7 @@
 		{
 			id: "68623CAB44AB2D5B"
 			x: 4.0d
-			y: 23.735d
+			y: 26.059999999999995d
 			icon: {
 				id: "malum:ring_of_curative_talent"
 				count: 1
@@ -1175,7 +1178,7 @@
 		}
 		{
 			id: "20375037881AC816"
-			x: 12.25d
+			x: 15.6d
 			y: 13.01d
 			icon: {
 				id: "malum:runewood_totem_base"
@@ -1216,12 +1219,13 @@
 		}
 		{
 			id: "1DCDAF2EF0DEA6C0"
-			x: 14.25d
+			x: 17.6d
 			y: 13.01d
 			icon: {
 				id: "malum:sacred_spirit"
 				count: 1
 			}
+			hide_dependent_lines: true
 			dependencies: [
 				"20375037881AC816"
 			]
@@ -1259,7 +1263,7 @@
 		}
 		{
 			id: "61EBAF73D8AE43B0"
-			x: 16.25d
+			x: 19.6d
 			y: 13.01d
 			icon: {
 				id: "malum:infernal_spirit"
@@ -1302,7 +1306,7 @@
 		}
 		{
 			id: "6CF971351F3417E4"
-			x: 18.25d
+			x: 22.95d
 			y: 13.01d
 			icon: {
 				id: "malum:soul_stained_steel_ingot"
@@ -1346,6 +1350,392 @@
 					id: "134D544122911E62"
 					type: "xp_levels"
 					xp_levels: 15
+				}
+			]
+		}
+		{
+			id: "59DB7135CD26CAD3"
+			x: 7.25d
+			y: 20.96d
+			icon: {
+				id: "malum:soulwoven_pouch"
+				count: 1
+			}
+			optional: true
+			dependencies: [
+				"3E57B5C07A82A6AB"
+			]
+			tasks: [
+				{
+					id: "3C0A1FDCED9C8931"
+					type: "item"
+					item: {
+						id: "malum:soulwoven_pouch"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "6E9AF5A661B11AFD"
+					type: "item"
+					item: {
+						id: "malum:soulwoven_silk"
+						count: 1
+					}
+					count: 2
+				}
+				{
+					id: "68D55E6B5A4B1F8C"
+					type: "xp_levels"
+					xp_levels: 4
+				}
+			]
+		}
+		{
+			id: "54FCED683D66843E"
+			x: 12.6d
+			y: 16.46d
+			icon: {
+				id: "malum:brilliant_obelisk"
+				count: 1
+			}
+			optional: true
+			dependencies: [
+				"6880C52DD0366C72"
+			]
+			tasks: [
+				{
+					id: "36C29718CBF15422"
+					type: "item"
+					item: {
+						id: "malum:brilliant_obelisk"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "54BEF5D67035652F"
+					type: "item"
+					item: {
+						id: "minecraft:experience_bottle"
+						count: 1
+					}
+					count: 8
+				}
+				{
+					id: "16D759D97012D062"
+					type: "xp_levels"
+					xp_levels: 6
+				}
+			]
+		}
+		{
+			id: "14127434D45A5A93"
+			x: 8.0d
+			y: 12.26d
+			icon: {
+				id: "malum:ring_of_esoteric_spoils"
+				count: 1
+			}
+			hide_dependency_lines: true
+			dependencies: [
+				"5EFF84C54AFE6D05"
+				"5EABB3E140D80052"
+			]
+			tasks: [
+				{
+					id: "1AD6F2863F13B6AF"
+					type: "item"
+					item: {
+						id: "malum:ring_of_esoteric_spoils"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "2BE4652AF1D5F836"
+					type: "item"
+					item: {
+						id: "malum:eldritch_spirit"
+						count: 1
+					}
+					count: 8
+				}
+				{
+					id: "6F6D0D8C6D550733"
+					type: "xp_levels"
+					xp_levels: 8
+				}
+			]
+		}
+		{
+			id: "43E59A00996FC943"
+			x: 7.25d
+			y: 17.96d
+			icon: {
+				id: "malum:belt_of_the_prospector"
+				count: 1
+			}
+			optional: true
+			hide_dependency_lines: true
+			dependencies: [
+				"3446C4E82E2EEF4A"
+				"630880A06D01CC32"
+			]
+			tasks: [
+				{
+					id: "4A564E7EF0FA0D14"
+					type: "item"
+					item: {
+						id: "malum:belt_of_the_prospector"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "17DA0E7D4AE5BF40"
+					type: "item"
+					item: {
+						id: "minecraft:tnt"
+						count: 1
+					}
+					count: 8
+				}
+				{
+					id: "68CA5551368792A7"
+					type: "xp_levels"
+					xp_levels: 8
+				}
+			]
+		}
+		{
+			id: "417B81A5AA87447D"
+			x: 6.0d
+			y: 27.559999999999995d
+			icon: {
+				id: "malum:repair_pylon"
+				count: 1
+			}
+			dependencies: [
+				"3345AFD00341532D"
+			]
+			tasks: [
+				{
+					id: "68EDCDC113AC3C98"
+					type: "item"
+					item: {
+						id: "malum:repair_pylon"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "218C03927284A647"
+					type: "item"
+					item: {
+						id: "malum:sacred_spirit"
+						count: 1
+					}
+					count: 16
+				}
+				{
+					id: "5F95856148942F37"
+					type: "xp_levels"
+					xp_levels: 8
+				}
+			]
+		}
+		{
+			id: "42460412094B7533"
+			x: 6.0d
+			y: 24.559999999999995d
+			icon: {
+				id: "malum:spirit_catalyzer"
+				count: 1
+			}
+			optional: true
+			dependencies: [
+				"3345AFD00341532D"
+			]
+			tasks: [
+				{
+					id: "38A232C2568761F0"
+					type: "item"
+					item: {
+						id: "malum:spirit_catalyzer"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "267E216B5AA1AF77"
+					type: "item"
+					item: {
+						id: "malum:infernal_spirit"
+						count: 1
+					}
+					count: 16
+				}
+				{
+					id: "779476C9DB12D1D7"
+					type: "xp_levels"
+					xp_levels: 8
+				}
+			]
+		}
+		{
+			id: "46593BEEF4B139F1"
+			x: 19.6d
+			y: 15.26d
+			icon: {
+				id: "malum:earthen_spirit"
+				count: 1
+			}
+			optional: true
+			hide_dependency_lines: true
+			dependencies: [
+				"1DCDAF2EF0DEA6C0"
+			]
+			tasks: [
+				{
+					id: "6A9568A5AA315DE6"
+					type: "checkmark"
+				}
+			]
+			rewards: [
+				{
+					id: "1DC2D30820C3D871"
+					type: "item"
+					item: {
+						id: "malum:earthen_spirit"
+						count: 1
+					}
+					count: 16
+				}
+				{
+					id: "65D3219AC5AC4FD7"
+					type: "xp_levels"
+					xp_levels: 6
+				}
+			]
+		}
+		{
+			id: "1DA56D1142D5F0E0"
+			x: 19.6d
+			y: 17.96d
+			icon: {
+				id: "malum:aerial_spirit"
+				count: 1
+			}
+			optional: true
+			hide_dependency_lines: true
+			dependencies: [
+				"1DCDAF2EF0DEA6C0"
+			]
+			tasks: [
+				{
+					id: "236F8EA5BB95C096"
+					type: "checkmark"
+				}
+			]
+			rewards: [
+				{
+					id: "63F32E0771BB6990"
+					type: "item"
+					item: {
+						id: "malum:aerial_spirit"
+						count: 1
+					}
+					count: 16
+				}
+				{
+					id: "34618F57A82901C0"
+					type: "xp_levels"
+					xp_levels: 6
+				}
+			]
+		}
+		{
+			id: "1ACAC5CE0A057784"
+			x: 19.6d
+			y: 16.61d
+			icon: {
+				id: "malum:sacred_spirit"
+				count: 1
+			}
+			optional: true
+			hide_dependency_lines: true
+			dependencies: [
+				"1DCDAF2EF0DEA6C0"
+			]
+			tasks: [
+				{
+					id: "2E750155F993A6C5"
+					type: "checkmark"
+				}
+			]
+			rewards: [
+				{
+					id: "785C4B0AA0DE04AE"
+					type: "item"
+					item: {
+						id: "minecraft:wheat"
+						count: 1
+					}
+					count: 32
+				}
+				{
+					id: "239F3A3FB9A48924"
+					type: "xp_levels"
+					xp_levels: 8
+				}
+			]
+		}
+		{
+			id: "7FE8407A69103ADA"
+			x: 20.95d
+			y: 15.26d
+			icon: {
+				id: "malum:aqueous_spirit"
+				count: 1
+			}
+			optional: true
+			hide_dependency_lines: true
+			dependencies: [
+				"1DCDAF2EF0DEA6C0"
+			]
+			tasks: [
+				{
+					id: "33A8F1375B012EB1"
+					type: "checkmark"
+				}
+			]
+			rewards: [
+				{
+					id: "4CD040134F834EAE"
+					type: "item"
+					item: {
+						id: "minecraft:bone_meal"
+						count: 1
+					}
+					count: 32
+				}
+				{
+					id: "6C768083739CF66D"
+					type: "xp_levels"
+					xp_levels: 8
 				}
 			]
 		}
@@ -1394,7 +1784,7 @@
 		{
 			id: "23706B4A14DC7D92"
 			image: "kronwerke:textures/quests/malum/totems.png"
-			x: 14.625d
+			x: 17.975d
 			y: 10.809999999999999d
 			width: 5.75d
 			height: 0.9d
@@ -1405,7 +1795,7 @@
 			id: "1375CBC1758954E1"
 			image: "kronwerke:textures/quests/malum/tiegel.png"
 			x: 2.255d
-			y: 20.785d
+			y: 23.109999999999996d
 			width: 5.51d
 			height: 0.9d
 			rotation: 0.0d

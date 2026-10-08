@@ -293,3 +293,10 @@ The second pass of the recipe round.
 - The quest book as a map: every section of a chapter is a tree of its own with a straight main line, side branches above and below, and many leaves of one parent as a compact block. Sections sit side by side, long chains fold into a second row.
 - No two quest lines cross. A line that would run far across the map, through another quest or through a banner is hidden; the quest panel still lists what it needs.
 - Same 74 chapters and 2809 quests, no change to tasks or rewards. (The tag v0.11.27 points at the same book but still carries 0.11.26 as its version.)
+
+## 0.11.29
+
+- About 660 new quests, 8 to 14 in every chapter (3469 in total): machines, upgrades, tools and mechanics no quest covered yet, links between mods, milestones and kill quests. Every recipe in them is checked against the pack after the recipe round, every number against the configs and jars.
+- Every quest sits under the heading it belongs to; no empty headings left. A quest can name its section (`section=` in `tools/quests/ftbq.py`) where its links would pull it elsewhere.
+- Fixed texts: Rite of Quickening needs a Soulwood totem, the golden ritual bowl takes golden sheets, the Arcane Anvil takes source gem blocks, Fertile Essence takes a mandrake root, sorting is Alt+B, the Draconic projectile damage module recipe, the Forbidden Arcanus pedestal count.
+- QuarryPlus: the Faster Work Module is enabled (it was off by default, but the quarries chapter leads through it).

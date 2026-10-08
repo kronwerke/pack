@@ -5,7 +5,7 @@ loot_table/gaia_guardian/reward.json), the things made from them (gaia spreader,
 dandelifeon, shulk me not, the Gaia baubles as a checklist, talisman, astrolabe, starcaller,
 thundercaller) and the stage 4 magic goal of 128 Gaia spirits. Continues alfheim.py. The Gaia
 spirit ingot, Gaia II and the relics are stage 5 and text only."""
-from ftbq import (chapter, quest, task_item, task_checkmark, task_advancement, reward_item,
+from ftbq import (chapter, quest, task_item, task_checkmark, task_advancement, task_kill, reward_item,
                   reward_table, reward_xp, banner, img, item_texture)
 
 C = "gaia"
@@ -92,7 +92,7 @@ quests = [
           rewards=[reward_xp(5)],
           deps=["arena"], icon="botania:gaia_head"),
 
-    quest("fight", 7.75, 0, "&d&lBesiege den Wächter von Gaia",
+    quest("fight", 7.75, 5.2, "&d&lBesiege den Wächter von Gaia",
           subtitle="Der erste Kampf.",
           description=[
               "Starte das Ritual und gewinne. &eJeder Mitkämpfer bekommt 6&r Gaia-Seelen, &ewer den letzten Treffer setzt, 8&r. Mit 20 Prozent fällt eine Schallplatte dazu.",
@@ -103,7 +103,7 @@ quests = [
           rewards=[reward_item("botania:terrasteel_ingot", 2), reward_table("s4_uncommon"), reward_xp(15)],
           deps=["gear", "behaviour"], icon="botania:gaia_spirit", size=2.0, shape="gear"),
 
-    quest("no_armor", 7.75, 2.5, "&5Gewinn ohne Rüstung",
+    quest("no_armor", 10.25, 6.6, "&5Gewinn ohne Rüstung",
           subtitle="Mythologia's End, nur für Wahnsinnige.",
           description=[
               "Besiege den Wächter ohne ein einziges Rüstungsteil. Das gibt den Fortschritt &eMythologia's End&r.",
@@ -114,7 +114,7 @@ quests = [
           rewards=[reward_item("minecraft:enchanted_golden_apple", 1), reward_xp(20)],
           deps=["fight"], optional=True, icon="botania:gaia_head"),
 
-    quest("together", 10.25, -2.5, "&dKämpf gemeinsam",
+    quest("together", 7.75, 6.6, "&dKämpf gemeinsam",
           subtitle="Mehr Leute, mehr Seelen.",
           description=[
               "Das Ritual zählt die Spieler beim Start. Zu viert hat er doppelt so viel Leben, aber es fallen 6 für jeden und 8 für den letzten Treffer, zusammen &e26 statt 8&r.",
@@ -127,7 +127,7 @@ quests = [
           rewards=[reward_xp(5)],
           deps=["fight"], icon="botania:gaia_spirit"),
 
-    quest("head", 10.25, 2.5, "&5Hol dir seinen Kopf",
+    quest("head", 12.75, 6.6, "&5Hol dir seinen Kopf",
           subtitle="Eine Trophäe, nur mit der Elementiumaxt.",
           description=[
               "Letzter Treffer mit einer &dElementiumaxt&r: etwa &e7,7 Prozent&r Chance auf den Kopf, mit Plünderung I 15,4 Prozent, jede weitere Stufe 7,7 mehr.",
@@ -331,6 +331,105 @@ quests = [
           tasks=[task_checkmark("Gelesen")],
           rewards=[reward_xp(5)],
           deps=["goal"], icon="botania:terrasteel_ingot", optional=True),
+    # ---- Neu: Nebenquests ------------------------------------------------
+    quest("chakrams", 3, 2.5, "&aWirf Chakrams",
+          subtitle="Bumerangs gegen die Diener des Wächters.",
+          description=[
+              "&6Dornenchakram&r: &e8 Ranken&r um einen &aTerrastahlbarren&r, ergibt zwei. &6Loderchakram&r: zwei Dornenchakrams mit &6Feenstaub&r in der Mitte, oben und unten je &e3 Lohenstaub&r, ergibt ebenfalls zwei.",
+              "",
+              "Geworfen durchschlägt ein Chakram Gegner, kann sie vergiften, prallt von Wänden ab und kehrt nach etwa drei Sekunden zurück. Bis zu &e6&r stapeln sich, und das Loderchakram setzt Gegner zusätzlich in Brand.",
+              "",
+              "In der engen Arena treffen sie viele Ziele auf einmal.",
+          ],
+          tasks=[task_item("botania:thorn_chakram", 2), task_item("botania:flare_chakram", 2)],
+          rewards=[reward_item("minecraft:vine", 16), reward_xp(6)],
+          deps=["gear"], icon="botania:thorn_chakram", optional=True),
+
+    quest("five_fights", 10.25, 5.2, "&dBezwinge den Wächter fünfmal",
+          subtitle="Übung für sechzehn Kämpfe.",
+          description=[
+              "Besiege den &dWächter von Gaia&r noch weitere Male, bis es fünf sind.",
+              "",
+              "Nach ein paar Kämpfen kennst du die Phasen, die Teleports und die Diener. Halt die Arena sauber, leg Terrastahl und Pylonen in eine Truhe daneben, und die Kämpfe werden zur Routine.",
+              "",
+              "Für den Obelisken zählt jede Seele: wer den letzten Treffer setzt, bekommt zwei mehr.",
+          ],
+          tasks=[task_kill("botania:gaia_guardian", 5)],
+          rewards=[reward_item("botania:terrasteel_ingot", 2), reward_table("s4_uncommon"), reward_xp(15)],
+          deps=["fight"], icon="botania:gaia_head", optional=True),
+
+    quest("reservoir", 20.25, -3.2, "&dSchnitz die Rute des instabilen Reservoirs",
+          subtitle="Ein Schwarm Zielsuchgeschosse.",
+          description=[
+              "&e2 Gaia-Seelen&r, &e3 Drachensteine&r und &e2 Traumholzzweige&r, wie in JEI gezeigt.",
+              "",
+              "Benutzt beschwört die Rute aus Mana unzählige magische Geschosse, die sich zufällige Ziele suchen. Am stärksten gegen große Gruppen.",
+              "",
+              "Im &6Lebeholz-Avatar&r greift sie Monster in seiner Nähe von selbst an, mit dem Mana des Avatars. Eine gute Wache für den Basiseingang.",
+          ],
+          tasks=[task_item("botania:rod_of_the_unstable_reservior", 1)],
+          rewards=[reward_item("botania:dragonstone", 2), reward_xp(8)],
+          deps=["spirits"], icon="botania:rod_of_the_unstable_reservior", optional=True),
+
+    quest("life", 22.75, -1.6, "&5Verpack einen Spawner",
+          subtitle="Lebensaggregator und Lebensfüller.",
+          description=[
+              "&6Lebensaggregator&r: &e4 Gaia-Seelen&r in den Ecken, &e2 Elementium&r, &e2 Reine Ender-Essenz&r und ein &6Drachenstein&r in der Mitte. Er nimmt einen Monster- oder Prüfungsspawner auf und trägt ihn an einen anderen Ort. Danach zerbricht er.",
+              "",
+              "&6Lebensfüller&r: oben 2 Lohenruten und Elementium, darunter Prismarinziegel, ein &6Manastahlblock&r und Ender-Essenz. Auf einen Spawner gesetzt lässt er ihn mit Mana aus einem Verbreiter spawnen, auch wenn niemand in der Nähe ist.",
+          ],
+          tasks=[task_item("botania:life_aggregator", 1), task_item("botania:life_imbuer", 1)],
+          rewards=[reward_item("botania:pure_ender_essence", 2), reward_xp(8)],
+          deps=["spirits"], icon="botania:life_aggregator", optional=True),
+
+    quest("laputa", 22.75, -3.2, "&dZerschlag eine Scherbe von Laputa",
+          subtitle="Eine fliegende Insel aus deinem Land.",
+          description=[
+              "&e3 Gaia-Seelen&r, eine &6Schwebende Blume&r, &e2 Prismarinsplitter&r, ein &6Drachenstein&r, &6Rune der Luft&r und &6Rune der Erde&r.",
+              "",
+              "Auf den Boden geschlagen hebt die Scherbe eine Kugel mit etwa &e14 Blöcken&r Radius hoch in die Luft. Mit weiteren Gaia-Seelen lässt sich der Radius Block für Block vergrößern, bis &e33&r.",
+              "",
+              "&cAchtung:&r Große Scherben brauchen zehn Minuten oder mehr, bis alles oben ist. Such dir einen Ort, wo niemand baut.",
+          ],
+          tasks=[task_item("botania:shard_of_laputa", 1)],
+          rewards=[reward_item("minecraft:prismarine_shard", 8), reward_xp(8)],
+          deps=["spirits"], icon="botania:shard_of_laputa", optional=True),
+
+    quest("manastorm", 20.25, -4.8, "&5Bau einen Manasturm-Sprengsatz",
+          subtitle="Nur für Wahnsinnige.",
+          description=[
+              "&e4 Lebeholzstämme&r in den Ecken, &e4 TNT&r an den Seiten, eine &aGaia-Seele&r in die Mitte.",
+              "",
+              "Ein Manastoß zündet die Ladung. Daraus wird ein &cManasturm-Epizentrum&r, das eine Weile lang explosive Manastöße in alle Richtungen schleudert.",
+              "",
+              "&cNie&r in der Nähe von Basen, Spawn oder fremden Bauten zünden. Weit draußen gut zum Abtragen von Gelände.",
+          ],
+          tasks=[task_item("botania:manastorm_charge", 1)],
+          rewards=[reward_item("minecraft:tnt", 4), reward_xp(6)],
+          deps=["spirits"], icon="botania:manastorm_charge", optional=True),
+
+    quest("draconic_tie", 12.75, -4.2, "&7Liefer Seelen an die Drachenbauer",
+          subtitle="Draconic Evolution braucht deine Kämpfe.",
+          description=[
+              "&eRezept auf Kronwerke:&r Jeder &cStabilisator&r für den Energiekern von Draconic Evolution hat oben in der Mitte eine &aGaia-Seele&r, in den Ecken Diamanten und in der Mitte einen Partikelgenerator.",
+              "",
+              "Ein Energiekern braucht vier Stabilisatoren, also vier Seelen. Leg sie für die Techniker beiseite, siehe Kapitel &5Draconic Evolution&r.",
+          ],
+          tasks=[task_checkmark("Gelesen")],
+          rewards=[reward_xp(3)],
+          deps=["spirits"], icon="draconicevolution:energy_core_stabilizer"),
+
+    quest("terrasteel_stock", 1, 2.5, "&aLeg Opfer für acht Kämpfe bereit",
+          subtitle="Ein Vorrat, damit kein Abend am Barren scheitert.",
+          description=[
+              "Bring &e8 Terrastahlbarren&r zusammen, einen für jeden Kampf.",
+              "",
+              "Die Terrastahl-Straße aus dem Kapitel &aBotania: Runen&r liefert sie nebenbei. Leg die Barren in eine Truhe an der Arena, dann startet der nächste Kampf in einer Minute.",
+          ],
+          tasks=[task_item("botania:terrasteel_ingot", 8)],
+          rewards=[reward_item("botania:mana_diamond", 4), reward_table("s4_common")],
+          deps=["terrasteel"], icon="botania:terrasteel_block", optional=True),
+
 ]
 
 images = [

@@ -206,7 +206,7 @@
 		}
 		{
 			id: "5FC8136D1033C0E8"
-			x: 10.4d
+			x: 11.75d
 			y: 5.56d
 			icon: {
 				id: "occultism:miner_foliot_unspecialized"
@@ -240,13 +240,12 @@
 		}
 		{
 			id: "5DCDB707D5EEA3CA"
-			x: 13.4d
-			y: 4.06d
+			x: 13.75d
+			y: 5.56d
 			icon: {
 				id: "occultism:dimensional_mineshaft"
 				count: 1
 			}
-			hide_dependency_lines: true
 			dependencies: [
 				"5FC8136D1033C0E8"
 			]
@@ -295,7 +294,7 @@
 		{
 			id: "58F1958DA0645286"
 			x: 6.0d
-			y: 7.31d
+			y: 8.41d
 			icon: {
 				id: "occultism:storage_controller"
 				count: 1
@@ -334,13 +333,14 @@
 		}
 		{
 			id: "7CCF7BFE0317C5A6"
-			x: 8.4d
-			y: 7.31d
+			x: 8.0d
+			y: 7.06d
 			icon: {
 				id: "occultism:storage_stabilizer_tier2"
 				count: 1
 			}
 			optional: true
+			hide_dependency_lines: true
 			dependencies: [
 				"58F1958DA0645286"
 			]
@@ -370,7 +370,7 @@
 		{
 			id: "37FA09E6BF325E63"
 			x: 0.0d
-			y: 14.31d
+			y: 13.635d
 			icon: {
 				id: "occultism:cursed_honey"
 				count: 1
@@ -405,7 +405,7 @@
 		{
 			id: "1A39A7E5F622433E"
 			x: 2.0d
-			y: 14.31d
+			y: 13.635d
 			icon: {
 				id: "occultism:chalk_orange"
 				count: 1
@@ -439,7 +439,7 @@
 		{
 			id: "7E484524F4BD7BE5"
 			x: 4.0d
-			y: 14.31d
+			y: 13.635d
 			icon: {
 				id: "minecraft:skeleton_skull"
 				count: 1
@@ -473,7 +473,7 @@
 		{
 			id: "397D01043565E0D3"
 			x: 6.0d
-			y: 14.31d
+			y: 13.635d
 			icon: {
 				id: "occultism:afrit_essence"
 				count: 1
@@ -516,7 +516,7 @@
 		{
 			id: "20263DB2F2483463"
 			x: 8.6d
-			y: 15.81d
+			y: 13.635d
 			icon: {
 				id: "occultism:afrit_essence"
 				count: 1
@@ -555,7 +555,7 @@
 		{
 			id: "65FDD089F1FF5A18"
 			x: 6.0d
-			y: 11.31d
+			y: 15.51d
 			icon: {
 				id: "occultism:demonic_meat"
 				count: 1
@@ -593,12 +593,13 @@
 		}
 		{
 			id: "2081521B6FEC7EBA"
-			x: 8.6d
-			y: 14.31d
+			x: 11.6d
+			y: 18.009999999999998d
 			icon: {
 				id: "occultism:chalk_red"
 				count: 1
 			}
+			hide_dependency_lines: true
 			dependencies: [
 				"397D01043565E0D3"
 			]
@@ -632,8 +633,8 @@
 		}
 		{
 			id: "5A8027BE844B0D12"
-			x: 10.6d
-			y: 14.31d
+			x: 13.6d
+			y: 13.26d
 			icon: {
 				id: "occultism:book_of_binding_afrit"
 				count: 1
@@ -671,13 +672,12 @@
 		}
 		{
 			id: "76AFF5CF4F2CAC9A"
-			x: 13.4d
-			y: 7.06d
+			x: 15.6d
+			y: 14.76d
 			icon: {
 				id: "minecraft:magma_block"
 				count: 1
 			}
-			hide_dependency_lines: true
 			dependencies: [
 				"5A8027BE844B0D12"
 			]
@@ -706,8 +706,8 @@
 		}
 		{
 			id: "1221F8A483DFF2DA"
-			x: 12.6d
-			y: 14.31d
+			x: 15.6d
+			y: 13.26d
 			icon: {
 				id: "minecraft:lightning_rod"
 				count: 1
@@ -736,8 +736,8 @@
 		}
 		{
 			id: "10675807C38F2CB9"
-			x: 12.6d
-			y: 15.81d
+			x: 15.6d
+			y: 16.259999999999998d
 			icon: {
 				id: "minecraft:echo_shard"
 				count: 1
@@ -776,12 +776,13 @@
 		}
 		{
 			id: "2659AA9A33765995"
-			x: 10.6d
-			y: 12.81d
+			x: 13.6d
+			y: 18.009999999999998d
 			icon: {
 				id: "occultism:chalk_red"
 				count: 1
 			}
+			hide_dependent_lines: true
 			dependencies: [
 				"2081521B6FEC7EBA"
 			]
@@ -810,8 +811,8 @@
 		}
 		{
 			id: "43ADBB5C52E44FA0"
-			x: 15.4d
-			y: 4.06d
+			x: 15.6d
+			y: 19.759999999999998d
 			icon: {
 				id: "occultism:miner_afrit_deeps"
 				count: 1
@@ -851,13 +852,14 @@
 		}
 		{
 			id: "1D1C996FA3524154"
-			x: 12.6d
-			y: 12.81d
+			x: 15.6d
+			y: 21.11d
 			icon: {
 				id: "occultism:ritual_satchel_t2"
 				count: 1
 			}
 			optional: true
+			hide_dependency_lines: true
 			dependencies: [
 				"2659AA9A33765995"
 			]
@@ -886,13 +888,14 @@
 		}
 		{
 			id: "1C89DF95F9768432"
-			x: 8.6d
-			y: 11.31d
+			x: 19.95d
+			y: 13.26d
 			icon: {
 				id: "minecraft:blue_ice"
 				count: 1
 			}
 			optional: true
+			hide_dependency_lines: true
 			dependencies: [
 				"65FDD089F1FF5A18"
 			]
@@ -921,8 +924,8 @@
 		}
 		{
 			id: "2F271BA45D1FE663"
-			x: 10.6d
-			y: 11.31d
+			x: 21.95d
+			y: 14.76d
 			icon: {
 				id: "minecraft:reinforced_deepslate"
 				count: 1
@@ -960,12 +963,13 @@
 		}
 		{
 			id: "30267281CAAD1E17"
-			x: 10.6d
-			y: 17.310000000000002d
+			x: 0.0d
+			y: 26.709999999999997d
 			icon: {
 				id: "occultism:chalk_black"
 				count: 1
 			}
+			hide_dependency_lines: true
 			dependencies: [
 				"2081521B6FEC7EBA"
 			]
@@ -999,8 +1003,8 @@
 		}
 		{
 			id: "7DD5A9BCD80E24CF"
-			x: 12.6d
-			y: 17.310000000000002d
+			x: 2.0d
+			y: 26.709999999999997d
 			icon: {
 				id: "occultism:marid_essence"
 				count: 1
@@ -1038,13 +1042,12 @@
 		}
 		{
 			id: "1B5369556D2FD7CD"
-			x: 13.4d
-			y: 5.56d
+			x: 4.0d
+			y: 26.709999999999997d
 			icon: {
 				id: "occultism:chalk_blue"
 				count: 1
 			}
-			hide_dependency_lines: true
 			dependencies: [
 				"7DD5A9BCD80E24CF"
 			]
@@ -1078,14 +1081,15 @@
 		}
 		{
 			id: "1B31D4AAD9A6BB6A"
-			x: 15.4d
-			y: 7.06d
+			x: 6.0d
+			y: 26.709999999999997d
 			icon: {
 				id: "occultism:chalk_blue"
 				count: 1
 			}
 			size: 2.5d
 			shape: "gear"
+			hide_dependency_lines: true
 			dependencies: [
 				"1B5369556D2FD7CD"
 				"76AFF5CF4F2CAC9A"
@@ -1123,6 +1127,423 @@
 				}
 			]
 		}
+		{
+			id: "1B4737AEDBFCC751"
+			x: 8.0d
+			y: 8.41d
+			icon: {
+				id: "occultism:storage_remote"
+				count: 1
+			}
+			optional: true
+			hide_dependency_lines: true
+			dependencies: [
+				"58F1958DA0645286"
+			]
+			tasks: [
+				{
+					id: "493B382B65649452"
+					type: "item"
+					item: {
+						id: "occultism:storage_remote"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "5981E7D6BE6C4323"
+					type: "item"
+					item: {
+						id: "minecraft:ender_pearl"
+						count: 1
+					}
+					count: 4
+				}
+				{
+					id: "23DC1D1134B16EA7"
+					type: "xp_levels"
+					xp_levels: 10
+				}
+			]
+		}
+		{
+			id: "43353D99842FDE3E"
+			x: 8.0d
+			y: 9.76d
+			icon: {
+				id: "occultism:stable_wormhole"
+				count: 1
+			}
+			optional: true
+			hide_dependency_lines: true
+			dependencies: [
+				"58F1958DA0645286"
+			]
+			tasks: [
+				{
+					id: "34BF72687C728472"
+					type: "item"
+					item: {
+						id: "occultism:stable_wormhole"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "1601BDB0CC1332C9"
+					type: "item"
+					item: {
+						id: "minecraft:quartz"
+						count: 1
+					}
+					count: 16
+				}
+				{
+					id: "6E90BFE426A6E12B"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+		}
+		{
+			id: "19AC1C924F37C21D"
+			x: 9.35d
+			y: 7.06d
+			icon: {
+				id: "occultism:book_of_calling_djinni_manage_machine"
+				count: 1
+			}
+			optional: true
+			hide_dependency_lines: true
+			dependencies: [
+				"58F1958DA0645286"
+			]
+			tasks: [
+				{
+					id: "7BA9231B782B0913"
+					type: "item"
+					item: {
+						id: "occultism:book_of_calling_djinni_manage_machine"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "26361989A3300EFE"
+					type: "item"
+					item: {
+						id: "minecraft:coal_block"
+						count: 1
+					}
+					count: 4
+				}
+				{
+					id: "5D40399329F8946E"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+		}
+		{
+			id: "27E215BE394C3AA5"
+			x: 8.4d
+			y: 4.06d
+			icon: {
+				id: "occultism:entity_wormhole"
+				count: 1
+			}
+			optional: true
+			dependencies: [
+				"4F162550F48675B5"
+			]
+			tasks: [
+				{
+					id: "1186C69CBDB32294"
+					type: "item"
+					item: {
+						id: "occultism:entity_wormhole"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "1EABFFBF2DF84A8D"
+					type: "item"
+					item: {
+						id: "minecraft:lodestone"
+						count: 1
+					}
+					count: 1
+				}
+				{
+					id: "1AA88A9F875F4F93"
+					type: "xp_levels"
+					xp_levels: 10
+				}
+			]
+		}
+		{
+			id: "4B93ECF961BA2049"
+			x: 15.6d
+			y: 18.009999999999998d
+			icon: {
+				id: "occultism:iesnium_sacrificial_bowl"
+				count: 1
+			}
+			size: 1.5d
+			dependencies: [
+				"2659AA9A33765995"
+			]
+			tasks: [
+				{
+					id: "7294F68DF1FDF46A"
+					type: "item"
+					item: {
+						id: "occultism:iesnium_sacrificial_bowl"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "58D6A3BC32C5C05A"
+					type: "item"
+					item: {
+						id: "occultism:iesnium_ingot"
+						count: 1
+					}
+					count: 4
+				}
+				{
+					id: "1A5794BE3042489B"
+					type: "loot"
+					table_id: 6583846314806931712L
+				}
+				{
+					id: "131EBBD486407CC1"
+					type: "xp_levels"
+					xp_levels: 10
+				}
+			]
+		}
+		{
+			id: "3E43817C36C9EA11"
+			x: 15.6d
+			y: 22.46d
+			icon: {
+				id: "occultism:iesnium_butcher_knife"
+				count: 1
+			}
+			hide_dependency_lines: true
+			dependencies: [
+				"2659AA9A33765995"
+			]
+			tasks: [
+				{
+					id: "11006F03A73789E7"
+					type: "item"
+					item: {
+						id: "occultism:iesnium_butcher_knife"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "72E25BF1E46A7FB4"
+					type: "item"
+					item: {
+						id: "occultism:tallow"
+						count: 1
+					}
+					count: 16
+				}
+				{
+					id: "38AF295945F4E925"
+					type: "xp_levels"
+					xp_levels: 10
+				}
+			]
+		}
+		{
+			id: "532B7709766C0367"
+			x: 16.95d
+			y: 19.759999999999998d
+			icon: {
+				id: "occultism:dimensional_battlefield"
+				count: 1
+			}
+			hide_dependency_lines: true
+			dependencies: [
+				"2659AA9A33765995"
+			]
+			tasks: [
+				{
+					id: "2D5524B4C689FF9A"
+					type: "item"
+					item: {
+						id: "occultism:dimensional_battlefield"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "10A5A3012A5BBEBD"
+					type: "item"
+					item: {
+						id: "occultism:datura"
+						count: 1
+					}
+					count: 32
+				}
+				{
+					id: "799475FC42564170"
+					type: "loot"
+					table_id: 8923133104651443544L
+				}
+				{
+					id: "6ACE1F96D64564E2"
+					type: "xp_levels"
+					xp_levels: 10
+				}
+			]
+		}
+		{
+			id: "56FAEA713F70DAB3"
+			x: 15.75d
+			y: 5.56d
+			icon: {
+				id: "occultism:dimensional_extractor"
+				count: 1
+			}
+			optional: true
+			dependencies: [
+				"5DCDB707D5EEA3CA"
+			]
+			tasks: [
+				{
+					id: "292C7AF00CA0AC2F"
+					type: "item"
+					item: {
+						id: "occultism:dimensional_extractor"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "6B0CFCC4C52C5A3C"
+					type: "item"
+					item: {
+						id: "minecraft:hopper"
+						count: 1
+					}
+					count: 2
+				}
+				{
+					id: "79B5E506CB679F8F"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+		}
+		{
+			id: "50244CFF4ED6480C"
+			x: 21.95d
+			y: 13.26d
+			icon: {
+				id: "minecraft:wither_skeleton_skull"
+				count: 1
+			}
+			dependencies: [
+				"1C89DF95F9768432"
+			]
+			tasks: [
+				{
+					id: "454048EC2683FC25"
+					type: "item"
+					item: {
+						id: "minecraft:wither_skeleton_skull"
+						count: 1
+					}
+					count: 3
+				}
+			]
+			rewards: [
+				{
+					id: "76F67B54A7C8C67C"
+					type: "item"
+					item: {
+						id: "minecraft:bone_block"
+						count: 1
+					}
+					count: 8
+				}
+				{
+					id: "15E03631FC85B61F"
+					type: "loot"
+					table_id: 6583846314806931712L
+				}
+				{
+					id: "31F22C30279D959F"
+					type: "xp_levels"
+					xp_levels: 10
+				}
+			]
+		}
+		{
+			id: "65F1F4E06047F7EB"
+			x: 21.95d
+			y: 16.259999999999998d
+			icon: {
+				id: "minecraft:budding_amethyst"
+				count: 1
+			}
+			optional: true
+			dependencies: [
+				"1C89DF95F9768432"
+			]
+			tasks: [
+				{
+					id: "2D79BE344D4494DE"
+					type: "item"
+					item: {
+						id: "minecraft:budding_amethyst"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "4712F54E7D5A9C8A"
+					type: "item"
+					item: {
+						id: "minecraft:amethyst_block"
+						count: 1
+					}
+					count: 4
+				}
+				{
+					id: "160E9E060C8A2055"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+		}
 	]
 	images: [
 		{
@@ -1147,20 +1568,40 @@
 		}
 		{
 			id: "3E44513636755420"
-			image: "kronwerke:textures/quests/occultism_afrit/gebunden.png"
-			x: 15.280000000000001d
-			y: 2.6599999999999997d
-			width: 4.76d
+			image: "kronwerke:textures/quests/occultism_afrit/essenz.png"
+			x: 1.39d
+			y: 11.86d
+			width: 3.78d
 			height: 0.8d
 			rotation: 0.0d
 			order: 1
 		}
 		{
 			id: "249B593B9D08995D"
-			image: "kronwerke:textures/quests/occultism_afrit/essenz.png"
-			x: 1.39d
-			y: 9.91d
-			width: 3.78d
+			image: "kronwerke:textures/quests/occultism_afrit/gebunden.png"
+			x: 13.48d
+			y: 11.86d
+			width: 4.76d
+			height: 0.8d
+			rotation: 0.0d
+			order: 1
+		}
+		{
+			id: "337D613B13504190"
+			image: "kronwerke:textures/quests/occultism_afrit/wild.png"
+			x: 21.465d
+			y: 11.86d
+			width: 4.03d
+			height: 0.8d
+			rotation: 0.0d
+			order: 1
+		}
+		{
+			id: "21CD17EEA4D6BCFE"
+			image: "kronwerke:textures/quests/occultism_afrit/marid.png"
+			x: 0.47d
+			y: 24.559999999999995d
+			width: 1.94d
 			height: 0.8d
 			rotation: 0.0d
 			order: 1

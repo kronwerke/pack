@@ -379,6 +379,95 @@ quests = [
           rewards=[reward_item("minecraft:golden_apple", 1), reward_xp(3)],
           deps=["h_origin"], icon="minecraft:skeleton_skull"),
 
+    quest("m_allies", 12.5, 0, "&6Nimm Verbündete auf",
+          subtitle="Freunde in deine Chunks lassen, ohne ein Team zu teilen.",
+          description=[
+              "Nicht jeder will gleich ins selbe Team. Für Nachbarn gibt es &eVerbündete&r: Im Teamfenster (Knopf &eMein Team&r im Inventar) findest du &eVerbündete verwalten&r. Dort trägst du Spieler ein und trägst sie auch wieder aus.",
+              "",
+              "Was Verbündete in deinen Chunks dürfen, stellst du in den Einstellungen deines Teams ein, etwa Blöcke abbauen oder Truhen öffnen. So kann der Nachbar deine Fabrik mit Erz beliefern, ohne dass er deine Quests oder deine 500 Chunks teilt.",
+          ],
+          tasks=[task_checkmark("Verstanden")],
+          rewards=[reward_xp(3)],
+          deps=["m_team"], icon="minecraft:cake"),
+
+    quest("h_controls", 18.5, 8, "&6Durchsuch die Steuerung",
+          subtitle="Über 200 Mods, eine Suchleiste.",
+          description=[
+              "In den &eSteuerungseinstellungen&r gibt es dank &6Controlling&r oben eine &eSuchleiste&r. Tipp einen Teil des Namens, etwa &eRucksack&r oder &eUltimine&r, und du siehst sofort die passende Taste.",
+              "",
+              "Daneben kannst du die Liste filtern, zum Beispiel nur auf &edoppelt belegte&r Tasten. So findest du in Sekunden, warum eine Taste nicht das tut, was sie soll.",
+          ],
+          tasks=[task_checkmark("Gesucht")],
+          rewards=[reward_xp(3)],
+          deps=["h_keys"], icon="minecraft:tripwire_hook"),
+
+    quest("h_background", 20.5, 8, "&6Pass auf, wenn das Spiel im Hintergrund läuft",
+          subtitle="Dynamic FPS bremst, sobald du woanders hinklickst.",
+          description=[
+              "&6Dynamic FPS&r schont deinen Rechner: Klickst du aus Minecraft heraus, etwa in den Discord, den Browser oder OBS, läuft das Spiel nur noch mit &d1 Bild pro Sekunde&r und &d25 Prozent&r Lautstärke. Minimiert steht es ganz still und ist stumm. Liegt nur die Maus über dem Fenster, sind es 60 Bilder.",
+              "",
+              "&cFür Streamer wichtig:&r Klickst du während des Streams in OBS, sieht dein Publikum in dieser Zeit ein stehendes Bild. Das stellst du in den Einstellungen von Dynamic FPS um (im Menü &eMods&r), zum Beispiel höhere Bildrate für den Zustand &eunfokussiert&r.",
+          ],
+          tasks=[task_checkmark("Verstanden")],
+          rewards=[reward_xp(2)],
+          deps=["h_controls"], icon="minecraft:clock"),
+
+    # ---- Kleine Helfer ------------------------------------------------------------
+    quest("k_mouse", 4.5, 12, "&6Verschieb Stapel mit der Maus",
+          subtitle="Ziehen statt hundertmal klicken.",
+          description=[
+              "&6Mouse Tweaks&r macht das Inventar schneller. Halte &eShift&r und zieh mit gedrückter &elinker Maustaste&r über mehrere Stapel: Alle wandern in das andere Inventar.",
+              "",
+              "Mit einem Gegenstand am Mauszeiger und gedrückter &erechter Maustaste&r über leere Felder ziehen legt in jedes Feld einen. Das &eMausrad&r über einem Stapel schiebt einzelne Gegenstände zwischen Truhe und Inventar hin und her.",
+          ],
+          tasks=[task_checkmark("Ausprobiert")],
+          rewards=[reward_item("minecraft:chest", 2), reward_xp(2)],
+          deps=["welcome"], icon="minecraft:chest"),
+
+    quest("k_polymorph", 6.5, 12, "&6Wähl das richtige Ergebnis",
+          subtitle="Zwei Rezepte, gleiche Zutaten.",
+          description=[
+              "Bei über 200 Mods passiert es, dass zwei Rezepte genau dieselben Zutaten haben. Dann zeigt &6Polymorph&r über dem Ergebnisfeld kleine Knöpfe mit allen möglichen Ergebnissen.",
+              "",
+              "Klick das an, das du willst. Bekommst du an der Werkbank etwas anderes als erwartet, schau zuerst dort nach.",
+          ],
+          tasks=[task_checkmark("Verstanden")],
+          rewards=[reward_xp(2)],
+          deps=["k_mouse"], icon="minecraft:comparator"),
+
+    quest("k_food", 4.5, 14, "&6Lies die Hungerleiste genauer",
+          subtitle="Sättigung ist das, was zählt.",
+          description=[
+              "&6AppleSkin&r zeigt dir im Tooltip jedes Essens, wie viel Hunger und &eSättigung&r es gibt. Hältst du Essen in der Hand, blinkt auf der Hungerleiste, wie weit sie sich füllt.",
+              "",
+              "Die gelbe Umrandung der Keulen ist deine Sättigung. Solange sie da ist, sinkt der Hunger nicht. Mahlzeiten aus &6Farmer's Delight&r geben viel davon, Ultimine und Sprinten verbrauchen sie schnell.",
+          ],
+          tasks=[task_checkmark("Verstanden")],
+          rewards=[reward_item("minecraft:baked_potato", 8), reward_xp(2)],
+          deps=["k_mouse"], icon="minecraft:apple"),
+
+    quest("k_enchant", 4.5, 16, "&6Lies, was eine Verzauberung tut",
+          subtitle="Die Beschreibung steht direkt im Tooltip.",
+          description=[
+              "Mit Apotheosis und vielen Magie-Mods gibt es weit mehr Verzauberungen als in Vanilla. &6Enchantment Descriptions&r schreibt unter jede Verzauberung im Tooltip, was sie tut.",
+              "",
+              "Das gilt für Bücher, Werkzeuge, Waffen und Rüstung. Bevor du ein Buch am Amboss verbrauchst, lies also kurz nach.",
+          ],
+          tasks=[task_checkmark("Gelesen")],
+          rewards=[reward_item("minecraft:lapis_lazuli", 8), reward_xp(3)],
+          deps=["k_food"], icon="minecraft:enchanted_book"),
+
+    quest("k_light", 6.5, 16, "&6Trag eine Fackel in der Hand",
+          subtitle="Licht, wo du gerade bist.",
+          description=[
+              "Mit &6Dynamic Lights&r leuchtet eine &6Fackel&r schon, wenn du sie in der Hand hältst. In der zweiten Hand stört sie beim Abbauen nicht.",
+              "",
+              "In Höhlen siehst du so den Weg, ohne gleich alles vollzustellen. Monster spawnen im bewegten Licht trotzdem: Wo du bleibst, setz echte Fackeln.",
+          ],
+          tasks=[task_checkmark("Ausprobiert")],
+          rewards=[reward_item("minecraft:torch", 32), reward_xp(2)],
+          deps=["k_food"], icon="minecraft:torch"),
+
     # ---- Abschluss --------------------------------------------------------------
     quest("h_help", 20.5, 0, "&6Frag nach Hilfe",
           subtitle="Hier hilft man sich. Wirklich.",
@@ -402,6 +491,7 @@ images = [
     banner("tips/map", "Karte, Claims und Team", 7.5, -1.8, height=0.9, colour="nature"),
     banner("tips/rules", "Die Regeln von Kronwerke", 8.5, 2.2, height=0.9, colour="stone"),
     banner("tips/help", "Wenn es hakt", 10.5, 6.2, height=0.9, colour="magic"),
+    banner("tips/helpers", "Kleine Helfer", 6.5, 10.2, height=0.9, colour="water"),
 ]
 
 chapter(C, "Tipps und Tricks", "minecraft:knowledge_book", "start", quests, shape="circle", order=1,

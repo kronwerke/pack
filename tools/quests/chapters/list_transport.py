@@ -321,6 +321,28 @@ quests = [
           rewards=[reward_xp(2)],
           deps=["items_when"], icon="botania:white_mystical_petal"),
 
+    quest("ejector", col(6), 1.8, "Wirf mit dem Gewichteten Werfer",
+          subtitle="Create, Gewichteter Werfer: bis 32 Blöcke weit, ohne Band.",
+          description=[
+              "&6Create&r, &6Gewichteter Werfer&r: wirft, was auf ihm landet, &ebis 32 Blöcke&r weit zu einem Ziel, das du vorher mit Schleichen und Rechtsklick festlegst. Auf eine Kiste gezielt wartet er, bis Platz ist. Mit Stückzahl am Wertefeld wirft er erst ab dieser Menge. &eStufe 1.&r",
+              "",
+              "Goldblech, Depot und Zahnrad untereinander, &d2 SU pro RPM&r. Siehe Kapitel Create.",
+          ],
+          tasks=[task_item("create:weighted_ejector", 1)],
+          rewards=[reward_item("create:cogwheel", 2), reward_xp(3)],
+          deps=["items_when"], icon="create:weighted_ejector"),
+
+    quest("allay", col(7), 1.8, "Lass einen Hilfsgeist sammeln",
+          subtitle="Vanilla, Hilfsgeist: sucht die Sorte, die du ihm gibst.",
+          description=[
+              "&6Vanilla&r, &6Hilfsgeist&r: Gib ihm einen Gegenstand, und er sammelt alles dieser Sorte vom Boden auf und bringt es dir. Spielst du einen &6Notenblock&r, liefert er stattdessen dort ab. Filter ist die eine Sorte in seiner Hand. &eStufe 1.&r",
+              "",
+              "Hilfsgeister sitzen in Käfigen bei Plünderer-Außenposten und in Waldanwesen. Ein Notenblock über einem Trichter ist eine Sammelstelle, die ohne Strom und Rohr auskommt.",
+          ],
+          tasks=[task_checkmark("Gelesen")],
+          rewards=[reward_item("minecraft:note_block", 1), reward_xp(2)],
+          deps=["items_when"], icon="minecraft:note_block"),
+
     # ---- Flüssigkeiten -------------------------------------------------------
     quest("fluids_when", 0, 6.5, "&b&lWas wann: Flüssigkeiten",
           subtitle="Zwei Wahlen pro Stufe.",
@@ -384,6 +406,17 @@ quests = [
           tasks=[task_item("functionalstorage:fluid_1", 1)],
           rewards=[reward_item("minecraft:bucket", 1)],
           deps=["fluids_when"], icon="functionalstorage:fluid_1"),
+
+    quest("spout", col(5), 5.6, "Füll und leer Gegenstände",
+          subtitle="Create, Ausguss und Abfluss: Flüssigkeit in Eimer und Flaschen, und zurück.",
+          description=[
+              "&6Create&r, &6Ausguss&r: füllt über einem Depot oder Band Eimer, Flaschen und alle Befüllen-Rezepte aus seinem Tank. Der &6Abfluss&r leert Gegenstände, die darauf landen, ins Rohr. Kein Filter, andere Gegenstände rollen durch. &eStufe 1.&r",
+              "",
+              "Ausguss: Kupferrahmen über getrocknetem Seetang. Abfluss: Eisengitter über Kupferrahmen. Siehe Kapitel Create.",
+          ],
+          tasks=[task_item("create:spout", 1)],
+          rewards=[reward_item("minecraft:bucket", 2), reward_xp(3)],
+          deps=["fluids_when"], icon="create:spout"),
 
     quest("pipez_fluid", col(4), 5.6, "Lies: Pipez Flüssigkeitsrohr",
           subtitle="Pipez, Flüssigkeitsrohr: 50 mB pro Tick, bis 500 mit Modifikation.",
@@ -450,6 +483,17 @@ quests = [
           tasks=[task_checkmark("Gelesen")],
           rewards=[reward_xp(2)],
           deps=["fluids_when"], icon="minecraft:glass_bottle"),
+
+    quest("fluid_valve", col(5), 7.4, "Setz ein Flüssigkeitsventil",
+          subtitle="Create, Flüssigkeitsventil: Rohr auf, Rohr zu.",
+          description=[
+              "&6Create&r, &6Flüssigkeitsventil&r: sitzt in einem Rohr und öffnet oder schließt es über eine Welle, die Drehrichtung entscheidet. Mit einer &6Gangschaltung&r an der Welle schaltest du es per Redstone. &eStufe 1.&r",
+              "",
+              "Ein Eisenblech und ein Flüssigkeitsrohr, formlos.",
+          ],
+          tasks=[task_item("create:fluid_valve", 1)],
+          rewards=[reward_item("create:fluid_pipe", 4), reward_xp(2)],
+          deps=["fluids_when"], icon="create:fluid_valve"),
 
     # ---- Gase ----------------------------------------------------------------
     quest("gas_when", 0, 11.5, "&a&lWas wann: Gase",
@@ -526,6 +570,28 @@ quests = [
           tasks=[task_item("create:shaft", 8)],
           rewards=[reward_item("create:cogwheel", 4), reward_xp(3)],
           deps=["power_when"], icon="create:shaft"),
+
+    quest("chain_drive", col(4), 15.1, "Leg einen Kettenriemen",
+          subtitle="Create, Ummantelter Kettenriemen: Drehung seitlich weitergeben.",
+          description=[
+              "&6Create&r, &6Ummantelter Kettenriemen&r: Liegen mehrere in einer Reihe, gibt jeder die Drehung an den nächsten weiter, ganz ohne Zahnräder. So führst du eine Welle neben Maschinen vorbei, die im Weg stehen. &eStufe 1.&r",
+              "",
+              "Ein Andesitgehäuse und drei Eisenklumpen, formlos.",
+          ],
+          tasks=[task_item("create:encased_chain_drive", 2)],
+          rewards=[reward_item("create:andesite_casing", 2), reward_xp(2)],
+          deps=["power_when"], icon="create:encased_chain_drive"),
+
+    quest("clutch", col(5), 15.1, "Schalt Drehung mit Redstone",
+          subtitle="Create, Kupplung und Gangschaltung: aus und umgekehrt.",
+          description=[
+              "&6Create&r, &6Kupplung&r: trennt die Welle, solange ein Redstone-Signal anliegt. &6Gangschaltung&r: kehrt die Drehrichtung um, solange ein Signal anliegt. So hältst du einen Bohrer an oder lässt ein Band rückwärts laufen. &eStufe 1.&r",
+              "",
+              "Kupplung: Andesitgehäuse, Welle und Redstone, formlos. Gangschaltung: Andesitgehäuse, Zahnrad und Redstone.",
+          ],
+          tasks=[task_item("create:clutch", 1), task_item("create:gearshift", 1)],
+          rewards=[reward_item("minecraft:redstone", 8), reward_xp(2)],
+          deps=["power_when"], icon="create:clutch"),
 
     quest("mek_cable", col(1), 15.1, "Lies: Universalkabel",
           subtitle="Mekanism, Universalkabel: 3 200 FE pro Tick, versteht jede Mod.",
@@ -685,6 +751,28 @@ quests = [
           tasks=[task_item("waystones:return_scroll", 1)],
           rewards=[reward_item("waystones:warp_dust", 4), reward_xp(3)],
           deps=["storage_when"], icon="waystones:return_scroll"),
+
+    quest("controller", col(7), 20.6, "Verbinde Fässer mit dem Lagerkern",
+          subtitle="Sophisticated Storage, Lagerkern: viele Truhen, ein Zugang.",
+          description=[
+              "&6Sophisticated Storage&r, &6Lagerkern&r: Alle Sophisticated-Truhen und -Fässer, die ihn oder einander berühren, werden ein Lager. Rechtsklick mit einem Gegenstand legt ihn passend ab, Trichter und Rohre am Kern verteilen auf den ganzen Verbund. &eStufe 1.&r",
+              "",
+              "Vier Stein, zwei Komparatoren, zwei Bretter um ein Holzfass oder eine Holztruhe. Lücken überbrücken Lagerverbindungen. Siehe Kapitel Lager.",
+          ],
+          tasks=[task_item("sophisticatedstorage:controller", 1)],
+          rewards=[reward_item("minecraft:comparator", 2), reward_xp(3)],
+          deps=["storage_when"], icon="sophisticatedstorage:controller"),
+
+    quest("toolbox", col(5), 22.4, "Pack einen Werkzeugkasten",
+          subtitle="Create, Werkzeugkasten: acht Sorten, erreichbar aus 10 Blöcken.",
+          description=[
+              "&6Create&r, &6Werkzeugkasten&r: fasst große Mengen von &e8 verschiedenen&r Gegenständen und behält den Inhalt, wenn du ihn abbaust. Steht er in &e10 Blöcken&r Umkreis, holst du mit gehaltener &eAlt&r-Taste Dinge aus ihm in deine Hand, ohne ihn zu öffnen. &eStufe 1.&r",
+              "",
+              "Zahnrad oben, Goldblech, Truhe, Goldblech in der Mitte, Leder unten. Ideal für Schraubenschlüssel, Brille und Baublöcke an der Fabrik. Gefärbt in 16 Farben.",
+          ],
+          tasks=[task_item("create:brown_toolbox", 1)],
+          rewards=[reward_item("minecraft:leather", 2), reward_xp(3)],
+          deps=["storage_when"], icon="create:brown_toolbox"),
 
     quest("bins", col(0), 22.4, "Lies: Tonne und Persönliche Truhe",
           subtitle="Mekanism, Tonne: 4 096 Stück einer Sorte, QIO in Stufe 4.",

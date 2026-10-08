@@ -59,6 +59,19 @@ quests = [
           rewards=[reward_item("fluxnetworks:flux_dust", 16), reward_xp(5)],
           deps=["core"], icon="fluxnetworks:flux_block"),
 
+    quest("dust_stack", 5, 3, "&cZerquetsch acht Stapel auf einmal",
+          subtitle="512 Staub mit einem Schlag.",
+          description=[
+              "Bau dir die Staubstation zu Hause: ein &6Flux-Block&r unten, darüber ein Block Luft, darauf &6Obsidian&r. Wirf acht Stapel Redstone in die Lücke und schlag auf den Obsidian.",
+              "",
+              "Das sind &d512&r Flux-Staub, die Obergrenze für einen Schlag. Der Obsidian wird dabei fast sicher zu Bruchstein, leg also ein paar Obsidian bereit.",
+              "",
+              "Ein Vorrat von ein paar Stapeln reicht für alle Stecker, Punkte, Speicher und den Controller, die du in Stufe 3 brauchst.",
+          ],
+          tasks=[task_item("fluxnetworks:flux_dust", 512)],
+          rewards=[reward_item("minecraft:obsidian", 8), reward_item("minecraft:redstone_block", 8), reward_xp(10)],
+          deps=["block"], icon="fluxnetworks:flux_dust", optional=True),
+
     quest("configurator", 2.5, 3.2, "&bBau den Flux-Konfigurator",
           subtitle="Das Netz in der Tasche.",
           description=[
@@ -122,6 +135,19 @@ quests = [
           tasks=[task_checkmark("Mit einem fremden Netz verbunden")],
           rewards=[reward_table("s3_common"), reward_xp(5)],
           deps=["security", "members"], icon="minecraft:writable_book", optional=True),
+
+    quest("second_net", 12.5, 3, "&eLeg ein zweites Netz an",
+          subtitle="Getrennte Kreise, getrennte Regeln.",
+          description=[
+              "Jeder Spieler darf laut Server-Config bis zu &d5&r Netzwerke besitzen, und jedes Gerät gehört genau zu einem.",
+              "",
+              "Ein Beispiel: ein &6privates&r Netz für Reaktor und Fabrik, ein &6verschlüsseltes&r für Freunde, in das du nur einen Teil deines Stroms über einen eigenen Stecker abgibst. Was im zweiten Netz passiert, kann dein Hauptnetz nie leer saugen.",
+              "",
+              "Die Farbe hilft beim Auseinanderhalten: Gib jedem Netz eine andere.",
+          ],
+          tasks=[task_checkmark("Zweites Netz erstellt")],
+          rewards=[reward_item("fluxnetworks:flux_dust", 16), reward_xp(5)],
+          deps=["network"], icon="minecraft:chain", optional=True),
 
     # ---- Stecker und Punkt -----------------------------------------------------
     quest("plug", 2.5, 6.5, "&a&lBau einen Flux-Stecker",
@@ -220,6 +246,19 @@ quests = [
           rewards=[reward_xp(5)],
           deps=["limit", "surge"], icon="fluxnetworks:flux_configurator", optional=True),
 
+    quest("other_dim", 15, 8.6, "&5Bring Strom in eine andere Dimension",
+          subtitle="Ein Punkt im Nether, der Stecker zu Hause.",
+          description=[
+              "Setz einen &6Flux-Punkt&r im Nether oder im End und verbinde ihn mit deinem Netz. Er bekommt den Strom von deinem Stecker in der Oberwelt, ohne Verlust und ohne Kabel durchs Portal.",
+              "",
+              "So läuft eine Lavapumpe im Nether, eine Mob-Farm im End oder ein Außenposten in einer anderen Welt am selben Kraftwerk wie die Basis.",
+              "",
+              "Damit der Punkt arbeitet, muss sein Chunk geladen sein: Du bist dort, oder du schaltest an ihm &eChunk laden&r ein.",
+          ],
+          tasks=[task_checkmark("Punkt in einer anderen Dimension versorgt")],
+          rewards=[reward_item("minecraft:obsidian", 10), reward_xp(10)],
+          deps=["first_link"], icon="minecraft:crying_obsidian", optional=True),
+
     # ---- Drahtloses Laden ------------------------------------------------------
     quest("controller", 2.5, 12, "&5&lBau den Flux-Controller",
           subtitle="Lädt alles, was du am Körper trägst.",
@@ -315,6 +354,17 @@ quests = [
           rewards=[reward_xp(5)],
           deps=["stats", "chunks"], icon="fluxnetworks:basic_flux_storage", optional=True),
 
+    quest("storage_more", 17.5, 12.1, "&9Stell drei Speicher auf",
+          subtitle="Sechs Millionen FE Puffer.",
+          description=[
+              "Mehrere Speicher im selben Netz addieren sich: drei &6Einfache Flux-Speicher&r halten &d6 Millionen FE&r und nehmen oder geben zusammen &d60 000 FE/t&r.",
+              "",
+              "Das reicht, um eine Nacht ohne Solarstrom oder eine Pause im Reaktor zu überbrücken. Und sechs davon werden in Stufe 4 zum Herkulischen Speicher mit 16 Millionen FE, der Strom wandert mit.",
+          ],
+          tasks=[task_item("fluxnetworks:basic_flux_storage", 3)],
+          rewards=[reward_item("fluxnetworks:flux_block", 2), reward_xp(10)],
+          deps=["storage"], icon="fluxnetworks:basic_flux_storage", optional=True),
+
     # ---- Die ganze Basis -------------------------------------------------------
     quest("whole_base", 5, 18, "&6&lVersorge die ganze Basis",
           subtitle="Ein Stecker am Kraftwerk, ein Punkt an jeder Maschine.",
@@ -367,6 +417,50 @@ quests = [
           tasks=[task_item("oritech:jetpack", 1)],
           rewards=[reward_table("s3_common"), reward_xp(10)],
           deps=["whole_base"], icon="oritech:jetpack", optional=True),
+
+    quest("setup_turbine", 8, 22, "&5Häng die Industrieturbine an",
+          subtitle="Mekanism-Strom ins Netz.",
+          description=[
+              "Die &6Turbinenventile&r der Industrieturbine aus &5Mekanism: Fortgeschritten&r geben ihren Strom an jeden Block daneben ab. Setz einen &6Flux-Stecker&r direkt an ein Ventil, dann fließt alles, was die Turbine macht, ins Netz.",
+              "",
+              "Mekanism rechnet in Joule, das Netz in FE: 2,5 J sind 1 FE, die Umrechnung macht der Stecker von selbst. Eine Turbine mit Kessel und Wärmequelle ist das stärkste Kraftwerk, das Mekanism in Stufe 3 baut.",
+          ],
+          tasks=[task_checkmark("Turbine speist das Netz")],
+          rewards=[reward_table("s3_common"), reward_xp(10)],
+          deps=["whole_base"], icon="mekanismgenerators:turbine_valve", optional=True),
+
+    quest("ae2_power", 11, 20, "&bVersorg dein ME-Netz",
+          subtitle="Ein Punkt am Energieakzeptor.",
+          description=[
+              "Ein ME-Netz von &bApplied Energistics 2&r braucht ständig Strom für Kabel, Laufwerke und Konsolen. Setz einen &6Flux-Punkt&r an den &6Energieakzeptor&r, der macht aus 2 FE ein AE.",
+              "",
+              "Gib dem Punkt eine hohe Priorität. Ein ME-Netz ohne Strom zeigt nichts mehr an, und die Autocrafter stehen.",
+          ],
+          tasks=[task_item("ae2:energy_acceptor", 1)],
+          rewards=[reward_item("ae2:fluix_crystal", 8), reward_xp(5)],
+          deps=["whole_base"], icon="ae2:energy_acceptor", optional=True),
+
+    quest("create_motor", 11, 22, "&6Treib Create mit Flux an",
+          subtitle="Der Elektromotor von Create Crafts & Additions.",
+          description=[
+              "Der &6Elektromotor&r macht aus Strom Drehung. Er entsteht in der Mechanischen Handwerkseinheit aus Andesitlegierung, Messingblechen, Kupferspulen, einem Eisenstab und einem Kondensator.",
+              "",
+              "Laut Config dreht er bis &d256 RPM&r und trägt bis &d16 384 SU&r. Das Tempo stellst du am Motor ein. Ein Flux-Punkt daneben, und deine Create-Maschinen laufen ohne Wasserrad und ohne Wellen quer durch die Basis.",
+          ],
+          tasks=[task_item("createaddition:electric_motor", 1)],
+          rewards=[reward_item("create:andesite_alloy", 16), reward_xp(5)],
+          deps=["whole_base"], icon="createaddition:electric_motor", optional=True),
+
+    quest("powah_rods", 14, 20, "&dSpeis die Energizing Orb per Flux",
+          subtitle="Ein Punkt unter jedem Stab.",
+          description=[
+              "Die &6Energizing Rods&r von &bPowah&r nehmen ihren Strom von unten. Setz unter jeden Stab einen &6Flux-Punkt&r, und die Kugel lädt so schnell, wie die Stäbe erlauben.",
+              "",
+              "Ein Punkt schafft 800 000 FE/t, mehr als jeder Stab dieser Stufe. Gib den Punkten unter den Stäben eine niedrige Priorität, dann lädt die Kugel nur mit dem Strom, den die Fabrik gerade nicht braucht.",
+          ],
+          tasks=[task_checkmark("Kugel läuft über Flux")],
+          rewards=[reward_item("powah:dielectric_paste", 16), reward_xp(5)],
+          deps=["whole_base"], icon="powah:energizing_orb", optional=True),
 
     quest("final", 11, 18, "&6&lMach Kabel überflüssig",
           subtitle="Das Netz, das die Basis trägt.",

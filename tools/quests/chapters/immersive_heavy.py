@@ -86,7 +86,7 @@ quests = [
           rewards=[reward_item("immersiveengineering:ingot_steel", 16)],
           deps=["light"], icon="immersiveengineering:steel_scaffolding_standard"),
 
-    quest("sheetmetal", 5, 9.5, "&7Bau Stahlblechblöcke",
+    quest("sheetmetal", 2.5, 8, "&7Bau Stahlblechblöcke",
           subtitle="Vier Stahlbleche, vier Blöcke.",
           description=[
               "Vier &6Stahlbleche&r im Kreuz ergeben vier &6Stahlblechblöcke&r. Drei davon nebeneinander ergeben sechs Stufen.",
@@ -146,7 +146,7 @@ quests = [
           rewards=[reward_item("immersiveengineering:dust_coke", 32), reward_xp(10)],
           deps=["squeezer"], icon="immersiveengineering:dust_hop_graphite"),
 
-    quest("press", 8.5, 3, "&7Form eine Metallpresse",
+    quest("press", 8.5, 1.8, "&7Form eine Metallpresse",
           subtitle="3x3x1, Barren rein, Bleche, Stäbe und Zahnräder raus.",
           description=[
               "Unten &6Stahlgerüst, Redstone-Ingenieursbaustein, Stahlgerüst&r, in der Mitte &6Förderband, Kolben, Förderband&r in dieselbe Richtung, oben auf dem Kolben ein &6Schwerer Ingenieursbaustein&r. Hammer auf den Kolben.",
@@ -454,7 +454,7 @@ quests = [
                  mb("mb_excavator", "Bagger"), task_checkmark("Automatisierter Arbeitstisch"), task_checkmark("Blitzableiter"),
                  task_checkmark("Funkturm"), task_checkmark("Resonanz-Beobachter")],
           rewards=[reward_table("s3_uncommon"), reward_xp(20)],
-          deps=["excavator", "auto_workbench"], icon="immersiveengineering:heavy_engineering", size=1.5, shape="gear"),
+          deps=["excavator", "auto_workbench"], icon="immersiveengineering:heavy_engineering", size=1.5, shape="gear", section="lists"),
 
     # ---- Abschluss -----------------------------------------------------------
     quest("final", 26.5, 4.5, "&c&lBau ein Stahlwerk für den Server",
@@ -469,6 +469,138 @@ quests = [
           tasks=[task_item("immersiveengineering:ingot_steel", 1024), task_item("immersiveengineering:heavy_engineering", 32)],
           rewards=[reward_table("s3_rare"), reward_item("immersiveengineering:storage_steel", 8), reward_xp(30)],
           deps=["arc_steel", "diesel", "electronics"], icon="immersiveengineering:storage_steel", size=2.5, shape="gear"),
+
+    # ---- neue Quests: Zum Lichtbogenofen ---------------------------------------
+    quest("molds", 11, 1.8, "&7Bau weitere Pressformen",
+          subtitle="Zahnräder, Draht und Blöcke aus der Presse.",
+          description=[
+              "Mit der &6Blaupause Formen&r am Arbeitstisch ergeben je drei &6Stahlbleche&r und der Kabelschneider eine Form: &6Zahnrad&r, &6Draht&r, &6Verpackung 2x2&r, &6Verpackung 3x3&r und &6Entpacken&r.",
+              "",
+              "Die Verpackungsformen pressen 4 oder 9 gleiche Gegenstände zu ihrem Block, Entpacken macht es rückgängig. So landen Barren platzsparend als Blöcke im Lager, oder Sand wird zu Sandstein.",
+              "",
+              "Die Zahnradform presst vier Barren zu einem Metallzahnrad für andere Mods, die Drahtform einen Barren zu zwei Kabeln, ganz ohne Kabelschneider.",
+          ],
+          tasks=[task_item("immersiveengineering:mold_gear", 1), task_item("immersiveengineering:mold_wire", 1),
+                 task_item("immersiveengineering:mold_packing_9", 1)],
+          rewards=[reward_item("immersiveengineering:plate_steel", 8), reward_xp(10)],
+          deps=["press"], icon="immersiveengineering:mold_gear", optional=True),
+
+    # ---- neue Quests: Weitere Maschinen ----------------------------------------
+    quest("concrete", 6, 13, "&9Gieß Beton",
+          subtitle="Hart, billig und explosionsfest.",
+          description=[
+              "Vier &6Sand&r, zwei &6Tonklumpen&r, zwei &6Kies&r und ein &6Wassereimer&r ergeben &e8 Beton&r. Der Mischer macht &6Flüssigbeton&r: ausgegossen fließt er wie Wasser und wird nach einer Weile fest. Wer dann darin steht, steckt fest.",
+              "",
+              "Ein Beton und ein &6Bleiblech&r formlos ergeben &6Bleibeton&r. Durch ihn teleportieren sich weder Endermen noch Enderperlen oder Chorusfrüchte.",
+              "",
+              "Der Funkturm braucht &e90 Beton&r, der Resonanz-Beobachter 9. Mit der Steinsäge wird Beton zu Ziegeln, Fliesen und Stufen.",
+          ],
+          tasks=[task_item("immersiveengineering:concrete", 32), task_item("immersiveengineering:concrete_leaded", 4)],
+          rewards=[reward_item("minecraft:sand", 32), reward_item("minecraft:gravel", 16), reward_xp(10)],
+          deps=["mixer"], icon="immersiveengineering:concrete"),
+
+    # ---- neue Quests: Werkzeuge und Waffen -------------------------------------
+    quest("drill", 8, 20.5, "&6&lBau eine Bergbaubohrmaschine",
+          subtitle="Erz und Stein im Vorbeigehen, mit Biodiesel.",
+          description=[
+              "Zwei &6Holzgriffe&r, ein &6Schwerer Ingenieursbaustein&r und eine &6Mechanische Eisenkomponente&r ergeben die &6Bergbaubohrmaschine&r. Holzgriff: fünf Behandelte Stöcke und ein Kupferklumpen.",
+              "",
+              "&6Bohrkopf:&r vier Stahlbarren und ein Stahlblock ergeben den &6Stahlbohrkopf&r, mit Eisen den Eisenbohrkopf. Bohrmaschine in den &6Ingenieursarbeitstisch&r legen und den Kopf einsetzen. Der Kopf nutzt sich ab, im Amboss reparierst du ihn.",
+              "",
+              "Sie läuft mit &6Biodiesel&r. Füll sie an der Raffinerie, an einem Fass oder am Tank. Schleichend bohrt sie nur einen Block.",
+          ],
+          tasks=[task_item("immersiveengineering:drill", 1), task_item("immersiveengineering:drillhead_steel", 1)],
+          rewards=[reward_item("immersiveengineering:biodiesel_bucket", 2), reward_table("s3_common"), reward_xp(15)],
+          deps=["heavy", "refinery"], icon="immersiveengineering:drill", size=1.5, shape="hexagon"),
+
+    quest("drill_upgrades", 10.5, 20.5, "&6Rüste die Bohrmaschine auf",
+          subtitle="Schneller, unter Wasser, mit mehr Erz.",
+          description=[
+              "Alle Aufrüstungen kommen im Ingenieursarbeitstisch in die Bohrmaschine:",
+              "&6Weitere Bohrer:&r zwei Stahlbarren und eine Mechanische Eisenkomponente. Schneller und mehr Schaden, bis zu dreimal.",
+              "&6Druckluftbehälter:&r Eisenbleche, blauer Farbstoff, ein Flüssigkeitsrohr. Bohrt unter Wasser ohne Verlangsamung.",
+              "&6Großer Panzer:&r mehr Treibstoff. &6Erweitertes Schmiersystem:&r ein Eimer Pflanzenöl im Rezept, der Kopf verschleißt langsamer.",
+              "&6Gesteinserweichende Säure:&r ein Eimer Redstonesäure im Rezept, wirkt wie Glück auf Erze.",
+          ],
+          tasks=[task_item("immersiveengineering:toolupgrade_drill_damage", 1), task_item("immersiveengineering:toolupgrade_drill_waterproof", 1)],
+          rewards=[reward_item("immersiveengineering:component_iron", 4), reward_xp(10)],
+          deps=["drill"], icon="immersiveengineering:toolupgrade_drill_damage"),
+
+    quest("jerrycan", 10.5, 22.5, "&9Pack einen Kanister ein",
+          subtitle="Zehn Eimer Treibstoff zum Mitnehmen.",
+          description=[
+              "Vier &6Eisenbleche&r und vier &6Eimer&r ergeben den &6Kanister&r. Er fasst &e10 Eimer&r.",
+              "",
+              "Füll ihn an einem Fass oder Tank, aus der Welt schöpft er nicht. Kanister und Bohrmaschine zusammen in die Werkbank gelegt füllen die Bohrmaschine auf, ohne dass du zur Raffinerie musst.",
+          ],
+          tasks=[task_item("immersiveengineering:jerrycan", 1)],
+          rewards=[reward_item("immersiveengineering:biodiesel_bucket", 2)],
+          deps=["drill"], icon="immersiveengineering:jerrycan", optional=True),
+
+    quest("buzzsaw", 13, 20.5, "&6Bau eine Kreissäge",
+          subtitle="Ganze Bäume auf einmal.",
+          description=[
+              "Zwei &6Holzgriffe&r, zwei &6Stahlstäbe&r und ein &6Schwerer Ingenieursbaustein&r ergeben die &6Kreissäge&r. Im Ingenieursarbeitstisch setzt du ein &6Sägeblatt&r ein, getankt wird wie bei der Bohrmaschine.",
+              "",
+              "Sie fällt ganze Bäume, auch große Dschungelbäume. Mit dem &6Steinsägeblatt&r (Diamanten und Stahlbleche) schneidet sie Stein sauber heraus, wie mit Behutsamkeit.",
+              "",
+              "Der &6Klingenköcher&r trägt zwei Ersatzblätter, schleichend mit dem Mausrad wechselst du.",
+          ],
+          tasks=[task_item("immersiveengineering:buzzsaw", 1)],
+          rewards=[reward_item("immersiveengineering:sawblade", 1), reward_xp(10)],
+          deps=["drill", "sawmill"], icon="immersiveengineering:buzzsaw", optional=True),
+
+    quest("revolver", 15.5, 20.5, "&cBau einen Revolver",
+          subtitle="Fünf Teile, dann Patronen am Arbeitstisch.",
+          description=[
+              "&6Revolverlauf:&r Stahlbarren, Stahlstab und der Hammer. &6Revolvertrommel:&r vier Stahlbleche um einen Stahlstab. &6Revolverhammer:&r zwei Stahlbarren, Feuerstein, Stahlstab. Dazu eine &6Mechanische Stahlkomponente&r und ein &6Holzgriff&r wie bei der Bohrmaschine ergeben den &6Revolver&r.",
+              "",
+              "&6Patronen:&r Fünf Kupferbleche ergeben fünf &6Leere Gehäuse&r. Die &6Blaupause Patronen&r (Schießpulver, Gehäuse, Schießpulver, drei blaue Farbstoffe, drei Papier) macht am Arbeitstisch aus vier Gehäusen, Schießpulver und einem Bleiklumpen vier &6Casull-Patronen&r.",
+              "",
+              "Schleichend Rechtsklick öffnet die Trommel. Schüsse sind laut und locken Monster an.",
+          ],
+          tasks=[task_item("immersiveengineering:revolver", 1), task_item("immersiveengineering:bullet_casull", 8)],
+          rewards=[reward_item("minecraft:gunpowder", 16), reward_item("immersiveengineering:empty_casing", 8), reward_xp(10)],
+          deps=["steel_component", "drill"], icon="immersiveengineering:revolver", optional=True),
+
+    quest("powerpack", 18, 20.5, "&eTrag einen Kondensator-Rucksack",
+          subtitle="Strom für alles in deinen Händen.",
+          description=[
+              "Zwei &6Behandelte Stöcke&r, drei &6Stahlstäbe&r, zwei &6LV-Kabelanschlüsse&r, ein &6Leder&r und zwei &6Isolierte LV-Drahtspulen&r ergeben das Gestell. Im &6Ingenieursarbeitstisch&r setzt du einen &6Kondensator&r ein.",
+              "",
+              "Er lädt die Werkzeuge in deinen Händen und deine getragene Rüstung. Du trägst ihn als Brustteil, oder du verbindest ihn in der Werkbank mit einem Brustpanzer.",
+              "",
+              "Mit der &6Ladeantenne&r lädt er sich selbst, wenn du unter einer unisolierten Leitung entlang gehst.",
+          ],
+          tasks=[task_item("immersiveengineering:powerpack", 1)],
+          rewards=[reward_item("immersiveengineering:wirecoil_copper_ins", 8), reward_xp(10)],
+          deps=["light"], icon="immersiveengineering:powerpack", optional=True),
+
+    quest("chemthrower", 13, 22.5, "&cBau einen Chemischen Werfer",
+          subtitle="Er sprüht jede Flüssigkeit, auf Wunsch brennend.",
+          description=[
+              "Ein &6Druckluftbehälter&r, zwei &6Holzgriffe&r, ein &6Schwerer Ingenieursbaustein&r, ein &6Flüssigkeitsrohr&r und ein &6Eimer&r ergeben den &6Chemischen Werfer&r.",
+              "",
+              "Füll ihn mit einer Flüssigkeit oder einem Gas, Rechtsklick sprüht es. Schleichend Rechtsklick schaltet die Zündflamme: mit Kreosot oder Biodiesel wird er zum Flammenwerfer. Mit Flüssigbeton baust du schnelle Plattformen.",
+              "",
+              "Im Arbeitstisch: &6Großer Panzer&r für mehr Inhalt, &6Fokussierte Düse&r für mehr Reichweite, &6Multitank&r für drei Flüssigkeiten.",
+          ],
+          tasks=[task_item("immersiveengineering:chemthrower", 1)],
+          rewards=[reward_item("immersiveengineering:creosote_bucket", 2), reward_xp(10)],
+          deps=["drill_upgrades"], icon="immersiveengineering:chemthrower", optional=True),
+
+    quest("railgun", 18, 22.5, "&d&lBau eine Railgun",
+          subtitle="Stäbe mit Strom auf Höchstgeschwindigkeit.",
+          description=[
+              "Ein &6HV-Kondensator&r, ein &6Holzgriff&r, zwei &6Stahlbarren&r, zwei &6Elektrumspulenblöcke&r und eine &6Fortgeschrittene Elektronikkomponente&r ergeben die &6Railgun&r.",
+              "",
+              "Halt Rechtsklick, bis die Ladung &e99&r erreicht, dann loslassen. Sie verschießt Eisen-, Aluminium- und Stahlstäbe oder Graphitelektroden aus deinem Inventar, Lohenruten setzen Ziele in Brand.",
+              "",
+              "Ihr eigener Speicher ist klein. Trag dazu den Kondensator-Rucksack.",
+          ],
+          tasks=[task_item("immersiveengineering:railgun", 1)],
+          rewards=[reward_item("immersiveengineering:stick_steel", 16), reward_table("s3_common"), reward_xp(15)],
+          deps=["electronics", "powerpack"], icon="immersiveengineering:railgun", optional=True),
 ]
 
 images = [
@@ -476,9 +608,10 @@ images = [
     banner("immersive_heavy/blocks", "Bausteine", 1.4, 2.6, height=0.9, colour="stone"),
     banner("immersive_heavy/arc", "Zum Lichtbogenofen", 14.5, -1.4, height=0.9, colour="fire"),
     banner("immersive_heavy/fuel", "Öl und Diesel", 13.5, 4.9, height=0.9, colour="brass"),
-    banner("immersive_heavy/plastic", "Kunststoff", 14.8, 10.3, height=0.8, colour="magic"),
-    banner("immersive_heavy/machines", "Weitere Maschinen", 15, 13.6, height=0.9, colour="water"),
-    banner("immersive_heavy/lists", "Checklisten", 10, 17.2, height=0.9, colour="stone"),
+    banner("immersive_heavy/plastic", "Kunststoff", 14.8, 7.8, height=0.8, colour="magic"),
+    banner("immersive_heavy/machines", "Weitere Maschinen", 15, 10.6, height=0.9, colour="water"),
+    banner("immersive_heavy/lists", "Checklisten", 10, 14.4, height=0.9, colour="stone"),
+    banner("immersive_heavy/tools", "Werkzeuge und Waffen", 13, 19.3, height=0.9, colour="fire"),
 ]
 
 chapter(C, "Immersive Engineering: Schwerindustrie", "immersiveengineering:heavy_engineering", "tech", quests,

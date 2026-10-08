@@ -410,6 +410,116 @@ quests = [
           rewards=[reward_table("s1_rare"), reward_item("apotheosis:gem_dust", 8), reward_xp(15)],
           deps=["frontier", "reforge_table", "infused_seashelf", "stat_runes", "compare"],
           icon="apotheosis:luminous_crystal_shard", size=2.5, shape="gear"),
+
+    # ---- neue Quests: Siegel und Umschmieden ----------------------------------------
+    quest("iron_template", 13.5, 2.5, "&7Wert Affix-Beute auf Eisen auf",
+          subtitle="Gute Affixe auf schlechtem Material.",
+          description=[
+              "Ein &6Mysterious Scrap Metal&r oben, darunter zweimal &6Stein&r, Gem-Fused Slate, Stein ergeben zwei Upgrade-Vorlagen. Am &6Schmiedetisch&r machen sie aus Stein-Werkzeug oder Kettenrüstung mit &e4 Eisenbarren&r die Eisenversion.",
+              "",
+              "So behältst du ein Teil mit guten Affixen, auch wenn es aus dem falschen Material gefallen ist. Die nächste Stufe macht aus Eisen Gold: dieselbe Vorlage mit &6Timeworn Fabric&r statt Scrap Metal, dazu 4 Goldbarren.",
+          ],
+          tasks=[task_item("apotheosis:iron_upgrade_smithing_template", 1)],
+          rewards=[reward_item("minecraft:iron_ingot", 8), reward_xp(5)],
+          deps=["slate", "materials"], icon="apotheosis:iron_upgrade_smithing_template"),
+
+    quest("diamond_template", 15.5, 3.0, "&bWert Affix-Beute auf Diamant auf",
+          subtitle="Die Vorlage aus Rare-Material.",
+          description=[
+              "Dieselbe Form, oben ein &6Luminous Crystal Shard&r aus zerlegtem &9Rare&r: zwei Vorlagen, die am Schmiedetisch mit &e4 Diamanten&r aus Goldausrüstung Diamantausrüstung machen.",
+              "",
+              "Der Weg lautet also Stein oder Kette, dann Eisen, dann Gold, dann Diamant. Für ein Rare-Schwert aus Gold lohnt sich das fast immer.",
+          ],
+          tasks=[task_item("apotheosis:diamond_upgrade_smithing_template", 1)],
+          rewards=[reward_item("minecraft:diamond", 2), reward_xp(8)],
+          deps=["iron_template"], icon="apotheosis:diamond_upgrade_smithing_template", optional=True),
+
+    quest("unnaming", 13.5, -0.5, "&7Sigil of Unnaming",
+          subtitle="Weg mit dem langen Namen.",
+          description=[
+              "Drei &6Gem-Fused Slate&r, drei &6Feuerstein&r, drei Slate in Reihen ergeben sechs &6Sigils of Unnaming&r.",
+              "",
+              "Am Schmiedetisch nimmt ein Siegel die Affix-Teile aus dem Namen eines Items. Die Affixe selbst bleiben, nur der Name wird wieder kurz.",
+          ],
+          tasks=[task_item("apotheosis:sigil_of_unnaming", 1)],
+          rewards=[reward_item("minecraft:flint", 8), reward_xp(3)],
+          deps=["slate"], icon="apotheosis:sigil_of_unnaming", optional=True),
+
+    # ---- neue Quests: Apothic Enchanting ---------------------------------------------
+    quest("melonshelf", 3.5, 15.0, "&aStimm den Tisch mit Melonshelves ab",
+          subtitle="Weniger Zufall, gezieltere Bücher.",
+          description=[
+              "&6Melonshelf:&r drei &6Melonen&r oben und unten, in der Mitte Glitzernde Melonenscheibe, Bücherregal, Glitzernde Melonenscheibe. Es senkt &dQuanta&r um 10 Prozent und Eterna um 2.",
+              "",
+              "Andere Regale verschieben die Werte gezielt: Das &6Stoneshelf&r (sechs Polierter Andesit, drei Bücher) senkt &5Arcana&r um 7,5 und Eterna um 3. Das &6Beeshelf&r (Bienenstöcke, Honigwaben, Honigblöcke um ein Regal) setzt Quanta um 100 hoch und Eterna um 30 herunter.",
+              "",
+              "&eWozu:&r Manche Infusionen verlangen Quanta oder Arcana in einem engen Bereich. Mit diesen Regalen triffst du ihn, ohne den ganzen Raum umzubauen.",
+          ],
+          tasks=[task_item("apothic_enchanting:melonshelf", 1)],
+          rewards=[reward_item("minecraft:glistering_melon_slice", 4), reward_xp(5)],
+          deps=["shelves"], icon="apothic_enchanting:melonshelf", optional=True),
+
+    quest("ender_lead", 6.0, 15.0, "&5Fang Tiere mit der Ender-Leine",
+          subtitle="Kuh in die Tasche, Kuh wieder raus.",
+          description=[
+              "Eine &6Enderperle&r, eine &6Leine&r und ein &6Goldbarren&r formlos ergeben die &6Flimsy Ender Lead&r. Schlag ein Tier damit, und es steckt in der Leine. Rechtsklick auf den Boden lässt es wieder frei.",
+              "",
+              "Damit ziehen Kühe, Schafe und Bienen ohne Zaun und ohne Boot in die neue Basis um. Die schwache Leine nimmt nur Tiere.",
+              "",
+              "&eInfusion:&r Bei &bEterna 45&r, &dQuanta 25&r und &5Arcana 40&r wird daraus die &6Ender Lead&r, die fast jedes Wesen fängt. Eterna 45 verlangt die Weltstufe &aFrontier&r.",
+          ],
+          tasks=[task_item("apothic_enchanting:flimsy_ender_lead", 1)],
+          rewards=[reward_item("minecraft:lead", 4), reward_item("minecraft:ender_pearl", 2), reward_xp(5)],
+          deps=["first_infusion"], icon="apothic_enchanting:flimsy_ender_lead"),
+
+    quest("inert_trident", 8.5, 15.0, "&3Erweck einen Dreizack",
+          subtitle="Dreizack ohne Ertrunkene.",
+          description=[
+              "Drei &6Nautilusschalen&r oben, ein &6Herz des Meeres&r in der Mitte, ein &6Eisenbarren&r unten ergeben den &6Inert Trident&r.",
+              "",
+              "Im Zaubertisch infundiert, bei &bEterna 40&r, &dQuanta 20 bis 50&r und &5Arcana 35&r, wird er zum echten &6Dreizack&r. Das Herz des Meeres liegt in vergrabenen Schätzen, Nautilusschalen angelst du oder bekommst sie von Ertrunkenen.",
+              "",
+              "Mit &6Kanalisierung&r ruft der Dreizack bei Gewitter Blitze, praktisch für geladene Creeper.",
+          ],
+          tasks=[task_item("minecraft:trident", 1)],
+          rewards=[reward_item("minecraft:prismarine_shard", 16), reward_table("s1_uncommon"), reward_xp(10)],
+          deps=["first_infusion"], icon="apothic_enchanting:inert_trident", optional=True),
+
+    quest("heart_seashelf", 10.0, 14.0, "&3Schmiede ein Heart-Forged Seashelf",
+          subtitle="Viel Arcana auf einen Schlag.",
+          description=[
+              "Ein &6Herz des Meeres&r oben, darunter Prismarinscherbe, &6Infused Seashelf&r, Prismarinscherbe und unten drei Prismarinscherben.",
+              "",
+              "Es gibt &b15 Eterna&r (bis 60) und &520 Prozent Arcana&r, so viel wie vier Infused Seashelves. Das &6Crystalline Seashelf&r (Infused Seashelf und drei Prismarinkristalle) gibt dagegen 5 Eterna, 3 Quanta und 5 Arcana.",
+              "",
+              "Mehr Arcana heißt seltene Verzauberungen und mehr Verzauberungen pro Buch.",
+          ],
+          tasks=[task_item("apothic_enchanting:heart_seashelf", 1)],
+          rewards=[reward_item("minecraft:prismarine_shard", 16), reward_xp(10)],
+          deps=["infused_seashelf"], icon="apothic_enchanting:heart_seashelf", optional=True),
+
+    quest("filtering_shelf", 10.0, 12.0, "&3Filter Verzauberungen aus",
+          subtitle="Was du nicht willst, bleibt draußen.",
+          description=[
+              "Prismarinziegel, &6Infused Seashelf&r, Prismarinziegel oben, drei Prismarinziegelstufen in der Mitte, dasselbe wie oben unten: das &6Seashelf of Aquatic Filtration&r.",
+              "",
+              "Steck verzauberte Bücher hinein. Was in ihnen steht, taucht am Tisch nicht mehr auf. Je mehr Bücher drin sind, desto mehr Eterna und Arcana gibt das Regal selbst.",
+          ],
+          tasks=[task_item("apothic_enchanting:filtering_shelf", 1)],
+          rewards=[reward_item("minecraft:book", 8), reward_xp(10)],
+          deps=["infused_seashelf"], icon="apothic_enchanting:filtering_shelf", optional=True),
+
+    # ---- neue Quests: Apothic Spawners -----------------------------------------------
+    quest("silent_rune", 16.0, 9.0, "&2Mach den Spawner leise",
+          subtitle="Eine Farm, die niemand hört.",
+          description=[
+              "Eine &6Spawner-Rune&r mit vier &6Wolle&r drumherum ergibt die &6Rune of Silence&r. Am Spawner angewendet machen die Monster daraus keinen Laut mehr.",
+              "",
+              "Für Farmen neben der Basis, im Keller oder unter dem Gemeinschaftsplatz. Die &6Rune of Perpetual Twilight&r, mit der ein Spawner auch im Hellen arbeitet, braucht Seelenlaternen aus dem Nether.",
+          ],
+          tasks=[task_item("apotheosis:silent_spawner_rune", 1)],
+          rewards=[reward_item("minecraft:white_wool", 8), reward_xp(5)],
+          deps=["rune"], icon="apotheosis:silent_spawner_rune", optional=True),
 ]
 
 images = [

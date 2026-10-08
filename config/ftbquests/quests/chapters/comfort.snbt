@@ -20,6 +20,7 @@
 			}
 			size: 2.0d
 			shape: "hexagon"
+			hide_dependent_lines: true
 			tasks: [
 				{
 					id: "1E2346CF34071350"
@@ -37,7 +38,7 @@
 		{
 			id: "185514AA89041936"
 			x: 4.0d
-			y: 4.125d
+			y: 5.475d
 			icon: {
 				id: "simplemagnets:basicmagnet"
 				count: 1
@@ -77,12 +78,13 @@
 		{
 			id: "28DB0299AFB55DEF"
 			x: 6.0d
-			y: 5.625d
+			y: 4.125d
 			icon: {
 				id: "simplemagnets:advancedmagnet"
 				count: 1
 			}
 			optional: true
+			hide_dependency_lines: true
 			dependencies: [
 				"185514AA89041936"
 			]
@@ -117,12 +119,13 @@
 		{
 			id: "5BF86ABF0D0B011B"
 			x: 6.0d
-			y: 7.125d
+			y: 6.825d
 			icon: {
 				id: "simplemagnets:basic_demagnetization_coil"
 				count: 1
 			}
 			optional: true
+			hide_dependency_lines: true
 			dependencies: [
 				"185514AA89041936"
 			]
@@ -157,11 +160,12 @@
 		{
 			id: "63F2A47571A71948"
 			x: 6.0d
-			y: 4.125d
+			y: 5.475d
 			icon: {
 				id: "itemcollectors:basic_collector"
 				count: 1
 			}
+			hide_dependency_lines: true
 			dependencies: [
 				"185514AA89041936"
 			]
@@ -194,8 +198,35 @@
 			]
 		}
 		{
+			id: "60DCDA43CC63EA05"
+			x: 7.35d
+			y: 4.125d
+			icon: {
+				id: "simplemagnets:basicmagnet"
+				count: 1
+			}
+			optional: true
+			hide_dependency_lines: true
+			dependencies: [
+				"185514AA89041936"
+			]
+			tasks: [
+				{
+					id: "20AFB9CB9655334C"
+					type: "checkmark"
+				}
+			]
+			rewards: [
+				{
+					id: "29F9F71948B95CC6"
+					type: "xp_levels"
+					xp_levels: 3
+				}
+			]
+		}
+		{
 			id: "1BE3F59805996FA5"
-			x: 9.2d
+			x: 10.35d
 			y: 4.125d
 			icon: {
 				id: "minecraft:hay_block"
@@ -226,7 +257,7 @@
 		}
 		{
 			id: "37449FDD50CEB9E3"
-			x: 11.2d
+			x: 12.35d
 			y: 4.125d
 			icon: {
 				id: "pylons:potion_filter"
@@ -253,7 +284,7 @@
 		{
 			id: "13557040AE9FFDB5"
 			x: 0.0d
-			y: 10.725000000000001d
+			y: 10.425d
 			icon: {
 				id: "minecraft:iron_door"
 				count: 1
@@ -288,7 +319,7 @@
 		{
 			id: "2BF6AF79B91BDBE7"
 			x: 2.0d
-			y: 10.725000000000001d
+			y: 11.925d
 			icon: {
 				id: "minecraft:clock"
 				count: 1
@@ -322,7 +353,7 @@
 		{
 			id: "271A4FC16C7BED10"
 			x: 2.0d
-			y: 12.225000000000001d
+			y: 10.425d
 			icon: {
 				id: "minecraft:filled_map"
 				count: 1
@@ -354,9 +385,34 @@
 			]
 		}
 		{
+			id: "74995A3FE722D93F"
+			x: 4.0d
+			y: 10.425d
+			icon: {
+				id: "minecraft:target"
+				count: 1
+			}
+			dependencies: [
+				"271A4FC16C7BED10"
+			]
+			tasks: [
+				{
+					id: "2360810164940E00"
+					type: "checkmark"
+				}
+			]
+			rewards: [
+				{
+					id: "67385A4709749D26"
+					type: "xp_levels"
+					xp_levels: 3
+				}
+			]
+		}
+		{
 			id: "7C1C3006C7CEECAC"
 			x: 7.81d
-			y: 10.725000000000001d
+			y: 10.425d
 			icon: {
 				id: "minecraft:crafting_table"
 				count: 1
@@ -382,7 +438,7 @@
 		{
 			id: "24FFC1AEC52A81F8"
 			x: 9.809999999999999d
-			y: 12.225000000000001d
+			y: 11.925d
 			icon: {
 				id: "minecraft:book"
 				count: 1
@@ -407,7 +463,7 @@
 		{
 			id: "2DD74D4CECC05026"
 			x: 9.809999999999999d
-			y: 13.725000000000001d
+			y: 13.425d
 			icon: {
 				id: "minecraft:spyglass"
 				count: 1
@@ -432,7 +488,7 @@
 		{
 			id: "18B85AFB69D742D5"
 			x: 9.809999999999999d
-			y: 10.725000000000001d
+			y: 10.425d
 			icon: {
 				id: "minecraft:knowledge_book"
 				count: 1
@@ -457,7 +513,7 @@
 		{
 			id: "4865FD84899DDCDA"
 			x: 0.0d
-			y: 18.825d
+			y: 18.525d
 			icon: {
 				id: "minecraft:iron_pickaxe"
 				count: 1
@@ -492,7 +548,7 @@
 		{
 			id: "1D68228F76A8678F"
 			x: 2.0d
-			y: 17.325d
+			y: 20.025d
 			icon: {
 				id: "minecraft:note_block"
 				count: 1
@@ -518,7 +574,7 @@
 		{
 			id: "196C6C2FCAF9CE9A"
 			x: 2.0d
-			y: 20.325d
+			y: 21.525d
 			icon: {
 				id: "minecraft:skeleton_skull"
 				count: 1
@@ -547,7 +603,7 @@
 		{
 			id: "44681E91BB9B17DD"
 			x: 2.0d
-			y: 18.825d
+			y: 18.525d
 			icon: {
 				id: "trashcans:item_trash_can"
 				count: 1
@@ -586,7 +642,7 @@
 		{
 			id: "15115DED00A268E2"
 			x: 2.0d
-			y: 21.825d
+			y: 17.025d
 			icon: {
 				id: "minecraft:chest"
 				count: 1
@@ -609,9 +665,162 @@
 			]
 		}
 		{
+			id: "65140A8B6C58771A"
+			x: 4.0d
+			y: 17.025d
+			icon: {
+				id: "minecraft:iron_block"
+				count: 1
+			}
+			dependencies: [
+				"15115DED00A268E2"
+			]
+			tasks: [
+				{
+					id: "2EE34CB0FC56415F"
+					type: "checkmark"
+				}
+			]
+			rewards: [
+				{
+					id: "2723BF47A71CC22A"
+					type: "item"
+					item: {
+						id: "minecraft:iron_ingot"
+						count: 1
+					}
+					count: 9
+				}
+				{
+					id: "7FC0CC05ABEE0ED8"
+					type: "xp_levels"
+					xp_levels: 3
+				}
+			]
+		}
+		{
+			id: "64F9FC809CBDD296"
+			x: 4.0d
+			y: 18.525d
+			icon: {
+				id: "supplementaries:wrench"
+				count: 1
+			}
+			dependencies: [
+				"44681E91BB9B17DD"
+			]
+			tasks: [
+				{
+					id: "1F47159C7518A332"
+					type: "item"
+					item: {
+						id: "supplementaries:wrench"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "685DC4865E541BB2"
+					type: "item"
+					item: {
+						id: "minecraft:copper_ingot"
+						count: 1
+					}
+					count: 8
+				}
+				{
+					id: "23BD6D22354CD5C2"
+					type: "xp_levels"
+					xp_levels: 3
+				}
+			]
+		}
+		{
+			id: "6244B68F3856AF43"
+			x: 6.8d
+			y: 18.525d
+			icon: {
+				id: "supplementaries:cage"
+				count: 1
+			}
+			optional: true
+			dependencies: [
+				"64F9FC809CBDD296"
+			]
+			tasks: [
+				{
+					id: "3D451961E56652EE"
+					type: "item"
+					item: {
+						id: "supplementaries:cage"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "55580BDAE21979B9"
+					type: "item"
+					item: {
+						id: "minecraft:wheat"
+						count: 1
+					}
+					count: 16
+				}
+				{
+					id: "78117F24A27DD700"
+					type: "xp_levels"
+					xp_levels: 3
+				}
+			]
+		}
+		{
+			id: "732A6C2688D5B74C"
+			x: 8.8d
+			y: 18.525d
+			icon: {
+				id: "supplementaries:jar"
+				count: 1
+			}
+			optional: true
+			dependencies: [
+				"6244B68F3856AF43"
+			]
+			tasks: [
+				{
+					id: "1232DEB7B2A965BC"
+					type: "item"
+					item: {
+						id: "supplementaries:jar"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "7A717947049041FB"
+					type: "item"
+					item: {
+						id: "minecraft:glass"
+						count: 1
+					}
+					count: 8
+				}
+				{
+					id: "5A2EB6EBABEC0EA1"
+					type: "xp_levels"
+					xp_levels: 2
+				}
+			]
+		}
+		{
 			id: "63E6076D33EED03F"
 			x: 4.0d
-			y: 18.825d
+			y: 20.525d
 			icon: {
 				id: "minecraft:diamond"
 				count: 1
@@ -666,6 +875,177 @@
 				}
 			]
 		}
+		{
+			id: "7A075AC786522F42"
+			x: 11.8d
+			y: 17.025d
+			icon: {
+				id: "comforts:sleeping_bag_white"
+				count: 1
+			}
+			hide_dependency_lines: true
+			dependencies: [
+				"76B6BE3C8FF63884"
+			]
+			tasks: [
+				{
+					id: "5A43F11BDEBBA9B0"
+					type: "item"
+					item: {
+						id: "comforts:sleeping_bag_white"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "6EDB96529D8977CB"
+					type: "item"
+					item: {
+						id: "minecraft:white_wool"
+						count: 1
+					}
+					count: 6
+				}
+				{
+					id: "1F812DC49CA3F464"
+					type: "xp_levels"
+					xp_levels: 3
+				}
+			]
+		}
+		{
+			id: "67F8F3589E6ED400"
+			x: 13.8d
+			y: 18.525d
+			icon: {
+				id: "comforts:hammock_white"
+				count: 1
+			}
+			optional: true
+			dependencies: [
+				"7A075AC786522F42"
+			]
+			tasks: [
+				{
+					id: "353CEB42761D0419"
+					type: "item"
+					item: {
+						id: "comforts:hammock_white"
+						count: 1
+					}
+					count: 1
+				}
+				{
+					id: "656EEC329F480315"
+					type: "item"
+					item: {
+						id: "comforts:rope_and_nail"
+						count: 1
+					}
+					count: 2
+				}
+			]
+			rewards: [
+				{
+					id: "301D9A953FEE056E"
+					type: "item"
+					item: {
+						id: "minecraft:string"
+						count: 1
+					}
+					count: 8
+				}
+				{
+					id: "4F7951826BDF9B3D"
+					type: "xp_levels"
+					xp_levels: 3
+				}
+			]
+		}
+		{
+			id: "1825A78DA30476AE"
+			x: 13.8d
+			y: 17.025d
+			icon: {
+				id: "minecraft:campfire"
+				count: 1
+			}
+			dependencies: [
+				"7A075AC786522F42"
+			]
+			tasks: [
+				{
+					id: "129F2C494F9D2355"
+					type: "item"
+					item: {
+						id: "minecraft:campfire"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "1E9647B5FF75800D"
+					type: "item"
+					item: {
+						id: "minecraft:charcoal"
+						count: 1
+					}
+					count: 8
+				}
+				{
+					id: "4C7E754835B83925"
+					type: "xp_levels"
+					xp_levels: 3
+				}
+			]
+		}
+		{
+			id: "1FA638AB5008D393"
+			x: 15.8d
+			y: 17.025d
+			icon: {
+				id: "supplementaries:lunch_basket"
+				count: 1
+			}
+			dependencies: [
+				"1825A78DA30476AE"
+			]
+			tasks: [
+				{
+					id: "6FB7E054BCB635C8"
+					type: "item"
+					item: {
+						id: "supplementaries:lunch_basket"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "48E01E59CC82B115"
+					type: "item"
+					item: {
+						id: "minecraft:bamboo"
+						count: 1
+					}
+					count: 16
+				}
+				{
+					id: "45C140454BE33540"
+					type: "item"
+					item: {
+						id: "minecraft:baked_potato"
+						count: 1
+					}
+					count: 16
+				}
+			]
+		}
 	]
 	images: [
 		{
@@ -691,7 +1071,7 @@
 		{
 			id: "124FEA2D8CA2ACD1"
 			image: "kronwerke:textures/quests/comfort/pylons.png"
-			x: 10.094999999999999d
+			x: 11.245d
 			y: 2.6750000000000003d
 			width: 2.79d
 			height: 0.9d
@@ -702,7 +1082,7 @@
 			id: "1A00273B0C89EED8"
 			image: "kronwerke:textures/quests/comfort/map.png"
 			x: 2.405d
-			y: 9.275d
+			y: 8.975d
 			width: 5.81d
 			height: 0.9d
 			rotation: 0.0d
@@ -712,7 +1092,7 @@
 			id: "734FEE3BACD63C10"
 			image: "kronwerke:textures/quests/comfort/knowledge.png"
 			x: 8.559999999999999d
-			y: 9.275d
+			y: 8.975d
 			width: 2.5d
 			height: 0.9d
 			rotation: 0.0d
@@ -722,8 +1102,18 @@
 			id: "57A32674A99098A7"
 			image: "kronwerke:textures/quests/comfort/daily.png"
 			x: 0.6000000000000001d
-			y: 15.874999999999998d
+			y: 15.574999999999998d
 			width: 2.2d
+			height: 0.9d
+			rotation: 0.0d
+			order: 1
+		}
+		{
+			id: "1A3411C3C906AF3F"
+			image: "kronwerke:textures/quests/comfort/rest.png"
+			x: 12.505d
+			y: 15.574999999999998d
+			width: 2.41d
 			height: 0.9d
 			rotation: 0.0d
 			order: 1

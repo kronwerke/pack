@@ -382,7 +382,7 @@ quests = [
           ],
           tasks=[task_item("botania:gourmaryllis", 1)],
           rewards=[reward_item("minecraft:cooked_beef", 16)],
-          deps=["rune_summer", "rune_fire"], icon="botania:gourmaryllis"),
+          deps=["rune_summer", "rune_fire"], icon="botania:gourmaryllis", section="blumen"),
 
     quest("munchdew", 4.4, 6.5, "&6Pflanz einen Mampftau",
           subtitle="Frisst ganze Baumkronen.",
@@ -395,7 +395,7 @@ quests = [
           ],
           tasks=[task_item("botania:munchdew", 1)],
           rewards=[reward_item("minecraft:oak_sapling", 16)],
-          deps=["sin_runes"], optional=True, icon="botania:munchdew"),
+          deps=["sin_runes"], optional=True, icon="botania:munchdew", section="blumen"),
 
     quest("rosa_arcana", 6.6, 6.5, "&6Pflanz eine Rosa Arcana",
           subtitle="Erfahrung wird zu Mana.",
@@ -408,7 +408,7 @@ quests = [
           ],
           tasks=[task_item("botania:rosa_arcana", 1)],
           rewards=[reward_item("minecraft:experience_bottle", 8)],
-          deps=["rune_mana"], icon="botania:rosa_arcana"),
+          deps=["rune_mana"], icon="botania:rosa_arcana", section="blumen"),
 
     quest("narslimmus", 8.8, 6.5, "&6Pflanz eine Narglibbe",
           subtitle="Schleim aus Schleimchunks.",
@@ -421,7 +421,7 @@ quests = [
           ],
           tasks=[task_item("botania:narslimmus", 1)],
           rewards=[reward_item("minecraft:slime_ball", 8)],
-          deps=["rune_summer", "rune_water"], optional=True, icon="botania:narslimmus"),
+          deps=["rune_summer", "rune_water"], optional=True, icon="botania:narslimmus", section="blumen"),
 
     quest("wards", 11, 6.5, "&6Zieh Zäune aus Magie",
           subtitle="Wirrbeere hält drin, Freihut hält draußen.",
@@ -433,7 +433,7 @@ quests = [
           ],
           tasks=[task_item("botania:tangleberrie", 1), task_item("botania:jiyuulia", 1)],
           rewards=[reward_table("s2_common")],
-          deps=["rune_air"], optional=True, icon="botania:jiyuulia"),
+          deps=["rune_air"], optional=True, icon="botania:jiyuulia", section="blumen"),
 
     # ---- Neue Blumen: Funktion --------------------------------------------
     quest("jaded_amaranthus", 0, 8.8, "&6Pflanz einen Jaded-Amarant",
@@ -478,7 +478,7 @@ quests = [
           ],
           tasks=[task_item("botania:rannuncarpus", 1)],
           rewards=[reward_item("botania:livingrock", 16)],
-          deps=["rune_earth"], optional=True, icon="botania:rannuncarpus"),
+          deps=["rune_earth"], optional=True, icon="botania:rannuncarpus", section="blumen"),
 
     quest("clayconia", 8.8, 8.8, "&6Pflanz eine Helitonie",
           subtitle="Aus Sand wird Ton.",
@@ -489,7 +489,7 @@ quests = [
           ],
           tasks=[task_item("botania:clayconia", 1)],
           rewards=[reward_item("minecraft:sand", 32)],
-          deps=["rune_earth"], optional=True, icon="botania:clayconia"),
+          deps=["rune_earth"], optional=True, icon="botania:clayconia", section="blumen"),
 
     quest("exoflame", 11, 8.8, "&6Pflanz eine Exoflamme",
           subtitle="Heizt Öfen mit Mana.",
@@ -500,7 +500,7 @@ quests = [
           ],
           tasks=[task_item("botania:exoflame", 1)],
           rewards=[reward_item("minecraft:furnace", 4)],
-          deps=["rune_summer"], optional=True, icon="botania:exoflame"),
+          deps=["rune_summer"], optional=True, icon="botania:exoflame", section="blumen"),
 
     quest("func_protect", 0, 11, "&6Schütz die Basis mit Blumen",
           subtitle="Drei Wächter, eine Zeile pro Blume.",
@@ -718,6 +718,139 @@ quests = [
           tasks=[task_checkmark("Abgeliefert")],
           rewards=[reward_table("s2_rare"), reward_xp(15)],
           deps=["pearl_factory", "terra_line", "rune_core"], icon="botania:terrasteel_block", size=2.0, shape="gear"),
+
+    # ---- Neu: Nebenquests ------------------------------------------------
+    quest("lenses_power", 0, -1.2, "&6Schleif Linsen aus den Elementrunen",
+          subtitle="Checkliste: schneller, stärker, sparsamer.",
+          description=[
+              "Jede formlos aus Manalinse und einer Rune:",
+              "&eGeschwindigkeitslinse&r (Luft): der Stoß fliegt viel schneller, trägt aber weniger und verliert früher.",
+              "&eStärkelinse&r (Feuer): doppelt so viel Mana pro Stoß, dafür langsamer.",
+              "&eResistenzlinse&r (Erde): der Stoß fliegt viel länger, bevor er Mana verliert.",
+              "&eEffizienzlinse&r (Wasser): verliert später und deutlich langsamer.",
+              "",
+              "Zwei verschiedene Linsen verbindet ein &6Schleimball&r oder eine &6Honigflasche&r an der Werkbank zu einer.",
+          ],
+          tasks=[task_item("botania:velocity_lens", 1), task_item("botania:potency_lens", 1),
+                 task_item("botania:resistance_lens", 1), task_item("botania:efficiency_lens", 1)],
+          rewards=[reward_item("botania:manasteel_ingot", 4), reward_xp(5)],
+          deps=["mana_lens", "rune_water", "rune_fire", "rune_earth", "rune_air"], icon="botania:potency_lens", optional=True),
+
+    quest("lenses_tool", 0, 1.2, "&6Mach den Stoß zum Werkzeug",
+          subtitle="Linsen, die abbauen, anziehen und anzünden.",
+          description=[
+              "&eBohrlinse&r: oben &6Kolben&r, Mitte &6Lapisblock&r, Linse, Lapisblock, unten &6Redstone&r. Der Stoß baut mit seinem Mana jeden Block ab, den er trifft.",
+              "&eMagnetisierungslinse&r: formlos Linse, Eisenbarren, Goldbarren. Der Stoß sucht sich selbst den nächsten Block, der Mana annimmt.",
+              "&eZündellinse&r: formlos Linse und Feuerkugel. Der Stoß setzt Blöcke in Brand.",
+              "",
+              "&eTipp:&r Werkzeug-Linsen gehören auf einen &6Impuls-Verbreiter&r, ein normaler feuert nur auf Ziele, die Mana annehmen.",
+          ],
+          tasks=[task_item("botania:bore_lens", 1), task_item("botania:magnetizing_lens", 1),
+                 task_item("botania:kindle_lens", 1)],
+          rewards=[reward_item("minecraft:lapis_block", 2), reward_xp(5)],
+          deps=["mana_lens"], icon="botania:bore_lens", optional=True),
+
+    quest("mana_blaster", 10.5, 3.3, "&6Bau einen Mana-Blaster",
+          subtitle="Ein Verbreiter für die Hand.",
+          description=[
+              "Oben &6Impuls-Verbreiter&r, &6Rune des Manas&r, &bManadiamant&r, Mitte &6Lebeholzstamm&r und &6TNT&r, unten rechts noch ein Lebeholzstamm.",
+              "",
+              "Der Blaster feuert Manastöße aus deiner Hand, mit Mana aus Tafel oder Ring im Inventar. Die Stöße sind schneller als die eines Verbreiters, tragen aber nur drei Viertel des Manas.",
+              "",
+              "Eine Linse kommt an der Werkbank hinein, allein auf das Raster gelegt kommt sie wieder heraus. Mit der Bohrlinse wird er zum Fernbohrer.",
+          ],
+          tasks=[task_item("botania:mana_blaster", 1)],
+          rewards=[reward_item("minecraft:tnt", 2), reward_xp(5)],
+          deps=["rune_mana", "lenses_tool"], icon="botania:mana_blaster", optional=True),
+
+    quest("rods", 12.5, 3.3, "&6Schnitz die ersten Ruten",
+          subtitle="Erde aus dem Nichts, ein Sprung in den Himmel.",
+          description=[
+              "&6Rute des Landes&r: Lebeholzzweig diagonal, oben rechts &6Erde&r, unten links &6Rune der Erde&r. Setzt für Mana einen Erdblock, ideal zum Brückenbauen.",
+              "&6Rute der Lüfte&r: genauso mit &6Feder&r und &6Rune der Luft&r. Schleudert dich hoch in die Luft und schützt danach kurz vor Fallschaden. Mit Elytren gibt sie einen Schub wie eine Rakete.",
+              "",
+              "Beide arbeiten auch im &6Lebeholz-Avatar&r: mit der Rute der Lüfte schleudert er jeden hoch, der neben ihm springt.",
+          ],
+          tasks=[task_item("botania:rod_of_the_lands", 1), task_item("botania:rod_of_the_skies", 1)],
+          rewards=[reward_item("minecraft:feather", 8), reward_xp(4)],
+          deps=["rune_earth", "rune_air"], icon="botania:rod_of_the_skies", optional=True),
+
+    quest("incense", 15, 3.3, "&6Zünde Räucherwerk an",
+          subtitle="Ein Gebräu für 30 Blöcke Umkreis.",
+          description=[
+              "&6Räucherstäbchen&r: Lebeholzzweig diagonal, in der Mitte &6Lohenstaub&r, oben rechts eine &6Ghast-Träne&r. &6Räucherplatte&r: zwei Lebeholzstufen und ein Lebeholzstamm in einer Reihe.",
+              "",
+              "In der Brauerei nimmt das Stäbchen ein Gebräu auf wie eine Phiole, kostet aber etwa zehnmal so viel Mana. Leg es auf die Platte und zünd es mit dem Feuerzeug an.",
+              "",
+              "Es brennt sechzigmal so lange wie ein Schluck und gibt die Wirkung allen Spielern in &e30 Blöcken&r. Nicht jedes Gebräu geht: keine Sofortheilung, nichts mit mehreren Effekten.",
+          ],
+          tasks=[task_item("botania:incense_stick", 1), task_item("botania:incense_plate", 1)],
+          rewards=[reward_item("minecraft:ghast_tear", 1), reward_xp(5)],
+          deps=["brewery"], icon="botania:incense_stick", optional=True),
+
+    quest("enchanter", 7.2, 3.6, "&bBau einen Manaverzauberer",
+          subtitle="Verzaubern, ohne das Buch zu verlieren.",
+          description=[
+              "&6Manapylon&r: oben und unten &6Gold&r, Mitte Manastahl, &bManadiamant&r, Manastahl. Zwei Pylonen neben einem Zaubertisch bringen ihn schon auf Stufe 30.",
+              "",
+              "Der Manaverzauberer ist ein Bauwerk von etwa 11x7 Blöcken aus &e17 Obsidian&r, &e10 Mystischen Blumen&r, &e6 Manapylonen&r und einem &6Lapisblock&r in der Mitte. Den genauen Plan zeigt die Lexica. Ein Rechtsklick mit dem Stab des Waldes auf den Lapisblock erweckt ihn.",
+              "",
+              "Leg das Werkzeug in den Verzauberer, wirf &6Verzauberte Bücher&r in den Obsidiankreis und klick mit dem Stab. Er überträgt die erste Verzauberung jedes Buches, die Bücher bleiben erhalten. Bezahlt wird mit Mana, am schnellsten über einen Funken.",
+          ],
+          tasks=[task_item("botania:mana_pylon", 6)],
+          rewards=[reward_item("minecraft:obsidian", 17), reward_table("s2_uncommon")],
+          deps=["mana_tablet"], icon="botania:mana_pylon", optional=True),
+
+    quest("fluxfield", 2.4, 3.9, "&bWandle Mana in Strom",
+          subtitle="Das Mana-Flussfeld für die Techniker.",
+          description=[
+              "&e4 Lebestein&r in den Ecken, &e4 Redstoneblöcke&r an den Seiten, ein &6Manastahlbarren&r in die Mitte.",
+              "",
+              "Jeder Manastoß, der das &6Mana-Flussfeld&r trifft, wird zu Forge-Energie und geht an Kabel oder Maschinen direkt daneben. Ein Verbreiter vor einer Endoflammen-Reihe wird so zum kleinen Generator.",
+          ],
+          tasks=[task_item("botania:mana_fluxfield", 1)],
+          rewards=[reward_item("minecraft:redstone_block", 2), reward_xp(4)],
+          deps=["infused_pool"], icon="botania:mana_fluxfield", optional=True),
+
+    quest("halo", 4.8, -3.3, "&6Schmied einen Montage-Halo",
+          subtitle="Die Werkbank, die du immer dabei hast.",
+          description=[
+              "Oben &6Manaperle&r, Mitte Manastahl, &6Werkbank&r, Manastahl, unten Manastahl.",
+              "",
+              "In der Hand zeigt der Halo einen Kranz aus Rezeptplätzen. Rechtsklick auf die Werkbank im Kranz öffnet ein Craftingfenster. Rechtsklick auf einen leeren Platz speichert das zuletzt gecraftete Rezept, Rechtsklick auf einen gespeicherten craftet es aus deinem Inventar.",
+              "",
+              "Mit einem &bManadiamanten&r wird er zum &6Manufaktur-Halo&r, der gespeicherte Rezepte von selbst craftet, solange du ihn nicht in der Hand hältst. Zum Beispiel presst er beim Bergbau Erze und Barren nebenbei zu Blöcken.",
+          ],
+          tasks=[task_item("botania:assembly_halo", 1)],
+          rewards=[reward_item("minecraft:crafting_table", 1), reward_xp(4)],
+          deps=["mana_pearl"], icon="botania:assembly_halo", optional=True),
+
+    quest("terra_armor", 20.5, 10.5, "&aSchmied die Terrastahlrüstung",
+          subtitle="Netherit-Klasse, die sich selbst repariert.",
+          description=[
+              "Jedes Teil: oben &6Lebeholzzweig&r, Jahreszeitenrune, Zweig, Mitte Terrastahl, das passende &6Manastahl-Teil&r, Terrastahl, unten ein Terrastahl. Helm mit Frühling, Harnisch mit Sommer, Beinschutz mit Herbst, Stiefel mit Winter.",
+              "",
+              "So stark wie Netherit und heilt Schaden mit Mana aus dem Inventar. Das volle Set kostet &e12 Terrastahl&r.",
+              "",
+              "&cDenk an den Obelisken:&r Jeder Barren hier fehlt dort. Bau sie, wenn die Terrastahl-Straße läuft.",
+          ],
+          tasks=[task_item("botania:terrasteel_helmet", 1), task_item("botania:terrasteel_chestplate", 1),
+                 task_item("botania:terrasteel_leggings", 1), task_item("botania:terrasteel_boots", 1)],
+          rewards=[reward_item("botania:manasteel_ingot", 8), reward_table("s2_uncommon")],
+          deps=["terra_gear"], icon="botania:terrasteel_chestplate", optional=True),
+
+    quest("terra_tools", 18, 10.5, "&aSchmied Trümmerer und Stutzer",
+          subtitle="Eine Spitzhacke, die mit Mana wächst, und eine Axt für ganze Bäume.",
+          description=[
+              "&6Terra-Trümmerer&r: oben Terrastahl, &6Manatafel&r, Terrastahl, Mitte Terrastahl, Zweig, Terrastahl, unten Zweig. &6Terra-Stutzer&r: 4 Terrastahl, Glowstone, 2 Zweige.",
+              "",
+              "Der Trümmerer saugt Mana auf wie eine Tafel im Becken und steigt dabei im Rang von D bis SS. Schleich-Rechtsklick schaltet seine Fähigkeit ein: ab Rang C baut er eine schmale Säule ab, ab B ein Quadrat, danach immer größere Flächen.",
+              "",
+              "Der Stutzer fällt ganze Bäume mit Laub auf einen Schlag. Schleichend arbeitet er wie eine normale Axt.",
+          ],
+          tasks=[task_item("botania:terra_shatterer", 1), task_item("botania:terra_truncator", 1)],
+          rewards=[reward_item("minecraft:glowstone", 4), reward_xp(8)],
+          deps=["terrasteel"], icon="botania:terra_shatterer", optional=True),
 
 ]
 

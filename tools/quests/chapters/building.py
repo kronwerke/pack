@@ -103,6 +103,28 @@ quests = [
           deps=["tools", "shapes"], icon="framedblocks:framed_reinforcement", optional=True),
 
     # ---- Chipped -----------------------------------------------------------------
+    quest("doors", 7.5, -0.5, "&6Bau Türen, die nicht auffallen",
+          subtitle="Rahmentür und Rahmenfalltür, getarnt wie die Wand.",
+          description=[
+              "Die &6Rahmentür&r kommt aus der Rahmensäge, die &6Rahmenfalltür&r aus sechs &6Rahmenstufen&r in zwei Reihen an der Werkbank. Tarn sie mit demselben Block wie die Wand daneben, und der Eingang verschwindet fast.",
+              "",
+              "Es gibt beides auch in Eisen, das sich nur mit Redstone öffnet. Für einen versteckten Lagerraum hinter der Bücherwand genau das Richtige.",
+          ],
+          tasks=[task_item("framedblocks:framed_door", 1), task_item("framedblocks:framed_trapdoor", 1)],
+          rewards=[reward_item("framedblocks:framed_cube", 8), reward_xp(3)],
+          deps=["shapes"], icon="framedblocks:framed_door"),
+
+    quest("pillars", 7.5, 2.5, "&6Stell Säulen auf",
+          subtitle="Eckpfeiler, Säulen und Sockel.",
+          description=[
+              "Zwei &6Rahmenblöcke&r übereinander ergeben vier &6Ecksäulen&r. Eine Ecksäule allein in die Werkbank wird zur &6Rahmensäule&r, die in der Mitte des Blocks steht. Sockel und halbe Säulen kommen aus der Säge.",
+              "",
+              "Getarnt mit Quarz, Steinziegeln oder poliertem Andesit werden daraus Säulengänge, Zaunpfosten oder schlanke Stützen unter einem Vordach.",
+          ],
+          tasks=[task_item("framedblocks:framed_pillar", 4)],
+          rewards=[reward_item("minecraft:stone_bricks", 16), reward_xp(3)],
+          deps=["shapes"], icon="framedblocks:framed_pillar", optional=True),
+
     quest("mason", 0, 6, "&7&lBau einen Steinmetztisch",
           subtitle="Über 60 Varianten aus jedem Stein.",
           description=[
@@ -245,6 +267,50 @@ quests = [
           rewards=[reward_item("minecraft:gold_ingot", 4)],
           deps=["sack"], icon="supplementaries:lock_block", optional=True),
 
+    quest("flower_box", 7.5, 14, "&aPflanz einen Blumenkasten",
+          subtitle="Blumen am Fenster, nicht nur auf der Wiese.",
+          description=[
+              "&eRezept:&r in der mittleren Reihe &6Holzstufe&r, &6Erde&r, &6Holzstufe&r, darunter drei Holzstufen. Das ergibt zwei &6Blumenkästen&r.",
+              "",
+              "Stell sie unter ein Fenster oder auf eine Mauer und setz kleine Blumen hinein. Ein paar Kästen bringen mehr Farbe an ein Haus als jede Fassade.",
+          ],
+          tasks=[task_item("supplementaries:flower_box", 2)],
+          rewards=[reward_item("minecraft:poppy", 4), reward_item("minecraft:dandelion", 4)],
+          deps=["timber"], icon="supplementaries:flower_box"),
+
+    quest("candles", 10, 10, "&eStell Kerzenständer auf",
+          subtitle="Warmes Licht für Tisch und Wand.",
+          description=[
+              "&eRezept:&r eine &6Kerze&r über einem &6Eisenbarren&r. Mit einer gefärbten Kerze bekommst du einen Kerzenständer in deren Farbe.",
+              "",
+              "Stell ihn auf den Tisch oder häng ihn an die Wand und zünde ihn mit Feuerstein und Stahl an. Weniger hell als eine Fackel, dafür sieht ein Speisesaal damit nach Burg aus und nicht nach Mine.",
+          ],
+          tasks=[task_item("supplementaries:candle_holder", 2)],
+          rewards=[reward_item("minecraft:candle", 4), reward_xp(2)],
+          deps=["sconce"], icon="supplementaries:candle_holder", optional=True),
+
+    quest("awning", 10, 14, "&aSpann eine Markise",
+          subtitle="Ein Stoffdach über Marktstand und Tür.",
+          description=[
+              "&eRezept:&r drei &6Flachs&r oben, darunter links und rechts ein &6Stock&r. Das ergibt zwei &6Markisen&r, mit Farbstoff färbst du sie ein.",
+              "",
+              "Über Tür und Fenster, als Dach über einem Marktstand oder als Sonnensegel auf der Terrasse. Den Flachs kennst du schon von den Seilen.",
+          ],
+          tasks=[task_item("supplementaries:awning", 2)],
+          rewards=[reward_item("supplementaries:flax_seeds", 4), reward_xp(2)],
+          deps=["rope"], icon="supplementaries:awning", optional=True),
+
+    quest("iron_gate", 10, 12, "&7Setz ein Eisentor",
+          subtitle="Ein Tor, das zu Eisengittern passt.",
+          description=[
+              "&eRezept:&r in zwei Reihen übereinander je &6Eisenklumpen&r, &6Eisenbarren&r, &6Eisenklumpen&r. Das ergibt zwei &6Eisentore&r.",
+              "",
+              "Ein Tor aus Eisen statt Holz, passend zu Eisengittern und Andesitgittern. Gut für Ställe, Kerker und die Einfahrt zur Fabrik.",
+          ],
+          tasks=[task_item("supplementaries:iron_gate", 2)],
+          rewards=[reward_item("minecraft:iron_ingot", 4)],
+          deps=["lock"], icon="supplementaries:iron_gate", optional=True),
+
     # ---- Create-Bauteile ---------------------------------------------------------
     quest("copycats", 11, 1, "&6&lSchneide Copycats aus Zink",
           subtitle="Platten und Stufen, die jeden Block nachmachen.",
@@ -273,6 +339,17 @@ quests = [
           tasks=[task_item("create:metal_girder", 8), task_item("create:oak_window", 4)],
           rewards=[reward_item("create:andesite_alloy", 8), reward_xp(3)],
           deps=["copycats"], icon="create:metal_girder"),
+
+    quest("copycat_plus", 16, 1, "&6Bau mit Copycat-Blöcken",
+          subtitle="Copycats+: ganze Blöcke, Treppen und Balken.",
+          description=[
+              "Aus dem &6Steinschneider&r kommen mit einem Zinkbarren auch die Formen von &6Copycats+&r. Zwei &6Copycat-Stufen&r übereinander ergeben einen &6Copycat-Block&r.",
+              "",
+              "Tarn ihn wie jede Copycat mit einem Rechtsklick. Copycat-Blöcke auf einer Kontraption bewegen sich mit und behalten ihr Aussehen, ideal für Tore und Zugbrücken mit Create.",
+          ],
+          tasks=[task_item("copycats:copycat_block", 4)],
+          rewards=[reward_item("create:zinc_ingot", 4), reward_xp(3)],
+          deps=["copycats"], icon="copycats:copycat_block"),
 
     quest("roofing", 13.5, 2, "&6Deck mit Kupfer",
           subtitle="Schindeln, die grün werden.",
@@ -311,6 +388,17 @@ quests = [
           tasks=[task_checkmark("Ausgeleuchtet")],
           rewards=[reward_item("minecraft:lantern", 8), reward_item("minecraft:torch", 16)],
           deps=["claims"], icon="minecraft:lantern"),
+
+    quest("flag", 11, 9, "&aHiss deine Flagge",
+          subtitle="Zeig, wem die Basis gehört.",
+          description=[
+              "&eRezept:&r sechs &6Wolle&r in zwei Reihen, darunter links ein &6Stock&r. Das ergibt eine &6Flagge&r in der Farbe der Wolle, alle 16 Farben gehen.",
+              "",
+              "Setz sie an eine Wand oder auf einen Pfosten, dort weht sie im Wind. Eine Reihe Flaggen in Teamfarbe macht deine Basis auf jedem Stream sofort erkennbar.",
+          ],
+          tasks=[task_item("supplementaries:flag_white", 1)],
+          rewards=[reward_item("minecraft:white_wool", 12), reward_xp(2)],
+          deps=["lighting"], icon="supplementaries:flag_white"),
 
     quest("gadgets", 13.5, 5, "&dAusblick: Building Gadgets",
           subtitle="Kommt in Stufe 2.",

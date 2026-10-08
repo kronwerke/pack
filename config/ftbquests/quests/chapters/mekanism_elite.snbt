@@ -56,8 +56,9 @@
 		{
 			id: "16C0A3D421647E75"
 			x: 4.375d
-			y: 6.27d
+			y: 7.02d
 			hide_dependency_lines: true
+			hide_dependent_lines: true
 			dependencies: [
 				"28CA7B6A7DBC85F5"
 			]
@@ -96,7 +97,7 @@
 		{
 			id: "6A03B7F54126F192"
 			x: 4.375d
-			y: 4.395d
+			y: 8.895d
 			icon: {
 				id: "mekanism:ultimate_control_circuit"
 				count: 1
@@ -144,7 +145,7 @@
 		{
 			id: "7143E694F34F4B20"
 			x: 6.975d
-			y: 6.27d
+			y: 7.02d
 			icon: {
 				id: "mekanism:elite_tier_installer"
 				count: 1
@@ -188,7 +189,7 @@
 		{
 			id: "4F989279349B6783"
 			x: 8.975d
-			y: 6.27d
+			y: 7.02d
 			icon: {
 				id: "mekanism:ultimate_tier_installer"
 				count: 1
@@ -234,7 +235,7 @@
 		{
 			id: "1CF535A43EB8DF37"
 			x: 6.975d
-			y: 4.395d
+			y: 8.895d
 			icon: {
 				id: "mekanism:ultimate_universal_cable"
 				count: 1
@@ -283,7 +284,7 @@
 		{
 			id: "6754881034BDBFA8"
 			x: 8.975d
-			y: 4.395d
+			y: 8.895d
 			icon: {
 				id: "mekanism:ultimate_energy_cube"
 				count: 1
@@ -323,7 +324,7 @@
 		{
 			id: "20621856B534C213"
 			x: 6.975d
-			y: 7.77d
+			y: 4.02d
 			icon: {
 				id: "mekanism:combiner"
 				count: 1
@@ -355,6 +356,46 @@
 				}
 				{
 					id: "156E57D538A3D079"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+		}
+		{
+			id: "117235BCD3B8A2A8"
+			x: 6.975d
+			y: 5.52d
+			icon: {
+				id: "mekanism:security_desk"
+				count: 1
+			}
+			optional: true
+			dependencies: [
+				"16C0A3D421647E75"
+			]
+			tasks: [
+				{
+					id: "1FE7A9181851096B"
+					type: "item"
+					item: {
+						id: "mekanism:security_desk"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "2F8649ED323B011E"
+					type: "item"
+					item: {
+						id: "mekanism:elite_control_circuit"
+						count: 1
+					}
+					count: 2
+				}
+				{
+					id: "5D1924EBCCD4D00F"
 					type: "xp_levels"
 					xp_levels: 5
 				}
@@ -569,9 +610,63 @@
 			]
 		}
 		{
+			id: "49D43A816290C3A1"
+			x: 20.96d
+			y: 4.395d
+			icon: {
+				id: "mekanism:advanced_induction_cell"
+				count: 1
+			}
+			optional: true
+			dependencies: [
+				"215E4B15BA7B91FF"
+			]
+			tasks: [
+				{
+					id: "5AE0F1F1D1930215"
+					type: "item"
+					item: {
+						id: "mekanism:advanced_induction_cell"
+						count: 1
+					}
+					count: 1
+				}
+				{
+					id: "195E804B8F8806F6"
+					type: "item"
+					item: {
+						id: "mekanism:advanced_induction_provider"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "2188B9D7BDD15C27"
+					type: "item"
+					item: {
+						id: "mekanism:energy_tablet"
+						count: 1
+					}
+					count: 4
+				}
+				{
+					id: "34AE7EF217168EC4"
+					type: "loot"
+					table_id: 2331452980220016310L
+				}
+				{
+					id: "5FAFA08EBEC6E62E"
+					type: "xp_levels"
+					xp_levels: 10
+				}
+			]
+		}
+		{
 			id: "619975337A99582F"
 			x: 0.25d
-			y: 11.745000000000001d
+			y: 14.37d
 			icon: {
 				id: "mekanism:quantum_entangloporter"
 				count: 1
@@ -617,7 +712,7 @@
 		{
 			id: "416E9A199B0DF656"
 			x: 2.65d
-			y: 11.745000000000001d
+			y: 14.37d
 			icon: {
 				id: "mekanism:qio_drive_array"
 				count: 1
@@ -672,7 +767,7 @@
 		{
 			id: "7626B4C894018396"
 			x: 5.25d
-			y: 11.745000000000001d
+			y: 14.37d
 			icon: {
 				id: "mekanism:qio_dashboard"
 				count: 1
@@ -711,7 +806,7 @@
 		{
 			id: "2F15623340FF9B3F"
 			x: 5.25d
-			y: 13.245000000000001d
+			y: 12.87d
 			icon: {
 				id: "mekanism:qio_importer"
 				count: 1
@@ -758,9 +853,49 @@
 			]
 		}
 		{
+			id: "3CBBB520D1216F34"
+			x: 5.25d
+			y: 15.87d
+			icon: {
+				id: "mekanism:qio_redstone_adapter"
+				count: 1
+			}
+			optional: true
+			dependencies: [
+				"416E9A199B0DF656"
+			]
+			tasks: [
+				{
+					id: "5444DDA728F6117A"
+					type: "item"
+					item: {
+						id: "mekanism:qio_redstone_adapter"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "153D7384DC4A6C27"
+					type: "item"
+					item: {
+						id: "minecraft:redstone_block"
+						count: 1
+					}
+					count: 4
+				}
+				{
+					id: "4AD201C9D68A3DD4"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+		}
+		{
 			id: "342A8C6B854B4A74"
 			x: 7.25d
-			y: 11.745000000000001d
+			y: 14.37d
 			icon: {
 				id: "mekanism:portable_qio_dashboard"
 				count: 1
@@ -802,7 +937,7 @@
 		{
 			id: "1D36723ED39C884B"
 			x: 2.65d
-			y: 13.620000000000001d
+			y: 16.244999999999997d
 			icon: {
 				id: "mekanism:dimensional_stabilizer"
 				count: 1
@@ -842,12 +977,13 @@
 		{
 			id: "69BF2A95F5E4E623"
 			x: 10.25d
-			y: 14.370000000000001d
+			y: 16.369999999999997d
 			icon: {
 				id: "mekanism:laser"
 				count: 1
 			}
 			hide_dependency_lines: true
+			hide_dependent_lines: true
 			dependencies: [
 				"6A03B7F54126F192"
 			]
@@ -891,7 +1027,7 @@
 		{
 			id: "7D69F29F6C3D572D"
 			x: 12.25d
-			y: 14.370000000000001d
+			y: 16.369999999999997d
 			icon: {
 				id: "mekanismgenerators:deuterium_bucket"
 				count: 1
@@ -930,7 +1066,7 @@
 		{
 			id: "1B859A0C402A281A"
 			x: 12.25d
-			y: 12.870000000000001d
+			y: 14.87d
 			icon: {
 				id: "mekanismgenerators:tritium_bucket"
 				count: 1
@@ -980,7 +1116,7 @@
 		{
 			id: "2F56437A46E9AD0E"
 			x: 14.65d
-			y: 14.370000000000001d
+			y: 16.369999999999997d
 			icon: {
 				id: "mekanismgenerators:hohlraum"
 				count: 1
@@ -1029,7 +1165,7 @@
 		{
 			id: "24EC81B106F356D9"
 			x: 12.25d
-			y: 11.370000000000001d
+			y: 17.869999999999997d
 			icon: {
 				id: "mekanismgenerators:laser_focus_matrix"
 				count: 1
@@ -1077,7 +1213,7 @@
 		{
 			id: "7FCD2127F1C55ED4"
 			x: 12.25d
-			y: 16.12d
+			y: 13.12d
 			icon: {
 				id: "mekanism:pellet_polonium"
 				count: 1
@@ -1123,7 +1259,7 @@
 		{
 			id: "3FB874C07A9A0C98"
 			x: 14.65d
-			y: 16.12d
+			y: 13.12d
 			icon: {
 				id: "mekanismgenerators:fusion_reactor_frame"
 				count: 1
@@ -1171,7 +1307,7 @@
 		{
 			id: "442AB303E889EDA0"
 			x: 16.65d
-			y: 14.370000000000001d
+			y: 16.369999999999997d
 			icon: {
 				id: "mekanismgenerators:fusion_reactor_controller"
 				count: 1
@@ -1218,9 +1354,89 @@
 			]
 		}
 		{
+			id: "5B96C535381949C2"
+			x: 19.45d
+			y: 16.369999999999997d
+			icon: {
+				id: "mekanismgenerators:fusion_reactor_logic_adapter"
+				count: 1
+			}
+			optional: true
+			dependencies: [
+				"442AB303E889EDA0"
+			]
+			tasks: [
+				{
+					id: "780664E3791D0F23"
+					type: "item"
+					item: {
+						id: "mekanismgenerators:fusion_reactor_logic_adapter"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "1F1E4E6E8A3A6357"
+					type: "item"
+					item: {
+						id: "minecraft:redstone_block"
+						count: 1
+					}
+					count: 4
+				}
+				{
+					id: "3BFDCD2E0B0DE62C"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+		}
+		{
+			id: "6C9262B6276CA085"
+			x: 12.25d
+			y: 19.369999999999997d
+			icon: {
+				id: "mekanism:laser_tractor_beam"
+				count: 1
+			}
+			optional: true
+			dependencies: [
+				"69BF2A95F5E4E623"
+			]
+			tasks: [
+				{
+					id: "7F47580D97B81C3A"
+					type: "item"
+					item: {
+						id: "mekanism:laser_tractor_beam"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "7083D6CD094D1B18"
+					type: "item"
+					item: {
+						id: "mekanism:energy_tablet"
+						count: 1
+					}
+					count: 2
+				}
+				{
+					id: "2FFC6D9E646F5832"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+		}
+		{
 			id: "12CE3B645569B51A"
 			x: 0.0d
-			y: 20.345d
+			y: 23.345d
 			icon: {
 				id: "mekanism:hdpe_sheet"
 				count: 1
@@ -1260,7 +1476,7 @@
 		{
 			id: "2F95F6FA4A2C168D"
 			x: 2.0d
-			y: 20.345d
+			y: 23.345d
 			icon: {
 				id: "mekanism:modification_station"
 				count: 1
@@ -1301,7 +1517,7 @@
 		{
 			id: "72173DD90F34093A"
 			x: 4.0d
-			y: 20.345d
+			y: 23.345d
 			icon: {
 				id: "mekanism:module_base"
 				count: 1
@@ -1340,7 +1556,7 @@
 		{
 			id: "1CDEECC369D87ED6"
 			x: 6.0d
-			y: 22.22d
+			y: 25.22d
 			icon: {
 				id: "mekanism:module_jetpack_unit"
 				count: 1
@@ -1389,13 +1605,14 @@
 		{
 			id: "33C0F5D885E9ED2E"
 			x: 6.0d
-			y: 20.345d
+			y: 23.345d
 			icon: {
 				id: "mekanism:mekasuit_helmet"
 				count: 1
 			}
 			size: 1.75d
 			shape: "hexagon"
+			hide_dependent_lines: true
 			dependencies: [
 				"72173DD90F34093A"
 			]
@@ -1462,7 +1679,7 @@
 		{
 			id: "7CCBE9415D2A60EF"
 			x: 8.6d
-			y: 20.345d
+			y: 23.345d
 			icon: {
 				id: "mekanism:meka_tool"
 				count: 1
@@ -1499,9 +1716,258 @@
 			]
 		}
 		{
+			id: "452656E4A1C7A85C"
+			x: 11.95d
+			y: 23.345d
+			icon: {
+				id: "mekanism:module_vein_mining_unit"
+				count: 1
+			}
+			optional: true
+			dependencies: [
+				"7CCBE9415D2A60EF"
+			]
+			tasks: [
+				{
+					id: "153EAD71C47979E7"
+					type: "item"
+					item: {
+						id: "mekanism:module_excavation_escalation_unit"
+						count: 1
+					}
+					count: 1
+				}
+				{
+					id: "23D46DC23DAC3946"
+					type: "item"
+					item: {
+						id: "mekanism:module_vein_mining_unit"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "2B1B4ED6285E7BE8"
+					type: "item"
+					item: {
+						id: "mekanism:hdpe_sheet"
+						count: 1
+					}
+					count: 8
+				}
+				{
+					id: "520789416E3C2887"
+					type: "xp_levels"
+					xp_levels: 10
+				}
+			]
+		}
+		{
+			id: "72D0268976563994"
+			x: 8.0d
+			y: 24.845d
+			icon: {
+				id: "mekanism:module_locomotive_boosting_unit"
+				count: 1
+			}
+			optional: true
+			hide_dependency_lines: true
+			dependencies: [
+				"33C0F5D885E9ED2E"
+			]
+			tasks: [
+				{
+					id: "4C2B04E19F587A46"
+					type: "item"
+					item: {
+						id: "mekanism:module_hydraulic_propulsion_unit"
+						count: 1
+					}
+					count: 1
+				}
+				{
+					id: "343E20BAB968FC40"
+					type: "item"
+					item: {
+						id: "mekanism:module_locomotive_boosting_unit"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "1A910BEBDBA0985E"
+					type: "item"
+					item: {
+						id: "mekanism:pellet_polonium"
+						count: 1
+					}
+					count: 1
+				}
+				{
+					id: "6E3BFBFB464A7E65"
+					type: "xp_levels"
+					xp_levels: 10
+				}
+			]
+		}
+		{
+			id: "65C80547497F870A"
+			x: 8.0d
+			y: 26.195d
+			icon: {
+				id: "mekanism:module_electrolytic_breathing_unit"
+				count: 1
+			}
+			optional: true
+			hide_dependency_lines: true
+			dependencies: [
+				"33C0F5D885E9ED2E"
+			]
+			tasks: [
+				{
+					id: "37A5CD0B280C6CB3"
+					type: "item"
+					item: {
+						id: "mekanism:module_electrolytic_breathing_unit"
+						count: 1
+					}
+					count: 1
+				}
+				{
+					id: "27927CF0CB5BB071"
+					type: "item"
+					item: {
+						id: "mekanism:module_nutritional_injection_unit"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "429D0C916E5D1DB4"
+					type: "item"
+					item: {
+						id: "mekanism:hdpe_sheet"
+						count: 1
+					}
+					count: 8
+				}
+				{
+					id: "59B73473F0F31E9A"
+					type: "xp_levels"
+					xp_levels: 10
+				}
+			]
+		}
+		{
+			id: "35027A3671CEFF2C"
+			x: 8.0d
+			y: 27.544999999999998d
+			icon: {
+				id: "mekanism:module_vision_enhancement_unit"
+				count: 1
+			}
+			optional: true
+			hide_dependency_lines: true
+			dependencies: [
+				"33C0F5D885E9ED2E"
+			]
+			tasks: [
+				{
+					id: "2F820A3A27BE6C16"
+					type: "item"
+					item: {
+						id: "mekanism:module_vision_enhancement_unit"
+						count: 1
+					}
+					count: 1
+				}
+				{
+					id: "10490562369ACE76"
+					type: "item"
+					item: {
+						id: "mekanism:module_magnetic_attraction_unit"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "4EC0B81EF691BE2A"
+					type: "item"
+					item: {
+						id: "minecraft:emerald"
+						count: 1
+					}
+					count: 4
+				}
+				{
+					id: "2C7B09AC09A61C59"
+					type: "xp_levels"
+					xp_levels: 10
+				}
+			]
+		}
+		{
+			id: "157F48D0F5296D8F"
+			x: 9.35d
+			y: 24.845d
+			icon: {
+				id: "mekanismgenerators:module_solar_recharging_unit"
+				count: 1
+			}
+			optional: true
+			hide_dependency_lines: true
+			dependencies: [
+				"33C0F5D885E9ED2E"
+			]
+			tasks: [
+				{
+					id: "1CE80D705E24B309"
+					type: "item"
+					item: {
+						id: "mekanismgenerators:module_solar_recharging_unit"
+						count: 1
+					}
+					count: 1
+				}
+				{
+					id: "387A49FB07C39000"
+					type: "item"
+					item: {
+						id: "mekanismgenerators:module_geothermal_generator_unit"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "24464DDDA82F3D31"
+					type: "item"
+					item: {
+						id: "mekanismgenerators:advanced_solar_generator"
+						count: 1
+					}
+					count: 1
+				}
+				{
+					id: "447862F6B9CF96F1"
+					type: "xp_levels"
+					xp_levels: 10
+				}
+			]
+		}
+		{
 			id: "124DBFC71F224682"
-			x: 11.6d
-			y: 19.97d
+			x: 14.95d
+			y: 22.97d
 			icon: {
 				id: "mekmm:presser"
 				count: 1
@@ -1545,8 +2011,8 @@
 		}
 		{
 			id: "23E724AA117F95D3"
-			x: 13.6d
-			y: 19.97d
+			x: 16.95d
+			y: 22.97d
 			icon: {
 				id: "mekmm:planting_station"
 				count: 1
@@ -1585,8 +2051,8 @@
 		}
 		{
 			id: "11B4C1BD496F1FC7"
-			x: 15.6d
-			y: 19.97d
+			x: 18.95d
+			y: 22.97d
 			icon: {
 				id: "mekmm:large_chemical_infuser"
 				count: 1
@@ -1630,13 +2096,14 @@
 		}
 		{
 			id: "2E38DEE7DEFA0E17"
-			x: 19.45d
-			y: 14.370000000000001d
+			x: 0.0d
+			y: 31.894999999999996d
 			icon: {
 				id: "mekanism:pellet_polonium"
 				count: 1
 			}
 			optional: true
+			hide_dependency_lines: true
 			dependencies: [
 				"442AB303E889EDA0"
 			]
@@ -1656,13 +2123,14 @@
 		}
 		{
 			id: "171A859BCBDB1A9F"
-			x: 19.45d
-			y: 15.870000000000001d
+			x: 3.1d
+			y: 31.894999999999996d
 			icon: {
 				id: "mekanismgenerators:fusion_reactor_frame"
 				count: 1
 			}
 			optional: true
+			hide_dependency_lines: true
 			dependencies: [
 				"442AB303E889EDA0"
 			]
@@ -1682,8 +2150,8 @@
 		}
 		{
 			id: "120E466F21A0C847"
-			x: 19.35d
-			y: 20.72d
+			x: 6.2d
+			y: 31.894999999999996d
 			icon: {
 				id: "mekanism:elite_control_circuit"
 				count: 1
@@ -1774,7 +2242,7 @@
 			id: "615A9EB7FECDFECB"
 			image: "kronwerke:textures/quests/mekanism_elite/quantum.png"
 			x: 1.9649999999999999d
-			y: 9.92d
+			y: 11.419999999999998d
 			width: 4.93d
 			height: 0.9d
 			rotation: 0.0d
@@ -1784,7 +2252,7 @@
 			id: "67EC1A0B88E5D7C5"
 			image: "kronwerke:textures/quests/mekanism_elite/fusion.png"
 			x: 10.895d
-			y: 9.92d
+			y: 11.419999999999998d
 			width: 2.29d
 			height: 0.9d
 			rotation: 0.0d
@@ -1794,7 +2262,7 @@
 			id: "2E6DDA76BF3EB3DF"
 			image: "kronwerke:textures/quests/mekanism_elite/mekasuit.png"
 			x: 1.08d
-			y: 18.52d
+			y: 21.52d
 			width: 3.16d
 			height: 0.9d
 			rotation: 0.0d
@@ -1803,8 +2271,8 @@
 		{
 			id: "1A4FBA822A1D7A28"
 			image: "kronwerke:textures/quests/mekanism_elite/mekmm.png"
-			x: 13.379999999999999d
-			y: 18.52d
+			x: 16.73d
+			y: 21.52d
 			width: 4.56d
 			height: 0.9d
 			rotation: 0.0d
@@ -1813,8 +2281,8 @@
 		{
 			id: "7129956A502B7B68"
 			image: "kronwerke:textures/quests/mekanism_elite/goal.png"
-			x: 19.435000000000002d
-			y: 18.52d
+			x: 0.835d
+			y: 29.694999999999997d
 			width: 2.67d
 			height: 0.9d
 			rotation: 0.0d

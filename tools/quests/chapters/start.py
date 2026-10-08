@@ -97,6 +97,28 @@ quests = [
           rewards=[reward_table("s1_uncommon"), reward_xp(5)],
           deps=["d_iron", "o_handin"], icon="minecraft:clock", size=1.5, shape="gear"),
 
+    quest("d_waystone", 7.5, -7, "&6Aktiviere den Wegstein am Spawn",
+          subtitle="Damit du immer zurückfindest.",
+          description=[
+              "Am Spawn steht ein &6Wegstein&r. Ein &eRechtsklick&r aktiviert ihn für dich. Ab dann bringt dich jeder Wegstein, den du kennst, mit einem Klick hierher zurück.",
+              "",
+              "Die Reise kostet etwas Erfahrung, je weiter, desto mehr. Mehr dazu im Kapitel &6Tipps und Tricks&r.",
+          ],
+          tasks=[task_checkmark("Aktiviert")],
+          rewards=[reward_xp(3)],
+          deps=["o_find"], icon="waystones:waystone", optional=True),
+
+    quest("d_backpack", 5.5, -7, "&6Näh dir einen Rucksack",
+          subtitle="Mehr Platz für den ersten Ausflug.",
+          description=[
+              "Oben Faden, Leder, Faden. In der Mitte Faden, eine &6Truhe&r, Faden. Unten drei Leder. Heraus kommt ein &6Rucksack&r mit &d27&r Feldern, so viel wie eine Truhe.",
+              "",
+              "Trag ihn auf dem Rücken oder in der Hand, &eB&r öffnet ihn. Wie du ihn später vergrößerst, steht im Kapitel &6Lager&r.",
+          ],
+          tasks=[task_item("sophisticatedbackpacks:backpack", 1)],
+          rewards=[reward_item("minecraft:leather", 4), reward_xp(3)],
+          deps=["d_stone"], icon="sophisticatedbackpacks:backpack", optional=True),
+
     # ---- Der Obelisk -----------------------------------------------------------------
     quest("o_obelisk", 4.5, 0, "&6Lies die Bossleiste",
           subtitle="Ein Ziel, mehrere Säulen, alle müssen voll werden.",
@@ -262,7 +284,7 @@ quests = [
     quest("m_altar", 13.5, 4.5, "&aBau den Natural Altar",
           subtitle="Ein Ritual für den Altar, ein Bauwerk drumherum.",
           description=[
-              "Ritual des Waldes mit einem &6Eichensetzling&r: 3 &6Lebensstein&r (Livingrock, aus Botanias Pure Daisy), ein Gold Leaf, ein Goldbarren und ein Token of Joy. Heraus kommt der &6Natural Altar&r.",
+              "Ritual des Waldes mit einem &6Eichensetzling&r: 3 &6Lebestein&r (Livingrock, aus Botanias Pure Daisy), ein Gold Leaf, ein Goldbarren und ein Token of Joy. Heraus kommt der &6Natural Altar&r.",
               "",
               "Der Altar arbeitet nur in seinem Bauwerk aus Steinziegeln, Brettern, gemeißelten Steinziegeln und &6Golden Stone Bricks&r (Steinziegel und Brilliant Fiber). Das Buch zeigt den Aufbau Schicht für Schicht.",
           ],
@@ -310,6 +332,52 @@ quests = [
           tasks=[task_item("kronwerke:source_keystone", 1)],
           rewards=[reward_table("s1_uncommon"), reward_xp(8)],
           deps=["m_goldleaf", "o_magic"], icon="kronwerke:source_keystone", size=1.25, shape="gear"),
+
+    quest("m_gearparts", 17, 5, "&6Sammle die Teile für das Getriebe",
+          subtitle="Alles aus Create, bis auf das Infused Iron.",
+          description=[
+              "Für ein &6Steinwerk-Getriebe&r brauchst du neben dem &6Infused Iron&r vier &6Andesitgehäuse&r, ein &6Großes Zahnrad&r, eine &6Mechanische Presse&r, einen &6Mahlstein&r und ein &6Wasserrad&r.",
+              "",
+              "Alles davon gibt es mit Create in Stufe 1. Das Kapitel &6Create&r zeigt dir jedes Teil, und Presse und Mahlstein kannst du gleich für deine Andesitstraße nutzen, bevor sie im Getriebe landen.",
+          ],
+          tasks=[task_item("create:andesite_casing", 4), task_item("create:large_cogwheel", 1),
+                 task_item("create:mechanical_press", 1), task_item("create:millstone", 1),
+                 task_item("create:water_wheel", 1)],
+          rewards=[reward_item("create:andesite_alloy", 8), reward_xp(4)],
+          deps=["o_tech"], icon="create:andesite_casing", section="milestones"),
+
+    quest("m_livingrock", 12.5, 6, "&aMach Lebestein",
+          subtitle="Der Altar braucht drei davon.",
+          description=[
+              "&6Lebestein&r macht das &6Reine Gänseblümchen&r aus Botania: Stell Stein rund um die Blume, nach einer Weile wird er zu Lebestein.",
+              "",
+              "Für den &6Natural Altar&r brauchst du drei. Wie du das Gänseblümchen bekommst, steht im Kapitel &aBotania&r ganz am Anfang.",
+          ],
+          tasks=[task_item("botania:livingrock", 3)],
+          rewards=[reward_item("minecraft:stone", 16), reward_xp(3)],
+          deps=["m_token"], icon="botania:livingrock"),
+
+    quest("m_manadiamond", 14, 6, "&bInfundiere zwei Manadiamanten",
+          subtitle="Ein Diamant ins volle Manabecken.",
+          description=[
+              "Wirf einen &6Diamanten&r in ein &6Manabecken&r mit mindestens &d10 000 Mana&r. Er wird zum &bManadiamanten&r.",
+              "",
+              "Der &6Quellschlussstein&r braucht zwei davon. Wie du Mana erzeugst und ins Becken leitest, steht im Kapitel &aBotania&r.",
+          ],
+          tasks=[task_item("botania:mana_diamond", 2)],
+          rewards=[reward_xp(5)],
+          deps=["o_magic"], icon="botania:mana_diamond"),
+
+    quest("m_keyparts", 17.5, 6, "&dSammle die Teile für den Schlussstein",
+          subtitle="Vier Juwelblöcke und ein Quellglas.",
+          description=[
+              "Ein &6Quelljuwelblock&r sind vier &6Quelljuwelen&r im Quadrat. Oder du legst einen &6Amethystblock&r in die &aImbuement-Kammer&r, das kostet &d2 000 Source&r und spart dir die vier Juwelen.",
+              "",
+              "Das &6Quellglas&r: oben und unten je drei &6Archwood-Platten&r, an den Seiten Glas. Mit Manadiamanten, Andesitlegierung und Gold Leaf hast du dann alles für den &6Quellschlussstein&r.",
+          ],
+          tasks=[task_item("ars_nouveau:source_gem_block", 4), task_item("ars_nouveau:source_jar", 1)],
+          rewards=[reward_xp(5)],
+          deps=["m_manadiamond"], icon="ars_nouveau:source_gem_block"),
 
     # ---- Stufen und Sperren ----------------------------------------------------------
     quest("s_stages", 4.5, 11, "&6Lerne die fünf Stufen",
@@ -414,6 +482,17 @@ quests = [
           tasks=[task_checkmark("Verstanden")],
           rewards=[reward_table("s1_common")],
           deps=["s_latejoin"], icon="minecraft:amethyst_shard"),
+
+    quest("s_zinc", 13, 11.5, "&6Lager Zink für Stufe 2 ein",
+          subtitle="Wer vorsorgt, baut am ersten Tag Messing.",
+          description=[
+              "&6Zinkerz&r findest du schon jetzt beim Graben. Messing aus Kupfer und Zink öffnet zwar erst in Stufe 2, das Zink darfst du aber jetzt abbauen und einlagern.",
+              "",
+              "Ein paar Stapel &6Rohzink&r in der Truhe, und am Tag der Öffnung bist du gleich dabei.",
+          ],
+          tasks=[task_item("create:raw_zinc", 32)],
+          rewards=[reward_xp(5)],
+          deps=["s_locked"], icon="create:raw_zinc", optional=True),
 
     # ---- Auf dem Server --------------------------------------------------------------
     quest("v_discord", 4.5, 17, "&9Tritt dem Discord bei",
@@ -571,6 +650,15 @@ quests = [
           tasks=[task_checkmark("Angeschaut")],
           rewards=[reward_xp(2)],
           deps=["p_hub"], icon="productivetrees:hazel_sapling"),
+
+    quest("p_irons", P1, 10, "&dÖffne Iron's Spells",
+          subtitle="Schriftrollen, Tinte, die ersten Zauber.",
+          description=[
+              "Schriftrollen, gewöhnliche Tinte und der erste Zauberer. Eine zweite Magie neben Ars Nouveau, die in Stufe 1 schon losgeht.",
+          ],
+          tasks=[task_checkmark("Angeschaut")],
+          rewards=[reward_xp(2)],
+          deps=["p_hub"], icon="irons_spellbooks:copper_spell_book"),
 
     quest("p_explore", P2, -4, "&6Öffne Erkundung",
           subtitle="Biome, Wegsteine, die Minendimension.",

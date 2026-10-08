@@ -46,7 +46,7 @@
 		}
 		{
 			id: "6A354EC0C917FB13"
-			x: 6.3d
+			x: 4.0d
 			y: 4.02d
 			icon: {
 				id: "create:track"
@@ -82,8 +82,9 @@
 		}
 		{
 			id: "16E57009060AEC86"
-			x: 3.3d
-			y: 3.12d
+			x: 4.0d
+			y: 5.52d
+			hide_dependency_lines: true
 			dependencies: [
 				"237F2F27DF3947E6"
 			]
@@ -117,7 +118,7 @@
 		}
 		{
 			id: "708941A82D1AB8D8"
-			x: 8.3d
+			x: 6.0d
 			y: 4.02d
 			icon: {
 				id: "minecraft:obsidian"
@@ -144,7 +145,7 @@
 		{
 			id: "162A01626BD35D4C"
 			x: 0.0d
-			y: 12.319999999999999d
+			y: 11.67d
 			hide_dependency_lines: true
 			dependencies: [
 				"237F2F27DF3947E6"
@@ -180,7 +181,7 @@
 		{
 			id: "75252D5A74788A46"
 			x: 2.0d
-			y: 12.319999999999999d
+			y: 11.67d
 			dependencies: [
 				"162A01626BD35D4C"
 			]
@@ -215,7 +216,7 @@
 		{
 			id: "5FC39F15F47658CE"
 			x: 4.0d
-			y: 12.319999999999999d
+			y: 11.67d
 			dependencies: [
 				"75252D5A74788A46"
 			]
@@ -250,7 +251,7 @@
 		{
 			id: "1D444AAC25024D92"
 			x: 6.0d
-			y: 12.319999999999999d
+			y: 11.67d
 			icon: {
 				id: "create:railway_casing"
 				count: 1
@@ -289,9 +290,8 @@
 		}
 		{
 			id: "5538FC75A11EA5BA"
-			x: 0.0d
-			y: 17.67d
-			hide_dependency_lines: true
+			x: 8.4d
+			y: 11.67d
 			dependencies: [
 				"1D444AAC25024D92"
 			]
@@ -325,8 +325,8 @@
 		}
 		{
 			id: "4140EEBB772BD4AC"
-			x: 2.0d
-			y: 17.67d
+			x: 10.4d
+			y: 11.67d
 			icon: {
 				id: "create:railway_casing"
 				count: 1
@@ -359,8 +359,8 @@
 		}
 		{
 			id: "394F060D274014B2"
-			x: 4.0d
-			y: 17.67d
+			x: 12.4d
+			y: 11.67d
 			icon: {
 				id: "create:controls"
 				count: 1
@@ -397,8 +397,8 @@
 		}
 		{
 			id: "3B554A689296B483"
-			x: 6.4d
-			y: 17.67d
+			x: 14.8d
+			y: 11.67d
 			icon: {
 				id: "create:controls"
 				count: 1
@@ -434,12 +434,13 @@
 		}
 		{
 			id: "416DBD57A4EDBCD1"
-			x: 9.2d
-			y: 16.17d
+			x: 16.8d
+			y: 10.32d
 			icon: {
 				id: "minecraft:lever"
 				count: 1
 			}
+			hide_dependency_lines: true
 			dependencies: [
 				"3B554A689296B483"
 			]
@@ -459,12 +460,13 @@
 		}
 		{
 			id: "6C0470E74CFDA0DC"
-			x: 9.2d
-			y: 19.17d
+			x: 16.8d
+			y: 11.67d
 			icon: {
 				id: "create:track_station"
 				count: 1
 			}
+			hide_dependency_lines: true
 			dependencies: [
 				"3B554A689296B483"
 			]
@@ -484,9 +486,10 @@
 		}
 		{
 			id: "2FE76D89B8BB41ED"
-			x: 9.2d
-			y: 20.67d
+			x: 0.15000000000000213d
+			y: 14.620000000000001d
 			optional: true
+			hide_dependency_lines: true
 			dependencies: [
 				"3B554A689296B483"
 			]
@@ -511,8 +514,8 @@
 		}
 		{
 			id: "7701AFCD425DC02F"
-			x: 11.55d
-			y: 4.27d
+			x: 16.65d
+			y: 5.37d
 			icon: {
 				id: "create:schedule"
 				count: 1
@@ -549,12 +552,13 @@
 		}
 		{
 			id: "5F7DAA47C968585F"
-			x: 13.950000000000001d
+			x: 9.0d
 			y: 4.27d
 			icon: {
 				id: "create:blaze_burner"
 				count: 1
 			}
+			hide_dependency_lines: true
 			dependencies: [
 				"7701AFCD425DC02F"
 			]
@@ -574,7 +578,7 @@
 		}
 		{
 			id: "290477188DE42ABC"
-			x: 17.3d
+			x: 11.0d
 			y: 4.27d
 			icon: {
 				id: "create:track_station"
@@ -609,8 +613,8 @@
 		}
 		{
 			id: "26D99DD63F3E5821"
-			x: 19.700000000000003d
-			y: 4.27d
+			x: 13.4d
+			y: 5.77d
 			optional: true
 			dependencies: [
 				"290477188DE42ABC"
@@ -645,8 +649,8 @@
 		}
 		{
 			id: "2F69AF6DB1641D62"
-			x: 13.55d
-			y: 5.77d
+			x: 18.65d
+			y: 4.02d
 			icon: {
 				id: "create:schedule"
 				count: 1
@@ -672,8 +676,8 @@
 		}
 		{
 			id: "69E0EC05B3CAA42C"
-			x: 13.55d
-			y: 7.12d
+			x: 18.65d
+			y: 5.37d
 			icon: {
 				id: "create:schedule"
 				count: 1
@@ -699,8 +703,8 @@
 		}
 		{
 			id: "71F54037FD20BAE2"
-			x: 13.55d
-			y: 8.47d
+			x: 18.65d
+			y: 6.720000000000001d
 			icon: {
 				id: "create:schedule"
 				count: 1
@@ -726,8 +730,8 @@
 		}
 		{
 			id: "4103ABC9164E225E"
-			x: 14.9d
-			y: 5.77d
+			x: 20.0d
+			y: 4.02d
 			icon: {
 				id: "create:schedule"
 				count: 1
@@ -753,8 +757,8 @@
 		}
 		{
 			id: "554BB902855E5DC6"
-			x: 14.9d
-			y: 7.12d
+			x: 20.0d
+			y: 5.37d
 			icon: {
 				id: "create:schedule"
 				count: 1
@@ -779,13 +783,95 @@
 			]
 		}
 		{
+			id: "443EA6D204C4BCEC"
+			x: 20.0d
+			y: 6.720000000000001d
+			icon: {
+				id: "create:schedule"
+				count: 1
+			}
+			optional: true
+			hide_dependency_lines: true
+			dependencies: [
+				"7701AFCD425DC02F"
+			]
+			tasks: [
+				{
+					id: "7FD02350150E40E7"
+					type: "checkmark"
+				}
+			]
+			rewards: [
+				{
+					id: "1BAAF49180AC2939"
+					type: "xp_levels"
+					xp_levels: 2
+				}
+			]
+		}
+		{
+			id: "5B72439E13FA934F"
+			x: 21.349999999999998d
+			y: 4.02d
+			icon: {
+				id: "create:schedule"
+				count: 1
+			}
+			optional: true
+			hide_dependency_lines: true
+			dependencies: [
+				"7701AFCD425DC02F"
+			]
+			tasks: [
+				{
+					id: "540817C07EE9867E"
+					type: "checkmark"
+				}
+			]
+			rewards: [
+				{
+					id: "50376AD2B29308B3"
+					type: "xp_levels"
+					xp_levels: 2
+				}
+			]
+		}
+		{
+			id: "32EECADBCCD8ED35"
+			x: 21.349999999999998d
+			y: 5.37d
+			icon: {
+				id: "create:schedule"
+				count: 1
+			}
+			optional: true
+			hide_dependency_lines: true
+			dependencies: [
+				"7701AFCD425DC02F"
+			]
+			tasks: [
+				{
+					id: "2C2F5192C9591F23"
+					type: "checkmark"
+				}
+			]
+			rewards: [
+				{
+					id: "7AB90081ADA77B54"
+					type: "xp_levels"
+					xp_levels: 2
+				}
+			]
+		}
+		{
 			id: "1D527FD4BD11E420"
-			x: 9.2d
-			y: 17.67d
+			x: 19.8d
+			y: 10.32d
 			icon: {
 				id: "create:track_signal"
 				count: 1
 			}
+			hide_dependency_lines: true
 			dependencies: [
 				"3B554A689296B483"
 			]
@@ -819,8 +905,8 @@
 		}
 		{
 			id: "6D1DCCF8FBC15F5C"
-			x: 11.2d
-			y: 17.67d
+			x: 21.8d
+			y: 10.32d
 			icon: {
 				id: "create:track_signal"
 				count: 1
@@ -845,8 +931,8 @@
 		}
 		{
 			id: "6E1640D4F0A6D771"
-			x: 13.2d
-			y: 17.67d
+			x: 23.8d
+			y: 10.32d
 			optional: true
 			dependencies: [
 				"6D1DCCF8FBC15F5C"
@@ -872,8 +958,8 @@
 		}
 		{
 			id: "4EEACBE873E2B758"
-			x: 16.45d
-			y: 16.42d
+			x: 0.25d
+			y: 21.169999999999998d
 			icon: {
 				id: "create:portable_storage_interface"
 				count: 1
@@ -918,8 +1004,8 @@
 		}
 		{
 			id: "21F5E8D8D5381565"
-			x: 18.849999999999998d
-			y: 16.42d
+			x: 2.65d
+			y: 21.169999999999998d
 			optional: true
 			dependencies: [
 				"4EEACBE873E2B758"
@@ -954,8 +1040,8 @@
 		}
 		{
 			id: "5D277AE3F3547F8E"
-			x: 18.849999999999998d
-			y: 17.92d
+			x: 2.65d
+			y: 22.669999999999998d
 			icon: {
 				id: "create:item_vault"
 				count: 1
@@ -986,8 +1072,8 @@
 		}
 		{
 			id: "4EA52E5BB217772E"
-			x: 18.849999999999998d
-			y: 19.42d
+			x: 2.65d
+			y: 24.169999999999998d
 			icon: {
 				id: "create:white_postbox"
 				count: 1
@@ -1025,8 +1111,8 @@
 		}
 		{
 			id: "56EF2EFA989FDA9F"
-			x: 0.75d
-			y: 25.019999999999996d
+			x: 6.4d
+			y: 21.669999999999998d
 			icon: {
 				id: "create:track_station"
 				count: 1
@@ -1071,6 +1157,224 @@
 				}
 			]
 		}
+		{
+			id: "23F8FBBFDCA3CDCC"
+			x: 6.0d
+			y: 5.52d
+			optional: true
+			dependencies: [
+				"16E57009060AEC86"
+			]
+			tasks: [
+				{
+					id: "22316D694E21F735"
+					type: "item"
+					item: {
+						id: "create:metal_girder"
+						count: 1
+					}
+					count: 32
+				}
+			]
+			rewards: [
+				{
+					id: "53F46D5AE175C28C"
+					type: "item"
+					item: {
+						id: "create:iron_sheet"
+						count: 1
+					}
+					count: 8
+				}
+				{
+					id: "1587A0735BA58F59"
+					type: "xp_levels"
+					xp_levels: 3
+				}
+			]
+		}
+		{
+			id: "1589BDCFE3F743A6"
+			x: 16.8d
+			y: 13.02d
+			icon: {
+				id: "create:controls"
+				count: 1
+			}
+			hide_dependency_lines: true
+			dependencies: [
+				"3B554A689296B483"
+			]
+			tasks: [
+				{
+					id: "2D8322E6BDA869A2"
+					type: "item"
+					item: {
+						id: "create:controls"
+						count: 1
+					}
+					count: 2
+				}
+			]
+			rewards: [
+				{
+					id: "2C006E3B917441B3"
+					type: "item"
+					item: {
+						id: "create:precision_mechanism"
+						count: 1
+					}
+					count: 1
+				}
+				{
+					id: "72A74C3116294274"
+					type: "xp_levels"
+					xp_levels: 4
+				}
+			]
+		}
+		{
+			id: "36FC70F511228615"
+			x: 0.15000000000000213d
+			y: 17.32d
+			icon: {
+				id: "create:white_seat"
+				count: 1
+			}
+			optional: true
+			hide_dependency_lines: true
+			dependencies: [
+				"3B554A689296B483"
+			]
+			tasks: [
+				{
+					id: "6C95D8DD4C69FB57"
+					type: "item"
+					item: {
+						id: "create:white_seat"
+						count: 1
+					}
+					count: 4
+				}
+			]
+			rewards: [
+				{
+					id: "53ABB1FD7B715959"
+					type: "item"
+					item: {
+						id: "minecraft:white_wool"
+						count: 1
+					}
+					count: 8
+				}
+				{
+					id: "1F66EA4C9E5645D1"
+					type: "xp_levels"
+					xp_levels: 3
+				}
+			]
+		}
+		{
+			id: "5D0BE98FE94CBC51"
+			x: 0.15000000000000213d
+			y: 15.97d
+			icon: {
+				id: "create:mechanical_drill"
+				count: 1
+			}
+			optional: true
+			hide_dependency_lines: true
+			dependencies: [
+				"3B554A689296B483"
+			]
+			tasks: [
+				{
+					id: "6B01F455EE674579"
+					type: "item"
+					item: {
+						id: "create:mechanical_drill"
+						count: 1
+					}
+					count: 4
+				}
+			]
+			rewards: [
+				{
+					id: "7868C8E190D9FE1C"
+					type: "item"
+					item: {
+						id: "create:andesite_alloy"
+						count: 1
+					}
+					count: 16
+				}
+				{
+					id: "6636869701C8988A"
+					type: "xp_levels"
+					xp_levels: 4
+				}
+			]
+		}
+		{
+			id: "1397CD657DFF33E0"
+			x: 13.4d
+			y: 4.27d
+			icon: {
+				id: "create:track"
+				count: 1
+			}
+			shape: "diamond"
+			dependencies: [
+				"290477188DE42ABC"
+			]
+			tasks: [
+				{
+					id: "230E35F739B138E9"
+					type: "checkmark"
+				}
+			]
+			rewards: [
+				{
+					id: "4DE88858641763F8"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+		}
+		{
+			id: "3122C492C56B4F48"
+			x: 23.8d
+			y: 11.82d
+			icon: {
+				id: "create:track_signal"
+				count: 1
+			}
+			dependencies: [
+				"6D1DCCF8FBC15F5C"
+			]
+			tasks: [
+				{
+					id: "64F2CEF8FB3A87F1"
+					type: "checkmark"
+				}
+			]
+			rewards: [
+				{
+					id: "1BF32A93950A658D"
+					type: "item"
+					item: {
+						id: "create:track_signal"
+						count: 1
+					}
+					count: 4
+				}
+				{
+					id: "5AB7F2EBE852942D"
+					type: "xp_levels"
+					xp_levels: 6
+				}
+			]
+		}
 	]
 	images: [
 		{
@@ -1096,7 +1400,7 @@
 		{
 			id: "511BAC91D2CC9715"
 			image: "kronwerke:textures/quests/create_trains/track.png"
-			x: 6.8549999999999995d
+			x: 4.555d
 			y: 2.5700000000000003d
 			width: 2.11d
 			height: 0.9d
@@ -1106,7 +1410,7 @@
 		{
 			id: "4478211EBA775F7A"
 			image: "kronwerke:textures/quests/create_trains/schedule.png"
-			x: 12.420000000000002d
+			x: 10.120000000000001d
 			y: 2.5700000000000003d
 			width: 3.24d
 			height: 0.9d
@@ -1115,39 +1419,49 @@
 		}
 		{
 			id: "1E02BC9059735A5D"
-			image: "kronwerke:textures/quests/create_trains/trains.png"
-			x: 0.22499999999999998d
-			y: 10.619999999999997d
-			width: 1.45d
+			image: "kronwerke:textures/quests/create_trains/conditions.png"
+			x: 19.485d
+			y: 2.5700000000000003d
+			width: 7.17d
 			height: 0.9d
 			rotation: 0.0d
 			order: 1
 		}
 		{
 			id: "535B7036B0526049"
-			image: "kronwerke:textures/quests/create_trains/signals.png"
-			x: 0.7949999999999999d
-			y: 14.719999999999999d
-			width: 2.59d
+			image: "kronwerke:textures/quests/create_trains/trains.png"
+			x: 0.22499999999999998d
+			y: 8.87d
+			width: 1.45d
 			height: 0.9d
 			rotation: 0.0d
 			order: 1
 		}
 		{
 			id: "7E2B09A6247CF037"
-			image: "kronwerke:textures/quests/create_trains/cargo.png"
-			x: 16.88d
-			y: 14.719999999999999d
-			width: 2.36d
+			image: "kronwerke:textures/quests/create_trains/signals.png"
+			x: 20.595d
+			y: 8.87d
+			width: 2.59d
 			height: 0.9d
 			rotation: 0.0d
 			order: 1
 		}
 		{
 			id: "3A5E1E3F94811A7D"
+			image: "kronwerke:textures/quests/create_trains/cargo.png"
+			x: 0.6799999999999999d
+			y: 19.47d
+			width: 2.36d
+			height: 0.9d
+			rotation: 0.0d
+			order: 1
+		}
+		{
+			id: "6071C6EA941C1F99"
 			image: "kronwerke:textures/quests/create_trains/goal.png"
-			x: 0.835d
-			y: 22.819999999999997d
+			x: 6.485d
+			y: 19.47d
 			width: 2.67d
 			height: 0.9d
 			rotation: 0.0d

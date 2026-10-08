@@ -383,13 +383,121 @@ quests = [
           tasks=[task_item("nuclearcraft:depleted_fuel_uranium_leu_235", 12), task_item("nuclearcraft:fission_reactor_solid_fuel_cell", 4)],
           rewards=[reward_table("s4_rare"), reward_item("nuclearcraft:fuel_uranium_heu_235", 3), reward_xp(25)],
           deps=["reactor", "medicine"], icon="nuclearcraft:fuel_uranium_heu_235", size=2.5, shape="gear"),
+
+    # ---- neue Quests: Erze und Maschinen ---------------------------------------
+    quest("upgrades", 15, 0.5, "&9Rüste Maschinen mit Upgrades auf",
+          subtitle="Schneller, oder sparsamer, oder beides.",
+          description=[
+              "&6Speed Upgrade:&r vier Lapisstaub und vier Redstonestaub um eine &6Schwere Wägeplatte&r. &6Energy Upgrade:&r vier Obsidianstaub und vier Quarzstaub um eine &6Leichte Wägeplatte&r. Die Staube mahlt die Manufactory.",
+              "",
+              "Die meisten Maschinen haben seitlich zwei Upgrade-Plätze: der erste nimmt Energy Upgrades, der zweite Speed Upgrades, bis 64 pro Platz. Jedes Speed Upgrade macht die Maschine schneller, der Stromverbrauch wächst aber im Quadrat.",
+              "",
+              "Energy Upgrades ziehen diesen Mehrverbrauch wieder ab und vergrößern den Puffer. Misch beide, statt nur auf Tempo zu gehen.",
+          ],
+          tasks=[task_item("nuclearcraft:speed_upgrade", 4), task_item("nuclearcraft:energy_upgrade", 4)],
+          rewards=[reward_item("minecraft:lapis_lazuli", 16), reward_item("minecraft:redstone", 16), reward_xp(10)],
+          deps=["graphite"], icon="nuclearcraft:speed_upgrade"),
+
+    quest("solar", 15, 2.5, "&eStell Solarpanels auf",
+          subtitle="28 FE pro Tick, einfach so.",
+          description=[
+              "&6Solar Panel Basic:&r Lapis, Glasscheibe, Lapis oben, &6Schwere Wägeplatte&r, Lapis, Schwere Wägeplatte in der Mitte, &6Coil Copper&r, &6Tageslichtsensor&r, Coil Copper unten.",
+              "",
+              "Es macht &e28 FE/t&r, solange es Tag ist und der Himmel frei. Drei davon mit vier &6Plate Advanced&r, Quarzstaub und einer Coil Copper ergeben ein &6Solar Panel Advanced&r mit &e112 FE/t&r.",
+              "",
+              "Die Stufen darüber, DU und Elite, schaffen 448 und 1 792 FE/t.",
+          ],
+          tasks=[task_item("nuclearcraft:solar_panel_basic", 2)],
+          rewards=[reward_item("minecraft:daylight_detector", 2), reward_xp(10)],
+          deps=["welcome"], icon="nuclearcraft:solar_panel_basic"),
+
+    quest("nuclear_furnace", 10, 3.2, "&cBau einen Nuclear Furnace",
+          subtitle="Ein Ofen, der Uran verbrennt.",
+          description=[
+              "&6Plate Basic&r in die Ecken, &6Eisenbarren&r an die Seiten, ein &6Ofen&r in die Mitte ergeben den &6Nuclear Furnace&r.",
+              "",
+              "Er schmilzt schnell und verbrennt &6Uranbarren&r als Brennstoff statt Kohle. Laut NuclearCraft für einen Ofen erstaunlich sicher.",
+          ],
+          tasks=[task_item("nuclearcraft:nuclear_furnace", 1)],
+          rewards=[reward_item("minecraft:raw_iron", 32), reward_xp(5)],
+          deps=["basics", "ores"], icon="nuclearcraft:nuclear_furnace", optional=True),
+
+    # ---- neue Quests: Bauteile -------------------------------------------------
+    quest("tough_armor", 17.5, 6, "&7Schmied eine Tough-Rüstung",
+          subtitle="Vier Teile aus Tough Alloy.",
+          description=[
+              "&6Tough Alloy&r in der Form der Eisenrüstung ergibt &6Tough Helmet&r, &6Tough Chestplate&r, &6Tough Leggings&r und &6Tough Boots&r, zusammen &e24 Barren&r.",
+              "",
+              "Jedes Teil nimmt an der Schmiede eine Strahlenschutz-Platte von Nuclear Radiation auf, siehe Abschnitt Strahlung.",
+          ],
+          tasks=[task_item("nuclearcraft:tough_helmet", 1), task_item("nuclearcraft:tough_chestplate", 1),
+                 task_item("nuclearcraft:tough_leggings", 1), task_item("nuclearcraft:tough_boots", 1)],
+          rewards=[reward_item("nuclearcraft:tough_alloy_ingot", 8), reward_xp(10)],
+          deps=["tough"], icon="nuclearcraft:tough_chestplate", optional=True),
+
+    # ---- neue Quests: Der Spaltreaktor -----------------------------------------
+    quest("redstone_sink", 12.5, 14.5, "&bBau einen Redstone-Kühlkörper",
+          subtitle="Der nächste Kühlkörper nach Wasser.",
+          description=[
+              "Ein &6Empty Heat Sink&r mit vier &6Redstonestaub&r im Kreuz ergibt einen &6Redstone Heat Sink&r.",
+              "",
+              "Jede Sorte Kühlkörper hat ihre eigene Kühlrate und eigene Regeln, wo sie sitzen darf. Der Tooltip zeigt die Rate in H/t, JEI unter &eHeat Sink Placement&r die Regel. Mit mehreren Sorten kühlst du dichtere Reaktoren.",
+          ],
+          tasks=[task_item("nuclearcraft:redstone_heat_sink", 4)],
+          rewards=[reward_item("minecraft:redstone_block", 4), reward_xp(10)],
+          deps=["heatsinks"], icon="nuclearcraft:redstone_heat_sink"),
+
+    quest("turbine", 15, 9.5, "&bBau eine Steam Turbine",
+          subtitle="Dampf aus dem Reaktor wird Strom.",
+          description=[
+              "&6Plate Advanced&r in die Ecken, ein &6Kessel&r oben, &6Coil Copper&r links und rechts, ein &6Chassis&r in die Mitte, ein &6Ofen&r unten ergeben die &6Steam Turbine&r.",
+              "",
+              "Stellst du den Reaktor-Port auf den Siede-Modus, macht der Reaktor Dampf statt Strom. Die Turbine wandelt diesen Dampf in Strom um. Für große Anlagen gibt es die Turbine auch als Multiblock.",
+          ],
+          tasks=[task_item("nuclearcraft:steam_turbine", 1)],
+          rewards=[reward_item("nuclearcraft:coil_copper", 4), reward_xp(10)],
+          deps=["port"], icon="nuclearcraft:steam_turbine", optional=True),
+
+    quest("heu", 20, 11.5, "&cMisch HEU-235",
+          subtitle="Mehr Uran-235, mehr Hitze.",
+          description=[
+              "Drei &6Uran-235&r und sechs &6Uran-238&r an der Werkbank ergeben drei &6HEU-235&r. Thorium-Brennstoff &6TBU&r: ein Thorium-230 und acht Thorium-232 geben drei.",
+              "",
+              "HEU macht viel mehr Hitze als LEU. Erst wenn deine Kühlung mit Reserve läuft, lohnt sich der Wechsel. Im Controller siehst du sofort, ob die Netto-Hitze noch bei null bleibt.",
+          ],
+          tasks=[task_item("nuclearcraft:fuel_uranium_heu_235", 3)],
+          rewards=[reward_item("nuclearcraft:uranium_238", 8), reward_xp(10)],
+          deps=["reactor"], icon="nuclearcraft:fuel_uranium_heu_235"),
+
+    # ---- neue Quests: Strahlung ------------------------------------------------
+    quest("shielding", 2.5, 19, "&eVerstärk deine Rüstung gegen Strahlung",
+          subtitle="Eine Platte pro Teil, an der Schmiede.",
+          description=[
+              "&6Light Radiation Shielding:&r Kupfer, Leder, Kupfer oben, Eisennugget, Tonklumpen, Eisennugget in der Mitte, Kupfer, Leder, Kupfer unten, gibt vier. &6Medium:&r Eisen, Lapis, Eisen um einen Goldblock, gibt zwei.",
+              "",
+              "Am &6Schmiedetisch&r: Rüstungsteil in den Basisplatz, Platte dazu. Das geht mit jeder Rüstung. Leicht gibt &e2 Prozent&r Schutz, Mittel 4, Schwer 7, Dicht 12. Jedes Teil nimmt eine Platte.",
+          ],
+          tasks=[task_item("nuclear_radiation:rad_shielding_light", 4), task_item("nuclear_radiation:rad_shielding_medium", 2)],
+          rewards=[reward_item("minecraft:copper_ingot", 16), reward_xp(10)],
+          deps=["hazmat"], icon="nuclear_radiation:rad_shielding_light"),
+
+    quest("prussian", 5, 19, "&eMisch Preußischblau und Schutztrank",
+          subtitle="Vorbeugen statt heilen.",
+          description=[
+              "&6Preußischblau:&r ein Lapislazuli und zwei Eisennuggets. Es nimmt sofort &e1 Sv&r Dosis und spült zwei Minuten lang Cäsium aus dem Körper.",
+              "",
+              "&6Rad-Protection Potion:&r Glasflasche, Jodtablette und Preußischblau. Kein Abzug, aber fünf Minuten lang bis zu &e95 Prozent&r weniger neue Dosis. Trink ihn, bevor du an den Reaktor gehst.",
+          ],
+          tasks=[task_item("nuclear_radiation:prussian_blue", 4), task_item("nuclear_radiation:rad_protection_potion", 2)],
+          rewards=[reward_item("minecraft:lapis_lazuli", 16), reward_xp(10)],
+          deps=["medicine"], icon="nuclear_radiation:prussian_blue"),
 ]
 
 images = [
     head("title", "NuclearCraft", 0, -3, height=1.6, kind="title"),
     head("stage", "Stufe 4: Sternwerk", 0, -1.6, height=0.55, kind="note", colour="stone"),
     head("machines", "Erze und Maschinen", 5, -0.6, colour="nature"),
-    head("parts", "Bauteile", 0, 4.4, colour="brass"),
+    head("parts", "Bauteile", 3.5, 4.4, colour="brass"),
     head("reactor", "Der Spaltreaktor", 0, 7.7, colour="fire"),
     head("radiation", "Strahlung", 0, 15.2, colour="brass"),
 ]

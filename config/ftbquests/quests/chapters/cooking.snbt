@@ -407,6 +407,80 @@
 			]
 		}
 		{
+			id: "7A2D3C0D4467764D"
+			x: 15.0d
+			y: 4.535d
+			icon: {
+				id: "cookingforblockheads:connector"
+				count: 1
+			}
+			optional: true
+			dependencies: [
+				"7484223088881FCF"
+			]
+			tasks: [
+				{
+					id: "191E180F1C8C2FBB"
+					type: "item"
+					item: {
+						id: "cookingforblockheads:connector"
+						count: 1
+					}
+					count: 4
+				}
+			]
+			rewards: [
+				{
+					id: "78C64B3A0D22D1AA"
+					type: "item"
+					item: {
+						id: "minecraft:terracotta"
+						count: 1
+					}
+					count: 8
+				}
+			]
+		}
+		{
+			id: "17FFFD7527916731"
+			x: 15.0d
+			y: 6.285d
+			icon: {
+				id: "minecraft:cake"
+				count: 1
+			}
+			dependencies: [
+				"357EBB1C0530E2D9"
+			]
+			tasks: [
+				{
+					id: "2F0EA9E6C9FCC756"
+					type: "item"
+					item: {
+						id: "minecraft:cake"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "1FC658BD97B21C10"
+					type: "item"
+					item: {
+						id: "minecraft:sugar"
+						count: 1
+					}
+					count: 16
+				}
+				{
+					id: "41A7BA98B3275DE8"
+					type: "xp_levels"
+					xp_levels: 3
+				}
+			]
+		}
+		{
 			id: "61E13FD902B5954C"
 			x: 0.25d
 			y: 10.385d
@@ -486,7 +560,7 @@
 		{
 			id: "487D59D9430175DA"
 			x: 2.65d
-			y: 11.885d
+			y: 13.885d
 			icon: {
 				id: "farmersdelight:rich_soil"
 				count: 1
@@ -529,7 +603,7 @@
 		{
 			id: "6FB294DD0D637FC4"
 			x: 4.65d
-			y: 10.385d
+			y: 12.135d
 			icon: {
 				id: "minecraft:oak_sapling"
 				count: 1
@@ -573,9 +647,91 @@
 			]
 		}
 		{
+			id: "1F43AD9667DA2153"
+			x: 4.65d
+			y: 10.385d
+			icon: {
+				id: "cookingforblockheads:counter"
+				count: 1
+			}
+			dependencies: [
+				"6580F31A803F9769"
+			]
+			tasks: [
+				{
+					id: "750D42F332495E04"
+					type: "checkmark"
+				}
+			]
+			rewards: [
+				{
+					id: "53DD87C5A40C7600"
+					type: "item"
+					item: {
+						id: "minecraft:hopper"
+						count: 1
+					}
+					count: 2
+				}
+				{
+					id: "5282976EAFF761F7"
+					type: "xp_levels"
+					xp_levels: 4
+				}
+			]
+		}
+		{
+			id: "11406E459331DEF9"
+			x: 4.65d
+			y: 13.885d
+			icon: {
+				id: "minecraft:sweet_berries"
+				count: 1
+			}
+			dependencies: [
+				"487D59D9430175DA"
+			]
+			tasks: [
+				{
+					id: "307006BFD7B4731D"
+					type: "item"
+					item: {
+						id: "minecraft:sugar_cane"
+						count: 1
+					}
+					count: 32
+				}
+				{
+					id: "57DA97927A5B76E5"
+					type: "item"
+					item: {
+						id: "minecraft:sweet_berries"
+						count: 1
+					}
+					count: 32
+				}
+			]
+			rewards: [
+				{
+					id: "121D8656DA2B3E33"
+					type: "item"
+					item: {
+						id: "minecraft:sand"
+						count: 1
+					}
+					count: 8
+				}
+				{
+					id: "7194C9B8E7319FCE"
+					type: "xp_levels"
+					xp_levels: 3
+				}
+			]
+		}
+		{
 			id: "758F4761A5439639"
 			x: 0.25d
-			y: 16.685d
+			y: 17.735d
 			icon: {
 				id: "productivetrees:sawmill"
 				count: 1
@@ -618,7 +774,7 @@
 		{
 			id: "4B8F89673DFEBCA1"
 			x: 2.65d
-			y: 16.685d
+			y: 17.735d
 			icon: {
 				id: "minecraft:bee_nest"
 				count: 1
@@ -666,7 +822,7 @@
 		{
 			id: "479BDFDA8EB2572E"
 			x: 2.65d
-			y: 18.185d
+			y: 19.235d
 			icon: {
 				id: "productivetrees:pollen_sifter"
 				count: 1
@@ -705,7 +861,7 @@
 		{
 			id: "5AC6A55469482592"
 			x: 4.65d
-			y: 16.685d
+			y: 17.735d
 			icon: {
 				id: "productivetrees:roasted_beechnut"
 				count: 1
@@ -744,7 +900,7 @@
 		{
 			id: "17C225C6121E91CD"
 			x: 6.65d
-			y: 16.685d
+			y: 17.735d
 			icon: {
 				id: "productivetrees:pollen"
 				count: 1
@@ -856,8 +1012,8 @@
 		}
 		{
 			id: "4A49423CB7F03840"
-			x: 10.65d
-			y: 12.835d
+			x: 12.0d
+			y: 10.135d
 			icon: {
 				id: "farmersdelight:squid_ink_pasta"
 				count: 1
@@ -888,8 +1044,8 @@
 		}
 		{
 			id: "549C15E46826BC84"
-			x: 12.0d
-			y: 11.485d
+			x: 13.350000000000001d
+			y: 10.135d
 			icon: {
 				id: "farmersdelight:pumpkin_soup"
 				count: 1
@@ -924,7 +1080,7 @@
 		}
 		{
 			id: "755591FD0C010404"
-			x: 13.350000000000001d
+			x: 14.700000000000001d
 			y: 10.135d
 			icon: {
 				id: "farmersdelight:noodle_soup"
@@ -993,7 +1149,7 @@
 		{
 			id: "772C50BEE6EBD80D"
 			x: 12.0d
-			y: 10.135d
+			y: 11.485d
 			icon: {
 				id: "farmersdelight:roasted_mutton_chops"
 				count: 1
@@ -1024,8 +1180,8 @@
 		}
 		{
 			id: "566733F207C341CB"
-			x: 12.0d
-			y: 12.835d
+			x: 13.350000000000001d
+			y: 11.485d
 			icon: {
 				id: "farmersdelight:grilled_salmon"
 				count: 1
@@ -1052,6 +1208,150 @@
 					type: "item"
 					item: {
 						id: "minecraft:sweet_berries"
+						count: 1
+					}
+					count: 8
+				}
+			]
+		}
+		{
+			id: "2CA6D45E9664839E"
+			x: 10.65d
+			y: 12.835d
+			icon: {
+				id: "farmersdelight:shepherds_pie"
+				count: 1
+			}
+			optional: true
+			hide_dependency_lines: true
+			dependencies: [
+				"4DB245054E2AEB6A"
+			]
+			tasks: [
+				{
+					id: "39431CEDDE878323"
+					type: "item"
+					item: {
+						id: "farmersdelight:shepherds_pie"
+						count: 1
+					}
+					count: 4
+				}
+			]
+			rewards: [
+				{
+					id: "34532F199DB210E0"
+					type: "item"
+					item: {
+						id: "minecraft:mutton"
+						count: 1
+					}
+					count: 8
+				}
+			]
+		}
+		{
+			id: "4D95335BF6ECD1AE"
+			x: 12.0d
+			y: 12.835d
+			icon: {
+				id: "farmersdelight:honey_glazed_ham"
+				count: 1
+			}
+			optional: true
+			hide_dependency_lines: true
+			dependencies: [
+				"4DB245054E2AEB6A"
+			]
+			tasks: [
+				{
+					id: "28E33C069C424968"
+					type: "item"
+					item: {
+						id: "farmersdelight:honey_glazed_ham"
+						count: 1
+					}
+					count: 4
+				}
+			]
+			rewards: [
+				{
+					id: "6869B5C76D2122CC"
+					type: "item"
+					item: {
+						id: "minecraft:honey_bottle"
+						count: 1
+					}
+					count: 2
+				}
+			]
+		}
+		{
+			id: "16F94E5CB7B33208"
+			x: 13.350000000000001d
+			y: 12.835d
+			icon: {
+				id: "farmersdelight:gleaming_salad"
+				count: 1
+			}
+			optional: true
+			hide_dependency_lines: true
+			dependencies: [
+				"4DB245054E2AEB6A"
+			]
+			tasks: [
+				{
+					id: "534DFEF87CE9B217"
+					type: "item"
+					item: {
+						id: "farmersdelight:gleaming_salad"
+						count: 1
+					}
+					count: 4
+				}
+			]
+			rewards: [
+				{
+					id: "1DC0D2D60FDFD02D"
+					type: "item"
+					item: {
+						id: "minecraft:glow_berries"
+						count: 1
+					}
+					count: 8
+				}
+			]
+		}
+		{
+			id: "163DCE4E887875BF"
+			x: 14.700000000000001d
+			y: 11.485d
+			icon: {
+				id: "minecraft:rabbit_stew"
+				count: 1
+			}
+			optional: true
+			hide_dependency_lines: true
+			dependencies: [
+				"4DB245054E2AEB6A"
+			]
+			tasks: [
+				{
+					id: "381BFB577A74FE9D"
+					type: "item"
+					item: {
+						id: "minecraft:rabbit_stew"
+						count: 1
+					}
+					count: 4
+				}
+			]
+			rewards: [
+				{
+					id: "2F9002EFE1DBB33E"
+					type: "item"
+					item: {
+						id: "minecraft:carrot"
 						count: 1
 					}
 					count: 8
@@ -1104,7 +1404,7 @@
 			id: "3A3F9807E7174372"
 			image: "kronwerke:textures/quests/cooking/trees.png"
 			x: 2.315d
-			y: 14.984999999999998d
+			y: 16.035d
 			width: 5.63d
 			height: 0.9d
 			rotation: 0.0d

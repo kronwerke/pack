@@ -337,7 +337,7 @@
 		{
 			id: "47CED511AFFC09E4"
 			x: 0.5d
-			y: 11.475d
+			y: 13.725d
 			icon: {
 				id: "modularrouters:blank_module"
 				count: 1
@@ -384,7 +384,7 @@
 		{
 			id: "3BB494BCD3F4FEA9"
 			x: 3.3d
-			y: 11.475d
+			y: 13.725d
 			icon: {
 				id: "modularrouters:modular_router"
 				count: 1
@@ -425,7 +425,7 @@
 		{
 			id: "5A9AAE5DD2619FB7"
 			x: 5.699999999999999d
-			y: 11.475d
+			y: 13.725d
 			icon: {
 				id: "modularrouters:puller_module_1"
 				count: 1
@@ -464,7 +464,7 @@
 		{
 			id: "76F04AA589DA5238"
 			x: 5.699999999999999d
-			y: 12.975d
+			y: 15.225d
 			icon: {
 				id: "modularrouters:sender_module_1"
 				count: 1
@@ -503,7 +503,7 @@
 		{
 			id: "3C7B2F68E0B5998E"
 			x: 7.699999999999999d
-			y: 11.475d
+			y: 13.725d
 			icon: {
 				id: "modularrouters:sender_module_2"
 				count: 1
@@ -552,7 +552,7 @@
 		{
 			id: "1CD3D976FC257AAE"
 			x: 9.7d
-			y: 11.475d
+			y: 13.725d
 			icon: {
 				id: "modularrouters:vacuum_module"
 				count: 1
@@ -591,7 +591,7 @@
 		{
 			id: "11A153DA0A016018"
 			x: 9.7d
-			y: 12.975d
+			y: 15.225d
 			icon: {
 				id: "modularrouters:void_module"
 				count: 1
@@ -630,7 +630,7 @@
 		{
 			id: "5A14AA4A7BC2D925"
 			x: 11.7d
-			y: 11.475d
+			y: 13.725d
 			icon: {
 				id: "modularrouters:breaker_module"
 				count: 1
@@ -678,7 +678,7 @@
 		{
 			id: "60934AC64E99612A"
 			x: 11.7d
-			y: 12.975d
+			y: 15.225d
 			icon: {
 				id: "modularrouters:fluid_module"
 				count: 1
@@ -718,7 +718,7 @@
 		{
 			id: "15BE6537FF06CEDF"
 			x: 5.699999999999999d
-			y: 9.975d
+			y: 10.725d
 			icon: {
 				id: "modularrouters:speed_upgrade"
 				count: 1
@@ -766,7 +766,7 @@
 		{
 			id: "21AF38196989803D"
 			x: 7.699999999999999d
-			y: 9.975d
+			y: 10.725d
 			icon: {
 				id: "modularrouters:augment_core"
 				count: 1
@@ -814,7 +814,7 @@
 		{
 			id: "16D75FCFEEA0FCB8"
 			x: 9.7d
-			y: 9.975d
+			y: 10.725d
 			icon: {
 				id: "modularrouters:bulk_item_filter"
 				count: 1
@@ -853,11 +853,12 @@
 		{
 			id: "24BE0A6B973ADB1C"
 			x: 11.7d
-			y: 9.975d
+			y: 10.725d
 			icon: {
 				id: "modularrouters:distributor_module"
 				count: 1
 			}
+			hide_dependency_lines: true
 			dependencies: [
 				"16D75FCFEEA0FCB8"
 				"3C7B2F68E0B5998E"
@@ -893,7 +894,7 @@
 		{
 			id: "179CF2AACC3D7BAE"
 			x: 13.7d
-			y: 9.975d
+			y: 10.725d
 			icon: {
 				id: "modularrouters:bulk_item_filter"
 				count: 1
@@ -955,9 +956,335 @@
 			]
 		}
 		{
+			id: "2C3D12AEE8E4E4BD"
+			x: 13.7d
+			y: 13.725d
+			icon: {
+				id: "modularrouters:activator_module"
+				count: 1
+			}
+			dependencies: [
+				"5A14AA4A7BC2D925"
+			]
+			tasks: [
+				{
+					id: "5B1D29B79657F40B"
+					type: "item"
+					item: {
+						id: "modularrouters:activator_module"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "103EABE6D903753C"
+					type: "item"
+					item: {
+						id: "minecraft:quartz"
+						count: 1
+					}
+					count: 8
+				}
+				{
+					id: "2A0FD1DF8B0C9A79"
+					type: "xp_levels"
+					xp_levels: 4
+				}
+			]
+		}
+		{
+			id: "5ED5C6D65955A672"
+			x: 13.7d
+			y: 15.225d
+			icon: {
+				id: "modularrouters:extruder_module_1"
+				count: 1
+			}
+			optional: true
+			dependencies: [
+				"5A14AA4A7BC2D925"
+			]
+			tasks: [
+				{
+					id: "363831FC7845A1E8"
+					type: "item"
+					item: {
+						id: "modularrouters:extruder_module_1"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "1BB3E3193B9B9C4A"
+					type: "item"
+					item: {
+						id: "minecraft:stone_bricks"
+						count: 1
+					}
+					count: 32
+				}
+				{
+					id: "6778C9E74C7FEE33"
+					type: "xp_levels"
+					xp_levels: 4
+				}
+			]
+		}
+		{
+			id: "3A521EC622764C7E"
+			x: 7.699999999999999d
+			y: 15.225d
+			icon: {
+				id: "modularrouters:flinger_module"
+				count: 1
+			}
+			optional: true
+			dependencies: [
+				"76F04AA589DA5238"
+			]
+			tasks: [
+				{
+					id: "1E717E6E44320D0E"
+					type: "item"
+					item: {
+						id: "modularrouters:flinger_module"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "3B030D8FCFC2CBAB"
+					type: "item"
+					item: {
+						id: "minecraft:gunpowder"
+						count: 1
+					}
+					count: 8
+				}
+				{
+					id: "6DB0CFABC736E500"
+					type: "xp_levels"
+					xp_levels: 3
+				}
+			]
+		}
+		{
+			id: "3F77E31B21F76A9B"
+			x: 11.7d
+			y: 12.225d
+			icon: {
+				id: "modularrouters:xp_vacuum_augment"
+				count: 1
+			}
+			optional: true
+			dependencies: [
+				"1CD3D976FC257AAE"
+			]
+			tasks: [
+				{
+					id: "44A0AD93F9CD5295"
+					type: "item"
+					item: {
+						id: "modularrouters:xp_vacuum_augment"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "2F5DBB5421157DCB"
+					type: "item"
+					item: {
+						id: "minecraft:experience_bottle"
+						count: 1
+					}
+					count: 8
+				}
+				{
+					id: "3968663296A648E5"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+		}
+		{
+			id: "47BF234EC21224C7"
+			x: 5.699999999999999d
+			y: 12.225d
+			icon: {
+				id: "modularrouters:detector_module"
+				count: 1
+			}
+			optional: true
+			dependencies: [
+				"3BB494BCD3F4FEA9"
+			]
+			tasks: [
+				{
+					id: "5B51D091A147095A"
+					type: "item"
+					item: {
+						id: "modularrouters:detector_module"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "4FD4C3354F2E1582"
+					type: "item"
+					item: {
+						id: "minecraft:comparator"
+						count: 1
+					}
+					count: 2
+				}
+				{
+					id: "1CC4E9EC97F02B9A"
+					type: "xp_levels"
+					xp_levels: 3
+				}
+			]
+		}
+		{
+			id: "63AA05EB7525A6BD"
+			x: 7.699999999999999d
+			y: 9.225d
+			icon: {
+				id: "modularrouters:security_upgrade"
+				count: 1
+			}
+			dependencies: [
+				"15BE6537FF06CEDF"
+			]
+			tasks: [
+				{
+					id: "4B6B50F021315778"
+					type: "item"
+					item: {
+						id: "modularrouters:security_upgrade"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "676F77C6D0161872"
+					type: "item"
+					item: {
+						id: "minecraft:gold_nugget"
+						count: 1
+					}
+					count: 16
+				}
+				{
+					id: "657BE3D987129136"
+					type: "xp_levels"
+					xp_levels: 4
+				}
+			]
+		}
+		{
+			id: "58F1DE6031C7BF7E"
+			x: 7.699999999999999d
+			y: 12.225d
+			icon: {
+				id: "modularrouters:energy_upgrade"
+				count: 1
+			}
+			optional: true
+			dependencies: [
+				"15BE6537FF06CEDF"
+			]
+			tasks: [
+				{
+					id: "538266D4495A7A89"
+					type: "item"
+					item: {
+						id: "modularrouters:energy_upgrade"
+						count: 1
+					}
+					count: 1
+				}
+				{
+					id: "6BA70275156CA573"
+					type: "item"
+					item: {
+						id: "modularrouters:energy_output_module"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "692BF736A6C980BF"
+					type: "item"
+					item: {
+						id: "minecraft:redstone_block"
+						count: 1
+					}
+					count: 2
+				}
+				{
+					id: "1F63498AF64894E8"
+					type: "xp_levels"
+					xp_levels: 4
+				}
+			]
+		}
+		{
+			id: "284EAE2B9FD035DB"
+			x: 9.7d
+			y: 12.225d
+			icon: {
+				id: "modularrouters:regulator_augment"
+				count: 1
+			}
+			dependencies: [
+				"21AF38196989803D"
+			]
+			tasks: [
+				{
+					id: "467E6AE06C8E4874"
+					type: "item"
+					item: {
+						id: "modularrouters:regulator_augment"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "671D0C6C1D25FF0C"
+					type: "item"
+					item: {
+						id: "minecraft:comparator"
+						count: 1
+					}
+					count: 2
+				}
+				{
+					id: "47CE6C142938E9D1"
+					type: "xp_levels"
+					xp_levels: 4
+				}
+			]
+		}
+		{
 			id: "4E9375CD7886E0FA"
 			x: 0.25d
-			y: 16.825d
+			y: 19.075d
 			icon: {
 				id: "rangedpumps:pump"
 				count: 1
@@ -1004,7 +1331,7 @@
 		{
 			id: "76C1C8012DCC11CD"
 			x: 2.65d
-			y: 16.825d
+			y: 19.075d
 			icon: {
 				id: "minecraft:clock"
 				count: 1
@@ -1063,7 +1390,7 @@
 			id: "4A5D9D93E791FB03"
 			image: "kronwerke:textures/quests/pipes/pumps.png"
 			x: 2.26d
-			y: 15.124999999999998d
+			y: 17.375d
 			width: 5.52d
 			height: 0.9d
 			rotation: 0.0d

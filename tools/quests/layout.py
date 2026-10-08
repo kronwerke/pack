@@ -52,6 +52,16 @@ def _assign_members(quests, sections, by_name):
         member[q["name"]] = _nearest_section(q, sections) if sections else -1
     root = quests[0]
     member[root["name"]] = -1 if sections else -1
+    # a quest that names its section goes there, whatever its coordinates and links say
+    fixed = set()
+    for q in quests:
+        sec = q.get("section")
+        if sec:
+            hit = [i for i, b in enumerate(sections) if b["image"].endswith("/" + sec + ".png")]
+            if not hit:
+                raise ValueError(f"quest {q['name']}: no section banner named {sec}")
+            member[q["name"]] = hit[0]
+            fixed.add(q["name"])
     succs_all = {q["name"]: [] for q in quests}
     for q in quests:
         for d in q["deps"]:
@@ -62,7 +72,7 @@ def _assign_members(quests, sections, by_name):
     for _ in range(3):
         moved = False
         for q in quests:
-            if q is root:
+            if q is root or q["name"] in fixed:
                 continue
             linked = [d for d in q["deps"] if d in by_name] + succs_all[q["name"]]
             if not linked:

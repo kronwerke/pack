@@ -286,13 +286,14 @@
 		}
 		{
 			id: "29290BF4968849AA"
-			x: 0.0d
-			y: 10.76d
+			x: 11.0d
+			y: 4.16d
 			icon: {
 				id: "reliquary:mob_charm"
 				count: 1
 			}
 			hide_dependency_lines: true
+			hide_dependent_lines: true
 			dependencies: [
 				"40DDF42B7B5187B3"
 			]
@@ -326,12 +327,13 @@
 		}
 		{
 			id: "17D4A9EF17E2314F"
-			x: 2.0d
-			y: 10.76d
+			x: 14.35d
+			y: 5.66d
 			icon: {
 				id: "reliquary:pedestals/white_pedestal"
 				count: 1
 			}
+			hide_dependency_lines: true
 			dependencies: [
 				"29290BF4968849AA"
 			]
@@ -361,13 +363,14 @@
 		}
 		{
 			id: "2FDE77C019ED68C9"
-			x: 2.0d
-			y: 12.26d
+			x: 14.35d
+			y: 7.01d
 			icon: {
 				id: "reliquary:witherless_rose"
 				count: 1
 			}
 			optional: true
+			hide_dependency_lines: true
 			dependencies: [
 				"29290BF4968849AA"
 			]
@@ -397,12 +400,13 @@
 		}
 		{
 			id: "238F01D2DC1BBF06"
-			x: 6.0d
-			y: 7.16d
+			x: 0.25d
+			y: 23.56d
 			icon: {
 				id: "reliquary:lantern_of_paranoia"
 				count: 1
 			}
+			hide_dependency_lines: true
 			dependencies: [
 				"6EB56E4B2AED9F8B"
 			]
@@ -436,8 +440,8 @@
 		}
 		{
 			id: "72D324DF4C07084C"
-			x: 5.25d
-			y: 10.76d
+			x: 0.25d
+			y: 11.959999999999999d
 			icon: {
 				id: "reliquary:fortune_coin"
 				count: 1
@@ -476,8 +480,8 @@
 		}
 		{
 			id: "34BF264B56CE6E41"
-			x: 5.25d
-			y: 14.01d
+			x: 0.25d
+			y: 16.46d
 			icon: {
 				id: "reliquary:void_tear"
 				count: 1
@@ -485,6 +489,7 @@
 			size: 1.5d
 			shape: "hexagon"
 			hide_dependency_lines: true
+			hide_dependent_lines: true
 			dependencies: [
 				"3C03302260C1AB9D"
 			]
@@ -514,8 +519,8 @@
 		}
 		{
 			id: "394A88F736179AE2"
-			x: 5.25d
-			y: 12.26d
+			x: 0.25d
+			y: 13.459999999999999d
 			icon: {
 				id: "reliquary:alkahestry_altar"
 				count: 1
@@ -554,8 +559,8 @@
 		}
 		{
 			id: "61048DE670A4910E"
-			x: 7.65d
-			y: 10.76d
+			x: 2.65d
+			y: 11.959999999999999d
 			icon: {
 				id: "reliquary:hero_medallion"
 				count: 1
@@ -594,8 +599,8 @@
 		}
 		{
 			id: "7530435B9DB892CE"
-			x: 7.65d
-			y: 14.01d
+			x: 2.65d
+			y: 19.46d
 			icon: {
 				id: "reliquary:sojourner_staff"
 				count: 1
@@ -640,8 +645,8 @@
 		}
 		{
 			id: "7BB43D4C7CBA97B5"
-			x: 7.65d
-			y: 16.009999999999998d
+			x: 2.65d
+			y: 21.46d
 			icon: {
 				id: "reliquary:ender_staff"
 				count: 1
@@ -695,8 +700,8 @@
 		}
 		{
 			id: "76A2A93DACC560B1"
-			x: 7.65d
-			y: 12.26d
+			x: 2.65d
+			y: 14.959999999999999d
 			icon: {
 				id: "reliquary:void_tear"
 				count: 1
@@ -716,6 +721,580 @@
 					id: "6A0E17D128E798E5"
 					type: "xp_levels"
 					xp_levels: 5
+				}
+			]
+		}
+		{
+			id: "25073F81DD834B15"
+			x: 13.0d
+			y: 4.16d
+			icon: {
+				id: "reliquary:angelic_feather"
+				count: 1
+			}
+			hide_dependency_lines: true
+			dependencies: [
+				"29290BF4968849AA"
+				"6E3F4844B0942666"
+			]
+			tasks: [
+				{
+					id: "4B2D6EC21956B436"
+					type: "item"
+					item: {
+						id: "reliquary:angelic_feather"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "1EA6B1947B282CCE"
+					type: "item"
+					item: {
+						id: "minecraft:cooked_beef"
+						count: 1
+					}
+					count: 16
+				}
+				{
+					id: "188FF433E344A054"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+		}
+		{
+			id: "135DB4FE3287DE36"
+			x: 16.35d
+			y: 4.16d
+			icon: {
+				id: "reliquary:phoenix_down"
+				count: 1
+			}
+			dependencies: [
+				"25073F81DD834B15"
+			]
+			tasks: [
+				{
+					id: "2D463FC3B4F06A2C"
+					type: "item"
+					item: {
+						id: "reliquary:phoenix_down"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "30A47113A1CD6977"
+					type: "loot"
+					table_id: 6525209979656026636L
+				}
+				{
+					id: "16E346612A156183"
+					type: "xp_levels"
+					xp_levels: 10
+				}
+			]
+		}
+		{
+			id: "33E381BB2BF8C5E7"
+			x: 13.0d
+			y: 8.36d
+			icon: {
+				id: "reliquary:kraken_shell"
+				count: 1
+			}
+			optional: true
+			hide_dependency_lines: true
+			dependencies: [
+				"29290BF4968849AA"
+				"6EB56E4B2AED9F8B"
+			]
+			tasks: [
+				{
+					id: "3D1DFEBAD517C255"
+					type: "item"
+					item: {
+						id: "reliquary:kraken_shell"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "65C73886DE090A97"
+					type: "item"
+					item: {
+						id: "minecraft:ink_sac"
+						count: 1
+					}
+					count: 8
+				}
+				{
+					id: "3D432FA957C9230B"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+		}
+		{
+			id: "10D30790540AD224"
+			x: 13.0d
+			y: 7.01d
+			icon: {
+				id: "reliquary:infernal_claws"
+				count: 1
+			}
+			hide_dependency_lines: true
+			dependencies: [
+				"29290BF4968849AA"
+				"5A3E18466617101E"
+			]
+			tasks: [
+				{
+					id: "18B4911C789B720B"
+					type: "item"
+					item: {
+						id: "reliquary:infernal_claws"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "783F297D22EB0D12"
+					type: "item"
+					item: {
+						id: "minecraft:blaze_powder"
+						count: 1
+					}
+					count: 8
+				}
+				{
+					id: "7062502B9EA6473B"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+		}
+		{
+			id: "13E3AAA6DCCD8D36"
+			x: 13.0d
+			y: 5.66d
+			icon: {
+				id: "reliquary:twilight_cloak"
+				count: 1
+			}
+			optional: true
+			hide_dependency_lines: true
+			dependencies: [
+				"29290BF4968849AA"
+				"3C03302260C1AB9D"
+			]
+			tasks: [
+				{
+					id: "4A81AAEE221BC356"
+					type: "item"
+					item: {
+						id: "reliquary:twilight_cloak"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "6D14CED59C9AE9EA"
+					type: "item"
+					item: {
+						id: "minecraft:black_wool"
+						count: 1
+					}
+					count: 8
+				}
+				{
+					id: "36EEA3E133CCFED3"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+		}
+		{
+			id: "20647737C53774E1"
+			x: 14.35d
+			y: 8.36d
+			icon: {
+				id: "reliquary:interdiction_torch"
+				count: 1
+			}
+			hide_dependency_lines: true
+			dependencies: [
+				"29290BF4968849AA"
+				"5A3E18466617101E"
+			]
+			tasks: [
+				{
+					id: "66808BE47A1A03E5"
+					type: "item"
+					item: {
+						id: "reliquary:interdiction_torch"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "1D6733F4C1395AF5"
+					type: "item"
+					item: {
+						id: "minecraft:torch"
+						count: 1
+					}
+					count: 32
+				}
+				{
+					id: "3D0B42683BCA1BE1"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+		}
+		{
+			id: "4CA75793302EBECF"
+			x: 2.65d
+			y: 17.96d
+			icon: {
+				id: "reliquary:harvest_rod"
+				count: 1
+			}
+			dependencies: [
+				"34BF264B56CE6E41"
+			]
+			tasks: [
+				{
+					id: "297D22457646E518"
+					type: "item"
+					item: {
+						id: "reliquary:harvest_rod"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "103B6B97EE3F4DA9"
+					type: "item"
+					item: {
+						id: "minecraft:bone_meal"
+						count: 1
+					}
+					count: 32
+				}
+				{
+					id: "3699867B408D635F"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+		}
+		{
+			id: "47CB4805DB64C079"
+			x: 2.65d
+			y: 16.46d
+			icon: {
+				id: "reliquary:destruction_catalyst"
+				count: 1
+			}
+			optional: true
+			dependencies: [
+				"34BF264B56CE6E41"
+			]
+			tasks: [
+				{
+					id: "479A0CF931BFC1D2"
+					type: "item"
+					item: {
+						id: "reliquary:destruction_catalyst"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "145DE79980657913"
+					type: "item"
+					item: {
+						id: "minecraft:gunpowder"
+						count: 1
+					}
+					count: 32
+				}
+				{
+					id: "1F9EDFB0BD607978"
+					type: "xp_levels"
+					xp_levels: 8
+				}
+			]
+		}
+		{
+			id: "6330CD0C305AC1D5"
+			x: 2.65d
+			y: 13.459999999999999d
+			icon: {
+				id: "reliquary:apothecary_mortar"
+				count: 1
+			}
+			optional: true
+			hide_dependency_lines: true
+			dependencies: [
+				"394A88F736179AE2"
+				"5FD444BBA48FD630"
+			]
+			tasks: [
+				{
+					id: "6B89187274297154"
+					type: "item"
+					item: {
+						id: "reliquary:apothecary_mortar"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "1775F273540C614E"
+					type: "item"
+					item: {
+						id: "minecraft:quartz"
+						count: 1
+					}
+					count: 16
+				}
+				{
+					id: "29500291453499C8"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+		}
+		{
+			id: "56DF3EA395E2A223"
+			x: 5.449999999999999d
+			y: 13.459999999999999d
+			icon: {
+				id: "reliquary:glowing_water"
+				count: 1
+			}
+			optional: true
+			dependencies: [
+				"6330CD0C305AC1D5"
+			]
+			tasks: [
+				{
+					id: "21F0EC39ACE6A443"
+					type: "item"
+					item: {
+						id: "reliquary:glowing_water"
+						count: 1
+					}
+					count: 2
+				}
+			]
+			rewards: [
+				{
+					id: "4D9E8613772DBA65"
+					type: "item"
+					item: {
+						id: "minecraft:glowstone_dust"
+						count: 1
+					}
+					count: 16
+				}
+				{
+					id: "6C23E7E0658650F6"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+		}
+		{
+			id: "3BB6398A305E2EC6"
+			x: 8.45d
+			y: 11.959999999999999d
+			icon: {
+				id: "reliquary:handgun"
+				count: 1
+			}
+			hide_dependency_lines: true
+			dependencies: [
+				"5A3E18466617101E"
+				"3C03302260C1AB9D"
+			]
+			tasks: [
+				{
+					id: "36138D269A31973B"
+					type: "item"
+					item: {
+						id: "reliquary:handgun"
+						count: 1
+					}
+					count: 1
+				}
+				{
+					id: "72D3B9DE701E6509"
+					type: "item"
+					item: {
+						id: "reliquary:magazines/neutral_magazine"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "6E8F894AE01BFC6D"
+					type: "loot"
+					table_id: 2502423014058638837L
+				}
+				{
+					id: "6F1893B2785B089F"
+					type: "item"
+					item: {
+						id: "minecraft:gunpowder"
+						count: 1
+					}
+					count: 16
+				}
+				{
+					id: "7FE4C8BB21BDFD73"
+					type: "xp_levels"
+					xp_levels: 8
+				}
+			]
+		}
+		{
+			id: "73D34358984F21B7"
+			x: 10.45d
+			y: 11.959999999999999d
+			icon: {
+				id: "reliquary:magazines/seeker_magazine"
+				count: 1
+			}
+			optional: true
+			dependencies: [
+				"3BB6398A305E2EC6"
+			]
+			tasks: [
+				{
+					id: "7C5B22B457D08D7B"
+					type: "item"
+					item: {
+						id: "reliquary:magazines/seeker_magazine"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "39B3D9E5C7A3BC83"
+					type: "item"
+					item: {
+						id: "minecraft:lapis_lazuli"
+						count: 1
+					}
+					count: 16
+				}
+				{
+					id: "1E3992C80A9EE118"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+		}
+		{
+			id: "7D57F90906C9841C"
+			x: 8.45d
+			y: 13.459999999999999d
+			icon: {
+				id: "reliquary:ice_magus_rod"
+				count: 1
+			}
+			hide_dependency_lines: true
+			dependencies: [
+				"34BF264B56CE6E41"
+			]
+			tasks: [
+				{
+					id: "1862D6179DF60FB1"
+					type: "item"
+					item: {
+						id: "reliquary:ice_magus_rod"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "3355020AFCBD54D3"
+					type: "item"
+					item: {
+						id: "minecraft:snowball"
+						count: 1
+					}
+					count: 16
+				}
+				{
+					id: "383CDA7FB0F1510C"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+		}
+		{
+			id: "5C3395CA4CBB0A61"
+			x: 10.45d
+			y: 13.459999999999999d
+			icon: {
+				id: "reliquary:glacial_staff"
+				count: 1
+			}
+			optional: true
+			dependencies: [
+				"7D57F90906C9841C"
+			]
+			tasks: [
+				{
+					id: "7EBCADFA49FF5835"
+					type: "item"
+					item: {
+						id: "reliquary:glacial_staff"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "527DD20A029569DD"
+					type: "loot"
+					table_id: 6525209979656026636L
+				}
+				{
+					id: "1084C81819AAC515"
+					type: "xp_levels"
+					xp_levels: 10
 				}
 			]
 		}
@@ -744,8 +1323,8 @@
 		{
 			id: "77F550349A16EEDC"
 			image: "kronwerke:textures/quests/reliquary/schutz.png"
-			x: 0.69d
-			y: 9.309999999999999d
+			x: 11.69d
+			y: 2.71d
 			width: 2.38d
 			height: 0.9d
 			rotation: 0.0d
@@ -754,9 +1333,19 @@
 		{
 			id: "15C3EE95665F68F2"
 			image: "kronwerke:textures/quests/reliquary/werkzeug.png"
-			x: 6.17d
-			y: 9.309999999999999d
+			x: 1.17d
+			y: 10.509999999999998d
 			width: 3.34d
+			height: 0.9d
+			rotation: 0.0d
+			order: 1
+		}
+		{
+			id: "47BED25FCCE9668B"
+			image: "kronwerke:textures/quests/reliquary/waffen.png"
+			x: 9.274999999999999d
+			y: 10.509999999999998d
+			width: 2.65d
 			height: 0.9d
 			rotation: 0.0d
 			order: 1

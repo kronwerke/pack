@@ -105,7 +105,7 @@ quests = [
           ],
           tasks=[task_item("productivelib:upgrade_base", 1)],
           rewards=[reward_item("minecraft:emerald", 3), reward_xp(5)],
-          deps=["expansion"], icon="productivelib:upgrade_time", optional=True),
+          deps=["expansion"], icon="productivelib:upgrade_time", optional=True, section="first"),
 
     quest("nether_bees", 7.5, 2.6, "&cHol Bienen aus dem Nether",
           subtitle="Quarz, Glowstone und Magma haben eigene Bienen.",
@@ -120,7 +120,7 @@ quests = [
           ],
           tasks=[task_item("productivebees:nether_quartz_nest", 1)],
           rewards=[reward_item("minecraft:quartz", 16), reward_table("s2_common"), reward_xp(5)],
-          deps=["nests"], icon="productivebees:nether_quartz_nest", size=1.5),
+          deps=["nests"], icon="productivebees:nether_quartz_nest", size=1.5, section="first"),
 
     # ---- Zentrifuge und Honig ------------------------------------------------
     quest("centrifuge", 10.5, 1, "&7&lBau eine Zentrifuge",
@@ -351,14 +351,14 @@ quests = [
           description=["Spawn-Ei der &6Eisenbiene&r in ein &aManabecken&r werfen, &d10 000 Mana&r. Blume: &6Manastahlblock&r. Wabe gibt mit 60 Prozent 1 bis 2 &6Manastahlklumpen&r. Diese Bienen vermehren sich nicht untereinander. Auf der Terraplatte wird ihr Ei mit Manadiamant und Manaperle für 500 000 Mana zur Terrastahlbiene."],
           tasks=[task_checkmark("Manastahlbiene ausgebrütet")],
           rewards=[reward_item("botania:manasteel_ingot", 4), reward_xp(5)],
-          deps=["incubator"], icon="botania:manasteel_ingot"),
+          deps=["incubator"], icon="botania:manasteel_ingot", section="magic"),
 
     quest("c_infused_iron", 23.5, 8.6, "&aVerwandle ein Ei zur Infused-Iron-Biene",
           subtitle="Infused Iron, fast jede Wabe.",
           description=["Spawn-Ei der &6Eisenbiene&r auf den &aNatural Altar&r von Nature's Aura, &d15 000 Aura&r. Blume: &6Infused-Iron-Block&r. Wabe gibt mit 80 Prozent &6Infused Iron&r. Ein Goldbienen-Ei wird dort für 3 000 Aura zur Tainted-Gold-Biene."],
           tasks=[task_checkmark("Infused-Iron-Biene ausgebrütet")],
           rewards=[reward_item("naturesaura:infused_iron", 8), reward_xp(5)],
-          deps=["incubator"], icon="naturesaura:infused_iron"),
+          deps=["incubator"], icon="naturesaura:infused_iron", section="magic"),
 
     # ---- Productive Metalworks ------------------------------------------------
     quest("foundry", 15.5, 13.5, "&6&lBau die Gießerei",
@@ -424,6 +424,108 @@ quests = [
           tasks=[task_checkmark("Gelesen")],
           rewards=[reward_xp(5)],
           deps=["alloy_bees"], icon="productivebees:spawn_egg_configurable_bee", optional=True),
+
+    # ---- neue Quests: Erste Bienen ---------------------------------------------------
+    quest("nest_locator", 2.5, 3.6, "&2Bau einen Nestfinder",
+          subtitle="Er zeigt dir, wo die nächste Biene wohnt.",
+          description=[
+              "&eRezept:&r Goldklumpen, &6Eisengitter&r, Goldklumpen oben, Goldklumpen, &6Notenblock&r, Goldklumpen in der Mitte, drei Goldklumpen unten.",
+              "",
+              "Shift-Rechtsklick auf einen Block, aus dem die gesuchte Nestart besteht, stimmt den &6Nestfinder&r darauf ein. Rechtsklick sucht dann die Umgebung ab und sagt dir, wie viele Meter es in welche Richtung bis zum nächsten Nest sind.",
+              "",
+              "Damit findest du Quarznester im Nether und seltene Holznester, ohne den Wald abzuholzen.",
+          ],
+          tasks=[task_item("productivebees:nest_locator", 1)],
+          rewards=[reward_item("minecraft:gold_nugget", 9), reward_xp(3)],
+          deps=["nests"], icon="productivebees:nest_locator"),
+
+    quest("bee_helmet", 0, 3.4, "&eSetz einen Bienennest-Helm auf",
+          subtitle="Wütende Bienen lassen dich in Ruhe.",
+          description=[
+              "Ein &6Bienennest&r und ein &6Diamanthelm&r formlos ergeben den &6Bienennest-Helm&r.",
+              "",
+              "Mit ihm auf dem Kopf greifen dich wütende Bienen nicht an. Wirst du getroffen, schlüpft mit &e30 Prozent&r Chance eine &6KamikazBee&r heraus und stürzt sich auf den Angreifer.",
+              "",
+              "&eTipp:&r Praktisch beim Umsetzen von Nestern und beim Arbeiten am vollen Bienenhaus.",
+          ],
+          tasks=[task_item("productivebees:bee_nest_diamond_helmet", 1)],
+          rewards=[reward_item("minecraft:honeycomb", 8), reward_xp(5)],
+          deps=["nests"], icon="productivebees:bee_nest_diamond_helmet", optional=True),
+
+    quest("bumble", 7.5, -0.6, "&eReite eine Bumble Bee",
+          subtitle="Eine Biene, groß genug für einen Sattel.",
+          description=[
+              "Die &6Bumble Bee&r lebt in den &eEbenen&r und ist groß genug zum Reiten. Ein Bumble-Bee-Nest lockt sie dort an.",
+              "",
+              "Leg ihr einen &6Sattel&r auf und nimm den &6Treat on a Stick&r in die Hand (Angel und Honey Treat formlos). Damit lenkst du sie im Gleitflug, Rechtsklick gibt einen Schub. Ist der Treat aufgebraucht, machst du ihn mit einem neuen Honey Treat wieder fertig.",
+          ],
+          tasks=[task_item("productivebees:treat_on_a_stick", 1), task_checkmark("Auf einer Bumble Bee geritten")],
+          rewards=[reward_item("minecraft:saddle", 1), reward_xp(5)],
+          deps=["treat"], icon="productivebees:treat_on_a_stick", optional=True),
+
+    quest("time_upgrade", 9.5, 0.0, "&bBau ein Zeit-Upgrade",
+          subtitle="Kürzere Pausen im Stock.",
+          description=[
+              "&eRezept:&r die &6Upgrade-Basis&r in die Mitte, vier &6Uhren&r an die Seiten, vier &6Honigwabenblöcke&r in die Ecken.",
+              "",
+              "In der Erweiterungsbox bleiben die Bienen kürzer im Stock, also gibt es mehr Waben pro Stunde. Mehrere Upgrades stapeln sich. Dasselbe Upgrade beschleunigt auch Zentrifuge, Inkubator und Zuchtkammer, und im Honiggenerator bringt es mehr Strom bei mehr Verbrauch.",
+          ],
+          tasks=[task_item("productivelib:upgrade_time", 1)],
+          rewards=[reward_item("minecraft:clock", 2), reward_xp(5)],
+          deps=["upgrades"], icon="productivelib:upgrade_time", section="first"),
+
+    quest("simulator", 9.5, 1.4, "&bLass die Bienen zu Hause",
+          subtitle="Simulator-Upgrade: Ausflüge nur noch gerechnet.",
+          description=[
+              "Erst das &6Anti-Teleport-Upgrade&r: Upgrade-Basis, vier &6Enderperlen&r an den Seiten, vier Honigwabenblöcke in den Ecken. Dann dieses in die Mitte, eine Enderperle oben, drei &6Lohenruten&r links, rechts und unten, Honigwabenblöcke in die Ecken: das &6Simulator-Upgrade&r.",
+              "",
+              "Die Bienen fliegen nicht mehr aus, der Ausflug wird nur berechnet. Die Blume muss dann direkt unter dem Stockeingang stehen, die Futterplatte versorgt drei Sorten auf einmal.",
+              "",
+              "&eKronwerke:&r Hunderte fliegender Bienen kosten den Server Leistung. Ein Bienenhaus mit Simulatoren ist leise, sauber und schnell.",
+          ],
+          tasks=[task_item("productivelib:upgrade_simulator", 1)],
+          rewards=[reward_item("minecraft:blaze_rod", 2), reward_table("s2_common"), reward_xp(5)],
+          deps=["upgrades"], icon="productivelib:upgrade_simulator", section="first"),
+
+    # ---- neue Quests: Zentrifuge und Honig ---------------------------------------------
+    quest("honey_generator", 15.5, 2.2, "&6Mach Strom aus Honig",
+          subtitle="60 FE/t aus dem, was die Bienen ohnehin liefern.",
+          description=[
+              "&eRezept:&r Eisenbarren, &6Honigeimer&r, Eisenbarren oben, Eisenbarren, &6Ofen&r, Eisenbarren in der Mitte, drei Eisenbarren unten. Den Honigeimer machst du aus vier Honigflaschen und einem Eimer oder aus einem Honigblock und einem Eimer.",
+              "",
+              "Der &6Honiggenerator&r verbrennt &e2 mB Honig pro Tick&r und gibt dafür &d60 FE/t&r. Stell ihn an den Tank der Zentrifuge oder füll ihn per Rohr, Flasche, Eimer oder Honigblock.",
+              "",
+              "Ein Zeit-Upgrade hebt die Leistung bei mehr Verbrauch, ein Produktivitäts-Upgrade senkt den Verbrauch. Damit laufen Stromzentrifuge und Inkubator aus dem eigenen Bienenhaus.",
+          ],
+          tasks=[task_item("productivebees:honey_generator", 1)],
+          rewards=[reward_item("minecraft:honey_bottle", 8), reward_table("s2_common"), reward_xp(5)],
+          deps=["bottler"], icon="productivebees:honey_generator"),
+
+    # ---- neue Quests: Gene -------------------------------------------------------------
+    quest("gene_indexer", 21, 2.6, "&dSortier Gene mit dem Indexer",
+          subtitle="Eine Kiste voller Proben, ein Signal.",
+          description=[
+              "&eRezept:&r Eisenbarren, &6Komparator&r, Eisenbarren oben, Eisenbarren, &6Werkbank&r, Eisenbarren in der Mitte, drei Eisenbarren unten.",
+              "",
+              "Der &6Gen-Indexer&r nimmt Genproben auf und führt mit einem Redstonesignal gleiche Gene zusammen, bis daraus reinere werden. So musst du nicht jede Probe einzeln in der Werkbank kombinieren.",
+          ],
+          tasks=[task_item("productivebees:gene_indexer", 1)],
+          rewards=[reward_item("minecraft:comparator", 2), reward_xp(5)],
+          deps=["gene_treat"], icon="productivebees:gene_indexer", optional=True),
+
+    # ---- neue Quests: Zucht --------------------------------------------------------------
+    quest("catcher", 2.5, 9.6, "&aStell einen Fänger auf",
+          subtitle="Bienen fangen sich von selbst.",
+          description=[
+              "&eRezept:&r Eisenbarren, &6Erde&r, Eisenbarren oben, Eisenbarren, &6Werfer&r, Eisenbarren in der Mitte, drei Eisenbarren unten.",
+              "",
+              "Der &6Fänger&r (Catcher) steckt Bienen in seiner Umgebung in leere Käfige, die du ihm gibst. Mit Upgrades steuerst du ihn: Reichweite für mehr Fläche, Filter für bestimmte Arten, &6BaBee&r nur für Bienenkinder, &6AdultBee&r nur für erwachsene.",
+              "",
+              "&eTipp:&r Neben einem Zuchtgehege mit BaBee-Upgrade sammelt er den Nachwuchs ein, bevor er davonfliegt.",
+          ],
+          tasks=[task_item("productivebees:catcher", 1)],
+          rewards=[reward_item("productivebees:bee_cage", 8), reward_xp(5)],
+          deps=["breeding"], icon="productivebees:catcher", optional=True),
 ]
 
 images = [

@@ -114,6 +114,19 @@ quests = [
           rewards=[reward_item("minecraft:cobblestone", 64), reward_xp(5)],
           deps=["elite_stock"], icon="mekanism:combiner", optional=True),
 
+    quest("security_desk", 12.75, 3, "&8Stell ein Sicherheitspult auf",
+          subtitle="Alle Maschinen auf einen Schlag sichern.",
+          description=[
+              "Oben Stahl, Glas, Stahl, Mitte &6Elite-Schaltkreis&r, &6Stahlgehäuse&r, Elite-Schaltkreis, unten Stahl, &6Netzwerklesegerät&r, Stahl. Das Lesegerät ist Glas, Infundierte Legierung, ein Energietablett und Stahl.",
+              "",
+              "Das Pult ist die Zentrale für alles, was dir gehört: Hier trägst du &evertraute Spieler&r ein und setzt die Sicherheit aller deiner Maschinen auf einmal, statt jede einzeln umzustellen.",
+              "",
+              "Auf einem Server mit vielen Spielern ist das der schnellste Weg, Teleporter, QIO und Fabrik vor fremden Händen zu schützen und Freunden trotzdem Zugang zu geben.",
+          ],
+          tasks=[task_item("mekanism:security_desk", 1)],
+          rewards=[reward_item("mekanism:elite_control_circuit", 2), reward_xp(5)],
+          deps=["elite_stock"], icon="mekanism:security_desk", optional=True),
+
     # ---- Induktionsmatrix --------------------------------------------------------------
     quest("lithium_dust", 0, 6.5, "&fKristallisier Lithiumstaub",
           subtitle="Aus Lithiumgas wird Staub.",
@@ -170,6 +183,19 @@ quests = [
           rewards=[reward_item("mekanism:basic_induction_cell", 1), reward_table("s4_uncommon"), reward_xp(15)],
           deps=["induction_cell", "induction_provider"], icon="mekanism:induction_casing", size=1.75, shape="gear"),
 
+    quest("adv_induction", 10, 6.5, "&9Stuf die Matrix hoch",
+          subtitle="Achtmal Speicher, achtmal Durchsatz.",
+          description=[
+              "&6Fortgeschrittene Induktionszelle:&r vier Einfache Zellen und vier Energietabletts im Wechsel um einen &6Fortschrittlichen Energie-Würfel&r. Sie fasst &d25,6 Milliarden FE&r.",
+              "",
+              "&6Fortschrittlicher Induktionsanbieter:&r vier Einfache Anbieter und vier Fortgeschrittene Schaltkreise um einen Fortschrittlichen Würfel. Er schafft &d819 200 FE/t&r.",
+              "",
+              "Die Elite-Stufe macht das noch einmal achtmal: 204,8 Milliarden FE pro Zelle, gut 6,5 Millionen FE/t pro Anbieter. Tausch alte Zellen einfach aus, die Hülle bleibt stehen.",
+          ],
+          tasks=[task_item("mekanism:advanced_induction_cell", 1), task_item("mekanism:advanced_induction_provider", 1)],
+          rewards=[reward_item("mekanism:energy_tablet", 4), reward_table("s4_common"), reward_xp(10)],
+          deps=["induction_matrix"], icon="mekanism:advanced_induction_cell", optional=True),
+
     # ---- Quanten und QIO ---------------------------------------------------------------
     quest("entangloporter", 0, 11.5, "&5Bau zwei Quantenverschränkungsporter",
           subtitle="Ohne Kabel ans andere Ende der Welt.",
@@ -214,6 +240,19 @@ quests = [
           tasks=[task_item("mekanism:qio_importer", 1), task_item("mekanism:qio_exporter", 1)],
           rewards=[reward_item("minecraft:sticky_piston", 2), reward_xp(5)],
           deps=["qio"], icon="mekanism:qio_importer", optional=True),
+
+    quest("qio_redstone", 7.5, 13, "&dLass das Lager Redstone geben",
+          subtitle="Der QIO Redstone-Adapter.",
+          description=[
+              "Oben Enderperle, Redstonefackel, Enderperle, Mitte Ultimativer Schaltkreis, Redstone, Ultimativer Schaltkreis, unten Enderperle, &6Teleportationskern&r, Enderperle.",
+              "",
+              "Er hängt an deiner QIO-Frequenz und überwacht eine Sorte: Gib ihm einen Gegenstand und eine Menge, dann leuchtet sein Signal, sobald so viel davon im Lager liegt.",
+              "",
+              "So schaltet sich die Stahlstraße ab, wenn 10 000 Barren da sind, und wieder an, wenn das Lager schrumpft.",
+          ],
+          tasks=[task_item("mekanism:qio_redstone_adapter", 1)],
+          rewards=[reward_item("minecraft:redstone_block", 4), reward_xp(5)],
+          deps=["qio"], icon="mekanism:qio_redstone_adapter", optional=True),
 
     quest("portable_qio", 7.5, 11.5, "&dNimm dein Lager mit",
           subtitle="Das Portable QIO Dashboard.",
@@ -330,6 +369,30 @@ quests = [
           rewards=[reward_item("mekanismgenerators:reactor_glass", 16), reward_table("s4_uncommon"), reward_xp(20)],
           deps=["fuel", "focus", "fusion_frame"], icon="mekanismgenerators:fusion_reactor_controller", size=2.0, shape="gear"),
 
+    quest("fusion_logic", 10.25, 17.5, "&cBau einen Fusions-Logikadapter",
+          subtitle="Der Reaktor meldet sich per Redstone.",
+          description=[
+              "Ein &6Fusionsreaktorrahmen&r mit vier Redstone im Kreuz. Er sitzt im Plus einer Seite, wie Glas und Schnittstellen.",
+              "",
+              "Im Fenster wählst du, wann er ein Signal gibt: &eBereit zur Zündung&r, sobald der Kern heiß genug ist, oder &eZu wenig Brennstoff&r, wenn der D-T-Treibstoff ausgeht. Ein Signal auf eine Lampe oder an den Laser-Verstärker, und du musst nicht danebenstehen.",
+          ],
+          tasks=[task_item("mekanismgenerators:fusion_reactor_logic_adapter", 1)],
+          rewards=[reward_item("minecraft:redstone_block", 4), reward_xp(5)],
+          deps=["fusion"], icon="mekanismgenerators:fusion_reactor_logic_adapter", optional=True),
+
+    quest("laser_tractor", 2.5, 20.5, "&cBohr mit dem Laser",
+          subtitle="Der Laser-Traktorstrahl sammelt ein.",
+          description=[
+              "Eine &6Persönliche Truhe&r oder ein Persönliches Fass über einem &6Laser-Verstärker&r ergibt den &6Laser-Traktorstrahl&r.",
+              "",
+              "Laser zerstören Blöcke in ihrem Weg. Schieß sie in den Traktorstrahl: Er bündelt und lenkt sie wie ein Verstärker, und alles, was sein Strahl abbaut, landet in seinem Inventar statt auf dem Boden.",
+              "",
+              "&cVorsicht:&r Der Strahl trifft auch dich. Stell dich nie davor.",
+          ],
+          tasks=[task_item("mekanism:laser_tractor_beam", 1)],
+          rewards=[reward_item("mekanism:energy_tablet", 2), reward_xp(5)],
+          deps=["laser"], icon="mekanism:laser_tractor_beam", optional=True),
+
     # ---- MekaSuit ----------------------------------------------------------------------
     quest("hdpe", 0, 24, "&fPress HDPE Platten",
           subtitle="Kunststoff aus Ethen.",
@@ -398,6 +461,67 @@ quests = [
           rewards=[reward_item("mekanism:pellet_polonium", 2), reward_xp(15)],
           deps=["mekasuit"], icon="mekanism:meka_tool"),
 
+    quest("mod_tools", 10, 25, "&bRüste das Meka-Werkzeug auf",
+          subtitle="Schneller graben, ganze Adern auf einmal.",
+          description=[
+              "&6Abbaubeschleunigung:&r oben Infundierte Legierung, &6Eisenspitzhacke&r, Infundierte Legierung, Mitte Legierung, Basismodul, Legierung, unten drei HDPE Platten. Mehrere hintereinander machen das Werkzeug immer schneller.",
+              "",
+              "&6Aderabbau:&r oben Verstärkte Legierung, &6Diamantspitzhacke&r, Verstärkte Legierung, Mitte Diamantaxt, Basismodul, Diamantschaufel, unten drei Polonium Pellets. Er baut ganze Erzadern und Bäume mit einem Schlag ab. &eKronwerke:&r Der erweiterte Modus, der jeden Block der Ader nimmt, ist an.",
+              "",
+              "Dazu gibt es die Erzveredelung (Glück) und Behutsamkeit als eigene Module.",
+          ],
+          tasks=[task_item("mekanism:module_excavation_escalation_unit", 1), task_item("mekanism:module_vein_mining_unit", 1)],
+          rewards=[reward_item("mekanism:hdpe_sheet", 8), reward_xp(10)],
+          deps=["meka_tool"], icon="mekanism:module_vein_mining_unit", optional=True),
+
+    quest("mod_move", 0, 26.25, "&bBau Bein- und Stiefelmodule",
+          subtitle="Höher springen, schneller rennen.",
+          description=[
+              "&6Hydraulischer Antrieb:&r aus &6Freiläufern&r, Verstärkter Legierung, Energietabletts, Basismodul und Polonium. Du steigst höhere Stufen ohne Springen und springst selbst höher.",
+              "",
+              "&6Fortbewegungsverstärker:&r oben Verstärkte Legierung, &6Diamanthose&r, Verstärkte Legierung, Mitte Energietablett, Basismodul, Energietablett, unten drei Polonium Pellets. Er macht dich beim Sprinten schneller und lässt dich weiter springen.",
+              "",
+              "In der Modifikationsstation stellst du ein, wie stark jedes Modul wirkt. Volle Stufe kostet mehr Strom.",
+          ],
+          tasks=[task_item("mekanism:module_hydraulic_propulsion_unit", 1), task_item("mekanism:module_locomotive_boosting_unit", 1)],
+          rewards=[reward_item("mekanism:pellet_polonium", 1), reward_xp(10)],
+          deps=["mekasuit"], icon="mekanism:module_locomotive_boosting_unit", optional=True),
+
+    quest("mod_life", 2.5, 26.25, "&bAtme und iss aus dem Anzug",
+          subtitle="Sauerstoff aus Wasser, Essen aus der Paste.",
+          description=[
+              "&6Elektrolytische Atmung:&r oben Infundierte Legierung, &6Elektrolytischer Kern&r, Infundierte Legierung, Mitte Legierung, Basismodul, Legierung, unten drei HDPE Platten. Unter Wasser macht sie aus dem Wasser Sauerstoff zum Atmen und füllt nebenbei die Jetpack-Einheit mit Wasserstoff.",
+              "",
+              "&6Nährstoffinjektion:&r Verstärkte Legierung, eine &6Feldflasche&r, Basismodul und Polonium. Sie füttert dich mit Nährstoffpaste, sobald du Hunger hast. Die Paste macht der Nährstoffverflüssiger aus Stufe 3.",
+          ],
+          tasks=[task_item("mekanism:module_electrolytic_breathing_unit", 1), task_item("mekanism:module_nutritional_injection_unit", 1)],
+          rewards=[reward_item("mekanism:hdpe_sheet", 8), reward_xp(10)],
+          deps=["mekasuit"], icon="mekanism:module_electrolytic_breathing_unit", optional=True),
+
+    quest("mod_sight", 5, 26.25, "&bSieh im Dunkeln, zieh Beute an",
+          subtitle="Nachtsicht und Magnet.",
+          description=[
+              "&6Sichtverbesserung:&r oben Verstärkte Legierung, ein &6Smaragd&r, Verstärkte Legierung, Mitte Legierung, Basismodul, Legierung, unten drei Polonium Pellets. Sie hellt die Umgebung auf, mehrere davon wirken stärker.",
+              "",
+              "&6Magnetische Anziehung:&r oben Verstärkte Legierung, Eisengitter, Verstärkte Legierung, Mitte Elite-Schaltkreis, Basismodul, Elite-Schaltkreis, unten drei Polonium Pellets. Sie zieht Gegenstände in der Nähe zu dir, mehrere vergrößern die Reichweite.",
+          ],
+          tasks=[task_item("mekanism:module_vision_enhancement_unit", 1), task_item("mekanism:module_magnetic_attraction_unit", 1)],
+          rewards=[reward_item("minecraft:emerald", 4), reward_xp(10)],
+          deps=["mekasuit"], icon="mekanism:module_vision_enhancement_unit", optional=True),
+
+    quest("mod_power", 7.5, 26.25, "&eLade den Anzug unterwegs",
+          subtitle="Sonne auf dem Helm, Hitze an den Beinen.",
+          description=[
+              "&6Solar-Ladeeinheit:&r Verstärkte Legierung, ein &6Erweiterter Solargenerator&r, Basismodul und Polonium. Bei Sonne lädt sie die MekaSuit, mehrere laden schneller.",
+              "",
+              "&6Geothermische Einheit:&r dasselbe mit einem &6Wärmegenerator&r. Sie lädt aus Hitze, Lava zählt laut Config fünfmal so viel wie Feuer, und mit voller Zahl Einheiten schluckt die Hose bis zu &e80 Prozent&r Schaden von Hitze.",
+              "",
+              "Mit beiden kommst du ohne Ladepad durch einen langen Tag im Nether.",
+          ],
+          tasks=[task_item("mekanismgenerators:module_solar_recharging_unit", 1), task_item("mekanismgenerators:module_geothermal_generator_unit", 1)],
+          rewards=[reward_item("mekanismgenerators:advanced_solar_generator", 1), reward_xp(10)],
+          deps=["mekasuit"], icon="mekanismgenerators:module_solar_recharging_unit", optional=True),
+
     # ---- MoreMachine -------------------------------------------------------------------
     quest("presser", 0, 29, "&3Bau einen Presser",
           subtitle="AE2-Prozessoren in einem Schritt.",
@@ -442,7 +566,7 @@ quests = [
           ],
           tasks=[task_checkmark("Gelesen")],
           rewards=[reward_xp(3)],
-          deps=["fusion"], icon="mekanism:pellet_polonium", optional=True),
+          deps=["fusion"], icon="mekanism:pellet_polonium", optional=True, section="goal"),
 
     quest("outlook", 2.5, 33, "&5Schau auf Stufe 5",
           subtitle="Was Plutonium und Antimaterie öffnen.",
@@ -453,7 +577,7 @@ quests = [
           ],
           tasks=[task_checkmark("Gelesen")],
           rewards=[reward_xp(5)],
-          deps=["fusion"], icon="mekanismgenerators:fusion_reactor_frame", optional=True),
+          deps=["fusion"], icon="mekanismgenerators:fusion_reactor_frame", optional=True, section="goal"),
 
     quest("goal", 5.5, 33, "&5&lBring Licht des Drachen zum Obelisken",
           subtitle="Schaltkreise für den Obelisken.",

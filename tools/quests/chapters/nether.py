@@ -81,7 +81,7 @@ quests = [
           deps=["welcome"], icon="waystones:waystone", optional=True),
 
     # ---- Rohstoffe -----------------------------------------------------------
-    quest("netherrack", 5, 0, "&4Bau Netherrack ab",
+    quest("netherrack", 6, -1.5, "&4Bau Netherrack ab",
           subtitle="Davon gibt es mehr als genug.",
           description=[
               "Bau &e64 Netherrack&r ab. Im Ofen wird er zu &6Netherziegeln&r, in jedem &6Leeren Lohenbrenner&r steckt ein Block.",
@@ -267,7 +267,7 @@ quests = [
           ],
           tasks=[task_kill("minecraft:hoglin", 3)],
           rewards=[reward_item("minecraft:cooked_porkchop", 8)],
-          deps=["b_crimson"], icon="minecraft:porkchop"),
+          deps=["b_crimson"], icon="minecraft:porkchop", section="mobs"),
 
     quest("m_strider", 5, 14, "&dReite einen Schreiter",
           subtitle="Über die Lavaseen statt außen herum.",
@@ -278,7 +278,40 @@ quests = [
           ],
           tasks=[task_advancement("minecraft:nether/ride_strider", "Einen Schreiter reiten")],
           rewards=[reward_item("minecraft:saddle", 1), reward_xp(5)],
-          deps=["biomes"], icon="minecraft:warped_fungus_on_a_stick", optional=True),
+          deps=["biomes"], icon="minecraft:warped_fungus_on_a_stick", optional=True, section="mobs"),
+
+    quest("n_return_ghast", 0, 16, "&fSchick den Feuerball zurück",
+          subtitle="Mit seinen eigenen Waffen geschlagen.",
+          description=[
+              "Erleg einen &6Ghast&r mit seinem eigenen Feuerball. Schlag den Feuerball im richtigen Moment mit der Hand, dem Schwert oder einem Pfeil, und er fliegt zurück.",
+              "",
+              "Ein Treffer reicht für einen Ghast. Das klappt besser als jeder Bogen auf diese Entfernung.",
+          ],
+          tasks=[task_advancement("minecraft:nether/return_to_sender", "Einen Ghast mit einem Feuerball erlegen")],
+          rewards=[reward_item("minecraft:ghast_tear", 1), reward_xp(5)],
+          deps=["m_ghast"], icon="minecraft:fire_charge", optional=True),
+
+    quest("n_soul_lantern", 7.5, 14, "&3Halte Piglins mit Seelenfeuer fern",
+          subtitle="Was blau brennt, meiden sie.",
+          description=[
+              "Kohle, ein Stock und &6Seelensand&r ergeben &6Seelenfackeln&r. Acht Eisennuggets um eine Fackel ergeben eine &6Seelenlaterne&r.",
+              "",
+              "Piglins meiden Seelenfeuer, Seelenfackeln, Seelenlaternen und Seelenlagerfeuer. Hoglins meiden Wirrpilze. Stell beides an dein Netherportal und um deinen Stützpunkt, dann bleibt es ruhiger.",
+          ],
+          tasks=[task_item("minecraft:soul_lantern", 4)],
+          rewards=[reward_item("minecraft:soul_torch", 16), reward_xp(3)],
+          deps=["b_soul"], icon="minecraft:soul_lantern", optional=True, section="mobs"),
+
+    quest("n_froglight", 5, 16, "&6Füttere einen Frosch mit Magma",
+          subtitle="Was er frisst, wird zu Licht.",
+          description=[
+              "Bring einen &6Frosch&r in den Nether, am einfachsten in einem Boot durch das Portal. Frisst er einen kleinen &6Magmawürfel&r, bleibt ein &6Froschlicht&r liegen.",
+              "",
+              "Die Farbe hängt vom Frosch ab: der orange Frosch aus dem Sumpf macht &6Ockerfarbenes Froschlicht&r, der grüne aus kalten Biomen grünes, der weiße aus warmen Biomen perlmuttfarbenes. Froschlicht ist eine helle Lichtquelle, die gut aussieht.",
+          ],
+          tasks=[task_item("minecraft:ochre_froglight", 1)],
+          rewards=[reward_item("minecraft:slime_ball", 8), reward_xp(5)],
+          deps=["magma"], icon="minecraft:ochre_froglight", optional=True, section="mobs"),
 
     # ---- Festungen -----------------------------------------------------------
     quest("fortress", 15, 0, "&4&lFinde eine Netherfestung",
@@ -420,6 +453,65 @@ quests = [
           tasks=[task_item("minecraft:netherite_ingot", 1)],
           rewards=[reward_xp(20)],
           deps=["debris"], icon="minecraft:netherite_ingot", optional=True),
+
+    quest("n_respawn_anchor", 20, 7.5, "&5Bau einen Seelenanker",
+          subtitle="Ein Bett, das im Nether nicht explodiert.",
+          description=[
+              "&66 Weinender Obsidian&r und &63 Leuchtstein&r ergeben einen &6Seelenanker&r. Weinenden Obsidian tauschen dir die Piglins gegen Gold.",
+              "",
+              "Lade ihn mit Leuchtsteinblöcken auf, bis zu &d4&r Ladungen, und klick ihn an. Stirbst du, wachst du im Nether neben ihm auf, jede Wiedergeburt kostet eine Ladung.",
+              "",
+              "&cAchtung:&r In der Oberwelt explodiert er beim Benutzen, genau wie ein Bett im Nether.",
+          ],
+          tasks=[task_item("minecraft:respawn_anchor", 1)],
+          rewards=[reward_item("minecraft:glowstone", 8), reward_xp(5)],
+          deps=["barter"], icon="minecraft:respawn_anchor"),
+
+    quest("n_piglin_brute", 17.5, 7.5, "&cBesiege einen Piglin-Barbaren",
+          subtitle="Ihn beeindruckt kein Gold.",
+          description=[
+              "Erleg einen &cPiglin-Barbaren&r. Sie bewachen die Bastionen mit goldenen Äxten, greifen dich trotz Goldrüstung an und kommen nicht wieder, wenn sie tot sind.",
+              "",
+              "&eKronwerke:&r Ab Stufe 2 haben feindliche Mobs &d30 Prozent&r mehr Leben, &d20 Prozent&r mehr Schaden und &d2&r Rüstungspunkte dazu. Ein Barbar haut entsprechend hart zu, geh mit Schild und guter Rüstung.",
+          ],
+          tasks=[task_kill("minecraft:piglin_brute", 1)],
+          rewards=[reward_item("minecraft:gold_ingot", 8), reward_xp(8)],
+          deps=["bastion"], icon="minecraft:golden_axe"),
+
+    quest("n_lava_rod", 22.5, 7.5, "&6Angle in der Lava",
+          subtitle="Nether Depths Upgrade: Fische, die im Feuer leben.",
+          description=[
+              "&63 Lohenruten&r, &62 Netheritplatten&r und &62 Ketten&r ergeben eine &6Lava-Angel&r. Mit ihr angelst du in den Lavaseen des Nethers.",
+              "",
+              "Was anbeißt, kommt als lebender Fisch heraus: &6Searing Cod&r, &6Bonefish&r, &6Glowdine&r, Lava-Kugelfische und mehr. Manche Arten leben nur in bestimmten Biomen, etwa der &6Soul Sucker&r im Seelensandtal.",
+              "",
+              "Eine Schere am &6Fortress Grouper&r gibt Platten, am &6Eyeball Fish&r ein Auge. Auge und Lohenstaub ergeben ein Enderauge, ganz ohne Enderperle.",
+          ],
+          tasks=[task_item("netherdepthsupgrade:lava_fishing_rod", 1)],
+          rewards=[reward_item("minecraft:blaze_rod", 4), reward_xp(5)],
+          deps=["debris", "blaze"], icon="netherdepthsupgrade:lava_fishing_rod", optional=True),
+
+    quest("n_netherite_pick", 25, 9, "&8Rüste eine Spitzhacke auf Netherit auf",
+          subtitle="Die beste Spitzhacke aus Vanilla.",
+          description=[
+              "Leg am &6Schmiedetisch&r eine &6Schmiedevorlage&r, eine &6Diamantspitzhacke&r und einen &6Netheritbarren&r ein. Verzauberungen bleiben erhalten.",
+              "",
+              "Netheritwerkzeug hält länger, baut schneller ab und verbrennt nicht, wenn es in Lava fällt. Kopier die Vorlage, bevor du die letzte verbrauchst.",
+          ],
+          tasks=[task_item("minecraft:netherite_pickaxe", 1)],
+          rewards=[reward_table("s2_uncommon"), reward_xp(10)],
+          deps=["netherite"], icon="minecraft:netherite_pickaxe", optional=True),
+
+    quest("n_lodestone", 25, 7.5, "&8Stell einen Leitstein an dein Portal",
+          subtitle="Ein Kompass, der auch im Nether zeigt.",
+          description=[
+              "&68 Gemeißelte Steinziegel&r um einen &6Netheritbarren&r ergeben einen &6Leitstein&r. Rechtsklick mit einem &6Kompass&r darauf, und er wird zum Leitstein-Kompass.",
+              "",
+              "Ein normaler Kompass dreht sich im Nether nur im Kreis. Der Leitstein-Kompass zeigt immer zu seinem Leitstein, solange du in derselben Dimension bist. Stell einen neben dein Netherportal, und du findest immer zurück.",
+          ],
+          tasks=[task_item("minecraft:lodestone", 1)],
+          rewards=[reward_item("minecraft:compass", 2), reward_xp(5)],
+          deps=["netherite"], icon="minecraft:lodestone", optional=True),
 
     # ---- Bauwerke ------------------------------------------------------------
     quest("structures", 10, 9, "&6Finde ein Bauwerk von Dungeons and Taverns",
@@ -563,7 +655,7 @@ quests = [
 images = [
     banner("nether/title", "Der Nether", 11, -5, height=1.75, kind="title", colour="fire"),
     banner("nether/arrival", "Ankunft", 1.25, -2.6, height=0.9, colour="fire"),
-    banner("nether/resources", "Rohstoffe", 8.75, -3.2, height=0.9, colour="fire"),
+    banner("nether/resources", "Rohstoffe", 8.75, -2.6, height=0.9, colour="fire"),
     banner("nether/fortresses", "Festungen", 17.5, -2.6, height=0.9, colour="fire"),
     banner("nether/biomes", "Biome", 2.5, 7.2, height=0.9, colour="fire"),
     banner("nether/mobs", "Mobs", 2.5, 12.6, height=0.9, colour="fire"),

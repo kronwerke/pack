@@ -160,7 +160,102 @@ quests = [
           rewards=[reward_table("s3_rare"), reward_item("mekanism:ingot_steel", 32), reward_xp(25)],
           deps=["writer", "tunnels"], icon="integrateddynamics:part_display_panel", size=2.5, shape="gear"),
 
+    quest("crafting_jobs", 18, 2.5, "&3Behalte die Aufträge im Blick",
+          subtitle="Das Crafting Job Terminal.",
+          description=[
+              "&eRezept:&r oben Glowstonestaub, &6Menril Glass&r, Glowstonestaub, in der Mitte ein &6Display Panel&r, unten Glowstonestaub, &6Werkbank&r, Glowstonestaub.",
+              "",
+              "Es zeigt die Herstellungsaufträge, die dein Netz gerade abarbeitet. So siehst du auf einen Blick, ob ein Auftrag läuft oder hängt.",
+          ],
+          tasks=[task_item("integratedterminals:part_terminal_crafting_job", 1)],
+          rewards=[reward_item("minecraft:glowstone_dust", 16), reward_xp(5)],
+          deps=["crafting"], icon="integratedterminals:part_terminal_crafting_job", optional=True),
+
+    quest("labeller", 10.5, -1.5, "&9Beschrifte deine Karten",
+          subtitle="Der Labeller.",
+          description=[
+              "&eRezept:&r vier &6Crystalized Menril Chunks&r und ein &6Buch und Feder&r, schräg wie ein Stift.",
+              "",
+              "Im Labeller gibst du einer Variable Card einen Namen. Bei zwanzig Karten im Variable Store weißt du so, welche die Kohle zählt und welche den Tank.",
+          ],
+          tasks=[task_item("integrateddynamics:labeller", 1)],
+          rewards=[reward_item("integrateddynamics:variable", 8), reward_xp(3)],
+          deps=["programmer"], icon="integrateddynamics:labeller", optional=True),
+
     # ---- XNet ------------------------------------------------------------------
+    quest("xnet_wireless", 15.5, 6, "&eFunk zwischen Controllern",
+          subtitle="Wireless Router und Antenne.",
+          description=[
+              "&6Wireless Router:&r &6Enderperlen&r in den vier Ecken, oben ein &6Komparator&r, &6Redstone&r links, rechts und unten in der Mitte, ein &6Machine Frame&r im Zentrum. Dazu eine &6Antennenbasis&r (Eisenbarren und ein Eisenblock) und eine &6Antenne&r (Eisengitter und Eisenbarren).",
+              "",
+              "Der Wireless Router reicht veröffentlichte Kanäle drahtlos an andere Wireless Router weiter. Mit der Antenne reicht er &e100 Blöcke&r weit, mit der &6Antennenschüssel&r (Eisenfalltüren, Enderperle, Eisen) &e500&r. Jeder Kanal kostet 20 oder 50 RF pro Tick.",
+              "",
+              "So verbindest du die Basis eines Mitspielers ohne ein einziges Kabel über die Landschaft.",
+          ],
+          tasks=[task_item("xnet:wireless_router", 1), task_item("xnet:antenna", 1)],
+          rewards=[reward_item("minecraft:ender_pearl", 4), reward_xp(8)],
+          deps=["xnet_router"], icon="xnet:wireless_router", optional=True),
+
+    # ---- LaserIO neu -------------------------------------------------------------
+    quest("laser_redstone", 10.5, 12, "&cFunk Redstone per Laser",
+          subtitle="Die Redstone Card.",
+          description=[
+              "&eRezept:&r drei &6Redstone&r oben, &6Netherquarz&r, &6Logic Chip&r, Netherquarz in der Mitte, drei &6Goldnuggets&r unten.",
+              "",
+              "In einem Node liest die Karte das Redstone-Signal an ihrer Seite oder gibt eines aus. Sender und Empfänger finden sich über ihren &eRedstone-Kanal&r, wie Item Cards über ihren Kanal.",
+              "",
+              "So schaltet ein Hebel in der Werkstatt die Maschinen am anderen Ende des Laser-Netzes ab.",
+          ],
+          tasks=[task_item("laserio:card_redstone", 1)],
+          rewards=[reward_item("minecraft:redstone", 16), reward_xp(4)],
+          deps=["laser_cards"], icon="laserio:card_redstone", optional=True),
+
+    quest("laser_count", 13, 10, "&cHalt einen festen Bestand",
+          subtitle="Der Counting Filter.",
+          description=[
+              "Ein &6Basic Filter&r und ein &6Beobachter&r, formlos, ergeben den &6Counting Filter&r.",
+              "",
+              "Statt nur zu sagen, &ewelche&r Items durchdürfen, legt er auch fest, &ewie viele&r. In einer Insert-Karte füllt der Node das Ziel nur bis zu dieser Zahl auf: genau 64 Kohle im Generator, genau 16 Erz in jeder Maschine.",
+          ],
+          tasks=[task_item("laserio:filter_count", 1)],
+          rewards=[reward_item("minecraft:observer", 2), reward_xp(4)],
+          deps=["laser_upgrades"], icon="laserio:filter_count", optional=True),
+
+    # ---- Mining Gadgets neu --------------------------------------------------------
+    quest("mg_battery", 5.5, 20, "&bMach den Gadget ausdauernder",
+          subtitle="Battery und Efficiency.",
+          description=[
+              "&6Battery I:&r acht &6Netherquarz&r um ein Blank Upgrade Module. &6Efficiency I:&r acht &6Redstone&r um ein Blank Module.",
+              "",
+              "Battery I gibt dem Gadget &d2 000 000 FE&r mehr Speicher, II noch mehr. Efficiency lässt ihn schneller abbauen, kostet aber &d10 FE&r pro Block extra, jede höhere Stufe 10 mehr.",
+          ],
+          tasks=[task_item("mininggadgets:upgrade_battery_1", 1), task_item("mininggadgets:upgrade_efficiency_1", 1)],
+          rewards=[reward_item("minecraft:quartz", 16), reward_xp(6)],
+          deps=["mg_upgrades"], icon="mininggadgets:upgrade_battery_1"),
+
+    quest("mg_range", 3, 20, "&bGreif weiter",
+          subtitle="Das Range-Upgrade.",
+          description=[
+              "&eRezept:&r Lapislazuli in den Ecken, &6Glas&r oben und unten, &6Diamanten&r links und rechts, ein Blank Upgrade Module in der Mitte: &6Range I&r.",
+              "",
+              "Der Laser reicht weiter, du baust aus sicherem Abstand ab, etwa über Lava hinweg oder an der Decke einer großen Höhle. Range II gibt es auch schon in Stufe 3.",
+          ],
+          tasks=[task_item("mininggadgets:upgrade_range_1", 1)],
+          rewards=[reward_item("minecraft:lapis_lazuli", 16), reward_xp(5)],
+          deps=["mg_upgrades"], icon="mininggadgets:upgrade_range_1", optional=True),
+
+    quest("mg_freeze_light", 5.5, 21.5, "&bFrier Lava ein und mach Licht",
+          subtitle="Freezing und Light Placer.",
+          description=[
+              "&6Freezing:&r acht &6Schneebälle&r um ein Blank Module. &6Light Placer:&r Laternen, Glowstone, Glowstonestaub und zwei &6Redstone-Lampen&r um ein Blank Module.",
+              "",
+              "Freezing friert Lava und Wasser vor dem Laser ein, &d100 FE&r pro Block. Light Placer setzt beim Abbauen das &6Miner's Light&r in dunkle Gänge, ebenfalls &d100 FE&r pro Licht.",
+          ],
+          tasks=[task_item("mininggadgets:upgrade_freezing", 1), task_item("mininggadgets:upgrade_light_placer", 1)],
+          rewards=[reward_item("minecraft:snowball", 16), reward_xp(5)],
+          deps=["mg_upgrades"], icon="mininggadgets:upgrade_freezing", optional=True),
+
+    # ---- XNet (Bestand) ------------------------------------------------------------
     quest("xnet_controller", 3, 6, "&eBau einen XNet Controller",
           subtitle="Ein Block, der alles steuert.",
           description=[

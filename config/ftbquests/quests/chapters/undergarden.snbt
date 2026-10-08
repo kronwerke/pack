@@ -50,7 +50,7 @@
 		}
 		{
 			id: "7E8C66DED5746CDA"
-			x: 13.375d
+			x: 15.375d
 			y: 4.5d
 			icon: {
 				id: "undergarden:depthrock"
@@ -98,7 +98,7 @@
 		{
 			id: "70E2BCE28DA35DE3"
 			x: 4.0d
-			y: 4.125d
+			y: 5.625d
 			icon: {
 				id: "undergarden:underbeans"
 				count: 1
@@ -138,7 +138,7 @@
 		{
 			id: "5FC5916989C6F7C3"
 			x: 6.0d
-			y: 4.125d
+			y: 5.625d
 			icon: {
 				id: "undergarden:gloomgourd"
 				count: 1
@@ -183,7 +183,7 @@
 		{
 			id: "6FD098CC9C455991"
 			x: 8.0d
-			y: 4.125d
+			y: 5.625d
 			icon: {
 				id: "undergarden:dweller_steak"
 				count: 1
@@ -222,7 +222,7 @@
 		{
 			id: "211A49A54F69E444"
 			x: 10.0d
-			y: 4.125d
+			y: 5.625d
 			icon: {
 				id: "undergarden:slingshot"
 				count: 1
@@ -272,7 +272,7 @@
 		{
 			id: "7DEFE07B6F1A33CE"
 			x: 4.0d
-			y: 7.125d
+			y: 8.625d
 			icon: {
 				id: "undergarden:utheric_shard"
 				count: 1
@@ -323,7 +323,7 @@
 		{
 			id: "162379C67E14B4C2"
 			x: 6.0d
-			y: 7.125d
+			y: 8.625d
 			icon: {
 				id: "undergarden:shard_torch"
 				count: 1
@@ -361,8 +361,8 @@
 		}
 		{
 			id: "21BA3E883012520F"
-			x: 9.75d
-			y: 10.725000000000001d
+			x: 11.65d
+			y: 12.225d
 			icon: {
 				id: "undergarden:smogstem_log"
 				count: 1
@@ -401,8 +401,8 @@
 		}
 		{
 			id: "394FB23B3EFA2DA1"
-			x: 11.75d
-			y: 10.725000000000001d
+			x: 13.65d
+			y: 12.225d
 			icon: {
 				id: "undergarden:indigo_mushroom"
 				count: 1
@@ -449,8 +449,8 @@
 		}
 		{
 			id: "2D05B19418153534"
-			x: 13.75d
-			y: 10.725000000000001d
+			x: 15.65d
+			y: 12.225d
 			icon: {
 				id: "undergarden:shiverstone"
 				count: 1
@@ -488,8 +488,8 @@
 		}
 		{
 			id: "1209E058EB1AF92A"
-			x: 15.75d
-			y: 10.725000000000001d
+			x: 17.65d
+			y: 12.225d
 			icon: {
 				id: "undergarden:gwibling_bucket"
 				count: 1
@@ -528,13 +528,14 @@
 		}
 		{
 			id: "120BD5C808DBF981"
-			x: 15.975d
-			y: 4.5d
+			x: 0.25d
+			y: 13.725d
 			icon: {
 				id: "undergarden:cloggrum_ingot"
 				count: 1
 			}
 			size: 1.5d
+			hide_dependency_lines: true
 			dependencies: [
 				"7E8C66DED5746CDA"
 			]
@@ -577,13 +578,12 @@
 		}
 		{
 			id: "264FBA6B685A325F"
-			x: 0.0d
-			y: 12.225000000000001d
+			x: 2.65d
+			y: 13.725d
 			icon: {
 				id: "undergarden:cloggrum_pickaxe"
 				count: 1
 			}
-			hide_dependency_lines: true
 			dependencies: [
 				"120BD5C808DBF981"
 			]
@@ -626,8 +626,8 @@
 		}
 		{
 			id: "3C3C91C6E28473E1"
-			x: 2.0d
-			y: 10.725000000000001d
+			x: 4.65d
+			y: 12.225d
 			icon: {
 				id: "undergarden:froststeel_ingot"
 				count: 1
@@ -676,8 +676,8 @@
 		}
 		{
 			id: "288E0C1EE22A463A"
-			x: 4.0d
-			y: 10.725000000000001d
+			x: 6.65d
+			y: 12.225d
 			icon: {
 				id: "undergarden:froststeel_sword"
 				count: 1
@@ -715,8 +715,8 @@
 		}
 		{
 			id: "1ACBAA8F12DFC3F2"
-			x: 2.0d
-			y: 12.225000000000001d
+			x: 4.65d
+			y: 13.725d
 			icon: {
 				id: "undergarden:utheric_cluster"
 				count: 1
@@ -754,8 +754,8 @@
 		}
 		{
 			id: "382BCDE2BBBD5554"
-			x: 4.0d
-			y: 12.225000000000001d
+			x: 6.65d
+			y: 13.725d
 			icon: {
 				id: "undergarden:regalium_crystal"
 				count: 1
@@ -793,8 +793,8 @@
 		}
 		{
 			id: "24456541C4B62F76"
-			x: 6.0d
-			y: 13.725000000000001d
+			x: 8.65d
+			y: 15.225d
 			icon: {
 				id: "undergarden:depthrock_pebble"
 				count: 1
@@ -830,8 +830,8 @@
 		}
 		{
 			id: "648CD1C6DC37B626"
-			x: 6.0d
-			y: 12.225000000000001d
+			x: 8.65d
+			y: 13.725d
 			icon: {
 				id: "undergarden:depthrock_coal_ore"
 				count: 1
@@ -912,7 +912,7 @@
 		{
 			id: "193C649EBF3BADD6"
 			x: 8.0d
-			y: 7.125d
+			y: 8.625d
 			icon: {
 				id: "undergarden:utheric_shard"
 				count: 1
@@ -971,7 +971,7 @@
 		{
 			id: "370391FE38BBD442"
 			x: 10.0d
-			y: 5.625d
+			y: 7.125d
 			icon: {
 				id: "undergarden:raw_gloomper_leg"
 				count: 1
@@ -1064,7 +1064,7 @@
 		{
 			id: "166708881713633F"
 			x: 10.0d
-			y: 7.125d
+			y: 8.625d
 			icon: {
 				id: "undergarden:brute_tusk"
 				count: 1
@@ -1123,7 +1123,7 @@
 		{
 			id: "65586A7003E369B7"
 			x: 0.25d
-			y: 17.8d
+			y: 20.7d
 			icon: {
 				id: "undergarden:depthrock_bricks"
 				count: 1
@@ -1167,7 +1167,7 @@
 		{
 			id: "69AAD91CE2D28D63"
 			x: 2.65d
-			y: 17.8d
+			y: 20.7d
 			icon: {
 				id: "undergarden:forgotten_nugget"
 				count: 1
@@ -1210,7 +1210,7 @@
 		{
 			id: "6E22E2343E1BC516"
 			x: 5.25d
-			y: 17.8d
+			y: 20.7d
 			icon: {
 				id: "undergarden:forgotten_ingot"
 				count: 1
@@ -1249,7 +1249,7 @@
 		{
 			id: "4421F6507C3F8FC4"
 			x: 7.25d
-			y: 17.8d
+			y: 20.7d
 			icon: {
 				id: "undergarden:forgotten_pickaxe"
 				count: 1
@@ -1288,7 +1288,7 @@
 		{
 			id: "734AE798B8886255"
 			x: 9.25d
-			y: 17.8d
+			y: 20.7d
 			icon: {
 				id: "undergarden:forgotten_sword"
 				count: 1
@@ -1328,7 +1328,7 @@
 		{
 			id: "11C72FC6B80F731C"
 			x: 7.25d
-			y: 19.3d
+			y: 22.2d
 			icon: {
 				id: "undergarden:carved_gloomgourd"
 				count: 1
@@ -1364,8 +1364,8 @@
 		}
 		{
 			id: "5B8E1A16ABE701CC"
-			x: 12.625d
-			y: 19.175d
+			x: 14.625d
+			y: 20.575d
 			icon: {
 				id: "undergarden:rogdorium"
 				count: 1
@@ -1408,8 +1408,8 @@
 		}
 		{
 			id: "28763734C4D999AB"
-			x: 15.225d
-			y: 17.425d
+			x: 17.225d
+			y: 18.825d
 			icon: {
 				id: "undergarden:rogdorium_nugget"
 				count: 1
@@ -1444,8 +1444,8 @@
 		}
 		{
 			id: "4BD416540A4C1CDD"
-			x: 15.225d
-			y: 19.175d
+			x: 17.225d
+			y: 20.575d
 			icon: {
 				id: "undergarden:infuser"
 				count: 1
@@ -1495,8 +1495,8 @@
 		}
 		{
 			id: "11FBA6B7C921C274"
-			x: 17.625d
-			y: 19.175d
+			x: 19.625d
+			y: 20.575d
 			icon: {
 				id: "undergarden:utherium_sword"
 				count: 1
@@ -1534,8 +1534,8 @@
 		}
 		{
 			id: "193A0D3F29761CB0"
-			x: 15.225d
-			y: 20.925d
+			x: 17.225d
+			y: 22.325d
 			icon: {
 				id: "undergarden:denizen_mask"
 				count: 1
@@ -1570,9 +1570,320 @@
 			]
 		}
 		{
+			id: "1CA43B0168D34FA6"
+			x: 6.0d
+			y: 7.125d
+			icon: {
+				id: "undergarden:blisterbomb"
+				count: 1
+			}
+			optional: true
+			dependencies: [
+				"70E2BCE28DA35DE3"
+			]
+			tasks: [
+				{
+					id: "25CFBC9B87B16599"
+					type: "item"
+					item: {
+						id: "undergarden:blisterbomb"
+						count: 1
+					}
+					count: 4
+				}
+			]
+			rewards: [
+				{
+					id: "2A355475981C5D1C"
+					type: "item"
+					item: {
+						id: "undergarden:twistytwig"
+						count: 1
+					}
+					count: 4
+				}
+				{
+					id: "1335B1EFEDADC645"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+		}
+		{
+			id: "2A390CCD8D38E8C3"
+			x: 6.0d
+			y: 4.125d
+			icon: {
+				id: "undergarden:ditchbulb"
+				count: 1
+			}
+			optional: true
+			dependencies: [
+				"70E2BCE28DA35DE3"
+			]
+			tasks: [
+				{
+					id: "37DB136A8EAEC873"
+					type: "item"
+					item: {
+						id: "undergarden:ditchbulb_paste"
+						count: 1
+					}
+					count: 4
+				}
+			]
+			rewards: [
+				{
+					id: "2563B71B9D4CDA73"
+					type: "item"
+					item: {
+						id: "minecraft:torch"
+						count: 1
+					}
+					count: 16
+				}
+				{
+					id: "457862C1A0BEA523"
+					type: "xp_levels"
+					xp_levels: 3
+				}
+			]
+		}
+		{
+			id: "1E0E1D1128CCEFAC"
+			x: 12.0d
+			y: 5.625d
+			icon: {
+				id: "undergarden:depthrock_pebble"
+				count: 1
+			}
+			optional: true
+			dependencies: [
+				"211A49A54F69E444"
+			]
+			tasks: [
+				{
+					id: "639E30827F7C97EF"
+					type: "advancement"
+					advancement: "undergarden:undergarden/slingshot_20_damage"
+					criterion: ""
+				}
+			]
+			rewards: [
+				{
+					id: "210FF4AA81596B8D"
+					type: "item"
+					item: {
+						id: "undergarden:depthrock_pebble"
+						count: 1
+					}
+					count: 64
+				}
+				{
+					id: "134F290631DA6B3C"
+					type: "xp_levels"
+					xp_levels: 10
+				}
+			]
+		}
+		{
+			id: "7662608598D923AA"
+			x: 4.65d
+			y: 15.225d
+			icon: {
+				id: "undergarden:cloggrum_chestplate"
+				count: 1
+			}
+			dependencies: [
+				"264FBA6B685A325F"
+			]
+			tasks: [
+				{
+					id: "58AB57F179958035"
+					type: "advancement"
+					advancement: "undergarden:undergarden/cloggrum_armor"
+					criterion: ""
+				}
+				{
+					id: "4DFD4CDCFCFBF3EE"
+					type: "item"
+					item: {
+						id: "undergarden:cloggrum_shield"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "592B9779DCE87568"
+					type: "item"
+					item: {
+						id: "undergarden:cloggrum_ingot"
+						count: 1
+					}
+					count: 8
+				}
+				{
+					id: "3C94348FF36031A0"
+					type: "xp_levels"
+					xp_levels: 8
+				}
+			]
+		}
+		{
+			id: "5D17215C745178DC"
+			x: 19.65d
+			y: 12.225d
+			icon: {
+				id: "naturescompass:naturescompass"
+				count: 1
+			}
+			optional: true
+			hide_dependency_lines: true
+			dependencies: [
+				"1209E058EB1AF92A"
+				"5B8E1A16ABE701CC"
+			]
+			tasks: [
+				{
+					id: "487ADB0AABC42DAC"
+					type: "advancement"
+					advancement: "undergarden:undergarden/all_undergarden_biomes"
+					criterion: ""
+				}
+			]
+			rewards: [
+				{
+					id: "3449BDDE2EA17A51"
+					type: "loot"
+					table_id: 8923133104651443544L
+				}
+				{
+					id: "28B06BCF702E0038"
+					type: "xp_levels"
+					xp_levels: 15
+				}
+			]
+		}
+		{
+			id: "19FA704D6B46F06D"
+			x: 2.65d
+			y: 18.825d
+			icon: {
+				id: "undergarden:cloggrum_battleaxe"
+				count: 1
+			}
+			dependencies: [
+				"65586A7003E369B7"
+			]
+			tasks: [
+				{
+					id: "5479A6C4EFB6E43A"
+					type: "item"
+					item: {
+						id: "undergarden:cloggrum_battleaxe"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "6ACE4FF3686566FA"
+					type: "item"
+					item: {
+						id: "undergarden:cloggrum_ingot"
+						count: 1
+					}
+					count: 4
+				}
+				{
+					id: "2546036ECE72BF4B"
+					type: "xp_levels"
+					xp_levels: 8
+				}
+			]
+		}
+		{
+			id: "78F5F9FDE623893B"
+			x: 11.25d
+			y: 20.7d
+			icon: {
+				id: "undergarden:forgotten_battleaxe"
+				count: 1
+			}
+			optional: true
+			hide_dependency_lines: true
+			dependencies: [
+				"734AE798B8886255"
+				"19FA704D6B46F06D"
+			]
+			tasks: [
+				{
+					id: "64DC0486AC688FA2"
+					type: "advancement"
+					advancement: "undergarden:undergarden/forgotten_tools"
+					criterion: ""
+				}
+			]
+			rewards: [
+				{
+					id: "429933DC17C92AAF"
+					type: "loot"
+					table_id: 8295882381094242541L
+				}
+				{
+					id: "4E8182B9CDEBD0B2"
+					type: "xp_levels"
+					xp_levels: 20
+				}
+			]
+		}
+		{
+			id: "273B796CE12BB60B"
+			x: 19.625d
+			y: 22.325d
+			icon: {
+				id: "undergarden:denizen_mask"
+				count: 1
+			}
+			optional: true
+			dependencies: [
+				"193A0D3F29761CB0"
+			]
+			tasks: [
+				{
+					id: "1D881F426060F724"
+					type: "item"
+					item: {
+						id: "undergarden:denizen_mask"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "15A277FF0BB6A03A"
+					type: "item"
+					item: {
+						id: "undergarden:rogdorium"
+						count: 1
+					}
+					count: 4
+				}
+				{
+					id: "5669EF0311DFC2F8"
+					type: "xp_levels"
+					xp_levels: 10
+				}
+			]
+		}
+		{
 			id: "3326EEBF732242EE"
-			x: 9.75d
-			y: 13.075000000000001d
+			x: 21.625d
+			y: 20.575d
 			icon: {
 				id: "undergarden:utherium_block"
 				count: 1
@@ -1678,7 +1989,7 @@
 		{
 			id: "6CC54BE7CEFCDE90"
 			image: "kronwerke:textures/quests/undergarden/arrival.png"
-			x: 13.795d
+			x: 15.795d
 			y: 2.6750000000000003d
 			width: 2.59d
 			height: 0.9d
@@ -1689,7 +2000,7 @@
 			id: "7F79893185229612"
 			image: "kronwerke:textures/quests/undergarden/ores.png"
 			x: 0.29500000000000004d
-			y: 9.275d
+			y: 10.774999999999999d
 			width: 1.59d
 			height: 0.9d
 			rotation: 0.0d
@@ -1698,8 +2009,8 @@
 		{
 			id: "13867DF5E376A659"
 			image: "kronwerke:textures/quests/undergarden/biomes.png"
-			x: 9.53d
-			y: 9.275d
+			x: 12.18d
+			y: 10.774999999999999d
 			width: 2.06d
 			height: 0.9d
 			rotation: 0.0d
@@ -1709,7 +2020,7 @@
 			id: "18A00B88B84D3CB6"
 			image: "kronwerke:textures/quests/undergarden/catacombs.png"
 			x: 1.545d
-			y: 15.975d
+			y: 17.375d
 			width: 4.09d
 			height: 0.9d
 			rotation: 0.0d
@@ -1718,8 +2029,8 @@
 		{
 			id: "70BDDFA73DEF5706"
 			image: "kronwerke:textures/quests/undergarden/depths.png"
-			x: 13.4d
-			y: 15.975d
+			x: 15.4d
+			y: 17.375d
 			width: 3.3d
 			height: 0.9d
 			rotation: 0.0d

@@ -447,8 +447,97 @@ quests = [
           rewards=[reward_item("undergarden:rogdorium", 4), reward_xp(10)],
           deps=["depths"], icon="undergarden:denizen_mask", optional=True),
 
+    # ---- Neu ------------------------------------------------------------------
+    quest("u_blisterbomb", 7.5, -6.5, "&cBau Blasenbomben",
+          subtitle="Verrottete Beeren mit Wumms.",
+          description=[
+              "&66 Verrottete Blasenbeeren&r und ein &6Verdrehter Zweig&r obendrauf ergeben eine &6Blasenbombe&r. Die verrotteten Beeren fallen neben den guten aus den Blasenbeerbüschen.",
+              "",
+              "Wirf sie in eine Gruppe Moderwesen, bevor sie dich erreichen. Acht Bomben um einen &6Düsterkürbis&r ergeben einen &6Donnerkürbis&r, einen Sprengblock für größere Löcher.",
+          ],
+          tasks=[task_item("undergarden:blisterbomb", 4)],
+          rewards=[reward_item("undergarden:twistytwig", 4), reward_xp(5)],
+          deps=["food"], icon="undergarden:blisterbomb", optional=True),
+
+    quest("u_ditchbulb", 5, -6.5, "&eMach Fackeln aus Grabenknollen",
+          subtitle="Licht ohne Kohle.",
+          description=[
+              "Ernte &6Grabenknollen&r. Eine Knolle ergibt eine &6Grabenknollenpaste&r, Paste über einem Stock ergibt &e2 Fackeln&r.",
+              "",
+              "So bleibt dein Kohlevorrat für den Ofen. Gegen Moderwesen hilft allerdings nur die Scherbenfackel.",
+          ],
+          tasks=[task_item("undergarden:ditchbulb_paste", 4)],
+          rewards=[reward_item("minecraft:torch", 16), reward_xp(3)],
+          deps=["food"], icon="undergarden:ditchbulb", optional=True),
+
+    quest("u_sniper", 10, -6.5, "&6Triff mit zwanzig Schaden",
+          subtitle="Ein einziger Kiesel, ein einziger Treffer.",
+          description=[
+              "Mach mit einem einzigen &6Tiefkieselstein&r aus der Schleuder &d20&r Schaden oder mehr.",
+              "",
+              "Wie du dahin kommst, ist dein Rätsel. Die Schleuder lässt sich verzaubern: &eRicochet&r lässt Geschosse von Wänden abprallen, &eLongevity&r gibt mehr Haltbarkeit, &eSelf Sling&r schießt statt Munition dich selbst.",
+          ],
+          tasks=[task_advancement("undergarden:undergarden/slingshot_20_damage", "Zwanzig Schaden mit einem Kiesel")],
+          rewards=[reward_item("undergarden:depthrock_pebble", 64), reward_xp(10)],
+          deps=["slingshot"], icon="undergarden:depthrock_pebble", optional=True),
+
+    quest("u_cloggrum_armor", 10, -1, "&7Trag die volle Cloggrumrüstung",
+          subtitle="Helm, Harnisch, Beinschutz, Stiefel und ein Schild.",
+          description=[
+              "Bau alle vier Teile der &6Cloggrumrüstung&r und dazu einen &6Cloggrumschild&r: &66 Cloggrumbarren&r und ein Brett oben in der Mitte.",
+              "",
+              "&eKronwerke:&r In Stufe 3 haben feindliche Mobs &d70 Prozent&r mehr Leben, &d45 Prozent&r mehr Schaden und &d4&r Rüstungspunkte dazu. Ohne volle Rüstung wird es in den Mooren und Katakomben schnell eng.",
+          ],
+          tasks=[task_advancement("undergarden:undergarden/cloggrum_armor", "Volle Cloggrumrüstung"), task_item("undergarden:cloggrum_shield", 1)],
+          rewards=[reward_item("undergarden:cloggrum_ingot", 8), reward_xp(8)],
+          deps=["cloggrum_gear"], icon="undergarden:cloggrum_chestplate"),
+
+    quest("u_all_biomes", 7.5, 6.5, "&2&lBesuch alle zwanzig Biome",
+          subtitle="Vom Smogstielwald bis in die Infizierten Tiefen.",
+          description=[
+              "Betritt jedes der &d20&r Biome des Undergarden, auch den &6Öden Abgrund&r, die drei Seen und unten die &6Tiefen&r, die &6Infizierten Tiefen&r und den &6Rogdoriumhain&r.",
+              "",
+              "Ein &6Kompass der Natur&r findet dir die fehlenden, er kennt auch die Biome des Undergarden.",
+          ],
+          tasks=[task_advancement("undergarden:undergarden/all_undergarden_biomes", "Alle Biome des Undergarden besucht")],
+          rewards=[reward_table("s3_uncommon"), reward_xp(15)],
+          deps=["b_seas", "depths"], icon="naturescompass:naturescompass", optional=True),
+
+    quest("u_battleaxe", 7.5, 10.5, "&7Nimm einem Verschollenen die Kampfaxt ab",
+          subtitle="Die einzige Quelle für die Cloggrumkampfaxt.",
+          description=[
+              "Manche &6Verschollene&r in den Katakomben tragen eine &6Cloggrumkampfaxt&r. Erleg sie, bis einer sie fallen lässt. Herstellen kannst du sie nicht.",
+              "",
+              "Am Schmiedetisch wird sie mit Vorlage und Vergessenem Barren zur &6Vergessenen Kampfaxt&r.",
+          ],
+          tasks=[task_item("undergarden:cloggrum_battleaxe", 1)],
+          rewards=[reward_item("undergarden:cloggrum_ingot", 4), reward_xp(8)],
+          deps=["catacombs"], icon="undergarden:cloggrum_battleaxe"),
+
+    quest("u_forgotten_all", 12.5, 7, "&d&lVervollständige das Vergessene Arsenal",
+          subtitle="Alle sechs Vergessenen Werkzeuge und Waffen.",
+          description=[
+              "Halte alle sechs gleichzeitig: &6Vergessene Kampfaxt&r, &6Schwert&r, &6Spitzhacke&r, &6Axt&r, &6Schaufel&r und &6Hacke&r.",
+              "",
+              "Jedes braucht ein Cloggrumteil, eine &6Schmiedevorlage&r und einen &6Vergessenen Barren&r. Die Werkzeuge bauen Undergarden-Blöcke &e1,5-mal&r so schnell ab.",
+          ],
+          tasks=[task_advancement("undergarden:undergarden/forgotten_tools", "Alle sechs Vergessenen Werkzeuge")],
+          rewards=[reward_table("s3_rare"), reward_xp(20)],
+          deps=["forgotten_arms", "u_battleaxe"], icon="undergarden:forgotten_battleaxe", optional=True),
+
+    quest("u_denizen_mask", 10, 15.2, "&6Hol dir eine Geheimnisvolle Maske",
+          subtitle="Selten, und nur von den Einwohnern.",
+          description=[
+              "Einwohner lassen mit &d5 Prozent&r eine &6Geheimnisvolle Maske&r fallen, wenn du sie erlegst. Plünderung erhöht die Chance ein wenig. Manchmal liegt eine in den Truhen der Camps.",
+              "",
+              "&cDenk dran:&r Wer ihr Lagerfeuer zerstört, hat das ganze Camp gegen sich.",
+          ],
+          tasks=[task_item("undergarden:denizen_mask", 1)],
+          rewards=[reward_item("undergarden:rogdorium", 4), reward_xp(10)],
+          deps=["denizen"], icon="undergarden:denizen_mask", optional=True),
+
     # ---- Abschluss -----------------------------------------------------------
-    quest("collection", 20, 6, "&2&lSammle die Schätze der Tiefe",
+    quest("collection", 17.5, 15.2, "&2&lSammle die Schätze der Tiefe",
           subtitle="Von jedem Erz einen Block.",
           description=[
               "Je ein Block aus &6Cloggrum&r, &6Froststahl&r, &6Utherium&r, &6Regalium&r und &6Rogdorium&r, jeweils aus 9 Barren oder Kristallen.",
@@ -466,7 +555,7 @@ images = [
     banner("undergarden/title", "Der Undergarden", 10, -8.6, height=1.75, kind="title", colour="nature"),
     banner("undergarden/arrival", "Anreise", 1.25, -1.6, height=0.9, colour="nature"),
     banner("undergarden/survival", "Überleben", 8.75, -6.5, height=0.9, colour="stone"),
-    banner("undergarden/ores", "Erze", 11.25, -1.1, height=0.9, colour="stone"),
+    banner("undergarden/ores", "Erze", 7.5, -1.1, height=0.9, colour="stone"),
     banner("undergarden/biomes", "Biome", 6.25, 3.8, height=0.9, colour="nature"),
     banner("undergarden/catacombs", "Katakomben", 10, 7.2, height=0.9, colour="stone"),
     banner("undergarden/depths", "Die Tiefen", 13.75, 11.7, height=0.9, colour="magic"),

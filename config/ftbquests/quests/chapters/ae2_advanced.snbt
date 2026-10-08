@@ -56,7 +56,7 @@
 		}
 		{
 			id: "54296EC5F7545D24"
-			x: 6.3d
+			x: 4.0d
 			y: 3.7399999999999998d
 			icon: {
 				id: "ae2:item_storage_cell_64k"
@@ -105,7 +105,7 @@
 		}
 		{
 			id: "6E319C40AA564E5E"
-			x: 8.3d
+			x: 6.0d
 			y: 3.7399999999999998d
 			icon: {
 				id: "ae2:item_storage_cell_256k"
@@ -149,12 +149,13 @@
 		}
 		{
 			id: "533523A58B9514E6"
-			x: 3.3d
-			y: 2.84d
+			x: 4.0d
+			y: 6.84d
 			icon: {
 				id: "ae2:fluid_storage_cell_64k"
 				count: 1
 			}
+			hide_dependency_lines: true
 			dependencies: [
 				"382C1E9144D1B45D"
 			]
@@ -188,12 +189,13 @@
 		}
 		{
 			id: "435A1C79B4753DF4"
-			x: 3.3d
-			y: 4.34d
+			x: 5.6d
+			y: 6.84d
 			icon: {
 				id: "appflux:fe_64k_cell"
 				count: 1
 			}
+			hide_dependency_lines: true
 			dependencies: [
 				"382C1E9144D1B45D"
 			]
@@ -227,8 +229,8 @@
 		}
 		{
 			id: "255C5A8DD75756BF"
-			x: 0.0d
-			y: 8.315d
+			x: 10.67d
+			y: 4.115d
 			icon: {
 				id: "ae2:matter_ball"
 				count: 1
@@ -276,8 +278,8 @@
 		}
 		{
 			id: "2D28DB17CFEEAC2E"
-			x: 2.0d
-			y: 8.315d
+			x: 12.67d
+			y: 4.115d
 			icon: {
 				id: "ae2:singularity"
 				count: 1
@@ -322,8 +324,8 @@
 		}
 		{
 			id: "60F46F2CBB76B74C"
-			x: 4.4d
-			y: 8.315d
+			x: 15.07d
+			y: 4.115d
 			icon: {
 				id: "ae2:quantum_entangled_singularity"
 				count: 1
@@ -361,8 +363,8 @@
 		}
 		{
 			id: "47D5B411CBF8DA0E"
-			x: 4.4d
-			y: 9.815d
+			x: 15.07d
+			y: 5.615d
 			icon: {
 				id: "ae2:quantum_ring"
 				count: 1
@@ -409,8 +411,8 @@
 		}
 		{
 			id: "4A72ED683B865E82"
-			x: 6.4d
-			y: 8.315d
+			x: 17.07d
+			y: 4.115d
 			icon: {
 				id: "ae2:quantum_link"
 				count: 1
@@ -474,8 +476,8 @@
 		}
 		{
 			id: "2942F44C4E626DCD"
-			x: 9.0d
-			y: 8.315d
+			x: 19.67d
+			y: 4.115d
 			icon: {
 				id: "ae2wtlib:quantum_bridge_card"
 				count: 1
@@ -515,7 +517,7 @@
 		{
 			id: "70F34E96B1AFA4DD"
 			x: 0.0d
-			y: 14.165000000000001d
+			y: 13.44d
 			icon: {
 				id: "megacells:sky_steel_ingot"
 				count: 1
@@ -555,7 +557,7 @@
 		{
 			id: "2242B89C69770C2E"
 			x: 2.0d
-			y: 14.165000000000001d
+			y: 13.44d
 			icon: {
 				id: "megacells:accumulation_processor"
 				count: 1
@@ -605,7 +607,7 @@
 		{
 			id: "4B0355F97624DC9C"
 			x: 4.0d
-			y: 15.665000000000001d
+			y: 10.44d
 			icon: {
 				id: "megacells:item_storage_cell_1m"
 				count: 1
@@ -658,7 +660,7 @@
 		{
 			id: "10A0A019F1B3EAFB"
 			x: 4.0d
-			y: 14.165000000000001d
+			y: 13.44d
 			icon: {
 				id: "megacells:mega_pattern_provider"
 				count: 1
@@ -697,7 +699,7 @@
 		{
 			id: "7748E7ADE21A36AB"
 			x: 6.0d
-			y: 14.165000000000001d
+			y: 13.44d
 			icon: {
 				id: "megacells:mega_energy_cell"
 				count: 1
@@ -736,7 +738,7 @@
 		{
 			id: "139C6B0CD4570B26"
 			x: 6.0d
-			y: 15.665000000000001d
+			y: 10.44d
 			icon: {
 				id: "megacells:mega_crafting_accelerator"
 				count: 1
@@ -785,13 +787,14 @@
 		{
 			id: "47E11756526EFA9D"
 			x: 8.0d
-			y: 14.165000000000001d
+			y: 13.44d
 			icon: {
 				id: "megacells:item_storage_cell_4m"
 				count: 1
 			}
 			size: 2.5d
 			shape: "gear"
+			hide_dependency_lines: true
 			dependencies: [
 				"4B0355F97624DC9C"
 				"7748E7ADE21A36AB"
@@ -841,7 +844,7 @@
 		{
 			id: "2E9CE08DE7F08C49"
 			x: 11.75d
-			y: 13.415000000000001d
+			y: 10.44d
 			icon: {
 				id: "ae2:spatial_pylon"
 				count: 1
@@ -881,7 +884,7 @@
 		{
 			id: "158E22BE3CD78D49"
 			x: 13.75d
-			y: 13.415000000000001d
+			y: 10.44d
 			icon: {
 				id: "ae2:spatial_io_port"
 				count: 1
@@ -920,7 +923,7 @@
 		{
 			id: "12F09A3BCE9C4DCB"
 			x: 15.75d
-			y: 13.415000000000001d
+			y: 10.44d
 			icon: {
 				id: "ae2:spatial_storage_cell_16"
 				count: 1
@@ -959,7 +962,7 @@
 		{
 			id: "2DADB45F8B139F87"
 			x: 17.75d
-			y: 13.415000000000001d
+			y: 10.44d
 			icon: {
 				id: "ae2:spatial_anchor"
 				count: 1
@@ -1003,7 +1006,7 @@
 		{
 			id: "588B026AF2499D41"
 			x: 0.25d
-			y: 19.515d
+			y: 20.79d
 			icon: {
 				id: "advanced_ae:reaction_chamber"
 				count: 1
@@ -1050,7 +1053,7 @@
 		{
 			id: "68708E42C6635F0D"
 			x: 2.65d
-			y: 19.515d
+			y: 20.79d
 			icon: {
 				id: "advanced_ae:shattered_singularity"
 				count: 1
@@ -1100,7 +1103,7 @@
 		{
 			id: "57BDA4588B381C5C"
 			x: 4.65d
-			y: 19.515d
+			y: 20.79d
 			icon: {
 				id: "advanced_ae:quantum_alloy"
 				count: 1
@@ -1139,7 +1142,7 @@
 		{
 			id: "37FA3A0C41F3F520"
 			x: 6.65d
-			y: 19.515d
+			y: 20.79d
 			icon: {
 				id: "advanced_ae:quantum_processor"
 				count: 1
@@ -1183,7 +1186,7 @@
 		{
 			id: "5132E72CB573902F"
 			x: 8.65d
-			y: 19.515d
+			y: 20.79d
 			icon: {
 				id: "advanced_ae:advanced_io_bus_part"
 				count: 1
@@ -1223,7 +1226,7 @@
 		{
 			id: "151B9379079F445C"
 			x: 2.65d
-			y: 21.015d
+			y: 22.29d
 			icon: {
 				id: "advanced_ae:adv_pattern_provider"
 				count: 1
@@ -1271,7 +1274,7 @@
 		{
 			id: "4B1FFEBB49E3BCCA"
 			x: 11.9d
-			y: 19.515d
+			y: 19.54d
 			icon: {
 				id: "extendedae:ex_drive"
 				count: 1
@@ -1279,6 +1282,7 @@
 			size: 1.5d
 			shape: "hexagon"
 			hide_dependency_lines: true
+			hide_dependent_lines: true
 			dependencies: [
 				"382C1E9144D1B45D"
 			]
@@ -1327,7 +1331,7 @@
 		{
 			id: "6A632222EBEDA82E"
 			x: 14.3d
-			y: 19.515d
+			y: 19.54d
 			icon: {
 				id: "extendedae:ex_inscriber"
 				count: 1
@@ -1365,8 +1369,8 @@
 		}
 		{
 			id: "3F490F80873FF59F"
-			x: 16.3d
-			y: 19.515d
+			x: 17.65d
+			y: 19.54d
 			icon: {
 				id: "extendedae:assembler_matrix_crafter"
 				count: 1
@@ -1413,12 +1417,13 @@
 		}
 		{
 			id: "42EC59B690C1CE41"
-			x: 14.3d
-			y: 21.015d
+			x: 13.9d
+			y: 21.04d
 			icon: {
 				id: "extendedae:wireless_connect"
 				count: 1
 			}
+			hide_dependency_lines: true
 			dependencies: [
 				"4B1FFEBB49E3BCCA"
 			]
@@ -1459,6 +1464,388 @@
 				}
 			]
 		}
+		{
+			id: "1CA94B2BC2861B20"
+			x: 6.0d
+			y: 5.24d
+			icon: {
+				id: "megacells:cell_dock"
+				count: 1
+			}
+			optional: true
+			dependencies: [
+				"54296EC5F7545D24"
+			]
+			tasks: [
+				{
+					id: "505E998F9ED31BD6"
+					type: "item"
+					item: {
+						id: "megacells:cell_dock"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "1B0C4D823594857B"
+					type: "item"
+					item: {
+						id: "ae2:fluix_glass_cable"
+						count: 1
+					}
+					count: 16
+				}
+				{
+					id: "2611C7814EF4A6BE"
+					type: "xp_levels"
+					xp_levels: 4
+				}
+			]
+		}
+		{
+			id: "6CE0AEDE300FD308"
+			x: 6.0d
+			y: 11.94d
+			icon: {
+				id: "megacells:fluid_storage_cell_1m"
+				count: 1
+			}
+			dependencies: [
+				"4B0355F97624DC9C"
+			]
+			tasks: [
+				{
+					id: "6CDF76F544D46CA6"
+					type: "item"
+					item: {
+						id: "megacells:fluid_storage_cell_1m"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "44C8350A127E433F"
+					type: "item"
+					item: {
+						id: "megacells:sky_steel_ingot"
+						count: 1
+					}
+					count: 4
+				}
+				{
+					id: "41464BEE45F647DA"
+					type: "xp_levels"
+					xp_levels: 8
+				}
+			]
+		}
+		{
+			id: "2DD6F78555D4757D"
+			x: 4.0d
+			y: 14.94d
+			icon: {
+				id: "megacells:radioactive_chemical_cell"
+				count: 1
+			}
+			optional: true
+			dependencies: [
+				"2242B89C69770C2E"
+			]
+			tasks: [
+				{
+					id: "1ECF028C6C8C10F2"
+					type: "item"
+					item: {
+						id: "megacells:radioactive_chemical_cell"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "33515A0035FD6C46"
+					type: "item"
+					item: {
+						id: "mekanism:hdpe_sheet"
+						count: 1
+					}
+					count: 8
+				}
+				{
+					id: "5786CBDE668C99D3"
+					type: "loot"
+					table_id: 2331452980220016310L
+				}
+				{
+					id: "160976B2FE67367A"
+					type: "xp_levels"
+					xp_levels: 10
+				}
+			]
+		}
+		{
+			id: "1E96E6534BC0343F"
+			x: 8.0d
+			y: 15.69d
+			icon: {
+				id: "megacells:greater_energy_card"
+				count: 1
+			}
+			optional: true
+			dependencies: [
+				"7748E7ADE21A36AB"
+			]
+			tasks: [
+				{
+					id: "2D0BFB04BF90267A"
+					type: "item"
+					item: {
+						id: "megacells:greater_energy_card"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "541987120426592A"
+					type: "item"
+					item: {
+						id: "ae2:dense_energy_cell"
+						count: 1
+					}
+					count: 1
+				}
+				{
+					id: "5515F447E4BDBB85"
+					type: "xp_levels"
+					xp_levels: 6
+				}
+			]
+		}
+		{
+			id: "1AA38A1615B41384"
+			x: 2.65d
+			y: 19.29d
+			icon: {
+				id: "advanced_ae:throughput_monitor"
+				count: 1
+			}
+			optional: true
+			dependencies: [
+				"588B026AF2499D41"
+			]
+			tasks: [
+				{
+					id: "19481BE39788E20A"
+					type: "item"
+					item: {
+						id: "advanced_ae:throughput_monitor"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "27BB39744C9294AB"
+					type: "item"
+					item: {
+						id: "ae2:calculation_processor"
+						count: 1
+					}
+					count: 2
+				}
+				{
+					id: "3E0E9D4F6201909A"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+		}
+		{
+			id: "62868D7A8B29245D"
+			x: 13.9d
+			y: 22.39d
+			icon: {
+				id: "extendedae:infinity_cobblestone_cell"
+				count: 1
+			}
+			hide_dependency_lines: true
+			dependencies: [
+				"4B1FFEBB49E3BCCA"
+			]
+			tasks: [
+				{
+					id: "3E29A836CB865CE3"
+					type: "item"
+					item: {
+						id: "extendedae:infinity_cobblestone_cell"
+						count: 1
+					}
+					count: 1
+				}
+				{
+					id: "538C1E7906626D56"
+					type: "item"
+					item: {
+						id: "extendedae:infinity_water_cell"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "79F8CA8DFCBCE669"
+					type: "item"
+					item: {
+						id: "minecraft:diamond"
+						count: 1
+					}
+					count: 4
+				}
+				{
+					id: "783524F3698C3571"
+					type: "xp_levels"
+					xp_levels: 8
+				}
+			]
+		}
+		{
+			id: "2E471E298FB1C45E"
+			x: 17.65d
+			y: 21.04d
+			icon: {
+				id: "extendedae:ex_molecular_assembler"
+				count: 1
+			}
+			dependencies: [
+				"6A632222EBEDA82E"
+			]
+			tasks: [
+				{
+					id: "3E1DE74A2B604EE9"
+					type: "item"
+					item: {
+						id: "extendedae:ex_molecular_assembler"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "4F7767ED3CCEC1C1"
+					type: "item"
+					item: {
+						id: "ae2:crafting_accelerator"
+						count: 1
+					}
+					count: 2
+				}
+				{
+					id: "68CA8E3A70524165"
+					type: "xp_levels"
+					xp_levels: 8
+				}
+			]
+		}
+		{
+			id: "230D09B8D849AF55"
+			x: 15.25d
+			y: 21.04d
+			icon: {
+				id: "extendedae:oversize_interface"
+				count: 1
+			}
+			optional: true
+			hide_dependency_lines: true
+			dependencies: [
+				"4B1FFEBB49E3BCCA"
+			]
+			tasks: [
+				{
+					id: "283E5B345155E172"
+					type: "item"
+					item: {
+						id: "extendedae:oversize_interface"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "36E43C6CF8140148"
+					type: "item"
+					item: {
+						id: "extendedae:concurrent_processor"
+						count: 1
+					}
+					count: 2
+				}
+				{
+					id: "3857AEC2C6F38DC4"
+					type: "xp_levels"
+					xp_levels: 8
+				}
+			]
+		}
+		{
+			id: "722120E86A09BE76"
+			x: 13.9d
+			y: 23.74d
+			icon: {
+				id: "extendedae:ex_import_bus_part"
+				count: 1
+			}
+			hide_dependency_lines: true
+			dependencies: [
+				"4B1FFEBB49E3BCCA"
+			]
+			tasks: [
+				{
+					id: "7ED22F8E304ACA9D"
+					type: "item"
+					item: {
+						id: "extendedae:ex_import_bus_part"
+						count: 1
+					}
+					count: 1
+				}
+				{
+					id: "53E5565B4B1F56A8"
+					type: "item"
+					item: {
+						id: "extendedae:ex_export_bus_part"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "30344D330E63866D"
+					type: "item"
+					item: {
+						id: "ae2:speed_card"
+						count: 1
+					}
+					count: 4
+				}
+				{
+					id: "345AA1656107ACC0"
+					type: "xp_levels"
+					xp_levels: 8
+				}
+			]
+		}
 	]
 	images: [
 		{
@@ -1484,7 +1871,7 @@
 		{
 			id: "54002F735FCD9AC6"
 			image: "kronwerke:textures/quests/ae2_advanced/cells.png"
-			x: 8.135d
+			x: 5.835d
 			y: 2.29d
 			width: 4.67d
 			height: 0.9d
@@ -1494,8 +1881,8 @@
 		{
 			id: "46C1EDEE8938CD6C"
 			image: "kronwerke:textures/quests/ae2_advanced/singularity.png"
-			x: 4.195d
-			y: 6.49d
+			x: 14.865d
+			y: 2.29d
 			width: 9.39d
 			height: 0.9d
 			rotation: 0.0d
@@ -1505,7 +1892,7 @@
 			id: "25B9D2D10617C4A9"
 			image: "kronwerke:textures/quests/ae2_advanced/mega.png"
 			x: 1.39d
-			y: 11.965d
+			y: 8.989999999999998d
 			width: 3.78d
 			height: 0.9d
 			rotation: 0.0d
@@ -1515,7 +1902,7 @@
 			id: "1AD5A262F464B826"
 			image: "kronwerke:textures/quests/ae2_advanced/spatial.png"
 			x: 13.585d
-			y: 11.965d
+			y: 8.989999999999998d
 			width: 4.67d
 			height: 0.9d
 			rotation: 0.0d
@@ -1525,7 +1912,7 @@
 			id: "5AAC78432C98A7BE"
 			image: "kronwerke:textures/quests/ae2_advanced/advanced.png"
 			x: 1.545d
-			y: 17.815d
+			y: 17.84d
 			width: 4.09d
 			height: 0.9d
 			rotation: 0.0d
@@ -1535,7 +1922,7 @@
 			id: "62C5FD892604C52E"
 			image: "kronwerke:textures/quests/ae2_advanced/extended.png"
 			x: 13.205d
-			y: 17.815d
+			y: 17.84d
 			width: 4.11d
 			height: 0.9d
 			rotation: 0.0d

@@ -784,6 +784,81 @@
 			]
 		}
 		{
+			id: "621FDA4F4D181954"
+			x: 15.825000000000001d
+			y: 5.475d
+			icon: {
+				id: "create:weighted_ejector"
+				count: 1
+			}
+			hide_dependency_lines: true
+			dependencies: [
+				"3422692534C7F491"
+			]
+			tasks: [
+				{
+					id: "7926BAEB28C98D11"
+					type: "item"
+					item: {
+						id: "create:weighted_ejector"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "29371EC001C04972"
+					type: "item"
+					item: {
+						id: "create:cogwheel"
+						count: 1
+					}
+					count: 2
+				}
+				{
+					id: "3679EE15DAC00DF3"
+					type: "xp_levels"
+					xp_levels: 3
+				}
+			]
+		}
+		{
+			id: "67C8E566485640AD"
+			x: 15.825000000000001d
+			y: 6.825d
+			icon: {
+				id: "minecraft:note_block"
+				count: 1
+			}
+			hide_dependency_lines: true
+			dependencies: [
+				"3422692534C7F491"
+			]
+			tasks: [
+				{
+					id: "6EE0CDC51FDEA422"
+					type: "checkmark"
+				}
+			]
+			rewards: [
+				{
+					id: "4A0FFF2F740AF5E5"
+					type: "item"
+					item: {
+						id: "minecraft:note_block"
+						count: 1
+					}
+					count: 1
+				}
+				{
+					id: "126661FC520932F3"
+					type: "xp_levels"
+					xp_levels: 2
+				}
+			]
+		}
+		{
 			id: "61CEAEC262E568C2"
 			x: 0.375d
 			y: 11.775d
@@ -982,6 +1057,46 @@
 			]
 		}
 		{
+			id: "3F5A551957DA7504"
+			x: 3.7249999999999996d
+			y: 13.125d
+			icon: {
+				id: "create:spout"
+				count: 1
+			}
+			hide_dependency_lines: true
+			dependencies: [
+				"61CEAEC262E568C2"
+			]
+			tasks: [
+				{
+					id: "5405F9EA4CABFA36"
+					type: "item"
+					item: {
+						id: "create:spout"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "23BDEB1F19E5419B"
+					type: "item"
+					item: {
+						id: "minecraft:bucket"
+						count: 1
+					}
+					count: 2
+				}
+				{
+					id: "4D3B275554ED3E0C"
+					type: "xp_levels"
+					xp_levels: 3
+				}
+			]
+		}
+		{
 			id: "6F07852A716D3465"
 			x: 3.7249999999999996d
 			y: 11.775d
@@ -1009,8 +1124,8 @@
 		}
 		{
 			id: "7AA0054BCF710AF5"
-			x: 3.7249999999999996d
-			y: 13.125d
+			x: 5.075d
+			y: 10.425d
 			icon: {
 				id: "minecraft:iron_ingot"
 				count: 1
@@ -1036,7 +1151,7 @@
 		{
 			id: "5D1BAF41EFDB096B"
 			x: 5.075d
-			y: 10.425d
+			y: 11.775d
 			icon: {
 				id: "minecraft:cauldron"
 				count: 1
@@ -1062,7 +1177,7 @@
 		{
 			id: "43E40E1AA1D5CD02"
 			x: 5.075d
-			y: 11.775d
+			y: 13.125d
 			icon: {
 				id: "minecraft:water_bucket"
 				count: 1
@@ -1087,8 +1202,8 @@
 		}
 		{
 			id: "148E13F49394D961"
-			x: 5.075d
-			y: 13.125d
+			x: 6.425000000000001d
+			y: 10.425d
 			icon: {
 				id: "minecraft:ender_pearl"
 				count: 1
@@ -1114,7 +1229,7 @@
 		{
 			id: "363BFCAE79B80548"
 			x: 6.425000000000001d
-			y: 10.425d
+			y: 11.775d
 			icon: {
 				id: "minecraft:glass_bottle"
 				count: 1
@@ -1132,6 +1247,46 @@
 			rewards: [
 				{
 					id: "31D0DEA1E7F18750"
+					type: "xp_levels"
+					xp_levels: 2
+				}
+			]
+		}
+		{
+			id: "75A880B536E4CBE9"
+			x: 6.425000000000001d
+			y: 13.125d
+			icon: {
+				id: "create:fluid_valve"
+				count: 1
+			}
+			hide_dependency_lines: true
+			dependencies: [
+				"61CEAEC262E568C2"
+			]
+			tasks: [
+				{
+					id: "6A6B28F27A852648"
+					type: "item"
+					item: {
+						id: "create:fluid_valve"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "237F64D7F353A068"
+					type: "item"
+					item: {
+						id: "create:fluid_pipe"
+						count: 1
+					}
+					count: 4
+				}
+				{
+					id: "6968B3218F7DD7AA"
 					type: "xp_levels"
 					xp_levels: 2
 				}
@@ -1321,6 +1476,95 @@
 			]
 		}
 		{
+			id: "50096F03B27818A8"
+			x: 19.125d
+			y: 11.775d
+			icon: {
+				id: "create:encased_chain_drive"
+				count: 1
+			}
+			hide_dependency_lines: true
+			dependencies: [
+				"1A39EE189239CD6B"
+			]
+			tasks: [
+				{
+					id: "5BEE6224179EA0BC"
+					type: "item"
+					item: {
+						id: "create:encased_chain_drive"
+						count: 1
+					}
+					count: 2
+				}
+			]
+			rewards: [
+				{
+					id: "2FEE83666CA9C8AE"
+					type: "item"
+					item: {
+						id: "create:andesite_casing"
+						count: 1
+					}
+					count: 2
+				}
+				{
+					id: "46CBAC49A6858A6E"
+					type: "xp_levels"
+					xp_levels: 2
+				}
+			]
+		}
+		{
+			id: "177AE47237E3CB18"
+			x: 19.125d
+			y: 13.125d
+			icon: {
+				id: "create:clutch"
+				count: 1
+			}
+			hide_dependency_lines: true
+			dependencies: [
+				"1A39EE189239CD6B"
+			]
+			tasks: [
+				{
+					id: "1DF88900B97028D3"
+					type: "item"
+					item: {
+						id: "create:clutch"
+						count: 1
+					}
+					count: 1
+				}
+				{
+					id: "5AEB0FBF4DF05334"
+					type: "item"
+					item: {
+						id: "create:gearshift"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "141C9F7EB8F03CF7"
+					type: "item"
+					item: {
+						id: "minecraft:redstone"
+						count: 1
+					}
+					count: 8
+				}
+				{
+					id: "2C82646382FE1459"
+					type: "xp_levels"
+					xp_levels: 2
+				}
+			]
+		}
+		{
 			id: "44A3402F3F3A6857"
 			x: 17.775d
 			y: 11.775d
@@ -1400,8 +1644,8 @@
 		}
 		{
 			id: "7D5CFC6BE654DAD1"
-			x: 19.125d
-			y: 11.775d
+			x: 20.475d
+			y: 10.425d
 			icon: {
 				id: "minecraft:amethyst_shard"
 				count: 1
@@ -1426,8 +1670,8 @@
 		}
 		{
 			id: "28D4E4DA10EAEBC7"
-			x: 19.125d
-			y: 13.125d
+			x: 20.475d
+			y: 11.775d
 			icon: {
 				id: "ars_nouveau:source_gem"
 				count: 1
@@ -1453,7 +1697,7 @@
 		{
 			id: "289E1506658A9E6B"
 			x: 20.475d
-			y: 10.425d
+			y: 13.125d
 			icon: {
 				id: "minecraft:ender_pearl"
 				count: 1
@@ -1783,9 +2027,89 @@
 			]
 		}
 		{
-			id: "7492CA8E478271AC"
+			id: "5988FAF7D17F3CC9"
 			x: 5.075d
 			y: 21.25d
+			icon: {
+				id: "sophisticatedstorage:controller"
+				count: 1
+			}
+			hide_dependency_lines: true
+			dependencies: [
+				"45DC4C7499B73924"
+			]
+			tasks: [
+				{
+					id: "53055C37D122EB62"
+					type: "item"
+					item: {
+						id: "sophisticatedstorage:controller"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "7D3205220BE01237"
+					type: "item"
+					item: {
+						id: "minecraft:comparator"
+						count: 1
+					}
+					count: 2
+				}
+				{
+					id: "5CCB7C87CEAD37AD"
+					type: "xp_levels"
+					xp_levels: 3
+				}
+			]
+		}
+		{
+			id: "75FBB19CCF2204F0"
+			x: 7.775d
+			y: 21.25d
+			icon: {
+				id: "create:brown_toolbox"
+				count: 1
+			}
+			hide_dependency_lines: true
+			dependencies: [
+				"45DC4C7499B73924"
+			]
+			tasks: [
+				{
+					id: "5DADB31991CFB01C"
+					type: "item"
+					item: {
+						id: "create:brown_toolbox"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "7F9B34ABC9DAA851"
+					type: "item"
+					item: {
+						id: "minecraft:leather"
+						count: 1
+					}
+					count: 2
+				}
+				{
+					id: "3463C25CB024BFA3"
+					type: "xp_levels"
+					xp_levels: 3
+				}
+			]
+		}
+		{
+			id: "7492CA8E478271AC"
+			x: 5.075d
+			y: 22.599999999999998d
 			icon: {
 				id: "minecraft:barrel"
 				count: 1
@@ -1810,8 +2134,8 @@
 		}
 		{
 			id: "553F4DAFECEB2F43"
-			x: 5.075d
-			y: 22.599999999999998d
+			x: 6.425000000000001d
+			y: 19.9d
 			icon: {
 				id: "minecraft:ender_pearl"
 				count: 1
@@ -1837,7 +2161,7 @@
 		{
 			id: "1088CC6818EB9DDB"
 			x: 6.425000000000001d
-			y: 19.9d
+			y: 21.25d
 			icon: {
 				id: "minecraft:amethyst_shard"
 				count: 1
@@ -1863,7 +2187,7 @@
 		{
 			id: "4B906184EDD78418"
 			x: 6.425000000000001d
-			y: 21.25d
+			y: 22.599999999999998d
 			icon: {
 				id: "minecraft:glass"
 				count: 1
@@ -1888,8 +2212,8 @@
 		}
 		{
 			id: "310BD6B66D56BF2D"
-			x: 6.425000000000001d
-			y: 22.599999999999998d
+			x: 7.775d
+			y: 19.9d
 			icon: {
 				id: "minecraft:compass"
 				count: 1

@@ -278,7 +278,7 @@ quests = [
           rewards=[reward_item("immersiveengineering:ingot_steel", 8), reward_xp(5)],
           deps=["steel"], icon="immersiveengineering:blastbrick_reinforced"),
 
-    quest("improved_form", 20.5, 3.2, "&c&lForm einen Verbesserten Hochofen",
+    quest("improved_form", 20.5, 2.4, "&c&lForm einen Verbesserten Hochofen",
           subtitle="3x4x3, 27 Verstärkte Sprengziegel und ein Trichter.",
           description=[
               "Stell die &627 Verstärkten Sprengziegel&r als 3x3x3-Würfel auf, setz einen &6Trichter&r oben in die Mitte und schlag mit dem Hammer auf den Block, den das Handbuch zeigt.",
@@ -709,6 +709,137 @@ quests = [
                  task_checkmark("Kistenregal")],
           rewards=[reward_table("s2_uncommon"), reward_item("immersiveengineering:hammer", 1), reward_xp(15)],
           deps=["silo", "improved_form", "kiln"], icon="immersiveengineering:hammer", size=1.75, shape="gear"),
+
+    # ---- neue Quests: Stahl ----------------------------------------------------
+    quest("steel_armor", 28.5, 1.4, "&7Schmied eine Stahlrüstung",
+          subtitle="Vier Teile aus 24 Stahlblechen.",
+          description=[
+              "&6Stahlbleche&r in der Form der Eisenrüstung ergeben &6Stahlhelm&r, &6Stahlharnisch&r, &6Stahlbeinschutz&r und &6Stahlstiefel&r. Für alle vier brauchst du &e24 Bleche&r.",
+              "",
+              "Sie hält mehr aus als Eisen und kostet dich nur Stahl aus dem Hochofen. Gut für die Zeit, bevor du an Diamanten oder bessere Rüstung kommst.",
+          ],
+          tasks=[task_item("immersiveengineering:armor_steel_helmet", 1), task_item("immersiveengineering:armor_steel_chestplate", 1),
+                 task_item("immersiveengineering:armor_steel_leggings", 1), task_item("immersiveengineering:armor_steel_boots", 1)],
+          rewards=[reward_item("immersiveengineering:plate_steel", 8), reward_xp(10)],
+          deps=["steel_tools"], icon="immersiveengineering:armor_steel_chestplate", optional=True),
+
+    # ---- neue Quests: Arbeitstisch ---------------------------------------------
+    quest("charging_station", 18.5, 7.0, "&dBau eine Ladestation",
+          subtitle="Strom rein, volle Werkzeuge raus.",
+          description=[
+              "Glas, &6Eisenblech&r, Glas oben, drei &6Vakuumröhren&r in der Mitte, &6Behandeltes Holz&r, &6Kupferspulenblock&r, Behandeltes Holz unten ergeben die &6Ladestation&r.",
+              "",
+              "Sie lädt jeden Gegenstand, der Strom speichert, mit bis zu &d256 FE/t&r. Strom kommt von unten oder von hinten, den Gegenstand legst du per Rechtsklick hinein oder schiebst ihn mit einem Trichter.",
+              "",
+              "Die Röhren vorne leuchten je nach Ladestand. Ein Komparator daneben gibt den Ladestand als Redstone-Signal aus.",
+          ],
+          tasks=[task_item("immersiveengineering:charging_station", 1)],
+          rewards=[reward_item("immersiveengineering:electron_tube", 3), reward_xp(10)],
+          deps=["electron_tube", "coil_lv"], icon="immersiveengineering:charging_station"),
+
+    # ---- neue Quests: Wind und Draht -------------------------------------------
+    quest("wire_insulated", 18.5, 15.0, "&6Isolier deine LV-Drähte",
+          subtitle="Strom, der niemanden mehr verletzt.",
+          description=[
+              "Vier &6LV-Drahtspulen&r an die Seiten, fünf &6Robustes Gewebe&r in die Ecken und die Mitte ergeben vier &6Isolierte LV-Drahtspulen&r.",
+              "",
+              "Isolierter Draht trägt Strom wie Kupferdraht, verletzt aber niemanden, der ihn berührt. Nimm ihn überall, wo Spieler oder Tiere hinkommen: in der Basis, an Wegen, über der Weide.",
+              "",
+              "Er hängt an denselben LV-Anschlüssen und Relais, eine Strecke darf ebenfalls höchstens &e16 Blöcke&r lang sein.",
+          ],
+          tasks=[task_item("immersiveengineering:wirecoil_copper_ins", 8)],
+          rewards=[reward_item("immersiveengineering:hemp_fiber", 16), reward_xp(5)],
+          deps=["connectors", "hemp"], icon="immersiveengineering:wirecoil_copper_ins"),
+
+    quest("post", 21, 11, "&6Stell Holzpfosten für deine Leitungen",
+          subtitle="Vier Blöcke hoch, mit Arm für den Draht.",
+          description=[
+              "Zwei &6Behandelte Holzzäune&r übereinander auf einem &6Steinziegel&r ergeben einen &6Holzpfosten&r.",
+              "",
+              "Ein Pfosten ist &e4 Blöcke&r hoch, also brauchst du so viel Platz darüber. Hammer auf eine Seite des obersten Blocks setzt einen Arm an. Daran hängst du Anschlüsse, Relais, Trafos oder Lampen.",
+              "",
+              "So läuft dein Netz über Köpfe und Wege hinweg, statt quer durch die Basis.",
+          ],
+          tasks=[task_item("immersiveengineering:treated_post", 4)],
+          rewards=[reward_item("immersiveengineering:treated_fence", 8), reward_item("immersiveengineering:connector_lv_relay", 4)],
+          deps=["connectors"], icon="immersiveengineering:treated_post"),
+
+    quest("electric_lantern", 23.5, 13, "&eHäng Angetriebene Laternen auf",
+          subtitle="Licht, und keine Monster im Umkreis.",
+          description=[
+              "Ein &6Eisenblech&r oben, Glasscheibe, &6Glühbirne&r, Glasscheibe in der Mitte, ein &6Kupferkabel&r unten ergeben die &6Angetriebene Laterne&r. Glühbirnen macht der Arbeitstisch mit der Blaupause Komponenten.",
+              "",
+              "Sie hängt direkt an einem LV-Draht und reicht den Strom weiter, du kannst also mehrere hintereinander verbinden. Sie zieht nur &d1 FE/t&r.",
+              "",
+              "&eDas Beste:&r Solange sie Strom hat, spawnen im Umkreis von &e32 Blöcken&r keine feindlichen Monster. Ein paar davon schützen eine ganze Basis.",
+          ],
+          tasks=[task_item("immersiveengineering:electric_lantern", 4)],
+          rewards=[reward_item("immersiveengineering:wirecoil_copper", 8), reward_table("s2_common"), reward_xp(10)],
+          deps=["connectors", "bench"], icon="immersiveengineering:electric_lantern"),
+
+    quest("skyhook", 23.5, 15.2, "&bFahr mit dem Skyhook am Draht",
+          subtitle="Deine Leitungen werden zur Seilbahn.",
+          description=[
+              "Drei &6Stahlbarren&r, eine &6Mechanische Eisenkomponente&r und zwei &6Holzgriffe&r ergeben den &6Ingenieursskyhook&r. Holzgriff: fünf Behandelte Stöcke und ein Kupferklumpen.",
+              "",
+              "Halt Rechtsklick gedrückt nahe einem Draht, und du hängst daran. Abwärts rollst du von selbst, aufwärts mit den Bewegungstasten. An Kreuzungen fährt er dorthin, wohin du schaust. Schleichen lässt dich los.",
+              "",
+              "&cAchtung:&r Unisolierte Drähte unter Strom verletzen dich auch am Skyhook. Für reine Seilbahnen nimm &6Hanfseile&r: vier Hanffasern um einen Stock ergeben vier Hanfdrahtspulen, ein Stück darf &e32 Blöcke&r lang sein.",
+          ],
+          tasks=[task_item("immersiveengineering:skyhook", 1), task_item("immersiveengineering:wirecoil_structure_rope", 8)],
+          rewards=[reward_item("immersiveengineering:hemp_fiber", 16), reward_xp(10)],
+          deps=["connectors", "steel"], icon="immersiveengineering:skyhook", optional=True),
+
+    quest("glider", 13.5, 11, "&bBau einen Faltgleiter",
+          subtitle="Flügel aus Hanf und Aluminium.",
+          description=[
+              "Ein &6Robustes Gewebe&r oben, &6Aluminiumstab&r, &6Lederjacke&r, Aluminiumstab in der Mitte, Gewebe, Stab, Gewebe unten ergeben den &6Faltgleiter&r. Aluminium kommt aus &6Bauxit&r, zwei Barren übereinander ergeben vier Stäbe.",
+              "",
+              "Er gleitet wie eine Elytra, hält aber weniger aus und nimmt keine Verzauberungen. Sturzflüge und Raketen schaden ihm stärker. Repariert wird er mit Robustem Gewebe.",
+          ],
+          tasks=[task_item("immersiveengineering:glider", 1)],
+          rewards=[reward_item("immersiveengineering:hemp_fabric", 4), reward_xp(10)],
+          deps=["sails"], icon="immersiveengineering:glider", optional=True),
+
+    # ---- neue Quests: Lager und Transport --------------------------------------
+    quest("conveyor_special", 6, 23.5, "&7Bau Spezialförderbänder",
+          subtitle="Aufteilen, fallen lassen, herausziehen.",
+          description=[
+              "&6Spaltförderband:&r drei Förderbänder und ein Eisenbarren ergeben drei. Es schickt Gegenstände abwechselnd nach links und rechts.",
+              "&6Dropper-Förderband:&r ein Förderband über einem Eisenblech. Durch die Klappe fällt alles nach unten, auch in ein Inventar darunter. Redstone schließt die Klappe.",
+              "&6Extrahierendes Förderband:&r ein &6Streifenvorhang&r, ein Einfacher Ingenieursbaustein und ein Förderband. Es zieht wie ein Trichter aus dem Inventar dahinter. Das Tempo stellst du mit dem &6Schraubendreher&r ein (Eisenstab und Stock).",
+              "",
+              "Ein Förderband über einer &6Redstonefackel&r bleibt bei Redstone-Signal stehen.",
+          ],
+          tasks=[task_item("immersiveengineering:conveyor_splitter", 3), task_item("immersiveengineering:conveyor_dropper", 1),
+                 task_item("immersiveengineering:conveyor_extract", 1)],
+          rewards=[reward_item("immersiveengineering:conveyor_basic", 8), reward_xp(5)],
+          deps=["conveyor", "basic_engineering"], icon="immersiveengineering:conveyor_splitter"),
+
+    quest("sorter", 8.5, 23.5, "&9Sortier mit dem Element-Router",
+          subtitle="Sechs Seiten, jede mit eigenem Filter.",
+          description=[
+              "Eine &6Mechanische Eisenkomponente&r oben, ein &6Einfacher Ingenieursbaustein&r, ein &6Förderband&r unten ergeben den &6Element-Router&r.",
+              "",
+              "Jede Seite hat eine Farbe und eigene Filterplätze. Was hineinkommt, geht an eine Seite, deren Filter passt, sonst an eine Seite ohne Filter. Passt gar nichts, nimmt er es nicht an.",
+              "",
+              "Knöpfe über jedem Filter: nach Tag filtern (alle Erze, alle Barren), Haltbarkeit ignorieren, Verzauberungen beachten. Der &6Flüssigkeitsrouter&r macht dasselbe mit Flüssigkeiten, mit einem Flüssigkeitsrohr statt des Förderbands.",
+          ],
+          tasks=[task_item("immersiveengineering:sorter", 1)],
+          rewards=[reward_item("immersiveengineering:basic_engineering", 2), reward_xp(5)],
+          deps=["conveyor", "basic_engineering"], icon="immersiveengineering:sorter"),
+
+    quest("barrel", 11, 23.5, "&9Stell Fässer für Flüssigkeiten auf",
+          subtitle="12 Eimer in einem Block.",
+          description=[
+              "&6Holzfass:&r drei Behandelte Holzstufen über fünf Behandelten Holzbrettern, die Mitte frei. Es fasst &e12 Eimer&r, aber keine heißen Flüssigkeiten und keine Gase.",
+              "&6Metallfass:&r drei Eisenblechstufen über fünf Eisenblechblöcken. Gleich groß, nimmt aber auch heiße Flüssigkeiten und Gase, und ein Redstone-Signal schaltet seine Ausgabe ab.",
+              "",
+              "Mit dem Hammer stellst du die Seiten auf Eingang oder Ausgang. Gut als Puffer neben Koksofen, Pumpe und Maschinen, wenn ein ganzer Tank zu groß ist.",
+          ],
+          tasks=[task_item("immersiveengineering:wooden_barrel", 1), task_item("immersiveengineering:metal_barrel", 1)],
+          rewards=[reward_item("immersiveengineering:treated_wood_horizontal", 16), reward_xp(5)],
+          deps=["tank"], icon="immersiveengineering:wooden_barrel"),
 ]
 
 images = [

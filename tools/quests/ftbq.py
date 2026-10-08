@@ -149,8 +149,10 @@ def group(name, title):
 
 
 def quest(name, x, y, title, tasks, subtitle="", description=(), rewards=(), deps=(), icon=None,
-          size=None, shape=None, optional=False, hide=False, min_width=None):
-    return {"name": name, "x": x, "y": y, "title": title, "subtitle": subtitle,
+          size=None, shape=None, optional=False, hide=False, min_width=None, section=None):
+    """section: the banner the quest belongs under (the last part of the banner's name, like
+    "besen" for banner("hexerei/besen", ...)); without it the layout decides from x and y."""
+    return {"name": name, "x": x, "y": y, "title": title, "subtitle": subtitle, "section": section,
             "description": list(description), "tasks": list(tasks), "rewards": list(rewards),
             "deps": list(deps), "icon": icon, "size": size, "shape": shape, "optional": optional,
             "hide": hide, "min_width": min_width}

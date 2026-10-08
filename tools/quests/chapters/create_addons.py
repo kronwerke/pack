@@ -437,6 +437,108 @@ quests = [
           tasks=[task_checkmark("Gelesen")],
           rewards=[reward_xp(5)],
           deps=["ore_excavation"], icon="create:copper_backtank", shape="diamond", optional=True),
+
+    # ---- Neue Quests ------------------------------------------------------------
+    quest("kinetic_battery", A + 7.5, 8, "&6Speicher Rotation in Batterien",
+          subtitle="Create Connected: die Kinetische Batterie.",
+          description=[
+              "&eRezept:&r &6Präzisionsgetriebe&r oben, &6Messingrahmen&r in der Mitte, unten &6Eisenblech&r, &6Redstone&r, Eisenblech ergeben acht &6Kinetische Batterien&r.",
+              "",
+              "Ohne Signal nimmt sie vorn Belastbarkeit auf und lädt sich. Mit &cRedstone-Signal&r entlädt sie sich und liefert eine feste Belastbarkeit bei fester Drehzahl. Sie verbraucht nur so viel Ladung, wie das Netz gerade braucht, und gar nichts, solange andere Quellen genug liefern.",
+              "",
+              "Hintereinander gesetzt halten Batterien länger, nebeneinander liefern sie mehr. Abgebaut behalten sie ihre Ladung, ein Einsatzgerät oder Arm tauscht volle gegen leere. Ein Komparator liest den Ladestand.",
+          ],
+          tasks=[task_item("create_connected:kinetic_battery", 2)],
+          rewards=[reward_item("create:brass_casing", 2), reward_xp(5)],
+          deps=["gearboxes"], icon="create_connected:kinetic_battery"),
+
+    quest("clutches", A + 7.5, 10, "&6Kuppel nach Drehzahl und Richtung",
+          subtitle="Bremse, Zentrifugal Kupplung, Freilaufkupplung.",
+          description=[
+              "Alle drei sind formlose Rezepte mit &6Andesitgehäuse&r und &6Welle&r. Die &6Bremse&r braucht dazu Redstone und Obsidian, die &6Zentrifugal Kupplung&r ein Eisenblech und einen Tachometer, die &6Freilaufkupplung&r ein Eisenblech und ein Zahnrad.",
+              "",
+              "Die &6Bremse&r erzeugt mit Redstone-Signal so viel Belastung, dass das Netz überlastet und steht. Die &6Zentrifugal Kupplung&r kuppelt erst ab einer einstellbaren Drehzahl ein, die &6Freilaufkupplung&r nur, wenn die Welle in die eingestellte Richtung dreht.",
+              "",
+              "So läuft eine Maschine erst an, wenn der Dieselmotor auf Touren ist, und eine falsch herum drehende Quelle kann nichts kaputt machen.",
+          ],
+          tasks=[task_item("create_connected:brake", 1), task_item("create_connected:centrifugal_clutch", 1),
+                 task_item("create_connected:freewheel_clutch", 1)],
+          rewards=[reward_item("create:andesite_casing", 4), reward_xp(4)],
+          deps=["kinetic_bridge"], icon="create_connected:centrifugal_clutch", optional=True),
+
+    quest("silo", A + 5, 11, "&6Bau Silo und Gefäß",
+          subtitle="Tresor und Tank, nur anders herum.",
+          description=[
+              "Ein &6Fass&r zwischen zwei &6Eisenblechen&r ergibt ein &6Item Silo&r, zwischen zwei &6Kupferblechen&r ein &6Flüssigkeitsgefäß&r.",
+              "",
+              "Das Silo ist ein &esenkrechter&r Gegenstandstresor, das Gefäß ein &eliegender&r Flüssigkeitstank. Mit dem Schraubenschlüssel wechselst du die Fensterform des Gefäßes. Als Dampfkessel taugt es weniger als ein stehender Tank.",
+          ],
+          tasks=[task_item("create_connected:item_silo", 2), task_item("create_connected:fluid_vessel", 2)],
+          rewards=[reward_item("create:iron_sheet", 8), reward_xp(4)],
+          deps=["inventory_bridge"], icon="create_connected:item_silo"),
+
+    quest("blaze_template", B + 7.5, 1, "&5Kopier die Lohen-Vorlage",
+          subtitle="Create: Dragons Plus. Eine Vorlage wird zu zwei.",
+          description=[
+              "Die &6Lohen-Upgrade-Schmiedevorlage&r liegt in Kisten von Netherfestungen und Bastionen. Leg sie in die Mitte der oberen Reihe, &6Netherrack&r darunter und sieben &6Lohenruten&r drumherum: heraus kommen &ezwei&r Vorlagen.",
+              "",
+              "Eine brauchst du für den Lohen-Verzauberer, eine für den Lohen-Schmied, und mit einem &6Affix Augmentor&r wird aus einem Lohenbrenner noch der &6Blaze Composer&r. Kopier lieber eine zu viel.",
+          ],
+          tasks=[task_item("create_dragons_plus:blaze_upgrade_smithing_template", 2)],
+          rewards=[reward_item("minecraft:blaze_rod", 7), reward_xp(5)],
+          deps=["blaze_forger"], icon="create_dragons_plus:blaze_upgrade_smithing_template"),
+
+    quest("xp_lantern", B + 5, 3, "&5Häng eine Erfahrungslaterne auf",
+          subtitle="Sie sammelt, was beim Kämpfen abfällt.",
+          description=[
+              "&6Erfahrungsblock&r, &6Schwamm&r und &6Kupferrahmen&r untereinander ergeben die &6Erfahrungslaterne&r.",
+              "",
+              "Sie saugt Erfahrungskugeln und Erfahrung von Spielern in der Nähe auf und leuchtet heller, je mehr sie gespeichert hat. Das klappt auch auf einer Kontraption.",
+              "",
+              "An einer Mobfarm sammelt sie die Erfahrung für Verzauberer, Schmied und Zauberkuchen ein.",
+          ],
+          tasks=[task_item("create_enchantment_industry:experience_lantern", 1)],
+          rewards=[reward_item("minecraft:sponge", 1), reward_xp(5)],
+          deps=["enchanting_template"], icon="create_enchantment_industry:experience_lantern", optional=True),
+
+    quest("blaze_fluid", B + 5, 7, "&cZüchte Lohen ohne Festung",
+          subtitle="Lohen-Spawnflüssigkeit.",
+          description=[
+              "Im &cerhitzten&r Mixer ergeben &b100 mB zufällige Spawnflüssigkeit&r und eine &6Lohenrute&r &b250 mB Lohen-Spawnflüssigkeit&r.",
+              "",
+              "Der Spawner braucht für eine Lohe doppelt so lange wie für einen Zombie, dafür lassen Lohen Lohenruten fallen. Mit Beutesammler landen die Ruten direkt in der Kiste.",
+              "",
+              "&eKronwerke:&r Lohenstaub für Messing, Lohenruten für Lohenbrenner-Futter und Vorlagen: eine Lohenfarm hält das Messingwerk am Laufen. Die erste Rute zum Mischen musst du dir noch selbst holen.",
+          ],
+          tasks=[task_item("create_mechanical_spawner:spawn_fluid_blaze_bucket", 1)],
+          rewards=[reward_item("minecraft:blaze_rod", 8), reward_table("s2_common")],
+          deps=["mob_fluids"], icon="create_mechanical_spawner:spawn_fluid_blaze_bucket"),
+
+    quest("burner", B + 2.5, 15, "&6Heiz mit flüssigem Brennstoff",
+          subtitle="Create Diesel Generators: der Brenner.",
+          description=[
+              "&eRezept:&r oben zwei &6Feuerzeuge&r mit einem &6Messingbarren&r dazwischen, in der Mitte eine &6Welle&r, unten ein &6Leerer Lohenbrenner&r zwischen zwei &6Andesitlegierungen&r. Der leere Brenner braucht auf Kronwerke zwei Quelljuwelen.",
+              "",
+              "Der &6Brenner&r heizt ein Becken wie ein Lohenbrenner, aber mit &bbrennbarer Flüssigkeit&r aus einem Rohr, etwa Biodiesel. Ein Ventil in der Leitung regelt, wie schnell er verbrennt.",
+              "",
+              "Keine Lohe, kein Kohlenachschub: eine Biodiesel-Leitung heizt so einen ganzen Mixer-Block.",
+          ],
+          tasks=[task_item("createdieselgenerators:burner", 1)],
+          rewards=[reward_item("createdieselgenerators:canister", 1), reward_xp(5)],
+          deps=["biodiesel"], icon="createdieselgenerators:burner"),
+
+    quest("sprayer", B, 15, "&6Sprüh mit dem Chemischen Sprüher",
+          subtitle="Feuerlöscher oder Flammenwerfer.",
+          description=[
+              "&6Kelp-Griff&r: drei getrockneter Seetang und eine Andesitlegierung. Der &6Chemische Sprüher&r ist ein Rezept für die Handwerkseinheiten: zwei Kelp-Griffe, &6Präzisionsgetriebe&r, &6Kupferblock&r, getrockneter Seetang und ein &6Flüssigkeitsrohr&r.",
+              "",
+              "Ein &6Ausguss&r füllt ihn mit einer beliebigen Flüssigkeit, Rechtsklick sprüht sie. Wasser löscht Feuer. Setzt ein Einsatzgerät einen &6Lighter&r (Messingbleche, Faden, Andesitlegierung, Feuerzeug) darauf, zündet er brennbare Flüssigkeiten an.",
+              "",
+              "Der &6Chemische Geschützturm&r ist die feste Version: Flüssigkeit rein, Zahnrad dran, Redstone-Signal, und er sprüht. Mit einem Entity-Filter zielt ein Mob darin selbst.",
+          ],
+          tasks=[task_item("createdieselgenerators:chemical_sprayer", 1)],
+          rewards=[reward_item("minecraft:water_bucket", 1), reward_xp(4)],
+          deps=["ethanol"], icon="createdieselgenerators:chemical_sprayer", optional=True),
 ]
 
 images = [

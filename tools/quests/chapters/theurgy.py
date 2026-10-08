@@ -356,6 +356,106 @@ quests = [
           tasks=[task_item("theurgy:alchemical_sulfur_iron", 64), task_item("theurgy:alchemical_sulfur_gold", 4)],
           rewards=[reward_table("s3_rare"), reward_xp(15)],
           deps=["auto_incubator", "exaltation"], icon="theurgy:incubator", size=2.5, shape="gear"),
+
+    # ---- Neue Quests -------------------------------------------------------------
+    quest("iesnium_mult", 15, -2, "&5Vermehr Iesnium",
+          subtitle="Fünf Barren aus einem Rohstück.",
+          description=[
+              "&6Raw Iesnium&r aus dem Nether in den Liquefaction Cauldron: &e5 Iesnium Sulfur&r für &e50 mB&r Sal Ammoniac. Ein Iesnium-Erzblock gibt genauso viel.",
+              "",
+              "Im Incubator wird jedes Sulfur mit einem Mineral Salt und einem Mercury Shard zu einem &6Iesniumbarren&r. Fünf Barren statt einem aus dem Ofen.",
+              "",
+              "&eKronwerke:&r Jeder Ruf eines Unbound Afrit kostet einen Iesniumbarren, siehe &5Occultism: Afrit und Marid&r. Mit Theurgy reicht ein Fund für fünf Rufe.",
+          ],
+          tasks=[task_item("theurgy:alchemical_sulfur_iesnium", 5)],
+          rewards=[reward_item("theurgy:mercury_shard", 16), reward_table("s3_common"), reward_xp(10)],
+          deps=["ore_mult"], icon="theurgy:alchemical_sulfur_iesnium", optional=True),
+
+    quest("netherite_mult", 15, -0.5, "&5Mach Netherit aus Antikem Schrott",
+          subtitle="Ein Fund, ein ganzer Barren.",
+          description=[
+              "&6Antiker Schrott&r in den Liquefaction Cauldron: ein &6Netherite Sulfur&r für &e100 mB&r Sal Ammoniac.",
+              "",
+              "Im Incubator wird es mit Mineral Salt und einem Mercury Shard direkt zu einem &6Netheritbarren&r. Vier Netheritplatten und vier Goldbarren sparst du dir dabei.",
+          ],
+          tasks=[task_item("theurgy:alchemical_sulfur_netherite", 2)],
+          rewards=[reward_item("minecraft:ancient_debris", 1), reward_xp(10)],
+          deps=["ore_mult"], icon="theurgy:alchemical_sulfur_netherite", optional=True),
+
+    quest("diamond_mult", 15, 1, "&bVervierfach Diamanterz",
+          subtitle="Behutsamkeit lohnt sich.",
+          description=[
+              "Bau &6Diamanterz&r mit &eBehutsamkeit&r ab und gib den Block in den Liquefaction Cauldron: &e4 Diamond Sulfur&r für &e100 mB&r Sal Ammoniac.",
+              "",
+              "Der Incubator macht aus jedem Sulfur mit Mineral Salt und Mercury Shard einen &6Diamanten&r. Ein fertiger Diamant gibt nur ein Sulfur zurück, also nie Diamanten auflösen, immer das Erz.",
+          ],
+          tasks=[task_item("theurgy:alchemical_sulfur_diamond", 8)],
+          rewards=[reward_item("minecraft:diamond", 2), reward_xp(10)],
+          deps=["ore_mult"], icon="theurgy:alchemical_sulfur_diamond", optional=True),
+
+    quest("mercury_crystal", 7.5, 7.2, "&bPress Mercury Crystals",
+          subtitle="Flux auf Vorrat.",
+          description=[
+              "&e4 Mercury Shards&r formlos ergeben einen &6Mercury Crystal&r.",
+              "",
+              "Im Mercury Catalyst gibt ein Shard &e800&r Flux, ein Kristall &e3 200&r, beide mit &e20&r Flux pro Tick. Gleich viel Energie, aber ein Viertel des Platzes in Truhen und Trichtern.",
+              "",
+              "Zum Rechnen: Eine Reformation kostet &e100 bis 200&r Flux. Ein Kristall reicht also für 16 bis 32 Umwandlungen.",
+          ],
+          tasks=[task_item("theurgy:mercury_crystal", 8)],
+          rewards=[reward_item("theurgy:mercury_shard", 16), reward_xp(4)],
+          deps=["catalyst"], icon="theurgy:mercury_crystal", optional=True),
+
+    quest("fluid_logistics", 10, 7.2, "&bBeweg Sal Ammoniac per Quecksilber",
+          subtitle="Kein Eimertragen mehr.",
+          description=[
+              "&6Fluid Extractor&r: blauer Farbstoff, Kupfer, Mercury Shard untereinander. &6Fluid Inserter&r: blauer Farbstoff, Mercury Shard, Kupfer.",
+              "",
+              "Setz den Extractor an den &6Sal Ammoniac Tank&r und einen Inserter an jeden Liquefaction Cauldron, verbinde sie mit Kupferdraht. Dann fließt das Lösungsmittel von selbst zu den Kesseln, solange der Akkumulator Wasser hat.",
+          ],
+          tasks=[task_item("theurgy:logistics_fluid_extractor", 1), task_item("theurgy:logistics_fluid_inserter", 2)],
+          rewards=[reward_item("theurgy:sal_ammoniac_crystal", 4), reward_xp(5)],
+          deps=["logistics"], icon="theurgy:logistics_fluid_extractor"),
+
+    quest("attribute_filter", 14.5, 8.2, "&bSortier mit dem Attribute Filter",
+          subtitle="Filtern nach Tags statt nach Items.",
+          description=[
+              "&e7 Papier&r, eine &6Feder&r oben in der Mitte, ein &6Mercury Shard&r in der Mitte: neun Filter.",
+              "",
+              "Anders als der List Filter prüft er Eigenschaften: Tags, Schaden oder Verzauberungen. Rechtsklick in die Luft öffnet ihn, leg ein Beispiel-Item hinein, scroll zur gewünschten Eigenschaft und klick &eAdd&r. Dann Rechtsklick auf einen Inserter oder Extractor.",
+              "",
+              "Ein Filter auf Raw Materials schickt jedes Roherz in den Liquefaction Cauldron, egal welches Metall.",
+          ],
+          tasks=[task_item("theurgy:attribute_filter", 1)],
+          rewards=[reward_item("minecraft:paper", 16), reward_xp(4)],
+          deps=["logistics"], icon="theurgy:attribute_filter", optional=True),
+
+    quest("creature_pearls", 5, 13.7, "&5Mach Enderperlen aus Pfeilen",
+          subtitle="Reformation unter Kreaturen.",
+          description=[
+              "&6Creature Salt&r: &6Verrottetes Fleisch&r oder &6Knochen&r in den Calcination Oven, eins pro Stück.",
+              "&6Pfeile&r in den Liquefaction Cauldron: ein &6Arrow Sulfur&r pro Pfeil.",
+              "",
+              "Arrow Sulfur aufs Source Pedestal, ein &6Ender Pearl Sulfur&r aufs Target Pedestal. Pro Umwandlung &e100&r Flux. Im Incubator mit Creature Salt und Mercury Shard wird daraus eine &6Enderperle&r.",
+              "",
+              "Genauso werden aus Arrow Sulfur auch Lohenruten und Schleimbälle. Eine Skelettfarm wird so zur Perlenfarm.",
+          ],
+          tasks=[task_item("theurgy:alchemical_sulfur_ender_pearl", 4), task_item("theurgy:alchemical_salt_creature", 4)],
+          rewards=[reward_item("minecraft:ender_pearl", 4), reward_xp(8)],
+          deps=["reformation"], icon="theurgy:alchemical_sulfur_ender_pearl", optional=True),
+
+    quest("gem_exaltation", 12.5, 14.4, "&bErheb Lapis zu Diamant",
+          subtitle="Zwei Stufen nach oben.",
+          description=[
+              "Wie beim Gold, nur zweimal: In der Digestion Vat werden &e4 Common Gems Niter&r mit einem &6Purified Gold&r und &e15 mB&r Sal Ammoniac zu &e1 Rare Gems Niter&r. Daraus mit &e4 Rare&r, einem Purified Gold und &e50 mB&r ein &6Precious Gems Niter&r.",
+              "",
+              "Reformier es mit einem &6Diamond Sulfur&r auf dem Target zu Diamond Sulfur, der Incubator macht einen Diamanten daraus. Mit einem Emerald Sulfur auf dem Target wird es ein Smaragd.",
+              "",
+              "&eRechnung:&r 16 Common Gems Niter (aus Lapis oder Quarz) und 5 Purified Gold pro Diamant. Teuer, aber ohne Erz.",
+          ],
+          tasks=[task_item("theurgy:alchemical_niter_gems_precious", 1)],
+          rewards=[reward_item("minecraft:lapis_lazuli", 32), reward_table("s3_common"), reward_xp(10)],
+          deps=["exaltation"], icon="theurgy:alchemical_niter_gems_precious", optional=True),
 ]
 
 images = [

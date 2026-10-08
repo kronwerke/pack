@@ -68,6 +68,22 @@ quests = [
           rewards=[reward_xp(3)],
           deps=["furnace"], icon="minecraft:raw_gold", optional=True),
 
+    quest("ore_map", 7.75, 1.5, "&7Merk dir, wo die Erze liegen",
+          subtitle="Jedes Metall hat seine Höhe.",
+          description=[
+              "&eLaut Server-Config:&r",
+              "&6Zinn:&r zwischen Y -32 und Y 94.",
+              "&6Blei:&r ganz unten bis Y 64, am meisten in der Tiefenschieferschicht.",
+              "&6Uran:&r nur tief, unter Y 8. Viele Adern liegen im Stein vergraben und berühren keine Höhle.",
+              "&6Fluorit:&r unter Y 23, ein Teil davon nur in festem Stein unter Y 4.",
+              "&6Osmium:&r große Adern im Gebirge über Y 72, dazu kleinere von ganz unten bis Y 64.",
+              "",
+              "Ein Strip-Mine-Gang auf Y -16 trifft fast alles auf einmal. Salz liegt in Tonablagerungen unter Wasser.",
+          ],
+          tasks=[task_checkmark("Gelesen")],
+          rewards=[reward_item("minecraft:torch", 32), reward_xp(3)],
+          deps=["furnace"], icon="mekanism:raw_tin", optional=True),
+
     # ---- 2x: Anreichern -------------------------------------------------------------
     quest("enrichment", 0, 5.5, "&d&lBau eine Anreicherungskammer",
           subtitle="Zwei Staub aus einem Erz.",
@@ -124,6 +140,89 @@ quests = [
           tasks=[task_item("mekanism:basic_logistical_transporter", 16), task_item("mekanism:dust_osmium", 32)],
           rewards=[reward_table("s2_uncommon"), reward_item("mekanism:raw_osmium", 16), reward_xp(10)],
           deps=["smelter"], icon="mekanism:dust_osmium", size=1.75, shape="gear"),
+
+    quest("tin_lead", 10, 5.5, "&7Schick Zinn und Blei hinterher",
+          subtitle="Dieselbe Straße, andere Metalle.",
+          description=[
+              "Die Zweifach-Straße nimmt jedes Metall von Mekanism. Wirf &6Rohes Zinn&r und &6Rohes Blei&r in die Eingangskiste, heraus kommen Barren, zwei pro Erzblock.",
+              "",
+              "&eZinn&r brauchst du für Bronze, Seismischen Vibrator, Taucherflasche und Widerstandsheizer. &eBlei&r für Reaktorglas, QIO und den Spaltreaktor in Stufe 5. Beides liegt nicht im Weg, also sammle es jetzt mit.",
+          ],
+          tasks=[task_item("mekanism:ingot_tin", 16), task_item("mekanism:ingot_lead", 16)],
+          rewards=[reward_item("mekanism:raw_tin", 16), reward_item("mekanism:raw_lead", 16)],
+          deps=["line2"], icon="mekanism:ingot_tin"),
+
+    quest("sorter", 12.5, 5.5, "&eSortier die Barren",
+          subtitle="Ein Sortierer am Ausgang.",
+          description=[
+              "&6Logistischer Sortierer:&r Eisen rundherum, oben in der Mitte ein Kolben, in der Mitte ein Schaltkreis. Er zieht aus der Kiste hinter ihm und schiebt in den Transporter vor ihm.",
+              "",
+              "Gib ihm einen Filter pro Barrensorte, zum Beispiel einen Tag wie &ec:ingots/osmium&r, und jedem Filter eine &eFarbe&r. Gefärbte Gegenstände laufen nur durch Transporter dieser Farbe. So landen Osmium, Kupfer und Eisen jedes in seiner eigenen Kiste, und der Rest nimmt den ungefärbten Weg.",
+              "",
+              "Die Transporter färbst du mit dem Konfigurator im Modus Färben.",
+          ],
+          tasks=[task_item("mekanism:logistical_sorter", 1)],
+          rewards=[reward_item("minecraft:piston", 2), reward_xp(5)],
+          deps=["line2"], icon="mekanism:logistical_sorter", optional=True),
+
+    quest("raw_blocks", 10, 6.5, "&6Pack Rohes Erz in Blöcke",
+          subtitle="Neunmal so viel pro Arbeitsgang.",
+          description=[
+              "Neun Rohe Erze ergeben an der Werkbank einen &6Block aus Rohem Erz&r. Die Anreicherungskammer macht daraus &e12 Staub&r, genau so viel wie aus neun einzelnen Rohen Erzen.",
+              "",
+              "Der Unterschied: Der Block ist &eein&r Arbeitsgang. Drei Rohe Erze brauchen genauso lange wie ein ganzer Block. Eine Kammer schafft mit Blöcken also neunmal so viel Erz pro Minute, und der Transporter trägt ein Stück statt neun.",
+              "",
+              "Die Klärkammer in Stufe 3 macht aus einem Block 18 Klumpen, auch dort in einem Gang.",
+          ],
+          tasks=[task_item("minecraft:raw_iron_block", 4)],
+          rewards=[reward_item("minecraft:raw_iron", 18), reward_xp(5)],
+          deps=["line2"], icon="minecraft:raw_iron_block"),
+
+    quest("uranium", 12.5, 6.5, "&aLeg Uran auf Vorrat",
+          subtitle="Heute nutzlos, in Stufe 3 und 5 gesucht.",
+          description=[
+              "&6Rohes Uran&r aus der Tiefe durch die Straße, wie jedes Metall. Für den Haken acht &6Uranbarren&r.",
+              "",
+              "&eWozu:&r In der Energizing Orb von &bPowah&r wird ein Uranbarren für 30 000 FE zu Uraninit, dem Brennstoff des Powah-Reaktors (Stufe 3). In Stufe 5 macht die Anreicherungskammer aus einem Barren zwei Gelbkuchen, der Anfang des Spaltbrennstoffs.",
+              "",
+              "Barren strahlen nicht. Lager sie in einer Kiste, bis du sie brauchst.",
+          ],
+          tasks=[task_item("mekanism:ingot_uranium", 8)],
+          rewards=[reward_item("mekanism:raw_uranium", 8), reward_xp(5)],
+          deps=["tin_lead"], icon="mekanism:ingot_uranium", optional=True),
+
+    quest("gem_ores", 2.5, 6.5, "&cReichere Redstone-Erz an",
+          subtitle="Mit Behutsamkeit, nicht mit Glück.",
+          description=[
+              "Die Anreicherungskammer nimmt auch Erzblöcke ohne Barren: &6Redstone-Erz&r gibt &e12 Redstone&r, &6Lapislazulierz&r &e12 Lapislazuli&r, Kohle-, Diamant-, Smaragd- und Quarzerz je &e2&r.",
+              "",
+              "&eWas sich lohnt:&r Bei Redstone schlägt die Kammer Glück III deutlich, hier also mit Behutsamkeit abbauen. Bei Diamant, Smaragd, Kohle, Quarz und Lapislazuli bringt Glück III im Schnitt etwas mehr. Die bleiben bei der Glück-Spitzhacke.",
+          ],
+          tasks=[task_checkmark("Redstone-Erz angereichert")],
+          rewards=[reward_item("minecraft:redstone_block", 4), reward_xp(3)],
+          deps=["enrichment"], icon="minecraft:redstone_ore", optional=True),
+
+    quest("fluorite", 5, 6.5, "&bSammle Fluorit",
+          subtitle="Sechs Stück pro Erz.",
+          description=[
+              "Fluoriterz liegt tief, unter Y 23. Abgebaut lässt es &e2 bis 4 Fluorit&r fallen, mit Glück III im Schnitt gut 6. Mit &6Behutsamkeit&r bleibt der Erzblock ganz, und die Anreicherungskammer macht daraus genau &e6&r. Das lohnt sich, wenn du keine Glück-Spitzhacke hast.",
+              "",
+              "Fluorit brauchst du später an vielen Stellen: im Chemischen Kristallisator der Fünffach-Straße, als Flusssäure im Spaltbrennstoff, als Staub für Polonium- und Plutonium-Pellets. Neun ergeben einen Block, so lagert es sich gut.",
+          ],
+          tasks=[task_item("mekanism:fluorite_gem", 12)],
+          rewards=[reward_item("mekanism:fluorite_gem", 6), reward_xp(5)],
+          deps=["gem_ores"], icon="mekanism:fluorite_gem", optional=True),
+
+    quest("netherite", 0, 6.5, "&8Verdreifache Antiken Schrott",
+          subtitle="Zerkleinerer und Kammer statt Ofen.",
+          description=[
+              "Im Ofen gibt ein &6Antiker Schrott&r eine &6Netheritplatte&r. Im &6Zerkleinerer&r wird er zu &e3 Dreckigen Netheritplatten&r, und die Anreicherungskammer macht aus jeder eine saubere Netheritplatte.",
+              "",
+              "Dreimal so viel Netherit aus jedem Fund im Nether. Vier Platten und vier Gold sind ein Netheritbarren, die MekaSuit in Stufe 4 braucht vier davon.",
+          ],
+          tasks=[task_item("mekanism:dirty_netherite_scrap", 3)],
+          rewards=[reward_item("minecraft:gold_ingot", 8), reward_xp(10)],
+          deps=["enrichment"], icon="minecraft:ancient_debris", optional=True),
 
     # ---- 3x: Klären -----------------------------------------------------------------
     quest("separator", 0, 9.5, "&bBau einen Elektrolyseur",

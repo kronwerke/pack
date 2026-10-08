@@ -56,7 +56,7 @@
 		{
 			id: "49D9760C4025EA05"
 			x: 0.0d
-			y: 12.26d
+			y: 14.709999999999999d
 			icon: {
 				id: "minecraft:beacon"
 				count: 1
@@ -91,7 +91,7 @@
 		{
 			id: "4CA057DCFC11E077"
 			x: 0.0d
-			y: 13.76d
+			y: 16.21d
 			icon: {
 				id: "botania:terrasteel_ingot"
 				count: 1
@@ -126,7 +126,7 @@
 		{
 			id: "385B4DD277CDEC98"
 			x: 2.0d
-			y: 12.26d
+			y: 14.709999999999999d
 			icon: {
 				id: "minecraft:beacon"
 				count: 1
@@ -152,7 +152,7 @@
 		{
 			id: "2E2CC411937BE96F"
 			x: 4.0d
-			y: 12.26d
+			y: 14.709999999999999d
 			icon: {
 				id: "botania:terra_blade"
 				count: 1
@@ -200,7 +200,7 @@
 		{
 			id: "56B7D8A29D5AB2C9"
 			x: 4.0d
-			y: 13.76d
+			y: 16.21d
 			icon: {
 				id: "botania:gaia_head"
 				count: 1
@@ -224,14 +224,16 @@
 		}
 		{
 			id: "23CF74838C078848"
-			x: 6.0d
-			y: 12.26d
+			x: 9.5d
+			y: 16.06d
 			icon: {
 				id: "botania:gaia_spirit"
 				count: 1
 			}
 			size: 2.0d
 			shape: "gear"
+			hide_dependency_lines: true
+			hide_dependent_lines: true
 			dependencies: [
 				"2E2CC411937BE96F"
 				"56B7D8A29D5AB2C9"
@@ -271,13 +273,14 @@
 		}
 		{
 			id: "2B140A50CBCAF2D0"
-			x: 8.8d
-			y: 12.26d
+			x: 11.5d
+			y: 17.41d
 			icon: {
 				id: "botania:gaia_head"
 				count: 1
 			}
 			optional: true
+			hide_dependency_lines: true
 			dependencies: [
 				"23CF74838C078848"
 			]
@@ -308,12 +311,13 @@
 		}
 		{
 			id: "748D6B68944ABA7C"
-			x: 8.8d
-			y: 13.76d
+			x: 11.5d
+			y: 16.06d
 			icon: {
 				id: "botania:gaia_spirit"
 				count: 1
 			}
+			hide_dependency_lines: true
 			dependencies: [
 				"23CF74838C078848"
 			]
@@ -333,13 +337,14 @@
 		}
 		{
 			id: "2C8D8C51B0FAD7AE"
-			x: 8.8d
-			y: 15.26d
+			x: 12.85d
+			y: 14.709999999999999d
 			icon: {
 				id: "botania:gaia_head"
 				count: 1
 			}
 			optional: true
+			hide_dependency_lines: true
 			dependencies: [
 				"23CF74838C078848"
 			]
@@ -371,6 +376,7 @@
 				count: 1
 			}
 			hide_dependency_lines: true
+			hide_dependent_lines: true
 			dependencies: [
 				"23CF74838C078848"
 			]
@@ -484,7 +490,7 @@
 		}
 		{
 			id: "1CB2BB336E1C636F"
-			x: 8.4d
+			x: 9.35d
 			y: 8.16d
 			icon: {
 				id: "botania:flugel_tiara"
@@ -521,8 +527,8 @@
 		}
 		{
 			id: "49E952C251A80C20"
-			x: 11.8d
-			y: 11.76d
+			x: 0.0d
+			y: 21.009999999999998d
 			icon: {
 				id: "botania:dandelifeon"
 				count: 1
@@ -562,8 +568,8 @@
 		}
 		{
 			id: "259B423B20532EB5"
-			x: 13.8d
-			y: 11.76d
+			x: 2.0d
+			y: 21.009999999999998d
 			icon: {
 				id: "botania:cellular_block"
 				count: 1
@@ -597,8 +603,8 @@
 		}
 		{
 			id: "2CA58CC28C140BE5"
-			x: 13.8d
-			y: 13.26d
+			x: 2.0d
+			y: 22.509999999999998d
 			icon: {
 				id: "botania:shulk_me_not"
 				count: 1
@@ -637,7 +643,7 @@
 		}
 		{
 			id: "23C500BB8EBF1F7D"
-			x: 8.4d
+			x: 9.35d
 			y: 6.66d
 			icon: {
 				id: "botania:cloak_of_virtue"
@@ -695,7 +701,7 @@
 		}
 		{
 			id: "23623105DB6D5A1D"
-			x: 11.2d
+			x: 12.149999999999999d
 			y: 6.66d
 			icon: {
 				id: "botania:crimson_pendant"
@@ -762,7 +768,7 @@
 		}
 		{
 			id: "7C4E1A4E6B2CA48A"
-			x: 13.2d
+			x: 14.149999999999999d
 			y: 6.66d
 			icon: {
 				id: "botania:great_fairy_ring"
@@ -811,7 +817,7 @@
 		}
 		{
 			id: "350C8F223355806F"
-			x: 11.2d
+			x: 12.149999999999999d
 			y: 8.16d
 			icon: {
 				id: "botania:black_hole_talisman"
@@ -851,7 +857,7 @@
 		}
 		{
 			id: "40995844B154C20D"
-			x: 13.2d
+			x: 14.149999999999999d
 			y: 8.16d
 			icon: {
 				id: "botania:worldshapers_astrolabe"
@@ -891,8 +897,8 @@
 		}
 		{
 			id: "70E57BF06C45A964"
-			x: 11.8d
-			y: 14.76d
+			x: 0.0d
+			y: 24.009999999999998d
 			icon: {
 				id: "botania:starcaller"
 				count: 1
@@ -927,8 +933,8 @@
 		}
 		{
 			id: "20C83E43A1C35408"
-			x: 13.8d
-			y: 14.76d
+			x: 2.0d
+			y: 24.009999999999998d
 			icon: {
 				id: "botania:thundercaller"
 				count: 1
@@ -962,7 +968,7 @@
 		}
 		{
 			id: "57451DBD7AFA514C"
-			x: 8.4d
+			x: 9.35d
 			y: 4.66d
 			icon: {
 				id: "botania:gaia_spirit"
@@ -1000,7 +1006,7 @@
 		}
 		{
 			id: "6311295C04882C49"
-			x: 11.2d
+			x: 12.149999999999999d
 			y: 4.66d
 			icon: {
 				id: "botania:terrasteel_ingot"
@@ -1021,6 +1027,337 @@
 					id: "6BA01C767A179520"
 					type: "xp_levels"
 					xp_levels: 5
+				}
+			]
+		}
+		{
+			id: "21FC348F17CFFDEB"
+			x: 6.0d
+			y: 14.709999999999999d
+			icon: {
+				id: "botania:thorn_chakram"
+				count: 1
+			}
+			optional: true
+			dependencies: [
+				"2E2CC411937BE96F"
+			]
+			tasks: [
+				{
+					id: "7427A4C5A8D05430"
+					type: "item"
+					item: {
+						id: "botania:thorn_chakram"
+						count: 1
+					}
+					count: 2
+				}
+				{
+					id: "1AB42F11332EA96A"
+					type: "item"
+					item: {
+						id: "botania:flare_chakram"
+						count: 1
+					}
+					count: 2
+				}
+			]
+			rewards: [
+				{
+					id: "4569DB3AEDD0A6AD"
+					type: "item"
+					item: {
+						id: "minecraft:vine"
+						count: 1
+					}
+					count: 16
+				}
+				{
+					id: "1EB63F10E2D827B5"
+					type: "xp_levels"
+					xp_levels: 6
+				}
+			]
+		}
+		{
+			id: "47F2DFF65613425E"
+			x: 11.5d
+			y: 14.709999999999999d
+			icon: {
+				id: "botania:gaia_head"
+				count: 1
+			}
+			optional: true
+			hide_dependency_lines: true
+			dependencies: [
+				"23CF74838C078848"
+			]
+			tasks: [
+				{
+					id: "3B2234473A5110D2"
+					type: "kill"
+					entity: "botania:gaia_guardian"
+					value: 5
+				}
+			]
+			rewards: [
+				{
+					id: "1004D67974F04C76"
+					type: "item"
+					item: {
+						id: "botania:terrasteel_ingot"
+						count: 1
+					}
+					count: 2
+				}
+				{
+					id: "1B261378C1C022DC"
+					type: "loot"
+					table_id: 4738617146227273058L
+				}
+				{
+					id: "66329C2DFEF9D5B0"
+					type: "xp_levels"
+					xp_levels: 15
+				}
+			]
+		}
+		{
+			id: "27FA2E9748AF438F"
+			x: 6.0d
+			y: 11.11d
+			icon: {
+				id: "botania:rod_of_the_unstable_reservior"
+				count: 1
+			}
+			optional: true
+			hide_dependency_lines: true
+			dependencies: [
+				"60F0EBDABFEC3826"
+			]
+			tasks: [
+				{
+					id: "3270BB36329A0F0B"
+					type: "item"
+					item: {
+						id: "botania:rod_of_the_unstable_reservior"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "253CF89ED76F28F4"
+					type: "item"
+					item: {
+						id: "botania:dragonstone"
+						count: 1
+					}
+					count: 2
+				}
+				{
+					id: "2D187067C5E58EC1"
+					type: "xp_levels"
+					xp_levels: 8
+				}
+			]
+		}
+		{
+			id: "11CFC27A4C0E9C0B"
+			x: 7.35d
+			y: 9.76d
+			icon: {
+				id: "botania:life_aggregator"
+				count: 1
+			}
+			optional: true
+			hide_dependency_lines: true
+			dependencies: [
+				"60F0EBDABFEC3826"
+			]
+			tasks: [
+				{
+					id: "62E12385D7F1B361"
+					type: "item"
+					item: {
+						id: "botania:life_aggregator"
+						count: 1
+					}
+					count: 1
+				}
+				{
+					id: "5DF70DD19A549E98"
+					type: "item"
+					item: {
+						id: "botania:life_imbuer"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "7D966F1A818C8DDD"
+					type: "item"
+					item: {
+						id: "botania:pure_ender_essence"
+						count: 1
+					}
+					count: 2
+				}
+				{
+					id: "255492DA501333BD"
+					type: "xp_levels"
+					xp_levels: 8
+				}
+			]
+		}
+		{
+			id: "267DEDA17587E487"
+			x: 7.35d
+			y: 8.41d
+			icon: {
+				id: "botania:shard_of_laputa"
+				count: 1
+			}
+			optional: true
+			hide_dependency_lines: true
+			dependencies: [
+				"60F0EBDABFEC3826"
+			]
+			tasks: [
+				{
+					id: "7F83349B2973AB1F"
+					type: "item"
+					item: {
+						id: "botania:shard_of_laputa"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "7404D60A96E935C6"
+					type: "item"
+					item: {
+						id: "minecraft:prismarine_shard"
+						count: 1
+					}
+					count: 8
+				}
+				{
+					id: "4A0A299682CCB893"
+					type: "xp_levels"
+					xp_levels: 8
+				}
+			]
+		}
+		{
+			id: "627965BF9675D7D0"
+			x: 6.0d
+			y: 8.41d
+			icon: {
+				id: "botania:manastorm_charge"
+				count: 1
+			}
+			optional: true
+			hide_dependency_lines: true
+			dependencies: [
+				"60F0EBDABFEC3826"
+			]
+			tasks: [
+				{
+					id: "3F2AAD168C7637F2"
+					type: "item"
+					item: {
+						id: "botania:manastorm_charge"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "7400DDCFF4B8AE9F"
+					type: "item"
+					item: {
+						id: "minecraft:tnt"
+						count: 1
+					}
+					count: 4
+				}
+				{
+					id: "22A579DC18FEDD37"
+					type: "xp_levels"
+					xp_levels: 6
+				}
+			]
+		}
+		{
+			id: "11CEFF6355AD455F"
+			x: 6.0d
+			y: 9.76d
+			icon: {
+				id: "draconicevolution:energy_core_stabilizer"
+				count: 1
+			}
+			hide_dependency_lines: true
+			dependencies: [
+				"60F0EBDABFEC3826"
+			]
+			tasks: [
+				{
+					id: "10D63112582B42A2"
+					type: "checkmark"
+				}
+			]
+			rewards: [
+				{
+					id: "4257253E0574D897"
+					type: "xp_levels"
+					xp_levels: 3
+				}
+			]
+		}
+		{
+			id: "2E4A34334E3F28ED"
+			x: 2.0d
+			y: 16.21d
+			icon: {
+				id: "botania:terrasteel_block"
+				count: 1
+			}
+			optional: true
+			dependencies: [
+				"4CA057DCFC11E077"
+			]
+			tasks: [
+				{
+					id: "764FC490A8AEAF0D"
+					type: "item"
+					item: {
+						id: "botania:terrasteel_ingot"
+						count: 1
+					}
+					count: 8
+				}
+			]
+			rewards: [
+				{
+					id: "472EE7F340EBB1DF"
+					type: "item"
+					item: {
+						id: "botania:mana_diamond"
+						count: 1
+					}
+					count: 4
+				}
+				{
+					id: "6F7A9EC3E1EEDBE5"
+					type: "loot"
+					table_id: 2331452980220016310L
 				}
 			]
 		}
@@ -1050,7 +1387,7 @@
 			id: "1E6B2E3CD93D3A39"
 			image: "kronwerke:textures/quests/gaia/vorbereitung.png"
 			x: 1.7349999999999999d
-			y: 10.309999999999999d
+			y: 13.259999999999998d
 			width: 4.47d
 			height: 0.9d
 			rotation: 0.0d
@@ -1058,9 +1395,19 @@
 		}
 		{
 			id: "2C5E503FE3ACC731"
+			image: "kronwerke:textures/quests/gaia/kampf.png"
+			x: 10.325d
+			y: 13.259999999999998d
+			width: 3.65d
+			height: 0.9d
+			rotation: 0.0d
+			order: 1
+		}
+		{
+			id: "230FAD873342C960"
 			image: "kronwerke:textures/quests/gaia/obelisk.png"
-			x: 13.950000000000001d
-			y: 10.309999999999999d
+			x: 2.15d
+			y: 19.56d
 			width: 5.3d
 			height: 0.9d
 			rotation: 0.0d

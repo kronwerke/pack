@@ -216,7 +216,7 @@
 		{
 			id: "2A46BB015A61235B"
 			x: 14.774999999999999d
-			y: 12.475d
+			y: 14.475d
 			icon: {
 				id: "mysticalagriculture:prosperity_shard"
 				count: 1
@@ -256,7 +256,7 @@
 		{
 			id: "25688DAE48BD9558"
 			x: 16.775d
-			y: 12.475d
+			y: 14.475d
 			icon: {
 				id: "mysticalagriculture:prosperity_ingot"
 				count: 1
@@ -295,7 +295,7 @@
 		{
 			id: "129598F846CD6A32"
 			x: 18.775d
-			y: 12.475d
+			y: 15.975d
 			icon: {
 				id: "mysticalagriculture:inferium_ingot"
 				count: 1
@@ -334,7 +334,7 @@
 		{
 			id: "5A59B88D79813940"
 			x: 16.775d
-			y: 14.225d
+			y: 12.725d
 			icon: {
 				id: "mysticalagriculture:inferium_gemstone"
 				count: 1
@@ -377,7 +377,7 @@
 		{
 			id: "1FB4483D3BF7F348"
 			x: 18.775d
-			y: 14.225d
+			y: 12.725d
 			icon: {
 				id: "mysticalagriculture:inferium_growth_accelerator"
 				count: 1
@@ -423,7 +423,7 @@
 		{
 			id: "7A90A5212D250C6C"
 			x: 21.174999999999997d
-			y: 12.475d
+			y: 15.975d
 			icon: {
 				id: "mysticalagriculture:inferium_watering_can"
 				count: 1
@@ -549,7 +549,7 @@
 		{
 			id: "22362A8D563ED2E0"
 			x: 2.975d
-			y: 15.475d
+			y: 12.475d
 			icon: {
 				id: "mysticalagriculture:wand"
 				count: 1
@@ -712,7 +712,7 @@
 		{
 			id: "588E33EC80D80589"
 			x: 9.774999999999999d
-			y: 15.475d
+			y: 16.975d
 			icon: {
 				id: "mysticalagriculture:water_agglomeratio"
 				count: 1
@@ -799,7 +799,7 @@
 		{
 			id: "1E39E98230DB3998"
 			x: 0.25d
-			y: 19.325d
+			y: 22.075d
 			icon: {
 				id: "mysticalagriculture:inferium_pickaxe"
 				count: 1
@@ -846,7 +846,7 @@
 		{
 			id: "1C8989D406E1974B"
 			x: 2.65d
-			y: 20.825d
+			y: 22.075d
 			icon: {
 				id: "mysticalagriculture:inferium_chestplate"
 				count: 1
@@ -886,7 +886,7 @@
 		{
 			id: "1654F7187C4B104F"
 			x: 2.65d
-			y: 22.325d
+			y: 23.575d
 			icon: {
 				id: "mysticalagriculture:inferium_scythe"
 				count: 1
@@ -925,7 +925,7 @@
 		{
 			id: "3757A743E3A31403"
 			x: 2.65d
-			y: 19.325d
+			y: 20.575d
 			icon: {
 				id: "mysticalagradditions:inferium_paxel"
 				count: 1
@@ -1048,8 +1048,8 @@
 		}
 		{
 			id: "4E1BA47934236848"
-			x: 14.649999999999999d
-			y: 19.825d
+			x: 14.79d
+			y: 21.325d
 			icon: {
 				id: "mysticalagriculture:inferium_block"
 				count: 1
@@ -1105,8 +1105,8 @@
 		}
 		{
 			id: "6C24E92C8704048C"
-			x: 17.849999999999998d
-			y: 19.825d
+			x: 17.99d
+			y: 21.325d
 			icon: {
 				id: "mysticalagriculture:infusion_crystal"
 				count: 1
@@ -1168,6 +1168,342 @@
 						count: 1
 					}
 					count: 16
+				}
+			]
+		}
+		{
+			id: "1E9B264981B65A97"
+			x: 18.775d
+			y: 14.475d
+			icon: {
+				id: "mysticalagriculture:machine_frame"
+				count: 1
+			}
+			dependencies: [
+				"25688DAE48BD9558"
+			]
+			tasks: [
+				{
+					id: "5056C97C11C253AA"
+					type: "item"
+					item: {
+						id: "mysticalagriculture:machine_frame"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "75F7FD0F1BC7DD1E"
+					type: "item"
+					item: {
+						id: "minecraft:redstone"
+						count: 1
+					}
+					count: 16
+				}
+				{
+					id: "5820E3C36ED4F69C"
+					type: "xp_levels"
+					xp_levels: 3
+				}
+			]
+		}
+		{
+			id: "2D488086C44D80D5"
+			x: 21.174999999999997d
+			y: 14.475d
+			icon: {
+				id: "mysticalagriculture:furnace"
+				count: 1
+			}
+			dependencies: [
+				"1E9B264981B65A97"
+			]
+			tasks: [
+				{
+					id: "339B89EA04CCD330"
+					type: "item"
+					item: {
+						id: "mysticalagriculture:furnace"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "774E6DD3AC189ECA"
+					type: "item"
+					item: {
+						id: "minecraft:coal"
+						count: 1
+					}
+					count: 16
+				}
+				{
+					id: "264B01628B87D12C"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+		}
+		{
+			id: "2104FD313A4700DF"
+			x: 23.174999999999997d
+			y: 14.475d
+			icon: {
+				id: "mysticalagriculture:inferium_upgrade"
+				count: 1
+			}
+			optional: true
+			dependencies: [
+				"2D488086C44D80D5"
+			]
+			tasks: [
+				{
+					id: "4FC75C886A80FA89"
+					type: "item"
+					item: {
+						id: "mysticalagriculture:inferium_upgrade"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "29201C05F75569FC"
+					type: "item"
+					item: {
+						id: "mysticalagriculture:prosperity_shard"
+						count: 1
+					}
+					count: 8
+				}
+				{
+					id: "320B3889CF7F2609"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+		}
+		{
+			id: "319B925B68AFD7DB"
+			x: 4.975d
+			y: 15.475d
+			icon: {
+				id: "minecraft:stone_button"
+				count: 1
+			}
+			optional: true
+			dependencies: [
+				"519768CE5D208790"
+			]
+			tasks: [
+				{
+					id: "370F57641A1BEA45"
+					type: "checkmark"
+				}
+			]
+			rewards: [
+				{
+					id: "75867FB01AFAF64C"
+					type: "item"
+					item: {
+						id: "minecraft:redstone"
+						count: 1
+					}
+					count: 8
+				}
+				{
+					id: "54CCFCBCBC4F08D5"
+					type: "xp_levels"
+					xp_levels: 3
+				}
+			]
+		}
+		{
+			id: "4CB305BB245A9884"
+			x: 9.774999999999999d
+			y: 15.475d
+			icon: {
+				id: "mysticalagriculture:fertilized_essence"
+				count: 1
+			}
+			optional: true
+			dependencies: [
+				"5732DEFEF730A6F0"
+			]
+			tasks: [
+				{
+					id: "2B9476EA26CAEDCB"
+					type: "item"
+					item: {
+						id: "mysticalagriculture:fertilized_essence"
+						count: 1
+					}
+					count: 4
+				}
+			]
+			rewards: [
+				{
+					id: "21C3F42C7CF7B96D"
+					type: "item"
+					item: {
+						id: "mysticalagriculture:mystical_fertilizer"
+						count: 1
+					}
+					count: 4
+				}
+				{
+					id: "2AD00572C6115CBD"
+					type: "xp_levels"
+					xp_levels: 3
+				}
+			]
+		}
+		{
+			id: "1A12D84D157968AD"
+			x: 11.774999999999999d
+			y: 16.975d
+			icon: {
+				id: "mysticalagriculture:air_essence"
+				count: 1
+			}
+			optional: true
+			dependencies: [
+				"588E33EC80D80589"
+			]
+			tasks: [
+				{
+					id: "3409D31C4C5F3EAA"
+					type: "item"
+					item: {
+						id: "mysticalagriculture:air_essence"
+						count: 1
+					}
+					count: 40
+				}
+				{
+					id: "310011C88FCD36D1"
+					type: "item"
+					item: {
+						id: "mysticalagriculture:earth_essence"
+						count: 1
+					}
+					count: 40
+				}
+				{
+					id: "281D4A9139F911F2"
+					type: "item"
+					item: {
+						id: "mysticalagriculture:water_essence"
+						count: 1
+					}
+					count: 40
+				}
+				{
+					id: "1C82031E27EEAA41"
+					type: "item"
+					item: {
+						id: "mysticalagriculture:fire_essence"
+						count: 1
+					}
+					count: 40
+				}
+			]
+			rewards: [
+				{
+					id: "468C03E29A09D2D4"
+					type: "loot"
+					table_id: 2810828560988712020L
+				}
+				{
+					id: "76555947D6871C8E"
+					type: "xp_levels"
+					xp_levels: 10
+				}
+			]
+		}
+		{
+			id: "1135AEBB7F2BE32C"
+			x: 4.65d
+			y: 23.575d
+			icon: {
+				id: "mysticalagriculture:inferium_sickle"
+				count: 1
+			}
+			optional: true
+			dependencies: [
+				"1654F7187C4B104F"
+			]
+			tasks: [
+				{
+					id: "26BD35C3FD04ABCD"
+					type: "item"
+					item: {
+						id: "mysticalagriculture:inferium_sickle"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "19090B39E0948C87"
+					type: "item"
+					item: {
+						id: "mysticalagriculture:inferium_ingot"
+						count: 1
+					}
+					count: 2
+				}
+				{
+					id: "62664071E345A0B4"
+					type: "xp_levels"
+					xp_levels: 3
+				}
+			]
+		}
+		{
+			id: "73E67DE30FC7EE40"
+			x: 4.65d
+			y: 22.075d
+			icon: {
+				id: "mysticalagriculture:luck_i_augment"
+				count: 1
+			}
+			optional: true
+			dependencies: [
+				"1C8989D406E1974B"
+			]
+			tasks: [
+				{
+					id: "1B3AB99B59B3413E"
+					type: "item"
+					item: {
+						id: "mysticalagriculture:luck_i_augment"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "56CD5D6C89842A74"
+					type: "item"
+					item: {
+						id: "minecraft:gold_ingot"
+						count: 1
+					}
+					count: 4
+				}
+				{
+					id: "290BAA0E9DA6CDF6"
+					type: "xp_levels"
+					xp_levels: 5
 				}
 			]
 		}
@@ -1485,8 +1821,8 @@
 		}
 		{
 			id: "772DD64D5BA1304B"
-			x: 7.51d
-			y: 19.075d
+			x: 7.65d
+			y: 20.575d
 			icon: {
 				id: "mysticalagriculture:inferium_seeds"
 				count: 1
@@ -1525,8 +1861,8 @@
 		}
 		{
 			id: "279FC42535D19652"
-			x: 9.51d
-			y: 19.075d
+			x: 9.65d
+			y: 20.575d
 			icon: {
 				id: "mysticalagriculture:air_seeds"
 				count: 1
@@ -1618,7 +1954,7 @@
 			id: "29C0579DF9DD0316"
 			image: "kronwerke:textures/quests/mystical_agriculture/tools.png"
 			x: 2.255d
-			y: 17.625d
+			y: 19.125d
 			width: 5.51d
 			height: 0.9d
 			rotation: 0.0d
@@ -1627,8 +1963,8 @@
 		{
 			id: "66F6A47DDEF589D4"
 			image: "kronwerke:textures/quests/mystical_agriculture/agradditions.png"
-			x: 9.205d
-			y: 17.625d
+			x: 9.345d
+			y: 19.125d
 			width: 4.39d
 			height: 0.9d
 			rotation: 0.0d
@@ -1637,8 +1973,8 @@
 		{
 			id: "52944B626279141B"
 			image: "kronwerke:textures/quests/mystical_agriculture/farm.png"
-			x: 15.944999999999999d
-			y: 17.625d
+			x: 16.085d
+			y: 19.125d
 			width: 5.09d
 			height: 0.9d
 			rotation: 0.0d

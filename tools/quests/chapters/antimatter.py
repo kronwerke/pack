@@ -158,6 +158,32 @@ quests = [
           rewards=[reward_item("mekanism:hazmat_mask", 1), reward_item("mekanism:hazmat_gown", 1)],
           deps=["logic"], icon="mekanism:geiger_counter", optional=True),
 
+    quest("hazmat", 17.5, 3, "&eZieh den ganzen Schutzanzug an",
+          subtitle="Vier Teile Blei, ein Dosimeter.",
+          description=[
+              "Alle Teile sind &6Blei&r mit Farbstoff: Maske, Kittel und Hose mit orangem, die Stiefel mit schwarzem. Hose wie eine Eisenhose, Stiefel wie Eisenstiefel, je mit dem Farbstoff in der Mitte.",
+              "",
+              "Jedes Teil hält einen Teil der Strahlung ab, erst alle vier zusammen schützen ganz. Das &6Dosimeter&r (Blei im Kreuz um ein Redstone) zeigt per Rechtsklick, wie viel du schon abbekommen hast. Die Dosis baut sich mit der Zeit wieder ab.",
+              "",
+              "Wer die MekaSuit trägt, nimmt statt des Anzugs das Strahlenschutzmodul: Infundierte Legierung, ein Bleiblock, Basismodul und HDPE.",
+          ],
+          tasks=[task_item("mekanism:hazmat_pants", 1), task_item("mekanism:hazmat_boots", 1), task_item("mekanism:dosimeter", 1)],
+          rewards=[reward_item("mekanism:ingot_lead", 16), reward_xp(5)],
+          deps=["radiation"], icon="mekanism:hazmat_mask", optional=True),
+
+    quest("sodium", 12.5, 4.5, "&bKühl mit Natrium",
+          subtitle="Der Dampf entsteht im Kessel.",
+          description=[
+              "Statt Wasser kannst du &6Natrium&r in die Kühlmittel-Schnittstelle pumpen. Der Reaktor macht daraus &6überhitztes Natrium&r statt Dampf. Natrium kühlt besser als Wasser.",
+              "",
+              "Das heiße Natrium geht in den &6Thermoelektrischen Dampfkessel&r aus Stufe 3. Er nimmt es als Wärmequelle statt Widerstandsheizern, kocht Wasser zu Dampf für die Turbine und gibt das abgekühlte Natrium zurück. Ein Kreislauf ohne Verlust.",
+              "",
+              "Natrium fällt beim Chlor an: Sole im Elektrolyseur, siehe Kapitel &5Mekanism&r. Wer es seit Stufe 2 gesammelt hat, ist jetzt froh.",
+          ],
+          tasks=[task_checkmark("Natriumkreislauf läuft")],
+          rewards=[reward_item("mekanism:block_salt", 16), reward_xp(10)],
+          deps=["reactor"], icon="mekanism:sodium_bucket", optional=True),
+
     # ---- Polonium und Plutonium -----------------------------------------------------------
     quest("waste", 0, 8, "&2Aktivier Atommüll zu Polonium",
           subtitle="Was der Reaktor übrig lässt, ist der Rohstoff.",
@@ -202,6 +228,28 @@ quests = [
           tasks=[task_item("mekanism:reprocessed_fissile_fragment", 4)],
           rewards=[reward_item("mekanism:pellet_plutonium", 1), reward_xp(10)],
           deps=["plutonium"], icon="mekanism:reprocessed_fissile_fragment", optional=True),
+
+    quest("qio_hyper", 7.5, 9, "&dBau ein Hyperdichtes QIO-Laufwerk",
+          subtitle="Achtmal so viel Platz.",
+          description=[
+              "Vier &cPlutonium-Pellets&r in die Ecken, vier normale &6QIO-Laufwerke&r an die Seiten, ein Teleportationskern in die Mitte.",
+              "",
+              "Es fasst &e128 000 Gegenstände&r in &e256 Sorten&r, das normale Laufwerk 16 000 in 128. Steck es in deine Laufwerk Reihe aus Stufe 4, das Netz bleibt dasselbe.",
+          ],
+          tasks=[task_item("mekanism:qio_drive_hyper_dense", 1)],
+          rewards=[reward_item("mekanism:pellet_plutonium", 1), reward_xp(10)],
+          deps=["plutonium"], icon="mekanism:qio_drive_hyper_dense", optional=True),
+
+    quest("qio_dilating", 10, 9, "&dBau ein Zeiterweiterndes QIO-Laufwerk",
+          subtitle="Eine Million Gegenstände.",
+          description=[
+              "Vier Plutonium-Pellets in die Ecken, vier &6Hyperdichte Laufwerke&r an die Seiten, ein &bPolonium-Pellet&r in die Mitte. Es fasst &e1 048 000 Gegenstände&r in &e1 024 Sorten&r.",
+              "",
+              "&eDas letzte:&r Vier Polonium-Pellets, vier Zeiterweiternde Laufwerke und ein &5Antimaterie-Pellet&r ergeben das &6Supermassive QIO-Laufwerk&r mit &e16 Milliarden&r Gegenständen in 8 192 Sorten.",
+          ],
+          tasks=[task_item("mekanism:qio_drive_time_dilating", 1)],
+          rewards=[reward_item("mekanism:pellet_polonium", 2), reward_xp(15)],
+          deps=["qio_hyper", "polonium"], icon="mekanism:qio_drive_time_dilating", optional=True),
 
     # ---- Das SPS -----------------------------------------------------------------------
     quest("sps_casing", 0, 12.5, "&dBau SPS-Gehäuse",
@@ -305,6 +353,50 @@ quests = [
           tasks=[task_item("mekmm:uu_matter", 1)],
           rewards=[reward_xp(10)],
           deps=["nucleosynthesizer"], icon="mekmm:uu_matter", optional=True),
+
+    quest("dragon_egg", 2.5, 18.75, "&5Brüte ein Drachenei aus",
+          subtitle="Ein Hühnerei und 4 mB Antimaterie.",
+          description=[
+              "Ein &6Ei&r im Antiprotonischen Kernsynthesizer wird mit &e4 mB Antimaterie&r zum &5Drachenei&r.",
+              "",
+              "Dracheneier brauchst du für Rezepte von &5Draconic Evolution&r und für die Heiße Zentrifuge von &6Productive Bees&r. Wer nicht auf den nächsten Drachen warten will, brütet hier eins aus.",
+          ],
+          tasks=[task_item("minecraft:dragon_egg", 1)],
+          rewards=[reward_item("minecraft:egg", 16), reward_xp(15)],
+          deps=["nucleosynthesizer"], icon="minecraft:dragon_egg", optional=True),
+
+    quest("grav_module", 7.5, 17.5, "&5Flieg mit Gravitationsmodulation",
+          subtitle="Freier Flug in der MekaSuit.",
+          description=[
+              "Oben Atomlegierung, &6Netherstern&r, Atomlegierung, Mitte &6Ultimativer Induktionsanbieter&r, Basismodul, Ultimativer Induktionsanbieter, unten drei &5Antimaterie-Pellets&r.",
+              "",
+              "In der MekaSuit lässt es dich fliegen wie im Kreativmodus. Laut Config kostet das &d400 FE/t&r, solange du fliegst. Das Jetpack-Modul hat damit ausgedient.",
+          ],
+          tasks=[task_item("mekanism:module_gravitational_modulating_unit", 1)],
+          rewards=[reward_item("mekanism:alloy_atomic", 4), reward_xp(20)],
+          deps=["pellet"], icon="mekanism:module_gravitational_modulating_unit", optional=True, section="use"),
+
+    quest("teleport_module", 10, 17.5, "&5Spring mit dem Meka-Werkzeug",
+          subtitle="Das Teleportationsmodul.",
+          description=[
+              "Oben Atomlegierung, &6Teleportationskern&r, Atomlegierung, Mitte Atomlegierung, Basismodul, Atomlegierung, unten drei &5Antimaterie-Pellets&r.",
+              "",
+              "Im Meka-Werkzeug bringt dich ein Rechtsklick auf den Block, auf den du schaust, laut Config bis &e100 Blöcke&r weit. Quer durch die Fabrikhalle, über Schluchten, auf Dächer.",
+          ],
+          tasks=[task_item("mekanism:module_teleportation_unit", 1)],
+          rewards=[reward_item("mekanism:teleportation_core", 2), reward_xp(15)],
+          deps=["pellet"], icon="mekanism:module_teleportation_unit", optional=True, section="use"),
+
+    quest("elytra_module", 12.5, 17.5, "&5Bau Flügel in die MekaSuit",
+          subtitle="Die Elytra-Einheit.",
+          description=[
+              "&6HDPE Verstärkte Elytra:&r oben HDPE, Atomlegierung, HDPE, Mitte HDPE, eine &6Elytra&r aus der Endstadt, HDPE, unten zwei HDPE in die Ecken. Dann das Modul: Verstärkte Legierung um die HDPE-Elytra und das Basismodul, unten Polonium, ein &5Antimaterie-Pellet&r, Polonium.",
+              "",
+              "Die MekaSuit gleitet dann wie mit Elytra, ohne dass du den Brustplatz hergibst. Laut Config kostet das 12 800 FE pro Sekunde Flug.",
+          ],
+          tasks=[task_item("mekanism:module_elytra_unit", 1)],
+          rewards=[reward_item("mekanism:hdpe_sheet", 16), reward_xp(15)],
+          deps=["pellet"], icon="mekanism:module_elytra_unit", optional=True, section="use"),
 
     quest("replicator", 5, 17.5, "&3Bau einen Replikator",
           subtitle="Mekanism MoreMachine kopiert Dinge.",

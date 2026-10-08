@@ -757,6 +757,84 @@
 			]
 		}
 		{
+			id: "3D3FDB0DB9F082C9"
+			x: 20.46d
+			y: 6.720000000000001d
+			icon: {
+				id: "create:depot"
+				count: 1
+			}
+			hide_dependency_lines: true
+			dependencies: [
+				"5837F176723AB096"
+			]
+			tasks: [
+				{
+					id: "6CAE19CC9343E776"
+					type: "checkmark"
+				}
+			]
+			rewards: [
+				{
+					id: "7A09AD789D04D5D2"
+					type: "xp_levels"
+					xp_levels: 2
+				}
+			]
+		}
+		{
+			id: "1DD703E08D9A6368"
+			x: 21.810000000000002d
+			y: 4.02d
+			icon: {
+				id: "ars_nouveau:source_jar"
+				count: 1
+			}
+			hide_dependency_lines: true
+			dependencies: [
+				"5837F176723AB096"
+			]
+			tasks: [
+				{
+					id: "2926BF0AB984151E"
+					type: "checkmark"
+				}
+			]
+			rewards: [
+				{
+					id: "47C13F1B987CDBC9"
+					type: "xp_levels"
+					xp_levels: 2
+				}
+			]
+		}
+		{
+			id: "345E080DC5C72914"
+			x: 21.810000000000002d
+			y: 5.37d
+			icon: {
+				id: "minecraft:furnace"
+				count: 1
+			}
+			hide_dependency_lines: true
+			dependencies: [
+				"5837F176723AB096"
+			]
+			tasks: [
+				{
+					id: "74B802C782120BFC"
+					type: "checkmark"
+				}
+			]
+			rewards: [
+				{
+					id: "2A7D8803E373A0D9"
+					type: "xp_levels"
+					xp_levels: 2
+				}
+			]
+		}
+		{
 			id: "4158C1933288D1D2"
 			x: 0.25d
 			y: 11.67d
@@ -1211,8 +1289,138 @@
 			]
 		}
 		{
+			id: "3FCA85F6064E30AB"
+			x: 9.0d
+			y: 11.67d
+			icon: {
+				id: "ironfurnaces:iron_furnace"
+				count: 1
+			}
+			hide_dependency_lines: true
+			dependencies: [
+				"4158C1933288D1D2"
+			]
+			tasks: [
+				{
+					id: "54895A75EEE158F8"
+					type: "checkmark"
+				}
+			]
+			rewards: [
+				{
+					id: "2A1B7A536CE2BC00"
+					type: "xp_levels"
+					xp_levels: 2
+				}
+			]
+		}
+		{
+			id: "4B7814CD22951FE2"
+			x: 9.0d
+			y: 13.02d
+			icon: {
+				id: "minecraft:amethyst_shard"
+				count: 1
+			}
+			hide_dependency_lines: true
+			dependencies: [
+				"4158C1933288D1D2"
+			]
+			tasks: [
+				{
+					id: "6E5AD33B2CDB6C1C"
+					type: "checkmark"
+				}
+			]
+			rewards: [
+				{
+					id: "2CED34702CF5B337"
+					type: "xp_levels"
+					xp_levels: 2
+				}
+			]
+		}
+		{
+			id: "6790BE9A0C937979"
+			x: 10.350000000000001d
+			y: 10.32d
+			icon: {
+				id: "minecraft:redstone_block"
+				count: 1
+			}
+			hide_dependency_lines: true
+			dependencies: [
+				"4158C1933288D1D2"
+			]
+			tasks: [
+				{
+					id: "76E549D92FD90F66"
+					type: "checkmark"
+				}
+			]
+			rewards: [
+				{
+					id: "4D572A90ED7884BA"
+					type: "xp_levels"
+					xp_levels: 2
+				}
+			]
+		}
+		{
+			id: "4B49BF825D8BF19A"
+			x: 10.350000000000001d
+			y: 11.67d
+			icon: {
+				id: "minecraft:redstone_torch"
+				count: 1
+			}
+			hide_dependency_lines: true
+			dependencies: [
+				"4158C1933288D1D2"
+			]
+			tasks: [
+				{
+					id: "21636FC96537A16C"
+					type: "checkmark"
+				}
+			]
+			rewards: [
+				{
+					id: "4A511C63EC1EE02F"
+					type: "xp_levels"
+					xp_levels: 2
+				}
+			]
+		}
+		{
+			id: "7EA4571151963D5D"
+			x: 10.350000000000001d
+			y: 13.02d
+			icon: {
+				id: "minecraft:mycelium"
+				count: 1
+			}
+			hide_dependency_lines: true
+			dependencies: [
+				"4158C1933288D1D2"
+			]
+			tasks: [
+				{
+					id: "77CD54F6C683E044"
+					type: "checkmark"
+				}
+			]
+			rewards: [
+				{
+					id: "1D80AA9C1ECD7237"
+					type: "xp_levels"
+					xp_levels: 2
+				}
+			]
+		}
+		{
 			id: "724DE8D2EAF33DAA"
-			x: 12.25d
+			x: 13.600000000000001d
 			y: 11.67d
 			icon: {
 				id: "minecraft:amethyst_block"
@@ -1250,7 +1458,7 @@
 		}
 		{
 			id: "4F88EEBC3221D925"
-			x: 14.25d
+			x: 15.600000000000001d
 			y: 10.32d
 			icon: {
 				id: "minecraft:diamond_block"
@@ -1276,7 +1484,7 @@
 		}
 		{
 			id: "3D325AEE94664080"
-			x: 14.25d
+			x: 15.600000000000001d
 			y: 11.67d
 			icon: {
 				id: "minecraft:emerald_block"
@@ -1302,7 +1510,7 @@
 		}
 		{
 			id: "3E49A7C3393DBF2E"
-			x: 14.25d
+			x: 15.600000000000001d
 			y: 13.02d
 			icon: {
 				id: "minecraft:sea_lantern"
@@ -1328,7 +1536,7 @@
 		}
 		{
 			id: "54B3D1FDD28C9434"
-			x: 15.6d
+			x: 16.950000000000003d
 			y: 10.32d
 			icon: {
 				id: "create:encased_fan"
@@ -1354,7 +1562,7 @@
 		}
 		{
 			id: "6416C10E6A9873E6"
-			x: 15.6d
+			x: 16.950000000000003d
 			y: 11.67d
 			icon: {
 				id: "minecraft:daylight_detector"
@@ -1380,7 +1588,7 @@
 		}
 		{
 			id: "38E89E8B696B9BD8"
-			x: 15.6d
+			x: 16.950000000000003d
 			y: 13.02d
 			icon: {
 				id: "minecraft:tnt"
@@ -1406,7 +1614,7 @@
 		}
 		{
 			id: "232CEE39D6999281"
-			x: 16.95d
+			x: 18.3d
 			y: 10.32d
 			icon: {
 				id: "minecraft:furnace"
@@ -1432,7 +1640,7 @@
 		}
 		{
 			id: "14FCB31E83345B2E"
-			x: 16.95d
+			x: 18.3d
 			y: 11.67d
 			icon: {
 				id: "minecraft:redstone_block"
@@ -1650,7 +1858,7 @@
 		{
 			id: "5D14FF6F19CA4100"
 			image: "kronwerke:textures/quests/list_power/s4.png"
-			x: 14.620000000000001d
+			x: 15.970000000000002d
 			y: 8.87d
 			width: 6.24d
 			height: 0.9d

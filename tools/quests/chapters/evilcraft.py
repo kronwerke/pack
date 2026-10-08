@@ -292,7 +292,7 @@ quests = [
           ],
           tasks=[task_item("evilcraft:purifier", 1), task_item("evilcraft:blook", 1)],
           rewards=[reward_item("minecraft:book", 8), reward_xp(8)],
-          deps=["tier1"], icon="evilcraft:purifier"),
+          deps=["tier1"], icon="evilcraft:purifier", section="maschinen"),
 
     quest("bricks", 12.2, 15, "&4Infundiere Dark Blood Bricks",
           subtitle="Die Wände, aus denen kein Geist entkommt.",
@@ -331,6 +331,138 @@ quests = [
                  task_checkmark("Der erste Geist ist gekocht")],
           rewards=[reward_table("s2_rare"), reward_item("evilcraft:dark_power_gem", 16), reward_xp(20)],
           deps=["spirit_furnace", "box"], icon="evilcraft:box_of_eternal_closure", size=2.5, shape="gear"),
+
+    # ---- Neue Quests -------------------------------------------------------------
+    quest("exalted_crafter", 5.2, 1.2, "&5Bau einen Exalted Crafter",
+          subtitle="Die Werkbank für die Hosentasche.",
+          description=[
+              "Oben Gold, &6Werkbank&r, Gold. In der Mitte Crushed Dark Gem, &6Endertruhe&r, Crushed Dark Gem. Unten Gold, Eisen, Gold.",
+              "",
+              "Rechtsklick öffnet ein Crafting-Feld, wo immer du bist, dazu den Inhalt deiner &6Endertruhe&r. Mit einer normalen &6Truhe&r statt der Endertruhe bekommst du den &6Wooden Exalted Crafter&r mit eigenem Inventar. Er lässt sich auch auf eine Taste legen.",
+              "",
+              "&eTipp:&r Schlägt ein Blitz in den Crafter ein, wird er unzerstörbar und verschwindet nicht mehr, wenn er am Boden liegt.",
+          ],
+          tasks=[task_item("evilcraft:exalted_crafter", 1)],
+          rewards=[reward_item("evilcraft:dark_gem_crushed", 4), reward_xp(4)],
+          deps=["origins"], icon="evilcraft:exalted_crafter", optional=True),
+
+    quest("blood_pearl", 2.4, 6.8, "&4Bau eine Blood Pearl of Teleportation",
+          subtitle="Eine Enderperle, die zurückkommt.",
+          description=[
+              "&e5 Enderperlen&r in die Ecken und die Mitte, &e4 Dark Power Gems&r an die Seiten.",
+              "",
+              "Die Perle hat einen eigenen Bluttank, den du im linken Platz des Blood Infuser füllst. Dann wirfst du sie wie eine Enderperle, nur dass sie nicht verbraucht wird. Jeder Wurf kostet etwas Blut.",
+          ],
+          tasks=[task_item("evilcraft:blood_pearl_of_teleportation", 1)],
+          rewards=[reward_item("minecraft:ender_pearl", 4), reward_xp(5)],
+          deps=["power_gem"], icon="evilcraft:blood_pearl_of_teleportation", optional=True),
+
+    quest("blood_chest", 7.2, 6.8, "&4Bau eine Blood Chest",
+          subtitle="Werkzeuge baden in Blut.",
+          description=[
+              "&e8 Bretter&r um einen &6Blood Infusion Core&r.",
+              "",
+              "Leg beschädigte Werkzeuge hinein und füll den Tank mit Blut. Sie reparieren sich langsam, &e5 mB&r pro Haltbarkeitspunkt. Ganz selten fangen sie sich dabei einen &cFluch des Zerbrechens&r ein, den der Purifier wieder entfernt.",
+              "",
+              "Gut für das Vein Sword mit seinen 32 Schlägen.",
+          ],
+          tasks=[task_item("evilcraft:blood_chest", 1)],
+          rewards=[reward_item("evilcraft:bucket_blood", 2), reward_xp(4)],
+          deps=["core"], icon="evilcraft:blood_chest"),
+
+    quest("pendant", 9.8, 6.8, "&4Knüpf ein Invigorating Pendant",
+          subtitle="Schlechte Effekte weg, gegen Blut.",
+          description=[
+              "&6Golden String&r: Faden und Goldnugget, formlos. Dann &e3 Golden Strings&r als Bogen oben, darunter Crushed Dark Gem, &6Blood Infusion Core&r, Crushed Dark Gem.",
+              "",
+              "Im Inventar entfernt der Anhänger jeden schlechten Trankeffekt und kostet dafür Blut aus seinem Tank, schlimmere Effekte mehr. Er löscht sogar Feuer an dir, schwimm aber trotzdem nicht in Lava.",
+          ],
+          tasks=[task_item("evilcraft:invigorating_pendant", 1)],
+          rewards=[reward_item("minecraft:gold_nugget", 9), reward_xp(5)],
+          deps=["core"], icon="evilcraft:invigorating_pendant", optional=True),
+
+    quest("vengeance_pickaxe", 18.4, 4, "&cSchmiede eine Vengeance Pickaxe",
+          subtitle="Glück V, frisch aus der Werkbank.",
+          description=[
+              "Oben Hardened Blood Shard, &6Diamant&r, Hardened Blood Shard. In der Mitte Diamant, &6Dark Stick&r, Diamant. Unten ein Dark Stick.",
+              "",
+              "Sie kommt fertig mit &eGlück V&r und &eVengeance III&r. Dafür hält sie nicht lange, und beim Abbauen können Vengeance Spirits entstehen. Heb sie für Diamanten, Smaragde und andere Glückserze auf, und repariere sie in der Blood Chest.",
+          ],
+          tasks=[task_item("evilcraft:vengeance_pickaxe", 1)],
+          rewards=[reward_item("minecraft:diamond", 2), reward_table("s2_common"), reward_xp(8)],
+          deps=["undead_tree", "shards"], icon="evilcraft:vengeance_pickaxe"),
+
+    quest("kineticator", 18.4, 6.2, "&cBau einen Kineticator",
+          subtitle="Ein Magnet für Items und Erfahrung.",
+          description=[
+              "&6Blood Orb&r: &e4 Glas&r um einen Eisenbarren, dann im Infuser (Stufe 1) mit &e10 Eimern&r Blut füllen.",
+              "Kineticator: oben rechts Blood Infusion Core und Dark Stick, Mitte Gold, Blood Orb, Gold, unten Dark Stick und &6Diamant&r.",
+              "",
+              "Schleichend Rechtsklick schaltet ihn an, Rechtsklick ändert den Radius. Er zieht Items und Erfahrungskugeln zu dir, nahe kosten fast kein Blut, ferne etwas mehr. Umgekehrt gecraftet stößt er sie ab.",
+          ],
+          tasks=[task_item("evilcraft:kineticator", 1)],
+          rewards=[reward_item("evilcraft:dark_stick", 4), reward_xp(8)],
+          deps=["undead_tree", "tier1"], icon="evilcraft:kineticator", optional=True),
+
+    quest("mace", 20.8, 4, "&cSchwing die Mace of Distortion",
+          subtitle="Eine Druckwelle aus Blut.",
+          description=[
+              "&6Inverted Potentia&r: &e4 Dark Gems&r um eine &6Potentia Sphere&r. Wirf sie bei &eGewitter&r auf den Environmental Accumulator eines Dark Temple, dann wird sie zur &6Empowered Inverted Potentia&r.",
+              "Mace: zwei Dark Power Gems, die Empowered Potentia oben rechts, zwei Dark Sticks als Stiel.",
+              "",
+              "Rechtsklick halten baut eine Kugel auf, loslassen stößt alle Wesen darin weg und verletzt sie, solange Blut im Tank ist. Schleichend Rechtsklick wählt die Stärke, höhere kosten mehr Blut.",
+          ],
+          tasks=[task_item("evilcraft:mace_of_distortion", 1)],
+          rewards=[reward_item("evilcraft:dark_power_gem", 4), reward_xp(8)],
+          deps=["undead_tree", "temple"], icon="evilcraft:mace_of_distortion", optional=True),
+
+    quest("necromancer_staff", 20.8, 6.2, "&cBau einen Necromancer Staff",
+          subtitle="Zombies, die für dich kämpfen.",
+          description=[
+              "Oben Dark Power Gem, ein beliebiger &6Kopf&r oder Schädel, Dark Power Gem. Mitte Spike, &6Empowered Inverted Potentia&r, Spike. Unten ein Dark Stick.",
+              "",
+              "Der Stab ruft eine Gruppe Zombies, die für eine Weile das Wesen angreifen, das du ins Visier nimmst. Praktisch gegen Gruppen und als Ablenkung im Bosskampf.",
+          ],
+          tasks=[task_item("evilcraft:necromancer_staff", 1)],
+          rewards=[reward_item("minecraft:rotten_flesh", 16), reward_xp(8)],
+          deps=["mace"], icon="evilcraft:necromancer_staff", optional=True),
+
+    quest("effortless_ring", 9.8, 11.8, "&6Schmied einen Effortless Ring",
+          subtitle="Schneller laufen, höher springen.",
+          description=[
+              "Oben links eine &6Promise of Velocity&r, daneben Gold. Mitte Eisen, &6Promise of Productivity&r, Eisen. Unten Gold.",
+              "",
+              "Liegt der Ring irgendwo im Inventar, läufst du schneller, springst höher und steigst ganze Blöcke hoch. Schleichend unterdrückst du die Stufenhilfe.",
+          ],
+          tasks=[task_item("evilcraft:effortless_ring", 1)],
+          rewards=[reward_item("minecraft:sugar", 16), reward_xp(6)],
+          deps=["tier1"], icon="evilcraft:effortless_ring", optional=True),
+
+    quest("colossal_chest", 12.2, 16.8, "&4Bau die Colossal Blood Chest",
+          subtitle="Reparieren im großen Stil.",
+          description=[
+              "&6Reinforced Undead Planks&r: Undead Planks mit &e1 Eimer&r Blut im Infuser (Stufe 2). Die Truhe selbst: &e4&r davon um einen &6Blood Infusion Core&r.",
+              "",
+              "Bau einen hohlen Würfel von 3 mal 3 mal 3 aus Reinforced Undead Planks und setz die Colossal Blood Chest an eine Stelle in der Wand. Das sind &e25 Planken&r plus die Truhe.",
+              "",
+              "Sie fasst viel mehr, ist schneller, nimmt &6Promises&r an und fängt sich keine Flüche ein. Je mehr Items gleichzeitig darin liegen, desto sparsamer geht sie mit Blut um.",
+          ],
+          tasks=[task_item("evilcraft:colossal_blood_chest", 1)],
+          rewards=[reward_item("evilcraft:bucket_blood", 4), reward_table("s2_uncommon"), reward_xp(10)],
+          deps=["tier2", "undead_tree", "blood_chest"], icon="evilcraft:colossal_blood_chest", optional=True),
+
+    quest("reanimator", 14.6, 16.8, "&5Bau einen Spirit Reanimator",
+          subtitle="Aus Geistern werden Spawn-Eier.",
+          description=[
+              "Bruchstein rundherum, oben ein Eisenbarren, in der Mitte ein &6Blood Infusion Core&r, unten ein &6Eisenblock&r.",
+              "",
+              "Leg eine volle &6Box of Eternal Closure&r, ein &6Ei&r und Blut hinein. Der Reanimator steckt den Geist in das Ei, heraus kommt ein &6Spawn-Ei&r seines Mobs. Der Geist ist danach verbraucht, also nur ein Ei pro Geist.",
+              "",
+              "Manche Mobs weigern sich, ins Ei zu gehen. Deren Geister sind verloren.",
+          ],
+          tasks=[task_item("evilcraft:spirit_reanimator", 1)],
+          rewards=[reward_item("minecraft:egg", 16), reward_xp(8)],
+          deps=["box", "core"], icon="evilcraft:spirit_reanimator", optional=True),
 ]
 
 images = [

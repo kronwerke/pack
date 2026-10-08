@@ -146,6 +146,28 @@ quests = [
           rewards=[reward_item("minecraft:bread", 8)],
           deps=["oven"], icon="cookingforblockheads:toaster", optional=True),
 
+    quest("connector", 15, 0, "&6Führ die Küche um die Ecke",
+          subtitle="Theken müssen sich nicht berühren.",
+          description=[
+              "Der &6Küchenverbinder&r (drei Stein oben, sechs Terrakotta darunter) verbindet Küchenblöcke wie eine Theke, nur ohne Lager. Setz eine Reihe davon zwischen die Teile deiner Küche.",
+              "",
+              "So stehen Kühlschrank, Spüle und Backofen dort, wo sie Platz haben, und der Kochtisch sieht trotzdem alles. Auch eine Küche über zwei Räume geht.",
+          ],
+          tasks=[task_item("cookingforblockheads:connector", 4)],
+          rewards=[reward_item("minecraft:terracotta", 8)],
+          deps=["gadgets"], icon="cookingforblockheads:connector", optional=True),
+
+    quest("cake", 15, 2, "&6Back einen Kuchen am Kochtisch",
+          subtitle="Milch aus dem Glas, sieben Stücke vom Brett.",
+          description=[
+              "Ein &6Kuchen&r braucht drei Milch, und genau die holt der Kochtisch aus dem &6Milchglas&r an der Küche. Zucker, Ei und Weizen nimmt er aus den Theken. Ein Klick, und der Kuchen ist da.",
+              "",
+              "Leg ihn aufs &6Schneidebrett&r von Farmer's Delight und schneid mit dem Messer: &e7 Kuchenstücke&r, die du einzeln mitnehmen kannst.",
+          ],
+          tasks=[task_item("minecraft:cake", 1)],
+          rewards=[reward_item("minecraft:sugar", 16), reward_xp(3)],
+          deps=["cow"], icon="minecraft:cake"),
+
     # ---- Blumentöpfe --------------------------------------------------------------
     quest("pot", 0, 6, "&a&lTöpfere einen Pflanztopf",
           subtitle="Ein Feld in einem Block.",
@@ -200,6 +222,28 @@ quests = [
           tasks=[task_item("minecraft:oak_log", 32)],
           rewards=[reward_item("minecraft:oak_sapling", 8), reward_table("s1_common"), reward_xp(5)],
           deps=["hopper_pot", "soil"], icon="minecraft:oak_sapling", size=1.5),
+
+    quest("auto_counter", 7.5, 5, "&aLass Töpfe die Theken füllen",
+          subtitle="Die Küche, die sich selbst nachfüllt.",
+          description=[
+              "Ein &6Trichter-Pflanztopf&r wirft seine Ernte in das Inventar unter sich, und eine &6Küchentheke&r ist eins. Stell Töpfe mit Weizen, Karotten, Kartoffeln, Kohl und Tomaten direkt auf die Theken deiner Küche.",
+              "",
+              "Ab dann wachsen die Zutaten dort, wo der Kochtisch sie holt. Mit einer &6Konservierungskammer&r im Kühlschrank und einer Kuh im Glas fehlt dir beim Kochen kaum noch etwas.",
+          ],
+          tasks=[task_checkmark("Die Theken füllen sich")],
+          rewards=[reward_item("minecraft:hopper", 2), reward_xp(4)],
+          deps=["hopper_pot"], icon="cookingforblockheads:counter"),
+
+    quest("pot_sweets", 7.5, 7, "&aZieh Beeren und Zuckerrohr im Topf",
+          subtitle="Zucker und Beeren für die besten Gerichte.",
+          description=[
+              "&6Zuckerrohr&r wächst im Pflanztopf auf &6Sand&r, &6Süßbeeren&r und &6Leuchtbeeren&r auf Erde. Alle drei brauchst du ständig: Zucker für Kuchen und Kakao, Süßbeeren für den Honigglasierten Schinken und den Lachs, Leuchtbeeren für den Gleaming Salad.",
+              "",
+              "Je ein Trichter-Topf über einer Theke, und die Zutaten für die Spitzengerichte rechts kommen von allein.",
+          ],
+          tasks=[task_item("minecraft:sugar_cane", 32), task_item("minecraft:sweet_berries", 32)],
+          rewards=[reward_item("minecraft:sand", 8), reward_xp(3)],
+          deps=["soil"], icon="minecraft:sweet_berries"),
 
     # ---- Productive Trees -------------------------------------------------------------
     quest("sawmill", 0, 11, "&6&lBau ein Sägewerk",
@@ -281,7 +325,7 @@ quests = [
               "",
               "&eZum Vergleich:&r Gemüsesuppe, Rindfleischeintopf und Gebratener Reis bringen 12 Hunger und 19,2 Sättigung, der Hamburger 11 und 17,6, Steak 8 und 12,8, die Goldene Karotte 6 und 14,4. Der Quellbeerenkuchen von Ars Nouveau liegt bei 9 und 16,2, der Honigapfel von Create bei 8 und 12,8.",
               "",
-              "Die Quests daneben sind eine Checkliste: je vier Portionen der sieben Spitzengerichte, die nicht schon im Kapitel Essen stehen. Der Kochtisch mit vollen Schränken macht das zu einem Klick pro Gericht.",
+              "Die Quests daneben sind eine Checkliste: je vier Portionen der elf Spitzengerichte, die nicht schon im Kapitel Essen stehen. Der Kochtisch mit vollen Schränken macht das zu einem Klick pro Gericht.",
           ],
           tasks=[task_item("farmersdelight:stuffed_pumpkin_block", 1)],
           rewards=[reward_table("s1_rare"), reward_item("minecraft:bowl", 16), reward_xp(15)],
@@ -312,6 +356,22 @@ quests = [
     meal("m_salmon", 16, 7.5, "&6Richte gegrillten Lachs an", "farmersdelight:grilled_salmon",
          "Werkbank, formlos: &6Gebratener Lachs&r, &6Süßbeeren&r, &6Weißkohl&r, &6Zwiebel&r und eine Schüssel.",
          reward=reward_item("minecraft:sweet_berries", 8)),
+
+    meal("m_shepherd", 18.5, 4.5, "&6Tisch den Hirtenkuchen auf", "farmersdelight:shepherds_pie",
+         "Werkbank, formlos: zwei &6Ofenkartoffeln&r, eine &6Milchflasche&r, drei &6gebratenes Hammelfleisch&r oder Koteletts, zwei &6Zwiebeln&r und eine &6Schüssel&r. Das ergibt den Festmahl-Block, mit einer Schüssel holst du dir Portionen.",
+         reward=reward_item("minecraft:mutton", 8)),
+
+    meal("m_ham", 18.5, 6, "&6Tisch den Honigglasierten Schinken auf", "farmersdelight:honey_glazed_ham",
+         "Werkbank, formlos: ein &6Räucherschinken&r, eine &6Honigflasche&r, vier &6Süßbeeren&r, zwei &6Gekochter Reis&r und eine &6Schüssel&r. Den Schinken jagst du mit dem Messer und räucherst ihn im Räucherofen oder auf dem Lagerfeuer.",
+         reward=reward_item("minecraft:honey_bottle", 2)),
+
+    meal("m_gleaming", 18.5, 7.5, "&6Tisch den Gleaming Salad auf", "farmersdelight:gleaming_salad",
+         "Werkbank, formlos: zwei &6Leuchtbeeren&r, eine &6Honigflasche&r, eine &6Tomate&r, eine &6Goldene Karotte&r, eine &6Rote Bete&r, zwei &6Weißkohl&r und eine &6Schüssel&r. Ein Festmahl-Block wie die anderen.",
+         reward=reward_item("minecraft:glow_berries", 8)),
+
+    meal("m_rabbit", 18.5, 9, "&6Koch Kaninchenragout", "minecraft:rabbit_stew",
+         "Werkbank: &6Gebratenes Kaninchen&r, &6Ofenkartoffel&r, &6Karotte&r, ein &6Pilz&r und eine &6Schüssel&r. Farmer's Delight wertet das Vanilla-Gericht auf, und es stapelt sich bis 16.",
+         reward=reward_item("minecraft:carrot", 8)),
 ]
 
 images = [

@@ -317,7 +317,103 @@ quests = [
           tasks=[task_item("mekanism:elite_universal_cable", 16)],
           rewards=[reward_item("mekanism:alloy_reinforced", 8), reward_xp(5)],
           deps=["quarry"], icon="mekanism:elite_universal_cable"),
+
+    # ---- Neue Quests ----------------------------------------------------------------
+    quest("space_chamber", 2.5, 4, "&5Zieh ein Gebäude um",
+          subtitle="Raumkammern und die Raumkarte.",
+          description=[
+              "&6Raumkammer:&r ein Machine Frame, Glas an den Seiten, blauer Farbstoff in den Ecken. Mit zwei Enderperlen und zwei Redstone-Fackeln wird eine davon zum &6Raumkammer-Controller&r. &6Raumkarte:&r Ziegel oben und unten, Redstone, Eisen, Redstone in der Mitte.",
+              "",
+              "Setz die acht Ecken eines Quaders: sieben Raumkammern und einen Controller. Schleich-Rechtsklick mit der Karte auf den Controller merkt sich die Kammer, ein Rechtsklick in die Luft zeigt, was drin steht. Bis &e128&r Blöcke pro Seite.",
+              "",
+              "Steckt die Karte im Builder, kopiert oder verschiebt er den Inhalt an seinen Zielbereich. So ziehst du eine Werkstatt um, ohne einen Block von Hand abzubauen.",
+          ],
+          tasks=[task_item("rftoolsbuilder:space_chamber", 7), task_item("rftoolsbuilder:space_chamber_controller", 1),
+                 task_item("rftoolsbuilder:space_chamber_card", 1)],
+          rewards=[reward_item("minecraft:ender_pearl", 4), reward_xp(10)],
+          deps=["shape_card"], icon="rftoolsbuilder:space_chamber_controller", optional=True),
+
+    quest("composer", 0, 4, "&7Bau einen Composer",
+          subtitle="Formen zusammensetzen.",
+          description=[
+              "Ein &6Machine Frame&r in die Mitte, &6Ziegel&r an die Seiten, &6Papier&r in die Ecken.",
+              "",
+              "Er macht aus mehreren Formkarten eine. Jede Form kannst du hinzufügen, abziehen oder schneiden, drehen und spiegeln. Eine Kugel minus eine kleinere Kugel gibt eine Kuppel, ein Quader minus einen Zylinder einen runden Schacht.",
+          ],
+          tasks=[task_item("rftoolsbuilder:composer", 1)],
+          rewards=[reward_item("minecraft:paper", 16), reward_xp(5)],
+          deps=["shape_card"], icon="rftoolsbuilder:composer", optional=True),
+
+    quest("liquid_card", 10, 4.5, "&9Bau eine Flüssigkeitskarte",
+          subtitle="Der Builder füllt auch.",
+          description=[
+              "Eine &6Formkarte&r in die Mitte, oben ein &6Wassereimer&r, unten ein &6Lavaeimer&r, &6Eisen&r links und rechts, &6Redstone&r in die Ecken.",
+              "",
+              "Damit setzt der Builder Flüssigkeit in die Form, statt sie abzusaugen. Die Flüssigkeit kommt aus einem Tank am Builder. So füllst du ein Becken oder einen Graben auf einen Schlag.",
+          ],
+          tasks=[task_item("rftoolsbuilder:shape_card_liquid", 1)],
+          rewards=[reward_item("minecraft:water_bucket", 1), reward_xp(5)],
+          deps=["pump"], icon="rftoolsbuilder:shape_card_liquid", optional=True),
+
+    quest("adv_pump", 2.5, 10, "&9Bau eine Advanced Pump",
+          subtitle="Ein See verschwindet.",
+          description=[
+              "Eisen in die Ecken, oben ein &6Eimer&r, in der Mitte &6Redstone, Diamant, Redstone&r, unten ein &6Marker&r zwischen zwei Eisen.",
+              "",
+              "Sie steht für sich allein: über eine Flüssigkeit gesetzt, pumpt sie den ganzen Bereich leer. Mit &eDelete On&r wird die Flüssigkeit vernichtet, gut gegen Grundwasser im Steinbruchloch. Mit &eDelete Off&r landet sie in ihrem Tank, und du pumpst Lava ab.",
+          ],
+          tasks=[task_item("quarryplus:adv_pump", 1)],
+          rewards=[reward_item("minecraft:bucket", 4), reward_xp(6)],
+          deps=["quarry"], icon="quarryplus:adv_pump", optional=True),
+
+    quest("flexible_marker", 2.5, 11, "&9Bau einen Flexible Marker",
+          subtitle="Ein Marker für große Flächen.",
+          description=[
+              "Drei &6grüne Farbstoffe&r über einem &6Chunk Marker&r.",
+              "",
+              "Im Fenster stellst du den Bereich in jede Richtung ein, bis &e256&r Blöcke weit, ohne vier Marker zu setzen. Auch den Platz der Maschine legst du dort fest. Für den Chunk Destroyer ist er der bequemste Weg.",
+          ],
+          tasks=[task_item("quarryplus:flexible_marker", 1)],
+          rewards=[reward_item("minecraft:green_dye", 8), reward_xp(5)],
+          deps=["chunk_marker"], icon="quarryplus:flexible_marker", optional=True),
+
+    quest("placer", 12.5, 10, "&7Bau einen Placer Plus",
+          subtitle="Setzt Blöcke auf Redstone.",
+          description=[
+              "Gold, Spender, Gold oben, &6bemooster Bruchstein&r, Redstone, bemooster Bruchstein in der Mitte, bemooster Bruchstein, Eisen und ein &6Marker&r unten.",
+              "",
+              "Er setzt Blöcke aus seinem Inventar vor sich, gesteuert über Redstone. Rechtsklick mit einer &6Redstone-Fackel&r wechselt, wie er auf das Signal reagiert. Zusammen mit einem Steinbruch oder Builder automatisierst du so Bauarbeiten.",
+          ],
+          tasks=[task_item("quarryplus:placer_plus", 1)],
+          rewards=[reward_item("minecraft:dispenser", 2), reward_xp(5)],
+          deps=["quarry"], icon="quarryplus:placer_plus", optional=True),
+
+    quest("ore_stock", 5, 17, "&6&lFüll das Erzlager",
+          subtitle="Ein Steinbruch zahlt sich aus.",
+          description=[
+              "Lass deinen Steinbruch eine Weile laufen und sammle, was er bringt. Mit Void Module und einem Speicherbus am ME-Netz landet nur das Erz im Lager.",
+              "",
+              "Roherz vervielfachst du am besten in Mekanism, statt es nur zu schmelzen. Wie, steht in den Mekanism-Kapiteln.",
+              "",
+              "&eKronwerke:&r Was im Obelisken zählt, sind Barren. Ein Steinbruch in einer Eisenader füttert die Stahlstraße für lange Zeit.",
+          ],
+          tasks=[task_item("minecraft:raw_iron", 512), task_item("minecraft:raw_copper", 256), task_item("minecraft:raw_gold", 128)],
+          rewards=[reward_table("s4_uncommon"), reward_xp(15)],
+          deps=["power", "chunkload"], icon="minecraft:raw_iron_block"),
+    quest("sample_drill", 5, 14.5, "&7Kartier deine Erzadern",
+          subtitle="Probebohrer und Erzadern-Atlas.",
+          description=[
+              "&6Erzadern-Atlas:&r eine Truhe und ein Amethyst oben, eine Karte und ein Buch und Feder unten. &6Probebohrer:&r im Mechanischen Handwerk aus Messingblechen, einer Elektronenröhre, einem Präzisionsgetriebe, einem Messinggehäuse, Robusten Blechen und einem Mechanischen Bohrer.",
+              "",
+              "Stell den Probebohrer über eine Ader, setz einen &6Kupfer-Rückentank&r mit Luft obendrauf und klick ihn an. Ist er fertig, klickst du ihn mit dem Atlas an. Ein Klick mit dem Atlas auf eine laufende Bohrmaschine geht auch.",
+              "",
+              "Der Atlas merkt sich Ort, Art und Größe jeder Ader. Damit filterst du den Erzadern-Finder auf genau die Ader, die du suchst.",
+          ],
+          tasks=[task_item("createoreexcavation:sample_drill", 1), task_item("createoreexcavation:vein_atlas", 1)],
+          rewards=[reward_item("create:brass_ingot", 8), reward_xp(6)],
+          deps=["coe"], icon="createoreexcavation:vein_atlas", optional=True),
 ]
+
 
 images = [
     head("title", "Steinbrüche", 0, -2.4, height=1.5, kind="title", colour="brass"),

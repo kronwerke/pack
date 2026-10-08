@@ -80,6 +80,19 @@ quests = [
           rewards=[reward_item("minecraft:flint", 16), reward_xp(3)],
           deps=["cobble_drill"], icon="minecraft:gravel"),
 
+    quest("alloy_line", 11.5, R["stone"], "&7Bau eine Legierungsstraße",
+          subtitle="Aus Bruchstein und Lava wird Andesitlegierung, ganz ohne Mine.",
+          description=[
+              "Die Kette: Bruchstein in den &6Mahlstein&r, der Kies vor einen &6Lüfter&r mit Wasser. Die Kieswäsche gibt mit &e25 Prozent&r Feuerstein und mit &e12,5 Prozent&r einen Eisenklumpen.",
+              "",
+              "Eine &6Mechanische Presse&r über einem Becken mit Lava verdichtet 2 &6Feuerstein&r, 1 &6Kies&r und &b100 mB Lava&r zu einem &6Andesit&r. Ein &6Mechanischer Mixer&r über einem zweiten Becken macht aus 1 Andesit und 1 Eisenklumpen &ezwei Andesitlegierungen&r.",
+              "",
+              "&eKronwerke:&r Die Legierung per Band in deinen Zubringer am Obelisken, und die Technik-Säule füllt sich, solange der Generator läuft. Presse und Mixer stehen im Kapitel &6Create&r.",
+          ],
+          tasks=[task_item("create:andesite_alloy", 128)],
+          rewards=[reward_item("minecraft:lava_bucket", 1), reward_table("s1_uncommon")],
+          deps=["gravel_sand"], icon="create:andesite_alloy"),
+
     # ---- Holz ------------------------------------------------------------------
     quest("wood_pots", 4, R["wood"], "&6Stell Baumtöpfe auf",
           subtitle="Ein Baum in einem Block, alle zwei Minuten Stämme.",
@@ -122,6 +135,19 @@ quests = [
           rewards=[reward_item("minecraft:oak_log", 32), reward_table("s1_uncommon")],
           deps=["wood_pots"], icon="create:mechanical_saw"),
 
+    quest("wood_charcoal", 11.5, R["wood"], "&6Brenn Holzkohle mit dem Lüfter",
+          subtitle="Stämme durch heiße Luft, Kohle für die Endoflammen.",
+          description=[
+              "Ein &6Ummantelter Lüfter&r, der durch &cLava&r bläst, schmilzt alles, was vor ihm auf dem Band liegt oder durch den Luftstrom fällt. Stämme aus den Baumtöpfen werden so zu &6Holzkohle&r, ohne Ofen und ohne Brennstoff.",
+              "",
+              "Ein Band von der Topftruhe am Lüfter vorbei in eine zweite Truhe, fertig. Die Lava verbraucht sich dabei nicht.",
+              "",
+              "Holzkohle brauchst du für Endoflammen, Fackeln und den Ofen. Mit Feuer statt Lava räuchert der Lüfter stattdessen Essen.",
+          ],
+          tasks=[task_item("minecraft:charcoal", 64)],
+          rewards=[reward_item("minecraft:oak_log", 16), reward_xp(3)],
+          deps=["wood_pots"], icon="create:encased_fan"),
+
     # ---- Felder --------------------------------------------------------------
     quest("crops_pots", 4, R["crops"], "&aPflanze Weizen in Töpfe",
           subtitle="Die kleinste Farm, die es gibt.",
@@ -161,6 +187,17 @@ quests = [
           tasks=[task_item("mysticalagriculture:inferium_essence", 64)],
           rewards=[reward_item("mysticalagriculture:inferium_essence", 16), reward_xp(5)],
           deps=["crops_pots"], icon="mysticalagriculture:inferium_growth_accelerator"),
+
+    quest("crops_compost", 11.5, R["crops"], "&aKompostier, was übrig bleibt",
+          subtitle="Samen und Reste werden Knochenmehl.",
+          description=[
+              "Ein &6Komposter&r frisst Samen, Blätter, Setzlinge und Pflanzenreste. Ist er voll, gibt er ein &6Knochenmehl&r. Ein Trichter oben füllt nach, ein Trichter unten holt das Knochenmehl heraus.",
+              "",
+              "Leite die überzähligen Samen aus deinen Töpfen und der Erntemaschine hinein. Knochenmehl brauchst du für Setzlinge, Blumen und das &aRitual des Waldes&r von Nature's Aura.",
+          ],
+          tasks=[task_item("minecraft:bone_meal", 32)],
+          rewards=[reward_item("minecraft:composter", 1), reward_xp(3)],
+          deps=["crops_pots"], icon="minecraft:composter"),
 
     # ---- Tiere ---------------------------------------------------------------
     quest("animals_trough", 4, R["animals"], "&6Stell einen Futtertrog auf",
@@ -202,6 +239,28 @@ quests = [
           rewards=[reward_item("minecraft:egg", 16), reward_xp(3)],
           deps=["animals_trough"], icon="cookingforblockheads:cow_jar"),
 
+    quest("animals_wool", 11.5, R["animals"], "&6Scher Schafe mit dem Werfer",
+          subtitle="Wolle, ohne die Schere in die Hand zu nehmen.",
+          description=[
+              "Ein &6Werfer&r mit einer &6Schere&r darin, auf ein Schaf gerichtet: Jedes Redstone-Signal schert das Schaf vor ihm. Ein kleiner Taktgeber oder ein Knopf genügt.",
+              "",
+              "Das Schaf steht auf &6Gras&r, frisst und bekommt neue Wolle. Ein Trichter unter dem Boden sammelt sie ein. Gefärbte Schafe geben gefärbte Wolle, für Betten, Schlafsäcke und Teppiche.",
+          ],
+          tasks=[task_item("minecraft:white_wool", 32)],
+          rewards=[reward_item("minecraft:shears", 1), reward_xp(3)],
+          deps=["animals_trough"], icon="minecraft:dispenser"),
+
+    quest("animals_vitalic", 14, R["animals"] + 1.5, "&dLass das Gehege Quelle geben",
+          subtitle="Schreckdorn und Vitalic-Quelllink arbeiten zusammen.",
+          description=[
+              "Ein &6Vitalic-Quelllink&r erzeugt Quelle, wenn in der Nähe Tiere gezüchtet werden oder Wesen sterben. Neben dem Gehege mit Futtertrog und Schreckdorn passiert beides ständig.",
+              "",
+              "Stell ein &6Quellglas&r in höchstens &e5 Blöcken&r dazu, und die Tierfarm liefert nebenbei Quelle für deine Imbuement-Kammer. Den Link findest du im Kapitel &dArs Nouveau&r.",
+          ],
+          tasks=[task_item("ars_nouveau:vitalic_sourcelink", 1)],
+          rewards=[reward_item("minecraft:glistering_melon_slice", 2), reward_xp(4)],
+          deps=["animals_thorn"], icon="ars_nouveau:vitalic_sourcelink", optional=True),
+
     # ---- Monster -------------------------------------------------------------
     quest("mobs_dark", 4, R["mobs"], "&cBau einen dunklen Raum",
           subtitle="Monster, die von selbst in den Schacht laufen.",
@@ -241,6 +300,19 @@ quests = [
           tasks=[task_item("botania:bellethorne", 1)],
           rewards=[reward_table("s1_common"), reward_xp(5)],
           deps=["mobs_dark"], icon="botania:bellethorne"),
+
+    quest("mobs_golem", 11.5, R["mobs"], "&cBau eine Eisengolemfarm",
+          subtitle="Eisen von Dorfbewohnern, die sich fürchten.",
+          description=[
+              "Drei &6Dorfbewohner&r mit Betten in einem kleinen Raum, daneben ein &6Zombie&r, den sie sehen, aber nicht erreichen können. Die Dorfbewohner bekommen Angst und rufen einen &6Eisengolem&r zu Hilfe.",
+              "",
+              "Der Golem erscheint in der Nähe. Leite ihn mit Wasser auf eine Stelle, an der ihn Lava trifft. Ein Golem lässt &e3 bis 5 Eisenbarren&r fallen, ein Trichter darunter sammelt sie.",
+              "",
+              "Eisen in Mengen heißt Klumpen für die Legierung, Eimer und Werkzeug. &cAchtung:&r Den Zombie schützt du vor der Sonne, sonst verbrennt er am ersten Morgen.",
+          ],
+          tasks=[task_item("minecraft:iron_ingot", 64)],
+          rewards=[reward_item("minecraft:white_bed", 3), reward_table("s1_uncommon")],
+          deps=["mobs_dark"], icon="minecraft:iron_ingot"),
 
     # ---- Wasser und Lava -----------------------------------------------------
     quest("water", 4, R["fluids"], "&bPump Wasser ohne Ende",
@@ -282,6 +354,19 @@ quests = [
           rewards=[reward_table("s1_uncommon"), reward_xp(5)],
           deps=["lava"], icon="mysticalagriculture:fire_seeds"),
 
+    quest("lava_dripstone", 11.5, R["fluids"], "&cTropf Lava in einen Kessel",
+          subtitle="Lava aus dem Nichts, langsam, aber für immer.",
+          description=[
+              "Ein &cLava-Quellblock&r auf einem Block, darunter ein hängender &6Spitzer Tropfstein&r, darunter ein &6Kessel&r. Die Lava tropft durch den Stein und füllt den Kessel nach und nach, der Quellblock bleibt.",
+              "",
+              "Spitzen Tropfstein findest du in Tropfsteinhöhlen. Mehrere Tropfsteine nebeneinander, jeder über einem eigenen Kessel, und ein &6Abfluss&r oder ein Eimer holt die Lava ab.",
+              "",
+              "Langsamer als die Feuersamen, aber ohne Feld und Essenz. Für einen Bruchsteingenerator reicht ein einziger Lavablock ohnehin, der verbraucht sich nicht.",
+          ],
+          tasks=[task_item("minecraft:pointed_dripstone", 4), task_item("minecraft:cauldron", 2)],
+          rewards=[reward_item("minecraft:bucket", 2), reward_xp(4)],
+          deps=["lava"], icon="minecraft:pointed_dripstone"),
+
     # ---- Magie ---------------------------------------------------------------
     quest("source_berries", 4, R["magic"], "&dPflanze Quellbeeren",
           subtitle="Ein Beet, das Quelle macht, während es wächst.",
@@ -308,6 +393,19 @@ quests = [
           tasks=[task_item("botania:endoflame", 4), task_item("botania:open_crate", 1)],
           rewards=[reward_item("minecraft:charcoal", 32), reward_table("s1_common")],
           deps=["source_berries"], icon="botania:endoflame"),
+
+    quest("gem_plant", 9, R["magic"], "&dBau eine Juwelenanlage",
+          subtitle="Mehrere Kammern um ein Glas, Trichter rein und raus.",
+          description=[
+              "Ein &6Quellglas&r in der Mitte, darum herum bis zu vier &6Imbuement-Kammern&r, jede höchstens &e2 Blöcke&r vom Glas. Über jeder Kammer ein Trichter mit &6Amethystsplittern&r oder &6Lapislazuli&r, darunter ein Trichter in eine gemeinsame Truhe.",
+              "",
+              "Jedes Juwel kostet &d500 Quelle&r. Gespeist wird das Glas von deinen Quellbeeren, Quelllinks und allem, was du sonst an Quelle hast.",
+              "",
+              "&eKronwerke:&r Die Truhe ist dein Zubringer, oder ein Band bringt die Juwelen dorthin. Jedes zählt &e4 Punkte&r für die Magie-Säule.",
+          ],
+          tasks=[task_item("ars_nouveau:imbuement_chamber", 4), task_item("ars_nouveau:source_gem", 64)],
+          rewards=[reward_item("minecraft:amethyst_shard", 32), reward_table("s1_uncommon")],
+          deps=["source_berries"], icon="ars_nouveau:imbuement_chamber"),
 
     # ---- Stufe 2: die Aufruestungen ------------------------------------------
     quest("s2_sand", S2, R["stone"], "&6Stufe 2: Kies zu Sand",

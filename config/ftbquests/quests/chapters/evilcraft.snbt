@@ -91,7 +91,7 @@
 		{
 			id: "79A371DEA1A0E807"
 			x: 4.0d
-			y: 5.76d
+			y: 7.26d
 			icon: {
 				id: "evilcraft:dark_tank"
 				count: 1
@@ -284,7 +284,7 @@
 		{
 			id: "5FD9A1897C1CA6E1"
 			x: 0.0d
-			y: 9.86d
+			y: 11.110000000000001d
 			icon: {
 				id: "evilcraft:blood_extractor"
 				count: 1
@@ -324,7 +324,7 @@
 		{
 			id: "4879A02A4A12D9EC"
 			x: 2.0d
-			y: 9.86d
+			y: 11.110000000000001d
 			icon: {
 				id: "evilcraft:dark_power_gem"
 				count: 1
@@ -363,7 +363,7 @@
 		{
 			id: "37CC24DE838AEDF0"
 			x: 4.0d
-			y: 9.86d
+			y: 11.110000000000001d
 			icon: {
 				id: "evilcraft:hardened_blood_shard"
 				count: 1
@@ -393,7 +393,7 @@
 		{
 			id: "6380FEA350AEE3A4"
 			x: 6.0d
-			y: 9.86d
+			y: 11.110000000000001d
 			icon: {
 				id: "evilcraft:blood_infusion_core"
 				count: 1
@@ -434,7 +434,7 @@
 		{
 			id: "12DF6DFB3E28091F"
 			x: 8.4d
-			y: 9.86d
+			y: 13.110000000000001d
 			icon: {
 				id: "evilcraft:blood_infuser"
 				count: 1
@@ -480,12 +480,13 @@
 		{
 			id: "5A75B4AB0897E764"
 			x: 11.9d
-			y: 9.36d
+			y: 10.860000000000001d
 			icon: {
 				id: "evilcraft:dark_stick"
 				count: 1
 			}
 			hide_dependency_lines: true
+			hide_dependent_lines: true
 			dependencies: [
 				"12DF6DFB3E28091F"
 			]
@@ -520,12 +521,13 @@
 		{
 			id: "2183016795B877E2"
 			x: 13.9d
-			y: 9.36d
+			y: 12.360000000000001d
 			icon: {
 				id: "evilcraft:vein_sword"
 				count: 1
 			}
 			optional: true
+			hide_dependency_lines: true
 			dependencies: [
 				"5A75B4AB0897E764"
 			]
@@ -560,12 +562,13 @@
 		{
 			id: "6ABEC2189EAC7037"
 			x: 13.9d
-			y: 10.86d
+			y: 15.060000000000002d
 			icon: {
 				id: "evilcraft:broom"
 				count: 1
 			}
 			optional: true
+			hide_dependency_lines: true
 			dependencies: [
 				"5A75B4AB0897E764"
 			]
@@ -596,7 +599,7 @@
 		{
 			id: "15C097739210059A"
 			x: 0.0d
-			y: 14.709999999999999d
+			y: 18.96d
 			icon: {
 				id: "evilcraft:spiked_plate"
 				count: 1
@@ -636,7 +639,7 @@
 		{
 			id: "268E0DBB1CEA34A1"
 			x: 2.0d
-			y: 14.709999999999999d
+			y: 18.96d
 			icon: {
 				id: "evilcraft:sanguinary_pedestal_0"
 				count: 1
@@ -675,7 +678,7 @@
 		{
 			id: "1058D6E92DC60F55"
 			x: 5.29d
-			y: 14.459999999999999d
+			y: 18.71d
 			icon: {
 				id: "evilcraft:promise_tier_1"
 				count: 1
@@ -720,7 +723,7 @@
 		{
 			id: "7A7B18D3CF6E29F4"
 			x: 7.29d
-			y: 14.459999999999999d
+			y: 18.71d
 			icon: {
 				id: "evilcraft:promise_tier_2"
 				count: 1
@@ -764,7 +767,7 @@
 		{
 			id: "12EF3D2245AD78FA"
 			x: 9.29d
-			y: 14.459999999999999d
+			y: 18.71d
 			icon: {
 				id: "evilcraft:promise_tier_3"
 				count: 1
@@ -808,12 +811,13 @@
 		}
 		{
 			id: "2A68BAE49AD29E1C"
-			x: 7.29d
-			y: 15.959999999999999d
+			x: 12.29d
+			y: 21.810000000000002d
 			icon: {
 				id: "evilcraft:purifier"
 				count: 1
 			}
+			hide_dependency_lines: true
 			dependencies: [
 				"1058D6E92DC60F55"
 			]
@@ -856,8 +860,8 @@
 		}
 		{
 			id: "31B33A7C521EA105"
-			x: 0.0d
-			y: 20.309999999999995d
+			x: 12.29d
+			y: 19.46d
 			icon: {
 				id: "evilcraft:dark_blood_brick"
 				count: 1
@@ -896,8 +900,8 @@
 		}
 		{
 			id: "7145901D24453A3E"
-			x: 2.0d
-			y: 20.309999999999995d
+			x: 14.29d
+			y: 19.46d
 			icon: {
 				id: "evilcraft:spirit_furnace"
 				count: 1
@@ -942,8 +946,8 @@
 		}
 		{
 			id: "7748B438A49E28C1"
-			x: 4.8d
-			y: 20.309999999999995d
+			x: 17.09d
+			y: 19.46d
 			icon: {
 				id: "evilcraft:box_of_eternal_closure"
 				count: 1
@@ -989,6 +993,466 @@
 				}
 			]
 		}
+		{
+			id: "2B19FD9C9EE0F08B"
+			x: 6.0d
+			y: 5.66d
+			icon: {
+				id: "evilcraft:exalted_crafter"
+				count: 1
+			}
+			optional: true
+			dependencies: [
+				"3B89F93F5E085B52"
+			]
+			tasks: [
+				{
+					id: "250487616C8695B1"
+					type: "item"
+					item: {
+						id: "evilcraft:exalted_crafter"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "3ED4036082747705"
+					type: "item"
+					item: {
+						id: "evilcraft:dark_gem_crushed"
+						count: 1
+					}
+					count: 4
+				}
+				{
+					id: "1B9660F8851CB64F"
+					type: "xp_levels"
+					xp_levels: 4
+				}
+			]
+		}
+		{
+			id: "4E13629347C7CA13"
+			x: 4.0d
+			y: 12.610000000000001d
+			icon: {
+				id: "evilcraft:blood_pearl_of_teleportation"
+				count: 1
+			}
+			optional: true
+			dependencies: [
+				"4879A02A4A12D9EC"
+			]
+			tasks: [
+				{
+					id: "1D24553031743310"
+					type: "item"
+					item: {
+						id: "evilcraft:blood_pearl_of_teleportation"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "7761B555D54200A3"
+					type: "item"
+					item: {
+						id: "minecraft:ender_pearl"
+						count: 1
+					}
+					count: 4
+				}
+				{
+					id: "265D71B7785B5F47"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+		}
+		{
+			id: "42DD8B765575CB93"
+			x: 8.4d
+			y: 11.110000000000001d
+			icon: {
+				id: "evilcraft:blood_chest"
+				count: 1
+			}
+			dependencies: [
+				"6380FEA350AEE3A4"
+			]
+			tasks: [
+				{
+					id: "5BEC3DE71B660CE1"
+					type: "item"
+					item: {
+						id: "evilcraft:blood_chest"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "4D3F7136484D63A0"
+					type: "item"
+					item: {
+						id: "evilcraft:bucket_blood"
+						count: 1
+					}
+					count: 2
+				}
+				{
+					id: "1380CD1C7D1616A7"
+					type: "xp_levels"
+					xp_levels: 4
+				}
+			]
+		}
+		{
+			id: "6CF62E1D4BB29AC8"
+			x: 8.4d
+			y: 15.110000000000001d
+			icon: {
+				id: "evilcraft:invigorating_pendant"
+				count: 1
+			}
+			optional: true
+			hide_dependency_lines: true
+			dependencies: [
+				"6380FEA350AEE3A4"
+			]
+			tasks: [
+				{
+					id: "7C234EB4C0B375A7"
+					type: "item"
+					item: {
+						id: "evilcraft:invigorating_pendant"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "207A928D679E7B8F"
+					type: "item"
+					item: {
+						id: "minecraft:gold_nugget"
+						count: 1
+					}
+					count: 9
+				}
+				{
+					id: "5D6EA4EAF98C0E37"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+		}
+		{
+			id: "3B432216DF00AFF9"
+			x: 13.9d
+			y: 13.71d
+			icon: {
+				id: "evilcraft:vengeance_pickaxe"
+				count: 1
+			}
+			hide_dependency_lines: true
+			dependencies: [
+				"5A75B4AB0897E764"
+				"37CC24DE838AEDF0"
+			]
+			tasks: [
+				{
+					id: "574B3EDFD31D98C7"
+					type: "item"
+					item: {
+						id: "evilcraft:vengeance_pickaxe"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "465A6C7F740C27E5"
+					type: "item"
+					item: {
+						id: "minecraft:diamond"
+						count: 1
+					}
+					count: 2
+				}
+				{
+					id: "1E4C40889C1AB58A"
+					type: "loot"
+					table_id: 2502423014058638837L
+				}
+				{
+					id: "23745B899CD29D24"
+					type: "xp_levels"
+					xp_levels: 8
+				}
+			]
+		}
+		{
+			id: "1DF41A1FA0AF60BA"
+			x: 15.25d
+			y: 12.360000000000001d
+			icon: {
+				id: "evilcraft:kineticator"
+				count: 1
+			}
+			optional: true
+			hide_dependency_lines: true
+			dependencies: [
+				"5A75B4AB0897E764"
+				"1058D6E92DC60F55"
+			]
+			tasks: [
+				{
+					id: "23AB949364D90A8D"
+					type: "item"
+					item: {
+						id: "evilcraft:kineticator"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "769D210088DB23B7"
+					type: "item"
+					item: {
+						id: "evilcraft:dark_stick"
+						count: 1
+					}
+					count: 4
+				}
+				{
+					id: "1FB69BD1ABF816F7"
+					type: "xp_levels"
+					xp_levels: 8
+				}
+			]
+		}
+		{
+			id: "375C42F435FB21A6"
+			x: 13.9d
+			y: 10.860000000000001d
+			icon: {
+				id: "evilcraft:mace_of_distortion"
+				count: 1
+			}
+			optional: true
+			hide_dependency_lines: true
+			dependencies: [
+				"5A75B4AB0897E764"
+				"10D8416A9B416603"
+			]
+			tasks: [
+				{
+					id: "7959FA59F50BF46C"
+					type: "item"
+					item: {
+						id: "evilcraft:mace_of_distortion"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "5DCF3746A037EF19"
+					type: "item"
+					item: {
+						id: "evilcraft:dark_power_gem"
+						count: 1
+					}
+					count: 4
+				}
+				{
+					id: "100B6D46DFBC1AD7"
+					type: "xp_levels"
+					xp_levels: 8
+				}
+			]
+		}
+		{
+			id: "5FBC7EF7E8BCBEFA"
+			x: 17.25d
+			y: 10.860000000000001d
+			icon: {
+				id: "evilcraft:necromancer_staff"
+				count: 1
+			}
+			optional: true
+			dependencies: [
+				"375C42F435FB21A6"
+			]
+			tasks: [
+				{
+					id: "3867B83F095D5007"
+					type: "item"
+					item: {
+						id: "evilcraft:necromancer_staff"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "2A8D4EA6635CEF58"
+					type: "item"
+					item: {
+						id: "minecraft:rotten_flesh"
+						count: 1
+					}
+					count: 16
+				}
+				{
+					id: "768ABA1D2085AC2A"
+					type: "xp_levels"
+					xp_levels: 8
+				}
+			]
+		}
+		{
+			id: "1CA0F494A591D58E"
+			x: 7.29d
+			y: 20.21d
+			icon: {
+				id: "evilcraft:effortless_ring"
+				count: 1
+			}
+			optional: true
+			dependencies: [
+				"1058D6E92DC60F55"
+			]
+			tasks: [
+				{
+					id: "2747701164E0E13C"
+					type: "item"
+					item: {
+						id: "evilcraft:effortless_ring"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "100BD0CCAD8E7AF3"
+					type: "item"
+					item: {
+						id: "minecraft:sugar"
+						count: 1
+					}
+					count: 16
+				}
+				{
+					id: "71ED2A05E2F33743"
+					type: "xp_levels"
+					xp_levels: 6
+				}
+			]
+		}
+		{
+			id: "4EF79888559766DA"
+			x: 13.889999999999999d
+			y: 21.810000000000002d
+			icon: {
+				id: "evilcraft:colossal_blood_chest"
+				count: 1
+			}
+			optional: true
+			hide_dependency_lines: true
+			dependencies: [
+				"7A7B18D3CF6E29F4"
+				"5A75B4AB0897E764"
+				"42DD8B765575CB93"
+			]
+			tasks: [
+				{
+					id: "7988F3E79026CC41"
+					type: "item"
+					item: {
+						id: "evilcraft:colossal_blood_chest"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "55D98102CA76CA8E"
+					type: "item"
+					item: {
+						id: "evilcraft:bucket_blood"
+						count: 1
+					}
+					count: 4
+				}
+				{
+					id: "543B8151CFB338D9"
+					type: "loot"
+					table_id: 6525209979656026636L
+				}
+				{
+					id: "1784740801BD2F26"
+					type: "xp_levels"
+					xp_levels: 10
+				}
+			]
+		}
+		{
+			id: "339EDE49DABF8F99"
+			x: 15.489999999999998d
+			y: 21.810000000000002d
+			icon: {
+				id: "evilcraft:spirit_reanimator"
+				count: 1
+			}
+			optional: true
+			hide_dependency_lines: true
+			dependencies: [
+				"6BC02B6A0A4DA017"
+				"6380FEA350AEE3A4"
+			]
+			tasks: [
+				{
+					id: "1AC3A136C4154269"
+					type: "item"
+					item: {
+						id: "evilcraft:spirit_reanimator"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "630F6E61502ABBB4"
+					type: "item"
+					item: {
+						id: "minecraft:egg"
+						count: 1
+					}
+					count: 16
+				}
+				{
+					id: "16041706613B26F0"
+					type: "xp_levels"
+					xp_levels: 8
+				}
+			]
+		}
 	]
 	images: [
 		{
@@ -1025,7 +1489,7 @@
 			id: "213081D06A9338EB"
 			image: "kronwerke:textures/quests/evilcraft/blut.png"
 			x: 0.31499999999999995d
-			y: 7.91d
+			y: 9.41d
 			width: 1.63d
 			height: 0.9d
 			rotation: 0.0d
@@ -1035,7 +1499,7 @@
 			id: "52DB9C511D80EDB7"
 			image: "kronwerke:textures/quests/evilcraft/werkzeug.png"
 			x: 13.07d
-			y: 7.91d
+			y: 9.41d
 			width: 3.34d
 			height: 0.9d
 			rotation: 0.0d
@@ -1045,7 +1509,7 @@
 			id: "46674E55154E467A"
 			image: "kronwerke:textures/quests/evilcraft/blutfarm.png"
 			x: 1.145d
-			y: 13.009999999999998d
+			y: 17.26d
 			width: 3.29d
 			height: 0.9d
 			rotation: 0.0d
@@ -1055,7 +1519,7 @@
 			id: "5BBED25EA4235E86"
 			image: "kronwerke:textures/quests/evilcraft/versprechen.png"
 			x: 6.925d
-			y: 13.009999999999998d
+			y: 17.26d
 			width: 4.27d
 			height: 0.9d
 			rotation: 0.0d
@@ -1064,8 +1528,8 @@
 		{
 			id: "4EDBEEC35F39F800"
 			image: "kronwerke:textures/quests/evilcraft/maschinen.png"
-			x: 2.045d
-			y: 18.109999999999996d
+			x: 14.334999999999999d
+			y: 17.26d
 			width: 5.09d
 			height: 0.9d
 			rotation: 0.0d

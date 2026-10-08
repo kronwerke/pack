@@ -205,7 +205,7 @@ quests = [
           ],
           tasks=[task_item("deeperdarker:echo_planks", 32), task_item("deeperdarker:echo_sapling", 1)],
           rewards=[reward_item("deeperdarker:echo_boat", 1), reward_xp(5)],
-          deps=["echoing_forest"], icon="deeperdarker:echo_planks"),
+          deps=["echoing_forest"], icon="deeperdarker:echo_planks", section="stone"),
 
     quest("gleam_gel", 19.5, 6.5, "&eKratz Glanzgel ab",
           subtitle="Schere an den Porösen Sculkglanz.",
@@ -216,7 +216,7 @@ quests = [
           ],
           tasks=[task_item("deeperdarker:gleam_gel", 8)],
           rewards=[reward_item("minecraft:shears", 1), reward_xp(5)],
-          deps=["deeplands"], icon="deeperdarker:gleam_gel"),
+          deps=["deeplands"], icon="deeperdarker:gleam_gel", section="stone"),
 
     # ---- Die Sculk-Monster -------------------------------------------------------
     quest("snapper", 12, 11, "&3Zähme einen Sculk-Schnapper",
@@ -265,7 +265,7 @@ quests = [
           rewards=[reward_table("s3_uncommon"), reward_xp(20)],
           deps=["infested"], icon="deeperdarker:shriek_worm_spawn_egg", size=1.5, shape="diamond"),
 
-    quest("sludge", 12, 14, "&aJage Schlamm",
+    quest("sludge", 22, 11, "&aJage Schlamm",
           subtitle="Die kleinsten lassen Resonarium fallen.",
           description=[
               "&6Schlamm&r lebt in den Blühenden Höhlen und teilt sich beim Tod wie ein Schleim. Nur die &ekleinste Größe&r lässt &6Resonarium&r fallen, 0 bis 1 Stück, mit Plünderung mehr.",
@@ -328,7 +328,7 @@ quests = [
           ],
           tasks=[task_item("deeperdarker:soul_dust", 16), task_item("deeperdarker:soundproof_glass", 4)],
           rewards=[reward_item("minecraft:glass_bottle", 6), reward_item("minecraft:redstone", 8), reward_xp(10)],
-          deps=["infested"], icon="deeperdarker:soul_dust"),
+          deps=["infested"], icon="deeperdarker:soul_dust", section="souls"),
 
     quest("resonarium", 18, 19, "&6&lSchmiede Resonarium",
           subtitle="Die Rüstung gegen den Schallangriff.",
@@ -371,12 +371,101 @@ quests = [
           tasks=[task_checkmark("Gelesen")],
           rewards=[reward_item("minecraft:phantom_membrane", 4)],
           deps=["stalker"], icon="deeperdarker:reinforced_echo_shard", optional=True),
+    # ---- Neu ------------------------------------------------------------------
+    quest("dd_catalyst", 0, 9.5, "&3Stell einen Sculk-Katalysator auf",
+          subtitle="Wo etwas stirbt, wächst Sculk.",
+          description=[
+              "Der Wärter lässt immer einen &6Sculk-Katalysator&r fallen, manchmal liegt einer in den Truhen der Antiken Stadt.",
+              "",
+              "Stirbt ein Mob in seiner Nähe, breitet sich Sculk aus, um so mehr, je mehr Erfahrung der Mob gegeben hätte. Sculk baust du mit einer Hacke schnell ab, und ohne Behutsamkeit gibt jeder Block Erfahrung. Stell ihn an deine Mobfarm.",
+          ],
+          tasks=[task_item("minecraft:sculk_catalyst", 1)],
+          rewards=[reward_item("minecraft:experience_bottle", 8), reward_xp(5)],
+          deps=["warden"], icon="minecraft:sculk_catalyst", optional=True),
+
+    quest("dd_disc", 0, 6.5, "&8Setz die Schallplatte 5 zusammen",
+          subtitle="Neun Bruchstücke aus der Antiken Stadt.",
+          description=[
+              "In den Truhen der Antiken Städte liegen &6Plattenbruchstücke&r. Neun davon ergeben die &6Schallplatte 5&r.",
+              "",
+              "Lootr gibt dir jede Truhe einzeln, also lohnt es sich, eine Stadt ganz auszuräumen. Dabei findest du auch Bücher mit &eHuschen&r, Echoscherben und Verzauberte Goldene Äpfel.",
+          ],
+          tasks=[task_item("minecraft:music_disc_5", 1)],
+          rewards=[reward_item("minecraft:echo_shard", 2), reward_xp(10)],
+          deps=["ancient_city"], icon="minecraft:music_disc_5", optional=True),
+
+    quest("dd_ores", 22, 6.5, "&bGrab Diamanten in der Anderwelt",
+          subtitle="Alle Erze, nur in anderem Gestein.",
+          description=[
+              "Bring &e8 Diamanten&r aus der Anderwelt mit. Im &6Sculkgestein&r und im &6Düsterschiefer&r stecken dieselben Erze wie oben: Kohle, Eisen, Kupfer, Gold, Redstone, Lapis, Smaragd und Diamant.",
+              "",
+              "Die Höhlen sind riesig und offen, die Erze liegen oft frei an den Wänden. Leise gehen: Wo Sensoren stehen, sind auch Kreischer nicht weit.",
+          ],
+          tasks=[task_item("minecraft:diamond", 8)],
+          rewards=[reward_item("minecraft:iron_ingot", 16), reward_xp(10)],
+          deps=["stone"], icon="deeperdarker:gloomslate_diamond_ore", optional=True),
+
+    quest("dd_centipede", 12, 9.5, "&3Erleg Sculk-Hundertfüßer",
+          subtitle="Lang, flink und voller Fäden.",
+          description=[
+              "Erleg &e3 Sculk-Hundertfüßer&r. Sie krabbeln durch die &6Tiefenlande&r und lassen &6Fäden&r fallen.",
+              "",
+              "Fäden sind hier unten knapp. Für Bögen, Wolle und die Seelenelytren später brauchst du sie trotzdem.",
+          ],
+          tasks=[task_kill("deeperdarker:sculk_centipede", 3)],
+          rewards=[reward_item("minecraft:string", 16), reward_xp(5)],
+          deps=["snapper"], icon="minecraft:string", optional=True),
+
+    quest("dd_sculk_smite", 14.5, 9.5, "&bLern den Sculk-Bann",
+          subtitle="Eine Schwertverzauberung nur gegen Sculk.",
+          description=[
+              "Am Zaubertisch kann ein Schwert &eSculk-Bann&r bekommen: pro Stufe &d2,5&r Schaden mehr gegen alle Sculk-Wesen, bis Stufe &d5&r. Das schließt Schärfe und Bann aus.",
+              "",
+              "Es trifft Zerschmetterte, Beobachter, Shriek-Würmer und auch den &4Wärter&r. Den brauchst du: &eKronwerke Core&r gibt Mobs in Stufe 3 &d70 Prozent&r mehr Leben, aus 500 werden 850 Lebenspunkte.",
+          ],
+          tasks=[task_checkmark("Verstanden")],
+          rewards=[reward_item("minecraft:lapis_lazuli", 16), reward_xp(5)],
+          deps=["shattered"], icon="minecraft:enchanted_book", optional=True),
+
+    quest("dd_carapace", 17, 13.5, "&8Sammle Wärterpanzer",
+          subtitle="Für Echoscherben und die Rüstung in Stufe 4.",
+          description=[
+              "Sammle &e4 Wärterpanzer&r. Neben dem Wärter selbst liegen sie in den Truhen des Antiken Tempels und in &6Antiken Vasen&r.",
+              "",
+              "Aus Panzer und Phantomhaut werden &6Verstärkte Echoscherben&r. Jedes Teil der Wärterrüstung in Stufe 4 braucht eine, also leg schon jetzt einen Vorrat an.",
+          ],
+          tasks=[task_item("deeperdarker:warden_carapace", 4)],
+          rewards=[reward_item("minecraft:phantom_membrane", 4), reward_xp(10)],
+          deps=["temple"], icon="deeperdarker:warden_carapace"),
+
+    quest("dd_soul_crystals", 21, 13.5, "&bLeg Seelenkristalle zurück",
+          subtitle="Jeder Beobachter gibt einen.",
+          description=[
+              "Sammle &e3 Seelenkristalle&r. Jeder &4Beobachter&r lässt einen fallen, ganz selten liegt einer in einer Tempeltruhe.",
+              "",
+              "In Stufe 4 brauchst du einen für die &6Seelenelytren&r und zwei für den &6Schallstab&r. Wer jetzt Beobachter jagt, steht dann nicht mit leeren Händen da.",
+          ],
+          tasks=[task_item("deeperdarker:soul_crystal", 3)],
+          rewards=[reward_table("s3_uncommon"), reward_xp(15)],
+          deps=["stalker"], icon="deeperdarker:soul_crystal", optional=True),
+
+    quest("dd_resonarium_set", 21, 17.5, "&6&lTrag die volle Resonariumrüstung",
+          subtitle="Vier Teile, kein Schallangriff kommt mehr durch.",
+          description=[
+              "Mach auch &6Helm&r, &6Beinschutz&r und &6Stiefel&r aus Resonarium: jedes Teil eine Diamantrüstung, eine Resonariumplatte und eine Vorlage am Schmiedetisch.",
+              "",
+              "Mit allen vier Teilen fängt die Rüstung den Schaden ab, der sonst durch jede Rüstung geht, auch den &cSchallangriff des Wärters&r. Sie nutzt sich dabei ab, nimm Reparatur oder Ersatzplatten mit.",
+          ],
+          tasks=[task_item("deeperdarker:resonarium_helmet", 1), task_item("deeperdarker:resonarium_leggings", 1), task_item("deeperdarker:resonarium_boots", 1)],
+          rewards=[reward_table("s3_rare"), reward_xp(20)],
+          deps=["resonarium"], icon="deeperdarker:resonarium_helmet", optional=True),
+
 ]
 
 images = [
     banner("deeper_darker/title", "Deeper and Darker", 11, -3.2, height=1.75, kind="title", colour="end"),
-    banner("deeper_darker/way", "Der Weg hinunter", 4.5, 1.2, height=0.9, colour="stone"),
-    banner("deeper_darker/biomes", "Die Biome", 17, -0.6, height=0.9, colour="end"),
+    banner("deeper_darker/way", "Der Weg hinunter", 3, 5.2, height=0.9, colour="stone"),
+    banner("deeper_darker/biomes", "Die Biome", 15.5, 0, height=0.9, colour="end"),
     banner("deeper_darker/stone", "Stein und Holz", 16, 4.4, height=0.9, colour="stone"),
     banner("deeper_darker/mobs", "Die Sculk-Monster", 16, 8.9, height=0.9, colour="fire"),
     banner("deeper_darker/temple", "Der Antike Tempel", 19, 12.9, height=0.9, colour="magic"),

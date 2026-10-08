@@ -47,7 +47,7 @@
 		{
 			id: "6B059580EA028A54"
 			x: 4.0d
-			y: 4.395d
+			y: 4.27d
 			icon: {
 				id: "draconicevolution:awakened_draconium_block"
 				count: 1
@@ -83,7 +83,7 @@
 		{
 			id: "24AACD73C916E095"
 			x: 6.0d
-			y: 4.395d
+			y: 4.27d
 			icon: {
 				id: "mekanism:pellet_antimatter"
 				count: 1
@@ -118,7 +118,7 @@
 		{
 			id: "1FDFA0956359CF09"
 			x: 4.0d
-			y: 5.895d
+			y: 8.27d
 			icon: {
 				id: "botania:gaia_spirit"
 				count: 1
@@ -154,7 +154,7 @@
 		{
 			id: "6585D16B20EBC66B"
 			x: 6.0d
-			y: 5.895d
+			y: 8.27d
 			icon: {
 				id: "ars_nouveau:wilden_tribute"
 				count: 1
@@ -188,8 +188,8 @@
 		}
 		{
 			id: "5EC64D932C53D550"
-			x: 8.0d
-			y: 4.395d
+			x: 8.4d
+			y: 6.395d
 			icon: {
 				id: "minecraft:beacon"
 				count: 1
@@ -216,8 +216,8 @@
 		}
 		{
 			id: "4B82B0A09009404B"
-			x: 0.0d
-			y: 9.495000000000001d
+			x: 11.775d
+			y: 4.02d
 			icon: {
 				id: "draconicevolution:draconic_chestpiece"
 				count: 1
@@ -263,8 +263,8 @@
 		}
 		{
 			id: "6B680DC809E4DF01"
-			x: 2.0d
-			y: 9.495000000000001d
+			x: 13.775d
+			y: 7.02d
 			icon: {
 				id: "draconicevolution:advanced_dislocator"
 				count: 1
@@ -320,8 +320,8 @@
 		}
 		{
 			id: "60D9C334A54D24D6"
-			x: 0.0d
-			y: 11.095d
+			x: 11.775d
+			y: 8.62d
 			icon: {
 				id: "minecraft:note_block"
 				count: 1
@@ -346,8 +346,8 @@
 		}
 		{
 			id: "66A68AD992FAC9FD"
-			x: 1.6d
-			y: 11.095d
+			x: 13.375d
+			y: 8.62d
 			icon: {
 				id: "minecraft:end_crystal"
 				count: 1
@@ -373,7 +373,7 @@
 		{
 			id: "61908B1DD17D4CB6"
 			x: 0.25d
-			y: 15.695000000000002d
+			y: 13.22d
 			icon: {
 				id: "minecraft:end_portal_frame"
 				count: 1
@@ -403,7 +403,7 @@
 		{
 			id: "14C021452814BEF9"
 			x: 2.65d
-			y: 15.695000000000002d
+			y: 13.22d
 			icon: {
 				id: "minecraft:end_crystal"
 				count: 1
@@ -433,7 +433,7 @@
 		{
 			id: "6A241CE5D0BECCDA"
 			x: 4.65d
-			y: 15.695000000000002d
+			y: 13.22d
 			icon: {
 				id: "draconicevolution:chaos_shard"
 				count: 1
@@ -465,7 +465,7 @@
 		{
 			id: "1F4878BA75F6A16B"
 			x: 2.65d
-			y: 17.945d
+			y: 15.47d
 			icon: {
 				id: "minecraft:dragon_head"
 				count: 1
@@ -493,7 +493,7 @@
 		{
 			id: "55615F7EBE215146"
 			x: 7.850000000000001d
-			y: 18.195d
+			y: 15.72d
 			icon: {
 				id: "draconicevolution:chaos_shard"
 				count: 1
@@ -524,7 +524,7 @@
 		{
 			id: "1C79E8F0E3E0364C"
 			x: 7.850000000000001d
-			y: 15.695000000000002d
+			y: 13.22d
 			icon: {
 				id: "minecraft:dragon_egg"
 				count: 1
@@ -550,6 +550,205 @@
 					id: "2AA24D8B83FA6BEB"
 					type: "xp_levels"
 					xp_levels: 50
+				}
+			]
+		}
+		{
+			id: "10E08601498360A2"
+			x: 8.4d
+			y: 4.27d
+			icon: {
+				id: "mekanism:pellet_antimatter"
+				count: 1
+			}
+			size: 1.5d
+			shape: "diamond"
+			dependencies: [
+				"24AACD73C916E095"
+			]
+			tasks: [
+				{
+					id: "67CCB0ABC60A0030"
+					type: "item"
+					item: {
+						id: "mekanism:pellet_antimatter"
+						count: 1
+					}
+					count: 10
+				}
+			]
+			rewards: [
+				{
+					id: "3E4969AD6DC360AB"
+					type: "loot"
+					table_id: 8687242667927443074L
+				}
+				{
+					id: "788C2901FDD5FC5C"
+					type: "xp_levels"
+					xp_levels: 25
+				}
+			]
+		}
+		{
+			id: "4F5D0481442B5919"
+			x: 6.0d
+			y: 6.52d
+			icon: {
+				id: "botania:gaia_ingot"
+				count: 1
+			}
+			size: 1.5d
+			shape: "diamond"
+			dependencies: [
+				"1FDFA0956359CF09"
+			]
+			tasks: [
+				{
+					id: "4E0E29C410AA32FA"
+					type: "item"
+					item: {
+						id: "botania:gaia_ingot"
+						count: 1
+					}
+					count: 32
+				}
+			]
+			rewards: [
+				{
+					id: "25CB5CA161562017"
+					type: "loot"
+					table_id: 8687242667927443074L
+				}
+				{
+					id: "4E4CA996E17F3941"
+					type: "xp_levels"
+					xp_levels: 25
+				}
+			]
+		}
+		{
+			id: "2403924FE64E13C9"
+			x: 8.4d
+			y: 8.27d
+			icon: {
+				id: "ars_nouveau:wilden_tribute"
+				count: 1
+			}
+			optional: true
+			dependencies: [
+				"6585D16B20EBC66B"
+			]
+			tasks: [
+				{
+					id: "2BBDF30AA18A1A2B"
+					type: "item"
+					item: {
+						id: "ars_nouveau:wilden_tribute"
+						count: 1
+					}
+					count: 4
+				}
+			]
+			rewards: [
+				{
+					id: "22D2A107AD3C51F3"
+					type: "loot"
+					table_id: 8687242667927443074L
+				}
+				{
+					id: "10E986B42F9F5564"
+					type: "xp_levels"
+					xp_levels: 20
+				}
+			]
+		}
+		{
+			id: "2A4800512E32D0F1"
+			x: 13.775d
+			y: 5.52d
+			icon: {
+				id: "draconicevolution:draconic_bow"
+				count: 1
+			}
+			optional: true
+			dependencies: [
+				"4B82B0A09009404B"
+			]
+			tasks: [
+				{
+					id: "6CC6D13F53D516CE"
+					type: "item"
+					item: {
+						id: "draconicevolution:draconic_bow"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "291967B08719D693"
+					type: "item"
+					item: {
+						id: "minecraft:arrow"
+						count: 1
+					}
+					count: 64
+				}
+				{
+					id: "60E2F6C201A45EB8"
+					type: "xp_levels"
+					xp_levels: 15
+				}
+			]
+		}
+		{
+			id: "1946B09BF07B2AA9"
+			x: 13.775d
+			y: 4.02d
+			icon: {
+				id: "draconicevolution:item_draconic_undying"
+				count: 1
+			}
+			optional: true
+			dependencies: [
+				"4B82B0A09009404B"
+			]
+			tasks: [
+				{
+					id: "19685EF77415CA74"
+					type: "item"
+					item: {
+						id: "draconicevolution:draconic_chestpiece"
+						count: 1
+					}
+					count: 1
+				}
+				{
+					id: "6AC09DF3B6FFFB6F"
+					type: "item"
+					item: {
+						id: "draconicevolution:item_draconic_undying"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "4D28C079D98CCDAC"
+					type: "item"
+					item: {
+						id: "minecraft:golden_apple"
+						count: 1
+					}
+					count: 4
+				}
+				{
+					id: "246EDE99E74C9270"
+					type: "xp_levels"
+					xp_levels: 15
 				}
 			]
 		}
@@ -588,8 +787,8 @@
 		{
 			id: "2509C4C8B3489253"
 			image: "kronwerke:textures/quests/finale/ready.png"
-			x: 1.8849999999999998d
-			y: 8.045d
+			x: 13.66d
+			y: 2.5700000000000003d
 			width: 4.77d
 			height: 0.9d
 			rotation: 0.0d
@@ -599,7 +798,7 @@
 			id: "5C71C9B28AB50A59"
 			image: "kronwerke:textures/quests/finale/fight.png"
 			x: 1.325d
-			y: 13.245000000000001d
+			y: 10.77d
 			width: 3.65d
 			height: 0.9d
 			rotation: 0.0d

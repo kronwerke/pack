@@ -356,7 +356,7 @@ quests = [
           rewards=[reward_item("pneumaticcraft:programming_puzzle", 4)],
           deps=["pz_export"], icon="pneumaticcraft:gps_tool"),
 
-    quest("pz_dig", 8, 12.5, "&7Puzzleteil: Dig Area",
+    quest("pz_dig", 0, 14, "&7Puzzleteil: Dig Area",
           subtitle="Die Drohne gräbt einen Bereich aus.",
           description=[
               "&eDig Area&r baut jeden Block im &eArea&r ab. Was fällt, lässt sie liegen, dafür hängst du ein &ePick up Items&r-Teil dahinter oder stellst eine Sammeldrohne daneben.",
@@ -369,7 +369,7 @@ quests = [
           rewards=[reward_item("pneumaticcraft:programming_puzzle", 4)],
           deps=["pz_goto"], icon="minecraft:iron_pickaxe"),
 
-    quest("pz_place", 10, 12.5, "&7Puzzleteil: Place",
+    quest("pz_place", 2, 14, "&7Puzzleteil: Place",
           subtitle="Die Drohne baut aus ihrem Inventar.",
           description=[
               "&ePlace&r setzt Blöcke aus dem Inventar der Drohne in den &eArea&r, zuerst die nächstgelegenen Stellen. Rechtsklick: Schicht für Schicht, von oben oder unten, zufällige Blöcke aus dem Inventar, und eine Höchstzahl.",
@@ -380,7 +380,7 @@ quests = [
           rewards=[reward_item("pneumaticcraft:programming_puzzle", 5)],
           deps=["pz_dig"], icon="minecraft:bricks"),
 
-    quest("pz_harvest", 12, 12.5, "&7Puzzleteil: Harvest",
+    quest("pz_harvest", 4, 14, "&7Puzzleteil: Harvest",
           subtitle="Erntet reife Felder und Bäume.",
           description=[
               "&eHarvest&r erntet jede reife Pflanze und jeden Baum im &eArea&r. Aufsammeln tut sie nichts, dafür wieder &ePick up Items&r dahinter oder eine Sammeldrohne.",
@@ -393,7 +393,7 @@ quests = [
           rewards=[reward_item("pneumaticcraft:programming_puzzle", 6)],
           deps=["pz_place"], icon="minecraft:iron_hoe"),
 
-    quest("first_program", 14.5, 12.5, "&d&lProgrammiere deine erste Drohne",
+    quest("first_program", 6.5, 14, "&d&lProgrammiere deine erste Drohne",
           subtitle="Start, Import, Dig. Mehr braucht es nicht.",
           description=[
               "&eDas Programm:&r Start, darunter &eImport from Inventory&r mit einem Area auf eine Kiste mit einer Schaufel und einem Item Filter auf die Schaufel (Haltbarkeit aus). Darunter &eDig Area&r mit einem Area auf ein Stück Erde oder Sand.",
@@ -475,7 +475,7 @@ quests = [
           ],
           tasks=[task_item("pneumaticcraft:aerial_interface", 1)],
           rewards=[reward_item("pneumaticcraft:logistics_frame_requester", 8), reward_table("s3_uncommon"), reward_xp(20)],
-          deps=["logistics_drone"], icon="pneumaticcraft:aerial_interface", size=1.5, shape="diamond"),
+          deps=["logistics_drone"], icon="pneumaticcraft:aerial_interface", size=1.5, shape="diamond", section="control"),
 
     quest("universal_sensor", 16, 10.5, "&3Bau einen Universal Sensor",
           subtitle="Redstone aus Bedingungen.",
@@ -518,7 +518,7 @@ quests = [
           ],
           tasks=[task_item("pneumaticcraft:programmable_controller", 1)],
           rewards=[reward_item("pneumaticcraft:inventory_upgrade", 4), reward_table("s3_uncommon"), reward_xp(15)],
-          deps=["first_program"], icon="pneumaticcraft:programmable_controller", optional=True),
+          deps=["first_program"], icon="pneumaticcraft:programmable_controller", optional=True, section="control"),
 
     # ---- Spawner --------------------------------------------------------------
     quest("spawner_extractor", 13, 5.5, "&2Bau einen Spawner Extractor",
@@ -576,6 +576,112 @@ quests = [
           tasks=[task_checkmark("Gelesen")],
           rewards=[reward_xp(10)],
           deps=["pressurized_spawner"], icon="pneumaticcraft:programming_puzzle", optional=True),
+
+    # ---- neue Quests: Druck der zweiten Stufe ------------------------------------
+    quest("reinforced_canister", 23, 0, "&3Bau Reinforced Air Canisters",
+          subtitle="Doppelt so viel Luft, bis 20 bar.",
+          description=[
+              "&eRezept:&r ein &6Advanced Pressure Tube&r oben, Compressed Iron, &6Air Canister&r, Compressed Iron in der Mitte, drei Compressed Iron unten.",
+              "",
+              "Er fasst &e6 000 mL&r statt 3 000, lädt bis &e20 bar&r und explodiert nie. In einer Kiste mit einem &6Charging Module&r am Rohr davor wird er zum Luftspeicher, den du überallhin tragen kannst.",
+              "",
+              "Vier davon im Quadrat ergeben ein &6Reinforced Air Canister Array&r. Das brauchst du im nächsten Schritt.",
+          ],
+          tasks=[task_item("pneumaticcraft:reinforced_air_canister", 4)],
+          rewards=[reward_item("pneumaticcraft:air_canister", 4), reward_xp(8)],
+          deps=["advanced_tube"], icon="pneumaticcraft:reinforced_air_canister"),
+
+    quest("reinforced_valve", 23, 3, "&3Rüste die Druckkammer auf 20 bar auf",
+          subtitle="Ein Ventil, viermal so viel Luft.",
+          description=[
+              "Ein &6Pressure Chamber Valve&r und ein &6Reinforced Air Canister Array&r formlos ergeben ein &6Unassembled Reinforced Pressure Chamber Valve&r. Mit dem Programm &eLaser&r macht die Montagestraße daraus das &6Reinforced Pressure Chamber Valve&r.",
+              "",
+              "Tausch die Ventile deiner Druckkammer gegen verstärkte, und die Kammer hält &e20 bar&r statt 5. Sie speichert damit viermal so viel Luft. Wände, Gläser und Schnittstellen bleiben, wie sie sind.",
+          ],
+          tasks=[task_item("pneumaticcraft:reinforced_pressure_chamber_valve", 1)],
+          rewards=[reward_item("pneumaticcraft:pressure_chamber_wall", 16), reward_table("s3_common"), reward_xp(10)],
+          deps=["reinforced_canister"], icon="pneumaticcraft:reinforced_pressure_chamber_valve"),
+
+    quest("drill_bits", 25.5, 0, "&6Härte den Presslufthammer",
+          subtitle="Diamant und Netherit für den Bohrkopf.",
+          description=[
+              "&6Diamantbohrkopf:&r ein &6Diamantblock&r und &b8 000 mB Schmiermittel&r in der Thermopneumatic Processing Plant bei &e7,5 bar&r und mindestens 500 Grad. Er bricht &e3x3&r Blöcke auf einmal.",
+              "",
+              "&6Netheritbohrkopf:&r Diamantbohrkopf und ein &6Netheritbarren&r formlos ergeben den unfertigen Kopf, das Programm &eDrill&r der Montagestraße macht ihn fertig. Er ist der schnellste und kann die meisten Abbaumodi.",
+              "",
+              "Den Presslufthammer selbst baust du wie im Kapitel &bPneumaticCraft&r beschrieben.",
+          ],
+          tasks=[task_item("pneumaticcraft:drill_bit_diamond", 1)],
+          rewards=[reward_item("pneumaticcraft:lubricant_bucket", 2), reward_xp(10)],
+          deps=["advanced_tube"], icon="pneumaticcraft:drill_bit_diamond", optional=True),
+
+    quest("large_tank", 25.5, 3, "&9Bau einen Large Fluid Tank",
+          subtitle="128 Eimer, stapelbar.",
+          description=[
+              "&6Medium Fluid Tank:&r Plastic Sheet, &6Small Tank&r, Plastic Sheet oben, Gold, Pressure Tube, Gold in der Mitte, Plastic Sheet, Small Tank, Plastic Sheet unten, &e64 000 mB&r. &6Large Fluid Tank:&r dasselbe mit zwei Medium Tanks, zwei Diamanten und einem &6Advanced Pressure Tube&r, &e128 000 mB&r.",
+              "",
+              "Der &6Huge Fluid Tank&r aus Large Tanks, Netherit und einem Reinforced Air Canister fasst 512 000 mB.",
+              "",
+              "Rechtsklick mit dem Wrench verbindet Tanks übereinander. Flüssigkeit fließt dann nach unten: oben hinein pumpen, unten heraus.",
+          ],
+          tasks=[task_item("pneumaticcraft:large_tank", 1)],
+          rewards=[reward_item("pneumaticcraft:small_tank", 2), reward_xp(8)],
+          deps=["advanced_tube"], icon="pneumaticcraft:large_tank", optional=True),
+
+    # ---- neue Quests: Drohnen programmieren -------------------------------------
+    quest("drone_upgrades", 5, 11, "&5Rüste deine Drohnen auf",
+          subtitle="Mehr tragen, Dinge anziehen, Chunks laden.",
+          description=[
+              "Upgrades kommen über die &6Charging Station&r in die Drohne, Pfeil über dem Slot. &6Inventory Upgrade&r (Lapis in die Ecken, Bretter an die Seiten, Truhe in die Mitte): ein Platz mehr und &e16 000 mB&r mehr Tank je Upgrade. Ohne trägt sie nur einen Stapel.",
+              "",
+              "&6Magnet Upgrade&r (Lapis, Compressed Iron, Plastic Sheet in der Mitte): Die Drohne sammelt Gegenstände in &e2 Blöcken&r Umkreis ein, jedes weitere Upgrade einen Block mehr.",
+              "",
+              "&6Speed Upgrade:&r 10 Prozent schneller je Stück. &6Standby Upgrade:&r Sie ruht, wenn sie nichts zu tun hat, und spart Luft. &6Chunkloader Upgrade:&r hält ihren Chunk geladen, mit drei Upgrades 3x3 Chunks.",
+          ],
+          tasks=[task_item("pneumaticcraft:inventory_upgrade", 2), task_item("pneumaticcraft:magnet_upgrade", 1)],
+          rewards=[reward_item("pneumaticcraft:speed_upgrade", 2), reward_xp(10)],
+          deps=["drone"], icon="pneumaticcraft:inventory_upgrade"),
+
+    # ---- neue Quests: Fertige Drohnen -------------------------------------------
+    quest("logistics_module", 11.25, 11.2, "&6Verbinde Kisten mit Logistics Modules",
+          subtitle="Logistik durch Rohre, ganz ohne Drohne.",
+          description=[
+              "&eRezept:&r vier &6Redstone&r um einen &6Logistics Core&r, unten zwei &6Pressure Tubes&r.",
+              "",
+              "Das Modul sitzt am Rohr und zeigt auf eine Kiste oder einen Tank mit &6Logistics Frame&r. Alle Module, die über Rohre verbunden sind, bilden ein Netz und verschieben Gegenstände und Flüssigkeiten nach den Regeln der Rahmen, wie die Logistics Drone.",
+              "",
+              "Es braucht mindestens &e3 bar&r. Weiter weg und mehr Ware kostet mehr Luft, verbraucht am empfangenden Modul. Mit Farbstoff wählst du einen von 16 Kanälen. &aGrün&r heißt bereit, &9blau&r blinkend heißt, es läuft gerade etwas.",
+          ],
+          tasks=[task_item("pneumaticcraft:logistics_module", 2)],
+          rewards=[reward_item("pneumaticcraft:logistics_core", 2), reward_xp(8)],
+          deps=["frames"], icon="pneumaticcraft:logistics_module"),
+
+    quest("tag_filter", 13.5, 11.2, "&6Filter nach Tags",
+          subtitle="Alle Stämme, alle Erze, ein Filter.",
+          description=[
+              "&6Display Table:&r drei &6Reinforced Stone Slabs&r über zwei Compressed Iron. Ein &6Buch und Feder&r darüber ergibt die &6Tag Workbench&r.",
+              "",
+              "Leg links einen Gegenstand hinein, wähl seine Tags per Doppelklick, leg Papier in die Mitte und drück auf das Buch: heraus kommt ein &6Tag Filter&r.",
+              "",
+              "Den Tag Filter steckst du in die Filter der Logistics Frames oder in Item-Filter-Teile im Programmer. Er passt auf jeden Gegenstand mit einem der Tags, etwa alle Stämme oder alle Rohen Erze.",
+          ],
+          tasks=[task_item("pneumaticcraft:tag_workbench", 1), task_item("pneumaticcraft:tag_filter", 2)],
+          rewards=[reward_item("minecraft:paper", 16), reward_xp(5)],
+          deps=["frames"], icon="pneumaticcraft:tag_workbench", optional=True),
+
+    # ---- neue Quests: Steuerung und Schutz --------------------------------------
+    quest("remote", 20.5, 12.5, "&3Bau dir eine Fernbedienung",
+          subtitle="Eigene Knöpfe, kabelloses Redstone.",
+          description=[
+              "&eRezept:&r ein &6Network IO Port&r oben, Transistor, &6GPS Tool&r, Transistor in der Mitte, Transistor, &6Network Data Storage&r, Transistor unten.",
+              "",
+              "Schleichend Rechtsklick öffnet den Editor: Knöpfe, Häkchen und Auswahllisten ziehst du wie Puzzleteile hinein, jedes setzt eine &eglobale Variable&r. Drohnen lesen diese Variablen in ihren Programmen.",
+              "",
+              "&eKabelloses Redstone:&r Ein Universal Sensor mit Dispenser Upgrade und der Einstellung World, Global Variable gibt ein Signal, sobald dein Häkchen auf der Fernbedienung gesetzt ist. Egal, wo du gerade stehst.",
+          ],
+          tasks=[task_item("pneumaticcraft:remote", 1)],
+          rewards=[reward_item("pneumaticcraft:transistor", 4), reward_xp(10)],
+          deps=["universal_sensor"], icon="pneumaticcraft:remote", optional=True),
 ]
 
 images = [

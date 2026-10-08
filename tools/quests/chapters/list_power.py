@@ -297,6 +297,33 @@ quests = [
           ],
           "create:gearbox", ["s2_choice"]),
 
+    check("tesla_coil", X[8], Y2 + 2, "&6Lad Gegenstände an der Teslaspule",
+          "Crafts & Additions: lädt mit 5 000 FE/t, was unter ihr liegt.",
+          [
+              "Die &6Teslaspule&r entsteht in der Mechanischen Werkbank aus Kupferspulen, Andesitlegierung, Kondensatoren, Messinggehäuse, Messingblechen und einer Elektronenröhre. Stell sie über ein Depot oder ein Band.",
+              "",
+              "&eCrafts & Additions, Teslaspule:&r lädt FE-Gegenstände unter sich mit &d5 000 FE/t&r, Rezepte zum Aufladen mit 2 000 FE/t, Puffer &d40 000 FE&r. Sie kann auch Mobs in 3 Blöcken einen Schlag versetzen, jeder kostet 1 000 FE. Offen ab Stufe 2, siehe Kapitel &6Create: Erweiterungen&r.",
+          ],
+          "create:depot", ["s2_choice"]),
+
+    check("source_motor", X[0], Y2 + 3.5, "&dTreib Create mit Quelle an",
+          "Ars Technica: der Source Motor macht aus Quelle Rotation.",
+          [
+              "Der &6Source Motor&r braucht einen Calibrated Precision Mechanism und ein &6Quellglas&r daneben. Er zieht Quelle aus dem Glas und dreht eine Welle, ganz ohne Wasser und Wind.",
+              "",
+              "&eArs Technica, Source Motor:&r Brennstoff Quelle. Die Seiten stellen die Drehzahl, die Front das Verhältnis von Last zu Drehzahl. Mehr Kraft kostet mehr Quelle. Für Magier mit vollen Quellgläsern der Weg zu Create. Offen ab Stufe 2, siehe Kapitel &dArs Nouveau: Magier&r.",
+          ],
+          "ars_nouveau:source_jar", ["s2_choice"]),
+
+    check("pocket_gen", X[1], Y2 + 3.5, "&6Steck einen Taschengenerator ein",
+          "Just Dire Things: lädt dein Inventar mit bis zu 5 000 FE/t.",
+          [
+              "&eRezept:&r Ferricore oben und unten in den Ecken, Redstoneblock oben und unten in der Mitte, Kohle, Ofen, Kohle in der Mitte. Rechtsklick öffnet ihn, Brennstoff hinein.",
+              "",
+              "&eJust Dire Things, Pocket Generator:&r Brennstoff Kohle, Primal Coal und Blaze Ember mit denselben Werten wie der große Generator. Er fasst &d1 Million FE&r und lädt alles in deinem Inventar, was FE speichert, mit bis zu &d5 000 FE/t&r. Offen ab Stufe 2, siehe Kapitel &6Just Dire Things&r.",
+          ],
+          "minecraft:furnace", ["s2_choice"]),
+
     # ---- Stufe 3 ---------------------------------------------------------------------------
     quest("s3_choice", 0, Y3, "&e&lStufe 3: Welche Quelle wann",
           subtitle="Das Stahlwerk braucht Kraftwerke.",
@@ -462,6 +489,51 @@ quests = [
               "&eNature's Aura, RF-Umwandler:&r Brennstoff Aura aus der Umgebung, &d20 Aura = 1 FE&r. Er leert die Gegend spürbar, also nur neben starken Aura-Generatoren betreiben. Eher ein Notstrom für Magier als ein Kraftwerk. Offen ab Stufe 3 mit dem Himmelsbarren.",
           ],
           "minecraft:sunflower", ["s3_choice"]),
+
+    check("furnace_gen", X[8], Y3 + 2, "&6Mach einen Eisenofen zum Generator",
+          "Iron Furnaces: 40 bis 1 000 FE/t, je nach Ofen.",
+          [
+              "&eRezept:&r Stein in die Ecken, Redstone oben und unten in der Mitte, Papier, Verstärker, Papier in der mittleren Reihe: das &6Generator-Augment&r. Rechtsklick damit auf einen Ofen von Iron Furnaces.",
+              "",
+              "&eIron Furnaces, Generator-Augment:&r Statt zu schmelzen verbrennt der Ofen Brennstoff zu Strom, was er nimmt, zeigt JEI unter &eAugment: Generator&r. Eisen- und Kupferofen &d40 FE/t&r, Silber 100, Gold 160, Diamant 240, Smaragd 320, Kristall 360, Obsidian 500, Netherit &d1 000 FE/t&r. Offen ab Stufe 3.",
+          ],
+          "ironfurnaces:iron_furnace", ["s3_choice"]),
+
+    check("crystal_resonance", X[0], Y3 + 3.5, "&bStell einen Kristallresonanzgenerator",
+          "Applied Energistics 2: 20 AE pro Tick ins ME-Netz, ohne Brennstoff.",
+          [
+              "Der &6Kristallresonanzgenerator&r kommt an ein ME-Kabel und versorgt das Netz von selbst. Kein Brennstoff, kein Kabel von einem Kraftwerk.",
+              "",
+              "&eApplied Energistics 2, Kristallresonanzgenerator:&r &d20 AE pro Tick&r, Tag und Nacht. Für ein kleines Lagernetz reichen ein paar Stück, und der Strom der Basis bleibt für die Maschinen. Offen ab Stufe 3, siehe Kapitel &6Applied Energistics 2&r.",
+          ],
+          "minecraft:amethyst_shard", ["s3_choice"]),
+
+    check("appflux", X[1], Y3 + 3.5, "&bLager Strom im ME-Netz",
+          "Applied Flux: FE-Zellen im ME-Laufwerk, über eine Million FE je Byte.",
+          [
+              "&6Applied Flux&r bringt Speicherzellen für Strom: Sie stecken wie Item-Zellen im ME-Laufwerk. Der &6Flux Accessor&r am Netz nimmt FE auf und gibt es wieder ab, wie ein großer Akku.",
+              "",
+              "&eApplied Flux:&r &d1 048 576 FE pro Byte&r Zellenspeicher, der Flux Accessor hat keine Durchsatzgrenze. Das ME-Netz selbst lädt er nicht, dafür bleibt der Kristallresonanzgenerator. Offen ab Stufe 3, größere Zellen ab Stufe 4 und 5.",
+          ],
+          "minecraft:redstone_block", ["s3_choice"]),
+
+    check("laserio_energy", X[2], Y3 + 3.5, "&dSchick Strom per Laser",
+          "LaserIO: Energiekarten in Laserknoten, bis 1 Million FE/t.",
+          [
+              "Eine &6Energiekarte&r in einem &6Laserknoten&r zieht Strom aus dem Block an dieser Seite oder gibt ihn ab. Die Knoten verbindest du mit dem Laserschlüssel, der Strom springt als Laser von Knoten zu Knoten.",
+              "",
+              "&eLaserIO, Energiekarte:&r bis &d1 000 000 FE/t&r je Karte. Dieselben Knoten tragen auch Items und Flüssigkeiten, eine Leitung für alles. Offen ab Stufe 3, siehe Kapitel &6Logistik&r.",
+          ],
+          "minecraft:redstone_torch", ["s3_choice"]),
+
+    check("mycelial", X[3], Y3 + 3.5, "&aVerfeuere alles in Myzel-Generatoren",
+          "Industrial Foregoing: sechzehn Generatoren, jeder frisst etwas anderes.",
+          [
+              "Die &6Myzel-Generatoren&r baust du an der Werkbank, den Reaktor im Auflösungsapparat. Jeder Generator verbrennt eine eigene Sorte: der Ofen-Generator Brennstoff, der Kulinarische Essen, der Trank-Generator Tränke, der Netherstern-Generator Nethersterne. JEI zeigt unter jedem, was er nimmt.",
+              "",
+              "&eIndustrial Foregoing, Myzel-Reaktor:&r Er erzeugt sehr viel Strom, aber nur, solange von &ejeder&r Sorte Myzel-Generator einer gleichzeitig läuft. Ein Langzeitprojekt. Offen ab Stufe 3, siehe Kapitel &aIndustrial Foregoing&r.",
+          ],
+          "minecraft:mycelium", ["s3_choice"]),
 
     # ---- Stufe 4 ---------------------------------------------------------------------------
     quest("s4_choice", 0, Y4, "&e&lStufe 4: Welche Quelle wann",

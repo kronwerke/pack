@@ -185,7 +185,7 @@ quests = [
     quest("anvil", 23, 1, "&cAusblick: Arcane Anvil",
           subtitle="Rollen aufwerten, Rüstung verbessern, Waffen verzaubern.",
           description=[
-              "Der &6Arcane Anvil&r (drei Amethystblöcke, ein Diamant, ein Amboss zwischen zwei poliertem Tiefenschiefer) ist auf Kronwerke bis &6Stufe 2&r gesperrt, genau wie Uncommon und Rare Ink.",
+              "Der &6Arcane Anvil&r (auf Kronwerke drei Quelljuwelblöcke, ein Diamant, ein Amboss zwischen zwei poliertem Tiefenschiefer) ist auf Kronwerke bis &6Stufe 2&r gesperrt, genau wie Uncommon und Rare Ink.",
               "",
               "&eWas er kann:&r Eine Rolle plus die Tinte der nächsthöheren Seltenheit hebt den Zauber eine Stufe. Ein Zauberbuch oder ein Rüstungsteil plus &6Upgrade Orb&r bekommt bis zu &e3 Upgrades&r (Mana, Abklingzeit, Schutz oder die Zauberkraft einer Schule). Ein Schwert plus Rolle wird zur Zauberwaffe.",
               "",
@@ -495,6 +495,103 @@ quests = [
           tasks=[task_checkmark("Blutzauber gewirkt")],
           rewards=[reward_xp(3)],
           deps=["schools"], icon="irons_spellbooks:blood_vial"),
+
+    # ---- neue Quests -----------------------------------------------------------------
+    quest("ars_essence", 1.0, 8.5, "&dPräg Arcane Essence mit Quelle",
+          subtitle="Bücher statt Magier.",
+          description=[
+              "&eRezept auf Kronwerke:&r Ein &6Buch&r in die &6Imbuement-Kammer&r von &dArs Nouveau&r, auf die Podeste daneben ein &6Lapislazuli&r und ein &6Leuchtsteinstaub&r. Für &d300 Quelle&r werden daraus &e3 Arcane Essence&r.",
+              "",
+              "Lapis und Leuchtsteinstaub bleiben auf den Podesten liegen, nur das Buch wird verbraucht. Mit einer Quelle aus Quelllinks läuft das neben der Basis von allein, während du die Türme abklapperst.",
+              "",
+              "&eTipp:&r Für die ganze Zaubererrobe brauchst du 192 Essenzen. Ein Stapel Bücher und ein voller Quellspeicher sparen dir viele Magierkämpfe.",
+          ],
+          tasks=[task_item("irons_spellbooks:arcane_essence", 32)],
+          rewards=[reward_item("minecraft:book", 8), reward_item("minecraft:lapis_lazuli", 8), reward_xp(5)],
+          deps=["essence"], icon="ars_nouveau:imbuement_chamber"),
+
+    quest("arcane_ingot", 1.0, 6.5, "&7Schmelz einen Arcane Ingot",
+          subtitle="Acht Essenzen um einen Barren.",
+          description=[
+              "Acht &6Arcane Essence&r um einen &6Eisen-&r, &6Kupfer-&r oder &6Goldbarren&r ergeben einen &6Arcane Ingot&r. Nimm Kupfer, das brauchst du sonst am wenigsten.",
+              "",
+              "Aus Arcane Ingots entstehen der &6Ring of Mana&r, der Griff des &6Ice Staff&r und später Waffenteile mit Mithril.",
+          ],
+          tasks=[task_item("irons_spellbooks:arcane_ingot", 1)],
+          rewards=[reward_item("minecraft:copper_ingot", 8), reward_xp(5)],
+          deps=["essence"], icon="irons_spellbooks:arcane_ingot"),
+
+    quest("mana_ring", 3.5, 6.5, "&bSchmiede einen Ring of Mana",
+          subtitle="+100 Mana am Finger.",
+          description=[
+              "Ein &6Diamant&r oben links und vier &6Arcane Ingots&r im Ring darum ergeben den &6Ring of Mana&r. Die Lage zeigt JEI.",
+              "",
+              "Er kommt in einen &eRing-Slot&r (Curios) und gibt &e+100 Mana&r, so viel wie die ganze Wanderer-Robe. Mehr Maximum heißt auch schnellere Regeneration.",
+              "",
+              "Andere Ringe wie der &6Silver Ring&r (+25 Mana) liegen in Kisten der Türme, Katakomben und Schiffe. Die meisten gebauten Ringe brauchen Mithril, das erst mit Netheritwerkzeug abbaubar ist.",
+          ],
+          tasks=[task_item("irons_spellbooks:mana_ring", 1)],
+          rewards=[reward_item("irons_spellbooks:arcane_essence", 8), reward_table("s1_common")],
+          deps=["arcane_ingot"], icon="irons_spellbooks:mana_ring"),
+
+    quest("ice_staff", 3.5, 8.5, "&bSetz den Ice Staff zusammen",
+          subtitle="Griff aus Knochen, Spitze aus dem Eisschiff.",
+          description=[
+              "Der &6Frosted Helve&r ist vier &6Frozen Bones&r und drei &6Arcane Ingots&r in einer Diagonale (JEI zeigt das Muster). Dazu der &6Permafrost Shard&r aus dem Eisschiff, beides formlos ergibt den &6Ice Staff&r.",
+              "",
+              "Er gibt &e+15 Prozent Eiszauberkraft&r, &e+5 Prozent Zauberkraft&r und &e+25 Prozent Manaregeneration&r. Rechtsklick wirkt deinen aktiven Zauber wie bei jedem Stab.",
+          ],
+          tasks=[task_item("irons_spellbooks:ice_staff", 1)],
+          rewards=[reward_item("irons_spellbooks:frozen_bone", 8), reward_table("s1_uncommon")],
+          deps=["staff", "icebreaker"], icon="irons_spellbooks:ice_staff"),
+
+    quest("icebreaker", 2.5, 15.0, "&bEntere den Impaled Icebreaker",
+          subtitle="Ein Schiff, aufgespießt im Eis.",
+          description=[
+              "Der &6Impaled Icebreaker&r ist ein im Eis festgefrorenes Schiff. Du findest ihn in &eVereisten Ozeanen&r, der &eEiszapfenebene&r und auf &eVereisten Gipfeln&r.",
+              "",
+              "&eBeute:&r In der Kapitänskajüte liegen immer ein &6Permafrost Shard&r, ein Bündel mit 42 bis 56 Smaragden, ein Fernrohr, eine &6Epic Ink&r (Stufe 3, aufheben) und viel Papier, zu 25 Prozent auch ein Ring oder Amulett.",
+              "",
+              "Der Permafrost Shard ist die Spitze des Ice Staff.",
+          ],
+          tasks=[task_item("irons_spellbooks:permafrost_shard", 1)],
+          rewards=[reward_item("irons_spellbooks:arcane_essence", 8), reward_xp(10)],
+          deps=["cryomancer"], icon="irons_spellbooks:permafrost_shard"),
+
+    quest("necromancer", 6.0, 12.0, "&5Erledige einen Necromancer",
+          subtitle="Der Magier der Katakomben.",
+          description=[
+              "&5Necromancer&r ziehen durch die Katakomben und rufen Untote. Bleib in Bewegung und nimm dir zuerst den Magier vor, nicht seine Diener.",
+              "",
+              "Er lässt 0 bis 4 &6Arcane Essence&r fallen und mit &e25 Prozent&r Chance eine Rolle, nur wenn du ihn selbst tötest. Plünderung erhöht beides.",
+          ],
+          tasks=[task_kill("irons_spellbooks:necromancer", 1)],
+          rewards=[reward_item("irons_spellbooks:arcane_essence", 6), reward_xp(8)],
+          deps=["catacombs"], icon="minecraft:skeleton_skull", optional=True),
+
+    quest("lightning_bottle", 18.0, 2.5, "&eFang einen Blitz in der Flasche",
+          subtitle="Bottle o' Lightning vom geladenen Creeper.",
+          description=[
+              "Ein Creeper, der vom Blitz getroffen wurde, ist &egeladen&r und leuchtet blau. Rechtsklick mit einer leeren &6Glasflasche&r auf ihn ergibt eine &6Bottle o' Lightning&r.",
+              "",
+              "Gewitter abwarten, oder ein Dreizack mit &6Kanalisierung&r ruft den Blitz selbst. Pass auf, ein geladener Creeper sprengt viel stärker.",
+              "",
+              "Die Flasche ist der Fokus für Blitzzauber in der Scroll Forge, und acht davon um einen Blank Runestone ergeben die &6Lightning Rune&r für die &eElectromancer&r-Rüstung.",
+          ],
+          tasks=[task_item("irons_spellbooks:lightning_bottle", 1)],
+          rewards=[reward_item("minecraft:glass_bottle", 8), reward_xp(8)],
+          deps=["focuses"], icon="irons_spellbooks:lightning_bottle", optional=True),
+
+    quest("blood_vial", 20.5, 2.5, "&4Koch ein Blood Vial",
+          subtitle="Kessel, Lagerfeuer, ein Tier.",
+          description=[
+              "Stell einen &6Kessel&r auf ein brennendes &6Lagerfeuer&r und bring ein Tier hinein, etwa mit einer Leine. Es wird zu Blut gekocht, und eine &6Glasflasche&r schöpft daraus ein &6Blood Vial&r.",
+              "",
+              "Das Fläschchen ist der Fokus der Blutschule und mit acht Stück um einen Blank Runestone die &6Blood Rune&r. Mit Create füllt ein Befüller Glasflaschen auch aus Blut im Tank.",
+          ],
+          tasks=[task_item("irons_spellbooks:blood_vial", 1)],
+          rewards=[reward_item("minecraft:glass_bottle", 8), reward_xp(5)],
+          deps=["focuses"], icon="irons_spellbooks:blood_vial", optional=True),
 ]
 
 images = [

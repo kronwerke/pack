@@ -51,7 +51,7 @@
 		{
 			id: "10861B93B2E7A489"
 			x: 4.0d
-			y: 5.51d
+			y: 4.16d
 			icon: {
 				id: "productivetrees:walnut"
 				count: 1
@@ -92,12 +92,11 @@
 		{
 			id: "25BA4E47836657E0"
 			x: 6.0d
-			y: 6.859999999999999d
+			y: 5.66d
 			icon: {
 				id: "productivetrees:walnut_crate"
 				count: 1
 			}
-			hide_dependency_lines: true
 			dependencies: [
 				"10861B93B2E7A489"
 			]
@@ -131,13 +130,12 @@
 		}
 		{
 			id: "3E50797AB2FE6514"
-			x: 7.35d
-			y: 6.859999999999999d
+			x: 6.0d
+			y: 4.16d
 			icon: {
 				id: "productivetrees:pecan_sapling"
 				count: 1
 			}
-			hide_dependency_lines: true
 			dependencies: [
 				"10861B93B2E7A489"
 			]
@@ -171,13 +169,12 @@
 		}
 		{
 			id: "30026024D4CB34E4"
-			x: 8.7d
-			y: 4.16d
+			x: 6.0d
+			y: 7.16d
 			icon: {
 				id: "botanypots:terracotta_hopper_botany_pot"
 				count: 1
 			}
-			hide_dependency_lines: true
 			dependencies: [
 				"10861B93B2E7A489"
 			]
@@ -210,9 +207,324 @@
 			]
 		}
 		{
+			id: "26B862E38D2E66A5"
+			x: 1.85d
+			y: 17.16d
+			icon: {
+				id: "create:encased_fan"
+				count: 1
+			}
+			optional: true
+			hide_dependency_lines: true
+			dependencies: [
+				"25BA4E47836657E0"
+			]
+			tasks: [
+				{
+					id: "5E5D96BC96575FE8"
+					type: "item"
+					item: {
+						id: "productivetrees:roasted_walnut"
+						count: 1
+					}
+					count: 64
+				}
+			]
+			rewards: [
+				{
+					id: "209990036027A861"
+					type: "item"
+					item: {
+						id: "minecraft:campfire"
+						count: 1
+					}
+					count: 1
+				}
+				{
+					id: "4937D1B2458F6056"
+					type: "xp_levels"
+					xp_levels: 4
+				}
+			]
+		}
+		{
+			id: "294ED4DD432038E6"
+			x: 0.25d
+			y: 17.16d
+			icon: {
+				id: "productivetrees:roasted_hazelnut"
+				count: 1
+			}
+			optional: true
+			hide_dependency_lines: true
+			dependencies: [
+				"25BA4E47836657E0"
+			]
+			tasks: [
+				{
+					id: "28E890ED4BDB921B"
+					type: "item"
+					item: {
+						id: "productivetrees:roasted_walnut"
+						count: 1
+					}
+					count: 1
+				}
+				{
+					id: "1425F30F4D35B6E4"
+					type: "item"
+					item: {
+						id: "productivetrees:roasted_pecan"
+						count: 1
+					}
+					count: 1
+				}
+				{
+					id: "3257B2B35321A305"
+					type: "item"
+					item: {
+						id: "productivetrees:roasted_beechnut"
+						count: 1
+					}
+					count: 1
+				}
+				{
+					id: "4C2FF98211D7D77E"
+					type: "item"
+					item: {
+						id: "productivetrees:roasted_brazil_nut"
+						count: 1
+					}
+					count: 1
+				}
+				{
+					id: "1309D0DB5DCB15C8"
+					type: "item"
+					item: {
+						id: "productivetrees:roasted_cashew"
+						count: 1
+					}
+					count: 1
+				}
+				{
+					id: "11DDC47CB1AF163A"
+					type: "item"
+					item: {
+						id: "productivetrees:roasted_butternut"
+						count: 1
+					}
+					count: 1
+				}
+				{
+					id: "2FBAC498F4AE5E82"
+					type: "item"
+					item: {
+						id: "productivetrees:roasted_chestnut"
+						count: 1
+					}
+					count: 1
+				}
+				{
+					id: "1437105C8E9E879E"
+					type: "item"
+					item: {
+						id: "productivetrees:roasted_hazelnut"
+						count: 1
+					}
+					count: 1
+				}
+				{
+					id: "7808C83C0B01CB2C"
+					type: "item"
+					item: {
+						id: "productivetrees:roasted_almond"
+						count: 1
+					}
+					count: 1
+				}
+				{
+					id: "62EA7564D66EECFD"
+					type: "item"
+					item: {
+						id: "productivetrees:roasted_pistachio"
+						count: 1
+					}
+					count: 1
+				}
+				{
+					id: "1EC53E43FECD3117"
+					type: "item"
+					item: {
+						id: "productivetrees:roasted_candlenut"
+						count: 1
+					}
+					count: 1
+				}
+				{
+					id: "55C029C735929BF1"
+					type: "item"
+					item: {
+						id: "productivetrees:roasted_ginkgo_nut"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "747EF6E35ED97F50"
+					type: "item"
+					item: {
+						id: "minecraft:emerald"
+						count: 1
+					}
+					count: 8
+				}
+				{
+					id: "3443FB38511A3459"
+					type: "loot"
+					table_id: 2810828560988712020L
+				}
+			]
+		}
+		{
+			id: "1E66081B7C2F3495"
+			x: 3.45d
+			y: 17.16d
+			icon: {
+				id: "cookingforblockheads:fruit_basket"
+				count: 1
+			}
+			hide_dependency_lines: true
+			dependencies: [
+				"30026024D4CB34E4"
+			]
+			tasks: [
+				{
+					id: "30617BA1F49DC17A"
+					type: "item"
+					item: {
+						id: "productivetrees:granny_smith_apple"
+						count: 1
+					}
+					count: 4
+				}
+				{
+					id: "5BB998012BCFCFB3"
+					type: "item"
+					item: {
+						id: "productivetrees:sand_pear"
+						count: 1
+					}
+					count: 4
+				}
+				{
+					id: "1E293B24081A3FAD"
+					type: "item"
+					item: {
+						id: "productivetrees:wild_cherry"
+						count: 1
+					}
+					count: 4
+				}
+				{
+					id: "6E98A75BACAA2C22"
+					type: "item"
+					item: {
+						id: "productivetrees:banana"
+						count: 1
+					}
+					count: 4
+				}
+				{
+					id: "16C70F8A6D1DEB92"
+					type: "item"
+					item: {
+						id: "productivetrees:olive"
+						count: 1
+					}
+					count: 4
+				}
+				{
+					id: "434EEAE210824D04"
+					type: "item"
+					item: {
+						id: "productivetrees:golden_delicious_apple"
+						count: 1
+					}
+					count: 4
+				}
+				{
+					id: "28AFB3E884D08C5E"
+					type: "item"
+					item: {
+						id: "cookingforblockheads:fruit_basket"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "20C7B3C215F42D58"
+					type: "item"
+					item: {
+						id: "minecraft:emerald"
+						count: 1
+					}
+					count: 6
+				}
+				{
+					id: "3DD962B79A61019B"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+		}
+		{
+			id: "7BF1D62BA4F855C9"
+			x: 5.050000000000001d
+			y: 17.16d
+			icon: {
+				id: "minecraft:composter"
+				count: 1
+			}
+			hide_dependency_lines: true
+			dependencies: [
+				"30026024D4CB34E4"
+			]
+			tasks: [
+				{
+					id: "7ABF783409C0066C"
+					type: "item"
+					item: {
+						id: "minecraft:bone_meal"
+						count: 1
+					}
+					count: 64
+				}
+			]
+			rewards: [
+				{
+					id: "3AFD021BA1A4CCF2"
+					type: "item"
+					item: {
+						id: "minecraft:composter"
+						count: 1
+					}
+					count: 1
+				}
+				{
+					id: "57C51381C93E3C9A"
+					type: "xp_levels"
+					xp_levels: 3
+				}
+			]
+		}
+		{
 			id: "136493FB82A58D3C"
 			x: 0.25d
-			y: 10.709999999999999d
+			y: 14.06d
 			icon: {
 				id: "productivetrees:sawmill"
 				count: 1
@@ -253,7 +565,7 @@
 		{
 			id: "4AFF62A58F9013D4"
 			x: 2.65d
-			y: 10.709999999999999d
+			y: 12.56d
 			icon: {
 				id: "productivetrees:stripper"
 				count: 1
@@ -292,7 +604,7 @@
 		{
 			id: "104DB73B74E08E81"
 			x: 2.65d
-			y: 12.209999999999999d
+			y: 14.06d
 			icon: {
 				id: "productivetrees:mahogany_planks"
 				count: 1
@@ -326,7 +638,7 @@
 		{
 			id: "2D5605B76502A25A"
 			x: 4.65d
-			y: 12.209999999999999d
+			y: 14.06d
 			icon: {
 				id: "create:mechanical_saw"
 				count: 1
@@ -364,9 +676,85 @@
 			]
 		}
 		{
+			id: "1E320F71192A7347"
+			x: 4.65d
+			y: 15.56d
+			icon: {
+				id: "productivetrees:teak_planks"
+				count: 1
+			}
+			optional: true
+			dependencies: [
+				"104DB73B74E08E81"
+			]
+			tasks: [
+				{
+					id: "6BB96CAC5ACD50FB"
+					type: "item"
+					item: {
+						id: "productivetrees:teak_planks"
+						count: 1
+					}
+					count: 16
+				}
+				{
+					id: "5711A0AA44C98CE8"
+					type: "item"
+					item: {
+						id: "productivetrees:balsa_planks"
+						count: 1
+					}
+					count: 16
+				}
+				{
+					id: "7151B75C814DF82D"
+					type: "item"
+					item: {
+						id: "productivetrees:ipe_planks"
+						count: 1
+					}
+					count: 16
+				}
+				{
+					id: "3F8CCA82C24804D1"
+					type: "item"
+					item: {
+						id: "productivetrees:red_maple_planks"
+						count: 1
+					}
+					count: 16
+				}
+				{
+					id: "469B560B7125ACFC"
+					type: "item"
+					item: {
+						id: "productivetrees:yew_planks"
+						count: 1
+					}
+					count: 16
+				}
+			]
+			rewards: [
+				{
+					id: "7E4EBC202BDD89EF"
+					type: "item"
+					item: {
+						id: "minecraft:emerald"
+						count: 1
+					}
+					count: 4
+				}
+				{
+					id: "234070ACC5F6F2A2"
+					type: "xp_levels"
+					xp_levels: 3
+				}
+			]
+		}
+		{
 			id: "18EEE34AB9BDB8CB"
 			x: 4.65d
-			y: 10.709999999999999d
+			y: 12.56d
 			icon: {
 				id: "minecraft:clock"
 				count: 1
@@ -395,8 +783,8 @@
 		}
 		{
 			id: "1F00C065BD608F54"
-			x: 6.0d
-			y: 4.16d
+			x: 14.13d
+			y: 5.76d
 			icon: {
 				id: "productivetrees:granny_smith_apple"
 				count: 1
@@ -435,13 +823,14 @@
 		}
 		{
 			id: "2C705B453292D7D5"
-			x: 4.65d
-			y: 18.81d
+			x: 15.73d
+			y: 5.76d
 			icon: {
 				id: "productivetrees:lemon"
 				count: 1
 			}
 			optional: true
+			hide_dependency_lines: true
 			dependencies: [
 				"268436539E5EED74"
 			]
@@ -475,8 +864,8 @@
 		}
 		{
 			id: "711AF6780B31B937"
-			x: 6.0d
-			y: 5.51d
+			x: 17.330000000000002d
+			y: 5.76d
 			icon: {
 				id: "productivetrees:banana"
 				count: 1
@@ -515,13 +904,14 @@
 		}
 		{
 			id: "21C1BE6B89DF8EA1"
-			x: 4.65d
-			y: 17.31d
+			x: 18.93d
+			y: 5.76d
 			icon: {
 				id: "productivetrees:elderberry"
 				count: 1
 			}
 			optional: true
+			hide_dependency_lines: true
 			dependencies: [
 				"268436539E5EED74"
 			]
@@ -555,8 +945,8 @@
 		}
 		{
 			id: "18874B5E77D1E9E0"
-			x: 7.35d
-			y: 4.16d
+			x: 14.13d
+			y: 7.359999999999999d
 			icon: {
 				id: "productivetrees:cashew"
 				count: 1
@@ -595,8 +985,8 @@
 		}
 		{
 			id: "11D290BB658AA853"
-			x: 14.13d
-			y: 5.76d
+			x: 15.73d
+			y: 7.359999999999999d
 			icon: {
 				id: "productivetrees:cinnamon"
 				count: 1
@@ -637,8 +1027,8 @@
 		}
 		{
 			id: "6DD6D591AAD00C06"
-			x: 15.73d
-			y: 5.76d
+			x: 17.330000000000002d
+			y: 7.359999999999999d
 			icon: {
 				id: "productivetrees:haematoxylin"
 				count: 1
@@ -679,8 +1069,8 @@
 		}
 		{
 			id: "74CE32FE8435DCDD"
-			x: 7.35d
-			y: 5.51d
+			x: 18.93d
+			y: 7.359999999999999d
 			icon: {
 				id: "productivetrees:ceylon_ebony_planks"
 				count: 1
@@ -802,8 +1192,8 @@
 		}
 		{
 			id: "4070CC81A393954E"
-			x: 8.7d
-			y: 5.51d
+			x: 14.13d
+			y: 8.96d
 			icon: {
 				id: "productivetrees:rubber_tree_sapling"
 				count: 1
@@ -838,8 +1228,8 @@
 		}
 		{
 			id: "792BCE1DD1F2E8CE"
-			x: 8.7d
-			y: 6.859999999999999d
+			x: 15.73d
+			y: 8.96d
 			icon: {
 				id: "productivetrees:white_ipe_sapling"
 				count: 1
@@ -879,8 +1269,8 @@
 		}
 		{
 			id: "43CDFCAC9A211246"
-			x: 7.65d
-			y: 10.459999999999999d
+			x: 8.05d
+			y: 14.06d
 			icon: {
 				id: "productivetrees:blue_yonder_sapling"
 				count: 1
@@ -919,9 +1309,49 @@
 			]
 		}
 		{
+			id: "69A08D86B0B6473F"
+			x: 10.05d
+			y: 15.56d
+			icon: {
+				id: "productivetrees:planet_peach"
+				count: 1
+			}
+			optional: true
+			dependencies: [
+				"43CDFCAC9A211246"
+			]
+			tasks: [
+				{
+					id: "786750239C65F7FE"
+					type: "item"
+					item: {
+						id: "productivetrees:planet_peach"
+						count: 1
+					}
+					count: 4
+				}
+			]
+			rewards: [
+				{
+					id: "12AB796508B6BF9F"
+					type: "item"
+					item: {
+						id: "minecraft:golden_carrot"
+						count: 1
+					}
+					count: 4
+				}
+				{
+					id: "2B133D64EDAB6813"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+		}
+		{
 			id: "12DDB1C6EF3BC223"
-			x: 9.65d
-			y: 11.959999999999999d
+			x: 10.05d
+			y: 12.56d
 			icon: {
 				id: "productivetrees:brown_amber_sapling"
 				count: 1
@@ -960,8 +1390,8 @@
 		}
 		{
 			id: "783B67721615934A"
-			x: 9.65d
-			y: 10.459999999999999d
+			x: 10.05d
+			y: 14.06d
 			icon: {
 				id: "productivetrees:purple_spiral_sapling"
 				count: 1
@@ -1002,8 +1432,8 @@
 		}
 		{
 			id: "49746F33B4B3EC52"
-			x: 11.65d
-			y: 10.459999999999999d
+			x: 12.05d
+			y: 14.06d
 			icon: {
 				id: "productivetrees:time_traveller_display"
 				count: 1
@@ -1043,7 +1473,7 @@
 		{
 			id: "279B624240266ED9"
 			x: 0.25d
-			y: 17.31d
+			y: 22.259999999999998d
 			icon: {
 				id: "minecraft:bee_nest"
 				count: 1
@@ -1092,9 +1522,88 @@
 			]
 		}
 		{
+			id: "11132E911E20825A"
+			x: 2.65d
+			y: 23.759999999999998d
+			icon: {
+				id: "minecraft:honey_bottle"
+				count: 1
+			}
+			dependencies: [
+				"279B624240266ED9"
+			]
+			tasks: [
+				{
+					id: "536AD89893E98A15"
+					type: "item"
+					item: {
+						id: "minecraft:honey_bottle"
+						count: 1
+					}
+					count: 4
+				}
+			]
+			rewards: [
+				{
+					id: "67B5E13147267D11"
+					type: "item"
+					item: {
+						id: "minecraft:glass_bottle"
+						count: 1
+					}
+					count: 8
+				}
+				{
+					id: "35721A92C0D6BD01"
+					type: "xp_levels"
+					xp_levels: 3
+				}
+			]
+		}
+		{
+			id: "74D3A0C742FF5EAF"
+			x: 4.65d
+			y: 22.259999999999998d
+			icon: {
+				id: "functionalstorage:oak_4"
+				count: 1
+			}
+			optional: true
+			dependencies: [
+				"268436539E5EED74"
+			]
+			tasks: [
+				{
+					id: "6F7D1AB5DE2CFE8A"
+					type: "item"
+					item: {
+						id: "functionalstorage:oak_4"
+						count: 1
+					}
+					count: 2
+				}
+			]
+			rewards: [
+				{
+					id: "10A7E90C7EF0F892"
+					type: "item"
+					item: {
+						id: "minecraft:bone_meal"
+						count: 1
+					}
+					count: 16
+				}
+				{
+					id: "5EDC2EACCFDFB34D"
+					type: "xp_levels"
+					xp_levels: 3
+				}
+			]
+		}
+		{
 			id: "1BE4DAFDA978406F"
 			x: 2.65d
-			y: 15.809999999999999d
+			y: 20.759999999999998d
 			icon: {
 				id: "productivetrees:silver_lime_sapling"
 				count: 1
@@ -1128,7 +1637,7 @@
 		{
 			id: "268436539E5EED74"
 			x: 2.65d
-			y: 17.31d
+			y: 22.259999999999998d
 			icon: {
 				id: "productivetrees:hazel_sapling"
 				count: 1
@@ -1173,7 +1682,7 @@
 		{
 			id: "2D9E2531E7FB7986"
 			x: 4.65d
-			y: 15.809999999999999d
+			y: 20.759999999999998d
 			icon: {
 				id: "productivetrees:pollen"
 				count: 1
@@ -1217,7 +1726,7 @@
 		{
 			id: "25673FE4B07338A4"
 			x: 4.65d
-			y: 20.81d
+			y: 24.259999999999998d
 			icon: {
 				id: "productivetrees:star_fruit_sapling"
 				count: 1
@@ -1264,8 +1773,8 @@
 		}
 		{
 			id: "458A986922E61DEC"
-			x: 0.0d
-			y: 24.909999999999997d
+			x: 8.15d
+			y: 20.759999999999998d
 			icon: {
 				id: "productivetrees:beech_sapling"
 				count: 1
@@ -1344,8 +1853,8 @@
 		}
 		{
 			id: "42FD6FF97D969429"
-			x: 2.0d
-			y: 24.909999999999997d
+			x: 10.15d
+			y: 20.759999999999998d
 			icon: {
 				id: "productivetrees:walnut_sapling"
 				count: 1
@@ -1423,8 +1932,8 @@
 		}
 		{
 			id: "1C53D98CE08A136C"
-			x: 4.0d
-			y: 24.909999999999997d
+			x: 12.15d
+			y: 20.759999999999998d
 			icon: {
 				id: "productivetrees:slimy_delight_sapling"
 				count: 1
@@ -1494,8 +2003,8 @@
 		}
 		{
 			id: "57EED854FEA4E23E"
-			x: 6.0d
-			y: 24.909999999999997d
+			x: 14.15d
+			y: 20.759999999999998d
 			icon: {
 				id: "productivetrees:banana_sapling"
 				count: 1
@@ -1565,8 +2074,8 @@
 		}
 		{
 			id: "3B669A2A6CC18D2E"
-			x: 8.0d
-			y: 24.909999999999997d
+			x: 16.15d
+			y: 20.759999999999998d
 			icon: {
 				id: "productivetrees:sweet_chestnut_sapling"
 				count: 1
@@ -1640,8 +2149,8 @@
 		}
 		{
 			id: "48DFABD388ACA260"
-			x: 10.0d
-			y: 24.909999999999997d
+			x: 18.15d
+			y: 20.759999999999998d
 			icon: {
 				id: "productivetrees:sugar_maple_sapling"
 				count: 1
@@ -1695,8 +2204,8 @@
 		}
 		{
 			id: "7C41D3EAD74E25C0"
-			x: 12.0d
-			y: 24.909999999999997d
+			x: 20.15d
+			y: 20.759999999999998d
 			icon: {
 				id: "productivetrees:cork_oak_sapling"
 				count: 1
@@ -1774,8 +2283,8 @@
 		}
 		{
 			id: "7C0F5741A161C056"
-			x: 14.0d
-			y: 24.909999999999997d
+			x: 22.15d
+			y: 20.759999999999998d
 			icon: {
 				id: "productivetrees:zebrano_sapling"
 				count: 1
@@ -1849,8 +2358,8 @@
 		}
 		{
 			id: "5A2D3B62DB679D2B"
-			x: 16.0d
-			y: 24.909999999999997d
+			x: 24.15d
+			y: 20.759999999999998d
 			icon: {
 				id: "productivetrees:douglas_fir_sapling"
 				count: 1
@@ -1924,8 +2433,8 @@
 		}
 		{
 			id: "258E3D497931ED1D"
-			x: 0.0d
-			y: 26.509999999999998d
+			x: 8.15d
+			y: 22.36d
 			icon: {
 				id: "productivetrees:rubber_tree_sapling"
 				count: 1
@@ -2000,8 +2509,8 @@
 		}
 		{
 			id: "6FD77EC7EFA9027B"
-			x: 2.0d
-			y: 26.509999999999998d
+			x: 10.15d
+			y: 22.36d
 			icon: {
 				id: "productivetrees:almond_sapling"
 				count: 1
@@ -2071,8 +2580,8 @@
 		}
 		{
 			id: "65E8DBA0194668D1"
-			x: 4.0d
-			y: 26.509999999999998d
+			x: 12.15d
+			y: 22.36d
 			icon: {
 				id: "productivetrees:lemon_sapling"
 				count: 1
@@ -2138,8 +2647,8 @@
 		}
 		{
 			id: "5D7AC0894293B916"
-			x: 6.0d
-			y: 26.509999999999998d
+			x: 14.15d
+			y: 22.36d
 			icon: {
 				id: "productivetrees:cinnamon_sapling"
 				count: 1
@@ -2201,8 +2710,8 @@
 		}
 		{
 			id: "200A4990D4AC9336"
-			x: 8.0d
-			y: 26.509999999999998d
+			x: 16.15d
+			y: 22.36d
 			icon: {
 				id: "productivetrees:orange_sapling"
 				count: 1
@@ -2264,8 +2773,8 @@
 		}
 		{
 			id: "1A9D0C59B14AED26"
-			x: 10.0d
-			y: 26.509999999999998d
+			x: 18.15d
+			y: 22.36d
 			icon: {
 				id: "productivetrees:star_fruit_sapling"
 				count: 1
@@ -2357,7 +2866,7 @@
 			id: "3F327A6065B85903"
 			image: "kronwerke:textures/quests/productive_trees/holz.png"
 			x: 0.31000000000000005d
-			y: 9.009999999999998d
+			y: 11.11d
 			width: 1.62d
 			height: 0.9d
 			rotation: 0.0d
@@ -2366,8 +2875,8 @@
 		{
 			id: "6C0A4C83D9779C10"
 			image: "kronwerke:textures/quests/productive_trees/funde.png"
-			x: 12.225000000000001d
-			y: 9.009999999999998d
+			x: 12.625d
+			y: 11.11d
 			width: 10.15d
 			height: 0.9d
 			rotation: 0.0d
@@ -2377,7 +2886,7 @@
 			id: "781025FB83FACB22"
 			image: "kronwerke:textures/quests/productive_trees/zucht.png"
 			x: 0.7350000000000001d
-			y: 14.359999999999998d
+			y: 19.31d
 			width: 2.47d
 			height: 0.9d
 			rotation: 0.0d
@@ -2386,8 +2895,8 @@
 		{
 			id: "2074C436631C7947"
 			image: "kronwerke:textures/quests/productive_trees/liste.png"
-			x: 4.755d
-			y: 23.459999999999997d
+			x: 12.905000000000001d
+			y: 19.31d
 			width: 10.51d
 			height: 0.9d
 			rotation: 0.0d

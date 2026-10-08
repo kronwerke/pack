@@ -18,10 +18,10 @@ def pic(item_id, size=32):
     return img(item_texture(item_id), size, size)
 
 
-def alloy(name, x, y, title, subtitle, recipe, use, item, count, reward, deps=("smelter",), icon=None):
+def alloy(name, x, y, title, subtitle, recipe, use, item, count, reward, deps=("smelter",), icon=None, section=None):
     """One alloy smelter recipe as a checklist quest."""
     return quest(name, x, y, title, subtitle=subtitle, description=[recipe, "", use],
-                 tasks=[task_item(item, count)], rewards=reward, deps=list(deps), icon=icon or item)
+                 tasks=[task_item(item, count)], rewards=reward, deps=list(deps), icon=icon or item, section=section)
 
 
 quests = [
@@ -63,7 +63,7 @@ quests = [
           rewards=[reward_item("minecraft:iron_nugget", 16)],
           deps=["grains"], icon="enderio:iron_gear"),
 
-    quest("chassis", 2.5, 3.5, "&7Bau ein Gehäuse der Leere",
+    quest("chassis", 5, -0.5, "&7Bau ein Gehäuse der Leere",
           subtitle="Der Rumpf der einfachen Maschinen.",
           description=[
               "Vier &6Eisenbarren&r in die Ecken, vier &6Körner&r an die Seiten, die Mitte bleibt frei.",
@@ -118,7 +118,7 @@ quests = [
           rewards=[reward_item("enderio:energetic_alloy_ingot", 2), reward_xp(8)],
           deps=["cap_bank", "energetic"], icon="enderio:double_layer_capacitor"),
 
-    quest("cap_octadic", 12.5, 4, "&6Bau einen Oktadischen Kondensator",
+    quest("cap_octadic", 12.5, 3.5, "&6Bau einen Oktadischen Kondensator",
           subtitle="Die höchste gebaute Stufe.",
           description=[
               "Zwei &6Doppelschichtkondensatoren&r links und rechts, ein &6Glowsteinblock&r in die Mitte, ein &6Strahlender Legierungsbarren&r oben und unten.",
@@ -139,7 +139,7 @@ quests = [
           "Ein &6Redstone&r und ein &6Kupferbarren&r geben einen &6Redstone-Legierungsbarren&r.",
           "Daraus werden &6Redstone-Leitungen&r, die Lackiermaschine und der Impulstrichter.",
           "enderio:redstone_alloy_ingot", 8,
-          [reward_item("minecraft:redstone", 16)]),
+          [reward_item("minecraft:redstone", 16)], section="alloys"),
     alloy("energetic", 13, -1, "&6Legier Energetische Legierung", "Redstone, Leitfähig, Gold.",
           "Ein &6Redstone&r, ein &6Leitfähiger Legierungsbarren&r und ein &6Goldbarren&r geben zwei Barren.",
           "Steckt im &6Energetisierten Bimetallzahnrad&r (Legierung um ein Unendlichkeitszahnrad), im Doppelschichtkondensator und in den schnellen Leitungen.",
@@ -164,7 +164,7 @@ quests = [
           "Ein &6Eisenbarren&r und ein &6Kohlestaub&r geben einen &6Stahlbarren&r von Oritech.",
           "&eKronwerke:&r Jeder Stahlbarren zählt am Obelisken für &6Der Ofen schläft nie&r. Sägemühle für Kohlestaub davor, Kiste am Obelisken dahinter: eine kleine Stahlstraße.",
           "oritech:steel_ingot", 32,
-          [reward_item("minecraft:iron_ingot", 16), reward_xp(5)]),
+          [reward_item("minecraft:iron_ingot", 16), reward_xp(5)], section="alloys"),
     alloy("fused_quartz", 15.5, 1, "&fSchmelz Quarzglas und Klares Glas", "Durchsichtig, und manches leuchtet.",
           "Vier &6Netherquarz&r oder ein Quarzblock geben ein &6Quarzglas&r. Ein &6Glas&r allein wird &6Klares Glas&r.",
           "Klares Glas steckt in der Flüssigkeitsleitung, Quarzglas in der Seelenampulle und den schnellen Flüssigkeitsleitungen. Mit Glowstone dazu leuchtet es, mit Amethyst wird es dunkel.",
@@ -252,7 +252,7 @@ quests = [
           ],
           tasks=[task_item("enderio:soularium_ingot", 16)],
           rewards=[reward_item("minecraft:soul_sand", 32)],
-          deps=["smelter"]),
+          deps=["smelter"], section="souls"),
 
     quest("vial", 13, 6, "&dFang einen Mob in die Ampulle",
           subtitle="Ein Mob passt in eine Flasche.",
@@ -336,7 +336,7 @@ quests = [
           ],
           tasks=[task_item("enderio:enchanter", 1)],
           rewards=[reward_item("minecraft:lapis_lazuli", 32), reward_xp(10)],
-          deps=["dark_steel"], icon="enderio:enchanter"),
+          deps=["dark_steel"], icon="enderio:enchanter", section="useful"),
 
     quest("vacuum_chest", 13, 12, "&9Stell eine Vakuumkiste auf",
           subtitle="Herumliegendes landet von selbst darin.",
@@ -358,7 +358,126 @@ quests = [
           ],
           tasks=[task_checkmark("Verstanden")],
           rewards=[reward_item("minecraft:bone_meal", 32)],
-          deps=["smelter"], icon="minecraft:wheat", optional=True),
+          deps=["smelter"], icon="minecraft:wheat", optional=True, section="useful"),
+
+    # ---- neue Quests: Kondensatoren --------------------------------------------
+    quest("solar", 15, 3.5, "&eBau Fotovoltaikmodule",
+          subtitle="Strom aus Sonnenlicht, ohne Brennstoff.",
+          description=[
+              "&6Pulverisiertes Lapislazuli&r, &6Pulverisierte Kohle&r und &6Silikon&r formlos ergeben einen &6Fotovoltaik Verbundstoff&r. Zwei davon in der Legierungsschmelze ergeben eine &6Fotovoltaikplatte&r. Staub und Silikon liefert die Sägemühle.",
+              "",
+              "&6Energetisches Fotovoltaikmodul:&r Gold, Glas, Gold oben, drei Fotovoltaikplatten in der Mitte, Einfacher Kondensator, Redstone, Einfacher Kondensator unten.",
+              "",
+              "Es liefert bei Tageslicht bis zu &d4 µI/t&r und braucht freie Sicht zum Himmel. Wenig, aber für immer und ohne Wartung. Gut, um eine Kondensatorbank tagsüber nachzufüllen.",
+          ],
+          tasks=[task_item("enderio:energetic_photovoltaic_module", 2)],
+          rewards=[reward_item("enderio:silicon", 8), reward_xp(10)],
+          deps=["cap_bank", "sag_mill"], icon="enderio:energetic_photovoltaic_module"),
+
+    quest("solar_pulsating", 17.5, 3.5, "&bRüste auf Pulsierende Fotovoltaik auf",
+          subtitle="Viermal so viel Sonne.",
+          description=[
+              "Pulsierende Legierung, &6Erleuchtetes Quarzglas&r, Pulsierende Legierung oben, Fotovoltaikplatte, &6Pulverisierte Kohle&r, Fotovoltaikplatte in der Mitte, &6Doppelschichtkondensator&r, ein &6Energetisches Fotovoltaikmodul&r, Doppelschichtkondensator unten.",
+              "",
+              "Es liefert bei Tageslicht bis zu &d16 µI/t&r. Das &6Strahlende Fotovoltaikmodul&r als nächste Stufe schafft &d64 µI/t&r.",
+              "",
+              "Erleuchtetes Quarzglas schmilzt du in der Legierungsschmelze aus Quarzglas und einem Glowsteinblock oder vier Glowsteinstaub.",
+          ],
+          tasks=[task_item("enderio:pulsating_photovoltaic_module", 1)],
+          rewards=[reward_item("enderio:pulsating_alloy_ingot", 4), reward_xp(10)],
+          deps=["solar", "cap_double", "pulsating"], icon="enderio:pulsating_photovoltaic_module", optional=True),
+
+    # ---- neue Quests: Mahlen und Leiten ----------------------------------------
+    quest("painting", 0, 10, "&9Versteck deine Leitungen",
+          subtitle="Lackiergerät und Leitungs-Fassade.",
+          description=[
+              "&6Lackiergerät:&r roter, grüner und blauer Farbstoff oben, Leitfähige Legierung, &6Gehäuse der Leere&r, Leitfähige Legierung in der Mitte, Zahnrad, Redstone-Legierung, Zahnrad unten. &6Leitungs-Fassade:&r acht Bindemittel im Kreis.",
+              "",
+              "Leg die Fassade und einen beliebigen Block ins Lackiergerät: die Fassade nimmt dessen Aussehen an, für &d2 400 µI&r. Rechtsklick damit auf eine Leitung verkleidet sie.",
+              "",
+              "So verschwinden deine Leitungen in Wand und Boden und laufen trotzdem weiter. Der Yeta-Schraubenschlüssel kommt weiter an sie heran.",
+          ],
+          tasks=[task_item("enderio:painting_machine", 1), task_item("enderio:conduit_facade", 4)],
+          rewards=[reward_item("enderio:conduit_binder", 16), reward_xp(5)],
+          deps=["conduits"], icon="enderio:painting_machine", optional=True),
+
+    # ---- neue Quests: Seelen ---------------------------------------------------
+    quest("xp_obelisk", 18.5, 9, "&aSpeicher Erfahrung im EP-Obelisken",
+          subtitle="Deine Level auf Vorrat, verlustfrei.",
+          description=[
+              "&6Erfahrungsstab:&r zwei Soularium, zwei &6Verdächtige Samen&r und ein Strahlender Legierungsbarren. Der Stab oben, ein Soularium darunter, Soularium, &6Versiegeltes Gerüst&r, Soularium unten ergeben den &6EP-Obelisken&r.",
+              "",
+              "Im Fenster legst du 1, 10 oder alle Level ab und holst sie genauso wieder. Er speichert sie als flüssige Erfahrung, die auch der Seelenbinder trinkt.",
+              "",
+              "Verdächtige Samen fallen manchmal, wenn du Grundgestein für Körner der Ewigkeit anzündest.",
+          ],
+          tasks=[task_item("enderio:xp_obelisk", 1)],
+          rewards=[reward_item("minecraft:experience_bottle", 16), reward_xp(15)],
+          deps=["ens_chassis", "vibrant"], icon="enderio:xp_obelisk"),
+
+    quest("powered_spawner", 21, 9, "&cBau einen Energiebetriebenen Spawner",
+          subtitle="Ein Spawner, der mit Strom läuft.",
+          description=[
+              "Soularium, &6Kaputter Spawner&r, Soularium oben, Soularium, &6Versiegeltes Gerüst&r, Soularium in der Mitte, &6Strahlender Kristall&r, &6Z-Logic Regler&r, Strahlender Kristall unten. Im Seelenbinder bekommt er mit einer vollen Seelenampulle seinen Mob.",
+              "",
+              "Er hat zwei Modi: &eMobs spawnen&r oder &eMobs einfangen&r. Stehen zu viele Mobs oder zu viele Spawner in der Nähe, hält er an und zeigt den Grund im Fenster.",
+              "",
+              "Mit einer Vakuumkiste und dem Schwert Der Ender oder einem Monsterschnetzler daneben wird daraus eine Farm.",
+          ],
+          tasks=[task_item("enderio:powered_spawner", 1)],
+          rewards=[reward_item("enderio:soularium_ingot", 4), reward_table("s3_uncommon"), reward_xp(15)],
+          deps=["soul_binder"], icon="enderio:powered_spawner", optional=True),
+
+    quest("aversion", 23.5, 9, "&5Stell einen Abweisenden Obelisken auf",
+          subtitle="Keine Monster rund um die Basis.",
+          description=[
+              "Ein &6Endermankopf&r oben, Energetische Legierung, Soularium, Energetische Legierung in der Mitte, Soularium, &6Versiegeltes Gerüst&r, Soularium unten. Endermanköpfe nimmt das Schwert &6Der Ender&r manchmal mit.",
+              "",
+              "Mit Strom, &d20 µI/t&r, verhindert er im Umkreis von &e16 Blöcken&r das Spawnen der Mobs, die du im Seelenfilter einträgst. Ohne Seelenfilter tut er nichts.",
+              "",
+              "&6Einfacher Seelen-Filter:&r vier Papier um eine &6Seelenampulle&r. Welche Mobs er meint, stellst du im Filter selbst ein.",
+          ],
+          tasks=[task_item("enderio:aversion_obelisk", 1), task_item("enderio:basic_soul_filter", 1)],
+          rewards=[reward_item("enderio:soul_vial", 2), reward_xp(10)],
+          deps=["vial", "ens_chassis", "energetic"], icon="enderio:aversion_obelisk", optional=True),
+
+    # ---- neue Quests: Nützliches -----------------------------------------------
+    quest("travel", 18, 12, "&dReise mit Ankern und Stab",
+          subtitle="Teleport von Anker zu Anker.",
+          description=[
+              "&6Reiseanker:&r Eisen in die Ecken, Bindemittel an die Seiten, ein &6Pulsierender Kristall&r in die Mitte. &6Stab des Reisenden:&r zwei Dunkelstahlbarren schräg und ein &6Enderkristall&r an der Spitze. Den Enderkristall bindet der Seelenbinder aus einem Enderman und einem Strahlenden Kristall.",
+              "",
+              "Mit dem Stab teleportierst du dich zu einem Anker, auf den du schaust, bis &e192 Blöcke&r weit. Von Anker zu Anker sind es &e96 Blöcke&r. Ohne Anker im Blick springt der Stab bis zu &e24 Blöcke&r weit.",
+              "",
+              "Jeder Sprung kostet &d1 000 µI&r aus dem Stab, er speichert 100 000. Laden geht im Kabelgebundenen Ladegerät.",
+          ],
+          tasks=[task_item("enderio:travel_anchor", 2), task_item("enderio:staff_of_travelling", 1)],
+          rewards=[reward_item("enderio:pulsating_crystal", 1), reward_table("s3_uncommon"), reward_xp(15)],
+          deps=["vacuum_chest", "soul_binding"], icon="enderio:staff_of_travelling"),
+
+    quest("charger", 20.5, 12, "&eLad Werkzeuge am Ladegerät",
+          subtitle="Volle Akkus für Stab und Co.",
+          description=[
+              "Acht &6Leitfähige Legierungsbarren&r um ein &6Gehäuse der Leere&r ergeben das &6Kabelgebundene Ladegerät&r. Gegenstand hinein, Strom dran, voll wieder heraus.",
+              "",
+              "Das &6Drahtlose Ladegerät&r (ein &6Enderresonator&r unten statt einer Legierung) lädt die Gegenstände aller Spieler im Umkreis von &e16 Blöcken&r, ohne dass du sie hineinlegst. Den Enderresonator macht Schlitz'und'Spleiß aus Endermankopf, Soularium, Silikon und Strahlender Legierung.",
+          ],
+          tasks=[task_item("enderio:wired_charger", 1)],
+          rewards=[reward_item("enderio:conductive_alloy_ingot", 8), reward_xp(5)],
+          deps=["conduits"], icon="enderio:wired_charger", section="useful"),
+
+    quest("crafter", 23, 12, "&7Lass den Fertiger arbeiten",
+          subtitle="Eine Werkbank, die allein baut.",
+          description=[
+              "Drei &6Silikon&r oben, Eisen, &6Gehäuse der Leere&r, Eisen in der Mitte, Zahnrad, &6Werkbank&r, Zahnrad unten ergeben den &6Fertiger&r.",
+              "",
+              "Im Fenster legst du ein Rezept fest. Zutaten kommen per Leitung oder Trichter hinein, das Ergebnis geht hinaus, solange Strom da ist.",
+              "",
+              "Ideal für Dinge, die du ständig brauchst: Leitungsbinder-Verbundstoff, Bindemittel zu Leitungen, Nuggets zu Barren.",
+          ],
+          tasks=[task_item("enderio:crafter", 1)],
+          rewards=[reward_item("enderio:silicon", 8), reward_xp(5)],
+          deps=["conduits"], icon="enderio:crafter", section="useful"),
 ]
 
 images = [

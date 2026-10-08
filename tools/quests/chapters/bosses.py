@@ -386,6 +386,111 @@ quests = [
           tasks=[task_kill("mowziesmobs:frostmaw", 1)],
           rewards=[reward_table("s1_uncommon"), reward_xp(20)],
           deps=["wroughtnaut"], icon="mowziesmobs:ice_crystal"),
+    # ---- Neu ------------------------------------------------------------------
+    quest("b_group_scaling", -0.5, -1.3, "&eRechne mit der Gruppe",
+          subtitle="Kronwerke Core macht Bosse für jede Gruppe passend.",
+          description=[
+              "Die großen Bosse von Cataclysm und Mowzie's Mobs, der Wither und der Enderdrache wachsen mit der Zahl der Spieler: Für jeden Spieler nach dem ersten bekommen sie &d60 Prozent&r mehr Leben und &d15 Prozent&r mehr Schaden, bis zu acht Spielern.",
+              "",
+              "Ab zwei Spielern setzen sie außerdem alle &d12 Sekunden&r einen &eBlitz&r (8 Schaden) und eine &eSchockwelle&r (6 Schaden) ein. Verteilt euch, statt alle auf einem Haufen zu stehen.",
+              "",
+              "&eUnd mit jeder Stufe:&r Alle feindlichen Mobs werden stärker, in Stufe 2 mit &d30 Prozent&r mehr Leben, in Stufe 3 mit &d70&r, in Stufe 4 mit &d120&r und in Stufe 5 mit &d180 Prozent&r. Was du jetzt schon schaffst, ist später härter.",
+          ],
+          tasks=[task_checkmark("Verstanden")],
+          rewards=[reward_item("minecraft:golden_apple", 1), reward_xp(5)],
+          deps=["rules"], icon="minecraft:player_head"),
+
+    quest("b_bone_reptile", 10.5, -1.3, "&6Bau die Knochenreptil-Rüstung",
+          subtitle="Koboletons haben genug Knochen für alle.",
+          description=[
+              "Erleg &e5 Koboletons&r in der Pyramide. Sie lassen &6Koboleton-Knochen&r und Altmetall fallen.",
+              "",
+              "&6Helm:&r Kobolediator-Schädel, 2 Altmetallbarren und 2 Knochen. &6Brustplatte:&r 4 Altmetallbarren und 4 Knochen. Mit beiden Teilen gehst du deutlich sicherer in den Kampf gegen den Ancient Remnant.",
+          ],
+          tasks=[task_kill("cataclysm:koboleton", 5), task_item("cataclysm:bone_reptile_helmet", 1),
+                 task_item("cataclysm:bone_reptile_chestplate", 1)],
+          rewards=[reward_item("cataclysm:ancient_metal_ingot", 2), reward_xp(10)],
+          deps=["desert_minibosses"], icon="cataclysm:bone_reptile_chestplate", optional=True),
+
+    quest("b_draugr", 16, -1.3, "&bSchmiede eine Schwarzstahl-Tartsche",
+          subtitle="Draugr liefern den Stahl.",
+          description=[
+              "Erleg &e10 Draugr&r im Frosted Prison und sammle ihren &6Schwarzstahl&r.",
+              "",
+              "Ein &6Schwarzstahlbarren&r in der Mitte, &64 Schwarzstahl-Nuggets&r in den Ecken und &64 Bretter&r dazwischen ergeben die &6Schwarzstahl-Tartsche&r, einen Schild aus Stahl. Gegen die Schläge von Maledictus willst du etwas in der Hand haben.",
+          ],
+          tasks=[task_kill("cataclysm:draugr", 10), task_item("cataclysm:black_steel_targe", 1)],
+          rewards=[reward_item("cataclysm:black_steel_ingot", 2), reward_xp(10)],
+          deps=["prison_find"], icon="cataclysm:black_steel_targe", optional=True),
+
+    quest("b_prowler", 13.5, 6.5, "&7Leg einen Prowler still",
+          subtitle="Die Wachmaschine der alten Fabrik.",
+          description=[
+              "Erleg einen &cProwler&r in der alten Fabrik. Er hat &e160 Lebenspunkte&r und Rüstung 10, feuert Zielsuchraketen und einen Todeslaser.",
+              "",
+              "Bleib in Bewegung und geh hinter Säulen in Deckung, wenn er auflädt. Zur Belohnung gibt er &e5 bis 7 Eisen&r und &e5 bis 9 Redstone&r, eine gute Übung für den Harbinger.",
+          ],
+          tasks=[task_kill("cataclysm:the_prowler", 1)],
+          rewards=[reward_item("minecraft:iron_ingot", 8), reward_xp(10)],
+          deps=["factory_find"], icon="minecraft:redstone_block", optional=True),
+
+    quest("b_thrasher", 2.5, 11, "&8Erleg einen Skelett-Drescher",
+          subtitle="Ein Hammer, der dich vom Feld schlägt.",
+          description=[
+              "Erleg einen &cSkelett-Drescher&r. Er hat 50 Lebenspunkte, Rüstung 10 und schlägt mit seinem Hammer für 8, mit viel Rückstoß.",
+              "",
+              "Er lässt Knochen, Dunkelmetall und manchmal einen ganzen &6Haufen Dunkelmetall&r fallen, dazu selten seinen Schild und mit Glück den &6Skullbreaker Hammer&r. Kämpf mit dem Rücken zur Wand, nicht am Abgrund.",
+          ],
+          tasks=[task_kill("born_in_chaos_v1:skeleton_thrasher", 1)],
+          rewards=[reward_item("born_in_chaos_v1:pieceofdarkmetal", 4), reward_xp(8)],
+          deps=["dark_metal"], icon="born_in_chaos_v1:skullbreaker_hammer", optional=True),
+
+    quest("b_umvuthi", -3, 14, "&6Besiege Umvuthi, den Sonnenvogel",
+          subtitle="Der Herrscher des Hains in der Savanne.",
+          description=[
+              "Finde den &6Hain der Umvuthana&r in einer Savanne. Seine Krieger tragen Masken, auf dem Thron sitzt &cUmvuthi&r mit &e150 Lebenspunkten&r. Er ruft seine Krieger zu Hilfe und schießt mit Sonnenfeuer.",
+              "",
+              "&eBeute:&r die &6Sol Visage&r. Sie zerbricht nie. Trägst du sie und hältst eine Umvuthana-Maske in der Hand, rufst du mit Rechtsklick einen Krieger, der für dich kämpft. Rechtsklick auf ihn schickt ihn zurück in die Maske.",
+          ],
+          tasks=[task_kill("mowziesmobs:umvuthi", 1)],
+          rewards=[reward_table("s1_uncommon"), reward_xp(20)],
+          deps=["wroughtnaut"], icon="mowziesmobs:sol_visage"),
+
+    quest("b_sculptor", -5.5, 14, "&7Besteh die Prüfung des Bildhauers",
+          subtitle="Klettern statt kämpfen.",
+          description=[
+              "Auf den Berggipfeln wartet &cTongbi, der Bildhauer&r. Sprich ihn an und starte die Prüfung: Klettere den Felsenparcours bis ganz oben, etwa &e60 Blöcke&r, und klick ihn dort an, bevor die Zeit abläuft. Blöcke setzen, abbauen, teleportieren und fliegen sind verboten.",
+              "",
+              "Wer besteht, bekommt den &6Earthrend Gauntlet&r: Er hebt Felsbrocken aus dem Boden und schleudert sie, gräbt dich durch die Erde und hebt dich auf einer Erdsäule nach oben. Er lädt sich im Inventar wieder auf.",
+              "",
+              "Wer ihn lieber bekämpft (&e140 Lebenspunkte&r), bekommt die Geomanten-Kleidung und den Geomanten-Stab.",
+          ],
+          tasks=[task_item("mowziesmobs:earthrend_gauntlet", 1)],
+          rewards=[reward_table("s1_uncommon"), reward_xp(20)],
+          deps=["wroughtnaut"], icon="mowziesmobs:earthrend_gauntlet", optional=True),
+
+    quest("b_foliaath", -5.5, 9, "&2Zieh dir einen Foliaath",
+          subtitle="Eine fleischfressende Pflanze als Wache.",
+          description=[
+              "&6Foliaathe&r sind große Fangpflanzen im Dschungel. Sie stehen still im Laub und schnappen zu, wenn du vorbeigehst. Erlegte lassen manchmal einen &6Foliaath-Samen&r fallen.",
+              "",
+              "Pflanz ihn auf Gras. Der kleine Foliaath bekommt jeden halben Tag Hunger, wirf ihm dann Fleisch hin. Nach zwei Tagen ist er ausgewachsen und schnappt nach allem, was deiner Basis zu nahe kommt.",
+          ],
+          tasks=[task_item("mowziesmobs:foliaath_seed", 1)],
+          rewards=[reward_item("minecraft:cooked_beef", 16), reward_xp(5)],
+          deps=["wroughtnaut"], icon="mowziesmobs:foliaath_seed", optional=True),
+
+    quest("b_grottol", -5.5, 11.5, "&bFang einen Grottol",
+          subtitle="Ein Steinwesen mit Diamanten auf dem Rücken.",
+          description=[
+              "Tief unten, unter &eY 16&r im Stein, krabbelt manchmal ein &6Grottol&r herum, ein kleines Wesen mit Diamanten auf dem Rücken. Er ist scheu und flieht, sobald er dich bemerkt.",
+              "",
+              "Erleg ihn, und er lässt einen &6Diamanten&r fallen. Schleich dich an und schneid ihm den Weg ab, bevor er in einem Gang verschwindet.",
+          ],
+          tasks=[task_kill("mowziesmobs:grottol", 1)],
+          rewards=[reward_item("minecraft:torch", 32), reward_xp(5)],
+          deps=["wroughtnaut"], icon="minecraft:diamond", optional=True),
+
 ]
 
 images = [

@@ -95,8 +95,8 @@
 		}
 		{
 			id: "1C73E7DE9BF8CAA8"
-			x: 6.55d
-			y: 6.1d
+			x: 0.25d
+			y: 14.1d
 			icon: {
 				id: "minecraft:echo_shard"
 				count: 1
@@ -138,15 +138,14 @@
 		}
 		{
 			id: "7056FC6DBFCD7835"
-			x: 8.35d
-			y: 14.6d
+			x: 2.65d
+			y: 14.1d
 			icon: {
 				id: "deeperdarker:heart_of_the_deep"
 				count: 1
 			}
 			size: 1.75d
 			shape: "diamond"
-			hide_dependency_lines: true
 			dependencies: [
 				"1C73E7DE9BF8CAA8"
 			]
@@ -191,8 +190,8 @@
 		}
 		{
 			id: "6019E024D0CFA393"
-			x: 10.95d
-			y: 14.6d
+			x: 5.25d
+			y: 15.975d
 			icon: {
 				id: "deeperdarker:reinforced_echo_shard"
 				count: 1
@@ -239,15 +238,14 @@
 		}
 		{
 			id: "3126B18D4588AAA3"
-			x: 8.9d
-			y: 6.1d
+			x: 5.25d
+			y: 14.1d
 			icon: {
 				id: "minecraft:reinforced_deepslate"
 				count: 1
 			}
 			size: 1.75d
 			shape: "hexagon"
-			hide_dependency_lines: true
 			dependencies: [
 				"7056FC6DBFCD7835"
 			]
@@ -281,15 +279,14 @@
 		}
 		{
 			id: "79D63CED3782198B"
-			x: 0.375d
-			y: 12.85d
+			x: 7.85d
+			y: 14.1d
 			icon: {
 				id: "deeperdarker:sculk_stone"
 				count: 1
 			}
 			size: 1.75d
 			shape: "hexagon"
-			hide_dependency_lines: true
 			hide_dependent_lines: true
 			dependencies: [
 				"3126B18D4588AAA3"
@@ -329,8 +326,8 @@
 		}
 		{
 			id: "5030F9D7D837F573"
-			x: 6.55d
-			y: 4.125d
+			x: 6.3d
+			y: 5.625d
 			icon: {
 				id: "deeperdarker:sculk_gleam"
 				count: 1
@@ -369,8 +366,8 @@
 		}
 		{
 			id: "5804CBE7C2BE0961"
-			x: 14.16d
-			y: 7.125d
+			x: 6.3d
+			y: 4.125d
 			icon: {
 				id: "deeperdarker:echo_log"
 				count: 1
@@ -409,8 +406,8 @@
 		}
 		{
 			id: "1A5942A994C46EF6"
-			x: 14.16d
-			y: 4.125d
+			x: 6.3d
+			y: 7.125d
 			icon: {
 				id: "deeperdarker:bloom_berries"
 				count: 1
@@ -458,8 +455,8 @@
 		}
 		{
 			id: "17E9A2D481705080"
-			x: 14.16d
-			y: 5.625d
+			x: 6.3d
+			y: 8.625d
 			icon: {
 				id: "deeperdarker:gloomslate"
 				count: 1
@@ -498,8 +495,8 @@
 		}
 		{
 			id: "2CAACEC5BA948074"
-			x: 16.16d
-			y: 7.125d
+			x: 8.3d
+			y: 5.625d
 			icon: {
 				id: "minecraft:recovery_compass"
 				count: 1
@@ -536,12 +533,13 @@
 		}
 		{
 			id: "2983E934CA8AEC75"
-			x: 2.975d
-			y: 12.85d
+			x: 11.55d
+			y: 4.125d
 			icon: {
 				id: "deeperdarker:sculk_stone_bricks"
 				count: 1
 			}
+			hide_dependency_lines: true
 			dependencies: [
 				"79D63CED3782198B"
 			]
@@ -584,8 +582,8 @@
 		}
 		{
 			id: "6302968036571E8A"
-			x: 4.975d
-			y: 12.85d
+			x: 13.55d
+			y: 4.125d
 			icon: {
 				id: "deeperdarker:gloomslate_light"
 				count: 1
@@ -623,12 +621,13 @@
 		}
 		{
 			id: "66D79B61D760D2D0"
-			x: 16.16d
-			y: 8.875d
+			x: 11.55d
+			y: 7.225d
 			icon: {
 				id: "deeperdarker:echo_planks"
 				count: 1
 			}
+			hide_dependency_lines: true
 			dependencies: [
 				"5804CBE7C2BE0961"
 			]
@@ -671,12 +670,13 @@
 		}
 		{
 			id: "2FB7345AABF89207"
-			x: 8.55d
-			y: 4.125d
+			x: 13.15d
+			y: 7.225d
 			icon: {
 				id: "deeperdarker:gleam_gel"
 				count: 1
 			}
+			hide_dependency_lines: true
 			dependencies: [
 				"5030F9D7D837F573"
 			]
@@ -710,8 +710,8 @@
 		}
 		{
 			id: "6BEF9F3B83B02EDA"
-			x: 8.35d
-			y: 16.575d
+			x: 11.225d
+			y: 12.225d
 			icon: {
 				id: "deeperdarker:sculk_snapper_spawn_egg"
 				count: 1
@@ -756,8 +756,8 @@
 		}
 		{
 			id: "4256647EF926EB9F"
-			x: 8.35d
-			y: 12.725d
+			x: 11.225d
+			y: 13.725d
 			icon: {
 				id: "deeperdarker:sculk_bone"
 				count: 1
@@ -798,8 +798,8 @@
 		}
 		{
 			id: "4C6EC1A3A1353E98"
-			x: 10.95d
-			y: 12.725d
+			x: 13.225d
+			y: 13.725d
 			icon: {
 				id: "deeperdarker:infested_sculk"
 				count: 1
@@ -834,8 +834,8 @@
 		}
 		{
 			id: "172457095726767C"
-			x: 12.95d
-			y: 12.725d
+			x: 15.225d
+			y: 13.725d
 			icon: {
 				id: "deeperdarker:shriek_worm_spawn_egg"
 				count: 1
@@ -868,8 +868,8 @@
 		}
 		{
 			id: "79AF3C572A89ADA2"
-			x: 0.375d
-			y: 20.55d
+			x: 11.225d
+			y: 16.825d
 			icon: {
 				id: "deeperdarker:resonarium"
 				count: 1
@@ -915,7 +915,7 @@
 		{
 			id: "605DFC279042734B"
 			x: 0.375d
-			y: 22.8d
+			y: 22.3d
 			icon: {
 				id: "deeperdarker:sculk_stone_tiles"
 				count: 1
@@ -959,7 +959,7 @@
 		{
 			id: "6638841DC971D9F3"
 			x: 2.975d
-			y: 22.8d
+			y: 22.3d
 			icon: {
 				id: "deeperdarker:soul_crystal"
 				count: 1
@@ -1011,7 +1011,7 @@
 		{
 			id: "1A0BED7B0A6A3FBA"
 			x: 2.975d
-			y: 24.925d
+			y: 24.425d
 			icon: {
 				id: "deeperdarker:sculk_transmitter"
 				count: 1
@@ -1047,12 +1047,13 @@
 		}
 		{
 			id: "52365814DA71B494"
-			x: 12.95d
-			y: 14.475d
+			x: 8.95d
+			y: 23.525000000000002d
 			icon: {
 				id: "deeperdarker:soul_dust"
 				count: 1
 			}
+			hide_dependency_lines: true
 			dependencies: [
 				"4C6EC1A3A1353E98"
 			]
@@ -1104,13 +1105,14 @@
 		}
 		{
 			id: "3AFF728DE116035B"
-			x: 2.975d
-			y: 20.55d
+			x: 8.95d
+			y: 20.8d
 			icon: {
 				id: "deeperdarker:resonarium_chestplate"
 				count: 1
 			}
 			size: 1.75d
+			hide_dependency_lines: true
 			dependencies: [
 				"79AF3C572A89ADA2"
 				"605DFC279042734B"
@@ -1159,8 +1161,8 @@
 		}
 		{
 			id: "3A6736BDD169D06B"
-			x: 9.325d
-			y: 20.925d
+			x: 12.049999999999999d
+			y: 23.525000000000002d
 			icon: {
 				id: "deeperdarker:sculk_bone"
 				count: 1
@@ -1206,7 +1208,7 @@
 		{
 			id: "60564CC10A27AA74"
 			x: 5.575d
-			y: 22.8d
+			y: 23.8d
 			icon: {
 				id: "deeperdarker:reinforced_echo_shard"
 				count: 1
@@ -1233,6 +1235,327 @@
 				}
 			]
 		}
+		{
+			id: "411976AA6DA1D525"
+			x: 5.25d
+			y: 12.225d
+			icon: {
+				id: "minecraft:sculk_catalyst"
+				count: 1
+			}
+			optional: true
+			dependencies: [
+				"7056FC6DBFCD7835"
+			]
+			tasks: [
+				{
+					id: "2615C3A4E3955100"
+					type: "item"
+					item: {
+						id: "minecraft:sculk_catalyst"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "34FF1A1C3667FFAE"
+					type: "item"
+					item: {
+						id: "minecraft:experience_bottle"
+						count: 1
+					}
+					count: 8
+				}
+				{
+					id: "4A3E6D96D9CD118B"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+		}
+		{
+			id: "317418C9132581EC"
+			x: 2.65d
+			y: 15.975d
+			icon: {
+				id: "minecraft:music_disc_5"
+				count: 1
+			}
+			optional: true
+			dependencies: [
+				"1C73E7DE9BF8CAA8"
+			]
+			tasks: [
+				{
+					id: "636DF36718C2B3BA"
+					type: "item"
+					item: {
+						id: "minecraft:music_disc_5"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "4751AF927304716F"
+					type: "item"
+					item: {
+						id: "minecraft:echo_shard"
+						count: 1
+					}
+					count: 2
+				}
+				{
+					id: "10DA7CA6393854B9"
+					type: "xp_levels"
+					xp_levels: 10
+				}
+			]
+		}
+		{
+			id: "58989C64FE93145C"
+			x: 13.55d
+			y: 5.625d
+			icon: {
+				id: "deeperdarker:gloomslate_diamond_ore"
+				count: 1
+			}
+			optional: true
+			dependencies: [
+				"2983E934CA8AEC75"
+			]
+			tasks: [
+				{
+					id: "6DEC29C8FC1F1667"
+					type: "item"
+					item: {
+						id: "minecraft:diamond"
+						count: 1
+					}
+					count: 8
+				}
+			]
+			rewards: [
+				{
+					id: "3323D8E6979BE61A"
+					type: "item"
+					item: {
+						id: "minecraft:iron_ingot"
+						count: 1
+					}
+					count: 16
+				}
+				{
+					id: "3462B74368A591DC"
+					type: "xp_levels"
+					xp_levels: 10
+				}
+			]
+		}
+		{
+			id: "3DE5BAC7CDD4991E"
+			x: 13.225d
+			y: 12.225d
+			icon: {
+				id: "minecraft:string"
+				count: 1
+			}
+			optional: true
+			dependencies: [
+				"6BEF9F3B83B02EDA"
+			]
+			tasks: [
+				{
+					id: "2D09BB8A1D660E18"
+					type: "kill"
+					entity: "deeperdarker:sculk_centipede"
+					value: 3
+				}
+			]
+			rewards: [
+				{
+					id: "3F88AB6F8E274CBA"
+					type: "item"
+					item: {
+						id: "minecraft:string"
+						count: 1
+					}
+					count: 16
+				}
+				{
+					id: "18DE256291CC110E"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+		}
+		{
+			id: "2616A302A715AEE3"
+			x: 13.225d
+			y: 15.225d
+			icon: {
+				id: "minecraft:enchanted_book"
+				count: 1
+			}
+			optional: true
+			dependencies: [
+				"4256647EF926EB9F"
+			]
+			tasks: [
+				{
+					id: "62AAB6B9DD7C65D5"
+					type: "checkmark"
+				}
+			]
+			rewards: [
+				{
+					id: "73C765CACB38B7B6"
+					type: "item"
+					item: {
+						id: "minecraft:lapis_lazuli"
+						count: 1
+					}
+					count: 16
+				}
+				{
+					id: "123963F1541C2809"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+		}
+		{
+			id: "35475D311AA63A61"
+			x: 2.975d
+			y: 20.425d
+			icon: {
+				id: "deeperdarker:warden_carapace"
+				count: 1
+			}
+			dependencies: [
+				"605DFC279042734B"
+			]
+			tasks: [
+				{
+					id: "699022DBD71F0610"
+					type: "item"
+					item: {
+						id: "deeperdarker:warden_carapace"
+						count: 1
+					}
+					count: 4
+				}
+			]
+			rewards: [
+				{
+					id: "37CA68583C7A7F5E"
+					type: "item"
+					item: {
+						id: "minecraft:phantom_membrane"
+						count: 1
+					}
+					count: 4
+				}
+				{
+					id: "66CDC876EBBD5EDF"
+					type: "xp_levels"
+					xp_levels: 10
+				}
+			]
+		}
+		{
+			id: "269E1FA8A9769676"
+			x: 5.575d
+			y: 22.3d
+			icon: {
+				id: "deeperdarker:soul_crystal"
+				count: 1
+			}
+			optional: true
+			dependencies: [
+				"6638841DC971D9F3"
+			]
+			tasks: [
+				{
+					id: "135B80D6A0D5AB15"
+					type: "item"
+					item: {
+						id: "deeperdarker:soul_crystal"
+						count: 1
+					}
+					count: 3
+				}
+			]
+			rewards: [
+				{
+					id: "3AA34DF03336C7C2"
+					type: "loot"
+					table_id: 8923133104651443544L
+				}
+				{
+					id: "1661509AED7180CA"
+					type: "xp_levels"
+					xp_levels: 15
+				}
+			]
+		}
+		{
+			id: "3DF2DC332927A30F"
+			x: 11.549999999999999d
+			y: 20.8d
+			icon: {
+				id: "deeperdarker:resonarium_helmet"
+				count: 1
+			}
+			optional: true
+			dependencies: [
+				"3AFF728DE116035B"
+			]
+			tasks: [
+				{
+					id: "630AF32CF58302A2"
+					type: "item"
+					item: {
+						id: "deeperdarker:resonarium_helmet"
+						count: 1
+					}
+					count: 1
+				}
+				{
+					id: "27437E7148853A78"
+					type: "item"
+					item: {
+						id: "deeperdarker:resonarium_leggings"
+						count: 1
+					}
+					count: 1
+				}
+				{
+					id: "1FFEDB427F83C35F"
+					type: "item"
+					item: {
+						id: "deeperdarker:resonarium_boots"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "75D7239D57C0A1DC"
+					type: "loot"
+					table_id: 8295882381094242541L
+				}
+				{
+					id: "2CA52CC45ABC64B4"
+					type: "xp_levels"
+					xp_levels: 20
+				}
+			]
+		}
 	]
 	images: [
 		{
@@ -1247,18 +1570,8 @@
 		}
 		{
 			id: "3FB6678AE54B05A9"
-			image: "kronwerke:textures/quests/deeper_darker/way.png"
-			x: 8.73d
-			y: 2.6750000000000003d
-			width: 5.86d
-			height: 0.9d
-			rotation: 0.0d
-			order: 1
-		}
-		{
-			id: "224497E1772F1FE4"
 			image: "kronwerke:textures/quests/deeper_darker/biomes.png"
-			x: 15.23d
+			x: 7.37d
 			y: 2.6750000000000003d
 			width: 3.14d
 			height: 0.9d
@@ -1266,11 +1579,21 @@
 			order: 1
 		}
 		{
-			id: "2D19CF4D2FE26799"
+			id: "224497E1772F1FE4"
 			image: "kronwerke:textures/quests/deeper_darker/stone.png"
-			x: 1.9249999999999998d
-			y: 11.024999999999999d
+			x: 13.475000000000001d
+			y: 2.6750000000000003d
 			width: 4.85d
+			height: 0.9d
+			rotation: 0.0d
+			order: 1
+		}
+		{
+			id: "2D19CF4D2FE26799"
+			image: "kronwerke:textures/quests/deeper_darker/way.png"
+			x: 2.43d
+			y: 10.774999999999999d
+			width: 5.86d
 			height: 0.9d
 			rotation: 0.0d
 			order: 1
@@ -1278,8 +1601,8 @@
 		{
 			id: "2C74DEFF932B74FE"
 			image: "kronwerke:textures/quests/deeper_darker/mobs.png"
-			x: 10.6d
-			y: 11.024999999999999d
+			x: 13.85d
+			y: 10.774999999999999d
 			width: 6.25d
 			height: 0.9d
 			rotation: 0.0d
@@ -1289,7 +1612,7 @@
 			id: "1009D40DA699E9E7"
 			image: "kronwerke:textures/quests/deeper_darker/temple.png"
 			x: 2.57d
-			y: 18.725d
+			y: 18.975d
 			width: 6.14d
 			height: 0.9d
 			rotation: 0.0d
@@ -1299,7 +1622,7 @@
 			id: "7EA38C1AD4FDD6F9"
 			image: "kronwerke:textures/quests/deeper_darker/souls.png"
 			x: 11.924999999999999d
-			y: 18.725d
+			y: 18.975d
 			width: 7.7d
 			height: 0.9d
 			rotation: 0.0d

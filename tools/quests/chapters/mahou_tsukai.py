@@ -327,6 +327,91 @@ quests = [
                  task_checkmark("Mystische Stäbe am Obelisken abgegeben")],
           rewards=[reward_table("s4_rare"), reward_xp(20)],
           deps=["staff", "first_sorcery"], icon="mahoutsukai:mystic_staff", size=2.5, shape="gear"),
+
+    # ---- Erste Rollen: weitere Rollen --------------------------------------------------
+    spell("protective", 7.5, 5.5, "&5Zeichne Schutzteleport", "Pfeile treffen ins Leere.",
+          "&e2 Enderpulver, 1 Eisenpulver&r, Tuch.",
+          "Wenn dich ein Pfeil treffen würde, springst du stattdessen an eine zufällige Stelle in der Nähe, wie ein Enderman. Kostet &d50 Mana&r und gibt eine feste Zahl Sprünge, nicht eine feste Zeit.",
+          "mahoutsukai:scroll_protective_displacement", ["proj_displacement"], reward_item("minecraft:ender_pearl", 8)),
+    spell("ascension", 8.5, 4.5, "&5Zeichne Aufstieg", "Aus der Höhle an die Oberfläche.",
+          "&e2 Enderpulver, 1 Goldpulver&r. Mit Tuch eine Rolle, ohne Tuch ein Kreis am Boden.",
+          "Die Rolle bringt dich auf den höchsten festen Block über dir, für &d30 Mana&r. Als Kreis ohne Tuch schickt er alles nach oben, was darauf liegt oder steht, auch Items und Tiere. Ein Aufzug aus der Mine.",
+          "mahoutsukai:scroll_ascension", ["proj_displacement"], reward_item("minecraft:ender_pearl", 8)),
+    spell("weapon_shooter", 3.5, 6.5, "&bZeichne Waffenprojektile", "Ein Bogen, der Schwerter schießt.",
+          "&e2 Diamantpulver, 1 Goldpulver&r, Tuch.",
+          "Für &d100 Mana&r bekommst du den &6Bogen der Waffenprojektile&r. Er schießt Werkzeuge und Waffen aus deinem Inventar statt Pfeilen. Schleichend mit Rechtsklick schaltest du um, dann nimmt er nur projizierte Waffen und Rollen der Projektion.",
+          "mahoutsukai:scroll_weapon_shooter", ["projection"], reward_item("mahoutsukai:powdered_diamond", 4)),
+    spell("treasury", 4.5, 7.0, "&6Zeichne Schatzkammer-Projektion", "Ein Regen aus deinen Waffen.",
+          "&e2 Diamantpulver, 1 Enderaugenpulver&r, Tuch.",
+          "Die Rolle kostet &d1 000 Mana&r und gibt dir einen &6Handschuh der Schatzkammer-Projektion&r. Er schleudert Waffen und Werkzeuge aus deinem Inventar, manchen Taschen und deiner Endertruhe auf den Block, den du anschaust, &d120 Mana&r pro Waffe.",
+          "mahoutsukai:scroll_treasury_projection", ["weapon_shooter"], reward_table("s4_common")),
+    spell("borrowed_authority", 3.5, 4.5, "&6Zeichne Geborgte Kraft", "Stark wie ein Gott, für kurze Zeit.",
+          "&e3 Goldpulver&r, Tuch.",
+          "Für &d900 Mana&r wirst du kurze Zeit viel schneller und stärker. Getroffene Monster fliegen durch Wände. Sprung halten springt weiter, in der Luft gehalten bleibst du an der Fläche hängen, auf der du landest.",
+          "mahoutsukai:scroll_borrowed_authority", ["schools"], reward_item("mahoutsukai:powdered_gold", 4)),
+
+    # ---- Leylinien und Fae: Mystische Augen ------------------------------------------
+    quest("binding_eyes", 2.5, 15.5, "&2Zeichne Mystische Augen der Bindung",
+          subtitle="Ein Blick, und es bleibt stehen.",
+          description=[
+              "&e2 Enderaugenpulver, 1 Goldpulver&r auf einem Tuch. Kostet &d320 Mana&r.",
+              "",
+              "Danach hält Blickkontakt jedes Monster und jeden Spieler fest, den du anschaust. Spieler kommen frei, sobald sie wegsehen, Monster nicht.",
+              "",
+              "&eAuch aus Enderaugenpulver:&r Augen der Einsicht (&e2 Enderauge, 1 Ender&r) zeigen Inventar und Effekte eines Ziels, Augen der Schwarzen Flamme (&e2 Enderauge, 1 Diamant&r) setzen schwarzes Feuer, das Wither-Schaden macht und keine Blöcke frisst.",
+          ],
+          tasks=[task_item("mahoutsukai:scroll_mystic_eyes", 1)],
+          rewards=[reward_item("mahoutsukai:powdered_eye", 4), reward_xp(5)],
+          deps=["fay_sight"], icon="mahoutsukai:scroll_mystic_eyes", optional=True),
+
+    # ---- Barrieren --------------------------------------------------------------------
+    quest("alarm", 0, 22.5, "&7&lLeg eine Alarmbarriere",
+          subtitle="Eisenpulver bewacht deine Basis.",
+          description=[
+              "Barrieren sind Kreise am Boden, die in einem Umkreis wirken und dabei laufend etwas Mana vom Zeichner ziehen. Alle brauchen &e2 Eisenpulver&r und ein drittes Pulver, ein Tuch ist nicht nötig. Mit Tuch wird daraus eine Rolle, mit der du die Barriere woanders hinlegst.",
+              "",
+              "&6Alarmbarriere:&r &e2 Eisen, 1 Quarz&r. Sie meldet dir jedes Monster und jeden Spieler, der in &e10 Blöcken&r Umkreis auftaucht, und gibt dann Komparatorsignal 15.",
+              "",
+              "Rechtsklick schaltet eine Barriere an und aus, ein Redstonesignal kehrt den Zustand um.",
+          ],
+          tasks=[task_checkmark("Eine Alarmbarriere liegt")],
+          rewards=[reward_item("mahoutsukai:powdered_iron", 6), reward_xp(5)],
+          deps=["catalysts"], icon="mahoutsukai:scroll_boundary_alarm"),
+
+    quest("tangible", 2.5, 22.0, "&7Leg eine Magische Barriere",
+          subtitle="Eine Wand, durch die nur du gehst.",
+          description=[
+              "&e2 Eisen, 1 Diamant&r. Ringsum entsteht im Umkreis von &e10 Blöcken&r eine unsichtbare Wand. Du gehst hindurch, Monster, Pfeile und andere Wesen nicht.",
+              "",
+              "Feste Blöcke außer Gras ersetzt sie nicht, Wasser auch nicht. Leg sie also auf ebenen Boden, dann schließt sie sauber.",
+          ],
+          tasks=[task_checkmark("Eine Magische Barriere steht")],
+          rewards=[reward_item("mahoutsukai:powdered_diamond", 4), reward_xp(5)],
+          deps=["alarm"], icon="mahoutsukai:scroll_boundary_tangible"),
+
+    quest("displacement_boundary", 2.5, 23.0, "&5Leg eine Teleportbarriere",
+          subtitle="Wer hinein will, landet draußen.",
+          description=[
+              "&e2 Eisen, 1 Ender&r. Wesen, die in den Umkreis von &e11 Blöcken&r wollen, landen auf der anderen Seite der Barriere. Blöcke, in denen sie ersticken würden, schiebt sie dabei weg.",
+              "",
+              "Ein freier Platz für den Markt oder die Werkstatt, ohne Mauern zu bauen.",
+          ],
+          tasks=[task_checkmark("Eine Teleportbarriere steht")],
+          rewards=[reward_item("mahoutsukai:powdered_ender", 4), reward_xp(5)],
+          deps=["tangible"], icon="mahoutsukai:scroll_boundary_displacement", optional=True),
+
+    quest("drain_life", 5, 22.5, "&cLeg eine Barriere des Lebensraubs",
+          subtitle="Monster zahlen mit ihrem Leben.",
+          description=[
+              "&e2 Eisen, 1 Smaragd&r. Im Umkreis von &e10 Blöcken&r verlieren Monster langsam Leben. Jeder Punkt geht an dich zurück: erst als Leben, dann als Hunger, dann als Mana, je nachdem, was dir fehlt.",
+              "",
+              "&eHinweis:&r Diese Rolle lässt sich nicht in das Zeichen der Ersten Magie legen.",
+              "",
+              "&eTipp:&r Neben einer Monsterfarm füllt sie deine Leiste, während du sortierst.",
+          ],
+          tasks=[task_checkmark("Eine Barriere des Lebensraubs steht")],
+          rewards=[reward_item("mahoutsukai:powdered_emerald", 4), reward_table("s4_common"), reward_xp(5)],
+          deps=["alarm"], icon="mahoutsukai:scroll_boundary_drain_life"),
 ]
 
 images = [
@@ -336,6 +421,7 @@ images = [
     head("mana", "Mana speichern", 0, 8.3, colour="magic"),
     head("fae", "Leylinien und Fae", 0, 12.9, colour="nature"),
     head("staff", "Der Mystische Stab", 0, 16.1, colour="brass"),
+    head("bounds", "Barrieren", 0, 20.6, colour="stone"),
 ]
 
 chapter(C, "Mahou Tsukai", "mahoutsukai:mystic_staff", "magic", quests, shape="circle", order=40,

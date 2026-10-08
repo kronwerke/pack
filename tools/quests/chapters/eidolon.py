@@ -11,13 +11,13 @@ from ftbq import (chapter, quest, task_item, task_checkmark, task_advancement, r
 C = "eidolon"
 
 
-def ritual(name, x, y, title, subtitle, recipe, effect, icon, deps=("soul_shard",)):
+def ritual(name, x, y, title, subtitle, recipe, effect, icon, deps=("soul_shard",), section=None):
     """One brazier ritual of the checklist: recipe line, effect line, one tick."""
     return quest(name, x, y, title, subtitle=subtitle,
                  description=[recipe, "", effect],
                  tasks=[task_checkmark("Ritual ausgeführt")],
                  rewards=[reward_item("eidolon_repraised:soul_shard", 2), reward_xp(3)],
-                 deps=list(deps), icon=icon, shape="square", optional=True)
+                 deps=list(deps), icon=icon, shape="square", optional=True, section=section)
 
 
 quests = [
@@ -109,19 +109,19 @@ quests = [
            "Nachts gezündet, spult es die Zeit vor, bis die Sonne aufgeht.", "minecraft:sunflower"),
     ritual("r_moonlight", 12.5, 1.5, "&9Ruf die Nacht herbei", "Ritual of Moonlight.",
            "&6Schwarzer Farbstoff&r auf die Brazier. Auf die Hände: &6Schneeball&r, &6Spinnenauge&r, zwei &6Soul Shards&r.",
-           "Tagsüber gezündet, spult es die Zeit vor bis zum Sonnenuntergang.", "minecraft:black_dye"),
+           "Tagsüber gezündet, spult es die Zeit vor bis zum Sonnenuntergang.", "minecraft:black_dye", section="rituale"),
     ritual("r_allure", 10, 3, "&aLock Tiere an", "Ritual of Alluring.",
            "&6Rosenstrauch&r auf die Brazier. Auf die Hände: &6Goldener Apfel&r, zwei &6roter Farbstoff&r, zwei &6Soul Shards&r.",
-           "Friedliche Tiere aus großer Entfernung laufen langsam zur Brazier.", "minecraft:rose_bush"),
+           "Friedliche Tiere aus großer Entfernung laufen langsam zur Brazier.", "minecraft:rose_bush", section="rituale"),
     ritual("r_repelling", 12.5, 3, "&cVertreib Monster", "Ritual of Repelling.",
            "&6Nautilusschale&r auf die Brazier. Auf die Hände: &6Eisenbarren&r, &6Leder&r, &6Quarz&r, zwei &6Soul Shards&r.",
            "Monster in einem großen Umkreis werden vertrieben.", "minecraft:nautilus_shell"),
     ritual("r_purify", 15, 1.5, "&fReinige Zombie-Dorfbewohner", "Ritual of Purifying.",
            "&6Glitzernde Melonenscheibe&r auf die Brazier. Auf die Hände: zwei &6Enchanted Ash&r, ein &6Heiltrank&r, zwei &6Soul Shards&r.",
-           "Heilt Zombie-Dorfbewohner in der Nähe. Zombie-Piglins und Zoglins werden wieder normal.", "minecraft:glistering_melon_slice"),
+           "Heilt Zombie-Dorfbewohner in der Nähe. Zombie-Piglins und Zoglins werden wieder normal.", "minecraft:glistering_melon_slice", section="rituale"),
     ritual("r_deceit", 15, 3, "&2Täusch die Dorfbewohner", "Ritual of Deceit.",
            "&6Smaragd&r auf die Brazier. Auf die Hände: &6Smaragd&r, &6Fermentiertes Spinnenauge&r, ein &6Pilz&r, zwei &6Soul Shards&r.",
-           "Dorfbewohner vergessen schneller, was du ihnen angetan hast.", "minecraft:emerald"),
+           "Dorfbewohner vergessen schneller, was du ihnen angetan hast.", "minecraft:emerald", section="rituale"),
     ritual("r_summon", 17.5, 2.25, "&8Beschwör einen Zombie", "Lesser Summoning.",
            "&6Holzkohle&r auf die Brazier. Auf die Hände: &6Soul Shard&r und &6Verrottetes Fleisch&r. Ein Verrottetes Fleisch in einen &6Necrotic Focus&r.",
            "Ein Zombie erscheint auf der Brazier. Mit Knochen ein Skelett, mit Phantomhaut ein Phantom, mit Seelensand im Fokus ein Witherskelett.",
@@ -240,7 +240,7 @@ quests = [
           ],
           tasks=[task_item("eidolon_repraised:athame", 1)],
           rewards=[reward_item("minecraft:fern", 8), reward_xp(4)],
-          deps=["worktable"], icon="eidolon_repraised:athame", optional=True),
+          deps=["worktable"], icon="eidolon_repraised:athame", optional=True, section="werkzeuge"),
 
     quest("death_essence", 2.5, 11.5, "&8Koch Death Essence",
           subtitle="Aus dem Herz eines Zombie Brute.",
@@ -289,6 +289,127 @@ quests = [
           rewards=[reward_table("s3_rare"), reward_xp(15)],
           deps=["stone_altar", "reaper_scythe", "soul_enchanter", "death_essence"],
           icon="eidolon_repraised:shadow_gem", size=2.5, shape="gear"),
+
+    # ---- Ausruestung ---------------------------------------------------------------
+    quest("apothecary", 2.5, 2, "&6Bau einen Apothecary Stand",
+          subtitle="Brauen ohne Lohenstaub.",
+          description=[
+              "Ein &6Stock&r oben in der Mitte, &e3 Pewter&r in der Reihe darunter.",
+              "",
+              "Der Stand braut Tränke wie ein Braustand, braucht aber keinen &6Lohenstaub&r als Brennstoff. Praktisch, solange du noch keine Lohenfarm hast. Den Heiltrank für das Ritual of Purifying und den Schadenstrank für die Sanguine-Rituale machst du gleich hier.",
+          ],
+          tasks=[task_item("eidolon_repraised:wooden_brewing_stand", 1)],
+          rewards=[reward_item("minecraft:nether_wart", 8), reward_xp(3)],
+          deps=["pewter"], icon="eidolon_repraised:wooden_brewing_stand", optional=True, section="ausruestung"),
+
+    quest("censer", 5, 8.2, "&6Zünde einen Censer an",
+          subtitle="Räucherwerk für Altar und Kampf.",
+          description=[
+              "&6Censer&r: &6Arcane Gold&r oben, &e2 Silberbarren&r links und rechts, unten Arcane Gold, Pewter, Arcane Gold.",
+              "&6Restoration Incense&r, formlos: &6Merammer Resin&r (Merammer Root), &6Oanna Bloom&r, &6Rosa Blütenblätter&r, &6Glitzernde Melonenscheibe&r.",
+              "",
+              "Füll den Censer und zünde ihn an. Restoration heilt Lebende in der Nähe und schadet Untoten. Im Crucible kochst du weitere Sorten: Tough für mehr Rüstung, Bloodlust für mehr Nahkampfschaden, Soul Harvest für mehr Beute und Erfahrung.",
+              "",
+              "Auf dem Altar gibt der Censer &e+2 Capacity&r.",
+          ],
+          tasks=[task_item("eidolon_repraised:censer", 1), task_item("eidolon_repraised:restoration_incense", 2)],
+          rewards=[reward_item("minecraft:glistering_melon_slice", 4), reward_xp(5)],
+          deps=["athame", "alchemy"], icon="eidolon_repraised:censer", optional=True, section="ausruestung"),
+
+    quest("void_amulet", 0, 15.5, "&5Schmied ein Void Amulet",
+          subtitle="Pfeile verschwinden einfach.",
+          description=[
+              "&6Basic Amulet&r: &e3 Faden&r im Bogen, ein &6Arcane Gold&r unten.",
+              "Worktable: Pewter oben, &e2 Pewter Inlay&r an die Seiten, das Basic Amulet in die Mitte, &6Obsidian&r unten, &e2 Soul Shards&r in die Extraplätze.",
+              "",
+              "Getragen fängt das Amulett ein Geschoss ab, das dich treffen würde. Danach lädt es etwa &d10 Sekunden&r nach. Skelette und Blaze verlieren viel von ihrem Schrecken.",
+          ],
+          tasks=[task_item("eidolon_repraised:void_amulet", 1)],
+          rewards=[reward_item("eidolon_repraised:soul_shard", 4), reward_xp(6)],
+          deps=["worktable", "alchemy"], icon="eidolon_repraised:void_amulet"),
+
+    quest("warded_mail", 2.5, 15.5, "&5Weih ein Warded Mail",
+          subtitle="Schutz gegen Magie.",
+          description=[
+              "Worktable: &6Eisenbrustplatte&r in die Mitte, ein &6Soul Shard&r darüber, &e3 Enchanted Ash&r links, rechts und unten, &e4 Pewter Inlay&r in die Extraplätze.",
+              "",
+              "Das Kettenhemd trägst du unter deiner Rüstung als Curio. Dann hält deine Rüstung auch Magieschaden ab, der sonst durch sie hindurchgeht. Gut gegen Hexen, Evoker und magische Bosse.",
+          ],
+          tasks=[task_item("eidolon_repraised:warded_mail", 1)],
+          rewards=[reward_item("eidolon_repraised:pewter_inlay", 4), reward_xp(6)],
+          deps=["worktable", "crucible"], icon="eidolon_repraised:warded_mail", optional=True),
+
+    quest("gravity_belt", 5, 15.5, "&5Schnall dir den Gravity Belt um",
+          subtitle="Fallen wie eine Feder.",
+          description=[
+              "&6Basic Belt&r: &e4 Leder&r als Raute. &6Calx of End&r: Enderperle und Enchanted Ash in den kochenden Crucible, gibt zwei.",
+              "Worktable: Enderperle oben, &e2 Federn&r neben dem Gürtel, &6Lesser Soul Gem&r unten. Extra: &e2 Calx of End&r und &e2 Pewter Inlay&r.",
+              "",
+              "Der Gürtel bremst jeden Fall stark ab, und Fallschaden sinkt auf ein &dViertel&r. Wer viel in Höhlen und auf Türmen baut, nimmt ihn zuerst.",
+          ],
+          tasks=[task_item("eidolon_repraised:gravity_belt", 1)],
+          rewards=[reward_item("minecraft:feather", 16), reward_xp(6)],
+          deps=["worktable", "soul_gem"], icon="eidolon_repraised:gravity_belt"),
+
+    quest("reversal_pick", 7.5, 15.5, "&5Schmied die Pickaxe of Inversion",
+          subtitle="Je härter der Block, desto schneller.",
+          description=[
+              "Worktable: oben &6Obsidian&r, &6Weinender Obsidian&r, Obsidian. Darunter Pewter, dann eine Pewter Inlay als Griff.",
+              "Extra: &6Enderperle&r, &6Lesser Soul Gem&r und &e2 Soul Shards&r.",
+              "",
+              "Diese Spitzhacke dreht die Härte um: Harte Blöcke wie &6Obsidian&r brechen schnell, weiche wie Erde oder Sand bremsen sie. Nimm sie für Obsidian und Tiefenschiefer, nicht für Erde.",
+          ],
+          tasks=[task_item("eidolon_repraised:reversal_pick", 1)],
+          rewards=[reward_item("minecraft:obsidian", 16), reward_xp(6)],
+          deps=["worktable", "soul_gem"], icon="eidolon_repraised:reversal_pick", optional=True),
+
+    quest("bonechill_wand", 10, 15.5, "&bBau einen Bonechill Wand",
+          subtitle="Wer getroffen wird, heilt nicht mehr.",
+          description=[
+              "&6Wraith Heart&r: &5Wraiths&r lassen es selten fallen, nur wenn du sie selbst besiegst. Plünderung hilft.",
+              "Worktable: Wraith Heart oben rechts, &e2 Pewter&r und ein &6Stock&r diagonal, Pewter Inlay unten links. Extra: &6Lesser Soul Gem&r und &e3 Knochenmehl&r.",
+              "",
+              "Der Stab verflucht das Ziel mit eisigem Griff: Wie bei den Krallen eines Wraith regeneriert es keine Lebenspunkte mehr. Leere Stäbe lädst du mit einem Soul Gem auf der Brazier wieder auf.",
+          ],
+          tasks=[task_item("eidolon_repraised:bonechill_wand", 1)],
+          rewards=[reward_item("minecraft:bone_meal", 16), reward_xp(8)],
+          deps=["soul_gem", "worktable"], icon="eidolon_repraised:bonechill_wand", optional=True),
+
+    quest("soulfire_wand", 12.5, 15.5, "&dBau den Soulfire Wand",
+          subtitle="Die Kraft des Shadow Gem in deiner Hand.",
+          description=[
+              "Worktable: &6Shadow Gem&r oben rechts, &e2 Arcane Gold&r und ein &6Stock&r diagonal, Gold Inlay unten links. Extra: &6Lesser Soul Gem&r und &e3 Lohenstaub&r.",
+              "",
+              "Ein Schwung schießt helle Energieblitze, die fast jedem Ziel ordentlich Schaden machen. Deine erste echte Fernkampfwaffe aus Eidolon.",
+          ],
+          tasks=[task_item("eidolon_repraised:soulfire_wand", 1)],
+          rewards=[reward_item("minecraft:blaze_powder", 8), reward_table("s3_common"), reward_xp(10)],
+          deps=["necromancer"], icon="eidolon_repraised:soulfire_wand", section="ausruestung"),
+
+    quest("warlock_cloak", 15, 15.5, "&5Näh einen Warlock's Cloak",
+          subtitle="Halber Schaden von Magie und Wither.",
+          description=[
+              "&6Wicked Weave&r: &e8 weiße Wolle&r um einen &6Shadow Gem&r, extra ein &6Unholy Symbol&r und &6blauer Farbstoff&r. Das gibt &e8&r Stück.",
+              "&6Warlock's Cloak&r: &e7 Wicked Weave&r in Brustplattenform, extra &e2 Soul Shards&r.",
+              "",
+              "Der Umhang halbiert Magie- und Witherschaden. Der Hut gibt &d50 Prozent&r mehr Magie- und Witherschaden, die Stiefel machen dich immun gegen Langsamkeit.",
+          ],
+          tasks=[task_item("eidolon_repraised:warlock_cloak", 1)],
+          rewards=[reward_item("minecraft:white_wool", 16), reward_xp(10)],
+          deps=["necromancer"], icon="eidolon_repraised:warlock_cloak", optional=True, section="ausruestung"),
+
+    quest("sapping_sword", 17.5, 15.5, "&cWeih ein Sword of Sapping",
+          subtitle="Ein Schwert, das Leben stiehlt.",
+          description=[
+              "&6Eisenschwert&r auf die Brazier. Auf die Stone Hands: &6Shadow Gem&r, &e2 Soul Shards&r, &e2 Netherwarzen&r, &6Ghast-Träne&r. In einen &6Necrotic Focus&r: ein &6Schadenstrank&r.",
+              "",
+              "Das Ritual verlangt außerdem &d10 Herzen&r Leben in der Nähe: Stell ein paar Tiere daneben, sie werden verbraucht.",
+              "",
+              "Das Schwert macht zusätzlich Witherschaden, und dieser Schaden heilt dich. Verzauberungen des Eisenschwerts bleiben erhalten.",
+          ],
+          tasks=[task_item("eidolon_repraised:sapping_sword", 1)],
+          rewards=[reward_item("minecraft:ghast_tear", 2), reward_xp(10)],
+          deps=["necromancer"], icon="eidolon_repraised:sapping_sword", optional=True, section="ausruestung"),
 ]
 
 images = [
@@ -297,6 +418,7 @@ images = [
     banner("eidolon/rituale", "Rituale", 13.75, -0.2, height=0.9, colour="fire"),
     banner("eidolon/altar", "Altar und Gebet", 7.5, 4.4, height=0.9, colour="fire"),
     banner("eidolon/werkzeuge", "Werkzeuge", 4, 9.9, height=0.9, colour="magic"),
+    banner("eidolon/ausruestung", "Ausrüstung und Waffen", 4, 13.9, height=0.9, colour="fire"),
 ]
 
 chapter(C, "Eidolon", "eidolon_repraised:codex", "magic", quests, shape="circle", order=28, stage=3,

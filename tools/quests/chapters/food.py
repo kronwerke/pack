@@ -127,6 +127,28 @@ quests = [
           rewards=[reward_item("farmersdelight:tomato_seeds", 4)],
           deps=["f_wild_onion"], icon="farmersdelight:rope", optional=True),
 
+    quest("f_cuts", 15, -7, "&6Zerleg Fleisch und Fisch",
+          subtitle="Ein Kotelett, zwei Streifen Speck.",
+          description=[
+              "Leg rohes Fleisch oder Fisch aufs &6Schneidebrett&r und klick mit dem Messer darauf. Ein &6Schweinekotelett&r gibt zwei &6Roher Speck&r, ein &6Kabeljau&r zwei &6Kabeljauscheiben&r und ein Knochenmehl. Hähnchen und Hammel werden ebenso zu Stücken.",
+              "",
+              "Die Stücke brauchst du für Sandwiches, Wraps und Spieße. &eTipp:&r Ein Messer mit &6Glück&r erhöht pro Stufe um &d10 Prozent&r die Chance auf seltene Ergebnisse am Brett.",
+          ],
+          tasks=[task_item("farmersdelight:bacon", 4)],
+          rewards=[reward_item("minecraft:porkchop", 8)],
+          deps=["f_cutting_board"], icon="farmersdelight:bacon"),
+
+    quest("f_board_dispenser", 17, -7, "&7Lass den Werfer schneiden",
+          subtitle="Das Schneidebrett ohne deine Hand.",
+          description=[
+              "Stell einen &6Werfer&r vor das Schneidebrett und leg ein &6Messer&r hinein. Jedes Redstone-Signal benutzt das Messer auf dem, was gerade auf dem Brett liegt.",
+              "",
+              "Mit einer Axt im Werfer entrindet er Stämme auf dem Brett und wirft die Rinde ab.",
+          ],
+          tasks=[task_item("minecraft:dispenser", 1)],
+          rewards=[reward_item("minecraft:redstone", 8), reward_xp(3)],
+          deps=["f_cuts"], icon="minecraft:dispenser", optional=True),
+
     # ---- Kochen ----------------------------------------------------------------
     quest("f_stove", 4.5, 0, "&6Bau einen Herd",
           subtitle="Hitze für die ganze Küche.",
@@ -229,6 +251,28 @@ quests = [
           rewards=[reward_xp(3)],
           deps=["f_stew", "f_rice_cooked"], icon="farmersdelight:fried_rice"),
 
+    quest("f_soups", 9.5, -2.6, "&6Stapel deine Suppen",
+          subtitle="Pilzsuppe zu sechzehnt.",
+          description=[
+              "Mit Farmer's Delight stapeln sich &6Pilzsuppe&r, &6Rote-Bete-Suppe&r und &6Kaninchenragout&r bis &d16&r, wie die Mahlzeiten aus Farmer's Delight. Dazu geben sie &dGesättigt&r, und das Kaninchenragout macht deutlich mehr satt als in Vanilla.",
+              "",
+              "Pilze wachsen in der Pilzkolonie, Kaninchen findest du in Wüsten und Schneegebieten.",
+          ],
+          tasks=[task_item("minecraft:mushroom_stew", 8)],
+          rewards=[reward_item("minecraft:bowl", 8)],
+          deps=["f_soup"], icon="minecraft:mushroom_stew", optional=True),
+
+    quest("f_cocoa", 17, -2.2, "&6Koch heiße Schokolade",
+          subtitle="Ein Getränk gegen schlechte Effekte.",
+          description=[
+              "In den Topf: eine &6Milchflasche&r, &6Zucker&r und zwei &6Kakaobohnen&r.",
+              "",
+              "&6Heiße Schokolade&r löscht einen negativen Statuseffekt, etwa Gift oder Langsamkeit. Eine &6Milchflasche&r löscht einen beliebigen Effekt, &6Melonensaft&r heilt ein wenig sofort. Gut für die Höhle und nach einem Bosskampf.",
+          ],
+          tasks=[task_item("farmersdelight:hot_cocoa", 2)],
+          rewards=[reward_item("minecraft:cocoa_beans", 8), reward_xp(3)],
+          deps=["f_pot"], icon="farmersdelight:hot_cocoa"),
+
     quest("f_dough", 12, 3, "&7Knete einen Teigball",
           subtitle="Der Anfang jeder Nudel.",
           description=[
@@ -239,6 +283,17 @@ quests = [
           tasks=[task_item("farmersdelight:wheat_dough", 3)],
           rewards=[reward_item("minecraft:wheat", 16)],
           deps=["f_sauce"], icon="farmersdelight:wheat_dough", optional=True),
+
+    quest("f_dumplings", 14.5, 3.4, "&6Füll Teigtaschen",
+          subtitle="Zwei Portionen aus einem Topf.",
+          description=[
+              "In den Topf: ein &6Teigball&r, &6Weißkohl&r, eine &6Zwiebel&r und rohes Hähnchen, Schweinefleisch, Rindfleisch oder ein &6Brauner Pilz&r. Heraus kommen &ezwei&r Teigtaschen.",
+              "",
+              "Die Pilzvariante kommt ganz ohne Tiere aus. Teigtaschen brauchen keine Schüssel, du isst sie direkt.",
+          ],
+          tasks=[task_item("farmersdelight:dumplings", 4)],
+          rewards=[reward_item("minecraft:wheat", 16), reward_xp(3)],
+          deps=["f_dough"], icon="farmersdelight:dumplings"),
 
     quest("f_burger", 14.5, 2.4, "&6Bau einen Hamburger",
           subtitle="Hackfleisch, Bulette, Brötchen.",
@@ -272,6 +327,17 @@ quests = [
           tasks=[task_item("farmersdelight:apple_pie", 1)],
           rewards=[reward_item("minecraft:apple", 8)],
           deps=["f_effects"], icon="farmersdelight:apple_pie", optional=True),
+
+    quest("f_chocolate_pie", 19.5, 2.4, "&7Back einen Schokokuchen",
+          subtitle="Kakao, Milch, Zucker, Kruste.",
+          description=[
+              "Oben drei &6Kakaobohnen&r, in der Mitte drei &6Milchflaschen&r, unten &6Zucker&r, &6Kuchenkruste&r, &6Zucker&r.",
+              "",
+              "Wie der Apfelkuchen ein Block für den Tisch. Das Messer schneidet ihn in Stücke, vier Stücke im Quadrat ergeben wieder einen ganzen Kuchen.",
+          ],
+          tasks=[task_item("farmersdelight:chocolate_pie", 1)],
+          rewards=[reward_item("minecraft:sugar", 8)],
+          deps=["f_pie"], icon="farmersdelight:chocolate_pie", optional=True),
 
     # ---- Anbau -----------------------------------------------------------------
     quest("f_bark", 4.5, 6, "&6Schäl Baumrinde",
@@ -508,6 +574,39 @@ quests = [
           tasks=[task_item("aquaculture:neptunium_ingot", 1)],
           rewards=[reward_table("s1_uncommon"), reward_xp(5)],
           deps=["f_tackle"], icon="aquaculture:neptunium_ingot", optional=True),
+
+    quest("f_neptunium_hoe", 17, 17, "&bSchmiede eine Neptunium-Hacke",
+          subtitle="Ackerland, das nie austrocknet.",
+          description=[
+              "Zwei &6Neptuniumbarren&r und zwei &6Stöcke&r, geformt wie jede Hacke.",
+              "",
+              "Ackerland, das du mit ihr pflügst, &ebleibt feucht&r, auch ohne Wasser in der Nähe. So legst du Felder an, wo es dir passt, etwa auf dem Dach oder in einer Höhle.",
+          ],
+          tasks=[task_item("aquaculture:neptunium_hoe", 1)],
+          rewards=[reward_item("minecraft:wheat_seeds", 16), reward_xp(4)],
+          deps=["f_neptunium"], icon="aquaculture:neptunium_hoe", optional=True),
+
+    quest("f_neptunium_armor", 17, 19, "&bTauch mit Neptunium-Rüstung",
+          subtitle="Atmen, sehen und schwimmen unter Wasser.",
+          description=[
+              "Jedes Teil wird wie Eisenrüstung aus &6Neptuniumbarren&r gebaut und hat eine eigene Wirkung unter Wasser: Der &6Helm&r verbessert die Sicht, die &6Brustplatte&r lässt dich atmen, die &6Beinlinge&r machen dich schwerelos, die &6Schuhe&r schneller beim Schwimmen.",
+              "",
+              "Neptunium-Spitzhacke und Schaufel graben unter Wasser ohne Verlangsamung, Schwert und Axt treffen dort härter. Für Ozeanmonumente und versunkene Schiffe genau das Richtige.",
+          ],
+          tasks=[task_item("aquaculture:neptunium_chestplate", 1)],
+          rewards=[reward_table("s1_uncommon"), reward_xp(5)],
+          deps=["f_neptunium"], icon="aquaculture:neptunium_chestplate", optional=True),
+
+    quest("f_treasure", 4.5, 20, "&7Öffne einen Fang aus der Tiefe",
+          subtitle="Nicht alles am Haken ist ein Fisch.",
+          description=[
+              "Beim Angeln ziehst du ab und zu eine &6Box&r, ein &6Schließfach&r oder eine &6Schatztruhe&r aus dem Wasser. &eRechtsklick&r öffnet sie, darin liegt Beute.",
+              "",
+              "Dazu kommen Treibholz, Algen, Gräten und Blechdosen. Treibholz gibt Bretter, Gräten geben Knochenmehl.",
+          ],
+          tasks=[task_item("aquaculture:box", 1)],
+          rewards=[reward_item("minecraft:string", 8), reward_xp(3)],
+          deps=["f_rod"], icon="aquaculture:treasure_chest", optional=True),
 
     # ---- Abschluss -------------------------------------------------------------
     quest("f_pantry", 20, 6, "&6&lFüll die Speisekammer",

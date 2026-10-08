@@ -96,6 +96,19 @@ quests = [
           deps=["d_nether_event"], icon="minecraft:water_bucket"),
 
     # ---- Stufe 3 -------------------------------------------------------------------
+    quest("d_respawn_anchor", 10.5, -4, "&cSchlaf im Nether mit dem Seelenanker",
+          subtitle="Betten explodieren dort, der Anker nicht. Stufe 2.",
+          description=[
+              "&eDas Gerät:&r Ein &6Seelenanker&r (6 Weinender Obsidian, 3 Leuchtstein) setzt im Nether deinen Spawnpunkt. Lade ihn mit &6Leuchtsteinblöcken&r, jede Ladung ist ein Wiederauferstehen.",
+              "",
+              "&eWarum:&r Ein Bett explodiert im Nether. Wer dort eine Festung oder einen Tunnel baut, stirbt mit dem Anker nicht zurück an den Weltspawn, sondern wacht neben der Baustelle auf.",
+              "",
+              "&cAchtung:&r In der Oberwelt explodiert dafür der Anker, wenn du ihn benutzt.",
+          ],
+          tasks=[task_checkmark("Verstanden")],
+          rewards=[reward_item("minecraft:obsidian", 4), reward_xp(3)],
+          deps=["d_nether"], icon="minecraft:respawn_anchor", optional=True),
+
     quest("d_undergarden", 4.5, 0, "&2Öffne den Undergarden",
           subtitle="Steinziegel und ein Katalysator. Stufe 3.",
           description=[
@@ -321,6 +334,76 @@ quests = [
           deps=["r_trains"], icon="minecraft:map"),
 
     # ---- Karte ---------------------------------------------------------------------
+    quest("r_warp_scroll", 4.5, 12.5, "&6Nimm Warp-Schriftrollen mit",
+          subtitle="Zu jedem Wegstein, den du kennst, ohne Level.",
+          description=[
+              "&eRezept:&r oben Goldklumpen, Tintenbeutel, Goldklumpen, in der Mitte Goldklumpen, &6Enderperle&r, Goldklumpen, unten drei Papier. Das ergibt &e3 Warp-Schriftrollen&r.",
+              "",
+              "&eSo geht es:&r Rechtsklick halten, im Menü einen bekannten Wegstein wählen, die Rolle ist danach verbraucht. Laut Serverconfig kostet eine Reise mit Schriftrolle &ekeine Erfahrung&r, auch in eine andere Dimension nicht.",
+              "",
+              "&eWofür:&r Für den Weg zu einem Wegstein, an dem du gerade nicht stehst. Die Rückkehr-Schriftrolle bringt dich nur nach Hause, die Warp-Schriftrolle überallhin.",
+          ],
+          tasks=[task_item("waystones:warp_scroll", 3)],
+          rewards=[reward_item("minecraft:ender_pearl", 2), reward_xp(3)],
+          deps=["r_waystones"], icon="waystones:warp_scroll"),
+
+    quest("r_sharestone", 6.5, 12.5, "&6Stell Teilsteine auf",
+          subtitle="Gleiche Farbe, ein Netz, für alle.",
+          description=[
+              "&eRezept:&r oben drei Steinziegel, in der Mitte Farbstoff, &6Warpstein&r, Farbstoff, unten drei Obsidian. Das ist ein &6Teilstein&r in der Farbe des Farbstoffs.",
+              "",
+              "&eSo geht es:&r Alle Teilsteine &eeiner Farbe&r sind miteinander verbunden, und zwar für jeden Spieler, ohne dass er sie erst aktivieren muss. Eine Reise kostet wie bei einem Wegstein.",
+              "",
+              "&eKronwerke:&r Ein orangefarbener Teilstein am Spawn und einer an jedem Gemeinschaftsprojekt, und jeder Neue findet sofort hin. Sprecht ab, welche Farbe wofür steht.",
+          ],
+          tasks=[task_item("waystones:orange_sharestone", 2)],
+          rewards=[reward_item("waystones:warp_dust", 8), reward_xp(3)],
+          deps=["r_warp_scroll"], icon="waystones:orange_sharestone"),
+
+    quest("r_horse", 8.5, 12.5, "&6Sattel ein Pferd",
+          subtitle="Der älteste Weg, schnell über Land zu kommen.",
+          description=[
+              "&eSo geht es:&r Ein wildes &6Pferd&r so oft besteigen, bis es Herzen zeigt, dann einen &6Sattel&r auflegen. Sättel gibt es nicht an der Werkbank, sie liegen in Truhen von Verliesen, Tempeln und Dörfern.",
+              "",
+              "&eWarum:&r Ein gutes Pferd ist schneller als du zu Fuß, springt über Zäune und kostet weder Level noch Strom. &6Pferdefutter&r aus Farmer's Delight hilft ihm, siehe Kapitel &6Essen und Landwirtschaft&r.",
+          ],
+          tasks=[task_checkmark("Aufgesattelt")],
+          rewards=[reward_item("minecraft:golden_carrot", 4), reward_xp(2)],
+          deps=["r_waystones"], icon="minecraft:saddle", optional=True),
+
+    quest("r_ice_road", 10.5, 12.5, "&bBau eine Eisbahn im Nether",
+          subtitle="Ein Boot auf Blaueis ist das schnellste ohne Portal. Stufe 2.",
+          description=[
+              "&eSo geht es:&r Leg im Nether-Tunnel eine Bahn aus &6Blaueis&r, links und rechts eine Kante, und fahr mit einem &6Boot&r darauf. Neun &6Packeis&r ergeben ein Blaueis, neun Eis ein Packeis. Eis findest du in gefrorenen Ozeanen und Eisbergen.",
+              "",
+              "&eWarum:&r Auf Blaueis fährt ein Boot über 70 Blöcke pro Sekunde, und im Nether zählt jeder Block acht. Zusammen mit dem Nether-Tunnel bist du in Sekunden am anderen Ende der Welt.",
+          ],
+          tasks=[task_checkmark("Verstanden")],
+          rewards=[reward_item("minecraft:oak_boat", 1), reward_xp(3)],
+          deps=["r_nether_hub"], icon="minecraft:ice"),
+
+    quest("r_elevator", 12.5, 12.5, "&6Bau einen Aufzug in den Schacht",
+          subtitle="Create: Stockwerke auf Knopfdruck. Stufe 2.",
+          description=[
+              "&eSo geht es:&r Die &6Aufzug-Seilrolle&r von Create hebt eine Kabine, &6Redstone-Kontakte&r am Schacht markieren die Stockwerke, eine Vorrichtungs-Steuerung in der Kabine wählt das Ziel. Alles im Kapitel &6Create: Messing&r.",
+              "",
+              "&eWarum:&r Von der Werkstatt hinunter in die Mine oder hinauf auf den Turm, ohne Leiter und ohne Wasserfall. Die Rolle kostet 4 SU pro RPM.",
+          ],
+          tasks=[task_checkmark("Verstanden")],
+          rewards=[reward_item("minecraft:ladder", 16), reward_xp(2)],
+          deps=["r_trains"], icon="minecraft:ladder", optional=True),
+
+    quest("r_blink", 14.5, 11, "&dSpring mit Blinzeln",
+          subtitle="Ars Nouveau: ein Zauber statt eines Portals. Stufe 3.",
+          description=[
+              "&eSo geht es:&r Die Glyphe &dBlinzeln&r (Manipulationsessenz, 4 Enderperlen) kommt mit dem Erzmagier-Buch. &eSelbst, Blinzeln&r springt dich ein Stück nach vorn, &eProjektil, Blinzeln&r an den Einschlag.",
+              "",
+              "&eWarum:&r Über Schluchten, aus Fallen heraus, auf Dächer. Mit einer Warp-Schriftrolle in der Zweithand schickst du getroffene Wesen an deren Ort. Alles im Kapitel &dArs Nouveau: Meister&r.",
+          ],
+          tasks=[task_checkmark("Verstanden")],
+          rewards=[reward_item("ars_nouveau:source_gem", 4), reward_xp(3)],
+          deps=["r_ars"], icon="minecraft:ender_pearl"),
+
     quest("k_waypoints", 4.5, 15, "&6Setz Wegpunkte",
           subtitle="JourneyMap merkt sich den Ort, du nicht.",
           description=[
@@ -382,6 +465,17 @@ quests = [
           tasks=[task_checkmark("Gelesen")],
           rewards=[reward_item("minecraft:compass", 1), reward_xp(3)],
           deps=["k_eyes"], icon="minecraft:compass"),
+
+    quest("k_banner_map", 14.5, 15, "&6Markier die Karte mit Bannern",
+          subtitle="Deine Basis als Fähnchen auf jeder Karte.",
+          description=[
+              "&eSo geht es:&r Gib einem &6Banner&r am Amboss einen Namen und stell es auf. Klick mit einer Karte, die den Ort zeigt, auf das Banner: Auf der Karte erscheint ein Fähnchen in seiner Farbe, mit Namen.",
+              "",
+              "&eWofür:&r Eine große Karte am Spawn mit dem Banner jeder Basis, in einem Rahmen an der Wand, zeigt allen, wer wo wohnt. Am &6Kartentisch&r vergrößerst und kopierst du die Karte.",
+          ],
+          tasks=[task_checkmark("Fähnchen gesetzt")],
+          rewards=[reward_item("minecraft:map", 2), reward_xp(2)],
+          deps=["k_waypoints"], icon="minecraft:white_banner", optional=True),
 
     # ---- Abschluss -----------------------------------------------------------------
     quest("done", 17, 8.5, "&6&lAlle Wege gegangen",

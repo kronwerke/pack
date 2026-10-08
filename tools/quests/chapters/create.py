@@ -194,7 +194,7 @@ quests = [
           rewards=[reward_item("create:super_glue", 1), reward_table("s1_common")],
           deps=["sails"], icon="create:windmill_bearing", size=1.5),
 
-    quest("stress", A + 7.5, 8, "&dVersteh RPM und SU",
+    quest("stress", A + 16, 13.5, "&dVersteh RPM und SU",
           subtitle="Quellen liefern SU, Maschinen verbrauchen sie.",
           description=[
               "Jede Maschine hat einen Verbrauch pro RPM. &eVerbrauch = Wert mal Drehzahl.&r Die Presse kostet 8 SU pro RPM, bei 32 RPM also 256 SU: genau ein Wasserrad.",
@@ -800,6 +800,130 @@ quests = [
           tasks=[task_checkmark("Verstanden")],
           rewards=[reward_item("ars_nouveau:source_gem", 2), reward_xp(5)],
           deps=["factory"], icon="create:zinc_ingot", shape="diamond"),
+
+    # ---- Neue Quests ------------------------------------------------------------
+    quest("blueprint", A + 12.5, 2.5, "&6Häng eine Herstellungsblaupause auf",
+          subtitle="Rezepte an der Wand, ein Klick pro Stapel.",
+          description=[
+              "Ein &6Gemälde&r und eine &6Werkbank&r ergeben die &6Herstellungsblaupause&r. Häng sie an eine Wand wie ein Gemälde, jedes Feld darauf ist ein eigenes Rezept.",
+              "",
+              "Rechtsklick auf ein leeres Feld öffnet ein Raster, dort legst du das Rezept fest. Rechtsklick auf ein belegtes Feld stellt es mit den Zutaten aus deinem Inventar her, schleichend gleich bis zu einem Stapel.",
+              "",
+              "&6Tipp:&r Neben der Werkbank für Wellen, Zahnräder und Gehäuse spart das viel Klickerei.",
+          ],
+          tasks=[task_item("create:crafting_blueprint", 1)],
+          rewards=[reward_xp(3)],
+          deps=["welcome"], optional=True),
+
+    quest("cuckoo_clock", A + 12.5, 8, "&6Häng eine Kuckucksuhr auf",
+          subtitle="Wann wird es Nacht?",
+          description=[
+              "&6Bretter&r, &6Andesitgehäuse&r und eine &6Uhr&r untereinander ergeben die &6Kuckucksuhr&r. Gib ihr Rotation, dann zeigt sie die Uhrzeit.",
+              "",
+              "Zweimal am Tag spielt sie eine Melodie: am Mittag und am Abend, sobald man schlafen kann.",
+          ],
+          tasks=[task_item("create:cuckoo_clock", 1)],
+          rewards=[reward_item("minecraft:clock", 1), reward_xp(2)],
+          deps=["speedometer"], optional=True),
+
+    quest("nozzle", A + 12.5, 22, "&6Setz eine Düse auf den Lüfter",
+          subtitle="Luftstrom in alle Richtungen.",
+          description=[
+              "Eine &6Andesitlegierung&r oben, eine &6Wolle&r darunter und drei Andesitlegierungen in der unteren Reihe ergeben die &6Düse&r. Setz sie vorn auf einen &6Ummantelten Lüfter&r.",
+              "",
+              "Statt eines geraden Luftstroms verteilt die Düse die Wirkung des Lüfters ringsum auf Mobs und Spieler. Gut, um Mobs von einer Stelle fernzuhalten oder zusammenzusaugen.",
+          ],
+          tasks=[task_item("create:nozzle", 1)],
+          rewards=[reward_item("minecraft:white_wool", 8), reward_xp(2)],
+          deps=["fan"], optional=True),
+
+    quest("ejector", A + 5, 27.5, "&6Wirf Items mit dem Gewichteten Werfer",
+          subtitle="Kein Band nötig, bis zu 32 Blöcke weit.",
+          description=[
+              "&6Goldblech&r, &6Depot&r und &6Zahnrad&r untereinander ergeben den &6Gewichteten Werfer&r. Halte ihn in der Hand, schleich und rechtsklicke das Ziel, dann setz ihn ab.",
+              "",
+              "Mit Rotation spannt er sich (&d2 SU pro RPM&r). Landet ein Item auf ihm, wirft er es zum Ziel, bis zu &e32 Blöcke&r weit und in jede Höhe, aber nur geradeaus. Zielt er auf eine Kiste, wartet er, bis Platz ist.",
+              "",
+              "Am Wertefeld stellst du eine Stückzahl ein: dann wirft er erst, wenn so viele Items darauf liegen. Spieler und Mobs, die darauf treten, fliegen immer mit. Mit Redstone-Signal bleibt er ruhig.",
+          ],
+          tasks=[task_item("create:weighted_ejector", 1)],
+          rewards=[reward_item("create:golden_sheet", 2), reward_xp(3)],
+          deps=["chute"]),
+
+    quest("item_hatch", A + 7.5, 31, "&6Leer dein Inventar in den Tresor",
+          subtitle="Die Gegenstandsluke.",
+          description=[
+              "Eine &6Andesitlegierung&r und eine &6Eisenfalltür&r ergeben die &6Gegenstandsluke&r. Setz sie an einen Tresor, eine Kiste oder ein anderes Lager.",
+              "",
+              "Rechtsklick legt das Item in deiner Hand hinein. Schleichen und Rechtsklick legt alles hinein, was nicht in der Schnellleiste liegt.",
+              "",
+              "Damit kommst du doch von Hand an den Tresor heran, zumindest zum Einlagern.",
+          ],
+          tasks=[task_item("create:item_hatch", 1)],
+          rewards=[reward_item("minecraft:iron_ingot", 4), reward_xp(2)],
+          deps=["vault"]),
+
+    quest("cardboard_armor", A + 12.5, 32, "&6Zieh eine Kartonrüstung an",
+          subtitle="Wer schleicht, ist ein Paket.",
+          description=[
+              "Aus &6Karton&r entstehen Helm, Brustplatte, Beinschutz und Stiefel in den Formen normaler Rüstung, zusammen &d24 Karton&r.",
+              pic("create:cardboard_chestplate"),
+              "Mit allen vier Teilen an tarnst du dich beim Schleichen als unauffälliges Paket. Ideal für ein Versteckspiel im Paketlager.",
+              "",
+              "Das &6Kartonschwert&r (zwei Karton und ein Stock) ist fast harmlos und macht trotzdem ein schönes Geräusch.",
+          ],
+          tasks=[task_item("create:cardboard_helmet", 1), task_item("create:cardboard_chestplate", 1),
+                 task_item("create:cardboard_leggings", 1), task_item("create:cardboard_boots", 1)],
+          rewards=[reward_item("create:cardboard", 16), reward_xp(3)],
+          deps=["packager"], icon="create:cardboard_chestplate", optional=True),
+
+    quest("repackager", A + 15, 28, "&6Fass Bestellungen zusammen",
+          subtitle="Der Umpacker.",
+          description=[
+              "Ein &6Verpacker&r allein ins Raster gelegt wird zum &6Umpacker&r und zurück.",
+              "",
+              "Eine große Bestellung kommt oft in mehreren Paketen an, und andere Pakete können sich dazwischen schieben. Leite die Pakete in ein Lager, setz den Umpacker daran und gib ihm ein Redstone-Signal.",
+              "",
+              "Sind alle Teile einer Bestellung da, packt er sie zu einem neuen Paket zusammen. So kommt eine Bestellung vollständig und in fester Reihenfolge an, wichtig für Maschinen, die Zutaten genau so brauchen.",
+          ],
+          tasks=[task_item("create:repackager", 1)],
+          rewards=[reward_item("create:cardboard", 8), reward_xp(3)],
+          deps=["stock_ticker"], optional=True),
+
+    quest("sweet_roll", B + 10, 3.5, "&6Füll Brot mit Milch",
+          subtitle="Rosinenschnecken aus dem Ausguss.",
+          description=[
+              "Leer &6Milcheimer&r in einen &6Abfluss&r, ein Rohr bringt die Milch zum &6Ausguss&r. Ein &6Brot&r darunter wird mit &b250 mB Milch&r zur &6Rosinenschnecke&r.",
+              pic("create:sweet_roll"),
+              "Mit Weizen aus der Erntemaschine und Mehl aus dem Mahlstein läuft die ganze Bäckerei über Bänder.",
+          ],
+          tasks=[task_item("create:sweet_roll", 16)],
+          rewards=[reward_item("minecraft:milk_bucket", 1), reward_xp(3)],
+          deps=["spout"], optional=True),
+
+    quest("sticker", B + 10, 8, "&6Kleb Blöcke per Redstone an",
+          subtitle="Der Ankleber.",
+          description=[
+              "Oben &6Andesitlegierung&r, &6Schleimball&r, Andesitlegierung, unten &6Bruchstein&r, &6Redstone&r, Bruchstein: das ergibt den &6Ankleber&r.",
+              "",
+              "Bei jedem Redstone-Signal wechselt er seinen Zustand: ausgefahren klebt er am Block vor ihm, und eine Kontraption nimmt den Block mit. Beim nächsten Signal lässt er ihn wieder los.",
+              "",
+              "So holt ein Kolben einen Block ab und setzt ihn woanders ab, etwa für Schiebetüren oder ein Lager, das Kisten tauscht.",
+          ],
+          tasks=[task_item("create:sticker", 2)],
+          rewards=[reward_item("minecraft:slime_ball", 4), reward_xp(3)],
+          deps=["glue"], optional=True),
+
+    quest("tree_fertilizer", B + 10, 10, "&6Lass Bäume dicht an dicht wachsen",
+          subtitle="Baumdünger für die Sägeradfarm.",
+          description=[
+              "Zwei kleine &6Blumen&r, eine &6Koralle&r und ein &6Knochenmehl&r ergeben zwei &6Baumdünger&r.",
+              "",
+              "Auf einem Setzling lässt er einen Baum wachsen, egal wie wenig Platz drumherum ist. So stehen die Bäume für das Sägerad eng in einer Reihe.",
+          ],
+          tasks=[task_item("create:tree_fertilizer", 8)],
+          rewards=[reward_item("minecraft:bone_meal", 16), reward_xp(2)],
+          deps=["tree_farm"], optional=True),
 ]
 
 images = [

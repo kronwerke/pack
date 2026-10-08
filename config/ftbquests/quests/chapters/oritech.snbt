@@ -232,8 +232,8 @@
 		}
 		{
 			id: "5839D543483B6704"
-			x: 10.45d
-			y: 11.075000000000001d
+			x: 8.55d
+			y: 13.825000000000001d
 			icon: {
 				id: "oritech:basic_generator_block"
 				count: 1
@@ -241,6 +241,7 @@
 			size: 1.5d
 			shape: "hexagon"
 			hide_dependency_lines: true
+			hide_dependent_lines: true
 			dependencies: [
 				"7DCB1A7478CBECD6"
 			]
@@ -279,8 +280,8 @@
 		}
 		{
 			id: "41989F8CB685EA37"
-			x: 12.85d
-			y: 11.075000000000001d
+			x: 10.950000000000001d
+			y: 10.825000000000001d
 			icon: {
 				id: "oritech:machine_core_2"
 				count: 1
@@ -327,8 +328,8 @@
 		}
 		{
 			id: "51E6E80E2A3ADDEB"
-			x: 12.85d
-			y: 12.575000000000001d
+			x: 10.950000000000001d
+			y: 13.825000000000001d
 			icon: {
 				id: "oritech:energy_pipe"
 				count: 1
@@ -588,13 +589,12 @@
 		}
 		{
 			id: "2893D9A947F62A14"
-			x: 0.0d
-			y: 11.325000000000001d
+			x: 18.62d
+			y: 4.375d
 			icon: {
 				id: "oritech:plastic_sheet"
 				count: 1
 			}
-			hide_dependency_lines: true
 			dependencies: [
 				"5DA365C7D37A7AB5"
 			]
@@ -637,8 +637,8 @@
 		}
 		{
 			id: "5CF76C7A691F9E0A"
-			x: 2.0d
-			y: 11.325000000000001d
+			x: 20.62d
+			y: 4.375d
 			icon: {
 				id: "oritech:assembler_block"
 				count: 1
@@ -694,7 +694,7 @@
 		}
 		{
 			id: "17CDF17B55F34B16"
-			x: 4.4d
+			x: 0.5d
 			y: 11.325000000000001d
 			icon: {
 				id: "oritech:laser_arm_block"
@@ -702,6 +702,7 @@
 			}
 			size: 2.0d
 			shape: "gear"
+			hide_dependency_lines: true
 			dependencies: [
 				"5CF76C7A691F9E0A"
 			]
@@ -758,8 +759,8 @@
 		}
 		{
 			id: "6963096E96DF4F85"
-			x: 7.2d
-			y: 11.325000000000001d
+			x: 3.3d
+			y: 12.825000000000001d
 			icon: {
 				id: "oritech:atomic_forge_block"
 				count: 1
@@ -799,8 +800,8 @@
 		}
 		{
 			id: "5E9DE4DC5D916B35"
-			x: 7.2d
-			y: 12.825000000000001d
+			x: 3.3d
+			y: 11.325000000000001d
 			icon: {
 				id: "oritech:destroyer_block"
 				count: 1
@@ -848,7 +849,7 @@
 		{
 			id: "7F29AD01DDC6671A"
 			x: 0.0d
-			y: 17.175d
+			y: 21.175d
 			icon: {
 				id: "oritech:platinum_ingot"
 				count: 1
@@ -883,7 +884,7 @@
 		{
 			id: "247F69D31871D1E3"
 			x: 2.0d
-			y: 17.175d
+			y: 21.175d
 			icon: {
 				id: "oritech:fragment_forge_block"
 				count: 1
@@ -940,7 +941,7 @@
 		{
 			id: "3A49B6EB93A7DFC9"
 			x: 4.4d
-			y: 17.175d
+			y: 21.175d
 			icon: {
 				id: "oritech:iron_clump"
 				count: 1
@@ -979,7 +980,7 @@
 		{
 			id: "1E83D0230D353EA6"
 			x: 6.4d
-			y: 17.175d
+			y: 21.175d
 			icon: {
 				id: "oritech:iron_gem"
 				count: 1
@@ -1025,7 +1026,7 @@
 		{
 			id: "3CADA5FC7DA5BF7A"
 			x: 10.4d
-			y: 17.775000000000002d
+			y: 21.775000000000002d
 			icon: {
 				id: "oritech:machine_speed_addon"
 				count: 1
@@ -1068,7 +1069,7 @@
 		{
 			id: "588FE4A385F1949A"
 			x: 12.4d
-			y: 16.425d
+			y: 20.425d
 			icon: {
 				id: "oritech:machine_efficiency_addon"
 				count: 1
@@ -1103,7 +1104,7 @@
 		{
 			id: "29EADE5742D50649"
 			x: 12.4d
-			y: 17.775000000000002d
+			y: 21.775000000000002d
 			icon: {
 				id: "oritech:machine_capacitor_addon"
 				count: 1
@@ -1138,7 +1139,7 @@
 		{
 			id: "735B50CF89EA398C"
 			x: 12.4d
-			y: 19.125d
+			y: 23.125d
 			icon: {
 				id: "oritech:machine_acceptor_addon"
 				count: 1
@@ -1173,7 +1174,7 @@
 		{
 			id: "1B81E126757BB138"
 			x: 13.75d
-			y: 16.425d
+			y: 20.425d
 			icon: {
 				id: "oritech:machine_burst_addon"
 				count: 1
@@ -1208,7 +1209,7 @@
 		{
 			id: "30F980E70ADDF20D"
 			x: 13.75d
-			y: 17.775000000000002d
+			y: 21.775000000000002d
 			icon: {
 				id: "oritech:machine_yield_addon"
 				count: 1
@@ -1243,7 +1244,7 @@
 		{
 			id: "216A245196723867"
 			x: 13.75d
-			y: 19.125d
+			y: 23.125d
 			icon: {
 				id: "oritech:quarry_addon"
 				count: 1
@@ -1278,7 +1279,7 @@
 		{
 			id: "1746B9436369F1FF"
 			x: 15.100000000000001d
-			y: 16.425d
+			y: 20.425d
 			icon: {
 				id: "oritech:machine_silk_touch_addon"
 				count: 1
@@ -1313,7 +1314,7 @@
 		{
 			id: "78D3A72191B3BE31"
 			x: 15.100000000000001d
-			y: 17.775000000000002d
+			y: 21.775000000000002d
 			icon: {
 				id: "oritech:crop_filter_addon"
 				count: 1
@@ -1348,7 +1349,7 @@
 		{
 			id: "203431A086674ED6"
 			x: 15.100000000000001d
-			y: 19.125d
+			y: 23.125d
 			icon: {
 				id: "oritech:machine_hunter_addon"
 				count: 1
@@ -1383,7 +1384,7 @@
 		{
 			id: "108211ED2A00C4F6"
 			x: 16.450000000000003d
-			y: 16.425d
+			y: 20.425d
 			icon: {
 				id: "oritech:machine_redstone_addon"
 				count: 1
@@ -1418,7 +1419,7 @@
 		{
 			id: "17A8D8F1BA111955"
 			x: 16.450000000000003d
-			y: 17.775000000000002d
+			y: 21.775000000000002d
 			icon: {
 				id: "oritech:machine_inventory_proxy_addon"
 				count: 1
@@ -1453,7 +1454,7 @@
 		{
 			id: "542DFEB3A370F944"
 			x: 16.450000000000003d
-			y: 19.125d
+			y: 23.125d
 			icon: {
 				id: "oritech:steam_boiler_addon"
 				count: 1
@@ -1488,7 +1489,7 @@
 		{
 			id: "1730217F0940D4E7"
 			x: 17.8d
-			y: 16.425d
+			y: 20.425d
 			icon: {
 				id: "oritech:machine_processing_addon"
 				count: 1
@@ -1523,7 +1524,7 @@
 		{
 			id: "6177AB9F8D678B41"
 			x: 17.8d
-			y: 17.775000000000002d
+			y: 21.775000000000002d
 			icon: {
 				id: "oritech:machine_extender"
 				count: 1
@@ -1558,7 +1559,7 @@
 		{
 			id: "3B9DC1FA5D32439D"
 			x: 0.0d
-			y: 22.724999999999998d
+			y: 26.724999999999998d
 			icon: {
 				id: "oritech:jetpack"
 				count: 1
@@ -1598,7 +1599,7 @@
 		{
 			id: "1EEDF8B5BC5C01E4"
 			x: 2.0d
-			y: 22.724999999999998d
+			y: 26.724999999999998d
 			icon: {
 				id: "oritech:exo_chestplate"
 				count: 1
@@ -1662,7 +1663,7 @@
 		{
 			id: "1ADC26DE74E315D7"
 			x: 4.0d
-			y: 22.724999999999998d
+			y: 26.724999999999998d
 			icon: {
 				id: "oritech:simple_augment_station"
 				count: 1
@@ -1716,7 +1717,7 @@
 		{
 			id: "1BAF2C84EE920765"
 			x: 7.0d
-			y: 23.224999999999998d
+			y: 27.224999999999998d
 			icon: {
 				id: "oritech:uranium_pellet"
 				count: 1
@@ -1765,7 +1766,7 @@
 		{
 			id: "7C3B104A734F0E17"
 			x: 9.0d
-			y: 23.224999999999998d
+			y: 27.224999999999998d
 			icon: {
 				id: "oritech:reactor_controller"
 				count: 1
@@ -1853,6 +1854,436 @@
 				}
 			]
 		}
+		{
+			id: "2C165D4BF70F18A9"
+			x: 12.950000000000001d
+			y: 13.825000000000001d
+			icon: {
+				id: "oritech:pump_block"
+				count: 1
+			}
+			hide_dependency_lines: true
+			dependencies: [
+				"51E6E80E2A3ADDEB"
+				"1D92AB179B32250C"
+			]
+			tasks: [
+				{
+					id: "7A9C6A4251174F78"
+					type: "item"
+					item: {
+						id: "oritech:pump_block"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "1695058D95490587"
+					type: "item"
+					item: {
+						id: "oritech:silicon"
+						count: 1
+					}
+					count: 8
+				}
+				{
+					id: "5E22D3D43596F27F"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+		}
+		{
+			id: "77C937122806F8F9"
+			x: 14.950000000000001d
+			y: 13.825000000000001d
+			icon: {
+				id: "oritech:lava_generator_block"
+				count: 1
+			}
+			hide_dependency_lines: true
+			dependencies: [
+				"41989F8CB685EA37"
+				"2C165D4BF70F18A9"
+			]
+			tasks: [
+				{
+					id: "28945FB47DE60437"
+					type: "item"
+					item: {
+						id: "oritech:lava_generator_block"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "17A835139D5EFC87"
+					type: "item"
+					item: {
+						id: "minecraft:lava_bucket"
+						count: 1
+					}
+					count: 2
+				}
+				{
+					id: "3EF8AD929524A2B9"
+					type: "loot"
+					table_id: 6583846314806931712L
+				}
+				{
+					id: "20F210DD0DB966FF"
+					type: "xp_levels"
+					xp_levels: 10
+				}
+			]
+		}
+		{
+			id: "228646B7F01B74D8"
+			x: 10.950000000000001d
+			y: 12.325000000000001d
+			icon: {
+				id: "oritech:bio_generator_block"
+				count: 1
+			}
+			optional: true
+			hide_dependency_lines: true
+			dependencies: [
+				"5839D543483B6704"
+				"247F69D31871D1E3"
+				"2893D9A947F62A14"
+			]
+			tasks: [
+				{
+					id: "193A9CE84546DBDC"
+					type: "item"
+					item: {
+						id: "oritech:bio_generator_block"
+						count: 1
+					}
+					count: 1
+				}
+				{
+					id: "1F8AD518C9368F20"
+					type: "item"
+					item: {
+						id: "oritech:biomass"
+						count: 1
+					}
+					count: 32
+				}
+			]
+			rewards: [
+				{
+					id: "37A65E5F66F824A0"
+					type: "item"
+					item: {
+						id: "oritech:biosteel_ingot"
+						count: 1
+					}
+					count: 4
+				}
+				{
+					id: "3B6315992F7A65D7"
+					type: "xp_levels"
+					xp_levels: 10
+				}
+			]
+		}
+		{
+			id: "5BCBAB91759BF922"
+			x: 10.950000000000001d
+			y: 15.325000000000001d
+			icon: {
+				id: "oritech:small_storage_block"
+				count: 1
+			}
+			hide_dependency_lines: true
+			dependencies: [
+				"5839D543483B6704"
+				"2893D9A947F62A14"
+			]
+			tasks: [
+				{
+					id: "1ADD78A372753E1A"
+					type: "item"
+					item: {
+						id: "oritech:small_storage_block"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "17953BC6408394DE"
+					type: "item"
+					item: {
+						id: "oritech:basic_battery"
+						count: 1
+					}
+					count: 2
+				}
+				{
+					id: "17C690CCB30ED1AC"
+					type: "xp_levels"
+					xp_levels: 10
+				}
+			]
+		}
+		{
+			id: "2536CF7E953FEE9A"
+			x: 12.950000000000001d
+			y: 16.825000000000003d
+			icon: {
+				id: "oritech:small_tank_block"
+				count: 1
+			}
+			dependencies: [
+				"51E6E80E2A3ADDEB"
+			]
+			tasks: [
+				{
+					id: "193619A14BD20828"
+					type: "item"
+					item: {
+						id: "oritech:small_tank_block"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "678AAB8E7587D139"
+					type: "item"
+					item: {
+						id: "minecraft:bucket"
+						count: 1
+					}
+					count: 4
+				}
+				{
+					id: "20A870378A427DAE"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+		}
+		{
+			id: "608264B8DBE7B828"
+			x: 12.950000000000001d
+			y: 12.325000000000001d
+			icon: {
+				id: "oritech:item_filter_block"
+				count: 1
+			}
+			optional: true
+			hide_dependency_lines: true
+			dependencies: [
+				"51E6E80E2A3ADDEB"
+				"5CF76C7A691F9E0A"
+			]
+			tasks: [
+				{
+					id: "3E248D5D5B309813"
+					type: "item"
+					item: {
+						id: "oritech:item_filter_block"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "12EEC9481FC58B95"
+					type: "item"
+					item: {
+						id: "oritech:item_pipe"
+						count: 1
+					}
+					count: 8
+				}
+			]
+		}
+		{
+			id: "190EC49EB41141C7"
+			x: 12.950000000000001d
+			y: 15.325000000000001d
+			icon: {
+				id: "oritech:pipe_booster_block"
+				count: 1
+			}
+			optional: true
+			dependencies: [
+				"51E6E80E2A3ADDEB"
+			]
+			tasks: [
+				{
+					id: "110E1FA7733BC457"
+					type: "item"
+					item: {
+						id: "oritech:pipe_booster_block"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "54B0D8D80A9BCD09"
+					type: "item"
+					item: {
+						id: "oritech:motor"
+						count: 1
+					}
+					count: 2
+				}
+				{
+					id: "27CC50B02577A086"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+		}
+		{
+			id: "17988C752E737E82"
+			x: 5.3d
+			y: 11.325000000000001d
+			icon: {
+				id: "oritech:treefeller_block"
+				count: 1
+			}
+			optional: true
+			dependencies: [
+				"5E9DE4DC5D916B35"
+			]
+			tasks: [
+				{
+					id: "411AC8EB727C2B75"
+					type: "item"
+					item: {
+						id: "oritech:treefeller_block"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "1F2B9D0CFB43BF84"
+					type: "item"
+					item: {
+						id: "minecraft:oak_sapling"
+						count: 1
+					}
+					count: 16
+				}
+				{
+					id: "161A4FE536AB4749"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+		}
+		{
+			id: "1DC8862C667BE2D0"
+			x: 2.0d
+			y: 28.224999999999998d
+			icon: {
+				id: "oritech:charger_block"
+				count: 1
+			}
+			dependencies: [
+				"3B9DC1FA5D32439D"
+			]
+			tasks: [
+				{
+					id: "42615077AAE3AAD3"
+					type: "item"
+					item: {
+						id: "oritech:charger_block"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "77D2F151D7DADE1C"
+					type: "item"
+					item: {
+						id: "minecraft:redstone_block"
+						count: 1
+					}
+					count: 2
+				}
+				{
+					id: "3A30F98AD12C72C2"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+		}
+		{
+			id: "3DC4ED509279D8F2"
+			x: 4.0d
+			y: 28.224999999999998d
+			icon: {
+				id: "oritech:hand_drill"
+				count: 1
+			}
+			hide_dependency_lines: true
+			dependencies: [
+				"1DC8862C667BE2D0"
+				"3171B896C15529B3"
+			]
+			tasks: [
+				{
+					id: "43A575BE1CFAC250"
+					type: "item"
+					item: {
+						id: "oritech:hand_drill"
+						count: 1
+					}
+					count: 1
+				}
+				{
+					id: "2611DB0EA847045E"
+					type: "item"
+					item: {
+						id: "oritech:chainsaw"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "1FF8FEAB6D305A48"
+					type: "item"
+					item: {
+						id: "oritech:enderic_compound"
+						count: 1
+					}
+					count: 8
+				}
+				{
+					id: "62AA91107CCFA353"
+					type: "loot"
+					table_id: 6583846314806931712L
+				}
+				{
+					id: "7B9B989F6AA0FD21"
+					type: "xp_levels"
+					xp_levels: 10
+				}
+			]
+		}
 	]
 	images: [
 		{
@@ -1898,7 +2329,7 @@
 		{
 			id: "76007C600BF15D04"
 			image: "kronwerke:textures/quests/oritech/power.png"
-			x: 12.545d
+			x: 10.645000000000001d
 			y: 9.375d
 			width: 5.69d
 			height: 0.9d
@@ -1909,7 +2340,7 @@
 			id: "11C6DAEEB2C7A922"
 			image: "kronwerke:textures/quests/oritech/ore.png"
 			x: 1.385d
-			y: 14.975d
+			y: 18.975d
 			width: 3.77d
 			height: 0.9d
 			rotation: 0.0d
@@ -1919,7 +2350,7 @@
 			id: "26FC793E86FB5EC4"
 			image: "kronwerke:textures/quests/oritech/upgrades.png"
 			x: 10.925d
-			y: 14.975d
+			y: 18.975d
 			width: 2.55d
 			height: 0.9d
 			rotation: 0.0d
@@ -1929,7 +2360,7 @@
 			id: "539D241441DA83E6"
 			image: "kronwerke:textures/quests/oritech/gear.png"
 			x: 1.295d
-			y: 21.275d
+			y: 25.275d
 			width: 3.59d
 			height: 0.9d
 			rotation: 0.0d
@@ -1939,7 +2370,7 @@
 			id: "590EEE893673F010"
 			image: "kronwerke:textures/quests/oritech/reactor.png"
 			x: 7.875d
-			y: 21.275d
+			y: 25.275d
 			width: 2.75d
 			height: 0.9d
 			rotation: 0.0d

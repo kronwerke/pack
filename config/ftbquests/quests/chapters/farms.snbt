@@ -160,9 +160,48 @@
 			]
 		}
 		{
+			id: "2BBB6FFF556F0121"
+			x: 8.825d
+			y: 4.285d
+			icon: {
+				id: "create:andesite_alloy"
+				count: 1
+			}
+			dependencies: [
+				"6A1A68A159905715"
+			]
+			tasks: [
+				{
+					id: "298BF447FB7538E1"
+					type: "item"
+					item: {
+						id: "create:andesite_alloy"
+						count: 1
+					}
+					count: 128
+				}
+			]
+			rewards: [
+				{
+					id: "2126AD8D68B60CC4"
+					type: "item"
+					item: {
+						id: "minecraft:lava_bucket"
+						count: 1
+					}
+					count: 1
+				}
+				{
+					id: "34733440C2B15476"
+					type: "loot"
+					table_id: 2810828560988712020L
+				}
+			]
+		}
+		{
 			id: "44CCE94BB30D1B82"
 			x: 12.585d
-			y: 4.285d
+			y: 5.66d
 			icon: {
 				id: "botanypots:terracotta_hopper_botany_pot"
 				count: 1
@@ -203,7 +242,7 @@
 		{
 			id: "2BF65FDF7F25E0BE"
 			x: 14.785d
-			y: 5.785d
+			y: 4.16d
 			icon: {
 				id: "productivetrees:sawmill"
 				count: 1
@@ -242,7 +281,7 @@
 		{
 			id: "1080DB56E0991988"
 			x: 14.785d
-			y: 4.285d
+			y: 5.66d
 			icon: {
 				id: "create:mechanical_saw"
 				count: 1
@@ -288,9 +327,48 @@
 			]
 		}
 		{
+			id: "42555C6BA23D894D"
+			x: 14.785d
+			y: 7.16d
+			icon: {
+				id: "create:encased_fan"
+				count: 1
+			}
+			dependencies: [
+				"44CCE94BB30D1B82"
+			]
+			tasks: [
+				{
+					id: "29B567EA74201336"
+					type: "item"
+					item: {
+						id: "minecraft:charcoal"
+						count: 1
+					}
+					count: 64
+				}
+			]
+			rewards: [
+				{
+					id: "34EE1207413E780C"
+					type: "item"
+					item: {
+						id: "minecraft:oak_log"
+						count: 1
+					}
+					count: 16
+				}
+				{
+					id: "1C6BCB19050DB0CE"
+					type: "xp_levels"
+					xp_levels: 3
+				}
+			]
+		}
+		{
 			id: "3B8AAAF225F51A23"
 			x: 0.125d
-			y: 9.51d
+			y: 12.26d
 			icon: {
 				id: "minecraft:wheat"
 				count: 1
@@ -335,7 +413,7 @@
 		{
 			id: "31AC70F287FD553E"
 			x: 2.325d
-			y: 11.01d
+			y: 10.76d
 			icon: {
 				id: "create:mechanical_harvester"
 				count: 1
@@ -374,7 +452,7 @@
 		{
 			id: "2D4A3C337ADAD2CC"
 			x: 2.325d
-			y: 9.51d
+			y: 12.26d
 			icon: {
 				id: "mysticalagriculture:inferium_growth_accelerator"
 				count: 1
@@ -411,9 +489,48 @@
 			]
 		}
 		{
+			id: "1651DE21FE7B797B"
+			x: 2.325d
+			y: 13.76d
+			icon: {
+				id: "minecraft:composter"
+				count: 1
+			}
+			dependencies: [
+				"3B8AAAF225F51A23"
+			]
+			tasks: [
+				{
+					id: "727298D4EF9F7D70"
+					type: "item"
+					item: {
+						id: "minecraft:bone_meal"
+						count: 1
+					}
+					count: 32
+				}
+			]
+			rewards: [
+				{
+					id: "4420885FAB1C674E"
+					type: "item"
+					item: {
+						id: "minecraft:composter"
+						count: 1
+					}
+					count: 1
+				}
+				{
+					id: "4DD36FFDA5FFDB54"
+					type: "xp_levels"
+					xp_levels: 3
+				}
+			]
+		}
+		{
 			id: "1D2E9747531D6EE6"
 			x: 9.45d
-			y: 9.51d
+			y: 12.26d
 			icon: {
 				id: "farmingforblockheads:feeding_trough"
 				count: 1
@@ -454,7 +571,7 @@
 		{
 			id: "5C86604A476E54F6"
 			x: 11.649999999999999d
-			y: 11.01d
+			y: 10.76d
 			icon: {
 				id: "botania:dreadthorne"
 				count: 1
@@ -493,7 +610,7 @@
 		{
 			id: "773F88E559BA2FEA"
 			x: 11.649999999999999d
-			y: 9.51d
+			y: 12.26d
 			icon: {
 				id: "cookingforblockheads:cow_jar"
 				count: 1
@@ -530,9 +647,88 @@
 			]
 		}
 		{
+			id: "21324CDB81511DAA"
+			x: 11.649999999999999d
+			y: 13.76d
+			icon: {
+				id: "minecraft:dispenser"
+				count: 1
+			}
+			dependencies: [
+				"1D2E9747531D6EE6"
+			]
+			tasks: [
+				{
+					id: "29F65D44954211F9"
+					type: "item"
+					item: {
+						id: "minecraft:white_wool"
+						count: 1
+					}
+					count: 32
+				}
+			]
+			rewards: [
+				{
+					id: "783BDC8B942900B3"
+					type: "item"
+					item: {
+						id: "minecraft:shears"
+						count: 1
+					}
+					count: 1
+				}
+				{
+					id: "1FAB37A85E15E69F"
+					type: "xp_levels"
+					xp_levels: 3
+				}
+			]
+		}
+		{
+			id: "4D3D19F269DC0874"
+			x: 13.649999999999999d
+			y: 10.76d
+			icon: {
+				id: "ars_nouveau:vitalic_sourcelink"
+				count: 1
+			}
+			optional: true
+			dependencies: [
+				"5C86604A476E54F6"
+			]
+			tasks: [
+				{
+					id: "7FAF5CB98076CD4F"
+					type: "item"
+					item: {
+						id: "ars_nouveau:vitalic_sourcelink"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "139CE966663297F7"
+					type: "item"
+					item: {
+						id: "minecraft:glistering_melon_slice"
+						count: 1
+					}
+					count: 2
+				}
+				{
+					id: "57E8ABAFD9F58A50"
+					type: "xp_levels"
+					xp_levels: 4
+				}
+			]
+		}
+		{
 			id: "3DB94A49EAC2AF88"
 			x: 0.125d
-			y: 14.735d
+			y: 18.86d
 			icon: {
 				id: "minecraft:oak_trapdoor"
 				count: 1
@@ -573,7 +769,7 @@
 		{
 			id: "516DDF5BF852E4FE"
 			x: 2.325d
-			y: 16.235d
+			y: 17.36d
 			icon: {
 				id: "minecraft:spawner"
 				count: 1
@@ -608,7 +804,7 @@
 		{
 			id: "7B1EC7CE50CF798F"
 			x: 2.325d
-			y: 14.735d
+			y: 18.86d
 			icon: {
 				id: "botania:bellethorne"
 				count: 1
@@ -641,9 +837,48 @@
 			]
 		}
 		{
+			id: "16644EDBD8298526"
+			x: 2.325d
+			y: 20.36d
+			icon: {
+				id: "minecraft:iron_ingot"
+				count: 1
+			}
+			dependencies: [
+				"3DB94A49EAC2AF88"
+			]
+			tasks: [
+				{
+					id: "46DF2EA890D1AEF1"
+					type: "item"
+					item: {
+						id: "minecraft:iron_ingot"
+						count: 1
+					}
+					count: 64
+				}
+			]
+			rewards: [
+				{
+					id: "3496BBAC7CABADAE"
+					type: "item"
+					item: {
+						id: "minecraft:white_bed"
+						count: 1
+					}
+					count: 3
+				}
+				{
+					id: "7539CD0C97D93D5A"
+					type: "loot"
+					table_id: 2810828560988712020L
+				}
+			]
+		}
+		{
 			id: "1AA957E46D3A8EEA"
 			x: 9.45d
-			y: 14.735d
+			y: 17.485d
 			icon: {
 				id: "create:mechanical_pump"
 				count: 1
@@ -693,7 +928,7 @@
 		{
 			id: "2EE5D1D7DEAE4C53"
 			x: 11.649999999999999d
-			y: 14.735d
+			y: 17.485d
 			icon: {
 				id: "minecraft:lava_bucket"
 				count: 1
@@ -732,7 +967,7 @@
 		{
 			id: "176C1F6B6F509DB6"
 			x: 13.649999999999999d
-			y: 14.735d
+			y: 17.485d
 			icon: {
 				id: "mysticalagriculture:fire_seeds"
 				count: 1
@@ -765,9 +1000,57 @@
 			]
 		}
 		{
+			id: "2CEE7D65948B48DE"
+			x: 13.649999999999999d
+			y: 18.985d
+			icon: {
+				id: "minecraft:pointed_dripstone"
+				count: 1
+			}
+			dependencies: [
+				"2EE5D1D7DEAE4C53"
+			]
+			tasks: [
+				{
+					id: "21D0ECBCB3F5DC9F"
+					type: "item"
+					item: {
+						id: "minecraft:pointed_dripstone"
+						count: 1
+					}
+					count: 4
+				}
+				{
+					id: "5F12AD919E8304AA"
+					type: "item"
+					item: {
+						id: "minecraft:cauldron"
+						count: 1
+					}
+					count: 2
+				}
+			]
+			rewards: [
+				{
+					id: "7E24D8BD6057B270"
+					type: "item"
+					item: {
+						id: "minecraft:bucket"
+						count: 1
+					}
+					count: 2
+				}
+				{
+					id: "1C4D94B625717711"
+					type: "xp_levels"
+					xp_levels: 4
+				}
+			]
+		}
+		{
 			id: "146984CF36C14623"
 			x: 0.125d
-			y: 19.959999999999997d
+			y: 24.085d
 			icon: {
 				id: "ars_nouveau:agronomic_sourcelink"
 				count: 1
@@ -817,7 +1100,7 @@
 		{
 			id: "46449D6485143667"
 			x: 2.325d
-			y: 19.959999999999997d
+			y: 24.085d
 			icon: {
 				id: "botania:endoflame"
 				count: 1
@@ -863,9 +1146,57 @@
 			]
 		}
 		{
+			id: "274834A235E09223"
+			x: 2.325d
+			y: 25.585d
+			icon: {
+				id: "ars_nouveau:imbuement_chamber"
+				count: 1
+			}
+			dependencies: [
+				"146984CF36C14623"
+			]
+			tasks: [
+				{
+					id: "2DF3A200DE1CAE6D"
+					type: "item"
+					item: {
+						id: "ars_nouveau:imbuement_chamber"
+						count: 1
+					}
+					count: 4
+				}
+				{
+					id: "3B00D9294B1B9CB6"
+					type: "item"
+					item: {
+						id: "ars_nouveau:source_gem"
+						count: 1
+					}
+					count: 64
+				}
+			]
+			rewards: [
+				{
+					id: "532E4E2D2D920F1C"
+					type: "item"
+					item: {
+						id: "minecraft:amethyst_shard"
+						count: 1
+					}
+					count: 32
+				}
+				{
+					id: "20EE50F88ACF51DF"
+					type: "loot"
+					table_id: 2810828560988712020L
+				}
+			]
+		}
+		{
 			id: "41CFF95BFBBF4EA7"
 			x: 8.825d
-			y: 4.285d
+			y: 5.785d
 			icon: {
 				id: "minecraft:sand"
 				count: 1
@@ -890,7 +1221,7 @@
 		{
 			id: "61A1F3538FB158C0"
 			x: 16.785d
-			y: 4.285d
+			y: 5.66d
 			icon: {
 				id: "minecraft:oak_sapling"
 				count: 1
@@ -915,7 +1246,7 @@
 		{
 			id: "4DB3471C9EEDBF11"
 			x: 4.325d
-			y: 9.51d
+			y: 12.26d
 			icon: {
 				id: "mysticalagriculture:infusion_crystal"
 				count: 1
@@ -940,7 +1271,7 @@
 		{
 			id: "13A03F6B13A07371"
 			x: 6.325d
-			y: 9.51d
+			y: 12.26d
 			icon: {
 				id: "minecraft:iron_hoe"
 				count: 1
@@ -965,7 +1296,7 @@
 		{
 			id: "1157E7370025048C"
 			x: 13.649999999999999d
-			y: 9.51d
+			y: 12.26d
 			icon: {
 				id: "minecraft:shears"
 				count: 1
@@ -990,7 +1321,7 @@
 		{
 			id: "39F56728AF000DCB"
 			x: 15.649999999999999d
-			y: 9.51d
+			y: 12.26d
 			icon: {
 				id: "minecraft:bee_nest"
 				count: 1
@@ -1015,7 +1346,7 @@
 		{
 			id: "6B8386805748948E"
 			x: 4.325d
-			y: 14.735d
+			y: 18.86d
 			icon: {
 				id: "minecraft:spawner"
 				count: 1
@@ -1040,7 +1371,7 @@
 		{
 			id: "5BE61543A538C710"
 			x: 6.325d
-			y: 14.735d
+			y: 18.86d
 			icon: {
 				id: "minecraft:experience_bottle"
 				count: 1
@@ -1069,7 +1400,7 @@
 		{
 			id: "419C322999E86D94"
 			x: 15.649999999999999d
-			y: 14.735d
+			y: 17.485d
 			icon: {
 				id: "minecraft:water_bucket"
 				count: 1
@@ -1094,7 +1425,7 @@
 		{
 			id: "2DAE231987B64DCF"
 			x: 4.325d
-			y: 19.959999999999997d
+			y: 24.085d
 			icon: {
 				id: "botania:mana_pool"
 				count: 1
@@ -1119,7 +1450,7 @@
 		{
 			id: "55790DAB27CCC75B"
 			x: 8.075d
-			y: 20.584999999999997d
+			y: 24.71d
 			icon: {
 				id: "minecraft:hopper"
 				count: 1
@@ -1199,7 +1530,7 @@
 		{
 			id: "78CC54AA23E35C46"
 			x: 11.275d
-			y: 20.584999999999997d
+			y: 24.71d
 			icon: {
 				id: "minecraft:clock"
 				count: 1
@@ -1278,7 +1609,7 @@
 			id: "618C1DF235BB8BF8"
 			image: "kronwerke:textures/quests/farms/crops.png"
 			x: 0.6699999999999999d
-			y: 7.9350000000000005d
+			y: 9.309999999999999d
 			width: 2.34d
 			height: 0.9d
 			rotation: 0.0d
@@ -1288,7 +1619,7 @@
 			id: "21BFB31A88F1EE14"
 			image: "kronwerke:textures/quests/farms/animals.png"
 			x: 9.715d
-			y: 7.9350000000000005d
+			y: 9.309999999999999d
 			width: 1.78d
 			height: 0.9d
 			rotation: 0.0d
@@ -1298,7 +1629,7 @@
 			id: "2FBAA48847713E85"
 			image: "kronwerke:textures/quests/farms/mobs.png"
 			x: 1.005d
-			y: 13.159999999999998d
+			y: 15.909999999999998d
 			width: 3.01d
 			height: 0.9d
 			rotation: 0.0d
@@ -1308,7 +1639,7 @@
 			id: "572769D29B02A404"
 			image: "kronwerke:textures/quests/farms/fluids.png"
 			x: 11.625d
-			y: 13.159999999999998d
+			y: 15.909999999999998d
 			width: 5.6d
 			height: 0.9d
 			rotation: 0.0d
@@ -1318,7 +1649,7 @@
 			id: "1B8629944183D9C1"
 			image: "kronwerke:textures/quests/farms/magic.png"
 			x: 0.52d
-			y: 18.384999999999998d
+			y: 22.51d
 			width: 2.04d
 			height: 0.9d
 			rotation: 0.0d
@@ -1328,7 +1659,7 @@
 			id: "5C601FD4B21DCC1C"
 			image: "kronwerke:textures/quests/farms/done.png"
 			x: 9.015d
-			y: 18.384999999999998d
+			y: 22.51d
 			width: 4.38d
 			height: 0.9d
 			rotation: 0.0d

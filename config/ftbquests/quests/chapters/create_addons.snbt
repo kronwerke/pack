@@ -523,7 +523,7 @@
 		{
 			id: "40625177532CB7E4"
 			x: 12.19d
-			y: 9.620000000000001d
+			y: 12.620000000000001d
 			icon: {
 				id: "create_connected:inventory_bridge"
 				count: 1
@@ -571,7 +571,7 @@
 		{
 			id: "1EC7DBE5AE3B7A5E"
 			x: 12.19d
-			y: 12.620000000000001d
+			y: 14.120000000000001d
 			icon: {
 				id: "create_connected:kinetic_bridge"
 				count: 1
@@ -628,7 +628,7 @@
 		{
 			id: "46ADBE97B9F0BBE6"
 			x: 8.99d
-			y: 16.47d
+			y: 17.97d
 			icon: {
 				id: "create_dragons_plus:white_dye_bucket"
 				count: 1
@@ -664,7 +664,7 @@
 		{
 			id: "224DCBA53BB0D930"
 			x: 10.99d
-			y: 16.47d
+			y: 17.97d
 			icon: {
 				id: "create_connected:fan_freezing_catalyst"
 				count: 1
@@ -713,7 +713,7 @@
 		{
 			id: "284980C25D9713B1"
 			x: 10.99d
-			y: 18.22d
+			y: 19.72d
 			icon: {
 				id: "create_enchantment_industry:experience_hatch"
 				count: 1
@@ -761,7 +761,7 @@
 		{
 			id: "32ED2F26BE02AF93"
 			x: 0.25d
-			y: 9.995000000000001d
+			y: 11.495000000000001d
 			icon: {
 				id: "create_enchantment_industry:enchanting_template"
 				count: 1
@@ -802,7 +802,7 @@
 		{
 			id: "14B34EE27BD94109"
 			x: 2.65d
-			y: 9.995000000000001d
+			y: 11.495000000000001d
 			icon: {
 				id: "create_enchantment_industry:blaze_forger"
 				count: 1
@@ -839,7 +839,7 @@
 		{
 			id: "78DA48D3B9D7F31C"
 			x: 2.65d
-			y: 11.870000000000001d
+			y: 9.620000000000001d
 			icon: {
 				id: "create_enchantment_industry:experience_cake"
 				count: 1
@@ -883,7 +883,7 @@
 		{
 			id: "6C5BB64AA39F5970"
 			x: 5.25d
-			y: 9.995000000000001d
+			y: 11.495000000000001d
 			icon: {
 				id: "create_enchantment_industry:infuser"
 				count: 1
@@ -922,7 +922,7 @@
 		{
 			id: "5036E615F5774276"
 			x: 0.25d
-			y: 16.47d
+			y: 17.97d
 			icon: {
 				id: "create_mechanical_spawner:spawn_fluid_random_bucket"
 				count: 1
@@ -963,7 +963,7 @@
 		{
 			id: "349A54CD94529E4C"
 			x: 2.65d
-			y: 16.47d
+			y: 17.97d
 			icon: {
 				id: "create_mechanical_spawner:spawn_fluid_zombie_bucket"
 				count: 1
@@ -1002,7 +1002,7 @@
 		{
 			id: "677B8B1F5C5139D6"
 			x: 2.65d
-			y: 18.22d
+			y: 19.72d
 			icon: {
 				id: "create_mechanical_spawner:loot_collector"
 				count: 1
@@ -1038,7 +1038,7 @@
 		{
 			id: "17F2803C43A50024"
 			x: 0.25d
-			y: 22.82d
+			y: 24.32d
 			icon: {
 				id: "createdieselgenerators:bulk_fermenter"
 				count: 1
@@ -1092,7 +1092,7 @@
 		{
 			id: "1023FB2248B920D6"
 			x: 2.65d
-			y: 22.82d
+			y: 24.32d
 			icon: {
 				id: "createdieselgenerators:biodiesel_bucket"
 				count: 1
@@ -1131,7 +1131,7 @@
 		{
 			id: "50BB336485F2AB6B"
 			x: 4.65d
-			y: 22.82d
+			y: 24.32d
 			icon: {
 				id: "createdieselgenerators:diesel_engine"
 				count: 1
@@ -1177,7 +1177,7 @@
 		{
 			id: "789E312149280497"
 			x: 7.25d
-			y: 22.82d
+			y: 24.32d
 			icon: {
 				id: "createdieselgenerators:large_diesel_engine"
 				count: 1
@@ -1214,7 +1214,7 @@
 		{
 			id: "1CB83D6658D893E5"
 			x: 7.25d
-			y: 25.07d
+			y: 26.57d
 			icon: {
 				id: "createdieselgenerators:oil_scanner"
 				count: 1
@@ -1253,7 +1253,7 @@
 		{
 			id: "6C16F7A979EACAB8"
 			x: 11.0d
-			y: 22.07d
+			y: 23.57d
 			icon: {
 				id: "create:mechanical_drill"
 				count: 1
@@ -1281,7 +1281,7 @@
 		{
 			id: "19E6B4F9832A34B0"
 			x: 13.0d
-			y: 22.07d
+			y: 23.57d
 			icon: {
 				id: "create:copper_backtank"
 				count: 1
@@ -1302,6 +1302,348 @@
 					id: "56B7F6DB0CB03651"
 					type: "xp_levels"
 					xp_levels: 5
+				}
+			]
+		}
+		{
+			id: "3C8ADEA240933DAF"
+			x: 12.19d
+			y: 9.620000000000001d
+			icon: {
+				id: "create_connected:kinetic_battery"
+				count: 1
+			}
+			dependencies: [
+				"27CB62653A416B09"
+			]
+			tasks: [
+				{
+					id: "49A712DA6F0D5E22"
+					type: "item"
+					item: {
+						id: "create_connected:kinetic_battery"
+						count: 1
+					}
+					count: 2
+				}
+			]
+			rewards: [
+				{
+					id: "46AEDAE617437CE8"
+					type: "item"
+					item: {
+						id: "create:brass_casing"
+						count: 1
+					}
+					count: 2
+				}
+				{
+					id: "72652BD84FC1D7A8"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+		}
+		{
+			id: "31A23D07C61A0B70"
+			x: 14.19d
+			y: 14.120000000000001d
+			icon: {
+				id: "create_connected:centrifugal_clutch"
+				count: 1
+			}
+			optional: true
+			dependencies: [
+				"1EC7DBE5AE3B7A5E"
+			]
+			tasks: [
+				{
+					id: "4ACAC21243739CE2"
+					type: "item"
+					item: {
+						id: "create_connected:brake"
+						count: 1
+					}
+					count: 1
+				}
+				{
+					id: "2CF399F8BD2371B0"
+					type: "item"
+					item: {
+						id: "create_connected:centrifugal_clutch"
+						count: 1
+					}
+					count: 1
+				}
+				{
+					id: "1D7DDA2D16ED0A3E"
+					type: "item"
+					item: {
+						id: "create_connected:freewheel_clutch"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "2D0FCE058A9AE1EF"
+					type: "item"
+					item: {
+						id: "create:andesite_casing"
+						count: 1
+					}
+					count: 4
+				}
+				{
+					id: "39DAB8C20210CD8C"
+					type: "xp_levels"
+					xp_levels: 4
+				}
+			]
+		}
+		{
+			id: "1E95204A707575B3"
+			x: 14.19d
+			y: 12.620000000000001d
+			icon: {
+				id: "create_connected:item_silo"
+				count: 1
+			}
+			dependencies: [
+				"40625177532CB7E4"
+			]
+			tasks: [
+				{
+					id: "34C2089BD38B611E"
+					type: "item"
+					item: {
+						id: "create_connected:item_silo"
+						count: 1
+					}
+					count: 2
+				}
+				{
+					id: "24CCD462A4B6A537"
+					type: "item"
+					item: {
+						id: "create_connected:fluid_vessel"
+						count: 1
+					}
+					count: 2
+				}
+			]
+			rewards: [
+				{
+					id: "67F822FFBC97F9C0"
+					type: "item"
+					item: {
+						id: "create:iron_sheet"
+						count: 1
+					}
+					count: 8
+				}
+				{
+					id: "60AC089D10C8AFCA"
+					type: "xp_levels"
+					xp_levels: 4
+				}
+			]
+		}
+		{
+			id: "22880A314291C832"
+			x: 5.25d
+			y: 12.995000000000001d
+			icon: {
+				id: "create_dragons_plus:blaze_upgrade_smithing_template"
+				count: 1
+			}
+			dependencies: [
+				"14B34EE27BD94109"
+			]
+			tasks: [
+				{
+					id: "639FDF3D2834BAEE"
+					type: "item"
+					item: {
+						id: "create_dragons_plus:blaze_upgrade_smithing_template"
+						count: 1
+					}
+					count: 2
+				}
+			]
+			rewards: [
+				{
+					id: "68CD8D0F0FA53715"
+					type: "item"
+					item: {
+						id: "minecraft:blaze_rod"
+						count: 1
+					}
+					count: 7
+				}
+				{
+					id: "639DAABC42461ABA"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+		}
+		{
+			id: "3E6072EF5F93C964"
+			x: 2.65d
+			y: 13.370000000000001d
+			icon: {
+				id: "create_enchantment_industry:experience_lantern"
+				count: 1
+			}
+			optional: true
+			dependencies: [
+				"32ED2F26BE02AF93"
+			]
+			tasks: [
+				{
+					id: "15A50E37DD30EF0A"
+					type: "item"
+					item: {
+						id: "create_enchantment_industry:experience_lantern"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "2EE3D4D4B5F9D7AB"
+					type: "item"
+					item: {
+						id: "minecraft:sponge"
+						count: 1
+					}
+					count: 1
+				}
+				{
+					id: "2462AD61D4218966"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+		}
+		{
+			id: "522EB6B27239EEFA"
+			x: 5.05d
+			y: 17.97d
+			icon: {
+				id: "create_mechanical_spawner:spawn_fluid_blaze_bucket"
+				count: 1
+			}
+			dependencies: [
+				"349A54CD94529E4C"
+			]
+			tasks: [
+				{
+					id: "5DB1A05E1F277659"
+					type: "item"
+					item: {
+						id: "create_mechanical_spawner:spawn_fluid_blaze_bucket"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "2C7BBD2F138A886E"
+					type: "item"
+					item: {
+						id: "minecraft:blaze_rod"
+						count: 1
+					}
+					count: 8
+				}
+				{
+					id: "56DC3CA706FE9539"
+					type: "loot"
+					table_id: 2502423014058638837L
+				}
+			]
+		}
+		{
+			id: "3425E371E27B730E"
+			x: 4.65d
+			y: 26.195d
+			icon: {
+				id: "createdieselgenerators:burner"
+				count: 1
+			}
+			dependencies: [
+				"1023FB2248B920D6"
+			]
+			tasks: [
+				{
+					id: "7590B6621B99DCDD"
+					type: "item"
+					item: {
+						id: "createdieselgenerators:burner"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "47CDDBBE170D1EBA"
+					type: "item"
+					item: {
+						id: "createdieselgenerators:canister"
+						count: 1
+					}
+					count: 1
+				}
+				{
+					id: "669CA1DBF4FDC6FE"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+		}
+		{
+			id: "281D8DAABEF8ABDA"
+			x: 2.65d
+			y: 25.82d
+			icon: {
+				id: "createdieselgenerators:chemical_sprayer"
+				count: 1
+			}
+			optional: true
+			dependencies: [
+				"17F2803C43A50024"
+			]
+			tasks: [
+				{
+					id: "7C6568F08FF6F404"
+					type: "item"
+					item: {
+						id: "createdieselgenerators:chemical_sprayer"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "1F28E110CC7DAA2B"
+					type: "item"
+					item: {
+						id: "minecraft:water_bucket"
+						count: 1
+					}
+					count: 1
+				}
+				{
+					id: "47E3D2ABE1938A8D"
+					type: "xp_levels"
+					xp_levels: 4
 				}
 			]
 		}
@@ -1361,7 +1703,7 @@
 			id: "318C96BEA384F1C6"
 			image: "kronwerke:textures/quests/create_addons/spawner.png"
 			x: 2.995d
-			y: 14.77d
+			y: 16.27d
 			width: 6.99d
 			height: 0.9d
 			rotation: 0.0d
@@ -1371,7 +1713,7 @@
 			id: "36E802D311B40BD4"
 			image: "kronwerke:textures/quests/create_addons/dragons.png"
 			x: 10.77d
-			y: 14.77d
+			y: 16.27d
 			width: 4.56d
 			height: 0.9d
 			rotation: 0.0d
@@ -1381,7 +1723,7 @@
 			id: "556BAEBF86C34E4E"
 			image: "kronwerke:textures/quests/create_addons/diesel.png"
 			x: 0.5549999999999999d
-			y: 20.62d
+			y: 22.12d
 			width: 2.11d
 			height: 0.9d
 			rotation: 0.0d
@@ -1391,7 +1733,7 @@
 			id: "2DF6D8F55975F43D"
 			image: "kronwerke:textures/quests/create_addons/outlook.png"
 			x: 11.995000000000001d
-			y: 20.62d
+			y: 22.12d
 			width: 2.99d
 			height: 0.9d
 			rotation: 0.0d

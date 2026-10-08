@@ -3,8 +3,8 @@
 expulsion and protection are stage 2 and only mentioned), FTB Chunks claims and chunk loading,
 JourneyMap, JEI, Jade, FTB Ultimine, Simple Voice Chat, Corpse, Trash Cans, Inventory Tweak and
 Crafting Tweaks. Numbers follow the server configs in config/. Waystones has its own chapter.
-Cobweb in the mod list is only the Crystal Nest library and has nothing for players; Mouse Tweaks
-and Xaero are not in the pack."""
+Cobweb in the mod list is only the Crystal Nest library and has nothing for players; Xaero is not
+in the pack (JourneyMap is). Mouse Tweaks is in the pack and covered in the tips chapter."""
 from ftbq import (chapter, quest, task_item, task_checkmark, reward_item, reward_table, reward_xp,
                   banner, img, item_texture)
 
@@ -85,6 +85,17 @@ quests = [
           rewards=[reward_item("minecraft:obsidian", 4), reward_table("s1_common")],
           deps=["magnet"], icon="itemcollectors:basic_collector"),
 
+    quest("magnet_charm", 4.5, 1.5, "&bSteck den Magneten in den Schmuckplatz",
+          subtitle="Er wirkt auch dort, und das Inventar bleibt frei.",
+          description=[
+              "Drück &eG&r für deine &6Schmuckplätze&r. Der Magnet passt in den Platz &eAnhänger&r und zieht von dort genauso wie aus dem Inventar.",
+              "",
+              "So kann ihn Ultimine nicht aus Versehen mit Bruchstein zuschütten, und ein voller Rucksack verdrängt ihn nicht. Ein- und ausschalten geht weiter mit &eAlt+M&r.",
+          ],
+          tasks=[task_checkmark("Magnet angelegt")],
+          rewards=[reward_xp(3)],
+          deps=["magnet"], icon="simplemagnets:basicmagnet", optional=True),
+
     # ---- Pylonen -------------------------------------------------------------------
     quest("harvester", 12.5, 0, "&dLies, was der Erntepylon tut",
           subtitle="Ein Feld, das sich selbst erntet, ab Stufe 2.",
@@ -153,6 +164,19 @@ quests = [
           tasks=[task_checkmark("Wegpunkt gesetzt")],
           rewards=[reward_item("minecraft:compass", 1), reward_xp(3)],
           deps=["claims"], icon="minecraft:filled_map"),
+
+    quest("ping", 12, 5, "&aZeig deinem Team den Weg",
+          subtitle="Ping Wheel: ein Klick, ein Zeichen in der Welt.",
+          description=[
+              "&eMaustaste 5&r (eine Seitentaste der Maus) setzt einen &6Ping&r dort, wo du hinschaust. Alle in der Nähe sehen ihn als Zeichen in der Welt, mit Entfernung, und am Bildschirmrand zeigt ein Pfeil die Richtung.",
+              "",
+              "Ein Ping hält &e7 Sekunden&r. Zielst du auf einen Gegenstand am Boden, zeigt er dessen Symbol. Ideal für \"Hier ist die Ader\" oder \"Pass auf, Creeper\".",
+              "",
+              "&eTipp:&r In den Einstellungen von Ping Wheel stellst du einen &eKanal&r ein. Dann sehen nur Spieler mit demselben Kanal deine Pings.",
+          ],
+          tasks=[task_checkmark("Gepingt")],
+          rewards=[reward_xp(3)],
+          deps=["journeymap"], icon="minecraft:target"),
 
     # ---- Wissen ------------------------------------------------------------------
     quest("jei_lookup", 3, 9.5, "&eSchlag ein Rezept nach",
@@ -261,7 +285,7 @@ quests = [
     quest("sort", 9, 15, "&7Räum dein Inventar auf",
           subtitle="Inventory Tweak und Crafting Tweaks.",
           description=[
-              "Drück im Inventar oder in einer offenen Truhe &eB&r, und &6Inventory Tweak&r sortiert nach Art, Name oder Seltenheit, je nach Einstellung. Fällt ein Werkzeug unter &e10 Prozent&r Haltbarkeit, warnt es dich mit Text und Ton.",
+              "Drück im Inventar oder in einer offenen Truhe &eAlt+B&r, und &6Inventory Tweak&r sortiert nach Art, Name oder Seltenheit, je nach Einstellung. Fällt ein Werkzeug unter &e10 Prozent&r Haltbarkeit, warnt es dich mit Text und Ton.",
               "",
               "&6Crafting Tweaks&r setzt drei kleine Knöpfe neben die Werkbank: &eDrehen&r, &eAusgleichen&r (verteilt Stapel gleichmäßig) und &eLeeren&r. Rechtsklick auf das Ergebnis stellt gleich einen ganzen Stapel her.",
               "",
@@ -270,6 +294,54 @@ quests = [
           tasks=[task_checkmark("Sortiert")],
           rewards=[reward_xp(3)],
           deps=["ultimine"], icon="minecraft:chest"),
+
+    quest("compress", 12, 15.5, "&7Press Barren mit einer Taste",
+          subtitle="Crafting Tweaks: verdichten und nachfüllen.",
+          description=[
+              "Im Fenster der Werkbank fährst du mit der Maus über einen Stapel &6Barren&r und drückst &eK&r: &6Crafting Tweaks&r presst ihn zu Blöcken. &eStrg+K&r presst nur einen Block, &eShift+K&r alles dieser Sorte.",
+              "",
+              "&eTab&r füllt das Raster wieder mit dem letzten Rezept, &eStrg+Tab&r nur einmal. Praktisch, wenn du dreißig Mal dasselbe herstellst.",
+          ],
+          tasks=[task_checkmark("Verdichtet")],
+          rewards=[reward_item("minecraft:iron_ingot", 9), reward_xp(3)],
+          deps=["sort"], icon="minecraft:iron_block"),
+
+    quest("wrench", 12, 12.5, "&7Dreh Blöcke mit dem Schraubenschlüssel",
+          subtitle="Treppe falsch herum? Nicht abbauen.",
+          description=[
+              "&eRezept:&r vier &6Kupferbarren&r: zwei oben an den Ecken, zwei untereinander in der Mitte darunter. Der &6Schraubenschlüssel&r von Supplementaries.",
+              "",
+              "&eRechtsklick&r auf einen Block dreht ihn. Treppen, Stämme, Truhen, Trichter: alles, was eine Richtung hat. Gerade beim Bauen und an Trichterketten spart das viel Abbauen und neu Setzen.",
+              "",
+              "Den &6Schraubenschlüssel&r von Create brauchst du trotzdem für Create-Blöcke. Beide nebeneinander in der Leiste schaden nicht.",
+          ],
+          tasks=[task_item("supplementaries:wrench", 1)],
+          rewards=[reward_item("minecraft:copper_ingot", 8), reward_xp(3)],
+          deps=["trash"], icon="supplementaries:wrench"),
+
+    quest("cage", 15, 12.5, "&7Trag ein Tier im Käfig",
+          subtitle="Kühe umziehen, ohne Leine und Weizen.",
+          description=[
+              "&eRezept:&r drei &6Eisenbarren&r oben, zwei &6Eisengitter&r an den Seiten, drei &6Holzstufen&r unten. Ein &6Mobkäfig&r.",
+              "",
+              "Mit dem Käfig in der Hand klickst du ein Tier an, und es sitzt drin. Ein Rechtsklick auf den Boden lässt es dort wieder frei. Mit &eShift&r stellst du den Käfig samt Tier als Block auf.",
+              "",
+              "Zähmbare Tiere wie Wölfe und Katzen müssen erst gezähmt sein. Passt ein Wesen nicht hinein, sagt dir das der Käfig.",
+          ],
+          tasks=[task_item("supplementaries:cage", 1)],
+          rewards=[reward_item("minecraft:wheat", 16), reward_xp(3)],
+          deps=["wrench"], icon="supplementaries:cage", optional=True),
+
+    quest("jar", 15, 14, "&7Füll ein Gefäß",
+          subtitle="Flüssigkeit, Kekse und kleine Wesen im Glas.",
+          description=[
+              "&eRezept:&r Glas oben links und rechts, eine &6Holzstufe&r oben in der Mitte, Glas an den Seiten und unten. Ein &6Gefäß&r von Supplementaries.",
+              "",
+              "Es nimmt Flüssigkeiten aus Flaschen, Eimern und Schüsseln auf, dazu Kekse und kleine Wesen. Abgebaut behält es seinen Inhalt. Ein Gefäß mit Honig, Milch oder Wasser auf dem Regal ist zugleich Vorrat und Deko.",
+          ],
+          tasks=[task_item("supplementaries:jar", 1)],
+          rewards=[reward_item("minecraft:glass", 8), reward_xp(2)],
+          deps=["cage"], icon="supplementaries:jar", optional=True),
 
     quest("done", 13, 14, "&6&lAlles eingerichtet",
           subtitle="Magnet, Sammler, Mülltonne, Claim.",
@@ -282,7 +354,62 @@ quests = [
                  task_item("trashcans:item_trash_can", 1)],
           rewards=[reward_table("s1_rare"), reward_xp(10)],
           deps=["collector", "trash", "chunkload"], icon="minecraft:diamond", size=2.0, shape="gear"),
+
+    # ---- Rasten -------------------------------------------------------------------
+    quest("sleeping_bag", 3, 19, "&6Näh einen Schlafsack",
+          subtitle="Die Nacht überspringen, wo du gerade bist.",
+          description=[
+              "&eRezept:&r drei &6Wolle&r senkrecht übereinander. Ein &6Schlafsack&r von Comforts, gefärbt wird er wie ein Bett mit Farbstoff.",
+              "",
+              "Setz ihn ab, und du legst dich sofort hinein. Er geht nur &enachts&r und setzt deinen Spawnpunkt &enicht&r um. Dein Bett zu Hause bleibt also dein Zuhause.",
+              "",
+              "Wer ihn benutzt, hält auch die &6Phantome&r fern, genau wie mit einem Bett.",
+          ],
+          tasks=[task_item("comforts:sleeping_bag_white", 1)],
+          rewards=[reward_item("minecraft:white_wool", 6), reward_xp(3)],
+          deps=["welcome"], icon="comforts:sleeping_bag_white"),
+
+    quest("hammock", 6, 18, "&6Häng eine Hängematte auf",
+          subtitle="Den Tag verschlafen, bis es dunkel ist.",
+          description=[
+              "&eRezept:&r ein &6Stock&r oben und unten in der Mitte, dazwischen &6Faden&r, &6Wolle&r, &6Faden&r: der &6Hängemattenstoff&r. Dazu zweimal &6Seil und Nägel&r (ein Eisenbarren und ein Seil von Supplementaries ergeben zwei).",
+              "",
+              "Die beiden Nägel kommen an zwei gegenüberliegende Wände, der Stoff dazwischen. Die Hängematte geht nur &etagsüber&r und schläft bis zum Abend, das Gegenstück zum Schlafsack.",
+              "",
+              "Praktisch, wenn deine Farm Monster braucht oder du lieber nachts gräbst.",
+          ],
+          tasks=[task_item("comforts:hammock_white", 1), task_item("comforts:rope_and_nail", 2)],
+          rewards=[reward_item("minecraft:string", 8), reward_xp(3)],
+          deps=["sleeping_bag"], icon="comforts:hammock_white", optional=True),
+
+    quest("campfire", 6, 20, "&6Wärm dich am Lagerfeuer",
+          subtitle="Ein brennendes Feuer heilt alle in der Nähe.",
+          description=[
+              "Ein brennendes &6Lagerfeuer&r gibt jedem Spieler in &e16 Blöcken&r Umkreis &eRegeneration I&r für &e60 Sekunden&r. Das kommt von &6Healing Campfire&r und wird alle zwei Sekunden aufgefrischt.",
+              "",
+              "Ein &6Seelenlagerfeuer&r wirkt genauso, Tiere in der Nähe heilt es auch. Ist das Feuer aus, passiert nichts.",
+              "",
+              "&eTipp:&r Eins in der Mitte der Basis, eins am Eingang zur Mine. Nach einem Kampf stellst du dich kurz daneben, statt dein Essen zu verbrauchen.",
+          ],
+          tasks=[task_item("minecraft:campfire", 1)],
+          rewards=[reward_item("minecraft:charcoal", 8), reward_xp(3)],
+          deps=["sleeping_bag"], icon="minecraft:campfire"),
+
+    quest("lunch_basket", 9, 20, "&6Pack einen Picknickkorb",
+          subtitle="Sechs Stapel Essen in einem Platz.",
+          description=[
+              "&eRezept:&r ein &6Bambus&r oben in der Mitte, Bambus links und rechts in der Mitte, ein &6Teppich&r in der Mitte, drei Bambus unten. Der &6Picknickkorb&r von Supplementaries.",
+              "",
+              "Er fasst &e6 Stapel&r Essen und belegt nur einen Platz im Inventar. Mit der &eAngriffstaste&r schaltest du ihn zwischen offen und geschlossen, aus einem offenen Korb isst du direkt.",
+              "",
+              "Abgestellt ist er auch ein Block, gut für den Tisch in der Küche.",
+          ],
+          tasks=[task_item("supplementaries:lunch_basket", 1)],
+          rewards=[reward_item("minecraft:bamboo", 16), reward_item("minecraft:baked_potato", 16)],
+          deps=["campfire"], icon="supplementaries:lunch_basket"),
 ]
+
+images = []
 
 images = [
     banner("comfort/title", "Komfort", 7.5, -4.5, height=1.75, kind="title", colour="brass"),
@@ -291,6 +418,7 @@ images = [
     banner("comfort/map", "Karte und Claims", 6, 3.3, height=0.9, colour="nature"),
     banner("comfort/knowledge", "Wissen", 6, 7.1, height=0.9, colour="stone"),
     banner("comfort/daily", "Alltag", 7, 11.6, height=0.9, colour="brass"),
+    banner("comfort/rest", "Rasten", 6, 16.8, height=0.9, colour="nature"),
 ]
 
 chapter(C, "Komfort", "simplemagnets:basicmagnet", "storage", quests, shape="circle", order=55, stage=1,

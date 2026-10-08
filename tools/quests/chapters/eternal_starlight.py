@@ -45,7 +45,7 @@ quests = [
           rewards=[reward_item("minecraft:torch", 64), reward_item("minecraft:cooked_beef", 16), reward_xp(10)],
           deps=["orb"], icon="eternal_starlight:chiseled_voidstone", size=1.75, shape="hexagon"),
 
-    quest("seeking_eye", 2.5, 2.4, "&dFolg einem Seeking Eye",
+    quest("seeking_eye", -1, 2, "&dFolg einem Seeking Eye",
           subtitle="Zeigt dir Bauwerke und Biome.",
           description=[
               "Werkbank: &68 Starlight Flowers&r um eine &6Enderperle&r ergeben &616 Seeking Eyes&r. Rechtsklick öffnet eine Sternenkarte, dort wählst du ein Ziel. Das Auge schwebt voraus.",
@@ -125,7 +125,7 @@ quests = [
           rewards=[reward_item("eternal_starlight:tooth_of_hunger", 2), reward_xp(10)],
           deps=["desert"], icon="eternal_starlight:dagger_of_hunger"),
 
-    quest("swamp", 5, -2, "&2Grab Malarit im Sumpf",
+    quest("swamp", 10, -4, "&2Grab Malarit im Sumpf",
           subtitle="Nur im Dark Swamp.",
           description=[
               "Bau &68 Malarite&r ab. Das Erz gibt es nur im &6Dark Swamp&r, von &eY -64&r bis an die Oberfläche.",
@@ -136,7 +136,7 @@ quests = [
           rewards=[reward_xp(10)],
           deps=["portal"], icon="eternal_starlight:malarite"),
 
-    quest("stranghoul", 7.5, -2, "&2Heuer einen Stranghoul an",
+    quest("stranghoul", 10, -3, "&2Heuer einen Stranghoul an",
           subtitle="Eine Schüssel Eintopf, ein Tag Begleitschutz.",
           description=[
               "Gib einem &6Stranghoul&r eine Schüssel &6Pungency Stew&r. Dann kämpft er einen Tag lang für dich.",
@@ -147,7 +147,7 @@ quests = [
           rewards=[reward_item("eternal_starlight:malarite", 4), reward_xp(8)],
           deps=["swamp"], icon="eternal_starlight:pungency_stew", optional=True),
 
-    quest("permafrost_forest", 10, -2, "&fSchmelz Glacite",
+    quest("permafrost_forest", 5, -3, "&fSchmelz Glacite",
           subtitle="Das Eis des ewigen Frosts.",
           description=[
               "Bau &6Glacite&r ab und schmelz es im Ofen zu &68 Glacite Shards&r. Glacite liegt im &6Starlight Permafrost Forest&r und auf den &6Permafrost Peaks&r, von &eY -64 bis 45&r.",
@@ -158,7 +158,7 @@ quests = [
           rewards=[reward_item("minecraft:packed_ice", 8), reward_xp(10)],
           deps=["portal"], icon="eternal_starlight:glacite_shard"),
 
-    quest("meteor", 12.5, -2, "&eSammle Aethersent",
+    quest("meteor", 7.5, -3, "&eSammle Aethersent",
           subtitle="Erz, das vom Himmel fällt.",
           description=[
               "Warte auf einen &eMeteorschauer&r. Große Meteore schlagen ein und hinterlassen &6Raw Aethersent&r. Im Ofen wird daraus ein &6Aethersent Ingot&r. Sammle 4.",
@@ -369,7 +369,7 @@ quests = [
           rewards=[reward_table("s4_uncommon"), reward_xp(20)],
           deps=["freezes"], icon="eternal_starlight:coldsnap", size=1.75, shape="hexagon"),
 
-    quest("garden", 16, 1, "&5Betritt den Cursed Garden",
+    quest("garden", 16, -0.5, "&5Betritt den Cursed Garden",
           subtitle="Vorbereitung für den dritten Boss.",
           description=[
               "Finde den &5Cursed Garden&r, ein Heckenlabyrinth voller &6Tangled&r. Erleg &610 Tangled&r auf dem Weg zur Mitte.",
@@ -382,7 +382,7 @@ quests = [
           rewards=[reward_item("eternal_starlight:soul_dew", 2), reward_xp(10)],
           deps=["permafrost"], icon="eternal_starlight:tangled_skull", size=1.25),
 
-    quest("monstrosity", 18.5, 1, "&5&lBesiege die Lunar Monstrosity",
+    quest("monstrosity", 18.5, -0.5, "&5&lBesiege die Lunar Monstrosity",
           subtitle="Boss 3 von 3.",
           description=[
               "Zünd sie an, dann wird sie verwundbar. Ohne Feuer machen die meisten Waffen kaum Schaden. Sie bleibt meist am Ort, gräbt sich aber manchmal ein und taucht bei dir auf.",
@@ -393,7 +393,7 @@ quests = [
           rewards=[reward_table("s4_uncommon"), reward_xp(20)],
           deps=["garden"], icon="eternal_starlight:crescent_spear", size=1.75, shape="hexagon"),
 
-    quest("petal_scythe", 21, 1, "&dBau die Petal Scythe",
+    quest("petal_scythe", 21, -0.5, "&dBau die Petal Scythe",
           subtitle="Die Sense aus der Beute der Monstrosity.",
           description=[
               "Werkbank: &64 Tenacious Petals&r und &62 Tenacious Vines&r ergeben die &6Petal Scythe&r. Mit Soul Dew wird aus Petals und Vines das Moonring Greatsword.",
@@ -415,6 +415,98 @@ quests = [
           tasks=[task_item("eternal_starlight:golem_steel_ingot", 8), task_item("eternal_starlight:deepsilver_ingot", 32)],
           rewards=[reward_table("s4_rare"), reward_xp(25)],
           deps=["golem_steel", "permafrost", "monstrosity"], icon="eternal_starlight:orb_of_prophecy", size=2.5, shape="gear"),
+    # ---- Neu ------------------------------------------------------------------
+    quest("es_etheric_eye", -1, 3.2, "&dBau Etheric Eyes",
+          subtitle="Der schnelle Weg nach oben.",
+          description=[
+              "An den Ether Rivers wachsen &6Thioquartz&r-Geoden wie Amethyst. Ein &6Seeking Eye&r in der Mitte und &64 Thioquartz Shards&r an den Seiten ergeben &e4 Etheric Eyes&r.",
+              "",
+              "Benutz eines, und es bringt dich an die Oberfläche. Ideal, wenn du dich in den Höhlen unter dem Voidstone verlaufen hast. Aus den Shards werden auch Thioquartz-Pfeile.",
+          ],
+          tasks=[task_item("eternal_starlight:etheric_eye", 4)],
+          rewards=[reward_item("eternal_starlight:seeking_eye", 2), reward_xp(10)],
+          deps=["seeking_eye"], icon="eternal_starlight:etheric_eye", optional=True),
+
+    quest("es_all_biomes", 12.5, -7, "&b&lErkunde alle 22 Biome",
+          subtitle="Vom Kristallwüstensand bis in den Abgrund.",
+          description=[
+              "Betritt jedes der &d22&r Biome von Eternal Starlight, auch die Meere, die &6Ether Rivers&r, die &6Solaris Isles&r und ganz unten &6The Abyss&r.",
+              "",
+              "Ein &6Kompass der Natur&r findet dir die fehlenden. Für die Meere nimm ein Boot und Atemtränke mit.",
+          ],
+          tasks=[task_advancement("eternal_starlight:all_starlight_biomes", "Alle Biome von Eternal Starlight besucht")],
+          rewards=[reward_table("s4_uncommon"), reward_xp(20)],
+          deps=["forests", "desert", "swamp", "permafrost_forest"], icon="naturescompass:naturescompass", optional=True),
+
+    quest("es_deepsilver_armor", 5, 0.5, "&7Trag die volle Deepsilver-Rüstung",
+          subtitle="Die erste Rüstung der Sternenwelt.",
+          description=[
+              "Schmiede &6Helm&r, &6Harnisch&r, &6Beinschutz&r und &6Stiefel&r aus Deepsilver Ingots, wie bei Eisen. Sie macht dich gegen bestimmte schädliche Effekte immun, der Tooltip zeigt welche und ob dafür das volle Set nötig ist.",
+              "",
+              "&eKronwerke:&r In Stufe 4 haben feindliche Mobs &d120 Prozent&r mehr Leben, &d75 Prozent&r mehr Schaden und &d7&r Rüstungspunkte dazu, auch die Bewohner dieser Dimension. Geh nicht ohne volle Rüstung los.",
+          ],
+          tasks=[task_item("eternal_starlight:deepsilver_helmet", 1), task_item("eternal_starlight:deepsilver_chestplate", 1),
+                 task_item("eternal_starlight:deepsilver_leggings", 1), task_item("eternal_starlight:deepsilver_boots", 1)],
+          rewards=[reward_item("eternal_starlight:deepsilver_ingot", 8), reward_xp(10)],
+          deps=["deepsilver"], icon="eternal_starlight:deepsilver_chestplate"),
+
+    quest("es_glacite_armor", 10, 0.5, "&fTrag die volle Glacite-Rüstung",
+          subtitle="Wer dich schlägt, friert ein.",
+          description=[
+              "Schmiede alle vier Teile aus &6Glacite Shards&r, wie bei Eisen. Getragen friert sie Gegner ein, die dir Schaden machen.",
+              "",
+              "Dazu passt der &6Glacite Shield&r: Bretter mit einem Glacite Shard oben in der Mitte. Ihn brauchst du später für den Flowglaze Shield.",
+          ],
+          tasks=[task_item("eternal_starlight:glacite_helmet", 1), task_item("eternal_starlight:glacite_chestplate", 1),
+                 task_item("eternal_starlight:glacite_leggings", 1), task_item("eternal_starlight:glacite_boots", 1)],
+          rewards=[reward_item("eternal_starlight:glacite_shard", 8), reward_xp(10)],
+          deps=["permafrost_forest", "deepsilver"], icon="eternal_starlight:glacite_chestplate", optional=True),
+
+    quest("es_springstone_armor", 12.5, 0.5, "&cTrag die volle Springstone-Rüstung",
+          subtitle="Wer dich schlägt, fängt Feuer.",
+          description=[
+              "Schmiede alle vier Teile aus &6Thermal Springstone Ingots&r, wie bei Eisen. Getragen setzt sie Gegner in Brand, die dir Schaden machen.",
+              "",
+              "Gegen die &5Lunar Monstrosity&r ist Feuer Gold wert, gegen die Freezes und den Permafrost auch.",
+          ],
+          tasks=[task_item("eternal_starlight:thermal_springstone_helmet", 1), task_item("eternal_starlight:thermal_springstone_chestplate", 1),
+                 task_item("eternal_starlight:thermal_springstone_leggings", 1), task_item("eternal_starlight:thermal_springstone_boots", 1)],
+          rewards=[reward_item("eternal_starlight:thermal_springstone_ingot", 8), reward_xp(10)],
+          deps=["springstone"], icon="eternal_starlight:thermal_springstone_chestplate", optional=True),
+
+    quest("es_flowglaze_shield", 2.5, 4, "&bWerte zum Flowglaze Shield auf",
+          subtitle="Ein Schild, der Geschosse zurückwirft.",
+          description=[
+              "Schmiedetisch: &6Flowglaze Upgrade Smithing Template&r, &6Glacite Shield&r und &6Flowglaze&r ergeben den &6Flowglaze Shield&r.",
+              "",
+              "Blockst du mit ihm, fliegen Pfeile und andere Geschosse zurück. Gegen Lonestar Skeletons und Fernkämpfer in den Bossarenen sehr angenehm.",
+          ],
+          tasks=[task_item("eternal_starlight:flowglaze_shield", 1)],
+          rewards=[reward_xp(15)],
+          deps=["flowglaze_scythe", "es_glacite_armor"], icon="eternal_starlight:flowglaze_shield", optional=True),
+
+    quest("es_aethersent_golem", 2.5, -3, "&eBau einen Aethersent Golem",
+          subtitle="Ein Wächter gegen Meteore.",
+          description=[
+              "&69 Aethersent Ingots&r ergeben einen &6Block of Aethersent&r. Stell ihn auf, schnitz eine &6Lunaris-Kaktusfrucht&r und setz sie oben drauf.",
+              "",
+              "Der &6Aethersent Golem&r schießt Meteore ab, bevor sie in deiner Basis einschlagen. Bei einem Meteorschauer fallen auch Creteors herunter, die explodieren wie Creeper.",
+          ],
+          tasks=[task_advancement("eternal_starlight:summon_aethersent_golem", "Einen Aethersent Golem gebaut")],
+          rewards=[reward_item("eternal_starlight:aethersent_ingot", 4), reward_xp(15)],
+          deps=["meteor"], icon="eternal_starlight:aethersent_block", optional=True),
+
+    quest("es_moth", 7.5, 9, "&dZähm eine Crystallized Moth",
+          subtitle="Ein Begleiter mit Schallwellen.",
+          description=[
+              "In der &6Crystallized Desert&r fliegen &6Crystallized Moths&r. Füttere eine mit genug Fleisch, bis sie zahm ist.",
+              "",
+              "Sie greift deine Gegner mit Schallwellen an. Ein Begleiter, der in dieser Dimension mitkämpft, ist viel wert.",
+          ],
+          tasks=[task_advancement("eternal_starlight:tame_crystallized_moth", "Eine Crystallized Moth gezähmt")],
+          rewards=[reward_item("minecraft:cooked_beef", 16), reward_xp(10)],
+          deps=["mobs_animals", "desert"], icon="eternal_starlight:blue_starlight_crystal_shard", optional=True),
+
 ]
 
 images = [

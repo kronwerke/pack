@@ -12,11 +12,11 @@ C = "list_gear"
 COLS = [3.0, 5.5, 8.0, 10.5, 13.0, 15.5, 18.0, 20.5]
 ROW = 2.0
 
-def entry(name, col, row, y0, title, subtitle, lines, task, icon, deps, rewards=None):
+def entry(name, col, row, y0, title, subtitle, lines, task, icon, deps, rewards=None, section=None):
     """One checklist line: title is the action, subtitle the result, lines the facts."""
     return quest(name, COLS[col], y0 + row * ROW, title,
                  subtitle=subtitle, description=list(lines), tasks=[task],
-                 rewards=rewards or [reward_xp(2)], deps=deps, icon=icon)
+                 rewards=rewards or [reward_xp(2)], deps=deps, icon=icon, section=section)
 
 S1, S2, S3, S4, S5 = 0.0, 8.0, 16.0, 24.0, 32.0
 
@@ -33,74 +33,104 @@ quests = [
           ],
           tasks=[task_item("minecraft:iron_pickaxe", 1)],
           rewards=[reward_item("minecraft:iron_ingot", 8), reward_table("s1_common")],
-          icon="minecraft:iron_pickaxe", size=2.0, shape="hexagon"),
+          icon="minecraft:iron_pickaxe", size=2.0, shape="hexagon", section="s1"),
 
     entry("v_diamond", 0, 0, S1, "&bSteig auf Diamant um", "Die Spitzhacke, die alles abbaut.",
           ["Drei &6Diamanten&r über zwei Stöcken. Diamanterz liegt tief, am meisten um Y -58, und die Minendimension (Kapitel Erkundung) ist voll davon.",
            "",
            "1 561 Haltbarkeit statt 250, Tempo 8 statt 6, baut Obsidian ab. Die Diamantrüstung gibt 20 Punkte statt 15, dazu Zähigkeit 2 pro Teil."],
           task_item("minecraft:diamond_pickaxe", 1), "minecraft:diamond_pickaxe", ["s1"],
-          [reward_item("minecraft:diamond", 1), reward_xp(3)]),
+          [reward_item("minecraft:diamond", 1), reward_xp(3)], section="s1"),
 
     entry("sg_pick", 1, 0, S1, "&7Bau eine Spitzhacke aus Teilen", "Silent Gear: Kopf, Stiel, Spitze.",
           ["Spitzhacke-Blaupause plus drei &6Eisenbarren&r ergibt den Kopf, dazu ein Stiel. Eine &6Diamantspitze&r (Spitze-Blaupause plus ein Diamant) gibt +256 Haltbarkeit und die Diamant-Abbaustufe.",
            "",
            "Eisenkopf: 250 Haltbarkeit, Tempo 6, Biegsam III. Kaputte Teile tauschst du einzeln, siehe Kapitel &6Silent Gear&r."],
-          task_item("silentgear:pickaxe", 1), "silentgear:pickaxe", ["s1"]),
+          task_item("silentgear:pickaxe", 1), "silentgear:pickaxe", ["s1"], section="s1"),
 
     entry("sg_hammer", 2, 0, S1, "&7Grab Tunnel mit dem Hammer", "Silent Gear: 3x3 schon in Stufe 1.",
           ["Hammer-Blaupause (6 Blaues Papier, 1 Stock) plus &6sechs Eisenbarren&r ergibt den Kopf. Sehnen-Verbindung und Ledergriff gleichen den Verschleiß aus.",
            "",
            "Baut 3x3 ab, nutzt sich pro Block ab. Für Adern nimm &6Ultimine&r, für Tunnel den Hammer."],
-          task_item("silentgear:hammer", 1), "silentgear:hammer", ["s1"]),
+          task_item("silentgear:hammer", 1), "silentgear:hammer", ["s1"], section="s1"),
 
     entry("ma_inferium", 3, 0, S1, "&aVeredle Diamant mit Inferium", "Mystical Agriculture: 2 000 Haltbarkeit.",
           ["&6Diamantwerkzeug&r in die Mitte, 2 Inferiumbarren links und rechts, 2 Inferium-Edelsteine oben und unten, an der Werkbank.",
            "",
            "2 000 Haltbarkeit, Tempo 9, +4 Schaden statt +3. Die Rüstung gibt 21 statt 20. Kapitel &aMystical Agriculture&r."],
-          task_item("mysticalagriculture:inferium_pickaxe", 1), "mysticalagriculture:inferium_pickaxe", ["s1"]),
+          task_item("mysticalagriculture:inferium_pickaxe", 1), "mysticalagriculture:inferium_pickaxe", ["s1"], section="s1"),
 
     entry("ars_sword", 4, 0, S1, "&dVerzaubere ein Schwert mit Quelle", "Ars Nouveau: ein Zauber auf jedem Treffer.",
           ["&6Diamantschwert&r in den Bezaubernden Apparat, auf die Podeste ein Diamant, 2 Goldblöcke und 2 Quelljuwelenblöcke. Für das &6Zauberschild&r: Schild, 2 Goldblöcke, 2 Quelljuwelenblöcke.",
            "",
            "Das Zauberschwert trägt einen Zauber, den du am Tisch des Schreibers einschreibst, und wirkt ihn bei jedem Treffer. Kapitel &dArs Nouveau&r."],
-          task_item("ars_nouveau:enchanters_sword", 1), "ars_nouveau:enchanters_sword", ["s1"]),
+          task_item("ars_nouveau:enchanters_sword", 1), "ars_nouveau:enchanters_sword", ["s1"], section="s1"),
 
     entry("irons_wizard", 5, 0, S1, "&5Zieh die Zaubererrobe an", "Iron's Spells: 125 Mana pro Teil.",
           ["&6Arcane Cloth&r aus Arcane Essence und Wolle, dann Hut, Robe, Hose und Schuhe im Lederrüstungsmuster. Kapitel &5Iron's Spells 'n Spellbooks&r.",
            "",
            "Jedes Teil +125 Mana und +5 Prozent Zauberkraft, Schutz wie Diamant (3, 8, 6, 3). Mit einer Rune wird daraus Schulrüstung mit +10 Prozent für ihre Schule."],
-          task_item("irons_spellbooks:wizard_hat", 1), "irons_spellbooks:wizard_hat", ["s1"]),
+          task_item("irons_spellbooks:wizard_hat", 1), "irons_spellbooks:wizard_hat", ["s1"], section="s1"),
 
     entry("apo_rare", 6, 0, S1, "&9Trag ein Rare-Item", "Apotheosis: Affixe auf Waffe und Rüstung.",
           ["Affix-Beute fällt von Monstern und liegt in Truhen. Trag vier Affix-Rüstungsteile und eine Affix-Waffe, dann öffnet die Weltstufe &6Frontier&r mit mehr Uncommon und Rare.",
            "",
            "Rare: zwei Attributboni, ein Effekt, bis zu zwei Sockel für Edelsteine, 10 bis 25 Prozent weniger Verschleiß. Kapitel &6Apotheosis&r."],
-          task_checkmark("Ein Rare-Item getragen"), "apotheosis:gem", ["s1"]),
+          task_checkmark("Ein Rare-Item getragen"), "apotheosis:gem", ["s1"], section="s1"),
 
     entry("boss_overworld", 7, 0, S1, "&cHol dir eine Bosswaffe", "Cataclysm: Alter Speer, Soul Render, Gezeitenklauen.",
           ["&6Alter Speer&r: 4 Altmetallbarren vom Ancient Remnant, 9,5 Schaden, Linksklick schießt einen Sandsturm. &6Soul Render&r: 3 Cursium von Maledictus und 2 Schwarzstahl, 15 Schaden.",
            "",
            "&6Gezeitenklauen&r lässt der Leviathan fallen: Enterhaken und Tentakelschlag für 8. Wie die Kämpfe laufen, steht im Kapitel &cBosse der Oberwelt&r."],
-          task_checkmark("Eine Bosswaffe in der Hand"), "cataclysm:ancient_spear", ["s1"]),
+          task_checkmark("Eine Bosswaffe in der Hand"), "cataclysm:ancient_spear", ["s1"], section="s1"),
 
     entry("backpack", 0, 1, S1, "&6Näh einen Rucksack", "Sophisticated Backpacks: 27 Plätze auf dem Rücken.",
           ["Leder, Faden und eine Truhe an der Werkbank. Die &6Upgrade-Basis&r (Leder, Eisen, Faden) wird zu Pickup, Magnet und Werkzeugtausch. Kapitel &6Lager&r.",
            "",
            "Lederrucksack: 27 Plätze, 1 Upgrade. Kupfer (45) und Eisen (54, 2 Upgrades) kommen in Stufe 2, Gold und Diamant in Stufe 3, Netherit in Stufe 4."],
-          task_item("sophisticatedbackpacks:backpack", 1), "sophisticatedbackpacks:backpack", ["s1"]),
+          task_item("sophisticatedbackpacks:backpack", 1), "sophisticatedbackpacks:backpack", ["s1"], section="s1"),
 
     entry("ultimine", 1, 1, S1, "&6Räum eine Ader mit Ultimine", "FTB Ultimine: bis zu 64 Blöcke pro Schlag.",
           ["Halt &e`&r gedrückt (links neben der 1), schau auf einen Block, bau ab. Mit Shift und Mausrad wechselst du die Form: Ader, Tunnel 3x3, Stollen.",
            "",
            "Kostet 20-mal so viel Hunger wie ein Block, also iss vorher. Jede Herkunft darf das. Kapitel &6Komfort&r."],
-          task_checkmark("Eine Ader auf einmal abgebaut"), "minecraft:iron_pickaxe", ["s1"]),
+          task_checkmark("Eine Ader auf einmal abgebaut"), "minecraft:iron_pickaxe", ["s1"], section="s1"),
 
     entry("mining_dim", 2, 1, S1, "&6Bau den Grubenrahmen", "Der Rahmen für das Tor zur Minenwelt.",
           ["&eRezept:&r 4 Andesit-Gehäuse, 4 Infundiertes Eisen und ein Quellstein in der Mitte ergeben 2 Grubenrahmen. Zehn davon und ein Quellstein öffnen das Portal.",
            "",
            "Dahinter liegt eine eigene Welt nur zum Graben, alle drei Tage neu. Kapitel &6Erkundung&r."],
-          task_item("kronwerke:grubenrahmen", 1), "kronwerke:grubenrahmen", ["s1"]),
+          task_item("kronwerke:grubenrahmen", 1), "kronwerke:grubenrahmen", ["s1"], section="s1"),
+
+    entry("irons_ring", 4, 1, S1, "&bSteck einen Ring of Mana an", "Iron's Spells: +100 Mana im Ring-Slot.",
+          ["Acht &6Arcane Essence&r um einen Eisen-, Kupfer- oder Goldbarren ergeben einen &6Arcane Ingot&r. Vier davon und ein Diamant ergeben den Ring. Kapitel &5Iron's Spells 'n Spellbooks&r.",
+           "",
+           "+100 Mana, so viel wie die ganze Wanderer-Robe. Der &6Silver Ring&r aus Kisten gibt +25."],
+          task_item("irons_spellbooks:mana_ring", 1), "irons_spellbooks:mana_ring", ["s1"], section="s1"),
+
+    entry("irons_ice_staff", 5, 1, S1, "&bHol dir den Ice Staff", "Iron's Spells: der Stab aus dem Eisschiff.",
+          ["&6Frosted Helve&r (4 Frozen Bones, 3 Arcane Ingots) und der &6Permafrost Shard&r aus der Kapitänskajüte des &6Impaled Icebreaker&r (vereiste Ozeane, Eiszapfenebene, vereiste Gipfel), formlos.",
+           "",
+           "+15 Prozent Eiszauberkraft, +5 Prozent Zauberkraft, +25 Prozent Manaregeneration. Rechtsklick wirkt den aktiven Zauber, wie beim Graybeard Staff."],
+          task_item("irons_spellbooks:ice_staff", 1), "irons_spellbooks:ice_staff", ["s1"], section="s1"),
+
+    entry("sg_katana", 6, 1, S1, "&7Schmiede ein Katana", "Silent Gear: schwerer und stärker als das Schwert.",
+          ["Katana-Blaupause (drei Blaues Papier, ein Stock), die Klinge aus &edrei&r Material statt zwei, dazu Stiel und Griff. Kapitel &6Silent Gear&r.",
+           "",
+           "Der &6Dolch&r (ein Material) schlägt sehr schnell, der &6Speer&r reicht weiter, die &6Machete&r mäht nebenbei Pflanzen."],
+          task_item("silentgear:katana", 1), "silentgear:katana", ["s1"], section="s1"),
+
+    entry("apo_template", 7, 1, S1, "&9Wert Affix-Beute auf", "Apotheosis: gute Affixe, besseres Material.",
+          ["Gem-Fused Slate, Stein und oben ein Bergungsmaterial ergeben zwei &6Upgrade-Vorlagen&r. Mysterious Scrap Metal: Stein oder Kette wird Eisen (4 Eisen). Timeworn Fabric: Eisen wird Gold. Luminous Crystal Shard: Gold wird Diamant (4 Diamanten).",
+           "",
+           "Am Schmiedetisch, die Affixe bleiben. So lohnt sich auch ein Rare-Schwert aus Stein. Kapitel &6Apotheosis&r."],
+          task_item("apotheosis:iron_upgrade_smithing_template", 1), "apotheosis:iron_upgrade_smithing_template", ["s1"], section="s1"),
+
+    entry("sg_shield", 0, 2, S1, "&7Bau einen Schild aus Teilen", "Silent Gear: blockt, solange das Material hält.",
+          ["Schild-Blaupause (drei Blaues Papier, ein Eisenbarren, drei Stöcke), die Schildplatte aus &ezwei&r Material. Kapitel &6Silent Gear&r.",
+           "",
+           "Blockt wie der Vanilla-Schild, die Haltbarkeit kommt aus dem Material, repariert wird mit dem Reparaturkit."],
+          task_item("silentgear:shield", 1), "silentgear:shield", ["s1"], section="s1"),
 
     # ---- Stufe 2: Messingwerk --------------------------------------------------------------------
     quest("s2", 0, S2 + 1, "&6&lRüste dich für Stufe 2",
@@ -181,10 +211,10 @@ quests = [
           task_checkmark("Handschuhe getragen"), "minecraft:leather", ["s2"]),
 
     entry("irons_anvil", 3, 1, S2, "&5Setz eine Upgrade-Kugel ein", "Iron's Spells: Arcane Anvil und Pyromancer.",
-          ["Der &6Arcane Anvil&r (Amethystblöcke, Diamant, Amboss) nimmt Rüstung plus &6Upgrade Orb&r: bis zu 3 Upgrades für Mana, Abklingzeit, Schutz oder eine Schule. Kugeln brauchen Mithril und Cinder Essence aus dem Nether.",
+          ["Der &6Arcane Anvil&r (Quelljuwelblöcke, Diamant, Amboss) nimmt Rüstung plus &6Upgrade Orb&r: bis zu 3 Upgrades für Mana, Abklingzeit, Schutz oder eine Schule. Kugeln brauchen Mithril und Cinder Essence aus dem Nether.",
            "",
            "Die &cPyromancer&r-Rüstung braucht die Fire Rune aus Lohenruten. Epic Ink mit Diamant- und Netheritbuch kommt in Stufe 3, Legendary und Drachenhaut in Stufe 4. Kapitel &5Iron's Spells 'n Spellbooks&r."],
-          task_checkmark("Rüstung aufgewertet"), "minecraft:amethyst_shard", ["s2"]),
+          task_checkmark("Rüstung aufgewertet"), "ars_nouveau:source_gem_block", ["s2"]),
 
     entry("boss_nether", 4, 1, S2, "&cTrag Ignitium", "Cataclysm im Nether: Ignis und die Monstrosität.",
           ["&cIgnis&r lässt &6Ignitium&r fallen. Vorlage: Netherit-Schmiedevorlage, 4 Lohenstaub, 4 Netherziegel. Damit wird Netheritrüstung am Schmiedetisch zu Ignitiumrüstung.",
@@ -197,6 +227,18 @@ quests = [
            "",
            "Kupfer: 45 Plätze, 1 Upgrade. Eisen: 54 Plätze, 2 Upgrades. Stufe 3 bringt Gold (81, 3) und Diamant (108, 5) mit Inception und Everlasting Upgrade, Stufe 4 Netherit (120, 7). Kapitel &6Lager&r."],
           task_checkmark("Eisenrucksack getragen"), "sophisticatedbackpacks:backpack", ["s2"]),
+
+    entry("rel_phoenix", 6, 1, S2, "&6Trag ein Phoenix Down", "Reliquary: ein zweites Leben in der Tasche.",
+          ["Drei &6Angelheart Vials&r und eine &6Angelic Feather&r formlos. Die Feder allein fängt Fallschaden gegen Hunger ab, &6Kraken Shell&r und &6Infernal Claws&r tun dasselbe gegen Ertrinken und Feuer. Kapitel &5Reliquary&r.",
+           "",
+           "Das Phoenix Down holt dich einmal mit vollem Leben zurück, gibt kurz Resistenz und Regeneration und wird dann wieder zur Angelic Feather."],
+          task_checkmark("Phoenix Down im Inventar"), "minecraft:feather", ["s2"]),
+
+    entry("bee_helmet", 7, 1, S2, "&eSetz den Bienennest-Helm auf", "Productive Bees: die Bienen auf deiner Seite.",
+          ["Ein &6Bienennest&r und ein &6Diamanthelm&r formlos. Kapitel &eProductive Bees&r.",
+           "",
+           "Schutz wie ein Diamanthelm. Wütende Bienen greifen dich nicht an, und wer dich trifft, bekommt mit 30 Prozent Chance eine &6KamikazBee&r ab."],
+          task_checkmark("Bienennest-Helm getragen"), "minecraft:diamond_helmet", ["s2"]),
 
     # ---- Stufe 3: Stahlwerk ----------------------------------------------------------------------
     quest("s3", 0, S3 + 1, "&f&lRüste dich für Stufe 3",
@@ -389,6 +431,12 @@ quests = [
            "",
            "Zubehör legst du wie in ein Bündel in die Waffe. Kapitel &bEternal Starlight&r. Der &6Netheritrucksack&r (120 Plätze, 7 Upgrades) kommt ebenfalls in Stufe 4."],
           task_checkmark("Sternensense gebaut"), "minecraft:amethyst_shard", ["s4"]),
+
+    entry("caliburn", 6, 1, S4, "&6Zieh Caliburn aus dem See", "Mahou Tsukai: ein Schwert für 5 000 Mana.",
+          ["Kreis ohne Tuch aus 2 Diamant- und 1 Smaragdpulver, er erschafft einen See. Ein &everzaubertes Schwert&r hinein, für 5 000 Mana kommt &6Caliburn&r zurück. Kapitel &cMahou Tsukai&r.",
+           "",
+           "Schaden des alten Schwerts plus ein Bonus für seine Verzauberungen, und Untote fliehen davor."],
+          task_checkmark("Caliburn in der Hand"), "minecraft:golden_sword", ["s4"]),
 
     # ---- Stufe 5: Chaoswerk ----------------------------------------------------------------------
     quest("s5", 0, S5 + 1, "&c&lRüste dich für Stufe 5",

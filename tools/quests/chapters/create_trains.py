@@ -201,7 +201,7 @@ quests = [
           deps=["first_train"], optional=True),
 
     # ---- Fahrplan (column B) ---------------------------------------------------------
-    quest("schedule", B, 2.5, "&6Schreib einen Fahrplan",
+    quest("schedule", B, 4.6, "&6Schreib einen Fahrplan",
           subtitle="Er fährt, während du woanders bist.",
           description=[
               "Ein &6Robustes Blech&r und &6Papier&r ergeben vier &6Zugfahrpläne&r. Leg Einträge an: &eFahre zu Bahnhof&r, darunter die Bedingung, wann es weitergeht.",
@@ -261,6 +261,15 @@ quests = [
     condition("cond_players", B + 8, "&7Sitzauslastung",
               "Fährt, wenn alle sitzen.",
               "&eSitzauslastung&r: der Zug wartet, bis eine Zahl Spieler auf seinen Sitzen Platz genommen hat."),
+    condition("cond_fluids", B + 10, "&7Flüssigkeitsladestand",
+              "Erst den Tank füllen.",
+              "&eFlüssigkeitsladestand&r: wie der Item-Ladestand, nur für die Tanks des Zuges. Ein Tankzug fährt erst, wenn er voll oder leer ist."),
+    condition("cond_link", B + 12, "&7Redstone-Link",
+              "Losfahren per Funk.",
+              "&eRedstone-Link&r: der Zug wartet, bis eine Funkfrequenz der Redstone-Verbindungen an oder aus ist. So schickt ein Schalter in deiner Basis den Zug vom anderen Ende der Strecke los."),
+    condition("cond_unloaded", B + 14, "&7Chunk entladen",
+              "Weiter, sobald keiner hinschaut.",
+              "&eChunk entladen&r: der Zug fährt weiter, sobald der Bahnhof nicht mehr geladen ist, also kein Spieler mehr in der Nähe ist."),
 
     # ---- Signale (column B) ----------------------------------------------------------
     quest("signal", B, 10, "&6Teil die Strecke mit Signalen",
@@ -354,16 +363,87 @@ quests = [
           tasks=[task_item("create:track", 512), task_item("create:track_station", 2)],
           rewards=[reward_table("s2_rare"), reward_xp(15)],
           deps=["freight", "junction"], icon="create:track_station", size=2.5, shape="gear"),
+
+    # ---- Neue Quests ------------------------------------------------------------
+    quest("girders", A + 5, 4, "&6Stütz die Strecke mit Metallträgern",
+          subtitle="Brücken, die nach Eisenbahn aussehen.",
+          description=[
+              "Drei &6Eisenbleche&r über drei &6Andesitlegierungen&r ergeben acht &6Metallträger&r. Nebeneinander und übereinander gesetzt verbinden sie sich zu Stützen und Trägern.",
+              "",
+              "Über Schluchten und Flüsse trägt eine Brücke aus Metallträgern die Strecke. Ein schöner Viadukt ist auf dem Stream mehr wert als jedes Stummelgleis.",
+          ],
+          tasks=[task_item("create:metal_girder", 32)],
+          rewards=[reward_item("create:iron_sheet", 8), reward_xp(3)],
+          deps=["track_factory"], optional=True),
+
+    quest("double_ended", A + 12.5, 11.5, "&6Fahr in beide Richtungen",
+          subtitle="Eine Zugsteuerung an jedem Ende.",
+          description=[
+              "Ein Zug fährt nur in die Richtung, in die seine &6Zugsteuerung&r zeigt. Für eine Strecke ohne Wendeschleife braucht er eine zweite Steuerung am anderen Ende, mit der Front nach außen.",
+              "",
+              "Dann pendelt er zwischen zwei Endbahnhöfen hin und her. Das spart Platz und viele Gleise, eine Wendeschleife braucht einen großen Kreis.",
+          ],
+          tasks=[task_item("create:controls", 2)],
+          rewards=[reward_item("create:precision_mechanism", 1), reward_xp(4)],
+          deps=["first_train"], icon="create:controls"),
+
+    quest("passenger", A + 12.5, 13.5, "&6Bau einen Personenwagen",
+          subtitle="Sitze für die Mitfahrer.",
+          description=[
+              "Ein Block &6Wolle&r und eine &6Holzstufe&r ergeben einen &6Sitz&r. Kleb ein paar davon in einen Wagen: wer sich setzt, fährt mit, Schleichen steigt aus.",
+              "",
+              "Mit der Abfahrtsbedingung &eSitzauslastung&r fährt der Zug, sobald genug Leute sitzen. Ein Taxi zum Obelisken für alle, die zum Stream wollen.",
+          ],
+          tasks=[task_item("create:white_seat", 4)],
+          rewards=[reward_item("minecraft:white_wool", 8), reward_xp(3)],
+          deps=["first_train"], icon="create:white_seat", optional=True),
+
+    quest("drill_train", A + 17.5, 12.5, "&6Bohr einen Tunnel mit dem Zug",
+          subtitle="Bohrer an der Lok, Kisten im Wagen.",
+          description=[
+              "Kleb &6Mechanische Bohrer&r vorn an deinen Zug und Kisten oder einen Tresor dahinter. Fährt der Zug, bohren sie, was im Weg ist, und der Abbau landet in den Kisten.",
+              "",
+              "Die Gleise legst du Stück für Stück vor ihm. Die &6Mechanische Walze&r aus &6Create: Messing&r pflastert dazu den Unterbau.",
+              "",
+              "&cWichtig:&r Bohrer und andere Werkzeuge auf dem Zug arbeiten nur in der Nähe eines Spielers. In entladenen Chunks fährt der Zug weiter, bohrt aber nicht.",
+          ],
+          tasks=[task_item("create:mechanical_drill", 4)],
+          rewards=[reward_item("create:andesite_alloy", 16), reward_xp(4)],
+          deps=["first_train"], icon="create:mechanical_drill", optional=True),
+
+    quest("unloaded", B + 7.5, 0.5, "&6Lass Züge ohne dich fahren",
+          subtitle="Was in entladenen Chunks passiert.",
+          description=[
+              "Gleise funktionieren auch in Gegenden, in denen gerade kein Spieler ist. Züge fahren dort ohne Probleme weiter und halten an Bahnhöfen und roten Signalen.",
+              "",
+              "Kommt ein Spieler in die Nähe, taucht der Zug wieder auf. Nur Maschinen auf dem Zug, etwa Bohrer, arbeiten in entladenen Chunks nicht."
+          ],
+          tasks=[task_checkmark("Verstanden")],
+          rewards=[reward_xp(5)],
+          deps=["auto_line"], icon="create:track", shape="diamond"),
+
+    quest("passing_loop", B + 7.5, 10, "&6Bau eine Ausweichstelle",
+          subtitle="Zwei Züge, ein Gleis.",
+          description=[
+              "Auf einer eingleisigen Strecke können zwei Züge nur aneinander vorbei, wenn es ein zweites Gleis gibt: eine &eAusweichstelle&r. Leg in der Mitte der Strecke ein kurzes Parallelgleis mit zwei Abzweigungen.",
+              "",
+              "Ein &eKreuzungssignal&r vor jeder Einfahrt und ein &eEinfahrtssignal&r an jedem Ausgang. Dann wartet ein Zug in der Ausweichstelle, bis der andere vorbei ist.",
+              "",
+              "So fahren zwei Züge auf einer Strecke, die nur ein Gleis breit ist.",
+          ],
+          tasks=[task_checkmark("Zwei Züge fahren aneinander vorbei")],
+          rewards=[reward_item("create:track_signal", 4), reward_xp(6)],
+          deps=["junction"], icon="create:track_signal"),
 ]
 
 images = [
     head("title", "Create: Züge", 0, -3, height=1.6, kind="title"),
     head("stage", "Stufe 2: Messingwerk", 0, -1.6, height=0.55, kind="note", colour="stone"),
     head("track", "Gleise", A - 0.6, 0.1),
-    head("trains", "Züge", A - 0.6, 7),
+    head("trains", "Züge", A + 10, 7.5),
     head("schedule", "Fahrplan", B - 0.6, 0.1),
-    head("conditions", "Abfahrtsbedingungen", B - 0.6, 4.6, colour="stone"),
-    head("signals", "Signale", B - 0.6, 8.2),
+    head("conditions", "Abfahrtsbedingungen", B - 0.6, 3.8, colour="stone"),
+    head("signals", "Signale", B + 2.5, 9.0),
     head("cargo", "Fracht", B - 0.6, 12.6),
     head("goal", "Das Ziel", B + 4.6, 18.2),
 ]

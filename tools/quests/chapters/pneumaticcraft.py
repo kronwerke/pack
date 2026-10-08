@@ -412,7 +412,7 @@ quests = [
           rewards=[reward_item("pneumaticcraft:regulator_tube_module", 1), reward_xp(5)],
           deps=["plastic"], icon="pneumaticcraft:reinforced_pressure_tube"),
 
-    quest("cylinder", 2.5, 14, "&7Bau Druckluftzylinder",
+    quest("cylinder", 5.5, 13, "&7Bau Druckluftzylinder",
           subtitle="Das Bauteil für alles, was sich bewegt.",
           description=[
               "Zuerst ein &6Kanonenrohr&r (Cannon Barrel): sechs &6Verstärkte Ziegelmauern&r in zwei Säulen, unten in der Mitte ein &6Druckluftrohr&r. Dann der &6Druckluftzylinder&r (Pneumatic Cylinder): sechs &6Kunststoffplatten&r in die äußeren Spalten, zwei &6Druckeisen&r oben und mittig, das Kanonenrohr unten in der Mitte, ergibt zwei Zylinder.",
@@ -576,6 +576,135 @@ quests = [
           tasks=[task_checkmark("Gelesen")],
           rewards=[reward_xp(10)],
           deps=["pcb"], icon="pneumaticcraft:turbine_rotor", optional=True),
+
+    # ---- neue Quests: Druckluft -------------------------------------------------
+    quest("modules", 15, 0, "&7Steck Module an deine Rohre",
+          subtitle="Redstone durchs Rohr, Luftstrom messen.",
+          description=[
+              "&6Redstone-Modul&r (Redstone Module): ein Redstone über Druckluftrohr, &6Verstärker&r, Druckluftrohr. Es schickt Redstone-Signale durch das Rohrnetz zu anderen Redstone-Modulen, auf bis zu &e16 Kanälen&r. Den Kanal wählst du mit Farbstoff, der Schlüssel schaltet zwischen Eingang und Ausgang.",
+              "",
+              "&6Durchflussmesser&r (Flow Detector Module): vier &6Turbinenblätter&r in die Ecken um ein Druckluftrohr. Es misst, wie viel Luft durchströmt, und gibt &e0,2 mal mL pro Tick&r als Signal aus. So siehst du, ob eine Maschine gerade arbeitet.",
+              "",
+              "Mit einer &6Modul-Erweiterungskarte&r aus dem Abschnitt Platine kann das Redstone-Modul Signale verknüpfen, etwa umkehren oder mit einem zweiten Kanal verrechnen.",
+          ],
+          tasks=[task_item("pneumaticcraft:redstone_module", 2), task_item("pneumaticcraft:flow_detector_module", 1)],
+          rewards=[reward_item("pneumaticcraft:pressure_tube", 8), reward_xp(5)],
+          deps=["safety"], icon="pneumaticcraft:redstone_module", optional=True),
+
+    # ---- neue Quests: Werkzeug --------------------------------------------------
+    quest("vacuum_pump", 20, 6.5, "&7Bau eine Vakuumpumpe",
+          subtitle="Unterdruck bis minus 1 Bar.",
+          description=[
+              "Zwei &6Druckmesser&r und ein &6Turbinenrotor&r oben, Druckluftrohr, Turbinenrotor, Druckluftrohr in der Mitte, drei &6Verstärkte Steinstufen&r unten ergeben die &6Vakuumpumpe&r (Vacuum Pump). Turbinenrotor: drei Turbinenblätter um einen Druckeisenbarren.",
+              "",
+              "Druckluft kommt an die &e+&r Seite, an der &e-&r Seite fällt der Druck bis auf &e-1 Bar&r, ein volles Vakuum.",
+              "",
+              "&eWofür:&r Ein verzauberter Gegenstand und ein Buch in der Druckkammer mit Unterdruck geben eine zufällige Verzauberung an das Buch ab. Ein Luftgitter-Modul mit Unterdruck zieht Gegenstände und Tiere an. In Stufe 3 brauchen Vakuumfalle und Spawner-Extraktor den Unterdruck.",
+          ],
+          tasks=[task_item("pneumaticcraft:vacuum_pump", 1)],
+          rewards=[reward_item("pneumaticcraft:turbine_rotor", 1), reward_xp(8)],
+          deps=["charging", "chamber_recipes"], icon="pneumaticcraft:vacuum_pump", optional=True),
+
+    quest("chests", 22.5, 5, "&eBau eine Verstärkte Truhe",
+          subtitle="Explosionsfest, und sie behält alles.",
+          description=[
+              "Druckeisen, &6Goldklumpen&r, Druckeisen oben, &6Verstärkte Ziegelmauer&r, &6Truhe&r, Verstärkte Ziegelmauer in der Mitte, Druckeisen, &6Obsidian&r, Druckeisen unten ergeben die &6Verstärkte Truhe&r (Reinforced Chest).",
+              "",
+              "Sie hat &e36 Plätze&r, hält Explosionen wie Obsidian und behält ihren Inhalt, wenn du sie abbaust. Ideal für Kohle und Druckeisen neben dem Kompressor.",
+              "",
+              "&eMit Platine:&r Zwei Verstärkte Truhen, ein Rundum-Trichter, zwei Diamanten und eine Platine ergeben die &6Intelligente Truhe&r (Smart Chest) mit 72 Plätzen. Jede Seite kann schieben oder ziehen, einzelne Plätze lassen sich auf einen Gegenstand festlegen.",
+          ],
+          tasks=[task_item("pneumaticcraft:reinforced_chest", 1)],
+          rewards=[reward_item("minecraft:obsidian", 4), reward_xp(5)],
+          deps=["omni_hopper"], icon="pneumaticcraft:reinforced_chest"),
+
+    # ---- neue Quests: Kunststoff ------------------------------------------------
+    quest("memory_stick", 0, 14.5, "&aSpeicher Erfahrung im Memory Stick",
+          subtitle="Level auf Vorrat.",
+          description=[
+              "Diamant, &6Smaragd&r, Diamant oben, Kunststoffplatte, &6Seelensand&r, Kunststoffplatte in der Mitte, zwei &6Goldbarren&r unten außen ergeben den &6Memory Stick&r.",
+              "",
+              "&eRechtsklick&r legt ein Level in den Stick, &eSchleichen und Rechtsklick&r holt eins zurück. &eLinksklick&r schaltet das Einsammeln ein: Erfahrungskugeln, die du aufhebst, wandern direkt in den Stick.",
+              "",
+              "Rechtsklick auf einen Tank füllt die Erfahrung als &bGedächtnis-Essenz&r (Memory Essence) hinein, oder holt sie wieder heraus.",
+          ],
+          tasks=[task_item("pneumaticcraft:memory_stick", 1)],
+          rewards=[reward_item("minecraft:experience_bottle", 16), reward_xp(10)],
+          deps=["plastic"], icon="pneumaticcraft:memory_stick", optional=True),
+
+    # ---- neue Quests: Upgrades --------------------------------------------------
+    quest("jackhammer", 18.5, 13, "&6Bau einen Druckluft-Presslufthammer",
+          subtitle="Ein Bohrer für jeden Block.",
+          description=[
+              "Kunststoffplatte, &6Druckeisenblock&r, Kunststoffplatte oben, Druckeisen, Druckluftrohr, Druckeisen in der Mitte, Diamant, &6Druckluftzylinder&r, Diamant unten ergeben den &6Presslufthammer&r (Pneumatic Jackhammer).",
+              "",
+              "Ohne &6Bohrkopf&r taugt er nichts. In der Thermopneumatischen Anlage: ein Eisenbarren und &b2 000 mB Schmiermittel&r bei 3 Bar geben den &6Eisenbohrkopf&r, ein Druckeisenbarren und 4 000 mB bei 4 Bar und mindestens 300 Grad den &6Druckeisenbohrkopf&r. Rechtsklick öffnet das Fenster, der Kopf kommt oben rechts hinein.",
+              "",
+              "Er baut jeden Block gleich schnell ab, für &e50 mL&r Luft pro Block. Bessere Köpfe schalten Modi bis zum Aderabbau frei. Ein Buch mit Behutsamkeit oder Glück im Buchplatz gibt ihm diese Verzauberung.",
+          ],
+          tasks=[task_item("pneumaticcraft:jackhammer", 1), task_item("pneumaticcraft:drill_bit_iron", 1)],
+          rewards=[reward_item("pneumaticcraft:lubricant_bucket", 1), reward_table("s2_uncommon"), reward_xp(10)],
+          deps=["lubricant", "cylinder"], icon="pneumaticcraft:jackhammer"),
+
+    # ---- neue Quests: Biodiesel -------------------------------------------------
+    quest("yeast", 13.5, 16.5, "&2Züchte Hefekultur",
+          subtitle="Pilze und Wasser bei Körpertemperatur.",
+          description=[
+              "In der &6Thermopneumatischen Anlage&r: &b1 000 mB Wasser&r und ein &6Pilz&r ergeben &b250 mB Hefekultur&r (Yeast Culture). Die Anlage muss zwischen &e30 und 60 Grad&r warm sein, nicht heißer. In warmen Biomen geht das von selbst, sonst hilft ein wenig Hitze oder ein Platz tief unter der Erde.",
+              "",
+              "&eSchneller:&r Gieß einen Eimer Hefekultur als Teich aus und wirf &6Zucker&r hinein. Gießt du dann Wasser direkt daneben, wird es zu neuer Hefekultur.",
+              "",
+              "Hefe ist der Anfang einer ganz eigenen Brennstofflinie: &aBiodiesel&r aus Feldfrüchten, ohne Öl aus dem Boden.",
+          ],
+          tasks=[task_item("pneumaticcraft:yeast_culture_bucket", 1)],
+          rewards=[reward_item("minecraft:brown_mushroom", 16), reward_item("minecraft:red_mushroom", 16), reward_xp(5)],
+          deps=["tpp"], icon="pneumaticcraft:yeast_culture_bucket"),
+
+    quest("ethanol", 16, 16.5, "&2Brau Ethanol",
+          subtitle="Hefe und Zucker.",
+          description=[
+              "In der Anlage, wieder bei &e30 bis 60 Grad&r: &b100 mB Hefekultur&r und ein &6Zucker&r ergeben &b50 mB Ethanol&r. Ein Apfel gibt ebenso viel, eine Kartoffel die Hälfte. Die Gärung wärmt die Anlage selbst, behalt die Temperatur im Auge.",
+              "",
+              "Ethanol brennt im Flüssigkeitskompressor mit &e400 000 mL&r Luft pro Eimer. Viel wertvoller ist es als Zutat für Biodiesel.",
+          ],
+          tasks=[task_item("pneumaticcraft:ethanol_bucket", 1)],
+          rewards=[reward_item("minecraft:sugar_cane", 32), reward_xp(5)],
+          deps=["yeast"], icon="pneumaticcraft:ethanol_bucket"),
+
+    quest("fluid_mixer", 16, 18.5, "&2Press Pflanzenöl, bau den Fluid Mixer",
+          subtitle="Samen werden Öl.",
+          description=[
+              "&eÖl:&r In der Anlage bei &e2 Bar&r gibt jeder &6Samen&r &b50 mB Pflanzenöl&r (Vegetable Oil), eine Feldfrucht nur 20 mB. Samen sind also die bessere Quelle.",
+              "",
+              "&6Fluid Mixer:&r ein &6Kleiner Tank&r oben, &6Verstärkte Ziegelmauer&r, &6Turbinenrotor&r, Verstärkte Ziegelmauer in der Mitte, Kleiner Tank, Druckluftrohr, Kleiner Tank unten. Er mischt zwei Flüssigkeiten mit Druck, mehr Druck heißt schneller und mehr Luftverbrauch.",
+          ],
+          tasks=[task_item("pneumaticcraft:vegetable_oil_bucket", 1), task_item("pneumaticcraft:fluid_mixer", 1)],
+          rewards=[reward_item("minecraft:wheat_seeds", 64), reward_xp(8)],
+          deps=["yeast"], icon="pneumaticcraft:fluid_mixer"),
+
+    quest("biodiesel", 18.5, 17.5, "&a&lMisch Biodiesel",
+          subtitle="Brennstoff, der auf dem Feld wächst.",
+          description=[
+              "Im Fluid Mixer bei &e2 Bar&r: &b25 mB Pflanzenöl&r und &b25 mB Ethanol&r ergeben &b50 mB Biodiesel&r und einen &6Glycerintropfen&r (Glycerol).",
+              "",
+              "Biodiesel ist so gut wie Diesel: &e1 000 000 mL&r Luft pro Eimer im Flüssigkeitskompressor. In der Anlage wird er ab 100 Grad mit Redstone zu Schmiermittel und mit Holzkohle zu flüssigem Kunststoff. Damit läuft dein ganzes Kapitel ohne Ölquelle.",
+              "",
+              "&eGlycerin:&r In einem Geschwindigkeits-Upgrade statt Zucker gibt es zwei Upgrades. Vier Tropfen um einen Teppich ergeben einen &6Verband&r, der drei Herzen heilt.",
+          ],
+          tasks=[task_item("pneumaticcraft:biodiesel_bucket", 1)],
+          rewards=[reward_item("pneumaticcraft:lubricant_bucket", 1), reward_table("s2_uncommon"), reward_xp(12)],
+          deps=["ethanol", "fluid_mixer"], icon="pneumaticcraft:biodiesel_bucket", size=1.5, shape="hexagon"),
+
+    quest("sourdough", 13.5, 18.5, "&6Back Sauerteigbrot",
+          subtitle="Hefe hat auch was für den Magen.",
+          description=[
+              "Acht &6Weizenmehl&r um einen &6Eimer Hefekultur&r ergeben acht &6Sauerteig&r (Sourdough). Im Ofen wird daraus &6Sauerteigbrot&r, das besser sättigt als normales Brot.",
+              "",
+              "Mehl presst die Druckkammer bei 1,5 Bar aus Weizen, drei Mehl pro Weizen.",
+          ],
+          tasks=[task_item("pneumaticcraft:sourdough_bread", 8)],
+          rewards=[reward_item("minecraft:wheat", 32), reward_xp(5)],
+          deps=["yeast", "chamber_recipes"], icon="pneumaticcraft:sourdough_bread", optional=True),
 ]
 
 images = [
@@ -589,6 +718,7 @@ images = [
     banner("pneumaticcraft/machines", "Maschinen", 8.5, 11.3, height=0.9, colour="brass"),
     banner("pneumaticcraft/upgrades", "Upgrades", 15, 11.3, height=0.9, colour="magic"),
     banner("pneumaticcraft/pcb", "Die Platine", 4, 15.3, height=0.9, colour="water"),
+    banner("pneumaticcraft/biodiesel", "Biodiesel", 16, 15.3, height=0.9, colour="nature"),
 ]
 
 chapter(C, "PneumaticCraft", "pneumaticcraft:air_compressor", "tech", quests, shape="circle", order=60, stage=2,

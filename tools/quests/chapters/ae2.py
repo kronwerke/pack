@@ -453,7 +453,7 @@ quests = [
           ],
           tasks=[task_checkmark("Gelesen")],
           rewards=[reward_xp(5)],
-          deps=["network"], icon="ae2:network_tool"),
+          deps=["network"], icon="ae2:network_tool", section="devices"),
 
     quest("list_cells", 12.5, 23, "&7Kenne jede Zellengröße",
           subtitle="Was wann öffnet, und was hineinpasst.",
@@ -465,7 +465,7 @@ quests = [
           ],
           tasks=[task_checkmark("Gelesen")],
           rewards=[reward_xp(5)],
-          deps=["cell_16k"], icon="ae2:item_cell_housing"),
+          deps=["cell_16k"], icon="ae2:item_cell_housing", section="devices"),
 
     # ---- Extended AE -------------------------------------------------------------
     quest("entro", 0, 27, "&3Züchte Entro",
@@ -527,6 +527,135 @@ quests = [
           tasks=[task_item("appflux:fe_1k_cell", 1), task_item("appflux:flux_accessor", 1)],
           rewards=[reward_item("ae2:energy_cell", 1), reward_table("s3_common"), reward_xp(10)],
           deps=["flux_crystal"], icon="appflux:fe_1k_cell"),
+
+    # ---- Neue Quests -------------------------------------------------------------
+    quest("fluix_tools", 7.5, 0, "&5Schmiede eine Fluix-Spitzhacke",
+          subtitle="Eisen, nur dreimal so haltbar.",
+          description=[
+              "&6Fluix-Upgrade:&r formlos aus Papier und einem Fluixkristall. Am Schmiedetisch kommen Vorlage, eine &6Quarzspitzhacke&r (Certus oder Netherquarz) und ein &6Fluixblock&r zusammen.",
+              "",
+              "Fluix-Werkzeuge sind wie Eisen, halten aber dreimal so lange und schlagen etwas fester zu. Jedes wirkt, als hätte es mindestens &eGlück I&r oder &ePlünderung I&r, ganz ohne Zaubertisch.",
+              "",
+              "Genau richtig für Netherquarz, den du für Fluix in Mengen brauchst.",
+          ],
+          tasks=[task_item("ae2:fluix_pickaxe", 1)],
+          rewards=[reward_item("ae2:fluix_crystal", 8), reward_xp(5)],
+          deps=["fluix"], icon="ae2:fluix_pickaxe", optional=True),
+
+    quest("resonance", 2.5, 12, "&eBau einen Kristallresonanzgenerator",
+          subtitle="Strom ohne Brennstoff.",
+          description=[
+              "Kupfer oben und an den Seiten, ein &6Fluixblock&r oben in der Mitte, ein &6Geladener Certusquarzkristall&r in die Mitte, drei Eisen unten.",
+              "",
+              "Er gibt dem Netz &d20 AE/t&r, ohne dass du je etwas nachfüllst. Mehr als einer pro Netz geht nicht, die Schwingungen stören sich, sogar durch Quarzfaser hindurch.",
+              "",
+              "Für ein kleines Netz reicht das im Leerlauf. Wer mehr braucht, bleibt beim Energieakzeptor.",
+          ],
+          tasks=[task_item("ae2:crystal_resonance_generator", 1)],
+          rewards=[reward_item("ae2:charged_certus_quartz_crystal", 2), reward_xp(6)],
+          deps=["network"], icon="ae2:crystal_resonance_generator"),
+
+    quest("fluid_cell", 5, 13, "&9Lager Flüssigkeiten ein",
+          subtitle="Eimer brauchst du keine mehr.",
+          description=[
+              "&6Flüssigkeitszellengehäuse&r und eine &61k-Komponente&r an der Werkbank ergeben die &61k-ME-Flüssigkeitsspeicherzelle&r. Sie kommt ins Laufwerk wie jede Zelle.",
+              "",
+              "Eine Flüssigkeitszelle hält nur &e5 Typen&r, dafür passen &d8 Eimer&r in ein Byte. Lava, Wasser und Öl landen so direkt im Netz, abfüllen geht in der Konsole mit einem Eimer oder Tank.",
+              "",
+              "&eApplied Mekanistics:&r Mit einem &6Chemiezellengehäuse&r (Quarzglas, Redstone, drei Osmiumbarren unten) und derselben Komponente speicherst du Mekanism-Gase.",
+          ],
+          tasks=[task_item("ae2:fluid_storage_cell_1k", 1)],
+          rewards=[reward_item("ae2:cell_component_1k", 1), reward_xp(5)],
+          deps=["cell_1k"], icon="ae2:fluid_storage_cell_1k"),
+
+    quest("cell_workbench", 15, 10, "&dPartitioniere eine Zelle",
+          subtitle="Eine Zelle nur für Erze.",
+          description=[
+              "&6Speicherzellenwerkbank:&r Wolle, Kalkulationsprozessor, Wolle oben, Eisen, Truhe, Eisen in der Mitte, drei Eisen unten.",
+              "",
+              "Leg eine Zelle hinein und zieh die Gegenstände, die sie nehmen soll, aus JEI in die Filterplätze. Danach landet nur noch das darin. Ein Knopf übernimmt den aktuellen Inhalt als Filter.",
+              "",
+              "Karten kommen auch hier in die Zelle: die &6Gleichmäßige-Verteilungskarte&r teilt den Platz auf alle Typen auf, die &6Overflow Zerstörungskarte&r löscht, was nicht mehr passt. Die nur mit Filter benutzen.",
+          ],
+          tasks=[task_item("ae2:cell_workbench", 1)],
+          rewards=[reward_item("ae2:basic_card", 2), reward_xp(5)],
+          deps=["cards"], icon="ae2:cell_workbench"),
+
+    quest("io_port", 15, 22, "&6Bau einen ME-IO-Port",
+          subtitle="Zellen in Sekunden füllen oder leeren.",
+          description=[
+              "Drei Glas oben, ME-Laufwerk, Glaskabel, ME-Laufwerk in der Mitte, Eisen, Logikprozessor, Eisen unten.",
+              "",
+              "Der Pfeil in der Mitte stellt die Richtung ein: aus der Zelle ins Netz oder aus dem Netz in die Zelle. Fertige Zellen wandern in die Ausgabeplätze. So ziehst du eine volle 1k-Zelle auf eine 16k-Zelle um.",
+              "",
+              "&6Beschleunigungskarten&r bewegen mehr pro Schritt, die &6Redstone-Karte&r schaltet ihn per Signal.",
+          ],
+          tasks=[task_item("ae2:io_port", 1)],
+          rewards=[reward_item("ae2:speed_card", 1), reward_xp(6)],
+          deps=["cell_4k"], icon="ae2:io_port"),
+
+    quest("planes", 15, 21, "&6Setz Formations- und Annihilationsfeld",
+          subtitle="Das Netz baut ab und setzt Blöcke.",
+          description=[
+              "&6Annihilationsfeld:&r drei Fluix oben, Eisen, Annihilationskern, Eisen darunter. &6Formationsfeld:&r genauso mit Formationskern.",
+              "",
+              "Das Annihilationsfeld baut den Block vor sich ab und nimmt Gegenstände auf, die es berührt. Es nimmt Spitzhacken-Verzauberungen an: Glück, Behutsamkeit und Effizienz wirken. Es baut nur ab, was das Netz auch speichern kann, also filterst du über eine partitionierte Zelle im Unternetz.",
+              "",
+              "Das Formationsfeld setzt Blöcke oder wirft Gegenstände aus, die das Netz hineinschiebt. Zusammen mit einem Importbus wird daraus eine Steinfarm ohne Hände.",
+              "",
+              "&cAchtung:&r Beide arbeiten als Fake-Spieler. Erlaube das in deinem Claim.",
+          ],
+          tasks=[task_item("ae2:annihilation_plane", 1), task_item("ae2:formation_plane", 1)],
+          rewards=[reward_item("ae2:annihilation_core", 2), reward_xp(6)],
+          deps=["interface"], icon="ae2:annihilation_plane"),
+
+    quest("cpu_monitor", 12.5, 15.5, "&7Vergrößer deine CPU",
+          subtitle="Mehr Speicher, und sehen, was sie tut.",
+          description=[
+              "&64k-Fertigungsspeicher:&r Fertigungseinheit und 4k-Komponente formlos. Größere Speicher erlauben Aufträge mit mehr Zutaten und Zwischenschritten.",
+              "",
+              "&6Fertigungsmonitor:&r Fertigungseinheit und &6ME-Speichermonitor&r formlos. In die CPU eingebaut, zeigt er den laufenden Auftrag.",
+              "",
+              "Die CPU bleibt ein volles Rechteck. Füllst du Lücken mit Fertigungseinheiten, darf sie jede Form haben.",
+          ],
+          tasks=[task_item("ae2:4k_crafting_storage", 1), task_item("ae2:crafting_monitor", 1)],
+          rewards=[reward_item("ae2:crafting_unit", 2), reward_xp(6)],
+          deps=["cpu"], icon="ae2:crafting_monitor"),
+
+    quest("pattern_access", 5, 18.5, "&aBau eine Schablonen-Zugriffskonsole",
+          subtitle="Alle Provider in einem Fenster.",
+          description=[
+              "Formlos aus einem &6Leuchtfeld&r, einem &6Konstruktionsprozessor&r und einem &6Schablonen-Provider&r.",
+              "",
+              "Steht eine Wand aus Providern und Assemblern dicht an dicht, kommst du an die mittleren nicht mehr heran. Die Konsole zeigt jeden Provider im Netz, und du legst Schablonen direkt hinein.",
+          ],
+          tasks=[task_item("ae2:pattern_access_terminal", 1)],
+          rewards=[reward_item("ae2:blank_pattern", 4), reward_xp(5)],
+          deps=["provider"], icon="ae2:pattern_access_terminal"),
+
+    quest("crystal_fixer", 2.5, 28.5, "&3Repariere Knospenblöcke",
+          subtitle="Der Crystal Fixer macht Certus wieder makellos.",
+          description=[
+              "Im Crystal Assembler: ein &6Extended Machine Frame&r, vier Certusquarz und zwei Quarzfasern.",
+              "",
+              "Setz ihn so, dass seine Vorderseite auf einen &6Certusquarzknospenblock&r zeigt, und gib ihm Strom. Rechtsklick mit &6Geladenem Certusquarzkristall&r füllt ihn auf. Er repariert den Knospenblock und hebt ihn Stufe um Stufe an.",
+              "",
+              "So wächst deine Certusfarm ohne Nachwerfen ins Wasser.",
+          ],
+          tasks=[task_item("extendedae:crystal_fixer", 1)],
+          rewards=[reward_item("ae2:charged_certus_quartz_crystal", 4), reward_xp(8)],
+          deps=["crystal_assembler"], icon="extendedae:crystal_fixer", optional=True),
+
+    quest("tag_storage_bus", 5, 28.5, "&3Filter nach Tags",
+          subtitle="Ein Speicherbus, der Tags lesen kann.",
+          description=[
+              "&6ME Tag Storage Bus:&r Logikprozessor oben, Redstone, Speicherbus, Redstone in der Mitte, ein Buch unten.",
+              "",
+              "Statt einzelner Gegenstände gibst du einen Tag ein, Sternchen sind erlaubt. &ec:raw_materials/*&r schickt alle Roherze in die Kiste dahinter, &ec:ingots/* | c:gems/*&r alle Barren und Edelsteine: &e|&r heißt oder.",
+          ],
+          tasks=[task_item("extendedae:tag_storage_bus", 1)],
+          rewards=[reward_item("ae2:logic_processor", 2), reward_xp(5)],
+          deps=["storage_bus"], icon="extendedae:tag_storage_bus", optional=True),
 ]
 
 images = [

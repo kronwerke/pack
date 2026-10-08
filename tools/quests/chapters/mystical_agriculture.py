@@ -448,6 +448,104 @@ quests = [
           tasks=[task_checkmark("Verstanden")],
           rewards=[reward_item("mysticalagriculture:prosperity_seed_base", 4), reward_item("mysticalagriculture:inferium_essence", 16)],
           deps=["essence_crafting"], icon="mysticalagriculture:prosperity_seed_base", size=1.5, shape="hexagon"),
+
+    # ---- neue Quests: Prosperium und Maschinen --------------------------------------
+    quest("machine_frame", 7.5, 5.5, "&7Bau ein Maschinengehäuse",
+          subtitle="Der Rahmen für jede Maschine des Mods.",
+          description=[
+              "&e4 Eisenbarren&r in die Ecken, &e4 Redstone&r an die Seiten, ein &6Stein&r in die Mitte ergeben ein &6Maschinengehäuse&r.",
+              "",
+              "Jede Maschine von Mystical Agriculture steckt in so einem Rahmen: der Ofen jetzt, später der Ernter, der Samenrecycler und der Seelenextraktor.",
+          ],
+          tasks=[task_item("mysticalagriculture:machine_frame", 1)],
+          rewards=[reward_item("minecraft:redstone", 16), reward_xp(3)],
+          deps=["prosperity_ingot"], icon="mysticalagriculture:machine_frame"),
+
+    quest("essence_furnace", 7.5, 4.8, "&6Bau den Ofen von Mystical Agriculture",
+          subtitle="Ein Ofen mit Platz für ein Upgrade.",
+          description=[
+              "&e4 Eisenbarren&r in die Ecken, &e2 Prosperiumbarren&r oben und unten, &e2 Öfen&r links und rechts, das &6Maschinengehäuse&r in die Mitte.",
+              "",
+              "Er brennt mit festem Brennstoff wie Kohle und hat einen internen Speicher dafür. Sein Vorteil ist der &eUpgrade-Platz&r: Mit einem Maschinen-Upgrade schmilzt er schneller.",
+              "",
+              "&eTipp:&r &6Inferiumkohle&r aus Agradditions brennt länger als normale Kohle und kommt vom eigenen Feld.",
+          ],
+          tasks=[task_item("mysticalagriculture:furnace", 1)],
+          rewards=[reward_item("minecraft:coal", 16), reward_xp(5)],
+          deps=["machine_frame"], icon="mysticalagriculture:furnace"),
+
+    quest("machine_upgrade", 7.0, 7.0, "&aSteck ein Inferium-Upgrade in die Maschine",
+          subtitle="Schneller, aber hungriger.",
+          description=[
+              "&6Maschinen-Upgrade-Basis:&r &e4 Prosperiumsplitter&r in die Ecken, &e4 Prosperiumbarren&r an die Seiten, ein &6Diamant&r in die Mitte. Darum &e4 Inferiumbarren&r an die Seiten und &e4 Inferiumessenz&r in die Ecken: das &6Inferium-Maschinen-Upgrade&r.",
+              "",
+              "Im Upgrade-Platz einer Maschine arbeitet sie schneller und verbraucht dafür auch mehr Brennstoff. Der Tooltip des Upgrades zeigt die Faktoren.",
+              "",
+              "&cAusblick:&r Prudentium-Upgrades, der &6Ernter&r (erntet und pflanzt selbst nach) und der &6Samenrecycler&r (macht aus überzähligen Samen Essenz) kommen mit &cStufe 2&r.",
+          ],
+          tasks=[task_item("mysticalagriculture:inferium_upgrade", 1)],
+          rewards=[reward_item("mysticalagriculture:prosperity_shard", 8), reward_xp(5)],
+          deps=["essence_furnace"], icon="mysticalagriculture:inferium_upgrade", optional=True),
+
+    # ---- neue Quests: Infusionsaltar -----------------------------------------------
+    quest("redstone_altar", 12.5, 3.0, "&dStarte den Altar mit Redstone",
+          subtitle="Knopf statt Zauberstab.",
+          description=[
+              "Der Infusionsaltar startet nicht nur mit dem &6Zauberstab&r: Ein &eRedstonesignal&r am Altar tut dasselbe, sobald das Rezept auf den Sockeln liegt.",
+              "",
+              "Ein Knopf neben dem Altar spart den Griff zum Stab. Wer viele Samen hintereinander macht, legt die Zutaten auf, drückt und nimmt den Samen heraus.",
+          ],
+          tasks=[task_checkmark("Den Altar mit Redstone gestartet")],
+          rewards=[reward_item("minecraft:redstone", 8), reward_xp(3)],
+          deps=["pedestals"], icon="minecraft:stone_button", optional=True),
+
+    quest("fertilized_essence", 17.5, 2.6, "&eErnte Düngeressenz",
+          subtitle="Knochenmehl, das auf Essenzpflanzen wirkt.",
+          description=[
+              "Jede Essenzpflanze außer Inferium lässt beim Ernten mit &e10 Prozent&r Chance eine &6Düngeressenz&r fallen. Steinsamen sind die einfachste Quelle.",
+              "",
+              "Sie wirkt wie Knochenmehl, aber auch auf Essenzpflanzen. Vier davon statt Knochenmehl im Rezept des Mystischen Düngers geben 8 Dünger statt 4.",
+          ],
+          tasks=[task_item("mysticalagriculture:fertilized_essence", 4)],
+          rewards=[reward_item("mysticalagriculture:mystical_fertilizer", 4), reward_xp(3)],
+          deps=["first_seed"], icon="mysticalagriculture:fertilized_essence", optional=True),
+
+    quest("elemental_stock", 22.5, 3.0, "&bLeg einen Elementvorrat an",
+          subtitle="Vierzig von jedem Element für später.",
+          description=[
+              "Pflanz die vier Elementsamen und sammle von jeder Essenz &e40 Stück&r: Luft, Erde, Wasser, Feuer.",
+              "",
+              "Der &6Erweckungsaltar&r in &cStufe 4&r braucht genau diese vier Essenzen in seinen &6Essenzurnen&r, jede Urne hält bis zu 40 einer Sorte. Wer jetzt anbaut, hat den Vorrat dann schon im Lager.",
+              "",
+              "&eTipp:&r Elementsamen geben auf Inferium-Ackerland zusätzliche Erträge.",
+          ],
+          tasks=[task_item("mysticalagriculture:air_essence", 40), task_item("mysticalagriculture:earth_essence", 40),
+                 task_item("mysticalagriculture:water_essence", 40), task_item("mysticalagriculture:fire_essence", 40)],
+          rewards=[reward_table("s1_uncommon"), reward_xp(10)],
+          deps=["agglomeratio"], icon="mysticalagriculture:air_essence", optional=True),
+
+    # ---- neue Quests: Essenzwerkzeug -----------------------------------------------
+    quest("inferium_sickle", 15, 8.8, "&aBau eine Inferiumsichel",
+          subtitle="Gras, Laub und Blumen in einem Zug weg.",
+          description=[
+              "Erst die &6Diamantsichel&r: &e3 Diamanten&r im Bogen, ein Stock unten links. Dann die Sichel in die Mitte, &e2 Inferiumbarren&r links und rechts, &e2 Inferium-Edelsteine&r oben und unten.",
+              "",
+              "Die Sichel räumt Pflanzenmaterial in einer großen Fläche ab, die Inferiumsichel weiter als die aus Diamant. Ideal, um vor dem Bau einer Farm Gras und Blumen zu entfernen oder Laub von Bäumen zu holen. Für reife Essenzpflanzen bleib bei der Sense, die pflanzt nicht aus.",
+          ],
+          tasks=[task_item("mysticalagriculture:inferium_sickle", 1)],
+          rewards=[reward_item("mysticalagriculture:inferium_ingot", 2), reward_xp(3)],
+          deps=["inferium_scythe"], icon="mysticalagriculture:inferium_sickle", optional=True),
+
+    quest("luck_augment", 15, 9.6, "&6Stimm ein Glücks-Augment ein",
+          subtitle="Vorbereitet für den Basteltisch.",
+          description=[
+              "Das &6Unabgestimmte Augment&r: &e3 Eisenbarren&r in der mittleren Spalte, &e6 Prosperiumsplitter&r links und rechts. Leg es auf den Infusionsaltar, auf die Sockel &e4 Goldbarren&r und &e4 Inferiumessenz&r: ein &6Glück I Augment&r.",
+              "",
+              "In Essenzrüstung verbessert es die Beute aus Angeln und Truhen. Einsetzen geht am &6Basteltisch&r, und der braucht Soulium aus &cStufe 2&r. Bis dahin liegt es bereit.",
+          ],
+          tasks=[task_item("mysticalagriculture:luck_i_augment", 1)],
+          rewards=[reward_item("minecraft:gold_ingot", 4), reward_xp(5)],
+          deps=["essence_armor"], icon="mysticalagriculture:luck_i_augment", optional=True),
 ] + [seed_quest(i, *s) for i, s in enumerate(SEEDS)]
 
 images = [

@@ -423,6 +423,122 @@ quests = [
           tasks=[task_checkmark("Gelesen")],
           rewards=[reward_xp(5)],
           deps=["goal"], icon="draconicevolution:draconium_core", optional=True),
+
+    # ---- Nuetzliches, neu ---------------------------------------------------------
+    quest("player_dislocator", 0, 7.5, "&bBau einen Spieler-Dislocator",
+          subtitle="Ein Sprung zu deinem Mitspieler.",
+          description=[
+              "Formlos: ein &6Dislocator&r, ein &6Draconiumkern&r und eine &6Ghast-Träne&r. Mit zwei Dislocatoren statt einem wird es die Punkt-zu-Punkt-Version, die zwei Dislocatoren miteinander verbindet.",
+              "",
+              "Rechtsklick bindet ihn an dich. Gib ihn einem Mitspieler: Mit einem Rechtsklick landet er bei dir, solange du online bist. Die Zahl der Sprünge ist begrenzt.",
+              "",
+              "Praktisch, wenn jemand im End verloren geht oder die Gruppe sich vor einem Kampf sammelt.",
+          ],
+          tasks=[task_item("draconicevolution:player_dislocator_unbound", 1)],
+          rewards=[reward_item("minecraft:ghast_tear", 2), reward_xp(5)],
+          deps=["dislocator"], icon="draconicevolution:player_dislocator_unbound", optional=True),
+
+    quest("disenchanter", 2.5, 7.5, "&dBau einen Entzauberer",
+          subtitle="Verzauberungen zurück aufs Buch.",
+          description=[
+              "&6Smaragde&r oben links und rechts, ein &6Draconiumkern&r oben in der Mitte, zwei &6Verzauberte Bücher&r links und rechts, ein &6Zaubertisch&r in die Mitte, drei &6Bücherregale&r unten.",
+              "",
+              "Leg ein verzaubertes Teil und Bücher hinein und wähl eine Verzauberung. Sie wandert auf ein Buch, das kostet &eErfahrungslevel&r. So rettest du Verzauberungen von alter Ausrüstung, bevor du sie zur Wyvern-Ausrüstung fusionierst.",
+          ],
+          tasks=[task_item("draconicevolution:disenchanter", 1)],
+          rewards=[reward_item("minecraft:experience_bottle", 16), reward_xp(5)],
+          deps=["core"], icon="draconicevolution:disenchanter", optional=True),
+
+    quest("celestial", 5, 7.5, "&eBau einen Himmelsmanipulator",
+          subtitle="Tag, Nacht und Wetter auf Knopfdruck.",
+          description=[
+              "&6Redstoneblöcke&r oben links und rechts, eine &6Uhr&r oben in der Mitte, &6Draconiumbarren&r links und rechts, ein &5Drachenei&r in die Mitte, unten &6Eisen, Wyvern-Kern, Eisen&r.",
+              "",
+              "Mit Strom springt er zu Sonnenaufgang, Mittag, Sonnenuntergang oder Mitternacht, oder er macht Regen, Gewitter oder klaren Himmel. Das Ei bekommst du von jedem Drachen neu.",
+          ],
+          tasks=[task_item("draconicevolution:celestial_manipulator", 1)],
+          rewards=[reward_item("minecraft:clock", 1), reward_xp(8)],
+          deps=["w_core"], icon="draconicevolution:celestial_manipulator", optional=True),
+
+    quest("chest", 7.5, 7.5, "&6Fusionier eine Draconiumtruhe",
+          subtitle="Eine riesige Truhe mit eigenem Ofen.",
+          description=[
+              "Fusion, Stufe Draconium: eine &6Truhe&r im Kern. In zehn Injektoren: &65 Öfen&r, &62 Draconiumkerne&r, &62 Werkbänke&r und &61 Draconiumblock&r. Kostet 2 Millionen Energie.",
+              "",
+              "Sie fasst weit mehr als eine Doppeltruhe und hat einen eingebauten Ofen mit Strom. &eAuto-Smelt&r schickt alles Schmelzbare hinein, oder nur das, was schon geschmolzen wird. Die Farbe stellst du im Fenster ein.",
+          ],
+          tasks=[task_item("draconicevolution:draconium_chest", 1)],
+          rewards=[reward_item("minecraft:coal_block", 8), reward_xp(8)],
+          deps=["injectors"], icon="draconicevolution:draconium_chest", optional=True),
+
+    quest("crystals", 5, 13.5, "&bVerteil Strom ohne Kabel",
+          subtitle="Kristallbinder und Energiekristalle.",
+          description=[
+              "&6Kristallbinder:&r ein &6Draconiumkern&r unten links, ein &6Lohenstab&r in die Mitte, Draconiumbarren daneben und darüber, ein &6Diamant&r oben rechts. Ein Relaiskristall formlos gibt zwei &6E/A-Kristalle&r.",
+              "",
+              "Setz einen E/A-Kristall an den Pylon, einen an die Maschine. Schleich-Rechtsklick mit dem Binder auf den ersten, dann Rechtsklick auf den zweiten: Der Strom fließt durch die Luft. Relaiskristalle verteilen weiter, ein &6Drahtloser Kristall&r versorgt Blöcke ganz ohne Kristall daran.",
+          ],
+          tasks=[task_item("draconicevolution:crystal_binder", 1), task_item("draconicevolution:basic_io_crystal", 2)],
+          rewards=[reward_item("draconicevolution:basic_relay_crystal", 2), reward_xp(8)],
+          deps=["pylon", "relay"], icon="draconicevolution:crystal_binder", optional=True),
+
+    # ---- Module -------------------------------------------------------------------
+    quest("mod_energy", 0, 27.5, "&dBau ein Wyvern-Energiemodul",
+          subtitle="Mehr Akku für Werkzeug und Rüstung.",
+          description=[
+              "&6Energiemodul:&r sechs &6Redstoneblöcke&r oben und unten, Eisen, Modulkern, Eisen in der Mitte. &6Wyvern-Energiemodul:&r sechs Draconiumbarren oben und unten, Energiemodul, Draconiumkern, Energiemodul in der Mitte.",
+              "",
+              "Das einfache Modul speichert &d1 Million&r, das Wyvern-Modul &d4 Millionen&r Energie. Jedes Modul braucht Strom, also kommt das hier zuerst in jedes Raster.",
+          ],
+          tasks=[task_item("draconicevolution:item_wyvern_energy", 1)],
+          rewards=[reward_item("minecraft:redstone_block", 8), reward_xp(6)],
+          deps=["modules"], icon="draconicevolution:item_wyvern_energy"),
+
+    quest("mod_aoe", 2.5, 27.5, "&dBau ein Wyvern-AOE-Modul",
+          subtitle="5 x 5 auf einen Schlag.",
+          description=[
+              "&6AOE-Modul:&r Kolben in die Ecken, Draconiumbarren oben und unten, Draconiumkerne links und rechts, ein Modulkern in die Mitte. Zwei davon mit einem &6Wyvern-Kern&r, vier Draconiumbarren und zwei &6Netherit-Bruchstücken&r ergeben das Wyvern-Modul.",
+              "",
+              "Das einfache Modul baut &e3 x 3&r ab, das Wyvern-Modul &e5 x 5&r. Die Größe stellst du im Werkzeug ein. Der &eAOE Safe Mode&r bricht ab, sobald eine Maschine im Bereich steht.",
+          ],
+          tasks=[task_item("draconicevolution:item_wyvern_aoe", 1)],
+          rewards=[reward_item("minecraft:netherite_scrap", 2), reward_xp(8)],
+          deps=["mod_energy"], icon="draconicevolution:item_wyvern_aoe"),
+
+    quest("mod_junk", 5, 27.5, "&dHalte dein Inventar sauber",
+          subtitle="Verbrennen oder in die Endertruhe.",
+          description=[
+              "&6Selektive Verbrennung:&r Draconiumbarren in die Ecken, ein &6Lavaeimer&r oben, Draconiumkerne links und rechts, Modulkern in die Mitte, Redstone unten. Was du im Filter einstellst, wird beim Aufheben verbrannt: Bruchstein, Erde, Endstein.",
+              "",
+              "&6Ender-Sammelmodul:&r Enderaugen in die Ecken, ein Draconiumkern oben, Draconiumbarren links und rechts, Modulkern in die Mitte, eine &6Endertruhe&r unten. Abgebautes landet direkt in deiner Endertruhe.",
+          ],
+          tasks=[task_item("draconicevolution:item_wyvern_junk_filter", 1)],
+          rewards=[reward_item("minecraft:lava_bucket", 1), reward_xp(5)],
+          deps=["mod_energy"], icon="draconicevolution:item_wyvern_junk_filter", optional=True),
+
+    quest("mod_tree", 7.5, 27.5, "&dFäll ganze Bäume",
+          subtitle="Der Wyvern-Baumfäller für die Axt.",
+          description=[
+              "Draconiumbarren in die Ecken, &6Diamantäxte&r oben und unten, Draconiumkerne links und rechts, ein Modulkern in die Mitte. Fusionier dazu eine &6Wyvern-Axt&r wie die Spitzhacke, mit einer Diamantaxt im Kern.",
+              "",
+              "Rechte Maustaste auf einem Baum gedrückt halten fällt ihn ganz. Das Modul reicht &e16 Blöcke&r weit und schafft &e5 Blöcke pro Sekunde&r. Blätter nimmt es mit, wenn du es einstellst.",
+          ],
+          tasks=[task_item("draconicevolution:item_wyvern_tree_harvest", 1), task_item("draconicevolution:wyvern_axe", 1)],
+          rewards=[reward_item("minecraft:diamond", 4), reward_xp(8)],
+          deps=["mod_energy", "tools"], icon="draconicevolution:item_wyvern_tree_harvest", optional=True),
+
+    quest("mod_undying", 10, 27.5, "&dBau ein Wyvern-Untod-Modul",
+          subtitle="Ein zweites Leben in der Brustplatte.",
+          description=[
+              "Draconiumbarren in die Ecken, ein &6Totem der Unsterblichkeit&r oben, Draconiumkerne links und rechts, Modulkern in die Mitte, ein &6Wyvern-Schildmodul&r unten.",
+              "",
+              "Ein tödlicher Treffer löst es aus: &d6 Lebenspunkte&r zurück, &d2 Sekunden&r unverwundbar und ein kräftiger Schildschub. Danach lädt es &d120 Sekunden&r lang mit 5 Millionen Energie nach.",
+              "",
+              "Es ist auch die Zutat für das drakonische Untod-Modul aus Stufe 5.",
+          ],
+          tasks=[task_item("draconicevolution:item_wyvern_undying", 1)],
+          rewards=[reward_item("minecraft:totem_of_undying", 1), reward_table("s4_common"), reward_xp(10)],
+          deps=["shield_mod", "mod_energy"], icon="draconicevolution:item_wyvern_undying"),
 ]
 
 images = [
@@ -435,6 +551,7 @@ images = [
     head("tiers", "Kernstufen", 10, 14.6, colour="fire"),
     head("wyvern", "Wyvern-Ausrüstung", 0, 18.9),
     head("obelisk", "Für den Obelisken", 10, 18.9, colour="brass"),
+    head("module", "Module", 0, 25.8),
 ]
 
 chapter(C, "Draconic Evolution", "draconicevolution:draconium_core", "tech", quests, shape="circle", order=38, stage=4,

@@ -431,14 +431,120 @@ quests = [
           tasks=[task_checkmark("Gelesen")],
           rewards=[reward_xp(5)],
           deps=["factory"], icon="justdirethings:gooblock_tier2", optional=True),
+
+    # ---- Neue Quests ------------------------------------------------------------
+    quest("hammer", 20.5, 2.5, "&6Bau den Hammer ein",
+          subtitle="3x3 mit der Blazegold-Spitzhacke.",
+          description=[
+              "Zwei &6Diamantspitzhacken&r links und rechts von einem &6Blank Upgrade&r ergeben das &6Hammer&r Upgrade. Es passt erst ab Blazegold, also in die Spitzhacke aus der letzten Quest.",
+              "",
+              "Mit Hammer baut die Blazegold-Spitzhacke &e3x3&r ab. Ein Klick auf das Symbol in den Tool Settings schaltet ihn aus, wenn du doch nur einen Block willst. Celestigem schafft später 5x5, Eclipse Alloy 7x7.",
+          ],
+          tasks=[task_item("justdirethings:upgrade_hammer", 1)],
+          rewards=[reward_item("minecraft:diamond", 2), reward_xp(5)],
+          deps=["template"], icon="justdirethings:upgrade_hammer"),
+
+    quest("smelter", 20.5, 3.75, "&6Schmilz beim Abbauen",
+          subtitle="Das Auto Smelter Upgrade.",
+          description=[
+              "Zwei &6Schmelzöfen&r links und rechts, zwei &6Lohenruten&r oben und unten um ein &6Blank Upgrade&r.",
+              "",
+              "In der Blazegold-Spitzhacke, -Axt oder -Schaufel kommen abgebaute Blöcke gleich geschmolzen heraus: Erz als Barren, Sand als Glas, Stämme als Holzkohle. Jeder Block kostet etwas Haltbarkeit, die Lava repariert sie wieder.",
+              "",
+              "Zusammen mit dem Ore Miner liegt eine ganze Eisenader als Barren im Inventar.",
+          ],
+          tasks=[task_item("justdirethings:upgrade_smelter", 1)],
+          rewards=[reward_item("minecraft:blaze_rod", 4), reward_xp(5)],
+          deps=["template"], icon="justdirethings:upgrade_smelter", optional=True),
+
+    quest("cauterize", 20.5, 5, "&cHeil dich mit dem Schwert",
+          subtitle="Blazegold-Schwert mit Cauterize Wounds.",
+          description=[
+              "Das &6Blazegold Sword&r machst du wie die Spitzhacke mit der Vorlage aus dem Ferricore-Schwert. &6Cauterize Wounds:&r zwei &6Goldene Äpfel&r oben und unten, zwei &6Magmacreme&r links und rechts um ein &6Blank Upgrade&r.",
+              "",
+              "Ausgelöst heilt es dich sofort und kostet etwas Haltbarkeit. Danach braucht es eine Pause, bevor es wieder geht. Leg es auf eine eigene Taste, dann hast du es im Kampf immer bereit.",
+          ],
+          tasks=[task_item("justdirethings:blazegold_sword", 1), task_item("justdirethings:upgrade_cauterizewounds", 1)],
+          rewards=[reward_item("minecraft:golden_apple", 2), reward_xp(5)],
+          deps=["template"], icon="justdirethings:blazegold_sword", optional=True),
+
+    quest("totem", 10, 1, "&eBau ein Totem of Death Recall",
+          subtitle="Zurück zum Ort, an dem du gestorben bist.",
+          description=[
+              "Blazegold in die Ecken, &6Diamanten&r oben und unten, &6Lapis&r links und rechts, eine &6Enderperle&r in die Mitte.",
+              "",
+              "Trag es im Inventar. Stirbst du, merkt es sich die Stelle. Halt danach die rechte Maustaste mit dem Totem gedrückt, und du landest wieder dort, bei deinen Sachen. Das Totem verbraucht sich dabei.",
+          ],
+          tasks=[task_item("justdirethings:totem_of_death_recall", 1)],
+          rewards=[reward_item("minecraft:ender_pearl", 4), reward_xp(5)],
+          deps=["blazegold"], icon="justdirethings:totem_of_death_recall"),
+
+    quest("creature_catcher", 10, 2, "&aFang ein Tier ein",
+          subtitle="Der Creature Catcher.",
+          description=[
+              "Vier &6Blazegold Ingots&r im Plus um eine &6Enderperle&r.",
+              "",
+              "Wirf ihn auf ein Lebewesen, und er fängt es ein. Wirf ihn noch einmal, und es kommt wieder heraus. So bringst du Kühe, Schafe oder einen Dorfbewohner sicher in deine Basis.",
+              "",
+              "Ein gefüllter Catcher passt auch in die Filter der Maschinen: damit filterst du sehr genau, zum Beispiel nur blaue Schafe.",
+          ],
+          tasks=[task_item("justdirethings:creaturecatcher", 1)],
+          rewards=[reward_item("minecraft:lead", 2), reward_xp(5)],
+          deps=["blazegold"], icon="justdirethings:creaturecatcher"),
+
+    quest("xp_holder", 10, 0, "&aSpeicher deine Erfahrung",
+          subtitle="Der Experience Holder.",
+          description=[
+              "Ein &6Smaragd&r oben, &6Buch, Enderperle, Buch&r in der Mitte, drei &6Blazegold Ingots&r unten.",
+              "",
+              "Mit &e+&r und &e-&r schiebst du Level in den Block und zurück, mit Shift zehn auf einmal, mit Strg alle. Abgebaut behält er die Erfahrung.",
+              "",
+              "Er kann dich in seinem Bereich auch auf einem festen Level halten, zum Beispiel immer auf &e30&r am Zaubertisch, und Erfahrungskugeln in der Nähe einsammeln. Als Tank gibt er Erfahrung als &6XP Fluid&r ab, 20 mB pro Punkt.",
+          ],
+          tasks=[task_item("justdirethings:experienceholder", 1)],
+          rewards=[reward_item("minecraft:experience_bottle", 16), reward_xp(5)],
+          deps=["blazegold"], icon="justdirethings:experienceholder"),
+
+    quest("settings_copier", 5, 9, "&7Kopier Maschineneinstellungen",
+          subtitle="Einmal einstellen, überall einfügen.",
+          description=[
+              "Ein &6Ferricore Ingot&r unten links, ein &6Papier&r in die Mitte, ein &6Primal Coal&r oben rechts.",
+              "",
+              "Schleich-Rechtsklick auf eine Maschine kopiert ihre Einstellungen: Redstone-Modus, Tempo, Filter, Richtung. Rechtsklick auf die nächste fügt sie ein. Ein Klick in die Luft wählt, welche Einstellungen mitkommen. Bei einer Goo-Straße mit sechs Seiten sparst du dir viel Klickerei.",
+          ],
+          tasks=[task_item("justdirethings:machinesettingscopier", 1)],
+          rewards=[reward_item("justdirethings:coal_t1", 8), reward_xp(3)],
+          deps=["breaker"], icon="justdirethings:machinesettingscopier", optional=True),
+
+    quest("fluid_placer", 7.5, 9, "&9Bau den Fluid Placer",
+          subtitle="Setzt Flüssigkeiten wie Blöcke.",
+          description=[
+              "Ferricore in die Ecken, ein &6Eimer&r oben, &6Lapis, Spender, Lapis&r in der Mitte, &6Redstone&r unten.",
+              "",
+              "Der &6Simple Fluid Placer&r nimmt Eimer oder einen Fluid Canister an. Hat er mindestens &e1 000 mB&r im Tank und ist vor ihm frei, setzt er einen Flüssigkeitsblock. So stellt er auch das &6Polymorphic Fluid&r oder den unfertigen Brennstoff neben das Goo, ohne dass du mit Eimern läufst.",
+          ],
+          tasks=[task_item("justdirethings:fluidplacert1", 1)],
+          rewards=[reward_item("minecraft:bucket", 2), reward_xp(3)],
+          deps=["placer"], icon="justdirethings:fluidplacert1", optional=True),
+
+    quest("polymorph", 2.5, 11.5, "&dVerwandle ein Monster",
+          subtitle="Der Polymorphic Wand.",
+          description=[
+              "Ein &6Blazegold Ingot&r unten links, ein &6Polymorphic Catalyst&r in die Mitte, ein &6Fluid Canister&r oben rechts. Er verbraucht &6Polymorphic Fluid&r, der Tooltip zeigt den Füllstand. Wie du das Fluid machst, steht beim Brennstoffgenerator.",
+              "",
+              "Benutz ihn an einem Monster, und es wird zu einem zufälligen anderen Monster. Mit Tieren geht das genauso. Welches herauskommt, kannst du nicht wählen, und aus einem Monster wird nie ein Tier.",
+          ],
+          tasks=[task_item("justdirethings:polymorphic_wand", 1)],
+          rewards=[reward_item("justdirethings:blazegold_ingot", 2), reward_xp(5)],
+          deps=["fluid_gen"], icon="justdirethings:polymorphic_wand", optional=True),
 ]
 
 images = [
     banner("dire_things/title", "Just Dire Things", 9, -6.5, height=1.75, kind="title", colour="nature"),
     banner("dire_things/goo", "Das Goo", 3.75, -2.7, height=0.9, colour="nature"),
     banner("dire_things/tools", "Werkzeug und Upgrades", 15.5, -4.6, height=0.9, colour="brass"),
-    banner("dire_things/machines", "Maschinen", 7.5, 5.5, height=0.9, colour="stone"),
-    banner("dire_things/factory", "Die Goo-Straße", 19, 5.5, height=0.9, colour="nature"),
+    banner("dire_things/machines", "Maschinen", 11, 5.5, height=0.9, colour="stone"),
+    banner("dire_things/factory", "Die Goo-Straße", 20.5, 5.5, height=0.9, colour="nature"),
 ]
 
 chapter(C, "Just Dire Things", "justdirethings:gooblock_tier1", "tech", quests, shape="circle", order=47, stage=2,

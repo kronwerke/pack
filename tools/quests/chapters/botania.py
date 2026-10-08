@@ -618,6 +618,123 @@ quests = [
           rewards=[reward_xp(5)],
           deps=["farm"], icon="botania:mana_pool"),
 
+    # ---- Neu: Nebenquests ------------------------------------------------
+    quest("urn", 5, 2.2, "&bFüll die Apotheke mit der Urne",
+          subtitle="Ars Elemental: nie wieder Wassereimer schleppen.",
+          description=[
+              "Die &6Urn of Endless Waters&r kommt aus dem Bezaubernden Apparat von &dArs Nouveau&r: &6Blumentopf&r in die Mitte, &6Quelljuwel&r, &e2 Wasseressenzen&r und &e2 Prismarinsplitter&r auf die Podeste.",
+              "",
+              "Verbinde sie mit dem &6Dominion-Zauberstab&r mit deiner Blütenapotheke (oder einem Kessel). Ist die Apotheke leer, füllt die Urne sie für ein wenig Quelle wieder auf.",
+              "",
+              "&eTipp:&r Das ist genau die Lexica-Aufgabe &eApothekenauffüller&r.",
+          ],
+          tasks=[task_item("ars_elemental:everfull_urn", 1)],
+          rewards=[reward_item("minecraft:prismarine_shard", 4), reward_xp(4)],
+          deps=["apothecary"], icon="ars_elemental:everfull_urn", optional=True),
+
+    quest("fel_pumpkin", 1.2, 3.5, "&6Schnitz einen Gallkürbis",
+          subtitle="Lohenstaub ohne Nether.",
+          description=[
+              "Oben &6Faden&r, in der Mitte &6Knochen&r, &6Kürbis&r, &6Verrottetes Fleisch&r, unten &6Schwarzpulver&r.",
+              "",
+              "Setz den &6Gallkürbis&r auf zwei übereinander stehende &6Eisengitter&r, wie beim Schneegolem. Es erscheint eine &cLohe&r. Sie ist schwächer als eine echte und lässt statt einer Lohenrute etwas &6Lohenstaub&r fallen.",
+              "",
+              "&eWozu:&r Lohenstaub plus Enderperle gibt Enderaugen, lange bevor du eine Netherfestung findest.",
+          ],
+          tasks=[task_item("botania:fel_pumpkin", 2)],
+          rewards=[reward_item("minecraft:iron_bars", 4), reward_xp(3)],
+          deps=["welcome"], icon="botania:fel_pumpkin", optional=True),
+
+    quest("vine_ball", 3, 3.5, "&6Knüll ein Rankenknäuel",
+          subtitle="Eine Leiter zum Werfen.",
+          description=[
+              "&e9 Ranken&r im vollen Raster ergeben ein &6Rankenknäuel&r.",
+              "",
+              "Geworfen hinterlässt es an der Wand, wo es aufschlägt, eine Bahn aus festen Ranken, an der du hochklettern kannst. Praktisch an Klippen und in Höhlen.",
+              "",
+              "In Stufe 2 schießt die &6Lebeholzschleuder&r (mit Rune der Luft) die Knäuel ohne Schwerkraft geradeaus.",
+          ],
+          tasks=[task_item("botania:vine_ball", 4)],
+          rewards=[reward_item("minecraft:vine", 16)],
+          deps=["welcome"], icon="botania:vine_ball", optional=True),
+
+    quest("horn", 5, 17.9, "&6Blas das Horn der Wildnis",
+          subtitle="Ein ganzes Feld auf einen Atemzug.",
+          description=[
+              "&e5 Lebeholzstämme&r um einen &6Weidesamen&r: oben Mitte, links und rechts der Mitte und unten links und Mitte.",
+              "",
+              "Halt Rechtsklick gedrückt, und alles Gewächs ringsum reißt aus und lässt fallen, was es auch per Hand fallen ließe: hohes Gras, Blumen, reife Felder.",
+              "",
+              "Formlos mit &6Laub&r wird es zum &6Horn der Baumkronen&r, das Blätter abräumt, mit einem &6Schneeball&r zum &6Horn der Abdeckung&r für Schnee.",
+          ],
+          tasks=[task_item("botania:horn_of_the_wild", 1), task_item("botania:horn_of_the_canopy", 1)],
+          rewards=[reward_item("botania:pasture_seeds", 4), reward_xp(3)],
+          deps=["pasture_seeds"], icon="botania:horn_of_the_wild", optional=True),
+
+    quest("drum", 7.4, 17.9, "&6Bau eine Trommel der Wildnis",
+          subtitle="Das Horn als Block, für die Farm.",
+          description=[
+              "Links und rechts je &e3 Lebeholzstämme&r, oben und unten Mitte &6Leder&r, das &6Horn der Wildnis&r in die Mitte.",
+              "",
+              "Trifft ein Manastoß die Trommel, reißt sie alles Gewächs ringsum aus, genau wie das Horn. Sie speichert kein Mana, also braucht sie einen &6Impuls-Verbreiter&r an einem Redstone-Takt.",
+              "",
+              "Mit Trichtern oder einer Trichtermalve aus Stufe 2 wird daraus eine Ernte, die von selbst läuft.",
+          ],
+          tasks=[task_item("botania:drum_of_the_wild", 1)],
+          rewards=[reward_item("minecraft:leather", 4), reward_table("s1_common")],
+          deps=["horn", "pulse_spreader"], icon="botania:drum_of_the_wild", optional=True),
+
+    quest("avatar", 5, 15.7, "&bStell einen Lebeholz-Avatar auf",
+          subtitle="Eine Statue, die Ruten benutzt.",
+          description=[
+              "&6Lebeholz-Avatar&r: &e5 Lebeholzstämme&r um einen &bManadiamanten&r als Herz. &6Rute des üppigen Mantels&r: &e4 Lebeholzzweige&r und ein Manadiamant.",
+              "",
+              "Die Rute lässt Erze in einem kleinen Umkreis kurz durch die Wände leuchten, gleiche Erze in gleicher Farbe. Gib sie dem Avatar, versorg ihn mit einem Verbreiter, und er zeigt die Erze in seiner Nähe dauerhaft. Redstone hält ihn an.",
+              "",
+              "Mit den Runen aus Stufe 2 bekommt der Avatar weitere Ruten, etwa die Rute der Lüfte oder der Höllen.",
+          ],
+          tasks=[task_item("botania:livingwood_avatar", 1), task_item("botania:rod_of_the_plentiful_mantle", 1)],
+          rewards=[reward_item("minecraft:diamond", 1), reward_xp(5)],
+          deps=["mana_diamond"], icon="botania:livingwood_avatar", optional=True),
+
+    quest("teru_teru", 0, 20, "&6Häng einen Teru Teru Bozu auf",
+          subtitle="Weniger Regen über der Basis.",
+          description=[
+              "&e2 Managewebestoff&r übereinander, darunter eine &6Sonnenblume&r.",
+              "",
+              "Aufgestellt verkürzt er Regen und Schneestürme. Gibst du ihm bei schlechtem Wetter eine Sonnenblume (Rechtsklick oder werfen), kommt die Sonne zurück. Ein Komparator daneben meldet schlechtes Wetter.",
+              "",
+              "&cAchtung:&r Eine &6Blaue Orchidee&r verdirbt ihm die Laune, und das Wetter gleich mit.",
+          ],
+          tasks=[task_item("botania:teru_teru_bozu", 1)],
+          rewards=[reward_item("minecraft:sunflower", 4)],
+          deps=["manaweave"], icon="botania:teru_teru_bozu", optional=True),
+
+    quest("manaweave_set", 2.2, 20, "&6Vervollständige die Magierrobe",
+          subtitle="Erst alle vier Teile bringen den Bonus.",
+          description=[
+              "Kapuze, Robenunterteil und Stiefel aus &6Managewebestoff&r. Für das ganze Set brauchst du &e24 Stoff&r.",
+              "",
+              "Erst mit allen vier Teilen kosten Werkzeuge und Ruten von Botania viel weniger Mana, und die Ruten werden stärker. Wer viel mit Ruten arbeitet, trägt am besten diese Robe.",
+          ],
+          tasks=[task_item("botania:manaweave_helmet", 1), task_item("botania:manaweave_leggings", 1),
+                 task_item("botania:manaweave_boots", 1)],
+          rewards=[reward_item("minecraft:string", 16), reward_xp(4)],
+          deps=["manaweave_robe"], icon="botania:manaweave_helmet", optional=True),
+
+    quest("ender_overseer", 13.7, 9.9, "&6Bau einen Ender-Aufseher",
+          subtitle="Redstone, wenn dich jemand ansieht.",
+          description=[
+              "&e4 Redstone&r in den Ecken, &e4 Enderaugen&r an den Seiten, &6Obsidian&r in die Mitte.",
+              "",
+              "Der Block gibt ein Redstone-Signal, wenn ein Spieler im Umkreis von &e64 Blöcken&r ihn direkt ansieht. Wer einen &6Kürbis&r auf dem Kopf trägt, löst ihn nicht aus.",
+              "",
+              "&eIdee:&r Eine Tür, die aufgeht, wenn du von draußen auf das Zeichen über ihr schaust.",
+          ],
+          tasks=[task_item("botania:ender_overseer", 1)],
+          rewards=[reward_item("minecraft:redstone", 16)],
+          deps=["detector"], icon="botania:ender_overseer", optional=True),
+
 ]
 
 images = [

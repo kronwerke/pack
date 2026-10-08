@@ -66,7 +66,7 @@ quests = [
           ],
           tasks=[task_item("ae2:fluid_storage_cell_64k", 1)],
           rewards=[reward_item("minecraft:bucket", 4), reward_xp(6)],
-          deps=["welcome"], icon="ae2:fluid_storage_cell_64k"),
+          deps=["welcome"], icon="ae2:fluid_storage_cell_64k", section="cells"),
 
     quest("fe_big", 5, 2, "&cLager Strom in 64k",
           subtitle="Applied Flux bis 4M.",
@@ -77,7 +77,7 @@ quests = [
           ],
           tasks=[task_item("appflux:fe_64k_cell", 1)],
           rewards=[reward_item("minecraft:redstone_block", 8), reward_xp(6)],
-          deps=["welcome"], icon="appflux:fe_64k_cell"),
+          deps=["welcome"], icon="appflux:fe_64k_cell", section="cells"),
 
     # ---- Singularitäten und Quantenbrücke -------------------------------------
     quest("matter", 0, 6, "&7Mach Materiebälle",
@@ -391,6 +391,108 @@ quests = [
           tasks=[task_item("extendedae:wireless_connect", 2), task_item("extendedae:wireless_tool", 1)],
           rewards=[reward_item("ae2:wireless_booster", 2), reward_xp(6)],
           deps=["ex_machines"], icon="extendedae:wireless_connect"),
+
+    # ---- Neue Quests -------------------------------------------------------------
+    quest("cell_dock", 7.5, 1, "&7Setz ein ME Cell Dock",
+          subtitle="Eine Zelle, flach am Kabel.",
+          description=[
+              "Eisen, Kupfer, Eisen oben, ein Glaskabel darunter in die Mitte. Das &6ME Cell Dock&r von MEGA Cells hält genau eine Zelle.",
+              "",
+              "Es ist wie eine kleine ME-Truhe ohne Konsole, aber ein flaches Kabelteil: mehrere Docks passen an dasselbe Kabelstück. Praktisch als Puffer in einem kleinen Unternetz.",
+          ],
+          tasks=[task_item("megacells:cell_dock", 1)],
+          rewards=[reward_item("ae2:fluix_glass_cable", 16), reward_xp(4)],
+          deps=["cell_64k"], icon="megacells:cell_dock", optional=True),
+
+    quest("fluid_1m", 12.5, 10, "&9Bau eine MEGA-Flüssigkeitszelle",
+          subtitle="Himmelsbronze statt Himmelsstahl.",
+          description=[
+              "&6MEGA-Flüssigkeitszellengehäuse:&r polarisiertes Quarzglas, Himmelssteinstaub, polarisiertes Quarzglas oben, Himmelssteinstaub an den Seiten, drei &6Himmelsbronzebarren&r unten. Mit einer &61M-Komponente&r wird es die &61M MEGA Fluid Storage Cell&r.",
+              "",
+              "Himmelsbronze machst du wie Himmelsstahl, nur mit Kupfer statt Eisen in der Lava. Wie jede Flüssigkeitszelle hält sie &e5 Typen&r.",
+          ],
+          tasks=[task_item("megacells:fluid_storage_cell_1m", 1)],
+          rewards=[reward_item("megacells:sky_steel_ingot", 4), reward_xp(8)],
+          deps=["mega_1m"], icon="megacells:fluid_storage_cell_1m"),
+
+    quest("radioactive", 12.5, 12, "&aLager Atommüll im Netz",
+          subtitle="Die Zelle, die nur Strahlendes nimmt.",
+          description=[
+              "&6MEGA Radioactive Storage Component:&r Himmelssteinstaub in die Ecken, ein Akkumulationsprozessor oben, zwei &6Tonnen für radioaktiven Abfall&r links und rechts, polarisiertes Quarzglas in der Mitte, eine 256k-Komponente unten. Für die Zelle kommen &6Reaktorglas&r, Himmelssteinstaub, &6HDPE-Platten&r und ein &6Polonium-Pellet&r dazu.",
+              "",
+              "Normale Chemiezellen nehmen keine radioaktiven Stoffe. Diese Zelle nimmt nur sie: Atommüll, Polonium, Plutonium. Sie hält einen Typ, den du vorher an der Speicherzellenwerkbank einstellst, bis &d2 048 Eimer&r.",
+              "",
+              "&cAchtung:&r Sie braucht &d250 AE/t&r im Laufwerk. Verbrauchten Atommüll nimmt sie nicht.",
+          ],
+          tasks=[task_item("megacells:radioactive_chemical_cell", 1)],
+          rewards=[reward_item("mekanism:hdpe_sheet", 8), reward_table("s4_common"), reward_xp(10)],
+          deps=["accumulation"], icon="megacells:radioactive_chemical_cell", optional=True),
+
+    quest("greater_card", 10, 12.5, "&eBau eine Greater Energy Card",
+          subtitle="Größerer Akku für alles Tragbare.",
+          description=[
+              "Formlos aus einer &6Fortgeschrittenen Karte&r und einer &6Superdichten Energiezelle&r.",
+              "",
+              "Sie passt in tragbare Zellen und drahtlose Konsolen wie die normale Energiekarte, nur mit viel mehr Puffer. Tragbare MEGA-Zellen nehmen nur diese Karte.",
+          ],
+          tasks=[task_item("megacells:greater_energy_card", 1)],
+          rewards=[reward_item("ae2:dense_energy_cell", 1), reward_xp(6)],
+          deps=["mega_energy"], icon="megacells:greater_energy_card", optional=True),
+
+    quest("throughput", 12.5, 19, "&dMiss deinen Durchsatz",
+          subtitle="Wie schnell wächst der Bestand?",
+          description=[
+              "&6ME Throughput Monitor:&r formlos aus einem &6ME-Speichermonitor&r und einem Kalkulationsprozessor.",
+              "",
+              "Er zeigt wie der Speichermonitor einen Gegenstand, dazu aber, wie schnell sich dessen Menge ändert: pro Sekunde, pro Minute oder pro zehn Minuten. So siehst du, ob deine Erzverarbeitung mithält oder eine Farm schwächelt.",
+          ],
+          tasks=[task_item("advanced_ae:throughput_monitor", 1)],
+          rewards=[reward_item("ae2:calculation_processor", 2), reward_xp(5)],
+          deps=["reaction"], icon="advanced_ae:throughput_monitor", optional=True),
+
+    quest("infinity_cells", 5, 26, "&3Bau unendliche Zellen",
+          subtitle="Bruchstein und Wasser ohne Ende.",
+          description=[
+              "&6ME Infinity Cobblestone Cell:&r Quarzglas, Lavaeimer, Quarzglas oben, Wassereimer, 16k-Komponente, Wassereimer in der Mitte, drei Diamanten unten. Die &6ME Infinity Water Cell&r nimmt einen Wassereimer statt der Lava.",
+              "",
+              "Im Laufwerk gibt sie unbegrenzt Bruchstein oder Wasser ab und schluckt beides ohne Ende. Keine Steinfarm, keine Wasserquelle mehr für Maschinen, die das brauchen.",
+          ],
+          tasks=[task_item("extendedae:infinity_cobblestone_cell", 1), task_item("extendedae:infinity_water_cell", 1)],
+          rewards=[reward_item("minecraft:diamond", 4), reward_xp(8)],
+          deps=["ex_machines"], icon="extendedae:infinity_cobblestone_cell"),
+
+    quest("ex_assembler", 7.5, 24, "&3Bau einen Extended Molecular Assembler",
+          subtitle="Acht Aufträge, doppelt so schnell.",
+          description=[
+              "Im Crystal Assembler: vier &6Molekularassembler&r, vier Concurrent Processors, vier Fluixstaub, drei Konstruktionsprozessoren und eine Beschleunigungskarte.",
+              "",
+              "Er arbeitet acht Aufträge gleichzeitig (wenn die CPU genug Prozessoreinheiten hat) und doppelt so schnell wie ein normaler. Schablonen legst du nicht direkt hinein, er bekommt sie nur von einem Provider.",
+          ],
+          tasks=[task_item("extendedae:ex_molecular_assembler", 1)],
+          rewards=[reward_item("ae2:crafting_accelerator", 2), reward_xp(8)],
+          deps=["ex_inscriber"], icon="extendedae:ex_molecular_assembler"),
+
+    quest("oversize", 2.5, 27, "&3Bau ein ME Oversize Interface",
+          subtitle="1 024 Stück pro Platz.",
+          description=[
+              "Im Crystal Assembler: ein &6ME Extended Interface&r, ein &6ME Ingredient Buffer&r (Eisen, 1k-Komponenten, Quarzglas), zwei Concurrent Processors und je zwei Annihilations- und Formationskerne.",
+              "",
+              "Es hat so viele Plätze wie das Extended Interface, aber jeder hält das &d16-fache&r: 1 024 Gegenstände statt 64. Ideal als Vorrat neben Maschinen, die große Mengen auf einmal fressen.",
+          ],
+          tasks=[task_item("extendedae:oversize_interface", 1)],
+          rewards=[reward_item("extendedae:concurrent_processor", 2), reward_xp(8)],
+          deps=["ex_machines"], icon="extendedae:oversize_interface", optional=True),
+
+    quest("ex_buses", 7.5, 26, "&3Bau erweiterte Busse",
+          subtitle="Achtmal so schnell.",
+          description=[
+              "Im Crystal Assembler: ein Importbus (oder Exportbus), drei Beschleunigungskarten, zwei Kolben und ein Annihilationskern (beim Export ein Formationskern).",
+              "",
+              "Die &6ME Extended Import Bus&r und &6Export Bus&r bewegen &d8-mal&r so viel wie die normalen und haben mehr Kartenplätze. Genau richtig für den Steinbruch, der in dein Netz kippt.",
+          ],
+          tasks=[task_item("extendedae:ex_import_bus_part", 1), task_item("extendedae:ex_export_bus_part", 1)],
+          rewards=[reward_item("ae2:speed_card", 4), reward_xp(8)],
+          deps=["ex_machines"], icon="extendedae:ex_import_bus_part"),
 ]
 
 images = [

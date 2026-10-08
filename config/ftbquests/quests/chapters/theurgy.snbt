@@ -430,6 +430,7 @@
 			}
 			size: 1.75d
 			shape: "diamond"
+			hide_dependent_lines: true
 			dependencies: [
 				"4DD82BD2E67B049E"
 			]
@@ -737,7 +738,7 @@
 		{
 			id: "686214DB6E62E69A"
 			x: 8.870000000000001d
-			y: 11.885d
+			y: 12.635d
 			icon: {
 				id: "theurgy:mercurial_wand"
 				count: 1
@@ -777,7 +778,7 @@
 		{
 			id: "14042D0E4B70B4FF"
 			x: 10.870000000000001d
-			y: 11.885d
+			y: 12.635d
 			icon: {
 				id: "theurgy:logistics_item_extractor"
 				count: 1
@@ -825,7 +826,7 @@
 		{
 			id: "1D014BD9B00876E4"
 			x: 12.870000000000001d
-			y: 11.885d
+			y: 12.635d
 			icon: {
 				id: "theurgy:copper_wire"
 				count: 1
@@ -864,7 +865,7 @@
 		{
 			id: "2CBF22171BB2128E"
 			x: 14.870000000000001d
-			y: 11.885d
+			y: 12.635d
 			icon: {
 				id: "theurgy:list_filter"
 				count: 1
@@ -898,7 +899,7 @@
 		{
 			id: "60697FF98DA3A3AE"
 			x: 0.0d
-			y: 19.485d
+			y: 20.985d
 			icon: {
 				id: "theurgy:reformation_target_pedestal"
 				count: 1
@@ -956,7 +957,7 @@
 		{
 			id: "705A1D339FC496C6"
 			x: 2.0d
-			y: 19.485d
+			y: 20.985d
 			icon: {
 				id: "theurgy:sulfuric_flux_emitter"
 				count: 1
@@ -995,7 +996,7 @@
 		{
 			id: "1E2CAD1F8BA3B7CF"
 			x: 4.0d
-			y: 19.485d
+			y: 20.985d
 			icon: {
 				id: "theurgy:alchemical_sulfur_quartz"
 				count: 1
@@ -1034,7 +1035,7 @@
 		{
 			id: "7AF997BBC949C119"
 			x: 6.0d
-			y: 19.485d
+			y: 20.985d
 			icon: {
 				id: "theurgy:fermentation_vat"
 				count: 1
@@ -1082,7 +1083,7 @@
 		{
 			id: "3DE4DC5484068C06"
 			x: 8.0d
-			y: 20.985d
+			y: 22.485d
 			icon: {
 				id: "theurgy:fermentation_starter"
 				count: 1
@@ -1122,7 +1123,7 @@
 		{
 			id: "2C05DFCA19817882"
 			x: 8.0d
-			y: 19.485d
+			y: 20.985d
 			icon: {
 				id: "theurgy:alchemical_niter_metals_common"
 				count: 1
@@ -1161,7 +1162,7 @@
 		{
 			id: "61C8DBA871625226"
 			x: 10.0d
-			y: 19.485d
+			y: 20.985d
 			icon: {
 				id: "theurgy:purified_gold"
 				count: 1
@@ -1209,7 +1210,7 @@
 		{
 			id: "2ED7398A8BF9E75D"
 			x: 12.0d
-			y: 19.485d
+			y: 20.985d
 			icon: {
 				id: "theurgy:digestion_vat"
 				count: 1
@@ -1246,7 +1247,7 @@
 		{
 			id: "1BFAAF2C6B540335"
 			x: 17.270000000000003d
-			y: 11.885d
+			y: 12.635d
 			icon: {
 				id: "theurgy:incubator"
 				count: 1
@@ -1288,6 +1289,353 @@
 					id: "12BACE526230A16A"
 					type: "xp_levels"
 					xp_levels: 15
+				}
+			]
+		}
+		{
+			id: "170155E0A2D53967"
+			x: 16.6d
+			y: 6.035d
+			icon: {
+				id: "theurgy:alchemical_sulfur_iesnium"
+				count: 1
+			}
+			optional: true
+			dependencies: [
+				"12A0A8C0F29E767D"
+			]
+			tasks: [
+				{
+					id: "45A0A96144D2E370"
+					type: "item"
+					item: {
+						id: "theurgy:alchemical_sulfur_iesnium"
+						count: 1
+					}
+					count: 5
+				}
+			]
+			rewards: [
+				{
+					id: "1028474476B85553"
+					type: "item"
+					item: {
+						id: "theurgy:mercury_shard"
+						count: 1
+					}
+					count: 16
+				}
+				{
+					id: "7E9501C48E94BD76"
+					type: "loot"
+					table_id: 6583846314806931712L
+				}
+				{
+					id: "500D91E954B1EB34"
+					type: "xp_levels"
+					xp_levels: 10
+				}
+			]
+		}
+		{
+			id: "4E5F1DAD153ED58B"
+			x: 16.6d
+			y: 4.535d
+			icon: {
+				id: "theurgy:alchemical_sulfur_netherite"
+				count: 1
+			}
+			optional: true
+			dependencies: [
+				"12A0A8C0F29E767D"
+			]
+			tasks: [
+				{
+					id: "21A965196F3660D5"
+					type: "item"
+					item: {
+						id: "theurgy:alchemical_sulfur_netherite"
+						count: 1
+					}
+					count: 2
+				}
+			]
+			rewards: [
+				{
+					id: "20ECC586E9A63F02"
+					type: "item"
+					item: {
+						id: "minecraft:ancient_debris"
+						count: 1
+					}
+					count: 1
+				}
+				{
+					id: "223E820D60639905"
+					type: "xp_levels"
+					xp_levels: 10
+				}
+			]
+		}
+		{
+			id: "1074C5EB305F9E40"
+			x: 16.6d
+			y: 7.535d
+			icon: {
+				id: "theurgy:alchemical_sulfur_diamond"
+				count: 1
+			}
+			optional: true
+			dependencies: [
+				"12A0A8C0F29E767D"
+			]
+			tasks: [
+				{
+					id: "48209C20FDC2B042"
+					type: "item"
+					item: {
+						id: "theurgy:alchemical_sulfur_diamond"
+						count: 1
+					}
+					count: 8
+				}
+			]
+			rewards: [
+				{
+					id: "28B7D253D8F5156D"
+					type: "item"
+					item: {
+						id: "minecraft:diamond"
+						count: 1
+					}
+					count: 2
+				}
+				{
+					id: "127B4484BE6005DE"
+					type: "xp_levels"
+					xp_levels: 10
+				}
+			]
+		}
+		{
+			id: "70C2E8DBDC3922EF"
+			x: 2.0d
+			y: 17.134999999999998d
+			icon: {
+				id: "theurgy:mercury_crystal"
+				count: 1
+			}
+			optional: true
+			dependencies: [
+				"639D8F237FAFF578"
+			]
+			tasks: [
+				{
+					id: "788DEF37707289C5"
+					type: "item"
+					item: {
+						id: "theurgy:mercury_crystal"
+						count: 1
+					}
+					count: 8
+				}
+			]
+			rewards: [
+				{
+					id: "3A3C2F59F152F69B"
+					type: "item"
+					item: {
+						id: "theurgy:mercury_shard"
+						count: 1
+					}
+					count: 16
+				}
+				{
+					id: "25ACDC8C6295FE8F"
+					type: "xp_levels"
+					xp_levels: 4
+				}
+			]
+		}
+		{
+			id: "3E855AB0F15CBD8B"
+			x: 12.870000000000001d
+			y: 11.135d
+			icon: {
+				id: "theurgy:logistics_fluid_extractor"
+				count: 1
+			}
+			dependencies: [
+				"14042D0E4B70B4FF"
+			]
+			tasks: [
+				{
+					id: "5FD58D8E6F892EDE"
+					type: "item"
+					item: {
+						id: "theurgy:logistics_fluid_extractor"
+						count: 1
+					}
+					count: 1
+				}
+				{
+					id: "6141CFFE29F4AE62"
+					type: "item"
+					item: {
+						id: "theurgy:logistics_fluid_inserter"
+						count: 1
+					}
+					count: 2
+				}
+			]
+			rewards: [
+				{
+					id: "637EAB53ABC395CD"
+					type: "item"
+					item: {
+						id: "theurgy:sal_ammoniac_crystal"
+						count: 1
+					}
+					count: 4
+				}
+				{
+					id: "5F181C5FE448E025"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+		}
+		{
+			id: "6241A27B59F5BDF0"
+			x: 12.870000000000001d
+			y: 14.135d
+			icon: {
+				id: "theurgy:attribute_filter"
+				count: 1
+			}
+			optional: true
+			dependencies: [
+				"14042D0E4B70B4FF"
+			]
+			tasks: [
+				{
+					id: "101915367AD54193"
+					type: "item"
+					item: {
+						id: "theurgy:attribute_filter"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "6035BB20AC3B9F25"
+					type: "item"
+					item: {
+						id: "minecraft:paper"
+						count: 1
+					}
+					count: 16
+				}
+				{
+					id: "1856DDB7641B8F0F"
+					type: "xp_levels"
+					xp_levels: 4
+				}
+			]
+		}
+		{
+			id: "18AD624776BFD260"
+			x: 6.0d
+			y: 22.485d
+			icon: {
+				id: "theurgy:alchemical_sulfur_ender_pearl"
+				count: 1
+			}
+			optional: true
+			dependencies: [
+				"1E2CAD1F8BA3B7CF"
+			]
+			tasks: [
+				{
+					id: "7195CD2BBCD6A3C3"
+					type: "item"
+					item: {
+						id: "theurgy:alchemical_sulfur_ender_pearl"
+						count: 1
+					}
+					count: 4
+				}
+				{
+					id: "7837D67A53BAAA86"
+					type: "item"
+					item: {
+						id: "theurgy:alchemical_salt_creature"
+						count: 1
+					}
+					count: 4
+				}
+			]
+			rewards: [
+				{
+					id: "1C1B90D4C32B1BFB"
+					type: "item"
+					item: {
+						id: "minecraft:ender_pearl"
+						count: 1
+					}
+					count: 4
+				}
+				{
+					id: "3F8FDB6976A84269"
+					type: "xp_levels"
+					xp_levels: 8
+				}
+			]
+		}
+		{
+			id: "2351FBBABD5119FB"
+			x: 14.4d
+			y: 20.985d
+			icon: {
+				id: "theurgy:alchemical_niter_gems_precious"
+				count: 1
+			}
+			optional: true
+			dependencies: [
+				"2ED7398A8BF9E75D"
+			]
+			tasks: [
+				{
+					id: "559CD5D8B4CC3FA2"
+					type: "item"
+					item: {
+						id: "theurgy:alchemical_niter_gems_precious"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "30B0D92B8AA50523"
+					type: "item"
+					item: {
+						id: "minecraft:lapis_lazuli"
+						count: 1
+					}
+					count: 32
+				}
+				{
+					id: "3998E6DE9F24BA87"
+					type: "loot"
+					table_id: 6583846314806931712L
+				}
+				{
+					id: "1800852CA123F96D"
+					type: "xp_levels"
+					xp_levels: 10
 				}
 			]
 		}
@@ -1337,7 +1685,7 @@
 			id: "5E9872BC568FCC80"
 			image: "kronwerke:textures/quests/theurgy/umwandlung.png"
 			x: 1.75d
-			y: 17.785d
+			y: 19.285d
 			width: 4.5d
 			height: 0.9d
 			rotation: 0.0d

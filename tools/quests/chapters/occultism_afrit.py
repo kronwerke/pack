@@ -34,7 +34,7 @@ quests = [
           rewards=[reward_item("minecraft:yellow_dye", 8), reward_table("s3_common")],
           icon="occultism:book_of_binding_bound_afrit", size=2.0, shape="hexagon"),
 
-    quest("goggles", 2.4, -2.2, "&6Bau die Otherworld Goggles",
+    quest("goggles", 2.4, 1.6, "&6Bau die Otherworld Goggles",
           subtitle="Sieh, was in Netherrack steckt.",
           description=[
               "&e8 Glasscheiben&r um einen &bSpirit Attuned Gem&r ergeben &6Lenses&r. In Eziveus' Spectral Compulsion mit &e2 Silber-&r und &e1 Goldbarren&r (Foliot-Buch) werden sie zu &6Infused Lenses&r.",
@@ -109,7 +109,7 @@ quests = [
           rewards=[reward_item("occultism:iesnium_ingot", 3), reward_table("s3_common"), reward_xp(10)],
           deps=["foliot_miner"], icon="occultism:dimensional_mineshaft"),
 
-    quest("storage", 6, -2.2, "&6Bau den Storage Actuator",
+    quest("storage", 4.8, 1.6, "&6Bau den Storage Actuator",
           subtitle="Ein Lager in einer eigenen Dimension.",
           description=[
               "&6Dimensional Matrix:&r &e3 Quarzblöcke&r, Enderperle in Strigeor's Higher Binding (Djinni-Buch).",
@@ -124,7 +124,7 @@ quests = [
           rewards=[reward_item("minecraft:quartz_block", 8), reward_xp(5)],
           deps=["goggles"], icon="occultism:storage_controller", optional=True),
 
-    quest("stabilizers", 8.4, -2.2, "&6Bau Speicherstabilisatoren",
+    quest("stabilizers", 7.2, 1.6, "&6Bau Speicherstabilisatoren",
           subtitle="Mehr Platz im Lager.",
           description=[
               "&6Stufe 1:&r Pedestal-Stabilisator, Kupferblock, Lohenstaub, Spirit Attuned Gem (Eziveus). &6Stufe 2:&r Stufe 1, Silberblock, Ghast-Träne, 2 Gems (Strigeor).",
@@ -138,7 +138,7 @@ quests = [
           deps=["storage"], icon="occultism:storage_stabilizer_tier2", optional=True),
 
     # ---- Afrit-Essenz ------------------------------------------------------------------
-    quest("possessed_bee", 0, 3.2, "&5Ruf eine Possessed Bee",
+    quest("possessed_bee", 2.4, 6.2, "&5Ruf eine Possessed Bee",
           subtitle="Der einzige Weg zu Cursed Honey.",
           description=[
               "&5Pentakel:&r Ihagan's Enthrallment.",
@@ -151,7 +151,7 @@ quests = [
           rewards=[reward_item("minecraft:honey_bottle", 4)],
           deps=["afrit_book"], icon="occultism:cursed_honey"),
 
-    quest("orange_chalk", 2.4, 3.2, "&6Misch orange Kreide",
+    quest("orange_chalk", 4.8, 6.2, "&6Misch orange Kreide",
           subtitle="Ein süßer Köder für Afrit.",
           description=[
               "&6Impure White Chalk&r, &6Cursed Honey&r, &6Leuchtbeeren&r und &6Lohenstaub&r formlos, dann in Spiritfire.",
@@ -162,7 +162,7 @@ quests = [
           rewards=[reward_item("minecraft:glow_berries", 16)],
           deps=["possessed_bee"], icon="occultism:chalk_orange"),
 
-    quest("kandar", 4.8, 3.2, "&5Zeichne Kandar's Opened Conjure",
+    quest("kandar", 7.2, 6.2, "&5Zeichne Kandar's Opened Conjure",
           subtitle="Ein absichtlich offenes Pentakel.",
           description=[
               "&5Kandar's Opened Conjure&r, 17x17: &e40 orange&r, &e36 limettengrüne&r, &e16 Fundament&r (Weiß, Hellgrau, Grau, Schwarz) und &e8 dunkle&r Zeichen (Grau oder Schwarz), &e8 Skelettschädel&r, &e8 Kerzen&r.",
@@ -174,7 +174,7 @@ quests = [
           rewards=[reward_item("occultism:large_candle", 8), reward_xp(5)],
           deps=["orange_chalk"], icon="minecraft:skeleton_skull"),
 
-    quest("unbound_afrit", 7.2, 3.2, "&c&lBesieg einen Unbound Afrit",
+    quest("unbound_afrit", 9.6, 6.2, "&c&lBesieg einen Unbound Afrit",
           subtitle="Ruf ihn, schlag ihn, nimm seine Essenz.",
           description=[
               "&5Pentakel:&r Kandar's Opened Conjure.",
@@ -189,7 +189,7 @@ quests = [
           rewards=[reward_item("minecraft:magma_cream", 4), reward_table("s3_uncommon")],
           deps=["kandar", "iesnium"], icon="occultism:afrit_essence", size=1.75, shape="diamond"),
 
-    quest("essence_line", 7.2, 5, "&cLiefer Afrit-Essenz an den Obelisken",
+    quest("essence_line", 9.6, 7.8, "&cLiefer Afrit-Essenz an den Obelisken",
           subtitle="Hundertfünfzig Essenzen für den Server.",
           description=[
               "Bring &e16 Afrit-Essenzen&r zusammen. Pro Ruf: eine Kuh, ein Iesniumbarren, Netherrack, Feuerzeug, Schwarzpulver.",
@@ -203,7 +203,7 @@ quests = [
           rewards=[reward_item("occultism:iesnium_ingot", 8), reward_table("s3_uncommon")],
           deps=["unbound_afrit"], icon="occultism:afrit_essence"),
 
-    quest("odus", 4.8, 5, "&5Zeichne Odus' Open Convocation",
+    quest("odus", 4.8, 7.8, "&5Zeichne Odus' Open Convocation",
           subtitle="Afrit-Besessenheit ohne rote Kreide.",
           description=[
               "&5Odus' Open Convocation&r, 17x17: &e24 gelbe&r, &e12 limettengrüne&r, &e8 orange&r, &e8 dunkle&r und &e4 weiße&r Zeichen, &e8 Schädel&r, &e8 Kerzen&r, &e4 Spirit Attuned Crystals&r.",
@@ -217,7 +217,7 @@ quests = [
           deps=["kandar"], icon="occultism:demonic_meat"),
 
     # ---- Gebundene Afrit -------------------------------------------------------------------
-    quest("red_chalk", 9.6, 3.2, "&cMisch rote Kreide",
+    quest("red_chalk", 14.4, 6.2, "&cMisch rote Kreide",
           subtitle="Kreide aus der Essenz der Afrit selbst.",
           description=[
               "&6Impure White Chalk&r, eine &cAfrit-Essenz&r, eine &6Fackellilie&r und &6Redstone&r formlos, dann in Spiritfire.",
@@ -230,7 +230,7 @@ quests = [
           rewards=[reward_item("minecraft:redstone", 16), reward_xp(5)],
           deps=["unbound_afrit"], icon="occultism:chalk_red"),
 
-    quest("abras", 12, 3.2, "&5Ruf einen Afrit Crusher",
+    quest("abras", 16.8, 6.2, "&5Ruf einen Afrit Crusher",
           subtitle="Abras' Conjure: ein Erz, vier Staub.",
           description=[
               "&5Pentakel:&r Abras' Conjure, 17x17: Kandar's Kreis plus &e16 rote&r Zeichen und &e4 Spirit Attuned Crystals&r.",
@@ -243,7 +243,7 @@ quests = [
           rewards=[reward_item("minecraft:raw_iron", 32), reward_table("s3_uncommon"), reward_xp(10)],
           deps=["red_chalk"], icon="occultism:book_of_binding_afrit"),
 
-    quest("afrit_smelter", 14.4, 3.2, "&5Ruf einen Afrit Smelter",
+    quest("afrit_smelter", 19.2, 6.2, "&5Ruf einen Afrit Smelter",
           subtitle="Schmelzen in einem Zehntel der Zeit.",
           description=[
               "&5Pentakel:&r Abras' Conjure.",
@@ -256,7 +256,7 @@ quests = [
           rewards=[reward_item("minecraft:magma_block", 8), reward_xp(5)],
           deps=["abras"], icon="minecraft:magma_block"),
 
-    quest("afrit_weather", 14.4, 4.8, "&5Ruf Regen oder Gewitter",
+    quest("afrit_weather", 21.6, 6.2, "&5Ruf Regen oder Gewitter",
           subtitle="Afrit machen Wetter.",
           description=[
               "&5Pentakel:&r Abras' Conjure, beide mit dem Afrit-Buch und einer &6Kuh&r als Opfer, 90 Sekunden.",
@@ -269,7 +269,7 @@ quests = [
           rewards=[reward_item("minecraft:lightning_rod", 2)],
           deps=["abras"], icon="minecraft:lightning_rod", optional=True),
 
-    quest("posuc", 12, 5, "&5Zeichne Posuc's Convocation",
+    quest("posuc", 21.6, 7.8, "&5Zeichne Posuc's Convocation",
           subtitle="Afrit in Wächtern, Hoglins und Wardens.",
           description=[
               "&5Posuc's Convocation&r: Odus' Kreis plus &e8 rote&r Zeichen. Alles mit dem Afrit-Buch.",
@@ -282,7 +282,7 @@ quests = [
           rewards=[reward_item("minecraft:sculk", 12), reward_xp(5)],
           deps=["abras"], icon="minecraft:echo_shard", optional=True),
 
-    quest("sevira", 12, 1.6, "&5Zeichne Sevira's Permanent Confinement",
+    quest("sevira", 14.4, 7.8, "&5Zeichne Sevira's Permanent Confinement",
           subtitle="Das Pentakel für Afrit-Gegenstände.",
           description=[
               "&5Sevira's Permanent Confinement&r, 17x17: &e60 violette&r, &e20 limettengrüne&r, &e16 orange&r, &e12 rote&r, &e8 Fundament-&r und &e8 dunkle Zeichen, &e8 Crystals&r, &e8 Schädel&r, &e8 Kerzen&r.",
@@ -294,7 +294,7 @@ quests = [
           rewards=[reward_item("occultism:spirit_attuned_crystal", 2), reward_xp(5)],
           deps=["red_chalk"], icon="occultism:chalk_red"),
 
-    quest("afrit_miner", 14.4, 0, "&6Binde einen Afrit Miner",
+    quest("afrit_miner", 16.8, 7.8, "&6Binde einen Afrit Miner",
           subtitle="Tiefer graben, mit weniger Verschleiß.",
           description=[
               "&5Pentakel:&r Sevira's Permanent Confinement.",
@@ -307,7 +307,7 @@ quests = [
           rewards=[reward_item("minecraft:crying_obsidian", 4), reward_xp(10)],
           deps=["mineshaft", "sevira"], icon="occultism:miner_afrit_deeps"),
 
-    quest("satchel", 16.8, 1.6, "&6Binde die Artisanal Ritual Satchel",
+    quest("satchel", 19.2, 7.8, "&6Binde die Artisanal Ritual Satchel",
           subtitle="Ein ganzes Pentakel mit einem Klick.",
           description=[
               "&5Pentakel:&r Sevira's Permanent Confinement.",
@@ -321,7 +321,7 @@ quests = [
           deps=["sevira"], icon="occultism:ritual_satchel_t2", optional=True),
 
     # ---- Wilde Geister ----------------------------------------------------------------
-    quest("osorin", 4.8, 6.8, "&5Zeichne Osorin's Unbound Calling",
+    quest("osorin", 4.8, 12.2, "&5Zeichne Osorin's Unbound Calling",
           subtitle="Kein Schutz, nur Ruf.",
           description=[
               "&5Osorin's Unbound Calling&r, 13x13: &e16 rosa&r, &e16 hellblaue&r und &e16 grüne&r Zeichen, keine Kerzen, keine Schädel.",
@@ -335,7 +335,7 @@ quests = [
           rewards=[reward_item("minecraft:blue_ice", 8), reward_xp(5)],
           deps=["odus"], icon="minecraft:blue_ice", optional=True),
 
-    quest("reinforced_deepslate", 7.2, 6.8, "&8Mach Verstärkten Tiefenschiefer",
+    quest("reinforced_deepslate", 7.2, 12.2, "&8Mach Verstärkten Tiefenschiefer",
           subtitle="Zwei Wege zum Rahmen der Otherside.",
           description=[
               "&eRezept auf Kronwerke:&r &e4 Tiefenschiefer&r, &e4 Stahlbarren&r und ein &6Echosplitter&r ergeben &e2&r Verstärkten Tiefenschiefer.",
@@ -348,7 +348,7 @@ quests = [
           deps=["osorin"], icon="minecraft:reinforced_deepslate"),
 
     # ---- Marid ---------------------------------------------------------------------------
-    quest("black_chalk", 9.6, 6.8, "&8Misch schwarze Kreide",
+    quest("black_chalk", 12, 12.2, "&8Misch schwarze Kreide",
           subtitle="Das härteste Fundament.",
           description=[
               "&5Sevira's Permanent Confinement&r: &6Netheritstaub&r, &6Witherskelettschädel&r, &6Schwarzsteinstaub&r, &6Wither-Rose&r ergeben &e3 Witherite Dust&r (Afrit-Buch).",
@@ -360,7 +360,7 @@ quests = [
           rewards=[reward_item("minecraft:wither_rose", 2), reward_xp(5)],
           deps=["red_chalk"], icon="occultism:chalk_black"),
 
-    quest("unbound_marid", 12, 6.8, "&9&lBesieg einen Unbound Marid",
+    quest("unbound_marid", 14.4, 12.2, "&9&lBesieg einen Unbound Marid",
           subtitle="Der stärkste Geist, den du rufen kannst.",
           description=[
               "&5Pentakel:&r Tibira's Attraction: Abras' Kreis plus &e8 schwarze&r Zeichen und &e4 Witherskelettschädel&r.",
@@ -373,7 +373,7 @@ quests = [
           rewards=[reward_item("minecraft:prismarine_crystals", 16), reward_table("s3_uncommon")],
           deps=["black_chalk"], icon="occultism:marid_essence"),
 
-    quest("marid_crusher", 14.4, 6.8, "&9Ruf einen Marid Crusher",
+    quest("marid_crusher", 16.8, 12.2, "&9Ruf einen Marid Crusher",
           subtitle="Fatma's Incentivized Attraction: ein Erz, sechs Staub.",
           description=[
               "&9Blue Chalk:&r unreine Kreide, Marid-Essenz, Lapisstaub, Röhrenkoralle. &5Fatma's Incentivized Attraction&r, 21x21: &e60 blaue&r, 40 orange, 36 Limette, 16 rot, 16 Fundament, 8 schwarz, 8 Crystals, 8 Schädel, 4 Witherschädel, 8 Kerzen.",
@@ -385,7 +385,7 @@ quests = [
           rewards=[reward_item("minecraft:raw_gold", 32), reward_xp(10)],
           deps=["unbound_marid"], icon="occultism:chalk_blue"),
 
-    quest("master", 17, 6.8, "&9&lWerd Meister der Anderswelt",
+    quest("master", 19.2, 12.2, "&9&lWerd Meister der Anderswelt",
           subtitle="Afrit arbeiten für dich, Marid hören auf deinen Namen.",
           description=[
               "Halte &e8 Afrit-Essenzen&r und eine &9Blue Chalk&r bereit. Damit bist du durch alles, was Stufe 3 bei Occultism bietet.",
@@ -399,15 +399,160 @@ quests = [
           tasks=[task_item("occultism:chalk_blue", 1), task_item("occultism:afrit_essence", 8)],
           rewards=[reward_table("s3_rare"), reward_xp(15)],
           deps=["marid_crusher", "afrit_smelter"], icon="occultism:chalk_blue", size=2.5, shape="gear"),
+
+    # ---- Neue Quests -------------------------------------------------------------------
+    quest("storage_remote", 4.8, 3.2, "&6Binde einen Storage Accessor",
+          subtitle="Dein Lager in der Hosentasche.",
+          description=[
+              "&eRezept:&r &6Otherworldly Tablet&r in die Mitte, &bSpirit Attuned Gem&r oben, &6Silberbarren&r unten, &e6 Iesnium-Nuggets&r an die Seiten. Das ist der &6Inert Storage Accessor&r.",
+              "",
+              "&5Pentakel:&r Strigeor's Higher Binding.",
+              "&6Schalen:&r der Inert Storage Accessor, &e2 Enderperlen&r, ein &6Netherquarz&r.",
+              "&cOpfer:&r keins. Start mit dem Djinni-Buch, 150 Sekunden.",
+              "",
+              "Schleichend auf den Storage Actuator klicken verbindet ihn. Danach öffnest du dein Lager von überall, auch aus einer anderen Dimension.",
+          ],
+          tasks=[task_item("occultism:storage_remote", 1)],
+          rewards=[reward_item("minecraft:ender_pearl", 4), reward_xp(10)],
+          deps=["storage"], icon="occultism:storage_remote", optional=True),
+
+    quest("stable_wormhole", 7.2, 3.2, "&6Bau ein Stable Wormhole",
+          subtitle="Ein zweiter Zugang zum Lager.",
+          description=[
+              "&eRezept:&r &e8 Otherstone&r im Kreis ergeben den &6Otherstone Frame&r.",
+              "",
+              "&5Pentakel:&r Eziveus' Spectral Compulsion.",
+              "&6Schalen:&r der Rahmen, eine &6Enderperle&r, &e2 Netherquarz&r, &e2 Goldbarren&r.",
+              "&cOpfer:&r keins. Start mit dem Foliot-Buch, 60 Sekunden.",
+              "",
+              "Schleichend auf den Storage Actuator klicken verbindet das Wurmloch, dann stellst du es irgendwo in der Basis auf. Es öffnet dasselbe Lager wie der Actuator. Mit Otherrock statt Otherstone bekommst du die dunkle Variante.",
+          ],
+          tasks=[task_item("occultism:stable_wormhole", 1)],
+          rewards=[reward_item("minecraft:quartz", 16), reward_xp(5)],
+          deps=["storage"], icon="occultism:stable_wormhole", optional=True),
+
+    quest("machine_operator", 9.6, 3.2, "&dRuf einen Djinni Machine Operator",
+          subtitle="Das Lager bedient deine Maschinen.",
+          description=[
+              "&5Pentakel:&r Ophyx' Calling.",
+              "&6Schalen:&r ein &6Kohleblock&r, ein &6Goldbarren&r, ein &6Eisenbarren&r, ein &6Ofen&r.",
+              "&cOpfer:&r keins. Start mit dem Djinni-Buch, 120 Sekunden. Mit ihm erscheint sein Book of Calling.",
+              "",
+              "Mit dem Buch verbindest du den Storage Actuator, die Maschine und auf Wunsch eine eigene Entnahmestelle. Im Actuator gibst du dann an, was verarbeitet werden soll: Der Djinni bringt die Zutaten zur Maschine und das Ergebnis zurück ins Lager.",
+              "",
+              "Er kann auch eine Truhe regelmäßig ins Lager leeren.",
+          ],
+          tasks=[task_item("occultism:book_of_calling_djinni_manage_machine", 1)],
+          rewards=[reward_item("minecraft:coal_block", 4), reward_xp(5)],
+          deps=["storage"], icon="occultism:book_of_calling_djinni_manage_machine", optional=True),
+
+    quest("entity_wormhole", 9.6, 1.6, "&6Bau ein Entity Wormhole",
+          subtitle="Ein kleines Portal für schnelle Wege.",
+          description=[
+              "&5Pentakel:&r Strigeor's Higher Binding.",
+              "&6Schalen:&r ein &6Otherstone Frame&r, eine &6Enderperle&r, ein &6Weinender Obsidian&r, ein &6Iesniumbarren&r.",
+              "&cOpfer:&r keins. Start mit dem Djinni-Buch, 150 Sekunden.",
+              "",
+              "Leg mit Rechtsklick einen &6Kompass&r hinein, schleichend Rechtsklick nimmt ihn wieder heraus. Ein normaler Kompass führt zum Weltspawn, ein Kompass an einem &6Leitstein&r auf den Leitstein. Den Leitstein darfst du danach sogar abbauen.",
+              "",
+              "Ein Bergungskompass bringt dich zum Ort deines letzten Todes. Ein Kompass mit dem Namen &eHOME&r bringt dich zu deinem Spawnpunkt.",
+          ],
+          tasks=[task_item("occultism:entity_wormhole", 1)],
+          rewards=[reward_item("minecraft:lodestone", 1), reward_xp(10)],
+          deps=["iesnium"], icon="occultism:entity_wormhole", optional=True),
+
+    quest("iesnium_bowl", 14.4, 9.4, "&6Binde die Iesnium Ritual Bowl",
+          subtitle="Jedes Ritual in einem Viertel der Zeit.",
+          description=[
+              "&5Pentakel:&r Sevira's Permanent Confinement.",
+              "&6Schalen:&r deine &6Golden Ritual Bowl&r, &6Research Fragment Dust&r, ein &bSpirit Attuned Crystal&r, ein &6Iesniumblock&r, eine &cAfrit-Essenz&r.",
+              "&cOpfer:&r keins. Start mit dem Afrit-Buch, 300 Sekunden.",
+              "",
+              "Stell sie statt der goldenen Schale in die Mitte. Sie arbeitet wie die goldene, nur läuft jedes Ritual &d4-mal&r so schnell. Der Unbound Afrit für die Essenz kommt dann nach unter 40 Sekunden statt nach zweieinhalb Minuten.",
+          ],
+          tasks=[task_item("occultism:iesnium_sacrificial_bowl", 1)],
+          rewards=[reward_item("occultism:iesnium_ingot", 4), reward_table("s3_common"), reward_xp(10)],
+          deps=["sevira"], icon="occultism:iesnium_sacrificial_bowl", size=1.5),
+
+    quest("iesnium_knife", 16.8, 9.4, "&6Binde ein Iesnium Butcher Knife",
+          subtitle="Dreifacher Schaden gegen Geister.",
+          description=[
+              "&5Pentakel:&r Sevira's Permanent Confinement.",
+              "&6Schalen:&r dein &6Butcher Knife&r, &e2 Iesniumbarren&r, eine &cAfrit-Essenz&r, &6Netheritstaub&r.",
+              "&cOpfer:&r keins. Start mit dem Afrit-Buch, 300 Sekunden.",
+              "",
+              "Das Messer macht mehr Schaden, gibt weiter Talg und lässt manche Mobs ihre Köpfe fallen. Gegen Geister trifft es &d3-mal&r so hart. Genau richtig für den Unbound Afrit, den du für den Obelisken hunderte Male besiegst.",
+          ],
+          tasks=[task_item("occultism:iesnium_butcher_knife", 1)],
+          rewards=[reward_item("occultism:tallow", 16), reward_xp(10)],
+          deps=["sevira"], icon="occultism:iesnium_butcher_knife"),
+
+    quest("battlefield", 19.2, 9.4, "&6Bau das Dimensional Battlefield",
+          subtitle="Ein Afrit kämpft für dich in einer Arena.",
+          description=[
+              "&5Pentakel:&r Sevira's Permanent Confinement.",
+              "&6Schalen:&r &e4 Otherstone&r oder Otherrock, ein &6Netheritbarren&r, ein &6Iesniumblock&r, ein &bSpirit Attuned Crystal&r, eine &cAfrit-Essenz&r.",
+              "&cOpfer:&r keins. Start mit dem Afrit-Buch, 300 Sekunden.",
+              "",
+              "Leg einen &6Soul Gem&r mit einem gefangenen Mob, eine &6Waffe&r und Geisterbrennstoff hinein: Demon's Dream Seeds, Fruit, Essenz oder Otherworld Essence. Der Afrit klont den Mob und besiegt ihn immer wieder, die Beute landet im Block.",
+              "",
+              "Plünderung bringt mehr Beute, Schärfe macht ihn schneller. Ein Redstone-Signal hält ihn an. Leer ihn per Trichter, volle Plätze werfen Beute weg.",
+          ],
+          tasks=[task_item("occultism:dimensional_battlefield", 1)],
+          rewards=[reward_item("occultism:datura", 32), reward_table("s3_uncommon"), reward_xp(10)],
+          deps=["sevira"], icon="occultism:dimensional_battlefield"),
+
+    quest("extractor", 14.4, 0, "&6Bau einen Dimensional Extractor",
+          subtitle="Funde direkt in die Truhe.",
+          description=[
+              "&5Pentakel:&r Strigeor's Higher Binding.",
+              "&6Schalen:&r ein &6Otherstone Pedestal&r, ein &6Trichter&r, ein &6Iesniumblock&r, ein &bSpirit Attuned Crystal&r, &e2 Goldbarren&r.",
+              "&cOpfer:&r keins. Start mit dem Djinni-Buch, 150 Sekunden.",
+              "",
+              "Stell Mineshaft, Battlefield oder einen arbeitenden Geist auf den Extractor und ein Lager darunter. Der Djinni holt die Ergebnisse schnell ab und legt sie unten hinein.",
+              "",
+              "&cAchtung:&r Ist das Lager voll, wirft er den Rest weg.",
+          ],
+          tasks=[task_item("occultism:dimensional_extractor", 1)],
+          rewards=[reward_item("minecraft:hopper", 2), reward_xp(5)],
+          deps=["mineshaft"], icon="occultism:dimensional_extractor", optional=True),
+
+    quest("wild_hunt", 4.8, 13.8, "&5Ruf die Wilde Jagd",
+          subtitle="Witherskelettschädel ohne Netherfestung.",
+          description=[
+              "&5Pentakel:&r Osorin's Unbound Calling.",
+              "&6Schalen:&r ein &6Kupfer-&r, &6Silber-&r und &6Goldblock&r, ein &6Diamant&r, &6Netherrack&r, &6Seelensand&r.",
+              "&cStart:&r ein &6Skelettschädel&r. &cOpfer:&r ein &6Dorfbewohner&r, 90 Sekunden.",
+              "",
+              "Es kommen Witherskelette mit ihren Skelett-Dienern. Die großen Geister sind fast unverwundbar, bis ihre Diener besiegt sind, also räum zuerst die kleinen ab.",
+              "",
+              "Die Wilde Jagd lässt mit hoher Chance &6Witherskelettschädel&r fallen. Die brauchst du für Witherite Dust und Tibira's Attraction.",
+          ],
+          tasks=[task_item("minecraft:wither_skeleton_skull", 3)],
+          rewards=[reward_item("minecraft:bone_block", 8), reward_table("s3_common"), reward_xp(10)],
+          deps=["osorin"], icon="minecraft:wither_skeleton_skull"),
+
+    quest("budding_amethyst", 7.2, 13.8, "&5Lass einen Amethystknospenblock schmieden",
+          subtitle="Der Block, den keine Spitzhacke holt.",
+          description=[
+              "&5Pentakel:&r Osorin's Unbound Calling.",
+              "&6Schalen:&r &e6 Amethyststaub&r (vom Crusher).",
+              "&cStart:&r ein &6Amethystblock&r. &cOpfer:&r ein &6Schwein&r, 180 Sekunden.",
+              "",
+              "Wilde Geister schmieden dir einen &6Amethystknospenblock&r. Den kannst du sonst nicht abbauen, nicht einmal mit Behutsamkeit. Stell ihn in die Basis, und Amethyst wächst vor deiner Tür.",
+          ],
+          tasks=[task_item("minecraft:budding_amethyst", 1)],
+          rewards=[reward_item("minecraft:amethyst_block", 4), reward_xp(5)],
+          deps=["osorin"], icon="minecraft:budding_amethyst", optional=True),
 ]
 
 images = [
     banner("occultism_afrit/title", "Occultism: Afrit und Marid", 7.8, -4.8, height=1.8, kind="title", colour="fire"),
-    banner("occultism_afrit/iesnium", "Iesnium und Bergbau", 9.6, -3.3, height=0.8, colour="magic"),
-    banner("occultism_afrit/essenz", "Afrit-Essenz", 3.6, 1.6, height=0.8, colour="fire"),
-    banner("occultism_afrit/gebunden", "Gebundene Afrit", 16.8, -1.0, height=0.8, colour="fire"),
-    banner("occultism_afrit/wild", "Wilde Geister", 2.0, 8.4, height=0.8, colour="nature"),
-    banner("occultism_afrit/marid", "Marid", 12, 8.4, height=0.8, colour="water"),
+    banner("occultism_afrit/iesnium", "Iesnium und Bergbau", 7.2, -1.4, height=0.8, colour="magic"),
+    banner("occultism_afrit/essenz", "Afrit-Essenz", 4.8, 4.8, height=0.8, colour="fire"),
+    banner("occultism_afrit/gebunden", "Gebundene Afrit", 16.8, 4.8, height=0.8, colour="fire"),
+    banner("occultism_afrit/wild", "Wilde Geister", 4.8, 10.8, height=0.8, colour="nature"),
+    banner("occultism_afrit/marid", "Marid", 14.4, 10.8, height=0.8, colour="water"),
 ]
 
 chapter(C, "Occultism: Afrit und Marid", "occultism:afrit_essence", "magic", quests, shape="circle", order=26,

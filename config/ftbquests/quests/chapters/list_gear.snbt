@@ -13,7 +13,7 @@
 		{
 			id: "5C8083CB09513A92"
 			x: 0.5d
-			y: 4.075d
+			y: 5.475d
 			icon: {
 				id: "minecraft:iron_pickaxe"
 				count: 1
@@ -52,7 +52,7 @@
 		{
 			id: "1E4B963527511B01"
 			x: 2.5d
-			y: 2.725d
+			y: 4.125d
 			icon: {
 				id: "minecraft:diamond_pickaxe"
 				count: 1
@@ -92,7 +92,7 @@
 		{
 			id: "16901522C6F1E271"
 			x: 2.5d
-			y: 4.075d
+			y: 5.475d
 			icon: {
 				id: "silentgear:pickaxe"
 				count: 1
@@ -123,7 +123,7 @@
 		{
 			id: "237F7C564CD01B52"
 			x: 2.5d
-			y: 5.425000000000001d
+			y: 6.825d
 			icon: {
 				id: "silentgear:hammer"
 				count: 1
@@ -154,7 +154,7 @@
 		{
 			id: "5101B4DD22875170"
 			x: 3.8499999999999996d
-			y: 2.725d
+			y: 4.125d
 			icon: {
 				id: "mysticalagriculture:inferium_pickaxe"
 				count: 1
@@ -185,7 +185,7 @@
 		{
 			id: "3540D1BBDE1B2C4D"
 			x: 3.8499999999999996d
-			y: 4.075d
+			y: 5.475d
 			icon: {
 				id: "ars_nouveau:enchanters_sword"
 				count: 1
@@ -216,7 +216,7 @@
 		{
 			id: "6E3194D31188967A"
 			x: 3.8499999999999996d
-			y: 5.425000000000001d
+			y: 6.825d
 			icon: {
 				id: "irons_spellbooks:wizard_hat"
 				count: 1
@@ -247,7 +247,7 @@
 		{
 			id: "644F132204954F2F"
 			x: 5.2d
-			y: 2.725d
+			y: 4.125d
 			icon: {
 				id: "apotheosis:gem"
 				count: 1
@@ -273,7 +273,7 @@
 		{
 			id: "3C8A87DA3B9919C6"
 			x: 5.2d
-			y: 4.075d
+			y: 5.475d
 			icon: {
 				id: "cataclysm:ancient_spear"
 				count: 1
@@ -299,7 +299,7 @@
 		{
 			id: "6A2BE40D95C51185"
 			x: 5.2d
-			y: 5.425000000000001d
+			y: 6.825d
 			icon: {
 				id: "sophisticatedbackpacks:backpack"
 				count: 1
@@ -330,7 +330,7 @@
 		{
 			id: "3E4E61C75AEC6B2D"
 			x: 6.550000000000001d
-			y: 2.725d
+			y: 4.125d
 			icon: {
 				id: "minecraft:iron_pickaxe"
 				count: 1
@@ -356,7 +356,7 @@
 		{
 			id: "1C5DFC4BF6B519DC"
 			x: 6.550000000000001d
-			y: 4.075d
+			y: 5.475d
 			icon: {
 				id: "kronwerke:grubenrahmen"
 				count: 1
@@ -385,8 +385,163 @@
 			]
 		}
 		{
+			id: "6DAEB35DF5496BD6"
+			x: 6.550000000000001d
+			y: 6.825d
+			icon: {
+				id: "irons_spellbooks:mana_ring"
+				count: 1
+			}
+			hide_dependency_lines: true
+			dependencies: [
+				"5C8083CB09513A92"
+			]
+			tasks: [
+				{
+					id: "6E3994430AC1AED6"
+					type: "item"
+					item: {
+						id: "irons_spellbooks:mana_ring"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "649EE3B74BD7C214"
+					type: "xp_levels"
+					xp_levels: 2
+				}
+			]
+		}
+		{
+			id: "2EF9FAEA2AC47548"
+			x: 7.9d
+			y: 4.125d
+			icon: {
+				id: "irons_spellbooks:ice_staff"
+				count: 1
+			}
+			hide_dependency_lines: true
+			dependencies: [
+				"5C8083CB09513A92"
+			]
+			tasks: [
+				{
+					id: "746258AD0C18912D"
+					type: "item"
+					item: {
+						id: "irons_spellbooks:ice_staff"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "180B5B853001367E"
+					type: "xp_levels"
+					xp_levels: 2
+				}
+			]
+		}
+		{
+			id: "2DC0338A43BDADBC"
+			x: 7.9d
+			y: 5.475d
+			icon: {
+				id: "silentgear:katana"
+				count: 1
+			}
+			hide_dependency_lines: true
+			dependencies: [
+				"5C8083CB09513A92"
+			]
+			tasks: [
+				{
+					id: "20652CDBD6C51747"
+					type: "item"
+					item: {
+						id: "silentgear:katana"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "37675ED19B82BB80"
+					type: "xp_levels"
+					xp_levels: 2
+				}
+			]
+		}
+		{
+			id: "1BD3D6869EA17129"
+			x: 7.9d
+			y: 6.825d
+			icon: {
+				id: "apotheosis:iron_upgrade_smithing_template"
+				count: 1
+			}
+			hide_dependency_lines: true
+			dependencies: [
+				"5C8083CB09513A92"
+			]
+			tasks: [
+				{
+					id: "247267CCF14EBBF3"
+					type: "item"
+					item: {
+						id: "apotheosis:iron_upgrade_smithing_template"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "1577825B9AD0E016"
+					type: "xp_levels"
+					xp_levels: 2
+				}
+			]
+		}
+		{
+			id: "17B161F925A01E59"
+			x: 9.25d
+			y: 4.125d
+			icon: {
+				id: "silentgear:shield"
+				count: 1
+			}
+			hide_dependency_lines: true
+			dependencies: [
+				"5C8083CB09513A92"
+			]
+			tasks: [
+				{
+					id: "1F8A4A710B8896E4"
+					type: "item"
+					item: {
+						id: "silentgear:shield"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "18D8554012A1198B"
+					type: "xp_levels"
+					xp_levels: 2
+				}
+			]
+		}
+		{
 			id: "6152796C85ECCA39"
-			x: 9.925d
+			x: 12.625d
 			y: 5.475d
 			icon: {
 				id: "minecraft:gold_ingot"
@@ -415,7 +570,7 @@
 		}
 		{
 			id: "51141FEBADB3F7D1"
-			x: 11.925d
+			x: 14.625d
 			y: 4.125d
 			icon: {
 				id: "minecraft:diamond_sword"
@@ -441,7 +596,7 @@
 		}
 		{
 			id: "1F695A1D2AE81876"
-			x: 11.925d
+			x: 14.625d
 			y: 5.475d
 			icon: {
 				id: "silentgear:pickaxe_head"
@@ -467,7 +622,7 @@
 		}
 		{
 			id: "56E10362DBD2A68B"
-			x: 11.925d
+			x: 14.625d
 			y: 6.825d
 			icon: {
 				id: "silentgear:hammer_head"
@@ -493,7 +648,7 @@
 		}
 		{
 			id: "2791066338D23456"
-			x: 13.275d
+			x: 15.975d
 			y: 4.125d
 			icon: {
 				id: "minecraft:iron_axe"
@@ -519,7 +674,7 @@
 		}
 		{
 			id: "6CC239453158173D"
-			x: 13.275d
+			x: 15.975d
 			y: 5.475d
 			icon: {
 				id: "minecraft:feather"
@@ -545,7 +700,7 @@
 		}
 		{
 			id: "19B62475343876E0"
-			x: 13.275d
+			x: 15.975d
 			y: 6.825d
 			icon: {
 				id: "minecraft:iron_ingot"
@@ -571,7 +726,7 @@
 		}
 		{
 			id: "52B40541879BF099"
-			x: 14.625d
+			x: 17.325d
 			y: 4.125d
 			icon: {
 				id: "minecraft:gold_nugget"
@@ -597,7 +752,7 @@
 		}
 		{
 			id: "48D05FC96BE8C371"
-			x: 14.625d
+			x: 17.325d
 			y: 5.475d
 			icon: {
 				id: "botania:mana_diamond"
@@ -623,7 +778,7 @@
 		}
 		{
 			id: "300502E45293D10D"
-			x: 14.625d
+			x: 17.325d
 			y: 6.825d
 			icon: {
 				id: "botania:livingwood_bow"
@@ -649,7 +804,7 @@
 		}
 		{
 			id: "27A61206FA93B3A0"
-			x: 15.975000000000001d
+			x: 18.675d
 			y: 4.125d
 			icon: {
 				id: "mysticalagriculture:inferium_essence"
@@ -675,7 +830,7 @@
 		}
 		{
 			id: "7ADC78E21BD37CA2"
-			x: 15.975000000000001d
+			x: 18.675d
 			y: 5.475d
 			icon: {
 				id: "minecraft:leather"
@@ -701,10 +856,10 @@
 		}
 		{
 			id: "754E7FB09FAA4529"
-			x: 15.975000000000001d
+			x: 18.675d
 			y: 6.825d
 			icon: {
-				id: "minecraft:amethyst_shard"
+				id: "ars_nouveau:source_gem_block"
 				count: 1
 			}
 			hide_dependency_lines: true
@@ -727,7 +882,7 @@
 		}
 		{
 			id: "43A52E158139267F"
-			x: 17.325000000000003d
+			x: 20.025d
 			y: 4.125d
 			icon: {
 				id: "minecraft:shield"
@@ -753,7 +908,7 @@
 		}
 		{
 			id: "7D06DF94043D09D2"
-			x: 17.325000000000003d
+			x: 20.025d
 			y: 5.475d
 			icon: {
 				id: "sophisticatedbackpacks:backpack"
@@ -772,6 +927,58 @@
 			rewards: [
 				{
 					id: "42EF8DADC6DD1609"
+					type: "xp_levels"
+					xp_levels: 2
+				}
+			]
+		}
+		{
+			id: "18159E5664289ADE"
+			x: 20.025d
+			y: 6.825d
+			icon: {
+				id: "minecraft:feather"
+				count: 1
+			}
+			hide_dependency_lines: true
+			dependencies: [
+				"6152796C85ECCA39"
+			]
+			tasks: [
+				{
+					id: "2578930943D29FAF"
+					type: "checkmark"
+				}
+			]
+			rewards: [
+				{
+					id: "190FB0310E6EDD0F"
+					type: "xp_levels"
+					xp_levels: 2
+				}
+			]
+		}
+		{
+			id: "7DAF9CEEA0CE6DF8"
+			x: 21.375d
+			y: 4.125d
+			icon: {
+				id: "minecraft:diamond_helmet"
+				count: 1
+			}
+			hide_dependency_lines: true
+			dependencies: [
+				"6152796C85ECCA39"
+			]
+			tasks: [
+				{
+					id: "16A5FF1C7E62D881"
+					type: "checkmark"
+				}
+			]
+			rewards: [
+				{
+					id: "2B7BE7CEC88FAC57"
 					type: "xp_levels"
 					xp_levels: 2
 				}
@@ -1564,6 +1771,32 @@
 			]
 		}
 		{
+			id: "377B2C0BF51B169B"
+			x: 18.55d
+			y: 13.125d
+			icon: {
+				id: "minecraft:golden_sword"
+				count: 1
+			}
+			hide_dependency_lines: true
+			dependencies: [
+				"605F56D49F6FF418"
+			]
+			tasks: [
+				{
+					id: "2F7D5C118329EB2C"
+					type: "checkmark"
+				}
+			]
+			rewards: [
+				{
+					id: "49B4C527F9931237"
+					type: "xp_levels"
+					xp_levels: 2
+				}
+			]
+		}
+		{
 			id: "563F9F92764D14F3"
 			x: 0.375d
 			y: 18.224999999999998d
@@ -1714,8 +1947,18 @@
 		}
 		{
 			id: "4F7D6822B56D348F"
+			image: "kronwerke:textures/quests/list_gear/s1.png"
+			x: 2.545d
+			y: 2.6750000000000003d
+			width: 6.09d
+			height: 0.9d
+			rotation: 0.0d
+			order: 1
+		}
+		{
+			id: "29593F2EA30F8C5D"
 			image: "kronwerke:textures/quests/list_gear/s2.png"
-			x: 12.695d
+			x: 15.395d
 			y: 2.6750000000000003d
 			width: 7.29d
 			height: 0.9d
@@ -1723,7 +1966,7 @@
 			order: 1
 		}
 		{
-			id: "29593F2EA30F8C5D"
+			id: "59E8B8259473CB02"
 			image: "kronwerke:textures/quests/list_gear/s3.png"
 			x: 2.675d
 			y: 8.975d
@@ -1733,7 +1976,7 @@
 			order: 1
 		}
 		{
-			id: "59E8B8259473CB02"
+			id: "2C88F2B2D42C9F9B"
 			image: "kronwerke:textures/quests/list_gear/s4.png"
 			x: 13.515d
 			y: 8.975d
@@ -1743,7 +1986,7 @@
 			order: 1
 		}
 		{
-			id: "2C88F2B2D42C9F9B"
+			id: "58BB76F67C9660A4"
 			image: "kronwerke:textures/quests/list_gear/s5.png"
 			x: 2.78d
 			y: 15.274999999999997d

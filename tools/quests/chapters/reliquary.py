@@ -87,7 +87,7 @@ quests = [
     quest("witherless_rose", 2.4, 7.6, "&dPflück eine Witherless Rose",
           subtitle="Nie wieder Wither-Effekt.",
           description=[
-              "Vier &6Fertile Essence&r in die Ecken, vier &6Netherstern&r an die Seiten, ein &6Rosenstrauch&r in die Mitte ergeben die &6Witherless Rose&r. Fertile Essence ist Rib Bone, Catalyzing Gland, grüner Farbstoff und Slime Pearl in der Werkbank.",
+              "Vier &6Fertile Essence&r in die Ecken, vier &6Netherstern&r an die Seiten, ein &6Rosenstrauch&r in die Mitte ergeben die &6Witherless Rose&r. Fertile Essence ist Rib Bone, Catalyzing Gland, eine &6Mandrake Root&r aus Hexerei und Slime Pearl in der Werkbank.",
               "",
               "Mit der Rose im Inventar trifft dich der &5Wither&r-Effekt nicht mehr, egal ob von Witherskeletten, dem Wither selbst oder Pfeilen. Vier Nethersterne sind ein Preis, den sich eine Gruppe teilt: Wer den Wither ohnehin farmt, hat sie.",
               "",
@@ -107,7 +107,7 @@ quests = [
           ],
           tasks=[task_item("reliquary:lantern_of_paranoia", 1)],
           rewards=[reward_item("minecraft:torch", 64), reward_xp(5)],
-          deps=["slime_pearl"], icon="reliquary:lantern_of_paranoia"),
+          deps=["slime_pearl"], icon="reliquary:lantern_of_paranoia", section="werkzeug"),
 
     quest("fortune_coin", 4.8, 5, "&eBau einen Coin of Fortune",
           subtitle="Items und Erfahrung kommen von allein.",
@@ -191,6 +191,183 @@ quests = [
           tasks=[task_checkmark("Gelesen")],
           rewards=[reward_xp(5)],
           deps=["altar"], icon="reliquary:void_tear", optional=True),
+
+    # ---- Schutz: neue Quests ---------------------------------------------------------
+    quest("angelic_feather", 1.2, 6.2, "&fBau eine Angelic Feather",
+          subtitle="Fallschaden kostet nur noch Hunger.",
+          description=[
+              "Eine &6Feder&r, ein &6Nebulous Heart&r, ein &6Bat Wing&r und eine &6Fertile Essence&r formlos ergeben die &6Angelic Feather&r. Fertile Essence ist Rib Bone, Catalyzing Gland, &6Mandrake Root&r aus Hexerei und Slime Pearl.",
+              "",
+              "Im Inventar fängt sie Fallschaden ab und zieht dir dafür Hunger ab. Dazu springst du etwas höher.",
+          ],
+          tasks=[task_item("reliquary:angelic_feather", 1)],
+          rewards=[reward_item("minecraft:cooked_beef", 16), reward_xp(5)],
+          deps=["mob_charm", "bat_wing"], icon="reliquary:angelic_feather"),
+
+    quest("phoenix_down", 1.2, 8.6, "&6Mach ein Phoenix Down",
+          subtitle="Ein zweites Leben in der Tasche.",
+          description=[
+              "Zuerst die &6Angelheart Vial&r: Glasscheibe, &6Milcheimer&r, Glasscheibe oben, Glasscheibe, &6Infernal Claw&r, Glasscheibe in der Mitte, Fertile Essence, Glasscheibe, Fertile Essence unten. Sie bewahrt dich einmal vor dem Tod, heilt &e25 Prozent&r deines Lebens, entfernt schlechte Effekte und zerbricht.",
+              "",
+              "Drei Angelheart Vials und eine &6Angelic Feather&r formlos ergeben das &6Phoenix Down&r. Es holt dich mit vollem Leben zurück, gibt kurz Resistenz und Regeneration und wird danach wieder zur Angelic Feather. Solange es ganz ist, wirkt es auch wie die Feder.",
+              "",
+              "Die Infernal Claw ist Leder, Molten Core, Rib Bone und Slime Pearl.",
+          ],
+          tasks=[task_item("reliquary:phoenix_down", 1)],
+          rewards=[reward_table("s2_uncommon"), reward_xp(10)],
+          deps=["angelic_feather"], icon="reliquary:phoenix_down"),
+
+    quest("kraken_shell", 1.6, 6.8, "&3Bau eine Kraken Shell",
+          subtitle="Nie mehr ertrinken.",
+          description=[
+              "Tintenfische lassen einen &6Squid Beak&r fallen. Drei davon und eine &6Slime Pearl&r ergeben ein &6Kraken Shell Fragment&r, drei Fragmente und ein &6Nebulous Heart&r die &6Kraken Shell&r.",
+              "",
+              "Im Inventar nimmt sie dir den Schaden durch Ertrinken ab und zieht dafür Hunger. Für Tauchgänge zu Ozeanmonumenten und Unterwasserbasen.",
+          ],
+          tasks=[task_item("reliquary:kraken_shell", 1)],
+          rewards=[reward_item("minecraft:ink_sac", 8), reward_xp(5)],
+          deps=["mob_charm", "slime_pearl"], icon="reliquary:kraken_shell", optional=True),
+
+    quest("infernal_claws", 0.6, 6.8, "&cBau Infernal Claws",
+          subtitle="Feuer kostet Hunger statt Leben.",
+          description=[
+              "Eine &6Infernal Claw&r ist Leder, &6Molten Core&r, &6Rib Bone&r und &6Slime Pearl&r formlos. Drei Claws und eine Slime Pearl ergeben die &6Infernal Claws&r.",
+              "",
+              "Im Inventar fangen sie Feuerschaden ab und kosten dafür ein wenig Hunger. Brennen und Feuerblöcke werden harmlos. &cLava&r schützen sie nicht.",
+              "",
+              "&eAusblick:&r Die Claws stecken auch im &6Pyromancer's Staff&r, der Feuerbälle von Blaze und Ghast schießt.",
+          ],
+          tasks=[task_item("reliquary:infernal_claws", 1)],
+          rewards=[reward_item("minecraft:blaze_powder", 8), reward_xp(5)],
+          deps=["mob_charm", "molten_core"], icon="reliquary:infernal_claws"),
+
+    quest("twilight_cloak", 0.4, 6.2, "&8Näh einen Twilight Cloak",
+          subtitle="Im Dunkeln sieht dich niemand.",
+          description=[
+              "&6Crimson Cloth&r ist rote Wolle, schwarze Wolle und zwei &6Nebulous Hearts&r. Eisen, Cloth, Eisen oben, darunter zweimal schwarze Wolle, Cloth, schwarze Wolle ergeben den &6Twilight Cloak&r.",
+              "",
+              "Shift-Rechtsklick schaltet ihn an. Dann bist du bei Lichtstärke &e4&r oder weniger unsichtbar, und Monster können dich nicht anvisieren, auch wenn du sie schlägst.",
+              "",
+              "&eTipp:&r In unbeleuchteten Höhlen und im Deep Dark gehst du so an allem vorbei.",
+          ],
+          tasks=[task_item("reliquary:twilight_cloak", 1)],
+          rewards=[reward_item("minecraft:black_wool", 8), reward_xp(5)],
+          deps=["mob_charm", "nebulous_heart"], icon="reliquary:twilight_cloak", optional=True),
+
+    quest("interdiction_torch", 0.6, 8.0, "&eStell eine Interdiction Torch auf",
+          subtitle="Eine Fackel, die Monster wegschiebt.",
+          description=[
+              "&6Bat Wing&r, &6Lohenrute&r, &6Molten Core&r und &6Nebulous Heart&r formlos ergeben die &6Interdiction Torch&r.",
+              "",
+              "Gesetzt schiebt sie Monster im Umkreis von &e5 Blöcken&r von sich weg. Eine an der Tür, und nichts drängt mehr nach drinnen. Pfeile hält sie nicht auf.",
+          ],
+          tasks=[task_item("reliquary:interdiction_torch", 1)],
+          rewards=[reward_item("minecraft:torch", 32), reward_xp(5)],
+          deps=["mob_charm", "molten_core"], icon="reliquary:interdiction_torch"),
+
+    # ---- Werkzeug: neue Quests -------------------------------------------------------
+    quest("harvest_rod", 7.6, 6.2, "&aBau einen Harvest Rod",
+          subtitle="Knochenmehl, Saat und Hacke in einem Stab.",
+          description=[
+              "Rosenstrauch und &6Fertile Essence&r oben, &6Ranken&r, &6Void Tear&r, Rosenstrauch in der Mitte, Stock und Ranken unten ergeben den &6Harvest Rod&r.",
+              "",
+              "Er nimmt bis zu &e250 Knochenmehl&r und je 250 von jeder Saat aus deinem Inventar auf. Shift-Mausrad wechselt den Modus: Knochenmehl, Pflanzen, Hacke. Rechtsklick wirkt auf einen Block, Rechtsklick halten auf die ganze Fläche um dich. Beim Abbauen erntet er die Pflanzen im Umkreis mit.",
+              "",
+              "&eTipp:&r In einem &6Pedestal&r erntet, düngt und pflanzt er ein Feld im Umkreis von &e4 Blöcken&r von allein.",
+          ],
+          tasks=[task_item("reliquary:harvest_rod", 1)],
+          rewards=[reward_item("minecraft:bone_meal", 32), reward_xp(5)],
+          deps=["void_tear"], icon="reliquary:harvest_rod"),
+
+    quest("destruction_catalyst", 8.2, 6.8, "&cBau einen Destruction Catalyst",
+          subtitle="Erde und Stein weg, Erze bleiben.",
+          description=[
+              "Die &6Infernal Tear&r ist Void Tear, Witch Hat, Molten Core und Infernal Claw. Mit &6Feuerzeug&r, &6Molten Core&r und &6Catalyzing Gland&r formlos wird daraus der &6Destruction Catalyst&r.",
+              "",
+              "Er lädt sich mit Schwarzpulver aus dem Inventar, bis zu &e250&r, und jeder Rechtsklick kostet &e3&r. Dann sprengt er einen Würfel aus gewöhnlichen Blöcken wie Erde, Kies, Bruchstein und Stein frei, ohne Drops. Erze und alles andere bleiben stehen.",
+              "",
+              "&eTipp:&r Ideal, um Erzadern freizulegen, ohne das Inventar mit Bruchstein zu füllen.",
+          ],
+          tasks=[task_item("reliquary:destruction_catalyst", 1)],
+          rewards=[reward_item("minecraft:gunpowder", 32), reward_xp(8)],
+          deps=["void_tear"], icon="reliquary:destruction_catalyst", optional=True),
+
+    quest("mortar", 9.8, 6.2, "&dMahl eine Potion Essence",
+          subtitle="Reliquarys eigene Tränke.",
+          description=[
+              "Der &6Apothecary Mortar&r ist Catalyzing Gland, Quarzblock, Catalyzing Gland oben, Quarzblock, Catalyzing Gland, Quarzblock in der Mitte und drei Quarzblöcke unten. Darin mahlst du zwei oder drei Zutaten zu einer &6Potion Essence&r.",
+              "",
+              "Jede Zutat trägt passive Wirkungen. Haben zwei Zutaten eine Wirkung gemeinsam, steckt sie in der Essenz: &6Zucker&r (Tempo, Eile) und &6Goldklumpen&r (Stärke, Eile) ergeben Eile.",
+              "",
+              "Gebraut wird im &6Apothecary Cauldron&r (Hexerei-Mischkessel mit Reliquary-Teilen): Feuer darunter, Wasser hinein, Essenz und Netherwarze dazu, abfüllen mit &6Condensed Potion Vials&r aus Glasscheiben. Bis zu 3 Redstone verlängern, bis zu 2 Glowstone verstärken.",
+          ],
+          tasks=[task_item("reliquary:apothecary_mortar", 1)],
+          rewards=[reward_item("minecraft:quartz", 16), reward_xp(5)],
+          deps=["altar", "catalyzing_gland"], icon="reliquary:apothecary_mortar", optional=True),
+
+    quest("glowing_water", 10.4, 6.8, "&eFüll Glowing Water ab",
+          subtitle="Wurfwasser gegen Untote.",
+          description=[
+              "Eine &6Condensed Potion Vial&r (fünf Glasscheiben), ein &6Wassereimer&r, &6Leuchtsteinstaub&r, &6Schwarzpulver&r und &6Netherwarze&r formlos ergeben &6Glowing Water&r.",
+              "",
+              "Geworfen trifft es alle Untoten im Umkreis wie ein Wurftrank. Zombies, Skelette und Zombifizierte Piglins fallen schnell.",
+              "",
+              "&eAuch gut:&r Drei Brote plus Glowing Water ergeben drei &6Glowing Bread&r, das den Hunger auf einen Bissen ganz füllt. Mit Goldklumpen, TNT und Catalyzing Gland werden daraus vier &6Holy Hand Grenades&r.",
+          ],
+          tasks=[task_item("reliquary:glowing_water", 2)],
+          rewards=[reward_item("minecraft:glowstone_dust", 16), reward_xp(5)],
+          deps=["mortar"], icon="reliquary:glowing_water", optional=True),
+
+    # ---- Waffen ----------------------------------------------------------------------
+    quest("handgun", 14.0, 5.0, "&7Bau den Hunter's Handgun",
+          subtitle="Eine Pistole aus Monsterteilen.",
+          description=[
+              "Drei Teile, alle mit Eisen: &6Barrel Assembly&r (zwei Nebulous Hearts, Magmacreme), &6Hammer Assembly&r (Steinknopf, Lohenrute, Molten Core) und &6Grip Assembly&r (Magmacreme, leeres Magazin). Mit Eisen und einer &6Slime Pearl&r wird daraus der &6Hunter's Handgun&r.",
+              "",
+              "Munition: Feuerstein, zwei Goldklumpen und Schwarzpulver ergeben 8 &6Neutral Shots&r. Acht davon um ein &6Empty Magazine&r (Eisen, Glas, Stein) ergeben ein volles Magazin.",
+              "",
+              "Rechtsklick schießt, Rechtsklick halten lädt nach. Rückstoß, Nachladen und Feuerrate werden mit deinem Erfahrungslevel besser, ab Level &e20&r ist das Maximum erreicht.",
+          ],
+          tasks=[task_item("reliquary:handgun", 1), task_item("reliquary:magazines/neutral_magazine", 1)],
+          rewards=[reward_table("s2_common"), reward_item("minecraft:gunpowder", 16), reward_xp(8)],
+          deps=["molten_core", "nebulous_heart"], icon="reliquary:handgun"),
+
+    quest("seeker_magazine", 16.0, 5.0, "&9Lade Seeker Shots",
+          subtitle="Munition, die ihr Ziel selbst findet.",
+          description=[
+              "&6Lapislazuli&r, zwei Goldklumpen und Schwarzpulver ergeben 8 &6Seeker Shots&r. Sie fliegen dem nächsten Gegner hinterher, daneben schießen ist kaum möglich.",
+              "",
+              "Weitere Sorten: &6Exorcism Shots&r (8 Neutral Shots und ein Zombie Heart) machen gewaltigen Schaden an Untoten, &6Blaze Shots&r (Lohenpulver, Lohenrute, zwei Goldklumpen) setzen in Brand, helfen aber nicht gegen feuerfeste Gegner.",
+              "",
+              "&eTipp:&r Leere Hülsen bleiben nach dem Schuss übrig, sammle sie auf.",
+          ],
+          tasks=[task_item("reliquary:magazines/seeker_magazine", 1)],
+          rewards=[reward_item("minecraft:lapis_lazuli", 16), reward_xp(5)],
+          deps=["handgun"], icon="reliquary:magazines/seeker_magazine", optional=True),
+
+    quest("ice_magus_rod", 14.0, 7.0, "&bBau einen Ice Magus Rod",
+          subtitle="Schneebälle, die wirklich wehtun.",
+          description=[
+              "Den &6Frozen Core&r lässt ein &fSchneegolem&r fallen, also bau einen und erschlag ihn. Diamant und Frozen Core oben, &6Void Tear&r und Diamant in der Mitte, Eisen unten links ergeben den &6Ice Magus Rod&r.",
+              "",
+              "Shift-Rechtsklick saugt bis zu &e250 Schneebälle&r aus dem Inventar. Jeder Schuss macht &d2&r Schaden, &d+2&r gegen feuerfeste Mobs und &d+4&r gegen Blazes. Für den Nether genau richtig.",
+          ],
+          tasks=[task_item("reliquary:ice_magus_rod", 1)],
+          rewards=[reward_item("minecraft:snowball", 16), reward_xp(5)],
+          deps=["void_tear"], icon="reliquary:ice_magus_rod"),
+
+    quest("glacial_staff", 16.0, 7.0, "&bSteig auf den Glacial Staff um",
+          subtitle="Wasser und Lava gefrieren unter dir.",
+          description=[
+              "Erst die &6Shears of Winter&r: Frozen Core, Schere und zwei Diamanten formlos. Rechtsklick halten schert Schafe und reißt Laub im Umkreis ab.",
+              "",
+              "Ice Magus Rod, Void Tear, Frozen Core und Shears of Winter formlos ergeben den &6Glacial Staff&r. Er schießt stärkere Schneebälle (&d3&r Schaden, &d+3&r gegen feuerfeste Mobs, &d+6&r gegen Blazes) und macht unter dir Wasser zu Packeis und Lava zu Obsidian.",
+              "",
+              "Die Blöcke tauen wieder auf, sobald du weit genug weg bist. Über Lavaseen im Nether läufst du damit trocken.",
+          ],
+          tasks=[task_item("reliquary:glacial_staff", 1)],
+          rewards=[reward_table("s2_uncommon"), reward_xp(10)],
+          deps=["ice_magus_rod"], icon="reliquary:glacial_staff", optional=True),
 ]
 
 images = [
@@ -198,6 +375,7 @@ images = [
     banner("reliquary/tropfen", "Die Tropfen", 4.8, -3.0, height=0.9, colour="magic"),
     banner("reliquary/schutz", "Schutz", 1.0, 3.0, height=0.9, colour="nature"),
     banner("reliquary/werkzeug", "Werkzeug", 7.0, 3.0, height=0.9, colour="brass"),
+    banner("reliquary/waffen", "Waffen", 15.0, 3.0, height=0.9, colour="fire"),
 ]
 
 chapter(C, "Reliquary", "reliquary:void_tear", "magic", quests, shape="circle", order=51, stage=2,

@@ -46,7 +46,7 @@
 		{
 			id: "272FE9EFA8115D91"
 			x: 4.5d
-			y: 4.41d
+			y: 5.66d
 			icon: {
 				id: "minecraft:filled_map"
 				count: 1
@@ -72,7 +72,7 @@
 		{
 			id: "5A0F9713892A89DA"
 			x: 6.5d
-			y: 4.41d
+			y: 5.66d
 			icon: {
 				id: "minecraft:cobblestone"
 				count: 1
@@ -102,7 +102,7 @@
 		{
 			id: "11D263EF5B3745A7"
 			x: 8.5d
-			y: 4.41d
+			y: 5.66d
 			icon: {
 				id: "minecraft:lodestone"
 				count: 1
@@ -131,7 +131,7 @@
 		{
 			id: "3FC6B71CB35F1EC8"
 			x: 10.5d
-			y: 4.41d
+			y: 5.66d
 			icon: {
 				id: "minecraft:cobblestone"
 				count: 1
@@ -163,7 +163,7 @@
 		{
 			id: "289E809B78ACB014"
 			x: 8.5d
-			y: 5.91d
+			y: 4.16d
 			icon: {
 				id: "minecraft:iron_ingot"
 				count: 1
@@ -197,7 +197,7 @@
 		{
 			id: "723F3B7A023BACD9"
 			x: 12.9d
-			y: 4.41d
+			y: 5.66d
 			icon: {
 				id: "minecraft:clock"
 				count: 1
@@ -225,6 +225,72 @@
 					id: "7EFD04442F23AFD4"
 					type: "xp_levels"
 					xp_levels: 5
+				}
+			]
+		}
+		{
+			id: "49530F1CA9326122"
+			x: 10.5d
+			y: 7.41d
+			icon: {
+				id: "waystones:waystone"
+				count: 1
+			}
+			optional: true
+			dependencies: [
+				"11D263EF5B3745A7"
+			]
+			tasks: [
+				{
+					id: "1676FB4B49C8668B"
+					type: "checkmark"
+				}
+			]
+			rewards: [
+				{
+					id: "559011A9CFA9711A"
+					type: "xp_levels"
+					xp_levels: 3
+				}
+			]
+		}
+		{
+			id: "3A8D4AD0CF5B3CD8"
+			x: 8.5d
+			y: 7.16d
+			icon: {
+				id: "sophisticatedbackpacks:backpack"
+				count: 1
+			}
+			optional: true
+			dependencies: [
+				"5A0F9713892A89DA"
+			]
+			tasks: [
+				{
+					id: "7774B4FEDAD8F2AF"
+					type: "item"
+					item: {
+						id: "sophisticatedbackpacks:backpack"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "4E3B046559D4DD83"
+					type: "item"
+					item: {
+						id: "minecraft:leather"
+						count: 1
+					}
+					count: 4
+				}
+				{
+					id: "1F61A5661B05799B"
+					type: "xp_levels"
+					xp_levels: 3
 				}
 			]
 		}
@@ -512,8 +578,8 @@
 		}
 		{
 			id: "21B68B28F1236932"
-			x: 0.0d
-			y: 19.434999999999995d
+			x: 16.35d
+			y: 12.834999999999999d
 			icon: {
 				id: "naturesaura:gold_fiber"
 				count: 1
@@ -552,8 +618,8 @@
 		}
 		{
 			id: "751B269F044FA057"
-			x: 2.0d
-			y: 19.434999999999995d
+			x: 18.35d
+			y: 12.834999999999999d
 			icon: {
 				id: "naturesaura:gold_leaf"
 				count: 1
@@ -582,8 +648,8 @@
 		}
 		{
 			id: "64BF437F7D5CB56E"
-			x: 4.0d
-			y: 19.434999999999995d
+			x: 20.35d
+			y: 12.834999999999999d
 			icon: {
 				id: "naturesaura:wood_stand"
 				count: 1
@@ -630,8 +696,8 @@
 		}
 		{
 			id: "13CC7CBA4391431C"
-			x: 6.2d
-			y: 19.434999999999995d
+			x: 22.55d
+			y: 12.834999999999999d
 			icon: {
 				id: "naturesaura:token_joy"
 				count: 1
@@ -669,8 +735,8 @@
 		}
 		{
 			id: "52265AF68B03EAFC"
-			x: 8.2d
-			y: 19.434999999999995d
+			x: 24.55d
+			y: 12.834999999999999d
 			icon: {
 				id: "naturesaura:nature_altar"
 				count: 1
@@ -708,8 +774,8 @@
 		}
 		{
 			id: "6BDF7D92D3733C02"
-			x: 10.2d
-			y: 19.434999999999995d
+			x: 26.55d
+			y: 12.834999999999999d
 			icon: {
 				id: "naturesaura:infused_iron"
 				count: 1
@@ -747,8 +813,8 @@
 		}
 		{
 			id: "73969B96CAA509C8"
-			x: 12.2d
-			y: 19.434999999999995d
+			x: 28.55d
+			y: 12.834999999999999d
 			icon: {
 				id: "kronwerke:stone_gearbox"
 				count: 1
@@ -786,8 +852,8 @@
 		}
 		{
 			id: "47C51A9763F1E7C6"
-			x: 4.0d
-			y: 21.059999999999995d
+			x: 20.35d
+			y: 14.459999999999999d
 			icon: {
 				id: "kronwerke:source_keystone"
 				count: 1
@@ -824,9 +890,194 @@
 			]
 		}
 		{
+			id: "3D97518706CB1359"
+			x: 16.35d
+			y: 16.185d
+			icon: {
+				id: "create:andesite_casing"
+				count: 1
+			}
+			hide_dependency_lines: true
+			dependencies: [
+				"6201E5BDB258C810"
+			]
+			tasks: [
+				{
+					id: "2BB9F311A73ABFFE"
+					type: "item"
+					item: {
+						id: "create:andesite_casing"
+						count: 1
+					}
+					count: 4
+				}
+				{
+					id: "484FD9CA1B996B2C"
+					type: "item"
+					item: {
+						id: "create:large_cogwheel"
+						count: 1
+					}
+					count: 1
+				}
+				{
+					id: "7E915DA5B1FD82D6"
+					type: "item"
+					item: {
+						id: "create:mechanical_press"
+						count: 1
+					}
+					count: 1
+				}
+				{
+					id: "6675D938707F07FD"
+					type: "item"
+					item: {
+						id: "create:millstone"
+						count: 1
+					}
+					count: 1
+				}
+				{
+					id: "1F78836E046C9B5C"
+					type: "item"
+					item: {
+						id: "create:water_wheel"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "2C2AE65839F77873"
+					type: "item"
+					item: {
+						id: "create:andesite_alloy"
+						count: 1
+					}
+					count: 8
+				}
+				{
+					id: "272E9F12F373B08B"
+					type: "xp_levels"
+					xp_levels: 4
+				}
+			]
+		}
+		{
+			id: "232810208ED5820D"
+			x: 24.55d
+			y: 14.334999999999999d
+			icon: {
+				id: "botania:livingrock"
+				count: 1
+			}
+			dependencies: [
+				"13CC7CBA4391431C"
+			]
+			tasks: [
+				{
+					id: "227A5A3C35CDDB9F"
+					type: "item"
+					item: {
+						id: "botania:livingrock"
+						count: 1
+					}
+					count: 3
+				}
+			]
+			rewards: [
+				{
+					id: "18C1AB653009B7D0"
+					type: "item"
+					item: {
+						id: "minecraft:stone"
+						count: 1
+					}
+					count: 16
+				}
+				{
+					id: "6708B5F20B142E3F"
+					type: "xp_levels"
+					xp_levels: 3
+				}
+			]
+		}
+		{
+			id: "5AF877D13DE617C3"
+			x: 16.35d
+			y: 14.334999999999999d
+			icon: {
+				id: "botania:mana_diamond"
+				count: 1
+			}
+			hide_dependency_lines: true
+			dependencies: [
+				"22221FD1BB9A6413"
+			]
+			tasks: [
+				{
+					id: "70592121628B3EE0"
+					type: "item"
+					item: {
+						id: "botania:mana_diamond"
+						count: 1
+					}
+					count: 2
+				}
+			]
+			rewards: [
+				{
+					id: "6F8BE59B1EA591E8"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+		}
+		{
+			id: "3B268BFFFDB0AD9A"
+			x: 18.35d
+			y: 14.334999999999999d
+			icon: {
+				id: "ars_nouveau:source_gem_block"
+				count: 1
+			}
+			dependencies: [
+				"5AF877D13DE617C3"
+			]
+			tasks: [
+				{
+					id: "230F781BA02755FE"
+					type: "item"
+					item: {
+						id: "ars_nouveau:source_gem_block"
+						count: 1
+					}
+					count: 4
+				}
+				{
+					id: "510C6517C24873A3"
+					type: "item"
+					item: {
+						id: "ars_nouveau:source_jar"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "324D9F4C53518BA2"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+		}
+		{
 			id: "68359FDAD745E4AE"
-			x: 15.7d
-			y: 19.684999999999995d
+			x: 0.375d
+			y: 21.36d
 			icon: {
 				id: "minecraft:stone_bricks"
 				count: 1
@@ -853,8 +1104,8 @@
 		}
 		{
 			id: "41990A0D6BE75734"
-			x: 18.3d
-			y: 19.684999999999995d
+			x: 2.975d
+			y: 21.36d
 			icon: {
 				id: "minecraft:cobblestone"
 				count: 1
@@ -878,8 +1129,8 @@
 		}
 		{
 			id: "4D52E98FA8A66E0E"
-			x: 20.299999999999997d
-			y: 19.684999999999995d
+			x: 4.975d
+			y: 21.36d
 			icon: {
 				id: "minecraft:netherrack"
 				count: 1
@@ -903,8 +1154,8 @@
 		}
 		{
 			id: "4461F299F1CB41DA"
-			x: 22.299999999999997d
-			y: 19.684999999999995d
+			x: 6.975d
+			y: 21.36d
 			icon: {
 				id: "minecraft:iron_block"
 				count: 1
@@ -928,8 +1179,8 @@
 		}
 		{
 			id: "7226ED25CB0B4B4C"
-			x: 24.299999999999997d
-			y: 19.684999999999995d
+			x: 8.975d
+			y: 21.36d
 			icon: {
 				id: "minecraft:ender_eye"
 				count: 1
@@ -953,8 +1204,8 @@
 		}
 		{
 			id: "331908F748343E9E"
-			x: 26.299999999999997d
-			y: 19.684999999999995d
+			x: 10.975d
+			y: 21.36d
 			icon: {
 				id: "minecraft:dragon_head"
 				count: 1
@@ -978,8 +1229,8 @@
 		}
 		{
 			id: "5E6450139C0A40F4"
-			x: 18.3d
-			y: 21.184999999999995d
+			x: 2.975d
+			y: 22.86d
 			icon: {
 				id: "minecraft:barrier"
 				count: 1
@@ -1003,8 +1254,8 @@
 		}
 		{
 			id: "3D30A98E855FD4DF"
-			x: 20.299999999999997d
-			y: 21.184999999999995d
+			x: 4.975d
+			y: 22.86d
 			icon: {
 				id: "minecraft:chest"
 				count: 1
@@ -1028,8 +1279,8 @@
 		}
 		{
 			id: "1761F3A1D3D8DB7E"
-			x: 22.299999999999997d
-			y: 21.184999999999995d
+			x: 6.975d
+			y: 22.86d
 			icon: {
 				id: "minecraft:amethyst_shard"
 				count: 1
@@ -1052,9 +1303,40 @@
 			]
 		}
 		{
+			id: "48D6249248F1319A"
+			x: 4.975d
+			y: 24.36d
+			icon: {
+				id: "create:raw_zinc"
+				count: 1
+			}
+			optional: true
+			dependencies: [
+				"5E6450139C0A40F4"
+			]
+			tasks: [
+				{
+					id: "189ED2D438620173"
+					type: "item"
+					item: {
+						id: "create:raw_zinc"
+						count: 1
+					}
+					count: 32
+				}
+			]
+			rewards: [
+				{
+					id: "2D27786C6F6B8810"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+		}
+		{
 			id: "273E77C05ED4D437"
-			x: 0.25d
-			y: 26.235d
+			x: 14.225d
+			y: 21.235d
 			icon: {
 				id: "minecraft:bell"
 				count: 1
@@ -1080,8 +1362,8 @@
 		}
 		{
 			id: "156929E2C5EB9FA6"
-			x: 2.65d
-			y: 26.235d
+			x: 16.625d
+			y: 21.235d
 			icon: {
 				id: "minecraft:map"
 				count: 1
@@ -1105,8 +1387,8 @@
 		}
 		{
 			id: "2AEF31B32E2CC63D"
-			x: 2.65d
-			y: 27.735d
+			x: 16.625d
+			y: 22.735d
 			icon: {
 				id: "minecraft:player_head"
 				count: 1
@@ -1130,8 +1412,8 @@
 		}
 		{
 			id: "1FAEA6214F17BB8B"
-			x: 4.65d
-			y: 26.235d
+			x: 18.625d
+			y: 21.235d
 			icon: {
 				id: "minecraft:knowledge_book"
 				count: 1
@@ -1156,8 +1438,8 @@
 		}
 		{
 			id: "3C10E938B5BF24FD"
-			x: 6.65d
-			y: 27.735d
+			x: 20.625d
+			y: 22.735d
 			icon: {
 				id: "minecraft:hopper"
 				count: 1
@@ -1190,8 +1472,8 @@
 		}
 		{
 			id: "204BC55FA2CD7C85"
-			x: 6.65d
-			y: 26.235d
+			x: 20.625d
+			y: 21.235d
 			icon: {
 				id: "minecraft:diamond_pickaxe"
 				count: 1
@@ -1219,8 +1501,8 @@
 		}
 		{
 			id: "158DEDBA440C2530"
-			x: 8.65d
-			y: 26.235d
+			x: 22.625d
+			y: 21.235d
 			icon: {
 				id: "comforts:sleeping_bag_red"
 				count: 1
@@ -1453,6 +1735,32 @@
 			rewards: [
 				{
 					id: "6F42322037709176"
+					type: "xp_levels"
+					xp_levels: 2
+				}
+			]
+		}
+		{
+			id: "71D96A8373AEA635"
+			x: 23.924999999999997d
+			y: 7.76d
+			icon: {
+				id: "irons_spellbooks:copper_spell_book"
+				count: 1
+			}
+			hide_dependency_lines: true
+			dependencies: [
+				"16CB29001843ACA5"
+			]
+			tasks: [
+				{
+					id: "667CE8BD9CF9C174"
+					type: "checkmark"
+				}
+			]
+			rewards: [
+				{
+					id: "720A972ACA0440AF"
 					type: "xp_levels"
 					xp_levels: 2
 				}
@@ -1724,8 +2032,8 @@
 		{
 			id: "5361CCE33EFE28BE"
 			image: "kronwerke:textures/quests/start_here/milestones.png"
-			x: 2.215d
-			y: 17.859999999999996d
+			x: 18.565d
+			y: 11.259999999999998d
 			width: 5.43d
 			height: 0.9d
 			rotation: 0.0d
@@ -1734,8 +2042,8 @@
 		{
 			id: "185D1D04622AA36C"
 			image: "kronwerke:textures/quests/start_here/season.png"
-			x: 0.51d
-			y: 22.534999999999997d
+			x: 16.860000000000003d
+			y: 17.535d
 			width: 2.02d
 			height: 0.7d
 			rotation: 0.0d
@@ -1744,8 +2052,8 @@
 		{
 			id: "1EE0E9786C9EE057"
 			image: "kronwerke:textures/quests/start_here/stages.png"
-			x: 18.095d
-			y: 17.859999999999996d
+			x: 2.77d
+			y: 19.535d
 			width: 6.54d
 			height: 0.9d
 			rotation: 0.0d
@@ -1754,8 +2062,8 @@
 		{
 			id: "2DC685ED8CF50C2D"
 			image: "kronwerke:textures/quests/start_here/server.png"
-			x: 2.065d
-			y: 24.535d
+			x: 16.04d
+			y: 19.535d
 			width: 5.13d
 			height: 0.9d
 			rotation: 0.0d

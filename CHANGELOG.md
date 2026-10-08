@@ -264,3 +264,7 @@ Needs a new world: the stage files, the quest ids and the goal data changed.
 ## 0.11.23
 
 - Kronwerke Core 0.20.0: Functional Storage's Ender Drawers work between the main world and the mining world (contents live in the main world, the mining world keeps a stack at hand), a QIO frequency in the mining world sends everything home, and the waystones of the main world can be chosen in the mining world to travel home to them.
+
+## 0.11.24
+
+- Kronwerke Core 0.21.0: linked backpacks and storage blocks from Sophisticated work between the main world and the mining world. A linked group is in one world at a time and comes along when you carry it there or open it there; in the other world it is empty and locked until it comes back.

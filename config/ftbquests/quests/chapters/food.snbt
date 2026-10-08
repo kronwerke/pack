@@ -13,7 +13,7 @@
 		{
 			id: "251007087FB0E302"
 			x: 0.75d
-			y: 3.21d
+			y: 3.51d
 			icon: {
 				id: "farmersdelight:cooking_pot"
 				count: 1
@@ -46,8 +46,8 @@
 		}
 		{
 			id: "1C58857CA43411EE"
-			x: 0.25d
-			y: 8.260000000000002d
+			x: 4.75d
+			y: 5.66d
 			icon: {
 				id: "farmersdelight:flint_knife"
 				count: 1
@@ -82,8 +82,8 @@
 		}
 		{
 			id: "6ABC6EFAB9C1B498"
-			x: 2.75d
-			y: 8.010000000000002d
+			x: 7.15d
+			y: 4.16d
 			icon: {
 				id: "farmersdelight:iron_knife"
 				count: 1
@@ -117,8 +117,8 @@
 		}
 		{
 			id: "5C8FB7B228CE9B39"
-			x: 2.75d
-			y: 9.860000000000001d
+			x: 7.15d
+			y: 5.66d
 			icon: {
 				id: "farmersdelight:straw"
 				count: 1
@@ -151,8 +151,8 @@
 		}
 		{
 			id: "62E55426A50447DF"
-			x: 2.75d
-			y: 11.71d
+			x: 7.15d
+			y: 7.16d
 			icon: {
 				id: "farmersdelight:cutting_board"
 				count: 1
@@ -185,12 +185,13 @@
 		}
 		{
 			id: "71BA402B36393E94"
-			x: 5.0d
-			y: 8.010000000000002d
+			x: 9.15d
+			y: 5.66d
 			icon: {
 				id: "farmersdelight:tomato"
 				count: 1
 			}
+			hide_dependency_lines: true
 			dependencies: [
 				"5C8FB7B228CE9B39"
 				"62E55426A50447DF"
@@ -220,8 +221,8 @@
 		}
 		{
 			id: "335AFF1EF49F4F5A"
-			x: 5.0d
-			y: 9.860000000000001d
+			x: 9.15d
+			y: 7.16d
 			icon: {
 				id: "farmersdelight:cabbage"
 				count: 1
@@ -255,8 +256,8 @@
 		}
 		{
 			id: "5E5FC305B736FA54"
-			x: 7.25d
-			y: 8.010000000000002d
+			x: 11.15d
+			y: 5.66d
 			icon: {
 				id: "farmersdelight:onion"
 				count: 1
@@ -295,8 +296,8 @@
 		}
 		{
 			id: "128344D4FB2BEBDC"
-			x: 9.5d
-			y: 8.010000000000002d
+			x: 13.15d
+			y: 5.66d
 			icon: {
 				id: "farmersdelight:rice"
 				count: 1
@@ -334,8 +335,8 @@
 		}
 		{
 			id: "22CB07376FA940F8"
-			x: 9.5d
-			y: 9.860000000000001d
+			x: 13.15d
+			y: 7.16d
 			icon: {
 				id: "farmersdelight:rope"
 				count: 1
@@ -370,7 +371,7 @@
 		{
 			id: "1EFCF559720990BB"
 			x: 0.25d
-			y: 17.01d
+			y: 11.135d
 			icon: {
 				id: "farmersdelight:stove"
 				count: 1
@@ -405,8 +406,8 @@
 		}
 		{
 			id: "280F4CCBBF5D04BE"
-			x: 3.125d
-			y: 17.135d
+			x: 2.65d
+			y: 11.135d
 			icon: {
 				id: "farmersdelight:cooking_pot"
 				count: 1
@@ -446,8 +447,8 @@
 		}
 		{
 			id: "704CBA0CA99C2603"
-			x: 3.125d
-			y: 18.735000000000003d
+			x: 2.65d
+			y: 13.01d
 			icon: {
 				id: "farmersdelight:skillet"
 				count: 1
@@ -481,8 +482,8 @@
 		}
 		{
 			id: "16E4A34E23E054B5"
-			x: 5.75d
-			y: 16.76d
+			x: 5.25d
+			y: 11.135d
 			icon: {
 				id: "farmersdelight:vegetable_soup"
 				count: 1
@@ -513,8 +514,8 @@
 		}
 		{
 			id: "429F0D4C3D0BF1C4"
-			x: 5.75d
-			y: 18.735000000000003d
+			x: 5.25d
+			y: 12.635d
 			icon: {
 				id: "farmersdelight:tomato_sauce"
 				count: 1
@@ -549,8 +550,8 @@
 		}
 		{
 			id: "43FC78E4F0295D41"
-			x: 8.0d
-			y: 16.76d
+			x: 7.25d
+			y: 11.135d
 			icon: {
 				id: "farmersdelight:beef_stew"
 				count: 1
@@ -583,8 +584,8 @@
 		}
 		{
 			id: "23D891DFD0CBEA83"
-			x: 8.0d
-			y: 18.735000000000003d
+			x: 7.25d
+			y: 12.635d
 			icon: {
 				id: "farmersdelight:cooked_rice"
 				count: 1
@@ -619,8 +620,8 @@
 		}
 		{
 			id: "25CDDBCCDA94E967"
-			x: 10.25d
-			y: 18.735000000000003d
+			x: 9.25d
+			y: 12.635d
 			icon: {
 				id: "farmersdelight:steak_and_potatoes"
 				count: 1
@@ -658,8 +659,8 @@
 		}
 		{
 			id: "21BAD57C35D63EE0"
-			x: 10.25d
-			y: 16.76d
+			x: 9.25d
+			y: 11.135d
 			icon: {
 				id: "farmersdelight:fried_rice"
 				count: 1
@@ -684,8 +685,8 @@
 		}
 		{
 			id: "60511EA1602C8C5C"
-			x: 8.0d
-			y: 20.71d
+			x: 7.25d
+			y: 14.135d
 			icon: {
 				id: "farmersdelight:wheat_dough"
 				count: 1
@@ -719,8 +720,8 @@
 		}
 		{
 			id: "378D44026E7721E3"
-			x: 12.5d
-			y: 18.735000000000003d
+			x: 11.25d
+			y: 11.135d
 			icon: {
 				id: "farmersdelight:hamburger"
 				count: 1
@@ -758,8 +759,8 @@
 		}
 		{
 			id: "65AB8C6A77115271"
-			x: 12.5d
-			y: 16.76d
+			x: 11.25d
+			y: 12.635d
 			icon: {
 				id: "farmersdelight:roast_chicken_block"
 				count: 1
@@ -793,8 +794,8 @@
 		}
 		{
 			id: "2910CD1D7775A23C"
-			x: 12.5d
-			y: 20.71d
+			x: 11.25d
+			y: 14.135d
 			icon: {
 				id: "farmersdelight:apple_pie"
 				count: 1
@@ -828,8 +829,8 @@
 		}
 		{
 			id: "519885EF47C0DFA7"
-			x: 0.0d
-			y: 25.885d
+			x: 14.25d
+			y: 13.76d
 			icon: {
 				id: "farmersdelight:tree_bark"
 				count: 1
@@ -863,8 +864,8 @@
 		}
 		{
 			id: "257C717C0E99363E"
-			x: 2.25d
-			y: 25.885d
+			x: 16.25d
+			y: 13.76d
 			icon: {
 				id: "farmersdelight:organic_compost"
 				count: 1
@@ -897,8 +898,8 @@
 		}
 		{
 			id: "5305899DAF8A4495"
-			x: 4.75d
-			y: 26.135d
+			x: 18.25d
+			y: 13.76d
 			icon: {
 				id: "farmersdelight:rich_soil"
 				count: 1
@@ -933,8 +934,8 @@
 		}
 		{
 			id: "2DFC7ECAACFBDEFD"
-			x: 8.0d
-			y: 30.585d
+			x: 20.65d
+			y: 15.26d
 			icon: {
 				id: "farmersdelight:brown_mushroom_colony"
 				count: 1
@@ -968,8 +969,8 @@
 		}
 		{
 			id: "1C3B1246BF2F4CD8"
-			x: 8.0d
-			y: 25.885d
+			x: 20.65d
+			y: 13.76d
 			icon: {
 				id: "farmingforblockheads:red_fertilizer"
 				count: 1
@@ -1002,8 +1003,8 @@
 		}
 		{
 			id: "7F0E3492824D8AAD"
-			x: 11.0d
-			y: 25.885d
+			x: 23.85d
+			y: 15.26d
 			icon: {
 				id: "farmingforblockheads:green_fertilizer"
 				count: 1
@@ -1037,8 +1038,8 @@
 		}
 		{
 			id: "73F5AAB79AA73C86"
-			x: 11.0d
-			y: 28.235000000000003d
+			x: 23.85d
+			y: 13.76d
 			icon: {
 				id: "farmingforblockheads:yellow_fertilizer"
 				count: 1
@@ -1072,8 +1073,8 @@
 		}
 		{
 			id: "4601992F7BE5B929"
-			x: 11.0d
-			y: 30.585d
+			x: 23.85d
+			y: 16.759999999999998d
 			icon: {
 				id: "farmersdelight:tomato_crate"
 				count: 1
@@ -1104,7 +1105,7 @@
 		{
 			id: "116242A29E7AC583"
 			x: 0.25d
-			y: 36.385d
+			y: 20.61d
 			icon: {
 				id: "farmingforblockheads:feeding_trough"
 				count: 1
@@ -1139,8 +1140,8 @@
 		}
 		{
 			id: "583982681E14CDD1"
-			x: 2.75d
-			y: 36.135d
+			x: 2.65d
+			y: 20.61d
 			icon: {
 				id: "farmingforblockheads:chicken_nest"
 				count: 1
@@ -1173,8 +1174,8 @@
 		}
 		{
 			id: "4E7DD988C3B81C0C"
-			x: 2.75d
-			y: 37.985d
+			x: 2.65d
+			y: 22.11d
 			icon: {
 				id: "farmingforblockheads:market"
 				count: 1
@@ -1212,8 +1213,8 @@
 		}
 		{
 			id: "2FAE0B849425E8B2"
-			x: 5.0d
-			y: 36.135d
+			x: 4.65d
+			y: 20.61d
 			icon: {
 				id: "farmersdelight:ham"
 				count: 1
@@ -1247,8 +1248,8 @@
 		}
 		{
 			id: "7E94BCD72AFBE5BE"
-			x: 7.25d
-			y: 36.135d
+			x: 6.65d
+			y: 20.61d
 			icon: {
 				id: "farmersdelight:dog_food"
 				count: 1
@@ -1282,8 +1283,8 @@
 		}
 		{
 			id: "179650EABEFBB8BD"
-			x: 5.0d
-			y: 37.985d
+			x: 4.65d
+			y: 22.11d
 			icon: {
 				id: "farmersdelight:horse_feed"
 				count: 1
@@ -1317,8 +1318,8 @@
 		}
 		{
 			id: "29B281C9D1703AE3"
-			x: 0.25d
-			y: 43.285d
+			x: 9.9d
+			y: 20.61d
 			icon: {
 				id: "aquaculture:iron_fishing_rod"
 				count: 1
@@ -1353,8 +1354,8 @@
 		}
 		{
 			id: "170B41317E141485"
-			x: 2.75d
-			y: 43.035d
+			x: 12.3d
+			y: 20.61d
 			icon: {
 				id: "aquaculture:iron_hook"
 				count: 1
@@ -1387,8 +1388,8 @@
 		}
 		{
 			id: "2928E7CCAC5479D8"
-			x: 2.75d
-			y: 44.885d
+			x: 12.3d
+			y: 22.11d
 			icon: {
 				id: "aquaculture:worm_farm"
 				count: 1
@@ -1421,8 +1422,8 @@
 		}
 		{
 			id: "736B78161A7C4DE3"
-			x: 5.0d
-			y: 43.035d
+			x: 14.3d
+			y: 20.61d
 			icon: {
 				id: "aquaculture:iron_fillet_knife"
 				count: 1
@@ -1466,8 +1467,8 @@
 		}
 		{
 			id: "3B451EE7CFDFF558"
-			x: 7.25d
-			y: 43.035d
+			x: 16.3d
+			y: 20.61d
 			icon: {
 				id: "aquaculture:tackle_box"
 				count: 1
@@ -1497,8 +1498,8 @@
 		}
 		{
 			id: "23D508FC25FC4941"
-			x: 7.25d
-			y: 44.885d
+			x: 16.3d
+			y: 22.11d
 			icon: {
 				id: "aquaculture:sushi"
 				count: 1
@@ -1528,8 +1529,8 @@
 		}
 		{
 			id: "534A7C35D49D8DEF"
-			x: 9.5d
-			y: 43.035d
+			x: 18.3d
+			y: 20.61d
 			icon: {
 				id: "aquaculture:neptunium_ingot"
 				count: 1
@@ -1564,8 +1565,8 @@
 		}
 		{
 			id: "7A0AD641B6612345"
-			x: 8.0d
-			y: 28.985000000000003d
+			x: 20.65d
+			y: 11.51d
 			icon: {
 				id: "farmersdelight:fried_rice"
 				count: 1
@@ -1636,8 +1637,8 @@
 		{
 			id: "1B7BBB1F26AF78D1"
 			image: "kronwerke:textures/quests/food/basics.png"
-			x: 1.505d
-			y: 6.660000000000001d
+			x: 6.005d
+			y: 2.71d
 			width: 4.01d
 			height: 0.9d
 			rotation: 0.0d
@@ -1647,7 +1648,7 @@
 			id: "596AC693D2B0E49D"
 			image: "kronwerke:textures/quests/food/cooking.png"
 			x: 0.7450000000000001d
-			y: 15.410000000000002d
+			y: 9.309999999999999d
 			width: 2.49d
 			height: 0.9d
 			rotation: 0.0d
@@ -1656,8 +1657,8 @@
 		{
 			id: "36AFDB84C5CF1B61"
 			image: "kronwerke:textures/quests/food/farming.png"
-			x: 0.5800000000000001d
-			y: 24.535d
+			x: 14.83d
+			y: 9.309999999999999d
 			width: 2.16d
 			height: 0.9d
 			rotation: 0.0d
@@ -1667,7 +1668,7 @@
 			id: "57666636DBD608EE"
 			image: "kronwerke:textures/quests/food/animals.png"
 			x: 2.24d
-			y: 34.785000000000004d
+			y: 18.91d
 			width: 5.48d
 			height: 0.9d
 			rotation: 0.0d
@@ -1676,8 +1677,8 @@
 		{
 			id: "71B435AFB710702B"
 			image: "kronwerke:textures/quests/food/fishing.png"
-			x: 1.035d
-			y: 41.685d
+			x: 10.685d
+			y: 18.91d
 			width: 3.07d
 			height: 0.9d
 			rotation: 0.0d

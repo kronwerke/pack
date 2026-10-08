@@ -13,7 +13,7 @@
 		{
 			id: "6324699F9751BF51"
 			x: 0.5d
-			y: 2.8200000000000003d
+			y: 3.12d
 			icon: {
 				id: "botania:gaia_ingot"
 				count: 1
@@ -55,8 +55,8 @@
 		}
 		{
 			id: "15E3804A31A1BA56"
-			x: 0.0d
-			y: 7.62d
+			x: 4.0d
+			y: 5.52d
 			hide_dependency_lines: true
 			dependencies: [
 				"6324699F9751BF51"
@@ -91,8 +91,8 @@
 		}
 		{
 			id: "7B4D78ECE0B99E9F"
-			x: 0.0d
-			y: 9.97d
+			x: 4.0d
+			y: 4.02d
 			icon: {
 				id: "draconicevolution:draconium_core"
 				count: 1
@@ -126,8 +126,8 @@
 		}
 		{
 			id: "7DEE7B15D6C0B4D0"
-			x: 0.0d
-			y: 12.32d
+			x: 4.0d
+			y: 7.02d
 			icon: {
 				id: "draconicevolution:draconium_block"
 				count: 1
@@ -161,8 +161,8 @@
 		}
 		{
 			id: "292803D15DEC7A34"
-			x: 2.75d
-			y: 8.120000000000001d
+			x: 6.0d
+			y: 5.52d
 			icon: {
 				id: "draconicevolution:awakened_draconium_block"
 				count: 1
@@ -200,8 +200,8 @@
 		}
 		{
 			id: "129B699332552A54"
-			x: 6.25d
-			y: 7.62d
+			x: 8.8d
+			y: 5.52d
 			icon: {
 				id: "draconicevolution:awakened_draconium_ingot"
 				count: 1
@@ -230,8 +230,8 @@
 		}
 		{
 			id: "5C3B984CE25BA9B7"
-			x: 9.25d
-			y: 7.62d
+			x: 12.0d
+			y: 7.02d
 			icon: {
 				id: "draconicevolution:awakened_crafting_injector"
 				count: 1
@@ -269,8 +269,8 @@
 		}
 		{
 			id: "5456AEE1F1ED202A"
-			x: 9.25d
-			y: 9.97d
+			x: 12.0d
+			y: 5.52d
 			icon: {
 				id: "draconicevolution:awakened_core"
 				count: 1
@@ -308,8 +308,8 @@
 		}
 		{
 			id: "7B9CE2B18B64FD29"
-			x: 11.5d
-			y: 7.62d
+			x: 14.0d
+			y: 5.52d
 			icon: {
 				id: "draconicevolution:draconic_energy_core"
 				count: 1
@@ -347,8 +347,8 @@
 		}
 		{
 			id: "761038536A3F396F"
-			x: 14.0d
-			y: 7.87d
+			x: 16.0d
+			y: 5.52d
 			icon: {
 				id: "draconicevolution:draconic_pickaxe"
 				count: 1
@@ -394,8 +394,8 @@
 		}
 		{
 			id: "3AEDADF7F021D005"
-			x: 16.5d
-			y: 7.62d
+			x: 18.4d
+			y: 4.02d
 			icon: {
 				id: "draconicevolution:draconic_bow"
 				count: 1
@@ -433,8 +433,8 @@
 		}
 		{
 			id: "2DEBCBC68071A08E"
-			x: 16.5d
-			y: 9.97d
+			x: 18.4d
+			y: 5.52d
 			icon: {
 				id: "draconicevolution:draconic_chestpiece"
 				count: 1
@@ -472,8 +472,8 @@
 		}
 		{
 			id: "1A83E832A9F554FE"
-			x: 18.75d
-			y: 7.62d
+			x: 20.4d
+			y: 5.52d
 			icon: {
 				id: "draconicevolution:item_draconic_shield_capacity"
 				count: 1
@@ -511,12 +511,13 @@
 		}
 		{
 			id: "17F70E299E6DCB46"
-			x: 21.0d
-			y: 7.62d
+			x: 4.399999999999999d
+			y: 10.87d
 			icon: {
 				id: "draconicevolution:item_draconic_undying"
 				count: 1
 			}
+			hide_dependency_lines: true
 			dependencies: [
 				"1A83E832A9F554FE"
 			]
@@ -546,8 +547,8 @@
 		}
 		{
 			id: "4D7B04EAD8E9BF79"
-			x: 18.75d
-			y: 9.97d
+			x: 20.4d
+			y: 7.02d
 			icon: {
 				id: "draconicevolution:item_draconic_flight"
 				count: 1
@@ -586,8 +587,8 @@
 		}
 		{
 			id: "1545A0CB3299D6C2"
-			x: 16.5d
-			y: 12.32d
+			x: 18.4d
+			y: 7.02d
 			icon: {
 				id: "draconicevolution:draconic_staff"
 				count: 1
@@ -618,7 +619,7 @@
 		{
 			id: "69A7367B6C584860"
 			x: 0.0d
-			y: 17.87d
+			y: 14.97d
 			icon: {
 				id: "minecraft:end_stone"
 				count: 1
@@ -653,8 +654,8 @@
 		}
 		{
 			id: "187DA804F6421655"
-			x: 2.25d
-			y: 17.87d
+			x: 2.0d
+			y: 14.97d
 			icon: {
 				id: "minecraft:end_crystal"
 				count: 1
@@ -689,8 +690,8 @@
 		}
 		{
 			id: "4CC27A8782DF499A"
-			x: 5.0d
-			y: 18.37d
+			x: 4.0d
+			y: 14.97d
 			icon: {
 				id: "draconicevolution:chaos_shard"
 				count: 1
@@ -725,8 +726,8 @@
 		}
 		{
 			id: "130C3E1F3FC193D0"
-			x: 7.75d
-			y: 17.87d
+			x: 6.8d
+			y: 14.97d
 			icon: {
 				id: "draconicevolution:chaos_shard"
 				count: 1
@@ -756,8 +757,8 @@
 		}
 		{
 			id: "1E3E4CB8EA60759B"
-			x: 10.0d
-			y: 17.87d
+			x: 8.8d
+			y: 14.97d
 			icon: {
 				id: "draconicevolution:large_chaos_frag"
 				count: 1
@@ -787,8 +788,8 @@
 		}
 		{
 			id: "199342F33A3546F7"
-			x: 12.25d
-			y: 17.87d
+			x: 10.8d
+			y: 14.97d
 			icon: {
 				id: "draconicevolution:chaotic_crafting_injector"
 				count: 1
@@ -818,8 +819,8 @@
 		}
 		{
 			id: "61897AFF1AC84E9D"
-			x: 12.25d
-			y: 19.970000000000002d
+			x: 10.8d
+			y: 16.47d
 			icon: {
 				id: "draconicevolution:chaotic_core"
 				count: 1
@@ -849,8 +850,8 @@
 		}
 		{
 			id: "4D0475CCF887E8EF"
-			x: 14.5d
-			y: 17.87d
+			x: 12.8d
+			y: 14.97d
 			icon: {
 				id: "draconicevolution:chaotic_sword"
 				count: 1
@@ -881,8 +882,8 @@
 		}
 		{
 			id: "76C895F54D4751D1"
-			x: 0.0d
-			y: 25.27d
+			x: 15.8d
+			y: 14.845d
 			icon: {
 				id: "draconicevolution:reactor_prt_rotor_full"
 				count: 1
@@ -940,8 +941,8 @@
 		}
 		{
 			id: "579E9B53C7DCC979"
-			x: 2.625d
-			y: 25.645d
+			x: 17.8d
+			y: 14.845d
 			icon: {
 				id: "draconicevolution:reactor_core"
 				count: 1
@@ -993,8 +994,8 @@
 		}
 		{
 			id: "5952DC83553966F6"
-			x: 6.25d
-			y: 10.72d
+			x: 8.8d
+			y: 7.77d
 			icon: {
 				id: "draconicevolution:awakened_draconium_block"
 				count: 1
@@ -1053,8 +1054,8 @@
 		{
 			id: "524F9E0D039E34B3"
 			image: "kronwerke:textures/quests/draconic_chaos/gear.png"
-			x: 1.435d
-			y: 6.2700000000000005d
+			x: 5.4350000000000005d
+			y: 2.5700000000000003d
 			width: 3.87d
 			height: 0.9d
 			rotation: 0.0d
@@ -1064,7 +1065,7 @@
 			id: "2FF4D2DEE2393CFF"
 			image: "kronwerke:textures/quests/draconic_chaos/fight.png"
 			x: 2.255d
-			y: 16.52d
+			y: 13.02d
 			width: 5.51d
 			height: 0.9d
 			rotation: 0.0d
@@ -1073,8 +1074,8 @@
 		{
 			id: "188D366B60C1B614"
 			image: "kronwerke:textures/quests/draconic_chaos/reactor.png"
-			x: 2.255d
-			y: 23.919999999999998d
+			x: 18.055d
+			y: 13.02d
 			width: 5.51d
 			height: 0.9d
 			rotation: 0.0d

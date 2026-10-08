@@ -13,7 +13,7 @@
 		{
 			id: "2E8B8DD851CC4A55"
 			x: 0.5d
-			y: 2.96d
+			y: 3.26d
 			icon: {
 				id: "ars_nouveau:worn_notebook"
 				count: 1
@@ -50,8 +50,8 @@
 		}
 		{
 			id: "1DFC70D288521B7E"
-			x: 0.125d
-			y: 7.885000000000001d
+			x: 4.125d
+			y: 4.41d
 			icon: {
 				id: "ars_nouveau:novice_spell_book"
 				count: 1
@@ -91,8 +91,8 @@
 		}
 		{
 			id: "3F11CFEBD1C69149"
-			x: 2.75d
-			y: 8.010000000000002d
+			x: 6.325d
+			y: 4.41d
 			icon: {
 				id: "ars_nouveau:glyph_projectile"
 				count: 1
@@ -127,8 +127,8 @@
 		}
 		{
 			id: "6911E81D6D6096F4"
-			x: 5.25d
-			y: 7.760000000000001d
+			x: 8.725d
+			y: 4.41d
 			icon: {
 				id: "minecraft:lapis_lazuli"
 				count: 1
@@ -152,8 +152,8 @@
 		}
 		{
 			id: "200CD0947E173E23"
-			x: 5.25d
-			y: 9.610000000000001d
+			x: 8.725d
+			y: 5.91d
 			icon: {
 				id: "ars_nouveau:source_gem"
 				count: 1
@@ -178,8 +178,8 @@
 		}
 		{
 			id: "515CC271AAE15835"
-			x: 7.5d
-			y: 7.760000000000001d
+			x: 10.725d
+			y: 4.41d
 			icon: {
 				id: "ars_nouveau:blank_glyph"
 				count: 1
@@ -203,8 +203,8 @@
 		}
 		{
 			id: "1B0B5B0BDEC1203C"
-			x: 10.0d
-			y: 8.010000000000002d
+			x: 12.725d
+			y: 4.41d
 			icon: {
 				id: "ars_nouveau:scribes_table"
 				count: 1
@@ -246,8 +246,8 @@
 		}
 		{
 			id: "6E140B2737105793"
-			x: 0.0d
-			y: 14.660000000000002d
+			x: 15.975d
+			y: 4.16d
 			icon: {
 				id: "minecraft:amethyst_shard"
 				count: 1
@@ -286,8 +286,8 @@
 		}
 		{
 			id: "7DD047C12EEA827D"
-			x: 0.0d
-			y: 16.51d
+			x: 15.975d
+			y: 5.91d
 			icon: {
 				id: "ars_nouveau:green_archwood_log"
 				count: 1
@@ -326,8 +326,8 @@
 		}
 		{
 			id: "41943EB3EF1ED2C3"
-			x: 2.5d
-			y: 18.360000000000003d
+			x: 17.975d
+			y: 7.66d
 			icon: {
 				id: "ars_nouveau:red_archwood_sapling"
 				count: 1
@@ -388,8 +388,8 @@
 		}
 		{
 			id: "6C3DE80B81BB4577"
-			x: 2.5d
-			y: 16.76d
+			x: 17.975d
+			y: 5.91d
 			icon: {
 				id: "ars_nouveau:imbuement_chamber"
 				count: 1
@@ -429,14 +429,15 @@
 		}
 		{
 			id: "6B4DAE9A47DF655D"
-			x: 5.125d
-			y: 14.785000000000002d
+			x: 20.375d
+			y: 5.91d
 			icon: {
 				id: "ars_nouveau:source_gem"
 				count: 1
 			}
 			size: 1.25d
 			shape: "diamond"
+			hide_dependency_lines: true
 			dependencies: [
 				"6C3DE80B81BB4577"
 				"6E140B2737105793"
@@ -471,8 +472,8 @@
 		}
 		{
 			id: "3C76AA98D0A4190A"
-			x: 7.5d
-			y: 14.660000000000002d
+			x: 22.575d
+			y: 5.91d
 			icon: {
 				id: "ars_nouveau:source_jar"
 				count: 1
@@ -510,8 +511,8 @@
 		}
 		{
 			id: "5FA7EB092C1DCFB2"
-			x: 9.75d
-			y: 14.660000000000002d
+			x: 24.575000000000003d
+			y: 5.91d
 			icon: {
 				id: "ars_nouveau:volcanic_sourcelink"
 				count: 1
@@ -550,7 +551,7 @@
 		{
 			id: "7F67F093152DEAD5"
 			x: 0.0d
-			y: 23.41d
+			y: 12.01d
 			icon: {
 				id: "ars_nouveau:source_jar"
 				count: 1
@@ -584,8 +585,8 @@
 		}
 		{
 			id: "492D71E452CD19B1"
-			x: 2.375d
-			y: 23.535d
+			x: 2.0d
+			y: 12.01d
 			icon: {
 				id: "ars_nouveau:source_gem"
 				count: 1
@@ -624,8 +625,8 @@
 		}
 		{
 			id: "74920690697F14F5"
-			x: 4.75d
-			y: 23.41d
+			x: 4.2d
+			y: 12.01d
 			icon: {
 				id: "minecraft:hopper"
 				count: 1
@@ -672,8 +673,8 @@
 		}
 		{
 			id: "39F9C465FB0CFF5C"
-			x: 2.5d
-			y: 14.660000000000002d
+			x: 17.975d
+			y: 4.16d
 			icon: {
 				id: "ars_nouveau:dowsing_rod"
 				count: 1
@@ -707,8 +708,8 @@
 		}
 		{
 			id: "1777A8458BF84651"
-			x: 9.75d
-			y: 16.51d
+			x: 24.575000000000003d
+			y: 7.41d
 			icon: {
 				id: "ars_nouveau:sourceberry_bush"
 				count: 1
@@ -742,8 +743,8 @@
 		}
 		{
 			id: "1511FADB80273BAF"
-			x: 12.0d
-			y: 14.660000000000002d
+			x: 26.575000000000003d
+			y: 5.91d
 			icon: {
 				id: "ars_nouveau:agronomic_sourcelink"
 				count: 1
@@ -778,7 +779,7 @@
 		{
 			id: "71B708DC9C836285"
 			x: 0.0d
-			y: 25.76d
+			y: 13.635d
 			icon: {
 				id: "ars_nouveau:mycelial_sourcelink"
 				count: 1
@@ -813,8 +814,8 @@
 		}
 		{
 			id: "37F16548492AB61D"
-			x: 2.375d
-			y: 25.76d
+			x: 2.0d
+			y: 13.635d
 			icon: {
 				id: "ars_nouveau:vitalic_sourcelink"
 				count: 1
@@ -848,8 +849,8 @@
 		}
 		{
 			id: "3126CA2EFC0A22FD"
-			x: 0.0d
-			y: 31.31d
+			x: 12.35d
+			y: 11.51d
 			icon: {
 				id: "ars_nouveau:glyph_light"
 				count: 1
@@ -888,8 +889,8 @@
 		}
 		{
 			id: "26A16BE5D767DC8F"
-			x: 0.0d
-			y: 33.16d
+			x: 12.35d
+			y: 13.01d
 			icon: {
 				id: "ars_nouveau:glyph_amplify"
 				count: 1
@@ -928,12 +929,13 @@
 		}
 		{
 			id: "178B2DFFBE0F2430"
-			x: 2.25d
-			y: 31.31d
+			x: 14.35d
+			y: 11.51d
 			icon: {
 				id: "ars_nouveau:glyph_pickup"
 				count: 1
 			}
+			hide_dependency_lines: true
 			dependencies: [
 				"3126CA2EFC0A22FD"
 				"26A16BE5D767DC8F"
@@ -968,8 +970,8 @@
 		}
 		{
 			id: "215F973C3412D461"
-			x: 2.25d
-			y: 33.16d
+			x: 14.35d
+			y: 13.01d
 			icon: {
 				id: "ars_nouveau:glyph_phantom_block"
 				count: 1
@@ -1008,8 +1010,8 @@
 		}
 		{
 			id: "674BFEB3C5381E6C"
-			x: 4.75d
-			y: 31.56d
+			x: 16.35d
+			y: 11.51d
 			icon: {
 				id: "ars_nouveau:novice_spell_book"
 				count: 1
@@ -1041,8 +1043,8 @@
 		}
 		{
 			id: "22799574E2574DF6"
-			x: 7.25d
-			y: 31.31d
+			x: 18.75d
+			y: 11.51d
 			icon: {
 				id: "ars_nouveau:glyph_craft"
 				count: 1
@@ -1125,8 +1127,8 @@
 		}
 		{
 			id: "22780E218606BF6A"
-			x: 7.25d
-			y: 33.16d
+			x: 18.75d
+			y: 13.01d
 			icon: {
 				id: "ars_nouveau:glyph_ignite"
 				count: 1
@@ -1183,7 +1185,7 @@
 		{
 			id: "26F467F182FEE1BF"
 			x: 0.0d
-			y: 38.209999999999994d
+			y: 20.235d
 			icon: {
 				id: "ars_nouveau:sourcestone"
 				count: 1
@@ -1222,8 +1224,8 @@
 		}
 		{
 			id: "7A5C573A21DF9229"
-			x: 2.25d
-			y: 38.209999999999994d
+			x: 2.0d
+			y: 20.235d
 			icon: {
 				id: "ars_nouveau:arcane_pedestal"
 				count: 1
@@ -1261,8 +1263,8 @@
 		}
 		{
 			id: "2A93100F5F237FD4"
-			x: 4.5d
-			y: 38.209999999999994d
+			x: 4.0d
+			y: 20.235d
 			icon: {
 				id: "ars_nouveau:arcane_core"
 				count: 1
@@ -1300,8 +1302,8 @@
 		}
 		{
 			id: "183250A2C01779E4"
-			x: 7.125d
-			y: 38.584999999999994d
+			x: 6.0d
+			y: 20.235d
 			icon: {
 				id: "ars_nouveau:enchanting_apparatus"
 				count: 1
@@ -1338,8 +1340,8 @@
 		}
 		{
 			id: "44A3719685353C0E"
-			x: 9.75d
-			y: 38.209999999999994d
+			x: 8.6d
+			y: 20.235d
 			icon: {
 				id: "ars_nouveau:magebloom"
 				count: 1
@@ -1377,8 +1379,8 @@
 		}
 		{
 			id: "5B7C517C27E44A58"
-			x: 12.0d
-			y: 38.209999999999994d
+			x: 10.6d
+			y: 20.235d
 			icon: {
 				id: "ars_nouveau:spell_parchment"
 				count: 1
@@ -1416,8 +1418,8 @@
 		}
 		{
 			id: "1EA412607DB8DC09"
-			x: 9.75d
-			y: 40.184999999999995d
+			x: 8.6d
+			y: 17.235d
 			icon: {
 				id: "ars_nouveau:ring_of_potential"
 				count: 1
@@ -1455,8 +1457,8 @@
 		}
 		{
 			id: "587961BD31DD6602"
-			x: 12.0d
-			y: 42.16d
+			x: 10.6d
+			y: 17.235d
 			icon: {
 				id: "ars_nouveau:amulet_of_mana_boost"
 				count: 1
@@ -1495,8 +1497,8 @@
 		}
 		{
 			id: "5A4B9B4007E35800"
-			x: 4.5d
-			y: 40.184999999999995d
+			x: 4.0d
+			y: 23.235d
 			icon: {
 				id: "ars_nouveau:earth_essence"
 				count: 1
@@ -1534,8 +1536,8 @@
 		}
 		{
 			id: "62F8F5885AD1E40B"
-			x: 7.125d
-			y: 46.10999999999999d
+			x: 6.0d
+			y: 23.235d
 			icon: {
 				id: "ars_nouveau:manipulation_essence"
 				count: 1
@@ -1573,8 +1575,8 @@
 		}
 		{
 			id: "2481EC1D811960D0"
-			x: 9.75d
-			y: 46.10999999999999d
+			x: 8.6d
+			y: 23.235d
 			icon: {
 				id: "ars_nouveau:water_essence"
 				count: 1
@@ -1630,8 +1632,8 @@
 		}
 		{
 			id: "3030AFB1FCEF8E0E"
-			x: 12.0d
-			y: 44.13499999999999d
+			x: 10.6d
+			y: 23.235d
 			icon: {
 				id: "ars_nouveau:wilden_horn"
 				count: 1
@@ -1683,8 +1685,8 @@
 		}
 		{
 			id: "492A386EFBFFB11E"
-			x: 14.25d
-			y: 38.209999999999994d
+			x: 12.6d
+			y: 23.235d
 			icon: {
 				id: "ars_nouveau:air_essence"
 				count: 1
@@ -1733,8 +1735,8 @@
 		}
 		{
 			id: "735694DA2A1998E1"
-			x: 0.0d
-			y: 51.28499999999999d
+			x: 17.6d
+			y: 17.235d
 			icon: {
 				id: "ars_nouveau:glyph_harvest"
 				count: 1
@@ -1774,8 +1776,8 @@
 		}
 		{
 			id: "1D983D6CE06150E6"
-			x: 2.25d
-			y: 51.28499999999999d
+			x: 19.6d
+			y: 17.235d
 			icon: {
 				id: "ars_nouveau:glyph_fell"
 				count: 1
@@ -1842,8 +1844,8 @@
 		}
 		{
 			id: "7E411170E8AC41F5"
-			x: 0.0d
-			y: 52.88499999999999d
+			x: 17.6d
+			y: 18.735d
 			icon: {
 				id: "ars_nouveau:glyph_place_block"
 				count: 1
@@ -1918,8 +1920,8 @@
 		}
 		{
 			id: "6FD7F624EEA82EBD"
-			x: 2.25d
-			y: 52.88499999999999d
+			x: 19.6d
+			y: 18.735d
 			icon: {
 				id: "ars_nouveau:glyph_rune"
 				count: 1
@@ -1986,8 +1988,8 @@
 		}
 		{
 			id: "6435C45B65BED305"
-			x: 2.25d
-			y: 54.48499999999999d
+			x: 19.6d
+			y: 20.235d
 			icon: {
 				id: "ars_technica:glyph_pack"
 				count: 1
@@ -2026,8 +2028,8 @@
 		}
 		{
 			id: "189757E99790A33C"
-			x: 12.0d
-			y: 46.10999999999999d
+			x: 10.6d
+			y: 24.735d
 			icon: {
 				id: "ars_nouveau:glyph_dispel"
 				count: 1
@@ -2065,8 +2067,8 @@
 		}
 		{
 			id: "7040879D670270F0"
-			x: 0.0d
-			y: 54.48499999999999d
+			x: 17.6d
+			y: 21.735d
 			icon: {
 				id: "ars_nouveau:glyph_leap"
 				count: 1
@@ -2105,8 +2107,8 @@
 		}
 		{
 			id: "1B411A4878DCEE89"
-			x: 2.25d
-			y: 56.084999999999994d
+			x: 19.6d
+			y: 21.735d
 			icon: {
 				id: "ars_nouveau:glyph_launch"
 				count: 1
@@ -2180,8 +2182,8 @@
 		}
 		{
 			id: "46761BAE90808C2B"
-			x: 0.0d
-			y: 57.68499999999999d
+			x: 17.6d
+			y: 23.235d
 			icon: {
 				id: "ars_nouveau:glyph_summon_wolves"
 				count: 1
@@ -2229,8 +2231,8 @@
 		}
 		{
 			id: "5AF4637E8D5BABCB"
-			x: 2.25d
-			y: 57.68499999999999d
+			x: 19.6d
+			y: 23.235d
 			icon: {
 				id: "ars_elemental:glyph_spark"
 				count: 1
@@ -2290,7 +2292,7 @@
 		{
 			id: "5A470A14F364FB8F"
 			x: 0.0d
-			y: 62.484999999999985d
+			y: 29.685000000000002d
 			icon: {
 				id: "ars_nouveau:wand"
 				count: 1
@@ -2330,13 +2332,14 @@
 		}
 		{
 			id: "10727BE5079CE08E"
-			x: 2.25d
-			y: 62.484999999999985d
+			x: 2.0d
+			y: 28.335d
 			icon: {
 				id: "ars_nouveau:enchanters_sword"
 				count: 1
 			}
 			optional: true
+			hide_dependency_lines: true
 			dependencies: [
 				"5A470A14F364FB8F"
 			]
@@ -2379,13 +2382,14 @@
 		}
 		{
 			id: "5871F2C7F6FC9743"
-			x: 2.25d
-			y: 64.08499999999998d
+			x: 2.0d
+			y: 29.685000000000002d
 			icon: {
 				id: "ars_nouveau:spell_bow"
 				count: 1
 			}
 			optional: true
+			hide_dependency_lines: true
 			dependencies: [
 				"5A470A14F364FB8F"
 			]
@@ -2419,13 +2423,14 @@
 		}
 		{
 			id: "3FB073F38AAB3E6B"
-			x: 2.25d
-			y: 65.68499999999999d
+			x: 2.0d
+			y: 31.035d
 			icon: {
 				id: "ars_nouveau:enchanters_gauntlet"
 				count: 1
 			}
 			optional: true
+			hide_dependency_lines: true
 			dependencies: [
 				"5A470A14F364FB8F"
 			]
@@ -2477,8 +2482,8 @@
 		}
 		{
 			id: "47A794FF8E96B7BA"
-			x: 2.25d
-			y: 67.28499999999998d
+			x: 3.35d
+			y: 28.335d
 			icon: {
 				id: "ars_nouveau:belt_of_levitation"
 				count: 1
@@ -2537,8 +2542,8 @@
 		}
 		{
 			id: "28FB9C8CD9D63670"
-			x: 0.0d
-			y: 72.085d
+			x: 10.77d
+			y: 29.835d
 			icon: {
 				id: "ars_nouveau:dominion_wand"
 				count: 1
@@ -2577,8 +2582,8 @@
 		}
 		{
 			id: "74AA7604DA6F2FFC"
-			x: 0.0d
-			y: 73.93499999999999d
+			x: 10.77d
+			y: 28.335d
 			icon: {
 				id: "ars_nouveau:starbuncle_shards"
 				count: 1
@@ -2612,8 +2617,8 @@
 		}
 		{
 			id: "7A558B0499746957"
-			x: 2.5d
-			y: 74.18499999999999d
+			x: 12.77d
+			y: 29.835d
 			icon: {
 				id: "ars_nouveau:starbuncle_charm"
 				count: 1
@@ -2651,12 +2656,13 @@
 		}
 		{
 			id: "4E2D89EFDAD9E138"
-			x: 5.0d
-			y: 73.93499999999999d
+			x: 14.77d
+			y: 29.835d
 			icon: {
 				id: "ars_nouveau:allow_scroll"
 				count: 1
 			}
+			hide_dependency_lines: true
 			dependencies: [
 				"7A558B0499746957"
 			]
@@ -2685,8 +2691,8 @@
 		}
 		{
 			id: "20C3EAE570CBC7DA"
-			x: 5.0d
-			y: 72.085d
+			x: 14.77d
+			y: 28.485d
 			icon: {
 				id: "ars_nouveau:drygmy_charm"
 				count: 1
@@ -2727,8 +2733,8 @@
 		}
 		{
 			id: "6042060596DA4E6A"
-			x: 5.0d
-			y: 77.63499999999999d
+			x: 16.119999999999997d
+			y: 28.485d
 			icon: {
 				id: "ars_nouveau:whirlisprig_charm"
 				count: 1
@@ -2769,13 +2775,14 @@
 		}
 		{
 			id: "7E3038196807B632"
-			x: 5.0d
-			y: 75.785d
+			x: 14.77d
+			y: 31.185000000000002d
 			icon: {
 				id: "ars_nouveau:alakarkinos_charm"
 				count: 1
 			}
 			optional: true
+			hide_dependency_lines: true
 			dependencies: [
 				"7A558B0499746957"
 			]
@@ -2809,13 +2816,14 @@
 		}
 		{
 			id: "56632AC4CA9C6932"
-			x: 5.0d
-			y: 79.485d
+			x: 16.119999999999997d
+			y: 29.835d
 			icon: {
 				id: "ars_creo:starbuncle_wheel"
 				count: 1
 			}
 			optional: true
+			hide_dependency_lines: true
 			dependencies: [
 				"7A558B0499746957"
 			]
@@ -2849,8 +2857,8 @@
 		}
 		{
 			id: "2DA4A08A2B00BA5E"
-			x: 2.5d
-			y: 72.085d
+			x: 12.77d
+			y: 31.585d
 			icon: {
 				id: "ars_additions:advanced_dominion_wand"
 				count: 1
@@ -2884,8 +2892,8 @@
 		}
 		{
 			id: "768C226660B1EF1E"
-			x: 12.0d
-			y: 40.184999999999995d
+			x: 10.6d
+			y: 21.735d
 			icon: {
 				id: "ars_elemental:curio_bag"
 				count: 1
@@ -2915,8 +2923,8 @@
 		}
 		{
 			id: "3D68AEC5831F6D62"
-			x: 7.125d
-			y: 42.16d
+			x: 6.0d
+			y: 24.735d
 			icon: {
 				id: "ars_elemental:lesser_earth_focus"
 				count: 1
@@ -2955,8 +2963,8 @@
 		}
 		{
 			id: "47A5BA50FA1FA49E"
-			x: 9.75d
-			y: 42.16d
+			x: 8.6d
+			y: 18.735d
 			icon: {
 				id: "ars_additions:water_breathing_charm"
 				count: 1
@@ -3013,8 +3021,8 @@
 		}
 		{
 			id: "5043046E0185E5AA"
-			x: 9.75d
-			y: 44.13499999999999d
+			x: 8.6d
+			y: 21.735d
 			icon: {
 				id: "ars_elemental:siren_charm"
 				count: 1
@@ -3053,8 +3061,8 @@
 		}
 		{
 			id: "24760850DC76289D"
-			x: 16.5d
-			y: 38.209999999999994d
+			x: 14.6d
+			y: 23.235d
 			icon: {
 				id: "ars_elemental:flashjack_charm"
 				count: 1
@@ -3093,8 +3101,8 @@
 		}
 		{
 			id: "20126811246AC3FC"
-			x: 7.25d
-			y: 23.66d
+			x: 6.2d
+			y: 12.01d
 			icon: {
 				id: "ars_nouveau:source_gem"
 				count: 1
@@ -3130,8 +3138,8 @@
 		}
 		{
 			id: "4E9BF84C18A1F424"
-			x: 10.5d
-			y: 24.16d
+			x: 8.6d
+			y: 12.01d
 			icon: {
 				id: "ars_nouveau:source_gem_block"
 				count: 1
@@ -3184,8 +3192,8 @@
 		{
 			id: "1DC1A2905E29409B"
 			image: "kronwerke:textures/quests/ars_nouveau/grundlagen.png"
-			x: 2.275d
-			y: 6.410000000000001d
+			x: 6.275d
+			y: 2.71d
 			width: 5.55d
 			height: 0.9d
 			rotation: 0.0d
@@ -3194,8 +3202,8 @@
 		{
 			id: "690A566DA524D892"
 			image: "kronwerke:textures/quests/ars_nouveau/quelle.png"
-			x: 2.77d
-			y: 13.31d
+			x: 18.745d
+			y: 2.71d
 			width: 6.54d
 			height: 0.9d
 			rotation: 0.0d
@@ -3205,7 +3213,7 @@
 			id: "51C8C31D3E6AA110"
 			image: "kronwerke:textures/quests/ars_nouveau/ziel.png"
 			x: 1.26d
-			y: 22.06d
+			y: 9.809999999999999d
 			width: 3.52d
 			height: 0.9d
 			rotation: 0.0d
@@ -3214,8 +3222,8 @@
 		{
 			id: "298BA9DC196FC347"
 			image: "kronwerke:textures/quests/ars_nouveau/glyphen.png"
-			x: 2.575d
-			y: 29.959999999999997d
+			x: 14.925d
+			y: 9.809999999999999d
 			width: 6.15d
 			height: 0.9d
 			rotation: 0.0d
@@ -3225,7 +3233,7 @@
 			id: "13EDE46F440DA5A9"
 			image: "kronwerke:textures/quests/ars_nouveau/apparat.png"
 			x: 3.115d
-			y: 36.86d
+			y: 15.784999999999998d
 			width: 7.23d
 			height: 0.9d
 			rotation: 0.0d
@@ -3234,8 +3242,8 @@
 		{
 			id: "28768372450D211C"
 			image: "kronwerke:textures/quests/ars_nouveau/glyphen2.png"
-			x: 3.055d
-			y: 49.934999999999995d
+			x: 20.655d
+			y: 15.784999999999998d
 			width: 7.11d
 			height: 0.9d
 			rotation: 0.0d
@@ -3245,7 +3253,7 @@
 			id: "691274E0668F7E06"
 			image: "kronwerke:textures/quests/ars_nouveau/ausruestung.png"
 			x: 3.885d
-			y: 61.13499999999999d
+			y: 26.885d
 			width: 8.77d
 			height: 0.9d
 			rotation: 0.0d
@@ -3254,8 +3262,8 @@
 		{
 			id: "2045DE05483F91C2"
 			image: "kronwerke:textures/quests/ars_nouveau/helfer.png"
-			x: 0.6599999999999999d
-			y: 70.735d
+			x: 11.43d
+			y: 26.885d
 			width: 2.32d
 			height: 0.9d
 			rotation: 0.0d

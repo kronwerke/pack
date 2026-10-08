@@ -13,7 +13,7 @@
 		{
 			id: "2E32A3F2F1C3250B"
 			x: 0.5d
-			y: 2.75d
+			y: 3.05d
 			icon: {
 				id: "immersiveengineering:light_engineering"
 				count: 1
@@ -52,7 +52,7 @@
 		{
 			id: "5BE6B9DEDB998338"
 			x: 0.0d
-			y: 12.850000000000001d
+			y: 8.924999999999999d
 			icon: {
 				id: "immersiveengineering:component_steel"
 				count: 1
@@ -86,8 +86,8 @@
 		}
 		{
 			id: "2521180F7F24E2A9"
-			x: 2.625d
-			y: 13.225000000000001d
+			x: 2.0d
+			y: 8.924999999999999d
 			icon: {
 				id: "immersiveengineering:heavy_engineering"
 				count: 1
@@ -137,7 +137,7 @@
 		{
 			id: "76A6E2A8B8B40BBC"
 			x: 0.0d
-			y: 14.825000000000001d
+			y: 10.424999999999999d
 			icon: {
 				id: "immersiveengineering:rs_engineering"
 				count: 1
@@ -172,7 +172,7 @@
 		{
 			id: "3CDF143412D7A502"
 			x: 0.0d
-			y: 16.8d
+			y: 11.924999999999999d
 			icon: {
 				id: "immersiveengineering:steel_scaffolding_standard"
 				count: 1
@@ -216,8 +216,8 @@
 		}
 		{
 			id: "3F162EF082914490"
-			x: 2.625d
-			y: 14.825000000000001d
+			x: 2.0d
+			y: 11.924999999999999d
 			icon: {
 				id: "immersiveengineering:sheetmetal_steel"
 				count: 1
@@ -250,8 +250,8 @@
 		}
 		{
 			id: "623717357CBDF5EB"
-			x: 0.25d
-			y: 7.8d
+			x: 4.25d
+			y: 4.449999999999999d
 			icon: {
 				id: "immersiveengineering:crusher"
 				count: 1
@@ -295,8 +295,8 @@
 		}
 		{
 			id: "2F6D5B631C20527C"
-			x: 2.75d
-			y: 7.55d
+			x: 6.65d
+			y: 4.449999999999999d
 			icon: {
 				id: "immersiveengineering:dust_coke"
 				count: 1
@@ -334,8 +334,8 @@
 		}
 		{
 			id: "27BF63FFBC3E914D"
-			x: 5.0d
-			y: 7.55d
+			x: 8.65d
+			y: 4.449999999999999d
 			icon: {
 				id: "immersiveengineering:squeezer"
 				count: 1
@@ -379,8 +379,8 @@
 		}
 		{
 			id: "12C525B242BDF26A"
-			x: 7.25d
-			y: 7.55d
+			x: 10.65d
+			y: 4.449999999999999d
 			icon: {
 				id: "immersiveengineering:dust_hop_graphite"
 				count: 1
@@ -418,12 +418,13 @@
 		}
 		{
 			id: "350FD092E36A40EE"
-			x: 5.25d
-			y: 12.850000000000001d
+			x: 4.6d
+			y: 8.924999999999999d
 			icon: {
 				id: "immersiveengineering:metal_press"
 				count: 1
 			}
+			hide_dependency_lines: true
 			dependencies: [
 				"2521180F7F24E2A9"
 				"76A6E2A8B8B40BBC"
@@ -482,8 +483,8 @@
 		}
 		{
 			id: "5F8BEA7E17FDA34F"
-			x: 9.5d
-			y: 7.55d
+			x: 12.65d
+			y: 4.449999999999999d
 			icon: {
 				id: "immersiveengineering:bottling_machine"
 				count: 1
@@ -527,8 +528,8 @@
 		}
 		{
 			id: "454D94E0C6614703"
-			x: 11.75d
-			y: 7.55d
+			x: 14.65d
+			y: 4.449999999999999d
 			icon: {
 				id: "immersiveengineering:graphite_electrode"
 				count: 1
@@ -566,8 +567,8 @@
 		}
 		{
 			id: "305E50EF85284644"
-			x: 14.5d
-			y: 8.05d
+			x: 16.65d
+			y: 4.449999999999999d
 			icon: {
 				id: "immersiveengineering:arc_furnace"
 				count: 1
@@ -611,8 +612,8 @@
 		}
 		{
 			id: "5101E57E0AE8D9E1"
-			x: 17.5d
-			y: 7.8d
+			x: 19.45d
+			y: 4.449999999999999d
 			icon: {
 				id: "immersiveengineering:ingot_steel"
 				count: 1
@@ -656,8 +657,8 @@
 		}
 		{
 			id: "6939B2E743839A21"
-			x: 0.0d
-			y: 21.975d
+			x: 7.6d
+			y: 9.299999999999999d
 			icon: {
 				id: "immersiveengineering:fermenter"
 				count: 1
@@ -702,8 +703,8 @@
 		}
 		{
 			id: "7284AF029EEF7817"
-			x: 2.5d
-			y: 22.225d
+			x: 9.6d
+			y: 9.299999999999999d
 			icon: {
 				id: "immersiveengineering:refinery"
 				count: 1
@@ -755,8 +756,8 @@
 		}
 		{
 			id: "4ED4AD4CEFE09764"
-			x: 5.0d
-			y: 21.975d
+			x: 12.0d
+			y: 11.174999999999999d
 			icon: {
 				id: "immersiveengineering:generator"
 				count: 1
@@ -803,8 +804,8 @@
 		}
 		{
 			id: "47F63CED073E9891"
-			x: 7.625d
-			y: 22.35d
+			x: 14.0d
+			y: 11.174999999999999d
 			icon: {
 				id: "immersiveengineering:diesel_generator"
 				count: 1
@@ -846,8 +847,8 @@
 		}
 		{
 			id: "31579DF4D90775D1"
-			x: 10.25d
-			y: 21.975d
+			x: 16.6d
+			y: 11.174999999999999d
 			icon: {
 				id: "immersiveengineering:wirecoil_steel"
 				count: 1
@@ -903,8 +904,8 @@
 		}
 		{
 			id: "2141E58DFDFB0285"
-			x: 5.0d
-			y: 24.325000000000003d
+			x: 12.0d
+			y: 9.299999999999999d
 			icon: {
 				id: "immersiveengineering:acetaldehyde_bucket"
 				count: 1
@@ -942,8 +943,8 @@
 		}
 		{
 			id: "6A45B2FDBE5FB744"
-			x: 7.625d
-			y: 24.325000000000003d
+			x: 14.0d
+			y: 9.299999999999999d
 			icon: {
 				id: "immersiveengineering:phenolic_resin_bucket"
 				count: 1
@@ -981,8 +982,8 @@
 		}
 		{
 			id: "1E76EBF8CFF3E113"
-			x: 10.25d
-			y: 24.325000000000003d
+			x: 16.6d
+			y: 9.299999999999999d
 			icon: {
 				id: "immersiveengineering:plate_duroplast"
 				count: 1
@@ -1022,8 +1023,8 @@
 		}
 		{
 			id: "5C815934C0FF07BE"
-			x: 12.5d
-			y: 21.975d
+			x: 18.6d
+			y: 9.299999999999999d
 			icon: {
 				id: "immersiveengineering:component_electronic_adv"
 				count: 1
@@ -1062,7 +1063,7 @@
 		{
 			id: "35B0FE43EBA9550B"
 			x: 0.0d
-			y: 29.775d
+			y: 15.425d
 			icon: {
 				id: "immersiveengineering:mixer"
 				count: 1
@@ -1108,8 +1109,8 @@
 		}
 		{
 			id: "5469845449F0E0AB"
-			x: 2.625d
-			y: 29.775d
+			x: 2.0d
+			y: 16.925d
 			icon: {
 				id: "immersiveengineering:assembler"
 				count: 1
@@ -1143,7 +1144,7 @@
 		{
 			id: "2C75DFA0D85C6DDF"
 			x: 0.0d
-			y: 31.75d
+			y: 18.425d
 			icon: {
 				id: "immersiveengineering:sawmill"
 				count: 1
@@ -1187,8 +1188,8 @@
 		}
 		{
 			id: "6B8E68820566C2D0"
-			x: 2.625d
-			y: 33.725d
+			x: 2.0d
+			y: 18.425d
 			icon: {
 				id: "immersiveengineering:auto_workbench"
 				count: 1
@@ -1222,7 +1223,7 @@
 		{
 			id: "2B4960E206BB4BE9"
 			x: 0.0d
-			y: 35.7d
+			y: 20.3d
 			icon: {
 				id: "immersiveengineering:survey_tools"
 				count: 1
@@ -1271,8 +1272,8 @@
 		}
 		{
 			id: "2064B8A353821057"
-			x: 2.625d
-			y: 36.075d
+			x: 2.0d
+			y: 20.3d
 			icon: {
 				id: "immersiveengineering:excavator"
 				count: 1
@@ -1316,8 +1317,8 @@
 		}
 		{
 			id: "434D8079824BE4A7"
-			x: 8.5d
-			y: 29.775d
+			x: 0.0d
+			y: 22.275d
 			icon: {
 				id: "immersiveengineering:lightning_rod"
 				count: 1
@@ -1362,8 +1363,8 @@
 		}
 		{
 			id: "6A077EA3DE80B239"
-			x: 2.625d
-			y: 31.75d
+			x: 2.0d
+			y: 15.425d
 			icon: {
 				id: "immersiveengineering:sheetmetal_aluminum"
 				count: 1
@@ -1399,8 +1400,8 @@
 		}
 		{
 			id: "1E4F8C120BF2D79D"
-			x: 5.5d
-			y: 29.775d
+			x: 4.6d
+			y: 15.425d
 			icon: {
 				id: "immersiveengineering:resonanz_engineering"
 				count: 1
@@ -1443,8 +1444,8 @@
 		}
 		{
 			id: "6701C0B3ED36C748"
-			x: 0.0d
-			y: 40.87499999999999d
+			x: 8.1d
+			y: 15.775d
 			icon: {
 				id: "immersiveengineering:light_engineering"
 				count: 1
@@ -1515,8 +1516,8 @@
 		}
 		{
 			id: "1FEF5053A121D8CB"
-			x: 5.5d
-			y: 32.0d
+			x: 4.6d
+			y: 18.425d
 			icon: {
 				id: "immersiveengineering:heavy_engineering"
 				count: 1
@@ -1584,14 +1585,15 @@
 		}
 		{
 			id: "1FE059D1A0AD661A"
-			x: 15.5d
-			y: 22.725d
+			x: 20.6d
+			y: 9.299999999999999d
 			icon: {
 				id: "immersiveengineering:storage_steel"
 				count: 1
 			}
 			size: 2.5d
 			shape: "gear"
+			hide_dependency_lines: true
 			dependencies: [
 				"5101E57E0AE8D9E1"
 				"47F63CED073E9891"
@@ -1654,8 +1656,8 @@
 		{
 			id: "1B17581D8816B792"
 			image: "kronwerke:textures/quests/immersive_heavy/arc.png"
-			x: 2.84d
-			y: 6.2d
+			x: 6.84d
+			y: 2.5d
 			width: 6.68d
 			height: 0.9d
 			rotation: 0.0d
@@ -1665,7 +1667,7 @@
 			id: "740A6C311367BCE3"
 			image: "kronwerke:textures/quests/immersive_heavy/blocks.png"
 			x: 1.145d
-			y: 11.5d
+			y: 7.1d
 			width: 3.29d
 			height: 0.9d
 			rotation: 0.0d
@@ -1674,8 +1676,8 @@
 		{
 			id: "7BEE5C79837C2B51"
 			image: "kronwerke:textures/quests/immersive_heavy/fuel.png"
-			x: 1.47d
-			y: 20.625d
+			x: 9.07d
+			y: 7.1d
 			width: 3.94d
 			height: 0.9d
 			rotation: 0.0d
@@ -1685,7 +1687,7 @@
 			id: "1C968CC849073838"
 			image: "kronwerke:textures/quests/immersive_heavy/plastic.png"
 			x: 1.21d
-			y: 28.474999999999998d
+			y: 14.025d
 			width: 3.42d
 			height: 0.8d
 			rotation: 0.0d
@@ -1694,8 +1696,8 @@
 		{
 			id: "4BE91FD942387C9D"
 			image: "kronwerke:textures/quests/immersive_heavy/machines.png"
-			x: 2.68d
-			y: 39.525d
+			x: 10.53d
+			y: 14.075d
 			width: 6.36d
 			height: 0.9d
 			rotation: 0.0d

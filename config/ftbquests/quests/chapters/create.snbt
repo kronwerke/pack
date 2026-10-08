@@ -13,7 +13,7 @@
 		{
 			id: "75568FD704BF8034"
 			x: 0.5d
-			y: 2.96d
+			y: 3.26d
 			icon: {
 				id: "create:large_cogwheel"
 				count: 1
@@ -45,8 +45,8 @@
 		}
 		{
 			id: "29C589728E7570CC"
-			x: 0.0d
-			y: 7.760000000000001d
+			x: 6.3d
+			y: 5.66d
 			hide_dependency_lines: true
 			dependencies: [
 				"75568FD704BF8034"
@@ -81,8 +81,8 @@
 		}
 		{
 			id: "241DC559B39F9318"
-			x: 3.25d
-			y: 2.46d
+			x: 3.3d
+			y: 3.26d
 			dependencies: [
 				"75568FD704BF8034"
 			]
@@ -116,8 +116,8 @@
 		}
 		{
 			id: "7714EBDF3126946C"
-			x: 2.625d
-			y: 8.135000000000002d
+			x: 8.3d
+			y: 5.66d
 			icon: {
 				id: "create:andesite_alloy"
 				count: 1
@@ -157,8 +157,8 @@
 		}
 		{
 			id: "346226A6919CF5ED"
-			x: 5.25d
-			y: 7.760000000000001d
+			x: 10.899999999999999d
+			y: 4.16d
 			dependencies: [
 				"7714EBDF3126946C"
 			]
@@ -192,8 +192,8 @@
 		}
 		{
 			id: "5A0F97042370EA0C"
-			x: 5.25d
-			y: 9.735000000000001d
+			x: 10.899999999999999d
+			y: 5.66d
 			dependencies: [
 				"7714EBDF3126946C"
 			]
@@ -227,8 +227,8 @@
 		}
 		{
 			id: "6F9A91933C4AAD8D"
-			x: 7.5d
-			y: 7.760000000000001d
+			x: 12.899999999999999d
+			y: 5.66d
 			dependencies: [
 				"5A0F97042370EA0C"
 			]
@@ -271,8 +271,8 @@
 		}
 		{
 			id: "22CEF6D0015D619D"
-			x: 9.75d
-			y: 7.760000000000001d
+			x: 14.899999999999999d
+			y: 5.66d
 			dependencies: [
 				"6F9A91933C4AAD8D"
 				"346226A6919CF5ED"
@@ -307,8 +307,8 @@
 		}
 		{
 			id: "7B30A0EAE22BB188"
-			x: 5.25d
-			y: 11.71d
+			x: 10.899999999999999d
+			y: 7.16d
 			dependencies: [
 				"7714EBDF3126946C"
 			]
@@ -343,7 +343,7 @@
 		{
 			id: "4BE024A205775B96"
 			x: 0.375d
-			y: 24.16d
+			y: 14.11d
 			icon: {
 				id: "create:water_wheel"
 				count: 1
@@ -385,8 +385,8 @@
 		}
 		{
 			id: "2317887B956B082D"
-			x: 3.0d
-			y: 23.785d
+			x: 2.975d
+			y: 12.51d
 			dependencies: [
 				"4BE024A205775B96"
 			]
@@ -416,8 +416,8 @@
 		}
 		{
 			id: "3F19701DFAC9B458"
-			x: 3.0d
-			y: 31.685000000000002d
+			x: 2.975d
+			y: 11.01d
 			dependencies: [
 				"4BE024A205775B96"
 			]
@@ -451,8 +451,8 @@
 		}
 		{
 			id: "381652550AB417EB"
-			x: 7.2d
-			y: 31.935000000000002d
+			x: 4.975d
+			y: 11.01d
 			icon: {
 				id: "create:windmill_bearing"
 				count: 1
@@ -491,8 +491,8 @@
 		}
 		{
 			id: "4BC868DB964448DD"
-			x: 3.0d
-			y: 25.76d
+			x: 2.975d
+			y: 14.11d
 			icon: {
 				id: "create:stressometer"
 				count: 1
@@ -518,8 +518,9 @@
 		}
 		{
 			id: "2245341EDCCB4659"
-			x: 5.5d
-			y: 23.785d
+			x: 4.975d
+			y: 12.76d
+			hide_dependency_lines: true
 			dependencies: [
 				"4BC868DB964448DD"
 			]
@@ -563,7 +564,7 @@
 		{
 			id: "229483C1400B3FF7"
 			x: 0.375d
-			y: 29.71d
+			y: 15.985d
 			hide_dependency_lines: true
 			dependencies: [
 				"22CEF6D0015D619D"
@@ -598,8 +599,8 @@
 		}
 		{
 			id: "1BD3F8E4CA33C156"
-			x: 3.0d
-			y: 29.71d
+			x: 2.975d
+			y: 15.985d
 			dependencies: [
 				"229483C1400B3FF7"
 			]
@@ -633,13 +634,14 @@
 		}
 		{
 			id: "54AC361B52B8E398"
-			x: 5.5d
-			y: 25.76d
+			x: 4.975d
+			y: 14.11d
 			icon: {
 				id: "create:mechanical_press"
 				count: 1
 			}
 			optional: true
+			hide_dependency_lines: true
 			dependencies: [
 				"4BC868DB964448DD"
 			]
@@ -659,13 +661,14 @@
 		}
 		{
 			id: "1C6AB50CF6C9C109"
-			x: 5.5d
-			y: 27.735d
+			x: 4.975d
+			y: 15.46d
 			icon: {
 				id: "create:millstone"
 				count: 1
 			}
 			optional: true
+			hide_dependency_lines: true
 			dependencies: [
 				"4BC868DB964448DD"
 			]
@@ -685,13 +688,14 @@
 		}
 		{
 			id: "4EF70CDED4C9B534"
-			x: 5.5d
-			y: 29.71d
+			x: 6.324999999999999d
+			y: 12.76d
 			icon: {
 				id: "create:mechanical_mixer"
 				count: 1
 			}
 			optional: true
+			hide_dependency_lines: true
 			dependencies: [
 				"4BC868DB964448DD"
 			]
@@ -711,13 +715,14 @@
 		}
 		{
 			id: "72DA0FE948C39C39"
-			x: 5.5d
-			y: 31.685000000000002d
+			x: 6.324999999999999d
+			y: 14.11d
 			icon: {
 				id: "create:mechanical_saw"
 				count: 1
 			}
 			optional: true
+			hide_dependency_lines: true
 			dependencies: [
 				"4BC868DB964448DD"
 			]
@@ -737,13 +742,14 @@
 		}
 		{
 			id: "462C595130F254F7"
-			x: 7.2d
-			y: 23.785d
+			x: 6.324999999999999d
+			y: 15.46d
 			icon: {
 				id: "create:mechanical_drill"
 				count: 1
 			}
 			optional: true
+			hide_dependency_lines: true
 			dependencies: [
 				"4BC868DB964448DD"
 			]
@@ -763,13 +769,14 @@
 		}
 		{
 			id: "6E702C3E467A77B5"
-			x: 7.2d
-			y: 25.76d
+			x: 7.675000000000001d
+			y: 12.76d
 			icon: {
 				id: "create:mechanical_pump"
 				count: 1
 			}
 			optional: true
+			hide_dependency_lines: true
 			dependencies: [
 				"4BC868DB964448DD"
 			]
@@ -789,13 +796,14 @@
 		}
 		{
 			id: "5958C46A8187CB16"
-			x: 7.2d
-			y: 27.735d
+			x: 7.675000000000001d
+			y: 14.11d
 			icon: {
 				id: "create:encased_fan"
 				count: 1
 			}
 			optional: true
+			hide_dependency_lines: true
 			dependencies: [
 				"4BC868DB964448DD"
 			]
@@ -815,13 +823,14 @@
 		}
 		{
 			id: "15F4B91A255154E7"
-			x: 7.2d
-			y: 29.71d
+			x: 7.675000000000001d
+			y: 15.46d
 			icon: {
 				id: "create:mechanical_bearing"
 				count: 1
 			}
 			optional: true
+			hide_dependency_lines: true
 			dependencies: [
 				"4BC868DB964448DD"
 			]
@@ -842,7 +851,7 @@
 		{
 			id: "5978B86F57E43FCE"
 			x: 0.25d
-			y: 52.65999999999999d
+			y: 29.36d
 			hide_dependency_lines: true
 			dependencies: [
 				"4BE024A205775B96"
@@ -878,7 +887,7 @@
 		{
 			id: "61B89DC3CE373DEA"
 			x: 0.25d
-			y: 54.75999999999999d
+			y: 27.61d
 			icon: {
 				id: "create:mechanical_press"
 				count: 1
@@ -919,8 +928,8 @@
 		}
 		{
 			id: "241A49BCFA3B8B74"
-			x: 2.75d
-			y: 52.65999999999999d
+			x: 2.65d
+			y: 27.61d
 			dependencies: [
 				"61B89DC3CE373DEA"
 			]
@@ -954,8 +963,8 @@
 		}
 		{
 			id: "276438D2CFD81BB2"
-			x: 5.25d
-			y: 52.90999999999999d
+			x: 4.65d
+			y: 27.61d
 			icon: {
 				id: "create:iron_sheet"
 				count: 1
@@ -1014,8 +1023,8 @@
 		}
 		{
 			id: "2F5EEFB7045A6E96"
-			x: 8.0d
-			y: 52.65999999999999d
+			x: 7.050000000000001d
+			y: 27.61d
 			dependencies: [
 				"276438D2CFD81BB2"
 			]
@@ -1049,8 +1058,8 @@
 		}
 		{
 			id: "1DA3D76FDF9593AD"
-			x: 10.5d
-			y: 52.65999999999999d
+			x: 9.450000000000001d
+			y: 27.61d
 			dependencies: [
 				"2F5EEFB7045A6E96"
 			]
@@ -1084,8 +1093,8 @@
 		}
 		{
 			id: "45E7FB9BFAB4A8C0"
-			x: 0.5d
-			y: 65.60999999999999d
+			x: 14.950000000000001d
+			y: 23.86d
 			icon: {
 				id: "create:mechanical_mixer"
 				count: 1
@@ -1122,8 +1131,8 @@
 		}
 		{
 			id: "3DD498AA75B86A98"
-			x: 3.25d
-			y: 65.10999999999999d
+			x: 17.75d
+			y: 23.86d
 			dependencies: [
 				"45E7FB9BFAB4A8C0"
 			]
@@ -1157,8 +1166,8 @@
 		}
 		{
 			id: "45318D85DBDBF88B"
-			x: 8.0d
-			y: 54.50999999999999d
+			x: 7.050000000000001d
+			y: 23.11d
 			dependencies: [
 				"276438D2CFD81BB2"
 			]
@@ -1183,8 +1192,8 @@
 		}
 		{
 			id: "27255D3C2EA07E44"
-			x: 8.0d
-			y: 56.35999999999999d
+			x: 7.050000000000001d
+			y: 24.61d
 			dependencies: [
 				"276438D2CFD81BB2"
 			]
@@ -1209,8 +1218,8 @@
 		}
 		{
 			id: "12CB480E03948751"
-			x: 12.75d
-			y: 52.65999999999999d
+			x: 11.450000000000001d
+			y: 27.61d
 			icon: {
 				id: "minecraft:andesite"
 				count: 1
@@ -1248,8 +1257,8 @@
 		}
 		{
 			id: "2AF9D599B1A1865F"
-			x: 8.0d
-			y: 58.209999999999994d
+			x: 7.050000000000001d
+			y: 26.11d
 			dependencies: [
 				"276438D2CFD81BB2"
 			]
@@ -1283,8 +1292,8 @@
 		}
 		{
 			id: "2BAE5A98D0EA2865"
-			x: 8.0d
-			y: 60.30999999999999d
+			x: 7.050000000000001d
+			y: 29.36d
 			icon: {
 				id: "create:encased_fan"
 				count: 1
@@ -1323,8 +1332,9 @@
 		}
 		{
 			id: "312F5B3F213A69D5"
-			x: 10.5d
-			y: 54.50999999999999d
+			x: 9.450000000000001d
+			y: 29.36d
+			hide_dependency_lines: true
 			dependencies: [
 				"2BAE5A98D0EA2865"
 				"5978B86F57E43FCE"
@@ -1359,8 +1369,8 @@
 		}
 		{
 			id: "22B2CF5D1284331D"
-			x: 10.5d
-			y: 56.35999999999999d
+			x: 9.450000000000001d
+			y: 30.86d
 			icon: {
 				id: "minecraft:lava_bucket"
 				count: 1
@@ -1399,7 +1409,7 @@
 		{
 			id: "29FC33824A470023"
 			x: 0.375d
-			y: 71.03499999999998d
+			y: 34.835d
 			icon: {
 				id: "create:belt_connector"
 				count: 1
@@ -1440,8 +1450,8 @@
 		}
 		{
 			id: "5A911226C416703F"
-			x: 3.0d
-			y: 70.65999999999998d
+			x: 2.975d
+			y: 36.335d
 			dependencies: [
 				"29FC33824A470023"
 			]
@@ -1475,8 +1485,8 @@
 		}
 		{
 			id: "45C139102FB99314"
-			x: 3.0d
-			y: 72.63499999999998d
+			x: 2.975d
+			y: 34.835d
 			dependencies: [
 				"29FC33824A470023"
 			]
@@ -1510,8 +1520,8 @@
 		}
 		{
 			id: "1379F4079A3F6F71"
-			x: 5.25d
-			y: 72.63499999999998d
+			x: 4.975d
+			y: 36.335d
 			optional: true
 			dependencies: [
 				"45C139102FB99314"
@@ -1537,8 +1547,8 @@
 		}
 		{
 			id: "7A7A863777ED7392"
-			x: 5.25d
-			y: 70.65999999999998d
+			x: 4.975d
+			y: 34.835d
 			dependencies: [
 				"45C139102FB99314"
 			]
@@ -1568,8 +1578,8 @@
 		}
 		{
 			id: "4CE3E78D9929AB65"
-			x: 7.75d
-			y: 70.90999999999998d
+			x: 6.975d
+			y: 34.835d
 			icon: {
 				id: "create:packager"
 				count: 1
@@ -1615,8 +1625,8 @@
 		}
 		{
 			id: "322ED1DE454A12EE"
-			x: 10.25d
-			y: 70.65999999999998d
+			x: 9.375d
+			y: 36.335d
 			dependencies: [
 				"4CE3E78D9929AB65"
 			]
@@ -1659,8 +1669,8 @@
 		}
 		{
 			id: "5E68E2BEB095CBFA"
-			x: 10.25d
-			y: 72.63499999999998d
+			x: 9.375d
+			y: 34.835d
 			dependencies: [
 				"4CE3E78D9929AB65"
 			]
@@ -1690,8 +1700,8 @@
 		}
 		{
 			id: "69720528BCB75EF8"
-			x: 12.75d
-			y: 72.88499999999998d
+			x: 11.375d
+			y: 34.835d
 			icon: {
 				id: "create:stock_ticker"
 				count: 1
@@ -1726,8 +1736,8 @@
 		}
 		{
 			id: "2370380F3F646B9D"
-			x: 15.25d
-			y: 70.65999999999998d
+			x: 13.775d
+			y: 34.835d
 			optional: true
 			dependencies: [
 				"69720528BCB75EF8"
@@ -1762,8 +1772,8 @@
 		}
 		{
 			id: "4E3BC45CEF1125D2"
-			x: 12.75d
-			y: 70.65999999999998d
+			x: 11.375d
+			y: 36.585d
 			optional: true
 			dependencies: [
 				"5E68E2BEB095CBFA"
@@ -1798,8 +1808,8 @@
 		}
 		{
 			id: "706D7598F3CB0BAC"
-			x: 0.0d
-			y: 16.885d
+			x: 17.9d
+			y: 4.41d
 			hide_dependency_lines: true
 			dependencies: [
 				"276438D2CFD81BB2"
@@ -1834,8 +1844,8 @@
 		}
 		{
 			id: "19D95AC6E580C602"
-			x: 2.25d
-			y: 16.885d
+			x: 19.9d
+			y: 4.41d
 			dependencies: [
 				"706D7598F3CB0BAC"
 			]
@@ -1869,8 +1879,8 @@
 		}
 		{
 			id: "7DF5DF1A7C262E36"
-			x: 4.75d
-			y: 17.135d
+			x: 21.9d
+			y: 4.41d
 			icon: {
 				id: "create:mechanical_pump"
 				count: 1
@@ -1905,8 +1915,8 @@
 		}
 		{
 			id: "28261DC588E02FAE"
-			x: 7.25d
-			y: 16.885d
+			x: 24.299999999999997d
+			y: 4.41d
 			dependencies: [
 				"7DF5DF1A7C262E36"
 			]
@@ -1936,8 +1946,8 @@
 		}
 		{
 			id: "6328CD94686BFEBA"
-			x: 7.25d
-			y: 18.735000000000003d
+			x: 24.299999999999997d
+			y: 5.91d
 			dependencies: [
 				"7DF5DF1A7C262E36"
 			]
@@ -1980,8 +1990,8 @@
 		}
 		{
 			id: "332463EBF3008F15"
-			x: 2.25d
-			y: 18.735000000000003d
+			x: 19.9d
+			y: 5.91d
 			optional: true
 			dependencies: [
 				"706D7598F3CB0BAC"
@@ -2025,8 +2035,8 @@
 		}
 		{
 			id: "719DC7EB567A6482"
-			x: 0.0d
-			y: 36.85999999999999d
+			x: 10.675d
+			y: 13.76d
 			hide_dependency_lines: true
 			dependencies: [
 				"22CEF6D0015D619D"
@@ -2052,8 +2062,8 @@
 		}
 		{
 			id: "49C4AEBBED144162"
-			x: 2.5d
-			y: 36.85999999999999d
+			x: 12.675d
+			y: 13.76d
 			dependencies: [
 				"719DC7EB567A6482"
 			]
@@ -2087,8 +2097,8 @@
 		}
 		{
 			id: "4B55AB4C0358AE0B"
-			x: 2.5d
-			y: 38.959999999999994d
+			x: 12.675d
+			y: 10.76d
 			dependencies: [
 				"719DC7EB567A6482"
 			]
@@ -2122,8 +2132,8 @@
 		}
 		{
 			id: "5C65CFED73840F41"
-			x: 5.5d
-			y: 36.85999999999999d
+			x: 15.075000000000001d
+			y: 12.26d
 			dependencies: [
 				"49C4AEBBED144162"
 			]
@@ -2148,8 +2158,8 @@
 		}
 		{
 			id: "4975B82B0B560B4B"
-			x: 5.5d
-			y: 41.059999999999995d
+			x: 15.075000000000001d
+			y: 10.76d
 			optional: true
 			dependencies: [
 				"4B55AB4C0358AE0B"
@@ -2184,8 +2194,8 @@
 		}
 		{
 			id: "26C5589E348B9115"
-			x: 5.5d
-			y: 38.959999999999994d
+			x: 15.075000000000001d
+			y: 13.76d
 			optional: true
 			dependencies: [
 				"49C4AEBBED144162"
@@ -2220,8 +2230,8 @@
 		}
 		{
 			id: "56C632080F52C99B"
-			x: 8.25d
-			y: 36.85999999999999d
+			x: 17.875d
+			y: 13.76d
 			icon: {
 				id: "create:mechanical_saw"
 				count: 1
@@ -2260,8 +2270,8 @@
 		}
 		{
 			id: "5F452D140A574530"
-			x: 2.5d
-			y: 43.41d
+			x: 12.675d
+			y: 15.51d
 			icon: {
 				id: "create:mechanical_drill"
 				count: 1
@@ -2296,8 +2306,8 @@
 		}
 		{
 			id: "1E6A70DE20166D82"
-			x: 5.5d
-			y: 43.66d
+			x: 15.075000000000001d
+			y: 19.009999999999998d
 			icon: {
 				id: "minecraft:cobblestone"
 				count: 1
@@ -2333,8 +2343,8 @@
 		}
 		{
 			id: "4E13CE882E876E3A"
-			x: 5.5d
-			y: 45.25999999999999d
+			x: 15.075000000000001d
+			y: 15.51d
 			optional: true
 			dependencies: [
 				"5F452D140A574530"
@@ -2378,8 +2388,8 @@
 		}
 		{
 			id: "5DA5F6B45F83998C"
-			x: 5.5d
-			y: 47.35999999999999d
+			x: 15.075000000000001d
+			y: 17.009999999999998d
 			dependencies: [
 				"5F452D140A574530"
 			]
@@ -2409,8 +2419,8 @@
 		}
 		{
 			id: "614A73700EB8ED76"
-			x: 6.25d
-			y: 65.85999999999999d
+			x: 19.75d
+			y: 23.86d
 			icon: {
 				id: "create:andesite_alloy"
 				count: 1
@@ -2448,8 +2458,8 @@
 		}
 		{
 			id: "3F74FE18841B810E"
-			x: 9.25d
-			y: 65.10999999999999d
+			x: 22.950000000000003d
+			y: 23.86d
 			icon: {
 				id: "create:zinc_ingot"
 				count: 1
@@ -2506,8 +2516,8 @@
 		{
 			id: "1428C07C9562818E"
 			image: "kronwerke:textures/quests/create/basics.png"
-			x: 1.505d
-			y: 6.410000000000001d
+			x: 7.805d
+			y: 2.71d
 			width: 4.01d
 			height: 0.9d
 			rotation: 0.0d
@@ -2516,8 +2526,8 @@
 		{
 			id: "1C2F3E26F2B04F47"
 			image: "kronwerke:textures/quests/create/fluids.png"
-			x: 0.5800000000000001d
-			y: 15.535000000000002d
+			x: 18.479999999999997d
+			y: 2.71d
 			width: 2.16d
 			height: 0.9d
 			rotation: 0.0d
@@ -2527,7 +2537,7 @@
 			id: "44E0E4D1FC48360D"
 			image: "kronwerke:textures/quests/create/power.png"
 			x: 0.7749999999999999d
-			y: 22.435d
+			y: 9.309999999999999d
 			width: 2.55d
 			height: 0.9d
 			rotation: 0.0d
@@ -2536,8 +2546,8 @@
 		{
 			id: "5CE4E208743A24C0"
 			image: "kronwerke:textures/quests/create/contraptions.png"
-			x: 1.9700000000000002d
-			y: 35.51d
+			x: 12.645000000000001d
+			y: 9.309999999999999d
 			width: 4.94d
 			height: 0.9d
 			rotation: 0.0d
@@ -2547,7 +2557,7 @@
 			id: "29AC229FFAA6E259"
 			image: "kronwerke:textures/quests/create/processing.png"
 			x: 1.7349999999999999d
-			y: 51.309999999999995d
+			y: 21.66d
 			width: 4.47d
 			height: 0.9d
 			rotation: 0.0d
@@ -2556,8 +2566,8 @@
 		{
 			id: "24A10CEF4C276197"
 			image: "kronwerke:textures/quests/create/goal.png"
-			x: 0.835d
-			y: 63.75999999999999d
+			x: 15.285d
+			y: 21.66d
 			width: 2.67d
 			height: 0.9d
 			rotation: 0.0d
@@ -2567,7 +2577,7 @@
 			id: "3FB56EC2AF7EC306"
 			image: "kronwerke:textures/quests/create/logistics.png"
 			x: 1.7650000000000001d
-			y: 69.30999999999999d
+			y: 33.010000000000005d
 			width: 4.53d
 			height: 0.9d
 			rotation: 0.0d

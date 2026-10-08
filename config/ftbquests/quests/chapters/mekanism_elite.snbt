@@ -13,7 +13,7 @@
 		{
 			id: "28CA7B6A7DBC85F5"
 			x: 0.5d
-			y: 2.8200000000000003d
+			y: 3.12d
 			icon: {
 				id: "mekanism:elite_control_circuit"
 				count: 1
@@ -55,8 +55,8 @@
 		}
 		{
 			id: "16C0A3D421647E75"
-			x: 0.375d
-			y: 7.62d
+			x: 4.375d
+			y: 6.27d
 			hide_dependency_lines: true
 			dependencies: [
 				"28CA7B6A7DBC85F5"
@@ -95,8 +95,8 @@
 		}
 		{
 			id: "6A03B7F54126F192"
-			x: 0.375d
-			y: 9.97d
+			x: 4.375d
+			y: 4.395d
 			icon: {
 				id: "mekanism:ultimate_control_circuit"
 				count: 1
@@ -143,8 +143,8 @@
 		}
 		{
 			id: "7143E694F34F4B20"
-			x: 3.0d
-			y: 7.62d
+			x: 6.975d
+			y: 6.27d
 			icon: {
 				id: "mekanism:elite_tier_installer"
 				count: 1
@@ -187,12 +187,13 @@
 		}
 		{
 			id: "4F989279349B6783"
-			x: 5.25d
-			y: 7.62d
+			x: 8.975d
+			y: 6.27d
 			icon: {
 				id: "mekanism:ultimate_tier_installer"
 				count: 1
 			}
+			hide_dependency_lines: true
 			dependencies: [
 				"7143E694F34F4B20"
 				"6A03B7F54126F192"
@@ -232,8 +233,8 @@
 		}
 		{
 			id: "1CF535A43EB8DF37"
-			x: 3.0d
-			y: 11.57d
+			x: 6.975d
+			y: 4.395d
 			icon: {
 				id: "mekanism:ultimate_universal_cable"
 				count: 1
@@ -281,8 +282,8 @@
 		}
 		{
 			id: "6754881034BDBFA8"
-			x: 5.25d
-			y: 9.595d
+			x: 8.975d
+			y: 4.395d
 			icon: {
 				id: "mekanism:ultimate_energy_cube"
 				count: 1
@@ -321,8 +322,8 @@
 		}
 		{
 			id: "20621856B534C213"
-			x: 3.0d
-			y: 9.595d
+			x: 6.975d
+			y: 7.77d
 			icon: {
 				id: "mekanism:combiner"
 				count: 1
@@ -361,8 +362,8 @@
 		}
 		{
 			id: "112AC0A1331E07F9"
-			x: 0.0d
-			y: 16.745d
+			x: 12.36d
+			y: 4.395d
 			icon: {
 				id: "mekanism:dust_lithium"
 				count: 1
@@ -401,8 +402,8 @@
 		}
 		{
 			id: "43EF8F41A15FD63B"
-			x: 2.25d
-			y: 16.745d
+			x: 14.36d
+			y: 4.395d
 			icon: {
 				id: "mekanism:induction_port"
 				count: 1
@@ -449,8 +450,8 @@
 		}
 		{
 			id: "2D58F5B9C9604F89"
-			x: 4.5d
-			y: 16.745d
+			x: 16.36d
+			y: 4.395d
 			icon: {
 				id: "mekanism:basic_induction_cell"
 				count: 1
@@ -488,8 +489,8 @@
 		}
 		{
 			id: "60EDDBB2054A9775"
-			x: 4.5d
-			y: 18.720000000000002d
+			x: 16.36d
+			y: 5.895d
 			icon: {
 				id: "mekanism:basic_induction_provider"
 				count: 1
@@ -527,8 +528,8 @@
 		}
 		{
 			id: "215E4B15BA7B91FF"
-			x: 7.125d
-			y: 17.12d
+			x: 18.36d
+			y: 4.395d
 			icon: {
 				id: "mekanism:induction_casing"
 				count: 1
@@ -570,7 +571,7 @@
 		{
 			id: "619975337A99582F"
 			x: 0.25d
-			y: 24.145d
+			y: 11.745000000000001d
 			icon: {
 				id: "mekanism:quantum_entangloporter"
 				count: 1
@@ -615,8 +616,8 @@
 		}
 		{
 			id: "416E9A199B0DF656"
-			x: 3.125d
-			y: 24.27d
+			x: 2.65d
+			y: 11.745000000000001d
 			icon: {
 				id: "mekanism:qio_drive_array"
 				count: 1
@@ -670,8 +671,8 @@
 		}
 		{
 			id: "7626B4C894018396"
-			x: 5.75d
-			y: 23.895d
+			x: 5.25d
+			y: 11.745000000000001d
 			icon: {
 				id: "mekanism:qio_dashboard"
 				count: 1
@@ -709,8 +710,8 @@
 		}
 		{
 			id: "2F15623340FF9B3F"
-			x: 5.75d
-			y: 25.87d
+			x: 5.25d
+			y: 13.245000000000001d
 			icon: {
 				id: "mekanism:qio_importer"
 				count: 1
@@ -758,8 +759,8 @@
 		}
 		{
 			id: "342A8C6B854B4A74"
-			x: 8.0d
-			y: 23.895d
+			x: 7.25d
+			y: 11.745000000000001d
 			icon: {
 				id: "mekanism:portable_qio_dashboard"
 				count: 1
@@ -800,8 +801,8 @@
 		}
 		{
 			id: "1D36723ED39C884B"
-			x: 3.125d
-			y: 25.87d
+			x: 2.65d
+			y: 13.620000000000001d
 			icon: {
 				id: "mekanism:dimensional_stabilizer"
 				count: 1
@@ -840,8 +841,8 @@
 		}
 		{
 			id: "69BF2A95F5E4E623"
-			x: 0.0d
-			y: 31.044999999999998d
+			x: 10.25d
+			y: 14.370000000000001d
 			icon: {
 				id: "mekanism:laser"
 				count: 1
@@ -889,8 +890,8 @@
 		}
 		{
 			id: "7D69F29F6C3D572D"
-			x: 2.5d
-			y: 31.044999999999998d
+			x: 12.25d
+			y: 14.370000000000001d
 			icon: {
 				id: "mekanismgenerators:deuterium_bucket"
 				count: 1
@@ -928,8 +929,8 @@
 		}
 		{
 			id: "1B859A0C402A281A"
-			x: 2.5d
-			y: 33.144999999999996d
+			x: 12.25d
+			y: 12.870000000000001d
 			icon: {
 				id: "mekanismgenerators:tritium_bucket"
 				count: 1
@@ -978,8 +979,8 @@
 		}
 		{
 			id: "2F56437A46E9AD0E"
-			x: 5.0d
-			y: 31.044999999999998d
+			x: 14.65d
+			y: 14.370000000000001d
 			icon: {
 				id: "mekanismgenerators:hohlraum"
 				count: 1
@@ -1027,8 +1028,8 @@
 		}
 		{
 			id: "24EC81B106F356D9"
-			x: 2.5d
-			y: 35.245d
+			x: 12.25d
+			y: 11.370000000000001d
 			icon: {
 				id: "mekanismgenerators:laser_focus_matrix"
 				count: 1
@@ -1075,8 +1076,8 @@
 		}
 		{
 			id: "7FCD2127F1C55ED4"
-			x: 2.5d
-			y: 37.595d
+			x: 12.25d
+			y: 16.12d
 			icon: {
 				id: "mekanism:pellet_polonium"
 				count: 1
@@ -1121,8 +1122,8 @@
 		}
 		{
 			id: "3FB874C07A9A0C98"
-			x: 5.0d
-			y: 33.144999999999996d
+			x: 14.65d
+			y: 16.12d
 			icon: {
 				id: "mekanismgenerators:fusion_reactor_frame"
 				count: 1
@@ -1169,14 +1170,15 @@
 		}
 		{
 			id: "442AB303E889EDA0"
-			x: 7.75d
-			y: 31.544999999999998d
+			x: 16.65d
+			y: 14.370000000000001d
 			icon: {
 				id: "mekanismgenerators:fusion_reactor_controller"
 				count: 1
 			}
 			size: 2.0d
 			shape: "gear"
+			hide_dependency_lines: true
 			dependencies: [
 				"2F56437A46E9AD0E"
 				"24EC81B106F356D9"
@@ -1218,7 +1220,7 @@
 		{
 			id: "12CE3B645569B51A"
 			x: 0.0d
-			y: 42.644999999999996d
+			y: 20.345d
 			icon: {
 				id: "mekanism:hdpe_sheet"
 				count: 1
@@ -1257,8 +1259,8 @@
 		}
 		{
 			id: "2F95F6FA4A2C168D"
-			x: 2.25d
-			y: 42.644999999999996d
+			x: 2.0d
+			y: 20.345d
 			icon: {
 				id: "mekanism:modification_station"
 				count: 1
@@ -1298,8 +1300,8 @@
 		}
 		{
 			id: "72173DD90F34093A"
-			x: 4.5d
-			y: 42.644999999999996d
+			x: 4.0d
+			y: 20.345d
 			icon: {
 				id: "mekanism:module_base"
 				count: 1
@@ -1337,8 +1339,8 @@
 		}
 		{
 			id: "1CDEECC369D87ED6"
-			x: 7.125d
-			y: 42.644999999999996d
+			x: 6.0d
+			y: 22.22d
 			icon: {
 				id: "mekanism:module_jetpack_unit"
 				count: 1
@@ -1386,8 +1388,8 @@
 		}
 		{
 			id: "33C0F5D885E9ED2E"
-			x: 7.125d
-			y: 44.995d
+			x: 6.0d
+			y: 20.345d
 			icon: {
 				id: "mekanism:mekasuit_helmet"
 				count: 1
@@ -1459,8 +1461,8 @@
 		}
 		{
 			id: "7CCBE9415D2A60EF"
-			x: 9.75d
-			y: 42.644999999999996d
+			x: 8.6d
+			y: 20.345d
 			icon: {
 				id: "mekanism:meka_tool"
 				count: 1
@@ -1498,8 +1500,8 @@
 		}
 		{
 			id: "124DBFC71F224682"
-			x: 0.0d
-			y: 49.794999999999995d
+			x: 11.6d
+			y: 19.97d
 			icon: {
 				id: "mekmm:presser"
 				count: 1
@@ -1543,8 +1545,8 @@
 		}
 		{
 			id: "23E724AA117F95D3"
-			x: 2.25d
-			y: 49.794999999999995d
+			x: 13.6d
+			y: 19.97d
 			icon: {
 				id: "mekmm:planting_station"
 				count: 1
@@ -1583,8 +1585,8 @@
 		}
 		{
 			id: "11B4C1BD496F1FC7"
-			x: 4.5d
-			y: 49.794999999999995d
+			x: 15.6d
+			y: 19.97d
 			icon: {
 				id: "mekmm:large_chemical_infuser"
 				count: 1
@@ -1628,8 +1630,8 @@
 		}
 		{
 			id: "2E38DEE7DEFA0E17"
-			x: 10.5d
-			y: 31.044999999999998d
+			x: 19.45d
+			y: 14.370000000000001d
 			icon: {
 				id: "mekanism:pellet_polonium"
 				count: 1
@@ -1654,8 +1656,8 @@
 		}
 		{
 			id: "171A859BCBDB1A9F"
-			x: 10.5d
-			y: 33.144999999999996d
+			x: 19.45d
+			y: 15.870000000000001d
 			icon: {
 				id: "mekanismgenerators:fusion_reactor_frame"
 				count: 1
@@ -1680,8 +1682,8 @@
 		}
 		{
 			id: "120E466F21A0C847"
-			x: 0.0d
-			y: 54.59499999999999d
+			x: 19.35d
+			y: 20.72d
 			icon: {
 				id: "mekanism:elite_control_circuit"
 				count: 1
@@ -1751,8 +1753,8 @@
 		{
 			id: "3DA8EBDDA3D144AD"
 			image: "kronwerke:textures/quests/mekanism_elite/tiers.png"
-			x: 2.68d
-			y: 6.2700000000000005d
+			x: 6.68d
+			y: 2.5700000000000003d
 			width: 6.36d
 			height: 0.9d
 			rotation: 0.0d
@@ -1761,8 +1763,8 @@
 		{
 			id: "478A19B60190C1A6"
 			image: "kronwerke:textures/quests/mekanism_elite/induction.png"
-			x: 2.445d
-			y: 15.395000000000001d
+			x: 14.805d
+			y: 2.5700000000000003d
 			width: 5.89d
 			height: 0.9d
 			rotation: 0.0d
@@ -1772,7 +1774,7 @@
 			id: "615A9EB7FECDFECB"
 			image: "kronwerke:textures/quests/mekanism_elite/quantum.png"
 			x: 1.9649999999999999d
-			y: 22.544999999999998d
+			y: 9.92d
 			width: 4.93d
 			height: 0.9d
 			rotation: 0.0d
@@ -1781,8 +1783,8 @@
 		{
 			id: "67EC1A0B88E5D7C5"
 			image: "kronwerke:textures/quests/mekanism_elite/fusion.png"
-			x: 0.645d
-			y: 29.694999999999997d
+			x: 10.895d
+			y: 9.92d
 			width: 2.29d
 			height: 0.9d
 			rotation: 0.0d
@@ -1792,7 +1794,7 @@
 			id: "2E6DDA76BF3EB3DF"
 			image: "kronwerke:textures/quests/mekanism_elite/mekasuit.png"
 			x: 1.08d
-			y: 41.295d
+			y: 18.52d
 			width: 3.16d
 			height: 0.9d
 			rotation: 0.0d
@@ -1801,8 +1803,8 @@
 		{
 			id: "1A4FBA822A1D7A28"
 			image: "kronwerke:textures/quests/mekanism_elite/mekmm.png"
-			x: 1.7799999999999998d
-			y: 48.445d
+			x: 13.379999999999999d
+			y: 18.52d
 			width: 4.56d
 			height: 0.9d
 			rotation: 0.0d
@@ -1811,8 +1813,8 @@
 		{
 			id: "7129956A502B7B68"
 			image: "kronwerke:textures/quests/mekanism_elite/goal.png"
-			x: 0.835d
-			y: 53.245d
+			x: 19.435000000000002d
+			y: 18.52d
 			width: 2.67d
 			height: 0.9d
 			rotation: 0.0d

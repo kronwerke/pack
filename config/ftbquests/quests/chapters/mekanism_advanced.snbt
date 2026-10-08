@@ -13,7 +13,7 @@
 		{
 			id: "54963D0F4E454E78"
 			x: 0.5d
-			y: 2.8200000000000003d
+			y: 3.12d
 			icon: {
 				id: "mekanism:advanced_control_circuit"
 				count: 1
@@ -56,8 +56,8 @@
 		}
 		{
 			id: "6B7068DB0C72C3E9"
-			x: 12.25d
-			y: 11.820000000000002d
+			x: 6.3d
+			y: 8.62d
 			hide_dependency_lines: true
 			dependencies: [
 				"54963D0F4E454E78"
@@ -96,8 +96,8 @@
 		}
 		{
 			id: "36EDB6B17D96E31E"
-			x: 0.0d
-			y: 11.820000000000002d
+			x: 6.3d
+			y: 5.52d
 			icon: {
 				id: "mekanism:enriched_diamond"
 				count: 1
@@ -136,8 +136,8 @@
 		}
 		{
 			id: "6FD207C48096D020"
-			x: 2.25d
-			y: 11.820000000000002d
+			x: 8.3d
+			y: 4.02d
 			dependencies: [
 				"36EDB6B17D96E31E"
 			]
@@ -171,8 +171,8 @@
 		}
 		{
 			id: "22D3854A540448FE"
-			x: 2.25d
-			y: 13.670000000000002d
+			x: 8.3d
+			y: 5.52d
 			icon: {
 				id: "mekanism:osmium_compressor"
 				count: 1
@@ -210,8 +210,8 @@
 		}
 		{
 			id: "5D2F7A3290E4A328"
-			x: 4.5d
-			y: 13.670000000000002d
+			x: 10.3d
+			y: 5.52d
 			icon: {
 				id: "mekanism:ingot_refined_obsidian"
 				count: 1
@@ -263,8 +263,8 @@
 		}
 		{
 			id: "7E1A82B2D5A5882A"
-			x: 4.5d
-			y: 11.820000000000002d
+			x: 10.3d
+			y: 7.02d
 			icon: {
 				id: "mekanism:ingot_refined_glowstone"
 				count: 1
@@ -302,8 +302,8 @@
 		}
 		{
 			id: "4A16044EE4AB1568"
-			x: 7.0d
-			y: 12.070000000000002d
+			x: 12.3d
+			y: 5.52d
 			icon: {
 				id: "mekanism:alloy_atomic"
 				count: 1
@@ -350,7 +350,7 @@
 		{
 			id: "754715686E891103"
 			x: 0.0d
-			y: 18.720000000000002d
+			y: 12.47d
 			icon: {
 				id: "mekanism:teleportation_core"
 				count: 1
@@ -389,8 +389,8 @@
 		}
 		{
 			id: "3681668078CC3487"
-			x: 2.5d
-			y: 18.970000000000002d
+			x: 2.0d
+			y: 12.47d
 			icon: {
 				id: "mekanism:teleporter"
 				count: 1
@@ -450,8 +450,8 @@
 		}
 		{
 			id: "6E3A1E12838FE053"
-			x: 5.375d
-			y: 18.720000000000002d
+			x: 4.4d
+			y: 12.47d
 			icon: {
 				id: "mekanism:portable_teleporter"
 				count: 1
@@ -490,8 +490,8 @@
 		}
 		{
 			id: "27376AC476255000"
-			x: 2.5d
-			y: 20.695000000000004d
+			x: 2.0d
+			y: 14.345d
 			icon: {
 				id: "mekanism:robit"
 				count: 1
@@ -529,8 +529,8 @@
 		}
 		{
 			id: "3794F3541B11A4F9"
-			x: 5.375d
-			y: 21.070000000000004d
+			x: 4.4d
+			y: 14.345d
 			icon: {
 				id: "mekanism:digital_miner"
 				count: 1
@@ -575,8 +575,8 @@
 		}
 		{
 			id: "1180EF03053017BE"
-			x: 9.5d
-			y: 11.820000000000002d
+			x: 14.7d
+			y: 5.52d
 			icon: {
 				id: "mekanism:atomic_disassembler"
 				count: 1
@@ -615,8 +615,8 @@
 		}
 		{
 			id: "798C4551585C1E96"
-			x: 0.25d
-			y: 26.12d
+			x: 9.42d
+			y: 12.47d
 			icon: {
 				id: "mekanism:advanced_tier_installer"
 				count: 1
@@ -657,8 +657,8 @@
 		}
 		{
 			id: "15C8A97E51E1DD37"
-			x: 2.75d
-			y: 25.87d
+			x: 11.82d
+			y: 12.47d
 			icon: {
 				id: "mekanism:advanced_purifying_factory"
 				count: 1
@@ -701,8 +701,8 @@
 		}
 		{
 			id: "1135C188C41A2A52"
-			x: 2.75d
-			y: 27.720000000000002d
+			x: 11.82d
+			y: 13.97d
 			icon: {
 				id: "mekanism:advanced_universal_cable"
 				count: 1
@@ -744,8 +744,8 @@
 		}
 		{
 			id: "13844516D73F8074"
-			x: 5.0d
-			y: 27.720000000000002d
+			x: 13.82d
+			y: 13.97d
 			optional: true
 			dependencies: [
 				"1135C188C41A2A52"
@@ -775,8 +775,8 @@
 		}
 		{
 			id: "1C92E630E7985B10"
-			x: 5.0d
-			y: 25.87d
+			x: 13.82d
+			y: 12.47d
 			icon: {
 				id: "mekanism:advanced_chemical_tank"
 				count: 1
@@ -825,7 +825,7 @@
 		{
 			id: "16ADC81D8EEB6C5D"
 			x: 0.0d
-			y: 32.769999999999996d
+			y: 18.569999999999997d
 			icon: {
 				id: "mekanism:thermal_evaporation_block"
 				count: 1
@@ -873,8 +873,8 @@
 		}
 		{
 			id: "25D4794FA27CA577"
-			x: 2.5d
-			y: 33.019999999999996d
+			x: 2.0d
+			y: 18.569999999999997d
 			icon: {
 				id: "mekanism:thermal_evaporation_controller"
 				count: 1
@@ -928,8 +928,8 @@
 		}
 		{
 			id: "470994827F2ECC74"
-			x: 5.0d
-			y: 32.769999999999996d
+			x: 4.4d
+			y: 18.569999999999997d
 			icon: {
 				id: "mekanism:lithium_bucket"
 				count: 1
@@ -955,7 +955,7 @@
 		{
 			id: "27771EEE904D63E2"
 			x: 0.0d
-			y: 34.62d
+			y: 20.569999999999997d
 			icon: {
 				id: "mekanism:resistive_heater"
 				count: 1
@@ -1003,8 +1003,8 @@
 		}
 		{
 			id: "2ACCF401A4BC26C4"
-			x: 2.5d
-			y: 34.87d
+			x: 2.0d
+			y: 20.569999999999997d
 			icon: {
 				id: "mekanism:boiler_valve"
 				count: 1
@@ -1067,8 +1067,8 @@
 		}
 		{
 			id: "66FF6DCC865DE35A"
-			x: 5.0d
-			y: 34.62d
+			x: 4.4d
+			y: 20.569999999999997d
 			icon: {
 				id: "mekanism:steam_bucket"
 				count: 1
@@ -1093,8 +1093,8 @@
 		}
 		{
 			id: "30B377D49F482D69"
-			x: 0.0d
-			y: 39.669999999999995d
+			x: 7.44d
+			y: 18.819999999999997d
 			icon: {
 				id: "mekanismgenerators:turbine_blade"
 				count: 1
@@ -1146,8 +1146,8 @@
 		}
 		{
 			id: "34E78833D7F6A2B2"
-			x: 2.25d
-			y: 39.669999999999995d
+			x: 9.440000000000001d
+			y: 18.819999999999997d
 			icon: {
 				id: "mekanismgenerators:turbine_casing"
 				count: 1
@@ -1194,8 +1194,8 @@
 		}
 		{
 			id: "19442DD35A319456"
-			x: 4.5d
-			y: 39.669999999999995d
+			x: 11.440000000000001d
+			y: 18.819999999999997d
 			icon: {
 				id: "mekanismgenerators:electromagnetic_coil"
 				count: 1
@@ -1242,8 +1242,8 @@
 		}
 		{
 			id: "674FA4D9163B17A3"
-			x: 7.25d
-			y: 40.169999999999995d
+			x: 13.440000000000001d
+			y: 18.819999999999997d
 			icon: {
 				id: "mekanismgenerators:turbine_valve"
 				count: 1
@@ -1308,8 +1308,8 @@
 		}
 		{
 			id: "3CBACA26528A2779"
-			x: 3.25d
-			y: 2.3200000000000003d
+			x: 3.3d
+			y: 4.62d
 			optional: true
 			dependencies: [
 				"54963D0F4E454E78"
@@ -1344,8 +1344,8 @@
 		}
 		{
 			id: "7B71ACAFDA314EEF"
-			x: 3.25d
-			y: 4.42d
+			x: 3.3d
+			y: 3.12d
 			icon: {
 				id: "mekanism:nutritional_liquifier"
 				count: 1
@@ -1393,8 +1393,8 @@
 		}
 		{
 			id: "4E6CFFE083CDDAAE"
-			x: 3.25d
-			y: 6.5200000000000005d
+			x: 3.3d
+			y: 6.12d
 			optional: true
 			dependencies: [
 				"54963D0F4E454E78"
@@ -1430,7 +1430,7 @@
 		{
 			id: "54C48D8C04913A6E"
 			x: 0.25d
-			y: 45.21999999999999d
+			y: 24.669999999999998d
 			icon: {
 				id: "mekmm:cnc_stamper"
 				count: 1
@@ -1485,8 +1485,8 @@
 		}
 		{
 			id: "37D281EEB924371D"
-			x: 2.75d
-			y: 44.96999999999999d
+			x: 2.65d
+			y: 24.669999999999998d
 			icon: {
 				id: "mekmm:basic_stamping_factory"
 				count: 1
@@ -1525,8 +1525,8 @@
 		}
 		{
 			id: "69B3257A1E5B98E5"
-			x: 2.75d
-			y: 46.81999999999999d
+			x: 2.65d
+			y: 26.169999999999998d
 			icon: {
 				id: "mekmm:cnc_rolling_mill"
 				count: 1
@@ -1565,8 +1565,8 @@
 		}
 		{
 			id: "48F8A5EEC6ED4BDF"
-			x: 5.0d
-			y: 46.81999999999999d
+			x: 4.65d
+			y: 26.169999999999998d
 			icon: {
 				id: "mekmm:cnc_lathe"
 				count: 1
@@ -1607,8 +1607,8 @@
 		}
 		{
 			id: "47A37769886DAFD7"
-			x: 5.0d
-			y: 44.96999999999999d
+			x: 4.65d
+			y: 24.669999999999998d
 			icon: {
 				id: "mekmm:recycler"
 				count: 1
@@ -1647,8 +1647,8 @@
 		}
 		{
 			id: "28BC8AD98F603924"
-			x: 7.25d
-			y: 44.96999999999999d
+			x: 6.65d
+			y: 24.669999999999998d
 			icon: {
 				id: "mekmm:basic_mid_chemical_tank"
 				count: 1
@@ -1687,8 +1687,8 @@
 		}
 		{
 			id: "3CCE4F6E158FA081"
-			x: 0.375d
-			y: 52.24499999999999d
+			x: 10.025d
+			y: 25.169999999999998d
 			icon: {
 				id: "kronwerke:steel_core"
 				count: 1
@@ -1725,8 +1725,8 @@
 		}
 		{
 			id: "21C041B791510B65"
-			x: 3.75d
-			y: 52.61999999999999d
+			x: 12.625d
+			y: 25.169999999999998d
 			icon: {
 				id: "mekanism:ingot_steel"
 				count: 1
@@ -1803,8 +1803,8 @@
 		{
 			id: "1531E6C4FBBFF93F"
 			image: "kronwerke:textures/quests/mekanism_advanced/obsidian.png"
-			x: 3.085d
-			y: 10.47d
+			x: 9.385d
+			y: 2.5700000000000003d
 			width: 7.17d
 			height: 0.9d
 			rotation: 0.0d
@@ -1814,7 +1814,7 @@
 			id: "159A2BF3FEAEAAEB"
 			image: "kronwerke:textures/quests/mekanism_advanced/teleport.png"
 			x: 3.085d
-			y: 17.37d
+			y: 10.77d
 			width: 7.17d
 			height: 0.9d
 			rotation: 0.0d
@@ -1823,8 +1823,8 @@
 		{
 			id: "34C9CDE7895C8DD7"
 			image: "kronwerke:textures/quests/mekanism_advanced/advanced.png"
-			x: 3.26d
-			y: 24.52d
+			x: 12.43d
+			y: 10.77d
 			width: 7.52d
 			height: 0.9d
 			rotation: 0.0d
@@ -1834,7 +1834,7 @@
 			id: "250D7567180CA29F"
 			image: "kronwerke:textures/quests/mekanism_advanced/heat.png"
 			x: 2.22d
-			y: 31.419999999999998d
+			y: 16.869999999999997d
 			width: 5.44d
 			height: 0.9d
 			rotation: 0.0d
@@ -1843,8 +1843,8 @@
 		{
 			id: "2DC881DC9C234523"
 			image: "kronwerke:textures/quests/mekanism_advanced/turbine.png"
-			x: 2.3d
-			y: 38.32d
+			x: 9.74d
+			y: 16.869999999999997d
 			width: 5.6d
 			height: 0.9d
 			rotation: 0.0d
@@ -1854,7 +1854,7 @@
 			id: "1586B086C8161346"
 			image: "kronwerke:textures/quests/mekanism_advanced/mekmm.png"
 			x: 1.7799999999999998d
-			y: 43.62d
+			y: 22.97d
 			width: 4.56d
 			height: 0.9d
 			rotation: 0.0d
@@ -1863,8 +1863,8 @@
 		{
 			id: "3039C4A447722D32"
 			image: "kronwerke:textures/quests/mekanism_advanced/goal.png"
-			x: 0.835d
-			y: 50.519999999999996d
+			x: 10.485d
+			y: 22.97d
 			width: 2.67d
 			height: 0.9d
 			rotation: 0.0d

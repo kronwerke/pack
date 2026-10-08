@@ -13,7 +13,7 @@
 		{
 			id: "5C8083CB09513A92"
 			x: 0.5d
-			y: 2.925d
+			y: 4.075d
 			icon: {
 				id: "minecraft:iron_pickaxe"
 				count: 1
@@ -51,12 +51,13 @@
 		}
 		{
 			id: "1E4B963527511B01"
-			x: 3.25d
-			y: 2.425d
+			x: 2.5d
+			y: 2.725d
 			icon: {
 				id: "minecraft:diamond_pickaxe"
 				count: 1
 			}
+			hide_dependency_lines: true
 			dependencies: [
 				"5C8083CB09513A92"
 			]
@@ -90,12 +91,13 @@
 		}
 		{
 			id: "16901522C6F1E271"
-			x: 3.25d
-			y: 4.525d
+			x: 2.5d
+			y: 4.075d
 			icon: {
 				id: "silentgear:pickaxe"
 				count: 1
 			}
+			hide_dependency_lines: true
 			dependencies: [
 				"5C8083CB09513A92"
 			]
@@ -120,12 +122,13 @@
 		}
 		{
 			id: "237F7C564CD01B52"
-			x: 3.25d
-			y: 6.625d
+			x: 2.5d
+			y: 5.425000000000001d
 			icon: {
 				id: "silentgear:hammer"
 				count: 1
 			}
+			hide_dependency_lines: true
 			dependencies: [
 				"5C8083CB09513A92"
 			]
@@ -150,12 +153,13 @@
 		}
 		{
 			id: "5101B4DD22875170"
-			x: 3.25d
-			y: 8.725000000000001d
+			x: 3.8499999999999996d
+			y: 2.725d
 			icon: {
 				id: "mysticalagriculture:inferium_pickaxe"
 				count: 1
 			}
+			hide_dependency_lines: true
 			dependencies: [
 				"5C8083CB09513A92"
 			]
@@ -180,12 +184,13 @@
 		}
 		{
 			id: "3540D1BBDE1B2C4D"
-			x: 3.25d
-			y: 10.825d
+			x: 3.8499999999999996d
+			y: 4.075d
 			icon: {
 				id: "ars_nouveau:enchanters_sword"
 				count: 1
 			}
+			hide_dependency_lines: true
 			dependencies: [
 				"5C8083CB09513A92"
 			]
@@ -210,12 +215,13 @@
 		}
 		{
 			id: "6E3194D31188967A"
-			x: 3.25d
-			y: 12.925d
+			x: 3.8499999999999996d
+			y: 5.425000000000001d
 			icon: {
 				id: "irons_spellbooks:wizard_hat"
 				count: 1
 			}
+			hide_dependency_lines: true
 			dependencies: [
 				"5C8083CB09513A92"
 			]
@@ -240,12 +246,13 @@
 		}
 		{
 			id: "644F132204954F2F"
-			x: 4.95d
-			y: 2.425d
+			x: 5.2d
+			y: 2.725d
 			icon: {
 				id: "apotheosis:gem"
 				count: 1
 			}
+			hide_dependency_lines: true
 			dependencies: [
 				"5C8083CB09513A92"
 			]
@@ -265,12 +272,13 @@
 		}
 		{
 			id: "3C8A87DA3B9919C6"
-			x: 4.95d
-			y: 4.525d
+			x: 5.2d
+			y: 4.075d
 			icon: {
 				id: "cataclysm:ancient_spear"
 				count: 1
 			}
+			hide_dependency_lines: true
 			dependencies: [
 				"5C8083CB09513A92"
 			]
@@ -290,12 +298,13 @@
 		}
 		{
 			id: "6A2BE40D95C51185"
-			x: 4.95d
-			y: 6.625d
+			x: 5.2d
+			y: 5.425000000000001d
 			icon: {
 				id: "sophisticatedbackpacks:backpack"
 				count: 1
 			}
+			hide_dependency_lines: true
 			dependencies: [
 				"5C8083CB09513A92"
 			]
@@ -320,12 +329,13 @@
 		}
 		{
 			id: "3E4E61C75AEC6B2D"
-			x: 4.95d
-			y: 8.725000000000001d
+			x: 6.550000000000001d
+			y: 2.725d
 			icon: {
 				id: "minecraft:iron_pickaxe"
 				count: 1
 			}
+			hide_dependency_lines: true
 			dependencies: [
 				"5C8083CB09513A92"
 			]
@@ -345,12 +355,13 @@
 		}
 		{
 			id: "1C5DFC4BF6B519DC"
-			x: 4.95d
-			y: 10.825d
+			x: 6.550000000000001d
+			y: 4.075d
 			icon: {
 				id: "kronwerke:grubenrahmen"
 				count: 1
 			}
+			hide_dependency_lines: true
 			dependencies: [
 				"5C8083CB09513A92"
 			]
@@ -375,8 +386,8 @@
 		}
 		{
 			id: "6152796C85ECCA39"
-			x: 0.375d
-			y: 18.6d
+			x: 9.925d
+			y: 5.475d
 			icon: {
 				id: "minecraft:gold_ingot"
 				count: 1
@@ -404,12 +415,13 @@
 		}
 		{
 			id: "51141FEBADB3F7D1"
-			x: 3.0d
-			y: 18.225d
+			x: 11.925d
+			y: 4.125d
 			icon: {
 				id: "minecraft:diamond_sword"
 				count: 1
 			}
+			hide_dependency_lines: true
 			dependencies: [
 				"6152796C85ECCA39"
 			]
@@ -429,12 +441,13 @@
 		}
 		{
 			id: "1F695A1D2AE81876"
-			x: 3.0d
-			y: 20.200000000000003d
+			x: 11.925d
+			y: 5.475d
 			icon: {
 				id: "silentgear:pickaxe_head"
 				count: 1
 			}
+			hide_dependency_lines: true
 			dependencies: [
 				"6152796C85ECCA39"
 			]
@@ -454,12 +467,13 @@
 		}
 		{
 			id: "56E10362DBD2A68B"
-			x: 3.0d
-			y: 22.175d
+			x: 11.925d
+			y: 6.825d
 			icon: {
 				id: "silentgear:hammer_head"
 				count: 1
 			}
+			hide_dependency_lines: true
 			dependencies: [
 				"6152796C85ECCA39"
 			]
@@ -479,12 +493,13 @@
 		}
 		{
 			id: "2791066338D23456"
-			x: 3.0d
-			y: 24.150000000000002d
+			x: 13.275d
+			y: 4.125d
 			icon: {
 				id: "minecraft:iron_axe"
 				count: 1
 			}
+			hide_dependency_lines: true
 			dependencies: [
 				"6152796C85ECCA39"
 			]
@@ -504,12 +519,13 @@
 		}
 		{
 			id: "6CC239453158173D"
-			x: 3.0d
-			y: 26.125d
+			x: 13.275d
+			y: 5.475d
 			icon: {
 				id: "minecraft:feather"
 				count: 1
 			}
+			hide_dependency_lines: true
 			dependencies: [
 				"6152796C85ECCA39"
 			]
@@ -529,12 +545,13 @@
 		}
 		{
 			id: "19B62475343876E0"
-			x: 4.7d
-			y: 18.225d
+			x: 13.275d
+			y: 6.825d
 			icon: {
 				id: "minecraft:iron_ingot"
 				count: 1
 			}
+			hide_dependency_lines: true
 			dependencies: [
 				"6152796C85ECCA39"
 			]
@@ -554,12 +571,13 @@
 		}
 		{
 			id: "52B40541879BF099"
-			x: 4.7d
-			y: 20.200000000000003d
+			x: 14.625d
+			y: 4.125d
 			icon: {
 				id: "minecraft:gold_nugget"
 				count: 1
 			}
+			hide_dependency_lines: true
 			dependencies: [
 				"6152796C85ECCA39"
 			]
@@ -579,12 +597,13 @@
 		}
 		{
 			id: "48D05FC96BE8C371"
-			x: 4.7d
-			y: 22.175d
+			x: 14.625d
+			y: 5.475d
 			icon: {
 				id: "botania:mana_diamond"
 				count: 1
 			}
+			hide_dependency_lines: true
 			dependencies: [
 				"6152796C85ECCA39"
 			]
@@ -604,12 +623,13 @@
 		}
 		{
 			id: "300502E45293D10D"
-			x: 4.7d
-			y: 24.150000000000002d
+			x: 14.625d
+			y: 6.825d
 			icon: {
 				id: "botania:livingwood_bow"
 				count: 1
 			}
+			hide_dependency_lines: true
 			dependencies: [
 				"6152796C85ECCA39"
 			]
@@ -629,12 +649,13 @@
 		}
 		{
 			id: "27A61206FA93B3A0"
-			x: 4.7d
-			y: 26.125d
+			x: 15.975000000000001d
+			y: 4.125d
 			icon: {
 				id: "mysticalagriculture:inferium_essence"
 				count: 1
 			}
+			hide_dependency_lines: true
 			dependencies: [
 				"6152796C85ECCA39"
 			]
@@ -654,12 +675,13 @@
 		}
 		{
 			id: "7ADC78E21BD37CA2"
-			x: 6.4d
-			y: 18.225d
+			x: 15.975000000000001d
+			y: 5.475d
 			icon: {
 				id: "minecraft:leather"
 				count: 1
 			}
+			hide_dependency_lines: true
 			dependencies: [
 				"6152796C85ECCA39"
 			]
@@ -679,12 +701,13 @@
 		}
 		{
 			id: "754E7FB09FAA4529"
-			x: 6.4d
-			y: 20.200000000000003d
+			x: 15.975000000000001d
+			y: 6.825d
 			icon: {
 				id: "minecraft:amethyst_shard"
 				count: 1
 			}
+			hide_dependency_lines: true
 			dependencies: [
 				"6152796C85ECCA39"
 			]
@@ -704,12 +727,13 @@
 		}
 		{
 			id: "43A52E158139267F"
-			x: 6.4d
-			y: 22.175d
+			x: 17.325000000000003d
+			y: 4.125d
 			icon: {
 				id: "minecraft:shield"
 				count: 1
 			}
+			hide_dependency_lines: true
 			dependencies: [
 				"6152796C85ECCA39"
 			]
@@ -729,12 +753,13 @@
 		}
 		{
 			id: "7D06DF94043D09D2"
-			x: 6.4d
-			y: 24.150000000000002d
+			x: 17.325000000000003d
+			y: 5.475d
 			icon: {
 				id: "sophisticatedbackpacks:backpack"
 				count: 1
 			}
+			hide_dependency_lines: true
 			dependencies: [
 				"6152796C85ECCA39"
 			]
@@ -755,7 +780,7 @@
 		{
 			id: "67D51A511C7AB0E3"
 			x: 0.375d
-			y: 31.675d
+			y: 11.775d
 			icon: {
 				id: "minecraft:iron_block"
 				count: 1
@@ -783,12 +808,13 @@
 		}
 		{
 			id: "493BA659596BA22E"
-			x: 3.0d
-			y: 31.3d
+			x: 2.375d
+			y: 10.425d
 			icon: {
 				id: "minecraft:obsidian"
 				count: 1
 			}
+			hide_dependency_lines: true
 			dependencies: [
 				"67D51A511C7AB0E3"
 			]
@@ -808,12 +834,13 @@
 		}
 		{
 			id: "5836D48F1334F4B0"
-			x: 3.0d
-			y: 33.275d
+			x: 2.375d
+			y: 11.775d
 			icon: {
 				id: "minecraft:redstone"
 				count: 1
 			}
+			hide_dependency_lines: true
 			dependencies: [
 				"67D51A511C7AB0E3"
 			]
@@ -833,12 +860,13 @@
 		}
 		{
 			id: "6805824C4E127F95"
-			x: 3.0d
-			y: 35.25d
+			x: 2.375d
+			y: 13.125d
 			icon: {
 				id: "minecraft:ender_pearl"
 				count: 1
 			}
+			hide_dependency_lines: true
 			dependencies: [
 				"67D51A511C7AB0E3"
 			]
@@ -858,12 +886,13 @@
 		}
 		{
 			id: "11FEA3136D5BAA40"
-			x: 3.0d
-			y: 37.225d
+			x: 3.7249999999999996d
+			y: 10.425d
 			icon: {
 				id: "minecraft:diamond"
 				count: 1
 			}
+			hide_dependency_lines: true
 			dependencies: [
 				"67D51A511C7AB0E3"
 			]
@@ -883,12 +912,13 @@
 		}
 		{
 			id: "7735E940D1430994"
-			x: 3.0d
-			y: 39.2d
+			x: 3.7249999999999996d
+			y: 11.775d
 			icon: {
 				id: "botania:mana_diamond"
 				count: 1
 			}
+			hide_dependency_lines: true
 			dependencies: [
 				"67D51A511C7AB0E3"
 			]
@@ -908,12 +938,13 @@
 		}
 		{
 			id: "4A5680E2772D9840"
-			x: 4.7d
-			y: 31.3d
+			x: 3.7249999999999996d
+			y: 13.125d
 			icon: {
 				id: "minecraft:bone"
 				count: 1
 			}
+			hide_dependency_lines: true
 			dependencies: [
 				"67D51A511C7AB0E3"
 			]
@@ -933,12 +964,13 @@
 		}
 		{
 			id: "24AC27A16E14145C"
-			x: 4.7d
-			y: 33.275d
+			x: 5.075d
+			y: 10.425d
 			icon: {
 				id: "minecraft:feather"
 				count: 1
 			}
+			hide_dependency_lines: true
 			dependencies: [
 				"67D51A511C7AB0E3"
 			]
@@ -958,12 +990,13 @@
 		}
 		{
 			id: "4242765F4ECAD454"
-			x: 4.7d
-			y: 35.25d
+			x: 5.075d
+			y: 11.775d
 			icon: {
 				id: "minecraft:deepslate"
 				count: 1
 			}
+			hide_dependency_lines: true
 			dependencies: [
 				"67D51A511C7AB0E3"
 			]
@@ -983,12 +1016,13 @@
 		}
 		{
 			id: "67C0BF34A5A77F00"
-			x: 4.7d
-			y: 37.225d
+			x: 5.075d
+			y: 13.125d
 			icon: {
 				id: "ars_nouveau:novice_spell_book"
 				count: 1
 			}
+			hide_dependency_lines: true
 			dependencies: [
 				"67D51A511C7AB0E3"
 			]
@@ -1008,12 +1042,13 @@
 		}
 		{
 			id: "28868EFFD1C98F52"
-			x: 4.7d
-			y: 39.2d
+			x: 6.425000000000001d
+			y: 10.425d
 			icon: {
 				id: "ars_nouveau:source_gem"
 				count: 1
 			}
+			hide_dependency_lines: true
 			dependencies: [
 				"67D51A511C7AB0E3"
 			]
@@ -1033,12 +1068,13 @@
 		}
 		{
 			id: "288E9B1CAF3697EA"
-			x: 6.4d
-			y: 31.3d
+			x: 6.425000000000001d
+			y: 11.775d
 			icon: {
 				id: "minecraft:phantom_membrane"
 				count: 1
 			}
+			hide_dependency_lines: true
 			dependencies: [
 				"67D51A511C7AB0E3"
 			]
@@ -1058,12 +1094,13 @@
 		}
 		{
 			id: "7A0A6746756EA2D4"
-			x: 6.4d
-			y: 33.275d
+			x: 6.425000000000001d
+			y: 13.125d
 			icon: {
 				id: "minecraft:copper_ingot"
 				count: 1
 			}
+			hide_dependency_lines: true
 			dependencies: [
 				"67D51A511C7AB0E3"
 			]
@@ -1083,12 +1120,13 @@
 		}
 		{
 			id: "1A2F1D25417D3AEE"
-			x: 6.4d
-			y: 35.25d
+			x: 7.775d
+			y: 10.425d
 			icon: {
 				id: "minecraft:redstone_torch"
 				count: 1
 			}
+			hide_dependency_lines: true
 			dependencies: [
 				"67D51A511C7AB0E3"
 			]
@@ -1108,12 +1146,13 @@
 		}
 		{
 			id: "34E750AF19D363D7"
-			x: 6.4d
-			y: 37.225d
+			x: 7.775d
+			y: 11.775d
 			icon: {
 				id: "create:andesite_alloy"
 				count: 1
 			}
+			hide_dependency_lines: true
 			dependencies: [
 				"67D51A511C7AB0E3"
 			]
@@ -1133,8 +1172,8 @@
 		}
 		{
 			id: "605F56D49F6FF418"
-			x: 0.375d
-			y: 44.74999999999999d
+			x: 11.15d
+			y: 11.775d
 			icon: {
 				id: "minecraft:ender_pearl"
 				count: 1
@@ -1162,12 +1201,13 @@
 		}
 		{
 			id: "35CE7D2ADB46E1E8"
-			x: 3.0d
-			y: 44.37499999999999d
+			x: 13.15d
+			y: 10.425d
 			icon: {
 				id: "minecraft:phantom_membrane"
 				count: 1
 			}
+			hide_dependency_lines: true
 			dependencies: [
 				"605F56D49F6FF418"
 			]
@@ -1187,12 +1227,13 @@
 		}
 		{
 			id: "32DECCB3B2B3BCAE"
-			x: 3.0d
-			y: 46.349999999999994d
+			x: 13.15d
+			y: 11.775d
 			icon: {
 				id: "create:copper_backtank"
 				count: 1
 			}
+			hide_dependency_lines: true
 			dependencies: [
 				"605F56D49F6FF418"
 			]
@@ -1212,12 +1253,13 @@
 		}
 		{
 			id: "3CCCC4EE41E4536E"
-			x: 3.0d
-			y: 48.324999999999996d
+			x: 13.15d
+			y: 13.125d
 			icon: {
 				id: "minecraft:diamond_chestplate"
 				count: 1
 			}
+			hide_dependency_lines: true
 			dependencies: [
 				"605F56D49F6FF418"
 			]
@@ -1237,12 +1279,13 @@
 		}
 		{
 			id: "149E9A5BBE9D9BBC"
-			x: 3.0d
-			y: 50.3d
+			x: 14.5d
+			y: 10.425d
 			icon: {
 				id: "minecraft:diamond_axe"
 				count: 1
 			}
+			hide_dependency_lines: true
 			dependencies: [
 				"605F56D49F6FF418"
 			]
@@ -1262,12 +1305,13 @@
 		}
 		{
 			id: "5AD1EB7E90E841A2"
-			x: 3.0d
-			y: 52.27499999999999d
+			x: 14.5d
+			y: 11.775d
 			icon: {
 				id: "minecraft:sculk"
 				count: 1
 			}
+			hide_dependency_lines: true
 			dependencies: [
 				"605F56D49F6FF418"
 			]
@@ -1287,12 +1331,13 @@
 		}
 		{
 			id: "2006E7A7C37A3884"
-			x: 4.7d
-			y: 44.37499999999999d
+			x: 14.5d
+			y: 13.125d
 			icon: {
 				id: "minecraft:diamond_sword"
 				count: 1
 			}
+			hide_dependency_lines: true
 			dependencies: [
 				"605F56D49F6FF418"
 			]
@@ -1312,12 +1357,13 @@
 		}
 		{
 			id: "5AE1619DF20D779C"
-			x: 4.7d
-			y: 46.349999999999994d
+			x: 15.850000000000001d
+			y: 10.425d
 			icon: {
 				id: "botania:mana_diamond"
 				count: 1
 			}
+			hide_dependency_lines: true
 			dependencies: [
 				"605F56D49F6FF418"
 			]
@@ -1337,12 +1383,13 @@
 		}
 		{
 			id: "2BAF75FA7C49C846"
-			x: 4.7d
-			y: 48.324999999999996d
+			x: 15.850000000000001d
+			y: 11.775d
 			icon: {
 				id: "silentgear:paxel_head"
 				count: 1
 			}
+			hide_dependency_lines: true
 			dependencies: [
 				"605F56D49F6FF418"
 			]
@@ -1362,12 +1409,13 @@
 		}
 		{
 			id: "5A45E093DB57D9C5"
-			x: 4.7d
-			y: 50.3d
+			x: 15.850000000000001d
+			y: 13.125d
 			icon: {
 				id: "minecraft:iron_chestplate"
 				count: 1
 			}
+			hide_dependency_lines: true
 			dependencies: [
 				"605F56D49F6FF418"
 			]
@@ -1387,12 +1435,13 @@
 		}
 		{
 			id: "1F8A26B2CF9B4756"
-			x: 4.7d
-			y: 52.27499999999999d
+			x: 17.200000000000003d
+			y: 10.425d
 			icon: {
 				id: "minecraft:echo_shard"
 				count: 1
 			}
+			hide_dependency_lines: true
 			dependencies: [
 				"605F56D49F6FF418"
 			]
@@ -1412,12 +1461,13 @@
 		}
 		{
 			id: "1B1A6C917E3CFB01"
-			x: 6.4d
-			y: 44.37499999999999d
+			x: 17.200000000000003d
+			y: 11.775d
 			icon: {
 				id: "ars_nouveau:novice_spell_book"
 				count: 1
 			}
+			hide_dependency_lines: true
 			dependencies: [
 				"605F56D49F6FF418"
 			]
@@ -1437,12 +1487,13 @@
 		}
 		{
 			id: "1BF157B8422B52AE"
-			x: 6.4d
-			y: 46.349999999999994d
+			x: 17.200000000000003d
+			y: 13.125d
 			icon: {
 				id: "apotheosis:gem"
 				count: 1
 			}
+			hide_dependency_lines: true
 			dependencies: [
 				"605F56D49F6FF418"
 			]
@@ -1462,12 +1513,13 @@
 		}
 		{
 			id: "53C53080300CB27D"
-			x: 6.4d
-			y: 48.324999999999996d
+			x: 18.55d
+			y: 10.425d
 			icon: {
 				id: "minecraft:ender_pearl"
 				count: 1
 			}
+			hide_dependency_lines: true
 			dependencies: [
 				"605F56D49F6FF418"
 			]
@@ -1487,12 +1539,13 @@
 		}
 		{
 			id: "792DA1D54E1CD7A8"
-			x: 6.4d
-			y: 50.3d
+			x: 18.55d
+			y: 11.775d
 			icon: {
 				id: "minecraft:amethyst_shard"
 				count: 1
 			}
+			hide_dependency_lines: true
 			dependencies: [
 				"605F56D49F6FF418"
 			]
@@ -1513,7 +1566,7 @@
 		{
 			id: "563F9F92764D14F3"
 			x: 0.375d
-			y: 57.82499999999999d
+			y: 18.224999999999998d
 			icon: {
 				id: "minecraft:diamond_block"
 				count: 1
@@ -1540,8 +1593,8 @@
 		}
 		{
 			id: "4C76F7AEDA486664"
-			x: 3.0d
-			y: 57.44999999999999d
+			x: 2.975d
+			y: 18.224999999999998d
 			icon: {
 				id: "minecraft:bow"
 				count: 1
@@ -1565,8 +1618,8 @@
 		}
 		{
 			id: "1D08E4F559D9BD58"
-			x: 3.0d
-			y: 59.54999999999999d
+			x: 2.975d
+			y: 16.724999999999998d
 			icon: {
 				id: "minecraft:obsidian"
 				count: 1
@@ -1590,8 +1643,8 @@
 		}
 		{
 			id: "217A679D035F1E09"
-			x: 3.0d
-			y: 61.64999999999999d
+			x: 2.975d
+			y: 19.724999999999998d
 			icon: {
 				id: "mysticalagriculture:inferium_essence"
 				count: 1
@@ -1615,8 +1668,8 @@
 		}
 		{
 			id: "1E118E55C75843AE"
-			x: 5.75d
-			y: 57.94999999999999d
+			x: 4.975d
+			y: 18.224999999999998d
 			icon: {
 				id: "minecraft:diamond_chestplate"
 				count: 1
@@ -1662,8 +1715,8 @@
 		{
 			id: "4F7D6822B56D348F"
 			image: "kronwerke:textures/quests/list_gear/s2.png"
-			x: 3.145d
-			y: 16.875d
+			x: 12.695d
+			y: 2.6750000000000003d
 			width: 7.29d
 			height: 0.9d
 			rotation: 0.0d
@@ -1673,7 +1726,7 @@
 			id: "29593F2EA30F8C5D"
 			image: "kronwerke:textures/quests/list_gear/s3.png"
 			x: 2.675d
-			y: 29.95d
+			y: 8.975d
 			width: 6.35d
 			height: 0.9d
 			rotation: 0.0d
@@ -1682,8 +1735,8 @@
 		{
 			id: "59E8B8259473CB02"
 			image: "kronwerke:textures/quests/list_gear/s4.png"
-			x: 2.74d
-			y: 43.025d
+			x: 13.515d
+			y: 8.975d
 			width: 6.48d
 			height: 0.9d
 			rotation: 0.0d
@@ -1693,7 +1746,7 @@
 			id: "2C88F2B2D42C9F9B"
 			image: "kronwerke:textures/quests/list_gear/s5.png"
 			x: 2.78d
-			y: 56.099999999999994d
+			y: 15.274999999999997d
 			width: 6.56d
 			height: 0.9d
 			rotation: 0.0d

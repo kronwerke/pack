@@ -13,7 +13,7 @@
 		{
 			id: "76C7E94B78DE11C2"
 			x: 0.5d
-			y: 2.8200000000000003d
+			y: 3.12d
 			icon: {
 				id: "nuclearcraft:manufactory"
 				count: 1
@@ -55,8 +55,8 @@
 		}
 		{
 			id: "161098343E743312"
-			x: 0.0d
-			y: 7.62d
+			x: 4.0d
+			y: 5.52d
 			icon: {
 				id: "nuclearcraft:raw_uranium"
 				count: 1
@@ -113,8 +113,8 @@
 		}
 		{
 			id: "165246D8B7236EBA"
-			x: 0.0d
-			y: 9.47d
+			x: 4.0d
+			y: 4.02d
 			icon: {
 				id: "nuclearcraft:graphite_dust"
 				count: 1
@@ -153,8 +153,8 @@
 		}
 		{
 			id: "585EC3D75E9B9AB9"
-			x: 2.5d
-			y: 7.62d
+			x: 6.0d
+			y: 4.02d
 			icon: {
 				id: "nuclearcraft:plate_basic"
 				count: 1
@@ -192,8 +192,8 @@
 		}
 		{
 			id: "1EAD067E49C19340"
-			x: 5.0d
-			y: 7.62d
+			x: 8.4d
+			y: 4.02d
 			icon: {
 				id: "nuclearcraft:alloy_smelter"
 				count: 1
@@ -231,12 +231,13 @@
 		}
 		{
 			id: "29FAFDD9D2F3F21A"
-			x: 7.25d
-			y: 7.62d
+			x: 10.4d
+			y: 4.02d
 			icon: {
 				id: "nuclearcraft:ferroboron_ingot"
 				count: 1
 			}
+			hide_dependency_lines: true
 			dependencies: [
 				"1EAD067E49C19340"
 				"161098343E743312"
@@ -271,8 +272,8 @@
 		}
 		{
 			id: "7F35186F803C8F15"
-			x: 9.5d
-			y: 7.62d
+			x: 12.4d
+			y: 4.02d
 			icon: {
 				id: "nuclearcraft:tough_alloy_ingot"
 				count: 1
@@ -316,7 +317,7 @@
 		{
 			id: "687BFE692FDDE430"
 			x: 0.0d
-			y: 16.37d
+			y: 10.870000000000001d
 			icon: {
 				id: "nuclearcraft:plate_advanced"
 				count: 1
@@ -355,8 +356,8 @@
 		}
 		{
 			id: "2FAD545FC27D4FD4"
-			x: 2.25d
-			y: 16.37d
+			x: 2.0d
+			y: 10.870000000000001d
 			icon: {
 				id: "nuclearcraft:chassis"
 				count: 1
@@ -394,8 +395,8 @@
 		}
 		{
 			id: "39433CE0D184C9BD"
-			x: 4.5d
-			y: 16.37d
+			x: 4.0d
+			y: 10.870000000000001d
 			icon: {
 				id: "nuclearcraft:motor"
 				count: 1
@@ -433,8 +434,8 @@
 		}
 		{
 			id: "1730DFD7EEF30884"
-			x: 6.75d
-			y: 16.37d
+			x: 6.0d
+			y: 10.870000000000001d
 			icon: {
 				id: "nuclearcraft:servo"
 				count: 1
@@ -472,8 +473,8 @@
 		}
 		{
 			id: "48E12C44C7750F0F"
-			x: 9.0d
-			y: 16.37d
+			x: 8.0d
+			y: 10.870000000000001d
 			icon: {
 				id: "nuclearcraft:actuator"
 				count: 1
@@ -511,8 +512,8 @@
 		}
 		{
 			id: "2880174B6CFC2589"
-			x: 0.0d
-			y: 11.32d
+			x: 4.0d
+			y: 7.02d
 			icon: {
 				id: "nuclearcraft:isotope_separator"
 				count: 1
@@ -560,8 +561,8 @@
 		}
 		{
 			id: "25B4DA49C85D1B2B"
-			x: 2.5d
-			y: 9.72d
+			x: 6.0d
+			y: 7.02d
 			icon: {
 				id: "nuclearcraft:fuel_uranium_leu_235"
 				count: 1
@@ -607,7 +608,7 @@
 		{
 			id: "3BE2CE767844989E"
 			x: 0.0d
-			y: 21.17d
+			y: 17.47d
 			icon: {
 				id: "nuclearcraft:pressurizer"
 				count: 1
@@ -646,8 +647,8 @@
 		}
 		{
 			id: "6DA829C325374BF3"
-			x: 2.25d
-			y: 21.17d
+			x: 2.0d
+			y: 17.47d
 			icon: {
 				id: "nuclearcraft:fission_reactor_casing"
 				count: 1
@@ -694,8 +695,8 @@
 		}
 		{
 			id: "2B99F004F95F24A3"
-			x: 4.5d
-			y: 21.17d
+			x: 4.0d
+			y: 18.97d
 			icon: {
 				id: "nuclearcraft:decay_hastener"
 				count: 1
@@ -733,8 +734,8 @@
 		}
 		{
 			id: "48591788BD0ABF5E"
-			x: 4.5d
-			y: 23.270000000000003d
+			x: 4.0d
+			y: 17.47d
 			icon: {
 				id: "nuclearcraft:assembler"
 				count: 1
@@ -772,8 +773,8 @@
 		}
 		{
 			id: "20C468130E41EA87"
-			x: 6.75d
-			y: 21.17d
+			x: 6.0d
+			y: 17.47d
 			icon: {
 				id: "nuclearcraft:basic_electric_circuit"
 				count: 1
@@ -811,8 +812,8 @@
 		}
 		{
 			id: "7BE786BD2341276A"
-			x: 9.25d
-			y: 21.42d
+			x: 8.0d
+			y: 17.47d
 			icon: {
 				id: "nuclearcraft:fission_reactor_controller"
 				count: 1
@@ -858,7 +859,7 @@
 		{
 			id: "64E7C69711777B4B"
 			x: 0.0d
-			y: 23.270000000000003d
+			y: 14.47d
 			icon: {
 				id: "nuclearcraft:rock_crusher"
 				count: 1
@@ -897,8 +898,8 @@
 		}
 		{
 			id: "19169A02C0545372"
-			x: 2.25d
-			y: 23.270000000000003d
+			x: 2.0d
+			y: 14.47d
 			icon: {
 				id: "nuclearcraft:fission_reactor_solid_fuel_cell"
 				count: 1
@@ -936,8 +937,8 @@
 		}
 		{
 			id: "120DBA3E6237920F"
-			x: 4.5d
-			y: 25.37d
+			x: 4.0d
+			y: 14.47d
 			icon: {
 				id: "nuclearcraft:graphite_block"
 				count: 1
@@ -975,8 +976,8 @@
 		}
 		{
 			id: "2F65CA23BBDCEF00"
-			x: 2.25d
-			y: 27.470000000000002d
+			x: 2.0d
+			y: 15.97d
 			icon: {
 				id: "nuclearcraft:thermoconducting_plate"
 				count: 1
@@ -1016,8 +1017,8 @@
 		}
 		{
 			id: "7E4780CE393BFDD3"
-			x: 4.5d
-			y: 27.470000000000002d
+			x: 4.0d
+			y: 15.97d
 			icon: {
 				id: "nuclearcraft:water_heat_sink"
 				count: 1
@@ -1069,8 +1070,8 @@
 		}
 		{
 			id: "3DB212CA2A66BF80"
-			x: 11.75d
-			y: 21.17d
+			x: 10.4d
+			y: 17.47d
 			icon: {
 				id: "nuclearcraft:fission_reactor_port"
 				count: 1
@@ -1108,8 +1109,8 @@
 		}
 		{
 			id: "22EE3CFB439CE226"
-			x: 14.5d
-			y: 21.67d
+			x: 12.4d
+			y: 17.47d
 			icon: {
 				id: "nuclearcraft:fission_reactor_controller"
 				count: 1
@@ -1158,8 +1159,8 @@
 		}
 		{
 			id: "25BD64271101CF3B"
-			x: 17.25d
-			y: 21.17d
+			x: 15.2d
+			y: 17.47d
 			icon: {
 				id: "nuclearcraft:fuel_reprocessor"
 				count: 1
@@ -1206,8 +1207,8 @@
 		}
 		{
 			id: "7D220B21FC4DA04A"
-			x: 17.25d
-			y: 23.270000000000003d
+			x: 15.2d
+			y: 18.97d
 			icon: {
 				id: "nuclearcraft:fission_reactor_irradiation_chamber"
 				count: 1
@@ -1256,7 +1257,7 @@
 		{
 			id: "214CE55749B67920"
 			x: 0.0d
-			y: 32.769999999999996d
+			y: 23.32d
 			icon: {
 				id: "nuclear_radiation:geiger_counter"
 				count: 1
@@ -1304,8 +1305,8 @@
 		}
 		{
 			id: "12D5E27A63081433"
-			x: 2.25d
-			y: 32.769999999999996d
+			x: 2.0d
+			y: 23.32d
 			icon: {
 				id: "nuclear_radiation:hazmat_helmet"
 				count: 1
@@ -1370,8 +1371,8 @@
 		}
 		{
 			id: "5E51D73471E48A4A"
-			x: 4.5d
-			y: 32.769999999999996d
+			x: 4.0d
+			y: 23.32d
 			icon: {
 				id: "nuclear_radiation:radaway"
 				count: 1
@@ -1427,8 +1428,8 @@
 		}
 		{
 			id: "3C6D148714AB274A"
-			x: 7.5d
-			y: 33.519999999999996d
+			x: 6.0d
+			y: 23.32d
 			icon: {
 				id: "nuclearcraft:fuel_uranium_heu_235"
 				count: 1
@@ -1507,8 +1508,8 @@
 		{
 			id: "3D6F9CB435E0A89F"
 			image: "kronwerke:textures/quests/nuclearcraft/machines.png"
-			x: 2.82d
-			y: 6.2700000000000005d
+			x: 6.82d
+			y: 2.5700000000000003d
 			width: 6.64d
 			height: 0.9d
 			rotation: 0.0d
@@ -1518,7 +1519,7 @@
 			id: "1E7C51AB682DA1A6"
 			image: "kronwerke:textures/quests/nuclearcraft/parts.png"
 			x: 0.9199999999999999d
-			y: 15.020000000000001d
+			y: 9.42d
 			width: 2.84d
 			height: 0.9d
 			rotation: 0.0d
@@ -1528,7 +1529,7 @@
 			id: "3E751C8D00535036"
 			image: "kronwerke:textures/quests/nuclearcraft/reactor.png"
 			x: 2.37d
-			y: 19.82d
+			y: 13.02d
 			width: 5.74d
 			height: 0.9d
 			rotation: 0.0d
@@ -1538,7 +1539,7 @@
 			id: "191615CC649689DB"
 			image: "kronwerke:textures/quests/nuclearcraft/radiation.png"
 			x: 1.285d
-			y: 31.419999999999998d
+			y: 21.12d
 			width: 3.57d
 			height: 0.9d
 			rotation: 0.0d

@@ -13,7 +13,7 @@
 		{
 			id: "4C91F9F44885805A"
 			x: 0.5d
-			y: 2.925d
+			y: 3.225d
 			icon: {
 				id: "minecraft:hopper"
 				count: 1
@@ -45,8 +45,8 @@
 		}
 		{
 			id: "3422692534C7F491"
-			x: 0.375d
-			y: 8.100000000000001d
+			x: 4.375d
+			y: 5.475d
 			icon: {
 				id: "create:andesite_funnel"
 				count: 1
@@ -79,8 +79,9 @@
 		}
 		{
 			id: "3821E89A4C376966"
-			x: 3.0d
-			y: 7.7250000000000005d
+			x: 6.375d
+			y: 4.125d
+			hide_dependency_lines: true
 			dependencies: [
 				"3422692534C7F491"
 			]
@@ -109,12 +110,13 @@
 		}
 		{
 			id: "4554D855273D3F41"
-			x: 3.0d
-			y: 9.700000000000001d
+			x: 6.375d
+			y: 5.475d
 			icon: {
 				id: "minecraft:hopper_minecart"
 				count: 1
 			}
+			hide_dependency_lines: true
 			dependencies: [
 				"3422692534C7F491"
 			]
@@ -143,12 +145,13 @@
 		}
 		{
 			id: "2AF25EF517ED9037"
-			x: 3.0d
-			y: 11.675d
+			x: 6.375d
+			y: 6.825d
 			icon: {
 				id: "create:belt_connector"
 				count: 1
 			}
+			hide_dependency_lines: true
 			dependencies: [
 				"3422692534C7F491"
 			]
@@ -182,12 +185,13 @@
 		}
 		{
 			id: "1D1FBF42CFAB8E96"
-			x: 3.0d
-			y: 13.650000000000002d
+			x: 7.725d
+			y: 4.125d
 			icon: {
 				id: "create:chute"
 				count: 1
 			}
+			hide_dependency_lines: true
 			dependencies: [
 				"3422692534C7F491"
 			]
@@ -216,12 +220,13 @@
 		}
 		{
 			id: "38C6C1ABC1A9F762"
-			x: 3.0d
-			y: 15.625d
+			x: 7.725d
+			y: 5.475d
 			icon: {
 				id: "create:andesite_funnel"
 				count: 1
 			}
+			hide_dependency_lines: true
 			dependencies: [
 				"3422692534C7F491"
 			]
@@ -255,12 +260,13 @@
 		}
 		{
 			id: "3E621E87FA4075B1"
-			x: 3.0d
-			y: 17.6d
+			x: 7.725d
+			y: 6.825d
 			icon: {
 				id: "create:packager"
 				count: 1
 			}
+			hide_dependency_lines: true
 			dependencies: [
 				"3422692534C7F491"
 			]
@@ -294,12 +300,13 @@
 		}
 		{
 			id: "2887799657763FCE"
-			x: 4.7d
-			y: 7.7250000000000005d
+			x: 9.075d
+			y: 4.125d
 			icon: {
 				id: "ars_nouveau:starbuncle_charm"
 				count: 1
 			}
+			hide_dependency_lines: true
 			dependencies: [
 				"3422692534C7F491"
 			]
@@ -333,12 +340,13 @@
 		}
 		{
 			id: "4BF4498213060C57"
-			x: 4.7d
-			y: 9.700000000000001d
+			x: 9.075d
+			y: 5.475d
 			icon: {
 				id: "botania:hopperhock"
 				count: 1
 			}
+			hide_dependency_lines: true
 			dependencies: [
 				"3422692534C7F491"
 			]
@@ -367,12 +375,13 @@
 		}
 		{
 			id: "56B13DC9109A3913"
-			x: 4.7d
-			y: 11.675d
+			x: 9.075d
+			y: 6.825d
 			icon: {
 				id: "sophisticatedstorage:hopper_upgrade"
 				count: 1
 			}
+			hide_dependency_lines: true
 			dependencies: [
 				"3422692534C7F491"
 			]
@@ -406,12 +415,13 @@
 		}
 		{
 			id: "2B9E8D01FC0EB971"
-			x: 4.7d
-			y: 13.650000000000002d
+			x: 10.425d
+			y: 4.125d
 			icon: {
 				id: "itemcollectors:basic_collector"
 				count: 1
 			}
+			hide_dependency_lines: true
 			dependencies: [
 				"3422692534C7F491"
 			]
@@ -445,12 +455,13 @@
 		}
 		{
 			id: "4AD3365B683EE324"
-			x: 4.7d
-			y: 15.625d
+			x: 10.425d
+			y: 5.475d
 			icon: {
 				id: "simplemagnets:basicmagnet"
 				count: 1
 			}
+			hide_dependency_lines: true
 			dependencies: [
 				"3422692534C7F491"
 			]
@@ -479,12 +490,13 @@
 		}
 		{
 			id: "5FB9B5C993CE8435"
-			x: 4.7d
-			y: 17.6d
+			x: 10.425d
+			y: 6.825d
 			icon: {
 				id: "minecraft:hay_block"
 				count: 1
 			}
+			hide_dependency_lines: true
 			dependencies: [
 				"3422692534C7F491"
 			]
@@ -513,12 +525,13 @@
 		}
 		{
 			id: "36874E34FB3D2997"
-			x: 6.4d
-			y: 7.7250000000000005d
+			x: 11.775d
+			y: 4.125d
 			icon: {
 				id: "create:andesite_alloy"
 				count: 1
 			}
+			hide_dependency_lines: true
 			dependencies: [
 				"3422692534C7F491"
 			]
@@ -538,12 +551,13 @@
 		}
 		{
 			id: "6AF0D65FDBDA3025"
-			x: 6.4d
-			y: 9.700000000000001d
+			x: 11.775d
+			y: 5.475d
 			icon: {
 				id: "minecraft:dropper"
 				count: 1
 			}
+			hide_dependency_lines: true
 			dependencies: [
 				"3422692534C7F491"
 			]
@@ -563,12 +577,13 @@
 		}
 		{
 			id: "72A517404466EBAB"
-			x: 6.4d
-			y: 11.675d
+			x: 11.775d
+			y: 6.825d
 			icon: {
 				id: "minecraft:iron_bars"
 				count: 1
 			}
+			hide_dependency_lines: true
 			dependencies: [
 				"3422692534C7F491"
 			]
@@ -588,12 +603,13 @@
 		}
 		{
 			id: "46211537A6B0B9DE"
-			x: 6.4d
-			y: 13.650000000000002d
+			x: 13.125d
+			y: 4.125d
 			icon: {
 				id: "minecraft:iron_ingot"
 				count: 1
 			}
+			hide_dependency_lines: true
 			dependencies: [
 				"3422692534C7F491"
 			]
@@ -613,12 +629,13 @@
 		}
 		{
 			id: "2AD5CA9C51152B0C"
-			x: 6.4d
-			y: 15.625d
+			x: 13.125d
+			y: 5.475d
 			icon: {
 				id: "minecraft:leather"
 				count: 1
 			}
+			hide_dependency_lines: true
 			dependencies: [
 				"3422692534C7F491"
 			]
@@ -638,12 +655,13 @@
 		}
 		{
 			id: "64A9D9DF0207F477"
-			x: 6.4d
-			y: 17.6d
+			x: 13.125d
+			y: 6.825d
 			icon: {
 				id: "minecraft:glass_bottle"
 				count: 1
 			}
+			hide_dependency_lines: true
 			dependencies: [
 				"3422692534C7F491"
 			]
@@ -663,12 +681,13 @@
 		}
 		{
 			id: "5B7733539BCEAB3D"
-			x: 8.1d
-			y: 7.7250000000000005d
+			x: 14.475000000000001d
+			y: 4.125d
 			icon: {
 				id: "minecraft:ender_pearl"
 				count: 1
 			}
+			hide_dependency_lines: true
 			dependencies: [
 				"3422692534C7F491"
 			]
@@ -688,12 +707,13 @@
 		}
 		{
 			id: "7EB618D817E03CC1"
-			x: 8.1d
-			y: 9.700000000000001d
+			x: 14.475000000000001d
+			y: 5.475d
 			icon: {
 				id: "minecraft:comparator"
 				count: 1
 			}
+			hide_dependency_lines: true
 			dependencies: [
 				"3422692534C7F491"
 			]
@@ -713,12 +733,13 @@
 		}
 		{
 			id: "6F8E1F1C96414E76"
-			x: 8.1d
-			y: 11.675d
+			x: 14.475000000000001d
+			y: 6.825d
 			icon: {
 				id: "minecraft:redstone_torch"
 				count: 1
 			}
+			hide_dependency_lines: true
 			dependencies: [
 				"3422692534C7F491"
 			]
@@ -738,12 +759,13 @@
 		}
 		{
 			id: "462C0F7A23F3F88F"
-			x: 8.1d
-			y: 13.650000000000002d
+			x: 15.825000000000001d
+			y: 4.125d
 			icon: {
 				id: "botania:white_mystical_petal"
 				count: 1
 			}
+			hide_dependency_lines: true
 			dependencies: [
 				"3422692534C7F491"
 			]
@@ -764,7 +786,7 @@
 		{
 			id: "61CEAEC262E568C2"
 			x: 0.375d
-			y: 23.150000000000002d
+			y: 11.775d
 			icon: {
 				id: "create:fluid_tank"
 				count: 1
@@ -797,12 +819,13 @@
 		}
 		{
 			id: "2F72A239B381F811"
-			x: 3.0d
-			y: 22.775000000000002d
+			x: 2.375d
+			y: 10.425d
 			icon: {
 				id: "create:mechanical_pump"
 				count: 1
 			}
+			hide_dependency_lines: true
 			dependencies: [
 				"61CEAEC262E568C2"
 			]
@@ -845,12 +868,13 @@
 		}
 		{
 			id: "5FB546D07CC0F1E0"
-			x: 3.0d
-			y: 24.750000000000004d
+			x: 2.375d
+			y: 11.775d
 			icon: {
 				id: "create:fluid_tank"
 				count: 1
 			}
+			hide_dependency_lines: true
 			dependencies: [
 				"61CEAEC262E568C2"
 			]
@@ -884,12 +908,13 @@
 		}
 		{
 			id: "4C83C592231CEA3B"
-			x: 3.0d
-			y: 26.725d
+			x: 2.375d
+			y: 13.125d
 			icon: {
 				id: "create:hose_pulley"
 				count: 1
 			}
+			hide_dependency_lines: true
 			dependencies: [
 				"61CEAEC262E568C2"
 			]
@@ -923,12 +948,13 @@
 		}
 		{
 			id: "3CE6BDD1A3B018D6"
-			x: 3.0d
-			y: 28.700000000000003d
+			x: 3.7249999999999996d
+			y: 10.425d
 			icon: {
 				id: "functionalstorage:fluid_1"
 				count: 1
 			}
+			hide_dependency_lines: true
 			dependencies: [
 				"61CEAEC262E568C2"
 			]
@@ -957,12 +983,13 @@
 		}
 		{
 			id: "6F07852A716D3465"
-			x: 3.0d
-			y: 30.675000000000004d
+			x: 3.7249999999999996d
+			y: 11.775d
 			icon: {
 				id: "minecraft:bucket"
 				count: 1
 			}
+			hide_dependency_lines: true
 			dependencies: [
 				"61CEAEC262E568C2"
 			]
@@ -982,12 +1009,13 @@
 		}
 		{
 			id: "7AA0054BCF710AF5"
-			x: 4.7d
-			y: 22.775000000000002d
+			x: 3.7249999999999996d
+			y: 13.125d
 			icon: {
 				id: "minecraft:iron_ingot"
 				count: 1
 			}
+			hide_dependency_lines: true
 			dependencies: [
 				"61CEAEC262E568C2"
 			]
@@ -1007,12 +1035,13 @@
 		}
 		{
 			id: "5D1BAF41EFDB096B"
-			x: 4.7d
-			y: 24.750000000000004d
+			x: 5.075d
+			y: 10.425d
 			icon: {
 				id: "minecraft:cauldron"
 				count: 1
 			}
+			hide_dependency_lines: true
 			dependencies: [
 				"61CEAEC262E568C2"
 			]
@@ -1032,12 +1061,13 @@
 		}
 		{
 			id: "43E40E1AA1D5CD02"
-			x: 4.7d
-			y: 26.725d
+			x: 5.075d
+			y: 11.775d
 			icon: {
 				id: "minecraft:water_bucket"
 				count: 1
 			}
+			hide_dependency_lines: true
 			dependencies: [
 				"61CEAEC262E568C2"
 			]
@@ -1057,12 +1087,13 @@
 		}
 		{
 			id: "148E13F49394D961"
-			x: 4.7d
-			y: 28.700000000000003d
+			x: 5.075d
+			y: 13.125d
 			icon: {
 				id: "minecraft:ender_pearl"
 				count: 1
 			}
+			hide_dependency_lines: true
 			dependencies: [
 				"61CEAEC262E568C2"
 			]
@@ -1082,12 +1113,13 @@
 		}
 		{
 			id: "363BFCAE79B80548"
-			x: 4.7d
-			y: 30.675000000000004d
+			x: 6.425000000000001d
+			y: 10.425d
 			icon: {
 				id: "minecraft:glass_bottle"
 				count: 1
 			}
+			hide_dependency_lines: true
 			dependencies: [
 				"61CEAEC262E568C2"
 			]
@@ -1107,8 +1139,8 @@
 		}
 		{
 			id: "71081EF09BA538FD"
-			x: 0.375d
-			y: 36.225d
+			x: 9.8d
+			y: 10.8d
 			icon: {
 				id: "minecraft:glass_bottle"
 				count: 1
@@ -1141,8 +1173,8 @@
 		}
 		{
 			id: "5101AD18AC8C7D6D"
-			x: 3.0d
-			y: 35.85d
+			x: 12.4d
+			y: 12.3d
 			icon: {
 				id: "minecraft:glass"
 				count: 1
@@ -1166,8 +1198,8 @@
 		}
 		{
 			id: "3A052AD8C4B22280"
-			x: 3.0d
-			y: 37.825d
+			x: 12.4d
+			y: 10.8d
 			icon: {
 				id: "minecraft:amethyst_shard"
 				count: 1
@@ -1191,8 +1223,8 @@
 		}
 		{
 			id: "73453D0E8632678B"
-			x: 3.0d
-			y: 39.800000000000004d
+			x: 12.4d
+			y: 13.8d
 			icon: {
 				id: "minecraft:lightning_rod"
 				count: 1
@@ -1216,8 +1248,8 @@
 		}
 		{
 			id: "1A39EE189239CD6B"
-			x: 0.375d
-			y: 45.35d
+			x: 15.775d
+			y: 11.775d
 			icon: {
 				id: "create:cogwheel"
 				count: 1
@@ -1250,12 +1282,13 @@
 		}
 		{
 			id: "783E5DE186B29C16"
-			x: 3.0d
-			y: 44.975d
+			x: 17.775d
+			y: 10.425d
 			icon: {
 				id: "create:shaft"
 				count: 1
 			}
+			hide_dependency_lines: true
 			dependencies: [
 				"1A39EE189239CD6B"
 			]
@@ -1289,12 +1322,13 @@
 		}
 		{
 			id: "44A3402F3F3A6857"
-			x: 3.0d
-			y: 46.95d
+			x: 17.775d
+			y: 11.775d
 			icon: {
 				id: "minecraft:redstone"
 				count: 1
 			}
+			hide_dependency_lines: true
 			dependencies: [
 				"1A39EE189239CD6B"
 			]
@@ -1314,12 +1348,13 @@
 		}
 		{
 			id: "639F097D0FD8C0CE"
-			x: 3.0d
-			y: 48.925000000000004d
+			x: 17.775d
+			y: 13.125d
 			icon: {
 				id: "minecraft:copper_ingot"
 				count: 1
 			}
+			hide_dependency_lines: true
 			dependencies: [
 				"1A39EE189239CD6B"
 			]
@@ -1339,12 +1374,13 @@
 		}
 		{
 			id: "409349A012B39C21"
-			x: 3.0d
-			y: 50.900000000000006d
+			x: 19.125d
+			y: 10.425d
 			icon: {
 				id: "minecraft:redstone_torch"
 				count: 1
 			}
+			hide_dependency_lines: true
 			dependencies: [
 				"1A39EE189239CD6B"
 			]
@@ -1364,12 +1400,13 @@
 		}
 		{
 			id: "7D5CFC6BE654DAD1"
-			x: 4.7d
-			y: 44.975d
+			x: 19.125d
+			y: 11.775d
 			icon: {
 				id: "minecraft:amethyst_shard"
 				count: 1
 			}
+			hide_dependency_lines: true
 			dependencies: [
 				"1A39EE189239CD6B"
 			]
@@ -1389,12 +1426,13 @@
 		}
 		{
 			id: "28D4E4DA10EAEBC7"
-			x: 4.7d
-			y: 46.95d
+			x: 19.125d
+			y: 13.125d
 			icon: {
 				id: "ars_nouveau:source_gem"
 				count: 1
 			}
+			hide_dependency_lines: true
 			dependencies: [
 				"1A39EE189239CD6B"
 			]
@@ -1414,12 +1452,13 @@
 		}
 		{
 			id: "289E1506658A9E6B"
-			x: 4.7d
-			y: 48.925000000000004d
+			x: 20.475d
+			y: 10.425d
 			icon: {
 				id: "minecraft:ender_pearl"
 				count: 1
 			}
+			hide_dependency_lines: true
 			dependencies: [
 				"1A39EE189239CD6B"
 			]
@@ -1440,7 +1479,7 @@
 		{
 			id: "45DC4C7499B73924"
 			x: 0.375d
-			y: 56.449999999999996d
+			y: 17.9d
 			icon: {
 				id: "sophisticatedstorage:barrel"
 				count: 1
@@ -1473,12 +1512,13 @@
 		}
 		{
 			id: "32B661CCF37A5217"
-			x: 3.5d
-			y: 56.074999999999996d
+			x: 2.375d
+			y: 19.9d
 			icon: {
 				id: "sophisticatedstorage:barrel"
 				count: 1
 			}
+			hide_dependency_lines: true
 			dependencies: [
 				"45DC4C7499B73924"
 			]
@@ -1512,12 +1552,13 @@
 		}
 		{
 			id: "3D89A434297F0683"
-			x: 3.5d
-			y: 58.175d
+			x: 2.375d
+			y: 21.25d
 			icon: {
 				id: "functionalstorage:oak_1"
 				count: 1
 			}
+			hide_dependency_lines: true
 			dependencies: [
 				"45DC4C7499B73924"
 			]
@@ -1551,12 +1592,13 @@
 		}
 		{
 			id: "533DFF66309DB39F"
-			x: 3.5d
-			y: 60.275d
+			x: 2.375d
+			y: 22.599999999999998d
 			icon: {
 				id: "create:item_vault"
 				count: 1
 			}
+			hide_dependency_lines: true
 			dependencies: [
 				"45DC4C7499B73924"
 			]
@@ -1590,12 +1632,13 @@
 		}
 		{
 			id: "1A4B773D269B58C8"
-			x: 3.5d
-			y: 62.375d
+			x: 3.7249999999999996d
+			y: 19.9d
 			icon: {
 				id: "sophisticatedbackpacks:backpack"
 				count: 1
 			}
+			hide_dependency_lines: true
 			dependencies: [
 				"45DC4C7499B73924"
 			]
@@ -1629,12 +1672,13 @@
 		}
 		{
 			id: "7D70C7C2027FC92F"
-			x: 3.5d
-			y: 64.475d
+			x: 3.7249999999999996d
+			y: 21.25d
 			icon: {
 				id: "sophisticatedstorage:packing_tape"
 				count: 1
 			}
+			hide_dependency_lines: true
 			dependencies: [
 				"45DC4C7499B73924"
 			]
@@ -1663,12 +1707,13 @@
 		}
 		{
 			id: "29391BFAD0ADC922"
-			x: 5.2d
-			y: 56.074999999999996d
+			x: 3.7249999999999996d
+			y: 22.599999999999998d
 			icon: {
 				id: "kronwerke:grubenrahmen"
 				count: 1
 			}
+			hide_dependency_lines: true
 			dependencies: [
 				"45DC4C7499B73924"
 			]
@@ -1699,12 +1744,13 @@
 		}
 		{
 			id: "12B08B1025D23D2B"
-			x: 5.2d
-			y: 58.175d
+			x: 5.075d
+			y: 19.9d
 			icon: {
 				id: "waystones:return_scroll"
 				count: 1
 			}
+			hide_dependency_lines: true
 			dependencies: [
 				"45DC4C7499B73924"
 			]
@@ -1738,12 +1784,13 @@
 		}
 		{
 			id: "7492CA8E478271AC"
-			x: 5.2d
-			y: 60.275d
+			x: 5.075d
+			y: 21.25d
 			icon: {
 				id: "minecraft:barrel"
 				count: 1
 			}
+			hide_dependency_lines: true
 			dependencies: [
 				"45DC4C7499B73924"
 			]
@@ -1763,12 +1810,13 @@
 		}
 		{
 			id: "553F4DAFECEB2F43"
-			x: 5.2d
-			y: 62.375d
+			x: 5.075d
+			y: 22.599999999999998d
 			icon: {
 				id: "minecraft:ender_pearl"
 				count: 1
 			}
+			hide_dependency_lines: true
 			dependencies: [
 				"45DC4C7499B73924"
 			]
@@ -1788,12 +1836,13 @@
 		}
 		{
 			id: "1088CC6818EB9DDB"
-			x: 5.2d
-			y: 64.475d
+			x: 6.425000000000001d
+			y: 19.9d
 			icon: {
 				id: "minecraft:amethyst_shard"
 				count: 1
 			}
+			hide_dependency_lines: true
 			dependencies: [
 				"45DC4C7499B73924"
 			]
@@ -1813,12 +1862,13 @@
 		}
 		{
 			id: "4B906184EDD78418"
-			x: 6.9d
-			y: 56.074999999999996d
+			x: 6.425000000000001d
+			y: 21.25d
 			icon: {
 				id: "minecraft:glass"
 				count: 1
 			}
+			hide_dependency_lines: true
 			dependencies: [
 				"45DC4C7499B73924"
 			]
@@ -1838,12 +1888,13 @@
 		}
 		{
 			id: "310BD6B66D56BF2D"
-			x: 6.9d
-			y: 58.175d
+			x: 6.425000000000001d
+			y: 22.599999999999998d
 			icon: {
 				id: "minecraft:compass"
 				count: 1
 			}
+			hide_dependency_lines: true
 			dependencies: [
 				"45DC4C7499B73924"
 			]
@@ -1863,8 +1914,8 @@
 		}
 		{
 			id: "4E1EFA9809C91E7C"
-			x: 6.9d
-			y: 60.775d
+			x: 2.975d
+			y: 17.9d
 			icon: {
 				id: "create:belt_connector"
 				count: 1
@@ -1954,8 +2005,8 @@
 		{
 			id: "7D64089BE8E4387E"
 			image: "kronwerke:textures/quests/list_transport/items.png"
-			x: 1.4d
-			y: 6.375000000000001d
+			x: 5.4d
+			y: 2.6750000000000003d
 			width: 3.8d
 			height: 0.9d
 			rotation: 0.0d
@@ -1965,7 +2016,7 @@
 			id: "29051FDE9F4E4F4C"
 			image: "kronwerke:textures/quests/list_transport/fluids.png"
 			x: 1.525d
-			y: 21.425d
+			y: 8.975d
 			width: 4.05d
 			height: 0.9d
 			rotation: 0.0d
@@ -1974,8 +2025,8 @@
 		{
 			id: "3F62DC8379067BE7"
 			image: "kronwerke:textures/quests/list_transport/gas.png"
-			x: 0.32499999999999996d
-			y: 34.50000000000001d
+			x: 9.75d
+			y: 8.975d
 			width: 1.65d
 			height: 0.9d
 			rotation: 0.0d
@@ -1984,8 +2035,8 @@
 		{
 			id: "10F4F671C3DB731D"
 			image: "kronwerke:textures/quests/list_transport/power.png"
-			x: 0.6299999999999999d
-			y: 43.62500000000001d
+			x: 16.03d
+			y: 8.975d
 			width: 2.26d
 			height: 0.9d
 			rotation: 0.0d
@@ -1995,7 +2046,7 @@
 			id: "3B8B5E0E18327CC4"
 			image: "kronwerke:textures/quests/list_transport/storage.png"
 			x: 0.485d
-			y: 54.725d
+			y: 15.949999999999998d
 			width: 1.97d
 			height: 0.9d
 			rotation: 0.0d

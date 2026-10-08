@@ -13,7 +13,7 @@
 		{
 			id: "2A8DFA7B8DC8A51F"
 			x: 0.5d
-			y: 2.96d
+			y: 3.26d
 			icon: {
 				id: "ars_nouveau:ritual_wilden_summon"
 				count: 1
@@ -50,8 +50,8 @@
 		}
 		{
 			id: "1CFF37EBE286FADE"
-			x: 0.125d
-			y: 7.885000000000001d
+			x: 4.125d
+			y: 5.66d
 			icon: {
 				id: "ars_nouveau:wilden_tribute"
 				count: 1
@@ -91,8 +91,8 @@
 		}
 		{
 			id: "22E0E03F4FD890C4"
-			x: 2.5d
-			y: 7.760000000000001d
+			x: 6.325d
+			y: 5.66d
 			icon: {
 				id: "ars_elemental:mark_of_mastery"
 				count: 1
@@ -131,8 +131,8 @@
 		}
 		{
 			id: "116A9D90E68C7E9B"
-			x: 4.75d
-			y: 7.760000000000001d
+			x: 8.325d
+			y: 5.66d
 			icon: {
 				id: "ars_elemental:fire_focus"
 				count: 1
@@ -171,8 +171,8 @@
 		}
 		{
 			id: "18AEB2BD64542C78"
-			x: 2.5d
-			y: 11.21d
+			x: 6.325d
+			y: 7.16d
 			icon: {
 				id: "ars_nouveau:summon_focus"
 				count: 1
@@ -211,8 +211,8 @@
 		}
 		{
 			id: "17690437D3197151"
-			x: 2.5d
-			y: 9.485000000000001d
+			x: 6.325d
+			y: 4.16d
 			icon: {
 				id: "minecraft:nether_star"
 				count: 1
@@ -250,8 +250,8 @@
 		}
 		{
 			id: "2424E646C622B4D2"
-			x: 0.5d
-			y: 16.635d
+			x: 11.825d
+			y: 5.66d
 			icon: {
 				id: "ars_nouveau:archmage_spell_book"
 				count: 1
@@ -293,12 +293,13 @@
 		}
 		{
 			id: "6B14156D0736CD7F"
-			x: 3.25d
-			y: 16.135d
+			x: 13.825d
+			y: 7.16d
 			icon: {
 				id: "ars_nouveau:glyph_blink"
 				count: 1
 			}
+			hide_dependency_lines: true
 			dependencies: [
 				"2424E646C622B4D2"
 			]
@@ -341,12 +342,13 @@
 		}
 		{
 			id: "2029076869FC26F5"
-			x: 3.25d
-			y: 23.185000000000002d
+			x: 13.825d
+			y: 9.86d
 			icon: {
 				id: "ars_nouveau:glyph_lightning"
 				count: 1
 			}
+			hide_dependency_lines: true
 			dependencies: [
 				"2424E646C622B4D2"
 			]
@@ -380,8 +382,8 @@
 		}
 		{
 			id: "3131731C3E3B6F7A"
-			x: 4.95d
-			y: 18.485000000000003d
+			x: 14.625d
+			y: 5.66d
 			icon: {
 				id: "ars_nouveau:glyph_burst"
 				count: 1
@@ -419,8 +421,8 @@
 		}
 		{
 			id: "634B43CE28194F31"
-			x: 7.2d
-			y: 18.485000000000003d
+			x: 17.975d
+			y: 5.66d
 			icon: {
 				id: "ars_technica:glyph_obliterate"
 				count: 1
@@ -467,12 +469,13 @@
 		}
 		{
 			id: "2C6B1101FBC07225"
-			x: 3.25d
-			y: 18.485000000000003d
+			x: 13.825d
+			y: 8.51d
 			icon: {
 				id: "ars_nouveau:glyph_split"
 				count: 1
 			}
+			hide_dependency_lines: true
 			dependencies: [
 				"2424E646C622B4D2"
 			]
@@ -515,12 +518,13 @@
 		}
 		{
 			id: "7EE273026055D90E"
-			x: 4.95d
-			y: 16.135d
+			x: 15.174999999999999d
+			y: 7.16d
 			icon: {
 				id: "ars_nouveau:glyph_summon_vex"
 				count: 1
 			}
+			hide_dependency_lines: true
 			dependencies: [
 				"2424E646C622B4D2"
 			]
@@ -581,8 +585,8 @@
 		}
 		{
 			id: "7AA8D39A5638B696"
-			x: 4.95d
-			y: 20.835d
+			x: 14.625d
+			y: 4.16d
 			icon: {
 				id: "ars_nouveau:glyph_hex"
 				count: 1
@@ -638,8 +642,8 @@
 		}
 		{
 			id: "20F91A666115D6A2"
-			x: 7.2d
-			y: 20.835d
+			x: 17.975d
+			y: 4.16d
 			icon: {
 				id: "ars_additions:glyph_mark"
 				count: 1
@@ -696,13 +700,14 @@
 		}
 		{
 			id: "7A660BD9E9B75D26"
-			x: 3.25d
-			y: 20.835d
+			x: 14.625d
+			y: 11.36d
 			icon: {
 				id: "ars_elemental:glyph_conflagrate"
 				count: 1
 			}
 			optional: true
+			hide_dependency_lines: true
 			dependencies: [
 				"2424E646C622B4D2"
 			]
@@ -754,8 +759,8 @@
 		}
 		{
 			id: "7C8684CA4CF6D896"
-			x: 7.2d
-			y: 16.135d
+			x: 17.975d
+			y: 11.36d
 			icon: {
 				id: "ars_elemental:glyph_water_jet"
 				count: 1
@@ -812,8 +817,8 @@
 		}
 		{
 			id: "5871EDE821760ECC"
-			x: 10.2d
-			y: 16.135d
+			x: 19.975d
+			y: 11.36d
 			icon: {
 				id: "ars_elemental:glyph_homing_projectile"
 				count: 1
@@ -870,8 +875,8 @@
 		}
 		{
 			id: "15B5D6500C58AF72"
-			x: 10.2d
-			y: 19.235000000000003d
+			x: 19.975d
+			y: 5.66d
 			icon: {
 				id: "ars_nouveau:archmage_spell_book"
 				count: 1
@@ -916,7 +921,7 @@
 		{
 			id: "5D9581A486A0D250"
 			x: 0.0d
-			y: 28.735000000000003d
+			y: 16.46d
 			icon: {
 				id: "ars_nouveau:ritual_brazier"
 				count: 1
@@ -946,8 +951,8 @@
 		}
 		{
 			id: "48399F469D493447"
-			x: 2.25d
-			y: 28.735000000000003d
+			x: 2.0d
+			y: 16.46d
 			icon: {
 				id: "ars_nouveau:ritual_flight"
 				count: 1
@@ -985,8 +990,8 @@
 		}
 		{
 			id: "2AA25AAEDABD9E60"
-			x: 2.25d
-			y: 30.335000000000004d
+			x: 2.0d
+			y: 14.959999999999999d
 			icon: {
 				id: "ars_nouveau:ritual_disintegration"
 				count: 1
@@ -1024,8 +1029,8 @@
 		}
 		{
 			id: "426C4D1C09A4C077"
-			x: 4.5d
-			y: 28.735000000000003d
+			x: 4.0d
+			y: 16.46d
 			icon: {
 				id: "ars_nouveau:ritual_awakening"
 				count: 1
@@ -1063,8 +1068,8 @@
 		}
 		{
 			id: "138F2D1FBD28707E"
-			x: 6.75d
-			y: 28.735000000000003d
+			x: 6.0d
+			y: 16.46d
 			icon: {
 				id: "ars_nouveau:amethyst_golem_charm"
 				count: 1
@@ -1111,8 +1116,8 @@
 		}
 		{
 			id: "145619584FEB7A01"
-			x: 4.5d
-			y: 30.335000000000004d
+			x: 4.0d
+			y: 14.959999999999999d
 			icon: {
 				id: "ars_nouveau:ritual_conjure_island_plains"
 				count: 1
@@ -1169,8 +1174,8 @@
 		}
 		{
 			id: "2BEEEDDBFE1633F8"
-			x: 2.25d
-			y: 31.935000000000002d
+			x: 2.0d
+			y: 17.96d
 			icon: {
 				id: "ars_nouveau:timer_spell_turret"
 				count: 1
@@ -1217,8 +1222,8 @@
 		}
 		{
 			id: "3CD8FF8245CE3372"
-			x: 0.0d
-			y: 36.735d
+			x: 9.0d
+			y: 14.959999999999999d
 			icon: {
 				id: "ars_nouveau:arcanist_robes"
 				count: 1
@@ -1257,8 +1262,8 @@
 		}
 		{
 			id: "31BBD097DF9D408D"
-			x: 2.25d
-			y: 36.735d
+			x: 11.0d
+			y: 14.959999999999999d
 			icon: {
 				id: "minecraft:blaze_rod"
 				count: 1
@@ -1291,8 +1296,8 @@
 		}
 		{
 			id: "7F0346A78EA8EE61"
-			x: 4.5d
-			y: 36.735d
+			x: 13.0d
+			y: 14.959999999999999d
 			icon: {
 				id: "ars_nouveau:alteration_table"
 				count: 1
@@ -1339,8 +1344,8 @@
 		}
 		{
 			id: "1E59922B01A1E873"
-			x: 6.75d
-			y: 36.735d
+			x: 15.0d
+			y: 14.959999999999999d
 			icon: {
 				id: "ars_nouveau:thread_spellpower"
 				count: 1
@@ -1406,8 +1411,8 @@
 		}
 		{
 			id: "14D74A089FE60670"
-			x: 6.75d
-			y: 38.335d
+			x: 15.0d
+			y: 16.46d
 			icon: {
 				id: "ars_nouveau:thread_magic_capacity"
 				count: 1
@@ -1474,7 +1479,7 @@
 		{
 			id: "16EEA302D699A46A"
 			x: 0.125d
-			y: 43.26d
+			y: 21.684999999999995d
 			icon: {
 				id: "ae2:charged_certus_quartz_crystal"
 				count: 1
@@ -1514,8 +1519,8 @@
 		}
 		{
 			id: "43D847CCF4429AF2"
-			x: 2.5d
-			y: 43.135d
+			x: 2.325d
+			y: 21.684999999999995d
 			icon: {
 				id: "ars_technica:mark_of_technomancy"
 				count: 1
@@ -1569,8 +1574,8 @@
 		{
 			id: "12072A2B8741CB63"
 			image: "kronwerke:textures/quests/ars_master/chimaere.png"
-			x: 1.245d
-			y: 6.410000000000001d
+			x: 5.245d
+			y: 2.71d
 			width: 3.49d
 			height: 0.9d
 			rotation: 0.0d
@@ -1579,8 +1584,8 @@
 		{
 			id: "1E22FE1C88AC36EC"
 			image: "kronwerke:textures/quests/ars_master/glyphen.png"
-			x: 2.75d
-			y: 14.785000000000002d
+			x: 14.075d
+			y: 2.71d
 			width: 6.5d
 			height: 0.9d
 			rotation: 0.0d
@@ -1590,7 +1595,7 @@
 			id: "42A6CA97DECA9DA1"
 			image: "kronwerke:textures/quests/ars_master/stahlwerk.png"
 			x: 2.46d
-			y: 27.385d
+			y: 13.509999999999998d
 			width: 5.92d
 			height: 0.9d
 			rotation: 0.0d
@@ -1599,8 +1604,8 @@
 		{
 			id: "2F73D999C3347BF8"
 			image: "kronwerke:textures/quests/ars_master/roben.png"
-			x: 1.96d
-			y: 35.385000000000005d
+			x: 10.96d
+			y: 13.509999999999998d
 			width: 4.92d
 			height: 0.9d
 			rotation: 0.0d
@@ -1610,7 +1615,7 @@
 			id: "3DF1FD879A935D52"
 			image: "kronwerke:textures/quests/ars_master/technik.png"
 			x: 2.045d
-			y: 41.785000000000004d
+			y: 20.109999999999996d
 			width: 5.09d
 			height: 0.9d
 			rotation: 0.0d

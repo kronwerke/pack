@@ -13,7 +13,7 @@
 		{
 			id: "2D96716A23CE3BA0"
 			x: 0.5d
-			y: 2.925d
+			y: 3.225d
 			icon: {
 				id: "fluxnetworks:flux_dust"
 				count: 1
@@ -50,8 +50,8 @@
 		}
 		{
 			id: "3B72F94064E45DB0"
-			x: 0.0d
-			y: 7.7250000000000005d
+			x: 4.0d
+			y: 4.125d
 			icon: {
 				id: "fluxnetworks:flux_core"
 				count: 1
@@ -94,8 +94,8 @@
 		}
 		{
 			id: "2A237AEF4A42416D"
-			x: 2.25d
-			y: 7.7250000000000005d
+			x: 6.0d
+			y: 4.125d
 			icon: {
 				id: "fluxnetworks:flux_block"
 				count: 1
@@ -133,8 +133,8 @@
 		}
 		{
 			id: "3D7B3B704740B2A8"
-			x: 5.0d
-			y: 7.7250000000000005d
+			x: 4.0d
+			y: 5.725d
 			hide_dependency_lines: true
 			dependencies: [
 				"2D96716A23CE3BA0"
@@ -169,8 +169,8 @@
 		}
 		{
 			id: "5AB8BCA25458279B"
-			x: 0.25d
-			y: 12.775000000000002d
+			x: 11.530000000000001d
+			y: 4.375d
 			icon: {
 				id: "fluxnetworks:flux_configurator"
 				count: 1
@@ -207,8 +207,8 @@
 		}
 		{
 			id: "59D727E21E41F5C9"
-			x: 2.75d
-			y: 12.525000000000002d
+			x: 13.930000000000001d
+			y: 4.375d
 			icon: {
 				id: "minecraft:iron_door"
 				count: 1
@@ -232,8 +232,8 @@
 		}
 		{
 			id: "23C2815B15F0590F"
-			x: 2.75d
-			y: 14.375000000000002d
+			x: 13.930000000000001d
+			y: 5.875d
 			icon: {
 				id: "minecraft:name_tag"
 				count: 1
@@ -266,8 +266,8 @@
 		}
 		{
 			id: "2601A102B4B93A06"
-			x: 5.0d
-			y: 12.525000000000002d
+			x: 15.930000000000001d
+			y: 4.375d
 			icon: {
 				id: "minecraft:writable_book"
 				count: 1
@@ -299,7 +299,7 @@
 		{
 			id: "5684A0F706CC1C22"
 			x: 0.25d
-			y: 19.675d
+			y: 9.850000000000001d
 			icon: {
 				id: "fluxnetworks:flux_plug"
 				count: 1
@@ -337,7 +337,7 @@
 		{
 			id: "4BF5047D4A9055F9"
 			x: 0.25d
-			y: 21.650000000000002d
+			y: 11.850000000000001d
 			icon: {
 				id: "fluxnetworks:flux_point"
 				count: 1
@@ -378,14 +378,15 @@
 		}
 		{
 			id: "578757F7D00B0EFC"
-			x: 3.125d
-			y: 19.8d
+			x: 2.65d
+			y: 9.850000000000001d
 			icon: {
 				id: "fluxnetworks:flux_point"
 				count: 1
 			}
 			size: 1.75d
 			shape: "gear"
+			hide_dependency_lines: true
 			dependencies: [
 				"5684A0F706CC1C22"
 				"4BF5047D4A9055F9"
@@ -412,8 +413,8 @@
 		}
 		{
 			id: "501774DAD692CFF7"
-			x: 5.75d
-			y: 19.425d
+			x: 5.25d
+			y: 9.850000000000001d
 			icon: {
 				id: "minecraft:compass"
 				count: 1
@@ -437,8 +438,8 @@
 		}
 		{
 			id: "71234B86620B9460"
-			x: 5.75d
-			y: 21.400000000000002d
+			x: 5.25d
+			y: 11.350000000000001d
 			icon: {
 				id: "minecraft:repeater"
 				count: 1
@@ -462,8 +463,8 @@
 		}
 		{
 			id: "2A301EBCE4C292F9"
-			x: 8.0d
-			y: 19.425d
+			x: 7.25d
+			y: 9.850000000000001d
 			icon: {
 				id: "minecraft:comparator"
 				count: 1
@@ -487,8 +488,8 @@
 		}
 		{
 			id: "5E6FF7DF9793C34E"
-			x: 8.0d
-			y: 21.400000000000002d
+			x: 7.25d
+			y: 11.350000000000001d
 			icon: {
 				id: "minecraft:redstone_torch"
 				count: 1
@@ -512,8 +513,8 @@
 		}
 		{
 			id: "5F10428E7D8BBB53"
-			x: 10.25d
-			y: 19.425d
+			x: 9.25d
+			y: 9.850000000000001d
 			icon: {
 				id: "fluxnetworks:flux_configurator"
 				count: 1
@@ -539,8 +540,8 @@
 		}
 		{
 			id: "4C9C97509CF300BC"
-			x: 0.5d
-			y: 27.075d
+			x: 12.75d
+			y: 9.975000000000001d
 			icon: {
 				id: "fluxnetworks:flux_controller"
 				count: 1
@@ -586,8 +587,8 @@
 		}
 		{
 			id: "2C44F2CB55F34D57"
-			x: 3.25d
-			y: 26.575d
+			x: 15.55d
+			y: 9.975000000000001d
 			icon: {
 				id: "mekanism:energy_tablet"
 				count: 1
@@ -620,8 +621,8 @@
 		}
 		{
 			id: "72A7A5C8817A1244"
-			x: 5.5d
-			y: 26.575d
+			x: 17.55d
+			y: 9.975000000000001d
 			icon: {
 				id: "mekanism:free_runners"
 				count: 1
@@ -661,7 +662,7 @@
 		{
 			id: "698B1FF1187D7466"
 			x: 0.25d
-			y: 32.125d
+			y: 15.95d
 			icon: {
 				id: "fluxnetworks:basic_flux_storage"
 				count: 1
@@ -707,8 +708,8 @@
 		}
 		{
 			id: "783E84F0CBE1A688"
-			x: 2.75d
-			y: 31.875d
+			x: 2.65d
+			y: 15.95d
 			icon: {
 				id: "minecraft:spyglass"
 				count: 1
@@ -732,8 +733,8 @@
 		}
 		{
 			id: "72C01A75F410D949"
-			x: 2.75d
-			y: 33.725d
+			x: 2.65d
+			y: 17.45d
 			icon: {
 				id: "minecraft:lodestone"
 				count: 1
@@ -757,8 +758,8 @@
 		}
 		{
 			id: "77598B153AEA326C"
-			x: 5.0d
-			y: 31.875d
+			x: 4.65d
+			y: 15.95d
 			icon: {
 				id: "fluxnetworks:basic_flux_storage"
 				count: 1
@@ -784,8 +785,8 @@
 		}
 		{
 			id: "538B0C7E814E36A3"
-			x: 0.5d
-			y: 39.275d
+			x: 9.35d
+			y: 17.95d
 			icon: {
 				id: "fluxnetworks:flux_plug"
 				count: 1
@@ -841,8 +842,8 @@
 		}
 		{
 			id: "4E12BB7D1E0FD62B"
-			x: 3.25d
-			y: 38.775d
+			x: 12.149999999999999d
+			y: 17.95d
 			icon: {
 				id: "mekanism:advanced_tier_installer"
 				count: 1
@@ -871,8 +872,8 @@
 		}
 		{
 			id: "1A2AC9C2E76DB05F"
-			x: 3.25d
-			y: 41.125d
+			x: 12.149999999999999d
+			y: 15.7d
 			icon: {
 				id: "powah:reactor_starter"
 				count: 1
@@ -910,8 +911,8 @@
 		}
 		{
 			id: "25A0BEA42EF796C4"
-			x: 3.25d
-			y: 43.475d
+			x: 12.149999999999999d
+			y: 20.2d
 			icon: {
 				id: "oritech:jetpack"
 				count: 1
@@ -946,8 +947,8 @@
 		}
 		{
 			id: "58FD8C4C0463E126"
-			x: 6.25d
-			y: 39.525d
+			x: 14.149999999999999d
+			y: 17.95d
 			icon: {
 				id: "fluxnetworks:flux_controller"
 				count: 1
@@ -1015,8 +1016,8 @@
 		{
 			id: "504EDA2404627692"
 			image: "kronwerke:textures/quests/flux_networks/flux.png"
-			x: 2.14d
-			y: 6.375000000000001d
+			x: 6.140000000000001d
+			y: 2.6750000000000003d
 			width: 5.28d
 			height: 0.9d
 			rotation: 0.0d
@@ -1025,8 +1026,8 @@
 		{
 			id: "21F5FC7FD46000EB"
 			image: "kronwerke:textures/quests/flux_networks/network.png"
-			x: 1.8250000000000002d
-			y: 11.175d
+			x: 13.105d
+			y: 2.6750000000000003d
 			width: 4.65d
 			height: 0.9d
 			rotation: 0.0d
@@ -1036,7 +1037,7 @@
 			id: "16CD2029BE09407F"
 			image: "kronwerke:textures/quests/flux_networks/devices.png"
 			x: 2.605d
-			y: 18.075d
+			y: 8.025d
 			width: 6.21d
 			height: 0.9d
 			rotation: 0.0d
@@ -1045,8 +1046,8 @@
 		{
 			id: "1952780DA2CCBDA4"
 			image: "kronwerke:textures/quests/flux_networks/wireless.png"
-			x: 2.435d
-			y: 25.224999999999998d
+			x: 14.685d
+			y: 8.025d
 			width: 5.87d
 			height: 0.9d
 			rotation: 0.0d
@@ -1056,7 +1057,7 @@
 			id: "1E93CCBE9A611577"
 			image: "kronwerke:textures/quests/flux_networks/storage.png"
 			x: 2.925d
-			y: 30.525d
+			y: 14.249999999999998d
 			width: 6.85d
 			height: 0.9d
 			rotation: 0.0d
@@ -1065,8 +1066,8 @@
 		{
 			id: "131C0340EBB88B65"
 			image: "kronwerke:textures/quests/flux_networks/base.png"
-			x: 2.0d
-			y: 37.425000000000004d
+			x: 10.85d
+			y: 14.249999999999998d
 			width: 5.0d
 			height: 0.9d
 			rotation: 0.0d

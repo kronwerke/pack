@@ -20,7 +20,7 @@ quests = [
     quest("goo", 0, 0, "&a&lMisch das erste Goo",
           subtitle="Ein lebender Block, der Eisen in Ferricore verwandelt.",
           description=[
-              "&eRezept:&r vier &6Tonklumpen&r in die Ecken, oben und unten je ein &6Zucker&r, links und rechts je ein &6Verrottetes Fleisch&r, &6Erde&r in die Mitte. Das ergibt einen Block &6Primogel Goo&r.",
+              "&eRezept:&r vier &6Tonklumpen&r in die Ecken, oben und unten je ein &6Zucker&r, links und rechts je ein &6Verrottetes Fleisch&r, &6Inferium-Essenz&r in die Mitte. Das ergibt einen Block &6Primogel Goo&r.",
               "",
               "&aJust Dire Things&r dreht sich um dieses Goo. Es frisst Blöcke, die du daneben stellst, und lässt etwas Besseres zurück: aus Eisen wird &6Ferricore&r, aus Gold &6Blazegold&r. Daraus baust du Werkzeuge mit Fähigkeiten, einfache Maschinen ohne Strom und eine Portalkanone.",
               "",

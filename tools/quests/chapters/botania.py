@@ -241,7 +241,7 @@ quests = [
     quest("spreader", 5, 6.5, "&aStell einen Manaverbreiter auf",
           subtitle="Schießt Mana von A nach B.",
           description=[
-              "&e6 Lebeholzstämme&r, &e1 Kupferbarren&r und &e1 Blütenblatt&r. Stell ihn höchstens 6 Blöcke von deinen Blumen auf und verbinde ihn mit dem Stab (Bindemodus) mit seinem Ziel.",
+              "&e6 Lebeholzstämme&r, &e1 Kupferblech&r aus der Create-Presse und &e1 Blütenblatt&r. Stell ihn höchstens 6 Blöcke von deinen Blumen auf und verbinde ihn mit dem Stab (Bindemodus) mit seinem Ziel.",
               "",
               "Er feuert, solange das Ziel Mana aufnimmt, ein neuer Stoß erst, wenn der letzte angekommen ist. Lange Wege kosten Mana, die Funken im Zielstrahl zeigen, wo der Verlust beginnt.",
               "",

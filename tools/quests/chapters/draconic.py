@@ -96,7 +96,7 @@ quests = [
     quest("core", 5, 2.5, "&5&lBau einen Draconiumkern",
           subtitle="Das Bauteil für fast alles.",
           description=[
-              "&6Draconiumbarren&r in die vier Ecken, &6Gold&r an die vier Seiten, ein &6Diamant&r in die Mitte.",
+              "&6Draconiumbarren&r in die vier Ecken, &6Deepsilver&r aus Eternal Starlight an die vier Seiten, ein &6Diamant&r in die Mitte.",
               "",
               pic("components/draconium_core"),
               "",

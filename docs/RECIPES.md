@@ -156,3 +156,104 @@ Every goal item must show up as reachable in its stage and nowhere in the leak l
 ## The obelisk intake
 
 `kronwerke:obelisk_intake` (Zubringer): a hopper over an andesite alloy between cobbled deepslate (`kubejs/server_scripts/kronwerke/obelisk.js`). Machines feed the obelisk through it, credited to the player who placed it. Cheap on purpose: everyone should have one on the first evening.
+
+## The round of October 2026
+
+Every mod leans on at least one other, and key materials get a slow first route and a fast later one. Generated from `tools/recipes/round.py`, which also checks every change against a dump of the running pack.
+
+### Stage 1: the first machines of every mod need a part from another
+
+| Recipe | Change | Why |
+| --- | --- | --- |
+| `ars_nouveau:imbuement_chamber` | `c:ingots/gold` becomes `create:golden_sheet` | The first Ars machine needs a press: magic starts with a little tech. |
+| `ars_nouveau:enchanting_apparatus` | `c:ingots/gold` becomes `naturesaura:infused_iron` | The apparatus runs on aura iron from the Natural Altar. |
+| `botania:mana_spreader` | `c:ingots/copper` becomes `create:copper_sheet` | Pressed copper for the spreader; Botania meets Create on day one. |
+| `naturesaura:tree_ritual/nature_altar` | `minecraft:stone` becomes `botania:livingrock` | The Natural Altar stands on livingrock from a Pure Daisy: the two nature mods lean on each other. |
+| `mysticalagriculture:infusion_altar` | `c:ingots/gold` becomes `ars_nouveau:source_gem` | Growing resources starts with source. |
+| `mysticalagriculture:infusion_pedestal` | `c:ingots/gold` becomes `create:golden_sheet` | Pressed gold for the pedestals. |
+| `waystones:warp_stone` | `minecraft:amethyst_shard` becomes `ars_nouveau:source_gem` | Travel is a spell: every waystone costs four source gems. |
+| `irons_spellbooks:inscription_table` | `minecraft:wooden_slabs` becomes `ars_nouveau:archwood_slab` | Spell books are written on archwood. |
+| `irons_spellbooks:arcane_anvil` | `minecraft:amethyst_block` becomes `ars_nouveau:source_gem_block` | The arcane anvil binds source. |
+| `kronwerke:round/arcane_essence` | new: `minecraft:book`, `minecraft:lapis_lazuli`, `minecraft:glowstone_dust` to `irons_spellbooks:arcane_essence` | Arcane essence came only from loot and bees, which stalled Iron's Spells. A book imbued with lapis and glowstone gives three. |
+| `occultism:crafting/golden_sacrificial_bowl` | `c:ingots/gold` becomes `create:golden_sheet` | The golden bowl is pressed gold. |
+| `silentgear:material_grader` | `c:gems/quartz` becomes `ars_nouveau:source_gem` | The grader reads materials with source. |
+| `ironfurnaces:furnaces/copper_furnace` | `c:ingots/copper` becomes `create:copper_sheet` | Furnaces are clad in pressed sheets. |
+| `ironfurnaces:furnaces/iron_furnace` | `c:ingots/iron` becomes `create:iron_sheet` | Furnaces are clad in pressed sheets. |
+| `ironfurnaces:furnaces/iron_furnace2` | `c:ingots/iron` becomes `create:iron_sheet` | Furnaces are clad in pressed sheets. |
+| `sophisticatedbackpacks:iron_backpack` | `c:ingots/iron` becomes `create:iron_sheet` | Backpack tiers are plated with Create sheets. |
+| `sophisticatedbackpacks:iron_backpack_from_copper` | `c:ingots/iron` becomes `create:iron_sheet` | Backpack tiers are plated with Create sheets. |
+| `sophisticatedbackpacks:gold_backpack` | `c:ingots/gold` becomes `create:golden_sheet` | Backpack tiers are plated with Create sheets. |
+| `sophisticatedstorage:basic_to_iron_tier_upgrade` | `c:ingots/iron` becomes `create:iron_sheet` | Storage tiers are plated with Create sheets. |
+| `functionalstorage:compacting_drawer` | `minecraft:piston` becomes `create:mechanical_press` | A drawer that compacts has a press in it. |
+| `functionalstorage:simple_compacting_drawer` | `minecraft:piston` becomes `create:mechanical_press` | A drawer that compacts has a press in it. |
+| `functionalstorage:storage_controller` | `minecraft:comparator` becomes `create:andesite_casing` | The drawer network has a Create casing at its heart. |
+
+### Stage 1 to 2: slow by hand, fast with heat
+
+| Recipe | Change | Why |
+| --- | --- | --- |
+| `kronwerke:round/infused_iron_mixing` | new: `c:ingots/iron`, `c:ingots/iron`, `ars_nouveau:source_gem` to `naturesaura:infused_iron` | The altar makes one infused iron at a time with a lot of aura. A heated mixer with source makes two from a gem. |
+| `kronwerke:round/source_gem_mixing` | new: `minecraft:amethyst_shard`, `minecraft:amethyst_shard`, `minecraft:glowstone_dust` to `ars_nouveau:source_gem` | Imbuing makes one gem for 500 source. A heated mixer makes three from two shards and glowstone. |
+
+### Stage 2: the witch, blood and relic mods join the rest
+
+| Recipe | Change | Why |
+| --- | --- | --- |
+| `hexerei:mixing_cauldron` | `minecraft:iron_ingot` becomes `naturesaura:infused_iron` | The witch's cauldron is bound with aura iron. |
+| `reliquary:fertile_essence` | `c:dyes/green` becomes `hexerei:mandrake_root` | Fertility comes from the mandrake. |
+| `reliquary:alkahestry_altar` | `minecraft:redstone_lamp` becomes `occultism:spirit_attuned_gem` | Alkahestry is spirit work. |
+| `reliquary:apothecary_cauldron` | `minecraft:cauldron` becomes `hexerei:mixing_cauldron` | The apothecary brews in a witch's cauldron. |
+| `evilcraft:crafting/blood_infuser` | `c:cobblestones` becomes `forbidden_arcanus:darkstone` | Blood work in darkstone. |
+| `evilcraft:crafting/dark_tank` | `c:ingots/iron` becomes `born_in_chaos_v1:dark_metal_ingot` | The dark tank is forged from the dark metal of Born in Chaos. |
+| `forbidden_arcanus:clibano_core` | `minecraft:blast_furnace` becomes `create:blaze_burner` | The clibano burns with a blaze. |
+| `kronwerke:round/deorum_heated` | new: `minecraft:gold_ingot`, `forbidden_arcanus:arcane_crystal_dust`, `forbidden_arcanus:arcane_crystal_dust` to `forbidden_arcanus:deorum_ingot` | Deorum without mundabitur dust, in a heated mixer. |
+| `kronwerke:round/deorum_superheated` | new: `minecraft:gold_ingot`, `forbidden_arcanus:arcane_crystal_dust` to `forbidden_arcanus:deorum_ingot` | A superheated mixer doubles deorum. |
+| `pneumaticcraft:air_compressor` | `minecraft:furnace` becomes `create:blaze_burner` | Compressed air is heated by a blaze. |
+| `pneumaticcraft:pressure_tube` | `c:glass_blocks` becomes `create:fluid_pipe` | Pressure tubes start from Create's pipes. |
+| `justdirethings:gooblock_tier1` | `minecraft:dirt` becomes `mysticalagriculture:inferium_essence` | Goo grows from inferium. |
+| `create_jetpack:jetpack` | `create:chute` becomes `aether:zanite_gemstone` | The jetpack's nozzles are zanite from the Aether. |
+
+### Stage 3 and 4: deep magic and the far mods
+
+| Recipe | Change | Why |
+| --- | --- | --- |
+| `malum:spirit_altar` | `c:ingots/gold` becomes `eidolon_repraised:arcane_gold_ingot` | Malum's altar stands on Eidolon's arcane gold. |
+| `eidolon_repraised:worktable` | `minecraft:planks` becomes `malum:runewood_planks` | Eidolon's worktable is runewood. |
+| `kronwerke:round/pewter_mixing` | new: `c:ingots/lead`, `c:ingots/iron` to `eidolon_repraised:pewter_blend` | Pewter blend by hand gives two, a mixer three. |
+| `integrateddynamics:crafting/squeezer` | `c:storage_blocks/iron` becomes `create:mechanical_press` | The squeezer is a press. |
+| `laserio:laser_connector` | `c:ingots/iron` becomes `ae2:fluix_crystal` | Lasers carry what fluix carries. |
+| `xnet:controller` | `minecraft:comparator` becomes `ae2:logic_processor` | The network controller thinks with AE2's logic. |
+| `rftoolsbase:machine_frame` | `c:ingots/iron` becomes `mekanism:ingot_steel` | RFTools machines start from steel. |
+| `ae2:network/blocks/inscribers` | `minecraft:piston` becomes `create:mechanical_press` | The inscriber is a press. |
+| `industrialforegoing:dissolution_chamber` | `minecraft:bucket` becomes `create:fluid_tank` | Dissolution in Create tanks. |
+| `quarryplus:quarry` | `c:ingots/iron` becomes `eternal_starlight:deepsilver_ingot` | The quarry's frame is deepsilver from Eternal Starlight. |
+| `mahoutsukai:attuner` | `minecraft:gold_ingot` becomes `botania:terrasteel_ingot` | Mahou Tsukai attunes to terrasteel. |
+| `draconicevolution:components/draconium_core` | `c:ingots/gold` becomes `eternal_starlight:deepsilver_ingot` | Draconium cores are set in deepsilver. |
+| `aquaculture:iron_fishing_rod` | `c:ingots/iron` becomes `create:iron_sheet` | The iron rod is pressed sheet. |
+
+### Every plate on the press
+
+| Recipe | Change | Why |
+| --- | --- | --- |
+| `kronwerke:round/press_thorium` | new: `c:ingots/thorium` to `nuclearcraft:thorium_plate` | NuclearCraft plates came only from its own machines; a Create press makes them one to one. |
+| `kronwerke:round/press_boron` | new: `c:ingots/boron` to `nuclearcraft:boron_plate` | NuclearCraft plates came only from its own machines; a Create press makes them one to one. |
+| `kronwerke:round/press_tin` | new: `c:ingots/tin` to `nuclearcraft:tin_plate` | NuclearCraft plates came only from its own machines; a Create press makes them one to one. |
+| `kronwerke:round/press_magnesium` | new: `c:ingots/magnesium` to `nuclearcraft:magnesium_plate` | NuclearCraft plates came only from its own machines; a Create press makes them one to one. |
+| `kronwerke:round/press_lithium` | new: `c:ingots/lithium` to `nuclearcraft:lithium_plate` | NuclearCraft plates came only from its own machines; a Create press makes them one to one. |
+| `kronwerke:round/press_cobalt` | new: `c:ingots/cobalt` to `nuclearcraft:cobalt_plate` | NuclearCraft plates came only from its own machines; a Create press makes them one to one. |
+| `kronwerke:round/press_platinum` | new: `c:ingots/platinum` to `nuclearcraft:platinum_plate` | NuclearCraft plates came only from its own machines; a Create press makes them one to one. |
+| `kronwerke:round/press_zirconium` | new: `c:ingots/zirconium` to `nuclearcraft:zirconium_plate` | NuclearCraft plates came only from its own machines; a Create press makes them one to one. |
+| `kronwerke:round/press_beryllium` | new: `c:ingots/beryllium` to `nuclearcraft:beryllium_plate` | NuclearCraft plates came only from its own machines; a Create press makes them one to one. |
+| `kronwerke:round/press_bronze` | new: `c:ingots/bronze` to `nuclearcraft:bronze_plate` | NuclearCraft plates came only from its own machines; a Create press makes them one to one. |
+| `kronwerke:round/press_tough_alloy` | new: `c:ingots/tough_alloy` to `nuclearcraft:tough_alloy_plate` | NuclearCraft plates came only from its own machines; a Create press makes them one to one. |
+| `kronwerke:round/press_palladium` | new: `c:ingots/palladium` to `nuclearcraft:palladium_plate` | NuclearCraft plates came only from its own machines; a Create press makes them one to one. |
+| `kronwerke:round/press_hard_carbon` | new: `c:ingots/hard_carbon` to `nuclearcraft:hard_carbon_plate` | NuclearCraft plates came only from its own machines; a Create press makes them one to one. |
+| `kronwerke:round/press_thermoconducting` | new: `c:ingots/thermoconducting` to `nuclearcraft:thermoconducting_plate` | NuclearCraft plates came only from its own machines; a Create press makes them one to one. |
+| `kronwerke:round/press_extreme` | new: `c:ingots/extreme` to `nuclearcraft:extreme_plate` | NuclearCraft plates came only from its own machines; a Create press makes them one to one. |
+| `kronwerke:round/press_manganese` | new: `c:ingots/manganese` to `nuclearcraft:manganese_plate` | NuclearCraft plates came only from its own machines; a Create press makes them one to one. |
+| `kronwerke:round/press_sic_sic_cmc` | new: `c:ingots/sic_sic_cmc` to `nuclearcraft:sic_sic_cmc_plate` | NuclearCraft plates came only from its own machines; a Create press makes them one to one. |
+| `kronwerke:round/press_hsla_steel` | new: `c:ingots/hsla_steel` to `nuclearcraft:hsla_steel_plate` | NuclearCraft plates came only from its own machines; a Create press makes them one to one. |
+| `kronwerke:round/press_ferroboron` | new: `c:ingots/ferroboron` to `nuclearcraft:ferroboron_plate` | NuclearCraft plates came only from its own machines; a Create press makes them one to one. |
+| `kronwerke:round/press_lithium_manganese_dioxide` | new: `c:ingots/lithium_manganese_dioxide` to `nuclearcraft:lithium_manganese_dioxide_plate` | NuclearCraft plates came only from its own machines; a Create press makes them one to one. |
+| `kronwerke:round/press_graphite` | new: `c:ingots/graphite` to `nuclearcraft:graphite_plate` | NuclearCraft plates came only from its own machines; a Create press makes them one to one. |
+| `kronwerke:round/press_hop_graphite` | new: `c:ingots/hop_graphite` to `immersiveengineering:plate_hop_graphite` | Immersive's graphite plate on the Create press too. |

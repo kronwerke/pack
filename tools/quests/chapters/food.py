@@ -435,7 +435,7 @@ quests = [
     quest("f_rod", 4.5, 18, "&6Bau eine Eisen-Angelrute",
           subtitle="Neue Fische, neue Ruten.",
           description=[
-              "Zwei &6Eisenbarren&r, zwei &6Fäden&r und ein &6Stock&r, siehe JEI.",
+              "Zwei &6Eisenbleche&r aus der Create-Presse, zwei &6Fäden&r und ein &6Stock&r, siehe JEI.",
               "",
               "Aquaculture bringt Dutzende Fische mit eigenem Lebensraum. Schleichen und Rechtsklick mit der Rute öffnet ihre Plätze für Haken, Köder, Leine und Schwimmer.",
           ],

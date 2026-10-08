@@ -200,7 +200,7 @@ quests = [
     quest("worktable", 2.5, 8.2, "&6Bau einen Worktable",
           subtitle="Eine Werkbank mit vier Extraplätzen.",
           description=[
-              "Eine &6Pewter Inlay&r oben, drei &6violette Teppiche&r, drei &6Bretter&r. Pewter Inlay: vier Pewter im Kreis, gibt zwei.",
+              "Eine &6Pewter Inlay&r oben, drei &6violette Teppiche&r, drei &6Runewood-Bretter&r aus Malum. Pewter Inlay: vier Pewter im Kreis, gibt zwei.",
               "",
               "Arbeitet wie eine Werkbank, hat aber vier Plätze für magische Zutaten. Viele bessere Rezepte gehen nur hier.",
           ],

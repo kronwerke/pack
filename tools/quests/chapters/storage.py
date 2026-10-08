@@ -382,7 +382,7 @@ quests = [
     quest("iron_tier", 4.5, 14.5, "Werte auf Eisen auf",
           subtitle="54 Plätze und ein zweiter Upgrade-Platz.",
           description=[
-              "&6Copper to Iron Tier Upgrade:&r &6vier Eisenbarren&r um einen &6Hebel&r. Oder direkt im Raster: ein Fass in die Mitte, acht Eisenbarren drumherum.",
+              "&6Copper to Iron Tier Upgrade:&r &6vier Eisenbleche&r aus der Create-Presse um einen &6Hebel&r. Oder direkt im Raster: ein Fass in die Mitte, acht Eisenbarren drumherum.",
               "",
               "&e54 Plätze&r, &ezwei Upgrade-Plätze&r. Eisen ist das Beste in Stufe 1. Gold (81 Plätze, 3 Upgrades) kommt in Stufe 2, Diamant (108, 4) in Stufe 3, Netherit (132, 5) in Stufe 4.",
           ],

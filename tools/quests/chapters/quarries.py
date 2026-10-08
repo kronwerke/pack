@@ -161,7 +161,7 @@ quests = [
     quest("quarry", 2.5, 8, "&9&lBau einen Quarry Plus",
           subtitle="Rahmen, Kopf, Loch.",
           description=[
-              "&6Eisen&r, &6Obsidian&r, zwei &6Diamantspitzhacken&r, ein &6Spender&r, ein &6Redstone-Block&r und ein &6Marker&r.",
+              "&6Deepsilver&r aus Eternal Starlight, &6Obsidian&r, zwei &6Diamantspitzhacken&r, ein &6Spender&r, ein &6Redstone-Block&r und ein &6Marker&r.",
               "",
               "Stell ihn neben einen verbundenen Marker, dann übernimmt er den Bereich. Strom über FE-Kabel, die Beute geht an eine Truhe oder ein Rohr daneben.",
               "",

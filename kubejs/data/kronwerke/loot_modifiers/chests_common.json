@@ -1,0 +1,1175 @@
+{
+  "type": "neoforge:add_table",
+  "conditions": [
+    {
+      "condition": "minecraft:any_of",
+      "terms": [
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "aether:chests/dungeon/bronze/bronze_dungeon"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "aether:chests/dungeon/bronze/bronze_dungeon_disc"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "aether:chests/dungeon/bronze/bronze_dungeon_gummies"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "aether:chests/dungeon/bronze/bronze_dungeon_loot"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "aether:chests/dungeon/bronze/bronze_dungeon_neptune"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "aether:chests/dungeon/bronze/bronze_dungeon_trash"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "aether:chests/dungeon/silver/silver_dungeon"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "aether:chests/dungeon/silver/silver_dungeon_cape_config"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "aether:chests/dungeon/silver/silver_dungeon_disc"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "aether:chests/dungeon/silver/silver_dungeon_gravitite"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "aether:chests/dungeon/silver/silver_dungeon_gummies"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "aether:chests/dungeon/silver/silver_dungeon_loot"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "aether:chests/dungeon/silver/silver_dungeon_trash"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "aether:chests/dungeon/silver/silver_dungeon_valkyrie"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "aether:chests/ruined_portal"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "betterdeserttemples:chests/food_storage"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "betterdeserttemples:chests/lab"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "betterdeserttemples:chests/pharaoh_hidden"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "betterdeserttemples:chests/pot"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "betterdeserttemples:chests/statue"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "betterdeserttemples:chests/storage"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "betterdeserttemples:chests/tomb"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "betterdeserttemples:chests/tomb_pharaoh"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "betterdeserttemples:chests/wardrobe"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "betterdungeons:skeleton_dungeon/chests/common"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "betterdungeons:skeleton_dungeon/chests/middle"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "betterdungeons:small_dungeon/chests/loot_piles"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "betterdungeons:spider_dungeon/chests/egg_room"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "betterdungeons:zombie_dungeon/chests/common"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "betterdungeons:zombie_dungeon/chests/special"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "betterdungeons:zombie_dungeon/chests/tombstone"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "betterfortresses:chests/beacon"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "betterfortresses:chests/extra"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "betterfortresses:chests/hall"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "betterfortresses:chests/keep"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "betterfortresses:chests/obsidian"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "betterfortresses:chests/puzzle"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "betterfortresses:chests/quarters"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "betterfortresses:chests/storage"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "betterfortresses:chests/worship"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "betterjungletemples:chests/campsite"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "betteroceanmonuments:chests/upper_side_chamber"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "betterstrongholds:chests/armoury"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "betterstrongholds:chests/cmd_yung"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "betterstrongholds:chests/common"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "betterstrongholds:chests/crypt"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "betterstrongholds:chests/mess"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "betterstrongholds:chests/prison_lg"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "betterstrongholds:chests/trap"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "betterwitchhuts:chests/hut_0"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "cataclysm:chests/abandoned"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "cataclysm:chests/amethyst_nest_chest"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "deeperdarker:chests/crystallized_amber"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "dungeons_arise:chests/aviary/aviary_barrels"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "dungeons_arise:chests/aviary/aviary_normal"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "dungeons_arise:chests/bandit_towers/bandit_towers_barrels"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "dungeons_arise:chests/bandit_towers/bandit_towers_gardens"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "dungeons_arise:chests/bandit_towers/bandit_towers_normal"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "dungeons_arise:chests/bandit_towers/bandit_towers_rooms"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "dungeons_arise:chests/bandit_village/bandit_village_barrels"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "dungeons_arise:chests/bandit_village/bandit_village_normal"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "dungeons_arise:chests/bandit_village/bandit_village_tents"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "dungeons_arise:chests/bathhouse/bathhouse_barrels"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "dungeons_arise:chests/bathhouse/bathhouse_normal"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "dungeons_arise:chests/fishing_hut/fishing_hut_barrels"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "dungeons_arise:chests/foundry/foundry_chains"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "dungeons_arise:chests/foundry/foundry_lava_pit"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "dungeons_arise:chests/foundry/foundry_normal"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "dungeons_arise:chests/foundry/foundry_passage_exterior"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "dungeons_arise:chests/foundry/foundry_passage_normal"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "dungeons_arise:chests/greenwood_pub/greenwood_pub_barrels_hallways"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "dungeons_arise:chests/greenwood_pub/greenwood_pub_barrels_normal"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "dungeons_arise:chests/greenwood_pub/greenwood_pub_normal"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "dungeons_arise:chests/heavenly_challenger/heavenly_challenger_normal"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "dungeons_arise:chests/heavenly_challenger/heavenly_challenger_theater"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "dungeons_arise:chests/heavenly_conqueror/heavenly_conqueror_barrels"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "dungeons_arise:chests/heavenly_conqueror/heavenly_conqueror_normal"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "dungeons_arise:chests/heavenly_rider/heavenly_rider_barrels"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "dungeons_arise:chests/heavenly_rider/heavenly_rider_normal"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "dungeons_arise:chests/illager_campsite/illager_campsite_map"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "dungeons_arise:chests/illager_campsite/illager_campsite_tent"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "dungeons_arise:chests/illager_corsair/illager_corsair_barrels"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "dungeons_arise:chests/illager_fort/illager_fort_barrels"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "dungeons_arise:chests/illager_fort/illager_fort_normal"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "dungeons_arise:chests/illager_galley/illager_galley_barrels"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "dungeons_arise:chests/illager_windmill/illager_windmill_barrels"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "dungeons_arise:chests/jungle_tree_house/jungle_tree_house_barrels"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "dungeons_arise:chests/jungle_tree_house/jungle_tree_house_normal"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "dungeons_arise:chests/keep_kayra/keep_kayra_garden_normal"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "dungeons_arise:chests/keep_kayra/keep_kayra_normal"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "dungeons_arise:chests/kisegi_sanctuary/kisegi_sanctuary_basement"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "dungeons_arise:chests/kisegi_sanctuary/kisegi_sanctuary_normal"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "dungeons_arise:chests/kisegi_sanctuary/kisegi_sanctuary_top"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "dungeons_arise:chests/lighthouse/lighthouse_top"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "dungeons_arise:chests/mechanical_nest/mechanical_nest_equipment"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "dungeons_arise:chests/mechanical_nest/mechanical_nest_normal"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "dungeons_arise:chests/merchant_campsite/merchant_campsite_map"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "dungeons_arise:chests/merchant_campsite/merchant_campsite_tent"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "dungeons_arise:chests/mining_complex/mining_complex_barrel"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "dungeons_arise:chests/mining_complex/mining_complex_dripstone_normal"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "dungeons_arise:chests/mining_complex/mining_complex_facility_normal"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "dungeons_arise:chests/mining_complex/mining_complex_lush_normal"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "dungeons_arise:chests/mining_system/mining_system_barrels"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "dungeons_arise:chests/monastery/monastery_barrels"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "dungeons_arise:chests/monastery/monastery_bridges"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "dungeons_arise:chests/monastery/monastery_map"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "dungeons_arise:chests/mushroom_house/mushroom_house_barrels"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "dungeons_arise:chests/mushroom_house/mushroom_house_normal"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "dungeons_arise:chests/mushroom_mines/mushroom_mines_barrels"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "dungeons_arise:chests/mushroom_mines/mushroom_mines_ores"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "dungeons_arise:chests/mushroom_mines/mushroom_mines_tools"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "dungeons_arise:chests/mushroom_village/mushroom_village_barrels"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "dungeons_arise:chests/plague_asylum/plague_asylum_barrels"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "dungeons_arise:chests/plague_asylum/plague_asylum_cells"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "dungeons_arise:chests/plague_asylum/plague_asylum_normal"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "dungeons_arise:chests/plague_asylum/plague_asylum_potions"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "dungeons_arise:chests/plague_asylum/plague_asylum_storage"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "dungeons_arise:chests/scorched_mines/scorched_mines_barrels"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "dungeons_arise:chests/scorched_mines/scorched_mines_housing"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "dungeons_arise:chests/scorched_mines/scorched_mines_hub"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "dungeons_arise:chests/scorched_mines/scorched_mines_normal"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "dungeons_arise:chests/shiraz_palace/shiraz_palace_gardens"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "dungeons_arise:chests/shiraz_palace/shiraz_palace_normal"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "dungeons_arise:chests/shiraz_palace/shiraz_palace_rooms"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "dungeons_arise:chests/shiraz_palace/shiraz_palace_towers"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "dungeons_arise:chests/small_blimp/small_blimp_coal_storage"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "dungeons_arise:chests/small_blimp/small_blimp_redstone_chamber"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "dungeons_arise:chests/thornborn_towers/thornborn_towers_barrels"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "dungeons_arise:chests/thornborn_towers/thornborn_towers_rooms"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "dungeons_arise:chests/thornborn_towers/thornborn_towers_top_rooms"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "dungeons_arise:chests/undead_pirate_ship/undead_pirate_ship_barrels"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "dungeons_arise:chests/undead_pirate_ship/undead_pirate_ship_enchants"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "eidolon_repraised:chests/catacomb_basic"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "eidolon_repraised:chests/catacomb_coffin"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "eidolon_repraised:chests/lab"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "eternal_starlight:chests/accessories"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "eternal_starlight:chests/cursed_garden"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "eternal_starlight:chests/dusk_lockbox"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "eternal_starlight:chests/golem_forge"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "eternal_starlight:chests/music_discs"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "hexerei:chests/courier_package"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "hexerei:chests/dark_coven_basic"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "hexerei:chests/dark_coven_coffer"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "hexerei:chests/nature_coven_coffer"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "hexerei:chests/nature_coven_crow"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "hexerei:chests/nature_coven_herbs"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "irons_spellbooks:chests/battleground/burial_loot"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "irons_spellbooks:chests/battleground/piglin_camp"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "irons_spellbooks:chests/bookshelf_loot"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "irons_spellbooks:chests/catacombs/armory_loot"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "irons_spellbooks:chests/catacombs/coffin_loot"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "irons_spellbooks:chests/catacombs/pot"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "irons_spellbooks:chests/catacombs/wall_loot"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "irons_spellbooks:chests/citadel/citadel_bookshelf"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "irons_spellbooks:chests/citadel/citadel_tomes"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "irons_spellbooks:chests/citadel/rampart_chest"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "irons_spellbooks:chests/citadel/rampart_supplies"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "irons_spellbooks:chests/component_storage"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "irons_spellbooks:chests/evoker_fort"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "irons_spellbooks:chests/evoker_fort/guard_tower"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "irons_spellbooks:chests/filler_storage_loot"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "irons_spellbooks:chests/ice_spider_den/basement"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "irons_spellbooks:chests/ice_spider_den/cask"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "irons_spellbooks:chests/ice_spider_den/dungeon"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "irons_spellbooks:chests/ice_spider_den/pot"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "irons_spellbooks:chests/ice_spider_den/tower"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "irons_spellbooks:chests/impaled_icebreaker/captain_quarters"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "irons_spellbooks:chests/impaled_icebreaker/food_barrel"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "irons_spellbooks:chests/magic_bookshelf_loot"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "irons_spellbooks:chests/mangrove_hut"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "irons_spellbooks:chests/mangrove_hut/hidden_potion_storage"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "irons_spellbooks:chests/mangrove_hut/potion_ingredient_storage"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "irons_spellbooks:chests/mountain_tower/ice_barrel"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "irons_spellbooks:chests/mountain_tower/mountain_tower"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "irons_spellbooks:chests/priest_house"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "irons_spellbooks:chests/pyromancer_tower/burnt_chest"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "irons_spellbooks:chests/pyromancer_tower/fire_ale_cask"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "irons_spellbooks:chests/pyromancer_tower/fire_ale_trove"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "irons_spellbooks:chests/pyromancer_tower/old_cask"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "irons_spellbooks:chests/pyromancer_tower/pot"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "irons_spellbooks:chests/pyromancer_tower/pyromancer_basic_storage"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "irons_spellbooks:chests/pyromancer_tower/pyromancer_supplies"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "irons_spellbooks:chests/sewer_loot"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "irons_spellbooks:chests/trial_chambers/pot_replacement"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "irons_spellbooks:chests/wheat"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "minecraft:chests/abandoned_mineshaft"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "minecraft:chests/basic_chest"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "minecraft:chests/chest_level_1"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "minecraft:chests/chest_level_2"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "minecraft:chests/chest_level_3"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "minecraft:chests/firewell_d"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "minecraft:chests/igloo_chest"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "minecraft:chests/pillager_outpost"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "minecraft:chests/ruined_portal"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "minecraft:chests/shater"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "minecraft:chests/shipwreck_map"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "minecraft:chests/simple_dungeon"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "minecraft:chests/trial_chambers/corridor"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "minecraft:chests/trial_chambers/entrance"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "minecraft:chests/trial_chambers/intersection"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "minecraft:chests/trial_chambers/intersection_barrel"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "minecraft:chests/underwater_ruin_big"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "minecraft:chests/underwater_ruin_small"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "minecraft:chests/village/village_armorer"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "minecraft:chests/village/village_butcher"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "minecraft:chests/village/village_cartographer"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "minecraft:chests/village/village_desert_house"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "minecraft:chests/village/village_fisher"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "minecraft:chests/village/village_fletcher"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "minecraft:chests/village/village_jungle_house"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "minecraft:chests/village/village_mason"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "minecraft:chests/village/village_plains_house"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "minecraft:chests/village/village_savanna_house"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "minecraft:chests/village/village_shepherd"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "minecraft:chests/village/village_snowy_house"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "minecraft:chests/village/village_swamp_house"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "minecraft:chests/village/village_taiga_house"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "minecraft:chests/village/village_tannery"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "minecraft:chests/village/village_toolsmith"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "minecraft:chests/village/village_weaponsmith"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "mowziesmobs:chests/monastery_chest"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "mowziesmobs:chests/umvuthana_grove_chest"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "nova_structures:chests/badland_miner_outpost"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "nova_structures:chests/badland_miner_outpost_forge"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "nova_structures:chests/badland_miner_outpost_towers"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "nova_structures:chests/bunker_altar"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "nova_structures:chests/conduit_ruin/conduit_ruin_big"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "nova_structures:chests/conduit_ruin/conduit_ruin_main"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "nova_structures:chests/conduit_ruin/conduit_ruin_small"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "nova_structures:chests/creeping_crypt/crypt_grave"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "nova_structures:chests/creeping_crypt/crypt_hallway"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "nova_structures:chests/desert_ruins/desert_ruin_grave"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "nova_structures:chests/desert_ruins/desert_ruin_house"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "nova_structures:chests/dungeon_1"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "nova_structures:chests/dungeon_2"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "nova_structures:chests/dungeon_3"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "nova_structures:chests/dungeon_4"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "nova_structures:chests/dungeon_5"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "nova_structures:chests/dungeon_6"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "nova_structures:chests/dungeon_7"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "nova_structures:chests/firewatch_tower"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "nova_structures:chests/hamlet/hamlet"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "nova_structures:chests/hamlet/hamlet_tresure"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "nova_structures:chests/illager_camp"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "nova_structures:chests/illager_hideout_brewing"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "nova_structures:chests/illager_hideout_fishing"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "nova_structures:chests/illager_hideout_heart_loot"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "nova_structures:chests/illager_hideout_lesser_tresure"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "nova_structures:chests/illager_hideout_meat"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "nova_structures:chests/illager_hideout_random"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "nova_structures:chests/illager_hideout_raw_ores"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "nova_structures:chests/illager_hideout_trash"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "nova_structures:chests/illager_hideout_tresure"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "nova_structures:chests/illager_hideout_utility"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "nova_structures:chests/illager_hideout_vegitarian"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "nova_structures:chests/illager_hideout_weaponry"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "nova_structures:chests/jungle_ruins/jungle_ruins_house"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "nova_structures:chests/lone_citadel/c_banner"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "nova_structures:chests/lone_citadel/c_cold_barrel"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "nova_structures:chests/lone_citadel/c_forge"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "nova_structures:chests/lone_citadel/c_forge_chest"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "nova_structures:chests/lone_citadel/c_grave"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "nova_structures:chests/mangrove_witchhud"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "nova_structures:chests/piglin_camp/chest"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "nova_structures:chests/piglin_donjon/donjon_generic"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "nova_structures:chests/piglin_outstation/outstation_generic"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "nova_structures:chests/piglin_outstation/outstation_tower"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "nova_structures:chests/ruin_loot_master"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "nova_structures:chests/shrine/combat_pot"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "nova_structures:chests/shrine/shrine_lesser_ominous"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "nova_structures:chests/stray_fort_archer"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "nova_structures:chests/stray_fort_loot_generic"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "nova_structures:chests/stray_fort_tresure"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "nova_structures:chests/tavern_quest"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "nova_structures:chests/toxic_lair/brewing"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "nova_structures:chests/toxic_lair/generic"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "nova_structures:chests/undead_crypts_grave"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "nova_structures:chests/village/village_birch_house"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "nova_structures:chests/witch_villa/bedroom"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "nova_structures:chests/witch_villa/dirty_clothes"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "nova_structures:chests/witch_villa/gardening"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "nova_structures:chests/witch_villa/general_storage"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "nova_structures:chests/witch_villa/lab"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "nova_structures:chests/witch_villa/music_room"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "nova_structures:chests/witch_villa/potion_brewing"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "nova_structures:chests/witch_villa/pumpkin_room"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "nova_structures:chests/witch_villa/slime_room"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "undergarden:chests/catacombs"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "undergarden:chests/denizen_camp"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "undergarden:chests/depleted_mine/mound"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "undergarden:chests/depleted_mine/normal"
+        }
+      ]
+    }
+  ],
+  "table": "kronwerke:inject/common"
+}

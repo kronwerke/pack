@@ -146,7 +146,7 @@ quests = [
     quest("cauldron", 0.5, 6, "&2&lBau den Mixing Cauldron",
           subtitle="Wo jedes Hexenrezept endet.",
           description=[
-              "&e5 Eisenbarren&r als U, ein &6Kessel&r in die Mitte, &e2 Fackeln&r oben links und rechts. Das ist der &6Mixing Cauldron&r.",
+              "&e5 Infused Iron&r aus Nature's Aura als U, ein &6Kessel&r in die Mitte, &e2 Fackeln&r oben links und rechts. Das ist der &6Mixing Cauldron&r.",
               "",
               "Er fasst bis zu &b2 Eimer&r Flüssigkeit: Wasser, Lava, Talg, Blut oder Trank. Feste Zutaten wirfst du oben hinein, schiebst sie per Trichter hinein oder legst sie ins Menü. Stimmt alles, mischt er von selbst.",
               "",

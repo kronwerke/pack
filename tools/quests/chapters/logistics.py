@@ -21,7 +21,7 @@ quests = [
     quest("welcome", 0, 9, "&3&lBau Squeezer und Drying Basin",
           subtitle="Der Einstieg in Integrated Dynamics.",
           description=[
-              "&6Squeezer:&r Stöcke an den Seiten, ein Eisenblock oben in der Mitte, unten Bretter und ein Eisenbarren. &6Drying Basin:&r Stämme, schwarzer Farbstoff oben und unten, Eisen an den Seiten.",
+              "&6Squeezer:&r Stöcke an den Seiten, eine &6Mechanische Presse&r aus Create oben in der Mitte, unten Bretter und ein Eisenbarren. &6Drying Basin:&r Stämme, schwarzer Farbstoff oben und unten, Eisen an den Seiten.",
               "",
               "Dieses Kapitel sammelt die Mods, die Dinge ohne Rohrsalat bewegen: &6Integrated Dynamics&r (programmierbar), &6XNet&r (alles an einem Controller), &6LaserIO&r (Laser statt Kabel), dazu der &6Mining Gadget&r. Die Abschnitte gehen in beliebiger Reihenfolge.",
               "",
@@ -164,7 +164,7 @@ quests = [
     quest("xnet_controller", 3, 6, "&eBau einen XNet Controller",
           subtitle="Ein Block, der alles steuert.",
           description=[
-              "&6Machine Frame&r von RFTools Base (Eisen, blauer Farbstoff, Goldnuggets), dazu Komparator, Repeater, Redstone, Eisen und Gold: der &6Controller&r.",
+              "&6Machine Frame&r von RFTools Base (Stahl, blauer Farbstoff, Goldnuggets), dazu ein &6Logikprozessor&r aus AE2, Repeater, Redstone, Eisen und Gold: der &6Controller&r.",
               "",
               "Er hat &e8 Kanäle&r, jeder vom Typ &6Item&r, &6Fluid&r, &6Energy&r oder &6Logic&r. Im Kanal legst du fest, welche Blöcke abgeben und welche bekommen. Strom: 1 RF/t pro aktivem Kanal, ein Kabel vom Netz reicht.",
           ],

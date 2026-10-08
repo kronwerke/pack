@@ -46,7 +46,7 @@ quests = [
     quest("dark_tank", 2.8, 1.2, "&5Bau einen Dark Tank",
           subtitle="16 Eimer in einem Block.",
           description=[
-              "Ein &6Dark Gem&r oben und unten, ein &6Glas&r in der Mitte, links und rechts ein &6Eisenbarren&r ergeben einen &6Dark Tank&r. Er fasst &e16 Eimer&r und behält seinen Inhalt, wenn du ihn abbaust.",
+              "Ein &6Dark Gem&r oben und unten, ein &6Glas&r in der Mitte, links und rechts ein &6Dark Metal Ingot&r aus Born in Chaos ergeben einen &6Dark Tank&r. Er fasst &e16 Eimer&r und behält seinen Inhalt, wenn du ihn abbaust.",
               "",
               "Leg mehrere Tanks zusammen in die Werkbank, dann wird daraus ein Tank mit der Summe aller Kapazitäten. Mit Dark Blocks und Eisenblöcken statt Edelsteinen und Barren gibt es gleich einen großen Tank.",
               "",
@@ -163,7 +163,7 @@ quests = [
     quest("infuser", 9.8, 5, "&4&lBau den Blood Infuser",
           subtitle="Blut hinein, etwas Neues heraus.",
           description=[
-              "Acht &6Bruchstein&r um einen &6Blood Infusion Core&r ergeben den &6Blood Infuser&r. Sein Tank fasst &e10 Eimer&r. Links kommt ein Behälter hinein, der den Tank füllt oder sich daraus füllt, in der Mitte der Gegenstand, rechts das Ergebnis.",
+              "Acht &6Darkstone&r um einen &6Blood Infusion Core&r ergeben den &6Blood Infuser&r. Sein Tank fasst &e10 Eimer&r. Links kommt ein Behälter hinein, der den Tank füllt oder sich daraus füllt, in der Mitte der Gegenstand, rechts das Ergebnis.",
               "",
               "Ohne Upgrades kann er wenig, aber das Wichtige: &6Dark Gem&r plus 250 mB wird in 10 Sekunden zum &6Dark Power Gem&r, ein Dark Block mit 2.250 mB zum Power-Gem-Block, ein &6Toter Busch&r mit 800 mB zum &6Undead Sapling&r. Alles andere braucht Promises, dazu gleich mehr.",
               "",

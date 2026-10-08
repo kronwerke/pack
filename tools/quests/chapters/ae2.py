@@ -110,7 +110,7 @@ quests = [
     quest("inscriber", 0, 5.5, "&7Bau eine Gravurmaschine",
           subtitle="Sie presst, druckt und mahlt.",
           description=[
-              "&6Eisen&r rundherum, je ein &6Kolben&r oben und unten in der Mitte, ein &6Kupferbarren&r links in der Mitte, rechts bleibt frei.",
+              "&6Eisen&r rundherum, je eine &6Mechanische Presse&r aus Create oben und unten in der Mitte, ein &6Kupferbarren&r links in der Mitte, rechts bleibt frei.",
               "",
               "&eSo liest du das Fenster:&r oben und unten die Pressen, in die Mitte das Material. Ohne Presse mahlt sie: Certus zu Certusquarzstaub, Enderperlen zu Enderstaub, Himmelsstein zu Himmelssteinstaub.",
               "",

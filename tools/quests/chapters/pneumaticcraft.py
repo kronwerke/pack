@@ -52,7 +52,7 @@ quests = [
     quest("tube", 2.5, 1, "&bLeg Druckluftrohre",
           subtitle="Acht Rohre aus zwei Barren und Glas.",
           description=[
-              "Zwei &6Druckeisenbarren&r mit einem &6Glas&r dazwischen ergeben acht &6Druckluftrohre&r (Pressure Tube). Sie fassen je 1 000 mL Luft und halten &e5 Bar&r aus.",
+              "Zwei &6Druckeisenbarren&r mit einem &6Flüssigkeitsrohr&r aus Create dazwischen ergeben acht &6Druckluftrohre&r (Pressure Tube). Sie fassen je 1 000 mL Luft und halten &e5 Bar&r aus.",
               "",
               "Ein offenes Rohrende zischt und verliert Luft. Verbinde jedes Rohr mit einer Maschine oder einem anderen Rohr, oder schließ die Seite später mit dem Druckluftschlüssel. Rohre lassen sich außerdem mit Modulen bestücken, dem Sicherheitsventil zum Beispiel.",
           ],

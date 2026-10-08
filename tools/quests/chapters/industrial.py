@@ -125,7 +125,7 @@ quests = [
     quest("dissolution", 0, 5.5, "&9Bau einen Auflösungsapparat",
           subtitle="Bis zu acht Zutaten und eine Flüssigkeit.",
           description=[
-              "Kunststoff, &6Holztruhe&r, Kunststoff oben, &6Eimer&r, Primitives Gehäuse, Eimer in der Mitte, &6Goldbarren&r, &6Diamantzahnrad&r, Goldbarren unten.",
+              "Kunststoff, &6Holztruhe&r, Kunststoff oben, &6Flüssigkeitstank&r aus Create, Primitives Gehäuse, Tank in der Mitte, &6Goldbarren&r, &6Diamantzahnrad&r, Goldbarren unten.",
               "",
               "Der Zusammenbautisch des Mods: bis zu &eacht Gegenstände&r und &eeine Flüssigkeit&r, formlos. Gehäuse, Linsen, Addons und Pinke Schleimbarren entstehen hier. Er zieht &d90 FE/t&r.",
           ],

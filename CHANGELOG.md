@@ -268,3 +268,14 @@ Needs a new world: the stage files, the quest ids and the goal data changed.
 ## 0.11.24
 
 - Kronwerke Core 0.21.0: linked backpacks and storage blocks from Sophisticated work between the main world and the mining world. A linked group is in one world at a time and comes along when you carry it there or open it there; in the other world it is empty and locked until it comes back.
+
+## 0.11.25
+
+The big round of recipes, loot and mobs.
+
+- Every mod leans on another: 72 recipe changes. The first machines of Ars Nouveau, Botania, Nature's Aura, Mystical Agriculture, Waystones, Iron's Spells, Occultism, Silent Gear, Iron Furnaces, the Sophisticated mods and Functional Storage need a part from another mod (mostly pressed Create sheets, source gems, infused iron, livingrock). Hexerei, EvilCraft, Reliquary, Forbidden and Arcanus, PneumaticCraft, Just Dire Things, the Aether, Eidolon, Malum, Integrated Dynamics, LaserIO, XNet, RFTools, AE2, Industrial Foregoing, QuarryPlus, Mahou Tsukai, Draconic Evolution, Eternal Starlight and Born in Chaos are tied in the same way. The quest texts follow.
+- Slow first, fast later: infused iron, source gems and deorum get a heated mixer route with more output; pewter blend a mixer route; every NuclearCraft plate can be pressed in Create.
+- Iron's Spells' arcane essence can be imbued from a book with lapis and glowstone, and every hostile mob killed by a player may drop it.
+- Chests of every structure (vanilla, YUNG's, Dungeons Arise, Nova Structures, Cataclysm, the Aether and the other dimensions) roll mod items on top of their loot, in common, rare, nether and end pools. Lootr gives every player their own roll. Items of later stages are in on purpose.
+- Mob drops: mandrake root from witches, zinc and copper nuggets from zombies, certus dust from endermen, dark gems from wither skeletons, blazegold from blazes, neptunium from drowned.
+- Kronwerke Core 0.22.0: hostile mobs get tougher with every stage, the strongest ones only spawn from their stage, and Born in Chaos spawns less.

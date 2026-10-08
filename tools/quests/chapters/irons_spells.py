@@ -111,7 +111,7 @@ quests = [
     quest("inscription", 10, 1, "&6&lBau einen Inscription Table",
           subtitle="Hier kommt die Rolle ins Buch.",
           description=[
-              "Ein &6Buch&r oben in die Mitte, darunter drei &6Holzstufen&r, unten links und in der Mitte je ein &6Holzzaun&r. Jede Holzart geht.",
+              "Ein &6Buch&r oben in die Mitte, darunter drei &6Archwood-Stufen&r aus Ars Nouveau, unten links und in der Mitte je ein &6Holzzaun&r.",
               "",
               "&eSo geht es:&r Rechtsklick auf den Tisch. Links kommt dein &6Zauberbuch&r hinein, daneben die &6Schriftrolle&r. Wähl rechts einen freien Platz und drück &eInscribe&r. Der Zauber ist jetzt im Buch, so oft du willst.",
               "",

@@ -107,7 +107,7 @@ quests = [
     quest("altar", 0, 5, "&6&lBau einen Spirit Altar",
           subtitle="Arcana fließen in ein Item.",
           description=[
-              "Oben ein &6Refined Soulstone&r, Mitte &6Gold, Runewood-Brett, Gold&r, unten drei &6Runewood-Bretter&r. Dazu &6Runewood Item Stands&r: drei Stufen über drei Brettern, gibt zwei.",
+              "Oben ein &6Refined Soulstone&r, Mitte &6Arcane Gold&r aus Eidolon, &6Runewood-Brett, Arcane Gold&r, unten drei &6Runewood-Bretter&r. Dazu &6Runewood Item Stands&r: drei Stufen über drei Brettern, gibt zwei.",
               "",
               "Haupt-Item und Arcana auf den Altar, Nebenzutaten auf Stands im Umkreis von &e4 Blöcken&r. Dann wartest du.",
           ],

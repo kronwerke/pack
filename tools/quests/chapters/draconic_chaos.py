@@ -48,7 +48,7 @@ quests = [
     quest("cores", 2.5, 1.75, "&9Leg vier Draconiumkerne bereit",
           subtitle="Die Zutaten für eine Fusion.",
           description=[
-              "Vier &6Draconiumkerne&r: Draconiumbarren in die Ecken, Gold an die Seiten, Diamant in die Mitte. Sie kommen in die Injektoren.",
+              "Vier &6Draconiumkerne&r: Draconiumbarren in die Ecken, Deepsilver an die Seiten, Diamant in die Mitte. Sie kommen in die Injektoren.",
               "",
               "Pro Fusion also vier Kerne, zwei Gaia-Barren und ein Herz: sieben Injektoren der Wyvern-Stufe.",
           ],

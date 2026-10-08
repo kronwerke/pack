@@ -300,7 +300,7 @@ quests = [
     quest("clibano", 13, 13, "&6Baue den Clibano",
           subtitle="Ein Hochofen, der mit Seelen heizt.",
           description=[
-              "Ein &6Clibano Core&r sind acht &6Darkstone&r um einen &6Schmelzofen&r. Dann der Bau: ein &e3 mal 3 mal 3 Würfel&r aus &6Polished Darkstone Bricks&r, an den acht Ecken &6Polished Darkstone&r, innen hohl, und der Core sitzt in der Mitte einer Seitenwand. Rechtsklick mit &6Mundabitur Dust&r auf den Core.",
+              "Ein &6Clibano Core&r sind acht &6Darkstone&r um einen &6Lohenbrenner&r (Blaze Burner) aus Create. Dann der Bau: ein &e3 mal 3 mal 3 Würfel&r aus &6Polished Darkstone Bricks&r, an den acht Ecken &6Polished Darkstone&r, innen hohl, und der Core sitzt in der Mitte einer Seitenwand. Rechtsklick mit &6Mundabitur Dust&r auf den Core.",
               "",
               "Der Clibano schmilzt Erze und Roherze wie ein Schmelzofen in 5 Sekunden. Eine &6Soul&r im Seelenslot macht &bSeelenfeuer&r, 1,5 mal so schnell, eine &6Enchanted Soul&r &dverzaubertes Feuer&r, 2,5 mal so schnell.",
               "",

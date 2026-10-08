@@ -1,0 +1,947 @@
+{
+  "type": "neoforge:add_table",
+  "conditions": [
+    {
+      "condition": "minecraft:any_of",
+      "terms": [
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "aether:entities/fire_minion"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "aether:entities/mimic"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "aether:entities/sentry"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "aether:entities/slider"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "aether:entities/sun_spirit"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "aether:entities/valkyrie"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "aether:entities/valkyrie_queen"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "ars_nouveau:entities/wilden_guardian"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "ars_nouveau:entities/wilden_hunter"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "ars_nouveau:entities/wilden_stalker"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "born_in_chaos_v1:entities/baby_spider"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "born_in_chaos_v1:entities/barrel_zombie"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "born_in_chaos_v1:entities/bloody_gadfly"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "born_in_chaos_v1:entities/bone_imp"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "born_in_chaos_v1:entities/bonescaller"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "born_in_chaos_v1:entities/bonescaller_not_despawn"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "born_in_chaos_v1:entities/corpse_fly"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "born_in_chaos_v1:entities/dark_vortex"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "born_in_chaos_v1:entities/decrepit_skeleton"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "born_in_chaos_v1:entities/diamond_termite"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "born_in_chaos_v1:entities/dire_hound_leader"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "born_in_chaos_v1:entities/door_knight"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "born_in_chaos_v1:entities/door_knight_not_despawn"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "born_in_chaos_v1:entities/dread_hound"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "born_in_chaos_v1:entities/dread_hound_not_despawn"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "born_in_chaos_v1:entities/fallen_chaos_knight"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "born_in_chaos_v1:entities/firelight"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "born_in_chaos_v1:entities/infernal_spirit"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "born_in_chaos_v1:entities/krampus"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "born_in_chaos_v1:entities/krampus_henchman"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "born_in_chaos_v1:entities/lifestealer_true_form"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "born_in_chaos_v1:entities/lord_pumpkinhead_head"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "born_in_chaos_v1:entities/maggot"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "born_in_chaos_v1:entities/missionary_raider"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "born_in_chaos_v1:entities/missioner"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "born_in_chaos_v1:entities/mother_spider"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "born_in_chaos_v1:entities/mr_pumpkin"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "born_in_chaos_v1:entities/nightmare_stalker"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "born_in_chaos_v1:entities/phantom_creeper_copy"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "born_in_chaos_v1:entities/pumpkin_bruiser"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "born_in_chaos_v1:entities/pumpkin_dunce"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "born_in_chaos_v1:entities/pumpkin_spirit"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "born_in_chaos_v1:entities/pumpkinhead"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "born_in_chaos_v1:entities/restless_spirit"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "born_in_chaos_v1:entities/seared_spirit"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "born_in_chaos_v1:entities/seared_spirit_not_despawn"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "born_in_chaos_v1:entities/senor_pumpkin"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "born_in_chaos_v1:entities/skeleton_demoman"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "born_in_chaos_v1:entities/skeleton_thrasher"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "born_in_chaos_v1:entities/skeleton_thrasher_not_despawn"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "born_in_chaos_v1:entities/spirit_guide"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "born_in_chaos_v1:entities/spiritof_chaos"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "born_in_chaos_v1:entities/supreme_bonescaller_stage_2"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "born_in_chaos_v1:entities/swarmer"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "born_in_chaos_v1:entities/zombie_bruiser"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "born_in_chaos_v1:entities/zombie_clown"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "born_in_chaos_v1:entities/zombie_clown_not_despawn"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "born_in_chaos_v1:entities/zombie_fisherman"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "born_in_chaos_v1:entities/zombie_lumberjack"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "botania:entities/gaia_guardian"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "cataclysm:entities/amethyst_crab"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "cataclysm:entities/ancient_remnant"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "cataclysm:entities/aptrgangr"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "cataclysm:entities/cindaria"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "cataclysm:entities/clawdian"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "cataclysm:entities/coral_golem"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "cataclysm:entities/coralssus"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "cataclysm:entities/deepling"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "cataclysm:entities/deepling_angler"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "cataclysm:entities/deepling_brute"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "cataclysm:entities/deepling_priest"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "cataclysm:entities/deepling_warlock"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "cataclysm:entities/draugr"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "cataclysm:entities/drowned_host"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "cataclysm:entities/elite_draugr"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "cataclysm:entities/ender_golem"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "cataclysm:entities/ender_guardian"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "cataclysm:entities/endermaptera"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "cataclysm:entities/hippocamtus"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "cataclysm:entities/ignis"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "cataclysm:entities/ignited_berserker"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "cataclysm:entities/ignited_revenant"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "cataclysm:entities/kobolediator"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "cataclysm:entities/koboleton"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "cataclysm:entities/lionfish"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "cataclysm:entities/maledictus"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "cataclysm:entities/netherite_monstrosity"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "cataclysm:entities/royal_draugr"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "cataclysm:entities/scylla"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "cataclysm:entities/symbiocto"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "cataclysm:entities/the_harbinger"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "cataclysm:entities/the_leviathan"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "cataclysm:entities/the_prowler"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "cataclysm:entities/the_watcher"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "cataclysm:entities/urchinkin"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "cataclysm:entities/wadjet"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "deeperdarker:entities/anger_pot"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "deeperdarker:entities/fear_pot"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "deeperdarker:entities/sculk_centipede"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "deeperdarker:entities/sculk_leech"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "deeperdarker:entities/sculk_snapper"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "deeperdarker:entities/shattered"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "deeperdarker:entities/shriek_worm"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "deeperdarker:entities/sludge"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "deeperdarker:entities/sorrow_pot"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "deeperdarker:entities/stalker"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "eidolon_repraised:entities/giant_skeleton"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "eidolon_repraised:entities/necromancer"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "eidolon_repraised:entities/wraith"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "eidolon_repraised:entities/zombie_brute"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "eternal_starlight:entities/creteor"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "eternal_starlight:entities/freeze"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "eternal_starlight:entities/gleech"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "eternal_starlight:entities/lonestar_skeleton"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "eternal_starlight:entities/lunar_monstrosity"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "eternal_starlight:entities/nightfall_spider"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "eternal_starlight:entities/permafrost"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "eternal_starlight:entities/seeker"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "eternal_starlight:entities/solar_creeper"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "eternal_starlight:entities/starlight_golem"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "eternal_starlight:entities/stranghoul"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "eternal_starlight:entities/tangled"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "eternal_starlight:entities/tangled_skull"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "eternal_starlight:entities/the_gatekeeper"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "eternal_starlight:entities/thirst_walker"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "eternal_starlight:entities/tiny_creteor"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "evilcraft:entities/netherfish"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "evilcraft:entities/poisonous_libelle"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "evilcraft:entities/vengeance_spirit"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "evilcraft:entities/werewolf"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "immersiveengineering:entities/bulwark"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "immersiveengineering:entities/commando"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "immersiveengineering:entities/fusilier"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "irons_spellbooks:entities/apothecarist"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "irons_spellbooks:entities/archevoker"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "irons_spellbooks:entities/citadel_keeper"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "irons_spellbooks:entities/cryomancer"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "irons_spellbooks:entities/cultist"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "irons_spellbooks:entities/dead_king"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "irons_spellbooks:entities/fire_boss"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "irons_spellbooks:entities/ice_spider"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "irons_spellbooks:entities/necromancer"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "irons_spellbooks:entities/pyromancer"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "mekanismadditions:entities/baby_bogged"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "mekanismadditions:entities/baby_creeper"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "mekanismadditions:entities/baby_enderman"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "mekanismadditions:entities/baby_skeleton"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "mekanismadditions:entities/baby_stray"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "mekanismadditions:entities/baby_wither_skeleton"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "minecraft:entities/blaze"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "minecraft:entities/bogged"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "minecraft:entities/breeze"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "minecraft:entities/cave_spider"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "minecraft:entities/creeper"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "minecraft:entities/drowned"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "minecraft:entities/elder_guardian"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "minecraft:entities/ender_dragon"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "minecraft:entities/enderman"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "minecraft:entities/endermite"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "minecraft:entities/evoker"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "minecraft:entities/ghast"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "minecraft:entities/giant"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "minecraft:entities/guardian"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "minecraft:entities/hoglin"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "minecraft:entities/husk"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "minecraft:entities/illusioner"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "minecraft:entities/magma_cube"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "minecraft:entities/phantom"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "minecraft:entities/piglin"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "minecraft:entities/piglin_brute"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "minecraft:entities/pillager"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "minecraft:entities/ravager"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "minecraft:entities/shulker"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "minecraft:entities/silverfish"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "minecraft:entities/skeleton"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "minecraft:entities/slime"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "minecraft:entities/spider"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "minecraft:entities/stray"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "minecraft:entities/vex"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "minecraft:entities/vindicator"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "minecraft:entities/warden"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "minecraft:entities/witch"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "minecraft:entities/wither"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "minecraft:entities/wither_skeleton"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "minecraft:entities/zoglin"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "minecraft:entities/zombie"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "minecraft:entities/zombie_villager"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "minecraft:entities/zombified_piglin"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "mowziesmobs:entities/bluff"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "mowziesmobs:entities/ferrous_wroughtnaut"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "mowziesmobs:entities/foliaath"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "mowziesmobs:entities/frostmaw"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "mowziesmobs:entities/grottol"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "mowziesmobs:entities/naga"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "mowziesmobs:entities/umvuthi"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "nuclearcraft:entities/feral_ghoul"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "nuclearcraft:entities/feral_ghoul_boss"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "occultism:entities/possessed_bee"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "occultism:entities/possessed_blaze"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "occultism:entities/possessed_breeze"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "occultism:entities/possessed_elder_guardian"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "occultism:entities/possessed_enderman"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "occultism:entities/possessed_endermite"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "occultism:entities/possessed_evoker"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "occultism:entities/possessed_ghast"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "occultism:entities/possessed_guardian"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "occultism:entities/possessed_hoglin"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "occultism:entities/possessed_phantom"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "occultism:entities/possessed_shulker"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "occultism:entities/possessed_skeleton"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "occultism:entities/possessed_strong_breeze"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "occultism:entities/possessed_warden"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "occultism:entities/possessed_weak_breeze"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "occultism:entities/possessed_weak_shulker"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "occultism:entities/possessed_witch"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "occultism:entities/possessed_zombie_piglin"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "occultism:entities/wild_horde_creeper"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "occultism:entities/wild_horde_drowned"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "occultism:entities/wild_horde_husk"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "occultism:entities/wild_horde_silverfish"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "occultism:entities/wild_hunt_skeleton"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "occultism:entities/wild_hunt_wither_skeleton"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "supplementaries:entities/plunderer"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "undergarden:entities/denizen"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "undergarden:entities/forgotten"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "undergarden:entities/forgotten_guardian"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "undergarden:entities/muncher"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "undergarden:entities/nargoyle"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "undergarden:entities/rotbeast"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "undergarden:entities/rotbelcher"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "undergarden:entities/rotling"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "undergarden:entities/rotwalker"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "undergarden:entities/sploogie"
+        },
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "undergarden:entities/stoneborn"
+        }
+      ]
+    }
+  ],
+  "table": "kronwerke:inject/drop_0_arcane_essence"
+}

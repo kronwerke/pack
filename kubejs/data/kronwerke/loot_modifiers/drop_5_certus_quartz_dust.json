@@ -1,0 +1,15 @@
+{
+  "type": "neoforge:add_table",
+  "conditions": [
+    {
+      "condition": "minecraft:any_of",
+      "terms": [
+        {
+          "condition": "neoforge:loot_table_id",
+          "loot_table_id": "minecraft:entities/enderman"
+        }
+      ]
+    }
+  ],
+  "table": "kronwerke:inject/drop_5_certus_quartz_dust"
+}

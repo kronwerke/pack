@@ -262,7 +262,7 @@ quests = [
     quest("m_altar", 13.5, 4.5, "&aBau den Natural Altar",
           subtitle="Ein Ritual für den Altar, ein Bauwerk drumherum.",
           description=[
-              "Ritual des Waldes mit einem &6Eichensetzling&r: 3 Stein, ein Gold Leaf, ein Goldbarren und ein Token of Joy. Heraus kommt der &6Natural Altar&r.",
+              "Ritual des Waldes mit einem &6Eichensetzling&r: 3 &6Lebensstein&r (Livingrock, aus Botanias Pure Daisy), ein Gold Leaf, ein Goldbarren und ein Token of Joy. Heraus kommt der &6Natural Altar&r.",
               "",
               "Der Altar arbeitet nur in seinem Bauwerk aus Steinziegeln, Brettern, gemeißelten Steinziegeln und &6Golden Stone Bricks&r (Steinziegel und Brilliant Fiber). Das Buch zeigt den Aufbau Schicht für Schicht.",
           ],

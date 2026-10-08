@@ -40,7 +40,9 @@ The stage locks come from Chapters, the quests from FTB Quests, the goals from [
 | `config/ftbquests/` | The quest book, generated from `tools/quests/` by CI on every push, never edited by hand |
 | `tools/quests/` | Quest definitions in Python, the generator (`build.py`), the theme of the book (`theme.py`, `banners.py`), `check_items.py` (every id exists in a jar) and `check_quest_stages.py` (no quest or crate hands out an item before its stage) |
 | `kubejs/data/kronwerke/chapters/stages/` | What each stage unlocks, one file per stage, read by Chapters |
-| `kubejs/server_scripts/` | Recipe changes: the tech and magic cross recipes, the Grubenrahmen of the mining world's portal |
+| `kubejs/server_scripts/` | Recipe changes: the tech and magic cross recipes, the Grubenrahmen of the mining world's portal, `kronwerke/round.js` (written by `tools/recipes/round.py`) |
+| `kubejs/data/kronwerke/loot_*`, `kubejs/data/neoforge/` | Mod items in chest loot and mob drops, written by `tools/loot/build.py` |
+| `tools/recipes/` | `graph.py` reads a dump of the running pack (items, recipes, stages) and shows how mods lean on each other; `round.py` holds the recipe round and checks every change against the dump |
 | `kubejs/client_scripts/` | `obelisk_ctm.js`, written by `tools/textures/ctm.py`: connected textures for the obelisk through Athena, placed in KubeJS's last virtual pack so they override Core's models |
 | `tools/textures/` | `ctm.py` draws the connected texture tiles of the obelisk into `kubejs/assets/kronwerke/textures/block/ctm/` and writes the client script |
 | `config/kronwerke/goals.json` | The five community goals, read by Kronwerke Core |
@@ -81,6 +83,8 @@ Before the beta. 249 mod files, boots clean on a dedicated server. Stage locks, 
 | --- | --- |
 | `CHANGELOG.md` | What changed per version |
 | `docs/STAGES.md` | Stage design: rules, timeline, goal numbers, tech and magic cross recipes |
+| `docs/RECIPES.md` | Every changed recipe and why, including the round of October 2026 |
+| `docs/LOOT.md` | Chest loot, mob drops, and how mobs grow with the stages |
 | `tools/check_mods.py` | Checks a list of Modrinth slugs for NeoForge 1.21.1 versions |
 
 ## Licence

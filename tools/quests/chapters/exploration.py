@@ -126,7 +126,7 @@ quests = [
     quest("e_warp_stone", 9, -3.5, "&6Bau einen Warpstein",
           subtitle="Reisen von überall aus.",
           description=[
-              "Ein &6Smaragd&r in der Mitte, &64 Enderperlen&r an den Seiten, &64 Amethystscherben&r in den Ecken ergeben den &6Warpstein&r.",
+              "Ein &6Smaragd&r in der Mitte, &64 Enderperlen&r an den Seiten, &64 Quelljuwelen&r aus Ars Nouveau in den Ecken ergeben den &6Warpstein&r.",
               "",
               pic("waystones:warp_stone"),
               "",

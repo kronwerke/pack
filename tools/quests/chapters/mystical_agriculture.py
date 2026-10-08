@@ -215,7 +215,7 @@ quests = [
     quest("altar", 10, 1, "&d&lBau den Infusionsaltar",
           subtitle="Hier entstehen alle Samen.",
           description=[
-              "&e2 Goldbarren&r oben links und rechts, &e1 rote Wolle&r oben in der Mitte, darunter ein Stein in der Mitte und drei Steine in der unteren Reihe: der &6Infusionsaltar&r.",
+              "&e2 Quelljuwelen&r oben links und rechts, &e1 rote Wolle&r oben in der Mitte, darunter ein Stein in der Mitte und drei Steine in der unteren Reihe: der &6Infusionsaltar&r.",
               "",
               "Der Altar ist eine Mehrblockstruktur: ein Altar und &e8 Infusionssockel&r drumherum. Stell den Altar auf, dann zeigt er dir mit Markierungen, wo die Sockel hingehören: &e3 Blöcke&r entfernt in jede Himmelsrichtung und &e2 Blöcke&r entfernt in jede Diagonale. Alles auf einer Höhe.",
               "",
@@ -226,9 +226,9 @@ quests = [
           deps=["welcome"], icon="mysticalagriculture:infusion_altar", size=1.75, shape="hexagon"),
 
     quest("pedestals", 12.5, 0, "&dStell acht Sockel auf",
-          subtitle="Zwei Gold und ein Stück Wolle pro Sockel.",
+          subtitle="Zwei Goldbleche und ein Stück Wolle pro Sockel.",
           description=[
-              "Ein &6Infusionssockel&r ist der Altar ohne Fuß: &e2 Goldbarren&r, &e1 rote Wolle&r dazwischen, darunter &e2 Stein&r übereinander. Du brauchst &e8&r, also insgesamt 16 Goldbarren, 8 Wolle und 16 Stein.",
+              "Ein &6Infusionssockel&r ist der Altar ohne Fuß: &e2 Goldbleche&r aus der Create-Presse, &e1 rote Wolle&r dazwischen, darunter &e2 Stein&r übereinander. Du brauchst &e8&r, also insgesamt 16 Goldbleche, 8 Wolle und 16 Stein.",
               "",
               "Ein Sockel nimmt genau einen Gegenstand, Rechtsklick legt hinein und holt wieder heraus. Für die Übersicht: Essenz auf die vier geraden Sockel, Material auf die vier schrägen, oder umgekehrt.",
               "",

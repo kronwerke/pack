@@ -64,6 +64,21 @@ ServerEvents.recipes(event => {
   event.replaceInput({ id: 'mahoutsukai:attuner' }, 'minecraft:gold_ingot', 'botania:terrasteel_ingot')
   event.replaceInput({ id: 'draconicevolution:components/draconium_core' }, '#c:ingots/gold', 'eternal_starlight:deepsilver_ingot')
   event.replaceInput({ id: 'aquaculture:iron_fishing_rod' }, '#c:ingots/iron', 'create:iron_sheet')
+  event.replaceInput({ id: 'oritech:crafting/cooler' }, 'minecraft:ice', 'undergarden:froststeel_ingot')
+  event.replaceInput({ id: 'powah:crafting/thermo_generator_basic' }, 'minecraft:iron_ingot', 'undergarden:froststeel_ingot')
+  event.replaceInput({ id: 'ae2:network/wireless_part' }, 'ae2:fluix_pearl', 'deeperdarker:sculk_transmitter')
+  event.remove({ id: 'eidolon_repraised:lesser_soul_gem' })
+  event.custom({"steps": [{"items": [{"tag": "c:dusts/redstone"}, {"tag": "c:dusts/redstone"}, {"item": "minecraft:lapis_lazuli"}, {"item": "minecraft:lapis_lazuli"}]}, {"stirs": 2, "items": [{"item": "eidolon_repraised:soul_shard"}, {"item": "eidolon_repraised:soul_shard"}, {"item": "eidolon_repraised:soul_shard"}, {"item": "eidolon_repraised:soul_shard"}]}, {"items": [{"item": "deeperdarker:soul_crystal"}]}], "result": {"id": "eidolon_repraised:lesser_soul_gem", "count": 1}, "type": "eidolon_repraised:crucible"}).id('kronwerke:round/eidolon_repraised_lesser_soul_gem')
+  event.replaceInput({ id: 'draconicevolution:tools/dislocator' }, 'minecraft:ender_eye', 'deeperdarker:reinforced_echo_shard')
+
+  // Boss and treasure loot opens shortcuts
+  event.custom({"type": "minecraft:crafting_shaped", "pattern": ["I#I", "#X#", "I#I"], "key": {"I": {"item": "cataclysm:ignitium_ingot"}, "#": {"item": "minecraft:magma_cream"}, "X": {"tag": "c:furnaces/obsidian"}}, "result": {"id": "ironfurnaces:netherite_furnace", "count": 1}}).id('kronwerke:round/netherite_furnace_ignitium')
+  event.custom({"type": "minecraft:crafting_shaped", "pattern": [" N ", "NHN", " N "], "key": {"N": {"item": "aquaculture:neptunium_ingot"}, "H": {"item": "create:copper_diving_helmet"}}, "result": {"id": "create:netherite_diving_helmet", "count": 1}}).id('kronwerke:round/neptunium_diving_helmet')
+  event.custom({"type": "minecraft:crafting_shaped", "pattern": [" N ", "NHN", " N "], "key": {"N": {"item": "aquaculture:neptunium_ingot"}, "H": {"item": "create:copper_diving_boots"}}, "result": {"id": "create:netherite_diving_boots", "count": 1}}).id('kronwerke:round/neptunium_diving_boots')
+
+  // Fast later: bulk for the stage goals once their stage is past
+  event.custom({"type": "create:mixing", "ingredients": [{"item": "minecraft:andesite"}, {"item": "minecraft:andesite"}, {"tag": "c:nuggets/iron"}], "results": [{"id": "create:andesite_alloy", "count": 4}], "heat_requirement": "superheated"}).id('kronwerke:round/andesite_alloy_superheated')
+  event.custom({"type": "enderio:alloy_smelting", "energy": 4000, "experience": 0.3, "inputs": [{"tag": "c:ingots/copper", "count": 3}, {"tag": "c:ingots/zinc", "count": 1}], "output": {"id": "create:brass_ingot", "count": 4}}).id('kronwerke:round/brass_alloy_smelter')
 
   // Every plate on the press
   event.custom({"type": "create:pressing", "ingredients": [{"tag": "c:ingots/thorium"}], "results": [{"id": "nuclearcraft:thorium_plate"}]}).id('kronwerke:round/press_thorium')

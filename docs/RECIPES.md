@@ -230,6 +230,26 @@ Every mod leans on at least one other, and key materials get a slow first route 
 | `mahoutsukai:attuner` | `minecraft:gold_ingot` becomes `botania:terrasteel_ingot` | Mahou Tsukai attunes to terrasteel. |
 | `draconicevolution:components/draconium_core` | `c:ingots/gold` becomes `eternal_starlight:deepsilver_ingot` | Draconium cores are set in deepsilver. |
 | `aquaculture:iron_fishing_rod` | `c:ingots/iron` becomes `create:iron_sheet` | The iron rod is pressed sheet. |
+| `oritech:crafting/cooler` | `minecraft:ice` becomes `undergarden:froststeel_ingot` | Oritech's cooler holds the Undergarden's froststeel. |
+| `powah:crafting/thermo_generator_basic` | `minecraft:iron_ingot` becomes `undergarden:froststeel_ingot` | A thermoelectric generator needs a cold side: froststeel. |
+| `ae2:network/wireless_part` | `ae2:fluix_pearl` becomes `deeperdarker:sculk_transmitter` | AE2's wireless receiver listens through a sculk transmitter from the Otherside. |
+| `eidolon_repraised:lesser_soul_gem` | `c:gems/quartz` becomes `deeperdarker:soul_crystal` | Eidolon's soul gem is cut from a soul crystal of the Otherside. |
+| `draconicevolution:tools/dislocator` | `minecraft:ender_eye` becomes `deeperdarker:reinforced_echo_shard` | The dislocator remembers places with a reinforced echo shard. |
+
+### Boss and treasure loot opens shortcuts
+
+| Recipe | Change | Why |
+| --- | --- | --- |
+| `kronwerke:round/netherite_furnace_ignitium` | new: `cataclysm:ignitium_ingot`, `minecraft:magma_cream`, `c:furnaces/obsidian` to `ironfurnaces:netherite_furnace` | Who beat Ignis gets the netherite furnace without netherite: four ignitium. |
+| `kronwerke:round/neptunium_diving_helmet` | new: `aquaculture:neptunium_ingot`, `create:copper_diving_helmet` to `create:netherite_diving_helmet` | Neptunium from the sea's treasure makes the diving helmet that also survives lava. |
+| `kronwerke:round/neptunium_diving_boots` | new: `aquaculture:neptunium_ingot`, `create:copper_diving_boots` to `create:netherite_diving_boots` | The same for the diving boots. |
+
+### Fast later: bulk for the stage goals once their stage is past
+
+| Recipe | Change | Why |
+| --- | --- | --- |
+| `kronwerke:round/andesite_alloy_superheated` | new: `minecraft:andesite`, `minecraft:andesite`, `c:nuggets/iron` to `create:andesite_alloy` | Stage 1 hands out two per mixer run; from stage 2 a superheated mixer gives four from two andesite and one nugget. |
+| `kronwerke:round/brass_alloy_smelter` | new: `c:ingots/copper`, `c:ingots/zinc` to `create:brass_ingot` | Brass is the stage 2 goal; from stage 3 the EnderIO alloy smelter makes four from three copper and a zinc. |
 
 ### Every plate on the press
 

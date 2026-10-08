@@ -110,7 +110,7 @@ quests = [
     quest("dislocator", 0, 6, "&bBau einen Dislocator",
           subtitle="Ein Sprung zurück an einen festen Ort.",
           description=[
-              "&6Lohenstaub&r in die Ecken, &6Draconiumstaub&r an die Seiten, ein &6Enderauge&r in die Mitte.",
+              "&6Lohenstaub&r in die Ecken, &6Draconiumstaub&r an die Seiten, eine &6Verstärkte Echoscherbe&r aus Deeper and Darker in die Mitte.",
               "",
               "Schleichen und Rechtsklick speichert Ort, Blickrichtung und Dimension. Danach bringt dich ein Rechtsklick dorthin zurück. Er hat nur eine begrenzte Zahl an Ladungen.",
           ],

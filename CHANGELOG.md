@@ -279,3 +279,11 @@ The big round of recipes, loot and mobs.
 - Chests of every structure (vanilla, YUNG's, Dungeons Arise, Nova Structures, Cataclysm, the Aether and the other dimensions) roll mod items on top of their loot, in common, rare, nether and end pools. Lootr gives every player their own roll. Items of later stages are in on purpose.
 - Mob drops: mandrake root from witches, zinc and copper nuggets from zombies, certus dust from endermen, dark gems from wither skeletons, blazegold from blazes, neptunium from drowned.
 - Kronwerke Core 0.22.0: hostile mobs get tougher with every stage, the strongest ones only spawn from their stage, and Born in Chaos spawns less.
+
+## 0.11.26
+
+The second pass of the recipe round.
+
+- The mods that took from others and gave nothing back give now: the Undergarden's froststeel goes into Oritech's cooler and Powah's basic thermo generator; Deeper and Darker's sculk transmitter into AE2's wireless receiver, its soul crystal into Eidolon's lesser soul gem, its reinforced echo shard into Draconic's dislocator.
+- Boss and treasure loot opens shortcuts: four ignitium from Ignis make the netherite furnace without netherite; neptunium from fishing treasure makes the netherite diving helmet and boots.
+- Fast later: a superheated mixer makes four andesite alloy from two andesite and a nugget (stage 2 on), the EnderIO alloy smelter four brass from three copper and a zinc (stage 3 on).

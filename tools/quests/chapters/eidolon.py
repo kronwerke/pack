@@ -95,7 +95,7 @@ quests = [
     quest("soul_gem", 10, -1, "&dKoch einen Lesser Soul Gem",
           subtitle="Drei Schritte, zweimal rühren.",
           description=[
-              "Erst &6zwei Redstone&r und &6zwei Lapis&r. Dann &6vier Soul Shards&r und zweimal rühren. Zum Schluss ein &6Quarz&r.",
+              "Erst &6zwei Redstone&r und &6zwei Lapis&r. Dann &6vier Soul Shards&r und zweimal rühren. Zum Schluss ein &6Seelenkristall&r (Soul Crystal) aus Deeper and Darker.",
               "",
               "Der Seelenstein steckt in Zauberstäben und im Sanguine Amulet. Mit einem Soul Gem auf der Brazier lädst du leere Stäbe wieder auf.",
           ],

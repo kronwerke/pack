@@ -42,6 +42,21 @@ def imbuement(rid, inp, pedestals, out, count, source, why):
     return custom(rid, [out], [inp] + pedestals, js, why)
 
 
+def shaped(rid, out, count, pattern, key, why):
+    js = {"type": "minecraft:crafting_shaped", "pattern": pattern,
+          "key": {k: ({"tag": v[1:]} if v.startswith("#") else {"item": v}) for k, v in key.items()},
+          "result": {"id": out, "count": count}}
+    return custom(rid, [out], list(key.values()), js, why)
+
+
+def alloy(rid, ins, out, count, energy, why):
+    """EnderIO alloy smelter; ins are (id or #tag, count)."""
+    js = {"type": "enderio:alloy_smelting", "energy": energy, "experience": 0.3,
+          "inputs": [dict(({"tag": i[1:]} if i.startswith("#") else {"item": i}), count=n) for i, n in ins],
+          "output": {"id": out, "count": count}}
+    return custom(rid, [out], [i for i, _ in ins], js, why)
+
+
 def pressing(material, plate, why):
     js = {"type": "create:pressing", "ingredients": [{"tag": f"c:ingots/{material}"}], "results": [{"id": plate}]}
     return custom(f"kronwerke:round/press_{material}", [plate], [f"#c:ingots/{material}"], js, why)
@@ -167,6 +182,34 @@ CHANGES = {
              "Draconium cores are set in deepsilver."),
         swap("aquaculture:iron_fishing_rod", "#c:ingots/iron", "create:iron_sheet",
              "The iron rod is pressed sheet."),
+        swap("oritech:crafting/cooler", "minecraft:ice", "undergarden:froststeel_ingot",
+             "Oritech's cooler holds the Undergarden's froststeel."),
+        swap("powah:crafting/thermo_generator_basic", "minecraft:iron_ingot", "undergarden:froststeel_ingot",
+             "A thermoelectric generator needs a cold side: froststeel."),
+        swap("ae2:network/wireless_part", "ae2:fluix_pearl", "deeperdarker:sculk_transmitter",
+             "AE2's wireless receiver listens through a sculk transmitter from the Otherside."),
+        swap("eidolon_repraised:lesser_soul_gem", "#c:gems/quartz", "deeperdarker:soul_crystal",
+             "Eidolon's soul gem is cut from a soul crystal of the Otherside.", rebuild=True),
+        swap("draconicevolution:tools/dislocator", "minecraft:ender_eye", "deeperdarker:reinforced_echo_shard",
+             "The dislocator remembers places with a reinforced echo shard."),
+    ],
+    "Boss and treasure loot opens shortcuts": [
+        shaped("kronwerke:round/netherite_furnace_ignitium", "ironfurnaces:netherite_furnace", 1,
+               ["I#I", "#X#", "I#I"], {"I": "cataclysm:ignitium_ingot", "#": "minecraft:magma_cream", "X": "#c:furnaces/obsidian"},
+               "Who beat Ignis gets the netherite furnace without netherite: four ignitium."),
+        shaped("kronwerke:round/neptunium_diving_helmet", "create:netherite_diving_helmet", 1,
+               [" N ", "NHN", " N "], {"N": "aquaculture:neptunium_ingot", "H": "create:copper_diving_helmet"},
+               "Neptunium from the sea's treasure makes the diving helmet that also survives lava."),
+        shaped("kronwerke:round/neptunium_diving_boots", "create:netherite_diving_boots", 1,
+               [" N ", "NHN", " N "], {"N": "aquaculture:neptunium_ingot", "H": "create:copper_diving_boots"},
+               "The same for the diving boots."),
+    ],
+    "Fast later: bulk for the stage goals once their stage is past": [
+        mixing("kronwerke:round/andesite_alloy_superheated", ["minecraft:andesite", "minecraft:andesite", "#c:nuggets/iron"],
+               "create:andesite_alloy", 4, "superheated",
+               "Stage 1 hands out two per mixer run; from stage 2 a superheated mixer gives four from two andesite and one nugget."),
+        alloy("kronwerke:round/brass_alloy_smelter", [("#c:ingots/copper", 3), ("#c:ingots/zinc", 1)], "create:brass_ingot", 4, 4000,
+              "Brass is the stage 2 goal; from stage 3 the EnderIO alloy smelter makes four from three copper and a zinc."),
     ],
     "Every plate on the press": [
         pressing(m, f"nuclearcraft:{m}_plate", "NuclearCraft plates came only from its own machines; a Create press makes them one to one.")
@@ -215,7 +258,11 @@ def check(dump):
                 for x in c["out"] + c["in"]:
                     if not exists(x):
                         errors.append(f"{c['id']}: {x} does not exist")
-                if c["id"] in by_id:
+                out_stage = min((stage_of_input(o) for o in c["out"]), default=1)
+                for x in c["in"]:
+                    if exists(x) and stage_of_input(x) > out_stage:
+                        errors.append(f"{c['id']}: {x} (stage {stage_of_input(x)}) is later than what it makes (stage {out_stage})")
+                if c["id"] in by_id and not c["id"].startswith("kronwerke:round/"):
                     errors.append(f"{c['id']}: id taken")
     return errors, notes
 

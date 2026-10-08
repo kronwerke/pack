@@ -287,3 +287,9 @@ The second pass of the recipe round.
 - The mods that took from others and gave nothing back give now: the Undergarden's froststeel goes into Oritech's cooler and Powah's basic thermo generator; Deeper and Darker's sculk transmitter into AE2's wireless receiver, its soul crystal into Eidolon's lesser soul gem, its reinforced echo shard into Draconic's dislocator.
 - Boss and treasure loot opens shortcuts: four ignitium from Ignis make the netherite furnace without netherite; neptunium from fishing treasure makes the netherite diving helmet and boots.
 - Fast later: a superheated mixer makes four andesite alloy from two andesite and a nugget (stage 2 on), the EnderIO alloy smelter four brass from three copper and a zinc (stage 3 on).
+
+## 0.11.28
+
+- The quest book as a map: every section of a chapter is a tree of its own with a straight main line, side branches above and below, and many leaves of one parent as a compact block. Sections sit side by side, long chains fold into a second row.
+- No two quest lines cross. A line that would run far across the map, through another quest or through a banner is hidden; the quest panel still lists what it needs.
+- Same 74 chapters and 2809 quests, no change to tasks or rewards. (The tag v0.11.27 points at the same book but still carries 0.11.26 as its version.)

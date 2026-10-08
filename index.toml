@@ -330,11 +330,11 @@ hash = "93c982c2e09101877cba15ed69d2eee71ed5be2243ee8dcdcc0734845932c8b6"
 
 [[files]]
 file = "config/ftbquests/quests/lang/de_de.snbt"
-hash = "43ad67c5f58e682ddbd9fde0f316ff1a1c04a9f9011fc29718376a43cf695484"
+hash = "439945bfc85d51c7ad02c596f8b58dc00b7ea3023f98184306b70882c2f15040"
 
 [[files]]
 file = "config/ftbquests/quests/lang/en_us.snbt"
-hash = "43ad67c5f58e682ddbd9fde0f316ff1a1c04a9f9011fc29718376a43cf695484"
+hash = "439945bfc85d51c7ad02c596f8b58dc00b7ea3023f98184306b70882c2f15040"
 
 [[files]]
 file = "config/ftbquests/quests/reward_tables/s1_common.snbt"
@@ -3905,6 +3905,110 @@ file = "kubejs/data/kronwerke/function/shots/row_22.mcfunction"
 hash = "c012a42f1ca7e2a00e7f9bce50b0b1f2783a3805407e094e934fa822b03a02fc"
 
 [[files]]
+file = "kubejs/data/kronwerke/loot_modifiers/chests_common.json"
+hash = "2a8258557b0d11f4fe2b7e3d500b184e25059b8913f010af7c17028c0152879b"
+
+[[files]]
+file = "kubejs/data/kronwerke/loot_modifiers/chests_end.json"
+hash = "2a839d2e1aa5a34bf6ad1cf057d1ee63a8c83f1ffe206c90e96f9d2a5cec532c"
+
+[[files]]
+file = "kubejs/data/kronwerke/loot_modifiers/chests_nether.json"
+hash = "723535aa7c0b9fb5661dbe2c3a961169ef7bf36d76d843d0920d1bfc47782416"
+
+[[files]]
+file = "kubejs/data/kronwerke/loot_modifiers/chests_rare.json"
+hash = "89b8aa4b70d2e943eed19c2604a43af29d066ce993b27c0db8ba34721e4e262a"
+
+[[files]]
+file = "kubejs/data/kronwerke/loot_modifiers/drop_0_arcane_essence.json"
+hash = "836fe2ca45a028515d04d56d55ff3868070256efbd5eee07673465fe709dfcbe"
+
+[[files]]
+file = "kubejs/data/kronwerke/loot_modifiers/drop_1_mandrake_root.json"
+hash = "5dab8a8cbb075c258876c45af2848073fdd0499d839d3bc768df303586e28ec9"
+
+[[files]]
+file = "kubejs/data/kronwerke/loot_modifiers/drop_2_zinc_nugget.json"
+hash = "0d0ff3412cdec0601faf97b67b214b2f0e62e04e3c496026fd8f261f3081cc96"
+
+[[files]]
+file = "kubejs/data/kronwerke/loot_modifiers/drop_3_zinc_nugget.json"
+hash = "7f962584373ea2d2bcdd4234c30dec632e264f1f82450c1d8c008d921961addd"
+
+[[files]]
+file = "kubejs/data/kronwerke/loot_modifiers/drop_4_copper_nugget.json"
+hash = "c5d1b76a5a8422f8fb02ae72d2a2ced424ab36f8d2041e5d0ab8dbba7d965067"
+
+[[files]]
+file = "kubejs/data/kronwerke/loot_modifiers/drop_5_certus_quartz_dust.json"
+hash = "9fa4f9a3033899e5fce3f6351202c7f5da1ff6e9c33ec3931512ec47d0048332"
+
+[[files]]
+file = "kubejs/data/kronwerke/loot_modifiers/drop_6_dark_gem.json"
+hash = "1930bb8fda7b56f4511e3617cc64b0c28a10ede53c800d6e9fb5e8b5d9d9e57d"
+
+[[files]]
+file = "kubejs/data/kronwerke/loot_modifiers/drop_7_raw_blazegold.json"
+hash = "96bbf40a83812418c06a3302feeb5060132f9d73f3c0e1c42e9e3300e35216fd"
+
+[[files]]
+file = "kubejs/data/kronwerke/loot_modifiers/drop_8_neptunium_nugget.json"
+hash = "aeeb1898b29da91df34c61723529fb3b6c5bab0866c52bb0290bcbd9940fc902"
+
+[[files]]
+file = "kubejs/data/kronwerke/loot_table/inject/common.json"
+hash = "966ba43ec667353632210ea6abdb78aea4ac5de05a22751282efd25cf58ab6ec"
+
+[[files]]
+file = "kubejs/data/kronwerke/loot_table/inject/drop_0_arcane_essence.json"
+hash = "93b198a3b92a611cee952b41db2a2afe92281415f92c447fde5399ded4698cee"
+
+[[files]]
+file = "kubejs/data/kronwerke/loot_table/inject/drop_1_mandrake_root.json"
+hash = "c54cbaef3eec8c11f78f625b5871c63e3258978d5bcf2af36fdc7eb34fa5b30e"
+
+[[files]]
+file = "kubejs/data/kronwerke/loot_table/inject/drop_2_zinc_nugget.json"
+hash = "8208d7b94e619dc508d3ad2105c884231cfba02cb4a2c73e20277d7c8046566b"
+
+[[files]]
+file = "kubejs/data/kronwerke/loot_table/inject/drop_3_zinc_nugget.json"
+hash = "beab47857edc0a399f7f9396189fe693c53bb29013fdf7766697ec4ee6b7a4f5"
+
+[[files]]
+file = "kubejs/data/kronwerke/loot_table/inject/drop_4_copper_nugget.json"
+hash = "32dbfe6d66a190f568cc9abde99de1c396dd007137a33ba326399567343c0f8c"
+
+[[files]]
+file = "kubejs/data/kronwerke/loot_table/inject/drop_5_certus_quartz_dust.json"
+hash = "84af0d1ce73a1be7e502f8ad4cc749619486461ece2a58e45d821d7e30c4e9bd"
+
+[[files]]
+file = "kubejs/data/kronwerke/loot_table/inject/drop_6_dark_gem.json"
+hash = "b8bda5282482d234cac56a75cf37bdf004e8a698555a02dd16721bd448b933f9"
+
+[[files]]
+file = "kubejs/data/kronwerke/loot_table/inject/drop_7_raw_blazegold.json"
+hash = "9377e70c9433cec5ac887af4c55f7e34fe33bcf05a3fc7e708e9e44d4adffee4"
+
+[[files]]
+file = "kubejs/data/kronwerke/loot_table/inject/drop_8_neptunium_nugget.json"
+hash = "e3df34c47ced9445c05ba6ce87be073f9843392e916695e8295e99a7857308fd"
+
+[[files]]
+file = "kubejs/data/kronwerke/loot_table/inject/end.json"
+hash = "86f1eecebc58c6f20d362d818900bf81c9a8298d3ccfac318bc2fc0bbafce0a0"
+
+[[files]]
+file = "kubejs/data/kronwerke/loot_table/inject/nether.json"
+hash = "8817c4abd48313f3a7da1e8abba5f7833f30624fe865b55f27f42860d70f609c"
+
+[[files]]
+file = "kubejs/data/kronwerke/loot_table/inject/rare.json"
+hash = "49a12245c65299052fd044c13ba3b13702a660b94bd838db6dfbeda7c3fccbbb"
+
+[[files]]
 file = "kubejs/data/kronwerke/market_presets/productivetrees_saplings_1.json"
 hash = "7a88c53eafdacf8b862bc86415e02eede869d1f5d521539df276c8f316eaf240"
 
@@ -5177,6 +5281,10 @@ file = "kubejs/data/mysticalagradditions/recipe/essence/gaia_spirit.json"
 hash = "4bde1246a6e188420a070ccf97b09c9dc9987257f304250e4f58f704b710902f"
 
 [[files]]
+file = "kubejs/data/neoforge/loot_modifiers/global_loot_modifiers.json"
+hash = "41022cf11c97d2e25e2060bada5e0ea6177c004f897d10184db8387b02d40935"
+
+[[files]]
 file = "kubejs/data/neoorigins/origins/origin_layers/class.json"
 hash = "a11b2e81c242dd77bcadcb949dc5488d333a0aae819eec71a6f9f5d219e8f60b"
 
@@ -6281,6 +6389,10 @@ file = "kubejs/server_scripts/kronwerke/obelisk.js"
 hash = "584000faceb796099fddcb3050c262965a4ae8da82645a3df1f1412721150100"
 
 [[files]]
+file = "kubejs/server_scripts/kronwerke/round.js"
+hash = "56a8efb8faa24080fe8e99a4fb6173d259de126662739d99c3ec9c44fcb63cfb"
+
+[[files]]
 file = "kubejs/server_scripts/kronwerke/tech.js"
 hash = "8a3f99766d2c94acea6a0d29efbe79807b72d3281c0d488da27943407da74678"
 
@@ -7008,7 +7120,7 @@ metafile = true
 
 [[files]]
 file = "mods/kronwerke-core.pw.toml"
-hash = "3867bb6192ec2620d45fbc1c42c3416e8ababad3b2d163490c06baf8beb2107d"
+hash = "67e4deee4ce6d184b8cdab40e303273dd180b3ab2c4b1ed8484167370cfdd8c1"
 metafile = true
 
 [[files]]

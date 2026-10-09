@@ -40,7 +40,9 @@ About 200 mods register keys, and many of their defaults collide: V was the voic
 | Voice chat groups | G | Shift+G | G is Curios |
 | Voice chat mute, disable, hide icons | M, N, H | unbound | Pressed by accident in fights; all three are in the voice chat menu |
 | Cataclysm armour abilities | V, V, Y, C | Shift+V, Ctrl+B, Ctrl+Y, Alt+Y | Boss gear, used rarely |
-| Inventory Tweak sort | B | Alt+B | Backpack |
+| Inventory Tweak sort | B | Middle mouse | Backpack; one click in any inventory (Samuel, 2026-10-09) |
+| Ping Wheel ping | Mouse 5 | Middle mouse | Same button as sorting, in the world instead of a screen (Samuel, 2026-10-09) |
+| Vanilla pick block | Middle mouse | Mouse 5 | Makes room for the ping |
 | Occultism satchel, ender bag, storage remote | B, V, N | Alt+G, Alt+E, Alt+S | Freed letters |
 | Simple Magnets toggle | H | Alt+M | Class skill |
 | Ender IO magnet, travel staff | M, G | Shift+M, Ctrl+G | Map and Curios |
@@ -57,7 +59,7 @@ About 200 mods register keys, and many of their defaults collide: V was the voic
 | Iris reload, toggle, pack menu | R, K, O | F6, Alt+K, Alt+O | Shader keys pressed by accident |
 | KubeJS Kubedex, Toast Control clear | K, J | unbound | Developer and cosmetic keys |
 
-Keys that still share a letter on purpose: Space, Shift and Ctrl for the Hexerei broom and the PneumaticCraft jet boots (they only act while flying), and the middle mouse button, which Sophisticated Storage, Immersive Engineering and ExtendedAE use in different screens.
+Keys that still share a letter on purpose: Space, Shift and Ctrl for the Hexerei broom and the PneumaticCraft jet boots (they only act while flying), and the middle mouse button: in the world it pings, in inventories it sorts, and Sophisticated Storage, Immersive Engineering and ExtendedAE also use it in some of their screens.
 
 ## Changing it
 

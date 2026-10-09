@@ -325,6 +325,65 @@ RULES = [
     (5, ["mekmm:large_wind_generator"]),
     # Azure ore only generates in end stone.
     (4, ["re:^silentgear:(azure_silver|azure_electrum|tyrian_steel)"]),
+    # Items whose recipe needs a later stage than the rest of their mod, found by computing the
+    # earliest stage every recipe chain allows (2026-10-09). Locked to that stage, so JEI and the
+    # quests show them where a player can really make them.
+    (2, [
+        "create:adjustable_chain_gearshift", "create:attribute_filter", "create:controls",
+        "create:crafter_slot_cover", "create:factory_gauge", "create:flywheel", "create:railway_casing",
+        "create:schedule", "functionalstorage:storage_controller", "sophisticatedbackpacks:xp_pump_upgrade"
+    ]),
+    (3, [
+        "hostilenetworks:fab_directive", "immersiveengineering:buzzsaw",
+        "immersiveengineering:circuit_table", "immersiveengineering:drill",
+        "immersiveengineering:machine_interface", "immersiveengineering:resonanz_engineering",
+        "immersiveengineering:robot_wolf", "immersiveengineering:sample_drill",
+        "immersiveengineering:toolupgrade_powerpack_magnet",
+        "immersiveengineering:toolupgrade_powerpack_tesla", "immersiveengineering:turret_chem",
+        "immersiveengineering:turret_gun", "ironfurnaces:obsidian_furnace", "justdirethings:blockbreakert2",
+        "justdirethings:blockplacert2", "justdirethings:clickert2", "justdirethings:droppert2",
+        "justdirethings:energytransmitter", "justdirethings:fluidcollectort2",
+        "justdirethings:fluidplacert2", "justdirethings:sensort2", "justdirethings:upgrade_phase",
+        "justdirethings:voidshift_wand", "mekanism:basic_compressing_factory",
+        "mekanism:basic_purifying_factory", "mekanism:enriched_refined_obsidian", "pneumaticcraft:huge_tank",
+        "pneumaticcraft:jet_boots_upgrade_1", "pneumaticcraft:jet_boots_upgrade_2",
+        "pneumaticcraft:jet_boots_upgrade_3", "pneumaticcraft:jet_boots_upgrade_4",
+        "pneumaticcraft:jet_boots_upgrade_5", "pneumaticcraft:large_tank",
+        "pneumaticcraft:reinforced_air_canister", "pneumaticcraft:reinforced_air_canister_array",
+        "pneumaticcraft:reinforced_pressure_chamber_valve", "pneumaticcraft:remote",
+        "pneumaticcraft:scuba_upgrade", "pneumaticcraft:unassembled_reinforced_pressure_chamber_valve"
+    ]),
+    (4, [
+        "ae2wtlib:quantum_bridge_card", "appmek:chemical_storage_cell_256k",
+        "appmek:chemical_storage_cell_64k", "appmek:portable_chemical_cell_256k",
+        "appmek:portable_chemical_cell_64k", "extendedae:active_formation_plane", "extendedae:drive_upgrade",
+        "extendedae:interface_upgrade", "extendedae:io_bus_upgrade", "extendedae:pattern_provider_upgrade",
+        "extendedae:pattern_terminal_upgrade", "extendedae:precise_export_bus",
+        "extendedae:smart_annihilation_plane", "justdirethings:blockswappert2",
+        "justdirethings:eclipsegate_wand", "justdirethings:upgrade_deathprotection",
+        "justdirethings:upgrade_instabreak", "justdirethings:upgrade_noai",
+        "justdirethings:upgrade_time_protection", "mekanism:advanced_combining_factory",
+        "mekanism:advanced_injecting_factory", "mekanism:basic_combining_factory",
+        "mekanism:basic_injecting_factory", "mekanism:isotopic_centrifuge", "mekanism:security_desk",
+        "mekanismgenerators:module_geothermal_generator_unit",
+        "mekanismgenerators:module_solar_recharging_unit", "mekmm:advanced_centrifuging_factory",
+        "mekmm:advanced_crystallizing_factory", "mekmm:advanced_dissolving_factory",
+        "mekmm:advanced_planting_factory", "mekmm:advanced_pressing_factory",
+        "mekmm:advanced_washing_factory", "mekmm:basic_centrifuging_factory",
+        "mekmm:basic_crystallizing_factory", "mekmm:basic_dissolving_factory",
+        "mekmm:basic_planting_factory", "mekmm:basic_pressing_factory", "mekmm:basic_washing_factory",
+        "mekmm:wireless_charging_station", "mininggadgets:upgrade_efficiency_4",
+        "mininggadgets:upgrade_efficiency_5", "pneumaticcraft:minigun_upgrade",
+        "pneumaticcraft:radiation_shielding_upgrade", "pneumaticcraft:sentry_turret"
+    ]),
+    (5, [
+        "advanced_ae:wireless_quantum_crafter_terminal", "draconicevolution:advanced_magnet",
+        "megacells:decompression_module", "mekanism:module_elytra_unit",
+        "mekanism:module_gravitational_modulating_unit", "mekanism:module_teleportation_unit",
+        "mekanism:qio_drive_hyper_dense", "mekanism:qio_drive_supermassive",
+        "mekanism:qio_drive_time_dilating", "mekanism:reprocessed_fissile_fragment",
+        "mekmm:wireless_transmission_station"
+    ]),
     # ---------------------------------------------------------------- Milestones (kubejs/startup_scripts/milestones.js)
     (2, ["kronwerke:brass_heart", "kronwerke:rune_core"]),
     (3, ["kronwerke:steel_core", "kronwerke:elven_star"]),

@@ -215,7 +215,7 @@ quests = [
               "",
               "Ein Team teilt sich die &eClaims&r (500 Chunks fürs ganze Team, nicht pro Kopf) und den &eQuestfortschritt&r: Was einer erledigt, ist für alle erledigt. Die Belohnung holt sich trotzdem jeder selbst ab.",
               "",
-              "&eTipp:&r Mit &6Ping Wheel&r zeigst du deinem Team, wo es langgeht: &eMaustaste 5&r (eine Seitentaste) setzt einen Ping dort, wo du hinschaust, sichtbar für alle in der Nähe.",
+              "&eTipp:&r Mit &6Ping Wheel&r zeigst du deinem Team, wo es langgeht: ein Klick mit dem &eMausrad&r setzt einen Ping dort, wo du hinschaust, sichtbar für alle in der Nähe.",
           ],
           tasks=[task_checkmark("Verstanden")],
           rewards=[reward_item("minecraft:white_banner", 1), reward_xp(3)],
@@ -332,7 +332,7 @@ quests = [
           description=[
               "Deine Herkunft liegt auf &eZ&r, &eX&r, &eC&r und &eAlt+R&r (Fähigkeit 1 bis 4), die Rolle auf &eH&r, die Übersicht auf &eO&r. Dazu &eR&r und &eU&r in JEI, &eM&r Karte und Claims, &eB&r Rucksack, &eG&r Schmuckplätze, &e`&r (links neben der 1) Ultimine, &eW&r halten für Ponder, &eU&r außerhalb von Menüs die Todeshistorie.",
               "",
-              "Seltene Tasten liegen auf &eAlt&r, &eStrg&r oder &eShift&r plus Buchstabe, zum Beispiel &eAlt+V&r Sprachchat-Menü, &eShift+G&r Sprachchat-Gruppen, &eAlt+B&r Inventar sortieren. Rot markierte Tasten in den &eSteuerungseinstellungen&r liegen doppelt.",
+              "Seltene Tasten liegen auf &eAlt&r, &eStrg&r oder &eShift&r plus Buchstabe, zum Beispiel &eAlt+V&r Sprachchat-Menü, &eShift+G&r Sprachchat-Gruppen. Das &eMausrad&r sortiert im Inventar und setzt in der Welt einen Ping; Block auswählen liegt dafür auf &eMaustaste 5&r. Rot markierte Tasten in den &eSteuerungseinstellungen&r liegen doppelt.",
               "",
               "Hast du eine Taste schon selbst geändert, bleibt deine Belegung. Doppelt belegte Tasten legst du dann selbst um.",
           ],

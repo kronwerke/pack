@@ -168,7 +168,7 @@ quests = [
     quest("ping", 12, 5, "&aZeig deinem Team den Weg",
           subtitle="Ping Wheel: ein Klick, ein Zeichen in der Welt.",
           description=[
-              "&eMaustaste 5&r (eine Seitentaste der Maus) setzt einen &6Ping&r dort, wo du hinschaust. Alle in der Nähe sehen ihn als Zeichen in der Welt, mit Entfernung, und am Bildschirmrand zeigt ein Pfeil die Richtung.",
+              "Ein Klick mit dem &eMausrad&r (mittlere Maustaste) setzt einen &6Ping&r dort, wo du hinschaust. Alle in der Nähe sehen ihn als Zeichen in der Welt, mit Entfernung, und am Bildschirmrand zeigt ein Pfeil die Richtung.",
               "",
               "Ein Ping hält &e7 Sekunden&r. Zielst du auf einen Gegenstand am Boden, zeigt er dessen Symbol. Ideal für \"Hier ist die Ader\" oder \"Pass auf, Creeper\".",
               "",
@@ -285,7 +285,7 @@ quests = [
     quest("sort", 9, 15, "&7Räum dein Inventar auf",
           subtitle="Inventory Tweak und Crafting Tweaks.",
           description=[
-              "Drück im Inventar oder in einer offenen Truhe &eAlt+B&r, und &6Inventory Tweak&r sortiert nach Art, Name oder Seltenheit, je nach Einstellung. Fällt ein Werkzeug unter &e10 Prozent&r Haltbarkeit, warnt es dich mit Text und Ton.",
+              "Klick im Inventar oder in einer offenen Truhe mit dem &eMausrad&r (mittlere Maustaste), und &6Inventory Tweak&r sortiert nach Art, Name oder Seltenheit, je nach Einstellung. Fällt ein Werkzeug unter &e10 Prozent&r Haltbarkeit, warnt es dich mit Text und Ton.",
               "",
               "&6Crafting Tweaks&r setzt drei kleine Knöpfe neben die Werkbank: &eDrehen&r, &eAusgleichen&r (verteilt Stapel gleichmäßig) und &eLeeren&r. Rechtsklick auf das Ergebnis stellt gleich einen ganzen Stapel her.",
               "",

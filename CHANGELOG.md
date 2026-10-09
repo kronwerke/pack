@@ -300,3 +300,8 @@ The second pass of the recipe round.
 - Every quest sits under the heading it belongs to; no empty headings left. A quest can name its section (`section=` in `tools/quests/ftbq.py`) where its links would pull it elsewhere.
 - Fixed texts: Rite of Quickening needs a Soulwood totem, the golden ritual bowl takes golden sheets, the Arcane Anvil takes source gem blocks, Fertile Essence takes a mandrake root, sorting is Alt+B, the Draconic projectile damage module recipe, the Forbidden Arcanus pedestal count.
 - QuarryPlus: the Faster Work Module is enabled (it was off by default, but the quarries chapter leads through it).
+
+## 0.11.30
+
+- Middle mouse button: sorts in every inventory (Inventory Tweak) and pings in the world (Ping Wheel). Vanilla pick block moves to mouse button 5. Quest texts and `docs/KEYS.md` follow.
+- 105 items are locked to the stage their recipe really needs (computed over every recipe chain): Extended AE upgrades, Applied Mekanistics 64k and 256k chemical cells, Just Dire Things tier 2 machines and late upgrades, Mekanism combining and injecting factories, the late QIO drives and MekaSuit modules, MoreMachine factories and wireless stations, Immersive Engineering drill, buzzsaw, turrets and revolver parts, PneumaticCraft reinforced pressure parts and tanks, the Create schedule, controls and adjustable chain gearshift, the Functional Storage controller and others. Guide books stay open from the start.

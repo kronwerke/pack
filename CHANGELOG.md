@@ -319,3 +319,13 @@ The second pass of the recipe round.
 
 - ServerCore, only on the server. In the load test with 20 players close together, natural spawning took a fifth of the tick and mob AI another fifth; ServerCore brings activation range and faster spawn checks. The settings follow in the next version, after the first start writes the defaults.
 - Nuclear Radiation: doses every two seconds, bats, fish and squids are left out of the simulation.
+
+## 0.11.34
+
+- ServerCore settings (`config/servercore/`):
+  - Activation range for mobs only: monsters, animals and villagers far from every player tick once a second, unless they fall, burn, take damage or are new. Contraptions, minecarts, items and machines are not touched, and neither are Starbuncles, Occultism spirits, PneumaticCraft drones, the Robit and the Chaos Guardian.
+  - Monster spawning is tried every second tick instead of every tick, with a cap of 60 instead of 70. Bats, fish and squids spawn far less often.
+  - When the server falls behind (average above 40 ms per tick), the mob caps drop step by step to 40 %, then the spawning radius from 6 to 4 chunks. Simulation and view distance never change, so machines keep running.
+  - Breeding stops at 48 animals of one kind or 32 villagers within 64 blocks. Villagers stuck in a single block (trading halls) tick once a second.
+  - Players no longer pull unloaded chunks in synchronously when flying into them.
+  - Faster biome lookups for spawning.

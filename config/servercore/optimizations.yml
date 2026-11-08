@@ -1,0 +1,9 @@
+# Allows you to toggle specific optimizations that don't have full vanilla parity.
+# These settings will only take effect after server restarts.
+
+reduce-sync-loads: true
+cache-ticking-chunks: true
+optimize-command-blocks: false
+# Kronwerke: natural spawning took a fifth of the tick in the load test, most of it biome lookups.
+fast-biome-lookups: true
+cancel-duplicate-fluid-ticks: false

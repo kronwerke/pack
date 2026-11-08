@@ -73,6 +73,8 @@
 [join]
 	#Items every player gets once, on the first join, as item or item*count.
 	kit = ["waystones:waystone", "waystones:warp_dust*4"]
+	#When the season starts, as local time in Europe/Berlin (2027-01-16T18:00). The closed start gate names it; empty says mid January 2027.
+	seasonStart = "2027-01-16T18:00"
 
 [spawn]
 	#Half the side of the protected square around the overworld spawn, in blocks. 0 turns the protection off. Operators and creative players build freely; containers next to the obelisk stay allowed for feeders.

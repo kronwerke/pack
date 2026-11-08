@@ -305,3 +305,8 @@ The second pass of the recipe round.
 
 - Middle mouse button: sorts in every inventory (Inventory Tweak) and pings in the world (Ping Wheel). Vanilla pick block moves to mouse button 5. Quest texts and `docs/KEYS.md` follow.
 - 105 items are locked to the stage their recipe really needs (computed over every recipe chain): Extended AE upgrades, Applied Mekanistics 64k and 256k chemical cells, Just Dire Things tier 2 machines and late upgrades, Mekanism combining and injecting factories, the late QIO drives and MekaSuit modules, MoreMachine factories and wireless stations, Immersive Engineering drill, buzzsaw, turrets and revolver parts, PneumaticCraft reinforced pressure parts and tanks, the Create schedule, controls and adjustable chain gearshift, the Functional Storage controller and others. Guide books stay open from the start.
+
+## 0.11.31
+
+- Kronwerke Core 0.23.0: the start gate. Until the season starts on Saturday, 16 January 2027, at 18:00, only the team gets onto the server; everyone on the whitelist reads the start date when joining. Streamers can link their name and give out slots already.
+- Load test bots for the team (`/kw admin loadtest`).

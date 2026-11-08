@@ -329,3 +329,7 @@ The second pass of the recipe round.
   - Breeding stops at 48 animals of one kind or 32 villagers within 64 blocks. Villagers stuck in a single block (trading halls) tick once a second.
   - Players no longer pull unloaded chunks in synchronously when flying into them.
   - Faster biome lookups for spawning.
+
+## 0.11.35
+
+- Kronwerke Core 0.23.1: Nuclear Radiation no longer reads every block of a chunk that loads, only the sections that can hold something radioactive. With players flying around, that scan took a fifth of the tick.

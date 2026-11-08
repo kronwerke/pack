@@ -22,7 +22,7 @@
 	#Entity sampling / dose accumulation / effect interval
 	# Default: 5
 	# Range: 1 ~ 1200
-	entity_sim_interval_ticks = 20
+	entity_sim_interval_ticks = 40
 	#Hard cutoff radius for source contribution (meters)
 	# Default: 64
 	# Range: 1 ~ 1024
@@ -39,7 +39,7 @@
 	ignore_creative = true
 	#Spectator players are still simulated and synced (HUD/geiger), but exempt from radiation harm
 	ignore_spectator = true
-	ignored = ["minecraft:armor_stand", "minecraft:item", "minecraft:experience_orb", "minecraft:area_effect_cloud"]
+	ignored = ["minecraft:armor_stand", "minecraft:item", "minecraft:experience_orb", "minecraft:area_effect_cloud", "minecraft:bat", "minecraft:cod", "minecraft:salmon", "minecraft:tropical_fish", "minecraft:pufferfish", "minecraft:squid", "minecraft:glow_squid"]
 
 [thresholds_sv_per_hour]
 	#MEDIUM band: 1 mSv/h

@@ -314,3 +314,8 @@ The second pass of the recipe round.
 ## 0.11.32
 
 - Nuclear Radiation works out doses and chunk radiation once a second instead of four times. In the load test with 15 players it took a quarter of the server's tick, mostly for mobs and animals.
+
+## 0.11.33
+
+- ServerCore, only on the server. In the load test with 20 players close together, natural spawning took a fifth of the tick and mob AI another fifth; ServerCore brings activation range and faster spawn checks. The settings follow in the next version, after the first start writes the defaults.
+- Nuclear Radiation: doses every two seconds, bats, fish and squids are left out of the simulation.

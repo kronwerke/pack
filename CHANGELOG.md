@@ -310,3 +310,7 @@ The second pass of the recipe round.
 
 - Kronwerke Core 0.23.0: the start gate. Until the season starts on Saturday, 16 January 2027, at 18:00, only the team gets onto the server; everyone on the whitelist reads the start date when joining. Streamers can link their name and give out slots already.
 - Load test bots for the team (`/kw admin loadtest`).
+
+## 0.11.32
+
+- Nuclear Radiation works out doses and chunk radiation once a second instead of four times. In the load test with 15 players it took a quarter of the server's tick, mostly for mobs and animals.

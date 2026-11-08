@@ -18,11 +18,11 @@
 	#Chunk vector recompute / source decay / contamination spread interval
 	# Default: 5
 	# Range: 1 ~ 1200
-	world_sim_interval_ticks = 5
+	world_sim_interval_ticks = 20
 	#Entity sampling / dose accumulation / effect interval
 	# Default: 5
 	# Range: 1 ~ 1200
-	entity_sim_interval_ticks = 5
+	entity_sim_interval_ticks = 20
 	#Hard cutoff radius for source contribution (meters)
 	# Default: 64
 	# Range: 1 ~ 1024
@@ -30,7 +30,7 @@
 	#ChunkRadVector freshness ttl
 	# Default: 40
 	# Range: 1 ~ 1200
-	chunk_vector_ttl_ticks = 40
+	chunk_vector_ttl_ticks = 100
 	#Spread entity dose calc across interval buckets
 	stagger_entities = true
 

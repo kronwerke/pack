@@ -379,3 +379,7 @@ The second pass of the recipe round.
 - Kronwerke Core 0.23.7: Reliquary's mob charm check four times a second, Iron's Spellbooks' curio check kept per tick.
 - JourneyMap's player radar every 20 ticks: 40 is above the allowed range, so JourneyMap had fallen back to 5.
 - Dropped items merge within 1.5 blocks instead of 0.5 (ServerCore). With 50 players about 1300 item entities were lying around.
+
+## 0.11.46
+
+- Kronwerke Core 0.23.8: mobs that wear nothing skip the Curios slot tick, curio searches and Artifacts' per tick update. Mobs still spawn with and drop artifacts.

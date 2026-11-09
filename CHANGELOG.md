@@ -354,3 +354,8 @@ The second pass of the recipe round.
 ## 0.11.40
 
 - Incendium checked the entity id of every mob in every dimension each tick (`execute as @e[...] unless score ...` in its `clocks/main`), which builds a command context per mob. With 30 players that was an eighth of the server tick. The check now runs every tick only for Incendium's own ticking mobs and once a second for all others (`kubejs/data/incendium/function/clocks/`). Nothing changes in play: ids are given out when a mob is first seen, the sweep only repairs them after Incendium resets its counter.
+
+## 0.11.41
+
+- Kronwerke Core 0.23.3: an Infinity Nuke that was saved while exploding is dropped when its chunk loads instead of going off again.
+- FTB Backups removed. Every two hours it saved the whole world with a flush on the server thread, which stalled the server for 15 seconds in the load test. The launcher backs up the world every six hours, the host keeps its own backups.

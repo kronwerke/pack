@@ -66,6 +66,10 @@
 	# Range: 0 ~ 3650
 	logDays = 30
 
+[performance]
+	#Chunks read from disk count as unchanged. Vanilla marks every loaded chunk as changed (through setLightCorrect), so every chunk anyone passed through is written again when it unloads. Real changes still mark it.
+	cleanChunkLoads = true
+
 [testing]
 	#Register /kw test, which creates server side test players. Only for test servers, never in a season.
 	testCommands = false

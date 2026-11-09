@@ -364,3 +364,7 @@ The second pass of the recipe round.
 
 - Incendium's mob init and mob ticking only look at entities in the Nether. Its selectors walked every entity of every dimension each tick; all its mob features are tied to Nether biomes and structures. Its item and projectile checks stay everywhere.
 - Kronwerke Core 0.23.4: `/kw admin dirty` to find what marks chunks as changed.
+
+## 0.11.43
+
+- Kronwerke Core 0.23.5: chunks read from disk start out unchanged, so passing through the world no longer rewrites every chunk on unload (`[performance] cleanChunkLoads` in `config/kronwerke-common.toml`).

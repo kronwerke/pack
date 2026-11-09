@@ -383,3 +383,7 @@ The second pass of the recipe round.
 ## 0.11.46
 
 - Kronwerke Core 0.23.8: mobs that wear nothing skip the Curios slot tick, curio searches and Artifacts' per tick update. Mobs still spawn with and drop artifacts.
+
+## 0.11.47
+
+- Kronwerke Core 0.23.9: Lootr containers get no server ticker while nothing decays or refreshes.

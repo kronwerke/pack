@@ -333,3 +333,7 @@ The second pass of the recipe round.
 ## 0.11.35
 
 - Kronwerke Core 0.23.1: Nuclear Radiation no longer reads every block of a chunk that loads, only the sections that can hold something radioactive. With players flying around, that scan took a fifth of the tick.
+
+## 0.11.36
+
+- Dynamic Lights removed. It runs as data pack functions every tick over all players and entities, and still took a tenth of the server tick in the load test with its own switch off. Torches in hand no longer light up the surroundings.

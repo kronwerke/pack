@@ -2,7 +2,8 @@
 # These settings will only take effect after server restarts.
 
 reduce-sync-loads: true
-cache-ticking-chunks: true
+# Off: incompatible with Moonrise (pack 0.11.38).
+cache-ticking-chunks: false
 optimize-command-blocks: false
 # Kronwerke: natural spawning took a fifth of the tick in the load test, most of it biome lookups.
 fast-biome-lookups: true

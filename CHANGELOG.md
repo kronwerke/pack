@@ -341,3 +341,8 @@ The second pass of the recipe round.
 ## 0.11.37
 
 - Kronwerke Core 0.23.2: less work per mob and tick in Accessories, Mahou Tsukai and Nuclear Radiation.
+
+## 0.11.38
+
+- Moonrise, only on the server: Paper's chunk system for NeoForge. Loading, saving and unloading chunks move off the server thread; in the load test, players flying through the world spent a fifth of the tick there. ServerCore's ticking chunk cache is off, it does not work with Moonrise.
+- The main server runs with the Z garbage collector (Generational ZGC, 30 GB). Its pauses went from about 110 ms every ten seconds to well under a millisecond.

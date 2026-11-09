@@ -17,4 +17,4 @@ scoreboard players remove @e[type=vex,tag=in.spirit] in.lifetime 1
 scoreboard players remove @e[type=slime,tag=in.toxic_slime] in.lifetime 1
 
 # Kronwerke: moved here from clocks/main, where it walked every mob every tick.
-execute as @e[type=#incendium:mobs_no_player,tag=!in.ticking_entity] unless score @s in.eid matches 0..32767 run function incendium:technical/entity_id/check
+execute in minecraft:the_nether as @e[type=#incendium:mobs_no_player,tag=!in.ticking_entity,distance=0..] unless score @s in.eid matches 0..32767 run function incendium:technical/entity_id/check

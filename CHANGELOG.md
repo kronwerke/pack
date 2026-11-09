@@ -346,3 +346,7 @@ The second pass of the recipe round.
 
 - Moonrise, only on the server: Paper's chunk system for NeoForge. Loading, saving and unloading chunks move off the server thread; in the load test, players flying through the world spent a fifth of the tick there. ServerCore's ticking chunk cache is off, it does not work with Moonrise.
 - The main server runs with the Z garbage collector (Generational ZGC, 30 GB). Its pauses went from about 110 ms every ten seconds to well under a millisecond.
+
+## 0.11.39
+
+- Moonrise removed again: it rewrites `Entity.checkInsideBlocks`, which Eternal Starlight injects into, and the server did not start. ServerCore's ticking chunk cache is back on. ZGC stays.

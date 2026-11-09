@@ -373,3 +373,9 @@ The second pass of the recipe round.
 
 - Kronwerke Core 0.23.6: less per mob work in Apothic Enchanting, Draconic Evolution and Nuclear Radiation.
 - JourneyMap's server sends every player's position to every other player every 40 ticks instead of every 5 (`journeymap/server/6.0/journeymap.server.global.config`, `worldPlayerRadarUpdateTime`). That work grows with the square of the players; with 50 it was 1.6 % of the tick. Other players on the full map move every two seconds; the minimap radar nearby is unchanged.
+
+## 0.11.45
+
+- Kronwerke Core 0.23.7: Reliquary's mob charm check four times a second, Iron's Spellbooks' curio check kept per tick.
+- JourneyMap's player radar every 20 ticks: 40 is above the allowed range, so JourneyMap had fallen back to 5.
+- Dropped items merge within 1.5 blocks instead of 0.5 (ServerCore). With 50 players about 1300 item entities were lying around.

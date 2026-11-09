@@ -350,3 +350,7 @@ The second pass of the recipe round.
 ## 0.11.39
 
 - Moonrise removed again: it rewrites `Entity.checkInsideBlocks`, which Eternal Starlight injects into, and the server did not start. ServerCore's ticking chunk cache is back on. ZGC stays.
+
+## 0.11.40
+
+- Incendium checked the entity id of every mob in every dimension each tick (`execute as @e[...] unless score ...` in its `clocks/main`), which builds a command context per mob. With 30 players that was an eighth of the server tick. The check now runs every tick only for Incendium's own ticking mobs and once a second for all others (`kubejs/data/incendium/function/clocks/`). Nothing changes in play: ids are given out when a mob is first seen, the sweep only repairs them after Incendium resets its counter.

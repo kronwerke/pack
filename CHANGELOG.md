@@ -359,3 +359,8 @@ The second pass of the recipe round.
 
 - Kronwerke Core 0.23.3: an Infinity Nuke that was saved while exploding is dropped when its chunk loads instead of going off again.
 - FTB Backups removed. Every two hours it saved the whole world with a flush on the server thread, which stalled the server for 15 seconds in the load test. The launcher backs up the world every six hours, the host keeps its own backups.
+
+## 0.11.42
+
+- Incendium's mob init and mob ticking only look at entities in the Nether. Its selectors walked every entity of every dimension each tick; all its mob features are tied to Nether biomes and structures. Its item and projectile checks stay everywhere.
+- Kronwerke Core 0.23.4: `/kw admin dirty` to find what marks chunks as changed.

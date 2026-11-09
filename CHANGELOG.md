@@ -337,3 +337,7 @@ The second pass of the recipe round.
 ## 0.11.36
 
 - Dynamic Lights removed. It runs as data pack functions every tick over all players and entities, and still took a tenth of the server tick in the load test with its own switch off. Torches in hand no longer light up the surroundings.
+
+## 0.11.37
+
+- Kronwerke Core 0.23.2: less work per mob and tick in Accessories, Mahou Tsukai and Nuclear Radiation.

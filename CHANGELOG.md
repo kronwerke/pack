@@ -387,3 +387,7 @@ The second pass of the recipe round.
 ## 0.11.47
 
 - Kronwerke Core 0.23.9: Lootr containers get no server ticker while nothing decays or refreshes.
+
+## 0.11.48
+
+- Kronwerke Core 0.23.10: natural spawning skips the mob count on ticks where no mob category is due, Mowzie's Mobs no longer creates its data on every mob, JourneyMap only builds its loaded chunk overlay while an operator looks at it, Lodestone's curio check is cached per tick.

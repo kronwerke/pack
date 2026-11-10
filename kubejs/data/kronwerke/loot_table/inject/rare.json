@@ -25,11 +25,6 @@
         },
         {
           "type": "minecraft:item",
-          "name": "create:precision_mechanism",
-          "weight": 3
-        },
-        {
-          "type": "minecraft:item",
           "name": "create:electron_tube",
           "weight": 4,
           "functions": [
@@ -54,21 +49,6 @@
                 "type": "minecraft:uniform",
                 "min": 2,
                 "max": 6
-              }
-            }
-          ]
-        },
-        {
-          "type": "minecraft:item",
-          "name": "mekanism:basic_control_circuit",
-          "weight": 4,
-          "functions": [
-            {
-              "function": "minecraft:set_count",
-              "count": {
-                "type": "minecraft:uniform",
-                "min": 1,
-                "max": 2
               }
             }
           ]

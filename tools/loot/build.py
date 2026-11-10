@@ -36,8 +36,8 @@ POOLS = {
         E("create:brass_ingot", 2, 1, 3), E("mekanism:ingot_osmium", 2, 1, 3),
     ]},
     "rare": {"rolls": [1, 3], "empty": 10, "entries": [
-        E("create:brass_ingot", 8, 2, 6), E("create:precision_mechanism", 3), E("create:electron_tube", 4, 1, 3),
-        E("mekanism:ingot_osmium", 6, 2, 6), E("mekanism:basic_control_circuit", 4, 1, 2),
+        E("create:brass_ingot", 8, 2, 6), E("create:electron_tube", 4, 1, 3),
+        E("mekanism:ingot_osmium", 6, 2, 6),
         E("botania:manasteel_ingot", 6, 1, 4), E("botania:mana_pearl", 3), E("naturesaura:infused_iron", 6, 2, 5),
         E("irons_spellbooks:arcane_essence", 6, 3, 8), E("mysticalagriculture:prosperity_shard", 5, 2, 5),
         E("forbidden_arcanus:arcane_crystal", 4, 1, 3), E("occultism:spirit_attuned_gem", 3),

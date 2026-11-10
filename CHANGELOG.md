@@ -406,3 +406,7 @@ Incendium, which ran about a tenth of the tick in the 50 player load test:
 - `player/main` ran some forty checks of held and worn Incendium items for every player every tick. That part (now `player/kw_items`) only runs for players who hold or wear an Incendium item or still carry state from one (thrown trident, bow being unloaded, scroll, restless nature). Tags, shield use, cooldowns and resets run for everyone as before.
 - The shield cloud lines in `clocks/main` look at players (`@a`) instead of every entity of every dimension; only players block with Incendium shields.
 - Frozen mobs (Chilling Blade) carry the tag `in.kw_frozen`, so the per tick frost countdown only reads their scores.
+
+## 0.12.0
+
+- Kronwerke Core 0.24.0: slow PCs no longer time out while joining (two minutes for keep-alives in the first three minutes, two minute read timeout on both sides; the client side needs this pack version), live TPS, tick time and ping in the tab list, and whitelist removals through the bot no longer get stuck on players the server has already forgotten.

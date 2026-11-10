@@ -19,7 +19,7 @@ noEnergy = false
 #Convert Deepslate ores to normal ores. Default: false
 convertDeepslateOres = false
 #Enable Chunk Loader in machines. Default: true
-enableChunkLoader = true
+enableChunkLoader = false
 #[Fabric ONLY] 1E = ?FE. Default: 0.062500, Min: 0.0, Max: 10000000000.0
 rebornEnergyConversionCoefficient = 0.0625
 
@@ -31,7 +31,7 @@ rebornEnergyConversionCoefficient = 0.0625
 	#chunk_marker Default: true
 	chunk_marker = true
 	#remove_bedrock_module Default: true
-	remove_bedrock_module = true
+	remove_bedrock_module = false
 	#filter_module Default: true
 	filter_module = true
 	#repeat_tick_module Default: false

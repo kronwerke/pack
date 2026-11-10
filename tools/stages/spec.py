@@ -265,7 +265,8 @@ RULES = [
          "irons_spellbooks:dragonskin"]),
 
     # ---------------------------------------------------------------- Silent Gear
-    (2, ["silentgear:crimson_iron_ingot", "silentgear:crimson_steel_ingot", "silentgear:blaze_gold_ingot"]),
+    # the alloy forge needs a brass casing (links.js), so it opens with brass
+    (2, ["silentgear:alloy_forge", "silentgear:crimson_iron_ingot", "silentgear:crimson_steel_ingot", "silentgear:blaze_gold_ingot"]),
     (3, ["silentgear:azure_silver_ingot", "silentgear:azure_electrum_ingot", "silentgear:tyrian_steel_ingot"]),
 
     # ---------------------------------------------------------------- Endgame

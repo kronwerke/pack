@@ -15549,13 +15549,13 @@
 	quest.44D89338D2D66A58.quest_subtitle: "Das Metall, das Geister respektieren."
 	quest.44D89338D2D66A58.title: "&7Schmilz Silber"
 	quest.44E38347917EF53B.quest_desc: [
-		"Führ das Band im Kreis, dann drehen unfertige Teile ihre fünf Runden von selbst. Fertige Getriebe zieht eine Schleuse mit Filter ab."
+		"Führ das Band im Kreis, dann drehen unfertige Teile ihre drei Runden von selbst. Fertige Getriebe zieht eine Schleuse mit Filter ab."
 		"{image:create:textures/item/precision_mechanism.png width:32 height:32 align:center}"
-		"&eRezept auf Kronwerke:&r Nur &e60 Prozent&r werden ein Getriebe. Sonst Schrott: &6Messingklumpen&r (25 Prozent) oder ein &6Zahnrad&r (15 Prozent)."
+		"&eRezept auf Kronwerke:&r &e80 Prozent&r werden ein Getriebe. Sonst Schrott: &6Messingklumpen&r (12 Prozent) oder ein &6Zahnrad&r (8 Prozent)."
 		""
-		"Im Schnitt kostet ein Getriebe &e1,7 Messingbleche&r und je gut &eacht&r Zahnräder, Röhren und Eisenklumpen. Die Röhren sind der Engpass."
+		"Im Schnitt kostet ein Getriebe &e1,25 Messingbleche&r und je knapp &evier&r Zahnräder, Röhren und Eisenklumpen. Die Röhren sind der Engpass."
 	]
-	quest.44E38347917EF53B.quest_subtitle: "Fünf Runden, dann fällt es vom Band."
+	quest.44E38347917EF53B.quest_subtitle: "Drei Runden, dann fällt es vom Band."
 	quest.44E38347917EF53B.title: "&6&lBau ein Präzisionsgetriebe"
 	quest.44E3D7B177AD28B8.quest_desc: [
 		"Das &6Stack-Upgrade Stufe 1&r in die Mitte, Kupferbarren oben und an den Seiten, unten Kupferblock, Kupferbarren, Kupferblock."
@@ -16025,7 +16025,7 @@
 	quest.4735B7BB1918C1E6.quest_desc: [
 		"Der &6Steuerchip&r entsteht durch sequenzielle Montage wie das Präzisionsgetriebe: ein &6Goldblech&r aufs Band, ein Einsatzgerät setzt eine &6Elektronenröhre&r, eines &6Redstone&r, eine Presse drückt. &eDrei Runden&r, dann ist er fertig."
 		"{image:create_connected:textures/item/control_chip.png width:32 height:32 align:center}"
-		"In 80 Prozent der Fälle kommt ein Chip heraus, sonst Redstone, eine Röhre oder ein Goldblech zurück, selten etwas anderes. Deutlich gnädiger als die 60 Prozent des Präzisionsgetriebes."
+		"In 80 Prozent der Fälle kommt ein Chip heraus, sonst Redstone, eine Röhre oder ein Goldblech zurück, selten etwas anderes. So gnädig wie das Präzisionsgetriebe."
 		""
 		"Der Chip steckt im Sequenziellen Impulsgeber. Eine bestehende Präzisionslinie baust du mit einem Filterwechsel schnell darauf um."
 	]
@@ -27156,7 +27156,7 @@
 	quest.7A3EB4D902822D91.quest_desc: [
 		"Ein &6Messingblech&r aufs Band. Einsatzgerät 1 setzt ein &6Zahnrad&r ein, Einsatzgerät 2 eine &6Elektronenröhre&r, Einsatzgerät 3 einen &6Eisenklumpen&r, dann stampft eine &6Presse&r."
 		"{image:create:textures/item/incomplete_precision_mechanism.png width:32 height:32 align:center}"
-		"&eRezept auf Kronwerke:&r Danach ist es ein &6Unfertiges Präzisionsgetriebe&r. Es muss &efünf Runden&r durch dieselbe Strecke. Gib jedem Einsatzgerät per Filter nur sein Teil."
+		"&eRezept auf Kronwerke:&r Danach ist es ein &6Unfertiges Präzisionsgetriebe&r. Es muss &edrei Runden&r durch dieselbe Strecke. Gib jedem Einsatzgerät per Filter nur sein Teil."
 	]
 	quest.7A3EB4D902822D91.quest_subtitle: "Sequenzielle Montage, Schritt für Schritt."
 	quest.7A3EB4D902822D91.title: "&6Lass ein Blech eine Runde drehen"

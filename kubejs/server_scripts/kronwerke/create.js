@@ -39,7 +39,8 @@ ServerEvents.recipes(event => {
   }).id('kronwerke:create/brass_ingot_superheated')
 
   // Precision mechanism: built on a brass sheet now, and every loop eats an electron
-  // tube. Scrap is brass nuggets and cogwheels.
+  // tube. Three loops at 80 percent: about 3.75 tubes per mechanism (five loops at 60
+  // percent were 8.3, which would have stalled stage 2). Scrap is brass nuggets and cogwheels.
   event.remove({ output: 'create:precision_mechanism' })
   let kwPrecisionStep = (type, extra) => ({
     type: type,
@@ -49,11 +50,11 @@ ServerEvents.recipes(event => {
   event.custom({
     type: 'create:sequenced_assembly',
     ingredient: { tag: 'c:plates/brass' },
-    loops: 5,
+    loops: 3,
     results: [
-      { id: 'create:precision_mechanism', chance: 60.0 },
-      { id: 'create:brass_nugget', chance: 25.0 },
-      { id: 'create:cogwheel', chance: 15.0 }
+      { id: 'create:precision_mechanism', chance: 80.0 },
+      { id: 'create:brass_nugget', chance: 12.0 },
+      { id: 'create:cogwheel', chance: 8.0 }
     ],
     sequence: [
       kwPrecisionStep('create:deploying', [{ item: 'create:cogwheel' }]),
@@ -65,7 +66,7 @@ ServerEvents.recipes(event => {
   }).id('kronwerke:create/precision_mechanism')
 
   // Mechanical crafter: autocrafting with Create needs the milestone, so the precision
-  // mechanism takes the place of the electron tube (it holds five of them anyway).
+  // mechanism takes the place of the electron tube (it holds three of them anyway).
   event.remove({ id: 'create:crafting/kinetics/mechanical_crafter' })
   event.shaped('3x create:mechanical_crafter', [
     'P',

@@ -13,11 +13,16 @@
     ],
     "stages": ["kronwerke:stage2"],
     "onComplete": [
-      "title @a title {\"text\":\"Messingwerk\",\"color\":\"gold\"}",
-      "title @a subtitle {\"text\":\"Der Nether ist offen. Messing, Mana und die ersten Maschinen.\"}",
-      "say Das Fundament steht. Stufe 2, Messingwerk, ist offen."
+      "title @a title {\"translate\":\"kronwerke.goal.stage1.done.title\",\"fallback\":\"Messingwerk\",\"color\":\"gold\"}",
+      "title @a subtitle {\"translate\":\"kronwerke.goal.stage1.done.subtitle\",\"fallback\":\"Der Nether ist offen. Messing, Mana und die ersten Maschinen.\"}",
+      "tellraw @a {\"translate\":\"kronwerke.goal.stage1.done.chat\",\"fallback\":\"Das Fundament steht. Stufe 2, Messingwerk, ist offen.\",\"color\":\"gold\"}"
     ],
-    "starterKit": []
+    "starterKit": [
+      { "item": "create:brass_ingot", "count": 16 },
+      { "item": "create:blaze_burner", "count": 1 },
+      { "item": "ars_nouveau:source_jar", "count": 1 },
+      { "item": "botania:mana_pearl", "count": 8 }
+    ]
   },
   {
     "id": "stage2",
@@ -32,15 +37,15 @@
     ],
     "stages": ["kronwerke:stage3"],
     "onComplete": [
-      "title @a title {\"text\":\"Stahlwerk\",\"color\":\"gold\"}",
-      "title @a subtitle {\"text\":\"Stahl, Erzvermehrung, Lagernetze, Rituale.\"}",
-      "say Das Messingwerk läuft. Stufe 3, Stahlwerk, ist offen."
+      "title @a title {\"translate\":\"kronwerke.goal.stage2.done.title\",\"fallback\":\"Stahlwerk\",\"color\":\"gold\"}",
+      "title @a subtitle {\"translate\":\"kronwerke.goal.stage2.done.subtitle\",\"fallback\":\"Stahl, Erzvermehrung, Lagernetze, Rituale.\"}",
+      "tellraw @a {\"translate\":\"kronwerke.goal.stage2.done.chat\",\"fallback\":\"Das Messingwerk läuft. Stufe 3, Stahlwerk, ist offen.\",\"color\":\"gold\"}"
     ],
     "starterKit": [
-      { "item": "create:brass_ingot", "count": 16 },
-      { "item": "create:blaze_burner", "count": 1 },
-      { "item": "ars_nouveau:source_jar", "count": 1 },
-      { "item": "botania:mana_pearl", "count": 8 }
+      { "item": "mekanism:ingot_steel", "count": 32 },
+      { "item": "mekanism:basic_universal_cable", "count": 16 },
+      { "item": "ae2:charged_certus_quartz_crystal", "count": 8 },
+      { "item": "botania:elementium_ingot", "count": 4 }
     ]
   },
   {
@@ -56,15 +61,14 @@
     ],
     "stages": ["kronwerke:stage4"],
     "onComplete": [
-      "title @a title {\"text\":\"Sternwerk\",\"color\":\"gold\"}",
-      "title @a subtitle {\"text\":\"Das End ist offen. Die Sterne, Fusion, das Metall des Drachen.\"}",
-      "say Der Ofen schläft nie. Stufe 4, Sternwerk, ist offen."
+      "title @a title {\"translate\":\"kronwerke.goal.stage3.done.title\",\"fallback\":\"Sternwerk\",\"color\":\"gold\"}",
+      "title @a subtitle {\"translate\":\"kronwerke.goal.stage3.done.subtitle\",\"fallback\":\"Das End ist offen. Die Sterne, Fusion, das Metall des Drachen.\"}",
+      "tellraw @a {\"translate\":\"kronwerke.goal.stage3.done.chat\",\"fallback\":\"Der Ofen schläft nie. Stufe 4, Sternwerk, ist offen.\",\"color\":\"gold\"}"
     ],
     "starterKit": [
-      { "item": "mekanism:ingot_steel", "count": 32 },
-      { "item": "mekanism:basic_universal_cable", "count": 16 },
-      { "item": "ae2:charged_certus_quartz_crystal", "count": 8 },
-      { "item": "botania:elementium_ingot", "count": 4 }
+      { "item": "draconicevolution:draconium_ingot", "count": 16 },
+      { "item": "botania:gaia_spirit", "count": 1 },
+      { "item": "minecraft:ender_pearl", "count": 64 }
     ]
   },
   {
@@ -80,15 +84,11 @@
     ],
     "stages": ["kronwerke:stage5"],
     "onComplete": [
-      "title @a title {\"text\":\"Chaoswerk\",\"color\":\"dark_purple\"}",
-      "title @a subtitle {\"text\":\"Alles ist offen. Der letzte Kampf kommt.\"}",
-      "say Das Licht des Drachen brennt. Stufe 5, Chaoswerk, ist offen."
+      "title @a title {\"translate\":\"kronwerke.goal.stage4.done.title\",\"fallback\":\"Chaoswerk\",\"color\":\"dark_purple\"}",
+      "title @a subtitle {\"translate\":\"kronwerke.goal.stage4.done.subtitle\",\"fallback\":\"Alles ist offen. Der letzte Kampf kommt.\"}",
+      "tellraw @a {\"translate\":\"kronwerke.goal.stage4.done.chat\",\"fallback\":\"Das Licht des Drachen brennt. Stufe 5, Chaoswerk, ist offen.\",\"color\":\"gold\"}"
     ],
-    "starterKit": [
-      { "item": "draconicevolution:draconium_ingot", "count": 16 },
-      { "item": "botania:gaia_spirit", "count": 1 },
-      { "item": "minecraft:ender_pearl", "count": 64 }
-    ]
+    "starterKit": []
   },
   {
     "id": "stage5",
@@ -103,8 +103,8 @@
     ],
     "stages": [],
     "onComplete": [
-      "title @a title {\"text\":\"Die Chaosinsel wartet\",\"color\":\"dark_purple\"}",
-      "say Der Obelisk ist voll. Der Kampf gegen den Chaoswächter steht an. Der Termin kommt in den Ankündigungen."
+      "title @a title {\"translate\":\"kronwerke.goal.stage5.done.title\",\"fallback\":\"Die Chaosinsel wartet\",\"color\":\"dark_purple\"}",
+      "tellraw @a {\"translate\":\"kronwerke.goal.stage5.done.chat\",\"fallback\":\"Der Obelisk ist voll. Der Kampf gegen den Chaoswächter steht an. Der Termin kommt in den Ankündigungen.\",\"color\":\"gold\"}"
     ],
     "starterKit": []
   }

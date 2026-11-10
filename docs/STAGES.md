@@ -145,6 +145,8 @@ Theme: the last machines and the last fight.
 | Magic | Gaia Spirit Ingot | 128 | 25 | Botania endgame at scale. |
 | Magic | Ars Nouveau Wilden Tribute | 64, fixed | 50 | Every one is a Wilden Chimera fight. |
 
+The stage 5 goal opens no stage and hands out no kit on purpose: everything is open by then, and the reward is the fight and the season's final quest.
+
 When the bar hits 98 percent, the final event date is set. The last items go in, the Chaos Island is opened (the obelisk teleports everyone), the Chaos Guardian fight happens live on every stream. Killing it ends the season with a fireworks command and the season's final quest.
 
 ## Tech and magic tied together

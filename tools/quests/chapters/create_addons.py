@@ -160,7 +160,7 @@ quests = [
           description=[
               "Der &6Steuerchip&r entsteht durch sequenzielle Montage wie das Präzisionsgetriebe: ein &6Goldblech&r aufs Band, ein Einsatzgerät setzt eine &6Elektronenröhre&r, eines &6Redstone&r, eine Presse drückt. &eDrei Runden&r, dann ist er fertig.",
               img(item_texture("create_connected:control_chip"), 32, 32),
-              "In 80 Prozent der Fälle kommt ein Chip heraus, sonst Redstone, eine Röhre oder ein Goldblech zurück, selten etwas anderes. Deutlich gnädiger als die 60 Prozent des Präzisionsgetriebes.",
+              "In 80 Prozent der Fälle kommt ein Chip heraus, sonst Redstone, eine Röhre oder ein Goldblech zurück, selten etwas anderes. So gnädig wie das Präzisionsgetriebe.",
               "",
               "Der Chip steckt im Sequenziellen Impulsgeber. Eine bestehende Präzisionslinie baust du mit einem Filterwechsel schnell darauf um.",
           ],

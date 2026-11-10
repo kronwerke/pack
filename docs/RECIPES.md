@@ -29,7 +29,7 @@ The id of each new recipe is `kronwerke:<family>/<name>`. "Remove all" means eve
 | Item | Change | Why |
 | --- | --- | --- |
 | Brass ingot | Remove all. Heated mixing: 2 copper, 1 zinc, 1 blaze powder gives 1 brass. Superheated mixing: 2 copper, 1 zinc gives 2 brass. Crafting from nuggets and blocks stays. | Brass is the stage 2 milestone. The first ingots cost blaze powder; a blaze cake line doubles the output. |
-| Precision mechanism | Remove all. Sequenced assembly on a brass sheet, 5 loops: deploy cogwheel, deploy electron tube, deploy iron nugget, press. 60 percent precision mechanism, the rest brass nuggets and cogwheels as scrap. | Speed controllers, arms and schematicannons should feel earned. |
+| Precision mechanism | Remove all. Sequenced assembly on a brass sheet, 3 loops: deploy cogwheel, deploy electron tube, deploy iron nugget, press. 80 percent precision mechanism, the rest brass nuggets and cogwheels as scrap: about 3.75 electron tubes per mechanism. | Speed controllers, arms and schematicannons should feel earned. |
 | Mechanical crafter | Needs a precision mechanism. | Autocrafting with Create needs the milestone. |
 | Andesite alloy | Crafting stays 1 per craft. Mixing gives 2. | Stage 1 goal item: hand crafting is slow, a mixer line doubles it. |
 
@@ -151,7 +151,7 @@ After a change, on the test server: `/reload`, then read `logs/kubejs/server.log
 python3 tools/check_progression.py kronwerke-dump/recipes.json /path/to/mods kubejs/data/kronwerke/chapters/stages --goals config/kronwerke/goals.json --quests config/ftbquests/quests --report report.md
 ```
 
-Every goal item must show up as reachable in its stage and nowhere in the leak list before it.
+Every goal item must show up as reachable in its stage and nowhere in the leak list before it. The checker holds recipes back the way Core does: by their item result, and for recipes without one (fluids, chemicals) by the ids under the result and output keys of the recipe file, a fluid by its bucket's stage or by `locks.fluids` in `kronwerke-common.toml`. The section "Recipe types whose results machine locks cannot see" lists the types Core can never hold; a locked output there needs a recipe change or an entry in `locks.fluids`.
 
 ## The obelisk intake
 

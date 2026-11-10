@@ -27,8 +27,13 @@ Model
   recipe fires when every input group and machine group has a usable node. Crafting grid
   recipes (CRAFTING) do not fire while their output is locked. Since Kronwerke Core 0.26.0 no
   recipe fires while its main result (the dump's "result") is locked: Core holds those back
-  from every machine. Other outputs of a recipe (byproducts) can still be locked; they are
-  reached (a leak) but stay unusable until they open. --no-machine-locks checks the old model.
+  from every machine. A recipe with no item result (a fluid, a chemical, a result computed
+  from the input) is held as Core does it: by the highest stage among the ids its JSON names
+  under keys with "result" or "output" in them, items by their stage file, fluids by their
+  bucket or by locks.fluids in kronwerke-common.toml. Other outputs of a recipe with an item
+  result (byproducts) can still be locked; they are reached (a leak) but stay unusable until
+  they open. --no-machine-locks checks the old model. Recipe types whose results Core cannot
+  see at all (no item result and no id under those keys) are listed in the report.
 - A tag output (IE, NuclearCraft, Theurgy...) gives one member: from the recipe's own mod if
   possible, then minecraft, then the first id in sorted order.
 - Quest chapters and crates take their stage from tools/quests next to this script.
@@ -375,13 +380,14 @@ class Data:
 
 
 class Recipe:
-    __slots__ = ("id", "type", "ins", "mach", "outs", "grid", "world", "primary")
+    __slots__ = ("id", "type", "ins", "mach", "outs", "grid", "world", "primary", "named")
 
     def __init__(self, rid, rtype, ins=(), mach=(), outs=()):
         self.id, self.type = rid, rtype
         self.ins, self.mach, self.outs = list(ins), list(mach), set(outs)
         self.grid, self.world = is_crafting(rtype), rtype in WORLD_TYPES
         self.primary = None   # the result a machine shows first (the dump's "result"), for machine locks
+        self.named = ()       # without one: the ids the JSON names as results, as Core reads them
 
 
 class Parser:
@@ -628,12 +634,61 @@ def load_locks(sdir):
     return item_lock, mod_lock, dims
 
 
+def json_results(recipe):
+    """The ids a recipe file names as results, the way Core's MachineLocks.stageOfJson reads them."""
+    found = []
+
+    def walk(el):
+        if isinstance(el, str):
+            found.append(el)
+        elif isinstance(el, dict):
+            for key in ("id", "item", "fluid", "chemical", "gas", "infuse_type", "pigment", "slurry"):
+                if isinstance(el.get(key), str):
+                    found.append(el[key])
+            for v in el.values():
+                if isinstance(v, (dict, list)):
+                    walk(v)
+        elif isinstance(el, list):
+            for x in el:
+                walk(x)
+
+    if isinstance(recipe, dict):
+        for k, v in recipe.items():
+            if "result" in k.lower() or "output" in k.lower():
+                walk(v)
+    return tuple(i for i in found if re.match(r"^[a-z0-9_.-]+:[a-z0-9_./-]+$", i))
+
+
+def fluid_locks(item_lock, config):
+    """Core's fluid stages: a fluid whose bucket ns:x_bucket is locked is locked with it, plus locks.fluids."""
+    out = {i[:-len("_bucket")]: n for i, n in item_lock.items() if i.endswith("_bucket")}
+    try:
+        text = open(config, encoding="utf-8").read()
+    except OSError:
+        return out
+    m = re.search(r"^\s*fluids\s*=\s*\[(.*?)\]", text, re.S | re.M)
+    for e in re.findall(r'"([^"]+)"', m.group(1) if m else ""):
+        k, _, v = e.partition("=")
+        if v.strip().isdigit():
+            out[k.strip()] = min(int(v), out.get(k.strip(), 99))
+    return out
+
+
 class Checker:
     def __init__(self, data, recipes, locks):
         self.d, self.recipes = data, recipes
         self.item_lock, self.mod_lock, self.dims = locks
         self.raw_stage = {}
         self.machine_locks = True
+        self.fluid_lock = {}
+
+    def held(self, r, S):
+        """Whether Core holds the recipe back from every machine in stage S."""
+        if not self.machine_locks:
+            return False
+        if r.primary:
+            return self.lock(r.primary) > S
+        return any(self.item_lock.get(i, self.fluid_lock.get(i, 1)) > S for i in r.named)
 
     def lock(self, node):
         if node.startswith((BEE, DIM)):
@@ -696,8 +751,8 @@ class Checker:
         def fire(r):
             if r.grid and any(self.lock(o) > S for o in r.outs):
                 return
-            # Kronwerke Core 0.26.0 holds back every recipe whose result is locked, machines too
-            if self.machine_locks and r.primary and self.lock(r.primary) > S:
+            # Kronwerke Core holds back every recipe whose result is locked, machines too
+            if self.held(r, S):
                 return
             for o in r.outs:
                 if not (r.world and not r.mach and self.lock(o) > S):   # world gen of a locked item
@@ -725,8 +780,8 @@ class Checker:
             miss = [g for g in r.ins + r.mach if not g & usable]
             if r.grid and self.lock(item) > S:
                 miss.append(frozenset([item]))
-            if self.machine_locks and r.primary and self.lock(r.primary) > S:
-                miss.append(frozenset([r.primary]))
+            if self.held(r, S):
+                miss.append(frozenset([r.primary or "(a locked result: %s)" % ", ".join(r.named)]))
             if best is None or len(miss) < len(best[1]):
                 best = (r, miss)
         return best
@@ -791,6 +846,8 @@ def build(a):
         try:
             rec = parser.parse(e["id"], e["json"])
             rec.primary = e.get("result")
+            if not rec.primary:
+                rec.named = json_results(e["json"])
             parsed.append((rec, e["json"]))
         except Exception as ex:  # a report tool: list the recipe and go on
             failures.append("%s: %r" % (e.get("id"), ex))
@@ -849,6 +906,7 @@ def main():
     data, recipes, parser, failures = build(a)
     ck = Checker(data, recipes, load_locks(a.stages))
     ck.machine_locks = not a.no_machine_locks
+    ck.fluid_lock = fluid_locks(ck.item_lock, os.path.join(a.stages, "..", "..", "..", "..", "..", "config", "kronwerke-common.toml"))
     ck.compute_raw()
     results = {S: ck.run(S) for S in STAGES}
     first = {}
@@ -973,7 +1031,14 @@ def main():
                         if not x.startswith(VIRTUAL) and x not in known})
     out += ["## Recipe types without a machine mapping", "", "Types that produce something; counted as needing "
             "nothing.", ""] + ["- %s (%d)" % (t, types[t]) for t in unknown]
-    out += ["", "Not listed but need the item of the same id: " + ", ".join(same_id), "", "## Parse problems", ""]
+    out += ["", "Not listed but need the item of the same id: " + ", ".join(same_id), ""]
+    # Core sees a recipe's result through getResultItem or the result and output keys of its file
+    blind = collections.Counter(r.type for r in recipes if r.outs and not r.primary and not r.named
+                                and r.type.split(":")[0] not in ("implicit", "extra") and not r.world)
+    out += ["## Recipe types whose results machine locks cannot see", "", "No item result and no id under a "
+            "result or output key: Core never holds these back, whatever they make. Check each for locked outputs.", ""]
+    out += ["- %s (%d)" % (t, c) for t, c in blind.most_common()] + ["", "## Parse problems", ""]
+    summary.append("recipe types machine locks cannot see: %d (%d recipes)" % (len(blind), sum(blind.values())))
     out += ["- id in MACHINES or EXTRA_RECIPES not found in any jar: %s" % m for m in bad_ids]
     out += ["- failed: %s" % f for f in failures]
     out += ["- %d recipes of type %s have no output" % (c, t)

@@ -6,7 +6,7 @@
 	#Turn the vanilla whitelist on when the server starts. Invited players are added to it automatically.
 	enforceWhitelist = true
 	#Allow streamers to invite and revoke players themselves with /kw invite and /kw revoke.
-	streamersManageOwnSlots = true
+	streamersManageOwnSlots = false
 
 [goals]
 	#Show the currently active community goal as a boss bar for everyone.

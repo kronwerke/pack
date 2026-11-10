@@ -589,7 +589,7 @@ quests = [
           ["&eRezept auf Kronwerke:&r Oben &6Purpur-Stahl, Schwarzstein, Purpur-Stahl&r. Mitte zwei &6Purpur-Stahl&r. Unten &6Schwarzstein&r, ein &6Messinggehäuse&r von Create, &6Schwarzstein&r.",
            "",
            "Sie macht Purpur-Stahl, Lohengold, Azur-Elektrum und Tyrann-Stahl. Dazu &6Kohlenstoffstahl&r: ein Eisen und drei Kohle, 420 Haltbarkeit und +4 Schaden."],
-          ["crimson_steel"], "silentgear:alloy_forge"),
+          ["crimson_steel"], "minecraft:blast_furnace"),
     later("salvager", 21, 13.5, "&7Bau einen Recycler",
           "Altes Werkzeug zurück in Material.",
           ["Oben ein &6Kolben&r, Mitte &6Purpur-Eisen, Eisenblock, Purpur-Eisen&r, unten &6Purpur-Eisen, Obsidian, Purpur-Eisen&r.",

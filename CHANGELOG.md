@@ -395,3 +395,7 @@ The second pass of the recipe round.
 ## 0.11.49
 
 - Kronwerke Core 0.23.11: the autosave writes chunks a few per tick instead of freezing the server for seconds, light updates only mark chunks as changed when light really changed nearby, Ars Additions no longer marks every watched chunk as changed. New `performance` keys in `kronwerke-common.toml`.
+
+## 0.11.50
+
+- Kronwerke Core 0.23.12: loaded chunks stay unchanged through the light pass, so they are no longer written again on autosave and unload, and the Lootr ticker skip now actually takes effect.

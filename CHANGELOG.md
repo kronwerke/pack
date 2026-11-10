@@ -410,3 +410,7 @@ Incendium, which ran about a tenth of the tick in the 50 player load test:
 ## 0.12.0
 
 - Kronwerke Core 0.24.0: slow PCs no longer time out while joining (two minutes for keep-alives in the first three minutes, two minute read timeout on both sides; the client side needs this pack version), live TPS, tick time and ping in the tab list, and whitelist removals through the bot no longer get stuck on players the server has already forgotten.
+
+## 0.12.1
+
+- Chronik 1.0.0 (server only, our own): logs who placed, broke and changed which block, what was taken from and put into containers, kills, item drops and pickups, chat, commands, joins and leaves. Machines, explosions, Create contraptions and bombs count for the player behind them. `/co i` inspector, `/co l` lookup, `/co rb` and `/co rs` rollback and restore, `/co undo`. The log is `world/chronik.db`.

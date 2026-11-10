@@ -16,8 +16,11 @@ execute in minecraft:the_nether as @e[type=#incendium:mobs_no_player, tag=!in.ch
 execute in minecraft:the_nether as @e[type=#incendium:mobs_no_player,tag=in.ticking_entity,distance=0..] unless score @s in.eid matches 0..32767 run function incendium:technical/entity_id/check
 execute in minecraft:the_nether as @e[type=#incendium:mobs_no_player, tag=in.ticking_entity, distance=0..] at @s run function incendium:entity/mob/main
 
-scoreboard players remove @e[type=#incendium:mobs,scores={in.frozen=1..}] in.frozen 1
-execute at @e[type=#incendium:mobs,scores={in.frozen=1..},predicate=incendium:random/10] run particle minecraft:snowflake ~ ~1.6 ~ 0.1 0.05 0.1 .1 5 force
+# Kronwerke: frozen mobs carry the tag in.kw_frozen (set in item/chilling_blade/on_hit), so these two lines
+# only read the score of tagged mobs instead of building the score name of every mob of every dimension.
+scoreboard players remove @e[type=#incendium:mobs,tag=in.kw_frozen,scores={in.frozen=1..}] in.frozen 1
+execute at @e[type=#incendium:mobs,tag=in.kw_frozen,scores={in.frozen=1..},predicate=incendium:random/10] run particle minecraft:snowflake ~ ~1.6 ~ 0.1 0.05 0.1 .1 5 force
+tag @e[type=#incendium:mobs,tag=in.kw_frozen,scores={in.frozen=..0}] remove in.kw_frozen
 
 # other
 execute as @e[type=#incendium:other, tag=!in.checked] at @s run function incendium:entity/other/init
@@ -27,6 +30,8 @@ execute as @e[type=#incendium:other, tag=in.ticking_entity] at @s run function i
 execute if entity @a[tag=nbs_borderofli] run function incendium:border_of_life/tick
 
 # shield cloud effect clear
-execute if entity @e[scores={in.cd_shield=1..},predicate=incendium:holding/radiation_shield] run effect clear @e[scores={in.cd_shield=1..},predicate=incendium:holding/radiation_shield] poison
+# Kronwerke: only players block with Incendium shields (in.cd_shield is set in their on_block), so @a instead of @e,
+# which read a score for every entity of every dimension four times a tick.
+execute if entity @a[scores={in.cd_shield=1..},predicate=incendium:holding/radiation_shield] run effect clear @a[scores={in.cd_shield=1..},predicate=incendium:holding/radiation_shield] poison
 
-execute if entity @e[scores={in.cd_shield=1..},predicate=incendium:holding/necrotic_shield] run effect clear @e[scores={in.cd_shield=1..},predicate=incendium:holding/necrotic_shield] wither
+execute if entity @a[scores={in.cd_shield=1..},predicate=incendium:holding/necrotic_shield] run effect clear @a[scores={in.cd_shield=1..},predicate=incendium:holding/necrotic_shield] wither

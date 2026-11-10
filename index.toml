@@ -10,7 +10,7 @@ hash = "c90e98869ed32ed8bff68aa5a856f4507ca09025a6152d9df718115637c8e837"
 
 [[files]]
 file = "config/defaultoptions/keybindings.txt"
-hash = "8b2cae6ebaadf4ee8357614fe43b8feb354d0abf2c628ef867212e2a3189e130"
+hash = "ce8c481b348373696e611638c47d5dbc4086a302538ab1e0170cecbb8beee575"
 
 [[files]]
 file = "config/defaultoptions/options.txt"
@@ -82,7 +82,7 @@ hash = "daaeb861551012f75ec2bff5510e37d6db51122f93544c47ca8c72d77a346582"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/botania_runes.snbt"
-hash = "9526e4a6c9347b85c37206c1f8c0d6b000d6a034b8787f7db343a1389f09efc5"
+hash = "a8abdacef124d22e747ae4f02f51474e1fbd3f19cf67bfee6783dab992e80d7c"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/building.snbt"
@@ -298,7 +298,7 @@ hash = "e8d745fed8cc25ffc7278d13c6c18c2bc1fb4342b7fd3aed998429b9f567d711"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/silent_gear.snbt"
-hash = "9065ccebfc00430f4dfaa647b2a238126b3e324c811d541e56121f2ecd12cd09"
+hash = "9453785dd8c1974718d99611333ecaa294c8cec463d9e53a97ad62808baeab32"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/start_here.snbt"
@@ -2989,6 +2989,466 @@ file = "kubejs/data/dungeons_arise/advancement/find_thornborn_towers.json"
 hash = "ee862a3818693d1420555ec6389294f1a17743535c3e3811e2f58e937c671084"
 
 [[files]]
+file = "kubejs/data/dungeons_arise/loot_table/chests/abandoned_temple/abandoned_temple_entrance.json"
+hash = "787a5704544f78267e308214f94cd4690f2f30627b378825b8ae43dcad6d825a"
+
+[[files]]
+file = "kubejs/data/dungeons_arise/loot_table/chests/abandoned_temple/abandoned_temple_map.json"
+hash = "8d9384e9c610858988bb18a5c352ff1b97902e5dae78112e58e74dbaad2da575"
+
+[[files]]
+file = "kubejs/data/dungeons_arise/loot_table/chests/abandoned_temple/abandoned_temple_top.json"
+hash = "6c1af64cde748cb8ef13fe7108758b1178a91cb06170825b9f5676c8926440ee"
+
+[[files]]
+file = "kubejs/data/dungeons_arise/loot_table/chests/aviary/aviary_barrels.json"
+hash = "5898e616641e8618bf7fb101939323f4df45cff871c0d023719548fffa078b29"
+
+[[files]]
+file = "kubejs/data/dungeons_arise/loot_table/chests/aviary/aviary_normal.json"
+hash = "8d72dfb110a3cda084d29ccfb06701a39fe6973e06166017e27066c89490b028"
+
+[[files]]
+file = "kubejs/data/dungeons_arise/loot_table/chests/aviary/aviary_treasure.json"
+hash = "c3c16d12cb45d7b872bc2bffb283e162314e7154ed962361bcc014b2339f1660"
+
+[[files]]
+file = "kubejs/data/dungeons_arise/loot_table/chests/bandit_towers/bandit_towers_barrels.json"
+hash = "d997964e5b568d29a0e982af5965c21deb48bb882dd505cc3432b8cebc157dc7"
+
+[[files]]
+file = "kubejs/data/dungeons_arise/loot_table/chests/bandit_towers/bandit_towers_gardens.json"
+hash = "2e1aa4e8553024d46e7d737206da28350ccf45b6576268990179ba2948fd43ed"
+
+[[files]]
+file = "kubejs/data/dungeons_arise/loot_table/chests/bandit_towers/bandit_towers_normal.json"
+hash = "a2fe58365b8e1eec6d1cc56cc0cd785010b7b0095b3038d5778cf4f6be4fc1ba"
+
+[[files]]
+file = "kubejs/data/dungeons_arise/loot_table/chests/bandit_towers/bandit_towers_rooms.json"
+hash = "1db846264b26e469c7e5815d5ea87e4a3b5338b980927fd73e39f6dcd8a242e4"
+
+[[files]]
+file = "kubejs/data/dungeons_arise/loot_table/chests/bandit_towers/bandit_towers_supply.json"
+hash = "decfa849112ccfc741cbac535fdc68c0e603c3e7ee8d2e88fecb4a164722fe9b"
+
+[[files]]
+file = "kubejs/data/dungeons_arise/loot_table/chests/bandit_towers/bandit_towers_treasure.json"
+hash = "dd037a35b0d9734c9eb3673d56186623abbe76eb0f80fb1255222ef119299bc3"
+
+[[files]]
+file = "kubejs/data/dungeons_arise/loot_table/chests/bandit_village/bandit_village_barrels.json"
+hash = "9dcf90fc58c7ded1c672f47bfbe2e8b638396e7af5eb92915931c186352e60de"
+
+[[files]]
+file = "kubejs/data/dungeons_arise/loot_table/chests/bandit_village/bandit_village_normal.json"
+hash = "9dcf90fc58c7ded1c672f47bfbe2e8b638396e7af5eb92915931c186352e60de"
+
+[[files]]
+file = "kubejs/data/dungeons_arise/loot_table/chests/bandit_village/bandit_village_supply.json"
+hash = "decfa849112ccfc741cbac535fdc68c0e603c3e7ee8d2e88fecb4a164722fe9b"
+
+[[files]]
+file = "kubejs/data/dungeons_arise/loot_table/chests/bandit_village/bandit_village_tents.json"
+hash = "9dcf90fc58c7ded1c672f47bfbe2e8b638396e7af5eb92915931c186352e60de"
+
+[[files]]
+file = "kubejs/data/dungeons_arise/loot_table/chests/bathhouse/bathhouse_normal.json"
+hash = "d53bbf0704fcfa527a385a768587bd1a7efd8271df403f672a8dadfe626251fd"
+
+[[files]]
+file = "kubejs/data/dungeons_arise/loot_table/chests/ceryneian_hind/ceryneian_hind_treasure.json"
+hash = "27d5ab4282fa50bd25d6a1332f2c7441760aac801bbfdcd86d5534125bbef9cc"
+
+[[files]]
+file = "kubejs/data/dungeons_arise/loot_table/chests/foundry/foundry_chains.json"
+hash = "2dc5667c103b73a013d3f39a158cb0c16fe848469d758ea2d22f4769d6a900d1"
+
+[[files]]
+file = "kubejs/data/dungeons_arise/loot_table/chests/foundry/foundry_normal.json"
+hash = "130c4818eb5cb8d8f846ee58544a0a2511d5b10619d640c9a5e1981cf8f8fb56"
+
+[[files]]
+file = "kubejs/data/dungeons_arise/loot_table/chests/foundry/foundry_passage_exterior.json"
+hash = "429a136dfaffbfd8504065b7ff5215c37d534b77561413eb174acd22d0ae6021"
+
+[[files]]
+file = "kubejs/data/dungeons_arise/loot_table/chests/foundry/foundry_passage_normal.json"
+hash = "3983ec5c1be9836061ead2becb46f753f9b27d22029993d4a89ddd03e715bc3f"
+
+[[files]]
+file = "kubejs/data/dungeons_arise/loot_table/chests/foundry/foundry_treasure.json"
+hash = "8367132ad31d6536ae8eba8614f4abab40362db9a2141fff23c1ed2a2a9f1c98"
+
+[[files]]
+file = "kubejs/data/dungeons_arise/loot_table/chests/greenwood_pub/greenwood_pub_barrels_hallways.json"
+hash = "4337c2fad0fa513739ce2a5cd3db0688e3cce3c4fa196f1b2dc0d23f77a9cace"
+
+[[files]]
+file = "kubejs/data/dungeons_arise/loot_table/chests/greenwood_pub/greenwood_pub_normal.json"
+hash = "fdb74be1b9de24439415b443ce75b31164a05ada1df10b688cade69dfd8acb3a"
+
+[[files]]
+file = "kubejs/data/dungeons_arise/loot_table/chests/heavenly_challenger/heavenly_challenger_normal.json"
+hash = "8d72dfb110a3cda084d29ccfb06701a39fe6973e06166017e27066c89490b028"
+
+[[files]]
+file = "kubejs/data/dungeons_arise/loot_table/chests/heavenly_challenger/heavenly_challenger_supply.json"
+hash = "7efd217308c74347a714b4f8f33ec95e2c336af61ea714de4f936097e594a782"
+
+[[files]]
+file = "kubejs/data/dungeons_arise/loot_table/chests/heavenly_challenger/heavenly_challenger_theater.json"
+hash = "a00a696e87fdfb064210448cc1db96e8b744f2a2ebe4b1c226cf8b00a78657db"
+
+[[files]]
+file = "kubejs/data/dungeons_arise/loot_table/chests/heavenly_challenger/heavenly_challenger_treasure.json"
+hash = "85e4347b06d7a05320986a3feb1d73eb7f13aa7b01a8aab1048f7280e615dbde"
+
+[[files]]
+file = "kubejs/data/dungeons_arise/loot_table/chests/heavenly_conqueror/heavenly_conqueror_barrels.json"
+hash = "350444695d69b314d02bf16d0ca04f3476959c01481ab78cb69cf089424aff62"
+
+[[files]]
+file = "kubejs/data/dungeons_arise/loot_table/chests/heavenly_conqueror/heavenly_conqueror_normal.json"
+hash = "1194694aec1c8f1ad3aec29ef2c3b68c78b9bf6434a95004c0263c8b74568c0b"
+
+[[files]]
+file = "kubejs/data/dungeons_arise/loot_table/chests/heavenly_conqueror/heavenly_conqueror_treasure.json"
+hash = "c8ba8ec438f58dd603e1a7897f89a9d3f469e11e025ed4b2e057d6767c7718a4"
+
+[[files]]
+file = "kubejs/data/dungeons_arise/loot_table/chests/heavenly_rider/heavenly_rider_barrels.json"
+hash = "350444695d69b314d02bf16d0ca04f3476959c01481ab78cb69cf089424aff62"
+
+[[files]]
+file = "kubejs/data/dungeons_arise/loot_table/chests/heavenly_rider/heavenly_rider_normal.json"
+hash = "350444695d69b314d02bf16d0ca04f3476959c01481ab78cb69cf089424aff62"
+
+[[files]]
+file = "kubejs/data/dungeons_arise/loot_table/chests/heavenly_rider/heavenly_rider_treasure.json"
+hash = "808aa330818740bc9b648439c8a96715c5945dc0600828243df383905f53852d"
+
+[[files]]
+file = "kubejs/data/dungeons_arise/loot_table/chests/illager_campsite/illager_campsite_map.json"
+hash = "4784f1782ef1d8790369b023de256e4b9f1c1fdabe29570f3b76c955b0070c2c"
+
+[[files]]
+file = "kubejs/data/dungeons_arise/loot_table/chests/illager_corsair/illager_corsair_treasure.json"
+hash = "673f0f11033c820adee9b5dfe38ab5698d28976fcb6baecee556517c7c1ef0fe"
+
+[[files]]
+file = "kubejs/data/dungeons_arise/loot_table/chests/illager_fort/illager_fort_barrels.json"
+hash = "0307d4d66df8875b4ad3585c95e3aad9a685bf4e6a6b6f3435b0239eb4bbfe7f"
+
+[[files]]
+file = "kubejs/data/dungeons_arise/loot_table/chests/illager_fort/illager_fort_normal.json"
+hash = "8abc73c3844dc4c879e49faaef3694cf5eb88e51aff232ea0bd8bf8d1e53e864"
+
+[[files]]
+file = "kubejs/data/dungeons_arise/loot_table/chests/illager_fort/illager_fort_treasure.json"
+hash = "88380f987e13cbd5b11bb4e9ee6d112f9e4ceb09fdd36104dde8aa53958aacf2"
+
+[[files]]
+file = "kubejs/data/dungeons_arise/loot_table/chests/illager_galley/illager_galley_treasure.json"
+hash = "673f0f11033c820adee9b5dfe38ab5698d28976fcb6baecee556517c7c1ef0fe"
+
+[[files]]
+file = "kubejs/data/dungeons_arise/loot_table/chests/illager_windmill/illager_windmill_barrels.json"
+hash = "72fcc3a480492e7e28d24250995ad216bf59a46bffcbb6ae21215fa1c5b9b62f"
+
+[[files]]
+file = "kubejs/data/dungeons_arise/loot_table/chests/illager_windmill/illager_windmill_treasure.json"
+hash = "f3c1ac4c5193865d3cbc295d858c3d06536a076adb3090006172575275fe002e"
+
+[[files]]
+file = "kubejs/data/dungeons_arise/loot_table/chests/infested_temple/infested_temple_room_normal.json"
+hash = "7d502843ee1a91641246adfac661e94643029e162a0f7010cab7c741ea151370"
+
+[[files]]
+file = "kubejs/data/dungeons_arise/loot_table/chests/infested_temple/infested_temple_room_supply.json"
+hash = "489a0f3dfc05e025f6c3615f205a8aa7034f2bbf9011ddec5956300d92cdef96"
+
+[[files]]
+file = "kubejs/data/dungeons_arise/loot_table/chests/infested_temple/infested_temple_vault_normal.json"
+hash = "795baad143e9183459b03b8c10e2eee53e9ca5e7b568ba1ee9b840dda01929ca"
+
+[[files]]
+file = "kubejs/data/dungeons_arise/loot_table/chests/infested_temple/infested_temple_vault_ominous.json"
+hash = "c7aaf270b7158452cda71bdceee82ee6f2c47373268aa3305b44ee5693c03e6d"
+
+[[files]]
+file = "kubejs/data/dungeons_arise/loot_table/chests/infested_temple/infested_temple_vault_treasure.json"
+hash = "ad9ef728e1bc96088ea939b9dee358a203327f55d101a7be47d5aa420e3d2ab6"
+
+[[files]]
+file = "kubejs/data/dungeons_arise/loot_table/chests/jungle_tree_house/jungle_tree_house_treasure.json"
+hash = "4cb7725c529ab5c18fc906eef8350c6cb49317d6df6befbfe727a2e3c50f622e"
+
+[[files]]
+file = "kubejs/data/dungeons_arise/loot_table/chests/keep_kayra/keep_kayra_garden_normal.json"
+hash = "cfe051a59b5aa54d5e570745f56c39fc89f5ac3eae67a3c1c8be6b1bfbfcb888"
+
+[[files]]
+file = "kubejs/data/dungeons_arise/loot_table/chests/keep_kayra/keep_kayra_garden_treasure.json"
+hash = "89293c4f28e19cae39f0af937abdfcb0895e40e6554e9af5494496dcbec33c60"
+
+[[files]]
+file = "kubejs/data/dungeons_arise/loot_table/chests/keep_kayra/keep_kayra_library_normal.json"
+hash = "43b46b77d04017a28ae481e2b11d7208d61d6448e909111bb23b1c0839547baa"
+
+[[files]]
+file = "kubejs/data/dungeons_arise/loot_table/chests/keep_kayra/keep_kayra_library_treasure.json"
+hash = "a29a43620040ba8393ff3d428bb0ef6270e2f56e56b72066b999ee565f16db5c"
+
+[[files]]
+file = "kubejs/data/dungeons_arise/loot_table/chests/keep_kayra/keep_kayra_normal.json"
+hash = "2aaeb74f6d04df5df651bb90d71cf23ae91245cfcc6bfe978104d4922d11b3e5"
+
+[[files]]
+file = "kubejs/data/dungeons_arise/loot_table/chests/keep_kayra/keep_kayra_treasure.json"
+hash = "49489c7c44a5a50c0aaeae4d356f42dbac0c03a4e07ab7d02694919dcf2d55d2"
+
+[[files]]
+file = "kubejs/data/dungeons_arise/loot_table/chests/kisegi_sanctuary/kisegi_sanctuary_basement.json"
+hash = "779a16a8cfceeceffc03b92ff5b270991bc1e6f194076be4fb6f76fb908b237d"
+
+[[files]]
+file = "kubejs/data/dungeons_arise/loot_table/chests/kisegi_sanctuary/kisegi_sanctuary_normal.json"
+hash = "0f32a46eb18e5911a6a5d13e6df30226315c3301bcdb4ccab2470b6db320fb65"
+
+[[files]]
+file = "kubejs/data/dungeons_arise/loot_table/chests/kisegi_sanctuary/kisegi_sanctuary_top.json"
+hash = "feee27dcf8c7888934f94dd1a780efc7e8110e5e3323da479f4bceddbbe2b5e5"
+
+[[files]]
+file = "kubejs/data/dungeons_arise/loot_table/chests/kisegi_sanctuary/kisegi_sanctuary_treasure.json"
+hash = "342005ba8e0fc9c6e08877b907edfab2a5a88cea81ef952999d4d71b57b0d502"
+
+[[files]]
+file = "kubejs/data/dungeons_arise/loot_table/chests/kisegi_sanctuary/kisegi_sanctuary_vault_normal.json"
+hash = "eaef6b1194a8a7dd66dc6134794a8ada94db1ce095a788d6ef9cd651aa207c3a"
+
+[[files]]
+file = "kubejs/data/dungeons_arise/loot_table/chests/kisegi_sanctuary/kisegi_sanctuary_vault_normal_treasure.json"
+hash = "34df80768012b6e03aae5e4244afad24c7bffe5c502c7d33249f52af945b4851"
+
+[[files]]
+file = "kubejs/data/dungeons_arise/loot_table/chests/kisegi_sanctuary/kisegi_sanctuary_vault_ominous.json"
+hash = "8b978590858624fe95bcab81725dcbb0ee6e776fc61ecf2f615877051f12c91b"
+
+[[files]]
+file = "kubejs/data/dungeons_arise/loot_table/chests/kisegi_sanctuary/kisegi_sanctuary_vault_ominous_treasure.json"
+hash = "93fa5fb1447ed8470f42ad43a6dd8f61c55fb401200094c412dcbcf271fc8179"
+
+[[files]]
+file = "kubejs/data/dungeons_arise/loot_table/chests/lighthouse/lighthouse_top.json"
+hash = "f78698e4af6c04345c51027cdaad48e3700d27ae1e2a814feef4ff9b4fb7dd2b"
+
+[[files]]
+file = "kubejs/data/dungeons_arise/loot_table/chests/mechanical_nest/mechanical_nest_equipment.json"
+hash = "fa6d12d79f930758b42bce57c7e5f9a3574b7a287c2d5baac32588564aed8f15"
+
+[[files]]
+file = "kubejs/data/dungeons_arise/loot_table/chests/mechanical_nest/mechanical_nest_normal.json"
+hash = "c1dec283b6068c675844cd2ca47af6a10854eb7a88412915c08b3501326f8c84"
+
+[[files]]
+file = "kubejs/data/dungeons_arise/loot_table/chests/mechanical_nest/mechanical_nest_supply.json"
+hash = "e1e80632443493dd3d663fb5223de2e199911b1d1930dd5799401608f9f8b1b6"
+
+[[files]]
+file = "kubejs/data/dungeons_arise/loot_table/chests/mechanical_nest/mechanical_nest_treasure.json"
+hash = "d0cd8a6bf3a14c8b0328d5d4eb1747b1a102da33aed40849be2457b0d9a96018"
+
+[[files]]
+file = "kubejs/data/dungeons_arise/loot_table/chests/merchant_campsite/merchant_campsite_map.json"
+hash = "778267251743a84d52759d742c4bbdda387720766f628337c7861d5d58bf4924"
+
+[[files]]
+file = "kubejs/data/dungeons_arise/loot_table/chests/merchant_campsite/merchant_campsite_tent.json"
+hash = "ee3a00610cfb10ef10a603e9f949c5b7356491592676a5aae7242cd0c60f31ae"
+
+[[files]]
+file = "kubejs/data/dungeons_arise/loot_table/chests/mines_treasure_big.json"
+hash = "3840adfcf17e49979cb3ad73d4736a6778f53ece64ffe5a526677e368a323253"
+
+[[files]]
+file = "kubejs/data/dungeons_arise/loot_table/chests/mines_treasure_medium.json"
+hash = "399ad5a3f70b7278c14decaebee765d82ce396f8582bf13e0496b1783ce15e7e"
+
+[[files]]
+file = "kubejs/data/dungeons_arise/loot_table/chests/mines_treasure_small.json"
+hash = "1a72ec16c7b4fe1cc13d3a7b4403f4640f6cf7f673ebc3eb986ff03ef3f2cea5"
+
+[[files]]
+file = "kubejs/data/dungeons_arise/loot_table/chests/mining_complex/mining_complex_barrel.json"
+hash = "71fa63afe32bde2effdd23411361b07a311d5da90d744b0b62d580b930de7406"
+
+[[files]]
+file = "kubejs/data/dungeons_arise/loot_table/chests/mining_complex/mining_complex_dripstone_normal.json"
+hash = "f85a5c9285348622518f8c05bd0692adf42186bbf68b3eb25efce9a549890997"
+
+[[files]]
+file = "kubejs/data/dungeons_arise/loot_table/chests/mining_complex/mining_complex_facility_normal.json"
+hash = "ddf10c3cc0f3ea3033b26110296224cb3669fde5721c81041011934b82fc002e"
+
+[[files]]
+file = "kubejs/data/dungeons_arise/loot_table/chests/mining_complex/mining_complex_lush_normal.json"
+hash = "147f65e5ac20028810cc17b2211ca0f51e2e6b2bb398350b1332c4e2c53b6cb1"
+
+[[files]]
+file = "kubejs/data/dungeons_arise/loot_table/chests/mining_complex/mining_complex_treasure.json"
+hash = "31d6bf697bd3c7ce3af979ff8d931dc8e671619f2412c30dfd2139d47aa6ac95"
+
+[[files]]
+file = "kubejs/data/dungeons_arise/loot_table/chests/mining_system/mining_system_barrels.json"
+hash = "d8ed7750511cb50006edcfa8b7df05b26a2c801d1c0fc245cbbbafda6f0535fe"
+
+[[files]]
+file = "kubejs/data/dungeons_arise/loot_table/chests/mining_system/mining_system_treasure.json"
+hash = "3840adfcf17e49979cb3ad73d4736a6778f53ece64ffe5a526677e368a323253"
+
+[[files]]
+file = "kubejs/data/dungeons_arise/loot_table/chests/monastery/monastery_bridges.json"
+hash = "c8dcda22b5d3e7466951d811264d1ba3369574646fa754f6c78567f17815e944"
+
+[[files]]
+file = "kubejs/data/dungeons_arise/loot_table/chests/mushroom_house/mushroom_house_barrels.json"
+hash = "c8dcda22b5d3e7466951d811264d1ba3369574646fa754f6c78567f17815e944"
+
+[[files]]
+file = "kubejs/data/dungeons_arise/loot_table/chests/mushroom_house/mushroom_house_normal.json"
+hash = "7433f17af3803e6f7821e5b7712acf4b69765c171a0602cc6507e97b910fb222"
+
+[[files]]
+file = "kubejs/data/dungeons_arise/loot_table/chests/mushroom_house/mushroom_house_treasure.json"
+hash = "a88a74f02409f80eff043648deed8170c79d7a4772f111fa6ea1732861fe4b19"
+
+[[files]]
+file = "kubejs/data/dungeons_arise/loot_table/chests/mushroom_mines/mushroom_mines_barrels.json"
+hash = "399ad5a3f70b7278c14decaebee765d82ce396f8582bf13e0496b1783ce15e7e"
+
+[[files]]
+file = "kubejs/data/dungeons_arise/loot_table/chests/mushroom_mines/mushroom_mines_ores.json"
+hash = "1a72ec16c7b4fe1cc13d3a7b4403f4640f6cf7f673ebc3eb986ff03ef3f2cea5"
+
+[[files]]
+file = "kubejs/data/dungeons_arise/loot_table/chests/mushroom_mines/mushroom_mines_tools.json"
+hash = "1a72ec16c7b4fe1cc13d3a7b4403f4640f6cf7f673ebc3eb986ff03ef3f2cea5"
+
+[[files]]
+file = "kubejs/data/dungeons_arise/loot_table/chests/mushroom_mines/mushroom_mines_treasure.json"
+hash = "3840adfcf17e49979cb3ad73d4736a6778f53ece64ffe5a526677e368a323253"
+
+[[files]]
+file = "kubejs/data/dungeons_arise/loot_table/chests/mushroom_village/mushroom_village_barrels.json"
+hash = "b463ca293c14c285dd178c4a32bbe5d7ec5d613c6cd70fe4b413fd200ac10205"
+
+[[files]]
+file = "kubejs/data/dungeons_arise/loot_table/chests/mushroom_village/mushroom_village_treasure.json"
+hash = "aae0881d3c642f11ad84510e2200ac9045f794f5a1f4327a75b432598aa68b4f"
+
+[[files]]
+file = "kubejs/data/dungeons_arise/loot_table/chests/plague_asylum/plague_asylum_barrels.json"
+hash = "50de27afcf608bd5b612b2f7af3f3371114ba813cf6f4cefcf8e71433e73aa79"
+
+[[files]]
+file = "kubejs/data/dungeons_arise/loot_table/chests/plague_asylum/plague_asylum_cells.json"
+hash = "fc71ac25fb03cf3e1797db028ad9cc40f332e7a8451f640de4e59b570b5005ea"
+
+[[files]]
+file = "kubejs/data/dungeons_arise/loot_table/chests/plague_asylum/plague_asylum_normal.json"
+hash = "72c3054463dc5496867d615ddbfb5c442b8916d2db6bf38bb8b5dc388d5b7c04"
+
+[[files]]
+file = "kubejs/data/dungeons_arise/loot_table/chests/plague_asylum/plague_asylum_potions.json"
+hash = "45e458ca5fcea25359473a2a322281b753f3e024bde33583137106c871a4a4e4"
+
+[[files]]
+file = "kubejs/data/dungeons_arise/loot_table/chests/plague_asylum/plague_asylum_treasure.json"
+hash = "4692cb3bcbf82ea0c08dcd71027a81d7ca15f2930f92fcc34cac9089751fed36"
+
+[[files]]
+file = "kubejs/data/dungeons_arise/loot_table/chests/scorched_mines/scorched_mines_barrels.json"
+hash = "cd94984c8c4d5d97409ec01c3af041be11ee9f2b72b7061d8a588366d1d754ff"
+
+[[files]]
+file = "kubejs/data/dungeons_arise/loot_table/chests/scorched_mines/scorched_mines_housing.json"
+hash = "cd94984c8c4d5d97409ec01c3af041be11ee9f2b72b7061d8a588366d1d754ff"
+
+[[files]]
+file = "kubejs/data/dungeons_arise/loot_table/chests/scorched_mines/scorched_mines_hub.json"
+hash = "c3f7d68152bbb4718b9249cb8614ff9e41d56afec910f59ffeb0c1cebb19805b"
+
+[[files]]
+file = "kubejs/data/dungeons_arise/loot_table/chests/scorched_mines/scorched_mines_normal.json"
+hash = "cd94984c8c4d5d97409ec01c3af041be11ee9f2b72b7061d8a588366d1d754ff"
+
+[[files]]
+file = "kubejs/data/dungeons_arise/loot_table/chests/scorched_mines/scorched_mines_treasure.json"
+hash = "6d8d3ff0b93bdd47e216c10ef1eb0107374221144ea0823a42468d1e4634af69"
+
+[[files]]
+file = "kubejs/data/dungeons_arise/loot_table/chests/shiraz_palace/shiraz_palace_elite.json"
+hash = "0f42065fe2c40567193a9ecfb8e0c7514ba6d3bfb21184088a883466dcdb708f"
+
+[[files]]
+file = "kubejs/data/dungeons_arise/loot_table/chests/shiraz_palace/shiraz_palace_gardens.json"
+hash = "10a43b7d1866e22a68c75c4c9fe09d3d24b0a413cc484689ed6c8ad8f1bed5e2"
+
+[[files]]
+file = "kubejs/data/dungeons_arise/loot_table/chests/shiraz_palace/shiraz_palace_library.json"
+hash = "1b8ef5d000e9fffd63dedf16b87301dc0d42c3b6c5ece041b4c29af77568e564"
+
+[[files]]
+file = "kubejs/data/dungeons_arise/loot_table/chests/shiraz_palace/shiraz_palace_normal.json"
+hash = "68fcb13e43eefac2916bb22315143f073073815a08d5d0ec4c6b8f0bfa7e8599"
+
+[[files]]
+file = "kubejs/data/dungeons_arise/loot_table/chests/shiraz_palace/shiraz_palace_rooms.json"
+hash = "7b8d4a0793ad5d6c949d85ffefb88e48e949247daf1a77503de6bd4c4ffd5ca5"
+
+[[files]]
+file = "kubejs/data/dungeons_arise/loot_table/chests/shiraz_palace/shiraz_palace_supply.json"
+hash = "98651dfbe246e53586d8e3dfabdc07b3fcf41e96b21d8502bc408a1e3255896b"
+
+[[files]]
+file = "kubejs/data/dungeons_arise/loot_table/chests/shiraz_palace/shiraz_palace_towers.json"
+hash = "3fe0ca828d9156921ab3864808c80ce26ad753420547f019b4bd9dd7c5a00bd1"
+
+[[files]]
+file = "kubejs/data/dungeons_arise/loot_table/chests/shiraz_palace/shiraz_palace_treasure.json"
+hash = "f5d14e79aa10546da5d922ad3ac57aac1e709182cc13909c684ccabf7f0b8920"
+
+[[files]]
+file = "kubejs/data/dungeons_arise/loot_table/chests/small_blimp/small_blimp_treasure.json"
+hash = "3d2fb5228eeca3a5b53a0f9bf3eb6c6c09817063619c98f5eefe5c7d9d014689"
+
+[[files]]
+file = "kubejs/data/dungeons_arise/loot_table/chests/thornborn_towers/thornborn_towers_barrels.json"
+hash = "9f0fe6e268a548d324adae0460b429195c4738322d6f2291a3cb5a9ceed98b59"
+
+[[files]]
+file = "kubejs/data/dungeons_arise/loot_table/chests/thornborn_towers/thornborn_towers_rooms.json"
+hash = "af12a72d8858a64c6b9adc385b57d0ed410a50ca8a978f9b35af1e68f7668de6"
+
+[[files]]
+file = "kubejs/data/dungeons_arise/loot_table/chests/thornborn_towers/thornborn_towers_top_rooms.json"
+hash = "c8f1ec65a9bba09a66492490991940480f9129fc442f89ac45f1c35ab2a00389"
+
+[[files]]
+file = "kubejs/data/dungeons_arise/loot_table/chests/thornborn_towers/thornborn_towers_top_treasure.json"
+hash = "16af0e2645ceff2a91d903b2264df6d2488b73db80cbf10cb21e61aec6d35851"
+
+[[files]]
+file = "kubejs/data/dungeons_arise/loot_table/chests/typhon/typhon_treasure.json"
+hash = "7e48a9191599d37bab40c7ce96573cab424b9236a02c5c086f8fd9fb10c16e60"
+
+[[files]]
+file = "kubejs/data/dungeons_arise/loot_table/chests/undead_pirate_ship/undead_pirate_ship_treasure.json"
+hash = "7e48a9191599d37bab40c7ce96573cab424b9236a02c5c086f8fd9fb10c16e60"
+
+[[files]]
 file = "kubejs/data/eidolon_repraised/affixes/ability/tracking.json"
 hash = "45dbe2c8b3f09698a1db529dd261c15ba80bef85e31ad837fce84c20222d992a"
 
@@ -4166,7 +4626,7 @@ hash = "8817c4abd48313f3a7da1e8abba5f7833f30624fe865b55f27f42860d70f609c"
 
 [[files]]
 file = "kubejs/data/kronwerke/loot_table/inject/rare.json"
-hash = "49a12245c65299052fd044c13ba3b13702a660b94bd838db6dfbeda7c3fccbbb"
+hash = "94889de58e54bbb58464908353639dffffd951c14d798bc4e83b577faad71253"
 
 [[files]]
 file = "kubejs/data/kronwerke/market_presets/productivetrees_saplings_1.json"
@@ -7275,7 +7735,7 @@ metafile = true
 
 [[files]]
 file = "mods/kronwerke-core.pw.toml"
-hash = "bc5f54144a99539ffb9335dcd42a3b09778beb54911c9557e64d0946c527bc22"
+hash = "6666a5f7976b8258de3697c5f2ef9086f729eb8c874d9679f6bce051f3d3eee7"
 metafile = true
 
 [[files]]

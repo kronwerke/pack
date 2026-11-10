@@ -1,6 +1,6 @@
 # Keys
 
-About 200 mods register keys, and many of their defaults collide: V was the voice chat menu, the first origin skill, the Ars Nouveau spell wheel, the Iron's Spells cast key and three Cataclysm armour abilities at once. Kronwerke ships `config/defaultoptions/keybindings.txt`, which Default Options applies on first start. A key a player already changed is left alone.
+About 200 mods register 460 keys, and many of their defaults collide: V was the voice chat menu, the first origin skill, the Ars Nouveau spell wheel, the Iron's Spells cast key and three Cataclysm armour abilities at once. Kronwerke ships `config/defaultoptions/keybindings.txt` with every key, written by `tools/keys/layout.py`, which refuses to write while two keys that can act at the same time share a key. Default Options applies it on an instance's first start; for instances started before, Kronwerke Core (0.25.0 on) moves every key that still sits on its mod default to the pack's, once per layout version. A key a player chose is left alone.
 
 ## The keys that matter
 
@@ -25,6 +25,11 @@ About 200 mods register keys, and many of their defaults collide: V was the voic
 | Voice chat | Alt+V | Voice chat menu |
 | Voice chat | Shift+G | Groups |
 | Ponder | W (held) | Create ponder scenes |
+| Zoom | Mouse 4 (held) | Zume zoom, scroll for more or less |
+| Accessories | I | Accessory slots of Accessories and the Aether |
+| Mekanism | N | Tool mode |
+| Mekanism | Alt+1 to Alt+4, Alt+0 | MekaSuit head, chest, legs, feet mode; HUD |
+| JourneyMap | J | Full map |
 
 ## What Kronwerke moved, and why
 
@@ -58,9 +63,23 @@ About 200 mods register keys, and many of their defaults collide: V was the voic
 | Mahou Tsukai circle, displacement, gun | M, H, arrows | Ctrl+M, Shift+H, Alt+arrows | Map, class skill, Ultimine shape |
 | Iris reload, toggle, pack menu | R, K, O | F6, Alt+K, Alt+O | Shader keys pressed by accident |
 | KubeJS Kubedex, Toast Control clear | K, J | unbound | Developer and cosmetic keys |
+| Zume zoom (added in 0.12.2) | Z | Mouse 4 | Z is the first origin skill |
+| Zume zoom in, out | =, - | unbound | Scroll while zoomed |
+| MekaSuit modes, HUD | V, G, J, B, H | Alt+1 to Alt+4, Alt+0 | Ars wheel, Curios, map, backpack, class skill |
+| Mekanism module tweaker | \\ | Alt+\\ | RFTools and JourneyMap |
+| JourneyMap waypoint, minimap keys | B, N, G, [, \\, Ctrl+J | Shift+B, rest unbound | All of it is in the map; FTB Chunks has the claims |
+| FTB Chunks minimap zoom | =, - | unbound | JourneyMap's minimap zooms with them |
+| Accessories screen | H | I | Class skill; the Aether's own I key opened the same screen and is unbound |
+| Iron Jetpacks on, hover | G, H | Shift+J, Shift+K | Curios, class skill |
+| Building Gadgets settings, anchor, range, undo | G, H, R, U | Alt+B, Ctrl+A, Shift+R, Shift+U | Only while a gadget is in hand, but the plain keys acted too |
+| Just Dire Things tool toggle | V | Shift+T | Ars wheel |
+| Immersive Engineering magnet | S | Ctrl+S | Walking backwards |
+| Supplementaries quiver | V | Alt+Q | Ars wheel |
+| Ars Elemental pouch | J | Shift+P | Map |
+| EvilCraft fart, exalted crafting, RFTools unmount | P, C, \\ | unbound | Social screen, origin skill, accidental |
 
 Keys that still share a letter on purpose: Space, Shift and Ctrl for the Hexerei broom and the PneumaticCraft jet boots (they only act while flying), and the middle mouse button: in the world it pings, in inventories it sorts, and Sophisticated Storage, Immersive Engineering and ExtendedAE also use it in some of their screens.
 
 ## Changing it
 
-Edit `config/defaultoptions/keybindings.txt`. One line per mapping: `key_<mapping>:key.keyboard.<key>:<NONE|CONTROL|SHIFT|ALT>`. Default Options only sets a key that is still on its mod default, so players who already changed a key keep their own.
+Edit `LAYOUT` in `tools/keys/layout.py` and run it with a key dump (a client with Kronwerke Core started with `-Dkronwerke.dumpKeys=<file>` writes one and quits) and Core's `src/main/resources/assets/kronwerke/keys.tsv` as the second argument; it writes `config/defaultoptions/keybindings.txt` and Core's list. Raise `VERSION` in the script, so Core applies the change once more to keys still on a mod default.

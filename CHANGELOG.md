@@ -423,3 +423,10 @@ Incendium, which ran about a tenth of the tick in the 50 player load test:
 ## 0.12.3
 
 - Kronwerke Core 0.24.2: thousands of TNT no longer hang the server (explosions get a time budget per tick and cast half the rays), the portal to the mining world no longer breaks with "Network Protocol Error" (Create Ore Excavation's map save on the transfer), the language question comes once the world is loaded, the items on the obelisk pedestals turn smoothly, and the Nautical Ranks pack is always on, also in instances started before.
+
+## 0.12.4
+
+- Kronwerke Core 0.25.0: big TNT blasts run much faster, crowded animal pens cost less, Malum no longer loads chunks on the server thread, the bus to the launcher writes on its own thread, and the key layout below reaches instances that started before.
+- Every key in the layout (`tools/keys/layout.py`, `config/defaultoptions/keybindings.txt`, `docs/KEYS.md`): the layout of 0.11.30 stays, and the about 30 keys it did not cover and that still clashed got their own: Zume zoom on mouse 4, the MekaSuit modes on Alt+1 to Alt+4, the Accessories screen on I, Iron Jetpacks on Shift+J and Shift+K, the gadget keys off the plain letters, JourneyMap's extra keys unbound. No two keys that can act at the same time share a key any more. Core 0.25.0 brings it to instances that started before; keys a player set stay.
+- Dungeons Arise chests are toned down (`tools/loot/arise.py`, 115 tables): half the ingots, gems, their blocks, netherite scrap, experience bottles and golden apples, at most one netherite ingot, half as often diamond and netherite gear and enchanted golden apples. A bandit tower gave stacks of iron and up to 16 diamonds.
+- The rare chest pool no longer has precision mechanisms and Mekanism control circuits; they skipped the stage that makes them.

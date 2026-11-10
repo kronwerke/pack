@@ -145,10 +145,10 @@ Draconium ore only generates in the End: the overworld and Nether ore features a
 
 ## Checking
 
-After a change, on the test server: `/reload`, then read `logs/kubejs/server.log` for errors from the file, then run the progression checker on the fresh dump:
+After a change, on the test server: `/reload`, then read `logs/kubejs/server.log` for errors from the file. Dump the recipes with `/kw admin dumprecipes` (Kronwerke Core 0.26.0 on; with `/kw admin locks off` first, so the held back recipes of later stages are in the dump too; it writes `kronwerke-dump/recipes.json` with each recipe's main result), then run the progression checker on it:
 
 ```
-python3 tools/check_progression.py /path/to/kubejs/exported/kw_recipes.json /path/to/mods kubejs/data/kronwerke/chapters/stages --goals config/kronwerke/goals.json --quests config/ftbquests/quests --report report.md
+python3 tools/check_progression.py kronwerke-dump/recipes.json /path/to/mods kubejs/data/kronwerke/chapters/stages --goals config/kronwerke/goals.json --quests config/ftbquests/quests --report report.md
 ```
 
 Every goal item must show up as reachable in its stage and nowhere in the leak list before it.

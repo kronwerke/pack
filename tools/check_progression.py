@@ -25,8 +25,10 @@ Model
   the first stage that lists "@namespace"; otherwise it is open from stage 1.
 - Stage S is a fixed point: a node is usable if it is reached and not locked after S. A
   recipe fires when every input group and machine group has a usable node. Crafting grid
-  recipes (CRAFTING) do not fire while their output is locked. Machine recipes do: their
-  locked outputs are reached (a leak) but stay unusable until they open.
+  recipes (CRAFTING) do not fire while their output is locked. Since Kronwerke Core 0.26.0 no
+  recipe fires while its main result (the dump's "result") is locked: Core holds those back
+  from every machine. Other outputs of a recipe (byproducts) can still be locked; they are
+  reached (a leak) but stay unusable until they open. --no-machine-locks checks the old model.
 - A tag output (IE, NuclearCraft, Theurgy...) gives one member: from the recipe's own mod if
   possible, then minecraft, then the first id in sorted order.
 - Quest chapters and crates take their stage from tools/quests next to this script.
@@ -373,12 +375,13 @@ class Data:
 
 
 class Recipe:
-    __slots__ = ("id", "type", "ins", "mach", "outs", "grid", "world")
+    __slots__ = ("id", "type", "ins", "mach", "outs", "grid", "world", "primary")
 
     def __init__(self, rid, rtype, ins=(), mach=(), outs=()):
         self.id, self.type = rid, rtype
         self.ins, self.mach, self.outs = list(ins), list(mach), set(outs)
         self.grid, self.world = is_crafting(rtype), rtype in WORLD_TYPES
+        self.primary = None   # the result a machine shows first (the dump's "result"), for machine locks
 
 
 class Parser:
@@ -630,6 +633,7 @@ class Checker:
         self.d, self.recipes = data, recipes
         self.item_lock, self.mod_lock, self.dims = locks
         self.raw_stage = {}
+        self.machine_locks = True
 
     def lock(self, node):
         if node.startswith((BEE, DIM)):
@@ -692,6 +696,9 @@ class Checker:
         def fire(r):
             if r.grid and any(self.lock(o) > S for o in r.outs):
                 return
+            # Kronwerke Core 0.26.0 holds back every recipe whose result is locked, machines too
+            if self.machine_locks and r.primary and self.lock(r.primary) > S:
+                return
             for o in r.outs:
                 if not (r.world and not r.mach and self.lock(o) > S):   # world gen of a locked item
                     reach(o, r)
@@ -718,6 +725,8 @@ class Checker:
             miss = [g for g in r.ins + r.mach if not g & usable]
             if r.grid and self.lock(item) > S:
                 miss.append(frozenset([item]))
+            if self.machine_locks and r.primary and self.lock(r.primary) > S:
+                miss.append(frozenset([r.primary]))
             if best is None or len(miss) < len(best[1]):
                 best = (r, miss)
         return best
@@ -780,7 +789,9 @@ def build(a):
     parser, parsed, failures = Parser(data), [], []
     for e in json.load(open(a.recipes))["recipes"]:
         try:
-            parsed.append((parser.parse(e["id"], e["json"]), e["json"]))
+            rec = parser.parse(e["id"], e["json"])
+            rec.primary = e.get("result")
+            parsed.append((rec, e["json"]))
         except Exception as ex:  # a report tool: list the recipe and go on
             failures.append("%s: %r" % (e.get("id"), ex))
     for r, j in parsed:
@@ -830,11 +841,14 @@ def main():
     ap = argparse.ArgumentParser(description="Kronwerke progression checker (see the module docstring).")
     for arg in ("recipes", "mods", "stages", "--quests", "--goals", "--report", "--neoforge"):
         ap.add_argument(arg)
+    ap.add_argument("--no-machine-locks", action="store_true",
+                    help="model machines as before Core 0.26.0: they make locked results (leaks)")
     ap.add_argument("--vanilla", default="/root/.gradle/caches/neoformruntime/artifacts/minecraft_1.21.1_client.jar")
     a = ap.parse_args()
 
     data, recipes, parser, failures = build(a)
     ck = Checker(data, recipes, load_locks(a.stages))
+    ck.machine_locks = not a.no_machine_locks
     ck.compute_raw()
     results = {S: ck.run(S) for S in STAGES}
     first = {}

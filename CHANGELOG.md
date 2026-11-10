@@ -419,3 +419,7 @@ Incendium, which ran about a tenth of the tick in the 50 player load test:
 
 - Kronwerke Core 0.24.1: giving an item to the obelisk no longer crashes the game, the language choice no longer reloads every resource (no more "not responding"), the creative menu opens without freezing (tabs are filled bit by bit after joining), and the obelisk beam stays visible from far away.
 - Zume 1.2.2 (client): zoom on a key, scroll to change how far.
+
+## 0.12.3
+
+- Kronwerke Core 0.24.2: thousands of TNT no longer hang the server (explosions get a time budget per tick and cast half the rays), the portal to the mining world no longer breaks with "Network Protocol Error" (Create Ore Excavation's map save on the transfer), the language question comes once the world is loaded, the items on the obelisk pedestals turn smoothly, and the Nautical Ranks pack is always on, also in instances started before.

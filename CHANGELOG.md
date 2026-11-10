@@ -414,3 +414,8 @@ Incendium, which ran about a tenth of the tick in the 50 player load test:
 ## 0.12.1
 
 - Chronik 1.0.0 (server only, our own): logs who placed, broke and changed which block, what was taken from and put into containers, kills, item drops and pickups, chat, commands, joins and leaves. Machines, explosions, Create contraptions and bombs count for the player behind them. `/co i` inspector, `/co l` lookup, `/co rb` and `/co rs` rollback and restore, `/co undo`. The log is `world/chronik.db`.
+
+## 0.12.2
+
+- Kronwerke Core 0.24.1: giving an item to the obelisk no longer crashes the game, the language choice no longer reloads every resource (no more "not responding"), the creative menu opens without freezing (tabs are filled bit by bit after joining), and the obelisk beam stays visible from far away.
+- Zume 1.2.2 (client): zoom on a key, scroll to change how far.

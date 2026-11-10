@@ -391,3 +391,7 @@ The second pass of the recipe round.
 ## 0.11.48
 
 - Kronwerke Core 0.23.10: natural spawning skips the mob count on ticks where no mob category is due, Mowzie's Mobs no longer creates its data on every mob, JourneyMap only builds its loaded chunk overlay while an operator looks at it, Lodestone's curio check is cached per tick.
+
+## 0.11.49
+
+- Kronwerke Core 0.23.11: the autosave writes chunks a few per tick instead of freezing the server for seconds, light updates only mark chunks as changed when light really changed nearby, Ars Additions no longer marks every watched chunk as changed. New `performance` keys in `kronwerke-common.toml`.

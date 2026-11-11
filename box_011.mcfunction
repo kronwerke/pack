@@ -1,21 +1,21 @@
-# 011 gaia/arena
-#area 43 51 68 82
-fill 43 64 51 68 91 82 minecraft:air
-fill 43 60 51 68 62 82 minecraft:stone
-fill 43 63 51 68 63 82 minecraft:light_gray_concrete
-fill 47 64 57 68 79 57 minecraft:light_gray_concrete
-fill 47 64 57 47 79 76 minecraft:light_gray_concrete
-setblock 48 64 75 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "011"}','{"text": "gaia"}','{"text": "arena"}','{"text": ""}']}}
-setblock 49 64 75 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "beacon with"}','{"text": "four pylons"}','{"text": "from above"}','{"text": ""}']}}
-summon text_display 55.5 71 65.5 {text:'[{"text": "011  ", "color": "gold"}, {"text": "gaia/arena", "color": "gray"}, {"text": "\\nBau die Arena", "color": "white"}]',billboard:"center",background:1275068416,Tags:["kw_shot"],alignment:"center",line_width:200,transformation:{scale:[1.6f,1.6f,1.6f],translation:[0f,0f,0f],left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f]}}
-fill 63 64 57 63 79 72 minecraft:light_gray_concrete
-fill 54 63 64 56 63 66 minecraft:iron_block
-setblock 55 64 65 minecraft:beacon
-setblock 51 64 61 minecraft:quartz_block
-setblock 51 65 61 botania:gaia_pylon
-setblock 51 64 69 minecraft:quartz_block
-setblock 51 65 69 botania:gaia_pylon
-setblock 59 64 61 minecraft:quartz_block
-setblock 59 65 61 botania:gaia_pylon
-setblock 59 64 69 minecraft:quartz_block
-setblock 59 65 69 botania:gaia_pylon
+# 011 ars_nouveau/apparatus
+#area -4 34 15 59
+fill -4 64 34 15 91 59 minecraft:air
+fill -4 60 34 15 62 59 minecraft:stone
+fill -4 63 34 15 63 59 minecraft:light_gray_concrete
+fill 0 64 40 15 79 40 minecraft:light_gray_concrete
+fill 0 64 40 0 79 53 minecraft:light_gray_concrete
+setblock 1 64 52 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "011"}','{"text": "ars_nouveau"}','{"text": "apparatus"}','{"text": ""}']}}
+setblock 2 64 52 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "core, apparatus"}','{"text": "and pedestals"}','{"text": "in range"}','{"text": ""}']}}
+summon text_display 5.5 71 45.5 {text:'[{"text": "011  ", "color": "gold"}, {"text": "ars_nouveau/apparatus", "color": "gray"}, {"text": "\\nBau den Bezaubernden Apparat", "color": "white"}]',billboard:"center",background:1275068416,Tags:["kw_shot"],alignment:"center",line_width:200,transformation:{scale:[1.6f,1.6f,1.6f],translation:[0f,0f,0f],left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f]}}
+fill 10 64 40 10 79 53 minecraft:light_gray_concrete
+setblock 5 64 45 ars_nouveau:arcane_core[facing=up]
+setblock 5 65 45 ars_nouveau:enchanting_apparatus[facing=up]
+setblock 3 64 43 ars_nouveau:arcane_pedestal[facing=up]
+setblock 5 64 42 ars_nouveau:arcane_pedestal[facing=up]
+setblock 7 64 43 ars_nouveau:arcane_pedestal[facing=up]
+setblock 2 64 45 ars_nouveau:arcane_pedestal[facing=up]
+setblock 8 64 45 ars_nouveau:arcane_pedestal[facing=up]
+setblock 3 64 47 ars_nouveau:arcane_pedestal[facing=up]
+setblock 7 64 47 ars_nouveau:arcane_pedestal[facing=up]
+setblock 8 64 48 ars_nouveau:source_jar[fill=11]{source:10000}

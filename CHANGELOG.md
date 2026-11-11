@@ -475,3 +475,7 @@ Incendium, which ran about a tenth of the tick in the 50 player load test:
 
 - Kronwerke Core 0.33.0: a singleplayer or LAN world plays like a normal modpack, with every stage open.
 - Chronik 1.2.1: the console's Chronik view works on every server of the network.
+
+## 0.19.0
+
+- Kronwerke Core 0.34.0: `/kwtag <spieler> <tag>` sets any rank icon by hand, live on every server, and the first own tag, Omi.

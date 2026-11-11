@@ -169,6 +169,73 @@ def pentacle_scene(key, name, bowls=4):
 
 
 # ===================================================================================
+# Start
+
+@scene("start_here/o_feeder", w=15, d=17, h=30)
+def _(b):
+    # the Zubringer block within 10 blocks of the obelisk, a hopper pushing a chest's stone into it
+    obelisk(b, 7, 7)
+    b.b(7, 0, 14, "kronwerke:obelisk_intake")
+    b.b(7, 1, 14, "minecraft:hopper[facing=down]")
+    b.c(7, 2, 14, [("minecraft:cobblestone", 64)] * 3, frame=True)
+    b.focus(4, 0, 10, 10, 4, 15)
+
+
+@scene("start_here/m_goldleaf", h=20)
+def _(b):
+    # an oak whose leaves have all turned golden (golden_leaves at its last stage)
+    b.b(4, -1, 4, "minecraft:dirt")
+    b.f(4, 0, 4, 4, 4, 4, "minecraft:oak_log[axis=y]")
+    for y, r in ((3, 2), (4, 2), (5, 1), (6, 1)):
+        for dx in range(-r, r + 1):
+            for dz in range(-r, r + 1):
+                if (dx, dz) != (0, 0) or y > 4:
+                    if abs(dx) == r and abs(dz) == r and (y in (4, 6)):
+                        continue                      # the corners an oak leaves out
+                    b.b(4 + dx, y, 4 + dz, "naturesaura:golden_leaves[stage=3,persistent=true]")
+
+
+# Multiblocks of Nature's Aura as its own class has them (blocks/multi/Multiblocks)
+TREE_RITUAL = ["    W    ", " W     W ", "   GGG   ", "  GG GG  ", "W G 0 G W", "  GG GG  ", "   GGG   ", " W     W ", "    W    "]
+ALTAR = [   # from the top layer down; the last one lies in the ground
+    ["    M    ", "         ", "         ", "         ", "M       M", "         ", "         ", "         ", "    M    "],
+    ["    B    ", "         ", "         ", "         ", "B       B", "         ", "         ", "         ", "    B    "],
+    ["    B    ", "         ", "  M   M  ", "         ", "B   0   B", "         ", "  M   M  ", "         ", "    B    "],
+    ["         ", "   WBW   ", "   WBW   ", " WWCWCWW ", " BBW WBB ", " WWCWCWW ", "   WBW   ", "   WBW   ", "         "],
+]
+
+
+@scene("start_here/m_ritual", w=11, d=11)
+def _(b):
+    # the Ritual of the Forest: sixteen gold powder around the sapling, eight wooden stands outside
+    blocks = {"W": "naturesaura:wood_stand", "G": "naturesaura:gold_powder", "0": "minecraft:oak_sapling"}
+    for z, row in enumerate(TREE_RITUAL):
+        for x, ch in enumerate(row):
+            if ch != " ":
+                b.b(1 + x, 0, 1 + z, blocks[ch])
+    b.b(5, -1, 5, "minecraft:grass_block")
+    # what the Natural Altar takes, on four of the stands
+    for (x, z), item in {(5, 1): "botania:livingrock", (9, 5): "naturesaura:gold_leaf", (5, 9): "minecraft:gold_ingot", (1, 5): "naturesaura:token_joy"}.items():
+        b.use(x, 0, z, "up", item)
+    b.pitch = 48.0
+
+
+@scene("start_here/m_altar", w=11, d=11)
+def _(b):
+    # the Natural Altar in its building: four pillars of stone bricks with a golden stone brick
+    # on top, four golden stone bricks around the altar, the floor of planks and bricks
+    blocks = {"M": "naturesaura:gold_brick", "B": "minecraft:stone_bricks", "W": "minecraft:oak_planks",
+              "C": "minecraft:chiseled_stone_bricks", "0": "naturesaura:nature_altar"}
+    for li, layer in enumerate(ALTAR):
+        y = len(ALTAR) - 2 - li
+        for z, row in enumerate(layer):
+            for x, ch in enumerate(row):
+                if ch != " ":
+                    b.b(1 + x, y, 1 + z, blocks[ch])
+    b.pitch = 42.0
+
+
+# ===================================================================================
 # Occultism
 
 pentacle_scene("occultism/aviar", "summon_foliot")
@@ -365,6 +432,107 @@ def _(b):
     b.drop(4, 1, 4, "minecraft:flint", 8)
     b.drop(4, 1.3, 4, "minecraft:gravel", 8)
     b.use(4, 0, 4, "up", "minecraft:lava_bucket")
+
+
+def housed_motor(b, x, y, z, facing, speed=32):
+    """A creative motor boxed in andesite casing on every side but the one its shaft leaves by:
+    what shows is a casing block with a shaft coming out of it."""
+    step = {"east": (1, 0, 0), "west": (-1, 0, 0), "south": (0, 0, 1), "north": (0, 0, -1), "up": (0, 1, 0), "down": (0, -1, 0)}
+    motor(b, x, y, z, facing, speed)
+    for name, (dx, dy, dz) in step.items():
+        if name != facing and y + dy >= 0:
+            b.b(x + dx, y + dy, z + dz, "create:andesite_casing")
+
+
+@scene("create/windmill", w=13, d=13, h=24)
+def _(b):
+    # a windmill bearing on a post, 32 sails in four arms of two by four around a hub, assembled
+    # with a click on the bearing so it turns
+    cx, cy, z = 6, 6, 5
+    b.f(cx, 0, z, cx, cy - 1, z, "minecraft:spruce_log[axis=y]")
+    b.b(cx, cy, z, "create:windmill_bearing[facing=south]")
+    sail = "create:white_sail[facing=south]"
+    b.b(cx, cy, z + 1, sail)
+    b.f(cx, cy + 1, z + 1, cx + 1, cy + 4, z + 1, sail)          # up
+    b.f(cx + 1, cy - 1, z + 1, cx + 4, cy, z + 1, sail)          # right
+    b.f(cx - 1, cy - 4, z + 1, cx, cy - 1, z + 1, sail)          # down
+    b.f(cx - 4, cy, z + 1, cx - 1, cy + 1, z + 1, sail)          # left
+    b.use(cx, cy, z, "south", "minecraft:air")
+    b.later(cx, cy + 4, z + 1, "block @ create:white_sail", unless=True)     # the sails left the world: it turns
+
+
+@scene("create/cobble_gen")
+def _(b):
+    # the classic generator in a row: water, a hole that swallows it, the stone, lava. The
+    # drill sits behind the stone and breaks it as it forms.
+    for x in range(1, 8):
+        b.b(x, 0, 3, "minecraft:stone_bricks")
+        b.b(x, 0, 5, "minecraft:glass")
+    b.b(1, 0, 4, "minecraft:stone_bricks")
+    b.b(7, 0, 4, "minecraft:stone_bricks")
+    b.b(2, 0, 4, "minecraft:water")
+    b.b(4, -1, 4, "minecraft:air")                     # the water falls in here and goes no further
+    b.b(5, 0, 4, "minecraft:cobblestone")
+    b.b(6, 0, 4, "minecraft:lava")
+    b.b(5, 0, 3, "create:mechanical_drill[facing=south]")
+    drive_from_behind(b, 5, 0, 3)
+
+
+@scene("create_brass/crafter")
+def _(b):
+    # Ponder mechanical_crafter/setup: three by three, the top rows hand down, the bottom row to
+    # the right, a cogwheel beside one of them turns them all
+    for x in range(3):
+        for y in range(3):
+            b.b(3 + x, y, 4, f"create:mechanical_crafter[facing=south,pointing={'right' if y == 0 else 'down'}]")
+    b.b(6, 0, 4, "create:depot")
+    b.b(2, 0, 4, "create:cogwheel[axis=z]")
+    drive_from_behind(b, 2, 0, 4)
+
+
+@scene("create_brass/crushing_wheel", w=11)
+def _(b):
+    # Ponder crushing_wheel: two wheels a block apart turning against each other; the gap
+    # between them crushes what falls in
+    b.b(4, 1, 4, "create:crushing_wheel[axis=z]")
+    b.b(6, 1, 4, "create:crushing_wheel[axis=z]")
+    b.f(3, 0, 3, 7, 2, 3, "create:andesite_casing")
+    for x, speed in ((4, 32), (6, -32)):
+        b.b(x, 1, 3, "create:andesite_encased_shaft[axis=z]")
+        motor(b, x, 1, 2, "south", speed)
+    b.drop(5, 3, 4, "minecraft:raw_iron", 8)
+    b.later(5, 1, 4, "block @ create:crushing_wheel_controller")
+
+
+@scene("create/belt")
+def _(b):
+    # two parallel shafts, clicked one after the other with the belt in hand
+    b.b(2, 0, 4, "create:shaft[axis=z]")
+    b.b(6, 0, 4, "create:shaft[axis=z]")
+    b.use(2, 0, 4, "up", "create:belt_connector")
+    b.use(6, 0, 4, "up", "create:belt_connector")
+    b.changed(4, 0, 4, "minecraft:air")              # the belt runs between them
+
+
+@scene("create/washing")
+def _(b):
+    # Ponder fan/processing: a fan blowing through water turns its stream into a washing
+    # stream. The stream ends in the first thing that is not air, so the belt runs across it
+    # and carries the gravel through. The water sits between the fan, the belt and two panes
+    # of glass.
+    b.b(3, 0, 2, "create:shaft[axis=x]")
+    b.b(3, 0, 6, "create:shaft[axis=x]")
+    b.use(3, 0, 2, "up", "create:belt_connector")
+    b.use(3, 0, 6, "up", "create:belt_connector")
+    b.changed(3, 0, 4, "minecraft:air")
+    b.b(4, 0, 3, "minecraft:glass")
+    b.b(4, 0, 5, "minecraft:glass")
+    b.b(4, 0, 4, "minecraft:water")
+    b.b(5, 0, 4, "create:encased_fan[facing=west]")
+    housed_motor(b, 6, 0, 4, "west", 64)
+    b.drop(3, 1, 4, "minecraft:gravel", 8)
+    b.later(3, 0, 5, "block @ create:belt")                # the water has not washed the belt away
+    b.later(4, 0, 4, "block @ minecraft:water")
 
 
 @scene("create/water_wheel", w=10)

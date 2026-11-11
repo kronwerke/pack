@@ -455,12 +455,6 @@ def build(check=False):
                 texts.append(body[j:j + 4])
             for j, t in enumerate(texts[: max(1, w)]):
                 cmds.append(f"setblock {cx + j} {FLOOR_Y + 1} {sz} minecraft:oak_sign[rotation=0]{sign_text(t)}")
-            # a floating label over the cell, readable from the air: number, quest id, title
-            label = json.dumps([{"text": sign_lines[0] + "  ", "color": "gold"}, {"text": k, "color": "gray"},
-                                {"text": "\n" + info.get("title", ""), "color": "white"}], ensure_ascii=False)
-            label = label.replace("\\", "\\\\").replace("'", "\\'")
-            cmds.append(f"summon text_display {cx + w / 2} {FLOOR_Y + 1 + 7} {z + 1 + d / 2} "
-                        f"{{text:'{label}',billboard:\"center\",background:1275068416,Tags:[\"kw_shot\"],alignment:\"center\",line_width:200,transformation:{{scale:[1.6f,1.6f,1.6f],translation:[0f,0f,0f],left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f]}}}}")
             # a grey divider east of every cell, as deep as the box: the camera sees this scene
             # against grey, not the next scene beside it, even from far back in a deep cell
             cmds.append(f"fill {cx + w} {FLOOR_Y + 1} {z} {cx + w} {FLOOR_Y + wall} {z + bd} minecraft:light_gray_concrete")

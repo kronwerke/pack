@@ -26,14 +26,28 @@ def scene(*keys, w=9, d=9):
 
 
 def kit(*keys, blocks=(), items=(), mobs=(), note=None, w=9, d=9):
-    """A quick scene: blocks on plinths in a row, a chest with items, mobs in front."""
+    """A quick scene: blocks in a row, the items on show on slabs in front of them, mobs in
+    front of those. A crafting table only says "craft it" and is left out when there are items."""
+    shown = [bl for bl in blocks if not (items and bl == "minecraft:crafting_table")]
+
+    def row(n, z, b):
+        """x positions for n things two apart, centred in the cell."""
+        start = max(1, (b.w - 1 - 2 * (n - 1)) // 2)
+        return [(start + 2 * i, z) for i in range(n)]
+
     def fn(b):
-        for i, bl in enumerate(blocks):
-            x = 1 + (i % 4) * 2
-            z = 2 + (i // 4) * 3
-            b.b(x, 0, z, bl)
+        z = 2
+        for i in range(0, len(shown), 4):
+            part = shown[i:i + 4]
+            for (x, zz), bl in zip(row(len(part), z, b), part):
+                b.b(x, 0, zz, bl)
+            z += 3
+        its = [it if isinstance(it, str) else it[0] for it in items][:4]
+        if its:
+            for (x, zz), it in zip(row(len(its), z if shown else 4, b), its):
+                b.show(x, 0, zz, it, scale=1.0 if len(its) > 1 else 1.4)
         if items:
-            b.c(b.w - 1, 0, b.d - 1, list(items))
+            b.c(b.w - 1, 0, b.d - 1, list(items))     # the materials, for trying it out by hand
         for i, mob in enumerate(mobs):
             ent, nbt = (mob, "") if isinstance(mob, str) else mob
             b.m(ent, 2 + i * 3, 0, b.d - 3, nbt)

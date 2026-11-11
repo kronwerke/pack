@@ -168,6 +168,18 @@ class Cell:
         self._see(x, y, z)
         self.cmds.append(f"summon item_frame {self._p(x, y, z)} {{Facing:{f}b,Fixed:1b,Tags:[\"kw_shot\"],Item:{{id:\"{item}\",count:1}}}}")
 
+    def show(self, x, y, z, item, scale=1.0, plinth="minecraft:smooth_stone_slab"):
+        """An item on show: a slab with the item floating above it, turned to the camera."""
+        if plinth:
+            self.b(x, y, z, plinth)
+        self._see(x, y, z, x, y + 1, z)
+        s = f"{scale}f"
+        self.cmds.append(
+            f"summon item_display {self.ox + x + .5} {FLOOR_Y + 1 + y + .5 + .45 * scale} {self.oz + z + .5} "
+            f"{{item:{{id:\"{item}\",count:1}},item_display:\"fixed\",billboard:\"vertical\","
+            f"transformation:{{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],"
+            f"scale:[{s},{s},{s}]}},brightness:{{sky:15,block:15}},Tags:[\"kw_shot\"]}}")
+
     def stand(self, x, y, z, armor=(), hand=None, rot=180):
         self._see(x, y, z, x, y + 2, z)
         a = list(armor) + [None] * (4 - len(armor))   # head, chest, legs, feet

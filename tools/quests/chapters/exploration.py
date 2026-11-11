@@ -21,7 +21,7 @@ quests = [
     quest("welcome", 0, 0, "&6&lZieh los und erkunde",
           subtitle="Die Welt ist größer und seltsamer als in Vanilla.",
           description=[
-              "Hak ab und zieh los. Die Quests hier zeigen dir, wie du dich zurechtfindest, schnell reist, in der Minenwelt gräbst und was in den Bauwerken wartet.",
+              "Hak ab und zieh los. Die Quests hier zeigen dir, wie du dich zurechtfindest, schnell reist, in der Farmwelt gräbst und was in den Bauwerken wartet.",
               "",
               "&6Terralith&r und &6Biomes O' Plenty&r bringen Dutzende neue Biome, &6Tectonic&r höhere Berge und tiefere Täler. Dazwischen stehen Bauwerke aus einem Dutzend Mods.",
               "",
@@ -195,13 +195,13 @@ quests = [
           rewards=[reward_item("waystones:warp_dust", 4), reward_xp(5)],
           deps=["e_sharestone"], icon="waystones:warp_plate", optional=True),
 
-    # ---- Minenwelt -----------------------------------------------------------
+    # ---- Farmwelt -----------------------------------------------------------
     quest("e_pickaxe", 4.5, 3, "&6Bau zehn Grubenrahmen",
-          subtitle="Der Rahmen für das Tor zur Minenwelt.",
+          subtitle="Der Rahmen für das Tor zur Farmwelt.",
           description=[
               "&eRezept:&r &64 Andesit-Gehäuse&r, &64 Infundiertes Eisen&r und ein &6Quellstein&r in der Mitte ergeben &e2 Grubenrahmen&r. Für ein Portal brauchst du &e10&r.",
               "",
-              "Die &6Minenwelt&r ist eine eigene Welt zum Graben. Dort darfst du Löcher machen, so viel du willst, und die Oberwelt bleibt schön.",
+              "Die &6Farmwelt&r ist eine eigene Welt zum Graben. Dort darfst du Löcher machen, so viel du willst, und die Oberwelt bleibt schön.",
           ],
           tasks=[task_item(FRAME, 10)],
           rewards=[reward_item("minecraft:iron_block", 2)],
@@ -218,10 +218,10 @@ quests = [
           rewards=[reward_item("minecraft:torch", 32)],
           deps=["e_pickaxe"], icon="ars_nouveau:source_gem"),
 
-    quest("e_enter", 9, 3, "&6&lReise in die Minenwelt",
+    quest("e_enter", 9, 3, "&6&lReise in die Farmwelt",
           subtitle="Stell dich einen Moment ins Portal.",
           description=[
-              "Bleib kurz im Portal stehen, bis das Licht dich holt. Du kommst auf dem Ankunftsplatz der Minenwelt an, das Portal dort bringt dich zurück zu deinem.",
+              "Bleib kurz im Portal stehen, bis das Licht dich holt. Du kommst auf dem Ankunftsplatz der Farmwelt an, das Portal dort bringt dich zurück zu deinem.",
               "",
               "Dein Inventar, deine Enderkiste und deine Rucksäcke reisen mit. Was du durchs Portal wirfst, kommt auf der anderen Seite heraus.",
           ],
@@ -229,12 +229,12 @@ quests = [
           rewards=[reward_table("s1_uncommon"), reward_xp(5)],
           deps=["e_frame"], icon="minecraft:iron_pickaxe", size=1.5, shape="hexagon"),
 
-    quest("e_dangers", 11, 2, "&cMerk dir die Regeln der Minenwelt",
+    quest("e_dangers", 11, 2, "&cMerk dir die Regeln der Farmwelt",
           subtitle="Alle drei Tage ist sie neu.",
           description=[
-              "Die Minenwelt wird &calle drei Tage um 4:45 Uhr&r zurückgesetzt. Die Tabliste zählt herunter, im Chat wird vorher gewarnt. Wer dann drüben ist, reist mit allem, was er trägt, nach Hause.",
+              "Die Farmwelt wird &calle drei Tage um 4:45 Uhr&r zurückgesetzt. Die Tabliste zählt herunter, im Chat wird vorher gewarnt. Wer dann drüben ist, reist mit allem, was er trägt, nach Hause.",
               "",
-              "&cWas in der Minenwelt steht, ist danach weg:&r Maschinen, Kisten, Steinbrüche, dein Körper nach einem Tod. Bring deine Beute rechtzeitig heim.",
+              "&cWas in der Farmwelt steht, ist danach weg:&r Maschinen, Kisten, Steinbrüche, dein Körper nach einem Tod. Bring deine Beute rechtzeitig heim.",
           ],
           tasks=[task_checkmark("Verstanden")],
           rewards=[reward_item("minecraft:torch", 32)],
@@ -276,7 +276,7 @@ quests = [
     quest("e_veins", 11, 6, "&6Finde eine große Erzader",
           subtitle="Kupfer bei Granit, Eisen bei Tuff.",
           description=[
-              "Grab eine große &6Erzader&r an und bring einen &6Rohkupferblock&r mit. Die Adern ziehen sich als lange Bänder durch den Stein, auch in der Minenwelt.",
+              "Grab eine große &6Erzader&r an und bring einen &6Rohkupferblock&r mit. Die Adern ziehen sich als lange Bänder durch den Stein, auch in der Farmwelt.",
               "",
               "&eKupferadern&r liegen zwischen Y 0 und 50 in Granit, &eEisenadern&r zwischen Y -60 und -8 in Tuff. Darin stecken Erz und ganze Rohblöcke.",
           ],
@@ -289,7 +289,7 @@ quests = [
           description=[
               "Der Heimweg führt immer durchs &6Portal am Ankunftsplatz&r, oder durch jedes Minenportal, das du drüben selbst baust. Du kommst vor dem Portal heraus, durch das du gegangen bist.",
               "",
-              "Ein &6Wegstein&r in der Minenwelt verbindet nur Orte in der Minenwelt und ist beim nächsten Reset weg. Deine Wegsteine zuhause bleiben dir erhalten.",
+              "Ein &6Wegstein&r in der Farmwelt verbindet nur Orte in der Farmwelt und ist beim nächsten Reset weg. Deine Wegsteine zuhause bleiben dir erhalten.",
           ],
           tasks=[task_checkmark("Verstanden")],
           rewards=[reward_item("waystones:return_scroll", 3), reward_xp(5)],
@@ -544,7 +544,7 @@ quests = [
           rewards=[reward_item("minecraft:feather", 8), reward_xp(3)],
           deps=["e_return_scroll"], icon="waystones:bound_scroll"),
 
-    # ---- Neu: Minenwelt ---------------------------------------------------------
+    # ---- Neu: Farmwelt ---------------------------------------------------------
     quest("e_altimeter", 11, 0.5, "&6Bau einen Höhenmesser",
           subtitle="Wie tief bist du gerade?",
           description=[
@@ -664,7 +664,7 @@ quests = [
     quest("e_dimensions", 17.5, 4, "&5Schau, welche Welten noch kommen",
           subtitle="Sechs Dimensionen öffnen mit den Stufen.",
           description=[
-              "Die Minenwelt ist offen. Die anderen Welten kommen mit den Stufen: &cNether&r und &bAether&r in Stufe 2, &2Undergarden&r und &3Otherside&r in Stufe 3, &5End&r und &bEternal Starlight&r in Stufe 4.",
+              "Die Farmwelt ist offen. Die anderen Welten kommen mit den Stufen: &cNether&r und &bAether&r in Stufe 2, &2Undergarden&r und &3Otherside&r in Stufe 3, &5End&r und &bEternal Starlight&r in Stufe 4.",
               "",
               "Jedes Portal in drei Zeilen steht in der &6Checkliste: Dimensionen und Reisen&r, jede Welt hat ihr eigenes Kapitel: &cDer Nether&r, &bDer Aether&r, &2Der Undergarden&r, &3Deeper and Darker&r, &5Das End&r, &bEternal Starlight&r.",
           ],
@@ -676,7 +676,7 @@ quests = [
     quest("e_explorer", 20, 7.5, "&6&lWerd zum Entdecker",
           subtitle="Hin und wieder zurück.",
           description=[
-              "Hak ab, wenn du Biome findest, zwischen Wegsteinen reist, in der Minenwelt gräbst und weißt, welche Bauwerke wohin gehören.",
+              "Hak ab, wenn du Biome findest, zwischen Wegsteinen reist, in der Farmwelt gräbst und weißt, welche Bauwerke wohin gehören.",
               "",
               "Der &cNether&r öffnet sich mit Stufe 2 live auf Stream durch das Portal am Spawn. Leg dir bis dahin einen Vorrat an Essen, Fackeln und Eisen an.",
           ],
@@ -690,11 +690,11 @@ images = [
     banner("exploration/title", "Erkundung", 0, -5, height=1.8, kind="title", colour="nature"),
     banner("exploration/orientation", "Orientierung", 9.5, -9.8, height=0.9, colour="nature"),
     banner("exploration/travel", "Reisen", 9, -5.3, height=0.9, colour="magic"),
-    banner("exploration/mine", "Minenwelt", 9, 0.6, height=0.9, colour="stone"),
+    banner("exploration/mine", "Farmwelt", 9, 0.6, height=0.9, colour="stone"),
     banner("exploration/structures", "Bauwerke und Beute", 11, 9.2, height=0.9, colour="fire"),
     banner("exploration/onward", "Weiter", 17.5, 2.2, height=0.9, colour="brass"),
 ]
 
 chapter(C, "Erkundung", "minecraft:filled_map", "world", quests, shape="circle", order=7,
-        subtitle=["Biome, Wegsteine, die Minenwelt und die Bauwerke der Oberwelt."],
+        subtitle=["Biome, Wegsteine, die Farmwelt und die Bauwerke der Oberwelt."],
         images=images)

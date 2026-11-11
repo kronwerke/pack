@@ -730,10 +730,10 @@ quests = [
           rewards=[reward_item("minecraft:slime_ball", 2)],
           deps=["storage_when"], icon="sophisticatedstorage:packing_tape"),
 
-    quest("mining_dim", col(5), 20.6, "Reise in die Minenwelt",
+    quest("mining_dim", col(5), 20.6, "Reise in die Farmwelt",
           subtitle="Grubenrahmen und ein Quellstein: Platz für Löcher, Erz ohne Ende.",
           description=[
-              "&6Minenwelt&r: ein Portal aus &e10 Grubenrahmen&r (vier breit, fünf hoch, Ecken frei), angezündet mit einem &6Quellstein&r. Drüben ist eine eigene Welt zum Graben, alle drei Tage neu. &eStufe 1.&r",
+              "&6Farmwelt&r: ein Portal aus &e10 Grubenrahmen&r (vier breit, fünf hoch, Ecken frei), angezündet mit einem &6Quellstein&r. Drüben ist eine eigene Welt zum Graben, alle drei Tage neu. &eStufe 1.&r",
               "",
               "&eWas mitreist:&r Inventar, Enderkiste, Rucksäcke, und alles, was du durchs Portal wirfst. Siehe Kapitel Erkundung.",
           ],

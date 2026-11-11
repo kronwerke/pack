@@ -31,7 +31,7 @@ quests = [
           icon="minecraft:filled_map", size=2.5, shape="hexagon"),
 
     # ---- Stufe 1 -------------------------------------------------------------------
-    quest("d_mining", 4.5, -8, "&6Die Minenwelt",
+    quest("d_mining", 4.5, -8, "&6Die Farmwelt",
           subtitle="Grubenrahmen, ein Quellstein, Stufe 1.",
           description=[
               "&eDas Portal:&r ein Rahmen aus &6Grubenrahmen&r wie ein Netherportal, 4 breit und 5 hoch, ohne Ecken &e10 Blöcke&r. Rechtsklick mit einem &6Quellstein&r auf die Innenseite, und es öffnet sich.",
@@ -42,12 +42,12 @@ quests = [
           rewards=[reward_item("minecraft:iron_block", 4), reward_xp(3)],
           deps=["welcome"], icon=FRAME),
 
-    quest("d_mining_rules", 6.5, -8, "&6Überleb in der Minenwelt",
+    quest("d_mining_rules", 6.5, -8, "&6Überleb in der Farmwelt",
           subtitle="Alle drei Tage neu, also bring deine Beute heim.",
           description=[
               "&eMitnehmen:&r einen Stapel &6Fackeln&r, Essen und Blöcke zum Abstützen. &eF3&r oder ein Wegpunkt am Ankunftsplatz, bevor du losgräbst.",
               "",
-              "&cAlle drei Tage um 4:45 Uhr&r wird die Minenwelt neu erzeugt. Wer dann drüben ist, reist mit allem, was er trägt, nach Hause. Maschinen, Kisten und dein Körper nach einem Tod bleiben drüben und sind danach weg.",
+              "&cAlle drei Tage um 4:45 Uhr&r wird die Farmwelt neu erzeugt. Wer dann drüben ist, reist mit allem, was er trägt, nach Hause. Maschinen, Kisten und dein Körper nach einem Tod bleiben drüben und sind danach weg.",
               "",
               "&eTipp:&r Wirf Beute einfach ins Portal, sie kommt vor deinem Portal zuhause heraus. Inventar, Enderkiste und Rucksäcke reisen mit.",
           ],

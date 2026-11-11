@@ -96,7 +96,7 @@ quests = [
            "Kostet 20-mal so viel Hunger wie ein Block, also iss vorher. Jede Herkunft darf das. Kapitel &6Komfort&r."],
           task_checkmark("Eine Ader auf einmal abgebaut"), "minecraft:iron_pickaxe", ["s1"], section="s1"),
 
-    entry("mining_dim", 2, 1, S1, "&6Bau den Grubenrahmen", "Der Rahmen für das Tor zur Minenwelt.",
+    entry("mining_dim", 2, 1, S1, "&6Bau den Grubenrahmen", "Der Rahmen für das Tor zur Farmwelt.",
           ["&eRezept:&r 4 Andesit-Gehäuse, 4 Infundiertes Eisen und ein Quellstein in der Mitte ergeben 2 Grubenrahmen. Zehn davon und ein Quellstein öffnen das Portal.",
            "",
            "Dahinter liegt eine eigene Welt nur zum Graben, alle drei Tage neu. Kapitel &6Erkundung&r."],

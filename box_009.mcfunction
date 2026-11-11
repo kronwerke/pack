@@ -1,15 +1,37 @@
-# 009 immersive/coke_oven
-#area 11 48 30 73
-fill 11 64 48 30 91 73 minecraft:air
-fill 11 60 48 30 62 73 minecraft:stone
-fill 11 63 48 30 63 73 minecraft:light_gray_concrete
-fill 15 64 54 30 79 54 minecraft:light_gray_concrete
-fill 15 64 54 15 79 67 minecraft:light_gray_concrete
-setblock 16 64 66 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "009"}','{"text": "immersive"}','{"text": "coke_oven"}','{"text": ""}']}}
-setblock 17 64 66 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "formed coke"}','{"text": "oven with GUI,"}','{"text": "the bucket"}','{"text": "slot, a pump"}']}}
-setblock 18 64 66 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "with pipes"}','{"text": ""}','{"text": ""}','{"text": ""}']}}
-summon text_display 20.5 71 59.5 {text:'[{"text": "009  ", "color": "gold"}, {"text": "immersive/coke_oven", "color": "gray"}, {"text": "\\nForm einen Koksofen", "color": "white"}]',billboard:"center",background:1275068416,Tags:["kw_shot"],alignment:"center",line_width:200,transformation:{scale:[1.6f,1.6f,1.6f],translation:[0f,0f,0f],left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f]}}
-fill 25 64 54 25 79 63 minecraft:light_gray_concrete
-place template immersiveengineering:multiblocks/coke_oven 19 64 58 none
-kw testworld use 20 65 60 south immersiveengineering:hammer
-execute unless block 20 65 60 immersiveengineering:cokebrick
+# 009 occultism/hedyrin
+#area 15 70 38 99
+fill 15 64 70 38 91 99 minecraft:air
+fill 15 60 70 38 62 99 minecraft:stone
+fill 15 63 70 38 63 99 minecraft:light_gray_concrete
+fill 19 64 76 38 79 76 minecraft:light_gray_concrete
+fill 19 64 76 19 79 93 minecraft:light_gray_concrete
+setblock 20 64 92 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "009"}','{"text": "occultism"}','{"text": "hedyrin"}','{"text": ""}']}}
+setblock 21 64 92 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Hedyrin\'s Lure"}','{"text": "with the yellow"}','{"text": "glyphs"}','{"text": ""}']}}
+summon text_display 26.5 71 83.5 {text:'[{"text": "009  ", "color": "gold"}, {"text": "occultism/hedyrin", "color": "gray"}, {"text": "\\nZeichne Hedyrin\'s Lure", "color": "white"}]',billboard:"center",background:1275068416,Tags:["kw_shot"],alignment:"center",line_width:200,transformation:{scale:[1.6f,1.6f,1.6f],translation:[0f,0f,0f],left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f]}}
+fill 33 64 76 33 79 89 minecraft:light_gray_concrete
+fill 21 63 78 31 63 88 occultism:otherstone
+setblock 26 64 80 occultism:chalk_glyph_white[facing=south,sign=0]
+setblock 25 64 81 occultism:chalk_glyph_white[facing=south,sign=5]
+setblock 26 64 81 minecraft:white_candle[candles=1,lit=true]
+setblock 27 64 81 occultism:chalk_glyph_white[facing=south,sign=10]
+setblock 24 64 82 occultism:chalk_glyph_white[facing=south,sign=2]
+setblock 26 64 82 occultism:chalk_glyph_gold[facing=south,sign=7]
+setblock 28 64 82 occultism:chalk_glyph_white[facing=south,sign=12]
+setblock 23 64 83 occultism:chalk_glyph_white[facing=south,sign=4]
+setblock 24 64 83 minecraft:white_candle[candles=1,lit=true]
+setblock 25 64 83 occultism:chalk_glyph_gold[facing=south,sign=9]
+setblock 26 64 83 occultism:golden_sacrificial_bowl
+setblock 27 64 83 occultism:chalk_glyph_gold[facing=south,sign=1]
+setblock 28 64 83 minecraft:white_candle[candles=1,lit=true]
+setblock 29 64 83 occultism:chalk_glyph_white[facing=south,sign=6]
+setblock 24 64 84 occultism:chalk_glyph_white[facing=south,sign=11]
+setblock 26 64 84 occultism:chalk_glyph_gold[facing=south,sign=3]
+setblock 28 64 84 occultism:chalk_glyph_white[facing=south,sign=8]
+setblock 25 64 85 occultism:chalk_glyph_white[facing=south,sign=0]
+setblock 26 64 85 minecraft:white_candle[candles=1,lit=true]
+setblock 27 64 85 occultism:chalk_glyph_white[facing=south,sign=5]
+setblock 26 64 86 occultism:chalk_glyph_white[facing=south,sign=10]
+setblock 21 64 78 occultism:sacrificial_bowl[facing=up]
+setblock 31 64 78 occultism:sacrificial_bowl[facing=up]
+setblock 21 64 88 occultism:sacrificial_bowl[facing=up]
+setblock 31 64 88 occultism:sacrificial_bowl[facing=up]

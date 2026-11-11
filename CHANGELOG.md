@@ -452,3 +452,7 @@ Incendium, which ran about a tenth of the tick in the 50 player load test:
 ## 0.13.2
 
 - Kronwerke Core 0.27.3: the weeping well guard checks that each chunk is really loaded (0.27.1 still let chunks through that were on their way from disk); load test bots on the Nether and End servers join in that dimension.
+
+## 0.14.0
+
+- Kronwerke Core 0.28.0: command selectors with a tag look only at the entities carrying it. Incendium and Tool Trims run about ten of them every tick, which with 50 players in the Nether was 15 percent of the tick.

@@ -444,3 +444,7 @@ Incendium, which ran about a tenth of the tick in the 50 player load test:
 - Chunk loading: 9 force loaded chunks per team, released after 7 days without a login; claims released after 30. Fire and fluid protection on; PvP per team, off in claims by default. QuarryPlus loads no chunks and has no bedrock module. Voice chat recording off. In game invites off, places come through the Discord bot.
 - The alloy forge opens in stage 2 with its brass casing. The precision mechanism takes 3 loops at 80 percent (about 3.75 electron tubes each instead of 8.3).
 - `docs/SERVER.md`: which settings survive a pack update and why the pack sets what it sets. The progression check models Core's locks for recipes without an item result and lists the recipe types those locks cannot see.
+
+## 0.13.1
+
+- Kronwerke Core 0.27.1: Malum's weeping well check no longer loads chunks on the server thread (with 50 players flying through new Nether terrain it stopped the Nether server).

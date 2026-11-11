@@ -32,3 +32,8 @@ own words and chapter names, so references between chapters stay the same.
 | Stufe 4 (Sternwerk) | stage 4 (Sternwerk) |
 | Stufe 5 (Chaoswerk) | stage 5 (Chaoswerk) |
 | Bienen (Kapitel) | Bees |
+| Bosse der Oberwelt | Overworld Bosses |
+| Checkliste: Dimensionen und Reisen | Checklist: Dimensions and Travel |
+| Der Nether, Der Aether, Der Undergarden, Das End | The Nether, The Aether, The Undergarden, The End |
+| Minenwelt, Grubenrahmen, Minenportal | mining world, Mine Frame, Mine Portal |
+| hak ab (Checkmark-Quest) | tick this off |

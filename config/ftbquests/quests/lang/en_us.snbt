@@ -2789,7 +2789,7 @@
 		""
 		"Der Router arbeitet die Module von links nach rechts ab: Was in eine Zielkiste passt, geht dorthin, der Rest ganz rechts hinaus. Ein paar &6Stapel-Upgrades&r, und ein Stapel pro Sekunde ist sortiert. Der Filter merkt sich die Sorte auch, wenn die Kiste zwischendurch leer ist."
 		""
-		"&eKronwerke:&r Stell die Restekiste neben den Obelisken oder leite Messing und Manaperlen in deinen Zubringer. Was dort hineinfällt, zählt für dich zum Ziel von Stufe 2."
+		"&eKronwerke:&r Send brass and mana pearls from the leftovers chest into your feeder at the obelisk. What falls in there counts for you towards the goal of stage 2."
 	]
 	quest.179CF2AACC3D7BAE.quest_subtitle: "Eine Kiste rein, zwanzig Kisten richtig."
 	quest.179CF2AACC3D7BAE.title: "&6&lBau eine Sortieranlage"
@@ -8033,7 +8033,7 @@
 		""
 		"Each gem costs &d500 Source&r. The jar is fed by your Sourceberries, Sourcelinks and whatever other Source you have."
 		""
-		"&eKronwerke:&r The chest is your feeder, or a belt brings the gems there. Each counts &e4 points&r for the magic pillar."
+		"&eKronwerke:&r A hopper or a belt takes the gems to your feeder at the obelisk. Each one counts &e4 points&r for the magic pillar."
 	]
 	quest.274834A235E09223.quest_subtitle: "Several chambers around one jar, hoppers in and out."
 	quest.274834A235E09223.title: "&dBuild a gem plant"
@@ -8564,7 +8564,7 @@
 		""
 		"Every mined stone grows back instantly. Several drills on the same shaft multiply that; a drill costs 4 SU per RPM, a water wheel supplies 256 SU."
 		""
-		"&eKronwerke:&r A belt to your feeder chest at the obelisk, and you pay in cobblestone while you sleep. All parts are in the &6Create&r chapter (cobblestone generator)."
+		"&eKronwerke:&r A belt up to your feeder at the obelisk, and you pay in cobblestone while you sleep. All the parts are in the chapter &6Create&r (cobblestone generator)."
 	]
 	quest.28A0D7D640D88988.quest_subtitle: "Endless stone, even while you talk."
 	quest.28A0D7D640D88988.title: "&7Build a cobblestone generator"
@@ -11135,7 +11135,7 @@
 		""
 		"The rows from top to bottom: &estone&r, &ewood&r, &efields&r, &eanimals&r, &emonsters&r, &ewater and lava&r, &emagic&r. Each row stands on its own; start with the one you are missing right now."
 		""
-		"&eKronwerke:&r In stage 1 the obelisk wants &e20,000 cobblestone&r, &e1,500 andesite alloy&r and &e800 Source Gems&r. A chest next to the obelisk is your feeder: whatever your farm pushes into it counts for you every 2 seconds."
+		"&eKronwerke:&r In stage 1 the obelisk wants &e20,000 cobblestone&r, &e1,500 andesite alloy&r and &e800 Source Gems&r. A &6feeder&r at the obelisk is your way in: what your farm pushes into it counts for you at once."
 		""
 		"The recipes are in the &6Create&r, &aBotania&r, &dArs Nouveau&r, &aMystical Agriculture&r, &6Food and Farming&r and &6Cooking&r chapters. This one only says how to put them together into a farm."
 	]
@@ -17584,7 +17584,7 @@
 	quest.4E1EFA9809C91E7C.quest_desc: [
 		"Du kennst jetzt jeden Weg, auf dem in Kronwerke etwas von A nach B kommt oder liegen bleibt. Zum Abschluss zeig die Stufe-1-Grundausstattung einer Fabrik: Bänder, Trichter, Rohre, Pumpe und ein Fass dafür."
 		""
-		"&eKronwerke:&r Eine Kiste neben dem Obelisken ist dein Zubringer. Alles aus diesem Kapitel, was dort hineinliefert, zählt für dich zum Ziel."
+		"&eKronwerke:&r The feeder at the obelisk is your way in. Everything from this chapter that delivers into it counts for you towards the goal."
 	]
 	quest.4E1EFA9809C91E7C.quest_subtitle: "Fünfmal gelesen, einmal gebaut."
 	quest.4E1EFA9809C91E7C.title: "&6&lAlles verbunden"
@@ -22855,7 +22855,7 @@
 		""
 		"In stage 1 the goal wants &6cobblestone&r, &6Andesite Alloy&r and &6Source Gems&r. Everyone has cobblestone, so don't throw it away. You see how far along it is on the &eboss bar&r at the top and with &e/kw goals&r."
 		""
-		"Everything else, feeder chests and the milestones, is explained in the chapter &6Start here&r."
+		"Everything else, the feeder and the milestones, is explained in the chapter &6Start here&r."
 	]
 	quest.661593931F9FC5C9.quest_subtitle: "Every stack counts, even a small one."
 	quest.661593931F9FC5C9.title: "&6Deliver something at the obelisk"
@@ -27779,11 +27779,11 @@
 	quest.7DAF9CEEA0CE6DF8.quest_subtitle: "Productive Bees: die Bienen auf deiner Seite."
 	quest.7DAF9CEEA0CE6DF8.title: "&eSetz den Bienennest-Helm auf"
 	quest.7DB41D51F9FA74EC.quest_desc: [
-		"Place a &6chest&r or a &6barrel&r at most &e3 blocks&r from the obelisk. It becomes your &6feeder&r: every &e2 seconds&r the goal takes out what it needs and credits it to you."
+		"The &6feeder&r is a block of its own: a &6hopper&r at the top in the middle, &6andesite alloy&r below it, &e5 cobbled deepslate&r left, right and in the bottom row. Place it at most &e10 blocks&r from the obelisk."
 		""
-		"Each player has at most &etwo&r feeders; a third one does not count. It counts for whoever placed the chest, so don't put anything in it you want to keep."
+		"Whatever a hopper, a pipe or a belt pushes in goes straight into the goal and counts for whoever placed the feeder. It stores nothing: what the goal does not need right now it does not take, it stays in the pipe. A right click shows whose it is and whether it is connected."
 	]
-	quest.7DB41D51F9FA74EC.quest_subtitle: "A chest at the obelisk that delivers for you."
+	quest.7DB41D51F9FA74EC.quest_subtitle: "A block at the obelisk that pays in for you."
 	quest.7DB41D51F9FA74EC.title: "&6Set up a feeder"
 	quest.7DCAC80D27E96240.quest_desc: [
 		"&e2 Enderpulver, 1 Goldpulver&r. Mit Tuch eine Rolle, ohne Tuch ein Kreis am Boden."

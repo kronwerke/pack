@@ -190,13 +190,90 @@ for _key, _name in [("crusher", "crusher"), ("press", "metal_press"), ("squeezer
 # ===================================================================================
 # Botania
 
-@scene("botania_runes/plate_base")
-def _(b):
-    # TerrestrialAgglomerationPlate: livingrock in the middle and the corners, lapis on the edges
+def pool(b, x, y, z, mana=1000000, spark=False):
+    b.b(x, y, z, "botania:mana_pool", f"{{mana:{mana}}}" if mana else "")
+    if spark:
+        b.e("botania:mana_spark", x, y + 1.25, z)
+
+
+def terra_plate(b, cx, cz):
+    """TerrestrialAgglomerationPlateBlockEntity: RLR / L0L / RLR under the plate, R and 0 livingrock, L lapis."""
     for dx in (-1, 0, 1):
         for dz in (-1, 0, 1):
-            b.b(4 + dx, 0, 4 + dz, "minecraft:lapis_block" if abs(dx) + abs(dz) == 1 else "botania:livingrock")
-    b.b(4, 1, 4, "botania:terrestrial_agglomeration_plate")
+            b.b(cx + dx, 0, cz + dz, "minecraft:lapis_block" if abs(dx) + abs(dz) == 1 else "botania:livingrock")
+    b.b(cx, 1, cz, "botania:terrestrial_agglomeration_plate")
+
+
+@scene("botania_runes/plate_base")
+def _(b):
+    terra_plate(b, 4, 4)
+
+
+@scene("botania_runes/terrasteel", w=11)
+def _(b):
+    # the plate with its three ingredients on it, sparks on the plate and on two full pools
+    terra_plate(b, 5, 4)
+    b.e("botania:mana_spark", 5, 2.25, 4)
+    pool(b, 1, 0, 4, spark=True)
+    pool(b, 9, 0, 4, spark=True)
+    for item in ("botania:manasteel_ingot", "botania:mana_pearl", "botania:mana_diamond"):
+        b.drop(5, 1.3, 4, item)
+
+
+def gateway(b, x, y, z):
+    """AlfheimPortalBlockEntity: a 5 by 5 frame along x. Bottom _w0w_, sides W G W, top _wgw_;
+    w and W livingwood, g and G glimmering livingwood, 0 the gateway core."""
+    b.b(x + 2, y, z, "botania:elven_gateway_core")
+    for dx in (1, 3):
+        b.b(x + dx, y, z, "botania:livingwood_log[axis=x]")
+        b.b(x + dx, y + 4, z, "botania:livingwood_log[axis=x]")
+    b.b(x + 2, y + 4, z, "botania:glimmering_livingwood_log[axis=x]")
+    for dx in (0, 4):
+        b.b(x + dx, y + 1, z, "botania:livingwood_log[axis=y]")
+        b.b(x + dx, y + 2, z, "botania:glimmering_livingwood_log[axis=y]")
+        b.b(x + dx, y + 3, z, "botania:livingwood_log[axis=y]")
+
+
+@scene("alfheim/frame", w=11)
+def _(b):
+    # the frame, and the two pools with a natura pylon over each that opening it needs
+    gateway(b, 3, 0, 3)
+    for x in (1, 9):
+        pool(b, x, 0, 5)
+        b.b(x, 1, 5, "botania:natura_pylon")
+
+
+@scene("alfheim/open", w=11)
+def _(b):
+    gateway(b, 3, 0, 3)
+    for x in (1, 9):
+        pool(b, x, 0, 5)
+        b.b(x, 1, 5, "botania:natura_pylon")
+    b.use(5, 0, 3, "south", "botania:wand_of_the_forest")
+    b.changed(5, 1, 3, "minecraft:air")           # the portal fills the frame
+
+
+@scene("gaia/arena", w=15, d=15)
+def _(b):
+    # GaiaGuardianEntity.PYLON_OFFSETS: four gaia pylons 4 out and 1 up from the beacon
+    b.f(6, -1, 6, 8, -1, 8, "minecraft:iron_block")
+    b.b(7, 0, 7, "minecraft:beacon")
+    for dx in (-4, 4):
+        for dz in (-4, 4):
+            b.b(7 + dx, 0, 7 + dz, "minecraft:quartz_block")
+            b.b(7 + dx, 1, 7 + dz, "botania:gaia_pylon")
+
+
+@scene("botania/pure_daisy")
+def _(b):
+    # the daisy turns the eight blocks around it: stone to livingrock, logs to livingwood
+    b.b(4, -1, 4, "minecraft:grass_block")
+    b.b(4, 0, 4, "botania:pure_daisy")
+    ring = {(-1, -1): "minecraft:stone", (0, -1): "botania:livingrock", (1, -1): "minecraft:stone",
+            (-1, 0): "minecraft:oak_log[axis=y]", (1, 0): "botania:livingwood_log[axis=y]",
+            (-1, 1): "botania:livingrock", (0, 1): "minecraft:stone", (1, 1): "botania:livingrock"}
+    for (dx, dz), block in ring.items():
+        b.b(4 + dx, 0, 4 + dz, block)
 
 
 # ===================================================================================

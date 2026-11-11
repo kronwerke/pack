@@ -212,6 +212,12 @@ class Cell:
 
     vendored = {}
 
+    def e(self, entity, x, y, z, nbt=""):
+        """An entity that is part of a build (a spark over a pool), at the middle of that block."""
+        self._see(x, int(y), z)
+        tag = "{Tags:[\"kw_shot\"]" + ("," + nbt if nbt else "") + "}"
+        self.cmds.append(f"summon {entity} {self.ox + x + .5} {FLOOR_Y + 1 + y} {self.oz + z + .5} {tag}")
+
     def drop(self, x, y, z, item, count=1):
         """An item lying or falling there (into a basin, onto a belt)."""
         self.cmds.append(f"summon item {self.ox + x + .5} {FLOOR_Y + 1 + y} {self.oz + z + .5} "
@@ -502,6 +508,9 @@ def validate(cat, files):
             for iid in re.findall(r'id:"([a-z0-9_.-]+:[a-z0-9_/.-]+)"', line):
                 if iid not in items and iid not in blocks:
                     probs.append(f"{where}: unknown item {iid}")
+            m = re.match(r"kw testworld use \S+ \S+ \S+ \S+ ([a-z0-9_.-]+:[a-z0-9_/.-]+)", line)
+            if m and m[1] not in items and m[1] not in blocks:
+                probs.append(f"{where}: unknown item {m[1]}")
             m = re.match(r"summon ([a-z0-9_.-]+:)?([a-z0-9_/.-]+)", line)
             if m:
                 full = (m[1] or "minecraft:") + m[2]

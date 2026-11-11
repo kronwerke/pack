@@ -58,7 +58,9 @@
 			tasks: [
 				{
 					id: "3575D0D6F07FDB7D"
-					type: "checkmark"
+					type: "advancement"
+					advancement: "kronwerke:steps/claimed"
+					criterion: ""
 				}
 			]
 			rewards: [
@@ -113,7 +115,9 @@
 			tasks: [
 				{
 					id: "3B3AF9B1BE544D34"
-					type: "checkmark"
+					type: "advancement"
+					advancement: "kronwerke:steps/obelisk"
+					criterion: ""
 				}
 			]
 			rewards: [
@@ -144,7 +148,9 @@
 			tasks: [
 				{
 					id: "115F51A02540B976"
-					type: "checkmark"
+					type: "advancement"
+					advancement: "kronwerke:steps/deposited"
+					criterion: ""
 				}
 			]
 			rewards: [

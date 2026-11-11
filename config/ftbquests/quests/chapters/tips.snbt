@@ -432,7 +432,9 @@
 			tasks: [
 				{
 					id: "1070402C45E996AD"
-					type: "checkmark"
+					type: "advancement"
+					advancement: "kronwerke:steps/claimed"
+					criterion: ""
 				}
 			]
 			rewards: [
@@ -456,13 +458,16 @@
 				id: "minecraft:white_banner"
 				count: 1
 			}
+			optional: true
 			dependencies: [
 				"47A0BA899F7092C0"
 			]
 			tasks: [
 				{
 					id: "62FA45AAE25F8559"
-					type: "checkmark"
+					type: "advancement"
+					advancement: "kronwerke:steps/team"
+					criterion: ""
 				}
 			]
 			rewards: [

@@ -479,3 +479,7 @@ Incendium, which ran about a tenth of the tick in the 50 player load test:
 ## 0.19.0
 
 - Kronwerke Core 0.34.0: `/kwtag <spieler> <tag>` sets any rank icon by hand, live on every server, and the first own tag, Omi.
+
+## 0.20.0
+
+- Kronwerke Core 0.35.0: a new stage opens without a reload of every data pack and without a JEI rebuild on the clients; Mekanism machines say which stage an item needs.

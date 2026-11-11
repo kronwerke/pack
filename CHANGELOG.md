@@ -466,3 +466,7 @@ Incendium, which ran about a tenth of the tick in the 50 player load test:
 
 - Kronwerke Core 0.31.0: round 2 and 3 of the production review. Reports from the Nether, the End and the mining world reach main also across restarts, a pause can be undone with "Season fortsetzen", a heavy last item cannot skip the event, bans and kicks count on every server, waystones of the Nether and End show everywhere, and more.
 - Chronik 1.2.0: rollbacks compare blocks instead of states, and items moved by mods' own buttons are logged.
+
+## 0.17.0
+
+- Kronwerke Core 0.32.1: the admin panel lists the players of every server and opens on the Nether, End and mining servers with `/kw admin`; the team hears when a move arrives nowhere; the panel fits small windows.

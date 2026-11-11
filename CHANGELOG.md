@@ -461,3 +461,8 @@ Incendium, which ran about a tenth of the tick in the 50 player load test:
 
 - Kronwerke Core 0.30.0: `/kw admin lag` names the chunks that cost the most, with team and chunk loader. Why a machine does not craft shows over its own window or floating over the block, with the item and the stage. The first steps in the quest book (claim, obelisk, first deposit, team) check what you really did instead of a tick box. Botania's tiara check only for players who wear one.
 - Quest texts: about fifty players instead of thirty; chunk loaders 9 per player, at most 25 per team, released after 7 days without a login, claims after 30.
+
+## 0.16.0
+
+- Kronwerke Core 0.31.0: round 2 and 3 of the production review. Reports from the Nether, the End and the mining world reach main also across restarts, a pause can be undone with "Season fortsetzen", a heavy last item cannot skip the event, bans and kicks count on every server, waystones of the Nether and End show everywhere, and more.
+- Chronik 1.2.0: rollbacks compare blocks instead of states, and items moved by mods' own buttons are logged.

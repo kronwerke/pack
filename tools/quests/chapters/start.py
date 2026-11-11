@@ -6,7 +6,7 @@ the server, and a hub that points to every stage 1 chapter. Rules from docs/STAG
 config/kronwerke/goals.json, lock texts from the Kronwerke Core 0.6.0 lang file, Nature's Aura
 recipes and the altar multiblock from its jar. Questbook, JEI, map, team and death basics live in
 tips.py, automated farms in farms.py."""
-from ftbq import (chapter, quest, task_item, task_checkmark, reward_item, reward_table, reward_xp,
+from ftbq import (chapter, quest, task_item, task_checkmark, task_advancement, reward_item, reward_table, reward_xp,
                   banner, img, item_texture)
 
 C = "start_here"
@@ -21,7 +21,7 @@ quests = [
           description=[
               "Folge der Reihe oben von links nach rechts: Basis sichern, Bruchstein sammeln, zum Obelisken, abgeben. Minecraft kennst du, hier geht es nur um das, was auf Kronwerke anders ist.",
               "",
-              "&6Kronwerke Season 2&r: rund dreißig Leute, eine Welt, fünf &6Stufen&r. Jede Stufe öffnet sich für alle, sobald der Server am &6Obelisken&r am Spawn ein gemeinsames Ziel gefüllt hat.",
+              "&6Kronwerke Season 2&r: rund fünfzig Leute, eine Welt, fünf &6Stufen&r. Jede Stufe öffnet sich für alle, sobald der Server am &6Obelisken&r am Spawn ein gemeinsames Ziel gefüllt hat.",
               "",
               "Fertige Quests klickst du an und holst dir die Belohnung. Wie das Buch, JEI und die Karte funktionieren, steht im Kapitel &6Tipps und Tricks&r.",
           ],
@@ -38,7 +38,7 @@ quests = [
               "",
               "Nachts ziehen neben Zombies und Skeletten die Kreaturen aus &6Born in Chaos&r herum, und einige sind zäh. Licht und Wände helfen wie immer.",
           ],
-          tasks=[task_checkmark("Meine Basis ist gesichert")],
+          tasks=[task_advancement("kronwerke:steps/claimed", "Mindestens ein Chunk ist geclaimt")],
           rewards=[reward_table("s1_common")],
           deps=["welcome"], icon="minecraft:filled_map"),
 
@@ -60,7 +60,7 @@ quests = [
               "",
               "Oben am Bildschirm zeigt dir eine &eBossleiste&r das aktive Ziel und wie weit es ist. Die siehst du überall, nicht nur am Obelisken.",
           ],
-          tasks=[task_checkmark("Ich stehe vor dem Obelisken")],
+          tasks=[task_advancement("kronwerke:steps/obelisk", "Am Obelisken angekommen")],
           rewards=[reward_item("waystones:warp_dust", 4)],
           deps=["d_stone"], icon="minecraft:lodestone"),
 
@@ -71,7 +71,7 @@ quests = [
               "",
               "&eSchleichen und Rechtsklick&r gibt alles aus deinem Inventar ab, was das Ziel gerade braucht. Was es nicht braucht, bleibt bei dir. Abgaben ab 64 Stück stehen im Chat.",
           ],
-          tasks=[task_checkmark("Abgegeben")],
+          tasks=[task_advancement("kronwerke:steps/deposited", "Etwas abgegeben")],
           rewards=[reward_table("s1_uncommon"), reward_xp(5)],
           deps=["o_find"], icon="minecraft:cobblestone", size=1.5, shape="gear"),
 

@@ -456,3 +456,8 @@ Incendium, which ran about a tenth of the tick in the 50 player load test:
 ## 0.14.0
 
 - Kronwerke Core 0.28.0: command selectors with a tag look only at the entities carrying it. Incendium and Tool Trims run about ten of them every tick, which with 50 players in the Nether was 15 percent of the tick.
+
+## 0.15.0
+
+- Kronwerke Core 0.30.0: `/kw admin lag` names the chunks that cost the most, with team and chunk loader. Why a machine does not craft shows over its own window or floating over the block, with the item and the stage. The first steps in the quest book (claim, obelisk, first deposit, team) check what you really did instead of a tick box. Botania's tiara check only for players who wear one.
+- Quest texts: about fifty players instead of thirty; chunk loaders 9 per player, at most 25 per team, released after 7 days without a login, claims after 30.

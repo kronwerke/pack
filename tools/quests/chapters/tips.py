@@ -4,7 +4,7 @@ claims and teams, the server rules of Kronwerke (STAGES.md), what to do about la
 the keybinds that matter and their conflicts, death with the Corpse mod, and where to get help.
 Checkmark quests only. Facts come from the server configs and the mod jars (key defaults were
 read from the class files), nothing here needs an item."""
-from ftbq import (chapter, quest, task_checkmark, reward_item, reward_table, reward_xp, banner)
+from ftbq import (chapter, quest, task_checkmark, task_advancement, reward_item, reward_table, reward_xp, banner)
 
 C = "tips"
 
@@ -202,9 +202,9 @@ quests = [
               "",
               "Du hast &e500 Chunks&r. Das ist viel, aber nicht das ganze Tal: Ein Chunk ist 16 mal 16 Blöcke, 500 reichen für eine große Basis mit Feldern und Fabrik.",
               "",
-              "&eShift&r und linke Maustaste ziehen lädt Chunks &edauerhaft&r, bis zu &e25&r. Maschinen darin laufen weiter, auch wenn du offline bist.",
+              "&eShift&r und linke Maustaste ziehen lädt Chunks &edauerhaft&r: bis zu &e9&r pro Spieler, höchstens &e25&r fürs ganze Team. Maschinen darin laufen weiter, auch wenn du offline bist. Nach &e7 Tagen&r ohne Login gibt der Server sie wieder frei, nach &e30 Tagen&r auch die Claims.",
           ],
-          tasks=[task_checkmark("Basis gesichert")],
+          tasks=[task_advancement("kronwerke:steps/claimed", "Mindestens ein Chunk ist geclaimt")],
           rewards=[reward_table("s1_common"), reward_xp(3)],
           deps=["m_waystone"], icon="minecraft:oak_fence"),
 
@@ -217,9 +217,9 @@ quests = [
               "",
               "&eTipp:&r Mit &6Ping Wheel&r zeigst du deinem Team, wo es langgeht: ein Klick mit dem &eMausrad&r setzt einen Ping dort, wo du hinschaust, sichtbar für alle in der Nähe.",
           ],
-          tasks=[task_checkmark("Verstanden")],
+          tasks=[task_advancement("kronwerke:steps/team", "In einem Team")],
           rewards=[reward_item("minecraft:white_banner", 1), reward_xp(3)],
-          deps=["m_claim"], icon="minecraft:white_banner"),
+          deps=["m_claim"], icon="minecraft:white_banner", optional=True),
 
     # ---- Die Regeln von Kronwerke ------------------------------------------------
     quest("r_together", 4.5, 4, "&6Verstehe die Regel Nummer eins",

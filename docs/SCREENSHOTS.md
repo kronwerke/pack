@@ -2,7 +2,15 @@
 
 Pictures the quests should get, by chapter. Each line is the quest id and what the shot should show. Take them at 16:9, GUI scale 2 or 3, HUD hidden (F1) unless the line says the HUD matters. Save as PNG named `<chapter>_<quest id>.png`; they go into `kubejs/assets/kronwerke/textures/quests/shots/` and get wired into the chapters afterwards.
 
-The test world has every line of this list as a grey box: `/kw testworld` takes an operator there (it builds the world on the first visit), `/kw testworld rebuild` builds it again after a change. Each box holds the scene for its shot, a chest with what still has to happen by hand, and signs facing the path. The boxes are generated from this list and `tools/shots/scenes.py` by `tools/shots/build.py`; a line without a hand made scene shows the quest's task items.
+The pictures are taken by the camera (kronwerke/camera) in the test world `kronwerke:testworld` on the real server. A line of this list that has a scene in `tools/shots/scenes.py` gets a grey box there with its scene in it; a line without one gets no box and no picture. Shots of a screen, a fight or a player at work stay without one.
+
+How a scene is made:
+
+- Its layout comes from the mod's own files wherever there is one: Create's Ponder scenes, Immersive Engineering's multiblock templates, the pentacles of Occultism's Dictionary of Spirits (`tools/shots/structs.py` reads them from the jars). Multiblocks stand formed.
+- The camera stands south of a scene and looks north, so every front faces south. A block that can be turned has to say which way it looks; `build.py --check` refuses a scene that leaves it open, and holds every block, state, item and entity id against a catalog of the mod jars (`tools/shots/catalog.py`).
+- `tools/shots/build.py` writes the world into the `shots-world` branch of this repository. The pack itself carries nothing of it.
+
+On the server: `/kw testworld pull` fetches the branch, `/kw testworld apply` builds it (what failed is in the `.log` next to each file under `kronwerke/shots/world`), `/kw cam run` takes the pictures, `/kw testworld` takes an operator there to look.
 
 Chapters without a list here (most of the stage 1 gap chapters from the first wave) work without pictures for now.
 

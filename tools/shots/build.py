@@ -8,14 +8,16 @@ standing still, a chest with what the shot still needs by hand, and signs that f
 path. Scenes without a hand written entry in scenes.py fall back to the quest's task
 items and icon.
 
-Output, all under kubejs/data/kronwerke:
-  function/shots/row_NN.mcfunction   one per row of boxes
-  function/shots/box/NNN.mcfunction  one per box, so a bad line only costs its own box
-  shots/rows.json                    the rows with their area, read by /kw testworld
-  shots/shots.json                   one camera position per cell, read by /kw cam run
+Output, into $KW_SHOTS_OUT (the shots-world branch of the pack repository, which the server
+fetches with /kw testworld pull and builds with /kw testworld apply; the pack itself carries
+nothing of the test world):
+  000_pad.mcfunction        the landing pad and the section signs
+  box_NNN.mcfunction        one per box: its space cleared, floor, walls, the scenes
+  structures/**.nbt         structures taken from the mod jars (Ponder scenes and the like)
+  shots.json                one camera position per cell, read by /kw cam run
 
-Usage: build.py [--check]   (--check also validates block, item and entity ids against
-                             a catalog made from the server's mod jars, when present)
+Usage: build.py [--check]   (--check also validates block, item and entity ids against the
+                             catalog catalog.py makes from the mod jars)
 """
 import json
 import os
@@ -35,8 +37,22 @@ ROW_WIDTH = 420   # wrap a section row after this many blocks
 WALL_H = 16       # tall enough that the camera sees grey behind the scene, not sky
 PAD = (-4, -4)
 
-OUT_FN = os.path.join(ROOT, "kubejs", "data", "kronwerke", "function", "shots")
-OUT_DATA = os.path.join(ROOT, "kubejs", "data", "kronwerke", "shots")
+OUT = os.environ.get("KW_SHOTS_OUT", "/home/claude/kw/shots-world")
+CATALOG = os.environ.get("KW_CATALOG", "/tmp/claude-0/cat/catalog.json")
+_catalog = None
+
+
+def catalog():
+    """Blocks with their state properties, items, entities and templates of the mod jars (catalog.py)."""
+    global _catalog
+    if _catalog is None:
+        with open(CATALOG) as fh:
+            _catalog = json.load(fh)
+    return _catalog
+
+
+# which way a block looks, for the blocks that have a front: the camera stands south
+FACING_PROPS = ("facing", "horizontal_facing")
 
 
 def quest_index():
@@ -111,6 +127,7 @@ class Cell:
         self.notes = []
         self.pts = []      # what the camera has to frame, relative (x, y, z) corners
         self.focused = False
+        self.yaw = 165.0   # where the camera looks: 180 is straight north
 
     def focus(self, x1, y1, z1, x2, y2, z2):
         """Frame only this part of the scene (a barrel at the foot of a tall obelisk)."""
@@ -126,19 +143,91 @@ class Cell:
     def _p(self, x, y, z):
         return f"{self.ox + x} {FLOOR_Y + 1 + y} {self.oz + z}"
 
+    @staticmethod
+    def front(block):
+        """A block with a front and no direction given looks south, at the camera."""
+        name, _, props = block.partition("[")
+        known = catalog()["blocks"].get(name)
+        if not known:
+            return block
+        given = {kv.split("=")[0] for kv in props.rstrip("]").split(",") if kv}
+        for p in FACING_PROPS:
+            if p in known and sorted(known[p]) == ["east", "north", "south", "west"] and p not in given:
+                rest = props.rstrip("]")
+                return f"{name}[{p}=south{',' + rest if rest else ''}]"
+        return block
+
     def b(self, x, y, z, block, nbt=""):
         if not block.startswith("minecraft:air"):
             self._see(x, y, z)
-        self.cmds.append(f"setblock {self._p(x, y, z)} {block}{nbt}")
+        self.cmds.append(f"setblock {self._p(x, y, z)} {self.front(block)}{nbt}")
 
     def f(self, x1, y1, z1, x2, y2, z2, block):
         if not block.startswith("minecraft:air"):
             self._see(x1, y1, z1, x2, y2, z2)
         self.cmds.append(f"fill {self._p(x1, y1, z1)} {self._p(x2, y2, z2)} {block}")
 
-    def t(self, template, x, y, z, rot="none"):
-        self._see(x, y, z, self.w - 1, y + 3, self.d - 1)   # the template's size is not known here
-        self.cmds.append(f"place template {template} {self._p(x, y, z)} {rot}")
+    ROT = {"none": lambda x, z: (x, z), "clockwise_90": lambda x, z: (-z, x),
+           "180": lambda x, z: (-x, -z), "counterclockwise_90": lambda x, z: (z, -x)}
+
+    def _origin(self, x, z, size, rot):
+        """Where a template's origin goes so that, turned, its box starts at x, z. -> (ox, oz, w, d)"""
+        sx, _, sz = size
+        f = self.ROT[rot]
+        corners = [f(0, 0), f(sx - 1, 0), f(0, sz - 1), f(sx - 1, sz - 1)]
+        minx, minz = min(c[0] for c in corners), min(c[1] for c in corners)
+        maxx, maxz = max(c[0] for c in corners), max(c[1] for c in corners)
+        return x - minx, z - minz, maxx - minx + 1, maxz - minz + 1
+
+    def t(self, template, x, y, z, size, rot="none"):
+        """A structure template a mod ships as data, its box starting at x, y, z."""
+        ox, oz, w, d = self._origin(x, z, size, rot)
+        self._see(x, y, z, x + w - 1, y + size[1] - 1, z + d - 1)
+        self.cmds.append(f"place template {template} {self._p(ox, y, oz)} {rot}")
+        return w, d
+
+    def nbt(self, jar, path, x, y, z, rot="none", see=True):
+        """A structure file from a mod jar that is no data template (a Ponder scene): it is
+        copied into the world's own structures and placed by /kw testworld place."""
+        import structs
+        name = jar.lower().split("-")[0] + "/" + os.path.splitext(path.split("/ponder/")[-1].split("/structure/")[-1])[0]
+        dest = os.path.join(OUT, "structures", name + ".nbt")
+        if name not in self.vendored:
+            os.makedirs(os.path.dirname(dest), exist_ok=True)
+            with open(dest, "wb") as fh:
+                fh.write(structs.raw(jar, path))
+            size, palette, blocks, _ = structs.load(jar, path)
+            self.vendored[name] = (size, palette, blocks)
+        size, palette, blocks = self.vendored[name]
+        ox, oz, w, d = self._origin(x, z, size, rot)
+        if see:
+            f = self.ROT[rot]
+            for bx, by, bz, p, _ in blocks:
+                if by == 0 or palette[p].startswith("minecraft:air"):
+                    continue       # the bottom layer is the scene's floor plate
+                rx, rz = f(bx, bz)
+                self._see(ox + rx, y + by, oz + rz)
+        self.cmds.append(f"kw testworld place shots:{name} {self._p(ox, y, oz)} {rot}")
+        return w, d
+
+    vendored = {}
+
+    def drop(self, x, y, z, item, count=1):
+        """An item lying or falling there (into a basin, onto a belt)."""
+        self.cmds.append(f"summon item {self.ox + x + .5} {FLOOR_Y + 1 + y} {self.oz + z + .5} "
+                         f"{{Item:{{id:\"{item}\",count:{count}}},PickupDelay:32767,Age:-32768,Tags:[\"kw_shot\"]}}")
+
+    def use(self, x, y, z, face, item, sneak=False):
+        """A tool used on a block the way a player would (the hammer that forms a multiblock)."""
+        self.cmds.append(f"kw testworld use {self._p(x, y, z)} {face} {item}{' sneak' if sneak else ''}")
+
+    def changed(self, x, y, z, block):
+        """Fails in the build log when the block there is still this one: the hammer did nothing."""
+        self.cmds.append(f"execute unless block {self._p(x, y, z)} {block}")
+
+    def expect(self, x, y, z, block):
+        """Fails in the build log when the block there is not this one: has the multiblock formed?"""
+        self.cmds.append(f"execute if block {self._p(x, y, z)} {block}")
 
     def m(self, entity, x, y, z, nbt="", ai=False, rot=180):
         self._see(x, y, z, x, y + 2, z)
@@ -255,78 +344,84 @@ def camera(key, cell, south_limit, yaw=165.0, fov=60):
 
 # ---- layout ------------------------------------------------------------------------
 
+def clear(x0, z0, x1, z1, top):
+    """fill commands that empty a space, in pieces the fill limit allows."""
+    out = []
+    span = max(1, 32768 // ((z1 - z0 + 1) * (top - FLOOR_Y)))
+    for cx0 in range(x0, x1 + 1, span):
+        out.append(f"fill {cx0} {FLOOR_Y + 1} {z0} {min(x1, cx0 + span - 1)} {top} {z1} minecraft:air")
+    return out
+
+
 def build(check=False):
     import scenes
     idx = quest_index()
     lines = parse_list()
-    blocks_cat = None
-    if check:
-        catp = os.environ.get("KW_CATALOG", "/tmp/claude-0/cat/catalog.json")
-        if os.path.exists(catp):
-            blocks_cat = json.load(open(catp))
 
-    os.makedirs(os.path.join(OUT_FN, "box"), exist_ok=True)
-    for f in os.listdir(os.path.join(OUT_FN, "box")):
-        os.remove(os.path.join(OUT_FN, "box", f))
-    for f in os.listdir(OUT_FN):
-        if f.endswith(".mcfunction"):
-            os.remove(os.path.join(OUT_FN, f))
-    os.makedirs(OUT_DATA, exist_ok=True)
+    os.makedirs(OUT, exist_ok=True)
+    for f in os.listdir(OUT):
+        if f.endswith(".mcfunction") or f == "shots.json":
+            os.remove(os.path.join(OUT, f))
+    import shutil
+    shutil.rmtree(os.path.join(OUT, "structures"), ignore_errors=True)
+    Cell.vendored.clear()
 
-    rows = []           # [{fn, x0, z0, x1, z1, boxes}]
     shots = []          # camera positions for /kw cam run
+    files = {}          # name -> commands
+    pad = [
+        "# the landing pad; /kw testworld puts you here",
+        f"#area {PAD[0] - 2} {PAD[1] - 2} {PAD[0] + 2} {PAD[1] + 2}",
+        f"fill {PAD[0] - 2} {FLOOR_Y} {PAD[1] - 2} {PAD[0] + 2} {FLOOR_Y} {PAD[1] + 2} minecraft:smooth_stone",
+    ]
     x, z = 0, 0
     row_depth = 0
     cur_section = None
-    row_boxes = []
-    problems = []
-
     row_shots = []
+    problems = []
+    top = FLOOR_Y + WALL_H + 12
 
     def close_row():
-        nonlocal x, z, row_depth, row_boxes, row_shots
+        nonlocal x, z, row_depth, row_shots
         # the camera stands in the path south of the row, in front of the next row's north wall
         for k, cell_ in row_shots:
-            shots.append(camera(k, cell_, south_limit=z + row_depth + ROW_GAP - 0.7))
+            shots.append(camera(k, cell_, south_limit=z + row_depth + ROW_GAP - 0.7, yaw=cell_.yaw))
         row_shots = []
-        if row_boxes:
-            rows.append({"boxes": row_boxes, "z0": z - 2, "z1": z + row_depth + 2,
-                         "x0": -8, "x1": max(b["x1"] for b in row_boxes) + 2})
-        z += row_depth + ROW_GAP
-        x, row_depth, row_boxes = 0, 0, []
+        if row_depth:
+            z += row_depth + ROW_GAP
+        x, row_depth = 0, 0
 
     n = 0
     for section, ch, qs, desc in lines:
+        keys = [k for k in ([f"{ch}/{q}" for q in qs] or [ch]) if k in scenes.SCENES]
+        if not keys:
+            continue            # no scene of its own: no box and no picture
         if section != cur_section:
             close_row()
             cur_section = section
-            row_boxes.append({"label": section, "x0": -8, "x1": -8, "z": z, "cmds": [], "is_label": True})
-        keys = [f"{ch}/{q}" for q in qs] or [ch]
-        cells = []
-        for k in keys:
-            spec = scenes.SCENES.get(k)
-            w, d = (spec.w, spec.d) if spec else (CELL, CELL)
-            cells.append((k, spec, w, d))
-        bw = sum(c[2] for c in cells) + (len(cells) - 1) + 2
-        bd = max(c[3] for c in cells) + 2 + 2      # +2 for the sign strip at the south edge
+            pad.append(f"#area -8 {z} -6 {z + 2}")
+            pad.append(f"setblock -6 {FLOOR_Y} {z + 1} minecraft:smooth_stone")
+            pad.append(f"setblock -6 {FLOOR_Y + 1} {z + 1} minecraft:oak_sign[rotation=0]{sign_text(wrap(section))}")
+        cells = [(k, scenes.SCENES[k]) for k in keys]
+        bw = sum(c[1].w for c in cells) + (len(cells) - 1) + 2
+        bd = max(c[1].d for c in cells) + 2 + 2      # +2 for the sign strip at the south edge
         if x and x + bw > ROW_WIDTH:
             close_row()
         n += 1
-        box = {"n": n, "x0": x, "x1": x + bw, "z": z, "cmds": []}
-        cmds = box["cmds"]
-        cmds.append(f"# {n:03d} {ch}/{', '.join(qs)}")
-        cmds.append(f"fill {x} {FLOOR_Y} {z} {x + bw} {FLOOR_Y} {z + bd} minecraft:light_gray_concrete")
+        cmds = [f"# {n:03d} {ch}/{', '.join(k.split('/')[-1] for k in keys)}",
+                f"#area {x - GAP} {z - ROW_GAP} {x + bw + GAP} {z + bd + ROW_GAP}"]
+        # the box's space and the paths around it: nothing of an older layout stays in view
+        cmds += clear(x - GAP, z - ROW_GAP, x + bw + GAP, z + bd + ROW_GAP, top)
+        cmds.append(f"fill {x - GAP} {FLOOR_Y - 3} {z - ROW_GAP} {x + bw + GAP} {FLOOR_Y - 1} {z + bd + ROW_GAP} minecraft:stone")
+        cmds.append(f"fill {x - GAP} {FLOOR_Y} {z - ROW_GAP} {x + bw + GAP} {FLOOR_Y} {z + bd + ROW_GAP} minecraft:light_gray_concrete")
         # the north wall runs on over the gap to the next box, so no sky shows between boxes
         cmds.append(f"fill {x} {FLOOR_Y + 1} {z} {x + bw + GAP} {FLOOR_Y + WALL_H} {z} minecraft:light_gray_concrete")
         cmds.append(f"fill {x} {FLOOR_Y + 1} {z} {x} {FLOOR_Y + WALL_H} {z + bd} minecraft:light_gray_concrete")
         cx = x + 1
-        for i, (k, spec, w, d) in enumerate(cells):
+        for i, (k, spec) in enumerate(cells):
+            w, d = spec.w, spec.d
             cell = Cell(cx, z + 1, w, d)
             info = idx.get(k, {"title": "", "items": [], "kill": [], "dim": [], "icon": None})
-            if spec:
-                spec.fn(cell)
-            else:
-                scenes.auto(cell, info)
+            spec.fn(cell)
             # signs along the south edge of the cell, facing south toward the path
             sz = z + bd - 1
             sign_lines = [f"{n:03d}" + (f".{i + 1}" if len(cells) > 1 else ""), ch, k.split("/")[-1] if "/" in k else ""]
@@ -338,68 +433,34 @@ def build(check=False):
             for j in range(0, len(body), 4):
                 texts.append(body[j:j + 4])
             for j, t in enumerate(texts[: max(1, w)]):
-                sx = cx + j
-                cmds.append(f"setblock {sx} {FLOOR_Y + 1} {sz} minecraft:air")
-                cmds.append(f"setblock {sx} {FLOOR_Y + 1} {sz} minecraft:oak_sign[rotation=0]{sign_text(t)}")
+                cmds.append(f"setblock {cx + j} {FLOOR_Y + 1} {sz} minecraft:oak_sign[rotation=0]{sign_text(t)}")
             # a floating label over the cell, readable from the air: number, quest id, title
             label = json.dumps([{"text": sign_lines[0] + "  ", "color": "gold"}, {"text": k, "color": "gray"},
                                 {"text": "\n" + info.get("title", ""), "color": "white"}], ensure_ascii=False)
             label = label.replace("\\", "\\\\").replace("'", "\\'")
             cmds.append(f"summon text_display {cx + w / 2} {FLOOR_Y + 1 + 7} {z + 1 + d / 2} "
                         f"{{text:'{label}',billboard:\"center\",background:1275068416,Tags:[\"kw_shot\"],alignment:\"center\",line_width:200,transformation:{{scale:[1.6f,1.6f,1.6f],translation:[0f,0f,0f],left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f]}}}}")
-            cmds.extend(cell.cmds)
             # a grey divider east of every cell, as deep as the cell: the camera sees this scene
             # against grey, not the next scene beside it
             cmds.append(f"fill {cx + w} {FLOOR_Y + 1} {z} {cx + w} {FLOOR_Y + WALL_H} {z + d} minecraft:light_gray_concrete")
-            # only cells with a scene of their own get a picture; the automatic item stages are
-            # for walking through, not for the quest book
-            if spec and not needs_screen(desc):
-                row_shots.append((k, cell))
+            cmds.extend(cell.cmds)
+            row_shots.append((k, cell))
             cx += w + 1
-        row_boxes.append(box)
+        files[f"box_{n:03d}"] = cmds
         row_depth = max(row_depth, bd)
         x += bw + GAP
     close_row()
 
-    # the pad, and a sign per section at the west end of its row
-    first = [
-        "# the landing pad; /kw testworld puts you here",
-        f"fill {PAD[0] - 2} {FLOOR_Y} {PAD[1] - 2} {PAD[0] + 2} {FLOOR_Y} {PAD[1] + 2} minecraft:smooth_stone",
-    ]
-    out_rows = []
-    for r, row in enumerate(rows):
-        body = list(first) if r == 0 else []
-        first = []
-        # clear the row's space first: an older layout's walls would stand in front of the camera
-        top = FLOOR_Y + WALL_H + 12
-        cz0, cz1 = row["z0"] - 3, row["z1"] + 3
-        span = max(1, 32768 // ((cz1 - cz0 + 1) * (top - FLOOR_Y)))
-        for cx0 in range(row["x0"] - 4, row["x1"] + 5, span):
-            cx1 = min(row["x1"] + 4, cx0 + span - 1)
-            body.append(f"fill {cx0} {FLOOR_Y + 1} {cz0} {cx1} {top} {cz1} minecraft:air")
-        for b in row["boxes"]:
-            if b.get("is_label"):
-                body.append(f"setblock -6 {FLOOR_Y} {b['z'] + 1} minecraft:smooth_stone")
-                body.append(f"setblock -6 {FLOOR_Y + 1} {b['z'] + 1} minecraft:oak_sign[rotation=0]{sign_text(wrap(b['label']))}")
-                continue
-            path = os.path.join(OUT_FN, "box", f"{b['n']:03d}.mcfunction")
-            with open(path, "w", encoding="utf-8") as fh:
-                fh.write("\n".join(b["cmds"]) + "\n")
-            body.append(f"function kronwerke:shots/box/{b['n']:03d}")
-        fn = f"row_{r:02d}"
-        with open(os.path.join(OUT_FN, fn + ".mcfunction"), "w", encoding="utf-8") as fh:
-            fh.write("\n".join(body) + "\n")
-        out_rows.append({"function": f"kronwerke:shots/{fn}", "x0": row["x0"], "z0": row["z0"], "x1": row["x1"], "z1": row["z1"]})
-    with open(os.path.join(OUT_DATA, "shots.json"), "w") as fh:
+    files["000_pad"] = pad
+    for name, cmds in files.items():
+        with open(os.path.join(OUT, name + ".mcfunction"), "w", encoding="utf-8") as fh:
+            fh.write("\n".join(cmds) + "\n")
+    with open(os.path.join(OUT, "shots.json"), "w") as fh:
         json.dump({"shots": shots}, fh, indent=1)
-    with open(os.path.join(OUT_DATA, "rows.json"), "w") as fh:
-        json.dump({"pad": [PAD[0] + 0.5, FLOOR_Y + 1, PAD[1] + 0.5], "rows": out_rows}, fh, indent=1)
 
-    if blocks_cat:
-        problems += validate(blocks_cat)
-    total_cells = sum(max(1, len(l[2])) for l in lines)
-    hand = sum(1 for l in lines for q in (l[2] or [None]) if (f"{l[1]}/{q}" if q else l[1]) in scenes.SCENES)
-    print(f"{n} boxes, {total_cells} cells ({hand} hand made), {len(rows)} rows")
+    if check:
+        problems += validate(catalog(), files)
+    print(f"{n} boxes, {len(shots)} scenes, {len(Cell.vendored)} structures -> {OUT}")
     for p in problems:
         print("  " + p)
     return not problems
@@ -410,26 +471,34 @@ VANILLA_ENTITIES = {"item_frame", "armor_stand", "villager", "blaze", "wither", 
                     "piglin", "piglin_brute", "hoglin", "wither_skeleton", "enderman", "end_crystal",
                     "allay", "parrot", "horse", "wolf", "cat", "fox", "bee", "strider", "magma_cube",
                     "slime", "creeper", "spider", "witch", "glow_item_frame", "item_display", "block_display",
-                    "text_display", "lightning_bolt", "area_effect_cloud", "chest_minecart", "minecart"}
+                    "text_display", "item", "lightning_bolt", "area_effect_cloud", "chest_minecart", "minecart"}
 
 
-def validate(cat):
+def validate(cat, files):
     blocks, items, ents, structs = cat["blocks"], set(cat["items"]), set(cat["entities"]), set(cat["structures"])
     probs = []
-    for f in sorted(os.listdir(os.path.join(OUT_FN, "box"))):
-        for ln, line in enumerate(open(os.path.join(OUT_FN, "box", f), encoding="utf-8"), 1):
+    for f, cmds in sorted(files.items()):
+        for ln, line in enumerate(cmds, 1):
             line = line.strip()
-            where = f"box/{f}:{ln}"
+            where = f"{f}:{ln} ({cmds[0][2:]})"
             for bid in re.findall(r"(?:setblock -?\d+ -?\d+ -?\d+|fill -?\d+ -?\d+ -?\d+ -?\d+ -?\d+ -?\d+) ([a-z0-9_.-]+:[a-z0-9_/.-]+)(\[[^\]]*\])?", line):
                 name, props = bid
                 if name not in blocks:
                     probs.append(f"{where}: unknown block {name}")
                     continue
                 known = blocks[name]
+                given = set()
                 for kv in props.strip("[]").split(",") if props else []:
                     k, _, v = kv.partition("=")
-                    if known and k in known and v not in known[k]:
+                    given.add(k)
+                    if known and k not in known:
+                        probs.append(f"{where}: {name} has no property {k} (has {sorted(known)})")
+                    elif known and v not in known[k]:
                         probs.append(f"{where}: {name} {k}={v} not in {known[k]}")
+                # a block that can be turned has to say which way: the default is rarely right
+                for k in ("facing", "horizontal_facing", "axis", "horizontal_axis"):
+                    if known and k in known and len(known[k]) > 1 and k not in given:
+                        probs.append(f"{where}: {name} needs {k} (one of {known[k]})")
             for iid in re.findall(r'id:"([a-z0-9_.-]+:[a-z0-9_/.-]+)"', line):
                 if iid not in items and iid not in blocks:
                     probs.append(f"{where}: unknown item {iid}")

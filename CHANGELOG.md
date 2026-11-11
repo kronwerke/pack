@@ -487,3 +487,7 @@ Incendium, which ran about a tenth of the tick in the 50 player load test:
 ## 0.21.0
 
 - Kronwerke Core 0.36.1: entities, Create tracks and Modular Routers no longer send anything into a dimension that is played on another server, where it would be lost.
+
+## 0.21.1
+
+- Kronwerke Core 0.36.2: entities teleported into a dimension on another server stay where they are.

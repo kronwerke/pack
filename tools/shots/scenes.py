@@ -19,14 +19,14 @@ SCENES = {}
 
 
 class Spec:
-    def __init__(self, fn, w, d):
-        self.fn, self.w, self.d = fn, w, d
+    def __init__(self, fn, w, d, h=0):
+        self.fn, self.w, self.d, self.h = fn, w, d, h      # h: walls at least this high
 
 
-def scene(*keys, w=9, d=9):
+def scene(*keys, w=9, d=9, h=0):
     def deco(fn):
         for k in keys:
-            SCENES[k] = Spec(fn, w, d)
+            SCENES[k] = Spec(fn, w, d, h)
         return fn
     return deco
 
@@ -98,11 +98,12 @@ def ie(b, name, x, z, formed=True):
 def ie_scene(key, name, w=None, d=None):
     size = IE[name][0]
     w = w or max(9, size[0] + 4)
-    d = d or max(9, size[2] + 4)
+    # a tall one needs room in front of it for the camera, and walls that stay behind it
+    d = d or max(9, size[2] + 4, size[1] + 6)
 
     def fn(b):
-        ie(b, name, (b.w - size[0]) // 2, max(1, b.d - size[2] - 3))
-    SCENES[key] = Spec(fn, w, d)
+        ie(b, name, (b.w - size[0]) // 2, 2)
+    SCENES[key] = Spec(fn, w, d, h=size[1] + 12)
 
 
 # ---- Occultism ------------------------------------------------------------------------
@@ -127,8 +128,10 @@ def modonomicon(b, name, x, z, ground=None):
                     block = {"#minecraft:candles": "minecraft:white_candle[candles=1,lit=true]"}.get(m["tag"])
                     if block is None:
                         raise ValueError(f"{name}: no block for {ch} {m}")
-                if y == -1 and ground:
-                    block = ground
+                if y == -1:
+                    if ground is False:
+                        continue                 # the book's ground is only for show
+                    block = ground or block
                 if "chalk_glyph" in block:
                     block = f"{block}[facing=south,sign={sign % 13}]"
                     sign += 5
@@ -139,17 +142,19 @@ def modonomicon(b, name, x, z, ground=None):
 
 
 def pentacle(b, name, cx, cz, bowls=4):
-    """A pentacle exactly as the Dictionary of Spirits defines it, on otherstone so the chalk
-    reads, with the sacrificial bowls a ritual needs standing around it."""
+    """A pentacle exactly as the Dictionary of Spirits defines it, with the sacrificial bowls a
+    ritual needs standing around it."""
     import structs
     n = len(structs.modonomicon("occultism", f"data/occultism/modonomicon/multiblocks/{name}.json")[0][0])
     half = n // 2
-    stage(b, cx - half - 1, cz - half - 1, cx + half + 1, cz + half + 1, "occultism:otherstone")
-    modonomicon(b, name, cx - half, cz - half, ground="occultism:otherstone")
+    # a dark, even floor: white chalk on the pale otherstone of the book's preview is lost
+    stage(b, cx - half - 1, cz - half - 1, cx + half + 1, cz + half + 1, "minecraft:smooth_basalt")
+    modonomicon(b, name, cx - half, cz - half, ground=False)
     if bowls:
         r = half + 1
-        for dx, dz in ((-r, -r), (r, -r), (-r, r), (r, r))[:bowls]:
+        for dx, dz in ((0, -r), (r, 0), (0, r), (-r, 0))[:bowls]:
             b.b(cx + dx, 0, cz + dz, "occultism:sacrificial_bowl[facing=up]")
+    b.pitch = 58.0                          # from above, the way the book shows it
     return n
 
 
@@ -186,7 +191,7 @@ def _(b):
 @scene("occultism_afrit/storage", w=13, d=13)
 def _(b):
     # the book's own demo: the actuator in the middle, four stabilizers on otherstone posts facing it
-    modonomicon(b, "storage_stabilizer_demo", 2, 2)
+    modonomicon(b, "storage_stabilizer_demo", 2, 2, ground=False)
 
 
 # ===================================================================================
@@ -299,6 +304,7 @@ def _(b):
             (-1, 1): "botania:livingrock", (0, 1): "minecraft:stone", (1, 1): "botania:livingrock"}
     for (dx, dz), block in ring.items():
         b.b(4 + dx, 0, 4 + dz, block)
+    b.pitch = 62.0                          # over the ring, or the front row hides the flower
 
 
 # ===================================================================================
@@ -308,8 +314,26 @@ def _(b):
 # motor behind the scene drives what has to turn.
 
 def motor(b, x, y, z, facing, speed=32):
-    """A creative motor; facing is where its shaft points."""
+    """A creative motor; facing is where its shaft points. It is never part of the picture:
+    it sits in the floor or behind a wall."""
+    n = len(b.pts)
     b.b(x, y, z, f"create:creative_motor[facing={facing}]", f"{{ScrollValue:{speed}}}")
+    del b.pts[n:]
+
+
+def drive_from_behind(b, x, y, z):
+    """Turns what stands at x, y, z and takes a shaft from the north: a wall of andesite casing
+    behind it, the shaft through the wall encased, the motor behind the wall."""
+    b.f(x - 1, 0, z - 1, x + 1, y + 1, z - 1, "create:andesite_casing")
+    b.b(x, y, z - 1, "create:andesite_encased_shaft[axis=z]")
+    motor(b, x, y, z - 2, "south")
+
+
+def drive_from_below(b, x, y, z):
+    """Turns what stands at x, y, z and takes a shaft from below: a shaft up from a motor in the floor."""
+    for yy in range(-1, y):
+        b.b(x, yy, z, "create:shaft[axis=y]")      # through a hole in the floor
+    motor(b, x, -2, z, "up")
 
 
 @scene("create/depot")
@@ -317,8 +341,7 @@ def _(b):
     # Ponder mechanical_press/pressing: the press two above what it presses, one block of air between
     b.b(4, 0, 4, "create:depot")
     b.b(4, 2, 4, "create:mechanical_press[facing=south]")
-    b.b(4, 2, 3, "create:shaft[axis=z]")
-    motor(b, 4, 2, 2, "south")
+    drive_from_behind(b, 4, 2, 4)
     b.use(4, 0, 4, "up", "minecraft:iron_ingot")
 
 
@@ -327,8 +350,8 @@ def _(b):
     # Ponder mechanical_mixer/mixing: mixer two above the basin, a cogwheel beside it drives it
     b.b(4, 0, 4, "create:basin[facing=down]")
     b.b(4, 2, 4, "create:mechanical_mixer")
-    b.b(4, 2, 3, "create:cogwheel[axis=y]")
-    motor(b, 4, 3, 3, "down")
+    b.b(5, 2, 4, "create:cogwheel[axis=y]")
+    drive_from_below(b, 5, 2, 4)
     b.drop(4, 1, 4, "minecraft:andesite", 16)
     b.drop(4, 1.3, 4, "minecraft:iron_nugget", 16)
 
@@ -338,8 +361,7 @@ def _(b):
     # Ponder mechanical_press/compacting: the press over a basin
     b.b(4, 0, 4, "create:basin[facing=down]")
     b.b(4, 2, 4, "create:mechanical_press[facing=south]")
-    b.b(4, 2, 3, "create:shaft[axis=z]")
-    motor(b, 4, 2, 2, "south")
+    drive_from_behind(b, 4, 2, 4)
     b.drop(4, 1, 4, "minecraft:flint", 8)
     b.drop(4, 1.3, 4, "minecraft:gravel", 8)
     b.use(4, 0, 4, "up", "minecraft:lava_bucket")
@@ -347,43 +369,133 @@ def _(b):
 
 @scene("create/water_wheel", w=10)
 def _(b):
-    # four wheels on one shaft; a flume behind them, the water runs over their tops and falls
-    # in front into a trench, as in Ponder water_wheel (source beside, flow over the top)
+    # Four wheels on one shaft, a sheet of water falling past their backs into a trench:
+    # falling water beside a wheel turns it, as in Ponder water_wheel. A source spreads to
+    # every side even while it falls, so the flume is closed all round and open below.
     for x in range(3, 7):
         b.b(x, 1, 4, "create:water_wheel[facing=east]")
-        b.b(x, 1, 3, "minecraft:spruce_planks")           # under the flume
-        b.b(x, 2, 2, "minecraft:spruce_planks")           # its back wall
-        b.b(x, -1, 5, "minecraft:air")                    # the trench the water falls into
-    for z in (2, 3, 4):
-        b.b(2, 2, z, "minecraft:spruce_planks")
-        b.b(7, 2, z, "minecraft:spruce_planks")
-    b.f(2, 1, 3, 2, 1, 3, "minecraft:spruce_planks")
-    b.f(7, 1, 3, 7, 1, 3, "minecraft:spruce_planks")
-    b.b(2, 1, 4, "create:shaft[axis=x]")
-    b.b(7, 1, 4, "create:shaft[axis=x]")
+        b.b(x, -1, 3, "minecraft:air")                    # the trench the water falls into
+    for x in (2, 7):
+        b.b(x, 0, 4, "create:andesite_casing")
+        b.b(x, 1, 4, "create:andesite_encased_shaft[axis=x]")
+    b.f(2, 2, 2, 7, 2, 3, "minecraft:spruce_planks")
+    # the front of the flume is a row of raised trapdoors: they hold the water and leave the
+    # wheels in view
+    b.f(3, 2, 4, 6, 2, 4, "minecraft:spruce_trapdoor[facing=south,half=bottom,open=true]")
     b.f(3, 2, 3, 6, 2, 3, "minecraft:water")
+    b.pitch = 24.0
+    b.later(3, 1, 4, "data block @ {Speed:0.0f}", unless=True)       # it turns
+    b.later(4, 0, 5, "block @ minecraft:air")              # nothing spills to the front
 
 
 # ===================================================================================
 # Mekanism
 
+def mek_box(b, x0, z0, w, h, d, casing, glass="mekanism:structural_glass", special=None, front_glass=True,
+            glass_only_front=False):
+    """A hollow Mekanism multiblock: casing on every edge and in the floor, glass in the other
+    faces (or only in the front, for a look inside), and what special names at its place
+    ({(x, y, z): block}, counted from the corner)."""
+    special = special or {}
+    for x in range(w):
+        for y in range(h):
+            for z in range(d):
+                on = [x in (0, w - 1), y in (0, h - 1), z in (0, d - 1)]
+                if not any(on):
+                    continue                                   # the hollow inside
+                block = casing
+                if sum(on) == 1 and y != 0 and (front_glass or z != d - 1) and (not glass_only_front or z == d - 1):
+                    block = glass
+                block = special.get((x, y, z), block)
+                b.b(x0 + x, y, z0 + z, block)
+
+
 @scene("mekanism/dynamic_tank")
 def _(b):
-    # a hollow 3x3x3: casing on every edge, structural glass or a valve in the faces
-    for x in range(3):
-        for y in range(3):
-            for z in range(3):
-                edge = sum(v in (0, 2) for v in (x, y, z))
-                if edge == 0:
-                    continue                                   # the hollow middle
-                block = "mekanism:dynamic_tank"
-                if edge == 1:
-                    block = "mekanism:structural_glass"
-                    if y == 0:
-                        block = "mekanism:dynamic_tank"
-                    if (x, y, z) == (2, 1, 1):
-                        block = "mekanism:dynamic_valve"
-                b.b(3 + x, y, 3 + z, block)
+    # hollow, casing on every edge, glass or valves in the faces; the valve in the front
+    mek_box(b, 2, 3, 4, 3, 3, "mekanism:dynamic_tank", special={(2, 1, 2): "mekanism:dynamic_valve"})
+    b.formed(4, 1, 5)
+
+
+@scene("mekanism_advanced/teleporter")
+def _(b):
+    # TileEntityTeleporter.hasFrame: the teleporter at the bottom centre, frames beside it on
+    # four levels and one on top: 3 wide, 4 high, an opening of 1 by 2
+    b.b(4, 0, 4, "mekanism:teleporter")
+    for y in range(4):
+        b.b(3, y, 4, "mekanism:teleporter_frame")
+        b.b(5, y, 4, "mekanism:teleporter_frame")
+    b.b(4, 3, 4, "mekanism:teleporter_frame")
+
+
+@scene("mekanism_advanced/evap", h=20)
+def _(b):
+    # Thermal Evaporation Plant: 4 by 4, a full floor, hollow walls, the top a rim open to the
+    # sky; controller and valve sit in a wall, not on an edge
+    x0, z0, height = 3, 2, 6
+    for y in range(height):
+        for x in range(4):
+            for z in range(4):
+                rim = x in (0, 3) or z in (0, 3)
+                if y > 0 and not rim:
+                    continue
+                b.b(x0 + x, y, z0 + z, "mekanism:thermal_evaporation_block")
+    b.b(x0 + 1, 2, z0 + 3, "mekanism:thermal_evaporation_controller[facing=south,active=false]")
+    b.b(x0 + 2, 1, z0 + 3, "mekanism:thermal_evaporation_valve")
+    b.b(x0 + 3, 1, z0 + 2, "mekanism:thermal_evaporation_valve")
+    b.formed(x0 + 1, 2, z0 + 3)
+
+
+@scene("mekanism_advanced/boiler", w=11, d=11)
+def _(b):
+    # Thermoelectric Boiler, cut open by a front of structural glass: superheating elements on
+    # the floor, the water space, one full layer of pressure dispersers, the steam space
+    inside = {}
+    for x in range(1, 4):
+        for z in range(1, 4):
+            inside[(x, 1, z)] = "mekanism:superheating_element[active=false]"
+            inside[(x, 4, z)] = "mekanism:pressure_disperser"
+    walls = {(4, 2, 2): "mekanism:boiler_valve[mode=input]", (4, 6, 2): "mekanism:boiler_valve[mode=output_steam]"}
+    mek_box(b, 3, 3, 5, 8, 5, "mekanism:boiler_casing", special=walls, front_glass=True, glass_only_front=True)
+    for (x, y, z), block in inside.items():
+        b.b(3 + x, y, 3 + z, block)
+    b.formed(7, 2, 5)
+
+
+@scene("mekanism_advanced/turbine", w=11, d=11)
+def _(b):
+    # Industrial Turbine, cut open by a front of structural glass: the rotor shaft with its
+    # blades, the rotational complex in a full layer of pressure dispersers, a coil on the
+    # complex, condensers beside it, vents in the walls from the complex up
+    walls = {(4, 2, 2): "mekanismgenerators:turbine_valve", (0, 2, 2): "mekanismgenerators:turbine_valve"}
+    for y in (5, 6, 7):
+        for k in (1, 2, 3):
+            walls[(0, y, k)] = "mekanismgenerators:turbine_vent"
+            walls[(4, y, k)] = "mekanismgenerators:turbine_vent"
+            walls[(k, y, 0)] = "mekanismgenerators:turbine_vent"
+    mek_box(b, 3, 3, 5, 9, 5, "mekanismgenerators:turbine_casing", special=walls, front_glass=True, glass_only_front=True)
+    for y in range(1, 5):
+        b.b(5, y, 5, "mekanismgenerators:turbine_rotor", "{blades:2}")
+    b.b(5, 5, 5, "mekanismgenerators:rotational_complex")
+    for x in range(1, 4):
+        for z in range(1, 4):
+            if (x, z) != (2, 2):
+                b.b(3 + x, 5, 3 + z, "mekanism:pressure_disperser")
+                b.b(3 + x, 6, 3 + z, "mekanismgenerators:saturating_condenser")
+    b.b(5, 6, 5, "mekanismgenerators:electromagnetic_coil")
+    b.formed(7, 2, 5)
+
+
+@scene("mekanism_elite/induction_matrix", w=11, d=11)
+def _(b):
+    # Induction Matrix: the shell closed, cells and providers inside, ports in the wall
+    walls = {(4, 1, 2): "mekanism:induction_port[active=false]", (4, 3, 2): "mekanism:induction_port[active=true]"}
+    mek_box(b, 3, 3, 5, 5, 5, "mekanism:induction_casing", special=walls)
+    for x in range(1, 4):
+        for y in range(1, 4):
+            for z in range(1, 4):
+                b.b(3 + x, y, 3 + z, "mekanism:basic_induction_provider" if y == 1 and z == 2 else "mekanism:basic_induction_cell")
+    b.formed(7, 1, 5)
 
 
 # ===================================================================================

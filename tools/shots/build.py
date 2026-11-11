@@ -125,9 +125,11 @@ class Cell:
         self.ox, self.oz, self.w, self.d = ox, oz, w, d
         self.cmds = []
         self.notes = []
+        self.checks = []   # for verify.py
         self.pts = []      # what the camera has to frame, relative (x, y, z) corners
         self.focused = False
         self.yaw = 165.0   # where the camera looks: 180 is straight north
+        self.pitch = 35.0  # how steeply it looks down, at least (a pentacle wants to be seen from above)
 
     def focus(self, x1, y1, z1, x2, y2, z2):
         """Frame only this part of the scene (a barrel at the foot of a tall obelisk)."""
@@ -227,6 +229,15 @@ class Cell:
         """A tool used on a block the way a player would (the hammer that forms a multiblock)."""
         self.cmds.append(f"kw testworld use {self._p(x, y, z)} {face} {item}{' sneak' if sneak else ''}")
 
+    def later(self, x, y, z, test, unless=False):
+        """A check that only holds once the world has ticked (a multiblock that forms by itself):
+        verify.py runs these on the test server. test is what follows "execute if" (or unless)."""
+        self.checks.append(f"execute in kronwerke:testworld {'unless' if unless else 'if'} " + test.replace("@", self._p(x, y, z)))
+
+    def formed(self, x, y, z):
+        """A Mekanism multiblock has formed when its blocks share an inventory id."""
+        self.later(x, y, z, "data block @ inventory_id")
+
     def changed(self, x, y, z, block):
         """Fails in the build log when the block there is still this one: the hammer did nothing."""
         self.cmds.append(f"execute unless block {self._p(x, y, z)} {block}")
@@ -304,7 +315,7 @@ def needs_screen(desc):
     return any(w.lower() in desc.lower() for w in SCREEN_WORDS)
 
 
-def camera(key, cell, south_limit, yaw=165.0, fov=60):
+def camera(key, cell, south_limit, yaw=165.0, fov=60, pitch=35.0):
     """Where the camera stands for a cell: south of what the scene built (the boxes are open
     to the south), a little east, looking down at it. The distance is what that content needs
     to fill the frame (fov is Minecraft's vertical field of view; at 16:9 the horizontal one
@@ -321,14 +332,13 @@ def camera(key, cell, south_limit, yaw=165.0, fov=60):
     vt = math.tan(math.radians(fov / 2))
     ht = vt * 16 / 9
     yr = math.radians(yaw)
-    pitch = 35.0
     room = south_limit - tz
     for _ in range(40):
         pr = math.radians(pitch)
         # what has to fit: the width across, and depth and height as seen from this angle
         across = W * abs(math.cos(yr)) + D * abs(math.sin(yr))
         tall = D * math.sin(pr) + H * math.cos(pr)
-        dist = max(4.0, 1.2 * max(across / 2 / ht, tall / 2 / vt) + max(W, D) * 0.25)
+        dist = max(3.5, 1.12 * max(across / 2 / ht, tall / 2 / vt) + max(W, D) * 0.18)
         horiz = dist * math.cos(pr)
         if horiz * -math.cos(yr) <= room or pitch >= 70:
             break
@@ -375,6 +385,7 @@ def build(check=False):
     Cell.vendored.clear()
 
     shots = []          # camera positions for /kw cam run
+    checks = []         # (scene, command) for verify.py
     files = {}          # name -> commands
     pad = [
         "# the landing pad; /kw testworld puts you here",
@@ -392,7 +403,7 @@ def build(check=False):
         nonlocal x, z, row_depth, row_shots
         # the camera stands in the path south of the row, in front of the next row's north wall
         for k, cell_ in row_shots:
-            shots.append(camera(k, cell_, south_limit=z + row_depth + ROW_GAP - 0.7, yaw=cell_.yaw))
+            shots.append(camera(k, cell_, south_limit=z + row_depth + ROW_GAP - 0.7, yaw=cell_.yaw, pitch=cell_.pitch))
         row_shots = []
         if row_depth:
             z += row_depth + ROW_GAP
@@ -412,6 +423,8 @@ def build(check=False):
         cells = [(k, scenes.SCENES[k]) for k in keys]
         bw = sum(c[1].w for c in cells) + (len(cells) - 1) + 2
         bd = max(c[1].d for c in cells) + 2 + 2      # +2 for the sign strip at the south edge
+        wall = max([WALL_H] + [getattr(c[1], "h", 0) for c in cells])
+        top = FLOOR_Y + wall + 12
         if x and x + bw > ROW_WIDTH:
             close_row()
         n += 1
@@ -422,8 +435,8 @@ def build(check=False):
         cmds.append(f"fill {x - GAP} {FLOOR_Y - 3} {z - ROW_GAP} {x + bw + GAP} {FLOOR_Y - 1} {z + bd + ROW_GAP} minecraft:stone")
         cmds.append(f"fill {x - GAP} {FLOOR_Y} {z - ROW_GAP} {x + bw + GAP} {FLOOR_Y} {z + bd + ROW_GAP} minecraft:light_gray_concrete")
         # the north wall runs on over the gap to the next box, so no sky shows between boxes
-        cmds.append(f"fill {x} {FLOOR_Y + 1} {z} {x + bw + GAP} {FLOOR_Y + WALL_H} {z} minecraft:light_gray_concrete")
-        cmds.append(f"fill {x} {FLOOR_Y + 1} {z} {x} {FLOOR_Y + WALL_H} {z + bd} minecraft:light_gray_concrete")
+        cmds.append(f"fill {x} {FLOOR_Y + 1} {z} {x + bw + GAP} {FLOOR_Y + wall} {z} minecraft:light_gray_concrete")
+        cmds.append(f"fill {x} {FLOOR_Y + 1} {z} {x} {FLOOR_Y + wall} {z + bd} minecraft:light_gray_concrete")
         cx = x + 1
         for i, (k, spec) in enumerate(cells):
             w, d = spec.w, spec.d
@@ -448,11 +461,12 @@ def build(check=False):
             label = label.replace("\\", "\\\\").replace("'", "\\'")
             cmds.append(f"summon text_display {cx + w / 2} {FLOOR_Y + 1 + 7} {z + 1 + d / 2} "
                         f"{{text:'{label}',billboard:\"center\",background:1275068416,Tags:[\"kw_shot\"],alignment:\"center\",line_width:200,transformation:{{scale:[1.6f,1.6f,1.6f],translation:[0f,0f,0f],left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f]}}}}")
-            # a grey divider east of every cell, as deep as the cell: the camera sees this scene
-            # against grey, not the next scene beside it
-            cmds.append(f"fill {cx + w} {FLOOR_Y + 1} {z} {cx + w} {FLOOR_Y + WALL_H} {z + d} minecraft:light_gray_concrete")
+            # a grey divider east of every cell, as deep as the box: the camera sees this scene
+            # against grey, not the next scene beside it, even from far back in a deep cell
+            cmds.append(f"fill {cx + w} {FLOOR_Y + 1} {z} {cx + w} {FLOOR_Y + wall} {z + bd} minecraft:light_gray_concrete")
             cmds.extend(cell.cmds)
             row_shots.append((k, cell))
+            checks += [(k, c) for c in cell.checks]
             cx += w + 1
         files[f"box_{n:03d}"] = cmds
         row_depth = max(row_depth, bd)
@@ -465,6 +479,8 @@ def build(check=False):
             fh.write("\n".join(cmds) + "\n")
     with open(os.path.join(OUT, "shots.json"), "w") as fh:
         json.dump({"shots": shots}, fh, indent=1)
+    with open(os.path.join(HERE, "verify.json"), "w") as fh:
+        json.dump({"area": [-8, -8, ROW_WIDTH + 8, z + 8], "checks": checks}, fh, indent=1)
 
     if check:
         problems += validate(catalog(), files)

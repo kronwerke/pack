@@ -1,0 +1,38 @@
+{
+ "area": [
+  -8,
+  -8,
+  428,
+  162
+ ],
+ "checks": [
+  [
+   "create/water_wheel",
+   "execute in kronwerke:testworld unless data block 4 65 5 {Speed:0.0f}"
+  ],
+  [
+   "create/water_wheel",
+   "execute in kronwerke:testworld if block 5 64 6 minecraft:air"
+  ],
+  [
+   "mekanism/dynamic_tank",
+   "execute in kronwerke:testworld if data block 5 65 25 inventory_id"
+  ],
+  [
+   "mekanism_advanced/evap",
+   "execute in kronwerke:testworld if data block 35 66 25 inventory_id"
+  ],
+  [
+   "mekanism_advanced/boiler",
+   "execute in kronwerke:testworld if data block 53 66 25 inventory_id"
+  ],
+  [
+   "mekanism_advanced/turbine",
+   "execute in kronwerke:testworld if data block 70 66 25 inventory_id"
+  ],
+  [
+   "mekanism_elite/induction_matrix",
+   "execute in kronwerke:testworld if data block 87 65 25 inventory_id"
+  ]
+ ]
+}

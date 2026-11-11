@@ -497,3 +497,8 @@ Incendium, which ran about a tenth of the tick in the 50 player load test:
 - Kronwerke Core 0.37.0: the camera for the quest book's pictures.
 - The screenshot world has 16 block walls, so the pictures show grey behind the scenes instead of sky, and a camera position for every cell (`shots/shots.json`, 449 shots; 41 shots of screens need a person).
 - The quest book points to kronwerke.com instead of the old address.
+
+## 0.22.1
+
+- Screenshot world: every row clears its space before it is built (walls of an older layout stood in front of the camera), and the camera stands in the path south of each box, at 640 x 360.
+- More English quest lines.

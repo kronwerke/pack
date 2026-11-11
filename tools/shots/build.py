@@ -166,18 +166,24 @@ def needs_screen(desc):
     return any(w.lower() in desc.lower() for w in SCREEN_WORDS)
 
 
-def camera(key, x0, z0, w, d, yaw=155.0, pitch=38.0, fov=60):
-    """Where the camera stands for a cell: south east of it, looking down at its middle, far
-    enough back that the whole cell fits (fov is Minecraft's vertical field of view)."""
+def camera(key, x0, z0, w, d, south_limit, yaw=165.0, fov=60):
+    """Where the camera stands for a cell: south of it (the boxes are open to the south), a
+    little east, looking down at its middle. Its distance is what the cell needs to fit
+    (fov is Minecraft's vertical field of view, 16:9 makes the horizontal one about 90
+    degrees), but never beyond the next row's wall: then it looks down more steeply."""
     import math
-    tx, ty, tz = x0 + w / 2, FLOOR_Y + 1 + 2, z0 + d / 2
-    dist = max(w, d) * 0.95 + 4
-    yr, pr = math.radians(yaw), math.radians(pitch)
-    fx, fy, fz = -math.sin(yr) * math.cos(pr), -math.sin(pr), math.cos(yr) * math.cos(pr)
-    ex, ey, ez = tx - fx * dist, ty - fy * dist, tz - fz * dist
+    tx, ty, tz = x0 + w / 2, FLOOR_Y + 1 + 1.5, z0 + d / 2
+    want = max(w * 0.75, d * 0.9) + 3            # horizontal distance for the whole cell
+    room = south_limit - tz                       # how far south the path allows
+    yr = math.radians(yaw)
+    horiz = min(want, room / max(0.2, -math.cos(yr)))
+    pitch = 38.0 if horiz >= want else min(65.0, 38.0 + (want - horiz) * 4)
+    pr = math.radians(pitch)
+    up = horiz * math.tan(pr)
+    ex, ey, ez = tx - (-math.sin(yr)) * horiz, ty + up, tz - math.cos(yr) * horiz
     return {"name": key.replace("/", "_"), "dim": "kronwerke:testworld",
-            "pos": [round(ex, 2), round(ey - 1.62, 2), round(ez, 2)], "yaw": yaw, "pitch": pitch,
-            "fov": fov, "width": 1280, "height": 720}
+            "pos": [round(ex, 2), round(ey - 1.62, 2), round(ez, 2)], "yaw": yaw, "pitch": round(pitch, 1),
+            "fov": fov, "width": 640, "height": 360}
 
 
 # ---- layout ------------------------------------------------------------------------
@@ -208,8 +214,14 @@ def build(check=False):
     row_boxes = []
     problems = []
 
+    row_shots = []
+
     def close_row():
-        nonlocal x, z, row_depth, row_boxes
+        nonlocal x, z, row_depth, row_boxes, row_shots
+        # the camera stands in the path south of the row, in front of the next row's north wall
+        for k, cx_, cz_, w_, d_ in row_shots:
+            shots.append(camera(k, cx_, cz_, w_, d_, south_limit=z + row_depth + ROW_GAP - 0.7))
+        row_shots = []
         if row_boxes:
             rows.append({"boxes": row_boxes, "z0": z - 2, "z1": z + row_depth + 2,
                          "x0": -8, "x1": max(b["x1"] for b in row_boxes) + 2})
@@ -269,7 +281,7 @@ def build(check=False):
                         f"{{text:'{label}',billboard:\"center\",background:1275068416,Tags:[\"kw_shot\"],alignment:\"center\",line_width:200,transformation:{{scale:[1.6f,1.6f,1.6f],translation:[0f,0f,0f],left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f]}}}}")
             cmds.extend(cell.cmds)
             if not needs_screen(desc):
-                shots.append(camera(k, cx, z + 1, w, d))
+                row_shots.append((k, cx, z + 1, w, d))
             cx += w + 1
         row_boxes.append(box)
         row_depth = max(row_depth, bd)
@@ -285,6 +297,13 @@ def build(check=False):
     for r, row in enumerate(rows):
         body = list(first) if r == 0 else []
         first = []
+        # clear the row's space first: an older layout's walls would stand in front of the camera
+        top = FLOOR_Y + WALL_H + 12
+        cz0, cz1 = row["z0"] - 3, row["z1"] + 3
+        span = max(1, 32768 // ((cz1 - cz0 + 1) * (top - FLOOR_Y)))
+        for cx0 in range(row["x0"] - 4, row["x1"] + 5, span):
+            cx1 = min(row["x1"] + 4, cx0 + span - 1)
+            body.append(f"fill {cx0} {FLOOR_Y + 1} {cz0} {cx1} {top} {cz1} minecraft:air")
         for b in row["boxes"]:
             if b.get("is_label"):
                 body.append(f"setblock -6 {FLOOR_Y} {b['z'] + 1} minecraft:smooth_stone")

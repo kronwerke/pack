@@ -1,3 +1,19 @@
+fill -12 64 181 14 91 222 minecraft:air
+fill 15 64 181 41 91 222 minecraft:air
+fill 42 64 181 68 91 222 minecraft:air
+fill 69 64 181 95 91 222 minecraft:air
+fill 96 64 181 122 91 222 minecraft:air
+fill 123 64 181 149 91 222 minecraft:air
+fill 150 64 181 176 91 222 minecraft:air
+fill 177 64 181 203 91 222 minecraft:air
+fill 204 64 181 230 91 222 minecraft:air
+fill 231 64 181 257 91 222 minecraft:air
+fill 258 64 181 284 91 222 minecraft:air
+fill 285 64 181 311 91 222 minecraft:air
+fill 312 64 181 338 91 222 minecraft:air
+fill 339 64 181 365 91 222 minecraft:air
+fill 366 64 181 392 91 222 minecraft:air
+fill 393 64 181 414 91 222 minecraft:air
 setblock -6 63 187 minecraft:smooth_stone
 setblock -6 64 187 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Botania"}','{"text": ""}','{"text": ""}','{"text": ""}']}}
 function kronwerke:shots/box/113

@@ -1,3 +1,12 @@
+fill -12 64 143 35 91 166 minecraft:air
+fill 36 64 143 83 91 166 minecraft:air
+fill 84 64 143 131 91 166 minecraft:air
+fill 132 64 143 179 91 166 minecraft:air
+fill 180 64 143 227 91 166 minecraft:air
+fill 228 64 143 275 91 166 minecraft:air
+fill 276 64 143 323 91 166 minecraft:air
+fill 324 64 143 371 91 166 minecraft:air
+fill 372 64 143 414 91 166 minecraft:air
 setblock -6 63 149 minecraft:smooth_stone
 setblock -6 64 149 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Ars Nouveau"}','{"text": ""}','{"text": ""}','{"text": ""}']}}
 function kronwerke:shots/box/084

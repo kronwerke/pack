@@ -1,3 +1,13 @@
+fill -12 64 103 32 91 128 minecraft:air
+fill 33 64 103 77 91 128 minecraft:air
+fill 78 64 103 122 91 128 minecraft:air
+fill 123 64 103 167 91 128 minecraft:air
+fill 168 64 103 212 91 128 minecraft:air
+fill 213 64 103 257 91 128 minecraft:air
+fill 258 64 103 302 91 128 minecraft:air
+fill 303 64 103 347 91 128 minecraft:air
+fill 348 64 103 392 91 128 minecraft:air
+fill 393 64 103 426 91 128 minecraft:air
 setblock -6 63 109 minecraft:smooth_stone
 setblock -6 64 109 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Mekanism"}','{"text": ""}','{"text": ""}','{"text": ""}']}}
 function kronwerke:shots/box/057

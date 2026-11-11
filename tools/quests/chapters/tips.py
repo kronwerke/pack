@@ -242,7 +242,7 @@ quests = [
               "",
               "In Stufe 1 will das Ziel &6Bruchstein&r, &6Andesitlegierung&r und &6Quelljuwelen&r. Bruchstein hat jeder, also wirf ihn nicht weg. Wie weit es ist, siehst du an der &eBossleiste&r oben und mit &e/kw goals&r.",
               "",
-              "Alles Weitere, Zubringer-Truhen und die Meilensteine, erklärt das Kapitel &6Hier geht's los&r.",
+              "Alles Weitere, den Zubringer und die Meilensteine, erklärt das Kapitel &6Hier geht's los&r.",
           ],
           tasks=[task_checkmark("Abgegeben")],
           rewards=[reward_xp(3)],

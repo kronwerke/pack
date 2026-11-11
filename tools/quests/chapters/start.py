@@ -154,15 +154,15 @@ quests = [
           deps=["o_obelisk"], icon="minecraft:hopper"),
 
     quest("o_feeder", 9, 0, "&6Stell einen Zubringer auf",
-          subtitle="Eine Truhe am Obelisken, die für dich einzahlt.",
+          subtitle="Ein Block am Obelisken, der für dich einzahlt.",
           description=[
-              "Stell eine &6Truhe&r oder ein &6Fass&r höchstens &e3 Blöcke&r vom Obelisken entfernt auf. Sie wird dein &6Zubringer&r: Alle &e2 Sekunden&r nimmt das Ziel heraus, was es braucht, und schreibt es dir gut.",
+              "Der &6Zubringer&r ist ein eigener Block: ein &6Trichter&r oben in der Mitte, darunter &6Andesitlegierung&r, links, rechts und in der unteren Reihe &e5 Bruchtiefenschiefer&r. Stell ihn höchstens &e10 Blöcke&r vom Obelisken entfernt auf.",
               "",
-              "Jeder Spieler hat höchstens &ezwei&r Zubringer, ein dritter zählt nicht. Gezählt wird für den, der die Truhe aufgestellt hat, also leg nichts hinein, was du behalten willst.",
+              "Was ein Trichter, ein Rohr oder ein Förderband hineinschiebt, geht sofort ins Ziel und zählt für den, der den Zubringer aufgestellt hat. Er lagert nichts: Was das Ziel gerade nicht braucht, nimmt er nicht an, es bleibt im Rohr. Ein Rechtsklick zeigt, wem er gehört und ob er verbunden ist.",
           ],
-          tasks=[task_item("minecraft:barrel", 1)],
+          tasks=[task_item("kronwerke:obelisk_intake", 1)],
           rewards=[reward_item("minecraft:hopper", 2), reward_xp(3)],
-          deps=["o_commands", "o_deposit"], icon="minecraft:barrel"),
+          deps=["o_commands", "o_deposit"], icon="kronwerke:obelisk_intake"),
 
     quest("o_farm", 11.25, 0, "&6Schließ eine Farm an",
           subtitle="Der Beitrag wächst, während du redest.",

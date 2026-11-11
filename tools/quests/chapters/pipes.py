@@ -328,7 +328,7 @@ quests = [
               "",
               "Der Router arbeitet die Module von links nach rechts ab: Was in eine Zielkiste passt, geht dorthin, der Rest ganz rechts hinaus. Ein paar &6Stapel-Upgrades&r, und ein Stapel pro Sekunde ist sortiert. Der Filter merkt sich die Sorte auch, wenn die Kiste zwischendurch leer ist.",
               "",
-              "&eKronwerke:&r Stell die Restekiste neben den Obelisken oder leite Messing und Manaperlen in deinen Zubringer. Was dort hineinfällt, zählt für dich zum Ziel von Stufe 2.",
+              "&eKronwerke:&r Leite Messing und Manaperlen aus der Restekiste in deinen Zubringer am Obelisken. Was dort hineinfällt, zählt für dich zum Ziel von Stufe 2.",
           ],
           tasks=[task_item("modularrouters:modular_router", 2), task_item("modularrouters:sender_module_2", 4),
                  task_item("modularrouters:bulk_item_filter", 4)],

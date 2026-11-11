@@ -27,3 +27,8 @@ own words and chapter names, so references between chapters stay the same.
 | Create: Messing | Create: Brass |
 | Create: Erweiterungen | Create: Add-ons |
 | Erfahrung in Flaschen | experience in bottles |
+| Stufe 2 (Messingwerk) | stage 2 (Messingwerk), the stage names stay German like in Core |
+| Stufe 3 (Stahlwerk) | stage 3 (Stahlwerk) |
+| Stufe 4 (Sternwerk) | stage 4 (Sternwerk) |
+| Stufe 5 (Chaoswerk) | stage 5 (Chaoswerk) |
+| Bienen (Kapitel) | Bees |

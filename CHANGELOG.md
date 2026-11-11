@@ -448,3 +448,7 @@ Incendium, which ran about a tenth of the tick in the 50 player load test:
 ## 0.13.1
 
 - Kronwerke Core 0.27.1: Malum's weeping well check no longer loads chunks on the server thread (with 50 players flying through new Nether terrain it stopped the Nether server).
+
+## 0.13.2
+
+- Kronwerke Core 0.27.3: the weeping well guard checks that each chunk is really loaded (0.27.1 still let chunks through that were on their way from disk); load test bots on the Nether and End servers join in that dimension.

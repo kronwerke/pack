@@ -8,8 +8,9 @@ config/ftbquests/quests/. Ids are derived from names, so a rebuild never
 changes an id and player progress survives.
 
 The structure (ids, positions, tasks, rewards) goes into quests/chapters/, all text into
-quests/lang/<locale>.snbt, the way FTB Quests keeps it since 1.21. The text is German and is
-written for de_de and for en_us, which FTB Quests falls back to for every other language.
+quests/lang/<locale>.snbt, the way FTB Quests keeps it since 1.21. The text is written in German
+for de_de; en_us (which FTB Quests falls back to for every other language) takes each line from
+tools/quests/i18n/en_us.json and keeps the German line where there is no translation yet.
 
 Lettering on the canvas (chapter titles, section headings) is rendered by banners.py into
 kubejs/assets/kronwerke/textures/quests/, see banner().
@@ -290,12 +291,35 @@ def _build_chapter(ch, order_index, lang):
     return out
 
 
+def _translations(loc):
+    """German text -> text in loc, from tools/quests/i18n/<loc>.json (see i18n.py).
+
+    Kept by the German text, not by quest: a quest that changes needs only its changed lines
+    translated again, and a line that is not translated yet stays German."""
+    path = os.path.join(os.path.dirname(os.path.abspath(__file__)), "i18n", loc + ".json")
+    if not os.path.exists(path):
+        return {}
+    import json
+    with open(path, encoding="utf-8") as f:
+        return json.load(f)
+
+
+def translate(value, table):
+    if isinstance(value, list):
+        return [translate(v, table) for v in value]
+    if isinstance(value, str):
+        return table.get(value, value)
+    return value
+
+
 def _write_lang(qdir, entries):
     """One file per locale; FTB Quests 2101.1 reads lang/<locale>.snbt."""
     os.makedirs(os.path.join(qdir, "lang"), exist_ok=True)
     for loc in LOCALES:
+        table = {} if loc == "de_de" else _translations(loc)
+        out = {k: translate(v, table) for k, v in sorted(entries.items())}
         with open(os.path.join(qdir, "lang", loc + ".snbt"), "w") as f:
-            f.write(_s(dict(sorted(entries.items()))) + "\n")
+            f.write(_s(out) + "\n")
 
 
 def write(out_dir, pack_icon="create:large_cogwheel", assets_dir=None):

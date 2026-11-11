@@ -1,14 +1,37 @@
-# 014 immersive/hammer
-#area -4 105 15 130
-fill -4 64 105 15 91 130 minecraft:air
-fill -4 60 105 15 62 130 minecraft:stone
-fill -4 63 105 15 63 130 minecraft:light_gray_concrete
-fill 0 64 111 15 79 111 minecraft:light_gray_concrete
-fill 0 64 111 0 79 124 minecraft:light_gray_concrete
-setblock 1 64 123 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "014"}','{"text": "immersive"}','{"text": "hammer"}','{"text": ""}']}}
-setblock 2 64 123 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "right-clicking"}','{"text": "a structure"}','{"text": "with the hammer"}','{"text": ""}']}}
-summon text_display 5.5 71 116.5 {text:'[{"text": "014  ", "color": "gold"}, {"text": "immersive/hammer", "color": "gray"}, {"text": "\\nBau einen Ingenieurshammer", "color": "white"}]',billboard:"center",background:1275068416,Tags:["kw_shot"],alignment:"center",line_width:200,transformation:{scale:[1.6f,1.6f,1.6f],translation:[0f,0f,0f],left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f]}}
-fill 10 64 111 10 79 120 minecraft:light_gray_concrete
-place template immersiveengineering:multiblocks/coke_oven 4 64 114 none
-setblock 5 64 118 minecraft:smooth_stone_slab
-summon item_display 5.5 65.04 118.5 {item:{id:"immersiveengineering:hammer",count:1},item_display:"fixed",billboard:"vertical",transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[1.2f,1.2f,1.2f]},brightness:{sky:15,block:15},Tags:["kw_shot"]}
+# 014 occultism/hedyrin
+#area 15 76 38 105
+fill 15 64 76 38 91 105 minecraft:air
+fill 15 60 76 38 62 105 minecraft:stone
+fill 15 63 76 38 63 105 minecraft:light_gray_concrete
+fill 19 64 82 38 79 82 minecraft:light_gray_concrete
+fill 19 64 82 19 79 99 minecraft:light_gray_concrete
+setblock 20 64 98 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "014"}','{"text": "occultism"}','{"text": "hedyrin"}','{"text": ""}']}}
+setblock 21 64 98 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Hedyrin\'s Lure"}','{"text": "with the yellow"}','{"text": "glyphs"}','{"text": ""}']}}
+summon text_display 26.5 71 89.5 {text:'[{"text": "014  ", "color": "gold"}, {"text": "occultism/hedyrin", "color": "gray"}, {"text": "\\nZeichne Hedyrin\'s Lure", "color": "white"}]',billboard:"center",background:1275068416,Tags:["kw_shot"],alignment:"center",line_width:200,transformation:{scale:[1.6f,1.6f,1.6f],translation:[0f,0f,0f],left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f]}}
+fill 33 64 82 33 79 95 minecraft:light_gray_concrete
+fill 21 63 84 31 63 94 occultism:otherstone
+setblock 26 64 86 occultism:chalk_glyph_white[facing=south,sign=0]
+setblock 25 64 87 occultism:chalk_glyph_white[facing=south,sign=5]
+setblock 26 64 87 minecraft:white_candle[candles=1,lit=true]
+setblock 27 64 87 occultism:chalk_glyph_white[facing=south,sign=10]
+setblock 24 64 88 occultism:chalk_glyph_white[facing=south,sign=2]
+setblock 26 64 88 occultism:chalk_glyph_gold[facing=south,sign=7]
+setblock 28 64 88 occultism:chalk_glyph_white[facing=south,sign=12]
+setblock 23 64 89 occultism:chalk_glyph_white[facing=south,sign=4]
+setblock 24 64 89 minecraft:white_candle[candles=1,lit=true]
+setblock 25 64 89 occultism:chalk_glyph_gold[facing=south,sign=9]
+setblock 26 64 89 occultism:golden_sacrificial_bowl
+setblock 27 64 89 occultism:chalk_glyph_gold[facing=south,sign=1]
+setblock 28 64 89 minecraft:white_candle[candles=1,lit=true]
+setblock 29 64 89 occultism:chalk_glyph_white[facing=south,sign=6]
+setblock 24 64 90 occultism:chalk_glyph_white[facing=south,sign=11]
+setblock 26 64 90 occultism:chalk_glyph_gold[facing=south,sign=3]
+setblock 28 64 90 occultism:chalk_glyph_white[facing=south,sign=8]
+setblock 25 64 91 occultism:chalk_glyph_white[facing=south,sign=0]
+setblock 26 64 91 minecraft:white_candle[candles=1,lit=true]
+setblock 27 64 91 occultism:chalk_glyph_white[facing=south,sign=5]
+setblock 26 64 92 occultism:chalk_glyph_white[facing=south,sign=10]
+setblock 21 64 84 occultism:sacrificial_bowl[facing=up]
+setblock 31 64 84 occultism:sacrificial_bowl[facing=up]
+setblock 21 64 94 occultism:sacrificial_bowl[facing=up]
+setblock 31 64 94 occultism:sacrificial_bowl[facing=up]

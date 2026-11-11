@@ -13,9 +13,9 @@ setblock -6 64 39 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text":
 #area -8 57 -6 59
 setblock -6 63 58 minecraft:smooth_stone
 setblock -6 64 58 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Botania"}','{"text": ""}','{"text": ""}','{"text": ""}']}}
-#area -8 76 -6 78
-setblock -6 63 77 minecraft:smooth_stone
-setblock -6 64 77 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Occultism and"}','{"text": "Hexerei"}','{"text": ""}','{"text": ""}']}}
-#area -8 111 -6 113
-setblock -6 63 112 minecraft:smooth_stone
-setblock -6 64 112 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Immersive"}','{"text": "Engineering and"}','{"text": "Industrial"}','{"text": "Foregoing"}']}}
+#area -8 82 -6 84
+setblock -6 63 83 minecraft:smooth_stone
+setblock -6 64 83 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Occultism and"}','{"text": "Hexerei"}','{"text": ""}','{"text": ""}']}}
+#area -8 117 -6 119
+setblock -6 63 118 minecraft:smooth_stone
+setblock -6 64 118 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Immersive"}','{"text": "Engineering and"}','{"text": "Industrial"}','{"text": "Foregoing"}']}}

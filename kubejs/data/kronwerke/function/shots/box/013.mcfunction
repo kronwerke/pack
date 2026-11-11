@@ -14,3 +14,4 @@ summon text_display 56.5 71 36.5 {text:'[{"text": "013  ", "color": "gold"}, {"t
 fill 53 63 34 59 63 36 mysticalagriculture:inferium_farmland
 fill 53 64 34 59 64 36 mysticalagriculture:iron_crop[age=7]
 fill 53 62 34 59 62 36 mysticalagriculture:inferium_growth_accelerator
+fill 61 64 31 61 79 40 minecraft:light_gray_concrete

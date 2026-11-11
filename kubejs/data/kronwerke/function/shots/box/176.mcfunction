@@ -14,3 +14,4 @@ place template immersiveengineering:multiblocks/improved_blast_furnace 306 64 27
 place template immersiveengineering:multiblocks/sheetmetal_tank 311 64 275 none
 place template immersiveengineering:multiblocks/silo 316 64 275 none
 place template immersiveengineering:multiblocks/shelf 321 64 275 none
+fill 330 64 273 330 79 282 minecraft:light_gray_concrete

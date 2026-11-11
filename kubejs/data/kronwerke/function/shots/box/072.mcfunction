@@ -15,3 +15,4 @@ fill 257 65 112 259 65 114 mekanism:superheating_element
 fill 257 66 112 259 66 114 mekanism:pressure_disperser
 fill 256 65 115 260 67 115 mekanism:structural_glass
 setblock 258 64 115 mekanism:boiler_valve
+fill 263 64 108 263 79 117 minecraft:light_gray_concrete

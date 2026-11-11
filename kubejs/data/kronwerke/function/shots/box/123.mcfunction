@@ -10,3 +10,4 @@ summon text_display 161.5 71 191.5 {text:'[{"text": "123  ", "color": "gold"}, {
 setblock 161 64 191 botania:thermalily
 setblock 161 66 191 create:hose_pulley[facing=south]
 setblock 161 64 189 botania:mana_spreader
+fill 166 64 186 166 79 195 minecraft:light_gray_concrete

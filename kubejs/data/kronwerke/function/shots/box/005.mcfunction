@@ -12,3 +12,4 @@ fill 80 67 8 84 68 12 naturesaura:golden_leaves[stage=3,persistent=true]
 fill 81 69 9 83 69 11 naturesaura:golden_leaves[stage=3,persistent=true]
 setblock 82 67 10 minecraft:oak_log
 setblock 82 68 10 minecraft:oak_log
+fill 88 64 6 88 79 15 minecraft:light_gray_concrete

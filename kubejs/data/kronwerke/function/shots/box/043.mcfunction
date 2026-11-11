@@ -12,3 +12,4 @@ summon text_display 410.5 71 57.5 {text:'[{"text": "043  ", "color": "gold"}, {"
 setblock 409 64 57 create:mechanical_arm
 setblock 411 64 57 create:blaze_burner
 setblock 407 64 57 minecraft:chest[facing=south]{Items:[{Slot:0b,id:"minecraft:coal",count:64}]}
+fill 415 64 52 415 79 61 minecraft:light_gray_concrete

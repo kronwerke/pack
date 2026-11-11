@@ -16,3 +16,4 @@ setblock 86 64 113 minecraft:chest
 fill 81 65 113 86 65 113 mekanism:basic_logistical_transporter
 fill 82 64 114 85 64 114 mekanism:basic_universal_cable
 setblock 81 64 115 mekanism:creative_energy_cube
+fill 93 64 108 93 79 117 minecraft:light_gray_concrete

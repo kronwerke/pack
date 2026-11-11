@@ -10,3 +10,4 @@ summon text_display 318.5 71 113.5 {text:'[{"text": "076  ", "color": "gold"}, {
 setblock 315 64 111 mekanism:qio_dashboard
 setblock 317 64 111 mekanism:qio_drive_array
 setblock 322 64 117 minecraft:trapped_chest[facing=south]{Items:[{Slot:0b,id:"mekanism:qio_drive_base",count:1}]}
+fill 323 64 108 323 79 117 minecraft:light_gray_concrete

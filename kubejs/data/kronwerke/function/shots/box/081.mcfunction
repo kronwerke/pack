@@ -12,3 +12,4 @@ setblock 394 64 113 mekanism:solar_neutron_activator
 setblock 396 64 113 mekanism:solar_neutron_activator
 setblock 398 64 113 mekanism:solar_neutron_activator
 setblock 400 64 113 mekanism:solar_neutron_activator
+fill 402 64 108 402 79 117 minecraft:light_gray_concrete

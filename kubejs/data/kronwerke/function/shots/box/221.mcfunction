@@ -15,6 +15,7 @@ setblock 162 64 515 minecraft:lantern
 setblock 168 64 515 minecraft:lantern
 summon glow_item_frame 163 66 513 {Facing:3b,Fixed:1b,Tags:["kw_shot"],Item:{id:"theurgy:sal_ammoniac_tank",count:1}}
 summon glow_item_frame 165 66 513 {Facing:3b,Fixed:1b,Tags:["kw_shot"],Item:{id:"theurgy:sal_ammoniac_accumulator",count:1}}
+fill 170 64 510 170 79 519 minecraft:light_gray_concrete
 setblock 171 64 522 minecraft:air
 setblock 171 64 522 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "221.2"}','{"text": "theurgy"}','{"text": "liquefaction"}','{"text": ""}']}}
 setblock 172 64 522 minecraft:air
@@ -28,6 +29,7 @@ setblock 172 64 515 minecraft:lantern
 setblock 178 64 515 minecraft:lantern
 summon glow_item_frame 173 66 513 {Facing:3b,Fixed:1b,Tags:["kw_shot"],Item:{id:"theurgy:liquefaction_cauldron",count:1}}
 summon glow_item_frame 175 66 513 {Facing:3b,Fixed:1b,Tags:["kw_shot"],Item:{id:"theurgy:alchemical_sulfur_iron",count:1}}
+fill 180 64 510 180 79 519 minecraft:light_gray_concrete
 setblock 181 64 522 minecraft:air
 setblock 181 64 522 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "221.3"}','{"text": "theurgy"}','{"text": "vessels"}','{"text": ""}']}}
 setblock 182 64 522 minecraft:air
@@ -42,6 +44,7 @@ setblock 188 64 515 minecraft:lantern
 summon glow_item_frame 183 66 513 {Facing:3b,Fixed:1b,Tags:["kw_shot"],Item:{id:"theurgy:incubator_salt_vessel",count:1}}
 summon glow_item_frame 185 66 513 {Facing:3b,Fixed:1b,Tags:["kw_shot"],Item:{id:"theurgy:incubator_sulfur_vessel",count:1}}
 summon glow_item_frame 187 66 513 {Facing:3b,Fixed:1b,Tags:["kw_shot"],Item:{id:"theurgy:incubator_mercury_vessel",count:1}}
+fill 190 64 510 190 79 519 minecraft:light_gray_concrete
 setblock 191 64 522 minecraft:air
 setblock 191 64 522 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "221.4"}','{"text": "theurgy"}','{"text": "wire"}','{"text": ""}']}}
 setblock 192 64 522 minecraft:air
@@ -54,6 +57,7 @@ fill 192 67 512 198 67 512 minecraft:polished_blackstone
 setblock 192 64 515 minecraft:lantern
 setblock 198 64 515 minecraft:lantern
 summon glow_item_frame 194 66 513 {Facing:3b,Fixed:1b,Tags:["kw_shot"],Item:{id:"theurgy:copper_wire",count:1}}
+fill 200 64 510 200 79 519 minecraft:light_gray_concrete
 setblock 201 64 522 minecraft:air
 setblock 201 64 522 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "221.5"}','{"text": "theurgy"}','{"text": "array"}','{"text": ""}']}}
 setblock 202 64 522 minecraft:air
@@ -64,6 +68,7 @@ setblock 205 64 513 theurgy:incubator_mercury_vessel
 setblock 203 64 515 theurgy:incubator_mercury_vessel
 setblock 207 64 515 theurgy:incubator_mercury_vessel
 setblock 205 64 517 theurgy:incubator_mercury_vessel
+fill 210 64 510 210 79 519 minecraft:light_gray_concrete
 setblock 211 64 522 minecraft:air
 setblock 211 64 522 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "221.6"}','{"text": "theurgy"}','{"text": "fermentation"}','{"text": ""}']}}
 setblock 212 64 522 minecraft:air
@@ -77,3 +82,4 @@ setblock 212 64 515 minecraft:lantern
 setblock 218 64 515 minecraft:lantern
 summon glow_item_frame 213 66 513 {Facing:3b,Fixed:1b,Tags:["kw_shot"],Item:{id:"theurgy:fermentation_vat",count:1}}
 summon glow_item_frame 215 66 513 {Facing:3b,Fixed:1b,Tags:["kw_shot"],Item:{id:"theurgy:alchemical_niter_gems_common",count:1}}
+fill 220 64 510 220 79 519 minecraft:light_gray_concrete

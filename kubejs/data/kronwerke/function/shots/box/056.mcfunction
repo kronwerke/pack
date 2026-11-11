@@ -294,3 +294,4 @@ fill 251 63 95 265 63 95 minecraft:gravel
 fill 251 64 95 265 64 95 create:track[shape=xo]
 setblock 258 64 94 create:track_station
 setblock 258 64 92 create:portable_storage_interface[facing=north]
+fill 266 64 77 266 79 98 minecraft:light_gray_concrete

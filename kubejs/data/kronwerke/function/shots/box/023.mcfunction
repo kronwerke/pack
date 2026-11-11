@@ -15,3 +15,4 @@ setblock 59 64 58 create:millstone
 setblock 61 64 58 create:millstone
 setblock 63 64 58 create:millstone
 setblock 66 64 61 minecraft:trapped_chest[facing=south]{Items:[{Slot:0b,id:"create:goggles",count:1}]}
+fill 67 64 52 67 79 61 minecraft:light_gray_concrete

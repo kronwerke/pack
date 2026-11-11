@@ -11,3 +11,4 @@ setblock 47 64 245 minecraft:chest
 setblock 49 64 245 minecraft:chest
 summon occultism:foliot 48.5 64 249.5 {NoAI:1b,PersistenceRequired:1b,Silent:1b,Tags:["kw_shot"],Rotation:[180f,0f]}
 summon occultism:foliot 51.5 64 249.5 {NoAI:1b,PersistenceRequired:1b,Silent:1b,Tags:["kw_shot"],Rotation:[180f,0f]}
+fill 55 64 242 55 79 251 minecraft:light_gray_concrete

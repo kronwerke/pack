@@ -8,6 +8,7 @@ setblock 2 64 394 minecraft:air
 setblock 2 64 394 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Heiz einen"}','{"text": "Dampfkessel an"}','{"text": ""}','{"text": ""}']}}
 summon text_display 6.5 71 381.5 {text:'[{"text": "196.1  ", "color": "gold"}, {"text": "list_power/steam_engine", "color": "gray"}, {"text": "\\nHeiz einen Dampfkessel an", "color": "white"}]',billboard:"center",background:1275068416,Tags:["kw_shot"],alignment:"center",line_width:200,transformation:{scale:[1.6f,1.6f,1.6f],translation:[0f,0f,0f],left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f]}}
 place template create:gametest/fluids/steam_engine 2 64 378 none
+fill 12 64 376 12 79 385 minecraft:light_gray_concrete
 setblock 13 64 394 minecraft:air
 setblock 13 64 394 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "196.2"}','{"text": "list_power"}','{"text": "mek_heat"}','{"text": ""}']}}
 setblock 14 64 394 minecraft:air
@@ -20,6 +21,7 @@ fill 14 67 378 20 67 378 minecraft:polished_blackstone
 setblock 14 64 381 minecraft:lantern
 setblock 20 64 381 minecraft:lantern
 summon glow_item_frame 16 66 379 {Facing:3b,Fixed:1b,Tags:["kw_shot"],Item:{id:"minecraft:lava_bucket",count:1}}
+fill 22 64 376 22 79 385 minecraft:light_gray_concrete
 setblock 23 64 394 minecraft:air
 setblock 23 64 394 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "196.3"}','{"text": "list_power"}','{"text": "ie_thermo"}','{"text": ""}']}}
 setblock 24 64 394 minecraft:air
@@ -32,6 +34,7 @@ fill 24 67 378 30 67 378 minecraft:polished_blackstone
 setblock 24 64 381 minecraft:lantern
 setblock 30 64 381 minecraft:lantern
 summon glow_item_frame 26 66 379 {Facing:3b,Fixed:1b,Tags:["kw_shot"],Item:{id:"minecraft:lightning_rod",count:1}}
+fill 32 64 376 32 79 385 minecraft:light_gray_concrete
 setblock 33 64 394 minecraft:air
 setblock 33 64 394 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "196.4"}','{"text": "list_power"}','{"text": "alternator"}','{"text": ""}']}}
 setblock 34 64 394 minecraft:air
@@ -44,6 +47,7 @@ fill 34 67 378 40 67 378 minecraft:polished_blackstone
 setblock 34 64 381 minecraft:lantern
 setblock 40 64 381 minecraft:lantern
 summon glow_item_frame 36 66 379 {Facing:3b,Fixed:1b,Tags:["kw_shot"],Item:{id:"create:cogwheel",count:1}}
+fill 42 64 376 42 79 385 minecraft:light_gray_concrete
 setblock 43 64 394 minecraft:air
 setblock 43 64 394 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "196.5"}','{"text": "list_power"}','{"text": "powah_reactor"}','{"text": ""}']}}
 setblock 44 64 394 minecraft:air
@@ -56,6 +60,7 @@ fill 44 67 378 50 67 378 minecraft:polished_blackstone
 setblock 44 64 381 minecraft:lantern
 setblock 50 64 381 minecraft:lantern
 summon glow_item_frame 46 66 379 {Facing:3b,Fixed:1b,Tags:["kw_shot"],Item:{id:"minecraft:water_bucket",count:1}}
+fill 52 64 376 52 79 385 minecraft:light_gray_concrete
 setblock 53 64 394 minecraft:air
 setblock 53 64 394 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "196.6"}','{"text": "list_power"}','{"text": "flux"}','{"text": ""}']}}
 setblock 54 64 394 minecraft:air
@@ -68,6 +73,7 @@ fill 54 67 378 60 67 378 minecraft:polished_blackstone
 setblock 54 64 381 minecraft:lantern
 setblock 60 64 381 minecraft:lantern
 summon glow_item_frame 56 66 379 {Facing:3b,Fixed:1b,Tags:["kw_shot"],Item:{id:"ars_nouveau:source_gem",count:1}}
+fill 62 64 376 62 79 385 minecraft:light_gray_concrete
 setblock 63 64 394 minecraft:air
 setblock 63 64 394 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "196.7"}','{"text": "list_power"}','{"text": "mekmm_large"}','{"text": ""}']}}
 setblock 64 64 394 minecraft:air
@@ -80,6 +86,7 @@ fill 64 67 378 70 67 378 minecraft:polished_blackstone
 setblock 64 64 381 minecraft:lantern
 setblock 70 64 381 minecraft:lantern
 summon glow_item_frame 66 66 379 {Facing:3b,Fixed:1b,Tags:["kw_shot"],Item:{id:"create:encased_fan",count:1}}
+fill 72 64 376 72 79 385 minecraft:light_gray_concrete
 setblock 73 64 394 minecraft:air
 setblock 73 64 394 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "196.8"}','{"text": "list_power"}','{"text": "nc_passive"}','{"text": ""}']}}
 setblock 74 64 394 minecraft:air
@@ -92,6 +99,7 @@ fill 74 67 378 80 67 378 minecraft:polished_blackstone
 setblock 74 64 381 minecraft:lantern
 setblock 80 64 381 minecraft:lantern
 summon glow_item_frame 76 66 379 {Facing:3b,Fixed:1b,Tags:["kw_shot"],Item:{id:"minecraft:daylight_detector",count:1}}
+fill 82 64 376 82 79 385 minecraft:light_gray_concrete
 setblock 83 64 394 minecraft:air
 setblock 83 64 394 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "196.9"}','{"text": "list_power"}','{"text": "draconic_core"}','{"text": ""}']}}
 setblock 84 64 394 minecraft:air
@@ -103,3 +111,4 @@ setblock 90 66 390 draconicevolution:energy_core_stabilizer
 setblock 84 66 384 draconicevolution:energy_core_stabilizer
 setblock 96 66 384 draconicevolution:energy_core_stabilizer
 setblock 97 64 391 minecraft:trapped_chest[facing=south]{Items:[{Slot:0b,id:"draconicevolution:draconium_block",count:16},{Slot:1b,id:"minecraft:redstone_block",count:16}]}
+fill 98 64 376 98 79 391 minecraft:light_gray_concrete

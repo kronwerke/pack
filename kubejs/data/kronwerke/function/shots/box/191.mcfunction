@@ -16,6 +16,7 @@ setblock 132 64 360 minecraft:lantern
 summon glow_item_frame 127 66 358 {Facing:3b,Fixed:1b,Tags:["kw_shot"],Item:{id:"ae2:quantum_ring",count:1}}
 summon glow_item_frame 129 66 358 {Facing:3b,Fixed:1b,Tags:["kw_shot"],Item:{id:"ae2:quantum_link",count:1}}
 summon glow_item_frame 131 66 358 {Facing:3b,Fixed:1b,Tags:["kw_shot"],Item:{id:"ae2:quantum_entangled_singularity",count:1}}
+fill 134 64 355 134 79 364 minecraft:light_gray_concrete
 setblock 135 64 367 minecraft:air
 setblock 135 64 367 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "191.2"}','{"text": "ae2_advanced"}','{"text": "spatial"}','{"text": ""}']}}
 setblock 136 64 367 minecraft:air
@@ -25,6 +26,7 @@ fill 137 64 358 143 64 358 ae2:spatial_pylon
 fill 137 64 358 137 70 358 ae2:spatial_pylon
 fill 137 70 358 143 70 358 ae2:spatial_pylon
 setblock 140 64 362 ae2:spatial_io_port
+fill 146 64 355 146 79 364 minecraft:light_gray_concrete
 setblock 147 64 367 minecraft:air
 setblock 147 64 367 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "191.3"}','{"text": "ae2_advanced"}','{"text": "reaction"}','{"text": ""}']}}
 setblock 148 64 367 minecraft:air
@@ -37,12 +39,14 @@ fill 148 67 357 154 67 357 minecraft:polished_blackstone
 setblock 148 64 360 minecraft:lantern
 setblock 154 64 360 minecraft:lantern
 summon glow_item_frame 150 66 358 {Facing:3b,Fixed:1b,Tags:["kw_shot"],Item:{id:"advanced_ae:reaction_chamber",count:1}}
+fill 156 64 355 156 79 364 minecraft:light_gray_concrete
 setblock 157 64 367 minecraft:air
 setblock 157 64 367 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "191.4"}','{"text": "ae2_advanced"}','{"text": "matrix"}','{"text": ""}']}}
 setblock 158 64 367 minecraft:air
 setblock 158 64 367 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Assembler-Matrix:"}','{"text": "Hülle, innen"}','{"text": "Muster und"}','{"text": "Kerne"}']}}
 summon text_display 161.5 71 360.5 {text:'[{"text": "191.4  ", "color": "gold"}, {"text": "ae2_advanced/matrix", "color": "gray"}, {"text": "\\nBau eine Assembler-Matrix", "color": "white"}]',billboard:"center",background:1275068416,Tags:["kw_shot"],alignment:"center",line_width:200,transformation:{scale:[1.6f,1.6f,1.6f],translation:[0f,0f,0f],left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f]}}
 fill 159 64 358 163 68 362 extendedae:assembler_matrix_wall
+fill 166 64 355 166 79 364 minecraft:light_gray_concrete
 setblock 167 64 367 minecraft:air
 setblock 167 64 367 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "191.5"}','{"text": "ae2_advanced"}','{"text": "mega_4m"}','{"text": ""}']}}
 setblock 168 64 367 minecraft:air
@@ -56,3 +60,4 @@ setblock 168 64 360 minecraft:lantern
 setblock 174 64 360 minecraft:lantern
 summon glow_item_frame 169 66 358 {Facing:3b,Fixed:1b,Tags:["kw_shot"],Item:{id:"megacells:item_storage_cell_4m",count:1}}
 summon glow_item_frame 171 66 358 {Facing:3b,Fixed:1b,Tags:["kw_shot"],Item:{id:"mekanism:elite_control_circuit",count:1}}
+fill 176 64 355 176 79 364 minecraft:light_gray_concrete

@@ -18,3 +18,4 @@ fill 40 65 37 43 65 37 create:andesite_casing
 setblock 41 65 38 create:mechanical_harvester[facing=south]
 setblock 43 65 38 create:mechanical_harvester[facing=south]
 setblock 42 65 36 minecraft:chest
+fill 46 64 31 46 79 42 minecraft:light_gray_concrete

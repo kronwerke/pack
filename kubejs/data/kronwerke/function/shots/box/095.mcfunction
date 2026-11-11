@@ -10,3 +10,4 @@ summon text_display 192.5 71 153.5 {text:'[{"text": "095  ", "color": "gold"}, {
 setblock 189 64 151 ars_nouveau:relay_collector
 setblock 191 64 151 ars_nouveau:relay_deposit
 setblock 196 64 157 minecraft:trapped_chest[facing=south]{Items:[{Slot:0b,id:"ars_nouveau:dominion_wand",count:1}]}
+fill 197 64 148 197 79 157 minecraft:light_gray_concrete

@@ -18,3 +18,4 @@ setblock 88 64 36 minecraft:hopper
 fill 84 64 40 92 70 40 minecraft:glass
 setblock 85 69 36 minecraft:oak_trapdoor[half=top,open=true,facing=east]
 setblock 91 69 36 minecraft:oak_trapdoor[half=top,open=true,facing=east]
+fill 93 64 31 93 79 40 minecraft:light_gray_concrete

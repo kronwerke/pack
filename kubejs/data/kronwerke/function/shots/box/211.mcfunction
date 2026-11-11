@@ -14,6 +14,7 @@ fill 281 67 441 287 67 441 minecraft:polished_blackstone
 setblock 281 64 444 minecraft:lantern
 setblock 287 64 444 minecraft:lantern
 summon glow_item_frame 283 66 442 {Facing:3b,Fixed:1b,Tags:["kw_shot"],Item:{id:"kronwerke:grubenrahmen",count:1}}
+fill 289 64 439 289 79 448 minecraft:light_gray_concrete
 setblock 290 64 451 minecraft:air
 setblock 290 64 451 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "211.2"}','{"text": "list_dimensions"}','{"text": "d_aether"}','{"text": ""}']}}
 setblock 291 64 451 minecraft:air
@@ -26,6 +27,7 @@ fill 291 67 441 297 67 441 minecraft:polished_blackstone
 setblock 291 64 444 minecraft:lantern
 setblock 297 64 444 minecraft:lantern
 summon glow_item_frame 293 66 442 {Facing:3b,Fixed:1b,Tags:["kw_shot"],Item:{id:"minecraft:water_bucket",count:1}}
+fill 299 64 439 299 79 448 minecraft:light_gray_concrete
 setblock 300 64 451 minecraft:air
 setblock 300 64 451 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "211.3"}','{"text": "list_dimensions"}','{"text": "d_undergarden"}','{"text": ""}']}}
 setblock 301 64 451 minecraft:air
@@ -38,6 +40,7 @@ fill 301 67 441 307 67 441 minecraft:polished_blackstone
 setblock 301 64 444 minecraft:lantern
 setblock 307 64 444 minecraft:lantern
 summon glow_item_frame 303 66 442 {Facing:3b,Fixed:1b,Tags:["kw_shot"],Item:{id:"minecraft:stone_bricks",count:1}}
+fill 309 64 439 309 79 448 minecraft:light_gray_concrete
 setblock 310 64 451 minecraft:air
 setblock 310 64 451 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "211.4"}','{"text": "list_dimensions"}','{"text": "d_otherside"}','{"text": ""}']}}
 setblock 311 64 451 minecraft:air
@@ -50,6 +53,7 @@ fill 311 67 441 317 67 441 minecraft:polished_blackstone
 setblock 311 64 444 minecraft:lantern
 setblock 317 64 444 minecraft:lantern
 summon glow_item_frame 313 66 442 {Facing:3b,Fixed:1b,Tags:["kw_shot"],Item:{id:"minecraft:reinforced_deepslate",count:1}}
+fill 319 64 439 319 79 448 minecraft:light_gray_concrete
 setblock 320 64 451 minecraft:air
 setblock 320 64 451 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "211.5"}','{"text": "list_dimensions"}','{"text": "r_plates"}','{"text": ""}']}}
 setblock 321 64 451 minecraft:air
@@ -62,6 +66,7 @@ fill 321 67 441 327 67 441 minecraft:polished_blackstone
 setblock 321 64 444 minecraft:lantern
 setblock 327 64 444 minecraft:lantern
 summon glow_item_frame 323 66 442 {Facing:3b,Fixed:1b,Tags:["kw_shot"],Item:{id:"waystones:warp_plate",count:1}}
+fill 329 64 439 329 79 448 minecraft:light_gray_concrete
 setblock 330 64 451 minecraft:air
 setblock 330 64 451 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "211.6"}','{"text": "list_dimensions"}','{"text": "r_mekanism"}','{"text": ""}']}}
 setblock 331 64 451 minecraft:air
@@ -74,6 +79,7 @@ fill 331 67 441 337 67 441 minecraft:polished_blackstone
 setblock 331 64 444 minecraft:lantern
 setblock 337 64 444 minecraft:lantern
 summon glow_item_frame 333 66 442 {Facing:3b,Fixed:1b,Tags:["kw_shot"],Item:{id:"minecraft:diamond",count:1}}
+fill 339 64 439 339 79 448 minecraft:light_gray_concrete
 setblock 340 64 451 minecraft:air
 setblock 340 64 451 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "211.7"}','{"text": "list_dimensions"}','{"text": "r_enderio"}','{"text": ""}']}}
 setblock 341 64 451 minecraft:air
@@ -86,6 +92,7 @@ fill 341 67 441 347 67 441 minecraft:polished_blackstone
 setblock 341 64 444 minecraft:lantern
 setblock 347 64 444 minecraft:lantern
 summon glow_item_frame 343 66 442 {Facing:3b,Fixed:1b,Tags:["kw_shot"],Item:{id:"minecraft:iron_block",count:1}}
+fill 349 64 439 349 79 448 minecraft:light_gray_concrete
 setblock 350 64 451 minecraft:air
 setblock 350 64 451 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "211.8"}','{"text": "list_dimensions"}','{"text": "r_chunks"}','{"text": ""}']}}
 setblock 351 64 451 minecraft:air
@@ -98,3 +105,4 @@ fill 351 67 441 357 67 441 minecraft:polished_blackstone
 setblock 351 64 444 minecraft:lantern
 setblock 357 64 444 minecraft:lantern
 summon glow_item_frame 353 66 442 {Facing:3b,Fixed:1b,Tags:["kw_shot"],Item:{id:"minecraft:map",count:1}}
+fill 359 64 439 359 79 448 minecraft:light_gray_concrete

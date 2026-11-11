@@ -14,3 +14,4 @@ setblock 118 64 37 ars_nouveau:agronomic_sourcelink
 setblock 120 64 37 ars_nouveau:source_jar
 setblock 122 64 37 ars_nouveau:imbuement_chamber
 summon ars_nouveau:starbuncle 117.5 64 38.5 {NoAI:1b,PersistenceRequired:1b,Silent:1b,Tags:["kw_shot"],Rotation:[180f,0f]}
+fill 125 64 31 125 79 40 minecraft:light_gray_concrete

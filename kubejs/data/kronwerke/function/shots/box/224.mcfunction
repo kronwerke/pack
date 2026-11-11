@@ -10,6 +10,7 @@ summon text_display 360.5 71 515.5 {text:'[{"text": "224.1  ", "color": "gold"},
 summon armor_stand 358.5 64 515.5 {ArmorItems:[{},{},{id:"mekanism:jetpack",count:1},{}],ShowArms:1b,NoBasePlate:1b,Tags:["kw_shot"],Rotation:[180f,0f]}
 summon armor_stand 360.5 64 515.5 {ArmorItems:[{id:"mekanism:mekasuit_boots",count:1},{id:"mekanism:mekasuit_pants",count:1},{id:"mekanism:mekasuit_bodyarmor",count:1},{id:"mekanism:mekasuit_helmet",count:1}],ShowArms:1b,NoBasePlate:1b,Tags:["kw_shot"],Rotation:[180f,0f]}
 summon armor_stand 362.5 64 515.5 {ArmorItems:[{},{},{id:"draconicevolution:wyvern_chestpiece",count:1},{}],HandItems:[{id:"draconicevolution:wyvern_pickaxe",count:1},{}],ShowArms:1b,NoBasePlate:1b,Tags:["kw_shot"],Rotation:[180f,0f]}
+fill 365 64 510 365 79 519 minecraft:light_gray_concrete
 setblock 366 64 522 minecraft:air
 setblock 366 64 522 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "224.2"}','{"text": "list_gear"}','{"text": "drilling"}','{"text": ""}']}}
 setblock 367 64 522 minecraft:air
@@ -18,6 +19,7 @@ summon text_display 370.5 71 515.5 {text:'[{"text": "224.2  ", "color": "gold"},
 summon armor_stand 368.5 64 515.5 {ArmorItems:[{},{},{id:"mekanism:jetpack",count:1},{}],ShowArms:1b,NoBasePlate:1b,Tags:["kw_shot"],Rotation:[180f,0f]}
 summon armor_stand 370.5 64 515.5 {ArmorItems:[{id:"mekanism:mekasuit_boots",count:1},{id:"mekanism:mekasuit_pants",count:1},{id:"mekanism:mekasuit_bodyarmor",count:1},{id:"mekanism:mekasuit_helmet",count:1}],ShowArms:1b,NoBasePlate:1b,Tags:["kw_shot"],Rotation:[180f,0f]}
 summon armor_stand 372.5 64 515.5 {ArmorItems:[{},{},{id:"draconicevolution:wyvern_chestpiece",count:1},{}],HandItems:[{id:"draconicevolution:wyvern_pickaxe",count:1},{}],ShowArms:1b,NoBasePlate:1b,Tags:["kw_shot"],Rotation:[180f,0f]}
+fill 375 64 510 375 79 519 minecraft:light_gray_concrete
 setblock 376 64 522 minecraft:air
 setblock 376 64 522 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "224.3"}','{"text": "list_gear"}','{"text": "mekasuit"}','{"text": ""}']}}
 setblock 377 64 522 minecraft:air
@@ -26,6 +28,7 @@ summon text_display 380.5 71 515.5 {text:'[{"text": "224.3  ", "color": "gold"},
 summon armor_stand 378.5 64 515.5 {ArmorItems:[{},{},{id:"mekanism:jetpack",count:1},{}],ShowArms:1b,NoBasePlate:1b,Tags:["kw_shot"],Rotation:[180f,0f]}
 summon armor_stand 380.5 64 515.5 {ArmorItems:[{id:"mekanism:mekasuit_boots",count:1},{id:"mekanism:mekasuit_pants",count:1},{id:"mekanism:mekasuit_bodyarmor",count:1},{id:"mekanism:mekasuit_helmet",count:1}],ShowArms:1b,NoBasePlate:1b,Tags:["kw_shot"],Rotation:[180f,0f]}
 summon armor_stand 382.5 64 515.5 {ArmorItems:[{},{},{id:"draconicevolution:wyvern_chestpiece",count:1},{}],HandItems:[{id:"draconicevolution:wyvern_pickaxe",count:1},{}],ShowArms:1b,NoBasePlate:1b,Tags:["kw_shot"],Rotation:[180f,0f]}
+fill 385 64 510 385 79 519 minecraft:light_gray_concrete
 setblock 386 64 522 minecraft:air
 setblock 386 64 522 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "224.4"}','{"text": "list_gear"}','{"text": "wyvern"}','{"text": ""}']}}
 setblock 387 64 522 minecraft:air
@@ -34,6 +37,7 @@ summon text_display 390.5 71 515.5 {text:'[{"text": "224.4  ", "color": "gold"},
 summon armor_stand 388.5 64 515.5 {ArmorItems:[{},{},{id:"mekanism:jetpack",count:1},{}],ShowArms:1b,NoBasePlate:1b,Tags:["kw_shot"],Rotation:[180f,0f]}
 summon armor_stand 390.5 64 515.5 {ArmorItems:[{id:"mekanism:mekasuit_boots",count:1},{id:"mekanism:mekasuit_pants",count:1},{id:"mekanism:mekasuit_bodyarmor",count:1},{id:"mekanism:mekasuit_helmet",count:1}],ShowArms:1b,NoBasePlate:1b,Tags:["kw_shot"],Rotation:[180f,0f]}
 summon armor_stand 392.5 64 515.5 {ArmorItems:[{},{},{id:"draconicevolution:wyvern_chestpiece",count:1},{}],HandItems:[{id:"draconicevolution:wyvern_pickaxe",count:1},{}],ShowArms:1b,NoBasePlate:1b,Tags:["kw_shot"],Rotation:[180f,0f]}
+fill 395 64 510 395 79 519 minecraft:light_gray_concrete
 setblock 396 64 522 minecraft:air
 setblock 396 64 522 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "224.5"}','{"text": "list_gear"}','{"text": "sg_end"}','{"text": ""}']}}
 setblock 397 64 522 minecraft:air
@@ -42,3 +46,4 @@ summon text_display 400.5 71 515.5 {text:'[{"text": "224.5  ", "color": "gold"},
 summon armor_stand 398.5 64 515.5 {ArmorItems:[{},{},{id:"mekanism:jetpack",count:1},{}],ShowArms:1b,NoBasePlate:1b,Tags:["kw_shot"],Rotation:[180f,0f]}
 summon armor_stand 400.5 64 515.5 {ArmorItems:[{id:"mekanism:mekasuit_boots",count:1},{id:"mekanism:mekasuit_pants",count:1},{id:"mekanism:mekasuit_bodyarmor",count:1},{id:"mekanism:mekasuit_helmet",count:1}],ShowArms:1b,NoBasePlate:1b,Tags:["kw_shot"],Rotation:[180f,0f]}
 summon armor_stand 402.5 64 515.5 {ArmorItems:[{},{},{id:"draconicevolution:wyvern_chestpiece",count:1},{}],HandItems:[{id:"draconicevolution:wyvern_pickaxe",count:1},{}],ShowArms:1b,NoBasePlate:1b,Tags:["kw_shot"],Rotation:[180f,0f]}
+fill 405 64 510 405 79 519 minecraft:light_gray_concrete

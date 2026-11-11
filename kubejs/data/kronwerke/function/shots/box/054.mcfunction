@@ -11,3 +11,4 @@ fill 221 63 82 229 63 82 minecraft:gravel
 fill 221 64 82 229 64 82 create:track[shape=xo]
 setblock 225 64 84 create:portable_storage_interface[facing=north]
 setblock 225 64 85 minecraft:chest
+fill 230 64 77 230 79 86 minecraft:light_gray_concrete

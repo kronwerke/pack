@@ -14,6 +14,7 @@ fill 248 67 357 254 67 357 minecraft:polished_blackstone
 setblock 248 64 360 minecraft:lantern
 setblock 254 64 360 minecraft:lantern
 summon glow_item_frame 250 66 358 {Facing:3b,Fixed:1b,Tags:["kw_shot"],Item:{id:"sophisticatedbackpacks:backpack",count:1}}
+fill 256 64 355 256 79 364 minecraft:light_gray_concrete
 setblock 257 64 367 minecraft:air
 setblock 257 64 367 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "193.2"}','{"text": "storage"}','{"text": "drawers_4"}','{"text": ""}']}}
 setblock 258 64 367 minecraft:air
@@ -26,6 +27,7 @@ fill 258 67 357 264 67 357 minecraft:polished_blackstone
 setblock 258 64 360 minecraft:lantern
 setblock 264 64 360 minecraft:lantern
 summon glow_item_frame 260 66 358 {Facing:3b,Fixed:1b,Tags:["kw_shot"],Item:{id:"functionalstorage:oak_4",count:1}}
+fill 266 64 355 266 79 364 minecraft:light_gray_concrete
 setblock 267 64 367 minecraft:air
 setblock 267 64 367 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "193.3"}','{"text": "storage"}','{"text": "config_tool"}','{"text": ""}']}}
 setblock 268 64 367 minecraft:air
@@ -38,6 +40,7 @@ fill 268 67 357 274 67 357 minecraft:polished_blackstone
 setblock 268 64 360 minecraft:lantern
 setblock 274 64 360 minecraft:lantern
 summon glow_item_frame 270 66 358 {Facing:3b,Fixed:1b,Tags:["kw_shot"],Item:{id:"functionalstorage:configuration_tool",count:1}}
+fill 276 64 355 276 79 364 minecraft:light_gray_concrete
 setblock 277 64 367 minecraft:air
 setblock 277 64 367 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "193.4"}','{"text": "storage"}','{"text": "copper_tier"}','{"text": ""}']}}
 setblock 278 64 367 minecraft:air
@@ -50,6 +53,7 @@ fill 278 67 357 284 67 357 minecraft:polished_blackstone
 setblock 278 64 360 minecraft:lantern
 setblock 284 64 360 minecraft:lantern
 summon glow_item_frame 280 66 358 {Facing:3b,Fixed:1b,Tags:["kw_shot"],Item:{id:"sophisticatedstorage:basic_to_copper_tier_upgrade",count:1}}
+fill 286 64 355 286 79 364 minecraft:light_gray_concrete
 setblock 287 64 367 minecraft:air
 setblock 287 64 367 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "193.5"}','{"text": "storage"}','{"text": "controller"}','{"text": ""}']}}
 setblock 288 64 367 minecraft:air
@@ -62,6 +66,7 @@ fill 288 67 357 294 67 357 minecraft:polished_blackstone
 setblock 288 64 360 minecraft:lantern
 setblock 294 64 360 minecraft:lantern
 summon glow_item_frame 290 66 358 {Facing:3b,Fixed:1b,Tags:["kw_shot"],Item:{id:"sophisticatedstorage:controller",count:1}}
+fill 296 64 355 296 79 364 minecraft:light_gray_concrete
 setblock 297 64 367 minecraft:air
 setblock 297 64 367 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "193.6"}','{"text": "storage"}','{"text": "vault_big"}','{"text": ""}']}}
 setblock 298 64 367 minecraft:air
@@ -74,6 +79,7 @@ fill 298 67 357 304 67 357 minecraft:polished_blackstone
 setblock 298 64 360 minecraft:lantern
 setblock 304 64 360 minecraft:lantern
 summon glow_item_frame 300 66 358 {Facing:3b,Fixed:1b,Tags:["kw_shot"],Item:{id:"create:item_vault",count:1}}
+fill 306 64 355 306 79 364 minecraft:light_gray_concrete
 setblock 307 64 367 minecraft:air
 setblock 307 64 367 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "193.7"}','{"text": "storage"}','{"text": "trash"}','{"text": ""}']}}
 setblock 308 64 367 minecraft:air
@@ -86,3 +92,4 @@ fill 308 67 357 314 67 357 minecraft:polished_blackstone
 setblock 308 64 360 minecraft:lantern
 setblock 314 64 360 minecraft:lantern
 summon glow_item_frame 310 66 358 {Facing:3b,Fixed:1b,Tags:["kw_shot"],Item:{id:"trashcans:item_trash_can",count:1}}
+fill 316 64 355 316 79 364 minecraft:light_gray_concrete

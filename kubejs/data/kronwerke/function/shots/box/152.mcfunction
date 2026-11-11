@@ -12,3 +12,4 @@ summon text_display 185.5 71 247.5 {text:'[{"text": "152  ", "color": "gold"}, {
 setblock 185 65 247 occultism:dimensional_mineshaft
 setblock 185 64 247 minecraft:hopper
 setblock 186 64 247 minecraft:chest
+fill 190 64 242 190 79 251 minecraft:light_gray_concrete

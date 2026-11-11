@@ -12,3 +12,4 @@ summon text_display 158.5 71 57.5 {text:'[{"text": "029  ", "color": "gold"}, {"
 setblock 155 64 55 create:shaft[axis=x]
 setblock 157 64 55 create:shaft[axis=x]
 setblock 162 64 61 minecraft:trapped_chest[facing=south]{Items:[{Slot:0b,id:"create:belt_connector",count:1}]}
+fill 163 64 52 163 79 61 minecraft:light_gray_concrete

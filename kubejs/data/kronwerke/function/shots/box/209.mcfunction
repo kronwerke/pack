@@ -14,6 +14,7 @@ fill 119 67 441 125 67 441 minecraft:polished_blackstone
 setblock 119 64 444 minecraft:lantern
 setblock 125 64 444 minecraft:lantern
 summon glow_item_frame 121 66 442 {Facing:3b,Fixed:1b,Tags:["kw_shot"],Item:{id:"undergarden:depthrock",count:1}}
+fill 127 64 439 127 79 448 minecraft:light_gray_concrete
 setblock 128 64 451 minecraft:air
 setblock 128 64 451 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "209.2"}','{"text": "undergarden"}','{"text": "catacombs"}','{"text": ""}']}}
 setblock 129 64 451 minecraft:air
@@ -26,6 +27,7 @@ fill 129 67 441 135 67 441 minecraft:polished_blackstone
 setblock 129 64 444 minecraft:lantern
 setblock 135 64 444 minecraft:lantern
 summon glow_item_frame 131 66 442 {Facing:3b,Fixed:1b,Tags:["kw_shot"],Item:{id:"undergarden:depthrock_bricks",count:1}}
+fill 137 64 439 137 79 448 minecraft:light_gray_concrete
 setblock 138 64 451 minecraft:air
 setblock 138 64 451 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "209.3"}','{"text": "undergarden"}','{"text": "guardian"}','{"text": ""}']}}
 setblock 139 64 451 minecraft:air
@@ -39,6 +41,7 @@ setblock 139 64 444 minecraft:lantern
 setblock 145 64 444 minecraft:lantern
 summon glow_item_frame 141 66 442 {Facing:3b,Fixed:1b,Tags:["kw_shot"],Item:{id:"undergarden:forgotten_nugget",count:1}}
 summon undergarden:forgotten_guardian 140.5 64 446.5 {NoAI:1b,PersistenceRequired:1b,Silent:1b,Tags:["kw_shot"],Rotation:[180f,0f]}
+fill 147 64 439 147 79 448 minecraft:light_gray_concrete
 setblock 148 64 451 minecraft:air
 setblock 148 64 451 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "209.4"}','{"text": "undergarden"}','{"text": "forgotten"}','{"text": ""}']}}
 setblock 149 64 451 minecraft:air
@@ -51,6 +54,7 @@ fill 149 67 441 155 67 441 minecraft:polished_blackstone
 setblock 149 64 444 minecraft:lantern
 setblock 155 64 444 minecraft:lantern
 summon glow_item_frame 151 66 442 {Facing:3b,Fixed:1b,Tags:["kw_shot"],Item:{id:"undergarden:forgotten_pickaxe",count:1}}
+fill 157 64 439 157 79 448 minecraft:light_gray_concrete
 setblock 158 64 451 minecraft:air
 setblock 158 64 451 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "209.5"}','{"text": "undergarden"}','{"text": "depths"}','{"text": ""}']}}
 setblock 159 64 451 minecraft:air
@@ -63,6 +67,7 @@ fill 159 67 441 165 67 441 minecraft:polished_blackstone
 setblock 159 64 444 minecraft:lantern
 setblock 165 64 444 minecraft:lantern
 summon glow_item_frame 161 66 442 {Facing:3b,Fixed:1b,Tags:["kw_shot"],Item:{id:"undergarden:rogdorium",count:1}}
+fill 167 64 439 167 79 448 minecraft:light_gray_concrete
 setblock 168 64 451 minecraft:air
 setblock 168 64 451 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "209.6"}','{"text": "undergarden"}','{"text": "infuser"}','{"text": ""}']}}
 setblock 169 64 451 minecraft:air
@@ -76,6 +81,7 @@ setblock 169 64 444 minecraft:lantern
 setblock 175 64 444 minecraft:lantern
 summon glow_item_frame 170 66 442 {Facing:3b,Fixed:1b,Tags:["kw_shot"],Item:{id:"undergarden:infuser",count:1}}
 summon glow_item_frame 172 66 442 {Facing:3b,Fixed:1b,Tags:["kw_shot"],Item:{id:"undergarden:utherium_crystal",count:1}}
+fill 177 64 439 177 79 448 minecraft:light_gray_concrete
 setblock 178 64 451 minecraft:air
 setblock 178 64 451 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "209.7"}','{"text": "undergarden"}','{"text": "b_cold"}','{"text": ""}']}}
 setblock 179 64 451 minecraft:air
@@ -88,3 +94,4 @@ fill 179 67 441 185 67 441 minecraft:polished_blackstone
 setblock 179 64 444 minecraft:lantern
 setblock 185 64 444 minecraft:lantern
 summon glow_item_frame 181 66 442 {Facing:3b,Fixed:1b,Tags:["kw_shot"],Item:{id:"undergarden:shiverstone",count:1}}
+fill 187 64 439 187 79 448 minecraft:light_gray_concrete

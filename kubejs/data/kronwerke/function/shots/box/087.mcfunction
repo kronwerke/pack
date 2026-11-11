@@ -11,3 +11,4 @@ setblock 58 64 160 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text"
 summon text_display 60.5 71 153.5 {text:'[{"text": "087  ", "color": "gold"}, {"text": "ars_nouveau/first_spell", "color": "gray"}, {"text": "\\nWirk deinen ersten Zauber", "color": "white"}]',billboard:"center",background:1275068416,Tags:["kw_shot"],alignment:"center",line_width:200,transformation:{scale:[1.6f,1.6f,1.6f],translation:[0f,0f,0f],left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f]}}
 setblock 57 64 151 ars_nouveau:scribes_table
 setblock 64 64 157 minecraft:trapped_chest[facing=south]{Items:[{Slot:0b,id:"ars_nouveau:novice_spell_book",count:1}]}
+fill 65 64 148 65 79 157 minecraft:light_gray_concrete

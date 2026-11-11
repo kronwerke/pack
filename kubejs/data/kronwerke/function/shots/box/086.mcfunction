@@ -12,3 +12,4 @@ setblock 45 65 153 ars_nouveau:imbuement_chamber
 setblock 45 64 153 minecraft:hopper[facing=south]
 setblock 45 64 154 minecraft:chest
 setblock 43 65 153 ars_nouveau:source_jar
+fill 50 64 148 50 79 157 minecraft:light_gray_concrete

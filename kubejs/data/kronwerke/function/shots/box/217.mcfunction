@@ -14,6 +14,7 @@ fill 200 67 487 206 67 487 minecraft:polished_blackstone
 setblock 200 64 490 minecraft:lantern
 setblock 206 64 490 minecraft:lantern
 summon glow_item_frame 202 66 488 {Facing:3b,Fixed:1b,Tags:["kw_shot"],Item:{id:"minecraft:redstone",count:1}}
+fill 208 64 485 208 79 494 minecraft:light_gray_concrete
 setblock 209 64 497 minecraft:air
 setblock 209 64 497 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "217.2"}','{"text": "mahou_tsukai"}','{"text": "cloth"}','{"text": ""}']}}
 setblock 210 64 497 minecraft:air
@@ -26,6 +27,7 @@ fill 210 67 487 216 67 487 minecraft:polished_blackstone
 setblock 210 64 490 minecraft:lantern
 setblock 216 64 490 minecraft:lantern
 summon glow_item_frame 212 66 488 {Facing:3b,Fixed:1b,Tags:["kw_shot"],Item:{id:"mahoutsukai:spell_cloth",count:1}}
+fill 218 64 485 218 79 494 minecraft:light_gray_concrete
 setblock 219 64 497 minecraft:air
 setblock 219 64 497 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "217.3"}','{"text": "mahou_tsukai"}','{"text": "fay_sight"}','{"text": ""}']}}
 setblock 220 64 497 minecraft:air
@@ -38,6 +40,7 @@ fill 220 67 487 226 67 487 minecraft:polished_blackstone
 setblock 220 64 490 minecraft:lantern
 setblock 226 64 490 minecraft:lantern
 summon glow_item_frame 222 66 488 {Facing:3b,Fixed:1b,Tags:["kw_shot"],Item:{id:"mahoutsukai:scroll_fay_sight",count:1}}
+fill 228 64 485 228 79 494 minecraft:light_gray_concrete
 setblock 229 64 497 minecraft:air
 setblock 229 64 497 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "217.4"}','{"text": "mahou_tsukai"}','{"text": "marble_visit"}','{"text": ""}']}}
 setblock 230 64 497 minecraft:air
@@ -50,6 +53,7 @@ fill 230 67 487 236 67 487 minecraft:polished_blackstone
 setblock 230 64 490 minecraft:lantern
 setblock 236 64 490 minecraft:lantern
 summon glow_item_frame 232 66 488 {Facing:3b,Fixed:1b,Tags:["kw_shot"],Item:{id:"minecraft:iron_sword",count:1}}
+fill 238 64 485 238 79 494 minecraft:light_gray_concrete
 setblock 239 64 497 minecraft:air
 setblock 239 64 497 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "217.5"}','{"text": "mahou_tsukai"}','{"text": "staff"}','{"text": ""}']}}
 setblock 240 64 497 minecraft:air
@@ -62,3 +66,4 @@ fill 240 67 487 246 67 487 minecraft:polished_blackstone
 setblock 240 64 490 minecraft:lantern
 setblock 246 64 490 minecraft:lantern
 summon glow_item_frame 242 66 488 {Facing:3b,Fixed:1b,Tags:["kw_shot"],Item:{id:"mahoutsukai:mystic_staff",count:1}}
+fill 248 64 485 248 79 494 minecraft:light_gray_concrete

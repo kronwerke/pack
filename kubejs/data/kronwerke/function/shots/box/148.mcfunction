@@ -9,3 +9,4 @@ setblock 122 64 254 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text
 summon text_display 125.5 71 247.5 {text:'[{"text": "148  ", "color": "gold"}, {"text": "occultism/djinni_familiars", "color": "gray"}, {"text": "\\nRuf einen Djinni-Vertrauten", "color": "white"}]',billboard:"center",background:1275068416,Tags:["kw_shot"],alignment:"center",line_width:200,transformation:{scale:[1.6f,1.6f,1.6f],translation:[0f,0f,0f],left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f]}}
 summon occultism:greedy_familiar 123.5 64 249.5 {NoAI:1b,PersistenceRequired:1b,Silent:1b,Tags:["kw_shot"],Rotation:[180f,0f]}
 summon occultism:beholder_familiar 126.5 64 249.5 {NoAI:1b,PersistenceRequired:1b,Silent:1b,Tags:["kw_shot"],Rotation:[180f,0f]}
+fill 130 64 242 130 79 251 minecraft:light_gray_concrete

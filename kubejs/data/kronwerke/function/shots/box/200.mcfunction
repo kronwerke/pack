@@ -14,6 +14,7 @@ setblock 188 64 381 fluxnetworks:flux_plug
 setblock 194 64 381 fluxnetworks:flux_point
 setblock 195 64 381 mekanism:enrichment_chamber
 setblock 197 64 385 minecraft:trapped_chest[facing=south]{Items:[{Slot:0b,id:"fluxnetworks:flux_configurator",count:1},{Slot:1b,id:"fluxnetworks:flux_controller",count:1}]}
+fill 198 64 376 198 79 385 minecraft:light_gray_concrete
 setblock 199 64 388 minecraft:air
 setblock 199 64 388 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "200.2"}','{"text": "flux_networks"}','{"text": "setup_reactor"}','{"text": ""}']}}
 setblock 200 64 388 minecraft:air
@@ -21,6 +22,7 @@ setblock 200 64 388 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text
 summon text_display 203.5 71 381.5 {text:'[{"text": "200.2  ", "color": "gold"}, {"text": "flux_networks/setup_reactor", "color": "gray"}, {"text": "\\nReaktorstrom in die Ferne", "color": "white"}]',billboard:"center",background:1275068416,Tags:["kw_shot"],alignment:"center",line_width:200,transformation:{scale:[1.6f,1.6f,1.6f],translation:[0f,0f,0f],left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f]}}
 fill 202 64 380 204 67 382 powah:reactor_starter
 setblock 205 64 381 fluxnetworks:flux_plug
+fill 208 64 376 208 79 385 minecraft:light_gray_concrete
 setblock 209 64 388 minecraft:air
 setblock 209 64 388 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "200.3"}','{"text": "flux_networks"}','{"text": "whole_base"}','{"text": ""}']}}
 setblock 210 64 388 minecraft:air
@@ -31,3 +33,4 @@ setblock 212 64 381 fluxnetworks:flux_plug
 setblock 218 64 381 fluxnetworks:flux_point
 setblock 219 64 381 mekanism:enrichment_chamber
 setblock 221 64 385 minecraft:trapped_chest[facing=south]{Items:[{Slot:0b,id:"fluxnetworks:flux_configurator",count:1},{Slot:1b,id:"fluxnetworks:flux_controller",count:1}]}
+fill 222 64 376 222 79 385 minecraft:light_gray_concrete

@@ -9,6 +9,7 @@ setblock 2 64 432 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text":
 summon text_display 5.5 71 425.5 {text:'[{"text": "204.1  ", "color": "gold"}, {"text": "nether/welcome", "color": "gray"}, {"text": "\\nBetritt den Nether", "color": "white"}]',billboard:"center",background:1275068416,Tags:["kw_shot"],alignment:"center",line_width:200,transformation:{scale:[1.6f,1.6f,1.6f],translation:[0f,0f,0f],left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f]}}
 fill 4 64 425 7 68 425 minecraft:obsidian
 fill 5 65 425 6 67 425 minecraft:nether_portal[axis=x]
+fill 10 64 420 10 79 429 minecraft:light_gray_concrete
 setblock 11 64 432 minecraft:air
 setblock 11 64 432 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "204.2"}','{"text": "nether"}','{"text": "fortress"}','{"text": ""}']}}
 setblock 12 64 432 minecraft:air
@@ -21,6 +22,7 @@ fill 12 67 422 18 67 422 minecraft:polished_blackstone
 setblock 12 64 425 minecraft:lantern
 setblock 18 64 425 minecraft:lantern
 summon glow_item_frame 14 66 423 {Facing:3b,Fixed:1b,Tags:["kw_shot"],Item:{id:"minecraft:nether_bricks",count:1}}
+fill 20 64 420 20 79 429 minecraft:light_gray_concrete
 setblock 21 64 432 minecraft:air
 setblock 21 64 432 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "204.3"}','{"text": "nether"}','{"text": "blaze_burner"}','{"text": ""}']}}
 setblock 22 64 432 minecraft:air
@@ -28,6 +30,7 @@ setblock 22 64 432 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text"
 summon text_display 25.5 71 425.5 {text:'[{"text": "204.3  ", "color": "gold"}, {"text": "nether/blaze_burner", "color": "gray"}, {"text": "\\nFang eine Lohe ein", "color": "white"}]',billboard:"center",background:1275068416,Tags:["kw_shot"],alignment:"center",line_width:200,transformation:{scale:[1.6f,1.6f,1.6f],translation:[0f,0f,0f],left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f]}}
 summon minecraft:blaze 25.5 65 425.5 {NoAI:1b,PersistenceRequired:1b,Silent:1b,Tags:["kw_shot"],Rotation:[180f,0f]}
 setblock 29 64 429 minecraft:trapped_chest[facing=south]{Items:[{Slot:0b,id:"create:blaze_burner",count:1}]}
+fill 30 64 420 30 79 429 minecraft:light_gray_concrete
 setblock 31 64 432 minecraft:air
 setblock 31 64 432 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "204.4"}','{"text": "nether"}','{"text": "biomes"}','{"text": ""}']}}
 setblock 32 64 432 minecraft:air
@@ -40,6 +43,7 @@ fill 32 67 422 38 67 422 minecraft:polished_blackstone
 setblock 32 64 425 minecraft:lantern
 setblock 38 64 425 minecraft:lantern
 summon glow_item_frame 34 66 423 {Facing:3b,Fixed:1b,Tags:["kw_shot"],Item:{id:"minecraft:warped_fungus",count:1}}
+fill 40 64 420 40 79 429 minecraft:light_gray_concrete
 setblock 41 64 432 minecraft:air
 setblock 41 64 432 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "204.5"}','{"text": "nether"}','{"text": "structures"}','{"text": ""}']}}
 setblock 42 64 432 minecraft:air
@@ -52,6 +56,7 @@ fill 42 67 422 48 67 422 minecraft:polished_blackstone
 setblock 42 64 425 minecraft:lantern
 setblock 48 64 425 minecraft:lantern
 summon glow_item_frame 44 66 423 {Facing:3b,Fixed:1b,Tags:["kw_shot"],Item:{id:"minecraft:chiseled_polished_blackstone",count:1}}
+fill 50 64 420 50 79 429 minecraft:light_gray_concrete
 setblock 51 64 432 minecraft:air
 setblock 51 64 432 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "204.6"}','{"text": "nether"}','{"text": "ig_kill"}','{"text": ""}']}}
 setblock 52 64 432 minecraft:air
@@ -65,6 +70,7 @@ setblock 52 64 425 minecraft:lantern
 setblock 58 64 425 minecraft:lantern
 summon glow_item_frame 54 66 423 {Facing:3b,Fixed:1b,Tags:["kw_shot"],Item:{id:"cataclysm:ignitium_ingot",count:1}}
 summon cataclysm:ignis 53.5 64 427.5 {NoAI:1b,PersistenceRequired:1b,Silent:1b,Tags:["kw_shot"],Rotation:[180f,0f]}
+fill 60 64 420 60 79 429 minecraft:light_gray_concrete
 setblock 61 64 432 minecraft:air
 setblock 61 64 432 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "204.7"}','{"text": "nether"}','{"text": "nm_kill"}','{"text": ""}']}}
 setblock 62 64 432 minecraft:air
@@ -78,6 +84,7 @@ setblock 62 64 425 minecraft:lantern
 setblock 68 64 425 minecraft:lantern
 summon glow_item_frame 64 66 423 {Facing:3b,Fixed:1b,Tags:["kw_shot"],Item:{id:"cataclysm:infernal_forge",count:1}}
 summon cataclysm:netherite_monstrosity 63.5 64 427.5 {NoAI:1b,PersistenceRequired:1b,Silent:1b,Tags:["kw_shot"],Rotation:[180f,0f]}
+fill 70 64 420 70 79 429 minecraft:light_gray_concrete
 setblock 71 64 432 minecraft:air
 setblock 71 64 432 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "204.8"}','{"text": "nether"}','{"text": "bastion"}','{"text": ""}']}}
 setblock 72 64 432 minecraft:air
@@ -90,6 +97,7 @@ fill 72 67 422 78 67 422 minecraft:polished_blackstone
 setblock 72 64 425 minecraft:lantern
 setblock 78 64 425 minecraft:lantern
 summon glow_item_frame 74 66 423 {Facing:3b,Fixed:1b,Tags:["kw_shot"],Item:{id:"minecraft:gilded_blackstone",count:1}}
+fill 80 64 420 80 79 429 minecraft:light_gray_concrete
 setblock 81 64 432 minecraft:air
 setblock 81 64 432 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "204.9"}','{"text": "nether"}','{"text": "debris"}','{"text": ""}']}}
 setblock 82 64 432 minecraft:air
@@ -102,3 +110,4 @@ fill 82 67 422 88 67 422 minecraft:polished_blackstone
 setblock 82 64 425 minecraft:lantern
 setblock 88 64 425 minecraft:lantern
 summon glow_item_frame 84 66 423 {Facing:3b,Fixed:1b,Tags:["kw_shot"],Item:{id:"minecraft:ancient_debris",count:1}}
+fill 90 64 420 90 79 429 minecraft:light_gray_concrete

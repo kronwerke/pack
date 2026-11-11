@@ -25,3 +25,4 @@ setblock 267 64 153 minecraft:cobblestone
 setblock 268 64 153 minecraft:lava
 setblock 267 64 154 minecraft:air
 setblock 267 64 155 ars_nouveau:basic_spell_turret[facing=north]
+fill 272 64 148 272 79 157 minecraft:light_gray_concrete

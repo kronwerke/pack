@@ -9,3 +9,4 @@ setblock 122 64 285 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text
 summon text_display 125.5 71 278.5 {text:'[{"text": "171  ", "color": "gold"}, {"text": "immersive/bench", "color": "gray"}, {"text": "\\nBau einen Ingenieursarbeitstisch", "color": "white"}]',billboard:"center",background:1275068416,Tags:["kw_shot"],alignment:"center",line_width:200,transformation:{scale:[1.6f,1.6f,1.6f],translation:[0f,0f,0f],left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f]}}
 setblock 122 64 276 immersiveengineering:workbench
 setblock 129 64 282 minecraft:trapped_chest[facing=south]{Items:[{Slot:0b,id:"immersiveengineering:blueprint",count:1}]}
+fill 130 64 273 130 79 282 minecraft:light_gray_concrete

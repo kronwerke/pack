@@ -14,3 +14,4 @@ fill 100 64 34 104 64 36 mysticalagriculture:fire_crop[age=7]
 setblock 106 64 35 create:item_drain
 setblock 106 64 37 create:fluid_tank
 setblock 106 65 37 create:fluid_tank
+fill 108 64 31 108 79 40 minecraft:light_gray_concrete

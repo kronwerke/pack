@@ -11,3 +11,4 @@ setblock 92 64 57 create:basin
 setblock 92 66 57 create:mechanical_mixer
 setblock 93 66 57 create:shaft[axis=x]
 setblock 94 66 57 create:creative_motor[facing=west]{ScrollValue:64}
+fill 97 64 52 97 79 61 minecraft:light_gray_concrete

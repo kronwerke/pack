@@ -13,3 +13,4 @@ setblock 239 64 153 minecraft:chest
 setblock 237 64 155 ars_nouveau:alchemical_sourcelink
 setblock 235 64 151 ars_nouveau:potion_jar
 setblock 239 64 151 ars_nouveau:potion_jar
+fill 242 64 148 242 79 157 minecraft:light_gray_concrete

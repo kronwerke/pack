@@ -7,11 +7,13 @@ setblock 254 64 497 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text
 setblock 255 64 497 minecraft:air
 setblock 255 64 497 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Im Chaos-Turm"}','{"text": "aufnehmen:"}','{"text": "Kristalle,"}','{"text": "Wächter"}']}}
 summon text_display 258.5 71 490.5 {text:'[{"text": "218.1  ", "color": "gold"}, {"text": "finale/fight_info", "color": "gray"}, {"text": "\\nLies, was dich erwartet", "color": "white"}]',billboard:"center",background:1275068416,Tags:["kw_shot"],alignment:"center",line_width:200,transformation:{scale:[1.6f,1.6f,1.6f],translation:[0f,0f,0f],left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f]}}
+fill 263 64 485 263 79 494 minecraft:light_gray_concrete
 setblock 264 64 497 minecraft:air
 setblock 264 64 497 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "218.2"}','{"text": "finale"}','{"text": "f_crystals"}','{"text": ""}']}}
 setblock 265 64 497 minecraft:air
 setblock 265 64 497 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Im Chaos-Turm"}','{"text": "aufnehmen:"}','{"text": "Kristalle,"}','{"text": "Wächter"}']}}
 summon text_display 268.5 71 490.5 {text:'[{"text": "218.2  ", "color": "gold"}, {"text": "finale/f_crystals", "color": "gray"}, {"text": "\\nKnackt die Wächterkristalle", "color": "white"}]',billboard:"center",background:1275068416,Tags:["kw_shot"],alignment:"center",line_width:200,transformation:{scale:[1.6f,1.6f,1.6f],translation:[0f,0f,0f],left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f]}}
+fill 273 64 485 273 79 494 minecraft:light_gray_concrete
 setblock 274 64 497 minecraft:air
 setblock 274 64 497 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "218.3"}','{"text": "finale"}','{"text": "tech"}','{"text": ""}']}}
 setblock 275 64 497 minecraft:air
@@ -24,3 +26,4 @@ fill 275 67 487 281 67 487 minecraft:polished_blackstone
 setblock 275 64 490 minecraft:lantern
 setblock 281 64 490 minecraft:lantern
 summon glow_item_frame 277 66 488 {Facing:3b,Fixed:1b,Tags:["kw_shot"],Item:{id:"draconicevolution:awakened_draconium_block",count:1}}
+fill 283 64 485 283 79 494 minecraft:light_gray_concrete

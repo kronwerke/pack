@@ -8,3 +8,4 @@ setblock 64 64 89 minecraft:air
 setblock 64 64 89 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "the track"}','{"text": "assembly belt"}','{"text": ""}','{"text": ""}']}}
 summon text_display 69.5 71 82.5 {text:'[{"text": "046  ", "color": "gold"}, {"text": "create_trains/welcome", "color": "gray"}, {"text": "\\nMontier deine ersten Gleise", "color": "white"}]',billboard:"center",background:1275068416,Tags:["kw_shot"],alignment:"center",line_width:200,transformation:{scale:[1.6f,1.6f,1.6f],translation:[0f,0f,0f],left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f]}}
 place template create:gametest/processing/track_crafting 64 64 79 none
+fill 76 64 77 76 79 86 minecraft:light_gray_concrete

@@ -10,3 +10,4 @@ setblock 357 64 64 minecraft:air
 setblock 357 64 64 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "stress"}','{"text": ""}','{"text": ""}','{"text": ""}']}}
 summon text_display 360.5 71 57.5 {text:'[{"text": "040  ", "color": "gold"}, {"text": "create_brass/crushing_wheel", "color": "gray"}, {"text": "\\nBau Mahlwerkräder", "color": "white"}]',billboard:"center",background:1275068416,Tags:["kw_shot"],alignment:"center",line_width:200,transformation:{scale:[1.6f,1.6f,1.6f],translation:[0f,0f,0f],left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f]}}
 place template create:gametest/processing/crushing_wheel_crafting 356 64 54 none
+fill 366 64 52 366 79 61 minecraft:light_gray_concrete

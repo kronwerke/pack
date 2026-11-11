@@ -12,3 +12,4 @@ fill 35 65 112 35 65 114 mekanism:structural_glass
 fill 34 65 113 36 65 113 mekanism:structural_glass
 setblock 35 65 114 mekanism:dynamic_valve
 fill 35 65 113 35 65 113 minecraft:air
+fill 40 64 108 40 79 117 minecraft:light_gray_concrete

@@ -10,3 +10,4 @@ setblock 289 64 198 minecraft:air
 setblock 289 64 198 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Flugleiste"}','{"text": ""}','{"text": ""}','{"text": ""}']}}
 summon text_display 291.5 71 191.5 {text:'[{"text": "131  ", "color": "gold"}, {"text": "gaia/tiara", "color": "gray"}, {"text": "\\nCrafte die Flügel-Tiara", "color": "white"}]',billboard:"center",background:1275068416,Tags:["kw_shot"],alignment:"center",line_width:200,transformation:{scale:[1.6f,1.6f,1.6f],translation:[0f,0f,0f],left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f]}}
 setblock 295 64 195 minecraft:trapped_chest[facing=south]{Items:[{Slot:0b,id:"botania:flugel_tiara",count:1}]}
+fill 296 64 186 296 79 195 minecraft:light_gray_concrete

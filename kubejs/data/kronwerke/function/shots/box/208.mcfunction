@@ -9,6 +9,7 @@ setblock 2 64 451 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text":
 summon text_display 6.5 71 444.5 {text:'[{"text": "208.1  ", "color": "gold"}, {"text": "deeper_darker/portal", "color": "gray"}, {"text": "\\nBau das Portal zur Anderwelt", "color": "white"}]',billboard:"center",background:1275068416,Tags:["kw_shot"],alignment:"center",line_width:200,transformation:{scale:[1.6f,1.6f,1.6f],translation:[0f,0f,0f],left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f]}}
 fill 2 64 444 9 70 444 minecraft:reinforced_deepslate
 fill 3 65 444 8 69 444 deeperdarker:otherside_portal[axis=x]
+fill 12 64 439 12 79 448 minecraft:light_gray_concrete
 setblock 13 64 451 minecraft:air
 setblock 13 64 451 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "208.2"}','{"text": "deeper_darker"}','{"text": "arrival"}','{"text": ""}']}}
 setblock 14 64 451 minecraft:air
@@ -21,6 +22,7 @@ fill 14 67 441 20 67 441 minecraft:polished_blackstone
 setblock 14 64 444 minecraft:lantern
 setblock 20 64 444 minecraft:lantern
 summon glow_item_frame 16 66 442 {Facing:3b,Fixed:1b,Tags:["kw_shot"],Item:{id:"deeperdarker:sculk_stone",count:1}}
+fill 22 64 439 22 79 448 minecraft:light_gray_concrete
 setblock 23 64 451 minecraft:air
 setblock 23 64 451 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "208.3"}','{"text": "deeper_darker"}','{"text": "deeplands"}','{"text": ""}']}}
 setblock 24 64 451 minecraft:air
@@ -33,6 +35,7 @@ fill 24 67 441 30 67 441 minecraft:polished_blackstone
 setblock 24 64 444 minecraft:lantern
 setblock 30 64 444 minecraft:lantern
 summon glow_item_frame 26 66 442 {Facing:3b,Fixed:1b,Tags:["kw_shot"],Item:{id:"deeperdarker:sculk_gleam",count:1}}
+fill 32 64 439 32 79 448 minecraft:light_gray_concrete
 setblock 33 64 451 minecraft:air
 setblock 33 64 451 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "208.4"}','{"text": "deeper_darker"}','{"text": "echoing_forest"}','{"text": ""}']}}
 setblock 34 64 451 minecraft:air
@@ -45,6 +48,7 @@ fill 34 67 441 40 67 441 minecraft:polished_blackstone
 setblock 34 64 444 minecraft:lantern
 setblock 40 64 444 minecraft:lantern
 summon glow_item_frame 36 66 442 {Facing:3b,Fixed:1b,Tags:["kw_shot"],Item:{id:"deeperdarker:echo_log",count:1}}
+fill 42 64 439 42 79 448 minecraft:light_gray_concrete
 setblock 43 64 451 minecraft:air
 setblock 43 64 451 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "208.5"}','{"text": "deeper_darker"}','{"text": "blooming_caverns"}','{"text": ""}']}}
 setblock 44 64 451 minecraft:air
@@ -58,6 +62,7 @@ setblock 44 64 444 minecraft:lantern
 setblock 50 64 444 minecraft:lantern
 summon glow_item_frame 45 66 442 {Facing:3b,Fixed:1b,Tags:["kw_shot"],Item:{id:"deeperdarker:bloom_berries",count:1}}
 summon glow_item_frame 47 66 442 {Facing:3b,Fixed:1b,Tags:["kw_shot"],Item:{id:"deeperdarker:cooked_angler_fish",count:1}}
+fill 52 64 439 52 79 448 minecraft:light_gray_concrete
 setblock 53 64 451 minecraft:air
 setblock 53 64 451 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "208.6"}','{"text": "deeper_darker"}','{"text": "overcast_columns"}','{"text": ""}']}}
 setblock 54 64 451 minecraft:air
@@ -71,6 +76,7 @@ setblock 54 64 444 minecraft:lantern
 setblock 60 64 444 minecraft:lantern
 summon glow_item_frame 55 66 442 {Facing:3b,Fixed:1b,Tags:["kw_shot"],Item:{id:"deeperdarker:cobbled_gloomslate",count:1}}
 summon glow_item_frame 57 66 442 {Facing:3b,Fixed:1b,Tags:["kw_shot"],Item:{id:"deeperdarker:gloomslate",count:1}}
+fill 62 64 439 62 79 448 minecraft:light_gray_concrete
 setblock 63 64 451 minecraft:air
 setblock 63 64 451 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "208.7"}','{"text": "deeper_darker"}','{"text": "temple"}','{"text": ""}']}}
 setblock 64 64 451 minecraft:air
@@ -83,6 +89,7 @@ fill 64 67 441 70 67 441 minecraft:polished_blackstone
 setblock 64 64 444 minecraft:lantern
 setblock 70 64 444 minecraft:lantern
 summon glow_item_frame 66 66 442 {Facing:3b,Fixed:1b,Tags:["kw_shot"],Item:{id:"deeperdarker:sculk_stone_tiles",count:1}}
+fill 72 64 439 72 79 448 minecraft:light_gray_concrete
 setblock 73 64 451 minecraft:air
 setblock 73 64 451 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "208.8"}','{"text": "deeper_darker"}','{"text": "transmitter"}','{"text": ""}']}}
 setblock 74 64 451 minecraft:air
@@ -95,6 +102,7 @@ fill 74 67 441 80 67 441 minecraft:polished_blackstone
 setblock 74 64 444 minecraft:lantern
 setblock 80 64 444 minecraft:lantern
 summon glow_item_frame 76 66 442 {Facing:3b,Fixed:1b,Tags:["kw_shot"],Item:{id:"deeperdarker:sculk_transmitter",count:1}}
+fill 82 64 439 82 79 448 minecraft:light_gray_concrete
 setblock 83 64 451 minecraft:air
 setblock 83 64 451 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "208.9"}','{"text": "deeper_darker"}','{"text": "resonarium"}','{"text": ""}']}}
 setblock 84 64 451 minecraft:air
@@ -108,6 +116,7 @@ setblock 84 64 444 minecraft:lantern
 setblock 90 64 444 minecraft:lantern
 summon glow_item_frame 85 66 442 {Facing:3b,Fixed:1b,Tags:["kw_shot"],Item:{id:"deeperdarker:resonarium_plate",count:1}}
 summon glow_item_frame 87 66 442 {Facing:3b,Fixed:1b,Tags:["kw_shot"],Item:{id:"deeperdarker:resonarium_chestplate",count:1}}
+fill 92 64 439 92 79 448 minecraft:light_gray_concrete
 setblock 93 64 451 minecraft:air
 setblock 93 64 451 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "208.10"}','{"text": "deeper_darker"}','{"text": "stalker"}','{"text": ""}']}}
 setblock 94 64 451 minecraft:air
@@ -121,6 +130,7 @@ setblock 94 64 444 minecraft:lantern
 setblock 100 64 444 minecraft:lantern
 summon glow_item_frame 96 66 442 {Facing:3b,Fixed:1b,Tags:["kw_shot"],Item:{id:"deeperdarker:soul_crystal",count:1}}
 summon deeperdarker:stalker 95.5 64 446.5 {NoAI:1b,PersistenceRequired:1b,Silent:1b,Tags:["kw_shot"],Rotation:[180f,0f]}
+fill 102 64 439 102 79 448 minecraft:light_gray_concrete
 setblock 103 64 451 minecraft:air
 setblock 103 64 451 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "208.11"}','{"text": "deeper_darker"}','{"text": "echo_shard"}','{"text": ""}']}}
 setblock 104 64 451 minecraft:air
@@ -134,3 +144,4 @@ setblock 104 64 444 minecraft:lantern
 setblock 110 64 444 minecraft:lantern
 summon glow_item_frame 105 66 442 {Facing:3b,Fixed:1b,Tags:["kw_shot"],Item:{id:"deeperdarker:reinforced_echo_shard",count:1}}
 summon glow_item_frame 107 66 442 {Facing:3b,Fixed:1b,Tags:["kw_shot"],Item:{id:"deeperdarker:ancient_compass",count:1}}
+fill 112 64 439 112 79 448 minecraft:light_gray_concrete

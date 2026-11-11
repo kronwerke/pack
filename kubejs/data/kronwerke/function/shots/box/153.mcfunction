@@ -12,3 +12,4 @@ setblock 200 64 244 occultism:storage_stabilizer_tier1
 setblock 200 64 250 occultism:storage_stabilizer_tier1
 setblock 197 64 247 occultism:storage_stabilizer_tier1
 setblock 203 64 247 occultism:storage_stabilizer_tier1
+fill 205 64 242 205 79 251 minecraft:light_gray_concrete

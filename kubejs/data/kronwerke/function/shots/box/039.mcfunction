@@ -16,3 +16,4 @@ setblock 344 66 57 create:mechanical_crafter[facing=south,pointing=right]
 setblock 345 64 57 create:mechanical_crafter[facing=south,pointing=down]
 setblock 345 65 57 create:mechanical_crafter[facing=south,pointing=down]
 setblock 345 66 57 create:mechanical_crafter[facing=south,pointing=down]
+fill 349 64 52 349 79 61 minecraft:light_gray_concrete

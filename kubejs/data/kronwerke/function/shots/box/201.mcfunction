@@ -14,6 +14,7 @@ fill 229 67 378 235 67 378 minecraft:polished_blackstone
 setblock 229 64 381 minecraft:lantern
 setblock 235 64 381 minecraft:lantern
 summon glow_item_frame 231 66 379 {Facing:3b,Fixed:1b,Tags:["kw_shot"],Item:{id:"pneumaticcraft:pressure_chamber_wall",count:1}}
+fill 237 64 376 237 79 385 minecraft:light_gray_concrete
 setblock 238 64 388 minecraft:air
 setblock 238 64 388 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "201.2"}','{"text": "pneumaticcraft"}','{"text": "refinery"}','{"text": ""}']}}
 setblock 239 64 388 minecraft:air
@@ -27,6 +28,7 @@ setblock 239 64 381 minecraft:lantern
 setblock 245 64 381 minecraft:lantern
 summon glow_item_frame 240 66 379 {Facing:3b,Fixed:1b,Tags:["kw_shot"],Item:{id:"pneumaticcraft:refinery",count:1}}
 summon glow_item_frame 242 66 379 {Facing:3b,Fixed:1b,Tags:["kw_shot"],Item:{id:"pneumaticcraft:refinery_output",count:1}}
+fill 247 64 376 247 79 385 minecraft:light_gray_concrete
 setblock 248 64 388 minecraft:air
 setblock 248 64 388 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "201.3"}','{"text": "pneumaticcraft"}','{"text": "vortex"}','{"text": ""}']}}
 setblock 249 64 388 minecraft:air
@@ -39,6 +41,7 @@ fill 249 67 378 255 67 378 minecraft:polished_blackstone
 setblock 249 64 381 minecraft:lantern
 setblock 255 64 381 minecraft:lantern
 summon glow_item_frame 251 66 379 {Facing:3b,Fixed:1b,Tags:["kw_shot"],Item:{id:"pneumaticcraft:vortex_tube",count:1}}
+fill 257 64 376 257 79 385 minecraft:light_gray_concrete
 setblock 258 64 388 minecraft:air
 setblock 258 64 388 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "201.4"}','{"text": "pneumaticcraft"}','{"text": "elevator"}','{"text": ""}']}}
 setblock 259 64 388 minecraft:air
@@ -53,6 +56,7 @@ setblock 265 64 381 minecraft:lantern
 summon glow_item_frame 260 66 379 {Facing:3b,Fixed:1b,Tags:["kw_shot"],Item:{id:"pneumaticcraft:elevator_base",count:1}}
 summon glow_item_frame 262 66 379 {Facing:3b,Fixed:1b,Tags:["kw_shot"],Item:{id:"pneumaticcraft:elevator_frame",count:1}}
 summon glow_item_frame 264 66 379 {Facing:3b,Fixed:1b,Tags:["kw_shot"],Item:{id:"pneumaticcraft:elevator_caller",count:1}}
+fill 267 64 376 267 79 385 minecraft:light_gray_concrete
 setblock 268 64 388 minecraft:air
 setblock 268 64 388 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "201.5"}','{"text": "pneumaticcraft"}','{"text": "safety"}','{"text": ""}']}}
 setblock 269 64 388 minecraft:air
@@ -66,6 +70,7 @@ setblock 269 64 381 minecraft:lantern
 setblock 275 64 381 minecraft:lantern
 summon glow_item_frame 270 66 379 {Facing:3b,Fixed:1b,Tags:["kw_shot"],Item:{id:"pneumaticcraft:safety_tube_module",count:1}}
 summon glow_item_frame 272 66 379 {Facing:3b,Fixed:1b,Tags:["kw_shot"],Item:{id:"pneumaticcraft:pressure_gauge_module",count:1}}
+fill 277 64 376 277 79 385 minecraft:light_gray_concrete
 setblock 278 64 388 minecraft:air
 setblock 278 64 388 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "201.6"}','{"text": "pneumaticcraft"}','{"text": "plastic"}','{"text": ""}']}}
 setblock 279 64 388 minecraft:air
@@ -78,6 +83,7 @@ fill 279 67 378 285 67 378 minecraft:polished_blackstone
 setblock 279 64 381 minecraft:lantern
 setblock 285 64 381 minecraft:lantern
 summon glow_item_frame 281 66 379 {Facing:3b,Fixed:1b,Tags:["kw_shot"],Item:{id:"pneumaticcraft:plastic",count:1}}
+fill 287 64 376 287 79 385 minecraft:light_gray_concrete
 setblock 288 64 388 minecraft:air
 setblock 288 64 388 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "201.7"}','{"text": "pneumaticcraft"}','{"text": "etching"}','{"text": ""}']}}
 setblock 289 64 388 minecraft:air
@@ -91,3 +97,4 @@ setblock 289 64 381 minecraft:lantern
 setblock 295 64 381 minecraft:lantern
 summon glow_item_frame 290 66 379 {Facing:3b,Fixed:1b,Tags:["kw_shot"],Item:{id:"pneumaticcraft:etching_tank",count:1}}
 summon glow_item_frame 292 66 379 {Facing:3b,Fixed:1b,Tags:["kw_shot"],Item:{id:"pneumaticcraft:unassembled_pcb",count:1}}
+fill 297 64 376 297 79 385 minecraft:light_gray_concrete

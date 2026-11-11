@@ -129,3 +129,4 @@ setblock 327 64 196 botania:cellular_block
 setblock 327 64 202 botania:cellular_block
 setblock 327 64 206 botania:cellular_block
 setblock 327 64 210 botania:cellular_block
+fill 329 64 186 329 79 213 minecraft:light_gray_concrete

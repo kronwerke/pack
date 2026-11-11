@@ -11,3 +11,4 @@ setblock 162 64 153 ars_nouveau:source_jar
 setblock 163 64 153 ars_nouveau:relay
 setblock 179 64 153 ars_nouveau:relay
 setblock 180 64 153 ars_nouveau:source_jar
+fill 182 64 148 182 79 157 minecraft:light_gray_concrete

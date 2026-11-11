@@ -21,3 +21,4 @@ fill 381 65 114 381 67 114 mekanismgenerators:fission_fuel_assembly
 setblock 381 68 114 mekanismgenerators:control_rod_assembly
 fill 378 65 115 382 67 115 mekanismgenerators:reactor_glass
 setblock 380 64 115 mekanismgenerators:fission_reactor_port
+fill 385 64 108 385 79 117 minecraft:light_gray_concrete

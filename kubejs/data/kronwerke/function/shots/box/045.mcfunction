@@ -11,3 +11,4 @@ setblock 48 64 82 create:steam_engine[face=floor,facing=east]
 fill 49 64 82 50 64 82 create:shaft[axis=x]
 setblock 51 64 82 createaddition:alternator[facing=west]
 setblock 51 65 82 createaddition:connector
+fill 57 64 77 57 79 86 minecraft:light_gray_concrete

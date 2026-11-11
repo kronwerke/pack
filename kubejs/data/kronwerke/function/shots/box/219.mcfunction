@@ -10,6 +10,7 @@ summon text_display 5.5 71 515.5 {text:'[{"text": "219.1  ", "color": "gold"}, {
 setblock 5 64 515 silentgear:stone_anvil
 setblock 7 64 515 silentgear:starlight_charger
 setblock 9 64 519 minecraft:trapped_chest[facing=south]{Items:[{Slot:0b,id:"silentgear:pickaxe_blueprint",count:1},{Slot:1b,id:"minecraft:flint",count:16},{Slot:2b,id:"minecraft:stick",count:8}]}
+fill 10 64 510 10 79 519 minecraft:light_gray_concrete
 setblock 11 64 522 minecraft:air
 setblock 11 64 522 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "219.2"}','{"text": "silent_gear"}','{"text": "pickaxe"}','{"text": ""}']}}
 setblock 12 64 522 minecraft:air
@@ -18,6 +19,7 @@ summon text_display 15.5 71 515.5 {text:'[{"text": "219.2  ", "color": "gold"}, 
 setblock 15 64 515 silentgear:stone_anvil
 setblock 17 64 515 silentgear:starlight_charger
 setblock 19 64 519 minecraft:trapped_chest[facing=south]{Items:[{Slot:0b,id:"silentgear:pickaxe_blueprint",count:1},{Slot:1b,id:"minecraft:flint",count:16},{Slot:2b,id:"minecraft:stick",count:8}]}
+fill 20 64 510 20 79 519 minecraft:light_gray_concrete
 setblock 21 64 522 minecraft:air
 setblock 21 64 522 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "219.3"}','{"text": "silent_gear"}','{"text": "reading_stats"}','{"text": ""}']}}
 setblock 22 64 522 minecraft:air
@@ -30,6 +32,7 @@ fill 22 67 512 28 67 512 minecraft:polished_blackstone
 setblock 22 64 515 minecraft:lantern
 setblock 28 64 515 minecraft:lantern
 summon glow_item_frame 24 66 513 {Facing:3b,Fixed:1b,Tags:["kw_shot"],Item:{id:"minecraft:spyglass",count:1}}
+fill 30 64 510 30 79 519 minecraft:light_gray_concrete
 setblock 31 64 522 minecraft:air
 setblock 31 64 522 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "219.4"}','{"text": "silent_gear"}','{"text": "crude_mixer"}','{"text": ""}']}}
 setblock 32 64 522 minecraft:air
@@ -42,6 +45,7 @@ fill 32 67 512 38 67 512 minecraft:polished_blackstone
 setblock 32 64 515 minecraft:lantern
 setblock 38 64 515 minecraft:lantern
 summon glow_item_frame 34 66 513 {Facing:3b,Fixed:1b,Tags:["kw_shot"],Item:{id:"silentgear:crude_mixer",count:1}}
+fill 40 64 510 40 79 519 minecraft:light_gray_concrete
 setblock 41 64 522 minecraft:air
 setblock 41 64 522 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "219.5"}','{"text": "silent_gear"}','{"text": "hammer"}','{"text": ""}']}}
 setblock 42 64 522 minecraft:air
@@ -54,6 +58,7 @@ fill 42 67 512 48 67 512 minecraft:polished_blackstone
 setblock 42 64 515 minecraft:lantern
 setblock 48 64 515 minecraft:lantern
 summon glow_item_frame 44 66 513 {Facing:3b,Fixed:1b,Tags:["kw_shot"],Item:{id:"silentgear:hammer",count:1}}
+fill 50 64 510 50 79 519 minecraft:light_gray_concrete
 setblock 51 64 522 minecraft:air
 setblock 51 64 522 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "219.6"}','{"text": "silent_gear"}','{"text": "repair_kit"}','{"text": ""}']}}
 setblock 52 64 522 minecraft:air
@@ -62,6 +67,7 @@ summon text_display 55.5 71 515.5 {text:'[{"text": "219.6  ", "color": "gold"}, 
 setblock 55 64 515 silentgear:stone_anvil
 setblock 57 64 515 silentgear:starlight_charger
 setblock 59 64 519 minecraft:trapped_chest[facing=south]{Items:[{Slot:0b,id:"silentgear:pickaxe_blueprint",count:1},{Slot:1b,id:"minecraft:flint",count:16},{Slot:2b,id:"minecraft:stick",count:8}]}
+fill 60 64 510 60 79 519 minecraft:light_gray_concrete
 setblock 61 64 522 minecraft:air
 setblock 61 64 522 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "219.7"}','{"text": "silent_gear"}','{"text": "alloy_forge"}','{"text": ""}']}}
 setblock 62 64 522 minecraft:air
@@ -74,6 +80,7 @@ fill 62 67 512 68 67 512 minecraft:polished_blackstone
 setblock 62 64 515 minecraft:lantern
 setblock 68 64 515 minecraft:lantern
 summon glow_item_frame 64 66 513 {Facing:3b,Fixed:1b,Tags:["kw_shot"],Item:{id:"minecraft:blast_furnace",count:1}}
+fill 70 64 510 70 79 519 minecraft:light_gray_concrete
 setblock 71 64 522 minecraft:air
 setblock 71 64 522 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "219.8"}','{"text": "silent_gear"}','{"text": "charger"}','{"text": ""}']}}
 setblock 72 64 522 minecraft:air
@@ -86,3 +93,4 @@ fill 72 67 512 78 67 512 minecraft:polished_blackstone
 setblock 72 64 515 minecraft:lantern
 setblock 78 64 515 minecraft:lantern
 summon glow_item_frame 74 66 513 {Facing:3b,Fixed:1b,Tags:["kw_shot"],Item:{id:"silentgear:starlight_charger",count:1}}
+fill 80 64 510 80 79 519 minecraft:light_gray_concrete

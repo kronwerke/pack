@@ -9,3 +9,4 @@ setblock 362 64 120 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text
 summon text_display 365.5 71 113.5 {text:'[{"text": "079  ", "color": "gold"}, {"text": "mekanism_elite/mekasuit", "color": "gray"}, {"text": "\\nZieh die MekaSuit an", "color": "white"}]',billboard:"center",background:1275068416,Tags:["kw_shot"],alignment:"center",line_width:200,transformation:{scale:[1.6f,1.6f,1.6f],translation:[0f,0f,0f],left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f]}}
 setblock 365 64 112 mekanism:modification_station
 summon armor_stand 365.5 64 114.5 {ArmorItems:[{id:"mekanism:mekasuit_boots",count:1},{id:"mekanism:mekasuit_pants",count:1},{id:"mekanism:mekasuit_bodyarmor",count:1},{id:"mekanism:mekasuit_helmet",count:1}],HandItems:[{id:"mekanism:meka_tool",count:1},{}],ShowArms:1b,NoBasePlate:1b,Tags:["kw_shot"],Rotation:[180f,0f]}
+fill 370 64 108 370 79 117 minecraft:light_gray_concrete

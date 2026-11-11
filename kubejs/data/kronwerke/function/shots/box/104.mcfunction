@@ -11,3 +11,4 @@ fill 324 64 150 326 66 152 minecraft:amethyst_block
 setblock 325 67 151 minecraft:budding_amethyst
 summon ars_nouveau:amethyst_golem 327.5 64 153.5 {NoAI:1b,PersistenceRequired:1b,Silent:1b,Tags:["kw_shot"],Rotation:[180f,0f]}
 setblock 330 64 153 ars_nouveau:storage_lectern
+fill 332 64 148 332 79 157 minecraft:light_gray_concrete

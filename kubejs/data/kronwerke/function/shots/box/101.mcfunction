@@ -11,3 +11,4 @@ setblock 281 64 153 ars_technica:source_motor
 setblock 281 65 153 ars_nouveau:source_jar
 fill 282 64 153 284 64 153 create:shaft[axis=x]
 setblock 285 64 153 create:millstone
+fill 287 64 148 287 79 157 minecraft:light_gray_concrete

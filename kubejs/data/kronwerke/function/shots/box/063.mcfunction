@@ -16,3 +16,4 @@ setblock 103 64 115 mekanism:electric_pump
 fill 101 65 113 104 65 113 mekanism:basic_logistical_transporter
 fill 101 64 114 104 64 114 mekanism:basic_universal_cable
 fill 102 64 115 102 64 115 mekanism:basic_pressurized_tube
+fill 112 64 108 112 79 117 minecraft:light_gray_concrete

@@ -229,6 +229,13 @@ def camera(key, cell, south_limit, yaw=165.0, fov=60):
     pr = math.radians(pitch)
     horiz = dist * math.cos(pr)
     ex, ey, ez = tx + math.sin(yr) * horiz, ty + dist * math.sin(pr), tz - math.cos(yr) * horiz
+    # stay between the cell's dividers, turned toward the scene
+    lo, hi = cell.ox + 0.3, cell.ox + cell.w - 0.3
+    if ex < lo or ex > hi:
+        ex = min(hi, max(lo, ex))
+        yaw = round(math.degrees(math.atan2(-(tx - ex), tz - ez)) % 360, 1)
+        horiz = math.hypot(tx - ex, tz - ez)
+        pitch = round(math.degrees(math.atan2(ey - ty, horiz)), 1)
     return {"name": key.replace("/", "_"), "dim": "kronwerke:testworld",
             "pos": [round(ex, 2), round(ey - 1.62, 2), round(ez, 2)], "yaw": yaw, "pitch": round(pitch, 1),
             "fov": fov, "width": 640, "height": 360}
@@ -329,7 +336,12 @@ def build(check=False):
             cmds.append(f"summon text_display {cx + w / 2} {FLOOR_Y + 1 + 7} {z + 1 + d / 2} "
                         f"{{text:'{label}',billboard:\"center\",background:1275068416,Tags:[\"kw_shot\"],alignment:\"center\",line_width:200,transformation:{{scale:[1.6f,1.6f,1.6f],translation:[0f,0f,0f],left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f]}}}}")
             cmds.extend(cell.cmds)
-            if not needs_screen(desc):
+            # a grey divider east of every cell, as deep as the cell: the camera sees this scene
+            # against grey, not the next scene beside it
+            cmds.append(f"fill {cx + w} {FLOOR_Y + 1} {z} {cx + w} {FLOOR_Y + WALL_H} {z + d} minecraft:light_gray_concrete")
+            # only cells with a scene of their own get a picture; the automatic item stages are
+            # for walking through, not for the quest book
+            if spec and not needs_screen(desc):
                 row_shots.append((k, cell))
             cx += w + 1
         row_boxes.append(box)

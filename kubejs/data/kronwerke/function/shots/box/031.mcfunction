@@ -13,3 +13,4 @@ setblock 192 64 57 create:stock_ticker[facing=south]
 setblock 191 64 57 create:red_seat
 summon minecraft:villager 191.5 64 57.5 {NoAI:1b,PersistenceRequired:1b,Silent:1b,Tags:["kw_shot"],Rotation:[180f,0f]}
 setblock 193 64 57 create:item_vault
+fill 197 64 52 197 79 61 minecraft:light_gray_concrete

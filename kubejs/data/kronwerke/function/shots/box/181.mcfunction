@@ -13,6 +13,7 @@ setblock 268 64 304 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text
 summon text_display 269.5 71 297.5 {text:'[{"text": "181.1  ", "color": "gold"}, {"text": "industrial/welcome", "color": "gray"}, {"text": "\\nBau zwei Primitive Maschinengehäuse", "color": "white"}]',billboard:"center",background:1275068416,Tags:["kw_shot"],alignment:"center",line_width:200,transformation:{scale:[1.6f,1.6f,1.6f],translation:[0f,0f,0f],left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f]}}
 setblock 266 64 295 minecraft:crafting_table
 setblock 273 64 301 minecraft:trapped_chest[facing=south]{Items:[{Slot:0b,id:"industrialforegoing:machine_frame_pity",count:1},{Slot:1b,id:"industrialforegoing:machine_frame_simple",count:1},{Slot:2b,id:"industrialforegoing:machine_frame_advanced",count:1},{Slot:3b,id:"industrialforegoing:machine_frame_supreme",count:1}]}
+fill 274 64 292 274 79 301 minecraft:light_gray_concrete
 setblock 275 64 304 minecraft:air
 setblock 275 64 304 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "181.2"}','{"text": "industrial"}','{"text": "extractor"}','{"text": ""}']}}
 setblock 276 64 304 minecraft:air
@@ -25,6 +26,7 @@ setblock 278 66 297 industrialforegoing:fluid_extractor[subfacing=east]
 setblock 278 67 297 industrialforegoing:fluid_extractor[subfacing=east]
 setblock 281 64 297 industrialforegoing:latex_processing_unit
 setblock 282 64 299 minecraft:furnace
+fill 284 64 292 284 79 301 minecraft:light_gray_concrete
 setblock 285 64 304 minecraft:air
 setblock 285 64 304 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "181.3"}','{"text": "industrial"}','{"text": "latex_unit"}','{"text": ""}']}}
 setblock 286 64 304 minecraft:air
@@ -37,6 +39,7 @@ setblock 288 66 297 industrialforegoing:fluid_extractor[subfacing=east]
 setblock 288 67 297 industrialforegoing:fluid_extractor[subfacing=east]
 setblock 291 64 297 industrialforegoing:latex_processing_unit
 setblock 292 64 299 minecraft:furnace
+fill 294 64 292 294 79 301 minecraft:light_gray_concrete
 setblock 295 64 304 minecraft:air
 setblock 295 64 304 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "181.4"}','{"text": "industrial"}','{"text": "plastic"}','{"text": ""}']}}
 setblock 296 64 304 minecraft:air
@@ -49,9 +52,11 @@ setblock 298 66 297 industrialforegoing:fluid_extractor[subfacing=east]
 setblock 298 67 297 industrialforegoing:fluid_extractor[subfacing=east]
 setblock 301 64 297 industrialforegoing:latex_processing_unit
 setblock 302 64 299 minecraft:furnace
+fill 304 64 292 304 79 301 minecraft:light_gray_concrete
 setblock 305 64 304 minecraft:air
 setblock 305 64 304 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "181.5"}','{"text": "industrial"}','{"text": "dissolution"}','{"text": ""}']}}
 setblock 306 64 304 minecraft:air
 setblock 306 64 304 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Bau einen"}','{"text": "Auflösungsapparat"}','{"text": ""}','{"text": ""}']}}
 summon text_display 309.5 71 297.5 {text:'[{"text": "181.5  ", "color": "gold"}, {"text": "industrial/dissolution", "color": "gray"}, {"text": "\\nBau einen Auflösungsapparat", "color": "white"}]',billboard:"center",background:1275068416,Tags:["kw_shot"],alignment:"center",line_width:200,transformation:{scale:[1.6f,1.6f,1.6f],translation:[0f,0f,0f],left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f]}}
 setblock 306 64 295 industrialforegoing:dissolution_chamber
+fill 314 64 292 314 79 301 minecraft:light_gray_concrete

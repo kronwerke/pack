@@ -292,3 +292,4 @@ setblock 35 65 20 kronwerke:obelisk_pedestal
 setblock 29 64 19 kronwerke:obelisk_intake
 setblock 29 65 19 minecraft:hopper[facing=down]
 setblock 29 66 19 minecraft:chest[facing=south]{Items:[{Slot:0b,id:"minecraft:cobblestone",count:64},{Slot:1b,id:"minecraft:cobblestone",count:64},{Slot:2b,id:"minecraft:cobblestone",count:64}]}
+fill 37 64 6 37 79 21 minecraft:light_gray_concrete

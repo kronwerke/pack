@@ -13,3 +13,4 @@ setblock 325 64 359 refinedstorage:disk_drive
 setblock 327 64 361 refinedstorage:grid[direction=south]
 setblock 329 64 360 refinedstorage:autocrafter[direction=south]
 setblock 323 64 361 mekanism:creative_energy_cube
+fill 331 64 355 331 79 364 minecraft:light_gray_concrete

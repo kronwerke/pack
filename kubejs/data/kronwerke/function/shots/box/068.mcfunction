@@ -13,3 +13,4 @@ setblock 195 64 111 productivemetalworks:gray_foundry_controller
 setblock 197 64 111 productivemetalworks:gray_foundry_tank
 setblock 199 64 111 productivemetalworks:casting_table
 setblock 202 64 117 minecraft:trapped_chest[facing=south]{Items:[{Slot:0b,id:"mekanism:raw_osmium",count:16}]}
+fill 203 64 108 203 79 117 minecraft:light_gray_concrete

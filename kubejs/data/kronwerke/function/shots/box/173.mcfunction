@@ -12,6 +12,7 @@ summon text_display 156.5 71 278.5 {text:'[{"text": "173.1  ", "color": "gold"},
 fill 155 64 278 155 69 278 immersiveengineering:treated_wood_horizontal
 setblock 155 70 278 immersiveengineering:dynamo
 setblock 155 70 277 immersiveengineering:windmill
+fill 162 64 273 162 79 282 minecraft:light_gray_concrete
 setblock 163 64 285 minecraft:air
 setblock 163 64 285 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "173.2"}','{"text": "immersive"}','{"text": "windmill"}','{"text": ""}']}}
 setblock 164 64 285 minecraft:air
@@ -20,6 +21,7 @@ summon text_display 168.5 71 278.5 {text:'[{"text": "173.2  ", "color": "gold"},
 fill 167 64 278 167 69 278 immersiveengineering:treated_wood_horizontal
 setblock 167 70 278 immersiveengineering:dynamo
 setblock 167 70 277 immersiveengineering:windmill
+fill 174 64 273 174 79 282 minecraft:light_gray_concrete
 setblock 175 64 285 minecraft:air
 setblock 175 64 285 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "173.3"}','{"text": "immersive"}','{"text": "watermill"}','{"text": ""}']}}
 setblock 176 64 285 minecraft:air
@@ -35,3 +37,4 @@ setblock 178 66 278 immersiveengineering:watermill
 setblock 181 66 278 immersiveengineering:watermill
 setblock 184 66 278 immersiveengineering:watermill
 setblock 186 66 278 immersiveengineering:dynamo
+fill 188 64 273 188 79 282 minecraft:light_gray_concrete

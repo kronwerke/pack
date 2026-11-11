@@ -52,3 +52,4 @@ setblock 110 64 243 occultism:large_candle_white
 setblock 106 64 247 occultism:large_candle_white
 setblock 114 64 247 occultism:large_candle_white
 setblock 110 64 251 occultism:large_candle_white
+fill 115 64 242 115 79 251 minecraft:light_gray_concrete

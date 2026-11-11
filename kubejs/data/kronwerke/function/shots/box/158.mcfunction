@@ -10,3 +10,4 @@ summon text_display 275.5 71 247.5 {text:'[{"text": "158  ", "color": "gold"}, {
 setblock 272 64 245 hexerei:candle_dipper
 setblock 274 64 245 hexerei:mixing_cauldron
 setblock 279 64 251 minecraft:trapped_chest[facing=south]{Items:[{Slot:0b,id:"hexerei:tallow_impurity",count:16}]}
+fill 280 64 242 280 79 251 minecraft:light_gray_concrete

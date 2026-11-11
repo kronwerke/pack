@@ -16,3 +16,4 @@ setblock 82 64 193 botania:mana_spreader
 setblock 86 64 193 botania:mana_spreader
 setblock 84 64 195 botania:mana_pool
 setblock 84 64 189 botania:open_crate
+fill 91 64 186 91 79 195 minecraft:light_gray_concrete

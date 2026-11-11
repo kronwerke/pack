@@ -14,6 +14,7 @@ fill 67 67 487 73 67 487 minecraft:polished_blackstone
 setblock 67 64 490 minecraft:lantern
 setblock 73 64 490 minecraft:lantern
 summon glow_item_frame 69 66 488 {Facing:3b,Fixed:1b,Tags:["kw_shot"],Item:{id:"draconicevolution:awakened_draconium_block",count:1}}
+fill 75 64 485 75 79 494 minecraft:light_gray_concrete
 setblock 76 64 503 minecraft:air
 setblock 76 64 503 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "214.2"}','{"text": "draconic_chaos"}','{"text": "crystals"}','{"text": ""}']}}
 setblock 77 64 503 minecraft:air
@@ -26,11 +27,13 @@ fill 77 67 487 83 67 487 minecraft:polished_blackstone
 setblock 77 64 490 minecraft:lantern
 setblock 83 64 490 minecraft:lantern
 summon glow_item_frame 79 66 488 {Facing:3b,Fixed:1b,Tags:["kw_shot"],Item:{id:"minecraft:end_crystal",count:1}}
+fill 85 64 485 85 79 494 minecraft:light_gray_concrete
 setblock 86 64 503 minecraft:air
 setblock 86 64 503 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "214.3"}','{"text": "draconic_chaos"}','{"text": "guardian"}','{"text": ""}']}}
 setblock 87 64 503 minecraft:air
 setblock 87 64 503 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Im Chaos-Turm"}','{"text": "aufnehmen:"}','{"text": "Kristalle,"}','{"text": "Wächter"}']}}
 summon text_display 90.5 71 490.5 {text:'[{"text": "214.3  ", "color": "gold"}, {"text": "draconic_chaos/guardian", "color": "gray"}, {"text": "\\nBesiege den Chaoswächter", "color": "white"}]',billboard:"center",background:1275068416,Tags:["kw_shot"],alignment:"center",line_width:200,transformation:{scale:[1.6f,1.6f,1.6f],translation:[0f,0f,0f],left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f]}}
+fill 95 64 485 95 79 494 minecraft:light_gray_concrete
 setblock 96 64 503 minecraft:air
 setblock 96 64 503 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "214.4"}','{"text": "draconic_chaos"}','{"text": "reactor"}','{"text": ""}']}}
 setblock 97 64 503 minecraft:air
@@ -42,3 +45,4 @@ setblock 103 66 498 draconicevolution:reactor_stabilizer
 setblock 98 66 493 draconicevolution:reactor_stabilizer
 setblock 108 66 493 draconicevolution:reactor_stabilizer
 setblock 103 71 493 draconicevolution:reactor_injector
+fill 111 64 485 111 79 500 minecraft:light_gray_concrete

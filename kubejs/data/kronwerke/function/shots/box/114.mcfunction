@@ -19,3 +19,4 @@ setblock 20 66 191 minecraft:chest[facing=south]{Items:[{Slot:0b,id:"minecraft:c
 setblock 20 63 191 minecraft:stone_pressure_plate
 setblock 24 64 191 botania:mana_spreader
 setblock 24 64 194 botania:mana_pool
+fill 27 64 186 27 79 195 minecraft:light_gray_concrete

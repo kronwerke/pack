@@ -14,3 +14,4 @@ fill 302 65 112 304 67 114 mekanism:basic_induction_cell
 setblock 303 66 113 mekanism:basic_induction_provider
 fill 301 65 115 305 67 115 mekanism:structural_glass
 setblock 303 64 115 mekanism:induction_port
+fill 308 64 108 308 79 117 minecraft:light_gray_concrete

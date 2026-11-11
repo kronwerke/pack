@@ -15,6 +15,7 @@ setblock 183 64 360 minecraft:lantern
 setblock 189 64 360 minecraft:lantern
 summon glow_item_frame 184 66 358 {Facing:3b,Fixed:1b,Tags:["kw_shot"],Item:{id:"integrateddynamics:crystalized_menril_chunk",count:1}}
 summon glow_item_frame 186 66 358 {Facing:3b,Fixed:1b,Tags:["kw_shot"],Item:{id:"integrateddynamics:menril_log",count:1}}
+fill 191 64 355 191 79 364 minecraft:light_gray_concrete
 setblock 192 64 367 minecraft:air
 setblock 192 64 367 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "192.2"}','{"text": "logistics"}','{"text": "programmer"}','{"text": ""}']}}
 setblock 193 64 367 minecraft:air
@@ -28,6 +29,7 @@ setblock 193 64 360 minecraft:lantern
 setblock 199 64 360 minecraft:lantern
 summon glow_item_frame 194 66 358 {Facing:3b,Fixed:1b,Tags:["kw_shot"],Item:{id:"integrateddynamics:logic_programmer",count:1}}
 summon glow_item_frame 196 66 358 {Facing:3b,Fixed:1b,Tags:["kw_shot"],Item:{id:"integrateddynamics:variablestore",count:1}}
+fill 201 64 355 201 79 364 minecraft:light_gray_concrete
 setblock 202 64 367 minecraft:air
 setblock 202 64 367 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "192.3"}','{"text": "logistics"}','{"text": "counter"}','{"text": ""}']}}
 setblock 203 64 367 minecraft:air
@@ -42,6 +44,7 @@ setblock 209 64 360 minecraft:lantern
 summon glow_item_frame 204 66 358 {Facing:3b,Fixed:1b,Tags:["kw_shot"],Item:{id:"integrateddynamics:part_inventory_reader",count:1}}
 summon glow_item_frame 206 66 358 {Facing:3b,Fixed:1b,Tags:["kw_shot"],Item:{id:"mekanism:ingot_steel",count:1}}
 summon glow_item_frame 208 66 358 {Facing:3b,Fixed:1b,Tags:["kw_shot"],Item:{id:"integrateddynamics:part_display_panel",count:1}}
+fill 211 64 355 211 79 364 minecraft:light_gray_concrete
 setblock 212 64 367 minecraft:air
 setblock 212 64 367 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "192.4"}','{"text": "logistics"}','{"text": "xnet_connectors"}','{"text": ""}']}}
 setblock 213 64 367 minecraft:air
@@ -55,6 +58,7 @@ setblock 213 64 360 minecraft:lantern
 setblock 219 64 360 minecraft:lantern
 summon glow_item_frame 214 66 358 {Facing:3b,Fixed:1b,Tags:["kw_shot"],Item:{id:"xnet:connector_blue",count:1}}
 summon glow_item_frame 216 66 358 {Facing:3b,Fixed:1b,Tags:["kw_shot"],Item:{id:"xnet:netcable_blue",count:1}}
+fill 221 64 355 221 79 364 minecraft:light_gray_concrete
 setblock 222 64 367 minecraft:air
 setblock 222 64 367 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "192.5"}','{"text": "logistics"}','{"text": "laser_node"}','{"text": ""}']}}
 setblock 223 64 367 minecraft:air
@@ -68,6 +72,7 @@ setblock 223 64 360 minecraft:lantern
 setblock 229 64 360 minecraft:lantern
 summon glow_item_frame 224 66 358 {Facing:3b,Fixed:1b,Tags:["kw_shot"],Item:{id:"laserio:laser_node",count:1}}
 summon glow_item_frame 226 66 358 {Facing:3b,Fixed:1b,Tags:["kw_shot"],Item:{id:"laserio:laser_wrench",count:1}}
+fill 231 64 355 231 79 364 minecraft:light_gray_concrete
 setblock 232 64 367 minecraft:air
 setblock 232 64 367 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "192.6"}','{"text": "logistics"}','{"text": "mg_gadget"}','{"text": ""}']}}
 setblock 233 64 367 minecraft:air
@@ -80,3 +85,4 @@ fill 233 67 357 239 67 357 minecraft:polished_blackstone
 setblock 233 64 360 minecraft:lantern
 setblock 239 64 360 minecraft:lantern
 summon glow_item_frame 235 66 358 {Facing:3b,Fixed:1b,Tags:["kw_shot"],Item:{id:"mininggadgets:mininggadget_simple",count:1}}
+fill 241 64 355 241 79 364 minecraft:light_gray_concrete

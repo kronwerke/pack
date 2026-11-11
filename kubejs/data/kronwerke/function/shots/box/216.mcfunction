@@ -14,6 +14,7 @@ fill 155 67 487 161 67 487 minecraft:polished_blackstone
 setblock 155 64 490 minecraft:lantern
 setblock 161 64 490 minecraft:lantern
 summon glow_item_frame 157 66 488 {Facing:3b,Fixed:1b,Tags:["kw_shot"],Item:{id:"minecraft:chest",count:1}}
+fill 163 64 485 163 79 494 minecraft:light_gray_concrete
 setblock 164 64 497 minecraft:air
 setblock 164 64 497 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "216.2"}','{"text": "quarries"}','{"text": "quarry"}','{"text": ""}']}}
 setblock 165 64 497 minecraft:air
@@ -26,6 +27,7 @@ fill 165 67 487 171 67 487 minecraft:polished_blackstone
 setblock 165 64 490 minecraft:lantern
 setblock 171 64 490 minecraft:lantern
 summon glow_item_frame 167 66 488 {Facing:3b,Fixed:1b,Tags:["kw_shot"],Item:{id:"quarryplus:quarry",count:1}}
+fill 173 64 485 173 79 494 minecraft:light_gray_concrete
 setblock 174 64 497 minecraft:air
 setblock 174 64 497 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "216.3"}','{"text": "quarries"}','{"text": "destroyer"}','{"text": ""}']}}
 setblock 175 64 497 minecraft:air
@@ -39,6 +41,7 @@ setblock 175 64 490 minecraft:lantern
 setblock 181 64 490 minecraft:lantern
 summon glow_item_frame 176 66 488 {Facing:3b,Fixed:1b,Tags:["kw_shot"],Item:{id:"quarryplus:adv_quarry",count:1}}
 summon glow_item_frame 178 66 488 {Facing:3b,Fixed:1b,Tags:["kw_shot"],Item:{id:"draconicevolution:draconium_ingot",count:1}}
+fill 183 64 485 183 79 494 minecraft:light_gray_concrete
 setblock 184 64 497 minecraft:air
 setblock 184 64 497 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "216.4"}','{"text": "quarries"}','{"text": "coe_netherite"}','{"text": ""}']}}
 setblock 185 64 497 minecraft:air
@@ -51,3 +54,4 @@ fill 185 67 487 191 67 487 minecraft:polished_blackstone
 setblock 185 64 490 minecraft:lantern
 setblock 191 64 490 minecraft:lantern
 summon glow_item_frame 187 66 488 {Facing:3b,Fixed:1b,Tags:["kw_shot"],Item:{id:"createoreexcavation:netherite_drill",count:1}}
+fill 193 64 485 193 79 494 minecraft:light_gray_concrete

@@ -19,3 +19,4 @@ setblock 160 64 115 mekanism:electrolytic_separator
 setblock 162 64 115 mekanism:electrolytic_separator
 setblock 164 64 115 mekanism:chemical_infuser
 fill 159 64 114 166 64 114 mekanism:basic_pressurized_tube
+fill 173 64 108 173 79 117 minecraft:light_gray_concrete

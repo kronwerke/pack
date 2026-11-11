@@ -17,3 +17,4 @@ setblock 4 64 192 botania:livingrock
 setblock 5 64 192 minecraft:stone
 setblock 6 64 192 botania:livingrock
 fill 7 63 193 9 63 195 minecraft:end_stone
+fill 10 64 186 10 79 195 minecraft:light_gray_concrete

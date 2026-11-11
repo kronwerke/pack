@@ -28,3 +28,4 @@ setblock 133 64 189 naturesaura:wood_stand
 setblock 129 64 193 naturesaura:wood_stand
 setblock 133 64 193 naturesaura:wood_stand
 setblock 131 64 191 minecraft:oak_sapling
+fill 136 64 186 136 79 195 minecraft:light_gray_concrete

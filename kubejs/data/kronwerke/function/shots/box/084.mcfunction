@@ -12,6 +12,7 @@ summon text_display 5.5 71 153.5 {text:'[{"text": "084.1  ", "color": "gold"}, {
 setblock 5 64 153 ars_nouveau:imbuement_chamber
 setblock 3 64 153 ars_nouveau:source_jar
 setblock 9 64 157 minecraft:trapped_chest[facing=south]{Items:[{Slot:0b,id:"minecraft:amethyst_shard",count:16},{Slot:1b,id:"ars_nouveau:source_gem",count:4}]}
+fill 10 64 148 10 79 157 minecraft:light_gray_concrete
 setblock 11 64 160 minecraft:air
 setblock 11 64 160 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "084.2"}','{"text": "ars_nouveau"}','{"text": "first_gem"}','{"text": ""}']}}
 setblock 12 64 160 minecraft:air
@@ -20,3 +21,4 @@ summon text_display 15.5 71 153.5 {text:'[{"text": "084.2  ", "color": "gold"}, 
 setblock 15 64 153 ars_nouveau:imbuement_chamber
 setblock 13 64 153 ars_nouveau:source_jar
 setblock 19 64 157 minecraft:trapped_chest[facing=south]{Items:[{Slot:0b,id:"minecraft:amethyst_shard",count:16},{Slot:1b,id:"ars_nouveau:source_gem",count:4}]}
+fill 20 64 148 20 79 157 minecraft:light_gray_concrete

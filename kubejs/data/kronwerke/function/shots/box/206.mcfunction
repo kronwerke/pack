@@ -14,6 +14,7 @@ fill 202 67 422 208 67 422 minecraft:polished_blackstone
 setblock 202 64 425 minecraft:lantern
 setblock 208 64 425 minecraft:lantern
 summon glow_item_frame 204 66 423 {Facing:3b,Fixed:1b,Tags:["kw_shot"],Item:{id:"naturescompass:naturescompass",count:1}}
+fill 210 64 420 210 79 429 minecraft:light_gray_concrete
 setblock 211 64 432 minecraft:air
 setblock 211 64 432 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "206.2"}','{"text": "exploration"}','{"text": "e_frame"}','{"text": ""}']}}
 setblock 212 64 432 minecraft:air
@@ -26,6 +27,7 @@ fill 212 67 422 218 67 422 minecraft:polished_blackstone
 setblock 212 64 425 minecraft:lantern
 setblock 218 64 425 minecraft:lantern
 summon glow_item_frame 214 66 423 {Facing:3b,Fixed:1b,Tags:["kw_shot"],Item:{id:"ars_nouveau:source_gem",count:1}}
+fill 220 64 420 220 79 429 minecraft:light_gray_concrete
 setblock 221 64 432 minecraft:air
 setblock 221 64 432 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "206.3"}','{"text": "exploration"}','{"text": "e_enter"}','{"text": ""}']}}
 setblock 222 64 432 minecraft:air
@@ -38,6 +40,7 @@ fill 222 67 422 228 67 422 minecraft:polished_blackstone
 setblock 222 64 425 minecraft:lantern
 setblock 228 64 425 minecraft:lantern
 summon glow_item_frame 224 66 423 {Facing:3b,Fixed:1b,Tags:["kw_shot"],Item:{id:"minecraft:iron_pickaxe",count:1}}
+fill 230 64 420 230 79 429 minecraft:light_gray_concrete
 setblock 231 64 432 minecraft:air
 setblock 231 64 432 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "206.4"}','{"text": "exploration"}','{"text": "e_veins"}','{"text": ""}']}}
 setblock 232 64 432 minecraft:air
@@ -50,6 +53,7 @@ fill 232 67 422 238 67 422 minecraft:polished_blackstone
 setblock 232 64 425 minecraft:lantern
 setblock 238 64 425 minecraft:lantern
 summon glow_item_frame 234 66 423 {Facing:3b,Fixed:1b,Tags:["kw_shot"],Item:{id:"minecraft:raw_copper_block",count:1}}
+fill 240 64 420 240 79 429 minecraft:light_gray_concrete
 setblock 241 64 432 minecraft:air
 setblock 241 64 432 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "206.5"}','{"text": "exploration"}','{"text": "e_lootr"}','{"text": ""}']}}
 setblock 242 64 432 minecraft:air
@@ -62,6 +66,7 @@ fill 242 67 422 248 67 422 minecraft:polished_blackstone
 setblock 242 64 425 minecraft:lantern
 setblock 248 64 425 minecraft:lantern
 summon glow_item_frame 244 66 423 {Facing:3b,Fixed:1b,Tags:["kw_shot"],Item:{id:"minecraft:chest",count:1}}
+fill 250 64 420 250 79 429 minecraft:light_gray_concrete
 setblock 251 64 432 minecraft:air
 setblock 251 64 432 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "206.6"}','{"text": "exploration"}','{"text": "e_campsite"}','{"text": ""}']}}
 setblock 252 64 432 minecraft:air
@@ -74,6 +79,7 @@ fill 252 67 422 258 67 422 minecraft:polished_blackstone
 setblock 252 64 425 minecraft:lantern
 setblock 258 64 425 minecraft:lantern
 summon glow_item_frame 254 66 423 {Facing:3b,Fixed:1b,Tags:["kw_shot"],Item:{id:"minecraft:lantern",count:1}}
+fill 260 64 420 260 79 429 minecraft:light_gray_concrete
 setblock 261 64 432 minecraft:air
 setblock 261 64 432 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "206.7"}','{"text": "exploration"}','{"text": "e_dnt_tavern"}','{"text": ""}']}}
 setblock 262 64 432 minecraft:air
@@ -86,6 +92,7 @@ fill 262 67 422 268 67 422 minecraft:polished_blackstone
 setblock 262 64 425 minecraft:lantern
 setblock 268 64 425 minecraft:lantern
 summon glow_item_frame 264 66 423 {Facing:3b,Fixed:1b,Tags:["kw_shot"],Item:{id:"minecraft:compass",count:1}}
+fill 270 64 420 270 79 429 minecraft:light_gray_concrete
 setblock 271 64 432 minecraft:air
 setblock 271 64 432 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "206.8"}','{"text": "exploration"}','{"text": "e_arise_sky"}','{"text": ""}']}}
 setblock 272 64 432 minecraft:air
@@ -98,6 +105,7 @@ fill 272 67 422 278 67 422 minecraft:polished_blackstone
 setblock 272 64 425 minecraft:lantern
 setblock 278 64 425 minecraft:lantern
 summon glow_item_frame 274 66 423 {Facing:3b,Fixed:1b,Tags:["kw_shot"],Item:{id:"minecraft:feather",count:1}}
+fill 280 64 420 280 79 429 minecraft:light_gray_concrete
 setblock 281 64 432 minecraft:air
 setblock 281 64 432 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "206.9"}','{"text": "exploration"}','{"text": "e_tnt_village"}','{"text": ""}']}}
 setblock 282 64 432 minecraft:air
@@ -110,6 +118,7 @@ fill 282 67 422 288 67 422 minecraft:polished_blackstone
 setblock 282 64 425 minecraft:lantern
 setblock 288 64 425 minecraft:lantern
 summon glow_item_frame 284 66 423 {Facing:3b,Fixed:1b,Tags:["kw_shot"],Item:{id:"minecraft:bell",count:1}}
+fill 290 64 420 290 79 429 minecraft:light_gray_concrete
 setblock 291 64 432 minecraft:air
 setblock 291 64 432 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "206.10"}','{"text": "exploration"}','{"text": "e_yung_dungeon"}','{"text": ""}']}}
 setblock 292 64 432 minecraft:air
@@ -122,3 +131,4 @@ fill 292 67 422 298 67 422 minecraft:polished_blackstone
 setblock 292 64 425 minecraft:lantern
 setblock 298 64 425 minecraft:lantern
 summon glow_item_frame 294 66 423 {Facing:3b,Fixed:1b,Tags:["kw_shot"],Item:{id:"minecraft:cracked_stone_bricks",count:1}}
+fill 300 64 420 300 79 429 minecraft:light_gray_concrete

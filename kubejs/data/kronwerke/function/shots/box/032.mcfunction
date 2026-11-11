@@ -26,3 +26,4 @@ setblock 208 64 57 minecraft:lava
 setblock 207 64 58 create:mechanical_drill[facing=north]
 setblock 207 64 59 create:shaft[axis=z]
 setblock 207 64 60 create:creative_motor[facing=north]{ScrollValue:64}
+fill 212 64 52 212 79 61 minecraft:light_gray_concrete

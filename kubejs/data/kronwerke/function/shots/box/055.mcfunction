@@ -11,3 +11,4 @@ fill 236 63 81 244 63 81 minecraft:gravel
 fill 236 64 81 244 64 81 create:track[shape=xo]
 setblock 240 64 82 create:track_station
 setblock 241 64 82 create:white_postbox
+fill 245 64 77 245 79 86 minecraft:light_gray_concrete

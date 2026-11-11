@@ -13,3 +13,4 @@ setblock 67 65 188 botania:mana_spreader
 setblock 69 65 191 botania:manastar
 setblock 65 64 191 botania:endoflame
 setblock 71 64 195 minecraft:trapped_chest[facing=south]{Items:[{Slot:0b,id:"botania:wand_of_the_forest",count:1}]}
+fill 72 64 186 72 79 195 minecraft:light_gray_concrete

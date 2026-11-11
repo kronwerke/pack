@@ -12,3 +12,4 @@ summon text_display 140.5 71 247.5 {text:'[{"text": "149  ", "color": "gold"}, {
 setblock 137 64 245 occultism:iesnium_ore
 setblock 139 64 245 minecraft:netherrack
 setblock 144 64 251 minecraft:trapped_chest[facing=south]{Items:[{Slot:0b,id:"occultism:divination_rod",count:1}]}
+fill 145 64 242 145 79 251 minecraft:light_gray_concrete

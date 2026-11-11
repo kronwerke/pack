@@ -129,6 +129,7 @@ setblock 27 66 363 ae2:sky_stone_block
 setblock 27 67 363 ae2:sky_stone_block
 setblock 28 66 361 ae2:sky_stone_block
 setblock 25 66 361 ae2:mysterious_cube
+fill 31 64 355 31 79 366 minecraft:light_gray_concrete
 setblock 32 64 369 minecraft:air
 setblock 32 64 369 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "190.2"}','{"text": "ae2"}','{"text": "presses"}','{"text": ""}']}}
 setblock 33 64 369 minecraft:air
@@ -145,6 +146,7 @@ summon glow_item_frame 36 66 358 {Facing:3b,Fixed:1b,Tags:["kw_shot"],Item:{id:"
 summon glow_item_frame 38 66 358 {Facing:3b,Fixed:1b,Tags:["kw_shot"],Item:{id:"ae2:calculation_processor_press",count:1}}
 summon glow_item_frame 39 66 358 {Facing:3b,Fixed:1b,Tags:["kw_shot"],Item:{id:"ae2:engineering_processor_press",count:1}}
 summon glow_item_frame 39 66 358 {Facing:3b,Fixed:1b,Tags:["kw_shot"],Item:{id:"ae2:mysterious_cube",count:1}}
+fill 41 64 355 41 79 364 minecraft:light_gray_concrete
 setblock 42 64 369 minecraft:air
 setblock 42 64 369 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "190.3"}','{"text": "ae2"}','{"text": "inscriber"}','{"text": ""}']}}
 setblock 43 64 369 minecraft:air
@@ -157,6 +159,7 @@ fill 43 67 357 49 67 357 minecraft:polished_blackstone
 setblock 43 64 360 minecraft:lantern
 setblock 49 64 360 minecraft:lantern
 summon glow_item_frame 45 66 358 {Facing:3b,Fixed:1b,Tags:["kw_shot"],Item:{id:"ae2:inscriber",count:1}}
+fill 51 64 355 51 79 364 minecraft:light_gray_concrete
 setblock 52 64 369 minecraft:air
 setblock 52 64 369 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "190.4"}','{"text": "ae2"}','{"text": "network"}','{"text": ""}']}}
 setblock 53 64 369 minecraft:air
@@ -166,6 +169,7 @@ setblock 54 64 369 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text"
 summon text_display 58.5 71 360.5 {text:'[{"text": "190.4  ", "color": "gold"}, {"text": "ae2/network", "color": "gray"}, {"text": "\\nSchließ dein erstes Netz an", "color": "white"}]',billboard:"center",background:1275068416,Tags:["kw_shot"],alignment:"center",line_width:200,transformation:{scale:[1.6f,1.6f,1.6f],translation:[0f,0f,0f],left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f]}}
 fill 53 64 360 54 65 361 ae2:controller
 setblock 64 64 364 minecraft:trapped_chest[facing=south]{Items:[{Slot:0b,id:"ae2:fluix_covered_dense_cable",count:16},{Slot:1b,id:"ae2:fluix_smart_cable",count:32},{Slot:2b,id:"ae2:drive",count:2},{Slot:3b,id:"ae2:terminal",count:1}]}
+fill 65 64 355 65 79 364 minecraft:light_gray_concrete
 setblock 66 64 369 minecraft:air
 setblock 66 64 369 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "190.5"}','{"text": "ae2"}','{"text": "controller"}','{"text": ""}']}}
 setblock 67 64 369 minecraft:air
@@ -175,6 +179,7 @@ setblock 68 64 369 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text"
 summon text_display 72.5 71 360.5 {text:'[{"text": "190.5  ", "color": "gold"}, {"text": "ae2/controller", "color": "gray"}, {"text": "\\nBau einen ME-Controller", "color": "white"}]',billboard:"center",background:1275068416,Tags:["kw_shot"],alignment:"center",line_width:200,transformation:{scale:[1.6f,1.6f,1.6f],translation:[0f,0f,0f],left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f]}}
 fill 67 64 360 68 65 361 ae2:controller
 setblock 78 64 364 minecraft:trapped_chest[facing=south]{Items:[{Slot:0b,id:"ae2:fluix_covered_dense_cable",count:16},{Slot:1b,id:"ae2:fluix_smart_cable",count:32},{Slot:2b,id:"ae2:drive",count:2},{Slot:3b,id:"ae2:terminal",count:1}]}
+fill 79 64 355 79 79 364 minecraft:light_gray_concrete
 setblock 80 64 369 minecraft:air
 setblock 80 64 369 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "190.6"}','{"text": "ae2"}','{"text": "autocraft"}','{"text": ""}']}}
 setblock 81 64 369 minecraft:air
@@ -187,6 +192,7 @@ fill 81 67 357 87 67 357 minecraft:polished_blackstone
 setblock 81 64 360 minecraft:lantern
 setblock 87 64 360 minecraft:lantern
 summon glow_item_frame 83 66 358 {Facing:3b,Fixed:1b,Tags:["kw_shot"],Item:{id:"ae2:molecular_assembler",count:1}}
+fill 89 64 355 89 79 364 minecraft:light_gray_concrete
 setblock 90 64 369 minecraft:air
 setblock 90 64 369 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "190.7"}','{"text": "ae2"}','{"text": "cpu"}','{"text": ""}']}}
 setblock 91 64 369 minecraft:air
@@ -195,6 +201,7 @@ summon text_display 94.5 71 360.5 {text:'[{"text": "190.7  ", "color": "gold"}, 
 fill 93 64 359 95 66 361 ae2:crafting_unit
 setblock 94 65 361 ae2:crafting_accelerator
 setblock 93 64 361 ae2:1k_crafting_storage
+fill 99 64 355 99 79 364 minecraft:light_gray_concrete
 setblock 100 64 369 minecraft:air
 setblock 100 64 369 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "190.8"}','{"text": "ae2"}','{"text": "p2p"}','{"text": ""}']}}
 setblock 101 64 369 minecraft:air
@@ -208,6 +215,7 @@ setblock 101 64 360 minecraft:lantern
 setblock 107 64 360 minecraft:lantern
 summon glow_item_frame 102 66 358 {Facing:3b,Fixed:1b,Tags:["kw_shot"],Item:{id:"ae2:me_p2p_tunnel",count:1}}
 summon glow_item_frame 104 66 358 {Facing:3b,Fixed:1b,Tags:["kw_shot"],Item:{id:"ae2:memory_card",count:1}}
+fill 109 64 355 109 79 364 minecraft:light_gray_concrete
 setblock 110 64 369 minecraft:air
 setblock 110 64 369 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "190.9"}','{"text": "ae2"}','{"text": "factory"}','{"text": ""}']}}
 setblock 111 64 369 minecraft:air
@@ -221,3 +229,4 @@ setblock 111 64 360 minecraft:lantern
 setblock 117 64 360 minecraft:lantern
 summon glow_item_frame 112 66 358 {Facing:3b,Fixed:1b,Tags:["kw_shot"],Item:{id:"mekanism:advanced_control_circuit",count:1}}
 summon glow_item_frame 114 66 358 {Facing:3b,Fixed:1b,Tags:["kw_shot"],Item:{id:"ae2:engineering_processor",count:1}}
+fill 119 64 355 119 79 364 minecraft:light_gray_concrete

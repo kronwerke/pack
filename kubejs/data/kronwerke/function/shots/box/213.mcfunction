@@ -14,6 +14,7 @@ fill 2 67 487 8 67 487 minecraft:polished_blackstone
 setblock 2 64 490 minecraft:lantern
 setblock 8 64 490 minecraft:lantern
 summon glow_item_frame 4 66 488 {Facing:3b,Fixed:1b,Tags:["kw_shot"],Item:{id:"draconicevolution:draconium_dust",count:1}}
+fill 10 64 485 10 79 494 minecraft:light_gray_concrete
 setblock 11 64 503 minecraft:air
 setblock 11 64 503 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "213.2"}','{"text": "draconic"}','{"text": "injectors"}','{"text": ""}']}}
 setblock 12 64 503 minecraft:air
@@ -26,6 +27,7 @@ setblock 12 64 491 draconicevolution:basic_crafting_injector
 setblock 20 64 491 draconicevolution:basic_crafting_injector
 setblock 13 64 488 draconicevolution:basic_crafting_injector
 setblock 19 64 494 draconicevolution:basic_crafting_injector
+fill 22 64 485 22 79 496 minecraft:light_gray_concrete
 setblock 23 64 503 minecraft:air
 setblock 23 64 503 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "213.3"}','{"text": "draconic"}','{"text": "stabilizer"}','{"text": ""}']}}
 setblock 24 64 503 minecraft:air
@@ -37,6 +39,7 @@ setblock 30 66 499 draconicevolution:energy_core_stabilizer
 setblock 24 66 493 draconicevolution:energy_core_stabilizer
 setblock 36 66 493 draconicevolution:energy_core_stabilizer
 setblock 37 64 500 minecraft:trapped_chest[facing=south]{Items:[{Slot:0b,id:"draconicevolution:draconium_block",count:16},{Slot:1b,id:"minecraft:redstone_block",count:16}]}
+fill 38 64 485 38 79 500 minecraft:light_gray_concrete
 setblock 39 64 503 minecraft:air
 setblock 39 64 503 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "213.4"}','{"text": "draconic"}','{"text": "tiers"}','{"text": ""}']}}
 setblock 40 64 503 minecraft:air
@@ -49,6 +52,7 @@ setblock 40 64 491 draconicevolution:basic_crafting_injector
 setblock 48 64 491 draconicevolution:basic_crafting_injector
 setblock 41 64 488 draconicevolution:basic_crafting_injector
 setblock 47 64 494 draconicevolution:basic_crafting_injector
+fill 50 64 485 50 79 496 minecraft:light_gray_concrete
 setblock 51 64 503 minecraft:air
 setblock 51 64 503 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "213.5"}','{"text": "draconic"}','{"text": "tools"}','{"text": ""}']}}
 setblock 52 64 503 minecraft:air
@@ -61,3 +65,4 @@ fill 52 67 487 58 67 487 minecraft:polished_blackstone
 setblock 52 64 490 minecraft:lantern
 setblock 58 64 490 minecraft:lantern
 summon glow_item_frame 54 66 488 {Facing:3b,Fixed:1b,Tags:["kw_shot"],Item:{id:"draconicevolution:wyvern_pickaxe",count:1}}
+fill 60 64 485 60 79 494 minecraft:light_gray_concrete

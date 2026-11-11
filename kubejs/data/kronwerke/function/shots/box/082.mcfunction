@@ -14,3 +14,4 @@ fill 410 65 111 414 69 115 minecraft:air
 setblock 412 67 113 mekanism:supercharged_coil
 setblock 412 67 116 mekanism:sps_port
 setblock 409 67 113 mekanism:sps_port
+fill 419 64 108 419 79 117 minecraft:light_gray_concrete

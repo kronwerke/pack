@@ -14,6 +14,7 @@ fill 232 67 338 238 67 338 minecraft:polished_blackstone
 setblock 232 64 341 minecraft:lantern
 setblock 238 64 341 minecraft:lantern
 summon glow_item_frame 234 66 339 {Facing:3b,Fixed:1b,Tags:["kw_shot"],Item:{id:"enderio:grains_of_infinity",count:1}}
+fill 240 64 336 240 79 345 minecraft:light_gray_concrete
 setblock 241 64 348 minecraft:air
 setblock 241 64 348 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "188.2"}','{"text": "enderio"}','{"text": "capacitor"}','{"text": ""}']}}
 setblock 242 64 348 minecraft:air
@@ -26,6 +27,7 @@ fill 242 67 338 248 67 338 minecraft:polished_blackstone
 setblock 242 64 341 minecraft:lantern
 setblock 248 64 341 minecraft:lantern
 summon glow_item_frame 244 66 339 {Facing:3b,Fixed:1b,Tags:["kw_shot"],Item:{id:"enderio:basic_capacitor",count:1}}
+fill 250 64 336 250 79 345 minecraft:light_gray_concrete
 setblock 251 64 348 minecraft:air
 setblock 251 64 348 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "188.3"}','{"text": "enderio"}','{"text": "smelter"}','{"text": ""}']}}
 setblock 252 64 348 minecraft:air
@@ -38,6 +40,7 @@ fill 252 67 338 258 67 338 minecraft:polished_blackstone
 setblock 252 64 341 minecraft:lantern
 setblock 258 64 341 minecraft:lantern
 summon glow_item_frame 254 66 339 {Facing:3b,Fixed:1b,Tags:["kw_shot"],Item:{id:"enderio:alloy_smelter",count:1}}
+fill 260 64 336 260 79 345 minecraft:light_gray_concrete
 setblock 261 64 348 minecraft:air
 setblock 261 64 348 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "188.4"}','{"text": "enderio"}','{"text": "cap_bank"}','{"text": ""}']}}
 setblock 262 64 348 minecraft:air
@@ -50,6 +53,7 @@ fill 262 67 338 268 67 338 minecraft:polished_blackstone
 setblock 262 64 341 minecraft:lantern
 setblock 268 64 341 minecraft:lantern
 summon glow_item_frame 264 66 339 {Facing:3b,Fixed:1b,Tags:["kw_shot"],Item:{id:"enderio:basic_capacitor_bank",count:1}}
+fill 270 64 336 270 79 345 minecraft:light_gray_concrete
 setblock 271 64 348 minecraft:air
 setblock 271 64 348 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "188.5"}','{"text": "enderio"}','{"text": "conduits"}','{"text": ""}']}}
 setblock 272 64 348 minecraft:air
@@ -57,6 +61,7 @@ setblock 272 64 348 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text
 summon text_display 275.5 71 341.5 {text:'[{"text": "188.5  ", "color": "gold"}, {"text": "enderio/conduits", "color": "gray"}, {"text": "\\nLeg Leitungen", "color": "white"}]',billboard:"center",background:1275068416,Tags:["kw_shot"],alignment:"center",line_width:200,transformation:{scale:[1.6f,1.6f,1.6f],translation:[0f,0f,0f],left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f]}}
 setblock 272 64 341 enderio:stirling_generator
 setblock 279 64 345 minecraft:trapped_chest[facing=south]{Items:[{Slot:0b,id:"enderio:conduit",count:32}]}
+fill 280 64 336 280 79 345 minecraft:light_gray_concrete
 setblock 281 64 348 minecraft:air
 setblock 281 64 348 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "188.6"}','{"text": "enderio"}','{"text": "filter"}','{"text": ""}']}}
 setblock 282 64 348 minecraft:air
@@ -70,6 +75,7 @@ setblock 282 64 341 minecraft:lantern
 setblock 288 64 341 minecraft:lantern
 summon glow_item_frame 283 66 339 {Facing:3b,Fixed:1b,Tags:["kw_shot"],Item:{id:"enderio:yeta_wrench",count:1}}
 summon glow_item_frame 285 66 339 {Facing:3b,Fixed:1b,Tags:["kw_shot"],Item:{id:"enderio:basic_item_filter",count:1}}
+fill 290 64 336 290 79 345 minecraft:light_gray_concrete
 setblock 291 64 348 minecraft:air
 setblock 291 64 348 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "188.7"}','{"text": "enderio"}','{"text": "sag_mill"}','{"text": ""}']}}
 setblock 292 64 348 minecraft:air
@@ -83,6 +89,7 @@ setblock 292 64 341 minecraft:lantern
 setblock 298 64 341 minecraft:lantern
 summon glow_item_frame 293 66 339 {Facing:3b,Fixed:1b,Tags:["kw_shot"],Item:{id:"enderio:sag_mill",count:1}}
 summon glow_item_frame 295 66 339 {Facing:3b,Fixed:1b,Tags:["kw_shot"],Item:{id:"enderio:silicon",count:1}}
+fill 300 64 336 300 79 345 minecraft:light_gray_concrete
 setblock 301 64 348 minecraft:air
 setblock 301 64 348 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "188.8"}','{"text": "enderio"}','{"text": "vial"}','{"text": ""}']}}
 setblock 302 64 348 minecraft:air
@@ -95,6 +102,7 @@ fill 302 67 338 308 67 338 minecraft:polished_blackstone
 setblock 302 64 341 minecraft:lantern
 setblock 308 64 341 minecraft:lantern
 summon glow_item_frame 304 66 339 {Facing:3b,Fixed:1b,Tags:["kw_shot"],Item:{id:"enderio:soul_vial",count:1}}
+fill 310 64 336 310 79 345 minecraft:light_gray_concrete
 setblock 311 64 348 minecraft:air
 setblock 311 64 348 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "188.9"}','{"text": "enderio"}','{"text": "soul_binder"}','{"text": ""}']}}
 setblock 312 64 348 minecraft:air
@@ -107,6 +115,7 @@ fill 312 67 338 318 67 338 minecraft:polished_blackstone
 setblock 312 64 341 minecraft:lantern
 setblock 318 64 341 minecraft:lantern
 summon glow_item_frame 314 66 339 {Facing:3b,Fixed:1b,Tags:["kw_shot"],Item:{id:"enderio:soul_binder",count:1}}
+fill 320 64 336 320 79 345 minecraft:light_gray_concrete
 setblock 321 64 348 minecraft:air
 setblock 321 64 348 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "188.10"}','{"text": "enderio"}','{"text": "vacuum_chest"}','{"text": ""}']}}
 setblock 322 64 348 minecraft:air
@@ -119,6 +128,7 @@ fill 322 67 338 328 67 338 minecraft:polished_blackstone
 setblock 322 64 341 minecraft:lantern
 setblock 328 64 341 minecraft:lantern
 summon glow_item_frame 324 66 339 {Facing:3b,Fixed:1b,Tags:["kw_shot"],Item:{id:"enderio:vacuum_chest",count:1}}
+fill 330 64 336 330 79 345 minecraft:light_gray_concrete
 setblock 331 64 348 minecraft:air
 setblock 331 64 348 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "188.11"}','{"text": "enderio"}','{"text": "enchanter"}','{"text": ""}']}}
 setblock 332 64 348 minecraft:air
@@ -131,3 +141,4 @@ fill 332 67 338 338 67 338 minecraft:polished_blackstone
 setblock 332 64 341 minecraft:lantern
 setblock 338 64 341 minecraft:lantern
 summon glow_item_frame 334 66 339 {Facing:3b,Fixed:1b,Tags:["kw_shot"],Item:{id:"enderio:enchanter",count:1}}
+fill 340 64 336 340 79 345 minecraft:light_gray_concrete

@@ -13,3 +13,4 @@ setblock 378 64 57 create:depot
 setblock 378 66 57 create:spout
 setblock 378 67 57 create:fluid_tank
 setblock 375 66 57 create:creative_motor[facing=west]{ScrollValue:64}
+fill 383 64 52 383 79 61 minecraft:light_gray_concrete

@@ -7,3 +7,4 @@ setblock 146 64 160 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text
 setblock 147 64 160 minecraft:air
 setblock 147 64 160 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "the mana bar"}','{"text": "Mana-Leiste im"}','{"text": "HUD"}','{"text": ""}']}}
 summon text_display 150.5 71 153.5 {text:'[{"text": "093  ", "color": "gold"}, {"text": "ars_nouveau/mana", "color": "gray"}, {"text": "\\nBehalte den Manabalken im Blick", "color": "white"}]',billboard:"center",background:1275068416,Tags:["kw_shot"],alignment:"center",line_width:200,transformation:{scale:[1.6f,1.6f,1.6f],translation:[0f,0f,0f],left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f]}}
+fill 155 64 148 155 79 157 minecraft:light_gray_concrete

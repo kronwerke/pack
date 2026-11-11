@@ -291,3 +291,4 @@ setblock 250 64 66 kronwerke:obelisk_plinth
 setblock 250 65 66 kronwerke:obelisk_pedestal
 setblock 244 64 65 kronwerke:obelisk_intake
 place template create:gametest/processing/brass_mixing 252 64 55 none
+fill 264 64 52 264 79 67 minecraft:light_gray_concrete

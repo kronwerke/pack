@@ -11,3 +11,4 @@ setblock 146 64 191 botania:runic_altar
 setblock 146 64 188 botania:mana_spreader
 setblock 146 64 194 botania:mana_pool
 setblock 150 64 195 minecraft:trapped_chest[facing=south]{Items:[{Slot:0b,id:"botania:wand_of_the_forest",count:1},{Slot:1b,id:"botania:manasteel_ingot",count:4},{Slot:2b,id:"botania:mana_powder",count:4},{Slot:3b,id:"botania:livingrock",count:1}]}
+fill 151 64 186 151 79 195 minecraft:light_gray_concrete

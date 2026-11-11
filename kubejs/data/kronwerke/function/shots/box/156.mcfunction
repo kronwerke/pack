@@ -14,3 +14,4 @@ fill 246 64 245 246 64 248 hexerei:mugwort_bush[age=3,half=lower]
 fill 246 65 245 246 65 248 hexerei:mugwort_bush[age=3,half=upper]
 fill 248 64 245 248 64 248 hexerei:yellow_dock_bush[age=3,half=lower]
 fill 248 65 245 248 65 248 hexerei:yellow_dock_bush[age=3,half=upper]
+fill 250 64 242 250 79 251 minecraft:light_gray_concrete

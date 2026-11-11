@@ -16,6 +16,7 @@ fill 123 65 492 123 69 492 nuclearcraft:fission_reactor_solid_fuel_cell
 fill 120 65 494 124 69 494 nuclearcraft:fission_reactor_glass
 setblock 122 64 494 nuclearcraft:fission_reactor_controller[facing=south]
 setblock 119 67 491 nuclearcraft:fission_reactor_port
+fill 128 64 485 128 79 496 minecraft:light_gray_concrete
 setblock 129 64 499 minecraft:air
 setblock 129 64 499 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "215.2"}','{"text": "nuclearcraft"}','{"text": "irradiation"}','{"text": ""}']}}
 setblock 130 64 499 minecraft:air
@@ -29,6 +30,7 @@ setblock 130 64 490 minecraft:lantern
 setblock 136 64 490 minecraft:lantern
 summon glow_item_frame 131 66 488 {Facing:3b,Fixed:1b,Tags:["kw_shot"],Item:{id:"nuclearcraft:fission_reactor_irradiation_chamber",count:1}}
 summon glow_item_frame 133 66 488 {Facing:3b,Fixed:1b,Tags:["kw_shot"],Item:{id:"nuclearcraft:irradiator",count:1}}
+fill 138 64 485 138 79 494 minecraft:light_gray_concrete
 setblock 139 64 499 minecraft:air
 setblock 139 64 499 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "215.3"}','{"text": "nuclearcraft"}','{"text": "geiger"}','{"text": ""}']}}
 setblock 140 64 499 minecraft:air
@@ -42,3 +44,4 @@ setblock 140 64 490 minecraft:lantern
 setblock 146 64 490 minecraft:lantern
 summon glow_item_frame 141 66 488 {Facing:3b,Fixed:1b,Tags:["kw_shot"],Item:{id:"nuclear_radiation:geiger_counter",count:1}}
 summon glow_item_frame 143 66 488 {Facing:3b,Fixed:1b,Tags:["kw_shot"],Item:{id:"nuclear_radiation:dosimeter",count:1}}
+fill 148 64 485 148 79 494 minecraft:light_gray_concrete

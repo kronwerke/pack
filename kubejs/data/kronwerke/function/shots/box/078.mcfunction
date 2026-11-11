@@ -12,3 +12,4 @@ fill 347 65 112 349 67 114 minecraft:air
 setblock 348 68 113 mekanismgenerators:fusion_reactor_controller
 setblock 348 66 116 mekanism:laser
 setblock 348 66 118 mekanism:laser_amplifier
+fill 355 64 108 355 79 119 minecraft:light_gray_concrete

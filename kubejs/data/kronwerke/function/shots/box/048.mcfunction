@@ -13,3 +13,4 @@ fill 97 63 82 111 63 82 minecraft:gravel
 fill 97 64 82 111 64 82 create:track[shape=xo]
 setblock 104 64 83 create:track_station
 setblock 111 64 86 minecraft:trapped_chest[facing=south]{Items:[{Slot:0b,id:"create:track",count:32},{Slot:1b,id:"create:railway_casing",count:1},{Slot:2b,id:"create:small_bogey",count:1},{Slot:3b,id:"create:controls",count:1},{Slot:4b,id:"create:schedule",count:1},{Slot:5b,id:"create:blaze_burner",count:1},{Slot:6b,id:"create:andesite_casing",count:16},{Slot:7b,id:"create:wrench",count:1}]}
+fill 112 64 77 112 79 86 minecraft:light_gray_concrete

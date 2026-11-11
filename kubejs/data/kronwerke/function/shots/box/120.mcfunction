@@ -10,3 +10,4 @@ summon text_display 116.5 71 191.5 {text:'[{"text": "120  ", "color": "gold"}, {
 setblock 116 64 191 create:brass_casing
 setblock 116 65 191 botania:mana_pool
 setblock 116 65 188 botania:mana_spreader
+fill 121 64 186 121 79 195 minecraft:light_gray_concrete

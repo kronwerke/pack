@@ -22,3 +22,4 @@ setblock 221 64 56 create:mechanical_saw[facing=north]
 setblock 223 64 56 create:mechanical_saw[facing=north]
 setblock 225 64 56 create:mechanical_saw[facing=north]
 setblock 227 64 56 create:mechanical_saw[facing=north]
+fill 231 64 52 231 79 61 minecraft:light_gray_concrete

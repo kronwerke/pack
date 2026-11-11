@@ -14,12 +14,14 @@ fill 194 67 441 200 67 441 minecraft:polished_blackstone
 setblock 194 64 444 minecraft:lantern
 setblock 200 64 444 minecraft:lantern
 summon glow_item_frame 196 66 442 {Facing:3b,Fixed:1b,Tags:["kw_shot"],Item:{id:"eternal_starlight:orb_of_prophecy",count:1}}
+fill 202 64 439 202 79 448 minecraft:light_gray_concrete
 setblock 203 64 453 minecraft:air
 setblock 203 64 453 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "210.2"}','{"text": "eternal_starlight"}','{"text": "portal"}','{"text": ""}']}}
 setblock 204 64 453 minecraft:air
 setblock 204 64 453 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Öffne das"}','{"text": "Portal"}','{"text": ""}','{"text": ""}']}}
 summon text_display 208.5 71 445.5 {text:'[{"text": "210.2  ", "color": "gold"}, {"text": "eternal_starlight/portal", "color": "gray"}, {"text": "\\nÖffne das Portal", "color": "white"}]',billboard:"center",background:1275068416,Tags:["kw_shot"],alignment:"center",line_width:200,transformation:{scale:[1.6f,1.6f,1.6f],translation:[0f,0f,0f],left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f]}}
 place template eternal_starlight:portal_ruins/common 204 64 441 none
+fill 214 64 439 214 79 450 minecraft:light_gray_concrete
 setblock 215 64 453 minecraft:air
 setblock 215 64 453 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "210.3"}','{"text": "eternal_starlight"}','{"text": "starfire"}','{"text": ""}']}}
 setblock 216 64 453 minecraft:air
@@ -32,6 +34,7 @@ fill 216 67 441 222 67 441 minecraft:polished_blackstone
 setblock 216 64 444 minecraft:lantern
 setblock 222 64 444 minecraft:lantern
 summon glow_item_frame 218 66 442 {Facing:3b,Fixed:1b,Tags:["kw_shot"],Item:{id:"eternal_starlight:starfire",count:1}}
+fill 224 64 439 224 79 448 minecraft:light_gray_concrete
 setblock 225 64 453 minecraft:air
 setblock 225 64 453 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "210.4"}','{"text": "eternal_starlight"}','{"text": "desert"}','{"text": ""}']}}
 setblock 226 64 453 minecraft:air
@@ -44,6 +47,7 @@ fill 226 67 441 232 67 441 minecraft:polished_blackstone
 setblock 226 64 444 minecraft:lantern
 setblock 232 64 444 minecraft:lantern
 summon glow_item_frame 228 66 442 {Facing:3b,Fixed:1b,Tags:["kw_shot"],Item:{id:"eternal_starlight:blue_starlight_crystal_shard",count:1}}
+fill 234 64 439 234 79 448 minecraft:light_gray_concrete
 setblock 235 64 453 minecraft:air
 setblock 235 64 453 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "210.5"}','{"text": "eternal_starlight"}','{"text": "forge"}','{"text": ""}']}}
 setblock 236 64 453 minecraft:air
@@ -56,6 +60,7 @@ fill 236 67 441 242 67 441 minecraft:polished_blackstone
 setblock 236 64 444 minecraft:lantern
 setblock 242 64 444 minecraft:lantern
 summon glow_item_frame 238 66 442 {Facing:3b,Fixed:1b,Tags:["kw_shot"],Item:{id:"eternal_starlight:frozen_tube",count:1}}
+fill 244 64 439 244 79 448 minecraft:light_gray_concrete
 setblock 245 64 453 minecraft:air
 setblock 245 64 453 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "210.6"}','{"text": "eternal_starlight"}','{"text": "golem"}','{"text": ""}']}}
 setblock 246 64 453 minecraft:air
@@ -69,6 +74,7 @@ setblock 246 64 444 minecraft:lantern
 setblock 252 64 444 minecraft:lantern
 summon glow_item_frame 248 66 442 {Facing:3b,Fixed:1b,Tags:["kw_shot"],Item:{id:"eternal_starlight:energy_sword",count:1}}
 summon eternal_starlight:starlight_golem 247.5 64 446.5 {NoAI:1b,PersistenceRequired:1b,Silent:1b,Tags:["kw_shot"],Rotation:[180f,0f]}
+fill 254 64 439 254 79 448 minecraft:light_gray_concrete
 setblock 255 64 453 minecraft:air
 setblock 255 64 453 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "210.7"}','{"text": "eternal_starlight"}','{"text": "garden"}','{"text": ""}']}}
 setblock 256 64 453 minecraft:air
@@ -83,6 +89,7 @@ setblock 262 64 444 minecraft:lantern
 summon glow_item_frame 257 66 442 {Facing:3b,Fixed:1b,Tags:["kw_shot"],Item:{id:"minecraft:flint_and_steel",count:1}}
 summon glow_item_frame 259 66 442 {Facing:3b,Fixed:1b,Tags:["kw_shot"],Item:{id:"eternal_starlight:tangled_skull",count:1}}
 summon eternal_starlight:tangled 257.5 64 446.5 {NoAI:1b,PersistenceRequired:1b,Silent:1b,Tags:["kw_shot"],Rotation:[180f,0f]}
+fill 264 64 439 264 79 448 minecraft:light_gray_concrete
 setblock 265 64 453 minecraft:air
 setblock 265 64 453 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "210.8"}','{"text": "eternal_starlight"}','{"text": "monstrosity"}','{"text": ""}']}}
 setblock 266 64 453 minecraft:air
@@ -96,3 +103,4 @@ setblock 266 64 444 minecraft:lantern
 setblock 272 64 444 minecraft:lantern
 summon glow_item_frame 268 66 442 {Facing:3b,Fixed:1b,Tags:["kw_shot"],Item:{id:"eternal_starlight:crescent_spear",count:1}}
 summon eternal_starlight:lunar_monstrosity 267.5 64 446.5 {NoAI:1b,PersistenceRequired:1b,Silent:1b,Tags:["kw_shot"],Rotation:[180f,0f]}
+fill 274 64 439 274 79 448 minecraft:light_gray_concrete

@@ -10,3 +10,4 @@ summon text_display 5.5 71 247.5 {text:'[{"text": "140  ", "color": "gold"}, {"t
 setblock 5 63 247 minecraft:netherrack
 setblock 5 64 247 occultism:spirit_fire
 setblock 9 64 251 minecraft:trapped_chest[facing=south]{Items:[{Slot:0b,id:"minecraft:andesite",count:32}]}
+fill 10 64 242 10 79 251 minecraft:light_gray_concrete

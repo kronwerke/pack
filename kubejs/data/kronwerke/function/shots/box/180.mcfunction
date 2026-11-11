@@ -11,3 +11,4 @@ place template immersiveengineering:multiblocks/crusher 220 64 294 none
 place template immersiveengineering:multiblocks/metal_press 230 64 294 none
 place template immersiveengineering:multiblocks/arcfurnace 240 64 294 none
 place template immersiveengineering:multiblocks/excavator 250 64 294 none
+fill 259 64 292 259 79 305 minecraft:light_gray_concrete

@@ -12,3 +12,4 @@ summon text_display 108.5 71 381.5 {text:'[{"text": "197  ", "color": "gold"}, {
 setblock 108 64 381 minecraft:bedrock
 setblock 108 66 381 minecraft:obsidian
 setblock 112 64 385 minecraft:trapped_chest[facing=south]{Items:[{Slot:0b,id:"minecraft:redstone",count:64}]}
+fill 113 64 376 113 79 385 minecraft:light_gray_concrete

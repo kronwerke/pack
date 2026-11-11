@@ -20,3 +20,4 @@ setblock 273 69 113 mekanismgenerators:saturating_condenser
 fill 271 65 115 275 71 115 mekanism:structural_glass
 setblock 273 64 115 mekanismgenerators:turbine_valve
 setblock 277 64 117 minecraft:trapped_chest[facing=south]{Items:[{Slot:0b,id:"mekanismgenerators:turbine_blade",count:6}]}
+fill 278 64 108 278 79 117 minecraft:light_gray_concrete

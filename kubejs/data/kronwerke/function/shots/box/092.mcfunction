@@ -15,3 +15,4 @@ setblock 135 64 153 ars_nouveau:drygmy_stone[converted=true]
 setblock 137 64 155 minecraft:chest
 setblock 133 64 155 ars_nouveau:source_jar
 summon minecraft:cow 138.5 64 152.5 {NoAI:1b,PersistenceRequired:1b,Silent:1b,Tags:["kw_shot"],Rotation:[180f,0f]}
+fill 140 64 148 140 79 157 minecraft:light_gray_concrete

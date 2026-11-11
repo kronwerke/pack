@@ -14,3 +14,4 @@ setblock 151 65 36 create:fluid_tank
 setblock 151 66 36 create_enchantment_industry:experience_hatch
 setblock 153 64 36 create:millstone
 setblock 155 64 39 minecraft:trapped_chest[facing=south]{Items:[{Slot:0b,id:"create_enchantment_industry:grindstone_drain",count:1},{Slot:1b,id:"create_enchantment_industry:experience_hatch",count:1}]}
+fill 157 64 31 157 79 40 minecraft:light_gray_concrete

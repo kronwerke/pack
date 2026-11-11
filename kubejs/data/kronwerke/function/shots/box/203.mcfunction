@@ -14,6 +14,7 @@ fill 2 67 403 8 67 403 minecraft:polished_blackstone
 setblock 2 64 406 minecraft:lantern
 setblock 8 64 406 minecraft:lantern
 summon glow_item_frame 4 66 404 {Facing:3b,Fixed:1b,Tags:["kw_shot"],Item:{id:"hostilenetworks:deep_learner",count:1}}
+fill 10 64 401 10 79 410 minecraft:light_gray_concrete
 setblock 11 64 413 minecraft:air
 setblock 11 64 413 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "203.2"}','{"text": "hostile_networks"}','{"text": "learner_gui"}','{"text": ""}']}}
 setblock 12 64 413 minecraft:air
@@ -26,6 +27,7 @@ fill 12 67 403 18 67 403 minecraft:polished_blackstone
 setblock 12 64 406 minecraft:lantern
 setblock 18 64 406 minecraft:lantern
 summon glow_item_frame 14 66 404 {Facing:3b,Fixed:1b,Tags:["kw_shot"],Item:{id:"minecraft:spyglass",count:1}}
+fill 20 64 401 20 79 410 minecraft:light_gray_concrete
 setblock 21 64 413 minecraft:air
 setblock 21 64 413 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "203.3"}','{"text": "hostile_networks"}','{"text": "sim_chamber"}','{"text": ""}']}}
 setblock 22 64 413 minecraft:air
@@ -38,6 +40,7 @@ fill 22 67 403 28 67 403 minecraft:polished_blackstone
 setblock 22 64 406 minecraft:lantern
 setblock 28 64 406 minecraft:lantern
 summon glow_item_frame 24 66 404 {Facing:3b,Fixed:1b,Tags:["kw_shot"],Item:{id:"minecraft:comparator",count:1}}
+fill 30 64 401 30 79 410 minecraft:light_gray_concrete
 setblock 31 64 413 minecraft:air
 setblock 31 64 413 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "203.4"}','{"text": "hostile_networks"}','{"text": "scaling"}','{"text": ""}']}}
 setblock 32 64 413 minecraft:air
@@ -50,6 +53,7 @@ fill 32 67 403 38 67 403 minecraft:polished_blackstone
 setblock 32 64 406 minecraft:lantern
 setblock 38 64 406 minecraft:lantern
 summon glow_item_frame 34 66 404 {Facing:3b,Fixed:1b,Tags:["kw_shot"],Item:{id:"minecraft:hopper",count:1}}
+fill 40 64 401 40 79 410 minecraft:light_gray_concrete
 setblock 41 64 413 minecraft:air
 setblock 41 64 413 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "203.5"}','{"text": "hostile_networks"}','{"text": "loot_fab"}','{"text": ""}']}}
 setblock 42 64 413 minecraft:air
@@ -62,6 +66,7 @@ fill 42 67 403 48 67 403 minecraft:polished_blackstone
 setblock 42 64 406 minecraft:lantern
 setblock 48 64 406 minecraft:lantern
 summon glow_item_frame 44 66 404 {Facing:3b,Fixed:1b,Tags:["kw_shot"],Item:{id:"minecraft:anvil",count:1}}
+fill 50 64 401 50 79 410 minecraft:light_gray_concrete
 setblock 51 64 413 minecraft:air
 setblock 51 64 413 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "203.6"}','{"text": "hostile_networks"}','{"text": "data_center"}','{"text": ""}']}}
 setblock 52 64 413 minecraft:air
@@ -74,3 +79,4 @@ fill 52 67 403 58 67 403 minecraft:polished_blackstone
 setblock 52 64 406 minecraft:lantern
 setblock 58 64 406 minecraft:lantern
 summon glow_item_frame 54 66 404 {Facing:3b,Fixed:1b,Tags:["kw_shot"],Item:{id:"minecraft:black_stained_glass",count:1}}
+fill 60 64 401 60 79 410 minecraft:light_gray_concrete

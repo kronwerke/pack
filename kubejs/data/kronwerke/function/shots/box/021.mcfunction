@@ -18,3 +18,4 @@ fill 17 67 56 22 67 58 minecraft:stone
 fill 17 68 56 22 68 58 minecraft:stone
 fill 18 68 57 21 68 57 minecraft:water
 setblock 22 65 57 create:shaft[axis=x]
+fill 27 64 52 27 79 61 minecraft:light_gray_concrete

@@ -13,3 +13,4 @@ fill 243 73 112 244 73 115 mekanism:thermal_evaporation_block
 setblock 243 64 115 mekanism:thermal_evaporation_controller
 setblock 244 64 115 mekanism:thermal_evaporation_valve
 fill 243 66 115 244 72 115 mekanism:structural_glass
+fill 248 64 108 248 79 117 minecraft:light_gray_concrete

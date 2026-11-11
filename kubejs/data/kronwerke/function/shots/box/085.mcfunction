@@ -13,3 +13,4 @@ setblock 29 64 153 ars_nouveau:volcanic_sourcelink
 setblock 31 64 153 ars_nouveau:source_jar
 setblock 33 64 153 ars_nouveau:imbuement_chamber
 fill 27 64 155 30 64 155 minecraft:oak_log[axis=x]
+fill 35 64 148 35 79 157 minecraft:light_gray_concrete

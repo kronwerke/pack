@@ -15,3 +15,4 @@ fill 41 70 58 41 75 58 create:white_sail[facing=north]
 fill 41 64 58 41 68 58 create:white_sail[facing=north]
 fill 42 69 58 47 69 58 create:white_sail[facing=north]
 fill 35 69 58 40 69 58 create:white_sail[facing=north]
+fill 50 64 52 50 79 61 minecraft:light_gray_concrete

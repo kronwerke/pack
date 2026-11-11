@@ -10,3 +10,4 @@ summon text_display 402.5 71 153.5 {text:'[{"text": "109  ", "color": "gold"}, {
 setblock 406 64 157 minecraft:trapped_chest[facing=south]{Items:[{Slot:0b,id:"ars_nouveau:novice_spell_book",count:1}]}
 summon minecraft:zombie 400.5 64 155.5 {NoAI:1b,PersistenceRequired:1b,Silent:1b,Tags:["kw_shot"],Rotation:[180f,0f]}
 summon minecraft:skeleton 403.5 64 155.5 {NoAI:1b,PersistenceRequired:1b,Silent:1b,Tags:["kw_shot"],Rotation:[180f,0f]}
+fill 407 64 148 407 79 157 minecraft:light_gray_concrete

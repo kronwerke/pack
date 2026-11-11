@@ -9,6 +9,7 @@ setblock 307 64 432 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text
 summon text_display 310.5 71 425.5 {text:'[{"text": "207.1  ", "color": "gold"}, {"text": "aether/portal", "color": "gray"}, {"text": "\\nBau das Glowstone-Portal", "color": "white"}]',billboard:"center",background:1275068416,Tags:["kw_shot"],alignment:"center",line_width:200,transformation:{scale:[1.6f,1.6f,1.6f],translation:[0f,0f,0f],left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f]}}
 fill 309 64 425 312 68 425 minecraft:glowstone
 fill 310 65 425 311 67 425 aether:aether_portal[axis=x]
+fill 315 64 420 315 79 429 minecraft:light_gray_concrete
 setblock 316 64 432 minecraft:air
 setblock 316 64 432 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "207.2"}','{"text": "aether"}','{"text": "arrive"}','{"text": ""}']}}
 setblock 317 64 432 minecraft:air
@@ -21,6 +22,7 @@ fill 317 67 422 323 67 422 minecraft:polished_blackstone
 setblock 317 64 425 minecraft:lantern
 setblock 323 64 425 minecraft:lantern
 summon glow_item_frame 319 66 423 {Facing:3b,Fixed:1b,Tags:["kw_shot"],Item:{id:"aether:aether_portal_frame",count:1}}
+fill 325 64 420 325 79 429 minecraft:light_gray_concrete
 setblock 326 64 432 minecraft:air
 setblock 326 64 432 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "207.3"}','{"text": "aether"}','{"text": "altar"}','{"text": ""}']}}
 setblock 327 64 432 minecraft:air
@@ -29,6 +31,7 @@ summon text_display 330.5 71 425.5 {text:'[{"text": "207.3  ", "color": "gold"},
 setblock 327 64 423 aether:altar
 setblock 329 64 423 aether:freezer
 setblock 331 64 423 aether:incubator
+fill 335 64 420 335 79 429 minecraft:light_gray_concrete
 setblock 336 64 432 minecraft:air
 setblock 336 64 432 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "207.4"}','{"text": "aether"}','{"text": "freezer"}','{"text": ""}']}}
 setblock 337 64 432 minecraft:air
@@ -37,6 +40,7 @@ summon text_display 340.5 71 425.5 {text:'[{"text": "207.4  ", "color": "gold"},
 setblock 337 64 423 aether:altar
 setblock 339 64 423 aether:freezer
 setblock 341 64 423 aether:incubator
+fill 345 64 420 345 79 429 minecraft:light_gray_concrete
 setblock 346 64 432 minecraft:air
 setblock 346 64 432 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "207.5"}','{"text": "aether"}','{"text": "incubator"}','{"text": ""}']}}
 setblock 347 64 432 minecraft:air
@@ -45,6 +49,7 @@ summon text_display 350.5 71 425.5 {text:'[{"text": "207.5  ", "color": "gold"},
 setblock 347 64 423 aether:altar
 setblock 349 64 423 aether:freezer
 setblock 351 64 423 aether:incubator
+fill 355 64 420 355 79 429 minecraft:light_gray_concrete
 setblock 356 64 432 minecraft:air
 setblock 356 64 432 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "207.6"}','{"text": "aether"}','{"text": "ride"}','{"text": ""}']}}
 setblock 357 64 432 minecraft:air
@@ -57,6 +62,7 @@ fill 357 67 422 363 67 422 minecraft:polished_blackstone
 setblock 357 64 425 minecraft:lantern
 setblock 363 64 425 minecraft:lantern
 summon glow_item_frame 359 66 423 {Facing:3b,Fixed:1b,Tags:["kw_shot"],Item:{id:"minecraft:saddle",count:1}}
+fill 365 64 420 365 79 429 minecraft:light_gray_concrete
 setblock 366 64 432 minecraft:air
 setblock 366 64 432 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "207.7"}','{"text": "aether"}','{"text": "gloves"}','{"text": ""}']}}
 setblock 367 64 432 minecraft:air
@@ -69,6 +75,7 @@ fill 367 67 422 373 67 422 minecraft:polished_blackstone
 setblock 367 64 425 minecraft:lantern
 setblock 373 64 425 minecraft:lantern
 summon glow_item_frame 369 66 423 {Facing:3b,Fixed:1b,Tags:["kw_shot"],Item:{id:"aether:zanite_gloves",count:1}}
+fill 375 64 420 375 79 429 minecraft:light_gray_concrete
 setblock 376 64 432 minecraft:air
 setblock 376 64 432 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "207.8"}','{"text": "aether"}','{"text": "bronze"}','{"text": ""}']}}
 setblock 377 64 432 minecraft:air
@@ -81,6 +88,7 @@ fill 377 67 422 383 67 422 minecraft:polished_blackstone
 setblock 377 64 425 minecraft:lantern
 setblock 383 64 425 minecraft:lantern
 summon glow_item_frame 379 66 423 {Facing:3b,Fixed:1b,Tags:["kw_shot"],Item:{id:"aether:carved_stone",count:1}}
+fill 385 64 420 385 79 429 minecraft:light_gray_concrete
 setblock 386 64 432 minecraft:air
 setblock 386 64 432 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "207.9"}','{"text": "aether"}','{"text": "slider"}','{"text": ""}']}}
 setblock 387 64 432 minecraft:air
@@ -94,6 +102,7 @@ setblock 387 64 425 minecraft:lantern
 setblock 393 64 425 minecraft:lantern
 summon glow_item_frame 389 66 423 {Facing:3b,Fixed:1b,Tags:["kw_shot"],Item:{id:"aether:sentry_stone",count:1}}
 summon aether:slider 388.5 64 427.5 {NoAI:1b,PersistenceRequired:1b,Silent:1b,Tags:["kw_shot"],Rotation:[180f,0f]}
+fill 395 64 420 395 79 429 minecraft:light_gray_concrete
 setblock 396 64 432 minecraft:air
 setblock 396 64 432 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "207.10"}','{"text": "aether"}','{"text": "silver"}','{"text": ""}']}}
 setblock 397 64 432 minecraft:air
@@ -106,6 +115,7 @@ fill 397 67 422 403 67 422 minecraft:polished_blackstone
 setblock 397 64 425 minecraft:lantern
 setblock 403 64 425 minecraft:lantern
 summon glow_item_frame 399 66 423 {Facing:3b,Fixed:1b,Tags:["kw_shot"],Item:{id:"aether:angelic_stone",count:1}}
+fill 405 64 420 405 79 429 minecraft:light_gray_concrete
 setblock 406 64 432 minecraft:air
 setblock 406 64 432 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "207.11"}','{"text": "aether"}','{"text": "queen"}','{"text": ""}']}}
 setblock 407 64 432 minecraft:air
@@ -119,3 +129,4 @@ setblock 407 64 425 minecraft:lantern
 setblock 413 64 425 minecraft:lantern
 summon glow_item_frame 409 66 423 {Facing:3b,Fixed:1b,Tags:["kw_shot"],Item:{id:"aether:silver_dungeon_key",count:1}}
 summon aether:valkyrie_queen 408.5 64 427.5 {NoAI:1b,PersistenceRequired:1b,Silent:1b,Tags:["kw_shot"],Rotation:[180f,0f]}
+fill 415 64 420 415 79 429 minecraft:light_gray_concrete

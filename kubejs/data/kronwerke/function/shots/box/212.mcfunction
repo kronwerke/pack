@@ -14,12 +14,14 @@ fill 2 67 462 8 67 462 minecraft:polished_blackstone
 setblock 2 64 465 minecraft:lantern
 setblock 8 64 465 minecraft:lantern
 summon glow_item_frame 4 66 463 {Facing:3b,Fixed:1b,Tags:["kw_shot"],Item:{id:"productivetrees:walnut",count:1}}
+fill 10 64 460 10 79 469 minecraft:light_gray_concrete
 setblock 11 64 478 minecraft:air
 setblock 11 64 478 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "212.2"}','{"text": "productive_trees"}','{"text": "mega"}','{"text": ""}']}}
 setblock 12 64 478 minecraft:air
 setblock 12 64 478 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Pflanz vier"}','{"text": "Setzlinge im"}','{"text": "Quadrat"}','{"text": ""}']}}
 summon text_display 18.5 71 468.5 {text:'[{"text": "212.2  ", "color": "gold"}, {"text": "productive_trees/mega", "color": "gray"}, {"text": "\\nPflanz vier Setzlinge im Quadrat", "color": "white"}]',billboard:"center",background:1275068416,Tags:["kw_shot"],alignment:"center",line_width:200,transformation:{scale:[1.6f,1.6f,1.6f],translation:[0f,0f,0f],left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f]}}
 place template productivetrees:brown_amber_mega_1 12 64 462 none
+fill 26 64 460 26 79 475 minecraft:light_gray_concrete
 setblock 27 64 478 minecraft:air
 setblock 27 64 478 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "212.3"}','{"text": "productive_trees"}','{"text": "pots"}','{"text": ""}']}}
 setblock 28 64 478 minecraft:air
@@ -32,6 +34,7 @@ fill 28 67 462 34 67 462 minecraft:polished_blackstone
 setblock 28 64 465 minecraft:lantern
 setblock 34 64 465 minecraft:lantern
 summon glow_item_frame 30 66 463 {Facing:3b,Fixed:1b,Tags:["kw_shot"],Item:{id:"botanypots:terracotta_hopper_botany_pot",count:1}}
+fill 36 64 460 36 79 469 minecraft:light_gray_concrete
 setblock 37 64 478 minecraft:air
 setblock 37 64 478 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "212.4"}','{"text": "productive_trees"}','{"text": "sawmill_run"}','{"text": ""}']}}
 setblock 38 64 478 minecraft:air
@@ -45,6 +48,7 @@ setblock 38 64 465 minecraft:lantern
 setblock 44 64 465 minecraft:lantern
 summon glow_item_frame 39 66 463 {Facing:3b,Fixed:1b,Tags:["kw_shot"],Item:{id:"productivetrees:sawdust",count:1}}
 summon glow_item_frame 41 66 463 {Facing:3b,Fixed:1b,Tags:["kw_shot"],Item:{id:"productivetrees:sawmill",count:1}}
+fill 46 64 460 46 79 469 minecraft:light_gray_concrete
 setblock 47 64 478 minecraft:air
 setblock 47 64 478 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "212.5"}','{"text": "productive_trees"}','{"text": "stripper"}','{"text": ""}']}}
 setblock 48 64 478 minecraft:air
@@ -57,6 +61,7 @@ fill 48 67 462 54 67 462 minecraft:polished_blackstone
 setblock 48 64 465 minecraft:lantern
 setblock 54 64 465 minecraft:lantern
 summon glow_item_frame 50 66 463 {Facing:3b,Fixed:1b,Tags:["kw_shot"],Item:{id:"productivetrees:stripper",count:1}}
+fill 56 64 460 56 79 469 minecraft:light_gray_concrete
 setblock 57 64 478 minecraft:air
 setblock 57 64 478 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "212.6"}','{"text": "productive_trees"}','{"text": "wood_set"}','{"text": ""}']}}
 setblock 58 64 478 minecraft:air
@@ -69,6 +74,7 @@ fill 58 67 462 64 67 462 minecraft:polished_blackstone
 setblock 58 64 465 minecraft:lantern
 setblock 64 64 465 minecraft:lantern
 summon glow_item_frame 60 66 463 {Facing:3b,Fixed:1b,Tags:["kw_shot"],Item:{id:"productivetrees:mahogany_planks",count:1}}
+fill 66 64 460 66 79 469 minecraft:light_gray_concrete
 setblock 67 64 478 minecraft:air
 setblock 67 64 478 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "212.7"}','{"text": "productive_trees"}','{"text": "station"}','{"text": ""}']}}
 setblock 68 64 478 minecraft:air
@@ -83,6 +89,7 @@ setblock 74 64 465 minecraft:lantern
 summon glow_item_frame 69 66 463 {Facing:3b,Fixed:1b,Tags:["kw_shot"],Item:{id:"minecraft:beehive",count:1}}
 summon glow_item_frame 71 66 463 {Facing:3b,Fixed:1b,Tags:["kw_shot"],Item:{id:"minecraft:spyglass",count:1}}
 summon glow_item_frame 73 66 463 {Facing:3b,Fixed:1b,Tags:["kw_shot"],Item:{id:"minecraft:bee_nest",count:1}}
+fill 76 64 460 76 79 469 minecraft:light_gray_concrete
 setblock 77 64 478 minecraft:air
 setblock 77 64 478 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "212.8"}','{"text": "productive_trees"}','{"text": "pollinated"}','{"text": ""}']}}
 setblock 78 64 478 minecraft:air
@@ -95,6 +102,7 @@ fill 78 67 462 84 67 462 minecraft:polished_blackstone
 setblock 78 64 465 minecraft:lantern
 setblock 84 64 465 minecraft:lantern
 summon glow_item_frame 80 66 463 {Facing:3b,Fixed:1b,Tags:["kw_shot"],Item:{id:"productivetrees:hazel_sapling",count:1}}
+fill 86 64 460 86 79 469 minecraft:light_gray_concrete
 setblock 87 64 478 minecraft:air
 setblock 87 64 478 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "212.9"}','{"text": "productive_trees"}','{"text": "loot_saplings"}','{"text": ""}']}}
 setblock 88 64 478 minecraft:air
@@ -107,6 +115,7 @@ fill 88 67 462 94 67 462 minecraft:polished_blackstone
 setblock 88 64 465 minecraft:lantern
 setblock 94 64 465 minecraft:lantern
 summon glow_item_frame 90 66 463 {Facing:3b,Fixed:1b,Tags:["kw_shot"],Item:{id:"productivetrees:blue_yonder_sapling",count:1}}
+fill 96 64 460 96 79 469 minecraft:light_gray_concrete
 setblock 97 64 478 minecraft:air
 setblock 97 64 478 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "212.10"}','{"text": "productive_trees"}','{"text": "amber"}','{"text": ""}']}}
 setblock 98 64 478 minecraft:air
@@ -119,9 +128,11 @@ fill 98 67 462 104 67 462 minecraft:polished_blackstone
 setblock 98 64 465 minecraft:lantern
 setblock 104 64 465 minecraft:lantern
 summon glow_item_frame 100 66 463 {Facing:3b,Fixed:1b,Tags:["kw_shot"],Item:{id:"productivetrees:brown_amber_sapling",count:1}}
+fill 106 64 460 106 79 469 minecraft:light_gray_concrete
 setblock 107 64 478 minecraft:air
 setblock 107 64 478 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "212.11"}','{"text": "productive_trees"}','{"text": "time_traveller"}','{"text": ""}']}}
 setblock 108 64 478 minecraft:air
 setblock 108 64 478 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Bau das"}','{"text": "Time-Traveller-Display"}','{"text": ""}','{"text": ""}']}}
 summon text_display 113.5 71 467.5 {text:'[{"text": "212.11  ", "color": "gold"}, {"text": "productive_trees/time_traveller", "color": "gray"}, {"text": "\\nBau das Time-Traveller-Display", "color": "white"}]',billboard:"center",background:1275068416,Tags:["kw_shot"],alignment:"center",line_width:200,transformation:{scale:[1.6f,1.6f,1.6f],translation:[0f,0f,0f],left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f]}}
 place template productivetrees:time_traveller_1 108 64 462 none
+fill 120 64 460 120 79 473 minecraft:light_gray_concrete

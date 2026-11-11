@@ -16,3 +16,4 @@ setblock 374 64 155 ars_nouveau:arcane_pedestal
 setblock 372 64 150 ars_nouveau:arcane_pedestal
 setblock 372 64 156 ars_nouveau:arcane_pedestal
 setblock 369 64 153 ars_nouveau:source_jar
+fill 377 64 148 377 79 157 minecraft:light_gray_concrete

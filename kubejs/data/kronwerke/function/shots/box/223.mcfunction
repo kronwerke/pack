@@ -13,6 +13,7 @@ setblock 297 64 513 malum:runewood_item_pedestal
 setblock 293 64 517 malum:runewood_item_pedestal
 setblock 297 64 517 malum:runewood_item_pedestal
 setblock 299 64 519 minecraft:trapped_chest[facing=south]{Items:[{Slot:0b,id:"malum:sacred_spirit",count:16},{Slot:1b,id:"malum:arcane_spirit",count:16}]}
+fill 300 64 510 300 79 519 minecraft:light_gray_concrete
 setblock 301 64 522 minecraft:air
 setblock 301 64 522 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "223.2"}','{"text": "malum"}','{"text": "altar"}','{"text": ""}']}}
 setblock 302 64 522 minecraft:air
@@ -24,6 +25,7 @@ setblock 307 64 513 malum:runewood_item_pedestal
 setblock 303 64 517 malum:runewood_item_pedestal
 setblock 307 64 517 malum:runewood_item_pedestal
 setblock 309 64 519 minecraft:trapped_chest[facing=south]{Items:[{Slot:0b,id:"malum:sacred_spirit",count:16},{Slot:1b,id:"malum:arcane_spirit",count:16}]}
+fill 310 64 510 310 79 519 minecraft:light_gray_concrete
 setblock 311 64 522 minecraft:air
 setblock 311 64 522 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "223.3"}','{"text": "malum"}','{"text": "obelisk"}','{"text": ""}']}}
 setblock 312 64 522 minecraft:air
@@ -36,6 +38,7 @@ fill 312 67 512 318 67 512 minecraft:polished_blackstone
 setblock 312 64 515 minecraft:lantern
 setblock 318 64 515 minecraft:lantern
 summon glow_item_frame 314 66 513 {Facing:3b,Fixed:1b,Tags:["kw_shot"],Item:{id:"malum:runewood_obelisk",count:1}}
+fill 320 64 510 320 79 519 minecraft:light_gray_concrete
 setblock 321 64 522 minecraft:air
 setblock 321 64 522 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "223.4"}','{"text": "malum"}','{"text": "crucible"}','{"text": ""}']}}
 setblock 322 64 522 minecraft:air
@@ -48,6 +51,7 @@ fill 322 67 512 328 67 512 minecraft:polished_blackstone
 setblock 322 64 515 minecraft:lantern
 setblock 328 64 515 minecraft:lantern
 summon glow_item_frame 324 66 513 {Facing:3b,Fixed:1b,Tags:["kw_shot"],Item:{id:"malum:spirit_crucible",count:1}}
+fill 330 64 510 330 79 519 minecraft:light_gray_concrete
 setblock 331 64 522 minecraft:air
 setblock 331 64 522 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "223.5"}','{"text": "malum"}','{"text": "healing_rite"}','{"text": ""}']}}
 setblock 332 64 522 minecraft:air
@@ -56,6 +60,7 @@ summon text_display 335.5 71 515.5 {text:'[{"text": "223.5  ", "color": "gold"},
 setblock 335 64 515 malum:runewood_totem_base
 fill 335 65 515 335 67 515 malum:runewood_log
 setblock 339 64 519 minecraft:trapped_chest[facing=south]{Items:[{Slot:0b,id:"malum:totemic_staff",count:1},{Slot:1b,id:"malum:arcane_spirit",count:4},{Slot:2b,id:"malum:sacred_spirit",count:8}]}
+fill 340 64 510 340 79 519 minecraft:light_gray_concrete
 setblock 341 64 522 minecraft:air
 setblock 341 64 522 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "223.6"}','{"text": "malum"}','{"text": "quickening"}','{"text": ""}']}}
 setblock 342 64 522 minecraft:air
@@ -64,3 +69,4 @@ summon text_display 345.5 71 515.5 {text:'[{"text": "223.6  ", "color": "gold"},
 setblock 345 64 515 malum:runewood_totem_base
 fill 345 65 515 345 67 515 malum:runewood_log
 setblock 349 64 519 minecraft:trapped_chest[facing=south]{Items:[{Slot:0b,id:"malum:totemic_staff",count:1},{Slot:1b,id:"malum:arcane_spirit",count:4},{Slot:2b,id:"malum:sacred_spirit",count:8}]}
+fill 350 64 510 350 79 519 minecraft:light_gray_concrete

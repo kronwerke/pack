@@ -11,3 +11,4 @@ summon armor_stand 32.5 64 172.5 {ArmorItems:[{id:"ars_elemental:fire_boots",cou
 summon armor_stand 34.5 64 172.5 {ArmorItems:[{id:"ars_elemental:aqua_boots",count:1},{id:"ars_elemental:aqua_leggings",count:1},{id:"ars_elemental:aqua_robes",count:1},{id:"ars_elemental:aqua_hat",count:1}],ShowArms:1b,NoBasePlate:1b,Tags:["kw_shot"],Rotation:[180f,0f]}
 summon armor_stand 36.5 64 172.5 {ArmorItems:[{id:"ars_elemental:earth_boots",count:1},{id:"ars_elemental:earth_leggings",count:1},{id:"ars_elemental:earth_robes",count:1},{id:"ars_elemental:earth_hat",count:1}],ShowArms:1b,NoBasePlate:1b,Tags:["kw_shot"],Rotation:[180f,0f]}
 summon armor_stand 38.5 64 172.5 {ArmorItems:[{id:"ars_elemental:air_boots",count:1},{id:"ars_elemental:air_leggings",count:1},{id:"ars_elemental:air_robes",count:1},{id:"ars_elemental:air_hat",count:1}],ShowArms:1b,NoBasePlate:1b,Tags:["kw_shot"],Rotation:[180f,0f]}
+fill 40 64 167 40 79 176 minecraft:light_gray_concrete

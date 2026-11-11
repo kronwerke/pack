@@ -11,3 +11,4 @@ setblock 86 64 82 create:depot
 setblock 86 66 82 create:spout
 setblock 86 67 82 create:creative_fluid_tank
 setblock 90 64 86 minecraft:trapped_chest[facing=south]{Items:[{Slot:0b,id:"create:powdered_obsidian",count:16},{Slot:1b,id:"minecraft:lava_bucket",count:1}]}
+fill 91 64 77 91 79 86 minecraft:light_gray_concrete

@@ -31,3 +31,4 @@ setblock 96 64 13 naturesaura:wood_stand
 setblock 100 64 13 naturesaura:wood_stand
 setblock 98 64 11 minecraft:oak_sapling
 setblock 102 64 15 minecraft:trapped_chest[facing=south]{Items:[{Slot:0b,id:"naturesaura:gold_leaf",count:1},{Slot:1b,id:"minecraft:oak_sapling",count:1},{Slot:2b,id:"minecraft:stone",count:4},{Slot:3b,id:"minecraft:cobblestone",count:2}]}
+fill 103 64 6 103 79 15 minecraft:light_gray_concrete

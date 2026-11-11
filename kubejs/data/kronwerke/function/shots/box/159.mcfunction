@@ -20,3 +20,4 @@ setblock 288 63 247 minecraft:lava
 setblock 288 64 247 hexerei:mixing_cauldron
 setblock 292 64 247 hexerei:mixing_cauldron
 setblock 290 64 245 hexerei:candle_dipper
+fill 295 64 242 295 79 251 minecraft:light_gray_concrete

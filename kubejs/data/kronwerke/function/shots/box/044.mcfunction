@@ -16,6 +16,7 @@ setblock 4 64 80 powergrid:generator_housing
 setblock 6 64 80 powergrid:rheostat
 setblock 8 64 80 powergrid:electromagnet
 setblock 9 64 86 minecraft:trapped_chest[facing=south]{Items:[{Slot:0b,id:"powergrid:copper_coil",count:1},{Slot:1b,id:"powergrid:wire_cutter",count:1}]}
+fill 10 64 77 10 79 86 minecraft:light_gray_concrete
 setblock 11 64 89 minecraft:air
 setblock 11 64 89 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "044.2"}','{"text": "create_brass"}','{"text": "pg_generator"}','{"text": ""}']}}
 setblock 12 64 89 minecraft:air
@@ -26,6 +27,7 @@ setblock 14 64 80 powergrid:generator_housing
 setblock 16 64 80 powergrid:rheostat
 setblock 18 64 80 powergrid:electromagnet
 setblock 19 64 86 minecraft:trapped_chest[facing=south]{Items:[{Slot:0b,id:"powergrid:copper_coil",count:1},{Slot:1b,id:"powergrid:wire_cutter",count:1}]}
+fill 20 64 77 20 79 86 minecraft:light_gray_concrete
 setblock 21 64 89 minecraft:air
 setblock 21 64 89 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "044.3"}','{"text": "create_brass"}','{"text": "pg_rheostat"}','{"text": ""}']}}
 setblock 22 64 89 minecraft:air
@@ -36,6 +38,7 @@ setblock 24 64 80 powergrid:generator_housing
 setblock 26 64 80 powergrid:rheostat
 setblock 28 64 80 powergrid:electromagnet
 setblock 29 64 86 minecraft:trapped_chest[facing=south]{Items:[{Slot:0b,id:"powergrid:copper_coil",count:1},{Slot:1b,id:"powergrid:wire_cutter",count:1}]}
+fill 30 64 77 30 79 86 minecraft:light_gray_concrete
 setblock 31 64 89 minecraft:air
 setblock 31 64 89 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "044.4"}','{"text": "create_brass"}','{"text": "pg_magnet"}','{"text": ""}']}}
 setblock 32 64 89 minecraft:air
@@ -46,3 +49,4 @@ setblock 34 64 80 powergrid:generator_housing
 setblock 36 64 80 powergrid:rheostat
 setblock 38 64 80 powergrid:electromagnet
 setblock 39 64 86 minecraft:trapped_chest[facing=south]{Items:[{Slot:0b,id:"powergrid:copper_coil",count:1},{Slot:1b,id:"powergrid:wire_cutter",count:1}]}
+fill 40 64 77 40 79 86 minecraft:light_gray_concrete

@@ -28,3 +28,4 @@ setblock 27 65 38 create:mechanical_saw[facing=south]
 setblock 24 65 38 minecraft:chest
 setblock 24 65 36 create:portable_storage_interface[facing=north]
 setblock 28 64 42 minecraft:trapped_chest[facing=south]{Items:[{Slot:0b,id:"create:super_glue",count:1},{Slot:1b,id:"create:portable_storage_interface",count:1}]}
+fill 29 64 31 29 79 42 minecraft:light_gray_concrete

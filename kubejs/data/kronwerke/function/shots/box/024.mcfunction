@@ -12,3 +12,4 @@ setblock 77 66 57 create:mechanical_press[facing=east]
 setblock 78 66 57 create:shaft[axis=x]
 setblock 79 66 57 create:creative_motor[facing=west]{ScrollValue:64}
 setblock 81 64 61 minecraft:trapped_chest[facing=south]{Items:[{Slot:0b,id:"minecraft:iron_ingot",count:32}]}
+fill 82 64 52 82 79 61 minecraft:light_gray_concrete

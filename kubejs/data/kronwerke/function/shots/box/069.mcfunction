@@ -11,3 +11,4 @@ fill 212 64 113 214 68 113 mekanism:teleporter_frame
 fill 213 65 113 213 67 113 minecraft:air
 setblock 213 64 114 mekanism:teleporter
 setblock 212 64 114 mekanism:creative_energy_cube
+fill 218 64 108 218 79 117 minecraft:light_gray_concrete

@@ -1,6 +1,6 @@
 # 101 ars_apprentice/source_motor
 fill 277 63 148 288 63 161 minecraft:light_gray_concrete
-fill 277 64 148 288 79 148 minecraft:light_gray_concrete
+fill 277 64 148 292 79 148 minecraft:light_gray_concrete
 fill 277 64 148 277 79 161 minecraft:light_gray_concrete
 setblock 278 64 160 minecraft:air
 setblock 278 64 160 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "101"}','{"text": "ars_apprentice"}','{"text": "source_motor"}','{"text": ""}']}}

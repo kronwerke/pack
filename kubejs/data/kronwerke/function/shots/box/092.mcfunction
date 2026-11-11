@@ -1,6 +1,6 @@
 # 092 ars_nouveau/drygmy
 fill 130 63 148 141 63 161 minecraft:light_gray_concrete
-fill 130 64 148 141 79 148 minecraft:light_gray_concrete
+fill 130 64 148 145 79 148 minecraft:light_gray_concrete
 fill 130 64 148 130 79 161 minecraft:light_gray_concrete
 setblock 131 64 160 minecraft:air
 setblock 131 64 160 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "092"}','{"text": "ars_nouveau"}','{"text": "drygmy"}','{"text": ""}']}}

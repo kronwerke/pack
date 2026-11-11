@@ -1,6 +1,6 @@
 # 038 create_brass/precision
 fill 320 63 52 335 63 65 minecraft:light_gray_concrete
-fill 320 64 52 335 79 52 minecraft:light_gray_concrete
+fill 320 64 52 339 79 52 minecraft:light_gray_concrete
 fill 320 64 52 320 79 65 minecraft:light_gray_concrete
 setblock 321 64 64 minecraft:air
 setblock 321 64 64 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "038"}','{"text": "create_brass"}','{"text": "precision"}','{"text": ""}']}}

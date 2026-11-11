@@ -1,6 +1,6 @@
 # 158 hexerei/candles
 fill 270 63 242 281 63 255 minecraft:light_gray_concrete
-fill 270 64 242 281 79 242 minecraft:light_gray_concrete
+fill 270 64 242 285 79 242 minecraft:light_gray_concrete
 fill 270 64 242 270 79 255 minecraft:light_gray_concrete
 setblock 271 64 254 minecraft:air
 setblock 271 64 254 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "158"}','{"text": "hexerei"}','{"text": "candles"}','{"text": ""}']}}

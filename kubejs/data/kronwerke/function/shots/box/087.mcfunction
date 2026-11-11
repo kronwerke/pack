@@ -1,6 +1,6 @@
 # 087 ars_nouveau/first_spell
 fill 55 63 148 66 63 161 minecraft:light_gray_concrete
-fill 55 64 148 66 79 148 minecraft:light_gray_concrete
+fill 55 64 148 70 79 148 minecraft:light_gray_concrete
 fill 55 64 148 55 79 161 minecraft:light_gray_concrete
 setblock 56 64 160 minecraft:air
 setblock 56 64 160 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "087"}','{"text": "ars_nouveau"}','{"text": "first_spell"}','{"text": ""}']}}

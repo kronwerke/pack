@@ -1,6 +1,6 @@
 # 201 pneumaticcraft/chamber, refinery, vortex, elevator, safety, plastic, etching
 fill 227 63 376 298 63 389 minecraft:light_gray_concrete
-fill 227 64 376 298 79 376 minecraft:light_gray_concrete
+fill 227 64 376 302 79 376 minecraft:light_gray_concrete
 fill 227 64 376 227 79 389 minecraft:light_gray_concrete
 setblock 228 64 388 minecraft:air
 setblock 228 64 388 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "201.1"}','{"text": "pneumaticcraft"}','{"text": "chamber"}','{"text": ""}']}}

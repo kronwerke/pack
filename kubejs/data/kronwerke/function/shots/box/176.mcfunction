@@ -1,6 +1,6 @@
 # 176 immersive/list_mb
 fill 289 63 273 331 63 286 minecraft:light_gray_concrete
-fill 289 64 273 331 79 273 minecraft:light_gray_concrete
+fill 289 64 273 335 79 273 minecraft:light_gray_concrete
 fill 289 64 273 289 79 286 minecraft:light_gray_concrete
 setblock 290 64 285 minecraft:air
 setblock 290 64 285 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "176"}','{"text": "immersive"}','{"text": "list_mb"}','{"text": ""}']}}

@@ -1,6 +1,6 @@
 # 221 theurgy/sal_tank, liquefaction, vessels, wire, array, fermentation
 fill 160 63 510 221 63 523 minecraft:light_gray_concrete
-fill 160 64 510 221 79 510 minecraft:light_gray_concrete
+fill 160 64 510 225 79 510 minecraft:light_gray_concrete
 fill 160 64 510 160 79 523 minecraft:light_gray_concrete
 setblock 161 64 522 minecraft:air
 setblock 161 64 522 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "221.1"}','{"text": "theurgy"}','{"text": "sal_tank"}','{"text": ""}']}}

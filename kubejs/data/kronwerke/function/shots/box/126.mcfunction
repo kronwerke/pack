@@ -1,6 +1,6 @@
 # 126 botania_runes/terrasteel
 fill 203 63 186 214 63 199 minecraft:light_gray_concrete
-fill 203 64 186 214 79 186 minecraft:light_gray_concrete
+fill 203 64 186 218 79 186 minecraft:light_gray_concrete
 fill 203 64 186 203 79 199 minecraft:light_gray_concrete
 setblock 204 64 198 minecraft:air
 setblock 204 64 198 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "126"}','{"text": "botania_runes"}','{"text": "terrasteel"}','{"text": ""}']}}

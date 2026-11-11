@@ -1,6 +1,6 @@
 # 187 powah/orb, rods, furnator, thermo, reactor, reactor_fuel, ender_cell, transmitter, power_plant
 fill 135 63 336 226 63 349 minecraft:light_gray_concrete
-fill 135 64 336 226 79 336 minecraft:light_gray_concrete
+fill 135 64 336 230 79 336 minecraft:light_gray_concrete
 fill 135 64 336 135 79 349 minecraft:light_gray_concrete
 setblock 136 64 348 minecraft:air
 setblock 136 64 348 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "187.1"}','{"text": "powah"}','{"text": "orb"}','{"text": ""}']}}

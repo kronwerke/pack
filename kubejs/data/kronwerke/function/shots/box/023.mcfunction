@@ -1,6 +1,6 @@
 # 023 create/stress
 fill 55 63 52 68 63 65 minecraft:light_gray_concrete
-fill 55 64 52 68 79 52 minecraft:light_gray_concrete
+fill 55 64 52 72 79 52 minecraft:light_gray_concrete
 fill 55 64 52 55 79 65 minecraft:light_gray_concrete
 setblock 56 64 64 minecraft:air
 setblock 56 64 64 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "023"}','{"text": "create"}','{"text": "stress"}','{"text": ""}']}}

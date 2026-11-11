@@ -1,6 +1,6 @@
 # 120 botania_runes/mana_pearl
 fill 111 63 186 122 63 199 minecraft:light_gray_concrete
-fill 111 64 186 122 79 186 minecraft:light_gray_concrete
+fill 111 64 186 126 79 186 minecraft:light_gray_concrete
 fill 111 64 186 111 79 199 minecraft:light_gray_concrete
 setblock 112 64 198 minecraft:air
 setblock 112 64 198 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "120"}','{"text": "botania_runes"}','{"text": "mana_pearl"}','{"text": ""}']}}

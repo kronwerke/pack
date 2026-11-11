@@ -1,6 +1,6 @@
 # 125 botania_runes/plate_base
 fill 188 63 186 199 63 199 minecraft:light_gray_concrete
-fill 188 64 186 199 79 186 minecraft:light_gray_concrete
+fill 188 64 186 203 79 186 minecraft:light_gray_concrete
 fill 188 64 186 188 79 199 minecraft:light_gray_concrete
 setblock 189 64 198 minecraft:air
 setblock 189 64 198 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "125"}','{"text": "botania_runes"}','{"text": "plate_base"}','{"text": ""}']}}

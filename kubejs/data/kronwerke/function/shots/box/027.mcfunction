@@ -1,6 +1,6 @@
 # 027 create/compacting
 fill 121 63 52 132 63 65 minecraft:light_gray_concrete
-fill 121 64 52 132 79 52 minecraft:light_gray_concrete
+fill 121 64 52 136 79 52 minecraft:light_gray_concrete
 fill 121 64 52 121 79 65 minecraft:light_gray_concrete
 setblock 122 64 64 minecraft:air
 setblock 122 64 64 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "027"}','{"text": "create"}','{"text": "compacting"}','{"text": ""}']}}

@@ -1,6 +1,6 @@
 # 123 botania_runes/thermalily
 fill 156 63 186 167 63 199 minecraft:light_gray_concrete
-fill 156 64 186 167 79 186 minecraft:light_gray_concrete
+fill 156 64 186 171 79 186 minecraft:light_gray_concrete
 fill 156 64 186 156 79 199 minecraft:light_gray_concrete
 setblock 157 64 198 minecraft:air
 setblock 157 64 198 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "123"}','{"text": "botania_runes"}','{"text": "thermalily"}','{"text": ""}']}}

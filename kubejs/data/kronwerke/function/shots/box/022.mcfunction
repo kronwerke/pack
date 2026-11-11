@@ -1,6 +1,6 @@
 # 022 create/windmill
 fill 32 63 52 51 63 65 minecraft:light_gray_concrete
-fill 32 64 52 51 79 52 minecraft:light_gray_concrete
+fill 32 64 52 55 79 52 minecraft:light_gray_concrete
 fill 32 64 52 32 79 65 minecraft:light_gray_concrete
 setblock 33 64 64 minecraft:air
 setblock 33 64 64 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "022"}','{"text": "create"}','{"text": "windmill"}','{"text": ""}']}}

@@ -1,6 +1,6 @@
 # 116 botania/manastar
 fill 47 63 186 58 63 199 minecraft:light_gray_concrete
-fill 47 64 186 58 79 186 minecraft:light_gray_concrete
+fill 47 64 186 62 79 186 minecraft:light_gray_concrete
 fill 47 64 186 47 79 199 minecraft:light_gray_concrete
 setblock 48 64 198 minecraft:air
 setblock 48 64 198 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "116"}','{"text": "botania"}','{"text": "manastar"}','{"text": ""}']}}

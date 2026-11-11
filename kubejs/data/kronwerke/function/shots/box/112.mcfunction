@@ -1,6 +1,6 @@
 # 112 ars_epic/el_armor
 fill 30 63 167 41 63 180 minecraft:light_gray_concrete
-fill 30 64 167 41 79 167 minecraft:light_gray_concrete
+fill 30 64 167 45 79 167 minecraft:light_gray_concrete
 fill 30 64 167 30 79 180 minecraft:light_gray_concrete
 setblock 31 64 179 minecraft:air
 setblock 31 64 179 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "112"}','{"text": "ars_epic"}','{"text": "el_armor"}','{"text": ""}']}}

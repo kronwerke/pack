@@ -1,6 +1,6 @@
 # 105 ars_master/ritual_awakening
 fill 337 63 148 348 63 161 minecraft:light_gray_concrete
-fill 337 64 148 348 79 148 minecraft:light_gray_concrete
+fill 337 64 148 352 79 148 minecraft:light_gray_concrete
 fill 337 64 148 337 79 161 minecraft:light_gray_concrete
 setblock 338 64 160 minecraft:air
 setblock 338 64 160 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "105"}','{"text": "ars_master"}','{"text": "ritual_awakening"}','{"text": ""}']}}

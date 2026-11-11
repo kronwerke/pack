@@ -1,6 +1,6 @@
 # 011 farms/wood_saw
 fill 17 63 31 30 63 46 minecraft:light_gray_concrete
-fill 17 64 31 30 79 31 minecraft:light_gray_concrete
+fill 17 64 31 34 79 31 minecraft:light_gray_concrete
 fill 17 64 31 17 79 46 minecraft:light_gray_concrete
 setblock 18 64 45 minecraft:air
 setblock 18 64 45 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "011"}','{"text": "farms"}','{"text": "wood_saw"}','{"text": ""}']}}

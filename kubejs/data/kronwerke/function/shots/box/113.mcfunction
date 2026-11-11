@@ -1,6 +1,6 @@
 # 113 botania/pure_daisy
 fill 0 63 186 11 63 199 minecraft:light_gray_concrete
-fill 0 64 186 11 79 186 minecraft:light_gray_concrete
+fill 0 64 186 15 79 186 minecraft:light_gray_concrete
 fill 0 64 186 0 79 199 minecraft:light_gray_concrete
 setblock 1 64 198 minecraft:air
 setblock 1 64 198 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "113"}','{"text": "botania"}','{"text": "pure_daisy"}','{"text": ""}']}}

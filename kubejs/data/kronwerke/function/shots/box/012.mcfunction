@@ -1,6 +1,6 @@
 # 012 farms/crops_harvester
 fill 34 63 31 47 63 46 minecraft:light_gray_concrete
-fill 34 64 31 47 79 31 minecraft:light_gray_concrete
+fill 34 64 31 51 79 31 minecraft:light_gray_concrete
 fill 34 64 31 34 79 46 minecraft:light_gray_concrete
 setblock 35 64 45 minecraft:air
 setblock 35 64 45 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "012"}','{"text": "farms"}','{"text": "crops_harvester"}','{"text": ""}']}}

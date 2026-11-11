@@ -1,6 +1,6 @@
 # 098 ars_apprentice/wixie
 fill 232 63 148 243 63 161 minecraft:light_gray_concrete
-fill 232 64 148 243 79 148 minecraft:light_gray_concrete
+fill 232 64 148 247 79 148 minecraft:light_gray_concrete
 fill 232 64 148 232 79 161 minecraft:light_gray_concrete
 setblock 233 64 160 minecraft:air
 setblock 233 64 160 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "098"}','{"text": "ars_apprentice"}','{"text": "wixie"}','{"text": ""}']}}

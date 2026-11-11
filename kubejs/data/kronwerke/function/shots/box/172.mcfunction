@@ -1,6 +1,6 @@
 # 172 immersive/cloche
 fill 135 63 273 146 63 286 minecraft:light_gray_concrete
-fill 135 64 273 146 79 273 minecraft:light_gray_concrete
+fill 135 64 273 150 79 273 minecraft:light_gray_concrete
 fill 135 64 273 135 79 286 minecraft:light_gray_concrete
 setblock 136 64 285 minecraft:air
 setblock 136 64 285 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "172"}','{"text": "immersive"}','{"text": "cloche"}','{"text": ""}']}}

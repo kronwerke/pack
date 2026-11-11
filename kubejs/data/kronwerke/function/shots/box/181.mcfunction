@@ -1,6 +1,6 @@
 # 181 industrial/welcome, extractor, latex_unit, plastic, dissolution
 fill 264 63 292 315 63 305 minecraft:light_gray_concrete
-fill 264 64 292 315 79 292 minecraft:light_gray_concrete
+fill 264 64 292 319 79 292 minecraft:light_gray_concrete
 fill 264 64 292 264 79 305 minecraft:light_gray_concrete
 setblock 265 64 304 minecraft:air
 setblock 265 64 304 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "181.1"}','{"text": "industrial"}','{"text": "welcome"}','{"text": ""}']}}

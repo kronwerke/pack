@@ -1,6 +1,6 @@
 # 161 hexerei/potion_brew
 fill 315 63 242 326 63 255 minecraft:light_gray_concrete
-fill 315 64 242 326 79 242 minecraft:light_gray_concrete
+fill 315 64 242 330 79 242 minecraft:light_gray_concrete
 fill 315 64 242 315 79 255 minecraft:light_gray_concrete
 setblock 316 64 254 minecraft:air
 setblock 316 64 254 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "161"}','{"text": "hexerei"}','{"text": "potion_brew"}','{"text": ""}']}}

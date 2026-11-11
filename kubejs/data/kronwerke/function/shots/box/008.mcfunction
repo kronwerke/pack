@@ -1,6 +1,6 @@
 # 008 start_here/m_gearbox, m_keystone
 fill 123 63 6 144 63 19 minecraft:light_gray_concrete
-fill 123 64 6 144 79 6 minecraft:light_gray_concrete
+fill 123 64 6 148 79 6 minecraft:light_gray_concrete
 fill 123 64 6 123 79 19 minecraft:light_gray_concrete
 setblock 124 64 18 minecraft:air
 setblock 124 64 18 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "008.1"}','{"text": "start_here"}','{"text": "m_gearbox"}','{"text": ""}']}}

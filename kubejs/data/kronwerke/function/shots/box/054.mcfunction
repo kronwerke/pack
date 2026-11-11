@@ -1,6 +1,6 @@
 # 054 create_trains/cargo
 fill 220 63 77 231 63 90 minecraft:light_gray_concrete
-fill 220 64 77 231 79 77 minecraft:light_gray_concrete
+fill 220 64 77 235 79 77 minecraft:light_gray_concrete
 fill 220 64 77 220 79 90 minecraft:light_gray_concrete
 setblock 221 64 89 minecraft:air
 setblock 221 64 89 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "054"}','{"text": "create_trains"}','{"text": "cargo"}','{"text": ""}']}}

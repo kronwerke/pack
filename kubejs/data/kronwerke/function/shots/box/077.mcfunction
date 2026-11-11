@@ -1,6 +1,6 @@
 # 077 mekanism_elite/polonium
 fill 328 63 108 339 63 121 minecraft:light_gray_concrete
-fill 328 64 108 339 79 108 minecraft:light_gray_concrete
+fill 328 64 108 343 79 108 minecraft:light_gray_concrete
 fill 328 64 108 328 79 121 minecraft:light_gray_concrete
 setblock 329 64 120 minecraft:air
 setblock 329 64 120 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "077"}','{"text": "mekanism_elite"}','{"text": "polonium"}','{"text": ""}']}}

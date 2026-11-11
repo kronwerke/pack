@@ -1,6 +1,6 @@
 # 064 mekanism_ores/tripling
 fill 117 63 108 132 63 121 minecraft:light_gray_concrete
-fill 117 64 108 132 79 108 minecraft:light_gray_concrete
+fill 117 64 108 136 79 108 minecraft:light_gray_concrete
 fill 117 64 108 117 79 121 minecraft:light_gray_concrete
 setblock 118 64 120 minecraft:air
 setblock 118 64 120 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "064"}','{"text": "mekanism_ores"}','{"text": "tripling"}','{"text": ""}']}}

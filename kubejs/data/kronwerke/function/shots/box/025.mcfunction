@@ -1,6 +1,6 @@
 # 025 create/mixer
 fill 87 63 52 98 63 65 minecraft:light_gray_concrete
-fill 87 64 52 98 79 52 minecraft:light_gray_concrete
+fill 87 64 52 102 79 52 minecraft:light_gray_concrete
 fill 87 64 52 87 79 65 minecraft:light_gray_concrete
 setblock 88 64 64 minecraft:air
 setblock 88 64 64 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "025"}','{"text": "create"}','{"text": "mixer"}','{"text": ""}']}}

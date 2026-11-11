@@ -1,6 +1,6 @@
 # 016 farms/lava_seeds
 fill 98 63 31 109 63 44 minecraft:light_gray_concrete
-fill 98 64 31 109 79 31 minecraft:light_gray_concrete
+fill 98 64 31 113 79 31 minecraft:light_gray_concrete
 fill 98 64 31 98 79 44 minecraft:light_gray_concrete
 setblock 99 64 43 minecraft:air
 setblock 99 64 43 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "016"}','{"text": "farms"}','{"text": "lava_seeds"}','{"text": ""}']}}

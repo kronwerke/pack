@@ -1,6 +1,6 @@
 # 059 mekanism/dynamic_tank
 fill 30 63 108 41 63 121 minecraft:light_gray_concrete
-fill 30 64 108 41 79 108 minecraft:light_gray_concrete
+fill 30 64 108 45 79 108 minecraft:light_gray_concrete
 fill 30 64 108 30 79 121 minecraft:light_gray_concrete
 setblock 31 64 120 minecraft:air
 setblock 31 64 120 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "059"}','{"text": "mekanism"}','{"text": "dynamic_tank"}','{"text": ""}']}}

@@ -1,6 +1,6 @@
 # 157 hexerei/cauldron
 fill 255 63 242 266 63 255 minecraft:light_gray_concrete
-fill 255 64 242 266 79 242 minecraft:light_gray_concrete
+fill 255 64 242 270 79 242 minecraft:light_gray_concrete
 fill 255 64 242 255 79 255 minecraft:light_gray_concrete
 setblock 256 64 254 minecraft:air
 setblock 256 64 254 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "157"}','{"text": "hexerei"}','{"text": "cauldron"}','{"text": ""}']}}

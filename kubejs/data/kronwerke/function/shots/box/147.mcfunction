@@ -1,6 +1,6 @@
 # 147 occultism/satchel
 fill 105 63 242 116 63 255 minecraft:light_gray_concrete
-fill 105 64 242 116 79 242 minecraft:light_gray_concrete
+fill 105 64 242 120 79 242 minecraft:light_gray_concrete
 fill 105 64 242 105 79 255 minecraft:light_gray_concrete
 setblock 106 64 254 minecraft:air
 setblock 106 64 254 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "147"}','{"text": "occultism"}','{"text": "satchel"}','{"text": ""}']}}

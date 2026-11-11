@@ -1,6 +1,6 @@
 # 167 immersive/coke_oven, creosote, pump
 fill 30 63 273 61 63 286 minecraft:light_gray_concrete
-fill 30 64 273 61 79 273 minecraft:light_gray_concrete
+fill 30 64 273 65 79 273 minecraft:light_gray_concrete
 fill 30 64 273 30 79 286 minecraft:light_gray_concrete
 setblock 31 64 285 minecraft:air
 setblock 31 64 285 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "167.1"}','{"text": "immersive"}','{"text": "coke_oven"}','{"text": ""}']}}

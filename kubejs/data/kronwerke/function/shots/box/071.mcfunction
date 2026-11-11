@@ -1,6 +1,6 @@
 # 071 mekanism_advanced/evap
 fill 238 63 108 249 63 121 minecraft:light_gray_concrete
-fill 238 64 108 249 79 108 minecraft:light_gray_concrete
+fill 238 64 108 253 79 108 minecraft:light_gray_concrete
 fill 238 64 108 238 79 121 minecraft:light_gray_concrete
 setblock 239 64 120 minecraft:air
 setblock 239 64 120 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "071"}','{"text": "mekanism_advanced"}','{"text": "evap"}','{"text": ""}']}}

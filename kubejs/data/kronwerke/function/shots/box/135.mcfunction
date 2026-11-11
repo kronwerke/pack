@@ -1,6 +1,6 @@
 # 135 alfheim/open
 fill 374 63 186 389 63 201 minecraft:light_gray_concrete
-fill 374 64 186 389 79 186 minecraft:light_gray_concrete
+fill 374 64 186 393 79 186 minecraft:light_gray_concrete
 fill 374 64 186 374 79 201 minecraft:light_gray_concrete
 setblock 375 64 200 minecraft:air
 setblock 375 64 200 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "135"}','{"text": "alfheim"}','{"text": "open"}','{"text": ""}']}}

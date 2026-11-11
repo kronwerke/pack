@@ -1,6 +1,6 @@
 # 128 botania_runes/rune_core
 fill 233 63 186 244 63 199 minecraft:light_gray_concrete
-fill 233 64 186 244 79 186 minecraft:light_gray_concrete
+fill 233 64 186 248 79 186 minecraft:light_gray_concrete
 fill 233 64 186 233 79 199 minecraft:light_gray_concrete
 setblock 234 64 198 minecraft:air
 setblock 234 64 198 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "128"}','{"text": "botania_runes"}','{"text": "rune_core"}','{"text": ""}']}}

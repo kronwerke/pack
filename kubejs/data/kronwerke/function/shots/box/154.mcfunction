@@ -1,6 +1,6 @@
 # 154 occultism_afrit/reinforced_deepslate
 fill 210 63 242 221 63 255 minecraft:light_gray_concrete
-fill 210 64 242 221 79 242 minecraft:light_gray_concrete
+fill 210 64 242 225 79 242 minecraft:light_gray_concrete
 fill 210 64 242 210 79 255 minecraft:light_gray_concrete
 setblock 211 64 254 minecraft:air
 setblock 211 64 254 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "154"}','{"text": "occultism_afrit"}','{"text": "reinforced_deepslate"}','{"text": ""}']}}

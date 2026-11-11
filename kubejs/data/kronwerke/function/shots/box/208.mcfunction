@@ -1,6 +1,6 @@
 # 208 deeper_darker/portal, arrival, deeplands, echoing_forest, blooming_caverns, overcast_columns, temple, transmitter, resonarium, stalker, echo_shard
 fill 0 63 439 113 63 452 minecraft:light_gray_concrete
-fill 0 64 439 113 79 439 minecraft:light_gray_concrete
+fill 0 64 439 117 79 439 minecraft:light_gray_concrete
 fill 0 64 439 0 79 452 minecraft:light_gray_concrete
 setblock 1 64 451 minecraft:air
 setblock 1 64 451 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "208.1"}','{"text": "deeper_darker"}','{"text": "portal"}','{"text": ""}']}}

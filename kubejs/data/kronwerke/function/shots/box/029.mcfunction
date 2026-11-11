@@ -1,6 +1,6 @@
 # 029 create/belt
 fill 153 63 52 164 63 65 minecraft:light_gray_concrete
-fill 153 64 52 164 79 52 minecraft:light_gray_concrete
+fill 153 64 52 168 79 52 minecraft:light_gray_concrete
 fill 153 64 52 153 79 65 minecraft:light_gray_concrete
 setblock 154 64 64 minecraft:air
 setblock 154 64 64 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "029"}','{"text": "create"}','{"text": "belt"}','{"text": ""}']}}

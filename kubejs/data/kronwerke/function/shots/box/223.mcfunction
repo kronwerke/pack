@@ -1,6 +1,6 @@
 # 223 malum/spirits, altar, obelisk, crucible, healing_rite, quickening
 fill 290 63 510 351 63 523 minecraft:light_gray_concrete
-fill 290 64 510 351 79 510 minecraft:light_gray_concrete
+fill 290 64 510 355 79 510 minecraft:light_gray_concrete
 fill 290 64 510 290 79 523 minecraft:light_gray_concrete
 setblock 291 64 522 minecraft:air
 setblock 291 64 522 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "223.1"}','{"text": "malum"}','{"text": "spirits"}','{"text": ""}']}}

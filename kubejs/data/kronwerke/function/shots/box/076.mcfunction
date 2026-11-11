@@ -1,6 +1,6 @@
 # 076 mekanism_elite/qio_dashboard
 fill 313 63 108 324 63 121 minecraft:light_gray_concrete
-fill 313 64 108 324 79 108 minecraft:light_gray_concrete
+fill 313 64 108 328 79 108 minecraft:light_gray_concrete
 fill 313 64 108 313 79 121 minecraft:light_gray_concrete
 setblock 314 64 120 minecraft:air
 setblock 314 64 120 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "076"}','{"text": "mekanism_elite"}','{"text": "qio_dashboard"}','{"text": ""}']}}

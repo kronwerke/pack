@@ -110,8 +110,16 @@ class Cell:
         self.cmds = []
         self.notes = []
         self.pts = []      # what the camera has to frame, relative (x, y, z) corners
+        self.focused = False
+
+    def focus(self, x1, y1, z1, x2, y2, z2):
+        """Frame only this part of the scene (a barrel at the foot of a tall obelisk)."""
+        self.pts = [(x1, y1, z1), (x2, y2, z2)]
+        self.focused = True
 
     def _see(self, x1, y1, z1, x2=None, y2=None, z2=None):
+        if self.focused:
+            return
         self.pts.append((x1, y1, z1))
         self.pts.append((x1 if x2 is None else x2, y1 if y2 is None else y2, z1 if z2 is None else z2))
 
@@ -282,7 +290,8 @@ def build(check=False):
         cmds = box["cmds"]
         cmds.append(f"# {n:03d} {ch}/{', '.join(qs)}")
         cmds.append(f"fill {x} {FLOOR_Y} {z} {x + bw} {FLOOR_Y} {z + bd} minecraft:light_gray_concrete")
-        cmds.append(f"fill {x} {FLOOR_Y + 1} {z} {x + bw} {FLOOR_Y + WALL_H} {z} minecraft:light_gray_concrete")
+        # the north wall runs on over the gap to the next box, so no sky shows between boxes
+        cmds.append(f"fill {x} {FLOOR_Y + 1} {z} {x + bw + GAP} {FLOOR_Y + WALL_H} {z} minecraft:light_gray_concrete")
         cmds.append(f"fill {x} {FLOOR_Y + 1} {z} {x} {FLOOR_Y + WALL_H} {z + bd} minecraft:light_gray_concrete")
         cx = x + 1
         for i, (k, spec, w, d) in enumerate(cells):

@@ -1,6 +1,6 @@
 # 004 start_here/s_locked
 fill 63 63 6 74 63 19 minecraft:light_gray_concrete
-fill 63 64 6 74 79 6 minecraft:light_gray_concrete
+fill 63 64 6 78 79 6 minecraft:light_gray_concrete
 fill 63 64 6 63 79 19 minecraft:light_gray_concrete
 setblock 64 64 18 minecraft:air
 setblock 64 64 18 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "004"}','{"text": "start_here"}','{"text": "s_locked"}','{"text": ""}']}}

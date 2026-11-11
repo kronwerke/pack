@@ -1,6 +1,6 @@
 # 206 exploration/e_compass, e_frame, e_enter, e_veins, e_lootr, e_campsite, e_dnt_tavern, e_arise_sky, e_tnt_village, e_yung_dungeon
 fill 200 63 420 301 63 433 minecraft:light_gray_concrete
-fill 200 64 420 301 79 420 minecraft:light_gray_concrete
+fill 200 64 420 305 79 420 minecraft:light_gray_concrete
 fill 200 64 420 200 79 433 minecraft:light_gray_concrete
 setblock 201 64 432 minecraft:air
 setblock 201 64 432 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "206.1"}','{"text": "exploration"}','{"text": "e_compass"}','{"text": ""}']}}

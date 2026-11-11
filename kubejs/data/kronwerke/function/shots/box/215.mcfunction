@@ -1,6 +1,6 @@
 # 215 nuclearcraft/reactor, irradiation, geiger
 fill 116 63 485 149 63 500 minecraft:light_gray_concrete
-fill 116 64 485 149 79 485 minecraft:light_gray_concrete
+fill 116 64 485 153 79 485 minecraft:light_gray_concrete
 fill 116 64 485 116 79 500 minecraft:light_gray_concrete
 setblock 117 64 499 minecraft:air
 setblock 117 64 499 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "215.1"}','{"text": "nuclearcraft"}','{"text": "reactor"}','{"text": ""}']}}

@@ -1,6 +1,6 @@
 # 195 list_transport/belt, packages, create_tank, hose_pulley, ie_wire, mek_transporter, vault, drawers
 fill 336 63 355 417 63 368 minecraft:light_gray_concrete
-fill 336 64 355 417 79 355 minecraft:light_gray_concrete
+fill 336 64 355 421 79 355 minecraft:light_gray_concrete
 fill 336 64 355 336 79 368 minecraft:light_gray_concrete
 setblock 337 64 367 minecraft:air
 setblock 337 64 367 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "195.1"}','{"text": "list_transport"}','{"text": "belt"}','{"text": ""}']}}

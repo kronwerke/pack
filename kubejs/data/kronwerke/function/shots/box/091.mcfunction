@@ -1,6 +1,6 @@
 # 091 ars_nouveau/starbuncle_work
 fill 115 63 148 126 63 161 minecraft:light_gray_concrete
-fill 115 64 148 126 79 148 minecraft:light_gray_concrete
+fill 115 64 148 130 79 148 minecraft:light_gray_concrete
 fill 115 64 148 115 79 161 minecraft:light_gray_concrete
 setblock 116 64 160 minecraft:air
 setblock 116 64 160 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "091"}','{"text": "ars_nouveau"}','{"text": "starbuncle_work"}','{"text": ""}']}}

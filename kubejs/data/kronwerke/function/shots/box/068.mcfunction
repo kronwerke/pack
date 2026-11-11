@@ -1,6 +1,6 @@
 # 068 mekanism_ores/foundry
 fill 193 63 108 204 63 121 minecraft:light_gray_concrete
-fill 193 64 108 204 79 108 minecraft:light_gray_concrete
+fill 193 64 108 208 79 108 minecraft:light_gray_concrete
 fill 193 64 108 193 79 121 minecraft:light_gray_concrete
 setblock 194 64 120 minecraft:air
 setblock 194 64 120 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "068"}','{"text": "mekanism_ores"}','{"text": "foundry"}','{"text": ""}']}}

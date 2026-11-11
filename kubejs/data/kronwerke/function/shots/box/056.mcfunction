@@ -1,6 +1,6 @@
 # 056 create_trains/obelisk_line
 fill 250 63 77 267 63 102 minecraft:light_gray_concrete
-fill 250 64 77 267 79 77 minecraft:light_gray_concrete
+fill 250 64 77 271 79 77 minecraft:light_gray_concrete
 fill 250 64 77 250 79 102 minecraft:light_gray_concrete
 setblock 251 64 101 minecraft:air
 setblock 251 64 101 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "056"}','{"text": "create_trains"}','{"text": "obelisk_line"}','{"text": ""}']}}

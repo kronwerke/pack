@@ -1,6 +1,6 @@
 # 198 flux_networks/first_link
 fill 118 63 376 133 63 389 minecraft:light_gray_concrete
-fill 118 64 376 133 79 376 minecraft:light_gray_concrete
+fill 118 64 376 137 79 376 minecraft:light_gray_concrete
 fill 118 64 376 118 79 389 minecraft:light_gray_concrete
 setblock 119 64 388 minecraft:air
 setblock 119 64 388 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "198"}','{"text": "flux_networks"}','{"text": "first_link"}','{"text": ""}']}}

@@ -1,6 +1,6 @@
 # 217 mahou_tsukai/blood, cloth, fay_sight, marble_visit, staff
 fill 198 63 485 249 63 498 minecraft:light_gray_concrete
-fill 198 64 485 249 79 485 minecraft:light_gray_concrete
+fill 198 64 485 253 79 485 minecraft:light_gray_concrete
 fill 198 64 485 198 79 498 minecraft:light_gray_concrete
 setblock 199 64 497 minecraft:air
 setblock 199 64 497 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "217.1"}','{"text": "mahou_tsukai"}','{"text": "blood"}','{"text": ""}']}}

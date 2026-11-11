@@ -1,6 +1,6 @@
 # 203 hostile_networks/deep_learner, learner_gui, sim_chamber, scaling, loot_fab, data_center
 fill 0 63 401 61 63 414 minecraft:light_gray_concrete
-fill 0 64 401 61 79 401 minecraft:light_gray_concrete
+fill 0 64 401 65 79 401 minecraft:light_gray_concrete
 fill 0 64 401 0 79 414 minecraft:light_gray_concrete
 setblock 1 64 413 minecraft:air
 setblock 1 64 413 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "203.1"}','{"text": "hostile_networks"}','{"text": "deep_learner"}','{"text": ""}']}}

@@ -1,6 +1,6 @@
 # 107 ars_master/charged_certus
 fill 367 63 148 378 63 161 minecraft:light_gray_concrete
-fill 367 64 148 378 79 148 minecraft:light_gray_concrete
+fill 367 64 148 382 79 148 minecraft:light_gray_concrete
 fill 367 64 148 367 79 161 minecraft:light_gray_concrete
 setblock 368 64 160 minecraft:air
 setblock 368 64 160 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "107"}','{"text": "ars_master"}','{"text": "charged_certus"}','{"text": ""}']}}

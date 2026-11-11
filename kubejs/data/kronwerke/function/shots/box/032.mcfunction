@@ -1,6 +1,6 @@
 # 032 create/cobble_gen
 fill 202 63 52 213 63 65 minecraft:light_gray_concrete
-fill 202 64 52 213 79 52 minecraft:light_gray_concrete
+fill 202 64 52 217 79 52 minecraft:light_gray_concrete
 fill 202 64 52 202 79 65 minecraft:light_gray_concrete
 setblock 203 64 64 minecraft:air
 setblock 203 64 64 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "032"}','{"text": "create"}','{"text": "cobble_gen"}','{"text": ""}']}}

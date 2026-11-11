@@ -1,6 +1,6 @@
 # 165 immersive/welcome
 fill 0 63 273 11 63 286 minecraft:light_gray_concrete
-fill 0 64 273 11 79 273 minecraft:light_gray_concrete
+fill 0 64 273 15 79 273 minecraft:light_gray_concrete
 fill 0 64 273 0 79 286 minecraft:light_gray_concrete
 setblock 1 64 285 minecraft:air
 setblock 1 64 285 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "165"}','{"text": "immersive"}','{"text": "welcome"}','{"text": ""}']}}

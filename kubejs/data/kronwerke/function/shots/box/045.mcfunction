@@ -1,6 +1,6 @@
 # 045 create_brass/alternator
 fill 45 63 77 58 63 90 minecraft:light_gray_concrete
-fill 45 64 77 58 79 77 minecraft:light_gray_concrete
+fill 45 64 77 62 79 77 minecraft:light_gray_concrete
 fill 45 64 77 45 79 90 minecraft:light_gray_concrete
 setblock 46 64 89 minecraft:air
 setblock 46 64 89 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "045"}','{"text": "create_brass"}','{"text": "alternator"}','{"text": ""}']}}

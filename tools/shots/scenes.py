@@ -159,6 +159,7 @@ def _(b):
     b.b(7, 0, 12, "kronwerke:obelisk_intake")
     b.b(7, 1, 12, "minecraft:hopper[facing=down]")
     b.c(7, 2, 12, [("minecraft:cobblestone", 64)] * 3)
+    b.focus(4, 0, 9, 10, 3, 13)
 
 
 kit("start_here/s_locked", blocks=["minecraft:crafting_table"],
@@ -169,8 +170,8 @@ kit("start_here/s_locked", blocks=["minecraft:crafting_table"],
 @scene("start_here/m_goldleaf")
 def _(b):
     b.f(3, 0, 3, 3, 4, 3, "minecraft:oak_log")
-    b.f(1, 3, 1, 5, 4, 5, "naturesaura:golden_leaves")
-    b.f(2, 5, 2, 4, 5, 4, "naturesaura:golden_leaves")
+    b.f(1, 3, 1, 5, 4, 5, "naturesaura:golden_leaves[stage=3,persistent=true]")
+    b.f(2, 5, 2, 4, 5, 4, "naturesaura:golden_leaves[stage=3,persistent=true]")
     b.b(3, 3, 3, "minecraft:oak_log")
     b.b(3, 4, 3, "minecraft:oak_log")
 

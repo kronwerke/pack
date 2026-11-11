@@ -1,6 +1,6 @@
 # 144 occultism/hedyrin
 fill 60 63 242 71 63 255 minecraft:light_gray_concrete
-fill 60 64 242 71 79 242 minecraft:light_gray_concrete
+fill 60 64 242 75 79 242 minecraft:light_gray_concrete
 fill 60 64 242 60 79 255 minecraft:light_gray_concrete
 setblock 61 64 254 minecraft:air
 setblock 61 64 254 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "144"}','{"text": "occultism"}','{"text": "hedyrin"}','{"text": ""}']}}

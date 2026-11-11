@@ -1,6 +1,6 @@
 # 216 quarries/first_dig, quarry, destroyer, coe_netherite
 fill 153 63 485 194 63 498 minecraft:light_gray_concrete
-fill 153 64 485 194 79 485 minecraft:light_gray_concrete
+fill 153 64 485 198 79 485 minecraft:light_gray_concrete
 fill 153 64 485 153 79 498 minecraft:light_gray_concrete
 setblock 154 64 497 minecraft:air
 setblock 154 64 497 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "216.1"}','{"text": "quarries"}','{"text": "first_dig"}','{"text": ""}']}}

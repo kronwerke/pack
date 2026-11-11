@@ -1,6 +1,6 @@
 # 100 ars_apprentice/turret
 fill 262 63 148 273 63 161 minecraft:light_gray_concrete
-fill 262 64 148 273 79 148 minecraft:light_gray_concrete
+fill 262 64 148 277 79 148 minecraft:light_gray_concrete
 fill 262 64 148 262 79 161 minecraft:light_gray_concrete
 setblock 263 64 160 minecraft:air
 setblock 263 64 160 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "100"}','{"text": "ars_apprentice"}','{"text": "turret"}','{"text": ""}']}}

@@ -1,6 +1,6 @@
 # 078 mekanism_elite/fusion
 fill 343 63 108 356 63 123 minecraft:light_gray_concrete
-fill 343 64 108 356 79 108 minecraft:light_gray_concrete
+fill 343 64 108 360 79 108 minecraft:light_gray_concrete
 fill 343 64 108 343 79 123 minecraft:light_gray_concrete
 setblock 344 64 122 minecraft:air
 setblock 344 64 122 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "078"}','{"text": "mekanism_elite"}','{"text": "fusion"}','{"text": ""}']}}

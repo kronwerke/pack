@@ -1,6 +1,6 @@
 # 099 ars_apprentice/potions
 fill 247 63 148 258 63 161 minecraft:light_gray_concrete
-fill 247 64 148 258 79 148 minecraft:light_gray_concrete
+fill 247 64 148 262 79 148 minecraft:light_gray_concrete
 fill 247 64 148 247 79 161 minecraft:light_gray_concrete
 setblock 248 64 160 minecraft:air
 setblock 248 64 160 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "099"}','{"text": "ars_apprentice"}','{"text": "potions"}','{"text": ""}']}}

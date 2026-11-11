@@ -1,6 +1,6 @@
 # 207 aether/portal, arrive, altar, freezer, incubator, ride, gloves, bronze, slider, silver, queen
 fill 305 63 420 416 63 433 minecraft:light_gray_concrete
-fill 305 64 420 416 79 420 minecraft:light_gray_concrete
+fill 305 64 420 420 79 420 minecraft:light_gray_concrete
 fill 305 64 420 305 79 433 minecraft:light_gray_concrete
 setblock 306 64 432 minecraft:air
 setblock 306 64 432 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "207.1"}','{"text": "aether"}','{"text": "portal"}','{"text": ""}']}}

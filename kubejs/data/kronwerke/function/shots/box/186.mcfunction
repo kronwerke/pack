@@ -1,6 +1,6 @@
 # 186 oritech/cores, pipes, plastic, laser, atomic_forge, destroyer, fragment_forge, fragment, addons, addon_quarry, addon_crop, exo, reactor
 fill 0 63 336 131 63 349 minecraft:light_gray_concrete
-fill 0 64 336 131 79 336 minecraft:light_gray_concrete
+fill 0 64 336 135 79 336 minecraft:light_gray_concrete
 fill 0 64 336 0 79 349 minecraft:light_gray_concrete
 setblock 1 64 348 minecraft:air
 setblock 1 64 348 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "186.1"}','{"text": "oritech"}','{"text": "cores"}','{"text": ""}']}}

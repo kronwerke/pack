@@ -1,6 +1,6 @@
 # 040 create_brass/crushing_wheel
 fill 354 63 52 367 63 65 minecraft:light_gray_concrete
-fill 354 64 52 367 79 52 minecraft:light_gray_concrete
+fill 354 64 52 371 79 52 minecraft:light_gray_concrete
 fill 354 64 52 354 79 65 minecraft:light_gray_concrete
 setblock 355 64 64 minecraft:air
 setblock 355 64 64 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "040"}','{"text": "create_brass"}','{"text": "crushing_wheel"}','{"text": ""}']}}

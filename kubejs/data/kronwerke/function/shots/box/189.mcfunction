@@ -1,6 +1,6 @@
 # 189 ae2/channels
 fill 0 63 355 15 63 368 minecraft:light_gray_concrete
-fill 0 64 355 15 79 355 minecraft:light_gray_concrete
+fill 0 64 355 19 79 355 minecraft:light_gray_concrete
 fill 0 64 355 0 79 368 minecraft:light_gray_concrete
 setblock 1 64 367 minecraft:air
 setblock 1 64 367 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "189"}','{"text": "ae2"}','{"text": "channels"}','{"text": ""}']}}

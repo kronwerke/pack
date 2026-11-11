@@ -1,6 +1,6 @@
 # 058 mekanism/configurator
 fill 15 63 108 26 63 121 minecraft:light_gray_concrete
-fill 15 64 108 26 79 108 minecraft:light_gray_concrete
+fill 15 64 108 30 79 108 minecraft:light_gray_concrete
 fill 15 64 108 15 79 121 minecraft:light_gray_concrete
 setblock 16 64 120 minecraft:air
 setblock 16 64 120 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "058"}','{"text": "mekanism"}','{"text": "configurator"}','{"text": ""}']}}

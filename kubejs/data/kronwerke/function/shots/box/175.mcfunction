@@ -1,6 +1,6 @@
 # 175 immersive/tank, silo, shelf
 fill 254 63 273 285 63 286 minecraft:light_gray_concrete
-fill 254 64 273 285 79 273 minecraft:light_gray_concrete
+fill 254 64 273 289 79 273 minecraft:light_gray_concrete
 fill 254 64 273 254 79 286 minecraft:light_gray_concrete
 setblock 255 64 285 minecraft:air
 setblock 255 64 285 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "175.1"}','{"text": "immersive"}','{"text": "tank"}','{"text": ""}']}}

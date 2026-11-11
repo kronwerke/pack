@@ -1,6 +1,6 @@
 # 017 farms/source_berries
 fill 113 63 31 126 63 44 minecraft:light_gray_concrete
-fill 113 64 31 126 79 31 minecraft:light_gray_concrete
+fill 113 64 31 130 79 31 minecraft:light_gray_concrete
 fill 113 64 31 113 79 44 minecraft:light_gray_concrete
 setblock 114 64 43 minecraft:air
 setblock 114 64 43 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "017"}','{"text": "farms"}','{"text": "source_berries"}','{"text": ""}']}}

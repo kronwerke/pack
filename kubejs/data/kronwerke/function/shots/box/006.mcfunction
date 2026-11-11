@@ -1,6 +1,6 @@
 # 006 start_here/m_ritual
 fill 93 63 6 104 63 19 minecraft:light_gray_concrete
-fill 93 64 6 104 79 6 minecraft:light_gray_concrete
+fill 93 64 6 108 79 6 minecraft:light_gray_concrete
 fill 93 64 6 93 79 19 minecraft:light_gray_concrete
 setblock 94 64 18 minecraft:air
 setblock 94 64 18 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "006"}','{"text": "start_here"}','{"text": "m_ritual"}','{"text": ""}']}}

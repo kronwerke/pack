@@ -1,6 +1,6 @@
 # 196 list_power/steam_engine, mek_heat, ie_thermo, alternator, powah_reactor, flux, mekmm_large, nc_passive, draconic_core
 fill 0 63 376 99 63 395 minecraft:light_gray_concrete
-fill 0 64 376 99 79 376 minecraft:light_gray_concrete
+fill 0 64 376 103 79 376 minecraft:light_gray_concrete
 fill 0 64 376 0 79 395 minecraft:light_gray_concrete
 setblock 1 64 394 minecraft:air
 setblock 1 64 394 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "196.1"}','{"text": "list_power"}','{"text": "steam_engine"}','{"text": ""}']}}

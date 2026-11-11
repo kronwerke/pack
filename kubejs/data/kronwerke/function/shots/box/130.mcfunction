@@ -1,6 +1,6 @@
 # 130 gaia/fight
 fill 267 63 186 282 63 203 minecraft:light_gray_concrete
-fill 267 64 186 282 79 186 minecraft:light_gray_concrete
+fill 267 64 186 286 79 186 minecraft:light_gray_concrete
 fill 267 64 186 267 79 203 minecraft:light_gray_concrete
 setblock 268 64 202 minecraft:air
 setblock 268 64 202 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "130"}','{"text": "gaia"}','{"text": "fight"}','{"text": ""}']}}

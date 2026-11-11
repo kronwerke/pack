@@ -1,6 +1,6 @@
 # 148 occultism/djinni_familiars
 fill 120 63 242 131 63 255 minecraft:light_gray_concrete
-fill 120 64 242 131 79 242 minecraft:light_gray_concrete
+fill 120 64 242 135 79 242 minecraft:light_gray_concrete
 fill 120 64 242 120 79 255 minecraft:light_gray_concrete
 setblock 121 64 254 minecraft:air
 setblock 121 64 254 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "148"}','{"text": "occultism"}','{"text": "djinni_familiars"}','{"text": ""}']}}

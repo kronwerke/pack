@@ -1,6 +1,6 @@
 # 031 create/stock_ticker
 fill 187 63 52 198 63 65 minecraft:light_gray_concrete
-fill 187 64 52 198 79 52 minecraft:light_gray_concrete
+fill 187 64 52 202 79 52 minecraft:light_gray_concrete
 fill 187 64 52 187 79 65 minecraft:light_gray_concrete
 setblock 188 64 64 minecraft:air
 setblock 188 64 64 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "031"}','{"text": "create"}','{"text": "stock_ticker"}','{"text": ""}']}}

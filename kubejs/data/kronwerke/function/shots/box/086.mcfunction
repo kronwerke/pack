@@ -1,6 +1,6 @@
 # 086 ars_nouveau/chamber_auto
 fill 40 63 148 51 63 161 minecraft:light_gray_concrete
-fill 40 64 148 51 79 148 minecraft:light_gray_concrete
+fill 40 64 148 55 79 148 minecraft:light_gray_concrete
 fill 40 64 148 40 79 161 minecraft:light_gray_concrete
 setblock 41 64 160 minecraft:air
 setblock 41 64 160 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "086"}','{"text": "ars_nouveau"}','{"text": "chamber_auto"}','{"text": ""}']}}

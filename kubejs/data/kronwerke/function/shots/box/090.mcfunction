@@ -1,6 +1,6 @@
 # 090 ars_nouveau/earth_essence
 fill 100 63 148 111 63 161 minecraft:light_gray_concrete
-fill 100 64 148 111 79 148 minecraft:light_gray_concrete
+fill 100 64 148 115 79 148 minecraft:light_gray_concrete
 fill 100 64 148 100 79 161 minecraft:light_gray_concrete
 setblock 101 64 160 minecraft:air
 setblock 101 64 160 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "090"}','{"text": "ars_nouveau"}','{"text": "earth_essence"}','{"text": ""}']}}

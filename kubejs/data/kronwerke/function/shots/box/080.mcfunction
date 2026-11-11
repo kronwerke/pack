@@ -1,6 +1,6 @@
 # 080 antimatter/reactor
 fill 375 63 108 386 63 121 minecraft:light_gray_concrete
-fill 375 64 108 386 79 108 minecraft:light_gray_concrete
+fill 375 64 108 390 79 108 minecraft:light_gray_concrete
 fill 375 64 108 375 79 121 minecraft:light_gray_concrete
 setblock 376 64 120 minecraft:air
 setblock 376 64 120 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "080"}','{"text": "antimatter"}','{"text": "reactor"}','{"text": ""}']}}

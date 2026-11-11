@@ -1,6 +1,6 @@
 # 163 hexerei/crow
 fill 345 63 242 356 63 255 minecraft:light_gray_concrete
-fill 345 64 242 356 79 242 minecraft:light_gray_concrete
+fill 345 64 242 360 79 242 minecraft:light_gray_concrete
 fill 345 64 242 345 79 255 minecraft:light_gray_concrete
 setblock 346 64 254 minecraft:air
 setblock 346 64 254 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "163"}','{"text": "hexerei"}','{"text": "crow"}','{"text": ""}']}}

@@ -1,6 +1,6 @@
 # 182 industrial/frame_simple, frame_adv, frame_supreme
 fill 319 63 292 350 63 305 minecraft:light_gray_concrete
-fill 319 64 292 350 79 292 minecraft:light_gray_concrete
+fill 319 64 292 354 79 292 minecraft:light_gray_concrete
 fill 319 64 292 319 79 305 minecraft:light_gray_concrete
 setblock 320 64 304 minecraft:air
 setblock 320 64 304 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "182.1"}','{"text": "industrial"}','{"text": "frame_simple"}','{"text": ""}']}}

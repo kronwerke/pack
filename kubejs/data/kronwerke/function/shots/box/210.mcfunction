@@ -1,6 +1,6 @@
 # 210 eternal_starlight/orb, portal, starfire, desert, forge, golem, garden, monstrosity
 fill 192 63 439 275 63 454 minecraft:light_gray_concrete
-fill 192 64 439 275 79 439 minecraft:light_gray_concrete
+fill 192 64 439 279 79 439 minecraft:light_gray_concrete
 fill 192 64 439 192 79 454 minecraft:light_gray_concrete
 setblock 193 64 453 minecraft:air
 setblock 193 64 453 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "210.1"}','{"text": "eternal_starlight"}','{"text": "orb"}','{"text": ""}']}}

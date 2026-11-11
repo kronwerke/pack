@@ -1,6 +1,6 @@
 # 202 pneumaticcraft_advanced/first_run, electrostatic, thermal, adv_air, first_program, frames, security_station, spawner_extractor, pressurized_spawner
 fill 302 63 376 393 63 389 minecraft:light_gray_concrete
-fill 302 64 376 393 79 376 minecraft:light_gray_concrete
+fill 302 64 376 397 79 376 minecraft:light_gray_concrete
 fill 302 64 376 302 79 389 minecraft:light_gray_concrete
 setblock 303 64 388 minecraft:air
 setblock 303 64 388 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "202.1"}','{"text": "pneumaticcraft_advanced"}','{"text": "first_run"}','{"text": ""}']}}

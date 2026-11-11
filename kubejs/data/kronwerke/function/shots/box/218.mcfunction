@@ -1,6 +1,6 @@
 # 218 finale/fight_info, f_crystals, tech
 fill 253 63 485 284 63 498 minecraft:light_gray_concrete
-fill 253 64 485 284 79 485 minecraft:light_gray_concrete
+fill 253 64 485 288 79 485 minecraft:light_gray_concrete
 fill 253 64 485 253 79 498 minecraft:light_gray_concrete
 setblock 254 64 497 minecraft:air
 setblock 254 64 497 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "218.1"}','{"text": "finale"}','{"text": "fight_info"}','{"text": ""}']}}

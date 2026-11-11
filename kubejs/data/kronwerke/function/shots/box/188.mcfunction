@@ -1,6 +1,6 @@
 # 188 enderio/grains, capacitor, smelter, cap_bank, conduits, filter, sag_mill, vial, soul_binder, vacuum_chest, enchanter
 fill 230 63 336 341 63 349 minecraft:light_gray_concrete
-fill 230 64 336 341 79 336 minecraft:light_gray_concrete
+fill 230 64 336 345 79 336 minecraft:light_gray_concrete
 fill 230 64 336 230 79 349 minecraft:light_gray_concrete
 setblock 231 64 348 minecraft:air
 setblock 231 64 348 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "188.1"}','{"text": "enderio"}','{"text": "grains"}','{"text": ""}']}}

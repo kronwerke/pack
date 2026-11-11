@@ -1,6 +1,6 @@
 # 164 hexerei/witch_house
 fill 360 63 242 383 63 267 minecraft:light_gray_concrete
-fill 360 64 242 383 79 242 minecraft:light_gray_concrete
+fill 360 64 242 387 79 242 minecraft:light_gray_concrete
 fill 360 64 242 360 79 267 minecraft:light_gray_concrete
 setblock 361 64 266 minecraft:air
 setblock 361 64 266 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "164"}','{"text": "hexerei"}','{"text": "witch_house"}','{"text": ""}']}}

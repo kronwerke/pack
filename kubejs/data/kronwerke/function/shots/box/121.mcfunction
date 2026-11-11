@@ -1,6 +1,6 @@
 # 121 botania_runes/ritual
 fill 126 63 186 137 63 199 minecraft:light_gray_concrete
-fill 126 64 186 137 79 186 minecraft:light_gray_concrete
+fill 126 64 186 141 79 186 minecraft:light_gray_concrete
 fill 126 64 186 126 79 199 minecraft:light_gray_concrete
 setblock 127 64 198 minecraft:air
 setblock 127 64 198 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "121"}','{"text": "botania_runes"}','{"text": "ritual"}','{"text": ""}']}}

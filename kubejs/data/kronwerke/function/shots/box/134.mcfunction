@@ -1,6 +1,6 @@
 # 134 alfheim/frame
 fill 355 63 186 370 63 201 minecraft:light_gray_concrete
-fill 355 64 186 370 79 186 minecraft:light_gray_concrete
+fill 355 64 186 374 79 186 minecraft:light_gray_concrete
 fill 355 64 186 355 79 201 minecraft:light_gray_concrete
 setblock 356 64 200 minecraft:air
 setblock 356 64 200 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "134"}','{"text": "alfheim"}','{"text": "frame"}','{"text": ""}']}}

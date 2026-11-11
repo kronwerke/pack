@@ -1,6 +1,6 @@
 # 015 farms/mobs_dark
 fill 83 63 31 94 63 44 minecraft:light_gray_concrete
-fill 83 64 31 94 79 31 minecraft:light_gray_concrete
+fill 83 64 31 98 79 31 minecraft:light_gray_concrete
 fill 83 64 31 83 79 44 minecraft:light_gray_concrete
 setblock 84 64 43 minecraft:air
 setblock 84 64 43 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "015"}','{"text": "farms"}','{"text": "mobs_dark"}','{"text": ""}']}}

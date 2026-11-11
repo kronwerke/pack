@@ -1,6 +1,6 @@
 # 082 antimatter/sps
 fill 407 63 108 420 63 121 minecraft:light_gray_concrete
-fill 407 64 108 420 79 108 minecraft:light_gray_concrete
+fill 407 64 108 424 79 108 minecraft:light_gray_concrete
 fill 407 64 108 407 79 121 minecraft:light_gray_concrete
 setblock 408 64 120 minecraft:air
 setblock 408 64 120 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "082"}','{"text": "antimatter"}','{"text": "sps"}','{"text": ""}']}}

@@ -1,6 +1,6 @@
 # 051 create_trains/conductor
 fill 159 63 77 176 63 90 minecraft:light_gray_concrete
-fill 159 64 77 176 79 77 minecraft:light_gray_concrete
+fill 159 64 77 180 79 77 minecraft:light_gray_concrete
 fill 159 64 77 159 79 90 minecraft:light_gray_concrete
 setblock 160 64 89 minecraft:air
 setblock 160 64 89 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "051"}','{"text": "create_trains"}','{"text": "conductor"}','{"text": ""}']}}

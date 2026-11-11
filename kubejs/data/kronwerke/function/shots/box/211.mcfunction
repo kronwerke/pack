@@ -1,6 +1,6 @@
 # 211 list_dimensions/d_mining, d_aether, d_undergarden, d_otherside, r_plates, r_mekanism, r_enderio, r_chunks
 fill 279 63 439 360 63 452 minecraft:light_gray_concrete
-fill 279 64 439 360 79 439 minecraft:light_gray_concrete
+fill 279 64 439 364 79 439 minecraft:light_gray_concrete
 fill 279 64 439 279 79 452 minecraft:light_gray_concrete
 setblock 280 64 451 minecraft:air
 setblock 280 64 451 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "211.1"}','{"text": "list_dimensions"}','{"text": "d_mining"}','{"text": ""}']}}

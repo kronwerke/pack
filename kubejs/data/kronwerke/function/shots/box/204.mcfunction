@@ -1,6 +1,6 @@
 # 204 nether/welcome, fortress, blaze_burner, biomes, structures, ig_kill, nm_kill, bastion, debris
 fill 0 63 420 91 63 433 minecraft:light_gray_concrete
-fill 0 64 420 91 79 420 minecraft:light_gray_concrete
+fill 0 64 420 95 79 420 minecraft:light_gray_concrete
 fill 0 64 420 0 79 433 minecraft:light_gray_concrete
 setblock 1 64 432 minecraft:air
 setblock 1 64 432 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "204.1"}','{"text": "nether"}','{"text": "welcome"}','{"text": ""}']}}

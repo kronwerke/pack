@@ -1,6 +1,6 @@
 # 205 the_end/arrival, crystals, dragon, egg, respawn, elytra, cg_find, cg_kill, st_aviary, draconium
 fill 95 63 420 196 63 433 minecraft:light_gray_concrete
-fill 95 64 420 196 79 420 minecraft:light_gray_concrete
+fill 95 64 420 200 79 420 minecraft:light_gray_concrete
 fill 95 64 420 95 79 433 minecraft:light_gray_concrete
 setblock 96 64 432 minecraft:air
 setblock 96 64 432 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "205.1"}','{"text": "the_end"}','{"text": "arrival"}','{"text": ""}']}}

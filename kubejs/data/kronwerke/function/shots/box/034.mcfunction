@@ -1,6 +1,6 @@
 # 034 create/factory
 fill 236 63 52 265 63 71 minecraft:light_gray_concrete
-fill 236 64 52 265 79 52 minecraft:light_gray_concrete
+fill 236 64 52 269 79 52 minecraft:light_gray_concrete
 fill 236 64 52 236 79 71 minecraft:light_gray_concrete
 setblock 237 64 70 minecraft:air
 setblock 237 64 70 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "034"}','{"text": "create"}','{"text": "factory"}','{"text": ""}']}}

@@ -1,6 +1,6 @@
 # 124 botania_runes/gourmaryllis
 fill 171 63 186 184 63 199 minecraft:light_gray_concrete
-fill 171 64 186 184 79 186 minecraft:light_gray_concrete
+fill 171 64 186 188 79 186 minecraft:light_gray_concrete
 fill 171 64 186 171 79 199 minecraft:light_gray_concrete
 setblock 172 64 198 minecraft:air
 setblock 172 64 198 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "124"}','{"text": "botania_runes"}','{"text": "gourmaryllis"}','{"text": ""}']}}

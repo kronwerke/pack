@@ -1,6 +1,6 @@
 # 213 draconic/dust, injectors, stabilizer, tiers, tools
 fill 0 63 485 61 63 504 minecraft:light_gray_concrete
-fill 0 64 485 61 79 485 minecraft:light_gray_concrete
+fill 0 64 485 65 79 485 minecraft:light_gray_concrete
 fill 0 64 485 0 79 504 minecraft:light_gray_concrete
 setblock 1 64 503 minecraft:air
 setblock 1 64 503 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "213.1"}','{"text": "draconic"}','{"text": "dust"}','{"text": ""}']}}

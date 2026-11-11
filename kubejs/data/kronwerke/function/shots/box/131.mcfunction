@@ -1,6 +1,6 @@
 # 131 gaia/tiara
 fill 286 63 186 297 63 199 minecraft:light_gray_concrete
-fill 286 64 186 297 79 186 minecraft:light_gray_concrete
+fill 286 64 186 301 79 186 minecraft:light_gray_concrete
 fill 286 64 186 286 79 199 minecraft:light_gray_concrete
 setblock 287 64 198 minecraft:air
 setblock 287 64 198 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "131"}','{"text": "gaia"}','{"text": "tiara"}','{"text": ""}']}}

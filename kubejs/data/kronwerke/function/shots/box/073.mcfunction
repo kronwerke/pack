@@ -1,6 +1,6 @@
 # 073 mekanism_advanced/turbine
 fill 268 63 108 279 63 121 minecraft:light_gray_concrete
-fill 268 64 108 279 79 108 minecraft:light_gray_concrete
+fill 268 64 108 283 79 108 minecraft:light_gray_concrete
 fill 268 64 108 268 79 121 minecraft:light_gray_concrete
 setblock 269 64 120 minecraft:air
 setblock 269 64 120 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "073"}','{"text": "mekanism_advanced"}','{"text": "turbine"}','{"text": ""}']}}

@@ -1,6 +1,6 @@
 # 212 productive_trees/first_tree, mega, pots, sawmill_run, stripper, wood_set, station, pollinated, loot_saplings, amber, time_traveller
 fill 0 63 460 121 63 479 minecraft:light_gray_concrete
-fill 0 64 460 121 79 460 minecraft:light_gray_concrete
+fill 0 64 460 125 79 460 minecraft:light_gray_concrete
 fill 0 64 460 0 79 479 minecraft:light_gray_concrete
 setblock 1 64 478 minecraft:air
 setblock 1 64 478 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "212.1"}','{"text": "productive_trees"}','{"text": "first_tree"}','{"text": ""}']}}

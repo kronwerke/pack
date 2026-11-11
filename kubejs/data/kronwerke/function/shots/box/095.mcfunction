@@ -1,6 +1,6 @@
 # 095 ars_apprentice/collector
 fill 187 63 148 198 63 161 minecraft:light_gray_concrete
-fill 187 64 148 198 79 148 minecraft:light_gray_concrete
+fill 187 64 148 202 79 148 minecraft:light_gray_concrete
 fill 187 64 148 187 79 161 minecraft:light_gray_concrete
 setblock 188 64 160 minecraft:air
 setblock 188 64 160 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "095"}','{"text": "ars_apprentice"}','{"text": "collector"}','{"text": ""}']}}

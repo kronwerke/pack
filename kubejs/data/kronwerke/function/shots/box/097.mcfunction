@@ -1,6 +1,6 @@
 # 097 ars_apprentice/ritual_scrying
 fill 217 63 148 228 63 161 minecraft:light_gray_concrete
-fill 217 64 148 228 79 148 minecraft:light_gray_concrete
+fill 217 64 148 232 79 148 minecraft:light_gray_concrete
 fill 217 64 148 217 79 161 minecraft:light_gray_concrete
 setblock 218 64 160 minecraft:air
 setblock 218 64 160 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "097"}','{"text": "ars_apprentice"}','{"text": "ritual_scrying"}','{"text": ""}']}}

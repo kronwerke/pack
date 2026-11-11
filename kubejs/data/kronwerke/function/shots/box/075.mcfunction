@@ -1,6 +1,6 @@
 # 075 mekanism_elite/induction_matrix
 fill 298 63 108 309 63 121 minecraft:light_gray_concrete
-fill 298 64 108 309 79 108 minecraft:light_gray_concrete
+fill 298 64 108 313 79 108 minecraft:light_gray_concrete
 fill 298 64 108 298 79 121 minecraft:light_gray_concrete
 setblock 299 64 120 minecraft:air
 setblock 299 64 120 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "075"}','{"text": "mekanism_elite"}','{"text": "induction_matrix"}','{"text": ""}']}}

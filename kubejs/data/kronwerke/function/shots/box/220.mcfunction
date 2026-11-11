@@ -1,6 +1,6 @@
 # 220 food/f_cutting_board, f_pot, f_rice, f_rich_soil, f_feast, f_market, f_rod
 fill 85 63 510 156 63 523 minecraft:light_gray_concrete
-fill 85 64 510 156 79 510 minecraft:light_gray_concrete
+fill 85 64 510 160 79 510 minecraft:light_gray_concrete
 fill 85 64 510 85 79 523 minecraft:light_gray_concrete
 setblock 86 64 522 minecraft:air
 setblock 86 64 522 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "220.1"}','{"text": "food"}','{"text": "f_cutting_board"}','{"text": ""}']}}

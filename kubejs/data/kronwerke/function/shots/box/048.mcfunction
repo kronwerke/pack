@@ -1,6 +1,6 @@
 # 048 create_trains/station
 fill 96 63 77 113 63 90 minecraft:light_gray_concrete
-fill 96 64 77 113 79 77 minecraft:light_gray_concrete
+fill 96 64 77 117 79 77 minecraft:light_gray_concrete
 fill 96 64 77 96 79 90 minecraft:light_gray_concrete
 setblock 97 64 89 minecraft:air
 setblock 97 64 89 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "048"}','{"text": "create_trains"}','{"text": "station"}','{"text": ""}']}}

@@ -1,6 +1,6 @@
 # 132 gaia/dandelifeon
 fill 301 63 186 330 63 217 minecraft:light_gray_concrete
-fill 301 64 186 330 79 186 minecraft:light_gray_concrete
+fill 301 64 186 334 79 186 minecraft:light_gray_concrete
 fill 301 64 186 301 79 217 minecraft:light_gray_concrete
 setblock 302 64 216 minecraft:air
 setblock 302 64 216 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "132"}','{"text": "gaia"}','{"text": "dandelifeon"}','{"text": ""}']}}

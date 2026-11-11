@@ -1,6 +1,6 @@
 # 115 botania/pool
 fill 32 63 186 43 63 199 minecraft:light_gray_concrete
-fill 32 64 186 43 79 186 minecraft:light_gray_concrete
+fill 32 64 186 47 79 186 minecraft:light_gray_concrete
 fill 32 64 186 32 79 199 minecraft:light_gray_concrete
 setblock 33 64 198 minecraft:air
 setblock 33 64 198 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "115"}','{"text": "botania"}','{"text": "pool"}','{"text": ""}']}}

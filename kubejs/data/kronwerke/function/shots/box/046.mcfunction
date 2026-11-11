@@ -1,6 +1,6 @@
 # 046 create_trains/welcome
 fill 62 63 77 77 63 90 minecraft:light_gray_concrete
-fill 62 64 77 77 79 77 minecraft:light_gray_concrete
+fill 62 64 77 81 79 77 minecraft:light_gray_concrete
 fill 62 64 77 62 79 90 minecraft:light_gray_concrete
 setblock 63 64 89 minecraft:air
 setblock 63 64 89 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "046"}','{"text": "create_trains"}','{"text": "welcome"}','{"text": ""}']}}

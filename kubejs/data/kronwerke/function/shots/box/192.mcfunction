@@ -1,6 +1,6 @@
 # 192 logistics/menril, programmer, counter, xnet_connectors, laser_node, mg_gadget
 fill 181 63 355 242 63 368 minecraft:light_gray_concrete
-fill 181 64 355 242 79 355 minecraft:light_gray_concrete
+fill 181 64 355 246 79 355 minecraft:light_gray_concrete
 fill 181 64 355 181 79 368 minecraft:light_gray_concrete
 setblock 182 64 367 minecraft:air
 setblock 182 64 367 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "192.1"}','{"text": "logistics"}','{"text": "menril"}','{"text": ""}']}}

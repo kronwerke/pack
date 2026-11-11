@@ -1,6 +1,6 @@
 # 190 ae2/meteorite, presses, inscriber, network, controller, autocraft, cpu, p2p, factory
 fill 19 63 355 120 63 370 minecraft:light_gray_concrete
-fill 19 64 355 120 79 355 minecraft:light_gray_concrete
+fill 19 64 355 124 79 355 minecraft:light_gray_concrete
 fill 19 64 355 19 79 370 minecraft:light_gray_concrete
 setblock 20 64 369 minecraft:air
 setblock 20 64 369 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "190.1"}','{"text": "ae2"}','{"text": "meteorite"}','{"text": ""}']}}

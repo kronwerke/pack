@@ -1,6 +1,6 @@
 # 041 create_brass/blaze_cake
 fill 371 63 52 384 63 65 minecraft:light_gray_concrete
-fill 371 64 52 384 79 52 minecraft:light_gray_concrete
+fill 371 64 52 388 79 52 minecraft:light_gray_concrete
 fill 371 64 52 371 79 65 minecraft:light_gray_concrete
 setblock 372 64 64 minecraft:air
 setblock 372 64 64 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "041"}','{"text": "create_brass"}','{"text": "blaze_cake"}','{"text": ""}']}}

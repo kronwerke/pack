@@ -1,6 +1,6 @@
 # 214 draconic_chaos/awakened, crystals, guardian, reactor
 fill 65 63 485 112 63 504 minecraft:light_gray_concrete
-fill 65 64 485 112 79 485 minecraft:light_gray_concrete
+fill 65 64 485 116 79 485 minecraft:light_gray_concrete
 fill 65 64 485 65 79 504 minecraft:light_gray_concrete
 setblock 66 64 503 minecraft:air
 setblock 66 64 503 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "214.1"}','{"text": "draconic_chaos"}','{"text": "awakened"}','{"text": ""}']}}

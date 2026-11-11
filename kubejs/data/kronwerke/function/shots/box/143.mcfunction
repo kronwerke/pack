@@ -1,6 +1,6 @@
 # 143 occultism/foliot_janitor
 fill 45 63 242 56 63 255 minecraft:light_gray_concrete
-fill 45 64 242 56 79 242 minecraft:light_gray_concrete
+fill 45 64 242 60 79 242 minecraft:light_gray_concrete
 fill 45 64 242 45 79 255 minecraft:light_gray_concrete
 setblock 46 64 254 minecraft:air
 setblock 46 64 254 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "143"}','{"text": "occultism"}','{"text": "foliot_janitor"}','{"text": ""}']}}

@@ -1,6 +1,6 @@
 # 151 occultism_afrit/unbound_afrit
 fill 165 63 242 176 63 255 minecraft:light_gray_concrete
-fill 165 64 242 176 79 242 minecraft:light_gray_concrete
+fill 165 64 242 180 79 242 minecraft:light_gray_concrete
 fill 165 64 242 165 79 255 minecraft:light_gray_concrete
 setblock 166 64 254 minecraft:air
 setblock 166 64 254 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "151"}','{"text": "occultism_afrit"}','{"text": "unbound_afrit"}','{"text": ""}']}}

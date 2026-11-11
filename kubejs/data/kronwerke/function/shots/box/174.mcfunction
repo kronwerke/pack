@@ -1,6 +1,6 @@
 # 174 immersive/connectors, capacitor, thermoelectric, transformer
 fill 193 63 273 250 63 286 minecraft:light_gray_concrete
-fill 193 64 273 250 79 273 minecraft:light_gray_concrete
+fill 193 64 273 254 79 273 minecraft:light_gray_concrete
 fill 193 64 273 193 79 286 minecraft:light_gray_concrete
 setblock 194 64 285 minecraft:air
 setblock 194 64 285 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "174.1"}','{"text": "immersive"}','{"text": "connectors"}','{"text": ""}']}}

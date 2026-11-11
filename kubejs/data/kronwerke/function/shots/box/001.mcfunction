@@ -1,6 +1,6 @@
 # 001 start_here/o_handin
 fill 0 63 6 17 63 25 minecraft:light_gray_concrete
-fill 0 64 6 17 79 6 minecraft:light_gray_concrete
+fill 0 64 6 21 79 6 minecraft:light_gray_concrete
 fill 0 64 6 0 79 25 minecraft:light_gray_concrete
 setblock 1 64 24 minecraft:air
 setblock 1 64 24 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "001"}','{"text": "start_here"}','{"text": "o_handin"}','{"text": ""}']}}

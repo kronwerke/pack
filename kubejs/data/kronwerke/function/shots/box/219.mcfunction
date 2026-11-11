@@ -1,6 +1,6 @@
 # 219 silent_gear/stone_anvil, pickaxe, reading_stats, crude_mixer, hammer, repair_kit, alloy_forge, charger
 fill 0 63 510 81 63 523 minecraft:light_gray_concrete
-fill 0 64 510 81 79 510 minecraft:light_gray_concrete
+fill 0 64 510 85 79 510 minecraft:light_gray_concrete
 fill 0 64 510 0 79 523 minecraft:light_gray_concrete
 setblock 1 64 522 minecraft:air
 setblock 1 64 522 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "219.1"}','{"text": "silent_gear"}','{"text": "stone_anvil"}','{"text": ""}']}}

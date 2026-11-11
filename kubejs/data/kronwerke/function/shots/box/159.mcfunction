@@ -1,6 +1,6 @@
 # 159 hexerei/blood
 fill 285 63 242 296 63 255 minecraft:light_gray_concrete
-fill 285 64 242 296 79 242 minecraft:light_gray_concrete
+fill 285 64 242 300 79 242 minecraft:light_gray_concrete
 fill 285 64 242 285 79 255 minecraft:light_gray_concrete
 setblock 286 64 254 minecraft:air
 setblock 286 64 254 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "159"}','{"text": "hexerei"}','{"text": "blood"}','{"text": ""}']}}

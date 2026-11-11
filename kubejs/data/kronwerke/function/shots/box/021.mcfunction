@@ -1,6 +1,6 @@
 # 021 create/water_wheel
 fill 15 63 52 28 63 65 minecraft:light_gray_concrete
-fill 15 64 52 28 79 52 minecraft:light_gray_concrete
+fill 15 64 52 32 79 52 minecraft:light_gray_concrete
 fill 15 64 52 15 79 65 minecraft:light_gray_concrete
 setblock 16 64 64 minecraft:air
 setblock 16 64 64 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "021"}','{"text": "create"}','{"text": "water_wheel"}','{"text": ""}']}}

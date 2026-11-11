@@ -1,6 +1,6 @@
 # 180 immersive_heavy/list_big
 fill 218 63 292 260 63 309 minecraft:light_gray_concrete
-fill 218 64 292 260 79 292 minecraft:light_gray_concrete
+fill 218 64 292 264 79 292 minecraft:light_gray_concrete
 fill 218 64 292 218 79 309 minecraft:light_gray_concrete
 setblock 219 64 308 minecraft:air
 setblock 219 64 308 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "180"}','{"text": "immersive_heavy"}','{"text": "list_big"}','{"text": ""}']}}

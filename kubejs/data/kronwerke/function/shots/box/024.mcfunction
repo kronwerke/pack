@@ -1,6 +1,6 @@
 # 024 create/depot
 fill 72 63 52 83 63 65 minecraft:light_gray_concrete
-fill 72 64 52 83 79 52 minecraft:light_gray_concrete
+fill 72 64 52 87 79 52 minecraft:light_gray_concrete
 fill 72 64 52 72 79 65 minecraft:light_gray_concrete
 setblock 73 64 64 minecraft:air
 setblock 73 64 64 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "024"}','{"text": "create"}','{"text": "depot"}','{"text": ""}']}}

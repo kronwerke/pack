@@ -1,6 +1,6 @@
 # 002 start_here/o_feeder
 fill 21 63 6 38 63 25 minecraft:light_gray_concrete
-fill 21 64 6 38 79 6 minecraft:light_gray_concrete
+fill 21 64 6 42 79 6 minecraft:light_gray_concrete
 fill 21 64 6 21 79 25 minecraft:light_gray_concrete
 setblock 22 64 24 minecraft:air
 setblock 22 64 24 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "002"}','{"text": "start_here"}','{"text": "o_feeder"}','{"text": ""}']}}

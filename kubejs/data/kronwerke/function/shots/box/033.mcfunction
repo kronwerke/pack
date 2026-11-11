@@ -1,6 +1,6 @@
 # 033 create/tree_farm
 fill 217 63 52 232 63 65 minecraft:light_gray_concrete
-fill 217 64 52 232 79 52 minecraft:light_gray_concrete
+fill 217 64 52 236 79 52 minecraft:light_gray_concrete
 fill 217 64 52 217 79 65 minecraft:light_gray_concrete
 setblock 218 64 64 minecraft:air
 setblock 218 64 64 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "033"}','{"text": "create"}','{"text": "tree_farm"}','{"text": ""}']}}

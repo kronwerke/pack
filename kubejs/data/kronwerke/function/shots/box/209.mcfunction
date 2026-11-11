@@ -1,6 +1,6 @@
 # 209 undergarden/arrival, catacombs, guardian, forgotten, depths, infuser, b_cold
 fill 117 63 439 188 63 452 minecraft:light_gray_concrete
-fill 117 64 439 188 79 439 minecraft:light_gray_concrete
+fill 117 64 439 192 79 439 minecraft:light_gray_concrete
 fill 117 64 439 117 79 452 minecraft:light_gray_concrete
 setblock 118 64 451 minecraft:air
 setblock 118 64 451 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "209.1"}','{"text": "undergarden"}','{"text": "arrival"}','{"text": ""}']}}

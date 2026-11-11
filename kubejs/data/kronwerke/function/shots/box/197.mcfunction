@@ -1,6 +1,6 @@
 # 197 flux_networks/dust
 fill 103 63 376 114 63 389 minecraft:light_gray_concrete
-fill 103 64 376 114 79 376 minecraft:light_gray_concrete
+fill 103 64 376 118 79 376 minecraft:light_gray_concrete
 fill 103 64 376 103 79 389 minecraft:light_gray_concrete
 setblock 104 64 388 minecraft:air
 setblock 104 64 388 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "197"}','{"text": "flux_networks"}','{"text": "dust"}','{"text": ""}']}}

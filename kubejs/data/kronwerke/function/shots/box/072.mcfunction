@@ -1,6 +1,6 @@
 # 072 mekanism_advanced/boiler
 fill 253 63 108 264 63 121 minecraft:light_gray_concrete
-fill 253 64 108 264 79 108 minecraft:light_gray_concrete
+fill 253 64 108 268 79 108 minecraft:light_gray_concrete
 fill 253 64 108 253 79 121 minecraft:light_gray_concrete
 setblock 254 64 120 minecraft:air
 setblock 254 64 120 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "072"}','{"text": "mekanism_advanced"}','{"text": "boiler"}','{"text": ""}']}}

@@ -1,6 +1,6 @@
 # 183 industrial/addons, sower, gatherer, bio, slaughter, crusher, duplicator
 fill 0 63 315 71 63 328 minecraft:light_gray_concrete
-fill 0 64 315 71 79 315 minecraft:light_gray_concrete
+fill 0 64 315 75 79 315 minecraft:light_gray_concrete
 fill 0 64 315 0 79 328 minecraft:light_gray_concrete
 setblock 1 64 327 minecraft:air
 setblock 1 64 327 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "183.1"}','{"text": "industrial"}','{"text": "addons"}','{"text": ""}']}}

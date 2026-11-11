@@ -1,6 +1,6 @@
 # 193 storage/welcome, drawers_4, config_tool, copper_tier, controller, vault_big, trash
 fill 246 63 355 317 63 368 minecraft:light_gray_concrete
-fill 246 64 355 317 79 355 minecraft:light_gray_concrete
+fill 246 64 355 321 79 355 minecraft:light_gray_concrete
 fill 246 64 355 246 79 368 minecraft:light_gray_concrete
 setblock 247 64 367 minecraft:air
 setblock 247 64 367 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "193.1"}','{"text": "storage"}','{"text": "welcome"}','{"text": ""}']}}

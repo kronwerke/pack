@@ -1,17 +1,70 @@
-# 002 create/depot
-#area 12 -6 31 19
-fill 12 64 -6 31 91 19 minecraft:air
-fill 12 60 -6 31 62 19 minecraft:stone
-fill 12 63 -6 31 63 19 minecraft:light_gray_concrete
-fill 16 64 0 31 79 0 minecraft:light_gray_concrete
-fill 16 64 0 16 79 13 minecraft:light_gray_concrete
-setblock 17 64 12 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "002"}','{"text": "create"}','{"text": "depot"}','{"text": ""}']}}
-setblock 18 64 12 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "press above a"}','{"text": "depot with one"}','{"text": "block of air"}','{"text": "between"}']}}
-summon text_display 21.5 71 5.5 {text:'[{"text": "002  ", "color": "gold"}, {"text": "create/depot", "color": "gray"}, {"text": "\\nStell ein Depot unter die Presse", "color": "white"}]',billboard:"center",background:1275068416,Tags:["kw_shot"],alignment:"center",line_width:200,transformation:{scale:[1.6f,1.6f,1.6f],translation:[0f,0f,0f],left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f]}}
-fill 26 64 0 26 79 13 minecraft:light_gray_concrete
-setblock 21 64 5 create:depot
-setblock 21 66 5 create:mechanical_press[facing=south]
-fill 20 64 4 22 67 4 create:andesite_casing
-setblock 21 66 4 create:andesite_encased_shaft[axis=z]
-setblock 21 66 3 create:creative_motor[facing=south]{ScrollValue:32}
-kw testworld use 21 64 5 up minecraft:iron_ingot
+# 002 start_here/m_goldleaf
+#area 17 -6 36 19
+fill 17 64 -6 36 95 19 minecraft:air
+fill 17 60 -6 36 62 19 minecraft:stone
+fill 17 63 -6 36 63 19 minecraft:light_gray_concrete
+fill 21 64 0 36 83 0 minecraft:light_gray_concrete
+fill 21 64 0 21 83 13 minecraft:light_gray_concrete
+setblock 22 64 12 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "002"}','{"text": "start_here"}','{"text": "m_goldleaf"}','{"text": ""}']}}
+setblock 23 64 12 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "a tree with"}','{"text": "golden leaves"}','{"text": ""}','{"text": ""}']}}
+fill 31 64 0 31 83 13 minecraft:light_gray_concrete
+setblock 26 63 5 minecraft:dirt
+fill 26 64 5 26 68 5 minecraft:oak_log[axis=y]
+setblock 24 67 3 naturesaura:golden_leaves[stage=3,persistent=true]
+setblock 24 67 4 naturesaura:golden_leaves[stage=3,persistent=true]
+setblock 24 67 5 naturesaura:golden_leaves[stage=3,persistent=true]
+setblock 24 67 6 naturesaura:golden_leaves[stage=3,persistent=true]
+setblock 24 67 7 naturesaura:golden_leaves[stage=3,persistent=true]
+setblock 25 67 3 naturesaura:golden_leaves[stage=3,persistent=true]
+setblock 25 67 4 naturesaura:golden_leaves[stage=3,persistent=true]
+setblock 25 67 5 naturesaura:golden_leaves[stage=3,persistent=true]
+setblock 25 67 6 naturesaura:golden_leaves[stage=3,persistent=true]
+setblock 25 67 7 naturesaura:golden_leaves[stage=3,persistent=true]
+setblock 26 67 3 naturesaura:golden_leaves[stage=3,persistent=true]
+setblock 26 67 4 naturesaura:golden_leaves[stage=3,persistent=true]
+setblock 26 67 6 naturesaura:golden_leaves[stage=3,persistent=true]
+setblock 26 67 7 naturesaura:golden_leaves[stage=3,persistent=true]
+setblock 27 67 3 naturesaura:golden_leaves[stage=3,persistent=true]
+setblock 27 67 4 naturesaura:golden_leaves[stage=3,persistent=true]
+setblock 27 67 5 naturesaura:golden_leaves[stage=3,persistent=true]
+setblock 27 67 6 naturesaura:golden_leaves[stage=3,persistent=true]
+setblock 27 67 7 naturesaura:golden_leaves[stage=3,persistent=true]
+setblock 28 67 3 naturesaura:golden_leaves[stage=3,persistent=true]
+setblock 28 67 4 naturesaura:golden_leaves[stage=3,persistent=true]
+setblock 28 67 5 naturesaura:golden_leaves[stage=3,persistent=true]
+setblock 28 67 6 naturesaura:golden_leaves[stage=3,persistent=true]
+setblock 28 67 7 naturesaura:golden_leaves[stage=3,persistent=true]
+setblock 24 68 4 naturesaura:golden_leaves[stage=3,persistent=true]
+setblock 24 68 5 naturesaura:golden_leaves[stage=3,persistent=true]
+setblock 24 68 6 naturesaura:golden_leaves[stage=3,persistent=true]
+setblock 25 68 3 naturesaura:golden_leaves[stage=3,persistent=true]
+setblock 25 68 4 naturesaura:golden_leaves[stage=3,persistent=true]
+setblock 25 68 5 naturesaura:golden_leaves[stage=3,persistent=true]
+setblock 25 68 6 naturesaura:golden_leaves[stage=3,persistent=true]
+setblock 25 68 7 naturesaura:golden_leaves[stage=3,persistent=true]
+setblock 26 68 3 naturesaura:golden_leaves[stage=3,persistent=true]
+setblock 26 68 4 naturesaura:golden_leaves[stage=3,persistent=true]
+setblock 26 68 6 naturesaura:golden_leaves[stage=3,persistent=true]
+setblock 26 68 7 naturesaura:golden_leaves[stage=3,persistent=true]
+setblock 27 68 3 naturesaura:golden_leaves[stage=3,persistent=true]
+setblock 27 68 4 naturesaura:golden_leaves[stage=3,persistent=true]
+setblock 27 68 5 naturesaura:golden_leaves[stage=3,persistent=true]
+setblock 27 68 6 naturesaura:golden_leaves[stage=3,persistent=true]
+setblock 27 68 7 naturesaura:golden_leaves[stage=3,persistent=true]
+setblock 28 68 4 naturesaura:golden_leaves[stage=3,persistent=true]
+setblock 28 68 5 naturesaura:golden_leaves[stage=3,persistent=true]
+setblock 28 68 6 naturesaura:golden_leaves[stage=3,persistent=true]
+setblock 25 69 4 naturesaura:golden_leaves[stage=3,persistent=true]
+setblock 25 69 5 naturesaura:golden_leaves[stage=3,persistent=true]
+setblock 25 69 6 naturesaura:golden_leaves[stage=3,persistent=true]
+setblock 26 69 4 naturesaura:golden_leaves[stage=3,persistent=true]
+setblock 26 69 5 naturesaura:golden_leaves[stage=3,persistent=true]
+setblock 26 69 6 naturesaura:golden_leaves[stage=3,persistent=true]
+setblock 27 69 4 naturesaura:golden_leaves[stage=3,persistent=true]
+setblock 27 69 5 naturesaura:golden_leaves[stage=3,persistent=true]
+setblock 27 69 6 naturesaura:golden_leaves[stage=3,persistent=true]
+setblock 25 70 5 naturesaura:golden_leaves[stage=3,persistent=true]
+setblock 26 70 4 naturesaura:golden_leaves[stage=3,persistent=true]
+setblock 26 70 5 naturesaura:golden_leaves[stage=3,persistent=true]
+setblock 26 70 6 naturesaura:golden_leaves[stage=3,persistent=true]
+setblock 27 70 5 naturesaura:golden_leaves[stage=3,persistent=true]

@@ -1,21 +1,34 @@
-# 012 botania/pure_daisy
-#area -4 53 15 78
-fill -4 64 53 15 91 78 minecraft:air
-fill -4 60 53 15 62 78 minecraft:stone
-fill -4 63 53 15 63 78 minecraft:light_gray_concrete
-fill 0 64 59 15 79 59 minecraft:light_gray_concrete
-fill 0 64 59 0 79 72 minecraft:light_gray_concrete
-setblock 1 64 71 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "012"}','{"text": "botania"}','{"text": "pure_daisy"}','{"text": ""}']}}
-setblock 2 64 71 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "the daisy with"}','{"text": "8 stone or"}','{"text": "logs, half"}','{"text": "converted"}']}}
-summon text_display 5.5 71 64.5 {text:'[{"text": "012  ", "color": "gold"}, {"text": "botania/pure_daisy", "color": "gray"}, {"text": "\\nPflanz ein Reines Gänseblümchen", "color": "white"}]',billboard:"center",background:1275068416,Tags:["kw_shot"],alignment:"center",line_width:200,transformation:{scale:[1.6f,1.6f,1.6f],translation:[0f,0f,0f],left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f]}}
-fill 10 64 59 10 79 72 minecraft:light_gray_concrete
-setblock 5 63 64 minecraft:grass_block
-setblock 5 64 64 botania:pure_daisy
-setblock 4 64 63 minecraft:stone
-setblock 5 64 63 botania:livingrock
-setblock 6 64 63 minecraft:stone
-setblock 4 64 64 minecraft:oak_log[axis=y]
-setblock 6 64 64 botania:livingwood_log[axis=y]
-setblock 4 64 65 botania:livingrock
-setblock 5 64 65 minecraft:stone
-setblock 6 64 65 botania:livingrock
+# 012 create/cobble_gen
+#area 106 21 125 46
+fill 106 64 21 125 91 46 minecraft:air
+fill 106 60 21 125 62 46 minecraft:stone
+fill 106 63 21 125 63 46 minecraft:light_gray_concrete
+fill 110 64 27 125 79 27 minecraft:light_gray_concrete
+fill 110 64 27 110 79 40 minecraft:light_gray_concrete
+setblock 111 64 39 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "012"}','{"text": "create"}','{"text": "cobble_gen"}','{"text": ""}']}}
+setblock 112 64 39 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "drill in front"}','{"text": "of a cobble"}','{"text": "generator"}','{"text": ""}']}}
+fill 120 64 27 120 79 40 minecraft:light_gray_concrete
+setblock 112 64 31 minecraft:stone_bricks
+setblock 112 64 33 minecraft:glass
+setblock 113 64 31 minecraft:stone_bricks
+setblock 113 64 33 minecraft:glass
+setblock 114 64 31 minecraft:stone_bricks
+setblock 114 64 33 minecraft:glass
+setblock 115 64 31 minecraft:stone_bricks
+setblock 115 64 33 minecraft:glass
+setblock 116 64 31 minecraft:stone_bricks
+setblock 116 64 33 minecraft:glass
+setblock 117 64 31 minecraft:stone_bricks
+setblock 117 64 33 minecraft:glass
+setblock 118 64 31 minecraft:stone_bricks
+setblock 118 64 33 minecraft:glass
+setblock 112 64 32 minecraft:stone_bricks
+setblock 118 64 32 minecraft:stone_bricks
+setblock 113 64 32 minecraft:water
+setblock 115 63 32 minecraft:air
+setblock 116 64 32 minecraft:cobblestone
+setblock 117 64 32 minecraft:lava
+setblock 116 64 31 create:mechanical_drill[facing=south]
+fill 115 64 30 117 65 30 create:andesite_casing
+setblock 116 64 30 create:andesite_encased_shaft[axis=z]
+setblock 116 64 29 create:creative_motor[facing=south]{ScrollValue:32}

@@ -1,137 +1,25 @@
-# 010 mekanism_elite/induction_matrix
-#area 75 13 96 40
-fill 75 64 13 96 91 40 minecraft:air
-fill 75 60 13 96 62 40 minecraft:stone
-fill 75 63 13 96 63 40 minecraft:light_gray_concrete
-fill 79 64 19 96 79 19 minecraft:light_gray_concrete
-fill 79 64 19 79 79 34 minecraft:light_gray_concrete
-setblock 80 64 33 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "010"}','{"text": "mekanism_elite"}','{"text": "induction_matrix"}','{"text": ""}']}}
-setblock 81 64 33 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "matrix with"}','{"text": "cells and"}','{"text": "providers"}','{"text": "behind glass,"}']}}
-setblock 82 64 33 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "port GUI"}','{"text": ""}','{"text": ""}','{"text": ""}']}}
-summon text_display 85.5 71 25.5 {text:'[{"text": "010  ", "color": "gold"}, {"text": "mekanism_elite/induction_matrix", "color": "gray"}, {"text": "\\nSetz die Induktionsmatrix zusammen", "color": "white"}]',billboard:"center",background:1275068416,Tags:["kw_shot"],alignment:"center",line_width:200,transformation:{scale:[1.6f,1.6f,1.6f],translation:[0f,0f,0f],left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f]}}
-fill 91 64 19 91 79 34 minecraft:light_gray_concrete
-setblock 83 64 23 mekanism:induction_casing
-setblock 83 64 24 mekanism:induction_casing
-setblock 83 64 25 mekanism:induction_casing
-setblock 83 64 26 mekanism:induction_casing
-setblock 83 64 27 mekanism:induction_casing
-setblock 83 65 23 mekanism:induction_casing
-setblock 83 65 24 mekanism:structural_glass
-setblock 83 65 25 mekanism:structural_glass
-setblock 83 65 26 mekanism:structural_glass
-setblock 83 65 27 mekanism:induction_casing
-setblock 83 66 23 mekanism:induction_casing
-setblock 83 66 24 mekanism:structural_glass
-setblock 83 66 25 mekanism:structural_glass
-setblock 83 66 26 mekanism:structural_glass
-setblock 83 66 27 mekanism:induction_casing
-setblock 83 67 23 mekanism:induction_casing
-setblock 83 67 24 mekanism:structural_glass
-setblock 83 67 25 mekanism:structural_glass
-setblock 83 67 26 mekanism:structural_glass
-setblock 83 67 27 mekanism:induction_casing
-setblock 83 68 23 mekanism:induction_casing
-setblock 83 68 24 mekanism:induction_casing
-setblock 83 68 25 mekanism:induction_casing
-setblock 83 68 26 mekanism:induction_casing
-setblock 83 68 27 mekanism:induction_casing
-setblock 84 64 23 mekanism:induction_casing
-setblock 84 64 24 mekanism:induction_casing
-setblock 84 64 25 mekanism:induction_casing
-setblock 84 64 26 mekanism:induction_casing
-setblock 84 64 27 mekanism:induction_casing
-setblock 84 65 23 mekanism:structural_glass
-setblock 84 65 27 mekanism:structural_glass
-setblock 84 66 23 mekanism:structural_glass
-setblock 84 66 27 mekanism:structural_glass
-setblock 84 67 23 mekanism:structural_glass
-setblock 84 67 27 mekanism:structural_glass
-setblock 84 68 23 mekanism:induction_casing
-setblock 84 68 24 mekanism:structural_glass
-setblock 84 68 25 mekanism:structural_glass
-setblock 84 68 26 mekanism:structural_glass
-setblock 84 68 27 mekanism:induction_casing
-setblock 85 64 23 mekanism:induction_casing
-setblock 85 64 24 mekanism:induction_casing
-setblock 85 64 25 mekanism:induction_casing
-setblock 85 64 26 mekanism:induction_casing
-setblock 85 64 27 mekanism:induction_casing
-setblock 85 65 23 mekanism:structural_glass
-setblock 85 65 27 mekanism:structural_glass
-setblock 85 66 23 mekanism:structural_glass
-setblock 85 66 27 mekanism:structural_glass
-setblock 85 67 23 mekanism:structural_glass
-setblock 85 67 27 mekanism:structural_glass
-setblock 85 68 23 mekanism:induction_casing
-setblock 85 68 24 mekanism:structural_glass
-setblock 85 68 25 mekanism:structural_glass
-setblock 85 68 26 mekanism:structural_glass
-setblock 85 68 27 mekanism:induction_casing
-setblock 86 64 23 mekanism:induction_casing
-setblock 86 64 24 mekanism:induction_casing
-setblock 86 64 25 mekanism:induction_casing
-setblock 86 64 26 mekanism:induction_casing
-setblock 86 64 27 mekanism:induction_casing
-setblock 86 65 23 mekanism:structural_glass
-setblock 86 65 27 mekanism:structural_glass
-setblock 86 66 23 mekanism:structural_glass
-setblock 86 66 27 mekanism:structural_glass
-setblock 86 67 23 mekanism:structural_glass
-setblock 86 67 27 mekanism:structural_glass
-setblock 86 68 23 mekanism:induction_casing
-setblock 86 68 24 mekanism:structural_glass
-setblock 86 68 25 mekanism:structural_glass
-setblock 86 68 26 mekanism:structural_glass
-setblock 86 68 27 mekanism:induction_casing
-setblock 87 64 23 mekanism:induction_casing
-setblock 87 64 24 mekanism:induction_casing
-setblock 87 64 25 mekanism:induction_casing
-setblock 87 64 26 mekanism:induction_casing
-setblock 87 64 27 mekanism:induction_casing
-setblock 87 65 23 mekanism:induction_casing
-setblock 87 65 24 mekanism:structural_glass
-setblock 87 65 25 mekanism:induction_port[active=false]
-setblock 87 65 26 mekanism:structural_glass
-setblock 87 65 27 mekanism:induction_casing
-setblock 87 66 23 mekanism:induction_casing
-setblock 87 66 24 mekanism:structural_glass
-setblock 87 66 25 mekanism:structural_glass
-setblock 87 66 26 mekanism:structural_glass
-setblock 87 66 27 mekanism:induction_casing
-setblock 87 67 23 mekanism:induction_casing
-setblock 87 67 24 mekanism:structural_glass
-setblock 87 67 25 mekanism:induction_port[active=true]
-setblock 87 67 26 mekanism:structural_glass
-setblock 87 67 27 mekanism:induction_casing
-setblock 87 68 23 mekanism:induction_casing
-setblock 87 68 24 mekanism:induction_casing
-setblock 87 68 25 mekanism:induction_casing
-setblock 87 68 26 mekanism:induction_casing
-setblock 87 68 27 mekanism:induction_casing
-setblock 84 65 24 mekanism:basic_induction_cell
-setblock 84 65 25 mekanism:basic_induction_provider
-setblock 84 65 26 mekanism:basic_induction_cell
-setblock 84 66 24 mekanism:basic_induction_cell
-setblock 84 66 25 mekanism:basic_induction_cell
-setblock 84 66 26 mekanism:basic_induction_cell
-setblock 84 67 24 mekanism:basic_induction_cell
-setblock 84 67 25 mekanism:basic_induction_cell
-setblock 84 67 26 mekanism:basic_induction_cell
-setblock 85 65 24 mekanism:basic_induction_cell
-setblock 85 65 25 mekanism:basic_induction_provider
-setblock 85 65 26 mekanism:basic_induction_cell
-setblock 85 66 24 mekanism:basic_induction_cell
-setblock 85 66 25 mekanism:basic_induction_cell
-setblock 85 66 26 mekanism:basic_induction_cell
-setblock 85 67 24 mekanism:basic_induction_cell
-setblock 85 67 25 mekanism:basic_induction_cell
-setblock 85 67 26 mekanism:basic_induction_cell
-setblock 86 65 24 mekanism:basic_induction_cell
-setblock 86 65 25 mekanism:basic_induction_provider
-setblock 86 65 26 mekanism:basic_induction_cell
-setblock 86 66 24 mekanism:basic_induction_cell
-setblock 86 66 25 mekanism:basic_induction_cell
-setblock 86 66 26 mekanism:basic_induction_cell
-setblock 86 67 24 mekanism:basic_induction_cell
-setblock 86 67 25 mekanism:basic_induction_cell
-setblock 86 67 26 mekanism:basic_induction_cell
+# 010 create/washing
+#area 76 21 95 46
+fill 76 64 21 95 91 46 minecraft:air
+fill 76 60 21 95 62 46 minecraft:stone
+fill 76 63 21 95 63 46 minecraft:light_gray_concrete
+fill 80 64 27 95 79 27 minecraft:light_gray_concrete
+fill 80 64 27 80 79 40 minecraft:light_gray_concrete
+setblock 81 64 39 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "010"}','{"text": "create"}','{"text": "washing"}','{"text": ""}']}}
+setblock 82 64 39 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "fan blowing"}','{"text": "through water"}','{"text": "over a belt of"}','{"text": "gravel"}']}}
+fill 90 64 27 90 79 40 minecraft:light_gray_concrete
+setblock 84 64 30 create:shaft[axis=x]
+setblock 84 64 34 create:shaft[axis=x]
+kw testworld use 84 64 30 up create:belt_connector
+kw testworld use 84 64 34 up create:belt_connector
+execute unless block 84 64 32 minecraft:air
+setblock 85 64 31 minecraft:glass
+setblock 85 64 33 minecraft:glass
+setblock 85 64 32 minecraft:water
+setblock 86 64 32 create:encased_fan[facing=west]
+setblock 87 64 32 create:creative_motor[facing=west]{ScrollValue:64}
+setblock 88 64 32 create:andesite_casing
+setblock 87 64 33 create:andesite_casing
+setblock 87 64 31 create:andesite_casing
+setblock 87 65 32 create:andesite_casing
+summon item 84.5 65 32.5 {Item:{id:"minecraft:gravel",count:8},PickupDelay:32767,Age:-32768,Tags:["kw_shot"]}

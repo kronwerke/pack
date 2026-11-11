@@ -1,37 +1,136 @@
-# 020 occultism/hedyrin
-#area 30 78 53 107
-fill 30 64 78 53 91 107 minecraft:air
-fill 30 60 78 53 62 107 minecraft:stone
-fill 30 63 78 53 63 107 minecraft:light_gray_concrete
-fill 34 64 84 53 79 84 minecraft:light_gray_concrete
-fill 34 64 84 34 79 101 minecraft:light_gray_concrete
-setblock 35 64 100 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "020"}','{"text": "occultism"}','{"text": "hedyrin"}','{"text": ""}']}}
-setblock 36 64 100 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Hedyrin\'s Lure"}','{"text": "with the yellow"}','{"text": "glyphs"}','{"text": ""}']}}
-summon text_display 41.5 71 91.5 {text:'[{"text": "020  ", "color": "gold"}, {"text": "occultism/hedyrin", "color": "gray"}, {"text": "\\nZeichne Hedyrin\'s Lure", "color": "white"}]',billboard:"center",background:1275068416,Tags:["kw_shot"],alignment:"center",line_width:200,transformation:{scale:[1.6f,1.6f,1.6f],translation:[0f,0f,0f],left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f]}}
-fill 48 64 84 48 79 101 minecraft:light_gray_concrete
-fill 36 63 86 46 63 96 minecraft:smooth_basalt
-setblock 38 64 91 occultism:chalk_glyph_white[facing=south,sign=0]
-setblock 39 64 90 occultism:chalk_glyph_white[facing=south,sign=5]
-setblock 39 64 91 minecraft:white_candle[candles=1,lit=true]
-setblock 39 64 92 occultism:chalk_glyph_white[facing=south,sign=10]
-setblock 40 64 89 occultism:chalk_glyph_white[facing=south,sign=2]
-setblock 40 64 91 occultism:chalk_glyph_gold[facing=south,sign=7]
-setblock 40 64 93 occultism:chalk_glyph_white[facing=south,sign=12]
-setblock 41 64 88 occultism:chalk_glyph_white[facing=south,sign=4]
-setblock 41 64 89 minecraft:white_candle[candles=1,lit=true]
-setblock 41 64 90 occultism:chalk_glyph_gold[facing=south,sign=9]
-setblock 41 64 91 occultism:golden_sacrificial_bowl
-setblock 41 64 92 occultism:chalk_glyph_gold[facing=south,sign=1]
-setblock 41 64 93 minecraft:white_candle[candles=1,lit=true]
-setblock 41 64 94 occultism:chalk_glyph_white[facing=south,sign=6]
-setblock 42 64 89 occultism:chalk_glyph_white[facing=south,sign=11]
-setblock 42 64 91 occultism:chalk_glyph_gold[facing=south,sign=3]
-setblock 42 64 93 occultism:chalk_glyph_white[facing=south,sign=8]
-setblock 43 64 90 occultism:chalk_glyph_white[facing=south,sign=0]
-setblock 43 64 91 minecraft:white_candle[candles=1,lit=true]
-setblock 43 64 92 occultism:chalk_glyph_white[facing=south,sign=5]
-setblock 44 64 91 occultism:chalk_glyph_white[facing=south,sign=10]
-setblock 41 64 86 occultism:sacrificial_bowl[facing=up]
-setblock 46 64 91 occultism:sacrificial_bowl[facing=up]
-setblock 41 64 96 occultism:sacrificial_bowl[facing=up]
-setblock 36 64 91 occultism:sacrificial_bowl[facing=up]
+# 020 mekanism_elite/induction_matrix
+#area 75 44 96 71
+fill 75 64 44 96 91 71 minecraft:air
+fill 75 60 44 96 62 71 minecraft:stone
+fill 75 63 44 96 63 71 minecraft:light_gray_concrete
+fill 79 64 50 96 79 50 minecraft:light_gray_concrete
+fill 79 64 50 79 79 65 minecraft:light_gray_concrete
+setblock 80 64 64 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "020"}','{"text": "mekanism_elite"}','{"text": "induction_matrix"}','{"text": ""}']}}
+setblock 81 64 64 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "matrix with"}','{"text": "cells and"}','{"text": "providers"}','{"text": "behind glass,"}']}}
+setblock 82 64 64 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "port GUI"}','{"text": ""}','{"text": ""}','{"text": ""}']}}
+fill 91 64 50 91 79 65 minecraft:light_gray_concrete
+setblock 83 64 54 mekanism:induction_casing
+setblock 83 64 55 mekanism:induction_casing
+setblock 83 64 56 mekanism:induction_casing
+setblock 83 64 57 mekanism:induction_casing
+setblock 83 64 58 mekanism:induction_casing
+setblock 83 65 54 mekanism:induction_casing
+setblock 83 65 55 mekanism:structural_glass
+setblock 83 65 56 mekanism:structural_glass
+setblock 83 65 57 mekanism:structural_glass
+setblock 83 65 58 mekanism:induction_casing
+setblock 83 66 54 mekanism:induction_casing
+setblock 83 66 55 mekanism:structural_glass
+setblock 83 66 56 mekanism:structural_glass
+setblock 83 66 57 mekanism:structural_glass
+setblock 83 66 58 mekanism:induction_casing
+setblock 83 67 54 mekanism:induction_casing
+setblock 83 67 55 mekanism:structural_glass
+setblock 83 67 56 mekanism:structural_glass
+setblock 83 67 57 mekanism:structural_glass
+setblock 83 67 58 mekanism:induction_casing
+setblock 83 68 54 mekanism:induction_casing
+setblock 83 68 55 mekanism:induction_casing
+setblock 83 68 56 mekanism:induction_casing
+setblock 83 68 57 mekanism:induction_casing
+setblock 83 68 58 mekanism:induction_casing
+setblock 84 64 54 mekanism:induction_casing
+setblock 84 64 55 mekanism:induction_casing
+setblock 84 64 56 mekanism:induction_casing
+setblock 84 64 57 mekanism:induction_casing
+setblock 84 64 58 mekanism:induction_casing
+setblock 84 65 54 mekanism:structural_glass
+setblock 84 65 58 mekanism:structural_glass
+setblock 84 66 54 mekanism:structural_glass
+setblock 84 66 58 mekanism:structural_glass
+setblock 84 67 54 mekanism:structural_glass
+setblock 84 67 58 mekanism:structural_glass
+setblock 84 68 54 mekanism:induction_casing
+setblock 84 68 55 mekanism:structural_glass
+setblock 84 68 56 mekanism:structural_glass
+setblock 84 68 57 mekanism:structural_glass
+setblock 84 68 58 mekanism:induction_casing
+setblock 85 64 54 mekanism:induction_casing
+setblock 85 64 55 mekanism:induction_casing
+setblock 85 64 56 mekanism:induction_casing
+setblock 85 64 57 mekanism:induction_casing
+setblock 85 64 58 mekanism:induction_casing
+setblock 85 65 54 mekanism:structural_glass
+setblock 85 65 58 mekanism:structural_glass
+setblock 85 66 54 mekanism:structural_glass
+setblock 85 66 58 mekanism:structural_glass
+setblock 85 67 54 mekanism:structural_glass
+setblock 85 67 58 mekanism:structural_glass
+setblock 85 68 54 mekanism:induction_casing
+setblock 85 68 55 mekanism:structural_glass
+setblock 85 68 56 mekanism:structural_glass
+setblock 85 68 57 mekanism:structural_glass
+setblock 85 68 58 mekanism:induction_casing
+setblock 86 64 54 mekanism:induction_casing
+setblock 86 64 55 mekanism:induction_casing
+setblock 86 64 56 mekanism:induction_casing
+setblock 86 64 57 mekanism:induction_casing
+setblock 86 64 58 mekanism:induction_casing
+setblock 86 65 54 mekanism:structural_glass
+setblock 86 65 58 mekanism:structural_glass
+setblock 86 66 54 mekanism:structural_glass
+setblock 86 66 58 mekanism:structural_glass
+setblock 86 67 54 mekanism:structural_glass
+setblock 86 67 58 mekanism:structural_glass
+setblock 86 68 54 mekanism:induction_casing
+setblock 86 68 55 mekanism:structural_glass
+setblock 86 68 56 mekanism:structural_glass
+setblock 86 68 57 mekanism:structural_glass
+setblock 86 68 58 mekanism:induction_casing
+setblock 87 64 54 mekanism:induction_casing
+setblock 87 64 55 mekanism:induction_casing
+setblock 87 64 56 mekanism:induction_casing
+setblock 87 64 57 mekanism:induction_casing
+setblock 87 64 58 mekanism:induction_casing
+setblock 87 65 54 mekanism:induction_casing
+setblock 87 65 55 mekanism:structural_glass
+setblock 87 65 56 mekanism:induction_port[active=false]
+setblock 87 65 57 mekanism:structural_glass
+setblock 87 65 58 mekanism:induction_casing
+setblock 87 66 54 mekanism:induction_casing
+setblock 87 66 55 mekanism:structural_glass
+setblock 87 66 56 mekanism:structural_glass
+setblock 87 66 57 mekanism:structural_glass
+setblock 87 66 58 mekanism:induction_casing
+setblock 87 67 54 mekanism:induction_casing
+setblock 87 67 55 mekanism:structural_glass
+setblock 87 67 56 mekanism:induction_port[active=true]
+setblock 87 67 57 mekanism:structural_glass
+setblock 87 67 58 mekanism:induction_casing
+setblock 87 68 54 mekanism:induction_casing
+setblock 87 68 55 mekanism:induction_casing
+setblock 87 68 56 mekanism:induction_casing
+setblock 87 68 57 mekanism:induction_casing
+setblock 87 68 58 mekanism:induction_casing
+setblock 84 65 55 mekanism:basic_induction_cell
+setblock 84 65 56 mekanism:basic_induction_provider
+setblock 84 65 57 mekanism:basic_induction_cell
+setblock 84 66 55 mekanism:basic_induction_cell
+setblock 84 66 56 mekanism:basic_induction_cell
+setblock 84 66 57 mekanism:basic_induction_cell
+setblock 84 67 55 mekanism:basic_induction_cell
+setblock 84 67 56 mekanism:basic_induction_cell
+setblock 84 67 57 mekanism:basic_induction_cell
+setblock 85 65 55 mekanism:basic_induction_cell
+setblock 85 65 56 mekanism:basic_induction_provider
+setblock 85 65 57 mekanism:basic_induction_cell
+setblock 85 66 55 mekanism:basic_induction_cell
+setblock 85 66 56 mekanism:basic_induction_cell
+setblock 85 66 57 mekanism:basic_induction_cell
+setblock 85 67 55 mekanism:basic_induction_cell
+setblock 85 67 56 mekanism:basic_induction_cell
+setblock 85 67 57 mekanism:basic_induction_cell
+setblock 86 65 55 mekanism:basic_induction_cell
+setblock 86 65 56 mekanism:basic_induction_provider
+setblock 86 65 57 mekanism:basic_induction_cell
+setblock 86 66 55 mekanism:basic_induction_cell
+setblock 86 66 56 mekanism:basic_induction_cell
+setblock 86 66 57 mekanism:basic_induction_cell
+setblock 86 67 55 mekanism:basic_induction_cell
+setblock 86 67 56 mekanism:basic_induction_cell
+setblock 86 67 57 mekanism:basic_induction_cell

@@ -1,14 +1,26 @@
-# 026 immersive/hammer
-#area -4 113 15 138
-fill -4 64 113 15 91 138 minecraft:air
-fill -4 60 113 15 62 138 minecraft:stone
-fill -4 63 113 15 63 138 minecraft:light_gray_concrete
-fill 0 64 119 15 79 119 minecraft:light_gray_concrete
-fill 0 64 119 0 79 132 minecraft:light_gray_concrete
-setblock 1 64 131 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "026"}','{"text": "immersive"}','{"text": "hammer"}','{"text": ""}']}}
-setblock 2 64 131 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "right-clicking"}','{"text": "a structure"}','{"text": "with the hammer"}','{"text": ""}']}}
-summon text_display 5.5 71 124.5 {text:'[{"text": "026  ", "color": "gold"}, {"text": "immersive/hammer", "color": "gray"}, {"text": "\\nBau einen Ingenieurshammer", "color": "white"}]',billboard:"center",background:1275068416,Tags:["kw_shot"],alignment:"center",line_width:200,transformation:{scale:[1.6f,1.6f,1.6f],translation:[0f,0f,0f],left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f]}}
-fill 10 64 119 10 79 132 minecraft:light_gray_concrete
-place template immersiveengineering:multiblocks/coke_oven 4 64 122 none
-setblock 5 64 126 minecraft:smooth_stone_slab
-summon item_display 5.5 65.04 126.5 {item:{id:"immersiveengineering:hammer",count:1},item_display:"fixed",billboard:"vertical",transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[1.2f,1.2f,1.2f]},brightness:{sky:15,block:15},Tags:["kw_shot"]}
+# 026 alfheim/frame
+#area 64 84 85 109
+fill 64 64 84 85 91 109 minecraft:air
+fill 64 60 84 85 62 109 minecraft:stone
+fill 64 63 84 85 63 109 minecraft:light_gray_concrete
+fill 68 64 90 85 79 90 minecraft:light_gray_concrete
+fill 68 64 90 68 79 103 minecraft:light_gray_concrete
+setblock 69 64 102 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "026"}','{"text": "alfheim"}','{"text": "frame"}','{"text": ""}']}}
+setblock 70 64 102 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "the finished"}','{"text": "gateway with"}','{"text": "two pools and"}','{"text": "natura pylons"}']}}
+fill 80 64 90 80 79 103 minecraft:light_gray_concrete
+setblock 74 64 94 botania:elven_gateway_core
+setblock 73 64 94 botania:livingwood_log[axis=x]
+setblock 73 68 94 botania:livingwood_log[axis=x]
+setblock 75 64 94 botania:livingwood_log[axis=x]
+setblock 75 68 94 botania:livingwood_log[axis=x]
+setblock 74 68 94 botania:glimmering_livingwood_log[axis=x]
+setblock 72 65 94 botania:livingwood_log[axis=y]
+setblock 72 66 94 botania:glimmering_livingwood_log[axis=y]
+setblock 72 67 94 botania:livingwood_log[axis=y]
+setblock 76 65 94 botania:livingwood_log[axis=y]
+setblock 76 66 94 botania:glimmering_livingwood_log[axis=y]
+setblock 76 67 94 botania:livingwood_log[axis=y]
+setblock 70 64 96 botania:mana_pool{mana:1000000}
+setblock 70 65 96 botania:natura_pylon
+setblock 78 64 96 botania:mana_pool{mana:1000000}
+setblock 78 65 96 botania:natura_pylon

@@ -1,21 +1,44 @@
-# 015 gaia/arena
-#area 43 53 68 84
-fill 43 64 53 68 91 84 minecraft:air
-fill 43 60 53 68 62 84 minecraft:stone
-fill 43 63 53 68 63 84 minecraft:light_gray_concrete
-fill 47 64 59 68 79 59 minecraft:light_gray_concrete
-fill 47 64 59 47 79 78 minecraft:light_gray_concrete
-setblock 48 64 77 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "015"}','{"text": "gaia"}','{"text": "arena"}','{"text": ""}']}}
-setblock 49 64 77 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "beacon with"}','{"text": "four pylons"}','{"text": "from above"}','{"text": ""}']}}
-summon text_display 55.5 71 67.5 {text:'[{"text": "015  ", "color": "gold"}, {"text": "gaia/arena", "color": "gray"}, {"text": "\\nBau die Arena", "color": "white"}]',billboard:"center",background:1275068416,Tags:["kw_shot"],alignment:"center",line_width:200,transformation:{scale:[1.6f,1.6f,1.6f],translation:[0f,0f,0f],left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f]}}
-fill 63 64 59 63 79 78 minecraft:light_gray_concrete
-fill 54 63 66 56 63 68 minecraft:iron_block
-setblock 55 64 67 minecraft:beacon
-setblock 51 64 63 minecraft:quartz_block
-setblock 51 65 63 botania:gaia_pylon
-setblock 51 64 71 minecraft:quartz_block
-setblock 51 65 71 botania:gaia_pylon
-setblock 59 64 63 minecraft:quartz_block
-setblock 59 65 63 botania:gaia_pylon
-setblock 59 64 71 minecraft:quartz_block
-setblock 59 65 71 botania:gaia_pylon
+# 015 mekanism/dynamic_tank
+#area -4 44 15 69
+fill -4 64 44 15 91 69 minecraft:air
+fill -4 60 44 15 62 69 minecraft:stone
+fill -4 63 44 15 63 69 minecraft:light_gray_concrete
+fill 0 64 50 15 79 50 minecraft:light_gray_concrete
+fill 0 64 50 0 79 63 minecraft:light_gray_concrete
+setblock 1 64 62 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "015"}','{"text": "mekanism"}','{"text": "dynamic_tank"}','{"text": ""}']}}
+setblock 2 64 62 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "a 3x3x3 dynamic"}','{"text": "tank with valve"}','{"text": "and structural"}','{"text": "glass"}']}}
+fill 10 64 50 10 79 63 minecraft:light_gray_concrete
+setblock 3 64 54 mekanism:dynamic_tank
+setblock 3 64 55 mekanism:dynamic_tank
+setblock 3 64 56 mekanism:dynamic_tank
+setblock 3 65 54 mekanism:dynamic_tank
+setblock 3 65 55 mekanism:structural_glass
+setblock 3 65 56 mekanism:dynamic_tank
+setblock 3 66 54 mekanism:dynamic_tank
+setblock 3 66 55 mekanism:dynamic_tank
+setblock 3 66 56 mekanism:dynamic_tank
+setblock 4 64 54 mekanism:dynamic_tank
+setblock 4 64 55 mekanism:dynamic_tank
+setblock 4 64 56 mekanism:dynamic_tank
+setblock 4 65 54 mekanism:structural_glass
+setblock 4 65 56 mekanism:structural_glass
+setblock 4 66 54 mekanism:dynamic_tank
+setblock 4 66 55 mekanism:structural_glass
+setblock 4 66 56 mekanism:dynamic_tank
+setblock 5 64 54 mekanism:dynamic_tank
+setblock 5 64 55 mekanism:dynamic_tank
+setblock 5 64 56 mekanism:dynamic_tank
+setblock 5 65 54 mekanism:structural_glass
+setblock 5 65 56 mekanism:dynamic_valve
+setblock 5 66 54 mekanism:dynamic_tank
+setblock 5 66 55 mekanism:structural_glass
+setblock 5 66 56 mekanism:dynamic_tank
+setblock 6 64 54 mekanism:dynamic_tank
+setblock 6 64 55 mekanism:dynamic_tank
+setblock 6 64 56 mekanism:dynamic_tank
+setblock 6 65 54 mekanism:dynamic_tank
+setblock 6 65 55 mekanism:structural_glass
+setblock 6 65 56 mekanism:dynamic_tank
+setblock 6 66 54 mekanism:dynamic_tank
+setblock 6 66 55 mekanism:dynamic_tank
+setblock 6 66 56 mekanism:dynamic_tank

@@ -1,15 +1,28 @@
-# 027 immersive/coke_oven
-#area 11 113 30 138
-fill 11 64 113 30 91 138 minecraft:air
-fill 11 60 113 30 62 138 minecraft:stone
-fill 11 63 113 30 63 138 minecraft:light_gray_concrete
-fill 15 64 119 30 79 119 minecraft:light_gray_concrete
-fill 15 64 119 15 79 132 minecraft:light_gray_concrete
-setblock 16 64 131 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "027"}','{"text": "immersive"}','{"text": "coke_oven"}','{"text": ""}']}}
-setblock 17 64 131 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "formed coke"}','{"text": "oven with GUI,"}','{"text": "the bucket"}','{"text": "slot, a pump"}']}}
-setblock 18 64 131 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "with pipes"}','{"text": ""}','{"text": ""}','{"text": ""}']}}
-summon text_display 20.5 71 124.5 {text:'[{"text": "027  ", "color": "gold"}, {"text": "immersive/coke_oven", "color": "gray"}, {"text": "\\nForm einen Koksofen", "color": "white"}]',billboard:"center",background:1275068416,Tags:["kw_shot"],alignment:"center",line_width:200,transformation:{scale:[1.6f,1.6f,1.6f],translation:[0f,0f,0f],left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f]}}
-fill 25 64 119 25 79 132 minecraft:light_gray_concrete
-place template immersiveengineering:multiblocks/coke_oven 19 64 122 none
-kw testworld use 20 65 124 south immersiveengineering:hammer
-execute unless block 20 65 124 immersiveengineering:cokebrick
+# 027 alfheim/open
+#area 81 84 102 109
+fill 81 64 84 102 91 109 minecraft:air
+fill 81 60 84 102 62 109 minecraft:stone
+fill 81 63 84 102 63 109 minecraft:light_gray_concrete
+fill 85 64 90 102 79 90 minecraft:light_gray_concrete
+fill 85 64 90 85 79 103 minecraft:light_gray_concrete
+setblock 86 64 102 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "027"}','{"text": "alfheim"}','{"text": "open"}','{"text": ""}']}}
+setblock 87 64 102 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "the open portal"}','{"text": "with an item"}','{"text": "flying out"}','{"text": ""}']}}
+fill 97 64 90 97 79 103 minecraft:light_gray_concrete
+setblock 91 64 94 botania:elven_gateway_core
+setblock 90 64 94 botania:livingwood_log[axis=x]
+setblock 90 68 94 botania:livingwood_log[axis=x]
+setblock 92 64 94 botania:livingwood_log[axis=x]
+setblock 92 68 94 botania:livingwood_log[axis=x]
+setblock 91 68 94 botania:glimmering_livingwood_log[axis=x]
+setblock 89 65 94 botania:livingwood_log[axis=y]
+setblock 89 66 94 botania:glimmering_livingwood_log[axis=y]
+setblock 89 67 94 botania:livingwood_log[axis=y]
+setblock 93 65 94 botania:livingwood_log[axis=y]
+setblock 93 66 94 botania:glimmering_livingwood_log[axis=y]
+setblock 93 67 94 botania:livingwood_log[axis=y]
+setblock 87 64 96 botania:mana_pool{mana:1000000}
+setblock 87 65 96 botania:natura_pylon
+setblock 95 64 96 botania:mana_pool{mana:1000000}
+setblock 95 65 96 botania:natura_pylon
+kw testworld use 91 64 94 south botania:wand_of_the_forest
+execute unless block 91 64 94 botania:elven_gateway_core[state=off]

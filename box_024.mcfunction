@@ -1,24 +1,28 @@
-# 024 occultism_afrit/storage
-#area 122 78 145 107
-fill 122 64 78 145 91 107 minecraft:air
-fill 122 60 78 145 62 107 minecraft:stone
-fill 122 63 78 145 63 107 minecraft:light_gray_concrete
-fill 126 64 84 145 79 84 minecraft:light_gray_concrete
-fill 126 64 84 126 79 101 minecraft:light_gray_concrete
-setblock 127 64 100 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "024"}','{"text": "occultism_afrit"}','{"text": "storage"}','{"text": ""}']}}
-setblock 128 64 100 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "storage"}','{"text": "actuator with"}','{"text": "four"}','{"text": "stabilizers"}']}}
-summon text_display 133.5 71 91.5 {text:'[{"text": "024  ", "color": "gold"}, {"text": "occultism_afrit/storage", "color": "gray"}, {"text": "\\nBau den Storage Actuator", "color": "white"}]',billboard:"center",background:1275068416,Tags:["kw_shot"],alignment:"center",line_width:200,transformation:{scale:[1.6f,1.6f,1.6f],translation:[0f,0f,0f],left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f]}}
-fill 140 64 84 140 79 101 minecraft:light_gray_concrete
-setblock 129 65 91 occultism:otherstone
-setblock 130 65 91 occultism:storage_stabilizer_tier1[facing=east]
-setblock 133 65 87 occultism:otherstone
-setblock 133 65 88 occultism:storage_stabilizer_tier1[facing=south]
-setblock 133 65 94 occultism:storage_stabilizer_tier1[facing=north]
-setblock 133 65 95 occultism:otherstone
-setblock 136 65 91 occultism:storage_stabilizer_tier1[facing=west]
-setblock 137 65 91 occultism:otherstone
-setblock 129 64 91 occultism:otherstone
-setblock 133 64 87 occultism:otherstone
-setblock 133 64 91 occultism:storage_controller
-setblock 133 64 95 occultism:otherstone
-setblock 137 64 91 occultism:otherstone
+# 024 botania_runes/terrasteel
+#area 26 84 47 109
+fill 26 64 84 47 91 109 minecraft:air
+fill 26 60 84 47 62 109 minecraft:stone
+fill 26 63 84 47 63 109 minecraft:light_gray_concrete
+fill 30 64 90 47 79 90 minecraft:light_gray_concrete
+fill 30 64 90 30 79 103 minecraft:light_gray_concrete
+setblock 31 64 102 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "024"}','{"text": "botania_runes"}','{"text": "terrasteel"}','{"text": ""}']}}
+setblock 32 64 102 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "the plate mid"}','{"text": "craft"}','{"text": ""}','{"text": ""}']}}
+fill 42 64 90 42 79 103 minecraft:light_gray_concrete
+setblock 35 64 94 botania:livingrock
+setblock 35 64 95 minecraft:lapis_block
+setblock 35 64 96 botania:livingrock
+setblock 36 64 94 minecraft:lapis_block
+setblock 36 64 95 botania:livingrock
+setblock 36 64 96 minecraft:lapis_block
+setblock 37 64 94 botania:livingrock
+setblock 37 64 95 minecraft:lapis_block
+setblock 37 64 96 botania:livingrock
+setblock 36 65 95 botania:terrestrial_agglomeration_plate
+summon botania:mana_spark 36.5 66.25 95.5 {Tags:["kw_shot"]}
+setblock 32 64 95 botania:mana_pool{mana:1000000}
+summon botania:mana_spark 32.5 65.25 95.5 {Tags:["kw_shot"]}
+setblock 40 64 95 botania:mana_pool{mana:1000000}
+summon botania:mana_spark 40.5 65.25 95.5 {Tags:["kw_shot"]}
+summon item 36.5 65.3 95.5 {Item:{id:"botania:manasteel_ingot",count:1},PickupDelay:32767,Age:-32768,Tags:["kw_shot"]}
+summon item 36.5 65.3 95.5 {Item:{id:"botania:mana_pearl",count:1},PickupDelay:32767,Age:-32768,Tags:["kw_shot"]}
+summon item 36.5 65.3 95.5 {Item:{id:"botania:mana_diamond",count:1},PickupDelay:32767,Age:-32768,Tags:["kw_shot"]}

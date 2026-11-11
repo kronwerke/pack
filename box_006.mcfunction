@@ -1,21 +1,18 @@
-# 006 mekanism_advanced/teleporter
-#area 11 13 30 38
-fill 11 64 13 30 91 38 minecraft:air
-fill 11 60 13 30 62 38 minecraft:stone
-fill 11 63 13 30 63 38 minecraft:light_gray_concrete
-fill 15 64 19 30 79 19 minecraft:light_gray_concrete
-fill 15 64 19 15 79 32 minecraft:light_gray_concrete
-setblock 16 64 31 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "006"}','{"text": "mekanism_advanced"}','{"text": "teleporter"}','{"text": ""}']}}
-setblock 17 64 31 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "built"}','{"text": "teleporter"}','{"text": "frame with"}','{"text": "portal"}']}}
-summon text_display 20.5 71 24.5 {text:'[{"text": "006  ", "color": "gold"}, {"text": "mekanism_advanced/teleporter", "color": "gray"}, {"text": "\\nStell zwei Teleporter auf", "color": "white"}]',billboard:"center",background:1275068416,Tags:["kw_shot"],alignment:"center",line_width:200,transformation:{scale:[1.6f,1.6f,1.6f],translation:[0f,0f,0f],left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f]}}
-fill 25 64 19 25 79 32 minecraft:light_gray_concrete
-setblock 20 64 24 mekanism:teleporter
-setblock 19 64 24 mekanism:teleporter_frame
-setblock 21 64 24 mekanism:teleporter_frame
-setblock 19 65 24 mekanism:teleporter_frame
-setblock 21 65 24 mekanism:teleporter_frame
-setblock 19 66 24 mekanism:teleporter_frame
-setblock 21 66 24 mekanism:teleporter_frame
-setblock 19 67 24 mekanism:teleporter_frame
-setblock 21 67 24 mekanism:teleporter_frame
-setblock 20 67 24 mekanism:teleporter_frame
+# 006 create/windmill
+#area 12 21 35 50
+fill 12 64 21 35 99 50 minecraft:air
+fill 12 60 21 35 62 50 minecraft:stone
+fill 12 63 21 35 63 50 minecraft:light_gray_concrete
+fill 16 64 27 35 87 27 minecraft:light_gray_concrete
+fill 16 64 27 16 87 44 minecraft:light_gray_concrete
+setblock 17 64 43 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "006"}','{"text": "create"}','{"text": "windmill"}','{"text": ""}']}}
+setblock 18 64 43 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "a finished"}','{"text": "windmill with"}','{"text": "32 sails"}','{"text": ""}']}}
+fill 30 64 27 30 87 44 minecraft:light_gray_concrete
+fill 23 64 33 23 69 33 minecraft:spruce_log[axis=y]
+setblock 23 70 33 create:windmill_bearing[facing=south]
+setblock 23 70 34 create:white_sail[facing=south]
+fill 23 71 34 24 74 34 create:white_sail[facing=south]
+fill 24 69 34 27 70 34 create:white_sail[facing=south]
+fill 22 66 34 23 69 34 create:white_sail[facing=south]
+fill 19 70 34 22 71 34 create:white_sail[facing=south]
+kw testworld use 23 70 33 south minecraft:air

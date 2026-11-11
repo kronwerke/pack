@@ -1,45 +1,26 @@
-# 005 mekanism/dynamic_tank
-#area -4 13 15 38
-fill -4 64 13 15 91 38 minecraft:air
-fill -4 60 13 15 62 38 minecraft:stone
-fill -4 63 13 15 63 38 minecraft:light_gray_concrete
-fill 0 64 19 15 79 19 minecraft:light_gray_concrete
-fill 0 64 19 0 79 32 minecraft:light_gray_concrete
-setblock 1 64 31 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "005"}','{"text": "mekanism"}','{"text": "dynamic_tank"}','{"text": ""}']}}
-setblock 2 64 31 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "a 3x3x3 dynamic"}','{"text": "tank with valve"}','{"text": "and structural"}','{"text": "glass"}']}}
-summon text_display 5.5 71 24.5 {text:'[{"text": "005  ", "color": "gold"}, {"text": "mekanism/dynamic_tank", "color": "gray"}, {"text": "\\nBau einen Dynamischen Tank", "color": "white"}]',billboard:"center",background:1275068416,Tags:["kw_shot"],alignment:"center",line_width:200,transformation:{scale:[1.6f,1.6f,1.6f],translation:[0f,0f,0f],left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f]}}
-fill 10 64 19 10 79 32 minecraft:light_gray_concrete
-setblock 3 64 23 mekanism:dynamic_tank
-setblock 3 64 24 mekanism:dynamic_tank
-setblock 3 64 25 mekanism:dynamic_tank
-setblock 3 65 23 mekanism:dynamic_tank
-setblock 3 65 24 mekanism:structural_glass
-setblock 3 65 25 mekanism:dynamic_tank
-setblock 3 66 23 mekanism:dynamic_tank
-setblock 3 66 24 mekanism:dynamic_tank
-setblock 3 66 25 mekanism:dynamic_tank
-setblock 4 64 23 mekanism:dynamic_tank
-setblock 4 64 24 mekanism:dynamic_tank
-setblock 4 64 25 mekanism:dynamic_tank
-setblock 4 65 23 mekanism:structural_glass
-setblock 4 65 25 mekanism:structural_glass
-setblock 4 66 23 mekanism:dynamic_tank
-setblock 4 66 24 mekanism:structural_glass
-setblock 4 66 25 mekanism:dynamic_tank
-setblock 5 64 23 mekanism:dynamic_tank
-setblock 5 64 24 mekanism:dynamic_tank
-setblock 5 64 25 mekanism:dynamic_tank
-setblock 5 65 23 mekanism:structural_glass
-setblock 5 65 25 mekanism:dynamic_valve
-setblock 5 66 23 mekanism:dynamic_tank
-setblock 5 66 24 mekanism:structural_glass
-setblock 5 66 25 mekanism:dynamic_tank
-setblock 6 64 23 mekanism:dynamic_tank
-setblock 6 64 24 mekanism:dynamic_tank
-setblock 6 64 25 mekanism:dynamic_tank
-setblock 6 65 23 mekanism:dynamic_tank
-setblock 6 65 24 mekanism:structural_glass
-setblock 6 65 25 mekanism:dynamic_tank
-setblock 6 66 23 mekanism:dynamic_tank
-setblock 6 66 24 mekanism:dynamic_tank
-setblock 6 66 25 mekanism:dynamic_tank
+# 005 create/water_wheel
+#area -4 21 16 46
+fill -4 64 21 16 91 46 minecraft:air
+fill -4 60 21 16 62 46 minecraft:stone
+fill -4 63 21 16 63 46 minecraft:light_gray_concrete
+fill 0 64 27 16 79 27 minecraft:light_gray_concrete
+fill 0 64 27 0 79 40 minecraft:light_gray_concrete
+setblock 1 64 39 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "005"}','{"text": "create"}','{"text": "water_wheel"}','{"text": ""}']}}
+setblock 2 64 39 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "four water"}','{"text": "wheels in a row"}','{"text": "with water over"}','{"text": "the paddles"}']}}
+setblock 3 64 39 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "from above"}','{"text": ""}','{"text": ""}','{"text": ""}']}}
+fill 11 64 27 11 79 40 minecraft:light_gray_concrete
+setblock 4 65 32 create:water_wheel[facing=east]
+setblock 4 63 31 minecraft:air
+setblock 5 65 32 create:water_wheel[facing=east]
+setblock 5 63 31 minecraft:air
+setblock 6 65 32 create:water_wheel[facing=east]
+setblock 6 63 31 minecraft:air
+setblock 7 65 32 create:water_wheel[facing=east]
+setblock 7 63 31 minecraft:air
+setblock 3 64 32 create:andesite_casing
+setblock 3 65 32 create:andesite_encased_shaft[axis=x]
+setblock 8 64 32 create:andesite_casing
+setblock 8 65 32 create:andesite_encased_shaft[axis=x]
+fill 3 66 30 8 66 31 minecraft:spruce_planks
+fill 4 66 32 7 66 32 minecraft:spruce_trapdoor[facing=south,half=bottom,open=true]
+fill 4 66 31 7 66 31 minecraft:water

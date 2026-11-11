@@ -1,20 +1,41 @@
-# 003 create/mixer
-#area 27 -6 46 19
-fill 27 64 -6 46 91 19 minecraft:air
-fill 27 60 -6 46 62 19 minecraft:stone
-fill 27 63 -6 46 63 19 minecraft:light_gray_concrete
-fill 31 64 0 46 79 0 minecraft:light_gray_concrete
-fill 31 64 0 31 79 13 minecraft:light_gray_concrete
-setblock 32 64 12 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "003"}','{"text": "create"}','{"text": "mixer"}','{"text": ""}']}}
-setblock 33 64 12 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "mixer, one"}','{"text": "block of air,"}','{"text": "basin"}','{"text": ""}']}}
-summon text_display 36.5 71 5.5 {text:'[{"text": "003  ", "color": "gold"}, {"text": "create/mixer", "color": "gray"}, {"text": "\\nBau den Mechanischen Mixer", "color": "white"}]',billboard:"center",background:1275068416,Tags:["kw_shot"],alignment:"center",line_width:200,transformation:{scale:[1.6f,1.6f,1.6f],translation:[0f,0f,0f],left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f]}}
-fill 41 64 0 41 79 13 minecraft:light_gray_concrete
-setblock 36 64 5 create:basin[facing=down]
-setblock 36 66 5 create:mechanical_mixer
-setblock 37 66 5 create:cogwheel[axis=y]
-setblock 37 63 5 create:shaft[axis=y]
-setblock 37 64 5 create:shaft[axis=y]
-setblock 37 65 5 create:shaft[axis=y]
-setblock 37 62 5 create:creative_motor[facing=up]{ScrollValue:32}
-summon item 36.5 65 5.5 {Item:{id:"minecraft:andesite",count:16},PickupDelay:32767,Age:-32768,Tags:["kw_shot"]}
-summon item 36.5 65.3 5.5 {Item:{id:"minecraft:iron_nugget",count:16},PickupDelay:32767,Age:-32768,Tags:["kw_shot"]}
+# 003 start_here/m_ritual
+#area 32 -6 53 21
+fill 32 64 -6 53 91 21 minecraft:air
+fill 32 60 -6 53 62 21 minecraft:stone
+fill 32 63 -6 53 63 21 minecraft:light_gray_concrete
+fill 36 64 0 53 79 0 minecraft:light_gray_concrete
+fill 36 64 0 36 79 15 minecraft:light_gray_concrete
+setblock 37 64 14 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "003"}','{"text": "start_here"}','{"text": "m_ritual"}','{"text": ""}']}}
+setblock 38 64 14 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "the gold powder"}','{"text": "ring with"}','{"text": "wooden stands"}','{"text": "and a sapling"}']}}
+setblock 39 64 14 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "in the middle"}','{"text": ""}','{"text": ""}','{"text": ""}']}}
+fill 48 64 0 48 79 15 minecraft:light_gray_concrete
+setblock 42 64 2 naturesaura:wood_stand
+setblock 39 64 3 naturesaura:wood_stand
+setblock 45 64 3 naturesaura:wood_stand
+setblock 41 64 4 naturesaura:gold_powder
+setblock 42 64 4 naturesaura:gold_powder
+setblock 43 64 4 naturesaura:gold_powder
+setblock 40 64 5 naturesaura:gold_powder
+setblock 41 64 5 naturesaura:gold_powder
+setblock 43 64 5 naturesaura:gold_powder
+setblock 44 64 5 naturesaura:gold_powder
+setblock 38 64 6 naturesaura:wood_stand
+setblock 40 64 6 naturesaura:gold_powder
+setblock 42 64 6 minecraft:oak_sapling
+setblock 44 64 6 naturesaura:gold_powder
+setblock 46 64 6 naturesaura:wood_stand
+setblock 40 64 7 naturesaura:gold_powder
+setblock 41 64 7 naturesaura:gold_powder
+setblock 43 64 7 naturesaura:gold_powder
+setblock 44 64 7 naturesaura:gold_powder
+setblock 41 64 8 naturesaura:gold_powder
+setblock 42 64 8 naturesaura:gold_powder
+setblock 43 64 8 naturesaura:gold_powder
+setblock 39 64 9 naturesaura:wood_stand
+setblock 45 64 9 naturesaura:wood_stand
+setblock 42 64 10 naturesaura:wood_stand
+setblock 42 63 6 minecraft:grass_block
+kw testworld use 42 64 2 up botania:livingrock
+kw testworld use 46 64 6 up naturesaura:gold_leaf
+kw testworld use 42 64 10 up minecraft:gold_ingot
+kw testworld use 38 64 6 up naturesaura:token_joy

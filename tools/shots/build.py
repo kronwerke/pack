@@ -343,7 +343,9 @@ def camera(key, cell, south_limit, yaw=165.0, fov=60):
         yaw = round(math.degrees(math.atan2(-(tx - ex), tz - ez)) % 360, 1)
         horiz = math.hypot(tx - ex, tz - ez)
         pitch = round(math.degrees(math.atan2(ey - ty, horiz)), 1)
-    return {"name": key.replace("/", "_"), "dim": "kronwerke:testworld",
+    # a run's tag in front of the name keeps its pictures apart from older ones on the server:
+    # /kw cam bundle <tag> then holds exactly this run
+    return {"name": os.environ.get("KW_SHOTS_TAG", "") + key.replace("/", "_"), "dim": "kronwerke:testworld",
             "pos": [round(ex, 2), round(ey - 1.62, 2), round(ez, 2)], "yaw": yaw, "pitch": round(pitch, 1),
             "fov": fov, "width": 640, "height": 360}
 

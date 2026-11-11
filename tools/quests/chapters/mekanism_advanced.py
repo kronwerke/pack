@@ -161,7 +161,7 @@ quests = [
           description=[
               "&6Teleporter:&r der Kern in der Mitte, Stahlgehäuse an den Seiten, Schaltkreise in die Ecken. &6Rahmen:&r acht Raffinierte Obsidianbarren um einen Raffinierten Glowstonebarren geben neun.",
               "",
-              "Bau einen Rahmen &e4 breit und 5 hoch&r mit einer Öffnung von 2 mal 3, der Teleporter ist einer der Rahmenblöcke. Gib beiden dieselbe &eFrequenz&r und Strom.",
+              "Bau einen Rahmen &e3 breit und 4 hoch&r mit einer Öffnung von 1 mal 2: der Teleporter unten in der Mitte, &e9 Rahmenblöcke&r links, rechts und oben. Gib beiden dieselbe &eFrequenz&r und Strom.",
               "",
               "Jeder Sprung kostet Strom, je weiter, desto mehr, in eine andere Dimension deutlich mehr.",
           ],

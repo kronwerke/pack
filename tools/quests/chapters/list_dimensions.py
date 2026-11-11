@@ -297,7 +297,7 @@ quests = [
     quest("r_mekanism", 10.5, 11, "&dBau einen Teleporter",
           subtitle="Mekanism: Rahmen, Frequenz, Strom. Stufe 3.",
           description=[
-              "&eSo geht es:&r Ein &6Teleportationskern&r (&eRezept auf Kronwerke:&r 4 Manaperlen, 2 Atomlegierungen, 2 Gold, Diamant) wird mit 4 Stahlgehäusen und 4 einfachen Schaltkreisen zum &6Teleporter&r. Dazu &e9 Teleporter-Rahmen&r aus raffiniertem Obsidian und Glowstone, als Rahmen 4 breit und 5 hoch, der Teleporter ist einer der Rahmenblöcke.",
+              "&eSo geht es:&r Ein &6Teleportationskern&r (&eRezept auf Kronwerke:&r 4 Manaperlen, 2 Atomlegierungen, 2 Gold, Diamant) wird mit 4 Stahlgehäusen und 4 einfachen Schaltkreisen zum &6Teleporter&r. Dazu &e9 Teleporter-Rahmen&r aus raffiniertem Obsidian und Glowstone, als Rahmen 3 breit und 4 hoch, der Teleporter unten in der Mitte.",
               "",
               "&eWarum:&r Zwei Teleporter mit derselben &eFrequenz&r verbinden zwei Basen oder zwei Dimensionen, ohne Level und ohne Wartezeit. Nur Strom, mehr je weiter. Der &6Tragbare Teleportierer&r springt von überall zu jedem Teleporter deiner Frequenz.",
               "",

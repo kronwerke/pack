@@ -107,35 +107,45 @@ def ie_scene(key, name, w=None, d=None):
 
 # ---- Occultism ------------------------------------------------------------------------
 
+def modonomicon(b, name, x, z, ground=None):
+    """A multiblock of the Dictionary of Spirits, as the book defines it: the layers of its
+    pattern from the top down, each row running along x and each character along z (the
+    stabilizer demo, whose stabilizers face the controller, shows which way round). The lowest
+    layer is the ground it stands on and goes into the floor. Returns its size along x and z."""
+    import structs
+    pattern, mapping = structs.modonomicon("occultism", f"data/occultism/modonomicon/multiblocks/{name}.json")
+    sign = 0
+    for li, layer in enumerate(pattern):
+        y = len(pattern) - 2 - li               # the last layer is the ground: y -1
+        for rx, row in enumerate(layer):
+            for rz, ch in enumerate(row):
+                if ch in "_ ":
+                    continue
+                m = mapping[ch]
+                block = m.get("display") or m.get("block")
+                if block is None:
+                    block = {"#minecraft:candles": "minecraft:white_candle[candles=1,lit=true]"}.get(m["tag"])
+                    if block is None:
+                        raise ValueError(f"{name}: no block for {ch} {m}")
+                if y == -1 and ground:
+                    block = ground
+                if "chalk_glyph" in block:
+                    block = f"{block}[facing=south,sign={sign % 13}]"
+                    sign += 5
+                elif block.endswith("_skull"):
+                    block += "[rotation=8]"            # looks south
+                b.b(x + rx, y, z + rz, block)
+    return len(pattern[0]), len(pattern[0][0])
+
+
 def pentacle(b, name, cx, cz, bowls=4):
     """A pentacle exactly as the Dictionary of Spirits defines it, on otherstone so the chalk
     reads, with the sacrificial bowls a ritual needs standing around it."""
     import structs
-    pattern, mapping = structs.modonomicon("occultism", f"data/occultism/modonomicon/multiblocks/{name}.json")
-    rows = pattern[0]                      # the top layer: glyphs, candles, skulls, the golden bowl
-    n = len(rows)
+    n = len(structs.modonomicon("occultism", f"data/occultism/modonomicon/multiblocks/{name}.json")[0][0])
     half = n // 2
     stage(b, cx - half - 1, cz - half - 1, cx + half + 1, cz + half + 1, "occultism:otherstone")
-    sign = 0
-    for rz, row in enumerate(rows):
-        for rx, ch in enumerate(row):
-            if ch in "_ ":
-                continue
-            m = mapping[ch]
-            block = m.get("display") or m.get("block")
-            if block is None:
-                tag = m["tag"]
-                block = {"#minecraft:candles": "minecraft:white_candle[candles=1,lit=true]"}.get(tag)
-                if block is None:
-                    raise ValueError(f"{name}: no block for {ch} {m}")
-            if "chalk_glyph" in block:
-                block = f"{block}[facing=south,sign={sign % 13}]"
-                sign += 5
-            elif block.endswith("skeleton_skull"):
-                block += "[rotation=8]"
-            elif block.endswith("wither_skeleton_skull"):
-                block += "[rotation=8]"
-            b.b(cx - half + rx, 0, cz - half + rz, block)
+    modonomicon(b, name, cx - half, cz - half, ground="occultism:otherstone")
     if bowls:
         r = half + 1
         for dx, dz in ((-r, -r), (r, -r), (-r, r), (r, r))[:bowls]:
@@ -162,6 +172,21 @@ pentacle_scene("occultism/ophyx", "summon_djinni")
 pentacle_scene("occultism/strigeor", "craft_djinni")
 pentacle_scene("occultism_afrit/kandar", "summon_unbound_afrit")
 pentacle_scene("occultism_afrit/marid_crusher", "summon_marid")
+
+
+@scene("occultism/spirit_fire")
+def _(b):
+    # spirit fire on the floor, andesite thrown in comes out as otherstone
+    b.b(4, 0, 4, "occultism:spirit_fire[color=white]")
+    b.drop(4, 1.5, 4, "minecraft:andesite", 8)
+    b.drop(5, 0.2, 5, "occultism:otherstone", 4)
+    b.focus(2, 0, 2, 6, 2, 6)
+
+
+@scene("occultism_afrit/storage", w=13, d=13)
+def _(b):
+    # the book's own demo: the actuator in the middle, four stabilizers on otherstone posts facing it
+    modonomicon(b, "storage_stabilizer_demo", 2, 2)
 
 
 # ===================================================================================
@@ -250,7 +275,7 @@ def _(b):
         pool(b, x, 0, 5)
         b.b(x, 1, 5, "botania:natura_pylon")
     b.use(5, 0, 3, "south", "botania:wand_of_the_forest")
-    b.changed(5, 1, 3, "minecraft:air")           # the portal fills the frame
+    b.changed(5, 0, 3, "botania:elven_gateway_core[state=off]")
 
 
 @scene("gaia/arena", w=15, d=15)

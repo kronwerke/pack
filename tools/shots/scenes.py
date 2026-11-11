@@ -33,7 +33,7 @@ def kit(*keys, blocks=(), items=(), mobs=(), note=None, w=9, d=9):
             z = 2 + (i // 4) * 3
             b.b(x, 0, z, bl)
         if items:
-            b.c(b.w - 1, 0, b.d - 1, list(items))
+            b.c(b.w - 1, 0, b.d - 1, list(items), frame=False)
         for i, mob in enumerate(mobs):
             ent, nbt = (mob, "") if isinstance(mob, str) else mob
             b.m(ent, 2 + i * 3, 0, b.d - 3, nbt)

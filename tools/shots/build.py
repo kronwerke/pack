@@ -109,36 +109,52 @@ class Cell:
         self.ox, self.oz, self.w, self.d = ox, oz, w, d
         self.cmds = []
         self.notes = []
+        self.pts = []      # what the camera has to frame, relative (x, y, z) corners
+
+    def _see(self, x1, y1, z1, x2=None, y2=None, z2=None):
+        self.pts.append((x1, y1, z1))
+        self.pts.append((x1 if x2 is None else x2, y1 if y2 is None else y2, z1 if z2 is None else z2))
 
     def _p(self, x, y, z):
         return f"{self.ox + x} {FLOOR_Y + 1 + y} {self.oz + z}"
 
     def b(self, x, y, z, block, nbt=""):
+        if not block.startswith("minecraft:air"):
+            self._see(x, y, z)
         self.cmds.append(f"setblock {self._p(x, y, z)} {block}{nbt}")
 
     def f(self, x1, y1, z1, x2, y2, z2, block):
+        if not block.startswith("minecraft:air"):
+            self._see(x1, y1, z1, x2, y2, z2)
         self.cmds.append(f"fill {self._p(x1, y1, z1)} {self._p(x2, y2, z2)} {block}")
 
     def t(self, template, x, y, z, rot="none"):
+        self._see(x, y, z, self.w - 1, y + 3, self.d - 1)   # the template's size is not known here
         self.cmds.append(f"place template {template} {self._p(x, y, z)} {rot}")
 
     def m(self, entity, x, y, z, nbt="", ai=False, rot=180):
+        self._see(x, y, z, x, y + 2, z)
         extra = "NoAI:1b," if not ai else ""
         tag = "{" + extra + f"PersistenceRequired:1b,Silent:1b,Tags:[\"kw_shot\"],Rotation:[{rot}f,0f]" + ("," + nbt if nbt else "") + "}"
         self.cmds.append(f"summon {entity} {self.ox + x + .5} {FLOOR_Y + 1 + y} {self.oz + z + .5} {tag}")
 
-    def c(self, x, y, z, items, block="minecraft:chest[facing=south]"):
+    def c(self, x, y, z, items, block="minecraft:chest[facing=south]", frame=True):
         slots = []
         for i, it in enumerate(items[:27]):
             iid, n = (it, 1) if isinstance(it, str) else it
             slots.append(f'{{Slot:{i}b,id:"{iid}",count:{n}}}')
+        n_pts = len(self.pts)
         self.b(x, y, z, block, "{Items:[" + ",".join(slots) + "]}")
+        if not frame:           # a chest of materials for the hand work, not part of the picture
+            del self.pts[n_pts:]
 
     def fr(self, x, y, z, facing, item):
         f = {"down": 0, "up": 1, "north": 2, "south": 3, "west": 4, "east": 5}[facing]
+        self._see(x, y, z)
         self.cmds.append(f"summon item_frame {self._p(x, y, z)} {{Facing:{f}b,Fixed:1b,Tags:[\"kw_shot\"],Item:{{id:\"{item}\",count:1}}}}")
 
     def stand(self, x, y, z, armor=(), hand=None, rot=180):
+        self._see(x, y, z, x, y + 2, z)
         a = list(armor) + [None] * (4 - len(armor))   # head, chest, legs, feet
         def it(i):
             return f'{{id:"{i}",count:1}}' if i else "{}"
@@ -166,21 +182,38 @@ def needs_screen(desc):
     return any(w.lower() in desc.lower() for w in SCREEN_WORDS)
 
 
-def camera(key, x0, z0, w, d, south_limit, yaw=165.0, fov=60):
-    """Where the camera stands for a cell: south of it (the boxes are open to the south), a
-    little east, looking down at its middle. Its distance is what the cell needs to fit
-    (fov is Minecraft's vertical field of view, 16:9 makes the horizontal one about 90
-    degrees), but never beyond the next row's wall: then it looks down more steeply."""
+def camera(key, cell, south_limit, yaw=165.0, fov=60):
+    """Where the camera stands for a cell: south of what the scene built (the boxes are open
+    to the south), a little east, looking down at it. The distance is what that content needs
+    to fill the frame (fov is Minecraft's vertical field of view; at 16:9 the horizontal one
+    is about 92 degrees), but never beyond the next row's wall: then it looks down more
+    steeply. A cell that built nothing is framed whole."""
     import math
-    tx, ty, tz = x0 + w / 2, FLOOR_Y + 1 + 1.5, z0 + d / 2
-    want = max(w * 0.75, d * 0.9) + 3            # horizontal distance for the whole cell
-    room = south_limit - tz                       # how far south the path allows
+    pts = cell.pts or [(0, 0, 0), (cell.w - 1, 2, cell.d - 1)]
+    xs, ys, zs = [p[0] for p in pts], [p[1] for p in pts], [p[2] for p in pts]
+    x1, x2 = cell.ox + min(xs), cell.ox + max(xs) + 1
+    y1, y2 = FLOOR_Y + 1 + min(ys), FLOOR_Y + 1 + max(ys) + 1
+    z1, z2 = cell.oz + min(zs), cell.oz + max(zs) + 1
+    W, H, D = max(2.0, x2 - x1), max(1.5, y2 - y1), max(2.0, z2 - z1)
+    tx, ty, tz = (x1 + x2) / 2, y1 + H * 0.4, (z1 + z2) / 2
+    vt = math.tan(math.radians(fov / 2))
+    ht = vt * 16 / 9
     yr = math.radians(yaw)
-    horiz = min(want, room / max(0.2, -math.cos(yr)))
-    pitch = 38.0 if horiz >= want else min(65.0, 38.0 + (want - horiz) * 4)
+    pitch = 35.0
+    room = south_limit - tz
+    for _ in range(40):
+        pr = math.radians(pitch)
+        # what has to fit: the width across, and depth and height as seen from this angle
+        across = W * abs(math.cos(yr)) + D * abs(math.sin(yr))
+        tall = D * math.sin(pr) + H * math.cos(pr)
+        dist = max(4.0, 1.2 * max(across / 2 / ht, tall / 2 / vt) + max(W, D) * 0.25)
+        horiz = dist * math.cos(pr)
+        if horiz * -math.cos(yr) <= room or pitch >= 70:
+            break
+        pitch += 2.5
     pr = math.radians(pitch)
-    up = horiz * math.tan(pr)
-    ex, ey, ez = tx - (-math.sin(yr)) * horiz, ty + up, tz - math.cos(yr) * horiz
+    horiz = dist * math.cos(pr)
+    ex, ey, ez = tx + math.sin(yr) * horiz, ty + dist * math.sin(pr), tz - math.cos(yr) * horiz
     return {"name": key.replace("/", "_"), "dim": "kronwerke:testworld",
             "pos": [round(ex, 2), round(ey - 1.62, 2), round(ez, 2)], "yaw": yaw, "pitch": round(pitch, 1),
             "fov": fov, "width": 640, "height": 360}
@@ -219,8 +252,8 @@ def build(check=False):
     def close_row():
         nonlocal x, z, row_depth, row_boxes, row_shots
         # the camera stands in the path south of the row, in front of the next row's north wall
-        for k, cx_, cz_, w_, d_ in row_shots:
-            shots.append(camera(k, cx_, cz_, w_, d_, south_limit=z + row_depth + ROW_GAP - 0.7))
+        for k, cell_ in row_shots:
+            shots.append(camera(k, cell_, south_limit=z + row_depth + ROW_GAP - 0.7))
         row_shots = []
         if row_boxes:
             rows.append({"boxes": row_boxes, "z0": z - 2, "z1": z + row_depth + 2,
@@ -281,7 +314,7 @@ def build(check=False):
                         f"{{text:'{label}',billboard:\"center\",background:1275068416,Tags:[\"kw_shot\"],alignment:\"center\",line_width:200,transformation:{{scale:[1.6f,1.6f,1.6f],translation:[0f,0f,0f],left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f]}}}}")
             cmds.extend(cell.cmds)
             if not needs_screen(desc):
-                row_shots.append((k, cx, z + 1, w, d))
+                row_shots.append((k, cell))
             cx += w + 1
         row_boxes.append(box)
         row_depth = max(row_depth, bd)

@@ -1,7 +1,7 @@
 # 042 create_brass/boiler
 fill 388 63 52 401 63 67 minecraft:light_gray_concrete
-fill 388 64 52 401 71 52 minecraft:light_gray_concrete
-fill 388 64 52 388 71 67 minecraft:light_gray_concrete
+fill 388 64 52 401 79 52 minecraft:light_gray_concrete
+fill 388 64 52 388 79 67 minecraft:light_gray_concrete
 setblock 389 64 66 minecraft:air
 setblock 389 64 66 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "042"}','{"text": "create_brass"}','{"text": "boiler"}','{"text": ""}']}}
 setblock 390 64 66 minecraft:air

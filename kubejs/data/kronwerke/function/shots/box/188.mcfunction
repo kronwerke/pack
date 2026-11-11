@@ -1,7 +1,7 @@
 # 188 enderio/grains, capacitor, smelter, cap_bank, conduits, filter, sag_mill, vial, soul_binder, vacuum_chest, enchanter
 fill 230 63 336 341 63 349 minecraft:light_gray_concrete
-fill 230 64 336 341 71 336 minecraft:light_gray_concrete
-fill 230 64 336 230 71 349 minecraft:light_gray_concrete
+fill 230 64 336 341 79 336 minecraft:light_gray_concrete
+fill 230 64 336 230 79 349 minecraft:light_gray_concrete
 setblock 231 64 348 minecraft:air
 setblock 231 64 348 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "188.1"}','{"text": "enderio"}','{"text": "grains"}','{"text": ""}']}}
 setblock 232 64 348 minecraft:air
@@ -37,7 +37,7 @@ fill 252 64 338 258 64 338 minecraft:polished_blackstone
 fill 252 67 338 258 67 338 minecraft:polished_blackstone
 setblock 252 64 341 minecraft:lantern
 setblock 258 64 341 minecraft:lantern
-setblock 254 64 340 enderio:alloy_smelter
+summon glow_item_frame 254 66 339 {Facing:3b,Fixed:1b,Tags:["kw_shot"],Item:{id:"enderio:alloy_smelter",count:1}}
 setblock 261 64 348 minecraft:air
 setblock 261 64 348 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "188.4"}','{"text": "enderio"}','{"text": "cap_bank"}','{"text": ""}']}}
 setblock 262 64 348 minecraft:air
@@ -49,7 +49,7 @@ fill 262 64 338 268 64 338 minecraft:polished_blackstone
 fill 262 67 338 268 67 338 minecraft:polished_blackstone
 setblock 262 64 341 minecraft:lantern
 setblock 268 64 341 minecraft:lantern
-setblock 264 64 340 enderio:basic_capacitor_bank
+summon glow_item_frame 264 66 339 {Facing:3b,Fixed:1b,Tags:["kw_shot"],Item:{id:"enderio:basic_capacitor_bank",count:1}}
 setblock 271 64 348 minecraft:air
 setblock 271 64 348 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "188.5"}','{"text": "enderio"}','{"text": "conduits"}','{"text": ""}']}}
 setblock 272 64 348 minecraft:air
@@ -81,8 +81,8 @@ fill 292 64 338 298 64 338 minecraft:polished_blackstone
 fill 292 67 338 298 67 338 minecraft:polished_blackstone
 setblock 292 64 341 minecraft:lantern
 setblock 298 64 341 minecraft:lantern
-setblock 294 64 340 enderio:sag_mill
-summon glow_item_frame 294 66 339 {Facing:3b,Fixed:1b,Tags:["kw_shot"],Item:{id:"enderio:silicon",count:1}}
+summon glow_item_frame 293 66 339 {Facing:3b,Fixed:1b,Tags:["kw_shot"],Item:{id:"enderio:sag_mill",count:1}}
+summon glow_item_frame 295 66 339 {Facing:3b,Fixed:1b,Tags:["kw_shot"],Item:{id:"enderio:silicon",count:1}}
 setblock 301 64 348 minecraft:air
 setblock 301 64 348 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "188.8"}','{"text": "enderio"}','{"text": "vial"}','{"text": ""}']}}
 setblock 302 64 348 minecraft:air
@@ -106,7 +106,7 @@ fill 312 64 338 318 64 338 minecraft:polished_blackstone
 fill 312 67 338 318 67 338 minecraft:polished_blackstone
 setblock 312 64 341 minecraft:lantern
 setblock 318 64 341 minecraft:lantern
-setblock 314 64 340 enderio:soul_binder
+summon glow_item_frame 314 66 339 {Facing:3b,Fixed:1b,Tags:["kw_shot"],Item:{id:"enderio:soul_binder",count:1}}
 setblock 321 64 348 minecraft:air
 setblock 321 64 348 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "188.10"}','{"text": "enderio"}','{"text": "vacuum_chest"}','{"text": ""}']}}
 setblock 322 64 348 minecraft:air
@@ -118,7 +118,7 @@ fill 322 64 338 328 64 338 minecraft:polished_blackstone
 fill 322 67 338 328 67 338 minecraft:polished_blackstone
 setblock 322 64 341 minecraft:lantern
 setblock 328 64 341 minecraft:lantern
-setblock 324 64 340 enderio:vacuum_chest
+summon glow_item_frame 324 66 339 {Facing:3b,Fixed:1b,Tags:["kw_shot"],Item:{id:"enderio:vacuum_chest",count:1}}
 setblock 331 64 348 minecraft:air
 setblock 331 64 348 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "188.11"}','{"text": "enderio"}','{"text": "enchanter"}','{"text": ""}']}}
 setblock 332 64 348 minecraft:air
@@ -130,4 +130,4 @@ fill 332 64 338 338 64 338 minecraft:polished_blackstone
 fill 332 67 338 338 67 338 minecraft:polished_blackstone
 setblock 332 64 341 minecraft:lantern
 setblock 338 64 341 minecraft:lantern
-setblock 334 64 340 enderio:enchanter
+summon glow_item_frame 334 66 339 {Facing:3b,Fixed:1b,Tags:["kw_shot"],Item:{id:"enderio:enchanter",count:1}}

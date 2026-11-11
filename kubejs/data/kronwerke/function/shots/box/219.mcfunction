@@ -1,7 +1,7 @@
 # 219 silent_gear/stone_anvil, pickaxe, reading_stats, crude_mixer, hammer, repair_kit, alloy_forge, charger
 fill 0 63 510 81 63 523 minecraft:light_gray_concrete
-fill 0 64 510 81 71 510 minecraft:light_gray_concrete
-fill 0 64 510 0 71 523 minecraft:light_gray_concrete
+fill 0 64 510 81 79 510 minecraft:light_gray_concrete
+fill 0 64 510 0 79 523 minecraft:light_gray_concrete
 setblock 1 64 522 minecraft:air
 setblock 1 64 522 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "219.1"}','{"text": "silent_gear"}','{"text": "stone_anvil"}','{"text": ""}']}}
 setblock 2 64 522 minecraft:air
@@ -41,7 +41,7 @@ fill 32 64 512 38 64 512 minecraft:polished_blackstone
 fill 32 67 512 38 67 512 minecraft:polished_blackstone
 setblock 32 64 515 minecraft:lantern
 setblock 38 64 515 minecraft:lantern
-setblock 34 64 514 silentgear:crude_mixer
+summon glow_item_frame 34 66 513 {Facing:3b,Fixed:1b,Tags:["kw_shot"],Item:{id:"silentgear:crude_mixer",count:1}}
 setblock 41 64 522 minecraft:air
 setblock 41 64 522 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "219.5"}','{"text": "silent_gear"}','{"text": "hammer"}','{"text": ""}']}}
 setblock 42 64 522 minecraft:air
@@ -73,7 +73,7 @@ fill 62 64 512 68 64 512 minecraft:polished_blackstone
 fill 62 67 512 68 67 512 minecraft:polished_blackstone
 setblock 62 64 515 minecraft:lantern
 setblock 68 64 515 minecraft:lantern
-setblock 64 64 514 silentgear:alloy_forge
+summon glow_item_frame 64 66 513 {Facing:3b,Fixed:1b,Tags:["kw_shot"],Item:{id:"minecraft:blast_furnace",count:1}}
 setblock 71 64 522 minecraft:air
 setblock 71 64 522 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "219.8"}','{"text": "silent_gear"}','{"text": "charger"}','{"text": ""}']}}
 setblock 72 64 522 minecraft:air
@@ -85,4 +85,4 @@ fill 72 64 512 78 64 512 minecraft:polished_blackstone
 fill 72 67 512 78 67 512 minecraft:polished_blackstone
 setblock 72 64 515 minecraft:lantern
 setblock 78 64 515 minecraft:lantern
-setblock 74 64 514 silentgear:starlight_charger
+summon glow_item_frame 74 66 513 {Facing:3b,Fixed:1b,Tags:["kw_shot"],Item:{id:"silentgear:starlight_charger",count:1}}

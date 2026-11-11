@@ -1,7 +1,7 @@
 # 069 mekanism_advanced/teleporter
 fill 208 63 108 219 63 121 minecraft:light_gray_concrete
-fill 208 64 108 219 71 108 minecraft:light_gray_concrete
-fill 208 64 108 208 71 121 minecraft:light_gray_concrete
+fill 208 64 108 219 79 108 minecraft:light_gray_concrete
+fill 208 64 108 208 79 121 minecraft:light_gray_concrete
 setblock 209 64 120 minecraft:air
 setblock 209 64 120 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "069"}','{"text": "mekanism_advanced"}','{"text": "teleporter"}','{"text": ""}']}}
 setblock 210 64 120 minecraft:air

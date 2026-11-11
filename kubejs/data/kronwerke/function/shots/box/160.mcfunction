@@ -1,7 +1,7 @@
 # 160 hexerei/sage_plate
 fill 300 63 242 311 63 255 minecraft:light_gray_concrete
-fill 300 64 242 311 71 242 minecraft:light_gray_concrete
-fill 300 64 242 300 71 255 minecraft:light_gray_concrete
+fill 300 64 242 311 79 242 minecraft:light_gray_concrete
+fill 300 64 242 300 79 255 minecraft:light_gray_concrete
 setblock 301 64 254 minecraft:air
 setblock 301 64 254 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "160"}','{"text": "hexerei"}','{"text": "sage_plate"}','{"text": ""}']}}
 setblock 302 64 254 minecraft:air

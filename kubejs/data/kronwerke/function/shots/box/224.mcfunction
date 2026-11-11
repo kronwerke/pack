@@ -1,7 +1,7 @@
 # 224 list_gear/mek_jetpack, drilling, mekasuit, wyvern, sg_end
 fill 355 63 510 406 63 523 minecraft:light_gray_concrete
-fill 355 64 510 406 71 510 minecraft:light_gray_concrete
-fill 355 64 510 355 71 523 minecraft:light_gray_concrete
+fill 355 64 510 406 79 510 minecraft:light_gray_concrete
+fill 355 64 510 355 79 523 minecraft:light_gray_concrete
 setblock 356 64 522 minecraft:air
 setblock 356 64 522 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "224.1"}','{"text": "list_gear"}','{"text": "mek_jetpack"}','{"text": ""}']}}
 setblock 357 64 522 minecraft:air

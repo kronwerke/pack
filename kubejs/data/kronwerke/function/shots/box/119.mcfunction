@@ -1,7 +1,7 @@
 # 119 botania/manasteel_prep
 fill 96 63 186 107 63 199 minecraft:light_gray_concrete
-fill 96 64 186 107 71 186 minecraft:light_gray_concrete
-fill 96 64 186 96 71 199 minecraft:light_gray_concrete
+fill 96 64 186 107 79 186 minecraft:light_gray_concrete
+fill 96 64 186 96 79 199 minecraft:light_gray_concrete
 setblock 97 64 198 minecraft:air
 setblock 97 64 198 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "119"}','{"text": "botania"}','{"text": "manasteel_prep"}','{"text": ""}']}}
 setblock 98 64 198 minecraft:air

@@ -1,7 +1,7 @@
 # 196 list_power/steam_engine, mek_heat, ie_thermo, alternator, powah_reactor, flux, mekmm_large, nc_passive, draconic_core
 fill 0 63 376 99 63 395 minecraft:light_gray_concrete
-fill 0 64 376 99 71 376 minecraft:light_gray_concrete
-fill 0 64 376 0 71 395 minecraft:light_gray_concrete
+fill 0 64 376 99 79 376 minecraft:light_gray_concrete
+fill 0 64 376 0 79 395 minecraft:light_gray_concrete
 setblock 1 64 394 minecraft:air
 setblock 1 64 394 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "196.1"}','{"text": "list_power"}','{"text": "steam_engine"}','{"text": ""}']}}
 setblock 2 64 394 minecraft:air
@@ -31,7 +31,7 @@ fill 24 64 378 30 64 378 minecraft:polished_blackstone
 fill 24 67 378 30 67 378 minecraft:polished_blackstone
 setblock 24 64 381 minecraft:lantern
 setblock 30 64 381 minecraft:lantern
-setblock 26 64 380 minecraft:lightning_rod
+summon glow_item_frame 26 66 379 {Facing:3b,Fixed:1b,Tags:["kw_shot"],Item:{id:"minecraft:lightning_rod",count:1}}
 setblock 33 64 394 minecraft:air
 setblock 33 64 394 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "196.4"}','{"text": "list_power"}','{"text": "alternator"}','{"text": ""}']}}
 setblock 34 64 394 minecraft:air
@@ -43,7 +43,7 @@ fill 34 64 378 40 64 378 minecraft:polished_blackstone
 fill 34 67 378 40 67 378 minecraft:polished_blackstone
 setblock 34 64 381 minecraft:lantern
 setblock 40 64 381 minecraft:lantern
-setblock 36 64 380 create:cogwheel
+summon glow_item_frame 36 66 379 {Facing:3b,Fixed:1b,Tags:["kw_shot"],Item:{id:"create:cogwheel",count:1}}
 setblock 43 64 394 minecraft:air
 setblock 43 64 394 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "196.5"}','{"text": "list_power"}','{"text": "powah_reactor"}','{"text": ""}']}}
 setblock 44 64 394 minecraft:air
@@ -79,7 +79,7 @@ fill 64 64 378 70 64 378 minecraft:polished_blackstone
 fill 64 67 378 70 67 378 minecraft:polished_blackstone
 setblock 64 64 381 minecraft:lantern
 setblock 70 64 381 minecraft:lantern
-setblock 66 64 380 create:encased_fan
+summon glow_item_frame 66 66 379 {Facing:3b,Fixed:1b,Tags:["kw_shot"],Item:{id:"create:encased_fan",count:1}}
 setblock 73 64 394 minecraft:air
 setblock 73 64 394 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "196.8"}','{"text": "list_power"}','{"text": "nc_passive"}','{"text": ""}']}}
 setblock 74 64 394 minecraft:air
@@ -91,7 +91,7 @@ fill 74 64 378 80 64 378 minecraft:polished_blackstone
 fill 74 67 378 80 67 378 minecraft:polished_blackstone
 setblock 74 64 381 minecraft:lantern
 setblock 80 64 381 minecraft:lantern
-setblock 76 64 380 minecraft:daylight_detector
+summon glow_item_frame 76 66 379 {Facing:3b,Fixed:1b,Tags:["kw_shot"],Item:{id:"minecraft:daylight_detector",count:1}}
 setblock 83 64 394 minecraft:air
 setblock 83 64 394 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "196.9"}','{"text": "list_power"}','{"text": "draconic_core"}','{"text": ""}']}}
 setblock 84 64 394 minecraft:air

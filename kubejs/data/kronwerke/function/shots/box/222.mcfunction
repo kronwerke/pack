@@ -1,7 +1,7 @@
 # 222 eidolon/brazier, soul_shard, crucible, altar, prayer, stone_altar
 fill 225 63 510 286 63 523 minecraft:light_gray_concrete
-fill 225 64 510 286 71 510 minecraft:light_gray_concrete
-fill 225 64 510 225 71 523 minecraft:light_gray_concrete
+fill 225 64 510 286 79 510 minecraft:light_gray_concrete
+fill 225 64 510 225 79 523 minecraft:light_gray_concrete
 setblock 226 64 522 minecraft:air
 setblock 226 64 522 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "222.1"}','{"text": "eidolon"}','{"text": "brazier"}','{"text": ""}']}}
 setblock 227 64 522 minecraft:air

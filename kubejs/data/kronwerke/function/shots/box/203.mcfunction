@@ -1,7 +1,7 @@
 # 203 hostile_networks/deep_learner, learner_gui, sim_chamber, scaling, loot_fab, data_center
 fill 0 63 401 61 63 414 minecraft:light_gray_concrete
-fill 0 64 401 61 71 401 minecraft:light_gray_concrete
-fill 0 64 401 0 71 414 minecraft:light_gray_concrete
+fill 0 64 401 61 79 401 minecraft:light_gray_concrete
+fill 0 64 401 0 79 414 minecraft:light_gray_concrete
 setblock 1 64 413 minecraft:air
 setblock 1 64 413 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "203.1"}','{"text": "hostile_networks"}','{"text": "deep_learner"}','{"text": ""}']}}
 setblock 2 64 413 minecraft:air
@@ -37,7 +37,7 @@ fill 22 64 403 28 64 403 minecraft:polished_blackstone
 fill 22 67 403 28 67 403 minecraft:polished_blackstone
 setblock 22 64 406 minecraft:lantern
 setblock 28 64 406 minecraft:lantern
-setblock 24 64 405 minecraft:comparator
+summon glow_item_frame 24 66 404 {Facing:3b,Fixed:1b,Tags:["kw_shot"],Item:{id:"minecraft:comparator",count:1}}
 setblock 31 64 413 minecraft:air
 setblock 31 64 413 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "203.4"}','{"text": "hostile_networks"}','{"text": "scaling"}','{"text": ""}']}}
 setblock 32 64 413 minecraft:air
@@ -49,7 +49,7 @@ fill 32 64 403 38 64 403 minecraft:polished_blackstone
 fill 32 67 403 38 67 403 minecraft:polished_blackstone
 setblock 32 64 406 minecraft:lantern
 setblock 38 64 406 minecraft:lantern
-setblock 34 64 405 minecraft:hopper
+summon glow_item_frame 34 66 404 {Facing:3b,Fixed:1b,Tags:["kw_shot"],Item:{id:"minecraft:hopper",count:1}}
 setblock 41 64 413 minecraft:air
 setblock 41 64 413 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "203.5"}','{"text": "hostile_networks"}','{"text": "loot_fab"}','{"text": ""}']}}
 setblock 42 64 413 minecraft:air
@@ -61,7 +61,7 @@ fill 42 64 403 48 64 403 minecraft:polished_blackstone
 fill 42 67 403 48 67 403 minecraft:polished_blackstone
 setblock 42 64 406 minecraft:lantern
 setblock 48 64 406 minecraft:lantern
-setblock 44 64 405 minecraft:anvil
+summon glow_item_frame 44 66 404 {Facing:3b,Fixed:1b,Tags:["kw_shot"],Item:{id:"minecraft:anvil",count:1}}
 setblock 51 64 413 minecraft:air
 setblock 51 64 413 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "203.6"}','{"text": "hostile_networks"}','{"text": "data_center"}','{"text": ""}']}}
 setblock 52 64 413 minecraft:air
@@ -73,4 +73,4 @@ fill 52 64 403 58 64 403 minecraft:polished_blackstone
 fill 52 67 403 58 67 403 minecraft:polished_blackstone
 setblock 52 64 406 minecraft:lantern
 setblock 58 64 406 minecraft:lantern
-setblock 54 64 405 minecraft:black_stained_glass
+summon glow_item_frame 54 66 404 {Facing:3b,Fixed:1b,Tags:["kw_shot"],Item:{id:"minecraft:black_stained_glass",count:1}}

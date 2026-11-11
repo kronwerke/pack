@@ -474,7 +474,7 @@ quests = [
           description=[
               "Du kennst jetzt das Buch, JEI, die Karte, die Regeln und die Tasten. Alles andere lernst du beim Spielen, und niemand erwartet, dass du 230 Mods kennst.",
               "",
-              "Wenn du nicht weiterkommst: Erst &eR&r und &eU&r in JEI, dann das passende &eKapitel&r im Buch, dann der &eChat&r oder der &eSprachchat&r. Dreißig Leute auf dem Server, einer hat die Maschine garantiert schon gebaut. Für alles Technische (Absturz, Installation, Whitelist) ist der &9Discord&r da, auf &ekronwerke.elchi.dev&r stehen die häufigsten Fragen und der Stand des Obelisken.",
+              "Wenn du nicht weiterkommst: Erst &eR&r und &eU&r in JEI, dann das passende &eKapitel&r im Buch, dann der &eChat&r oder der &eSprachchat&r. Dreißig Leute auf dem Server, einer hat die Maschine garantiert schon gebaut. Für alles Technische (Absturz, Installation, Whitelist) ist der &9Discord&r da, auf &ekronwerke.com&r stehen die häufigsten Fragen und der Stand des Obelisken.",
               "",
               "Und umgekehrt: Wenn dich jemand im Chat fragt, wie ein Wasserrad geht, antworte. So funktioniert Kronwerke.",
           ],

@@ -1,7 +1,7 @@
 # 074 mekanism_advanced/cnc_stamper
 fill 283 63 108 294 63 121 minecraft:light_gray_concrete
-fill 283 64 108 294 71 108 minecraft:light_gray_concrete
-fill 283 64 108 283 71 121 minecraft:light_gray_concrete
+fill 283 64 108 294 79 108 minecraft:light_gray_concrete
+fill 283 64 108 283 79 121 minecraft:light_gray_concrete
 setblock 284 64 120 minecraft:air
 setblock 284 64 120 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "074"}','{"text": "mekanism_advanced"}','{"text": "cnc_stamper"}','{"text": ""}']}}
 setblock 285 64 120 minecraft:air

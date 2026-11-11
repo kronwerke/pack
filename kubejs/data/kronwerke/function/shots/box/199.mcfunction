@@ -1,7 +1,7 @@
 # 199 flux_networks/sides, wireless, stats
 fill 137 63 376 180 63 389 minecraft:light_gray_concrete
-fill 137 64 376 180 71 376 minecraft:light_gray_concrete
-fill 137 64 376 137 71 389 minecraft:light_gray_concrete
+fill 137 64 376 180 79 376 minecraft:light_gray_concrete
+fill 137 64 376 137 79 389 minecraft:light_gray_concrete
 setblock 138 64 388 minecraft:air
 setblock 138 64 388 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "199.1"}','{"text": "flux_networks"}','{"text": "sides"}','{"text": ""}']}}
 setblock 139 64 388 minecraft:air

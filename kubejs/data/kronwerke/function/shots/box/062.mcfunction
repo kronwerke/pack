@@ -1,7 +1,7 @@
 # 062 mekanism_ores/line2
 fill 79 63 108 94 63 121 minecraft:light_gray_concrete
-fill 79 64 108 94 71 108 minecraft:light_gray_concrete
-fill 79 64 108 79 71 121 minecraft:light_gray_concrete
+fill 79 64 108 94 79 108 minecraft:light_gray_concrete
+fill 79 64 108 79 79 121 minecraft:light_gray_concrete
 setblock 80 64 120 minecraft:air
 setblock 80 64 120 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "062"}','{"text": "mekanism_ores"}','{"text": "line2"}','{"text": ""}']}}
 setblock 81 64 120 minecraft:air

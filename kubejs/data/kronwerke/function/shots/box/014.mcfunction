@@ -1,7 +1,7 @@
 # 014 farms/animals_thorn
 fill 66 63 31 79 63 46 minecraft:light_gray_concrete
-fill 66 64 31 79 71 31 minecraft:light_gray_concrete
-fill 66 64 31 66 71 46 minecraft:light_gray_concrete
+fill 66 64 31 79 79 31 minecraft:light_gray_concrete
+fill 66 64 31 66 79 46 minecraft:light_gray_concrete
 setblock 67 64 45 minecraft:air
 setblock 67 64 45 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "014"}','{"text": "farms"}','{"text": "animals_thorn"}','{"text": ""}']}}
 setblock 68 64 45 minecraft:air

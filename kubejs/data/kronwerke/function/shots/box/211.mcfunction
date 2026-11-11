@@ -1,12 +1,12 @@
 # 211 list_dimensions/d_mining, d_aether, d_undergarden, d_otherside, r_plates, r_mekanism, r_enderio, r_chunks
 fill 279 63 439 360 63 452 minecraft:light_gray_concrete
-fill 279 64 439 360 71 439 minecraft:light_gray_concrete
-fill 279 64 439 279 71 452 minecraft:light_gray_concrete
+fill 279 64 439 360 79 439 minecraft:light_gray_concrete
+fill 279 64 439 279 79 452 minecraft:light_gray_concrete
 setblock 280 64 451 minecraft:air
 setblock 280 64 451 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "211.1"}','{"text": "list_dimensions"}','{"text": "d_mining"}','{"text": ""}']}}
 setblock 281 64 451 minecraft:air
-setblock 281 64 451 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Öffne die"}','{"text": "Minenwelt"}','{"text": ""}','{"text": ""}']}}
-summon text_display 284.5 71 444.5 {text:'[{"text": "211.1  ", "color": "gold"}, {"text": "list_dimensions/d_mining", "color": "gray"}, {"text": "\\nÖffne die Minendimension", "color": "white"}]',billboard:"center",background:1275068416,Tags:["kw_shot"],alignment:"center",line_width:200,transformation:{scale:[1.6f,1.6f,1.6f],translation:[0f,0f,0f],left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f]}}
+setblock 281 64 451 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Die Minenwelt"}','{"text": ""}','{"text": ""}','{"text": ""}']}}
+summon text_display 284.5 71 444.5 {text:'[{"text": "211.1  ", "color": "gold"}, {"text": "list_dimensions/d_mining", "color": "gray"}, {"text": "\\nDie Minenwelt", "color": "white"}]',billboard:"center",background:1275068416,Tags:["kw_shot"],alignment:"center",line_width:200,transformation:{scale:[1.6f,1.6f,1.6f],translation:[0f,0f,0f],left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f]}}
 fill 281 63 441 287 63 444 minecraft:polished_deepslate
 fill 281 64 441 287 67 441 minecraft:deepslate_tiles
 fill 281 64 441 287 64 441 minecraft:polished_blackstone
@@ -37,7 +37,7 @@ fill 301 64 441 307 64 441 minecraft:polished_blackstone
 fill 301 67 441 307 67 441 minecraft:polished_blackstone
 setblock 301 64 444 minecraft:lantern
 setblock 307 64 444 minecraft:lantern
-setblock 303 64 443 minecraft:stone_bricks
+summon glow_item_frame 303 66 442 {Facing:3b,Fixed:1b,Tags:["kw_shot"],Item:{id:"minecraft:stone_bricks",count:1}}
 setblock 310 64 451 minecraft:air
 setblock 310 64 451 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "211.4"}','{"text": "list_dimensions"}','{"text": "d_otherside"}','{"text": ""}']}}
 setblock 311 64 451 minecraft:air
@@ -49,7 +49,7 @@ fill 311 64 441 317 64 441 minecraft:polished_blackstone
 fill 311 67 441 317 67 441 minecraft:polished_blackstone
 setblock 311 64 444 minecraft:lantern
 setblock 317 64 444 minecraft:lantern
-setblock 313 64 443 minecraft:reinforced_deepslate
+summon glow_item_frame 313 66 442 {Facing:3b,Fixed:1b,Tags:["kw_shot"],Item:{id:"minecraft:reinforced_deepslate",count:1}}
 setblock 320 64 451 minecraft:air
 setblock 320 64 451 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "211.5"}','{"text": "list_dimensions"}','{"text": "r_plates"}','{"text": ""}']}}
 setblock 321 64 451 minecraft:air
@@ -61,7 +61,7 @@ fill 321 64 441 327 64 441 minecraft:polished_blackstone
 fill 321 67 441 327 67 441 minecraft:polished_blackstone
 setblock 321 64 444 minecraft:lantern
 setblock 327 64 444 minecraft:lantern
-setblock 323 64 443 waystones:warp_plate
+summon glow_item_frame 323 66 442 {Facing:3b,Fixed:1b,Tags:["kw_shot"],Item:{id:"waystones:warp_plate",count:1}}
 setblock 330 64 451 minecraft:air
 setblock 330 64 451 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "211.6"}','{"text": "list_dimensions"}','{"text": "r_mekanism"}','{"text": ""}']}}
 setblock 331 64 451 minecraft:air
@@ -85,7 +85,7 @@ fill 341 64 441 347 64 441 minecraft:polished_blackstone
 fill 341 67 441 347 67 441 minecraft:polished_blackstone
 setblock 341 64 444 minecraft:lantern
 setblock 347 64 444 minecraft:lantern
-setblock 343 64 443 minecraft:iron_block
+summon glow_item_frame 343 66 442 {Facing:3b,Fixed:1b,Tags:["kw_shot"],Item:{id:"minecraft:iron_block",count:1}}
 setblock 350 64 451 minecraft:air
 setblock 350 64 451 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "211.8"}','{"text": "list_dimensions"}','{"text": "r_chunks"}','{"text": ""}']}}
 setblock 351 64 451 minecraft:air

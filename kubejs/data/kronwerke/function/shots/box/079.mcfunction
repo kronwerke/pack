@@ -1,7 +1,7 @@
 # 079 mekanism_elite/mekasuit
 fill 360 63 108 371 63 121 minecraft:light_gray_concrete
-fill 360 64 108 371 71 108 minecraft:light_gray_concrete
-fill 360 64 108 360 71 121 minecraft:light_gray_concrete
+fill 360 64 108 371 79 108 minecraft:light_gray_concrete
+fill 360 64 108 360 79 121 minecraft:light_gray_concrete
 setblock 361 64 120 minecraft:air
 setblock 361 64 120 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "079"}','{"text": "mekanism_elite"}','{"text": "mekasuit"}','{"text": ""}']}}
 setblock 362 64 120 minecraft:air

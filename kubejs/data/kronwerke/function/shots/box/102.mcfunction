@@ -1,7 +1,7 @@
 # 102 ars_master/tribute
 fill 292 63 148 303 63 161 minecraft:light_gray_concrete
-fill 292 64 148 303 71 148 minecraft:light_gray_concrete
-fill 292 64 148 292 71 161 minecraft:light_gray_concrete
+fill 292 64 148 303 79 148 minecraft:light_gray_concrete
+fill 292 64 148 292 79 161 minecraft:light_gray_concrete
 setblock 293 64 160 minecraft:air
 setblock 293 64 160 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "102"}','{"text": "ars_master"}','{"text": "tribute"}','{"text": ""}']}}
 setblock 294 64 160 minecraft:air

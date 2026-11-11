@@ -1,7 +1,7 @@
 # 177 immersive_heavy/light, heavy
 fill 335 63 273 356 63 286 minecraft:light_gray_concrete
-fill 335 64 273 356 71 273 minecraft:light_gray_concrete
-fill 335 64 273 335 71 286 minecraft:light_gray_concrete
+fill 335 64 273 356 79 273 minecraft:light_gray_concrete
+fill 335 64 273 335 79 286 minecraft:light_gray_concrete
 setblock 336 64 285 minecraft:air
 setblock 336 64 285 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "177.1"}','{"text": "immersive_heavy"}','{"text": "light"}','{"text": ""}']}}
 setblock 337 64 285 minecraft:air

@@ -1,7 +1,7 @@
 # 104 ars_master/golem_bookwyrm
 fill 322 63 148 333 63 161 minecraft:light_gray_concrete
-fill 322 64 148 333 71 148 minecraft:light_gray_concrete
-fill 322 64 148 322 71 161 minecraft:light_gray_concrete
+fill 322 64 148 333 79 148 minecraft:light_gray_concrete
+fill 322 64 148 322 79 161 minecraft:light_gray_concrete
 setblock 323 64 160 minecraft:air
 setblock 323 64 160 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "104"}','{"text": "ars_master"}','{"text": "golem_bookwyrm"}','{"text": ""}']}}
 setblock 324 64 160 minecraft:air

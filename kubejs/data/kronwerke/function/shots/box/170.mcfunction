@@ -1,7 +1,7 @@
 # 170 immersive/kiln
 fill 105 63 273 116 63 286 minecraft:light_gray_concrete
-fill 105 64 273 116 71 273 minecraft:light_gray_concrete
-fill 105 64 273 105 71 286 minecraft:light_gray_concrete
+fill 105 64 273 116 79 273 minecraft:light_gray_concrete
+fill 105 64 273 105 79 286 minecraft:light_gray_concrete
 setblock 106 64 285 minecraft:air
 setblock 106 64 285 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "170"}','{"text": "immersive"}','{"text": "kiln"}','{"text": ""}']}}
 setblock 107 64 285 minecraft:air

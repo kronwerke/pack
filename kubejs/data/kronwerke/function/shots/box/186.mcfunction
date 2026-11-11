@@ -1,7 +1,7 @@
 # 186 oritech/cores, pipes, plastic, laser, atomic_forge, destroyer, fragment_forge, fragment, addons, addon_quarry, addon_crop, exo, reactor
 fill 0 63 336 131 63 349 minecraft:light_gray_concrete
-fill 0 64 336 131 71 336 minecraft:light_gray_concrete
-fill 0 64 336 0 71 349 minecraft:light_gray_concrete
+fill 0 64 336 131 79 336 minecraft:light_gray_concrete
+fill 0 64 336 0 79 349 minecraft:light_gray_concrete
 setblock 1 64 348 minecraft:air
 setblock 1 64 348 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "186.1"}','{"text": "oritech"}','{"text": "cores"}','{"text": ""}']}}
 setblock 2 64 348 minecraft:air
@@ -13,8 +13,8 @@ fill 2 64 338 8 64 338 minecraft:polished_blackstone
 fill 2 67 338 8 67 338 minecraft:polished_blackstone
 setblock 2 64 341 minecraft:lantern
 setblock 8 64 341 minecraft:lantern
-setblock 3 64 340 oritech:machine_core_1
-setblock 5 64 340 oritech:machine_core_2
+summon glow_item_frame 3 66 339 {Facing:3b,Fixed:1b,Tags:["kw_shot"],Item:{id:"oritech:machine_core_1",count:1}}
+summon glow_item_frame 5 66 339 {Facing:3b,Fixed:1b,Tags:["kw_shot"],Item:{id:"oritech:machine_core_2",count:1}}
 setblock 11 64 348 minecraft:air
 setblock 11 64 348 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "186.2"}','{"text": "oritech"}','{"text": "pipes"}','{"text": ""}']}}
 setblock 12 64 348 minecraft:air
@@ -26,9 +26,9 @@ fill 12 64 338 18 64 338 minecraft:polished_blackstone
 fill 12 67 338 18 67 338 minecraft:polished_blackstone
 setblock 12 64 341 minecraft:lantern
 setblock 18 64 341 minecraft:lantern
-setblock 13 64 340 oritech:energy_pipe
-setblock 15 64 340 oritech:item_pipe
-summon glow_item_frame 14 66 339 {Facing:3b,Fixed:1b,Tags:["kw_shot"],Item:{id:"oritech:wrench",count:1}}
+summon glow_item_frame 13 66 339 {Facing:3b,Fixed:1b,Tags:["kw_shot"],Item:{id:"oritech:energy_pipe",count:1}}
+summon glow_item_frame 15 66 339 {Facing:3b,Fixed:1b,Tags:["kw_shot"],Item:{id:"oritech:item_pipe",count:1}}
+summon glow_item_frame 17 66 339 {Facing:3b,Fixed:1b,Tags:["kw_shot"],Item:{id:"oritech:wrench",count:1}}
 setblock 21 64 348 minecraft:air
 setblock 21 64 348 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "186.3"}','{"text": "oritech"}','{"text": "plastic"}','{"text": ""}']}}
 setblock 22 64 348 minecraft:air
@@ -40,8 +40,8 @@ fill 22 64 338 28 64 338 minecraft:polished_blackstone
 fill 22 67 338 28 67 338 minecraft:polished_blackstone
 setblock 22 64 341 minecraft:lantern
 setblock 28 64 341 minecraft:lantern
-setblock 24 64 340 oritech:machine_fluid_addon
-summon glow_item_frame 24 66 339 {Facing:3b,Fixed:1b,Tags:["kw_shot"],Item:{id:"oritech:plastic_sheet",count:1}}
+summon glow_item_frame 23 66 339 {Facing:3b,Fixed:1b,Tags:["kw_shot"],Item:{id:"oritech:machine_fluid_addon",count:1}}
+summon glow_item_frame 25 66 339 {Facing:3b,Fixed:1b,Tags:["kw_shot"],Item:{id:"oritech:plastic_sheet",count:1}}
 setblock 31 64 348 minecraft:air
 setblock 31 64 348 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "186.4"}','{"text": "oritech"}','{"text": "laser"}','{"text": ""}']}}
 setblock 32 64 348 minecraft:air
@@ -53,9 +53,9 @@ fill 32 64 338 38 64 338 minecraft:polished_blackstone
 fill 32 67 338 38 67 338 minecraft:polished_blackstone
 setblock 32 64 341 minecraft:lantern
 setblock 38 64 341 minecraft:lantern
-setblock 34 64 340 oritech:laser_arm_block
-summon glow_item_frame 33 66 339 {Facing:3b,Fixed:1b,Tags:["kw_shot"],Item:{id:"oritech:target_designator",count:1}}
-summon glow_item_frame 35 66 339 {Facing:3b,Fixed:1b,Tags:["kw_shot"],Item:{id:"oritech:fluxite",count:1}}
+summon glow_item_frame 33 66 339 {Facing:3b,Fixed:1b,Tags:["kw_shot"],Item:{id:"oritech:laser_arm_block",count:1}}
+summon glow_item_frame 35 66 339 {Facing:3b,Fixed:1b,Tags:["kw_shot"],Item:{id:"oritech:target_designator",count:1}}
+summon glow_item_frame 37 66 339 {Facing:3b,Fixed:1b,Tags:["kw_shot"],Item:{id:"oritech:fluxite",count:1}}
 setblock 41 64 348 minecraft:air
 setblock 41 64 348 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "186.5"}','{"text": "oritech"}','{"text": "atomic_forge"}','{"text": ""}']}}
 setblock 42 64 348 minecraft:air
@@ -82,8 +82,8 @@ fill 52 64 338 58 64 338 minecraft:polished_blackstone
 fill 52 67 338 58 67 338 minecraft:polished_blackstone
 setblock 52 64 341 minecraft:lantern
 setblock 58 64 341 minecraft:lantern
-setblock 53 64 340 oritech:machine_frame_block
-setblock 55 64 340 oritech:destroyer_block
+summon glow_item_frame 53 66 339 {Facing:3b,Fixed:1b,Tags:["kw_shot"],Item:{id:"oritech:machine_frame_block",count:1}}
+summon glow_item_frame 55 66 339 {Facing:3b,Fixed:1b,Tags:["kw_shot"],Item:{id:"oritech:destroyer_block",count:1}}
 setblock 61 64 348 minecraft:air
 setblock 61 64 348 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "186.7"}','{"text": "oritech"}','{"text": "fragment_forge"}','{"text": ""}']}}
 setblock 62 64 348 minecraft:air
@@ -95,8 +95,8 @@ fill 62 64 338 68 64 338 minecraft:polished_blackstone
 fill 62 67 338 68 67 338 minecraft:polished_blackstone
 setblock 62 64 341 minecraft:lantern
 setblock 68 64 341 minecraft:lantern
-setblock 64 64 340 oritech:fragment_forge_block
-summon glow_item_frame 64 66 339 {Facing:3b,Fixed:1b,Tags:["kw_shot"],Item:{id:"oritech:flux_gate",count:1}}
+summon glow_item_frame 63 66 339 {Facing:3b,Fixed:1b,Tags:["kw_shot"],Item:{id:"oritech:flux_gate",count:1}}
+summon glow_item_frame 65 66 339 {Facing:3b,Fixed:1b,Tags:["kw_shot"],Item:{id:"oritech:fragment_forge_block",count:1}}
 setblock 71 64 348 minecraft:air
 setblock 71 64 348 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "186.8"}','{"text": "oritech"}','{"text": "fragment"}','{"text": ""}']}}
 setblock 72 64 348 minecraft:air
@@ -120,7 +120,7 @@ fill 82 64 338 88 64 338 minecraft:polished_blackstone
 fill 82 67 338 88 67 338 minecraft:polished_blackstone
 setblock 82 64 341 minecraft:lantern
 setblock 88 64 341 minecraft:lantern
-setblock 84 64 340 oritech:machine_speed_addon
+summon glow_item_frame 84 66 339 {Facing:3b,Fixed:1b,Tags:["kw_shot"],Item:{id:"oritech:machine_speed_addon",count:1}}
 setblock 91 64 348 minecraft:air
 setblock 91 64 348 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "186.10"}','{"text": "oritech"}','{"text": "addon_quarry"}','{"text": ""}']}}
 setblock 92 64 348 minecraft:air
@@ -132,7 +132,7 @@ fill 92 64 338 98 64 338 minecraft:polished_blackstone
 fill 92 67 338 98 67 338 minecraft:polished_blackstone
 setblock 92 64 341 minecraft:lantern
 setblock 98 64 341 minecraft:lantern
-setblock 94 64 340 oritech:quarry_addon
+summon glow_item_frame 94 66 339 {Facing:3b,Fixed:1b,Tags:["kw_shot"],Item:{id:"oritech:quarry_addon",count:1}}
 setblock 101 64 348 minecraft:air
 setblock 101 64 348 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "186.11"}','{"text": "oritech"}','{"text": "addon_crop"}','{"text": ""}']}}
 setblock 102 64 348 minecraft:air
@@ -144,7 +144,7 @@ fill 102 64 338 108 64 338 minecraft:polished_blackstone
 fill 102 67 338 108 67 338 minecraft:polished_blackstone
 setblock 102 64 341 minecraft:lantern
 setblock 108 64 341 minecraft:lantern
-setblock 104 64 340 oritech:crop_filter_addon
+summon glow_item_frame 104 66 339 {Facing:3b,Fixed:1b,Tags:["kw_shot"],Item:{id:"oritech:crop_filter_addon",count:1}}
 setblock 111 64 348 minecraft:air
 setblock 111 64 348 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "186.12"}','{"text": "oritech"}','{"text": "exo"}','{"text": ""}']}}
 setblock 112 64 348 minecraft:air
@@ -171,9 +171,9 @@ fill 122 64 338 128 64 338 minecraft:polished_blackstone
 fill 122 67 338 128 67 338 minecraft:polished_blackstone
 setblock 122 64 341 minecraft:lantern
 setblock 128 64 341 minecraft:lantern
-setblock 123 64 340 oritech:reactor_controller
-setblock 125 64 340 oritech:reactor_wall
-setblock 127 64 340 oritech:reactor_rod
-setblock 129 64 340 oritech:reactor_vent
-setblock 131 64 340 oritech:reactor_fuel_port
-setblock 133 64 340 oritech:reactor_energy_port
+summon glow_item_frame 123 66 339 {Facing:3b,Fixed:1b,Tags:["kw_shot"],Item:{id:"oritech:reactor_controller",count:1}}
+summon glow_item_frame 125 66 339 {Facing:3b,Fixed:1b,Tags:["kw_shot"],Item:{id:"oritech:reactor_wall",count:1}}
+summon glow_item_frame 127 66 339 {Facing:3b,Fixed:1b,Tags:["kw_shot"],Item:{id:"oritech:reactor_rod",count:1}}
+summon glow_item_frame 128 66 339 {Facing:3b,Fixed:1b,Tags:["kw_shot"],Item:{id:"oritech:reactor_vent",count:1}}
+summon glow_item_frame 128 66 339 {Facing:3b,Fixed:1b,Tags:["kw_shot"],Item:{id:"oritech:reactor_fuel_port",count:1}}
+summon glow_item_frame 128 66 339 {Facing:3b,Fixed:1b,Tags:["kw_shot"],Item:{id:"oritech:reactor_energy_port",count:1}}

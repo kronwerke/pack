@@ -1,7 +1,7 @@
 # 133 gaia/goal
 fill 334 63 186 351 63 205 minecraft:light_gray_concrete
-fill 334 64 186 351 71 186 minecraft:light_gray_concrete
-fill 334 64 186 334 71 205 minecraft:light_gray_concrete
+fill 334 64 186 351 79 186 minecraft:light_gray_concrete
+fill 334 64 186 334 79 205 minecraft:light_gray_concrete
 setblock 335 64 204 minecraft:air
 setblock 335 64 204 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "133"}','{"text": "gaia"}','{"text": "goal"}','{"text": ""}']}}
 setblock 336 64 204 minecraft:air

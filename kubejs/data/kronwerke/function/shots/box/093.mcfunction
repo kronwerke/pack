@@ -1,7 +1,7 @@
 # 093 ars_nouveau/mana
 fill 145 63 148 156 63 161 minecraft:light_gray_concrete
-fill 145 64 148 156 71 148 minecraft:light_gray_concrete
-fill 145 64 148 145 71 161 minecraft:light_gray_concrete
+fill 145 64 148 156 79 148 minecraft:light_gray_concrete
+fill 145 64 148 145 79 161 minecraft:light_gray_concrete
 setblock 146 64 160 minecraft:air
 setblock 146 64 160 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "093"}','{"text": "ars_nouveau"}','{"text": "mana"}','{"text": ""}']}}
 setblock 147 64 160 minecraft:air

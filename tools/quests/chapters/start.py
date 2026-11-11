@@ -509,9 +509,9 @@ quests = [
           deps=["welcome"], icon="minecraft:bell", size=1.5),
 
     quest("v_website", 7, 16, "&6Schau auf die Website",
-          subtitle="kronwerke.elchi.dev",
+          subtitle="kronwerke.com",
           description=[
-              "Auf &ekronwerke.elchi.dev&r stehen die Stufen, die Modliste, eine Installationsanleitung, die häufigsten Fragen und eine &eLive-Statusseite&r mit den Zielen.",
+              "Auf &ekronwerke.com&r stehen die Stufen, die Modliste, eine Installationsanleitung, die häufigsten Fragen und eine &eLive-Statusseite&r mit den Zielen.",
               "",
               "Die Statusseite zeigt den Obelisken auch, wenn du gerade nicht online bist.",
           ],

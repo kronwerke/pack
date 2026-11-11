@@ -1,7 +1,7 @@
 # 013 farms/crops_essence
 fill 51 63 31 62 63 44 minecraft:light_gray_concrete
-fill 51 64 31 62 71 31 minecraft:light_gray_concrete
-fill 51 64 31 51 71 44 minecraft:light_gray_concrete
+fill 51 64 31 62 79 31 minecraft:light_gray_concrete
+fill 51 64 31 51 79 44 minecraft:light_gray_concrete
 setblock 52 64 43 minecraft:air
 setblock 52 64 43 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "013"}','{"text": "farms"}','{"text": "crops_essence"}','{"text": ""}']}}
 setblock 53 64 43 minecraft:air

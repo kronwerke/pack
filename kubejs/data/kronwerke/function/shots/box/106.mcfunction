@@ -1,7 +1,7 @@
 # 106 ars_master/alteration
 fill 352 63 148 363 63 161 minecraft:light_gray_concrete
-fill 352 64 148 363 71 148 minecraft:light_gray_concrete
-fill 352 64 148 352 71 161 minecraft:light_gray_concrete
+fill 352 64 148 363 79 148 minecraft:light_gray_concrete
+fill 352 64 148 352 79 161 minecraft:light_gray_concrete
 setblock 353 64 160 minecraft:air
 setblock 353 64 160 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "106"}','{"text": "ars_master"}','{"text": "alteration"}','{"text": ""}']}}
 setblock 354 64 160 minecraft:air

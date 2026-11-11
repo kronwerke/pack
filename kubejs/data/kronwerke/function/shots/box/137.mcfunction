@@ -1,7 +1,7 @@
 # 137 alfheim/pure_essence
 fill 0 63 223 11 63 236 minecraft:light_gray_concrete
-fill 0 64 223 11 71 223 minecraft:light_gray_concrete
-fill 0 64 223 0 71 236 minecraft:light_gray_concrete
+fill 0 64 223 11 79 223 minecraft:light_gray_concrete
+fill 0 64 223 0 79 236 minecraft:light_gray_concrete
 setblock 1 64 235 minecraft:air
 setblock 1 64 235 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "137"}','{"text": "alfheim"}','{"text": "pure_essence"}','{"text": ""}']}}
 setblock 2 64 235 minecraft:air

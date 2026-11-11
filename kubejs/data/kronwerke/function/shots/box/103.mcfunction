@@ -1,7 +1,7 @@
 # 103 ars_master/wilden_ritual
 fill 307 63 148 318 63 161 minecraft:light_gray_concrete
-fill 307 64 148 318 71 148 minecraft:light_gray_concrete
-fill 307 64 148 307 71 161 minecraft:light_gray_concrete
+fill 307 64 148 318 79 148 minecraft:light_gray_concrete
+fill 307 64 148 307 79 161 minecraft:light_gray_concrete
 setblock 308 64 160 minecraft:air
 setblock 308 64 160 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "103"}','{"text": "ars_master"}','{"text": "wilden_ritual"}','{"text": ""}']}}
 setblock 309 64 160 minecraft:air

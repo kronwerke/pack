@@ -1,7 +1,7 @@
 # 223 malum/spirits, altar, obelisk, crucible, healing_rite, quickening
 fill 290 63 510 351 63 523 minecraft:light_gray_concrete
-fill 290 64 510 351 71 510 minecraft:light_gray_concrete
-fill 290 64 510 290 71 523 minecraft:light_gray_concrete
+fill 290 64 510 351 79 510 minecraft:light_gray_concrete
+fill 290 64 510 290 79 523 minecraft:light_gray_concrete
 setblock 291 64 522 minecraft:air
 setblock 291 64 522 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "223.1"}','{"text": "malum"}','{"text": "spirits"}','{"text": ""}']}}
 setblock 292 64 522 minecraft:air
@@ -35,7 +35,7 @@ fill 312 64 512 318 64 512 minecraft:polished_blackstone
 fill 312 67 512 318 67 512 minecraft:polished_blackstone
 setblock 312 64 515 minecraft:lantern
 setblock 318 64 515 minecraft:lantern
-setblock 314 64 514 malum:runewood_obelisk
+summon glow_item_frame 314 66 513 {Facing:3b,Fixed:1b,Tags:["kw_shot"],Item:{id:"malum:runewood_obelisk",count:1}}
 setblock 321 64 522 minecraft:air
 setblock 321 64 522 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "223.4"}','{"text": "malum"}','{"text": "crucible"}','{"text": ""}']}}
 setblock 322 64 522 minecraft:air
@@ -47,7 +47,7 @@ fill 322 64 512 328 64 512 minecraft:polished_blackstone
 fill 322 67 512 328 67 512 minecraft:polished_blackstone
 setblock 322 64 515 minecraft:lantern
 setblock 328 64 515 minecraft:lantern
-setblock 324 64 514 malum:spirit_crucible
+summon glow_item_frame 324 66 513 {Facing:3b,Fixed:1b,Tags:["kw_shot"],Item:{id:"malum:spirit_crucible",count:1}}
 setblock 331 64 522 minecraft:air
 setblock 331 64 522 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "223.5"}','{"text": "malum"}','{"text": "healing_rite"}','{"text": ""}']}}
 setblock 332 64 522 minecraft:air

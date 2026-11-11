@@ -1,7 +1,7 @@
 # 138 alfheim/corporea_index
 fill 15 63 223 26 63 236 minecraft:light_gray_concrete
-fill 15 64 223 26 71 223 minecraft:light_gray_concrete
-fill 15 64 223 15 71 236 minecraft:light_gray_concrete
+fill 15 64 223 26 79 223 minecraft:light_gray_concrete
+fill 15 64 223 15 79 236 minecraft:light_gray_concrete
 setblock 16 64 235 minecraft:air
 setblock 16 64 235 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "138"}','{"text": "alfheim"}','{"text": "corporea_index"}','{"text": ""}']}}
 setblock 17 64 235 minecraft:air

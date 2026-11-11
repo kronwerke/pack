@@ -1,7 +1,7 @@
 # 127 botania_runes/baubles_rings
 fill 218 63 186 229 63 199 minecraft:light_gray_concrete
-fill 218 64 186 229 71 186 minecraft:light_gray_concrete
-fill 218 64 186 218 71 199 minecraft:light_gray_concrete
+fill 218 64 186 229 79 186 minecraft:light_gray_concrete
+fill 218 64 186 218 79 199 minecraft:light_gray_concrete
 setblock 219 64 198 minecraft:air
 setblock 219 64 198 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "127"}','{"text": "botania_runes"}','{"text": "baubles_rings"}','{"text": ""}']}}
 setblock 220 64 198 minecraft:air

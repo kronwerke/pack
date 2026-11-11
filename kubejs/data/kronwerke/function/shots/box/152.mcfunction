@@ -1,7 +1,7 @@
 # 152 occultism_afrit/mineshaft
 fill 180 63 242 191 63 255 minecraft:light_gray_concrete
-fill 180 64 242 191 71 242 minecraft:light_gray_concrete
-fill 180 64 242 180 71 255 minecraft:light_gray_concrete
+fill 180 64 242 191 79 242 minecraft:light_gray_concrete
+fill 180 64 242 180 79 255 minecraft:light_gray_concrete
 setblock 181 64 254 minecraft:air
 setblock 181 64 254 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "152"}','{"text": "occultism_afrit"}','{"text": "mineshaft"}','{"text": ""}']}}
 setblock 182 64 254 minecraft:air

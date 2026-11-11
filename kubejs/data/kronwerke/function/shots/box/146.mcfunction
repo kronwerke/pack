@@ -1,7 +1,7 @@
 # 146 occultism/strigeor
 fill 90 63 242 101 63 255 minecraft:light_gray_concrete
-fill 90 64 242 101 71 242 minecraft:light_gray_concrete
-fill 90 64 242 90 71 255 minecraft:light_gray_concrete
+fill 90 64 242 101 79 242 minecraft:light_gray_concrete
+fill 90 64 242 90 79 255 minecraft:light_gray_concrete
 setblock 91 64 254 minecraft:air
 setblock 91 64 254 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "146"}','{"text": "occultism"}','{"text": "strigeor"}','{"text": ""}']}}
 setblock 92 64 254 minecraft:air

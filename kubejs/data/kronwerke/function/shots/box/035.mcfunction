@@ -1,7 +1,7 @@
 # 035 create_brass/blaze_burner
 fill 269 63 52 280 63 65 minecraft:light_gray_concrete
-fill 269 64 52 280 71 52 minecraft:light_gray_concrete
-fill 269 64 52 269 71 65 minecraft:light_gray_concrete
+fill 269 64 52 280 79 52 minecraft:light_gray_concrete
+fill 269 64 52 269 79 65 minecraft:light_gray_concrete
 setblock 270 64 64 minecraft:air
 setblock 270 64 64 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "035"}','{"text": "create_brass"}','{"text": "blaze_burner"}','{"text": ""}']}}
 setblock 271 64 64 minecraft:air

@@ -1,7 +1,7 @@
 # 037 create_brass/incomplete
 fill 301 63 52 316 63 65 minecraft:light_gray_concrete
-fill 301 64 52 316 71 52 minecraft:light_gray_concrete
-fill 301 64 52 301 71 65 minecraft:light_gray_concrete
+fill 301 64 52 316 79 52 minecraft:light_gray_concrete
+fill 301 64 52 301 79 65 minecraft:light_gray_concrete
 setblock 302 64 64 minecraft:air
 setblock 302 64 64 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "037"}','{"text": "create_brass"}','{"text": "incomplete"}','{"text": ""}']}}
 setblock 303 64 64 minecraft:air

@@ -1,7 +1,7 @@
 # 191 ae2_advanced/bridge, spatial, reaction, matrix, mega_4m
 fill 124 63 355 177 63 368 minecraft:light_gray_concrete
-fill 124 64 355 177 71 355 minecraft:light_gray_concrete
-fill 124 64 355 124 71 368 minecraft:light_gray_concrete
+fill 124 64 355 177 79 355 minecraft:light_gray_concrete
+fill 124 64 355 124 79 368 minecraft:light_gray_concrete
 setblock 125 64 367 minecraft:air
 setblock 125 64 367 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "191.1"}','{"text": "ae2_advanced"}','{"text": "bridge"}','{"text": ""}']}}
 setblock 126 64 367 minecraft:air
@@ -13,9 +13,9 @@ fill 126 64 357 132 64 357 minecraft:polished_blackstone
 fill 126 67 357 132 67 357 minecraft:polished_blackstone
 setblock 126 64 360 minecraft:lantern
 setblock 132 64 360 minecraft:lantern
-setblock 127 64 359 ae2:quantum_ring
-setblock 129 64 359 ae2:quantum_link
-summon glow_item_frame 128 66 358 {Facing:3b,Fixed:1b,Tags:["kw_shot"],Item:{id:"ae2:quantum_entangled_singularity",count:1}}
+summon glow_item_frame 127 66 358 {Facing:3b,Fixed:1b,Tags:["kw_shot"],Item:{id:"ae2:quantum_ring",count:1}}
+summon glow_item_frame 129 66 358 {Facing:3b,Fixed:1b,Tags:["kw_shot"],Item:{id:"ae2:quantum_link",count:1}}
+summon glow_item_frame 131 66 358 {Facing:3b,Fixed:1b,Tags:["kw_shot"],Item:{id:"ae2:quantum_entangled_singularity",count:1}}
 setblock 135 64 367 minecraft:air
 setblock 135 64 367 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "191.2"}','{"text": "ae2_advanced"}','{"text": "spatial"}','{"text": ""}']}}
 setblock 136 64 367 minecraft:air
@@ -36,7 +36,7 @@ fill 148 64 357 154 64 357 minecraft:polished_blackstone
 fill 148 67 357 154 67 357 minecraft:polished_blackstone
 setblock 148 64 360 minecraft:lantern
 setblock 154 64 360 minecraft:lantern
-setblock 150 64 359 advanced_ae:reaction_chamber
+summon glow_item_frame 150 66 358 {Facing:3b,Fixed:1b,Tags:["kw_shot"],Item:{id:"advanced_ae:reaction_chamber",count:1}}
 setblock 157 64 367 minecraft:air
 setblock 157 64 367 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "191.4"}','{"text": "ae2_advanced"}','{"text": "matrix"}','{"text": ""}']}}
 setblock 158 64 367 minecraft:air

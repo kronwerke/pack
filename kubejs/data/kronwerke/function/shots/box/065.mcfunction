@@ -1,7 +1,7 @@
 # 065 mekanism_ores/shards
 fill 136 63 108 153 63 121 minecraft:light_gray_concrete
-fill 136 64 108 153 71 108 minecraft:light_gray_concrete
-fill 136 64 108 136 71 121 minecraft:light_gray_concrete
+fill 136 64 108 153 79 108 minecraft:light_gray_concrete
+fill 136 64 108 136 79 121 minecraft:light_gray_concrete
 setblock 137 64 120 minecraft:air
 setblock 137 64 120 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "065"}','{"text": "mekanism_ores"}','{"text": "shards"}','{"text": ""}']}}
 setblock 138 64 120 minecraft:air

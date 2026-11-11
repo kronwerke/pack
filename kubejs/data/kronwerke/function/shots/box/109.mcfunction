@@ -1,7 +1,7 @@
 # 109 ars_epic/linger
 fill 397 63 148 408 63 161 minecraft:light_gray_concrete
-fill 397 64 148 408 71 148 minecraft:light_gray_concrete
-fill 397 64 148 397 71 161 minecraft:light_gray_concrete
+fill 397 64 148 408 79 148 minecraft:light_gray_concrete
+fill 397 64 148 397 79 161 minecraft:light_gray_concrete
 setblock 398 64 160 minecraft:air
 setblock 398 64 160 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "109"}','{"text": "ars_epic"}','{"text": "linger"}','{"text": ""}']}}
 setblock 399 64 160 minecraft:air

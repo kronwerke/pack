@@ -1,7 +1,7 @@
 # 185 industrial/washing, conveyor, transporters
 fill 116 63 315 151 63 328 minecraft:light_gray_concrete
-fill 116 64 315 151 71 315 minecraft:light_gray_concrete
-fill 116 64 315 116 71 328 minecraft:light_gray_concrete
+fill 116 64 315 151 79 315 minecraft:light_gray_concrete
+fill 116 64 315 116 79 328 minecraft:light_gray_concrete
 setblock 117 64 327 minecraft:air
 setblock 117 64 327 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "185.1"}','{"text": "industrial"}','{"text": "washing"}','{"text": ""}']}}
 setblock 118 64 327 minecraft:air

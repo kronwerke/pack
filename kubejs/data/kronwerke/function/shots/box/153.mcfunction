@@ -1,7 +1,7 @@
 # 153 occultism_afrit/storage
 fill 195 63 242 206 63 255 minecraft:light_gray_concrete
-fill 195 64 242 206 71 242 minecraft:light_gray_concrete
-fill 195 64 242 195 71 255 minecraft:light_gray_concrete
+fill 195 64 242 206 79 242 minecraft:light_gray_concrete
+fill 195 64 242 195 79 255 minecraft:light_gray_concrete
 setblock 196 64 254 minecraft:air
 setblock 196 64 254 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "153"}','{"text": "occultism_afrit"}','{"text": "storage"}','{"text": ""}']}}
 setblock 197 64 254 minecraft:air

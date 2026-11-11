@@ -1,7 +1,7 @@
 # 036 create_brass/brass_mixing
 fill 284 63 52 297 63 65 minecraft:light_gray_concrete
-fill 284 64 52 297 71 52 minecraft:light_gray_concrete
-fill 284 64 52 284 71 65 minecraft:light_gray_concrete
+fill 284 64 52 297 79 52 minecraft:light_gray_concrete
+fill 284 64 52 284 79 65 minecraft:light_gray_concrete
 setblock 285 64 64 minecraft:air
 setblock 285 64 64 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "036"}','{"text": "create_brass"}','{"text": "brass_mixing"}','{"text": ""}']}}
 setblock 286 64 64 minecraft:air

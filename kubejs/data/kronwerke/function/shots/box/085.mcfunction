@@ -1,7 +1,7 @@
 # 085 ars_nouveau/fill_jar
 fill 25 63 148 36 63 161 minecraft:light_gray_concrete
-fill 25 64 148 36 71 148 minecraft:light_gray_concrete
-fill 25 64 148 25 71 161 minecraft:light_gray_concrete
+fill 25 64 148 36 79 148 minecraft:light_gray_concrete
+fill 25 64 148 25 79 161 minecraft:light_gray_concrete
 setblock 26 64 160 minecraft:air
 setblock 26 64 160 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "085"}','{"text": "ars_nouveau"}','{"text": "fill_jar"}','{"text": ""}']}}
 setblock 27 64 160 minecraft:air

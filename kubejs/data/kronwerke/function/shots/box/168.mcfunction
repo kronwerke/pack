@@ -1,7 +1,7 @@
 # 168 immersive/treated_wood
 fill 65 63 273 76 63 286 minecraft:light_gray_concrete
-fill 65 64 273 76 71 273 minecraft:light_gray_concrete
-fill 65 64 273 65 71 286 minecraft:light_gray_concrete
+fill 65 64 273 76 79 273 minecraft:light_gray_concrete
+fill 65 64 273 65 79 286 minecraft:light_gray_concrete
 setblock 66 64 285 minecraft:air
 setblock 66 64 285 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "168"}','{"text": "immersive"}','{"text": "treated_wood"}','{"text": ""}']}}
 setblock 67 64 285 minecraft:air

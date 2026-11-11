@@ -1,7 +1,7 @@
 # 192 logistics/menril, programmer, counter, xnet_connectors, laser_node, mg_gadget
 fill 181 63 355 242 63 368 minecraft:light_gray_concrete
-fill 181 64 355 242 71 355 minecraft:light_gray_concrete
-fill 181 64 355 181 71 368 minecraft:light_gray_concrete
+fill 181 64 355 242 79 355 minecraft:light_gray_concrete
+fill 181 64 355 181 79 368 minecraft:light_gray_concrete
 setblock 182 64 367 minecraft:air
 setblock 182 64 367 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "192.1"}','{"text": "logistics"}','{"text": "menril"}','{"text": ""}']}}
 setblock 183 64 367 minecraft:air
@@ -13,8 +13,8 @@ fill 183 64 357 189 64 357 minecraft:polished_blackstone
 fill 183 67 357 189 67 357 minecraft:polished_blackstone
 setblock 183 64 360 minecraft:lantern
 setblock 189 64 360 minecraft:lantern
-setblock 185 64 359 integrateddynamics:menril_log
-summon glow_item_frame 185 66 358 {Facing:3b,Fixed:1b,Tags:["kw_shot"],Item:{id:"integrateddynamics:crystalized_menril_chunk",count:1}}
+summon glow_item_frame 184 66 358 {Facing:3b,Fixed:1b,Tags:["kw_shot"],Item:{id:"integrateddynamics:crystalized_menril_chunk",count:1}}
+summon glow_item_frame 186 66 358 {Facing:3b,Fixed:1b,Tags:["kw_shot"],Item:{id:"integrateddynamics:menril_log",count:1}}
 setblock 192 64 367 minecraft:air
 setblock 192 64 367 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "192.2"}','{"text": "logistics"}','{"text": "programmer"}','{"text": ""}']}}
 setblock 193 64 367 minecraft:air
@@ -26,8 +26,8 @@ fill 193 64 357 199 64 357 minecraft:polished_blackstone
 fill 193 67 357 199 67 357 minecraft:polished_blackstone
 setblock 193 64 360 minecraft:lantern
 setblock 199 64 360 minecraft:lantern
-setblock 194 64 359 integrateddynamics:logic_programmer
-setblock 196 64 359 integrateddynamics:variablestore
+summon glow_item_frame 194 66 358 {Facing:3b,Fixed:1b,Tags:["kw_shot"],Item:{id:"integrateddynamics:logic_programmer",count:1}}
+summon glow_item_frame 196 66 358 {Facing:3b,Fixed:1b,Tags:["kw_shot"],Item:{id:"integrateddynamics:variablestore",count:1}}
 setblock 202 64 367 minecraft:air
 setblock 202 64 367 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "192.3"}','{"text": "logistics"}','{"text": "counter"}','{"text": ""}']}}
 setblock 203 64 367 minecraft:air
@@ -39,9 +39,9 @@ fill 203 64 357 209 64 357 minecraft:polished_blackstone
 fill 203 67 357 209 67 357 minecraft:polished_blackstone
 setblock 203 64 360 minecraft:lantern
 setblock 209 64 360 minecraft:lantern
-setblock 204 64 359 integrateddynamics:part_inventory_reader
-setblock 206 64 359 integrateddynamics:part_display_panel
-summon glow_item_frame 205 66 358 {Facing:3b,Fixed:1b,Tags:["kw_shot"],Item:{id:"mekanism:ingot_steel",count:1}}
+summon glow_item_frame 204 66 358 {Facing:3b,Fixed:1b,Tags:["kw_shot"],Item:{id:"integrateddynamics:part_inventory_reader",count:1}}
+summon glow_item_frame 206 66 358 {Facing:3b,Fixed:1b,Tags:["kw_shot"],Item:{id:"mekanism:ingot_steel",count:1}}
+summon glow_item_frame 208 66 358 {Facing:3b,Fixed:1b,Tags:["kw_shot"],Item:{id:"integrateddynamics:part_display_panel",count:1}}
 setblock 212 64 367 minecraft:air
 setblock 212 64 367 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "192.4"}','{"text": "logistics"}','{"text": "xnet_connectors"}','{"text": ""}']}}
 setblock 213 64 367 minecraft:air
@@ -66,8 +66,8 @@ fill 223 64 357 229 64 357 minecraft:polished_blackstone
 fill 223 67 357 229 67 357 minecraft:polished_blackstone
 setblock 223 64 360 minecraft:lantern
 setblock 229 64 360 minecraft:lantern
-setblock 225 64 359 laserio:laser_node
-summon glow_item_frame 225 66 358 {Facing:3b,Fixed:1b,Tags:["kw_shot"],Item:{id:"laserio:laser_wrench",count:1}}
+summon glow_item_frame 224 66 358 {Facing:3b,Fixed:1b,Tags:["kw_shot"],Item:{id:"laserio:laser_node",count:1}}
+summon glow_item_frame 226 66 358 {Facing:3b,Fixed:1b,Tags:["kw_shot"],Item:{id:"laserio:laser_wrench",count:1}}
 setblock 232 64 367 minecraft:air
 setblock 232 64 367 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "192.6"}','{"text": "logistics"}','{"text": "mg_gadget"}','{"text": ""}']}}
 setblock 233 64 367 minecraft:air

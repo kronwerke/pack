@@ -1,7 +1,7 @@
 # 050 create_trains/drive
 fill 138 63 77 155 63 90 minecraft:light_gray_concrete
-fill 138 64 77 155 71 77 minecraft:light_gray_concrete
-fill 138 64 77 138 71 90 minecraft:light_gray_concrete
+fill 138 64 77 155 79 77 minecraft:light_gray_concrete
+fill 138 64 77 138 79 90 minecraft:light_gray_concrete
 setblock 139 64 89 minecraft:air
 setblock 139 64 89 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "050"}','{"text": "create_trains"}','{"text": "drive"}','{"text": ""}']}}
 setblock 140 64 89 minecraft:air

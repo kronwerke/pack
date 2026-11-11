@@ -1,7 +1,7 @@
 # 136 alfheim/elementium_line
 fill 393 63 186 408 63 201 minecraft:light_gray_concrete
-fill 393 64 186 408 71 186 minecraft:light_gray_concrete
-fill 393 64 186 393 71 201 minecraft:light_gray_concrete
+fill 393 64 186 408 79 186 minecraft:light_gray_concrete
+fill 393 64 186 393 79 201 minecraft:light_gray_concrete
 setblock 394 64 200 minecraft:air
 setblock 394 64 200 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "136"}','{"text": "alfheim"}','{"text": "elementium_line"}','{"text": ""}']}}
 setblock 395 64 200 minecraft:air

@@ -1,7 +1,7 @@
 # 111 ars_epic/phases
 fill 15 63 167 26 63 180 minecraft:light_gray_concrete
-fill 15 64 167 26 71 167 minecraft:light_gray_concrete
-fill 15 64 167 15 71 180 minecraft:light_gray_concrete
+fill 15 64 167 26 79 167 minecraft:light_gray_concrete
+fill 15 64 167 15 79 180 minecraft:light_gray_concrete
 setblock 16 64 179 minecraft:air
 setblock 16 64 179 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "111"}','{"text": "ars_epic"}','{"text": "phases"}','{"text": ""}']}}
 setblock 17 64 179 minecraft:air

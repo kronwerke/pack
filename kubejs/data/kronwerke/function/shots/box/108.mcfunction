@@ -1,7 +1,7 @@
 # 108 ars_epic/breath
 fill 382 63 148 393 63 161 minecraft:light_gray_concrete
-fill 382 64 148 393 71 148 minecraft:light_gray_concrete
-fill 382 64 148 382 71 161 minecraft:light_gray_concrete
+fill 382 64 148 393 79 148 minecraft:light_gray_concrete
+fill 382 64 148 382 79 161 minecraft:light_gray_concrete
 setblock 383 64 160 minecraft:air
 setblock 383 64 160 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "108"}','{"text": "ars_epic"}','{"text": "breath"}','{"text": ""}']}}
 setblock 384 64 160 minecraft:air

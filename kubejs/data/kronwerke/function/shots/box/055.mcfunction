@@ -1,7 +1,7 @@
 # 055 create_trains/postbox
 fill 235 63 77 246 63 90 minecraft:light_gray_concrete
-fill 235 64 77 246 71 77 minecraft:light_gray_concrete
-fill 235 64 77 235 71 90 minecraft:light_gray_concrete
+fill 235 64 77 246 79 77 minecraft:light_gray_concrete
+fill 235 64 77 235 79 90 minecraft:light_gray_concrete
 setblock 236 64 89 minecraft:air
 setblock 236 64 89 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "055"}','{"text": "create_trains"}','{"text": "postbox"}','{"text": ""}']}}
 setblock 237 64 89 minecraft:air

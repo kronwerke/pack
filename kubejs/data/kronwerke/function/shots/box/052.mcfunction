@@ -1,7 +1,7 @@
 # 052 create_trains/schedule
 fill 180 63 77 197 63 90 minecraft:light_gray_concrete
-fill 180 64 77 197 71 77 minecraft:light_gray_concrete
-fill 180 64 77 180 71 90 minecraft:light_gray_concrete
+fill 180 64 77 197 79 77 minecraft:light_gray_concrete
+fill 180 64 77 180 79 90 minecraft:light_gray_concrete
 setblock 181 64 89 minecraft:air
 setblock 181 64 89 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "052"}','{"text": "create_trains"}','{"text": "schedule"}','{"text": ""}']}}
 setblock 182 64 89 minecraft:air

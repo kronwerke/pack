@@ -1,7 +1,7 @@
 # 007 start_here/m_altar
 fill 108 63 6 119 63 19 minecraft:light_gray_concrete
-fill 108 64 6 119 71 6 minecraft:light_gray_concrete
-fill 108 64 6 108 71 19 minecraft:light_gray_concrete
+fill 108 64 6 119 79 6 minecraft:light_gray_concrete
+fill 108 64 6 108 79 19 minecraft:light_gray_concrete
 setblock 109 64 18 minecraft:air
 setblock 109 64 18 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "007"}','{"text": "start_here"}','{"text": "m_altar"}','{"text": ""}']}}
 setblock 110 64 18 minecraft:air

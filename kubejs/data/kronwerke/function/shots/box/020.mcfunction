@@ -1,7 +1,7 @@
 # 020 create/welcome
 fill 0 63 52 11 63 65 minecraft:light_gray_concrete
-fill 0 64 52 11 71 52 minecraft:light_gray_concrete
-fill 0 64 52 0 71 65 minecraft:light_gray_concrete
+fill 0 64 52 11 79 52 minecraft:light_gray_concrete
+fill 0 64 52 0 79 65 minecraft:light_gray_concrete
 setblock 1 64 64 minecraft:air
 setblock 1 64 64 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "020"}','{"text": "create"}','{"text": "welcome"}','{"text": ""}']}}
 setblock 2 64 64 minecraft:air

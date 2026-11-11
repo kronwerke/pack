@@ -1,7 +1,7 @@
 # 061 mekanism/ore_line
 fill 60 63 108 75 63 121 minecraft:light_gray_concrete
-fill 60 64 108 75 71 108 minecraft:light_gray_concrete
-fill 60 64 108 60 71 121 minecraft:light_gray_concrete
+fill 60 64 108 75 79 108 minecraft:light_gray_concrete
+fill 60 64 108 60 79 121 minecraft:light_gray_concrete
 setblock 61 64 120 minecraft:air
 setblock 61 64 120 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "061"}','{"text": "mekanism"}','{"text": "ore_line"}','{"text": ""}']}}
 setblock 62 64 120 minecraft:air

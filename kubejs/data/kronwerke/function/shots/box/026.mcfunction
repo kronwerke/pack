@@ -1,7 +1,7 @@
 # 026 create/alloy_mixing
 fill 102 63 52 117 63 65 minecraft:light_gray_concrete
-fill 102 64 52 117 71 52 minecraft:light_gray_concrete
-fill 102 64 52 102 71 65 minecraft:light_gray_concrete
+fill 102 64 52 117 79 52 minecraft:light_gray_concrete
+fill 102 64 52 102 79 65 minecraft:light_gray_concrete
 setblock 103 64 64 minecraft:air
 setblock 103 64 64 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "026"}','{"text": "create"}','{"text": "alloy_mixing"}','{"text": ""}']}}
 setblock 104 64 64 minecraft:air

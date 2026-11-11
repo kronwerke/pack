@@ -1,7 +1,7 @@
 # 156 hexerei/herbs
 fill 240 63 242 251 63 255 minecraft:light_gray_concrete
-fill 240 64 242 251 71 242 minecraft:light_gray_concrete
-fill 240 64 242 240 71 255 minecraft:light_gray_concrete
+fill 240 64 242 251 79 242 minecraft:light_gray_concrete
+fill 240 64 242 240 79 255 minecraft:light_gray_concrete
 setblock 241 64 254 minecraft:air
 setblock 241 64 254 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "156"}','{"text": "hexerei"}','{"text": "herbs"}','{"text": ""}']}}
 setblock 242 64 254 minecraft:air

@@ -1,7 +1,7 @@
 # 178 immersive_heavy/crusher, press, squeezer, fermenter, mixer, bottling, arc, refinery, diesel, sawmill, assembler, auto_workbench, excavator, lightning_rod, radio_tower, resonanz
 fill 0 63 292 173 63 307 minecraft:light_gray_concrete
-fill 0 64 292 173 71 292 minecraft:light_gray_concrete
-fill 0 64 292 0 71 307 minecraft:light_gray_concrete
+fill 0 64 292 173 79 292 minecraft:light_gray_concrete
+fill 0 64 292 0 79 307 minecraft:light_gray_concrete
 setblock 1 64 306 minecraft:air
 setblock 1 64 306 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "178.1"}','{"text": "immersive_heavy"}','{"text": "crusher"}','{"text": ""}']}}
 setblock 2 64 306 minecraft:air

@@ -1,7 +1,7 @@
 # 212 productive_trees/first_tree, mega, pots, sawmill_run, stripper, wood_set, station, pollinated, loot_saplings, amber, time_traveller
 fill 0 63 460 121 63 479 minecraft:light_gray_concrete
-fill 0 64 460 121 71 460 minecraft:light_gray_concrete
-fill 0 64 460 0 71 479 minecraft:light_gray_concrete
+fill 0 64 460 121 79 460 minecraft:light_gray_concrete
+fill 0 64 460 0 79 479 minecraft:light_gray_concrete
 setblock 1 64 478 minecraft:air
 setblock 1 64 478 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "212.1"}','{"text": "productive_trees"}','{"text": "first_tree"}','{"text": ""}']}}
 setblock 2 64 478 minecraft:air
@@ -31,7 +31,7 @@ fill 28 64 462 34 64 462 minecraft:polished_blackstone
 fill 28 67 462 34 67 462 minecraft:polished_blackstone
 setblock 28 64 465 minecraft:lantern
 setblock 34 64 465 minecraft:lantern
-setblock 30 64 464 botanypots:terracotta_hopper_botany_pot
+summon glow_item_frame 30 66 463 {Facing:3b,Fixed:1b,Tags:["kw_shot"],Item:{id:"botanypots:terracotta_hopper_botany_pot",count:1}}
 setblock 37 64 478 minecraft:air
 setblock 37 64 478 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "212.4"}','{"text": "productive_trees"}','{"text": "sawmill_run"}','{"text": ""}']}}
 setblock 38 64 478 minecraft:air
@@ -43,8 +43,8 @@ fill 38 64 462 44 64 462 minecraft:polished_blackstone
 fill 38 67 462 44 67 462 minecraft:polished_blackstone
 setblock 38 64 465 minecraft:lantern
 setblock 44 64 465 minecraft:lantern
-setblock 40 64 464 productivetrees:sawmill
-summon glow_item_frame 40 66 463 {Facing:3b,Fixed:1b,Tags:["kw_shot"],Item:{id:"productivetrees:sawdust",count:1}}
+summon glow_item_frame 39 66 463 {Facing:3b,Fixed:1b,Tags:["kw_shot"],Item:{id:"productivetrees:sawdust",count:1}}
+summon glow_item_frame 41 66 463 {Facing:3b,Fixed:1b,Tags:["kw_shot"],Item:{id:"productivetrees:sawmill",count:1}}
 setblock 47 64 478 minecraft:air
 setblock 47 64 478 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "212.5"}','{"text": "productive_trees"}','{"text": "stripper"}','{"text": ""}']}}
 setblock 48 64 478 minecraft:air
@@ -56,7 +56,7 @@ fill 48 64 462 54 64 462 minecraft:polished_blackstone
 fill 48 67 462 54 67 462 minecraft:polished_blackstone
 setblock 48 64 465 minecraft:lantern
 setblock 54 64 465 minecraft:lantern
-setblock 50 64 464 productivetrees:stripper
+summon glow_item_frame 50 66 463 {Facing:3b,Fixed:1b,Tags:["kw_shot"],Item:{id:"productivetrees:stripper",count:1}}
 setblock 57 64 478 minecraft:air
 setblock 57 64 478 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "212.6"}','{"text": "productive_trees"}','{"text": "wood_set"}','{"text": ""}']}}
 setblock 58 64 478 minecraft:air
@@ -68,7 +68,7 @@ fill 58 64 462 64 64 462 minecraft:polished_blackstone
 fill 58 67 462 64 67 462 minecraft:polished_blackstone
 setblock 58 64 465 minecraft:lantern
 setblock 64 64 465 minecraft:lantern
-setblock 60 64 464 productivetrees:mahogany_planks
+summon glow_item_frame 60 66 463 {Facing:3b,Fixed:1b,Tags:["kw_shot"],Item:{id:"productivetrees:mahogany_planks",count:1}}
 setblock 67 64 478 minecraft:air
 setblock 67 64 478 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "212.7"}','{"text": "productive_trees"}','{"text": "station"}','{"text": ""}']}}
 setblock 68 64 478 minecraft:air
@@ -80,9 +80,9 @@ fill 68 64 462 74 64 462 minecraft:polished_blackstone
 fill 68 67 462 74 67 462 minecraft:polished_blackstone
 setblock 68 64 465 minecraft:lantern
 setblock 74 64 465 minecraft:lantern
-setblock 69 64 464 minecraft:beehive
-setblock 71 64 464 minecraft:bee_nest
-summon glow_item_frame 70 66 463 {Facing:3b,Fixed:1b,Tags:["kw_shot"],Item:{id:"minecraft:spyglass",count:1}}
+summon glow_item_frame 69 66 463 {Facing:3b,Fixed:1b,Tags:["kw_shot"],Item:{id:"minecraft:beehive",count:1}}
+summon glow_item_frame 71 66 463 {Facing:3b,Fixed:1b,Tags:["kw_shot"],Item:{id:"minecraft:spyglass",count:1}}
+summon glow_item_frame 73 66 463 {Facing:3b,Fixed:1b,Tags:["kw_shot"],Item:{id:"minecraft:bee_nest",count:1}}
 setblock 77 64 478 minecraft:air
 setblock 77 64 478 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "212.8"}','{"text": "productive_trees"}','{"text": "pollinated"}','{"text": ""}']}}
 setblock 78 64 478 minecraft:air
@@ -94,7 +94,7 @@ fill 78 64 462 84 64 462 minecraft:polished_blackstone
 fill 78 67 462 84 67 462 minecraft:polished_blackstone
 setblock 78 64 465 minecraft:lantern
 setblock 84 64 465 minecraft:lantern
-setblock 80 64 464 productivetrees:hazel_sapling
+summon glow_item_frame 80 66 463 {Facing:3b,Fixed:1b,Tags:["kw_shot"],Item:{id:"productivetrees:hazel_sapling",count:1}}
 setblock 87 64 478 minecraft:air
 setblock 87 64 478 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "212.9"}','{"text": "productive_trees"}','{"text": "loot_saplings"}','{"text": ""}']}}
 setblock 88 64 478 minecraft:air
@@ -106,7 +106,7 @@ fill 88 64 462 94 64 462 minecraft:polished_blackstone
 fill 88 67 462 94 67 462 minecraft:polished_blackstone
 setblock 88 64 465 minecraft:lantern
 setblock 94 64 465 minecraft:lantern
-setblock 90 64 464 productivetrees:blue_yonder_sapling
+summon glow_item_frame 90 66 463 {Facing:3b,Fixed:1b,Tags:["kw_shot"],Item:{id:"productivetrees:blue_yonder_sapling",count:1}}
 setblock 97 64 478 minecraft:air
 setblock 97 64 478 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "212.10"}','{"text": "productive_trees"}','{"text": "amber"}','{"text": ""}']}}
 setblock 98 64 478 minecraft:air
@@ -118,7 +118,7 @@ fill 98 64 462 104 64 462 minecraft:polished_blackstone
 fill 98 67 462 104 67 462 minecraft:polished_blackstone
 setblock 98 64 465 minecraft:lantern
 setblock 104 64 465 minecraft:lantern
-setblock 100 64 464 productivetrees:brown_amber_sapling
+summon glow_item_frame 100 66 463 {Facing:3b,Fixed:1b,Tags:["kw_shot"],Item:{id:"productivetrees:brown_amber_sapling",count:1}}
 setblock 107 64 478 minecraft:air
 setblock 107 64 478 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "212.11"}','{"text": "productive_trees"}','{"text": "time_traveller"}','{"text": ""}']}}
 setblock 108 64 478 minecraft:air

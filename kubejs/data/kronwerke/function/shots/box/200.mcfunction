@@ -1,7 +1,7 @@
 # 200 flux_networks/setup_mek, setup_reactor, whole_base
 fill 184 63 376 223 63 389 minecraft:light_gray_concrete
-fill 184 64 376 223 71 376 minecraft:light_gray_concrete
-fill 184 64 376 184 71 389 minecraft:light_gray_concrete
+fill 184 64 376 223 79 376 minecraft:light_gray_concrete
+fill 184 64 376 184 79 389 minecraft:light_gray_concrete
 setblock 185 64 388 minecraft:air
 setblock 185 64 388 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "200.1"}','{"text": "flux_networks"}','{"text": "setup_mek"}','{"text": ""}']}}
 setblock 186 64 388 minecraft:air

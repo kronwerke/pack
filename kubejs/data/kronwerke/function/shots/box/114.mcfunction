@@ -1,7 +1,7 @@
 # 114 botania/endo_auto
 fill 15 63 186 28 63 199 minecraft:light_gray_concrete
-fill 15 64 186 28 71 186 minecraft:light_gray_concrete
-fill 15 64 186 15 71 199 minecraft:light_gray_concrete
+fill 15 64 186 28 79 186 minecraft:light_gray_concrete
+fill 15 64 186 15 79 199 minecraft:light_gray_concrete
 setblock 16 64 198 minecraft:air
 setblock 16 64 198 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "114"}','{"text": "botania"}','{"text": "endo_auto"}','{"text": ""}']}}
 setblock 17 64 198 minecraft:air

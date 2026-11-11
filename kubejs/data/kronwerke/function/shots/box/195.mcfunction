@@ -1,7 +1,7 @@
 # 195 list_transport/belt, packages, create_tank, hose_pulley, ie_wire, mek_transporter, vault, drawers
 fill 336 63 355 417 63 368 minecraft:light_gray_concrete
-fill 336 64 355 417 71 355 minecraft:light_gray_concrete
-fill 336 64 355 336 71 368 minecraft:light_gray_concrete
+fill 336 64 355 417 79 355 minecraft:light_gray_concrete
+fill 336 64 355 336 79 368 minecraft:light_gray_concrete
 setblock 337 64 367 minecraft:air
 setblock 337 64 367 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "195.1"}','{"text": "list_transport"}','{"text": "belt"}','{"text": ""}']}}
 setblock 338 64 367 minecraft:air
@@ -25,7 +25,7 @@ fill 348 64 357 354 64 357 minecraft:polished_blackstone
 fill 348 67 357 354 67 357 minecraft:polished_blackstone
 setblock 348 64 360 minecraft:lantern
 setblock 354 64 360 minecraft:lantern
-setblock 350 64 359 create:packager
+summon glow_item_frame 350 66 358 {Facing:3b,Fixed:1b,Tags:["kw_shot"],Item:{id:"create:packager",count:1}}
 setblock 357 64 367 minecraft:air
 setblock 357 64 367 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "195.3"}','{"text": "list_transport"}','{"text": "create_tank"}','{"text": ""}']}}
 setblock 358 64 367 minecraft:air
@@ -37,7 +37,7 @@ fill 358 64 357 364 64 357 minecraft:polished_blackstone
 fill 358 67 357 364 67 357 minecraft:polished_blackstone
 setblock 358 64 360 minecraft:lantern
 setblock 364 64 360 minecraft:lantern
-setblock 360 64 359 create:fluid_tank
+summon glow_item_frame 360 66 358 {Facing:3b,Fixed:1b,Tags:["kw_shot"],Item:{id:"create:fluid_tank",count:1}}
 setblock 367 64 367 minecraft:air
 setblock 367 64 367 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "195.4"}','{"text": "list_transport"}','{"text": "hose_pulley"}','{"text": ""}']}}
 setblock 368 64 367 minecraft:air
@@ -49,7 +49,7 @@ fill 368 64 357 374 64 357 minecraft:polished_blackstone
 fill 368 67 357 374 67 357 minecraft:polished_blackstone
 setblock 368 64 360 minecraft:lantern
 setblock 374 64 360 minecraft:lantern
-setblock 370 64 359 create:hose_pulley
+summon glow_item_frame 370 66 358 {Facing:3b,Fixed:1b,Tags:["kw_shot"],Item:{id:"create:hose_pulley",count:1}}
 setblock 377 64 367 minecraft:air
 setblock 377 64 367 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "195.5"}','{"text": "list_transport"}','{"text": "ie_wire"}','{"text": ""}']}}
 setblock 378 64 367 minecraft:air
@@ -85,7 +85,7 @@ fill 398 64 357 404 64 357 minecraft:polished_blackstone
 fill 398 67 357 404 67 357 minecraft:polished_blackstone
 setblock 398 64 360 minecraft:lantern
 setblock 404 64 360 minecraft:lantern
-setblock 400 64 359 create:item_vault
+summon glow_item_frame 400 66 358 {Facing:3b,Fixed:1b,Tags:["kw_shot"],Item:{id:"create:item_vault",count:1}}
 setblock 407 64 367 minecraft:air
 setblock 407 64 367 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "195.8"}','{"text": "list_transport"}','{"text": "drawers"}','{"text": ""}']}}
 setblock 408 64 367 minecraft:air
@@ -97,4 +97,4 @@ fill 408 64 357 414 64 357 minecraft:polished_blackstone
 fill 408 67 357 414 67 357 minecraft:polished_blackstone
 setblock 408 64 360 minecraft:lantern
 setblock 414 64 360 minecraft:lantern
-setblock 410 64 359 functionalstorage:oak_1
+summon glow_item_frame 410 66 358 {Facing:3b,Fixed:1b,Tags:["kw_shot"],Item:{id:"functionalstorage:oak_1",count:1}}

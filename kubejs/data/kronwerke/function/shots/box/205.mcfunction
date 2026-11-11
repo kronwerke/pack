@@ -1,7 +1,7 @@
 # 205 the_end/arrival, crystals, dragon, egg, respawn, elytra, cg_find, cg_kill, st_aviary, draconium
 fill 95 63 420 196 63 433 minecraft:light_gray_concrete
-fill 95 64 420 196 71 420 minecraft:light_gray_concrete
-fill 95 64 420 95 71 433 minecraft:light_gray_concrete
+fill 95 64 420 196 79 420 minecraft:light_gray_concrete
+fill 95 64 420 95 79 433 minecraft:light_gray_concrete
 setblock 96 64 432 minecraft:air
 setblock 96 64 432 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "205.1"}','{"text": "the_end"}','{"text": "arrival"}','{"text": ""}']}}
 setblock 97 64 432 minecraft:air
@@ -13,7 +13,7 @@ fill 97 64 422 103 64 422 minecraft:polished_blackstone
 fill 97 67 422 103 67 422 minecraft:polished_blackstone
 setblock 97 64 425 minecraft:lantern
 setblock 103 64 425 minecraft:lantern
-setblock 99 64 424 minecraft:end_stone
+summon glow_item_frame 99 66 423 {Facing:3b,Fixed:1b,Tags:["kw_shot"],Item:{id:"minecraft:end_stone",count:1}}
 setblock 106 64 432 minecraft:air
 setblock 106 64 432 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "205.2"}','{"text": "the_end"}','{"text": "crystals"}','{"text": ""}']}}
 setblock 107 64 432 minecraft:air
@@ -37,7 +37,7 @@ fill 117 64 422 123 64 422 minecraft:polished_blackstone
 fill 117 67 422 123 67 422 minecraft:polished_blackstone
 setblock 117 64 425 minecraft:lantern
 setblock 123 64 425 minecraft:lantern
-setblock 119 64 424 minecraft:dragon_head
+summon glow_item_frame 119 66 423 {Facing:3b,Fixed:1b,Tags:["kw_shot"],Item:{id:"minecraft:dragon_head",count:1}}
 setblock 126 64 432 minecraft:air
 setblock 126 64 432 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "205.4"}','{"text": "the_end"}','{"text": "egg"}','{"text": ""}']}}
 setblock 127 64 432 minecraft:air

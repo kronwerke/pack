@@ -1,7 +1,7 @@
 # 173 immersive/dynamo, windmill, watermill
 fill 150 63 273 189 63 286 minecraft:light_gray_concrete
-fill 150 64 273 189 71 273 minecraft:light_gray_concrete
-fill 150 64 273 150 71 286 minecraft:light_gray_concrete
+fill 150 64 273 189 79 273 minecraft:light_gray_concrete
+fill 150 64 273 150 79 286 minecraft:light_gray_concrete
 setblock 151 64 285 minecraft:air
 setblock 151 64 285 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "173.1"}','{"text": "immersive"}','{"text": "dynamo"}','{"text": ""}']}}
 setblock 152 64 285 minecraft:air

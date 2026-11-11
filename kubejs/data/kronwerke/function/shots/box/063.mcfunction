@@ -1,7 +1,7 @@
 # 063 mekanism_ores/layout
 fill 98 63 108 113 63 121 minecraft:light_gray_concrete
-fill 98 64 108 113 71 108 minecraft:light_gray_concrete
-fill 98 64 108 98 71 121 minecraft:light_gray_concrete
+fill 98 64 108 113 79 108 minecraft:light_gray_concrete
+fill 98 64 108 98 79 121 minecraft:light_gray_concrete
 setblock 99 64 120 minecraft:air
 setblock 99 64 120 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "063"}','{"text": "mekanism_ores"}','{"text": "layout"}','{"text": ""}']}}
 setblock 100 64 120 minecraft:air

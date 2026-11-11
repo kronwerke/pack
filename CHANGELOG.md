@@ -491,3 +491,9 @@ Incendium, which ran about a tenth of the tick in the 50 player load test:
 ## 0.21.1
 
 - Kronwerke Core 0.36.2: entities teleported into a dimension on another server stay where they are.
+
+## 0.22.0
+
+- Kronwerke Core 0.37.0: the camera for the quest book's pictures.
+- The screenshot world has 16 block walls, so the pictures show grey behind the scenes instead of sky, and a camera position for every cell (`shots/shots.json`, 449 shots; 41 shots of screens need a person).
+- The quest book points to kronwerke.com instead of the old address.

@@ -1,7 +1,7 @@
 # 003 start_here/o_obelisk
 fill 42 63 6 59 63 25 minecraft:light_gray_concrete
-fill 42 64 6 59 71 6 minecraft:light_gray_concrete
-fill 42 64 6 42 71 25 minecraft:light_gray_concrete
+fill 42 64 6 59 79 6 minecraft:light_gray_concrete
+fill 42 64 6 42 79 25 minecraft:light_gray_concrete
 setblock 43 64 24 minecraft:air
 setblock 43 64 24 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "003"}','{"text": "start_here"}','{"text": "o_obelisk"}','{"text": ""}']}}
 setblock 44 64 24 minecraft:air

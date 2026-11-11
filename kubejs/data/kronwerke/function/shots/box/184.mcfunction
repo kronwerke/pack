@@ -1,7 +1,7 @@
 # 184 industrial/laser, lens, fluid_laser
 fill 75 63 315 112 63 330 minecraft:light_gray_concrete
-fill 75 64 315 112 71 315 minecraft:light_gray_concrete
-fill 75 64 315 75 71 330 minecraft:light_gray_concrete
+fill 75 64 315 112 79 315 minecraft:light_gray_concrete
+fill 75 64 315 75 79 330 minecraft:light_gray_concrete
 setblock 76 64 329 minecraft:air
 setblock 76 64 329 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "184.1"}','{"text": "industrial"}','{"text": "laser"}','{"text": ""}']}}
 setblock 77 64 329 minecraft:air

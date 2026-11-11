@@ -12,6 +12,7 @@ Output, all under kubejs/data/kronwerke:
   function/shots/row_NN.mcfunction   one per row of boxes
   function/shots/box/NNN.mcfunction  one per box, so a bad line only costs its own box
   shots/rows.json                    the rows with their area, read by /kw testworld
+  shots/shots.json                   one camera position per cell, read by /kw cam run
 
 Usage: build.py [--check]   (--check also validates block, item and entity ids against
                              a catalog made from the server's mod jars, when present)
@@ -31,7 +32,7 @@ CELL = 9          # default cell size, interior
 GAP = 4           # path between boxes
 ROW_GAP = 6
 ROW_WIDTH = 420   # wrap a section row after this many blocks
-WALL_H = 8
+WALL_H = 16       # tall enough that the camera sees grey behind the scene, not sky
 PAD = (-4, -4)
 
 OUT_FN = os.path.join(ROOT, "kubejs", "data", "kronwerke", "function", "shots")
@@ -154,6 +155,31 @@ class Cell:
         self.cmds.append(raw)
 
 
+# ---- the camera ----------------------------------------------------------------------
+
+SCREEN_WORDS = ("JEI", "tooltip", "view", "overlay", "boss bar", "Ponder", "screen", "menu", "GUI", "HUD",
+                "chat", "inventory", "window", "terminal", "book", "keybind")
+
+
+def needs_screen(desc):
+    """Shots of a screen (JEI, a menu, the claim map) need someone at the keyboard, not the camera."""
+    return any(w.lower() in desc.lower() for w in SCREEN_WORDS)
+
+
+def camera(key, x0, z0, w, d, yaw=155.0, pitch=38.0, fov=60):
+    """Where the camera stands for a cell: south east of it, looking down at its middle, far
+    enough back that the whole cell fits (fov is Minecraft's vertical field of view)."""
+    import math
+    tx, ty, tz = x0 + w / 2, FLOOR_Y + 1 + 2, z0 + d / 2
+    dist = max(w, d) * 0.95 + 4
+    yr, pr = math.radians(yaw), math.radians(pitch)
+    fx, fy, fz = -math.sin(yr) * math.cos(pr), -math.sin(pr), math.cos(yr) * math.cos(pr)
+    ex, ey, ez = tx - fx * dist, ty - fy * dist, tz - fz * dist
+    return {"name": key.replace("/", "_"), "dim": "kronwerke:testworld",
+            "pos": [round(ex, 2), round(ey - 1.62, 2), round(ez, 2)], "yaw": yaw, "pitch": pitch,
+            "fov": fov, "width": 1280, "height": 720}
+
+
 # ---- layout ------------------------------------------------------------------------
 
 def build(check=False):
@@ -175,6 +201,7 @@ def build(check=False):
     os.makedirs(OUT_DATA, exist_ok=True)
 
     rows = []           # [{fn, x0, z0, x1, z1, boxes}]
+    shots = []          # camera positions for /kw cam run
     x, z = 0, 0
     row_depth = 0
     cur_section = None
@@ -241,6 +268,8 @@ def build(check=False):
             cmds.append(f"summon text_display {cx + w / 2} {FLOOR_Y + 1 + 7} {z + 1 + d / 2} "
                         f"{{text:'{label}',billboard:\"center\",background:1275068416,Tags:[\"kw_shot\"],alignment:\"center\",line_width:200,transformation:{{scale:[1.6f,1.6f,1.6f],translation:[0f,0f,0f],left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f]}}}}")
             cmds.extend(cell.cmds)
+            if not needs_screen(desc):
+                shots.append(camera(k, cx, z + 1, w, d))
             cx += w + 1
         row_boxes.append(box)
         row_depth = max(row_depth, bd)
@@ -269,6 +298,8 @@ def build(check=False):
         with open(os.path.join(OUT_FN, fn + ".mcfunction"), "w", encoding="utf-8") as fh:
             fh.write("\n".join(body) + "\n")
         out_rows.append({"function": f"kronwerke:shots/{fn}", "x0": row["x0"], "z0": row["z0"], "x1": row["x1"], "z1": row["z1"]})
+    with open(os.path.join(OUT_DATA, "shots.json"), "w") as fh:
+        json.dump({"shots": shots}, fh, indent=1)
     with open(os.path.join(OUT_DATA, "rows.json"), "w") as fh:
         json.dump({"pad": [PAD[0] + 0.5, FLOOR_Y + 1, PAD[1] + 0.5], "rows": out_rows}, fh, indent=1)
 

@@ -1,7 +1,7 @@
 # 162 hexerei/willow_broom
 fill 330 63 242 341 63 255 minecraft:light_gray_concrete
-fill 330 64 242 341 71 242 minecraft:light_gray_concrete
-fill 330 64 242 330 71 255 minecraft:light_gray_concrete
+fill 330 64 242 341 79 242 minecraft:light_gray_concrete
+fill 330 64 242 330 79 255 minecraft:light_gray_concrete
 setblock 331 64 254 minecraft:air
 setblock 331 64 254 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "162"}','{"text": "hexerei"}','{"text": "willow_broom"}','{"text": ""}']}}
 setblock 332 64 254 minecraft:air

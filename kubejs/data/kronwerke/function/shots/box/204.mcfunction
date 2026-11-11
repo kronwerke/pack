@@ -1,7 +1,7 @@
 # 204 nether/welcome, fortress, blaze_burner, biomes, structures, ig_kill, nm_kill, bastion, debris
 fill 0 63 420 91 63 433 minecraft:light_gray_concrete
-fill 0 64 420 91 71 420 minecraft:light_gray_concrete
-fill 0 64 420 0 71 433 minecraft:light_gray_concrete
+fill 0 64 420 91 79 420 minecraft:light_gray_concrete
+fill 0 64 420 0 79 433 minecraft:light_gray_concrete
 setblock 1 64 432 minecraft:air
 setblock 1 64 432 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "204.1"}','{"text": "nether"}','{"text": "welcome"}','{"text": ""}']}}
 setblock 2 64 432 minecraft:air
@@ -20,7 +20,7 @@ fill 12 64 422 18 64 422 minecraft:polished_blackstone
 fill 12 67 422 18 67 422 minecraft:polished_blackstone
 setblock 12 64 425 minecraft:lantern
 setblock 18 64 425 minecraft:lantern
-setblock 14 64 424 minecraft:nether_bricks
+summon glow_item_frame 14 66 423 {Facing:3b,Fixed:1b,Tags:["kw_shot"],Item:{id:"minecraft:nether_bricks",count:1}}
 setblock 21 64 432 minecraft:air
 setblock 21 64 432 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "204.3"}','{"text": "nether"}','{"text": "blaze_burner"}','{"text": ""}']}}
 setblock 22 64 432 minecraft:air
@@ -39,7 +39,7 @@ fill 32 64 422 38 64 422 minecraft:polished_blackstone
 fill 32 67 422 38 67 422 minecraft:polished_blackstone
 setblock 32 64 425 minecraft:lantern
 setblock 38 64 425 minecraft:lantern
-setblock 34 64 424 minecraft:warped_fungus
+summon glow_item_frame 34 66 423 {Facing:3b,Fixed:1b,Tags:["kw_shot"],Item:{id:"minecraft:warped_fungus",count:1}}
 setblock 41 64 432 minecraft:air
 setblock 41 64 432 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "204.5"}','{"text": "nether"}','{"text": "structures"}','{"text": ""}']}}
 setblock 42 64 432 minecraft:air
@@ -51,7 +51,7 @@ fill 42 64 422 48 64 422 minecraft:polished_blackstone
 fill 42 67 422 48 67 422 minecraft:polished_blackstone
 setblock 42 64 425 minecraft:lantern
 setblock 48 64 425 minecraft:lantern
-setblock 44 64 424 minecraft:chiseled_polished_blackstone
+summon glow_item_frame 44 66 423 {Facing:3b,Fixed:1b,Tags:["kw_shot"],Item:{id:"minecraft:chiseled_polished_blackstone",count:1}}
 setblock 51 64 432 minecraft:air
 setblock 51 64 432 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "204.6"}','{"text": "nether"}','{"text": "ig_kill"}','{"text": ""}']}}
 setblock 52 64 432 minecraft:air
@@ -89,7 +89,7 @@ fill 72 64 422 78 64 422 minecraft:polished_blackstone
 fill 72 67 422 78 67 422 minecraft:polished_blackstone
 setblock 72 64 425 minecraft:lantern
 setblock 78 64 425 minecraft:lantern
-setblock 74 64 424 minecraft:gilded_blackstone
+summon glow_item_frame 74 66 423 {Facing:3b,Fixed:1b,Tags:["kw_shot"],Item:{id:"minecraft:gilded_blackstone",count:1}}
 setblock 81 64 432 minecraft:air
 setblock 81 64 432 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "204.9"}','{"text": "nether"}','{"text": "debris"}','{"text": ""}']}}
 setblock 82 64 432 minecraft:air
@@ -101,4 +101,4 @@ fill 82 64 422 88 64 422 minecraft:polished_blackstone
 fill 82 67 422 88 67 422 minecraft:polished_blackstone
 setblock 82 64 425 minecraft:lantern
 setblock 88 64 425 minecraft:lantern
-setblock 84 64 424 minecraft:ancient_debris
+summon glow_item_frame 84 66 423 {Facing:3b,Fixed:1b,Tags:["kw_shot"],Item:{id:"minecraft:ancient_debris",count:1}}

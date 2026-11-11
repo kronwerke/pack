@@ -1,7 +1,7 @@
 # 094 ars_apprentice/relay
 fill 160 63 148 183 63 161 minecraft:light_gray_concrete
-fill 160 64 148 183 71 148 minecraft:light_gray_concrete
-fill 160 64 148 160 71 161 minecraft:light_gray_concrete
+fill 160 64 148 183 79 148 minecraft:light_gray_concrete
+fill 160 64 148 160 79 161 minecraft:light_gray_concrete
 setblock 161 64 160 minecraft:air
 setblock 161 64 160 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "094"}','{"text": "ars_apprentice"}','{"text": "relay"}','{"text": ""}']}}
 setblock 162 64 160 minecraft:air

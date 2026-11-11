@@ -1,7 +1,7 @@
 # 129 gaia/arena
 fill 248 63 186 263 63 203 minecraft:light_gray_concrete
-fill 248 64 186 263 71 186 minecraft:light_gray_concrete
-fill 248 64 186 248 71 203 minecraft:light_gray_concrete
+fill 248 64 186 263 79 186 minecraft:light_gray_concrete
+fill 248 64 186 248 79 203 minecraft:light_gray_concrete
 setblock 249 64 202 minecraft:air
 setblock 249 64 202 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "129"}','{"text": "gaia"}','{"text": "arena"}','{"text": ""}']}}
 setblock 250 64 202 minecraft:air

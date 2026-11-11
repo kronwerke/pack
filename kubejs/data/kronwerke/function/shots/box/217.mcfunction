@@ -1,7 +1,7 @@
 # 217 mahou_tsukai/blood, cloth, fay_sight, marble_visit, staff
 fill 198 63 485 249 63 498 minecraft:light_gray_concrete
-fill 198 64 485 249 71 485 minecraft:light_gray_concrete
-fill 198 64 485 198 71 498 minecraft:light_gray_concrete
+fill 198 64 485 249 79 485 minecraft:light_gray_concrete
+fill 198 64 485 198 79 498 minecraft:light_gray_concrete
 setblock 199 64 497 minecraft:air
 setblock 199 64 497 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "217.1"}','{"text": "mahou_tsukai"}','{"text": "blood"}','{"text": ""}']}}
 setblock 200 64 497 minecraft:air
@@ -25,7 +25,7 @@ fill 210 64 487 216 64 487 minecraft:polished_blackstone
 fill 210 67 487 216 67 487 minecraft:polished_blackstone
 setblock 210 64 490 minecraft:lantern
 setblock 216 64 490 minecraft:lantern
-setblock 212 64 489 mahoutsukai:spell_cloth
+summon glow_item_frame 212 66 488 {Facing:3b,Fixed:1b,Tags:["kw_shot"],Item:{id:"mahoutsukai:spell_cloth",count:1}}
 setblock 219 64 497 minecraft:air
 setblock 219 64 497 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "217.3"}','{"text": "mahou_tsukai"}','{"text": "fay_sight"}','{"text": ""}']}}
 setblock 220 64 497 minecraft:air

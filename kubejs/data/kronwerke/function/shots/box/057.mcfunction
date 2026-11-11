@@ -1,7 +1,7 @@
 # 057 mekanism/infuser
 fill 0 63 108 11 63 121 minecraft:light_gray_concrete
-fill 0 64 108 11 71 108 minecraft:light_gray_concrete
-fill 0 64 108 0 71 121 minecraft:light_gray_concrete
+fill 0 64 108 11 79 108 minecraft:light_gray_concrete
+fill 0 64 108 0 79 121 minecraft:light_gray_concrete
 setblock 1 64 120 minecraft:air
 setblock 1 64 120 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "057"}','{"text": "mekanism"}','{"text": "infuser"}','{"text": ""}']}}
 setblock 2 64 120 minecraft:air

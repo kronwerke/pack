@@ -1,7 +1,7 @@
 # 206 exploration/e_compass, e_frame, e_enter, e_veins, e_lootr, e_campsite, e_dnt_tavern, e_arise_sky, e_tnt_village, e_yung_dungeon
 fill 200 63 420 301 63 433 minecraft:light_gray_concrete
-fill 200 64 420 301 71 420 minecraft:light_gray_concrete
-fill 200 64 420 200 71 433 minecraft:light_gray_concrete
+fill 200 64 420 301 79 420 minecraft:light_gray_concrete
+fill 200 64 420 200 79 433 minecraft:light_gray_concrete
 setblock 201 64 432 minecraft:air
 setblock 201 64 432 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "206.1"}','{"text": "exploration"}','{"text": "e_compass"}','{"text": ""}']}}
 setblock 202 64 432 minecraft:air
@@ -17,20 +17,20 @@ summon glow_item_frame 204 66 423 {Facing:3b,Fixed:1b,Tags:["kw_shot"],Item:{id:
 setblock 211 64 432 minecraft:air
 setblock 211 64 432 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "206.2"}','{"text": "exploration"}','{"text": "e_frame"}','{"text": ""}']}}
 setblock 212 64 432 minecraft:air
-setblock 212 64 432 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Bau den Rahmen"}','{"text": "aus Eisen"}','{"text": ""}','{"text": ""}']}}
-summon text_display 215.5 71 425.5 {text:'[{"text": "206.2  ", "color": "gold"}, {"text": "exploration/e_frame", "color": "gray"}, {"text": "\\nBau den Rahmen aus Eisen", "color": "white"}]',billboard:"center",background:1275068416,Tags:["kw_shot"],alignment:"center",line_width:200,transformation:{scale:[1.6f,1.6f,1.6f],translation:[0f,0f,0f],left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f]}}
+setblock 212 64 432 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Entzünde das"}','{"text": "Minenportal"}','{"text": ""}','{"text": ""}']}}
+summon text_display 215.5 71 425.5 {text:'[{"text": "206.2  ", "color": "gold"}, {"text": "exploration/e_frame", "color": "gray"}, {"text": "\\nEntzünde das Minenportal", "color": "white"}]',billboard:"center",background:1275068416,Tags:["kw_shot"],alignment:"center",line_width:200,transformation:{scale:[1.6f,1.6f,1.6f],translation:[0f,0f,0f],left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f]}}
 fill 212 63 422 218 63 425 minecraft:polished_deepslate
 fill 212 64 422 218 67 422 minecraft:deepslate_tiles
 fill 212 64 422 218 64 422 minecraft:polished_blackstone
 fill 212 67 422 218 67 422 minecraft:polished_blackstone
 setblock 212 64 425 minecraft:lantern
 setblock 218 64 425 minecraft:lantern
-setblock 214 64 424 minecraft:iron_block
+summon glow_item_frame 214 66 423 {Facing:3b,Fixed:1b,Tags:["kw_shot"],Item:{id:"ars_nouveau:source_gem",count:1}}
 setblock 221 64 432 minecraft:air
 setblock 221 64 432 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "206.3"}','{"text": "exploration"}','{"text": "e_enter"}','{"text": ""}']}}
 setblock 222 64 432 minecraft:air
-setblock 222 64 432 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Aufnahme in"}','{"text": "ultimate mining"}','{"text": "dimension"}','{"text": ""}']}}
-summon text_display 225.5 71 425.5 {text:'[{"text": "206.3  ", "color": "gold"}, {"text": "exploration/e_enter", "color": "gray"}, {"text": "\\nBetritt die Minendimension", "color": "white"}]',billboard:"center",background:1275068416,Tags:["kw_shot"],alignment:"center",line_width:200,transformation:{scale:[1.6f,1.6f,1.6f],translation:[0f,0f,0f],left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f]}}
+setblock 222 64 432 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Reise in die"}','{"text": "Minenwelt"}','{"text": ""}','{"text": ""}']}}
+summon text_display 225.5 71 425.5 {text:'[{"text": "206.3  ", "color": "gold"}, {"text": "exploration/e_enter", "color": "gray"}, {"text": "\\nReise in die Minenwelt", "color": "white"}]',billboard:"center",background:1275068416,Tags:["kw_shot"],alignment:"center",line_width:200,transformation:{scale:[1.6f,1.6f,1.6f],translation:[0f,0f,0f],left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f]}}
 fill 222 63 422 228 63 425 minecraft:polished_deepslate
 fill 222 64 422 228 67 422 minecraft:deepslate_tiles
 fill 222 64 422 228 64 422 minecraft:polished_blackstone
@@ -49,7 +49,7 @@ fill 232 64 422 238 64 422 minecraft:polished_blackstone
 fill 232 67 422 238 67 422 minecraft:polished_blackstone
 setblock 232 64 425 minecraft:lantern
 setblock 238 64 425 minecraft:lantern
-setblock 234 64 424 minecraft:raw_copper_block
+summon glow_item_frame 234 66 423 {Facing:3b,Fixed:1b,Tags:["kw_shot"],Item:{id:"minecraft:raw_copper_block",count:1}}
 setblock 241 64 432 minecraft:air
 setblock 241 64 432 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "206.5"}','{"text": "exploration"}','{"text": "e_lootr"}','{"text": ""}']}}
 setblock 242 64 432 minecraft:air
@@ -61,7 +61,7 @@ fill 242 64 422 248 64 422 minecraft:polished_blackstone
 fill 242 67 422 248 67 422 minecraft:polished_blackstone
 setblock 242 64 425 minecraft:lantern
 setblock 248 64 425 minecraft:lantern
-setblock 244 64 424 minecraft:chest
+summon glow_item_frame 244 66 423 {Facing:3b,Fixed:1b,Tags:["kw_shot"],Item:{id:"minecraft:chest",count:1}}
 setblock 251 64 432 minecraft:air
 setblock 251 64 432 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "206.6"}','{"text": "exploration"}','{"text": "e_campsite"}','{"text": ""}']}}
 setblock 252 64 432 minecraft:air
@@ -73,7 +73,7 @@ fill 252 64 422 258 64 422 minecraft:polished_blackstone
 fill 252 67 422 258 67 422 minecraft:polished_blackstone
 setblock 252 64 425 minecraft:lantern
 setblock 258 64 425 minecraft:lantern
-setblock 254 64 424 minecraft:lantern
+summon glow_item_frame 254 66 423 {Facing:3b,Fixed:1b,Tags:["kw_shot"],Item:{id:"minecraft:lantern",count:1}}
 setblock 261 64 432 minecraft:air
 setblock 261 64 432 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "206.7"}','{"text": "exploration"}','{"text": "e_dnt_tavern"}','{"text": ""}']}}
 setblock 262 64 432 minecraft:air
@@ -109,7 +109,7 @@ fill 282 64 422 288 64 422 minecraft:polished_blackstone
 fill 282 67 422 288 67 422 minecraft:polished_blackstone
 setblock 282 64 425 minecraft:lantern
 setblock 288 64 425 minecraft:lantern
-setblock 284 64 424 minecraft:bell
+summon glow_item_frame 284 66 423 {Facing:3b,Fixed:1b,Tags:["kw_shot"],Item:{id:"minecraft:bell",count:1}}
 setblock 291 64 432 minecraft:air
 setblock 291 64 432 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "206.10"}','{"text": "exploration"}','{"text": "e_yung_dungeon"}','{"text": ""}']}}
 setblock 292 64 432 minecraft:air
@@ -121,4 +121,4 @@ fill 292 64 422 298 64 422 minecraft:polished_blackstone
 fill 292 67 422 298 67 422 minecraft:polished_blackstone
 setblock 292 64 425 minecraft:lantern
 setblock 298 64 425 minecraft:lantern
-setblock 294 64 424 minecraft:cracked_stone_bricks
+summon glow_item_frame 294 66 423 {Facing:3b,Fixed:1b,Tags:["kw_shot"],Item:{id:"minecraft:cracked_stone_bricks",count:1}}

@@ -1,7 +1,7 @@
 # 117 botania/mana_void
 fill 62 63 186 73 63 199 minecraft:light_gray_concrete
-fill 62 64 186 73 71 186 minecraft:light_gray_concrete
-fill 62 64 186 62 71 199 minecraft:light_gray_concrete
+fill 62 64 186 73 79 186 minecraft:light_gray_concrete
+fill 62 64 186 62 79 199 minecraft:light_gray_concrete
 setblock 63 64 198 minecraft:air
 setblock 63 64 198 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "117"}','{"text": "botania"}','{"text": "mana_void"}','{"text": ""}']}}
 setblock 64 64 198 minecraft:air

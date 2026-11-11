@@ -1,7 +1,7 @@
 # 066 mekanism_ores/quintupling
 fill 157 63 108 174 63 121 minecraft:light_gray_concrete
-fill 157 64 108 174 71 108 minecraft:light_gray_concrete
-fill 157 64 108 157 71 121 minecraft:light_gray_concrete
+fill 157 64 108 174 79 108 minecraft:light_gray_concrete
+fill 157 64 108 157 79 121 minecraft:light_gray_concrete
 setblock 158 64 120 minecraft:air
 setblock 158 64 120 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "066"}','{"text": "mekanism_ores"}','{"text": "quintupling"}','{"text": ""}']}}
 setblock 159 64 120 minecraft:air

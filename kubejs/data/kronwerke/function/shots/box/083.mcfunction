@@ -1,7 +1,7 @@
 # 083 antimatter/wind
 fill 0 63 129 11 63 142 minecraft:light_gray_concrete
-fill 0 64 129 11 71 129 minecraft:light_gray_concrete
-fill 0 64 129 0 71 142 minecraft:light_gray_concrete
+fill 0 64 129 11 79 129 minecraft:light_gray_concrete
+fill 0 64 129 0 79 142 minecraft:light_gray_concrete
 setblock 1 64 141 minecraft:air
 setblock 1 64 141 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "083"}','{"text": "antimatter"}','{"text": "wind"}','{"text": ""}']}}
 setblock 2 64 141 minecraft:air

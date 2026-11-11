@@ -1,7 +1,7 @@
 # 215 nuclearcraft/reactor, irradiation, geiger
 fill 116 63 485 149 63 500 minecraft:light_gray_concrete
-fill 116 64 485 149 71 485 minecraft:light_gray_concrete
-fill 116 64 485 116 71 500 minecraft:light_gray_concrete
+fill 116 64 485 149 79 485 minecraft:light_gray_concrete
+fill 116 64 485 116 79 500 minecraft:light_gray_concrete
 setblock 117 64 499 minecraft:air
 setblock 117 64 499 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "215.1"}','{"text": "nuclearcraft"}','{"text": "reactor"}','{"text": ""}']}}
 setblock 118 64 499 minecraft:air
@@ -27,8 +27,8 @@ fill 130 64 487 136 64 487 minecraft:polished_blackstone
 fill 130 67 487 136 67 487 minecraft:polished_blackstone
 setblock 130 64 490 minecraft:lantern
 setblock 136 64 490 minecraft:lantern
-setblock 131 64 489 nuclearcraft:fission_reactor_irradiation_chamber
-setblock 133 64 489 nuclearcraft:irradiator
+summon glow_item_frame 131 66 488 {Facing:3b,Fixed:1b,Tags:["kw_shot"],Item:{id:"nuclearcraft:fission_reactor_irradiation_chamber",count:1}}
+summon glow_item_frame 133 66 488 {Facing:3b,Fixed:1b,Tags:["kw_shot"],Item:{id:"nuclearcraft:irradiator",count:1}}
 setblock 139 64 499 minecraft:air
 setblock 139 64 499 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "215.3"}','{"text": "nuclearcraft"}','{"text": "geiger"}','{"text": ""}']}}
 setblock 140 64 499 minecraft:air

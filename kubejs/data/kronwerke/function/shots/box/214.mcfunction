@@ -1,7 +1,7 @@
 # 214 draconic_chaos/awakened, crystals, guardian, reactor
 fill 65 63 485 112 63 504 minecraft:light_gray_concrete
-fill 65 64 485 112 71 485 minecraft:light_gray_concrete
-fill 65 64 485 65 71 504 minecraft:light_gray_concrete
+fill 65 64 485 112 79 485 minecraft:light_gray_concrete
+fill 65 64 485 65 79 504 minecraft:light_gray_concrete
 setblock 66 64 503 minecraft:air
 setblock 66 64 503 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "214.1"}','{"text": "draconic_chaos"}','{"text": "awakened"}','{"text": ""}']}}
 setblock 67 64 503 minecraft:air
@@ -13,7 +13,7 @@ fill 67 64 487 73 64 487 minecraft:polished_blackstone
 fill 67 67 487 73 67 487 minecraft:polished_blackstone
 setblock 67 64 490 minecraft:lantern
 setblock 73 64 490 minecraft:lantern
-setblock 69 64 489 draconicevolution:awakened_draconium_block
+summon glow_item_frame 69 66 488 {Facing:3b,Fixed:1b,Tags:["kw_shot"],Item:{id:"draconicevolution:awakened_draconium_block",count:1}}
 setblock 76 64 503 minecraft:air
 setblock 76 64 503 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "214.2"}','{"text": "draconic_chaos"}','{"text": "crystals"}','{"text": ""}']}}
 setblock 77 64 503 minecraft:air

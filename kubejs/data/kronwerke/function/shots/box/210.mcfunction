@@ -1,7 +1,7 @@
 # 210 eternal_starlight/orb, portal, starfire, desert, forge, golem, garden, monstrosity
 fill 192 63 439 275 63 454 minecraft:light_gray_concrete
-fill 192 64 439 275 71 439 minecraft:light_gray_concrete
-fill 192 64 439 192 71 454 minecraft:light_gray_concrete
+fill 192 64 439 275 79 439 minecraft:light_gray_concrete
+fill 192 64 439 192 79 454 minecraft:light_gray_concrete
 setblock 193 64 453 minecraft:air
 setblock 193 64 453 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "210.1"}','{"text": "eternal_starlight"}','{"text": "orb"}','{"text": ""}']}}
 setblock 194 64 453 minecraft:air
@@ -80,8 +80,8 @@ fill 256 64 441 262 64 441 minecraft:polished_blackstone
 fill 256 67 441 262 67 441 minecraft:polished_blackstone
 setblock 256 64 444 minecraft:lantern
 setblock 262 64 444 minecraft:lantern
-setblock 258 64 443 eternal_starlight:tangled_skull
-summon glow_item_frame 258 66 442 {Facing:3b,Fixed:1b,Tags:["kw_shot"],Item:{id:"minecraft:flint_and_steel",count:1}}
+summon glow_item_frame 257 66 442 {Facing:3b,Fixed:1b,Tags:["kw_shot"],Item:{id:"minecraft:flint_and_steel",count:1}}
+summon glow_item_frame 259 66 442 {Facing:3b,Fixed:1b,Tags:["kw_shot"],Item:{id:"eternal_starlight:tangled_skull",count:1}}
 summon eternal_starlight:tangled 257.5 64 446.5 {NoAI:1b,PersistenceRequired:1b,Silent:1b,Tags:["kw_shot"],Rotation:[180f,0f]}
 setblock 265 64 453 minecraft:air
 setblock 265 64 453 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "210.8"}','{"text": "eternal_starlight"}','{"text": "monstrosity"}','{"text": ""}']}}

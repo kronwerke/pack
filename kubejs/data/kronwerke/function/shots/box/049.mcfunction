@@ -1,7 +1,7 @@
 # 049 create_trains/first_train
 fill 117 63 77 134 63 90 minecraft:light_gray_concrete
-fill 117 64 77 134 71 77 minecraft:light_gray_concrete
-fill 117 64 77 117 71 90 minecraft:light_gray_concrete
+fill 117 64 77 134 79 77 minecraft:light_gray_concrete
+fill 117 64 77 117 79 90 minecraft:light_gray_concrete
 setblock 118 64 89 minecraft:air
 setblock 118 64 89 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "049"}','{"text": "create_trains"}','{"text": "first_train"}','{"text": ""}']}}
 setblock 119 64 89 minecraft:air

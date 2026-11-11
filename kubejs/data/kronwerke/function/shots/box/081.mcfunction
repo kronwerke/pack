@@ -1,7 +1,7 @@
 # 081 antimatter/waste
 fill 390 63 108 403 63 121 minecraft:light_gray_concrete
-fill 390 64 108 403 71 108 minecraft:light_gray_concrete
-fill 390 64 108 390 71 121 minecraft:light_gray_concrete
+fill 390 64 108 403 79 108 minecraft:light_gray_concrete
+fill 390 64 108 390 79 121 minecraft:light_gray_concrete
 setblock 391 64 120 minecraft:air
 setblock 391 64 120 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "081"}','{"text": "antimatter"}','{"text": "waste"}','{"text": ""}']}}
 setblock 392 64 120 minecraft:air

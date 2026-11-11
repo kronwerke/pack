@@ -1,7 +1,7 @@
 # 187 powah/orb, rods, furnator, thermo, reactor, reactor_fuel, ender_cell, transmitter, power_plant
 fill 135 63 336 226 63 349 minecraft:light_gray_concrete
-fill 135 64 336 226 71 336 minecraft:light_gray_concrete
-fill 135 64 336 135 71 349 minecraft:light_gray_concrete
+fill 135 64 336 226 79 336 minecraft:light_gray_concrete
+fill 135 64 336 135 79 349 minecraft:light_gray_concrete
 setblock 136 64 348 minecraft:air
 setblock 136 64 348 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "187.1"}','{"text": "powah"}','{"text": "orb"}','{"text": ""}']}}
 setblock 137 64 348 minecraft:air
@@ -13,7 +13,7 @@ fill 137 64 338 143 64 338 minecraft:polished_blackstone
 fill 137 67 338 143 67 338 minecraft:polished_blackstone
 setblock 137 64 341 minecraft:lantern
 setblock 143 64 341 minecraft:lantern
-setblock 139 64 340 powah:energizing_orb
+summon glow_item_frame 139 66 339 {Facing:3b,Fixed:1b,Tags:["kw_shot"],Item:{id:"powah:energizing_orb",count:1}}
 setblock 146 64 348 minecraft:air
 setblock 146 64 348 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "187.2"}','{"text": "powah"}','{"text": "rods"}','{"text": ""}']}}
 setblock 147 64 348 minecraft:air
@@ -25,7 +25,7 @@ fill 147 64 338 153 64 338 minecraft:polished_blackstone
 fill 147 67 338 153 67 338 minecraft:polished_blackstone
 setblock 147 64 341 minecraft:lantern
 setblock 153 64 341 minecraft:lantern
-setblock 149 64 340 powah:energizing_rod_starter
+summon glow_item_frame 149 66 339 {Facing:3b,Fixed:1b,Tags:["kw_shot"],Item:{id:"powah:energizing_rod_starter",count:1}}
 setblock 156 64 348 minecraft:air
 setblock 156 64 348 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "187.3"}','{"text": "powah"}','{"text": "furnator"}','{"text": ""}']}}
 setblock 157 64 348 minecraft:air
@@ -37,7 +37,7 @@ fill 157 64 338 163 64 338 minecraft:polished_blackstone
 fill 157 67 338 163 67 338 minecraft:polished_blackstone
 setblock 157 64 341 minecraft:lantern
 setblock 163 64 341 minecraft:lantern
-setblock 159 64 340 powah:furnator_starter
+summon glow_item_frame 159 66 339 {Facing:3b,Fixed:1b,Tags:["kw_shot"],Item:{id:"powah:furnator_starter",count:1}}
 setblock 166 64 348 minecraft:air
 setblock 166 64 348 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "187.4"}','{"text": "powah"}','{"text": "thermo"}','{"text": ""}']}}
 setblock 167 64 348 minecraft:air
@@ -49,7 +49,7 @@ fill 167 64 338 173 64 338 minecraft:polished_blackstone
 fill 167 67 338 173 67 338 minecraft:polished_blackstone
 setblock 167 64 341 minecraft:lantern
 setblock 173 64 341 minecraft:lantern
-setblock 169 64 340 powah:thermo_generator_starter
+summon glow_item_frame 169 66 339 {Facing:3b,Fixed:1b,Tags:["kw_shot"],Item:{id:"powah:thermo_generator_starter",count:1}}
 setblock 176 64 348 minecraft:air
 setblock 176 64 348 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "187.5"}','{"text": "powah"}','{"text": "reactor"}','{"text": ""}']}}
 setblock 177 64 348 minecraft:air
@@ -69,7 +69,7 @@ fill 187 64 338 193 64 338 minecraft:polished_blackstone
 fill 187 67 338 193 67 338 minecraft:polished_blackstone
 setblock 187 64 341 minecraft:lantern
 setblock 193 64 341 minecraft:lantern
-setblock 189 64 340 minecraft:packed_ice
+summon glow_item_frame 189 66 339 {Facing:3b,Fixed:1b,Tags:["kw_shot"],Item:{id:"minecraft:packed_ice",count:1}}
 setblock 196 64 348 minecraft:air
 setblock 196 64 348 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "187.7"}','{"text": "powah"}','{"text": "ender_cell"}','{"text": ""}']}}
 setblock 197 64 348 minecraft:air
@@ -81,7 +81,7 @@ fill 197 64 338 203 64 338 minecraft:polished_blackstone
 fill 197 67 338 203 67 338 minecraft:polished_blackstone
 setblock 197 64 341 minecraft:lantern
 setblock 203 64 341 minecraft:lantern
-setblock 199 64 340 powah:ender_cell_starter
+summon glow_item_frame 199 66 339 {Facing:3b,Fixed:1b,Tags:["kw_shot"],Item:{id:"powah:ender_cell_starter",count:1}}
 setblock 206 64 348 minecraft:air
 setblock 206 64 348 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "187.8"}','{"text": "powah"}','{"text": "transmitter"}','{"text": ""}']}}
 setblock 207 64 348 minecraft:air
@@ -93,8 +93,8 @@ fill 207 64 338 213 64 338 minecraft:polished_blackstone
 fill 207 67 338 213 67 338 minecraft:polished_blackstone
 setblock 207 64 341 minecraft:lantern
 setblock 213 64 341 minecraft:lantern
-setblock 209 64 340 powah:player_transmitter_starter
-summon glow_item_frame 209 66 339 {Facing:3b,Fixed:1b,Tags:["kw_shot"],Item:{id:"powah:binding_card",count:1}}
+summon glow_item_frame 208 66 339 {Facing:3b,Fixed:1b,Tags:["kw_shot"],Item:{id:"powah:player_transmitter_starter",count:1}}
+summon glow_item_frame 210 66 339 {Facing:3b,Fixed:1b,Tags:["kw_shot"],Item:{id:"powah:binding_card",count:1}}
 setblock 216 64 348 minecraft:air
 setblock 216 64 348 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "187.9"}','{"text": "powah"}','{"text": "power_plant"}','{"text": ""}']}}
 setblock 217 64 348 minecraft:air
@@ -106,5 +106,5 @@ fill 217 64 338 223 64 338 minecraft:polished_blackstone
 fill 217 67 338 223 67 338 minecraft:polished_blackstone
 setblock 217 64 341 minecraft:lantern
 setblock 223 64 341 minecraft:lantern
-setblock 218 64 340 powah:furnator_blazing
-setblock 220 64 340 powah:energy_cell_blazing
+summon glow_item_frame 218 66 339 {Facing:3b,Fixed:1b,Tags:["kw_shot"],Item:{id:"powah:furnator_blazing",count:1}}
+summon glow_item_frame 220 66 339 {Facing:3b,Fixed:1b,Tags:["kw_shot"],Item:{id:"powah:energy_cell_blazing",count:1}}

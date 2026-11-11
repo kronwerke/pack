@@ -1,7 +1,7 @@
 # 150 occultism_afrit/kandar
 fill 150 63 242 161 63 255 minecraft:light_gray_concrete
-fill 150 64 242 161 71 242 minecraft:light_gray_concrete
-fill 150 64 242 150 71 255 minecraft:light_gray_concrete
+fill 150 64 242 161 79 242 minecraft:light_gray_concrete
+fill 150 64 242 150 79 255 minecraft:light_gray_concrete
 setblock 151 64 254 minecraft:air
 setblock 151 64 254 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "150"}','{"text": "occultism_afrit"}','{"text": "kandar"}','{"text": ""}']}}
 setblock 152 64 254 minecraft:air

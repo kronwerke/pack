@@ -1,7 +1,7 @@
 # 070 mekanism_advanced/miner
 fill 223 63 108 234 63 121 minecraft:light_gray_concrete
-fill 223 64 108 234 71 108 minecraft:light_gray_concrete
-fill 223 64 108 223 71 121 minecraft:light_gray_concrete
+fill 223 64 108 234 79 108 minecraft:light_gray_concrete
+fill 223 64 108 223 79 121 minecraft:light_gray_concrete
 setblock 224 64 120 minecraft:air
 setblock 224 64 120 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "070"}','{"text": "mekanism_advanced"}','{"text": "miner"}','{"text": ""}']}}
 setblock 225 64 120 minecraft:air

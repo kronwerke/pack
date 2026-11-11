@@ -1,7 +1,7 @@
 # 005 start_here/m_goldleaf
 fill 78 63 6 89 63 19 minecraft:light_gray_concrete
-fill 78 64 6 89 71 6 minecraft:light_gray_concrete
-fill 78 64 6 78 71 19 minecraft:light_gray_concrete
+fill 78 64 6 89 79 6 minecraft:light_gray_concrete
+fill 78 64 6 78 79 19 minecraft:light_gray_concrete
 setblock 79 64 18 minecraft:air
 setblock 79 64 18 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "005"}','{"text": "start_here"}','{"text": "m_goldleaf"}','{"text": ""}']}}
 setblock 80 64 18 minecraft:air

@@ -1,7 +1,7 @@
 # 145 occultism/ophyx
 fill 75 63 242 86 63 255 minecraft:light_gray_concrete
-fill 75 64 242 86 71 242 minecraft:light_gray_concrete
-fill 75 64 242 75 71 255 minecraft:light_gray_concrete
+fill 75 64 242 86 79 242 minecraft:light_gray_concrete
+fill 75 64 242 75 79 255 minecraft:light_gray_concrete
 setblock 76 64 254 minecraft:air
 setblock 76 64 254 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "145"}','{"text": "occultism"}','{"text": "ophyx"}','{"text": ""}']}}
 setblock 77 64 254 minecraft:air

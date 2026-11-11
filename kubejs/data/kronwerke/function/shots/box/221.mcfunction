@@ -1,7 +1,7 @@
 # 221 theurgy/sal_tank, liquefaction, vessels, wire, array, fermentation
 fill 160 63 510 221 63 523 minecraft:light_gray_concrete
-fill 160 64 510 221 71 510 minecraft:light_gray_concrete
-fill 160 64 510 160 71 523 minecraft:light_gray_concrete
+fill 160 64 510 221 79 510 minecraft:light_gray_concrete
+fill 160 64 510 160 79 523 minecraft:light_gray_concrete
 setblock 161 64 522 minecraft:air
 setblock 161 64 522 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "221.1"}','{"text": "theurgy"}','{"text": "sal_tank"}','{"text": ""}']}}
 setblock 162 64 522 minecraft:air
@@ -13,8 +13,8 @@ fill 162 64 512 168 64 512 minecraft:polished_blackstone
 fill 162 67 512 168 67 512 minecraft:polished_blackstone
 setblock 162 64 515 minecraft:lantern
 setblock 168 64 515 minecraft:lantern
-setblock 163 64 514 theurgy:sal_ammoniac_tank
-setblock 165 64 514 theurgy:sal_ammoniac_accumulator
+summon glow_item_frame 163 66 513 {Facing:3b,Fixed:1b,Tags:["kw_shot"],Item:{id:"theurgy:sal_ammoniac_tank",count:1}}
+summon glow_item_frame 165 66 513 {Facing:3b,Fixed:1b,Tags:["kw_shot"],Item:{id:"theurgy:sal_ammoniac_accumulator",count:1}}
 setblock 171 64 522 minecraft:air
 setblock 171 64 522 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "221.2"}','{"text": "theurgy"}','{"text": "liquefaction"}','{"text": ""}']}}
 setblock 172 64 522 minecraft:air
@@ -26,8 +26,8 @@ fill 172 64 512 178 64 512 minecraft:polished_blackstone
 fill 172 67 512 178 67 512 minecraft:polished_blackstone
 setblock 172 64 515 minecraft:lantern
 setblock 178 64 515 minecraft:lantern
-setblock 174 64 514 theurgy:liquefaction_cauldron
-summon glow_item_frame 174 66 513 {Facing:3b,Fixed:1b,Tags:["kw_shot"],Item:{id:"theurgy:alchemical_sulfur_iron",count:1}}
+summon glow_item_frame 173 66 513 {Facing:3b,Fixed:1b,Tags:["kw_shot"],Item:{id:"theurgy:liquefaction_cauldron",count:1}}
+summon glow_item_frame 175 66 513 {Facing:3b,Fixed:1b,Tags:["kw_shot"],Item:{id:"theurgy:alchemical_sulfur_iron",count:1}}
 setblock 181 64 522 minecraft:air
 setblock 181 64 522 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "221.3"}','{"text": "theurgy"}','{"text": "vessels"}','{"text": ""}']}}
 setblock 182 64 522 minecraft:air
@@ -39,9 +39,9 @@ fill 182 64 512 188 64 512 minecraft:polished_blackstone
 fill 182 67 512 188 67 512 minecraft:polished_blackstone
 setblock 182 64 515 minecraft:lantern
 setblock 188 64 515 minecraft:lantern
-setblock 183 64 514 theurgy:incubator_salt_vessel
-setblock 185 64 514 theurgy:incubator_sulfur_vessel
-setblock 187 64 514 theurgy:incubator_mercury_vessel
+summon glow_item_frame 183 66 513 {Facing:3b,Fixed:1b,Tags:["kw_shot"],Item:{id:"theurgy:incubator_salt_vessel",count:1}}
+summon glow_item_frame 185 66 513 {Facing:3b,Fixed:1b,Tags:["kw_shot"],Item:{id:"theurgy:incubator_sulfur_vessel",count:1}}
+summon glow_item_frame 187 66 513 {Facing:3b,Fixed:1b,Tags:["kw_shot"],Item:{id:"theurgy:incubator_mercury_vessel",count:1}}
 setblock 191 64 522 minecraft:air
 setblock 191 64 522 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "221.4"}','{"text": "theurgy"}','{"text": "wire"}','{"text": ""}']}}
 setblock 192 64 522 minecraft:air
@@ -75,5 +75,5 @@ fill 212 64 512 218 64 512 minecraft:polished_blackstone
 fill 212 67 512 218 67 512 minecraft:polished_blackstone
 setblock 212 64 515 minecraft:lantern
 setblock 218 64 515 minecraft:lantern
-setblock 214 64 514 theurgy:fermentation_vat
-summon glow_item_frame 214 66 513 {Facing:3b,Fixed:1b,Tags:["kw_shot"],Item:{id:"theurgy:alchemical_niter_gems_common",count:1}}
+summon glow_item_frame 213 66 513 {Facing:3b,Fixed:1b,Tags:["kw_shot"],Item:{id:"theurgy:fermentation_vat",count:1}}
+summon glow_item_frame 215 66 513 {Facing:3b,Fixed:1b,Tags:["kw_shot"],Item:{id:"theurgy:alchemical_niter_gems_common",count:1}}

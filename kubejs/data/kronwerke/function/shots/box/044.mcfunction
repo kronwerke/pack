@@ -1,7 +1,7 @@
 # 044 create_brass/pg_winding, pg_generator, pg_rheostat, pg_magnet
 fill 0 63 77 41 63 90 minecraft:light_gray_concrete
-fill 0 64 77 41 71 77 minecraft:light_gray_concrete
-fill 0 64 77 0 71 90 minecraft:light_gray_concrete
+fill 0 64 77 41 79 77 minecraft:light_gray_concrete
+fill 0 64 77 0 79 90 minecraft:light_gray_concrete
 setblock 1 64 89 minecraft:air
 setblock 1 64 89 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "044.1"}','{"text": "create_brass"}','{"text": "pg_winding"}','{"text": ""}']}}
 setblock 2 64 89 minecraft:air

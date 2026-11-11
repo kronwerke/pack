@@ -1,7 +1,7 @@
 # 122 botania_runes/runic_altar
 fill 141 63 186 152 63 199 minecraft:light_gray_concrete
-fill 141 64 186 152 71 186 minecraft:light_gray_concrete
-fill 141 64 186 141 71 199 minecraft:light_gray_concrete
+fill 141 64 186 152 79 186 minecraft:light_gray_concrete
+fill 141 64 186 141 79 199 minecraft:light_gray_concrete
 setblock 142 64 198 minecraft:air
 setblock 142 64 198 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "122"}','{"text": "botania_runes"}','{"text": "runic_altar"}','{"text": ""}']}}
 setblock 143 64 198 minecraft:air

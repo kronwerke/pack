@@ -1,7 +1,7 @@
 # 216 quarries/first_dig, quarry, destroyer, coe_netherite
 fill 153 63 485 194 63 498 minecraft:light_gray_concrete
-fill 153 64 485 194 71 485 minecraft:light_gray_concrete
-fill 153 64 485 153 71 498 minecraft:light_gray_concrete
+fill 153 64 485 194 79 485 minecraft:light_gray_concrete
+fill 153 64 485 153 79 498 minecraft:light_gray_concrete
 setblock 154 64 497 minecraft:air
 setblock 154 64 497 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "216.1"}','{"text": "quarries"}','{"text": "first_dig"}','{"text": ""}']}}
 setblock 155 64 497 minecraft:air
@@ -13,7 +13,7 @@ fill 155 64 487 161 64 487 minecraft:polished_blackstone
 fill 155 67 487 161 67 487 minecraft:polished_blackstone
 setblock 155 64 490 minecraft:lantern
 setblock 161 64 490 minecraft:lantern
-setblock 157 64 489 minecraft:chest
+summon glow_item_frame 157 66 488 {Facing:3b,Fixed:1b,Tags:["kw_shot"],Item:{id:"minecraft:chest",count:1}}
 setblock 164 64 497 minecraft:air
 setblock 164 64 497 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "216.2"}','{"text": "quarries"}','{"text": "quarry"}','{"text": ""}']}}
 setblock 165 64 497 minecraft:air
@@ -25,7 +25,7 @@ fill 165 64 487 171 64 487 minecraft:polished_blackstone
 fill 165 67 487 171 67 487 minecraft:polished_blackstone
 setblock 165 64 490 minecraft:lantern
 setblock 171 64 490 minecraft:lantern
-setblock 167 64 489 quarryplus:quarry
+summon glow_item_frame 167 66 488 {Facing:3b,Fixed:1b,Tags:["kw_shot"],Item:{id:"quarryplus:quarry",count:1}}
 setblock 174 64 497 minecraft:air
 setblock 174 64 497 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "216.3"}','{"text": "quarries"}','{"text": "destroyer"}','{"text": ""}']}}
 setblock 175 64 497 minecraft:air
@@ -37,8 +37,8 @@ fill 175 64 487 181 64 487 minecraft:polished_blackstone
 fill 175 67 487 181 67 487 minecraft:polished_blackstone
 setblock 175 64 490 minecraft:lantern
 setblock 181 64 490 minecraft:lantern
-setblock 177 64 489 quarryplus:adv_quarry
-summon glow_item_frame 177 66 488 {Facing:3b,Fixed:1b,Tags:["kw_shot"],Item:{id:"draconicevolution:draconium_ingot",count:1}}
+summon glow_item_frame 176 66 488 {Facing:3b,Fixed:1b,Tags:["kw_shot"],Item:{id:"quarryplus:adv_quarry",count:1}}
+summon glow_item_frame 178 66 488 {Facing:3b,Fixed:1b,Tags:["kw_shot"],Item:{id:"draconicevolution:draconium_ingot",count:1}}
 setblock 184 64 497 minecraft:air
 setblock 184 64 497 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "216.4"}','{"text": "quarries"}','{"text": "coe_netherite"}','{"text": ""}']}}
 setblock 185 64 497 minecraft:air

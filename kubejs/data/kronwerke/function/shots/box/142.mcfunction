@@ -1,7 +1,7 @@
 # 142 occultism/foliot_crusher
 fill 30 63 242 41 63 255 minecraft:light_gray_concrete
-fill 30 64 242 41 71 242 minecraft:light_gray_concrete
-fill 30 64 242 30 71 255 minecraft:light_gray_concrete
+fill 30 64 242 41 79 242 minecraft:light_gray_concrete
+fill 30 64 242 30 79 255 minecraft:light_gray_concrete
 setblock 31 64 254 minecraft:air
 setblock 31 64 254 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "142"}','{"text": "occultism"}','{"text": "foliot_crusher"}','{"text": ""}']}}
 setblock 32 64 254 minecraft:air

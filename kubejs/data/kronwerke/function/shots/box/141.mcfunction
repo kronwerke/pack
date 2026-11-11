@@ -1,7 +1,7 @@
 # 141 occultism/aviar
 fill 15 63 242 26 63 255 minecraft:light_gray_concrete
-fill 15 64 242 26 71 242 minecraft:light_gray_concrete
-fill 15 64 242 15 71 255 minecraft:light_gray_concrete
+fill 15 64 242 26 79 242 minecraft:light_gray_concrete
+fill 15 64 242 15 79 255 minecraft:light_gray_concrete
 setblock 16 64 254 minecraft:air
 setblock 16 64 254 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "141"}','{"text": "occultism"}','{"text": "aviar"}','{"text": ""}']}}
 setblock 17 64 254 minecraft:air

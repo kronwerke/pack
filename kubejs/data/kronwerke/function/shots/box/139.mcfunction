@@ -1,7 +1,7 @@
 # 139 alfheim/elementium_armor
 fill 30 63 223 41 63 236 minecraft:light_gray_concrete
-fill 30 64 223 41 71 223 minecraft:light_gray_concrete
-fill 30 64 223 30 71 236 minecraft:light_gray_concrete
+fill 30 64 223 41 79 223 minecraft:light_gray_concrete
+fill 30 64 223 30 79 236 minecraft:light_gray_concrete
 setblock 31 64 235 minecraft:air
 setblock 31 64 235 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "139"}','{"text": "alfheim"}','{"text": "elementium_armor"}','{"text": ""}']}}
 setblock 32 64 235 minecraft:air

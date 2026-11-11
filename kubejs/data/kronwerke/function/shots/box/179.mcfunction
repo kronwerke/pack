@@ -1,7 +1,7 @@
 # 179 immersive_heavy/hv, duroplast, survey
 fill 177 63 292 214 63 305 minecraft:light_gray_concrete
-fill 177 64 292 214 71 292 minecraft:light_gray_concrete
-fill 177 64 292 177 71 305 minecraft:light_gray_concrete
+fill 177 64 292 214 79 292 minecraft:light_gray_concrete
+fill 177 64 292 177 79 305 minecraft:light_gray_concrete
 setblock 178 64 304 minecraft:air
 setblock 178 64 304 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "179.1"}','{"text": "immersive_heavy"}','{"text": "hv"}','{"text": ""}']}}
 setblock 179 64 304 minecraft:air

@@ -1,7 +1,7 @@
 # 190 ae2/meteorite, presses, inscriber, network, controller, autocraft, cpu, p2p, factory
 fill 19 63 355 120 63 370 minecraft:light_gray_concrete
-fill 19 64 355 120 71 355 minecraft:light_gray_concrete
-fill 19 64 355 19 71 370 minecraft:light_gray_concrete
+fill 19 64 355 120 79 355 minecraft:light_gray_concrete
+fill 19 64 355 19 79 370 minecraft:light_gray_concrete
 setblock 20 64 369 minecraft:air
 setblock 20 64 369 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "190.1"}','{"text": "ae2"}','{"text": "meteorite"}','{"text": ""}']}}
 setblock 21 64 369 minecraft:air
@@ -140,11 +140,11 @@ fill 33 64 357 39 64 357 minecraft:polished_blackstone
 fill 33 67 357 39 67 357 minecraft:polished_blackstone
 setblock 33 64 360 minecraft:lantern
 setblock 39 64 360 minecraft:lantern
-setblock 35 64 359 ae2:mysterious_cube
 summon glow_item_frame 34 66 358 {Facing:3b,Fixed:1b,Tags:["kw_shot"],Item:{id:"ae2:silicon_press",count:1}}
 summon glow_item_frame 36 66 358 {Facing:3b,Fixed:1b,Tags:["kw_shot"],Item:{id:"ae2:logic_processor_press",count:1}}
 summon glow_item_frame 38 66 358 {Facing:3b,Fixed:1b,Tags:["kw_shot"],Item:{id:"ae2:calculation_processor_press",count:1}}
 summon glow_item_frame 39 66 358 {Facing:3b,Fixed:1b,Tags:["kw_shot"],Item:{id:"ae2:engineering_processor_press",count:1}}
+summon glow_item_frame 39 66 358 {Facing:3b,Fixed:1b,Tags:["kw_shot"],Item:{id:"ae2:mysterious_cube",count:1}}
 setblock 42 64 369 minecraft:air
 setblock 42 64 369 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "190.3"}','{"text": "ae2"}','{"text": "inscriber"}','{"text": ""}']}}
 setblock 43 64 369 minecraft:air
@@ -156,7 +156,7 @@ fill 43 64 357 49 64 357 minecraft:polished_blackstone
 fill 43 67 357 49 67 357 minecraft:polished_blackstone
 setblock 43 64 360 minecraft:lantern
 setblock 49 64 360 minecraft:lantern
-setblock 45 64 359 ae2:inscriber
+summon glow_item_frame 45 66 358 {Facing:3b,Fixed:1b,Tags:["kw_shot"],Item:{id:"ae2:inscriber",count:1}}
 setblock 52 64 369 minecraft:air
 setblock 52 64 369 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "190.4"}','{"text": "ae2"}','{"text": "network"}','{"text": ""}']}}
 setblock 53 64 369 minecraft:air
@@ -186,7 +186,7 @@ fill 81 64 357 87 64 357 minecraft:polished_blackstone
 fill 81 67 357 87 67 357 minecraft:polished_blackstone
 setblock 81 64 360 minecraft:lantern
 setblock 87 64 360 minecraft:lantern
-setblock 83 64 359 ae2:molecular_assembler
+summon glow_item_frame 83 66 358 {Facing:3b,Fixed:1b,Tags:["kw_shot"],Item:{id:"ae2:molecular_assembler",count:1}}
 setblock 90 64 369 minecraft:air
 setblock 90 64 369 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "190.7"}','{"text": "ae2"}','{"text": "cpu"}','{"text": ""}']}}
 setblock 91 64 369 minecraft:air

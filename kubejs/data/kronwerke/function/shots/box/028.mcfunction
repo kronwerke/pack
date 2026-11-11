@@ -1,7 +1,7 @@
 # 028 create/washing
 fill 136 63 52 149 63 65 minecraft:light_gray_concrete
-fill 136 64 52 149 71 52 minecraft:light_gray_concrete
-fill 136 64 52 136 71 65 minecraft:light_gray_concrete
+fill 136 64 52 149 79 52 minecraft:light_gray_concrete
+fill 136 64 52 136 79 65 minecraft:light_gray_concrete
 setblock 137 64 64 minecraft:air
 setblock 137 64 64 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "028"}','{"text": "create"}','{"text": "washing"}','{"text": ""}']}}
 setblock 138 64 64 minecraft:air

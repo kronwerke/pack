@@ -1,7 +1,7 @@
 # 088 ars_nouveau/scribes_table
 fill 70 63 148 81 63 161 minecraft:light_gray_concrete
-fill 70 64 148 81 71 148 minecraft:light_gray_concrete
-fill 70 64 148 70 71 161 minecraft:light_gray_concrete
+fill 70 64 148 81 79 148 minecraft:light_gray_concrete
+fill 70 64 148 70 79 161 minecraft:light_gray_concrete
 setblock 71 64 160 minecraft:air
 setblock 71 64 160 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "088"}','{"text": "ars_nouveau"}','{"text": "scribes_table"}','{"text": ""}']}}
 setblock 72 64 160 minecraft:air

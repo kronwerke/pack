@@ -1,7 +1,7 @@
 # 220 food/f_cutting_board, f_pot, f_rice, f_rich_soil, f_feast, f_market, f_rod
 fill 85 63 510 156 63 523 minecraft:light_gray_concrete
-fill 85 64 510 156 71 510 minecraft:light_gray_concrete
-fill 85 64 510 85 71 523 minecraft:light_gray_concrete
+fill 85 64 510 156 79 510 minecraft:light_gray_concrete
+fill 85 64 510 85 79 523 minecraft:light_gray_concrete
 setblock 86 64 522 minecraft:air
 setblock 86 64 522 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "220.1"}','{"text": "food"}','{"text": "f_cutting_board"}','{"text": ""}']}}
 setblock 87 64 522 minecraft:air
@@ -13,7 +13,7 @@ fill 87 64 512 93 64 512 minecraft:polished_blackstone
 fill 87 67 512 93 67 512 minecraft:polished_blackstone
 setblock 87 64 515 minecraft:lantern
 setblock 93 64 515 minecraft:lantern
-setblock 89 64 514 farmersdelight:cutting_board
+summon glow_item_frame 89 66 513 {Facing:3b,Fixed:1b,Tags:["kw_shot"],Item:{id:"farmersdelight:cutting_board",count:1}}
 setblock 96 64 522 minecraft:air
 setblock 96 64 522 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "220.2"}','{"text": "food"}','{"text": "f_pot"}','{"text": ""}']}}
 setblock 97 64 522 minecraft:air
@@ -25,7 +25,7 @@ fill 97 64 512 103 64 512 minecraft:polished_blackstone
 fill 97 67 512 103 67 512 minecraft:polished_blackstone
 setblock 97 64 515 minecraft:lantern
 setblock 103 64 515 minecraft:lantern
-setblock 99 64 514 farmersdelight:cooking_pot
+summon glow_item_frame 99 66 513 {Facing:3b,Fixed:1b,Tags:["kw_shot"],Item:{id:"farmersdelight:cooking_pot",count:1}}
 setblock 106 64 522 minecraft:air
 setblock 106 64 522 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "220.3"}','{"text": "food"}','{"text": "f_rice"}','{"text": ""}']}}
 setblock 107 64 522 minecraft:air
@@ -37,7 +37,7 @@ fill 107 64 512 113 64 512 minecraft:polished_blackstone
 fill 107 67 512 113 67 512 minecraft:polished_blackstone
 setblock 107 64 515 minecraft:lantern
 setblock 113 64 515 minecraft:lantern
-setblock 109 64 514 farmersdelight:rice
+summon glow_item_frame 109 66 513 {Facing:3b,Fixed:1b,Tags:["kw_shot"],Item:{id:"farmersdelight:rice",count:1}}
 setblock 116 64 522 minecraft:air
 setblock 116 64 522 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "220.4"}','{"text": "food"}','{"text": "f_rich_soil"}','{"text": ""}']}}
 setblock 117 64 522 minecraft:air
@@ -49,7 +49,7 @@ fill 117 64 512 123 64 512 minecraft:polished_blackstone
 fill 117 67 512 123 67 512 minecraft:polished_blackstone
 setblock 117 64 515 minecraft:lantern
 setblock 123 64 515 minecraft:lantern
-setblock 119 64 514 farmersdelight:rich_soil
+summon glow_item_frame 119 66 513 {Facing:3b,Fixed:1b,Tags:["kw_shot"],Item:{id:"farmersdelight:rich_soil",count:1}}
 setblock 126 64 522 minecraft:air
 setblock 126 64 522 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "220.5"}','{"text": "food"}','{"text": "f_feast"}','{"text": ""}']}}
 setblock 127 64 522 minecraft:air
@@ -70,7 +70,7 @@ fill 137 64 512 143 64 512 minecraft:polished_blackstone
 fill 137 67 512 143 67 512 minecraft:polished_blackstone
 setblock 137 64 515 minecraft:lantern
 setblock 143 64 515 minecraft:lantern
-setblock 139 64 514 farmingforblockheads:market
+summon glow_item_frame 139 66 513 {Facing:3b,Fixed:1b,Tags:["kw_shot"],Item:{id:"farmingforblockheads:market",count:1}}
 setblock 146 64 522 minecraft:air
 setblock 146 64 522 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "220.7"}','{"text": "food"}','{"text": "f_rod"}','{"text": ""}']}}
 setblock 147 64 522 minecraft:air

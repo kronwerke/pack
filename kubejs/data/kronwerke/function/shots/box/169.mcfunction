@@ -1,7 +1,7 @@
 # 169 immersive/blast_furnace, improved_form
 fill 80 63 273 101 63 286 minecraft:light_gray_concrete
-fill 80 64 273 101 71 273 minecraft:light_gray_concrete
-fill 80 64 273 80 71 286 minecraft:light_gray_concrete
+fill 80 64 273 101 79 273 minecraft:light_gray_concrete
+fill 80 64 273 80 79 286 minecraft:light_gray_concrete
 setblock 81 64 285 minecraft:air
 setblock 81 64 285 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "169.1"}','{"text": "immersive"}','{"text": "blast_furnace"}','{"text": ""}']}}
 setblock 82 64 285 minecraft:air

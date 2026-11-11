@@ -1,7 +1,7 @@
 # 194 refined_storage/
 fill 321 63 355 332 63 368 minecraft:light_gray_concrete
-fill 321 64 355 332 71 355 minecraft:light_gray_concrete
-fill 321 64 355 321 71 368 minecraft:light_gray_concrete
+fill 321 64 355 332 79 355 minecraft:light_gray_concrete
+fill 321 64 355 321 79 368 minecraft:light_gray_concrete
 setblock 322 64 367 minecraft:air
 setblock 322 64 367 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "194"}','{"text": "refined_storage"}','{"text": ""}','{"text": ""}']}}
 setblock 323 64 367 minecraft:air

@@ -1,7 +1,7 @@
 # 155 occultism_afrit/marid_crusher
 fill 225 63 242 236 63 255 minecraft:light_gray_concrete
-fill 225 64 242 236 71 242 minecraft:light_gray_concrete
-fill 225 64 242 225 71 255 minecraft:light_gray_concrete
+fill 225 64 242 236 79 242 minecraft:light_gray_concrete
+fill 225 64 242 225 79 255 minecraft:light_gray_concrete
 setblock 226 64 254 minecraft:air
 setblock 226 64 254 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "155"}','{"text": "occultism_afrit"}','{"text": "marid_crusher"}','{"text": ""}']}}
 setblock 227 64 254 minecraft:air

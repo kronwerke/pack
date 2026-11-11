@@ -1,7 +1,7 @@
 # 009 start_here/v_claim
 fill 148 63 6 159 63 19 minecraft:light_gray_concrete
-fill 148 64 6 159 71 6 minecraft:light_gray_concrete
-fill 148 64 6 148 71 19 minecraft:light_gray_concrete
+fill 148 64 6 159 79 6 minecraft:light_gray_concrete
+fill 148 64 6 148 79 19 minecraft:light_gray_concrete
 setblock 149 64 18 minecraft:air
 setblock 149 64 18 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "009"}','{"text": "start_here"}','{"text": "v_claim"}','{"text": ""}']}}
 setblock 150 64 18 minecraft:air

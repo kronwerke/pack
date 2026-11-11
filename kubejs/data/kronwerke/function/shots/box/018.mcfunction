@@ -1,7 +1,7 @@
 # 018 farms/mana_endoflame
 fill 130 63 31 143 63 44 minecraft:light_gray_concrete
-fill 130 64 31 143 71 31 minecraft:light_gray_concrete
-fill 130 64 31 130 71 44 minecraft:light_gray_concrete
+fill 130 64 31 143 79 31 minecraft:light_gray_concrete
+fill 130 64 31 130 79 44 minecraft:light_gray_concrete
 setblock 131 64 43 minecraft:air
 setblock 131 64 43 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "018"}','{"text": "farms"}','{"text": "mana_endoflame"}','{"text": ""}']}}
 setblock 132 64 43 minecraft:air

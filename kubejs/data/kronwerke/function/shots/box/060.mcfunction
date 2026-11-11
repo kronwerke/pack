@@ -1,7 +1,7 @@
 # 060 mekanism/ethene
 fill 45 63 108 56 63 121 minecraft:light_gray_concrete
-fill 45 64 108 56 71 108 minecraft:light_gray_concrete
-fill 45 64 108 45 71 121 minecraft:light_gray_concrete
+fill 45 64 108 56 79 108 minecraft:light_gray_concrete
+fill 45 64 108 45 79 121 minecraft:light_gray_concrete
 setblock 46 64 120 minecraft:air
 setblock 46 64 120 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "060"}','{"text": "mekanism"}','{"text": "ethene"}','{"text": ""}']}}
 setblock 47 64 120 minecraft:air

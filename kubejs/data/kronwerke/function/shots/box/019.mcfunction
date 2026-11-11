@@ -1,7 +1,7 @@
 # 019 farms/s2_xp
 fill 147 63 31 158 63 44 minecraft:light_gray_concrete
-fill 147 64 31 158 71 31 minecraft:light_gray_concrete
-fill 147 64 31 147 71 44 minecraft:light_gray_concrete
+fill 147 64 31 158 79 31 minecraft:light_gray_concrete
+fill 147 64 31 147 79 44 minecraft:light_gray_concrete
 setblock 148 64 43 minecraft:air
 setblock 148 64 43 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "019"}','{"text": "farms"}','{"text": "s2_xp"}','{"text": ""}']}}
 setblock 149 64 43 minecraft:air

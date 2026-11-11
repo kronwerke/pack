@@ -1,7 +1,7 @@
 # 039 create_brass/crafter
 fill 339 63 52 350 63 65 minecraft:light_gray_concrete
-fill 339 64 52 350 71 52 minecraft:light_gray_concrete
-fill 339 64 52 339 71 65 minecraft:light_gray_concrete
+fill 339 64 52 350 79 52 minecraft:light_gray_concrete
+fill 339 64 52 339 79 65 minecraft:light_gray_concrete
 setblock 340 64 64 minecraft:air
 setblock 340 64 64 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "039"}','{"text": "create_brass"}','{"text": "crafter"}','{"text": ""}']}}
 setblock 341 64 64 minecraft:air

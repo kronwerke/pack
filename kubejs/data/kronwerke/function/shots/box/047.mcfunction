@@ -1,7 +1,7 @@
 # 047 create_trains/unprocessed_sheet
 fill 81 63 77 92 63 90 minecraft:light_gray_concrete
-fill 81 64 77 92 71 77 minecraft:light_gray_concrete
-fill 81 64 77 81 71 90 minecraft:light_gray_concrete
+fill 81 64 77 92 79 77 minecraft:light_gray_concrete
+fill 81 64 77 81 79 90 minecraft:light_gray_concrete
 setblock 82 64 89 minecraft:air
 setblock 82 64 89 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "047"}','{"text": "create_trains"}','{"text": "unprocessed_sheet"}','{"text": ""}']}}
 setblock 83 64 89 minecraft:air

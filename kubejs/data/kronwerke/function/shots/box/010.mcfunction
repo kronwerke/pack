@@ -1,7 +1,7 @@
 # 010 farms/cobble_drill
 fill 0 63 31 13 63 44 minecraft:light_gray_concrete
-fill 0 64 31 13 71 31 minecraft:light_gray_concrete
-fill 0 64 31 0 71 44 minecraft:light_gray_concrete
+fill 0 64 31 13 79 31 minecraft:light_gray_concrete
+fill 0 64 31 0 79 44 minecraft:light_gray_concrete
 setblock 1 64 43 minecraft:air
 setblock 1 64 43 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "010"}','{"text": "farms"}','{"text": "cobble_drill"}','{"text": ""}']}}
 setblock 2 64 43 minecraft:air

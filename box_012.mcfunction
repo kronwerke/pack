@@ -26,4 +26,4 @@ setblock 87 65 63 botania:natura_pylon
 setblock 95 64 63 botania:mana_pool{mana:1000000}
 setblock 95 65 63 botania:natura_pylon
 kw testworld use 91 64 61 south botania:wand_of_the_forest
-execute unless block 91 65 61 minecraft:air
+execute unless block 91 64 61 botania:elven_gateway_core[state=off]

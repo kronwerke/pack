@@ -470,3 +470,8 @@ Incendium, which ran about a tenth of the tick in the 50 player load test:
 ## 0.17.0
 
 - Kronwerke Core 0.32.1: the admin panel lists the players of every server and opens on the Nether, End and mining servers with `/kw admin`; the team hears when a move arrives nowhere; the panel fits small windows.
+
+## 0.18.0
+
+- Kronwerke Core 0.33.0: a singleplayer or LAN world plays like a normal modpack, with every stage open.
+- Chronik 1.2.1: the console's Chronik view works on every server of the network.

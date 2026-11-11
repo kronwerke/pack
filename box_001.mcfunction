@@ -11,29 +11,16 @@ setblock 3 64 12 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": 
 summon text_display 6.0 71 5.5 {text:'[{"text": "001  ", "color": "gold"}, {"text": "create/water_wheel", "color": "gray"}, {"text": "\\nStell ein Wasserrad in den Bach", "color": "white"}]',billboard:"center",background:1275068416,Tags:["kw_shot"],alignment:"center",line_width:200,transformation:{scale:[1.6f,1.6f,1.6f],translation:[0f,0f,0f],left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f]}}
 fill 11 64 0 11 79 9 minecraft:light_gray_concrete
 setblock 4 65 5 create:water_wheel[facing=east]
-setblock 4 65 4 minecraft:spruce_planks
-setblock 4 66 3 minecraft:spruce_planks
-setblock 4 63 6 minecraft:air
+setblock 4 63 4 minecraft:air
 setblock 5 65 5 create:water_wheel[facing=east]
-setblock 5 65 4 minecraft:spruce_planks
-setblock 5 66 3 minecraft:spruce_planks
-setblock 5 63 6 minecraft:air
+setblock 5 63 4 minecraft:air
 setblock 6 65 5 create:water_wheel[facing=east]
-setblock 6 65 4 minecraft:spruce_planks
-setblock 6 66 3 minecraft:spruce_planks
-setblock 6 63 6 minecraft:air
+setblock 6 63 4 minecraft:air
 setblock 7 65 5 create:water_wheel[facing=east]
-setblock 7 65 4 minecraft:spruce_planks
-setblock 7 66 3 minecraft:spruce_planks
-setblock 7 63 6 minecraft:air
-setblock 3 66 3 minecraft:spruce_planks
-setblock 8 66 3 minecraft:spruce_planks
-setblock 3 66 4 minecraft:spruce_planks
-setblock 8 66 4 minecraft:spruce_planks
-setblock 3 66 5 minecraft:spruce_planks
-setblock 8 66 5 minecraft:spruce_planks
-fill 3 65 4 3 65 4 minecraft:spruce_planks
-fill 8 65 4 8 65 4 minecraft:spruce_planks
-setblock 3 65 5 create:shaft[axis=x]
-setblock 8 65 5 create:shaft[axis=x]
+setblock 7 63 4 minecraft:air
+setblock 3 64 5 create:andesite_casing
+setblock 3 65 5 create:andesite_encased_shaft[axis=x]
+setblock 8 64 5 create:andesite_casing
+setblock 8 65 5 create:andesite_encased_shaft[axis=x]
+fill 3 66 3 8 66 5 minecraft:spruce_planks
 fill 4 66 4 7 66 4 minecraft:water

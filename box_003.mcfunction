@@ -11,7 +11,9 @@ summon text_display 36.5 71 5.5 {text:'[{"text": "003  ", "color": "gold"}, {"te
 fill 41 64 0 41 79 9 minecraft:light_gray_concrete
 setblock 36 64 5 create:basin[facing=down]
 setblock 36 66 5 create:mechanical_mixer
-setblock 36 66 4 create:cogwheel[axis=y]
-setblock 36 67 4 create:creative_motor[facing=down]{ScrollValue:32}
+setblock 37 66 5 create:cogwheel[axis=y]
+setblock 37 64 5 create:shaft[axis=y]
+setblock 37 65 5 create:shaft[axis=y]
+setblock 37 63 5 create:creative_motor[facing=up]{ScrollValue:32}
 summon item 36.5 65 5.5 {Item:{id:"minecraft:andesite",count:16},PickupDelay:32767,Age:-32768,Tags:["kw_shot"]}
 summon item 36.5 65.3 5.5 {Item:{id:"minecraft:iron_nugget",count:16},PickupDelay:32767,Age:-32768,Tags:["kw_shot"]}

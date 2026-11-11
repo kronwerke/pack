@@ -1,21 +1,21 @@
-# 006 ars_nouveau/apparatus
-#area -4 32 15 57
-fill -4 64 32 15 91 57 minecraft:air
-fill -4 60 32 15 62 57 minecraft:stone
-fill -4 63 32 15 63 57 minecraft:light_gray_concrete
-fill 0 64 38 15 79 38 minecraft:light_gray_concrete
-fill 0 64 38 0 79 51 minecraft:light_gray_concrete
-setblock 1 64 50 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "006"}','{"text": "ars_nouveau"}','{"text": "apparatus"}','{"text": ""}']}}
-setblock 2 64 50 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "core, apparatus"}','{"text": "and pedestals"}','{"text": "in range"}','{"text": ""}']}}
-summon text_display 5.5 71 43.5 {text:'[{"text": "006  ", "color": "gold"}, {"text": "ars_nouveau/apparatus", "color": "gray"}, {"text": "\\nBau den Bezaubernden Apparat", "color": "white"}]',billboard:"center",background:1275068416,Tags:["kw_shot"],alignment:"center",line_width:200,transformation:{scale:[1.6f,1.6f,1.6f],translation:[0f,0f,0f],left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f]}}
-fill 10 64 38 10 79 47 minecraft:light_gray_concrete
-setblock 5 64 43 ars_nouveau:arcane_core[facing=up]
-setblock 5 65 43 ars_nouveau:enchanting_apparatus[facing=up]
-setblock 3 64 41 ars_nouveau:arcane_pedestal[facing=up]
-setblock 5 64 40 ars_nouveau:arcane_pedestal[facing=up]
-setblock 7 64 41 ars_nouveau:arcane_pedestal[facing=up]
-setblock 2 64 43 ars_nouveau:arcane_pedestal[facing=up]
-setblock 8 64 43 ars_nouveau:arcane_pedestal[facing=up]
-setblock 3 64 45 ars_nouveau:arcane_pedestal[facing=up]
-setblock 7 64 45 ars_nouveau:arcane_pedestal[facing=up]
-setblock 8 64 46 ars_nouveau:source_jar[fill=11]{source:10000}
+# 006 mekanism_advanced/teleporter
+#area 11 13 30 38
+fill 11 64 13 30 91 38 minecraft:air
+fill 11 60 13 30 62 38 minecraft:stone
+fill 11 63 13 30 63 38 minecraft:light_gray_concrete
+fill 15 64 19 30 79 19 minecraft:light_gray_concrete
+fill 15 64 19 15 79 32 minecraft:light_gray_concrete
+setblock 16 64 31 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "006"}','{"text": "mekanism_advanced"}','{"text": "teleporter"}','{"text": ""}']}}
+setblock 17 64 31 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "built"}','{"text": "teleporter"}','{"text": "frame with"}','{"text": "portal"}']}}
+summon text_display 20.5 71 24.5 {text:'[{"text": "006  ", "color": "gold"}, {"text": "mekanism_advanced/teleporter", "color": "gray"}, {"text": "\\nStell zwei Teleporter auf", "color": "white"}]',billboard:"center",background:1275068416,Tags:["kw_shot"],alignment:"center",line_width:200,transformation:{scale:[1.6f,1.6f,1.6f],translation:[0f,0f,0f],left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f]}}
+fill 25 64 19 25 79 28 minecraft:light_gray_concrete
+setblock 20 64 24 mekanism:teleporter
+setblock 19 64 24 mekanism:teleporter_frame
+setblock 21 64 24 mekanism:teleporter_frame
+setblock 19 65 24 mekanism:teleporter_frame
+setblock 21 65 24 mekanism:teleporter_frame
+setblock 19 66 24 mekanism:teleporter_frame
+setblock 21 66 24 mekanism:teleporter_frame
+setblock 19 67 24 mekanism:teleporter_frame
+setblock 21 67 24 mekanism:teleporter_frame
+setblock 20 67 24 mekanism:teleporter_frame

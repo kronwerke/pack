@@ -11,6 +11,7 @@ summon text_display 21.5 71 5.5 {text:'[{"text": "002  ", "color": "gold"}, {"te
 fill 26 64 0 26 79 9 minecraft:light_gray_concrete
 setblock 21 64 5 create:depot
 setblock 21 66 5 create:mechanical_press[facing=south]
-setblock 21 66 4 create:shaft[axis=z]
+fill 20 64 4 22 67 4 create:andesite_casing
+setblock 21 66 4 create:andesite_encased_shaft[axis=z]
 setblock 21 66 3 create:creative_motor[facing=south]{ScrollValue:32}
 kw testworld use 21 64 5 up minecraft:iron_ingot

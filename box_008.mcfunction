@@ -1,21 +1,21 @@
-# 008 botania_runes/plate_base
-#area 11 51 30 76
-fill 11 64 51 30 91 76 minecraft:air
-fill 11 60 51 30 62 76 minecraft:stone
-fill 11 63 51 30 63 76 minecraft:light_gray_concrete
-fill 15 64 57 30 79 57 minecraft:light_gray_concrete
-fill 15 64 57 15 79 70 minecraft:light_gray_concrete
-setblock 16 64 69 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "008"}','{"text": "botania_runes"}','{"text": "plate_base"}','{"text": ""}']}}
-setblock 17 64 69 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "the 3x3 lapis"}','{"text": "and livingrock"}','{"text": "base with plate"}','{"text": "and sparks"}']}}
-summon text_display 20.5 71 62.5 {text:'[{"text": "008  ", "color": "gold"}, {"text": "botania_runes/plate_base", "color": "gray"}, {"text": "\\nLeg das Fundament", "color": "white"}]',billboard:"center",background:1275068416,Tags:["kw_shot"],alignment:"center",line_width:200,transformation:{scale:[1.6f,1.6f,1.6f],translation:[0f,0f,0f],left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f]}}
-fill 25 64 57 25 79 66 minecraft:light_gray_concrete
-setblock 19 64 61 botania:livingrock
-setblock 19 64 62 minecraft:lapis_block
-setblock 19 64 63 botania:livingrock
-setblock 20 64 61 minecraft:lapis_block
-setblock 20 64 62 botania:livingrock
-setblock 20 64 63 minecraft:lapis_block
-setblock 21 64 61 botania:livingrock
-setblock 21 64 62 minecraft:lapis_block
-setblock 21 64 63 botania:livingrock
-setblock 20 65 62 botania:terrestrial_agglomeration_plate
+# 008 botania/pure_daisy
+#area -4 51 15 76
+fill -4 64 51 15 91 76 minecraft:air
+fill -4 60 51 15 62 76 minecraft:stone
+fill -4 63 51 15 63 76 minecraft:light_gray_concrete
+fill 0 64 57 15 79 57 minecraft:light_gray_concrete
+fill 0 64 57 0 79 70 minecraft:light_gray_concrete
+setblock 1 64 69 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "008"}','{"text": "botania"}','{"text": "pure_daisy"}','{"text": ""}']}}
+setblock 2 64 69 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "the daisy with"}','{"text": "8 stone or"}','{"text": "logs, half"}','{"text": "converted"}']}}
+summon text_display 5.5 71 62.5 {text:'[{"text": "008  ", "color": "gold"}, {"text": "botania/pure_daisy", "color": "gray"}, {"text": "\\nPflanz ein Reines Gänseblümchen", "color": "white"}]',billboard:"center",background:1275068416,Tags:["kw_shot"],alignment:"center",line_width:200,transformation:{scale:[1.6f,1.6f,1.6f],translation:[0f,0f,0f],left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f]}}
+fill 10 64 57 10 79 66 minecraft:light_gray_concrete
+setblock 5 63 62 minecraft:grass_block
+setblock 5 64 62 botania:pure_daisy
+setblock 4 64 61 minecraft:stone
+setblock 5 64 61 botania:livingrock
+setblock 6 64 61 minecraft:stone
+setblock 4 64 62 minecraft:oak_log[axis=y]
+setblock 6 64 62 botania:livingwood_log[axis=y]
+setblock 4 64 63 botania:livingrock
+setblock 5 64 63 minecraft:stone
+setblock 6 64 63 botania:livingrock

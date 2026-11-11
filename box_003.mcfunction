@@ -13,5 +13,5 @@ setblock 36 64 5 create:basin[facing=down]
 setblock 36 66 5 create:mechanical_mixer
 setblock 36 66 4 create:cogwheel[axis=y]
 setblock 36 67 4 create:creative_motor[facing=down]{ScrollValue:32}
-kw testworld use 36 64 5 up minecraft:andesite
-kw testworld use 36 64 5 up minecraft:iron_nugget
+summon item 36.5 65 5.5 {Item:{id:"minecraft:andesite",count:16},PickupDelay:32767,Age:-32768,Tags:["kw_shot"]}
+summon item 36.5 65.3 5.5 {Item:{id:"minecraft:iron_nugget",count:16},PickupDelay:32767,Age:-32768,Tags:["kw_shot"]}

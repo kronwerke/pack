@@ -14,5 +14,6 @@ setblock 51 64 5 create:basin[facing=down]
 setblock 51 66 5 create:mechanical_press[facing=south]
 setblock 51 66 4 create:shaft[axis=z]
 setblock 51 66 3 create:creative_motor[facing=south]{ScrollValue:32}
-kw testworld use 51 64 5 up minecraft:flint
-kw testworld use 51 64 5 up minecraft:gravel
+summon item 51.5 65 5.5 {Item:{id:"minecraft:flint",count:8},PickupDelay:32767,Age:-32768,Tags:["kw_shot"]}
+summon item 51.5 65.3 5.5 {Item:{id:"minecraft:gravel",count:8},PickupDelay:32767,Age:-32768,Tags:["kw_shot"]}
+kw testworld use 51 64 5 up minecraft:lava_bucket

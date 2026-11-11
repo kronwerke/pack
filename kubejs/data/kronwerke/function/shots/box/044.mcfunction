@@ -15,7 +15,7 @@ setblock 2 64 80 powergrid:generator_induction_rotor
 setblock 4 64 80 powergrid:generator_housing
 setblock 6 64 80 powergrid:rheostat
 setblock 8 64 80 powergrid:electromagnet
-setblock 9 64 86 minecraft:chest[facing=south]{Items:[{Slot:0b,id:"powergrid:copper_coil",count:1},{Slot:1b,id:"powergrid:wire_cutter",count:1}]}
+setblock 9 64 86 minecraft:trapped_chest[facing=south]{Items:[{Slot:0b,id:"powergrid:copper_coil",count:1},{Slot:1b,id:"powergrid:wire_cutter",count:1}]}
 setblock 11 64 89 minecraft:air
 setblock 11 64 89 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "044.2"}','{"text": "create_brass"}','{"text": "pg_generator"}','{"text": ""}']}}
 setblock 12 64 89 minecraft:air
@@ -25,7 +25,7 @@ setblock 12 64 80 powergrid:generator_induction_rotor
 setblock 14 64 80 powergrid:generator_housing
 setblock 16 64 80 powergrid:rheostat
 setblock 18 64 80 powergrid:electromagnet
-setblock 19 64 86 minecraft:chest[facing=south]{Items:[{Slot:0b,id:"powergrid:copper_coil",count:1},{Slot:1b,id:"powergrid:wire_cutter",count:1}]}
+setblock 19 64 86 minecraft:trapped_chest[facing=south]{Items:[{Slot:0b,id:"powergrid:copper_coil",count:1},{Slot:1b,id:"powergrid:wire_cutter",count:1}]}
 setblock 21 64 89 minecraft:air
 setblock 21 64 89 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "044.3"}','{"text": "create_brass"}','{"text": "pg_rheostat"}','{"text": ""}']}}
 setblock 22 64 89 minecraft:air
@@ -35,7 +35,7 @@ setblock 22 64 80 powergrid:generator_induction_rotor
 setblock 24 64 80 powergrid:generator_housing
 setblock 26 64 80 powergrid:rheostat
 setblock 28 64 80 powergrid:electromagnet
-setblock 29 64 86 minecraft:chest[facing=south]{Items:[{Slot:0b,id:"powergrid:copper_coil",count:1},{Slot:1b,id:"powergrid:wire_cutter",count:1}]}
+setblock 29 64 86 minecraft:trapped_chest[facing=south]{Items:[{Slot:0b,id:"powergrid:copper_coil",count:1},{Slot:1b,id:"powergrid:wire_cutter",count:1}]}
 setblock 31 64 89 minecraft:air
 setblock 31 64 89 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "044.4"}','{"text": "create_brass"}','{"text": "pg_magnet"}','{"text": ""}']}}
 setblock 32 64 89 minecraft:air
@@ -45,4 +45,4 @@ setblock 32 64 80 powergrid:generator_induction_rotor
 setblock 34 64 80 powergrid:generator_housing
 setblock 36 64 80 powergrid:rheostat
 setblock 38 64 80 powergrid:electromagnet
-setblock 39 64 86 minecraft:chest[facing=south]{Items:[{Slot:0b,id:"powergrid:copper_coil",count:1},{Slot:1b,id:"powergrid:wire_cutter",count:1}]}
+setblock 39 64 86 minecraft:trapped_chest[facing=south]{Items:[{Slot:0b,id:"powergrid:copper_coil",count:1},{Slot:1b,id:"powergrid:wire_cutter",count:1}]}

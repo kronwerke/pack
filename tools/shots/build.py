@@ -146,7 +146,14 @@ class Cell:
         tag = "{" + extra + f"PersistenceRequired:1b,Silent:1b,Tags:[\"kw_shot\"],Rotation:[{rot}f,0f]" + ("," + nbt if nbt else "") + "}"
         self.cmds.append(f"summon {entity} {self.ox + x + .5} {FLOOR_Y + 1 + y} {self.oz + z + .5} {tag}")
 
-    def c(self, x, y, z, items, block="minecraft:chest[facing=south]", frame=True):
+    def c(self, x, y, z, items, block=None, frame=None):
+        """A chest. On the floor (y 0) it holds the materials for what is left to build by hand:
+        a trapped chest, which the camera does not draw and does not frame. A chest that is part
+        of the scene (an arm's input, a chest on a hopper) passes frame=True."""
+        if frame is None:
+            frame = y != 0
+        if block is None:
+            block = "minecraft:chest[facing=south]" if frame else "minecraft:trapped_chest[facing=south]"
         slots = []
         for i, it in enumerate(items[:27]):
             iid, n = (it, 1) if isinstance(it, str) else it

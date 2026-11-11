@@ -10,4 +10,4 @@ setblock 181 64 120 minecraft:air
 setblock 181 64 120 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "GUI mit 8 und 8"}','{"text": "Upgrades"}','{"text": ""}','{"text": ""}']}}
 summon text_display 183.5 71 113.5 {text:'[{"text": "067  ", "color": "gold"}, {"text": "mekanism_ores/full", "color": "gray"}, {"text": "\\nBestück eine Maschine voll", "color": "white"}]',billboard:"center",background:1275068416,Tags:["kw_shot"],alignment:"center",line_width:200,transformation:{scale:[1.6f,1.6f,1.6f],translation:[0f,0f,0f],left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f]}}
 setblock 180 64 111 mekanism:enrichment_chamber
-setblock 187 64 117 minecraft:chest[facing=south]{Items:[{Slot:0b,id:"mekanism:upgrade_speed",count:8},{Slot:1b,id:"mekanism:upgrade_energy",count:8}]}
+setblock 187 64 117 minecraft:trapped_chest[facing=south]{Items:[{Slot:0b,id:"mekanism:upgrade_speed",count:8},{Slot:1b,id:"mekanism:upgrade_energy",count:8}]}

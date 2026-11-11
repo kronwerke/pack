@@ -12,7 +12,7 @@ setblock 268 64 304 minecraft:air
 setblock 268 64 304 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "dissolution"}','{"text": "chamber GUI"}','{"text": ""}','{"text": ""}']}}
 summon text_display 269.5 71 297.5 {text:'[{"text": "181.1  ", "color": "gold"}, {"text": "industrial/welcome", "color": "gray"}, {"text": "\\nBau zwei Primitive Maschinengehäuse", "color": "white"}]',billboard:"center",background:1275068416,Tags:["kw_shot"],alignment:"center",line_width:200,transformation:{scale:[1.6f,1.6f,1.6f],translation:[0f,0f,0f],left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f]}}
 setblock 266 64 295 minecraft:crafting_table
-setblock 273 64 301 minecraft:chest[facing=south]{Items:[{Slot:0b,id:"industrialforegoing:machine_frame_pity",count:1},{Slot:1b,id:"industrialforegoing:machine_frame_simple",count:1},{Slot:2b,id:"industrialforegoing:machine_frame_advanced",count:1},{Slot:3b,id:"industrialforegoing:machine_frame_supreme",count:1}]}
+setblock 273 64 301 minecraft:trapped_chest[facing=south]{Items:[{Slot:0b,id:"industrialforegoing:machine_frame_pity",count:1},{Slot:1b,id:"industrialforegoing:machine_frame_simple",count:1},{Slot:2b,id:"industrialforegoing:machine_frame_advanced",count:1},{Slot:3b,id:"industrialforegoing:machine_frame_supreme",count:1}]}
 setblock 275 64 304 minecraft:air
 setblock 275 64 304 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "181.2"}','{"text": "industrial"}','{"text": "extractor"}','{"text": ""}']}}
 setblock 276 64 304 minecraft:air

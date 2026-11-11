@@ -12,4 +12,4 @@ summon text_display 120.5 71 153.5 {text:'[{"text": "091  ", "color": "gold"}, {
 setblock 118 64 153 ars_nouveau:imbuement_chamber
 setblock 122 64 153 minecraft:chest
 summon ars_nouveau:starbuncle 120.5 64 154.5 {NoAI:1b,PersistenceRequired:1b,Silent:1b,Tags:["kw_shot"],Rotation:[180f,0f]}
-setblock 124 64 157 minecraft:chest[facing=south]{Items:[{Slot:0b,id:"ars_nouveau:dominion_wand",count:1}]}
+setblock 124 64 157 minecraft:trapped_chest[facing=south]{Items:[{Slot:0b,id:"ars_nouveau:dominion_wand",count:1}]}

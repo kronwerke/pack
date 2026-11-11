@@ -14,4 +14,4 @@ fill 58 64 57 64 64 57 create:shaft[axis=x]
 setblock 59 64 58 create:millstone
 setblock 61 64 58 create:millstone
 setblock 63 64 58 create:millstone
-setblock 66 64 61 minecraft:chest[facing=south]{Items:[{Slot:0b,id:"create:goggles",count:1}]}
+setblock 66 64 61 minecraft:trapped_chest[facing=south]{Items:[{Slot:0b,id:"create:goggles",count:1}]}

@@ -18,7 +18,7 @@ setblock 203 64 280 minecraft:magma_block
 setblock 204 64 280 immersiveengineering:thermoelectric_generator
 setblock 205 64 280 minecraft:blue_ice
 setblock 198 64 280 immersiveengineering:transformer
-setblock 206 64 282 minecraft:chest[facing=south]{Items:[{Slot:0b,id:"immersiveengineering:wirecoil_copper",count:8},{Slot:1b,id:"immersiveengineering:wirecoil_electrum",count:8}]}
+setblock 206 64 282 minecraft:trapped_chest[facing=south]{Items:[{Slot:0b,id:"immersiveengineering:wirecoil_copper",count:8},{Slot:1b,id:"immersiveengineering:wirecoil_electrum",count:8}]}
 setblock 208 64 285 minecraft:air
 setblock 208 64 285 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "174.2"}','{"text": "immersive"}','{"text": "capacitor"}','{"text": ""}']}}
 setblock 209 64 285 minecraft:air
@@ -33,7 +33,7 @@ setblock 217 64 280 minecraft:magma_block
 setblock 218 64 280 immersiveengineering:thermoelectric_generator
 setblock 219 64 280 minecraft:blue_ice
 setblock 212 64 280 immersiveengineering:transformer
-setblock 220 64 282 minecraft:chest[facing=south]{Items:[{Slot:0b,id:"immersiveengineering:wirecoil_copper",count:8},{Slot:1b,id:"immersiveengineering:wirecoil_electrum",count:8}]}
+setblock 220 64 282 minecraft:trapped_chest[facing=south]{Items:[{Slot:0b,id:"immersiveengineering:wirecoil_copper",count:8},{Slot:1b,id:"immersiveengineering:wirecoil_electrum",count:8}]}
 setblock 222 64 285 minecraft:air
 setblock 222 64 285 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "174.3"}','{"text": "immersive"}','{"text": "thermoelectric"}','{"text": ""}']}}
 setblock 223 64 285 minecraft:air
@@ -48,7 +48,7 @@ setblock 231 64 280 minecraft:magma_block
 setblock 232 64 280 immersiveengineering:thermoelectric_generator
 setblock 233 64 280 minecraft:blue_ice
 setblock 226 64 280 immersiveengineering:transformer
-setblock 234 64 282 minecraft:chest[facing=south]{Items:[{Slot:0b,id:"immersiveengineering:wirecoil_copper",count:8},{Slot:1b,id:"immersiveengineering:wirecoil_electrum",count:8}]}
+setblock 234 64 282 minecraft:trapped_chest[facing=south]{Items:[{Slot:0b,id:"immersiveengineering:wirecoil_copper",count:8},{Slot:1b,id:"immersiveengineering:wirecoil_electrum",count:8}]}
 setblock 236 64 285 minecraft:air
 setblock 236 64 285 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "174.4"}','{"text": "immersive"}','{"text": "transformer"}','{"text": ""}']}}
 setblock 237 64 285 minecraft:air
@@ -63,4 +63,4 @@ setblock 245 64 280 minecraft:magma_block
 setblock 246 64 280 immersiveengineering:thermoelectric_generator
 setblock 247 64 280 minecraft:blue_ice
 setblock 240 64 280 immersiveengineering:transformer
-setblock 248 64 282 minecraft:chest[facing=south]{Items:[{Slot:0b,id:"immersiveengineering:wirecoil_copper",count:8},{Slot:1b,id:"immersiveengineering:wirecoil_electrum",count:8}]}
+setblock 248 64 282 minecraft:trapped_chest[facing=south]{Items:[{Slot:0b,id:"immersiveengineering:wirecoil_copper",count:8},{Slot:1b,id:"immersiveengineering:wirecoil_electrum",count:8}]}

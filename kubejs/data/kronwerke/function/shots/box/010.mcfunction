@@ -30,4 +30,4 @@ setblock 5 64 38 create:mechanical_drill[facing=north]
 setblock 5 64 39 create:shaft[axis=z]
 setblock 5 64 40 create:creative_motor[facing=north]{ScrollValue:64}
 setblock 6 64 38 create:andesite_funnel[facing=north]
-setblock 10 64 40 minecraft:chest[facing=south]{Items:[{Slot:0b,id:"create:belt_connector",count:1}]}
+setblock 10 64 40 minecraft:trapped_chest[facing=south]{Items:[{Slot:0b,id:"create:belt_connector",count:1}]}

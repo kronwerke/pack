@@ -19,4 +19,4 @@ fill 272 69 112 274 69 114 mekanismgenerators:electromagnetic_coil
 setblock 273 69 113 mekanismgenerators:saturating_condenser
 fill 271 65 115 275 71 115 mekanism:structural_glass
 setblock 273 64 115 mekanismgenerators:turbine_valve
-setblock 277 64 117 minecraft:chest[facing=south]{Items:[{Slot:0b,id:"mekanismgenerators:turbine_blade",count:6}]}
+setblock 277 64 117 minecraft:trapped_chest[facing=south]{Items:[{Slot:0b,id:"mekanismgenerators:turbine_blade",count:6}]}

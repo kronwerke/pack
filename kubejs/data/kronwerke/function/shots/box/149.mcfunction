@@ -11,4 +11,4 @@ setblock 138 64 254 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text
 summon text_display 140.5 71 247.5 {text:'[{"text": "149  ", "color": "gold"}, {"text": "occultism_afrit/iesnium", "color": "gray"}, {"text": "\\nBau Iesnium ab", "color": "white"}]',billboard:"center",background:1275068416,Tags:["kw_shot"],alignment:"center",line_width:200,transformation:{scale:[1.6f,1.6f,1.6f],translation:[0f,0f,0f],left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f]}}
 setblock 137 64 245 occultism:iesnium_ore
 setblock 139 64 245 minecraft:netherrack
-setblock 144 64 251 minecraft:chest[facing=south]{Items:[{Slot:0b,id:"occultism:divination_rod",count:1}]}
+setblock 144 64 251 minecraft:trapped_chest[facing=south]{Items:[{Slot:0b,id:"occultism:divination_rod",count:1}]}

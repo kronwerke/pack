@@ -289,4 +289,4 @@ setblock 44 64 20 kronwerke:obelisk_plinth
 setblock 44 65 20 kronwerke:obelisk_pedestal
 setblock 56 64 20 kronwerke:obelisk_plinth
 setblock 56 65 20 kronwerke:obelisk_pedestal
-setblock 44 64 20 minecraft:chest[facing=south]{Items:[{Slot:0b,id:"minecraft:cobblestone",count:64},{Slot:1b,id:"minecraft:cobblestone",count:64},{Slot:2b,id:"minecraft:cobblestone",count:64},{Slot:3b,id:"minecraft:cobblestone",count:64},{Slot:4b,id:"minecraft:cobblestone",count:64},{Slot:5b,id:"minecraft:cobblestone",count:64}]}
+setblock 44 64 20 minecraft:trapped_chest[facing=south]{Items:[{Slot:0b,id:"minecraft:cobblestone",count:64},{Slot:1b,id:"minecraft:cobblestone",count:64},{Slot:2b,id:"minecraft:cobblestone",count:64},{Slot:3b,id:"minecraft:cobblestone",count:64},{Slot:4b,id:"minecraft:cobblestone",count:64},{Slot:5b,id:"minecraft:cobblestone",count:64}]}

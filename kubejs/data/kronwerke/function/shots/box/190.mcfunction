@@ -165,7 +165,7 @@ setblock 54 64 369 minecraft:air
 setblock 54 64 369 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Kanalstreifen"}','{"text": ""}','{"text": ""}','{"text": ""}']}}
 summon text_display 58.5 71 360.5 {text:'[{"text": "190.4  ", "color": "gold"}, {"text": "ae2/network", "color": "gray"}, {"text": "\\nSchließ dein erstes Netz an", "color": "white"}]',billboard:"center",background:1275068416,Tags:["kw_shot"],alignment:"center",line_width:200,transformation:{scale:[1.6f,1.6f,1.6f],translation:[0f,0f,0f],left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f]}}
 fill 53 64 360 54 65 361 ae2:controller
-setblock 64 64 364 minecraft:chest[facing=south]{Items:[{Slot:0b,id:"ae2:fluix_covered_dense_cable",count:16},{Slot:1b,id:"ae2:fluix_smart_cable",count:32},{Slot:2b,id:"ae2:drive",count:2},{Slot:3b,id:"ae2:terminal",count:1}]}
+setblock 64 64 364 minecraft:trapped_chest[facing=south]{Items:[{Slot:0b,id:"ae2:fluix_covered_dense_cable",count:16},{Slot:1b,id:"ae2:fluix_smart_cable",count:32},{Slot:2b,id:"ae2:drive",count:2},{Slot:3b,id:"ae2:terminal",count:1}]}
 setblock 66 64 369 minecraft:air
 setblock 66 64 369 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "190.5"}','{"text": "ae2"}','{"text": "controller"}','{"text": ""}']}}
 setblock 67 64 369 minecraft:air
@@ -174,7 +174,7 @@ setblock 68 64 369 minecraft:air
 setblock 68 64 369 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Kanalstreifen"}','{"text": ""}','{"text": ""}','{"text": ""}']}}
 summon text_display 72.5 71 360.5 {text:'[{"text": "190.5  ", "color": "gold"}, {"text": "ae2/controller", "color": "gray"}, {"text": "\\nBau einen ME-Controller", "color": "white"}]',billboard:"center",background:1275068416,Tags:["kw_shot"],alignment:"center",line_width:200,transformation:{scale:[1.6f,1.6f,1.6f],translation:[0f,0f,0f],left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f]}}
 fill 67 64 360 68 65 361 ae2:controller
-setblock 78 64 364 minecraft:chest[facing=south]{Items:[{Slot:0b,id:"ae2:fluix_covered_dense_cable",count:16},{Slot:1b,id:"ae2:fluix_smart_cable",count:32},{Slot:2b,id:"ae2:drive",count:2},{Slot:3b,id:"ae2:terminal",count:1}]}
+setblock 78 64 364 minecraft:trapped_chest[facing=south]{Items:[{Slot:0b,id:"ae2:fluix_covered_dense_cable",count:16},{Slot:1b,id:"ae2:fluix_smart_cable",count:32},{Slot:2b,id:"ae2:drive",count:2},{Slot:3b,id:"ae2:terminal",count:1}]}
 setblock 80 64 369 minecraft:air
 setblock 80 64 369 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "190.6"}','{"text": "ae2"}','{"text": "autocraft"}','{"text": ""}']}}
 setblock 81 64 369 minecraft:air

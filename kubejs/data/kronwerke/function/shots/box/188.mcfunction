@@ -56,7 +56,7 @@ setblock 272 64 348 minecraft:air
 setblock 272 64 348 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Leitungen zur"}','{"text": "Maschine legen"}','{"text": ""}','{"text": ""}']}}
 summon text_display 275.5 71 341.5 {text:'[{"text": "188.5  ", "color": "gold"}, {"text": "enderio/conduits", "color": "gray"}, {"text": "\\nLeg Leitungen", "color": "white"}]',billboard:"center",background:1275068416,Tags:["kw_shot"],alignment:"center",line_width:200,transformation:{scale:[1.6f,1.6f,1.6f],translation:[0f,0f,0f],left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f]}}
 setblock 272 64 341 enderio:stirling_generator
-setblock 279 64 345 minecraft:chest[facing=south]{Items:[{Slot:0b,id:"enderio:conduit",count:32}]}
+setblock 279 64 345 minecraft:trapped_chest[facing=south]{Items:[{Slot:0b,id:"enderio:conduit",count:32}]}
 setblock 281 64 348 minecraft:air
 setblock 281 64 348 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "188.6"}','{"text": "enderio"}','{"text": "filter"}','{"text": ""}']}}
 setblock 282 64 348 minecraft:air

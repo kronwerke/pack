@@ -81,7 +81,7 @@ setblock 146 64 432 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text
 setblock 147 64 432 minecraft:air
 setblock 147 64 432 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Mit Elytra"}','{"text": "fliegen"}','{"text": ""}','{"text": ""}']}}
 summon text_display 150.5 71 425.5 {text:'[{"text": "205.6  ", "color": "gold"}, {"text": "the_end/elytra", "color": "gray"}, {"text": "\\nHol dir Elytren", "color": "white"}]',billboard:"center",background:1275068416,Tags:["kw_shot"],alignment:"center",line_width:200,transformation:{scale:[1.6f,1.6f,1.6f],translation:[0f,0f,0f],left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f]}}
-setblock 154 64 429 minecraft:chest[facing=south]{Items:[{Slot:0b,id:"minecraft:elytra",count:1}]}
+setblock 154 64 429 minecraft:trapped_chest[facing=south]{Items:[{Slot:0b,id:"minecraft:elytra",count:1}]}
 setblock 156 64 432 minecraft:air
 setblock 156 64 432 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "205.7"}','{"text": "the_end"}','{"text": "cg_find"}','{"text": ""}']}}
 setblock 157 64 432 minecraft:air

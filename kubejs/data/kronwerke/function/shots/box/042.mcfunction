@@ -15,4 +15,4 @@ setblock 393 65 55 create:steam_engine[face=wall,facing=north]
 setblock 393 65 54 create:shaft[axis=z]
 setblock 393 65 59 create:steam_engine[face=wall,facing=south]
 setblock 393 65 60 create:shaft[axis=z]
-setblock 399 64 63 minecraft:chest[facing=south]{Items:[{Slot:0b,id:"create:steam_engine",count:1},{Slot:1b,id:"create:steam_engine",count:1},{Slot:2b,id:"create:goggles",count:1},{Slot:3b,id:"create:blaze_cake",count:8}]}
+setblock 399 64 63 minecraft:trapped_chest[facing=south]{Items:[{Slot:0b,id:"create:steam_engine",count:1},{Slot:1b,id:"create:steam_engine",count:1},{Slot:2b,id:"create:goggles",count:1},{Slot:3b,id:"create:blaze_cake",count:8}]}

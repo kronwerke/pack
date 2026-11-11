@@ -12,4 +12,4 @@ setblock 67 64 191 botania:mana_void
 setblock 67 65 188 botania:mana_spreader
 setblock 69 65 191 botania:manastar
 setblock 65 64 191 botania:endoflame
-setblock 71 64 195 minecraft:chest[facing=south]{Items:[{Slot:0b,id:"botania:wand_of_the_forest",count:1}]}
+setblock 71 64 195 minecraft:trapped_chest[facing=south]{Items:[{Slot:0b,id:"botania:wand_of_the_forest",count:1}]}

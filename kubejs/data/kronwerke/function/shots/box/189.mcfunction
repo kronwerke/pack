@@ -12,4 +12,4 @@ setblock 4 64 367 minecraft:air
 setblock 4 64 367 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "dann"}','{"text": "Smart-Kabel mit"}','{"text": "Kanalstreifen"}','{"text": ""}']}}
 summon text_display 7.5 71 360.5 {text:'[{"text": "189  ", "color": "gold"}, {"text": "ae2/channels", "color": "gray"}, {"text": "\\nVerstehe Kanäle", "color": "white"}]',billboard:"center",background:1275068416,Tags:["kw_shot"],alignment:"center",line_width:200,transformation:{scale:[1.6f,1.6f,1.6f],translation:[0f,0f,0f],left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f]}}
 fill 2 64 360 3 65 361 ae2:controller
-setblock 13 64 364 minecraft:chest[facing=south]{Items:[{Slot:0b,id:"ae2:fluix_covered_dense_cable",count:16},{Slot:1b,id:"ae2:fluix_smart_cable",count:32},{Slot:2b,id:"ae2:drive",count:2},{Slot:3b,id:"ae2:terminal",count:1}]}
+setblock 13 64 364 minecraft:trapped_chest[facing=south]{Items:[{Slot:0b,id:"ae2:fluix_covered_dense_cable",count:16},{Slot:1b,id:"ae2:fluix_smart_cable",count:32},{Slot:2b,id:"ae2:drive",count:2},{Slot:3b,id:"ae2:terminal",count:1}]}

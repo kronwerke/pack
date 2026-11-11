@@ -33,7 +33,7 @@ def kit(*keys, blocks=(), items=(), mobs=(), note=None, w=9, d=9):
             z = 2 + (i // 4) * 3
             b.b(x, 0, z, bl)
         if items:
-            b.c(b.w - 1, 0, b.d - 1, list(items), frame=False)
+            b.c(b.w - 1, 0, b.d - 1, list(items))
         for i, mob in enumerate(mobs):
             ent, nbt = (mob, "") if isinstance(mob, str) else mob
             b.m(ent, 2 + i * 3, 0, b.d - 3, nbt)
@@ -493,7 +493,7 @@ def _(b):
 def _(b):
     b.b(3, 0, 4, "create:mechanical_arm")
     b.b(5, 0, 4, "create:blaze_burner")
-    b.c(1, 0, 4, [("minecraft:coal", 64)])
+    b.c(1, 0, 4, [("minecraft:coal", 64)], frame=True)
     b.note("Arm: Truhe als Eingang, Brenner als Ziel")
 
 

@@ -12,4 +12,4 @@ summon text_display 198.5 71 113.5 {text:'[{"text": "068  ", "color": "gold"}, {
 setblock 195 64 111 productivemetalworks:gray_foundry_controller
 setblock 197 64 111 productivemetalworks:gray_foundry_tank
 setblock 199 64 111 productivemetalworks:casting_table
-setblock 202 64 117 minecraft:chest[facing=south]{Items:[{Slot:0b,id:"mekanism:raw_osmium",count:16}]}
+setblock 202 64 117 minecraft:trapped_chest[facing=south]{Items:[{Slot:0b,id:"mekanism:raw_osmium",count:16}]}

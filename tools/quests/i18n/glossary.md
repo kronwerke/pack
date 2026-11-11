@@ -24,3 +24,6 @@ own words and chapter names, so references between chapters stay the same.
 | Körper (Grab) | body |
 | Verbündete | allies |
 | abgeben (am Obelisken) | hand in |
+| Create: Messing | Create: Brass |
+| Create: Erweiterungen | Create: Add-ons |
+| Erfahrung in Flaschen | experience in bottles |

@@ -13,4 +13,4 @@ setblock 121 64 381 mekanism:creative_energy_cube
 setblock 122 64 381 fluxnetworks:flux_plug
 setblock 128 64 381 fluxnetworks:flux_point
 setblock 129 64 381 mekanism:enrichment_chamber
-setblock 131 64 385 minecraft:chest[facing=south]{Items:[{Slot:0b,id:"fluxnetworks:flux_configurator",count:1},{Slot:1b,id:"fluxnetworks:flux_controller",count:1}]}
+setblock 131 64 385 minecraft:trapped_chest[facing=south]{Items:[{Slot:0b,id:"fluxnetworks:flux_configurator",count:1},{Slot:1b,id:"fluxnetworks:flux_controller",count:1}]}

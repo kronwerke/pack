@@ -53,4 +53,4 @@ summon minecraft:cow 70.5 64 38.5 {NoAI:1b,PersistenceRequired:1b,Silent:1b,Tags
 summon minecraft:sheep 71.5 64 38.5 {NoAI:1b,PersistenceRequired:1b,Silent:1b,Tags:["kw_shot"],Rotation:[180f,0f]}
 summon minecraft:pig 72.5 64 38.5 {NoAI:1b,PersistenceRequired:1b,Silent:1b,Tags:["kw_shot"],Rotation:[180f,0f]}
 summon minecraft:chicken 73.5 64 38.5 {NoAI:1b,PersistenceRequired:1b,Silent:1b,Tags:["kw_shot"],Rotation:[180f,0f]}
-setblock 77 64 42 minecraft:chest[facing=south]{Items:[{Slot:0b,id:"botania:dreadthorne",count:1},{Slot:1b,id:"minecraft:wheat",count:32}]}
+setblock 77 64 42 minecraft:trapped_chest[facing=south]{Items:[{Slot:0b,id:"botania:dreadthorne",count:1},{Slot:1b,id:"minecraft:wheat",count:32}]}

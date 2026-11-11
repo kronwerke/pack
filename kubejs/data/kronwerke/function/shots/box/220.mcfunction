@@ -58,7 +58,7 @@ summon text_display 130.5 71 515.5 {text:'[{"text": "220.5  ", "color": "gold"},
 fill 128 64 514 132 64 516 minecraft:oak_planks
 setblock 129 65 515 farmersdelight:roast_chicken_block
 setblock 131 65 515 farmersdelight:shepherds_pie_block
-setblock 134 64 519 minecraft:chest[facing=south]{Items:[{Slot:0b,id:"minecraft:bowl",count:8}]}
+setblock 134 64 519 minecraft:trapped_chest[facing=south]{Items:[{Slot:0b,id:"minecraft:bowl",count:8}]}
 setblock 136 64 522 minecraft:air
 setblock 136 64 522 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "220.6"}','{"text": "food"}','{"text": "f_market"}','{"text": ""}']}}
 setblock 137 64 522 minecraft:air

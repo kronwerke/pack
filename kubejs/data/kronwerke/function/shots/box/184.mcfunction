@@ -14,7 +14,7 @@ setblock 79 64 319 industrialforegoing:laser_drill
 setblock 83 64 319 industrialforegoing:laser_drill
 setblock 79 64 323 industrialforegoing:laser_drill
 setblock 83 64 323 industrialforegoing:laser_drill
-setblock 86 64 326 minecraft:chest[facing=south]{Items:[{Slot:0b,id:"industrialforegoing:white_laser_lens",count:1},{Slot:1b,id:"industrialforegoing:blue_laser_lens",count:1}]}
+setblock 86 64 326 minecraft:trapped_chest[facing=south]{Items:[{Slot:0b,id:"industrialforegoing:white_laser_lens",count:1},{Slot:1b,id:"industrialforegoing:blue_laser_lens",count:1}]}
 setblock 88 64 329 minecraft:air
 setblock 88 64 329 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "184.2"}','{"text": "industrial"}','{"text": "lens"}','{"text": ""}']}}
 setblock 89 64 329 minecraft:air
@@ -25,7 +25,7 @@ setblock 91 64 319 industrialforegoing:laser_drill
 setblock 95 64 319 industrialforegoing:laser_drill
 setblock 91 64 323 industrialforegoing:laser_drill
 setblock 95 64 323 industrialforegoing:laser_drill
-setblock 98 64 326 minecraft:chest[facing=south]{Items:[{Slot:0b,id:"industrialforegoing:white_laser_lens",count:1},{Slot:1b,id:"industrialforegoing:blue_laser_lens",count:1}]}
+setblock 98 64 326 minecraft:trapped_chest[facing=south]{Items:[{Slot:0b,id:"industrialforegoing:white_laser_lens",count:1},{Slot:1b,id:"industrialforegoing:blue_laser_lens",count:1}]}
 setblock 100 64 329 minecraft:air
 setblock 100 64 329 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "184.3"}','{"text": "industrial"}','{"text": "fluid_laser"}','{"text": ""}']}}
 setblock 101 64 329 minecraft:air

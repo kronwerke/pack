@@ -13,7 +13,7 @@ setblock 187 64 381 mekanism:creative_energy_cube
 setblock 188 64 381 fluxnetworks:flux_plug
 setblock 194 64 381 fluxnetworks:flux_point
 setblock 195 64 381 mekanism:enrichment_chamber
-setblock 197 64 385 minecraft:chest[facing=south]{Items:[{Slot:0b,id:"fluxnetworks:flux_configurator",count:1},{Slot:1b,id:"fluxnetworks:flux_controller",count:1}]}
+setblock 197 64 385 minecraft:trapped_chest[facing=south]{Items:[{Slot:0b,id:"fluxnetworks:flux_configurator",count:1},{Slot:1b,id:"fluxnetworks:flux_controller",count:1}]}
 setblock 199 64 388 minecraft:air
 setblock 199 64 388 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "200.2"}','{"text": "flux_networks"}','{"text": "setup_reactor"}','{"text": ""}']}}
 setblock 200 64 388 minecraft:air
@@ -30,4 +30,4 @@ setblock 211 64 381 mekanism:creative_energy_cube
 setblock 212 64 381 fluxnetworks:flux_plug
 setblock 218 64 381 fluxnetworks:flux_point
 setblock 219 64 381 mekanism:enrichment_chamber
-setblock 221 64 385 minecraft:chest[facing=south]{Items:[{Slot:0b,id:"fluxnetworks:flux_configurator",count:1},{Slot:1b,id:"fluxnetworks:flux_controller",count:1}]}
+setblock 221 64 385 minecraft:trapped_chest[facing=south]{Items:[{Slot:0b,id:"fluxnetworks:flux_configurator",count:1},{Slot:1b,id:"fluxnetworks:flux_controller",count:1}]}

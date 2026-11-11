@@ -9,7 +9,7 @@ setblock 2 64 522 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text":
 summon text_display 5.5 71 515.5 {text:'[{"text": "219.1  ", "color": "gold"}, {"text": "silent_gear/stone_anvil", "color": "gray"}, {"text": "\\nStell einen Steinamboss auf", "color": "white"}]',billboard:"center",background:1275068416,Tags:["kw_shot"],alignment:"center",line_width:200,transformation:{scale:[1.6f,1.6f,1.6f],translation:[0f,0f,0f],left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f]}}
 setblock 5 64 515 silentgear:stone_anvil
 setblock 7 64 515 silentgear:starlight_charger
-setblock 9 64 519 minecraft:chest[facing=south]{Items:[{Slot:0b,id:"silentgear:pickaxe_blueprint",count:1},{Slot:1b,id:"minecraft:flint",count:16},{Slot:2b,id:"minecraft:stick",count:8}]}
+setblock 9 64 519 minecraft:trapped_chest[facing=south]{Items:[{Slot:0b,id:"silentgear:pickaxe_blueprint",count:1},{Slot:1b,id:"minecraft:flint",count:16},{Slot:2b,id:"minecraft:stick",count:8}]}
 setblock 11 64 522 minecraft:air
 setblock 11 64 522 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "219.2"}','{"text": "silent_gear"}','{"text": "pickaxe"}','{"text": ""}']}}
 setblock 12 64 522 minecraft:air
@@ -17,7 +17,7 @@ setblock 12 64 522 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text"
 summon text_display 15.5 71 515.5 {text:'[{"text": "219.2  ", "color": "gold"}, {"text": "silent_gear/pickaxe", "color": "gray"}, {"text": "\\nSteck deine Spitzhacke zusammen", "color": "white"}]',billboard:"center",background:1275068416,Tags:["kw_shot"],alignment:"center",line_width:200,transformation:{scale:[1.6f,1.6f,1.6f],translation:[0f,0f,0f],left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f]}}
 setblock 15 64 515 silentgear:stone_anvil
 setblock 17 64 515 silentgear:starlight_charger
-setblock 19 64 519 minecraft:chest[facing=south]{Items:[{Slot:0b,id:"silentgear:pickaxe_blueprint",count:1},{Slot:1b,id:"minecraft:flint",count:16},{Slot:2b,id:"minecraft:stick",count:8}]}
+setblock 19 64 519 minecraft:trapped_chest[facing=south]{Items:[{Slot:0b,id:"silentgear:pickaxe_blueprint",count:1},{Slot:1b,id:"minecraft:flint",count:16},{Slot:2b,id:"minecraft:stick",count:8}]}
 setblock 21 64 522 minecraft:air
 setblock 21 64 522 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "219.3"}','{"text": "silent_gear"}','{"text": "reading_stats"}','{"text": ""}']}}
 setblock 22 64 522 minecraft:air
@@ -61,7 +61,7 @@ setblock 52 64 522 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text"
 summon text_display 55.5 71 515.5 {text:'[{"text": "219.6  ", "color": "gold"}, {"text": "silent_gear/repair_kit", "color": "gray"}, {"text": "\\nFüll ein Reparaturkit", "color": "white"}]',billboard:"center",background:1275068416,Tags:["kw_shot"],alignment:"center",line_width:200,transformation:{scale:[1.6f,1.6f,1.6f],translation:[0f,0f,0f],left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f]}}
 setblock 55 64 515 silentgear:stone_anvil
 setblock 57 64 515 silentgear:starlight_charger
-setblock 59 64 519 minecraft:chest[facing=south]{Items:[{Slot:0b,id:"silentgear:pickaxe_blueprint",count:1},{Slot:1b,id:"minecraft:flint",count:16},{Slot:2b,id:"minecraft:stick",count:8}]}
+setblock 59 64 519 minecraft:trapped_chest[facing=south]{Items:[{Slot:0b,id:"silentgear:pickaxe_blueprint",count:1},{Slot:1b,id:"minecraft:flint",count:16},{Slot:2b,id:"minecraft:stick",count:8}]}
 setblock 61 64 522 minecraft:air
 setblock 61 64 522 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "219.7"}','{"text": "silent_gear"}','{"text": "alloy_forge"}','{"text": ""}']}}
 setblock 62 64 522 minecraft:air

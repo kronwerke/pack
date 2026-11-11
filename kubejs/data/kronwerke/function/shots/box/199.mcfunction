@@ -13,7 +13,7 @@ setblock 140 64 381 mekanism:creative_energy_cube
 setblock 141 64 381 fluxnetworks:flux_plug
 setblock 147 64 381 fluxnetworks:flux_point
 setblock 148 64 381 mekanism:enrichment_chamber
-setblock 150 64 385 minecraft:chest[facing=south]{Items:[{Slot:0b,id:"fluxnetworks:flux_configurator",count:1},{Slot:1b,id:"fluxnetworks:flux_controller",count:1}]}
+setblock 150 64 385 minecraft:trapped_chest[facing=south]{Items:[{Slot:0b,id:"fluxnetworks:flux_configurator",count:1},{Slot:1b,id:"fluxnetworks:flux_controller",count:1}]}
 setblock 152 64 388 minecraft:air
 setblock 152 64 388 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "199.2"}','{"text": "flux_networks"}','{"text": "wireless"}','{"text": ""}']}}
 setblock 153 64 388 minecraft:air
@@ -23,7 +23,7 @@ setblock 154 64 381 mekanism:creative_energy_cube
 setblock 155 64 381 fluxnetworks:flux_plug
 setblock 161 64 381 fluxnetworks:flux_point
 setblock 162 64 381 mekanism:enrichment_chamber
-setblock 164 64 385 minecraft:chest[facing=south]{Items:[{Slot:0b,id:"fluxnetworks:flux_configurator",count:1},{Slot:1b,id:"fluxnetworks:flux_controller",count:1}]}
+setblock 164 64 385 minecraft:trapped_chest[facing=south]{Items:[{Slot:0b,id:"fluxnetworks:flux_configurator",count:1},{Slot:1b,id:"fluxnetworks:flux_controller",count:1}]}
 setblock 166 64 388 minecraft:air
 setblock 166 64 388 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "199.3"}','{"text": "flux_networks"}','{"text": "stats"}','{"text": ""}']}}
 setblock 167 64 388 minecraft:air
@@ -33,4 +33,4 @@ setblock 168 64 381 mekanism:creative_energy_cube
 setblock 169 64 381 fluxnetworks:flux_plug
 setblock 175 64 381 fluxnetworks:flux_point
 setblock 176 64 381 mekanism:enrichment_chamber
-setblock 178 64 385 minecraft:chest[facing=south]{Items:[{Slot:0b,id:"fluxnetworks:flux_configurator",count:1},{Slot:1b,id:"fluxnetworks:flux_controller",count:1}]}
+setblock 178 64 385 minecraft:trapped_chest[facing=south]{Items:[{Slot:0b,id:"fluxnetworks:flux_configurator",count:1},{Slot:1b,id:"fluxnetworks:flux_controller",count:1}]}

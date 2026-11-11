@@ -102,4 +102,4 @@ setblock 90 66 378 draconicevolution:energy_core_stabilizer
 setblock 90 66 390 draconicevolution:energy_core_stabilizer
 setblock 84 66 384 draconicevolution:energy_core_stabilizer
 setblock 96 66 384 draconicevolution:energy_core_stabilizer
-setblock 97 64 391 minecraft:chest[facing=south]{Items:[{Slot:0b,id:"draconicevolution:draconium_block",count:16},{Slot:1b,id:"minecraft:redstone_block",count:16}]}
+setblock 97 64 391 minecraft:trapped_chest[facing=south]{Items:[{Slot:0b,id:"draconicevolution:draconium_block",count:16},{Slot:1b,id:"minecraft:redstone_block",count:16}]}

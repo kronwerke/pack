@@ -14,4 +14,4 @@ setblock 171 65 57 create:chain_conveyor
 setblock 179 64 57 create:shaft[axis=y]
 setblock 179 65 57 create:chain_conveyor
 setblock 173 64 59 create:package_frogport
-setblock 181 64 61 minecraft:chest[facing=south]{Items:[{Slot:0b,id:"minecraft:chain",count:1},{Slot:1b,id:"create:package_frogport",count:1},{Slot:2b,id:"create:cardboard_block",count:1}]}
+setblock 181 64 61 minecraft:trapped_chest[facing=south]{Items:[{Slot:0b,id:"minecraft:chain",count:1},{Slot:1b,id:"create:package_frogport",count:1},{Slot:2b,id:"create:cardboard_block",count:1}]}

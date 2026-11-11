@@ -36,7 +36,7 @@ setblock 30 66 487 draconicevolution:energy_core_stabilizer
 setblock 30 66 499 draconicevolution:energy_core_stabilizer
 setblock 24 66 493 draconicevolution:energy_core_stabilizer
 setblock 36 66 493 draconicevolution:energy_core_stabilizer
-setblock 37 64 500 minecraft:chest[facing=south]{Items:[{Slot:0b,id:"draconicevolution:draconium_block",count:16},{Slot:1b,id:"minecraft:redstone_block",count:16}]}
+setblock 37 64 500 minecraft:trapped_chest[facing=south]{Items:[{Slot:0b,id:"draconicevolution:draconium_block",count:16},{Slot:1b,id:"minecraft:redstone_block",count:16}]}
 setblock 39 64 503 minecraft:air
 setblock 39 64 503 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "213.4"}','{"text": "draconic"}','{"text": "tiers"}','{"text": ""}']}}
 setblock 40 64 503 minecraft:air

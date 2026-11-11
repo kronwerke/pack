@@ -8,7 +8,7 @@ setblock 2 64 327 minecraft:air
 setblock 2 64 327 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "the machines at"}','{"text": "work"}','{"text": ""}','{"text": ""}']}}
 summon text_display 5.5 71 320.5 {text:'[{"text": "183.1  ", "color": "gold"}, {"text": "industrial/addons", "color": "gray"}, {"text": "\\nSteck Addons in deine Maschinen", "color": "white"}]',billboard:"center",background:1275068416,Tags:["kw_shot"],alignment:"center",line_width:200,transformation:{scale:[1.6f,1.6f,1.6f],translation:[0f,0f,0f],left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f]}}
 setblock 2 64 318 industrialforegoing:plant_sower
-setblock 9 64 324 minecraft:chest[facing=south]{Items:[{Slot:0b,id:"industrialforegoing:speed_addon_tier_1",count:1},{Slot:1b,id:"industrialforegoing:efficiency_addon_tier_1",count:1}]}
+setblock 9 64 324 minecraft:trapped_chest[facing=south]{Items:[{Slot:0b,id:"industrialforegoing:speed_addon_tier_1",count:1},{Slot:1b,id:"industrialforegoing:efficiency_addon_tier_1",count:1}]}
 setblock 11 64 327 minecraft:air
 setblock 11 64 327 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "183.2"}','{"text": "industrial"}','{"text": "sower"}','{"text": ""}']}}
 setblock 12 64 327 minecraft:air

@@ -27,7 +27,7 @@ setblock 22 64 432 minecraft:air
 setblock 22 64 432 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Fang eine Lohe"}','{"text": "ein"}','{"text": ""}','{"text": ""}']}}
 summon text_display 25.5 71 425.5 {text:'[{"text": "204.3  ", "color": "gold"}, {"text": "nether/blaze_burner", "color": "gray"}, {"text": "\\nFang eine Lohe ein", "color": "white"}]',billboard:"center",background:1275068416,Tags:["kw_shot"],alignment:"center",line_width:200,transformation:{scale:[1.6f,1.6f,1.6f],translation:[0f,0f,0f],left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f]}}
 summon minecraft:blaze 25.5 65 425.5 {NoAI:1b,PersistenceRequired:1b,Silent:1b,Tags:["kw_shot"],Rotation:[180f,0f]}
-setblock 29 64 429 minecraft:chest[facing=south]{Items:[{Slot:0b,id:"create:blaze_burner",count:1}]}
+setblock 29 64 429 minecraft:trapped_chest[facing=south]{Items:[{Slot:0b,id:"create:blaze_burner",count:1}]}
 setblock 31 64 432 minecraft:air
 setblock 31 64 432 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "204.4"}','{"text": "nether"}','{"text": "biomes"}','{"text": ""}']}}
 setblock 32 64 432 minecraft:air

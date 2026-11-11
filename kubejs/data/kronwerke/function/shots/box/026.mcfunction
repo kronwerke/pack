@@ -12,4 +12,4 @@ setblock 106 64 64 minecraft:air
 setblock 106 64 64 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Eisennugget ins"}','{"text": "Becken"}','{"text": ""}','{"text": ""}']}}
 summon text_display 109.5 71 57.5 {text:'[{"text": "026  ", "color": "gold"}, {"text": "create/alloy_mixing", "color": "gray"}, {"text": "\\nMisch Legierung am Band", "color": "white"}]',billboard:"center",background:1275068416,Tags:["kw_shot"],alignment:"center",line_width:200,transformation:{scale:[1.6f,1.6f,1.6f],translation:[0f,0f,0f],left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f]}}
 place template create:gametest/processing/brass_mixing 104 64 54 none
-setblock 115 64 61 minecraft:chest[facing=south]{Items:[{Slot:0b,id:"minecraft:andesite",count:64},{Slot:1b,id:"minecraft:iron_nugget",count:64}]}
+setblock 115 64 61 minecraft:trapped_chest[facing=south]{Items:[{Slot:0b,id:"minecraft:andesite",count:64},{Slot:1b,id:"minecraft:iron_nugget",count:64}]}

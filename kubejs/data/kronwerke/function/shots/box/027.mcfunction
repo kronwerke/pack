@@ -13,4 +13,4 @@ setblock 126 64 57 create:basin
 setblock 126 66 57 create:mechanical_press[facing=east]
 setblock 127 66 57 create:shaft[axis=x]
 setblock 128 66 57 create:creative_motor[facing=west]{ScrollValue:64}
-setblock 130 64 61 minecraft:chest[facing=south]{Items:[{Slot:0b,id:"minecraft:flint",count:32},{Slot:1b,id:"minecraft:gravel",count:32},{Slot:2b,id:"minecraft:lava_bucket",count:1}]}
+setblock 130 64 61 minecraft:trapped_chest[facing=south]{Items:[{Slot:0b,id:"minecraft:flint",count:32},{Slot:1b,id:"minecraft:gravel",count:32},{Slot:2b,id:"minecraft:lava_bucket",count:1}]}

@@ -10,4 +10,4 @@ setblock 385 64 160 minecraft:air
 setblock 385 64 160 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "abfüllen"}','{"text": ""}','{"text": ""}','{"text": ""}']}}
 summon text_display 387.5 71 153.5 {text:'[{"text": "108  ", "color": "gold"}, {"text": "ars_epic/breath", "color": "gray"}, {"text": "\\nFüll Drachenatem ab", "color": "white"}]',billboard:"center",background:1275068416,Tags:["kw_shot"],alignment:"center",line_width:200,transformation:{scale:[1.6f,1.6f,1.6f],translation:[0f,0f,0f],left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f]}}
 setblock 384 64 151 minecraft:dragon_head
-setblock 391 64 157 minecraft:chest[facing=south]{Items:[{Slot:0b,id:"minecraft:glass_bottle",count:16}]}
+setblock 391 64 157 minecraft:trapped_chest[facing=south]{Items:[{Slot:0b,id:"minecraft:glass_bottle",count:16}]}

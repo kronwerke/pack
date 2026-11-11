@@ -12,4 +12,4 @@ setblock 376 64 195 botania:mana_pool
 setblock 385 64 195 botania:mana_pool
 setblock 376 65 195 botania:natura_pylon
 setblock 385 65 195 botania:natura_pylon
-setblock 387 64 197 minecraft:chest[facing=south]{Items:[{Slot:0b,id:"botania:wand_of_the_forest",count:1},{Slot:1b,id:"botania:manasteel_block",count:8},{Slot:2b,id:"botania:livingwood",count:8}]}
+setblock 387 64 197 minecraft:trapped_chest[facing=south]{Items:[{Slot:0b,id:"botania:wand_of_the_forest",count:1},{Slot:1b,id:"botania:manasteel_block",count:8},{Slot:2b,id:"botania:livingwood",count:8}]}

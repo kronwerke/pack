@@ -289,4 +289,4 @@ setblock 336 64 200 kronwerke:obelisk_plinth
 setblock 336 65 200 kronwerke:obelisk_pedestal
 setblock 348 64 200 kronwerke:obelisk_plinth
 setblock 348 65 200 kronwerke:obelisk_pedestal
-setblock 336 64 200 minecraft:chest[facing=south]{Items:[{Slot:0b,id:"botania:gaia_spirit",count:64}]}
+setblock 336 64 200 minecraft:trapped_chest[facing=south]{Items:[{Slot:0b,id:"botania:gaia_spirit",count:64}]}

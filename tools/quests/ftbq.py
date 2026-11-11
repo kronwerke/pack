@@ -118,6 +118,19 @@ def img(texture, width, height, align="center"):
     return "{image:%s width:%d height:%d align:%s}" % (texture, width, height, align)
 
 
+SHOTS_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "..", "kubejs", "assets", "kronwerke",
+                         "textures", "quests", "shots")
+SHOT_SIZE = (224, 126)   # GUI pixels, 16:9
+
+
+def _shot(chapter, quest):
+    """The camera picture of a quest (tools/shots, taken on the server), on top of its text."""
+    name = f"{chapter}_{quest}.png"
+    if os.path.exists(os.path.join(SHOTS_DIR, name)):
+        return img(f"kronwerke:textures/quests/shots/{name}", *SHOT_SIZE)
+    return None
+
+
 def item_texture(id):
     """The inventory texture of a plain item, for img() or canvas(): minecraft:diamond ->
     minecraft:textures/item/diamond.png. Blocks usually have no such texture; check with
@@ -226,8 +239,12 @@ def _build_chapter(ch, order_index, lang):
         lang[f"quest.{quest_id}.title"] = q["title"]
         if q["subtitle"]:
             lang[f"quest.{quest_id}.quest_subtitle"] = q["subtitle"]
-        if q["description"]:
-            lang[f"quest.{quest_id}.quest_desc"] = list(q["description"])
+        desc = list(q["description"])
+        shot = _shot(ch["name"], q["name"])
+        if shot:
+            desc = [shot] + desc
+        if desc:
+            lang[f"quest.{quest_id}.quest_desc"] = desc
         if q["icon"]:
             qd["icon"] = item(q["icon"])
         if q["size"]:

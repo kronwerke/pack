@@ -38,6 +38,10 @@ def save(table):
         f.write("\n")
 
 
+# a line that is only a picture needs no translation, it stays as it is in every language
+IMAGE_ONLY = re.compile(r"^\{image:[^}]*\}$")
+
+
 def lines_by_chapter():
     """chapter name -> German lines in book order (each once)."""
     for f in sorted(os.listdir(os.path.join(here, "chapters"))):
@@ -54,7 +58,7 @@ def lines_by_chapter():
         lines = []
         for v in lang.values():
             for s in (v if isinstance(v, list) else [v]):
-                if isinstance(s, str) and s.strip() and s not in seen:
+                if isinstance(s, str) and s.strip() and s not in seen and not IMAGE_ONLY.match(s):
                     seen.add(s)
                     lines.append(s)
         out[ch["name"]] = lines

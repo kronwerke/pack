@@ -27,10 +27,10 @@ own words and chapter names, so references between chapters stay the same.
 | Create: Messing | Create: Brass |
 | Create: Erweiterungen | Create: Add-ons |
 | Erfahrung in Flaschen | experience in bottles |
-| Stufe 2 (Messingwerk) | stage 2 (Messingwerk), the stage names stay German like in Core |
-| Stufe 3 (Stahlwerk) | stage 3 (Stahlwerk) |
-| Stufe 4 (Sternwerk) | stage 4 (Sternwerk) |
-| Stufe 5 (Chaoswerk) | stage 5 (Chaoswerk) |
+| Stufe 2 (Messingwerk) | stage 2 (Brass Works); the stage names are English everywhere: Stone Works, Brass Works, Steel Works, Star Works, Chaos Works (decided 12.11.2026) |
+| Stufe 3 (Stahlwerk) | stage 3 (Steel Works) |
+| Stufe 4 (Sternwerk) | stage 4 (Star Works) |
+| Stufe 5 (Chaoswerk) | stage 5 (Chaos Works) |
 | Bienen (Kapitel) | Bees |
 | Bosse der Oberwelt | Overworld Bosses |
 | Checkliste: Dimensionen und Reisen | Checklist: Dimensions and Travel |

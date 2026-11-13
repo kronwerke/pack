@@ -1,17 +1,20 @@
-# 028 create_brass/arm
-#area 234 42 253 67
-fill 234 64 42 253 91 67 minecraft:air
-fill 234 60 42 253 62 67 minecraft:stone
-fill 234 63 42 253 63 67 minecraft:light_gray_concrete
-fill 238 64 48 253 79 48 minecraft:light_gray_concrete
-fill 238 64 48 238 79 61 minecraft:light_gray_concrete
-setblock 239 64 60 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "028"}','{"text": "create_brass"}','{"text": "arm"}','{"text": ""}']}}
-setblock 240 64 60 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "a mechanical"}','{"text": "arm feeding a"}','{"text": "blaze burner"}','{"text": ""}']}}
-fill 248 64 48 248 79 61 minecraft:light_gray_concrete
-setblock 241 64 53 create:depot
-kw testworld use 241 64 53 up minecraft:coal
-setblock 245 64 53 create:blaze_burner[blaze=smouldering]
-setblock 243 64 53 create:mechanical_arm[ceiling=false]{InteractionPoints:[{Type:"create:depot",Pos:[I;-2,0,0],Mode:"TAKE"},{Type:"create:blaze_burner",Pos:[I;2,0,0],Mode:"DEPOSIT"}]}
-setblock 243 63 53 create:shaft[axis=y]
-setblock 243 62 53 create:creative_motor[facing=up]{ScrollValue:32}
+# 028 create_brass/crushing_wheel
+#area 231 42 252 67
+fill 231 64 42 252 91 67 minecraft:air
+fill 231 60 42 252 62 67 minecraft:stone
+fill 231 63 42 252 63 67 minecraft:light_gray_concrete
+fill 235 64 48 252 79 48 minecraft:light_gray_concrete
+fill 235 64 48 235 79 61 minecraft:light_gray_concrete
+setblock 236 64 60 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "028"}','{"text": "create_brass"}','{"text": "crushing_wheel"}','{"text": ""}']}}
+setblock 237 64 60 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "a pair of"}','{"text": "crushing"}','{"text": "wheels, goggles"}','{"text": "showing the"}']}}
+setblock 238 64 60 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "stress"}','{"text": ""}','{"text": ""}','{"text": ""}']}}
+fill 247 64 48 247 79 61 minecraft:light_gray_concrete
+setblock 240 65 53 create:crushing_wheel[axis=z]
+setblock 242 65 53 create:crushing_wheel[axis=z]
+fill 239 64 52 243 66 52 create:andesite_casing
+setblock 240 65 52 create:andesite_encased_shaft[axis=z]
+setblock 240 65 51 create:creative_motor[facing=south]{ScrollValue:32}
+setblock 242 65 52 create:andesite_encased_shaft[axis=z]
+setblock 242 65 51 create:creative_motor[facing=south]{ScrollValue:-32}
+summon item 241.5 67 53.5 {Item:{id:"minecraft:raw_iron",count:8},PickupDelay:32767,Age:-32768,Tags:["kw_shot"]}
 execute as @e[type=minecraft:item,tag=!kw_shot] run kill @s

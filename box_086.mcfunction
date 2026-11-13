@@ -1,21 +1,17 @@
-# 086 alfheim/pure_essence
-#area 287 109 306 134
-fill 287 64 109 306 91 134 minecraft:air
-fill 287 60 109 306 62 134 minecraft:stone
-fill 287 63 109 306 63 134 minecraft:light_gray_concrete
-fill 291 64 115 306 79 115 minecraft:light_gray_concrete
-fill 291 64 115 291 79 128 minecraft:light_gray_concrete
-setblock 292 64 127 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "086"}','{"text": "alfheim"}','{"text": "pure_essence"}','{"text": ""}']}}
-setblock 293 64 127 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "the pure daisy"}','{"text": "on end stone"}','{"text": "with the"}','{"text": "essence cloud"}']}}
-fill 301 64 115 301 79 128 minecraft:light_gray_concrete
-setblock 296 63 120 minecraft:grass_block[snowy=false]
-setblock 296 64 120 botania:pure_daisy
-setblock 295 64 119 minecraft:end_stone
-setblock 295 64 120 minecraft:end_stone
-setblock 295 64 121 minecraft:end_stone
-setblock 296 64 119 minecraft:cobbled_deepslate
-setblock 296 64 121 minecraft:end_stone
-setblock 297 64 119 minecraft:end_stone
-setblock 297 64 120 minecraft:end_stone
-setblock 297 64 121 minecraft:cobbled_deepslate
+# 086 botania_runes/gourmaryllis
+#area 152 139 171 164
+fill 152 64 139 171 91 164 minecraft:air
+fill 152 60 139 171 62 164 minecraft:stone
+fill 152 63 139 171 63 164 minecraft:light_gray_concrete
+fill 156 64 145 171 79 145 minecraft:light_gray_concrete
+fill 156 64 145 156 79 158 minecraft:light_gray_concrete
+setblock 157 64 157 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "086"}','{"text": "botania_runes"}','{"text": "gourmaryllis"}','{"text": ""}']}}
+setblock 158 64 157 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "a belt dropping"}','{"text": "varied food"}','{"text": ""}','{"text": ""}']}}
+fill 166 64 145 166 79 158 minecraft:light_gray_concrete
+fill 159 63 149 163 63 151 minecraft:grass_block[snowy=false]
+setblock 161 64 150 botania:gourmaryllis
+summon item 160.5 64.2 151.5 {Item:{id:"minecraft:bread",count:1},PickupDelay:32767,Age:-32768,Tags:["kw_shot"]}
+summon item 162.5 64.2 151.5 {Item:{id:"minecraft:cooked_beef",count:1},PickupDelay:32767,Age:-32768,Tags:["kw_shot"]}
+summon item 160.5 64.2 149.5 {Item:{id:"minecraft:apple",count:1},PickupDelay:32767,Age:-32768,Tags:["kw_shot"]}
+summon item 162.5 64.2 149.5 {Item:{id:"minecraft:baked_potato",count:1},PickupDelay:32767,Age:-32768,Tags:["kw_shot"]}
 execute as @e[type=minecraft:item,tag=!kw_shot] run kill @s

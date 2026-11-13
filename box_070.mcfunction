@@ -1,31 +1,12 @@
-# 070 botania/endo_auto
-#area 11 109 30 134
-fill 11 64 109 30 91 134 minecraft:air
-fill 11 60 109 30 62 134 minecraft:stone
-fill 11 63 109 30 63 134 minecraft:light_gray_concrete
-fill 15 64 115 30 79 115 minecraft:light_gray_concrete
-fill 15 64 115 15 79 128 minecraft:light_gray_concrete
-setblock 16 64 127 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "070"}','{"text": "botania"}','{"text": "endo_auto"}','{"text": ""}']}}
-setblock 17 64 127 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "chest, hopper"}','{"text": "and open crate"}','{"text": "over four"}','{"text": "Endoflames,"}']}}
-setblock 18 64 127 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "pressure plate"}','{"text": ""}','{"text": ""}','{"text": ""}']}}
-fill 25 64 115 25 79 128 minecraft:light_gray_concrete
-fill 19 63 120 21 63 121 minecraft:grass_block
-setblock 20 63 120 minecraft:light_gray_concrete
-setblock 19 64 120 botania:endoflame
-setblock 21 64 120 botania:endoflame
-setblock 19 64 121 botania:endoflame
-setblock 20 64 121 botania:endoflame
-setblock 21 64 121 botania:endoflame
-setblock 20 64 120 minecraft:oak_pressure_plate
-setblock 20 66 120 botania:open_crate
-setblock 20 67 120 minecraft:hopper[facing=down]
-setblock 20 68 120 minecraft:chest[facing=south]{Items:[{Slot:0b,id:"minecraft:coal",count:64}]}
-setblock 20 64 119 minecraft:redstone_wire
-setblock 20 64 118 minecraft:stone_bricks
-setblock 20 65 118 minecraft:redstone_wire
-setblock 21 65 118 minecraft:stone_bricks
-setblock 21 66 118 minecraft:redstone_wire
-setblock 21 66 119 minecraft:stone_bricks
-setblock 21 67 119 minecraft:redstone_wire
-setblock 21 67 120 minecraft:stone_bricks
+# 070 ars_master/tribute
+#area 180 118 201 145
+fill 180 64 118 201 91 145 minecraft:air
+fill 180 60 118 201 62 145 minecraft:stone
+fill 180 63 118 201 63 145 minecraft:light_gray_concrete
+fill 184 64 124 201 79 124 minecraft:light_gray_concrete
+fill 184 64 124 184 79 139 minecraft:light_gray_concrete
+setblock 185 64 138 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "070"}','{"text": "ars_master"}','{"text": "tribute"}','{"text": ""}']}}
+setblock 186 64 138 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "the Chimera mid"}','{"text": "fight"}','{"text": ""}','{"text": ""}']}}
+fill 196 64 124 196 79 139 minecraft:light_gray_concrete
+summon ars_nouveau:wilden_boss 190.5 64 130.5 {NoAI:1b,PersistenceRequired:1b,Silent:1b,Tags:["kw_shot"],Rotation:[0f,0f]}
 execute as @e[type=minecraft:item,tag=!kw_shot] run kill @s

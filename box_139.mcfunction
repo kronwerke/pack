@@ -1,24 +1,15 @@
-# 139 the_end/arrival
-#area 10 300 29 325
-fill 10 64 300 29 91 325 minecraft:air
-fill 10 60 300 29 62 325 minecraft:stone
-fill 10 63 300 29 63 325 minecraft:light_gray_concrete
-fill 14 64 306 29 79 306 minecraft:light_gray_concrete
-fill 14 64 306 14 79 319 minecraft:light_gray_concrete
-setblock 15 64 318 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "139"}','{"text": "the_end"}','{"text": "arrival"}','{"text": ""}']}}
-setblock 16 64 318 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Betritt das End"}','{"text": ""}','{"text": ""}','{"text": ""}']}}
-fill 24 64 306 24 79 319 minecraft:light_gray_concrete
-setblock 18 64 309 minecraft:end_portal_frame[eye=true,facing=south]
-setblock 18 64 313 minecraft:end_portal_frame[eye=true,facing=north]
-setblock 17 64 310 minecraft:end_portal_frame[eye=true,facing=east]
-setblock 21 64 310 minecraft:end_portal_frame[eye=true,facing=west]
-setblock 19 64 309 minecraft:end_portal_frame[eye=true,facing=south]
-setblock 19 64 313 minecraft:end_portal_frame[eye=true,facing=north]
-setblock 17 64 311 minecraft:end_portal_frame[eye=true,facing=east]
-setblock 21 64 311 minecraft:end_portal_frame[eye=true,facing=west]
-setblock 20 64 309 minecraft:end_portal_frame[eye=true,facing=south]
-setblock 20 64 313 minecraft:end_portal_frame[eye=true,facing=north]
-setblock 17 64 312 minecraft:end_portal_frame[eye=true,facing=east]
-setblock 21 64 312 minecraft:end_portal_frame[eye=true,facing=west]
-fill 18 64 310 20 64 312 minecraft:end_portal
+# 139 flux_networks/dust
+#area 58 307 77 332
+fill 58 64 307 77 91 332 minecraft:air
+fill 58 60 307 77 62 332 minecraft:stone
+fill 58 63 307 77 63 332 minecraft:light_gray_concrete
+fill 62 64 313 77 79 313 minecraft:light_gray_concrete
+fill 62 64 313 62 79 326 minecraft:light_gray_concrete
+setblock 63 64 325 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "139"}','{"text": "flux_networks"}','{"text": "dust"}','{"text": ""}']}}
+setblock 64 64 325 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "the bedrock gap"}','{"text": "with redstone"}','{"text": "and obsidian,"}','{"text": "left-clicking"}']}}
+setblock 65 64 325 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "the obsidian"}','{"text": ""}','{"text": ""}','{"text": ""}']}}
+fill 72 64 313 72 79 326 minecraft:light_gray_concrete
+setblock 67 64 318 minecraft:bedrock
+summon item 67.5 65.1 318.5 {Item:{id:"minecraft:redstone",count:64},PickupDelay:32767,Age:-32768,Tags:["kw_shot"]}
+setblock 67 66 318 minecraft:obsidian
 execute as @e[type=minecraft:item,tag=!kw_shot] run kill @s

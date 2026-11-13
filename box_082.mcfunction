@@ -1,21 +1,46 @@
-# 082 gaia/arena
-#area 199 109 224 140
-fill 199 64 109 224 91 140 minecraft:air
-fill 199 60 109 224 62 140 minecraft:stone
-fill 199 63 109 224 63 140 minecraft:light_gray_concrete
-fill 203 64 115 224 79 115 minecraft:light_gray_concrete
-fill 203 64 115 203 79 134 minecraft:light_gray_concrete
-setblock 204 64 133 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "082"}','{"text": "gaia"}','{"text": "arena"}','{"text": ""}']}}
-setblock 205 64 133 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "beacon with"}','{"text": "four pylons"}','{"text": "from above"}','{"text": ""}']}}
-fill 219 64 115 219 79 134 minecraft:light_gray_concrete
-fill 210 63 122 212 63 124 minecraft:iron_block
-setblock 211 64 123 minecraft:beacon
-setblock 207 64 119 minecraft:quartz_block
-setblock 207 65 119 botania:gaia_pylon
-setblock 207 64 127 minecraft:quartz_block
-setblock 207 65 127 botania:gaia_pylon
-setblock 215 64 119 minecraft:quartz_block
-setblock 215 65 119 botania:gaia_pylon
-setblock 215 64 127 minecraft:quartz_block
-setblock 215 65 127 botania:gaia_pylon
+# 082 botania/manasteel_prep
+#area 90 139 111 166
+fill 90 64 139 111 91 166 minecraft:air
+fill 90 60 139 111 62 166 minecraft:stone
+fill 90 63 139 111 63 166 minecraft:light_gray_concrete
+fill 94 64 145 111 79 145 minecraft:light_gray_concrete
+fill 94 64 145 94 79 160 minecraft:light_gray_concrete
+setblock 95 64 159 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "082"}','{"text": "botania"}','{"text": "manasteel_prep"}','{"text": ""}']}}
+setblock 96 64 159 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "the Nature\'s"}','{"text": "Aura ritual"}','{"text": "layout with"}','{"text": "gold powder and"}']}}
+setblock 97 64 159 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "stands"}','{"text": ""}','{"text": ""}','{"text": ""}']}}
+fill 106 64 145 106 79 160 minecraft:light_gray_concrete
+setblock 100 64 147 naturesaura:wood_stand
+setblock 97 64 148 naturesaura:wood_stand
+setblock 103 64 148 naturesaura:wood_stand
+setblock 99 64 149 naturesaura:gold_powder
+setblock 100 64 149 naturesaura:gold_powder
+setblock 101 64 149 naturesaura:gold_powder
+setblock 98 64 150 naturesaura:gold_powder
+setblock 99 64 150 naturesaura:gold_powder
+setblock 101 64 150 naturesaura:gold_powder
+setblock 102 64 150 naturesaura:gold_powder
+setblock 96 64 151 naturesaura:wood_stand
+setblock 98 64 151 naturesaura:gold_powder
+setblock 100 64 151 minecraft:oak_sapling
+setblock 102 64 151 naturesaura:gold_powder
+setblock 104 64 151 naturesaura:wood_stand
+setblock 98 64 152 naturesaura:gold_powder
+setblock 99 64 152 naturesaura:gold_powder
+setblock 101 64 152 naturesaura:gold_powder
+setblock 102 64 152 naturesaura:gold_powder
+setblock 99 64 153 naturesaura:gold_powder
+setblock 100 64 153 naturesaura:gold_powder
+setblock 101 64 153 naturesaura:gold_powder
+setblock 97 64 154 naturesaura:wood_stand
+setblock 103 64 154 naturesaura:wood_stand
+setblock 100 64 155 naturesaura:wood_stand
+setblock 100 63 151 minecraft:grass_block
+kw testworld use 100 64 147 up naturesaura:infused_iron
+kw testworld use 97 64 148 up botania:livingwood_twig
+kw testworld use 103 64 148 up naturesaura:infused_iron
+kw testworld use 96 64 151 up botania:mana_diamond
+kw testworld use 104 64 151 up naturesaura:gold_leaf
+kw testworld use 97 64 154 up naturesaura:infused_iron
+kw testworld use 103 64 154 up botania:livingwood_twig
+kw testworld use 100 64 155 up naturesaura:infused_iron
 execute as @e[type=minecraft:item,tag=!kw_shot] run kill @s

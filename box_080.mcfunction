@@ -1,21 +1,13 @@
-# 080 botania_runes/plate_base
-#area 167 109 186 134
-fill 167 64 109 186 91 134 minecraft:air
-fill 167 60 109 186 62 134 minecraft:stone
-fill 167 63 109 186 63 134 minecraft:light_gray_concrete
-fill 171 64 115 186 79 115 minecraft:light_gray_concrete
-fill 171 64 115 171 79 128 minecraft:light_gray_concrete
-setblock 172 64 127 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "080"}','{"text": "botania_runes"}','{"text": "plate_base"}','{"text": ""}']}}
-setblock 173 64 127 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "the 3x3 lapis"}','{"text": "and livingrock"}','{"text": "base with plate"}','{"text": "and sparks"}']}}
-fill 181 64 115 181 79 128 minecraft:light_gray_concrete
-setblock 175 64 119 botania:livingrock
-setblock 175 64 120 minecraft:lapis_block
-setblock 175 64 121 botania:livingrock
-setblock 176 64 119 minecraft:lapis_block
-setblock 176 64 120 botania:livingrock
-setblock 176 64 121 minecraft:lapis_block
-setblock 177 64 119 botania:livingrock
-setblock 177 64 120 minecraft:lapis_block
-setblock 177 64 121 botania:livingrock
-setblock 176 65 120 botania:terrestrial_agglomeration_plate
+# 080 botania/mana_void
+#area 56 139 75 164
+fill 56 64 139 75 91 164 minecraft:air
+fill 56 60 139 75 62 164 minecraft:stone
+fill 56 63 139 75 63 164 minecraft:light_gray_concrete
+fill 60 64 145 75 79 145 minecraft:light_gray_concrete
+fill 60 64 145 60 79 158 minecraft:light_gray_concrete
+setblock 61 64 157 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "080"}','{"text": "botania"}','{"text": "mana_void"}','{"text": ""}']}}
+setblock 62 64 157 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "a mana void"}','{"text": "under a pool"}','{"text": ""}','{"text": ""}']}}
+fill 70 64 145 70 79 158 minecraft:light_gray_concrete
+setblock 65 64 150 botania:mana_void
+setblock 65 65 150 botania:mana_pool{mana:1000000}
 execute as @e[type=minecraft:item,tag=!kw_shot] run kill @s

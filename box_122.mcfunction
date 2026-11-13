@@ -1,84 +1,106 @@
-# 122 oritech/cores, pipes, laser, atomic_forge, destroyer, fragment_forge, exo, reactor
-#area -4 235 88 262
-fill -4 64 235 36 91 262 minecraft:air
-fill 37 64 235 77 91 262 minecraft:air
-fill 78 64 235 88 91 262 minecraft:air
-fill -4 60 235 88 62 262 minecraft:stone
-fill -4 63 235 88 63 262 minecraft:light_gray_concrete
-fill 0 64 241 88 79 241 minecraft:light_gray_concrete
-fill 0 64 241 0 79 256 minecraft:light_gray_concrete
-setblock 1 64 255 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "122.1"}','{"text": "oritech"}','{"text": "cores"}','{"text": ""}']}}
-setblock 2 64 255 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Bau"}','{"text": "Maschinenkerne"}','{"text": ""}','{"text": ""}']}}
-fill 10 64 241 10 79 256 minecraft:light_gray_concrete
-setblock 4 64 246 oritech:machine_core_1
-setblock 6 64 246 oritech:machine_core_2
-setblock 11 64 255 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "122.2"}','{"text": "oritech"}','{"text": "pipes"}','{"text": ""}']}}
-setblock 12 64 255 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Leg Rohre"}','{"text": ""}','{"text": ""}','{"text": ""}']}}
-fill 21 64 241 21 79 256 minecraft:light_gray_concrete
-setblock 13 64 246 oritech:pulverizer_block
-setblock 18 64 246 oritech:pulverizer_block
-kw testworld use 14 63 246 up oritech:energy_pipe
-kw testworld use 15 63 246 up oritech:energy_pipe
-kw testworld use 16 63 246 up oritech:energy_pipe
-kw testworld use 17 63 246 up oritech:energy_pipe
-kw testworld use 14 63 247 up oritech:item_pipe
-kw testworld use 15 63 247 up oritech:item_pipe
-kw testworld use 16 63 247 up oritech:item_pipe
-kw testworld use 17 63 247 up oritech:item_pipe
-setblock 22 64 255 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "122.3"}','{"text": "oritech"}','{"text": "laser"}','{"text": ""}']}}
-setblock 23 64 255 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Bau den"}','{"text": "Enderischen"}','{"text": "Laser"}','{"text": ""}']}}
-fill 31 64 241 31 79 256 minecraft:light_gray_concrete
-kw testworld use 26 63 246 up oritech:laser_arm_block
-setblock 32 64 255 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "122.4"}','{"text": "oritech"}','{"text": "atomic_forge"}','{"text": ""}']}}
-setblock 33 64 255 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Speis eine"}','{"text": "Atomic Forge"}','{"text": ""}','{"text": ""}']}}
-fill 41 64 241 41 79 256 minecraft:light_gray_concrete
-kw testworld use 36 63 246 up oritech:atomic_forge_block
-setblock 42 64 255 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "122.5"}','{"text": "oritech"}','{"text": "destroyer"}','{"text": ""}']}}
-setblock 43 64 255 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Spann einen"}','{"text": "Rahmen mit"}','{"text": "Zerstörer"}','{"text": ""}']}}
-fill 53 64 241 53 79 256 minecraft:light_gray_concrete
-fill 44 63 244 50 63 250 minecraft:farmland[moisture=7]
-fill 44 64 244 50 64 250 minecraft:wheat[age=7]
-setblock 44 66 244 oritech:machine_frame_block
-setblock 44 66 245 oritech:machine_frame_block
-setblock 44 66 246 oritech:machine_frame_block
-setblock 44 66 247 oritech:machine_frame_block
-setblock 44 66 248 oritech:machine_frame_block
-setblock 44 66 249 oritech:machine_frame_block
-setblock 44 66 250 oritech:machine_frame_block
-setblock 45 66 244 oritech:machine_frame_block
-setblock 45 66 250 oritech:machine_frame_block
-setblock 46 66 244 oritech:machine_frame_block
-setblock 46 66 250 oritech:machine_frame_block
-setblock 47 66 244 oritech:machine_frame_block
-setblock 47 66 250 oritech:machine_frame_block
-setblock 48 66 244 oritech:machine_frame_block
-setblock 48 66 250 oritech:machine_frame_block
-setblock 49 66 244 oritech:machine_frame_block
-setblock 49 66 250 oritech:machine_frame_block
-setblock 50 66 244 oritech:machine_frame_block
-setblock 50 66 245 oritech:machine_frame_block
-setblock 50 66 246 oritech:machine_frame_block
-setblock 50 66 247 oritech:machine_frame_block
-setblock 50 66 248 oritech:machine_frame_block
-setblock 50 66 249 oritech:machine_frame_block
-setblock 50 66 250 oritech:machine_frame_block
-fill 43 64 250 43 65 250 minecraft:stone_bricks
-setblock 43 66 250 oritech:destroyer_block[facing=south,machine_assembled=false]
-setblock 54 64 255 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "122.6"}','{"text": "oritech"}','{"text": "fragment_forge"}','{"text": ""}']}}
-setblock 55 64 255 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Bau die"}','{"text": "Fragment Forge"}','{"text": ""}','{"text": ""}']}}
-fill 63 64 241 63 79 256 minecraft:light_gray_concrete
-kw testworld use 58 63 246 up oritech:fragment_forge_block
-setblock 64 64 255 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "122.7"}','{"text": "oritech"}','{"text": "exo"}','{"text": ""}']}}
-setblock 65 64 255 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Zieh die"}','{"text": "Exo-Rüstung an"}','{"text": ""}','{"text": ""}']}}
-fill 73 64 241 73 79 256 minecraft:light_gray_concrete
-summon armor_stand 68.5 64 246.5 {ArmorItems:[{id:"oritech:exo_boots",count:1},{id:"oritech:exo_leggings",count:1},{id:"oritech:exo_chestplate",count:1},{id:"oritech:exo_helmet",count:1}],ShowArms:1b,NoBasePlate:1b,Tags:["kw_shot"],Rotation:[180f,0f]}
-setblock 74 64 255 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "122.8"}','{"text": "oritech"}','{"text": "reactor"}','{"text": ""}']}}
-setblock 75 64 255 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Bau einen"}','{"text": "Kernreaktor"}','{"text": ""}','{"text": ""}']}}
-fill 83 64 241 83 79 256 minecraft:light_gray_concrete
-fill 77 64 245 79 67 247 oritech:reactor_wall
-setblock 78 65 246 oritech:reactor_rod[lit=false]
-setblock 78 66 246 minecraft:air
-setblock 78 67 246 oritech:reactor_fuel_port
-setblock 78 65 247 oritech:reactor_controller[facing=south]
-setblock 80 65 246 oritech:reactor_energy_port[facing=west]
+# 122 immersive_heavy/crusher, press, squeezer, fermenter, mixer, bottling, arc, refinery, diesel, sawmill, assembler, auto_workbench, excavator, lightning_rod, radio_tower
+#area 228 211 387 252
+fill 228 64 211 245 106 252 minecraft:air
+fill 246 64 211 263 106 252 minecraft:air
+fill 264 64 211 281 106 252 minecraft:air
+fill 282 64 211 299 106 252 minecraft:air
+fill 300 64 211 317 106 252 minecraft:air
+fill 318 64 211 335 106 252 minecraft:air
+fill 336 64 211 353 106 252 minecraft:air
+fill 354 64 211 371 106 252 minecraft:air
+fill 372 64 211 387 106 252 minecraft:air
+fill 228 60 211 387 62 252 minecraft:stone
+fill 228 63 211 387 63 252 minecraft:light_gray_concrete
+fill 232 64 217 387 94 217 minecraft:light_gray_concrete
+fill 232 64 217 232 94 246 minecraft:light_gray_concrete
+setblock 233 64 245 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "122.1"}','{"text": "immersive_heavy"}','{"text": "crusher"}','{"text": ""}']}}
+setblock 234 64 245 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "each formed"}','{"text": ""}','{"text": ""}','{"text": ""}']}}
+fill 242 64 217 242 94 246 minecraft:light_gray_concrete
+place template immersiveengineering:multiblocks/crusher 235 64 220 none
+kw testworld use 237 65 222 south immersiveengineering:hammer
+execute unless block 237 65 222 immersiveengineering:steel_fence
+setblock 243 64 245 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "122.2"}','{"text": "immersive_heavy"}','{"text": "press"}','{"text": ""}']}}
+setblock 244 64 245 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Form eine"}','{"text": "Metallpresse"}','{"text": ""}','{"text": ""}']}}
+fill 252 64 217 252 94 246 minecraft:light_gray_concrete
+place template immersiveengineering:multiblocks/metal_press 246 64 220 none
+kw testworld use 247 65 220 south immersiveengineering:hammer
+execute unless block 247 65 220 minecraft:piston
+setblock 253 64 245 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "122.3"}','{"text": "immersive_heavy"}','{"text": "squeezer"}','{"text": ""}']}}
+setblock 254 64 245 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Form eine"}','{"text": "Industriepresse"}','{"text": ""}','{"text": ""}']}}
+fill 262 64 217 262 94 246 minecraft:light_gray_concrete
+place template immersiveengineering:multiblocks/squeezer 256 64 220 none
+kw testworld use 257 65 221 south immersiveengineering:hammer
+execute unless block 257 65 221 immersiveengineering:wooden_barrel
+setblock 263 64 245 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "122.4"}','{"text": "immersive_heavy"}','{"text": "fermenter"}','{"text": ""}']}}
+setblock 264 64 245 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Form einen"}','{"text": "Industriefermenter"}','{"text": ""}','{"text": ""}']}}
+fill 272 64 217 272 94 246 minecraft:light_gray_concrete
+place template immersiveengineering:multiblocks/fermenter 266 64 220 none
+kw testworld use 267 65 221 south immersiveengineering:hammer
+execute unless block 267 65 221 minecraft:cauldron
+setblock 273 64 245 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "122.5"}','{"text": "immersive_heavy"}','{"text": "mixer"}','{"text": ""}']}}
+setblock 274 64 245 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Form einen"}','{"text": "Mischer"}','{"text": ""}','{"text": ""}']}}
+fill 282 64 217 282 94 246 minecraft:light_gray_concrete
+place template immersiveengineering:multiblocks/mixer 276 64 220 none
+kw testworld use 277 65 221 south immersiveengineering:hammer
+execute unless block 277 65 221 immersiveengineering:sheetmetal_iron
+setblock 283 64 245 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "122.6"}','{"text": "immersive_heavy"}','{"text": "bottling"}','{"text": ""}']}}
+setblock 284 64 245 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Form eine"}','{"text": "Abfüllanlage"}','{"text": ""}','{"text": ""}']}}
+fill 292 64 217 292 94 246 minecraft:light_gray_concrete
+place template immersiveengineering:multiblocks/bottling_machine 286 64 220 none
+kw testworld use 287 65 221 south immersiveengineering:hammer
+execute unless block 287 65 221 immersiveengineering:conveyor_basic
+setblock 293 64 245 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "122.7"}','{"text": "immersive_heavy"}','{"text": "arc"}','{"text": ""}']}}
+setblock 294 64 245 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Form einen"}','{"text": "Lichtbogenofen"}','{"text": ""}','{"text": ""}']}}
+fill 302 64 217 302 94 246 minecraft:light_gray_concrete
+place template immersiveengineering:multiblocks/arcfurnace 295 64 220 none
+kw testworld use 297 64 224 south immersiveengineering:hammer
+execute unless block 297 64 224 minecraft:cauldron
+setblock 303 64 245 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "122.8"}','{"text": "immersive_heavy"}','{"text": "refinery"}','{"text": ""}']}}
+setblock 304 64 245 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Form eine"}','{"text": "Raffinerie"}','{"text": ""}','{"text": ""}']}}
+fill 312 64 217 312 94 246 minecraft:light_gray_concrete
+place template immersiveengineering:multiblocks/refinery 305 64 220 none
+kw testworld use 307 65 222 south immersiveengineering:hammer
+execute unless block 307 65 222 immersiveengineering:heavy_engineering
+setblock 313 64 245 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "122.9"}','{"text": "immersive_heavy"}','{"text": "diesel"}','{"text": ""}']}}
+setblock 314 64 245 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Form einen"}','{"text": "Dieselgenerator"}','{"text": ""}','{"text": ""}']}}
+fill 322 64 217 322 94 246 minecraft:light_gray_concrete
+place template immersiveengineering:multiblocks/diesel_generator 316 64 220 none
+kw testworld use 317 65 224 south immersiveengineering:hammer
+execute unless block 317 65 224 immersiveengineering:generator
+setblock 323 64 245 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "122.10"}','{"text": "immersive_heavy"}','{"text": "sawmill"}','{"text": ""}']}}
+setblock 324 64 245 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Form ein"}','{"text": "Sägewerk"}','{"text": ""}','{"text": ""}']}}
+fill 332 64 217 332 94 246 minecraft:light_gray_concrete
+place template immersiveengineering:multiblocks/sawmill 325 64 220 none
+kw testworld use 327 64 222 south immersiveengineering:hammer
+execute unless block 327 64 222 immersiveengineering:sheetmetal_iron
+setblock 333 64 245 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "122.11"}','{"text": "immersive_heavy"}','{"text": "assembler"}','{"text": ""}']}}
+setblock 334 64 245 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Form einen"}','{"text": "Monteur"}','{"text": ""}','{"text": ""}']}}
+fill 342 64 217 342 94 246 minecraft:light_gray_concrete
+place template immersiveengineering:multiblocks/assembler 336 64 220 none
+kw testworld use 337 65 222 south immersiveengineering:hammer
+execute unless block 337 65 222 immersiveengineering:conveyor_basic
+setblock 343 64 245 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "122.12"}','{"text": "immersive_heavy"}','{"text": "auto_workbench"}','{"text": ""}']}}
+setblock 344 64 245 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Form einen"}','{"text": "Automatisierten"}','{"text": "Arbeitstisch"}','{"text": ""}']}}
+fill 352 64 217 352 94 246 minecraft:light_gray_concrete
+place template immersiveengineering:multiblocks/auto_workbench 346 64 220 none
+kw testworld use 347 65 222 south immersiveengineering:hammer
+execute unless block 347 65 222 immersiveengineering:slab_treated_wood_horizontal
+setblock 353 64 245 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "122.13"}','{"text": "immersive_heavy"}','{"text": "excavator"}','{"text": ""}']}}
+setblock 354 64 245 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Form einen"}','{"text": "Bagger"}','{"text": ""}','{"text": ""}']}}
+fill 362 64 217 362 94 246 minecraft:light_gray_concrete
+place template immersiveengineering:multiblocks/excavator 356 64 220 none
+kw testworld use 357 65 225 south immersiveengineering:hammer
+execute unless block 357 65 225 immersiveengineering:heavy_engineering
+setblock 363 64 245 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "122.14"}','{"text": "immersive_heavy"}','{"text": "lightning_rod"}','{"text": ""}']}}
+setblock 364 64 245 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Form einen"}','{"text": "Blitzableiter"}','{"text": ""}','{"text": ""}']}}
+fill 372 64 217 372 94 246 minecraft:light_gray_concrete
+place template immersiveengineering:multiblocks/lightning_rod 366 64 220 none
+kw testworld use 367 65 222 south immersiveengineering:hammer
+execute unless block 367 65 222 immersiveengineering:light_engineering
+setblock 373 64 245 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "122.15"}','{"text": "immersive_heavy"}','{"text": "radio_tower"}','{"text": ""}']}}
+setblock 374 64 245 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Form einen"}','{"text": "Funkturm"}','{"text": ""}','{"text": ""}']}}
+fill 382 64 217 382 94 246 minecraft:light_gray_concrete
+place template immersiveengineering:multiblocks/radio_tower 375 64 220 none
+kw testworld use 377 65 225 south immersiveengineering:hammer
+execute unless block 377 65 225 immersiveengineering:rs_engineering
 execute as @e[type=minecraft:item,tag=!kw_shot] run kill @s

@@ -1,72 +1,123 @@
-# 153 malum/altar, obelisk, crucible, healing_rite, quickening
-#area 196 340 257 369
-fill 196 64 340 229 95 369 minecraft:air
-fill 230 64 340 257 95 369 minecraft:air
-fill 196 60 340 257 62 369 minecraft:stone
-fill 196 63 340 257 63 369 minecraft:light_gray_concrete
-fill 200 64 346 257 83 346 minecraft:light_gray_concrete
-fill 200 64 346 200 83 363 minecraft:light_gray_concrete
-setblock 201 64 362 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "153.1"}','{"text": "malum"}','{"text": "altar"}','{"text": ""}']}}
-setblock 202 64 362 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Bau einen"}','{"text": "Spirit Altar"}','{"text": ""}','{"text": ""}']}}
-fill 210 64 346 210 83 363 minecraft:light_gray_concrete
-setblock 205 64 351 malum:spirit_altar
-kw testworld use 205 64 351 south malum:runewood_planks
-setblock 203 64 351 malum:runewood_planks
-setblock 203 65 351 malum:runewood_item_stand[facing=up,waterlogged=false]
-kw testworld use 203 65 351 south malum:hallowed_gold_ingot
-setblock 207 64 351 malum:runewood_planks
-setblock 207 65 351 malum:runewood_item_stand[facing=up,waterlogged=false]
-kw testworld use 207 65 351 south malum:hallowed_gold_ingot
-setblock 211 64 362 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "153.2"}','{"text": "malum"}','{"text": "obelisk"}','{"text": ""}']}}
-setblock 212 64 362 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Stell"}','{"text": "Runewood-Obelisken"}','{"text": "auf"}','{"text": ""}']}}
-fill 222 64 346 222 83 363 minecraft:light_gray_concrete
-setblock 216 64 351 malum:spirit_altar
-kw testworld use 216 64 351 south malum:runewood_planks
-setblock 214 64 351 malum:runewood_planks
-setblock 214 65 351 malum:runewood_item_stand[facing=up,waterlogged=false]
-kw testworld use 214 65 351 south malum:hallowed_gold_ingot
-setblock 218 64 351 malum:runewood_planks
-setblock 218 65 351 malum:runewood_item_stand[facing=up,waterlogged=false]
-kw testworld use 218 65 351 south malum:hallowed_gold_ingot
-kw testworld use 213 63 349 up malum:runewood_obelisk
-execute unless block 213 64 349 minecraft:air
-kw testworld use 219 63 349 up malum:runewood_obelisk
-execute unless block 219 64 349 minecraft:air
-kw testworld use 213 63 353 up malum:runewood_obelisk
-execute unless block 213 64 353 minecraft:air
-kw testworld use 219 63 353 up malum:runewood_obelisk
-execute unless block 219 64 353 minecraft:air
-setblock 223 64 362 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "153.3"}','{"text": "malum"}','{"text": "crucible"}','{"text": ""}']}}
-setblock 224 64 362 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Bau den Spirit"}','{"text": "Crucible"}','{"text": ""}','{"text": ""}']}}
-fill 232 64 346 232 83 363 minecraft:light_gray_concrete
-kw testworld use 227 63 351 up malum:spirit_crucible
-setblock 233 64 362 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "153.4"}','{"text": "malum"}','{"text": "healing_rite"}','{"text": ""}']}}
-setblock 234 64 362 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Zünde den Rite"}','{"text": "of Healing"}','{"text": ""}','{"text": ""}']}}
-fill 242 64 346 242 83 363 minecraft:light_gray_concrete
-setblock 237 64 351 malum:runewood_totem_base
-setblock 237 65 351 malum:runewood_log[axis=y]
-kw testworld use 237 65 351 south malum:arcane_spirit
-execute unless block 237 65 351 malum:runewood_log
-setblock 237 66 351 malum:runewood_log[axis=y]
-kw testworld use 237 66 351 south malum:sacred_spirit
-execute unless block 237 66 351 malum:runewood_log
-setblock 237 67 351 malum:runewood_log[axis=y]
-kw testworld use 237 67 351 south malum:sacred_spirit
-execute unless block 237 67 351 malum:runewood_log
-setblock 243 64 362 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "153.5"}','{"text": "malum"}','{"text": "quickening"}','{"text": ""}']}}
-setblock 244 64 362 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Zünde den Rite"}','{"text": "of Quickening"}','{"text": ""}','{"text": ""}']}}
-fill 252 64 346 252 83 363 minecraft:light_gray_concrete
-setblock 247 64 350 malum:soulwood_totem_base
-setblock 247 65 350 malum:soulwood_log[axis=y]
-kw testworld use 247 65 350 south malum:eldritch_spirit
-execute unless block 247 65 350 malum:soulwood_log
-setblock 247 66 350 malum:soulwood_log[axis=y]
-kw testworld use 247 66 350 south malum:arcane_spirit
-execute unless block 247 66 350 malum:soulwood_log
-setblock 247 67 350 malum:soulwood_log[axis=y]
-kw testworld use 247 67 350 south malum:infernal_spirit
-execute unless block 247 67 350 malum:soulwood_log
-setblock 247 68 350 malum:soulwood_log[axis=y]
-kw testworld use 247 68 350 south malum:infernal_spirit
-execute unless block 247 68 350 malum:soulwood_log
+# 153 nuclearcraft/reactor, irradiation
+#area 35 349 66 376
+fill 35 64 349 66 91 376 minecraft:air
+fill 35 60 349 66 62 376 minecraft:stone
+fill 35 63 349 66 63 376 minecraft:light_gray_concrete
+fill 39 64 355 66 79 355 minecraft:light_gray_concrete
+fill 39 64 355 39 79 370 minecraft:light_gray_concrete
+setblock 40 64 369 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "153.1"}','{"text": "nuclearcraft"}','{"text": "reactor"}','{"text": ""}']}}
+setblock 41 64 369 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Starte den"}','{"text": "ersten"}','{"text": "Spaltreaktor"}','{"text": ""}']}}
+fill 51 64 355 51 79 370 minecraft:light_gray_concrete
+setblock 43 64 359 nuclearcraft:fission_reactor_casing
+setblock 43 64 360 nuclearcraft:fission_reactor_casing
+setblock 43 64 361 nuclearcraft:fission_reactor_casing
+setblock 43 64 362 nuclearcraft:fission_reactor_casing
+setblock 43 64 363 nuclearcraft:fission_reactor_casing
+setblock 43 65 359 nuclearcraft:fission_reactor_casing
+setblock 43 65 360 nuclearcraft:fission_reactor_casing
+setblock 43 65 361 nuclearcraft:fission_reactor_casing
+setblock 43 65 362 nuclearcraft:fission_reactor_casing
+setblock 43 65 363 nuclearcraft:fission_reactor_casing
+setblock 43 66 359 nuclearcraft:fission_reactor_casing
+setblock 43 66 360 nuclearcraft:fission_reactor_casing
+setblock 43 66 361 nuclearcraft:fission_reactor_casing
+setblock 43 66 362 nuclearcraft:fission_reactor_casing
+setblock 43 66 363 nuclearcraft:fission_reactor_casing
+setblock 43 67 359 nuclearcraft:fission_reactor_casing
+setblock 43 67 360 nuclearcraft:fission_reactor_casing
+setblock 43 67 361 nuclearcraft:fission_reactor_casing
+setblock 43 67 362 nuclearcraft:fission_reactor_casing
+setblock 43 67 363 nuclearcraft:fission_reactor_casing
+setblock 43 68 359 nuclearcraft:fission_reactor_casing
+setblock 43 68 360 nuclearcraft:fission_reactor_casing
+setblock 43 68 361 nuclearcraft:fission_reactor_casing
+setblock 43 68 362 nuclearcraft:fission_reactor_casing
+setblock 43 68 363 nuclearcraft:fission_reactor_casing
+setblock 44 64 359 nuclearcraft:fission_reactor_casing
+setblock 44 64 360 nuclearcraft:fission_reactor_casing
+setblock 44 64 361 nuclearcraft:fission_reactor_casing
+setblock 44 64 362 nuclearcraft:fission_reactor_casing
+setblock 44 64 363 nuclearcraft:fission_reactor_casing
+setblock 44 65 359 nuclearcraft:fission_reactor_casing
+setblock 44 65 363 nuclearcraft:fission_reactor_glass
+setblock 44 66 359 nuclearcraft:fission_reactor_casing
+setblock 44 66 363 nuclearcraft:fission_reactor_glass
+setblock 44 67 359 nuclearcraft:fission_reactor_casing
+setblock 44 67 363 nuclearcraft:fission_reactor_glass
+setblock 44 68 359 nuclearcraft:fission_reactor_casing
+setblock 44 68 360 nuclearcraft:fission_reactor_casing
+setblock 44 68 361 nuclearcraft:fission_reactor_casing
+setblock 44 68 362 nuclearcraft:fission_reactor_casing
+setblock 44 68 363 nuclearcraft:fission_reactor_casing
+setblock 45 64 359 nuclearcraft:fission_reactor_casing
+setblock 45 64 360 nuclearcraft:fission_reactor_casing
+setblock 45 64 361 nuclearcraft:fission_reactor_casing
+setblock 45 64 362 nuclearcraft:fission_reactor_casing
+setblock 45 64 363 nuclearcraft:fission_reactor_casing
+setblock 45 65 359 nuclearcraft:fission_reactor_casing
+setblock 45 65 363 nuclearcraft:fission_reactor_glass
+setblock 45 66 359 nuclearcraft:fission_reactor_casing
+setblock 45 66 363 nuclearcraft:fission_reactor_glass
+setblock 45 67 359 nuclearcraft:fission_reactor_casing
+setblock 45 67 363 nuclearcraft:fission_reactor_glass
+setblock 45 68 359 nuclearcraft:fission_reactor_casing
+setblock 45 68 360 nuclearcraft:fission_reactor_casing
+setblock 45 68 361 nuclearcraft:fission_reactor_casing
+setblock 45 68 362 nuclearcraft:fission_reactor_casing
+setblock 45 68 363 nuclearcraft:fission_reactor_casing
+setblock 46 64 359 nuclearcraft:fission_reactor_casing
+setblock 46 64 360 nuclearcraft:fission_reactor_casing
+setblock 46 64 361 nuclearcraft:fission_reactor_casing
+setblock 46 64 362 nuclearcraft:fission_reactor_casing
+setblock 46 64 363 nuclearcraft:fission_reactor_casing
+setblock 46 65 359 nuclearcraft:fission_reactor_casing
+setblock 46 65 363 nuclearcraft:fission_reactor_glass
+setblock 46 66 359 nuclearcraft:fission_reactor_casing
+setblock 46 66 363 nuclearcraft:fission_reactor_glass
+setblock 46 67 359 nuclearcraft:fission_reactor_casing
+setblock 46 67 363 nuclearcraft:fission_reactor_glass
+setblock 46 68 359 nuclearcraft:fission_reactor_casing
+setblock 46 68 360 nuclearcraft:fission_reactor_casing
+setblock 46 68 361 nuclearcraft:fission_reactor_casing
+setblock 46 68 362 nuclearcraft:fission_reactor_casing
+setblock 46 68 363 nuclearcraft:fission_reactor_casing
+setblock 47 64 359 nuclearcraft:fission_reactor_casing
+setblock 47 64 360 nuclearcraft:fission_reactor_casing
+setblock 47 64 361 nuclearcraft:fission_reactor_casing
+setblock 47 64 362 nuclearcraft:fission_reactor_casing
+setblock 47 64 363 nuclearcraft:fission_reactor_casing
+setblock 47 65 359 nuclearcraft:fission_reactor_casing
+setblock 47 65 360 nuclearcraft:fission_reactor_casing
+setblock 47 65 361 nuclearcraft:fission_reactor_casing
+setblock 47 65 362 nuclearcraft:fission_reactor_casing
+setblock 47 65 363 nuclearcraft:fission_reactor_casing
+setblock 47 66 359 nuclearcraft:fission_reactor_casing
+setblock 47 66 360 nuclearcraft:fission_reactor_casing
+setblock 47 66 361 nuclearcraft:fission_reactor_casing
+setblock 47 66 362 nuclearcraft:fission_reactor_casing
+setblock 47 66 363 nuclearcraft:fission_reactor_casing
+setblock 47 67 359 nuclearcraft:fission_reactor_casing
+setblock 47 67 360 nuclearcraft:fission_reactor_casing
+setblock 47 67 361 nuclearcraft:fission_reactor_casing
+setblock 47 67 362 nuclearcraft:fission_reactor_casing
+setblock 47 67 363 nuclearcraft:fission_reactor_casing
+setblock 47 68 359 nuclearcraft:fission_reactor_casing
+setblock 47 68 360 nuclearcraft:fission_reactor_casing
+setblock 47 68 361 nuclearcraft:fission_reactor_casing
+setblock 47 68 362 nuclearcraft:fission_reactor_casing
+setblock 47 68 363 nuclearcraft:fission_reactor_casing
+setblock 44 65 363 nuclearcraft:fission_reactor_controller[facing=south]
+setblock 46 65 363 nuclearcraft:fission_reactor_port
+setblock 45 66 361 nuclearcraft:fission_reactor_solid_fuel_cell
+setblock 44 66 361 nuclearcraft:graphite_block
+setblock 46 66 361 nuclearcraft:graphite_block
+setblock 45 67 361 nuclearcraft:water_heat_sink
+setblock 45 65 361 nuclearcraft:water_heat_sink
+setblock 45 66 362 nuclearcraft:water_heat_sink
+setblock 45 66 360 nuclearcraft:water_heat_sink
+setblock 52 64 369 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "153.2"}','{"text": "nuclearcraft"}','{"text": "irradiation"}','{"text": ""}']}}
+setblock 53 64 369 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Bestrahl Stoffe"}','{"text": "im Reaktor"}','{"text": ""}','{"text": ""}']}}
+fill 61 64 355 61 79 370 minecraft:light_gray_concrete
+setblock 55 64 360 nuclearcraft:fission_reactor_irradiation_chamber
+setblock 57 64 360 nuclearcraft:irradiator[facing=south,powered=false]
 execute as @e[type=minecraft:item,tag=!kw_shot] run kill @s

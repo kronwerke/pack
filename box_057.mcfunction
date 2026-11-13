@@ -1,18 +1,12 @@
-# 057 ars_nouveau/drygmy
-#area 88 88 107 113
-fill 88 64 88 107 91 113 minecraft:air
-fill 88 60 88 107 62 113 minecraft:stone
-fill 88 63 88 107 63 113 minecraft:light_gray_concrete
-fill 92 64 94 107 79 94 minecraft:light_gray_concrete
-fill 92 64 94 92 79 107 minecraft:light_gray_concrete
-setblock 93 64 106 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "057"}','{"text": "ars_nouveau"}','{"text": "drygmy"}','{"text": ""}']}}
-setblock 94 64 106 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Drygmy henge"}','{"text": "with chest and"}','{"text": "jar"}','{"text": ""}']}}
-fill 102 64 94 102 79 107 minecraft:light_gray_concrete
-setblock 97 64 99 minecraft:mossy_cobblestone
-kw testworld use 97 64 99 up ars_nouveau:drygmy_charm
-execute unless block 97 64 99 minecraft:mossy_cobblestone
-setblock 98 64 99 minecraft:chest[facing=south]{Items:[]}
-setblock 96 64 99 ars_nouveau:source_jar[fill=11]{source:10000}
-summon minecraft:cow 99.5 64 101.5 {NoAI:1b,PersistenceRequired:1b,Silent:1b,Tags:["kw_shot"],Rotation:[180f,0f]}
-summon minecraft:sheep 95.5 64 101.5 {NoAI:1b,PersistenceRequired:1b,Silent:1b,Tags:["kw_shot"],Rotation:[180f,0f]}
+# 057 antimatter/wind
+#area 276 95 295 124
+fill 276 64 95 295 95 124 minecraft:air
+fill 276 60 95 295 62 124 minecraft:stone
+fill 276 63 95 295 63 124 minecraft:light_gray_concrete
+fill 280 64 101 295 83 101 minecraft:light_gray_concrete
+fill 280 64 101 280 83 118 minecraft:light_gray_concrete
+setblock 281 64 117 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "057"}','{"text": "antimatter"}','{"text": "wind"}','{"text": ""}']}}
+setblock 282 64 117 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "the large wind"}','{"text": "generator"}','{"text": ""}','{"text": ""}']}}
+fill 290 64 101 290 83 118 minecraft:light_gray_concrete
+kw testworld use 285 63 105 up mekanismgenerators:wind_generator
 execute as @e[type=minecraft:item,tag=!kw_shot] run kill @s

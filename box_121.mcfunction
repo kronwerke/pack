@@ -1,27 +1,32 @@
-# 121 industrial/washing, conveyor
-#area 88 216 119 241
-fill 88 64 216 119 91 241 minecraft:air
-fill 88 60 216 119 62 241 minecraft:stone
-fill 88 63 216 119 63 241 minecraft:light_gray_concrete
-fill 92 64 222 119 79 222 minecraft:light_gray_concrete
-fill 92 64 222 92 79 235 minecraft:light_gray_concrete
-setblock 93 64 234 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "121.1"}','{"text": "industrial"}','{"text": "washing"}','{"text": ""}']}}
-setblock 94 64 234 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "the ore meat"}','{"text": "machines in a"}','{"text": "row, conveyors"}','{"text": "with upgrades,"}']}}
-setblock 95 64 234 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "two"}','{"text": "transporters"}','{"text": ""}','{"text": ""}']}}
-fill 103 64 222 103 79 235 minecraft:light_gray_concrete
-setblock 96 64 227 industrialforegoing:washing_factory[subfacing=south]
-setblock 98 64 227 industrialforegoing:fermentation_station[subfacing=south]
-setblock 100 64 227 industrialforegoing:fluid_sieving_machine[subfacing=south]
-setblock 104 64 234 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "121.2"}','{"text": "industrial"}','{"text": "conveyor"}','{"text": ""}']}}
-setblock 105 64 234 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Leg"}','{"text": "Förderbänder"}','{"text": ""}','{"text": ""}']}}
-fill 114 64 222 114 79 235 minecraft:light_gray_concrete
-setblock 106 64 227 industrialforegoing:conveyor[facing=east,type=flat]
-setblock 107 64 227 industrialforegoing:conveyor[facing=east,type=flat]
-setblock 108 64 227 industrialforegoing:conveyor[facing=east,type=flat]
-setblock 109 64 227 industrialforegoing:conveyor[facing=east,type=flat]
-setblock 110 64 227 industrialforegoing:conveyor[facing=east,type=flat]
-setblock 111 64 227 industrialforegoing:conveyor[facing=east,type=flat]
-summon item 107.5 64.4 227.5 {Item:{id:"minecraft:raw_iron",count:1},PickupDelay:32767,Age:-32768,Tags:["kw_shot"]}
-summon item 109.5 64.4 227.5 {Item:{id:"minecraft:raw_iron",count:1},PickupDelay:32767,Age:-32768,Tags:["kw_shot"]}
-summon item 110.5 64.4 227.5 {Item:{id:"minecraft:raw_iron",count:1},PickupDelay:32767,Age:-32768,Tags:["kw_shot"]}
+# 121 immersive/list_mb
+#area 204 211 232 239
+fill 204 64 211 232 95 239 minecraft:air
+fill 204 60 211 232 62 239 minecraft:stone
+fill 204 63 211 232 63 239 minecraft:light_gray_concrete
+fill 208 64 217 232 83 217 minecraft:light_gray_concrete
+fill 208 64 217 208 83 233 minecraft:light_gray_concrete
+setblock 209 64 232 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "121"}','{"text": "immersive"}','{"text": "list_mb"}','{"text": ""}']}}
+setblock 210 64 232 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "all seven stage"}','{"text": "2 structures"}','{"text": "side by side"}','{"text": ""}']}}
+fill 227 64 217 227 83 233 minecraft:light_gray_concrete
+place template immersiveengineering:multiblocks/sheetmetal_tank 210 64 219 none
+kw testworld use 211 65 221 south immersiveengineering:hammer
+execute unless block 211 65 221 immersiveengineering:sheetmetal_iron
+place template immersiveengineering:multiblocks/silo 214 64 219 none
+kw testworld use 215 65 221 south immersiveengineering:hammer
+execute unless block 215 65 221 immersiveengineering:sheetmetal_iron
+place template immersiveengineering:multiblocks/improved_blast_furnace 218 64 219 none
+kw testworld use 219 65 221 south immersiveengineering:hammer
+execute unless block 219 65 221 immersiveengineering:blastbrick_reinforced
+place template immersiveengineering:multiblocks/shelf 222 64 219 none
+kw testworld use 223 65 220 south immersiveengineering:hammer
+execute unless block 223 65 220 immersiveengineering:steel_catwalk
+place template immersiveengineering:multiblocks/coke_oven 212 64 225 none
+kw testworld use 213 65 227 south immersiveengineering:hammer
+execute unless block 213 65 227 immersiveengineering:cokebrick
+place template immersiveengineering:multiblocks/blast_furnace 217 64 225 none
+kw testworld use 218 65 227 south immersiveengineering:hammer
+execute unless block 218 65 227 immersiveengineering:blastbrick
+place template immersiveengineering:multiblocks/alloy_smelter 222 64 225 none
+kw testworld use 223 65 226 south immersiveengineering:hammer
+execute unless block 223 65 226 immersiveengineering:alloybrick
 execute as @e[type=minecraft:item,tag=!kw_shot] run kill @s

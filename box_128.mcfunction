@@ -1,40 +1,27 @@
-# 128 logistics/menril, programmer, xnet_connectors, laser_node
-#area 154 256 204 281
-fill 154 64 256 198 91 281 minecraft:air
-fill 199 64 256 204 91 281 minecraft:air
-fill 154 60 256 204 62 281 minecraft:stone
-fill 154 63 256 204 63 281 minecraft:light_gray_concrete
-fill 158 64 262 204 79 262 minecraft:light_gray_concrete
-fill 158 64 262 158 79 275 minecraft:light_gray_concrete
-setblock 159 64 274 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "128.1"}','{"text": "logistics"}','{"text": "menril"}','{"text": ""}']}}
-setblock 160 64 274 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Press"}','{"text": "Menril-Harz"}','{"text": ""}','{"text": ""}']}}
-fill 168 64 262 168 79 275 minecraft:light_gray_concrete
-fill 161 64 266 161 66 266 integrateddynamics:menril_log[axis=y]
-setblock 163 64 267 integrateddynamics:squeezer[axis=x,height=1]
-setblock 164 64 267 integrateddynamics:drying_basin
-setblock 169 64 274 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "128.2"}','{"text": "logistics"}','{"text": "programmer"}','{"text": ""}']}}
-setblock 170 64 274 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Schreib Karten"}','{"text": "im Logic"}','{"text": "Programmer"}','{"text": ""}']}}
-fill 178 64 262 178 79 275 minecraft:light_gray_concrete
-setblock 172 64 267 integrateddynamics:logic_programmer[facing=south]
-setblock 174 64 267 integrateddynamics:variablestore[facing=south]
-setblock 179 64 274 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "128.3"}','{"text": "logistics"}','{"text": "xnet_connectors"}','{"text": ""}']}}
-setblock 180 64 274 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Setz Connectors"}','{"text": "und Kabel"}','{"text": ""}','{"text": ""}']}}
-fill 189 64 262 189 79 275 minecraft:light_gray_concrete
-setblock 181 64 267 minecraft:chest[facing=south,type=single,waterlogged=false]
-setblock 187 64 267 minecraft:furnace[facing=south,lit=false]
-setblock 184 64 268 xnet:controller[facing=south,error=false]
-kw testworld use 182 63 267 up xnet:connector_blue
-kw testworld use 186 63 267 up xnet:connector_blue
-kw testworld use 183 63 267 up xnet:netcable_blue
-kw testworld use 184 63 267 up xnet:netcable_blue
-kw testworld use 185 63 267 up xnet:netcable_blue
-setblock 190 64 274 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "128.4"}','{"text": "logistics"}','{"text": "laser_node"}','{"text": ""}']}}
-setblock 191 64 274 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Verbinde zwei"}','{"text": "Laser Nodes"}','{"text": ""}','{"text": ""}']}}
-fill 199 64 262 199 79 275 minecraft:light_gray_concrete
-setblock 192 64 267 minecraft:chest[facing=south,type=single,waterlogged=false]
-setblock 192 65 267 laserio:laser_node
-setblock 196 64 267 minecraft:chest[facing=south,type=single,waterlogged=false]
-setblock 196 65 267 laserio:laser_node
-kw testworld use 192 65 267 south laserio:laser_wrench
-kw testworld use 196 65 267 south laserio:laser_wrench
+# 128 industrial/washing, conveyor
+#area 88 246 119 271
+fill 88 64 246 119 91 271 minecraft:air
+fill 88 60 246 119 62 271 minecraft:stone
+fill 88 63 246 119 63 271 minecraft:light_gray_concrete
+fill 92 64 252 119 79 252 minecraft:light_gray_concrete
+fill 92 64 252 92 79 265 minecraft:light_gray_concrete
+setblock 93 64 264 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "128.1"}','{"text": "industrial"}','{"text": "washing"}','{"text": ""}']}}
+setblock 94 64 264 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "the ore meat"}','{"text": "machines in a"}','{"text": "row, conveyors"}','{"text": "with upgrades,"}']}}
+setblock 95 64 264 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "two"}','{"text": "transporters"}','{"text": ""}','{"text": ""}']}}
+fill 103 64 252 103 79 265 minecraft:light_gray_concrete
+setblock 96 64 257 industrialforegoing:washing_factory[subfacing=south]
+setblock 98 64 257 industrialforegoing:fermentation_station[subfacing=south]
+setblock 100 64 257 industrialforegoing:fluid_sieving_machine[subfacing=south]
+setblock 104 64 264 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "128.2"}','{"text": "industrial"}','{"text": "conveyor"}','{"text": ""}']}}
+setblock 105 64 264 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Leg"}','{"text": "Förderbänder"}','{"text": ""}','{"text": ""}']}}
+fill 114 64 252 114 79 265 minecraft:light_gray_concrete
+setblock 106 64 257 industrialforegoing:conveyor[facing=east,type=flat]
+setblock 107 64 257 industrialforegoing:conveyor[facing=east,type=flat]
+setblock 108 64 257 industrialforegoing:conveyor[facing=east,type=flat]
+setblock 109 64 257 industrialforegoing:conveyor[facing=east,type=flat]
+setblock 110 64 257 industrialforegoing:conveyor[facing=east,type=flat]
+setblock 111 64 257 industrialforegoing:conveyor[facing=east,type=flat]
+summon item 107.5 64.4 257.5 {Item:{id:"minecraft:raw_iron",count:1},PickupDelay:32767,Age:-32768,Tags:["kw_shot"]}
+summon item 109.5 64.4 257.5 {Item:{id:"minecraft:raw_iron",count:1},PickupDelay:32767,Age:-32768,Tags:["kw_shot"]}
+summon item 110.5 64.4 257.5 {Item:{id:"minecraft:raw_iron",count:1},PickupDelay:32767,Age:-32768,Tags:["kw_shot"]}
 execute as @e[type=minecraft:item,tag=!kw_shot] run kill @s

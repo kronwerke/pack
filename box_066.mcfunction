@@ -1,13 +1,14 @@
-# 066 ars_master/alteration
-#area 227 88 246 113
-fill 227 64 88 246 91 113 minecraft:air
-fill 227 60 88 246 62 113 minecraft:stone
-fill 227 63 88 246 63 113 minecraft:light_gray_concrete
-fill 231 64 94 246 79 94 minecraft:light_gray_concrete
-fill 231 64 94 231 79 107 minecraft:light_gray_concrete
-setblock 232 64 106 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "066"}','{"text": "ars_master"}','{"text": "alteration"}','{"text": ""}']}}
-setblock 233 64 106 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "alteration"}','{"text": "table with a"}','{"text": "robe on the"}','{"text": "stand"}']}}
-fill 241 64 94 241 79 107 minecraft:light_gray_concrete
-kw testworld use 235 63 99 up ars_nouveau:alteration_table
-summon armor_stand 238.5 64 99.5 {ArmorItems:[{id:"ars_nouveau:arcanist_boots",count:1},{id:"ars_nouveau:arcanist_leggings",count:1},{id:"ars_nouveau:arcanist_robes",count:1},{id:"ars_nouveau:arcanist_hood",count:1}],ShowArms:1b,NoBasePlate:1b,Tags:["kw_shot"],Rotation:[180f,0f]}
+# 066 ars_apprentice/brazier
+#area 120 118 139 143
+fill 120 64 118 139 91 143 minecraft:air
+fill 120 60 118 139 62 143 minecraft:stone
+fill 120 63 118 139 63 143 minecraft:light_gray_concrete
+fill 124 64 124 139 79 124 minecraft:light_gray_concrete
+fill 124 64 124 124 79 137 minecraft:light_gray_concrete
+setblock 125 64 136 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "066"}','{"text": "ars_apprentice"}','{"text": "brazier"}','{"text": ""}']}}
+setblock 126 64 136 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "a tablet on the"}','{"text": "lit brazier"}','{"text": ""}','{"text": ""}']}}
+fill 134 64 124 134 79 137 minecraft:light_gray_concrete
+setblock 129 64 129 ars_nouveau:ritual_brazier
+kw testworld use 129 64 129 up ars_nouveau:ritual_flight
+setblock 131 64 129 ars_nouveau:source_jar[fill=11]{source:10000}
 execute as @e[type=minecraft:item,tag=!kw_shot] run kill @s

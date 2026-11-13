@@ -1,27 +1,25 @@
-# 141 deeper_darker/portal, resonarium
-#area 49 300 77 325
-fill 49 64 300 77 91 325 minecraft:air
-fill 49 60 300 77 62 325 minecraft:stone
-fill 49 63 300 77 63 325 minecraft:light_gray_concrete
-fill 53 64 306 77 79 306 minecraft:light_gray_concrete
-fill 53 64 306 53 79 319 minecraft:light_gray_concrete
-setblock 54 64 318 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "141.1"}','{"text": "deeper_darker"}','{"text": "portal"}','{"text": ""}']}}
-setblock 55 64 318 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Bau das Portal"}','{"text": "zur Anderwelt"}','{"text": ""}','{"text": ""}']}}
-fill 62 64 306 62 79 319 minecraft:light_gray_concrete
-setblock 56 65 311 minecraft:reinforced_deepslate
-setblock 56 66 311 minecraft:reinforced_deepslate
-setblock 56 67 311 minecraft:reinforced_deepslate
-setblock 57 64 311 minecraft:reinforced_deepslate
-setblock 57 68 311 minecraft:reinforced_deepslate
-setblock 58 64 311 minecraft:reinforced_deepslate
-setblock 58 68 311 minecraft:reinforced_deepslate
-setblock 59 65 311 minecraft:reinforced_deepslate
-setblock 59 66 311 minecraft:reinforced_deepslate
-setblock 59 67 311 minecraft:reinforced_deepslate
-fill 57 65 311 58 67 311 deeperdarker:otherside_portal[axis=x]
-execute if block 57 66 311 deeperdarker:otherside_portal
-setblock 63 64 318 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "141.2"}','{"text": "deeper_darker"}','{"text": "resonarium"}','{"text": ""}']}}
-setblock 64 64 318 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Schmiede"}','{"text": "Resonarium"}','{"text": ""}','{"text": ""}']}}
-fill 72 64 306 72 79 319 minecraft:light_gray_concrete
-summon armor_stand 67.5 64 311.5 {ArmorItems:[{id:"deeperdarker:resonarium_boots",count:1},{id:"deeperdarker:resonarium_leggings",count:1},{id:"deeperdarker:resonarium_chestplate",count:1},{id:"deeperdarker:resonarium_helmet",count:1}],ShowArms:1b,NoBasePlate:1b,Tags:["kw_shot"],Rotation:[180f,0f]}
+# 141 flux_networks/setup_mek, setup_reactor
+#area 89 307 119 332
+fill 89 64 307 119 91 332 minecraft:air
+fill 89 60 307 119 62 332 minecraft:stone
+fill 89 63 307 119 63 332 minecraft:light_gray_concrete
+fill 93 64 313 119 79 313 minecraft:light_gray_concrete
+fill 93 64 313 93 79 326 minecraft:light_gray_concrete
+setblock 94 64 325 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "141.1"}','{"text": "flux_networks"}','{"text": "setup_mek"}','{"text": ""}']}}
+setblock 95 64 325 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "a factory row"}','{"text": "with points, a"}','{"text": "Powah reactor"}','{"text": "with a plug, a"}']}}
+setblock 96 64 325 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "machine hall"}','{"text": "without cables"}','{"text": ""}','{"text": ""}']}}
+fill 104 64 313 104 79 326 minecraft:light_gray_concrete
+setblock 97 64 318 mekanism:enrichment_chamber[facing=south]
+setblock 98 64 318 mekanism:crusher[facing=south]
+setblock 99 64 318 mekanism:energized_smelter[facing=south]
+setblock 100 64 318 mekanism:metallurgic_infuser[facing=south]
+setblock 97 65 318 fluxnetworks:flux_point
+setblock 98 65 318 fluxnetworks:flux_point
+setblock 99 65 318 fluxnetworks:flux_point
+setblock 100 65 318 fluxnetworks:flux_point
+setblock 105 64 325 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "141.2"}','{"text": "flux_networks"}','{"text": "setup_reactor"}','{"text": ""}']}}
+setblock 106 64 325 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Reaktorstrom in"}','{"text": "die Ferne"}','{"text": ""}','{"text": ""}']}}
+fill 114 64 313 114 79 326 minecraft:light_gray_concrete
+setblock 109 64 318 powah:reactor_starter[core=true]
+setblock 109 68 318 fluxnetworks:flux_plug
 execute as @e[type=minecraft:item,tag=!kw_shot] run kill @s

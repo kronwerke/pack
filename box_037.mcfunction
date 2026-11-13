@@ -1,21 +1,12 @@
-# 037 mekanism_ores/line2
-#area 59 65 79 90
-fill 59 64 65 79 91 90 minecraft:air
-fill 59 60 65 79 62 90 minecraft:stone
-fill 59 63 65 79 63 90 minecraft:light_gray_concrete
-fill 63 64 71 79 79 71 minecraft:light_gray_concrete
-fill 63 64 71 63 79 84 minecraft:light_gray_concrete
-setblock 64 64 83 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "037"}','{"text": "mekanism_ores"}','{"text": "line2"}','{"text": ""}']}}
-setblock 65 64 83 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "chest,"}','{"text": "transporters,"}','{"text": "enrichment"}','{"text": "chamber,"}']}}
-setblock 66 64 83 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "smelter, chest,"}','{"text": "cables"}','{"text": ""}','{"text": ""}']}}
-fill 74 64 71 74 79 84 minecraft:light_gray_concrete
-setblock 65 64 76 minecraft:chest[facing=south]{Items:[]}
-setblock 67 64 76 mekanism:enrichment_chamber[facing=south,active=false]
-setblock 69 64 76 mekanism:energized_smelter[facing=south,active=false]
-setblock 71 64 76 minecraft:chest[facing=south]{Items:[]}
-setblock 66 64 76 mekanism:basic_logistical_transporter
-setblock 68 64 76 mekanism:basic_logistical_transporter
-setblock 70 64 76 mekanism:basic_logistical_transporter
-fill 67 64 75 70 64 75 mekanism:basic_universal_cable
-setblock 71 64 75 mekanism:basic_energy_cube[facing=south]
+# 037 create_trains/junction
+#area -4 68 28 101
+fill -4 64 68 28 91 101 minecraft:air
+fill -4 60 68 28 62 101 minecraft:stone
+fill -4 63 68 28 63 101 minecraft:light_gray_concrete
+fill 0 64 74 28 79 74 minecraft:light_gray_concrete
+fill 0 64 74 0 79 95 minecraft:light_gray_concrete
+setblock 1 64 94 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "037"}','{"text": "create_trains"}','{"text": "junction"}','{"text": ""}']}}
+setblock 2 64 94 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "chain and entry"}','{"text": "signals at a"}','{"text": "junction,"}','{"text": "goggles overlay"}']}}
+fill 23 64 74 23 79 95 minecraft:light_gray_concrete
+kw testworld place shots:create/train_signal/signaling 2 63 76 none
 execute as @e[type=minecraft:item,tag=!kw_shot] run kill @s

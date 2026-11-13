@@ -1,16 +1,21 @@
-# 048 antimatter/waste
-#area 240 65 261 90
-fill 240 64 65 261 91 90 minecraft:air
-fill 240 60 65 261 62 90 minecraft:stone
-fill 240 63 65 261 63 90 minecraft:light_gray_concrete
-fill 244 64 71 261 79 71 minecraft:light_gray_concrete
-fill 244 64 71 244 79 84 minecraft:light_gray_concrete
-setblock 245 64 83 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "048"}','{"text": "antimatter"}','{"text": "waste"}','{"text": ""}']}}
-setblock 246 64 83 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "row of solar"}','{"text": "neutron"}','{"text": "activators"}','{"text": "under open sky"}']}}
-fill 256 64 71 256 79 84 minecraft:light_gray_concrete
-setblock 247 64 76 mekanism:solar_neutron_activator[facing=south,active=false]
-setblock 249 64 76 mekanism:solar_neutron_activator[facing=south,active=false]
-setblock 251 64 76 mekanism:solar_neutron_activator[facing=south,active=false]
-setblock 253 64 76 mekanism:solar_neutron_activator[facing=south,active=false]
-fill 247 64 75 253 64 75 mekanism:basic_pressurized_tube
+# 048 mekanism_advanced/teleporter
+#area 125 95 144 120
+fill 125 64 95 144 91 120 minecraft:air
+fill 125 60 95 144 62 120 minecraft:stone
+fill 125 63 95 144 63 120 minecraft:light_gray_concrete
+fill 129 64 101 144 79 101 minecraft:light_gray_concrete
+fill 129 64 101 129 79 114 minecraft:light_gray_concrete
+setblock 130 64 113 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "048"}','{"text": "mekanism_advanced"}','{"text": "teleporter"}','{"text": ""}']}}
+setblock 131 64 113 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "built"}','{"text": "teleporter"}','{"text": "frame with"}','{"text": "portal"}']}}
+fill 139 64 101 139 79 114 minecraft:light_gray_concrete
+setblock 134 64 106 mekanism:teleporter
+setblock 133 64 106 mekanism:teleporter_frame
+setblock 135 64 106 mekanism:teleporter_frame
+setblock 133 65 106 mekanism:teleporter_frame
+setblock 135 65 106 mekanism:teleporter_frame
+setblock 133 66 106 mekanism:teleporter_frame
+setblock 135 66 106 mekanism:teleporter_frame
+setblock 133 67 106 mekanism:teleporter_frame
+setblock 135 67 106 mekanism:teleporter_frame
+setblock 134 67 106 mekanism:teleporter_frame
 execute as @e[type=minecraft:item,tag=!kw_shot] run kill @s

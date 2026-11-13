@@ -1,20 +1,16 @@
-# 055 ars_nouveau/earth_essence
-#area 58 88 77 113
-fill 58 64 88 77 91 113 minecraft:air
-fill 58 60 88 77 62 113 minecraft:stone
-fill 58 63 88 77 63 113 minecraft:light_gray_concrete
-fill 62 64 94 77 79 94 minecraft:light_gray_concrete
-fill 62 64 94 62 79 107 minecraft:light_gray_concrete
-setblock 63 64 106 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "055"}','{"text": "ars_nouveau"}','{"text": "earth_essence"}','{"text": ""}']}}
-setblock 64 64 106 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "chamber with"}','{"text": "three pedestals"}','{"text": "next to it"}','{"text": ""}']}}
-fill 72 64 94 72 79 107 minecraft:light_gray_concrete
-setblock 67 64 99 ars_nouveau:imbuement_chamber[facing=up]
-setblock 66 64 99 ars_nouveau:arcane_pedestal[facing=up]
-kw testworld use 66 64 99 south minecraft:iron_ingot
-setblock 68 64 99 ars_nouveau:arcane_pedestal[facing=up]
-kw testworld use 68 64 99 south minecraft:wheat_seeds
-setblock 67 64 98 ars_nouveau:arcane_pedestal[facing=up]
-kw testworld use 67 64 98 south minecraft:dirt
-kw testworld use 67 64 99 south ars_nouveau:source_gem
-setblock 69 64 98 ars_nouveau:source_jar[fill=11]{source:10000}
+# 055 antimatter/waste
+#area 240 95 261 120
+fill 240 64 95 261 91 120 minecraft:air
+fill 240 60 95 261 62 120 minecraft:stone
+fill 240 63 95 261 63 120 minecraft:light_gray_concrete
+fill 244 64 101 261 79 101 minecraft:light_gray_concrete
+fill 244 64 101 244 79 114 minecraft:light_gray_concrete
+setblock 245 64 113 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "055"}','{"text": "antimatter"}','{"text": "waste"}','{"text": ""}']}}
+setblock 246 64 113 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "row of solar"}','{"text": "neutron"}','{"text": "activators"}','{"text": "under open sky"}']}}
+fill 256 64 101 256 79 114 minecraft:light_gray_concrete
+setblock 247 64 106 mekanism:solar_neutron_activator[facing=south,active=false]
+setblock 249 64 106 mekanism:solar_neutron_activator[facing=south,active=false]
+setblock 251 64 106 mekanism:solar_neutron_activator[facing=south,active=false]
+setblock 253 64 106 mekanism:solar_neutron_activator[facing=south,active=false]
+fill 247 64 105 253 64 105 mekanism:basic_pressurized_tube
 execute as @e[type=minecraft:item,tag=!kw_shot] run kill @s

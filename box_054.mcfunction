@@ -1,21 +1,13 @@
-# 054 ars_nouveau/apparatus
-#area 43 88 62 113
-fill 43 64 88 62 91 113 minecraft:air
-fill 43 60 88 62 62 113 minecraft:stone
-fill 43 63 88 62 63 113 minecraft:light_gray_concrete
-fill 47 64 94 62 79 94 minecraft:light_gray_concrete
-fill 47 64 94 47 79 107 minecraft:light_gray_concrete
-setblock 48 64 106 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "054"}','{"text": "ars_nouveau"}','{"text": "apparatus"}','{"text": ""}']}}
-setblock 49 64 106 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "core, apparatus"}','{"text": "and pedestals"}','{"text": "in range"}','{"text": ""}']}}
-fill 57 64 94 57 79 107 minecraft:light_gray_concrete
-setblock 52 64 99 ars_nouveau:arcane_core[facing=up]
-setblock 52 65 99 ars_nouveau:enchanting_apparatus[facing=up]
-setblock 50 64 97 ars_nouveau:arcane_pedestal[facing=up]
-setblock 52 64 96 ars_nouveau:arcane_pedestal[facing=up]
-setblock 54 64 97 ars_nouveau:arcane_pedestal[facing=up]
-setblock 49 64 99 ars_nouveau:arcane_pedestal[facing=up]
-setblock 55 64 99 ars_nouveau:arcane_pedestal[facing=up]
-setblock 50 64 101 ars_nouveau:arcane_pedestal[facing=up]
-setblock 54 64 101 ars_nouveau:arcane_pedestal[facing=up]
-setblock 55 64 96 ars_nouveau:source_jar[fill=11]{source:10000}
+# 054 mekanism_elite/mekasuit
+#area 225 95 244 120
+fill 225 64 95 244 91 120 minecraft:air
+fill 225 60 95 244 62 120 minecraft:stone
+fill 225 63 95 244 63 120 minecraft:light_gray_concrete
+fill 229 64 101 244 79 101 minecraft:light_gray_concrete
+fill 229 64 101 229 79 114 minecraft:light_gray_concrete
+setblock 230 64 113 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "054"}','{"text": "mekanism_elite"}','{"text": "mekasuit"}','{"text": ""}']}}
+setblock 231 64 113 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "full MekaSuit"}','{"text": "at the"}','{"text": "modification"}','{"text": "station"}']}}
+fill 239 64 101 239 79 114 minecraft:light_gray_concrete
+summon armor_stand 233.5 64 106.5 {ArmorItems:[{id:"mekanism:mekasuit_boots",count:1},{id:"mekanism:mekasuit_pants",count:1},{id:"mekanism:mekasuit_bodyarmor",count:1},{id:"mekanism:mekasuit_helmet",count:1}],ShowArms:1b,NoBasePlate:1b,Tags:["kw_shot"],Rotation:[180f,0f]}
+setblock 235 64 106 mekanism:modification_station[facing=south]
 execute as @e[type=minecraft:item,tag=!kw_shot] run kill @s

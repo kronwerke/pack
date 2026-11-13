@@ -1,26 +1,27 @@
-# 148 finale/tech
-#area 107 319 128 346
-fill 107 64 319 128 91 346 minecraft:air
-fill 107 60 319 128 62 346 minecraft:stone
-fill 107 63 319 128 63 346 minecraft:light_gray_concrete
-fill 111 64 325 128 79 325 minecraft:light_gray_concrete
-fill 111 64 325 111 79 340 minecraft:light_gray_concrete
-setblock 112 64 339 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "148"}','{"text": "finale"}','{"text": "tech"}','{"text": ""}']}}
-setblock 113 64 339 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Fusioniere"}','{"text": "Erwachtes"}','{"text": "Draconium"}','{"text": ""}']}}
-fill 123 64 325 123 79 340 minecraft:light_gray_concrete
-setblock 117 64 331 draconicevolution:crafting_core
-setblock 114 64 330 draconicevolution:wyvern_crafting_injector[facing=east]
-kw testworld use 114 64 330 up draconicevolution:draconium_core
-setblock 114 64 332 draconicevolution:wyvern_crafting_injector[facing=east]
-kw testworld use 114 64 332 up draconicevolution:draconium_core
-setblock 120 64 330 draconicevolution:wyvern_crafting_injector[facing=west]
-kw testworld use 120 64 330 up draconicevolution:draconium_core
-setblock 120 64 332 draconicevolution:wyvern_crafting_injector[facing=west]
-kw testworld use 120 64 332 up draconicevolution:draconium_core
-setblock 116 64 328 draconicevolution:wyvern_crafting_injector[facing=south]
-kw testworld use 116 64 328 up botania:gaia_ingot
-setblock 118 64 328 draconicevolution:wyvern_crafting_injector[facing=south]
-kw testworld use 118 64 328 up botania:gaia_ingot
-setblock 117 64 334 draconicevolution:wyvern_crafting_injector[facing=north]
-kw testworld use 117 64 334 up draconicevolution:dragon_heart
+# 148 deeper_darker/portal, resonarium
+#area 49 330 77 355
+fill 49 64 330 77 91 355 minecraft:air
+fill 49 60 330 77 62 355 minecraft:stone
+fill 49 63 330 77 63 355 minecraft:light_gray_concrete
+fill 53 64 336 77 79 336 minecraft:light_gray_concrete
+fill 53 64 336 53 79 349 minecraft:light_gray_concrete
+setblock 54 64 348 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "148.1"}','{"text": "deeper_darker"}','{"text": "portal"}','{"text": ""}']}}
+setblock 55 64 348 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Bau das Portal"}','{"text": "zur Anderwelt"}','{"text": ""}','{"text": ""}']}}
+fill 62 64 336 62 79 349 minecraft:light_gray_concrete
+setblock 56 65 341 minecraft:reinforced_deepslate
+setblock 56 66 341 minecraft:reinforced_deepslate
+setblock 56 67 341 minecraft:reinforced_deepslate
+setblock 57 64 341 minecraft:reinforced_deepslate
+setblock 57 68 341 minecraft:reinforced_deepslate
+setblock 58 64 341 minecraft:reinforced_deepslate
+setblock 58 68 341 minecraft:reinforced_deepslate
+setblock 59 65 341 minecraft:reinforced_deepslate
+setblock 59 66 341 minecraft:reinforced_deepslate
+setblock 59 67 341 minecraft:reinforced_deepslate
+fill 57 65 341 58 67 341 deeperdarker:otherside_portal[axis=x]
+execute if block 57 66 341 deeperdarker:otherside_portal
+setblock 63 64 348 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "148.2"}','{"text": "deeper_darker"}','{"text": "resonarium"}','{"text": ""}']}}
+setblock 64 64 348 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Schmiede"}','{"text": "Resonarium"}','{"text": ""}','{"text": ""}']}}
+fill 72 64 336 72 79 349 minecraft:light_gray_concrete
+summon armor_stand 67.5 64 341.5 {ArmorItems:[{id:"deeperdarker:resonarium_boots",count:1},{id:"deeperdarker:resonarium_leggings",count:1},{id:"deeperdarker:resonarium_chestplate",count:1},{id:"deeperdarker:resonarium_helmet",count:1}],ShowArms:1b,NoBasePlate:1b,Tags:["kw_shot"],Rotation:[180f,0f]}
 execute as @e[type=minecraft:item,tag=!kw_shot] run kill @s

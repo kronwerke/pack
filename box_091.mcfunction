@@ -1,37 +1,27 @@
-# 091 occultism/hedyrin
-#area 45 146 68 175
-fill 45 64 146 68 91 175 minecraft:air
-fill 45 60 146 68 62 175 minecraft:stone
-fill 45 63 146 68 63 175 minecraft:light_gray_concrete
-fill 49 64 152 68 79 152 minecraft:light_gray_concrete
-fill 49 64 152 49 79 169 minecraft:light_gray_concrete
-setblock 50 64 168 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "091"}','{"text": "occultism"}','{"text": "hedyrin"}','{"text": ""}']}}
-setblock 51 64 168 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Hedyrin\'s Lure"}','{"text": "with the yellow"}','{"text": "glyphs"}','{"text": ""}']}}
-fill 63 64 152 63 79 169 minecraft:light_gray_concrete
-fill 51 63 154 61 63 164 minecraft:smooth_basalt
-setblock 53 64 159 occultism:chalk_glyph_white[facing=south,sign=0]
-setblock 54 64 158 occultism:chalk_glyph_white[facing=south,sign=5]
-setblock 54 64 159 minecraft:white_candle[candles=1,lit=true]
-setblock 54 64 160 occultism:chalk_glyph_white[facing=south,sign=10]
-setblock 55 64 157 occultism:chalk_glyph_white[facing=south,sign=2]
-setblock 55 64 159 occultism:chalk_glyph_gold[facing=south,sign=7]
-setblock 55 64 161 occultism:chalk_glyph_white[facing=south,sign=12]
-setblock 56 64 156 occultism:chalk_glyph_white[facing=south,sign=4]
-setblock 56 64 157 minecraft:white_candle[candles=1,lit=true]
-setblock 56 64 158 occultism:chalk_glyph_gold[facing=south,sign=9]
-setblock 56 64 159 occultism:golden_sacrificial_bowl
-setblock 56 64 160 occultism:chalk_glyph_gold[facing=south,sign=1]
-setblock 56 64 161 minecraft:white_candle[candles=1,lit=true]
-setblock 56 64 162 occultism:chalk_glyph_white[facing=south,sign=6]
-setblock 57 64 157 occultism:chalk_glyph_white[facing=south,sign=11]
-setblock 57 64 159 occultism:chalk_glyph_gold[facing=south,sign=3]
-setblock 57 64 161 occultism:chalk_glyph_white[facing=south,sign=8]
-setblock 58 64 158 occultism:chalk_glyph_white[facing=south,sign=0]
-setblock 58 64 159 minecraft:white_candle[candles=1,lit=true]
-setblock 58 64 160 occultism:chalk_glyph_white[facing=south,sign=5]
-setblock 59 64 159 occultism:chalk_glyph_white[facing=south,sign=10]
-setblock 56 64 154 occultism:sacrificial_bowl[facing=up]
-setblock 61 64 159 occultism:sacrificial_bowl[facing=up]
-setblock 56 64 164 occultism:sacrificial_bowl[facing=up]
-setblock 51 64 159 occultism:sacrificial_bowl[facing=up]
+# 091 alfheim/frame
+#area 253 139 274 164
+fill 253 64 139 274 91 164 minecraft:air
+fill 253 60 139 274 62 164 minecraft:stone
+fill 253 63 139 274 63 164 minecraft:light_gray_concrete
+fill 257 64 145 274 79 145 minecraft:light_gray_concrete
+fill 257 64 145 257 79 158 minecraft:light_gray_concrete
+setblock 258 64 157 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "091"}','{"text": "alfheim"}','{"text": "frame"}','{"text": ""}']}}
+setblock 259 64 157 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "the finished"}','{"text": "gateway with"}','{"text": "two pools and"}','{"text": "natura pylons"}']}}
+fill 269 64 145 269 79 158 minecraft:light_gray_concrete
+setblock 263 64 149 botania:elven_gateway_core
+setblock 262 64 149 botania:livingwood_log[axis=x]
+setblock 262 68 149 botania:livingwood_log[axis=x]
+setblock 264 64 149 botania:livingwood_log[axis=x]
+setblock 264 68 149 botania:livingwood_log[axis=x]
+setblock 263 68 149 botania:glimmering_livingwood_log[axis=x]
+setblock 261 65 149 botania:livingwood_log[axis=y]
+setblock 261 66 149 botania:glimmering_livingwood_log[axis=y]
+setblock 261 67 149 botania:livingwood_log[axis=y]
+setblock 265 65 149 botania:livingwood_log[axis=y]
+setblock 265 66 149 botania:glimmering_livingwood_log[axis=y]
+setblock 265 67 149 botania:livingwood_log[axis=y]
+setblock 259 64 151 botania:mana_pool{mana:1000000}
+setblock 259 65 151 botania:natura_pylon
+setblock 267 64 151 botania:mana_pool{mana:1000000}
+setblock 267 65 151 botania:natura_pylon
 execute as @e[type=minecraft:item,tag=!kw_shot] run kill @s

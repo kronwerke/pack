@@ -1,35 +1,30 @@
-# 147 quarries/first_dig, quarry, destroyer, coe_netherite
-#area 62 319 111 344
-fill 62 64 319 106 91 344 minecraft:air
-fill 107 64 319 111 91 344 minecraft:air
-fill 62 60 319 111 62 344 minecraft:stone
-fill 62 63 319 111 63 344 minecraft:light_gray_concrete
-fill 66 64 325 111 79 325 minecraft:light_gray_concrete
-fill 66 64 325 66 79 338 minecraft:light_gray_concrete
-setblock 67 64 337 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "147.1"}','{"text": "quarries"}','{"text": "first_dig"}','{"text": ""}']}}
-setblock 68 64 337 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Lass den"}','{"text": "Builder graben"}','{"text": ""}','{"text": ""}']}}
-fill 76 64 325 76 79 338 minecraft:light_gray_concrete
-setblock 71 64 330 rftoolsbuilder:builder[facing=south]
-setblock 71 65 330 minecraft:chest[facing=south,type=single,waterlogged=false]
-setblock 77 64 337 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "147.2"}','{"text": "quarries"}','{"text": "quarry"}','{"text": ""}']}}
-setblock 78 64 337 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Bau einen"}','{"text": "Quarry Plus"}','{"text": ""}','{"text": ""}']}}
-fill 86 64 325 86 79 338 minecraft:light_gray_concrete
-setblock 80 64 331 quarryplus:quarry[facing=south,working=false]
-setblock 81 64 331 quarryplus:marker[facing=up]
-setblock 83 64 331 quarryplus:marker[facing=up]
-setblock 81 64 329 quarryplus:marker[facing=up]
-setblock 87 64 337 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "147.3"}','{"text": "quarries"}','{"text": "destroyer"}','{"text": ""}']}}
-setblock 88 64 337 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Bau den Chunk"}','{"text": "Destroyer"}','{"text": ""}','{"text": ""}']}}
-fill 96 64 325 96 79 338 minecraft:light_gray_concrete
-setblock 90 64 330 quarryplus:adv_quarry[facing=south,working=false]
-setblock 92 64 330 quarryplus:chunk_marker
-setblock 97 64 337 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "147.4"}','{"text": "quarries"}','{"text": "coe_netherite"}','{"text": ""}']}}
-setblock 98 64 337 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Bau einen"}','{"text": "Netheritbohrer"}','{"text": ""}','{"text": ""}']}}
-fill 106 64 325 106 79 338 minecraft:light_gray_concrete
-setblock 99 64 330 minecraft:smooth_stone_slab
-summon item_display 99.5 64.95 330.5 {item:{id:"createoreexcavation:drill",count:1},item_display:"fixed",billboard:"vertical",transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[1.0f,1.0f,1.0f]},brightness:{sky:15,block:15},Tags:["kw_shot"]}
-setblock 101 64 330 minecraft:smooth_stone_slab
-summon item_display 101.5 64.95 330.5 {item:{id:"createoreexcavation:diamond_drill",count:1},item_display:"fixed",billboard:"vertical",transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[1.0f,1.0f,1.0f]},brightness:{sky:15,block:15},Tags:["kw_shot"]}
-setblock 103 64 330 minecraft:smooth_stone_slab
-summon item_display 103.5 64.95 330.5 {item:{id:"createoreexcavation:netherite_drill",count:1},item_display:"fixed",billboard:"vertical",transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[1.0f,1.0f,1.0f]},brightness:{sky:15,block:15},Tags:["kw_shot"]}
+# 147 aether/portal, altar
+#area 25 330 53 355
+fill 25 64 330 53 91 355 minecraft:air
+fill 25 60 330 53 62 355 minecraft:stone
+fill 25 63 330 53 63 355 minecraft:light_gray_concrete
+fill 29 64 336 53 79 336 minecraft:light_gray_concrete
+fill 29 64 336 29 79 349 minecraft:light_gray_concrete
+setblock 30 64 348 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "147.1"}','{"text": "aether"}','{"text": "portal"}','{"text": ""}']}}
+setblock 31 64 348 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Bau das"}','{"text": "Glowstone-Portal"}','{"text": ""}','{"text": ""}']}}
+fill 38 64 336 38 79 349 minecraft:light_gray_concrete
+setblock 32 65 341 minecraft:glowstone
+setblock 32 66 341 minecraft:glowstone
+setblock 32 67 341 minecraft:glowstone
+setblock 33 64 341 minecraft:glowstone
+setblock 33 68 341 minecraft:glowstone
+setblock 34 64 341 minecraft:glowstone
+setblock 34 68 341 minecraft:glowstone
+setblock 35 65 341 minecraft:glowstone
+setblock 35 66 341 minecraft:glowstone
+setblock 35 67 341 minecraft:glowstone
+fill 33 65 341 34 67 341 aether:aether_portal[axis=x]
+execute if block 33 66 341 aether:aether_portal
+setblock 39 64 348 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "147.2"}','{"text": "aether"}','{"text": "altar"}','{"text": ""}']}}
+setblock 40 64 348 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Bau einen Altar"}','{"text": ""}','{"text": ""}','{"text": ""}']}}
+fill 48 64 336 48 79 349 minecraft:light_gray_concrete
+fill 41 63 340 45 63 342 aether:holystone
+setblock 41 64 341 aether:altar
+setblock 43 64 341 aether:freezer
+setblock 45 64 341 aether:incubator
 execute as @e[type=minecraft:item,tag=!kw_shot] run kill @s

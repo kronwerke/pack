@@ -1,63 +1,58 @@
-# 136 pneumaticcraft_advanced/first_run, electrostatic, thermal, adv_air, first_program, frames, security_station, spawner_extractor, pressurized_spawner
-#area 190 277 289 302
-fill 190 64 277 234 91 302 minecraft:air
-fill 235 64 277 279 91 302 minecraft:air
-fill 280 64 277 289 91 302 minecraft:air
-fill 190 60 277 289 62 302 minecraft:stone
-fill 190 63 277 289 63 302 minecraft:light_gray_concrete
-fill 194 64 283 289 79 283 minecraft:light_gray_concrete
-fill 194 64 283 194 79 296 minecraft:light_gray_concrete
-setblock 195 64 295 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "136.1"}','{"text": "pneumaticcraft_advanced"}','{"text": "first_run"}','{"text": ""}']}}
-setblock 196 64 295 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Lass die Straße"}','{"text": "laufen"}','{"text": ""}','{"text": ""}']}}
-fill 204 64 283 204 79 296 minecraft:light_gray_concrete
-setblock 199 64 288 pneumaticcraft:assembly_platform
-setblock 198 64 288 pneumaticcraft:assembly_drill
-setblock 200 64 288 pneumaticcraft:assembly_laser
-setblock 199 64 287 pneumaticcraft:assembly_io_unit_import
-setblock 199 64 289 pneumaticcraft:assembly_io_unit_export
-setblock 199 64 286 minecraft:chest[facing=south,type=single,waterlogged=false]
-setblock 199 64 290 minecraft:chest[facing=south,type=single,waterlogged=false]
-setblock 201 64 288 pneumaticcraft:assembly_controller
-setblock 205 64 295 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "136.2"}','{"text": "pneumaticcraft_advanced"}','{"text": "electrostatic"}','{"text": ""}']}}
-setblock 206 64 295 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Bau einen"}','{"text": "Electrostatic"}','{"text": "Compressor"}','{"text": ""}']}}
-fill 214 64 283 214 79 296 minecraft:light_gray_concrete
-setblock 209 64 288 pneumaticcraft:electrostatic_compressor
-fill 209 65 288 209 68 288 minecraft:iron_bars
-setblock 209 69 288 minecraft:lightning_rod[facing=up,powered=false]
-setblock 215 64 295 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "136.3"}','{"text": "pneumaticcraft_advanced"}','{"text": "thermal"}','{"text": ""}']}}
-setblock 216 64 295 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Bau einen"}','{"text": "Thermal"}','{"text": "Compressor"}','{"text": ""}']}}
-fill 224 64 283 224 79 296 minecraft:light_gray_concrete
-setblock 218 64 288 minecraft:magma_block
-setblock 219 64 288 pneumaticcraft:thermal_compressor
-setblock 220 64 288 minecraft:blue_ice
-setblock 225 64 295 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "136.4"}','{"text": "pneumaticcraft_advanced"}','{"text": "adv_air"}','{"text": ""}']}}
-setblock 226 64 295 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Bau einen"}','{"text": "Advanced Air"}','{"text": "Compressor"}','{"text": ""}']}}
-fill 234 64 283 234 79 296 minecraft:light_gray_concrete
-setblock 229 64 288 pneumaticcraft:advanced_air_compressor[facing=south,on=true]
-setblock 235 64 295 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "136.5"}','{"text": "pneumaticcraft_advanced"}','{"text": "first_program"}','{"text": ""}']}}
-setblock 236 64 295 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Programmiere"}','{"text": "deine erste"}','{"text": "Drohne"}','{"text": ""}']}}
-fill 244 64 283 244 79 296 minecraft:light_gray_concrete
-setblock 238 64 288 pneumaticcraft:programmer[facing=south]
-setblock 240 64 288 minecraft:smooth_stone_slab
-summon item_display 240.5 64.95 288.5 {item:{id:"pneumaticcraft:drone",count:1},item_display:"fixed",billboard:"vertical",transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[1.0f,1.0f,1.0f]},brightness:{sky:15,block:15},Tags:["kw_shot"]}
-setblock 245 64 295 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "136.6"}','{"text": "pneumaticcraft_advanced"}','{"text": "frames"}','{"text": ""}']}}
-setblock 246 64 295 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Bau Logistics"}','{"text": "Frames"}','{"text": ""}','{"text": ""}']}}
-fill 254 64 283 254 79 296 minecraft:light_gray_concrete
-setblock 247 64 288 minecraft:chest[facing=south,type=single,waterlogged=false]
-setblock 251 64 288 minecraft:chest[facing=south,type=single,waterlogged=false]
-kw testworld use 247 64 288 south pneumaticcraft:logistics_frame_passive_provider
-kw testworld use 251 64 288 south pneumaticcraft:logistics_frame_requester
-setblock 255 64 295 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "136.7"}','{"text": "pneumaticcraft_advanced"}','{"text": "security_station"}','{"text": ""}']}}
-setblock 256 64 295 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Bau eine"}','{"text": "Security"}','{"text": "Station"}','{"text": ""}']}}
-fill 264 64 283 264 79 296 minecraft:light_gray_concrete
-setblock 259 64 288 pneumaticcraft:security_station[facing=south]
-setblock 265 64 295 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "136.8"}','{"text": "pneumaticcraft_advanced"}','{"text": "spawner_extractor"}','{"text": ""}']}}
-setblock 266 64 295 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Bau einen"}','{"text": "Spawner"}','{"text": "Extractor"}','{"text": ""}']}}
-fill 274 64 283 274 79 296 minecraft:light_gray_concrete
-setblock 269 64 288 minecraft:spawner
-setblock 269 65 288 pneumaticcraft:spawner_extractor
-setblock 275 64 295 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "136.9"}','{"text": "pneumaticcraft_advanced"}','{"text": "pressurized_spawner"}','{"text": ""}']}}
-setblock 276 64 295 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Bau einen"}','{"text": "Pressurized"}','{"text": "Spawner"}','{"text": ""}']}}
-fill 284 64 283 284 79 296 minecraft:light_gray_concrete
-setblock 279 64 288 pneumaticcraft:pressurized_spawner
+# 136 storage/welcome, drawers_4, copper_tier, controller, vault_big, trash
+#area 200 286 270 311
+fill 200 64 286 244 91 311 minecraft:air
+fill 245 64 286 270 91 311 minecraft:air
+fill 200 60 286 270 62 311 minecraft:stone
+fill 200 63 286 270 63 311 minecraft:light_gray_concrete
+fill 204 64 292 270 79 292 minecraft:light_gray_concrete
+fill 204 64 292 204 79 305 minecraft:light_gray_concrete
+setblock 205 64 304 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "136.1"}','{"text": "storage"}','{"text": "welcome"}','{"text": ""}']}}
+setblock 206 64 304 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Näh einen"}','{"text": "Rucksack"}','{"text": ""}','{"text": ""}']}}
+fill 214 64 292 214 79 305 minecraft:light_gray_concrete
+setblock 209 64 297 sophisticatedbackpacks:backpack[facing=south]
+setblock 215 64 304 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "136.2"}','{"text": "storage"}','{"text": "drawers_4"}','{"text": ""}']}}
+setblock 216 64 304 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Bau eine"}','{"text": "Schubladenwand"}','{"text": ""}','{"text": ""}']}}
+fill 224 64 292 224 79 305 minecraft:light_gray_concrete
+setblock 218 64 297 functionalstorage:oak_4[facing=down,subfacing=south]
+data merge block 218 64 297 {handler:{BigItems:{0:{Stack:{id:"minecraft:iron_ingot",count:1},Amount:128},1:{Stack:{id:"minecraft:copper_ingot",count:1},Amount:192},2:{Stack:{id:"minecraft:gold_ingot",count:1},Amount:256},3:{Stack:{id:"minecraft:raw_iron",count:1},Amount:320}}}}
+setblock 219 64 297 functionalstorage:oak_4[facing=down,subfacing=south]
+data merge block 219 64 297 {handler:{BigItems:{0:{Stack:{id:"minecraft:raw_copper",count:1},Amount:128},1:{Stack:{id:"minecraft:raw_gold",count:1},Amount:192},2:{Stack:{id:"minecraft:coal",count:1},Amount:256},3:{Stack:{id:"minecraft:charcoal",count:1},Amount:320}}}}
+setblock 220 64 297 functionalstorage:oak_4[facing=down,subfacing=south]
+data merge block 220 64 297 {handler:{BigItems:{0:{Stack:{id:"minecraft:redstone",count:1},Amount:128},1:{Stack:{id:"minecraft:lapis_lazuli",count:1},Amount:192},2:{Stack:{id:"minecraft:diamond",count:1},Amount:256},3:{Stack:{id:"minecraft:emerald",count:1},Amount:320}}}}
+setblock 218 65 297 functionalstorage:oak_4[facing=down,subfacing=south]
+data merge block 218 65 297 {handler:{BigItems:{0:{Stack:{id:"minecraft:quartz",count:1},Amount:128},1:{Stack:{id:"minecraft:amethyst_shard",count:1},Amount:192},2:{Stack:{id:"minecraft:flint",count:1},Amount:256},3:{Stack:{id:"minecraft:clay_ball",count:1},Amount:320}}}}
+setblock 219 65 297 functionalstorage:oak_4[facing=down,subfacing=south]
+data merge block 219 65 297 {handler:{BigItems:{0:{Stack:{id:"minecraft:bone",count:1},Amount:128},1:{Stack:{id:"minecraft:string",count:1},Amount:192},2:{Stack:{id:"minecraft:gunpowder",count:1},Amount:256},3:{Stack:{id:"minecraft:rotten_flesh",count:1},Amount:320}}}}
+setblock 220 65 297 functionalstorage:oak_4[facing=down,subfacing=south]
+data merge block 220 65 297 {handler:{BigItems:{0:{Stack:{id:"minecraft:leather",count:1},Amount:128},1:{Stack:{id:"minecraft:feather",count:1},Amount:192},2:{Stack:{id:"minecraft:wheat",count:1},Amount:256},3:{Stack:{id:"minecraft:sugar_cane",count:1},Amount:320}}}}
+setblock 218 66 297 functionalstorage:oak_4[facing=down,subfacing=south]
+data merge block 218 66 297 {handler:{BigItems:{0:{Stack:{id:"minecraft:red_dye",count:1},Amount:128},1:{Stack:{id:"minecraft:blue_dye",count:1},Amount:192},2:{Stack:{id:"minecraft:green_dye",count:1},Amount:256},3:{Stack:{id:"minecraft:yellow_dye",count:1},Amount:320}}}}
+setblock 219 66 297 functionalstorage:oak_4[facing=down,subfacing=south]
+data merge block 219 66 297 {handler:{BigItems:{0:{Stack:{id:"minecraft:white_dye",count:1},Amount:128},1:{Stack:{id:"minecraft:black_dye",count:1},Amount:192},2:{Stack:{id:"minecraft:slime_ball",count:1},Amount:256},3:{Stack:{id:"minecraft:ender_pearl",count:1},Amount:320}}}}
+setblock 220 66 297 functionalstorage:oak_4[facing=down,subfacing=south]
+data merge block 220 66 297 {handler:{BigItems:{0:{Stack:{id:"minecraft:blaze_rod",count:1},Amount:128},1:{Stack:{id:"minecraft:glowstone_dust",count:1},Amount:192},2:{Stack:{id:"minecraft:nether_wart",count:1},Amount:256},3:{Stack:{id:"minecraft:paper",count:1},Amount:320}}}}
+setblock 225 64 304 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "136.3"}','{"text": "storage"}','{"text": "copper_tier"}','{"text": ""}']}}
+setblock 226 64 304 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Werte auf"}','{"text": "Kupfer auf"}','{"text": ""}','{"text": ""}']}}
+fill 234 64 292 234 79 305 minecraft:light_gray_concrete
+setblock 228 64 297 sophisticatedstorage:barrel[facing=south,flat_top=false]
+setblock 230 64 297 sophisticatedstorage:copper_barrel[facing=south,flat_top=false]
+setblock 235 64 304 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "136.4"}','{"text": "storage"}','{"text": "controller"}','{"text": ""}']}}
+setblock 236 64 304 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Bau einen"}','{"text": "Lagerkern"}','{"text": ""}','{"text": ""}']}}
+fill 244 64 292 244 79 305 minecraft:light_gray_concrete
+setblock 239 64 297 sophisticatedstorage:controller
+setblock 237 64 297 sophisticatedstorage:barrel[facing=south,flat_top=false]
+setblock 238 64 297 sophisticatedstorage:barrel[facing=south,flat_top=false]
+setblock 240 64 297 sophisticatedstorage:barrel[facing=south,flat_top=false]
+setblock 238 65 297 sophisticatedstorage:barrel[facing=south,flat_top=false]
+setblock 239 65 297 sophisticatedstorage:barrel[facing=south,flat_top=false]
+setblock 240 65 297 sophisticatedstorage:barrel[facing=south,flat_top=false]
+setblock 245 64 304 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "136.5"}','{"text": "storage"}','{"text": "vault_big"}','{"text": ""}']}}
+setblock 246 64 304 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Bau einen"}','{"text": "großen Tresor"}','{"text": ""}','{"text": ""}']}}
+fill 255 64 292 255 79 305 minecraft:light_gray_concrete
+fill 247 64 296 252 66 298 create:item_vault[axis=x,large=false]
+setblock 256 64 304 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "136.6"}','{"text": "storage"}','{"text": "trash"}','{"text": ""}']}}
+setblock 257 64 304 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Bau einen"}','{"text": "Mülleimer"}','{"text": ""}','{"text": ""}']}}
+fill 265 64 292 265 79 305 minecraft:light_gray_concrete
+setblock 260 64 297 trashcans:item_trash_can
+setblock 260 65 297 minecraft:hopper[facing=down]
 execute as @e[type=minecraft:item,tag=!kw_shot] run kill @s

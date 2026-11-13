@@ -1,24 +1,12 @@
-# 116 immersive_heavy/hv, survey
-#area 383 181 416 206
-fill 383 64 181 416 95 206 minecraft:air
-fill 383 60 181 416 62 206 minecraft:stone
-fill 383 63 181 416 63 206 minecraft:light_gray_concrete
-fill 387 64 187 416 83 187 minecraft:light_gray_concrete
-fill 387 64 187 387 83 200 minecraft:light_gray_concrete
-setblock 388 64 199 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "116.1"}','{"text": "immersive_heavy"}','{"text": "hv"}','{"text": ""}']}}
-setblock 389 64 199 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "an HV line on"}','{"text": "steel posts,"}','{"text": "the bottling"}','{"text": "machine with"}']}}
-setblock 390 64 199 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "resin, a core"}','{"text": "sample on the"}','{"text": "ground"}','{"text": ""}']}}
-fill 401 64 187 401 83 200 minecraft:light_gray_concrete
-kw testworld use 390 63 192 up immersiveengineering:steel_post
-execute unless block 390 67 192 minecraft:air
-kw testworld use 390 67 192 up immersiveengineering:connector_hv
-kw testworld use 398 63 192 up immersiveengineering:steel_post
-execute unless block 398 67 192 minecraft:air
-kw testworld use 398 67 192 up immersiveengineering:connector_hv
-kw testworld use 390 68 192 south immersiveengineering:wirecoil_steel
-kw testworld use 398 68 192 south immersiveengineering:wirecoil_steel
-setblock 402 64 199 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "116.2"}','{"text": "immersive_heavy"}','{"text": "survey"}','{"text": ""}']}}
-setblock 403 64 199 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Such eine"}','{"text": "Mineralader"}','{"text": ""}','{"text": ""}']}}
-fill 411 64 187 411 83 200 minecraft:light_gray_concrete
-kw testworld use 406 63 192 up immersiveengineering:sample_drill
+# 116 immersive/bench
+#area 66 211 86 236
+fill 66 64 211 86 91 236 minecraft:air
+fill 66 60 211 86 62 236 minecraft:stone
+fill 66 63 211 86 63 236 minecraft:light_gray_concrete
+fill 70 64 217 86 79 217 minecraft:light_gray_concrete
+fill 70 64 217 70 79 230 minecraft:light_gray_concrete
+setblock 71 64 229 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "116"}','{"text": "immersive"}','{"text": "bench"}','{"text": ""}']}}
+setblock 72 64 229 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "engineer\'s"}','{"text": "workbench with"}','{"text": "the components"}','{"text": "blueprint"}']}}
+fill 81 64 217 81 79 230 minecraft:light_gray_concrete
+kw testworld use 75 63 222 up immersiveengineering:workbench
 execute as @e[type=minecraft:item,tag=!kw_shot] run kill @s

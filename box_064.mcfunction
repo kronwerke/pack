@@ -1,19 +1,18 @@
-# 064 ars_master/wilden_ritual
-#area 197 88 216 113
-fill 197 64 88 216 91 113 minecraft:air
-fill 197 60 88 216 62 113 minecraft:stone
-fill 197 63 88 216 63 113 minecraft:light_gray_concrete
-fill 201 64 94 216 79 94 minecraft:light_gray_concrete
-fill 201 64 94 201 79 107 minecraft:light_gray_concrete
-setblock 202 64 106 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "064"}','{"text": "ars_master"}','{"text": "wilden_ritual"}','{"text": ""}']}}
-setblock 203 64 106 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "brazier with"}','{"text": "spike, horn and"}','{"text": "wing"}','{"text": ""}']}}
-fill 211 64 94 211 79 107 minecraft:light_gray_concrete
-setblock 206 64 99 ars_nouveau:ritual_brazier
-kw testworld use 206 64 99 up ars_nouveau:ritual_wilden_summon
-setblock 204 64 99 ars_nouveau:arcane_pedestal[facing=up]
-kw testworld use 204 64 99 south ars_nouveau:wilden_spike
-setblock 208 64 99 ars_nouveau:arcane_pedestal[facing=up]
-kw testworld use 208 64 99 south ars_nouveau:wilden_horn
-setblock 206 64 97 ars_nouveau:arcane_pedestal[facing=up]
-kw testworld use 206 64 97 south ars_nouveau:wilden_wing
+# 064 ars_nouveau/drygmy
+#area 88 118 107 143
+fill 88 64 118 107 91 143 minecraft:air
+fill 88 60 118 107 62 143 minecraft:stone
+fill 88 63 118 107 63 143 minecraft:light_gray_concrete
+fill 92 64 124 107 79 124 minecraft:light_gray_concrete
+fill 92 64 124 92 79 137 minecraft:light_gray_concrete
+setblock 93 64 136 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "064"}','{"text": "ars_nouveau"}','{"text": "drygmy"}','{"text": ""}']}}
+setblock 94 64 136 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Drygmy henge"}','{"text": "with chest and"}','{"text": "jar"}','{"text": ""}']}}
+fill 102 64 124 102 79 137 minecraft:light_gray_concrete
+setblock 97 64 129 minecraft:mossy_cobblestone
+kw testworld use 97 64 129 up ars_nouveau:drygmy_charm
+execute unless block 97 64 129 minecraft:mossy_cobblestone
+setblock 98 64 129 minecraft:chest[facing=south]{Items:[]}
+setblock 96 64 129 ars_nouveau:source_jar[fill=11]{source:10000}
+summon minecraft:cow 99.5 64 131.5 {NoAI:1b,PersistenceRequired:1b,Silent:1b,Tags:["kw_shot"],Rotation:[180f,0f]}
+summon minecraft:sheep 95.5 64 131.5 {NoAI:1b,PersistenceRequired:1b,Silent:1b,Tags:["kw_shot"],Rotation:[180f,0f]}
 execute as @e[type=minecraft:item,tag=!kw_shot] run kill @s

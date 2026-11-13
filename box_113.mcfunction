@@ -1,27 +1,15 @@
-# 113 immersive/tank, silo, shelf
-#area 169 181 208 210
-fill 169 64 181 203 94 210 minecraft:air
-fill 204 64 181 208 94 210 minecraft:air
-fill 169 60 181 208 62 210 minecraft:stone
-fill 169 63 181 208 63 210 minecraft:light_gray_concrete
-fill 173 64 187 208 82 187 minecraft:light_gray_concrete
-fill 173 64 187 173 82 204 minecraft:light_gray_concrete
-setblock 174 64 203 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "113.1"}','{"text": "immersive"}','{"text": "tank"}','{"text": ""}']}}
-setblock 175 64 203 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "the formed"}','{"text": "structures"}','{"text": ""}','{"text": ""}']}}
-fill 183 64 187 183 82 204 minecraft:light_gray_concrete
-place template immersiveengineering:multiblocks/sheetmetal_tank 177 64 190 none
-kw testworld use 178 65 192 south immersiveengineering:hammer
-execute unless block 178 65 192 immersiveengineering:sheetmetal_iron
-setblock 184 64 203 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "113.2"}','{"text": "immersive"}','{"text": "silo"}','{"text": ""}']}}
-setblock 185 64 203 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Form ein"}','{"text": "Elementsilo"}','{"text": ""}','{"text": ""}']}}
-fill 193 64 187 193 82 204 minecraft:light_gray_concrete
-place template immersiveengineering:multiblocks/silo 187 64 190 none
-kw testworld use 188 65 192 south immersiveengineering:hammer
-execute unless block 188 65 192 immersiveengineering:sheetmetal_iron
-setblock 194 64 203 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "113.3"}','{"text": "immersive"}','{"text": "shelf"}','{"text": ""}']}}
-setblock 195 64 203 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Form ein"}','{"text": "Kistenregal"}','{"text": ""}','{"text": ""}']}}
-fill 203 64 187 203 82 204 minecraft:light_gray_concrete
-place template immersiveengineering:multiblocks/shelf 196 64 190 none
-kw testworld use 197 65 191 south immersiveengineering:hammer
-execute unless block 197 65 191 immersiveengineering:steel_catwalk
+# 113 immersive/coke_oven
+#area 11 211 30 236
+fill 11 64 211 30 91 236 minecraft:air
+fill 11 60 211 30 62 236 minecraft:stone
+fill 11 63 211 30 63 236 minecraft:light_gray_concrete
+fill 15 64 217 30 79 217 minecraft:light_gray_concrete
+fill 15 64 217 15 79 230 minecraft:light_gray_concrete
+setblock 16 64 229 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "113"}','{"text": "immersive"}','{"text": "coke_oven"}','{"text": ""}']}}
+setblock 17 64 229 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "formed coke"}','{"text": "oven with GUI,"}','{"text": "the bucket"}','{"text": "slot, a pump"}']}}
+setblock 18 64 229 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "with pipes"}','{"text": ""}','{"text": ""}','{"text": ""}']}}
+fill 25 64 217 25 79 230 minecraft:light_gray_concrete
+place template immersiveengineering:multiblocks/coke_oven 19 64 220 none
+kw testworld use 20 65 222 south immersiveengineering:hammer
+execute unless block 20 65 222 immersiveengineering:cokebrick
 execute as @e[type=minecraft:item,tag=!kw_shot] run kill @s

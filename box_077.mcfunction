@@ -1,18 +1,31 @@
-# 077 botania_runes/runic_altar
-#area 122 109 141 134
-fill 122 64 109 141 91 134 minecraft:air
-fill 122 60 109 141 62 134 minecraft:stone
-fill 122 63 109 141 63 134 minecraft:light_gray_concrete
-fill 126 64 115 141 79 115 minecraft:light_gray_concrete
-fill 126 64 115 126 79 128 minecraft:light_gray_concrete
-setblock 127 64 127 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "077"}','{"text": "botania_runes"}','{"text": "runic_altar"}','{"text": ""}']}}
-setblock 128 64 127 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "altar with"}','{"text": "ingredients, a"}','{"text": "spreader aimed"}','{"text": "at it, wand HUD"}']}}
-fill 136 64 115 136 79 128 minecraft:light_gray_concrete
-setblock 128 64 120 botania:mana_pool{mana:1000000}
-setblock 129 64 120 botania:mana_spreader{rotationX:180f,rotationY:0f,mana:1000}
-setblock 133 64 120 botania:runic_altar
-kw testworld use 133 64 120 up botania:manasteel_ingot
-kw testworld use 133 64 120 up botania:mana_powder
-kw testworld use 133 64 120 up minecraft:bone_meal
-kw testworld use 133 64 120 up minecraft:sugar_cane
+# 077 botania/endo_auto
+#area 11 139 30 164
+fill 11 64 139 30 91 164 minecraft:air
+fill 11 60 139 30 62 164 minecraft:stone
+fill 11 63 139 30 63 164 minecraft:light_gray_concrete
+fill 15 64 145 30 79 145 minecraft:light_gray_concrete
+fill 15 64 145 15 79 158 minecraft:light_gray_concrete
+setblock 16 64 157 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "077"}','{"text": "botania"}','{"text": "endo_auto"}','{"text": ""}']}}
+setblock 17 64 157 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "chest, hopper"}','{"text": "and open crate"}','{"text": "over four"}','{"text": "Endoflames,"}']}}
+setblock 18 64 157 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "pressure plate"}','{"text": ""}','{"text": ""}','{"text": ""}']}}
+fill 25 64 145 25 79 158 minecraft:light_gray_concrete
+fill 19 63 150 21 63 151 minecraft:grass_block
+setblock 20 63 150 minecraft:light_gray_concrete
+setblock 19 64 150 botania:endoflame
+setblock 21 64 150 botania:endoflame
+setblock 19 64 151 botania:endoflame
+setblock 20 64 151 botania:endoflame
+setblock 21 64 151 botania:endoflame
+setblock 20 64 150 minecraft:oak_pressure_plate
+setblock 20 66 150 botania:open_crate
+setblock 20 67 150 minecraft:hopper[facing=down]
+setblock 20 68 150 minecraft:chest[facing=south]{Items:[{Slot:0b,id:"minecraft:coal",count:64}]}
+setblock 20 64 149 minecraft:redstone_wire
+setblock 20 64 148 minecraft:stone_bricks
+setblock 20 65 148 minecraft:redstone_wire
+setblock 21 65 148 minecraft:stone_bricks
+setblock 21 66 148 minecraft:redstone_wire
+setblock 21 66 149 minecraft:stone_bricks
+setblock 21 67 149 minecraft:redstone_wire
+setblock 21 67 150 minecraft:stone_bricks
 execute as @e[type=minecraft:item,tag=!kw_shot] run kill @s

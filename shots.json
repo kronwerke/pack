@@ -1,12 +1,12 @@
 {
  "shots": [
   {
-   "name": "r_create_trains_cargo",
+   "name": "s_create_stress",
    "dim": "kronwerke:testworld",
    "pos": [
-    292.99,
-    68.01,
-    60.56
+    41.64,
+    66.06,
+    56.75
    ],
    "yaw": 165.0,
    "pitch": 35.0,
@@ -15,12 +15,12 @@
    "height": 360
   },
   {
-   "name": "r_ars_master_tribute",
+   "name": "s_create_stock_ticker",
    "dim": "kronwerke:testworld",
    "pos": [
-    192.44,
-    69.62,
-    107.72
+    149.6,
+    67.9,
+    59.46
    ],
    "yaw": 165.0,
    "pitch": 35.0,
@@ -29,12 +29,110 @@
    "height": 360
   },
   {
-   "name": "r_hexerei_sage_plate",
+   "name": "s_create_brass_boiler",
    "dim": "kronwerke:testworld",
    "pos": [
-    304.31,
-    65.36,
-    160.51
+    277.45,
+    74.75,
+    65.49
+   ],
+   "yaw": 165.0,
+   "pitch": 35.0,
+   "fov": 60,
+   "width": 640,
+   "height": 360
+  },
+  {
+   "name": "s_create_brass_pg_winding",
+   "dim": "kronwerke:testworld",
+   "pos": [
+    306.67,
+    66.34,
+    57.36
+   ],
+   "yaw": 165.0,
+   "pitch": 35.0,
+   "fov": 60,
+   "width": 640,
+   "height": 360
+  },
+  {
+   "name": "s_create_brass_pg_generator",
+   "dim": "kronwerke:testworld",
+   "pos": [
+    318.94,
+    72.18,
+    62.61
+   ],
+   "yaw": 165.0,
+   "pitch": 35.0,
+   "fov": 60,
+   "width": 640,
+   "height": 360
+  },
+  {
+   "name": "s_create_brass_pg_magnet",
+   "dim": "kronwerke:testworld",
+   "pos": [
+    325.79,
+    67.06,
+    58.3
+   ],
+   "yaw": 165.0,
+   "pitch": 35.0,
+   "fov": 60,
+   "width": 640,
+   "height": 360
+  },
+  {
+   "name": "s_create_trains_first_train",
+   "dim": "kronwerke:testworld",
+   "pos": [
+    374.3,
+    68.85,
+    60.21
+   ],
+   "yaw": 165.0,
+   "pitch": 35.0,
+   "fov": 60,
+   "width": 640,
+   "height": 360
+  },
+  {
+   "name": "s_create_trains_conductor",
+   "dim": "kronwerke:testworld",
+   "pos": [
+    393.39,
+    68.69,
+    62.05
+   ],
+   "yaw": 165.0,
+   "pitch": 35.0,
+   "fov": 60,
+   "width": 640,
+   "height": 360
+  },
+  {
+   "name": "s_create_trains_junction",
+   "dim": "kronwerke:testworld",
+   "pos": [
+    15.45,
+    73.31,
+    96.36
+   ],
+   "yaw": 165.0,
+   "pitch": 35.0,
+   "fov": 60,
+   "width": 640,
+   "height": 360
+  },
+  {
+   "name": "s_create_trains_cargo",
+   "dim": "kronwerke:testworld",
+   "pos": [
+    37.08,
+    69.6,
+    88.26
    ],
    "yaw": 165.0,
    "pitch": 35.0,

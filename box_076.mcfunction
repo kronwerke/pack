@@ -1,14 +1,21 @@
-# 076 botania_runes/mana_pearl
-#area 107 109 126 134
-fill 107 64 109 126 91 134 minecraft:air
-fill 107 60 109 126 62 134 minecraft:stone
-fill 107 63 109 126 63 134 minecraft:light_gray_concrete
-fill 111 64 115 126 79 115 minecraft:light_gray_concrete
-fill 111 64 115 111 79 128 minecraft:light_gray_concrete
-setblock 112 64 127 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "076"}','{"text": "botania_runes"}','{"text": "mana_pearl"}','{"text": ""}']}}
-setblock 113 64 127 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "a pool on a"}','{"text": "brass casing"}','{"text": "with a pearl in"}','{"text": "it"}']}}
-fill 121 64 115 121 79 128 minecraft:light_gray_concrete
-setblock 116 64 120 create:brass_casing
-setblock 116 65 120 botania:mana_pool{mana:1000000}
-summon item 116.5 66 120.5 {Item:{id:"minecraft:ender_pearl",count:1},PickupDelay:32767,Age:-32768,Tags:["kw_shot"]}
+# 076 botania/pure_daisy
+#area -4 139 15 164
+fill -4 64 139 15 91 164 minecraft:air
+fill -4 60 139 15 62 164 minecraft:stone
+fill -4 63 139 15 63 164 minecraft:light_gray_concrete
+fill 0 64 145 15 79 145 minecraft:light_gray_concrete
+fill 0 64 145 0 79 158 minecraft:light_gray_concrete
+setblock 1 64 157 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "076"}','{"text": "botania"}','{"text": "pure_daisy"}','{"text": ""}']}}
+setblock 2 64 157 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "the daisy with"}','{"text": "8 stone or"}','{"text": "logs, half"}','{"text": "converted"}']}}
+fill 10 64 145 10 79 158 minecraft:light_gray_concrete
+setblock 5 63 150 minecraft:grass_block
+setblock 5 64 150 botania:pure_daisy
+setblock 4 64 149 minecraft:stone
+setblock 5 64 149 botania:livingrock
+setblock 6 64 149 minecraft:stone
+setblock 4 64 150 minecraft:oak_log[axis=y]
+setblock 6 64 150 botania:livingwood_log[axis=y]
+setblock 4 64 151 botania:livingrock
+setblock 5 64 151 minecraft:stone
+setblock 6 64 151 botania:livingrock
 execute as @e[type=minecraft:item,tag=!kw_shot] run kill @s

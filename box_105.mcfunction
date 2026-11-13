@@ -1,14 +1,15 @@
-# 105 immersive/hammer
-#area -4 181 15 206
-fill -4 64 181 15 91 206 minecraft:air
-fill -4 60 181 15 62 206 minecraft:stone
-fill -4 63 181 15 63 206 minecraft:light_gray_concrete
-fill 0 64 187 15 79 187 minecraft:light_gray_concrete
-fill 0 64 187 0 79 200 minecraft:light_gray_concrete
-setblock 1 64 199 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "105"}','{"text": "immersive"}','{"text": "hammer"}','{"text": ""}']}}
-setblock 2 64 199 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "right-clicking"}','{"text": "a structure"}','{"text": "with the hammer"}','{"text": ""}']}}
-fill 10 64 187 10 79 200 minecraft:light_gray_concrete
-place template immersiveengineering:multiblocks/coke_oven 4 64 190 none
-setblock 5 64 194 minecraft:smooth_stone_slab
-summon item_display 5.5 65.04 194.5 {item:{id:"immersiveengineering:hammer",count:1},item_display:"fixed",billboard:"vertical",transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[1.2f,1.2f,1.2f]},brightness:{sky:15,block:15},Tags:["kw_shot"]}
+# 105 occultism_afrit/mineshaft
+#area 184 176 203 201
+fill 184 64 176 203 91 201 minecraft:air
+fill 184 60 176 203 62 201 minecraft:stone
+fill 184 63 176 203 63 201 minecraft:light_gray_concrete
+fill 188 64 182 203 79 182 minecraft:light_gray_concrete
+fill 188 64 182 188 79 195 minecraft:light_gray_concrete
+setblock 189 64 194 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "105"}','{"text": "occultism_afrit"}','{"text": "mineshaft"}','{"text": ""}']}}
+setblock 190 64 194 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "dimensional"}','{"text": "mineshaft with"}','{"text": "a lamp inside"}','{"text": "and a hopper"}']}}
+setblock 191 64 194 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "below"}','{"text": ""}','{"text": ""}','{"text": ""}']}}
+fill 198 64 182 198 79 195 minecraft:light_gray_concrete
+setblock 193 64 187 minecraft:hopper[facing=east]
+setblock 193 65 187 occultism:dimensional_mineshaft[rotation=0]
+setblock 194 64 187 minecraft:chest[facing=south]{Items:[]}
 execute as @e[type=minecraft:item,tag=!kw_shot] run kill @s

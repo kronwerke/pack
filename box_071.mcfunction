@@ -1,13 +1,19 @@
-# 071 botania/pool
-#area 26 109 45 134
-fill 26 64 109 45 91 134 minecraft:air
-fill 26 60 109 45 62 134 minecraft:stone
-fill 26 63 109 45 63 134 minecraft:light_gray_concrete
-fill 30 64 115 45 79 115 minecraft:light_gray_concrete
-fill 30 64 115 30 79 128 minecraft:light_gray_concrete
-setblock 31 64 127 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "071"}','{"text": "botania"}','{"text": "pool"}','{"text": ""}']}}
-setblock 32 64 127 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "a full pool"}','{"text": "with a spreader"}','{"text": "beam, wand in"}','{"text": "hand"}']}}
-fill 40 64 115 40 79 128 minecraft:light_gray_concrete
-setblock 36 64 120 botania:mana_pool{mana:1000000}
-setblock 33 64 120 botania:mana_spreader{rotationX:180f,rotationY:0f,mana:1000}
+# 071 ars_master/wilden_ritual
+#area 197 118 216 143
+fill 197 64 118 216 91 143 minecraft:air
+fill 197 60 118 216 62 143 minecraft:stone
+fill 197 63 118 216 63 143 minecraft:light_gray_concrete
+fill 201 64 124 216 79 124 minecraft:light_gray_concrete
+fill 201 64 124 201 79 137 minecraft:light_gray_concrete
+setblock 202 64 136 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "071"}','{"text": "ars_master"}','{"text": "wilden_ritual"}','{"text": ""}']}}
+setblock 203 64 136 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "brazier with"}','{"text": "spike, horn and"}','{"text": "wing"}','{"text": ""}']}}
+fill 211 64 124 211 79 137 minecraft:light_gray_concrete
+setblock 206 64 129 ars_nouveau:ritual_brazier
+kw testworld use 206 64 129 up ars_nouveau:ritual_wilden_summon
+setblock 204 64 129 ars_nouveau:arcane_pedestal[facing=up]
+kw testworld use 204 64 129 south ars_nouveau:wilden_spike
+setblock 208 64 129 ars_nouveau:arcane_pedestal[facing=up]
+kw testworld use 208 64 129 south ars_nouveau:wilden_horn
+setblock 206 64 127 ars_nouveau:arcane_pedestal[facing=up]
+kw testworld use 206 64 127 south ars_nouveau:wilden_wing
 execute as @e[type=minecraft:item,tag=!kw_shot] run kill @s

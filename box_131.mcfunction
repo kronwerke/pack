@@ -1,77 +1,38 @@
-# 131 list_power/steam_engine, mek_heat, alternator, mekmm_large, nc_passive
-#area -4 277 62 302
-fill -4 64 277 40 91 302 minecraft:air
-fill 41 64 277 62 91 302 minecraft:air
-fill -4 60 277 62 62 302 minecraft:stone
-fill -4 63 277 62 63 302 minecraft:light_gray_concrete
-fill 0 64 283 62 79 283 minecraft:light_gray_concrete
-fill 0 64 283 0 79 296 minecraft:light_gray_concrete
-setblock 1 64 295 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "131.1"}','{"text": "list_power"}','{"text": "steam_engine"}','{"text": ""}']}}
-setblock 2 64 295 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Heiz einen"}','{"text": "Dampfkessel an"}','{"text": ""}','{"text": ""}']}}
-fill 11 64 283 11 79 296 minecraft:light_gray_concrete
-setblock 4 64 287 create:blaze_burner[blaze=smouldering]
-kw testworld use 4 64 287 up create:creative_blaze_cake
-setblock 4 64 288 create:blaze_burner[blaze=smouldering]
-kw testworld use 4 64 288 up create:creative_blaze_cake
-setblock 5 64 287 create:blaze_burner[blaze=smouldering]
-kw testworld use 5 64 287 up create:creative_blaze_cake
-setblock 5 64 288 create:blaze_burner[blaze=smouldering]
-kw testworld use 5 64 288 up create:creative_blaze_cake
-fill 4 65 287 5 67 288 create:fluid_tank[bottom=false,shape=window,top=false]
-setblock 4 66 290 create:shaft[axis=x]
-setblock 4 66 289 create:steam_engine[face=wall,facing=south,waterlogged=false]
-setblock 12 64 295 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "131.2"}','{"text": "list_power"}','{"text": "mek_heat"}','{"text": ""}']}}
-setblock 13 64 295 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Stell einen"}','{"text": "Wärmegenerator"}','{"text": "in Lava"}','{"text": ""}']}}
-fill 21 64 283 21 79 296 minecraft:light_gray_concrete
-setblock 14 64 286 minecraft:stone_bricks
-setblock 14 64 287 minecraft:stone_bricks
-setblock 14 64 288 minecraft:stone_bricks
-setblock 14 64 289 minecraft:stone_bricks
-setblock 14 64 290 minecraft:glass
-setblock 15 64 286 minecraft:stone_bricks
-setblock 15 64 287 minecraft:lava
-setblock 15 64 288 minecraft:lava
-setblock 15 64 289 minecraft:lava
-setblock 15 64 290 minecraft:glass
-setblock 16 64 286 minecraft:stone_bricks
-setblock 16 64 287 minecraft:lava
-setblock 16 64 288 mekanismgenerators:heat_generator[facing=south]
-setblock 16 64 289 minecraft:glass
-setblock 16 64 290 minecraft:glass
-setblock 17 64 286 minecraft:stone_bricks
-setblock 17 64 287 minecraft:lava
-setblock 17 64 288 minecraft:lava
-setblock 17 64 289 minecraft:lava
-setblock 17 64 290 minecraft:glass
-setblock 18 64 286 minecraft:stone_bricks
-setblock 18 64 287 minecraft:stone_bricks
-setblock 18 64 288 minecraft:stone_bricks
-setblock 18 64 289 minecraft:stone_bricks
-setblock 18 64 290 minecraft:glass
-setblock 22 64 295 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "131.3"}','{"text": "list_power"}','{"text": "alternator"}','{"text": ""}']}}
-setblock 23 64 295 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Mach aus"}','{"text": "Rotation Strom"}','{"text": ""}','{"text": ""}']}}
-fill 31 64 283 31 79 296 minecraft:light_gray_concrete
-setblock 26 64 288 createaddition:alternator[facing=east]
-setblock 25 64 288 create:shaft[axis=x]
-setblock 24 64 288 create:creative_motor[facing=east]{ScrollValue:64}
-setblock 23 64 288 create:andesite_casing
-setblock 24 64 289 create:andesite_casing
-setblock 24 64 287 create:andesite_casing
-setblock 24 65 288 create:andesite_casing
-setblock 32 64 295 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "131.4"}','{"text": "list_power"}','{"text": "mekmm_large"}','{"text": ""}']}}
-setblock 33 64 295 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Stell die"}','{"text": "großen"}','{"text": "Generatoren"}','{"text": ""}']}}
-fill 45 64 283 45 79 296 minecraft:light_gray_concrete
-kw testworld use 35 63 288 up mekmm:large_heat_generator
-kw testworld use 41 63 288 up mekmm:large_gas_burning_generator
-setblock 46 64 295 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "131.5"}','{"text": "list_power"}','{"text": "nc_passive"}','{"text": ""}']}}
-setblock 47 64 295 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Leg Solarzellen"}','{"text": "und RTGs"}','{"text": ""}','{"text": ""}']}}
-fill 57 64 283 57 79 296 minecraft:light_gray_concrete
-setblock 48 64 287 nuclearcraft:solar_panel_basic
-setblock 50 64 287 nuclearcraft:solar_panel_advanced
-setblock 52 64 287 nuclearcraft:solar_panel_du
-setblock 54 64 287 nuclearcraft:solar_panel_elite
-setblock 48 64 289 nuclearcraft:uranium_rtg
-setblock 50 64 289 nuclearcraft:americium_rtg
-setblock 52 64 289 nuclearcraft:plutonium_rtg
-setblock 54 64 289 nuclearcraft:californium_rtg
+# 131 enderio/smelter, cap_bank, soul_binder, vacuum_chest, enchanter
+#area 161 265 221 290
+fill 161 64 265 205 91 290 minecraft:air
+fill 206 64 265 221 91 290 minecraft:air
+fill 161 60 265 221 62 290 minecraft:stone
+fill 161 63 265 221 63 290 minecraft:light_gray_concrete
+fill 165 64 271 221 79 271 minecraft:light_gray_concrete
+fill 165 64 271 165 79 284 minecraft:light_gray_concrete
+setblock 166 64 283 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "131.1"}','{"text": "enderio"}','{"text": "smelter"}','{"text": ""}']}}
+setblock 167 64 283 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Bau die"}','{"text": "Legierungsschmelze"}','{"text": ""}','{"text": ""}']}}
+fill 176 64 271 176 79 284 minecraft:light_gray_concrete
+setblock 169 64 276 enderio:alloy_smelter[facing=south,powered=true]
+setblock 171 64 276 enderio:sag_mill[facing=south,powered=true]
+setblock 173 64 276 minecraft:smooth_stone_slab
+summon item_display 173.5 64.95 276.5 {item:{id:"enderio:basic_capacitor",count:1},item_display:"fixed",billboard:"vertical",transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[1.0f,1.0f,1.0f]},brightness:{sky:15,block:15},Tags:["kw_shot"]}
+setblock 177 64 283 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "131.2"}','{"text": "enderio"}','{"text": "cap_bank"}','{"text": ""}']}}
+setblock 178 64 283 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Bau eine"}','{"text": "Kondensatorbank"}','{"text": ""}','{"text": ""}']}}
+fill 186 64 271 186 79 284 minecraft:light_gray_concrete
+fill 180 64 276 182 66 276 enderio:basic_capacitor_bank
+setblock 187 64 283 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "131.3"}','{"text": "enderio"}','{"text": "soul_binder"}','{"text": ""}']}}
+setblock 188 64 283 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Bau den"}','{"text": "Seelenbinder"}','{"text": ""}','{"text": ""}']}}
+fill 196 64 271 196 79 284 minecraft:light_gray_concrete
+setblock 190 64 276 enderio:soul_binder[facing=south,powered=true]
+setblock 192 64 276 minecraft:smooth_stone_slab
+summon item_display 192.5 64.95 276.5 {item:{id:"enderio:soul_vial",count:1},item_display:"fixed",billboard:"vertical",transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[1.0f,1.0f,1.0f]},brightness:{sky:15,block:15},Tags:["kw_shot"]}
+setblock 197 64 283 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "131.4"}','{"text": "enderio"}','{"text": "vacuum_chest"}','{"text": ""}']}}
+setblock 198 64 283 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Stell eine"}','{"text": "Vakuumkiste auf"}','{"text": ""}','{"text": ""}']}}
+fill 206 64 271 206 79 284 minecraft:light_gray_concrete
+setblock 201 64 276 enderio:vacuum_chest
+summon item 199.5 64.2 277.5 {Item:{id:"minecraft:rotten_flesh",count:8},PickupDelay:32767,Age:-32768,Tags:["kw_shot"]}
+summon item 203.5 64.2 277.5 {Item:{id:"minecraft:bone",count:8},PickupDelay:32767,Age:-32768,Tags:["kw_shot"]}
+summon item 200.5 64.2 278.5 {Item:{id:"minecraft:gunpowder",count:8},PickupDelay:32767,Age:-32768,Tags:["kw_shot"]}
+summon item 202.5 64.2 275.5 {Item:{id:"minecraft:string",count:8},PickupDelay:32767,Age:-32768,Tags:["kw_shot"]}
+setblock 207 64 283 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "131.5"}','{"text": "enderio"}','{"text": "enchanter"}','{"text": ""}']}}
+setblock 208 64 283 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Bau den"}','{"text": "Verzauberer"}','{"text": ""}','{"text": ""}']}}
+fill 216 64 271 216 79 284 minecraft:light_gray_concrete
+setblock 211 64 276 enderio:enchanter[facing=south]
 execute as @e[type=minecraft:item,tag=!kw_shot] run kill @s

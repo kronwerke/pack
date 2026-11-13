@@ -1,25 +1,107 @@
-# 134 flux_networks/setup_mek, setup_reactor
-#area 89 277 119 302
-fill 89 64 277 119 91 302 minecraft:air
-fill 89 60 277 119 62 302 minecraft:stone
-fill 89 63 277 119 63 302 minecraft:light_gray_concrete
-fill 93 64 283 119 79 283 minecraft:light_gray_concrete
-fill 93 64 283 93 79 296 minecraft:light_gray_concrete
-setblock 94 64 295 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "134.1"}','{"text": "flux_networks"}','{"text": "setup_mek"}','{"text": ""}']}}
-setblock 95 64 295 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "a factory row"}','{"text": "with points, a"}','{"text": "Powah reactor"}','{"text": "with a plug, a"}']}}
-setblock 96 64 295 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "machine hall"}','{"text": "without cables"}','{"text": ""}','{"text": ""}']}}
-fill 104 64 283 104 79 296 minecraft:light_gray_concrete
-setblock 97 64 288 mekanism:enrichment_chamber[facing=south]
-setblock 98 64 288 mekanism:crusher[facing=south]
-setblock 99 64 288 mekanism:energized_smelter[facing=south]
-setblock 100 64 288 mekanism:metallurgic_infuser[facing=south]
-setblock 97 65 288 fluxnetworks:flux_point
-setblock 98 65 288 fluxnetworks:flux_point
-setblock 99 65 288 fluxnetworks:flux_point
-setblock 100 65 288 fluxnetworks:flux_point
-setblock 105 64 295 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "134.2"}','{"text": "flux_networks"}','{"text": "setup_reactor"}','{"text": ""}']}}
-setblock 106 64 295 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Reaktorstrom in"}','{"text": "die Ferne"}','{"text": ""}','{"text": ""}']}}
-fill 114 64 283 114 79 296 minecraft:light_gray_concrete
-setblock 109 64 288 powah:reactor_starter[core=true]
-setblock 109 68 288 fluxnetworks:flux_plug
+# 134 ae2_advanced/bridge, spatial, reaction, matrix
+#area 102 286 158 313
+fill 102 64 286 142 91 313 minecraft:air
+fill 143 64 286 158 91 313 minecraft:air
+fill 102 60 286 158 62 313 minecraft:stone
+fill 102 63 286 158 63 313 minecraft:light_gray_concrete
+fill 106 64 292 158 79 292 minecraft:light_gray_concrete
+fill 106 64 292 106 79 307 minecraft:light_gray_concrete
+setblock 107 64 306 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "134.1"}','{"text": "ae2_advanced"}','{"text": "bridge"}','{"text": ""}']}}
+setblock 108 64 306 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Verbinde zwei"}','{"text": "Orte mit einer"}','{"text": "Quantenbrücke"}','{"text": ""}']}}
+fill 120 64 292 120 79 307 minecraft:light_gray_concrete
+fill 109 64 297 111 66 297 ae2:quantum_ring
+setblock 110 65 297 ae2:quantum_link
+fill 115 64 297 117 66 297 ae2:quantum_ring
+setblock 116 65 297 ae2:quantum_link
+setblock 121 64 306 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "134.2"}','{"text": "ae2_advanced"}','{"text": "spatial"}','{"text": ""}']}}
+setblock 122 64 306 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Stell"}','{"text": "Raumpylone auf"}','{"text": ""}','{"text": ""}']}}
+fill 132 64 292 132 79 307 minecraft:light_gray_concrete
+setblock 124 64 296 ae2:spatial_pylon
+setblock 124 64 297 ae2:spatial_pylon
+setblock 124 64 298 ae2:spatial_pylon
+setblock 124 64 299 ae2:spatial_pylon
+setblock 124 64 300 ae2:spatial_pylon
+setblock 124 65 296 ae2:spatial_pylon
+setblock 124 65 300 ae2:spatial_pylon
+setblock 124 66 296 ae2:spatial_pylon
+setblock 124 66 300 ae2:spatial_pylon
+setblock 124 67 296 ae2:spatial_pylon
+setblock 124 67 300 ae2:spatial_pylon
+setblock 124 68 296 ae2:spatial_pylon
+setblock 124 68 297 ae2:spatial_pylon
+setblock 124 68 298 ae2:spatial_pylon
+setblock 124 68 299 ae2:spatial_pylon
+setblock 124 68 300 ae2:spatial_pylon
+setblock 125 64 296 ae2:spatial_pylon
+setblock 125 64 300 ae2:spatial_pylon
+setblock 125 68 296 ae2:spatial_pylon
+setblock 125 68 300 ae2:spatial_pylon
+setblock 126 64 296 ae2:spatial_pylon
+setblock 126 64 300 ae2:spatial_pylon
+setblock 126 68 296 ae2:spatial_pylon
+setblock 126 68 300 ae2:spatial_pylon
+setblock 127 64 296 ae2:spatial_pylon
+setblock 127 64 300 ae2:spatial_pylon
+setblock 127 68 296 ae2:spatial_pylon
+setblock 127 68 300 ae2:spatial_pylon
+setblock 128 64 296 ae2:spatial_pylon
+setblock 128 64 297 ae2:spatial_pylon
+setblock 128 64 298 ae2:spatial_pylon
+setblock 128 64 299 ae2:spatial_pylon
+setblock 128 64 300 ae2:spatial_pylon
+setblock 128 65 296 ae2:spatial_pylon
+setblock 128 65 300 ae2:spatial_pylon
+setblock 128 66 296 ae2:spatial_pylon
+setblock 128 66 300 ae2:spatial_pylon
+setblock 128 67 296 ae2:spatial_pylon
+setblock 128 67 300 ae2:spatial_pylon
+setblock 128 68 296 ae2:spatial_pylon
+setblock 128 68 297 ae2:spatial_pylon
+setblock 128 68 298 ae2:spatial_pylon
+setblock 128 68 299 ae2:spatial_pylon
+setblock 128 68 300 ae2:spatial_pylon
+setblock 123 64 300 ae2:spatial_io_port[facing=south,spin=0,powered=false]
+setblock 133 64 306 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "134.3"}','{"text": "ae2_advanced"}','{"text": "reaction"}','{"text": ""}']}}
+setblock 134 64 306 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Bau eine"}','{"text": "Reaktionskammer"}','{"text": ""}','{"text": ""}']}}
+fill 142 64 292 142 79 307 minecraft:light_gray_concrete
+setblock 137 64 297 advanced_ae:reaction_chamber[working=true]
+setblock 143 64 306 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "134.4"}','{"text": "ae2_advanced"}','{"text": "matrix"}','{"text": ""}']}}
+setblock 144 64 306 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Bau eine"}','{"text": "Assembler-Matrix"}','{"text": ""}','{"text": ""}']}}
+fill 153 64 292 153 79 307 minecraft:light_gray_concrete
+setblock 146 64 296 extendedae:assembler_matrix_frame
+setblock 146 64 297 extendedae:assembler_matrix_frame
+setblock 146 64 298 extendedae:assembler_matrix_frame
+setblock 146 65 296 extendedae:assembler_matrix_frame
+setblock 146 65 297 extendedae:assembler_matrix_wall
+setblock 146 65 298 extendedae:assembler_matrix_frame
+setblock 146 66 296 extendedae:assembler_matrix_frame
+setblock 146 66 297 extendedae:assembler_matrix_frame
+setblock 146 66 298 extendedae:assembler_matrix_frame
+setblock 147 64 296 extendedae:assembler_matrix_frame
+setblock 147 64 297 extendedae:assembler_matrix_wall
+setblock 147 64 298 extendedae:assembler_matrix_frame
+setblock 147 65 296 extendedae:assembler_matrix_wall
+setblock 147 65 298 extendedae:assembler_matrix_glass
+setblock 147 66 296 extendedae:assembler_matrix_frame
+setblock 147 66 297 extendedae:assembler_matrix_wall
+setblock 147 66 298 extendedae:assembler_matrix_frame
+setblock 148 64 296 extendedae:assembler_matrix_frame
+setblock 148 64 297 extendedae:assembler_matrix_wall
+setblock 148 64 298 extendedae:assembler_matrix_frame
+setblock 148 65 296 extendedae:assembler_matrix_wall
+setblock 148 65 298 extendedae:assembler_matrix_glass
+setblock 148 66 296 extendedae:assembler_matrix_frame
+setblock 148 66 297 extendedae:assembler_matrix_wall
+setblock 148 66 298 extendedae:assembler_matrix_frame
+setblock 149 64 296 extendedae:assembler_matrix_frame
+setblock 149 64 297 extendedae:assembler_matrix_frame
+setblock 149 64 298 extendedae:assembler_matrix_frame
+setblock 149 65 296 extendedae:assembler_matrix_frame
+setblock 149 65 297 extendedae:assembler_matrix_wall
+setblock 149 65 298 extendedae:assembler_matrix_frame
+setblock 149 66 296 extendedae:assembler_matrix_frame
+setblock 149 66 297 extendedae:assembler_matrix_frame
+setblock 149 66 298 extendedae:assembler_matrix_frame
+setblock 147 65 297 extendedae:assembler_matrix_pattern
+setblock 148 65 297 extendedae:assembler_matrix_crafter
 execute as @e[type=minecraft:item,tag=!kw_shot] run kill @s

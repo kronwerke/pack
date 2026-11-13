@@ -1,22 +1,14 @@
-# 040 mekanism_ores/quintupling
-#area 107 65 129 90
-fill 107 64 65 129 91 90 minecraft:air
-fill 107 60 65 129 62 90 minecraft:stone
-fill 107 63 65 129 63 90 minecraft:light_gray_concrete
-fill 111 64 71 129 79 71 minecraft:light_gray_concrete
-fill 111 64 71 111 79 84 minecraft:light_gray_concrete
-setblock 112 64 83 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "040"}','{"text": "mekanism_ores"}','{"text": "quintupling"}','{"text": ""}']}}
-setblock 113 64 83 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "the full eight"}','{"text": "machine ladder"}','{"text": "with gas tubes"}','{"text": ""}']}}
-fill 124 64 71 124 79 84 minecraft:light_gray_concrete
-setblock 113 64 77 minecraft:chest[facing=south]{Items:[]}
-setblock 114 64 77 mekanism:chemical_dissolution_chamber[facing=south]
-setblock 115 64 77 mekanism:chemical_washer[facing=south]
-setblock 116 64 77 mekanism:chemical_crystallizer[facing=south]
-setblock 117 64 77 mekanism:chemical_injection_chamber[facing=south]
-setblock 118 64 77 mekanism:purification_chamber[facing=south]
-setblock 119 64 77 mekanism:crusher[facing=south]
-setblock 120 64 77 mekanism:enrichment_chamber[facing=south]
-setblock 121 64 77 mekanism:energized_smelter[facing=south]
-setblock 122 64 77 minecraft:chest[facing=south]{Items:[]}
-fill 114 65 77 116 65 77 mekanism:basic_pressurized_tube
+# 040 mekanism/configurator
+#area -4 95 15 120
+fill -4 64 95 15 91 120 minecraft:air
+fill -4 60 95 15 62 120 minecraft:stone
+fill -4 63 95 15 63 120 minecraft:light_gray_concrete
+fill 0 64 101 15 79 101 minecraft:light_gray_concrete
+fill 0 64 101 0 79 114 minecraft:light_gray_concrete
+setblock 1 64 113 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "040"}','{"text": "mekanism"}','{"text": "configurator"}','{"text": ""}']}}
+setblock 2 64 113 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "side"}','{"text": "configuration"}','{"text": "tab with auto"}','{"text": "eject"}']}}
+fill 10 64 101 10 79 114 minecraft:light_gray_concrete
+setblock 4 64 106 mekanism:metallurgic_infuser[facing=south]
+setblock 6 64 106 minecraft:smooth_stone_slab
+summon item_display 6.5 64.95 106.5 {item:{id:"mekanism:configurator",count:1},item_display:"fixed",billboard:"vertical",transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[1.0f,1.0f,1.0f]},brightness:{sky:15,block:15},Tags:["kw_shot"]}
 execute as @e[type=minecraft:item,tag=!kw_shot] run kill @s

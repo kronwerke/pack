@@ -334,11 +334,11 @@ hash = "93c982c2e09101877cba15ed69d2eee71ed5be2243ee8dcdcc0734845932c8b6"
 
 [[files]]
 file = "config/ftbquests/quests/lang/de_de.snbt"
-hash = "34393c7c1de805c5ac501fd2eb7d1ac62e78d1d809f26d6434fc993483d07235"
+hash = "d451d03fa20cf51be2bf822c54278aabce4dfda30c2ff848c2a75e340a2de482"
 
 [[files]]
 file = "config/ftbquests/quests/lang/en_us.snbt"
-hash = "7070d082e4e291b05c9d1a813409093963c8565694d48785c4a4575e8a1e0662"
+hash = "db6abe0886558ccc2ead5f41ff0802a05c426f39ffc76319a4f3982ed528c6c9"
 
 [[files]]
 file = "config/ftbquests/quests/reward_tables/s1_common.snbt"
@@ -2781,6 +2781,10 @@ file = "kubejs/assets/kronwerke/textures/quests/shots/ars_master_charged_certus.
 hash = "0a2dc6a88c5b1225158796452b6df191d2d1d532f415e312c0c7a7bf1f8094aa"
 
 [[files]]
+file = "kubejs/assets/kronwerke/textures/quests/shots/ars_master_golem_bookwyrm.png"
+hash = "e2b0ffd6e4f63fe0e53be1a8a599263940357875872cb9a3908f4bdc1ae3dd62"
+
+[[files]]
 file = "kubejs/assets/kronwerke/textures/quests/shots/ars_master_ritual_awakening.png"
 hash = "8e83cd6b13a8afa7fe405704d5e0ea982ebf30f24756f71c90e44209ca143cfe"
 
@@ -2985,6 +2989,10 @@ file = "kubejs/assets/kronwerke/textures/quests/shots/create_trains_unprocessed_
 hash = "c3bfb53cecc8b667f890dbc012883587be7b7f96018ed5baed3aba202820acdb"
 
 [[files]]
+file = "kubejs/assets/kronwerke/textures/quests/shots/create_trains_welcome.png"
+hash = "bd41910048bdda89198d5b560b1de3e751ed3bb1309097b3ea3cb6f8789c84d1"
+
+[[files]]
 file = "kubejs/assets/kronwerke/textures/quests/shots/create_washing.png"
 hash = "96603bae6e7cac9ded969ee0c5362ddd21603a8934e4407b25f661b5da98a7c6"
 
@@ -3035,6 +3043,10 @@ hash = "2ebb1f03fc0ab6964dab616eec1238cd510e712cce027f841562a203153bc403"
 [[files]]
 file = "kubejs/assets/kronwerke/textures/quests/shots/deeper_darker_transmitter.png"
 hash = "8cf5c5d6dedc28426a681aed81818094d218a91138804b85037c003f54902d94"
+
+[[files]]
+file = "kubejs/assets/kronwerke/textures/quests/shots/draconic_chaos_reactor.png"
+hash = "ff1ed33d2a9d020f6bc5e044f933c78f114aea86c4b360e9b2bc99b7d1671cd6"
 
 [[files]]
 file = "kubejs/assets/kronwerke/textures/quests/shots/draconic_dust.png"
@@ -3329,6 +3341,10 @@ file = "kubejs/assets/kronwerke/textures/quests/shots/immersive_heavy_diesel.png
 hash = "2780c8fa4e8a2e2bec2a79e3cc8504b70173e5da0f964a76970f0fab5366d4bb"
 
 [[files]]
+file = "kubejs/assets/kronwerke/textures/quests/shots/immersive_heavy_duroplast.png"
+hash = "5d6e51428f6a3bae78942de646f4bd916805382f7d809d9ddd9e0cba3adb993b"
+
+[[files]]
 file = "kubejs/assets/kronwerke/textures/quests/shots/immersive_heavy_excavator.png"
 hash = "275ff3f44aab242e07d96c4dfd24019a7bf979aa0621c54d962c803e66009cde"
 
@@ -3337,8 +3353,16 @@ file = "kubejs/assets/kronwerke/textures/quests/shots/immersive_heavy_fermenter.
 hash = "186a96fbc9c8446ddfe6466d75aa77365b32175e5755266a1ddffd7d79084a43"
 
 [[files]]
+file = "kubejs/assets/kronwerke/textures/quests/shots/immersive_heavy_heavy.png"
+hash = "f5bd7d48ffa19f601db3368bb386b32bc56483a0569dfa461dbda3321ca3ce5b"
+
+[[files]]
 file = "kubejs/assets/kronwerke/textures/quests/shots/immersive_heavy_hv.png"
 hash = "875a2667da518d8f731d645e5bef18487ecfd7e1c07746fb48641b8ae4faa0cf"
+
+[[files]]
+file = "kubejs/assets/kronwerke/textures/quests/shots/immersive_heavy_light.png"
+hash = "9c7e79336259e33b0bbc752efda18459b5854aeece1333f79f2c458c17d5adba"
 
 [[files]]
 file = "kubejs/assets/kronwerke/textures/quests/shots/immersive_heavy_lightning_rod.png"
@@ -3359,6 +3383,10 @@ hash = "1488ecdbe0a215d0820933e2f2f8e166f80a1e923b2fdfd9185719540a7c7ef8"
 [[files]]
 file = "kubejs/assets/kronwerke/textures/quests/shots/immersive_heavy_refinery.png"
 hash = "2592fe799768f95b9fc5f98d47149aefd50c33aff308a70d4670e2e0bb29160f"
+
+[[files]]
+file = "kubejs/assets/kronwerke/textures/quests/shots/immersive_heavy_resonanz.png"
+hash = "4f36b03b4782f0c7052b535c0ebf32df080ec642d99787e7284a7b555b3c69e7"
 
 [[files]]
 file = "kubejs/assets/kronwerke/textures/quests/shots/immersive_heavy_sawmill.png"
@@ -3385,6 +3413,10 @@ file = "kubejs/assets/kronwerke/textures/quests/shots/immersive_list_mb.png"
 hash = "fa907567125b6aa96ff5d414a8753a669d92ff8367bcc24f8eba60ed0f8b656f"
 
 [[files]]
+file = "kubejs/assets/kronwerke/textures/quests/shots/immersive_pump.png"
+hash = "4abbac33819780f7f5576ce3b0e2cc5e8fe1d083b1e029e0abc4ddf4aff39464"
+
+[[files]]
 file = "kubejs/assets/kronwerke/textures/quests/shots/immersive_shelf.png"
 hash = "e14dba73802c0322fbcccb55b068a3498be0451adb877cc630e1c25cd153ec4c"
 
@@ -3405,8 +3437,16 @@ file = "kubejs/assets/kronwerke/textures/quests/shots/immersive_transformer.png"
 hash = "8c6812f5b07b69bffc261c73afd1508e5b87db6f3a161564d055dde5a5e86643"
 
 [[files]]
+file = "kubejs/assets/kronwerke/textures/quests/shots/immersive_treated_wood.png"
+hash = "1c3665366dfed241f992bb03ea55bb0c121979d6bf022d2c222f473ec4a72673"
+
+[[files]]
 file = "kubejs/assets/kronwerke/textures/quests/shots/immersive_watermill.png"
 hash = "59bea375e237b163300b5502b6a1d1e6d8785de5d28a4d6b18f887291d631b25"
+
+[[files]]
+file = "kubejs/assets/kronwerke/textures/quests/shots/industrial_addons.png"
+hash = "b1ce1b76e2586e23b7f4d557d40e0e1fb0134db9556ab4869478a1c61d602644"
 
 [[files]]
 file = "kubejs/assets/kronwerke/textures/quests/shots/industrial_bio.png"
@@ -3437,12 +3477,20 @@ file = "kubejs/assets/kronwerke/textures/quests/shots/industrial_latex_unit.png"
 hash = "eb17653b21a91ea0f1d1f7ad635e30f19ae80f6f4dc05b2974d0f26747ef651e"
 
 [[files]]
+file = "kubejs/assets/kronwerke/textures/quests/shots/industrial_plastic.png"
+hash = "fb2123b0df0ddd4c8af01de9b3de890ac3e4a84cedd7757fce28683c05f66d33"
+
+[[files]]
 file = "kubejs/assets/kronwerke/textures/quests/shots/industrial_sower.png"
 hash = "42d379b0cf02a074c3248efef33a6b317866bb549719b1e9c60652bbd6aa752a"
 
 [[files]]
 file = "kubejs/assets/kronwerke/textures/quests/shots/industrial_washing.png"
 hash = "e0a3672bdf83846ffb3d99022e9216b41b01bb3522a7f39e4c84fe13d6af51d9"
+
+[[files]]
+file = "kubejs/assets/kronwerke/textures/quests/shots/industrial_welcome.png"
+hash = "5a941bd3e64ce82a909a8ddb84cf3907dd1953aeab3172f151ff5375f3718fcd"
 
 [[files]]
 file = "kubejs/assets/kronwerke/textures/quests/shots/list_dimensions_d_mining.png"
@@ -3523,6 +3571,18 @@ hash = "ec22abd16433290480148b7ebc6e015a2a283841c95ee4e6f7f63b7dff323d63"
 [[files]]
 file = "kubejs/assets/kronwerke/textures/quests/shots/logistics_xnet_connectors.png"
 hash = "5cfff1433821688f1afe378bbc0b4552680d724c39136008f1298224208823b1"
+
+[[files]]
+file = "kubejs/assets/kronwerke/textures/quests/shots/mahou_tsukai_cloth.png"
+hash = "64afb5d77944d6fc6036f4eb5a7fc638a56607985b6fd0ad6dc8ac0d76076649"
+
+[[files]]
+file = "kubejs/assets/kronwerke/textures/quests/shots/mahou_tsukai_fay_sight.png"
+hash = "c012a467b87f49ec606a008dcdb4ab1d2524bda1fd9a42a336ac82edb59c1de4"
+
+[[files]]
+file = "kubejs/assets/kronwerke/textures/quests/shots/mahou_tsukai_staff.png"
+hash = "dd236927424548e41eef0306ebed64192379c8e315882d4f64b13b14aa5c7192"
 
 [[files]]
 file = "kubejs/assets/kronwerke/textures/quests/shots/malum_altar.png"
@@ -3693,6 +3753,18 @@ file = "kubejs/assets/kronwerke/textures/quests/shots/occultism_strigeor.png"
 hash = "2b88dd1c0774794e434bd152dd2923559e6e587f61c24d0193212d12cace1a68"
 
 [[files]]
+file = "kubejs/assets/kronwerke/textures/quests/shots/oritech_addon_crop.png"
+hash = "7c43bd8db5ca860ef75b1ab647062e2a9952b7376e6cce223ad9023d6bb2e891"
+
+[[files]]
+file = "kubejs/assets/kronwerke/textures/quests/shots/oritech_addon_quarry.png"
+hash = "415be9c827ccba264390387353b17ae5c6a645d2963fbf6cbfb4be490dd92a9f"
+
+[[files]]
+file = "kubejs/assets/kronwerke/textures/quests/shots/oritech_addons.png"
+hash = "57b34cbff30ea1df7c4baa384aa756576d4586bc1cfa732abd18c5ac5291edc9"
+
+[[files]]
 file = "kubejs/assets/kronwerke/textures/quests/shots/oritech_atomic_forge.png"
 hash = "c695e4fffe8ac58a36f820fcef520d93bd9fd490d3f750a788b3d44648bb429f"
 
@@ -3709,6 +3781,10 @@ file = "kubejs/assets/kronwerke/textures/quests/shots/oritech_exo.png"
 hash = "d905cbed6c2039ba5d4b434c7fe9b86e06ef3838c7375020831c0c0b82293463"
 
 [[files]]
+file = "kubejs/assets/kronwerke/textures/quests/shots/oritech_fragment.png"
+hash = "15d859c097d22f4b6b43f741937505325ce0bf503a824a3699d4ebc70c0b820c"
+
+[[files]]
 file = "kubejs/assets/kronwerke/textures/quests/shots/oritech_fragment_forge.png"
 hash = "9fae94f252d9184fe8057e4756d003147fec74663a4791316acf0c0de1aabb2c"
 
@@ -3719,6 +3795,10 @@ hash = "7a9161c5e34e4ad616f7c39a15dd5d280e63e0c84942927b995d44a1cd48f68a"
 [[files]]
 file = "kubejs/assets/kronwerke/textures/quests/shots/oritech_pipes.png"
 hash = "0e17f785baecfe2e112e09851fcfa0e185b6f2888221b44ee5a5956982aa2aa3"
+
+[[files]]
+file = "kubejs/assets/kronwerke/textures/quests/shots/oritech_plastic.png"
+hash = "7c5dc95096deb3e5730b92726543ed0d449f5407e7d42b8f447de6b950849b0f"
 
 [[files]]
 file = "kubejs/assets/kronwerke/textures/quests/shots/oritech_reactor.png"
@@ -3825,8 +3905,16 @@ file = "kubejs/assets/kronwerke/textures/quests/shots/productive_trees_first_tre
 hash = "d898cf818fc6a53bd1647ff274fb8bda1ac689ff724a39e7fb51324c19c8825a"
 
 [[files]]
+file = "kubejs/assets/kronwerke/textures/quests/shots/productive_trees_loot_saplings.png"
+hash = "04b8168aca3330535dd684de48b162fab7702abf83949cd985033c16d28b318d"
+
+[[files]]
 file = "kubejs/assets/kronwerke/textures/quests/shots/productive_trees_mega.png"
 hash = "76d9e4605a8c9133b6d13a51ab3c82cad22aaf9030b949d5d085712e8b04969e"
+
+[[files]]
+file = "kubejs/assets/kronwerke/textures/quests/shots/productive_trees_pollinated.png"
+hash = "5b639f4bd8ee23b1d505212c27cca811b46221422a670220933ff1cc1e987ab4"
 
 [[files]]
 file = "kubejs/assets/kronwerke/textures/quests/shots/productive_trees_pots.png"
@@ -3963,6 +4051,10 @@ hash = "c76b34282bd8f2aacd08b645ac205265fb19c15714710636f3fc30e12adb342f"
 [[files]]
 file = "kubejs/assets/kronwerke/textures/quests/shots/theurgy_vessels.png"
 hash = "c8f525b87310aa0b5734eb9aa4306a29aa9cfdd652838eea476c6efb8793b942"
+
+[[files]]
+file = "kubejs/assets/kronwerke/textures/quests/shots/theurgy_wire.png"
+hash = "7977abd651e7342d1f1cc0ee621cdc11bd72b87c1f4db039c35edddff743c1a0"
 
 [[files]]
 file = "kubejs/assets/kronwerke/textures/quests/shots/undergarden_arrival.png"

@@ -2440,3 +2440,57 @@ def _(b):
     b.b(7, 2, 4, "create:mechanical_press[facing=south]")
     b.f(3, 3, 4, 7, 3, 4, "create:andesite_casing")
     b.drop(6, 1, 4, "create:incomplete_precision_mechanism")
+
+
+# ===================================================================================
+# Fifteenth batch: farms that turn
+
+def turning_arm(b, cx, cz, reach, speed=8):
+    """A mechanical bearing in the floor, looking up, with an arm of linear chassis across it:
+    reach blocks to either side. The motor sits under the bearing. The arm is put together with
+    a click on the bearing, after whatever rides on it has been set."""
+    b.b(cx, -1, cz, "create:mechanical_bearing[facing=up]")
+    motor(b, cx, -2, cz, "up", speed)
+    for x in range(cx - reach, cx + reach + 1):
+        ends = "true" if abs(x - cx) == reach else "false"
+        b.b(x, 0, cz, f"create:linear_chassis[axis=x,sticky_bottom={ends},sticky_top={ends}]")
+
+
+@scene("farms/crops_harvester", w=11, d=11)
+def _(b):
+    # a round wheat field, the arm sweeps it: harvesters on the arm's sides, blades forward
+    cx = cz = 5
+    for x in range(1, 10):
+        for z in range(1, 10):
+            r2 = (x - cx) ** 2 + (z - cz) ** 2
+            if r2 <= 13:
+                b.b(x, -1, z, "minecraft:farmland[moisture=7]")
+                b.b(x, 0, z, "minecraft:wheat[age=7]")
+    for x, z in ((cx - 4, cz), (cx + 4, cz), (cx, cz - 4), (cx, cz + 4)):
+        b.b(x, -1, z, "minecraft:water")
+    turning_arm(b, cx, cz, 2)
+    for x in (cx + 1, cx + 2):
+        b.b(x, 0, cz + 1, "create:mechanical_harvester[facing=south,waterlogged=false]")
+    for x in (cx - 1, cx - 2):
+        b.b(x, 0, cz - 1, "create:mechanical_harvester[facing=north,waterlogged=false]")
+    b.use(cx, -1, cz, "up", "minecraft:air")
+    b.later(cx + 2, 0, cz, "block @ create:linear_chassis", unless=True)     # the arm left the world: it turns
+    b.focus(1, 0, 1, 9, 1, 9)
+
+
+@scene("farms/wood_saw", w=11, d=11)
+def _(b):
+    # a ring of saplings, the arm's saws pass through where their trunks will stand
+    cx = cz = 5
+    for x in range(0, 11):
+        for z in range(0, 11):
+            if (x - cx) ** 2 + (z - cz) ** 2 <= 22:
+                b.b(x, -1, z, "minecraft:grass_block[snowy=false]")
+    for x, z in ((cx, cz - 4), (cx, cz + 4), (cx + 3, cz + 3), (cx - 3, cz - 3), (cx + 3, cz - 3), (cx - 3, cz + 3)):
+        b.b(x, 0, z, "minecraft:oak_sapling")
+    turning_arm(b, cx, cz, 3)
+    b.b(cx + 4, 0, cz, "create:mechanical_saw[facing=south,axis_along_first=false,flipped=false]")
+    b.b(cx - 4, 0, cz, "create:mechanical_saw[facing=north,axis_along_first=false,flipped=false]")
+    b.use(cx, -1, cz, "up", "minecraft:air")
+    b.later(cx + 3, 0, cz, "block @ create:linear_chassis", unless=True)
+    b.focus(1, 0, 1, 9, 1, 9)

@@ -1169,18 +1169,17 @@ def _(b):
 
 @scene("storage/drawers_4")
 def _(b):
-    # a wall of drawers, three by three, set against planks so every one looks out; four kinds
-    # in each (the hand cannot aim at one of the four compartments, so the contents are written
-    # into the drawer the way the drawer itself stores them)
-    b.f(3, 0, 3, 5, 2, 3, "minecraft:oak_planks")
+    # a wall of drawers, three by three, four kinds in each. An upright drawer is facing=down
+    # in Functional Storage, and subfacing says where its front looks (seen on the server,
+    # 13.11.2026: every other facing lays the model down). The contents are written the way
+    # the drawer itself stores them: a hand cannot aim at one of the four compartments.
     kinds = ["iron_ingot", "copper_ingot", "gold_ingot", "raw_iron", "raw_copper", "raw_gold", "coal", "charcoal", "redstone",
              "lapis_lazuli", "diamond", "emerald", "quartz", "amethyst_shard", "flint", "clay_ball", "bone", "string", "gunpowder",
              "rotten_flesh", "leather", "feather", "wheat", "sugar_cane", "red_dye", "blue_dye", "green_dye", "yellow_dye",
              "white_dye", "black_dye", "slime_ball", "ender_pearl", "blaze_rod", "glowstone_dust", "nether_wart", "paper"]
     for i in range(9):
         x, y = 3 + i % 3, i // 3
-        b.use(x, y, 3, "south", "functionalstorage:oak_4")
-        b.changed(x, y, 4, "minecraft:air")
+        b.b(x, y, 4, "functionalstorage:oak_4[facing=down,subfacing=south]")
         slots = ",".join(f'{k}:{{Stack:{{id:"minecraft:{kinds[i * 4 + k]}",count:1}},Amount:{64 * (k + 2)}}}' for k in range(4))
         b.cmd(f"data merge block {b._p(x, y, 4)} {{handler:{{BigItems:{{{slots}}}}}}}")
 
@@ -1399,25 +1398,6 @@ def _(b):
     endo_feeder(b, 3, 4)
 
 
-@scene("draconic_chaos/reactor", h=20)
-def _(b):
-    # the core in the air, four stabilizers in one plane on four sides and the energy injector
-    # above, each set by hand against a block (taken away again) so that it looks at the core
-    cx, cy, cz = 4, 3, 4
-    b.b(cx, cy, cz, "draconicevolution:reactor_core")
-    helper = "minecraft:stone"
-    for hx, hz, face in ((0, cz, "east"), (8, cz, "west"), (cx, 0, "south"), (cx, 8, "north")):
-        b.b(hx, cy, hz, helper)
-        b.use(hx, cy, hz, face, "draconicevolution:reactor_stabilizer")
-        b.b(hx, cy, hz, "minecraft:air")
-    b.b(cx, cy + 4, cz, helper)
-    b.use(cx, cy + 4, cz, "down", "draconicevolution:reactor_injector")
-    b.b(cx, cy + 4, cz, "minecraft:air")
-    b.expect(1, cy, cz, "draconicevolution:reactor_stabilizer")
-    b.expect(cx, cy + 3, cz, "draconicevolution:reactor_injector")
-    b.focus(1, 1, 1, 7, cy + 3, 7)
-
-
 @scene("list_transport/create_tank")
 def _(b):
     # fluid tanks set together merge into one: three by three, four high
@@ -1470,15 +1450,15 @@ def _(b):
     b.focus(1, 0, 3, 11, 5, 5)
 
 
-@scene("ars_apprentice/relay", w=13)
+@scene("ars_apprentice/relay", w=11)
 def _(b):
     # full jar, relay, relay, empty jar, linked with the dominion wand in that order (closer
     # together than the thirty blocks a link reaches, so that all four fit a picture)
-    b.b(1, 0, 4, "ars_nouveau:source_jar[fill=11]", "{source:10000}")
+    b.b(2, 0, 4, "ars_nouveau:source_jar[fill=11]", "{source:10000}")
     b.b(4, 0, 4, "ars_nouveau:relay")
-    b.b(8, 0, 4, "ars_nouveau:relay")
-    b.b(11, 0, 4, "ars_nouveau:source_jar[fill=0]")
-    for a, c in ((1, 4), (4, 8), (8, 11)):
+    b.b(6, 0, 4, "ars_nouveau:relay")
+    b.b(8, 0, 4, "ars_nouveau:source_jar[fill=0]")
+    for a, c in ((2, 4), (4, 6), (6, 8)):
         b.use(a, 0, 4, "south", "ars_nouveau:dominion_wand")
         b.use(c, 0, 4, "south", "ars_nouveau:dominion_wand")
 
@@ -1547,7 +1527,7 @@ def _(b):
     b.use(5, 0, 4, "up", "create:belt_connector")
     b.use(5, 0, 7, "up", "create:belt_connector")
     b.changed(5, 0, 5, "minecraft:air")
-    housed_motor(b, 6, 0, 7, "west", 16)
+    motor(b, 6, 0, 4, "west", 16)                      # in the base under the lava, out of sight
     b.b(2, 1, 4, "minecraft:water")
     b.b(5, 1, 4, "minecraft:cobblestone")
     b.b(6, 1, 4, "minecraft:lava")
@@ -1616,12 +1596,13 @@ def _(b):
     b.f(3, 0, 4, 5, 2, 4, "enderio:basic_capacitor_bank")
 
 
-@scene("pneumaticcraft/refinery")
+@scene("pneumaticcraft/refinery", h=20)
 def _(b):
     # the refinery's controller, four outputs stacked on it: the lighter the product, the higher its output
     b.b(4, 0, 4, "pneumaticcraft:refinery[facing=south]")
     for y in range(1, 5):
         b.b(4, y, 4, "pneumaticcraft:refinery_output[facing=south]")
+    b.focus(2, 0, 3, 6, 5, 5)
 
 
 @scene("list_power/mek_heat")

@@ -3,7 +3,7 @@
   -8,
   -8,
   428,
-  231
+  323
  ],
  "checks": [
   [
@@ -28,7 +28,7 @@
   ],
   [
    "create_brass/crushing_wheel",
-   "execute in kronwerke:testworld if block 146 65 32 create:crushing_wheel_controller"
+   "execute in kronwerke:testworld if block 161 65 32 create:crushing_wheel_controller"
   ],
   [
    "mekanism/dynamic_tank",
@@ -51,8 +51,20 @@
    "execute in kronwerke:testworld if data block 87 65 56 inventory_id"
   ],
   [
+   "mekanism_elite/fusion",
+   "execute in kronwerke:testworld if data block 101 68 56 inventory_id"
+  ],
+  [
+   "antimatter/sps",
+   "execute in kronwerke:testworld if data block 122 67 60 inventory_id"
+  ],
+  [
+   "storage/vault_big",
+   "execute in kronwerke:testworld if block 3 64 222 create:item_vault[large=true]"
+  ],
+  [
    "list_dimensions/d_mining",
-   "execute in kronwerke:testworld if block 60 66 209 kronwerke:minenportal"
+   "execute in kronwerke:testworld if block 60 66 261 kronwerke:minenportal"
   ]
  ]
 }

@@ -252,7 +252,7 @@ def _(b):
     b.b(4, 0, 4, "occultism:spirit_fire[color=white]")
     b.drop(4, 1.5, 4, "minecraft:andesite", 8)
     b.drop(5, 0.2, 5, "occultism:otherstone", 4)
-    b.focus(2, 0, 2, 6, 2, 6)
+    b.focus(3, 0, 3, 5, 1, 5)
 
 
 @scene("occultism_afrit/storage", w=13, d=13)
@@ -508,12 +508,15 @@ def _(b):
 
 @scene("create/belt")
 def _(b):
-    # two parallel shafts, clicked one after the other with the belt in hand
-    b.b(2, 0, 4, "create:shaft[axis=z]")
-    b.b(6, 0, 4, "create:shaft[axis=z]")
-    b.use(2, 0, 4, "up", "create:belt_connector")
-    b.use(6, 0, 4, "up", "create:belt_connector")
+    # two parallel shafts, clicked one after the other with the belt in hand. It runs toward
+    # the camera, so the shaft in its end shows; ingots lie on it.
+    b.b(4, 0, 2, "create:shaft[axis=x]")
+    b.b(4, 0, 6, "create:shaft[axis=x]")
+    b.use(4, 0, 2, "up", "create:belt_connector")
+    b.use(4, 0, 6, "up", "create:belt_connector")
     b.changed(4, 0, 4, "minecraft:air")              # the belt runs between them
+    for z in (3, 4, 5):
+        b.drop(4, 1, z, "minecraft:iron_ingot")
 
 
 @scene("create/washing")
@@ -677,7 +680,7 @@ def _(b):
     b.b(4, 1, 4, "ars_nouveau:enchanting_apparatus[facing=up]")
     for dx, dz in ((-2, -2), (0, -3), (2, -2), (-3, 0), (3, 0), (-2, 2), (2, 2)):
         b.b(4 + dx, 0, 4 + dz, "ars_nouveau:arcane_pedestal[facing=up]")
-    b.b(7, 0, 7, "ars_nouveau:source_jar[fill=11]", "{source:10000}")
+    b.b(7, 0, 1, "ars_nouveau:source_jar[fill=11]", "{source:10000}")
 
 
 @scene("ars_nouveau/imbuement")
@@ -801,3 +804,227 @@ def _(b):
     b.b(4, 0, 4, "powah:energizing_orb[facing=down]")
     for dx, dz in ((-2, 0), (2, 0), (0, -2)):
         b.b(4 + dx, 0, 4 + dz, "powah:energizing_rod_starter[facing=down]")
+
+
+# ===================================================================================
+# Second batch: what a reader has to lay out by a plan
+
+@scene("immersive/list_mb", w=18, d=12, h=20)
+def _(b):
+    # the seven structures of stage 2, each formed: the tall ones behind, the low ones in front
+    x = 1
+    for name in ("sheetmetal_tank", "silo", "improved_blast_furnace", "shelf"):
+        x += ie(b, name, x, 1)[0] + 1
+    x = 3
+    for name in ("coke_oven", "blast_furnace", "alloy_smelter"):
+        x += ie(b, name, x, 7)[0] + 2
+
+
+@scene("immersive/thermoelectric")
+def _(b):
+    # hot on one side, cold on the opposite one: magma and blue ice, an LV connector on top
+    b.b(3, 0, 4, "minecraft:magma_block")
+    b.b(4, 0, 4, "immersiveengineering:thermoelectric_generator")
+    b.b(5, 0, 4, "minecraft:blue_ice")
+    b.use(4, 0, 4, "up", "immersiveengineering:connector_lv")
+
+
+@scene("immersive/connectors", "immersive/capacitor", w=11)
+def _(b):
+    # two capacitors with a connector each, a relay on a post between them, copper wire from
+    # one to the next: connectors and wire placed and strung the way a player does it
+    b.b(2, 0, 4, "immersiveengineering:capacitor_lv")
+    b.b(8, 0, 4, "immersiveengineering:capacitor_lv")
+    b.f(5, 0, 4, 5, 2, 4, "immersiveengineering:treated_fence")
+    b.use(2, 0, 4, "up", "immersiveengineering:connector_lv")
+    b.use(8, 0, 4, "up", "immersiveengineering:connector_lv")
+    b.use(5, 2, 4, "up", "immersiveengineering:connector_lv_relay")
+    for x1, y1, x2, y2 in ((2, 1, 5, 3), (5, 3, 8, 1)):
+        b.use(x1, y1, 4, "south", "immersiveengineering:wirecoil_copper")
+        b.use(x2, y2, 4, "south", "immersiveengineering:wirecoil_copper")
+
+
+@scene("immersive/dynamo", "immersive/windmill", w=15, d=11, h=26)
+def _(b):
+    # the dynamo on a post of treated wood, the windmill set against its shaft side
+    b.f(7, 0, 3, 7, 6, 3, "immersiveengineering:treated_wood_horizontal")
+    b.b(7, 7, 3, "immersiveengineering:dynamo[facing=south]")
+    b.use(7, 7, 3, "south", "immersiveengineering:windmill")
+    b.changed(7, 7, 4, "minecraft:air")
+
+
+@scene("create_brass/brass_mixing")
+def _(b):
+    # from the bottom: lit blaze burner, basin, a block of air, mixer; a cogwheel beside the
+    # mixer turns it. In the basin what brass takes on Kronwerke.
+    b.b(4, 0, 4, "create:blaze_burner")
+    b.use(4, 0, 4, "south", "create:creative_blaze_cake")
+    b.b(4, 1, 4, "create:basin[facing=down]")
+    b.b(4, 3, 4, "create:mechanical_mixer")
+    b.b(5, 3, 4, "create:cogwheel[axis=y]")
+    drive_from_below(b, 5, 3, 4)
+    for item, n in (("minecraft:copper_ingot", 64), ("create:zinc_ingot", 32), ("minecraft:blaze_powder", 32)):
+        b.drop(4, 2.2, 4, item, n)
+
+
+@scene("storage/vault_big", w=10)
+def _(b):
+    # vaults set side by side merge into one: three by three, six long
+    b.f(2, 0, 3, 7, 2, 5, "create:item_vault[axis=x,large=false]")
+    b.later(2, 0, 3, "block @ create:item_vault[large=true]")
+
+
+def mek_shell(b, x0, z0, grid, frame, other, special=None):
+    """A Mekanism multiblock whose faces follow the grid of its validator (0 nothing, 1 the
+    frame, 2 frame, glass or a port): the fusion reactor and the SPS. The grids are the
+    ALLOWED_GRID of FusionReactorValidator and SPSValidator, read from the jars."""
+    n = len(grid)
+    special = special or {}
+    for x in range(n):
+        for y in range(n):
+            for z in range(n):
+                need = 0
+                if x in (0, n - 1):
+                    need = max(need, grid[z][y])
+                if y in (0, n - 1):
+                    need = max(need, grid[x][z])
+                if z in (0, n - 1):
+                    need = max(need, grid[x][y])
+                if need:
+                    b.b(x0 + x, y, z0 + z, special.get((x, y, z), frame if need == 1 else other))
+
+
+FUSION = [[0, 0, 1, 0, 0], [0, 1, 2, 1, 0], [1, 2, 2, 2, 1], [0, 1, 2, 1, 0], [0, 0, 1, 0, 0]]
+SPS = [[0, 0, 1, 1, 1, 0, 0], [0, 1, 2, 2, 2, 1, 0], [1, 2, 2, 2, 2, 2, 1], [1, 2, 2, 2, 2, 2, 1],
+       [1, 2, 2, 2, 2, 2, 1], [0, 1, 2, 2, 2, 1, 0], [0, 0, 1, 1, 1, 0, 0]]
+
+
+@scene("mekanism_elite/fusion", w=13, d=11, h=18)
+def _(b):
+    # the controller in the middle of the top, ports in two faces, the laser focus matrix in
+    # the east face; the amplifier fires at the matrix, the laser charges the amplifier
+    x0, z0 = 2, 3
+    mek_shell(b, x0, z0, FUSION, "mekanismgenerators:fusion_reactor_frame", "mekanismgenerators:reactor_glass", {
+        (2, 4, 2): "mekanismgenerators:fusion_reactor_controller[active=false]",
+        (4, 2, 2): "mekanismgenerators:laser_focus_matrix",
+        (0, 2, 2): "mekanismgenerators:fusion_reactor_port[active=false]",
+        (2, 0, 2): "mekanismgenerators:fusion_reactor_port[active=true]"})
+    for dx, block in ((6, "mekanism:laser_amplifier[facing=west]"), (8, "mekanism:laser[facing=west]")):
+        b.f(x0 + dx, 0, z0 + 2, x0 + dx, 1, z0 + 2, "mekanism:steel_casing")
+        b.b(x0 + dx, 2, z0 + 2, block)
+    b.formed(x0 + 2, 4, z0 + 2)
+
+
+@scene("antimatter/sps", w=13, d=13, h=20)
+def _(b):
+    # casing on the rim of every face, glass and ports inside it; the supercharged coil sits
+    # on the port in the front
+    x0, z0 = 3, 3
+    mek_shell(b, x0, z0, SPS, "mekanism:sps_casing", "mekanism:structural_glass", {
+        (3, 3, 6): "mekanism:sps_port[active=false]", (6, 3, 3): "mekanism:sps_port[active=true]",
+        (0, 3, 3): "mekanism:sps_port[active=false]"})
+    b.use(x0 + 3, 3, z0 + 6, "south", "mekanism:supercharged_coil")
+    b.changed(x0 + 3, 3, z0 + 7, "minecraft:air")
+    b.formed(x0 + 3, 3, z0 + 6)
+
+
+@scene("pneumaticcraft/chamber")
+def _(b):
+    # a hollow cube of three: walls on every edge, glass in the faces, the valve and an
+    # interface each in the middle of a face. The last wall goes in by hand: a chamber forms
+    # when a player closes the shell.
+    x0, z0 = 3, 3
+    special = {(2, 1, 1): "pneumaticcraft:pressure_chamber_valve[facing=east,formed=false]",
+               (0, 1, 1): "pneumaticcraft:pressure_chamber_interface[facing=west]"}
+    for x in range(3):
+        for y in range(3):
+            for z in range(3):
+                on = sum((x != 1, y != 1, z != 1))
+                if on == 0 or (x, y, z) == (0, 2, 2):
+                    continue
+                block = "pneumaticcraft:pressure_chamber_wall[wall_state=none]" if on > 1 else "pneumaticcraft:pressure_chamber_glass"
+                b.b(x0 + x, y, z0 + z, special.get((x, y, z), block))
+    b.use(x0, 1, z0 + 2, "up", "pneumaticcraft:pressure_chamber_wall")
+    b.expect(x0 + 2, 1, z0 + 1, "pneumaticcraft:pressure_chamber_valve[formed=true]")
+
+
+@scene("draconic/injectors", w=11, d=11)
+def _(b):
+    # eight injectors on four sides of the fusion crafting core, every tip toward the core,
+    # three blocks away (two at least)
+    cx, cz = 5, 5
+    b.b(cx, 0, cz, "draconicevolution:crafting_core")
+    for side in (-1, 1):
+        for k in (-3, 3):
+            b.b(cx + k, 0, cz + side, f"draconicevolution:basic_crafting_injector[facing={'west' if k > 0 else 'east'}]")
+            b.b(cx + side, 0, cz + k, f"draconicevolution:basic_crafting_injector[facing={'north' if k > 0 else 'south'}]")
+    b.pitch = 44.0
+
+
+def malum_altar(b, cx, cz):
+    """The spirit altar with runewood planks on it and two item stands with hallowed gold within four blocks."""
+    b.b(cx, 0, cz, "malum:spirit_altar")
+    b.use(cx, 0, cz, "south", "malum:runewood_planks")
+    for dx in (-2, 2):
+        b.b(cx + dx, 0, cz, "malum:runewood_planks")
+        b.b(cx + dx, 1, cz, "malum:runewood_item_stand[facing=up,waterlogged=false]")
+        b.use(cx + dx, 1, cz, "south", "malum:hallowed_gold_ingot")
+
+
+@scene("malum/altar")
+def _(b):
+    malum_altar(b, 4, 4)
+
+
+@scene("malum/obelisk", w=11)
+def _(b):
+    # up to four runewood obelisks near the altar quicken every infusion
+    malum_altar(b, 5, 4)
+    for dx, dz in ((-3, -2), (3, -2), (-3, 2), (3, 2)):
+        b.use(5 + dx, -1, 4 + dz, "up", "malum:runewood_obelisk")
+        b.changed(5 + dx, 0, 4 + dz, "minecraft:air")
+
+
+@scene("powah/reactor", h=18)
+def _(b):
+    # one reactor block set down with 36 in the hand: it builds itself, three by three and four high
+    b.use(4, -1, 4, "up", "powah:reactor_starter")
+    b.changed(4, 0, 4, "minecraft:air")
+    b.changed(5, 3, 5, "minecraft:air")
+    b.focus(3, 0, 3, 5, 3, 5)
+
+
+@scene("occultism_afrit/mineshaft")
+def _(b):
+    # the mineshaft on a hopper that empties it into a chest
+    b.b(4, 0, 4, "minecraft:hopper[facing=east]")
+    b.b(4, 1, 4, "occultism:dimensional_mineshaft[rotation=0]")
+    b.c(5, 0, 4, [], frame=True)
+
+
+@scene("ars_nouveau/chamber_auto")
+def _(b):
+    # a hopper above feeds amethyst, a hopper below takes the gems into a chest; the jar of
+    # source within two blocks
+    b.c(4, 3, 4, [("minecraft:amethyst_shard", 64)], frame=True)
+    b.b(4, 2, 4, "minecraft:hopper[facing=down]")
+    b.b(4, 1, 4, "ars_nouveau:imbuement_chamber[facing=up]")
+    b.b(4, 0, 4, "minecraft:hopper[facing=east]")
+    b.c(5, 0, 4, [], frame=True)
+    b.b(2, 0, 4, "ars_nouveau:source_jar[fill=11]", "{source:10000}")
+
+
+@scene("gaia/dandelifeon", w=27, d=27)
+def _(b):
+    # the field of 25 by 25 around the flower, marked in the floor, with a few cells laid out:
+    # a glider on its way to the middle and two blinkers
+    stage(b, 1, 1, 25, 25, "minecraft:smooth_stone")
+    b.b(13, -1, 13, "minecraft:grass_block")
+    b.b(13, 0, 13, "botania:dandelifeon")
+    for dx, dz in ((0, 0), (1, 1), (2, 1), (0, 2), (1, 2)):
+        b.b(6 + dx, 0, 6 + dz, "botania:cellular_block")
+    for x in (18, 19, 20):
+        b.b(x, 0, 8, "botania:cellular_block")
+    for z in (17, 18, 19):
+        b.b(7, 0, z, "botania:cellular_block")
+    b.pitch = 55.0

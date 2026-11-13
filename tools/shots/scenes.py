@@ -3257,4 +3257,4 @@ def _(b):
     b.b(7, 0, 4, "minecraft:chest[facing=south,type=single,waterlogged=false]")
 
 
-creature("gaia/fight", "botania:gaia_guardian", big=True)
+# gaia/fight has no scene: a guardian summoned without its fight takes the floor of the box with it and is gone

@@ -2494,3 +2494,96 @@ def _(b):
     b.use(cx, -1, cz, "up", "minecraft:air")
     b.later(cx + 3, 0, cz, "block @ create:linear_chassis", unless=True)
     b.focus(1, 0, 1, 9, 1, 9)
+
+
+# ===================================================================================
+# Sixteenth batch: more Ars Nouveau, Flux Networks in place, two IE singles
+
+@scene("ars_master/wilden_ritual")
+def _(b):
+    # the wilden summon on the brazier, spike, horn and wing on pedestals around it
+    b.b(4, 0, 4, "ars_nouveau:ritual_brazier")
+    b.use(4, 0, 4, "up", "ars_nouveau:ritual_wilden_summon")
+    for (x, z), item in (((2, 4), "ars_nouveau:wilden_spike"), ((6, 4), "ars_nouveau:wilden_horn"), ((4, 2), "ars_nouveau:wilden_wing")):
+        b.b(x, 0, z, "ars_nouveau:arcane_pedestal[facing=up]")
+        b.use(x, 0, z, "south", item)
+
+
+@scene("ars_master/charged_certus")
+def _(b):
+    # redstone and glowstone on pedestals beside the chamber, the certus crystal in it
+    b.b(4, 0, 4, "ars_nouveau:imbuement_chamber[facing=up]")
+    for (x, z), item in (((3, 4), "minecraft:redstone"), ((5, 4), "minecraft:glowstone_dust")):
+        b.b(x, 0, z, "ars_nouveau:arcane_pedestal[facing=up]")
+        b.use(x, 0, z, "south", item)
+    b.use(4, 0, 4, "south", "ae2:certus_quartz_crystal")
+    b.b(6, 0, 3, "ars_nouveau:source_jar[fill=11]", "{source:10000}")
+
+
+@scene("ars_master/alteration")
+def _(b):
+    # the alteration table, set down by hand so both its halves stand, and a robe to work on
+    b.use(3, -1, 4, "up", "ars_nouveau:alteration_table")
+    b.stand(6, 0, 4, armor=("ars_nouveau:arcanist_hood", "ars_nouveau:arcanist_robes", "ars_nouveau:arcanist_leggings", "ars_nouveau:arcanist_boots"))
+    b.focus(2, 0, 3, 6, 2, 5)
+
+
+@scene("ars_apprentice/potions")
+def _(b):
+    # potion jars beside the wixie cauldron, the alchemical sourcelink that drinks from them
+    b.b(4, 0, 4, "ars_nouveau:wixie_cauldron[converted=true,filled=true]")
+    b.b(2, 0, 4, "ars_nouveau:potion_jar[fill=11]")
+    b.b(3, 0, 4, "ars_nouveau:potion_jar[fill=6]")
+    b.b(6, 0, 4, "ars_nouveau:alchemical_sourcelink")
+
+
+@scene("ars_apprentice/turret")
+def _(b):
+    # a spell turret looking at the block a cobblestone generator keeps making
+    b.b(4, 0, 5, "ars_nouveau:basic_spell_turret")
+    b.b(4, 0, 3, "minecraft:cobblestone")
+    b.b(3, 0, 3, "minecraft:water")
+    b.b(5, 0, 3, "minecraft:lava")
+    b.f(2, 0, 2, 6, 0, 2, "minecraft:stone_bricks")
+    b.b(2, 0, 3, "minecraft:stone_bricks")
+    b.b(6, 0, 3, "minecraft:stone_bricks")
+    b.b(3, 0, 4, "minecraft:glass")
+    b.b(5, 0, 4, "minecraft:glass")
+
+
+@scene("ars_apprentice/source_motor")
+def _(b):
+    # the source motor turns a shaft from the jar beside it
+    b.b(3, 0, 4, "ars_technica:source_motor[facing=east]")
+    b.f(4, 0, 4, 6, 0, 4, "create:shaft[axis=x]")
+    b.b(3, 0, 3, "ars_nouveau:source_jar[fill=11]", "{source:10000}")
+
+
+@scene("flux_networks/setup_reactor")
+def _(b):
+    # a plug on the reactor takes all it makes into the network
+    b.b(4, 0, 4, "powah:reactor_starter[core=true]")
+    b.b(4, 4, 4, "fluxnetworks:flux_plug")
+    b.focus(3, 0, 3, 5, 4, 5)
+
+
+@scene("flux_networks/setup_mek", w=10)
+def _(b):
+    # a row of machines without a single cable: a flux point on each
+    mek_row(b, ["enrichment_chamber", "crusher", "energized_smelter", "metallurgic_infuser"], 3, 4)
+    for x in range(3, 7):
+        b.b(x, 1, 4, "fluxnetworks:flux_point")
+
+
+@scene("immersive_heavy/survey", h=14)
+def _(b):
+    # the core sample drill, set down by hand: three blocks high
+    b.use(4, -1, 4, "up", "immersiveengineering:sample_drill")
+    b.focus(3, 0, 3, 5, 3, 5)
+
+
+@scene("immersive/bench", w=10)
+def _(b):
+    # the engineer's workbench is two blocks wide
+    b.use(4, -1, 4, "up", "immersiveengineering:workbench")
+    b.focus(3, 0, 3, 6, 1, 5)

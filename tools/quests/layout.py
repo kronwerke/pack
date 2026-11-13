@@ -97,9 +97,12 @@ class _Cluster:
         self._lay(root)
 
     def _lay(self, root):
-        names = {q["name"] for q in self.members}
+        # a list, not a set: what follows walks the names in order, and a set of strings comes
+        # out in another order every run (two chapters were laid out differently from build to build)
+        names = [q["name"] for q in self.members]
+        inside = set(names)
         by = {q["name"]: q for q in self.members}
-        preds = {n: [d for d in by[n]["deps"] if d in names] for n in names}
+        preds = {n: [d for d in by[n]["deps"] if d in inside] for n in names}
         succs = {n: [] for n in names}
         for n in names:
             for p in preds[n]:

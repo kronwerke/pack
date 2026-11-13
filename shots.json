@@ -1,12 +1,40 @@
 {
  "shots": [
   {
-   "name": "y_nether_ig_kill",
+   "name": "z_exploration_e_veins",
    "dim": "kronwerke:testworld",
    "pos": [
-    16.95,
+    123.77,
+    67.81,
+    351.74
+   ],
+   "yaw": 165.0,
+   "pitch": 35.0,
+   "fov": 60,
+   "width": 640,
+   "height": 360
+  },
+  {
+   "name": "z_exploration_e_lootr",
+   "dim": "kronwerke:testworld",
+   "pos": [
+    134.18,
+    67.17,
+    351.9
+   ],
+   "yaw": 165.0,
+   "pitch": 35.0,
+   "fov": 60,
+   "width": 640,
+   "height": 360
+  },
+  {
+   "name": "z_exploration_e_campsite",
+   "dim": "kronwerke:testworld",
+   "pos": [
+    143.95,
     67.91,
-    353.93
+    352.93
    ],
    "yaw": 165.0,
    "pitch": 35.0,
@@ -15,82 +43,12 @@
    "height": 360
   },
   {
-   "name": "y_nether_nm_kill",
+   "name": "z_exploration_e_yung_dungeon",
    "dim": "kronwerke:testworld",
    "pos": [
-    30.77,
-    71.33,
-    355.98
-   ],
-   "yaw": 165.0,
-   "pitch": 35.0,
-   "fov": 60,
-   "width": 640,
-   "height": 360
-  },
-  {
-   "name": "y_nether_debris",
-   "dim": "kronwerke:testworld",
-   "pos": [
-    41.24,
-    65.19,
-    349.77
-   ],
-   "yaw": 165.0,
-   "pitch": 35.0,
-   "fov": 60,
-   "width": 640,
-   "height": 360
-  },
-  {
-   "name": "y_the_end_crystals",
-   "dim": "kronwerke:testworld",
-   "pos": [
-    67.48,
-    71.35,
-    353.91
-   ],
-   "yaw": 165.0,
-   "pitch": 35.0,
-   "fov": 60,
-   "width": 640,
-   "height": 360
-  },
-  {
-   "name": "y_the_end_egg",
-   "dim": "kronwerke:testworld",
-   "pos": [
-    76.81,
-    67.93,
-    352.39
-   ],
-   "yaw": 165.0,
-   "pitch": 35.0,
-   "fov": 60,
-   "width": 640,
-   "height": 360
-  },
-  {
-   "name": "y_the_end_elytra",
-   "dim": "kronwerke:testworld",
-   "pos": [
-    86.32,
-    65.79,
-    350.55
-   ],
-   "yaw": 165.0,
-   "pitch": 35.0,
-   "fov": 60,
-   "width": 640,
-   "height": 360
-  },
-  {
-   "name": "y_the_end_cg_kill",
-   "dim": "kronwerke:testworld",
-   "pos": [
-    97.95,
+    153.95,
     67.91,
-    353.93
+    352.93
    ],
    "yaw": 165.0,
    "pitch": 35.0,
@@ -99,12 +57,26 @@
    "height": 360
   },
   {
-   "name": "y_deeper_darker_transmitter",
+   "name": "z_undergarden_depths",
    "dim": "kronwerke:testworld",
    "pos": [
-    207.24,
-    65.19,
-    350.27
+    325.84,
+    67.6,
+    352.99
+   ],
+   "yaw": 165.0,
+   "pitch": 35.0,
+   "fov": 60,
+   "width": 640,
+   "height": 360
+  },
+  {
+   "name": "z_eternal_starlight_portal",
+   "dim": "kronwerke:testworld",
+   "pos": [
+    366.83,
+    71.09,
+    356.2
    ],
    "yaw": 165.0,
    "pitch": 35.0,

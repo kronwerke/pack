@@ -3258,3 +3258,34 @@ def _(b):
 
 
 # gaia/fight has no scene: a guardian summoned without its fight takes the floor of the box with it and is gone
+
+
+# ---- batch 24: the last ones. Quests about a part show the part; the miner stands ----
+
+shelf("start_here/m_gearbox", ["kronwerke:stone_gearbox"])
+shelf("start_here/m_keystone", ["kronwerke:source_keystone"])
+shelf("mekanism_ores/full", ["mekanism:upgrade_speed", "mekanism:upgrade_energy"])
+shelf("mekanism_advanced/cnc_stamper", ["mekmm:cnc_stamper", "ae2:printed_silicon"])
+shelf("ars_apprentice/collector", ["ars_nouveau:relay_collector", "ars_nouveau:relay_deposit"])
+shelf("ars_apprentice/ritual_scrying", ["ars_nouveau:ritual_scrying"])
+shelf("gaia/tiara", ["botania:flugel_tiara"])
+shelf("gaia/goal", ["botania:gaia_spirit"])
+shelf("alfheim/corporea_index", ["botania:corporea_index"])
+shelf("alfheim/elementium_line", ["botania:elementium_ingot"])
+shelf("occultism/satchel", ["occultism:ritual_satchel_t1"])
+shelf("hexerei/blood", ["hexerei:blood_sigil", "hexerei:blood_bottle"])
+shelf("hexerei/willow_broom", ["hexerei:willow_broom"])
+shelf("hexerei/crow", ["hexerei:crow_flute"])
+shelf("industrial/transporters", ["industrialforegoing:item_transporter_type", "industrialforegoing:fluid_transporter_type"])
+shelf("logistics/counter", ["integrateddynamics:part_inventory_reader", "mekanism:ingot_steel"])
+
+
+@scene("mekanism_advanced/miner", w=11, d=11)
+def _(b):
+    # the digital miner is three blocks wide and two high: it takes its room by itself
+    b.b(5, 0, 5, "mekanism:digital_miner[facing=south,active=false]")
+    b.focus(3, 0, 4, 7, 2, 6)
+
+
+# No scene for farms/mobs_dark (a 28 block shaft is a thin line in the picture), ars_nouveau/scribes_table
+# (does not fit on a plinth) and enderio/conduits (a conduit without its kind is a black cube).

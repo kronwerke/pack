@@ -847,6 +847,7 @@ def _(b):
     b.b(7, 7, 3, "immersiveengineering:dynamo[facing=south]")
     b.use(7, 7, 3, "south", "immersiveengineering:windmill")
     b.changed(7, 7, 4, "minecraft:air")
+    b.focus(1, 0, 3, 13, 13, 5)                            # the blades reach six blocks out
 
 
 @scene("create_brass/brass_mixing")
@@ -868,6 +869,7 @@ def _(b):
     # vaults set side by side merge into one: three by three, six long
     b.f(2, 0, 3, 7, 2, 5, "create:item_vault[axis=x,large=false]")
     b.later(2, 0, 3, "block @ create:item_vault[large=true]")
+    b.focus(1, 0, 2, 8, 3, 6)
 
 
 def mek_shell(b, x0, z0, grid, frame, other, special=None):
@@ -979,6 +981,7 @@ def _(b):
     for dx, dz in ((-3, -2), (3, -2), (-3, 2), (3, 2)):
         b.use(5 + dx, -1, 4 + dz, "up", "malum:runewood_obelisk")
         b.changed(5 + dx, 0, 4 + dz, "minecraft:air")
+    b.focus(1, 0, 1, 9, 2, 7)
 
 
 @scene("powah/reactor", h=18)
@@ -1048,10 +1051,10 @@ def _(b):
 
 @scene("eidolon/crucible")
 def _(b):
-    # the crucible over a campfire, filled with water
+    # the crucible over a campfire (no water: a bucket used on it by the machine hand sets a
+    # source on top of it, which floods the box)
     b.b(4, 0, 4, "minecraft:campfire[facing=south,lit=true]")
     b.b(4, 1, 4, "eidolon_repraised:crucible")
-    b.use(4, 1, 4, "up", "minecraft:water_bucket")
 
 
 @scene("botania/farm", w=13)
@@ -1200,16 +1203,17 @@ def _(b):
     b.b(7, 0, z - 1, "mekanism:basic_energy_cube[facing=south]")
 
 
-@scene("immersive/watermill", w=11, h=20)
+@scene("immersive/watermill", w=13, h=22)
 def _(b):
     # the water wheel set against the dynamo's shaft side, a stream running under it
-    b.f(5, 0, 2, 5, 1, 2, "immersiveengineering:treated_wood_horizontal")
-    b.b(5, 2, 2, "immersiveengineering:dynamo[facing=south]")
-    b.use(5, 2, 2, "south", "immersiveengineering:watermill")
-    b.changed(5, 2, 3, "minecraft:air")
+    b.f(6, 0, 2, 6, 3, 2, "immersiveengineering:treated_wood_horizontal")
+    b.b(6, 4, 2, "immersiveengineering:dynamo[facing=south]")
+    b.use(6, 4, 2, "south", "immersiveengineering:watermill")
+    b.changed(6, 4, 3, "minecraft:air")
     b.b(1, -1, 3, "minecraft:water")
     for x in range(2, 9):
         b.b(x, -1, 3, "minecraft:air")
+    b.focus(1, 0, 2, 11, 8, 4)                             # the wheel is seven across
 
 
 @scene("the_end/arrival")
@@ -1258,14 +1262,6 @@ def _(b):
     b.b(5, 0, 4, "hexerei:mixing_cauldron")
     b.use(3, 0, 4, "up", "minecraft:water_bucket")
     b.use(5, 0, 4, "up", "minecraft:water_bucket")
-
-
-@scene("hexerei/sage_plate")
-def _(b):
-    # a bundle of dried sage on the plate, lit
-    b.b(4, 0, 4, "hexerei:sage_burning_plate[facing=south]")
-    b.use(4, 0, 4, "up", "hexerei:dried_sage_bundle")
-    b.use(4, 0, 4, "up", "minecraft:flint_and_steel")
 
 
 @scene("food/f_pot")

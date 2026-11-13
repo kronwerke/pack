@@ -1583,8 +1583,68 @@ def _(b):
     b.m("ars_nouveau:starbuncle", 2, 0, 4)
 
 
+
+# ===================================================================================
+# Ninth batch
+
+@scene("ae2/cpu")
+def _(b):
+    # a crafting CPU: a full box of two by two by two, storage and a monitor in the front, a
+    # co-processor beside the monitor, plain units behind. A creative cell under the floor
+    # stands in for the network it would hang on.
+    b.b(3, -1, 5, "ae2:creative_energy_cell")
+    b.f(3, 0, 4, 4, 1, 4, "ae2:crafting_unit[formed=false]")
+    b.f(3, 0, 5, 4, 0, 5, "ae2:1k_crafting_storage[formed=false]")
+    b.b(3, 1, 5, "ae2:crafting_monitor[facing=south,formed=false]")
+    b.b(4, 1, 5, "ae2:crafting_accelerator[formed=false]")
+    b.later(3, 0, 5, "block @ ae2:1k_crafting_storage[formed=true]")
+
+
+@scene("ae2/autocraft")
+def _(b):
+    # the pattern provider with molecular assemblers set directly against it
+    b.b(4, -1, 4, "ae2:creative_energy_cell")
+    b.b(4, 0, 4, "ae2:pattern_provider[push_direction=all]")
+    b.b(3, 0, 4, "ae2:molecular_assembler")
+    b.b(5, 0, 4, "ae2:molecular_assembler")
+    b.b(4, 1, 4, "ae2:molecular_assembler")
+
+
+@scene("enderio/cap_bank")
+def _(b):
+    # capacitor banks set side by side are one store
+    b.f(3, 0, 4, 5, 2, 4, "enderio:basic_capacitor_bank")
+
+
+@scene("pneumaticcraft/refinery")
+def _(b):
+    # the refinery's controller, four outputs stacked on it: the lighter the product, the higher its output
+    b.b(4, 0, 4, "pneumaticcraft:refinery[facing=south]")
+    for y in range(1, 5):
+        b.b(4, y, 4, "pneumaticcraft:refinery_output[facing=south]")
+
+
+@scene("list_power/mek_heat")
+def _(b):
+    # a heat generator in a basin of lava: lava on every side of it but the one with the window
+    for x in range(2, 7):
+        for z in range(2, 7):
+            edge = x in (2, 6) or z in (2, 6)
+            if edge:
+                b.b(x, 0, z, "minecraft:glass" if z == 6 else "minecraft:stone_bricks")
+            elif (x, z) == (4, 4):
+                b.b(x, 0, z, "mekanismgenerators:heat_generator[facing=south]")
+            elif (x, z) == (4, 5):
+                b.b(x, 0, z, "minecraft:glass")
+            else:
+                b.b(x, 0, z, "minecraft:lava")
+
+
 # what a list chapter shows again from the chapter that explains it
 for _again, _first in (("list_transport/belt", "create/belt"), ("list_transport/vault", "storage/vault_big"),
                        ("list_transport/drawers", "storage/drawers_4"), ("list_power/powah_reactor", "powah/reactor"),
-                       ("list_power/ie_thermo", "immersive/thermoelectric"), ("list_dimensions/r_mekanism", "mekanism_advanced/teleporter")):
+                       ("list_power/ie_thermo", "immersive/thermoelectric"), ("list_dimensions/r_mekanism", "mekanism_advanced/teleporter"),
+                       ("list_power/draconic_core", "draconic/tiers"), ("list_transport/ie_wire", "immersive/connectors"),
+                       ("list_transport/mek_transporter", "mekanism_ores/line2"), ("list_power/flux", "flux_networks/first_link"),
+                       ("powah/rods", "powah/orb")):
     SCENES[_again] = SCENES[_first]

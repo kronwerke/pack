@@ -1640,6 +1640,22 @@ def _(b):
                 b.b(x, 0, z, "minecraft:lava")
 
 
+
+@scene("hostile_networks/data_center", w=11, d=11, h=20)
+def _(b):
+    # the shell as DataCenterShell checks it: seven by seven by seven, the whole bottom layer
+    # obsidian, walls and the whole top layer black glass, hollow inside; the controller takes
+    # the place of a wall block in the row above the floor and looks out
+    x0, z0 = 2, 2
+    b.f(x0, 0, z0, x0 + 6, 0, z0 + 6, "minecraft:obsidian")
+    b.f(x0, 6, z0, x0 + 6, 6, z0 + 6, "minecraft:black_stained_glass")
+    for x in range(7):
+        for z in range(7):
+            if x in (0, 6) or z in (0, 6):
+                b.f(x0 + x, 1, z0 + z, x0 + x, 5, z0 + z, "minecraft:black_stained_glass")
+    b.b(x0 + 3, 1, z0 + 6, "hostilenetworks:data_center[facing=south]")
+
+
 # what a list chapter shows again from the chapter that explains it
 for _again, _first in (("list_transport/belt", "create/belt"), ("list_transport/vault", "storage/vault_big"),
                        ("list_transport/drawers", "storage/drawers_4"), ("list_power/powah_reactor", "powah/reactor"),

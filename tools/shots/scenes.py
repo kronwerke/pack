@@ -1700,3 +1700,599 @@ def _(b):
     b.b(4, 0, 4, "minecraft:bedrock")
     b.b(4, 1, 4, "minecraft:fire")
     b.focus(3, 0, 3, 5, 2, 5)
+
+
+# ===================================================================================
+# Eleventh batch: Powah's small machines, Ender IO, AE2 beyond the first network, Hostile
+# Neural Networks, and what the list chapters still lacked
+
+@scene("powah/furnator")
+def _(b):
+    # the furnator burns, the cell beside it takes the current
+    b.b(3, 0, 4, "powah:furnator_starter[facing=south]")
+    b.b(4, 0, 4, "powah:energy_cell_starter")
+    b.c(5, 0, 4, ["minecraft:coal"] * 3)
+
+
+@scene("powah/power_plant")
+def _(b):
+    # two blazing furnators feed the blazing cell between them
+    b.b(3, 0, 4, "powah:furnator_blazing[facing=south]")
+    b.b(4, 0, 4, "powah:energy_cell_blazing")
+    b.b(5, 0, 4, "powah:furnator_blazing[facing=south]")
+    b.b(4, 1, 4, "powah:furnator_blazing[facing=south]")
+
+
+@scene("powah/ender_cell", w=11)
+def _(b):
+    # two ender cells on one channel: one at the generator, one far off at the machine
+    b.b(2, 0, 4, "powah:furnator_starter[facing=south]")
+    b.b(3, 0, 4, "powah:ender_cell_starter")
+    b.b(7, 0, 4, "powah:ender_cell_starter")
+    b.b(8, 0, 4, "minecraft:redstone_lamp[lit=true]")
+
+
+@scene("powah/transmitter")
+def _(b):
+    # the player transmitter stands two blocks high on a cell
+    b.b(4, 0, 4, "powah:energy_cell_starter")
+    b.b(4, 1, 4, "powah:player_transmitter_starter[top=false]")
+    b.b(4, 2, 4, "powah:player_transmitter_starter[top=true]")
+
+
+@scene("enderio/smelter", w=10)
+def _(b):
+    # the three first machines side by side, lit: alloy smelter, SAG mill, and a chest for what comes out
+    b.b(3, 0, 4, "enderio:alloy_smelter[facing=south,powered=true]")
+    b.b(5, 0, 4, "enderio:sag_mill[facing=south,powered=true]")
+    b.show(7, 0, 4, "enderio:basic_capacitor")
+
+
+@scene("enderio/soul_binder")
+def _(b):
+    b.b(3, 0, 4, "enderio:soul_binder[facing=south,powered=true]")
+    b.show(5, 0, 4, "enderio:soul_vial")
+
+
+@scene("enderio/vacuum_chest")
+def _(b):
+    # what lies near the vacuum chest flies to it
+    b.b(4, 0, 4, "enderio:vacuum_chest")
+    for x, z, item in ((2, 5, "minecraft:rotten_flesh"), (6, 5, "minecraft:bone"), (3, 6, "minecraft:gunpowder"), (5, 3, "minecraft:string")):
+        b.drop(x, 0.2, z, item, 8)
+    b.focus(2, 0, 3, 6, 1, 6)
+
+
+@scene("enderio/enchanter")
+def _(b):
+    b.b(4, 0, 4, "enderio:enchanter[facing=south]")
+
+
+@scene("list_dimensions/r_enderio")
+def _(b):
+    # two travel anchors: sneak on one, look at the other
+    b.b(2, 0, 5, "enderio:travel_anchor")
+    b.f(6, 0, 3, 6, 2, 3, "minecraft:stone_bricks")
+    b.b(6, 3, 3, "enderio:travel_anchor")
+
+
+@scene("list_dimensions/r_plates")
+def _(b):
+    # two warp plates tuned to each other
+    b.b(2, 0, 4, "waystones:warp_plate[status=idle]")
+    b.b(6, 0, 4, "waystones:warp_plate[status=idle]")
+    b.focus(1, 0, 3, 7, 1, 5)
+
+
+@scene("ae2/meteorite")
+def _(b):
+    # the heart of a meteorite: sky stone around the mysterious cube, certus growing on budding quartz
+    b.f(1, -1, 1, 7, -1, 7, "ae2:sky_stone_block")
+    b.f(1, 0, 1, 7, 1, 1, "ae2:sky_stone_block")
+    b.f(1, 0, 2, 1, 1, 4, "ae2:sky_stone_block")
+    b.f(7, 0, 2, 7, 1, 4, "ae2:sky_stone_block")
+    b.f(1, 0, 5, 1, 0, 6, "ae2:sky_stone_block")
+    b.f(7, 0, 5, 7, 0, 6, "ae2:sky_stone_block")
+    b.b(4, 0, 4, "ae2:mysterious_cube")
+    b.b(2, 0, 2, "ae2:flawless_budding_quartz")
+    b.b(2, 1, 2, "ae2:quartz_cluster[facing=up,waterlogged=false]")
+    b.b(2, 0, 3, "ae2:quartz_cluster[facing=south,waterlogged=false]")
+    b.b(6, 0, 2, "ae2:flawless_budding_quartz")
+    b.b(6, 1, 2, "ae2:quartz_cluster[facing=up,waterlogged=false]")
+    b.b(5, 0, 2, "ae2:quartz_cluster[facing=west,waterlogged=false]")
+
+
+@scene("ae2/presses", w=10)
+def _(b):
+    # the four presses out of the mysterious cube
+    for i, name in enumerate(("silicon_press", "logic_processor_press", "calculation_processor_press", "engineering_processor_press")):
+        b.show(2 + 2 * i, 0, 4, f"ae2:{name}")
+
+
+@scene("ae2/inscriber")
+def _(b):
+    # the inscriber on the network's cable, a charger beside it
+    b.b(3, -1, 4, "ae2:creative_energy_cell")
+    b.b(3, 0, 4, "ae2:inscriber[facing=south,spin=0]")
+    b.b(5, 0, 4, "ae2:charger[facing=south,spin=0]")
+    b.use(3, 0, 4, "east", "ae2:fluix_glass_cable")
+
+
+@scene("ae2_advanced/bridge", w=13)
+def _(b):
+    # both ends of a quantum bridge: eight rings around the link chamber, the cable on a side ring
+    for cx in (3, 9):
+        b.f(cx - 1, 0, 4, cx + 1, 2, 4, "ae2:quantum_ring")
+        b.b(cx, 1, 4, "ae2:quantum_link")
+    b.formed(3, 1, 4)
+
+
+@scene("ae2_advanced/spatial", w=11, d=11)
+def _(b):
+    # a cage of spatial pylons: every edge of the space that is cut out, and the port that does it
+    x1, y1, z1, x2, y2, z2 = 3, 0, 3, 7, 4, 7
+    for x in range(x1, x2 + 1):
+        for y in range(y1, y2 + 1):
+            for z in range(z1, z2 + 1):
+                if (x in (x1, x2)) + (y in (y1, y2)) + (z in (z1, z2)) >= 2:
+                    b.b(x, y, z, "ae2:spatial_pylon")
+    b.b(2, 0, 7, "ae2:spatial_io_port[facing=south,spin=0,powered=false]")
+
+
+@scene("ae2_advanced/reaction")
+def _(b):
+    b.b(4, 0, 4, "advanced_ae:reaction_chamber[working=true]")
+
+
+@scene("ae2_advanced/matrix", w=10)
+def _(b):
+    # four by three by three: frame on the edges, glass in front, wall elsewhere, a pattern core and a craft core inside
+    x1, y1, z1, x2, y2, z2 = 3, 0, 3, 6, 2, 5
+    for x in range(x1, x2 + 1):
+        for y in range(y1, y2 + 1):
+            for z in range(z1, z2 + 1):
+                n = (x in (x1, x2)) + (y in (y1, y2)) + (z in (z1, z2))
+                if n >= 2:
+                    b.b(x, y, z, "extendedae:assembler_matrix_frame")
+                elif n == 1:
+                    b.b(x, y, z, "extendedae:assembler_matrix_glass" if z == z2 else "extendedae:assembler_matrix_wall")
+    b.b(4, 1, 4, "extendedae:assembler_matrix_pattern")
+    b.b(5, 1, 4, "extendedae:assembler_matrix_crafter")
+
+
+@scene("hostile_networks/sim_chamber")
+def _(b):
+    # the two machines of the mod: the simulation chamber makes predictions, the loot fabricator turns them into drops
+    b.b(3, 0, 4, "hostilenetworks:sim_chamber[facing=south]")
+    b.b(5, 0, 4, "hostilenetworks:loot_fabricator[facing=south]")
+
+
+@scene("hostile_networks/scaling", w=11)
+def _(b):
+    # one model per chamber: more output means more chambers in a row
+    for x in range(2, 9):
+        b.b(x, 0, 4, "hostilenetworks:sim_chamber[facing=south]")
+    b.b(5, 0, 6, "hostilenetworks:loot_fabricator[facing=south]")
+
+
+@scene("list_transport/packages")
+def _(b):
+    # the packager sits on the barrel it empties and hands its packages to the belt in front
+    b.b(4, 0, 3, "minecraft:barrel[facing=up]")
+    b.b(4, 0, 4, "create:packager[facing=south,linked=false,powered=false]")
+    b.b(2, 0, 5, "create:shaft[axis=z]")
+    b.b(6, 0, 5, "create:shaft[axis=z]")
+    b.use(2, 0, 5, "up", "create:belt_connector")
+    b.use(6, 0, 5, "up", "create:belt_connector")
+    b.changed(4, 0, 5, "minecraft:air")
+    b.drop(4, 1, 5, "create:cardboard_package_10x12")
+    b.drop(5, 1, 5, "create:cardboard_package_10x8")
+
+
+@scene("list_transport/hose_pulley", h=14)
+def _(b):
+    # a gantry over a pond: the pulley lets its hose down into the water
+    b.f(3, -2, 3, 5, -1, 5, "minecraft:water")
+    b.f(1, 0, 4, 1, 2, 4, "minecraft:spruce_log[axis=y]")
+    b.f(7, 0, 4, 7, 2, 4, "minecraft:spruce_log[axis=y]")
+    b.f(1, 3, 4, 7, 3, 4, "minecraft:spruce_planks")
+    b.b(4, 3, 4, "create:hose_pulley[facing=east]")
+    housed_motor(b, 3, 3, 4, "east", 32)
+
+
+@scene("list_power/mekmm_large", w=13, h=16)
+def _(b):
+    # the large heat generator and the large wind generator, set down the way a player sets them
+    b.use(3, -1, 5, "up", "mekmm:large_heat_generator")
+    b.use(9, -1, 5, "up", "mekmm:large_wind_generator")
+    b.focus(1, 0, 3, 11, 8, 7)
+
+
+@scene("list_gear/wyvern")
+def _(b):
+    b.stand(3, 0, 4, armor=(None, "draconicevolution:wyvern_chestpiece"), hand="draconicevolution:wyvern_sword")
+    b.stand(5, 0, 4, hand="draconicevolution:wyvern_pickaxe")
+
+
+@scene("list_gear/sg_end")
+def _(b):
+    # azure silver ore in end stone, and the two alloys forged from it
+    b.f(3, 0, 3, 5, 1, 3, "minecraft:end_stone")
+    b.b(4, 0, 3, "silentgear:azure_silver_ore")
+    b.b(5, 1, 3, "silentgear:azure_silver_ore")
+    b.show(3, 0, 5, "silentgear:azure_electrum_ingot")
+    b.show(5, 0, 5, "silentgear:tyrian_steel_ingot")
+
+
+@scene("list_gear/drilling")
+def _(b):
+    # the drilling machine over a vein, turned from behind, its drill beside it
+    b.b(4, 0, 4, "createoreexcavation:drilling_machine[facing=south]")
+    b.show(6, 0, 4, "createoreexcavation:drill")
+
+
+# ===================================================================================
+# Twelfth batch: the Aether's three stations, Silent Gear's benches, the kitchen, Theurgy,
+# quarries
+
+@scene("aether/altar")
+def _(b):
+    # altar, freezer and incubator on holystone
+    stage(b, 2, 3, 6, 5, "aether:holystone")
+    b.b(2, 0, 4, "aether:altar")
+    b.b(4, 0, 4, "aether:freezer")
+    b.b(6, 0, 4, "aether:incubator")
+
+
+@scene("undergarden/infuser")
+def _(b):
+    stage(b, 3, 3, 5, 5, "undergarden:depthrock")
+    b.b(4, 0, 4, "undergarden:infuser[state=infusing_utherium]")
+
+
+@scene("deeper_darker/resonarium")
+def _(b):
+    b.stand(4, 0, 4, armor=("deeperdarker:resonarium_helmet", "deeperdarker:resonarium_chestplate",
+                            "deeperdarker:resonarium_leggings", "deeperdarker:resonarium_boots"))
+
+
+@scene("silent_gear/stone_anvil")
+def _(b):
+    b.b(3, 0, 4, "silentgear:stone_anvil")
+    b.show(5, 0, 4, "silentgear:hammer")
+
+
+@scene("silent_gear/crude_mixer")
+def _(b):
+    b.b(4, 0, 4, "silentgear:crude_mixer[facing=south,lit=true]")
+
+
+@scene("silent_gear/alloy_forge")
+def _(b):
+    # the forge for the alloys, the starlight charger under the open sky beside it
+    b.b(3, 0, 4, "silentgear:alloy_forge[facing=south,lit=true]")
+    b.b(5, 0, 4, "silentgear:starlight_charger")
+
+
+@scene("food/f_cutting_board")
+def _(b):
+    # a kitchen: the cutting board on a cabinet, the stove with the cooking pot on it
+    b.b(3, 0, 4, "farmersdelight:oak_cabinet[facing=south,open=false]")
+    b.b(3, 1, 4, "farmersdelight:cutting_board[facing=south]")
+    b.b(4, 0, 4, "farmersdelight:stove[facing=south,lit=true]")
+    b.b(4, 1, 4, "farmersdelight:cooking_pot[facing=south,support=tray]")
+    b.b(5, 0, 4, "farmersdelight:oak_cabinet[facing=south,open=false]")
+
+
+@scene("food/f_rice")
+def _(b):
+    # rice stands in water one block deep with earth under it, the panicles grow above
+    b.f(2, -2, 3, 6, -2, 5, "minecraft:dirt")
+    b.f(2, -1, 3, 6, -1, 5, "minecraft:water")
+    for x in range(2, 7):
+        for z in (3, 4, 5):
+            if (x + z) % 4 != 1:
+                b.b(x, -1, z, "farmersdelight:rice[age=3,supporting=true]")
+                b.b(x, 0, z, "farmersdelight:rice_panicles[age=3]")
+    b.focus(2, -1, 3, 6, 1, 5)
+
+
+@scene("food/f_rich_soil")
+def _(b):
+    # compost on its way, with mushrooms around it that hurry it up, and the rich soil it becomes
+    stage(b, 2, 3, 6, 5, "minecraft:podzol[snowy=false]")
+    b.b(3, -1, 4, "farmersdelight:organic_compost[composting=2]")
+    b.b(4, -1, 4, "farmersdelight:organic_compost[composting=6]")
+    b.b(5, -1, 4, "farmersdelight:rich_soil")
+    b.b(5, 0, 4, "farmersdelight:brown_mushroom_colony[age=3]")
+    b.b(2, 0, 3, "minecraft:brown_mushroom")
+    b.b(6, 0, 5, "minecraft:red_mushroom")
+    b.focus(2, -1, 3, 6, 1, 5)
+
+
+@scene("food/f_feast")
+def _(b):
+    # a feast is a block on the table
+    b.f(3, 0, 4, 5, 0, 4, "minecraft:spruce_slab[type=top]")
+    b.b(4, 1, 4, "farmersdelight:roast_chicken_block[facing=south,servings=4]")
+    b.focus(3, 0, 3, 5, 2, 5)
+
+
+@scene("food/f_market")
+def _(b):
+    b.b(4, 0, 4, "farmingforblockheads:market[facing=south,half=lower]")
+    b.b(4, 1, 4, "farmingforblockheads:market[facing=south,half=upper]")
+
+
+@scene("theurgy/sal_tank")
+def _(b):
+    # the accumulator stands on the tank
+    b.b(4, 0, 4, "theurgy:sal_ammoniac_tank")
+    b.b(4, 1, 4, "theurgy:sal_ammoniac_accumulator")
+
+
+@scene("theurgy/liquefaction")
+def _(b):
+    # the cauldron on a lit brazier
+    b.b(4, 0, 4, "theurgy:pyromantic_brazier[lit=true]")
+    b.b(4, 1, 4, "theurgy:liquefaction_cauldron[half=lower,lit=true]")
+    b.b(4, 2, 4, "theurgy:liquefaction_cauldron[half=upper,lit=true]")
+
+
+@scene("theurgy/vessels")
+def _(b):
+    # the incubator on its brazier, salt, sulfur and mercury vessels right beside it
+    b.b(4, 0, 4, "theurgy:pyromantic_brazier[lit=true]")
+    b.b(4, 1, 4, "theurgy:incubator[half=lower]")
+    b.b(4, 2, 4, "theurgy:incubator[half=upper]")
+    for x, z, name in ((3, 4, "salt"), (5, 4, "sulfur"), (4, 3, "mercury")):
+        b.b(x, 0, z, "minecraft:stone_bricks")
+        b.b(x, 1, z, f"theurgy:incubator_{name}_vessel")
+
+
+@scene("theurgy/array")
+def _(b):
+    # the emitter looks at the target pedestal, source and result stand close by
+    b.b(2, 0, 4, "theurgy:reformation_source_pedestal")
+    b.b(4, 0, 3, "theurgy:reformation_target_pedestal")
+    b.b(6, 0, 4, "theurgy:reformation_result_pedestal")
+    b.b(4, 0, 6, "minecraft:stone_bricks")
+    b.b(4, 1, 6, "theurgy:sulfuric_flux_emitter[facing=up]")
+
+
+@scene("theurgy/fermentation")
+def _(b):
+    b.b(4, 0, 4, "theurgy:fermentation_vat[facing=south,has_output=false,open=true]")
+
+
+@scene("malum/crucible")
+def _(b):
+    # the crucible, set down by hand so its upper half stands
+    b.use(4, -1, 4, "up", "malum:spirit_crucible")
+    b.focus(3, 0, 3, 5, 2, 5)
+
+
+@scene("storage/trash")
+def _(b):
+    # whatever the hopper drops into the trash can is gone
+    b.b(4, 0, 4, "trashcans:item_trash_can")
+    b.b(4, 1, 4, "minecraft:hopper[facing=down]")
+
+
+@scene("storage/copper_tier")
+def _(b):
+    # the same barrel before and after the upgrade
+    b.b(3, 0, 4, "sophisticatedstorage:barrel[facing=south,flat_top=false]")
+    b.b(5, 0, 4, "sophisticatedstorage:copper_barrel[facing=south,flat_top=false]")
+
+
+@scene("storage/welcome")
+def _(b):
+    b.b(4, 0, 4, "sophisticatedbackpacks:backpack[facing=south]")
+
+
+@scene("quarries/first_dig")
+def _(b):
+    # the builder with the chest it fills
+    b.b(4, 0, 4, "rftoolsbuilder:builder[facing=south]")
+    b.b(4, 1, 4, "minecraft:chest[facing=south,type=single,waterlogged=false]")
+
+
+@scene("quarries/quarry", w=11)
+def _(b):
+    # three markers span the area, the quarry stands beside the first
+    b.b(2, 0, 6, "quarryplus:quarry[facing=south,working=false]")
+    b.b(3, 0, 6, "quarryplus:marker[facing=up]")
+    b.b(8, 0, 6, "quarryplus:marker[facing=up]")
+    b.b(3, 0, 2, "quarryplus:marker[facing=up]")
+
+
+@scene("quarries/destroyer")
+def _(b):
+    b.b(3, 0, 4, "quarryplus:adv_quarry[facing=south,working=false]")
+    b.b(5, 0, 4, "quarryplus:chunk_marker")
+
+
+@scene("quarries/coe_netherite", w=10)
+def _(b):
+    # the three drills, iron to netherite
+    for i, name in enumerate(("drill", "diamond_drill", "netherite_drill")):
+        b.show(2 + 2 * i, 0, 4, f"createoreexcavation:{name}")
+    b.b(8, 0, 4, "createoreexcavation:drilling_machine[facing=south]")
+
+
+@scene("draconic/dust")
+def _(b):
+    # draconium ore in end stone
+    b.f(3, 0, 3, 5, 1, 4, "minecraft:end_stone")
+    b.b(4, 0, 4, "draconicevolution:end_draconium_ore")
+    b.b(5, 1, 4, "draconicevolution:end_draconium_ore")
+    b.b(3, 1, 3, "draconicevolution:end_draconium_ore")
+
+
+# ===================================================================================
+# Thirteenth batch: PneumaticCraft's later machines, Oritech, Productive Trees, logistics
+
+@scene("pneumaticcraft/vortex")
+def _(b):
+    # the vortex tube at the end of a pressure tube: one end gets hot, the other cold
+    b.b(3, 0, 4, "pneumaticcraft:pressure_tube")
+    b.b(4, 0, 4, "pneumaticcraft:pressure_tube")
+    b.b(5, 0, 4, "pneumaticcraft:vortex_tube[facing=east]")
+
+
+@scene("pneumaticcraft/plastic")
+def _(b):
+    # the thermopneumatic plant over magma: the heat is all it needs for plastic
+    b.b(4, 0, 4, "minecraft:magma_block")
+    b.b(4, 1, 4, "pneumaticcraft:thermopneumatic_processing_plant[facing=south]")
+
+
+@scene("pneumaticcraft/etching")
+def _(b):
+    b.b(4, 0, 4, "pneumaticcraft:etching_tank")
+
+
+@scene("pneumaticcraft_advanced/first_run")
+def _(b):
+    # the assembly line: the platform in the middle, drill and laser beside it, the two IO units on
+    # the free sides with a chest behind each, the controller at the end of the row
+    b.b(4, 0, 4, "pneumaticcraft:assembly_platform")
+    b.b(3, 0, 4, "pneumaticcraft:assembly_drill")
+    b.b(5, 0, 4, "pneumaticcraft:assembly_laser")
+    b.b(4, 0, 3, "pneumaticcraft:assembly_io_unit_import")
+    b.b(4, 0, 5, "pneumaticcraft:assembly_io_unit_export")
+    b.b(4, 0, 2, "minecraft:chest[facing=south,type=single,waterlogged=false]")
+    b.b(4, 0, 6, "minecraft:chest[facing=south,type=single,waterlogged=false]")
+    b.b(6, 0, 4, "pneumaticcraft:assembly_controller")
+
+
+@scene("pneumaticcraft_advanced/adv_air")
+def _(b):
+    b.b(4, 0, 4, "pneumaticcraft:advanced_air_compressor[facing=south,on=true]")
+
+
+@scene("pneumaticcraft_advanced/thermal")
+def _(b):
+    # hot on one side, cold on the other: the thermal compressor between magma and ice
+    b.b(3, 0, 4, "minecraft:magma_block")
+    b.b(4, 0, 4, "pneumaticcraft:thermal_compressor")
+    b.b(5, 0, 4, "minecraft:blue_ice")
+
+
+@scene("pneumaticcraft_advanced/electrostatic")
+def _(b):
+    # the electrostatic compressor under a lightning rod on a mast of iron bars
+    b.b(4, 0, 4, "pneumaticcraft:electrostatic_compressor")
+    b.f(4, 1, 4, 4, 4, 4, "minecraft:iron_bars")
+    b.b(4, 5, 4, "minecraft:lightning_rod[facing=up,powered=false]")
+
+
+@scene("pneumaticcraft_advanced/security_station")
+def _(b):
+    b.b(4, 0, 4, "pneumaticcraft:security_station[facing=south]")
+
+
+@scene("pneumaticcraft_advanced/spawner_extractor")
+def _(b):
+    # the extractor sits on the spawner it drains
+    b.b(4, 0, 4, "minecraft:spawner")
+    b.b(4, 1, 4, "pneumaticcraft:spawner_extractor")
+
+
+@scene("pneumaticcraft_advanced/pressurized_spawner")
+def _(b):
+    b.b(4, 0, 4, "pneumaticcraft:pressurized_spawner")
+
+
+@scene("oritech/cores")
+def _(b):
+    b.b(3, 0, 4, "oritech:machine_core_1")
+    b.b(5, 0, 4, "oritech:machine_core_2")
+
+
+@scene("oritech/laser", h=14)
+def _(b):
+    b.use(4, -1, 4, "up", "oritech:laser_arm_block")
+    b.focus(3, 0, 3, 5, 3, 5)
+
+
+@scene("oritech/atomic_forge")
+def _(b):
+    b.use(4, -1, 4, "up", "oritech:atomic_forge_block")
+    b.focus(3, 0, 3, 5, 2, 5)
+
+
+@scene("oritech/fragment_forge")
+def _(b):
+    b.use(4, -1, 4, "up", "oritech:fragment_forge_block")
+    b.focus(2, 0, 2, 6, 3, 6)
+
+
+@scene("oritech/destroyer", w=11, d=11)
+def _(b):
+    # a rectangle of machine frames over a field, the destroyer at its corner
+    stage(b, 2, 2, 8, 8, "minecraft:farmland[moisture=7]")
+    b.f(2, 0, 2, 8, 0, 8, "minecraft:wheat[age=7]")
+    for x in range(2, 9):
+        for z in range(2, 9):
+            if x in (2, 8) or z in (2, 8):
+                b.b(x, 2, z, "oritech:machine_frame_block")
+    b.f(1, 0, 8, 1, 1, 8, "minecraft:stone_bricks")
+    b.b(1, 2, 8, "oritech:destroyer_block[facing=south,machine_assembled=false]")
+
+
+@scene("oritech/exo")
+def _(b):
+    b.stand(4, 0, 4, armor=("oritech:exo_helmet", "oritech:exo_chestplate", "oritech:exo_leggings", "oritech:exo_boots"))
+
+
+@scene("productive_trees/sawmill_run")
+def _(b):
+    # sawmill and stripper, a hopper feeds the sawmill
+    b.b(3, 0, 4, "productivetrees:sawmill")
+    b.b(3, 1, 4, "minecraft:hopper[facing=down]")
+    b.b(5, 0, 4, "productivetrees:stripper")
+
+
+@scene("productive_trees/first_tree", h=14)
+def _(b):
+    # a walnut tree: the trunk, and a crown in which more than half the leaves bear fruit
+    b.f(4, 0, 4, 4, 4, 4, "productivetrees:walnut_log[axis=y]")
+    for y, r in ((3, 2), (4, 2), (5, 1), (6, 1)):
+        for x in range(4 - r, 5 + r):
+            for z in range(4 - r, 5 + r):
+                if (x, z) == (4, 4) and y <= 4:
+                    continue
+                if r == 2 and abs(x - 4) == 2 and abs(z - 4) == 2:
+                    continue
+                leaf = "productivetrees:walnut_fruit[age=7]" if (x * 7 + y * 3 + z * 5) % 5 < 3 else "productivetrees:walnut_leaves"
+                b.b(x, y, z, leaf)
+    b.b(2, 0, 6, "productivetrees:walnut_sapling")
+
+
+@scene("logistics/menril")
+def _(b):
+    # a menril trunk, the squeezer and the drying basin its resin runs into
+    b.f(2, 0, 3, 2, 2, 3, "integrateddynamics:menril_log[axis=y]")
+    b.b(4, 0, 4, "integrateddynamics:squeezer[axis=x,height=1]")
+    b.b(5, 0, 4, "integrateddynamics:drying_basin")
+
+
+@scene("logistics/programmer")
+def _(b):
+    b.b(3, 0, 4, "integrateddynamics:logic_programmer[facing=south]")
+    b.b(5, 0, 4, "integrateddynamics:variablestore[facing=south]")
+
+
+@scene("logistics/xnet_connectors", w=10)
+def _(b):
+    # a connector at the chest, cable from there to the controller, a connector at the furnace beyond
+    b.b(2, 0, 4, "minecraft:chest[facing=south,type=single,waterlogged=false]")
+    b.b(8, 0, 4, "minecraft:furnace[facing=south,lit=false]")
+    b.b(5, 0, 5, "xnet:controller[facing=south,error=false]")
+    b.use(3, -1, 4, "up", "xnet:connector_blue")
+    b.use(7, -1, 4, "up", "xnet:connector_blue")
+    for x in (4, 5, 6):
+        b.use(x, -1, 4, "up", "xnet:netcable_blue")
+    b.focus(2, 0, 3, 8, 1, 5)

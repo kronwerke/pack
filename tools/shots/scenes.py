@@ -2803,7 +2803,7 @@ def _(b):
 @scene("ars_master/tribute", w=11, d=11)
 def _(b):
     # the Wilden Chimera: bigger than anything else in the book, so its cell and its frame are too
-    b.m("ars_nouveau:wilden_boss", 5, 0, 5)
+    b.m("ars_nouveau:wilden_boss", 5, 0, 5, rot=0)      # it showed the camera its back the other way round
     b.focus(2, 0, 2, 8, 4, 8)
 
 

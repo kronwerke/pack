@@ -2997,7 +2997,6 @@ ponder("create_trains/conductor", "create-1", "assets/create/ponder/train_schedu
 ponder("create_trains/junction", "create-1", "assets/create/ponder/train_signal/signaling.nbt")
 ponder("create/stock_ticker", "create-1", "assets/create/ponder/high_logistics/stock_ticker.nbt")
 ponder("create_brass/boiler", "create-1", "assets/create/ponder/steam_engine.nbt", deep=6)
-ponder("create/stress", "create-1", "assets/create/ponder/gauges.nbt")
 ponder("create_brass/pg_winding", "powergrid", "assets/powergrid/ponder/generator/generator_1.nbt")
 ponder("create_brass/pg_generator", "powergrid", "assets/powergrid/ponder/generator/generator_3.nbt", deep=4)
 ponder("create_brass/pg_magnet", "powergrid", "assets/powergrid/ponder/electromagnet.nbt")

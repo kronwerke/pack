@@ -1,22 +1,23 @@
-# 090 aether/portal
-#area 25 269 43 294
-fill 25 64 269 43 91 294 minecraft:air
-fill 25 60 269 43 62 294 minecraft:stone
-fill 25 63 269 43 63 294 minecraft:light_gray_concrete
-fill 29 64 275 43 79 275 minecraft:light_gray_concrete
-fill 29 64 275 29 79 288 minecraft:light_gray_concrete
-setblock 30 64 287 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "090"}','{"text": "aether"}','{"text": "portal"}','{"text": ""}']}}
-setblock 31 64 287 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Bau das"}','{"text": "Glowstone-Portal"}','{"text": ""}','{"text": ""}']}}
-fill 38 64 275 38 79 288 minecraft:light_gray_concrete
-setblock 32 65 280 minecraft:glowstone
-setblock 32 66 280 minecraft:glowstone
-setblock 32 67 280 minecraft:glowstone
-setblock 33 64 280 minecraft:glowstone
-setblock 33 68 280 minecraft:glowstone
-setblock 34 64 280 minecraft:glowstone
-setblock 34 68 280 minecraft:glowstone
-setblock 35 65 280 minecraft:glowstone
-setblock 35 66 280 minecraft:glowstone
-setblock 35 67 280 minecraft:glowstone
-fill 33 65 280 34 67 280 aether:aether_portal[axis=x]
-execute if block 33 66 280 aether:aether_portal
+# 090 the_end/arrival
+#area 10 271 29 296
+fill 10 64 271 29 91 296 minecraft:air
+fill 10 60 271 29 62 296 minecraft:stone
+fill 10 63 271 29 63 296 minecraft:light_gray_concrete
+fill 14 64 277 29 79 277 minecraft:light_gray_concrete
+fill 14 64 277 14 79 290 minecraft:light_gray_concrete
+setblock 15 64 289 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "090"}','{"text": "the_end"}','{"text": "arrival"}','{"text": ""}']}}
+setblock 16 64 289 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Betritt das End"}','{"text": ""}','{"text": ""}','{"text": ""}']}}
+fill 24 64 277 24 79 290 minecraft:light_gray_concrete
+setblock 18 64 280 minecraft:end_portal_frame[eye=true,facing=south]
+setblock 18 64 284 minecraft:end_portal_frame[eye=true,facing=north]
+setblock 17 64 281 minecraft:end_portal_frame[eye=true,facing=east]
+setblock 21 64 281 minecraft:end_portal_frame[eye=true,facing=west]
+setblock 19 64 280 minecraft:end_portal_frame[eye=true,facing=south]
+setblock 19 64 284 minecraft:end_portal_frame[eye=true,facing=north]
+setblock 17 64 282 minecraft:end_portal_frame[eye=true,facing=east]
+setblock 21 64 282 minecraft:end_portal_frame[eye=true,facing=west]
+setblock 20 64 280 minecraft:end_portal_frame[eye=true,facing=south]
+setblock 20 64 284 minecraft:end_portal_frame[eye=true,facing=north]
+setblock 17 64 283 minecraft:end_portal_frame[eye=true,facing=east]
+setblock 21 64 283 minecraft:end_portal_frame[eye=true,facing=west]
+fill 18 64 281 20 64 283 minecraft:end_portal

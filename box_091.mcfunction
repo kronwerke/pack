@@ -1,22 +1,22 @@
-# 091 deeper_darker/portal
-#area 39 269 57 294
-fill 39 64 269 57 91 294 minecraft:air
-fill 39 60 269 57 62 294 minecraft:stone
-fill 39 63 269 57 63 294 minecraft:light_gray_concrete
-fill 43 64 275 57 79 275 minecraft:light_gray_concrete
-fill 43 64 275 43 79 288 minecraft:light_gray_concrete
-setblock 44 64 287 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "091"}','{"text": "deeper_darker"}','{"text": "portal"}','{"text": ""}']}}
-setblock 45 64 287 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Bau das Portal"}','{"text": "zur Anderwelt"}','{"text": ""}','{"text": ""}']}}
-fill 52 64 275 52 79 288 minecraft:light_gray_concrete
-setblock 46 65 280 minecraft:reinforced_deepslate
-setblock 46 66 280 minecraft:reinforced_deepslate
-setblock 46 67 280 minecraft:reinforced_deepslate
-setblock 47 64 280 minecraft:reinforced_deepslate
-setblock 47 68 280 minecraft:reinforced_deepslate
-setblock 48 64 280 minecraft:reinforced_deepslate
-setblock 48 68 280 minecraft:reinforced_deepslate
-setblock 49 65 280 minecraft:reinforced_deepslate
-setblock 49 66 280 minecraft:reinforced_deepslate
-setblock 49 67 280 minecraft:reinforced_deepslate
-fill 47 65 280 48 67 280 deeperdarker:otherside_portal[axis=x]
-execute if block 47 66 280 deeperdarker:otherside_portal
+# 091 aether/portal
+#area 25 271 43 296
+fill 25 64 271 43 91 296 minecraft:air
+fill 25 60 271 43 62 296 minecraft:stone
+fill 25 63 271 43 63 296 minecraft:light_gray_concrete
+fill 29 64 277 43 79 277 minecraft:light_gray_concrete
+fill 29 64 277 29 79 290 minecraft:light_gray_concrete
+setblock 30 64 289 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "091"}','{"text": "aether"}','{"text": "portal"}','{"text": ""}']}}
+setblock 31 64 289 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Bau das"}','{"text": "Glowstone-Portal"}','{"text": ""}','{"text": ""}']}}
+fill 38 64 277 38 79 290 minecraft:light_gray_concrete
+setblock 32 65 282 minecraft:glowstone
+setblock 32 66 282 minecraft:glowstone
+setblock 32 67 282 minecraft:glowstone
+setblock 33 64 282 minecraft:glowstone
+setblock 33 68 282 minecraft:glowstone
+setblock 34 64 282 minecraft:glowstone
+setblock 34 68 282 minecraft:glowstone
+setblock 35 65 282 minecraft:glowstone
+setblock 35 66 282 minecraft:glowstone
+setblock 35 67 282 minecraft:glowstone
+fill 33 65 282 34 67 282 aether:aether_portal[axis=x]
+execute if block 33 66 282 aether:aether_portal

@@ -1415,10 +1415,24 @@
    "height": 360
   },
   {
+   "name": "k_powah_rods",
+   "dim": "kronwerke:testworld",
+   "pos": [
+    16.34,
+    65.25,
+    225.63
+   ],
+   "yaw": 165.0,
+   "pitch": 35.0,
+   "fov": 60,
+   "width": 640,
+   "height": 360
+  },
+  {
    "name": "k_powah_thermo",
    "dim": "kronwerke:testworld",
    "pos": [
-    16.24,
+    26.24,
     65.19,
     226.27
    ],
@@ -1432,9 +1446,23 @@
    "name": "k_powah_reactor",
    "dim": "kronwerke:testworld",
    "pos": [
-    26.64,
+    36.64,
     67.07,
     227.76
+   ],
+   "yaw": 165.0,
+   "pitch": 35.0,
+   "fov": 60,
+   "width": 640,
+   "height": 360
+  },
+  {
+   "name": "k_enderio_cap_bank",
+   "dim": "kronwerke:testworld",
+   "pos": [
+    51.36,
+    65.9,
+    226.69
    ],
    "yaw": 165.0,
    "pitch": 35.0,
@@ -1471,10 +1499,38 @@
    "height": 360
   },
   {
+   "name": "k_ae2_autocraft",
+   "dim": "kronwerke:testworld",
+   "pos": [
+    28.36,
+    64.9,
+    245.69
+   ],
+   "yaw": 165.0,
+   "pitch": 35.0,
+   "fov": 60,
+   "width": 640,
+   "height": 360
+  },
+  {
+   "name": "k_ae2_cpu",
+   "dim": "kronwerke:testworld",
+   "pos": [
+    37.82,
+    64.79,
+    246.05
+   ],
+   "yaw": 165.0,
+   "pitch": 35.0,
+   "fov": 60,
+   "width": 640,
+   "height": 360
+  },
+  {
    "name": "k_storage_drawers_4",
    "dim": "kronwerke:testworld",
    "pos": [
-    33.36,
+    53.36,
     65.9,
     244.69
    ],
@@ -1488,7 +1544,7 @@
    "name": "k_storage_controller",
    "dim": "kronwerke:testworld",
    "pos": [
-    42.74,
+    62.74,
     65.19,
     245.27
    ],
@@ -1502,7 +1558,7 @@
    "name": "k_storage_vault_big",
    "dim": "kronwerke:testworld",
    "pos": [
-    54.57,
+    74.57,
     68.22,
     248.36
    ],
@@ -1516,7 +1572,7 @@
    "name": "k_list_transport_belt",
    "dim": "kronwerke:testworld",
    "pos": [
-    69.53,
+    89.53,
     65.78,
     246.36
    ],
@@ -1530,9 +1586,37 @@
    "name": "k_list_transport_create_tank",
    "dim": "kronwerke:testworld",
    "pos": [
-    79.64,
+    99.64,
     67.07,
     246.76
+   ],
+   "yaw": 165.0,
+   "pitch": 35.0,
+   "fov": 60,
+   "width": 640,
+   "height": 360
+  },
+  {
+   "name": "k_list_transport_ie_wire",
+   "dim": "kronwerke:testworld",
+   "pos": [
+    110.61,
+    66.58,
+    246.64
+   ],
+   "yaw": 165.0,
+   "pitch": 35.0,
+   "fov": 60,
+   "width": 640,
+   "height": 360
+  },
+  {
+   "name": "k_list_transport_mek_transporter",
+   "dim": "kronwerke:testworld",
+   "pos": [
+    121.61,
+    65.98,
+    246.14
    ],
    "yaw": 165.0,
    "pitch": 35.0,
@@ -1544,7 +1628,7 @@
    "name": "k_list_transport_vault",
    "dim": "kronwerke:testworld",
    "pos": [
-    90.57,
+    133.57,
     68.22,
     248.36
    ],
@@ -1558,7 +1642,7 @@
    "name": "k_list_transport_drawers",
    "dim": "kronwerke:testworld",
    "pos": [
-    100.36,
+    143.36,
     65.9,
     244.69
    ],
@@ -1583,10 +1667,24 @@
    "height": 360
   },
   {
+   "name": "k_list_power_mek_heat",
+   "dim": "kronwerke:testworld",
+   "pos": [
+    17.53,
+    65.78,
+    265.36
+   ],
+   "yaw": 165.0,
+   "pitch": 35.0,
+   "fov": 60,
+   "width": 640,
+   "height": 360
+  },
+  {
    "name": "k_list_power_ie_thermo",
    "dim": "kronwerke:testworld",
    "pos": [
-    17.24,
+    27.24,
     64.99,
     264.27
    ],
@@ -1600,9 +1698,37 @@
    "name": "k_list_power_powah_reactor",
    "dim": "kronwerke:testworld",
    "pos": [
-    27.64,
+    37.64,
     67.07,
     265.76
+   ],
+   "yaw": 165.0,
+   "pitch": 35.0,
+   "fov": 60,
+   "width": 640,
+   "height": 360
+  },
+  {
+   "name": "k_list_power_flux",
+   "dim": "kronwerke:testworld",
+   "pos": [
+    47.96,
+    65.78,
+    265.08
+   ],
+   "yaw": 165.0,
+   "pitch": 35.0,
+   "fov": 60,
+   "width": 640,
+   "height": 360
+  },
+  {
+   "name": "k_list_power_draconic_core",
+   "dim": "kronwerke:testworld",
+   "pos": [
+    60.41,
+    68.75,
+    269.63
    ],
    "yaw": 165.0,
    "pitch": 35.0,
@@ -1614,7 +1740,7 @@
    "name": "k_flux_networks_dust",
    "dim": "kronwerke:testworld",
    "pos": [
-    42.47,
+    75.47,
     66.21,
     265.13
    ],
@@ -1628,7 +1754,7 @@
    "name": "k_flux_networks_first_link",
    "dim": "kronwerke:testworld",
    "pos": [
-    57.96,
+    90.96,
     65.78,
     265.08
    ],
@@ -1642,9 +1768,23 @@
    "name": "k_pneumaticcraft_chamber",
    "dim": "kronwerke:testworld",
    "pos": [
-    73.47,
+    106.47,
     66.21,
     265.13
+   ],
+   "yaw": 165.0,
+   "pitch": 35.0,
+   "fov": 60,
+   "width": 640,
+   "height": 360
+  },
+  {
+   "name": "k_pneumaticcraft_refinery",
+   "dim": "kronwerke:testworld",
+   "pos": [
+    116.65,
+    67.5,
+    265.81
    ],
    "yaw": 165.0,
    "pitch": 35.0,
@@ -1658,7 +1798,7 @@
    "pos": [
     6.23,
     67.71,
-    285.09
+    287.09
    ],
    "yaw": 165.0,
    "pitch": 35.0,
@@ -1672,7 +1812,7 @@
    "pos": [
     20.42,
     67.23,
-    283.95
+    285.95
    ],
    "yaw": 165.0,
    "pitch": 50.0,
@@ -1686,7 +1826,7 @@
    "pos": [
     35.23,
     67.71,
-    285.09
+    287.09
    ],
    "yaw": 165.0,
    "pitch": 35.0,
@@ -1700,7 +1840,7 @@
    "pos": [
     49.23,
     67.71,
-    285.09
+    287.09
    ],
    "yaw": 165.0,
    "pitch": 35.0,
@@ -1714,7 +1854,7 @@
    "pos": [
     63.23,
     67.71,
-    285.09
+    287.09
    ],
    "yaw": 165.0,
    "pitch": 35.0,
@@ -1728,7 +1868,7 @@
    "pos": [
     77.23,
     67.71,
-    285.09
+    287.09
    ],
    "yaw": 165.0,
    "pitch": 35.0,
@@ -1742,7 +1882,7 @@
    "pos": [
     86.23,
     67.71,
-    285.09
+    287.09
    ],
    "yaw": 165.0,
    "pitch": 35.0,
@@ -1756,7 +1896,7 @@
    "pos": [
     95.23,
     67.71,
-    285.09
+    287.09
    ],
    "yaw": 165.0,
    "pitch": 35.0,
@@ -1770,7 +1910,7 @@
    "pos": [
     104.23,
     67.71,
-    285.09
+    287.09
    ],
    "yaw": 165.0,
    "pitch": 35.0,
@@ -1784,7 +1924,7 @@
    "pos": [
     113.52,
     66.75,
-    284.32
+    286.32
    ],
    "yaw": 165.0,
    "pitch": 35.0,
@@ -1798,7 +1938,7 @@
    "pos": [
     7.81,
     67.86,
-    305.38
+    307.38
    ],
    "yaw": 165.0,
    "pitch": 44.0,
@@ -1812,7 +1952,7 @@
    "pos": [
     20.41,
     68.75,
-    307.63
+    309.63
    ],
    "yaw": 165.0,
    "pitch": 35.0,
@@ -1826,7 +1966,7 @@
    "pos": [
     32.41,
     68.75,
-    307.63
+    309.63
    ],
    "yaw": 165.0,
    "pitch": 35.0,
@@ -1840,7 +1980,7 @@
    "pos": [
     48.6,
     71.47,
-    307.35
+    309.35
    ],
    "yaw": 165.0,
    "pitch": 35.0,
@@ -1854,7 +1994,7 @@
    "pos": [
     64.12,
     68.77,
-    306.56
+    308.56
    ],
    "yaw": 165.0,
    "pitch": 35.0,
@@ -1868,7 +2008,7 @@
    "pos": [
     80.81,
     67.86,
-    305.38
+    307.38
    ],
    "yaw": 165.0,
    "pitch": 44.0,
@@ -1882,7 +2022,7 @@
    "pos": [
     6.74,
     65.19,
-    323.27
+    325.27
    ],
    "yaw": 165.0,
    "pitch": 35.0,
@@ -1896,7 +2036,7 @@
    "pos": [
     21.34,
     65.25,
-    322.63
+    324.63
    ],
    "yaw": 165.0,
    "pitch": 35.0,
@@ -1910,7 +2050,7 @@
    "pos": [
     31.24,
     65.19,
-    323.27
+    325.27
    ],
    "yaw": 165.0,
    "pitch": 35.0,
@@ -1924,7 +2064,7 @@
    "pos": [
     41.24,
     65.19,
-    323.27
+    325.27
    ],
    "yaw": 165.0,
    "pitch": 35.0,
@@ -1938,7 +2078,7 @@
    "pos": [
     51.24,
     65.19,
-    323.27
+    325.27
    ],
    "yaw": 165.0,
    "pitch": 35.0,
@@ -1952,7 +2092,7 @@
    "pos": [
     66.31,
     65.37,
-    323.52
+    325.52
    ],
    "yaw": 165.0,
    "pitch": 35.0,
@@ -1966,7 +2106,7 @@
    "pos": [
     78.17,
     68.11,
-    326.75
+    328.75
    ],
    "yaw": 165.0,
    "pitch": 35.0,
@@ -1980,7 +2120,7 @@
    "pos": [
     93.36,
     65.9,
-    323.69
+    325.69
    ],
    "yaw": 165.0,
    "pitch": 35.0,

@@ -34,12 +34,12 @@ setblock -6 64 238 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text"
 #area -8 256 -6 258
 setblock -6 63 257 minecraft:smooth_stone
 setblock -6 64 257 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Power, flux and"}','{"text": "new tech"}','{"text": ""}','{"text": ""}']}}
-#area -8 275 -6 277
-setblock -6 63 276 minecraft:smooth_stone
-setblock -6 64 276 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Dimensions"}','{"text": ""}','{"text": ""}','{"text": ""}']}}
-#area -8 294 -6 296
-setblock -6 63 295 minecraft:smooth_stone
-setblock -6 64 295 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Late game"}','{"text": ""}','{"text": ""}','{"text": ""}']}}
-#area -8 315 -6 317
-setblock -6 63 316 minecraft:smooth_stone
-setblock -6 64 316 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Magic, gear,"}','{"text": "food"}','{"text": ""}','{"text": ""}']}}
+#area -8 277 -6 279
+setblock -6 63 278 minecraft:smooth_stone
+setblock -6 64 278 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Dimensions"}','{"text": ""}','{"text": ""}','{"text": ""}']}}
+#area -8 296 -6 298
+setblock -6 63 297 minecraft:smooth_stone
+setblock -6 64 297 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Late game"}','{"text": ""}','{"text": ""}','{"text": ""}']}}
+#area -8 317 -6 319
+setblock -6 63 318 minecraft:smooth_stone
+setblock -6 64 318 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Magic, gear,"}','{"text": "food"}','{"text": ""}','{"text": ""}']}}

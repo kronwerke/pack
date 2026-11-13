@@ -1,31 +1,11 @@
-# 081 ae2/network, controller
-#area -4 231 27 256
-fill -4 64 231 27 91 256 minecraft:air
-fill -4 60 231 27 62 256 minecraft:stone
-fill -4 63 231 27 63 256 minecraft:light_gray_concrete
-fill 0 64 237 27 79 237 minecraft:light_gray_concrete
-fill 0 64 237 0 79 250 minecraft:light_gray_concrete
-setblock 1 64 249 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "081.1"}','{"text": "ae2"}','{"text": "network"}','{"text": ""}']}}
-setblock 2 64 249 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Schließ dein"}','{"text": "erstes Netz an"}','{"text": ""}','{"text": ""}']}}
-fill 11 64 237 11 79 250 minecraft:light_gray_concrete
-setblock 3 63 242 ae2:creative_energy_cell
-setblock 3 64 242 ae2:energy_acceptor
-kw testworld use 3 64 242 east ae2:fluix_glass_cable
-kw testworld use 4 64 242 east ae2:fluix_glass_cable
-kw testworld use 5 64 242 east ae2:fluix_glass_cable
-execute unless block 6 64 242 minecraft:air
-setblock 7 64 242 ae2:drive[facing=south,spin=0]
-kw testworld use 5 64 242 south ae2:terminal
-setblock 12 64 249 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "081.2"}','{"text": "ae2"}','{"text": "controller"}','{"text": ""}']}}
-setblock 13 64 249 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Bau einen"}','{"text": "ME-Controller"}','{"text": ""}','{"text": ""}']}}
-fill 22 64 237 22 79 250 minecraft:light_gray_concrete
-setblock 15 63 242 ae2:creative_energy_cell
-fill 15 64 242 15 66 242 ae2:controller
-kw testworld use 15 64 242 east ae2:fluix_smart_cable
-kw testworld use 16 64 242 east ae2:fluix_smart_cable
-kw testworld use 17 64 242 east ae2:fluix_smart_cable
-kw testworld use 18 64 242 east ae2:fluix_smart_cable
-execute unless block 18 64 242 minecraft:air
-setblock 19 64 242 ae2:drive[facing=south,spin=0]
-setblock 18 65 242 ae2:drive[facing=south,spin=0]
-kw testworld use 16 64 242 south ae2:terminal
+# 081 enderio/cap_bank
+#area 41 212 60 237
+fill 41 64 212 60 91 237 minecraft:air
+fill 41 60 212 60 62 237 minecraft:stone
+fill 41 63 212 60 63 237 minecraft:light_gray_concrete
+fill 45 64 218 60 79 218 minecraft:light_gray_concrete
+fill 45 64 218 45 79 231 minecraft:light_gray_concrete
+setblock 46 64 230 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "081"}','{"text": "enderio"}','{"text": "cap_bank"}','{"text": ""}']}}
+setblock 47 64 230 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Bau eine"}','{"text": "Kondensatorbank"}','{"text": ""}','{"text": ""}']}}
+fill 55 64 218 55 79 231 minecraft:light_gray_concrete
+fill 49 64 223 51 66 223 enderio:basic_capacitor_bank

@@ -262,22 +262,23 @@ def multiplayer():
 
 def pause():
     L = 'pause'
-    x, y = -74, -52
+    x, y = -74, -50
+    half = ('btn_half.png', 'btn_half_hover.png')
     b = image(L + ':logo', 'logo.png', 'mid-centered', -82, y - 70, 163, 62)
     b += vanilla('mc_pausescreen_return_to_game_button', 'mid-centered', x, y, CW, 20, 'btn_wide.png', 'btn_wide_hover.png', layout=L)
-    b += button(L + ':quests', local('quests'), 'mid-centered', x, y + 24, 72, 20, 'btn_half.png', 'btn_half_hover.png',
-                [('closegui', ''), ('mimic_keybind', 'key.ftbquests.quests|||false|||100')])
-    b += button(L + ':map', local('map'), 'mid-centered', x + 76, y + 24, 72, 20, 'btn_half.png', 'btn_half_hover.png',
-                [('closegui', ''), ('mimic_keybind', 'key.ftbchunks.map|||false|||100')])
-    b += vanilla('mc_pausescreen_advancements_button', 'mid-centered', x, y + 48, 72, 20, 'btn_half.png', 'btn_half_hover.png', layout=L)
-    b += vanilla('mc_pausescreen_stats_button', 'mid-centered', x + 76, y + 48, 72, 20, 'btn_half.png', 'btn_half_hover.png', layout=L)
-    b += vanilla('mc_pausescreen_options_button', 'mid-centered', x, y + 72, 72, 20, 'btn_half.png', 'btn_half_hover.png',
-                 label=local('options'), layout=L)
-    b += button(L + ':discord', '', 'mid-centered', x + 76, y + 72, 20, 20, 'icon_chat.png', 'icon_chat_hover.png', [('openlink', DISCORD)], tip=local('discord.tip'))
-    b += button(L + ':web', '', 'mid-centered', x + 102, y + 72, 20, 20, 'icon_home.png', 'icon_home_hover.png', [('openlink', WEBSITE)], tip=local('web.tip'))
-    b += button(L + ':status', '', 'mid-centered', x + 128, y + 72, 20, 20, 'icon_book.png', 'icon_book_hover.png', [('openlink', WEBSITE + '/status')], tip=local('status.tip'))
-    b += vanilla('mc_pausescreen_disconnect_button', 'mid-centered', x, y + 96, CW, 20, 'btn_wide.png', 'btn_wide_hover.png', layout=L)
-    b += hide(L, 'mc_pausescreen_feedback_button', 'mc_pausescreen_report_bugs_button', 'mc_pausescreen_lan_button')
+    b += button(L + ':quests', local('quests'), 'mid-centered', x, y + 24, 72, 20, *half,
+                actions=[('closegui', ''), ('mimic_keybind', 'key.ftbquests.quests|||false|||100')])
+    b += button(L + ':map', local('map'), 'mid-centered', x + 76, y + 24, 72, 20, *half,
+                actions=[('closegui', ''), ('mimic_keybind', 'key.ftbchunks.map|||false|||100')])
+    b += vanilla('mc_pausescreen_advancements_button', 'mid-centered', x, y + 48, 72, 20, *half, layout=L)
+    b += vanilla('mc_pausescreen_stats_button', 'mid-centered', x + 76, y + 48, 72, 20, *half, layout=L)
+    b += vanilla('mc_pausescreen_options_button', 'mid-centered', x, y + 72, 72, 20, *half, label=local('options'), layout=L)
+    b += vanilla('398348', 'mid-centered', x + 76, y + 72, 72, 20, *half, layout=L)                  # NeoForge's Mods button
+    b += button(L + ':discord', '', 'mid-centered', -34, y + 96, 20, 20, 'icon_chat.png', 'icon_chat_hover.png', [('openlink', DISCORD)], tip=local('discord.tip'))
+    b += button(L + ':web', '', 'mid-centered', -10, y + 96, 20, 20, 'icon_home.png', 'icon_home_hover.png', [('openlink', WEBSITE)], tip=local('web.tip'))
+    b += button(L + ':status', '', 'mid-centered', 14, y + 96, 20, 20, 'icon_book.png', 'icon_book_hover.png', [('openlink', WEBSITE + '/status')], tip=local('status.tip'))
+    b += vanilla('mc_pausescreen_disconnect_button', 'mid-centered', x, y + 120, CW, 20, 'btn_wide.png', 'btn_wide_hover.png', layout=L)
+    b += hide(L, 'mc_pausescreen_feedback_button', 'mc_pausescreen_report_bugs_button', 'mc_pausescreen_lan_button', '40')
     return layout(L, 'pause_screen', b)
 
 
@@ -365,6 +366,17 @@ S:custom_window_icon_16 = '/config/fancymenu/assets/kronwerke/icon_16.png';
 """
 
 
+# Buttons other mods put on the title and pause screens are switched off in those mods' own
+# configs: Cumulus (the Aether's menu list, world preview, quick load), Create and
+# Supplementaries (their config buttons). The mod list reaches all of them.
+OTHER = {
+    'cumulus_menus-client.toml': '[Menu]\n\t"Enable Menu API" = false\n\t"Active Menu" = "cumulus_menus:minecraft"\n\t"Enables menu selection button" = false\n\n'
+                                 '["World Preview"]\n\t"Enables world preview" = false\n\t"Enables toggle world button" = false\n\t"Enables quick load button" = false\n',
+    'create-client.toml': '[client]\n\tmainMenuConfigButtonRow = 0\n\tingameMenuConfigButtonRow = 0\n',
+    'supplementaries-client.toml': '[general]\n\tconfigs_button = false\n',
+}
+
+
 def write(path, content):
     os.makedirs(os.path.dirname(path), exist_ok=True)
     with open(path, 'w', encoding='utf-8', newline='\n') as f:
@@ -423,6 +435,8 @@ def main():
     write(os.path.join(LAYOUTS, 'kw_multiplayer.txt'), multiplayer())
     write(os.path.join(LAYOUTS, 'kw_pause.txt'), pause())
     write(os.path.join(FM, 'options.txt'), OPTIONS)
+    for name, content in OTHER.items():
+        write(os.path.join(ROOT, 'config', name), content)
     write(os.path.join(FM, 'customizablemenus.txt'), 'type = customizablemenus\n\n' + ''.join(s + ' {\n}\n\n' for s in SCREENS))
     for lang, table in LANG.items():
         write(os.path.join(ROOT, 'kubejs', 'assets', 'kwmenu', 'lang', lang + '.json'),

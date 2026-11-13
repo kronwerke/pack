@@ -1892,15 +1892,16 @@ def _(b):
     b.f(7, 0, 4, 7, 2, 4, "minecraft:spruce_log[axis=y]")
     b.f(1, 3, 4, 7, 3, 4, "minecraft:spruce_planks")
     b.b(4, 3, 4, "create:hose_pulley[facing=east]")
-    housed_motor(b, 3, 3, 4, "east", 32)
+    housed_motor(b, 3, 3, 4, "east", -32)     # this way round the hose comes down
 
 
-@scene("list_power/mekmm_large", w=13, h=16)
+@scene("list_power/mekmm_large", w=13, d=15, h=40)
 def _(b):
-    # the large heat generator and the large wind generator, set down the way a player sets them
-    b.use(3, -1, 5, "up", "mekmm:large_heat_generator")
-    b.use(9, -1, 5, "up", "mekmm:large_wind_generator")
-    b.focus(1, 0, 3, 11, 8, 7)
+    # the large heat generator and the large wind generator, set down the way a player sets them.
+    # The wind generator is a tower: both stand at the back of a deep cell.
+    b.use(3, -1, 3, "up", "mekmm:large_heat_generator")
+    b.use(9, -1, 3, "up", "mekmm:large_wind_generator")
+    b.focus(1, 0, 1, 11, 16, 5)
 
 
 @scene("list_gear/wyvern")
@@ -1918,12 +1919,6 @@ def _(b):
     b.show(3, 0, 5, "silentgear:azure_electrum_ingot")
     b.show(5, 0, 5, "silentgear:tyrian_steel_ingot")
 
-
-@scene("list_gear/drilling")
-def _(b):
-    # the drilling machine over a vein, turned from behind, its drill beside it
-    b.b(4, 0, 4, "createoreexcavation:drilling_machine[facing=south]")
-    b.show(6, 0, 4, "createoreexcavation:drill")
 
 
 # ===================================================================================
@@ -2093,13 +2088,13 @@ def _(b):
     b.b(4, 1, 4, "minecraft:chest[facing=south,type=single,waterlogged=false]")
 
 
-@scene("quarries/quarry", w=11)
+@scene("quarries/quarry")
 def _(b):
     # three markers span the area, the quarry stands beside the first
-    b.b(2, 0, 6, "quarryplus:quarry[facing=south,working=false]")
-    b.b(3, 0, 6, "quarryplus:marker[facing=up]")
-    b.b(8, 0, 6, "quarryplus:marker[facing=up]")
-    b.b(3, 0, 2, "quarryplus:marker[facing=up]")
+    b.b(3, 0, 5, "quarryplus:quarry[facing=south,working=false]")
+    b.b(4, 0, 5, "quarryplus:marker[facing=up]")
+    b.b(6, 0, 5, "quarryplus:marker[facing=up]")
+    b.b(4, 0, 3, "quarryplus:marker[facing=up]")
 
 
 @scene("quarries/destroyer")
@@ -2108,12 +2103,11 @@ def _(b):
     b.b(5, 0, 4, "quarryplus:chunk_marker")
 
 
-@scene("quarries/coe_netherite", w=10)
+@scene("quarries/coe_netherite")
 def _(b):
     # the three drills, iron to netherite
     for i, name in enumerate(("drill", "diamond_drill", "netherite_drill")):
         b.show(2 + 2 * i, 0, 4, f"createoreexcavation:{name}")
-    b.b(8, 0, 4, "createoreexcavation:drilling_machine[facing=south]")
 
 
 @scene("draconic/dust")
@@ -2209,19 +2203,19 @@ def _(b):
 @scene("oritech/laser", h=14)
 def _(b):
     b.use(4, -1, 4, "up", "oritech:laser_arm_block")
-    b.focus(3, 0, 3, 5, 3, 5)
+    b.focus(4, 0, 4, 4, 1, 4)
 
 
 @scene("oritech/atomic_forge")
 def _(b):
     b.use(4, -1, 4, "up", "oritech:atomic_forge_block")
-    b.focus(3, 0, 3, 5, 2, 5)
+    b.focus(4, 0, 4, 4, 0, 4)
 
 
 @scene("oritech/fragment_forge")
 def _(b):
     b.use(4, -1, 4, "up", "oritech:fragment_forge_block")
-    b.focus(2, 0, 2, 6, 3, 6)
+    b.focus(4, 0, 4, 4, 0, 4)
 
 
 @scene("oritech/destroyer", w=11, d=11)

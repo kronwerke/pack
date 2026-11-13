@@ -534,3 +534,7 @@ Incendium, which ran about a tenth of the tick in the 50 player load test:
 ## 0.24.40
 
 - Kronwerke Core 0.39.32: the menus' music no longer tries to start every tick when the Music slider is at zero or the game has no sound.
+
+## 0.24.41
+
+Core 0.39.33 (13.11.2026): a right click on the obelisk with a block in the hand no longer takes it from the client's inventory, the leaderboard wall shows as one dark panel in a brass frame, and no monster spawns within 32 blocks of the arrival place of a side world.

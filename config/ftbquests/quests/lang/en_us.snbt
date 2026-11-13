@@ -4399,6 +4399,7 @@
 	quest.1C73E7DE9BF8CAA8.quest_subtitle: "Truhen, Scherben, Schmiedevorlagen."
 	quest.1C73E7DE9BF8CAA8.title: "&8Finde eine Antike Stadt"
 	quest.1C75BD1FD19521C8.quest_desc: [
+		"{image:kronwerke:textures/quests/shots/quarries_coe_netherite.png width:224 height:126 align:center}"
 		"&6Diamantbohrer:&r ein Eisenbohrer mit &6Diamanten&r und einem &6Diamantblock&r. Am Schmiedetisch wird er mit Netherit zum &6Netheritbohrer&r."
 		""
 		"Nur der Netheritbohrer öffnet zwei Adern: &6Gehärteter Diamant&r (1 024 SU, 500 mB Lava, alle 20 Sekunden ein Rohdiamant, 10 Prozent Chance auf einen Diamanten dazu) und &6Netherit&r im Nether (2 048 SU, 1 000 mB Lava, alle 200 Sekunden, 20 Prozent Antiker Schutt)."
@@ -8207,6 +8208,7 @@
 	quest.27974A7B886B935B.quest_subtitle: "Ein Punkt im Nether, der Stecker zu Hause."
 	quest.27974A7B886B935B.title: "&5Bring Strom in eine andere Dimension"
 	quest.279B624240266ED9.quest_desc: [
+		"{image:kronwerke:textures/quests/shots/productive_trees_station.png width:224 height:126 align:center}"
 		"Pflanz zwei verschiedene Bäume so, dass Blätter von beiden höchstens &e4 Blöcke&r von einem &6Bienennest&r oder &6Bienenstock&r entfernt sind, und setz Blumen daneben. Jedes Mal, wenn eine Biene mit Pollen von einer Blume heimkommt, versucht sie &eeinmal&r, ein Blatt in diesem Würfel zu bestäuben."
 		""
 		"So läuft ein Versuch: Die Biene sammelt alle Blattarten im 9x9x9-Würfel um den Stock, sucht alle Kreuzungen, die aus zwei davon möglich sind, würfelt eine aus und prüft deren Chance. Klappt es, wird ein Blatt eines der beiden Eltern zum &6bestäubten Blatt&r."
@@ -10012,6 +10014,7 @@
 	quest.2CDBB0A78C3677BA.quest_subtitle: "Colourful trees full of magic."
 	quest.2CDBB0A78C3677BA.title: "&dFind an archwood forest"
 	quest.2CEE2D36FA860A6E.quest_desc: [
+		"{image:kronwerke:textures/quests/shots/alfheim_pure_essence.png width:224 height:126 align:center}"
 		"Stell &6Endstein&r um ein &6Reines Gänseblümchen&r. Es macht daraus &6Bruchtiefschiefer&r und lässt dabei eine Wolke &5Reine Ender-Essenz&r frei. Fang sie mit einer Elfenglasflasche."
 		""
 		"&eEndstein ohne End:&r Der &5Possessed Endermite&r aus Occultism lässt Endstein fallen. Eine Flasche Reine Essenz auf Stein geworfen macht wieder Endstein, damit schließt sich der Kreis."
@@ -10959,6 +10962,7 @@
 	quest.2FF700F613DF2D92.quest_subtitle: "Eimer ins Fenster, voller Eimer zurück."
 	quest.2FF700F613DF2D92.title: "&bZapf Kreosotöl ab"
 	quest.30026024D4CB34E4.quest_desc: [
+		"{image:kronwerke:textures/quests/shots/productive_trees_pots.png width:224 height:126 align:center}"
 		"Steck einen &6Setzling&r von Productive Trees in einen &6Pflanztopf&r (Botany Pots, Kapitel &6Kochen&r) mit Erde. Alle &e2 Minuten&r kommen &e2 Stämme&r, ein Blatt und bei Obstbäumen die volle Ernte eines Blatts heraus, bei der Walnuss also 3 Nüsse, bei der Schwarzkirsche 5 Kirschen."
 		""
 		"Mit 5 Prozent fällt dabei ein weiterer Setzling ab. Ein &6Trichter-Pflanztopf&r wirft alles in die Kiste darunter. Das ist der schnellste Weg zu Obst, Gewürzen und Kaffee, viel schneller als das Reifen am Baum."
@@ -11467,6 +11471,7 @@
 	quest.322E1E0595ABED73.quest_subtitle: "Besser als Eisen, und bereit für Upgrades."
 	quest.322E1E0595ABED73.title: "&7Schmiede eine Ferricore-Spitzhacke"
 	quest.322ED1DE454A12EE.quest_desc: [
+		"{image:kronwerke:textures/quests/shots/create_frogport.png width:224 height:126 align:center}"
 		"Four &6Andesite Casings&r around a &6Large Cogwheel&r make two &6Chain Conveyors&r. Put them on powered shafts and connect them with &6chains&r, up to &e32 blocks&r, up to four connections per conveyor."
 		""
 		"The &6Package Frogport&r (slime ball, vault, alloy) sits at most &e5 blocks&r next to the chain. It puts packages on and snaps up every one addressed to it."
@@ -13094,6 +13099,7 @@
 	quest.39C563005BCBFAFA.quest_subtitle: "Create, Dampfmaschine, 64 RPM und 16 384 SU je Maschine."
 	quest.39C563005BCBFAFA.title: "&6Heiz einen Dampfkessel an"
 	quest.39C86A5666F66BCC.quest_desc: [
+		"{image:kronwerke:textures/quests/shots/ars_apprentice_source_motor.png width:224 height:126 align:center}"
 		"Corners and bottom middle &6brass ingots&r, top middle &6Electron Tube&r, left and right a &6cogwheel&r, the calibrated mechanism in the middle."
 		""
 		"Turns Source from a jar next to it into rotational force for Create. The sides set the speed, the front the ratio of stress to speed. More force costs more Source."
@@ -17296,6 +17302,7 @@
 	quest.4C0F41780FE33540.quest_subtitle: "One item, one count."
 	quest.4C0F41780FE33540.title: "&6Filter with the brass funnel"
 	quest.4C1E38CDD2758689.quest_desc: [
+		"{image:kronwerke:textures/quests/shots/ae2_channels.png width:224 height:126 align:center}"
 		"Fast jedes Gerät braucht einen &eKanal&r. Ein normales Kabel trägt &e8&r, ein &6dichtes Kabel&r (vier verdeckte Kabel) trägt &e32&r. Bau wie einen Baum: dichte Kabel als Äste vom Controller, normale Kabel als Zweige, höchstens acht Geräte pro Zweig."
 		""
 		"Kanäle laufen vom Controller den kürzesten Weg, erst durch dichte, dann durch normale Kabel. Ist dieser Weg voll, bleiben Geräte dunkel, auch wenn daneben ein leeres Kabel liegt."
@@ -17380,6 +17387,7 @@
 	quest.4C76F7AEDA486664.quest_subtitle: "Draconic Evolution: Schild, Flug, Untod."
 	quest.4C76F7AEDA486664.title: "&dFusioniere Drakonisch"
 	quest.4C83C592231CEA3B.quest_desc: [
+		"{image:kronwerke:textures/quests/shots/list_transport_hose_pulley.png width:224 height:126 align:center}"
 		"&6Create&r, &6Schlauchaufzug&r: lässt einen Schlauch bis &e128 Blöcke&r tief herab und pumpt den See darunter leer oder füllt ihn, so schnell wie das angeschlossene Rohrnetz. Ein Gewässer ab &e10 000 Blöcken&r bleibt dabei unverändert: unendlich Wasser oder Lava. &eStufe 1.&r"
 		""
 		"Kupfergehäuse, Trockener-Seetang-Block, Kupferblech. Drehrichtung umkehren zieht den Schlauch ein."
@@ -19146,6 +19154,7 @@
 	quest.54AF6ABEE259F331.quest_subtitle: "Netze brauchen ein Ritual."
 	quest.54AF6ABEE259F331.title: "&5&lBau einen ME-Controller"
 	quest.54B3D1FDD28C9434.quest_desc: [
+		"{image:kronwerke:textures/quests/shots/list_power_mekmm_large.png width:224 height:126 align:center}"
 		"Der &6Große Wärmegenerator&r und der &6Große Windgenerator&r sind die Riesenversionen der Mekanism-Generatoren, der &6Große Gasgenerator&r hat einen Tank von 180 000 mB. Alle drei große Blöcke, der Windgenerator darf keinen zweiten direkt neben sich haben."
 		""
 		"&eMekanism More Machine, Großer Wärmegenerator:&r &d400 FE/t&r aus Brennstoff, &d140 FE/t je Lavaseite&r, bis 81 Seiten, im Nether 300 FE/t extra, Tank 240 000 mB. &eGroßer Windgenerator:&r &d900 000 FE/t&r unten, &d1 500 000 FE/t&r ganz oben, ohne Brennstoff. Der stärkste Dauerläufer ohne Brennstoff im Pack. Offen ab Stufe 4. Der &6Solar-Wärmegenerator&r (Reflektoren heizen Kühlmittel) ist schon ab Stufe 3 offen."
@@ -21000,6 +21009,7 @@
 	quest.5C815934C0FF07BE.quest_subtitle: "Das beste Bauteil des Mods."
 	quest.5C815934C0FF07BE.title: "&d&lBau Fortgeschrittene Elektronik"
 	quest.5C86604A476E54F6.quest_desc: [
+		"{image:kronwerke:textures/quests/shots/farms_animals_thorn.png width:224 height:126 align:center}"
 		"&6Dreadthorne&r (3 black, 2 cyan petals, redstone root) in the Petal Apothecary, planted in the pen, a &6Mana Pool&r within 10 blocks. It only hurts &eadult animals&r and leaves the young ones alone."
 		""
 		"A floor of hoppers under the pen collects meat, leather, wool and feathers. With the feeding trough next to it, the animal farm runs completely without you."
@@ -27421,6 +27431,7 @@
 	quest.7A2D3C0D4467764D.quest_subtitle: "Theken müssen sich nicht berühren."
 	quest.7A2D3C0D4467764D.title: "&6Führ die Küche um die Ecke"
 	quest.7A34F474AD47630C.quest_desc: [
+		"{image:kronwerke:textures/quests/shots/mekanism_ore_line.png width:224 height:126 align:center}"
 		"Chest with iron, transporter to the &6Infusing Factory&r with carbon (enriched iron), on to the second Infusing Factory (steel dust), on to the Smelting Factory, then into the chest. Auto eject everywhere, power by cable."
 		""
 		"An Enrichment Chamber in front turns coal into Enriched Carbon. The ore line from the &5Mekanism: Ore Step by Step&r chapter supplies the iron."
@@ -27923,6 +27934,7 @@
 	quest.7CEC6A06FD70C26D.quest_subtitle: "Ten obsidian and a flint and steel."
 	quest.7CEC6A06FD70C26D.title: "&5Build your own portal"
 	quest.7CEDA7A5E67ADD17.quest_desc: [
+		"{image:kronwerke:textures/quests/shots/ars_apprentice_potions.png width:224 height:126 align:center}"
 		"&6Potion Jar&r: shapeless Source Jar and Abjuration Essence. Empty Potion Jar next to the cauldron, click the cauldron with an awkward potion, Nether wart in a chest next to it."
 		""
 		"The Wixie fills &e3 doses&r per round into the jar. The &6Alchemical Sourcelink&r (brewing stand instead of lava bucket) makes Source from potions in jars next to it; complex potions give more."

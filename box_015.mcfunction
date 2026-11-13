@@ -1,44 +1,19 @@
-# 015 mekanism/dynamic_tank
-#area -4 44 15 69
-fill -4 64 44 15 91 69 minecraft:air
-fill -4 60 44 15 62 69 minecraft:stone
-fill -4 63 44 15 63 69 minecraft:light_gray_concrete
-fill 0 64 50 15 79 50 minecraft:light_gray_concrete
-fill 0 64 50 0 79 63 minecraft:light_gray_concrete
-setblock 1 64 62 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "015"}','{"text": "mekanism"}','{"text": "dynamic_tank"}','{"text": ""}']}}
-setblock 2 64 62 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "a 3x3x3 dynamic"}','{"text": "tank with valve"}','{"text": "and structural"}','{"text": "glass"}']}}
-fill 10 64 50 10 79 63 minecraft:light_gray_concrete
-setblock 3 64 54 mekanism:dynamic_tank
-setblock 3 64 55 mekanism:dynamic_tank
-setblock 3 64 56 mekanism:dynamic_tank
-setblock 3 65 54 mekanism:dynamic_tank
-setblock 3 65 55 mekanism:structural_glass
-setblock 3 65 56 mekanism:dynamic_tank
-setblock 3 66 54 mekanism:dynamic_tank
-setblock 3 66 55 mekanism:dynamic_tank
-setblock 3 66 56 mekanism:dynamic_tank
-setblock 4 64 54 mekanism:dynamic_tank
-setblock 4 64 55 mekanism:dynamic_tank
-setblock 4 64 56 mekanism:dynamic_tank
-setblock 4 65 54 mekanism:structural_glass
-setblock 4 65 56 mekanism:structural_glass
-setblock 4 66 54 mekanism:dynamic_tank
-setblock 4 66 55 mekanism:structural_glass
-setblock 4 66 56 mekanism:dynamic_tank
-setblock 5 64 54 mekanism:dynamic_tank
-setblock 5 64 55 mekanism:dynamic_tank
-setblock 5 64 56 mekanism:dynamic_tank
-setblock 5 65 54 mekanism:structural_glass
-setblock 5 65 56 mekanism:dynamic_valve
-setblock 5 66 54 mekanism:dynamic_tank
-setblock 5 66 55 mekanism:structural_glass
-setblock 5 66 56 mekanism:dynamic_tank
-setblock 6 64 54 mekanism:dynamic_tank
-setblock 6 64 55 mekanism:dynamic_tank
-setblock 6 64 56 mekanism:dynamic_tank
-setblock 6 65 54 mekanism:dynamic_tank
-setblock 6 65 55 mekanism:structural_glass
-setblock 6 65 56 mekanism:dynamic_tank
-setblock 6 66 54 mekanism:dynamic_tank
-setblock 6 66 55 mekanism:dynamic_tank
-setblock 6 66 56 mekanism:dynamic_tank
+# 015 create_brass/crushing_wheel
+#area 151 21 172 46
+fill 151 64 21 172 91 46 minecraft:air
+fill 151 60 21 172 62 46 minecraft:stone
+fill 151 63 21 172 63 46 minecraft:light_gray_concrete
+fill 155 64 27 172 79 27 minecraft:light_gray_concrete
+fill 155 64 27 155 79 40 minecraft:light_gray_concrete
+setblock 156 64 39 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "015"}','{"text": "create_brass"}','{"text": "crushing_wheel"}','{"text": ""}']}}
+setblock 157 64 39 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "a pair of"}','{"text": "crushing"}','{"text": "wheels, goggles"}','{"text": "showing the"}']}}
+setblock 158 64 39 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "stress"}','{"text": ""}','{"text": ""}','{"text": ""}']}}
+fill 167 64 27 167 79 40 minecraft:light_gray_concrete
+setblock 160 65 32 create:crushing_wheel[axis=z]
+setblock 162 65 32 create:crushing_wheel[axis=z]
+fill 159 64 31 163 66 31 create:andesite_casing
+setblock 160 65 31 create:andesite_encased_shaft[axis=z]
+setblock 160 65 30 create:creative_motor[facing=south]{ScrollValue:32}
+setblock 162 65 31 create:andesite_encased_shaft[axis=z]
+setblock 162 65 30 create:creative_motor[facing=south]{ScrollValue:-32}
+summon item 161.5 67 32.5 {Item:{id:"minecraft:raw_iron",count:8},PickupDelay:32767,Age:-32768,Tags:["kw_shot"]}

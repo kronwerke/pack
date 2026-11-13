@@ -1,13 +1,14 @@
-# 046 immersive/kiln
-#area 51 144 70 169
-fill 51 64 144 70 91 169 minecraft:air
-fill 51 60 144 70 62 169 minecraft:stone
-fill 51 63 144 70 63 169 minecraft:light_gray_concrete
-fill 55 64 150 70 79 150 minecraft:light_gray_concrete
-fill 55 64 150 55 79 163 minecraft:light_gray_concrete
-setblock 56 64 162 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "046"}','{"text": "immersive"}','{"text": "kiln"}','{"text": ""}']}}
-setblock 57 64 162 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "alloy kiln"}','{"text": "making electrum"}','{"text": ""}','{"text": ""}']}}
-fill 65 64 150 65 79 163 minecraft:light_gray_concrete
-place template immersiveengineering:multiblocks/alloy_smelter 59 64 153 none
-kw testworld use 60 65 154 south immersiveengineering:hammer
-execute unless block 60 65 154 immersiveengineering:alloybrick
+# 046 occultism_afrit/mineshaft
+#area 122 123 141 148
+fill 122 64 123 141 91 148 minecraft:air
+fill 122 60 123 141 62 148 minecraft:stone
+fill 122 63 123 141 63 148 minecraft:light_gray_concrete
+fill 126 64 129 141 79 129 minecraft:light_gray_concrete
+fill 126 64 129 126 79 142 minecraft:light_gray_concrete
+setblock 127 64 141 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "046"}','{"text": "occultism_afrit"}','{"text": "mineshaft"}','{"text": ""}']}}
+setblock 128 64 141 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "dimensional"}','{"text": "mineshaft with"}','{"text": "a lamp inside"}','{"text": "and a hopper"}']}}
+setblock 129 64 141 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "below"}','{"text": ""}','{"text": ""}','{"text": ""}']}}
+fill 136 64 129 136 79 142 minecraft:light_gray_concrete
+setblock 131 64 134 minecraft:hopper[facing=east]
+setblock 131 65 134 occultism:dimensional_mineshaft[rotation=0]
+setblock 132 64 134 minecraft:chest[facing=south]{Items:[]}

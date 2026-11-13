@@ -1,19 +1,198 @@
-# 023 ars_nouveau/earth_essence
-#area 26 65 45 90
-fill 26 64 65 45 91 90 minecraft:air
-fill 26 60 65 45 62 90 minecraft:stone
-fill 26 63 65 45 63 90 minecraft:light_gray_concrete
-fill 30 64 71 45 79 71 minecraft:light_gray_concrete
-fill 30 64 71 30 79 84 minecraft:light_gray_concrete
-setblock 31 64 83 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "023"}','{"text": "ars_nouveau"}','{"text": "earth_essence"}','{"text": ""}']}}
-setblock 32 64 83 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "chamber with"}','{"text": "three pedestals"}','{"text": "next to it"}','{"text": ""}']}}
-fill 40 64 71 40 79 84 minecraft:light_gray_concrete
-setblock 35 64 76 ars_nouveau:imbuement_chamber[facing=up]
-setblock 34 64 76 ars_nouveau:arcane_pedestal[facing=up]
-kw testworld use 34 64 76 south minecraft:iron_ingot
-setblock 36 64 76 ars_nouveau:arcane_pedestal[facing=up]
-kw testworld use 36 64 76 south minecraft:wheat_seeds
-setblock 35 64 75 ars_nouveau:arcane_pedestal[facing=up]
-kw testworld use 35 64 75 south minecraft:dirt
-kw testworld use 35 64 76 south ars_nouveau:source_gem
-setblock 37 64 75 ars_nouveau:source_jar[fill=11]{source:10000}
+# 023 antimatter/sps
+#area 111 44 134 73
+fill 111 64 44 134 95 73 minecraft:air
+fill 111 60 44 134 62 73 minecraft:stone
+fill 111 63 44 134 63 73 minecraft:light_gray_concrete
+fill 115 64 50 134 83 50 minecraft:light_gray_concrete
+fill 115 64 50 115 83 67 minecraft:light_gray_concrete
+setblock 116 64 66 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "023"}','{"text": "antimatter"}','{"text": "sps"}','{"text": ""}']}}
+setblock 117 64 66 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "formed SPS with"}','{"text": "ports and"}','{"text": "supercharged"}','{"text": "coil"}']}}
+fill 129 64 50 129 83 67 minecraft:light_gray_concrete
+setblock 119 64 56 mekanism:sps_casing
+setblock 119 64 57 mekanism:sps_casing
+setblock 119 64 58 mekanism:sps_casing
+setblock 119 65 55 mekanism:sps_casing
+setblock 119 65 56 mekanism:structural_glass
+setblock 119 65 57 mekanism:structural_glass
+setblock 119 65 58 mekanism:structural_glass
+setblock 119 65 59 mekanism:sps_casing
+setblock 119 66 54 mekanism:sps_casing
+setblock 119 66 55 mekanism:structural_glass
+setblock 119 66 56 mekanism:structural_glass
+setblock 119 66 57 mekanism:structural_glass
+setblock 119 66 58 mekanism:structural_glass
+setblock 119 66 59 mekanism:structural_glass
+setblock 119 66 60 mekanism:sps_casing
+setblock 119 67 54 mekanism:sps_casing
+setblock 119 67 55 mekanism:structural_glass
+setblock 119 67 56 mekanism:structural_glass
+setblock 119 67 57 mekanism:sps_port[active=false]
+setblock 119 67 58 mekanism:structural_glass
+setblock 119 67 59 mekanism:structural_glass
+setblock 119 67 60 mekanism:sps_casing
+setblock 119 68 54 mekanism:sps_casing
+setblock 119 68 55 mekanism:structural_glass
+setblock 119 68 56 mekanism:structural_glass
+setblock 119 68 57 mekanism:structural_glass
+setblock 119 68 58 mekanism:structural_glass
+setblock 119 68 59 mekanism:structural_glass
+setblock 119 68 60 mekanism:sps_casing
+setblock 119 69 55 mekanism:sps_casing
+setblock 119 69 56 mekanism:structural_glass
+setblock 119 69 57 mekanism:structural_glass
+setblock 119 69 58 mekanism:structural_glass
+setblock 119 69 59 mekanism:sps_casing
+setblock 119 70 56 mekanism:sps_casing
+setblock 119 70 57 mekanism:sps_casing
+setblock 119 70 58 mekanism:sps_casing
+setblock 120 64 55 mekanism:sps_casing
+setblock 120 64 56 mekanism:structural_glass
+setblock 120 64 57 mekanism:structural_glass
+setblock 120 64 58 mekanism:structural_glass
+setblock 120 64 59 mekanism:sps_casing
+setblock 120 65 54 mekanism:sps_casing
+setblock 120 65 60 mekanism:sps_casing
+setblock 120 66 54 mekanism:structural_glass
+setblock 120 66 60 mekanism:structural_glass
+setblock 120 67 54 mekanism:structural_glass
+setblock 120 67 60 mekanism:structural_glass
+setblock 120 68 54 mekanism:structural_glass
+setblock 120 68 60 mekanism:structural_glass
+setblock 120 69 54 mekanism:sps_casing
+setblock 120 69 60 mekanism:sps_casing
+setblock 120 70 55 mekanism:sps_casing
+setblock 120 70 56 mekanism:structural_glass
+setblock 120 70 57 mekanism:structural_glass
+setblock 120 70 58 mekanism:structural_glass
+setblock 120 70 59 mekanism:sps_casing
+setblock 121 64 54 mekanism:sps_casing
+setblock 121 64 55 mekanism:structural_glass
+setblock 121 64 56 mekanism:structural_glass
+setblock 121 64 57 mekanism:structural_glass
+setblock 121 64 58 mekanism:structural_glass
+setblock 121 64 59 mekanism:structural_glass
+setblock 121 64 60 mekanism:sps_casing
+setblock 121 65 54 mekanism:structural_glass
+setblock 121 65 60 mekanism:structural_glass
+setblock 121 66 54 mekanism:structural_glass
+setblock 121 66 60 mekanism:structural_glass
+setblock 121 67 54 mekanism:structural_glass
+setblock 121 67 60 mekanism:structural_glass
+setblock 121 68 54 mekanism:structural_glass
+setblock 121 68 60 mekanism:structural_glass
+setblock 121 69 54 mekanism:structural_glass
+setblock 121 69 60 mekanism:structural_glass
+setblock 121 70 54 mekanism:sps_casing
+setblock 121 70 55 mekanism:structural_glass
+setblock 121 70 56 mekanism:structural_glass
+setblock 121 70 57 mekanism:structural_glass
+setblock 121 70 58 mekanism:structural_glass
+setblock 121 70 59 mekanism:structural_glass
+setblock 121 70 60 mekanism:sps_casing
+setblock 122 64 54 mekanism:sps_casing
+setblock 122 64 55 mekanism:structural_glass
+setblock 122 64 56 mekanism:structural_glass
+setblock 122 64 57 mekanism:structural_glass
+setblock 122 64 58 mekanism:structural_glass
+setblock 122 64 59 mekanism:structural_glass
+setblock 122 64 60 mekanism:sps_casing
+setblock 122 65 54 mekanism:structural_glass
+setblock 122 65 60 mekanism:structural_glass
+setblock 122 66 54 mekanism:structural_glass
+setblock 122 66 60 mekanism:structural_glass
+setblock 122 67 54 mekanism:structural_glass
+setblock 122 67 60 mekanism:sps_port[active=false]
+setblock 122 68 54 mekanism:structural_glass
+setblock 122 68 60 mekanism:structural_glass
+setblock 122 69 54 mekanism:structural_glass
+setblock 122 69 60 mekanism:structural_glass
+setblock 122 70 54 mekanism:sps_casing
+setblock 122 70 55 mekanism:structural_glass
+setblock 122 70 56 mekanism:structural_glass
+setblock 122 70 57 mekanism:structural_glass
+setblock 122 70 58 mekanism:structural_glass
+setblock 122 70 59 mekanism:structural_glass
+setblock 122 70 60 mekanism:sps_casing
+setblock 123 64 54 mekanism:sps_casing
+setblock 123 64 55 mekanism:structural_glass
+setblock 123 64 56 mekanism:structural_glass
+setblock 123 64 57 mekanism:structural_glass
+setblock 123 64 58 mekanism:structural_glass
+setblock 123 64 59 mekanism:structural_glass
+setblock 123 64 60 mekanism:sps_casing
+setblock 123 65 54 mekanism:structural_glass
+setblock 123 65 60 mekanism:structural_glass
+setblock 123 66 54 mekanism:structural_glass
+setblock 123 66 60 mekanism:structural_glass
+setblock 123 67 54 mekanism:structural_glass
+setblock 123 67 60 mekanism:structural_glass
+setblock 123 68 54 mekanism:structural_glass
+setblock 123 68 60 mekanism:structural_glass
+setblock 123 69 54 mekanism:structural_glass
+setblock 123 69 60 mekanism:structural_glass
+setblock 123 70 54 mekanism:sps_casing
+setblock 123 70 55 mekanism:structural_glass
+setblock 123 70 56 mekanism:structural_glass
+setblock 123 70 57 mekanism:structural_glass
+setblock 123 70 58 mekanism:structural_glass
+setblock 123 70 59 mekanism:structural_glass
+setblock 123 70 60 mekanism:sps_casing
+setblock 124 64 55 mekanism:sps_casing
+setblock 124 64 56 mekanism:structural_glass
+setblock 124 64 57 mekanism:structural_glass
+setblock 124 64 58 mekanism:structural_glass
+setblock 124 64 59 mekanism:sps_casing
+setblock 124 65 54 mekanism:sps_casing
+setblock 124 65 60 mekanism:sps_casing
+setblock 124 66 54 mekanism:structural_glass
+setblock 124 66 60 mekanism:structural_glass
+setblock 124 67 54 mekanism:structural_glass
+setblock 124 67 60 mekanism:structural_glass
+setblock 124 68 54 mekanism:structural_glass
+setblock 124 68 60 mekanism:structural_glass
+setblock 124 69 54 mekanism:sps_casing
+setblock 124 69 60 mekanism:sps_casing
+setblock 124 70 55 mekanism:sps_casing
+setblock 124 70 56 mekanism:structural_glass
+setblock 124 70 57 mekanism:structural_glass
+setblock 124 70 58 mekanism:structural_glass
+setblock 124 70 59 mekanism:sps_casing
+setblock 125 64 56 mekanism:sps_casing
+setblock 125 64 57 mekanism:sps_casing
+setblock 125 64 58 mekanism:sps_casing
+setblock 125 65 55 mekanism:sps_casing
+setblock 125 65 56 mekanism:structural_glass
+setblock 125 65 57 mekanism:structural_glass
+setblock 125 65 58 mekanism:structural_glass
+setblock 125 65 59 mekanism:sps_casing
+setblock 125 66 54 mekanism:sps_casing
+setblock 125 66 55 mekanism:structural_glass
+setblock 125 66 56 mekanism:structural_glass
+setblock 125 66 57 mekanism:structural_glass
+setblock 125 66 58 mekanism:structural_glass
+setblock 125 66 59 mekanism:structural_glass
+setblock 125 66 60 mekanism:sps_casing
+setblock 125 67 54 mekanism:sps_casing
+setblock 125 67 55 mekanism:structural_glass
+setblock 125 67 56 mekanism:structural_glass
+setblock 125 67 57 mekanism:sps_port[active=true]
+setblock 125 67 58 mekanism:structural_glass
+setblock 125 67 59 mekanism:structural_glass
+setblock 125 67 60 mekanism:sps_casing
+setblock 125 68 54 mekanism:sps_casing
+setblock 125 68 55 mekanism:structural_glass
+setblock 125 68 56 mekanism:structural_glass
+setblock 125 68 57 mekanism:structural_glass
+setblock 125 68 58 mekanism:structural_glass
+setblock 125 68 59 mekanism:structural_glass
+setblock 125 68 60 mekanism:sps_casing
+setblock 125 69 55 mekanism:sps_casing
+setblock 125 69 56 mekanism:structural_glass
+setblock 125 69 57 mekanism:structural_glass
+setblock 125 69 58 mekanism:structural_glass
+setblock 125 69 59 mekanism:sps_casing
+setblock 125 70 56 mekanism:sps_casing
+setblock 125 70 57 mekanism:sps_casing
+setblock 125 70 58 mekanism:sps_casing
+kw testworld use 122 67 60 south mekanism:supercharged_coil
+execute unless block 122 67 61 minecraft:air

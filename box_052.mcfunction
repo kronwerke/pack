@@ -1,22 +1,13 @@
-# 052 deeper_darker/portal
-#area 24 198 42 223
-fill 24 64 198 42 91 223 minecraft:air
-fill 24 60 198 42 62 223 minecraft:stone
-fill 24 63 198 42 63 223 minecraft:light_gray_concrete
-fill 28 64 204 42 79 204 minecraft:light_gray_concrete
-fill 28 64 204 28 79 217 minecraft:light_gray_concrete
-setblock 29 64 216 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "052"}','{"text": "deeper_darker"}','{"text": "portal"}','{"text": ""}']}}
-setblock 30 64 216 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Bau das Portal"}','{"text": "zur Anderwelt"}','{"text": ""}','{"text": ""}']}}
-fill 37 64 204 37 79 217 minecraft:light_gray_concrete
-setblock 31 65 209 minecraft:reinforced_deepslate
-setblock 31 66 209 minecraft:reinforced_deepslate
-setblock 31 67 209 minecraft:reinforced_deepslate
-setblock 32 64 209 minecraft:reinforced_deepslate
-setblock 32 68 209 minecraft:reinforced_deepslate
-setblock 33 64 209 minecraft:reinforced_deepslate
-setblock 33 68 209 minecraft:reinforced_deepslate
-setblock 34 65 209 minecraft:reinforced_deepslate
-setblock 34 66 209 minecraft:reinforced_deepslate
-setblock 34 67 209 minecraft:reinforced_deepslate
-fill 32 65 209 33 67 209 deeperdarker:otherside_portal[axis=x]
-execute if block 32 66 209 deeperdarker:otherside_portal
+# 052 immersive/kiln
+#area 51 158 70 183
+fill 51 64 158 70 91 183 minecraft:air
+fill 51 60 158 70 62 183 minecraft:stone
+fill 51 63 158 70 63 183 minecraft:light_gray_concrete
+fill 55 64 164 70 79 164 minecraft:light_gray_concrete
+fill 55 64 164 55 79 177 minecraft:light_gray_concrete
+setblock 56 64 176 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "052"}','{"text": "immersive"}','{"text": "kiln"}','{"text": ""}']}}
+setblock 57 64 176 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "alloy kiln"}','{"text": "making electrum"}','{"text": ""}','{"text": ""}']}}
+fill 65 64 164 65 79 177 minecraft:light_gray_concrete
+place template immersiveengineering:multiblocks/alloy_smelter 59 64 167 none
+kw testworld use 60 65 168 south immersiveengineering:hammer
+execute unless block 60 65 168 immersiveengineering:alloybrick

@@ -21,7 +21,9 @@ A run goes twice: the first pass only wakes the scenes (a belt learns its length
 
 Landscapes and structures of the real worlds:
 
-A dungeon, a biome or a village has no scene: the camera goes to the real place. The dimensions on the main server are the overworld, `aether:the_aether`, `deeperdarker:otherside`, `undergarden:undergarden` and `eternal_starlight:starlight`; Nether and End are servers of their own, the camera would have to log in there. `tools/shots/landscapes.json` lists the camera of every such picture.
+A dungeon, a biome or a village has no scene: the camera goes to the real place. The dimensions on the main server are the overworld, `aether:the_aether`, `deeperdarker:otherside`, `undergarden:undergarden` and `eternal_starlight:starlight`. `tools/shots/landscapes.json` lists the camera of every such picture.
+
+Nether and End are servers of their own, and the camera gets there the way a teleported player does: `execute in minecraft:the_nether run kw cam shot <name> <x y z> ...` on main hands it to the Nether server, where it logs in and stands at that place (that first shot is lost). From then on every command goes to that server (`servers/nether/command`), and its pictures, sheets and bundles lie in that server's `kronwerke/shots`. The way home is the same door: a shot in `minecraft:overworld` on the Nether server. `/kw move` is no way home, from the Nether it leads to the farm world and from there back to the Nether. No night vision in the Nether: it turns the fog into a bright wall of one colour.
 
 - Find the place: `execute in <dim> positioned 0 64 0 run locate structure <id>` or `locate biome <id>` (in the Otherside from y 40, at y 0 it finds nothing).
 - Load it: `execute in <dim> run forceload add <x1 z1 x2 z2>`. Write every forceload down and remove exactly these afterwards; the overworld has one at chunk 0 0 that is not ours, so never `remove all`.

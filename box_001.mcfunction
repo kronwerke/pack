@@ -294,3 +294,4 @@ setblock 14 65 14 kronwerke:obelisk_pedestal
 setblock 8 64 15 kronwerke:obelisk_intake
 setblock 8 65 15 minecraft:hopper[facing=down]
 setblock 8 66 15 minecraft:chest[facing=south]{Items:[{Slot:0b,id:"minecraft:cobblestone",count:64},{Slot:1b,id:"minecraft:cobblestone",count:64},{Slot:2b,id:"minecraft:cobblestone",count:64}]}
+execute as @e[type=minecraft:item,tag=!kw_shot] run kill @s

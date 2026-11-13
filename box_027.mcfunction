@@ -172,3 +172,4 @@ setblock 118 65 75 mekanism:superheating_element[active=false]
 setblock 118 68 75 mekanism:pressure_disperser
 setblock 118 65 76 mekanism:superheating_element[active=false]
 setblock 118 68 76 mekanism:pressure_disperser
+execute as @e[type=minecraft:item,tag=!kw_shot] run kill @s

@@ -17,3 +17,4 @@ summon item 19.5 64.2 97.5 {Item:{id:"minecraft:oak_log",count:64},PickupDelay:3
 setblock 22 64 97 ars_nouveau:source_jar[fill=5]{source:5000}
 setblock 24 64 97 ars_nouveau:imbuement_chamber[facing=up]
 kw testworld use 24 64 97 south minecraft:amethyst_shard
+execute as @e[type=minecraft:item,tag=!kw_shot] run kill @s

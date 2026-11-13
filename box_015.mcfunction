@@ -16,3 +16,4 @@ execute unless block 100 64 51 minecraft:air
 summon item 100.5 65 50.5 {Item:{id:"minecraft:iron_ingot",count:1},PickupDelay:32767,Age:-32768,Tags:["kw_shot"]}
 summon item 100.5 65 51.5 {Item:{id:"minecraft:iron_ingot",count:1},PickupDelay:32767,Age:-32768,Tags:["kw_shot"]}
 summon item 100.5 65 52.5 {Item:{id:"minecraft:iron_ingot",count:1},PickupDelay:32767,Age:-32768,Tags:["kw_shot"]}
+execute as @e[type=minecraft:item,tag=!kw_shot] run kill @s

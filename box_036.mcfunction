@@ -14,3 +14,4 @@ setblock 37 65 97 ars_nouveau:imbuement_chamber[facing=up]
 setblock 37 64 97 minecraft:hopper[facing=east]
 setblock 38 64 97 minecraft:chest[facing=south]{Items:[]}
 setblock 35 64 97 ars_nouveau:source_jar[fill=11]{source:10000}
+execute as @e[type=minecraft:item,tag=!kw_shot] run kill @s

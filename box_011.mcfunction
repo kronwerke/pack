@@ -14,3 +14,4 @@ fill 39 64 50 41 67 50 create:andesite_casing
 setblock 40 66 50 create:andesite_encased_shaft[axis=z]
 setblock 40 66 49 create:creative_motor[facing=south]{ScrollValue:32}
 kw testworld use 40 64 51 up minecraft:iron_ingot
+execute as @e[type=minecraft:item,tag=!kw_shot] run kill @s

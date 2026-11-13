@@ -1,25 +1,27 @@
-# 056 gaia/dandelifeon
-#area 207 105 244 148
-fill 207 64 105 232 91 148 minecraft:air
-fill 233 64 105 244 91 148 minecraft:air
-fill 207 60 105 244 62 148 minecraft:stone
-fill 207 63 105 244 63 148 minecraft:light_gray_concrete
-fill 211 64 111 244 79 111 minecraft:light_gray_concrete
-fill 211 64 111 211 79 142 minecraft:light_gray_concrete
-setblock 212 64 141 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "056"}','{"text": "gaia"}','{"text": "dandelifeon"}','{"text": ""}']}}
-setblock 213 64 141 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "a 25x25 cell"}','{"text": "field"}','{"text": ""}','{"text": ""}']}}
-fill 239 64 111 239 79 142 minecraft:light_gray_concrete
-fill 213 63 113 237 63 137 minecraft:smooth_stone
-setblock 225 63 125 minecraft:grass_block
-setblock 225 64 125 botania:dandelifeon
-setblock 218 64 118 botania:cellular_block
-setblock 219 64 119 botania:cellular_block
-setblock 220 64 119 botania:cellular_block
-setblock 218 64 120 botania:cellular_block
-setblock 219 64 120 botania:cellular_block
-setblock 230 64 120 botania:cellular_block
-setblock 231 64 120 botania:cellular_block
-setblock 232 64 120 botania:cellular_block
-setblock 219 64 129 botania:cellular_block
-setblock 219 64 130 botania:cellular_block
-setblock 219 64 131 botania:cellular_block
+# 056 alfheim/frame
+#area 223 105 244 130
+fill 223 64 105 244 91 130 minecraft:air
+fill 223 60 105 244 62 130 minecraft:stone
+fill 223 63 105 244 63 130 minecraft:light_gray_concrete
+fill 227 64 111 244 79 111 minecraft:light_gray_concrete
+fill 227 64 111 227 79 124 minecraft:light_gray_concrete
+setblock 228 64 123 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "056"}','{"text": "alfheim"}','{"text": "frame"}','{"text": ""}']}}
+setblock 229 64 123 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "the finished"}','{"text": "gateway with"}','{"text": "two pools and"}','{"text": "natura pylons"}']}}
+fill 239 64 111 239 79 124 minecraft:light_gray_concrete
+setblock 233 64 115 botania:elven_gateway_core
+setblock 232 64 115 botania:livingwood_log[axis=x]
+setblock 232 68 115 botania:livingwood_log[axis=x]
+setblock 234 64 115 botania:livingwood_log[axis=x]
+setblock 234 68 115 botania:livingwood_log[axis=x]
+setblock 233 68 115 botania:glimmering_livingwood_log[axis=x]
+setblock 231 65 115 botania:livingwood_log[axis=y]
+setblock 231 66 115 botania:glimmering_livingwood_log[axis=y]
+setblock 231 67 115 botania:livingwood_log[axis=y]
+setblock 235 65 115 botania:livingwood_log[axis=y]
+setblock 235 66 115 botania:glimmering_livingwood_log[axis=y]
+setblock 235 67 115 botania:livingwood_log[axis=y]
+setblock 229 64 117 botania:mana_pool{mana:1000000}
+setblock 229 65 117 botania:natura_pylon
+setblock 237 64 117 botania:mana_pool{mana:1000000}
+setblock 237 65 117 botania:natura_pylon
+execute as @e[type=minecraft:item,tag=!kw_shot] run kill @s

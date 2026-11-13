@@ -18,3 +18,4 @@ setblock 55 64 97 ars_nouveau:arcane_pedestal[facing=up]
 setblock 50 64 99 ars_nouveau:arcane_pedestal[facing=up]
 setblock 54 64 99 ars_nouveau:arcane_pedestal[facing=up]
 setblock 55 64 94 ars_nouveau:source_jar[fill=11]{source:10000}
+execute as @e[type=minecraft:item,tag=!kw_shot] run kill @s

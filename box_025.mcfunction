@@ -18,3 +18,4 @@ setblock 87 66 74 mekanism:teleporter_frame
 setblock 85 67 74 mekanism:teleporter_frame
 setblock 87 67 74 mekanism:teleporter_frame
 setblock 86 67 74 mekanism:teleporter_frame
+execute as @e[type=minecraft:item,tag=!kw_shot] run kill @s

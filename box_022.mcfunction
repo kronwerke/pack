@@ -22,3 +22,4 @@ setblock 36 63 73 minecraft:water
 setblock 36 64 73 mekanism:electric_pump[facing=south]
 fill 35 64 74 37 64 74 mekanism:basic_universal_cable
 setblock 38 64 74 mekanism:basic_energy_cube[facing=south]
+execute as @e[type=minecraft:item,tag=!kw_shot] run kill @s

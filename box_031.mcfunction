@@ -10,3 +10,4 @@ setblock 183 64 81 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text"
 fill 191 64 69 191 79 82 minecraft:light_gray_concrete
 summon armor_stand 185.5 64 74.5 {ArmorItems:[{id:"mekanism:mekasuit_boots",count:1},{id:"mekanism:mekasuit_pants",count:1},{id:"mekanism:mekasuit_bodyarmor",count:1},{id:"mekanism:mekasuit_helmet",count:1}],ShowArms:1b,NoBasePlate:1b,Tags:["kw_shot"],Rotation:[180f,0f]}
 setblock 187 64 74 mekanism:modification_station[facing=south]
+execute as @e[type=minecraft:item,tag=!kw_shot] run kill @s

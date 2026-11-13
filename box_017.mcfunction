@@ -21,3 +21,4 @@ setblock 131 62 51 create:creative_motor[facing=up]{ScrollValue:32}
 summon item 130.5 66.2 51.5 {Item:{id:"minecraft:copper_ingot",count:64},PickupDelay:32767,Age:-32768,Tags:["kw_shot"]}
 summon item 130.5 66.2 51.5 {Item:{id:"create:zinc_ingot",count:32},PickupDelay:32767,Age:-32768,Tags:["kw_shot"]}
 summon item 130.5 66.2 51.5 {Item:{id:"minecraft:blaze_powder",count:32},PickupDelay:32767,Age:-32768,Tags:["kw_shot"]}
+execute as @e[type=minecraft:item,tag=!kw_shot] run kill @s

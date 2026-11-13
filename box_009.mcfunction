@@ -43,3 +43,4 @@ setblock 7 63 54 minecraft:air
 setblock 7 64 51 create:water_wheel[facing=east]
 setblock 3 64 51 create:andesite_encased_shaft[axis=x]
 setblock 8 64 51 create:andesite_encased_shaft[axis=x]
+execute as @e[type=minecraft:item,tag=!kw_shot] run kill @s

@@ -68,3 +68,4 @@ setblock 26 70 4 naturesaura:golden_leaves[stage=3,persistent=true]
 setblock 26 70 5 naturesaura:golden_leaves[stage=3,persistent=true]
 setblock 26 70 6 naturesaura:golden_leaves[stage=3,persistent=true]
 setblock 27 70 5 naturesaura:golden_leaves[stage=3,persistent=true]
+execute as @e[type=minecraft:item,tag=!kw_shot] run kill @s

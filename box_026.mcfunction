@@ -87,3 +87,4 @@ setblock 103 69 75 mekanism:thermal_evaporation_block
 setblock 101 66 75 mekanism:thermal_evaporation_controller[facing=south,active=false]
 setblock 102 65 75 mekanism:thermal_evaporation_valve
 setblock 103 65 74 mekanism:thermal_evaporation_valve
+execute as @e[type=minecraft:item,tag=!kw_shot] run kill @s

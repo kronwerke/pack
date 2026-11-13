@@ -192,3 +192,4 @@ setblock 135 70 75 mekanismgenerators:saturating_condenser
 setblock 135 69 76 mekanism:pressure_disperser
 setblock 135 70 76 mekanismgenerators:saturating_condenser
 setblock 134 70 75 mekanismgenerators:electromagnetic_coil
+execute as @e[type=minecraft:item,tag=!kw_shot] run kill @s

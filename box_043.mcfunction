@@ -18,3 +18,4 @@ setblock 6 64 116 botania:livingwood_log[axis=y]
 setblock 4 64 117 botania:livingrock
 setblock 5 64 117 minecraft:stone
 setblock 6 64 117 botania:livingrock
+execute as @e[type=minecraft:item,tag=!kw_shot] run kill @s

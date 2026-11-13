@@ -1,22 +1,24 @@
-# 094 undergarden/arrival
-#area 53 271 71 296
-fill 53 64 271 71 91 296 minecraft:air
-fill 53 60 271 71 62 296 minecraft:stone
-fill 53 63 271 71 63 296 minecraft:light_gray_concrete
-fill 57 64 277 71 79 277 minecraft:light_gray_concrete
-fill 57 64 277 57 79 290 minecraft:light_gray_concrete
-setblock 58 64 289 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "094"}','{"text": "undergarden"}','{"text": "arrival"}','{"text": ""}']}}
-setblock 59 64 289 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Steig hinunter"}','{"text": ""}','{"text": ""}','{"text": ""}']}}
-fill 66 64 277 66 79 290 minecraft:light_gray_concrete
-setblock 60 65 282 minecraft:stone_bricks
-setblock 60 66 282 minecraft:stone_bricks
-setblock 60 67 282 minecraft:stone_bricks
-setblock 61 64 282 minecraft:stone_bricks
-setblock 61 68 282 minecraft:stone_bricks
-setblock 62 64 282 minecraft:stone_bricks
-setblock 62 68 282 minecraft:stone_bricks
-setblock 63 65 282 minecraft:stone_bricks
-setblock 63 66 282 minecraft:stone_bricks
-setblock 63 67 282 minecraft:stone_bricks
-fill 61 65 282 62 67 282 undergarden:undergarden_portal[axis=x]
-execute if block 61 66 282 undergarden:undergarden_portal
+# 094 the_end/arrival
+#area 10 277 29 302
+fill 10 64 277 29 91 302 minecraft:air
+fill 10 60 277 29 62 302 minecraft:stone
+fill 10 63 277 29 63 302 minecraft:light_gray_concrete
+fill 14 64 283 29 79 283 minecraft:light_gray_concrete
+fill 14 64 283 14 79 296 minecraft:light_gray_concrete
+setblock 15 64 295 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "094"}','{"text": "the_end"}','{"text": "arrival"}','{"text": ""}']}}
+setblock 16 64 295 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Betritt das End"}','{"text": ""}','{"text": ""}','{"text": ""}']}}
+fill 24 64 283 24 79 296 minecraft:light_gray_concrete
+setblock 18 64 286 minecraft:end_portal_frame[eye=true,facing=south]
+setblock 18 64 290 minecraft:end_portal_frame[eye=true,facing=north]
+setblock 17 64 287 minecraft:end_portal_frame[eye=true,facing=east]
+setblock 21 64 287 minecraft:end_portal_frame[eye=true,facing=west]
+setblock 19 64 286 minecraft:end_portal_frame[eye=true,facing=south]
+setblock 19 64 290 minecraft:end_portal_frame[eye=true,facing=north]
+setblock 17 64 288 minecraft:end_portal_frame[eye=true,facing=east]
+setblock 21 64 288 minecraft:end_portal_frame[eye=true,facing=west]
+setblock 20 64 286 minecraft:end_portal_frame[eye=true,facing=south]
+setblock 20 64 290 minecraft:end_portal_frame[eye=true,facing=north]
+setblock 17 64 289 minecraft:end_portal_frame[eye=true,facing=east]
+setblock 21 64 289 minecraft:end_portal_frame[eye=true,facing=west]
+fill 18 64 287 20 64 289 minecraft:end_portal
+execute as @e[type=minecraft:item,tag=!kw_shot] run kill @s

@@ -17,3 +17,4 @@ setblock 78 64 115 botania:endoflame
 setblock 78 64 117 botania:endoflame
 setblock 86 64 115 botania:endoflame
 setblock 86 64 117 botania:endoflame
+execute as @e[type=minecraft:item,tag=!kw_shot] run kill @s

@@ -43,3 +43,4 @@ kw testworld use 104 64 117 up naturesaura:gold_leaf
 kw testworld use 97 64 120 up naturesaura:infused_iron
 kw testworld use 103 64 120 up botania:livingwood_twig
 kw testworld use 100 64 121 up naturesaura:infused_iron
+execute as @e[type=minecraft:item,tag=!kw_shot] run kill @s

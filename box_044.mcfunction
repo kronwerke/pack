@@ -28,3 +28,4 @@ setblock 21 66 114 minecraft:redstone_wire
 setblock 21 66 115 minecraft:stone_bricks
 setblock 21 67 115 minecraft:redstone_wire
 setblock 21 67 116 minecraft:stone_bricks
+execute as @e[type=minecraft:item,tag=!kw_shot] run kill @s

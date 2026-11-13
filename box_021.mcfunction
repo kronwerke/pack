@@ -18,3 +18,4 @@ setblock 20 64 74 mekanism:basic_logistical_transporter
 setblock 22 64 74 mekanism:basic_logistical_transporter
 fill 19 64 73 22 64 73 mekanism:basic_universal_cable
 setblock 23 64 73 mekanism:basic_energy_cube[facing=south]
+execute as @e[type=minecraft:item,tag=!kw_shot] run kill @s

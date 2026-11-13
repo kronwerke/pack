@@ -22,3 +22,4 @@ setblock 143 64 51 create:cogwheel[axis=z]
 fill 142 64 50 144 65 50 create:andesite_casing
 setblock 143 64 50 create:andesite_encased_shaft[axis=z]
 setblock 143 64 49 create:creative_motor[facing=south]{ScrollValue:32}
+execute as @e[type=minecraft:item,tag=!kw_shot] run kill @s

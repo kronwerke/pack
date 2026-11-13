@@ -17,3 +17,4 @@ setblock 56 65 51 create:shaft[axis=y]
 setblock 56 62 51 create:creative_motor[facing=up]{ScrollValue:32}
 summon item 55.5 65 51.5 {Item:{id:"minecraft:andesite",count:16},PickupDelay:32767,Age:-32768,Tags:["kw_shot"]}
 summon item 55.5 65.3 51.5 {Item:{id:"minecraft:iron_nugget",count:16},PickupDelay:32767,Age:-32768,Tags:["kw_shot"]}
+execute as @e[type=minecraft:item,tag=!kw_shot] run kill @s

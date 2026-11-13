@@ -11,3 +11,4 @@ fill 119 64 92 119 79 105 minecraft:light_gray_concrete
 setblock 114 64 97 ars_nouveau:ritual_brazier
 kw testworld use 114 64 97 up ars_nouveau:ritual_flight
 setblock 116 64 97 ars_nouveau:source_jar[fill=11]{source:10000}
+execute as @e[type=minecraft:item,tag=!kw_shot] run kill @s

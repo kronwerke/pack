@@ -1,14 +1,24 @@
-# 065 occultism_afrit/mineshaft
-#area 122 142 141 167
-fill 122 64 142 141 91 167 minecraft:air
-fill 122 60 142 141 62 167 minecraft:stone
-fill 122 63 142 141 63 167 minecraft:light_gray_concrete
-fill 126 64 148 141 79 148 minecraft:light_gray_concrete
-fill 126 64 148 126 79 161 minecraft:light_gray_concrete
-setblock 127 64 160 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "065"}','{"text": "occultism_afrit"}','{"text": "mineshaft"}','{"text": ""}']}}
-setblock 128 64 160 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "dimensional"}','{"text": "mineshaft with"}','{"text": "a lamp inside"}','{"text": "and a hopper"}']}}
-setblock 129 64 160 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "below"}','{"text": ""}','{"text": ""}','{"text": ""}']}}
-fill 136 64 148 136 79 161 minecraft:light_gray_concrete
-setblock 131 64 153 minecraft:hopper[facing=east]
-setblock 131 65 153 occultism:dimensional_mineshaft[rotation=0]
-setblock 132 64 153 minecraft:chest[facing=south]{Items:[]}
+# 065 occultism_afrit/storage
+#area 137 142 160 171
+fill 137 64 142 160 91 171 minecraft:air
+fill 137 60 142 160 62 171 minecraft:stone
+fill 137 63 142 160 63 171 minecraft:light_gray_concrete
+fill 141 64 148 160 79 148 minecraft:light_gray_concrete
+fill 141 64 148 141 79 165 minecraft:light_gray_concrete
+setblock 142 64 164 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "065"}','{"text": "occultism_afrit"}','{"text": "storage"}','{"text": ""}']}}
+setblock 143 64 164 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "storage"}','{"text": "actuator with"}','{"text": "four"}','{"text": "stabilizers"}']}}
+fill 155 64 148 155 79 165 minecraft:light_gray_concrete
+setblock 144 65 155 occultism:otherstone
+setblock 145 65 155 occultism:storage_stabilizer_tier1[facing=east]
+setblock 148 65 151 occultism:otherstone
+setblock 148 65 152 occultism:storage_stabilizer_tier1[facing=south]
+setblock 148 65 158 occultism:storage_stabilizer_tier1[facing=north]
+setblock 148 65 159 occultism:otherstone
+setblock 151 65 155 occultism:storage_stabilizer_tier1[facing=west]
+setblock 152 65 155 occultism:otherstone
+setblock 144 64 155 occultism:otherstone
+setblock 148 64 151 occultism:otherstone
+setblock 148 64 155 occultism:storage_controller
+setblock 148 64 159 occultism:otherstone
+setblock 152 64 155 occultism:otherstone
+execute as @e[type=minecraft:item,tag=!kw_shot] run kill @s

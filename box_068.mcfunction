@@ -1,29 +1,16 @@
-# 068 hexerei/herbs
-#area 187 142 206 167
-fill 187 64 142 206 91 167 minecraft:air
-fill 187 60 142 206 62 167 minecraft:stone
-fill 187 63 142 206 63 167 minecraft:light_gray_concrete
-fill 191 64 148 206 79 148 minecraft:light_gray_concrete
-fill 191 64 148 191 79 161 minecraft:light_gray_concrete
-setblock 192 64 160 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "068"}','{"text": "hexerei"}','{"text": "herbs"}','{"text": ""}']}}
-setblock 193 64 160 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "herb garden"}','{"text": "with all four"}','{"text": "plants grown"}','{"text": ""}']}}
-fill 201 64 148 201 79 161 minecraft:light_gray_concrete
-fill 194 63 152 198 63 154 minecraft:grass_block
-setblock 194 64 152 hexerei:mandrake_plant[age=3]
-setblock 195 64 152 hexerei:belladonna_plant[age=3]
-setblock 197 64 152 hexerei:mugwort_bush[half=lower,age=3]
-setblock 197 65 152 hexerei:mugwort_bush[half=upper,age=3]
-setblock 198 64 152 hexerei:yellow_dock_bush[half=lower,age=3]
-setblock 198 65 152 hexerei:yellow_dock_bush[half=upper,age=3]
-setblock 194 64 153 hexerei:mandrake_plant[age=3]
-setblock 195 64 153 hexerei:belladonna_plant[age=3]
-setblock 197 64 153 hexerei:mugwort_bush[half=lower,age=3]
-setblock 197 65 153 hexerei:mugwort_bush[half=upper,age=3]
-setblock 198 64 153 hexerei:yellow_dock_bush[half=lower,age=3]
-setblock 198 65 153 hexerei:yellow_dock_bush[half=upper,age=3]
-setblock 194 64 154 hexerei:mandrake_plant[age=3]
-setblock 195 64 154 hexerei:belladonna_plant[age=3]
-setblock 197 64 154 hexerei:mugwort_bush[half=lower,age=3]
-setblock 197 65 154 hexerei:mugwort_bush[half=upper,age=3]
-setblock 198 64 154 hexerei:yellow_dock_bush[half=lower,age=3]
-setblock 198 65 154 hexerei:yellow_dock_bush[half=upper,age=3]
+# 068 hexerei/cauldron
+#area 202 142 221 167
+fill 202 64 142 221 91 167 minecraft:air
+fill 202 60 142 221 62 167 minecraft:stone
+fill 202 63 142 221 63 167 minecraft:light_gray_concrete
+fill 206 64 148 221 79 148 minecraft:light_gray_concrete
+fill 206 64 148 206 79 161 minecraft:light_gray_concrete
+setblock 207 64 160 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "068"}','{"text": "hexerei"}','{"text": "cauldron"}','{"text": ""}']}}
+setblock 208 64 160 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "two mixing"}','{"text": "cauldrons, one"}','{"text": "heated over"}','{"text": "lava"}']}}
+fill 216 64 148 216 79 161 minecraft:light_gray_concrete
+setblock 210 64 153 hexerei:mixing_cauldron
+setblock 212 63 153 minecraft:lava
+setblock 212 64 153 hexerei:mixing_cauldron
+kw testworld use 210 64 153 up minecraft:water_bucket
+kw testworld use 212 64 153 up minecraft:water_bucket
+execute as @e[type=minecraft:item,tag=!kw_shot] run kill @s

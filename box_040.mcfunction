@@ -18,3 +18,4 @@ kw testworld use 97 64 97 south ars_nouveau:dominion_wand
 kw testworld use 99 64 97 south ars_nouveau:dominion_wand
 kw testworld use 99 64 97 south ars_nouveau:dominion_wand
 kw testworld use 101 64 97 south ars_nouveau:dominion_wand
+execute as @e[type=minecraft:item,tag=!kw_shot] run kill @s

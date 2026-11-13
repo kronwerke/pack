@@ -39,3 +39,4 @@ kw testworld use 42 64 2 up botania:livingrock
 kw testworld use 46 64 6 up naturesaura:gold_leaf
 kw testworld use 42 64 10 up minecraft:gold_ingot
 kw testworld use 38 64 6 up naturesaura:token_joy
+execute as @e[type=minecraft:item,tag=!kw_shot] run kill @s

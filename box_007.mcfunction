@@ -28,3 +28,4 @@ setblock 35 64 32 ars_nouveau:agronomic_sourcelink
 setblock 37 64 32 ars_nouveau:source_jar[fill=8]{source:7000}
 setblock 39 64 32 ars_nouveau:imbuement_chamber[facing=up]
 summon ars_nouveau:starbuncle 33.5 64 32.5 {NoAI:1b,PersistenceRequired:1b,Silent:1b,Tags:["kw_shot"],Rotation:[180f,0f]}
+execute as @e[type=minecraft:item,tag=!kw_shot] run kill @s

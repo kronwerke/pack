@@ -196,3 +196,4 @@ setblock 223 70 76 mekanism:sps_casing
 setblock 223 70 77 mekanism:sps_casing
 kw testworld use 220 67 79 south mekanism:supercharged_coil
 execute unless block 220 67 80 minecraft:air
+execute as @e[type=minecraft:item,tag=!kw_shot] run kill @s

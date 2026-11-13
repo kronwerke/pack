@@ -57,3 +57,4 @@ setblock 60 63 8 minecraft:oak_planks
 setblock 58 63 9 minecraft:oak_planks
 setblock 59 63 9 minecraft:stone_bricks
 setblock 60 63 9 minecraft:oak_planks
+execute as @e[type=minecraft:item,tag=!kw_shot] run kill @s

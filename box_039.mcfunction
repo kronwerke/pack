@@ -15,3 +15,4 @@ setblock 83 64 97 minecraft:chest[facing=south]{Items:[]}
 setblock 81 64 97 ars_nouveau:source_jar[fill=11]{source:10000}
 summon minecraft:cow 84.5 64 99.5 {NoAI:1b,PersistenceRequired:1b,Silent:1b,Tags:["kw_shot"],Rotation:[180f,0f]}
 summon minecraft:sheep 80.5 64 99.5 {NoAI:1b,PersistenceRequired:1b,Silent:1b,Tags:["kw_shot"],Rotation:[180f,0f]}
+execute as @e[type=minecraft:item,tag=!kw_shot] run kill @s

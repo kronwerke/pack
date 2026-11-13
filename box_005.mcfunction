@@ -59,3 +59,4 @@ setblock 6 65 31 create:mechanical_drill[facing=south,waterlogged=false]
 fill 5 64 30 7 66 30 create:andesite_casing
 setblock 6 65 30 create:andesite_encased_shaft[axis=z]
 setblock 6 65 29 create:creative_motor[facing=south]{ScrollValue:32}
+execute as @e[type=minecraft:item,tag=!kw_shot] run kill @s

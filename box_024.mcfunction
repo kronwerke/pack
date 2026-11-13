@@ -19,3 +19,4 @@ setblock 72 64 75 mekanism:enrichment_chamber[facing=south]
 setblock 73 64 75 mekanism:energized_smelter[facing=south]
 setblock 74 64 75 minecraft:chest[facing=south]{Items:[]}
 fill 66 65 75 68 65 75 mekanism:basic_pressurized_tube
+execute as @e[type=minecraft:item,tag=!kw_shot] run kill @s

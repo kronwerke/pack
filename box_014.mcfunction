@@ -23,3 +23,4 @@ setblock 87 64 52 create:andesite_casing
 setblock 87 64 50 create:andesite_casing
 setblock 87 65 51 create:andesite_casing
 summon item 84.5 65 51.5 {Item:{id:"minecraft:gravel",count:8},PickupDelay:32767,Age:-32768,Tags:["kw_shot"]}
+execute as @e[type=minecraft:item,tag=!kw_shot] run kill @s

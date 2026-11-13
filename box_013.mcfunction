@@ -17,3 +17,4 @@ setblock 70 66 49 create:creative_motor[facing=south]{ScrollValue:32}
 summon item 70.5 65 51.5 {Item:{id:"minecraft:flint",count:8},PickupDelay:32767,Age:-32768,Tags:["kw_shot"]}
 summon item 70.5 65.3 51.5 {Item:{id:"minecraft:gravel",count:8},PickupDelay:32767,Age:-32768,Tags:["kw_shot"]}
 kw testworld use 70 64 51 up minecraft:lava_bucket
+execute as @e[type=minecraft:item,tag=!kw_shot] run kill @s

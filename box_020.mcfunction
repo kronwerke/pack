@@ -42,3 +42,4 @@ setblock 6 65 75 mekanism:dynamic_tank
 setblock 6 66 73 mekanism:dynamic_tank
 setblock 6 66 74 mekanism:dynamic_tank
 setblock 6 66 75 mekanism:dynamic_tank
+execute as @e[type=minecraft:item,tag=!kw_shot] run kill @s

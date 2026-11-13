@@ -16,3 +16,4 @@ fill 24 69 53 27 70 53 create:white_sail[facing=south]
 fill 22 66 53 23 69 53 create:white_sail[facing=south]
 fill 19 70 53 22 71 53 create:white_sail[facing=south]
 kw testworld use 23 70 52 south minecraft:air
+execute as @e[type=minecraft:item,tag=!kw_shot] run kill @s

@@ -1,117 +1,28 @@
-# 097 nuclearcraft/reactor
-#area 37 290 58 317
-fill 37 64 290 58 91 317 minecraft:air
-fill 37 60 290 58 62 317 minecraft:stone
-fill 37 63 290 58 63 317 minecraft:light_gray_concrete
-fill 41 64 296 58 79 296 minecraft:light_gray_concrete
-fill 41 64 296 41 79 311 minecraft:light_gray_concrete
-setblock 42 64 310 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "097"}','{"text": "nuclearcraft"}','{"text": "reactor"}','{"text": ""}']}}
-setblock 43 64 310 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Starte den"}','{"text": "ersten"}','{"text": "Spaltreaktor"}','{"text": ""}']}}
-fill 53 64 296 53 79 311 minecraft:light_gray_concrete
-setblock 45 64 300 nuclearcraft:fission_reactor_casing
-setblock 45 64 301 nuclearcraft:fission_reactor_casing
-setblock 45 64 302 nuclearcraft:fission_reactor_casing
-setblock 45 64 303 nuclearcraft:fission_reactor_casing
-setblock 45 64 304 nuclearcraft:fission_reactor_casing
-setblock 45 65 300 nuclearcraft:fission_reactor_casing
-setblock 45 65 301 nuclearcraft:fission_reactor_casing
-setblock 45 65 302 nuclearcraft:fission_reactor_casing
-setblock 45 65 303 nuclearcraft:fission_reactor_casing
-setblock 45 65 304 nuclearcraft:fission_reactor_casing
-setblock 45 66 300 nuclearcraft:fission_reactor_casing
-setblock 45 66 301 nuclearcraft:fission_reactor_casing
-setblock 45 66 302 nuclearcraft:fission_reactor_casing
-setblock 45 66 303 nuclearcraft:fission_reactor_casing
-setblock 45 66 304 nuclearcraft:fission_reactor_casing
-setblock 45 67 300 nuclearcraft:fission_reactor_casing
-setblock 45 67 301 nuclearcraft:fission_reactor_casing
-setblock 45 67 302 nuclearcraft:fission_reactor_casing
-setblock 45 67 303 nuclearcraft:fission_reactor_casing
-setblock 45 67 304 nuclearcraft:fission_reactor_casing
-setblock 45 68 300 nuclearcraft:fission_reactor_casing
-setblock 45 68 301 nuclearcraft:fission_reactor_casing
-setblock 45 68 302 nuclearcraft:fission_reactor_casing
-setblock 45 68 303 nuclearcraft:fission_reactor_casing
-setblock 45 68 304 nuclearcraft:fission_reactor_casing
-setblock 46 64 300 nuclearcraft:fission_reactor_casing
-setblock 46 64 301 nuclearcraft:fission_reactor_casing
-setblock 46 64 302 nuclearcraft:fission_reactor_casing
-setblock 46 64 303 nuclearcraft:fission_reactor_casing
-setblock 46 64 304 nuclearcraft:fission_reactor_casing
-setblock 46 65 300 nuclearcraft:fission_reactor_casing
-setblock 46 65 304 nuclearcraft:fission_reactor_glass
-setblock 46 66 300 nuclearcraft:fission_reactor_casing
-setblock 46 66 304 nuclearcraft:fission_reactor_glass
-setblock 46 67 300 nuclearcraft:fission_reactor_casing
-setblock 46 67 304 nuclearcraft:fission_reactor_glass
-setblock 46 68 300 nuclearcraft:fission_reactor_casing
-setblock 46 68 301 nuclearcraft:fission_reactor_casing
-setblock 46 68 302 nuclearcraft:fission_reactor_casing
-setblock 46 68 303 nuclearcraft:fission_reactor_casing
-setblock 46 68 304 nuclearcraft:fission_reactor_casing
-setblock 47 64 300 nuclearcraft:fission_reactor_casing
-setblock 47 64 301 nuclearcraft:fission_reactor_casing
-setblock 47 64 302 nuclearcraft:fission_reactor_casing
-setblock 47 64 303 nuclearcraft:fission_reactor_casing
-setblock 47 64 304 nuclearcraft:fission_reactor_casing
-setblock 47 65 300 nuclearcraft:fission_reactor_casing
-setblock 47 65 304 nuclearcraft:fission_reactor_glass
-setblock 47 66 300 nuclearcraft:fission_reactor_casing
-setblock 47 66 304 nuclearcraft:fission_reactor_glass
-setblock 47 67 300 nuclearcraft:fission_reactor_casing
-setblock 47 67 304 nuclearcraft:fission_reactor_glass
-setblock 47 68 300 nuclearcraft:fission_reactor_casing
-setblock 47 68 301 nuclearcraft:fission_reactor_casing
-setblock 47 68 302 nuclearcraft:fission_reactor_casing
-setblock 47 68 303 nuclearcraft:fission_reactor_casing
-setblock 47 68 304 nuclearcraft:fission_reactor_casing
-setblock 48 64 300 nuclearcraft:fission_reactor_casing
-setblock 48 64 301 nuclearcraft:fission_reactor_casing
-setblock 48 64 302 nuclearcraft:fission_reactor_casing
-setblock 48 64 303 nuclearcraft:fission_reactor_casing
-setblock 48 64 304 nuclearcraft:fission_reactor_casing
-setblock 48 65 300 nuclearcraft:fission_reactor_casing
-setblock 48 65 304 nuclearcraft:fission_reactor_glass
-setblock 48 66 300 nuclearcraft:fission_reactor_casing
-setblock 48 66 304 nuclearcraft:fission_reactor_glass
-setblock 48 67 300 nuclearcraft:fission_reactor_casing
-setblock 48 67 304 nuclearcraft:fission_reactor_glass
-setblock 48 68 300 nuclearcraft:fission_reactor_casing
-setblock 48 68 301 nuclearcraft:fission_reactor_casing
-setblock 48 68 302 nuclearcraft:fission_reactor_casing
-setblock 48 68 303 nuclearcraft:fission_reactor_casing
-setblock 48 68 304 nuclearcraft:fission_reactor_casing
-setblock 49 64 300 nuclearcraft:fission_reactor_casing
-setblock 49 64 301 nuclearcraft:fission_reactor_casing
-setblock 49 64 302 nuclearcraft:fission_reactor_casing
-setblock 49 64 303 nuclearcraft:fission_reactor_casing
-setblock 49 64 304 nuclearcraft:fission_reactor_casing
-setblock 49 65 300 nuclearcraft:fission_reactor_casing
-setblock 49 65 301 nuclearcraft:fission_reactor_casing
-setblock 49 65 302 nuclearcraft:fission_reactor_casing
-setblock 49 65 303 nuclearcraft:fission_reactor_casing
-setblock 49 65 304 nuclearcraft:fission_reactor_casing
-setblock 49 66 300 nuclearcraft:fission_reactor_casing
-setblock 49 66 301 nuclearcraft:fission_reactor_casing
-setblock 49 66 302 nuclearcraft:fission_reactor_casing
-setblock 49 66 303 nuclearcraft:fission_reactor_casing
-setblock 49 66 304 nuclearcraft:fission_reactor_casing
-setblock 49 67 300 nuclearcraft:fission_reactor_casing
-setblock 49 67 301 nuclearcraft:fission_reactor_casing
-setblock 49 67 302 nuclearcraft:fission_reactor_casing
-setblock 49 67 303 nuclearcraft:fission_reactor_casing
-setblock 49 67 304 nuclearcraft:fission_reactor_casing
-setblock 49 68 300 nuclearcraft:fission_reactor_casing
-setblock 49 68 301 nuclearcraft:fission_reactor_casing
-setblock 49 68 302 nuclearcraft:fission_reactor_casing
-setblock 49 68 303 nuclearcraft:fission_reactor_casing
-setblock 49 68 304 nuclearcraft:fission_reactor_casing
-setblock 46 65 304 nuclearcraft:fission_reactor_controller[facing=south]
-setblock 48 65 304 nuclearcraft:fission_reactor_port
-setblock 47 66 302 nuclearcraft:fission_reactor_solid_fuel_cell
-setblock 46 66 302 nuclearcraft:graphite_block
-setblock 48 66 302 nuclearcraft:graphite_block
-setblock 47 67 302 nuclearcraft:water_heat_sink
-setblock 47 65 302 nuclearcraft:water_heat_sink
-setblock 47 66 303 nuclearcraft:water_heat_sink
-setblock 47 66 301 nuclearcraft:water_heat_sink
+# 097 undergarden/arrival, infuser
+#area 73 277 101 302
+fill 73 64 277 101 91 302 minecraft:air
+fill 73 60 277 101 62 302 minecraft:stone
+fill 73 63 277 101 63 302 minecraft:light_gray_concrete
+fill 77 64 283 101 79 283 minecraft:light_gray_concrete
+fill 77 64 283 77 79 296 minecraft:light_gray_concrete
+setblock 78 64 295 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "097.1"}','{"text": "undergarden"}','{"text": "arrival"}','{"text": ""}']}}
+setblock 79 64 295 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Steig hinunter"}','{"text": ""}','{"text": ""}','{"text": ""}']}}
+fill 86 64 283 86 79 296 minecraft:light_gray_concrete
+setblock 80 65 288 minecraft:stone_bricks
+setblock 80 66 288 minecraft:stone_bricks
+setblock 80 67 288 minecraft:stone_bricks
+setblock 81 64 288 minecraft:stone_bricks
+setblock 81 68 288 minecraft:stone_bricks
+setblock 82 64 288 minecraft:stone_bricks
+setblock 82 68 288 minecraft:stone_bricks
+setblock 83 65 288 minecraft:stone_bricks
+setblock 83 66 288 minecraft:stone_bricks
+setblock 83 67 288 minecraft:stone_bricks
+fill 81 65 288 82 67 288 undergarden:undergarden_portal[axis=x]
+execute if block 81 66 288 undergarden:undergarden_portal
+setblock 87 64 295 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "097.2"}','{"text": "undergarden"}','{"text": "infuser"}','{"text": ""}']}}
+setblock 88 64 295 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Bau den"}','{"text": "Infusionstisch"}','{"text": ""}','{"text": ""}']}}
+fill 96 64 283 96 79 296 minecraft:light_gray_concrete
+fill 90 63 287 92 63 289 undergarden:depthrock
+setblock 91 64 288 undergarden:infuser[state=infusing_utherium]
+execute as @e[type=minecraft:item,tag=!kw_shot] run kill @s

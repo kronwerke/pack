@@ -17,3 +17,4 @@ setblock 67 64 96 ars_nouveau:arcane_pedestal[facing=up]
 kw testworld use 67 64 96 south minecraft:dirt
 kw testworld use 67 64 97 south ars_nouveau:source_gem
 setblock 69 64 96 ars_nouveau:source_jar[fill=11]{source:10000}
+execute as @e[type=minecraft:item,tag=!kw_shot] run kill @s

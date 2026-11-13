@@ -13,3 +13,4 @@ setblock 201 64 74 mekanism:solar_neutron_activator[facing=south,active=false]
 setblock 203 64 74 mekanism:solar_neutron_activator[facing=south,active=false]
 setblock 205 64 74 mekanism:solar_neutron_activator[facing=south,active=false]
 fill 199 64 73 205 64 73 mekanism:basic_pressurized_tube
+execute as @e[type=minecraft:item,tag=!kw_shot] run kill @s

@@ -53,3 +53,4 @@ setblock 22 67 32 mysticalagriculture:inferium_crop[age=7]
 fill 22 64 33 22 65 33 mysticalagriculture:inferium_growth_accelerator
 setblock 22 66 33 mysticalagriculture:inferium_farmland[moisture=7]
 setblock 22 67 33 mysticalagriculture:inferium_crop[age=7]
+execute as @e[type=minecraft:item,tag=!kw_shot] run kill @s

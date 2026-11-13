@@ -78,3 +78,4 @@ fill 171 64 75 171 65 75 mekanism:steel_casing
 setblock 171 66 75 mekanism:laser_amplifier[facing=west]
 fill 173 64 75 173 65 75 mekanism:steel_casing
 setblock 173 66 75 mekanism:laser[facing=west]
+execute as @e[type=minecraft:item,tag=!kw_shot] run kill @s

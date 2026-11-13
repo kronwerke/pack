@@ -19,3 +19,4 @@ setblock 55 64 75 minecraft:chest[facing=south]{Items:[]}
 setblock 49 64 74 mekanism:electrolytic_separator[facing=south]
 setblock 50 64 74 mekanism:chemical_infuser[facing=south]
 setblock 51 64 74 mekanism:electrolytic_separator[facing=south]
+execute as @e[type=minecraft:item,tag=!kw_shot] run kill @s

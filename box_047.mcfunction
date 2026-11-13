@@ -10,3 +10,4 @@ setblock 62 64 123 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text"
 fill 70 64 111 70 79 124 minecraft:light_gray_concrete
 setblock 65 64 116 botania:mana_void
 setblock 65 65 116 botania:mana_pool{mana:1000000}
+execute as @e[type=minecraft:item,tag=!kw_shot] run kill @s

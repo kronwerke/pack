@@ -1,12 +1,12 @@
-# 057 alfheim/frame
+# 057 alfheim/open
 #area 240 105 261 130
 fill 240 64 105 261 91 130 minecraft:air
 fill 240 60 105 261 62 130 minecraft:stone
 fill 240 63 105 261 63 130 minecraft:light_gray_concrete
 fill 244 64 111 261 79 111 minecraft:light_gray_concrete
 fill 244 64 111 244 79 124 minecraft:light_gray_concrete
-setblock 245 64 123 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "057"}','{"text": "alfheim"}','{"text": "frame"}','{"text": ""}']}}
-setblock 246 64 123 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "the finished"}','{"text": "gateway with"}','{"text": "two pools and"}','{"text": "natura pylons"}']}}
+setblock 245 64 123 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "057"}','{"text": "alfheim"}','{"text": "open"}','{"text": ""}']}}
+setblock 246 64 123 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "the open portal"}','{"text": "with an item"}','{"text": "flying out"}','{"text": ""}']}}
 fill 256 64 111 256 79 124 minecraft:light_gray_concrete
 setblock 250 64 115 botania:elven_gateway_core
 setblock 249 64 115 botania:livingwood_log[axis=x]
@@ -24,3 +24,6 @@ setblock 246 64 117 botania:mana_pool{mana:1000000}
 setblock 246 65 117 botania:natura_pylon
 setblock 254 64 117 botania:mana_pool{mana:1000000}
 setblock 254 65 117 botania:natura_pylon
+kw testworld use 250 64 115 south botania:wand_of_the_forest
+execute unless block 250 64 115 botania:elven_gateway_core[state=off]
+execute as @e[type=minecraft:item,tag=!kw_shot] run kill @s

@@ -17,3 +17,4 @@ setblock 160 65 49 create:creative_motor[facing=south]{ScrollValue:32}
 setblock 162 65 50 create:andesite_encased_shaft[axis=z]
 setblock 162 65 49 create:creative_motor[facing=south]{ScrollValue:-32}
 summon item 161.5 67 51.5 {Item:{id:"minecraft:raw_iron",count:8},PickupDelay:32767,Age:-32768,Tags:["kw_shot"]}
+execute as @e[type=minecraft:item,tag=!kw_shot] run kill @s

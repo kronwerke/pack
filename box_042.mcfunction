@@ -9,3 +9,4 @@ setblock 125 64 104 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text
 setblock 126 64 104 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "a full"}','{"text": "elemental robe"}','{"text": "set"}','{"text": ""}']}}
 fill 134 64 92 134 79 105 minecraft:light_gray_concrete
 summon armor_stand 129.5 64 97.5 {ArmorItems:[{id:"ars_elemental:fire_boots",count:1},{id:"ars_elemental:fire_leggings",count:1},{id:"ars_elemental:fire_robes",count:1},{id:"ars_elemental:fire_hat",count:1}],ShowArms:1b,NoBasePlate:1b,Tags:["kw_shot"],Rotation:[180f,0f]}
+execute as @e[type=minecraft:item,tag=!kw_shot] run kill @s

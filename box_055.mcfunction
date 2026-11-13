@@ -1,20 +1,26 @@
-# 055 gaia/arena
-#area 186 105 211 136
-fill 186 64 105 211 91 136 minecraft:air
-fill 186 60 105 211 62 136 minecraft:stone
-fill 186 63 105 211 63 136 minecraft:light_gray_concrete
-fill 190 64 111 211 79 111 minecraft:light_gray_concrete
-fill 190 64 111 190 79 130 minecraft:light_gray_concrete
-setblock 191 64 129 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "055"}','{"text": "gaia"}','{"text": "arena"}','{"text": ""}']}}
-setblock 192 64 129 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "beacon with"}','{"text": "four pylons"}','{"text": "from above"}','{"text": ""}']}}
-fill 206 64 111 206 79 130 minecraft:light_gray_concrete
-fill 197 63 118 199 63 120 minecraft:iron_block
-setblock 198 64 119 minecraft:beacon
-setblock 194 64 115 minecraft:quartz_block
-setblock 194 65 115 botania:gaia_pylon
-setblock 194 64 123 minecraft:quartz_block
-setblock 194 65 123 botania:gaia_pylon
-setblock 202 64 115 minecraft:quartz_block
-setblock 202 65 115 botania:gaia_pylon
-setblock 202 64 123 minecraft:quartz_block
-setblock 202 65 123 botania:gaia_pylon
+# 055 gaia/dandelifeon
+#area 190 105 227 148
+fill 190 64 105 215 91 148 minecraft:air
+fill 216 64 105 227 91 148 minecraft:air
+fill 190 60 105 227 62 148 minecraft:stone
+fill 190 63 105 227 63 148 minecraft:light_gray_concrete
+fill 194 64 111 227 79 111 minecraft:light_gray_concrete
+fill 194 64 111 194 79 142 minecraft:light_gray_concrete
+setblock 195 64 141 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "055"}','{"text": "gaia"}','{"text": "dandelifeon"}','{"text": ""}']}}
+setblock 196 64 141 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "a 25x25 cell"}','{"text": "field"}','{"text": ""}','{"text": ""}']}}
+fill 222 64 111 222 79 142 minecraft:light_gray_concrete
+fill 196 63 113 220 63 137 minecraft:smooth_stone
+setblock 208 63 125 minecraft:grass_block
+setblock 208 64 125 botania:dandelifeon
+setblock 201 64 118 botania:cellular_block
+setblock 202 64 119 botania:cellular_block
+setblock 203 64 119 botania:cellular_block
+setblock 201 64 120 botania:cellular_block
+setblock 202 64 120 botania:cellular_block
+setblock 213 64 120 botania:cellular_block
+setblock 214 64 120 botania:cellular_block
+setblock 215 64 120 botania:cellular_block
+setblock 202 64 129 botania:cellular_block
+setblock 202 64 130 botania:cellular_block
+setblock 202 64 131 botania:cellular_block
+execute as @e[type=minecraft:item,tag=!kw_shot] run kill @s

@@ -11,3 +11,4 @@ fill 121 64 111 121 79 124 minecraft:light_gray_concrete
 setblock 116 64 116 create:brass_casing
 setblock 116 65 116 botania:mana_pool{mana:1000000}
 summon item 116.5 66 116.5 {Item:{id:"minecraft:ender_pearl",count:1},PickupDelay:32767,Age:-32768,Tags:["kw_shot"]}
+execute as @e[type=minecraft:item,tag=!kw_shot] run kill @s

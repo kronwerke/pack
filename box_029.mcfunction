@@ -134,3 +134,4 @@ setblock 152 66 76 mekanism:basic_induction_cell
 setblock 152 67 74 mekanism:basic_induction_cell
 setblock 152 67 75 mekanism:basic_induction_cell
 setblock 152 67 76 mekanism:basic_induction_cell
+execute as @e[type=minecraft:item,tag=!kw_shot] run kill @s

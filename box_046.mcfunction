@@ -11,3 +11,4 @@ fill 55 64 111 55 79 124 minecraft:light_gray_concrete
 fill 48 63 114 52 63 118 minecraft:grass_block
 setblock 50 64 116 botania:mana_pool{mana:400000}
 setblock 51 64 116 botania:manastar
+execute as @e[type=minecraft:item,tag=!kw_shot] run kill @s

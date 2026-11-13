@@ -12,3 +12,4 @@ fill 10 64 92 10 79 105 minecraft:light_gray_concrete
 setblock 5 64 97 ars_nouveau:imbuement_chamber[facing=up]
 kw testworld use 5 64 97 south minecraft:amethyst_shard
 setblock 7 64 97 ars_nouveau:source_jar[fill=11]{source:10000}
+execute as @e[type=minecraft:item,tag=!kw_shot] run kill @s

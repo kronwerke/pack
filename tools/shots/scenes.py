@@ -2977,3 +2977,27 @@ def _(b):
     b.f(7, 0, 5, 7, 2, 5, "minecraft:stone_bricks")
     b.b(7, 3, 5, "minecraft:barrel[facing=up]")
     b.b(6, 3, 5, "create:portable_storage_interface[facing=west]")
+
+
+# ===================================================================================
+# Ponder scenes of the mods themselves: what their authors built to explain a part, placed
+# as it is, its checkered floor plate set into the floor
+
+def ponder(key, jar, path, deep=0):
+    import structs
+    (sx, sy, sz), _, _, _ = structs.load(jar, path)
+
+    @scene(key, w=sx + 2, d=sz + 2 + deep, h=sy + 6)
+    def _(b):
+        b.nbt(jar, path, 1, -1, 1)
+
+
+ponder("create_trains/first_train", "create-1", "assets/create/ponder/train_controls.nbt")
+ponder("create_trains/conductor", "create-1", "assets/create/ponder/train_schedule.nbt")
+ponder("create_trains/junction", "create-1", "assets/create/ponder/train_signal/signaling.nbt")
+ponder("create/stock_ticker", "create-1", "assets/create/ponder/high_logistics/stock_ticker.nbt")
+ponder("create_brass/boiler", "create-1", "assets/create/ponder/steam_engine.nbt", deep=6)
+ponder("create/stress", "create-1", "assets/create/ponder/gauges.nbt")
+ponder("create_brass/pg_winding", "powergrid", "assets/powergrid/ponder/generator/generator_1.nbt")
+ponder("create_brass/pg_generator", "powergrid", "assets/powergrid/ponder/generator/generator_3.nbt", deep=4)
+ponder("create_brass/pg_magnet", "powergrid", "assets/powergrid/ponder/electromagnet.nbt")

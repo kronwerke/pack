@@ -1,41 +1,33 @@
-# 156 draconic/dust, injectors, stabilizer
-#area -4 355 39 382
-fill -4 64 355 36 91 382 minecraft:air
-fill 37 64 355 39 91 382 minecraft:air
-fill -4 60 355 39 62 382 minecraft:stone
-fill -4 63 355 39 63 382 minecraft:light_gray_concrete
-fill 0 64 361 39 79 361 minecraft:light_gray_concrete
-fill 0 64 361 0 79 376 minecraft:light_gray_concrete
-setblock 1 64 375 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "156.1"}','{"text": "draconic"}','{"text": "dust"}','{"text": ""}']}}
-setblock 2 64 375 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Bau Draconium"}','{"text": "im End ab"}','{"text": ""}','{"text": ""}']}}
-fill 10 64 361 10 79 376 minecraft:light_gray_concrete
-fill 4 64 365 6 65 366 minecraft:end_stone
-setblock 5 64 366 draconicevolution:end_draconium_ore
-setblock 6 65 366 draconicevolution:end_draconium_ore
-setblock 4 65 365 draconicevolution:end_draconium_ore
-setblock 11 64 375 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "156.2"}','{"text": "draconic"}','{"text": "injectors"}','{"text": ""}']}}
-setblock 12 64 375 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Stell acht"}','{"text": "Draconium-Injektoren"}','{"text": "auf"}','{"text": ""}']}}
-fill 22 64 361 22 79 376 minecraft:light_gray_concrete
-setblock 16 64 367 draconicevolution:crafting_core
-setblock 13 64 366 draconicevolution:basic_crafting_injector[facing=east]
-setblock 15 64 364 draconicevolution:basic_crafting_injector[facing=south]
-setblock 19 64 366 draconicevolution:basic_crafting_injector[facing=west]
-setblock 15 64 370 draconicevolution:basic_crafting_injector[facing=north]
-setblock 13 64 368 draconicevolution:basic_crafting_injector[facing=east]
-setblock 17 64 364 draconicevolution:basic_crafting_injector[facing=south]
-setblock 19 64 368 draconicevolution:basic_crafting_injector[facing=west]
-setblock 17 64 370 draconicevolution:basic_crafting_injector[facing=north]
-setblock 23 64 375 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "156.3"}','{"text": "draconic"}','{"text": "stabilizer"}','{"text": ""}']}}
-setblock 24 64 375 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Bau vier"}','{"text": "Stabilisatoren"}','{"text": "mit Gaia"}','{"text": ""}']}}
-fill 34 64 361 34 79 376 minecraft:light_gray_concrete
-fill 27 64 366 29 66 368 draconicevolution:draconium_block
-setblock 28 65 367 draconicevolution:energy_core
-setblock 24 64 367 minecraft:polished_deepslate
-setblock 24 65 367 draconicevolution:energy_core_stabilizer
-setblock 32 64 367 minecraft:polished_deepslate
-setblock 32 65 367 draconicevolution:energy_core_stabilizer
-setblock 28 64 363 minecraft:polished_deepslate
-setblock 28 65 363 draconicevolution:energy_core_stabilizer
-setblock 28 64 371 minecraft:polished_deepslate
-setblock 28 65 371 draconicevolution:energy_core_stabilizer
+# 156 list_dimensions/d_mining, r_plates, r_enderio
+#area 253 336 291 361
+fill 253 64 336 291 91 361 minecraft:air
+fill 253 60 336 291 62 361 minecraft:stone
+fill 253 63 336 291 63 361 minecraft:light_gray_concrete
+fill 257 64 342 291 79 342 minecraft:light_gray_concrete
+fill 257 64 342 257 79 355 minecraft:light_gray_concrete
+setblock 258 64 354 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "156.1"}','{"text": "list_dimensions"}','{"text": "d_mining"}','{"text": ""}']}}
+setblock 259 64 354 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Die Farmwelt"}','{"text": ""}','{"text": ""}','{"text": ""}']}}
+fill 266 64 342 266 79 355 minecraft:light_gray_concrete
+setblock 260 65 347 kronwerke:grubenrahmen
+setblock 260 66 347 kronwerke:grubenrahmen
+setblock 260 67 347 kronwerke:grubenrahmen
+setblock 261 64 347 kronwerke:grubenrahmen
+setblock 261 68 347 kronwerke:grubenrahmen
+setblock 262 64 347 kronwerke:grubenrahmen
+setblock 262 68 347 kronwerke:grubenrahmen
+setblock 263 65 347 kronwerke:grubenrahmen
+setblock 263 66 347 kronwerke:grubenrahmen
+setblock 263 67 347 kronwerke:grubenrahmen
+kw testworld use 261 64 347 up ars_nouveau:source_gem
+setblock 267 64 354 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "156.2"}','{"text": "list_dimensions"}','{"text": "r_plates"}','{"text": ""}']}}
+setblock 268 64 354 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Verbinde zwei"}','{"text": "Orte mit"}','{"text": "Warpplatten"}','{"text": ""}']}}
+fill 276 64 342 276 79 355 minecraft:light_gray_concrete
+setblock 269 64 347 waystones:warp_plate[status=idle]
+setblock 273 64 347 waystones:warp_plate[status=idle]
+setblock 277 64 354 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "156.3"}','{"text": "list_dimensions"}','{"text": "r_enderio"}','{"text": ""}']}}
+setblock 278 64 354 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Setz Reiseanker"}','{"text": ""}','{"text": ""}','{"text": ""}']}}
+fill 286 64 342 286 79 355 minecraft:light_gray_concrete
+setblock 279 64 348 enderio:travel_anchor
+fill 283 64 346 283 66 346 minecraft:stone_bricks
+setblock 283 67 346 enderio:travel_anchor
 execute as @e[type=minecraft:item,tag=!kw_shot] run kill @s

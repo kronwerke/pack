@@ -1,32 +1,36 @@
-# 165 list_gear/mek_jetpack, drilling, wyvern, sg_end
-#area 283 376 334 405
-fill 283 64 376 321 91 405 minecraft:air
-fill 322 64 376 334 91 405 minecraft:air
-fill 283 60 376 334 62 405 minecraft:stone
-fill 283 63 376 334 63 405 minecraft:light_gray_concrete
-fill 287 64 382 334 79 382 minecraft:light_gray_concrete
-fill 287 64 382 287 79 399 minecraft:light_gray_concrete
-setblock 288 64 398 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "165.1"}','{"text": "list_gear"}','{"text": "mek_jetpack"}','{"text": ""}']}}
-setblock 289 64 398 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Flieg mit dem"}','{"text": "Jetpack"}','{"text": ""}','{"text": ""}']}}
-fill 297 64 382 297 79 399 minecraft:light_gray_concrete
-summon armor_stand 292.5 64 387.5 {ArmorItems:[{},{},{id:"mekanism:jetpack",count:1},{}],ShowArms:1b,NoBasePlate:1b,Tags:["kw_shot"],Rotation:[20f,0f]}
-setblock 298 64 398 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "165.2"}','{"text": "list_gear"}','{"text": "drilling"}','{"text": ""}']}}
-setblock 299 64 398 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Stell eine"}','{"text": "Bohrmaschine"}','{"text": "auf"}','{"text": ""}']}}
-fill 309 64 382 309 79 399 minecraft:light_gray_concrete
-kw testworld place shots:createoreexcavation/drilling_machine 299 63 384 none
-setblock 310 64 398 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "165.3"}','{"text": "list_gear"}','{"text": "wyvern"}','{"text": ""}']}}
-setblock 311 64 398 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Fusioniere"}','{"text": "Wyvern-Ausrüstung"}','{"text": ""}','{"text": ""}']}}
-fill 319 64 382 319 79 399 minecraft:light_gray_concrete
-summon armor_stand 313.5 64 387.5 {ArmorItems:[{},{},{id:"draconicevolution:wyvern_chestpiece",count:1},{}],HandItems:[{id:"draconicevolution:wyvern_sword",count:1},{}],ShowArms:1b,NoBasePlate:1b,Tags:["kw_shot"],Rotation:[180f,0f]}
-summon armor_stand 315.5 64 387.5 {ArmorItems:[{},{},{},{}],HandItems:[{id:"draconicevolution:wyvern_pickaxe",count:1},{}],ShowArms:1b,NoBasePlate:1b,Tags:["kw_shot"],Rotation:[180f,0f]}
-setblock 320 64 398 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "165.4"}','{"text": "list_gear"}','{"text": "sg_end"}','{"text": ""}']}}
-setblock 321 64 398 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Schmiede"}','{"text": "Azur-Elektrum"}','{"text": "und"}','{"text": "Tyrann-Stahl"}']}}
-fill 329 64 382 329 79 399 minecraft:light_gray_concrete
-fill 323 64 386 325 65 386 minecraft:end_stone
-setblock 324 64 386 silentgear:azure_silver_ore
-setblock 325 65 386 silentgear:azure_silver_ore
-setblock 323 64 388 minecraft:smooth_stone_slab
-summon item_display 323.5 64.95 388.5 {item:{id:"silentgear:azure_electrum_ingot",count:1},item_display:"fixed",billboard:"vertical",transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[1.0f,1.0f,1.0f]},brightness:{sky:15,block:15},Tags:["kw_shot"]}
-setblock 325 64 388 minecraft:smooth_stone_slab
-summon item_display 325.5 64.95 388.5 {item:{id:"silentgear:tyrian_steel_ingot",count:1},item_display:"fixed",billboard:"vertical",transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[1.0f,1.0f,1.0f]},brightness:{sky:15,block:15},Tags:["kw_shot"]}
+# 165 eidolon/brazier, crucible, altar, stone_altar
+#area 171 378 220 403
+fill 171 64 378 215 91 403 minecraft:air
+fill 216 64 378 220 91 403 minecraft:air
+fill 171 60 378 220 62 403 minecraft:stone
+fill 171 63 378 220 63 403 minecraft:light_gray_concrete
+fill 175 64 384 220 79 384 minecraft:light_gray_concrete
+fill 175 64 384 175 79 397 minecraft:light_gray_concrete
+setblock 176 64 396 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "165.1"}','{"text": "eidolon"}','{"text": "brazier"}','{"text": ""}']}}
+setblock 177 64 396 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Bau Brazier und"}','{"text": "Stone Hands"}','{"text": ""}','{"text": ""}']}}
+fill 185 64 384 185 79 397 minecraft:light_gray_concrete
+setblock 180 64 389 eidolon_repraised:brazier
+setblock 178 64 389 eidolon_repraised:stone_hand[facing=east]
+setblock 182 64 389 eidolon_repraised:stone_hand[facing=west]
+setblock 180 64 387 eidolon_repraised:stone_hand[facing=south]
+setblock 186 64 396 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "165.2"}','{"text": "eidolon"}','{"text": "crucible"}','{"text": ""}']}}
+setblock 187 64 396 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Setz einen"}','{"text": "Crucible auf"}','{"text": ""}','{"text": ""}']}}
+fill 195 64 384 195 79 397 minecraft:light_gray_concrete
+setblock 190 64 389 minecraft:campfire[facing=south,lit=true]
+setblock 190 65 389 eidolon_repraised:crucible
+kw testworld use 190 65 389 up minecraft:water_bucket
+setblock 196 64 396 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "165.3"}','{"text": "eidolon"}','{"text": "altar"}','{"text": ""}']}}
+setblock 197 64 396 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Bau einen Altar"}','{"text": "mit Bildnis"}','{"text": ""}','{"text": ""}']}}
+fill 205 64 384 205 79 397 minecraft:light_gray_concrete
+fill 199 64 389 201 64 389 eidolon_repraised:wooden_altar
+setblock 200 65 389 eidolon_repraised:straw_effigy[facing=south]
+setblock 199 65 389 eidolon_repraised:candle
+setblock 201 65 389 minecraft:skeleton_skull[rotation=8]
+setblock 206 64 396 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "165.4"}','{"text": "eidolon"}','{"text": "stone_altar"}','{"text": ""}']}}
+setblock 207 64 396 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Bau Stone Altar"}','{"text": "und Elder"}','{"text": "Statue"}','{"text": ""}']}}
+fill 215 64 384 215 79 397 minecraft:light_gray_concrete
+fill 209 64 389 211 64 389 eidolon_repraised:stone_altar
+setblock 210 65 389 eidolon_repraised:unholy_effigy[facing=south]
+setblock 209 65 389 eidolon_repraised:goblet
+setblock 211 65 389 eidolon_repraised:candle
 execute as @e[type=minecraft:item,tag=!kw_shot] run kill @s

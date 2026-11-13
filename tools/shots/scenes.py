@@ -3121,3 +3121,81 @@ def _(b):
     b.f(3, 0, 3, 5, 1, 4, "minecraft:netherrack")
     b.b(4, 0, 4, "minecraft:ancient_debris")
     b.b(5, 1, 4, "minecraft:ancient_debris")
+
+
+# ---- batch 22: places underground the camera cannot find in a real world, built the way they generate ----
+
+@scene("exploration/e_veins")
+def _(b):
+    # a copper vein the way it runs through granite: a slanted band of ore with whole raw blocks in it
+    b.f(2, 0, 3, 6, 4, 4, "minecraft:granite")
+    for x, y in ((2, 0), (3, 0), (3, 1), (4, 1), (5, 2), (6, 3), (6, 4), (2, 1), (5, 3)):
+        b.b(x, y, 4, "minecraft:copper_ore")
+    b.b(4, 2, 4, "minecraft:raw_copper_block")
+    b.b(5, 4, 4, "minecraft:raw_copper_block")
+    b.b(3, 2, 4, "minecraft:raw_copper_block")
+
+
+@scene("exploration/e_lootr")
+def _(b):
+    # a Lootr chest in the corner of a ruin: it stays where it is, everyone finds their own loot in it
+    b.f(3, 0, 3, 6, 0, 5, "minecraft:mossy_cobblestone")
+    b.f(3, 1, 3, 6, 2, 3, "minecraft:mossy_stone_bricks")
+    b.b(6, 3, 3, "minecraft:cracked_stone_bricks")
+    b.b(3, 1, 4, "minecraft:cracked_stone_bricks")
+    b.b(3, 2, 4, "minecraft:mossy_stone_brick_slab")
+    b.b(5, 1, 4, "lootr:lootr_chest[facing=south]", '{LootTable:"minecraft:chests/simple_dungeon"}')
+    b.b(4, 1, 4, "minecraft:lantern")
+
+
+@scene("exploration/e_campsite")
+def _(b):
+    # a cave campsite of Artifacts, with the blocks its feature places: plank floor, fire, bed, workbench,
+    # furnace with its chimney, a light, a pot and the chest, which may be a mimic
+    b.f(2, 0, 2, 6, 0, 6, "minecraft:stone")
+    b.f(2, 1, 2, 6, 3, 2, "minecraft:stone")
+    b.f(2, 1, 3, 2, 3, 6, "minecraft:stone")
+    b.f(3, 0, 3, 6, 0, 6, "minecraft:oak_planks")
+    b.b(4, 1, 5, "minecraft:campfire[lit=true]")
+    b.b(3, 1, 3, "minecraft:furnace")
+    b.b(3, 2, 3, "minecraft:cobblestone_wall")
+    b.b(4, 1, 3, "minecraft:crafting_table")
+    b.b(5, 1, 3, "lootr:lootr_chest[facing=south]", '{LootTable:"artifacts:chests/campsite_chest"}')
+    b.b(6, 1, 3, "minecraft:potted_red_tulip")
+    b.b(6, 1, 4, "minecraft:red_bed[facing=north,part=head]")
+    b.b(6, 1, 5, "minecraft:red_bed[facing=north,part=foot]")
+    b.b(3, 1, 4, "minecraft:lantern")
+
+
+@scene("exploration/e_yung_dungeon")
+def _(b):
+    # the heart of a dungeon: the spawner between its chests, mossy walls
+    b.f(2, 0, 2, 6, 0, 6, "minecraft:mossy_cobblestone")
+    b.f(2, 1, 2, 6, 3, 2, "minecraft:cobblestone")
+    b.f(2, 1, 3, 2, 3, 6, "minecraft:mossy_cobblestone")
+    b.b(4, 2, 2, "minecraft:mossy_cobblestone")
+    b.b(5, 1, 2, "minecraft:mossy_cobblestone")
+    b.b(4, 1, 4, "minecraft:spawner", '{SpawnData:{entity:{id:"minecraft:skeleton"}}}')
+    b.b(3, 1, 3, "lootr:lootr_chest[facing=south]", '{LootTable:"minecraft:chests/simple_dungeon"}')
+    b.b(6, 1, 3, "lootr:lootr_chest[facing=south]", '{LootTable:"minecraft:chests/simple_dungeon"}')
+    b.b(5, 1, 3, "minecraft:skeleton_skull[rotation=2]")
+    b.b(3, 1, 5, "minecraft:cobweb")
+
+
+@scene("undergarden/depths")
+def _(b):
+    # under the dreadrock floor of the world: rogdorium ore in the rock
+    b.f(2, 0, 3, 6, 3, 4, "undergarden:dreadrock")
+    for x, y in ((3, 1), (4, 1), (4, 2), (5, 2), (2, 3), (6, 0)):
+        b.b(x, y, 4, "undergarden:dreadrock_rogdorium_ore")
+    b.show(4, 0, 6, "undergarden:rogdorium", scale=1.5)
+
+
+@scene("eternal_starlight/portal", w=15, d=9, h=13)
+def _(b):
+    # the portal ruin of the mod with its ring of chiseled voidstone, opened with the Orb of Prophecy
+    b.nbt("eternalstarlight", "data/eternal_starlight/structure/portal_ruins/common.nbt", 1, -1, 1)
+    b.b(11, 1, 4, "minecraft:air")       # the gatekeeper's spawner: he has his own picture
+    b.use(4, 1, 4, "south", "eternal_starlight:orb_of_prophecy")
+    b.expect(4, 3, 4, "eternal_starlight:starlight_portal")
+    b.focus(1, 0, 2, 7, 6, 6)            # the ring, not the fallen half of the ruin beside it

@@ -545,7 +545,7 @@ def validate(cat, files):
                     if known and k in known and len(known[k]) > 1 and k not in given:
                         probs.append(f"{where}: {name} needs {k} (one of {known[k]})")
             for iid in re.findall(r'id:"([a-z0-9_.-]+:[a-z0-9_/.-]+)"', line):
-                if iid not in items and iid not in blocks:
+                if iid not in items and iid not in blocks and iid not in ents:      # a spawner names its creature this way
                     probs.append(f"{where}: unknown item {iid}")
             m = re.match(r"kw testworld use \S+ \S+ \S+ \S+ ([a-z0-9_.-]+:[a-z0-9_/.-]+)", line)
             if m and m[1] not in items and m[1] not in blocks:

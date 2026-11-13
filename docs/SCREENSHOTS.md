@@ -19,6 +19,18 @@ On the server: `/kw testworld pull` fetches the branch, `/kw testworld apply` bu
 
 A run goes twice: the first pass only wakes the scenes (a belt learns its length and a network starts to turn when a player comes near for the first time), the second pass takes the pictures. `/kw cam sheet <tag>` packs contact sheets of a run to look through; `/kw cam bundle <tag>` packs the pictures themselves. A picture goes into the book when its subject stands whole in the frame, formed and working, the way the quest's reader will see it: it is copied to `kubejs/assets/kronwerke/textures/quests/shots/<chapter>_<quest>.png`, and the quest generator puts it on top of the quest's text.
 
+Landscapes and structures of the real worlds:
+
+A dungeon, a biome or a village has no scene: the camera goes to the real place. The dimensions on the main server are the overworld, `aether:the_aether`, `deeperdarker:otherside`, `undergarden:undergarden` and `eternal_starlight:starlight`; Nether and End are servers of their own, the camera would have to log in there. `tools/shots/landscapes.json` lists the camera of every such picture.
+
+- Find the place: `execute in <dim> positioned 0 64 0 run locate structure <id>` or `locate biome <id>` (in the Otherside from y 40, at y 0 it finds nothing).
+- Load it: `execute in <dim> run forceload add <x1 z1 x2 z2>`. Write every forceload down and remove exactly these afterwards; the overworld has one at chunk 0 0 that is not ours, so never `remove all`.
+- Find the ground: a marker with `positioned over world_surface` under open sky; in a cave world `spreadplayers <x z> 0 3 under <y> false <marker>` sets the marker on the highest floor below y, `data get entity <marker> Pos` reads it. A boss in his room tells where a buried dungeon is (`data get entity @e[type=aether:slider,limit=1,sort=nearest] Pos`). A jigsaw structure starts at the corner `locate` names, at the height its file gives (`start_height`), turned into one of four quadrants.
+- Take it: `execute in <dim> run kw cam shot <name> <x y z> <yaw> <pitch> <fov> 640 360`, yaw 0 south, 90 west, 180 north, pitch down. Take it twice: the first pass comes back with black or sky coloured holes where the area was not drawn yet. Underground the camera needs `effect give KronwerkeCam minecraft:night_vision infinite 0 true`. A camera inside a block sees through the world: it has to stand in air.
+- A place the camera cannot find or reach in a real world (an ore vein, a cave campsite, a buried dungeon room) is built by hand as a scene from the blocks its generator uses, and its line in `scenes.py` says so.
+
+The worlds are reset before the season. The places are gone then, the pictures stay true to the kind of place; only `exploration/e_tnt_village` shows the spawn village of the test season with its obelisk and should be taken again in the new world.
+
 Chapters without a list here (most of the stage 1 gap chapters from the first wave) work without pictures for now.
 
 ## Start

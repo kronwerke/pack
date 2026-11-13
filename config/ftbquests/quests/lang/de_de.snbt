@@ -2217,6 +2217,7 @@
 	quest.15BE6537FF06CEDF.quest_subtitle: "Leere Upgrades, Geschwindigkeit und Stapel."
 	quest.15BE6537FF06CEDF.title: "&6Beschleunige den Router"
 	quest.15BEC326A8052C3E.quest_desc: [
+		"{image:kronwerke:textures/quests/shots/botania_runes_baubles_rings.png width:224 height:126 align:center}"
 		"&6Auraband&r (Rune des Manas, 4 Manastahl): erzeugt langsam Mana für Tafeln im Inventar."
 		"&6Ring der Magnetisierung&r (Magnetisierungslinse, 4 Manastahl): zieht Items an, nicht beim Schleichen."
 		"&6Ring der Geschickten Bewegung&r (Smaragd, Rune der Luft, 4 Manastahl): Doppeltippen weicht aus."
@@ -5319,6 +5320,7 @@
 	quest.1F166311ADC91093.quest_subtitle: "Drei Gürtel für Tempo und Stand."
 	quest.1F166311ADC91093.title: "&6Schnall Gürtel um"
 	quest.1F34E754EA763450.quest_desc: [
+		"{image:kronwerke:textures/quests/shots/start_here_o_obelisk.png width:224 height:126 align:center}"
 		"Die &eBossleiste&r oben zeigt das aktive Ziel. In Stufe 1 heißt es &6Das Fundament des Kronwerks&r und hat drei Säulen: &7Stein&r, &6Technik&r und &dMagie&r."
 		""
 		"Die Stufe öffnet sich erst, wenn &ealle&r Säulen voll sind. Ein Server, der nur Maschinen baut oder nur zaubert, kommt nicht weiter."
@@ -8082,6 +8084,7 @@
 	quest.2729F2D79A654B65.quest_subtitle: "Der Tisch für Blaupausen."
 	quest.2729F2D79A654B65.title: "&6Bau einen Ingenieursarbeitstisch"
 	quest.272FE9EFA8115D91.quest_desc: [
+		"{image:kronwerke:textures/quests/shots/start_here_v_claim.png width:224 height:126 align:center}"
 		"Such dir einen Platz, bau was Festes hin und sichere es: &eM&r öffnet die Karte, &eC&r die Claim-Ansicht. Mit gedrückter &elinker Maustaste&r über die Chunks deiner Basis ziehen."
 		""
 		"In deinen Chunks kann niemand außer deinem Team abbauen oder Truhen öffnen. Wie viele Chunks du hast und wie du sie dauerhaft lädst, steht im Kapitel &6Tipps und Tricks&r."
@@ -10984,6 +10987,7 @@
 	quest.2FDE77C019ED68C9.quest_subtitle: "Nie wieder Wither-Effekt."
 	quest.2FDE77C019ED68C9.title: "&dPflück eine Witherless Rose"
 	quest.2FE695089B5F6559.quest_desc: [
+		"{image:kronwerke:textures/quests/shots/immersive_welcome.png width:224 height:126 align:center}"
 		"Ein &6Buch&r und ein &6Hebel&r an der Werkbank ergeben das &6Ingenieurshandbuch&r. Rechtsklick öffnet es."
 		""
 		"&6Immersive Engineering&r baut seine Maschinen als &eMultiblöcke&r: Blöcke in der richtigen Form aufstellen, mit dem &6Ingenieurshammer&r draufschlagen, fertig. Im Handbuch kannst du jede Struktur drehen und Schicht für Schicht ansehen."
@@ -16562,6 +16566,7 @@
 	quest.48399F469D493447.quest_subtitle: "Fliegen wie im Kreativmodus, solange die Quelle reicht."
 	quest.48399F469D493447.title: "&aMach die Tafel Flug"
 	quest.484E378E6FC7D9F5.quest_desc: [
+		"{image:kronwerke:textures/quests/shots/start_here_v_claim.png width:224 height:126 align:center}"
 		"&eSo geht es:&r &eM&r öffnet die Karte von FTB Chunks, &eC&r die Claim-Ansicht. Linke Maustaste ziehen beansprucht, &eShift&r und ziehen lädt dauerhaft. Dein Team hat &e500 Claims&r und &e25 geladene Chunks&r, zusammen, nicht pro Kopf."
 		""
 		"&eWas das heißt:&r Geladene Chunks laufen weiter, während du anderswo bist, auch wenn dein ganzes Team offline ist. Maschinen an einem Portal, eine Pumpe im Nether, ein Bahnhof: alles, was ohne dich arbeiten soll, braucht einen geladenen Chunk."
@@ -21422,6 +21427,7 @@
 	quest.5E5FC305B736FA54.quest_subtitle: "In gemäßigten Gegenden."
 	quest.5E5FC305B736FA54.title: "&aGrab wilde Zwiebeln aus"
 	quest.5E6450139C0A40F4.quest_desc: [
+		"{image:kronwerke:textures/quests/shots/start_here_s_locked.png width:224 height:126 align:center}"
 		"Ein Gegenstand einer späteren Stufe heißt im Tooltip &7???&r, darunter &cÖffnet in Stufe 2 (Messingwerk).&r und &8Einstecken geht, benutzen noch nicht.&r Aufheben und lagern darfst du ihn, halten, anziehen, platzieren und herstellen nicht."
 		""
 		"In JEI siehst du nur die &enächste&r Stufe, verhüllt, aber mit Rezept. Spätere Stufen bleiben ganz unsichtbar. Zink für Messing kannst du also schon jetzt einlagern."
@@ -23804,6 +23810,7 @@
 	quest.6901DD2F58427A21.quest_subtitle: "Kommt in Stufe 2."
 	quest.6901DD2F58427A21.title: "&dAusblick: Building Gadgets"
 	quest.6911E81D6D6096F4.quest_desc: [
+		"{image:kronwerke:textures/quests/shots/ars_nouveau_mana.png width:224 height:126 align:center}"
 		"Der blaue Balken unten links ist dein Mana. Ein Zauber kostet die Summe seiner Glyphen, es lädt sich von selbst wieder auf."
 		""
 		"&eDie Zahlen auf dem Server:&r Grundwert &e100 Mana&r, &e5 pro Sekunde&r zurück. Jede gelernte Glyphe gibt &e+15&r Maximum und &e+0,33&r pro Sekunde. Jede Buchstufe gibt &e+50&r und &e+1&r pro Sekunde."
@@ -27943,6 +27950,7 @@
 	quest.7C4E1A4E6B2CA48A.quest_subtitle: "Zwei Ringe aus Elementium."
 	quest.7C4E1A4E6B2CA48A.title: "&6Trag die Elfenringe"
 	quest.7C4F838C1079AFFB.quest_desc: [
+		"{image:kronwerke:textures/quests/shots/mekanism_infuser.png width:224 height:126 align:center}"
 		"&eRezept auf Kronwerke:&r oben Eisen, Ofen, Eisen. Mitte Redstone, &6Osmiumbarren&r, Redstone. Unten &6Manastahl&r, Ofen, &6Manastahl&r."
 		""
 		"Sie drückt einen &eInfusionsstoff&r (Kohlenstoff, Redstone, später Diamant und Obsidian) in einen Gegenstand. Daraus werden Stahl, Legierungen und Schaltkreise. Sie braucht &d20 FE/t&r, die liefert gleich der Wärmegenerator."

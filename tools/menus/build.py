@@ -274,23 +274,24 @@ def multiplayer():
 # ---------------------------------------------------------------------------------------------
 
 def pause():
+    """The same column as on the title screen, on the right, so the view and other mods' texts on the left stay free."""
     L = 'pause'
-    x, y = -74, -50
+    x, y = COL, 80
     half = ('btn_half.png', 'btn_half_hover.png')
-    b = image(L + ':logo', 'logo.png', 'mid-centered', -82, y - 70, 163, 62)
-    b += vanilla('pause_return_to_game_button', 'mid-centered', x, y, CW, 20, 'btn_wide.png', 'btn_wide_hover.png', layout=L)
-    b += button(L + ':quests', local('quests'), 'mid-centered', x, y + 24, 72, 20, *half,
-                actions=[('closegui', ''), ('mimic_keybind', 'key.ftbquests.quests|||false|||100')])
-    b += button(L + ':map', local('map'), 'mid-centered', x + 76, y + 24, 72, 20, *half,
+    b = image(L + ':logo', 'logo.png', 'top-right', COL - 8, 8, 163, 62)
+    b += vanilla('pause_return_to_game_button', 'top-right', x, y, CW, 20, 'btn_wide.png', 'btn_wide_hover.png', layout=L)
+    b += button(L + ':quests', local('quests'), 'top-right', x, y + 24, 72, 20, *half,
+                actions=[('closegui', ''), ('sendmessage', '/ftbquests open_book')])      # the book has no key in the pack
+    b += button(L + ':map', local('map'), 'top-right', x + 76, y + 24, 72, 20, *half,
                 actions=[('closegui', ''), ('mimic_keybind', 'key.ftbchunks.map|||false|||100')])
-    b += vanilla('pause_advancements_button', 'mid-centered', x, y + 48, 72, 20, *half, layout=L)
-    b += vanilla('pause_stats_button', 'mid-centered', x + 76, y + 48, 72, 20, *half, layout=L)
-    b += vanilla('pause_options_button', 'mid-centered', x, y + 72, 72, 20, *half, label=local('options'), layout=L)
-    b += vanilla('398348', 'mid-centered', x + 76, y + 72, 72, 20, *half, layout=L)                  # NeoForge's Mods button
-    b += button(L + ':discord', '', 'mid-centered', -34, y + 96, 20, 20, 'icon_chat.png', 'icon_chat_hover.png', [('openlink', DISCORD)], tip=local('discord.tip'))
-    b += button(L + ':web', '', 'mid-centered', -10, y + 96, 20, 20, 'icon_home.png', 'icon_home_hover.png', [('openlink', WEBSITE)], tip=local('web.tip'))
-    b += button(L + ':status', '', 'mid-centered', 14, y + 96, 20, 20, 'icon_book.png', 'icon_book_hover.png', [('openlink', WEBSITE + '/status')], tip=local('status.tip'))
-    b += vanilla('pause_disconnect_button', 'mid-centered', x, y + 120, CW, 20, 'btn_wide.png', 'btn_wide_hover.png', layout=L)
+    b += vanilla('pause_advancements_button', 'top-right', x, y + 48, 72, 20, *half, layout=L)
+    b += vanilla('pause_stats_button', 'top-right', x + 76, y + 48, 72, 20, *half, layout=L)
+    b += vanilla('pause_options_button', 'top-right', x, y + 72, 72, 20, *half, label=local('options'), layout=L)
+    b += vanilla('398348', 'top-right', x + 76, y + 72, 72, 20, *half, layout=L)                  # NeoForge's Mods button
+    b += button(L + ':discord', '', 'top-right', x, y + 96, 20, 20, 'icon_chat.png', 'icon_chat_hover.png', [('openlink', DISCORD)], tip=local('discord.tip'))
+    b += button(L + ':web', '', 'top-right', x + 24, y + 96, 20, 20, 'icon_home.png', 'icon_home_hover.png', [('openlink', WEBSITE)], tip=local('web.tip'))
+    b += button(L + ':status', '', 'top-right', x + 48, y + 96, 20, 20, 'icon_book.png', 'icon_book_hover.png', [('openlink', WEBSITE + '/status')], tip=local('status.tip'))
+    b += vanilla('pause_disconnect_button', 'top-right', x + 76, y + 96, 72, 20, *half, label=local('leave'), layout=L)
     b += hide(L, 'pause_send_feedback_button', 'pause_report_bugs_button', 'pause_share_to_lan_button', 'pause_title_widget')
     return layout(L, 'pause_screen', b)
 
@@ -320,12 +321,12 @@ LANG = {
     'de_de': {
         'join': '§e§lKronwerke betreten', 'join.tip': 'Verbindet dich direkt mit dem Kronwerke-Server.', 'status': 'Online:',
         'servers': 'Serverliste', 'options': 'Optionen', 'quit': 'Beenden', 'discord.tip': 'Zum Discord', 'web.tip': 'kronwerke.com',
-        'lang.tip': 'Sprache', 'countdown.a': 'Season 2 startet in', 'countdown.b': 'Tagen', 'quests': 'Questbuch', 'map': 'Karte', 'status.tip': 'Live-Status der Season',
+        'lang.tip': 'Sprache', 'countdown.a': 'Season 2 startet in', 'countdown.b': 'Tagen', 'quests': 'Questbuch', 'map': 'Karte', 'leave': 'Verlassen', 'status.tip': 'Live-Status der Season',
     },
     'en_us': {
         'join': '§e§lEnter Kronwerke', 'join.tip': 'Connects you straight to the Kronwerke server.', 'status': 'Online:',
         'servers': 'Server list', 'options': 'Options', 'quit': 'Quit', 'discord.tip': 'Open Discord', 'web.tip': 'kronwerke.com',
-        'lang.tip': 'Language', 'countdown.a': 'Season 2 starts in', 'countdown.b': 'days', 'quests': 'Quest book', 'map': 'Map', 'status.tip': 'Live status of the season',
+        'lang.tip': 'Language', 'countdown.a': 'Season 2 starts in', 'countdown.b': 'days', 'quests': 'Quest book', 'map': 'Map', 'leave': 'Leave', 'status.tip': 'Live status of the season',
     },
 }
 

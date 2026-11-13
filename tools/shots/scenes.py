@@ -2983,13 +2983,17 @@ def _(b):
 # Ponder scenes of the mods themselves: what their authors built to explain a part, placed
 # as it is, its checkered floor plate set into the floor
 
-def ponder(key, jar, path, deep=0):
+def ponder(key, jar, path, deep=0, pad=0):
+    """pad widens the frame by that many blocks on every side: a wide, deep structure comes
+    closer to the camera at its front than the framing reckons with."""
     import structs
     (sx, sy, sz), _, _, _ = structs.load(jar, path)
 
-    @scene(key, w=sx + 2, d=sz + 2 + deep, h=sy + 6)
+    @scene(key, w=sx + 2 + 2 * pad, d=sz + 2 + deep + 2 * pad, h=sy + 6)
     def _(b):
-        b.nbt(jar, path, 1, -1, 1)
+        b.nbt(jar, path, 1 + pad, -1, 1 + pad)
+        if pad:
+            b.focus(1, 0, 1, sx + 2 * pad, sy - 1, sz + 2 * pad)
 
 
 ponder("create_trains/first_train", "create-1", "assets/create/ponder/train_controls.nbt")
@@ -3001,7 +3005,7 @@ ponder("create_brass/pg_winding", "powergrid", "assets/powergrid/ponder/generato
 ponder("create_brass/pg_generator", "powergrid", "assets/powergrid/ponder/generator/generator_3.nbt", deep=4)
 ponder("create_brass/pg_magnet", "powergrid", "assets/powergrid/ponder/electromagnet.nbt")
 ponder("list_gear/drilling", "createoreexcavation", "assets/createoreexcavation/ponder/drilling_machine.nbt")
-ponder("mekanism_ores/foundry", "productivemetalworks", "assets/productivemetalworks/ponder/foundry_molten.nbt", deep=8)   # room for the camera: it was cut at two edges
+ponder("mekanism_ores/foundry", "productivemetalworks", "assets/productivemetalworks/ponder/foundry_molten.nbt", deep=6, pad=2)   # room around it: it was cut at two edges
 ponder("farms/s2_xp", "create-enchantment", "assets/create_enchantment_industry/ponder/grindstone/basic.nbt")
 ponder("create_trains/schedule", "create-1", "assets/create/ponder/train_station/schedule.nbt")
 ponder("create_brass/alternator", "createaddition", "assets/createaddition/ponder/alternator.nbt")
@@ -3010,8 +3014,10 @@ ponder("create_brass/alternator", "createaddition", "assets/createaddition/ponde
 # ===================================================================================
 # What a quest asks you to hold, on show: for quests whose subject is an item and no build
 
-def shelf(key, items, scale=1.0):
+def shelf(key, items, scale=None):
     n = len(items)
+    if scale is None:
+        scale = 2.0 if n == 1 else 1.0      # one thing alone is shown twice its size, or the picture is mostly floor
 
     @scene(key, w=max(9, 2 * n + 3))
     def _(b):

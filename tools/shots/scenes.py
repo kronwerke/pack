@@ -3057,9 +3057,13 @@ def _(b):
 # ===================================================================================
 # The bosses and beasts of the other worlds, standing still for their portrait
 
-def creature(key, entity, big=False, tall=False, nbt=""):
-    @scene(key, w=11, d=11)
+def creature(key, entity, big=False, tall=False, huge=False, nbt=""):
+    @scene(key, w=13 if huge else 11, d=15 if huge else 11, h=20 if huge else 0)
     def _(b):
+        if huge:
+            b.m(entity, 6, 0, 4, nbt=nbt, rot=0)
+            b.focus(3, 0, 1, 9, 6, 7)      # seven wide and seven high, at the back of a deep cell
+            return
         b.m(entity, 5, 0, 5, nbt=nbt, rot=0)
         if tall:
             b.focus(3, 0, 3, 7, 3, 7)      # the stalker and the monstrosity reach higher than four blocks: the wide frame holds them
@@ -3081,3 +3085,39 @@ shelf("undergarden/forgotten", ["undergarden:forgotten_pickaxe"])
 shelf("eternal_starlight/starfire", ["eternal_starlight:starfire"])
 shelf("deeper_darker/echo_shard", ["deeperdarker:reinforced_echo_shard", "deeperdarker:ancient_compass"])
 shelf("exploration/e_compass", ["naturescompass:naturescompass"])
+
+
+creature("nether/ig_kill", "cataclysm:ignis", tall=True)
+creature("nether/nm_kill", "cataclysm:netherite_monstrosity", huge=True)
+creature("the_end/cg_kill", "cataclysm:ender_guardian", tall=True)
+shelf("deeper_darker/transmitter", ["deeperdarker:sculk_transmitter"])
+
+
+@scene("the_end/egg")
+def _(b):
+    # the dragon egg on the bedrock column of the exit portal
+    b.f(3, 0, 3, 5, 0, 5, "minecraft:bedrock")
+    b.f(4, 1, 4, 4, 3, 4, "minecraft:bedrock")
+    b.b(4, 4, 4, "minecraft:dragon_egg")
+
+
+@scene("the_end/crystals", d=13, h=20)
+def _(b):
+    # an obsidian pillar with its end crystal on bedrock: these heal the dragon
+    b.f(3, 0, 2, 5, 5, 4, "minecraft:obsidian")
+    b.b(4, 6, 3, "minecraft:bedrock")
+    b.e("minecraft:end_crystal", 4, 7, 3, "ShowBottom:0b")
+    b.focus(3, 0, 2, 5, 8, 4)
+
+
+@scene("the_end/elytra")
+def _(b):
+    b.stand(4, 0, 4, armor=(None, "minecraft:elytra"), rot=20)      # its back to the camera: the wings are worn there
+
+
+@scene("nether/debris")
+def _(b):
+    # ancient debris in netherrack: deep down, never touching air
+    b.f(3, 0, 3, 5, 1, 4, "minecraft:netherrack")
+    b.b(4, 0, 4, "minecraft:ancient_debris")
+    b.b(5, 1, 4, "minecraft:ancient_debris")

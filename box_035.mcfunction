@@ -1,20 +1,11 @@
-# 035 botania/pure_daisy
-#area -4 86 15 111
-fill -4 64 86 15 91 111 minecraft:air
-fill -4 60 86 15 62 111 minecraft:stone
-fill -4 63 86 15 63 111 minecraft:light_gray_concrete
-fill 0 64 92 15 79 92 minecraft:light_gray_concrete
-fill 0 64 92 0 79 105 minecraft:light_gray_concrete
-setblock 1 64 104 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "035"}','{"text": "botania"}','{"text": "pure_daisy"}','{"text": ""}']}}
-setblock 2 64 104 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "the daisy with"}','{"text": "8 stone or"}','{"text": "logs, half"}','{"text": "converted"}']}}
-fill 10 64 92 10 79 105 minecraft:light_gray_concrete
-setblock 5 63 97 minecraft:grass_block
-setblock 5 64 97 botania:pure_daisy
-setblock 4 64 96 minecraft:stone
-setblock 5 64 96 botania:livingrock
-setblock 6 64 96 minecraft:stone
-setblock 4 64 97 minecraft:oak_log[axis=y]
-setblock 6 64 97 botania:livingwood_log[axis=y]
-setblock 4 64 98 botania:livingrock
-setblock 5 64 98 minecraft:stone
-setblock 6 64 98 botania:livingrock
+# 035 ars_epic/el_armor
+#area 103 67 122 92
+fill 103 64 67 122 91 92 minecraft:air
+fill 103 60 67 122 62 92 minecraft:stone
+fill 103 63 67 122 63 92 minecraft:light_gray_concrete
+fill 107 64 73 122 79 73 minecraft:light_gray_concrete
+fill 107 64 73 107 79 86 minecraft:light_gray_concrete
+setblock 108 64 85 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "035"}','{"text": "ars_epic"}','{"text": "el_armor"}','{"text": ""}']}}
+setblock 109 64 85 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "a full"}','{"text": "elemental robe"}','{"text": "set"}','{"text": ""}']}}
+fill 117 64 73 117 79 86 minecraft:light_gray_concrete
+summon armor_stand 112.5 64 78.5 {ArmorItems:[{id:"ars_elemental:fire_boots",count:1},{id:"ars_elemental:fire_leggings",count:1},{id:"ars_elemental:fire_robes",count:1},{id:"ars_elemental:fire_hat",count:1}],ShowArms:1b,NoBasePlate:1b,Tags:["kw_shot"],Rotation:[180f,0f]}

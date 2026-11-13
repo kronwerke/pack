@@ -239,10 +239,24 @@
    "height": 360
   },
   {
+   "name": "h_mekanism_ores_tripling",
+   "dim": "kronwerke:testworld",
+   "pos": [
+    36.99,
+    64.86,
+    59.19
+   ],
+   "yaw": 165.0,
+   "pitch": 35.0,
+   "fov": 60,
+   "width": 640,
+   "height": 360
+  },
+  {
    "name": "h_mekanism_advanced_teleporter",
    "dim": "kronwerke:testworld",
    "pos": [
-    37.52,
+    53.52,
     66.75,
     59.32
    ],
@@ -256,7 +270,7 @@
    "name": "h_mekanism_advanced_evap",
    "dim": "kronwerke:testworld",
    "pos": [
-    53.64,
+    69.64,
     69.2,
     61.1
    ],
@@ -270,7 +284,7 @@
    "name": "h_mekanism_advanced_boiler",
    "dim": "kronwerke:testworld",
    "pos": [
-    69.63,
+    85.63,
     71.34,
     64.44
    ],
@@ -284,7 +298,7 @@
    "name": "h_mekanism_advanced_turbine",
    "dim": "kronwerke:testworld",
    "pos": [
-    86.8,
+    102.8,
     72.19,
     65.07
    ],
@@ -298,7 +312,7 @@
    "name": "h_mekanism_elite_induction_matrix",
    "dim": "kronwerke:testworld",
    "pos": [
-    103.12,
+    119.12,
     68.77,
     62.56
    ],
@@ -312,7 +326,7 @@
    "name": "h_mekanism_elite_fusion",
    "dim": "kronwerke:testworld",
    "pos": [
-    121.28,
+    137.28,
     69.18,
     63.13
    ],
@@ -326,7 +340,7 @@
    "name": "h_mekanism_elite_mekasuit",
    "dim": "kronwerke:testworld",
    "pos": [
-    137.36,
+    153.36,
     65.9,
     58.69
    ],
@@ -340,7 +354,7 @@
    "name": "h_antimatter_waste",
    "dim": "kronwerke:testworld",
    "pos": [
-    153.61,
+    169.61,
     65.98,
     59.14
    ],
@@ -354,7 +368,7 @@
    "name": "h_antimatter_sps",
    "dim": "kronwerke:testworld",
    "pos": [
-    172.77,
+    188.77,
     71.33,
     65.98
    ],
@@ -827,6 +841,34 @@
    "height": 360
   },
   {
+   "name": "h_hexerei_cauldron",
+   "dim": "kronwerke:testworld",
+   "pos": [
+    212.24,
+    64.19,
+    137.27
+   ],
+   "yaw": 165.0,
+   "pitch": 35.0,
+   "fov": 60,
+   "width": 640,
+   "height": 360
+  },
+  {
+   "name": "h_hexerei_sage_plate",
+   "dim": "kronwerke:testworld",
+   "pos": [
+    227.24,
+    64.99,
+    137.27
+   ],
+   "yaw": 165.0,
+   "pitch": 35.0,
+   "fov": 60,
+   "width": 640,
+   "height": 360
+  },
+  {
    "name": "h_immersive_hammer",
    "dim": "kronwerke:testworld",
    "pos": [
@@ -1261,10 +1303,24 @@
    "height": 360
   },
   {
+   "name": "h_powah_thermo",
+   "dim": "kronwerke:testworld",
+   "pos": [
+    16.24,
+    65.19,
+    207.27
+   ],
+   "yaw": 165.0,
+   "pitch": 35.0,
+   "fov": 60,
+   "width": 640,
+   "height": 360
+  },
+  {
    "name": "h_powah_reactor",
    "dim": "kronwerke:testworld",
    "pos": [
-    16.64,
+    26.64,
     67.07,
     208.76
    ],
@@ -1289,12 +1345,40 @@
    "height": 360
   },
   {
+   "name": "h_storage_controller",
+   "dim": "kronwerke:testworld",
+   "pos": [
+    15.74,
+    65.19,
+    226.27
+   ],
+   "yaw": 165.0,
+   "pitch": 35.0,
+   "fov": 60,
+   "width": 640,
+   "height": 360
+  },
+  {
    "name": "h_storage_vault_big",
    "dim": "kronwerke:testworld",
    "pos": [
-    17.09,
+    27.09,
     66.52,
     227.56
+   ],
+   "yaw": 165.0,
+   "pitch": 35.0,
+   "fov": 60,
+   "width": 640,
+   "height": 360
+  },
+  {
+   "name": "h_list_power_steam_engine",
+   "dim": "kronwerke:testworld",
+   "pos": [
+    6.3,
+    67.49,
+    247.85
    ],
    "yaw": 165.0,
    "pitch": 35.0,
@@ -1306,7 +1390,7 @@
    "name": "h_pneumaticcraft_chamber",
    "dim": "kronwerke:testworld",
    "pos": [
-    6.47,
+    22.47,
     66.21,
     246.13
    ],
@@ -1499,10 +1583,24 @@
    "height": 360
   },
   {
+   "name": "h_food_f_pot",
+   "dim": "kronwerke:testworld",
+   "pos": [
+    6.74,
+    65.19,
+    304.27
+   ],
+   "yaw": 165.0,
+   "pitch": 35.0,
+   "fov": 60,
+   "width": 640,
+   "height": 360
+  },
+  {
    "name": "h_eidolon_brazier",
    "dim": "kronwerke:testworld",
    "pos": [
-    6.34,
+    21.34,
     65.25,
     303.63
    ],
@@ -1516,7 +1614,7 @@
    "name": "h_eidolon_crucible",
    "dim": "kronwerke:testworld",
    "pos": [
-    16.24,
+    31.24,
     65.19,
     304.27
    ],
@@ -1530,7 +1628,21 @@
    "name": "h_eidolon_altar",
    "dim": "kronwerke:testworld",
    "pos": [
-    26.24,
+    41.24,
+    65.19,
+    304.27
+   ],
+   "yaw": 165.0,
+   "pitch": 35.0,
+   "fov": 60,
+   "width": 640,
+   "height": 360
+  },
+  {
+   "name": "h_eidolon_stone_altar",
+   "dim": "kronwerke:testworld",
+   "pos": [
+    51.24,
     65.19,
     304.27
    ],
@@ -1544,7 +1656,7 @@
    "name": "h_malum_altar",
    "dim": "kronwerke:testworld",
    "pos": [
-    41.31,
+    66.31,
     65.37,
     304.52
    ],
@@ -1558,7 +1670,7 @@
    "name": "h_malum_obelisk",
    "dim": "kronwerke:testworld",
    "pos": [
-    52.31,
+    77.31,
     65.37,
     304.52
    ],
@@ -1572,7 +1684,7 @@
    "name": "h_list_gear_mekasuit",
    "dim": "kronwerke:testworld",
    "pos": [
-    68.36,
+    93.36,
     65.9,
     304.69
    ],

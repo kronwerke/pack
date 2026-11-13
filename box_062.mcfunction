@@ -1,20 +1,13 @@
-# 062 immersive/blast_furnace, improved_form
-#area 26 158 55 184
-fill 26 64 158 55 91 184 minecraft:air
-fill 26 60 158 55 62 184 minecraft:stone
-fill 26 63 158 55 63 184 minecraft:light_gray_concrete
-fill 30 64 164 55 79 164 minecraft:light_gray_concrete
-fill 30 64 164 30 79 178 minecraft:light_gray_concrete
-setblock 31 64 177 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "062.1"}','{"text": "immersive"}','{"text": "blast_furnace"}','{"text": ""}']}}
-setblock 32 64 177 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "crude blast"}','{"text": "furnace GUI,"}','{"text": "improved"}','{"text": "furnace with"}']}}
-setblock 33 64 177 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "hopper and"}','{"text": "preheaters"}','{"text": ""}','{"text": ""}']}}
-fill 40 64 164 40 79 178 minecraft:light_gray_concrete
-place template immersiveengineering:multiblocks/blast_furnace 34 64 167 none
-kw testworld use 35 65 169 south immersiveengineering:hammer
-execute unless block 35 65 169 immersiveengineering:blastbrick
-setblock 41 64 177 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "062.2"}','{"text": "immersive"}','{"text": "improved_form"}','{"text": ""}']}}
-setblock 42 64 177 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Form einen"}','{"text": "Verbesserten"}','{"text": "Hochofen"}','{"text": ""}']}}
-fill 50 64 164 50 79 178 minecraft:light_gray_concrete
-place template immersiveengineering:multiblocks/improved_blast_furnace 44 64 167 none
-kw testworld use 45 65 169 south immersiveengineering:hammer
-execute unless block 45 65 169 immersiveengineering:blastbrick_reinforced
+# 062 hexerei/sage_plate
+#area 217 123 236 148
+fill 217 64 123 236 91 148 minecraft:air
+fill 217 60 123 236 62 148 minecraft:stone
+fill 217 63 123 236 63 148 minecraft:light_gray_concrete
+fill 221 64 129 236 79 129 minecraft:light_gray_concrete
+fill 221 64 129 221 79 142 minecraft:light_gray_concrete
+setblock 222 64 141 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "062"}','{"text": "hexerei"}','{"text": "sage_plate"}','{"text": ""}']}}
+setblock 223 64 141 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "burning sage"}','{"text": "plate with the"}','{"text": "smoke ring"}','{"text": ""}']}}
+fill 231 64 129 231 79 142 minecraft:light_gray_concrete
+setblock 226 64 134 hexerei:sage_burning_plate[facing=south]
+kw testworld use 226 64 134 up hexerei:dried_sage_bundle
+kw testworld use 226 64 134 up minecraft:flint_and_steel

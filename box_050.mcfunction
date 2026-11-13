@@ -1,13 +1,28 @@
-# 050 occultism/spirit_fire
-#area -4 123 15 148
-fill -4 64 123 15 91 148 minecraft:air
-fill -4 60 123 15 62 148 minecraft:stone
-fill -4 63 123 15 63 148 minecraft:light_gray_concrete
-fill 0 64 129 15 79 129 minecraft:light_gray_concrete
-fill 0 64 129 0 79 142 minecraft:light_gray_concrete
-setblock 1 64 141 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "050"}','{"text": "occultism"}','{"text": "spirit_fire"}','{"text": ""}']}}
-setblock 2 64 141 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "spirit fire"}','{"text": "turning"}','{"text": "andesite into"}','{"text": "otherstone"}']}}
-fill 10 64 129 10 79 142 minecraft:light_gray_concrete
-setblock 5 64 134 occultism:spirit_fire[color=white]
-summon item 5.5 65.5 134.5 {Item:{id:"minecraft:andesite",count:8},PickupDelay:32767,Age:-32768,Tags:["kw_shot"]}
-summon item 6.5 64.2 135.5 {Item:{id:"occultism:otherstone",count:4},PickupDelay:32767,Age:-32768,Tags:["kw_shot"]}
+# 050 alfheim/open
+#area 242 86 263 111
+fill 242 64 86 263 91 111 minecraft:air
+fill 242 60 86 263 62 111 minecraft:stone
+fill 242 63 86 263 63 111 minecraft:light_gray_concrete
+fill 246 64 92 263 79 92 minecraft:light_gray_concrete
+fill 246 64 92 246 79 105 minecraft:light_gray_concrete
+setblock 247 64 104 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "050"}','{"text": "alfheim"}','{"text": "open"}','{"text": ""}']}}
+setblock 248 64 104 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "the open portal"}','{"text": "with an item"}','{"text": "flying out"}','{"text": ""}']}}
+fill 258 64 92 258 79 105 minecraft:light_gray_concrete
+setblock 252 64 96 botania:elven_gateway_core
+setblock 251 64 96 botania:livingwood_log[axis=x]
+setblock 251 68 96 botania:livingwood_log[axis=x]
+setblock 253 64 96 botania:livingwood_log[axis=x]
+setblock 253 68 96 botania:livingwood_log[axis=x]
+setblock 252 68 96 botania:glimmering_livingwood_log[axis=x]
+setblock 250 65 96 botania:livingwood_log[axis=y]
+setblock 250 66 96 botania:glimmering_livingwood_log[axis=y]
+setblock 250 67 96 botania:livingwood_log[axis=y]
+setblock 254 65 96 botania:livingwood_log[axis=y]
+setblock 254 66 96 botania:glimmering_livingwood_log[axis=y]
+setblock 254 67 96 botania:livingwood_log[axis=y]
+setblock 248 64 98 botania:mana_pool{mana:1000000}
+setblock 248 65 98 botania:natura_pylon
+setblock 256 64 98 botania:mana_pool{mana:1000000}
+setblock 256 65 98 botania:natura_pylon
+kw testworld use 252 64 96 south botania:wand_of_the_forest
+execute unless block 252 64 96 botania:elven_gateway_core[state=off]

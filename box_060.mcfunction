@@ -1,13 +1,29 @@
-# 060 immersive/hammer
-#area -4 158 15 183
-fill -4 64 158 15 91 183 minecraft:air
-fill -4 60 158 15 62 183 minecraft:stone
-fill -4 63 158 15 63 183 minecraft:light_gray_concrete
-fill 0 64 164 15 79 164 minecraft:light_gray_concrete
-fill 0 64 164 0 79 177 minecraft:light_gray_concrete
-setblock 1 64 176 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "060"}','{"text": "immersive"}','{"text": "hammer"}','{"text": ""}']}}
-setblock 2 64 176 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "right-clicking"}','{"text": "a structure"}','{"text": "with the hammer"}','{"text": ""}']}}
-fill 10 64 164 10 79 177 minecraft:light_gray_concrete
-place template immersiveengineering:multiblocks/coke_oven 4 64 167 none
-setblock 5 64 171 minecraft:smooth_stone_slab
-summon item_display 5.5 65.04 171.5 {item:{id:"immersiveengineering:hammer",count:1},item_display:"fixed",billboard:"vertical",transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[1.2f,1.2f,1.2f]},brightness:{sky:15,block:15},Tags:["kw_shot"]}
+# 060 hexerei/herbs
+#area 187 123 206 148
+fill 187 64 123 206 91 148 minecraft:air
+fill 187 60 123 206 62 148 minecraft:stone
+fill 187 63 123 206 63 148 minecraft:light_gray_concrete
+fill 191 64 129 206 79 129 minecraft:light_gray_concrete
+fill 191 64 129 191 79 142 minecraft:light_gray_concrete
+setblock 192 64 141 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "060"}','{"text": "hexerei"}','{"text": "herbs"}','{"text": ""}']}}
+setblock 193 64 141 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "herb garden"}','{"text": "with all four"}','{"text": "plants grown"}','{"text": ""}']}}
+fill 201 64 129 201 79 142 minecraft:light_gray_concrete
+fill 194 63 133 198 63 135 minecraft:grass_block
+setblock 194 64 133 hexerei:mandrake_plant[age=3]
+setblock 195 64 133 hexerei:belladonna_plant[age=3]
+setblock 197 64 133 hexerei:mugwort_bush[half=lower,age=3]
+setblock 197 65 133 hexerei:mugwort_bush[half=upper,age=3]
+setblock 198 64 133 hexerei:yellow_dock_bush[half=lower,age=3]
+setblock 198 65 133 hexerei:yellow_dock_bush[half=upper,age=3]
+setblock 194 64 134 hexerei:mandrake_plant[age=3]
+setblock 195 64 134 hexerei:belladonna_plant[age=3]
+setblock 197 64 134 hexerei:mugwort_bush[half=lower,age=3]
+setblock 197 65 134 hexerei:mugwort_bush[half=upper,age=3]
+setblock 198 64 134 hexerei:yellow_dock_bush[half=lower,age=3]
+setblock 198 65 134 hexerei:yellow_dock_bush[half=upper,age=3]
+setblock 194 64 135 hexerei:mandrake_plant[age=3]
+setblock 195 64 135 hexerei:belladonna_plant[age=3]
+setblock 197 64 135 hexerei:mugwort_bush[half=lower,age=3]
+setblock 197 65 135 hexerei:mugwort_bush[half=upper,age=3]
+setblock 198 64 135 hexerei:yellow_dock_bush[half=lower,age=3]
+setblock 198 65 135 hexerei:yellow_dock_bush[half=upper,age=3]

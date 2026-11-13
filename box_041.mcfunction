@@ -1,13 +1,45 @@
-# 041 botania_runes/mana_pearl
-#area 92 86 111 111
-fill 92 64 86 111 91 111 minecraft:air
-fill 92 60 86 111 62 111 minecraft:stone
-fill 92 63 86 111 63 111 minecraft:light_gray_concrete
-fill 96 64 92 111 79 92 minecraft:light_gray_concrete
-fill 96 64 92 96 79 105 minecraft:light_gray_concrete
-setblock 97 64 104 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "041"}','{"text": "botania_runes"}','{"text": "mana_pearl"}','{"text": ""}']}}
-setblock 98 64 104 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "a pool on a"}','{"text": "brass casing"}','{"text": "with a pearl in"}','{"text": "it"}']}}
-fill 106 64 92 106 79 105 minecraft:light_gray_concrete
-setblock 101 64 97 create:brass_casing
-setblock 101 65 97 botania:mana_pool{mana:1000000}
-summon item 101.5 66 97.5 {Item:{id:"minecraft:ender_pearl",count:1},PickupDelay:32767,Age:-32768,Tags:["kw_shot"]}
+# 041 botania/manasteel_prep
+#area 75 86 96 113
+fill 75 64 86 96 91 113 minecraft:air
+fill 75 60 86 96 62 113 minecraft:stone
+fill 75 63 86 96 63 113 minecraft:light_gray_concrete
+fill 79 64 92 96 79 92 minecraft:light_gray_concrete
+fill 79 64 92 79 79 107 minecraft:light_gray_concrete
+setblock 80 64 106 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "041"}','{"text": "botania"}','{"text": "manasteel_prep"}','{"text": ""}']}}
+setblock 81 64 106 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "the Nature\'s"}','{"text": "Aura ritual"}','{"text": "layout with"}','{"text": "gold powder and"}']}}
+setblock 82 64 106 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "stands"}','{"text": ""}','{"text": ""}','{"text": ""}']}}
+fill 91 64 92 91 79 107 minecraft:light_gray_concrete
+setblock 85 64 94 naturesaura:wood_stand
+setblock 82 64 95 naturesaura:wood_stand
+setblock 88 64 95 naturesaura:wood_stand
+setblock 84 64 96 naturesaura:gold_powder
+setblock 85 64 96 naturesaura:gold_powder
+setblock 86 64 96 naturesaura:gold_powder
+setblock 83 64 97 naturesaura:gold_powder
+setblock 84 64 97 naturesaura:gold_powder
+setblock 86 64 97 naturesaura:gold_powder
+setblock 87 64 97 naturesaura:gold_powder
+setblock 81 64 98 naturesaura:wood_stand
+setblock 83 64 98 naturesaura:gold_powder
+setblock 85 64 98 minecraft:oak_sapling
+setblock 87 64 98 naturesaura:gold_powder
+setblock 89 64 98 naturesaura:wood_stand
+setblock 83 64 99 naturesaura:gold_powder
+setblock 84 64 99 naturesaura:gold_powder
+setblock 86 64 99 naturesaura:gold_powder
+setblock 87 64 99 naturesaura:gold_powder
+setblock 84 64 100 naturesaura:gold_powder
+setblock 85 64 100 naturesaura:gold_powder
+setblock 86 64 100 naturesaura:gold_powder
+setblock 82 64 101 naturesaura:wood_stand
+setblock 88 64 101 naturesaura:wood_stand
+setblock 85 64 102 naturesaura:wood_stand
+setblock 85 63 98 minecraft:grass_block
+kw testworld use 85 64 94 up naturesaura:infused_iron
+kw testworld use 82 64 95 up botania:livingwood_twig
+kw testworld use 88 64 95 up naturesaura:infused_iron
+kw testworld use 81 64 98 up botania:mana_diamond
+kw testworld use 89 64 98 up naturesaura:gold_leaf
+kw testworld use 82 64 101 up naturesaura:infused_iron
+kw testworld use 88 64 101 up botania:livingwood_twig
+kw testworld use 85 64 102 up naturesaura:infused_iron

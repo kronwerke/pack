@@ -1,22 +1,23 @@
-# 072 nether/welcome
-#area -4 250 14 275
-fill -4 64 250 14 91 275 minecraft:air
-fill -4 60 250 14 62 275 minecraft:stone
-fill -4 63 250 14 63 275 minecraft:light_gray_concrete
-fill 0 64 256 14 79 256 minecraft:light_gray_concrete
-fill 0 64 256 0 79 269 minecraft:light_gray_concrete
-setblock 1 64 268 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "072"}','{"text": "nether"}','{"text": "welcome"}','{"text": ""}']}}
-setblock 2 64 268 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Betritt den"}','{"text": "Nether"}','{"text": ""}','{"text": ""}']}}
-fill 9 64 256 9 79 269 minecraft:light_gray_concrete
-setblock 3 65 261 minecraft:obsidian
-setblock 3 66 261 minecraft:obsidian
-setblock 3 67 261 minecraft:obsidian
-setblock 4 64 261 minecraft:obsidian
-setblock 4 68 261 minecraft:obsidian
-setblock 5 64 261 minecraft:obsidian
-setblock 5 68 261 minecraft:obsidian
-setblock 6 65 261 minecraft:obsidian
-setblock 6 66 261 minecraft:obsidian
-setblock 6 67 261 minecraft:obsidian
-fill 4 65 261 5 67 261 minecraft:nether_portal[axis=x]
-execute if block 4 66 261 minecraft:nether_portal
+# 072 powah/orb, thermo, reactor
+#area -4 193 35 218
+fill -4 64 193 35 93 218 minecraft:air
+fill -4 60 193 35 62 218 minecraft:stone
+fill -4 63 193 35 63 218 minecraft:light_gray_concrete
+fill 0 64 199 35 81 199 minecraft:light_gray_concrete
+fill 0 64 199 0 81 212 minecraft:light_gray_concrete
+setblock 1 64 211 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "072.1"}','{"text": "powah"}','{"text": "orb"}','{"text": ""}']}}
+setblock 2 64 211 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Bau die"}','{"text": "Energizing Orb"}','{"text": ""}','{"text": ""}']}}
+fill 10 64 199 10 81 212 minecraft:light_gray_concrete
+setblock 5 64 204 powah:energizing_orb[facing=down]
+setblock 3 64 204 powah:energizing_rod_starter[facing=down]
+setblock 7 64 204 powah:energizing_rod_starter[facing=down]
+setblock 5 64 202 powah:energizing_rod_starter[facing=down]
+setblock 11 64 211 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "072.2"}','{"text": "powah"}','{"text": "thermo"}','{"text": ""}']}}
+setblock 12 64 211 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Stell einen"}','{"text": "Thermo"}','{"text": "Generator auf"}','{"text": ""}']}}
+fill 20 64 199 20 81 212 minecraft:light_gray_concrete
+setblock 15 64 204 minecraft:magma_block
+setblock 15 65 204 powah:thermo_generator_starter
+setblock 21 64 211 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "072.3"}','{"text": "powah"}','{"text": "reactor"}','{"text": ""}']}}
+setblock 22 64 211 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Bau einen"}','{"text": "Reaktor"}','{"text": ""}','{"text": ""}']}}
+fill 30 64 199 30 81 212 minecraft:light_gray_concrete
+setblock 25 64 204 powah:reactor_starter[core=true]

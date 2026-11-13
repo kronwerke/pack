@@ -1,22 +1,22 @@
-# 076 undergarden/arrival
-#area 53 250 71 275
-fill 53 64 250 71 91 275 minecraft:air
-fill 53 60 250 71 62 275 minecraft:stone
-fill 53 63 250 71 63 275 minecraft:light_gray_concrete
-fill 57 64 256 71 79 256 minecraft:light_gray_concrete
-fill 57 64 256 57 79 269 minecraft:light_gray_concrete
-setblock 58 64 268 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "076"}','{"text": "undergarden"}','{"text": "arrival"}','{"text": ""}']}}
-setblock 59 64 268 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Steig hinunter"}','{"text": ""}','{"text": ""}','{"text": ""}']}}
-fill 66 64 256 66 79 269 minecraft:light_gray_concrete
-setblock 60 65 261 minecraft:stone_bricks
-setblock 60 66 261 minecraft:stone_bricks
-setblock 60 67 261 minecraft:stone_bricks
-setblock 61 64 261 minecraft:stone_bricks
-setblock 61 68 261 minecraft:stone_bricks
-setblock 62 64 261 minecraft:stone_bricks
-setblock 62 68 261 minecraft:stone_bricks
-setblock 63 65 261 minecraft:stone_bricks
-setblock 63 66 261 minecraft:stone_bricks
-setblock 63 67 261 minecraft:stone_bricks
-fill 61 65 261 62 67 261 undergarden:undergarden_portal[axis=x]
-execute if block 61 66 261 undergarden:undergarden_portal
+# 076 nether/welcome
+#area -4 250 14 275
+fill -4 64 250 14 91 275 minecraft:air
+fill -4 60 250 14 62 275 minecraft:stone
+fill -4 63 250 14 63 275 minecraft:light_gray_concrete
+fill 0 64 256 14 79 256 minecraft:light_gray_concrete
+fill 0 64 256 0 79 269 minecraft:light_gray_concrete
+setblock 1 64 268 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "076"}','{"text": "nether"}','{"text": "welcome"}','{"text": ""}']}}
+setblock 2 64 268 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Betritt den"}','{"text": "Nether"}','{"text": ""}','{"text": ""}']}}
+fill 9 64 256 9 79 269 minecraft:light_gray_concrete
+setblock 3 65 261 minecraft:obsidian
+setblock 3 66 261 minecraft:obsidian
+setblock 3 67 261 minecraft:obsidian
+setblock 4 64 261 minecraft:obsidian
+setblock 4 68 261 minecraft:obsidian
+setblock 5 64 261 minecraft:obsidian
+setblock 5 68 261 minecraft:obsidian
+setblock 6 65 261 minecraft:obsidian
+setblock 6 66 261 minecraft:obsidian
+setblock 6 67 261 minecraft:obsidian
+fill 4 65 261 5 67 261 minecraft:nether_portal[axis=x]
+execute if block 4 66 261 minecraft:nether_portal

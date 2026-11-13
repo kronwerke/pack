@@ -1,42 +1,31 @@
-# 070 storage/drawers_4, vault_big
-#area -4 212 26 237
-fill -4 64 212 26 91 237 minecraft:air
-fill -4 60 212 26 62 237 minecraft:stone
-fill -4 63 212 26 63 237 minecraft:light_gray_concrete
-fill 0 64 218 26 79 218 minecraft:light_gray_concrete
-fill 0 64 218 0 79 231 minecraft:light_gray_concrete
-setblock 1 64 230 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "070.1"}','{"text": "storage"}','{"text": "drawers_4"}','{"text": ""}']}}
-setblock 2 64 230 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Bau eine"}','{"text": "Schubladenwand"}','{"text": ""}','{"text": ""}']}}
-fill 10 64 218 10 79 231 minecraft:light_gray_concrete
-fill 4 64 222 6 66 222 minecraft:oak_planks
-kw testworld use 4 64 222 south functionalstorage:oak_4
-execute unless block 4 64 223 minecraft:air
-kw testworld use 4 64 223 south minecraft:iron_ingot
-kw testworld use 5 64 222 south functionalstorage:oak_4
-execute unless block 5 64 223 minecraft:air
-kw testworld use 5 64 223 south minecraft:copper_ingot
-kw testworld use 6 64 222 south functionalstorage:oak_4
-execute unless block 6 64 223 minecraft:air
-kw testworld use 6 64 223 south minecraft:gold_ingot
-kw testworld use 4 65 222 south functionalstorage:oak_4
-execute unless block 4 65 223 minecraft:air
-kw testworld use 4 65 223 south minecraft:redstone
-kw testworld use 5 65 222 south functionalstorage:oak_4
-execute unless block 5 65 223 minecraft:air
-kw testworld use 5 65 223 south minecraft:coal
-kw testworld use 6 65 222 south functionalstorage:oak_4
-execute unless block 6 65 223 minecraft:air
-kw testworld use 6 65 223 south minecraft:lapis_lazuli
-kw testworld use 4 66 222 south functionalstorage:oak_4
-execute unless block 4 66 223 minecraft:air
-kw testworld use 4 66 223 south minecraft:diamond
-kw testworld use 5 66 222 south functionalstorage:oak_4
-execute unless block 5 66 223 minecraft:air
-kw testworld use 5 66 223 south minecraft:quartz
-kw testworld use 6 66 222 south functionalstorage:oak_4
-execute unless block 6 66 223 minecraft:air
-kw testworld use 6 66 223 south minecraft:bone
-setblock 11 64 230 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "070.2"}','{"text": "storage"}','{"text": "vault_big"}','{"text": ""}']}}
-setblock 12 64 230 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Bau einen"}','{"text": "großen Tresor"}','{"text": ""}','{"text": ""}']}}
-fill 21 64 218 21 79 231 minecraft:light_gray_concrete
-fill 13 64 222 18 66 224 create:item_vault[axis=x,large=false]
+# 070 immersive/list_mb
+#area 189 158 217 186
+fill 189 64 158 217 95 186 minecraft:air
+fill 189 60 158 217 62 186 minecraft:stone
+fill 189 63 158 217 63 186 minecraft:light_gray_concrete
+fill 193 64 164 217 83 164 minecraft:light_gray_concrete
+fill 193 64 164 193 83 180 minecraft:light_gray_concrete
+setblock 194 64 179 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "070"}','{"text": "immersive"}','{"text": "list_mb"}','{"text": ""}']}}
+setblock 195 64 179 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "all seven stage"}','{"text": "2 structures"}','{"text": "side by side"}','{"text": ""}']}}
+fill 212 64 164 212 83 180 minecraft:light_gray_concrete
+place template immersiveengineering:multiblocks/sheetmetal_tank 195 64 166 none
+kw testworld use 196 65 168 south immersiveengineering:hammer
+execute unless block 196 65 168 immersiveengineering:sheetmetal_iron
+place template immersiveengineering:multiblocks/silo 199 64 166 none
+kw testworld use 200 65 168 south immersiveengineering:hammer
+execute unless block 200 65 168 immersiveengineering:sheetmetal_iron
+place template immersiveengineering:multiblocks/improved_blast_furnace 203 64 166 none
+kw testworld use 204 65 168 south immersiveengineering:hammer
+execute unless block 204 65 168 immersiveengineering:blastbrick_reinforced
+place template immersiveengineering:multiblocks/shelf 207 64 166 none
+kw testworld use 208 65 167 south immersiveengineering:hammer
+execute unless block 208 65 167 immersiveengineering:steel_catwalk
+place template immersiveengineering:multiblocks/coke_oven 197 64 172 none
+kw testworld use 198 65 174 south immersiveengineering:hammer
+execute unless block 198 65 174 immersiveengineering:cokebrick
+place template immersiveengineering:multiblocks/blast_furnace 202 64 172 none
+kw testworld use 203 65 174 south immersiveengineering:hammer
+execute unless block 203 65 174 immersiveengineering:blastbrick
+place template immersiveengineering:multiblocks/alloy_smelter 207 64 172 none
+kw testworld use 208 65 173 south immersiveengineering:hammer
+execute unless block 208 65 173 immersiveengineering:alloybrick

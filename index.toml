@@ -334,11 +334,11 @@ hash = "93c982c2e09101877cba15ed69d2eee71ed5be2243ee8dcdcc0734845932c8b6"
 
 [[files]]
 file = "config/ftbquests/quests/lang/de_de.snbt"
-hash = "6ede983afd2d5f024599841c4e7605abeb08fd89d3b69f824fa0d8dcbc4fe06e"
+hash = "dd6cd805e43cf721a559cb2de7941309b993d0188dfb9a2004d0dd2ce9dbda7a"
 
 [[files]]
 file = "config/ftbquests/quests/lang/en_us.snbt"
-hash = "0752f7b7bb4b7cf6ccfd468ff216e3012baf9e4f25d74a900d98a17f70db0af5"
+hash = "133bfed18bf1431385f09352763541f7fbfa720cfffaee36dfc66788944e9510"
 
 [[files]]
 file = "config/ftbquests/quests/reward_tables/s1_common.snbt"
@@ -2693,8 +2693,24 @@ file = "kubejs/assets/kronwerke/textures/quests/shots/aether_altar.png"
 hash = "45e6ad652d40e26481cd7accbbe10b017056652f24286789b792f4587a83f088"
 
 [[files]]
+file = "kubejs/assets/kronwerke/textures/quests/shots/aether_gloves.png"
+hash = "bbd8f160095f4407477a992917c17ae18f24db5705849ea2e88f34c77602cc7b"
+
+[[files]]
 file = "kubejs/assets/kronwerke/textures/quests/shots/aether_portal.png"
 hash = "3f882ec8028049e5e9c91e9b35dafbb6a780dd618f7feade618b758a84f6df47"
+
+[[files]]
+file = "kubejs/assets/kronwerke/textures/quests/shots/aether_queen.png"
+hash = "418de214b7da8cf35d7c2df6b16f370fb75dcb4493e1cad6e6e16320e46e0d3b"
+
+[[files]]
+file = "kubejs/assets/kronwerke/textures/quests/shots/aether_ride.png"
+hash = "0d5e0d3fa3af238fc7efbeff7e04219fd3bba0ebdfea8942640562dffce21629"
+
+[[files]]
+file = "kubejs/assets/kronwerke/textures/quests/shots/aether_slider.png"
+hash = "0f55cf3ec4a2c6ee09749a69fd908b44d85d1f175ef70e5b64c948ab2456cc91"
 
 [[files]]
 file = "kubejs/assets/kronwerke/textures/quests/shots/alfheim_elementium_armor.png"
@@ -2973,12 +2989,20 @@ file = "kubejs/assets/kronwerke/textures/quests/shots/create_windmill.png"
 hash = "70765dd725e696e2e018a99c27d796315e4ad0ade30920664d89bb6bb9f99d0b"
 
 [[files]]
+file = "kubejs/assets/kronwerke/textures/quests/shots/deeper_darker_echo_shard.png"
+hash = "db0ac5c18c1de01009ce6dff00b374226b95c67440c43e3d95fd8d2a473df728"
+
+[[files]]
 file = "kubejs/assets/kronwerke/textures/quests/shots/deeper_darker_portal.png"
 hash = "227093bb7bc207fb52e72cb587679004965f521a595ba0cb49fb2e0b4fa34670"
 
 [[files]]
 file = "kubejs/assets/kronwerke/textures/quests/shots/deeper_darker_resonarium.png"
 hash = "0b8496ecac0f62990c616327c7a58695502d9f57ff6b116f6130e7b0a2a48f91"
+
+[[files]]
+file = "kubejs/assets/kronwerke/textures/quests/shots/deeper_darker_stalker.png"
+hash = "01fb245635c1871e8d0e5b44a07d3703271bd7aa6f25cebf2ce14f16e1b68529"
 
 [[files]]
 file = "kubejs/assets/kronwerke/textures/quests/shots/draconic_dust.png"
@@ -3031,6 +3055,26 @@ hash = "8f6dde2a8b859a4999c32512dd9c7fcb51e8c9ff4fbc2b6f894955524d7f9efe"
 [[files]]
 file = "kubejs/assets/kronwerke/textures/quests/shots/enderio_vacuum_chest.png"
 hash = "aebba65f5492d628c7ed02a609865e25b8d98fb88068e41130a485ba61fb4819"
+
+[[files]]
+file = "kubejs/assets/kronwerke/textures/quests/shots/eternal_starlight_golem.png"
+hash = "4aacc47f37ef135c3a72ddc610120e538e4335fcb4ef4728199fefb33b67de27"
+
+[[files]]
+file = "kubejs/assets/kronwerke/textures/quests/shots/eternal_starlight_monstrosity.png"
+hash = "8f87be7638fa5e78b625f733b6ecef6a52dbee982cac1b83e4b92132a59b9488"
+
+[[files]]
+file = "kubejs/assets/kronwerke/textures/quests/shots/eternal_starlight_orb.png"
+hash = "074fc38b006584832d4e9b3fefe8e19441dca6158a0e872a974322d016fe9b5d"
+
+[[files]]
+file = "kubejs/assets/kronwerke/textures/quests/shots/eternal_starlight_starfire.png"
+hash = "5e88f6ec1fb553e0e2cfec5293d95a30a6f2a8b54e7cb2d2ec16b2eec9d7c16a"
+
+[[files]]
+file = "kubejs/assets/kronwerke/textures/quests/shots/exploration_e_compass.png"
+hash = "a8bcd0bbedc83a4ede103f8f8597a42f5a825fd08fd5958d130b29d4de116727"
 
 [[files]]
 file = "kubejs/assets/kronwerke/textures/quests/shots/farms_animals_thorn.png"
@@ -3819,6 +3863,14 @@ hash = "c8f525b87310aa0b5734eb9aa4306a29aa9cfdd652838eea476c6efb8793b942"
 [[files]]
 file = "kubejs/assets/kronwerke/textures/quests/shots/undergarden_arrival.png"
 hash = "78cf8d41238ec02caca8da6c337b554822cc1f81fe680e5ae4b540d710d9c62d"
+
+[[files]]
+file = "kubejs/assets/kronwerke/textures/quests/shots/undergarden_forgotten.png"
+hash = "bbce4cce76258eb899ed82ee442e72c9ff1eb36d1560c86c91589339b2cafdb1"
+
+[[files]]
+file = "kubejs/assets/kronwerke/textures/quests/shots/undergarden_guardian.png"
+hash = "0e2902cef1ea4c1ab57fd99013326da8f5e90d5597ba981e0af1ee186d5d7c40"
 
 [[files]]
 file = "kubejs/assets/kronwerke/textures/quests/shots/undergarden_infuser.png"

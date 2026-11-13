@@ -2963,16 +2963,17 @@ def _(b):
     b.focus(3, 0, 3, 5, 1, 5)
 
 
-@scene("create_trains/cargo", w=11)
+@scene("create_trains/cargo", d=11)
 def _(b):
-    # a wagon's portable storage interface and the platform's, face to face: where they meet, cargo changes sides
-    b.f(1, 0, 4, 9, 0, 4, "create:track[shape=xo,turn=false,waterlogged=false]")
-    b.b(3, 1, 4, "create:small_bogey[axis=x,waterlogged=false]")
-    b.b(7, 1, 4, "create:small_bogey[axis=x,waterlogged=false]")
-    b.f(3, 2, 4, 7, 2, 4, "create:railway_casing")
+    # a wagon's portable storage interface and the platform's, face to face across one block of
+    # air: where they meet, cargo changes sides. The track runs toward the camera so both show.
+    b.f(4, 0, 1, 4, 0, 9, "create:track[shape=zo,turn=false,waterlogged=false]")
+    b.b(4, 1, 3, "create:small_bogey[axis=z,waterlogged=false]")
+    b.b(4, 1, 7, "create:small_bogey[axis=z,waterlogged=false]")
+    b.f(4, 2, 3, 4, 2, 7, "create:railway_casing")
     b.b(4, 3, 4, "minecraft:barrel[facing=up]")
-    b.b(5, 3, 4, "create:portable_storage_interface[facing=south]")
-    b.b(6, 3, 4, "minecraft:barrel[facing=up]")
-    b.f(5, 0, 7, 5, 2, 7, "minecraft:stone_bricks")
-    b.b(5, 3, 7, "minecraft:barrel[facing=up]")
-    b.b(5, 3, 6, "create:portable_storage_interface[facing=north]")
+    b.b(4, 3, 5, "create:portable_storage_interface[facing=east]")
+    b.b(4, 3, 6, "minecraft:barrel[facing=up]")
+    b.f(7, 0, 5, 7, 2, 5, "minecraft:stone_bricks")
+    b.b(7, 3, 5, "minecraft:barrel[facing=up]")
+    b.b(6, 3, 5, "create:portable_storage_interface[facing=west]")

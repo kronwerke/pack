@@ -46,7 +46,7 @@ hash = "dc5670155805762d2879113230819d27766ac9e2e794f8c1fedcb82849a74b22"
 
 [[files]]
 file = "config/fancymenu/assets/kronwerke/anim_dusk_slow.apng"
-hash = "d5f20479fb7732317cba3a4dd1a70a5a2252aeff0ff2eb51b7e7981e4d26c8d2"
+hash = "4f0ad6a31e85a47860a7c64edf447637c4dbdfca74e011a02f91d0e1b3405d61"
 
 [[files]]
 file = "config/fancymenu/assets/kronwerke/anim_dusk_smoke.apng"
@@ -54,7 +54,7 @@ hash = "4677202cc86aef949d9a69d4d0fdd1ab27763e67853c2e01daa02660563d5429"
 
 [[files]]
 file = "config/fancymenu/assets/kronwerke/anim_dusk_train.apng"
-hash = "957f5ef834bce0f748a6675ad398188504b54887219bf3922114308220662d44"
+hash = "336ce91b670e072ee1bd24fb589574f465bf901524d63524c2f0d3d6b9ee3d82"
 
 [[files]]
 file = "config/fancymenu/assets/kronwerke/anim_night_gear_gate.apng"
@@ -70,7 +70,7 @@ hash = "314e3b6c69bb74f0aaf8baf4e8e85a5ea318e40b1c21afee5b8a31dcbfb2da35"
 
 [[files]]
 file = "config/fancymenu/assets/kronwerke/anim_night_slow.apng"
-hash = "2a07a0e86f4a24b58fb4fc5def2162e03c3f7a6fbebea27adf189045de132a26"
+hash = "89a817eb2e5aa9ff2a75c7bce393cf7418677ec6644b3db7dad532f0e3f91c70"
 
 [[files]]
 file = "config/fancymenu/assets/kronwerke/anim_night_smoke.apng"
@@ -78,7 +78,19 @@ hash = "9f119401b12c08a079b25e2b98e97b5fc2f8b3d6e25ddbed6414a880ab420ab1"
 
 [[files]]
 file = "config/fancymenu/assets/kronwerke/anim_night_train.apng"
-hash = "ad96ac986fad6ae979c44e0c40795482d743de354438ddbbbf809cabefe5ea83"
+hash = "630f41acba45ae1ec08a08a0e6c471d9e772e756653762a9de1cd5cbd8c0247d"
+
+[[files]]
+file = "config/fancymenu/assets/kronwerke/art_dim.png"
+hash = "37a4688ae1edf8bb7a43f1222035b216229d2f1a63eb2f1847820a340c64853f"
+
+[[files]]
+file = "config/fancymenu/assets/kronwerke/art_dusk.png"
+hash = "28f2058a4a98018292af4a5e6145de169172273feac6845f7dcc97de5f8a3936"
+
+[[files]]
+file = "config/fancymenu/assets/kronwerke/art_night.png"
+hash = "6285851ab9660538930d0be255b2c1a46d3985d70e4e45c1b7e0f9fbac36b8be"
 
 [[files]]
 file = "config/fancymenu/assets/kronwerke/bar_fill.png"
@@ -234,15 +246,19 @@ hash = "175800497710c35107c858fc0de0f1befa0500c9d2cd6e06f558bc6053f77283"
 
 [[files]]
 file = "config/fancymenu/assets/kronwerke/logo.png"
-hash = "411a89b9cc464363606d817d07d701747a1c125e3c102b56793d48422e29dff6"
+hash = "ee7c67fde86895d4ba154a0ddea1a5ef4273f1677bd1626ba4a36862ec3ab219"
 
 [[files]]
 file = "config/fancymenu/assets/kronwerke/logo_big.png"
-hash = "44c2b69abd6f11869e00990c6cc6573bc663c0c9b9a920fd3486b110b243c84b"
+hash = "0bb4941649b9699eb66ad71a2aefcce7ce84be771ec4be24f429ffa9c2024c40"
 
 [[files]]
 file = "config/fancymenu/assets/kronwerke/menu_dim.png"
-hash = "e9113b6bafbf7c5b97fd2458889cace20f7de96185c6c83ac0400e7bb5c3f562"
+hash = "239279bfb79d5a9560921bcec0624cdf32f5157e9b539629810e374b5a5d7aac"
+
+[[files]]
+file = "config/fancymenu/assets/kronwerke/shade.png"
+hash = "2b49e2c7a830ca0dfcc62199f86d5ca1f5eecda210e98d9c1853cc19261b721f"
 
 [[files]]
 file = "config/fancymenu/assets/kronwerke/tag.png"
@@ -262,11 +278,11 @@ hash = "2e66e15240c7d8ace6c7fcf1c5e6435317961ae7a64075cdf7c5b9562911b870"
 
 [[files]]
 file = "config/fancymenu/assets/kronwerke/title_dusk.png"
-hash = "b9c43ee17f715668af593c3f83c9be2976aa0616ef04482b0ca00f97f7ee06a0"
+hash = "0b58eb1e9211dbba4b3d304501bd1d7f664e3d0d482a935d25c973c0d970c3dc"
 
 [[files]]
 file = "config/fancymenu/assets/kronwerke/title_night.png"
-hash = "a76a0e63018616fcd57e24678da738634f63207e1468bb99601244706f489664"
+hash = "8efaa5b6fcc4e0ab168a04a6224620f52b0fb7ca4cdfab09cd37b7a163addb53"
 
 [[files]]
 file = "config/fancymenu/customizablemenus.txt"
@@ -274,31 +290,31 @@ hash = "ddb876e04782e1b314bbf79dcea6aed9825b63f72100d57c8fc6d8e33775beb1"
 
 [[files]]
 file = "config/fancymenu/customization/kw_loading_day.txt"
-hash = "b518a16acc91f202f134890e71d36cc992930f80543495fb15f27daa35c8635a"
+hash = "6ca63898759dd35929bfc3196d8045596705d71e4f8b0af06ac859398adcdb62"
 
 [[files]]
 file = "config/fancymenu/customization/kw_loading_night.txt"
-hash = "6fef37d565cfc14fec500c2686438b57bfa0abd40be7d9aaec394775cf329d10"
+hash = "6e8c7ea6599e7842edae37cdd3e3ace3d84368e72c150f88a5e86019bc8c8e51"
 
 [[files]]
 file = "config/fancymenu/customization/kw_multiplayer.txt"
-hash = "970fdc7c2d18fd82b8ec56a5387c709870c3e901a5d899563bdbbbc80976d9ef"
+hash = "2eeed2305094e1323d79b0e0a59cd0a0f9266a5db55b23afa144649b60ec8f31"
 
 [[files]]
 file = "config/fancymenu/customization/kw_pause.txt"
-hash = "0991713d30419e2275e70a623022b81c3568c0cfe350e57dc57a0e7cd81bb4a0"
+hash = "45c1c9101761ef98316fb9b242ebafb0b94b288d7590b3cbba1c933a1c8b7809"
 
 [[files]]
 file = "config/fancymenu/customization/kw_title_day.txt"
-hash = "36b9515435f70fd13ebaf40412433eed446958110eab2bcaa8bf0d5296506a6e"
+hash = "2510b208f20adacb2100a3c8a95eaee1b3c62794e05ebbb1a03a212f6893d090"
 
 [[files]]
 file = "config/fancymenu/customization/kw_title_night.txt"
-hash = "e7a3582744012859d0c88ec8b6660886449f45d6a34892b88b6f10ddfe04e3fc"
+hash = "1aa2e1273bc20ff42a29da435b4751757e1b96ad75d65939a94af6e33b48c725"
 
 [[files]]
 file = "config/fancymenu/customization/kw_universal.txt"
-hash = "156fc00274f10861ca718e3fa2ab933af3d83fe222612d16f9c8c45384f2e067"
+hash = "d59bbaec4fa4aee7a529b9f444386573f48f3d7faea53f3fe8c01a2dcbc8bb9e"
 
 [[files]]
 file = "config/fancymenu/options.txt"
@@ -8620,7 +8636,7 @@ metafile = true
 
 [[files]]
 file = "mods/kronwerke-core.pw.toml"
-hash = "f1e9b34b1afcdcf2dbdd96970fc229183dbb190ce521d86b10750bd4842c8d8b"
+hash = "20ae08d528e8d1b62f44cba470c186522ec114c469c9b9e0f6e695f25dbce628"
 metafile = true
 
 [[files]]

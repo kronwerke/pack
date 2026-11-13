@@ -26,7 +26,7 @@ hash = "3850d24e75f8dcac74b4495c229abd96aa8a7c24a2ba4e4b576af58bd4aaa333"
 
 [[files]]
 file = "config/ftbchunks-world.snbt"
-hash = "536d4123a09556bc3fc343a318750734632680fd2151d264fc2cde6dc7dfe2cc"
+hash = "09447b3fb9a252a27d1a4a38afc4a56cc4d8f3ba1eb58ade1e48ef261cd0e88e"
 
 [[files]]
 file = "config/ftbquests/quests/chapter_groups.snbt"
@@ -334,11 +334,11 @@ hash = "93c982c2e09101877cba15ed69d2eee71ed5be2243ee8dcdcc0734845932c8b6"
 
 [[files]]
 file = "config/ftbquests/quests/lang/de_de.snbt"
-hash = "d96b050714c6a094942c2d75dec5013047948ca8b4694c6401e6f97088502816"
+hash = "c7d7105bfa9bf44da07d5b09a66163cc486ea0ff2966e4a08bd6bc4d72b5c972"
 
 [[files]]
 file = "config/ftbquests/quests/lang/en_us.snbt"
-hash = "e2ce7bbb6a56892bd22b685ac5bfe5c347c87a022bb0598b93badf847f6d32e4"
+hash = "8a66ad650af8bd643161c5d3279205347a3e70ff188de291dab7312a0bec4b7c"
 
 [[files]]
 file = "config/ftbquests/quests/reward_tables/s1_common.snbt"
@@ -2721,8 +2721,16 @@ file = "kubejs/assets/kronwerke/textures/quests/shots/aether_slider.png"
 hash = "75dc24996b84b3d6e3eaf8af836271f645848c6c61bf7783fe21eb1ebbc0f752"
 
 [[files]]
+file = "kubejs/assets/kronwerke/textures/quests/shots/alfheim_corporea_index.png"
+hash = "e6dd2b6cd12f603e85e2744a1ca8cc861f14bb35c66fa26a3e23f4958f5c593f"
+
+[[files]]
 file = "kubejs/assets/kronwerke/textures/quests/shots/alfheim_elementium_armor.png"
 hash = "949e7fd573bd9d1f39d461939dc80fadf43734ee4125fa6034e63e9a4ae9ef34"
+
+[[files]]
+file = "kubejs/assets/kronwerke/textures/quests/shots/alfheim_elementium_line.png"
+hash = "2b5e98b3cd3dab2777c83f707293da61dcee761d332d790efcdced02509b8995"
 
 [[files]]
 file = "kubejs/assets/kronwerke/textures/quests/shots/alfheim_frame.png"
@@ -2753,12 +2761,20 @@ file = "kubejs/assets/kronwerke/textures/quests/shots/ars_apprentice_brazier.png
 hash = "85573d0417c5f1804dfd5482a97c99e6207e5f82054e51bb70a6729c217128f4"
 
 [[files]]
+file = "kubejs/assets/kronwerke/textures/quests/shots/ars_apprentice_collector.png"
+hash = "7cd0cc18af2befa1838268cb2cf827c2af358d363f7ecb76ee68403fbe3e80f8"
+
+[[files]]
 file = "kubejs/assets/kronwerke/textures/quests/shots/ars_apprentice_potions.png"
 hash = "df5903be5788e6de46c10d116ba3fb69057f3e59631acf2872e9b58dff313b55"
 
 [[files]]
 file = "kubejs/assets/kronwerke/textures/quests/shots/ars_apprentice_relay.png"
 hash = "c9f347471c343bc95b3ee61fe7f2391873aa3265dd5c06ee7d683f094692ac22"
+
+[[files]]
+file = "kubejs/assets/kronwerke/textures/quests/shots/ars_apprentice_ritual_scrying.png"
+hash = "9d3a4de3675ad9a156366f9a0f66d169ae51f76234242c738f0da2bbcd65ed57"
 
 [[files]]
 file = "kubejs/assets/kronwerke/textures/quests/shots/ars_apprentice_source_motor.png"
@@ -3265,6 +3281,18 @@ file = "kubejs/assets/kronwerke/textures/quests/shots/gaia_dandelifeon.png"
 hash = "956dc563a51e83368c0d6e16a73f458369eb2f03c526a5c4aae71c1ae1153e30"
 
 [[files]]
+file = "kubejs/assets/kronwerke/textures/quests/shots/gaia_goal.png"
+hash = "fde6ee9c593e1b659d3565c5a41fc624e57a4cbbf732b2c94a2b3088865ef87b"
+
+[[files]]
+file = "kubejs/assets/kronwerke/textures/quests/shots/gaia_tiara.png"
+hash = "e9a9bdfd2c9c12170180a606792856f682ddb3ce8ef5940a087fc5cd2a5cfcbb"
+
+[[files]]
+file = "kubejs/assets/kronwerke/textures/quests/shots/hexerei_blood.png"
+hash = "1e800ef86a429f98a1e00b03f943bb6323440eaa31ef027e6d428e600b60420f"
+
+[[files]]
 file = "kubejs/assets/kronwerke/textures/quests/shots/hexerei_candles.png"
 hash = "820389a16b5b962dd3bde969d3c2f6f2e478f9a9dcb253fefe21b953b56575e2"
 
@@ -3273,12 +3301,20 @@ file = "kubejs/assets/kronwerke/textures/quests/shots/hexerei_cauldron.png"
 hash = "2cb4d5daff1513e3a8dbbc935e463098949976730f7c5cb7c570e53ae454c90d"
 
 [[files]]
+file = "kubejs/assets/kronwerke/textures/quests/shots/hexerei_crow.png"
+hash = "23fcac76e07fa262e20298dc85b031c41c05323f9f623cb2a4612c2f6e51f899"
+
+[[files]]
 file = "kubejs/assets/kronwerke/textures/quests/shots/hexerei_herbs.png"
 hash = "958a1c5254b004145626617aaefe7195cbf9cfda4f8e337124a67a929adef7b4"
 
 [[files]]
 file = "kubejs/assets/kronwerke/textures/quests/shots/hexerei_sage_plate.png"
 hash = "5b137149619eae34d1fdf1de61d864bbde789f3f9fd08fa4de2ac4294a8d879b"
+
+[[files]]
+file = "kubejs/assets/kronwerke/textures/quests/shots/hexerei_willow_broom.png"
+hash = "629d38e9d2f74a394e97a568708cd634e57b7310aca8263f1ddfbbb2aafd933b"
 
 [[files]]
 file = "kubejs/assets/kronwerke/textures/quests/shots/hostile_networks_data_center.png"
@@ -3497,6 +3533,10 @@ file = "kubejs/assets/kronwerke/textures/quests/shots/industrial_sower.png"
 hash = "42d379b0cf02a074c3248efef33a6b317866bb549719b1e9c60652bbd6aa752a"
 
 [[files]]
+file = "kubejs/assets/kronwerke/textures/quests/shots/industrial_transporters.png"
+hash = "e669f2d94ce7efdb9e120a6b33555b3a232d10e4d543ef7bcd822f08fb80c773"
+
+[[files]]
 file = "kubejs/assets/kronwerke/textures/quests/shots/industrial_washing.png"
 hash = "e0a3672bdf83846ffb3d99022e9216b41b01bb3522a7f39e4c84fe13d6af51d9"
 
@@ -3565,6 +3605,10 @@ file = "kubejs/assets/kronwerke/textures/quests/shots/list_transport_packages.pn
 hash = "630a314861262bbac750320ec8136cf56c84a9e4f46015219b72924ba79d8ec0"
 
 [[files]]
+file = "kubejs/assets/kronwerke/textures/quests/shots/logistics_counter.png"
+hash = "430dce74025f75f587cc221c42f06e96189d8d402ac1acc6414a9a56c51cc924"
+
+[[files]]
 file = "kubejs/assets/kronwerke/textures/quests/shots/logistics_laser_node.png"
 hash = "d6150aedbaf3e6e9df374697bd568ec2099de8fd97347c7476ad5d79b95997cf"
 
@@ -3625,8 +3669,16 @@ file = "kubejs/assets/kronwerke/textures/quests/shots/mekanism_advanced_boiler.p
 hash = "4d5cef681681e554bb7bde5fc84359d4ddfbb30e74636fe43d0b11e3b4a3d029"
 
 [[files]]
+file = "kubejs/assets/kronwerke/textures/quests/shots/mekanism_advanced_cnc_stamper.png"
+hash = "969f06411be33c5a623b7aa89409f8f16d30ccb673bd55bcec9de5be0ffd82bb"
+
+[[files]]
 file = "kubejs/assets/kronwerke/textures/quests/shots/mekanism_advanced_evap.png"
 hash = "e718598bca7d6db073b021ca2a948e6cf44a94cb0fbf765374b14a646721cbba"
+
+[[files]]
+file = "kubejs/assets/kronwerke/textures/quests/shots/mekanism_advanced_miner.png"
+hash = "0541b64a619147815b4531621f46cf5f70c324b391879416426b743fb32f9ebf"
 
 [[files]]
 file = "kubejs/assets/kronwerke/textures/quests/shots/mekanism_advanced_teleporter.png"
@@ -3675,6 +3727,10 @@ hash = "08f56cb93490c73516e7af1f5e65ba13deef95089a6a5f0da31cafca31ca1201"
 [[files]]
 file = "kubejs/assets/kronwerke/textures/quests/shots/mekanism_ores_foundry.png"
 hash = "18f1c61447cf23af057f715895d7ccf084469a96747453e316402aec2f713c3b"
+
+[[files]]
+file = "kubejs/assets/kronwerke/textures/quests/shots/mekanism_ores_full.png"
+hash = "880c2dd2484e626601774e052cc974060e55945c6753fe39b29e00a96eda048f"
 
 [[files]]
 file = "kubejs/assets/kronwerke/textures/quests/shots/mekanism_ores_line2.png"
@@ -3779,6 +3835,10 @@ hash = "83d15470cf83361323ca7ad0d304651f7cc16b4f1028e14936a60261a0238b32"
 [[files]]
 file = "kubejs/assets/kronwerke/textures/quests/shots/occultism_ophyx.png"
 hash = "937045a51dca3bb0995b3971e40bdd877c4f61fd46a28543bd73be235afba026"
+
+[[files]]
+file = "kubejs/assets/kronwerke/textures/quests/shots/occultism_satchel.png"
+hash = "021a3e3695e1976f1d44d24d8414331e09d2f73115ac2527a0e123eaa1b1651a"
 
 [[files]]
 file = "kubejs/assets/kronwerke/textures/quests/shots/occultism_spirit_fire.png"
@@ -4009,8 +4069,16 @@ file = "kubejs/assets/kronwerke/textures/quests/shots/start_here_m_altar.png"
 hash = "b1b9a0f97b086a9d1bd83d1a11bf3d8b693465d851ce7e80ef11b50b8c7c6498"
 
 [[files]]
+file = "kubejs/assets/kronwerke/textures/quests/shots/start_here_m_gearbox.png"
+hash = "21121e8c70c22ec0d5fc2d568228c02d359383f021dc1e88b88d0915d73e5d85"
+
+[[files]]
 file = "kubejs/assets/kronwerke/textures/quests/shots/start_here_m_goldleaf.png"
 hash = "a2f64411063531a64abed02bda4e05449c874c63689c761d69774aa95ec2cec4"
+
+[[files]]
+file = "kubejs/assets/kronwerke/textures/quests/shots/start_here_m_keystone.png"
+hash = "f8b04c48eec1b7d2af3c64e4b0d5e78ca7e6777ebe8d009c731cc6a4edcff488"
 
 [[files]]
 file = "kubejs/assets/kronwerke/textures/quests/shots/start_here_m_ritual.png"

@@ -1,15 +1,14 @@
-# 064 occultism_afrit/mineshaft
-#area 122 142 141 167
-fill 122 64 142 141 91 167 minecraft:air
-fill 122 60 142 141 62 167 minecraft:stone
-fill 122 63 142 141 63 167 minecraft:light_gray_concrete
-fill 126 64 148 141 79 148 minecraft:light_gray_concrete
-fill 126 64 148 126 79 161 minecraft:light_gray_concrete
-setblock 127 64 160 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "064"}','{"text": "occultism_afrit"}','{"text": "mineshaft"}','{"text": ""}']}}
-setblock 128 64 160 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "dimensional"}','{"text": "mineshaft with"}','{"text": "a lamp inside"}','{"text": "and a hopper"}']}}
-setblock 129 64 160 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "below"}','{"text": ""}','{"text": ""}','{"text": ""}']}}
-fill 136 64 148 136 79 161 minecraft:light_gray_concrete
-setblock 131 64 153 minecraft:hopper[facing=east]
-setblock 131 65 153 occultism:dimensional_mineshaft[rotation=0]
-setblock 132 64 153 minecraft:chest[facing=south]{Items:[]}
+# 064 occultism/spirit_fire
+#area -4 142 15 167
+fill -4 64 142 15 91 167 minecraft:air
+fill -4 60 142 15 62 167 minecraft:stone
+fill -4 63 142 15 63 167 minecraft:light_gray_concrete
+fill 0 64 148 15 79 148 minecraft:light_gray_concrete
+fill 0 64 148 0 79 161 minecraft:light_gray_concrete
+setblock 1 64 160 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "064"}','{"text": "occultism"}','{"text": "spirit_fire"}','{"text": ""}']}}
+setblock 2 64 160 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "spirit fire"}','{"text": "turning"}','{"text": "andesite into"}','{"text": "otherstone"}']}}
+fill 10 64 148 10 79 161 minecraft:light_gray_concrete
+setblock 5 64 153 occultism:spirit_fire[color=white]
+summon item 5.5 65.5 153.5 {Item:{id:"minecraft:andesite",count:8},PickupDelay:32767,Age:-32768,Tags:["kw_shot"]}
+summon item 6.5 64.2 154.5 {Item:{id:"occultism:otherstone",count:4},PickupDelay:32767,Age:-32768,Tags:["kw_shot"]}
 execute as @e[type=minecraft:item,tag=!kw_shot] run kill @s

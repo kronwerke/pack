@@ -1,29 +1,17 @@
-# 057 alfheim/open
-#area 240 105 261 130
-fill 240 64 105 261 91 130 minecraft:air
-fill 240 60 105 261 62 130 minecraft:stone
-fill 240 63 105 261 63 130 minecraft:light_gray_concrete
-fill 244 64 111 261 79 111 minecraft:light_gray_concrete
-fill 244 64 111 244 79 124 minecraft:light_gray_concrete
-setblock 245 64 123 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "057"}','{"text": "alfheim"}','{"text": "open"}','{"text": ""}']}}
-setblock 246 64 123 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "the open portal"}','{"text": "with an item"}','{"text": "flying out"}','{"text": ""}']}}
-fill 256 64 111 256 79 124 minecraft:light_gray_concrete
-setblock 250 64 115 botania:elven_gateway_core
-setblock 249 64 115 botania:livingwood_log[axis=x]
-setblock 249 68 115 botania:livingwood_log[axis=x]
-setblock 251 64 115 botania:livingwood_log[axis=x]
-setblock 251 68 115 botania:livingwood_log[axis=x]
-setblock 250 68 115 botania:glimmering_livingwood_log[axis=x]
-setblock 248 65 115 botania:livingwood_log[axis=y]
-setblock 248 66 115 botania:glimmering_livingwood_log[axis=y]
-setblock 248 67 115 botania:livingwood_log[axis=y]
-setblock 252 65 115 botania:livingwood_log[axis=y]
-setblock 252 66 115 botania:glimmering_livingwood_log[axis=y]
-setblock 252 67 115 botania:livingwood_log[axis=y]
-setblock 246 64 117 botania:mana_pool{mana:1000000}
-setblock 246 65 117 botania:natura_pylon
-setblock 254 64 117 botania:mana_pool{mana:1000000}
-setblock 254 65 117 botania:natura_pylon
-kw testworld use 250 64 115 south botania:wand_of_the_forest
-execute unless block 250 64 115 botania:elven_gateway_core[state=off]
+# 057 botania_runes/gourmaryllis
+#area 152 105 171 130
+fill 152 64 105 171 91 130 minecraft:air
+fill 152 60 105 171 62 130 minecraft:stone
+fill 152 63 105 171 63 130 minecraft:light_gray_concrete
+fill 156 64 111 171 79 111 minecraft:light_gray_concrete
+fill 156 64 111 156 79 124 minecraft:light_gray_concrete
+setblock 157 64 123 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "057"}','{"text": "botania_runes"}','{"text": "gourmaryllis"}','{"text": ""}']}}
+setblock 158 64 123 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "a belt dropping"}','{"text": "varied food"}','{"text": ""}','{"text": ""}']}}
+fill 166 64 111 166 79 124 minecraft:light_gray_concrete
+fill 159 63 115 163 63 117 minecraft:grass_block[snowy=false]
+setblock 161 64 116 botania:gourmaryllis
+summon item 160.5 64.2 117.5 {Item:{id:"minecraft:bread",count:1},PickupDelay:32767,Age:-32768,Tags:["kw_shot"]}
+summon item 162.5 64.2 117.5 {Item:{id:"minecraft:cooked_beef",count:1},PickupDelay:32767,Age:-32768,Tags:["kw_shot"]}
+summon item 160.5 64.2 115.5 {Item:{id:"minecraft:apple",count:1},PickupDelay:32767,Age:-32768,Tags:["kw_shot"]}
+summon item 162.5 64.2 115.5 {Item:{id:"minecraft:baked_potato",count:1},PickupDelay:32767,Age:-32768,Tags:["kw_shot"]}
 execute as @e[type=minecraft:item,tag=!kw_shot] run kill @s

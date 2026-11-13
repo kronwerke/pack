@@ -1,36 +1,28 @@
-# 107 eidolon/brazier, crucible, altar, stone_altar
-#area 151 317 200 342
-fill 151 64 317 195 91 342 minecraft:air
-fill 196 64 317 200 91 342 minecraft:air
-fill 151 60 317 200 62 342 minecraft:stone
-fill 151 63 317 200 63 342 minecraft:light_gray_concrete
-fill 155 64 323 200 79 323 minecraft:light_gray_concrete
-fill 155 64 323 155 79 336 minecraft:light_gray_concrete
-setblock 156 64 335 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "107.1"}','{"text": "eidolon"}','{"text": "brazier"}','{"text": ""}']}}
-setblock 157 64 335 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Bau Brazier und"}','{"text": "Stone Hands"}','{"text": ""}','{"text": ""}']}}
-fill 165 64 323 165 79 336 minecraft:light_gray_concrete
-setblock 160 64 328 eidolon_repraised:brazier
-setblock 158 64 328 eidolon_repraised:stone_hand[facing=east]
-setblock 162 64 328 eidolon_repraised:stone_hand[facing=west]
-setblock 160 64 326 eidolon_repraised:stone_hand[facing=south]
-setblock 166 64 335 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "107.2"}','{"text": "eidolon"}','{"text": "crucible"}','{"text": ""}']}}
-setblock 167 64 335 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Setz einen"}','{"text": "Crucible auf"}','{"text": ""}','{"text": ""}']}}
-fill 175 64 323 175 79 336 minecraft:light_gray_concrete
-setblock 170 64 328 minecraft:campfire[facing=south,lit=true]
-setblock 170 65 328 eidolon_repraised:crucible
-kw testworld use 170 65 328 up minecraft:water_bucket
-setblock 176 64 335 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "107.3"}','{"text": "eidolon"}','{"text": "altar"}','{"text": ""}']}}
-setblock 177 64 335 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Bau einen Altar"}','{"text": "mit Bildnis"}','{"text": ""}','{"text": ""}']}}
-fill 185 64 323 185 79 336 minecraft:light_gray_concrete
-fill 179 64 328 181 64 328 eidolon_repraised:wooden_altar
-setblock 180 65 328 eidolon_repraised:straw_effigy[facing=south]
-setblock 179 65 328 eidolon_repraised:candle
-setblock 181 65 328 minecraft:skeleton_skull[rotation=8]
-setblock 186 64 335 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "107.4"}','{"text": "eidolon"}','{"text": "stone_altar"}','{"text": ""}']}}
-setblock 187 64 335 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Bau Stone Altar"}','{"text": "und Elder"}','{"text": "Statue"}','{"text": ""}']}}
-fill 195 64 323 195 79 336 minecraft:light_gray_concrete
-fill 189 64 328 191 64 328 eidolon_repraised:stone_altar
-setblock 190 65 328 eidolon_repraised:unholy_effigy[facing=south]
-setblock 189 65 328 eidolon_repraised:goblet
-setblock 191 65 328 eidolon_repraised:candle
+# 107 undergarden/arrival, infuser
+#area 73 296 101 321
+fill 73 64 296 101 91 321 minecraft:air
+fill 73 60 296 101 62 321 minecraft:stone
+fill 73 63 296 101 63 321 minecraft:light_gray_concrete
+fill 77 64 302 101 79 302 minecraft:light_gray_concrete
+fill 77 64 302 77 79 315 minecraft:light_gray_concrete
+setblock 78 64 314 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "107.1"}','{"text": "undergarden"}','{"text": "arrival"}','{"text": ""}']}}
+setblock 79 64 314 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Steig hinunter"}','{"text": ""}','{"text": ""}','{"text": ""}']}}
+fill 86 64 302 86 79 315 minecraft:light_gray_concrete
+setblock 80 65 307 minecraft:stone_bricks
+setblock 80 66 307 minecraft:stone_bricks
+setblock 80 67 307 minecraft:stone_bricks
+setblock 81 64 307 minecraft:stone_bricks
+setblock 81 68 307 minecraft:stone_bricks
+setblock 82 64 307 minecraft:stone_bricks
+setblock 82 68 307 minecraft:stone_bricks
+setblock 83 65 307 minecraft:stone_bricks
+setblock 83 66 307 minecraft:stone_bricks
+setblock 83 67 307 minecraft:stone_bricks
+fill 81 65 307 82 67 307 undergarden:undergarden_portal[axis=x]
+execute if block 81 66 307 undergarden:undergarden_portal
+setblock 87 64 314 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "107.2"}','{"text": "undergarden"}','{"text": "infuser"}','{"text": ""}']}}
+setblock 88 64 314 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Bau den"}','{"text": "Infusionstisch"}','{"text": ""}','{"text": ""}']}}
+fill 96 64 302 96 79 315 minecraft:light_gray_concrete
+fill 90 63 306 92 63 308 undergarden:depthrock
+setblock 91 64 307 undergarden:infuser[state=infusing_utherium]
 execute as @e[type=minecraft:item,tag=!kw_shot] run kill @s

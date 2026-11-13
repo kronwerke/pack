@@ -1,15 +1,15 @@
-# 070 immersive/coke_oven
-#area 11 177 30 202
-fill 11 64 177 30 91 202 minecraft:air
-fill 11 60 177 30 62 202 minecraft:stone
-fill 11 63 177 30 63 202 minecraft:light_gray_concrete
-fill 15 64 183 30 79 183 minecraft:light_gray_concrete
-fill 15 64 183 15 79 196 minecraft:light_gray_concrete
-setblock 16 64 195 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "070"}','{"text": "immersive"}','{"text": "coke_oven"}','{"text": ""}']}}
-setblock 17 64 195 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "formed coke"}','{"text": "oven with GUI,"}','{"text": "the bucket"}','{"text": "slot, a pump"}']}}
-setblock 18 64 195 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "with pipes"}','{"text": ""}','{"text": ""}','{"text": ""}']}}
-fill 25 64 183 25 79 196 minecraft:light_gray_concrete
-place template immersiveengineering:multiblocks/coke_oven 19 64 186 none
-kw testworld use 20 65 188 south immersiveengineering:hammer
-execute unless block 20 65 188 immersiveengineering:cokebrick
+# 070 occultism_afrit/mineshaft
+#area 122 142 141 167
+fill 122 64 142 141 91 167 minecraft:air
+fill 122 60 142 141 62 167 minecraft:stone
+fill 122 63 142 141 63 167 minecraft:light_gray_concrete
+fill 126 64 148 141 79 148 minecraft:light_gray_concrete
+fill 126 64 148 126 79 161 minecraft:light_gray_concrete
+setblock 127 64 160 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "070"}','{"text": "occultism_afrit"}','{"text": "mineshaft"}','{"text": ""}']}}
+setblock 128 64 160 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "dimensional"}','{"text": "mineshaft with"}','{"text": "a lamp inside"}','{"text": "and a hopper"}']}}
+setblock 129 64 160 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "below"}','{"text": ""}','{"text": ""}','{"text": ""}']}}
+fill 136 64 148 136 79 161 minecraft:light_gray_concrete
+setblock 131 64 153 minecraft:hopper[facing=east]
+setblock 131 65 153 occultism:dimensional_mineshaft[rotation=0]
+setblock 132 64 153 minecraft:chest[facing=south]{Items:[]}
 execute as @e[type=minecraft:item,tag=!kw_shot] run kill @s

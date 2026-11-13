@@ -1,29 +1,16 @@
-# 074 immersive/connectors, thermoelectric
-#area 101 177 132 202
-fill 101 64 177 132 91 202 minecraft:air
-fill 101 60 177 132 62 202 minecraft:stone
-fill 101 63 177 132 63 202 minecraft:light_gray_concrete
-fill 105 64 183 132 79 183 minecraft:light_gray_concrete
-fill 105 64 183 105 79 196 minecraft:light_gray_concrete
-setblock 106 64 195 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "074.1"}','{"text": "immersive"}','{"text": "connectors"}','{"text": ""}']}}
-setblock 107 64 195 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "LV wires on"}','{"text": "posts, the"}','{"text": "accumulator,"}','{"text": "the generator"}']}}
-setblock 108 64 195 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "between magma"}','{"text": "and blue ice, a"}','{"text": "transformer"}','{"text": "with LV and MV"}']}}
-fill 117 64 183 117 79 196 minecraft:light_gray_concrete
-setblock 108 64 188 immersiveengineering:capacitor_lv
-setblock 114 64 188 immersiveengineering:capacitor_lv
-fill 111 64 188 111 66 188 immersiveengineering:treated_fence
-kw testworld use 108 64 188 up immersiveengineering:connector_lv
-kw testworld use 114 64 188 up immersiveengineering:connector_lv
-kw testworld use 111 66 188 up immersiveengineering:connector_lv_relay
-kw testworld use 108 65 188 south immersiveengineering:wirecoil_copper
-kw testworld use 111 67 188 south immersiveengineering:wirecoil_copper
-kw testworld use 111 67 188 south immersiveengineering:wirecoil_copper
-kw testworld use 114 65 188 south immersiveengineering:wirecoil_copper
-setblock 118 64 195 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "074.2"}','{"text": "immersive"}','{"text": "thermoelectric"}','{"text": ""}']}}
-setblock 119 64 195 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Bau einen"}','{"text": "Thermoelektrischen"}','{"text": "Generator"}','{"text": ""}']}}
-fill 127 64 183 127 79 196 minecraft:light_gray_concrete
-setblock 121 64 188 minecraft:magma_block
-setblock 122 64 188 immersiveengineering:thermoelectric_generator
-setblock 123 64 188 minecraft:blue_ice
-kw testworld use 122 64 188 up immersiveengineering:connector_lv
+# 074 hexerei/cauldron
+#area 202 142 221 167
+fill 202 64 142 221 91 167 minecraft:air
+fill 202 60 142 221 62 167 minecraft:stone
+fill 202 63 142 221 63 167 minecraft:light_gray_concrete
+fill 206 64 148 221 79 148 minecraft:light_gray_concrete
+fill 206 64 148 206 79 161 minecraft:light_gray_concrete
+setblock 207 64 160 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "074"}','{"text": "hexerei"}','{"text": "cauldron"}','{"text": ""}']}}
+setblock 208 64 160 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "two mixing"}','{"text": "cauldrons, one"}','{"text": "heated over"}','{"text": "lava"}']}}
+fill 216 64 148 216 79 161 minecraft:light_gray_concrete
+setblock 210 64 153 hexerei:mixing_cauldron
+setblock 212 63 153 minecraft:lava
+setblock 212 64 153 hexerei:mixing_cauldron
+kw testworld use 210 64 153 up minecraft:water_bucket
+kw testworld use 212 64 153 up minecraft:water_bucket
 execute as @e[type=minecraft:item,tag=!kw_shot] run kill @s

@@ -1,41 +1,70 @@
-# 100 draconic/dust, injectors, stabilizer
-#area -4 296 39 323
-fill -4 64 296 36 91 323 minecraft:air
-fill 37 64 296 39 91 323 minecraft:air
-fill -4 60 296 39 62 323 minecraft:stone
-fill -4 63 296 39 63 323 minecraft:light_gray_concrete
-fill 0 64 302 39 79 302 minecraft:light_gray_concrete
-fill 0 64 302 0 79 317 minecraft:light_gray_concrete
-setblock 1 64 316 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "100.1"}','{"text": "draconic"}','{"text": "dust"}','{"text": ""}']}}
-setblock 2 64 316 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Bau Draconium"}','{"text": "im End ab"}','{"text": ""}','{"text": ""}']}}
-fill 10 64 302 10 79 317 minecraft:light_gray_concrete
-fill 4 64 306 6 65 307 minecraft:end_stone
-setblock 5 64 307 draconicevolution:end_draconium_ore
-setblock 6 65 307 draconicevolution:end_draconium_ore
-setblock 4 65 306 draconicevolution:end_draconium_ore
-setblock 11 64 316 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "100.2"}','{"text": "draconic"}','{"text": "injectors"}','{"text": ""}']}}
-setblock 12 64 316 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Stell acht"}','{"text": "Draconium-Injektoren"}','{"text": "auf"}','{"text": ""}']}}
-fill 22 64 302 22 79 317 minecraft:light_gray_concrete
-setblock 16 64 308 draconicevolution:crafting_core
-setblock 13 64 307 draconicevolution:basic_crafting_injector[facing=east]
-setblock 15 64 305 draconicevolution:basic_crafting_injector[facing=south]
-setblock 19 64 307 draconicevolution:basic_crafting_injector[facing=west]
-setblock 15 64 311 draconicevolution:basic_crafting_injector[facing=north]
-setblock 13 64 309 draconicevolution:basic_crafting_injector[facing=east]
-setblock 17 64 305 draconicevolution:basic_crafting_injector[facing=south]
-setblock 19 64 309 draconicevolution:basic_crafting_injector[facing=west]
-setblock 17 64 311 draconicevolution:basic_crafting_injector[facing=north]
-setblock 23 64 316 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "100.3"}','{"text": "draconic"}','{"text": "stabilizer"}','{"text": ""}']}}
-setblock 24 64 316 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Bau vier"}','{"text": "Stabilisatoren"}','{"text": "mit Gaia"}','{"text": ""}']}}
-fill 34 64 302 34 79 317 minecraft:light_gray_concrete
-fill 27 64 307 29 66 309 draconicevolution:draconium_block
-setblock 28 65 308 draconicevolution:energy_core
-setblock 24 64 308 minecraft:polished_deepslate
-setblock 24 65 308 draconicevolution:energy_core_stabilizer
-setblock 32 64 308 minecraft:polished_deepslate
-setblock 32 65 308 draconicevolution:energy_core_stabilizer
-setblock 28 64 304 minecraft:polished_deepslate
-setblock 28 65 304 draconicevolution:energy_core_stabilizer
-setblock 28 64 312 minecraft:polished_deepslate
-setblock 28 65 312 draconicevolution:energy_core_stabilizer
+# 100 pneumaticcraft/chamber, refinery, vortex, elevator, plastic, etching
+#area 89 273 158 302
+fill 89 64 273 122 95 302 minecraft:air
+fill 123 64 273 156 95 302 minecraft:air
+fill 157 64 273 158 95 302 minecraft:air
+fill 89 60 273 158 62 302 minecraft:stone
+fill 89 63 273 158 63 302 minecraft:light_gray_concrete
+fill 93 64 279 158 83 279 minecraft:light_gray_concrete
+fill 93 64 279 93 83 296 minecraft:light_gray_concrete
+setblock 94 64 295 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "100.1"}','{"text": "pneumaticcraft"}','{"text": "chamber"}','{"text": ""}']}}
+setblock 95 64 295 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Setz die"}','{"text": "Druckkammer"}','{"text": "zusammen"}','{"text": ""}']}}
+fill 103 64 279 103 83 296 minecraft:light_gray_concrete
+setblock 97 64 283 pneumaticcraft:pressure_chamber_wall[wall_state=none]
+setblock 97 64 284 pneumaticcraft:pressure_chamber_wall[wall_state=none]
+setblock 97 64 285 pneumaticcraft:pressure_chamber_wall[wall_state=none]
+setblock 97 65 283 pneumaticcraft:pressure_chamber_wall[wall_state=none]
+setblock 97 65 284 pneumaticcraft:pressure_chamber_interface[facing=west]
+setblock 97 65 285 pneumaticcraft:pressure_chamber_wall[wall_state=none]
+setblock 97 66 283 pneumaticcraft:pressure_chamber_wall[wall_state=none]
+setblock 97 66 284 pneumaticcraft:pressure_chamber_wall[wall_state=none]
+setblock 98 64 283 pneumaticcraft:pressure_chamber_wall[wall_state=none]
+setblock 98 64 284 pneumaticcraft:pressure_chamber_glass
+setblock 98 64 285 pneumaticcraft:pressure_chamber_wall[wall_state=none]
+setblock 98 65 283 pneumaticcraft:pressure_chamber_glass
+setblock 98 65 285 pneumaticcraft:pressure_chamber_glass
+setblock 98 66 283 pneumaticcraft:pressure_chamber_wall[wall_state=none]
+setblock 98 66 284 pneumaticcraft:pressure_chamber_glass
+setblock 98 66 285 pneumaticcraft:pressure_chamber_wall[wall_state=none]
+setblock 99 64 283 pneumaticcraft:pressure_chamber_wall[wall_state=none]
+setblock 99 64 284 pneumaticcraft:pressure_chamber_wall[wall_state=none]
+setblock 99 64 285 pneumaticcraft:pressure_chamber_wall[wall_state=none]
+setblock 99 65 283 pneumaticcraft:pressure_chamber_wall[wall_state=none]
+setblock 99 65 284 pneumaticcraft:pressure_chamber_valve[facing=east,formed=false]
+setblock 99 65 285 pneumaticcraft:pressure_chamber_wall[wall_state=none]
+setblock 99 66 283 pneumaticcraft:pressure_chamber_wall[wall_state=none]
+setblock 99 66 284 pneumaticcraft:pressure_chamber_wall[wall_state=none]
+setblock 99 66 285 pneumaticcraft:pressure_chamber_wall[wall_state=none]
+kw testworld use 97 65 285 up pneumaticcraft:pressure_chamber_wall
+execute if block 99 65 284 pneumaticcraft:pressure_chamber_valve[formed=true]
+setblock 104 64 295 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "100.2"}','{"text": "pneumaticcraft"}','{"text": "refinery"}','{"text": ""}']}}
+setblock 105 64 295 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Bau die"}','{"text": "Raffinerie"}','{"text": ""}','{"text": ""}']}}
+fill 113 64 279 113 83 296 minecraft:light_gray_concrete
+setblock 108 64 283 pneumaticcraft:refinery[facing=south]
+setblock 108 65 283 pneumaticcraft:refinery_output[facing=south]
+setblock 108 66 283 pneumaticcraft:refinery_output[facing=south]
+setblock 108 67 283 pneumaticcraft:refinery_output[facing=south]
+setblock 108 68 283 pneumaticcraft:refinery_output[facing=south]
+setblock 114 64 295 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "100.3"}','{"text": "pneumaticcraft"}','{"text": "vortex"}','{"text": ""}']}}
+setblock 115 64 295 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Bau ein"}','{"text": "Wirbelrohr"}','{"text": ""}','{"text": ""}']}}
+fill 123 64 279 123 83 296 minecraft:light_gray_concrete
+setblock 117 64 284 pneumaticcraft:pressure_tube
+setblock 118 64 284 pneumaticcraft:pressure_tube
+setblock 119 64 284 pneumaticcraft:vortex_tube[facing=east]
+setblock 124 64 295 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "100.4"}','{"text": "pneumaticcraft"}','{"text": "elevator"}','{"text": ""}']}}
+setblock 125 64 295 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Bau einen"}','{"text": "Aufzug"}','{"text": ""}','{"text": ""}']}}
+fill 133 64 279 133 83 296 minecraft:light_gray_concrete
+setblock 128 64 283 pneumaticcraft:elevator_base
+fill 128 65 283 128 68 283 pneumaticcraft:elevator_frame
+fill 129 64 283 129 67 283 minecraft:stone_bricks
+setblock 129 68 283 pneumaticcraft:elevator_caller[facing=south]
+setblock 134 64 295 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "100.5"}','{"text": "pneumaticcraft"}','{"text": "plastic"}','{"text": ""}']}}
+setblock 135 64 295 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Koch Kunststoff"}','{"text": ""}','{"text": ""}','{"text": ""}']}}
+fill 143 64 279 143 83 296 minecraft:light_gray_concrete
+setblock 138 64 284 minecraft:magma_block
+setblock 138 65 284 pneumaticcraft:thermopneumatic_processing_plant[facing=south]
+setblock 144 64 295 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "100.6"}','{"text": "pneumaticcraft"}','{"text": "etching"}','{"text": ""}']}}
+setblock 145 64 295 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Ätze die"}','{"text": "Platine"}','{"text": ""}','{"text": ""}']}}
+fill 153 64 279 153 83 296 minecraft:light_gray_concrete
+setblock 148 64 284 pneumaticcraft:etching_tank
 execute as @e[type=minecraft:item,tag=!kw_shot] run kill @s

@@ -1,23 +1,24 @@
-# 104 silent_gear/stone_anvil, crude_mixer, alloy_forge
-#area -4 317 35 342
-fill -4 64 317 35 91 342 minecraft:air
-fill -4 60 317 35 62 342 minecraft:stone
-fill -4 63 317 35 63 342 minecraft:light_gray_concrete
-fill 0 64 323 35 79 323 minecraft:light_gray_concrete
-fill 0 64 323 0 79 336 minecraft:light_gray_concrete
-setblock 1 64 335 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "104.1"}','{"text": "silent_gear"}','{"text": "stone_anvil"}','{"text": ""}']}}
-setblock 2 64 335 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Stell einen"}','{"text": "Steinamboss auf"}','{"text": ""}','{"text": ""}']}}
-fill 10 64 323 10 79 336 minecraft:light_gray_concrete
-setblock 4 64 328 silentgear:stone_anvil
-setblock 6 64 328 minecraft:smooth_stone_slab
-summon item_display 6.5 64.95 328.5 {item:{id:"silentgear:hammer",count:1},item_display:"fixed",billboard:"vertical",transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[1.0f,1.0f,1.0f]},brightness:{sky:15,block:15},Tags:["kw_shot"]}
-setblock 11 64 335 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "104.2"}','{"text": "silent_gear"}','{"text": "crude_mixer"}','{"text": ""}']}}
-setblock 12 64 335 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Bau einen Crude"}','{"text": "Mixer"}','{"text": ""}','{"text": ""}']}}
-fill 20 64 323 20 79 336 minecraft:light_gray_concrete
-setblock 15 64 328 silentgear:crude_mixer[facing=south,lit=true]
-setblock 21 64 335 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "104.3"}','{"text": "silent_gear"}','{"text": "alloy_forge"}','{"text": ""}']}}
-setblock 22 64 335 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Bau die"}','{"text": "Legierungsschmiede"}','{"text": ""}','{"text": ""}']}}
-fill 30 64 323 30 79 336 minecraft:light_gray_concrete
-setblock 24 64 328 silentgear:alloy_forge[facing=south,lit=true]
-setblock 26 64 328 silentgear:starlight_charger
+# 104 the_end/arrival
+#area 10 296 29 321
+fill 10 64 296 29 91 321 minecraft:air
+fill 10 60 296 29 62 321 minecraft:stone
+fill 10 63 296 29 63 321 minecraft:light_gray_concrete
+fill 14 64 302 29 79 302 minecraft:light_gray_concrete
+fill 14 64 302 14 79 315 minecraft:light_gray_concrete
+setblock 15 64 314 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "104"}','{"text": "the_end"}','{"text": "arrival"}','{"text": ""}']}}
+setblock 16 64 314 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Betritt das End"}','{"text": ""}','{"text": ""}','{"text": ""}']}}
+fill 24 64 302 24 79 315 minecraft:light_gray_concrete
+setblock 18 64 305 minecraft:end_portal_frame[eye=true,facing=south]
+setblock 18 64 309 minecraft:end_portal_frame[eye=true,facing=north]
+setblock 17 64 306 minecraft:end_portal_frame[eye=true,facing=east]
+setblock 21 64 306 minecraft:end_portal_frame[eye=true,facing=west]
+setblock 19 64 305 minecraft:end_portal_frame[eye=true,facing=south]
+setblock 19 64 309 minecraft:end_portal_frame[eye=true,facing=north]
+setblock 17 64 307 minecraft:end_portal_frame[eye=true,facing=east]
+setblock 21 64 307 minecraft:end_portal_frame[eye=true,facing=west]
+setblock 20 64 305 minecraft:end_portal_frame[eye=true,facing=south]
+setblock 20 64 309 minecraft:end_portal_frame[eye=true,facing=north]
+setblock 17 64 308 minecraft:end_portal_frame[eye=true,facing=east]
+setblock 21 64 308 minecraft:end_portal_frame[eye=true,facing=west]
+fill 18 64 306 20 64 308 minecraft:end_portal
 execute as @e[type=minecraft:item,tag=!kw_shot] run kill @s

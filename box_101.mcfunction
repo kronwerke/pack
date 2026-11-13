@@ -1,118 +1,49 @@
-# 101 nuclearcraft/reactor
-#area 35 296 56 323
-fill 35 64 296 56 91 323 minecraft:air
-fill 35 60 296 56 62 323 minecraft:stone
-fill 35 63 296 56 63 323 minecraft:light_gray_concrete
-fill 39 64 302 56 79 302 minecraft:light_gray_concrete
-fill 39 64 302 39 79 317 minecraft:light_gray_concrete
-setblock 40 64 316 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "101"}','{"text": "nuclearcraft"}','{"text": "reactor"}','{"text": ""}']}}
-setblock 41 64 316 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Starte den"}','{"text": "ersten"}','{"text": "Spaltreaktor"}','{"text": ""}']}}
-fill 51 64 302 51 79 317 minecraft:light_gray_concrete
-setblock 43 64 306 nuclearcraft:fission_reactor_casing
-setblock 43 64 307 nuclearcraft:fission_reactor_casing
-setblock 43 64 308 nuclearcraft:fission_reactor_casing
-setblock 43 64 309 nuclearcraft:fission_reactor_casing
-setblock 43 64 310 nuclearcraft:fission_reactor_casing
-setblock 43 65 306 nuclearcraft:fission_reactor_casing
-setblock 43 65 307 nuclearcraft:fission_reactor_casing
-setblock 43 65 308 nuclearcraft:fission_reactor_casing
-setblock 43 65 309 nuclearcraft:fission_reactor_casing
-setblock 43 65 310 nuclearcraft:fission_reactor_casing
-setblock 43 66 306 nuclearcraft:fission_reactor_casing
-setblock 43 66 307 nuclearcraft:fission_reactor_casing
-setblock 43 66 308 nuclearcraft:fission_reactor_casing
-setblock 43 66 309 nuclearcraft:fission_reactor_casing
-setblock 43 66 310 nuclearcraft:fission_reactor_casing
-setblock 43 67 306 nuclearcraft:fission_reactor_casing
-setblock 43 67 307 nuclearcraft:fission_reactor_casing
-setblock 43 67 308 nuclearcraft:fission_reactor_casing
-setblock 43 67 309 nuclearcraft:fission_reactor_casing
-setblock 43 67 310 nuclearcraft:fission_reactor_casing
-setblock 43 68 306 nuclearcraft:fission_reactor_casing
-setblock 43 68 307 nuclearcraft:fission_reactor_casing
-setblock 43 68 308 nuclearcraft:fission_reactor_casing
-setblock 43 68 309 nuclearcraft:fission_reactor_casing
-setblock 43 68 310 nuclearcraft:fission_reactor_casing
-setblock 44 64 306 nuclearcraft:fission_reactor_casing
-setblock 44 64 307 nuclearcraft:fission_reactor_casing
-setblock 44 64 308 nuclearcraft:fission_reactor_casing
-setblock 44 64 309 nuclearcraft:fission_reactor_casing
-setblock 44 64 310 nuclearcraft:fission_reactor_casing
-setblock 44 65 306 nuclearcraft:fission_reactor_casing
-setblock 44 65 310 nuclearcraft:fission_reactor_glass
-setblock 44 66 306 nuclearcraft:fission_reactor_casing
-setblock 44 66 310 nuclearcraft:fission_reactor_glass
-setblock 44 67 306 nuclearcraft:fission_reactor_casing
-setblock 44 67 310 nuclearcraft:fission_reactor_glass
-setblock 44 68 306 nuclearcraft:fission_reactor_casing
-setblock 44 68 307 nuclearcraft:fission_reactor_casing
-setblock 44 68 308 nuclearcraft:fission_reactor_casing
-setblock 44 68 309 nuclearcraft:fission_reactor_casing
-setblock 44 68 310 nuclearcraft:fission_reactor_casing
-setblock 45 64 306 nuclearcraft:fission_reactor_casing
-setblock 45 64 307 nuclearcraft:fission_reactor_casing
-setblock 45 64 308 nuclearcraft:fission_reactor_casing
-setblock 45 64 309 nuclearcraft:fission_reactor_casing
-setblock 45 64 310 nuclearcraft:fission_reactor_casing
-setblock 45 65 306 nuclearcraft:fission_reactor_casing
-setblock 45 65 310 nuclearcraft:fission_reactor_glass
-setblock 45 66 306 nuclearcraft:fission_reactor_casing
-setblock 45 66 310 nuclearcraft:fission_reactor_glass
-setblock 45 67 306 nuclearcraft:fission_reactor_casing
-setblock 45 67 310 nuclearcraft:fission_reactor_glass
-setblock 45 68 306 nuclearcraft:fission_reactor_casing
-setblock 45 68 307 nuclearcraft:fission_reactor_casing
-setblock 45 68 308 nuclearcraft:fission_reactor_casing
-setblock 45 68 309 nuclearcraft:fission_reactor_casing
-setblock 45 68 310 nuclearcraft:fission_reactor_casing
-setblock 46 64 306 nuclearcraft:fission_reactor_casing
-setblock 46 64 307 nuclearcraft:fission_reactor_casing
-setblock 46 64 308 nuclearcraft:fission_reactor_casing
-setblock 46 64 309 nuclearcraft:fission_reactor_casing
-setblock 46 64 310 nuclearcraft:fission_reactor_casing
-setblock 46 65 306 nuclearcraft:fission_reactor_casing
-setblock 46 65 310 nuclearcraft:fission_reactor_glass
-setblock 46 66 306 nuclearcraft:fission_reactor_casing
-setblock 46 66 310 nuclearcraft:fission_reactor_glass
-setblock 46 67 306 nuclearcraft:fission_reactor_casing
-setblock 46 67 310 nuclearcraft:fission_reactor_glass
-setblock 46 68 306 nuclearcraft:fission_reactor_casing
-setblock 46 68 307 nuclearcraft:fission_reactor_casing
-setblock 46 68 308 nuclearcraft:fission_reactor_casing
-setblock 46 68 309 nuclearcraft:fission_reactor_casing
-setblock 46 68 310 nuclearcraft:fission_reactor_casing
-setblock 47 64 306 nuclearcraft:fission_reactor_casing
-setblock 47 64 307 nuclearcraft:fission_reactor_casing
-setblock 47 64 308 nuclearcraft:fission_reactor_casing
-setblock 47 64 309 nuclearcraft:fission_reactor_casing
-setblock 47 64 310 nuclearcraft:fission_reactor_casing
-setblock 47 65 306 nuclearcraft:fission_reactor_casing
-setblock 47 65 307 nuclearcraft:fission_reactor_casing
-setblock 47 65 308 nuclearcraft:fission_reactor_casing
-setblock 47 65 309 nuclearcraft:fission_reactor_casing
-setblock 47 65 310 nuclearcraft:fission_reactor_casing
-setblock 47 66 306 nuclearcraft:fission_reactor_casing
-setblock 47 66 307 nuclearcraft:fission_reactor_casing
-setblock 47 66 308 nuclearcraft:fission_reactor_casing
-setblock 47 66 309 nuclearcraft:fission_reactor_casing
-setblock 47 66 310 nuclearcraft:fission_reactor_casing
-setblock 47 67 306 nuclearcraft:fission_reactor_casing
-setblock 47 67 307 nuclearcraft:fission_reactor_casing
-setblock 47 67 308 nuclearcraft:fission_reactor_casing
-setblock 47 67 309 nuclearcraft:fission_reactor_casing
-setblock 47 67 310 nuclearcraft:fission_reactor_casing
-setblock 47 68 306 nuclearcraft:fission_reactor_casing
-setblock 47 68 307 nuclearcraft:fission_reactor_casing
-setblock 47 68 308 nuclearcraft:fission_reactor_casing
-setblock 47 68 309 nuclearcraft:fission_reactor_casing
-setblock 47 68 310 nuclearcraft:fission_reactor_casing
-setblock 44 65 310 nuclearcraft:fission_reactor_controller[facing=south]
-setblock 46 65 310 nuclearcraft:fission_reactor_port
-setblock 45 66 308 nuclearcraft:fission_reactor_solid_fuel_cell
-setblock 44 66 308 nuclearcraft:graphite_block
-setblock 46 66 308 nuclearcraft:graphite_block
-setblock 45 67 308 nuclearcraft:water_heat_sink
-setblock 45 65 308 nuclearcraft:water_heat_sink
-setblock 45 66 309 nuclearcraft:water_heat_sink
-setblock 45 66 307 nuclearcraft:water_heat_sink
+# 101 pneumaticcraft_advanced/first_run, electrostatic, thermal, adv_air, security_station, spawner_extractor, pressurized_spawner
+#area 154 273 233 298
+fill 154 64 273 198 91 298 minecraft:air
+fill 199 64 273 233 91 298 minecraft:air
+fill 154 60 273 233 62 298 minecraft:stone
+fill 154 63 273 233 63 298 minecraft:light_gray_concrete
+fill 158 64 279 233 79 279 minecraft:light_gray_concrete
+fill 158 64 279 158 79 292 minecraft:light_gray_concrete
+setblock 159 64 291 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "101.1"}','{"text": "pneumaticcraft_advanced"}','{"text": "first_run"}','{"text": ""}']}}
+setblock 160 64 291 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Lass die Straße"}','{"text": "laufen"}','{"text": ""}','{"text": ""}']}}
+fill 168 64 279 168 79 292 minecraft:light_gray_concrete
+setblock 163 64 284 pneumaticcraft:assembly_platform
+setblock 162 64 284 pneumaticcraft:assembly_drill
+setblock 164 64 284 pneumaticcraft:assembly_laser
+setblock 163 64 283 pneumaticcraft:assembly_io_unit_import
+setblock 163 64 285 pneumaticcraft:assembly_io_unit_export
+setblock 163 64 282 minecraft:chest[facing=south,type=single,waterlogged=false]
+setblock 163 64 286 minecraft:chest[facing=south,type=single,waterlogged=false]
+setblock 165 64 284 pneumaticcraft:assembly_controller
+setblock 169 64 291 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "101.2"}','{"text": "pneumaticcraft_advanced"}','{"text": "electrostatic"}','{"text": ""}']}}
+setblock 170 64 291 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Bau einen"}','{"text": "Electrostatic"}','{"text": "Compressor"}','{"text": ""}']}}
+fill 178 64 279 178 79 292 minecraft:light_gray_concrete
+setblock 173 64 284 pneumaticcraft:electrostatic_compressor
+fill 173 65 284 173 68 284 minecraft:iron_bars
+setblock 173 69 284 minecraft:lightning_rod[facing=up,powered=false]
+setblock 179 64 291 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "101.3"}','{"text": "pneumaticcraft_advanced"}','{"text": "thermal"}','{"text": ""}']}}
+setblock 180 64 291 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Bau einen"}','{"text": "Thermal"}','{"text": "Compressor"}','{"text": ""}']}}
+fill 188 64 279 188 79 292 minecraft:light_gray_concrete
+setblock 182 64 284 minecraft:magma_block
+setblock 183 64 284 pneumaticcraft:thermal_compressor
+setblock 184 64 284 minecraft:blue_ice
+setblock 189 64 291 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "101.4"}','{"text": "pneumaticcraft_advanced"}','{"text": "adv_air"}','{"text": ""}']}}
+setblock 190 64 291 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Bau einen"}','{"text": "Advanced Air"}','{"text": "Compressor"}','{"text": ""}']}}
+fill 198 64 279 198 79 292 minecraft:light_gray_concrete
+setblock 193 64 284 pneumaticcraft:advanced_air_compressor[facing=south,on=true]
+setblock 199 64 291 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "101.5"}','{"text": "pneumaticcraft_advanced"}','{"text": "security_station"}','{"text": ""}']}}
+setblock 200 64 291 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Bau eine"}','{"text": "Security"}','{"text": "Station"}','{"text": ""}']}}
+fill 208 64 279 208 79 292 minecraft:light_gray_concrete
+setblock 203 64 284 pneumaticcraft:security_station[facing=south]
+setblock 209 64 291 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "101.6"}','{"text": "pneumaticcraft_advanced"}','{"text": "spawner_extractor"}','{"text": ""}']}}
+setblock 210 64 291 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Bau einen"}','{"text": "Spawner"}','{"text": "Extractor"}','{"text": ""}']}}
+fill 218 64 279 218 79 292 minecraft:light_gray_concrete
+setblock 213 64 284 minecraft:spawner
+setblock 213 65 284 pneumaticcraft:spawner_extractor
+setblock 219 64 291 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "101.7"}','{"text": "pneumaticcraft_advanced"}','{"text": "pressurized_spawner"}','{"text": ""}']}}
+setblock 220 64 291 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Bau einen"}','{"text": "Pressurized"}','{"text": "Spawner"}','{"text": ""}']}}
+fill 228 64 279 228 79 292 minecraft:light_gray_concrete
+setblock 223 64 284 pneumaticcraft:pressurized_spawner
 execute as @e[type=minecraft:item,tag=!kw_shot] run kill @s

@@ -1,22 +1,21 @@
-# 024 mekanism_ores/quintupling
-#area 59 63 81 88
-fill 59 64 63 81 91 88 minecraft:air
-fill 59 60 63 81 62 88 minecraft:stone
-fill 59 63 63 81 63 88 minecraft:light_gray_concrete
-fill 63 64 69 81 79 69 minecraft:light_gray_concrete
-fill 63 64 69 63 79 82 minecraft:light_gray_concrete
-setblock 64 64 81 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "024"}','{"text": "mekanism_ores"}','{"text": "quintupling"}','{"text": ""}']}}
-setblock 65 64 81 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "the full eight"}','{"text": "machine ladder"}','{"text": "with gas tubes"}','{"text": ""}']}}
-fill 76 64 69 76 79 82 minecraft:light_gray_concrete
-setblock 65 64 75 minecraft:chest[facing=south]{Items:[]}
-setblock 66 64 75 mekanism:chemical_dissolution_chamber[facing=south]
-setblock 67 64 75 mekanism:chemical_washer[facing=south]
-setblock 68 64 75 mekanism:chemical_crystallizer[facing=south]
-setblock 69 64 75 mekanism:chemical_injection_chamber[facing=south]
-setblock 70 64 75 mekanism:purification_chamber[facing=south]
-setblock 71 64 75 mekanism:crusher[facing=south]
-setblock 72 64 75 mekanism:enrichment_chamber[facing=south]
-setblock 73 64 75 mekanism:energized_smelter[facing=south]
-setblock 74 64 75 minecraft:chest[facing=south]{Items:[]}
-fill 66 65 75 68 65 75 mekanism:basic_pressurized_tube
+# 024 mekanism_ores/line2
+#area 26 63 46 88
+fill 26 64 63 46 91 88 minecraft:air
+fill 26 60 63 46 62 88 minecraft:stone
+fill 26 63 63 46 63 88 minecraft:light_gray_concrete
+fill 30 64 69 46 79 69 minecraft:light_gray_concrete
+fill 30 64 69 30 79 82 minecraft:light_gray_concrete
+setblock 31 64 81 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "024"}','{"text": "mekanism_ores"}','{"text": "line2"}','{"text": ""}']}}
+setblock 32 64 81 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "chest,"}','{"text": "transporters,"}','{"text": "enrichment"}','{"text": "chamber,"}']}}
+setblock 33 64 81 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "smelter, chest,"}','{"text": "cables"}','{"text": ""}','{"text": ""}']}}
+fill 41 64 69 41 79 82 minecraft:light_gray_concrete
+setblock 32 64 74 minecraft:chest[facing=south]{Items:[]}
+setblock 34 64 74 mekanism:enrichment_chamber[facing=south,active=false]
+setblock 36 64 74 mekanism:energized_smelter[facing=south,active=false]
+setblock 38 64 74 minecraft:chest[facing=south]{Items:[]}
+setblock 33 64 74 mekanism:basic_logistical_transporter
+setblock 35 64 74 mekanism:basic_logistical_transporter
+setblock 37 64 74 mekanism:basic_logistical_transporter
+fill 34 64 73 37 64 73 mekanism:basic_universal_cable
+setblock 38 64 73 mekanism:basic_energy_cube[facing=south]
 execute as @e[type=minecraft:item,tag=!kw_shot] run kill @s

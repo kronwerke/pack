@@ -1,21 +1,14 @@
-# 054 gaia/arena
-#area 169 105 194 136
-fill 169 64 105 194 91 136 minecraft:air
-fill 169 60 105 194 62 136 minecraft:stone
-fill 169 63 105 194 63 136 minecraft:light_gray_concrete
-fill 173 64 111 194 79 111 minecraft:light_gray_concrete
-fill 173 64 111 173 79 130 minecraft:light_gray_concrete
-setblock 174 64 129 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "054"}','{"text": "gaia"}','{"text": "arena"}','{"text": ""}']}}
-setblock 175 64 129 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "beacon with"}','{"text": "four pylons"}','{"text": "from above"}','{"text": ""}']}}
-fill 189 64 111 189 79 130 minecraft:light_gray_concrete
-fill 180 63 118 182 63 120 minecraft:iron_block
-setblock 181 64 119 minecraft:beacon
-setblock 177 64 115 minecraft:quartz_block
-setblock 177 65 115 botania:gaia_pylon
-setblock 177 64 123 minecraft:quartz_block
-setblock 177 65 123 botania:gaia_pylon
-setblock 185 64 115 minecraft:quartz_block
-setblock 185 65 115 botania:gaia_pylon
-setblock 185 64 123 minecraft:quartz_block
-setblock 185 65 123 botania:gaia_pylon
+# 054 botania_runes/mana_pearl
+#area 107 105 126 130
+fill 107 64 105 126 91 130 minecraft:air
+fill 107 60 105 126 62 130 minecraft:stone
+fill 107 63 105 126 63 130 minecraft:light_gray_concrete
+fill 111 64 111 126 79 111 minecraft:light_gray_concrete
+fill 111 64 111 111 79 124 minecraft:light_gray_concrete
+setblock 112 64 123 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "054"}','{"text": "botania_runes"}','{"text": "mana_pearl"}','{"text": ""}']}}
+setblock 113 64 123 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "a pool on a"}','{"text": "brass casing"}','{"text": "with a pearl in"}','{"text": "it"}']}}
+fill 121 64 111 121 79 124 minecraft:light_gray_concrete
+setblock 116 64 116 create:brass_casing
+setblock 116 65 116 botania:mana_pool{mana:1000000}
+summon item 116.5 66 116.5 {Item:{id:"minecraft:ender_pearl",count:1},PickupDelay:32767,Age:-32768,Tags:["kw_shot"]}
 execute as @e[type=minecraft:item,tag=!kw_shot] run kill @s

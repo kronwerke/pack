@@ -36,35 +36,35 @@
   ],
   [
    "mekanism_advanced/evap",
-   "execute in kronwerke:testworld if data block 51 66 56 inventory_id"
+   "execute in kronwerke:testworld if data block 67 66 56 inventory_id"
   ],
   [
    "mekanism_advanced/boiler",
-   "execute in kronwerke:testworld if data block 69 66 56 inventory_id"
+   "execute in kronwerke:testworld if data block 85 66 56 inventory_id"
   ],
   [
    "mekanism_advanced/turbine",
-   "execute in kronwerke:testworld if data block 86 66 56 inventory_id"
+   "execute in kronwerke:testworld if data block 102 66 56 inventory_id"
   ],
   [
    "mekanism_elite/induction_matrix",
-   "execute in kronwerke:testworld if data block 103 65 56 inventory_id"
+   "execute in kronwerke:testworld if data block 119 65 56 inventory_id"
   ],
   [
    "mekanism_elite/fusion",
-   "execute in kronwerke:testworld if data block 117 68 56 inventory_id"
+   "execute in kronwerke:testworld if data block 133 68 56 inventory_id"
   ],
   [
    "antimatter/sps",
-   "execute in kronwerke:testworld if data block 170 67 60 inventory_id"
+   "execute in kronwerke:testworld if data block 186 67 60 inventory_id"
   ],
   [
    "powah/reactor",
-   "execute in kronwerke:testworld if block 16 67 205 powah:reactor_starter"
+   "execute in kronwerke:testworld if block 26 67 205 powah:reactor_starter"
   ],
   [
    "storage/vault_big",
-   "execute in kronwerke:testworld if block 13 64 222 create:item_vault[large=true]"
+   "execute in kronwerke:testworld if block 23 64 222 create:item_vault[large=true]"
   ],
   [
    "list_dimensions/d_mining",

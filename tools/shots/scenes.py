@@ -1236,3 +1236,88 @@ def _(b):
         b.b(cx + dx, 0, cz + dz, f"draconicevolution:wyvern_crafting_injector[facing={facing}]")
         b.use(cx + dx, 0, cz + dz, "up", item)
     b.pitch = 44.0
+
+
+# ===================================================================================
+# Fifth batch
+
+@scene("eidolon/stone_altar")
+def _(b):
+    # three stone altars in a row, the unholy effigy on the middle one, goblet and candle beside it
+    b.f(3, 0, 4, 5, 0, 4, "eidolon_repraised:stone_altar")
+    b.b(4, 1, 4, "eidolon_repraised:unholy_effigy[facing=south]")
+    b.b(3, 1, 4, "eidolon_repraised:goblet")
+    b.b(5, 1, 4, "eidolon_repraised:candle")
+
+
+@scene("hexerei/cauldron")
+def _(b):
+    # two mixing cauldrons with water; the right one is heated, it stands over lava set into the floor
+    b.b(3, 0, 4, "hexerei:mixing_cauldron")
+    b.b(5, -1, 4, "minecraft:lava")
+    b.b(5, 0, 4, "hexerei:mixing_cauldron")
+    b.use(3, 0, 4, "up", "minecraft:water_bucket")
+    b.use(5, 0, 4, "up", "minecraft:water_bucket")
+
+
+@scene("hexerei/sage_plate")
+def _(b):
+    # a bundle of dried sage on the plate, lit
+    b.b(4, 0, 4, "hexerei:sage_burning_plate[facing=south]")
+    b.use(4, 0, 4, "up", "hexerei:dried_sage_bundle")
+    b.use(4, 0, 4, "up", "minecraft:flint_and_steel")
+
+
+@scene("food/f_pot")
+def _(b):
+    # the cooking pot on a lit stove, a cutting board on the counter beside it
+    b.b(4, 0, 4, "farmersdelight:stove[facing=south,lit=true]")
+    b.b(4, 1, 4, "farmersdelight:cooking_pot[facing=south,support=none]")
+    b.b(5, 0, 4, "minecraft:oak_planks")
+    b.b(5, 1, 4, "farmersdelight:cutting_board[facing=south]")
+
+
+@scene("powah/thermo")
+def _(b):
+    # the thermo generator stands on its heat source
+    b.b(4, 0, 4, "minecraft:magma_block")
+    b.b(4, 1, 4, "powah:thermo_generator_starter")
+
+
+@scene("storage/controller")
+def _(b):
+    # the controller, and barrels that touch it or each other: one store
+    b.b(4, 0, 4, "sophisticatedstorage:controller")
+    for x, y in ((2, 0), (3, 0), (5, 0), (3, 1), (4, 1), (5, 1)):
+        b.b(x, y, 4, "sophisticatedstorage:barrel[facing=south,flat_top=false]")
+
+
+@scene("list_power/steam_engine", w=10)
+def _(b):
+    # four blaze burners, the tank on them, a steam engine on the tank's front with its shaft
+    for x in (3, 4):
+        for z in (3, 4):
+            b.b(x, 0, z, "create:blaze_burner[blaze=smouldering]")
+            b.use(x, 0, z, "up", "create:creative_blaze_cake")
+    b.f(3, 1, 3, 4, 3, 4, "create:fluid_tank[bottom=false,shape=window,top=false]")
+    b.b(3, 2, 6, "create:shaft[axis=x]")
+    b.b(3, 2, 5, "create:steam_engine[face=wall,facing=south,waterlogged=false]")
+
+
+@scene("mekanism_ores/tripling", w=10)
+def _(b):
+    # purification chamber, crusher, enrichment chamber and smelter side by side, each handing
+    # on to the next; behind the purification chamber the separator with its oxygen tube, the
+    # pump over water beside the separator; a cable behind the other three from an energy cube
+    z = 5
+    b.c(1, 0, z, [], frame=True)
+    for x, name in ((2, "purification_chamber"), (3, "crusher"), (4, "enrichment_chamber"), (5, "energized_smelter")):
+        b.b(x, 0, z, f"mekanism:{name}[facing=south,active=false]")
+    b.c(6, 0, z, [], frame=True)
+    b.b(2, 0, z - 1, "mekanism:basic_pressurized_tube")
+    b.b(2, 0, z - 2, "mekanism:electrolytic_separator[facing=south]")
+    b.b(3, 0, z - 2, "mekanism:basic_mechanical_pipe")
+    b.b(4, -1, z - 2, "minecraft:water")
+    b.b(4, 0, z - 2, "mekanism:electric_pump[facing=south]")
+    b.f(3, 0, z - 1, 5, 0, z - 1, "mekanism:basic_universal_cable")
+    b.b(6, 0, z - 1, "mekanism:basic_energy_cube[facing=south]")

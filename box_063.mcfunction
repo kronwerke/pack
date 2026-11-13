@@ -1,18 +1,13 @@
-# 063 powah/orb, reactor
-#area -4 193 25 218
-fill -4 64 193 25 93 218 minecraft:air
-fill -4 60 193 25 62 218 minecraft:stone
-fill -4 63 193 25 63 218 minecraft:light_gray_concrete
-fill 0 64 199 25 81 199 minecraft:light_gray_concrete
-fill 0 64 199 0 81 212 minecraft:light_gray_concrete
-setblock 1 64 211 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "063.1"}','{"text": "powah"}','{"text": "orb"}','{"text": ""}']}}
-setblock 2 64 211 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Bau die"}','{"text": "Energizing Orb"}','{"text": ""}','{"text": ""}']}}
-fill 10 64 199 10 81 212 minecraft:light_gray_concrete
-setblock 5 64 204 powah:energizing_orb[facing=down]
-setblock 3 64 204 powah:energizing_rod_starter[facing=down]
-setblock 7 64 204 powah:energizing_rod_starter[facing=down]
-setblock 5 64 202 powah:energizing_rod_starter[facing=down]
-setblock 11 64 211 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "063.2"}','{"text": "powah"}','{"text": "reactor"}','{"text": ""}']}}
-setblock 12 64 211 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Bau einen"}','{"text": "Reaktor"}','{"text": ""}','{"text": ""}']}}
-fill 20 64 199 20 81 212 minecraft:light_gray_concrete
-setblock 15 64 204 powah:reactor_starter[core=true]
+# 063 immersive/kiln
+#area 51 158 70 183
+fill 51 64 158 70 91 183 minecraft:air
+fill 51 60 158 70 62 183 minecraft:stone
+fill 51 63 158 70 63 183 minecraft:light_gray_concrete
+fill 55 64 164 70 79 164 minecraft:light_gray_concrete
+fill 55 64 164 55 79 177 minecraft:light_gray_concrete
+setblock 56 64 176 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "063"}','{"text": "immersive"}','{"text": "kiln"}','{"text": ""}']}}
+setblock 57 64 176 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "alloy kiln"}','{"text": "making electrum"}','{"text": ""}','{"text": ""}']}}
+fill 65 64 164 65 79 177 minecraft:light_gray_concrete
+place template immersiveengineering:multiblocks/alloy_smelter 59 64 167 none
+kw testworld use 60 65 168 south immersiveengineering:hammer
+execute unless block 60 65 168 immersiveengineering:alloybrick

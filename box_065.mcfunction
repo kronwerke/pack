@@ -1,37 +1,41 @@
-# 065 pneumaticcraft/chamber
-#area -4 231 15 256
-fill -4 64 231 15 91 256 minecraft:air
-fill -4 60 231 15 62 256 minecraft:stone
-fill -4 63 231 15 63 256 minecraft:light_gray_concrete
-fill 0 64 237 15 79 237 minecraft:light_gray_concrete
-fill 0 64 237 0 79 250 minecraft:light_gray_concrete
-setblock 1 64 249 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "065"}','{"text": "pneumaticcraft"}','{"text": "chamber"}','{"text": ""}']}}
-setblock 2 64 249 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Setz die"}','{"text": "Druckkammer"}','{"text": "zusammen"}','{"text": ""}']}}
-fill 10 64 237 10 79 250 minecraft:light_gray_concrete
-setblock 4 64 241 pneumaticcraft:pressure_chamber_wall[wall_state=none]
-setblock 4 64 242 pneumaticcraft:pressure_chamber_wall[wall_state=none]
-setblock 4 64 243 pneumaticcraft:pressure_chamber_wall[wall_state=none]
-setblock 4 65 241 pneumaticcraft:pressure_chamber_wall[wall_state=none]
-setblock 4 65 242 pneumaticcraft:pressure_chamber_interface[facing=west]
-setblock 4 65 243 pneumaticcraft:pressure_chamber_wall[wall_state=none]
-setblock 4 66 241 pneumaticcraft:pressure_chamber_wall[wall_state=none]
-setblock 4 66 242 pneumaticcraft:pressure_chamber_wall[wall_state=none]
-setblock 5 64 241 pneumaticcraft:pressure_chamber_wall[wall_state=none]
-setblock 5 64 242 pneumaticcraft:pressure_chamber_glass
-setblock 5 64 243 pneumaticcraft:pressure_chamber_wall[wall_state=none]
-setblock 5 65 241 pneumaticcraft:pressure_chamber_glass
-setblock 5 65 243 pneumaticcraft:pressure_chamber_glass
-setblock 5 66 241 pneumaticcraft:pressure_chamber_wall[wall_state=none]
-setblock 5 66 242 pneumaticcraft:pressure_chamber_glass
-setblock 5 66 243 pneumaticcraft:pressure_chamber_wall[wall_state=none]
-setblock 6 64 241 pneumaticcraft:pressure_chamber_wall[wall_state=none]
-setblock 6 64 242 pneumaticcraft:pressure_chamber_wall[wall_state=none]
-setblock 6 64 243 pneumaticcraft:pressure_chamber_wall[wall_state=none]
-setblock 6 65 241 pneumaticcraft:pressure_chamber_wall[wall_state=none]
-setblock 6 65 242 pneumaticcraft:pressure_chamber_valve[facing=east,formed=false]
-setblock 6 65 243 pneumaticcraft:pressure_chamber_wall[wall_state=none]
-setblock 6 66 241 pneumaticcraft:pressure_chamber_wall[wall_state=none]
-setblock 6 66 242 pneumaticcraft:pressure_chamber_wall[wall_state=none]
-setblock 6 66 243 pneumaticcraft:pressure_chamber_wall[wall_state=none]
-kw testworld use 4 65 243 up pneumaticcraft:pressure_chamber_wall
-execute if block 6 65 242 pneumaticcraft:pressure_chamber_valve[formed=true]
+# 065 immersive/connectors, capacitor, thermoelectric
+#area 115 158 158 183
+fill 115 64 158 158 91 183 minecraft:air
+fill 115 60 158 158 62 183 minecraft:stone
+fill 115 63 158 158 63 183 minecraft:light_gray_concrete
+fill 119 64 164 158 79 164 minecraft:light_gray_concrete
+fill 119 64 164 119 79 177 minecraft:light_gray_concrete
+setblock 120 64 176 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "065.1"}','{"text": "immersive"}','{"text": "connectors"}','{"text": ""}']}}
+setblock 121 64 176 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "LV wires on"}','{"text": "posts, the"}','{"text": "accumulator,"}','{"text": "the generator"}']}}
+setblock 122 64 176 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "between magma"}','{"text": "and blue ice, a"}','{"text": "transformer"}','{"text": "with LV and MV"}']}}
+fill 131 64 164 131 79 177 minecraft:light_gray_concrete
+setblock 122 64 169 immersiveengineering:capacitor_lv
+setblock 128 64 169 immersiveengineering:capacitor_lv
+fill 125 64 169 125 66 169 immersiveengineering:treated_fence
+kw testworld use 122 64 169 up immersiveengineering:connector_lv
+kw testworld use 128 64 169 up immersiveengineering:connector_lv
+kw testworld use 125 66 169 up immersiveengineering:connector_lv_relay
+kw testworld use 122 65 169 south immersiveengineering:wirecoil_copper
+kw testworld use 125 67 169 south immersiveengineering:wirecoil_copper
+kw testworld use 125 67 169 south immersiveengineering:wirecoil_copper
+kw testworld use 128 65 169 south immersiveengineering:wirecoil_copper
+setblock 132 64 176 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "065.2"}','{"text": "immersive"}','{"text": "capacitor"}','{"text": ""}']}}
+setblock 133 64 176 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Bau einen"}','{"text": "LV-Kondensator"}','{"text": ""}','{"text": ""}']}}
+fill 143 64 164 143 79 177 minecraft:light_gray_concrete
+setblock 134 64 169 immersiveengineering:capacitor_lv
+setblock 140 64 169 immersiveengineering:capacitor_lv
+fill 137 64 169 137 66 169 immersiveengineering:treated_fence
+kw testworld use 134 64 169 up immersiveengineering:connector_lv
+kw testworld use 140 64 169 up immersiveengineering:connector_lv
+kw testworld use 137 66 169 up immersiveengineering:connector_lv_relay
+kw testworld use 134 65 169 south immersiveengineering:wirecoil_copper
+kw testworld use 137 67 169 south immersiveengineering:wirecoil_copper
+kw testworld use 137 67 169 south immersiveengineering:wirecoil_copper
+kw testworld use 140 65 169 south immersiveengineering:wirecoil_copper
+setblock 144 64 176 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "065.3"}','{"text": "immersive"}','{"text": "thermoelectric"}','{"text": ""}']}}
+setblock 145 64 176 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Bau einen"}','{"text": "Thermoelektrischen"}','{"text": "Generator"}','{"text": ""}']}}
+fill 153 64 164 153 79 177 minecraft:light_gray_concrete
+setblock 147 64 169 minecraft:magma_block
+setblock 148 64 169 immersiveengineering:thermoelectric_generator
+setblock 149 64 169 minecraft:blue_ice
+kw testworld use 148 64 169 up immersiveengineering:connector_lv

@@ -1,45 +1,28 @@
-# 045 occultism/aviar
-#area 11 123 34 152
-fill 11 64 123 34 91 152 minecraft:air
-fill 11 60 123 34 62 152 minecraft:stone
-fill 11 63 123 34 63 152 minecraft:light_gray_concrete
-fill 15 64 129 34 79 129 minecraft:light_gray_concrete
-fill 15 64 129 15 79 146 minecraft:light_gray_concrete
-setblock 16 64 145 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "045"}','{"text": "occultism"}','{"text": "aviar"}','{"text": ""}']}}
-setblock 17 64 145 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "finished"}','{"text": "Aviar\'s Circle"}','{"text": "with golden"}','{"text": "bowl, candles"}']}}
-setblock 18 64 145 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "and sacrificial"}','{"text": "bowls"}','{"text": ""}','{"text": ""}']}}
-fill 29 64 129 29 79 146 minecraft:light_gray_concrete
-fill 17 63 131 27 63 141 minecraft:smooth_basalt
-setblock 19 64 135 occultism:chalk_glyph_white[facing=south,sign=0]
-setblock 19 64 136 occultism:chalk_glyph_white[facing=south,sign=5]
-setblock 19 64 137 occultism:chalk_glyph_white[facing=south,sign=10]
-setblock 20 64 134 occultism:chalk_glyph_white[facing=south,sign=2]
-setblock 20 64 136 occultism:chalk_glyph_white[facing=south,sign=7]
-setblock 20 64 138 occultism:chalk_glyph_white[facing=south,sign=12]
-setblock 21 64 133 occultism:chalk_glyph_white[facing=south,sign=4]
-setblock 21 64 135 minecraft:white_candle[candles=1,lit=true]
-setblock 21 64 136 occultism:chalk_glyph_white[facing=south,sign=9]
-setblock 21 64 137 minecraft:white_candle[candles=1,lit=true]
-setblock 21 64 139 occultism:chalk_glyph_white[facing=south,sign=1]
-setblock 22 64 133 occultism:chalk_glyph_white[facing=south,sign=6]
-setblock 22 64 134 occultism:chalk_glyph_white[facing=south,sign=11]
-setblock 22 64 135 occultism:chalk_glyph_white[facing=south,sign=3]
-setblock 22 64 136 occultism:golden_sacrificial_bowl
-setblock 22 64 137 occultism:chalk_glyph_white[facing=south,sign=8]
-setblock 22 64 138 occultism:chalk_glyph_white[facing=south,sign=0]
-setblock 22 64 139 occultism:chalk_glyph_white[facing=south,sign=5]
-setblock 23 64 133 occultism:chalk_glyph_white[facing=south,sign=10]
-setblock 23 64 135 minecraft:white_candle[candles=1,lit=true]
-setblock 23 64 136 occultism:chalk_glyph_white[facing=south,sign=2]
-setblock 23 64 137 minecraft:white_candle[candles=1,lit=true]
-setblock 23 64 139 occultism:chalk_glyph_white[facing=south,sign=7]
-setblock 24 64 134 occultism:chalk_glyph_white[facing=south,sign=12]
-setblock 24 64 136 occultism:chalk_glyph_white[facing=south,sign=4]
-setblock 24 64 138 occultism:chalk_glyph_white[facing=south,sign=9]
-setblock 25 64 135 occultism:chalk_glyph_white[facing=south,sign=1]
-setblock 25 64 136 occultism:chalk_glyph_white[facing=south,sign=6]
-setblock 25 64 137 occultism:chalk_glyph_white[facing=south,sign=11]
-setblock 22 64 131 occultism:sacrificial_bowl[facing=up]
-setblock 27 64 136 occultism:sacrificial_bowl[facing=up]
-setblock 22 64 141 occultism:sacrificial_bowl[facing=up]
-setblock 17 64 136 occultism:sacrificial_bowl[facing=up]
+# 045 botania_runes/terrasteel
+#area 154 86 175 111
+fill 154 64 86 175 91 111 minecraft:air
+fill 154 60 86 175 62 111 minecraft:stone
+fill 154 63 86 175 63 111 minecraft:light_gray_concrete
+fill 158 64 92 175 79 92 minecraft:light_gray_concrete
+fill 158 64 92 158 79 105 minecraft:light_gray_concrete
+setblock 159 64 104 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "045"}','{"text": "botania_runes"}','{"text": "terrasteel"}','{"text": ""}']}}
+setblock 160 64 104 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "the plate mid"}','{"text": "craft"}','{"text": ""}','{"text": ""}']}}
+fill 170 64 92 170 79 105 minecraft:light_gray_concrete
+setblock 163 64 96 botania:livingrock
+setblock 163 64 97 minecraft:lapis_block
+setblock 163 64 98 botania:livingrock
+setblock 164 64 96 minecraft:lapis_block
+setblock 164 64 97 botania:livingrock
+setblock 164 64 98 minecraft:lapis_block
+setblock 165 64 96 botania:livingrock
+setblock 165 64 97 minecraft:lapis_block
+setblock 165 64 98 botania:livingrock
+setblock 164 65 97 botania:terrestrial_agglomeration_plate
+summon botania:mana_spark 164.5 66.25 97.5 {Tags:["kw_shot"]}
+setblock 160 64 97 botania:mana_pool{mana:1000000}
+summon botania:mana_spark 160.5 65.25 97.5 {Tags:["kw_shot"]}
+setblock 168 64 97 botania:mana_pool{mana:1000000}
+summon botania:mana_spark 168.5 65.25 97.5 {Tags:["kw_shot"]}
+summon item 164.5 65.3 97.5 {Item:{id:"botania:manasteel_ingot",count:1},PickupDelay:32767,Age:-32768,Tags:["kw_shot"]}
+summon item 164.5 65.3 97.5 {Item:{id:"botania:mana_pearl",count:1},PickupDelay:32767,Age:-32768,Tags:["kw_shot"]}
+summon item 164.5 65.3 97.5 {Item:{id:"botania:mana_diamond",count:1},PickupDelay:32767,Age:-32768,Tags:["kw_shot"]}

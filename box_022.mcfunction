@@ -1,80 +1,136 @@
-# 022 mekanism_elite/fusion
-#area 92 44 115 71
-fill 92 64 44 115 93 71 minecraft:air
-fill 92 60 44 115 62 71 minecraft:stone
-fill 92 63 44 115 63 71 minecraft:light_gray_concrete
-fill 96 64 50 115 81 50 minecraft:light_gray_concrete
-fill 96 64 50 96 81 65 minecraft:light_gray_concrete
-setblock 97 64 64 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "022"}','{"text": "mekanism_elite"}','{"text": "fusion"}','{"text": ""}']}}
-setblock 98 64 64 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "fusion reactor"}','{"text": "with laser and"}','{"text": "amplifier"}','{"text": ""}']}}
-fill 110 64 50 110 81 65 minecraft:light_gray_concrete
-setblock 99 64 56 mekanismgenerators:fusion_reactor_frame
-setblock 99 65 55 mekanismgenerators:fusion_reactor_frame
-setblock 99 65 56 mekanismgenerators:reactor_glass
-setblock 99 65 57 mekanismgenerators:fusion_reactor_frame
-setblock 99 66 54 mekanismgenerators:fusion_reactor_frame
-setblock 99 66 55 mekanismgenerators:reactor_glass
-setblock 99 66 56 mekanismgenerators:fusion_reactor_port[active=false]
-setblock 99 66 57 mekanismgenerators:reactor_glass
-setblock 99 66 58 mekanismgenerators:fusion_reactor_frame
-setblock 99 67 55 mekanismgenerators:fusion_reactor_frame
-setblock 99 67 56 mekanismgenerators:reactor_glass
-setblock 99 67 57 mekanismgenerators:fusion_reactor_frame
-setblock 99 68 56 mekanismgenerators:fusion_reactor_frame
-setblock 100 64 55 mekanismgenerators:fusion_reactor_frame
-setblock 100 64 56 mekanismgenerators:reactor_glass
-setblock 100 64 57 mekanismgenerators:fusion_reactor_frame
-setblock 100 65 54 mekanismgenerators:fusion_reactor_frame
-setblock 100 65 58 mekanismgenerators:fusion_reactor_frame
-setblock 100 66 54 mekanismgenerators:reactor_glass
-setblock 100 66 58 mekanismgenerators:reactor_glass
-setblock 100 67 54 mekanismgenerators:fusion_reactor_frame
-setblock 100 67 58 mekanismgenerators:fusion_reactor_frame
-setblock 100 68 55 mekanismgenerators:fusion_reactor_frame
-setblock 100 68 56 mekanismgenerators:reactor_glass
-setblock 100 68 57 mekanismgenerators:fusion_reactor_frame
-setblock 101 64 54 mekanismgenerators:fusion_reactor_frame
-setblock 101 64 55 mekanismgenerators:reactor_glass
-setblock 101 64 56 mekanismgenerators:fusion_reactor_port[active=true]
-setblock 101 64 57 mekanismgenerators:reactor_glass
-setblock 101 64 58 mekanismgenerators:fusion_reactor_frame
-setblock 101 65 54 mekanismgenerators:reactor_glass
-setblock 101 65 58 mekanismgenerators:reactor_glass
-setblock 101 66 54 mekanismgenerators:reactor_glass
-setblock 101 66 58 mekanismgenerators:reactor_glass
-setblock 101 67 54 mekanismgenerators:reactor_glass
-setblock 101 67 58 mekanismgenerators:reactor_glass
-setblock 101 68 54 mekanismgenerators:fusion_reactor_frame
-setblock 101 68 55 mekanismgenerators:reactor_glass
-setblock 101 68 56 mekanismgenerators:fusion_reactor_controller[active=false]
-setblock 101 68 57 mekanismgenerators:reactor_glass
-setblock 101 68 58 mekanismgenerators:fusion_reactor_frame
-setblock 102 64 55 mekanismgenerators:fusion_reactor_frame
-setblock 102 64 56 mekanismgenerators:reactor_glass
-setblock 102 64 57 mekanismgenerators:fusion_reactor_frame
-setblock 102 65 54 mekanismgenerators:fusion_reactor_frame
-setblock 102 65 58 mekanismgenerators:fusion_reactor_frame
-setblock 102 66 54 mekanismgenerators:reactor_glass
-setblock 102 66 58 mekanismgenerators:reactor_glass
-setblock 102 67 54 mekanismgenerators:fusion_reactor_frame
-setblock 102 67 58 mekanismgenerators:fusion_reactor_frame
-setblock 102 68 55 mekanismgenerators:fusion_reactor_frame
-setblock 102 68 56 mekanismgenerators:reactor_glass
-setblock 102 68 57 mekanismgenerators:fusion_reactor_frame
-setblock 103 64 56 mekanismgenerators:fusion_reactor_frame
-setblock 103 65 55 mekanismgenerators:fusion_reactor_frame
-setblock 103 65 56 mekanismgenerators:reactor_glass
-setblock 103 65 57 mekanismgenerators:fusion_reactor_frame
-setblock 103 66 54 mekanismgenerators:fusion_reactor_frame
-setblock 103 66 55 mekanismgenerators:reactor_glass
-setblock 103 66 56 mekanismgenerators:laser_focus_matrix
-setblock 103 66 57 mekanismgenerators:reactor_glass
-setblock 103 66 58 mekanismgenerators:fusion_reactor_frame
-setblock 103 67 55 mekanismgenerators:fusion_reactor_frame
-setblock 103 67 56 mekanismgenerators:reactor_glass
-setblock 103 67 57 mekanismgenerators:fusion_reactor_frame
-setblock 103 68 56 mekanismgenerators:fusion_reactor_frame
-fill 105 64 56 105 65 56 mekanism:steel_casing
-setblock 105 66 56 mekanism:laser_amplifier[facing=west]
-fill 107 64 56 107 65 56 mekanism:steel_casing
-setblock 107 66 56 mekanism:laser[facing=west]
+# 022 mekanism_elite/induction_matrix
+#area 91 44 112 71
+fill 91 64 44 112 91 71 minecraft:air
+fill 91 60 44 112 62 71 minecraft:stone
+fill 91 63 44 112 63 71 minecraft:light_gray_concrete
+fill 95 64 50 112 79 50 minecraft:light_gray_concrete
+fill 95 64 50 95 79 65 minecraft:light_gray_concrete
+setblock 96 64 64 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "022"}','{"text": "mekanism_elite"}','{"text": "induction_matrix"}','{"text": ""}']}}
+setblock 97 64 64 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "matrix with"}','{"text": "cells and"}','{"text": "providers"}','{"text": "behind glass,"}']}}
+setblock 98 64 64 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "port GUI"}','{"text": ""}','{"text": ""}','{"text": ""}']}}
+fill 107 64 50 107 79 65 minecraft:light_gray_concrete
+setblock 99 64 54 mekanism:induction_casing
+setblock 99 64 55 mekanism:induction_casing
+setblock 99 64 56 mekanism:induction_casing
+setblock 99 64 57 mekanism:induction_casing
+setblock 99 64 58 mekanism:induction_casing
+setblock 99 65 54 mekanism:induction_casing
+setblock 99 65 55 mekanism:structural_glass
+setblock 99 65 56 mekanism:structural_glass
+setblock 99 65 57 mekanism:structural_glass
+setblock 99 65 58 mekanism:induction_casing
+setblock 99 66 54 mekanism:induction_casing
+setblock 99 66 55 mekanism:structural_glass
+setblock 99 66 56 mekanism:structural_glass
+setblock 99 66 57 mekanism:structural_glass
+setblock 99 66 58 mekanism:induction_casing
+setblock 99 67 54 mekanism:induction_casing
+setblock 99 67 55 mekanism:structural_glass
+setblock 99 67 56 mekanism:structural_glass
+setblock 99 67 57 mekanism:structural_glass
+setblock 99 67 58 mekanism:induction_casing
+setblock 99 68 54 mekanism:induction_casing
+setblock 99 68 55 mekanism:induction_casing
+setblock 99 68 56 mekanism:induction_casing
+setblock 99 68 57 mekanism:induction_casing
+setblock 99 68 58 mekanism:induction_casing
+setblock 100 64 54 mekanism:induction_casing
+setblock 100 64 55 mekanism:induction_casing
+setblock 100 64 56 mekanism:induction_casing
+setblock 100 64 57 mekanism:induction_casing
+setblock 100 64 58 mekanism:induction_casing
+setblock 100 65 54 mekanism:structural_glass
+setblock 100 65 58 mekanism:structural_glass
+setblock 100 66 54 mekanism:structural_glass
+setblock 100 66 58 mekanism:structural_glass
+setblock 100 67 54 mekanism:structural_glass
+setblock 100 67 58 mekanism:structural_glass
+setblock 100 68 54 mekanism:induction_casing
+setblock 100 68 55 mekanism:structural_glass
+setblock 100 68 56 mekanism:structural_glass
+setblock 100 68 57 mekanism:structural_glass
+setblock 100 68 58 mekanism:induction_casing
+setblock 101 64 54 mekanism:induction_casing
+setblock 101 64 55 mekanism:induction_casing
+setblock 101 64 56 mekanism:induction_casing
+setblock 101 64 57 mekanism:induction_casing
+setblock 101 64 58 mekanism:induction_casing
+setblock 101 65 54 mekanism:structural_glass
+setblock 101 65 58 mekanism:structural_glass
+setblock 101 66 54 mekanism:structural_glass
+setblock 101 66 58 mekanism:structural_glass
+setblock 101 67 54 mekanism:structural_glass
+setblock 101 67 58 mekanism:structural_glass
+setblock 101 68 54 mekanism:induction_casing
+setblock 101 68 55 mekanism:structural_glass
+setblock 101 68 56 mekanism:structural_glass
+setblock 101 68 57 mekanism:structural_glass
+setblock 101 68 58 mekanism:induction_casing
+setblock 102 64 54 mekanism:induction_casing
+setblock 102 64 55 mekanism:induction_casing
+setblock 102 64 56 mekanism:induction_casing
+setblock 102 64 57 mekanism:induction_casing
+setblock 102 64 58 mekanism:induction_casing
+setblock 102 65 54 mekanism:structural_glass
+setblock 102 65 58 mekanism:structural_glass
+setblock 102 66 54 mekanism:structural_glass
+setblock 102 66 58 mekanism:structural_glass
+setblock 102 67 54 mekanism:structural_glass
+setblock 102 67 58 mekanism:structural_glass
+setblock 102 68 54 mekanism:induction_casing
+setblock 102 68 55 mekanism:structural_glass
+setblock 102 68 56 mekanism:structural_glass
+setblock 102 68 57 mekanism:structural_glass
+setblock 102 68 58 mekanism:induction_casing
+setblock 103 64 54 mekanism:induction_casing
+setblock 103 64 55 mekanism:induction_casing
+setblock 103 64 56 mekanism:induction_casing
+setblock 103 64 57 mekanism:induction_casing
+setblock 103 64 58 mekanism:induction_casing
+setblock 103 65 54 mekanism:induction_casing
+setblock 103 65 55 mekanism:structural_glass
+setblock 103 65 56 mekanism:induction_port[active=false]
+setblock 103 65 57 mekanism:structural_glass
+setblock 103 65 58 mekanism:induction_casing
+setblock 103 66 54 mekanism:induction_casing
+setblock 103 66 55 mekanism:structural_glass
+setblock 103 66 56 mekanism:structural_glass
+setblock 103 66 57 mekanism:structural_glass
+setblock 103 66 58 mekanism:induction_casing
+setblock 103 67 54 mekanism:induction_casing
+setblock 103 67 55 mekanism:structural_glass
+setblock 103 67 56 mekanism:induction_port[active=true]
+setblock 103 67 57 mekanism:structural_glass
+setblock 103 67 58 mekanism:induction_casing
+setblock 103 68 54 mekanism:induction_casing
+setblock 103 68 55 mekanism:induction_casing
+setblock 103 68 56 mekanism:induction_casing
+setblock 103 68 57 mekanism:induction_casing
+setblock 103 68 58 mekanism:induction_casing
+setblock 100 65 55 mekanism:basic_induction_cell
+setblock 100 65 56 mekanism:basic_induction_provider
+setblock 100 65 57 mekanism:basic_induction_cell
+setblock 100 66 55 mekanism:basic_induction_cell
+setblock 100 66 56 mekanism:basic_induction_cell
+setblock 100 66 57 mekanism:basic_induction_cell
+setblock 100 67 55 mekanism:basic_induction_cell
+setblock 100 67 56 mekanism:basic_induction_cell
+setblock 100 67 57 mekanism:basic_induction_cell
+setblock 101 65 55 mekanism:basic_induction_cell
+setblock 101 65 56 mekanism:basic_induction_provider
+setblock 101 65 57 mekanism:basic_induction_cell
+setblock 101 66 55 mekanism:basic_induction_cell
+setblock 101 66 56 mekanism:basic_induction_cell
+setblock 101 66 57 mekanism:basic_induction_cell
+setblock 101 67 55 mekanism:basic_induction_cell
+setblock 101 67 56 mekanism:basic_induction_cell
+setblock 101 67 57 mekanism:basic_induction_cell
+setblock 102 65 55 mekanism:basic_induction_cell
+setblock 102 65 56 mekanism:basic_induction_provider
+setblock 102 65 57 mekanism:basic_induction_cell
+setblock 102 66 55 mekanism:basic_induction_cell
+setblock 102 66 56 mekanism:basic_induction_cell
+setblock 102 66 57 mekanism:basic_induction_cell
+setblock 102 67 55 mekanism:basic_induction_cell
+setblock 102 67 56 mekanism:basic_induction_cell
+setblock 102 67 57 mekanism:basic_induction_cell

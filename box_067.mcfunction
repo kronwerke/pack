@@ -1,22 +1,31 @@
-# 067 aether/portal
-#area 10 250 28 275
-fill 10 64 250 28 91 275 minecraft:air
-fill 10 60 250 28 62 275 minecraft:stone
-fill 10 63 250 28 63 275 minecraft:light_gray_concrete
-fill 14 64 256 28 79 256 minecraft:light_gray_concrete
-fill 14 64 256 14 79 269 minecraft:light_gray_concrete
-setblock 15 64 268 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "067"}','{"text": "aether"}','{"text": "portal"}','{"text": ""}']}}
-setblock 16 64 268 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Bau das"}','{"text": "Glowstone-Portal"}','{"text": ""}','{"text": ""}']}}
-fill 23 64 256 23 79 269 minecraft:light_gray_concrete
-setblock 17 65 261 minecraft:glowstone
-setblock 17 66 261 minecraft:glowstone
-setblock 17 67 261 minecraft:glowstone
-setblock 18 64 261 minecraft:glowstone
-setblock 18 68 261 minecraft:glowstone
-setblock 19 64 261 minecraft:glowstone
-setblock 19 68 261 minecraft:glowstone
-setblock 20 65 261 minecraft:glowstone
-setblock 20 66 261 minecraft:glowstone
-setblock 20 67 261 minecraft:glowstone
-fill 18 65 261 19 67 261 aether:aether_portal[axis=x]
-execute if block 18 66 261 aether:aether_portal
+# 067 immersive/list_mb
+#area 189 158 217 186
+fill 189 64 158 217 95 186 minecraft:air
+fill 189 60 158 217 62 186 minecraft:stone
+fill 189 63 158 217 63 186 minecraft:light_gray_concrete
+fill 193 64 164 217 83 164 minecraft:light_gray_concrete
+fill 193 64 164 193 83 180 minecraft:light_gray_concrete
+setblock 194 64 179 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "067"}','{"text": "immersive"}','{"text": "list_mb"}','{"text": ""}']}}
+setblock 195 64 179 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "all seven stage"}','{"text": "2 structures"}','{"text": "side by side"}','{"text": ""}']}}
+fill 212 64 164 212 83 180 minecraft:light_gray_concrete
+place template immersiveengineering:multiblocks/sheetmetal_tank 195 64 166 none
+kw testworld use 196 65 168 south immersiveengineering:hammer
+execute unless block 196 65 168 immersiveengineering:sheetmetal_iron
+place template immersiveengineering:multiblocks/silo 199 64 166 none
+kw testworld use 200 65 168 south immersiveengineering:hammer
+execute unless block 200 65 168 immersiveengineering:sheetmetal_iron
+place template immersiveengineering:multiblocks/improved_blast_furnace 203 64 166 none
+kw testworld use 204 65 168 south immersiveengineering:hammer
+execute unless block 204 65 168 immersiveengineering:blastbrick_reinforced
+place template immersiveengineering:multiblocks/shelf 207 64 166 none
+kw testworld use 208 65 167 south immersiveengineering:hammer
+execute unless block 208 65 167 immersiveengineering:steel_catwalk
+place template immersiveengineering:multiblocks/coke_oven 197 64 172 none
+kw testworld use 198 65 174 south immersiveengineering:hammer
+execute unless block 198 65 174 immersiveengineering:cokebrick
+place template immersiveengineering:multiblocks/blast_furnace 202 64 172 none
+kw testworld use 203 65 174 south immersiveengineering:hammer
+execute unless block 203 65 174 immersiveengineering:blastbrick
+place template immersiveengineering:multiblocks/alloy_smelter 207 64 172 none
+kw testworld use 208 65 173 south immersiveengineering:hammer
+execute unless block 208 65 173 immersiveengineering:alloybrick

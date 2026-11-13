@@ -1,19 +1,15 @@
-# 025 ars_nouveau/fill_jar
-#area 11 67 32 92
-fill 11 64 67 32 91 92 minecraft:air
-fill 11 60 67 32 62 92 minecraft:stone
-fill 11 63 67 32 63 92 minecraft:light_gray_concrete
-fill 15 64 73 32 79 73 minecraft:light_gray_concrete
-fill 15 64 73 15 79 86 minecraft:light_gray_concrete
-setblock 16 64 85 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "025"}','{"text": "ars_nouveau"}','{"text": "fill_jar"}','{"text": ""}']}}
-setblock 17 64 85 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "volcanic"}','{"text": "sourcelink, jar"}','{"text": "and chamber"}','{"text": "within range,"}']}}
-setblock 18 64 85 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "logs on the"}','{"text": "ground"}','{"text": ""}','{"text": ""}']}}
-fill 27 64 73 27 79 86 minecraft:light_gray_concrete
-setblock 18 64 78 ars_nouveau:volcanic_sourcelink
-summon item 19.5 64.2 79.5 {Item:{id:"minecraft:oak_log",count:64},PickupDelay:32767,Age:-32768,Tags:["kw_shot"]}
-summon item 18.5 64.2 79.5 {Item:{id:"minecraft:oak_log",count:64},PickupDelay:32767,Age:-32768,Tags:["kw_shot"]}
-summon item 17.5 64.2 79.5 {Item:{id:"minecraft:oak_log",count:64},PickupDelay:32767,Age:-32768,Tags:["kw_shot"]}
-summon item 19.5 64.2 78.5 {Item:{id:"minecraft:oak_log",count:64},PickupDelay:32767,Age:-32768,Tags:["kw_shot"]}
-setblock 22 64 78 ars_nouveau:source_jar[fill=5]{source:5000}
-setblock 24 64 78 ars_nouveau:imbuement_chamber[facing=up]
-kw testworld use 24 64 78 south minecraft:amethyst_shard
+# 025 antimatter/waste
+#area 142 44 163 69
+fill 142 64 44 163 91 69 minecraft:air
+fill 142 60 44 163 62 69 minecraft:stone
+fill 142 63 44 163 63 69 minecraft:light_gray_concrete
+fill 146 64 50 163 79 50 minecraft:light_gray_concrete
+fill 146 64 50 146 79 63 minecraft:light_gray_concrete
+setblock 147 64 62 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "025"}','{"text": "antimatter"}','{"text": "waste"}','{"text": ""}']}}
+setblock 148 64 62 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "row of solar"}','{"text": "neutron"}','{"text": "activators"}','{"text": "under open sky"}']}}
+fill 158 64 50 158 79 63 minecraft:light_gray_concrete
+setblock 149 64 55 mekanism:solar_neutron_activator[facing=south,active=false]
+setblock 151 64 55 mekanism:solar_neutron_activator[facing=south,active=false]
+setblock 153 64 55 mekanism:solar_neutron_activator[facing=south,active=false]
+setblock 155 64 55 mekanism:solar_neutron_activator[facing=south,active=false]
+fill 149 64 54 155 64 54 mekanism:basic_pressurized_tube

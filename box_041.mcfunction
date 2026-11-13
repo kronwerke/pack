@@ -1,25 +1,13 @@
-# 041 gaia/dandelifeon
-#area 158 86 195 129
-fill 158 64 86 183 91 129 minecraft:air
-fill 184 64 86 195 91 129 minecraft:air
-fill 158 60 86 195 62 129 minecraft:stone
-fill 158 63 86 195 63 129 minecraft:light_gray_concrete
-fill 162 64 92 195 79 92 minecraft:light_gray_concrete
-fill 162 64 92 162 79 123 minecraft:light_gray_concrete
-setblock 163 64 122 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "041"}','{"text": "gaia"}','{"text": "dandelifeon"}','{"text": ""}']}}
-setblock 164 64 122 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "a 25x25 cell"}','{"text": "field"}','{"text": ""}','{"text": ""}']}}
-fill 190 64 92 190 79 123 minecraft:light_gray_concrete
-fill 164 63 94 188 63 118 minecraft:smooth_stone
-setblock 176 63 106 minecraft:grass_block
-setblock 176 64 106 botania:dandelifeon
-setblock 169 64 99 botania:cellular_block
-setblock 170 64 100 botania:cellular_block
-setblock 171 64 100 botania:cellular_block
-setblock 169 64 101 botania:cellular_block
-setblock 170 64 101 botania:cellular_block
-setblock 181 64 101 botania:cellular_block
-setblock 182 64 101 botania:cellular_block
-setblock 183 64 101 botania:cellular_block
-setblock 170 64 110 botania:cellular_block
-setblock 170 64 111 botania:cellular_block
-setblock 170 64 112 botania:cellular_block
+# 041 botania_runes/mana_pearl
+#area 92 86 111 111
+fill 92 64 86 111 91 111 minecraft:air
+fill 92 60 86 111 62 111 minecraft:stone
+fill 92 63 86 111 63 111 minecraft:light_gray_concrete
+fill 96 64 92 111 79 92 minecraft:light_gray_concrete
+fill 96 64 92 96 79 105 minecraft:light_gray_concrete
+setblock 97 64 104 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "041"}','{"text": "botania_runes"}','{"text": "mana_pearl"}','{"text": ""}']}}
+setblock 98 64 104 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "a pool on a"}','{"text": "brass casing"}','{"text": "with a pearl in"}','{"text": "it"}']}}
+fill 106 64 92 106 79 105 minecraft:light_gray_concrete
+setblock 101 64 97 create:brass_casing
+setblock 101 65 97 botania:mana_pool{mana:1000000}
+summon item 101.5 66 97.5 {Item:{id:"minecraft:ender_pearl",count:1},PickupDelay:32767,Age:-32768,Tags:["kw_shot"]}

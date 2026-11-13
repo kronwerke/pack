@@ -1,7 +1,7 @@
 {
  "shots": [
   {
-   "name": "g_start_here_o_feeder",
+   "name": "h_start_here_o_feeder",
    "dim": "kronwerke:testworld",
    "pos": [
     10.32,
@@ -15,7 +15,7 @@
    "height": 360
   },
   {
-   "name": "g_start_here_m_goldleaf",
+   "name": "h_start_here_m_goldleaf",
    "dim": "kronwerke:testworld",
    "pos": [
     28.63,
@@ -29,7 +29,7 @@
    "height": 360
   },
   {
-   "name": "g_start_here_m_ritual",
+   "name": "h_start_here_m_ritual",
    "dim": "kronwerke:testworld",
    "pos": [
     44.13,
@@ -43,7 +43,7 @@
    "height": 360
   },
   {
-   "name": "g_start_here_m_altar",
+   "name": "h_start_here_m_altar",
    "dim": "kronwerke:testworld",
    "pos": [
     61.49,
@@ -57,7 +57,7 @@
    "height": 360
   },
   {
-   "name": "g_create_water_wheel",
+   "name": "h_create_water_wheel",
    "dim": "kronwerke:testworld",
    "pos": [
     7.04,
@@ -71,7 +71,7 @@
    "height": 360
   },
   {
-   "name": "g_create_windmill",
+   "name": "h_create_windmill",
    "dim": "kronwerke:testworld",
    "pos": [
     25.93,
@@ -85,7 +85,7 @@
    "height": 360
   },
   {
-   "name": "g_create_depot",
+   "name": "h_create_depot",
    "dim": "kronwerke:testworld",
    "pos": [
     41.52,
@@ -99,7 +99,7 @@
    "height": 360
   },
   {
-   "name": "g_create_mixer",
+   "name": "h_create_mixer",
    "dim": "kronwerke:testworld",
    "pos": [
     56.99,
@@ -113,7 +113,7 @@
    "height": 360
   },
   {
-   "name": "g_create_compacting",
+   "name": "h_create_compacting",
    "dim": "kronwerke:testworld",
    "pos": [
     71.52,
@@ -127,7 +127,7 @@
    "height": 360
   },
   {
-   "name": "g_create_washing",
+   "name": "h_create_washing",
    "dim": "kronwerke:testworld",
    "pos": [
     87.62,
@@ -141,7 +141,7 @@
    "height": 360
   },
   {
-   "name": "g_create_belt",
+   "name": "h_create_belt",
    "dim": "kronwerke:testworld",
    "pos": [
     101.53,
@@ -155,7 +155,7 @@
    "height": 360
   },
   {
-   "name": "g_create_cobble_gen",
+   "name": "h_create_cobble_gen",
    "dim": "kronwerke:testworld",
    "pos": [
     116.67,
@@ -169,7 +169,7 @@
    "height": 360
   },
   {
-   "name": "g_create_brass_brass_mixing",
+   "name": "h_create_brass_brass_mixing",
    "dim": "kronwerke:testworld",
    "pos": [
     132.15,
@@ -183,7 +183,7 @@
    "height": 360
   },
   {
-   "name": "g_create_brass_crafter",
+   "name": "h_create_brass_crafter",
    "dim": "kronwerke:testworld",
    "pos": [
     145.97,
@@ -197,7 +197,7 @@
    "height": 360
   },
   {
-   "name": "g_create_brass_crushing_wheel",
+   "name": "h_create_brass_crushing_wheel",
    "dim": "kronwerke:testworld",
    "pos": [
     162.43,
@@ -211,7 +211,7 @@
    "height": 360
   },
   {
-   "name": "g_mekanism_dynamic_tank",
+   "name": "h_mekanism_dynamic_tank",
    "dim": "kronwerke:testworld",
    "pos": [
     6.01,
@@ -225,10 +225,24 @@
    "height": 360
   },
   {
-   "name": "g_mekanism_advanced_teleporter",
+   "name": "h_mekanism_ores_line2",
    "dim": "kronwerke:testworld",
    "pos": [
-    21.52,
+    21.61,
+    65.98,
+    59.14
+   ],
+   "yaw": 165.0,
+   "pitch": 35.0,
+   "fov": 60,
+   "width": 640,
+   "height": 360
+  },
+  {
+   "name": "h_mekanism_advanced_teleporter",
+   "dim": "kronwerke:testworld",
+   "pos": [
+    37.52,
     66.75,
     59.32
    ],
@@ -239,10 +253,10 @@
    "height": 360
   },
   {
-   "name": "g_mekanism_advanced_evap",
+   "name": "h_mekanism_advanced_evap",
    "dim": "kronwerke:testworld",
    "pos": [
-    37.64,
+    53.64,
     69.2,
     61.1
    ],
@@ -253,10 +267,10 @@
    "height": 360
   },
   {
-   "name": "g_mekanism_advanced_boiler",
+   "name": "h_mekanism_advanced_boiler",
    "dim": "kronwerke:testworld",
    "pos": [
-    53.63,
+    69.63,
     71.34,
     64.44
    ],
@@ -267,10 +281,10 @@
    "height": 360
   },
   {
-   "name": "g_mekanism_advanced_turbine",
+   "name": "h_mekanism_advanced_turbine",
    "dim": "kronwerke:testworld",
    "pos": [
-    70.8,
+    86.8,
     72.19,
     65.07
    ],
@@ -281,10 +295,10 @@
    "height": 360
   },
   {
-   "name": "g_mekanism_elite_induction_matrix",
+   "name": "h_mekanism_elite_induction_matrix",
    "dim": "kronwerke:testworld",
    "pos": [
-    87.12,
+    103.12,
     68.77,
     62.56
    ],
@@ -295,10 +309,10 @@
    "height": 360
   },
   {
-   "name": "g_mekanism_elite_fusion",
+   "name": "h_mekanism_elite_fusion",
    "dim": "kronwerke:testworld",
    "pos": [
-    105.28,
+    121.28,
     69.18,
     63.13
    ],
@@ -309,10 +323,38 @@
    "height": 360
   },
   {
-   "name": "g_antimatter_sps",
+   "name": "h_mekanism_elite_mekasuit",
    "dim": "kronwerke:testworld",
    "pos": [
-    124.77,
+    137.36,
+    65.9,
+    58.69
+   ],
+   "yaw": 165.0,
+   "pitch": 35.0,
+   "fov": 60,
+   "width": 640,
+   "height": 360
+  },
+  {
+   "name": "h_antimatter_waste",
+   "dim": "kronwerke:testworld",
+   "pos": [
+    153.61,
+    65.98,
+    59.14
+   ],
+   "yaw": 165.0,
+   "pitch": 35.0,
+   "fov": 60,
+   "width": 640,
+   "height": 360
+  },
+  {
+   "name": "h_antimatter_sps",
+   "dim": "kronwerke:testworld",
+   "pos": [
+    172.77,
     71.33,
     65.98
    ],
@@ -323,7 +365,7 @@
    "height": 360
   },
   {
-   "name": "g_ars_nouveau_imbuement",
+   "name": "h_ars_nouveau_imbuement",
    "dim": "kronwerke:testworld",
    "pos": [
     7.24,
@@ -337,7 +379,7 @@
    "height": 360
   },
   {
-   "name": "g_ars_nouveau_fill_jar",
+   "name": "h_ars_nouveau_fill_jar",
    "dim": "kronwerke:testworld",
    "pos": [
     22.61,
@@ -351,7 +393,7 @@
    "height": 360
   },
   {
-   "name": "g_ars_nouveau_chamber_auto",
+   "name": "h_ars_nouveau_chamber_auto",
    "dim": "kronwerke:testworld",
    "pos": [
     38.06,
@@ -365,7 +407,7 @@
    "height": 360
   },
   {
-   "name": "g_ars_nouveau_apparatus",
+   "name": "h_ars_nouveau_apparatus",
    "dim": "kronwerke:testworld",
    "pos": [
     53.81,
@@ -379,7 +421,7 @@
    "height": 360
   },
   {
-   "name": "g_ars_nouveau_earth_essence",
+   "name": "h_ars_nouveau_earth_essence",
    "dim": "kronwerke:testworld",
    "pos": [
     68.74,
@@ -393,7 +435,7 @@
    "height": 360
   },
   {
-   "name": "g_ars_nouveau_drygmy",
+   "name": "h_ars_nouveau_drygmy",
    "dim": "kronwerke:testworld",
    "pos": [
     83.55,
@@ -407,7 +449,7 @@
    "height": 360
   },
   {
-   "name": "g_ars_apprentice_brazier",
+   "name": "h_ars_apprentice_brazier",
    "dim": "kronwerke:testworld",
    "pos": [
     99.24,
@@ -421,7 +463,21 @@
    "height": 360
   },
   {
-   "name": "g_botania_pure_daisy",
+   "name": "h_ars_epic_el_armor",
+   "dim": "kronwerke:testworld",
+   "pos": [
+    113.32,
+    65.79,
+    81.55
+   ],
+   "yaw": 165.0,
+   "pitch": 35.0,
+   "fov": 60,
+   "width": 640,
+   "height": 360
+  },
+  {
+   "name": "h_botania_pure_daisy",
    "dim": "kronwerke:testworld",
    "pos": [
     5.99,
@@ -435,7 +491,7 @@
    "height": 360
   },
   {
-   "name": "g_botania_pool",
+   "name": "h_botania_pool",
    "dim": "kronwerke:testworld",
    "pos": [
     20.74,
@@ -449,7 +505,7 @@
    "height": 360
   },
   {
-   "name": "g_botania_manastar",
+   "name": "h_botania_manastar",
    "dim": "kronwerke:testworld",
    "pos": [
     36.62,
@@ -463,7 +519,7 @@
    "height": 360
   },
   {
-   "name": "g_botania_mana_void",
+   "name": "h_botania_mana_void",
    "dim": "kronwerke:testworld",
    "pos": [
     51.24,
@@ -477,7 +533,7 @@
    "height": 360
   },
   {
-   "name": "g_botania_farm",
+   "name": "h_botania_farm",
    "dim": "kronwerke:testworld",
    "pos": [
     69.3,
@@ -491,10 +547,24 @@
    "height": 360
   },
   {
-   "name": "g_botania_runes_mana_pearl",
+   "name": "h_botania_manasteel_prep",
    "dim": "kronwerke:testworld",
    "pos": [
-    85.24,
+    87.13,
+    69.17,
+    104.58
+   ],
+   "yaw": 165.0,
+   "pitch": 48.0,
+   "fov": 60,
+   "width": 640,
+   "height": 360
+  },
+  {
+   "name": "h_botania_runes_mana_pearl",
+   "dim": "kronwerke:testworld",
+   "pos": [
+    102.24,
     65.19,
     100.27
    ],
@@ -505,10 +575,24 @@
    "height": 360
   },
   {
-   "name": "g_botania_runes_runic_altar",
+   "name": "h_botania_runes_ritual",
    "dim": "kronwerke:testworld",
    "pos": [
-    99.96,
+    119.13,
+    69.17,
+    104.58
+   ],
+   "yaw": 165.0,
+   "pitch": 48.0,
+   "fov": 60,
+   "width": 640,
+   "height": 360
+  },
+  {
+   "name": "h_botania_runes_runic_altar",
+   "dim": "kronwerke:testworld",
+   "pos": [
+    133.96,
     65.58,
     101.08
    ],
@@ -519,10 +603,10 @@
    "height": 360
   },
   {
-   "name": "g_botania_runes_plate_base",
+   "name": "h_botania_runes_plate_base",
    "dim": "kronwerke:testworld",
    "pos": [
-    115.31,
+    149.31,
     65.36,
     100.51
    ],
@@ -533,10 +617,10 @@
    "height": 360
   },
   {
-   "name": "g_botania_runes_terrasteel",
+   "name": "h_botania_runes_terrasteel",
    "dim": "kronwerke:testworld",
    "pos": [
-    131.94,
+    165.94,
     67.47,
     102.87
    ],
@@ -547,10 +631,10 @@
    "height": 360
   },
   {
-   "name": "g_gaia_arena",
+   "name": "h_gaia_arena",
    "dim": "kronwerke:testworld",
    "pos": [
-    151.41,
+    185.41,
     67.75,
     107.63
    ],
@@ -561,10 +645,10 @@
    "height": 360
   },
   {
-   "name": "g_gaia_dandelifeon",
+   "name": "h_gaia_dandelifeon",
    "dim": "kronwerke:testworld",
    "pos": [
-    180.28,
+    214.28,
     83.05,
     120.61
    ],
@@ -575,10 +659,10 @@
    "height": 360
   },
   {
-   "name": "g_alfheim_frame",
+   "name": "h_alfheim_frame",
    "dim": "kronwerke:testworld",
    "pos": [
-    203.04,
+    237.04,
     68.55,
     103.25
    ],
@@ -589,10 +673,10 @@
    "height": 360
   },
   {
-   "name": "g_alfheim_open",
+   "name": "h_alfheim_open",
    "dim": "kronwerke:testworld",
    "pos": [
-    220.04,
+    254.04,
     68.55,
     103.25
    ],
@@ -603,7 +687,7 @@
    "height": 360
   },
   {
-   "name": "g_occultism_spirit_fire",
+   "name": "h_occultism_spirit_fire",
    "dim": "kronwerke:testworld",
    "pos": [
     6.31,
@@ -617,7 +701,7 @@
    "height": 360
   },
   {
-   "name": "g_occultism_aviar",
+   "name": "h_occultism_aviar",
    "dim": "kronwerke:testworld",
    "pos": [
     24.15,
@@ -631,7 +715,7 @@
    "height": 360
   },
   {
-   "name": "g_occultism_hedyrin",
+   "name": "h_occultism_hedyrin",
    "dim": "kronwerke:testworld",
    "pos": [
     43.15,
@@ -645,7 +729,7 @@
    "height": 360
   },
   {
-   "name": "g_occultism_ophyx",
+   "name": "h_occultism_ophyx",
    "dim": "kronwerke:testworld",
    "pos": [
     64.7,
@@ -659,7 +743,7 @@
    "height": 360
   },
   {
-   "name": "g_occultism_strigeor",
+   "name": "h_occultism_strigeor",
    "dim": "kronwerke:testworld",
    "pos": [
     87.7,
@@ -673,7 +757,7 @@
    "height": 360
   },
   {
-   "name": "g_occultism_afrit_kandar",
+   "name": "h_occultism_afrit_kandar",
    "dim": "kronwerke:testworld",
    "pos": [
     113.25,
@@ -687,7 +771,7 @@
    "height": 360
   },
   {
-   "name": "g_occultism_afrit_mineshaft",
+   "name": "h_occultism_afrit_mineshaft",
    "dim": "kronwerke:testworld",
    "pos": [
     132.74,
@@ -701,7 +785,7 @@
    "height": 360
   },
   {
-   "name": "g_occultism_afrit_storage",
+   "name": "h_occultism_afrit_storage",
    "dim": "kronwerke:testworld",
    "pos": [
     150.24,
@@ -715,7 +799,7 @@
    "height": 360
   },
   {
-   "name": "g_occultism_afrit_marid_crusher",
+   "name": "h_occultism_afrit_marid_crusher",
    "dim": "kronwerke:testworld",
    "pos": [
     176.8,
@@ -729,7 +813,7 @@
    "height": 360
   },
   {
-   "name": "g_hexerei_herbs",
+   "name": "h_hexerei_herbs",
    "dim": "kronwerke:testworld",
    "pos": [
     197.55,
@@ -743,7 +827,7 @@
    "height": 360
   },
   {
-   "name": "g_immersive_hammer",
+   "name": "h_immersive_hammer",
    "dim": "kronwerke:testworld",
    "pos": [
     6.79,
@@ -757,7 +841,7 @@
    "height": 360
   },
   {
-   "name": "g_immersive_coke_oven",
+   "name": "h_immersive_coke_oven",
    "dim": "kronwerke:testworld",
    "pos": [
     21.47,
@@ -771,7 +855,7 @@
    "height": 360
   },
   {
-   "name": "g_immersive_blast_furnace",
+   "name": "h_immersive_blast_furnace",
    "dim": "kronwerke:testworld",
    "pos": [
     36.47,
@@ -785,7 +869,7 @@
    "height": 360
   },
   {
-   "name": "g_immersive_improved_form",
+   "name": "h_immersive_improved_form",
    "dim": "kronwerke:testworld",
    "pos": [
     46.64,
@@ -799,7 +883,7 @@
    "height": 360
   },
   {
-   "name": "g_immersive_kiln",
+   "name": "h_immersive_kiln",
    "dim": "kronwerke:testworld",
    "pos": [
     60.74,
@@ -813,7 +897,7 @@
    "height": 360
   },
   {
-   "name": "g_immersive_dynamo",
+   "name": "h_immersive_dynamo",
    "dim": "kronwerke:testworld",
    "pos": [
     80.16,
@@ -827,7 +911,7 @@
    "height": 360
   },
   {
-   "name": "g_immersive_windmill",
+   "name": "h_immersive_windmill",
    "dim": "kronwerke:testworld",
    "pos": [
     96.16,
@@ -841,12 +925,12 @@
    "height": 360
   },
   {
-   "name": "g_immersive_connectors",
+   "name": "h_immersive_watermill",
    "dim": "kronwerke:testworld",
    "pos": [
-    114.61,
-    66.58,
-    173.64
+    107.6,
+    65.96,
+    172.11
    ],
    "yaw": 165.0,
    "pitch": 35.0,
@@ -855,7 +939,7 @@
    "height": 360
   },
   {
-   "name": "g_immersive_capacitor",
+   "name": "h_immersive_connectors",
    "dim": "kronwerke:testworld",
    "pos": [
     126.61,
@@ -869,10 +953,24 @@
    "height": 360
   },
   {
-   "name": "g_immersive_thermoelectric",
+   "name": "h_immersive_capacitor",
    "dim": "kronwerke:testworld",
    "pos": [
-    137.24,
+    138.61,
+    66.58,
+    173.64
+   ],
+   "yaw": 165.0,
+   "pitch": 35.0,
+   "fov": 60,
+   "width": 640,
+   "height": 360
+  },
+  {
+   "name": "h_immersive_thermoelectric",
+   "dim": "kronwerke:testworld",
+   "pos": [
+    149.24,
     64.99,
     172.27
    ],
@@ -883,10 +981,10 @@
    "height": 360
   },
   {
-   "name": "g_immersive_tank",
+   "name": "h_immersive_tank",
    "dim": "kronwerke:testworld",
    "pos": [
-    152.81,
+    164.81,
     67.93,
     173.39
    ],
@@ -897,10 +995,10 @@
    "height": 360
   },
   {
-   "name": "g_immersive_silo",
+   "name": "h_immersive_silo",
    "dim": "kronwerke:testworld",
    "pos": [
-    163.15,
+    175.15,
     69.64,
     174.65
    ],
@@ -911,10 +1009,10 @@
    "height": 360
   },
   {
-   "name": "g_immersive_shelf",
+   "name": "h_immersive_shelf",
    "dim": "kronwerke:testworld",
    "pos": [
-    172.06,
+    184.06,
     66.85,
     171.96
    ],
@@ -925,10 +1023,10 @@
    "height": 360
   },
   {
-   "name": "g_immersive_list_mb",
+   "name": "h_immersive_list_mb",
    "dim": "kronwerke:testworld",
    "pos": [
-    193.85,
+    205.85,
     72.89,
     181.14
    ],
@@ -939,10 +1037,10 @@
    "height": 360
   },
   {
-   "name": "g_immersive_heavy_crusher",
+   "name": "h_immersive_heavy_crusher",
    "dim": "kronwerke:testworld",
    "pos": [
-    211.55,
+    223.55,
     66.42,
     172.42
    ],
@@ -953,10 +1051,10 @@
    "height": 360
   },
   {
-   "name": "g_immersive_heavy_press",
+   "name": "h_immersive_heavy_press",
    "dim": "kronwerke:testworld",
    "pos": [
-    221.36,
+    233.36,
     65.9,
     170.69
    ],
@@ -967,10 +1065,10 @@
    "height": 360
   },
   {
-   "name": "g_immersive_heavy_squeezer",
+   "name": "h_immersive_heavy_squeezer",
    "dim": "kronwerke:testworld",
    "pos": [
-    231.47,
+    243.47,
     66.21,
     172.13
    ],
@@ -981,10 +1079,10 @@
    "height": 360
   },
   {
-   "name": "g_immersive_heavy_fermenter",
+   "name": "h_immersive_heavy_fermenter",
    "dim": "kronwerke:testworld",
    "pos": [
-    241.47,
+    253.47,
     66.21,
     172.13
    ],
@@ -995,10 +1093,10 @@
    "height": 360
   },
   {
-   "name": "g_immersive_heavy_mixer",
+   "name": "h_immersive_heavy_mixer",
    "dim": "kronwerke:testworld",
    "pos": [
-    251.47,
+    263.47,
     66.21,
     172.13
    ],
@@ -1009,10 +1107,10 @@
    "height": 360
   },
   {
-   "name": "g_immersive_heavy_bottling",
+   "name": "h_immersive_heavy_bottling",
    "dim": "kronwerke:testworld",
    "pos": [
-    261.36,
+    273.36,
     65.9,
     171.19
    ],
@@ -1023,10 +1121,10 @@
    "height": 360
   },
   {
-   "name": "g_immersive_heavy_arc",
+   "name": "h_immersive_heavy_arc",
    "dim": "kronwerke:testworld",
    "pos": [
-    272.12,
+    284.12,
     68.77,
     175.56
    ],
@@ -1037,10 +1135,10 @@
    "height": 360
   },
   {
-   "name": "g_immersive_heavy_refinery",
+   "name": "h_immersive_heavy_refinery",
    "dim": "kronwerke:testworld",
    "pos": [
-    281.55,
+    293.55,
     66.42,
     172.42
    ],
@@ -1051,10 +1149,10 @@
    "height": 360
   },
   {
-   "name": "g_immersive_heavy_diesel",
+   "name": "h_immersive_heavy_diesel",
    "dim": "kronwerke:testworld",
    "pos": [
-    291.79,
+    303.79,
     67.06,
     174.3
    ],
@@ -1065,10 +1163,10 @@
    "height": 360
   },
   {
-   "name": "g_immersive_heavy_sawmill",
+   "name": "h_immersive_heavy_sawmill",
    "dim": "kronwerke:testworld",
    "pos": [
-    301.55,
+    313.55,
     66.42,
     172.42
    ],
@@ -1079,10 +1177,10 @@
    "height": 360
   },
   {
-   "name": "g_immersive_heavy_assembler",
+   "name": "h_immersive_heavy_assembler",
    "dim": "kronwerke:testworld",
    "pos": [
-    311.47,
+    323.47,
     66.21,
     172.13
    ],
@@ -1093,10 +1191,10 @@
    "height": 360
   },
   {
-   "name": "g_immersive_heavy_auto_workbench",
+   "name": "h_immersive_heavy_auto_workbench",
    "dim": "kronwerke:testworld",
    "pos": [
-    321.31,
+    333.31,
     65.36,
     171.51
    ],
@@ -1107,10 +1205,10 @@
    "height": 360
   },
   {
-   "name": "g_immersive_heavy_excavator",
+   "name": "h_immersive_heavy_excavator",
    "dim": "kronwerke:testworld",
    "pos": [
-    331.94,
+    343.94,
     67.48,
     175.38
    ],
@@ -1121,10 +1219,10 @@
    "height": 360
   },
   {
-   "name": "g_immersive_heavy_lightning_rod",
+   "name": "h_immersive_heavy_lightning_rod",
    "dim": "kronwerke:testworld",
    "pos": [
-    341.47,
+    353.47,
     66.21,
     172.13
    ],
@@ -1135,10 +1233,10 @@
    "height": 360
   },
   {
-   "name": "g_immersive_heavy_radio_tower",
+   "name": "h_immersive_heavy_radio_tower",
    "dim": "kronwerke:testworld",
    "pos": [
-    354.64,
+    366.64,
     81.17,
     185.44
    ],
@@ -1149,7 +1247,7 @@
    "height": 360
   },
   {
-   "name": "g_powah_orb",
+   "name": "h_powah_orb",
    "dim": "kronwerke:testworld",
    "pos": [
     6.34,
@@ -1163,7 +1261,7 @@
    "height": 360
   },
   {
-   "name": "g_powah_reactor",
+   "name": "h_powah_reactor",
    "dim": "kronwerke:testworld",
    "pos": [
     16.64,
@@ -1177,10 +1275,24 @@
    "height": 360
   },
   {
-   "name": "g_storage_vault_big",
+   "name": "h_storage_drawers_4",
    "dim": "kronwerke:testworld",
    "pos": [
-    7.09,
+    6.36,
+    65.9,
+    225.69
+   ],
+   "yaw": 165.0,
+   "pitch": 35.0,
+   "fov": 60,
+   "width": 640,
+   "height": 360
+  },
+  {
+   "name": "h_storage_vault_big",
+   "dim": "kronwerke:testworld",
+   "pos": [
+    17.09,
     66.52,
     227.56
    ],
@@ -1191,7 +1303,7 @@
    "height": 360
   },
   {
-   "name": "g_pneumaticcraft_chamber",
+   "name": "h_pneumaticcraft_chamber",
    "dim": "kronwerke:testworld",
    "pos": [
     6.47,
@@ -1205,7 +1317,7 @@
    "height": 360
   },
   {
-   "name": "g_nether_welcome",
+   "name": "h_nether_welcome",
    "dim": "kronwerke:testworld",
    "pos": [
     6.23,
@@ -1219,10 +1331,24 @@
    "height": 360
   },
   {
-   "name": "g_aether_portal",
+   "name": "h_the_end_arrival",
    "dim": "kronwerke:testworld",
    "pos": [
-    20.23,
+    20.42,
+    67.23,
+    264.95
+   ],
+   "yaw": 165.0,
+   "pitch": 50.0,
+   "fov": 60,
+   "width": 640,
+   "height": 360
+  },
+  {
+   "name": "h_aether_portal",
+   "dim": "kronwerke:testworld",
+   "pos": [
+    35.23,
     67.71,
     266.09
    ],
@@ -1233,10 +1359,10 @@
    "height": 360
   },
   {
-   "name": "g_deeper_darker_portal",
+   "name": "h_deeper_darker_portal",
    "dim": "kronwerke:testworld",
    "pos": [
-    34.23,
+    49.23,
     67.71,
     266.09
    ],
@@ -1247,10 +1373,10 @@
    "height": 360
   },
   {
-   "name": "g_undergarden_arrival",
+   "name": "h_undergarden_arrival",
    "dim": "kronwerke:testworld",
    "pos": [
-    48.23,
+    63.23,
     67.71,
     266.09
    ],
@@ -1261,10 +1387,10 @@
    "height": 360
   },
   {
-   "name": "g_list_dimensions_d_mining",
+   "name": "h_list_dimensions_d_mining",
    "dim": "kronwerke:testworld",
    "pos": [
-    62.23,
+    77.23,
     67.71,
     266.09
    ],
@@ -1275,10 +1401,10 @@
    "height": 360
   },
   {
-   "name": "g_list_dimensions_d_aether",
+   "name": "h_list_dimensions_d_aether",
    "dim": "kronwerke:testworld",
    "pos": [
-    71.23,
+    86.23,
     67.71,
     266.09
    ],
@@ -1289,10 +1415,10 @@
    "height": 360
   },
   {
-   "name": "g_list_dimensions_d_undergarden",
+   "name": "h_list_dimensions_d_undergarden",
    "dim": "kronwerke:testworld",
    "pos": [
-    80.23,
+    95.23,
     67.71,
     266.09
    ],
@@ -1303,10 +1429,10 @@
    "height": 360
   },
   {
-   "name": "g_list_dimensions_d_otherside",
+   "name": "h_list_dimensions_d_otherside",
    "dim": "kronwerke:testworld",
    "pos": [
-    89.23,
+    104.23,
     67.71,
     266.09
    ],
@@ -1317,7 +1443,7 @@
    "height": 360
   },
   {
-   "name": "g_draconic_injectors",
+   "name": "h_draconic_injectors",
    "dim": "kronwerke:testworld",
    "pos": [
     7.81,
@@ -1331,7 +1457,7 @@
    "height": 360
   },
   {
-   "name": "g_draconic_stabilizer",
+   "name": "h_draconic_stabilizer",
    "dim": "kronwerke:testworld",
    "pos": [
     20.41,
@@ -1345,7 +1471,7 @@
    "height": 360
   },
   {
-   "name": "g_draconic_tiers",
+   "name": "h_draconic_tiers",
    "dim": "kronwerke:testworld",
    "pos": [
     32.41,
@@ -1359,7 +1485,21 @@
    "height": 360
   },
   {
-   "name": "g_eidolon_brazier",
+   "name": "h_finale_tech",
+   "dim": "kronwerke:testworld",
+   "pos": [
+    48.81,
+    67.86,
+    286.38
+   ],
+   "yaw": 165.0,
+   "pitch": 44.0,
+   "fov": 60,
+   "width": 640,
+   "height": 360
+  },
+  {
+   "name": "h_eidolon_brazier",
    "dim": "kronwerke:testworld",
    "pos": [
     6.34,
@@ -1373,7 +1513,7 @@
    "height": 360
   },
   {
-   "name": "g_eidolon_crucible",
+   "name": "h_eidolon_crucible",
    "dim": "kronwerke:testworld",
    "pos": [
     16.24,
@@ -1387,7 +1527,7 @@
    "height": 360
   },
   {
-   "name": "g_eidolon_altar",
+   "name": "h_eidolon_altar",
    "dim": "kronwerke:testworld",
    "pos": [
     26.24,
@@ -1401,7 +1541,7 @@
    "height": 360
   },
   {
-   "name": "g_malum_altar",
+   "name": "h_malum_altar",
    "dim": "kronwerke:testworld",
    "pos": [
     41.31,
@@ -1415,12 +1555,26 @@
    "height": 360
   },
   {
-   "name": "g_malum_obelisk",
+   "name": "h_malum_obelisk",
    "dim": "kronwerke:testworld",
    "pos": [
     52.31,
     65.37,
     304.52
+   ],
+   "yaw": 165.0,
+   "pitch": 35.0,
+   "fov": 60,
+   "width": 640,
+   "height": 360
+  },
+  {
+   "name": "h_list_gear_mekasuit",
+   "dim": "kronwerke:testworld",
+   "pos": [
+    68.36,
+    65.9,
+    304.69
    ],
    "yaw": 165.0,
    "pitch": 35.0,

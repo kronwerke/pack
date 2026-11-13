@@ -1,22 +1,26 @@
-# 066 nether/welcome
-#area -4 250 14 275
-fill -4 64 250 14 91 275 minecraft:air
-fill -4 60 250 14 62 275 minecraft:stone
-fill -4 63 250 14 63 275 minecraft:light_gray_concrete
-fill 0 64 256 14 79 256 minecraft:light_gray_concrete
-fill 0 64 256 0 79 269 minecraft:light_gray_concrete
-setblock 1 64 268 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "066"}','{"text": "nether"}','{"text": "welcome"}','{"text": ""}']}}
-setblock 2 64 268 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Betritt den"}','{"text": "Nether"}','{"text": ""}','{"text": ""}']}}
-fill 9 64 256 9 79 269 minecraft:light_gray_concrete
-setblock 3 65 261 minecraft:obsidian
-setblock 3 66 261 minecraft:obsidian
-setblock 3 67 261 minecraft:obsidian
-setblock 4 64 261 minecraft:obsidian
-setblock 4 68 261 minecraft:obsidian
-setblock 5 64 261 minecraft:obsidian
-setblock 5 68 261 minecraft:obsidian
-setblock 6 65 261 minecraft:obsidian
-setblock 6 66 261 minecraft:obsidian
-setblock 6 67 261 minecraft:obsidian
-fill 4 65 261 5 67 261 minecraft:nether_portal[axis=x]
-execute if block 4 66 261 minecraft:nether_portal
+# 066 immersive/tank, silo, shelf
+#area 154 158 193 187
+fill 154 64 158 188 94 187 minecraft:air
+fill 189 64 158 193 94 187 minecraft:air
+fill 154 60 158 193 62 187 minecraft:stone
+fill 154 63 158 193 63 187 minecraft:light_gray_concrete
+fill 158 64 164 193 82 164 minecraft:light_gray_concrete
+fill 158 64 164 158 82 181 minecraft:light_gray_concrete
+setblock 159 64 180 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "066.1"}','{"text": "immersive"}','{"text": "tank"}','{"text": ""}']}}
+setblock 160 64 180 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "the formed"}','{"text": "structures"}','{"text": ""}','{"text": ""}']}}
+fill 168 64 164 168 82 181 minecraft:light_gray_concrete
+place template immersiveengineering:multiblocks/sheetmetal_tank 162 64 167 none
+kw testworld use 163 65 169 south immersiveengineering:hammer
+execute unless block 163 65 169 immersiveengineering:sheetmetal_iron
+setblock 169 64 180 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "066.2"}','{"text": "immersive"}','{"text": "silo"}','{"text": ""}']}}
+setblock 170 64 180 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Form ein"}','{"text": "Elementsilo"}','{"text": ""}','{"text": ""}']}}
+fill 178 64 164 178 82 181 minecraft:light_gray_concrete
+place template immersiveengineering:multiblocks/silo 172 64 167 none
+kw testworld use 173 65 169 south immersiveengineering:hammer
+execute unless block 173 65 169 immersiveengineering:sheetmetal_iron
+setblock 179 64 180 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "066.3"}','{"text": "immersive"}','{"text": "shelf"}','{"text": ""}']}}
+setblock 180 64 180 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Form ein"}','{"text": "Kistenregal"}','{"text": ""}','{"text": ""}']}}
+fill 188 64 164 188 82 181 minecraft:light_gray_concrete
+place template immersiveengineering:multiblocks/shelf 181 64 167 none
+kw testworld use 182 65 168 south immersiveengineering:hammer
+execute unless block 182 65 168 immersiveengineering:steel_catwalk

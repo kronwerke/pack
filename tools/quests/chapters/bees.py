@@ -405,7 +405,7 @@ quests = [
               "",
               "Legierungsbienen brauchen einen Block ihrer Legierung als Blume und geben pro Wabe sicher &e4 bis 6 Klumpen&r, die Stahlbiene sogar 7 bis 12.",
               "",
-              "&eKronwerke:&r Ein Stock voller Stahlbienen an einer Stromzentrifuge liefert Stahl für das Ziel von Stufe 3, ohne Erz und ohne Infusionsanlage. Eine Kiste neben dem Obelisken nimmt die Barren an.",
+              "&eKronwerke:&r Ein Stock voller Stahlbienen an einer Stromzentrifuge liefert Stahl für das Ziel von Stufe 3, ohne Erz und ohne Infusionsanlage. Die Barren trägst du zum Obelisken.",
           ],
           tasks=[task_checkmark("Legierungsbiene gegossen")],
           rewards=[reward_table("s2_rare"), reward_item("mekanism:ingot_steel", 16), reward_xp(20)],

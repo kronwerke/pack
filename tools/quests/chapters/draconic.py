@@ -403,7 +403,7 @@ quests = [
     quest("goal", 10, 21, "&5&lBring Licht des Drachen zum Obelisken",
           subtitle="Tausend Barren für den Technik-Pfeiler.",
           description=[
-              "Leite &6Draconiumbarren&r und &6Elite-Steuerschaltkreise&r in eine Kiste am Obelisken. Den Stand zeigt &e/kw goals&r.",
+              "Bring &6Draconiumbarren&r und &6Elite-Steuerschaltkreise&r zum Obelisken und gib sie von Hand ab. Den Stand zeigt &e/kw goals&r.",
               "",
               "&eKronwerke:&r Das Technikziel von Stufe 4 heißt &e1 000 Draconiumbarren&r und &e150 Elite-Steuerschaltkreise&r. Der Magie-Pfeiler will 128 Gaia-Seelen und 30 Mystische Stäbe.",
               "",

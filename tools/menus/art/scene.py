@@ -41,7 +41,7 @@ def lerp_pts(pts, n):
     return np.interp(np.arange(n), xs, ys)
 
 
-def sky(c, P, night):
+def sky(c, P, night, v=0):
     t = c.yy / float(HORIZON)
     sx, sy = 268, 122
     d = np.hypot((c.xx - sx) / 1.6, c.yy - sy)
@@ -49,13 +49,16 @@ def sky(c, P, night):
     c.ramp(c.rect(0, 0, W, HORIZON + 2), P['sky'], t, soft=0.5)
     if night:
         rng = np.random.default_rng(7)
-        for _ in range(150):
+        for i in range(150):
             x, y = int(rng.integers(0, W)), int(rng.integers(0, HORIZON - 15))
-            c.px(x, y, P['star'][int(rng.integers(0, 2))])
-        for x, y in ((60, 30), (150, 58), (232, 22), (318, 70), (410, 40), (455, 96), (26, 92)):
+            col = P['star'][int(rng.integers(0, 2))]
+            if i % 4 != v:                     # a quarter of the small stars is dark in each phase
+                c.px(x, y, col)
+        for i, (x, y) in enumerate(((60, 30), (150, 58), (232, 22), (318, 70), (410, 40), (455, 96), (26, 92))):
             for dx, dy in ((0, 0), (1, 0), (-1, 0), (0, 1), (0, -1)):
                 c.px(x + dx, y + dy, P['star'][0])
-            c.px(x + 2, y, P['star'][1]); c.px(x - 2, y, P['star'][1]); c.px(x, y + 2, P['star'][1]); c.px(x, y - 2, P['star'][1])
+            if (i + v) % 4 != 0:               # the large stars lose their rays for one phase
+                c.px(x + 2, y, P['star'][1]); c.px(x - 2, y, P['star'][1]); c.px(x, y + 2, P['star'][1]); c.px(x, y - 2, P['star'][1])
     return sx, sy
 
 
@@ -115,7 +118,7 @@ def ridge(c, P, key, base, amp, seed, lit, snow=None, sharp=0.0):
     return ys
 
 
-def lake(c, P, sx, night):
+def lake(c, P, sx, night, v=0):
     m = c.rect(0, HORIZON, W, 236)
     t = (c.yy - HORIZON) / 55.0
     c.ramp(m, P['lake'], t, soft=0.45)
@@ -128,6 +131,7 @@ def lake(c, P, sx, night):
         col = P['lake'][max(0, k - 1)] if rng.random() < 0.6 else P['lake'][min(len(P['lake']) - 1, k + 1)]
         c.fill(c.rect(x, y, x + ln, y + 1), col)
     gx = 286 if night else sx
+    rng = np.random.default_rng(300 + v)        # the glitter changes with the phase
     for y in range(HORIZON + 1, 212, 2):
         half = 3 + (y - HORIZON) * 0.38
         for _ in range(3):
@@ -272,33 +276,46 @@ def night_palette(D):
 PAL['night'] = night_palette(PAL['dusk'])
 
 
-def build(mode='dusk', stage=99):
+_BACK = {}
+_FORE = {}
+
+
+def build(mode='dusk', t=None):
+    """One frame of the picture; t None gives the still."""
+    import works
+    t = works.STILL if t is None else t
+    v = (t // 5) % 4
     P = PAL[mode]
     night = mode == 'night'
     c = Canvas(W, H)
-    sx, sy = sky(c, P, night)
-    sun(c, P, sx, sy, night)
-    for cx, base, w, seed, flat in ((70, 44, 84, 1, False), (205, 30, 60, 2, False), (372, 58, 96, 3, False), (150, 84, 70, 4, True),
-                                    (430, 24, 50, 5, False), (318, 104, 80, 6, True), (20, 108, 60, 8, True), (240, 66, 40, 9, True)):
-        cloud(c, P, cx, base, w, seed, flat)
-    ridge(c, P, 'far', 14, 44, 100, P['far_lit'], P['snow'])
-    ridge(c, P, 'mid', 4, 24, 200, P['mid_lit'])
-    lake(c, P, sx, night)
-    far_shore(c, P)
-    g = ground(c, P)
-    if stage > 0:
-        import works
-        works.draw(c, P, g, night)
-    foreground(c, P)
+    if (mode, v) not in _BACK:
+        sx, sy = sky(c, P, night, v)
+        sun(c, P, sx, sy, night)
+        for cx, base, w, seed, flat in ((70, 44, 84, 1, False), (205, 30, 60, 2, False), (372, 58, 96, 3, False), (150, 84, 70, 4, True),
+                                        (430, 24, 50, 5, False), (318, 104, 80, 6, True), (20, 108, 60, 8, True), (240, 66, 40, 9, True)):
+            cloud(c, P, cx, base, w, seed, flat)
+        ridge(c, P, 'far', 14, 44, 100, P['far_lit'], P['snow'])
+        ridge(c, P, 'mid', 4, 24, 200, P['mid_lit'])
+        lake(c, P, sx, night, v)
+        far_shore(c, P)
+        g = ground(c, P)
+        _BACK[(mode, v)] = (c.a.copy(), g)
+    c.a, g = _BACK[(mode, v)][0].copy(), _BACK[(mode, v)][1]
+    c.alpha[:] = True
+    works.draw(c, P, g, night, t)
+    if mode not in _FORE:
+        f = Canvas(W, H)
+        foreground(f, P)
+        _FORE[mode] = f
+    c.paste(_FORE[mode])
     return c
 
 
 if __name__ == '__main__':
     out = sys.argv[1]
     os.makedirs(out, exist_ok=True)
-    stage = int(sys.argv[2]) if len(sys.argv) > 2 else 99
     for mode in PAL:
-        c = build(mode, stage)
+        c = build(mode)
         c.image(4).save(os.path.join(out, f'title_{mode}.png'), optimize=True)
         c.image(3).save(os.path.join(out, f'preview_{mode}.png'))
         print('wrote', mode)

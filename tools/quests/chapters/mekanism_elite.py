@@ -582,7 +582,7 @@ quests = [
     quest("goal", 5.5, 33, "&5&lBring Licht des Drachen zum Obelisken",
           subtitle="Schaltkreise für den Obelisken.",
           description=[
-              "Leite Elite-Schaltkreise und Draconiumbarren in eine Kiste am Obelisken. Den Stand zeigt &e/kw goals&r.",
+              "Bring Elite-Schaltkreise und Draconiumbarren zum Obelisken und gib sie von Hand ab. Den Stand zeigt &e/kw goals&r.",
               "",
               "&eTechnik-Pfeiler von Stufe 4:&r &6150 Elite-Steuerschaltkreise&r und &61 000 Draconiumbarren&r. Der Magie-Pfeiler will Gaia-Geister und Mystische Stäbe, beide müssen voll werden.",
               "",

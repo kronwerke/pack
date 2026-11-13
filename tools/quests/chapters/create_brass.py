@@ -226,7 +226,7 @@ quests = [
           description=[
               "Automatisier alle Zutaten: eine Presse für Messingbleche, ein Einsatzgerät setzt Bretter auf Wellen für Zahnräder, Eisenklumpen aus der Erzwäsche, Röhren aus der Röhrenlinie.",
               "",
-              "Schleusen füllen die Einsatzgeräte nach, der Schrott läuft zurück, die Getriebe gehen in eine Kiste oder gleich in den Einspeiser am Obelisken.",
+              "Schleusen füllen die Einsatzgeräte nach, der Schrott läuft zurück, die Getriebe gehen in eine Kiste.",
               "",
               "&eKronwerke:&r 150 für den Obelisken, eins pro Messingherz, und viele Maschinen anderer Mods wollen welche: AE2-Assembler, IE-Schwerbaustein, die PneumaticCraft-Drohne.",
           ],
@@ -410,7 +410,7 @@ quests = [
     quest("brass_engine", A + 7, 25, "&6&lFütter den Obelisken mit Messing",
           subtitle="Das Ziel von Stufe 2: Die Messingmaschine.",
           description=[
-              "Liefere &6256 Messingbarren&r und &632 Präzisionsgetriebe&r. Ein &eEinspeiser&r (Kiste oder Fass direkt am Obelisken) zieht alle zwei Sekunden ein, was er brauchen kann.",
+              "Liefere &6256 Messingbarren&r und &632 Präzisionsgetriebe&r. Abgegeben wird von Hand am Obelisken, Schleichen und Rechtsklick gibt alles Passende ab.",
               "",
               "&eKronwerke:&r Der Technik-Pfeiler will 2 000 Barren, 150 Getriebe und 8 Herzen. Dafür brauchst du mehrere überhitzte Mixer, Kupfer und Zink aus Mahlwerk und Wäsche, eine Röhrenlinie und mindestens eine Präzisionslinie.",
               "",

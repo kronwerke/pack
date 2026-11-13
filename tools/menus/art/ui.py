@@ -246,6 +246,7 @@ def build(out):
     items['btn_join'] = plate(148, 24, 'main')
     items['btn_join_hover'] = plate(148, 24, 'main', hover=True)
     items['tag'] = tag(104, 14)
+    items['tip'] = tag(220, 26)
     items['bar_frame'] = bar_frame(148, 20)
     items['bar_fill'] = bar_fill(140, 12)
     for k, c in items.items():

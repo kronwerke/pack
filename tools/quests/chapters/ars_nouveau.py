@@ -1026,7 +1026,7 @@ quests = [
     quest("obelisk", 31, 5.5, "&dBring Juwelen zum Obelisken",
           subtitle="Die magische Hälfte von Stufe 1.",
           description=[
-              "Rechtsklick mit Juwelen auf den &eObelisken&r an der Spawn, schleichend gibst du alles Passende ab. Eine Truhe daneben wird dein Zulieferer, unterwegs hilft &e/kw deposit&r.",
+              "Rechtsklick mit Juwelen auf den &eObelisken&r an der Spawn, schleichend gibst du alles Passende ab.",
               "",
               "Die Magie-Säule: &e800 Quelljuwelen&r (angepasst an die Spielerzahl) und &e12 Quellschlusssteine&r. Ein Schlussstein zählt so viel wie gut 60 Juwelen: &e4 Quelljuwelblöcke&r, Quellglas, 2 Manadiamanten aus Botania, Andesitlegierung, Gold Leaf aus Nature's Aura. Rezept im Kapitel &6Hier geht's los&r.",
               "",

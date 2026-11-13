@@ -153,10 +153,6 @@ python3 tools/check_progression.py kronwerke-dump/recipes.json /path/to/mods kub
 
 Every goal item must show up as reachable in its stage and nowhere in the leak list before it. The checker holds recipes back the way Core does: by their item result, and for recipes without one (fluids, chemicals) by the ids under the result and output keys of the recipe file, a fluid by its bucket's stage or by `locks.fluids` in `kronwerke-common.toml`. The section "Recipe types whose results machine locks cannot see" lists the types Core can never hold; a locked output there needs a recipe change or an entry in `locks.fluids`.
 
-## The obelisk intake
-
-`kronwerke:obelisk_intake` (Zubringer): a hopper over an andesite alloy between cobbled deepslate (`kubejs/server_scripts/kronwerke/obelisk.js`). Machines feed the obelisk through it, credited to the player who placed it. Cheap on purpose: everyone should have one on the first evening.
-
 ## The round of October 2026
 
 Every mod leans on at least one other, and key materials get a slow first route and a fast later one. Generated from `tools/recipes/round.py`, which also checks every change against a dump of the running pack.

@@ -468,9 +468,9 @@ quests = [
           description=[
               "Jetzt alles zusammen: Lass das Netz &6Fortgeschrittene Steuerschaltkreise&r für den Obelisken bauen.",
               "",
-              "&eSo geht es:&r Ein Verarbeitungsrezept für Gedrucktes Silizium an einer Gravurmaschine von AE2 (Autohersteller davor, Importeur dahinter). Ein zweites für Infundierte Legierung an einer Infusionsanlage, ein drittes für Einfache Steuerschaltkreise aus Elektronenröhren. Ein Herstellungsrezept setzt alles zusammen. Ein Exporteur mit Autoherstellung-Upgrade an einer Kiste neben dem Obelisken hält den Vorrat.",
+              "&eSo geht es:&r Ein Verarbeitungsrezept für Gedrucktes Silizium an einer Gravurmaschine von AE2 (Autohersteller davor, Importeur dahinter). Ein zweites für Infundierte Legierung an einer Infusionsanlage, ein drittes für Einfache Steuerschaltkreise aus Elektronenröhren. Ein Herstellungsrezept setzt alles zusammen. Ein Exporteur mit Autoherstellung-Upgrade an einer Kiste hält den Vorrat, bis du ihn zum Obelisken trägst.",
               "",
-              "&eKronwerke:&r &e\"Der Ofen schläft nie\"&r will &e250 Fortgeschrittene Steuerschaltkreise&r und &e4 000 Stahlbarren&r. Mit RS ist die Fabrik billiger als mit AE2, denn sie braucht keine Präzisionsgetriebe und keine CPU. Was in der Kiste am Obelisken landet, zählt für dich.",
+              "&eKronwerke:&r &e\"Der Ofen schläft nie\"&r will &e250 Fortgeschrittene Steuerschaltkreise&r und &e4 000 Stahlbarren&r. Mit RS ist die Fabrik billiger als mit AE2, denn sie braucht keine Präzisionsgetriebe und keine CPU. Abgegeben wird von Hand am Obelisken.",
               "",
               "Dazu zwei 16k-Zellen, damit das Lager nicht vorher voll ist.",
           ],

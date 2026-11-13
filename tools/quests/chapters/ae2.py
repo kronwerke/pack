@@ -395,9 +395,9 @@ quests = [
           description=[
               "Verarbeitungsschablonen für Gedrucktes Silizium (Gravurmaschine), Infundierte Legierung und Einfache Steuerschaltkreise (zwei Infusionsanlagen), eine Fertigungsschablone im Assembler für den &6Fortgeschrittenen Steuerschaltkreis&r. Bestell 64 Stück.",
               "",
-              "Ein Exportbus mit Fertigungskarte an einer Kiste neben dem Obelisken hält den Vorrat. Wer viel Silizium braucht, baut den &6Circuit Slicer&r von Extended AE weiter unten.",
+              "Ein Exportbus mit Fertigungskarte an einer Kiste hält den Vorrat, bis du ihn zum Obelisken trägst. Wer viel Silizium braucht, baut den &6Circuit Slicer&r von Extended AE weiter unten.",
               "",
-              "&eKronwerke:&r &e\"Der Ofen schläft nie\"&r will &e250 Fortgeschrittene Steuerschaltkreise&r, &e4 000 Stahlbarren&r und &e8 Stahlkerne&r. Was in die Kiste am Obelisken fällt, zählt für den, der sie hingestellt hat.",
+              "&eKronwerke:&r &e\"Der Ofen schläft nie\"&r will &e250 Fortgeschrittene Steuerschaltkreise&r, &e4 000 Stahlbarren&r und &e8 Stahlkerne&r. Abgegeben wird von Hand am Obelisken, und es zählt für den, der abgibt.",
           ],
           tasks=[task_item("mekanism:advanced_control_circuit", 64), task_item("ae2:engineering_processor", 16)],
           rewards=[reward_table("s3_rare"), reward_item("ae2:cell_component_16k", 1), reward_xp(25)],

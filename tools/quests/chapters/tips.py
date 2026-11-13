@@ -238,11 +238,11 @@ quests = [
     quest("r_obelisk", 6.5, 4, "&6Gib etwas am Obelisken ab",
           subtitle="Jeder Stapel zählt, auch der kleine.",
           description=[
-              "Der &6Obelisk&r steht am Spawn. Halte einen Stapel in der Hand und mach einen &eRechtsklick&r darauf. &eSchleichen&r und Rechtsklick gibt alles aus deinem Inventar ab, was das Ziel gerade braucht. Der Ausweichweg ist &e/kw deposit&r.",
+              "Der &6Obelisk&r steht am Spawn. Halte einen Stapel in der Hand und mach einen &eRechtsklick&r darauf. &eSchleichen&r und Rechtsklick gibt alles aus deinem Inventar ab, was das Ziel gerade braucht.",
               "",
               "In Stufe 1 will das Ziel &6Bruchstein&r, &6Andesitlegierung&r und &6Quelljuwelen&r. Bruchstein hat jeder, also wirf ihn nicht weg. Wie weit es ist, siehst du an der &eBossleiste&r oben und mit &e/kw goals&r.",
               "",
-              "Alles Weitere, den Zubringer und die Meilensteine, erklärt das Kapitel &6Hier geht's los&r.",
+              "Alles Weitere, die Säulen und die Meilensteine, erklärt das Kapitel &6Hier geht's los&r.",
           ],
           tasks=[task_checkmark("Abgegeben")],
           rewards=[reward_xp(3)],

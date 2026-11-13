@@ -12,10 +12,11 @@ the layout files, so the menus can be rebuilt, compared and reviewed like code.
 
 | Path | Content |
 |---|---|
-| `config/fancymenu/assets/kronwerke/` | artwork (dusk and night), logo, button plates, icons, bar, tips |
+| `config/fancymenu/assets/kronwerke/` | artwork (dusk and night), the moving parts as `anim_*.apng`, logo, button plates, icons, bar, tips |
 | `config/fancymenu/customization/kw_*.txt` | the layouts |
 | `config/fancymenu/customizablemenus.txt` | the screens FancyMenu may touch |
 | `config/fancymenu/options.txt` | pack mode, window title and icon |
+| `config/drippyloadingscreen/options.txt` | the early window (logo and bar before the game's own loading screen) |
 | `kubejs/assets/kwmenu/lang/` | the menu's own texts, German and English |
 | `kubejs/assets/minecraft/textures/gui/sprites/widget/` | the game's buttons and sliders in brass, for every screen |
 
@@ -31,6 +32,22 @@ Do not edit these by hand. Change `build.py` (layouts, texts, links) or the scri
 - The artwork is drawn by `scene.py` from shapes, ramps and patterns. Nothing is traced or
   taken from elsewhere. The night version uses the same drawing with a cooler palette and is
   shown from 20:00 to 06:00 (the player's clock), through two layouts with an hour requirement.
+- The picture moves. `scene.build(mode, t)` draws frame `t` of a loop of 200 frames at 100 ms:
+  the train comes in from the left, stands at the works and leaves to the right, smoke rises
+  from the chimney and the engine, the gears in the tower, at the gate and the water wheel
+  turn, stars and the lake glitter, birds cross. FancyMenu cannot play a full screen video
+  cheaply, so only the parts that move are cut out as animated PNGs (`SPRITES` in `build.py`:
+  region, frames, time per frame) and laid over the still picture. Every frame of such a file
+  is a whole frame: FancyMenu draws each one on its own, and Pillow's writer stores only the
+  changed part (`px.apng` writes them instead). The sprites sit at fixed places of the 480x270
+  grid, so they show only when the GUI is exactly that size (16:9); on any other window the
+  picture stands still. They lie under the game's buttons
+  (`render_custom_elements_behind_vanilla`), and elements with the same time stamp in their id
+  are stacked in no fixed order, which is why `uid()` counts the stamps up.
+- Before the game's loading screen NeoForge shows its early window. The Drippy Early Loading
+  Module (`mods/drippy-early-loading-module.pw.toml`) puts the dusk picture, the logo and a
+  brass bar there. It places in absolute pixels and does not scale with the window, so logo
+  and bar are centred, and the loading layout that follows is centred the same way.
 - The large button joins `kronwerke.net` directly. The line below it reads the player count
   from `https://kronwerke.com/api/status` and hides when there is no answer.
 - The countdown in the lower left shows until the season starts (16.01.2027 18:00).

@@ -834,7 +834,7 @@ quests = [
           description=[
               "Du kennst jetzt jeden Weg, auf dem in Kronwerke etwas von A nach B kommt oder liegen bleibt. Zum Abschluss zeig die Stufe-1-Grundausstattung einer Fabrik: Bänder, Trichter, Rohre, Pumpe und ein Fass dafür.",
               "",
-              "&eKronwerke:&r Der Zubringer am Obelisken ist dein Eingang. Alles aus diesem Kapitel, was dort hineinliefert, zählt für dich zum Ziel.",
+              "&eKronwerke:&r Alles aus diesem Kapitel bringt Ware bis in deine Kisten. Das letzte Stück zum Obelisken trägst du selbst: Abgegeben wird von Hand.",
           ],
           tasks=[task_item("create:belt_connector", 4), task_item("create:andesite_funnel", 4),
                  task_item("create:fluid_pipe", 8), task_item("create:mechanical_pump", 1),

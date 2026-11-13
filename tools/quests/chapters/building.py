@@ -436,7 +436,7 @@ quests = [
               "",
               "&eEin Plan, der funktioniert:&r Fachwerk oder Metallträger als Gerüst, Chipped-Varianten für Wände und Boden, Rahmenschrägen als Dach, Copycat-Platten als dünne Verkleidung, Wandfackeln alle zwölf Blöcke. Alles in geclaimten Chunks, alles innerhalb einer Chunkgrenze, wo Maschinen stehen sollen.",
               "",
-              "&eKronwerke:&r Was beim Bauen an &6Bruchstein&r anfällt, gehört in die Kiste am Obelisken. 20 000 Stück sind das Ziel von Stufe 1, und ein Bauabend bringt leicht ein paar Tausend.",
+              "&eKronwerke:&r Was beim Bauen an &6Bruchstein&r anfällt, gehört in den Obelisken. 20 000 Stück sind das Ziel von Stufe 1, und ein Bauabend bringt leicht ein paar Tausend.",
           ],
           tasks=[task_item("framedblocks:framed_cube", 64), task_item("create:copycat_panel", 16),
                  task_item("supplementaries:sconce", 16)],

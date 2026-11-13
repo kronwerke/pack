@@ -1015,7 +1015,7 @@
 	quest.120DBA3E6237920F.quest_subtitle: "Mehr Strom, mehr Hitze."
 	quest.120DBA3E6237920F.title: "&aSetz Graphitblöcke als Moderator"
 	quest.120E466F21A0C847.quest_desc: [
-		"Leite Elite-Schaltkreise und Draconiumbarren in eine Kiste am Obelisken. Den Stand zeigt &e/kw goals&r."
+		"Bring Elite-Schaltkreise und Draconiumbarren zum Obelisken und gib sie von Hand ab. Den Stand zeigt &e/kw goals&r."
 		""
 		"&eTechnik-Pfeiler von Stufe 4:&r &6150 Elite-Steuerschaltkreise&r und &61 000 Draconiumbarren&r. Der Magie-Pfeiler will Gaia-Geister und Mystische Stäbe, beide müssen voll werden."
 		""
@@ -1974,7 +1974,7 @@
 	quest.14FE22C633678D6D.quest_desc: [
 		"Enderman farm, belt to a pool with a &6brass casing&r underneath, a Hopperhock at the edge of the pool, a chest. Done."
 		""
-		"600 pearls are &d3.6 million mana&r and 600 ender pearls. A chest you put next to the obelisk hands them in for you every two seconds."
+		"600 pearls are &d3.6 million mana&r and 600 ender pearls. They are handed in by hand at the obelisk, a backpack full at a time."
 	]
 	quest.14FE22C633678D6D.quest_subtitle: "Six hundred pearls have to be earned."
 	quest.14FE22C633678D6D.title: "&bBuild a pearl factory"
@@ -2827,7 +2827,7 @@
 		""
 		"Der Router arbeitet die Module von links nach rechts ab: Was in eine Zielkiste passt, geht dorthin, der Rest ganz rechts hinaus. Ein paar &6Stapel-Upgrades&r, und ein Stapel pro Sekunde ist sortiert. Der Filter merkt sich die Sorte auch, wenn die Kiste zwischendurch leer ist."
 		""
-		"&eKronwerke:&r Send brass and mana pearls from the leftovers chest into your feeder at the obelisk. What falls in there counts for you towards the goal of stage 2."
+		"&eKronwerke:&r Send brass and mana pearls from the leftovers chest into a chest of their own for the obelisk. What you hand in from it by hand counts for you towards the goal of stage 2."
 	]
 	quest.179CF2AACC3D7BAE.quest_subtitle: "Eine Kiste rein, zwanzig Kisten richtig."
 	quest.179CF2AACC3D7BAE.title: "&6&lBau eine Sortieranlage"
@@ -3711,7 +3711,7 @@
 		""
 		"Der Tooltip zeigt Position und Dimension. Mit einem Farbstoff färbst du ihn, so unterscheidest du mehrere. Ist der Chunk nicht geladen, meldet er das und passiert nichts."
 		""
-		"&eKronwerke:&r Eine Truhe neben dem Obelisken, ein Sender in der Tasche, und du lieferst Zielgegenstände ab, ohne nach Hause zu laufen."
+		"&eKronwerke:&r Ein Sender auf der Lagerkiste zu Hause, und du holst dir am Obelisken Nachschub für das Stufenziel, ohne zurückzulaufen."
 	]
 	quest.1A0BED7B0A6A3FBA.quest_subtitle: "Deine Truhe, von überall aus."
 	quest.1A0BED7B0A6A3FBA.title: "&bVerbinde einen Sculksender"
@@ -5100,9 +5100,9 @@
 		"{image:kronwerke:textures/quests/shots/create_cobble_gen.png width:224 height:126 align:center}"
 		"Lava and water so that cobblestone forms between them, a &6Mechanical Drill&r in front. Every stone it breaks forms again at once; a funnel collects."
 		""
-		"&eKronwerke:&r The stone pillar wants &620,000 cobblestone&r (for 30 players). Several generators on one shaft and a belt to the obelisk deliver in your sleep."
+		"&eKronwerke:&r The stone pillar wants &620,000 cobblestone&r (for 30 players). Several generators on one shaft fill the chests in your sleep; you carry them to the obelisk yourself."
 		""
-		"A chest or barrel right next to the obelisk is a &efeeder&r: every two seconds it takes what it can use."
+		"Handing in is done by hand only: sneak and right-click at the obelisk hands in everything that fits from your inventory."
 	]
 	quest.1E6A70DE20166D82.quest_subtitle: "Endless stone for the obelisk."
 	quest.1E6A70DE20166D82.title: "&6Build a cobblestone generator"
@@ -5146,7 +5146,7 @@
 	quest.1E83D0230D353EA6.quest_subtitle: "Zwei Barren aus jedem Rohen Eisen."
 	quest.1E83D0230D353EA6.title: "&6&lSchließ die Erzstraße"
 	quest.1E94209EC38D1030.quest_desc: [
-		"Bring &e64 Draconiumbarren&r und &e8 Elite-Schaltkreise&r zusammen und gib sie am Obelisken ab, oder stell eine Truhe daneben."
+		"Bring &e64 Draconiumbarren&r und &e8 Elite-Schaltkreise&r zusammen und gib sie am Obelisken ab."
 		""
 		"&eKronwerke:&r Die Technik-Seite des Ziels &6Licht des Drachen&r will &e1 000 Draconiumbarren&r und &e150 Elite-Schaltkreise&r, die Magie-Seite &e128 Gaia-Geister&r und &e30 Mystic Staffs&r."
 		""
@@ -5525,7 +5525,7 @@
 		""
 		"&eKronwerke:&r Das Stufenziel &e\"Der Ofen schläft nie\"&r will &e4 000 Stahlbarren&r, &e250 Fortgeschrittene Steuerschaltkreise&r und &e8 Stahlkerne&r. Ein Stahlkern: vier Schwere Ingenieursbausteine, ein Fortgeschrittener Steuerschaltkreis, zwei Ingenieursprozessoren aus AE2, ein Stahlgehäuse, ein Elementiumbarren."
 		""
-		"Stahl und Bausteine liefert dieses Kapitel. Stell eine Kiste neben den Obelisken und häng die Stahlstraße daran."
+		"Stahl und Bausteine liefert dieses Kapitel. Lass die Stahlstraße in Kisten laufen und bring die Barren zum Obelisken."
 	]
 	quest.1FE059D1A0AD661A.quest_subtitle: "Der Ofen schläft nie."
 	quest.1FE059D1A0AD661A.title: "&c&lBau ein Stahlwerk für den Server"
@@ -5623,7 +5623,7 @@
 	quest.200CD0947E173E23.quest_subtitle: "Neo Origins: 50 more mana, one heart less."
 	quest.200CD0947E173E23.title: "&dPick the Sourceborn"
 	quest.20126811246AC3FC.quest_desc: [
-		"Right click the &eobelisk&r at spawn with gems; sneaking hands in everything that fits. A chest next to it becomes your feeder, &e/kw deposit&r helps on the road."
+		"Right click the &eobelisk&r at spawn with gems; sneaking hands in everything that fits."
 		""
 		"The magic pillar: &e800 Source Gems&r (scaled to the number of players) and &e12 Source Keystones&r. One keystone counts for a good 60 gems: &e4 Source Gem blocks&r, Source Jar, 2 mana diamonds from Botania, andesite alloy, Gold Leaf from Nature's Aura. Recipe in the &6Start here&r chapter."
 		""
@@ -5663,7 +5663,7 @@
 	quest.20210ADA8839D3DA.title: "&6Build an Alchemy Catalyst"
 	quest.20263DB2F2483463.quest_desc: [
 		"Gather &e16 Afrit Essences&r. Per summoning: a cow, an Iesnium ingot, netherrack, flint and steel, gunpowder."
-		"Hand in at the &6obelisk&r at spawn, by right click or through a chest next to it."
+		"Hand in at the &6obelisk&r at spawn, by right click."
 		""
 		"&eKronwerke:&r The goal wants &e150 essences&r (the amount adapts to the number of players), each worth 10 points. The eight Elven Stars need another 16."
 		""
@@ -5720,12 +5720,12 @@
 	quest.203871EB493A423A.quest_subtitle: "Er zeigt dir, wo die nächste Biene wohnt."
 	quest.203871EB493A423A.title: "&2Bau einen Nestfinder"
 	quest.203B0E0C696824A8.quest_desc: [
-		"&e/kw deposit&r delivers the stack in your hand, &e/kw deposit all&r everything in your inventory that the current goal takes."
+		"&eSneak&r and &eright click&r the obelisk to hand in everything in your inventory that the current goal takes. The first click asks, the second one gives. Hotbar and offhand stay."
 		""
-		"That is the fallback. At the obelisk itself, right-click and sneaking is faster."
+		"Handing in is done by hand only, at the obelisk. There is no command, no menu button and no machine that hands in for you."
 	]
-	quest.203B0E0C696824A8.quest_subtitle: "Delivering when the right-click does not work."
-	quest.203B0E0C696824A8.title: "&6Tip: /kw deposit"
+	quest.203B0E0C696824A8.quest_subtitle: "Sneak and right click the obelisk."
+	quest.203B0E0C696824A8.title: "&6Tip: everything at once"
 	quest.203FF09F26BF9F08.quest_desc: [
 		"Eisen in die Ecken, &6Eisengitter&r an die Seiten, &6Glas&r in die Mitte."
 		""
@@ -6271,7 +6271,7 @@
 	quest.21BAD57C35D63EE0.quest_subtitle: "Why good food does more."
 	quest.21BAD57C35D63EE0.title: "&dUnderstand Nourishment and Comfort"
 	quest.21C041B791510B65.quest_desc: [
-		"Stell eine Kiste an den Obelisken und leite Stahl und Schaltkreise hinein. Er holt sich alle zwei Sekunden, was er brauchen kann. Den Stand zeigt &e/kw goals&r."
+		"Sammle Stahl und Schaltkreise in Kisten und gib sie von Hand am Obelisken ab, Schleichen und Rechtsklick nimmt alles Passende. Den Stand zeigt &e/kw goals&r."
 		""
 		"&eTechnik-Pfeiler von Stufe 3:&r &64 000 Stahlbarren&r, &6250 Fortgeschrittene Schaltkreise&r, &68 Stahlkerne&r. Der Magie-Pfeiler will Elementium, Afrit-Essenz und Elfensterne, und beide müssen voll werden."
 		""
@@ -6435,7 +6435,7 @@
 		""
 		"{image:ars_nouveau:textures/item/source_gem.png width:32 height:32 align:center}"
 		""
-		"Each gem counts 4 points. A small setup with a source link makes a few dozen an hour, also through a feeder. See the chapter &dArs Nouveau&r."
+		"Each gem counts 4 points. A small setup with a source link makes a few dozen an hour. See the chapter &dArs Nouveau&r."
 	]
 	quest.22221FD1BB9A6413.quest_subtitle: "800 Source Gems and 12 Source Keystones."
 	quest.22221FD1BB9A6413.title: "&dFill the magic pillar"
@@ -8138,7 +8138,7 @@
 		""
 		"Each gem costs &d500 Source&r. The jar is fed by your Sourceberries, Sourcelinks and whatever other Source you have."
 		""
-		"&eKronwerke:&r A hopper or a belt takes the gems to your feeder at the obelisk. Each one counts &e4 points&r for the magic pillar."
+		"&eKronwerke:&r A hopper collects the gems in a chest that you carry to the obelisk. Each one counts &e4 points&r for the magic pillar."
 	]
 	quest.274834A235E09223.quest_subtitle: "Several chambers around one jar, hoppers in and out."
 	quest.274834A235E09223.title: "&dBuild a gem plant"
@@ -8681,7 +8681,7 @@
 		""
 		"Every mined stone grows back instantly. Several drills on the same shaft multiply that; a drill costs 4 SU per RPM, a water wheel supplies 256 SU."
 		""
-		"&eKronwerke:&r A belt up to your feeder at the obelisk, and you pay in cobblestone while you sleep. All the parts are in the chapter &6Create&r (cobblestone generator)."
+		"&eKronwerke:&r The generator fills chests while you sleep, and a backpack full of cobblestone is handed in at the obelisk with one sneak click. All the parts are in the chapter &6Create&r (cobblestone generator)."
 	]
 	quest.28A0D7D640D88988.quest_subtitle: "Endless stone, even while you talk."
 	quest.28A0D7D640D88988.title: "&7Build a cobblestone generator"
@@ -8750,7 +8750,7 @@
 	quest.28DB0299AFB55DEF.quest_subtitle: "Weiter, mit Filter, und Erfahrung nach Wunsch."
 	quest.28DB0299AFB55DEF.title: "&bBau den Fortgeschrittenen Magneten"
 	quest.28E9D43755E0221E.quest_desc: [
-		"Gib Stäbe einzeln am Obelisken ab oder stell eine Kiste als Zulieferer daneben. Den Stand zeigt &e/kw goals&r."
+		"Gib die Stäbe von Hand am Obelisken ab. Den Stand zeigt &e/kw goals&r."
 		""
 		"&eKronwerke:&r Das Magieziel von Stufe 4 heißt &e128 Gaia-Seelen&r und &e30 Mystische Stäbe&r, beide fest. Dreißig Stäbe sind &d60 000 Mana&r. Ein voller Schaltkreis reicht für das ganze Ziel."
 		""
@@ -9223,7 +9223,7 @@
 	quest.2A6B3CDAF9360F83.quest_desc: [
 		"Automate every ingredient: a press for brass sheets, a deployer puts planks on shafts for cogwheels, iron nuggets from ore washing, tubes from the tube line."
 		""
-		"Funnels refill the deployers, the scrap runs back, the mechanisms go into a chest or straight into the intake at the obelisk."
+		"Funnels refill the deployers, the scrap runs back, the mechanisms go into a chest."
 		""
 		"&eKronwerke:&r 150 for the obelisk, one per Brass Heart, and many machines from other mods want some: AE2 assembler, IE heavy engineering block, the PneumaticCraft drone."
 	]
@@ -9638,7 +9638,7 @@
 		""
 		"A &6Mechanical Press&r over a basin of lava compacts 2 &6flint&r, 1 &6gravel&r and &b100 mB lava&r into one &6andesite&r. A &6Mechanical Mixer&r over a second basin makes &etwo andesite alloys&r from 1 andesite and 1 iron nugget."
 		""
-		"&eKronwerke:&r The alloy by belt into your feeder at the obelisk, and the tech pillar fills up as long as the generator runs. Press and mixer are in the &6Create&r chapter."
+		"&eKronwerke:&r The alloy piles up in a chest as long as the generator runs, and you take it to the obelisk. Press and mixer are in the &6Create&r chapter."
 	]
 	quest.2BBB6FFF556F0121.quest_subtitle: "Cobblestone and lava become andesite alloy, without any mine."
 	quest.2BBB6FFF556F0121.title: "&7Build an alloy line"
@@ -10929,7 +10929,7 @@
 		""
 		"Ein Rechtsklick mit leerer Hand auf ein ziehendes Ende öffnet sein Fenster. Dort liegt ein Slot für eine &6Modifikation&r, und mit ihr kommen Redstone-Steuerung, Verteilung und später Filter."
 		""
-		"&eTipp:&r Ein Rohrstrang kann mehrere ziehende Enden haben. Zwei Truhen mit Erz, ein Strang, eine Anreicherungskammer am Ende: fertig ist der Zubringer."
+		"&eTipp:&r Ein Rohrstrang kann mehrere ziehende Enden haben. Zwei Truhen mit Erz, ein Strang, eine Anreicherungskammer am Ende: fertig ist die Zuleitung."
 	]
 	quest.2FAC967952DAFADF.quest_subtitle: "Eine Seite zieht, alle anderen liefern."
 	quest.2FAC967952DAFADF.title: "&bLass das Rohr ziehen"
@@ -11303,7 +11303,7 @@
 		""
 		"The rows from top to bottom: &estone&r, &ewood&r, &efields&r, &eanimals&r, &emonsters&r, &ewater and lava&r, &emagic&r. Each row stands on its own; start with the one you are missing right now."
 		""
-		"&eKronwerke:&r In stage 1 the obelisk wants &e20,000 cobblestone&r, &e1,500 andesite alloy&r and &e800 Source Gems&r. A &6feeder&r at the obelisk is your way in: what your farm pushes into it counts for you at once."
+		"&eKronwerke:&r In stage 1 the obelisk wants &e20,000 cobblestone&r, &e1,500 andesite alloy&r and &e800 Source Gems&r. The farm fills the chest, you carry it to the obelisk: handing in is done by hand."
 		""
 		"The recipes are in the &6Create&r, &aBotania&r, &dArs Nouveau&r, &aMystical Agriculture&r, &6Food and Farming&r and &6Cooking&r chapters. This one only says how to put them together into a farm."
 	]
@@ -11394,7 +11394,7 @@
 		""
 		"&eRezept auf Kronwerke:&r &6Netherit&r macht die Gießerei nicht, das bleibt beim Schmiedetisch. &6Messing&r auch nicht, das kommt nur aus dem Mixer von Create."
 		""
-		"&eKronwerke:&r Pulverizer für Kohlestaub, Gießerei dahinter, Kiste am Obelisken: fertig ist die kleine Stahlstraße."
+		"&eKronwerke:&r Pulverizer für Kohlestaub, Gießerei dahinter, Kiste am Ende: fertig ist die kleine Stahlstraße."
 	]
 	quest.3171B896C15529B3.quest_subtitle: "Zwei Zutaten, ein Barren, halber Preis."
 	quest.3171B896C15529B3.title: "&c&lBau eine Gießerei"
@@ -11775,7 +11775,7 @@
 	quest.3345AFD00341532D.quest_subtitle: "Der Katalysator für den Crucible."
 	quest.3345AFD00341532D.title: "&6Infundier einen Alchemical Impetus"
 	quest.3347183F57D71512.quest_desc: [
-		"Lass den Kristallisator direkt in eine Kiste am Obelisken laufen. Den Stand zeigt &e/kw goals&r."
+		"Lass den Kristallisator in eine Kiste laufen und bring die Pellets selbst zum Obelisken. Den Stand zeigt &e/kw goals&r."
 		""
 		"&eKronwerke:&r Das Ziel von Stufe 5 heißt &5Der Chaoswächter&r: &e64 Erwachte Draconiumblöcke&r und &e100 Antimaterie-Pellets&r. Teilt euch auf: einer die Reaktoren, einer die Aktivatoren, einer das Kraftwerk."
 	]
@@ -13703,7 +13703,7 @@
 	quest.3C10E938B5BF24FD.quest_desc: [
 		"Open the chapter &6First Farms&r. One farm per quest: cobblestone, wood, wheat, animals, monsters, lava and mana, all with stage 1 means."
 		""
-		"Each of them can deliver straight into your feeder at the obelisk."
+		"What they yield you carry to the obelisk."
 	]
 	quest.3C10E938B5BF24FD.quest_subtitle: "Your base works while you chat."
 	quest.3C10E938B5BF24FD.title: "&6Read First Farms"
@@ -13908,7 +13908,7 @@
 	quest.3CC653727697EE2C.quest_desc: [
 		"Sammle &e64 Stahlbarren&r. Roh-Hochofen, Verbesserter Hochofen oder Mekanism, alles zählt."
 		""
-		"&eKronwerke:&r Das Obelisk-Ziel von &6Stufe 3&r will &e4 000 Stahlbarren&r. Zwei, drei Hochöfen, die jetzt schon laufen, machen das später entspannt. Eine Kiste neben dem Obelisken nimmt alles an, was du hineinschickst."
+		"&eKronwerke:&r Das Obelisk-Ziel von &6Stufe 3&r will &e4 000 Stahlbarren&r. Zwei, drei Hochöfen, die jetzt schon laufen, machen das später entspannt. Abgegeben wird später von Hand am Obelisken."
 		""
 		"Damit sitzen die Grundlagen: Multiblöcke, Koks, Kreosot, Legierungen und Stahl."
 	]
@@ -14747,7 +14747,7 @@
 	quest.403CF2A90894462C.quest_subtitle: "The ghast cries when it falls."
 	quest.403CF2A90894462C.title: "&fGet a ghast tear"
 	quest.403D94AC159D99FF.quest_desc: [
-		"Hand in &e600 Mana Pearls&r, &e50 Terrasteel ingots&r and &e8 Rune Cores&r at the obelisk. Right click puts the stack in, a sneaking right click everything, or a chest next to it."
+		"Hand in &e600 Mana Pearls&r, &e50 Terrasteel ingots&r and &e8 Rune Cores&r at the obelisk. Right click puts the stack in, a sneaking right click everything."
 		""
 		"When tech and magic are full, &6stage 3 (Steel Works)&r opens with a stream event, and with it the elven portal, see &aBotania: Alfheim&r."
 		""
@@ -15810,12 +15810,12 @@
 	quest.44E3D7B177AD28B8.quest_subtitle: "Stack Upgrade Tier 1 Plus."
 	quest.44E3D7B177AD28B8.title: "Triple a barrel with copper"
 	quest.44F6726A010EADF9.quest_desc: [
-		"Feed cobblestone, Andesite Alloy or Source Gems into your feeder with a hopper, a belt or a chute. From then on your factory delivers by itself."
+		"Cobblestone, Andesite Alloy and Source Gems can be made automatically. Handing in is yours to do: put the yield into a backpack, walk to the obelisk, and sneak with a right click hands in everything that fits at once."
 		""
 		"How to build a cobblestone generator, an alloy line or a gem setup is shown in the chapter &6First Farms&r."
 	]
-	quest.44F6726A010EADF9.quest_subtitle: "Your share grows while you chat."
-	quest.44F6726A010EADF9.title: "&6Hook up a farm"
+	quest.44F6726A010EADF9.quest_subtitle: "The farm fills the chest, you carry it over."
+	quest.44F6726A010EADF9.title: "&6Build a farm for the goal"
 	quest.4520027E5F654845.quest_desc: [
 		"Nachts kommen die Monster aus &6Born in Chaos&r: &cZombie-Schläger&r (60 Lebenspunkte, schleudern dich weg), &cSkelett-Drescher&r (50, Rüstung 10, Hammerschlag für 8 mit viel Rückstoß), &cTürritter&r (30, Rüstung 7), &cKnochenrufer&r, die kleine Skelette rufen, und &cGefallene Chaosritter&r (40 Lebenspunkte, Rüstung 20)."
 		""
@@ -16069,7 +16069,7 @@
 		""
 		"Legierungsbienen brauchen einen Block ihrer Legierung als Blume und geben pro Wabe sicher &e4 bis 6 Klumpen&r, die Stahlbiene sogar 7 bis 12."
 		""
-		"&eKronwerke:&r Ein Stock voller Stahlbienen an einer Stromzentrifuge liefert Stahl für das Ziel von Stufe 3, ohne Erz und ohne Infusionsanlage. Eine Kiste neben dem Obelisken nimmt die Barren an."
+		"&eKronwerke:&r Ein Stock voller Stahlbienen an einer Stromzentrifuge liefert Stahl für das Ziel von Stufe 3, ohne Erz und ohne Infusionsanlage. Die Barren trägst du zum Obelisken."
 	]
 	quest.4643921A15D7ABC6.quest_subtitle: "Ein Spawn-Ei im Gießtisch, Metall darüber."
 	quest.4643921A15D7ABC6.title: "&8&lGieße eine Legierungsbiene"
@@ -16550,9 +16550,9 @@
 	quest.481D143950165232.quest_desc: [
 		"Verarbeitungsschablonen für Gedrucktes Silizium (Gravurmaschine), Infundierte Legierung und Einfache Steuerschaltkreise (zwei Infusionsanlagen), eine Fertigungsschablone im Assembler für den &6Fortgeschrittenen Steuerschaltkreis&r. Bestell 64 Stück."
 		""
-		"Ein Exportbus mit Fertigungskarte an einer Kiste neben dem Obelisken hält den Vorrat. Wer viel Silizium braucht, baut den &6Circuit Slicer&r von Extended AE weiter unten."
+		"Ein Exportbus mit Fertigungskarte an einer Kiste hält den Vorrat, bis du ihn zum Obelisken trägst. Wer viel Silizium braucht, baut den &6Circuit Slicer&r von Extended AE weiter unten."
 		""
-		"&eKronwerke:&r &e\"Der Ofen schläft nie\"&r will &e250 Fortgeschrittene Steuerschaltkreise&r, &e4 000 Stahlbarren&r und &e8 Stahlkerne&r. Was in die Kiste am Obelisken fällt, zählt für den, der sie hingestellt hat."
+		"&eKronwerke:&r &e\"Der Ofen schläft nie\"&r will &e250 Fortgeschrittene Steuerschaltkreise&r, &e4 000 Stahlbarren&r und &e8 Stahlkerne&r. Abgegeben wird von Hand am Obelisken, und es zählt für den, der abgibt."
 	]
 	quest.481D143950165232.quest_subtitle: "Der Ofen schläft nie, die Gravurmaschine auch nicht."
 	quest.481D143950165232.title: "&6&lBau die Schaltkreisfabrik"
@@ -17153,7 +17153,7 @@
 	quest.4B2A67A0EE7062A7.quest_desc: [
 		"Ein &6Eisenbarren&r und ein &6Kohlestaub&r geben einen &6Stahlbarren&r von Oritech."
 		""
-		"&eKronwerke:&r Jeder Stahlbarren zählt am Obelisken für &6Der Ofen schläft nie&r. Sägemühle für Kohlestaub davor, Kiste am Obelisken dahinter: eine kleine Stahlstraße."
+		"&eKronwerke:&r Jeder Stahlbarren zählt am Obelisken für &6Der Ofen schläft nie&r. Sägemühle für Kohlestaub davor, Kiste dahinter: eine kleine Stahlstraße."
 	]
 	quest.4B2A67A0EE7062A7.quest_subtitle: "Eisen und Kohlestaub, ein Barren."
 	quest.4B2A67A0EE7062A7.title: "&7Legier Stahl"
@@ -17414,7 +17414,7 @@
 	quest.4C251A5FBF288288.quest_subtitle: "Verarbeitungsschablone an der Gravurmaschine."
 	quest.4C251A5FBF288288.title: "&aLass eine Maschine für dich arbeiten"
 	quest.4C39C948ACC593B6.quest_desc: [
-		"Deliver &6256 brass ingots&r and &632 precision mechanisms&r. An &eintake&r (chest or barrel right at the obelisk) pulls in whatever it can use every two seconds."
+		"Deliver &6256 brass ingots&r and &632 precision mechanisms&r. They are handed in by hand at the obelisk; sneak and right-click hands in everything that fits."
 		""
 		"&eKronwerke:&r The tech pillar wants 2,000 ingots, 150 mechanisms and 8 hearts. For that you need several superheated mixers, copper and zinc from crushing and washing, a tube line and at least one precision line."
 		""
@@ -17708,7 +17708,7 @@
 		""
 		"It deletes everything that comes in, by hand, hopper or belt. Its filter has &e9 slots&r as whitelist or blacklist."
 		""
-		"&cCareful:&r Hand in cobblestone first, the obelisk needs it. &e/kw deposit all&r hands in everything the goal can use."
+		"&cCareful:&r Hand in cobblestone first, the obelisk needs it. Sneak and right click the obelisk to hand in everything the goal can use."
 	]
 	quest.4D9AC8CB35883A98.quest_subtitle: "Whatever falls in is gone."
 	quest.4D9AC8CB35883A98.title: "Build a trash can"
@@ -17867,7 +17867,7 @@
 	quest.4E1EFA9809C91E7C.quest_desc: [
 		"Du kennst jetzt jeden Weg, auf dem in Kronwerke etwas von A nach B kommt oder liegen bleibt. Zum Abschluss zeig die Stufe-1-Grundausstattung einer Fabrik: Bänder, Trichter, Rohre, Pumpe und ein Fass dafür."
 		""
-		"&eKronwerke:&r The feeder at the obelisk is your way in. Everything from this chapter that delivers into it counts for you towards the goal."
+		"&eKronwerke:&r Everything in this chapter moves goods as far as your chests. The last stretch to the obelisk you walk yourself: handing in is done by hand."
 	]
 	quest.4E1EFA9809C91E7C.quest_subtitle: "Fünfmal gelesen, einmal gebaut."
 	quest.4E1EFA9809C91E7C.title: "&6&lAlles verbunden"
@@ -17876,7 +17876,7 @@
 		""
 		"&eEin Plan, der funktioniert:&r Fachwerk oder Metallträger als Gerüst, Chipped-Varianten für Wände und Boden, Rahmenschrägen als Dach, Copycat-Platten als dünne Verkleidung, Wandfackeln alle zwölf Blöcke. Alles in geclaimten Chunks, alles innerhalb einer Chunkgrenze, wo Maschinen stehen sollen."
 		""
-		"&eKronwerke:&r Was beim Bauen an &6Bruchstein&r anfällt, gehört in die Kiste am Obelisken. 20 000 Stück sind das Ziel von Stufe 1, und ein Bauabend bringt leicht ein paar Tausend."
+		"&eKronwerke:&r Was beim Bauen an &6Bruchstein&r anfällt, gehört in den Obelisken. 20 000 Stück sind das Ziel von Stufe 1, und ein Bauabend bringt leicht ein paar Tausend."
 	]
 	quest.4E257FC7D1897C14.quest_subtitle: "Rahmen, Copycats und Licht für ein Haus, das man zeigen kann."
 	quest.4E257FC7D1897C14.title: "&6&lBau die Stream-Basis"
@@ -18343,11 +18343,11 @@
 	quest.50244CFF4ED6480C.title: "&5Ruf die Wilde Jagd"
 	quest.50271DF9FC3AED46.quest_desc: [
 		"{image:kronwerke:textures/quests/shots/logistics_counter.png width:224 height:126 align:center}"
-		"Ein &6Inventory Reader&r (Input-Transformer unter drei Truhen) auf eine Pufferkiste vor dem Obelisken liest mit &eInventory Count&r, was darin liegt. Die Karte ins Display Panel, und du siehst den Stand von weitem."
+		"Ein &6Inventory Reader&r (Input-Transformer unter drei Truhen) auf eine Pufferkiste am Ende der Stahlstraße liest mit &eInventory Count&r, was darin liegt. Die Karte ins Display Panel, und du siehst den Stand von weitem."
 		""
-		"Vergleich im Programmer mit einer festen Zahl, ein Redstone Writer schaltet eine Lampe, sobald genug Stahl bereitliegt. Ein Item Exporter schiebt den Stapel dann in die Kiste am Obelisken."
+		"Vergleich im Programmer mit einer festen Zahl, ein Redstone Writer schaltet eine Lampe, sobald genug Stahl bereitliegt. Dann lohnt sich der Gang zum Obelisken."
 		""
-		"&eKronwerke:&r &e\"Der Ofen schläft nie\"&r will &e4 000 Stahlbarren&r, &e250 Fortgeschrittene Steuerschaltkreise&r und &e8 Stahlkerne&r. Was in die Kiste am Obelisken fällt, zählt für den, der sie hingestellt hat."
+		"&eKronwerke:&r &e\"Der Ofen schläft nie\"&r will &e4 000 Stahlbarren&r, &e250 Fortgeschrittene Steuerschaltkreise&r und &e8 Stahlkerne&r. Abgegeben wird von Hand am Obelisken, und es zählt für den, der abgibt."
 	]
 	quest.50271DF9FC3AED46.quest_subtitle: "Wie viel fehlt noch zum Obelisken?"
 	quest.50271DF9FC3AED46.title: "&6&lBau den Stahlzähler"
@@ -18531,7 +18531,7 @@
 		""
 		"Trichter oder Rohre füllen Eisen und Koksstaub von oben nach, eine Kiste vorne nimmt den Stahl. Der Zerkleinerer liefert den Koksstaub dazu."
 		""
-		"&eKronwerke:&r Das Stufenziel will &e4 000 Stahlbarren&r. Häng die Ausgabe direkt an die Kiste am Obelisken."
+		"&eKronwerke:&r Das Stufenziel will &e4 000 Stahlbarren&r. Sammle die Ausgabe in Kisten und bring sie zum Obelisken."
 	]
 	quest.5101E57E0AE8D9E1.quest_subtitle: "Zwölf Plätze gleichzeitig."
 	quest.5101E57E0AE8D9E1.title: "&8&lSchmilz 256 Stahl im Lichtbogenofen"
@@ -18635,7 +18635,7 @@
 		""
 		"The filter has &e9 slots&r. Whitelist means only these items, blacklist everything except these. An empty filter on blacklist takes everything."
 		""
-		"&6Tip:&r Put ores, coal and raw metals on the whitelist, then cobblestone stays in your inventory and goes straight to the obelisk with &e/kw deposit&r."
+		"&6Tip:&r Put ores, coal and raw metals on the whitelist, then cobblestone stays in your inventory, for the obelisk."
 	]
 	quest.518A03BA5EFDE940.quest_subtitle: "What you pick up lands in the backpack."
 	quest.518A03BA5EFDE940.title: "Build a Pickup Upgrade"
@@ -19465,7 +19465,7 @@
 	quest.55790DAB27CCC75B.quest_desc: [
 		"Show that it runs: a stack of cobblestone from the generator, charcoal from the pots, wheat from the field and leather from the pen, all from farms that work without you."
 		""
-		"Now you have time for the chat. The farms fill chests, the feeder at the obelisk counts, and whatever is left you trade with the others: Create players need logs and coal, magicians need Source Gems and mana."
+		"Now you have time for the chat. The farms fill chests, one trip to the obelisk counts them for the goal, and whatever is left you trade with the others: Create players need logs and coal, magicians need Source Gems and mana."
 		""
 		"&eTip:&r Keep the chunks of your farms loaded (Shift and left mouse button on the map, up to 25 chunks), otherwise they stand still as soon as you are far away."
 	]
@@ -19785,7 +19785,7 @@
 	quest.56ED1C8245FC7FA8.quest_subtitle: "Roheisen und Obsidian in einem Feuer."
 	quest.56ED1C8245FC7FA8.title: "&8Schmilz Obsidiansteel"
 	quest.56EF2EFA989FDA9F.quest_desc: [
-		"Ein Bahnhof am Spawn, ein Güterzug, der dort hält, und eine Schleuse, die aus der Portablen Lagerschnittstelle in deinen &eEinspeiser&r lädt. Der Obelisk zieht alle zwei Sekunden ein."
+		"Ein Bahnhof vor dem Spawn, ein Güterzug, der dort hält, und eine Schleuse, die aus der Portablen Lagerschnittstelle in eine Kiste lädt. Von dort trägst du die Ladung die letzten Schritte zum Obelisken und gibst sie von Hand ab."
 		""
 		"&eKronwerke:&r Messingbarren und Präzisionsgetriebe in dieser Stufe, Stahl in der nächsten: die Ziele wollen große Mengen, und ein Zug bringt sie ohne Laufen."
 		""
@@ -19879,7 +19879,7 @@
 		"{image:kronwerke:textures/quests/shots/gaia_goal.png width:224 height:126 align:center}"
 		"Sammle &e64 Gaia-Seelen&r für den Obelisken. Das Ziel will &e128&r (feste Zahl) und &e30 Mystische Stäbe&r aus Mahou Tsukai."
 		""
-		"Mit acht Seelen pro Kampf sind das &esechzehn Kämpfe&r, alle live. Feste Arena, ein Terrastahl pro Kampf, Seelen direkt in die Truhe am Obelisken."
+		"Mit acht Seelen pro Kampf sind das &esechzehn Kämpfe&r, alle live. Feste Arena, ein Terrastahl pro Kampf, Seelen danach von Hand in den Obelisken."
 		""
 		"Sind auch Draconium und Elite-Schaltkreise der Techniker drin, öffnet &6Stufe 5 (Chaoswerk)&r."
 	]
@@ -20360,7 +20360,7 @@
 	quest.592E1500C47B722A.quest_subtitle: "Eine Dimension aus einer Schriftrolle. Stufe 4."
 	quest.592E1500C47B722A.title: "&bBetritt das Reality Marble"
 	quest.5952DC83553966F6.quest_desc: [
-		"Leite &5Erwachte Draconiumblöcke&r in eine Kiste am Obelisken. Den Stand zeigt &e/kw goals&r."
+		"Bring &5Erwachte Draconiumblöcke&r zum Obelisken und gib sie von Hand ab. Den Stand zeigt &e/kw goals&r."
 		""
 		"&eKronwerke:&r Das Ziel von Stufe 5 heißt &5Der Chaoswächter&r: &e64 Erwachte Draconiumblöcke&r (fest) und die Antimaterie-Pellets aus Mekanism. Das sind 16 Fusionen, 16 Drachenherzen, 32 Gaia-Seelenbarren."
 		""
@@ -22101,7 +22101,7 @@
 		""
 		"&eKronwerke:&r The tech pillar wants &61,500 alloys&r (for 30 players) and &e12 Stoneworks Gearboxes&r: four Andesite Casings, Large Cogwheel, press, millstone, water wheel and an Infused Iron. Each counts as much as 125 alloys."
 		""
-		"&eHow to deliver:&r Sneak and right-click at the obelisk hands in everything that fits; a &efeeder&r next to it pulls it in by itself. &e/kw goals&r shows the progress."
+		"&eHow to deliver:&r Sneak and right-click at the obelisk hands in everything that fits. There is no machine that hands in for you. &e/kw goals&r shows the progress."
 	]
 	quest.614A73700EB8ED76.quest_subtitle: "The Stone Works run by themselves."
 	quest.614A73700EB8ED76.title: "&6&lBuild the andesite factory"
@@ -22126,7 +22126,7 @@
 	quest.616773D49EAC39AD.quest_desc: [
 		"Every kind of &6cobblestone&r counts, one point each. The pillar for everyone: anybody can help from the first minute, without machines or magic."
 		""
-		"The fastest way is Ultimine in the farm world or a cobblestone generator at the feeder."
+		"The fastest way is Ultimine in the farm world or a cobblestone generator that fills chests."
 	]
 	quest.616773D49EAC39AD.quest_subtitle: "20,000 cobblestone."
 	quest.616773D49EAC39AD.title: "&7Fill the stone pillar"
@@ -22562,7 +22562,7 @@
 	quest.631378BA5B40D647.quest_subtitle: "Squeezer und Basin mit Strom."
 	quest.631378BA5B40D647.title: "&9Lass Maschinen pressen"
 	quest.6313C6F87318E0DB.quest_desc: [
-		"Leite &6Draconiumbarren&r und &6Elite-Steuerschaltkreise&r in eine Kiste am Obelisken. Den Stand zeigt &e/kw goals&r."
+		"Bring &6Draconiumbarren&r und &6Elite-Steuerschaltkreise&r zum Obelisken und gib sie von Hand ab. Den Stand zeigt &e/kw goals&r."
 		""
 		"&eKronwerke:&r Das Technikziel von Stufe 4 heißt &e1 000 Draconiumbarren&r und &e150 Elite-Steuerschaltkreise&r. Der Magie-Pfeiler will 128 Gaia-Seelen und 30 Mystische Stäbe."
 		""
@@ -23233,11 +23233,11 @@
 	quest.65FDD089F1FF5A18.quest_subtitle: "Afrit possession without red chalk."
 	quest.65FDD089F1FF5A18.title: "&5Draw Odus' Open Convocation"
 	quest.661593931F9FC5C9.quest_desc: [
-		"The &6obelisk&r stands at spawn. Hold a stack and &eright-click&r it. &eSneak&r and right-click delivers everything in your inventory that the goal needs right now. The fallback is &e/kw deposit&r."
+		"The &6obelisk&r stands at spawn. Hold a stack and &eright-click&r it. &eSneak&r and right-click delivers everything in your inventory that the goal needs right now."
 		""
 		"In stage 1 the goal wants &6cobblestone&r, &6Andesite Alloy&r and &6Source Gems&r. Everyone has cobblestone, so don't throw it away. You see how far along it is on the &eboss bar&r at the top and with &e/kw goals&r."
 		""
-		"Everything else, the feeder and the milestones, is explained in the chapter &6Start here&r."
+		"Everything else, the pillars and the milestones, is explained in the chapter &6Start here&r."
 	]
 	quest.661593931F9FC5C9.quest_subtitle: "Every stack counts, even a small one."
 	quest.661593931F9FC5C9.title: "&6Deliver something at the obelisk"
@@ -23848,9 +23848,9 @@
 	quest.692BB8E34F1C80AA.quest_desc: [
 		"Jetzt alles zusammen: Lass das Netz &6Fortgeschrittene Steuerschaltkreise&r für den Obelisken bauen."
 		""
-		"&eSo geht es:&r Ein Verarbeitungsrezept für Gedrucktes Silizium an einer Gravurmaschine von AE2 (Autohersteller davor, Importeur dahinter). Ein zweites für Infundierte Legierung an einer Infusionsanlage, ein drittes für Einfache Steuerschaltkreise aus Elektronenröhren. Ein Herstellungsrezept setzt alles zusammen. Ein Exporteur mit Autoherstellung-Upgrade an einer Kiste neben dem Obelisken hält den Vorrat."
+		"&eSo geht es:&r Ein Verarbeitungsrezept für Gedrucktes Silizium an einer Gravurmaschine von AE2 (Autohersteller davor, Importeur dahinter). Ein zweites für Infundierte Legierung an einer Infusionsanlage, ein drittes für Einfache Steuerschaltkreise aus Elektronenröhren. Ein Herstellungsrezept setzt alles zusammen. Ein Exporteur mit Autoherstellung-Upgrade an einer Kiste hält den Vorrat, bis du ihn zum Obelisken trägst."
 		""
-		"&eKronwerke:&r &e\"Der Ofen schläft nie\"&r will &e250 Fortgeschrittene Steuerschaltkreise&r und &e4 000 Stahlbarren&r. Mit RS ist die Fabrik billiger als mit AE2, denn sie braucht keine Präzisionsgetriebe und keine CPU. Was in der Kiste am Obelisken landet, zählt für dich."
+		"&eKronwerke:&r &e\"Der Ofen schläft nie\"&r will &e250 Fortgeschrittene Steuerschaltkreise&r und &e4 000 Stahlbarren&r. Mit RS ist die Fabrik billiger als mit AE2, denn sie braucht keine Präzisionsgetriebe und keine CPU. Abgegeben wird von Hand am Obelisken."
 		""
 		"Dazu zwei 16k-Zellen, damit das Lager nicht vorher voll ist."
 	]
@@ -24645,7 +24645,7 @@
 		""
 		"Whatever is in the filter is destroyed on arrival. Good for dirt, gravel, diorite."
 		""
-		"&cCareful:&r Cobblestone does not belong in it. For stage 1 the obelisk needs &e20,000 cobblestone&r from the whole server. Hand it in with &e/kw deposit&r."
+		"&cCareful:&r Cobblestone does not belong in it. For stage 1 the obelisk needs &e20,000 cobblestone&r from the whole server. Hand it in at the obelisk."
 	]
 	quest.6CED9FD808309030.quest_subtitle: "Deletes what you don't want."
 	quest.6CED9FD808309030.title: "Build a Void Upgrade"
@@ -27596,7 +27596,7 @@
 		""
 		"An Enrichment Chamber in front turns coal into Enriched Carbon. The ore line from the &5Mekanism: Ore Step by Step&r chapter supplies the iron."
 		""
-		"&eKronwerke:&r Put a chest at the obelisk and hook it to the end. Whatever falls in counts for you towards the 4,000 steel ingots of stage 3."
+		"&eKronwerke:&r Hook a chest to the end. What you carry from it to the obelisk counts for you towards the 4,000 steel ingots of stage 3."
 	]
 	quest.7A34F474AD47630C.quest_subtitle: "Iron in, steel out, without lifting a finger."
 	quest.7A34F474AD47630C.title: "&5&lBuild the steel line"
@@ -27838,7 +27838,7 @@
 		""
 		"Shift-Mausrad wechselt den Modus: &eCast&r wirft eine Perle, &eLong Cast&r wirft weiter, &eBind&r merkt sich eine &6Wraith Node&r (Nebulous Heart plus Smaragd, als Block gesetzt), &eNode Warp&r springt nach 3 Sekunden Rechtsklick dorthin. Jeder Sprung kostet eine Perle."
 		""
-		"&eKronwerke:&r Eine Wraith Node am Obelisken, und jede Lieferung fürs Stufenziel ist einen Rechtsklick entfernt."
+		"&eKronwerke:&r Eine Wraith Node am Rand des Spawns, und der Weg zum Obelisken dauert drei Sekunden."
 	]
 	quest.7BB43D4C7CBA97B5.quest_subtitle: "Perlen werfen und nach Hause springen."
 	quest.7BB43D4C7CBA97B5.title: "&5Bau einen Ender Staff"
@@ -28244,14 +28244,6 @@
 	]
 	quest.7DAF9CEEA0CE6DF8.quest_subtitle: "Productive Bees: die Bienen auf deiner Seite."
 	quest.7DAF9CEEA0CE6DF8.title: "&eSetz den Bienennest-Helm auf"
-	quest.7DB41D51F9FA74EC.quest_desc: [
-		"{image:kronwerke:textures/quests/shots/start_here_o_feeder.png width:224 height:126 align:center}"
-		"The &6feeder&r is a block of its own: a &6hopper&r at the top in the middle, &6andesite alloy&r below it, &e5 cobbled deepslate&r left, right and in the bottom row. Place it at most &e10 blocks&r from the obelisk."
-		""
-		"Whatever a hopper, a pipe or a belt pushes in goes straight into the goal and counts for whoever placed the feeder. It stores nothing: what the goal does not need right now it does not take, it stays in the pipe. A right click shows whose it is and whether it is connected."
-	]
-	quest.7DB41D51F9FA74EC.quest_subtitle: "A block at the obelisk that pays in for you."
-	quest.7DB41D51F9FA74EC.title: "&6Set up a feeder"
 	quest.7DCAC80D27E96240.quest_desc: [
 		"&e2 Enderpulver, 1 Goldpulver&r. Mit Tuch eine Rolle, ohne Tuch ein Kreis am Boden."
 		""
@@ -28602,7 +28594,7 @@
 		""
 		"Er spricht jede Seite des Blocks an, wichtig bei Mekanism-Maschinen. Bis &d100 000 RF/t&r statt 10 000 und &b5 000 mB&r pro Vorgang statt 1 000."
 		""
-		"&eKronwerke:&r Ein Energy- und ein Item-Kanal versorgen eine ganze Stahlstraße: Strom an alle Infusionsanlagen, Kohle und Eisen hinein, Stahl in die Kiste am Obelisken."
+		"&eKronwerke:&r Ein Energy- und ein Item-Kanal versorgen eine ganze Stahlstraße: Strom an alle Infusionsanlagen, Kohle und Eisen hinein, Stahl in die Sammelkiste für den Obelisken."
 	]
 	quest.7F1782BD568028EA.quest_subtitle: "Mehr Durchsatz, jede Seite."
 	quest.7F1782BD568028EA.title: "&eRüste auf Advanced Connector auf"
@@ -28940,7 +28932,7 @@
 	task.1F5F776493CD110E.title: "Elytren getragen"
 	task.1F78BF585ED1EED9.title: "Read"
 	task.1FB532C6EB8593FF.title: "Kern auf dieser Stufe aktiv"
-	task.1FC0858DB786D22E.title: "My farm delivers"
+	task.1FC0858DB786D22E.title: "My farm runs"
 	task.1FD3B35A4DA88A00.title: "Ein Moa ausbrüten"
 	task.1FD71C9257BBA69D.title: "Got it"
 	task.2014C7114CADCFFF.title: "Schlehe (Pflaume + Red-Delicious-Apfel, 10 %)"

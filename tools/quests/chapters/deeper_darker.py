@@ -310,7 +310,7 @@ quests = [
               "",
               "Der Tooltip zeigt Position und Dimension. Mit einem Farbstoff färbst du ihn, so unterscheidest du mehrere. Ist der Chunk nicht geladen, meldet er das und passiert nichts.",
               "",
-              "&eKronwerke:&r Eine Truhe neben dem Obelisken, ein Sender in der Tasche, und du lieferst Zielgegenstände ab, ohne nach Hause zu laufen.",
+              "&eKronwerke:&r Ein Sender auf der Lagerkiste zu Hause, und du holst dir am Obelisken Nachschub für das Stufenziel, ohne zurückzulaufen.",
           ],
           tasks=[task_advancement("deeperdarker:main/obtain_sculk_transmitter", "Einen Sculksender bekommen")],
           rewards=[reward_item("minecraft:ender_chest", 1), reward_xp(15)],

@@ -379,55 +379,16 @@
 			]
 		}
 		{
-			id: "7DB41D51F9FA74EC"
-			x: 4.975d
-			y: 14.209999999999999d
-			icon: {
-				id: "kronwerke:obelisk_intake"
-				count: 1
-			}
-			dependencies: [
-				"793882229B4D2AC6"
-				"203B0E0C696824A8"
-			]
-			tasks: [
-				{
-					id: "33AE5D6CE0521DC2"
-					type: "item"
-					item: {
-						id: "kronwerke:obelisk_intake"
-						count: 1
-					}
-					count: 1
-				}
-			]
-			rewards: [
-				{
-					id: "63A95EA35AB4A702"
-					type: "item"
-					item: {
-						id: "minecraft:hopper"
-						count: 1
-					}
-					count: 2
-				}
-				{
-					id: "215361F5065E5C1B"
-					type: "xp_levels"
-					xp_levels: 3
-				}
-			]
-		}
-		{
 			id: "44F6726A010EADF9"
-			x: 6.975d
+			x: 4.975d
 			y: 14.209999999999999d
 			icon: {
 				id: "minecraft:hopper"
 				count: 1
 			}
 			dependencies: [
-				"7DB41D51F9FA74EC"
+				"793882229B4D2AC6"
+				"203B0E0C696824A8"
 			]
 			tasks: [
 				{
@@ -450,7 +411,7 @@
 		}
 		{
 			id: "616773D49EAC39AD"
-			x: 8.975d
+			x: 6.975d
 			y: 14.209999999999999d
 			icon: {
 				id: "minecraft:cobblestone"
@@ -475,7 +436,7 @@
 		}
 		{
 			id: "6201E5BDB258C810"
-			x: 8.975d
+			x: 6.975d
 			y: 12.709999999999999d
 			icon: {
 				id: "create:andesite_alloy"
@@ -500,7 +461,7 @@
 		}
 		{
 			id: "22221FD1BB9A6413"
-			x: 8.975d
+			x: 6.975d
 			y: 15.709999999999999d
 			icon: {
 				id: "ars_nouveau:source_gem"
@@ -525,7 +486,7 @@
 		}
 		{
 			id: "35C4F06C94471306"
-			x: 10.975d
+			x: 8.975d
 			y: 14.209999999999999d
 			icon: {
 				id: "minecraft:comparator"
@@ -552,7 +513,7 @@
 		}
 		{
 			id: "7B18B82463F286E4"
-			x: 12.975d
+			x: 10.975d
 			y: 14.209999999999999d
 			icon: {
 				id: "minecraft:beacon"
@@ -584,7 +545,7 @@
 		}
 		{
 			id: "21B68B28F1236932"
-			x: 16.35d
+			x: 14.35d
 			y: 12.834999999999999d
 			icon: {
 				id: "naturesaura:gold_fiber"
@@ -624,7 +585,7 @@
 		}
 		{
 			id: "751B269F044FA057"
-			x: 18.35d
+			x: 16.35d
 			y: 12.834999999999999d
 			icon: {
 				id: "naturesaura:gold_leaf"
@@ -654,7 +615,7 @@
 		}
 		{
 			id: "64BF437F7D5CB56E"
-			x: 20.35d
+			x: 18.35d
 			y: 12.834999999999999d
 			icon: {
 				id: "naturesaura:wood_stand"
@@ -702,7 +663,7 @@
 		}
 		{
 			id: "13CC7CBA4391431C"
-			x: 22.55d
+			x: 20.55d
 			y: 12.834999999999999d
 			icon: {
 				id: "naturesaura:token_joy"
@@ -741,7 +702,7 @@
 		}
 		{
 			id: "52265AF68B03EAFC"
-			x: 24.55d
+			x: 22.549999999999997d
 			y: 12.834999999999999d
 			icon: {
 				id: "naturesaura:nature_altar"
@@ -780,7 +741,7 @@
 		}
 		{
 			id: "6BDF7D92D3733C02"
-			x: 26.55d
+			x: 24.549999999999997d
 			y: 12.834999999999999d
 			icon: {
 				id: "naturesaura:infused_iron"
@@ -819,7 +780,7 @@
 		}
 		{
 			id: "73969B96CAA509C8"
-			x: 28.55d
+			x: 26.549999999999997d
 			y: 12.834999999999999d
 			icon: {
 				id: "kronwerke:stone_gearbox"
@@ -858,7 +819,7 @@
 		}
 		{
 			id: "47C51A9763F1E7C6"
-			x: 20.35d
+			x: 18.35d
 			y: 14.459999999999999d
 			icon: {
 				id: "kronwerke:source_keystone"
@@ -897,7 +858,7 @@
 		}
 		{
 			id: "3D97518706CB1359"
-			x: 16.35d
+			x: 14.35d
 			y: 16.185d
 			icon: {
 				id: "create:andesite_casing"
@@ -973,7 +934,7 @@
 		}
 		{
 			id: "232810208ED5820D"
-			x: 24.55d
+			x: 22.549999999999997d
 			y: 14.334999999999999d
 			icon: {
 				id: "botania:livingrock"
@@ -1012,7 +973,7 @@
 		}
 		{
 			id: "5AF877D13DE617C3"
-			x: 16.35d
+			x: 14.35d
 			y: 14.334999999999999d
 			icon: {
 				id: "botania:mana_diamond"
@@ -1043,7 +1004,7 @@
 		}
 		{
 			id: "3B268BFFFDB0AD9A"
-			x: 18.35d
+			x: 16.35d
 			y: 14.334999999999999d
 			icon: {
 				id: "ars_nouveau:source_gem_block"
@@ -2038,7 +1999,7 @@
 		{
 			id: "5361CCE33EFE28BE"
 			image: "kronwerke:textures/quests/start_here/milestones.png"
-			x: 18.565d
+			x: 16.564999999999998d
 			y: 11.259999999999998d
 			width: 5.43d
 			height: 0.9d
@@ -2048,7 +2009,7 @@
 		{
 			id: "185D1D04622AA36C"
 			image: "kronwerke:textures/quests/start_here/season.png"
-			x: 16.860000000000003d
+			x: 14.86d
 			y: 17.535d
 			width: 2.02d
 			height: 0.7d

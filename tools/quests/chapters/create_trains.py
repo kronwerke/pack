@@ -354,7 +354,7 @@ quests = [
     quest("obelisk_line", B + 6, 20.5, "&6&lFahr eine Linie zum Obelisken",
           subtitle="Alle Wege führen zum Spawn.",
           description=[
-              "Ein Bahnhof am Spawn, ein Güterzug, der dort hält, und eine Schleuse, die aus der Portablen Lagerschnittstelle in deinen &eEinspeiser&r lädt. Der Obelisk zieht alle zwei Sekunden ein.",
+              "Ein Bahnhof vor dem Spawn, ein Güterzug, der dort hält, und eine Schleuse, die aus der Portablen Lagerschnittstelle in eine Kiste lädt. Von dort trägst du die Ladung die letzten Schritte zum Obelisken und gibst sie von Hand ab.",
               "",
               "&eKronwerke:&r Messingbarren und Präzisionsgetriebe in dieser Stufe, Stahl in der nächsten: die Ziele wollen große Mengen, und ein Zug bringt sie ohne Laufen.",
               "",

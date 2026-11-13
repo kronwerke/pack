@@ -323,7 +323,7 @@ quests = [
     quest("goal", 10, 12.5, "&5&lBring Antimaterie zum Obelisken",
           subtitle="Die größte Fabrik der Season.",
           description=[
-              "Lass den Kristallisator direkt in eine Kiste am Obelisken laufen. Den Stand zeigt &e/kw goals&r.",
+              "Lass den Kristallisator in eine Kiste laufen und bring die Pellets selbst zum Obelisken. Den Stand zeigt &e/kw goals&r.",
               "",
               "&eKronwerke:&r Das Ziel von Stufe 5 heißt &5Der Chaoswächter&r: &e64 Erwachte Draconiumblöcke&r und &e100 Antimaterie-Pellets&r. Teilt euch auf: einer die Reaktoren, einer die Aktivatoren, einer das Kraftwerk.",
           ],

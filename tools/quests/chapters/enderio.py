@@ -162,7 +162,7 @@ quests = [
           [reward_item("minecraft:obsidian", 8), reward_xp(3)]),
     alloy("steel_alloy", 13, 1, "&7Legier Stahl", "Eisen und Kohlestaub, ein Barren.",
           "Ein &6Eisenbarren&r und ein &6Kohlestaub&r geben einen &6Stahlbarren&r von Oritech.",
-          "&eKronwerke:&r Jeder Stahlbarren zählt am Obelisken für &6Der Ofen schläft nie&r. Sägemühle für Kohlestaub davor, Kiste am Obelisken dahinter: eine kleine Stahlstraße.",
+          "&eKronwerke:&r Jeder Stahlbarren zählt am Obelisken für &6Der Ofen schläft nie&r. Sägemühle für Kohlestaub davor, Kiste dahinter: eine kleine Stahlstraße.",
           "oritech:steel_ingot", 32,
           [reward_item("minecraft:iron_ingot", 16), reward_xp(5)], section="alloys"),
     alloy("fused_quartz", 15.5, 1, "&fSchmelz Quarzglas und Klares Glas", "Durchsichtig, und manches leuchtet.",

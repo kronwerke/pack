@@ -3,6 +3,21 @@ import numpy as np
 from px import Canvas
 
 BASE = 173
+LOOP = 200          # frames of the whole animation, 10 per second
+STILL = 60          # the frame used as the still picture: the train stands at the works
+
+
+def train_x(t):
+    """Where the rear wagon is at frame t, or None while no train is on the track: in, wait, out, pause."""
+    if t < 40:
+        u = t / 40.0
+        return int(round(-80 + 108 * (1 - (1 - u) ** 2)))
+    if t < 80:
+        return 28
+    if t < 160:
+        u = (t - 80) / 80.0
+        return int(round(28 + 470 * u * u))
+    return None
 
 
 def blend(a, col, k):
@@ -113,26 +128,50 @@ def crown(b, P, cx, base, w, h):
     return m
 
 
-def smoke(c, P, x, y, seed, n=7, drift=-3.4, rise=6.0, size=1.0):
-    rng = np.random.default_rng(seed)
+def puffs_paint(c, P, body):
     S = P['smoke']
-    body = c.none()
-    puffs = []
-    for i in range(n):
-        f = i / float(n - 1)
-        cx = x + drift * i * (0.6 + f) + rng.uniform(-1.5, 1.5)
-        cy = y - rise * i - rng.uniform(0, 2)
-        r = (2.4 + 7.5 * f ** 0.9) * size
-        for _ in range(3):
-            puffs.append((cx + rng.uniform(-r * 0.5, r * 0.5), cy + rng.uniform(-r * 0.3, r * 0.3), r * rng.uniform(0.55, 0.85)))
-    for cx, cy, r in puffs:
-        body |= c.ellipse(cx, cy, r * 1.2, r)
     c.fill(body, S[2])
-    core = body & c.shift(body, 2, -2) & c.shift(body, 4, -3)
-    c.fill(core, S[3])
-    lit = body & ~c.shift(body, -2, 1) & ~c.shift(body, -1, 2)
+    c.fill(body & c.shift(body, 2, -2) & c.shift(body, 4, -3), S[3])
     c.fill(body & ~c.shift(body, -3, 2), S[1])
-    c.fill(lit, S[0])
+    c.fill(body & ~c.shift(body, -2, 1) & ~c.shift(body, -1, 2), S[0])
+
+
+def smoke(c, P, x, y, seed, t=STILL, period=40, n=7, drift=-3.4, rise=6.0, size=1.0):
+    """A plume of n puffs that are born at the chimney, rise, grow and dissolve; it repeats every period frames."""
+    body = c.none()
+    for k in range(n):
+        rng = np.random.default_rng(seed * 100 + k)
+        age = (t / float(period) * n + k) % n
+        f = min(1.0, age / float(n - 1))
+        cx = x + drift * age * (0.6 + f) + rng.uniform(-1.5, 1.5)
+        cy = y - rise * age - rng.uniform(0, 2)
+        r = (2.4 + 7.5 * f ** 0.9) * size
+        r *= min(1.0, 0.35 + age) * min(1.0, (n - age) * 1.4)
+        for _ in range(3):
+            ox, oy, k2 = rng.uniform(-0.5, 0.5), rng.uniform(-0.3, 0.3), rng.uniform(0.55, 0.85)
+            if r * k2 > 0.8:
+                body |= c.ellipse(cx + ox * r, cy + oy * r, r * k2 * 1.2, r * k2)
+    puffs_paint(c, P, body)
+
+
+def trail(c, P, t, ry):
+    """The engine's smoke: every puff stays where it left the funnel, rises and thins out."""
+    body = c.none()
+    for a in range(0, 27, 3):
+        te = t - a - (t % 3)
+        x = train_x(te % LOOP) if te >= 0 else train_x(te + LOOP)
+        if x is None:
+            continue
+        fx = x + 42 + 23
+        fy = int(ry[min(c.w - 1, max(0, fx))]) + 3 + 2 - 19
+        rng = np.random.default_rng(900 + (te // 3) % 67)
+        age = a + (t % 3)
+        r = 1.7 + 0.2 * age
+        if age > 20:
+            r *= (27 - age) / 7.0
+        if r > 0.8:
+            body |= c.ellipse(fx - 0.45 * age + rng.uniform(-1, 1), fy - 0.9 * age + rng.uniform(-1, 1), r * 1.2, r)
+    puffs_paint(c, P, body)
 
 
 def chimney(b, P, x, top, base, w=6):
@@ -144,15 +183,15 @@ def chimney(b, P, x, top, base, w=6):
     b.fill(b.rect(x + 1, top - 1, x + w - 1, top), P['dark'])
 
 
-def obelisk(c, P, x, base, h, night):
+def obelisk(c, P, x, base, h, night, v=0):
     S = P['stone']
     # the beam first, so the stone covers its foot
     for y in range(base - h - 1, 8, -1):
         f = (base - h - y) / float(base - h - 8)
-        if f < 0.3 or c.bayer[y, x] < 1.25 - f * 1.3:
+        if f < 0.3 or c.bayer[(y + v) % c.h, x] < 1.25 - f * 1.3:
             c.px(x, y, P['beam'])
         for dx in (-1, 1):
-            if f < 0.12 or c.bayer[y, x + dx] < 0.3 - f * 0.9:
+            if f < 0.12 or c.bayer[(y + v * 2) % c.h, x + dx] < 0.3 - f * 0.9:
                 c.px(x + dx, y, P['glow'][2])
     m = c.poly([(x - 6, base), (x - 4, base - h + 8), (x, base - h), (x + 4, base - h + 8), (x + 6, base)])
     c.ramp(m, [S[2], S[3], S[4]], 1 - (c.xx - (x - 6)) / 13.0 + 0.2, soft=0.25)
@@ -179,9 +218,14 @@ def halo(c, cx, cy, r, col, only=None, k=(0.07, 0.16, 0.3)):
         c.a[m] = blend(c.a[m], col, kk if i == 0 else kk - k[i - 1])
 
 
-def train(c, P, x, y):
-    """A small steam engine with two wagons, heading right; x, y is the rail under the rear wagon."""
+def train(c, P, x, ry):
+    """A small steam engine with two wagons, heading right; x is the rear wagon's left edge, ry the rail's height per column."""
     K, B, Wd, D = P['brass'], P['brick'], P['wood'], P['dark']
+
+    def rail(px_):
+        return int(ry[min(c.w - 1, max(0, int(px_)))]) + 3
+
+    y = rail(x + 9)
 
     def wheel(wx, wy, r=2.6):
         c.fill(c.ellipse(wx, wy, r), D); c.fill(c.ellipse(wx, wy, r - 1.2), K[3]); c.px(int(wx), int(wy), K[1])
@@ -201,9 +245,9 @@ def train(c, P, x, y):
         wheel(wx + 4, wy - 1); wheel(wx + 14, wy - 1)
 
     wagon(x, y, 'crates')
-    wagon(x + 21, y + 1, 'ore')
-    lx, ly = x + 42, y + 2
-    c.fill(c.rect(lx - 2, ly - 5, lx, ly - 4), D); c.fill(c.rect(x + 19, y - 4, x + 21, y - 3), D)
+    wagon(x + 21, rail(x + 30), 'ore')
+    lx, ly = x + 42, rail(x + 56)
+    c.fill(c.rect(lx - 2, ly - 5, lx, ly - 4), D); c.fill(c.rect(x + 19, rail(x + 30) - 4, x + 21, rail(x + 30) - 3), D)
     # cab
     c.fill(c.rect(lx, ly - 16, lx + 10, ly - 3), B[2]); c.fill(c.rect(lx, ly - 16, lx + 10, ly - 15), B[0]); c.fill(c.rect(lx + 9, ly - 16, lx + 10, ly - 3), B[1])
     c.fill(c.rect(lx - 1, ly - 18, lx + 11, ly - 16), P['roof'][2]); c.fill(c.rect(lx - 1, ly - 18, lx + 11, ly - 17), P['roof'][0])
@@ -241,12 +285,14 @@ def rails(c, P, g, f):
     return ys
 
 
-def birds(c, P):
-    for x, y, s in ((92, 62, 1), (104, 56, 1), (84, 72, 0), (228, 96, 0), (310, 44, 1), (322, 50, 0), (40, 128, 0)):
+def birds(c, P, t=STILL):
+    up = (t // 5) % 2
+    for i, (x, y, s) in enumerate(((92, 62, 1), (104, 56, 1), (84, 72, 0), (228, 96, 0), (310, 44, 1), (322, 50, 0), (40, 128, 0))):
         col = P['dark']
-        c.px(x, y, col); c.px(x - 1, y - 1, col); c.px(x + 1, y - 1, col)
+        w = -1 if (up + i) % 2 else 1          # wings up or down
+        c.px(x, y, col); c.px(x - 1, y + w * -1 if False else y - 1 * w, col); c.px(x + 1, y - 1 * w, col)
         if s:
-            c.px(x - 2, y - 1, col); c.px(x + 2, y - 1, col); c.px(x - 3, y, col); c.px(x + 3, y, col)
+            c.px(x - 2, y - 1 * w, col); c.px(x + 2, y - 1 * w, col); c.px(x - 3, y, col); c.px(x + 3, y, col)
 
 
 def lantern(c, P, x, base, h=11):
@@ -257,8 +303,16 @@ def lantern(c, P, x, base, h=11):
     c.px(x + 2, base - h + 2, P['glow'][2]); c.px(x + 4, base - h + 3, P['glow'][2])
 
 
-def draw(c, P, g, night):
+_HALL = {}
+
+
+def draw(c, P, g, night, t=STILL):
+    v = (t // 5) % 4
+    key = id(P)
     b = Canvas(c.w, c.h)
+    if key in _HALL:
+        b.a, b.alpha = _HALL[key][0].copy(), _HALL[key][1].copy()
+    cached = key in _HALL
     B, K, S = P['brick'], P['brass'], P['stone']
 
     # long evening shadow on the grass, falling to the left
@@ -268,91 +322,95 @@ def draw(c, P, g, night):
         hit = sh & (c.a == np.array(G[i], np.uint8)).all(axis=2)
         c.fill(hit, G[min(len(G) - 1, i + 2)])
 
-    # ---- west workshop -------------------------------------------------------
-    wx0, wx1, wy = 64, 112, 143
-    brick(b, b.rect(wx0, wy, wx1, BASE), P, seed=1)
-    roof = b.poly([(wx0 - 4, wy), (wx0 + 8, wy - 14), (wx1 + 2, wy - 14), (wx1 + 2, wy)])
-    slate(b, roof, P)
-    b.fill(b.rect(wx0 - 4, wy, wx1, wy + 2), K[3]); b.fill(b.rect(wx0 - 4, wy, wx1, wy + 1), K[1])
-    for x in (71, 85, 99):
-        window(b, P, x, 151, 7, 14, night)
-    # tank on the far left
-    tank = b.rect(46, 150, 62, BASE)
-    b.ramp(tank, [K[4], K[3], K[2], K[1], K[2]], (b.xx - 46) / 16.0, soft=0.4)
-    b.fill(b.ellipse(53.5, 150, 8, 3) & (b.yy <= 150), K[2])
-    b.fill(b.rect(46, 157, 62, 158), K[5]); b.fill(b.rect(46, 166, 62, 167), K[5])
-    b.fill(b.rect(52, 141, 55, 148), K[3]); b.fill(b.rect(52, 141, 70, 143), K[3]); b.fill(b.rect(52, 141, 70, 142), K[1])
+    if not cached:
+        # ---- west workshop -------------------------------------------------------
+        wx0, wx1, wy = 64, 112, 143
+        brick(b, b.rect(wx0, wy, wx1, BASE), P, seed=1)
+        roof = b.poly([(wx0 - 4, wy), (wx0 + 8, wy - 14), (wx1 + 2, wy - 14), (wx1 + 2, wy)])
+        slate(b, roof, P)
+        b.fill(b.rect(wx0 - 4, wy, wx1, wy + 2), K[3]); b.fill(b.rect(wx0 - 4, wy, wx1, wy + 1), K[1])
+        for x in (71, 85, 99):
+            window(b, P, x, 151, 7, 14, night)
+        # tank on the far left
+        tank = b.rect(46, 150, 62, BASE)
+        b.ramp(tank, [K[4], K[3], K[2], K[1], K[2]], (b.xx - 46) / 16.0, soft=0.4)
+        b.fill(b.ellipse(53.5, 150, 8, 3) & (b.yy <= 150), K[2])
+        b.fill(b.rect(46, 157, 62, 158), K[5]); b.fill(b.rect(46, 166, 62, 167), K[5])
+        b.fill(b.rect(52, 141, 55, 148), K[3]); b.fill(b.rect(52, 141, 70, 143), K[3]); b.fill(b.rect(52, 141, 70, 142), K[1])
 
-    # ---- main hall -----------------------------------------------------------
-    hx0, hx1, hy = 108, 184, 121
-    brick(b, b.rect(hx0, hy, hx1, BASE), P, seed=2)
-    roof = b.poly([(hx0 - 4, hy), (hx0 + 14, hy - 24), (hx1 - 6, hy - 24), (hx1 + 3, hy)])
-    slate(b, roof, P)
-    b.fill(b.rect(hx0 - 4, hy, hx1 + 3, hy + 2), K[3]); b.fill(b.rect(hx0 - 4, hy, hx1 + 3, hy + 1), K[1])
-    b.fill(b.rect(hx0, hy + 2, hx1, hy + 4), B[4])
-    # stone plinth
-    brick(b, b.rect(hx0 - 1, BASE - 6, hx1 + 1, BASE), P, seed=3, key='stone', bw=9, bh=3)
-    # gate
-    gx0, gx1, gy = 136, 158, 143
-    arch = b.rect(gx0, gy + 10, gx1, BASE) | (b.ellipse((gx0 + gx1 - 1) / 2.0, gy + 11, 11.2) & (b.yy <= gy + 11))
-    b.fill(arch, K[3])
-    b.fill(arch & ~b.shift(arch, 1, 1), K[1])
-    inner = b.rect(gx0 + 2, gy + 11, gx1 - 2, BASE) | (b.ellipse((gx0 + gx1 - 1) / 2.0, gy + 11, 9.0) & (b.yy <= gy + 11))
-    d = np.hypot((b.xx - 147) / 11.0, (b.yy - (BASE - 4)) / 26.0)
-    G = P['glow']
-    b.ramp(inner, [G[0], G[1], G[2], G[3], B[3]], d * 0.95, soft=0.6)
-    b.fill(inner & (b.xx == 147), B[4])
-    b.fill(inner & (b.yy == gy + 11), B[4])
-    for x in (139, 143, 151, 155):
-        b.fill(inner & (b.xx == x) & (b.yy < gy + 11), B[4])
-    # hall windows and the big wheel over the gate
-    for x in (114, 125, 163, 174):
-        window(b, P, x, 141, 7, 20, night)
-    gear(b, P, 147, 131, 7, teeth=10)
-    # dormers on the roof
-    for x in (124, 164):
-        b.fill(b.poly([(x - 1, 112), (x + 4, 106), (x + 9, 112)]), P['roof'][3])
-        b.fill(b.rect(x, 112, x + 9, 119), B[3])
-        b.fill(b.rect(x + 2, 113, x + 7, 118), G[1]); b.fill(b.rect(x + 4, 113, x + 5, 118), B[4])
-    chimney(b, P, 117, 76, 100)
-    chimney(b, P, 170, 84, 100, w=5)
+        # ---- main hall -----------------------------------------------------------
+        hx0, hx1, hy = 108, 184, 121
+        brick(b, b.rect(hx0, hy, hx1, BASE), P, seed=2)
+        roof = b.poly([(hx0 - 4, hy), (hx0 + 14, hy - 24), (hx1 - 6, hy - 24), (hx1 + 3, hy)])
+        slate(b, roof, P)
+        b.fill(b.rect(hx0 - 4, hy, hx1 + 3, hy + 2), K[3]); b.fill(b.rect(hx0 - 4, hy, hx1 + 3, hy + 1), K[1])
+        b.fill(b.rect(hx0, hy + 2, hx1, hy + 4), B[4])
+        # stone plinth
+        brick(b, b.rect(hx0 - 1, BASE - 6, hx1 + 1, BASE), P, seed=3, key='stone', bw=9, bh=3)
+        # gate
+        gx0, gx1, gy = 136, 158, 143
+        arch = b.rect(gx0, gy + 10, gx1, BASE) | (b.ellipse((gx0 + gx1 - 1) / 2.0, gy + 11, 11.2) & (b.yy <= gy + 11))
+        b.fill(arch, K[3])
+        b.fill(arch & ~b.shift(arch, 1, 1), K[1])
+        inner = b.rect(gx0 + 2, gy + 11, gx1 - 2, BASE) | (b.ellipse((gx0 + gx1 - 1) / 2.0, gy + 11, 9.0) & (b.yy <= gy + 11))
+        d = np.hypot((b.xx - 147) / 11.0, (b.yy - (BASE - 4)) / 26.0)
+        G = P['glow']
+        b.ramp(inner, [G[0], G[1], G[2], G[3], B[3]], d * 0.95, soft=0.6)
+        b.fill(inner & (b.xx == 147), B[4])
+        b.fill(inner & (b.yy == gy + 11), B[4])
+        for x in (139, 143, 151, 155):
+            b.fill(inner & (b.xx == x) & (b.yy < gy + 11), B[4])
+        # hall windows and the big wheel over the gate
+        for x in (114, 125, 163, 174):
+            window(b, P, x, 141, 7, 20, night)
+        # dormers on the roof
+        for x in (124, 164):
+            b.fill(b.poly([(x - 1, 112), (x + 4, 106), (x + 9, 112)]), P['roof'][3])
+            b.fill(b.rect(x, 112, x + 9, 119), B[3])
+            b.fill(b.rect(x + 2, 113, x + 7, 118), G[1]); b.fill(b.rect(x + 4, 113, x + 5, 118), B[4])
+        chimney(b, P, 117, 76, 100)
+        chimney(b, P, 170, 84, 100, w=5)
 
-    # ---- tower ---------------------------------------------------------------
-    tx0, tx1, ty = 184, 210, 66
-    brick(b, b.rect(tx0, ty, tx1, BASE), P, seed=4, lit_from=tx0 - 6)
-    for y in range(ty, BASE, 6):
-        b.fill(b.rect(tx0, y, tx0 + 3, y + 3), S[2]); b.fill(b.rect(tx1 - 3, y + 3, tx1, y + 6), S[1])
-    brick(b, b.rect(tx0 - 1, BASE - 8, tx1 + 1, BASE), P, seed=5, key='stone', bw=9, bh=3)
-    # platform and battlement
-    b.fill(b.rect(tx0 - 3, ty - 4, tx1 + 3, ty), S[2]); b.fill(b.rect(tx0 - 3, ty - 4, tx1 + 3, ty - 3), S[0])
-    b.fill(b.rect(tx0 - 3, ty - 1, tx1 + 3, ty), S[4])
-    for x in range(tx0 - 3, tx1 + 3, 6):
-        b.fill(b.rect(x, ty - 8, x + 4, ty - 4), S[2]); b.fill(b.rect(x, ty - 8, x + 4, ty - 7), S[0]); b.fill(b.rect(x + 3, ty - 8, x + 4, ty - 4), S[0])
-    # the crown on top
-    crown(b, P, 197, ty - 8, 30, 24)
-    # clock wheel, windows, door
-    b.fill(b.ellipse(197, 92, 11.5), S[3]); b.fill(b.ellipse(197, 92, 10.3), P['dark'])
-    gear(b, P, 197, 92, 7, teeth=12, phase=0.3)
-    window(b, P, 193, 112, 8, 16, night)
-    window(b, P, 193, 136, 8, 14, night)
-    door = b.rect(193, 158, 202, BASE) | (b.ellipse(197, 158, 4.6) & (b.yy <= 158))
-    b.fill(door, P['wood'][3]); b.fill(b.rect(194, 158, 201, BASE), P['wood'][2]); b.fill(b.rect(197, 156, 198, BASE), P['wood'][3])
-    b.px(199, 166, K[1])
-    b.fill(b.rect(tx0, 106, tx1, 108), K[3]); b.fill(b.rect(tx0, 106, tx1, 107), K[1])
-    b.fill(b.rect(tx0, 130, tx1, 132), K[3]); b.fill(b.rect(tx0, 130, tx1, 131), K[1])
+        # ---- tower ---------------------------------------------------------------
+        tx0, tx1, ty = 184, 210, 66
+        brick(b, b.rect(tx0, ty, tx1, BASE), P, seed=4, lit_from=tx0 - 6)
+        for y in range(ty, BASE, 6):
+            b.fill(b.rect(tx0, y, tx0 + 3, y + 3), S[2]); b.fill(b.rect(tx1 - 3, y + 3, tx1, y + 6), S[1])
+        brick(b, b.rect(tx0 - 1, BASE - 8, tx1 + 1, BASE), P, seed=5, key='stone', bw=9, bh=3)
+        # platform and battlement
+        b.fill(b.rect(tx0 - 3, ty - 4, tx1 + 3, ty), S[2]); b.fill(b.rect(tx0 - 3, ty - 4, tx1 + 3, ty - 3), S[0])
+        b.fill(b.rect(tx0 - 3, ty - 1, tx1 + 3, ty), S[4])
+        for x in range(tx0 - 3, tx1 + 3, 6):
+            b.fill(b.rect(x, ty - 8, x + 4, ty - 4), S[2]); b.fill(b.rect(x, ty - 8, x + 4, ty - 7), S[0]); b.fill(b.rect(x + 3, ty - 8, x + 4, ty - 4), S[0])
+        # the crown on top
+        crown(b, P, 197, ty - 8, 30, 24)
+        # clock wheel, windows, door
+        b.fill(b.ellipse(197, 92, 11.5), S[3]); b.fill(b.ellipse(197, 92, 10.3), P['dark'])
+        window(b, P, 193, 112, 8, 16, night)
+        window(b, P, 193, 136, 8, 14, night)
+        door = b.rect(193, 158, 202, BASE) | (b.ellipse(197, 158, 4.6) & (b.yy <= 158))
+        b.fill(door, P['wood'][3]); b.fill(b.rect(194, 158, 201, BASE), P['wood'][2]); b.fill(b.rect(197, 156, 198, BASE), P['wood'][3])
+        b.px(199, 166, K[1])
+        b.fill(b.rect(tx0, 106, tx1, 108), K[3]); b.fill(b.rect(tx0, 106, tx1, 107), K[1])
+        b.fill(b.rect(tx0, 130, tx1, 132), K[3]); b.fill(b.rect(tx0, 130, tx1, 131), K[1])
 
-    # ---- east wing with the half wheel --------------------------------------
-    ex0, ex1, ey = 210, 234, 148
-    brick(b, b.rect(ex0, ey, ex1, BASE), P, seed=6, key='stone', bw=8, bh=4, lit_from=ex0 - 10)
-    roof = b.poly([(ex0, ey), (ex0, ey - 9), (ex1 - 3, ey - 9), (ex1 + 3, ey)])
-    slate(b, roof, P)
-    b.fill(b.rect(ex0, ey, ex1 + 3, ey + 1), K[1])
-    window(b, P, 216, 155, 7, 12, night)
-    gear(b, P, 236, 166, 9, teeth=12, phase=0.1)
+        # ---- east wing with the half wheel --------------------------------------
+        ex0, ex1, ey = 210, 234, 148
+        brick(b, b.rect(ex0, ey, ex1, BASE), P, seed=6, key='stone', bw=8, bh=4, lit_from=ex0 - 10)
+        roof = b.poly([(ex0, ey), (ex0, ey - 9), (ex1 - 3, ey - 9), (ex1 + 3, ey)])
+        slate(b, roof, P)
+        b.fill(b.rect(ex0, ey, ex1 + 3, ey + 1), K[1])
+        window(b, P, 216, 155, 7, 12, night)
 
-    # pipes across the front
-    b.fill(b.rect(62, 146, 64, BASE), K[3]); b.fill(b.rect(63, 146, 64, BASE), K[1])
-    b.fill(b.rect(104, 126, 108, 128), K[3]); b.fill(b.rect(104, 126, 106, 146), K[3]); b.fill(b.rect(105, 126, 106, 146), K[1])
+        # pipes across the front
+        b.fill(b.rect(62, 146, 64, BASE), K[3]); b.fill(b.rect(63, 146, 64, BASE), K[1])
+        b.fill(b.rect(104, 126, 108, 128), K[3]); b.fill(b.rect(104, 126, 106, 146), K[3]); b.fill(b.rect(105, 126, 106, 146), K[1])
+
+        _HALL[key] = (b.a.copy(), b.alpha.copy())
+    # the wheels turn: one tooth every eight frames (the water wheel every ten)
+    gear(b, P, 147, 131, 7, teeth=10, phase=-(t % 8) / 8.0 * (2 * np.pi / 10))
+    gear(b, P, 197, 92, 7, teeth=12, phase=0.3 + (t % 8) / 8.0 * (2 * np.pi / 12))
+    gear(b, P, 236, 166, 9, teeth=12, phase=0.1 + (t % 10) / 10.0 * (2 * np.pi / 12))
 
     # rim light from the sun on every right-hand edge, cool shade on the left
     rim = b.alpha & ~b.shift(b.alpha, -1, 0)
@@ -361,25 +419,28 @@ def draw(c, P, g, night):
     b.a[lee] = blend(b.a[lee], P['dark'], 0.45)
 
     # smoke goes behind the buildings, so draw it on the scene first
-    smoke(c, P, 120, 74, 5)
-    smoke(c, P, 172, 82, 6, n=8, drift=-2.2)
-    birds(c, P)
+    smoke(c, P, 120, 74, 5, t)
+    smoke(c, P, 172, 82, 6, t + 13, n=8, drift=-2.2)
+    birds(c, P, t)
     c.paste(b)
 
     # ---- things in front -----------------------------------------------------
-    obelisk(c, P, 256, int(g[256]) + 1, 56, night)
+    obelisk(c, P, 256, int(g[256]) + 1, 56, night, v)
     path = c.poly([(140, BASE), (155, BASE), (176, 196), (214, 222), (262, 252), (222, 252), (176, 226), (146, 198)])
     c.ramp(path, P['path'], (c.yy - BASE) / 80.0 + (c.bayer - 0.5) * 0.3, soft=0.6)
     c.fill(path & ~c.shift(path, 1, 0), P['path'][2])
     ry = rails(c, P, g, None)
     for x, y in ((132, BASE + 2), (164, BASE + 4), (146, 198), (232, 232)):
         lantern(c, P, x, y)
-    cx, cy = train(c, P, 28, int(ry[40]) + 3)
-    smoke(c, P, cx, cy, 12, n=5, drift=-3.2, rise=3.4, size=0.55)
+    trail(c, P, t, ry)
+    tx = train_x(t % LOOP)
+    if tx is not None:
+        train(c, P, tx, ry)
     # warm light: the gate on the path, the lanterns, the windows at night
     halo(c, 147, BASE + 6, 30 if night else 22, P['glow'][2], only=c.below(g))
-    for x, y in ((135, BASE - 7), (167, BASE - 5), (149, 189), (235, 223)):
-        halo(c, x, y, 13 if night else 8, P['glow'][2])
+    for i, (x, y) in enumerate(((135, BASE - 7), (167, BASE - 5), (149, 189), (235, 223))):
+        flick = ((t // 4 + i) % 2) if i >= 2 else 0          # only the two lanterns by the track flicker
+        halo(c, x, y, (13 if night else 8) + flick, P['glow'][2])
     # low stone wall along the terrace
     for x0, x1 in ((58, 130), (166, 242)):
         wall = c.rect(x0, BASE - 1, x1, BASE + 4) & c.below(g - 2)

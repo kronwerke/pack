@@ -65,7 +65,7 @@ Test on a server: install NeoForge 21.1.252, then run `packwiz-installer-bootstr
 
 ## Planned
 
-- A screen for the obelisk (needs Kronwerke Core on clients). Depositing and feeders work since Core 0.3.0.
+- A screen for the obelisk (needs Kronwerke Core on clients). Depositing works since Core 0.3.0, by hand at the obelisk only since Core 0.39.30.
 - A lite client profile for weaker machines.
 
 ## Non-goals

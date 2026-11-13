@@ -155,7 +155,7 @@ About a hundred recipe changes tie the mods together and make the first steps sl
 
 ## What the obelisk is
 
-Any block at spawn, picked by an admin with `/kw admin obelisk set` (Kronwerke Core 0.3.0). Right click hands in the stack in your hand, sneak and right click everything that fits. A chest or barrel placed next to it becomes the feeder of whoever placed it: factories pipe into it and every two seconds the goal takes what it can use, counted for that player. That is the point of the tech pillar. `/kw deposit` stays as the fallback.
+Any block at spawn, picked by an admin with `/kw admin obelisk set` (Kronwerke Core 0.3.0). Right click hands in the stack in your hand, sneak and right click everything that fits. That is the only way in since Core 0.39.30: no command, no menu button, no feeder block and no chest next to it. Factories fill chests, players carry the yield to the obelisk.
 
 Later, with Core on the clients: a screen with both pillars, progress bars and the top contributors.
 

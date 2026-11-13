@@ -33,8 +33,15 @@ NS = uuid.UUID('6b726f6e-7765-726b-6500-000000000000')
 NONE = '-2147483648'
 
 
+_SEEN = {}
+
+
 def uid(name):
-    return f'{uuid.uuid5(NS, name)}-{STAMP}'
+    """An identifier in FancyMenu's form, uuid plus a time. The times rise in the order of first use: FancyMenu
+    was seen to stack elements whose times are equal in an order of its own."""
+    if name not in _SEEN:
+        _SEEN[name] = len(_SEEN)
+    return f'{uuid.uuid5(NS, name)}-{int(STAMP) + _SEEN[name]}'
 
 
 def ph(name, **values):
@@ -204,9 +211,33 @@ COL = -164          # left edge of the button column, from the right screen edge
 CW = 148
 
 
+# The moving parts of the picture: cut-outs of the frames `art()` renders, laid over the still.
+# name, region (x0, y0, x1, y1) on the 480x270 grid, frames, milliseconds per frame. Order is
+# bottom to top: a later one lies over an earlier one where they overlap.
+SPRITES = [
+    ('slow', (0, 0, 480, 214), [0, 5, 10, 15], 500),           # stars, glitter on the water, the obelisk's beam, birds
+    ('smoke', (66, 6, 186, 104), list(range(40)), 100),        # both chimneys
+    ('train', (0, 164, 480, 246), list(range(161)), 100),      # in, wait, out; the last frame (empty track) stays 4 s
+    ('gear_tower', (183, 78, 212, 107), list(range(8)), 100),
+    ('gear_gate', (136, 120, 159, 143), list(range(8)), 100),
+    ('gear_wheel', (224, 154, 249, 179), list(range(20)), 100),
+]
+
+
+def moving(L, mode):
+    """The sprites, only where the picture sits exactly on the 480x270 grid (a 16:9 window)."""
+    exact = [('fancymenu_visibility_requirement_is_number', 'if', '["mode":"equals","number":"%s","compare_with":"480"]$' % ph('guiwidth')),
+             ('fancymenu_visibility_requirement_is_number', 'if', '["mode":"equals","number":"%s","compare_with":"270"]$' % ph('guiheight'))]
+    b = ''
+    for name, (x0, y0, x1, y1), _, _ in SPRITES:
+        b += image(f'{L}:anim_{name}', f'anim_{mode}_{name}.apng', 'top-left', x0, y0, x1 - x0, y1 - y0,
+                   req=requirement(f'{L}:anim_{name}', lines=exact))
+    return b
+
+
 def title(name, art, hours):
     L = name
-    b = ''
+    b = moving(L, 'night' if 'night' in name else 'dusk')
     b += image(L + ':logo', 'logo.png', 'top-right', COL - 8, 8, 163, 62)
     b += button(L + ':join', local('join'), 'top-right', COL, 78, CW, 32, 'btn_main.png', 'btn_main_hover.png',
                 [('joinserver', SERVER)], tip=local('join.tip'))
@@ -241,7 +272,7 @@ def title(name, art, hours):
                                              ('show_decoration_overlay', 'true'), ('firefly_group_density', '0.6'),
                                              ('firefly_group_amount', '0.7'), ('firefly_group_size', '0.8'), ('firefly_scale', '1.0'),
                                              ('firefly_follow_mouse', 'true'), ('firefly_landing', 'true'), ('firefly_color_hex', '#FFE08A')])
-    return layout(name, 'title_screen', b, background=art, behind=False, req=requirement(name + ':layout', hours=hours), parallax=True, extra=extra)
+    return layout(name, 'title_screen', b, background=art, behind=True, req=requirement(name + ':layout', hours=hours), extra=extra)
 
 
 # ---------------------------------------------------------------------------------------------
@@ -302,16 +333,19 @@ def pause():
 # ---------------------------------------------------------------------------------------------
 
 def loading(name, art, hours):
+    """Logo and bar in the middle, where the early window before it has them."""
     L = name
-    b = image(L + ':logo', 'logo.png', 'top-right', COL - 8, 8, 163, 62)
-    b += image(L + ':frame', 'bar_frame.png', 'top-right', COL, 84, CW, 20)
-    p = base(L + ':bar', 'progress_bar', 'top-right', COL + 4, 88, CW - 8, 12)
+    b = image(L + ':logo', 'logo.png', 'mid-centered', -82, -50, 163, 62)
+    b += image(L + ':frame', 'bar_frame.png', 'mid-centered', -74, 14, CW, 20)
+    p = base(L + ':bar', 'progress_bar', 'mid-centered', -70, 18, CW - 8, 12)
     head = [('bar_color', '#E5B451FF'), ('bar_texture', A + 'bar_fill.png'), ('background_color', '#00000000'), ('direction', 'right'),
             ('progress_source', ph('game_loading_progress')), ('value_mode', 'percentage'), ('smooth_filling_animation', 'true')]
     b += block('element', head + p)
     for lang, mode in (('de', 'if'), ('en', 'if_not')):
         tip = ph('randomtext', source='/config/fancymenu/assets/kronwerke/tips_' + lang + '.txt', interval='6')
-        b += text(L + ':tip_' + lang, centered(tip), 'top-right', COL - 20, 110, CW + 40, 40,
+        b += image(L + ':tipbg_' + lang, 'tip.png', 'mid-centered', -110, 40, 220, 26,
+                   req=requirement(L + ':tipbg_' + lang, lines=[('fancymenu_loading_requirement_is_language', mode, 'de_de')]))
+        b += text(L + ':tip_' + lang, centered(tip), 'mid-centered', -106, 43, 212, 24,
                   req=requirement(L + ':tip_' + lang, lines=[('fancymenu_loading_requirement_is_language', mode, 'de_de')]))
     b += hide(L, 'progress_bar', 'mojang_logo')
     return layout(name, 'drippy_loading_overlay', b, background=art, req=requirement(name + ':layout', hours=hours))
@@ -391,6 +425,38 @@ OTHER = {
 }
 
 
+# The early window (NeoForge's own, long before the game's loading screen) is the Drippy Early
+# Loading Module's. It knows a background, a logo and a bar. Offsets are from the window's
+# centre in the module's units (1920x1080): x offset, y offset, width, height.
+# The module places in plain pixels and does not scale with the window, so logo and bar stay in
+# the middle, where every window size shows them. Measured: at offset 0 the logo's centre sits
+# 46 above the middle, and the bar hangs below the logo (its y offset is relative to the logo).
+EARLY = {'logo': (0, -30, 652, 248), 'bar': (0, -30, 592, 80)}
+
+
+def drippy_options():
+    K = '/config/fancymenu/assets/kronwerke/'
+    none = '/config/fancymenu/assets/some_image.png'
+    early = {
+        'S:early_loading_background_texture_path': K + 'title_dusk.png', 'B:early_loading_background_preserve_aspect_ratio': 'true',
+        'S:early_loading_logo_texture_path': K + 'logo_big.png', 'I:early_loading_logo_width': EARLY['logo'][2], 'I:early_loading_logo_height': EARLY['logo'][3],
+        'I:early_loading_logo_position_offset_x': EARLY['logo'][0], 'I:early_loading_logo_position_offset_y': EARLY['logo'][1], 'B:early_loading_hide_logo': 'false',
+        'S:early_loading_bar_background_texture_path': K + 'bar_frame_big.png', 'S:early_loading_bar_progress_texture_path': K + 'bar_fill_early.png',
+        'I:early_loading_bar_width': EARLY['bar'][2], 'I:early_loading_bar_height': EARLY['bar'][3],
+        'I:early_loading_bar_position_offset_x': EARLY['bar'][0], 'I:early_loading_bar_position_offset_y': EARLY['bar'][1], 'B:early_loading_hide_bar': 'false',
+        'B:early_loading_hide_logger': 'true', 'S:early_loading_window_title': 'Kronwerke Season 2',
+        'I:early_loading_window_width': -1, 'I:early_loading_window_height': -1,
+    }
+    for corner in ('top_left', 'top_right', 'bottom_left', 'bottom_right'):
+        early[f'S:early_loading_{corner}_watermark_texture_path'] = none
+        early[f'I:early_loading_{corner}_watermark_width'] = 100
+        early[f'I:early_loading_{corner}_watermark_height'] = 100
+        early[f'I:early_loading_{corner}_watermark_position_offset_x'] = 0
+        early[f'I:early_loading_{corner}_watermark_position_offset_y'] = 0
+    out = "##[general]\n\nB:early_fade_out_elements = 'false';\nB:allow_universal_layouts = 'false';\nB:fade_out_loading_screen = 'true';\nB:wait_for_textures_in_loading = 'true';\n\n\n##[early_loading]\n\n"
+    return out + ''.join(f"{k} = '{v}';\n" for k, v in early.items())
+
+
 def write(path, content):
     os.makedirs(os.path.dirname(path), exist_ok=True)
     with open(path, 'w', encoding='utf-8', newline='\n') as f:
@@ -406,12 +472,20 @@ def art():
     from PIL import Image
     import scene, ui
     os.makedirs(ASSETS, exist_ok=True)
+    import works, px
     dusk = None
+    last = max(max(fr) for _, _, fr, _ in SPRITES)
     for mode in scene.PAL:
-        c = scene.build(mode)
-        c.image(4).save(os.path.join(ASSETS, f'title_{mode}.png'), optimize=True)
+        frames = [scene.build(mode, t).a.copy() for t in range(last + 1)]
+        still = scene.build(mode)
+        still.image(4).save(os.path.join(ASSETS, f'title_{mode}.png'), optimize=True)
         if mode == 'dusk':
-            dusk = c
+            dusk = still
+        for name, (x0, y0, x1, y1), fr, ms in SPRITES:
+            dur = [ms] * len(fr)
+            if name == 'train':
+                dur[-1] = (works.LOOP - last) * ms
+            px.apng(os.path.join(ASSETS, f'anim_{mode}_{name}.apng'), [frames[t][y0:y1, x0:x1] for t in fr], dur)
     # the dimmed picture behind the other menus: darker, cooler, same pixels
     dim = (dusk.a.astype(float) * 0.34 + np.array([13, 11, 16], float) * 0.66).astype(np.uint8)
     Image.fromarray(dim, 'RGB').resize((1920, 1080), Image.NEAREST).save(os.path.join(ASSETS, 'menu_dim.png'), optimize=True)
@@ -429,6 +503,13 @@ def art():
         c.image(1, rgba=True).save(os.path.join(W, sprite + '.png'), optimize=True)
         w, h = c.w, c.h
         write(os.path.join(W, sprite + '.png.mcmeta'), sprite_meta(w, h, 4 if w > 20 else 3))
+    # larger copies for the early window, which smooths its textures
+    for k in ('logo', 'bar_frame', 'bar_fill'):
+        im = Image.open(os.path.join(ASSETS, k + '.png'))
+        im.resize((im.width * 4, im.height * 4), Image.NEAREST).save(os.path.join(ASSETS, k + '_big.png'), optimize=True)
+    fill = Image.new('RGBA', (148, 20), (0, 0, 0, 0))
+    fill.paste(ui.bar_fill(140, 12).image(1, rgba=True), (4, 4))
+    fill.resize((592, 80), Image.NEAREST).save(os.path.join(ASSETS, 'bar_fill_early.png'), optimize=True)
     # window icons
     for size in (16, 32):
         ui.window_icon(size).image(1, rgba=True).save(os.path.join(ASSETS, f'icon_{size}.png'), optimize=True)
@@ -449,6 +530,7 @@ def main():
     write(os.path.join(LAYOUTS, 'kw_multiplayer.txt'), multiplayer())
     write(os.path.join(LAYOUTS, 'kw_pause.txt'), pause())
     write(os.path.join(FM, 'options.txt'), OPTIONS)
+    write(os.path.join(ROOT, 'config', 'drippyloadingscreen', 'options.txt'), drippy_options())
     for name, content in OTHER.items():
         write(os.path.join(ROOT, 'config', name), content)
     write(os.path.join(FM, 'customizablemenus.txt'), 'type = customizablemenus\n\n' + ''.join(s + ' {\n}\n\n' for s in SCREENS))

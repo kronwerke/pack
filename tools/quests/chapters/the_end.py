@@ -459,7 +459,7 @@ quests = [
     quest("supply", 20, 0, "&5&lFüll das Licht des Drachen",
           subtitle="Was das End für das Stufenziel hergibt.",
           description=[
-              "Bring &e64 Draconiumbarren&r und &e8 Elite-Schaltkreise&r zusammen und gib sie am Obelisken ab, oder stell eine Truhe daneben.",
+              "Bring &e64 Draconiumbarren&r und &e8 Elite-Schaltkreise&r zusammen und gib sie am Obelisken ab.",
               "",
               "&eKronwerke:&r Die Technik-Seite des Ziels &6Licht des Drachen&r will &e1 000 Draconiumbarren&r und &e150 Elite-Schaltkreise&r, die Magie-Seite &e128 Gaia-Geister&r und &e30 Mystic Staffs&r.",
               "",

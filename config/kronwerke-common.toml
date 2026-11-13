@@ -22,22 +22,6 @@
 	#Dimensions that open with a stage, as dimension=stage. A player without the stage cannot enter; creative players can.
 	locked = ["minecraft:the_nether=kronwerke:stage2", "aether:the_aether=kronwerke:stage2", "undergarden:undergarden=kronwerke:stage3", "deeperdarker:otherside=kronwerke:stage3", "minecraft:the_end=kronwerke:stage4", "eternal_starlight:starlight=kronwerke:stage4", "mahoutsukai:reality_marble=kronwerke:stage4"]
 
-[obelisk]
-	#The zone around the obelisk's core, in blocks: intakes work there, and inside the spawn protection anyone may place and take back their own hoppers, pipes and belts there.
-	# Default: 8
-	# Range: 1 ~ 32
-	feederRadius = 10
-	#How many feeders one player can have.
-	# Default: 2
-	# Range: 0 ~ 64
-	feedersPerPlayer = 2
-	#Empty the feeders into the active goal every this many seconds.
-	# Default: 2
-	# Range: 1 ~ 600
-	feederInterval = 2
-	#Old behaviour: any container placed next to the obelisk becomes a feeder. Off, the intake block is the only way in for machines.
-	containerFeeders = false
-
 [scaling]
 	#The base amounts in goals.json assume this many active players.
 	# Default: 30
@@ -88,7 +72,7 @@
 	seasonStart = "2027-01-16T18:00"
 
 [spawn]
-	#Half the side of the protected square around the overworld spawn, in blocks. 0 turns the protection off. Operators and creative players build freely; containers next to the obelisk stay allowed for feeders.
+	#Half the side of the protected square around the overworld spawn, in blocks. 0 turns the protection off. Operators and creative players build freely.
 	# Default: 96
 	# Range: 0 ~ 2048
 	radius = 96

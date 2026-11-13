@@ -175,7 +175,7 @@ quests = [
               "",
               "Shift-Mausrad wechselt den Modus: &eCast&r wirft eine Perle, &eLong Cast&r wirft weiter, &eBind&r merkt sich eine &6Wraith Node&r (Nebulous Heart plus Smaragd, als Block gesetzt), &eNode Warp&r springt nach 3 Sekunden Rechtsklick dorthin. Jeder Sprung kostet eine Perle.",
               "",
-              "&eKronwerke:&r Eine Wraith Node am Obelisken, und jede Lieferung fürs Stufenziel ist einen Rechtsklick entfernt.",
+              "&eKronwerke:&r Eine Wraith Node am Rand des Spawns, und der Weg zum Obelisken dauert drei Sekunden.",
           ],
           tasks=[task_item("reliquary:ender_staff", 1), task_item("reliquary:wraith_node", 1)],
           rewards=[reward_table("s2_rare"), reward_item("minecraft:ender_pearl", 16), reward_xp(15)],

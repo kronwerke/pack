@@ -164,7 +164,7 @@ quests = [
               "",
               "&eRezept auf Kronwerke:&r &6Netherit&r macht die Gießerei nicht, das bleibt beim Schmiedetisch. &6Messing&r auch nicht, das kommt nur aus dem Mixer von Create.",
               "",
-              "&eKronwerke:&r Pulverizer für Kohlestaub, Gießerei dahinter, Kiste am Obelisken: fertig ist die kleine Stahlstraße.",
+              "&eKronwerke:&r Pulverizer für Kohlestaub, Gießerei dahinter, Kiste am Ende: fertig ist die kleine Stahlstraße.",
           ],
           tasks=[task_item("oritech:foundry_block", 1), task_item("oritech:adamant_ingot", 4)],
           rewards=[reward_item("minecraft:iron_ingot", 32), reward_table("s3_uncommon"), reward_xp(10)],

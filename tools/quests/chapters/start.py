@@ -1,5 +1,5 @@
 """Start here: the first quests take a new player from spawn to a claimed base and the first
-obelisk deposit (no vanilla tutorial, the players know Minecraft), then the obelisk (hand in, /kw, feeders, pillars, scaling, the 98
+obelisk deposit (no vanilla tutorial, the players know Minecraft), then the obelisk (hand in, /kw, pillars, scaling, the 98
 percent hold), the Nature's Aura steps behind both stage 1 milestones (brilliant fiber, gold leaf,
 ritual of the forest, token of joy, natural altar, infused iron), the five stages and locked items,
 the server, and a hub that points to every stage 1 chapter. Rules from docs/STAGES.md and
@@ -142,45 +142,34 @@ quests = [
           rewards=[reward_xp(3)],
           deps=["o_obelisk"], icon="minecraft:command_block"),
 
-    quest("o_deposit", 6.75, 1, "&6Tipp /kw deposit",
-          subtitle="Abgeben, falls der Rechtsklick nicht klappt.",
+    quest("o_deposit", 6.75, 1, "&6Tipp: Alles auf einmal",
+          subtitle="Schleichen und Rechtsklick am Obelisken.",
           description=[
-              "&e/kw deposit&r gibt den Stapel in deiner Hand ab, &e/kw deposit all&r alles aus dem Inventar, was das aktuelle Ziel nimmt.",
+              "&eSchleichen&r und &eRechtsklick&r auf den Obelisken gibt alles aus deinem Inventar ab, was das aktuelle Ziel nimmt. Der erste Klick fragt nach, der zweite gibt ab. Hotbar und Nebenhand bleiben.",
               "",
-              "Das ist der Ausweichweg. Am Obelisken selbst geht es mit Rechtsklick und Schleichen schneller.",
+              "Abgegeben wird nur von Hand, am Obelisken. Einen Befehl, einen Knopf im Menü oder eine Maschine, die für dich abgibt, gibt es nicht.",
           ],
           tasks=[task_checkmark("Ausprobiert")],
           rewards=[reward_xp(3)],
           deps=["o_obelisk"], icon="minecraft:hopper"),
 
-    quest("o_feeder", 9, 0, "&6Stell einen Zubringer auf",
-          subtitle="Ein Block am Obelisken, der für dich einzahlt.",
+    quest("o_farm", 10.1, 0, "&6Bau eine Farm fürs Ziel",
+          subtitle="Die Farm füllt die Truhe, du trägst sie hin.",
           description=[
-              "Der &6Zubringer&r ist ein eigener Block: ein &6Trichter&r oben in der Mitte, darunter &6Andesitlegierung&r, links, rechts und in der unteren Reihe &e5 Bruchtiefenschiefer&r. Stell ihn höchstens &e10 Blöcke&r vom Obelisken entfernt auf.",
-              "",
-              "Was ein Trichter, ein Rohr oder ein Förderband hineinschiebt, geht sofort ins Ziel und zählt für den, der den Zubringer aufgestellt hat. Er lagert nichts: Was das Ziel gerade nicht braucht, nimmt er nicht an, es bleibt im Rohr. Ein Rechtsklick zeigt, wem er gehört und ob er verbunden ist.",
-          ],
-          tasks=[task_item("kronwerke:obelisk_intake", 1)],
-          rewards=[reward_item("minecraft:hopper", 2), reward_xp(3)],
-          deps=["o_commands", "o_deposit"], icon="kronwerke:obelisk_intake"),
-
-    quest("o_farm", 11.25, 0, "&6Schließ eine Farm an",
-          subtitle="Der Beitrag wächst, während du redest.",
-          description=[
-              "Leite Bruchstein, Andesitlegierung oder Quelljuwelen per Trichter, Förderband oder Schleuse in deinen Zubringer. Ab dann zahlt deine Fabrik selbst ein.",
+              "Bruchstein, Andesitlegierung und Quelljuwelen lassen sich automatisch herstellen. Abgeben musst du selbst: Pack die Ausbeute in einen Rucksack, geh zum Obelisken, und Schleichen mit Rechtsklick gibt alles Passende auf einmal ab.",
               "",
               "Wie man einen Bruchsteingenerator, eine Legierungsstraße oder eine Juwelenanlage baut, zeigt das Kapitel &6Erste Farmen&r.",
           ],
-          tasks=[task_checkmark("Meine Farm zahlt ein")],
+          tasks=[task_checkmark("Meine Farm läuft")],
           rewards=[reward_table("s1_common"), reward_xp(5)],
-          deps=["o_feeder"], icon="minecraft:hopper"),
+          deps=["o_commands", "o_deposit"], icon="minecraft:hopper"),
 
     quest("o_stone", 13.5, -1.5, "&7Füll die Stein-Säule",
           subtitle="20 000 Bruchstein.",
           description=[
               "Jede Sorte &6Bruchstein&r zählt, je ein Punkt. Die Säule für alle: Jeder hilft ab der ersten Minute, ohne Maschinen und Zauber.",
               "",
-              "Am schnellsten geht es mit Ultimine in der Farmwelt oder mit einem Bruchsteingenerator am Zubringer.",
+              "Am schnellsten geht es mit Ultimine in der Farmwelt oder mit einem Bruchsteingenerator, der Kisten füllt.",
           ],
           tasks=[task_checkmark("Verstanden")],
           rewards=[reward_xp(2)],
@@ -206,7 +195,7 @@ quests = [
               "",
               img(item_texture("ars_nouveau:source_gem"), 32, 32),
               "",
-              "Jedes Juwel zählt 4 Punkte. Eine kleine Anlage mit Quellenlink liefert ein paar Dutzend in der Stunde, auch per Zubringer. Siehe Kapitel &dArs Nouveau&r.",
+              "Jedes Juwel zählt 4 Punkte. Eine kleine Anlage mit Quellenlink liefert ein paar Dutzend in der Stunde. Siehe Kapitel &dArs Nouveau&r.",
           ],
           tasks=[task_checkmark("Verstanden")],
           rewards=[reward_xp(2)],
@@ -548,7 +537,7 @@ quests = [
           description=[
               "Öffne das Kapitel &6Erste Farmen&r. Eine Farm pro Quest: Bruchstein, Holz, Weizen, Tiere, Monster, Lava und Mana, alles mit Stufe-1-Mitteln.",
               "",
-              "Jede davon kann direkt in deinen Zubringer am Obelisken liefern.",
+              "Was sie liefern, trägst du zum Obelisken.",
           ],
           tasks=[task_checkmark("Angeschaut")],
           rewards=[reward_item("minecraft:hopper", 2), reward_xp(3)],

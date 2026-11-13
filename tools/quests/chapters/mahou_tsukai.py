@@ -317,7 +317,7 @@ quests = [
     quest("obelisk", 8, 18.5, "&c&lBring Stäbe zum Obelisken",
           subtitle="Dreißig Stäbe, 60 000 Mana.",
           description=[
-              "Gib Stäbe einzeln am Obelisken ab oder stell eine Kiste als Zulieferer daneben. Den Stand zeigt &e/kw goals&r.",
+              "Gib die Stäbe von Hand am Obelisken ab. Den Stand zeigt &e/kw goals&r.",
               "",
               "&eKronwerke:&r Das Magieziel von Stufe 4 heißt &e128 Gaia-Seelen&r und &e30 Mystische Stäbe&r, beide fest. Dreißig Stäbe sind &d60 000 Mana&r. Ein voller Schaltkreis reicht für das ganze Ziel.",
               "",

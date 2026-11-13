@@ -16,7 +16,6 @@ own words and chapter names, so references between chapters stay the same.
 | Bruchsteingenerator | cobblestone generator |
 | Stufe 1, Stufe 2 | stage 1, stage 2 |
 | Obelisk | obelisk |
-| Zubringer, Zubringer-Truhe | feeder, feeder chest |
 | Technik-Säule, Magie-Säule | tech pillar, magic pillar |
 | Quellschlussstein | Source Keystone |
 | Steinwerk-Getriebe | Stoneworks Gearbox |

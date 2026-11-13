@@ -724,7 +724,7 @@ quests = [
               "",
               "Eine Anreicherungskammer davor macht Kohle zu Angereichertem Kohlenstoff. Das Eisen liefert die Erzstraße aus dem Kapitel &5Mekanism: Erz Schritt für Schritt&r.",
               "",
-              "&eKronwerke:&r Stell eine Kiste an den Obelisken und häng sie hinten an. Was hineinfällt, zählt für dich zu den 4 000 Stahlbarren von Stufe 3.",
+              "&eKronwerke:&r Häng eine Kiste hinten an. Was du daraus zum Obelisken trägst, zählt für dich zu den 4 000 Stahlbarren von Stufe 3.",
           ],
           tasks=[task_item("mekanism:basic_infusing_factory", 2), task_item("mekanism:ingot_steel", 64)],
           rewards=[reward_table("s2_rare"), reward_item("mekanism:basic_control_circuit", 4), reward_xp(20)],

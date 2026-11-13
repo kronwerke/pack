@@ -305,7 +305,7 @@ quests = [
           description=[
               "Sammle &e64 Stahlbarren&r. Roh-Hochofen, Verbesserter Hochofen oder Mekanism, alles zählt.",
               "",
-              "&eKronwerke:&r Das Obelisk-Ziel von &6Stufe 3&r will &e4 000 Stahlbarren&r. Zwei, drei Hochöfen, die jetzt schon laufen, machen das später entspannt. Eine Kiste neben dem Obelisken nimmt alles an, was du hineinschickst.",
+              "&eKronwerke:&r Das Obelisk-Ziel von &6Stufe 3&r will &e4 000 Stahlbarren&r. Zwei, drei Hochöfen, die jetzt schon laufen, machen das später entspannt. Abgegeben wird später von Hand am Obelisken.",
               "",
               "Damit sitzen die Grundlagen: Multiblöcke, Koks, Kreosot, Legierungen und Stahl.",
           ],

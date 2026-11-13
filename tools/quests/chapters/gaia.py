@@ -311,7 +311,7 @@ quests = [
           description=[
               "Sammle &e64 Gaia-Seelen&r für den Obelisken. Das Ziel will &e128&r (feste Zahl) und &e30 Mystische Stäbe&r aus Mahou Tsukai.",
               "",
-              "Mit acht Seelen pro Kampf sind das &esechzehn Kämpfe&r, alle live. Feste Arena, ein Terrastahl pro Kampf, Seelen direkt in die Truhe am Obelisken.",
+              "Mit acht Seelen pro Kampf sind das &esechzehn Kämpfe&r, alle live. Feste Arena, ein Terrastahl pro Kampf, Seelen danach von Hand in den Obelisken.",
               "",
               "Sind auch Draconium und Elite-Schaltkreise der Techniker drin, öffnet &6Stufe 5 (Chaoswerk)&r.",
           ],

@@ -154,3 +154,33 @@ def noise2d(w, h, seed, period=24, octaves=3):
 def smooth(a, k):
     k = max(1, int(k))
     return np.convolve(np.pad(np.asarray(a, float), k, mode='edge'), np.ones(2 * k + 1) / (2 * k + 1), mode='valid')
+
+
+def apng(path, frames, durations):
+    """Writes an animated PNG of whole RGB frames (H x W x 3 arrays) with a time in ms each.
+
+    Pillow's writer stores only the part of a frame that changed. FancyMenu draws every frame on
+    its own, so a partial frame shows holes; here every frame is complete."""
+    import struct, zlib
+
+    def chunk(kind, data):
+        return struct.pack('>I', len(data)) + kind + data + struct.pack('>I', zlib.crc32(kind + data) & 0xffffffff)
+
+    h, w = frames[0].shape[:2]
+    out = [b'\x89PNG\r\n\x1a\n', chunk(b'IHDR', struct.pack('>IIBBBBB', w, h, 8, 2, 0, 0, 0)),
+           chunk(b'acTL', struct.pack('>II', len(frames), 0))]
+    seq = 0
+    for i, (fr, ms) in enumerate(zip(frames, durations)):
+        out.append(chunk(b'fcTL', struct.pack('>IIIIIHHBB', seq, w, h, 0, 0, int(ms), 1000, 0, 0)))
+        seq += 1
+        raw = np.zeros((h, 1 + w * 3), np.uint8)
+        raw[:, 1:] = np.ascontiguousarray(fr[:, :, :3]).reshape(h, w * 3)
+        data = zlib.compress(raw.tobytes(), 9)
+        if i == 0:
+            out.append(chunk(b'IDAT', data))
+        else:
+            out.append(chunk(b'fdAT', struct.pack('>I', seq) + data))
+            seq += 1
+    out.append(chunk(b'IEND', b''))
+    with open(path, 'wb') as f:
+        f.write(b''.join(out))

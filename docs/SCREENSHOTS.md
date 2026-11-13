@@ -46,7 +46,6 @@ Chapters without a list here (most of the stage 1 gap chapters from the first wa
 ## Start
 
 - start_here/o_handin: a player sneaking and right-clicking the obelisk, boss bar visible
-- start_here/o_feeder: a barrel next to the obelisk fed by a hopper or a belt
 - start_here/o_obelisk: the boss bar with the three pillars
 - start_here/s_locked: a veiled "???" item with its three tooltip lines, and JEI with veiled stage 2 items
 - start_here/m_goldleaf: a tree with golden leaves
@@ -106,7 +105,7 @@ Chapters without a list here (most of the stage 1 gap chapters from the first wa
 - create_trains/junction: chain and entry signals at a junction, goggles overlay
 - create_trains/cargo: a portable storage interface pair at a platform
 - create_trains/postbox: a postbox next to a station
-- create_trains/obelisk_line: spawn station unloading into the obelisk feeder
+- create_trains/obelisk_line: a station outside the spawn, a train unloading into a chest
 
 ## Mekanism
 

@@ -513,3 +513,10 @@ Incendium, which ran about a tenth of the tick in the 50 player load test:
 
 - Pause screen: the column sits on the right like on the title screen, with quest book and map buttons that work, and the "Game Menu" line is gone.
 - Title screen: the player count stands on a small plate, the main button's text is gold, fireflies at night.
+
+## 0.24.38
+
+- The title picture moves: the train comes in, waits at the works and leaves, smoke rises from the chimney and the engine, the gears in the tower, at the gate and the water wheel turn, stars and the lake glitter. On windows that are not 16:9 the picture stands still.
+- Drippy Early Loading Module: the window that shows before the game's own loading screen carries the dusk picture, the logo and a brass bar. The loading screen after it is centred the same way.
+- Kronwerke Core 0.39.30: handing in works by hand at the obelisk and nowhere else (no `/kw deposit`, no buttons in the menu, no feeder block: `kronwerke:obelisk_intake` and its recipe are gone, the zone around the obelisk is closed for hoppers, pipes and belts), the obelisk no longer falls asleep, and the `/kw` menu wears the pixel look of the menus with four pages: goals, ranking, options, help.
+- Quest book: about fifty lines that sent goods to the obelisk by `/kw deposit`, a feeder, a chest next to it or a belt now say what is true: factories fill chests, players carry the yield over and hand it in by hand. The quest "Stell einen Zubringer auf" is gone, "Schließ eine Farm an" is "Bau eine Farm fürs Ziel", the tip quest is "Tipp: Alles auf einmal".

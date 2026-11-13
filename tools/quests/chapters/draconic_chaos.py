@@ -326,7 +326,7 @@ quests = [
     quest("goal", 5, 17, "&5&lBring 64 Blöcke zum Obelisken",
           subtitle="Der Technik-Pfeiler des Chaoswerks.",
           description=[
-              "Leite &5Erwachte Draconiumblöcke&r in eine Kiste am Obelisken. Den Stand zeigt &e/kw goals&r.",
+              "Bring &5Erwachte Draconiumblöcke&r zum Obelisken und gib sie von Hand ab. Den Stand zeigt &e/kw goals&r.",
               "",
               "&eKronwerke:&r Das Ziel von Stufe 5 heißt &5Der Chaoswächter&r: &e64 Erwachte Draconiumblöcke&r (fest) und die Antimaterie-Pellets aus Mekanism. Das sind 16 Fusionen, 16 Drachenherzen, 32 Gaia-Seelenbarren.",
               "",

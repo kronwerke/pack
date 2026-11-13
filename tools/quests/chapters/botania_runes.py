@@ -674,7 +674,7 @@ quests = [
           description=[
               "Endermanfarm, Förderband zu einem Becken mit &6Messinggehäuse&r darunter, Trichtermalve am Beckenrand, Truhe. Fertig.",
               "",
-              "600 Perlen sind &d3,6 Millionen Mana&r und 600 Enderperlen. Eine Truhe, die du neben den Obelisken stellst, liefert alle zwei Sekunden für dich ab.",
+              "600 Perlen sind &d3,6 Millionen Mana&r und 600 Enderperlen. Abgegeben wird von Hand am Obelisken, ein Rucksack voll auf einmal.",
           ],
           tasks=[task_item("botania:mana_pearl", 64)],
           rewards=[reward_item("minecraft:ender_pearl", 16), reward_table("s2_uncommon")],
@@ -709,7 +709,7 @@ quests = [
     quest("obelisk", 26, 9.3, "&d&lBring die Magie zum Obelisken",
           subtitle="Das Messingwerk wartet auf seine Blumen.",
           description=[
-              "Gib &e600 Manaperlen&r, &e50 Terrastahlbarren&r und &e8 Runenkerne&r am Obelisken ab. Rechtsklick legt den Stapel ab, Schleich-Rechtsklick alles, oder eine Truhe daneben.",
+              "Gib &e600 Manaperlen&r, &e50 Terrastahlbarren&r und &e8 Runenkerne&r am Obelisken ab. Rechtsklick legt den Stapel ab, Schleich-Rechtsklick alles.",
               "",
               "Sind Technik und Magie voll, öffnet &6Stufe 3 (Stahlwerk)&r mit einem Event im Stream, und mit ihr das Elfenportal, siehe &aBotania: Alfheim&r.",
               "",

@@ -171,16 +171,6 @@ def pentacle_scene(key, name, bowls=4):
 # ===================================================================================
 # Start
 
-@scene("start_here/o_feeder", w=15, d=17, h=30)
-def _(b):
-    # the Zubringer block within 10 blocks of the obelisk, a hopper pushing a chest's stone into it
-    obelisk(b, 7, 7)
-    b.b(7, 0, 14, "kronwerke:obelisk_intake")
-    b.b(7, 1, 14, "minecraft:hopper[facing=down]")
-    b.c(7, 2, 14, [("minecraft:cobblestone", 64)] * 3, frame=True)
-    b.focus(4, 0, 10, 10, 4, 15)
-
-
 @scene("start_here/m_goldleaf", h=20)
 def _(b):
     # an oak whose leaves have all turned golden (golden_leaves at its last stage)

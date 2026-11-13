@@ -193,7 +193,7 @@ quests = [
           subtitle="Hundertfünfzig Essenzen für den Server.",
           description=[
               "Bring &e16 Afrit-Essenzen&r zusammen. Pro Ruf: eine Kuh, ein Iesniumbarren, Netherrack, Feuerzeug, Schwarzpulver.",
-              "Abgabe am &6Obelisken&r an der Spawn, per Rechtsklick oder über eine Truhe daneben.",
+              "Abgabe am &6Obelisken&r an der Spawn, per Rechtsklick.",
               "",
               "&eKronwerke:&r Das Ziel will &e150 Essenzen&r (die Menge passt sich der Spielerzahl an), jede 10 Punkte. Die acht Elfensterne brauchen weitere 16.",
               "",

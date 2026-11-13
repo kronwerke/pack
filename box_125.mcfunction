@@ -1,40 +1,107 @@
-# 125 logistics/menril, programmer, xnet_connectors, laser_node
-#area 154 256 204 281
-fill 154 64 256 198 91 281 minecraft:air
-fill 199 64 256 204 91 281 minecraft:air
-fill 154 60 256 204 62 281 minecraft:stone
-fill 154 63 256 204 63 281 minecraft:light_gray_concrete
-fill 158 64 262 204 79 262 minecraft:light_gray_concrete
-fill 158 64 262 158 79 275 minecraft:light_gray_concrete
-setblock 159 64 274 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "125.1"}','{"text": "logistics"}','{"text": "menril"}','{"text": ""}']}}
-setblock 160 64 274 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Press"}','{"text": "Menril-Harz"}','{"text": ""}','{"text": ""}']}}
-fill 168 64 262 168 79 275 minecraft:light_gray_concrete
-fill 161 64 266 161 66 266 integrateddynamics:menril_log[axis=y]
-setblock 163 64 267 integrateddynamics:squeezer[axis=x,height=1]
-setblock 164 64 267 integrateddynamics:drying_basin
-setblock 169 64 274 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "125.2"}','{"text": "logistics"}','{"text": "programmer"}','{"text": ""}']}}
-setblock 170 64 274 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Schreib Karten"}','{"text": "im Logic"}','{"text": "Programmer"}','{"text": ""}']}}
-fill 178 64 262 178 79 275 minecraft:light_gray_concrete
-setblock 172 64 267 integrateddynamics:logic_programmer[facing=south]
-setblock 174 64 267 integrateddynamics:variablestore[facing=south]
-setblock 179 64 274 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "125.3"}','{"text": "logistics"}','{"text": "xnet_connectors"}','{"text": ""}']}}
-setblock 180 64 274 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Setz Connectors"}','{"text": "und Kabel"}','{"text": ""}','{"text": ""}']}}
-fill 189 64 262 189 79 275 minecraft:light_gray_concrete
-setblock 181 64 267 minecraft:chest[facing=south,type=single,waterlogged=false]
-setblock 187 64 267 minecraft:furnace[facing=south,lit=false]
-setblock 184 64 268 xnet:controller[facing=south,error=false]
-kw testworld use 182 63 267 up xnet:connector_blue
-kw testworld use 186 63 267 up xnet:connector_blue
-kw testworld use 183 63 267 up xnet:netcable_blue
-kw testworld use 184 63 267 up xnet:netcable_blue
-kw testworld use 185 63 267 up xnet:netcable_blue
-setblock 190 64 274 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "125.4"}','{"text": "logistics"}','{"text": "laser_node"}','{"text": ""}']}}
-setblock 191 64 274 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Verbinde zwei"}','{"text": "Laser Nodes"}','{"text": ""}','{"text": ""}']}}
-fill 199 64 262 199 79 275 minecraft:light_gray_concrete
-setblock 192 64 267 minecraft:chest[facing=south,type=single,waterlogged=false]
-setblock 192 65 267 laserio:laser_node
-setblock 196 64 267 minecraft:chest[facing=south,type=single,waterlogged=false]
-setblock 196 65 267 laserio:laser_node
-kw testworld use 192 65 267 south laserio:laser_wrench
-kw testworld use 196 65 267 south laserio:laser_wrench
+# 125 ae2_advanced/bridge, spatial, reaction, matrix
+#area 102 256 158 283
+fill 102 64 256 142 91 283 minecraft:air
+fill 143 64 256 158 91 283 minecraft:air
+fill 102 60 256 158 62 283 minecraft:stone
+fill 102 63 256 158 63 283 minecraft:light_gray_concrete
+fill 106 64 262 158 79 262 minecraft:light_gray_concrete
+fill 106 64 262 106 79 277 minecraft:light_gray_concrete
+setblock 107 64 276 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "125.1"}','{"text": "ae2_advanced"}','{"text": "bridge"}','{"text": ""}']}}
+setblock 108 64 276 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Verbinde zwei"}','{"text": "Orte mit einer"}','{"text": "Quantenbrücke"}','{"text": ""}']}}
+fill 120 64 262 120 79 277 minecraft:light_gray_concrete
+fill 109 64 267 111 66 267 ae2:quantum_ring
+setblock 110 65 267 ae2:quantum_link
+fill 115 64 267 117 66 267 ae2:quantum_ring
+setblock 116 65 267 ae2:quantum_link
+setblock 121 64 276 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "125.2"}','{"text": "ae2_advanced"}','{"text": "spatial"}','{"text": ""}']}}
+setblock 122 64 276 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Stell"}','{"text": "Raumpylone auf"}','{"text": ""}','{"text": ""}']}}
+fill 132 64 262 132 79 277 minecraft:light_gray_concrete
+setblock 124 64 266 ae2:spatial_pylon
+setblock 124 64 267 ae2:spatial_pylon
+setblock 124 64 268 ae2:spatial_pylon
+setblock 124 64 269 ae2:spatial_pylon
+setblock 124 64 270 ae2:spatial_pylon
+setblock 124 65 266 ae2:spatial_pylon
+setblock 124 65 270 ae2:spatial_pylon
+setblock 124 66 266 ae2:spatial_pylon
+setblock 124 66 270 ae2:spatial_pylon
+setblock 124 67 266 ae2:spatial_pylon
+setblock 124 67 270 ae2:spatial_pylon
+setblock 124 68 266 ae2:spatial_pylon
+setblock 124 68 267 ae2:spatial_pylon
+setblock 124 68 268 ae2:spatial_pylon
+setblock 124 68 269 ae2:spatial_pylon
+setblock 124 68 270 ae2:spatial_pylon
+setblock 125 64 266 ae2:spatial_pylon
+setblock 125 64 270 ae2:spatial_pylon
+setblock 125 68 266 ae2:spatial_pylon
+setblock 125 68 270 ae2:spatial_pylon
+setblock 126 64 266 ae2:spatial_pylon
+setblock 126 64 270 ae2:spatial_pylon
+setblock 126 68 266 ae2:spatial_pylon
+setblock 126 68 270 ae2:spatial_pylon
+setblock 127 64 266 ae2:spatial_pylon
+setblock 127 64 270 ae2:spatial_pylon
+setblock 127 68 266 ae2:spatial_pylon
+setblock 127 68 270 ae2:spatial_pylon
+setblock 128 64 266 ae2:spatial_pylon
+setblock 128 64 267 ae2:spatial_pylon
+setblock 128 64 268 ae2:spatial_pylon
+setblock 128 64 269 ae2:spatial_pylon
+setblock 128 64 270 ae2:spatial_pylon
+setblock 128 65 266 ae2:spatial_pylon
+setblock 128 65 270 ae2:spatial_pylon
+setblock 128 66 266 ae2:spatial_pylon
+setblock 128 66 270 ae2:spatial_pylon
+setblock 128 67 266 ae2:spatial_pylon
+setblock 128 67 270 ae2:spatial_pylon
+setblock 128 68 266 ae2:spatial_pylon
+setblock 128 68 267 ae2:spatial_pylon
+setblock 128 68 268 ae2:spatial_pylon
+setblock 128 68 269 ae2:spatial_pylon
+setblock 128 68 270 ae2:spatial_pylon
+setblock 123 64 270 ae2:spatial_io_port[facing=south,spin=0,powered=false]
+setblock 133 64 276 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "125.3"}','{"text": "ae2_advanced"}','{"text": "reaction"}','{"text": ""}']}}
+setblock 134 64 276 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Bau eine"}','{"text": "Reaktionskammer"}','{"text": ""}','{"text": ""}']}}
+fill 142 64 262 142 79 277 minecraft:light_gray_concrete
+setblock 137 64 267 advanced_ae:reaction_chamber[working=true]
+setblock 143 64 276 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "125.4"}','{"text": "ae2_advanced"}','{"text": "matrix"}','{"text": ""}']}}
+setblock 144 64 276 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Bau eine"}','{"text": "Assembler-Matrix"}','{"text": ""}','{"text": ""}']}}
+fill 153 64 262 153 79 277 minecraft:light_gray_concrete
+setblock 146 64 266 extendedae:assembler_matrix_frame
+setblock 146 64 267 extendedae:assembler_matrix_frame
+setblock 146 64 268 extendedae:assembler_matrix_frame
+setblock 146 65 266 extendedae:assembler_matrix_frame
+setblock 146 65 267 extendedae:assembler_matrix_wall
+setblock 146 65 268 extendedae:assembler_matrix_frame
+setblock 146 66 266 extendedae:assembler_matrix_frame
+setblock 146 66 267 extendedae:assembler_matrix_frame
+setblock 146 66 268 extendedae:assembler_matrix_frame
+setblock 147 64 266 extendedae:assembler_matrix_frame
+setblock 147 64 267 extendedae:assembler_matrix_wall
+setblock 147 64 268 extendedae:assembler_matrix_frame
+setblock 147 65 266 extendedae:assembler_matrix_wall
+setblock 147 65 268 extendedae:assembler_matrix_glass
+setblock 147 66 266 extendedae:assembler_matrix_frame
+setblock 147 66 267 extendedae:assembler_matrix_wall
+setblock 147 66 268 extendedae:assembler_matrix_frame
+setblock 148 64 266 extendedae:assembler_matrix_frame
+setblock 148 64 267 extendedae:assembler_matrix_wall
+setblock 148 64 268 extendedae:assembler_matrix_frame
+setblock 148 65 266 extendedae:assembler_matrix_wall
+setblock 148 65 268 extendedae:assembler_matrix_glass
+setblock 148 66 266 extendedae:assembler_matrix_frame
+setblock 148 66 267 extendedae:assembler_matrix_wall
+setblock 148 66 268 extendedae:assembler_matrix_frame
+setblock 149 64 266 extendedae:assembler_matrix_frame
+setblock 149 64 267 extendedae:assembler_matrix_frame
+setblock 149 64 268 extendedae:assembler_matrix_frame
+setblock 149 65 266 extendedae:assembler_matrix_frame
+setblock 149 65 267 extendedae:assembler_matrix_wall
+setblock 149 65 268 extendedae:assembler_matrix_frame
+setblock 149 66 266 extendedae:assembler_matrix_frame
+setblock 149 66 267 extendedae:assembler_matrix_frame
+setblock 149 66 268 extendedae:assembler_matrix_frame
+setblock 147 65 267 extendedae:assembler_matrix_pattern
+setblock 148 65 267 extendedae:assembler_matrix_crafter
 execute as @e[type=minecraft:item,tag=!kw_shot] run kill @s

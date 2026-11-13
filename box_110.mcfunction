@@ -1,27 +1,35 @@
-# 110 immersive/tank, silo, shelf
-#area 169 181 208 210
-fill 169 64 181 203 94 210 minecraft:air
-fill 204 64 181 208 94 210 minecraft:air
-fill 169 60 181 208 62 210 minecraft:stone
-fill 169 63 181 208 63 210 minecraft:light_gray_concrete
-fill 173 64 187 208 82 187 minecraft:light_gray_concrete
-fill 173 64 187 173 82 204 minecraft:light_gray_concrete
-setblock 174 64 203 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "110.1"}','{"text": "immersive"}','{"text": "tank"}','{"text": ""}']}}
-setblock 175 64 203 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "the formed"}','{"text": "structures"}','{"text": ""}','{"text": ""}']}}
-fill 183 64 187 183 82 204 minecraft:light_gray_concrete
-place template immersiveengineering:multiblocks/sheetmetal_tank 177 64 190 none
-kw testworld use 178 65 192 south immersiveengineering:hammer
-execute unless block 178 65 192 immersiveengineering:sheetmetal_iron
-setblock 184 64 203 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "110.2"}','{"text": "immersive"}','{"text": "silo"}','{"text": ""}']}}
-setblock 185 64 203 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Form ein"}','{"text": "Elementsilo"}','{"text": ""}','{"text": ""}']}}
-fill 193 64 187 193 82 204 minecraft:light_gray_concrete
-place template immersiveengineering:multiblocks/silo 187 64 190 none
-kw testworld use 188 65 192 south immersiveengineering:hammer
-execute unless block 188 65 192 immersiveengineering:sheetmetal_iron
-setblock 194 64 203 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "110.3"}','{"text": "immersive"}','{"text": "shelf"}','{"text": ""}']}}
-setblock 195 64 203 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Form ein"}','{"text": "Kistenregal"}','{"text": ""}','{"text": ""}']}}
-fill 203 64 187 203 82 204 minecraft:light_gray_concrete
-place template immersiveengineering:multiblocks/shelf 196 64 190 none
-kw testworld use 197 65 191 south immersiveengineering:hammer
-execute unless block 197 65 191 immersiveengineering:steel_catwalk
+# 110 immersive/connectors, thermoelectric, transformer
+#area 132 181 173 206
+fill 132 64 181 173 91 206 minecraft:air
+fill 132 60 181 173 62 206 minecraft:stone
+fill 132 63 181 173 63 206 minecraft:light_gray_concrete
+fill 136 64 187 173 79 187 minecraft:light_gray_concrete
+fill 136 64 187 136 79 200 minecraft:light_gray_concrete
+setblock 137 64 199 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "110.1"}','{"text": "immersive"}','{"text": "connectors"}','{"text": ""}']}}
+setblock 138 64 199 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "LV wires on"}','{"text": "posts, the"}','{"text": "accumulator,"}','{"text": "the generator"}']}}
+setblock 139 64 199 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "between magma"}','{"text": "and blue ice, a"}','{"text": "transformer"}','{"text": "with LV and MV"}']}}
+fill 148 64 187 148 79 200 minecraft:light_gray_concrete
+setblock 139 64 192 immersiveengineering:capacitor_lv
+setblock 145 64 192 immersiveengineering:capacitor_lv
+fill 142 64 192 142 66 192 immersiveengineering:treated_fence
+kw testworld use 139 64 192 up immersiveengineering:connector_lv
+kw testworld use 145 64 192 up immersiveengineering:connector_lv
+kw testworld use 142 66 192 up immersiveengineering:connector_lv_relay
+kw testworld use 139 65 192 south immersiveengineering:wirecoil_copper
+kw testworld use 142 67 192 south immersiveengineering:wirecoil_copper
+kw testworld use 142 67 192 south immersiveengineering:wirecoil_copper
+kw testworld use 145 65 192 south immersiveengineering:wirecoil_copper
+setblock 149 64 199 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "110.2"}','{"text": "immersive"}','{"text": "thermoelectric"}','{"text": ""}']}}
+setblock 150 64 199 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Bau einen"}','{"text": "Thermoelektrischen"}','{"text": "Generator"}','{"text": ""}']}}
+fill 158 64 187 158 79 200 minecraft:light_gray_concrete
+setblock 152 64 192 minecraft:magma_block
+setblock 153 64 192 immersiveengineering:thermoelectric_generator
+setblock 154 64 192 minecraft:blue_ice
+kw testworld use 153 64 192 up immersiveengineering:connector_lv
+setblock 159 64 199 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "110.3"}','{"text": "immersive"}','{"text": "transformer"}','{"text": ""}']}}
+setblock 160 64 199 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Bau einen Trafo"}','{"text": ""}','{"text": ""}','{"text": ""}']}}
+fill 168 64 187 168 79 200 minecraft:light_gray_concrete
+setblock 161 64 192 immersiveengineering:capacitor_lv
+kw testworld use 163 63 192 up immersiveengineering:transformer
+setblock 165 64 192 immersiveengineering:capacitor_mv
 execute as @e[type=minecraft:item,tag=!kw_shot] run kill @s

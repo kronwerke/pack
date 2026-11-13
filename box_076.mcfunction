@@ -1,14 +1,18 @@
-# 076 botania_runes/thermalily
-#area 137 109 156 134
-fill 137 64 109 156 91 134 minecraft:air
-fill 137 60 109 156 62 134 minecraft:stone
-fill 137 63 109 156 63 134 minecraft:light_gray_concrete
-fill 141 64 115 156 79 115 minecraft:light_gray_concrete
-fill 141 64 115 141 79 128 minecraft:light_gray_concrete
-setblock 142 64 127 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "076"}','{"text": "botania_runes"}','{"text": "thermalily"}','{"text": ""}']}}
-setblock 143 64 127 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "a hose pulley"}','{"text": "feeding lava"}','{"text": "next to the"}','{"text": "lily"}']}}
-fill 151 64 115 151 79 128 minecraft:light_gray_concrete
-fill 144 63 119 148 63 121 minecraft:grass_block[snowy=false]
-setblock 147 63 120 minecraft:lava
-setblock 146 64 120 botania:thermalily
+# 076 botania_runes/runic_altar
+#area 122 109 141 134
+fill 122 64 109 141 91 134 minecraft:air
+fill 122 60 109 141 62 134 minecraft:stone
+fill 122 63 109 141 63 134 minecraft:light_gray_concrete
+fill 126 64 115 141 79 115 minecraft:light_gray_concrete
+fill 126 64 115 126 79 128 minecraft:light_gray_concrete
+setblock 127 64 127 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "076"}','{"text": "botania_runes"}','{"text": "runic_altar"}','{"text": ""}']}}
+setblock 128 64 127 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "altar with"}','{"text": "ingredients, a"}','{"text": "spreader aimed"}','{"text": "at it, wand HUD"}']}}
+fill 136 64 115 136 79 128 minecraft:light_gray_concrete
+setblock 128 64 120 botania:mana_pool{mana:1000000}
+setblock 129 64 120 botania:mana_spreader{rotationX:180f,rotationY:0f,mana:1000}
+setblock 133 64 120 botania:runic_altar
+kw testworld use 133 64 120 up botania:manasteel_ingot
+kw testworld use 133 64 120 up botania:mana_powder
+kw testworld use 133 64 120 up minecraft:bone_meal
+kw testworld use 133 64 120 up minecraft:sugar_cane
 execute as @e[type=minecraft:item,tag=!kw_shot] run kill @s

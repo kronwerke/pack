@@ -1,19 +1,12 @@
-# 062 ars_master/wilden_ritual
-#area 197 88 216 113
-fill 197 64 88 216 91 113 minecraft:air
-fill 197 60 88 216 62 113 minecraft:stone
-fill 197 63 88 216 63 113 minecraft:light_gray_concrete
-fill 201 64 94 216 79 94 minecraft:light_gray_concrete
-fill 201 64 94 201 79 107 minecraft:light_gray_concrete
-setblock 202 64 106 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "062"}','{"text": "ars_master"}','{"text": "wilden_ritual"}','{"text": ""}']}}
-setblock 203 64 106 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "brazier with"}','{"text": "spike, horn and"}','{"text": "wing"}','{"text": ""}']}}
-fill 211 64 94 211 79 107 minecraft:light_gray_concrete
-setblock 206 64 99 ars_nouveau:ritual_brazier
-kw testworld use 206 64 99 up ars_nouveau:ritual_wilden_summon
-setblock 204 64 99 ars_nouveau:arcane_pedestal[facing=up]
-kw testworld use 204 64 99 south ars_nouveau:wilden_spike
-setblock 208 64 99 ars_nouveau:arcane_pedestal[facing=up]
-kw testworld use 208 64 99 south ars_nouveau:wilden_horn
-setblock 206 64 97 ars_nouveau:arcane_pedestal[facing=up]
-kw testworld use 206 64 97 south ars_nouveau:wilden_wing
+# 062 ars_master/tribute
+#area 180 88 201 115
+fill 180 64 88 201 91 115 minecraft:air
+fill 180 60 88 201 62 115 minecraft:stone
+fill 180 63 88 201 63 115 minecraft:light_gray_concrete
+fill 184 64 94 201 79 94 minecraft:light_gray_concrete
+fill 184 64 94 184 79 109 minecraft:light_gray_concrete
+setblock 185 64 108 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "062"}','{"text": "ars_master"}','{"text": "tribute"}','{"text": ""}']}}
+setblock 186 64 108 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "the Chimera mid"}','{"text": "fight"}','{"text": ""}','{"text": ""}']}}
+fill 196 64 94 196 79 109 minecraft:light_gray_concrete
+summon ars_nouveau:wilden_boss 190.5 64 100.5 {NoAI:1b,PersistenceRequired:1b,Silent:1b,Tags:["kw_shot"],Rotation:[180f,0f]}
 execute as @e[type=minecraft:item,tag=!kw_shot] run kill @s

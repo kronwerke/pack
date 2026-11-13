@@ -1,17 +1,20 @@
-# 051 ars_nouveau/chamber_auto
-#area 28 88 47 113
-fill 28 64 88 47 91 113 minecraft:air
-fill 28 60 88 47 62 113 minecraft:stone
-fill 28 63 88 47 63 113 minecraft:light_gray_concrete
-fill 32 64 94 47 79 94 minecraft:light_gray_concrete
-fill 32 64 94 32 79 107 minecraft:light_gray_concrete
-setblock 33 64 106 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "051"}','{"text": "ars_nouveau"}','{"text": "chamber_auto"}','{"text": ""}']}}
-setblock 34 64 106 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "hoppers above"}','{"text": "and below a"}','{"text": "chamber feeding"}','{"text": "a chest"}']}}
-fill 42 64 94 42 79 107 minecraft:light_gray_concrete
-setblock 37 67 99 minecraft:chest[facing=south]{Items:[{Slot:0b,id:"minecraft:amethyst_shard",count:64}]}
-setblock 37 66 99 minecraft:hopper[facing=down]
-setblock 37 65 99 ars_nouveau:imbuement_chamber[facing=up]
-setblock 37 64 99 minecraft:hopper[facing=east]
-setblock 38 64 99 minecraft:chest[facing=south]{Items:[]}
-setblock 35 64 99 ars_nouveau:source_jar[fill=11]{source:10000}
+# 051 ars_nouveau/fill_jar
+#area 11 88 32 113
+fill 11 64 88 32 91 113 minecraft:air
+fill 11 60 88 32 62 113 minecraft:stone
+fill 11 63 88 32 63 113 minecraft:light_gray_concrete
+fill 15 64 94 32 79 94 minecraft:light_gray_concrete
+fill 15 64 94 15 79 107 minecraft:light_gray_concrete
+setblock 16 64 106 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "051"}','{"text": "ars_nouveau"}','{"text": "fill_jar"}','{"text": ""}']}}
+setblock 17 64 106 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "volcanic"}','{"text": "sourcelink, jar"}','{"text": "and chamber"}','{"text": "within range,"}']}}
+setblock 18 64 106 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "logs on the"}','{"text": "ground"}','{"text": ""}','{"text": ""}']}}
+fill 27 64 94 27 79 107 minecraft:light_gray_concrete
+setblock 18 64 99 ars_nouveau:volcanic_sourcelink
+summon item 19.5 64.2 100.5 {Item:{id:"minecraft:oak_log",count:64},PickupDelay:32767,Age:-32768,Tags:["kw_shot"]}
+summon item 18.5 64.2 100.5 {Item:{id:"minecraft:oak_log",count:64},PickupDelay:32767,Age:-32768,Tags:["kw_shot"]}
+summon item 17.5 64.2 100.5 {Item:{id:"minecraft:oak_log",count:64},PickupDelay:32767,Age:-32768,Tags:["kw_shot"]}
+summon item 19.5 64.2 99.5 {Item:{id:"minecraft:oak_log",count:64},PickupDelay:32767,Age:-32768,Tags:["kw_shot"]}
+setblock 22 64 99 ars_nouveau:source_jar[fill=5]{source:5000}
+setblock 24 64 99 ars_nouveau:imbuement_chamber[facing=up]
+kw testworld use 24 64 99 south minecraft:amethyst_shard
 execute as @e[type=minecraft:item,tag=!kw_shot] run kill @s

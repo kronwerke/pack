@@ -1,35 +1,32 @@
-# 109 immersive/connectors, thermoelectric, transformer
-#area 132 181 173 206
-fill 132 64 181 173 91 206 minecraft:air
-fill 132 60 181 173 62 206 minecraft:stone
-fill 132 63 181 173 63 206 minecraft:light_gray_concrete
-fill 136 64 187 173 79 187 minecraft:light_gray_concrete
-fill 136 64 187 136 79 200 minecraft:light_gray_concrete
-setblock 137 64 199 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "109.1"}','{"text": "immersive"}','{"text": "connectors"}','{"text": ""}']}}
-setblock 138 64 199 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "LV wires on"}','{"text": "posts, the"}','{"text": "accumulator,"}','{"text": "the generator"}']}}
-setblock 139 64 199 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "between magma"}','{"text": "and blue ice, a"}','{"text": "transformer"}','{"text": "with LV and MV"}']}}
-fill 148 64 187 148 79 200 minecraft:light_gray_concrete
-setblock 139 64 192 immersiveengineering:capacitor_lv
-setblock 145 64 192 immersiveengineering:capacitor_lv
-fill 142 64 192 142 66 192 immersiveengineering:treated_fence
-kw testworld use 139 64 192 up immersiveengineering:connector_lv
-kw testworld use 145 64 192 up immersiveengineering:connector_lv
-kw testworld use 142 66 192 up immersiveengineering:connector_lv_relay
-kw testworld use 139 65 192 south immersiveengineering:wirecoil_copper
-kw testworld use 142 67 192 south immersiveengineering:wirecoil_copper
-kw testworld use 142 67 192 south immersiveengineering:wirecoil_copper
-kw testworld use 145 65 192 south immersiveengineering:wirecoil_copper
-setblock 149 64 199 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "109.2"}','{"text": "immersive"}','{"text": "thermoelectric"}','{"text": ""}']}}
-setblock 150 64 199 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Bau einen"}','{"text": "Thermoelektrischen"}','{"text": "Generator"}','{"text": ""}']}}
-fill 158 64 187 158 79 200 minecraft:light_gray_concrete
-setblock 152 64 192 minecraft:magma_block
-setblock 153 64 192 immersiveengineering:thermoelectric_generator
-setblock 154 64 192 minecraft:blue_ice
-kw testworld use 153 64 192 up immersiveengineering:connector_lv
-setblock 159 64 199 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "109.3"}','{"text": "immersive"}','{"text": "transformer"}','{"text": ""}']}}
-setblock 160 64 199 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Bau einen Trafo"}','{"text": ""}','{"text": ""}','{"text": ""}']}}
-fill 168 64 187 168 79 200 minecraft:light_gray_concrete
-setblock 161 64 192 immersiveengineering:capacitor_lv
-kw testworld use 163 63 192 up immersiveengineering:transformer
-setblock 165 64 192 immersiveengineering:capacitor_mv
+# 109 immersive/dynamo, watermill
+#area 97 181 136 208
+fill 97 64 181 126 101 208 minecraft:air
+fill 127 64 181 136 101 208 minecraft:air
+fill 97 60 181 136 62 208 minecraft:stone
+fill 97 63 181 136 63 208 minecraft:light_gray_concrete
+fill 101 64 187 136 89 187 minecraft:light_gray_concrete
+fill 101 64 187 101 89 202 minecraft:light_gray_concrete
+setblock 102 64 201 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "109.1"}','{"text": "immersive"}','{"text": "dynamo"}','{"text": ""}']}}
+setblock 103 64 201 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "dynamo with"}','{"text": "windmill, a"}','{"text": "windmill on a"}','{"text": "tower, three"}']}}
+setblock 104 64 201 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "water wheels on"}','{"text": "one shaft"}','{"text": ""}','{"text": ""}']}}
+fill 117 64 187 117 89 202 minecraft:light_gray_concrete
+fill 109 64 191 109 70 191 immersiveengineering:treated_wood_horizontal
+setblock 109 71 191 immersiveengineering:dynamo[facing=south]
+kw testworld use 109 71 191 south immersiveengineering:windmill
+execute unless block 109 71 192 minecraft:air
+setblock 118 64 201 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "109.2"}','{"text": "immersive"}','{"text": "watermill"}','{"text": ""}']}}
+setblock 119 64 201 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Bau ein"}','{"text": "Wasserrad"}','{"text": ""}','{"text": ""}']}}
+fill 131 64 187 131 89 202 minecraft:light_gray_concrete
+fill 124 64 190 124 67 190 immersiveengineering:treated_wood_horizontal
+setblock 124 68 190 immersiveengineering:dynamo[facing=south]
+kw testworld use 124 68 190 south immersiveengineering:watermill
+execute unless block 124 68 191 minecraft:air
+setblock 119 63 191 minecraft:water
+setblock 120 63 191 minecraft:air
+setblock 121 63 191 minecraft:air
+setblock 122 63 191 minecraft:air
+setblock 123 63 191 minecraft:air
+setblock 124 63 191 minecraft:air
+setblock 125 63 191 minecraft:air
+setblock 126 63 191 minecraft:air
 execute as @e[type=minecraft:item,tag=!kw_shot] run kill @s

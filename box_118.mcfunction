@@ -1,27 +1,16 @@
-# 118 industrial/washing, conveyor
-#area 88 216 119 241
-fill 88 64 216 119 91 241 minecraft:air
-fill 88 60 216 119 62 241 minecraft:stone
-fill 88 63 216 119 63 241 minecraft:light_gray_concrete
-fill 92 64 222 119 79 222 minecraft:light_gray_concrete
-fill 92 64 222 92 79 235 minecraft:light_gray_concrete
-setblock 93 64 234 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "118.1"}','{"text": "industrial"}','{"text": "washing"}','{"text": ""}']}}
-setblock 94 64 234 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "the ore meat"}','{"text": "machines in a"}','{"text": "row, conveyors"}','{"text": "with upgrades,"}']}}
-setblock 95 64 234 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "two"}','{"text": "transporters"}','{"text": ""}','{"text": ""}']}}
-fill 103 64 222 103 79 235 minecraft:light_gray_concrete
-setblock 96 64 227 industrialforegoing:washing_factory[subfacing=south]
-setblock 98 64 227 industrialforegoing:fermentation_station[subfacing=south]
-setblock 100 64 227 industrialforegoing:fluid_sieving_machine[subfacing=south]
-setblock 104 64 234 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "118.2"}','{"text": "industrial"}','{"text": "conveyor"}','{"text": ""}']}}
-setblock 105 64 234 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Leg"}','{"text": "Förderbänder"}','{"text": ""}','{"text": ""}']}}
-fill 114 64 222 114 79 235 minecraft:light_gray_concrete
-setblock 106 64 227 industrialforegoing:conveyor[facing=east,type=flat]
-setblock 107 64 227 industrialforegoing:conveyor[facing=east,type=flat]
-setblock 108 64 227 industrialforegoing:conveyor[facing=east,type=flat]
-setblock 109 64 227 industrialforegoing:conveyor[facing=east,type=flat]
-setblock 110 64 227 industrialforegoing:conveyor[facing=east,type=flat]
-setblock 111 64 227 industrialforegoing:conveyor[facing=east,type=flat]
-summon item 107.5 64.4 227.5 {Item:{id:"minecraft:raw_iron",count:1},PickupDelay:32767,Age:-32768,Tags:["kw_shot"]}
-summon item 109.5 64.4 227.5 {Item:{id:"minecraft:raw_iron",count:1},PickupDelay:32767,Age:-32768,Tags:["kw_shot"]}
-summon item 110.5 64.4 227.5 {Item:{id:"minecraft:raw_iron",count:1},PickupDelay:32767,Age:-32768,Tags:["kw_shot"]}
+# 118 industrial/laser
+#area 73 216 92 241
+fill 73 64 216 92 91 241 minecraft:air
+fill 73 60 216 92 62 241 minecraft:stone
+fill 73 63 216 92 63 241 minecraft:light_gray_concrete
+fill 77 64 222 92 79 222 minecraft:light_gray_concrete
+fill 77 64 222 77 79 235 minecraft:light_gray_concrete
+setblock 78 64 234 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "118"}','{"text": "industrial"}','{"text": "laser"}','{"text": ""}']}}
+setblock 79 64 234 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "ore laser with"}','{"text": "drills, the"}','{"text": "lens slot,"}','{"text": "fluid laser"}']}}
+setblock 80 64 234 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "over a wither"}','{"text": ""}','{"text": ""}','{"text": ""}']}}
+fill 87 64 222 87 79 235 minecraft:light_gray_concrete
+setblock 82 64 227 industrialforegoing:ore_laser_base
+setblock 80 64 227 industrialforegoing:laser_drill[facing=east]
+setblock 84 64 227 industrialforegoing:laser_drill[facing=west]
+setblock 82 64 225 industrialforegoing:laser_drill[facing=south]
 execute as @e[type=minecraft:item,tag=!kw_shot] run kill @s

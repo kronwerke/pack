@@ -1,26 +1,35 @@
-# 145 finale/tech
-#area 97 319 118 346
-fill 97 64 319 118 91 346 minecraft:air
-fill 97 60 319 118 62 346 minecraft:stone
-fill 97 63 319 118 63 346 minecraft:light_gray_concrete
-fill 101 64 325 118 79 325 minecraft:light_gray_concrete
-fill 101 64 325 101 79 340 minecraft:light_gray_concrete
-setblock 102 64 339 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "145"}','{"text": "finale"}','{"text": "tech"}','{"text": ""}']}}
-setblock 103 64 339 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Fusioniere"}','{"text": "Erwachtes"}','{"text": "Draconium"}','{"text": ""}']}}
-fill 113 64 325 113 79 340 minecraft:light_gray_concrete
-setblock 107 64 331 draconicevolution:crafting_core
-setblock 104 64 330 draconicevolution:wyvern_crafting_injector[facing=east]
-kw testworld use 104 64 330 up draconicevolution:draconium_core
-setblock 104 64 332 draconicevolution:wyvern_crafting_injector[facing=east]
-kw testworld use 104 64 332 up draconicevolution:draconium_core
-setblock 110 64 330 draconicevolution:wyvern_crafting_injector[facing=west]
-kw testworld use 110 64 330 up draconicevolution:draconium_core
-setblock 110 64 332 draconicevolution:wyvern_crafting_injector[facing=west]
-kw testworld use 110 64 332 up draconicevolution:draconium_core
-setblock 106 64 328 draconicevolution:wyvern_crafting_injector[facing=south]
-kw testworld use 106 64 328 up botania:gaia_ingot
-setblock 108 64 328 draconicevolution:wyvern_crafting_injector[facing=south]
-kw testworld use 108 64 328 up botania:gaia_ingot
-setblock 107 64 334 draconicevolution:wyvern_crafting_injector[facing=north]
-kw testworld use 107 64 334 up draconicevolution:dragon_heart
+# 145 quarries/first_dig, quarry, destroyer, coe_netherite
+#area 62 319 111 344
+fill 62 64 319 106 91 344 minecraft:air
+fill 107 64 319 111 91 344 minecraft:air
+fill 62 60 319 111 62 344 minecraft:stone
+fill 62 63 319 111 63 344 minecraft:light_gray_concrete
+fill 66 64 325 111 79 325 minecraft:light_gray_concrete
+fill 66 64 325 66 79 338 minecraft:light_gray_concrete
+setblock 67 64 337 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "145.1"}','{"text": "quarries"}','{"text": "first_dig"}','{"text": ""}']}}
+setblock 68 64 337 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Lass den"}','{"text": "Builder graben"}','{"text": ""}','{"text": ""}']}}
+fill 76 64 325 76 79 338 minecraft:light_gray_concrete
+setblock 71 64 330 rftoolsbuilder:builder[facing=south]
+setblock 71 65 330 minecraft:chest[facing=south,type=single,waterlogged=false]
+setblock 77 64 337 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "145.2"}','{"text": "quarries"}','{"text": "quarry"}','{"text": ""}']}}
+setblock 78 64 337 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Bau einen"}','{"text": "Quarry Plus"}','{"text": ""}','{"text": ""}']}}
+fill 86 64 325 86 79 338 minecraft:light_gray_concrete
+setblock 80 64 331 quarryplus:quarry[facing=south,working=false]
+setblock 81 64 331 quarryplus:marker[facing=up]
+setblock 83 64 331 quarryplus:marker[facing=up]
+setblock 81 64 329 quarryplus:marker[facing=up]
+setblock 87 64 337 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "145.3"}','{"text": "quarries"}','{"text": "destroyer"}','{"text": ""}']}}
+setblock 88 64 337 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Bau den Chunk"}','{"text": "Destroyer"}','{"text": ""}','{"text": ""}']}}
+fill 96 64 325 96 79 338 minecraft:light_gray_concrete
+setblock 90 64 330 quarryplus:adv_quarry[facing=south,working=false]
+setblock 92 64 330 quarryplus:chunk_marker
+setblock 97 64 337 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "145.4"}','{"text": "quarries"}','{"text": "coe_netherite"}','{"text": ""}']}}
+setblock 98 64 337 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Bau einen"}','{"text": "Netheritbohrer"}','{"text": ""}','{"text": ""}']}}
+fill 106 64 325 106 79 338 minecraft:light_gray_concrete
+setblock 99 64 330 minecraft:smooth_stone_slab
+summon item_display 99.5 64.95 330.5 {item:{id:"createoreexcavation:drill",count:1},item_display:"fixed",billboard:"vertical",transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[1.0f,1.0f,1.0f]},brightness:{sky:15,block:15},Tags:["kw_shot"]}
+setblock 101 64 330 minecraft:smooth_stone_slab
+summon item_display 101.5 64.95 330.5 {item:{id:"createoreexcavation:diamond_drill",count:1},item_display:"fixed",billboard:"vertical",transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[1.0f,1.0f,1.0f]},brightness:{sky:15,block:15},Tags:["kw_shot"]}
+setblock 103 64 330 minecraft:smooth_stone_slab
+summon item_display 103.5 64.95 330.5 {item:{id:"createoreexcavation:netherite_drill",count:1},item_display:"fixed",billboard:"vertical",transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[1.0f,1.0f,1.0f]},brightness:{sky:15,block:15},Tags:["kw_shot"]}
 execute as @e[type=minecraft:item,tag=!kw_shot] run kill @s

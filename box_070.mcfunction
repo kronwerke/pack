@@ -1,14 +1,13 @@
-# 070 botania/manastar
-#area 41 109 60 134
-fill 41 64 109 60 91 134 minecraft:air
-fill 41 60 109 60 62 134 minecraft:stone
-fill 41 63 109 60 63 134 minecraft:light_gray_concrete
-fill 45 64 115 60 79 115 minecraft:light_gray_concrete
-fill 45 64 115 45 79 128 minecraft:light_gray_concrete
-setblock 46 64 127 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "070"}','{"text": "botania"}','{"text": "manastar"}','{"text": ""}']}}
-setblock 47 64 127 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "a blue Manastar"}','{"text": "next to a pool"}','{"text": ""}','{"text": ""}']}}
-fill 55 64 115 55 79 128 minecraft:light_gray_concrete
-fill 48 63 118 52 63 122 minecraft:grass_block
-setblock 50 64 120 botania:mana_pool{mana:400000}
-setblock 51 64 120 botania:manastar
+# 070 botania/pool
+#area 26 109 45 134
+fill 26 64 109 45 91 134 minecraft:air
+fill 26 60 109 45 62 134 minecraft:stone
+fill 26 63 109 45 63 134 minecraft:light_gray_concrete
+fill 30 64 115 45 79 115 minecraft:light_gray_concrete
+fill 30 64 115 30 79 128 minecraft:light_gray_concrete
+setblock 31 64 127 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "070"}','{"text": "botania"}','{"text": "pool"}','{"text": ""}']}}
+setblock 32 64 127 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "a full pool"}','{"text": "with a spreader"}','{"text": "beam, wand in"}','{"text": "hand"}']}}
+fill 40 64 115 40 79 128 minecraft:light_gray_concrete
+setblock 36 64 120 botania:mana_pool{mana:1000000}
+setblock 33 64 120 botania:mana_spreader{rotationX:180f,rotationY:0f,mana:1000}
 execute as @e[type=minecraft:item,tag=!kw_shot] run kill @s

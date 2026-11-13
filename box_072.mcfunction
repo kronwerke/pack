@@ -1,20 +1,13 @@
-# 072 botania/farm
-#area 71 109 94 134
-fill 71 64 109 94 91 134 minecraft:air
-fill 71 60 109 94 62 134 minecraft:stone
-fill 71 63 109 94 63 134 minecraft:light_gray_concrete
-fill 75 64 115 94 79 115 minecraft:light_gray_concrete
-fill 75 64 115 75 79 128 minecraft:light_gray_concrete
-setblock 76 64 127 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "072"}','{"text": "botania"}','{"text": "farm"}','{"text": ""}']}}
-setblock 77 64 127 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "the finished"}','{"text": "stage 1 mana"}','{"text": "farm"}','{"text": ""}']}}
-fill 89 64 115 89 79 128 minecraft:light_gray_concrete
-fill 77 63 118 87 63 122 minecraft:grass_block
-setblock 82 64 120 botania:mana_pool{mana:200000}
-setblock 82 64 121 botania:manastar
-setblock 79 64 120 botania:mana_spreader{rotationX:180f,rotationY:0f,mana:1000}
-setblock 85 64 120 botania:mana_spreader{rotationX:0f,rotationY:0f,mana:1000}
-setblock 78 64 119 botania:endoflame
-setblock 78 64 121 botania:endoflame
-setblock 86 64 119 botania:endoflame
-setblock 86 64 121 botania:endoflame
+# 072 botania/mana_void
+#area 56 109 75 134
+fill 56 64 109 75 91 134 minecraft:air
+fill 56 60 109 75 62 134 minecraft:stone
+fill 56 63 109 75 63 134 minecraft:light_gray_concrete
+fill 60 64 115 75 79 115 minecraft:light_gray_concrete
+fill 60 64 115 60 79 128 minecraft:light_gray_concrete
+setblock 61 64 127 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "072"}','{"text": "botania"}','{"text": "mana_void"}','{"text": ""}']}}
+setblock 62 64 127 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "a mana void"}','{"text": "under a pool"}','{"text": ""}','{"text": ""}']}}
+fill 70 64 115 70 79 128 minecraft:light_gray_concrete
+setblock 65 64 120 botania:mana_void
+setblock 65 65 120 botania:mana_pool{mana:1000000}
 execute as @e[type=minecraft:item,tag=!kw_shot] run kill @s

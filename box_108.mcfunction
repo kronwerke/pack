@@ -1,32 +1,13 @@
-# 108 immersive/dynamo, watermill
-#area 97 181 136 208
-fill 97 64 181 126 101 208 minecraft:air
-fill 127 64 181 136 101 208 minecraft:air
-fill 97 60 181 136 62 208 minecraft:stone
-fill 97 63 181 136 63 208 minecraft:light_gray_concrete
-fill 101 64 187 136 89 187 minecraft:light_gray_concrete
-fill 101 64 187 101 89 202 minecraft:light_gray_concrete
-setblock 102 64 201 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "108.1"}','{"text": "immersive"}','{"text": "dynamo"}','{"text": ""}']}}
-setblock 103 64 201 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "dynamo with"}','{"text": "windmill, a"}','{"text": "windmill on a"}','{"text": "tower, three"}']}}
-setblock 104 64 201 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "water wheels on"}','{"text": "one shaft"}','{"text": ""}','{"text": ""}']}}
-fill 117 64 187 117 89 202 minecraft:light_gray_concrete
-fill 109 64 191 109 70 191 immersiveengineering:treated_wood_horizontal
-setblock 109 71 191 immersiveengineering:dynamo[facing=south]
-kw testworld use 109 71 191 south immersiveengineering:windmill
-execute unless block 109 71 192 minecraft:air
-setblock 118 64 201 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "108.2"}','{"text": "immersive"}','{"text": "watermill"}','{"text": ""}']}}
-setblock 119 64 201 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Bau ein"}','{"text": "Wasserrad"}','{"text": ""}','{"text": ""}']}}
-fill 131 64 187 131 89 202 minecraft:light_gray_concrete
-fill 124 64 190 124 67 190 immersiveengineering:treated_wood_horizontal
-setblock 124 68 190 immersiveengineering:dynamo[facing=south]
-kw testworld use 124 68 190 south immersiveengineering:watermill
-execute unless block 124 68 191 minecraft:air
-setblock 119 63 191 minecraft:water
-setblock 120 63 191 minecraft:air
-setblock 121 63 191 minecraft:air
-setblock 122 63 191 minecraft:air
-setblock 123 63 191 minecraft:air
-setblock 124 63 191 minecraft:air
-setblock 125 63 191 minecraft:air
-setblock 126 63 191 minecraft:air
+# 108 immersive/cloche
+#area 82 181 101 206
+fill 82 64 181 101 91 206 minecraft:air
+fill 82 60 181 101 62 206 minecraft:stone
+fill 82 63 181 101 63 206 minecraft:light_gray_concrete
+fill 86 64 187 101 79 187 minecraft:light_gray_concrete
+fill 86 64 187 86 79 200 minecraft:light_gray_concrete
+setblock 87 64 199 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "108"}','{"text": "immersive"}','{"text": "cloche"}','{"text": ""}']}}
+setblock 88 64 199 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "a garden cloche"}','{"text": "growing hemp"}','{"text": ""}','{"text": ""}']}}
+fill 96 64 187 96 79 200 minecraft:light_gray_concrete
+kw testworld use 91 63 192 up immersiveengineering:cloche
+data merge block 91 64 192 {Items:[{Slot:0b,id:"minecraft:dirt",count:1},{Slot:1b,id:"immersiveengineering:seed",count:1}],energy:16000,tank:{Fluid:{id:"minecraft:water",amount:4000}}}
 execute as @e[type=minecraft:item,tag=!kw_shot] run kill @s

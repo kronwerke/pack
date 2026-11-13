@@ -334,11 +334,11 @@ hash = "93c982c2e09101877cba15ed69d2eee71ed5be2243ee8dcdcc0734845932c8b6"
 
 [[files]]
 file = "config/ftbquests/quests/lang/de_de.snbt"
-hash = "d451d03fa20cf51be2bf822c54278aabce4dfda30c2ff848c2a75e340a2de482"
+hash = "b24db1962636cd637f9be1e9f32241a5704b51f24f8f16521e144e775086f860"
 
 [[files]]
 file = "config/ftbquests/quests/lang/en_us.snbt"
-hash = "db6abe0886558ccc2ead5f41ff0802a05c426f39ffc76319a4f3982ed528c6c9"
+hash = "40c88afa29ff48f13a495d487cbdb7f1f4abe32775fd21feead02347fef24300"
 
 [[files]]
 file = "config/ftbquests/quests/reward_tables/s1_common.snbt"
@@ -3673,8 +3673,20 @@ file = "kubejs/assets/kronwerke/textures/quests/shots/mekanism_ores_tripling.png
 hash = "b992b0888b5f4c57bca6c5a7c636414686b8ae12d6104342203f2f93685270cf"
 
 [[files]]
+file = "kubejs/assets/kronwerke/textures/quests/shots/nether_bastion.png"
+hash = "b144c70556de1a950dc2623fbd8a738ae49c566da99d648d3fe5cc5ff90a4c92"
+
+[[files]]
+file = "kubejs/assets/kronwerke/textures/quests/shots/nether_biomes.png"
+hash = "1050782b0e44892e4bb7858720cdafb339955adcf6fde9595264128d08d7cece"
+
+[[files]]
 file = "kubejs/assets/kronwerke/textures/quests/shots/nether_debris.png"
 hash = "fc1404f487ccd8fec75894eee888df5d934a297f53c3fcec7d0086f25121f020"
+
+[[files]]
+file = "kubejs/assets/kronwerke/textures/quests/shots/nether_fortress.png"
+hash = "a97813e86c239cca1c616cc4f68c36d228b3b7572a48b1e4c2e7f84f3ecdbe4b"
 
 [[files]]
 file = "kubejs/assets/kronwerke/textures/quests/shots/nether_ig_kill.png"
@@ -3683,6 +3695,10 @@ hash = "d60ce634e26682799c6872d6727b45854c942914850e34d17da68511300292e5"
 [[files]]
 file = "kubejs/assets/kronwerke/textures/quests/shots/nether_nm_kill.png"
 hash = "ad763f51642da425f9be86acd12befc1791e402cee3a03b5539df74cd9d79bf5"
+
+[[files]]
+file = "kubejs/assets/kronwerke/textures/quests/shots/nether_structures.png"
+hash = "097cad1fca00897007f2b33f9b846cc2990072a0f00b91810553191a641c4b27"
 
 [[files]]
 file = "kubejs/assets/kronwerke/textures/quests/shots/nether_welcome.png"

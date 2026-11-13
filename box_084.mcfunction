@@ -1,20 +1,14 @@
-# 084 immersive_heavy/hv
-#area 342 177 365 202
-fill 342 64 177 365 95 202 minecraft:air
-fill 342 60 177 365 62 202 minecraft:stone
-fill 342 63 177 365 63 202 minecraft:light_gray_concrete
-fill 346 64 183 365 83 183 minecraft:light_gray_concrete
-fill 346 64 183 346 83 196 minecraft:light_gray_concrete
-setblock 347 64 195 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "084"}','{"text": "immersive_heavy"}','{"text": "hv"}','{"text": ""}']}}
-setblock 348 64 195 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "an HV line on"}','{"text": "steel posts,"}','{"text": "the bottling"}','{"text": "machine with"}']}}
-setblock 349 64 195 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "resin, a core"}','{"text": "sample on the"}','{"text": "ground"}','{"text": ""}']}}
-fill 360 64 183 360 83 196 minecraft:light_gray_concrete
-kw testworld use 349 63 188 up immersiveengineering:steel_post
-execute unless block 349 67 188 minecraft:air
-kw testworld use 349 67 188 up immersiveengineering:connector_hv
-kw testworld use 357 63 188 up immersiveengineering:steel_post
-execute unless block 357 67 188 minecraft:air
-kw testworld use 357 67 188 up immersiveengineering:connector_hv
-kw testworld use 349 68 188 south immersiveengineering:wirecoil_steel
-kw testworld use 357 68 188 south immersiveengineering:wirecoil_steel
+# 084 immersive/hammer
+#area -4 179 15 204
+fill -4 64 179 15 91 204 minecraft:air
+fill -4 60 179 15 62 204 minecraft:stone
+fill -4 63 179 15 63 204 minecraft:light_gray_concrete
+fill 0 64 185 15 79 185 minecraft:light_gray_concrete
+fill 0 64 185 0 79 198 minecraft:light_gray_concrete
+setblock 1 64 197 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "084"}','{"text": "immersive"}','{"text": "hammer"}','{"text": ""}']}}
+setblock 2 64 197 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "right-clicking"}','{"text": "a structure"}','{"text": "with the hammer"}','{"text": ""}']}}
+fill 10 64 185 10 79 198 minecraft:light_gray_concrete
+place template immersiveengineering:multiblocks/coke_oven 4 64 188 none
+setblock 5 64 192 minecraft:smooth_stone_slab
+summon item_display 5.5 65.04 192.5 {item:{id:"immersiveengineering:hammer",count:1},item_display:"fixed",billboard:"vertical",transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[1.2f,1.2f,1.2f]},brightness:{sky:15,block:15},Tags:["kw_shot"]}
 execute as @e[type=minecraft:item,tag=!kw_shot] run kill @s

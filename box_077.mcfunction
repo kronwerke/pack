@@ -1,21 +1,101 @@
-# 077 immersive/blast_furnace, improved_form
-#area 26 177 55 203
-fill 26 64 177 55 91 203 minecraft:air
-fill 26 60 177 55 62 203 minecraft:stone
-fill 26 63 177 55 63 203 minecraft:light_gray_concrete
-fill 30 64 183 55 79 183 minecraft:light_gray_concrete
-fill 30 64 183 30 79 197 minecraft:light_gray_concrete
-setblock 31 64 196 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "077.1"}','{"text": "immersive"}','{"text": "blast_furnace"}','{"text": ""}']}}
-setblock 32 64 196 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "crude blast"}','{"text": "furnace GUI,"}','{"text": "improved"}','{"text": "furnace with"}']}}
-setblock 33 64 196 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "hopper and"}','{"text": "preheaters"}','{"text": ""}','{"text": ""}']}}
-fill 40 64 183 40 79 197 minecraft:light_gray_concrete
-place template immersiveengineering:multiblocks/blast_furnace 34 64 186 none
-kw testworld use 35 65 188 south immersiveengineering:hammer
-execute unless block 35 65 188 immersiveengineering:blastbrick
-setblock 41 64 196 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "077.2"}','{"text": "immersive"}','{"text": "improved_form"}','{"text": ""}']}}
-setblock 42 64 196 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Form einen"}','{"text": "Verbesserten"}','{"text": "Hochofen"}','{"text": ""}']}}
-fill 50 64 183 50 79 197 minecraft:light_gray_concrete
-place template immersiveengineering:multiblocks/improved_blast_furnace 44 64 186 none
-kw testworld use 45 65 188 south immersiveengineering:hammer
-execute unless block 45 65 188 immersiveengineering:blastbrick_reinforced
+# 077 occultism/strigeor
+#area 72 144 99 177
+fill 72 64 144 99 91 177 minecraft:air
+fill 72 60 144 99 62 177 minecraft:stone
+fill 72 63 144 99 63 177 minecraft:light_gray_concrete
+fill 76 64 150 99 79 150 minecraft:light_gray_concrete
+fill 76 64 150 76 79 171 minecraft:light_gray_concrete
+setblock 77 64 170 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "077"}','{"text": "occultism"}','{"text": "strigeor"}','{"text": ""}']}}
+setblock 78 64 170 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Strigeor\'s"}','{"text": "Higher Binding"}','{"text": "from above"}','{"text": ""}']}}
+fill 94 64 150 94 79 171 minecraft:light_gray_concrete
+fill 78 63 152 92 63 166 minecraft:smooth_basalt
+setblock 80 64 155 occultism:chalk_glyph_purple[facing=south,sign=0]
+setblock 80 64 156 occultism:chalk_glyph_lime[facing=south,sign=5]
+setblock 80 64 157 occultism:chalk_glyph_purple[facing=south,sign=10]
+setblock 80 64 158 occultism:chalk_glyph_lime[facing=south,sign=2]
+setblock 80 64 159 occultism:chalk_glyph_purple[facing=south,sign=7]
+setblock 80 64 160 occultism:chalk_glyph_lime[facing=south,sign=12]
+setblock 80 64 161 occultism:chalk_glyph_purple[facing=south,sign=4]
+setblock 80 64 162 occultism:chalk_glyph_lime[facing=south,sign=9]
+setblock 80 64 163 occultism:chalk_glyph_purple[facing=south,sign=1]
+setblock 81 64 154 occultism:chalk_glyph_purple[facing=south,sign=6]
+setblock 81 64 155 occultism:chalk_glyph_lime[facing=south,sign=11]
+setblock 81 64 157 minecraft:skeleton_skull[rotation=8]
+setblock 81 64 161 minecraft:skeleton_skull[rotation=8]
+setblock 81 64 163 occultism:chalk_glyph_lime[facing=south,sign=3]
+setblock 81 64 164 occultism:chalk_glyph_purple[facing=south,sign=8]
+setblock 82 64 154 occultism:chalk_glyph_lime[facing=south,sign=0]
+setblock 82 64 157 occultism:chalk_glyph_white[facing=south,sign=5]
+setblock 82 64 158 occultism:chalk_glyph_purple[facing=south,sign=10]
+setblock 82 64 159 occultism:chalk_glyph_purple[facing=south,sign=2]
+setblock 82 64 160 occultism:chalk_glyph_purple[facing=south,sign=7]
+setblock 82 64 161 occultism:chalk_glyph_white[facing=south,sign=12]
+setblock 82 64 164 occultism:chalk_glyph_lime[facing=south,sign=4]
+setblock 83 64 154 occultism:chalk_glyph_purple[facing=south,sign=9]
+setblock 83 64 155 minecraft:skeleton_skull[rotation=8]
+setblock 83 64 156 occultism:chalk_glyph_white[facing=south,sign=1]
+setblock 83 64 157 occultism:chalk_glyph_light_gray[facing=south,sign=6]
+setblock 83 64 158 minecraft:white_candle[candles=1,lit=true]
+setblock 83 64 160 minecraft:white_candle[candles=1,lit=true]
+setblock 83 64 161 occultism:chalk_glyph_light_gray[facing=south,sign=11]
+setblock 83 64 162 occultism:chalk_glyph_white[facing=south,sign=3]
+setblock 83 64 163 minecraft:skeleton_skull[rotation=8]
+setblock 83 64 164 occultism:chalk_glyph_purple[facing=south,sign=8]
+setblock 84 64 154 occultism:chalk_glyph_lime[facing=south,sign=0]
+setblock 84 64 156 occultism:chalk_glyph_purple[facing=south,sign=5]
+setblock 84 64 157 minecraft:white_candle[candles=1,lit=true]
+setblock 84 64 158 occultism:chalk_glyph_light_gray[facing=south,sign=10]
+setblock 84 64 160 occultism:chalk_glyph_light_gray[facing=south,sign=2]
+setblock 84 64 161 minecraft:white_candle[candles=1,lit=true]
+setblock 84 64 162 occultism:chalk_glyph_purple[facing=south,sign=7]
+setblock 84 64 164 occultism:chalk_glyph_lime[facing=south,sign=12]
+setblock 85 64 154 occultism:chalk_glyph_purple[facing=south,sign=4]
+setblock 85 64 156 occultism:chalk_glyph_purple[facing=south,sign=9]
+setblock 85 64 159 occultism:golden_sacrificial_bowl
+setblock 85 64 162 occultism:chalk_glyph_purple[facing=south,sign=1]
+setblock 85 64 164 occultism:chalk_glyph_purple[facing=south,sign=6]
+setblock 86 64 154 occultism:chalk_glyph_lime[facing=south,sign=11]
+setblock 86 64 156 occultism:chalk_glyph_purple[facing=south,sign=3]
+setblock 86 64 157 minecraft:white_candle[candles=1,lit=true]
+setblock 86 64 158 occultism:chalk_glyph_light_gray[facing=south,sign=8]
+setblock 86 64 160 occultism:chalk_glyph_light_gray[facing=south,sign=0]
+setblock 86 64 161 minecraft:white_candle[candles=1,lit=true]
+setblock 86 64 162 occultism:chalk_glyph_purple[facing=south,sign=5]
+setblock 86 64 164 occultism:chalk_glyph_lime[facing=south,sign=10]
+setblock 87 64 154 occultism:chalk_glyph_purple[facing=south,sign=2]
+setblock 87 64 155 minecraft:skeleton_skull[rotation=8]
+setblock 87 64 156 occultism:chalk_glyph_white[facing=south,sign=7]
+setblock 87 64 157 occultism:chalk_glyph_light_gray[facing=south,sign=12]
+setblock 87 64 158 minecraft:white_candle[candles=1,lit=true]
+setblock 87 64 160 minecraft:white_candle[candles=1,lit=true]
+setblock 87 64 161 occultism:chalk_glyph_light_gray[facing=south,sign=4]
+setblock 87 64 162 occultism:chalk_glyph_white[facing=south,sign=9]
+setblock 87 64 163 minecraft:skeleton_skull[rotation=8]
+setblock 87 64 164 occultism:chalk_glyph_purple[facing=south,sign=1]
+setblock 88 64 154 occultism:chalk_glyph_lime[facing=south,sign=6]
+setblock 88 64 157 occultism:chalk_glyph_white[facing=south,sign=11]
+setblock 88 64 158 occultism:chalk_glyph_purple[facing=south,sign=3]
+setblock 88 64 159 occultism:chalk_glyph_purple[facing=south,sign=8]
+setblock 88 64 160 occultism:chalk_glyph_purple[facing=south,sign=0]
+setblock 88 64 161 occultism:chalk_glyph_white[facing=south,sign=5]
+setblock 88 64 164 occultism:chalk_glyph_lime[facing=south,sign=10]
+setblock 89 64 154 occultism:chalk_glyph_purple[facing=south,sign=2]
+setblock 89 64 155 occultism:chalk_glyph_lime[facing=south,sign=7]
+setblock 89 64 157 minecraft:skeleton_skull[rotation=8]
+setblock 89 64 161 minecraft:skeleton_skull[rotation=8]
+setblock 89 64 163 occultism:chalk_glyph_lime[facing=south,sign=12]
+setblock 89 64 164 occultism:chalk_glyph_purple[facing=south,sign=4]
+setblock 90 64 155 occultism:chalk_glyph_purple[facing=south,sign=9]
+setblock 90 64 156 occultism:chalk_glyph_lime[facing=south,sign=1]
+setblock 90 64 157 occultism:chalk_glyph_purple[facing=south,sign=6]
+setblock 90 64 158 occultism:chalk_glyph_lime[facing=south,sign=11]
+setblock 90 64 159 occultism:chalk_glyph_purple[facing=south,sign=3]
+setblock 90 64 160 occultism:chalk_glyph_lime[facing=south,sign=8]
+setblock 90 64 161 occultism:chalk_glyph_purple[facing=south,sign=0]
+setblock 90 64 162 occultism:chalk_glyph_lime[facing=south,sign=5]
+setblock 90 64 163 occultism:chalk_glyph_purple[facing=south,sign=10]
+setblock 85 64 152 occultism:sacrificial_bowl[facing=up]
+setblock 92 64 159 occultism:sacrificial_bowl[facing=up]
+setblock 85 64 166 occultism:sacrificial_bowl[facing=up]
+setblock 78 64 159 occultism:sacrificial_bowl[facing=up]
 execute as @e[type=minecraft:item,tag=!kw_shot] run kill @s

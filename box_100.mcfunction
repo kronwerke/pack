@@ -1,70 +1,61 @@
-# 100 pneumaticcraft/chamber, refinery, vortex, elevator, plastic, etching
-#area 89 273 158 302
-fill 89 64 273 122 95 302 minecraft:air
-fill 123 64 273 156 95 302 minecraft:air
-fill 157 64 273 158 95 302 minecraft:air
-fill 89 60 273 158 62 302 minecraft:stone
-fill 89 63 273 158 63 302 minecraft:light_gray_concrete
-fill 93 64 279 158 83 279 minecraft:light_gray_concrete
-fill 93 64 279 93 83 296 minecraft:light_gray_concrete
-setblock 94 64 295 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "100.1"}','{"text": "pneumaticcraft"}','{"text": "chamber"}','{"text": ""}']}}
-setblock 95 64 295 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Setz die"}','{"text": "Druckkammer"}','{"text": "zusammen"}','{"text": ""}']}}
-fill 103 64 279 103 83 296 minecraft:light_gray_concrete
-setblock 97 64 283 pneumaticcraft:pressure_chamber_wall[wall_state=none]
-setblock 97 64 284 pneumaticcraft:pressure_chamber_wall[wall_state=none]
-setblock 97 64 285 pneumaticcraft:pressure_chamber_wall[wall_state=none]
-setblock 97 65 283 pneumaticcraft:pressure_chamber_wall[wall_state=none]
-setblock 97 65 284 pneumaticcraft:pressure_chamber_interface[facing=west]
-setblock 97 65 285 pneumaticcraft:pressure_chamber_wall[wall_state=none]
-setblock 97 66 283 pneumaticcraft:pressure_chamber_wall[wall_state=none]
-setblock 97 66 284 pneumaticcraft:pressure_chamber_wall[wall_state=none]
-setblock 98 64 283 pneumaticcraft:pressure_chamber_wall[wall_state=none]
-setblock 98 64 284 pneumaticcraft:pressure_chamber_glass
-setblock 98 64 285 pneumaticcraft:pressure_chamber_wall[wall_state=none]
-setblock 98 65 283 pneumaticcraft:pressure_chamber_glass
-setblock 98 65 285 pneumaticcraft:pressure_chamber_glass
-setblock 98 66 283 pneumaticcraft:pressure_chamber_wall[wall_state=none]
-setblock 98 66 284 pneumaticcraft:pressure_chamber_glass
-setblock 98 66 285 pneumaticcraft:pressure_chamber_wall[wall_state=none]
-setblock 99 64 283 pneumaticcraft:pressure_chamber_wall[wall_state=none]
-setblock 99 64 284 pneumaticcraft:pressure_chamber_wall[wall_state=none]
-setblock 99 64 285 pneumaticcraft:pressure_chamber_wall[wall_state=none]
-setblock 99 65 283 pneumaticcraft:pressure_chamber_wall[wall_state=none]
-setblock 99 65 284 pneumaticcraft:pressure_chamber_valve[facing=east,formed=false]
-setblock 99 65 285 pneumaticcraft:pressure_chamber_wall[wall_state=none]
-setblock 99 66 283 pneumaticcraft:pressure_chamber_wall[wall_state=none]
-setblock 99 66 284 pneumaticcraft:pressure_chamber_wall[wall_state=none]
-setblock 99 66 285 pneumaticcraft:pressure_chamber_wall[wall_state=none]
-kw testworld use 97 65 285 up pneumaticcraft:pressure_chamber_wall
-execute if block 99 65 284 pneumaticcraft:pressure_chamber_valve[formed=true]
-setblock 104 64 295 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "100.2"}','{"text": "pneumaticcraft"}','{"text": "refinery"}','{"text": ""}']}}
-setblock 105 64 295 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Bau die"}','{"text": "Raffinerie"}','{"text": ""}','{"text": ""}']}}
-fill 113 64 279 113 83 296 minecraft:light_gray_concrete
-setblock 108 64 283 pneumaticcraft:refinery[facing=south]
-setblock 108 65 283 pneumaticcraft:refinery_output[facing=south]
-setblock 108 66 283 pneumaticcraft:refinery_output[facing=south]
-setblock 108 67 283 pneumaticcraft:refinery_output[facing=south]
-setblock 108 68 283 pneumaticcraft:refinery_output[facing=south]
-setblock 114 64 295 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "100.3"}','{"text": "pneumaticcraft"}','{"text": "vortex"}','{"text": ""}']}}
-setblock 115 64 295 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Bau ein"}','{"text": "Wirbelrohr"}','{"text": ""}','{"text": ""}']}}
-fill 123 64 279 123 83 296 minecraft:light_gray_concrete
-setblock 117 64 284 pneumaticcraft:pressure_tube
-setblock 118 64 284 pneumaticcraft:pressure_tube
-setblock 119 64 284 pneumaticcraft:vortex_tube[facing=east]
-setblock 124 64 295 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "100.4"}','{"text": "pneumaticcraft"}','{"text": "elevator"}','{"text": ""}']}}
-setblock 125 64 295 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Bau einen"}','{"text": "Aufzug"}','{"text": ""}','{"text": ""}']}}
-fill 133 64 279 133 83 296 minecraft:light_gray_concrete
-setblock 128 64 283 pneumaticcraft:elevator_base
-fill 128 65 283 128 68 283 pneumaticcraft:elevator_frame
-fill 129 64 283 129 67 283 minecraft:stone_bricks
-setblock 129 68 283 pneumaticcraft:elevator_caller[facing=south]
-setblock 134 64 295 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "100.5"}','{"text": "pneumaticcraft"}','{"text": "plastic"}','{"text": ""}']}}
-setblock 135 64 295 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Koch Kunststoff"}','{"text": ""}','{"text": ""}','{"text": ""}']}}
-fill 143 64 279 143 83 296 minecraft:light_gray_concrete
-setblock 138 64 284 minecraft:magma_block
-setblock 138 65 284 pneumaticcraft:thermopneumatic_processing_plant[facing=south]
-setblock 144 64 295 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "100.6"}','{"text": "pneumaticcraft"}','{"text": "etching"}','{"text": ""}']}}
-setblock 145 64 295 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Ätze die"}','{"text": "Platine"}','{"text": ""}','{"text": ""}']}}
-fill 153 64 279 153 83 296 minecraft:light_gray_concrete
-setblock 148 64 284 pneumaticcraft:etching_tank
+# 100 oritech/cores, laser, atomic_forge, destroyer, fragment_forge, exo
+#area -4 233 67 260
+fill -4 64 233 36 91 260 minecraft:air
+fill 37 64 233 67 91 260 minecraft:air
+fill -4 60 233 67 62 260 minecraft:stone
+fill -4 63 233 67 63 260 minecraft:light_gray_concrete
+fill 0 64 239 67 79 239 minecraft:light_gray_concrete
+fill 0 64 239 0 79 254 minecraft:light_gray_concrete
+setblock 1 64 253 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "100.1"}','{"text": "oritech"}','{"text": "cores"}','{"text": ""}']}}
+setblock 2 64 253 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Bau"}','{"text": "Maschinenkerne"}','{"text": ""}','{"text": ""}']}}
+fill 10 64 239 10 79 254 minecraft:light_gray_concrete
+setblock 4 64 244 oritech:machine_core_1
+setblock 6 64 244 oritech:machine_core_2
+setblock 11 64 253 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "100.2"}','{"text": "oritech"}','{"text": "laser"}','{"text": ""}']}}
+setblock 12 64 253 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Bau den"}','{"text": "Enderischen"}','{"text": "Laser"}','{"text": ""}']}}
+fill 20 64 239 20 79 254 minecraft:light_gray_concrete
+kw testworld use 15 63 244 up oritech:laser_arm_block
+setblock 21 64 253 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "100.3"}','{"text": "oritech"}','{"text": "atomic_forge"}','{"text": ""}']}}
+setblock 22 64 253 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Speis eine"}','{"text": "Atomic Forge"}','{"text": ""}','{"text": ""}']}}
+fill 30 64 239 30 79 254 minecraft:light_gray_concrete
+kw testworld use 25 63 244 up oritech:atomic_forge_block
+setblock 31 64 253 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "100.4"}','{"text": "oritech"}','{"text": "destroyer"}','{"text": ""}']}}
+setblock 32 64 253 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Spann einen"}','{"text": "Rahmen mit"}','{"text": "Zerstörer"}','{"text": ""}']}}
+fill 42 64 239 42 79 254 minecraft:light_gray_concrete
+fill 33 63 242 39 63 248 minecraft:farmland[moisture=7]
+fill 33 64 242 39 64 248 minecraft:wheat[age=7]
+setblock 33 66 242 oritech:machine_frame_block
+setblock 33 66 243 oritech:machine_frame_block
+setblock 33 66 244 oritech:machine_frame_block
+setblock 33 66 245 oritech:machine_frame_block
+setblock 33 66 246 oritech:machine_frame_block
+setblock 33 66 247 oritech:machine_frame_block
+setblock 33 66 248 oritech:machine_frame_block
+setblock 34 66 242 oritech:machine_frame_block
+setblock 34 66 248 oritech:machine_frame_block
+setblock 35 66 242 oritech:machine_frame_block
+setblock 35 66 248 oritech:machine_frame_block
+setblock 36 66 242 oritech:machine_frame_block
+setblock 36 66 248 oritech:machine_frame_block
+setblock 37 66 242 oritech:machine_frame_block
+setblock 37 66 248 oritech:machine_frame_block
+setblock 38 66 242 oritech:machine_frame_block
+setblock 38 66 248 oritech:machine_frame_block
+setblock 39 66 242 oritech:machine_frame_block
+setblock 39 66 243 oritech:machine_frame_block
+setblock 39 66 244 oritech:machine_frame_block
+setblock 39 66 245 oritech:machine_frame_block
+setblock 39 66 246 oritech:machine_frame_block
+setblock 39 66 247 oritech:machine_frame_block
+setblock 39 66 248 oritech:machine_frame_block
+fill 32 64 248 32 65 248 minecraft:stone_bricks
+setblock 32 66 248 oritech:destroyer_block[facing=south,machine_assembled=false]
+setblock 43 64 253 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "100.5"}','{"text": "oritech"}','{"text": "fragment_forge"}','{"text": ""}']}}
+setblock 44 64 253 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Bau die"}','{"text": "Fragment Forge"}','{"text": ""}','{"text": ""}']}}
+fill 52 64 239 52 79 254 minecraft:light_gray_concrete
+kw testworld use 47 63 244 up oritech:fragment_forge_block
+setblock 53 64 253 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "100.6"}','{"text": "oritech"}','{"text": "exo"}','{"text": ""}']}}
+setblock 54 64 253 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Zieh die"}','{"text": "Exo-Rüstung an"}','{"text": ""}','{"text": ""}']}}
+fill 62 64 239 62 79 254 minecraft:light_gray_concrete
+summon armor_stand 57.5 64 244.5 {ArmorItems:[{id:"oritech:exo_boots",count:1},{id:"oritech:exo_leggings",count:1},{id:"oritech:exo_chestplate",count:1},{id:"oritech:exo_helmet",count:1}],ShowArms:1b,NoBasePlate:1b,Tags:["kw_shot"],Rotation:[180f,0f]}
 execute as @e[type=minecraft:item,tag=!kw_shot] run kill @s

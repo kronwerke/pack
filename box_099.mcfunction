@@ -1,16 +1,27 @@
-# 099 flux_networks/first_link
-#area 73 273 93 298
-fill 73 64 273 93 91 298 minecraft:air
-fill 73 60 273 93 62 298 minecraft:stone
-fill 73 63 273 93 63 298 minecraft:light_gray_concrete
-fill 77 64 279 93 79 279 minecraft:light_gray_concrete
-fill 77 64 279 77 79 292 minecraft:light_gray_concrete
-setblock 78 64 291 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "099"}','{"text": "flux_networks"}','{"text": "first_link"}','{"text": ""}']}}
-setblock 79 64 291 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "a generator"}','{"text": "with a plug and"}','{"text": "a machine with"}','{"text": "a point, no"}']}}
-setblock 80 64 291 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "cables"}','{"text": ""}','{"text": ""}','{"text": ""}']}}
-fill 88 64 279 88 79 292 minecraft:light_gray_concrete
-setblock 80 64 284 powah:furnator_starter[facing=south]
-setblock 80 65 284 fluxnetworks:flux_plug
-setblock 85 64 284 mekanism:enrichment_chamber[facing=south]
-setblock 85 65 284 fluxnetworks:flux_point
+# 099 industrial/washing, conveyor
+#area 71 214 102 239
+fill 71 64 214 102 91 239 minecraft:air
+fill 71 60 214 102 62 239 minecraft:stone
+fill 71 63 214 102 63 239 minecraft:light_gray_concrete
+fill 75 64 220 102 79 220 minecraft:light_gray_concrete
+fill 75 64 220 75 79 233 minecraft:light_gray_concrete
+setblock 76 64 232 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "099.1"}','{"text": "industrial"}','{"text": "washing"}','{"text": ""}']}}
+setblock 77 64 232 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "the ore meat"}','{"text": "machines in a"}','{"text": "row, conveyors"}','{"text": "with upgrades,"}']}}
+setblock 78 64 232 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "two"}','{"text": "transporters"}','{"text": ""}','{"text": ""}']}}
+fill 86 64 220 86 79 233 minecraft:light_gray_concrete
+setblock 79 64 225 industrialforegoing:washing_factory[subfacing=south]
+setblock 81 64 225 industrialforegoing:fermentation_station[subfacing=south]
+setblock 83 64 225 industrialforegoing:fluid_sieving_machine[subfacing=south]
+setblock 87 64 232 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "099.2"}','{"text": "industrial"}','{"text": "conveyor"}','{"text": ""}']}}
+setblock 88 64 232 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Leg"}','{"text": "Förderbänder"}','{"text": ""}','{"text": ""}']}}
+fill 97 64 220 97 79 233 minecraft:light_gray_concrete
+setblock 89 64 225 industrialforegoing:conveyor[facing=east,type=flat]
+setblock 90 64 225 industrialforegoing:conveyor[facing=east,type=flat]
+setblock 91 64 225 industrialforegoing:conveyor[facing=east,type=flat]
+setblock 92 64 225 industrialforegoing:conveyor[facing=east,type=flat]
+setblock 93 64 225 industrialforegoing:conveyor[facing=east,type=flat]
+setblock 94 64 225 industrialforegoing:conveyor[facing=east,type=flat]
+summon item 90.5 64.4 225.5 {Item:{id:"minecraft:raw_iron",count:1},PickupDelay:32767,Age:-32768,Tags:["kw_shot"]}
+summon item 92.5 64.4 225.5 {Item:{id:"minecraft:raw_iron",count:1},PickupDelay:32767,Age:-32768,Tags:["kw_shot"]}
+summon item 93.5 64.4 225.5 {Item:{id:"minecraft:raw_iron",count:1},PickupDelay:32767,Age:-32768,Tags:["kw_shot"]}
 execute as @e[type=minecraft:item,tag=!kw_shot] run kill @s

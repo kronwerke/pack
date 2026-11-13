@@ -1,14 +1,20 @@
-# 045 ars_apprentice/brazier
-#area 105 86 124 111
-fill 105 64 86 124 91 111 minecraft:air
-fill 105 60 86 124 62 111 minecraft:stone
-fill 105 63 86 124 63 111 minecraft:light_gray_concrete
-fill 109 64 92 124 79 92 minecraft:light_gray_concrete
-fill 109 64 92 109 79 105 minecraft:light_gray_concrete
-setblock 110 64 104 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "045"}','{"text": "ars_apprentice"}','{"text": "brazier"}','{"text": ""}']}}
-setblock 111 64 104 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "a tablet on the"}','{"text": "lit brazier"}','{"text": ""}','{"text": ""}']}}
-fill 119 64 92 119 79 105 minecraft:light_gray_concrete
-setblock 114 64 97 ars_nouveau:ritual_brazier
-kw testworld use 114 64 97 up ars_nouveau:ritual_flight
-setblock 116 64 97 ars_nouveau:source_jar[fill=11]{source:10000}
+# 045 ars_nouveau/earth_essence
+#area 58 88 77 113
+fill 58 64 88 77 91 113 minecraft:air
+fill 58 60 88 77 62 113 minecraft:stone
+fill 58 63 88 77 63 113 minecraft:light_gray_concrete
+fill 62 64 94 77 79 94 minecraft:light_gray_concrete
+fill 62 64 94 62 79 107 minecraft:light_gray_concrete
+setblock 63 64 106 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "045"}','{"text": "ars_nouveau"}','{"text": "earth_essence"}','{"text": ""}']}}
+setblock 64 64 106 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "chamber with"}','{"text": "three pedestals"}','{"text": "next to it"}','{"text": ""}']}}
+fill 72 64 94 72 79 107 minecraft:light_gray_concrete
+setblock 67 64 99 ars_nouveau:imbuement_chamber[facing=up]
+setblock 66 64 99 ars_nouveau:arcane_pedestal[facing=up]
+kw testworld use 66 64 99 south minecraft:iron_ingot
+setblock 68 64 99 ars_nouveau:arcane_pedestal[facing=up]
+kw testworld use 68 64 99 south minecraft:wheat_seeds
+setblock 67 64 98 ars_nouveau:arcane_pedestal[facing=up]
+kw testworld use 67 64 98 south minecraft:dirt
+kw testworld use 67 64 99 south ars_nouveau:source_gem
+setblock 69 64 98 ars_nouveau:source_jar[fill=11]{source:10000}
 execute as @e[type=minecraft:item,tag=!kw_shot] run kill @s

@@ -1,30 +1,14 @@
-# 073 hexerei/herbs
-#area 187 142 206 167
-fill 187 64 142 206 91 167 minecraft:air
-fill 187 60 142 206 62 167 minecraft:stone
-fill 187 63 142 206 63 167 minecraft:light_gray_concrete
-fill 191 64 148 206 79 148 minecraft:light_gray_concrete
-fill 191 64 148 191 79 161 minecraft:light_gray_concrete
-setblock 192 64 160 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "073"}','{"text": "hexerei"}','{"text": "herbs"}','{"text": ""}']}}
-setblock 193 64 160 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "herb garden"}','{"text": "with all four"}','{"text": "plants grown"}','{"text": ""}']}}
-fill 201 64 148 201 79 161 minecraft:light_gray_concrete
-fill 194 63 152 198 63 154 minecraft:grass_block
-setblock 194 64 152 hexerei:mandrake_plant[age=3]
-setblock 195 64 152 hexerei:belladonna_plant[age=3]
-setblock 197 64 152 hexerei:mugwort_bush[half=lower,age=3]
-setblock 197 65 152 hexerei:mugwort_bush[half=upper,age=3]
-setblock 198 64 152 hexerei:yellow_dock_bush[half=lower,age=3]
-setblock 198 65 152 hexerei:yellow_dock_bush[half=upper,age=3]
-setblock 194 64 153 hexerei:mandrake_plant[age=3]
-setblock 195 64 153 hexerei:belladonna_plant[age=3]
-setblock 197 64 153 hexerei:mugwort_bush[half=lower,age=3]
-setblock 197 65 153 hexerei:mugwort_bush[half=upper,age=3]
-setblock 198 64 153 hexerei:yellow_dock_bush[half=lower,age=3]
-setblock 198 65 153 hexerei:yellow_dock_bush[half=upper,age=3]
-setblock 194 64 154 hexerei:mandrake_plant[age=3]
-setblock 195 64 154 hexerei:belladonna_plant[age=3]
-setblock 197 64 154 hexerei:mugwort_bush[half=lower,age=3]
-setblock 197 65 154 hexerei:mugwort_bush[half=upper,age=3]
-setblock 198 64 154 hexerei:yellow_dock_bush[half=lower,age=3]
-setblock 198 65 154 hexerei:yellow_dock_bush[half=upper,age=3]
+# 073 occultism/spirit_fire
+#area -4 144 15 169
+fill -4 64 144 15 91 169 minecraft:air
+fill -4 60 144 15 62 169 minecraft:stone
+fill -4 63 144 15 63 169 minecraft:light_gray_concrete
+fill 0 64 150 15 79 150 minecraft:light_gray_concrete
+fill 0 64 150 0 79 163 minecraft:light_gray_concrete
+setblock 1 64 162 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "073"}','{"text": "occultism"}','{"text": "spirit_fire"}','{"text": ""}']}}
+setblock 2 64 162 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "spirit fire"}','{"text": "turning"}','{"text": "andesite into"}','{"text": "otherstone"}']}}
+fill 10 64 150 10 79 163 minecraft:light_gray_concrete
+setblock 5 64 155 occultism:spirit_fire[color=white]
+summon item 5.5 65.5 155.5 {Item:{id:"minecraft:andesite",count:8},PickupDelay:32767,Age:-32768,Tags:["kw_shot"]}
+summon item 6.5 64.2 156.5 {Item:{id:"occultism:otherstone",count:4},PickupDelay:32767,Age:-32768,Tags:["kw_shot"]}
 execute as @e[type=minecraft:item,tag=!kw_shot] run kill @s

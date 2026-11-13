@@ -1,55 +1,38 @@
-# 102 hostile_networks/sim_chamber, scaling, data_center
-#area 229 273 272 300
-fill 229 64 273 264 95 300 minecraft:air
-fill 265 64 273 272 95 300 minecraft:air
-fill 229 60 273 272 62 300 minecraft:stone
-fill 229 63 273 272 63 300 minecraft:light_gray_concrete
-fill 233 64 279 272 83 279 minecraft:light_gray_concrete
-fill 233 64 279 233 83 294 minecraft:light_gray_concrete
-setblock 234 64 293 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "102.1"}','{"text": "hostile_networks"}','{"text": "sim_chamber"}','{"text": ""}']}}
-setblock 235 64 293 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Die"}','{"text": "Simulationskammer"}','{"text": ""}','{"text": ""}']}}
-fill 243 64 279 243 83 294 minecraft:light_gray_concrete
-setblock 237 64 284 hostilenetworks:sim_chamber[facing=south]
-setblock 239 64 284 hostilenetworks:loot_fabricator[facing=south]
-setblock 244 64 293 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "102.2"}','{"text": "hostile_networks"}','{"text": "scaling"}','{"text": ""}']}}
-setblock 245 64 293 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Viele Kammern,"}','{"text": "ein Modell je"}','{"text": "Kammer"}','{"text": ""}']}}
-fill 255 64 279 255 83 294 minecraft:light_gray_concrete
-setblock 246 64 284 hostilenetworks:sim_chamber[facing=south]
-setblock 247 64 284 hostilenetworks:sim_chamber[facing=south]
-setblock 248 64 284 hostilenetworks:sim_chamber[facing=south]
-setblock 249 64 284 hostilenetworks:sim_chamber[facing=south]
-setblock 250 64 284 hostilenetworks:sim_chamber[facing=south]
-setblock 251 64 284 hostilenetworks:sim_chamber[facing=south]
-setblock 252 64 284 hostilenetworks:sim_chamber[facing=south]
-setblock 249 64 286 hostilenetworks:loot_fabricator[facing=south]
-setblock 256 64 293 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "102.3"}','{"text": "hostile_networks"}','{"text": "data_center"}','{"text": ""}']}}
-setblock 257 64 293 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Das"}','{"text": "Rechenzentrum"}','{"text": ""}','{"text": ""}']}}
-fill 267 64 279 267 83 294 minecraft:light_gray_concrete
-fill 258 64 282 264 64 288 minecraft:obsidian
-fill 258 70 282 264 70 288 minecraft:black_stained_glass
-fill 258 65 282 258 69 282 minecraft:black_stained_glass
-fill 258 65 283 258 69 283 minecraft:black_stained_glass
-fill 258 65 284 258 69 284 minecraft:black_stained_glass
-fill 258 65 285 258 69 285 minecraft:black_stained_glass
-fill 258 65 286 258 69 286 minecraft:black_stained_glass
-fill 258 65 287 258 69 287 minecraft:black_stained_glass
-fill 258 65 288 258 69 288 minecraft:black_stained_glass
-fill 259 65 282 259 69 282 minecraft:black_stained_glass
-fill 259 65 288 259 69 288 minecraft:black_stained_glass
-fill 260 65 282 260 69 282 minecraft:black_stained_glass
-fill 260 65 288 260 69 288 minecraft:black_stained_glass
-fill 261 65 282 261 69 282 minecraft:black_stained_glass
-fill 261 65 288 261 69 288 minecraft:black_stained_glass
-fill 262 65 282 262 69 282 minecraft:black_stained_glass
-fill 262 65 288 262 69 288 minecraft:black_stained_glass
-fill 263 65 282 263 69 282 minecraft:black_stained_glass
-fill 263 65 288 263 69 288 minecraft:black_stained_glass
-fill 264 65 282 264 69 282 minecraft:black_stained_glass
-fill 264 65 283 264 69 283 minecraft:black_stained_glass
-fill 264 65 284 264 69 284 minecraft:black_stained_glass
-fill 264 65 285 264 69 285 minecraft:black_stained_glass
-fill 264 65 286 264 69 286 minecraft:black_stained_glass
-fill 264 65 287 264 69 287 minecraft:black_stained_glass
-fill 264 65 288 264 69 288 minecraft:black_stained_glass
-setblock 261 65 288 hostilenetworks:data_center[facing=south]
+# 102 enderio/smelter, cap_bank, soul_binder, vacuum_chest, enchanter
+#area 140 233 200 258
+fill 140 64 233 184 91 258 minecraft:air
+fill 185 64 233 200 91 258 minecraft:air
+fill 140 60 233 200 62 258 minecraft:stone
+fill 140 63 233 200 63 258 minecraft:light_gray_concrete
+fill 144 64 239 200 79 239 minecraft:light_gray_concrete
+fill 144 64 239 144 79 252 minecraft:light_gray_concrete
+setblock 145 64 251 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "102.1"}','{"text": "enderio"}','{"text": "smelter"}','{"text": ""}']}}
+setblock 146 64 251 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Bau die"}','{"text": "Legierungsschmelze"}','{"text": ""}','{"text": ""}']}}
+fill 155 64 239 155 79 252 minecraft:light_gray_concrete
+setblock 148 64 244 enderio:alloy_smelter[facing=south,powered=true]
+setblock 150 64 244 enderio:sag_mill[facing=south,powered=true]
+setblock 152 64 244 minecraft:smooth_stone_slab
+summon item_display 152.5 64.95 244.5 {item:{id:"enderio:basic_capacitor",count:1},item_display:"fixed",billboard:"vertical",transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[1.0f,1.0f,1.0f]},brightness:{sky:15,block:15},Tags:["kw_shot"]}
+setblock 156 64 251 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "102.2"}','{"text": "enderio"}','{"text": "cap_bank"}','{"text": ""}']}}
+setblock 157 64 251 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Bau eine"}','{"text": "Kondensatorbank"}','{"text": ""}','{"text": ""}']}}
+fill 165 64 239 165 79 252 minecraft:light_gray_concrete
+fill 159 64 244 161 66 244 enderio:basic_capacitor_bank
+setblock 166 64 251 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "102.3"}','{"text": "enderio"}','{"text": "soul_binder"}','{"text": ""}']}}
+setblock 167 64 251 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Bau den"}','{"text": "Seelenbinder"}','{"text": ""}','{"text": ""}']}}
+fill 175 64 239 175 79 252 minecraft:light_gray_concrete
+setblock 169 64 244 enderio:soul_binder[facing=south,powered=true]
+setblock 171 64 244 minecraft:smooth_stone_slab
+summon item_display 171.5 64.95 244.5 {item:{id:"enderio:soul_vial",count:1},item_display:"fixed",billboard:"vertical",transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[1.0f,1.0f,1.0f]},brightness:{sky:15,block:15},Tags:["kw_shot"]}
+setblock 176 64 251 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "102.4"}','{"text": "enderio"}','{"text": "vacuum_chest"}','{"text": ""}']}}
+setblock 177 64 251 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Stell eine"}','{"text": "Vakuumkiste auf"}','{"text": ""}','{"text": ""}']}}
+fill 185 64 239 185 79 252 minecraft:light_gray_concrete
+setblock 180 64 244 enderio:vacuum_chest
+summon item 178.5 64.2 245.5 {Item:{id:"minecraft:rotten_flesh",count:8},PickupDelay:32767,Age:-32768,Tags:["kw_shot"]}
+summon item 182.5 64.2 245.5 {Item:{id:"minecraft:bone",count:8},PickupDelay:32767,Age:-32768,Tags:["kw_shot"]}
+summon item 179.5 64.2 246.5 {Item:{id:"minecraft:gunpowder",count:8},PickupDelay:32767,Age:-32768,Tags:["kw_shot"]}
+summon item 181.5 64.2 243.5 {Item:{id:"minecraft:string",count:8},PickupDelay:32767,Age:-32768,Tags:["kw_shot"]}
+setblock 186 64 251 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "102.5"}','{"text": "enderio"}','{"text": "enchanter"}','{"text": ""}']}}
+setblock 187 64 251 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Bau den"}','{"text": "Verzauberer"}','{"text": ""}','{"text": ""}']}}
+fill 195 64 239 195 79 252 minecraft:light_gray_concrete
+setblock 190 64 244 enderio:enchanter[facing=south]
 execute as @e[type=minecraft:item,tag=!kw_shot] run kill @s

@@ -1,46 +1,13 @@
-# 053 botania/manasteel_prep
-#area 90 105 111 132
-fill 90 64 105 111 91 132 minecraft:air
-fill 90 60 105 111 62 132 minecraft:stone
-fill 90 63 105 111 63 132 minecraft:light_gray_concrete
-fill 94 64 111 111 79 111 minecraft:light_gray_concrete
-fill 94 64 111 94 79 126 minecraft:light_gray_concrete
-setblock 95 64 125 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "053"}','{"text": "botania"}','{"text": "manasteel_prep"}','{"text": ""}']}}
-setblock 96 64 125 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "the Nature\'s"}','{"text": "Aura ritual"}','{"text": "layout with"}','{"text": "gold powder and"}']}}
-setblock 97 64 125 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "stands"}','{"text": ""}','{"text": ""}','{"text": ""}']}}
-fill 106 64 111 106 79 126 minecraft:light_gray_concrete
-setblock 100 64 113 naturesaura:wood_stand
-setblock 97 64 114 naturesaura:wood_stand
-setblock 103 64 114 naturesaura:wood_stand
-setblock 99 64 115 naturesaura:gold_powder
-setblock 100 64 115 naturesaura:gold_powder
-setblock 101 64 115 naturesaura:gold_powder
-setblock 98 64 116 naturesaura:gold_powder
-setblock 99 64 116 naturesaura:gold_powder
-setblock 101 64 116 naturesaura:gold_powder
-setblock 102 64 116 naturesaura:gold_powder
-setblock 96 64 117 naturesaura:wood_stand
-setblock 98 64 117 naturesaura:gold_powder
-setblock 100 64 117 minecraft:oak_sapling
-setblock 102 64 117 naturesaura:gold_powder
-setblock 104 64 117 naturesaura:wood_stand
-setblock 98 64 118 naturesaura:gold_powder
-setblock 99 64 118 naturesaura:gold_powder
-setblock 101 64 118 naturesaura:gold_powder
-setblock 102 64 118 naturesaura:gold_powder
-setblock 99 64 119 naturesaura:gold_powder
-setblock 100 64 119 naturesaura:gold_powder
-setblock 101 64 119 naturesaura:gold_powder
-setblock 97 64 120 naturesaura:wood_stand
-setblock 103 64 120 naturesaura:wood_stand
-setblock 100 64 121 naturesaura:wood_stand
-setblock 100 63 117 minecraft:grass_block
-kw testworld use 100 64 113 up naturesaura:infused_iron
-kw testworld use 97 64 114 up botania:livingwood_twig
-kw testworld use 103 64 114 up naturesaura:infused_iron
-kw testworld use 96 64 117 up botania:mana_diamond
-kw testworld use 104 64 117 up naturesaura:gold_leaf
-kw testworld use 97 64 120 up naturesaura:infused_iron
-kw testworld use 103 64 120 up botania:livingwood_twig
-kw testworld use 100 64 121 up naturesaura:infused_iron
+# 053 ars_master/alteration
+#area 180 88 199 113
+fill 180 64 88 199 91 113 minecraft:air
+fill 180 60 88 199 62 113 minecraft:stone
+fill 180 63 88 199 63 113 minecraft:light_gray_concrete
+fill 184 64 94 199 79 94 minecraft:light_gray_concrete
+fill 184 64 94 184 79 107 minecraft:light_gray_concrete
+setblock 185 64 106 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "053"}','{"text": "ars_master"}','{"text": "alteration"}','{"text": ""}']}}
+setblock 186 64 106 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "alteration"}','{"text": "table with a"}','{"text": "robe on the"}','{"text": "stand"}']}}
+fill 194 64 94 194 79 107 minecraft:light_gray_concrete
+kw testworld use 188 63 99 up ars_nouveau:alteration_table
+summon armor_stand 191.5 64 99.5 {ArmorItems:[{id:"ars_nouveau:arcanist_boots",count:1},{id:"ars_nouveau:arcanist_leggings",count:1},{id:"ars_nouveau:arcanist_robes",count:1},{id:"ars_nouveau:arcanist_hood",count:1}],ShowArms:1b,NoBasePlate:1b,Tags:["kw_shot"],Rotation:[180f,0f]}
 execute as @e[type=minecraft:item,tag=!kw_shot] run kill @s

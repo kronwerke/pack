@@ -1,14 +1,18 @@
-# 054 botania_runes/mana_pearl
-#area 107 105 126 130
-fill 107 64 105 126 91 130 minecraft:air
-fill 107 60 105 126 62 130 minecraft:stone
-fill 107 63 105 126 63 130 minecraft:light_gray_concrete
-fill 111 64 111 126 79 111 minecraft:light_gray_concrete
-fill 111 64 111 111 79 124 minecraft:light_gray_concrete
-setblock 112 64 123 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "054"}','{"text": "botania_runes"}','{"text": "mana_pearl"}','{"text": ""}']}}
-setblock 113 64 123 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "a pool on a"}','{"text": "brass casing"}','{"text": "with a pearl in"}','{"text": "it"}']}}
-fill 121 64 111 121 79 124 minecraft:light_gray_concrete
-setblock 116 64 116 create:brass_casing
-setblock 116 65 116 botania:mana_pool{mana:1000000}
-summon item 116.5 66 116.5 {Item:{id:"minecraft:ender_pearl",count:1},PickupDelay:32767,Age:-32768,Tags:["kw_shot"]}
+# 054 ars_master/charged_certus
+#area 195 88 214 113
+fill 195 64 88 214 91 113 minecraft:air
+fill 195 60 88 214 62 113 minecraft:stone
+fill 195 63 88 214 63 113 minecraft:light_gray_concrete
+fill 199 64 94 214 79 94 minecraft:light_gray_concrete
+fill 199 64 94 199 79 107 minecraft:light_gray_concrete
+setblock 200 64 106 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "054"}','{"text": "ars_master"}','{"text": "charged_certus"}','{"text": ""}']}}
+setblock 201 64 106 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "chamber with"}','{"text": "redstone and"}','{"text": "glowstone"}','{"text": "pedestals"}']}}
+fill 209 64 94 209 79 107 minecraft:light_gray_concrete
+setblock 204 64 99 ars_nouveau:imbuement_chamber[facing=up]
+setblock 203 64 99 ars_nouveau:arcane_pedestal[facing=up]
+kw testworld use 203 64 99 south minecraft:redstone
+setblock 205 64 99 ars_nouveau:arcane_pedestal[facing=up]
+kw testworld use 205 64 99 south minecraft:glowstone_dust
+kw testworld use 204 64 99 south ae2:certus_quartz_crystal
+setblock 206 64 98 ars_nouveau:source_jar[fill=11]{source:10000}
 execute as @e[type=minecraft:item,tag=!kw_shot] run kill @s

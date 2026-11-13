@@ -1,29 +1,24 @@
-# 080 immersive/connectors, thermoelectric
-#area 101 177 132 202
-fill 101 64 177 132 91 202 minecraft:air
-fill 101 60 177 132 62 202 minecraft:stone
-fill 101 63 177 132 63 202 minecraft:light_gray_concrete
-fill 105 64 183 132 79 183 minecraft:light_gray_concrete
-fill 105 64 183 105 79 196 minecraft:light_gray_concrete
-setblock 106 64 195 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "080.1"}','{"text": "immersive"}','{"text": "connectors"}','{"text": ""}']}}
-setblock 107 64 195 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "LV wires on"}','{"text": "posts, the"}','{"text": "accumulator,"}','{"text": "the generator"}']}}
-setblock 108 64 195 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "between magma"}','{"text": "and blue ice, a"}','{"text": "transformer"}','{"text": "with LV and MV"}']}}
-fill 117 64 183 117 79 196 minecraft:light_gray_concrete
-setblock 108 64 188 immersiveengineering:capacitor_lv
-setblock 114 64 188 immersiveengineering:capacitor_lv
-fill 111 64 188 111 66 188 immersiveengineering:treated_fence
-kw testworld use 108 64 188 up immersiveengineering:connector_lv
-kw testworld use 114 64 188 up immersiveengineering:connector_lv
-kw testworld use 111 66 188 up immersiveengineering:connector_lv_relay
-kw testworld use 108 65 188 south immersiveengineering:wirecoil_copper
-kw testworld use 111 67 188 south immersiveengineering:wirecoil_copper
-kw testworld use 111 67 188 south immersiveengineering:wirecoil_copper
-kw testworld use 114 65 188 south immersiveengineering:wirecoil_copper
-setblock 118 64 195 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "080.2"}','{"text": "immersive"}','{"text": "thermoelectric"}','{"text": ""}']}}
-setblock 119 64 195 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Bau einen"}','{"text": "Thermoelektrischen"}','{"text": "Generator"}','{"text": ""}']}}
-fill 127 64 183 127 79 196 minecraft:light_gray_concrete
-setblock 121 64 188 minecraft:magma_block
-setblock 122 64 188 immersiveengineering:thermoelectric_generator
-setblock 123 64 188 minecraft:blue_ice
-kw testworld use 122 64 188 up immersiveengineering:connector_lv
+# 080 occultism_afrit/storage
+#area 137 144 160 173
+fill 137 64 144 160 91 173 minecraft:air
+fill 137 60 144 160 62 173 minecraft:stone
+fill 137 63 144 160 63 173 minecraft:light_gray_concrete
+fill 141 64 150 160 79 150 minecraft:light_gray_concrete
+fill 141 64 150 141 79 167 minecraft:light_gray_concrete
+setblock 142 64 166 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "080"}','{"text": "occultism_afrit"}','{"text": "storage"}','{"text": ""}']}}
+setblock 143 64 166 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "storage"}','{"text": "actuator with"}','{"text": "four"}','{"text": "stabilizers"}']}}
+fill 155 64 150 155 79 167 minecraft:light_gray_concrete
+setblock 144 65 157 occultism:otherstone
+setblock 145 65 157 occultism:storage_stabilizer_tier1[facing=east]
+setblock 148 65 153 occultism:otherstone
+setblock 148 65 154 occultism:storage_stabilizer_tier1[facing=south]
+setblock 148 65 160 occultism:storage_stabilizer_tier1[facing=north]
+setblock 148 65 161 occultism:otherstone
+setblock 151 65 157 occultism:storage_stabilizer_tier1[facing=west]
+setblock 152 65 157 occultism:otherstone
+setblock 144 64 157 occultism:otherstone
+setblock 148 64 153 occultism:otherstone
+setblock 148 64 157 occultism:storage_controller
+setblock 148 64 161 occultism:otherstone
+setblock 152 64 157 occultism:otherstone
 execute as @e[type=minecraft:item,tag=!kw_shot] run kill @s

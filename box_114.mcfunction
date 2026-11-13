@@ -1,23 +1,55 @@
-# 114 silent_gear/stone_anvil, crude_mixer, alloy_forge
-#area -4 336 35 361
-fill -4 64 336 35 91 361 minecraft:air
-fill -4 60 336 35 62 361 minecraft:stone
-fill -4 63 336 35 63 361 minecraft:light_gray_concrete
-fill 0 64 342 35 79 342 minecraft:light_gray_concrete
-fill 0 64 342 0 79 355 minecraft:light_gray_concrete
-setblock 1 64 354 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "114.1"}','{"text": "silent_gear"}','{"text": "stone_anvil"}','{"text": ""}']}}
-setblock 2 64 354 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Stell einen"}','{"text": "Steinamboss auf"}','{"text": ""}','{"text": ""}']}}
-fill 10 64 342 10 79 355 minecraft:light_gray_concrete
-setblock 4 64 347 silentgear:stone_anvil
-setblock 6 64 347 minecraft:smooth_stone_slab
-summon item_display 6.5 64.95 347.5 {item:{id:"silentgear:hammer",count:1},item_display:"fixed",billboard:"vertical",transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[1.0f,1.0f,1.0f]},brightness:{sky:15,block:15},Tags:["kw_shot"]}
-setblock 11 64 354 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "114.2"}','{"text": "silent_gear"}','{"text": "crude_mixer"}','{"text": ""}']}}
-setblock 12 64 354 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Bau einen Crude"}','{"text": "Mixer"}','{"text": ""}','{"text": ""}']}}
-fill 20 64 342 20 79 355 minecraft:light_gray_concrete
-setblock 15 64 347 silentgear:crude_mixer[facing=south,lit=true]
-setblock 21 64 354 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "114.3"}','{"text": "silent_gear"}','{"text": "alloy_forge"}','{"text": ""}']}}
-setblock 22 64 354 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Bau die"}','{"text": "Legierungsschmiede"}','{"text": ""}','{"text": ""}']}}
-fill 30 64 342 30 79 355 minecraft:light_gray_concrete
-setblock 24 64 347 silentgear:alloy_forge[facing=south,lit=true]
-setblock 26 64 347 silentgear:starlight_charger
+# 114 hostile_networks/sim_chamber, scaling, data_center
+#area 285 275 328 302
+fill 285 64 275 320 95 302 minecraft:air
+fill 321 64 275 328 95 302 minecraft:air
+fill 285 60 275 328 62 302 minecraft:stone
+fill 285 63 275 328 63 302 minecraft:light_gray_concrete
+fill 289 64 281 328 83 281 minecraft:light_gray_concrete
+fill 289 64 281 289 83 296 minecraft:light_gray_concrete
+setblock 290 64 295 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "114.1"}','{"text": "hostile_networks"}','{"text": "sim_chamber"}','{"text": ""}']}}
+setblock 291 64 295 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Die"}','{"text": "Simulationskammer"}','{"text": ""}','{"text": ""}']}}
+fill 299 64 281 299 83 296 minecraft:light_gray_concrete
+setblock 293 64 286 hostilenetworks:sim_chamber[facing=south]
+setblock 295 64 286 hostilenetworks:loot_fabricator[facing=south]
+setblock 300 64 295 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "114.2"}','{"text": "hostile_networks"}','{"text": "scaling"}','{"text": ""}']}}
+setblock 301 64 295 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Viele Kammern,"}','{"text": "ein Modell je"}','{"text": "Kammer"}','{"text": ""}']}}
+fill 311 64 281 311 83 296 minecraft:light_gray_concrete
+setblock 302 64 286 hostilenetworks:sim_chamber[facing=south]
+setblock 303 64 286 hostilenetworks:sim_chamber[facing=south]
+setblock 304 64 286 hostilenetworks:sim_chamber[facing=south]
+setblock 305 64 286 hostilenetworks:sim_chamber[facing=south]
+setblock 306 64 286 hostilenetworks:sim_chamber[facing=south]
+setblock 307 64 286 hostilenetworks:sim_chamber[facing=south]
+setblock 308 64 286 hostilenetworks:sim_chamber[facing=south]
+setblock 305 64 288 hostilenetworks:loot_fabricator[facing=south]
+setblock 312 64 295 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "114.3"}','{"text": "hostile_networks"}','{"text": "data_center"}','{"text": ""}']}}
+setblock 313 64 295 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Das"}','{"text": "Rechenzentrum"}','{"text": ""}','{"text": ""}']}}
+fill 323 64 281 323 83 296 minecraft:light_gray_concrete
+fill 314 64 284 320 64 290 minecraft:obsidian
+fill 314 70 284 320 70 290 minecraft:black_stained_glass
+fill 314 65 284 314 69 284 minecraft:black_stained_glass
+fill 314 65 285 314 69 285 minecraft:black_stained_glass
+fill 314 65 286 314 69 286 minecraft:black_stained_glass
+fill 314 65 287 314 69 287 minecraft:black_stained_glass
+fill 314 65 288 314 69 288 minecraft:black_stained_glass
+fill 314 65 289 314 69 289 minecraft:black_stained_glass
+fill 314 65 290 314 69 290 minecraft:black_stained_glass
+fill 315 65 284 315 69 284 minecraft:black_stained_glass
+fill 315 65 290 315 69 290 minecraft:black_stained_glass
+fill 316 65 284 316 69 284 minecraft:black_stained_glass
+fill 316 65 290 316 69 290 minecraft:black_stained_glass
+fill 317 65 284 317 69 284 minecraft:black_stained_glass
+fill 317 65 290 317 69 290 minecraft:black_stained_glass
+fill 318 65 284 318 69 284 minecraft:black_stained_glass
+fill 318 65 290 318 69 290 minecraft:black_stained_glass
+fill 319 65 284 319 69 284 minecraft:black_stained_glass
+fill 319 65 290 319 69 290 minecraft:black_stained_glass
+fill 320 65 284 320 69 284 minecraft:black_stained_glass
+fill 320 65 285 320 69 285 minecraft:black_stained_glass
+fill 320 65 286 320 69 286 minecraft:black_stained_glass
+fill 320 65 287 320 69 287 minecraft:black_stained_glass
+fill 320 65 288 320 69 288 minecraft:black_stained_glass
+fill 320 65 289 320 69 289 minecraft:black_stained_glass
+fill 320 65 290 320 69 290 minecraft:black_stained_glass
+setblock 317 65 290 hostilenetworks:data_center[facing=south]
 execute as @e[type=minecraft:item,tag=!kw_shot] run kill @s

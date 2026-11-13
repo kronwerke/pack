@@ -1,19 +1,20 @@
-# 015 create/belt
-#area 91 40 110 65
-fill 91 64 40 110 91 65 minecraft:air
-fill 91 60 40 110 62 65 minecraft:stone
-fill 91 63 40 110 63 65 minecraft:light_gray_concrete
-fill 95 64 46 110 79 46 minecraft:light_gray_concrete
-fill 95 64 46 95 79 59 minecraft:light_gray_concrete
-setblock 96 64 58 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "015"}','{"text": "create"}','{"text": "belt"}','{"text": ""}']}}
-setblock 97 64 58 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "a belt between"}','{"text": "two shafts"}','{"text": ""}','{"text": ""}']}}
-fill 105 64 46 105 79 59 minecraft:light_gray_concrete
-setblock 100 64 49 create:shaft[axis=x]
-setblock 100 64 53 create:shaft[axis=x]
-kw testworld use 100 64 49 up create:belt_connector
-kw testworld use 100 64 53 up create:belt_connector
-execute unless block 100 64 51 minecraft:air
-summon item 100.5 65 50.5 {Item:{id:"minecraft:iron_ingot",count:1},PickupDelay:32767,Age:-32768,Tags:["kw_shot"]}
-summon item 100.5 65 51.5 {Item:{id:"minecraft:iron_ingot",count:1},PickupDelay:32767,Age:-32768,Tags:["kw_shot"]}
-summon item 100.5 65 52.5 {Item:{id:"minecraft:iron_ingot",count:1},PickupDelay:32767,Age:-32768,Tags:["kw_shot"]}
+# 015 create/compacting
+#area 61 42 80 67
+fill 61 64 42 80 91 67 minecraft:air
+fill 61 60 42 80 62 67 minecraft:stone
+fill 61 63 42 80 63 67 minecraft:light_gray_concrete
+fill 65 64 48 80 79 48 minecraft:light_gray_concrete
+fill 65 64 48 65 79 61 minecraft:light_gray_concrete
+setblock 66 64 60 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "015"}','{"text": "create"}','{"text": "compacting"}','{"text": ""}']}}
+setblock 67 64 60 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "press over"}','{"text": "basin making"}','{"text": "andesite from"}','{"text": "flint, gravel"}']}}
+setblock 68 64 60 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "and lava"}','{"text": ""}','{"text": ""}','{"text": ""}']}}
+fill 75 64 48 75 79 61 minecraft:light_gray_concrete
+setblock 70 64 53 create:basin[facing=down]
+setblock 70 66 53 create:mechanical_press[facing=south]
+fill 69 64 52 71 67 52 create:andesite_casing
+setblock 70 66 52 create:andesite_encased_shaft[axis=z]
+setblock 70 66 51 create:creative_motor[facing=south]{ScrollValue:32}
+summon item 70.5 65 53.5 {Item:{id:"minecraft:flint",count:8},PickupDelay:32767,Age:-32768,Tags:["kw_shot"]}
+summon item 70.5 65.3 53.5 {Item:{id:"minecraft:gravel",count:8},PickupDelay:32767,Age:-32768,Tags:["kw_shot"]}
+kw testworld use 70 64 53 up minecraft:lava_bucket
 execute as @e[type=minecraft:item,tag=!kw_shot] run kill @s

@@ -1,13 +1,14 @@
-# 051 botania/mana_void
-#area 56 105 75 130
-fill 56 64 105 75 91 130 minecraft:air
-fill 56 60 105 75 62 130 minecraft:stone
-fill 56 63 105 75 63 130 minecraft:light_gray_concrete
-fill 60 64 111 75 79 111 minecraft:light_gray_concrete
-fill 60 64 111 60 79 124 minecraft:light_gray_concrete
-setblock 61 64 123 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "051"}','{"text": "botania"}','{"text": "mana_void"}','{"text": ""}']}}
-setblock 62 64 123 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "a mana void"}','{"text": "under a pool"}','{"text": ""}','{"text": ""}']}}
-fill 70 64 111 70 79 124 minecraft:light_gray_concrete
-setblock 65 64 116 botania:mana_void
-setblock 65 65 116 botania:mana_pool{mana:1000000}
+# 051 ars_apprentice/source_motor
+#area 150 88 169 113
+fill 150 64 88 169 91 113 minecraft:air
+fill 150 60 88 169 62 113 minecraft:stone
+fill 150 63 88 169 63 113 minecraft:light_gray_concrete
+fill 154 64 94 169 79 94 minecraft:light_gray_concrete
+fill 154 64 94 154 79 107 minecraft:light_gray_concrete
+setblock 155 64 106 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "051"}','{"text": "ars_apprentice"}','{"text": "source_motor"}','{"text": ""}']}}
+setblock 156 64 106 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "motor with a"}','{"text": "jar driving a"}','{"text": "Create shaft"}','{"text": ""}']}}
+fill 164 64 94 164 79 107 minecraft:light_gray_concrete
+setblock 158 64 99 ars_technica:source_motor[facing=east]
+fill 159 64 99 161 64 99 create:shaft[axis=x]
+setblock 158 64 98 ars_nouveau:source_jar[fill=11]{source:10000}
 execute as @e[type=minecraft:item,tag=!kw_shot] run kill @s

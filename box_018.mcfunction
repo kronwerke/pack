@@ -1,23 +1,35 @@
-# 018 create_brass/incomplete
-#area 136 40 157 65
-fill 136 64 40 157 91 65 minecraft:air
-fill 136 60 40 157 62 65 minecraft:stone
-fill 136 63 40 157 63 65 minecraft:light_gray_concrete
-fill 140 64 46 157 79 46 minecraft:light_gray_concrete
-fill 140 64 46 140 79 59 minecraft:light_gray_concrete
-setblock 141 64 58 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "018"}','{"text": "create_brass"}','{"text": "incomplete"}','{"text": ""}']}}
-setblock 142 64 58 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "belt with three"}','{"text": "deployers"}','{"text": "(cogwheel,"}','{"text": "tube, nugget)"}']}}
-setblock 143 64 58 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "and a press"}','{"text": ""}','{"text": ""}','{"text": ""}']}}
-fill 152 64 46 152 79 59 minecraft:light_gray_concrete
-setblock 143 64 51 create:shaft[axis=z]
-setblock 149 64 51 create:shaft[axis=z]
-kw testworld use 143 64 51 up create:belt_connector
-kw testworld use 149 64 51 up create:belt_connector
-execute unless block 146 64 51 minecraft:air
-setblock 144 66 51 create:deployer[facing=down,axis_along_first=true]{HeldItem:{id:"create:cogwheel",count:1}}
-setblock 145 66 51 create:deployer[facing=down,axis_along_first=true]{HeldItem:{id:"create:large_cogwheel",count:1}}
-setblock 146 66 51 create:deployer[facing=down,axis_along_first=true]{HeldItem:{id:"minecraft:iron_nugget",count:1}}
-setblock 148 66 51 create:mechanical_press[facing=south]
-fill 144 67 51 148 67 51 create:andesite_casing
-summon item 147.5 65 51.5 {Item:{id:"create:incomplete_precision_mechanism",count:1},PickupDelay:32767,Age:-32768,Tags:["kw_shot"]}
+# 018 create/cobble_gen
+#area 106 42 125 67
+fill 106 64 42 125 91 67 minecraft:air
+fill 106 60 42 125 62 67 minecraft:stone
+fill 106 63 42 125 63 67 minecraft:light_gray_concrete
+fill 110 64 48 125 79 48 minecraft:light_gray_concrete
+fill 110 64 48 110 79 61 minecraft:light_gray_concrete
+setblock 111 64 60 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "018"}','{"text": "create"}','{"text": "cobble_gen"}','{"text": ""}']}}
+setblock 112 64 60 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "drill in front"}','{"text": "of a cobble"}','{"text": "generator"}','{"text": ""}']}}
+fill 120 64 48 120 79 61 minecraft:light_gray_concrete
+setblock 112 64 52 minecraft:stone_bricks
+setblock 112 64 54 minecraft:glass
+setblock 113 64 52 minecraft:stone_bricks
+setblock 113 64 54 minecraft:glass
+setblock 114 64 52 minecraft:stone_bricks
+setblock 114 64 54 minecraft:glass
+setblock 115 64 52 minecraft:stone_bricks
+setblock 115 64 54 minecraft:glass
+setblock 116 64 52 minecraft:stone_bricks
+setblock 116 64 54 minecraft:glass
+setblock 117 64 52 minecraft:stone_bricks
+setblock 117 64 54 minecraft:glass
+setblock 118 64 52 minecraft:stone_bricks
+setblock 118 64 54 minecraft:glass
+setblock 112 64 53 minecraft:stone_bricks
+setblock 118 64 53 minecraft:stone_bricks
+setblock 113 64 53 minecraft:water
+setblock 115 63 53 minecraft:air
+setblock 116 64 53 minecraft:cobblestone
+setblock 117 64 53 minecraft:lava
+setblock 116 64 52 create:mechanical_drill[facing=south]
+fill 115 64 51 117 65 51 create:andesite_casing
+setblock 116 64 51 create:andesite_encased_shaft[axis=z]
+setblock 116 64 50 create:creative_motor[facing=south]{ScrollValue:32}
 execute as @e[type=minecraft:item,tag=!kw_shot] run kill @s

@@ -1,38 +1,23 @@
-# 096 list_transport/packages, create_tank, hose_pulley
-#area 228 252 267 277
-fill 228 64 252 267 91 277 minecraft:air
-fill 228 60 252 267 62 277 minecraft:stone
-fill 228 63 252 267 63 277 minecraft:light_gray_concrete
-fill 232 64 258 267 79 258 minecraft:light_gray_concrete
-fill 232 64 258 232 79 271 minecraft:light_gray_concrete
-setblock 233 64 270 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "096.1"}','{"text": "list_transport"}','{"text": "packages"}','{"text": ""}']}}
-setblock 234 64 270 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Verschick ein"}','{"text": "Paket"}','{"text": ""}','{"text": ""}']}}
-fill 242 64 258 242 79 271 minecraft:light_gray_concrete
-setblock 237 64 262 minecraft:barrel[facing=up]
-setblock 237 64 263 create:packager[facing=south,linked=false,powered=false]
-setblock 235 64 264 create:shaft[axis=z]
-setblock 239 64 264 create:shaft[axis=z]
-kw testworld use 235 64 264 up create:belt_connector
-kw testworld use 239 64 264 up create:belt_connector
-execute unless block 237 64 264 minecraft:air
-summon item 237.5 65 264.5 {Item:{id:"create:cardboard_package_10x12",count:1},PickupDelay:32767,Age:-32768,Tags:["kw_shot"]}
-summon item 238.5 65 264.5 {Item:{id:"create:cardboard_package_10x8",count:1},PickupDelay:32767,Age:-32768,Tags:["kw_shot"]}
-setblock 243 64 270 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "096.2"}','{"text": "list_transport"}','{"text": "create_tank"}','{"text": ""}']}}
-setblock 244 64 270 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Bau einen"}','{"text": "Flüssigkeitstank"}','{"text": ""}','{"text": ""}']}}
-fill 252 64 258 252 79 271 minecraft:light_gray_concrete
-fill 246 64 262 248 67 264 create:fluid_tank[bottom=false,shape=window,top=false]
-setblock 253 64 270 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "096.3"}','{"text": "list_transport"}','{"text": "hose_pulley"}','{"text": ""}']}}
-setblock 254 64 270 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Häng einen"}','{"text": "Schlauchaufzug"}','{"text": "über den See"}','{"text": ""}']}}
-fill 262 64 258 262 79 271 minecraft:light_gray_concrete
-fill 256 62 262 258 63 264 minecraft:water
-fill 254 64 263 254 66 263 minecraft:spruce_log[axis=y]
-fill 260 64 263 260 66 263 minecraft:spruce_log[axis=y]
-fill 254 67 263 260 67 263 minecraft:spruce_planks
-setblock 257 67 263 create:hose_pulley[facing=east]
-setblock 256 67 263 create:creative_motor[facing=east]{ScrollValue:32}
-setblock 255 67 263 create:andesite_casing
-setblock 256 67 264 create:andesite_casing
-setblock 256 67 262 create:andesite_casing
-setblock 256 68 263 create:andesite_casing
-setblock 256 66 263 create:andesite_casing
+# 096 industrial/extractor, latex_unit
+#area -4 214 25 239
+fill -4 64 214 25 91 239 minecraft:air
+fill -4 60 214 25 62 239 minecraft:stone
+fill -4 63 214 25 63 239 minecraft:light_gray_concrete
+fill 0 64 220 25 79 220 minecraft:light_gray_concrete
+fill 0 64 220 0 79 233 minecraft:light_gray_concrete
+setblock 1 64 232 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "096.1"}','{"text": "industrial"}','{"text": "extractor"}','{"text": ""}']}}
+setblock 2 64 232 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "pity frame"}','{"text": "recipe,"}','{"text": "extractors"}','{"text": "around a log"}']}}
+setblock 3 64 232 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "column, the"}','{"text": "latex unit GUI,"}','{"text": "dry rubber in a"}','{"text": "furnace, the"}']}}
+setblock 4 64 232 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "dissolution"}','{"text": "chamber GUI"}','{"text": ""}','{"text": ""}']}}
+fill 10 64 220 10 79 233 minecraft:light_gray_concrete
+fill 5 64 225 5 67 225 minecraft:acacia_log[axis=y]
+setblock 4 64 225 industrialforegoing:fluid_extractor[subfacing=east]
+setblock 6 64 225 industrialforegoing:fluid_extractor[subfacing=west]
+setblock 4 65 225 industrialforegoing:fluid_extractor[subfacing=east]
+setblock 6 65 225 industrialforegoing:fluid_extractor[subfacing=west]
+setblock 11 64 232 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "096.2"}','{"text": "industrial"}','{"text": "latex_unit"}','{"text": ""}']}}
+setblock 12 64 232 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Bau eine"}','{"text": "Latexverarbeitungsmaschine"}','{"text": ""}','{"text": ""}']}}
+fill 20 64 220 20 79 233 minecraft:light_gray_concrete
+setblock 14 64 225 industrialforegoing:latex_processing_unit[subfacing=south]
+setblock 16 64 225 industrialforegoing:dissolution_chamber[subfacing=south]
 execute as @e[type=minecraft:item,tag=!kw_shot] run kill @s

@@ -1,23 +1,25 @@
-# 021 create_brass/blaze_cake
-#area 185 40 206 65
-fill 185 64 40 206 91 65 minecraft:air
-fill 185 60 40 206 62 65 minecraft:stone
-fill 185 63 40 206 63 65 minecraft:light_gray_concrete
-fill 189 64 46 206 79 46 minecraft:light_gray_concrete
-fill 189 64 46 189 79 59 minecraft:light_gray_concrete
-setblock 190 64 58 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "021"}','{"text": "create_brass"}','{"text": "blaze_cake"}','{"text": ""}']}}
-setblock 191 64 58 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "press over"}','{"text": "basin, then"}','{"text": "spout over"}','{"text": "depot"}']}}
-fill 201 64 46 201 79 59 minecraft:light_gray_concrete
-setblock 193 64 51 create:basin[facing=down]
-setblock 193 66 51 create:mechanical_press[facing=south]
-fill 192 64 50 194 67 50 create:andesite_casing
-setblock 193 66 50 create:andesite_encased_shaft[axis=z]
-setblock 193 66 49 create:creative_motor[facing=south]{ScrollValue:32}
-summon item 193.5 65 51.5 {Item:{id:"minecraft:egg",count:1},PickupDelay:32767,Age:-32768,Tags:["kw_shot"]}
-summon item 193.5 65.2 51.5 {Item:{id:"minecraft:sugar",count:1},PickupDelay:32767,Age:-32768,Tags:["kw_shot"]}
-summon item 193.5 65.4 51.5 {Item:{id:"create:cinder_flour",count:1},PickupDelay:32767,Age:-32768,Tags:["kw_shot"]}
-setblock 197 64 51 create:depot
-setblock 197 66 51 create:spout
-setblock 197 67 51 create:fluid_tank[bottom=true,shape=window,top=true]
-kw testworld use 197 64 51 up create:blaze_cake_base
+# 021 create_brass/crafter
+#area 153 42 172 67
+fill 153 64 42 172 91 67 minecraft:air
+fill 153 60 42 172 62 67 minecraft:stone
+fill 153 63 42 172 63 67 minecraft:light_gray_concrete
+fill 157 64 48 172 79 48 minecraft:light_gray_concrete
+fill 157 64 48 157 79 61 minecraft:light_gray_concrete
+setblock 158 64 60 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "021"}','{"text": "create_brass"}','{"text": "crafter"}','{"text": ""}']}}
+setblock 159 64 60 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "a 3x3"}','{"text": "mechanical"}','{"text": "crafter grid"}','{"text": "with its arrows"}']}}
+fill 167 64 48 167 79 61 minecraft:light_gray_concrete
+setblock 161 64 53 create:mechanical_crafter[facing=south,pointing=right]
+setblock 161 65 53 create:mechanical_crafter[facing=south,pointing=down]
+setblock 161 66 53 create:mechanical_crafter[facing=south,pointing=down]
+setblock 162 64 53 create:mechanical_crafter[facing=south,pointing=right]
+setblock 162 65 53 create:mechanical_crafter[facing=south,pointing=down]
+setblock 162 66 53 create:mechanical_crafter[facing=south,pointing=down]
+setblock 163 64 53 create:mechanical_crafter[facing=south,pointing=right]
+setblock 163 65 53 create:mechanical_crafter[facing=south,pointing=down]
+setblock 163 66 53 create:mechanical_crafter[facing=south,pointing=down]
+setblock 164 64 53 create:depot
+setblock 160 64 53 create:cogwheel[axis=z]
+fill 159 64 52 161 65 52 create:andesite_casing
+setblock 160 64 52 create:andesite_encased_shaft[axis=z]
+setblock 160 64 51 create:creative_motor[facing=south]{ScrollValue:32}
 execute as @e[type=minecraft:item,tag=!kw_shot] run kill @s

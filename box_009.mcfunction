@@ -1,46 +1,31 @@
-# 009 create/water_wheel
-#area -4 40 16 65
-fill -4 64 40 16 91 65 minecraft:air
-fill -4 60 40 16 62 65 minecraft:stone
-fill -4 63 40 16 63 65 minecraft:light_gray_concrete
-fill 0 64 46 16 79 46 minecraft:light_gray_concrete
-fill 0 64 46 0 79 59 minecraft:light_gray_concrete
-setblock 1 64 58 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "009"}','{"text": "create"}','{"text": "water_wheel"}','{"text": ""}']}}
-setblock 2 64 58 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "four water"}','{"text": "wheels in a row"}','{"text": "with water over"}','{"text": "the paddles"}']}}
-setblock 3 64 58 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "from above"}','{"text": ""}','{"text": ""}','{"text": ""}']}}
-fill 11 64 46 11 79 59 minecraft:light_gray_concrete
-setblock 4 63 48 minecraft:water
-setblock 4 63 49 minecraft:air
-setblock 4 63 50 minecraft:air
-setblock 4 63 51 minecraft:air
-setblock 4 63 52 minecraft:air
-setblock 4 63 53 minecraft:air
-setblock 4 63 54 minecraft:air
-setblock 4 64 51 create:water_wheel[facing=east]
-setblock 5 63 48 minecraft:water
-setblock 5 63 49 minecraft:air
-setblock 5 63 50 minecraft:air
-setblock 5 63 51 minecraft:air
-setblock 5 63 52 minecraft:air
-setblock 5 63 53 minecraft:air
-setblock 5 63 54 minecraft:air
-setblock 5 64 51 create:water_wheel[facing=east]
-setblock 6 63 48 minecraft:water
-setblock 6 63 49 minecraft:air
-setblock 6 63 50 minecraft:air
-setblock 6 63 51 minecraft:air
-setblock 6 63 52 minecraft:air
-setblock 6 63 53 minecraft:air
-setblock 6 63 54 minecraft:air
-setblock 6 64 51 create:water_wheel[facing=east]
-setblock 7 63 48 minecraft:water
-setblock 7 63 49 minecraft:air
-setblock 7 63 50 minecraft:air
-setblock 7 63 51 minecraft:air
-setblock 7 63 52 minecraft:air
-setblock 7 63 53 minecraft:air
-setblock 7 63 54 minecraft:air
-setblock 7 64 51 create:water_wheel[facing=east]
-setblock 3 64 51 create:andesite_encased_shaft[axis=x]
-setblock 8 64 51 create:andesite_encased_shaft[axis=x]
+# 009 farms/source_berries
+#area 60 21 81 46
+fill 60 64 21 81 91 46 minecraft:air
+fill 60 60 21 81 62 46 minecraft:stone
+fill 60 63 21 81 63 46 minecraft:light_gray_concrete
+fill 64 64 27 81 79 27 minecraft:light_gray_concrete
+fill 64 64 27 64 79 40 minecraft:light_gray_concrete
+setblock 65 64 39 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "009"}','{"text": "farms"}','{"text": "source_berries"}','{"text": ""}']}}
+setblock 66 64 39 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "sourceberry"}','{"text": "rows with"}','{"text": "agronomic"}','{"text": "sourcelink,"}']}}
+setblock 67 64 39 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "source jar,"}','{"text": "imbuement"}','{"text": "chamber and"}','{"text": "Starbuncle"}']}}
+fill 76 64 27 76 79 40 minecraft:light_gray_concrete
+fill 66 63 30 74 63 34 minecraft:grass_block
+setblock 67 64 31 ars_nouveau:sourceberry_bush[age=3]
+setblock 67 64 33 ars_nouveau:sourceberry_bush[age=3]
+setblock 68 64 31 ars_nouveau:sourceberry_bush[age=3]
+setblock 68 64 33 ars_nouveau:sourceberry_bush[age=3]
+setblock 69 64 31 ars_nouveau:sourceberry_bush[age=3]
+setblock 69 64 33 ars_nouveau:sourceberry_bush[age=3]
+setblock 70 64 31 ars_nouveau:sourceberry_bush[age=3]
+setblock 70 64 33 ars_nouveau:sourceberry_bush[age=3]
+setblock 71 64 31 ars_nouveau:sourceberry_bush[age=3]
+setblock 71 64 33 ars_nouveau:sourceberry_bush[age=3]
+setblock 72 64 31 ars_nouveau:sourceberry_bush[age=3]
+setblock 72 64 33 ars_nouveau:sourceberry_bush[age=3]
+setblock 73 64 31 ars_nouveau:sourceberry_bush[age=3]
+setblock 73 64 33 ars_nouveau:sourceberry_bush[age=3]
+setblock 69 64 32 ars_nouveau:agronomic_sourcelink
+setblock 71 64 32 ars_nouveau:source_jar[fill=8]{source:7000}
+setblock 73 64 32 ars_nouveau:imbuement_chamber[facing=up]
+summon ars_nouveau:starbuncle 67.5 64 32.5 {NoAI:1b,PersistenceRequired:1b,Silent:1b,Tags:["kw_shot"],Rotation:[180f,0f]}
 execute as @e[type=minecraft:item,tag=!kw_shot] run kill @s

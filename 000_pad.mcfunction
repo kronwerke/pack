@@ -7,39 +7,39 @@ setblock -6 64 1 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": 
 #area -8 27 -6 29
 setblock -6 63 28 minecraft:smooth_stone
 setblock -6 64 28 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Erste Farmen"}','{"text": ""}','{"text": ""}','{"text": ""}']}}
-#area -8 46 -6 48
-setblock -6 63 47 minecraft:smooth_stone
-setblock -6 64 47 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Create"}','{"text": ""}','{"text": ""}','{"text": ""}']}}
-#area -8 69 -6 71
-setblock -6 63 70 minecraft:smooth_stone
-setblock -6 64 70 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Mekanism"}','{"text": ""}','{"text": ""}','{"text": ""}']}}
-#area -8 92 -6 94
-setblock -6 63 93 minecraft:smooth_stone
-setblock -6 64 93 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Ars Nouveau"}','{"text": ""}','{"text": ""}','{"text": ""}']}}
-#area -8 111 -6 113
-setblock -6 63 112 minecraft:smooth_stone
-setblock -6 64 112 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Botania"}','{"text": ""}','{"text": ""}','{"text": ""}']}}
-#area -8 148 -6 150
-setblock -6 63 149 minecraft:smooth_stone
-setblock -6 64 149 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Occultism and"}','{"text": "Hexerei"}','{"text": ""}','{"text": ""}']}}
-#area -8 183 -6 185
-setblock -6 63 184 minecraft:smooth_stone
-setblock -6 64 184 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Immersive"}','{"text": "Engineering and"}','{"text": "Industrial"}','{"text": "Foregoing"}']}}
-#area -8 237 -6 239
-setblock -6 63 238 minecraft:smooth_stone
-setblock -6 64 238 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Oritech, Powah,"}','{"text": "Ender IO"}','{"text": ""}','{"text": ""}']}}
-#area -8 258 -6 260
-setblock -6 63 259 minecraft:smooth_stone
-setblock -6 64 259 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "AE2, logistics,"}','{"text": "storage"}','{"text": ""}','{"text": ""}']}}
-#area -8 279 -6 281
-setblock -6 63 280 minecraft:smooth_stone
-setblock -6 64 280 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Power, flux and"}','{"text": "new tech"}','{"text": ""}','{"text": ""}']}}
-#area -8 302 -6 304
-setblock -6 63 303 minecraft:smooth_stone
-setblock -6 64 303 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Dimensions"}','{"text": ""}','{"text": ""}','{"text": ""}']}}
-#area -8 321 -6 323
-setblock -6 63 322 minecraft:smooth_stone
-setblock -6 64 322 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Late game"}','{"text": ""}','{"text": ""}','{"text": ""}']}}
-#area -8 342 -6 344
-setblock -6 63 343 minecraft:smooth_stone
-setblock -6 64 343 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Magic, gear,"}','{"text": "food"}','{"text": ""}','{"text": ""}']}}
+#area -8 48 -6 50
+setblock -6 63 49 minecraft:smooth_stone
+setblock -6 64 49 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Create"}','{"text": ""}','{"text": ""}','{"text": ""}']}}
+#area -8 71 -6 73
+setblock -6 63 72 minecraft:smooth_stone
+setblock -6 64 72 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Mekanism"}','{"text": ""}','{"text": ""}','{"text": ""}']}}
+#area -8 94 -6 96
+setblock -6 63 95 minecraft:smooth_stone
+setblock -6 64 95 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Ars Nouveau"}','{"text": ""}','{"text": ""}','{"text": ""}']}}
+#area -8 113 -6 115
+setblock -6 63 114 minecraft:smooth_stone
+setblock -6 64 114 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Botania"}','{"text": ""}','{"text": ""}','{"text": ""}']}}
+#area -8 150 -6 152
+setblock -6 63 151 minecraft:smooth_stone
+setblock -6 64 151 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Occultism and"}','{"text": "Hexerei"}','{"text": ""}','{"text": ""}']}}
+#area -8 185 -6 187
+setblock -6 63 186 minecraft:smooth_stone
+setblock -6 64 186 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Immersive"}','{"text": "Engineering and"}','{"text": "Industrial"}','{"text": "Foregoing"}']}}
+#area -8 239 -6 241
+setblock -6 63 240 minecraft:smooth_stone
+setblock -6 64 240 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Oritech, Powah,"}','{"text": "Ender IO"}','{"text": ""}','{"text": ""}']}}
+#area -8 260 -6 262
+setblock -6 63 261 minecraft:smooth_stone
+setblock -6 64 261 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "AE2, logistics,"}','{"text": "storage"}','{"text": ""}','{"text": ""}']}}
+#area -8 281 -6 283
+setblock -6 63 282 minecraft:smooth_stone
+setblock -6 64 282 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Power, flux and"}','{"text": "new tech"}','{"text": ""}','{"text": ""}']}}
+#area -8 306 -6 308
+setblock -6 63 307 minecraft:smooth_stone
+setblock -6 64 307 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Dimensions"}','{"text": ""}','{"text": ""}','{"text": ""}']}}
+#area -8 325 -6 327
+setblock -6 63 326 minecraft:smooth_stone
+setblock -6 64 326 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Late game"}','{"text": ""}','{"text": ""}','{"text": ""}']}}
+#area -8 346 -6 348
+setblock -6 63 347 minecraft:smooth_stone
+setblock -6 64 347 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Magic, gear,"}','{"text": "food"}','{"text": ""}','{"text": ""}']}}

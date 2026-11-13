@@ -1,17 +1,46 @@
-# 011 create/depot
-#area 31 40 50 65
-fill 31 64 40 50 91 65 minecraft:air
-fill 31 60 40 50 62 65 minecraft:stone
-fill 31 63 40 50 63 65 minecraft:light_gray_concrete
-fill 35 64 46 50 79 46 minecraft:light_gray_concrete
-fill 35 64 46 35 79 59 minecraft:light_gray_concrete
-setblock 36 64 58 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "011"}','{"text": "create"}','{"text": "depot"}','{"text": ""}']}}
-setblock 37 64 58 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "press above a"}','{"text": "depot with one"}','{"text": "block of air"}','{"text": "between"}']}}
-fill 45 64 46 45 79 59 minecraft:light_gray_concrete
-setblock 40 64 51 create:depot
-setblock 40 66 51 create:mechanical_press[facing=south]
-fill 39 64 50 41 67 50 create:andesite_casing
-setblock 40 66 50 create:andesite_encased_shaft[axis=z]
-setblock 40 66 49 create:creative_motor[facing=south]{ScrollValue:32}
-kw testworld use 40 64 51 up minecraft:iron_ingot
+# 011 create/water_wheel
+#area -4 42 16 67
+fill -4 64 42 16 91 67 minecraft:air
+fill -4 60 42 16 62 67 minecraft:stone
+fill -4 63 42 16 63 67 minecraft:light_gray_concrete
+fill 0 64 48 16 79 48 minecraft:light_gray_concrete
+fill 0 64 48 0 79 61 minecraft:light_gray_concrete
+setblock 1 64 60 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "011"}','{"text": "create"}','{"text": "water_wheel"}','{"text": ""}']}}
+setblock 2 64 60 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "four water"}','{"text": "wheels in a row"}','{"text": "with water over"}','{"text": "the paddles"}']}}
+setblock 3 64 60 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "from above"}','{"text": ""}','{"text": ""}','{"text": ""}']}}
+fill 11 64 48 11 79 61 minecraft:light_gray_concrete
+setblock 4 63 50 minecraft:water
+setblock 4 63 51 minecraft:air
+setblock 4 63 52 minecraft:air
+setblock 4 63 53 minecraft:air
+setblock 4 63 54 minecraft:air
+setblock 4 63 55 minecraft:air
+setblock 4 63 56 minecraft:air
+setblock 4 64 53 create:water_wheel[facing=east]
+setblock 5 63 50 minecraft:water
+setblock 5 63 51 minecraft:air
+setblock 5 63 52 minecraft:air
+setblock 5 63 53 minecraft:air
+setblock 5 63 54 minecraft:air
+setblock 5 63 55 minecraft:air
+setblock 5 63 56 minecraft:air
+setblock 5 64 53 create:water_wheel[facing=east]
+setblock 6 63 50 minecraft:water
+setblock 6 63 51 minecraft:air
+setblock 6 63 52 minecraft:air
+setblock 6 63 53 minecraft:air
+setblock 6 63 54 minecraft:air
+setblock 6 63 55 minecraft:air
+setblock 6 63 56 minecraft:air
+setblock 6 64 53 create:water_wheel[facing=east]
+setblock 7 63 50 minecraft:water
+setblock 7 63 51 minecraft:air
+setblock 7 63 52 minecraft:air
+setblock 7 63 53 minecraft:air
+setblock 7 63 54 minecraft:air
+setblock 7 63 55 minecraft:air
+setblock 7 63 56 minecraft:air
+setblock 7 64 53 create:water_wheel[facing=east]
+setblock 3 64 53 create:andesite_encased_shaft[axis=x]
+setblock 8 64 53 create:andesite_encased_shaft[axis=x]
 execute as @e[type=minecraft:item,tag=!kw_shot] run kill @s

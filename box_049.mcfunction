@@ -1,13 +1,16 @@
-# 049 botania/pool
-#area 26 105 45 130
-fill 26 64 105 45 91 130 minecraft:air
-fill 26 60 105 45 62 130 minecraft:stone
-fill 26 63 105 45 63 130 minecraft:light_gray_concrete
-fill 30 64 111 45 79 111 minecraft:light_gray_concrete
-fill 30 64 111 30 79 124 minecraft:light_gray_concrete
-setblock 31 64 123 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "049"}','{"text": "botania"}','{"text": "pool"}','{"text": ""}']}}
-setblock 32 64 123 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "a full pool"}','{"text": "with a spreader"}','{"text": "beam, wand in"}','{"text": "hand"}']}}
-fill 40 64 111 40 79 124 minecraft:light_gray_concrete
-setblock 36 64 116 botania:mana_pool{mana:1000000}
-setblock 33 64 116 botania:mana_spreader{rotationX:180f,rotationY:0f,mana:1000}
+# 049 ars_apprentice/potions
+#area 120 88 139 113
+fill 120 64 88 139 91 113 minecraft:air
+fill 120 60 88 139 62 113 minecraft:stone
+fill 120 63 88 139 63 113 minecraft:light_gray_concrete
+fill 124 64 94 139 79 94 minecraft:light_gray_concrete
+fill 124 64 94 124 79 107 minecraft:light_gray_concrete
+setblock 125 64 106 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "049"}','{"text": "ars_apprentice"}','{"text": "potions"}','{"text": ""}']}}
+setblock 126 64 106 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "potion jars"}','{"text": "next to the"}','{"text": "cauldron and an"}','{"text": "alchemical"}']}}
+setblock 127 64 106 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "sourcelink"}','{"text": ""}','{"text": ""}','{"text": ""}']}}
+fill 134 64 94 134 79 107 minecraft:light_gray_concrete
+setblock 129 64 99 ars_nouveau:wixie_cauldron[converted=true,filled=true]
+setblock 127 64 99 ars_nouveau:potion_jar[fill=11]
+setblock 128 64 99 ars_nouveau:potion_jar[fill=6]
+setblock 131 64 99 ars_nouveau:alchemical_sourcelink
 execute as @e[type=minecraft:item,tag=!kw_shot] run kill @s

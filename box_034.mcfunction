@@ -1,13 +1,195 @@
-# 034 mekanism_elite/mekasuit
-#area 192 63 211 88
-fill 192 64 63 211 91 88 minecraft:air
-fill 192 60 63 211 62 88 minecraft:stone
-fill 192 63 63 211 63 88 minecraft:light_gray_concrete
-fill 196 64 69 211 79 69 minecraft:light_gray_concrete
-fill 196 64 69 196 79 82 minecraft:light_gray_concrete
-setblock 197 64 81 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "034"}','{"text": "mekanism_elite"}','{"text": "mekasuit"}','{"text": ""}']}}
-setblock 198 64 81 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "full MekaSuit"}','{"text": "at the"}','{"text": "modification"}','{"text": "station"}']}}
-fill 206 64 69 206 79 82 minecraft:light_gray_concrete
-summon armor_stand 200.5 64 74.5 {ArmorItems:[{id:"mekanism:mekasuit_boots",count:1},{id:"mekanism:mekasuit_pants",count:1},{id:"mekanism:mekasuit_bodyarmor",count:1},{id:"mekanism:mekasuit_helmet",count:1}],ShowArms:1b,NoBasePlate:1b,Tags:["kw_shot"],Rotation:[180f,0f]}
-setblock 202 64 74 mekanism:modification_station[facing=south]
+# 034 mekanism_advanced/turbine
+#area 139 65 160 92
+fill 139 64 65 160 91 92 minecraft:air
+fill 139 60 65 160 62 92 minecraft:stone
+fill 139 63 65 160 63 92 minecraft:light_gray_concrete
+fill 143 64 71 160 79 71 minecraft:light_gray_concrete
+fill 143 64 71 143 79 86 minecraft:light_gray_concrete
+setblock 144 64 85 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "034"}','{"text": "mekanism_advanced"}','{"text": "turbine"}','{"text": ""}']}}
+setblock 145 64 85 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "turbine cutaway"}','{"text": "with rotors,"}','{"text": "dispersers,"}','{"text": "coils"}']}}
+fill 155 64 71 155 79 86 minecraft:light_gray_concrete
+setblock 147 64 75 mekanismgenerators:turbine_casing
+setblock 147 64 76 mekanismgenerators:turbine_casing
+setblock 147 64 77 mekanismgenerators:turbine_casing
+setblock 147 64 78 mekanismgenerators:turbine_casing
+setblock 147 64 79 mekanismgenerators:turbine_casing
+setblock 147 65 75 mekanismgenerators:turbine_casing
+setblock 147 65 76 mekanismgenerators:turbine_casing
+setblock 147 65 77 mekanismgenerators:turbine_casing
+setblock 147 65 78 mekanismgenerators:turbine_casing
+setblock 147 65 79 mekanismgenerators:turbine_casing
+setblock 147 66 75 mekanismgenerators:turbine_casing
+setblock 147 66 76 mekanismgenerators:turbine_casing
+setblock 147 66 77 mekanismgenerators:turbine_valve
+setblock 147 66 78 mekanismgenerators:turbine_casing
+setblock 147 66 79 mekanismgenerators:turbine_casing
+setblock 147 67 75 mekanismgenerators:turbine_casing
+setblock 147 67 76 mekanismgenerators:turbine_casing
+setblock 147 67 77 mekanismgenerators:turbine_casing
+setblock 147 67 78 mekanismgenerators:turbine_casing
+setblock 147 67 79 mekanismgenerators:turbine_casing
+setblock 147 68 75 mekanismgenerators:turbine_casing
+setblock 147 68 76 mekanismgenerators:turbine_casing
+setblock 147 68 77 mekanismgenerators:turbine_casing
+setblock 147 68 78 mekanismgenerators:turbine_casing
+setblock 147 68 79 mekanismgenerators:turbine_casing
+setblock 147 69 75 mekanismgenerators:turbine_casing
+setblock 147 69 76 mekanismgenerators:turbine_vent
+setblock 147 69 77 mekanismgenerators:turbine_vent
+setblock 147 69 78 mekanismgenerators:turbine_vent
+setblock 147 69 79 mekanismgenerators:turbine_casing
+setblock 147 70 75 mekanismgenerators:turbine_casing
+setblock 147 70 76 mekanismgenerators:turbine_vent
+setblock 147 70 77 mekanismgenerators:turbine_vent
+setblock 147 70 78 mekanismgenerators:turbine_vent
+setblock 147 70 79 mekanismgenerators:turbine_casing
+setblock 147 71 75 mekanismgenerators:turbine_casing
+setblock 147 71 76 mekanismgenerators:turbine_vent
+setblock 147 71 77 mekanismgenerators:turbine_vent
+setblock 147 71 78 mekanismgenerators:turbine_vent
+setblock 147 71 79 mekanismgenerators:turbine_casing
+setblock 147 72 75 mekanismgenerators:turbine_casing
+setblock 147 72 76 mekanismgenerators:turbine_casing
+setblock 147 72 77 mekanismgenerators:turbine_casing
+setblock 147 72 78 mekanismgenerators:turbine_casing
+setblock 147 72 79 mekanismgenerators:turbine_casing
+setblock 148 64 75 mekanismgenerators:turbine_casing
+setblock 148 64 76 mekanismgenerators:turbine_casing
+setblock 148 64 77 mekanismgenerators:turbine_casing
+setblock 148 64 78 mekanismgenerators:turbine_casing
+setblock 148 64 79 mekanismgenerators:turbine_casing
+setblock 148 65 75 mekanismgenerators:turbine_casing
+setblock 148 65 79 mekanism:structural_glass
+setblock 148 66 75 mekanismgenerators:turbine_casing
+setblock 148 66 79 mekanism:structural_glass
+setblock 148 67 75 mekanismgenerators:turbine_casing
+setblock 148 67 79 mekanism:structural_glass
+setblock 148 68 75 mekanismgenerators:turbine_casing
+setblock 148 68 79 mekanism:structural_glass
+setblock 148 69 75 mekanismgenerators:turbine_vent
+setblock 148 69 79 mekanism:structural_glass
+setblock 148 70 75 mekanismgenerators:turbine_vent
+setblock 148 70 79 mekanism:structural_glass
+setblock 148 71 75 mekanismgenerators:turbine_vent
+setblock 148 71 79 mekanism:structural_glass
+setblock 148 72 75 mekanismgenerators:turbine_casing
+setblock 148 72 76 mekanismgenerators:turbine_casing
+setblock 148 72 77 mekanismgenerators:turbine_casing
+setblock 148 72 78 mekanismgenerators:turbine_casing
+setblock 148 72 79 mekanismgenerators:turbine_casing
+setblock 149 64 75 mekanismgenerators:turbine_casing
+setblock 149 64 76 mekanismgenerators:turbine_casing
+setblock 149 64 77 mekanismgenerators:turbine_casing
+setblock 149 64 78 mekanismgenerators:turbine_casing
+setblock 149 64 79 mekanismgenerators:turbine_casing
+setblock 149 65 75 mekanismgenerators:turbine_casing
+setblock 149 65 79 mekanism:structural_glass
+setblock 149 66 75 mekanismgenerators:turbine_casing
+setblock 149 66 79 mekanism:structural_glass
+setblock 149 67 75 mekanismgenerators:turbine_casing
+setblock 149 67 79 mekanism:structural_glass
+setblock 149 68 75 mekanismgenerators:turbine_casing
+setblock 149 68 79 mekanism:structural_glass
+setblock 149 69 75 mekanismgenerators:turbine_vent
+setblock 149 69 79 mekanism:structural_glass
+setblock 149 70 75 mekanismgenerators:turbine_vent
+setblock 149 70 79 mekanism:structural_glass
+setblock 149 71 75 mekanismgenerators:turbine_vent
+setblock 149 71 79 mekanism:structural_glass
+setblock 149 72 75 mekanismgenerators:turbine_casing
+setblock 149 72 76 mekanismgenerators:turbine_casing
+setblock 149 72 77 mekanismgenerators:turbine_casing
+setblock 149 72 78 mekanismgenerators:turbine_casing
+setblock 149 72 79 mekanismgenerators:turbine_casing
+setblock 150 64 75 mekanismgenerators:turbine_casing
+setblock 150 64 76 mekanismgenerators:turbine_casing
+setblock 150 64 77 mekanismgenerators:turbine_casing
+setblock 150 64 78 mekanismgenerators:turbine_casing
+setblock 150 64 79 mekanismgenerators:turbine_casing
+setblock 150 65 75 mekanismgenerators:turbine_casing
+setblock 150 65 79 mekanism:structural_glass
+setblock 150 66 75 mekanismgenerators:turbine_casing
+setblock 150 66 79 mekanism:structural_glass
+setblock 150 67 75 mekanismgenerators:turbine_casing
+setblock 150 67 79 mekanism:structural_glass
+setblock 150 68 75 mekanismgenerators:turbine_casing
+setblock 150 68 79 mekanism:structural_glass
+setblock 150 69 75 mekanismgenerators:turbine_vent
+setblock 150 69 79 mekanism:structural_glass
+setblock 150 70 75 mekanismgenerators:turbine_vent
+setblock 150 70 79 mekanism:structural_glass
+setblock 150 71 75 mekanismgenerators:turbine_vent
+setblock 150 71 79 mekanism:structural_glass
+setblock 150 72 75 mekanismgenerators:turbine_casing
+setblock 150 72 76 mekanismgenerators:turbine_casing
+setblock 150 72 77 mekanismgenerators:turbine_casing
+setblock 150 72 78 mekanismgenerators:turbine_casing
+setblock 150 72 79 mekanismgenerators:turbine_casing
+setblock 151 64 75 mekanismgenerators:turbine_casing
+setblock 151 64 76 mekanismgenerators:turbine_casing
+setblock 151 64 77 mekanismgenerators:turbine_casing
+setblock 151 64 78 mekanismgenerators:turbine_casing
+setblock 151 64 79 mekanismgenerators:turbine_casing
+setblock 151 65 75 mekanismgenerators:turbine_casing
+setblock 151 65 76 mekanismgenerators:turbine_casing
+setblock 151 65 77 mekanismgenerators:turbine_casing
+setblock 151 65 78 mekanismgenerators:turbine_casing
+setblock 151 65 79 mekanismgenerators:turbine_casing
+setblock 151 66 75 mekanismgenerators:turbine_casing
+setblock 151 66 76 mekanismgenerators:turbine_casing
+setblock 151 66 77 mekanismgenerators:turbine_valve
+setblock 151 66 78 mekanismgenerators:turbine_casing
+setblock 151 66 79 mekanismgenerators:turbine_casing
+setblock 151 67 75 mekanismgenerators:turbine_casing
+setblock 151 67 76 mekanismgenerators:turbine_casing
+setblock 151 67 77 mekanismgenerators:turbine_casing
+setblock 151 67 78 mekanismgenerators:turbine_casing
+setblock 151 67 79 mekanismgenerators:turbine_casing
+setblock 151 68 75 mekanismgenerators:turbine_casing
+setblock 151 68 76 mekanismgenerators:turbine_casing
+setblock 151 68 77 mekanismgenerators:turbine_casing
+setblock 151 68 78 mekanismgenerators:turbine_casing
+setblock 151 68 79 mekanismgenerators:turbine_casing
+setblock 151 69 75 mekanismgenerators:turbine_casing
+setblock 151 69 76 mekanismgenerators:turbine_vent
+setblock 151 69 77 mekanismgenerators:turbine_vent
+setblock 151 69 78 mekanismgenerators:turbine_vent
+setblock 151 69 79 mekanismgenerators:turbine_casing
+setblock 151 70 75 mekanismgenerators:turbine_casing
+setblock 151 70 76 mekanismgenerators:turbine_vent
+setblock 151 70 77 mekanismgenerators:turbine_vent
+setblock 151 70 78 mekanismgenerators:turbine_vent
+setblock 151 70 79 mekanismgenerators:turbine_casing
+setblock 151 71 75 mekanismgenerators:turbine_casing
+setblock 151 71 76 mekanismgenerators:turbine_vent
+setblock 151 71 77 mekanismgenerators:turbine_vent
+setblock 151 71 78 mekanismgenerators:turbine_vent
+setblock 151 71 79 mekanismgenerators:turbine_casing
+setblock 151 72 75 mekanismgenerators:turbine_casing
+setblock 151 72 76 mekanismgenerators:turbine_casing
+setblock 151 72 77 mekanismgenerators:turbine_casing
+setblock 151 72 78 mekanismgenerators:turbine_casing
+setblock 151 72 79 mekanismgenerators:turbine_casing
+setblock 149 65 77 mekanismgenerators:turbine_rotor{blades:2}
+setblock 149 66 77 mekanismgenerators:turbine_rotor{blades:2}
+setblock 149 67 77 mekanismgenerators:turbine_rotor{blades:2}
+setblock 149 68 77 mekanismgenerators:turbine_rotor{blades:2}
+setblock 149 69 77 mekanismgenerators:rotational_complex
+setblock 148 69 76 mekanism:pressure_disperser
+setblock 148 70 76 mekanismgenerators:saturating_condenser
+setblock 148 69 77 mekanism:pressure_disperser
+setblock 148 70 77 mekanismgenerators:saturating_condenser
+setblock 148 69 78 mekanism:pressure_disperser
+setblock 148 70 78 mekanismgenerators:saturating_condenser
+setblock 149 69 76 mekanism:pressure_disperser
+setblock 149 70 76 mekanismgenerators:saturating_condenser
+setblock 149 69 78 mekanism:pressure_disperser
+setblock 149 70 78 mekanismgenerators:saturating_condenser
+setblock 150 69 76 mekanism:pressure_disperser
+setblock 150 70 76 mekanismgenerators:saturating_condenser
+setblock 150 69 77 mekanism:pressure_disperser
+setblock 150 70 77 mekanismgenerators:saturating_condenser
+setblock 150 69 78 mekanism:pressure_disperser
+setblock 150 70 78 mekanismgenerators:saturating_condenser
+setblock 149 70 77 mekanismgenerators:electromagnetic_coil
 execute as @e[type=minecraft:item,tag=!kw_shot] run kill @s

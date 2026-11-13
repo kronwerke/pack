@@ -1,26 +1,20 @@
-# 061 gaia/dandelifeon
-#area 220 105 257 148
-fill 220 64 105 245 91 148 minecraft:air
-fill 246 64 105 257 91 148 minecraft:air
-fill 220 60 105 257 62 148 minecraft:stone
-fill 220 63 105 257 63 148 minecraft:light_gray_concrete
-fill 224 64 111 257 79 111 minecraft:light_gray_concrete
-fill 224 64 111 224 79 142 minecraft:light_gray_concrete
-setblock 225 64 141 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "061"}','{"text": "gaia"}','{"text": "dandelifeon"}','{"text": ""}']}}
-setblock 226 64 141 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "a 25x25 cell"}','{"text": "field"}','{"text": ""}','{"text": ""}']}}
-fill 252 64 111 252 79 142 minecraft:light_gray_concrete
-fill 226 63 113 250 63 137 minecraft:smooth_stone
-setblock 238 63 125 minecraft:grass_block
-setblock 238 64 125 botania:dandelifeon
-setblock 231 64 118 botania:cellular_block
-setblock 232 64 119 botania:cellular_block
-setblock 233 64 119 botania:cellular_block
-setblock 231 64 120 botania:cellular_block
-setblock 232 64 120 botania:cellular_block
-setblock 243 64 120 botania:cellular_block
-setblock 244 64 120 botania:cellular_block
-setblock 245 64 120 botania:cellular_block
-setblock 232 64 129 botania:cellular_block
-setblock 232 64 130 botania:cellular_block
-setblock 232 64 131 botania:cellular_block
+# 061 botania/farm
+#area 71 107 94 132
+fill 71 64 107 94 91 132 minecraft:air
+fill 71 60 107 94 62 132 minecraft:stone
+fill 71 63 107 94 63 132 minecraft:light_gray_concrete
+fill 75 64 113 94 79 113 minecraft:light_gray_concrete
+fill 75 64 113 75 79 126 minecraft:light_gray_concrete
+setblock 76 64 125 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "061"}','{"text": "botania"}','{"text": "farm"}','{"text": ""}']}}
+setblock 77 64 125 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "the finished"}','{"text": "stage 1 mana"}','{"text": "farm"}','{"text": ""}']}}
+fill 89 64 113 89 79 126 minecraft:light_gray_concrete
+fill 77 63 116 87 63 120 minecraft:grass_block
+setblock 82 64 118 botania:mana_pool{mana:200000}
+setblock 82 64 119 botania:manastar
+setblock 79 64 118 botania:mana_spreader{rotationX:180f,rotationY:0f,mana:1000}
+setblock 85 64 118 botania:mana_spreader{rotationX:0f,rotationY:0f,mana:1000}
+setblock 78 64 117 botania:endoflame
+setblock 78 64 119 botania:endoflame
+setblock 86 64 117 botania:endoflame
+setblock 86 64 119 botania:endoflame
 execute as @e[type=minecraft:item,tag=!kw_shot] run kill @s

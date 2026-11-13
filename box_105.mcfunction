@@ -1,30 +1,40 @@
-# 105 aether/portal, altar
-#area 25 296 53 321
-fill 25 64 296 53 91 321 minecraft:air
-fill 25 60 296 53 62 321 minecraft:stone
-fill 25 63 296 53 63 321 minecraft:light_gray_concrete
-fill 29 64 302 53 79 302 minecraft:light_gray_concrete
-fill 29 64 302 29 79 315 minecraft:light_gray_concrete
-setblock 30 64 314 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "105.1"}','{"text": "aether"}','{"text": "portal"}','{"text": ""}']}}
-setblock 31 64 314 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Bau das"}','{"text": "Glowstone-Portal"}','{"text": ""}','{"text": ""}']}}
-fill 38 64 302 38 79 315 minecraft:light_gray_concrete
-setblock 32 65 307 minecraft:glowstone
-setblock 32 66 307 minecraft:glowstone
-setblock 32 67 307 minecraft:glowstone
-setblock 33 64 307 minecraft:glowstone
-setblock 33 68 307 minecraft:glowstone
-setblock 34 64 307 minecraft:glowstone
-setblock 34 68 307 minecraft:glowstone
-setblock 35 65 307 minecraft:glowstone
-setblock 35 66 307 minecraft:glowstone
-setblock 35 67 307 minecraft:glowstone
-fill 33 65 307 34 67 307 aether:aether_portal[axis=x]
-execute if block 33 66 307 aether:aether_portal
-setblock 39 64 314 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "105.2"}','{"text": "aether"}','{"text": "altar"}','{"text": ""}']}}
-setblock 40 64 314 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Bau einen Altar"}','{"text": ""}','{"text": ""}','{"text": ""}']}}
-fill 48 64 302 48 79 315 minecraft:light_gray_concrete
-fill 41 63 306 45 63 308 aether:holystone
-setblock 41 64 307 aether:altar
-setblock 43 64 307 aether:freezer
-setblock 45 64 307 aether:incubator
+# 105 logistics/menril, programmer, xnet_connectors, laser_node
+#area 137 254 187 279
+fill 137 64 254 181 91 279 minecraft:air
+fill 182 64 254 187 91 279 minecraft:air
+fill 137 60 254 187 62 279 minecraft:stone
+fill 137 63 254 187 63 279 minecraft:light_gray_concrete
+fill 141 64 260 187 79 260 minecraft:light_gray_concrete
+fill 141 64 260 141 79 273 minecraft:light_gray_concrete
+setblock 142 64 272 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "105.1"}','{"text": "logistics"}','{"text": "menril"}','{"text": ""}']}}
+setblock 143 64 272 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Press"}','{"text": "Menril-Harz"}','{"text": ""}','{"text": ""}']}}
+fill 151 64 260 151 79 273 minecraft:light_gray_concrete
+fill 144 64 264 144 66 264 integrateddynamics:menril_log[axis=y]
+setblock 146 64 265 integrateddynamics:squeezer[axis=x,height=1]
+setblock 147 64 265 integrateddynamics:drying_basin
+setblock 152 64 272 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "105.2"}','{"text": "logistics"}','{"text": "programmer"}','{"text": ""}']}}
+setblock 153 64 272 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Schreib Karten"}','{"text": "im Logic"}','{"text": "Programmer"}','{"text": ""}']}}
+fill 161 64 260 161 79 273 minecraft:light_gray_concrete
+setblock 155 64 265 integrateddynamics:logic_programmer[facing=south]
+setblock 157 64 265 integrateddynamics:variablestore[facing=south]
+setblock 162 64 272 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "105.3"}','{"text": "logistics"}','{"text": "xnet_connectors"}','{"text": ""}']}}
+setblock 163 64 272 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Setz Connectors"}','{"text": "und Kabel"}','{"text": ""}','{"text": ""}']}}
+fill 172 64 260 172 79 273 minecraft:light_gray_concrete
+setblock 164 64 265 minecraft:chest[facing=south,type=single,waterlogged=false]
+setblock 170 64 265 minecraft:furnace[facing=south,lit=false]
+setblock 167 64 266 xnet:controller[facing=south,error=false]
+kw testworld use 165 63 265 up xnet:connector_blue
+kw testworld use 169 63 265 up xnet:connector_blue
+kw testworld use 166 63 265 up xnet:netcable_blue
+kw testworld use 167 63 265 up xnet:netcable_blue
+kw testworld use 168 63 265 up xnet:netcable_blue
+setblock 173 64 272 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "105.4"}','{"text": "logistics"}','{"text": "laser_node"}','{"text": ""}']}}
+setblock 174 64 272 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Verbinde zwei"}','{"text": "Laser Nodes"}','{"text": ""}','{"text": ""}']}}
+fill 182 64 260 182 79 273 minecraft:light_gray_concrete
+setblock 175 64 265 minecraft:chest[facing=south,type=single,waterlogged=false]
+setblock 175 65 265 laserio:laser_node
+setblock 179 64 265 minecraft:chest[facing=south,type=single,waterlogged=false]
+setblock 179 65 265 laserio:laser_node
+kw testworld use 175 65 265 south laserio:laser_wrench
+kw testworld use 179 65 265 south laserio:laser_wrench
 execute as @e[type=minecraft:item,tag=!kw_shot] run kill @s

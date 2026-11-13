@@ -1,14 +1,18 @@
-# 064 occultism/spirit_fire
-#area -4 142 15 167
-fill -4 64 142 15 91 167 minecraft:air
-fill -4 60 142 15 62 167 minecraft:stone
-fill -4 63 142 15 63 167 minecraft:light_gray_concrete
-fill 0 64 148 15 79 148 minecraft:light_gray_concrete
-fill 0 64 148 0 79 161 minecraft:light_gray_concrete
-setblock 1 64 160 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "064"}','{"text": "occultism"}','{"text": "spirit_fire"}','{"text": ""}']}}
-setblock 2 64 160 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "spirit fire"}','{"text": "turning"}','{"text": "andesite into"}','{"text": "otherstone"}']}}
-fill 10 64 148 10 79 161 minecraft:light_gray_concrete
-setblock 5 64 153 occultism:spirit_fire[color=white]
-summon item 5.5 65.5 153.5 {Item:{id:"minecraft:andesite",count:8},PickupDelay:32767,Age:-32768,Tags:["kw_shot"]}
-summon item 6.5 64.2 154.5 {Item:{id:"occultism:otherstone",count:4},PickupDelay:32767,Age:-32768,Tags:["kw_shot"]}
+# 064 botania_runes/runic_altar
+#area 122 107 141 132
+fill 122 64 107 141 91 132 minecraft:air
+fill 122 60 107 141 62 132 minecraft:stone
+fill 122 63 107 141 63 132 minecraft:light_gray_concrete
+fill 126 64 113 141 79 113 minecraft:light_gray_concrete
+fill 126 64 113 126 79 126 minecraft:light_gray_concrete
+setblock 127 64 125 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "064"}','{"text": "botania_runes"}','{"text": "runic_altar"}','{"text": ""}']}}
+setblock 128 64 125 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "altar with"}','{"text": "ingredients, a"}','{"text": "spreader aimed"}','{"text": "at it, wand HUD"}']}}
+fill 136 64 113 136 79 126 minecraft:light_gray_concrete
+setblock 128 64 118 botania:mana_pool{mana:1000000}
+setblock 129 64 118 botania:mana_spreader{rotationX:180f,rotationY:0f,mana:1000}
+setblock 133 64 118 botania:runic_altar
+kw testworld use 133 64 118 up botania:manasteel_ingot
+kw testworld use 133 64 118 up botania:mana_powder
+kw testworld use 133 64 118 up minecraft:bone_meal
+kw testworld use 133 64 118 up minecraft:sugar_cane
 execute as @e[type=minecraft:item,tag=!kw_shot] run kill @s

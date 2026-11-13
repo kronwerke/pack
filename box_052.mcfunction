@@ -1,20 +1,19 @@
-# 052 botania/farm
-#area 71 105 94 130
-fill 71 64 105 94 91 130 minecraft:air
-fill 71 60 105 94 62 130 minecraft:stone
-fill 71 63 105 94 63 130 minecraft:light_gray_concrete
-fill 75 64 111 94 79 111 minecraft:light_gray_concrete
-fill 75 64 111 75 79 124 minecraft:light_gray_concrete
-setblock 76 64 123 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "052"}','{"text": "botania"}','{"text": "farm"}','{"text": ""}']}}
-setblock 77 64 123 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "the finished"}','{"text": "stage 1 mana"}','{"text": "farm"}','{"text": ""}']}}
-fill 89 64 111 89 79 124 minecraft:light_gray_concrete
-fill 77 63 114 87 63 118 minecraft:grass_block
-setblock 82 64 116 botania:mana_pool{mana:200000}
-setblock 82 64 117 botania:manastar
-setblock 79 64 116 botania:mana_spreader{rotationX:180f,rotationY:0f,mana:1000}
-setblock 85 64 116 botania:mana_spreader{rotationX:0f,rotationY:0f,mana:1000}
-setblock 78 64 115 botania:endoflame
-setblock 78 64 117 botania:endoflame
-setblock 86 64 115 botania:endoflame
-setblock 86 64 117 botania:endoflame
+# 052 ars_master/wilden_ritual
+#area 165 88 184 113
+fill 165 64 88 184 91 113 minecraft:air
+fill 165 60 88 184 62 113 minecraft:stone
+fill 165 63 88 184 63 113 minecraft:light_gray_concrete
+fill 169 64 94 184 79 94 minecraft:light_gray_concrete
+fill 169 64 94 169 79 107 minecraft:light_gray_concrete
+setblock 170 64 106 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "052"}','{"text": "ars_master"}','{"text": "wilden_ritual"}','{"text": ""}']}}
+setblock 171 64 106 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "brazier with"}','{"text": "spike, horn and"}','{"text": "wing"}','{"text": ""}']}}
+fill 179 64 94 179 79 107 minecraft:light_gray_concrete
+setblock 174 64 99 ars_nouveau:ritual_brazier
+kw testworld use 174 64 99 up ars_nouveau:ritual_wilden_summon
+setblock 172 64 99 ars_nouveau:arcane_pedestal[facing=up]
+kw testworld use 172 64 99 south ars_nouveau:wilden_spike
+setblock 176 64 99 ars_nouveau:arcane_pedestal[facing=up]
+kw testworld use 176 64 99 south ars_nouveau:wilden_horn
+setblock 174 64 97 ars_nouveau:arcane_pedestal[facing=up]
+kw testworld use 174 64 97 south ars_nouveau:wilden_wing
 execute as @e[type=minecraft:item,tag=!kw_shot] run kill @s

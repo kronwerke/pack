@@ -1,21 +1,21 @@
-# 044 ars_apprentice/relay
-#area 88 86 109 111
-fill 88 64 86 109 91 111 minecraft:air
-fill 88 60 86 109 62 111 minecraft:stone
-fill 88 63 86 109 63 111 minecraft:light_gray_concrete
-fill 92 64 92 109 79 92 minecraft:light_gray_concrete
-fill 92 64 92 92 79 105 minecraft:light_gray_concrete
-setblock 93 64 104 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "044"}','{"text": "ars_apprentice"}','{"text": "relay"}','{"text": ""}']}}
-setblock 94 64 104 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "two relays"}','{"text": "bridging jars"}','{"text": "about 20 blocks"}','{"text": "apart"}']}}
-fill 104 64 92 104 79 105 minecraft:light_gray_concrete
-setblock 95 64 97 ars_nouveau:source_jar[fill=11]{source:10000}
-setblock 97 64 97 ars_nouveau:relay
-setblock 99 64 97 ars_nouveau:relay
-setblock 101 64 97 ars_nouveau:source_jar[fill=0]
-kw testworld use 95 64 97 south ars_nouveau:dominion_wand
-kw testworld use 97 64 97 south ars_nouveau:dominion_wand
-kw testworld use 97 64 97 south ars_nouveau:dominion_wand
-kw testworld use 99 64 97 south ars_nouveau:dominion_wand
-kw testworld use 99 64 97 south ars_nouveau:dominion_wand
-kw testworld use 101 64 97 south ars_nouveau:dominion_wand
+# 044 ars_nouveau/apparatus
+#area 43 88 62 113
+fill 43 64 88 62 91 113 minecraft:air
+fill 43 60 88 62 62 113 minecraft:stone
+fill 43 63 88 62 63 113 minecraft:light_gray_concrete
+fill 47 64 94 62 79 94 minecraft:light_gray_concrete
+fill 47 64 94 47 79 107 minecraft:light_gray_concrete
+setblock 48 64 106 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "044"}','{"text": "ars_nouveau"}','{"text": "apparatus"}','{"text": ""}']}}
+setblock 49 64 106 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "core, apparatus"}','{"text": "and pedestals"}','{"text": "in range"}','{"text": ""}']}}
+fill 57 64 94 57 79 107 minecraft:light_gray_concrete
+setblock 52 64 99 ars_nouveau:arcane_core[facing=up]
+setblock 52 65 99 ars_nouveau:enchanting_apparatus[facing=up]
+setblock 50 64 97 ars_nouveau:arcane_pedestal[facing=up]
+setblock 52 64 96 ars_nouveau:arcane_pedestal[facing=up]
+setblock 54 64 97 ars_nouveau:arcane_pedestal[facing=up]
+setblock 49 64 99 ars_nouveau:arcane_pedestal[facing=up]
+setblock 55 64 99 ars_nouveau:arcane_pedestal[facing=up]
+setblock 50 64 101 ars_nouveau:arcane_pedestal[facing=up]
+setblock 54 64 101 ars_nouveau:arcane_pedestal[facing=up]
+setblock 55 64 96 ars_nouveau:source_jar[fill=11]{source:10000}
 execute as @e[type=minecraft:item,tag=!kw_shot] run kill @s

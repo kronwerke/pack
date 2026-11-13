@@ -1,18 +1,12 @@
-# 055 botania_runes/runic_altar
-#area 122 105 141 130
-fill 122 64 105 141 91 130 minecraft:air
-fill 122 60 105 141 62 130 minecraft:stone
-fill 122 63 105 141 63 130 minecraft:light_gray_concrete
-fill 126 64 111 141 79 111 minecraft:light_gray_concrete
-fill 126 64 111 126 79 124 minecraft:light_gray_concrete
-setblock 127 64 123 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "055"}','{"text": "botania_runes"}','{"text": "runic_altar"}','{"text": ""}']}}
-setblock 128 64 123 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "altar with"}','{"text": "ingredients, a"}','{"text": "spreader aimed"}','{"text": "at it, wand HUD"}']}}
-fill 136 64 111 136 79 124 minecraft:light_gray_concrete
-setblock 128 64 116 botania:mana_pool{mana:1000000}
-setblock 129 64 116 botania:mana_spreader{rotationX:180f,rotationY:0f,mana:1000}
-setblock 133 64 116 botania:runic_altar
-kw testworld use 133 64 116 up botania:manasteel_ingot
-kw testworld use 133 64 116 up botania:mana_powder
-kw testworld use 133 64 116 up minecraft:bone_meal
-kw testworld use 133 64 116 up minecraft:sugar_cane
+# 055 ars_epic/el_armor
+#area 210 88 229 113
+fill 210 64 88 229 91 113 minecraft:air
+fill 210 60 88 229 62 113 minecraft:stone
+fill 210 63 88 229 63 113 minecraft:light_gray_concrete
+fill 214 64 94 229 79 94 minecraft:light_gray_concrete
+fill 214 64 94 214 79 107 minecraft:light_gray_concrete
+setblock 215 64 106 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "055"}','{"text": "ars_epic"}','{"text": "el_armor"}','{"text": ""}']}}
+setblock 216 64 106 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "a full"}','{"text": "elemental robe"}','{"text": "set"}','{"text": ""}']}}
+fill 224 64 94 224 79 107 minecraft:light_gray_concrete
+summon armor_stand 219.5 64 99.5 {ArmorItems:[{id:"ars_elemental:fire_boots",count:1},{id:"ars_elemental:fire_leggings",count:1},{id:"ars_elemental:fire_robes",count:1},{id:"ars_elemental:fire_hat",count:1}],ShowArms:1b,NoBasePlate:1b,Tags:["kw_shot"],Rotation:[180f,0f]}
 execute as @e[type=minecraft:item,tag=!kw_shot] run kill @s

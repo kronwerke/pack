@@ -2759,3 +2759,114 @@ def _(b):
         drive_from_below(b, x, 2, 4)
     b.f(5, 0, 5, 5, 1, 5, "minecraft:stone_bricks")
     b.b(5, 2, 5, "create:package_frogport")
+
+
+# ===================================================================================
+# Nineteenth batch: creatures, a station, a reactor shell
+
+@scene("create_brass/blaze_burner")
+def _(b):
+    # a blaze, and the empty burner you catch it with
+    b.m("minecraft:blaze", 3, 0, 4)
+    b.show(6, 0, 4, "create:empty_blaze_burner")
+
+
+@scene("occultism/djinni_familiars", w=11)
+def _(b):
+    # three of the familiars a djinni ritual can bind
+    for x, name in ((2, "dragon_familiar"), (5, "greedy_familiar"), (8, "deer_familiar")):
+        b.m(f"occultism:{name}", x, 0, 4)
+
+
+@scene("occultism/foliot_crusher")
+def _(b):
+    # the foliot stands by the ore thrown to it; dust is what it leaves
+    b.m("occultism:foliot", 3, 0, 4)
+    b.drop(5, 0.2, 4, "minecraft:raw_iron", 8)
+    b.drop(6, 0.2, 5, "occultism:iron_dust", 16)
+    b.focus(2, 0, 3, 6, 2, 5)
+
+
+@scene("occultism_afrit/unbound_afrit")
+def _(b):
+    b.m("occultism:afrit_wild", 4, 0, 4)
+
+
+@scene("occultism_afrit/iesnium")
+def _(b):
+    # iesnium ore sits in netherrack and looks like it until the rod or the goggles show it
+    b.f(3, 0, 3, 5, 1, 4, "minecraft:netherrack")
+    b.b(4, 0, 4, "occultism:iesnium_ore")
+    b.b(3, 1, 4, "occultism:iesnium_ore")
+
+
+@scene("ars_master/tribute")
+def _(b):
+    b.m("ars_nouveau:wilden_boss", 4, 0, 4)
+
+
+@scene("ars_nouveau/starbuncle_work")
+def _(b):
+    # a starbuncle between the chamber it empties and the chest it fills
+    b.b(2, 0, 4, "ars_nouveau:imbuement_chamber[facing=up]")
+    b.m("ars_nouveau:starbuncle", 4, 0, 4)
+    b.b(6, 0, 4, "minecraft:chest[facing=south,type=single,waterlogged=false]")
+
+
+@scene("alfheim/elementium_armor")
+def _(b):
+    # elementium armour, and one of the pixies it calls when you are hit
+    b.stand(3, 0, 4, armor=("botania:elementium_helmet", "botania:elementium_chestplate", "botania:elementium_leggings", "botania:elementium_boots"))
+    b.m("botania:pixie", 6, 1, 4)
+
+
+@scene("industrial/frame_simple", w=11)
+def _(b):
+    # the four machine frames in the order you build them: pity, simple, advanced, supreme
+    for i, name in enumerate(("pity", "simple", "advanced", "supreme")):
+        b.b(2 + 2 * i, 0, 4, f"industrialforegoing:machine_frame_{name}")
+
+
+@scene("create_trains/station", w=11)
+def _(b):
+    # a stretch of track, the station beside it, two bogeys set on the track: what a train is assembled from
+    b.f(1, 0, 4, 9, 0, 4, "create:track[shape=xo,turn=false,waterlogged=false]")
+    b.b(5, 0, 6, "create:track_station")
+    b.b(3, 1, 4, "create:small_bogey[axis=x,waterlogged=false]")
+    b.b(7, 1, 4, "create:small_bogey[axis=x,waterlogged=false]")
+    b.f(3, 2, 4, 7, 2, 4, "create:railway_casing")
+
+
+@scene("create_trains/postbox", w=11)
+def _(b):
+    # a postbox at the platform: trains that stop here take its packages along
+    b.f(1, 0, 4, 9, 0, 4, "create:track[shape=xo,turn=false,waterlogged=false]")
+    b.b(5, 0, 6, "create:track_station")
+    b.b(7, 0, 6, "create:white_postbox[facing=south,open=false,waterlogged=false]")
+
+
+@scene("oritech/reactor", h=14)
+def _(b):
+    # the reactor's shell: walls as a box, the controller in the front wall, a fuel port in the
+    # roof over the rod inside, the energy port outside
+    b.f(3, 0, 3, 5, 3, 5, "oritech:reactor_wall")
+    b.b(4, 1, 4, "oritech:reactor_rod[lit=false]")
+    b.b(4, 2, 4, "minecraft:air")
+    b.b(4, 3, 4, "oritech:reactor_fuel_port")
+    b.b(4, 1, 5, "oritech:reactor_controller[facing=south]")
+    b.b(6, 1, 4, "oritech:reactor_energy_port[facing=west]")
+
+
+@scene("immersive/transformer", h=14)
+def _(b):
+    # the transformer between a low voltage and a medium voltage capacitor
+    b.b(2, 0, 4, "immersiveengineering:capacitor_lv")
+    b.use(4, -1, 4, "up", "immersiveengineering:transformer")
+    b.b(6, 0, 4, "immersiveengineering:capacitor_mv")
+    b.focus(2, 0, 3, 6, 2, 5)
+
+
+@scene("draconic_chaos/crystals")
+def _(b):
+    b.e("draconicevolution:guardian_crystal", 4, 1, 4)
+    b.focus(3, 0, 3, 5, 3, 5)

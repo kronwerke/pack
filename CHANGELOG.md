@@ -538,3 +538,7 @@ Incendium, which ran about a tenth of the tick in the 50 player load test:
 ## 0.24.41
 
 Core 0.39.33 (13.11.2026): a right click on the obelisk with a block in the hand no longer takes it from the client's inventory, the leaderboard wall shows as one dark panel in a brass frame, and no monster spawns within 32 blocks of the arrival place of a side world.
+
+## 0.24.42
+
+- Kronwerke Core 0.39.34 (13.11.2026): who joins or comes over from another server takes no damage and is no target for mobs until their client is through loading, and the leaderboard wall is dark on its sides and back.

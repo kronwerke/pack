@@ -1,38 +1,14 @@
-# 070 immersive/dynamo, windmill, watermill
-#area 66 158 121 185
-fill 66 64 158 95 101 185 minecraft:air
-fill 96 64 158 121 101 185 minecraft:air
-fill 66 60 158 121 62 185 minecraft:stone
-fill 66 63 158 121 63 185 minecraft:light_gray_concrete
-fill 70 64 164 121 89 164 minecraft:light_gray_concrete
-fill 70 64 164 70 89 179 minecraft:light_gray_concrete
-setblock 71 64 178 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "070.1"}','{"text": "immersive"}','{"text": "dynamo"}','{"text": ""}']}}
-setblock 72 64 178 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "dynamo with"}','{"text": "windmill, a"}','{"text": "windmill on a"}','{"text": "tower, three"}']}}
-setblock 73 64 178 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "water wheels on"}','{"text": "one shaft"}','{"text": ""}','{"text": ""}']}}
-fill 86 64 164 86 89 179 minecraft:light_gray_concrete
-fill 78 64 168 78 70 168 immersiveengineering:treated_wood_horizontal
-setblock 78 71 168 immersiveengineering:dynamo[facing=south]
-kw testworld use 78 71 168 south immersiveengineering:windmill
-execute unless block 78 71 169 minecraft:air
-setblock 87 64 178 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "070.2"}','{"text": "immersive"}','{"text": "windmill"}','{"text": ""}']}}
-setblock 88 64 178 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Setz eine"}','{"text": "Windmühle an"}','{"text": "den Dynamo"}','{"text": ""}']}}
-fill 102 64 164 102 89 179 minecraft:light_gray_concrete
-fill 94 64 168 94 70 168 immersiveengineering:treated_wood_horizontal
-setblock 94 71 168 immersiveengineering:dynamo[facing=south]
-kw testworld use 94 71 168 south immersiveengineering:windmill
-execute unless block 94 71 169 minecraft:air
-setblock 103 64 178 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "070.3"}','{"text": "immersive"}','{"text": "watermill"}','{"text": ""}']}}
-setblock 104 64 178 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Bau ein"}','{"text": "Wasserrad"}','{"text": ""}','{"text": ""}']}}
-fill 116 64 164 116 89 179 minecraft:light_gray_concrete
-fill 109 64 167 109 67 167 immersiveengineering:treated_wood_horizontal
-setblock 109 68 167 immersiveengineering:dynamo[facing=south]
-kw testworld use 109 68 167 south immersiveengineering:watermill
-execute unless block 109 68 168 minecraft:air
-setblock 104 63 168 minecraft:water
-setblock 105 63 168 minecraft:air
-setblock 106 63 168 minecraft:air
-setblock 107 63 168 minecraft:air
-setblock 108 63 168 minecraft:air
-setblock 109 63 168 minecraft:air
-setblock 110 63 168 minecraft:air
-setblock 111 63 168 minecraft:air
+# 070 immersive/coke_oven
+#area 11 177 30 202
+fill 11 64 177 30 91 202 minecraft:air
+fill 11 60 177 30 62 202 minecraft:stone
+fill 11 63 177 30 63 202 minecraft:light_gray_concrete
+fill 15 64 183 30 79 183 minecraft:light_gray_concrete
+fill 15 64 183 15 79 196 minecraft:light_gray_concrete
+setblock 16 64 195 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "070"}','{"text": "immersive"}','{"text": "coke_oven"}','{"text": ""}']}}
+setblock 17 64 195 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "formed coke"}','{"text": "oven with GUI,"}','{"text": "the bucket"}','{"text": "slot, a pump"}']}}
+setblock 18 64 195 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "with pipes"}','{"text": ""}','{"text": ""}','{"text": ""}']}}
+fill 25 64 183 25 79 196 minecraft:light_gray_concrete
+place template immersiveengineering:multiblocks/coke_oven 19 64 186 none
+kw testworld use 20 65 188 south immersiveengineering:hammer
+execute unless block 20 65 188 immersiveengineering:cokebrick

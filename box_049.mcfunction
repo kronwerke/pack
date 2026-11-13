@@ -1,20 +1,13 @@
-# 049 botania_runes/plate_base
-#area 154 86 173 111
-fill 154 64 86 173 91 111 minecraft:air
-fill 154 60 86 173 62 111 minecraft:stone
-fill 154 63 86 173 63 111 minecraft:light_gray_concrete
-fill 158 64 92 173 79 92 minecraft:light_gray_concrete
-fill 158 64 92 158 79 105 minecraft:light_gray_concrete
-setblock 159 64 104 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "049"}','{"text": "botania_runes"}','{"text": "plate_base"}','{"text": ""}']}}
-setblock 160 64 104 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "the 3x3 lapis"}','{"text": "and livingrock"}','{"text": "base with plate"}','{"text": "and sparks"}']}}
-fill 168 64 92 168 79 105 minecraft:light_gray_concrete
-setblock 162 64 96 botania:livingrock
-setblock 162 64 97 minecraft:lapis_block
-setblock 162 64 98 botania:livingrock
-setblock 163 64 96 minecraft:lapis_block
-setblock 163 64 97 botania:livingrock
-setblock 163 64 98 minecraft:lapis_block
-setblock 164 64 96 botania:livingrock
-setblock 164 64 97 minecraft:lapis_block
-setblock 164 64 98 botania:livingrock
-setblock 163 65 97 botania:terrestrial_agglomeration_plate
+# 049 botania_runes/mana_pearl
+#area 107 105 126 130
+fill 107 64 105 126 91 130 minecraft:air
+fill 107 60 105 126 62 130 minecraft:stone
+fill 107 63 105 126 63 130 minecraft:light_gray_concrete
+fill 111 64 111 126 79 111 minecraft:light_gray_concrete
+fill 111 64 111 111 79 124 minecraft:light_gray_concrete
+setblock 112 64 123 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "049"}','{"text": "botania_runes"}','{"text": "mana_pearl"}','{"text": ""}']}}
+setblock 113 64 123 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "a pool on a"}','{"text": "brass casing"}','{"text": "with a pearl in"}','{"text": "it"}']}}
+fill 121 64 111 121 79 124 minecraft:light_gray_concrete
+setblock 116 64 116 create:brass_casing
+setblock 116 65 116 botania:mana_pool{mana:1000000}
+summon item 116.5 66 116.5 {Item:{id:"minecraft:ender_pearl",count:1},PickupDelay:32767,Age:-32768,Tags:["kw_shot"]}

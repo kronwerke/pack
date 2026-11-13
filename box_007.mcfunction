@@ -1,16 +1,30 @@
-# 007 create/depot
-#area 31 21 50 46
-fill 31 64 21 50 91 46 minecraft:air
-fill 31 60 21 50 62 46 minecraft:stone
-fill 31 63 21 50 63 46 minecraft:light_gray_concrete
-fill 35 64 27 50 79 27 minecraft:light_gray_concrete
-fill 35 64 27 35 79 40 minecraft:light_gray_concrete
-setblock 36 64 39 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "007"}','{"text": "create"}','{"text": "depot"}','{"text": ""}']}}
-setblock 37 64 39 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "press above a"}','{"text": "depot with one"}','{"text": "block of air"}','{"text": "between"}']}}
-fill 45 64 27 45 79 40 minecraft:light_gray_concrete
-setblock 40 64 32 create:depot
-setblock 40 66 32 create:mechanical_press[facing=south]
-fill 39 64 31 41 67 31 create:andesite_casing
-setblock 40 66 31 create:andesite_encased_shaft[axis=z]
-setblock 40 66 30 create:creative_motor[facing=south]{ScrollValue:32}
-kw testworld use 40 64 32 up minecraft:iron_ingot
+# 007 farms/source_berries
+#area 26 21 47 46
+fill 26 64 21 47 91 46 minecraft:air
+fill 26 60 21 47 62 46 minecraft:stone
+fill 26 63 21 47 63 46 minecraft:light_gray_concrete
+fill 30 64 27 47 79 27 minecraft:light_gray_concrete
+fill 30 64 27 30 79 40 minecraft:light_gray_concrete
+setblock 31 64 39 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "007"}','{"text": "farms"}','{"text": "source_berries"}','{"text": ""}']}}
+setblock 32 64 39 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "sourceberry"}','{"text": "rows with"}','{"text": "agronomic"}','{"text": "sourcelink,"}']}}
+setblock 33 64 39 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "source jar,"}','{"text": "imbuement"}','{"text": "chamber and"}','{"text": "Starbuncle"}']}}
+fill 42 64 27 42 79 40 minecraft:light_gray_concrete
+fill 32 63 30 40 63 34 minecraft:grass_block
+setblock 33 64 31 ars_nouveau:sourceberry_bush[age=3]
+setblock 33 64 33 ars_nouveau:sourceberry_bush[age=3]
+setblock 34 64 31 ars_nouveau:sourceberry_bush[age=3]
+setblock 34 64 33 ars_nouveau:sourceberry_bush[age=3]
+setblock 35 64 31 ars_nouveau:sourceberry_bush[age=3]
+setblock 35 64 33 ars_nouveau:sourceberry_bush[age=3]
+setblock 36 64 31 ars_nouveau:sourceberry_bush[age=3]
+setblock 36 64 33 ars_nouveau:sourceberry_bush[age=3]
+setblock 37 64 31 ars_nouveau:sourceberry_bush[age=3]
+setblock 37 64 33 ars_nouveau:sourceberry_bush[age=3]
+setblock 38 64 31 ars_nouveau:sourceberry_bush[age=3]
+setblock 38 64 33 ars_nouveau:sourceberry_bush[age=3]
+setblock 39 64 31 ars_nouveau:sourceberry_bush[age=3]
+setblock 39 64 33 ars_nouveau:sourceberry_bush[age=3]
+setblock 35 64 32 ars_nouveau:agronomic_sourcelink
+setblock 37 64 32 ars_nouveau:source_jar[fill=8]{source:7000}
+setblock 39 64 32 ars_nouveau:imbuement_chamber[facing=up]
+summon ars_nouveau:starbuncle 33.5 64 32.5 {NoAI:1b,PersistenceRequired:1b,Silent:1b,Tags:["kw_shot"],Rotation:[180f,0f]}

@@ -1,28 +1,22 @@
-# 091 draconic_chaos/reactor
-#area 37 269 58 296
-fill 37 64 269 58 97 296 minecraft:air
-fill 37 60 269 58 62 296 minecraft:stone
-fill 37 63 269 58 63 296 minecraft:light_gray_concrete
-fill 41 64 275 58 85 275 minecraft:light_gray_concrete
-fill 41 64 275 41 85 290 minecraft:light_gray_concrete
-setblock 42 64 289 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "091"}','{"text": "draconic_chaos"}','{"text": "reactor"}','{"text": ""}']}}
-setblock 43 64 289 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Bau den"}','{"text": "Drakonischen"}','{"text": "Reaktor"}','{"text": ""}']}}
-fill 53 64 275 53 85 290 minecraft:light_gray_concrete
-setblock 47 67 281 draconicevolution:reactor_core
-setblock 42 67 281 minecraft:stone
-kw testworld use 42 67 281 east draconicevolution:reactor_stabilizer
-setblock 42 67 281 minecraft:air
-setblock 52 67 281 minecraft:stone
-kw testworld use 52 67 281 west draconicevolution:reactor_stabilizer
-setblock 52 67 281 minecraft:air
-setblock 47 67 276 minecraft:stone
-kw testworld use 47 67 276 south draconicevolution:reactor_stabilizer
-setblock 47 67 276 minecraft:air
-setblock 47 67 286 minecraft:stone
-kw testworld use 47 67 286 north draconicevolution:reactor_stabilizer
-setblock 47 67 286 minecraft:air
-setblock 47 72 281 minecraft:stone
-kw testworld use 47 72 281 down draconicevolution:reactor_injector
-setblock 47 72 281 minecraft:air
-execute if block 43 67 281 draconicevolution:reactor_stabilizer
-execute if block 47 71 281 draconicevolution:reactor_injector
+# 091 undergarden/arrival
+#area 53 269 71 294
+fill 53 64 269 71 91 294 minecraft:air
+fill 53 60 269 71 62 294 minecraft:stone
+fill 53 63 269 71 63 294 minecraft:light_gray_concrete
+fill 57 64 275 71 79 275 minecraft:light_gray_concrete
+fill 57 64 275 57 79 288 minecraft:light_gray_concrete
+setblock 58 64 287 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "091"}','{"text": "undergarden"}','{"text": "arrival"}','{"text": ""}']}}
+setblock 59 64 287 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Steig hinunter"}','{"text": ""}','{"text": ""}','{"text": ""}']}}
+fill 66 64 275 66 79 288 minecraft:light_gray_concrete
+setblock 60 65 280 minecraft:stone_bricks
+setblock 60 66 280 minecraft:stone_bricks
+setblock 60 67 280 minecraft:stone_bricks
+setblock 61 64 280 minecraft:stone_bricks
+setblock 61 68 280 minecraft:stone_bricks
+setblock 62 64 280 minecraft:stone_bricks
+setblock 62 68 280 minecraft:stone_bricks
+setblock 63 65 280 minecraft:stone_bricks
+setblock 63 66 280 minecraft:stone_bricks
+setblock 63 67 280 minecraft:stone_bricks
+fill 61 65 280 62 67 280 undergarden:undergarden_portal[axis=x]
+execute if block 61 66 280 undergarden:undergarden_portal

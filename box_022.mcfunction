@@ -1,89 +1,21 @@
-# 022 mekanism_advanced/evap
-#area 92 44 111 69
-fill 92 64 44 111 95 69 minecraft:air
-fill 92 60 44 111 62 69 minecraft:stone
-fill 92 63 44 111 63 69 minecraft:light_gray_concrete
-fill 96 64 50 111 83 50 minecraft:light_gray_concrete
-fill 96 64 50 96 83 63 minecraft:light_gray_concrete
-setblock 97 64 62 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "022"}','{"text": "mekanism_advanced"}','{"text": "evap"}','{"text": ""}']}}
-setblock 98 64 62 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "thermal"}','{"text": "evaporation"}','{"text": "tower"}','{"text": ""}']}}
-fill 106 64 50 106 83 63 minecraft:light_gray_concrete
-setblock 100 64 53 mekanism:thermal_evaporation_block
-setblock 100 64 54 mekanism:thermal_evaporation_block
-setblock 100 64 55 mekanism:thermal_evaporation_block
-setblock 100 64 56 mekanism:thermal_evaporation_block
-setblock 101 64 53 mekanism:thermal_evaporation_block
-setblock 101 64 54 mekanism:thermal_evaporation_block
-setblock 101 64 55 mekanism:thermal_evaporation_block
-setblock 101 64 56 mekanism:thermal_evaporation_block
-setblock 102 64 53 mekanism:thermal_evaporation_block
-setblock 102 64 54 mekanism:thermal_evaporation_block
-setblock 102 64 55 mekanism:thermal_evaporation_block
-setblock 102 64 56 mekanism:thermal_evaporation_block
-setblock 103 64 53 mekanism:thermal_evaporation_block
-setblock 103 64 54 mekanism:thermal_evaporation_block
-setblock 103 64 55 mekanism:thermal_evaporation_block
-setblock 103 64 56 mekanism:thermal_evaporation_block
-setblock 100 65 53 mekanism:thermal_evaporation_block
-setblock 100 65 54 mekanism:thermal_evaporation_block
-setblock 100 65 55 mekanism:thermal_evaporation_block
-setblock 100 65 56 mekanism:thermal_evaporation_block
-setblock 101 65 53 mekanism:thermal_evaporation_block
-setblock 101 65 56 mekanism:thermal_evaporation_block
-setblock 102 65 53 mekanism:thermal_evaporation_block
-setblock 102 65 56 mekanism:thermal_evaporation_block
-setblock 103 65 53 mekanism:thermal_evaporation_block
-setblock 103 65 54 mekanism:thermal_evaporation_block
-setblock 103 65 55 mekanism:thermal_evaporation_block
-setblock 103 65 56 mekanism:thermal_evaporation_block
-setblock 100 66 53 mekanism:thermal_evaporation_block
-setblock 100 66 54 mekanism:thermal_evaporation_block
-setblock 100 66 55 mekanism:thermal_evaporation_block
-setblock 100 66 56 mekanism:thermal_evaporation_block
-setblock 101 66 53 mekanism:thermal_evaporation_block
-setblock 101 66 56 mekanism:thermal_evaporation_block
-setblock 102 66 53 mekanism:thermal_evaporation_block
-setblock 102 66 56 mekanism:thermal_evaporation_block
-setblock 103 66 53 mekanism:thermal_evaporation_block
-setblock 103 66 54 mekanism:thermal_evaporation_block
-setblock 103 66 55 mekanism:thermal_evaporation_block
-setblock 103 66 56 mekanism:thermal_evaporation_block
-setblock 100 67 53 mekanism:thermal_evaporation_block
-setblock 100 67 54 mekanism:thermal_evaporation_block
-setblock 100 67 55 mekanism:thermal_evaporation_block
-setblock 100 67 56 mekanism:thermal_evaporation_block
-setblock 101 67 53 mekanism:thermal_evaporation_block
-setblock 101 67 56 mekanism:thermal_evaporation_block
-setblock 102 67 53 mekanism:thermal_evaporation_block
-setblock 102 67 56 mekanism:thermal_evaporation_block
-setblock 103 67 53 mekanism:thermal_evaporation_block
-setblock 103 67 54 mekanism:thermal_evaporation_block
-setblock 103 67 55 mekanism:thermal_evaporation_block
-setblock 103 67 56 mekanism:thermal_evaporation_block
-setblock 100 68 53 mekanism:thermal_evaporation_block
-setblock 100 68 54 mekanism:thermal_evaporation_block
-setblock 100 68 55 mekanism:thermal_evaporation_block
-setblock 100 68 56 mekanism:thermal_evaporation_block
-setblock 101 68 53 mekanism:thermal_evaporation_block
-setblock 101 68 56 mekanism:thermal_evaporation_block
-setblock 102 68 53 mekanism:thermal_evaporation_block
-setblock 102 68 56 mekanism:thermal_evaporation_block
-setblock 103 68 53 mekanism:thermal_evaporation_block
-setblock 103 68 54 mekanism:thermal_evaporation_block
-setblock 103 68 55 mekanism:thermal_evaporation_block
-setblock 103 68 56 mekanism:thermal_evaporation_block
-setblock 100 69 53 mekanism:thermal_evaporation_block
-setblock 100 69 54 mekanism:thermal_evaporation_block
-setblock 100 69 55 mekanism:thermal_evaporation_block
-setblock 100 69 56 mekanism:thermal_evaporation_block
-setblock 101 69 53 mekanism:thermal_evaporation_block
-setblock 101 69 56 mekanism:thermal_evaporation_block
-setblock 102 69 53 mekanism:thermal_evaporation_block
-setblock 102 69 56 mekanism:thermal_evaporation_block
-setblock 103 69 53 mekanism:thermal_evaporation_block
-setblock 103 69 54 mekanism:thermal_evaporation_block
-setblock 103 69 55 mekanism:thermal_evaporation_block
-setblock 103 69 56 mekanism:thermal_evaporation_block
-setblock 101 66 56 mekanism:thermal_evaporation_controller[facing=south,active=false]
-setblock 102 65 56 mekanism:thermal_evaporation_valve
-setblock 103 65 55 mekanism:thermal_evaporation_valve
+# 022 mekanism_ores/shards
+#area 43 63 63 88
+fill 43 64 63 63 91 88 minecraft:air
+fill 43 60 63 63 62 88 minecraft:stone
+fill 43 63 63 63 63 88 minecraft:light_gray_concrete
+fill 47 64 69 63 79 69 minecraft:light_gray_concrete
+fill 47 64 69 47 79 82 minecraft:light_gray_concrete
+setblock 48 64 81 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "022"}','{"text": "mekanism_ores"}','{"text": "shards"}','{"text": ""}']}}
+setblock 49 64 81 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "the 4x line"}','{"text": "with injection"}','{"text": "chamber, two"}','{"text": "separators and"}']}}
+setblock 50 64 81 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "chemical"}','{"text": "infuser"}','{"text": ""}','{"text": ""}']}}
+fill 58 64 69 58 79 82 minecraft:light_gray_concrete
+setblock 49 64 75 minecraft:chest[facing=south]{Items:[]}
+setblock 50 64 75 mekanism:chemical_injection_chamber[facing=south]
+setblock 51 64 75 mekanism:purification_chamber[facing=south]
+setblock 52 64 75 mekanism:crusher[facing=south]
+setblock 53 64 75 mekanism:enrichment_chamber[facing=south]
+setblock 54 64 75 mekanism:energized_smelter[facing=south]
+setblock 55 64 75 minecraft:chest[facing=south]{Items:[]}
+setblock 49 64 74 mekanism:electrolytic_separator[facing=south]
+setblock 50 64 74 mekanism:chemical_infuser[facing=south]
+setblock 51 64 74 mekanism:electrolytic_separator[facing=south]

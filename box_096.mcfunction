@@ -1,37 +1,25 @@
-# 096 malum/altar, obelisk
-#area 56 290 87 315
-fill 56 64 290 87 91 315 minecraft:air
-fill 56 60 290 87 62 315 minecraft:stone
-fill 56 63 290 87 63 315 minecraft:light_gray_concrete
-fill 60 64 296 87 79 296 minecraft:light_gray_concrete
-fill 60 64 296 60 79 309 minecraft:light_gray_concrete
-setblock 61 64 308 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "096.1"}','{"text": "malum"}','{"text": "altar"}','{"text": ""}']}}
-setblock 62 64 308 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Bau einen"}','{"text": "Spirit Altar"}','{"text": ""}','{"text": ""}']}}
-fill 70 64 296 70 79 309 minecraft:light_gray_concrete
-setblock 65 64 301 malum:spirit_altar
-kw testworld use 65 64 301 south malum:runewood_planks
-setblock 63 64 301 malum:runewood_planks
-setblock 63 65 301 malum:runewood_item_stand[facing=up,waterlogged=false]
-kw testworld use 63 65 301 south malum:hallowed_gold_ingot
-setblock 67 64 301 malum:runewood_planks
-setblock 67 65 301 malum:runewood_item_stand[facing=up,waterlogged=false]
-kw testworld use 67 65 301 south malum:hallowed_gold_ingot
-setblock 71 64 308 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "096.2"}','{"text": "malum"}','{"text": "obelisk"}','{"text": ""}']}}
-setblock 72 64 308 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Stell"}','{"text": "Runewood-Obelisken"}','{"text": "auf"}','{"text": ""}']}}
-fill 82 64 296 82 79 309 minecraft:light_gray_concrete
-setblock 76 64 301 malum:spirit_altar
-kw testworld use 76 64 301 south malum:runewood_planks
-setblock 74 64 301 malum:runewood_planks
-setblock 74 65 301 malum:runewood_item_stand[facing=up,waterlogged=false]
-kw testworld use 74 65 301 south malum:hallowed_gold_ingot
-setblock 78 64 301 malum:runewood_planks
-setblock 78 65 301 malum:runewood_item_stand[facing=up,waterlogged=false]
-kw testworld use 78 65 301 south malum:hallowed_gold_ingot
-kw testworld use 73 63 299 up malum:runewood_obelisk
-execute unless block 73 64 299 minecraft:air
-kw testworld use 79 63 299 up malum:runewood_obelisk
-execute unless block 79 64 299 minecraft:air
-kw testworld use 73 63 303 up malum:runewood_obelisk
-execute unless block 73 64 303 minecraft:air
-kw testworld use 79 63 303 up malum:runewood_obelisk
-execute unless block 79 64 303 minecraft:air
+# 096 finale/tech
+#area 69 288 90 315
+fill 69 64 288 90 91 315 minecraft:air
+fill 69 60 288 90 62 315 minecraft:stone
+fill 69 63 288 90 63 315 minecraft:light_gray_concrete
+fill 73 64 294 90 79 294 minecraft:light_gray_concrete
+fill 73 64 294 73 79 309 minecraft:light_gray_concrete
+setblock 74 64 308 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "096"}','{"text": "finale"}','{"text": "tech"}','{"text": ""}']}}
+setblock 75 64 308 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Fusioniere"}','{"text": "Erwachtes"}','{"text": "Draconium"}','{"text": ""}']}}
+fill 85 64 294 85 79 309 minecraft:light_gray_concrete
+setblock 79 64 300 draconicevolution:crafting_core
+setblock 76 64 299 draconicevolution:wyvern_crafting_injector[facing=east]
+kw testworld use 76 64 299 up draconicevolution:draconium_core
+setblock 76 64 301 draconicevolution:wyvern_crafting_injector[facing=east]
+kw testworld use 76 64 301 up draconicevolution:draconium_core
+setblock 82 64 299 draconicevolution:wyvern_crafting_injector[facing=west]
+kw testworld use 82 64 299 up draconicevolution:draconium_core
+setblock 82 64 301 draconicevolution:wyvern_crafting_injector[facing=west]
+kw testworld use 82 64 301 up draconicevolution:draconium_core
+setblock 78 64 297 draconicevolution:wyvern_crafting_injector[facing=south]
+kw testworld use 78 64 297 up botania:gaia_ingot
+setblock 80 64 297 draconicevolution:wyvern_crafting_injector[facing=south]
+kw testworld use 80 64 297 up botania:gaia_ingot
+setblock 79 64 303 draconicevolution:wyvern_crafting_injector[facing=north]
+kw testworld use 79 64 303 up draconicevolution:dragon_heart

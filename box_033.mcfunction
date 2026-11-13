@@ -1,20 +1,14 @@
-# 033 ars_nouveau/apparatus
-#area 43 67 62 92
-fill 43 64 67 62 91 92 minecraft:air
-fill 43 60 67 62 62 92 minecraft:stone
-fill 43 63 67 62 63 92 minecraft:light_gray_concrete
-fill 47 64 73 62 79 73 minecraft:light_gray_concrete
-fill 47 64 73 47 79 86 minecraft:light_gray_concrete
-setblock 48 64 85 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "033"}','{"text": "ars_nouveau"}','{"text": "apparatus"}','{"text": ""}']}}
-setblock 49 64 85 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "core, apparatus"}','{"text": "and pedestals"}','{"text": "in range"}','{"text": ""}']}}
-fill 57 64 73 57 79 86 minecraft:light_gray_concrete
-setblock 52 64 78 ars_nouveau:arcane_core[facing=up]
-setblock 52 65 78 ars_nouveau:enchanting_apparatus[facing=up]
-setblock 50 64 76 ars_nouveau:arcane_pedestal[facing=up]
-setblock 52 64 75 ars_nouveau:arcane_pedestal[facing=up]
-setblock 54 64 76 ars_nouveau:arcane_pedestal[facing=up]
-setblock 49 64 78 ars_nouveau:arcane_pedestal[facing=up]
-setblock 55 64 78 ars_nouveau:arcane_pedestal[facing=up]
-setblock 50 64 80 ars_nouveau:arcane_pedestal[facing=up]
-setblock 54 64 80 ars_nouveau:arcane_pedestal[facing=up]
-setblock 55 64 75 ars_nouveau:source_jar[fill=11]{source:10000}
+# 033 ars_nouveau/imbuement
+#area -4 86 15 111
+fill -4 64 86 15 91 111 minecraft:air
+fill -4 60 86 15 62 111 minecraft:stone
+fill -4 63 86 15 63 111 minecraft:light_gray_concrete
+fill 0 64 92 15 79 92 minecraft:light_gray_concrete
+fill 0 64 92 0 79 105 minecraft:light_gray_concrete
+setblock 1 64 104 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "033"}','{"text": "ars_nouveau"}','{"text": "imbuement"}','{"text": ""}']}}
+setblock 2 64 104 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "the chamber"}','{"text": "with an"}','{"text": "amethyst shard,"}','{"text": "then with a"}']}}
+setblock 3 64 104 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "finished gem"}','{"text": ""}','{"text": ""}','{"text": ""}']}}
+fill 10 64 92 10 79 105 minecraft:light_gray_concrete
+setblock 5 64 97 ars_nouveau:imbuement_chamber[facing=up]
+kw testworld use 5 64 97 south minecraft:amethyst_shard
+setblock 7 64 97 ars_nouveau:source_jar[fill=11]{source:10000}

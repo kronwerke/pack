@@ -1,29 +1,14 @@
-# 064 hexerei/herbs
-#area 187 123 206 148
-fill 187 64 123 206 91 148 minecraft:air
-fill 187 60 123 206 62 148 minecraft:stone
-fill 187 63 123 206 63 148 minecraft:light_gray_concrete
-fill 191 64 129 206 79 129 minecraft:light_gray_concrete
-fill 191 64 129 191 79 142 minecraft:light_gray_concrete
-setblock 192 64 141 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "064"}','{"text": "hexerei"}','{"text": "herbs"}','{"text": ""}']}}
-setblock 193 64 141 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "herb garden"}','{"text": "with all four"}','{"text": "plants grown"}','{"text": ""}']}}
-fill 201 64 129 201 79 142 minecraft:light_gray_concrete
-fill 194 63 133 198 63 135 minecraft:grass_block
-setblock 194 64 133 hexerei:mandrake_plant[age=3]
-setblock 195 64 133 hexerei:belladonna_plant[age=3]
-setblock 197 64 133 hexerei:mugwort_bush[half=lower,age=3]
-setblock 197 65 133 hexerei:mugwort_bush[half=upper,age=3]
-setblock 198 64 133 hexerei:yellow_dock_bush[half=lower,age=3]
-setblock 198 65 133 hexerei:yellow_dock_bush[half=upper,age=3]
-setblock 194 64 134 hexerei:mandrake_plant[age=3]
-setblock 195 64 134 hexerei:belladonna_plant[age=3]
-setblock 197 64 134 hexerei:mugwort_bush[half=lower,age=3]
-setblock 197 65 134 hexerei:mugwort_bush[half=upper,age=3]
-setblock 198 64 134 hexerei:yellow_dock_bush[half=lower,age=3]
-setblock 198 65 134 hexerei:yellow_dock_bush[half=upper,age=3]
-setblock 194 64 135 hexerei:mandrake_plant[age=3]
-setblock 195 64 135 hexerei:belladonna_plant[age=3]
-setblock 197 64 135 hexerei:mugwort_bush[half=lower,age=3]
-setblock 197 65 135 hexerei:mugwort_bush[half=upper,age=3]
-setblock 198 64 135 hexerei:yellow_dock_bush[half=lower,age=3]
-setblock 198 65 135 hexerei:yellow_dock_bush[half=upper,age=3]
+# 064 occultism_afrit/mineshaft
+#area 122 142 141 167
+fill 122 64 142 141 91 167 minecraft:air
+fill 122 60 142 141 62 167 minecraft:stone
+fill 122 63 142 141 63 167 minecraft:light_gray_concrete
+fill 126 64 148 141 79 148 minecraft:light_gray_concrete
+fill 126 64 148 126 79 161 minecraft:light_gray_concrete
+setblock 127 64 160 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "064"}','{"text": "occultism_afrit"}','{"text": "mineshaft"}','{"text": ""}']}}
+setblock 128 64 160 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "dimensional"}','{"text": "mineshaft with"}','{"text": "a lamp inside"}','{"text": "and a hopper"}']}}
+setblock 129 64 160 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "below"}','{"text": ""}','{"text": ""}','{"text": ""}']}}
+fill 136 64 148 136 79 161 minecraft:light_gray_concrete
+setblock 131 64 153 minecraft:hopper[facing=east]
+setblock 131 65 153 occultism:dimensional_mineshaft[rotation=0]
+setblock 132 64 153 minecraft:chest[facing=south]{Items:[]}

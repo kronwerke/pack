@@ -1,11 +1,17 @@
-# 038 ars_epic/el_armor
-#area 126 67 145 92
-fill 126 64 67 145 91 92 minecraft:air
-fill 126 60 67 145 62 92 minecraft:stone
-fill 126 63 67 145 63 92 minecraft:light_gray_concrete
-fill 130 64 73 145 79 73 minecraft:light_gray_concrete
-fill 130 64 73 130 79 86 minecraft:light_gray_concrete
-setblock 131 64 85 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "038"}','{"text": "ars_epic"}','{"text": "el_armor"}','{"text": ""}']}}
-setblock 132 64 85 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "a full"}','{"text": "elemental robe"}','{"text": "set"}','{"text": ""}']}}
-fill 140 64 73 140 79 86 minecraft:light_gray_concrete
-summon armor_stand 135.5 64 78.5 {ArmorItems:[{id:"ars_elemental:fire_boots",count:1},{id:"ars_elemental:fire_leggings",count:1},{id:"ars_elemental:fire_robes",count:1},{id:"ars_elemental:fire_hat",count:1}],ShowArms:1b,NoBasePlate:1b,Tags:["kw_shot"],Rotation:[180f,0f]}
+# 038 ars_nouveau/drygmy
+#area 73 86 92 111
+fill 73 64 86 92 91 111 minecraft:air
+fill 73 60 86 92 62 111 minecraft:stone
+fill 73 63 86 92 63 111 minecraft:light_gray_concrete
+fill 77 64 92 92 79 92 minecraft:light_gray_concrete
+fill 77 64 92 77 79 105 minecraft:light_gray_concrete
+setblock 78 64 104 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "038"}','{"text": "ars_nouveau"}','{"text": "drygmy"}','{"text": ""}']}}
+setblock 79 64 104 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Drygmy henge"}','{"text": "with chest and"}','{"text": "jar"}','{"text": ""}']}}
+fill 87 64 92 87 79 105 minecraft:light_gray_concrete
+setblock 82 64 97 minecraft:mossy_cobblestone
+kw testworld use 82 64 97 up ars_nouveau:drygmy_charm
+execute unless block 82 64 97 minecraft:mossy_cobblestone
+setblock 83 64 97 minecraft:chest[facing=south]{Items:[]}
+setblock 81 64 97 ars_nouveau:source_jar[fill=11]{source:10000}
+summon minecraft:cow 84.5 64 99.5 {NoAI:1b,PersistenceRequired:1b,Silent:1b,Tags:["kw_shot"],Rotation:[180f,0f]}
+summon minecraft:sheep 80.5 64 99.5 {NoAI:1b,PersistenceRequired:1b,Silent:1b,Tags:["kw_shot"],Rotation:[180f,0f]}

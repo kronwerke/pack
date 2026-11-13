@@ -1,25 +1,16 @@
-# 010 create/washing
-#area 76 21 95 46
-fill 76 64 21 95 91 46 minecraft:air
-fill 76 60 21 95 62 46 minecraft:stone
-fill 76 63 21 95 63 46 minecraft:light_gray_concrete
-fill 80 64 27 95 79 27 minecraft:light_gray_concrete
-fill 80 64 27 80 79 40 minecraft:light_gray_concrete
-setblock 81 64 39 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "010"}','{"text": "create"}','{"text": "washing"}','{"text": ""}']}}
-setblock 82 64 39 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "fan blowing"}','{"text": "through water"}','{"text": "over a belt of"}','{"text": "gravel"}']}}
-fill 90 64 27 90 79 40 minecraft:light_gray_concrete
-setblock 84 64 30 create:shaft[axis=x]
-setblock 84 64 34 create:shaft[axis=x]
-kw testworld use 84 64 30 up create:belt_connector
-kw testworld use 84 64 34 up create:belt_connector
-execute unless block 84 64 32 minecraft:air
-setblock 85 64 31 minecraft:glass
-setblock 85 64 33 minecraft:glass
-setblock 85 64 32 minecraft:water
-setblock 86 64 32 create:encased_fan[facing=west]
-setblock 87 64 32 create:creative_motor[facing=west]{ScrollValue:64}
-setblock 88 64 32 create:andesite_casing
-setblock 87 64 33 create:andesite_casing
-setblock 87 64 31 create:andesite_casing
-setblock 87 65 32 create:andesite_casing
-summon item 84.5 65 32.5 {Item:{id:"minecraft:gravel",count:8},PickupDelay:32767,Age:-32768,Tags:["kw_shot"]}
+# 010 create/depot
+#area 31 40 50 65
+fill 31 64 40 50 91 65 minecraft:air
+fill 31 60 40 50 62 65 minecraft:stone
+fill 31 63 40 50 63 65 minecraft:light_gray_concrete
+fill 35 64 46 50 79 46 minecraft:light_gray_concrete
+fill 35 64 46 35 79 59 minecraft:light_gray_concrete
+setblock 36 64 58 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "010"}','{"text": "create"}','{"text": "depot"}','{"text": ""}']}}
+setblock 37 64 58 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "press above a"}','{"text": "depot with one"}','{"text": "block of air"}','{"text": "between"}']}}
+fill 45 64 46 45 79 59 minecraft:light_gray_concrete
+setblock 40 64 51 create:depot
+setblock 40 66 51 create:mechanical_press[facing=south]
+fill 39 64 50 41 67 50 create:andesite_casing
+setblock 40 66 50 create:andesite_encased_shaft[axis=z]
+setblock 40 66 49 create:creative_motor[facing=south]{ScrollValue:32}
+kw testworld use 40 64 51 up minecraft:iron_ingot

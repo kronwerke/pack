@@ -1,24 +1,19 @@
-# 018 mekanism_ores/tripling
-#area 27 44 47 69
-fill 27 64 44 47 91 69 minecraft:air
-fill 27 60 44 47 62 69 minecraft:stone
-fill 27 63 44 47 63 69 minecraft:light_gray_concrete
-fill 31 64 50 47 79 50 minecraft:light_gray_concrete
-fill 31 64 50 31 79 63 minecraft:light_gray_concrete
-setblock 32 64 62 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "018"}','{"text": "mekanism_ores"}','{"text": "tripling"}','{"text": ""}']}}
-setblock 33 64 62 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "purification"}','{"text": "chamber,"}','{"text": "crusher,"}','{"text": "enrichment"}']}}
-setblock 34 64 62 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "chamber,"}','{"text": "smelter with"}','{"text": "separator and"}','{"text": "pump"}']}}
-fill 42 64 50 42 79 63 minecraft:light_gray_concrete
-setblock 33 64 56 minecraft:chest[facing=south]{Items:[]}
-setblock 34 64 56 mekanism:purification_chamber[facing=south,active=false]
-setblock 35 64 56 mekanism:crusher[facing=south,active=false]
-setblock 36 64 56 mekanism:enrichment_chamber[facing=south,active=false]
-setblock 37 64 56 mekanism:energized_smelter[facing=south,active=false]
-setblock 38 64 56 minecraft:chest[facing=south]{Items:[]}
-setblock 34 64 55 mekanism:basic_pressurized_tube
-setblock 34 64 54 mekanism:electrolytic_separator[facing=south]
-setblock 35 64 54 mekanism:basic_mechanical_pipe
-setblock 36 63 54 minecraft:water
-setblock 36 64 54 mekanism:electric_pump[facing=south]
-fill 35 64 55 37 64 55 mekanism:basic_universal_cable
-setblock 38 64 55 mekanism:basic_energy_cube[facing=south]
+# 018 create_brass/crushing_wheel
+#area 151 40 172 65
+fill 151 64 40 172 91 65 minecraft:air
+fill 151 60 40 172 62 65 minecraft:stone
+fill 151 63 40 172 63 65 minecraft:light_gray_concrete
+fill 155 64 46 172 79 46 minecraft:light_gray_concrete
+fill 155 64 46 155 79 59 minecraft:light_gray_concrete
+setblock 156 64 58 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "018"}','{"text": "create_brass"}','{"text": "crushing_wheel"}','{"text": ""}']}}
+setblock 157 64 58 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "a pair of"}','{"text": "crushing"}','{"text": "wheels, goggles"}','{"text": "showing the"}']}}
+setblock 158 64 58 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "stress"}','{"text": ""}','{"text": ""}','{"text": ""}']}}
+fill 167 64 46 167 79 59 minecraft:light_gray_concrete
+setblock 160 65 51 create:crushing_wheel[axis=z]
+setblock 162 65 51 create:crushing_wheel[axis=z]
+fill 159 64 50 163 66 50 create:andesite_casing
+setblock 160 65 50 create:andesite_encased_shaft[axis=z]
+setblock 160 65 49 create:creative_motor[facing=south]{ScrollValue:32}
+setblock 162 65 50 create:andesite_encased_shaft[axis=z]
+setblock 162 65 49 create:creative_motor[facing=south]{ScrollValue:-32}
+summon item 161.5 67 51.5 {Item:{id:"minecraft:raw_iron",count:8},PickupDelay:32767,Age:-32768,Tags:["kw_shot"]}

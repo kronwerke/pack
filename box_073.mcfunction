@@ -1,31 +1,38 @@
-# 073 immersive/list_mb
-#area 191 158 219 186
-fill 191 64 158 219 95 186 minecraft:air
-fill 191 60 158 219 62 186 minecraft:stone
-fill 191 63 158 219 63 186 minecraft:light_gray_concrete
-fill 195 64 164 219 83 164 minecraft:light_gray_concrete
-fill 195 64 164 195 83 180 minecraft:light_gray_concrete
-setblock 196 64 179 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "073"}','{"text": "immersive"}','{"text": "list_mb"}','{"text": ""}']}}
-setblock 197 64 179 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "all seven stage"}','{"text": "2 structures"}','{"text": "side by side"}','{"text": ""}']}}
-fill 214 64 164 214 83 180 minecraft:light_gray_concrete
-place template immersiveengineering:multiblocks/sheetmetal_tank 197 64 166 none
-kw testworld use 198 65 168 south immersiveengineering:hammer
-execute unless block 198 65 168 immersiveengineering:sheetmetal_iron
-place template immersiveengineering:multiblocks/silo 201 64 166 none
-kw testworld use 202 65 168 south immersiveengineering:hammer
-execute unless block 202 65 168 immersiveengineering:sheetmetal_iron
-place template immersiveengineering:multiblocks/improved_blast_furnace 205 64 166 none
-kw testworld use 206 65 168 south immersiveengineering:hammer
-execute unless block 206 65 168 immersiveengineering:blastbrick_reinforced
-place template immersiveengineering:multiblocks/shelf 209 64 166 none
-kw testworld use 210 65 167 south immersiveengineering:hammer
-execute unless block 210 65 167 immersiveengineering:steel_catwalk
-place template immersiveengineering:multiblocks/coke_oven 199 64 172 none
-kw testworld use 200 65 174 south immersiveengineering:hammer
-execute unless block 200 65 174 immersiveengineering:cokebrick
-place template immersiveengineering:multiblocks/blast_furnace 204 64 172 none
-kw testworld use 205 65 174 south immersiveengineering:hammer
-execute unless block 205 65 174 immersiveengineering:blastbrick
-place template immersiveengineering:multiblocks/alloy_smelter 209 64 172 none
-kw testworld use 210 65 173 south immersiveengineering:hammer
-execute unless block 210 65 173 immersiveengineering:alloybrick
+# 073 immersive/dynamo, windmill, watermill
+#area 66 177 121 204
+fill 66 64 177 95 101 204 minecraft:air
+fill 96 64 177 121 101 204 minecraft:air
+fill 66 60 177 121 62 204 minecraft:stone
+fill 66 63 177 121 63 204 minecraft:light_gray_concrete
+fill 70 64 183 121 89 183 minecraft:light_gray_concrete
+fill 70 64 183 70 89 198 minecraft:light_gray_concrete
+setblock 71 64 197 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "073.1"}','{"text": "immersive"}','{"text": "dynamo"}','{"text": ""}']}}
+setblock 72 64 197 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "dynamo with"}','{"text": "windmill, a"}','{"text": "windmill on a"}','{"text": "tower, three"}']}}
+setblock 73 64 197 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "water wheels on"}','{"text": "one shaft"}','{"text": ""}','{"text": ""}']}}
+fill 86 64 183 86 89 198 minecraft:light_gray_concrete
+fill 78 64 187 78 70 187 immersiveengineering:treated_wood_horizontal
+setblock 78 71 187 immersiveengineering:dynamo[facing=south]
+kw testworld use 78 71 187 south immersiveengineering:windmill
+execute unless block 78 71 188 minecraft:air
+setblock 87 64 197 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "073.2"}','{"text": "immersive"}','{"text": "windmill"}','{"text": ""}']}}
+setblock 88 64 197 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Setz eine"}','{"text": "Windmühle an"}','{"text": "den Dynamo"}','{"text": ""}']}}
+fill 102 64 183 102 89 198 minecraft:light_gray_concrete
+fill 94 64 187 94 70 187 immersiveengineering:treated_wood_horizontal
+setblock 94 71 187 immersiveengineering:dynamo[facing=south]
+kw testworld use 94 71 187 south immersiveengineering:windmill
+execute unless block 94 71 188 minecraft:air
+setblock 103 64 197 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "073.3"}','{"text": "immersive"}','{"text": "watermill"}','{"text": ""}']}}
+setblock 104 64 197 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Bau ein"}','{"text": "Wasserrad"}','{"text": ""}','{"text": ""}']}}
+fill 116 64 183 116 89 198 minecraft:light_gray_concrete
+fill 109 64 186 109 67 186 immersiveengineering:treated_wood_horizontal
+setblock 109 68 186 immersiveengineering:dynamo[facing=south]
+kw testworld use 109 68 186 south immersiveengineering:watermill
+execute unless block 109 68 187 minecraft:air
+setblock 104 63 187 minecraft:water
+setblock 105 63 187 minecraft:air
+setblock 106 63 187 minecraft:air
+setblock 107 63 187 minecraft:air
+setblock 108 63 187 minecraft:air
+setblock 109 63 187 minecraft:air
+setblock 110 63 187 minecraft:air
+setblock 111 63 187 minecraft:air

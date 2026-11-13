@@ -1,22 +1,14 @@
-# 084 nether/welcome
-#area -4 250 14 275
-fill -4 64 250 14 91 275 minecraft:air
-fill -4 60 250 14 62 275 minecraft:stone
-fill -4 63 250 14 63 275 minecraft:light_gray_concrete
-fill 0 64 256 14 79 256 minecraft:light_gray_concrete
-fill 0 64 256 0 79 269 minecraft:light_gray_concrete
-setblock 1 64 268 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "084"}','{"text": "nether"}','{"text": "welcome"}','{"text": ""}']}}
-setblock 2 64 268 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Betritt den"}','{"text": "Nether"}','{"text": ""}','{"text": ""}']}}
-fill 9 64 256 9 79 269 minecraft:light_gray_concrete
-setblock 3 65 261 minecraft:obsidian
-setblock 3 66 261 minecraft:obsidian
-setblock 3 67 261 minecraft:obsidian
-setblock 4 64 261 minecraft:obsidian
-setblock 4 68 261 minecraft:obsidian
-setblock 5 64 261 minecraft:obsidian
-setblock 5 68 261 minecraft:obsidian
-setblock 6 65 261 minecraft:obsidian
-setblock 6 66 261 minecraft:obsidian
-setblock 6 67 261 minecraft:obsidian
-fill 4 65 261 5 67 261 minecraft:nether_portal[axis=x]
-execute if block 4 66 261 minecraft:nether_portal
+# 084 flux_networks/dust
+#area 32 250 51 275
+fill 32 64 250 51 91 275 minecraft:air
+fill 32 60 250 51 62 275 minecraft:stone
+fill 32 63 250 51 63 275 minecraft:light_gray_concrete
+fill 36 64 256 51 79 256 minecraft:light_gray_concrete
+fill 36 64 256 36 79 269 minecraft:light_gray_concrete
+setblock 37 64 268 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "084"}','{"text": "flux_networks"}','{"text": "dust"}','{"text": ""}']}}
+setblock 38 64 268 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "the bedrock gap"}','{"text": "with redstone"}','{"text": "and obsidian,"}','{"text": "left-clicking"}']}}
+setblock 39 64 268 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "the obsidian"}','{"text": ""}','{"text": ""}','{"text": ""}']}}
+fill 46 64 256 46 79 269 minecraft:light_gray_concrete
+setblock 41 64 261 minecraft:bedrock
+summon item 41.5 65.1 261.5 {Item:{id:"minecraft:redstone",count:64},PickupDelay:32767,Age:-32768,Tags:["kw_shot"]}
+setblock 41 66 261 minecraft:obsidian

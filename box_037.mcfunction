@@ -1,13 +1,19 @@
-# 037 ars_apprentice/brazier
-#area 111 67 130 92
-fill 111 64 67 130 91 92 minecraft:air
-fill 111 60 67 130 62 92 minecraft:stone
-fill 111 63 67 130 63 92 minecraft:light_gray_concrete
-fill 115 64 73 130 79 73 minecraft:light_gray_concrete
-fill 115 64 73 115 79 86 minecraft:light_gray_concrete
-setblock 116 64 85 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "037"}','{"text": "ars_apprentice"}','{"text": "brazier"}','{"text": ""}']}}
-setblock 117 64 85 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "a tablet on the"}','{"text": "lit brazier"}','{"text": ""}','{"text": ""}']}}
-fill 125 64 73 125 79 86 minecraft:light_gray_concrete
-setblock 120 64 78 ars_nouveau:ritual_brazier
-kw testworld use 120 64 78 up ars_nouveau:ritual_flight
-setblock 122 64 78 ars_nouveau:source_jar[fill=11]{source:10000}
+# 037 ars_nouveau/earth_essence
+#area 58 86 77 111
+fill 58 64 86 77 91 111 minecraft:air
+fill 58 60 86 77 62 111 minecraft:stone
+fill 58 63 86 77 63 111 minecraft:light_gray_concrete
+fill 62 64 92 77 79 92 minecraft:light_gray_concrete
+fill 62 64 92 62 79 105 minecraft:light_gray_concrete
+setblock 63 64 104 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "037"}','{"text": "ars_nouveau"}','{"text": "earth_essence"}','{"text": ""}']}}
+setblock 64 64 104 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "chamber with"}','{"text": "three pedestals"}','{"text": "next to it"}','{"text": ""}']}}
+fill 72 64 92 72 79 105 minecraft:light_gray_concrete
+setblock 67 64 97 ars_nouveau:imbuement_chamber[facing=up]
+setblock 66 64 97 ars_nouveau:arcane_pedestal[facing=up]
+kw testworld use 66 64 97 south minecraft:iron_ingot
+setblock 68 64 97 ars_nouveau:arcane_pedestal[facing=up]
+kw testworld use 68 64 97 south minecraft:wheat_seeds
+setblock 67 64 96 ars_nouveau:arcane_pedestal[facing=up]
+kw testworld use 67 64 96 south minecraft:dirt
+kw testworld use 67 64 97 south ars_nouveau:source_gem
+setblock 69 64 96 ars_nouveau:source_jar[fill=11]{source:10000}

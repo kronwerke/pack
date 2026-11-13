@@ -554,6 +554,7 @@ def _(b):
         b.b(x, 0, 4, "create:andesite_encased_shaft[axis=x]")
     b.later(3, 0, 4, "data block @ {Speed:0.0f}", unless=True)       # it turns
     b.later(4, -1, 6, "block @ minecraft:water")
+    b.focus(1, 0, 2, 8, 2, 7)                              # the wheels are larger than their blocks
 
 
 # ===================================================================================

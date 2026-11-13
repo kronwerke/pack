@@ -1352,28 +1352,46 @@ def _(b):
     b.use(4, 0, 4, "south", "ae2:terminal")
 
 
+def endo_feeder(b, x, z):
+    """Chest, hopper and open crate over the drop point x, z, and the pressure plate on it that
+    locks the hopper while a piece of coal still lies there: its signal climbs a stair of
+    redstone dust north and east of the plate to the block beside the hopper. Seen to hold on
+    the real server (13.11.2026): plate powered, hopper off, the chest loses a coal at a time."""
+    b.b(x, 0, z, "minecraft:oak_pressure_plate")
+    b.b(x, 2, z, "botania:open_crate")
+    b.b(x, 3, z, "minecraft:hopper[facing=down]")
+    b.c(x, 4, z, [("minecraft:coal", 64)], frame=True)
+    stair = "minecraft:stone_bricks"
+    b.b(x, 0, z - 1, "minecraft:redstone_wire")
+    b.b(x, 0, z - 2, stair)
+    b.b(x, 1, z - 2, "minecraft:redstone_wire")
+    b.b(x + 1, 1, z - 2, stair)
+    b.b(x + 1, 2, z - 2, "minecraft:redstone_wire")
+    b.b(x + 1, 2, z - 1, stair)
+    b.b(x + 1, 3, z - 1, "minecraft:redstone_wire")
+    b.b(x + 1, 3, z, stair)
+
+
 @scene("botania/endo_auto")
 def _(b):
-    # chest, hopper and open crate over the drop point, endoflames around it. The pressure plate
-    # under the drop point locks the hopper while a piece of coal still lies there: its signal
-    # climbs a stair of redstone dust to the block beside the hopper.
+    # the feeder over the drop point, endoflames around it
     stage(b, 3, 4, 5, 5, "minecraft:grass_block")
     b.b(4, -1, 4, "minecraft:light_gray_concrete")
-    b.b(4, 0, 4, "minecraft:oak_pressure_plate")
     for x, z in ((3, 4), (5, 4), (3, 5), (4, 5), (5, 5)):
         b.b(x, 0, z, "botania:endoflame")
-    b.b(4, 2, 4, "botania:open_crate")
-    b.b(4, 3, 4, "minecraft:hopper[facing=down]")
-    b.c(4, 4, 4, [("minecraft:coal", 64)], frame=True)
-    stair = "minecraft:stone_bricks"
-    b.b(4, 0, 3, "minecraft:redstone_wire")
-    b.b(4, 0, 2, stair)
-    b.b(4, 1, 2, "minecraft:redstone_wire")
-    b.b(5, 1, 2, stair)
-    b.b(5, 2, 2, "minecraft:redstone_wire")
-    b.b(5, 2, 3, stair)
-    b.b(5, 3, 3, "minecraft:redstone_wire")
-    b.b(5, 3, 4, stair)
+    endo_feeder(b, 4, 4)
+
+
+@scene("farms/mana_endoflame", w=11)
+def _(b):
+    # seven endoflames around a spreader that shoots at the pool, the feeder at the bed's edge
+    # within three blocks of every flower
+    stage(b, 3, 2, 7, 6, "minecraft:grass_block")
+    pool(b, 9, 0, 4, mana=300000)
+    spreader(b, 6, 0, 4, "east")
+    for x, z in ((4, 3), (5, 3), (6, 3), (4, 5), (5, 5), (6, 5), (5, 4)):
+        b.b(x, 0, z, "botania:endoflame")
+    endo_feeder(b, 3, 4)
 
 
 @scene("draconic_chaos/reactor", h=20)

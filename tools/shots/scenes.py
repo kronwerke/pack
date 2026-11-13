@@ -2921,3 +2921,34 @@ def _(b):
     b.use(2, 0, 4, "east", "industrialforegoing:transporter")
     b.use(6, 0, 4, "west", "industrialforegoing:transporter")
     b.focus(2, 0, 3, 6, 1, 5)
+
+
+# ===================================================================================
+# Twenty-first batch
+
+@scene("farms/lava_seeds")
+def _(b):
+    # a field of fire seeds around its water, and the item drain on a tank that turns their lava buckets into lava
+    b.f(2, -1, 3, 6, -1, 5, "minecraft:farmland[moisture=7]")
+    b.b(4, -1, 4, "minecraft:water")
+    for x in range(2, 7):
+        for z in (3, 4, 5):
+            if (x, z) != (4, 4):
+                b.b(x, 0, z, "mysticalagriculture:fire_crop[age=7]")
+    b.b(7, 0, 4, "create:fluid_tank[bottom=true,shape=window,top=true]")
+    b.b(7, 1, 4, "create:item_drain")
+    b.focus(2, 0, 3, 7, 1, 5)
+
+
+@scene("create_trains/unprocessed_sheet")
+def _(b):
+    # powdered obsidian on a depot under a spout: lava makes the unprocessed sheet
+    b.b(4, 0, 4, "create:depot")
+    b.b(4, 2, 4, "create:spout")
+    b.b(4, 3, 4, "create:fluid_tank[bottom=true,shape=window,top=true]")
+    b.use(4, 0, 4, "up", "create:powdered_obsidian")
+
+
+@scene("productive_trees/time_traveller")
+def _(b):
+    b.b(4, 0, 4, "productivetrees:time_traveller_display[axis=y]")

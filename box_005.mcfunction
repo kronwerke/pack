@@ -51,11 +51,7 @@ setblock 6 64 35 create:shaft[axis=x]
 kw testworld use 6 64 32 up create:belt_connector
 kw testworld use 6 64 35 up create:belt_connector
 execute unless block 6 64 33 minecraft:air
-setblock 7 64 35 create:creative_motor[facing=west]{ScrollValue:16}
-setblock 8 64 35 create:andesite_casing
-setblock 7 64 36 create:andesite_casing
-setblock 7 64 34 create:andesite_casing
-setblock 7 65 35 create:andesite_casing
+setblock 7 64 32 create:creative_motor[facing=west]{ScrollValue:16}
 setblock 3 65 32 minecraft:water
 setblock 6 65 32 minecraft:cobblestone
 setblock 7 65 32 minecraft:lava

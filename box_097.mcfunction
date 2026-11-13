@@ -1,28 +1,117 @@
-# 097 draconic_chaos/reactor
-#area 37 290 56 315
-fill 37 64 290 56 95 315 minecraft:air
-fill 37 60 290 56 62 315 minecraft:stone
-fill 37 63 290 56 63 315 minecraft:light_gray_concrete
-fill 41 64 296 56 83 296 minecraft:light_gray_concrete
-fill 41 64 296 41 83 309 minecraft:light_gray_concrete
-setblock 42 64 308 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "097"}','{"text": "draconic_chaos"}','{"text": "reactor"}','{"text": ""}']}}
-setblock 43 64 308 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Bau den"}','{"text": "Drakonischen"}','{"text": "Reaktor"}','{"text": ""}']}}
-fill 51 64 296 51 83 309 minecraft:light_gray_concrete
-setblock 46 67 301 draconicevolution:reactor_core
-setblock 42 67 301 minecraft:stone
-kw testworld use 42 67 301 east draconicevolution:reactor_stabilizer
-setblock 42 67 301 minecraft:air
-setblock 50 67 301 minecraft:stone
-kw testworld use 50 67 301 west draconicevolution:reactor_stabilizer
-setblock 50 67 301 minecraft:air
-setblock 46 67 297 minecraft:stone
-kw testworld use 46 67 297 south draconicevolution:reactor_stabilizer
-setblock 46 67 297 minecraft:air
-setblock 46 67 305 minecraft:stone
-kw testworld use 46 67 305 north draconicevolution:reactor_stabilizer
-setblock 46 67 305 minecraft:air
-setblock 46 71 301 minecraft:stone
-kw testworld use 46 71 301 down draconicevolution:reactor_injector
-setblock 46 71 301 minecraft:air
-execute if block 43 67 301 draconicevolution:reactor_stabilizer
-execute if block 46 70 301 draconicevolution:reactor_injector
+# 097 nuclearcraft/reactor
+#area 37 290 58 317
+fill 37 64 290 58 91 317 minecraft:air
+fill 37 60 290 58 62 317 minecraft:stone
+fill 37 63 290 58 63 317 minecraft:light_gray_concrete
+fill 41 64 296 58 79 296 minecraft:light_gray_concrete
+fill 41 64 296 41 79 311 minecraft:light_gray_concrete
+setblock 42 64 310 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "097"}','{"text": "nuclearcraft"}','{"text": "reactor"}','{"text": ""}']}}
+setblock 43 64 310 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Starte den"}','{"text": "ersten"}','{"text": "Spaltreaktor"}','{"text": ""}']}}
+fill 53 64 296 53 79 311 minecraft:light_gray_concrete
+setblock 45 64 300 nuclearcraft:fission_reactor_casing
+setblock 45 64 301 nuclearcraft:fission_reactor_casing
+setblock 45 64 302 nuclearcraft:fission_reactor_casing
+setblock 45 64 303 nuclearcraft:fission_reactor_casing
+setblock 45 64 304 nuclearcraft:fission_reactor_casing
+setblock 45 65 300 nuclearcraft:fission_reactor_casing
+setblock 45 65 301 nuclearcraft:fission_reactor_casing
+setblock 45 65 302 nuclearcraft:fission_reactor_casing
+setblock 45 65 303 nuclearcraft:fission_reactor_casing
+setblock 45 65 304 nuclearcraft:fission_reactor_casing
+setblock 45 66 300 nuclearcraft:fission_reactor_casing
+setblock 45 66 301 nuclearcraft:fission_reactor_casing
+setblock 45 66 302 nuclearcraft:fission_reactor_casing
+setblock 45 66 303 nuclearcraft:fission_reactor_casing
+setblock 45 66 304 nuclearcraft:fission_reactor_casing
+setblock 45 67 300 nuclearcraft:fission_reactor_casing
+setblock 45 67 301 nuclearcraft:fission_reactor_casing
+setblock 45 67 302 nuclearcraft:fission_reactor_casing
+setblock 45 67 303 nuclearcraft:fission_reactor_casing
+setblock 45 67 304 nuclearcraft:fission_reactor_casing
+setblock 45 68 300 nuclearcraft:fission_reactor_casing
+setblock 45 68 301 nuclearcraft:fission_reactor_casing
+setblock 45 68 302 nuclearcraft:fission_reactor_casing
+setblock 45 68 303 nuclearcraft:fission_reactor_casing
+setblock 45 68 304 nuclearcraft:fission_reactor_casing
+setblock 46 64 300 nuclearcraft:fission_reactor_casing
+setblock 46 64 301 nuclearcraft:fission_reactor_casing
+setblock 46 64 302 nuclearcraft:fission_reactor_casing
+setblock 46 64 303 nuclearcraft:fission_reactor_casing
+setblock 46 64 304 nuclearcraft:fission_reactor_casing
+setblock 46 65 300 nuclearcraft:fission_reactor_casing
+setblock 46 65 304 nuclearcraft:fission_reactor_glass
+setblock 46 66 300 nuclearcraft:fission_reactor_casing
+setblock 46 66 304 nuclearcraft:fission_reactor_glass
+setblock 46 67 300 nuclearcraft:fission_reactor_casing
+setblock 46 67 304 nuclearcraft:fission_reactor_glass
+setblock 46 68 300 nuclearcraft:fission_reactor_casing
+setblock 46 68 301 nuclearcraft:fission_reactor_casing
+setblock 46 68 302 nuclearcraft:fission_reactor_casing
+setblock 46 68 303 nuclearcraft:fission_reactor_casing
+setblock 46 68 304 nuclearcraft:fission_reactor_casing
+setblock 47 64 300 nuclearcraft:fission_reactor_casing
+setblock 47 64 301 nuclearcraft:fission_reactor_casing
+setblock 47 64 302 nuclearcraft:fission_reactor_casing
+setblock 47 64 303 nuclearcraft:fission_reactor_casing
+setblock 47 64 304 nuclearcraft:fission_reactor_casing
+setblock 47 65 300 nuclearcraft:fission_reactor_casing
+setblock 47 65 304 nuclearcraft:fission_reactor_glass
+setblock 47 66 300 nuclearcraft:fission_reactor_casing
+setblock 47 66 304 nuclearcraft:fission_reactor_glass
+setblock 47 67 300 nuclearcraft:fission_reactor_casing
+setblock 47 67 304 nuclearcraft:fission_reactor_glass
+setblock 47 68 300 nuclearcraft:fission_reactor_casing
+setblock 47 68 301 nuclearcraft:fission_reactor_casing
+setblock 47 68 302 nuclearcraft:fission_reactor_casing
+setblock 47 68 303 nuclearcraft:fission_reactor_casing
+setblock 47 68 304 nuclearcraft:fission_reactor_casing
+setblock 48 64 300 nuclearcraft:fission_reactor_casing
+setblock 48 64 301 nuclearcraft:fission_reactor_casing
+setblock 48 64 302 nuclearcraft:fission_reactor_casing
+setblock 48 64 303 nuclearcraft:fission_reactor_casing
+setblock 48 64 304 nuclearcraft:fission_reactor_casing
+setblock 48 65 300 nuclearcraft:fission_reactor_casing
+setblock 48 65 304 nuclearcraft:fission_reactor_glass
+setblock 48 66 300 nuclearcraft:fission_reactor_casing
+setblock 48 66 304 nuclearcraft:fission_reactor_glass
+setblock 48 67 300 nuclearcraft:fission_reactor_casing
+setblock 48 67 304 nuclearcraft:fission_reactor_glass
+setblock 48 68 300 nuclearcraft:fission_reactor_casing
+setblock 48 68 301 nuclearcraft:fission_reactor_casing
+setblock 48 68 302 nuclearcraft:fission_reactor_casing
+setblock 48 68 303 nuclearcraft:fission_reactor_casing
+setblock 48 68 304 nuclearcraft:fission_reactor_casing
+setblock 49 64 300 nuclearcraft:fission_reactor_casing
+setblock 49 64 301 nuclearcraft:fission_reactor_casing
+setblock 49 64 302 nuclearcraft:fission_reactor_casing
+setblock 49 64 303 nuclearcraft:fission_reactor_casing
+setblock 49 64 304 nuclearcraft:fission_reactor_casing
+setblock 49 65 300 nuclearcraft:fission_reactor_casing
+setblock 49 65 301 nuclearcraft:fission_reactor_casing
+setblock 49 65 302 nuclearcraft:fission_reactor_casing
+setblock 49 65 303 nuclearcraft:fission_reactor_casing
+setblock 49 65 304 nuclearcraft:fission_reactor_casing
+setblock 49 66 300 nuclearcraft:fission_reactor_casing
+setblock 49 66 301 nuclearcraft:fission_reactor_casing
+setblock 49 66 302 nuclearcraft:fission_reactor_casing
+setblock 49 66 303 nuclearcraft:fission_reactor_casing
+setblock 49 66 304 nuclearcraft:fission_reactor_casing
+setblock 49 67 300 nuclearcraft:fission_reactor_casing
+setblock 49 67 301 nuclearcraft:fission_reactor_casing
+setblock 49 67 302 nuclearcraft:fission_reactor_casing
+setblock 49 67 303 nuclearcraft:fission_reactor_casing
+setblock 49 67 304 nuclearcraft:fission_reactor_casing
+setblock 49 68 300 nuclearcraft:fission_reactor_casing
+setblock 49 68 301 nuclearcraft:fission_reactor_casing
+setblock 49 68 302 nuclearcraft:fission_reactor_casing
+setblock 49 68 303 nuclearcraft:fission_reactor_casing
+setblock 49 68 304 nuclearcraft:fission_reactor_casing
+setblock 46 65 304 nuclearcraft:fission_reactor_controller[facing=south]
+setblock 48 65 304 nuclearcraft:fission_reactor_port
+setblock 47 66 302 nuclearcraft:fission_reactor_solid_fuel_cell
+setblock 46 66 302 nuclearcraft:graphite_block
+setblock 48 66 302 nuclearcraft:graphite_block
+setblock 47 67 302 nuclearcraft:water_heat_sink
+setblock 47 65 302 nuclearcraft:water_heat_sink
+setblock 47 66 303 nuclearcraft:water_heat_sink
+setblock 47 66 301 nuclearcraft:water_heat_sink

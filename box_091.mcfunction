@@ -1,27 +1,29 @@
-# 091 alfheim/frame
-#area 253 139 274 164
-fill 253 64 139 274 91 164 minecraft:air
-fill 253 60 139 274 62 164 minecraft:stone
-fill 253 63 139 274 63 164 minecraft:light_gray_concrete
-fill 257 64 145 274 79 145 minecraft:light_gray_concrete
-fill 257 64 145 257 79 158 minecraft:light_gray_concrete
-setblock 258 64 157 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "091"}','{"text": "alfheim"}','{"text": "frame"}','{"text": ""}']}}
-setblock 259 64 157 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "the finished"}','{"text": "gateway with"}','{"text": "two pools and"}','{"text": "natura pylons"}']}}
-fill 269 64 145 269 79 158 minecraft:light_gray_concrete
-setblock 263 64 149 botania:elven_gateway_core
-setblock 262 64 149 botania:livingwood_log[axis=x]
-setblock 262 68 149 botania:livingwood_log[axis=x]
-setblock 264 64 149 botania:livingwood_log[axis=x]
-setblock 264 68 149 botania:livingwood_log[axis=x]
-setblock 263 68 149 botania:glimmering_livingwood_log[axis=x]
-setblock 261 65 149 botania:livingwood_log[axis=y]
-setblock 261 66 149 botania:glimmering_livingwood_log[axis=y]
-setblock 261 67 149 botania:livingwood_log[axis=y]
-setblock 265 65 149 botania:livingwood_log[axis=y]
-setblock 265 66 149 botania:glimmering_livingwood_log[axis=y]
-setblock 265 67 149 botania:livingwood_log[axis=y]
-setblock 259 64 151 botania:mana_pool{mana:1000000}
-setblock 259 65 151 botania:natura_pylon
-setblock 267 64 151 botania:mana_pool{mana:1000000}
-setblock 267 65 151 botania:natura_pylon
+# 091 botania_runes/terrasteel
+#area 182 139 203 164
+fill 182 64 139 203 91 164 minecraft:air
+fill 182 60 139 203 62 164 minecraft:stone
+fill 182 63 139 203 63 164 minecraft:light_gray_concrete
+fill 186 64 145 203 79 145 minecraft:light_gray_concrete
+fill 186 64 145 186 79 158 minecraft:light_gray_concrete
+setblock 187 64 157 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "091"}','{"text": "botania_runes"}','{"text": "terrasteel"}','{"text": ""}']}}
+setblock 188 64 157 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "the plate mid"}','{"text": "craft"}','{"text": ""}','{"text": ""}']}}
+fill 198 64 145 198 79 158 minecraft:light_gray_concrete
+setblock 191 64 149 botania:livingrock
+setblock 191 64 150 minecraft:lapis_block
+setblock 191 64 151 botania:livingrock
+setblock 192 64 149 minecraft:lapis_block
+setblock 192 64 150 botania:livingrock
+setblock 192 64 151 minecraft:lapis_block
+setblock 193 64 149 botania:livingrock
+setblock 193 64 150 minecraft:lapis_block
+setblock 193 64 151 botania:livingrock
+setblock 192 65 150 botania:terrestrial_agglomeration_plate
+summon botania:mana_spark 192.5 66.25 150.5 {Tags:["kw_shot"]}
+setblock 188 64 150 botania:mana_pool{mana:1000000}
+summon botania:mana_spark 188.5 65.25 150.5 {Tags:["kw_shot"]}
+setblock 196 64 150 botania:mana_pool{mana:1000000}
+summon botania:mana_spark 196.5 65.25 150.5 {Tags:["kw_shot"]}
+summon item 192.5 65.3 150.5 {Item:{id:"botania:manasteel_ingot",count:1},PickupDelay:32767,Age:-32768,Tags:["kw_shot"]}
+summon item 192.5 65.3 150.5 {Item:{id:"botania:mana_pearl",count:1},PickupDelay:32767,Age:-32768,Tags:["kw_shot"]}
+summon item 192.5 65.3 150.5 {Item:{id:"botania:mana_diamond",count:1},PickupDelay:32767,Age:-32768,Tags:["kw_shot"]}
 execute as @e[type=minecraft:item,tag=!kw_shot] run kill @s

@@ -1,33 +1,30 @@
-# 150 list_dimensions/d_mining, r_plates, r_enderio
-#area 97 330 135 355
-fill 97 64 330 135 91 355 minecraft:air
-fill 97 60 330 135 62 355 minecraft:stone
-fill 97 63 330 135 63 355 minecraft:light_gray_concrete
-fill 101 64 336 135 79 336 minecraft:light_gray_concrete
-fill 101 64 336 101 79 349 minecraft:light_gray_concrete
-setblock 102 64 348 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "150.1"}','{"text": "list_dimensions"}','{"text": "d_mining"}','{"text": ""}']}}
-setblock 103 64 348 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Die Farmwelt"}','{"text": ""}','{"text": ""}','{"text": ""}']}}
-fill 110 64 336 110 79 349 minecraft:light_gray_concrete
-setblock 104 65 341 kronwerke:grubenrahmen
-setblock 104 66 341 kronwerke:grubenrahmen
-setblock 104 67 341 kronwerke:grubenrahmen
-setblock 105 64 341 kronwerke:grubenrahmen
-setblock 105 68 341 kronwerke:grubenrahmen
-setblock 106 64 341 kronwerke:grubenrahmen
-setblock 106 68 341 kronwerke:grubenrahmen
-setblock 107 65 341 kronwerke:grubenrahmen
-setblock 107 66 341 kronwerke:grubenrahmen
-setblock 107 67 341 kronwerke:grubenrahmen
-kw testworld use 105 64 341 up ars_nouveau:source_gem
-setblock 111 64 348 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "150.2"}','{"text": "list_dimensions"}','{"text": "r_plates"}','{"text": ""}']}}
-setblock 112 64 348 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Verbinde zwei"}','{"text": "Orte mit"}','{"text": "Warpplatten"}','{"text": ""}']}}
-fill 120 64 336 120 79 349 minecraft:light_gray_concrete
-setblock 113 64 341 waystones:warp_plate[status=idle]
-setblock 117 64 341 waystones:warp_plate[status=idle]
-setblock 121 64 348 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "150.3"}','{"text": "list_dimensions"}','{"text": "r_enderio"}','{"text": ""}']}}
-setblock 122 64 348 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Setz Reiseanker"}','{"text": ""}','{"text": ""}','{"text": ""}']}}
-fill 130 64 336 130 79 349 minecraft:light_gray_concrete
-setblock 123 64 342 enderio:travel_anchor
-fill 127 64 340 127 66 340 minecraft:stone_bricks
-setblock 127 67 340 enderio:travel_anchor
+# 150 aether/portal, altar
+#area 25 330 53 355
+fill 25 64 330 53 91 355 minecraft:air
+fill 25 60 330 53 62 355 minecraft:stone
+fill 25 63 330 53 63 355 minecraft:light_gray_concrete
+fill 29 64 336 53 79 336 minecraft:light_gray_concrete
+fill 29 64 336 29 79 349 minecraft:light_gray_concrete
+setblock 30 64 348 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "150.1"}','{"text": "aether"}','{"text": "portal"}','{"text": ""}']}}
+setblock 31 64 348 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Bau das"}','{"text": "Glowstone-Portal"}','{"text": ""}','{"text": ""}']}}
+fill 38 64 336 38 79 349 minecraft:light_gray_concrete
+setblock 32 65 341 minecraft:glowstone
+setblock 32 66 341 minecraft:glowstone
+setblock 32 67 341 minecraft:glowstone
+setblock 33 64 341 minecraft:glowstone
+setblock 33 68 341 minecraft:glowstone
+setblock 34 64 341 minecraft:glowstone
+setblock 34 68 341 minecraft:glowstone
+setblock 35 65 341 minecraft:glowstone
+setblock 35 66 341 minecraft:glowstone
+setblock 35 67 341 minecraft:glowstone
+fill 33 65 341 34 67 341 aether:aether_portal[axis=x]
+execute if block 33 66 341 aether:aether_portal
+setblock 39 64 348 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "150.2"}','{"text": "aether"}','{"text": "altar"}','{"text": ""}']}}
+setblock 40 64 348 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Bau einen Altar"}','{"text": ""}','{"text": ""}','{"text": ""}']}}
+fill 48 64 336 48 79 349 minecraft:light_gray_concrete
+fill 41 63 340 45 63 342 aether:holystone
+setblock 41 64 341 aether:altar
+setblock 43 64 341 aether:freezer
+setblock 45 64 341 aether:incubator
 execute as @e[type=minecraft:item,tag=!kw_shot] run kill @s

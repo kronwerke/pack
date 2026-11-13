@@ -1,14 +1,37 @@
-# 101 occultism/djinni_familiars
-#area 110 176 131 201
-fill 110 64 176 131 91 201 minecraft:air
-fill 110 60 176 131 62 201 minecraft:stone
-fill 110 63 176 131 63 201 minecraft:light_gray_concrete
-fill 114 64 182 131 79 182 minecraft:light_gray_concrete
-fill 114 64 182 114 79 195 minecraft:light_gray_concrete
-setblock 115 64 194 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "101"}','{"text": "occultism"}','{"text": "djinni_familiars"}','{"text": ""}']}}
-setblock 116 64 194 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "a player with"}','{"text": "two or three"}','{"text": "familiars"}','{"text": ""}']}}
-fill 126 64 182 126 79 195 minecraft:light_gray_concrete
-summon occultism:dragon_familiar 117.5 64 187.5 {NoAI:1b,PersistenceRequired:1b,Silent:1b,Tags:["kw_shot"],Rotation:[180f,0f]}
-summon occultism:greedy_familiar 120.5 64 187.5 {NoAI:1b,PersistenceRequired:1b,Silent:1b,Tags:["kw_shot"],Rotation:[180f,0f]}
-summon occultism:deer_familiar 123.5 64 187.5 {NoAI:1b,PersistenceRequired:1b,Silent:1b,Tags:["kw_shot"],Rotation:[180f,0f]}
+# 101 occultism/hedyrin
+#area 45 176 68 205
+fill 45 64 176 68 91 205 minecraft:air
+fill 45 60 176 68 62 205 minecraft:stone
+fill 45 63 176 68 63 205 minecraft:light_gray_concrete
+fill 49 64 182 68 79 182 minecraft:light_gray_concrete
+fill 49 64 182 49 79 199 minecraft:light_gray_concrete
+setblock 50 64 198 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "101"}','{"text": "occultism"}','{"text": "hedyrin"}','{"text": ""}']}}
+setblock 51 64 198 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Hedyrin\'s Lure"}','{"text": "with the yellow"}','{"text": "glyphs"}','{"text": ""}']}}
+fill 63 64 182 63 79 199 minecraft:light_gray_concrete
+fill 51 63 184 61 63 194 minecraft:smooth_basalt
+setblock 53 64 189 occultism:chalk_glyph_white[facing=south,sign=0]
+setblock 54 64 188 occultism:chalk_glyph_white[facing=south,sign=5]
+setblock 54 64 189 minecraft:white_candle[candles=1,lit=true]
+setblock 54 64 190 occultism:chalk_glyph_white[facing=south,sign=10]
+setblock 55 64 187 occultism:chalk_glyph_white[facing=south,sign=2]
+setblock 55 64 189 occultism:chalk_glyph_gold[facing=south,sign=7]
+setblock 55 64 191 occultism:chalk_glyph_white[facing=south,sign=12]
+setblock 56 64 186 occultism:chalk_glyph_white[facing=south,sign=4]
+setblock 56 64 187 minecraft:white_candle[candles=1,lit=true]
+setblock 56 64 188 occultism:chalk_glyph_gold[facing=south,sign=9]
+setblock 56 64 189 occultism:golden_sacrificial_bowl
+setblock 56 64 190 occultism:chalk_glyph_gold[facing=south,sign=1]
+setblock 56 64 191 minecraft:white_candle[candles=1,lit=true]
+setblock 56 64 192 occultism:chalk_glyph_white[facing=south,sign=6]
+setblock 57 64 187 occultism:chalk_glyph_white[facing=south,sign=11]
+setblock 57 64 189 occultism:chalk_glyph_gold[facing=south,sign=3]
+setblock 57 64 191 occultism:chalk_glyph_white[facing=south,sign=8]
+setblock 58 64 188 occultism:chalk_glyph_white[facing=south,sign=0]
+setblock 58 64 189 minecraft:white_candle[candles=1,lit=true]
+setblock 58 64 190 occultism:chalk_glyph_white[facing=south,sign=5]
+setblock 59 64 189 occultism:chalk_glyph_white[facing=south,sign=10]
+setblock 56 64 184 occultism:sacrificial_bowl[facing=up]
+setblock 61 64 189 occultism:sacrificial_bowl[facing=up]
+setblock 56 64 194 occultism:sacrificial_bowl[facing=up]
+setblock 51 64 189 occultism:sacrificial_bowl[facing=up]
 execute as @e[type=minecraft:item,tag=!kw_shot] run kill @s

@@ -1,31 +1,18 @@
-# 077 botania/endo_auto
-#area 11 139 30 164
-fill 11 64 139 30 91 164 minecraft:air
-fill 11 60 139 30 62 164 minecraft:stone
-fill 11 63 139 30 63 164 minecraft:light_gray_concrete
-fill 15 64 145 30 79 145 minecraft:light_gray_concrete
-fill 15 64 145 15 79 158 minecraft:light_gray_concrete
-setblock 16 64 157 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "077"}','{"text": "botania"}','{"text": "endo_auto"}','{"text": ""}']}}
-setblock 17 64 157 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "chest, hopper"}','{"text": "and open crate"}','{"text": "over four"}','{"text": "Endoflames,"}']}}
-setblock 18 64 157 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "pressure plate"}','{"text": ""}','{"text": ""}','{"text": ""}']}}
-fill 25 64 145 25 79 158 minecraft:light_gray_concrete
-fill 19 63 150 21 63 151 minecraft:grass_block
-setblock 20 63 150 minecraft:light_gray_concrete
-setblock 19 64 150 botania:endoflame
-setblock 21 64 150 botania:endoflame
-setblock 19 64 151 botania:endoflame
-setblock 20 64 151 botania:endoflame
-setblock 21 64 151 botania:endoflame
-setblock 20 64 150 minecraft:oak_pressure_plate
-setblock 20 66 150 botania:open_crate
-setblock 20 67 150 minecraft:hopper[facing=down]
-setblock 20 68 150 minecraft:chest[facing=south]{Items:[{Slot:0b,id:"minecraft:coal",count:64}]}
-setblock 20 64 149 minecraft:redstone_wire
-setblock 20 64 148 minecraft:stone_bricks
-setblock 20 65 148 minecraft:redstone_wire
-setblock 21 65 148 minecraft:stone_bricks
-setblock 21 66 148 minecraft:redstone_wire
-setblock 21 66 149 minecraft:stone_bricks
-setblock 21 67 149 minecraft:redstone_wire
-setblock 21 67 150 minecraft:stone_bricks
+# 077 ars_master/charged_certus
+#area 242 118 261 143
+fill 242 64 118 261 91 143 minecraft:air
+fill 242 60 118 261 62 143 minecraft:stone
+fill 242 63 118 261 63 143 minecraft:light_gray_concrete
+fill 246 64 124 261 79 124 minecraft:light_gray_concrete
+fill 246 64 124 246 79 137 minecraft:light_gray_concrete
+setblock 247 64 136 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "077"}','{"text": "ars_master"}','{"text": "charged_certus"}','{"text": ""}']}}
+setblock 248 64 136 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "chamber with"}','{"text": "redstone and"}','{"text": "glowstone"}','{"text": "pedestals"}']}}
+fill 256 64 124 256 79 137 minecraft:light_gray_concrete
+setblock 251 64 129 ars_nouveau:imbuement_chamber[facing=up]
+setblock 250 64 129 ars_nouveau:arcane_pedestal[facing=up]
+kw testworld use 250 64 129 south minecraft:redstone
+setblock 252 64 129 ars_nouveau:arcane_pedestal[facing=up]
+kw testworld use 252 64 129 south minecraft:glowstone_dust
+kw testworld use 251 64 129 south ae2:certus_quartz_crystal
+setblock 253 64 128 ars_nouveau:source_jar[fill=11]{source:10000}
 execute as @e[type=minecraft:item,tag=!kw_shot] run kill @s

@@ -1,27 +1,13 @@
-# 120 immersive/tank, silo, shelf
-#area 169 211 208 240
-fill 169 64 211 203 94 240 minecraft:air
-fill 204 64 211 208 94 240 minecraft:air
-fill 169 60 211 208 62 240 minecraft:stone
-fill 169 63 211 208 63 240 minecraft:light_gray_concrete
-fill 173 64 217 208 82 217 minecraft:light_gray_concrete
-fill 173 64 217 173 82 234 minecraft:light_gray_concrete
-setblock 174 64 233 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "120.1"}','{"text": "immersive"}','{"text": "tank"}','{"text": ""}']}}
-setblock 175 64 233 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "the formed"}','{"text": "structures"}','{"text": ""}','{"text": ""}']}}
-fill 183 64 217 183 82 234 minecraft:light_gray_concrete
-place template immersiveengineering:multiblocks/sheetmetal_tank 177 64 220 none
-kw testworld use 178 65 222 south immersiveengineering:hammer
-execute unless block 178 65 222 immersiveengineering:sheetmetal_iron
-setblock 184 64 233 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "120.2"}','{"text": "immersive"}','{"text": "silo"}','{"text": ""}']}}
-setblock 185 64 233 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Form ein"}','{"text": "Elementsilo"}','{"text": ""}','{"text": ""}']}}
-fill 193 64 217 193 82 234 minecraft:light_gray_concrete
-place template immersiveengineering:multiblocks/silo 187 64 220 none
-kw testworld use 188 65 222 south immersiveengineering:hammer
-execute unless block 188 65 222 immersiveengineering:sheetmetal_iron
-setblock 194 64 233 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "120.3"}','{"text": "immersive"}','{"text": "shelf"}','{"text": ""}']}}
-setblock 195 64 233 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Form ein"}','{"text": "Kistenregal"}','{"text": ""}','{"text": ""}']}}
-fill 203 64 217 203 82 234 minecraft:light_gray_concrete
-place template immersiveengineering:multiblocks/shelf 196 64 220 none
-kw testworld use 197 65 221 south immersiveengineering:hammer
-execute unless block 197 65 221 immersiveengineering:steel_catwalk
+# 120 immersive/cloche
+#area 82 211 101 236
+fill 82 64 211 101 91 236 minecraft:air
+fill 82 60 211 101 62 236 minecraft:stone
+fill 82 63 211 101 63 236 minecraft:light_gray_concrete
+fill 86 64 217 101 79 217 minecraft:light_gray_concrete
+fill 86 64 217 86 79 230 minecraft:light_gray_concrete
+setblock 87 64 229 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "120"}','{"text": "immersive"}','{"text": "cloche"}','{"text": ""}']}}
+setblock 88 64 229 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "a garden cloche"}','{"text": "growing hemp"}','{"text": ""}','{"text": ""}']}}
+fill 96 64 217 96 79 230 minecraft:light_gray_concrete
+kw testworld use 91 63 222 up immersiveengineering:cloche
+data merge block 91 64 222 {Items:[{Slot:0b,id:"minecraft:dirt",count:1},{Slot:1b,id:"immersiveengineering:seed",count:1}],energy:16000,tank:{Fluid:{id:"minecraft:water",amount:4000}}}
 execute as @e[type=minecraft:item,tag=!kw_shot] run kill @s

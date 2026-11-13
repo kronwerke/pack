@@ -1,40 +1,30 @@
-# 135 logistics/menril, programmer, xnet_connectors, laser_node
-#area 154 286 204 311
-fill 154 64 286 198 91 311 minecraft:air
-fill 199 64 286 204 91 311 minecraft:air
-fill 154 60 286 204 62 311 minecraft:stone
-fill 154 63 286 204 63 311 minecraft:light_gray_concrete
-fill 158 64 292 204 79 292 minecraft:light_gray_concrete
-fill 158 64 292 158 79 305 minecraft:light_gray_concrete
-setblock 159 64 304 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "135.1"}','{"text": "logistics"}','{"text": "menril"}','{"text": ""}']}}
-setblock 160 64 304 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Press"}','{"text": "Menril-Harz"}','{"text": ""}','{"text": ""}']}}
-fill 168 64 292 168 79 305 minecraft:light_gray_concrete
-fill 161 64 296 161 66 296 integrateddynamics:menril_log[axis=y]
-setblock 163 64 297 integrateddynamics:squeezer[axis=x,height=1]
-setblock 164 64 297 integrateddynamics:drying_basin
-setblock 169 64 304 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "135.2"}','{"text": "logistics"}','{"text": "programmer"}','{"text": ""}']}}
-setblock 170 64 304 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Schreib Karten"}','{"text": "im Logic"}','{"text": "Programmer"}','{"text": ""}']}}
-fill 178 64 292 178 79 305 minecraft:light_gray_concrete
-setblock 172 64 297 integrateddynamics:logic_programmer[facing=south]
-setblock 174 64 297 integrateddynamics:variablestore[facing=south]
-setblock 179 64 304 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "135.3"}','{"text": "logistics"}','{"text": "xnet_connectors"}','{"text": ""}']}}
-setblock 180 64 304 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Setz Connectors"}','{"text": "und Kabel"}','{"text": ""}','{"text": ""}']}}
-fill 189 64 292 189 79 305 minecraft:light_gray_concrete
-setblock 181 64 297 minecraft:chest[facing=south,type=single,waterlogged=false]
-setblock 187 64 297 minecraft:furnace[facing=south,lit=false]
-setblock 184 64 298 xnet:controller[facing=south,error=false]
-kw testworld use 182 63 297 up xnet:connector_blue
-kw testworld use 186 63 297 up xnet:connector_blue
-kw testworld use 183 63 297 up xnet:netcable_blue
-kw testworld use 184 63 297 up xnet:netcable_blue
-kw testworld use 185 63 297 up xnet:netcable_blue
-setblock 190 64 304 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "135.4"}','{"text": "logistics"}','{"text": "laser_node"}','{"text": ""}']}}
-setblock 191 64 304 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Verbinde zwei"}','{"text": "Laser Nodes"}','{"text": ""}','{"text": ""}']}}
-fill 199 64 292 199 79 305 minecraft:light_gray_concrete
-setblock 192 64 297 minecraft:chest[facing=south,type=single,waterlogged=false]
-setblock 192 65 297 laserio:laser_node
-setblock 196 64 297 minecraft:chest[facing=south,type=single,waterlogged=false]
-setblock 196 65 297 laserio:laser_node
-kw testworld use 192 65 297 south laserio:laser_wrench
-kw testworld use 196 65 297 south laserio:laser_wrench
+# 135 ae2/channels
+#area -4 286 17 311
+fill -4 64 286 17 91 311 minecraft:air
+fill -4 60 286 17 62 311 minecraft:stone
+fill -4 63 286 17 63 311 minecraft:light_gray_concrete
+fill 0 64 292 17 79 292 minecraft:light_gray_concrete
+fill 0 64 292 0 79 305 minecraft:light_gray_concrete
+setblock 1 64 304 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "135"}','{"text": "ae2"}','{"text": "channels"}','{"text": ""}']}}
+setblock 2 64 304 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "controller with"}','{"text": "dense cables"}','{"text": "branching into"}','{"text": "normal smart"}']}}
+setblock 3 64 304 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "cables, channel"}','{"text": "stripes visible"}','{"text": ""}','{"text": ""}']}}
+fill 12 64 292 12 79 305 minecraft:light_gray_concrete
+setblock 3 63 297 ae2:creative_energy_cell
+setblock 3 64 297 ae2:controller
+kw testworld use 3 64 297 east ae2:fluix_covered_dense_cable
+kw testworld use 3 64 297 east ae2:fluix_covered_dense_cable
+kw testworld use 4 64 297 east ae2:fluix_covered_dense_cable
+kw testworld use 5 64 297 east ae2:fluix_covered_dense_cable
+kw testworld use 6 64 297 east ae2:fluix_covered_dense_cable
+kw testworld use 7 64 297 east ae2:fluix_covered_dense_cable
+kw testworld use 5 64 297 south ae2:fluix_smart_cable
+kw testworld use 5 64 298 south ae2:fluix_smart_cable
+setblock 5 64 300 ae2:drive[facing=south,spin=0]
+kw testworld use 5 64 297 north ae2:fluix_smart_cable
+setblock 5 64 295 ae2:drive[facing=south,spin=0]
+kw testworld use 8 64 297 south ae2:fluix_smart_cable
+kw testworld use 8 64 298 south ae2:fluix_smart_cable
+setblock 8 64 300 ae2:drive[facing=south,spin=0]
+kw testworld use 8 64 297 north ae2:fluix_smart_cable
+setblock 8 64 295 ae2:drive[facing=south,spin=0]
 execute as @e[type=minecraft:item,tag=!kw_shot] run kill @s

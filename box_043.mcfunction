@@ -1,22 +1,45 @@
-# 043 mekanism/ore_line
-#area 41 95 63 120
-fill 41 64 95 63 91 120 minecraft:air
-fill 41 60 95 63 62 120 minecraft:stone
-fill 41 63 95 63 63 120 minecraft:light_gray_concrete
-fill 45 64 101 63 79 101 minecraft:light_gray_concrete
-fill 45 64 101 45 79 114 minecraft:light_gray_concrete
-setblock 46 64 113 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "043"}','{"text": "mekanism"}','{"text": "ore_line"}','{"text": ""}']}}
-setblock 47 64 113 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "the steel line"}','{"text": "from enrichment"}','{"text": "chamber to the"}','{"text": "obelisk chest"}']}}
-fill 58 64 101 58 79 114 minecraft:light_gray_concrete
-setblock 47 64 106 minecraft:chest[facing=south]{Items:[]}
-setblock 49 64 106 mekanism:basic_infusing_factory[facing=south,active=false]
-setblock 51 64 106 mekanism:basic_infusing_factory[facing=south,active=false]
-setblock 53 64 106 mekanism:basic_smelting_factory[facing=south,active=false]
-setblock 55 64 106 minecraft:chest[facing=south]{Items:[]}
-setblock 48 64 106 mekanism:basic_logistical_transporter
-setblock 50 64 106 mekanism:basic_logistical_transporter
-setblock 52 64 106 mekanism:basic_logistical_transporter
-setblock 54 64 106 mekanism:basic_logistical_transporter
-fill 49 64 105 54 64 105 mekanism:basic_universal_cable
-setblock 55 64 105 mekanism:basic_energy_cube[facing=south]
+# 043 mekanism/dynamic_tank
+#area 11 95 30 120
+fill 11 64 95 30 91 120 minecraft:air
+fill 11 60 95 30 62 120 minecraft:stone
+fill 11 63 95 30 63 120 minecraft:light_gray_concrete
+fill 15 64 101 30 79 101 minecraft:light_gray_concrete
+fill 15 64 101 15 79 114 minecraft:light_gray_concrete
+setblock 16 64 113 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "043"}','{"text": "mekanism"}','{"text": "dynamic_tank"}','{"text": ""}']}}
+setblock 17 64 113 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "a 3x3x3 dynamic"}','{"text": "tank with valve"}','{"text": "and structural"}','{"text": "glass"}']}}
+fill 25 64 101 25 79 114 minecraft:light_gray_concrete
+setblock 18 64 105 mekanism:dynamic_tank
+setblock 18 64 106 mekanism:dynamic_tank
+setblock 18 64 107 mekanism:dynamic_tank
+setblock 18 65 105 mekanism:dynamic_tank
+setblock 18 65 106 mekanism:structural_glass
+setblock 18 65 107 mekanism:dynamic_tank
+setblock 18 66 105 mekanism:dynamic_tank
+setblock 18 66 106 mekanism:dynamic_tank
+setblock 18 66 107 mekanism:dynamic_tank
+setblock 19 64 105 mekanism:dynamic_tank
+setblock 19 64 106 mekanism:dynamic_tank
+setblock 19 64 107 mekanism:dynamic_tank
+setblock 19 65 105 mekanism:structural_glass
+setblock 19 65 107 mekanism:structural_glass
+setblock 19 66 105 mekanism:dynamic_tank
+setblock 19 66 106 mekanism:structural_glass
+setblock 19 66 107 mekanism:dynamic_tank
+setblock 20 64 105 mekanism:dynamic_tank
+setblock 20 64 106 mekanism:dynamic_tank
+setblock 20 64 107 mekanism:dynamic_tank
+setblock 20 65 105 mekanism:structural_glass
+setblock 20 65 107 mekanism:dynamic_valve
+setblock 20 66 105 mekanism:dynamic_tank
+setblock 20 66 106 mekanism:structural_glass
+setblock 20 66 107 mekanism:dynamic_tank
+setblock 21 64 105 mekanism:dynamic_tank
+setblock 21 64 106 mekanism:dynamic_tank
+setblock 21 64 107 mekanism:dynamic_tank
+setblock 21 65 105 mekanism:dynamic_tank
+setblock 21 65 106 mekanism:structural_glass
+setblock 21 65 107 mekanism:dynamic_tank
+setblock 21 66 105 mekanism:dynamic_tank
+setblock 21 66 106 mekanism:dynamic_tank
+setblock 21 66 107 mekanism:dynamic_tank
 execute as @e[type=minecraft:item,tag=!kw_shot] run kill @s

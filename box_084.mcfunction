@@ -1,18 +1,20 @@
-# 084 botania_runes/runic_altar
-#area 122 139 141 164
-fill 122 64 139 141 91 164 minecraft:air
-fill 122 60 139 141 62 164 minecraft:stone
-fill 122 63 139 141 63 164 minecraft:light_gray_concrete
-fill 126 64 145 141 79 145 minecraft:light_gray_concrete
-fill 126 64 145 126 79 158 minecraft:light_gray_concrete
-setblock 127 64 157 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "084"}','{"text": "botania_runes"}','{"text": "runic_altar"}','{"text": ""}']}}
-setblock 128 64 157 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "altar with"}','{"text": "ingredients, a"}','{"text": "spreader aimed"}','{"text": "at it, wand HUD"}']}}
-fill 136 64 145 136 79 158 minecraft:light_gray_concrete
-setblock 128 64 150 botania:mana_pool{mana:1000000}
-setblock 129 64 150 botania:mana_spreader{rotationX:180f,rotationY:0f,mana:1000}
-setblock 133 64 150 botania:runic_altar
-kw testworld use 133 64 150 up botania:manasteel_ingot
-kw testworld use 133 64 150 up botania:mana_powder
-kw testworld use 133 64 150 up minecraft:bone_meal
-kw testworld use 133 64 150 up minecraft:sugar_cane
+# 084 botania/farm
+#area 71 139 94 164
+fill 71 64 139 94 91 164 minecraft:air
+fill 71 60 139 94 62 164 minecraft:stone
+fill 71 63 139 94 63 164 minecraft:light_gray_concrete
+fill 75 64 145 94 79 145 minecraft:light_gray_concrete
+fill 75 64 145 75 79 158 minecraft:light_gray_concrete
+setblock 76 64 157 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "084"}','{"text": "botania"}','{"text": "farm"}','{"text": ""}']}}
+setblock 77 64 157 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "the finished"}','{"text": "stage 1 mana"}','{"text": "farm"}','{"text": ""}']}}
+fill 89 64 145 89 79 158 minecraft:light_gray_concrete
+fill 77 63 148 87 63 152 minecraft:grass_block
+setblock 82 64 150 botania:mana_pool{mana:200000}
+setblock 82 64 151 botania:manastar
+setblock 79 64 150 botania:mana_spreader{rotationX:180f,rotationY:0f,mana:1000}
+setblock 85 64 150 botania:mana_spreader{rotationX:0f,rotationY:0f,mana:1000}
+setblock 78 64 149 botania:endoflame
+setblock 78 64 151 botania:endoflame
+setblock 86 64 149 botania:endoflame
+setblock 86 64 151 botania:endoflame
 execute as @e[type=minecraft:item,tag=!kw_shot] run kill @s

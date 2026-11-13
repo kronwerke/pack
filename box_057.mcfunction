@@ -1,12 +1,13 @@
-# 057 antimatter/wind
-#area 276 95 295 124
-fill 276 64 95 295 95 124 minecraft:air
-fill 276 60 95 295 62 124 minecraft:stone
-fill 276 63 95 295 63 124 minecraft:light_gray_concrete
-fill 280 64 101 295 83 101 minecraft:light_gray_concrete
-fill 280 64 101 280 83 118 minecraft:light_gray_concrete
-setblock 281 64 117 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "057"}','{"text": "antimatter"}','{"text": "wind"}','{"text": ""}']}}
-setblock 282 64 117 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "the large wind"}','{"text": "generator"}','{"text": ""}','{"text": ""}']}}
-fill 290 64 101 290 83 118 minecraft:light_gray_concrete
-kw testworld use 285 63 105 up mekanismgenerators:wind_generator
+# 057 mekanism_elite/mekasuit
+#area 240 95 259 120
+fill 240 64 95 259 91 120 minecraft:air
+fill 240 60 95 259 62 120 minecraft:stone
+fill 240 63 95 259 63 120 minecraft:light_gray_concrete
+fill 244 64 101 259 79 101 minecraft:light_gray_concrete
+fill 244 64 101 244 79 114 minecraft:light_gray_concrete
+setblock 245 64 113 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "057"}','{"text": "mekanism_elite"}','{"text": "mekasuit"}','{"text": ""}']}}
+setblock 246 64 113 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "full MekaSuit"}','{"text": "at the"}','{"text": "modification"}','{"text": "station"}']}}
+fill 254 64 101 254 79 114 minecraft:light_gray_concrete
+summon armor_stand 248.5 64 106.5 {ArmorItems:[{id:"mekanism:mekasuit_boots",count:1},{id:"mekanism:mekasuit_pants",count:1},{id:"mekanism:mekasuit_bodyarmor",count:1},{id:"mekanism:mekasuit_helmet",count:1}],ShowArms:1b,NoBasePlate:1b,Tags:["kw_shot"],Rotation:[180f,0f]}
+setblock 250 64 106 mekanism:modification_station[facing=south]
 execute as @e[type=minecraft:item,tag=!kw_shot] run kill @s

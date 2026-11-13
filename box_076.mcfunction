@@ -1,21 +1,13 @@
-# 076 botania/pure_daisy
-#area -4 139 15 164
-fill -4 64 139 15 91 164 minecraft:air
-fill -4 60 139 15 62 164 minecraft:stone
-fill -4 63 139 15 63 164 minecraft:light_gray_concrete
-fill 0 64 145 15 79 145 minecraft:light_gray_concrete
-fill 0 64 145 0 79 158 minecraft:light_gray_concrete
-setblock 1 64 157 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "076"}','{"text": "botania"}','{"text": "pure_daisy"}','{"text": ""}']}}
-setblock 2 64 157 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "the daisy with"}','{"text": "8 stone or"}','{"text": "logs, half"}','{"text": "converted"}']}}
-fill 10 64 145 10 79 158 minecraft:light_gray_concrete
-setblock 5 63 150 minecraft:grass_block
-setblock 5 64 150 botania:pure_daisy
-setblock 4 64 149 minecraft:stone
-setblock 5 64 149 botania:livingrock
-setblock 6 64 149 minecraft:stone
-setblock 4 64 150 minecraft:oak_log[axis=y]
-setblock 6 64 150 botania:livingwood_log[axis=y]
-setblock 4 64 151 botania:livingrock
-setblock 5 64 151 minecraft:stone
-setblock 6 64 151 botania:livingrock
+# 076 ars_master/alteration
+#area 227 118 246 143
+fill 227 64 118 246 91 143 minecraft:air
+fill 227 60 118 246 62 143 minecraft:stone
+fill 227 63 118 246 63 143 minecraft:light_gray_concrete
+fill 231 64 124 246 79 124 minecraft:light_gray_concrete
+fill 231 64 124 231 79 137 minecraft:light_gray_concrete
+setblock 232 64 136 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "076"}','{"text": "ars_master"}','{"text": "alteration"}','{"text": ""}']}}
+setblock 233 64 136 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "alteration"}','{"text": "table with a"}','{"text": "robe on the"}','{"text": "stand"}']}}
+fill 241 64 124 241 79 137 minecraft:light_gray_concrete
+kw testworld use 235 63 129 up ars_nouveau:alteration_table
+summon armor_stand 238.5 64 129.5 {ArmorItems:[{id:"ars_nouveau:arcanist_boots",count:1},{id:"ars_nouveau:arcanist_leggings",count:1},{id:"ars_nouveau:arcanist_robes",count:1},{id:"ars_nouveau:arcanist_hood",count:1}],ShowArms:1b,NoBasePlate:1b,Tags:["kw_shot"],Rotation:[180f,0f]}
 execute as @e[type=minecraft:item,tag=!kw_shot] run kill @s

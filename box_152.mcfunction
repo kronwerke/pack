@@ -1,41 +1,28 @@
-# 152 draconic/dust, injectors, stabilizer
-#area -4 349 39 376
-fill -4 64 349 36 91 376 minecraft:air
-fill 37 64 349 39 91 376 minecraft:air
-fill -4 60 349 39 62 376 minecraft:stone
-fill -4 63 349 39 63 376 minecraft:light_gray_concrete
-fill 0 64 355 39 79 355 minecraft:light_gray_concrete
-fill 0 64 355 0 79 370 minecraft:light_gray_concrete
-setblock 1 64 369 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "152.1"}','{"text": "draconic"}','{"text": "dust"}','{"text": ""}']}}
-setblock 2 64 369 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Bau Draconium"}','{"text": "im End ab"}','{"text": ""}','{"text": ""}']}}
-fill 10 64 355 10 79 370 minecraft:light_gray_concrete
-fill 4 64 359 6 65 360 minecraft:end_stone
-setblock 5 64 360 draconicevolution:end_draconium_ore
-setblock 6 65 360 draconicevolution:end_draconium_ore
-setblock 4 65 359 draconicevolution:end_draconium_ore
-setblock 11 64 369 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "152.2"}','{"text": "draconic"}','{"text": "injectors"}','{"text": ""}']}}
-setblock 12 64 369 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Stell acht"}','{"text": "Draconium-Injektoren"}','{"text": "auf"}','{"text": ""}']}}
-fill 22 64 355 22 79 370 minecraft:light_gray_concrete
-setblock 16 64 361 draconicevolution:crafting_core
-setblock 13 64 360 draconicevolution:basic_crafting_injector[facing=east]
-setblock 15 64 358 draconicevolution:basic_crafting_injector[facing=south]
-setblock 19 64 360 draconicevolution:basic_crafting_injector[facing=west]
-setblock 15 64 364 draconicevolution:basic_crafting_injector[facing=north]
-setblock 13 64 362 draconicevolution:basic_crafting_injector[facing=east]
-setblock 17 64 358 draconicevolution:basic_crafting_injector[facing=south]
-setblock 19 64 362 draconicevolution:basic_crafting_injector[facing=west]
-setblock 17 64 364 draconicevolution:basic_crafting_injector[facing=north]
-setblock 23 64 369 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "152.3"}','{"text": "draconic"}','{"text": "stabilizer"}','{"text": ""}']}}
-setblock 24 64 369 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Bau vier"}','{"text": "Stabilisatoren"}','{"text": "mit Gaia"}','{"text": ""}']}}
-fill 34 64 355 34 79 370 minecraft:light_gray_concrete
-fill 27 64 360 29 66 362 draconicevolution:draconium_block
-setblock 28 65 361 draconicevolution:energy_core
-setblock 24 64 361 minecraft:polished_deepslate
-setblock 24 65 361 draconicevolution:energy_core_stabilizer
-setblock 32 64 361 minecraft:polished_deepslate
-setblock 32 65 361 draconicevolution:energy_core_stabilizer
-setblock 28 64 357 minecraft:polished_deepslate
-setblock 28 65 357 draconicevolution:energy_core_stabilizer
-setblock 28 64 365 minecraft:polished_deepslate
-setblock 28 65 365 draconicevolution:energy_core_stabilizer
+# 152 undergarden/arrival, infuser
+#area 73 330 101 355
+fill 73 64 330 101 91 355 minecraft:air
+fill 73 60 330 101 62 355 minecraft:stone
+fill 73 63 330 101 63 355 minecraft:light_gray_concrete
+fill 77 64 336 101 79 336 minecraft:light_gray_concrete
+fill 77 64 336 77 79 349 minecraft:light_gray_concrete
+setblock 78 64 348 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "152.1"}','{"text": "undergarden"}','{"text": "arrival"}','{"text": ""}']}}
+setblock 79 64 348 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Steig hinunter"}','{"text": ""}','{"text": ""}','{"text": ""}']}}
+fill 86 64 336 86 79 349 minecraft:light_gray_concrete
+setblock 80 65 341 minecraft:stone_bricks
+setblock 80 66 341 minecraft:stone_bricks
+setblock 80 67 341 minecraft:stone_bricks
+setblock 81 64 341 minecraft:stone_bricks
+setblock 81 68 341 minecraft:stone_bricks
+setblock 82 64 341 minecraft:stone_bricks
+setblock 82 68 341 minecraft:stone_bricks
+setblock 83 65 341 minecraft:stone_bricks
+setblock 83 66 341 minecraft:stone_bricks
+setblock 83 67 341 minecraft:stone_bricks
+fill 81 65 341 82 67 341 undergarden:undergarden_portal[axis=x]
+execute if block 81 66 341 undergarden:undergarden_portal
+setblock 87 64 348 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "152.2"}','{"text": "undergarden"}','{"text": "infuser"}','{"text": ""}']}}
+setblock 88 64 348 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Bau den"}','{"text": "Infusionstisch"}','{"text": ""}','{"text": ""}']}}
+fill 96 64 336 96 79 349 minecraft:light_gray_concrete
+fill 90 63 340 92 63 342 undergarden:depthrock
+setblock 91 64 341 undergarden:infuser[state=infusing_utherium]
 execute as @e[type=minecraft:item,tag=!kw_shot] run kill @s

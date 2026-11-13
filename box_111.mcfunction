@@ -1,14 +1,30 @@
-# 111 hexerei/sage_plate
-#area 294 176 313 201
-fill 294 64 176 313 91 201 minecraft:air
-fill 294 60 176 313 62 201 minecraft:stone
-fill 294 63 176 313 63 201 minecraft:light_gray_concrete
-fill 298 64 182 313 79 182 minecraft:light_gray_concrete
-fill 298 64 182 298 79 195 minecraft:light_gray_concrete
-setblock 299 64 194 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "111"}','{"text": "hexerei"}','{"text": "sage_plate"}','{"text": ""}']}}
-setblock 300 64 194 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "burning sage"}','{"text": "plate with the"}','{"text": "smoke ring"}','{"text": ""}']}}
-fill 308 64 182 308 79 195 minecraft:light_gray_concrete
-setblock 303 64 187 hexerei:sage_burning_plate[facing=south]
-kw testworld use 303 64 187 up hexerei:dried_sage_bundle
-kw testworld use 303 64 187 up minecraft:flint_and_steel
+# 111 hexerei/herbs
+#area 249 176 268 201
+fill 249 64 176 268 91 201 minecraft:air
+fill 249 60 176 268 62 201 minecraft:stone
+fill 249 63 176 268 63 201 minecraft:light_gray_concrete
+fill 253 64 182 268 79 182 minecraft:light_gray_concrete
+fill 253 64 182 253 79 195 minecraft:light_gray_concrete
+setblock 254 64 194 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "111"}','{"text": "hexerei"}','{"text": "herbs"}','{"text": ""}']}}
+setblock 255 64 194 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "herb garden"}','{"text": "with all four"}','{"text": "plants grown"}','{"text": ""}']}}
+fill 263 64 182 263 79 195 minecraft:light_gray_concrete
+fill 256 63 186 260 63 188 minecraft:grass_block
+setblock 256 64 186 hexerei:mandrake_plant[age=3]
+setblock 257 64 186 hexerei:belladonna_plant[age=3]
+setblock 259 64 186 hexerei:mugwort_bush[half=lower,age=3]
+setblock 259 65 186 hexerei:mugwort_bush[half=upper,age=3]
+setblock 260 64 186 hexerei:yellow_dock_bush[half=lower,age=3]
+setblock 260 65 186 hexerei:yellow_dock_bush[half=upper,age=3]
+setblock 256 64 187 hexerei:mandrake_plant[age=3]
+setblock 257 64 187 hexerei:belladonna_plant[age=3]
+setblock 259 64 187 hexerei:mugwort_bush[half=lower,age=3]
+setblock 259 65 187 hexerei:mugwort_bush[half=upper,age=3]
+setblock 260 64 187 hexerei:yellow_dock_bush[half=lower,age=3]
+setblock 260 65 187 hexerei:yellow_dock_bush[half=upper,age=3]
+setblock 256 64 188 hexerei:mandrake_plant[age=3]
+setblock 257 64 188 hexerei:belladonna_plant[age=3]
+setblock 259 64 188 hexerei:mugwort_bush[half=lower,age=3]
+setblock 259 65 188 hexerei:mugwort_bush[half=upper,age=3]
+setblock 260 64 188 hexerei:yellow_dock_bush[half=lower,age=3]
+setblock 260 65 188 hexerei:yellow_dock_bush[half=upper,age=3]
 execute as @e[type=minecraft:item,tag=!kw_shot] run kill @s

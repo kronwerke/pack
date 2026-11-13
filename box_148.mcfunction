@@ -1,27 +1,23 @@
-# 148 deeper_darker/portal, resonarium
-#area 49 330 77 355
-fill 49 64 330 77 91 355 minecraft:air
-fill 49 60 330 77 62 355 minecraft:stone
-fill 49 63 330 77 63 355 minecraft:light_gray_concrete
-fill 53 64 336 77 79 336 minecraft:light_gray_concrete
-fill 53 64 336 53 79 349 minecraft:light_gray_concrete
-setblock 54 64 348 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "148.1"}','{"text": "deeper_darker"}','{"text": "portal"}','{"text": ""}']}}
-setblock 55 64 348 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Bau das Portal"}','{"text": "zur Anderwelt"}','{"text": ""}','{"text": ""}']}}
-fill 62 64 336 62 79 349 minecraft:light_gray_concrete
-setblock 56 65 341 minecraft:reinforced_deepslate
-setblock 56 66 341 minecraft:reinforced_deepslate
-setblock 56 67 341 minecraft:reinforced_deepslate
-setblock 57 64 341 minecraft:reinforced_deepslate
-setblock 57 68 341 minecraft:reinforced_deepslate
-setblock 58 64 341 minecraft:reinforced_deepslate
-setblock 58 68 341 minecraft:reinforced_deepslate
-setblock 59 65 341 minecraft:reinforced_deepslate
-setblock 59 66 341 minecraft:reinforced_deepslate
-setblock 59 67 341 minecraft:reinforced_deepslate
-fill 57 65 341 58 67 341 deeperdarker:otherside_portal[axis=x]
-execute if block 57 66 341 deeperdarker:otherside_portal
-setblock 63 64 348 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "148.2"}','{"text": "deeper_darker"}','{"text": "resonarium"}','{"text": ""}']}}
-setblock 64 64 348 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Schmiede"}','{"text": "Resonarium"}','{"text": ""}','{"text": ""}']}}
-fill 72 64 336 72 79 349 minecraft:light_gray_concrete
-summon armor_stand 67.5 64 341.5 {ArmorItems:[{id:"deeperdarker:resonarium_boots",count:1},{id:"deeperdarker:resonarium_leggings",count:1},{id:"deeperdarker:resonarium_chestplate",count:1},{id:"deeperdarker:resonarium_helmet",count:1}],ShowArms:1b,NoBasePlate:1b,Tags:["kw_shot"],Rotation:[180f,0f]}
+# 148 nether/welcome
+#area -4 330 14 355
+fill -4 64 330 14 91 355 minecraft:air
+fill -4 60 330 14 62 355 minecraft:stone
+fill -4 63 330 14 63 355 minecraft:light_gray_concrete
+fill 0 64 336 14 79 336 minecraft:light_gray_concrete
+fill 0 64 336 0 79 349 minecraft:light_gray_concrete
+setblock 1 64 348 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "148"}','{"text": "nether"}','{"text": "welcome"}','{"text": ""}']}}
+setblock 2 64 348 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Betritt den"}','{"text": "Nether"}','{"text": ""}','{"text": ""}']}}
+fill 9 64 336 9 79 349 minecraft:light_gray_concrete
+setblock 3 65 341 minecraft:obsidian
+setblock 3 66 341 minecraft:obsidian
+setblock 3 67 341 minecraft:obsidian
+setblock 4 64 341 minecraft:obsidian
+setblock 4 68 341 minecraft:obsidian
+setblock 5 64 341 minecraft:obsidian
+setblock 5 68 341 minecraft:obsidian
+setblock 6 65 341 minecraft:obsidian
+setblock 6 66 341 minecraft:obsidian
+setblock 6 67 341 minecraft:obsidian
+fill 4 65 341 5 67 341 minecraft:nether_portal[axis=x]
+execute if block 4 66 341 minecraft:nether_portal
 execute as @e[type=minecraft:item,tag=!kw_shot] run kill @s

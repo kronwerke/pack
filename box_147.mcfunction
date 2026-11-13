@@ -1,30 +1,55 @@
-# 147 aether/portal, altar
-#area 25 330 53 355
-fill 25 64 330 53 91 355 minecraft:air
-fill 25 60 330 53 62 355 minecraft:stone
-fill 25 63 330 53 63 355 minecraft:light_gray_concrete
-fill 29 64 336 53 79 336 minecraft:light_gray_concrete
-fill 29 64 336 29 79 349 minecraft:light_gray_concrete
-setblock 30 64 348 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "147.1"}','{"text": "aether"}','{"text": "portal"}','{"text": ""}']}}
-setblock 31 64 348 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Bau das"}','{"text": "Glowstone-Portal"}','{"text": ""}','{"text": ""}']}}
-fill 38 64 336 38 79 349 minecraft:light_gray_concrete
-setblock 32 65 341 minecraft:glowstone
-setblock 32 66 341 minecraft:glowstone
-setblock 32 67 341 minecraft:glowstone
-setblock 33 64 341 minecraft:glowstone
-setblock 33 68 341 minecraft:glowstone
-setblock 34 64 341 minecraft:glowstone
-setblock 34 68 341 minecraft:glowstone
-setblock 35 65 341 minecraft:glowstone
-setblock 35 66 341 minecraft:glowstone
-setblock 35 67 341 minecraft:glowstone
-fill 33 65 341 34 67 341 aether:aether_portal[axis=x]
-execute if block 33 66 341 aether:aether_portal
-setblock 39 64 348 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "147.2"}','{"text": "aether"}','{"text": "altar"}','{"text": ""}']}}
-setblock 40 64 348 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Bau einen Altar"}','{"text": ""}','{"text": ""}','{"text": ""}']}}
-fill 48 64 336 48 79 349 minecraft:light_gray_concrete
-fill 41 63 340 45 63 342 aether:holystone
-setblock 41 64 341 aether:altar
-setblock 43 64 341 aether:freezer
-setblock 45 64 341 aether:incubator
+# 147 hostile_networks/sim_chamber, scaling, data_center
+#area 285 307 328 334
+fill 285 64 307 320 95 334 minecraft:air
+fill 321 64 307 328 95 334 minecraft:air
+fill 285 60 307 328 62 334 minecraft:stone
+fill 285 63 307 328 63 334 minecraft:light_gray_concrete
+fill 289 64 313 328 83 313 minecraft:light_gray_concrete
+fill 289 64 313 289 83 328 minecraft:light_gray_concrete
+setblock 290 64 327 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "147.1"}','{"text": "hostile_networks"}','{"text": "sim_chamber"}','{"text": ""}']}}
+setblock 291 64 327 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Die"}','{"text": "Simulationskammer"}','{"text": ""}','{"text": ""}']}}
+fill 299 64 313 299 83 328 minecraft:light_gray_concrete
+setblock 293 64 318 hostilenetworks:sim_chamber[facing=south]
+setblock 295 64 318 hostilenetworks:loot_fabricator[facing=south]
+setblock 300 64 327 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "147.2"}','{"text": "hostile_networks"}','{"text": "scaling"}','{"text": ""}']}}
+setblock 301 64 327 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Viele Kammern,"}','{"text": "ein Modell je"}','{"text": "Kammer"}','{"text": ""}']}}
+fill 311 64 313 311 83 328 minecraft:light_gray_concrete
+setblock 302 64 318 hostilenetworks:sim_chamber[facing=south]
+setblock 303 64 318 hostilenetworks:sim_chamber[facing=south]
+setblock 304 64 318 hostilenetworks:sim_chamber[facing=south]
+setblock 305 64 318 hostilenetworks:sim_chamber[facing=south]
+setblock 306 64 318 hostilenetworks:sim_chamber[facing=south]
+setblock 307 64 318 hostilenetworks:sim_chamber[facing=south]
+setblock 308 64 318 hostilenetworks:sim_chamber[facing=south]
+setblock 305 64 320 hostilenetworks:loot_fabricator[facing=south]
+setblock 312 64 327 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "147.3"}','{"text": "hostile_networks"}','{"text": "data_center"}','{"text": ""}']}}
+setblock 313 64 327 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Das"}','{"text": "Rechenzentrum"}','{"text": ""}','{"text": ""}']}}
+fill 323 64 313 323 83 328 minecraft:light_gray_concrete
+fill 314 64 316 320 64 322 minecraft:obsidian
+fill 314 70 316 320 70 322 minecraft:black_stained_glass
+fill 314 65 316 314 69 316 minecraft:black_stained_glass
+fill 314 65 317 314 69 317 minecraft:black_stained_glass
+fill 314 65 318 314 69 318 minecraft:black_stained_glass
+fill 314 65 319 314 69 319 minecraft:black_stained_glass
+fill 314 65 320 314 69 320 minecraft:black_stained_glass
+fill 314 65 321 314 69 321 minecraft:black_stained_glass
+fill 314 65 322 314 69 322 minecraft:black_stained_glass
+fill 315 65 316 315 69 316 minecraft:black_stained_glass
+fill 315 65 322 315 69 322 minecraft:black_stained_glass
+fill 316 65 316 316 69 316 minecraft:black_stained_glass
+fill 316 65 322 316 69 322 minecraft:black_stained_glass
+fill 317 65 316 317 69 316 minecraft:black_stained_glass
+fill 317 65 322 317 69 322 minecraft:black_stained_glass
+fill 318 65 316 318 69 316 minecraft:black_stained_glass
+fill 318 65 322 318 69 322 minecraft:black_stained_glass
+fill 319 65 316 319 69 316 minecraft:black_stained_glass
+fill 319 65 322 319 69 322 minecraft:black_stained_glass
+fill 320 65 316 320 69 316 minecraft:black_stained_glass
+fill 320 65 317 320 69 317 minecraft:black_stained_glass
+fill 320 65 318 320 69 318 minecraft:black_stained_glass
+fill 320 65 319 320 69 319 minecraft:black_stained_glass
+fill 320 65 320 320 69 320 minecraft:black_stained_glass
+fill 320 65 321 320 69 321 minecraft:black_stained_glass
+fill 320 65 322 320 69 322 minecraft:black_stained_glass
+setblock 317 65 322 hostilenetworks:data_center[facing=south]
 execute as @e[type=minecraft:item,tag=!kw_shot] run kill @s

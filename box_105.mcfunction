@@ -1,15 +1,14 @@
-# 105 occultism_afrit/mineshaft
-#area 184 176 203 201
-fill 184 64 176 203 91 201 minecraft:air
-fill 184 60 176 203 62 201 minecraft:stone
-fill 184 63 176 203 63 201 minecraft:light_gray_concrete
-fill 188 64 182 203 79 182 minecraft:light_gray_concrete
-fill 188 64 182 188 79 195 minecraft:light_gray_concrete
-setblock 189 64 194 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "105"}','{"text": "occultism_afrit"}','{"text": "mineshaft"}','{"text": ""}']}}
-setblock 190 64 194 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "dimensional"}','{"text": "mineshaft with"}','{"text": "a lamp inside"}','{"text": "and a hopper"}']}}
-setblock 191 64 194 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "below"}','{"text": ""}','{"text": ""}','{"text": ""}']}}
-fill 198 64 182 198 79 195 minecraft:light_gray_concrete
-setblock 193 64 187 minecraft:hopper[facing=east]
-setblock 193 65 187 occultism:dimensional_mineshaft[rotation=0]
-setblock 194 64 187 minecraft:chest[facing=south]{Items:[]}
+# 105 occultism_afrit/iesnium
+#area 127 176 146 201
+fill 127 64 176 146 91 201 minecraft:air
+fill 127 60 176 146 62 201 minecraft:stone
+fill 127 63 176 146 63 201 minecraft:light_gray_concrete
+fill 131 64 182 146 79 182 minecraft:light_gray_concrete
+fill 131 64 182 131 79 195 minecraft:light_gray_concrete
+setblock 132 64 194 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "105"}','{"text": "occultism_afrit"}','{"text": "iesnium"}','{"text": ""}']}}
+setblock 133 64 194 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "divination rod"}','{"text": "highlight on"}','{"text": "iesnium ore in"}','{"text": "the Nether"}']}}
+fill 141 64 182 141 79 195 minecraft:light_gray_concrete
+fill 135 64 186 137 65 187 minecraft:netherrack
+setblock 136 64 187 occultism:iesnium_ore
+setblock 135 65 187 occultism:iesnium_ore
 execute as @e[type=minecraft:item,tag=!kw_shot] run kill @s

@@ -1,17 +1,12 @@
-# 060 ars_nouveau/chamber_auto
-#area 28 118 47 143
-fill 28 64 118 47 91 143 minecraft:air
-fill 28 60 118 47 62 143 minecraft:stone
-fill 28 63 118 47 63 143 minecraft:light_gray_concrete
-fill 32 64 124 47 79 124 minecraft:light_gray_concrete
-fill 32 64 124 32 79 137 minecraft:light_gray_concrete
-setblock 33 64 136 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "060"}','{"text": "ars_nouveau"}','{"text": "chamber_auto"}','{"text": ""}']}}
-setblock 34 64 136 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "hoppers above"}','{"text": "and below a"}','{"text": "chamber feeding"}','{"text": "a chest"}']}}
-fill 42 64 124 42 79 137 minecraft:light_gray_concrete
-setblock 37 67 129 minecraft:chest[facing=south]{Items:[{Slot:0b,id:"minecraft:amethyst_shard",count:64}]}
-setblock 37 66 129 minecraft:hopper[facing=down]
-setblock 37 65 129 ars_nouveau:imbuement_chamber[facing=up]
-setblock 37 64 129 minecraft:hopper[facing=east]
-setblock 38 64 129 minecraft:chest[facing=south]{Items:[]}
-setblock 35 64 129 ars_nouveau:source_jar[fill=11]{source:10000}
+# 060 antimatter/wind
+#area 291 95 310 124
+fill 291 64 95 310 95 124 minecraft:air
+fill 291 60 95 310 62 124 minecraft:stone
+fill 291 63 95 310 63 124 minecraft:light_gray_concrete
+fill 295 64 101 310 83 101 minecraft:light_gray_concrete
+fill 295 64 101 295 83 118 minecraft:light_gray_concrete
+setblock 296 64 117 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "060"}','{"text": "antimatter"}','{"text": "wind"}','{"text": ""}']}}
+setblock 297 64 117 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "the large wind"}','{"text": "generator"}','{"text": ""}','{"text": ""}']}}
+fill 305 64 101 305 83 118 minecraft:light_gray_concrete
+kw testworld use 300 63 105 up mekanismgenerators:wind_generator
 execute as @e[type=minecraft:item,tag=!kw_shot] run kill @s

@@ -1,16 +1,18 @@
-# 067 ars_apprentice/potions
-#area 135 118 154 143
-fill 135 64 118 154 91 143 minecraft:air
-fill 135 60 118 154 62 143 minecraft:stone
-fill 135 63 118 154 63 143 minecraft:light_gray_concrete
-fill 139 64 124 154 79 124 minecraft:light_gray_concrete
-fill 139 64 124 139 79 137 minecraft:light_gray_concrete
-setblock 140 64 136 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "067"}','{"text": "ars_apprentice"}','{"text": "potions"}','{"text": ""}']}}
-setblock 141 64 136 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "potion jars"}','{"text": "next to the"}','{"text": "cauldron and an"}','{"text": "alchemical"}']}}
-setblock 142 64 136 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "sourcelink"}','{"text": ""}','{"text": ""}','{"text": ""}']}}
-fill 149 64 124 149 79 137 minecraft:light_gray_concrete
-setblock 144 64 129 ars_nouveau:wixie_cauldron[converted=true,filled=true]
-setblock 142 64 129 ars_nouveau:potion_jar[fill=11]
-setblock 143 64 129 ars_nouveau:potion_jar[fill=6]
-setblock 146 64 129 ars_nouveau:alchemical_sourcelink
+# 067 ars_nouveau/drygmy
+#area 88 118 107 143
+fill 88 64 118 107 91 143 minecraft:air
+fill 88 60 118 107 62 143 minecraft:stone
+fill 88 63 118 107 63 143 minecraft:light_gray_concrete
+fill 92 64 124 107 79 124 minecraft:light_gray_concrete
+fill 92 64 124 92 79 137 minecraft:light_gray_concrete
+setblock 93 64 136 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "067"}','{"text": "ars_nouveau"}','{"text": "drygmy"}','{"text": ""}']}}
+setblock 94 64 136 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Drygmy henge"}','{"text": "with chest and"}','{"text": "jar"}','{"text": ""}']}}
+fill 102 64 124 102 79 137 minecraft:light_gray_concrete
+setblock 97 64 129 minecraft:mossy_cobblestone
+kw testworld use 97 64 129 up ars_nouveau:drygmy_charm
+execute unless block 97 64 129 minecraft:mossy_cobblestone
+setblock 98 64 129 minecraft:chest[facing=south]{Items:[]}
+setblock 96 64 129 ars_nouveau:source_jar[fill=11]{source:10000}
+summon minecraft:cow 99.5 64 131.5 {NoAI:1b,PersistenceRequired:1b,Silent:1b,Tags:["kw_shot"],Rotation:[180f,0f]}
+summon minecraft:sheep 95.5 64 131.5 {NoAI:1b,PersistenceRequired:1b,Silent:1b,Tags:["kw_shot"],Rotation:[180f,0f]}
 execute as @e[type=minecraft:item,tag=!kw_shot] run kill @s

@@ -1,32 +1,32 @@
-# 121 immersive/list_mb
-#area 204 211 232 239
-fill 204 64 211 232 95 239 minecraft:air
-fill 204 60 211 232 62 239 minecraft:stone
-fill 204 63 211 232 63 239 minecraft:light_gray_concrete
-fill 208 64 217 232 83 217 minecraft:light_gray_concrete
-fill 208 64 217 208 83 233 minecraft:light_gray_concrete
-setblock 209 64 232 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "121"}','{"text": "immersive"}','{"text": "list_mb"}','{"text": ""}']}}
-setblock 210 64 232 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "all seven stage"}','{"text": "2 structures"}','{"text": "side by side"}','{"text": ""}']}}
-fill 227 64 217 227 83 233 minecraft:light_gray_concrete
-place template immersiveengineering:multiblocks/sheetmetal_tank 210 64 219 none
-kw testworld use 211 65 221 south immersiveengineering:hammer
-execute unless block 211 65 221 immersiveengineering:sheetmetal_iron
-place template immersiveengineering:multiblocks/silo 214 64 219 none
-kw testworld use 215 65 221 south immersiveengineering:hammer
-execute unless block 215 65 221 immersiveengineering:sheetmetal_iron
-place template immersiveengineering:multiblocks/improved_blast_furnace 218 64 219 none
-kw testworld use 219 65 221 south immersiveengineering:hammer
-execute unless block 219 65 221 immersiveengineering:blastbrick_reinforced
-place template immersiveengineering:multiblocks/shelf 222 64 219 none
-kw testworld use 223 65 220 south immersiveengineering:hammer
-execute unless block 223 65 220 immersiveengineering:steel_catwalk
-place template immersiveengineering:multiblocks/coke_oven 212 64 225 none
-kw testworld use 213 65 227 south immersiveengineering:hammer
-execute unless block 213 65 227 immersiveengineering:cokebrick
-place template immersiveengineering:multiblocks/blast_furnace 217 64 225 none
-kw testworld use 218 65 227 south immersiveengineering:hammer
-execute unless block 218 65 227 immersiveengineering:blastbrick
-place template immersiveengineering:multiblocks/alloy_smelter 222 64 225 none
-kw testworld use 223 65 226 south immersiveengineering:hammer
-execute unless block 223 65 226 immersiveengineering:alloybrick
+# 121 immersive/dynamo, watermill
+#area 97 211 136 238
+fill 97 64 211 126 101 238 minecraft:air
+fill 127 64 211 136 101 238 minecraft:air
+fill 97 60 211 136 62 238 minecraft:stone
+fill 97 63 211 136 63 238 minecraft:light_gray_concrete
+fill 101 64 217 136 89 217 minecraft:light_gray_concrete
+fill 101 64 217 101 89 232 minecraft:light_gray_concrete
+setblock 102 64 231 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "121.1"}','{"text": "immersive"}','{"text": "dynamo"}','{"text": ""}']}}
+setblock 103 64 231 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "dynamo with"}','{"text": "windmill, a"}','{"text": "windmill on a"}','{"text": "tower, three"}']}}
+setblock 104 64 231 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "water wheels on"}','{"text": "one shaft"}','{"text": ""}','{"text": ""}']}}
+fill 117 64 217 117 89 232 minecraft:light_gray_concrete
+fill 109 64 221 109 70 221 immersiveengineering:treated_wood_horizontal
+setblock 109 71 221 immersiveengineering:dynamo[facing=south]
+kw testworld use 109 71 221 south immersiveengineering:windmill
+execute unless block 109 71 222 minecraft:air
+setblock 118 64 231 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "121.2"}','{"text": "immersive"}','{"text": "watermill"}','{"text": ""}']}}
+setblock 119 64 231 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Bau ein"}','{"text": "Wasserrad"}','{"text": ""}','{"text": ""}']}}
+fill 131 64 217 131 89 232 minecraft:light_gray_concrete
+fill 124 64 220 124 67 220 immersiveengineering:treated_wood_horizontal
+setblock 124 68 220 immersiveengineering:dynamo[facing=south]
+kw testworld use 124 68 220 south immersiveengineering:watermill
+execute unless block 124 68 221 minecraft:air
+setblock 119 63 221 minecraft:water
+setblock 120 63 221 minecraft:air
+setblock 121 63 221 minecraft:air
+setblock 122 63 221 minecraft:air
+setblock 123 63 221 minecraft:air
+setblock 124 63 221 minecraft:air
+setblock 125 63 221 minecraft:air
+setblock 126 63 221 minecraft:air
 execute as @e[type=minecraft:item,tag=!kw_shot] run kill @s

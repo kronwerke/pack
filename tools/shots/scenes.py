@@ -272,6 +272,8 @@ def _(b):
 
 
 ie_scene("immersive/coke_oven", "coke_oven")
+ie_scene("immersive/blast_furnace", "blast_furnace")
+ie_scene("immersive/improved_form", "improved_blast_furnace")
 ie_scene("immersive/kiln", "alloy_smelter")
 ie_scene("immersive/tank", "sheetmetal_tank")
 ie_scene("immersive/silo", "silo")
@@ -676,3 +678,126 @@ def _(b):
     for dx, dz in ((-2, -2), (0, -3), (2, -2), (-3, 0), (3, 0), (-2, 2), (2, 2)):
         b.b(4 + dx, 0, 4 + dz, "ars_nouveau:arcane_pedestal[facing=up]")
     b.b(7, 0, 7, "ars_nouveau:source_jar[fill=11]", "{source:10000}")
+
+
+@scene("ars_nouveau/imbuement")
+def _(b):
+    # the chamber with an amethyst shard in it, and a jar of source within two blocks so it works fast
+    b.b(4, 0, 4, "ars_nouveau:imbuement_chamber[facing=up]")
+    b.use(4, 0, 4, "south", "minecraft:amethyst_shard")
+    b.b(6, 0, 4, "ars_nouveau:source_jar[fill=11]", "{source:10000}")
+
+
+@scene("ars_nouveau/earth_essence")
+def _(b):
+    # three pedestals one block from the chamber with iron, seeds and dirt, a source gem in the chamber
+    b.b(4, 0, 4, "ars_nouveau:imbuement_chamber[facing=up]")
+    for (x, z), item in (((3, 4), "minecraft:iron_ingot"), ((5, 4), "minecraft:wheat_seeds"), ((4, 3), "minecraft:dirt")):
+        b.b(x, 0, z, "ars_nouveau:arcane_pedestal[facing=up]")
+        b.use(x, 0, z, "south", item)
+    b.use(4, 0, 4, "south", "ars_nouveau:source_gem")
+    b.b(6, 0, 3, "ars_nouveau:source_jar[fill=11]", "{source:10000}")
+
+
+# ===================================================================================
+# Botania: pools and what stands at them
+
+def spreader(b, x, y, z, to="east", mana=1000):
+    """A mana spreader that shoots to one side (Botania keeps the direction as an angle in its data)."""
+    angle = {"west": 0, "south": 90, "east": 180, "north": 270}[to]
+    b.b(x, y, z, "botania:mana_spreader", f"{{rotationX:{angle}f,rotationY:0f,mana:{mana}}}")
+
+
+@scene("botania/pool")
+def _(b):
+    # a full pool, and a spreader that shoots at it
+    pool(b, 5, 0, 4)
+    spreader(b, 2, 0, 4, "east")
+
+
+@scene("botania/mana_void")
+def _(b):
+    # the void sits under the pool and swallows what no longer fits
+    b.b(4, 0, 4, "botania:mana_void")
+    pool(b, 4, 1, 4)
+
+
+@scene("botania/manastar")
+def _(b):
+    stage(b, 2, 2, 6, 6, "minecraft:grass_block")
+    pool(b, 4, 0, 4, mana=400000)
+    b.b(5, 0, 4, "botania:manastar")
+
+
+@scene("botania_runes/mana_pearl")
+def _(b):
+    # the pack's rule: a pearl only forms in a pool that stands on a brass casing
+    b.b(4, 0, 4, "create:brass_casing")
+    pool(b, 4, 1, 4)
+    b.drop(4, 2, 4, "minecraft:ender_pearl")
+
+
+@scene("botania_runes/runic_altar")
+def _(b):
+    # a pool feeds the spreader next to it, the spreader shoots at the altar with the ingredients on it
+    pool(b, 1, 0, 4)
+    spreader(b, 2, 0, 4, "east")
+    b.b(6, 0, 4, "botania:runic_altar")
+    for item in ("botania:manasteel_ingot", "botania:mana_powder", "minecraft:bone_meal", "minecraft:sugar_cane"):
+        b.use(6, 0, 4, "up", item)
+
+
+# ===================================================================================
+# The ways into the other worlds: every one a frame like the Nether portal's, four wide and
+# five high, without corners (ten blocks), as the quests say.
+
+def gate(b, frame, inside):
+    x, z = 2, 4
+    for dx in range(4):
+        for y in range(5):
+            side, end = dx in (0, 3), y in (0, 4)
+            if side != end:
+                b.b(x + dx, y, z, frame)
+    if inside:
+        b.f(x + 1, 1, z, x + 2, 3, z, inside)
+        b.expect(x + 1, 2, z, inside.split("[")[0])
+    return x, z
+
+
+@scene("nether/welcome", w=8)
+def _(b):
+    gate(b, "minecraft:obsidian", "minecraft:nether_portal[axis=x]")
+
+
+@scene("aether/portal", "list_dimensions/d_aether", w=8)
+def _(b):
+    gate(b, "minecraft:glowstone", "aether:aether_portal[axis=x]")
+
+
+@scene("deeper_darker/portal", "list_dimensions/d_otherside", w=8)
+def _(b):
+    gate(b, "minecraft:reinforced_deepslate", "deeperdarker:otherside_portal[axis=x]")
+
+
+@scene("undergarden/arrival", "list_dimensions/d_undergarden", w=8)
+def _(b):
+    gate(b, "minecraft:stone_bricks", "undergarden:undergarden_portal[axis=x]")
+
+
+@scene("list_dimensions/d_mining", w=8)
+def _(b):
+    # lit the way a player lights it: a source gem on the inside of the frame
+    x, z = gate(b, "kronwerke:grubenrahmen", None)
+    b.use(x + 1, 0, z, "up", "ars_nouveau:source_gem")
+    b.later(x + 1, 2, z, "block @ kronwerke:minenportal")
+
+
+# ===================================================================================
+# Powah
+
+@scene("powah/orb")
+def _(b):
+    # the orb with four rods around it, each within four blocks
+    b.b(4, 0, 4, "powah:energizing_orb[facing=down]")
+    for dx, dz in ((-2, 0), (2, 0), (0, -2)):
+        b.b(4 + dx, 0, 4 + dz, "powah:energizing_rod_starter[facing=down]")

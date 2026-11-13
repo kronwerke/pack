@@ -3,7 +3,7 @@
   -8,
   -8,
   428,
-  193
+  231
  ],
  "checks": [
   [
@@ -49,6 +49,10 @@
   [
    "mekanism_elite/induction_matrix",
    "execute in kronwerke:testworld if data block 87 65 56 inventory_id"
+  ],
+  [
+   "list_dimensions/d_mining",
+   "execute in kronwerke:testworld if block 60 66 209 kronwerke:minenportal"
   ]
  ]
 }

@@ -3052,3 +3052,30 @@ def _(b):
         for z in (3, 4, 5):
             b.b(x, 0, z, "productivetrees:brown_amber_sapling")
     b.focus(2, 0, 2, 6, 1, 6)
+
+
+# ===================================================================================
+# The bosses and beasts of the other worlds, standing still for their portrait
+
+def creature(key, entity, big=False, nbt=""):
+    @scene(key, w=11, d=11)
+    def _(b):
+        b.m(entity, 5, 0, 5, nbt=nbt, rot=0)
+        if big:
+            b.focus(3, 0, 3, 7, 3, 7)
+
+
+creature("aether/slider", "aether:slider", big=True)
+creature("aether/queen", "aether:valkyrie_queen")
+creature("aether/ride", "aether:moa")
+creature("undergarden/guardian", "undergarden:forgotten_guardian", big=True)
+creature("deeper_darker/stalker", "deeperdarker:stalker", big=True)
+creature("eternal_starlight/golem", "eternal_starlight:starlight_golem", big=True)
+creature("eternal_starlight/monstrosity", "eternal_starlight:lunar_monstrosity", big=True)
+creature("eternal_starlight/orb", "eternal_starlight:the_gatekeeper")
+
+shelf("aether/gloves", ["aether:zanite_gloves"])
+shelf("undergarden/forgotten", ["undergarden:forgotten_pickaxe"])
+shelf("eternal_starlight/starfire", ["eternal_starlight:starfire"])
+shelf("deeper_darker/echo_shard", ["deeperdarker:reinforced_echo_shard", "deeperdarker:ancient_compass"])
+shelf("exploration/e_compass", ["naturescompass:naturescompass"])

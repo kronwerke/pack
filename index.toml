@@ -25,16 +25,80 @@ file = "config/defaultoptions/options.txt"
 hash = "ee724c1c5fae33f5f53312baaf8993af08d93f28d9fd72cd1a809f0ca71890a0"
 
 [[files]]
+file = "config/drippyloadingscreen/options.txt"
+hash = "bf142aef020c2ca255ea803494c07df88478e36781b3b9ca64ba3183e97673fe"
+
+[[files]]
 file = "config/enderio/base-common.toml"
 hash = "e5efc1965708f75918276837d3cddb13a32b8703becfe1d65a9f4a1c2238c88a"
+
+[[files]]
+file = "config/fancymenu/assets/kronwerke/anim_dusk_gear_gate.apng"
+hash = "64952ed6ee9d3f9e1a20adc3109ac77cdead5f651cc1cfbc74bee06f9251d193"
+
+[[files]]
+file = "config/fancymenu/assets/kronwerke/anim_dusk_gear_tower.apng"
+hash = "f8d0fd3986a271961c48456b6c53af0806ec554f0a3c153bdb461999af6a4868"
+
+[[files]]
+file = "config/fancymenu/assets/kronwerke/anim_dusk_gear_wheel.apng"
+hash = "dc5670155805762d2879113230819d27766ac9e2e794f8c1fedcb82849a74b22"
+
+[[files]]
+file = "config/fancymenu/assets/kronwerke/anim_dusk_slow.apng"
+hash = "d5f20479fb7732317cba3a4dd1a70a5a2252aeff0ff2eb51b7e7981e4d26c8d2"
+
+[[files]]
+file = "config/fancymenu/assets/kronwerke/anim_dusk_smoke.apng"
+hash = "4677202cc86aef949d9a69d4d0fdd1ab27763e67853c2e01daa02660563d5429"
+
+[[files]]
+file = "config/fancymenu/assets/kronwerke/anim_dusk_train.apng"
+hash = "957f5ef834bce0f748a6675ad398188504b54887219bf3922114308220662d44"
+
+[[files]]
+file = "config/fancymenu/assets/kronwerke/anim_night_gear_gate.apng"
+hash = "8c057d0a38b4070f4c34e0cc33a1346d6465e52b3662b0152a1e1edaed5b6103"
+
+[[files]]
+file = "config/fancymenu/assets/kronwerke/anim_night_gear_tower.apng"
+hash = "55ae84846afab3a58d1123f0be905f3b402d03dcff3674ef6c96e9d8509e74a3"
+
+[[files]]
+file = "config/fancymenu/assets/kronwerke/anim_night_gear_wheel.apng"
+hash = "314e3b6c69bb74f0aaf8baf4e8e85a5ea318e40b1c21afee5b8a31dcbfb2da35"
+
+[[files]]
+file = "config/fancymenu/assets/kronwerke/anim_night_slow.apng"
+hash = "2a07a0e86f4a24b58fb4fc5def2162e03c3f7a6fbebea27adf189045de132a26"
+
+[[files]]
+file = "config/fancymenu/assets/kronwerke/anim_night_smoke.apng"
+hash = "9f119401b12c08a079b25e2b98e97b5fc2f8b3d6e25ddbed6414a880ab420ab1"
+
+[[files]]
+file = "config/fancymenu/assets/kronwerke/anim_night_train.apng"
+hash = "ad96ac986fad6ae979c44e0c40795482d743de354438ddbbbf809cabefe5ea83"
 
 [[files]]
 file = "config/fancymenu/assets/kronwerke/bar_fill.png"
 hash = "6d69d0016f791f92ad6e1992c665e1d75d56565e7d47db45f2fcd993b4798e86"
 
 [[files]]
+file = "config/fancymenu/assets/kronwerke/bar_fill_big.png"
+hash = "78541da7fdd21467c43e403a6c487a74a44ef181f9d915d23c6e227b4357cf21"
+
+[[files]]
+file = "config/fancymenu/assets/kronwerke/bar_fill_early.png"
+hash = "5d3d34e28d30b639fe2ebf6ae642f09d42a725cf2624785832164ab79e4f32a8"
+
+[[files]]
 file = "config/fancymenu/assets/kronwerke/bar_frame.png"
 hash = "c7ef851644eac461d3c185081d37a9afb21c665a762c67a3e11d417b66f791b7"
+
+[[files]]
+file = "config/fancymenu/assets/kronwerke/bar_frame_big.png"
+hash = "5f445ad1365d214b84c75341bf66f10d5af67241fc55edc204df2728109b6db3"
 
 [[files]]
 file = "config/fancymenu/assets/kronwerke/btn_64.png"
@@ -173,12 +237,20 @@ file = "config/fancymenu/assets/kronwerke/logo.png"
 hash = "411a89b9cc464363606d817d07d701747a1c125e3c102b56793d48422e29dff6"
 
 [[files]]
+file = "config/fancymenu/assets/kronwerke/logo_big.png"
+hash = "44c2b69abd6f11869e00990c6cc6573bc663c0c9b9a920fd3486b110b243c84b"
+
+[[files]]
 file = "config/fancymenu/assets/kronwerke/menu_dim.png"
-hash = "5533838da6749226147a8b913ca5870d6e74c66134def5bf58cad80d57d80688"
+hash = "e9113b6bafbf7c5b97fd2458889cace20f7de96185c6c83ac0400e7bb5c3f562"
 
 [[files]]
 file = "config/fancymenu/assets/kronwerke/tag.png"
 hash = "6d4dc024cf8f7aa90f5b144bfc8f8865eec25282e7c81ab843ea632fb0a599c1"
+
+[[files]]
+file = "config/fancymenu/assets/kronwerke/tip.png"
+hash = "10db3c4d48d5aebe84197864990e2c3e1ea75615c33e84dce9928ff0db029d09"
 
 [[files]]
 file = "config/fancymenu/assets/kronwerke/tips_de.txt"
@@ -190,11 +262,11 @@ hash = "2e66e15240c7d8ace6c7fcf1c5e6435317961ae7a64075cdf7c5b9562911b870"
 
 [[files]]
 file = "config/fancymenu/assets/kronwerke/title_dusk.png"
-hash = "3b07b39027f97313834ad404a3d33f5e77d0828f6fd49057edcd3f291524c51d"
+hash = "b9c43ee17f715668af593c3f83c9be2976aa0616ef04482b0ca00f97f7ee06a0"
 
 [[files]]
 file = "config/fancymenu/assets/kronwerke/title_night.png"
-hash = "04149e7228c7e72458032398a115a26c2cedd742794eba6cb92f44ef33becbdc"
+hash = "a76a0e63018616fcd57e24678da738634f63207e1468bb99601244706f489664"
 
 [[files]]
 file = "config/fancymenu/customizablemenus.txt"
@@ -202,31 +274,31 @@ hash = "ddb876e04782e1b314bbf79dcea6aed9825b63f72100d57c8fc6d8e33775beb1"
 
 [[files]]
 file = "config/fancymenu/customization/kw_loading_day.txt"
-hash = "e2dca5e0544bd440921b3901707b0bc56f6cfce064b12874c3c3a789a19daf4f"
+hash = "b518a16acc91f202f134890e71d36cc992930f80543495fb15f27daa35c8635a"
 
 [[files]]
 file = "config/fancymenu/customization/kw_loading_night.txt"
-hash = "d50c753c6b3a801cdb92274d9f7ad4bdcc96cc11dfea52e66d7fd64f90778eba"
+hash = "6fef37d565cfc14fec500c2686438b57bfa0abd40be7d9aaec394775cf329d10"
 
 [[files]]
 file = "config/fancymenu/customization/kw_multiplayer.txt"
-hash = "d0c7642e935e154dd60a0080398d94d692c4f482f1f3cbcd94cbdc35f8249366"
+hash = "970fdc7c2d18fd82b8ec56a5387c709870c3e901a5d899563bdbbbc80976d9ef"
 
 [[files]]
 file = "config/fancymenu/customization/kw_pause.txt"
-hash = "9487b9ff6f5b932c7bf9817842b1cf057541e1f0e8002e1342f8d31850052800"
+hash = "0991713d30419e2275e70a623022b81c3568c0cfe350e57dc57a0e7cd81bb4a0"
 
 [[files]]
 file = "config/fancymenu/customization/kw_title_day.txt"
-hash = "89524a2f0ed72b6e4a92221eb62d848165d4c42b8f2ff1d68b0f65b79cd1dcfb"
+hash = "36b9515435f70fd13ebaf40412433eed446958110eab2bcaa8bf0d5296506a6e"
 
 [[files]]
 file = "config/fancymenu/customization/kw_title_night.txt"
-hash = "0a87e3d3f2b01c8c0b87fb25d463c27e1e87c2b482ac9a1ba886e03470f735b5"
+hash = "e7a3582744012859d0c88ec8b6660886449f45d6a34892b88b6f10ddfe04e3fc"
 
 [[files]]
 file = "config/fancymenu/customization/kw_universal.txt"
-hash = "4571b00abe1a4c471a566827e234b8b7cd1dcb2164883055b053027f883fcf31"
+hash = "156fc00274f10861ca718e3fa2ab933af3d83fe222612d16f9c8c45384f2e067"
 
 [[files]]
 file = "config/fancymenu/options.txt"
@@ -514,7 +586,7 @@ hash = "37a4868c41baa107f282b073c109f499b59fabf5643f29d7d15905291541c849"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/start_here.snbt"
-hash = "d34c9c976bc04defc5714add7aa86eefa593750b114a09afd4970d404fceaf42"
+hash = "7664f10ecf3ec902061e96720fc3289d5ba973d92f0042c4dd0c2504fec25b54"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/storage.snbt"
@@ -542,11 +614,11 @@ hash = "93c982c2e09101877cba15ed69d2eee71ed5be2243ee8dcdcc0734845932c8b6"
 
 [[files]]
 file = "config/ftbquests/quests/lang/de_de.snbt"
-hash = "c7d7105bfa9bf44da07d5b09a66163cc486ea0ff2966e4a08bd6bc4d72b5c972"
+hash = "ba7887705213d752220695fb2cfb523467acac5e980aa8582446ccb0091b1f6c"
 
 [[files]]
 file = "config/ftbquests/quests/lang/en_us.snbt"
-hash = "8a66ad650af8bd643161c5d3279205347a3e70ff188de291dab7312a0bec4b7c"
+hash = "bd3516d5ac402f4b4eddde02e7664a880da8b25570001159235561e997245d6c"
 
 [[files]]
 file = "config/ftbquests/quests/reward_tables/s1_common.snbt"
@@ -606,7 +678,7 @@ hash = "27031493d45e03c170a2ff72fa2f3595ffced90e259830e73952d33984291bad"
 
 [[files]]
 file = "config/kronwerke-common.toml"
-hash = "f274d7dc856f7314b78838dc47ccfaabb31c7fd86564e211211564a5d3f2f9d7"
+hash = "2176bb41bce2765754e20da53ad2e9d53b91c4aa5ecd6d268f9b1b5bcdbde0f0"
 
 [[files]]
 file = "config/kronwerke/goals.json"
@@ -4297,10 +4369,6 @@ file = "kubejs/assets/kronwerke/textures/quests/shots/start_here_m_ritual.png"
 hash = "fded60d2c18ef1f17505ab2e55a1514b866ba32632d2c8df26df272d75a8b391"
 
 [[files]]
-file = "kubejs/assets/kronwerke/textures/quests/shots/start_here_o_feeder.png"
-hash = "e49fbbf08375e4f129ffc428ce197c8f9be5ec2295a5ec85801189b6d41d030d"
-
-[[files]]
 file = "kubejs/assets/kronwerke/textures/quests/shots/start_here_o_obelisk.png"
 hash = "370068b01733d9c116d5240c93a1e8f2f9923bac0ca76b9477e657ea88e012ef"
 
@@ -7821,10 +7889,6 @@ file = "kubejs/server_scripts/kronwerke/milestones.js"
 hash = "3fcffdd19cff65f47501fdd3cc4e4bf07f8e84f8f526078ed56a049261e0264c"
 
 [[files]]
-file = "kubejs/server_scripts/kronwerke/obelisk.js"
-hash = "584000faceb796099fddcb3050c262965a4ae8da82645a3df1f1412721150100"
-
-[[files]]
 file = "kubejs/server_scripts/kronwerke/round.js"
 hash = "d36b117b309846875ae827fce74e7e00447946c7b72fb69704369a62408705e9"
 
@@ -8240,6 +8304,11 @@ hash = "5b4d79435b6c6307cdcb141561b46a536fcf317a5661dbcafe33dfcde3cfe80f"
 metafile = true
 
 [[files]]
+file = "mods/drippy-early-loading-module.pw.toml"
+hash = "5fea3c19a3984ad752fd965510c4f8847c5100d001c31cbe46373628de729e06"
+metafile = true
+
+[[files]]
 file = "mods/drippy-loading-screen.pw.toml"
 hash = "d89b50af502aab4416e07fa8f92433a18fac11285fe1c39ebccea610dbfdd1e7"
 metafile = true
@@ -8551,7 +8620,7 @@ metafile = true
 
 [[files]]
 file = "mods/kronwerke-core.pw.toml"
-hash = "f555dc1504e0a4f5f5293e8cb6af48865ee0ffd75d92f4f677debb98366cbc47"
+hash = "f1e9b34b1afcdcf2dbdd96970fc229183dbb190ce521d86b10750bd4842c8d8b"
 metafile = true
 
 [[files]]

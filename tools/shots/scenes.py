@@ -2648,11 +2648,12 @@ def _(b):
 
 @scene("productive_trees/pots")
 def _(b):
-    # a hopper botany pot on a chest, earth and a walnut sapling put in by hand
+    # a hopper botany pot on a chest, earth and a walnut sapling in it
     b.b(4, 0, 4, "minecraft:chest[facing=south,type=single,waterlogged=false]")
     b.b(4, 1, 4, "botanypots:terracotta_hopper_botany_pot")
-    b.use(4, 1, 4, "up", "minecraft:dirt")
-    b.use(4, 1, 4, "up", "productivetrees:walnut_sapling")
+    # slot 0 is the soil, slot 1 the seed (the machine hand's clicks put nothing in: seen 13.11.2026)
+    b.cmd(f"data merge block {b._p(4, 1, 4)} {{Items:[{{Slot:0b,id:\"minecraft:dirt\",count:1}},"
+          f"{{Slot:1b,id:\"productivetrees:walnut_sapling\",count:1}}]}}")
 
 
 @scene("logistics/laser_node")

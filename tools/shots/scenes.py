@@ -3005,3 +3005,44 @@ ponder("mekanism_ores/foundry", "productivemetalworks", "assets/productivemetalw
 ponder("farms/s2_xp", "create-enchantment", "assets/create_enchantment_industry/ponder/grindstone/basic.nbt")
 ponder("create_trains/schedule", "create-1", "assets/create/ponder/train_station/schedule.nbt")
 ponder("create_brass/alternator", "createaddition", "assets/createaddition/ponder/alternator.nbt")
+
+
+# ===================================================================================
+# What a quest asks you to hold, on show: for quests whose subject is an item and no build
+
+def shelf(key, items, scale=1.0):
+    n = len(items)
+
+    @scene(key, w=max(9, 2 * n + 3))
+    def _(b):
+        x0 = (max(9, 2 * n + 3) - (2 * n - 1)) // 2
+        for i, item in enumerate(items):
+            b.show(x0 + 2 * i, 0, 4, item, scale)
+
+
+shelf("nuclearcraft/geiger", ["nuclear_radiation:geiger_counter", "nuclear_radiation:dosimeter"])
+shelf("enderio/filter", ["enderio:yeta_wrench", "enderio:basic_item_filter"])
+shelf("malum/spirits", ["malum:sacred_spirit", "malum:wicked_spirit", "malum:arcane_spirit"])
+shelf("ae2_advanced/mega_4m", ["megacells:item_storage_cell_4m"])
+shelf("hostile_networks/deep_learner", ["hostilenetworks:deep_learner"])
+shelf("logistics/mg_gadget", ["mininggadgets:mininggadget_simple"])
+shelf("food/f_rod", ["aquaculture:iron_fishing_rod"])
+shelf("silent_gear/repair_kit", ["silentgear:crude_repair_kit"])
+shelf("botania_runes/rune_core", ["kronwerke:rune_core"])
+
+
+@scene("storage/config_tool")
+def _(b):
+    # the configuration tool, and a drawer to lock with it
+    b.b(3, 0, 4, "functionalstorage:oak_1[facing=down,subfacing=south]")
+    b.show(5, 0, 4, "functionalstorage:configuration_tool")
+
+
+@scene("productive_trees/amber")
+def _(b):
+    # the brown amber only grows from nine saplings in a square
+    stage(b, 2, 2, 6, 6, "minecraft:grass_block[snowy=false]")
+    for x in (3, 4, 5):
+        for z in (3, 4, 5):
+            b.b(x, 0, z, "productivetrees:brown_amber_sapling")
+    b.focus(2, 0, 2, 6, 1, 6)

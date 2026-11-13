@@ -159,12 +159,12 @@ def plate(w, h, kind='plain', hover=False, pressed=False):
         for rx, ry in ((2, 2), (w - 4, 2), (2, h - 4), (w - 4, h - 4)):
             c.px(rx, ry, R[0]); c.px(rx + 1, ry + 1, R[4])
     if kind == 'main':
-        m = Canvas(w, h)
-        crown_mark(m, 14, h // 2 + 5, 14, 10)
-        c.paste(m)
-        m = Canvas(w, h)
-        crown_mark(m, w - 15, h // 2 + 5, 14, 10)
-        c.paste(m)
+        # a second, thin brass line inside the red field and a stud at each end
+        c.fill(c.rect(f + 3, f + 3, w - f - 3, f + 4), R[3]); c.fill(c.rect(f + 3, h - f - 4, w - f - 3, h - f - 3), R[3])
+        c.fill(c.rect(f + 3, f + 3, f + 4, h - f - 3), R[3]); c.fill(c.rect(w - f - 4, f + 3, w - f - 3, h - f - 3), R[3])
+        for sx in (f + 7, w - f - 10):
+            sy = h // 2 - 2
+            c.fill(c.rect(sx, sy, sx + 3, sy + 3), R[1]); c.px(sx, sy, R[0]); c.px(sx + 2, sy + 2, R[4])
     return c
 
 
@@ -203,6 +203,16 @@ def bar_fill(w, h):
     return c
 
 
+def tag(w, h):
+    """A small dark tag with a brass edge, for a line of text under a button."""
+    c = Canvas(w, h)
+    c.fill(c.rect(1, 0, w - 1, h) | c.rect(0, 0, w, h - 1), DARK)
+    c.fill(c.rect(1, 0, w - 1, h - 1), K[4])
+    c.ramp(c.rect(2, 0, w - 2, h - 2), [NIGHT[2], NIGHT[3]], c.yy / float(h), soft=0.3)
+    c.fill(c.rect(2, h - 3, w - 2, h - 2), NIGHT[1])
+    return c
+
+
 def window_icon(size):
     """The crown on the night ground, for the window and the task bar."""
     c = Canvas(size, size)
@@ -234,6 +244,7 @@ def build(out):
         items['icon_' + n + '_hover'] = icon(n, hover=True)
     items['btn_join'] = plate(148, 24, 'main')
     items['btn_join_hover'] = plate(148, 24, 'main', hover=True)
+    items['tag'] = tag(104, 14)
     items['bar_frame'] = bar_frame(148, 20)
     items['bar_fill'] = bar_fill(140, 12)
     for k, c in items.items():

@@ -55,6 +55,19 @@ scroll_list_customization {
   apply_vanilla_background_blur = false
 }
 
+decoration_overlay {
+  overlay_type = fireflies
+  instance_identifier = 5cb0c720-0ccd-5bfb-a884-9302dbea0da6-1763000000000
+  show_decoration_overlay = true
+  firefly_group_density = 0.6
+  firefly_group_amount = 0.7
+  firefly_group_size = 0.8
+  firefly_scale = 1.0
+  firefly_follow_mouse = true
+  firefly_landing = true
+  firefly_color_hex = #FFE08A
+}
+
 layout_action_executable_blocks {
 }
 
@@ -202,6 +215,69 @@ element {
 }
 
 element {
+  element_type = image
+  instance_identifier = 82b0e6b1-6527-56d7-a18d-2f7e6ca13d2f-1763000000000
+  appearance_delay = no_delay
+  disappearance_delay = no_delay
+  fade_in_v2 = no_fading
+  fade_out = no_fading
+  auto_sizing = false
+  auto_sizing_base_screen_width = 1920
+  auto_sizing_base_screen_height = 1080
+  sticky_anchor = false
+  anchor_point = top-right
+  x = -142
+  y = 109
+  width = 104
+  height = 14
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = dc1d699d-cd36-59cc-8181-5a8361f5129d-1763000000000
+  [loading_requirement_container_meta:dc1d699d-cd36-59cc-8181-5a8361f5129d-1763000000000] = [groups:][instances:cf518c86-b1f1-5d65-b655-3918f99d3db9-1763000000000;]
+  [loading_requirement:fancymenu_visibility_requirement_is_number][requirement_mode:if][req_id:cf518c86-b1f1-5d65-b655-3918f99d3db9-1763000000000] = ["mode":"bigger-than-or-equals","number":"{"placeholder":"json","values":{"source":"https://kronwerke.com/api/status","json_path":"$.server.players"}}","compare_with":"0"]$
+  enable_parallax = false
+  invert_parallax = false
+  animated_offset_x = 0
+  animated_offset_y = 0
+  load_once_per_session = false
+  layer_hidden_in_editor = false
+  advanced_rotation_mode = false
+  advanced_vertical_tilt_mode = false
+  advanced_horizontal_tilt_mode = false
+  should_be_affected_by_decoration_overlays = false
+  in_editor_color = #FFC800FF
+  advanced_posx = -2147483648
+  advanced_posy = -2147483648
+  advanced_width = -2147483648
+  advanced_height = -2147483648
+  stretch_x = false
+  stretch_y = false
+  appearance_delay_seconds = 1.0
+  disappearance_delay_seconds = 1.0
+  fade_in_speed = 1.0
+  fade_out_speed = 1.0
+  base_opacity = 1.0
+  parallax_intensity_x = 0.5
+  parallax_intensity_y = 0.5
+  rotation_degrees = 0.0
+  advanced_rotation_degrees = 0.0
+  vertical_tilt_degrees = 0.0
+  advanced_vertical_tilt_degrees = 0.0
+  horizontal_tilt_degrees = 0.0
+  advanced_horizontal_tilt_degrees = 0.0
+  source = [source:local]/config/fancymenu/assets/kronwerke/tag.png
+  repeat_texture = false
+  nine_slice_texture = false
+  nine_slice_texture_border_x = 5
+  nine_slice_texture_border_y = 5
+  restart_animated_on_menu_load = false
+  image_tint = #FFFFFF
+  rounding_radius_top_left = 0.0
+  rounding_radius_top_right = 0.0
+  rounding_radius_bottom_right = 0.0
+  rounding_radius_bottom_left = 0.0
+}
+
+element {
   interactable = false
   source = ^^^%n%%#E5B451%{"placeholder":"local","values":{"key":"kwmenu.status"}}%#% {"placeholder":"json","values":{"source":"https://kronwerke.com/api/status","json_path":"$.server.players"}} / {"placeholder":"json","values":{"source":"https://kronwerke.com/api/status","json_path":"$.server.max"}}%n%^^^
   source_mode = direct
@@ -237,9 +313,9 @@ element {
   auto_sizing_base_screen_height = 1080
   sticky_anchor = false
   anchor_point = top-right
-  x = -164
+  x = -142
   y = 110
-  width = 148
+  width = 104
   height = 16
   stay_on_screen = false
   element_loading_requirement_container_identifier = 49f23f5b-4963-5f2d-bf2f-6c3c25cece96-1763000000000

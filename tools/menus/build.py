@@ -212,9 +212,10 @@ def title(name, art, hours):
                 [('joinserver', SERVER)], tip=local('join.tip'))
     players = ph('json', source=STATUS, json_path='$.server.players')
     most = ph('json', source=STATUS, json_path='$.server.max')
-    b += text(L + ':status', centered(gold(local('status')) + ' ' + players + ' / ' + most), 'top-right', COL, 110, CW, 16,
-              req=requirement(L + ':status', lines=[('fancymenu_visibility_requirement_is_number', 'if',
-                                                     '["mode":"bigger-than-or-equals","number":"%s","compare_with":"0"]$' % players)]))
+    has_status = [('fancymenu_visibility_requirement_is_number', 'if', '["mode":"bigger-than-or-equals","number":"%s","compare_with":"0"]$' % players)]
+    b += image(L + ':tag', 'tag.png', 'top-right', COL + 22, 109, 104, 14, req=requirement(L + ':tag', lines=has_status))
+    b += text(L + ':status', centered(gold(local('status')) + ' ' + players + ' / ' + most), 'top-right', COL + 22, 110, 104, 16,
+              req=requirement(L + ':status', lines=has_status))
     y = 128
     b += vanilla('mc_titlescreen_singleplayer_button', 'top-right', COL, y, CW, 20, 'btn_wide.png', 'btn_wide_hover.png', layout=L)
     b += vanilla('mc_titlescreen_multiplayer_button', 'top-right', COL, y + 24, CW, 20, 'btn_wide.png', 'btn_wide_hover.png',
@@ -234,7 +235,13 @@ def title(name, art, hours):
               req=requirement(L + ':countdown', lines=[('fancymenu_visibility_requirement_is_number', 'if',
                                                         '["mode":"smaller-than","number":"%s","compare_with":"%d"]$' % (ph('unix_time'), START_MS))]))
     b += hide(L, *TITLE_HIDDEN)
-    return layout(name, 'title_screen', b, background=art, behind=False, req=requirement(name + ':layout', hours=hours), parallax=True)
+    extra = ''
+    if 'night' in name:
+        extra = block('decoration_overlay', [('overlay_type', 'fireflies'), ('instance_identifier', uid(name + ':fireflies')),
+                                             ('show_decoration_overlay', 'true'), ('firefly_group_density', '0.6'),
+                                             ('firefly_group_amount', '0.7'), ('firefly_group_size', '0.8'), ('firefly_scale', '1.0'),
+                                             ('firefly_follow_mouse', 'true'), ('firefly_landing', 'true'), ('firefly_color_hex', '#FFE08A')])
+    return layout(name, 'title_screen', b, background=art, behind=False, req=requirement(name + ':layout', hours=hours), parallax=True, extra=extra)
 
 
 # ---------------------------------------------------------------------------------------------
@@ -253,6 +260,12 @@ def multiplayer():
     L = 'multi'
     b = button(L + ':join', local('join'), 'top-centered', -74, 4, CW, 24, 'btn_join.png', 'btn_join_hover.png', [('joinserver', SERVER)],
                tip=local('join.tip'))
+    players = ph('json', source=STATUS, json_path='$.server.players')
+    most = ph('json', source=STATUS, json_path='$.server.max')
+    has_status = [('fancymenu_visibility_requirement_is_number', 'if', '["mode":"bigger-than-or-equals","number":"%s","compare_with":"0"]$' % players)]
+    b += image(L + ':tag', 'tag.png', 'top-centered', 78, 9, 104, 14, req=requirement(L + ':tag', lines=has_status))
+    b += text(L + ':status', centered(gold(local('status')) + ' ' + players + ' / ' + most), 'top-centered', 78, 10, 104, 16,
+              req=requirement(L + ':status', lines=has_status))
     return layout(L, 'join_multiplayer_screen', b, scale=None)
 
 
@@ -265,20 +278,20 @@ def pause():
     x, y = -74, -50
     half = ('btn_half.png', 'btn_half_hover.png')
     b = image(L + ':logo', 'logo.png', 'mid-centered', -82, y - 70, 163, 62)
-    b += vanilla('mc_pausescreen_return_to_game_button', 'mid-centered', x, y, CW, 20, 'btn_wide.png', 'btn_wide_hover.png', layout=L)
+    b += vanilla('pause_return_to_game_button', 'mid-centered', x, y, CW, 20, 'btn_wide.png', 'btn_wide_hover.png', layout=L)
     b += button(L + ':quests', local('quests'), 'mid-centered', x, y + 24, 72, 20, *half,
                 actions=[('closegui', ''), ('mimic_keybind', 'key.ftbquests.quests|||false|||100')])
     b += button(L + ':map', local('map'), 'mid-centered', x + 76, y + 24, 72, 20, *half,
                 actions=[('closegui', ''), ('mimic_keybind', 'key.ftbchunks.map|||false|||100')])
-    b += vanilla('mc_pausescreen_advancements_button', 'mid-centered', x, y + 48, 72, 20, *half, layout=L)
-    b += vanilla('mc_pausescreen_stats_button', 'mid-centered', x + 76, y + 48, 72, 20, *half, layout=L)
-    b += vanilla('mc_pausescreen_options_button', 'mid-centered', x, y + 72, 72, 20, *half, label=local('options'), layout=L)
+    b += vanilla('pause_advancements_button', 'mid-centered', x, y + 48, 72, 20, *half, layout=L)
+    b += vanilla('pause_stats_button', 'mid-centered', x + 76, y + 48, 72, 20, *half, layout=L)
+    b += vanilla('pause_options_button', 'mid-centered', x, y + 72, 72, 20, *half, label=local('options'), layout=L)
     b += vanilla('398348', 'mid-centered', x + 76, y + 72, 72, 20, *half, layout=L)                  # NeoForge's Mods button
     b += button(L + ':discord', '', 'mid-centered', -34, y + 96, 20, 20, 'icon_chat.png', 'icon_chat_hover.png', [('openlink', DISCORD)], tip=local('discord.tip'))
     b += button(L + ':web', '', 'mid-centered', -10, y + 96, 20, 20, 'icon_home.png', 'icon_home_hover.png', [('openlink', WEBSITE)], tip=local('web.tip'))
     b += button(L + ':status', '', 'mid-centered', 14, y + 96, 20, 20, 'icon_book.png', 'icon_book_hover.png', [('openlink', WEBSITE + '/status')], tip=local('status.tip'))
-    b += vanilla('mc_pausescreen_disconnect_button', 'mid-centered', x, y + 120, CW, 20, 'btn_wide.png', 'btn_wide_hover.png', layout=L)
-    b += hide(L, 'mc_pausescreen_feedback_button', 'mc_pausescreen_report_bugs_button', 'mc_pausescreen_lan_button', '40')
+    b += vanilla('pause_disconnect_button', 'mid-centered', x, y + 120, CW, 20, 'btn_wide.png', 'btn_wide_hover.png', layout=L)
+    b += hide(L, 'pause_send_feedback_button', 'pause_report_bugs_button', 'pause_share_to_lan_button', 'pause_title_widget')
     return layout(L, 'pause_screen', b)
 
 
@@ -305,12 +318,12 @@ def loading(name, art, hours):
 
 LANG = {
     'de_de': {
-        'join': 'Kronwerke betreten', 'join.tip': 'Verbindet dich direkt mit dem Kronwerke-Server.', 'status': 'Online:',
+        'join': '§e§lKronwerke betreten', 'join.tip': 'Verbindet dich direkt mit dem Kronwerke-Server.', 'status': 'Online:',
         'servers': 'Serverliste', 'options': 'Optionen', 'quit': 'Beenden', 'discord.tip': 'Zum Discord', 'web.tip': 'kronwerke.com',
         'lang.tip': 'Sprache', 'countdown.a': 'Season 2 startet in', 'countdown.b': 'Tagen', 'quests': 'Questbuch', 'map': 'Karte', 'status.tip': 'Live-Status der Season',
     },
     'en_us': {
-        'join': 'Enter Kronwerke', 'join.tip': 'Connects you straight to the Kronwerke server.', 'status': 'Online:',
+        'join': '§e§lEnter Kronwerke', 'join.tip': 'Connects you straight to the Kronwerke server.', 'status': 'Online:',
         'servers': 'Server list', 'options': 'Options', 'quit': 'Quit', 'discord.tip': 'Open Discord', 'web.tip': 'kronwerke.com',
         'lang.tip': 'Language', 'countdown.a': 'Season 2 starts in', 'countdown.b': 'days', 'quests': 'Quest book', 'map': 'Map', 'status.tip': 'Live status of the season',
     },

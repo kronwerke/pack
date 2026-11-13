@@ -2870,3 +2870,54 @@ def _(b):
 def _(b):
     b.e("draconicevolution:guardian_crystal", 4, 1, 4)
     b.focus(3, 0, 3, 5, 3, 5)
+
+
+# ===================================================================================
+# Twentieth batch: a wood set, pipes, candles
+
+@scene("productive_trees/wood_set")
+def _(b):
+    # what one new wood gives: planks, stairs, slab, fence, a door and a bookshelf of walnut
+    b.f(2, 0, 4, 3, 1, 4, "productivetrees:walnut_planks")
+    b.b(4, 0, 4, "productivetrees:walnut_stairs[facing=east,half=bottom,shape=straight]")
+    b.b(5, 0, 4, "productivetrees:walnut_slab[type=bottom]")
+    b.b(6, 0, 4, "productivetrees:walnut_bookshelf")
+    b.b(6, 1, 4, "productivetrees:walnut_bookshelf")
+    b.b(2, 0, 5, "productivetrees:walnut_fence")
+    b.b(3, 0, 5, "productivetrees:walnut_fence")
+    b.b(5, 0, 6, "productivetrees:walnut_door[facing=south,half=lower,hinge=left,open=false]")
+    b.b(5, 1, 6, "productivetrees:walnut_door[facing=south,half=upper,hinge=left,open=false]")
+
+
+@scene("oritech/pipes", w=10)
+def _(b):
+    # an energy pipe and an item pipe laid by hand between two machines
+    b.b(2, 0, 4, "oritech:pulverizer_block")
+    b.b(7, 0, 4, "oritech:pulverizer_block")
+    for x in (3, 4, 5, 6):
+        b.use(x, -1, 4, "up", "oritech:energy_pipe")
+    for x in (3, 4, 5, 6):
+        b.use(x, -1, 5, "up", "oritech:item_pipe")
+    b.focus(2, 0, 3, 7, 1, 5)
+
+
+@scene("hexerei/candles")
+def _(b):
+    # the candle dipper over a mixing cauldron of tallow
+    b.b(4, 0, 4, "hexerei:mixing_cauldron")
+    b.b(4, 1, 4, "hexerei:candle_dipper[facing=south]")
+
+
+@scene("ars_master/ritual_awakening")
+def _(b):
+    b.m("ars_nouveau:cascading_weald_walker", 4, 0, 4)
+
+
+@scene("industrial/transporters")
+def _(b):
+    # a transporter on each chest, set by hand: one sends, one receives
+    b.b(2, 0, 4, "minecraft:chest[facing=south,type=single,waterlogged=false]")
+    b.b(6, 0, 4, "minecraft:chest[facing=south,type=single,waterlogged=false]")
+    b.use(2, 0, 4, "east", "industrialforegoing:transporter")
+    b.use(6, 0, 4, "west", "industrialforegoing:transporter")
+    b.focus(2, 0, 3, 6, 1, 5)

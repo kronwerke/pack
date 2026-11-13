@@ -1497,6 +1497,66 @@ def _(b):
         b.b(x0 + 2, 2 + dy, z0 + 2 + dz, "nuclearcraft:water_heat_sink")
 
 
+
+# ===================================================================================
+# Eighth batch: the first farms
+
+@scene("farms/cobble_drill")
+def _(b):
+    # the generator one block up: water, the hole that swallows it, the stone, lava. The drill
+    # sits behind the stone, a belt under the stone carries what it breaks toward the camera.
+    for x in range(1, 8):
+        b.b(x, 0, 3, "minecraft:stone_bricks")
+        b.b(x, 1, 3, "minecraft:stone_bricks")
+        b.b(x, 1, 5, "minecraft:glass")
+        if x != 5:
+            b.b(x, 0, 5, "minecraft:stone_bricks")
+            b.b(x, 0, 4, "minecraft:stone_bricks")
+    b.b(1, 1, 4, "minecraft:stone_bricks")
+    b.b(7, 1, 4, "minecraft:stone_bricks")
+    b.b(4, 0, 4, "minecraft:air")
+    b.b(4, -1, 4, "minecraft:air")                     # the water falls in here and goes no further
+    b.b(5, 0, 4, "create:shaft[axis=x]")
+    b.b(5, 0, 7, "create:shaft[axis=x]")
+    b.use(5, 0, 4, "up", "create:belt_connector")
+    b.use(5, 0, 7, "up", "create:belt_connector")
+    b.changed(5, 0, 5, "minecraft:air")
+    housed_motor(b, 6, 0, 7, "west", 16)
+    b.b(2, 1, 4, "minecraft:water")
+    b.b(5, 1, 4, "minecraft:cobblestone")
+    b.b(6, 1, 4, "minecraft:lava")
+    b.b(5, 1, 3, "create:mechanical_drill[facing=south,waterlogged=false]")
+    drive_from_behind(b, 5, 1, 3)
+
+
+@scene("farms/crops_essence")
+def _(b):
+    # cut open at the front: two growth accelerators under every block of inferium farmland,
+    # the grown inferium on top, the water that keeps the field wet in its middle
+    for x in range(2, 7):
+        for z in range(3, 6):
+            b.f(x, 0, z, x, 1, z, "mysticalagriculture:inferium_growth_accelerator")
+            if (x, z) == (4, 4):
+                b.b(x, 2, z, "minecraft:water")
+            else:
+                b.b(x, 2, z, "mysticalagriculture:inferium_farmland[moisture=7]")
+                b.b(x, 3, z, "mysticalagriculture:inferium_crop[age=7]")
+
+
+@scene("farms/source_berries", w=11)
+def _(b):
+    # two rows of sourceberry bushes, the agronomic sourcelink and a jar between them, the
+    # imbuement chamber within two blocks of the jar, a Starbuncle for the harvest
+    stage(b, 1, 2, 9, 6, "minecraft:grass_block")
+    for x in range(2, 9):
+        b.b(x, 0, 3, "ars_nouveau:sourceberry_bush[age=3]")
+        b.b(x, 0, 5, "ars_nouveau:sourceberry_bush[age=3]")
+    b.b(4, 0, 4, "ars_nouveau:agronomic_sourcelink")
+    b.b(6, 0, 4, "ars_nouveau:source_jar[fill=8]", "{source:7000}")
+    b.b(8, 0, 4, "ars_nouveau:imbuement_chamber[facing=up]")
+    b.m("ars_nouveau:starbuncle", 2, 0, 4)
+
+
 # what a list chapter shows again from the chapter that explains it
 for _again, _first in (("list_transport/belt", "create/belt"), ("list_transport/vault", "storage/vault_big"),
                        ("list_transport/drawers", "storage/drawers_4"), ("list_power/powah_reactor", "powah/reactor"),

@@ -1656,6 +1656,71 @@ def _(b):
     b.b(x0 + 3, 1, z0 + 6, "hostilenetworks:data_center[facing=south]")
 
 
+
+# ===================================================================================
+# Tenth batch
+
+def totem(b, x, z, wood, spirits):
+    """A Malum totem: the base, a log of its wood for every rune, each rune carved with a click
+    of its arcanum on the log, from the bottom up."""
+    b.b(x, 0, z, f"malum:{wood}_totem_base")
+    for i, spirit in enumerate(spirits):
+        b.b(x, 1 + i, z, f"malum:{wood}_log[axis=y]")
+        b.use(x, 1 + i, z, "south", f"malum:{spirit}_spirit")
+        b.changed(x, 1 + i, z, f"malum:{wood}_log")
+
+
+@scene("malum/healing_rite")
+def _(b):
+    # the Rite of Healing: runewood on the base, one arcane and two sacred runes
+    totem(b, 4, 4, "runewood", ["arcane", "sacred", "sacred"])
+
+
+@scene("malum/quickening")
+def _(b):
+    # the Rite of Quickening: the same kind of totem of soulwood, eldritch, arcane and two infernal runes
+    totem(b, 4, 4, "soulwood", ["eldritch", "arcane", "infernal", "infernal"])
+
+
+@scene("pneumaticcraft/elevator")
+def _(b):
+    # the elevator base, four frames stacked on it, a caller at the upper floor
+    b.b(4, 0, 4, "pneumaticcraft:elevator_base")
+    b.f(4, 1, 4, 4, 4, 4, "pneumaticcraft:elevator_frame")
+    b.f(5, 0, 4, 5, 3, 4, "minecraft:stone_bricks")
+    b.b(5, 4, 4, "pneumaticcraft:elevator_caller[facing=south]")
+
+
+@scene("list_gear/mek_jetpack")
+def _(b):
+    b.stand(4, 0, 4, armor=(None, "mekanism:jetpack"))
+
+
+@scene("list_power/nc_passive", w=11)
+def _(b):
+    # the four solar panels under the open sky and the four RTGs, weakest on the left
+    for i, name in enumerate(("solar_panel_basic", "solar_panel_advanced", "solar_panel_du", "solar_panel_elite")):
+        b.b(2 + 2 * i, 0, 3, f"nuclearcraft:{name}")
+    for i, name in enumerate(("uranium_rtg", "americium_rtg", "plutonium_rtg", "californium_rtg")):
+        b.b(2 + 2 * i, 0, 5, f"nuclearcraft:{name}")
+
+
+@scene("list_power/alternator")
+def _(b):
+    # a shaft into the alternator's back makes current; the motor that turns the shaft stands in for a water wheel
+    b.b(4, 0, 4, "createaddition:alternator[facing=east]")
+    b.b(3, 0, 4, "create:shaft[axis=x]")
+    housed_motor(b, 2, 0, 4, "east", 64)
+
+
+@scene("enderio/grains")
+def _(b):
+    # a fire on bedrock, left to burn out
+    b.b(4, 0, 4, "minecraft:bedrock")
+    b.b(4, 1, 4, "minecraft:fire")
+    b.focus(3, 0, 3, 5, 2, 5)
+
+
 # what a list chapter shows again from the chapter that explains it
 for _again, _first in (("list_transport/belt", "create/belt"), ("list_transport/vault", "storage/vault_big"),
                        ("list_transport/drawers", "storage/drawers_4"), ("list_power/powah_reactor", "powah/reactor"),

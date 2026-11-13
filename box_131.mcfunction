@@ -1,23 +1,23 @@
-# 131 silent_gear/stone_anvil, crude_mixer, alloy_forge
-#area -4 338 35 363
-fill -4 64 338 35 91 363 minecraft:air
-fill -4 60 338 35 62 363 minecraft:stone
-fill -4 63 338 35 63 363 minecraft:light_gray_concrete
-fill 0 64 344 35 79 344 minecraft:light_gray_concrete
-fill 0 64 344 0 79 357 minecraft:light_gray_concrete
-setblock 1 64 356 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "131.1"}','{"text": "silent_gear"}','{"text": "stone_anvil"}','{"text": ""}']}}
-setblock 2 64 356 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Stell einen"}','{"text": "Steinamboss auf"}','{"text": ""}','{"text": ""}']}}
-fill 10 64 344 10 79 357 minecraft:light_gray_concrete
-setblock 4 64 349 silentgear:stone_anvil
-setblock 6 64 349 minecraft:smooth_stone_slab
-summon item_display 6.5 64.95 349.5 {item:{id:"silentgear:hammer",count:1},item_display:"fixed",billboard:"vertical",transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[1.0f,1.0f,1.0f]},brightness:{sky:15,block:15},Tags:["kw_shot"]}
-setblock 11 64 356 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "131.2"}','{"text": "silent_gear"}','{"text": "crude_mixer"}','{"text": ""}']}}
-setblock 12 64 356 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Bau einen Crude"}','{"text": "Mixer"}','{"text": ""}','{"text": ""}']}}
-fill 20 64 344 20 79 357 minecraft:light_gray_concrete
-setblock 15 64 349 silentgear:crude_mixer[facing=south,lit=true]
-setblock 21 64 356 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "131.3"}','{"text": "silent_gear"}','{"text": "alloy_forge"}','{"text": ""}']}}
-setblock 22 64 356 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Bau die"}','{"text": "Legierungsschmiede"}','{"text": ""}','{"text": ""}']}}
-fill 30 64 344 30 79 357 minecraft:light_gray_concrete
-setblock 24 64 349 silentgear:alloy_forge[facing=south,lit=true]
-setblock 26 64 349 silentgear:starlight_charger
+# 131 nether/welcome
+#area -4 298 14 323
+fill -4 64 298 14 91 323 minecraft:air
+fill -4 60 298 14 62 323 minecraft:stone
+fill -4 63 298 14 63 323 minecraft:light_gray_concrete
+fill 0 64 304 14 79 304 minecraft:light_gray_concrete
+fill 0 64 304 0 79 317 minecraft:light_gray_concrete
+setblock 1 64 316 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "131"}','{"text": "nether"}','{"text": "welcome"}','{"text": ""}']}}
+setblock 2 64 316 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Betritt den"}','{"text": "Nether"}','{"text": ""}','{"text": ""}']}}
+fill 9 64 304 9 79 317 minecraft:light_gray_concrete
+setblock 3 65 309 minecraft:obsidian
+setblock 3 66 309 minecraft:obsidian
+setblock 3 67 309 minecraft:obsidian
+setblock 4 64 309 minecraft:obsidian
+setblock 4 68 309 minecraft:obsidian
+setblock 5 64 309 minecraft:obsidian
+setblock 5 68 309 minecraft:obsidian
+setblock 6 65 309 minecraft:obsidian
+setblock 6 66 309 minecraft:obsidian
+setblock 6 67 309 minecraft:obsidian
+fill 4 65 309 5 67 309 minecraft:nether_portal[axis=x]
+execute if block 4 66 309 minecraft:nether_portal
 execute as @e[type=minecraft:item,tag=!kw_shot] run kill @s

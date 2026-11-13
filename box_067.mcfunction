@@ -1,18 +1,14 @@
-# 067 botania_runes/runic_altar
-#area 122 107 141 132
-fill 122 64 107 141 91 132 minecraft:air
-fill 122 60 107 141 62 132 minecraft:stone
-fill 122 63 107 141 63 132 minecraft:light_gray_concrete
-fill 126 64 113 141 79 113 minecraft:light_gray_concrete
-fill 126 64 113 126 79 126 minecraft:light_gray_concrete
-setblock 127 64 125 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "067"}','{"text": "botania_runes"}','{"text": "runic_altar"}','{"text": ""}']}}
-setblock 128 64 125 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "altar with"}','{"text": "ingredients, a"}','{"text": "spreader aimed"}','{"text": "at it, wand HUD"}']}}
-fill 136 64 113 136 79 126 minecraft:light_gray_concrete
-setblock 128 64 118 botania:mana_pool{mana:1000000}
-setblock 129 64 118 botania:mana_spreader{rotationX:180f,rotationY:0f,mana:1000}
-setblock 133 64 118 botania:runic_altar
-kw testworld use 133 64 118 up botania:manasteel_ingot
-kw testworld use 133 64 118 up botania:mana_powder
-kw testworld use 133 64 118 up minecraft:bone_meal
-kw testworld use 133 64 118 up minecraft:sugar_cane
+# 067 botania/manastar
+#area 41 107 60 132
+fill 41 64 107 60 91 132 minecraft:air
+fill 41 60 107 60 62 132 minecraft:stone
+fill 41 63 107 60 63 132 minecraft:light_gray_concrete
+fill 45 64 113 60 79 113 minecraft:light_gray_concrete
+fill 45 64 113 45 79 126 minecraft:light_gray_concrete
+setblock 46 64 125 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "067"}','{"text": "botania"}','{"text": "manastar"}','{"text": ""}']}}
+setblock 47 64 125 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "a blue Manastar"}','{"text": "next to a pool"}','{"text": ""}','{"text": ""}']}}
+fill 55 64 113 55 79 126 minecraft:light_gray_concrete
+fill 48 63 116 52 63 120 minecraft:grass_block
+setblock 50 64 118 botania:mana_pool{mana:400000}
+setblock 51 64 118 botania:manastar
 execute as @e[type=minecraft:item,tag=!kw_shot] run kill @s

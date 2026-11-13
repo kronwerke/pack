@@ -1,46 +1,31 @@
-# 065 botania/manasteel_prep
-#area 90 107 111 134
-fill 90 64 107 111 91 134 minecraft:air
-fill 90 60 107 111 62 134 minecraft:stone
-fill 90 63 107 111 63 134 minecraft:light_gray_concrete
-fill 94 64 113 111 79 113 minecraft:light_gray_concrete
-fill 94 64 113 94 79 128 minecraft:light_gray_concrete
-setblock 95 64 127 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "065"}','{"text": "botania"}','{"text": "manasteel_prep"}','{"text": ""}']}}
-setblock 96 64 127 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "the Nature\'s"}','{"text": "Aura ritual"}','{"text": "layout with"}','{"text": "gold powder and"}']}}
-setblock 97 64 127 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "stands"}','{"text": ""}','{"text": ""}','{"text": ""}']}}
-fill 106 64 113 106 79 128 minecraft:light_gray_concrete
-setblock 100 64 115 naturesaura:wood_stand
-setblock 97 64 116 naturesaura:wood_stand
-setblock 103 64 116 naturesaura:wood_stand
-setblock 99 64 117 naturesaura:gold_powder
-setblock 100 64 117 naturesaura:gold_powder
-setblock 101 64 117 naturesaura:gold_powder
-setblock 98 64 118 naturesaura:gold_powder
-setblock 99 64 118 naturesaura:gold_powder
-setblock 101 64 118 naturesaura:gold_powder
-setblock 102 64 118 naturesaura:gold_powder
-setblock 96 64 119 naturesaura:wood_stand
-setblock 98 64 119 naturesaura:gold_powder
-setblock 100 64 119 minecraft:oak_sapling
-setblock 102 64 119 naturesaura:gold_powder
-setblock 104 64 119 naturesaura:wood_stand
-setblock 98 64 120 naturesaura:gold_powder
-setblock 99 64 120 naturesaura:gold_powder
-setblock 101 64 120 naturesaura:gold_powder
-setblock 102 64 120 naturesaura:gold_powder
-setblock 99 64 121 naturesaura:gold_powder
-setblock 100 64 121 naturesaura:gold_powder
-setblock 101 64 121 naturesaura:gold_powder
-setblock 97 64 122 naturesaura:wood_stand
-setblock 103 64 122 naturesaura:wood_stand
-setblock 100 64 123 naturesaura:wood_stand
-setblock 100 63 119 minecraft:grass_block
-kw testworld use 100 64 115 up naturesaura:infused_iron
-kw testworld use 97 64 116 up botania:livingwood_twig
-kw testworld use 103 64 116 up naturesaura:infused_iron
-kw testworld use 96 64 119 up botania:mana_diamond
-kw testworld use 104 64 119 up naturesaura:gold_leaf
-kw testworld use 97 64 122 up naturesaura:infused_iron
-kw testworld use 103 64 122 up botania:livingwood_twig
-kw testworld use 100 64 123 up naturesaura:infused_iron
+# 065 botania/endo_auto
+#area 11 107 30 132
+fill 11 64 107 30 91 132 minecraft:air
+fill 11 60 107 30 62 132 minecraft:stone
+fill 11 63 107 30 63 132 minecraft:light_gray_concrete
+fill 15 64 113 30 79 113 minecraft:light_gray_concrete
+fill 15 64 113 15 79 126 minecraft:light_gray_concrete
+setblock 16 64 125 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "065"}','{"text": "botania"}','{"text": "endo_auto"}','{"text": ""}']}}
+setblock 17 64 125 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "chest, hopper"}','{"text": "and open crate"}','{"text": "over four"}','{"text": "Endoflames,"}']}}
+setblock 18 64 125 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "pressure plate"}','{"text": ""}','{"text": ""}','{"text": ""}']}}
+fill 25 64 113 25 79 126 minecraft:light_gray_concrete
+fill 19 63 118 21 63 119 minecraft:grass_block
+setblock 20 63 118 minecraft:light_gray_concrete
+setblock 19 64 118 botania:endoflame
+setblock 21 64 118 botania:endoflame
+setblock 19 64 119 botania:endoflame
+setblock 20 64 119 botania:endoflame
+setblock 21 64 119 botania:endoflame
+setblock 20 64 118 minecraft:oak_pressure_plate
+setblock 20 66 118 botania:open_crate
+setblock 20 67 118 minecraft:hopper[facing=down]
+setblock 20 68 118 minecraft:chest[facing=south]{Items:[{Slot:0b,id:"minecraft:coal",count:64}]}
+setblock 20 64 117 minecraft:redstone_wire
+setblock 20 64 116 minecraft:stone_bricks
+setblock 20 65 116 minecraft:redstone_wire
+setblock 21 65 116 minecraft:stone_bricks
+setblock 21 66 116 minecraft:redstone_wire
+setblock 21 66 117 minecraft:stone_bricks
+setblock 21 67 117 minecraft:redstone_wire
+setblock 21 67 118 minecraft:stone_bricks
 execute as @e[type=minecraft:item,tag=!kw_shot] run kill @s

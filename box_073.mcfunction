@@ -1,26 +1,14 @@
-# 073 gaia/dandelifeon
-#area 220 107 257 150
-fill 220 64 107 245 91 150 minecraft:air
-fill 246 64 107 257 91 150 minecraft:air
-fill 220 60 107 257 62 150 minecraft:stone
-fill 220 63 107 257 63 150 minecraft:light_gray_concrete
-fill 224 64 113 257 79 113 minecraft:light_gray_concrete
-fill 224 64 113 224 79 144 minecraft:light_gray_concrete
-setblock 225 64 143 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "073"}','{"text": "gaia"}','{"text": "dandelifeon"}','{"text": ""}']}}
-setblock 226 64 143 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "a 25x25 cell"}','{"text": "field"}','{"text": ""}','{"text": ""}']}}
-fill 252 64 113 252 79 144 minecraft:light_gray_concrete
-fill 226 63 115 250 63 139 minecraft:smooth_stone
-setblock 238 63 127 minecraft:grass_block
-setblock 238 64 127 botania:dandelifeon
-setblock 231 64 120 botania:cellular_block
-setblock 232 64 121 botania:cellular_block
-setblock 233 64 121 botania:cellular_block
-setblock 231 64 122 botania:cellular_block
-setblock 232 64 122 botania:cellular_block
-setblock 243 64 122 botania:cellular_block
-setblock 244 64 122 botania:cellular_block
-setblock 245 64 122 botania:cellular_block
-setblock 232 64 131 botania:cellular_block
-setblock 232 64 132 botania:cellular_block
-setblock 232 64 133 botania:cellular_block
+# 073 botania_runes/thermalily
+#area 137 107 156 132
+fill 137 64 107 156 91 132 minecraft:air
+fill 137 60 107 156 62 132 minecraft:stone
+fill 137 63 107 156 63 132 minecraft:light_gray_concrete
+fill 141 64 113 156 79 113 minecraft:light_gray_concrete
+fill 141 64 113 141 79 126 minecraft:light_gray_concrete
+setblock 142 64 125 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "073"}','{"text": "botania_runes"}','{"text": "thermalily"}','{"text": ""}']}}
+setblock 143 64 125 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "a hose pulley"}','{"text": "feeding lava"}','{"text": "next to the"}','{"text": "lily"}']}}
+fill 151 64 113 151 79 126 minecraft:light_gray_concrete
+fill 144 63 117 148 63 119 minecraft:grass_block[snowy=false]
+setblock 147 63 118 minecraft:lava
+setblock 146 64 118 botania:thermalily
 execute as @e[type=minecraft:item,tag=!kw_shot] run kill @s

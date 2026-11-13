@@ -1,21 +1,18 @@
-# 072 gaia/arena
-#area 199 107 224 138
-fill 199 64 107 224 91 138 minecraft:air
-fill 199 60 107 224 62 138 minecraft:stone
-fill 199 63 107 224 63 138 minecraft:light_gray_concrete
-fill 203 64 113 224 79 113 minecraft:light_gray_concrete
-fill 203 64 113 203 79 132 minecraft:light_gray_concrete
-setblock 204 64 131 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "072"}','{"text": "gaia"}','{"text": "arena"}','{"text": ""}']}}
-setblock 205 64 131 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "beacon with"}','{"text": "four pylons"}','{"text": "from above"}','{"text": ""}']}}
-fill 219 64 113 219 79 132 minecraft:light_gray_concrete
-fill 210 63 120 212 63 122 minecraft:iron_block
-setblock 211 64 121 minecraft:beacon
-setblock 207 64 117 minecraft:quartz_block
-setblock 207 65 117 botania:gaia_pylon
-setblock 207 64 125 minecraft:quartz_block
-setblock 207 65 125 botania:gaia_pylon
-setblock 215 64 117 minecraft:quartz_block
-setblock 215 65 117 botania:gaia_pylon
-setblock 215 64 125 minecraft:quartz_block
-setblock 215 65 125 botania:gaia_pylon
+# 072 botania_runes/runic_altar
+#area 122 107 141 132
+fill 122 64 107 141 91 132 minecraft:air
+fill 122 60 107 141 62 132 minecraft:stone
+fill 122 63 107 141 63 132 minecraft:light_gray_concrete
+fill 126 64 113 141 79 113 minecraft:light_gray_concrete
+fill 126 64 113 126 79 126 minecraft:light_gray_concrete
+setblock 127 64 125 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "072"}','{"text": "botania_runes"}','{"text": "runic_altar"}','{"text": ""}']}}
+setblock 128 64 125 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "altar with"}','{"text": "ingredients, a"}','{"text": "spreader aimed"}','{"text": "at it, wand HUD"}']}}
+fill 136 64 113 136 79 126 minecraft:light_gray_concrete
+setblock 128 64 118 botania:mana_pool{mana:1000000}
+setblock 129 64 118 botania:mana_spreader{rotationX:180f,rotationY:0f,mana:1000}
+setblock 133 64 118 botania:runic_altar
+kw testworld use 133 64 118 up botania:manasteel_ingot
+kw testworld use 133 64 118 up botania:mana_powder
+kw testworld use 133 64 118 up minecraft:bone_meal
+kw testworld use 133 64 118 up minecraft:sugar_cane
 execute as @e[type=minecraft:item,tag=!kw_shot] run kill @s

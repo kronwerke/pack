@@ -1,24 +1,15 @@
-# 099 immersive_heavy/hv, survey
-#area 373 179 406 204
-fill 373 64 179 406 95 204 minecraft:air
-fill 373 60 179 406 62 204 minecraft:stone
-fill 373 63 179 406 63 204 minecraft:light_gray_concrete
-fill 377 64 185 406 83 185 minecraft:light_gray_concrete
-fill 377 64 185 377 83 198 minecraft:light_gray_concrete
-setblock 378 64 197 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "099.1"}','{"text": "immersive_heavy"}','{"text": "hv"}','{"text": ""}']}}
-setblock 379 64 197 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "an HV line on"}','{"text": "steel posts,"}','{"text": "the bottling"}','{"text": "machine with"}']}}
-setblock 380 64 197 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "resin, a core"}','{"text": "sample on the"}','{"text": "ground"}','{"text": ""}']}}
-fill 391 64 185 391 83 198 minecraft:light_gray_concrete
-kw testworld use 380 63 190 up immersiveengineering:steel_post
-execute unless block 380 67 190 minecraft:air
-kw testworld use 380 67 190 up immersiveengineering:connector_hv
-kw testworld use 388 63 190 up immersiveengineering:steel_post
-execute unless block 388 67 190 minecraft:air
-kw testworld use 388 67 190 up immersiveengineering:connector_hv
-kw testworld use 380 68 190 south immersiveengineering:wirecoil_steel
-kw testworld use 388 68 190 south immersiveengineering:wirecoil_steel
-setblock 392 64 197 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "099.2"}','{"text": "immersive_heavy"}','{"text": "survey"}','{"text": ""}']}}
-setblock 393 64 197 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Such eine"}','{"text": "Mineralader"}','{"text": ""}','{"text": ""}']}}
-fill 401 64 185 401 83 198 minecraft:light_gray_concrete
-kw testworld use 396 63 190 up immersiveengineering:sample_drill
+# 099 immersive/coke_oven
+#area 11 179 30 204
+fill 11 64 179 30 91 204 minecraft:air
+fill 11 60 179 30 62 204 minecraft:stone
+fill 11 63 179 30 63 204 minecraft:light_gray_concrete
+fill 15 64 185 30 79 185 minecraft:light_gray_concrete
+fill 15 64 185 15 79 198 minecraft:light_gray_concrete
+setblock 16 64 197 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "099"}','{"text": "immersive"}','{"text": "coke_oven"}','{"text": ""}']}}
+setblock 17 64 197 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "formed coke"}','{"text": "oven with GUI,"}','{"text": "the bucket"}','{"text": "slot, a pump"}']}}
+setblock 18 64 197 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "with pipes"}','{"text": ""}','{"text": ""}','{"text": ""}']}}
+fill 25 64 185 25 79 198 minecraft:light_gray_concrete
+place template immersiveengineering:multiblocks/coke_oven 19 64 188 none
+kw testworld use 20 65 190 south immersiveengineering:hammer
+execute unless block 20 65 190 immersiveengineering:cokebrick
 execute as @e[type=minecraft:item,tag=!kw_shot] run kill @s

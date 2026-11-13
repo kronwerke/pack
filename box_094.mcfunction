@@ -1,32 +1,24 @@
-# 094 immersive/dynamo, watermill
-#area 97 179 136 206
-fill 97 64 179 126 101 206 minecraft:air
-fill 127 64 179 136 101 206 minecraft:air
-fill 97 60 179 136 62 206 minecraft:stone
-fill 97 63 179 136 63 206 minecraft:light_gray_concrete
-fill 101 64 185 136 89 185 minecraft:light_gray_concrete
-fill 101 64 185 101 89 200 minecraft:light_gray_concrete
-setblock 102 64 199 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "094.1"}','{"text": "immersive"}','{"text": "dynamo"}','{"text": ""}']}}
-setblock 103 64 199 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "dynamo with"}','{"text": "windmill, a"}','{"text": "windmill on a"}','{"text": "tower, three"}']}}
-setblock 104 64 199 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "water wheels on"}','{"text": "one shaft"}','{"text": ""}','{"text": ""}']}}
-fill 117 64 185 117 89 200 minecraft:light_gray_concrete
-fill 109 64 189 109 70 189 immersiveengineering:treated_wood_horizontal
-setblock 109 71 189 immersiveengineering:dynamo[facing=south]
-kw testworld use 109 71 189 south immersiveengineering:windmill
-execute unless block 109 71 190 minecraft:air
-setblock 118 64 199 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "094.2"}','{"text": "immersive"}','{"text": "watermill"}','{"text": ""}']}}
-setblock 119 64 199 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Bau ein"}','{"text": "Wasserrad"}','{"text": ""}','{"text": ""}']}}
-fill 131 64 185 131 89 200 minecraft:light_gray_concrete
-fill 124 64 188 124 67 188 immersiveengineering:treated_wood_horizontal
-setblock 124 68 188 immersiveengineering:dynamo[facing=south]
-kw testworld use 124 68 188 south immersiveengineering:watermill
-execute unless block 124 68 189 minecraft:air
-setblock 119 63 189 minecraft:water
-setblock 120 63 189 minecraft:air
-setblock 121 63 189 minecraft:air
-setblock 122 63 189 minecraft:air
-setblock 123 63 189 minecraft:air
-setblock 124 63 189 minecraft:air
-setblock 125 63 189 minecraft:air
-setblock 126 63 189 minecraft:air
+# 094 occultism_afrit/storage
+#area 199 144 222 173
+fill 199 64 144 222 91 173 minecraft:air
+fill 199 60 144 222 62 173 minecraft:stone
+fill 199 63 144 222 63 173 minecraft:light_gray_concrete
+fill 203 64 150 222 79 150 minecraft:light_gray_concrete
+fill 203 64 150 203 79 167 minecraft:light_gray_concrete
+setblock 204 64 166 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "094"}','{"text": "occultism_afrit"}','{"text": "storage"}','{"text": ""}']}}
+setblock 205 64 166 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "storage"}','{"text": "actuator with"}','{"text": "four"}','{"text": "stabilizers"}']}}
+fill 217 64 150 217 79 167 minecraft:light_gray_concrete
+setblock 206 65 157 occultism:otherstone
+setblock 207 65 157 occultism:storage_stabilizer_tier1[facing=east]
+setblock 210 65 153 occultism:otherstone
+setblock 210 65 154 occultism:storage_stabilizer_tier1[facing=south]
+setblock 210 65 160 occultism:storage_stabilizer_tier1[facing=north]
+setblock 210 65 161 occultism:otherstone
+setblock 213 65 157 occultism:storage_stabilizer_tier1[facing=west]
+setblock 214 65 157 occultism:otherstone
+setblock 206 64 157 occultism:otherstone
+setblock 210 64 153 occultism:otherstone
+setblock 210 64 157 occultism:storage_controller
+setblock 210 64 161 occultism:otherstone
+setblock 214 64 157 occultism:otherstone
 execute as @e[type=minecraft:item,tag=!kw_shot] run kill @s

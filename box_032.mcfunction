@@ -1,22 +1,22 @@
-# 032 mekanism_ores/shards
-#area 76 65 96 90
-fill 76 64 65 96 91 90 minecraft:air
-fill 76 60 65 96 62 90 minecraft:stone
-fill 76 63 65 96 63 90 minecraft:light_gray_concrete
-fill 80 64 71 96 79 71 minecraft:light_gray_concrete
-fill 80 64 71 80 79 84 minecraft:light_gray_concrete
-setblock 81 64 83 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "032"}','{"text": "mekanism_ores"}','{"text": "shards"}','{"text": ""}']}}
-setblock 82 64 83 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "the 4x line"}','{"text": "with injection"}','{"text": "chamber, two"}','{"text": "separators and"}']}}
-setblock 83 64 83 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "chemical"}','{"text": "infuser"}','{"text": ""}','{"text": ""}']}}
-fill 91 64 71 91 79 84 minecraft:light_gray_concrete
-setblock 82 64 77 minecraft:chest[facing=south]{Items:[]}
-setblock 83 64 77 mekanism:chemical_injection_chamber[facing=south]
-setblock 84 64 77 mekanism:purification_chamber[facing=south]
-setblock 85 64 77 mekanism:crusher[facing=south]
-setblock 86 64 77 mekanism:enrichment_chamber[facing=south]
-setblock 87 64 77 mekanism:energized_smelter[facing=south]
-setblock 88 64 77 minecraft:chest[facing=south]{Items:[]}
-setblock 82 64 76 mekanism:electrolytic_separator[facing=south]
-setblock 83 64 76 mekanism:chemical_infuser[facing=south]
-setblock 84 64 76 mekanism:electrolytic_separator[facing=south]
+# 032 mekanism/ore_line
+#area 26 65 48 90
+fill 26 64 65 48 91 90 minecraft:air
+fill 26 60 65 48 62 90 minecraft:stone
+fill 26 63 65 48 63 90 minecraft:light_gray_concrete
+fill 30 64 71 48 79 71 minecraft:light_gray_concrete
+fill 30 64 71 30 79 84 minecraft:light_gray_concrete
+setblock 31 64 83 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "032"}','{"text": "mekanism"}','{"text": "ore_line"}','{"text": ""}']}}
+setblock 32 64 83 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "the steel line"}','{"text": "from enrichment"}','{"text": "chamber to the"}','{"text": "obelisk chest"}']}}
+fill 43 64 71 43 79 84 minecraft:light_gray_concrete
+setblock 32 64 76 minecraft:chest[facing=south]{Items:[]}
+setblock 34 64 76 mekanism:basic_infusing_factory[facing=south,active=false]
+setblock 36 64 76 mekanism:basic_infusing_factory[facing=south,active=false]
+setblock 38 64 76 mekanism:basic_smelting_factory[facing=south,active=false]
+setblock 40 64 76 minecraft:chest[facing=south]{Items:[]}
+setblock 33 64 76 mekanism:basic_logistical_transporter
+setblock 35 64 76 mekanism:basic_logistical_transporter
+setblock 37 64 76 mekanism:basic_logistical_transporter
+setblock 39 64 76 mekanism:basic_logistical_transporter
+fill 34 64 75 39 64 75 mekanism:basic_universal_cable
+setblock 40 64 75 mekanism:basic_energy_cube[facing=south]
 execute as @e[type=minecraft:item,tag=!kw_shot] run kill @s

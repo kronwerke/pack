@@ -1,25 +1,23 @@
-# 023 create_brass/crafter
-#area 170 42 189 67
-fill 170 64 42 189 91 67 minecraft:air
-fill 170 60 42 189 62 67 minecraft:stone
-fill 170 63 42 189 63 67 minecraft:light_gray_concrete
-fill 174 64 48 189 79 48 minecraft:light_gray_concrete
-fill 174 64 48 174 79 61 minecraft:light_gray_concrete
-setblock 175 64 60 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "023"}','{"text": "create_brass"}','{"text": "crafter"}','{"text": ""}']}}
-setblock 176 64 60 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "a 3x3"}','{"text": "mechanical"}','{"text": "crafter grid"}','{"text": "with its arrows"}']}}
+# 023 create_brass/incomplete
+#area 168 42 189 67
+fill 168 64 42 189 91 67 minecraft:air
+fill 168 60 42 189 62 67 minecraft:stone
+fill 168 63 42 189 63 67 minecraft:light_gray_concrete
+fill 172 64 48 189 79 48 minecraft:light_gray_concrete
+fill 172 64 48 172 79 61 minecraft:light_gray_concrete
+setblock 173 64 60 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "023"}','{"text": "create_brass"}','{"text": "incomplete"}','{"text": ""}']}}
+setblock 174 64 60 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "belt with three"}','{"text": "deployers"}','{"text": "(cogwheel,"}','{"text": "tube, nugget)"}']}}
+setblock 175 64 60 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "and a press"}','{"text": ""}','{"text": ""}','{"text": ""}']}}
 fill 184 64 48 184 79 61 minecraft:light_gray_concrete
-setblock 178 64 53 create:mechanical_crafter[facing=south,pointing=right]
-setblock 178 65 53 create:mechanical_crafter[facing=south,pointing=down]
-setblock 178 66 53 create:mechanical_crafter[facing=south,pointing=down]
-setblock 179 64 53 create:mechanical_crafter[facing=south,pointing=right]
-setblock 179 65 53 create:mechanical_crafter[facing=south,pointing=down]
-setblock 179 66 53 create:mechanical_crafter[facing=south,pointing=down]
-setblock 180 64 53 create:mechanical_crafter[facing=south,pointing=right]
-setblock 180 65 53 create:mechanical_crafter[facing=south,pointing=down]
-setblock 180 66 53 create:mechanical_crafter[facing=south,pointing=down]
-setblock 181 64 53 create:depot
-setblock 177 64 53 create:cogwheel[axis=z]
-fill 176 64 52 178 65 52 create:andesite_casing
-setblock 177 64 52 create:andesite_encased_shaft[axis=z]
-setblock 177 64 51 create:creative_motor[facing=south]{ScrollValue:32}
+setblock 175 64 53 create:shaft[axis=z]
+setblock 181 64 53 create:shaft[axis=z]
+kw testworld use 175 64 53 up create:belt_connector
+kw testworld use 181 64 53 up create:belt_connector
+execute unless block 178 64 53 minecraft:air
+setblock 176 66 53 create:deployer[facing=down,axis_along_first=true]{HeldItem:{id:"create:cogwheel",count:1}}
+setblock 177 66 53 create:deployer[facing=down,axis_along_first=true]{HeldItem:{id:"create:large_cogwheel",count:1}}
+setblock 178 66 53 create:deployer[facing=down,axis_along_first=true]{HeldItem:{id:"minecraft:iron_nugget",count:1}}
+setblock 180 66 53 create:mechanical_press[facing=south]
+fill 176 67 53 180 67 53 create:andesite_casing
+summon item 179.5 65 53.5 {Item:{id:"create:incomplete_precision_mechanism",count:1},PickupDelay:32767,Age:-32768,Tags:["kw_shot"]}
 execute as @e[type=minecraft:item,tag=!kw_shot] run kill @s

@@ -1,14 +1,21 @@
-# 077 occultism/spirit_fire
-#area -4 144 15 169
-fill -4 64 144 15 91 169 minecraft:air
-fill -4 60 144 15 62 169 minecraft:stone
-fill -4 63 144 15 63 169 minecraft:light_gray_concrete
-fill 0 64 150 15 79 150 minecraft:light_gray_concrete
-fill 0 64 150 0 79 163 minecraft:light_gray_concrete
-setblock 1 64 162 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "077"}','{"text": "occultism"}','{"text": "spirit_fire"}','{"text": ""}']}}
-setblock 2 64 162 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "spirit fire"}','{"text": "turning"}','{"text": "andesite into"}','{"text": "otherstone"}']}}
-fill 10 64 150 10 79 163 minecraft:light_gray_concrete
-setblock 5 64 155 occultism:spirit_fire[color=white]
-summon item 5.5 65.5 155.5 {Item:{id:"minecraft:andesite",count:8},PickupDelay:32767,Age:-32768,Tags:["kw_shot"]}
-summon item 6.5 64.2 156.5 {Item:{id:"occultism:otherstone",count:4},PickupDelay:32767,Age:-32768,Tags:["kw_shot"]}
+# 077 gaia/arena
+#area 199 107 224 138
+fill 199 64 107 224 91 138 minecraft:air
+fill 199 60 107 224 62 138 minecraft:stone
+fill 199 63 107 224 63 138 minecraft:light_gray_concrete
+fill 203 64 113 224 79 113 minecraft:light_gray_concrete
+fill 203 64 113 203 79 132 minecraft:light_gray_concrete
+setblock 204 64 131 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "077"}','{"text": "gaia"}','{"text": "arena"}','{"text": ""}']}}
+setblock 205 64 131 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "beacon with"}','{"text": "four pylons"}','{"text": "from above"}','{"text": ""}']}}
+fill 219 64 113 219 79 132 minecraft:light_gray_concrete
+fill 210 63 120 212 63 122 minecraft:iron_block
+setblock 211 64 121 minecraft:beacon
+setblock 207 64 117 minecraft:quartz_block
+setblock 207 65 117 botania:gaia_pylon
+setblock 207 64 125 minecraft:quartz_block
+setblock 207 65 125 botania:gaia_pylon
+setblock 215 64 117 minecraft:quartz_block
+setblock 215 65 117 botania:gaia_pylon
+setblock 215 64 125 minecraft:quartz_block
+setblock 215 65 125 botania:gaia_pylon
 execute as @e[type=minecraft:item,tag=!kw_shot] run kill @s

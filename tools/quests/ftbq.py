@@ -16,6 +16,7 @@ Lettering on the canvas (chapter titles, section headings) is rendered by banner
 kubejs/assets/kronwerke/textures/quests/, see banner().
 """
 import hashlib
+import json
 import os
 import shutil
 
@@ -123,9 +124,22 @@ SHOTS_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "..",
 SHOT_SIZE = (224, 126)   # GUI pixels, 16:9
 
 
+def _same():
+    """Quests that show another quest's picture (tools/shots/same.json)."""
+    global _SAME
+    if _SAME is None:
+        with open(os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "shots", "same.json")) as f:
+            _SAME = json.load(f)
+    return _SAME
+
+
+_SAME = None
+
+
 def _shot(chapter, quest):
     """The camera picture of a quest (tools/shots, taken on the server), on top of its text."""
-    name = f"{chapter}_{quest}.png"
+    key = f"{chapter}/{quest}"
+    name = _same().get(key, key).replace("/", "_") + ".png"
     if os.path.exists(os.path.join(SHOTS_DIR, name)):
         return img(f"kronwerke:textures/quests/shots/{name}", *SHOT_SIZE)
     return None

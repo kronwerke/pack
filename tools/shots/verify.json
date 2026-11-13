@@ -60,7 +60,7 @@
   ],
   [
    "powah/reactor",
-   "execute in kronwerke:testworld if block 36 67 224 powah:reactor_starter"
+   "execute in kronwerke:testworld if block 26 67 224 powah:reactor_starter"
   ],
   [
    "ae2/cpu",
@@ -69,14 +69,6 @@
   [
    "storage/vault_big",
    "execute in kronwerke:testworld if block 70 64 241 create:item_vault[large=true]"
-  ],
-  [
-   "list_transport/vault",
-   "execute in kronwerke:testworld if block 129 64 241 create:item_vault[large=true]"
-  ],
-  [
-   "list_power/powah_reactor",
-   "execute in kronwerke:testworld if block 47 67 262 powah:reactor_starter"
   ],
   [
    "list_dimensions/d_mining",

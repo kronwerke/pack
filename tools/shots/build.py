@@ -483,6 +483,14 @@ def build(check=False):
 
     if check:
         problems += validate(catalog(), files)
+        with open(os.path.join(HERE, "same.json")) as fh:
+            for again, first in json.load(fh).items():
+                if again not in idx:
+                    problems.append(f"same.json: {again} is no quest")
+                if first not in scenes.SCENES:
+                    problems.append(f"same.json: {first} has no scene")
+                if again in scenes.SCENES:
+                    problems.append(f"same.json: {again} has a scene of its own")
     print(f"{n} boxes, {len(shots)} scenes, {len(Cell.vendored)} structures -> {OUT}")
     for p in problems:
         print("  " + p)

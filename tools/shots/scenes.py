@@ -1700,14 +1700,3 @@ def _(b):
     b.b(4, 0, 4, "minecraft:bedrock")
     b.b(4, 1, 4, "minecraft:fire")
     b.focus(3, 0, 3, 5, 2, 5)
-
-
-# what a list chapter shows again from the chapter that explains it
-for _again, _first in (("list_transport/belt", "create/belt"), ("list_transport/vault", "storage/vault_big"),
-                       ("list_transport/drawers", "storage/drawers_4"), ("list_power/powah_reactor", "powah/reactor"),
-                       ("list_power/ie_thermo", "immersive/thermoelectric"), ("list_dimensions/r_mekanism", "mekanism_advanced/teleporter"),
-                       ("list_power/draconic_core", "draconic/tiers"), ("list_transport/ie_wire", "immersive/connectors"),
-                       ("list_transport/mek_transporter", "mekanism_ores/line2"), ("list_power/flux", "flux_networks/first_link"),
-                       ("powah/rods", "powah/orb"), ("list_dimensions/d_nether", "nether/welcome"),
-                       ("list_dimensions/d_alfheim", "alfheim/open"), ("list_dimensions/d_end", "the_end/arrival")):
-    SCENES[_again] = SCENES[_first]

@@ -1,22 +1,32 @@
-# 081 aether/portal
-#area 25 250 43 275
-fill 25 64 250 43 91 275 minecraft:air
-fill 25 60 250 43 62 275 minecraft:stone
-fill 25 63 250 43 63 275 minecraft:light_gray_concrete
-fill 29 64 256 43 79 256 minecraft:light_gray_concrete
-fill 29 64 256 29 79 269 minecraft:light_gray_concrete
-setblock 30 64 268 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "081"}','{"text": "aether"}','{"text": "portal"}','{"text": ""}']}}
-setblock 31 64 268 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Bau das"}','{"text": "Glowstone-Portal"}','{"text": ""}','{"text": ""}']}}
-fill 38 64 256 38 79 269 minecraft:light_gray_concrete
-setblock 32 65 261 minecraft:glowstone
-setblock 32 66 261 minecraft:glowstone
-setblock 32 67 261 minecraft:glowstone
-setblock 33 64 261 minecraft:glowstone
-setblock 33 68 261 minecraft:glowstone
-setblock 34 64 261 minecraft:glowstone
-setblock 34 68 261 minecraft:glowstone
-setblock 35 65 261 minecraft:glowstone
-setblock 35 66 261 minecraft:glowstone
-setblock 35 67 261 minecraft:glowstone
-fill 33 65 261 34 67 261 aether:aether_portal[axis=x]
-execute if block 33 66 261 aether:aether_portal
+# 081 list_power/steam_engine, ie_thermo, powah_reactor
+#area -4 231 36 256
+fill -4 64 231 36 93 256 minecraft:air
+fill -4 60 231 36 62 256 minecraft:stone
+fill -4 63 231 36 63 256 minecraft:light_gray_concrete
+fill 0 64 237 36 81 237 minecraft:light_gray_concrete
+fill 0 64 237 0 81 250 minecraft:light_gray_concrete
+setblock 1 64 249 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "081.1"}','{"text": "list_power"}','{"text": "steam_engine"}','{"text": ""}']}}
+setblock 2 64 249 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Heiz einen"}','{"text": "Dampfkessel an"}','{"text": ""}','{"text": ""}']}}
+fill 11 64 237 11 81 250 minecraft:light_gray_concrete
+setblock 4 64 241 create:blaze_burner[blaze=smouldering]
+kw testworld use 4 64 241 up create:creative_blaze_cake
+setblock 4 64 242 create:blaze_burner[blaze=smouldering]
+kw testworld use 4 64 242 up create:creative_blaze_cake
+setblock 5 64 241 create:blaze_burner[blaze=smouldering]
+kw testworld use 5 64 241 up create:creative_blaze_cake
+setblock 5 64 242 create:blaze_burner[blaze=smouldering]
+kw testworld use 5 64 242 up create:creative_blaze_cake
+fill 4 65 241 5 67 242 create:fluid_tank[bottom=false,shape=window,top=false]
+setblock 4 66 244 create:shaft[axis=x]
+setblock 4 66 243 create:steam_engine[face=wall,facing=south,waterlogged=false]
+setblock 12 64 249 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "081.2"}','{"text": "list_power"}','{"text": "ie_thermo"}','{"text": ""}']}}
+setblock 13 64 249 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Spann Lava"}','{"text": "gegen Wasser"}','{"text": ""}','{"text": ""}']}}
+fill 21 64 237 21 81 250 minecraft:light_gray_concrete
+setblock 15 64 242 minecraft:magma_block
+setblock 16 64 242 immersiveengineering:thermoelectric_generator
+setblock 17 64 242 minecraft:blue_ice
+kw testworld use 16 64 242 up immersiveengineering:connector_lv
+setblock 22 64 249 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "081.3"}','{"text": "list_power"}','{"text": "powah_reactor"}','{"text": ""}']}}
+setblock 23 64 249 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Zünde den"}','{"text": "Powah-Reaktor"}','{"text": ""}','{"text": ""}']}}
+fill 31 64 237 31 81 250 minecraft:light_gray_concrete
+setblock 26 64 242 powah:reactor_starter[core=true]

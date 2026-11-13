@@ -1,41 +1,20 @@
-# 069 immersive/connectors, capacitor, thermoelectric
-#area 115 158 158 183
-fill 115 64 158 158 91 183 minecraft:air
-fill 115 60 158 158 62 183 minecraft:stone
-fill 115 63 158 158 63 183 minecraft:light_gray_concrete
-fill 119 64 164 158 79 164 minecraft:light_gray_concrete
-fill 119 64 164 119 79 177 minecraft:light_gray_concrete
-setblock 120 64 176 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "069.1"}','{"text": "immersive"}','{"text": "connectors"}','{"text": ""}']}}
-setblock 121 64 176 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "LV wires on"}','{"text": "posts, the"}','{"text": "accumulator,"}','{"text": "the generator"}']}}
-setblock 122 64 176 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "between magma"}','{"text": "and blue ice, a"}','{"text": "transformer"}','{"text": "with LV and MV"}']}}
-fill 131 64 164 131 79 177 minecraft:light_gray_concrete
-setblock 122 64 169 immersiveengineering:capacitor_lv
-setblock 128 64 169 immersiveengineering:capacitor_lv
-fill 125 64 169 125 66 169 immersiveengineering:treated_fence
-kw testworld use 122 64 169 up immersiveengineering:connector_lv
-kw testworld use 128 64 169 up immersiveengineering:connector_lv
-kw testworld use 125 66 169 up immersiveengineering:connector_lv_relay
-kw testworld use 122 65 169 south immersiveengineering:wirecoil_copper
-kw testworld use 125 67 169 south immersiveengineering:wirecoil_copper
-kw testworld use 125 67 169 south immersiveengineering:wirecoil_copper
-kw testworld use 128 65 169 south immersiveengineering:wirecoil_copper
-setblock 132 64 176 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "069.2"}','{"text": "immersive"}','{"text": "capacitor"}','{"text": ""}']}}
-setblock 133 64 176 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Bau einen"}','{"text": "LV-Kondensator"}','{"text": ""}','{"text": ""}']}}
-fill 143 64 164 143 79 177 minecraft:light_gray_concrete
-setblock 134 64 169 immersiveengineering:capacitor_lv
-setblock 140 64 169 immersiveengineering:capacitor_lv
-fill 137 64 169 137 66 169 immersiveengineering:treated_fence
-kw testworld use 134 64 169 up immersiveengineering:connector_lv
-kw testworld use 140 64 169 up immersiveengineering:connector_lv
-kw testworld use 137 66 169 up immersiveengineering:connector_lv_relay
-kw testworld use 134 65 169 south immersiveengineering:wirecoil_copper
-kw testworld use 137 67 169 south immersiveengineering:wirecoil_copper
-kw testworld use 137 67 169 south immersiveengineering:wirecoil_copper
-kw testworld use 140 65 169 south immersiveengineering:wirecoil_copper
-setblock 144 64 176 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "069.3"}','{"text": "immersive"}','{"text": "thermoelectric"}','{"text": ""}']}}
-setblock 145 64 176 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Bau einen"}','{"text": "Thermoelektrischen"}','{"text": "Generator"}','{"text": ""}']}}
-fill 153 64 164 153 79 177 minecraft:light_gray_concrete
-setblock 147 64 169 minecraft:magma_block
-setblock 148 64 169 immersiveengineering:thermoelectric_generator
-setblock 149 64 169 minecraft:blue_ice
-kw testworld use 148 64 169 up immersiveengineering:connector_lv
+# 069 immersive/blast_furnace, improved_form
+#area 26 158 55 184
+fill 26 64 158 55 91 184 minecraft:air
+fill 26 60 158 55 62 184 minecraft:stone
+fill 26 63 158 55 63 184 minecraft:light_gray_concrete
+fill 30 64 164 55 79 164 minecraft:light_gray_concrete
+fill 30 64 164 30 79 178 minecraft:light_gray_concrete
+setblock 31 64 177 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "069.1"}','{"text": "immersive"}','{"text": "blast_furnace"}','{"text": ""}']}}
+setblock 32 64 177 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "crude blast"}','{"text": "furnace GUI,"}','{"text": "improved"}','{"text": "furnace with"}']}}
+setblock 33 64 177 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "hopper and"}','{"text": "preheaters"}','{"text": ""}','{"text": ""}']}}
+fill 40 64 164 40 79 178 minecraft:light_gray_concrete
+place template immersiveengineering:multiblocks/blast_furnace 34 64 167 none
+kw testworld use 35 65 169 south immersiveengineering:hammer
+execute unless block 35 65 169 immersiveengineering:blastbrick
+setblock 41 64 177 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "069.2"}','{"text": "immersive"}','{"text": "improved_form"}','{"text": ""}']}}
+setblock 42 64 177 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Form einen"}','{"text": "Verbesserten"}','{"text": "Hochofen"}','{"text": ""}']}}
+fill 50 64 164 50 79 178 minecraft:light_gray_concrete
+place template immersiveengineering:multiblocks/improved_blast_furnace 44 64 167 none
+kw testworld use 45 65 169 south immersiveengineering:hammer
+execute unless block 45 65 169 immersiveengineering:blastbrick_reinforced

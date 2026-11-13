@@ -1,35 +1,22 @@
-# 089 eidolon/brazier, crucible, altar, stone_altar
-#area 11 290 60 315
-fill 11 64 290 55 91 315 minecraft:air
-fill 56 64 290 60 91 315 minecraft:air
-fill 11 60 290 60 62 315 minecraft:stone
-fill 11 63 290 60 63 315 minecraft:light_gray_concrete
-fill 15 64 296 60 79 296 minecraft:light_gray_concrete
-fill 15 64 296 15 79 309 minecraft:light_gray_concrete
-setblock 16 64 308 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "089.1"}','{"text": "eidolon"}','{"text": "brazier"}','{"text": ""}']}}
-setblock 17 64 308 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Bau Brazier und"}','{"text": "Stone Hands"}','{"text": ""}','{"text": ""}']}}
-fill 25 64 296 25 79 309 minecraft:light_gray_concrete
-setblock 20 64 301 eidolon_repraised:brazier
-setblock 18 64 301 eidolon_repraised:stone_hand[facing=east]
-setblock 22 64 301 eidolon_repraised:stone_hand[facing=west]
-setblock 20 64 299 eidolon_repraised:stone_hand[facing=south]
-setblock 26 64 308 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "089.2"}','{"text": "eidolon"}','{"text": "crucible"}','{"text": ""}']}}
-setblock 27 64 308 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Setz einen"}','{"text": "Crucible auf"}','{"text": ""}','{"text": ""}']}}
-fill 35 64 296 35 79 309 minecraft:light_gray_concrete
-setblock 30 64 301 minecraft:campfire[facing=south,lit=true]
-setblock 30 65 301 eidolon_repraised:crucible
-kw testworld use 30 65 301 up minecraft:water_bucket
-setblock 36 64 308 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "089.3"}','{"text": "eidolon"}','{"text": "altar"}','{"text": ""}']}}
-setblock 37 64 308 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Bau einen Altar"}','{"text": "mit Bildnis"}','{"text": ""}','{"text": ""}']}}
-fill 45 64 296 45 79 309 minecraft:light_gray_concrete
-fill 39 64 301 41 64 301 eidolon_repraised:wooden_altar
-setblock 40 65 301 eidolon_repraised:straw_effigy[facing=south]
-setblock 39 65 301 eidolon_repraised:candle
-setblock 41 65 301 minecraft:skeleton_skull[rotation=8]
-setblock 46 64 308 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "089.4"}','{"text": "eidolon"}','{"text": "stone_altar"}','{"text": ""}']}}
-setblock 47 64 308 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Bau Stone Altar"}','{"text": "und Elder"}','{"text": "Statue"}','{"text": ""}']}}
-fill 55 64 296 55 79 309 minecraft:light_gray_concrete
-fill 49 64 301 51 64 301 eidolon_repraised:stone_altar
-setblock 50 65 301 eidolon_repraised:unholy_effigy[facing=south]
-setblock 49 65 301 eidolon_repraised:goblet
-setblock 51 65 301 eidolon_repraised:candle
+# 089 undergarden/arrival
+#area 53 250 71 275
+fill 53 64 250 71 91 275 minecraft:air
+fill 53 60 250 71 62 275 minecraft:stone
+fill 53 63 250 71 63 275 minecraft:light_gray_concrete
+fill 57 64 256 71 79 256 minecraft:light_gray_concrete
+fill 57 64 256 57 79 269 minecraft:light_gray_concrete
+setblock 58 64 268 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "089"}','{"text": "undergarden"}','{"text": "arrival"}','{"text": ""}']}}
+setblock 59 64 268 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Steig hinunter"}','{"text": ""}','{"text": ""}','{"text": ""}']}}
+fill 66 64 256 66 79 269 minecraft:light_gray_concrete
+setblock 60 65 261 minecraft:stone_bricks
+setblock 60 66 261 minecraft:stone_bricks
+setblock 60 67 261 minecraft:stone_bricks
+setblock 61 64 261 minecraft:stone_bricks
+setblock 61 68 261 minecraft:stone_bricks
+setblock 62 64 261 minecraft:stone_bricks
+setblock 62 68 261 minecraft:stone_bricks
+setblock 63 65 261 minecraft:stone_bricks
+setblock 63 66 261 minecraft:stone_bricks
+setblock 63 67 261 minecraft:stone_bricks
+fill 61 65 261 62 67 261 undergarden:undergarden_portal[axis=x]
+execute if block 61 66 261 undergarden:undergarden_portal

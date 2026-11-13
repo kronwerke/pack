@@ -1,25 +1,20 @@
-# 049 gaia/dandelifeon
-#area 207 86 244 129
-fill 207 64 86 232 91 129 minecraft:air
-fill 233 64 86 244 91 129 minecraft:air
-fill 207 60 86 244 62 129 minecraft:stone
-fill 207 63 86 244 63 129 minecraft:light_gray_concrete
-fill 211 64 92 244 79 92 minecraft:light_gray_concrete
-fill 211 64 92 211 79 123 minecraft:light_gray_concrete
-setblock 212 64 122 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "049"}','{"text": "gaia"}','{"text": "dandelifeon"}','{"text": ""}']}}
-setblock 213 64 122 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "a 25x25 cell"}','{"text": "field"}','{"text": ""}','{"text": ""}']}}
-fill 239 64 92 239 79 123 minecraft:light_gray_concrete
-fill 213 63 94 237 63 118 minecraft:smooth_stone
-setblock 225 63 106 minecraft:grass_block
-setblock 225 64 106 botania:dandelifeon
-setblock 218 64 99 botania:cellular_block
-setblock 219 64 100 botania:cellular_block
-setblock 220 64 100 botania:cellular_block
-setblock 218 64 101 botania:cellular_block
-setblock 219 64 101 botania:cellular_block
-setblock 230 64 101 botania:cellular_block
-setblock 231 64 101 botania:cellular_block
-setblock 232 64 101 botania:cellular_block
-setblock 219 64 110 botania:cellular_block
-setblock 219 64 111 botania:cellular_block
-setblock 219 64 112 botania:cellular_block
+# 049 botania_runes/plate_base
+#area 154 86 173 111
+fill 154 64 86 173 91 111 minecraft:air
+fill 154 60 86 173 62 111 minecraft:stone
+fill 154 63 86 173 63 111 minecraft:light_gray_concrete
+fill 158 64 92 173 79 92 minecraft:light_gray_concrete
+fill 158 64 92 158 79 105 minecraft:light_gray_concrete
+setblock 159 64 104 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "049"}','{"text": "botania_runes"}','{"text": "plate_base"}','{"text": ""}']}}
+setblock 160 64 104 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "the 3x3 lapis"}','{"text": "and livingrock"}','{"text": "base with plate"}','{"text": "and sparks"}']}}
+fill 168 64 92 168 79 105 minecraft:light_gray_concrete
+setblock 162 64 96 botania:livingrock
+setblock 162 64 97 minecraft:lapis_block
+setblock 162 64 98 botania:livingrock
+setblock 163 64 96 minecraft:lapis_block
+setblock 163 64 97 botania:livingrock
+setblock 163 64 98 minecraft:lapis_block
+setblock 164 64 96 botania:livingrock
+setblock 164 64 97 minecraft:lapis_block
+setblock 164 64 98 botania:livingrock
+setblock 163 65 97 botania:terrestrial_agglomeration_plate

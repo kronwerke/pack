@@ -1,28 +1,23 @@
-# 086 draconic_chaos/reactor
-#area 37 269 58 296
-fill 37 64 269 58 97 296 minecraft:air
-fill 37 60 269 58 62 296 minecraft:stone
-fill 37 63 269 58 63 296 minecraft:light_gray_concrete
-fill 41 64 275 58 85 275 minecraft:light_gray_concrete
-fill 41 64 275 41 85 290 minecraft:light_gray_concrete
-setblock 42 64 289 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "086"}','{"text": "draconic_chaos"}','{"text": "reactor"}','{"text": ""}']}}
-setblock 43 64 289 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Bau den"}','{"text": "Drakonischen"}','{"text": "Reaktor"}','{"text": ""}']}}
-fill 53 64 275 53 85 290 minecraft:light_gray_concrete
-setblock 47 67 281 draconicevolution:reactor_core
-setblock 42 67 281 minecraft:stone
-kw testworld use 42 67 281 east draconicevolution:reactor_stabilizer
-setblock 42 67 281 minecraft:air
-setblock 52 67 281 minecraft:stone
-kw testworld use 52 67 281 west draconicevolution:reactor_stabilizer
-setblock 52 67 281 minecraft:air
-setblock 47 67 276 minecraft:stone
-kw testworld use 47 67 276 south draconicevolution:reactor_stabilizer
-setblock 47 67 276 minecraft:air
-setblock 47 67 286 minecraft:stone
-kw testworld use 47 67 286 north draconicevolution:reactor_stabilizer
-setblock 47 67 286 minecraft:air
-setblock 47 72 281 minecraft:stone
-kw testworld use 47 72 281 down draconicevolution:reactor_injector
-setblock 47 72 281 minecraft:air
-execute if block 43 67 281 draconicevolution:reactor_stabilizer
-execute if block 47 71 281 draconicevolution:reactor_injector
+# 086 the_end/arrival
+#area 10 250 29 275
+fill 10 64 250 29 91 275 minecraft:air
+fill 10 60 250 29 62 275 minecraft:stone
+fill 10 63 250 29 63 275 minecraft:light_gray_concrete
+fill 14 64 256 29 79 256 minecraft:light_gray_concrete
+fill 14 64 256 14 79 269 minecraft:light_gray_concrete
+setblock 15 64 268 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "086"}','{"text": "the_end"}','{"text": "arrival"}','{"text": ""}']}}
+setblock 16 64 268 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Betritt das End"}','{"text": ""}','{"text": ""}','{"text": ""}']}}
+fill 24 64 256 24 79 269 minecraft:light_gray_concrete
+setblock 18 64 259 minecraft:end_portal_frame[eye=true,facing=south]
+setblock 18 64 263 minecraft:end_portal_frame[eye=true,facing=north]
+setblock 17 64 260 minecraft:end_portal_frame[eye=true,facing=east]
+setblock 21 64 260 minecraft:end_portal_frame[eye=true,facing=west]
+setblock 19 64 259 minecraft:end_portal_frame[eye=true,facing=south]
+setblock 19 64 263 minecraft:end_portal_frame[eye=true,facing=north]
+setblock 17 64 261 minecraft:end_portal_frame[eye=true,facing=east]
+setblock 21 64 261 minecraft:end_portal_frame[eye=true,facing=west]
+setblock 20 64 259 minecraft:end_portal_frame[eye=true,facing=south]
+setblock 20 64 263 minecraft:end_portal_frame[eye=true,facing=north]
+setblock 17 64 262 minecraft:end_portal_frame[eye=true,facing=east]
+setblock 21 64 262 minecraft:end_portal_frame[eye=true,facing=west]
+fill 18 64 260 20 64 262 minecraft:end_portal

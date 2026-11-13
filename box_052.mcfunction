@@ -1,13 +1,25 @@
-# 052 occultism/spirit_fire
-#area -4 123 15 148
-fill -4 64 123 15 91 148 minecraft:air
-fill -4 60 123 15 62 148 minecraft:stone
-fill -4 63 123 15 63 148 minecraft:light_gray_concrete
-fill 0 64 129 15 79 129 minecraft:light_gray_concrete
-fill 0 64 129 0 79 142 minecraft:light_gray_concrete
-setblock 1 64 141 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "052"}','{"text": "occultism"}','{"text": "spirit_fire"}','{"text": ""}']}}
-setblock 2 64 141 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "spirit fire"}','{"text": "turning"}','{"text": "andesite into"}','{"text": "otherstone"}']}}
-fill 10 64 129 10 79 142 minecraft:light_gray_concrete
-setblock 5 64 134 occultism:spirit_fire[color=white]
-summon item 5.5 65.5 134.5 {Item:{id:"minecraft:andesite",count:8},PickupDelay:32767,Age:-32768,Tags:["kw_shot"]}
-summon item 6.5 64.2 135.5 {Item:{id:"occultism:otherstone",count:4},PickupDelay:32767,Age:-32768,Tags:["kw_shot"]}
+# 052 gaia/dandelifeon
+#area 207 86 244 129
+fill 207 64 86 232 91 129 minecraft:air
+fill 233 64 86 244 91 129 minecraft:air
+fill 207 60 86 244 62 129 minecraft:stone
+fill 207 63 86 244 63 129 minecraft:light_gray_concrete
+fill 211 64 92 244 79 92 minecraft:light_gray_concrete
+fill 211 64 92 211 79 123 minecraft:light_gray_concrete
+setblock 212 64 122 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "052"}','{"text": "gaia"}','{"text": "dandelifeon"}','{"text": ""}']}}
+setblock 213 64 122 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "a 25x25 cell"}','{"text": "field"}','{"text": ""}','{"text": ""}']}}
+fill 239 64 92 239 79 123 minecraft:light_gray_concrete
+fill 213 63 94 237 63 118 minecraft:smooth_stone
+setblock 225 63 106 minecraft:grass_block
+setblock 225 64 106 botania:dandelifeon
+setblock 218 64 99 botania:cellular_block
+setblock 219 64 100 botania:cellular_block
+setblock 220 64 100 botania:cellular_block
+setblock 218 64 101 botania:cellular_block
+setblock 219 64 101 botania:cellular_block
+setblock 230 64 101 botania:cellular_block
+setblock 231 64 101 botania:cellular_block
+setblock 232 64 101 botania:cellular_block
+setblock 219 64 110 botania:cellular_block
+setblock 219 64 111 botania:cellular_block
+setblock 219 64 112 botania:cellular_block

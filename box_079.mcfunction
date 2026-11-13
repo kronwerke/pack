@@ -1,22 +1,52 @@
-# 079 nether/welcome
-#area -4 250 14 275
-fill -4 64 250 14 91 275 minecraft:air
-fill -4 60 250 14 62 275 minecraft:stone
-fill -4 63 250 14 63 275 minecraft:light_gray_concrete
-fill 0 64 256 14 79 256 minecraft:light_gray_concrete
-fill 0 64 256 0 79 269 minecraft:light_gray_concrete
-setblock 1 64 268 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "079"}','{"text": "nether"}','{"text": "welcome"}','{"text": ""}']}}
-setblock 2 64 268 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Betritt den"}','{"text": "Nether"}','{"text": ""}','{"text": ""}']}}
-fill 9 64 256 9 79 269 minecraft:light_gray_concrete
-setblock 3 65 261 minecraft:obsidian
-setblock 3 66 261 minecraft:obsidian
-setblock 3 67 261 minecraft:obsidian
-setblock 4 64 261 minecraft:obsidian
-setblock 4 68 261 minecraft:obsidian
-setblock 5 64 261 minecraft:obsidian
-setblock 5 68 261 minecraft:obsidian
-setblock 6 65 261 minecraft:obsidian
-setblock 6 66 261 minecraft:obsidian
-setblock 6 67 261 minecraft:obsidian
-fill 4 65 261 5 67 261 minecraft:nether_portal[axis=x]
-execute if block 4 66 261 minecraft:nether_portal
+# 079 storage/drawers_4, controller, vault_big
+#area 23 212 63 237
+fill 23 64 212 63 91 237 minecraft:air
+fill 23 60 212 63 62 237 minecraft:stone
+fill 23 63 212 63 63 237 minecraft:light_gray_concrete
+fill 27 64 218 63 79 218 minecraft:light_gray_concrete
+fill 27 64 218 27 79 231 minecraft:light_gray_concrete
+setblock 28 64 230 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "079.1"}','{"text": "storage"}','{"text": "drawers_4"}','{"text": ""}']}}
+setblock 29 64 230 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Bau eine"}','{"text": "Schubladenwand"}','{"text": ""}','{"text": ""}']}}
+fill 37 64 218 37 79 231 minecraft:light_gray_concrete
+fill 31 64 222 33 66 222 minecraft:oak_planks
+kw testworld use 31 64 222 south functionalstorage:oak_4
+execute unless block 31 64 223 minecraft:air
+kw testworld use 31 64 223 south minecraft:iron_ingot
+kw testworld use 32 64 222 south functionalstorage:oak_4
+execute unless block 32 64 223 minecraft:air
+kw testworld use 32 64 223 south minecraft:copper_ingot
+kw testworld use 33 64 222 south functionalstorage:oak_4
+execute unless block 33 64 223 minecraft:air
+kw testworld use 33 64 223 south minecraft:gold_ingot
+kw testworld use 31 65 222 south functionalstorage:oak_4
+execute unless block 31 65 223 minecraft:air
+kw testworld use 31 65 223 south minecraft:redstone
+kw testworld use 32 65 222 south functionalstorage:oak_4
+execute unless block 32 65 223 minecraft:air
+kw testworld use 32 65 223 south minecraft:coal
+kw testworld use 33 65 222 south functionalstorage:oak_4
+execute unless block 33 65 223 minecraft:air
+kw testworld use 33 65 223 south minecraft:lapis_lazuli
+kw testworld use 31 66 222 south functionalstorage:oak_4
+execute unless block 31 66 223 minecraft:air
+kw testworld use 31 66 223 south minecraft:diamond
+kw testworld use 32 66 222 south functionalstorage:oak_4
+execute unless block 32 66 223 minecraft:air
+kw testworld use 32 66 223 south minecraft:quartz
+kw testworld use 33 66 222 south functionalstorage:oak_4
+execute unless block 33 66 223 minecraft:air
+kw testworld use 33 66 223 south minecraft:bone
+setblock 38 64 230 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "079.2"}','{"text": "storage"}','{"text": "controller"}','{"text": ""}']}}
+setblock 39 64 230 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Bau einen"}','{"text": "Lagerkern"}','{"text": ""}','{"text": ""}']}}
+fill 47 64 218 47 79 231 minecraft:light_gray_concrete
+setblock 42 64 223 sophisticatedstorage:controller
+setblock 40 64 223 sophisticatedstorage:barrel[facing=south,flat_top=false]
+setblock 41 64 223 sophisticatedstorage:barrel[facing=south,flat_top=false]
+setblock 43 64 223 sophisticatedstorage:barrel[facing=south,flat_top=false]
+setblock 41 65 223 sophisticatedstorage:barrel[facing=south,flat_top=false]
+setblock 42 65 223 sophisticatedstorage:barrel[facing=south,flat_top=false]
+setblock 43 65 223 sophisticatedstorage:barrel[facing=south,flat_top=false]
+setblock 48 64 230 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "079.3"}','{"text": "storage"}','{"text": "vault_big"}','{"text": ""}']}}
+setblock 49 64 230 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Bau einen"}','{"text": "großen Tresor"}','{"text": ""}','{"text": ""}']}}
+fill 58 64 218 58 79 231 minecraft:light_gray_concrete
+fill 50 64 222 55 66 224 create:item_vault[axis=x,large=false]

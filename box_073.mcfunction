@@ -1,23 +1,26 @@
-# 073 powah/orb, thermo, reactor
-#area -4 193 35 218
-fill -4 64 193 35 93 218 minecraft:air
-fill -4 60 193 35 62 218 minecraft:stone
-fill -4 63 193 35 63 218 minecraft:light_gray_concrete
-fill 0 64 199 35 81 199 minecraft:light_gray_concrete
-fill 0 64 199 0 81 212 minecraft:light_gray_concrete
-setblock 1 64 211 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "073.1"}','{"text": "powah"}','{"text": "orb"}','{"text": ""}']}}
-setblock 2 64 211 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Bau die"}','{"text": "Energizing Orb"}','{"text": ""}','{"text": ""}']}}
-fill 10 64 199 10 81 212 minecraft:light_gray_concrete
-setblock 5 64 204 powah:energizing_orb[facing=down]
-setblock 3 64 204 powah:energizing_rod_starter[facing=down]
-setblock 7 64 204 powah:energizing_rod_starter[facing=down]
-setblock 5 64 202 powah:energizing_rod_starter[facing=down]
-setblock 11 64 211 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "073.2"}','{"text": "powah"}','{"text": "thermo"}','{"text": ""}']}}
-setblock 12 64 211 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Stell einen"}','{"text": "Thermo"}','{"text": "Generator auf"}','{"text": ""}']}}
-fill 20 64 199 20 81 212 minecraft:light_gray_concrete
-setblock 15 64 204 minecraft:magma_block
-setblock 15 65 204 powah:thermo_generator_starter
-setblock 21 64 211 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "073.3"}','{"text": "powah"}','{"text": "reactor"}','{"text": ""}']}}
-setblock 22 64 211 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Bau einen"}','{"text": "Reaktor"}','{"text": ""}','{"text": ""}']}}
-fill 30 64 199 30 81 212 minecraft:light_gray_concrete
-setblock 25 64 204 powah:reactor_starter[core=true]
+# 073 immersive/tank, silo, shelf
+#area 154 158 193 187
+fill 154 64 158 188 94 187 minecraft:air
+fill 189 64 158 193 94 187 minecraft:air
+fill 154 60 158 193 62 187 minecraft:stone
+fill 154 63 158 193 63 187 minecraft:light_gray_concrete
+fill 158 64 164 193 82 164 minecraft:light_gray_concrete
+fill 158 64 164 158 82 181 minecraft:light_gray_concrete
+setblock 159 64 180 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "073.1"}','{"text": "immersive"}','{"text": "tank"}','{"text": ""}']}}
+setblock 160 64 180 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "the formed"}','{"text": "structures"}','{"text": ""}','{"text": ""}']}}
+fill 168 64 164 168 82 181 minecraft:light_gray_concrete
+place template immersiveengineering:multiblocks/sheetmetal_tank 162 64 167 none
+kw testworld use 163 65 169 south immersiveengineering:hammer
+execute unless block 163 65 169 immersiveengineering:sheetmetal_iron
+setblock 169 64 180 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "073.2"}','{"text": "immersive"}','{"text": "silo"}','{"text": ""}']}}
+setblock 170 64 180 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Form ein"}','{"text": "Elementsilo"}','{"text": ""}','{"text": ""}']}}
+fill 178 64 164 178 82 181 minecraft:light_gray_concrete
+place template immersiveengineering:multiblocks/silo 172 64 167 none
+kw testworld use 173 65 169 south immersiveengineering:hammer
+execute unless block 173 65 169 immersiveengineering:sheetmetal_iron
+setblock 179 64 180 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "073.3"}','{"text": "immersive"}','{"text": "shelf"}','{"text": ""}']}}
+setblock 180 64 180 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Form ein"}','{"text": "Kistenregal"}','{"text": ""}','{"text": ""}']}}
+fill 188 64 164 188 82 181 minecraft:light_gray_concrete
+place template immersiveengineering:multiblocks/shelf 181 64 167 none
+kw testworld use 182 65 168 south immersiveengineering:hammer
+execute unless block 182 65 168 immersiveengineering:steel_catwalk

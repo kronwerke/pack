@@ -1,20 +1,20 @@
-# 036 botania/pure_daisy
-#area -4 86 15 111
-fill -4 64 86 15 91 111 minecraft:air
-fill -4 60 86 15 62 111 minecraft:stone
-fill -4 63 86 15 63 111 minecraft:light_gray_concrete
-fill 0 64 92 15 79 92 minecraft:light_gray_concrete
-fill 0 64 92 0 79 105 minecraft:light_gray_concrete
-setblock 1 64 104 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "036"}','{"text": "botania"}','{"text": "pure_daisy"}','{"text": ""}']}}
-setblock 2 64 104 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "the daisy with"}','{"text": "8 stone or"}','{"text": "logs, half"}','{"text": "converted"}']}}
-fill 10 64 92 10 79 105 minecraft:light_gray_concrete
-setblock 5 63 97 minecraft:grass_block
-setblock 5 64 97 botania:pure_daisy
-setblock 4 64 96 minecraft:stone
-setblock 5 64 96 botania:livingrock
-setblock 6 64 96 minecraft:stone
-setblock 4 64 97 minecraft:oak_log[axis=y]
-setblock 6 64 97 botania:livingwood_log[axis=y]
-setblock 4 64 98 botania:livingrock
-setblock 5 64 98 minecraft:stone
-setblock 6 64 98 botania:livingrock
+# 036 ars_apprentice/relay
+#area 88 67 115 92
+fill 88 64 67 115 91 92 minecraft:air
+fill 88 60 67 115 62 92 minecraft:stone
+fill 88 63 67 115 63 92 minecraft:light_gray_concrete
+fill 92 64 73 115 79 73 minecraft:light_gray_concrete
+fill 92 64 73 92 79 86 minecraft:light_gray_concrete
+setblock 93 64 85 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "036"}','{"text": "ars_apprentice"}','{"text": "relay"}','{"text": ""}']}}
+setblock 94 64 85 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "two relays"}','{"text": "bridging jars"}','{"text": "about 20 blocks"}','{"text": "apart"}']}}
+fill 110 64 73 110 79 86 minecraft:light_gray_concrete
+setblock 94 64 78 ars_nouveau:source_jar[fill=11]{source:10000}
+setblock 99 64 78 ars_nouveau:relay
+setblock 103 64 78 ars_nouveau:relay
+setblock 108 64 78 ars_nouveau:source_jar[fill=0]
+kw testworld use 94 64 78 south ars_nouveau:dominion_wand
+kw testworld use 99 64 78 south ars_nouveau:dominion_wand
+kw testworld use 99 64 78 south ars_nouveau:dominion_wand
+kw testworld use 103 64 78 south ars_nouveau:dominion_wand
+kw testworld use 103 64 78 south ars_nouveau:dominion_wand
+kw testworld use 108 64 78 south ars_nouveau:dominion_wand

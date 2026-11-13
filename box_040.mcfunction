@@ -1,12 +1,30 @@
-# 040 botania/mana_void
-#area 56 86 75 111
-fill 56 64 86 75 91 111 minecraft:air
-fill 56 60 86 75 62 111 minecraft:stone
-fill 56 63 86 75 63 111 minecraft:light_gray_concrete
-fill 60 64 92 75 79 92 minecraft:light_gray_concrete
-fill 60 64 92 60 79 105 minecraft:light_gray_concrete
-setblock 61 64 104 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "040"}','{"text": "botania"}','{"text": "mana_void"}','{"text": ""}']}}
-setblock 62 64 104 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "a mana void"}','{"text": "under a pool"}','{"text": ""}','{"text": ""}']}}
-fill 70 64 92 70 79 105 minecraft:light_gray_concrete
-setblock 65 64 97 botania:mana_void
-setblock 65 65 97 botania:mana_pool{mana:1000000}
+# 040 botania/endo_auto
+#area 11 86 30 111
+fill 11 64 86 30 91 111 minecraft:air
+fill 11 60 86 30 62 111 minecraft:stone
+fill 11 63 86 30 63 111 minecraft:light_gray_concrete
+fill 15 64 92 30 79 92 minecraft:light_gray_concrete
+fill 15 64 92 15 79 105 minecraft:light_gray_concrete
+setblock 16 64 104 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "040"}','{"text": "botania"}','{"text": "endo_auto"}','{"text": ""}']}}
+setblock 17 64 104 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "chest, hopper"}','{"text": "and open crate"}','{"text": "over four"}','{"text": "Endoflames,"}']}}
+setblock 18 64 104 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "pressure plate"}','{"text": ""}','{"text": ""}','{"text": ""}']}}
+fill 25 64 92 25 79 105 minecraft:light_gray_concrete
+fill 19 63 97 21 63 98 minecraft:grass_block
+setblock 20 63 97 minecraft:light_gray_concrete
+setblock 20 64 97 minecraft:oak_pressure_plate
+setblock 19 64 97 botania:endoflame
+setblock 21 64 97 botania:endoflame
+setblock 19 64 98 botania:endoflame
+setblock 20 64 98 botania:endoflame
+setblock 21 64 98 botania:endoflame
+setblock 20 66 97 botania:open_crate
+setblock 20 67 97 minecraft:hopper[facing=down]
+setblock 20 68 97 minecraft:chest[facing=south]{Items:[{Slot:0b,id:"minecraft:coal",count:64}]}
+setblock 20 64 96 minecraft:redstone_wire
+setblock 20 64 95 minecraft:stone_bricks
+setblock 20 65 95 minecraft:redstone_wire
+setblock 21 65 95 minecraft:stone_bricks
+setblock 21 66 95 minecraft:redstone_wire
+setblock 21 66 96 minecraft:stone_bricks
+setblock 21 67 96 minecraft:redstone_wire
+setblock 21 67 97 minecraft:stone_bricks

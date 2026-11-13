@@ -1,28 +1,20 @@
-# 051 alfheim/open
-#area 257 86 278 111
-fill 257 64 86 278 91 111 minecraft:air
-fill 257 60 86 278 62 111 minecraft:stone
-fill 257 63 86 278 63 111 minecraft:light_gray_concrete
-fill 261 64 92 278 79 92 minecraft:light_gray_concrete
-fill 261 64 92 261 79 105 minecraft:light_gray_concrete
-setblock 262 64 104 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "051"}','{"text": "alfheim"}','{"text": "open"}','{"text": ""}']}}
-setblock 263 64 104 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "the open portal"}','{"text": "with an item"}','{"text": "flying out"}','{"text": ""}']}}
-fill 273 64 92 273 79 105 minecraft:light_gray_concrete
-setblock 267 64 96 botania:elven_gateway_core
-setblock 266 64 96 botania:livingwood_log[axis=x]
-setblock 266 68 96 botania:livingwood_log[axis=x]
-setblock 268 64 96 botania:livingwood_log[axis=x]
-setblock 268 68 96 botania:livingwood_log[axis=x]
-setblock 267 68 96 botania:glimmering_livingwood_log[axis=x]
-setblock 265 65 96 botania:livingwood_log[axis=y]
-setblock 265 66 96 botania:glimmering_livingwood_log[axis=y]
-setblock 265 67 96 botania:livingwood_log[axis=y]
-setblock 269 65 96 botania:livingwood_log[axis=y]
-setblock 269 66 96 botania:glimmering_livingwood_log[axis=y]
-setblock 269 67 96 botania:livingwood_log[axis=y]
-setblock 263 64 98 botania:mana_pool{mana:1000000}
-setblock 263 65 98 botania:natura_pylon
-setblock 271 64 98 botania:mana_pool{mana:1000000}
-setblock 271 65 98 botania:natura_pylon
-kw testworld use 267 64 96 south botania:wand_of_the_forest
-execute unless block 267 64 96 botania:elven_gateway_core[state=off]
+# 051 gaia/arena
+#area 186 86 211 117
+fill 186 64 86 211 91 117 minecraft:air
+fill 186 60 86 211 62 117 minecraft:stone
+fill 186 63 86 211 63 117 minecraft:light_gray_concrete
+fill 190 64 92 211 79 92 minecraft:light_gray_concrete
+fill 190 64 92 190 79 111 minecraft:light_gray_concrete
+setblock 191 64 110 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "051"}','{"text": "gaia"}','{"text": "arena"}','{"text": ""}']}}
+setblock 192 64 110 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "beacon with"}','{"text": "four pylons"}','{"text": "from above"}','{"text": ""}']}}
+fill 206 64 92 206 79 111 minecraft:light_gray_concrete
+fill 197 63 99 199 63 101 minecraft:iron_block
+setblock 198 64 100 minecraft:beacon
+setblock 194 64 96 minecraft:quartz_block
+setblock 194 65 96 botania:gaia_pylon
+setblock 194 64 104 minecraft:quartz_block
+setblock 194 65 104 botania:gaia_pylon
+setblock 202 64 96 minecraft:quartz_block
+setblock 202 65 96 botania:gaia_pylon
+setblock 202 64 104 minecraft:quartz_block
+setblock 202 65 104 botania:gaia_pylon

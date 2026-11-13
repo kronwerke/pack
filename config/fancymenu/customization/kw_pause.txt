@@ -189,8 +189,8 @@ element {
   [executable_action_instance:5e446359-ff9a-5b11-a652-358623c77283-1763000000000][action_type:closegui] = 
   [executable_action_instance:10b4aca9-e06e-5577-a37f-a89572d18943-1763000000000][action_type:sendmessage] = /ftbquests open_book
   [executable_block:5e072af0-2ec6-5deb-9f10-18feb47394d0-1763000000000][type:generic] = [executables:5e446359-ff9a-5b11-a652-358623c77283-1763000000000;10b4aca9-e06e-5577-a37f-a89572d18943-1763000000000;]
-  backgroundnormal = [source:local]/config/fancymenu/assets/kronwerke/btn_half.png
-  backgroundhovered = [source:local]/config/fancymenu/assets/kronwerke/btn_half_hover.png
+  backgroundnormal = [source:local]/config/fancymenu/assets/kronwerke/btn_80.png
+  backgroundhovered = [source:local]/config/fancymenu/assets/kronwerke/btn_80_hover.png
   underline_label_on_hover = false
   transparent_background = false
   restartbackgroundanimations = true
@@ -222,7 +222,7 @@ element {
   anchor_point = top-right
   x = -164
   y = 104
-  width = 72
+  width = 80
   height = 20
   stay_on_screen = false
   element_loading_requirement_container_identifier = a43098a3-7cb0-522b-82e5-f8a5f0f252bc-1763000000000
@@ -270,8 +270,8 @@ element {
   [executable_action_instance:b13f4aec-917d-541b-bc96-fdcd0ab5efcf-1763000000000][action_type:closegui] = 
   [executable_action_instance:af98c4d8-b3c4-509f-bd62-7fbaeeeb62e1-1763000000000][action_type:mimic_keybind] = key.ftbchunks.map|||false|||100
   [executable_block:a104d66c-ca72-590a-b5bd-517bcca64694-1763000000000][type:generic] = [executables:b13f4aec-917d-541b-bc96-fdcd0ab5efcf-1763000000000;af98c4d8-b3c4-509f-bd62-7fbaeeeb62e1-1763000000000;]
-  backgroundnormal = [source:local]/config/fancymenu/assets/kronwerke/btn_half.png
-  backgroundhovered = [source:local]/config/fancymenu/assets/kronwerke/btn_half_hover.png
+  backgroundnormal = [source:local]/config/fancymenu/assets/kronwerke/btn_64.png
+  backgroundhovered = [source:local]/config/fancymenu/assets/kronwerke/btn_64_hover.png
   underline_label_on_hover = false
   transparent_background = false
   restartbackgroundanimations = true
@@ -301,9 +301,9 @@ element {
   auto_sizing_base_screen_height = 1080
   sticky_anchor = false
   anchor_point = top-right
-  x = -88
+  x = -80
   y = 104
-  width = 72
+  width = 64
   height = 20
   stay_on_screen = false
   element_loading_requirement_container_identifier = a2e61d46-757e-5947-ac9b-c3419ee9adf5-1763000000000
@@ -349,8 +349,8 @@ element {
 vanilla_button {
   button_element_executable_block_identifier = 1a100885-e781-5e8f-9b08-a03deadf26f6-1763000000000
   [executable_block:1a100885-e781-5e8f-9b08-a03deadf26f6-1763000000000][type:generic] = [executables:]
-  backgroundnormal = [source:local]/config/fancymenu/assets/kronwerke/btn_half.png
-  backgroundhovered = [source:local]/config/fancymenu/assets/kronwerke/btn_half_hover.png
+  backgroundnormal = [source:local]/config/fancymenu/assets/kronwerke/btn_80.png
+  backgroundhovered = [source:local]/config/fancymenu/assets/kronwerke/btn_80_hover.png
   underline_label_on_hover = false
   transparent_background = false
   restartbackgroundanimations = true
@@ -381,7 +381,7 @@ vanilla_button {
   anchor_point = top-right
   x = -164
   y = 128
-  width = 72
+  width = 80
   height = 20
   stay_on_screen = false
   element_loading_requirement_container_identifier = 05bf9678-9501-5a0e-b90c-dddfec030c22-1763000000000
@@ -429,8 +429,8 @@ vanilla_button {
 vanilla_button {
   button_element_executable_block_identifier = 60c01d11-7ad6-562d-9d1a-3831620a3716-1763000000000
   [executable_block:60c01d11-7ad6-562d-9d1a-3831620a3716-1763000000000][type:generic] = [executables:]
-  backgroundnormal = [source:local]/config/fancymenu/assets/kronwerke/btn_half.png
-  backgroundhovered = [source:local]/config/fancymenu/assets/kronwerke/btn_half_hover.png
+  backgroundnormal = [source:local]/config/fancymenu/assets/kronwerke/btn_64.png
+  backgroundhovered = [source:local]/config/fancymenu/assets/kronwerke/btn_64_hover.png
   underline_label_on_hover = false
   transparent_background = false
   restartbackgroundanimations = true
@@ -459,9 +459,9 @@ vanilla_button {
   auto_sizing_base_screen_height = 1080
   sticky_anchor = false
   anchor_point = top-right
-  x = -88
+  x = -80
   y = 128
-  width = 72
+  width = 64
   height = 20
   stay_on_screen = false
   element_loading_requirement_container_identifier = bf817994-066c-59a5-81b4-9a37afcb5ac1-1763000000000
@@ -509,8 +509,8 @@ vanilla_button {
 vanilla_button {
   button_element_executable_block_identifier = d18137c0-c9ea-5e01-98ed-b61ed58afb50-1763000000000
   [executable_block:d18137c0-c9ea-5e01-98ed-b61ed58afb50-1763000000000][type:generic] = [executables:]
-  backgroundnormal = [source:local]/config/fancymenu/assets/kronwerke/btn_half.png
-  backgroundhovered = [source:local]/config/fancymenu/assets/kronwerke/btn_half_hover.png
+  backgroundnormal = [source:local]/config/fancymenu/assets/kronwerke/btn_80.png
+  backgroundhovered = [source:local]/config/fancymenu/assets/kronwerke/btn_80_hover.png
   underline_label_on_hover = false
   transparent_background = false
   restartbackgroundanimations = true
@@ -542,7 +542,7 @@ vanilla_button {
   anchor_point = top-right
   x = -164
   y = 152
-  width = 72
+  width = 80
   height = 20
   stay_on_screen = false
   element_loading_requirement_container_identifier = ddcf6d1b-067b-5141-86d6-d09f83f8b6c6-1763000000000
@@ -590,8 +590,8 @@ vanilla_button {
 vanilla_button {
   button_element_executable_block_identifier = b421b0f7-2172-5225-bce5-07d1cf1b7655-1763000000000
   [executable_block:b421b0f7-2172-5225-bce5-07d1cf1b7655-1763000000000][type:generic] = [executables:]
-  backgroundnormal = [source:local]/config/fancymenu/assets/kronwerke/btn_half.png
-  backgroundhovered = [source:local]/config/fancymenu/assets/kronwerke/btn_half_hover.png
+  backgroundnormal = [source:local]/config/fancymenu/assets/kronwerke/btn_64.png
+  backgroundhovered = [source:local]/config/fancymenu/assets/kronwerke/btn_64_hover.png
   underline_label_on_hover = false
   transparent_background = false
   restartbackgroundanimations = true
@@ -620,9 +620,9 @@ vanilla_button {
   auto_sizing_base_screen_height = 1080
   sticky_anchor = false
   anchor_point = top-right
-  x = -88
+  x = -80
   y = 152
-  width = 72
+  width = 64
   height = 20
   stay_on_screen = false
   element_loading_requirement_container_identifier = 7dc9a76d-aa56-54be-8d11-f8d680c1e002-1763000000000
@@ -703,7 +703,7 @@ element {
   auto_sizing_base_screen_height = 1080
   sticky_anchor = false
   anchor_point = top-right
-  x = -164
+  x = -158
   y = 176
   width = 20
   height = 20
@@ -784,7 +784,7 @@ element {
   auto_sizing_base_screen_height = 1080
   sticky_anchor = false
   anchor_point = top-right
-  x = -140
+  x = -134
   y = 176
   width = 20
   height = 20
@@ -865,7 +865,7 @@ element {
   auto_sizing_base_screen_height = 1080
   sticky_anchor = false
   anchor_point = top-right
-  x = -116
+  x = -110
   y = 176
   width = 20
   height = 20
@@ -913,8 +913,8 @@ element {
 vanilla_button {
   button_element_executable_block_identifier = c65365f2-99b1-52e6-84af-d1c3e716def2-1763000000000
   [executable_block:c65365f2-99b1-52e6-84af-d1c3e716def2-1763000000000][type:generic] = [executables:]
-  backgroundnormal = [source:local]/config/fancymenu/assets/kronwerke/btn_half.png
-  backgroundhovered = [source:local]/config/fancymenu/assets/kronwerke/btn_half_hover.png
+  backgroundnormal = [source:local]/config/fancymenu/assets/kronwerke/btn_64.png
+  backgroundhovered = [source:local]/config/fancymenu/assets/kronwerke/btn_64_hover.png
   underline_label_on_hover = false
   transparent_background = false
   restartbackgroundanimations = true
@@ -944,9 +944,9 @@ vanilla_button {
   auto_sizing_base_screen_height = 1080
   sticky_anchor = false
   anchor_point = top-right
-  x = -88
+  x = -80
   y = 176
-  width = 72
+  width = 64
   height = 20
   stay_on_screen = false
   element_loading_requirement_container_identifier = 06f59da5-8928-5307-9860-08317739b6dd-1763000000000
@@ -1226,15 +1226,15 @@ vanilla_button {
 }
 
 vanilla_button {
-  button_element_executable_block_identifier = 9e4e7def-195c-50fd-a58d-17d38a462c31-1763000000000
-  [executable_block:9e4e7def-195c-50fd-a58d-17d38a462c31-1763000000000][type:generic] = [executables:]
+  button_element_executable_block_identifier = 391a6c7c-0d9f-58db-887e-6b826478b889-1763000000000
+  [executable_block:391a6c7c-0d9f-58db-887e-6b826478b889-1763000000000][type:generic] = [executables:]
   underline_label_on_hover = false
   transparent_background = false
   restartbackgroundanimations = true
   nine_slice_custom_background = false
   navigatable = true
-  widget_active_state_requirement_container_identifier = 9266d38d-d351-5f09-ac59-4ad74c66f93a-1763000000000
-  [loading_requirement_container_meta:9266d38d-d351-5f09-ac59-4ad74c66f93a-1763000000000] = [groups:][instances:]
+  widget_active_state_requirement_container_identifier = bb587380-1252-5e4d-8a27-336511ba8e51-1763000000000
+  [loading_requirement_container_meta:bb587380-1252-5e4d-8a27-336511ba8e51-1763000000000] = [groups:][instances:]
   is_template = false
   template_apply_width = false
   template_apply_height = false
@@ -1246,7 +1246,7 @@ vanilla_button {
   template_share_with = buttons
   nine_slice_slider_handle = false
   element_type = vanilla_button
-  instance_identifier = pause_title_widget
+  instance_identifier = 40
   appearance_delay = no_delay
   disappearance_delay = no_delay
   fade_in_v2 = no_fading
@@ -1261,8 +1261,8 @@ vanilla_button {
   width = 20
   height = 20
   stay_on_screen = false
-  element_loading_requirement_container_identifier = a792c6e6-89b3-5da3-8f09-63023544c329-1763000000000
-  [loading_requirement_container_meta:a792c6e6-89b3-5da3-8f09-63023544c329-1763000000000] = [groups:][instances:]
+  element_loading_requirement_container_identifier = 760113cf-32b8-55cc-a4cd-b28d4a71d384-1763000000000
+  [loading_requirement_container_meta:760113cf-32b8-55cc-a4cd-b28d4a71d384-1763000000000] = [groups:][instances:]
   enable_parallax = false
   invert_parallax = false
   animated_offset_x = 0

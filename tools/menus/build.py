@@ -277,22 +277,22 @@ def pause():
     """The same column as on the title screen, on the right, so the view and other mods' texts on the left stay free."""
     L = 'pause'
     x, y = COL, 80
-    half = ('btn_half.png', 'btn_half_hover.png')
+    left, right = ('btn_80.png', 'btn_80_hover.png'), ('btn_64.png', 'btn_64_hover.png')     # 80 wide: "Advancements" must fit
     b = image(L + ':logo', 'logo.png', 'top-right', COL - 8, 8, 163, 62)
     b += vanilla('pause_return_to_game_button', 'top-right', x, y, CW, 20, 'btn_wide.png', 'btn_wide_hover.png', layout=L)
-    b += button(L + ':quests', local('quests'), 'top-right', x, y + 24, 72, 20, *half,
+    b += button(L + ':quests', local('quests'), 'top-right', x, y + 24, 80, 20, *left,
                 actions=[('closegui', ''), ('sendmessage', '/ftbquests open_book')])      # the book has no key in the pack
-    b += button(L + ':map', local('map'), 'top-right', x + 76, y + 24, 72, 20, *half,
+    b += button(L + ':map', local('map'), 'top-right', x + 84, y + 24, 64, 20, *right,
                 actions=[('closegui', ''), ('mimic_keybind', 'key.ftbchunks.map|||false|||100')])
-    b += vanilla('pause_advancements_button', 'top-right', x, y + 48, 72, 20, *half, layout=L)
-    b += vanilla('pause_stats_button', 'top-right', x + 76, y + 48, 72, 20, *half, layout=L)
-    b += vanilla('pause_options_button', 'top-right', x, y + 72, 72, 20, *half, label=local('options'), layout=L)
-    b += vanilla('398348', 'top-right', x + 76, y + 72, 72, 20, *half, layout=L)                  # NeoForge's Mods button
-    b += button(L + ':discord', '', 'top-right', x, y + 96, 20, 20, 'icon_chat.png', 'icon_chat_hover.png', [('openlink', DISCORD)], tip=local('discord.tip'))
-    b += button(L + ':web', '', 'top-right', x + 24, y + 96, 20, 20, 'icon_home.png', 'icon_home_hover.png', [('openlink', WEBSITE)], tip=local('web.tip'))
-    b += button(L + ':status', '', 'top-right', x + 48, y + 96, 20, 20, 'icon_book.png', 'icon_book_hover.png', [('openlink', WEBSITE + '/status')], tip=local('status.tip'))
-    b += vanilla('pause_disconnect_button', 'top-right', x + 76, y + 96, 72, 20, *half, label=local('leave'), layout=L)
-    b += hide(L, 'pause_send_feedback_button', 'pause_report_bugs_button', 'pause_share_to_lan_button', 'pause_title_widget')
+    b += vanilla('pause_advancements_button', 'top-right', x, y + 48, 80, 20, *left, layout=L)
+    b += vanilla('pause_stats_button', 'top-right', x + 84, y + 48, 64, 20, *right, layout=L)
+    b += vanilla('pause_options_button', 'top-right', x, y + 72, 80, 20, *left, label=local('options'), layout=L)
+    b += vanilla('398348', 'top-right', x + 84, y + 72, 64, 20, *right, layout=L)                  # NeoForge's Mods button
+    b += button(L + ':discord', '', 'top-right', x + 6, y + 96, 20, 20, 'icon_chat.png', 'icon_chat_hover.png', [('openlink', DISCORD)], tip=local('discord.tip'))
+    b += button(L + ':web', '', 'top-right', x + 30, y + 96, 20, 20, 'icon_home.png', 'icon_home_hover.png', [('openlink', WEBSITE)], tip=local('web.tip'))
+    b += button(L + ':status', '', 'top-right', x + 54, y + 96, 20, 20, 'icon_book.png', 'icon_book_hover.png', [('openlink', WEBSITE + '/status')], tip=local('status.tip'))
+    b += vanilla('pause_disconnect_button', 'top-right', x + 84, y + 96, 64, 20, *right, label=local('leave'), layout=L)
+    b += hide(L, 'pause_send_feedback_button', 'pause_report_bugs_button', 'pause_share_to_lan_button', '40')     # 40: the "Game Menu" line
     return layout(L, 'pause_screen', b)
 
 

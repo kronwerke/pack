@@ -235,6 +235,7 @@ def build(out):
     os.makedirs(out, exist_ok=True)
     items = {'logo': logo()}
     for name, (w, h, kind) in {'btn_main': (148, 32, 'main'), 'btn_wide': (148, 20, 'plain'), 'btn_half': (72, 20, 'plain'),
+                               'btn_80': (80, 20, 'plain'), 'btn_64': (64, 20, 'plain'),
                                'btn_vanilla': (200, 20, 'plain'), 'btn_small': (98, 20, 'plain')}.items():
         items[name] = plate(w, h, kind)
         items[name + '_hover'] = plate(w, h, kind, hover=True)

@@ -9,6 +9,14 @@ file = ".pg-native/libpowergridNative7.so"
 hash = "c90e98869ed32ed8bff68aa5a856f4507ca09025a6152d9df718115637c8e837"
 
 [[files]]
+file = "config/create-client.toml"
+hash = "cdba8f0b0fde512048d7b22bfa7aaa1ebc1d7a5a663531c31542bb5b9c4ddab8"
+
+[[files]]
+file = "config/cumulus_menus-client.toml"
+hash = "ad20185a8ed7d0784f46710ebd86f1520ba589044aaa689c9294acdc635b598f"
+
+[[files]]
 file = "config/defaultoptions/keybindings.txt"
 hash = "ce8c481b348373696e611638c47d5dbc4086a302538ab1e0170cecbb8beee575"
 
@@ -186,7 +194,7 @@ hash = "2ed6bbb3905a229ccb8443fecd11337535e004e6f50b66a3e51f568af8e04cc0"
 
 [[files]]
 file = "config/fancymenu/customization/kw_pause.txt"
-hash = "d90e75cf6458b06c255e0bc2493ca302acedb4416a23034229394e31ad57db73"
+hash = "26b7b9e8448ae1a433d836d377ee57fc2b4027bd0a5f8dd47b959e750a4a861a"
 
 [[files]]
 file = "config/fancymenu/customization/kw_title_day.txt"
@@ -623,6 +631,10 @@ hash = "597598f10256238d891b9d614376663dd99c2352590a09deba17106cd6cd9dc2"
 [[files]]
 file = "config/servercore/optimizations.yml"
 hash = "16e44667a63c3d364b2a1bb6baa302775bc68b9d765e974d2bd9809554669385"
+
+[[files]]
+file = "config/supplementaries-client.toml"
+hash = "e4ae9f18667a62bb201cb944f13f524f1fbb9b9d67b2e1ab004649894861013f"
 
 [[files]]
 file = "config/tectonic.json"

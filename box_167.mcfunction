@@ -1,32 +1,32 @@
 # 167 list_gear/mek_jetpack, drilling, wyvern, sg_end
-#area 283 378 334 407
-fill 283 64 378 321 91 407 minecraft:air
-fill 322 64 378 334 91 407 minecraft:air
-fill 283 60 378 334 62 407 minecraft:stone
-fill 283 63 378 334 63 407 minecraft:light_gray_concrete
-fill 287 64 384 334 79 384 minecraft:light_gray_concrete
-fill 287 64 384 287 79 401 minecraft:light_gray_concrete
-setblock 288 64 400 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "167.1"}','{"text": "list_gear"}','{"text": "mek_jetpack"}','{"text": ""}']}}
-setblock 289 64 400 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Flieg mit dem"}','{"text": "Jetpack"}','{"text": ""}','{"text": ""}']}}
-fill 297 64 384 297 79 401 minecraft:light_gray_concrete
-summon armor_stand 292.5 64 389.5 {ArmorItems:[{},{},{id:"mekanism:jetpack",count:1},{}],ShowArms:1b,NoBasePlate:1b,Tags:["kw_shot"],Rotation:[20f,0f]}
-setblock 298 64 400 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "167.2"}','{"text": "list_gear"}','{"text": "drilling"}','{"text": ""}']}}
-setblock 299 64 400 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Stell eine"}','{"text": "Bohrmaschine"}','{"text": "auf"}','{"text": ""}']}}
-fill 309 64 384 309 79 401 minecraft:light_gray_concrete
-kw testworld place shots:createoreexcavation/drilling_machine 299 63 386 none
-setblock 310 64 400 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "167.3"}','{"text": "list_gear"}','{"text": "wyvern"}','{"text": ""}']}}
-setblock 311 64 400 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Fusioniere"}','{"text": "Wyvern-Ausrüstung"}','{"text": ""}','{"text": ""}']}}
-fill 319 64 384 319 79 401 minecraft:light_gray_concrete
-summon armor_stand 313.5 64 389.5 {ArmorItems:[{},{},{id:"draconicevolution:wyvern_chestpiece",count:1},{}],HandItems:[{id:"draconicevolution:wyvern_sword",count:1},{}],ShowArms:1b,NoBasePlate:1b,Tags:["kw_shot"],Rotation:[180f,0f]}
-summon armor_stand 315.5 64 389.5 {ArmorItems:[{},{},{},{}],HandItems:[{id:"draconicevolution:wyvern_pickaxe",count:1},{}],ShowArms:1b,NoBasePlate:1b,Tags:["kw_shot"],Rotation:[180f,0f]}
-setblock 320 64 400 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "167.4"}','{"text": "list_gear"}','{"text": "sg_end"}','{"text": ""}']}}
-setblock 321 64 400 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Schmiede"}','{"text": "Azur-Elektrum"}','{"text": "und"}','{"text": "Tyrann-Stahl"}']}}
-fill 329 64 384 329 79 401 minecraft:light_gray_concrete
-fill 323 64 388 325 65 388 minecraft:end_stone
-setblock 324 64 388 silentgear:azure_silver_ore
-setblock 325 65 388 silentgear:azure_silver_ore
-setblock 323 64 390 minecraft:smooth_stone_slab
-summon item_display 323.5 64.95 390.5 {item:{id:"silentgear:azure_electrum_ingot",count:1},item_display:"fixed",billboard:"vertical",transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[1.0f,1.0f,1.0f]},brightness:{sky:15,block:15},Tags:["kw_shot"]}
-setblock 325 64 390 minecraft:smooth_stone_slab
-summon item_display 325.5 64.95 390.5 {item:{id:"silentgear:tyrian_steel_ingot",count:1},item_display:"fixed",billboard:"vertical",transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[1.0f,1.0f,1.0f]},brightness:{sky:15,block:15},Tags:["kw_shot"]}
+#area 283 401 334 430
+fill 283 64 401 321 91 430 minecraft:air
+fill 322 64 401 334 91 430 minecraft:air
+fill 283 60 401 334 62 430 minecraft:stone
+fill 283 63 401 334 63 430 minecraft:light_gray_concrete
+fill 287 64 407 334 79 407 minecraft:light_gray_concrete
+fill 287 64 407 287 79 424 minecraft:light_gray_concrete
+setblock 288 64 423 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "167.1"}','{"text": "list_gear"}','{"text": "mek_jetpack"}','{"text": ""}']}}
+setblock 289 64 423 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Flieg mit dem"}','{"text": "Jetpack"}','{"text": ""}','{"text": ""}']}}
+fill 297 64 407 297 79 424 minecraft:light_gray_concrete
+summon armor_stand 292.5 64 412.5 {ArmorItems:[{},{},{id:"mekanism:jetpack",count:1},{}],ShowArms:1b,NoBasePlate:1b,Tags:["kw_shot"],Rotation:[20f,0f]}
+setblock 298 64 423 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "167.2"}','{"text": "list_gear"}','{"text": "drilling"}','{"text": ""}']}}
+setblock 299 64 423 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Stell eine"}','{"text": "Bohrmaschine"}','{"text": "auf"}','{"text": ""}']}}
+fill 309 64 407 309 79 424 minecraft:light_gray_concrete
+kw testworld place shots:createoreexcavation/drilling_machine 299 63 409 none
+setblock 310 64 423 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "167.3"}','{"text": "list_gear"}','{"text": "wyvern"}','{"text": ""}']}}
+setblock 311 64 423 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Fusioniere"}','{"text": "Wyvern-Ausrüstung"}','{"text": ""}','{"text": ""}']}}
+fill 319 64 407 319 79 424 minecraft:light_gray_concrete
+summon armor_stand 313.5 64 412.5 {ArmorItems:[{},{},{id:"draconicevolution:wyvern_chestpiece",count:1},{}],HandItems:[{id:"draconicevolution:wyvern_sword",count:1},{}],ShowArms:1b,NoBasePlate:1b,Tags:["kw_shot"],Rotation:[180f,0f]}
+summon armor_stand 315.5 64 412.5 {ArmorItems:[{},{},{},{}],HandItems:[{id:"draconicevolution:wyvern_pickaxe",count:1},{}],ShowArms:1b,NoBasePlate:1b,Tags:["kw_shot"],Rotation:[180f,0f]}
+setblock 320 64 423 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "167.4"}','{"text": "list_gear"}','{"text": "sg_end"}','{"text": ""}']}}
+setblock 321 64 423 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Schmiede"}','{"text": "Azur-Elektrum"}','{"text": "und"}','{"text": "Tyrann-Stahl"}']}}
+fill 329 64 407 329 79 424 minecraft:light_gray_concrete
+fill 323 64 411 325 65 411 minecraft:end_stone
+setblock 324 64 411 silentgear:azure_silver_ore
+setblock 325 65 411 silentgear:azure_silver_ore
+setblock 323 64 413 minecraft:smooth_stone_slab
+summon item_display 323.5 64.95 413.5 {item:{id:"silentgear:azure_electrum_ingot",count:1},item_display:"fixed",billboard:"vertical",transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[1.0f,1.0f,1.0f]},brightness:{sky:15,block:15},Tags:["kw_shot"]}
+setblock 325 64 413 minecraft:smooth_stone_slab
+summon item_display 325.5 64.95 413.5 {item:{id:"silentgear:tyrian_steel_ingot",count:1},item_display:"fixed",billboard:"vertical",transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[1.0f,1.0f,1.0f]},brightness:{sky:15,block:15},Tags:["kw_shot"]}
 execute as @e[type=minecraft:item,tag=!kw_shot] run kill @s

@@ -3,7 +3,7 @@
   -8,
   -8,
   428,
-  375
+  377
  ],
  "checks": [
   [
@@ -68,23 +68,23 @@
   ],
   [
    "powah/reactor",
-   "execute in kronwerke:testworld if block 124 67 245 powah:reactor_starter"
+   "execute in kronwerke:testworld if block 124 67 247 powah:reactor_starter"
   ],
   [
    "ae2/cpu",
-   "execute in kronwerke:testworld if block 84 64 266 ae2:1k_crafting_storage[formed=true]"
+   "execute in kronwerke:testworld if block 84 64 268 ae2:1k_crafting_storage[formed=true]"
   ],
   [
    "ae2_advanced/bridge",
-   "execute in kronwerke:testworld if data block 110 65 265 inventory_id"
+   "execute in kronwerke:testworld if data block 110 65 267 inventory_id"
   ],
   [
    "storage/vault_big",
-   "execute in kronwerke:testworld if block 247 64 264 create:item_vault[large=true]"
+   "execute in kronwerke:testworld if block 247 64 266 create:item_vault[large=true]"
   ],
   [
    "list_dimensions/d_mining",
-   "execute in kronwerke:testworld if block 105 66 309 kronwerke:minenportal"
+   "execute in kronwerke:testworld if block 105 66 311 kronwerke:minenportal"
   ]
  ]
 }

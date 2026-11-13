@@ -2800,9 +2800,11 @@ def _(b):
     b.b(3, 1, 4, "occultism:iesnium_ore")
 
 
-@scene("ars_master/tribute")
+@scene("ars_master/tribute", w=11, d=11)
 def _(b):
-    b.m("ars_nouveau:wilden_boss", 4, 0, 4)
+    # the Wilden Chimera: bigger than anything else in the book, so its cell and its frame are too
+    b.m("ars_nouveau:wilden_boss", 5, 0, 5)
+    b.focus(2, 0, 2, 8, 4, 8)
 
 
 @scene("ars_nouveau/starbuncle_work")
@@ -2866,12 +2868,6 @@ def _(b):
     b.focus(2, 0, 3, 6, 2, 5)
 
 
-@scene("draconic_chaos/crystals")
-def _(b):
-    b.e("draconicevolution:guardian_crystal", 4, 1, 4)
-    b.focus(3, 0, 3, 5, 3, 5)
-
-
 # ===================================================================================
 # Twentieth batch: a wood set, pipes, candles
 
@@ -2911,16 +2907,6 @@ def _(b):
 @scene("ars_master/ritual_awakening")
 def _(b):
     b.m("ars_nouveau:cascading_weald_walker", 4, 0, 4)
-
-
-@scene("industrial/transporters")
-def _(b):
-    # a transporter on each chest, set by hand: one sends, one receives
-    b.b(2, 0, 4, "minecraft:chest[facing=south,type=single,waterlogged=false]")
-    b.b(6, 0, 4, "minecraft:chest[facing=south,type=single,waterlogged=false]")
-    b.use(2, 0, 4, "east", "industrialforegoing:transporter")
-    b.use(6, 0, 4, "west", "industrialforegoing:transporter")
-    b.focus(2, 0, 3, 6, 1, 5)
 
 
 # ===================================================================================

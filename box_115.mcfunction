@@ -1,14 +1,14 @@
-# 115 immersive/hammer
-#area -4 211 15 236
-fill -4 64 211 15 91 236 minecraft:air
-fill -4 60 211 15 62 236 minecraft:stone
-fill -4 63 211 15 63 236 minecraft:light_gray_concrete
-fill 0 64 217 15 79 217 minecraft:light_gray_concrete
-fill 0 64 217 0 79 230 minecraft:light_gray_concrete
-setblock 1 64 229 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "115"}','{"text": "immersive"}','{"text": "hammer"}','{"text": ""}']}}
-setblock 2 64 229 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "right-clicking"}','{"text": "a structure"}','{"text": "with the hammer"}','{"text": ""}']}}
-fill 10 64 217 10 79 230 minecraft:light_gray_concrete
-place template immersiveengineering:multiblocks/coke_oven 4 64 220 none
-setblock 5 64 224 minecraft:smooth_stone_slab
-summon item_display 5.5 65.04 224.5 {item:{id:"immersiveengineering:hammer",count:1},item_display:"fixed",billboard:"vertical",transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[1.2f,1.2f,1.2f]},brightness:{sky:15,block:15},Tags:["kw_shot"]}
+# 115 hexerei/sage_plate
+#area 294 180 313 205
+fill 294 64 180 313 91 205 minecraft:air
+fill 294 60 180 313 62 205 minecraft:stone
+fill 294 63 180 313 63 205 minecraft:light_gray_concrete
+fill 298 64 186 313 79 186 minecraft:light_gray_concrete
+fill 298 64 186 298 79 199 minecraft:light_gray_concrete
+setblock 299 64 198 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "115"}','{"text": "hexerei"}','{"text": "sage_plate"}','{"text": ""}']}}
+setblock 300 64 198 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "burning sage"}','{"text": "plate with the"}','{"text": "smoke ring"}','{"text": ""}']}}
+fill 308 64 186 308 79 199 minecraft:light_gray_concrete
+setblock 303 64 191 hexerei:sage_burning_plate[facing=south]
+kw testworld use 303 64 191 up hexerei:dried_sage_bundle
+kw testworld use 303 64 191 up minecraft:flint_and_steel
 execute as @e[type=minecraft:item,tag=!kw_shot] run kill @s

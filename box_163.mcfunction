@@ -1,72 +1,36 @@
-# 163 malum/altar, obelisk, crucible, healing_rite, quickening
-#area 196 370 257 399
-fill 196 64 370 229 95 399 minecraft:air
-fill 230 64 370 257 95 399 minecraft:air
-fill 196 60 370 257 62 399 minecraft:stone
-fill 196 63 370 257 63 399 minecraft:light_gray_concrete
-fill 200 64 376 257 83 376 minecraft:light_gray_concrete
-fill 200 64 376 200 83 393 minecraft:light_gray_concrete
-setblock 201 64 392 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "163.1"}','{"text": "malum"}','{"text": "altar"}','{"text": ""}']}}
-setblock 202 64 392 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Bau einen"}','{"text": "Spirit Altar"}','{"text": ""}','{"text": ""}']}}
-fill 210 64 376 210 83 393 minecraft:light_gray_concrete
-setblock 205 64 381 malum:spirit_altar
-kw testworld use 205 64 381 south malum:runewood_planks
-setblock 203 64 381 malum:runewood_planks
-setblock 203 65 381 malum:runewood_item_stand[facing=up,waterlogged=false]
-kw testworld use 203 65 381 south malum:hallowed_gold_ingot
-setblock 207 64 381 malum:runewood_planks
-setblock 207 65 381 malum:runewood_item_stand[facing=up,waterlogged=false]
-kw testworld use 207 65 381 south malum:hallowed_gold_ingot
-setblock 211 64 392 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "163.2"}','{"text": "malum"}','{"text": "obelisk"}','{"text": ""}']}}
-setblock 212 64 392 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Stell"}','{"text": "Runewood-Obelisken"}','{"text": "auf"}','{"text": ""}']}}
-fill 222 64 376 222 83 393 minecraft:light_gray_concrete
-setblock 216 64 381 malum:spirit_altar
-kw testworld use 216 64 381 south malum:runewood_planks
-setblock 214 64 381 malum:runewood_planks
-setblock 214 65 381 malum:runewood_item_stand[facing=up,waterlogged=false]
-kw testworld use 214 65 381 south malum:hallowed_gold_ingot
-setblock 218 64 381 malum:runewood_planks
-setblock 218 65 381 malum:runewood_item_stand[facing=up,waterlogged=false]
-kw testworld use 218 65 381 south malum:hallowed_gold_ingot
-kw testworld use 213 63 379 up malum:runewood_obelisk
-execute unless block 213 64 379 minecraft:air
-kw testworld use 219 63 379 up malum:runewood_obelisk
-execute unless block 219 64 379 minecraft:air
-kw testworld use 213 63 383 up malum:runewood_obelisk
-execute unless block 213 64 383 minecraft:air
-kw testworld use 219 63 383 up malum:runewood_obelisk
-execute unless block 219 64 383 minecraft:air
-setblock 223 64 392 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "163.3"}','{"text": "malum"}','{"text": "crucible"}','{"text": ""}']}}
-setblock 224 64 392 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Bau den Spirit"}','{"text": "Crucible"}','{"text": ""}','{"text": ""}']}}
-fill 232 64 376 232 83 393 minecraft:light_gray_concrete
-kw testworld use 227 63 381 up malum:spirit_crucible
-setblock 233 64 392 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "163.4"}','{"text": "malum"}','{"text": "healing_rite"}','{"text": ""}']}}
-setblock 234 64 392 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Zünde den Rite"}','{"text": "of Healing"}','{"text": ""}','{"text": ""}']}}
-fill 242 64 376 242 83 393 minecraft:light_gray_concrete
-setblock 237 64 381 malum:runewood_totem_base
-setblock 237 65 381 malum:runewood_log[axis=y]
-kw testworld use 237 65 381 south malum:arcane_spirit
-execute unless block 237 65 381 malum:runewood_log
-setblock 237 66 381 malum:runewood_log[axis=y]
-kw testworld use 237 66 381 south malum:sacred_spirit
-execute unless block 237 66 381 malum:runewood_log
-setblock 237 67 381 malum:runewood_log[axis=y]
-kw testworld use 237 67 381 south malum:sacred_spirit
-execute unless block 237 67 381 malum:runewood_log
-setblock 243 64 392 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "163.5"}','{"text": "malum"}','{"text": "quickening"}','{"text": ""}']}}
-setblock 244 64 392 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Zünde den Rite"}','{"text": "of Quickening"}','{"text": ""}','{"text": ""}']}}
-fill 252 64 376 252 83 393 minecraft:light_gray_concrete
-setblock 247 64 380 malum:soulwood_totem_base
-setblock 247 65 380 malum:soulwood_log[axis=y]
-kw testworld use 247 65 380 south malum:eldritch_spirit
-execute unless block 247 65 380 malum:soulwood_log
-setblock 247 66 380 malum:soulwood_log[axis=y]
-kw testworld use 247 66 380 south malum:arcane_spirit
-execute unless block 247 66 380 malum:soulwood_log
-setblock 247 67 380 malum:soulwood_log[axis=y]
-kw testworld use 247 67 380 south malum:infernal_spirit
-execute unless block 247 67 380 malum:soulwood_log
-setblock 247 68 380 malum:soulwood_log[axis=y]
-kw testworld use 247 68 380 south malum:infernal_spirit
-execute unless block 247 68 380 malum:soulwood_log
+# 163 eidolon/brazier, crucible, altar, stone_altar
+#area 171 374 220 399
+fill 171 64 374 215 91 399 minecraft:air
+fill 216 64 374 220 91 399 minecraft:air
+fill 171 60 374 220 62 399 minecraft:stone
+fill 171 63 374 220 63 399 minecraft:light_gray_concrete
+fill 175 64 380 220 79 380 minecraft:light_gray_concrete
+fill 175 64 380 175 79 393 minecraft:light_gray_concrete
+setblock 176 64 392 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "163.1"}','{"text": "eidolon"}','{"text": "brazier"}','{"text": ""}']}}
+setblock 177 64 392 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Bau Brazier und"}','{"text": "Stone Hands"}','{"text": ""}','{"text": ""}']}}
+fill 185 64 380 185 79 393 minecraft:light_gray_concrete
+setblock 180 64 385 eidolon_repraised:brazier
+setblock 178 64 385 eidolon_repraised:stone_hand[facing=east]
+setblock 182 64 385 eidolon_repraised:stone_hand[facing=west]
+setblock 180 64 383 eidolon_repraised:stone_hand[facing=south]
+setblock 186 64 392 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "163.2"}','{"text": "eidolon"}','{"text": "crucible"}','{"text": ""}']}}
+setblock 187 64 392 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Setz einen"}','{"text": "Crucible auf"}','{"text": ""}','{"text": ""}']}}
+fill 195 64 380 195 79 393 minecraft:light_gray_concrete
+setblock 190 64 385 minecraft:campfire[facing=south,lit=true]
+setblock 190 65 385 eidolon_repraised:crucible
+kw testworld use 190 65 385 up minecraft:water_bucket
+setblock 196 64 392 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "163.3"}','{"text": "eidolon"}','{"text": "altar"}','{"text": ""}']}}
+setblock 197 64 392 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Bau einen Altar"}','{"text": "mit Bildnis"}','{"text": ""}','{"text": ""}']}}
+fill 205 64 380 205 79 393 minecraft:light_gray_concrete
+fill 199 64 385 201 64 385 eidolon_repraised:wooden_altar
+setblock 200 65 385 eidolon_repraised:straw_effigy[facing=south]
+setblock 199 65 385 eidolon_repraised:candle
+setblock 201 65 385 minecraft:skeleton_skull[rotation=8]
+setblock 206 64 392 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "163.4"}','{"text": "eidolon"}','{"text": "stone_altar"}','{"text": ""}']}}
+setblock 207 64 392 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Bau Stone Altar"}','{"text": "und Elder"}','{"text": "Statue"}','{"text": ""}']}}
+fill 215 64 380 215 79 393 minecraft:light_gray_concrete
+fill 209 64 385 211 64 385 eidolon_repraised:stone_altar
+setblock 210 65 385 eidolon_repraised:unholy_effigy[facing=south]
+setblock 209 65 385 eidolon_repraised:goblet
+setblock 211 65 385 eidolon_repraised:candle
 execute as @e[type=minecraft:item,tag=!kw_shot] run kill @s

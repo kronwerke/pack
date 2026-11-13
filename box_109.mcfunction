@@ -1,24 +1,15 @@
-# 109 occultism_afrit/storage
-#area 199 176 222 205
-fill 199 64 176 222 91 205 minecraft:air
-fill 199 60 176 222 62 205 minecraft:stone
-fill 199 63 176 222 63 205 minecraft:light_gray_concrete
-fill 203 64 182 222 79 182 minecraft:light_gray_concrete
-fill 203 64 182 203 79 199 minecraft:light_gray_concrete
-setblock 204 64 198 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "109"}','{"text": "occultism_afrit"}','{"text": "storage"}','{"text": ""}']}}
-setblock 205 64 198 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "storage"}','{"text": "actuator with"}','{"text": "four"}','{"text": "stabilizers"}']}}
-fill 217 64 182 217 79 199 minecraft:light_gray_concrete
-setblock 206 65 189 occultism:otherstone
-setblock 207 65 189 occultism:storage_stabilizer_tier1[facing=east]
-setblock 210 65 185 occultism:otherstone
-setblock 210 65 186 occultism:storage_stabilizer_tier1[facing=south]
-setblock 210 65 192 occultism:storage_stabilizer_tier1[facing=north]
-setblock 210 65 193 occultism:otherstone
-setblock 213 65 189 occultism:storage_stabilizer_tier1[facing=west]
-setblock 214 65 189 occultism:otherstone
-setblock 206 64 189 occultism:otherstone
-setblock 210 64 185 occultism:otherstone
-setblock 210 64 189 occultism:storage_controller
-setblock 210 64 193 occultism:otherstone
-setblock 214 64 189 occultism:otherstone
+# 109 occultism_afrit/mineshaft
+#area 184 180 203 205
+fill 184 64 180 203 91 205 minecraft:air
+fill 184 60 180 203 62 205 minecraft:stone
+fill 184 63 180 203 63 205 minecraft:light_gray_concrete
+fill 188 64 186 203 79 186 minecraft:light_gray_concrete
+fill 188 64 186 188 79 199 minecraft:light_gray_concrete
+setblock 189 64 198 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "109"}','{"text": "occultism_afrit"}','{"text": "mineshaft"}','{"text": ""}']}}
+setblock 190 64 198 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "dimensional"}','{"text": "mineshaft with"}','{"text": "a lamp inside"}','{"text": "and a hopper"}']}}
+setblock 191 64 198 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "below"}','{"text": ""}','{"text": ""}','{"text": ""}']}}
+fill 198 64 186 198 79 199 minecraft:light_gray_concrete
+setblock 193 64 191 minecraft:hopper[facing=east]
+setblock 193 65 191 occultism:dimensional_mineshaft[rotation=0]
+setblock 194 64 191 minecraft:chest[facing=south]{Items:[]}
 execute as @e[type=minecraft:item,tag=!kw_shot] run kill @s

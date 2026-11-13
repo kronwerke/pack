@@ -1,13 +1,16 @@
-# 113 hexerei/candles
-#area 279 176 298 201
-fill 279 64 176 298 91 201 minecraft:air
-fill 279 60 176 298 62 201 minecraft:stone
-fill 279 63 176 298 63 201 minecraft:light_gray_concrete
-fill 283 64 182 298 79 182 minecraft:light_gray_concrete
-fill 283 64 182 283 79 195 minecraft:light_gray_concrete
-setblock 284 64 194 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "113"}','{"text": "hexerei"}','{"text": "candles"}','{"text": ""}']}}
-setblock 285 64 194 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "candle dipper"}','{"text": "on a tallow"}','{"text": "cauldron with"}','{"text": "candles"}']}}
-fill 293 64 182 293 79 195 minecraft:light_gray_concrete
-setblock 288 64 187 hexerei:mixing_cauldron
-setblock 288 65 187 hexerei:candle_dipper[facing=south]
+# 113 hexerei/cauldron
+#area 264 180 283 205
+fill 264 64 180 283 91 205 minecraft:air
+fill 264 60 180 283 62 205 minecraft:stone
+fill 264 63 180 283 63 205 minecraft:light_gray_concrete
+fill 268 64 186 283 79 186 minecraft:light_gray_concrete
+fill 268 64 186 268 79 199 minecraft:light_gray_concrete
+setblock 269 64 198 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "113"}','{"text": "hexerei"}','{"text": "cauldron"}','{"text": ""}']}}
+setblock 270 64 198 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "two mixing"}','{"text": "cauldrons, one"}','{"text": "heated over"}','{"text": "lava"}']}}
+fill 278 64 186 278 79 199 minecraft:light_gray_concrete
+setblock 272 64 191 hexerei:mixing_cauldron
+setblock 274 63 191 minecraft:lava
+setblock 274 64 191 hexerei:mixing_cauldron
+kw testworld use 272 64 191 up minecraft:water_bucket
+kw testworld use 274 64 191 up minecraft:water_bucket
 execute as @e[type=minecraft:item,tag=!kw_shot] run kill @s

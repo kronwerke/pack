@@ -1,23 +1,24 @@
-# 127 industrial/extractor, latex_unit
-#area -4 246 25 271
-fill -4 64 246 25 91 271 minecraft:air
-fill -4 60 246 25 62 271 minecraft:stone
-fill -4 63 246 25 63 271 minecraft:light_gray_concrete
-fill 0 64 252 25 79 252 minecraft:light_gray_concrete
-fill 0 64 252 0 79 265 minecraft:light_gray_concrete
-setblock 1 64 264 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "127.1"}','{"text": "industrial"}','{"text": "extractor"}','{"text": ""}']}}
-setblock 2 64 264 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "pity frame"}','{"text": "recipe,"}','{"text": "extractors"}','{"text": "around a log"}']}}
-setblock 3 64 264 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "column, the"}','{"text": "latex unit GUI,"}','{"text": "dry rubber in a"}','{"text": "furnace, the"}']}}
-setblock 4 64 264 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "dissolution"}','{"text": "chamber GUI"}','{"text": ""}','{"text": ""}']}}
-fill 10 64 252 10 79 265 minecraft:light_gray_concrete
-fill 5 64 257 5 67 257 minecraft:acacia_log[axis=y]
-setblock 4 64 257 industrialforegoing:fluid_extractor[subfacing=east]
-setblock 6 64 257 industrialforegoing:fluid_extractor[subfacing=west]
-setblock 4 65 257 industrialforegoing:fluid_extractor[subfacing=east]
-setblock 6 65 257 industrialforegoing:fluid_extractor[subfacing=west]
-setblock 11 64 264 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "127.2"}','{"text": "industrial"}','{"text": "latex_unit"}','{"text": ""}']}}
-setblock 12 64 264 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Bau eine"}','{"text": "Latexverarbeitungsmaschine"}','{"text": ""}','{"text": ""}']}}
-fill 20 64 252 20 79 265 minecraft:light_gray_concrete
-setblock 14 64 257 industrialforegoing:latex_processing_unit[subfacing=south]
-setblock 16 64 257 industrialforegoing:dissolution_chamber[subfacing=south]
+# 127 immersive_heavy/hv, survey
+#area 383 215 416 240
+fill 383 64 215 416 95 240 minecraft:air
+fill 383 60 215 416 62 240 minecraft:stone
+fill 383 63 215 416 63 240 minecraft:light_gray_concrete
+fill 387 64 221 416 83 221 minecraft:light_gray_concrete
+fill 387 64 221 387 83 234 minecraft:light_gray_concrete
+setblock 388 64 233 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "127.1"}','{"text": "immersive_heavy"}','{"text": "hv"}','{"text": ""}']}}
+setblock 389 64 233 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "an HV line on"}','{"text": "steel posts,"}','{"text": "the bottling"}','{"text": "machine with"}']}}
+setblock 390 64 233 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "resin, a core"}','{"text": "sample on the"}','{"text": "ground"}','{"text": ""}']}}
+fill 401 64 221 401 83 234 minecraft:light_gray_concrete
+kw testworld use 390 63 226 up immersiveengineering:steel_post
+execute unless block 390 67 226 minecraft:air
+kw testworld use 390 67 226 up immersiveengineering:connector_hv
+kw testworld use 398 63 226 up immersiveengineering:steel_post
+execute unless block 398 67 226 minecraft:air
+kw testworld use 398 67 226 up immersiveengineering:connector_hv
+kw testworld use 390 68 226 south immersiveengineering:wirecoil_steel
+kw testworld use 398 68 226 south immersiveengineering:wirecoil_steel
+setblock 402 64 233 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "127.2"}','{"text": "immersive_heavy"}','{"text": "survey"}','{"text": ""}']}}
+setblock 403 64 233 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Such eine"}','{"text": "Mineralader"}','{"text": ""}','{"text": ""}']}}
+fill 411 64 221 411 83 234 minecraft:light_gray_concrete
+kw testworld use 406 63 226 up immersiveengineering:sample_drill
 execute as @e[type=minecraft:item,tag=!kw_shot] run kill @s

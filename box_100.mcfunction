@@ -1,14 +1,46 @@
-# 100 occultism/foliot_crusher
-#area 30 176 49 201
-fill 30 64 176 49 91 201 minecraft:air
-fill 30 60 176 49 62 201 minecraft:stone
-fill 30 63 176 49 63 201 minecraft:light_gray_concrete
-fill 34 64 182 49 79 182 minecraft:light_gray_concrete
-fill 34 64 182 34 79 195 minecraft:light_gray_concrete
-setblock 35 64 194 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "100"}','{"text": "occultism"}','{"text": "foliot_crusher"}','{"text": ""}']}}
-setblock 36 64 194 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Foliot crusher"}','{"text": "next to a pile"}','{"text": "of dust"}','{"text": ""}']}}
-fill 44 64 182 44 79 195 minecraft:light_gray_concrete
-summon occultism:foliot 38.5 64 187.5 {NoAI:1b,PersistenceRequired:1b,Silent:1b,Tags:["kw_shot"],Rotation:[180f,0f]}
-summon item 40.5 64.2 187.5 {Item:{id:"minecraft:raw_iron",count:8},PickupDelay:32767,Age:-32768,Tags:["kw_shot"]}
-summon item 41.5 64.2 188.5 {Item:{id:"occultism:iron_dust",count:16},PickupDelay:32767,Age:-32768,Tags:["kw_shot"]}
+# 100 occultism/aviar
+#area 11 180 34 209
+fill 11 64 180 34 91 209 minecraft:air
+fill 11 60 180 34 62 209 minecraft:stone
+fill 11 63 180 34 63 209 minecraft:light_gray_concrete
+fill 15 64 186 34 79 186 minecraft:light_gray_concrete
+fill 15 64 186 15 79 203 minecraft:light_gray_concrete
+setblock 16 64 202 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "100"}','{"text": "occultism"}','{"text": "aviar"}','{"text": ""}']}}
+setblock 17 64 202 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "finished"}','{"text": "Aviar\'s Circle"}','{"text": "with golden"}','{"text": "bowl, candles"}']}}
+setblock 18 64 202 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "and sacrificial"}','{"text": "bowls"}','{"text": ""}','{"text": ""}']}}
+fill 29 64 186 29 79 203 minecraft:light_gray_concrete
+fill 17 63 188 27 63 198 minecraft:smooth_basalt
+setblock 19 64 192 occultism:chalk_glyph_white[facing=south,sign=0]
+setblock 19 64 193 occultism:chalk_glyph_white[facing=south,sign=5]
+setblock 19 64 194 occultism:chalk_glyph_white[facing=south,sign=10]
+setblock 20 64 191 occultism:chalk_glyph_white[facing=south,sign=2]
+setblock 20 64 193 occultism:chalk_glyph_white[facing=south,sign=7]
+setblock 20 64 195 occultism:chalk_glyph_white[facing=south,sign=12]
+setblock 21 64 190 occultism:chalk_glyph_white[facing=south,sign=4]
+setblock 21 64 192 minecraft:white_candle[candles=1,lit=true]
+setblock 21 64 193 occultism:chalk_glyph_white[facing=south,sign=9]
+setblock 21 64 194 minecraft:white_candle[candles=1,lit=true]
+setblock 21 64 196 occultism:chalk_glyph_white[facing=south,sign=1]
+setblock 22 64 190 occultism:chalk_glyph_white[facing=south,sign=6]
+setblock 22 64 191 occultism:chalk_glyph_white[facing=south,sign=11]
+setblock 22 64 192 occultism:chalk_glyph_white[facing=south,sign=3]
+setblock 22 64 193 occultism:golden_sacrificial_bowl
+setblock 22 64 194 occultism:chalk_glyph_white[facing=south,sign=8]
+setblock 22 64 195 occultism:chalk_glyph_white[facing=south,sign=0]
+setblock 22 64 196 occultism:chalk_glyph_white[facing=south,sign=5]
+setblock 23 64 190 occultism:chalk_glyph_white[facing=south,sign=10]
+setblock 23 64 192 minecraft:white_candle[candles=1,lit=true]
+setblock 23 64 193 occultism:chalk_glyph_white[facing=south,sign=2]
+setblock 23 64 194 minecraft:white_candle[candles=1,lit=true]
+setblock 23 64 196 occultism:chalk_glyph_white[facing=south,sign=7]
+setblock 24 64 191 occultism:chalk_glyph_white[facing=south,sign=12]
+setblock 24 64 193 occultism:chalk_glyph_white[facing=south,sign=4]
+setblock 24 64 195 occultism:chalk_glyph_white[facing=south,sign=9]
+setblock 25 64 192 occultism:chalk_glyph_white[facing=south,sign=1]
+setblock 25 64 193 occultism:chalk_glyph_white[facing=south,sign=6]
+setblock 25 64 194 occultism:chalk_glyph_white[facing=south,sign=11]
+setblock 22 64 188 occultism:sacrificial_bowl[facing=up]
+setblock 27 64 193 occultism:sacrificial_bowl[facing=up]
+setblock 22 64 198 occultism:sacrificial_bowl[facing=up]
+setblock 17 64 193 occultism:sacrificial_bowl[facing=up]
 execute as @e[type=minecraft:item,tag=!kw_shot] run kill @s

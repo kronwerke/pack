@@ -1,15 +1,77 @@
-# 142 flux_networks/dust
-#area 58 307 77 332
-fill 58 64 307 77 91 332 minecraft:air
-fill 58 60 307 77 62 332 minecraft:stone
-fill 58 63 307 77 63 332 minecraft:light_gray_concrete
-fill 62 64 313 77 79 313 minecraft:light_gray_concrete
-fill 62 64 313 62 79 326 minecraft:light_gray_concrete
-setblock 63 64 325 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "142"}','{"text": "flux_networks"}','{"text": "dust"}','{"text": ""}']}}
-setblock 64 64 325 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "the bedrock gap"}','{"text": "with redstone"}','{"text": "and obsidian,"}','{"text": "left-clicking"}']}}
-setblock 65 64 325 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "the obsidian"}','{"text": ""}','{"text": ""}','{"text": ""}']}}
-fill 72 64 313 72 79 326 minecraft:light_gray_concrete
-setblock 67 64 318 minecraft:bedrock
-summon item 67.5 65.1 318.5 {Item:{id:"minecraft:redstone",count:64},PickupDelay:32767,Age:-32768,Tags:["kw_shot"]}
-setblock 67 66 318 minecraft:obsidian
+# 142 list_power/steam_engine, mek_heat, alternator, mekmm_large, nc_passive
+#area -4 311 62 336
+fill -4 64 311 40 91 336 minecraft:air
+fill 41 64 311 62 91 336 minecraft:air
+fill -4 60 311 62 62 336 minecraft:stone
+fill -4 63 311 62 63 336 minecraft:light_gray_concrete
+fill 0 64 317 62 79 317 minecraft:light_gray_concrete
+fill 0 64 317 0 79 330 minecraft:light_gray_concrete
+setblock 1 64 329 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "142.1"}','{"text": "list_power"}','{"text": "steam_engine"}','{"text": ""}']}}
+setblock 2 64 329 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Heiz einen"}','{"text": "Dampfkessel an"}','{"text": ""}','{"text": ""}']}}
+fill 11 64 317 11 79 330 minecraft:light_gray_concrete
+setblock 4 64 321 create:blaze_burner[blaze=smouldering]
+kw testworld use 4 64 321 up create:creative_blaze_cake
+setblock 4 64 322 create:blaze_burner[blaze=smouldering]
+kw testworld use 4 64 322 up create:creative_blaze_cake
+setblock 5 64 321 create:blaze_burner[blaze=smouldering]
+kw testworld use 5 64 321 up create:creative_blaze_cake
+setblock 5 64 322 create:blaze_burner[blaze=smouldering]
+kw testworld use 5 64 322 up create:creative_blaze_cake
+fill 4 65 321 5 67 322 create:fluid_tank[bottom=false,shape=window,top=false]
+setblock 4 66 324 create:shaft[axis=x]
+setblock 4 66 323 create:steam_engine[face=wall,facing=south,waterlogged=false]
+setblock 12 64 329 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "142.2"}','{"text": "list_power"}','{"text": "mek_heat"}','{"text": ""}']}}
+setblock 13 64 329 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Stell einen"}','{"text": "Wärmegenerator"}','{"text": "in Lava"}','{"text": ""}']}}
+fill 21 64 317 21 79 330 minecraft:light_gray_concrete
+setblock 14 64 320 minecraft:stone_bricks
+setblock 14 64 321 minecraft:stone_bricks
+setblock 14 64 322 minecraft:stone_bricks
+setblock 14 64 323 minecraft:stone_bricks
+setblock 14 64 324 minecraft:glass
+setblock 15 64 320 minecraft:stone_bricks
+setblock 15 64 321 minecraft:lava
+setblock 15 64 322 minecraft:lava
+setblock 15 64 323 minecraft:lava
+setblock 15 64 324 minecraft:glass
+setblock 16 64 320 minecraft:stone_bricks
+setblock 16 64 321 minecraft:lava
+setblock 16 64 322 mekanismgenerators:heat_generator[facing=south]
+setblock 16 64 323 minecraft:glass
+setblock 16 64 324 minecraft:glass
+setblock 17 64 320 minecraft:stone_bricks
+setblock 17 64 321 minecraft:lava
+setblock 17 64 322 minecraft:lava
+setblock 17 64 323 minecraft:lava
+setblock 17 64 324 minecraft:glass
+setblock 18 64 320 minecraft:stone_bricks
+setblock 18 64 321 minecraft:stone_bricks
+setblock 18 64 322 minecraft:stone_bricks
+setblock 18 64 323 minecraft:stone_bricks
+setblock 18 64 324 minecraft:glass
+setblock 22 64 329 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "142.3"}','{"text": "list_power"}','{"text": "alternator"}','{"text": ""}']}}
+setblock 23 64 329 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Mach aus"}','{"text": "Rotation Strom"}','{"text": ""}','{"text": ""}']}}
+fill 31 64 317 31 79 330 minecraft:light_gray_concrete
+setblock 26 64 322 createaddition:alternator[facing=east]
+setblock 25 64 322 create:shaft[axis=x]
+setblock 24 64 322 create:creative_motor[facing=east]{ScrollValue:64}
+setblock 23 64 322 create:andesite_casing
+setblock 24 64 323 create:andesite_casing
+setblock 24 64 321 create:andesite_casing
+setblock 24 65 322 create:andesite_casing
+setblock 32 64 329 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "142.4"}','{"text": "list_power"}','{"text": "mekmm_large"}','{"text": ""}']}}
+setblock 33 64 329 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Stell die"}','{"text": "großen"}','{"text": "Generatoren"}','{"text": ""}']}}
+fill 45 64 317 45 79 330 minecraft:light_gray_concrete
+kw testworld use 35 63 322 up mekmm:large_heat_generator
+kw testworld use 41 63 322 up mekmm:large_gas_burning_generator
+setblock 46 64 329 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "142.5"}','{"text": "list_power"}','{"text": "nc_passive"}','{"text": ""}']}}
+setblock 47 64 329 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Leg Solarzellen"}','{"text": "und RTGs"}','{"text": ""}','{"text": ""}']}}
+fill 57 64 317 57 79 330 minecraft:light_gray_concrete
+setblock 48 64 321 nuclearcraft:solar_panel_basic
+setblock 50 64 321 nuclearcraft:solar_panel_advanced
+setblock 52 64 321 nuclearcraft:solar_panel_du
+setblock 54 64 321 nuclearcraft:solar_panel_elite
+setblock 48 64 323 nuclearcraft:uranium_rtg
+setblock 50 64 323 nuclearcraft:americium_rtg
+setblock 52 64 323 nuclearcraft:plutonium_rtg
+setblock 54 64 323 nuclearcraft:californium_rtg
 execute as @e[type=minecraft:item,tag=!kw_shot] run kill @s

@@ -1,24 +1,23 @@
-# 149 the_end/arrival
-#area 10 330 29 355
-fill 10 64 330 29 91 355 minecraft:air
-fill 10 60 330 29 62 355 minecraft:stone
-fill 10 63 330 29 63 355 minecraft:light_gray_concrete
-fill 14 64 336 29 79 336 minecraft:light_gray_concrete
-fill 14 64 336 14 79 349 minecraft:light_gray_concrete
-setblock 15 64 348 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "149"}','{"text": "the_end"}','{"text": "arrival"}','{"text": ""}']}}
-setblock 16 64 348 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Betritt das End"}','{"text": ""}','{"text": ""}','{"text": ""}']}}
-fill 24 64 336 24 79 349 minecraft:light_gray_concrete
-setblock 18 64 339 minecraft:end_portal_frame[eye=true,facing=south]
-setblock 18 64 343 minecraft:end_portal_frame[eye=true,facing=north]
-setblock 17 64 340 minecraft:end_portal_frame[eye=true,facing=east]
-setblock 21 64 340 minecraft:end_portal_frame[eye=true,facing=west]
-setblock 19 64 339 minecraft:end_portal_frame[eye=true,facing=south]
-setblock 19 64 343 minecraft:end_portal_frame[eye=true,facing=north]
-setblock 17 64 341 minecraft:end_portal_frame[eye=true,facing=east]
-setblock 21 64 341 minecraft:end_portal_frame[eye=true,facing=west]
-setblock 20 64 339 minecraft:end_portal_frame[eye=true,facing=south]
-setblock 20 64 343 minecraft:end_portal_frame[eye=true,facing=north]
-setblock 17 64 342 minecraft:end_portal_frame[eye=true,facing=east]
-setblock 21 64 342 minecraft:end_portal_frame[eye=true,facing=west]
-fill 18 64 340 20 64 342 minecraft:end_portal
+# 149 nether/welcome
+#area -4 334 14 359
+fill -4 64 334 14 91 359 minecraft:air
+fill -4 60 334 14 62 359 minecraft:stone
+fill -4 63 334 14 63 359 minecraft:light_gray_concrete
+fill 0 64 340 14 79 340 minecraft:light_gray_concrete
+fill 0 64 340 0 79 353 minecraft:light_gray_concrete
+setblock 1 64 352 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "149"}','{"text": "nether"}','{"text": "welcome"}','{"text": ""}']}}
+setblock 2 64 352 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Betritt den"}','{"text": "Nether"}','{"text": ""}','{"text": ""}']}}
+fill 9 64 340 9 79 353 minecraft:light_gray_concrete
+setblock 3 65 345 minecraft:obsidian
+setblock 3 66 345 minecraft:obsidian
+setblock 3 67 345 minecraft:obsidian
+setblock 4 64 345 minecraft:obsidian
+setblock 4 68 345 minecraft:obsidian
+setblock 5 64 345 minecraft:obsidian
+setblock 5 68 345 minecraft:obsidian
+setblock 6 65 345 minecraft:obsidian
+setblock 6 66 345 minecraft:obsidian
+setblock 6 67 345 minecraft:obsidian
+fill 4 65 345 5 67 345 minecraft:nether_portal[axis=x]
+execute if block 4 66 345 minecraft:nether_portal
 execute as @e[type=minecraft:item,tag=!kw_shot] run kill @s

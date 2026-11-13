@@ -1,36 +1,44 @@
-# 162 eidolon/brazier, crucible, altar, stone_altar
-#area 151 370 200 395
-fill 151 64 370 195 91 395 minecraft:air
-fill 196 64 370 200 91 395 minecraft:air
-fill 151 60 370 200 62 395 minecraft:stone
-fill 151 63 370 200 63 395 minecraft:light_gray_concrete
-fill 155 64 376 200 79 376 minecraft:light_gray_concrete
-fill 155 64 376 155 79 389 minecraft:light_gray_concrete
-setblock 156 64 388 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "162.1"}','{"text": "eidolon"}','{"text": "brazier"}','{"text": ""}']}}
-setblock 157 64 388 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Bau Brazier und"}','{"text": "Stone Hands"}','{"text": ""}','{"text": ""}']}}
-fill 165 64 376 165 79 389 minecraft:light_gray_concrete
-setblock 160 64 381 eidolon_repraised:brazier
-setblock 158 64 381 eidolon_repraised:stone_hand[facing=east]
-setblock 162 64 381 eidolon_repraised:stone_hand[facing=west]
-setblock 160 64 379 eidolon_repraised:stone_hand[facing=south]
-setblock 166 64 388 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "162.2"}','{"text": "eidolon"}','{"text": "crucible"}','{"text": ""}']}}
-setblock 167 64 388 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Setz einen"}','{"text": "Crucible auf"}','{"text": ""}','{"text": ""}']}}
-fill 175 64 376 175 79 389 minecraft:light_gray_concrete
-setblock 170 64 381 minecraft:campfire[facing=south,lit=true]
-setblock 170 65 381 eidolon_repraised:crucible
-kw testworld use 170 65 381 up minecraft:water_bucket
-setblock 176 64 388 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "162.3"}','{"text": "eidolon"}','{"text": "altar"}','{"text": ""}']}}
-setblock 177 64 388 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Bau einen Altar"}','{"text": "mit Bildnis"}','{"text": ""}','{"text": ""}']}}
-fill 185 64 376 185 79 389 minecraft:light_gray_concrete
-fill 179 64 381 181 64 381 eidolon_repraised:wooden_altar
-setblock 180 65 381 eidolon_repraised:straw_effigy[facing=south]
-setblock 179 65 381 eidolon_repraised:candle
-setblock 181 65 381 minecraft:skeleton_skull[rotation=8]
-setblock 186 64 388 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "162.4"}','{"text": "eidolon"}','{"text": "stone_altar"}','{"text": ""}']}}
-setblock 187 64 388 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Bau Stone Altar"}','{"text": "und Elder"}','{"text": "Statue"}','{"text": ""}']}}
-fill 195 64 376 195 79 389 minecraft:light_gray_concrete
-fill 189 64 381 191 64 381 eidolon_repraised:stone_altar
-setblock 190 65 381 eidolon_repraised:unholy_effigy[facing=south]
-setblock 189 65 381 eidolon_repraised:goblet
-setblock 191 65 381 eidolon_repraised:candle
+# 162 theurgy/sal_tank, liquefaction, vessels, array, fermentation
+#area 116 374 175 399
+fill 116 64 374 160 91 399 minecraft:air
+fill 161 64 374 175 91 399 minecraft:air
+fill 116 60 374 175 62 399 minecraft:stone
+fill 116 63 374 175 63 399 minecraft:light_gray_concrete
+fill 120 64 380 175 79 380 minecraft:light_gray_concrete
+fill 120 64 380 120 79 393 minecraft:light_gray_concrete
+setblock 121 64 392 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "162.1"}','{"text": "theurgy"}','{"text": "sal_tank"}','{"text": ""}']}}
+setblock 122 64 392 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Stell Tank und"}','{"text": "Akkumulator auf"}','{"text": ""}','{"text": ""}']}}
+fill 130 64 380 130 79 393 minecraft:light_gray_concrete
+setblock 125 64 385 theurgy:sal_ammoniac_tank
+setblock 125 65 385 theurgy:sal_ammoniac_accumulator
+setblock 131 64 392 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "162.2"}','{"text": "theurgy"}','{"text": "liquefaction"}','{"text": ""}']}}
+setblock 132 64 392 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Löse Sulfur aus"}','{"text": "Raw Iron"}','{"text": ""}','{"text": ""}']}}
+fill 140 64 380 140 79 393 minecraft:light_gray_concrete
+setblock 135 64 385 theurgy:pyromantic_brazier[lit=true]
+setblock 135 65 385 theurgy:liquefaction_cauldron[half=lower,lit=true]
+setblock 135 66 385 theurgy:liquefaction_cauldron[half=upper,lit=true]
+setblock 141 64 392 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "162.3"}','{"text": "theurgy"}','{"text": "vessels"}','{"text": ""}']}}
+setblock 142 64 392 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Stell die drei"}','{"text": "Gefäße auf"}','{"text": ""}','{"text": ""}']}}
+fill 150 64 380 150 79 393 minecraft:light_gray_concrete
+setblock 145 64 385 theurgy:pyromantic_brazier[lit=true]
+setblock 145 65 385 theurgy:incubator[half=lower]
+setblock 145 66 385 theurgy:incubator[half=upper]
+setblock 144 64 385 minecraft:stone_bricks
+setblock 144 65 385 theurgy:incubator_salt_vessel
+setblock 146 64 385 minecraft:stone_bricks
+setblock 146 65 385 theurgy:incubator_sulfur_vessel
+setblock 145 64 384 minecraft:stone_bricks
+setblock 145 65 384 theurgy:incubator_mercury_vessel
+setblock 151 64 392 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "162.4"}','{"text": "theurgy"}','{"text": "array"}','{"text": ""}']}}
+setblock 152 64 392 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Stell drei"}','{"text": "Pedestale auf"}','{"text": ""}','{"text": ""}']}}
+fill 160 64 380 160 79 393 minecraft:light_gray_concrete
+setblock 153 64 385 theurgy:reformation_source_pedestal
+setblock 155 64 384 theurgy:reformation_target_pedestal
+setblock 157 64 385 theurgy:reformation_result_pedestal
+setblock 155 64 387 minecraft:stone_bricks
+setblock 155 65 387 theurgy:sulfuric_flux_emitter[facing=up]
+setblock 161 64 392 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "162.5"}','{"text": "theurgy"}','{"text": "fermentation"}','{"text": ""}']}}
+setblock 162 64 392 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Vergär Sulfur"}','{"text": "zu Niter"}','{"text": ""}','{"text": ""}']}}
+fill 170 64 380 170 79 393 minecraft:light_gray_concrete
+setblock 165 64 385 theurgy:fermentation_vat[facing=south,has_output=false,open=true]
 execute as @e[type=minecraft:item,tag=!kw_shot] run kill @s

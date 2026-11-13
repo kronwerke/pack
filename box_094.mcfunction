@@ -1,27 +1,26 @@
-# 094 alfheim/frame
-#area 253 139 274 164
-fill 253 64 139 274 91 164 minecraft:air
-fill 253 60 139 274 62 164 minecraft:stone
-fill 253 63 139 274 63 164 minecraft:light_gray_concrete
-fill 257 64 145 274 79 145 minecraft:light_gray_concrete
-fill 257 64 145 257 79 158 minecraft:light_gray_concrete
-setblock 258 64 157 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "094"}','{"text": "alfheim"}','{"text": "frame"}','{"text": ""}']}}
-setblock 259 64 157 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "the finished"}','{"text": "gateway with"}','{"text": "two pools and"}','{"text": "natura pylons"}']}}
-fill 269 64 145 269 79 158 minecraft:light_gray_concrete
-setblock 263 64 149 botania:elven_gateway_core
-setblock 262 64 149 botania:livingwood_log[axis=x]
-setblock 262 68 149 botania:livingwood_log[axis=x]
-setblock 264 64 149 botania:livingwood_log[axis=x]
-setblock 264 68 149 botania:livingwood_log[axis=x]
-setblock 263 68 149 botania:glimmering_livingwood_log[axis=x]
-setblock 261 65 149 botania:livingwood_log[axis=y]
-setblock 261 66 149 botania:glimmering_livingwood_log[axis=y]
-setblock 261 67 149 botania:livingwood_log[axis=y]
-setblock 265 65 149 botania:livingwood_log[axis=y]
-setblock 265 66 149 botania:glimmering_livingwood_log[axis=y]
-setblock 265 67 149 botania:livingwood_log[axis=y]
-setblock 259 64 151 botania:mana_pool{mana:1000000}
-setblock 259 65 151 botania:natura_pylon
-setblock 267 64 151 botania:mana_pool{mana:1000000}
-setblock 267 65 151 botania:natura_pylon
+# 094 gaia/dandelifeon
+#area 235 143 272 186
+fill 235 64 143 260 91 186 minecraft:air
+fill 261 64 143 272 91 186 minecraft:air
+fill 235 60 143 272 62 186 minecraft:stone
+fill 235 63 143 272 63 186 minecraft:light_gray_concrete
+fill 239 64 149 272 79 149 minecraft:light_gray_concrete
+fill 239 64 149 239 79 180 minecraft:light_gray_concrete
+setblock 240 64 179 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "094"}','{"text": "gaia"}','{"text": "dandelifeon"}','{"text": ""}']}}
+setblock 241 64 179 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "a 25x25 cell"}','{"text": "field"}','{"text": ""}','{"text": ""}']}}
+fill 267 64 149 267 79 180 minecraft:light_gray_concrete
+fill 241 63 151 265 63 175 minecraft:smooth_stone
+setblock 253 63 163 minecraft:grass_block
+setblock 253 64 163 botania:dandelifeon
+setblock 246 64 156 botania:cellular_block
+setblock 247 64 157 botania:cellular_block
+setblock 248 64 157 botania:cellular_block
+setblock 246 64 158 botania:cellular_block
+setblock 247 64 158 botania:cellular_block
+setblock 258 64 158 botania:cellular_block
+setblock 259 64 158 botania:cellular_block
+setblock 260 64 158 botania:cellular_block
+setblock 247 64 167 botania:cellular_block
+setblock 247 64 168 botania:cellular_block
+setblock 247 64 169 botania:cellular_block
 execute as @e[type=minecraft:item,tag=!kw_shot] run kill @s

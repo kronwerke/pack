@@ -1,58 +1,45 @@
-# 139 storage/welcome, drawers_4, copper_tier, controller, vault_big, trash
-#area 200 286 270 311
-fill 200 64 286 244 91 311 minecraft:air
-fill 245 64 286 270 91 311 minecraft:air
-fill 200 60 286 270 62 311 minecraft:stone
-fill 200 63 286 270 63 311 minecraft:light_gray_concrete
-fill 204 64 292 270 79 292 minecraft:light_gray_concrete
-fill 204 64 292 204 79 305 minecraft:light_gray_concrete
-setblock 205 64 304 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "139.1"}','{"text": "storage"}','{"text": "welcome"}','{"text": ""}']}}
-setblock 206 64 304 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Näh einen"}','{"text": "Rucksack"}','{"text": ""}','{"text": ""}']}}
-fill 214 64 292 214 79 305 minecraft:light_gray_concrete
-setblock 209 64 297 sophisticatedbackpacks:backpack[facing=south]
-setblock 215 64 304 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "139.2"}','{"text": "storage"}','{"text": "drawers_4"}','{"text": ""}']}}
-setblock 216 64 304 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Bau eine"}','{"text": "Schubladenwand"}','{"text": ""}','{"text": ""}']}}
-fill 224 64 292 224 79 305 minecraft:light_gray_concrete
-setblock 218 64 297 functionalstorage:oak_4[facing=down,subfacing=south]
-data merge block 218 64 297 {handler:{BigItems:{0:{Stack:{id:"minecraft:iron_ingot",count:1},Amount:128},1:{Stack:{id:"minecraft:copper_ingot",count:1},Amount:192},2:{Stack:{id:"minecraft:gold_ingot",count:1},Amount:256},3:{Stack:{id:"minecraft:raw_iron",count:1},Amount:320}}}}
-setblock 219 64 297 functionalstorage:oak_4[facing=down,subfacing=south]
-data merge block 219 64 297 {handler:{BigItems:{0:{Stack:{id:"minecraft:raw_copper",count:1},Amount:128},1:{Stack:{id:"minecraft:raw_gold",count:1},Amount:192},2:{Stack:{id:"minecraft:coal",count:1},Amount:256},3:{Stack:{id:"minecraft:charcoal",count:1},Amount:320}}}}
-setblock 220 64 297 functionalstorage:oak_4[facing=down,subfacing=south]
-data merge block 220 64 297 {handler:{BigItems:{0:{Stack:{id:"minecraft:redstone",count:1},Amount:128},1:{Stack:{id:"minecraft:lapis_lazuli",count:1},Amount:192},2:{Stack:{id:"minecraft:diamond",count:1},Amount:256},3:{Stack:{id:"minecraft:emerald",count:1},Amount:320}}}}
-setblock 218 65 297 functionalstorage:oak_4[facing=down,subfacing=south]
-data merge block 218 65 297 {handler:{BigItems:{0:{Stack:{id:"minecraft:quartz",count:1},Amount:128},1:{Stack:{id:"minecraft:amethyst_shard",count:1},Amount:192},2:{Stack:{id:"minecraft:flint",count:1},Amount:256},3:{Stack:{id:"minecraft:clay_ball",count:1},Amount:320}}}}
-setblock 219 65 297 functionalstorage:oak_4[facing=down,subfacing=south]
-data merge block 219 65 297 {handler:{BigItems:{0:{Stack:{id:"minecraft:bone",count:1},Amount:128},1:{Stack:{id:"minecraft:string",count:1},Amount:192},2:{Stack:{id:"minecraft:gunpowder",count:1},Amount:256},3:{Stack:{id:"minecraft:rotten_flesh",count:1},Amount:320}}}}
-setblock 220 65 297 functionalstorage:oak_4[facing=down,subfacing=south]
-data merge block 220 65 297 {handler:{BigItems:{0:{Stack:{id:"minecraft:leather",count:1},Amount:128},1:{Stack:{id:"minecraft:feather",count:1},Amount:192},2:{Stack:{id:"minecraft:wheat",count:1},Amount:256},3:{Stack:{id:"minecraft:sugar_cane",count:1},Amount:320}}}}
-setblock 218 66 297 functionalstorage:oak_4[facing=down,subfacing=south]
-data merge block 218 66 297 {handler:{BigItems:{0:{Stack:{id:"minecraft:red_dye",count:1},Amount:128},1:{Stack:{id:"minecraft:blue_dye",count:1},Amount:192},2:{Stack:{id:"minecraft:green_dye",count:1},Amount:256},3:{Stack:{id:"minecraft:yellow_dye",count:1},Amount:320}}}}
-setblock 219 66 297 functionalstorage:oak_4[facing=down,subfacing=south]
-data merge block 219 66 297 {handler:{BigItems:{0:{Stack:{id:"minecraft:white_dye",count:1},Amount:128},1:{Stack:{id:"minecraft:black_dye",count:1},Amount:192},2:{Stack:{id:"minecraft:slime_ball",count:1},Amount:256},3:{Stack:{id:"minecraft:ender_pearl",count:1},Amount:320}}}}
-setblock 220 66 297 functionalstorage:oak_4[facing=down,subfacing=south]
-data merge block 220 66 297 {handler:{BigItems:{0:{Stack:{id:"minecraft:blaze_rod",count:1},Amount:128},1:{Stack:{id:"minecraft:glowstone_dust",count:1},Amount:192},2:{Stack:{id:"minecraft:nether_wart",count:1},Amount:256},3:{Stack:{id:"minecraft:paper",count:1},Amount:320}}}}
-setblock 225 64 304 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "139.3"}','{"text": "storage"}','{"text": "copper_tier"}','{"text": ""}']}}
-setblock 226 64 304 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Werte auf"}','{"text": "Kupfer auf"}','{"text": ""}','{"text": ""}']}}
-fill 234 64 292 234 79 305 minecraft:light_gray_concrete
-setblock 228 64 297 sophisticatedstorage:barrel[facing=south,flat_top=false]
-setblock 230 64 297 sophisticatedstorage:copper_barrel[facing=south,flat_top=false]
-setblock 235 64 304 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "139.4"}','{"text": "storage"}','{"text": "controller"}','{"text": ""}']}}
-setblock 236 64 304 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Bau einen"}','{"text": "Lagerkern"}','{"text": ""}','{"text": ""}']}}
-fill 244 64 292 244 79 305 minecraft:light_gray_concrete
-setblock 239 64 297 sophisticatedstorage:controller
-setblock 237 64 297 sophisticatedstorage:barrel[facing=south,flat_top=false]
-setblock 238 64 297 sophisticatedstorage:barrel[facing=south,flat_top=false]
-setblock 240 64 297 sophisticatedstorage:barrel[facing=south,flat_top=false]
-setblock 238 65 297 sophisticatedstorage:barrel[facing=south,flat_top=false]
-setblock 239 65 297 sophisticatedstorage:barrel[facing=south,flat_top=false]
-setblock 240 65 297 sophisticatedstorage:barrel[facing=south,flat_top=false]
-setblock 245 64 304 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "139.5"}','{"text": "storage"}','{"text": "vault_big"}','{"text": ""}']}}
-setblock 246 64 304 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Bau einen"}','{"text": "großen Tresor"}','{"text": ""}','{"text": ""}']}}
-fill 255 64 292 255 79 305 minecraft:light_gray_concrete
-fill 247 64 296 252 66 298 create:item_vault[axis=x,large=false]
-setblock 256 64 304 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "139.6"}','{"text": "storage"}','{"text": "trash"}','{"text": ""}']}}
-setblock 257 64 304 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Bau einen"}','{"text": "Mülleimer"}','{"text": ""}','{"text": ""}']}}
-fill 265 64 292 265 79 305 minecraft:light_gray_concrete
-setblock 260 64 297 trashcans:item_trash_can
-setblock 260 65 297 minecraft:hopper[facing=down]
+# 139 logistics/menril, programmer, xnet_connectors, laser_node, mg_gadget
+#area 164 290 224 315
+fill 164 64 290 208 91 315 minecraft:air
+fill 209 64 290 224 91 315 minecraft:air
+fill 164 60 290 224 62 315 minecraft:stone
+fill 164 63 290 224 63 315 minecraft:light_gray_concrete
+fill 168 64 296 224 79 296 minecraft:light_gray_concrete
+fill 168 64 296 168 79 309 minecraft:light_gray_concrete
+setblock 169 64 308 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "139.1"}','{"text": "logistics"}','{"text": "menril"}','{"text": ""}']}}
+setblock 170 64 308 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Press"}','{"text": "Menril-Harz"}','{"text": ""}','{"text": ""}']}}
+fill 178 64 296 178 79 309 minecraft:light_gray_concrete
+fill 171 64 300 171 66 300 integrateddynamics:menril_log[axis=y]
+setblock 173 64 301 integrateddynamics:squeezer[axis=x,height=1]
+setblock 174 64 301 integrateddynamics:drying_basin
+setblock 179 64 308 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "139.2"}','{"text": "logistics"}','{"text": "programmer"}','{"text": ""}']}}
+setblock 180 64 308 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Schreib Karten"}','{"text": "im Logic"}','{"text": "Programmer"}','{"text": ""}']}}
+fill 188 64 296 188 79 309 minecraft:light_gray_concrete
+setblock 182 64 301 integrateddynamics:logic_programmer[facing=south]
+setblock 184 64 301 integrateddynamics:variablestore[facing=south]
+setblock 189 64 308 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "139.3"}','{"text": "logistics"}','{"text": "xnet_connectors"}','{"text": ""}']}}
+setblock 190 64 308 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Setz Connectors"}','{"text": "und Kabel"}','{"text": ""}','{"text": ""}']}}
+fill 199 64 296 199 79 309 minecraft:light_gray_concrete
+setblock 191 64 301 minecraft:chest[facing=south,type=single,waterlogged=false]
+setblock 197 64 301 minecraft:furnace[facing=south,lit=false]
+setblock 194 64 302 xnet:controller[facing=south,error=false]
+kw testworld use 192 63 301 up xnet:connector_blue
+kw testworld use 196 63 301 up xnet:connector_blue
+kw testworld use 193 63 301 up xnet:netcable_blue
+kw testworld use 194 63 301 up xnet:netcable_blue
+kw testworld use 195 63 301 up xnet:netcable_blue
+setblock 200 64 308 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "139.4"}','{"text": "logistics"}','{"text": "laser_node"}','{"text": ""}']}}
+setblock 201 64 308 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Verbinde zwei"}','{"text": "Laser Nodes"}','{"text": ""}','{"text": ""}']}}
+fill 209 64 296 209 79 309 minecraft:light_gray_concrete
+setblock 202 64 301 minecraft:chest[facing=south,type=single,waterlogged=false]
+setblock 202 65 301 laserio:laser_node
+setblock 206 64 301 minecraft:chest[facing=south,type=single,waterlogged=false]
+setblock 206 65 301 laserio:laser_node
+kw testworld use 202 65 301 south laserio:laser_wrench
+kw testworld use 206 65 301 south laserio:laser_wrench
+setblock 210 64 308 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "139.5"}','{"text": "logistics"}','{"text": "mg_gadget"}','{"text": ""}']}}
+setblock 211 64 308 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Bau einen"}','{"text": "Mining Gadget"}','{"text": ""}','{"text": ""}']}}
+fill 219 64 296 219 79 309 minecraft:light_gray_concrete
+setblock 214 64 301 minecraft:smooth_stone_slab
+summon item_display 214.5 64.95 301.5 {item:{id:"mininggadgets:mininggadget_simple",count:1},item_display:"fixed",billboard:"vertical",transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[1.0f,1.0f,1.0f]},brightness:{sky:15,block:15},Tags:["kw_shot"]}
 execute as @e[type=minecraft:item,tag=!kw_shot] run kill @s

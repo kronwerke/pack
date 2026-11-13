@@ -554,7 +554,7 @@ def _(b):
         b.b(x, 0, 4, "create:andesite_encased_shaft[axis=x]")
     b.later(3, 0, 4, "data block @ {Speed:0.0f}", unless=True)       # it turns
     b.later(4, -1, 6, "block @ minecraft:water")
-    b.focus(1, 0, 2, 8, 2, 7)                              # the wheels are larger than their blocks
+    b.focus(2, 0, 2, 7, 2, 7)                              # the wheels are larger than their blocks
 
 
 # ===================================================================================
@@ -847,7 +847,7 @@ def _(b):
     b.b(7, 7, 3, "immersiveengineering:dynamo[facing=south]")
     b.use(7, 7, 3, "south", "immersiveengineering:windmill")
     b.changed(7, 7, 4, "minecraft:air")
-    b.focus(1, 0, 3, 13, 13, 5)                            # the blades reach six blocks out
+    b.focus(3, 0, 3, 11, 11, 5)                            # the blades reach four blocks out
 
 
 @scene("create_brass/brass_mixing")
@@ -1051,10 +1051,10 @@ def _(b):
 
 @scene("eidolon/crucible")
 def _(b):
-    # the crucible over a campfire (no water: a bucket used on it by the machine hand sets a
-    # source on top of it, which floods the box)
+    # the crucible over a campfire, filled with water
     b.b(4, 0, 4, "minecraft:campfire[facing=south,lit=true]")
     b.b(4, 1, 4, "eidolon_repraised:crucible")
+    b.use(4, 1, 4, "up", "minecraft:water_bucket")
 
 
 @scene("botania/farm", w=13)
@@ -1376,23 +1376,23 @@ def _(b):
     b.b(5, 3, 4, stair)
 
 
-@scene("draconic_chaos/reactor", w=11, d=11, h=22)
+@scene("draconic_chaos/reactor", h=20)
 def _(b):
     # the core in the air, four stabilizers in one plane on four sides and the energy injector
     # above, each set by hand against a block (taken away again) so that it looks at the core
-    cx, cy, cz = 5, 3, 5
+    cx, cy, cz = 4, 3, 4
     b.b(cx, cy, cz, "draconicevolution:reactor_core")
     helper = "minecraft:stone"
-    for hx, hz, face in ((0, cz, "east"), (10, cz, "west"), (cx, 0, "south"), (cx, 10, "north")):
+    for hx, hz, face in ((0, cz, "east"), (8, cz, "west"), (cx, 0, "south"), (cx, 8, "north")):
         b.b(hx, cy, hz, helper)
         b.use(hx, cy, hz, face, "draconicevolution:reactor_stabilizer")
         b.b(hx, cy, hz, "minecraft:air")
-    b.b(cx, cy + 5, cz, helper)
-    b.use(cx, cy + 5, cz, "down", "draconicevolution:reactor_injector")
-    b.b(cx, cy + 5, cz, "minecraft:air")
+    b.b(cx, cy + 4, cz, helper)
+    b.use(cx, cy + 4, cz, "down", "draconicevolution:reactor_injector")
+    b.b(cx, cy + 4, cz, "minecraft:air")
     b.expect(1, cy, cz, "draconicevolution:reactor_stabilizer")
-    b.expect(cx, cy + 4, cz, "draconicevolution:reactor_injector")
-    b.focus(1, 0, 1, 9, cy + 4, 9)
+    b.expect(cx, cy + 3, cz, "draconicevolution:reactor_injector")
+    b.focus(1, 1, 1, 7, cy + 3, 7)
 
 
 @scene("list_transport/create_tank")
@@ -1447,14 +1447,15 @@ def _(b):
     b.focus(1, 0, 3, 11, 5, 5)
 
 
-@scene("ars_apprentice/relay", w=17)
+@scene("ars_apprentice/relay", w=13)
 def _(b):
-    # full jar, relay, relay, empty jar, linked with the dominion wand in that order
+    # full jar, relay, relay, empty jar, linked with the dominion wand in that order (closer
+    # together than the thirty blocks a link reaches, so that all four fit a picture)
     b.b(1, 0, 4, "ars_nouveau:source_jar[fill=11]", "{source:10000}")
-    b.b(6, 0, 4, "ars_nouveau:relay")
-    b.b(10, 0, 4, "ars_nouveau:relay")
-    b.b(15, 0, 4, "ars_nouveau:source_jar[fill=0]")
-    for a, c in ((1, 6), (6, 10), (10, 15)):
+    b.b(4, 0, 4, "ars_nouveau:relay")
+    b.b(8, 0, 4, "ars_nouveau:relay")
+    b.b(11, 0, 4, "ars_nouveau:source_jar[fill=0]")
+    for a, c in ((1, 4), (4, 8), (8, 11)):
         b.use(a, 0, 4, "south", "ars_nouveau:dominion_wand")
         b.use(c, 0, 4, "south", "ars_nouveau:dominion_wand")
 
@@ -1490,8 +1491,8 @@ def _(b):
                     continue
                 front = on == 1 and z == 4
                 b.b(x0 + x, y, z0 + z, "nuclearcraft:fission_reactor_glass" if front else "nuclearcraft:fission_reactor_casing")
-    b.b(x0 + 4, 1, z0 + 2, "nuclearcraft:fission_reactor_controller[facing=east]")
-    b.b(x0 + 4, 3, z0 + 2, "nuclearcraft:fission_reactor_port")
+    b.b(x0 + 1, 1, z0 + 4, "nuclearcraft:fission_reactor_controller[facing=south]")
+    b.b(x0 + 3, 1, z0 + 4, "nuclearcraft:fission_reactor_port")
     b.b(x0 + 2, 2, z0 + 2, "nuclearcraft:fission_reactor_solid_fuel_cell")
     for dx in (-1, 1):
         b.b(x0 + 2 + dx, 2, z0 + 2, "nuclearcraft:graphite_block")

@@ -3062,7 +3062,7 @@ def creature(key, entity, big=False, nbt=""):
     def _(b):
         b.m(entity, 5, 0, 5, nbt=nbt, rot=0)
         if big:
-            b.focus(3, 0, 3, 7, 3, 7)
+            b.focus(4, 0, 4, 6, 3, 6)      # three blocks wide, four high: five wide left them small in the picture
 
 
 creature("aether/slider", "aether:slider", big=True)

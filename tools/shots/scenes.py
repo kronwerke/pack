@@ -3001,7 +3001,7 @@ ponder("create_brass/pg_winding", "powergrid", "assets/powergrid/ponder/generato
 ponder("create_brass/pg_generator", "powergrid", "assets/powergrid/ponder/generator/generator_3.nbt", deep=4)
 ponder("create_brass/pg_magnet", "powergrid", "assets/powergrid/ponder/electromagnet.nbt")
 ponder("list_gear/drilling", "createoreexcavation", "assets/createoreexcavation/ponder/drilling_machine.nbt")
-ponder("mekanism_ores/foundry", "productivemetalworks", "assets/productivemetalworks/ponder/foundry_molten.nbt")
+ponder("mekanism_ores/foundry", "productivemetalworks", "assets/productivemetalworks/ponder/foundry_molten.nbt", deep=8)   # room for the camera: it was cut at two edges
 ponder("farms/s2_xp", "create-enchantment", "assets/create_enchantment_industry/ponder/grindstone/basic.nbt")
 ponder("create_trains/schedule", "create-1", "assets/create/ponder/train_station/schedule.nbt")
 ponder("create_brass/alternator", "createaddition", "assets/createaddition/ponder/alternator.nbt")

@@ -1,35 +1,46 @@
-# 085 eidolon/brazier, crucible, altar, stone_altar
-#area 11 290 60 315
-fill 11 64 290 55 91 315 minecraft:air
-fill 56 64 290 60 91 315 minecraft:air
-fill 11 60 290 60 62 315 minecraft:stone
-fill 11 63 290 60 63 315 minecraft:light_gray_concrete
-fill 15 64 296 60 79 296 minecraft:light_gray_concrete
-fill 15 64 296 15 79 309 minecraft:light_gray_concrete
-setblock 16 64 308 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "085.1"}','{"text": "eidolon"}','{"text": "brazier"}','{"text": ""}']}}
-setblock 17 64 308 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Bau Brazier und"}','{"text": "Stone Hands"}','{"text": ""}','{"text": ""}']}}
-fill 25 64 296 25 79 309 minecraft:light_gray_concrete
-setblock 20 64 301 eidolon_repraised:brazier
-setblock 18 64 301 eidolon_repraised:stone_hand[facing=east]
-setblock 22 64 301 eidolon_repraised:stone_hand[facing=west]
-setblock 20 64 299 eidolon_repraised:stone_hand[facing=south]
-setblock 26 64 308 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "085.2"}','{"text": "eidolon"}','{"text": "crucible"}','{"text": ""}']}}
-setblock 27 64 308 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Setz einen"}','{"text": "Crucible auf"}','{"text": ""}','{"text": ""}']}}
-fill 35 64 296 35 79 309 minecraft:light_gray_concrete
-setblock 30 64 301 minecraft:campfire[facing=south,lit=true]
-setblock 30 65 301 eidolon_repraised:crucible
-kw testworld use 30 65 301 up minecraft:water_bucket
-setblock 36 64 308 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "085.3"}','{"text": "eidolon"}','{"text": "altar"}','{"text": ""}']}}
-setblock 37 64 308 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Bau einen Altar"}','{"text": "mit Bildnis"}','{"text": ""}','{"text": ""}']}}
-fill 45 64 296 45 79 309 minecraft:light_gray_concrete
-fill 39 64 301 41 64 301 eidolon_repraised:wooden_altar
-setblock 40 65 301 eidolon_repraised:straw_effigy[facing=south]
-setblock 39 65 301 eidolon_repraised:candle
-setblock 41 65 301 minecraft:skeleton_skull[rotation=8]
-setblock 46 64 308 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "085.4"}','{"text": "eidolon"}','{"text": "stone_altar"}','{"text": ""}']}}
-setblock 47 64 308 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Bau Stone Altar"}','{"text": "und Elder"}','{"text": "Statue"}','{"text": ""}']}}
-fill 55 64 296 55 79 309 minecraft:light_gray_concrete
-fill 49 64 301 51 64 301 eidolon_repraised:stone_altar
-setblock 50 65 301 eidolon_repraised:unholy_effigy[facing=south]
-setblock 49 65 301 eidolon_repraised:goblet
-setblock 51 65 301 eidolon_repraised:candle
+# 085 draconic/injectors, stabilizer, tiers
+#area -4 269 41 296
+fill -4 64 269 36 91 296 minecraft:air
+fill 37 64 269 41 91 296 minecraft:air
+fill -4 60 269 41 62 296 minecraft:stone
+fill -4 63 269 41 63 296 minecraft:light_gray_concrete
+fill 0 64 275 41 79 275 minecraft:light_gray_concrete
+fill 0 64 275 0 79 290 minecraft:light_gray_concrete
+setblock 1 64 289 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "085.1"}','{"text": "draconic"}','{"text": "injectors"}','{"text": ""}']}}
+setblock 2 64 289 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Stell acht"}','{"text": "Draconium-Injektoren"}','{"text": "auf"}','{"text": ""}']}}
+fill 12 64 275 12 79 290 minecraft:light_gray_concrete
+setblock 6 64 281 draconicevolution:crafting_core
+setblock 3 64 280 draconicevolution:basic_crafting_injector[facing=east]
+setblock 5 64 278 draconicevolution:basic_crafting_injector[facing=south]
+setblock 9 64 280 draconicevolution:basic_crafting_injector[facing=west]
+setblock 5 64 284 draconicevolution:basic_crafting_injector[facing=north]
+setblock 3 64 282 draconicevolution:basic_crafting_injector[facing=east]
+setblock 7 64 278 draconicevolution:basic_crafting_injector[facing=south]
+setblock 9 64 282 draconicevolution:basic_crafting_injector[facing=west]
+setblock 7 64 284 draconicevolution:basic_crafting_injector[facing=north]
+setblock 13 64 289 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "085.2"}','{"text": "draconic"}','{"text": "stabilizer"}','{"text": ""}']}}
+setblock 14 64 289 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Bau vier"}','{"text": "Stabilisatoren"}','{"text": "mit Gaia"}','{"text": ""}']}}
+fill 24 64 275 24 79 290 minecraft:light_gray_concrete
+fill 17 64 280 19 66 282 draconicevolution:draconium_block
+setblock 18 65 281 draconicevolution:energy_core
+setblock 14 64 281 minecraft:polished_deepslate
+setblock 14 65 281 draconicevolution:energy_core_stabilizer
+setblock 22 64 281 minecraft:polished_deepslate
+setblock 22 65 281 draconicevolution:energy_core_stabilizer
+setblock 18 64 277 minecraft:polished_deepslate
+setblock 18 65 277 draconicevolution:energy_core_stabilizer
+setblock 18 64 285 minecraft:polished_deepslate
+setblock 18 65 285 draconicevolution:energy_core_stabilizer
+setblock 25 64 289 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "085.3"}','{"text": "draconic"}','{"text": "tiers"}','{"text": ""}']}}
+setblock 26 64 289 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Kern Stufe 3"}','{"text": ""}','{"text": ""}','{"text": ""}']}}
+fill 36 64 275 36 79 290 minecraft:light_gray_concrete
+fill 29 64 280 31 66 282 draconicevolution:draconium_block
+setblock 30 65 281 draconicevolution:energy_core
+setblock 26 64 281 minecraft:polished_deepslate
+setblock 26 65 281 draconicevolution:energy_core_stabilizer
+setblock 34 64 281 minecraft:polished_deepslate
+setblock 34 65 281 draconicevolution:energy_core_stabilizer
+setblock 30 64 277 minecraft:polished_deepslate
+setblock 30 65 277 draconicevolution:energy_core_stabilizer
+setblock 30 64 285 minecraft:polished_deepslate
+setblock 30 65 285 draconicevolution:energy_core_stabilizer

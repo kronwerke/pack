@@ -1,37 +1,52 @@
-# 075 pneumaticcraft/chamber
-#area 12 231 31 256
-fill 12 64 231 31 91 256 minecraft:air
-fill 12 60 231 31 62 256 minecraft:stone
-fill 12 63 231 31 63 256 minecraft:light_gray_concrete
-fill 16 64 237 31 79 237 minecraft:light_gray_concrete
-fill 16 64 237 16 79 250 minecraft:light_gray_concrete
-setblock 17 64 249 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "075"}','{"text": "pneumaticcraft"}','{"text": "chamber"}','{"text": ""}']}}
-setblock 18 64 249 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Setz die"}','{"text": "Druckkammer"}','{"text": "zusammen"}','{"text": ""}']}}
-fill 26 64 237 26 79 250 minecraft:light_gray_concrete
-setblock 20 64 241 pneumaticcraft:pressure_chamber_wall[wall_state=none]
-setblock 20 64 242 pneumaticcraft:pressure_chamber_wall[wall_state=none]
-setblock 20 64 243 pneumaticcraft:pressure_chamber_wall[wall_state=none]
-setblock 20 65 241 pneumaticcraft:pressure_chamber_wall[wall_state=none]
-setblock 20 65 242 pneumaticcraft:pressure_chamber_interface[facing=west]
-setblock 20 65 243 pneumaticcraft:pressure_chamber_wall[wall_state=none]
-setblock 20 66 241 pneumaticcraft:pressure_chamber_wall[wall_state=none]
-setblock 20 66 242 pneumaticcraft:pressure_chamber_wall[wall_state=none]
-setblock 21 64 241 pneumaticcraft:pressure_chamber_wall[wall_state=none]
-setblock 21 64 242 pneumaticcraft:pressure_chamber_glass
-setblock 21 64 243 pneumaticcraft:pressure_chamber_wall[wall_state=none]
-setblock 21 65 241 pneumaticcraft:pressure_chamber_glass
-setblock 21 65 243 pneumaticcraft:pressure_chamber_glass
-setblock 21 66 241 pneumaticcraft:pressure_chamber_wall[wall_state=none]
-setblock 21 66 242 pneumaticcraft:pressure_chamber_glass
-setblock 21 66 243 pneumaticcraft:pressure_chamber_wall[wall_state=none]
-setblock 22 64 241 pneumaticcraft:pressure_chamber_wall[wall_state=none]
-setblock 22 64 242 pneumaticcraft:pressure_chamber_wall[wall_state=none]
-setblock 22 64 243 pneumaticcraft:pressure_chamber_wall[wall_state=none]
-setblock 22 65 241 pneumaticcraft:pressure_chamber_wall[wall_state=none]
-setblock 22 65 242 pneumaticcraft:pressure_chamber_valve[facing=east,formed=false]
-setblock 22 65 243 pneumaticcraft:pressure_chamber_wall[wall_state=none]
-setblock 22 66 241 pneumaticcraft:pressure_chamber_wall[wall_state=none]
-setblock 22 66 242 pneumaticcraft:pressure_chamber_wall[wall_state=none]
-setblock 22 66 243 pneumaticcraft:pressure_chamber_wall[wall_state=none]
-kw testworld use 20 65 243 up pneumaticcraft:pressure_chamber_wall
-execute if block 22 65 242 pneumaticcraft:pressure_chamber_valve[formed=true]
+# 075 storage/drawers_4, controller, vault_big
+#area 23 212 63 237
+fill 23 64 212 63 91 237 minecraft:air
+fill 23 60 212 63 62 237 minecraft:stone
+fill 23 63 212 63 63 237 minecraft:light_gray_concrete
+fill 27 64 218 63 79 218 minecraft:light_gray_concrete
+fill 27 64 218 27 79 231 minecraft:light_gray_concrete
+setblock 28 64 230 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "075.1"}','{"text": "storage"}','{"text": "drawers_4"}','{"text": ""}']}}
+setblock 29 64 230 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Bau eine"}','{"text": "Schubladenwand"}','{"text": ""}','{"text": ""}']}}
+fill 37 64 218 37 79 231 minecraft:light_gray_concrete
+fill 31 64 222 33 66 222 minecraft:oak_planks
+kw testworld use 31 64 222 south functionalstorage:oak_4
+execute unless block 31 64 223 minecraft:air
+kw testworld use 31 64 223 south minecraft:iron_ingot
+kw testworld use 32 64 222 south functionalstorage:oak_4
+execute unless block 32 64 223 minecraft:air
+kw testworld use 32 64 223 south minecraft:copper_ingot
+kw testworld use 33 64 222 south functionalstorage:oak_4
+execute unless block 33 64 223 minecraft:air
+kw testworld use 33 64 223 south minecraft:gold_ingot
+kw testworld use 31 65 222 south functionalstorage:oak_4
+execute unless block 31 65 223 minecraft:air
+kw testworld use 31 65 223 south minecraft:redstone
+kw testworld use 32 65 222 south functionalstorage:oak_4
+execute unless block 32 65 223 minecraft:air
+kw testworld use 32 65 223 south minecraft:coal
+kw testworld use 33 65 222 south functionalstorage:oak_4
+execute unless block 33 65 223 minecraft:air
+kw testworld use 33 65 223 south minecraft:lapis_lazuli
+kw testworld use 31 66 222 south functionalstorage:oak_4
+execute unless block 31 66 223 minecraft:air
+kw testworld use 31 66 223 south minecraft:diamond
+kw testworld use 32 66 222 south functionalstorage:oak_4
+execute unless block 32 66 223 minecraft:air
+kw testworld use 32 66 223 south minecraft:quartz
+kw testworld use 33 66 222 south functionalstorage:oak_4
+execute unless block 33 66 223 minecraft:air
+kw testworld use 33 66 223 south minecraft:bone
+setblock 38 64 230 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "075.2"}','{"text": "storage"}','{"text": "controller"}','{"text": ""}']}}
+setblock 39 64 230 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Bau einen"}','{"text": "Lagerkern"}','{"text": ""}','{"text": ""}']}}
+fill 47 64 218 47 79 231 minecraft:light_gray_concrete
+setblock 42 64 223 sophisticatedstorage:controller
+setblock 40 64 223 sophisticatedstorage:barrel[facing=south,flat_top=false]
+setblock 41 64 223 sophisticatedstorage:barrel[facing=south,flat_top=false]
+setblock 43 64 223 sophisticatedstorage:barrel[facing=south,flat_top=false]
+setblock 41 65 223 sophisticatedstorage:barrel[facing=south,flat_top=false]
+setblock 42 65 223 sophisticatedstorage:barrel[facing=south,flat_top=false]
+setblock 43 65 223 sophisticatedstorage:barrel[facing=south,flat_top=false]
+setblock 48 64 230 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "075.3"}','{"text": "storage"}','{"text": "vault_big"}','{"text": ""}']}}
+setblock 49 64 230 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Bau einen"}','{"text": "großen Tresor"}','{"text": ""}','{"text": ""}']}}
+fill 58 64 218 58 79 231 minecraft:light_gray_concrete
+fill 50 64 222 55 66 224 create:item_vault[axis=x,large=false]

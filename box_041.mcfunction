@@ -1,45 +1,19 @@
-# 041 botania/manasteel_prep
-#area 75 86 96 113
-fill 75 64 86 96 91 113 minecraft:air
-fill 75 60 86 96 62 113 minecraft:stone
-fill 75 63 86 96 63 113 minecraft:light_gray_concrete
-fill 79 64 92 96 79 92 minecraft:light_gray_concrete
-fill 79 64 92 79 79 107 minecraft:light_gray_concrete
-setblock 80 64 106 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "041"}','{"text": "botania"}','{"text": "manasteel_prep"}','{"text": ""}']}}
-setblock 81 64 106 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "the Nature\'s"}','{"text": "Aura ritual"}','{"text": "layout with"}','{"text": "gold powder and"}']}}
-setblock 82 64 106 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "stands"}','{"text": ""}','{"text": ""}','{"text": ""}']}}
-fill 91 64 92 91 79 107 minecraft:light_gray_concrete
-setblock 85 64 94 naturesaura:wood_stand
-setblock 82 64 95 naturesaura:wood_stand
-setblock 88 64 95 naturesaura:wood_stand
-setblock 84 64 96 naturesaura:gold_powder
-setblock 85 64 96 naturesaura:gold_powder
-setblock 86 64 96 naturesaura:gold_powder
-setblock 83 64 97 naturesaura:gold_powder
-setblock 84 64 97 naturesaura:gold_powder
-setblock 86 64 97 naturesaura:gold_powder
-setblock 87 64 97 naturesaura:gold_powder
-setblock 81 64 98 naturesaura:wood_stand
-setblock 83 64 98 naturesaura:gold_powder
-setblock 85 64 98 minecraft:oak_sapling
-setblock 87 64 98 naturesaura:gold_powder
-setblock 89 64 98 naturesaura:wood_stand
-setblock 83 64 99 naturesaura:gold_powder
-setblock 84 64 99 naturesaura:gold_powder
-setblock 86 64 99 naturesaura:gold_powder
-setblock 87 64 99 naturesaura:gold_powder
-setblock 84 64 100 naturesaura:gold_powder
-setblock 85 64 100 naturesaura:gold_powder
-setblock 86 64 100 naturesaura:gold_powder
-setblock 82 64 101 naturesaura:wood_stand
-setblock 88 64 101 naturesaura:wood_stand
-setblock 85 64 102 naturesaura:wood_stand
-setblock 85 63 98 minecraft:grass_block
-kw testworld use 85 64 94 up naturesaura:infused_iron
-kw testworld use 82 64 95 up botania:livingwood_twig
-kw testworld use 88 64 95 up naturesaura:infused_iron
-kw testworld use 81 64 98 up botania:mana_diamond
-kw testworld use 89 64 98 up naturesaura:gold_leaf
-kw testworld use 82 64 101 up naturesaura:infused_iron
-kw testworld use 88 64 101 up botania:livingwood_twig
-kw testworld use 85 64 102 up naturesaura:infused_iron
+# 041 botania/farm
+#area 71 86 94 111
+fill 71 64 86 94 91 111 minecraft:air
+fill 71 60 86 94 62 111 minecraft:stone
+fill 71 63 86 94 63 111 minecraft:light_gray_concrete
+fill 75 64 92 94 79 92 minecraft:light_gray_concrete
+fill 75 64 92 75 79 105 minecraft:light_gray_concrete
+setblock 76 64 104 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "041"}','{"text": "botania"}','{"text": "farm"}','{"text": ""}']}}
+setblock 77 64 104 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "the finished"}','{"text": "stage 1 mana"}','{"text": "farm"}','{"text": ""}']}}
+fill 89 64 92 89 79 105 minecraft:light_gray_concrete
+fill 77 63 95 87 63 99 minecraft:grass_block
+setblock 82 64 97 botania:mana_pool{mana:200000}
+setblock 82 64 98 botania:manastar
+setblock 79 64 97 botania:mana_spreader{rotationX:180f,rotationY:0f,mana:1000}
+setblock 85 64 97 botania:mana_spreader{rotationX:0f,rotationY:0f,mana:1000}
+setblock 78 64 96 botania:endoflame
+setblock 78 64 98 botania:endoflame
+setblock 86 64 96 botania:endoflame
+setblock 86 64 98 botania:endoflame

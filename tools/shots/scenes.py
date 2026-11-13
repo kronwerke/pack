@@ -1342,7 +1342,9 @@ def _(b):
     # stripes on the cable count the channels in use
     b.b(3, -1, 4, "ae2:creative_energy_cell")
     b.f(3, 0, 4, 3, 2, 4, "ae2:controller")
-    for x in (3, 4, 5):
+    # one click more than cables: the click on the controller itself placed nothing when the
+    # machine hand did it (13.11.2026), and a cable too many ends where the drive goes anyway
+    for x in (3, 4, 5, 6):
         b.use(x, 0, 4, "east", "ae2:fluix_smart_cable")
     b.changed(6, 0, 4, "minecraft:air")
     b.b(7, 0, 4, "ae2:drive[facing=south,spin=0]")

@@ -1,21 +1,12 @@
-# 064 botania/pure_daisy
-#area -4 107 15 132
-fill -4 64 107 15 91 132 minecraft:air
-fill -4 60 107 15 62 132 minecraft:stone
-fill -4 63 107 15 63 132 minecraft:light_gray_concrete
-fill 0 64 113 15 79 113 minecraft:light_gray_concrete
-fill 0 64 113 0 79 126 minecraft:light_gray_concrete
-setblock 1 64 125 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "064"}','{"text": "botania"}','{"text": "pure_daisy"}','{"text": ""}']}}
-setblock 2 64 125 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "the daisy with"}','{"text": "8 stone or"}','{"text": "logs, half"}','{"text": "converted"}']}}
-fill 10 64 113 10 79 126 minecraft:light_gray_concrete
-setblock 5 63 118 minecraft:grass_block
-setblock 5 64 118 botania:pure_daisy
-setblock 4 64 117 minecraft:stone
-setblock 5 64 117 botania:livingrock
-setblock 6 64 117 minecraft:stone
-setblock 4 64 118 minecraft:oak_log[axis=y]
-setblock 6 64 118 botania:livingwood_log[axis=y]
-setblock 4 64 119 botania:livingrock
-setblock 5 64 119 minecraft:stone
-setblock 6 64 119 botania:livingrock
+# 064 ars_epic/el_armor
+#area 255 88 274 113
+fill 255 64 88 274 91 113 minecraft:air
+fill 255 60 88 274 62 113 minecraft:stone
+fill 255 63 88 274 63 113 minecraft:light_gray_concrete
+fill 259 64 94 274 79 94 minecraft:light_gray_concrete
+fill 259 64 94 259 79 107 minecraft:light_gray_concrete
+setblock 260 64 106 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "064"}','{"text": "ars_epic"}','{"text": "el_armor"}','{"text": ""}']}}
+setblock 261 64 106 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "a full"}','{"text": "elemental robe"}','{"text": "set"}','{"text": ""}']}}
+fill 269 64 94 269 79 107 minecraft:light_gray_concrete
+summon armor_stand 264.5 64 99.5 {ArmorItems:[{id:"ars_elemental:fire_boots",count:1},{id:"ars_elemental:fire_leggings",count:1},{id:"ars_elemental:fire_robes",count:1},{id:"ars_elemental:fire_hat",count:1}],ShowArms:1b,NoBasePlate:1b,Tags:["kw_shot"],Rotation:[180f,0f]}
 execute as @e[type=minecraft:item,tag=!kw_shot] run kill @s

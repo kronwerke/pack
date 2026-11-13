@@ -1,21 +1,29 @@
-# 077 gaia/arena
-#area 199 107 224 138
-fill 199 64 107 224 91 138 minecraft:air
-fill 199 60 107 224 62 138 minecraft:stone
-fill 199 63 107 224 63 138 minecraft:light_gray_concrete
-fill 203 64 113 224 79 113 minecraft:light_gray_concrete
-fill 203 64 113 203 79 132 minecraft:light_gray_concrete
-setblock 204 64 131 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "077"}','{"text": "gaia"}','{"text": "arena"}','{"text": ""}']}}
-setblock 205 64 131 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "beacon with"}','{"text": "four pylons"}','{"text": "from above"}','{"text": ""}']}}
-fill 219 64 113 219 79 132 minecraft:light_gray_concrete
-fill 210 63 120 212 63 122 minecraft:iron_block
-setblock 211 64 121 minecraft:beacon
-setblock 207 64 117 minecraft:quartz_block
-setblock 207 65 117 botania:gaia_pylon
-setblock 207 64 125 minecraft:quartz_block
-setblock 207 65 125 botania:gaia_pylon
-setblock 215 64 117 minecraft:quartz_block
-setblock 215 65 117 botania:gaia_pylon
-setblock 215 64 125 minecraft:quartz_block
-setblock 215 65 125 botania:gaia_pylon
+# 077 botania_runes/terrasteel
+#area 182 107 203 132
+fill 182 64 107 203 91 132 minecraft:air
+fill 182 60 107 203 62 132 minecraft:stone
+fill 182 63 107 203 63 132 minecraft:light_gray_concrete
+fill 186 64 113 203 79 113 minecraft:light_gray_concrete
+fill 186 64 113 186 79 126 minecraft:light_gray_concrete
+setblock 187 64 125 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "077"}','{"text": "botania_runes"}','{"text": "terrasteel"}','{"text": ""}']}}
+setblock 188 64 125 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "the plate mid"}','{"text": "craft"}','{"text": ""}','{"text": ""}']}}
+fill 198 64 113 198 79 126 minecraft:light_gray_concrete
+setblock 191 64 117 botania:livingrock
+setblock 191 64 118 minecraft:lapis_block
+setblock 191 64 119 botania:livingrock
+setblock 192 64 117 minecraft:lapis_block
+setblock 192 64 118 botania:livingrock
+setblock 192 64 119 minecraft:lapis_block
+setblock 193 64 117 botania:livingrock
+setblock 193 64 118 minecraft:lapis_block
+setblock 193 64 119 botania:livingrock
+setblock 192 65 118 botania:terrestrial_agglomeration_plate
+summon botania:mana_spark 192.5 66.25 118.5 {Tags:["kw_shot"]}
+setblock 188 64 118 botania:mana_pool{mana:1000000}
+summon botania:mana_spark 188.5 65.25 118.5 {Tags:["kw_shot"]}
+setblock 196 64 118 botania:mana_pool{mana:1000000}
+summon botania:mana_spark 196.5 65.25 118.5 {Tags:["kw_shot"]}
+summon item 192.5 65.3 118.5 {Item:{id:"botania:manasteel_ingot",count:1},PickupDelay:32767,Age:-32768,Tags:["kw_shot"]}
+summon item 192.5 65.3 118.5 {Item:{id:"botania:mana_pearl",count:1},PickupDelay:32767,Age:-32768,Tags:["kw_shot"]}
+summon item 192.5 65.3 118.5 {Item:{id:"botania:mana_diamond",count:1},PickupDelay:32767,Age:-32768,Tags:["kw_shot"]}
 execute as @e[type=minecraft:item,tag=!kw_shot] run kill @s

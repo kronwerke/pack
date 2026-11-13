@@ -1,45 +1,23 @@
-# 112 industrial/sower, bio, crusher
-#area 38 214 77 239
-fill 38 64 214 77 91 239 minecraft:air
-fill 38 60 214 77 62 239 minecraft:stone
-fill 38 63 214 77 63 239 minecraft:light_gray_concrete
-fill 42 64 220 77 79 220 minecraft:light_gray_concrete
-fill 42 64 220 42 79 233 minecraft:light_gray_concrete
-setblock 43 64 232 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "112.1"}','{"text": "industrial"}','{"text": "sower"}','{"text": ""}']}}
-setblock 44 64 232 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "the machines at"}','{"text": "work"}','{"text": ""}','{"text": ""}']}}
-fill 52 64 220 52 79 233 minecraft:light_gray_concrete
-setblock 46 64 224 minecraft:oak_log[axis=y]
-setblock 48 64 224 minecraft:oak_log[axis=y]
-setblock 46 64 226 minecraft:oak_log[axis=y]
-setblock 48 64 226 minecraft:oak_log[axis=y]
-setblock 47 64 225 industrialforegoing:plant_sower[subfacing=south]
-fill 46 65 224 48 65 226 minecraft:farmland[moisture=7]
-fill 46 66 224 48 66 226 minecraft:wheat[age=7]
-fill 47 64 223 47 65 223 minecraft:stone_bricks
-setblock 47 66 223 industrialforegoing:plant_gatherer[subfacing=south]
-setblock 53 64 232 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "112.2"}','{"text": "industrial"}','{"text": "bio"}','{"text": ""}']}}
-setblock 54 64 232 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Betreib einen"}','{"text": "Biogenerator"}','{"text": ""}','{"text": ""}']}}
-fill 62 64 220 62 79 233 minecraft:light_gray_concrete
-setblock 57 64 225 industrialforegoing:bioreactor[subfacing=south]
-setblock 63 64 232 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "112.3"}','{"text": "industrial"}','{"text": "crusher"}','{"text": ""}']}}
-setblock 64 64 232 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Stell einen"}','{"text": "Monsterschnetzler"}','{"text": "auf"}','{"text": ""}']}}
-fill 72 64 220 72 79 233 minecraft:light_gray_concrete
-setblock 65 64 224 minecraft:oak_fence
-setblock 65 64 227 minecraft:oak_fence
-setblock 66 64 224 minecraft:oak_fence
-setblock 66 64 227 minecraft:oak_fence
-setblock 67 64 224 minecraft:oak_fence
-setblock 67 64 227 minecraft:oak_fence
-setblock 68 64 224 minecraft:oak_fence
-setblock 68 64 227 minecraft:oak_fence
-setblock 69 64 224 minecraft:oak_fence
-setblock 69 64 227 minecraft:oak_fence
-setblock 65 64 225 minecraft:oak_fence
-setblock 69 64 225 minecraft:oak_fence
-setblock 65 64 226 minecraft:oak_fence
-setblock 69 64 226 minecraft:oak_fence
-summon minecraft:cow 66.5 64 225.5 {NoAI:1b,PersistenceRequired:1b,Silent:1b,Tags:["kw_shot"],Rotation:[180f,0f]}
-summon minecraft:cow 68.5 64 226.5 {NoAI:1b,PersistenceRequired:1b,Silent:1b,Tags:["kw_shot"],Rotation:[180f,0f]}
-setblock 67 64 223 industrialforegoing:mob_crusher[subfacing=south]
-setblock 70 64 225 industrialforegoing:mob_duplicator
+# 112 industrial/extractor, latex_unit
+#area -4 214 25 239
+fill -4 64 214 25 91 239 minecraft:air
+fill -4 60 214 25 62 239 minecraft:stone
+fill -4 63 214 25 63 239 minecraft:light_gray_concrete
+fill 0 64 220 25 79 220 minecraft:light_gray_concrete
+fill 0 64 220 0 79 233 minecraft:light_gray_concrete
+setblock 1 64 232 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "112.1"}','{"text": "industrial"}','{"text": "extractor"}','{"text": ""}']}}
+setblock 2 64 232 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "pity frame"}','{"text": "recipe,"}','{"text": "extractors"}','{"text": "around a log"}']}}
+setblock 3 64 232 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "column, the"}','{"text": "latex unit GUI,"}','{"text": "dry rubber in a"}','{"text": "furnace, the"}']}}
+setblock 4 64 232 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "dissolution"}','{"text": "chamber GUI"}','{"text": ""}','{"text": ""}']}}
+fill 10 64 220 10 79 233 minecraft:light_gray_concrete
+fill 5 64 225 5 67 225 minecraft:acacia_log[axis=y]
+setblock 4 64 225 industrialforegoing:fluid_extractor[subfacing=east]
+setblock 6 64 225 industrialforegoing:fluid_extractor[subfacing=west]
+setblock 4 65 225 industrialforegoing:fluid_extractor[subfacing=east]
+setblock 6 65 225 industrialforegoing:fluid_extractor[subfacing=west]
+setblock 11 64 232 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "112.2"}','{"text": "industrial"}','{"text": "latex_unit"}','{"text": ""}']}}
+setblock 12 64 232 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Bau eine"}','{"text": "Latexverarbeitungsmaschine"}','{"text": ""}','{"text": ""}']}}
+fill 20 64 220 20 79 233 minecraft:light_gray_concrete
+setblock 14 64 225 industrialforegoing:latex_processing_unit[subfacing=south]
+setblock 16 64 225 industrialforegoing:dissolution_chamber[subfacing=south]
 execute as @e[type=minecraft:item,tag=!kw_shot] run kill @s

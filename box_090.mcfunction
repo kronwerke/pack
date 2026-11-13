@@ -1,14 +1,14 @@
-# 090 occultism_afrit/iesnium
-#area 127 144 146 169
-fill 127 64 144 146 91 169 minecraft:air
-fill 127 60 144 146 62 169 minecraft:stone
-fill 127 63 144 146 63 169 minecraft:light_gray_concrete
-fill 131 64 150 146 79 150 minecraft:light_gray_concrete
-fill 131 64 150 131 79 163 minecraft:light_gray_concrete
-setblock 132 64 162 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "090"}','{"text": "occultism_afrit"}','{"text": "iesnium"}','{"text": ""}']}}
-setblock 133 64 162 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "divination rod"}','{"text": "highlight on"}','{"text": "iesnium ore in"}','{"text": "the Nether"}']}}
-fill 141 64 150 141 79 163 minecraft:light_gray_concrete
-fill 135 64 154 137 65 155 minecraft:netherrack
-setblock 136 64 155 occultism:iesnium_ore
-setblock 135 65 155 occultism:iesnium_ore
+# 090 occultism/djinni_familiars
+#area 110 144 131 169
+fill 110 64 144 131 91 169 minecraft:air
+fill 110 60 144 131 62 169 minecraft:stone
+fill 110 63 144 131 63 169 minecraft:light_gray_concrete
+fill 114 64 150 131 79 150 minecraft:light_gray_concrete
+fill 114 64 150 114 79 163 minecraft:light_gray_concrete
+setblock 115 64 162 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "090"}','{"text": "occultism"}','{"text": "djinni_familiars"}','{"text": ""}']}}
+setblock 116 64 162 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "a player with"}','{"text": "two or three"}','{"text": "familiars"}','{"text": ""}']}}
+fill 126 64 150 126 79 163 minecraft:light_gray_concrete
+summon occultism:dragon_familiar 117.5 64 155.5 {NoAI:1b,PersistenceRequired:1b,Silent:1b,Tags:["kw_shot"],Rotation:[180f,0f]}
+summon occultism:greedy_familiar 120.5 64 155.5 {NoAI:1b,PersistenceRequired:1b,Silent:1b,Tags:["kw_shot"],Rotation:[180f,0f]}
+summon occultism:deer_familiar 123.5 64 155.5 {NoAI:1b,PersistenceRequired:1b,Silent:1b,Tags:["kw_shot"],Rotation:[180f,0f]}
 execute as @e[type=minecraft:item,tag=!kw_shot] run kill @s

@@ -1,26 +1,21 @@
-# 078 gaia/dandelifeon
-#area 220 107 257 150
-fill 220 64 107 245 91 150 minecraft:air
-fill 246 64 107 257 91 150 minecraft:air
-fill 220 60 107 257 62 150 minecraft:stone
-fill 220 63 107 257 63 150 minecraft:light_gray_concrete
-fill 224 64 113 257 79 113 minecraft:light_gray_concrete
-fill 224 64 113 224 79 144 minecraft:light_gray_concrete
-setblock 225 64 143 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "078"}','{"text": "gaia"}','{"text": "dandelifeon"}','{"text": ""}']}}
-setblock 226 64 143 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "a 25x25 cell"}','{"text": "field"}','{"text": ""}','{"text": ""}']}}
-fill 252 64 113 252 79 144 minecraft:light_gray_concrete
-fill 226 63 115 250 63 139 minecraft:smooth_stone
-setblock 238 63 127 minecraft:grass_block
-setblock 238 64 127 botania:dandelifeon
-setblock 231 64 120 botania:cellular_block
-setblock 232 64 121 botania:cellular_block
-setblock 233 64 121 botania:cellular_block
-setblock 231 64 122 botania:cellular_block
-setblock 232 64 122 botania:cellular_block
-setblock 243 64 122 botania:cellular_block
-setblock 244 64 122 botania:cellular_block
-setblock 245 64 122 botania:cellular_block
-setblock 232 64 131 botania:cellular_block
-setblock 232 64 132 botania:cellular_block
-setblock 232 64 133 botania:cellular_block
+# 078 gaia/arena
+#area 199 107 224 138
+fill 199 64 107 224 91 138 minecraft:air
+fill 199 60 107 224 62 138 minecraft:stone
+fill 199 63 107 224 63 138 minecraft:light_gray_concrete
+fill 203 64 113 224 79 113 minecraft:light_gray_concrete
+fill 203 64 113 203 79 132 minecraft:light_gray_concrete
+setblock 204 64 131 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "078"}','{"text": "gaia"}','{"text": "arena"}','{"text": ""}']}}
+setblock 205 64 131 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "beacon with"}','{"text": "four pylons"}','{"text": "from above"}','{"text": ""}']}}
+fill 219 64 113 219 79 132 minecraft:light_gray_concrete
+fill 210 63 120 212 63 122 minecraft:iron_block
+setblock 211 64 121 minecraft:beacon
+setblock 207 64 117 minecraft:quartz_block
+setblock 207 65 117 botania:gaia_pylon
+setblock 207 64 125 minecraft:quartz_block
+setblock 207 65 125 botania:gaia_pylon
+setblock 215 64 117 minecraft:quartz_block
+setblock 215 65 117 botania:gaia_pylon
+setblock 215 64 125 minecraft:quartz_block
+setblock 215 65 125 botania:gaia_pylon
 execute as @e[type=minecraft:item,tag=!kw_shot] run kill @s

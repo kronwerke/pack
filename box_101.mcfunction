@@ -1,14 +1,15 @@
-# 101 immersive/kiln
-#area 51 179 70 204
-fill 51 64 179 70 91 204 minecraft:air
-fill 51 60 179 70 62 204 minecraft:stone
-fill 51 63 179 70 63 204 minecraft:light_gray_concrete
-fill 55 64 185 70 79 185 minecraft:light_gray_concrete
-fill 55 64 185 55 79 198 minecraft:light_gray_concrete
-setblock 56 64 197 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "101"}','{"text": "immersive"}','{"text": "kiln"}','{"text": ""}']}}
-setblock 57 64 197 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "alloy kiln"}','{"text": "making electrum"}','{"text": ""}','{"text": ""}']}}
-fill 65 64 185 65 79 198 minecraft:light_gray_concrete
-place template immersiveengineering:multiblocks/alloy_smelter 59 64 188 none
-kw testworld use 60 65 189 south immersiveengineering:hammer
-execute unless block 60 65 189 immersiveengineering:alloybrick
+# 101 immersive/coke_oven
+#area 11 179 30 204
+fill 11 64 179 30 91 204 minecraft:air
+fill 11 60 179 30 62 204 minecraft:stone
+fill 11 63 179 30 63 204 minecraft:light_gray_concrete
+fill 15 64 185 30 79 185 minecraft:light_gray_concrete
+fill 15 64 185 15 79 198 minecraft:light_gray_concrete
+setblock 16 64 197 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "101"}','{"text": "immersive"}','{"text": "coke_oven"}','{"text": ""}']}}
+setblock 17 64 197 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "formed coke"}','{"text": "oven with GUI,"}','{"text": "the bucket"}','{"text": "slot, a pump"}']}}
+setblock 18 64 197 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "with pipes"}','{"text": ""}','{"text": ""}','{"text": ""}']}}
+fill 25 64 185 25 79 198 minecraft:light_gray_concrete
+place template immersiveengineering:multiblocks/coke_oven 19 64 188 none
+kw testworld use 20 65 190 south immersiveengineering:hammer
+execute unless block 20 65 190 immersiveengineering:cokebrick
 execute as @e[type=minecraft:item,tag=!kw_shot] run kill @s

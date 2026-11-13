@@ -1,44 +1,23 @@
-# 145 theurgy/sal_tank, liquefaction, vessels, array, fermentation
-#area 96 338 155 363
-fill 96 64 338 140 91 363 minecraft:air
-fill 141 64 338 155 91 363 minecraft:air
-fill 96 60 338 155 62 363 minecraft:stone
-fill 96 63 338 155 63 363 minecraft:light_gray_concrete
-fill 100 64 344 155 79 344 minecraft:light_gray_concrete
-fill 100 64 344 100 79 357 minecraft:light_gray_concrete
-setblock 101 64 356 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "145.1"}','{"text": "theurgy"}','{"text": "sal_tank"}','{"text": ""}']}}
-setblock 102 64 356 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Stell Tank und"}','{"text": "Akkumulator auf"}','{"text": ""}','{"text": ""}']}}
-fill 110 64 344 110 79 357 minecraft:light_gray_concrete
-setblock 105 64 349 theurgy:sal_ammoniac_tank
-setblock 105 65 349 theurgy:sal_ammoniac_accumulator
-setblock 111 64 356 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "145.2"}','{"text": "theurgy"}','{"text": "liquefaction"}','{"text": ""}']}}
-setblock 112 64 356 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Löse Sulfur aus"}','{"text": "Raw Iron"}','{"text": ""}','{"text": ""}']}}
-fill 120 64 344 120 79 357 minecraft:light_gray_concrete
-setblock 115 64 349 theurgy:pyromantic_brazier[lit=true]
-setblock 115 65 349 theurgy:liquefaction_cauldron[half=lower,lit=true]
-setblock 115 66 349 theurgy:liquefaction_cauldron[half=upper,lit=true]
-setblock 121 64 356 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "145.3"}','{"text": "theurgy"}','{"text": "vessels"}','{"text": ""}']}}
-setblock 122 64 356 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Stell die drei"}','{"text": "Gefäße auf"}','{"text": ""}','{"text": ""}']}}
-fill 130 64 344 130 79 357 minecraft:light_gray_concrete
-setblock 125 64 349 theurgy:pyromantic_brazier[lit=true]
-setblock 125 65 349 theurgy:incubator[half=lower]
-setblock 125 66 349 theurgy:incubator[half=upper]
-setblock 124 64 349 minecraft:stone_bricks
-setblock 124 65 349 theurgy:incubator_salt_vessel
-setblock 126 64 349 minecraft:stone_bricks
-setblock 126 65 349 theurgy:incubator_sulfur_vessel
-setblock 125 64 348 minecraft:stone_bricks
-setblock 125 65 348 theurgy:incubator_mercury_vessel
-setblock 131 64 356 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "145.4"}','{"text": "theurgy"}','{"text": "array"}','{"text": ""}']}}
-setblock 132 64 356 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Stell drei"}','{"text": "Pedestale auf"}','{"text": ""}','{"text": ""}']}}
-fill 140 64 344 140 79 357 minecraft:light_gray_concrete
-setblock 133 64 349 theurgy:reformation_source_pedestal
-setblock 135 64 348 theurgy:reformation_target_pedestal
-setblock 137 64 349 theurgy:reformation_result_pedestal
-setblock 135 64 351 minecraft:stone_bricks
-setblock 135 65 351 theurgy:sulfuric_flux_emitter[facing=up]
-setblock 141 64 356 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "145.5"}','{"text": "theurgy"}','{"text": "fermentation"}','{"text": ""}']}}
-setblock 142 64 356 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Vergär Sulfur"}','{"text": "zu Niter"}','{"text": ""}','{"text": ""}']}}
-fill 150 64 344 150 79 357 minecraft:light_gray_concrete
-setblock 145 64 349 theurgy:fermentation_vat[facing=south,has_output=false,open=true]
+# 145 silent_gear/stone_anvil, crude_mixer, alloy_forge
+#area -4 338 35 363
+fill -4 64 338 35 91 363 minecraft:air
+fill -4 60 338 35 62 363 minecraft:stone
+fill -4 63 338 35 63 363 minecraft:light_gray_concrete
+fill 0 64 344 35 79 344 minecraft:light_gray_concrete
+fill 0 64 344 0 79 357 minecraft:light_gray_concrete
+setblock 1 64 356 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "145.1"}','{"text": "silent_gear"}','{"text": "stone_anvil"}','{"text": ""}']}}
+setblock 2 64 356 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Stell einen"}','{"text": "Steinamboss auf"}','{"text": ""}','{"text": ""}']}}
+fill 10 64 344 10 79 357 minecraft:light_gray_concrete
+setblock 4 64 349 silentgear:stone_anvil
+setblock 6 64 349 minecraft:smooth_stone_slab
+summon item_display 6.5 64.95 349.5 {item:{id:"silentgear:hammer",count:1},item_display:"fixed",billboard:"vertical",transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[1.0f,1.0f,1.0f]},brightness:{sky:15,block:15},Tags:["kw_shot"]}
+setblock 11 64 356 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "145.2"}','{"text": "silent_gear"}','{"text": "crude_mixer"}','{"text": ""}']}}
+setblock 12 64 356 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Bau einen Crude"}','{"text": "Mixer"}','{"text": ""}','{"text": ""}']}}
+fill 20 64 344 20 79 357 minecraft:light_gray_concrete
+setblock 15 64 349 silentgear:crude_mixer[facing=south,lit=true]
+setblock 21 64 356 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "145.3"}','{"text": "silent_gear"}','{"text": "alloy_forge"}','{"text": ""}']}}
+setblock 22 64 356 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Bau die"}','{"text": "Legierungsschmiede"}','{"text": ""}','{"text": ""}']}}
+fill 30 64 344 30 79 357 minecraft:light_gray_concrete
+setblock 24 64 349 silentgear:alloy_forge[facing=south,lit=true]
+setblock 26 64 349 silentgear:starlight_charger
 execute as @e[type=minecraft:item,tag=!kw_shot] run kill @s

@@ -1,16 +1,13 @@
-# 047 antimatter/waste
-#area 240 65 261 90
-fill 240 64 65 261 91 90 minecraft:air
-fill 240 60 65 261 62 90 minecraft:stone
-fill 240 63 65 261 63 90 minecraft:light_gray_concrete
-fill 244 64 71 261 79 71 minecraft:light_gray_concrete
-fill 244 64 71 244 79 84 minecraft:light_gray_concrete
-setblock 245 64 83 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "047"}','{"text": "antimatter"}','{"text": "waste"}','{"text": ""}']}}
-setblock 246 64 83 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "row of solar"}','{"text": "neutron"}','{"text": "activators"}','{"text": "under open sky"}']}}
-fill 256 64 71 256 79 84 minecraft:light_gray_concrete
-setblock 247 64 76 mekanism:solar_neutron_activator[facing=south,active=false]
-setblock 249 64 76 mekanism:solar_neutron_activator[facing=south,active=false]
-setblock 251 64 76 mekanism:solar_neutron_activator[facing=south,active=false]
-setblock 253 64 76 mekanism:solar_neutron_activator[facing=south,active=false]
-fill 247 64 75 253 64 75 mekanism:basic_pressurized_tube
+# 047 mekanism_elite/mekasuit
+#area 225 65 244 90
+fill 225 64 65 244 91 90 minecraft:air
+fill 225 60 65 244 62 90 minecraft:stone
+fill 225 63 65 244 63 90 minecraft:light_gray_concrete
+fill 229 64 71 244 79 71 minecraft:light_gray_concrete
+fill 229 64 71 229 79 84 minecraft:light_gray_concrete
+setblock 230 64 83 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "047"}','{"text": "mekanism_elite"}','{"text": "mekasuit"}','{"text": ""}']}}
+setblock 231 64 83 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "full MekaSuit"}','{"text": "at the"}','{"text": "modification"}','{"text": "station"}']}}
+fill 239 64 71 239 79 84 minecraft:light_gray_concrete
+summon armor_stand 233.5 64 76.5 {ArmorItems:[{id:"mekanism:mekasuit_boots",count:1},{id:"mekanism:mekasuit_pants",count:1},{id:"mekanism:mekasuit_bodyarmor",count:1},{id:"mekanism:mekasuit_helmet",count:1}],ShowArms:1b,NoBasePlate:1b,Tags:["kw_shot"],Rotation:[180f,0f]}
+setblock 235 64 76 mekanism:modification_station[facing=south]
 execute as @e[type=minecraft:item,tag=!kw_shot] run kill @s

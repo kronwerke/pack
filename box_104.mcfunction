@@ -1,15 +1,14 @@
-# 104 immersive/coke_oven
-#area 11 181 30 206
-fill 11 64 181 30 91 206 minecraft:air
-fill 11 60 181 30 62 206 minecraft:stone
-fill 11 63 181 30 63 206 minecraft:light_gray_concrete
-fill 15 64 187 30 79 187 minecraft:light_gray_concrete
-fill 15 64 187 15 79 200 minecraft:light_gray_concrete
-setblock 16 64 199 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "104"}','{"text": "immersive"}','{"text": "coke_oven"}','{"text": ""}']}}
-setblock 17 64 199 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "formed coke"}','{"text": "oven with GUI,"}','{"text": "the bucket"}','{"text": "slot, a pump"}']}}
-setblock 18 64 199 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "with pipes"}','{"text": ""}','{"text": ""}','{"text": ""}']}}
-fill 25 64 187 25 79 200 minecraft:light_gray_concrete
-place template immersiveengineering:multiblocks/coke_oven 19 64 190 none
-kw testworld use 20 65 192 south immersiveengineering:hammer
-execute unless block 20 65 192 immersiveengineering:cokebrick
+# 104 hexerei/sage_plate
+#area 294 146 313 171
+fill 294 64 146 313 91 171 minecraft:air
+fill 294 60 146 313 62 171 minecraft:stone
+fill 294 63 146 313 63 171 minecraft:light_gray_concrete
+fill 298 64 152 313 79 152 minecraft:light_gray_concrete
+fill 298 64 152 298 79 165 minecraft:light_gray_concrete
+setblock 299 64 164 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "104"}','{"text": "hexerei"}','{"text": "sage_plate"}','{"text": ""}']}}
+setblock 300 64 164 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "burning sage"}','{"text": "plate with the"}','{"text": "smoke ring"}','{"text": ""}']}}
+fill 308 64 152 308 79 165 minecraft:light_gray_concrete
+setblock 303 64 157 hexerei:sage_burning_plate[facing=south]
+kw testworld use 303 64 157 up hexerei:dried_sage_bundle
+kw testworld use 303 64 157 up minecraft:flint_and_steel
 execute as @e[type=minecraft:item,tag=!kw_shot] run kill @s

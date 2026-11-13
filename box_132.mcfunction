@@ -1,25 +1,15 @@
-# 132 flux_networks/setup_mek, setup_reactor
-#area 89 277 119 302
-fill 89 64 277 119 91 302 minecraft:air
-fill 89 60 277 119 62 302 minecraft:stone
-fill 89 63 277 119 63 302 minecraft:light_gray_concrete
-fill 93 64 283 119 79 283 minecraft:light_gray_concrete
-fill 93 64 283 93 79 296 minecraft:light_gray_concrete
-setblock 94 64 295 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "132.1"}','{"text": "flux_networks"}','{"text": "setup_mek"}','{"text": ""}']}}
-setblock 95 64 295 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "a factory row"}','{"text": "with points, a"}','{"text": "Powah reactor"}','{"text": "with a plug, a"}']}}
-setblock 96 64 295 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "machine hall"}','{"text": "without cables"}','{"text": ""}','{"text": ""}']}}
-fill 104 64 283 104 79 296 minecraft:light_gray_concrete
-setblock 97 64 288 mekanism:enrichment_chamber[facing=south]
-setblock 98 64 288 mekanism:crusher[facing=south]
-setblock 99 64 288 mekanism:energized_smelter[facing=south]
-setblock 100 64 288 mekanism:metallurgic_infuser[facing=south]
-setblock 97 65 288 fluxnetworks:flux_point
-setblock 98 65 288 fluxnetworks:flux_point
-setblock 99 65 288 fluxnetworks:flux_point
-setblock 100 65 288 fluxnetworks:flux_point
-setblock 105 64 295 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "132.2"}','{"text": "flux_networks"}','{"text": "setup_reactor"}','{"text": ""}']}}
-setblock 106 64 295 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Reaktorstrom in"}','{"text": "die Ferne"}','{"text": ""}','{"text": ""}']}}
-fill 114 64 283 114 79 296 minecraft:light_gray_concrete
-setblock 109 64 288 powah:reactor_starter[core=true]
-setblock 109 68 288 fluxnetworks:flux_plug
+# 132 flux_networks/dust
+#area 58 277 77 302
+fill 58 64 277 77 91 302 minecraft:air
+fill 58 60 277 77 62 302 minecraft:stone
+fill 58 63 277 77 63 302 minecraft:light_gray_concrete
+fill 62 64 283 77 79 283 minecraft:light_gray_concrete
+fill 62 64 283 62 79 296 minecraft:light_gray_concrete
+setblock 63 64 295 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "132"}','{"text": "flux_networks"}','{"text": "dust"}','{"text": ""}']}}
+setblock 64 64 295 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "the bedrock gap"}','{"text": "with redstone"}','{"text": "and obsidian,"}','{"text": "left-clicking"}']}}
+setblock 65 64 295 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "the obsidian"}','{"text": ""}','{"text": ""}','{"text": ""}']}}
+fill 72 64 283 72 79 296 minecraft:light_gray_concrete
+setblock 67 64 288 minecraft:bedrock
+summon item 67.5 65.1 288.5 {Item:{id:"minecraft:redstone",count:64},PickupDelay:32767,Age:-32768,Tags:["kw_shot"]}
+setblock 67 66 288 minecraft:obsidian
 execute as @e[type=minecraft:item,tag=!kw_shot] run kill @s

@@ -1,23 +1,35 @@
-# 147 silent_gear/stone_anvil, crude_mixer, alloy_forge
-#area -4 340 35 365
-fill -4 64 340 35 91 365 minecraft:air
-fill -4 60 340 35 62 365 minecraft:stone
-fill -4 63 340 35 63 365 minecraft:light_gray_concrete
-fill 0 64 346 35 79 346 minecraft:light_gray_concrete
-fill 0 64 346 0 79 359 minecraft:light_gray_concrete
-setblock 1 64 358 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "147.1"}','{"text": "silent_gear"}','{"text": "stone_anvil"}','{"text": ""}']}}
-setblock 2 64 358 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Stell einen"}','{"text": "Steinamboss auf"}','{"text": ""}','{"text": ""}']}}
-fill 10 64 346 10 79 359 minecraft:light_gray_concrete
-setblock 4 64 351 silentgear:stone_anvil
-setblock 6 64 351 minecraft:smooth_stone_slab
-summon item_display 6.5 64.95 351.5 {item:{id:"silentgear:hammer",count:1},item_display:"fixed",billboard:"vertical",transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[1.0f,1.0f,1.0f]},brightness:{sky:15,block:15},Tags:["kw_shot"]}
-setblock 11 64 358 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "147.2"}','{"text": "silent_gear"}','{"text": "crude_mixer"}','{"text": ""}']}}
-setblock 12 64 358 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Bau einen Crude"}','{"text": "Mixer"}','{"text": ""}','{"text": ""}']}}
-fill 20 64 346 20 79 359 minecraft:light_gray_concrete
-setblock 15 64 351 silentgear:crude_mixer[facing=south,lit=true]
-setblock 21 64 358 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "147.3"}','{"text": "silent_gear"}','{"text": "alloy_forge"}','{"text": ""}']}}
-setblock 22 64 358 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Bau die"}','{"text": "Legierungsschmiede"}','{"text": ""}','{"text": ""}']}}
-fill 30 64 346 30 79 359 minecraft:light_gray_concrete
-setblock 24 64 351 silentgear:alloy_forge[facing=south,lit=true]
-setblock 26 64 351 silentgear:starlight_charger
+# 147 quarries/first_dig, quarry, destroyer, coe_netherite
+#area 62 319 111 344
+fill 62 64 319 106 91 344 minecraft:air
+fill 107 64 319 111 91 344 minecraft:air
+fill 62 60 319 111 62 344 minecraft:stone
+fill 62 63 319 111 63 344 minecraft:light_gray_concrete
+fill 66 64 325 111 79 325 minecraft:light_gray_concrete
+fill 66 64 325 66 79 338 minecraft:light_gray_concrete
+setblock 67 64 337 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "147.1"}','{"text": "quarries"}','{"text": "first_dig"}','{"text": ""}']}}
+setblock 68 64 337 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Lass den"}','{"text": "Builder graben"}','{"text": ""}','{"text": ""}']}}
+fill 76 64 325 76 79 338 minecraft:light_gray_concrete
+setblock 71 64 330 rftoolsbuilder:builder[facing=south]
+setblock 71 65 330 minecraft:chest[facing=south,type=single,waterlogged=false]
+setblock 77 64 337 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "147.2"}','{"text": "quarries"}','{"text": "quarry"}','{"text": ""}']}}
+setblock 78 64 337 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Bau einen"}','{"text": "Quarry Plus"}','{"text": ""}','{"text": ""}']}}
+fill 86 64 325 86 79 338 minecraft:light_gray_concrete
+setblock 80 64 331 quarryplus:quarry[facing=south,working=false]
+setblock 81 64 331 quarryplus:marker[facing=up]
+setblock 83 64 331 quarryplus:marker[facing=up]
+setblock 81 64 329 quarryplus:marker[facing=up]
+setblock 87 64 337 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "147.3"}','{"text": "quarries"}','{"text": "destroyer"}','{"text": ""}']}}
+setblock 88 64 337 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Bau den Chunk"}','{"text": "Destroyer"}','{"text": ""}','{"text": ""}']}}
+fill 96 64 325 96 79 338 minecraft:light_gray_concrete
+setblock 90 64 330 quarryplus:adv_quarry[facing=south,working=false]
+setblock 92 64 330 quarryplus:chunk_marker
+setblock 97 64 337 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "147.4"}','{"text": "quarries"}','{"text": "coe_netherite"}','{"text": ""}']}}
+setblock 98 64 337 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Bau einen"}','{"text": "Netheritbohrer"}','{"text": ""}','{"text": ""}']}}
+fill 106 64 325 106 79 338 minecraft:light_gray_concrete
+setblock 99 64 330 minecraft:smooth_stone_slab
+summon item_display 99.5 64.95 330.5 {item:{id:"createoreexcavation:drill",count:1},item_display:"fixed",billboard:"vertical",transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[1.0f,1.0f,1.0f]},brightness:{sky:15,block:15},Tags:["kw_shot"]}
+setblock 101 64 330 minecraft:smooth_stone_slab
+summon item_display 101.5 64.95 330.5 {item:{id:"createoreexcavation:diamond_drill",count:1},item_display:"fixed",billboard:"vertical",transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[1.0f,1.0f,1.0f]},brightness:{sky:15,block:15},Tags:["kw_shot"]}
+setblock 103 64 330 minecraft:smooth_stone_slab
+summon item_display 103.5 64.95 330.5 {item:{id:"createoreexcavation:netherite_drill",count:1},item_display:"fixed",billboard:"vertical",transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[1.0f,1.0f,1.0f]},brightness:{sky:15,block:15},Tags:["kw_shot"]}
 execute as @e[type=minecraft:item,tag=!kw_shot] run kill @s

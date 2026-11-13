@@ -1,63 +1,25 @@
-# 134 pneumaticcraft_advanced/first_run, electrostatic, thermal, adv_air, first_program, frames, security_station, spawner_extractor, pressurized_spawner
-#area 190 277 289 302
-fill 190 64 277 234 91 302 minecraft:air
-fill 235 64 277 279 91 302 minecraft:air
-fill 280 64 277 289 91 302 minecraft:air
-fill 190 60 277 289 62 302 minecraft:stone
-fill 190 63 277 289 63 302 minecraft:light_gray_concrete
-fill 194 64 283 289 79 283 minecraft:light_gray_concrete
-fill 194 64 283 194 79 296 minecraft:light_gray_concrete
-setblock 195 64 295 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "134.1"}','{"text": "pneumaticcraft_advanced"}','{"text": "first_run"}','{"text": ""}']}}
-setblock 196 64 295 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Lass die Straße"}','{"text": "laufen"}','{"text": ""}','{"text": ""}']}}
-fill 204 64 283 204 79 296 minecraft:light_gray_concrete
-setblock 199 64 288 pneumaticcraft:assembly_platform
-setblock 198 64 288 pneumaticcraft:assembly_drill
-setblock 200 64 288 pneumaticcraft:assembly_laser
-setblock 199 64 287 pneumaticcraft:assembly_io_unit_import
-setblock 199 64 289 pneumaticcraft:assembly_io_unit_export
-setblock 199 64 286 minecraft:chest[facing=south,type=single,waterlogged=false]
-setblock 199 64 290 minecraft:chest[facing=south,type=single,waterlogged=false]
-setblock 201 64 288 pneumaticcraft:assembly_controller
-setblock 205 64 295 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "134.2"}','{"text": "pneumaticcraft_advanced"}','{"text": "electrostatic"}','{"text": ""}']}}
-setblock 206 64 295 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Bau einen"}','{"text": "Electrostatic"}','{"text": "Compressor"}','{"text": ""}']}}
-fill 214 64 283 214 79 296 minecraft:light_gray_concrete
-setblock 209 64 288 pneumaticcraft:electrostatic_compressor
-fill 209 65 288 209 68 288 minecraft:iron_bars
-setblock 209 69 288 minecraft:lightning_rod[facing=up,powered=false]
-setblock 215 64 295 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "134.3"}','{"text": "pneumaticcraft_advanced"}','{"text": "thermal"}','{"text": ""}']}}
-setblock 216 64 295 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Bau einen"}','{"text": "Thermal"}','{"text": "Compressor"}','{"text": ""}']}}
-fill 224 64 283 224 79 296 minecraft:light_gray_concrete
-setblock 218 64 288 minecraft:magma_block
-setblock 219 64 288 pneumaticcraft:thermal_compressor
-setblock 220 64 288 minecraft:blue_ice
-setblock 225 64 295 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "134.4"}','{"text": "pneumaticcraft_advanced"}','{"text": "adv_air"}','{"text": ""}']}}
-setblock 226 64 295 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Bau einen"}','{"text": "Advanced Air"}','{"text": "Compressor"}','{"text": ""}']}}
-fill 234 64 283 234 79 296 minecraft:light_gray_concrete
-setblock 229 64 288 pneumaticcraft:advanced_air_compressor[facing=south,on=true]
-setblock 235 64 295 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "134.5"}','{"text": "pneumaticcraft_advanced"}','{"text": "first_program"}','{"text": ""}']}}
-setblock 236 64 295 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Programmiere"}','{"text": "deine erste"}','{"text": "Drohne"}','{"text": ""}']}}
-fill 244 64 283 244 79 296 minecraft:light_gray_concrete
-setblock 238 64 288 pneumaticcraft:programmer[facing=south]
-setblock 240 64 288 minecraft:smooth_stone_slab
-summon item_display 240.5 64.95 288.5 {item:{id:"pneumaticcraft:drone",count:1},item_display:"fixed",billboard:"vertical",transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[1.0f,1.0f,1.0f]},brightness:{sky:15,block:15},Tags:["kw_shot"]}
-setblock 245 64 295 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "134.6"}','{"text": "pneumaticcraft_advanced"}','{"text": "frames"}','{"text": ""}']}}
-setblock 246 64 295 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Bau Logistics"}','{"text": "Frames"}','{"text": ""}','{"text": ""}']}}
-fill 254 64 283 254 79 296 minecraft:light_gray_concrete
-setblock 247 64 288 minecraft:chest[facing=south,type=single,waterlogged=false]
-setblock 251 64 288 minecraft:chest[facing=south,type=single,waterlogged=false]
-kw testworld use 247 64 288 south pneumaticcraft:logistics_frame_passive_provider
-kw testworld use 251 64 288 south pneumaticcraft:logistics_frame_requester
-setblock 255 64 295 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "134.7"}','{"text": "pneumaticcraft_advanced"}','{"text": "security_station"}','{"text": ""}']}}
-setblock 256 64 295 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Bau eine"}','{"text": "Security"}','{"text": "Station"}','{"text": ""}']}}
-fill 264 64 283 264 79 296 minecraft:light_gray_concrete
-setblock 259 64 288 pneumaticcraft:security_station[facing=south]
-setblock 265 64 295 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "134.8"}','{"text": "pneumaticcraft_advanced"}','{"text": "spawner_extractor"}','{"text": ""}']}}
-setblock 266 64 295 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Bau einen"}','{"text": "Spawner"}','{"text": "Extractor"}','{"text": ""}']}}
-fill 274 64 283 274 79 296 minecraft:light_gray_concrete
-setblock 269 64 288 minecraft:spawner
-setblock 269 65 288 pneumaticcraft:spawner_extractor
-setblock 275 64 295 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "134.9"}','{"text": "pneumaticcraft_advanced"}','{"text": "pressurized_spawner"}','{"text": ""}']}}
-setblock 276 64 295 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Bau einen"}','{"text": "Pressurized"}','{"text": "Spawner"}','{"text": ""}']}}
-fill 284 64 283 284 79 296 minecraft:light_gray_concrete
-setblock 279 64 288 pneumaticcraft:pressurized_spawner
+# 134 flux_networks/setup_mek, setup_reactor
+#area 89 277 119 302
+fill 89 64 277 119 91 302 minecraft:air
+fill 89 60 277 119 62 302 minecraft:stone
+fill 89 63 277 119 63 302 minecraft:light_gray_concrete
+fill 93 64 283 119 79 283 minecraft:light_gray_concrete
+fill 93 64 283 93 79 296 minecraft:light_gray_concrete
+setblock 94 64 295 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "134.1"}','{"text": "flux_networks"}','{"text": "setup_mek"}','{"text": ""}']}}
+setblock 95 64 295 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "a factory row"}','{"text": "with points, a"}','{"text": "Powah reactor"}','{"text": "with a plug, a"}']}}
+setblock 96 64 295 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "machine hall"}','{"text": "without cables"}','{"text": ""}','{"text": ""}']}}
+fill 104 64 283 104 79 296 minecraft:light_gray_concrete
+setblock 97 64 288 mekanism:enrichment_chamber[facing=south]
+setblock 98 64 288 mekanism:crusher[facing=south]
+setblock 99 64 288 mekanism:energized_smelter[facing=south]
+setblock 100 64 288 mekanism:metallurgic_infuser[facing=south]
+setblock 97 65 288 fluxnetworks:flux_point
+setblock 98 65 288 fluxnetworks:flux_point
+setblock 99 65 288 fluxnetworks:flux_point
+setblock 100 65 288 fluxnetworks:flux_point
+setblock 105 64 295 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "134.2"}','{"text": "flux_networks"}','{"text": "setup_reactor"}','{"text": ""}']}}
+setblock 106 64 295 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Reaktorstrom in"}','{"text": "die Ferne"}','{"text": ""}','{"text": ""}']}}
+fill 114 64 283 114 79 296 minecraft:light_gray_concrete
+setblock 109 64 288 powah:reactor_starter[core=true]
+setblock 109 68 288 fluxnetworks:flux_plug
 execute as @e[type=minecraft:item,tag=!kw_shot] run kill @s

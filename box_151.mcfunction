@@ -1,72 +1,44 @@
-# 151 malum/altar, obelisk, crucible, healing_rite, quickening
-#area 196 340 257 369
-fill 196 64 340 229 95 369 minecraft:air
-fill 230 64 340 257 95 369 minecraft:air
-fill 196 60 340 257 62 369 minecraft:stone
-fill 196 63 340 257 63 369 minecraft:light_gray_concrete
-fill 200 64 346 257 83 346 minecraft:light_gray_concrete
-fill 200 64 346 200 83 363 minecraft:light_gray_concrete
-setblock 201 64 362 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "151.1"}','{"text": "malum"}','{"text": "altar"}','{"text": ""}']}}
-setblock 202 64 362 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Bau einen"}','{"text": "Spirit Altar"}','{"text": ""}','{"text": ""}']}}
-fill 210 64 346 210 83 363 minecraft:light_gray_concrete
-setblock 205 64 351 malum:spirit_altar
-kw testworld use 205 64 351 south malum:runewood_planks
-setblock 203 64 351 malum:runewood_planks
-setblock 203 65 351 malum:runewood_item_stand[facing=up,waterlogged=false]
-kw testworld use 203 65 351 south malum:hallowed_gold_ingot
-setblock 207 64 351 malum:runewood_planks
-setblock 207 65 351 malum:runewood_item_stand[facing=up,waterlogged=false]
-kw testworld use 207 65 351 south malum:hallowed_gold_ingot
-setblock 211 64 362 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "151.2"}','{"text": "malum"}','{"text": "obelisk"}','{"text": ""}']}}
-setblock 212 64 362 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Stell"}','{"text": "Runewood-Obelisken"}','{"text": "auf"}','{"text": ""}']}}
-fill 222 64 346 222 83 363 minecraft:light_gray_concrete
-setblock 216 64 351 malum:spirit_altar
-kw testworld use 216 64 351 south malum:runewood_planks
-setblock 214 64 351 malum:runewood_planks
-setblock 214 65 351 malum:runewood_item_stand[facing=up,waterlogged=false]
-kw testworld use 214 65 351 south malum:hallowed_gold_ingot
-setblock 218 64 351 malum:runewood_planks
-setblock 218 65 351 malum:runewood_item_stand[facing=up,waterlogged=false]
-kw testworld use 218 65 351 south malum:hallowed_gold_ingot
-kw testworld use 213 63 349 up malum:runewood_obelisk
-execute unless block 213 64 349 minecraft:air
-kw testworld use 219 63 349 up malum:runewood_obelisk
-execute unless block 219 64 349 minecraft:air
-kw testworld use 213 63 353 up malum:runewood_obelisk
-execute unless block 213 64 353 minecraft:air
-kw testworld use 219 63 353 up malum:runewood_obelisk
-execute unless block 219 64 353 minecraft:air
-setblock 223 64 362 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "151.3"}','{"text": "malum"}','{"text": "crucible"}','{"text": ""}']}}
-setblock 224 64 362 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Bau den Spirit"}','{"text": "Crucible"}','{"text": ""}','{"text": ""}']}}
-fill 232 64 346 232 83 363 minecraft:light_gray_concrete
-kw testworld use 227 63 351 up malum:spirit_crucible
-setblock 233 64 362 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "151.4"}','{"text": "malum"}','{"text": "healing_rite"}','{"text": ""}']}}
-setblock 234 64 362 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Zünde den Rite"}','{"text": "of Healing"}','{"text": ""}','{"text": ""}']}}
-fill 242 64 346 242 83 363 minecraft:light_gray_concrete
-setblock 237 64 351 malum:runewood_totem_base
-setblock 237 65 351 malum:runewood_log[axis=y]
-kw testworld use 237 65 351 south malum:arcane_spirit
-execute unless block 237 65 351 malum:runewood_log
-setblock 237 66 351 malum:runewood_log[axis=y]
-kw testworld use 237 66 351 south malum:sacred_spirit
-execute unless block 237 66 351 malum:runewood_log
-setblock 237 67 351 malum:runewood_log[axis=y]
-kw testworld use 237 67 351 south malum:sacred_spirit
-execute unless block 237 67 351 malum:runewood_log
-setblock 243 64 362 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "151.5"}','{"text": "malum"}','{"text": "quickening"}','{"text": ""}']}}
-setblock 244 64 362 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Zünde den Rite"}','{"text": "of Quickening"}','{"text": ""}','{"text": ""}']}}
-fill 252 64 346 252 83 363 minecraft:light_gray_concrete
-setblock 247 64 350 malum:soulwood_totem_base
-setblock 247 65 350 malum:soulwood_log[axis=y]
-kw testworld use 247 65 350 south malum:eldritch_spirit
-execute unless block 247 65 350 malum:soulwood_log
-setblock 247 66 350 malum:soulwood_log[axis=y]
-kw testworld use 247 66 350 south malum:arcane_spirit
-execute unless block 247 66 350 malum:soulwood_log
-setblock 247 67 350 malum:soulwood_log[axis=y]
-kw testworld use 247 67 350 south malum:infernal_spirit
-execute unless block 247 67 350 malum:soulwood_log
-setblock 247 68 350 malum:soulwood_log[axis=y]
-kw testworld use 247 68 350 south malum:infernal_spirit
-execute unless block 247 68 350 malum:soulwood_log
+# 151 theurgy/sal_tank, liquefaction, vessels, array, fermentation
+#area 96 340 155 365
+fill 96 64 340 140 91 365 minecraft:air
+fill 141 64 340 155 91 365 minecraft:air
+fill 96 60 340 155 62 365 minecraft:stone
+fill 96 63 340 155 63 365 minecraft:light_gray_concrete
+fill 100 64 346 155 79 346 minecraft:light_gray_concrete
+fill 100 64 346 100 79 359 minecraft:light_gray_concrete
+setblock 101 64 358 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "151.1"}','{"text": "theurgy"}','{"text": "sal_tank"}','{"text": ""}']}}
+setblock 102 64 358 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Stell Tank und"}','{"text": "Akkumulator auf"}','{"text": ""}','{"text": ""}']}}
+fill 110 64 346 110 79 359 minecraft:light_gray_concrete
+setblock 105 64 351 theurgy:sal_ammoniac_tank
+setblock 105 65 351 theurgy:sal_ammoniac_accumulator
+setblock 111 64 358 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "151.2"}','{"text": "theurgy"}','{"text": "liquefaction"}','{"text": ""}']}}
+setblock 112 64 358 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Löse Sulfur aus"}','{"text": "Raw Iron"}','{"text": ""}','{"text": ""}']}}
+fill 120 64 346 120 79 359 minecraft:light_gray_concrete
+setblock 115 64 351 theurgy:pyromantic_brazier[lit=true]
+setblock 115 65 351 theurgy:liquefaction_cauldron[half=lower,lit=true]
+setblock 115 66 351 theurgy:liquefaction_cauldron[half=upper,lit=true]
+setblock 121 64 358 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "151.3"}','{"text": "theurgy"}','{"text": "vessels"}','{"text": ""}']}}
+setblock 122 64 358 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Stell die drei"}','{"text": "Gefäße auf"}','{"text": ""}','{"text": ""}']}}
+fill 130 64 346 130 79 359 minecraft:light_gray_concrete
+setblock 125 64 351 theurgy:pyromantic_brazier[lit=true]
+setblock 125 65 351 theurgy:incubator[half=lower]
+setblock 125 66 351 theurgy:incubator[half=upper]
+setblock 124 64 351 minecraft:stone_bricks
+setblock 124 65 351 theurgy:incubator_salt_vessel
+setblock 126 64 351 minecraft:stone_bricks
+setblock 126 65 351 theurgy:incubator_sulfur_vessel
+setblock 125 64 350 minecraft:stone_bricks
+setblock 125 65 350 theurgy:incubator_mercury_vessel
+setblock 131 64 358 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "151.4"}','{"text": "theurgy"}','{"text": "array"}','{"text": ""}']}}
+setblock 132 64 358 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Stell drei"}','{"text": "Pedestale auf"}','{"text": ""}','{"text": ""}']}}
+fill 140 64 346 140 79 359 minecraft:light_gray_concrete
+setblock 133 64 351 theurgy:reformation_source_pedestal
+setblock 135 64 350 theurgy:reformation_target_pedestal
+setblock 137 64 351 theurgy:reformation_result_pedestal
+setblock 135 64 353 minecraft:stone_bricks
+setblock 135 65 353 theurgy:sulfuric_flux_emitter[facing=up]
+setblock 141 64 358 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "151.5"}','{"text": "theurgy"}','{"text": "fermentation"}','{"text": ""}']}}
+setblock 142 64 358 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Vergär Sulfur"}','{"text": "zu Niter"}','{"text": ""}','{"text": ""}']}}
+fill 150 64 346 150 79 359 minecraft:light_gray_concrete
+setblock 145 64 351 theurgy:fermentation_vat[facing=south,has_output=false,open=true]
 execute as @e[type=minecraft:item,tag=!kw_shot] run kill @s

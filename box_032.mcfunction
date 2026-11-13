@@ -1,14 +1,14 @@
-# 032 mekanism/configurator
-#area -4 65 15 90
-fill -4 64 65 15 91 90 minecraft:air
-fill -4 60 65 15 62 90 minecraft:stone
-fill -4 63 65 15 63 90 minecraft:light_gray_concrete
-fill 0 64 71 15 79 71 minecraft:light_gray_concrete
-fill 0 64 71 0 79 84 minecraft:light_gray_concrete
-setblock 1 64 83 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "032"}','{"text": "mekanism"}','{"text": "configurator"}','{"text": ""}']}}
-setblock 2 64 83 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "side"}','{"text": "configuration"}','{"text": "tab with auto"}','{"text": "eject"}']}}
-fill 10 64 71 10 79 84 minecraft:light_gray_concrete
-setblock 4 64 76 mekanism:metallurgic_infuser[facing=south]
-setblock 6 64 76 minecraft:smooth_stone_slab
-summon item_display 6.5 64.95 76.5 {item:{id:"mekanism:configurator",count:1},item_display:"fixed",billboard:"vertical",transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[1.0f,1.0f,1.0f]},brightness:{sky:15,block:15},Tags:["kw_shot"]}
+# 032 create_trains/postbox
+#area 298 42 319 67
+fill 298 64 42 319 91 67 minecraft:air
+fill 298 60 42 319 62 67 minecraft:stone
+fill 298 63 42 319 63 67 minecraft:light_gray_concrete
+fill 302 64 48 319 79 48 minecraft:light_gray_concrete
+fill 302 64 48 302 79 61 minecraft:light_gray_concrete
+setblock 303 64 60 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "032"}','{"text": "create_trains"}','{"text": "postbox"}','{"text": ""}']}}
+setblock 304 64 60 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "a postbox next"}','{"text": "to a station"}','{"text": ""}','{"text": ""}']}}
+fill 314 64 48 314 79 61 minecraft:light_gray_concrete
+fill 304 64 53 312 64 53 create:track[shape=xo,turn=false,waterlogged=false]
+setblock 308 64 55 create:track_station
+setblock 310 64 55 create:white_postbox[facing=south,open=false,waterlogged=false]
 execute as @e[type=minecraft:item,tag=!kw_shot] run kill @s

@@ -1,27 +1,45 @@
-# 119 industrial/washing, conveyor
-#area 88 216 119 241
-fill 88 64 216 119 91 241 minecraft:air
-fill 88 60 216 119 62 241 minecraft:stone
-fill 88 63 216 119 63 241 minecraft:light_gray_concrete
-fill 92 64 222 119 79 222 minecraft:light_gray_concrete
-fill 92 64 222 92 79 235 minecraft:light_gray_concrete
-setblock 93 64 234 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "119.1"}','{"text": "industrial"}','{"text": "washing"}','{"text": ""}']}}
-setblock 94 64 234 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "the ore meat"}','{"text": "machines in a"}','{"text": "row, conveyors"}','{"text": "with upgrades,"}']}}
-setblock 95 64 234 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "two"}','{"text": "transporters"}','{"text": ""}','{"text": ""}']}}
-fill 103 64 222 103 79 235 minecraft:light_gray_concrete
-setblock 96 64 227 industrialforegoing:washing_factory[subfacing=south]
-setblock 98 64 227 industrialforegoing:fermentation_station[subfacing=south]
-setblock 100 64 227 industrialforegoing:fluid_sieving_machine[subfacing=south]
-setblock 104 64 234 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "119.2"}','{"text": "industrial"}','{"text": "conveyor"}','{"text": ""}']}}
-setblock 105 64 234 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Leg"}','{"text": "Förderbänder"}','{"text": ""}','{"text": ""}']}}
-fill 114 64 222 114 79 235 minecraft:light_gray_concrete
-setblock 106 64 227 industrialforegoing:conveyor[facing=east,type=flat]
-setblock 107 64 227 industrialforegoing:conveyor[facing=east,type=flat]
-setblock 108 64 227 industrialforegoing:conveyor[facing=east,type=flat]
-setblock 109 64 227 industrialforegoing:conveyor[facing=east,type=flat]
-setblock 110 64 227 industrialforegoing:conveyor[facing=east,type=flat]
-setblock 111 64 227 industrialforegoing:conveyor[facing=east,type=flat]
-summon item 107.5 64.4 227.5 {Item:{id:"minecraft:raw_iron",count:1},PickupDelay:32767,Age:-32768,Tags:["kw_shot"]}
-summon item 109.5 64.4 227.5 {Item:{id:"minecraft:raw_iron",count:1},PickupDelay:32767,Age:-32768,Tags:["kw_shot"]}
-summon item 110.5 64.4 227.5 {Item:{id:"minecraft:raw_iron",count:1},PickupDelay:32767,Age:-32768,Tags:["kw_shot"]}
+# 119 industrial/sower, bio, crusher
+#area 38 216 77 241
+fill 38 64 216 77 91 241 minecraft:air
+fill 38 60 216 77 62 241 minecraft:stone
+fill 38 63 216 77 63 241 minecraft:light_gray_concrete
+fill 42 64 222 77 79 222 minecraft:light_gray_concrete
+fill 42 64 222 42 79 235 minecraft:light_gray_concrete
+setblock 43 64 234 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "119.1"}','{"text": "industrial"}','{"text": "sower"}','{"text": ""}']}}
+setblock 44 64 234 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "the machines at"}','{"text": "work"}','{"text": ""}','{"text": ""}']}}
+fill 52 64 222 52 79 235 minecraft:light_gray_concrete
+setblock 46 64 226 minecraft:oak_log[axis=y]
+setblock 48 64 226 minecraft:oak_log[axis=y]
+setblock 46 64 228 minecraft:oak_log[axis=y]
+setblock 48 64 228 minecraft:oak_log[axis=y]
+setblock 47 64 227 industrialforegoing:plant_sower[subfacing=south]
+fill 46 65 226 48 65 228 minecraft:farmland[moisture=7]
+fill 46 66 226 48 66 228 minecraft:wheat[age=7]
+fill 47 64 225 47 65 225 minecraft:stone_bricks
+setblock 47 66 225 industrialforegoing:plant_gatherer[subfacing=south]
+setblock 53 64 234 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "119.2"}','{"text": "industrial"}','{"text": "bio"}','{"text": ""}']}}
+setblock 54 64 234 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Betreib einen"}','{"text": "Biogenerator"}','{"text": ""}','{"text": ""}']}}
+fill 62 64 222 62 79 235 minecraft:light_gray_concrete
+setblock 57 64 227 industrialforegoing:bioreactor[subfacing=south]
+setblock 63 64 234 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "119.3"}','{"text": "industrial"}','{"text": "crusher"}','{"text": ""}']}}
+setblock 64 64 234 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Stell einen"}','{"text": "Monsterschnetzler"}','{"text": "auf"}','{"text": ""}']}}
+fill 72 64 222 72 79 235 minecraft:light_gray_concrete
+setblock 65 64 226 minecraft:oak_fence
+setblock 65 64 229 minecraft:oak_fence
+setblock 66 64 226 minecraft:oak_fence
+setblock 66 64 229 minecraft:oak_fence
+setblock 67 64 226 minecraft:oak_fence
+setblock 67 64 229 minecraft:oak_fence
+setblock 68 64 226 minecraft:oak_fence
+setblock 68 64 229 minecraft:oak_fence
+setblock 69 64 226 minecraft:oak_fence
+setblock 69 64 229 minecraft:oak_fence
+setblock 65 64 227 minecraft:oak_fence
+setblock 69 64 227 minecraft:oak_fence
+setblock 65 64 228 minecraft:oak_fence
+setblock 69 64 228 minecraft:oak_fence
+summon minecraft:cow 66.5 64 227.5 {NoAI:1b,PersistenceRequired:1b,Silent:1b,Tags:["kw_shot"],Rotation:[180f,0f]}
+summon minecraft:cow 68.5 64 228.5 {NoAI:1b,PersistenceRequired:1b,Silent:1b,Tags:["kw_shot"],Rotation:[180f,0f]}
+setblock 67 64 225 industrialforegoing:mob_crusher[subfacing=south]
+setblock 70 64 227 industrialforegoing:mob_duplicator
 execute as @e[type=minecraft:item,tag=!kw_shot] run kill @s

@@ -1,15 +1,24 @@
-# 116 industrial/frame_simple
-#area 21 216 42 241
-fill 21 64 216 42 91 241 minecraft:air
-fill 21 60 216 42 62 241 minecraft:stone
-fill 21 63 216 42 63 241 minecraft:light_gray_concrete
-fill 25 64 222 42 79 222 minecraft:light_gray_concrete
-fill 25 64 222 25 79 235 minecraft:light_gray_concrete
-setblock 26 64 234 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "116"}','{"text": "industrial"}','{"text": "frame_simple"}','{"text": ""}']}}
-setblock 27 64 234 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "the three frame"}','{"text": "recipes"}','{"text": ""}','{"text": ""}']}}
-fill 37 64 222 37 79 235 minecraft:light_gray_concrete
-setblock 28 64 227 industrialforegoing:machine_frame_pity
-setblock 30 64 227 industrialforegoing:machine_frame_simple
-setblock 32 64 227 industrialforegoing:machine_frame_advanced
-setblock 34 64 227 industrialforegoing:machine_frame_supreme
+# 116 immersive_heavy/hv, survey
+#area 383 181 416 206
+fill 383 64 181 416 95 206 minecraft:air
+fill 383 60 181 416 62 206 minecraft:stone
+fill 383 63 181 416 63 206 minecraft:light_gray_concrete
+fill 387 64 187 416 83 187 minecraft:light_gray_concrete
+fill 387 64 187 387 83 200 minecraft:light_gray_concrete
+setblock 388 64 199 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "116.1"}','{"text": "immersive_heavy"}','{"text": "hv"}','{"text": ""}']}}
+setblock 389 64 199 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "an HV line on"}','{"text": "steel posts,"}','{"text": "the bottling"}','{"text": "machine with"}']}}
+setblock 390 64 199 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "resin, a core"}','{"text": "sample on the"}','{"text": "ground"}','{"text": ""}']}}
+fill 401 64 187 401 83 200 minecraft:light_gray_concrete
+kw testworld use 390 63 192 up immersiveengineering:steel_post
+execute unless block 390 67 192 minecraft:air
+kw testworld use 390 67 192 up immersiveengineering:connector_hv
+kw testworld use 398 63 192 up immersiveengineering:steel_post
+execute unless block 398 67 192 minecraft:air
+kw testworld use 398 67 192 up immersiveengineering:connector_hv
+kw testworld use 390 68 192 south immersiveengineering:wirecoil_steel
+kw testworld use 398 68 192 south immersiveengineering:wirecoil_steel
+setblock 402 64 199 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "116.2"}','{"text": "immersive_heavy"}','{"text": "survey"}','{"text": ""}']}}
+setblock 403 64 199 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Such eine"}','{"text": "Mineralader"}','{"text": ""}','{"text": ""}']}}
+fill 411 64 187 411 83 200 minecraft:light_gray_concrete
+kw testworld use 406 63 192 up immersiveengineering:sample_drill
 execute as @e[type=minecraft:item,tag=!kw_shot] run kill @s

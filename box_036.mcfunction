@@ -1,21 +1,22 @@
-# 036 mekanism_ores/line2
-#area 59 65 79 90
-fill 59 64 65 79 91 90 minecraft:air
-fill 59 60 65 79 62 90 minecraft:stone
-fill 59 63 65 79 63 90 minecraft:light_gray_concrete
-fill 63 64 71 79 79 71 minecraft:light_gray_concrete
-fill 63 64 71 63 79 84 minecraft:light_gray_concrete
-setblock 64 64 83 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "036"}','{"text": "mekanism_ores"}','{"text": "line2"}','{"text": ""}']}}
-setblock 65 64 83 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "chest,"}','{"text": "transporters,"}','{"text": "enrichment"}','{"text": "chamber,"}']}}
-setblock 66 64 83 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "smelter, chest,"}','{"text": "cables"}','{"text": ""}','{"text": ""}']}}
-fill 74 64 71 74 79 84 minecraft:light_gray_concrete
-setblock 65 64 76 minecraft:chest[facing=south]{Items:[]}
-setblock 67 64 76 mekanism:enrichment_chamber[facing=south,active=false]
-setblock 69 64 76 mekanism:energized_smelter[facing=south,active=false]
-setblock 71 64 76 minecraft:chest[facing=south]{Items:[]}
-setblock 66 64 76 mekanism:basic_logistical_transporter
-setblock 68 64 76 mekanism:basic_logistical_transporter
-setblock 70 64 76 mekanism:basic_logistical_transporter
-fill 67 64 75 70 64 75 mekanism:basic_universal_cable
-setblock 71 64 75 mekanism:basic_energy_cube[facing=south]
+# 036 mekanism/ore_line
+#area 41 65 63 90
+fill 41 64 65 63 91 90 minecraft:air
+fill 41 60 65 63 62 90 minecraft:stone
+fill 41 63 65 63 63 90 minecraft:light_gray_concrete
+fill 45 64 71 63 79 71 minecraft:light_gray_concrete
+fill 45 64 71 45 79 84 minecraft:light_gray_concrete
+setblock 46 64 83 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "036"}','{"text": "mekanism"}','{"text": "ore_line"}','{"text": ""}']}}
+setblock 47 64 83 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "the steel line"}','{"text": "from enrichment"}','{"text": "chamber to the"}','{"text": "obelisk chest"}']}}
+fill 58 64 71 58 79 84 minecraft:light_gray_concrete
+setblock 47 64 76 minecraft:chest[facing=south]{Items:[]}
+setblock 49 64 76 mekanism:basic_infusing_factory[facing=south,active=false]
+setblock 51 64 76 mekanism:basic_infusing_factory[facing=south,active=false]
+setblock 53 64 76 mekanism:basic_smelting_factory[facing=south,active=false]
+setblock 55 64 76 minecraft:chest[facing=south]{Items:[]}
+setblock 48 64 76 mekanism:basic_logistical_transporter
+setblock 50 64 76 mekanism:basic_logistical_transporter
+setblock 52 64 76 mekanism:basic_logistical_transporter
+setblock 54 64 76 mekanism:basic_logistical_transporter
+fill 49 64 75 54 64 75 mekanism:basic_universal_cable
+setblock 55 64 75 mekanism:basic_energy_cube[facing=south]
 execute as @e[type=minecraft:item,tag=!kw_shot] run kill @s

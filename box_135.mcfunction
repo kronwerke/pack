@@ -1,55 +1,76 @@
-# 135 hostile_networks/sim_chamber, scaling, data_center
-#area 285 277 328 304
-fill 285 64 277 320 95 304 minecraft:air
-fill 321 64 277 328 95 304 minecraft:air
-fill 285 60 277 328 62 304 minecraft:stone
-fill 285 63 277 328 63 304 minecraft:light_gray_concrete
-fill 289 64 283 328 83 283 minecraft:light_gray_concrete
-fill 289 64 283 289 83 298 minecraft:light_gray_concrete
-setblock 290 64 297 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "135.1"}','{"text": "hostile_networks"}','{"text": "sim_chamber"}','{"text": ""}']}}
-setblock 291 64 297 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Die"}','{"text": "Simulationskammer"}','{"text": ""}','{"text": ""}']}}
-fill 299 64 283 299 83 298 minecraft:light_gray_concrete
-setblock 293 64 288 hostilenetworks:sim_chamber[facing=south]
-setblock 295 64 288 hostilenetworks:loot_fabricator[facing=south]
-setblock 300 64 297 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "135.2"}','{"text": "hostile_networks"}','{"text": "scaling"}','{"text": ""}']}}
-setblock 301 64 297 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Viele Kammern,"}','{"text": "ein Modell je"}','{"text": "Kammer"}','{"text": ""}']}}
-fill 311 64 283 311 83 298 minecraft:light_gray_concrete
-setblock 302 64 288 hostilenetworks:sim_chamber[facing=south]
-setblock 303 64 288 hostilenetworks:sim_chamber[facing=south]
-setblock 304 64 288 hostilenetworks:sim_chamber[facing=south]
-setblock 305 64 288 hostilenetworks:sim_chamber[facing=south]
-setblock 306 64 288 hostilenetworks:sim_chamber[facing=south]
-setblock 307 64 288 hostilenetworks:sim_chamber[facing=south]
-setblock 308 64 288 hostilenetworks:sim_chamber[facing=south]
-setblock 305 64 290 hostilenetworks:loot_fabricator[facing=south]
-setblock 312 64 297 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "135.3"}','{"text": "hostile_networks"}','{"text": "data_center"}','{"text": ""}']}}
-setblock 313 64 297 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Das"}','{"text": "Rechenzentrum"}','{"text": ""}','{"text": ""}']}}
-fill 323 64 283 323 83 298 minecraft:light_gray_concrete
-fill 314 64 286 320 64 292 minecraft:obsidian
-fill 314 70 286 320 70 292 minecraft:black_stained_glass
-fill 314 65 286 314 69 286 minecraft:black_stained_glass
-fill 314 65 287 314 69 287 minecraft:black_stained_glass
-fill 314 65 288 314 69 288 minecraft:black_stained_glass
-fill 314 65 289 314 69 289 minecraft:black_stained_glass
-fill 314 65 290 314 69 290 minecraft:black_stained_glass
-fill 314 65 291 314 69 291 minecraft:black_stained_glass
-fill 314 65 292 314 69 292 minecraft:black_stained_glass
-fill 315 65 286 315 69 286 minecraft:black_stained_glass
-fill 315 65 292 315 69 292 minecraft:black_stained_glass
-fill 316 65 286 316 69 286 minecraft:black_stained_glass
-fill 316 65 292 316 69 292 minecraft:black_stained_glass
-fill 317 65 286 317 69 286 minecraft:black_stained_glass
-fill 317 65 292 317 69 292 minecraft:black_stained_glass
-fill 318 65 286 318 69 286 minecraft:black_stained_glass
-fill 318 65 292 318 69 292 minecraft:black_stained_glass
-fill 319 65 286 319 69 286 minecraft:black_stained_glass
-fill 319 65 292 319 69 292 minecraft:black_stained_glass
-fill 320 65 286 320 69 286 minecraft:black_stained_glass
-fill 320 65 287 320 69 287 minecraft:black_stained_glass
-fill 320 65 288 320 69 288 minecraft:black_stained_glass
-fill 320 65 289 320 69 289 minecraft:black_stained_glass
-fill 320 65 290 320 69 290 minecraft:black_stained_glass
-fill 320 65 291 320 69 291 minecraft:black_stained_glass
-fill 320 65 292 320 69 292 minecraft:black_stained_glass
-setblock 317 65 292 hostilenetworks:data_center[facing=south]
+# 135 pneumaticcraft/chamber, refinery, vortex, elevator, safety, plastic, etching
+#area 115 277 194 306
+fill 115 64 277 148 95 306 minecraft:air
+fill 149 64 277 182 95 306 minecraft:air
+fill 183 64 277 194 95 306 minecraft:air
+fill 115 60 277 194 62 306 minecraft:stone
+fill 115 63 277 194 63 306 minecraft:light_gray_concrete
+fill 119 64 283 194 83 283 minecraft:light_gray_concrete
+fill 119 64 283 119 83 300 minecraft:light_gray_concrete
+setblock 120 64 299 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "135.1"}','{"text": "pneumaticcraft"}','{"text": "chamber"}','{"text": ""}']}}
+setblock 121 64 299 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Setz die"}','{"text": "Druckkammer"}','{"text": "zusammen"}','{"text": ""}']}}
+fill 129 64 283 129 83 300 minecraft:light_gray_concrete
+setblock 123 64 287 pneumaticcraft:pressure_chamber_wall[wall_state=none]
+setblock 123 64 288 pneumaticcraft:pressure_chamber_wall[wall_state=none]
+setblock 123 64 289 pneumaticcraft:pressure_chamber_wall[wall_state=none]
+setblock 123 65 287 pneumaticcraft:pressure_chamber_wall[wall_state=none]
+setblock 123 65 288 pneumaticcraft:pressure_chamber_interface[facing=west]
+setblock 123 65 289 pneumaticcraft:pressure_chamber_wall[wall_state=none]
+setblock 123 66 287 pneumaticcraft:pressure_chamber_wall[wall_state=none]
+setblock 123 66 288 pneumaticcraft:pressure_chamber_wall[wall_state=none]
+setblock 124 64 287 pneumaticcraft:pressure_chamber_wall[wall_state=none]
+setblock 124 64 288 pneumaticcraft:pressure_chamber_glass
+setblock 124 64 289 pneumaticcraft:pressure_chamber_wall[wall_state=none]
+setblock 124 65 287 pneumaticcraft:pressure_chamber_glass
+setblock 124 65 289 pneumaticcraft:pressure_chamber_glass
+setblock 124 66 287 pneumaticcraft:pressure_chamber_wall[wall_state=none]
+setblock 124 66 288 pneumaticcraft:pressure_chamber_glass
+setblock 124 66 289 pneumaticcraft:pressure_chamber_wall[wall_state=none]
+setblock 125 64 287 pneumaticcraft:pressure_chamber_wall[wall_state=none]
+setblock 125 64 288 pneumaticcraft:pressure_chamber_wall[wall_state=none]
+setblock 125 64 289 pneumaticcraft:pressure_chamber_wall[wall_state=none]
+setblock 125 65 287 pneumaticcraft:pressure_chamber_wall[wall_state=none]
+setblock 125 65 288 pneumaticcraft:pressure_chamber_valve[facing=east,formed=false]
+setblock 125 65 289 pneumaticcraft:pressure_chamber_wall[wall_state=none]
+setblock 125 66 287 pneumaticcraft:pressure_chamber_wall[wall_state=none]
+setblock 125 66 288 pneumaticcraft:pressure_chamber_wall[wall_state=none]
+setblock 125 66 289 pneumaticcraft:pressure_chamber_wall[wall_state=none]
+kw testworld use 123 65 289 up pneumaticcraft:pressure_chamber_wall
+execute if block 125 65 288 pneumaticcraft:pressure_chamber_valve[formed=true]
+setblock 130 64 299 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "135.2"}','{"text": "pneumaticcraft"}','{"text": "refinery"}','{"text": ""}']}}
+setblock 131 64 299 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Bau die"}','{"text": "Raffinerie"}','{"text": ""}','{"text": ""}']}}
+fill 139 64 283 139 83 300 minecraft:light_gray_concrete
+setblock 134 64 287 pneumaticcraft:refinery[facing=south]
+setblock 134 65 287 pneumaticcraft:refinery_output[facing=south]
+setblock 134 66 287 pneumaticcraft:refinery_output[facing=south]
+setblock 134 67 287 pneumaticcraft:refinery_output[facing=south]
+setblock 134 68 287 pneumaticcraft:refinery_output[facing=south]
+setblock 140 64 299 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "135.3"}','{"text": "pneumaticcraft"}','{"text": "vortex"}','{"text": ""}']}}
+setblock 141 64 299 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Bau ein"}','{"text": "Wirbelrohr"}','{"text": ""}','{"text": ""}']}}
+fill 149 64 283 149 83 300 minecraft:light_gray_concrete
+setblock 143 64 288 pneumaticcraft:pressure_tube
+setblock 144 64 288 pneumaticcraft:pressure_tube
+setblock 145 64 288 pneumaticcraft:vortex_tube[facing=east]
+setblock 150 64 299 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "135.4"}','{"text": "pneumaticcraft"}','{"text": "elevator"}','{"text": ""}']}}
+setblock 151 64 299 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Bau einen"}','{"text": "Aufzug"}','{"text": ""}','{"text": ""}']}}
+fill 159 64 283 159 83 300 minecraft:light_gray_concrete
+setblock 154 64 287 pneumaticcraft:elevator_base
+fill 154 65 287 154 68 287 pneumaticcraft:elevator_frame
+fill 155 64 287 155 67 287 minecraft:stone_bricks
+setblock 155 68 287 pneumaticcraft:elevator_caller[facing=south]
+setblock 160 64 299 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "135.5"}','{"text": "pneumaticcraft"}','{"text": "safety"}','{"text": ""}']}}
+setblock 161 64 299 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Setz ein"}','{"text": "Sicherheitsventil"}','{"text": ""}','{"text": ""}']}}
+fill 169 64 283 169 83 300 minecraft:light_gray_concrete
+fill 163 64 288 165 64 288 pneumaticcraft:pressure_tube
+kw testworld use 163 64 288 up pneumaticcraft:safety_tube_module
+kw testworld use 165 64 288 up pneumaticcraft:pressure_gauge_module
+setblock 170 64 299 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "135.6"}','{"text": "pneumaticcraft"}','{"text": "plastic"}','{"text": ""}']}}
+setblock 171 64 299 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Koch Kunststoff"}','{"text": ""}','{"text": ""}','{"text": ""}']}}
+fill 179 64 283 179 83 300 minecraft:light_gray_concrete
+setblock 174 64 288 minecraft:magma_block
+setblock 174 65 288 pneumaticcraft:thermopneumatic_processing_plant[facing=south]
+setblock 180 64 299 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "135.7"}','{"text": "pneumaticcraft"}','{"text": "etching"}','{"text": ""}']}}
+setblock 181 64 299 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Ätze die"}','{"text": "Platine"}','{"text": ""}','{"text": ""}']}}
+fill 189 64 283 189 83 300 minecraft:light_gray_concrete
+setblock 184 64 288 pneumaticcraft:etching_tank
 execute as @e[type=minecraft:item,tag=!kw_shot] run kill @s

@@ -1,12 +1,19 @@
-# 064 ars_master/ritual_awakening
-#area 212 88 231 113
-fill 212 64 88 231 91 113 minecraft:air
-fill 212 60 88 231 62 113 minecraft:stone
-fill 212 63 88 231 63 113 minecraft:light_gray_concrete
-fill 216 64 94 231 79 94 minecraft:light_gray_concrete
-fill 216 64 94 216 79 107 minecraft:light_gray_concrete
-setblock 217 64 106 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "064"}','{"text": "ars_master"}','{"text": "ritual_awakening"}','{"text": ""}']}}
-setblock 218 64 106 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "a Weald Walker"}','{"text": ""}','{"text": ""}','{"text": ""}']}}
-fill 226 64 94 226 79 107 minecraft:light_gray_concrete
-summon ars_nouveau:cascading_weald_walker 221.5 64 99.5 {NoAI:1b,PersistenceRequired:1b,Silent:1b,Tags:["kw_shot"],Rotation:[180f,0f]}
+# 064 ars_master/wilden_ritual
+#area 197 88 216 113
+fill 197 64 88 216 91 113 minecraft:air
+fill 197 60 88 216 62 113 minecraft:stone
+fill 197 63 88 216 63 113 minecraft:light_gray_concrete
+fill 201 64 94 216 79 94 minecraft:light_gray_concrete
+fill 201 64 94 201 79 107 minecraft:light_gray_concrete
+setblock 202 64 106 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "064"}','{"text": "ars_master"}','{"text": "wilden_ritual"}','{"text": ""}']}}
+setblock 203 64 106 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "brazier with"}','{"text": "spike, horn and"}','{"text": "wing"}','{"text": ""}']}}
+fill 211 64 94 211 79 107 minecraft:light_gray_concrete
+setblock 206 64 99 ars_nouveau:ritual_brazier
+kw testworld use 206 64 99 up ars_nouveau:ritual_wilden_summon
+setblock 204 64 99 ars_nouveau:arcane_pedestal[facing=up]
+kw testworld use 204 64 99 south ars_nouveau:wilden_spike
+setblock 208 64 99 ars_nouveau:arcane_pedestal[facing=up]
+kw testworld use 208 64 99 south ars_nouveau:wilden_horn
+setblock 206 64 97 ars_nouveau:arcane_pedestal[facing=up]
+kw testworld use 206 64 97 south ars_nouveau:wilden_wing
 execute as @e[type=minecraft:item,tag=!kw_shot] run kill @s

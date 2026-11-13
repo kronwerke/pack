@@ -1,21 +1,14 @@
-# 105 immersive/blast_furnace, improved_form
-#area 26 181 55 207
-fill 26 64 181 55 91 207 minecraft:air
-fill 26 60 181 55 62 207 minecraft:stone
-fill 26 63 181 55 63 207 minecraft:light_gray_concrete
-fill 30 64 187 55 79 187 minecraft:light_gray_concrete
-fill 30 64 187 30 79 201 minecraft:light_gray_concrete
-setblock 31 64 200 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "105.1"}','{"text": "immersive"}','{"text": "blast_furnace"}','{"text": ""}']}}
-setblock 32 64 200 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "crude blast"}','{"text": "furnace GUI,"}','{"text": "improved"}','{"text": "furnace with"}']}}
-setblock 33 64 200 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "hopper and"}','{"text": "preheaters"}','{"text": ""}','{"text": ""}']}}
-fill 40 64 187 40 79 201 minecraft:light_gray_concrete
-place template immersiveengineering:multiblocks/blast_furnace 34 64 190 none
-kw testworld use 35 65 192 south immersiveengineering:hammer
-execute unless block 35 65 192 immersiveengineering:blastbrick
-setblock 41 64 200 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "105.2"}','{"text": "immersive"}','{"text": "improved_form"}','{"text": ""}']}}
-setblock 42 64 200 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Form einen"}','{"text": "Verbesserten"}','{"text": "Hochofen"}','{"text": ""}']}}
-fill 50 64 187 50 79 201 minecraft:light_gray_concrete
-place template immersiveengineering:multiblocks/improved_blast_furnace 44 64 190 none
-kw testworld use 45 65 192 south immersiveengineering:hammer
-execute unless block 45 65 192 immersiveengineering:blastbrick_reinforced
+# 105 immersive/hammer
+#area -4 181 15 206
+fill -4 64 181 15 91 206 minecraft:air
+fill -4 60 181 15 62 206 minecraft:stone
+fill -4 63 181 15 63 206 minecraft:light_gray_concrete
+fill 0 64 187 15 79 187 minecraft:light_gray_concrete
+fill 0 64 187 0 79 200 minecraft:light_gray_concrete
+setblock 1 64 199 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "105"}','{"text": "immersive"}','{"text": "hammer"}','{"text": ""}']}}
+setblock 2 64 199 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "right-clicking"}','{"text": "a structure"}','{"text": "with the hammer"}','{"text": ""}']}}
+fill 10 64 187 10 79 200 minecraft:light_gray_concrete
+place template immersiveengineering:multiblocks/coke_oven 4 64 190 none
+setblock 5 64 194 minecraft:smooth_stone_slab
+summon item_display 5.5 65.04 194.5 {item:{id:"immersiveengineering:hammer",count:1},item_display:"fixed",billboard:"vertical",transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[1.2f,1.2f,1.2f]},brightness:{sky:15,block:15},Tags:["kw_shot"]}
 execute as @e[type=minecraft:item,tag=!kw_shot] run kill @s

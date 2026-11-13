@@ -1,24 +1,32 @@
-# 114 immersive_heavy/hv, survey
-#area 383 181 416 206
-fill 383 64 181 416 95 206 minecraft:air
-fill 383 60 181 416 62 206 minecraft:stone
-fill 383 63 181 416 63 206 minecraft:light_gray_concrete
-fill 387 64 187 416 83 187 minecraft:light_gray_concrete
-fill 387 64 187 387 83 200 minecraft:light_gray_concrete
-setblock 388 64 199 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "114.1"}','{"text": "immersive_heavy"}','{"text": "hv"}','{"text": ""}']}}
-setblock 389 64 199 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "an HV line on"}','{"text": "steel posts,"}','{"text": "the bottling"}','{"text": "machine with"}']}}
-setblock 390 64 199 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "resin, a core"}','{"text": "sample on the"}','{"text": "ground"}','{"text": ""}']}}
-fill 401 64 187 401 83 200 minecraft:light_gray_concrete
-kw testworld use 390 63 192 up immersiveengineering:steel_post
-execute unless block 390 67 192 minecraft:air
-kw testworld use 390 67 192 up immersiveengineering:connector_hv
-kw testworld use 398 63 192 up immersiveengineering:steel_post
-execute unless block 398 67 192 minecraft:air
-kw testworld use 398 67 192 up immersiveengineering:connector_hv
-kw testworld use 390 68 192 south immersiveengineering:wirecoil_steel
-kw testworld use 398 68 192 south immersiveengineering:wirecoil_steel
-setblock 402 64 199 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "114.2"}','{"text": "immersive_heavy"}','{"text": "survey"}','{"text": ""}']}}
-setblock 403 64 199 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Such eine"}','{"text": "Mineralader"}','{"text": ""}','{"text": ""}']}}
-fill 411 64 187 411 83 200 minecraft:light_gray_concrete
-kw testworld use 406 63 192 up immersiveengineering:sample_drill
+# 114 immersive/list_mb
+#area 204 181 232 209
+fill 204 64 181 232 95 209 minecraft:air
+fill 204 60 181 232 62 209 minecraft:stone
+fill 204 63 181 232 63 209 minecraft:light_gray_concrete
+fill 208 64 187 232 83 187 minecraft:light_gray_concrete
+fill 208 64 187 208 83 203 minecraft:light_gray_concrete
+setblock 209 64 202 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "114"}','{"text": "immersive"}','{"text": "list_mb"}','{"text": ""}']}}
+setblock 210 64 202 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "all seven stage"}','{"text": "2 structures"}','{"text": "side by side"}','{"text": ""}']}}
+fill 227 64 187 227 83 203 minecraft:light_gray_concrete
+place template immersiveengineering:multiblocks/sheetmetal_tank 210 64 189 none
+kw testworld use 211 65 191 south immersiveengineering:hammer
+execute unless block 211 65 191 immersiveengineering:sheetmetal_iron
+place template immersiveengineering:multiblocks/silo 214 64 189 none
+kw testworld use 215 65 191 south immersiveengineering:hammer
+execute unless block 215 65 191 immersiveengineering:sheetmetal_iron
+place template immersiveengineering:multiblocks/improved_blast_furnace 218 64 189 none
+kw testworld use 219 65 191 south immersiveengineering:hammer
+execute unless block 219 65 191 immersiveengineering:blastbrick_reinforced
+place template immersiveengineering:multiblocks/shelf 222 64 189 none
+kw testworld use 223 65 190 south immersiveengineering:hammer
+execute unless block 223 65 190 immersiveengineering:steel_catwalk
+place template immersiveengineering:multiblocks/coke_oven 212 64 195 none
+kw testworld use 213 65 197 south immersiveengineering:hammer
+execute unless block 213 65 197 immersiveengineering:cokebrick
+place template immersiveengineering:multiblocks/blast_furnace 217 64 195 none
+kw testworld use 218 65 197 south immersiveengineering:hammer
+execute unless block 218 65 197 immersiveengineering:blastbrick
+place template immersiveengineering:multiblocks/alloy_smelter 222 64 195 none
+kw testworld use 223 65 196 south immersiveengineering:hammer
+execute unless block 223 65 196 immersiveengineering:alloybrick
 execute as @e[type=minecraft:item,tag=!kw_shot] run kill @s

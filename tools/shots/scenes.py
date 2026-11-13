@@ -2663,3 +2663,98 @@ def _(b):
         b.b(x, 1, 4, "laserio:laser_node")
     b.use(2, 1, 4, "south", "laserio:laser_wrench")
     b.use(6, 1, 4, "south", "laserio:laser_wrench")
+
+
+# ===================================================================================
+# Eighteenth batch: a pen, a breeding station, the steel line, channels, a chain
+
+@scene("farms/animals_thorn")
+def _(b):
+    # a pen with a dreadthorne in it and the mana pool it drinks from: grown animals die, calves stay
+    stage(b, 2, 2, 6, 6, "minecraft:grass_block[snowy=false]")
+    for x in range(2, 7):
+        for z in (2, 6):
+            b.b(x, 0, z, "minecraft:oak_fence")
+    for z in (3, 4, 5):
+        b.b(2, 0, z, "minecraft:oak_fence")
+        b.b(6, 0, z, "minecraft:oak_fence")
+    b.b(4, 0, 4, "botania:dreadthorne")
+    b.m("minecraft:cow", 3, 0, 5)
+    b.m("minecraft:cow", 5, 0, 3, nbt="Age:-24000")
+    pool(b, 7, 0, 4, mana=200000)
+
+
+@scene("alfheim/pure_essence")
+def _(b):
+    # end stone around the pure daisy: it becomes cobbled deepslate and gives off the essence
+    b.b(4, -1, 4, "minecraft:grass_block[snowy=false]")
+    b.b(4, 0, 4, "botania:pure_daisy")
+    for dx in (-1, 0, 1):
+        for dz in (-1, 0, 1):
+            if dx or dz:
+                b.b(4 + dx, 0, 4 + dz, "minecraft:cobbled_deepslate" if (dx, dz) in ((0, -1), (1, 1)) else "minecraft:end_stone")
+    b.pitch = 62.0
+
+
+def small_tree(b, x, z, wood):
+    """A young Productive Trees tree: three logs and a crown."""
+    b.f(x, 0, z, x, 2, z, f"productivetrees:{wood}_log[axis=y]")
+    for y, r in ((2, 1), (3, 1), (4, 0)):
+        for xx in range(x - r, x + r + 1):
+            for zz in range(z - r, z + r + 1):
+                if (xx, zz) != (x, z) or y > 2:
+                    b.b(xx, y, zz, f"productivetrees:{wood}_leaves")
+
+
+@scene("productive_trees/station", w=11, h=14)
+def _(b):
+    # a beehive between an aspen and a beech, flowers beside it: each bee that comes home may cross the two
+    stage(b, 1, 2, 9, 6, "minecraft:grass_block[snowy=false]")
+    small_tree(b, 2, 4, "aspen")
+    small_tree(b, 8, 4, "beech")
+    b.b(5, 0, 4, "minecraft:oak_fence")
+    b.b(5, 1, 4, "minecraft:beehive[facing=south,honey_level=0]")
+    for x, z, flower in ((4, 5, "minecraft:poppy"), (6, 5, "minecraft:dandelion"), (5, 6, "minecraft:cornflower")):
+        b.b(x, 0, z, flower)
+
+
+@scene("mekanism/ore_line", w=12)
+def _(b):
+    # the steel line: chest, infusing factory (enriched iron), infusing factory (steel dust),
+    # smelting factory, chest, a transporter between each and a cable behind them
+    z = 4
+    b.c(1, 0, z, [], frame=True)
+    b.b(3, 0, z, "mekanism:basic_infusing_factory[facing=south,active=false]")
+    b.b(5, 0, z, "mekanism:basic_infusing_factory[facing=south,active=false]")
+    b.b(7, 0, z, "mekanism:basic_smelting_factory[facing=south,active=false]")
+    b.c(9, 0, z, [], frame=True)
+    for x in (2, 4, 6, 8):
+        b.b(x, 0, z, "mekanism:basic_logistical_transporter")
+    b.f(3, 0, z - 1, 8, 0, z - 1, "mekanism:basic_universal_cable")
+    b.b(9, 0, z - 1, "mekanism:basic_energy_cube[facing=south]")
+
+
+@scene("ae2/channels", w=11)
+def _(b):
+    # a tree: dense cable is the branch from the controller, smart cable the twigs, a drive at each twig's end
+    b.b(2, -1, 4, "ae2:creative_energy_cell")
+    b.b(2, 0, 4, "ae2:controller")
+    for x in (2, 2, 3, 4, 5, 6):
+        b.use(x, 0, 4, "east", "ae2:fluix_covered_dense_cable")
+    for x in (4, 7):
+        b.use(x, 0, 4, "south", "ae2:fluix_smart_cable")
+        b.use(x, 0, 5, "south", "ae2:fluix_smart_cable")
+        b.b(x, 0, 7, "ae2:drive[facing=south,spin=0]")
+        b.use(x, 0, 4, "north", "ae2:fluix_smart_cable")
+        b.b(x, 0, 2, "ae2:drive[facing=south,spin=0]")
+    b.focus(2, 0, 2, 7, 1, 7)
+
+
+@scene("create/frogport", w=11, h=14)
+def _(b):
+    # two chain conveyors on turning shafts, a chain between them, a frogport beside the chain
+    for x, other in ((2, 6), (8, -6)):
+        b.b(x, 2, 4, "create:chain_conveyor", f"{{Connections:[[I;{other},0,0]]}}")
+        drive_from_below(b, x, 2, 4)
+    b.f(5, 0, 5, 5, 1, 5, "minecraft:stone_bricks")
+    b.b(5, 2, 5, "create:package_frogport")

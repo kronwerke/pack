@@ -12,6 +12,8 @@ How a scene is made:
 
 On the server: `/kw testworld pull` fetches the branch, `/kw testworld apply` builds it (what failed is in the `.log` next to each file under `kronwerke/shots/world`), `/kw cam run` takes the pictures, `/kw testworld` takes an operator there to look.
 
+A run goes twice: the first pass only wakes the scenes (a belt learns its length and a network starts to turn when a player comes near for the first time), the second pass takes the pictures. `/kw cam sheet <tag>` packs contact sheets of a run to look through; `/kw cam bundle <tag>` packs the pictures themselves. A picture goes into the book when its subject stands whole in the frame, formed and working, the way the quest's reader will see it: it is copied to `kubejs/assets/kronwerke/textures/quests/shots/<chapter>_<quest>.png`, and the quest generator puts it on top of the quest's text.
+
 Chapters without a list here (most of the stage 1 gap chapters from the first wave) work without pictures for now.
 
 ## Start

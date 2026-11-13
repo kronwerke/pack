@@ -1708,5 +1708,6 @@ for _again, _first in (("list_transport/belt", "create/belt"), ("list_transport/
                        ("list_power/ie_thermo", "immersive/thermoelectric"), ("list_dimensions/r_mekanism", "mekanism_advanced/teleporter"),
                        ("list_power/draconic_core", "draconic/tiers"), ("list_transport/ie_wire", "immersive/connectors"),
                        ("list_transport/mek_transporter", "mekanism_ores/line2"), ("list_power/flux", "flux_networks/first_link"),
-                       ("powah/rods", "powah/orb")):
+                       ("powah/rods", "powah/orb"), ("list_dimensions/d_nether", "nether/welcome"),
+                       ("list_dimensions/d_alfheim", "alfheim/open"), ("list_dimensions/d_end", "the_end/arrival")):
     SCENES[_again] = SCENES[_first]

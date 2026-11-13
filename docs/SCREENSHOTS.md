@@ -261,7 +261,7 @@ Chapters without a list here (most of the stage 1 gap chapters from the first wa
 - deeper_darker/portal, arrival, deeplands, echoing_forest, blooming_caverns, overcast_columns, temple, transmitter, resonarium, stalker, echo_shard
 - undergarden/arrival, catacombs, guardian, forgotten, depths, infuser, b_cold
 - eternal_starlight/orb, portal, starfire, desert, forge, golem, garden, monstrosity
-- list_dimensions/d_mining, d_aether, d_undergarden, d_otherside, r_plates, r_mekanism, r_enderio, r_chunks
+- list_dimensions/d_mining, d_nether, d_aether, d_undergarden, d_otherside, d_alfheim, d_end, r_plates, r_mekanism, r_enderio, r_chunks
 - productive_trees/first_tree, mega, pots, sawmill_run, stripper, wood_set, station, pollinated, loot_saplings, amber, time_traveller
 
 ## Late game

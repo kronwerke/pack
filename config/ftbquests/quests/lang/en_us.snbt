@@ -13431,6 +13431,7 @@
 	quest.3B5313E3CE0CBCDE.quest_subtitle: "Kommt in Stufe 4. 25 Modelle, ein Block, tausende Drops."
 	quest.3B5313E3CE0CBCDE.title: "&5&lDas Rechenzentrum"
 	quest.3B554A689296B483.quest_desc: [
+		"{image:kronwerke:textures/quests/shots/create_trains_first_train.png width:224 height:126 align:center}"
 		"&e1.&r Bahnhof in den Montagemodus. &e2.&r Drehgestelle aufs Gleis. &e3.&r Zug darauf bauen, Zugsteuerung nicht vergessen. &e4.&r Alles verkleben. &e5.&r Im Bahnhofsmenü zusammenbauen."
 		""
 		"Wagen, Sitze, Kisten, Deko: was auf den Drehgestellen klebt, fährt mit."
@@ -17239,6 +17240,7 @@
 	quest.4BE024A205775B96.quest_subtitle: "Your first real power source."
 	quest.4BE024A205775B96.title: "&6Put a water wheel into the stream"
 	quest.4BE1ED568848DAC9.quest_desc: [
+		"{image:kronwerke:textures/quests/shots/create_brass_pg_generator.png width:224 height:126 align:center}"
 		"Crafter recipe: &6pins&r (two copper nuggets), two &6coal&r, &6copper sheet&r, two &6andesite alloys&r, &6shaft&r and &6andesite casing&r make the &6generator collector&r. It goes at the end of the rotor, 8 SU per RPM."
 		""
 		"The load goes on its terminals. For power to be made, the stator needs an &dexcitation current&r, for example through an adapter from another source."
@@ -17248,6 +17250,7 @@
 	quest.4BE1ED568848DAC9.quest_subtitle: "The generator supplies voltage."
 	quest.4BE1ED568848DAC9.title: "&3&lConnect the collector"
 	quest.4BE4170AF0226CEE.quest_desc: [
+		"{image:kronwerke:textures/quests/shots/create_brass_pg_magnet.png width:224 height:126 align:center}"
 		"&6Conductive casing&r, five &6copper coils&r and an &6iron sheet&r make the &6electromagnet&r. With power it magnetises &6andesite alloy&r on a depot or belt below."
 		"{image:powergrid:textures/item/magnet.png width:32 height:32 align:center}"
 		"That is why the motor only comes after the generator."
@@ -17995,6 +17998,7 @@
 	quest.4EE32856F3E9D1B0.quest_subtitle: "Fünf Bruchstein für einen Barren."
 	quest.4EE32856F3E9D1B0.title: "&6Brenn Strata zu Mineral Salt"
 	quest.4EEACBE873E2B758.quest_desc: [
+		"{image:kronwerke:textures/quests/shots/create_trains_cargo.png width:224 height:126 align:center}"
 		"Eine &6Portable Lagerschnittstelle&r am Wagen, eine am Bahnsteig, gegenüber, wenn der Zug hält. Kisten oder &6Tresore&r auf dem Zug sind das Frachtlager."
 		""
 		"Eine Schleuse an der festen Schnittstelle entlädt ins Lager oder befüllt den Zug, je nachdem, wie herum sie sitzt."
@@ -19618,6 +19622,7 @@
 	quest.56B7D8A29D5AB2C9.quest_subtitle: "Bleib weg vom Lila."
 	quest.56B7D8A29D5AB2C9.title: "&5Lern, was er tut"
 	quest.56BA74D32B562B28.quest_desc: [
+		"{image:kronwerke:textures/quests/shots/create_brass_pg_winding.png width:224 height:126 align:center}"
 		"Lay &6shafts&r next to the rotor and click two of them with a &6copper coil&r: they become a &6winding&r. Windings next to each other connect in series."
 		""
 		"A &6generator casing&r (iron sheets, copper sheet, conductive casing) connects windings around a corner."
@@ -21550,6 +21555,7 @@
 	quest.5F58611AAEBAD0CD.quest_subtitle: "The first Manasteel grows on a tree."
 	quest.5F58611AAEBAD0CD.title: "&aPerform the Ritual of the Forest"
 	quest.5F7DAA47C968585F.quest_desc: [
+		"{image:kronwerke:textures/quests/shots/create_trains_conductor.png width:224 height:126 align:center}"
 		"Setz einen Mob auf den Sitz vor der Zugsteuerung, oder stell einen &6Lohenbrenner&r an dieselbe Stelle. Rechtsklicke ihn mit dem Fahrplan: er übernimmt."
 		""
 		"Die Lohe ist der beliebteste Schaffner, sie braucht nichts und läuft nicht weg. Einen Mob an der Leine setzt du per Klick auf den Sitz."
@@ -23517,6 +23523,7 @@
 	quest.6805824C4E127F95.quest_subtitle: "Mekanism: Portable Teleporter."
 	quest.6805824C4E127F95.title: "&dTrag einen Teleporter in der Tasche"
 	quest.68131C46039879E9.quest_desc: [
+		"{image:kronwerke:textures/quests/shots/create_brass_pg_generator.png width:224 height:126 align:center}"
 		"&6Rheostat&r: coal, shaft, five &6resistor coils&r (four iron wire and a stick) and a conductive casing. Wire collector and windings plus to plus, minus to minus, with the rheostat in between."
 		""
 		"That only works in one direction of rotation, with the right resistance and at enough speed. The rheostat sets the resistance by rotation."
@@ -23679,6 +23686,7 @@
 	quest.68DB324F17A467F3.quest_subtitle: "Laufwerk, Strom, Konsole, Kabel."
 	quest.68DB324F17A467F3.title: "&b&lSchließ dein erstes Netz an"
 	quest.68E11E26D9DEED7A.quest_desc: [
+		"{image:kronwerke:textures/quests/shots/create_brass_boiler.png width:224 height:126 align:center}"
 		"Place &64 Steam Engines&r on a big boiler and &64 Blaze Burners&r below. The Engineer's Goggles show the &eboiler level&r and what is missing: heat, water or size."
 		""
 		"Every heated burner counts one level of heat, a superheated one two. The smallest of the three values sets the level, and every level lets one more engine run at full power."
@@ -23785,6 +23793,7 @@
 	quest.696F84A6E32481C2.quest_subtitle: "Spawn-Eier von Monstern."
 	quest.696F84A6E32481C2.title: "&aCapturing"
 	quest.69720528BCB75EF8.quest_desc: [
+		"{image:kronwerke:textures/quests/shots/create_stock_ticker.png width:224 height:126 align:center}"
 		"&6Glass&r, &6Stock Link&r and &6gold ingot&r stacked make the &6Stock Ticker&r. Put it into the same network with a mob on a &6Seat&r (wool and a wooden slab) next to it."
 		""
 		"Click the mob: you see everything in the network and order. The packagers send the goods to the address you give."
@@ -24576,6 +24585,7 @@
 	quest.6D1CBFD513C6C408.quest_subtitle: "Kessel, Lagerfeuer, ein Tier."
 	quest.6D1CBFD513C6C408.title: "&4Koch ein Blood Vial"
 	quest.6D1DCCF8FBC15F5C.quest_desc: [
+		"{image:kronwerke:textures/quests/shots/create_trains_junction.png width:224 height:126 align:center}"
 		"Der Schraubenschlüssel stellt ein Signal um. Das &eEinfahrtssignal&r lässt einen Zug in den nächsten freien Abschnitt. Das &eKreuzungssignal&r wartet, bis der Weg bis zum übernächsten Signal frei ist."
 		""
 		"Faustregel: Kreuzungssignal vor der Weiche, Einfahrtssignal dahinter. Sonst bleibt ein Zug mitten auf der Kreuzung stehen. Die Brille zeigt, ob ein Abschnitt belegt ist."

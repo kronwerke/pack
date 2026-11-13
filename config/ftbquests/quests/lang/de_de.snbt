@@ -13431,6 +13431,7 @@
 	quest.3B5313E3CE0CBCDE.quest_subtitle: "Kommt in Stufe 4. 25 Modelle, ein Block, tausende Drops."
 	quest.3B5313E3CE0CBCDE.title: "&5&lDas Rechenzentrum"
 	quest.3B554A689296B483.quest_desc: [
+		"{image:kronwerke:textures/quests/shots/create_trains_first_train.png width:224 height:126 align:center}"
 		"&e1.&r Bahnhof in den Montagemodus. &e2.&r Drehgestelle aufs Gleis. &e3.&r Zug darauf bauen, Zugsteuerung nicht vergessen. &e4.&r Alles verkleben. &e5.&r Im Bahnhofsmenü zusammenbauen."
 		""
 		"Wagen, Sitze, Kisten, Deko: was auf den Drehgestellen klebt, fährt mit."
@@ -17239,6 +17240,7 @@
 	quest.4BE024A205775B96.quest_subtitle: "Deine erste echte Kraftquelle."
 	quest.4BE024A205775B96.title: "&6Stell ein Wasserrad in den Bach"
 	quest.4BE1ED568848DAC9.quest_desc: [
+		"{image:kronwerke:textures/quests/shots/create_brass_pg_generator.png width:224 height:126 align:center}"
 		"Handwerkseinheiten-Rezept: &6Pins&r (zwei Kupferklumpen), zwei &6Kohle&r, &6Kupferblech&r, zwei &6Andesitlegierungen&r, &6Welle&r und &6Andesitgehäuse&r ergeben den &6Generator-Kollektor&r. Er kommt ans Ende des Rotors, 8 SU pro RPM."
 		""
 		"An seine Klemmen kommt die Last. Damit Strom entsteht, braucht der Ständer einen &dErregerstrom&r, etwa über einen Adapter aus einer anderen Quelle."
@@ -17248,6 +17250,7 @@
 	quest.4BE1ED568848DAC9.quest_subtitle: "Der Generator liefert Spannung."
 	quest.4BE1ED568848DAC9.title: "&3&lSchließ den Kollektor an"
 	quest.4BE4170AF0226CEE.quest_desc: [
+		"{image:kronwerke:textures/quests/shots/create_brass_pg_magnet.png width:224 height:126 align:center}"
 		"&6Leitfähiges Gehäuse&r, fünf &6Kupferspulen&r und ein &6Eisenblech&r ergeben den &6Elektromagneten&r. Mit Strom magnetisiert er &6Andesitlegierung&r auf einem Depot oder Band darunter."
 		"{image:powergrid:textures/item/magnet.png width:32 height:32 align:center}"
 		"Deshalb kommt der Motor erst nach dem Generator."
@@ -17995,6 +17998,7 @@
 	quest.4EE32856F3E9D1B0.quest_subtitle: "Fünf Bruchstein für einen Barren."
 	quest.4EE32856F3E9D1B0.title: "&6Brenn Strata zu Mineral Salt"
 	quest.4EEACBE873E2B758.quest_desc: [
+		"{image:kronwerke:textures/quests/shots/create_trains_cargo.png width:224 height:126 align:center}"
 		"Eine &6Portable Lagerschnittstelle&r am Wagen, eine am Bahnsteig, gegenüber, wenn der Zug hält. Kisten oder &6Tresore&r auf dem Zug sind das Frachtlager."
 		""
 		"Eine Schleuse an der festen Schnittstelle entlädt ins Lager oder befüllt den Zug, je nachdem, wie herum sie sitzt."
@@ -19618,6 +19622,7 @@
 	quest.56B7D8A29D5AB2C9.quest_subtitle: "Bleib weg vom Lila."
 	quest.56B7D8A29D5AB2C9.title: "&5Lern, was er tut"
 	quest.56BA74D32B562B28.quest_desc: [
+		"{image:kronwerke:textures/quests/shots/create_brass_pg_winding.png width:224 height:126 align:center}"
 		"Leg &6Wellen&r neben den Rotor und klick zwei davon mit einer &6Kupferspule&r an: daraus wird eine &6Wicklung&r. Nebeneinander liegende Wicklungen schalten sich in Reihe."
 		""
 		"Ein &6Generatorgehäuse&r (Eisenbleche, Kupferblech, Leitfähiges Gehäuse) verbindet Wicklungen um die Ecke."
@@ -21550,6 +21555,7 @@
 	quest.5F58611AAEBAD0CD.quest_subtitle: "Der erste Manastahl wächst an einem Baum."
 	quest.5F58611AAEBAD0CD.title: "&aWirk das Ritual des Waldes"
 	quest.5F7DAA47C968585F.quest_desc: [
+		"{image:kronwerke:textures/quests/shots/create_trains_conductor.png width:224 height:126 align:center}"
 		"Setz einen Mob auf den Sitz vor der Zugsteuerung, oder stell einen &6Lohenbrenner&r an dieselbe Stelle. Rechtsklicke ihn mit dem Fahrplan: er übernimmt."
 		""
 		"Die Lohe ist der beliebteste Schaffner, sie braucht nichts und läuft nicht weg. Einen Mob an der Leine setzt du per Klick auf den Sitz."
@@ -23517,6 +23523,7 @@
 	quest.6805824C4E127F95.quest_subtitle: "Mekanism: Portable Teleporter."
 	quest.6805824C4E127F95.title: "&dTrag einen Teleporter in der Tasche"
 	quest.68131C46039879E9.quest_desc: [
+		"{image:kronwerke:textures/quests/shots/create_brass_pg_generator.png width:224 height:126 align:center}"
 		"&6Rheostat&r: Kohle, Welle, fünf &6Widerstandsspulen&r (vier Eisendraht und ein Stock) und ein Leitfähiges Gehäuse. Verdrahte Kollektor und Wicklungen Plus an Plus, Minus an Minus, mit dem Rheostat dazwischen."
 		""
 		"Das klappt nur in einer Drehrichtung, mit passendem Widerstand und bei genug Drehzahl. Der Rheostat stellt den Widerstand per Rotation ein."
@@ -23679,6 +23686,7 @@
 	quest.68DB324F17A467F3.quest_subtitle: "Laufwerk, Strom, Konsole, Kabel."
 	quest.68DB324F17A467F3.title: "&b&lSchließ dein erstes Netz an"
 	quest.68E11E26D9DEED7A.quest_desc: [
+		"{image:kronwerke:textures/quests/shots/create_brass_boiler.png width:224 height:126 align:center}"
 		"Stell &64 Dampfmaschinen&r an einen großen Kessel und &64 Lohenbrenner&r darunter. Die Ingenieursbrille zeigt die &eKesselstufe&r und was fehlt: Hitze, Wasser oder Größe."
 		""
 		"Jeder erhitzte Brenner zählt eine Stufe Hitze, ein überhitzter zwei. Der kleinste der drei Werte bestimmt die Stufe, und jede Stufe lässt eine Maschine mehr voll laufen."
@@ -23785,6 +23793,7 @@
 	quest.696F84A6E32481C2.quest_subtitle: "Spawn-Eier von Monstern."
 	quest.696F84A6E32481C2.title: "&aCapturing"
 	quest.69720528BCB75EF8.quest_desc: [
+		"{image:kronwerke:textures/quests/shots/create_stock_ticker.png width:224 height:126 align:center}"
 		"&6Glas&r, &6Lagerverbindung&r und &6Goldbarren&r untereinander ergeben den &6Lagerticker&r. Stell ihn ins selbe Netz, daneben einen Mob auf einem &6Sitz&r (Wolle und Holzstufe)."
 		""
 		"Klick den Mob an: du siehst alles im Netz und bestellst. Die Verpacker schicken die Ware an die Adresse, die du angibst."
@@ -24576,6 +24585,7 @@
 	quest.6D1CBFD513C6C408.quest_subtitle: "Kessel, Lagerfeuer, ein Tier."
 	quest.6D1CBFD513C6C408.title: "&4Koch ein Blood Vial"
 	quest.6D1DCCF8FBC15F5C.quest_desc: [
+		"{image:kronwerke:textures/quests/shots/create_trains_junction.png width:224 height:126 align:center}"
 		"Der Schraubenschlüssel stellt ein Signal um. Das &eEinfahrtssignal&r lässt einen Zug in den nächsten freien Abschnitt. Das &eKreuzungssignal&r wartet, bis der Weg bis zum übernächsten Signal frei ist."
 		""
 		"Faustregel: Kreuzungssignal vor der Weiche, Einfahrtssignal dahinter. Sonst bleibt ein Zug mitten auf der Kreuzung stehen. Die Brille zeigt, ob ein Abschnitt belegt ist."

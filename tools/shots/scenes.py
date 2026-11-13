@@ -2291,3 +2291,152 @@ def _(b):
     for x in (4, 5, 6):
         b.use(x, -1, 4, "up", "xnet:netcable_blue")
     b.focus(2, 0, 3, 8, 1, 5)
+
+
+# ===================================================================================
+# Fourteenth batch: Industrial Foregoing at work, two Create lines, a few single machines
+
+@scene("industrial/extractor")
+def _(b):
+    # fluid extractors on both sides of an acacia trunk, each looking at a log
+    b.f(4, 0, 4, 4, 3, 4, "minecraft:acacia_log[axis=y]")
+    for y in (0, 1):
+        b.b(3, y, 4, "industrialforegoing:fluid_extractor[subfacing=east]")
+        b.b(5, y, 4, "industrialforegoing:fluid_extractor[subfacing=west]")
+
+
+@scene("industrial/latex_unit")
+def _(b):
+    # the latex processing unit takes the latex of the extractors, the dissolution chamber stands for later
+    b.b(3, 0, 4, "industrialforegoing:latex_processing_unit[subfacing=south]")
+    b.b(5, 0, 4, "industrialforegoing:dissolution_chamber[subfacing=south]")
+
+
+@scene("industrial/sower")
+def _(b):
+    # a field on posts: the sower under its middle plants it, the gatherer behind it reaps it
+    for x, z in ((3, 3), (5, 3), (3, 5), (5, 5)):
+        b.b(x, 0, z, "minecraft:oak_log[axis=y]")
+    b.b(4, 0, 4, "industrialforegoing:plant_sower[subfacing=south]")
+    b.f(3, 1, 3, 5, 1, 5, "minecraft:farmland[moisture=7]")
+    b.f(3, 2, 3, 5, 2, 5, "minecraft:wheat[age=7]")
+    b.f(4, 0, 2, 4, 1, 2, "minecraft:stone_bricks")
+    b.b(4, 2, 2, "industrialforegoing:plant_gatherer[subfacing=south]")
+
+
+@scene("industrial/crusher")
+def _(b):
+    # a pen of cows: the duplicator makes them, the crusher behind the pen kills them for their drops
+    for x in range(2, 7):
+        for z in (3, 6):
+            b.b(x, 0, z, "minecraft:oak_fence")
+    for z in (4, 5):
+        b.b(2, 0, z, "minecraft:oak_fence")
+        b.b(6, 0, z, "minecraft:oak_fence")
+    b.m("minecraft:cow", 3, 0, 4)
+    b.m("minecraft:cow", 5, 0, 5)
+    b.b(4, 0, 2, "industrialforegoing:mob_crusher[subfacing=south]")
+    b.b(7, 0, 4, "industrialforegoing:mob_duplicator")
+
+
+@scene("industrial/bio")
+def _(b):
+    b.b(4, 0, 4, "industrialforegoing:bioreactor[subfacing=south]")
+
+
+@scene("industrial/laser")
+def _(b):
+    # the ore laser base, a laser drill on every side looking at it across one block of air
+    b.b(4, 0, 4, "industrialforegoing:ore_laser_base")
+    b.b(2, 0, 4, "industrialforegoing:laser_drill[facing=east]")
+    b.b(6, 0, 4, "industrialforegoing:laser_drill[facing=west]")
+    b.b(4, 0, 2, "industrialforegoing:laser_drill[facing=south]")
+
+
+@scene("industrial/washing", w=10)
+def _(b):
+    # the three machines of the ore meat line side by side
+    for i, name in enumerate(("washing_factory", "fermentation_station", "fluid_sieving_machine")):
+        b.b(3 + 2 * i, 0, 4, f"industrialforegoing:{name}[subfacing=south]")
+
+
+@scene("industrial/conveyor", w=10)
+def _(b):
+    # a conveyor line with what it carries
+    for x in range(2, 8):
+        b.b(x, 0, 4, "industrialforegoing:conveyor[facing=east,type=flat]")
+    for x in (3, 5, 6):
+        b.drop(x, 0.4, 4, "minecraft:raw_iron")
+    b.focus(2, 0, 3, 7, 1, 5)
+
+
+@scene("mekanism/ethene")
+def _(b):
+    b.b(4, 0, 4, "mekanism:pressurized_reaction_chamber[facing=south]")
+
+
+@scene("antimatter/wind", d=13, h=20)
+def _(b):
+    # the wind generator, set down the way a player sets it: five blocks high with its rotor
+    b.use(4, -1, 3, "up", "mekanismgenerators:wind_generator")
+    b.focus(3, 0, 2, 5, 5, 4)
+
+
+@scene("botania_runes/thermalily")
+def _(b):
+    # the thermalily drinks the lava beside it
+    stage(b, 2, 3, 6, 5, "minecraft:grass_block[snowy=false]")
+    b.b(5, -1, 4, "minecraft:lava")
+    b.b(4, 0, 4, "botania:thermalily")
+    b.focus(3, -1, 3, 6, 1, 5)
+
+
+@scene("botania_runes/gourmaryllis")
+def _(b):
+    # the gourmaryllis eats what lies near it, and wants a different food every time
+    stage(b, 2, 3, 6, 5, "minecraft:grass_block[snowy=false]")
+    b.b(4, 0, 4, "botania:gourmaryllis")
+    for x, z, item in ((3, 5, "minecraft:bread"), (5, 5, "minecraft:cooked_beef"), (3, 3, "minecraft:apple"), (5, 3, "minecraft:baked_potato")):
+        b.drop(x, 0.2, z, item)
+    b.focus(3, 0, 3, 5, 1, 5)
+
+
+@scene("productive_trees/mega")
+def _(b):
+    # four saplings in a square: the pecan only grows like this
+    stage(b, 3, 3, 6, 6, "minecraft:grass_block[snowy=false]")
+    for x in (4, 5):
+        for z in (4, 5):
+            b.b(x, 0, z, "productivetrees:pecan_sapling")
+    b.focus(3, 0, 3, 6, 1, 6)
+
+
+@scene("create_brass/blaze_cake", w=11)
+def _(b):
+    # two steps: the press over a basin of egg, sugar and cinder flour makes the base,
+    # the spout over the depot fills it with lava
+    b.b(3, 0, 4, "create:basin[facing=down]")
+    b.b(3, 2, 4, "create:mechanical_press[facing=south]")
+    drive_from_behind(b, 3, 2, 4)
+    b.drop(3, 1, 4, "minecraft:egg")
+    b.drop(3, 1.2, 4, "minecraft:sugar")
+    b.drop(3, 1.4, 4, "create:cinder_flour")
+    b.b(7, 0, 4, "create:depot")
+    b.b(7, 2, 4, "create:spout")
+    b.b(7, 3, 4, "create:fluid_tank[bottom=true,shape=window,top=true]")
+    b.use(7, 0, 4, "up", "create:blaze_cake_base")
+
+
+@scene("create_brass/incomplete", w=11)
+def _(b):
+    # sequenced assembly: the plate rides the belt under three deployers, each holding its part, and a press
+    b.b(2, 0, 4, "create:shaft[axis=z]")
+    b.b(8, 0, 4, "create:shaft[axis=z]")
+    b.use(2, 0, 4, "up", "create:belt_connector")
+    b.use(8, 0, 4, "up", "create:belt_connector")
+    b.changed(5, 0, 4, "minecraft:air")
+    for x, item in ((3, "create:cogwheel"), (4, "create:large_cogwheel"), (5, "minecraft:iron_nugget")):
+        b.b(x, 2, 4, "create:deployer[facing=down,axis_along_first=true]", f'{{HeldItem:{{id:"{item}",count:1}}}}')
+    b.b(7, 2, 4, "create:mechanical_press[facing=south]")
+    b.f(3, 3, 4, 7, 3, 4, "create:andesite_casing")
+    b.drop(6, 1, 4, "create:incomplete_precision_mechanism")

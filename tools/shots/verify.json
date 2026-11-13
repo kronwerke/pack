@@ -3,7 +3,7 @@
   -8,
   -8,
   428,
-  354
+  373
  ],
  "checks": [
   [
@@ -28,7 +28,7 @@
   ],
   [
    "create_brass/crushing_wheel",
-   "execute in kronwerke:testworld if block 161 65 51 create:crushing_wheel_controller"
+   "execute in kronwerke:testworld if block 178 65 51 create:crushing_wheel_controller"
   ],
   [
    "mekanism/dynamic_tank",
@@ -36,47 +36,47 @@
   ],
   [
    "mekanism_advanced/evap",
-   "execute in kronwerke:testworld if data block 101 66 75 inventory_id"
+   "execute in kronwerke:testworld if data block 116 66 75 inventory_id"
   ],
   [
    "mekanism_advanced/boiler",
-   "execute in kronwerke:testworld if data block 119 66 75 inventory_id"
+   "execute in kronwerke:testworld if data block 134 66 75 inventory_id"
   ],
   [
    "mekanism_advanced/turbine",
-   "execute in kronwerke:testworld if data block 136 66 75 inventory_id"
+   "execute in kronwerke:testworld if data block 151 66 75 inventory_id"
   ],
   [
    "mekanism_elite/induction_matrix",
-   "execute in kronwerke:testworld if data block 153 65 75 inventory_id"
+   "execute in kronwerke:testworld if data block 168 65 75 inventory_id"
   ],
   [
    "mekanism_elite/fusion",
-   "execute in kronwerke:testworld if data block 167 68 75 inventory_id"
+   "execute in kronwerke:testworld if data block 182 68 75 inventory_id"
   ],
   [
    "antimatter/sps",
-   "execute in kronwerke:testworld if data block 220 67 79 inventory_id"
+   "execute in kronwerke:testworld if data block 235 67 79 inventory_id"
   ],
   [
    "powah/reactor",
-   "execute in kronwerke:testworld if block 103 67 224 powah:reactor_starter"
+   "execute in kronwerke:testworld if block 103 67 243 powah:reactor_starter"
   ],
   [
    "ae2/cpu",
-   "execute in kronwerke:testworld if block 67 64 245 ae2:1k_crafting_storage[formed=true]"
+   "execute in kronwerke:testworld if block 67 64 264 ae2:1k_crafting_storage[formed=true]"
   ],
   [
    "ae2_advanced/bridge",
-   "execute in kronwerke:testworld if data block 82 65 244 inventory_id"
+   "execute in kronwerke:testworld if data block 82 65 263 inventory_id"
   ],
   [
    "storage/vault_big",
-   "execute in kronwerke:testworld if block 209 64 243 create:item_vault[large=true]"
+   "execute in kronwerke:testworld if block 209 64 262 create:item_vault[large=true]"
   ],
   [
    "list_dimensions/d_mining",
-   "execute in kronwerke:testworld if block 105 66 288 kronwerke:minenportal"
+   "execute in kronwerke:testworld if block 105 66 307 kronwerke:minenportal"
   ]
  ]
 }

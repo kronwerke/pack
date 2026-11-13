@@ -1,69 +1,76 @@
-# 151 exploration/e_compass, e_veins, e_lootr, e_campsite, e_yung_dungeon
-#area 103 336 162 361
-fill 103 64 336 147 91 361 minecraft:air
-fill 148 64 336 162 91 361 minecraft:air
-fill 103 60 336 162 62 361 minecraft:stone
-fill 103 63 336 162 63 361 minecraft:light_gray_concrete
-fill 107 64 342 162 79 342 minecraft:light_gray_concrete
-fill 107 64 342 107 79 355 minecraft:light_gray_concrete
-setblock 108 64 354 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "151.1"}','{"text": "exploration"}','{"text": "e_compass"}','{"text": ""}']}}
-setblock 109 64 354 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Bau den Kompass"}','{"text": "der Natur"}','{"text": ""}','{"text": ""}']}}
-fill 117 64 342 117 79 355 minecraft:light_gray_concrete
-setblock 112 64 347 minecraft:smooth_stone_slab
-summon item_display 112.5 65.4 347.5 {item:{id:"naturescompass:naturescompass",count:1},item_display:"fixed",billboard:"vertical",transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[2.0f,2.0f,2.0f]},brightness:{sky:15,block:15},Tags:["kw_shot"]}
-setblock 118 64 354 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "151.2"}','{"text": "exploration"}','{"text": "e_veins"}','{"text": ""}']}}
-setblock 119 64 354 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Finde eine"}','{"text": "große Erzader"}','{"text": ""}','{"text": ""}']}}
-fill 127 64 342 127 79 355 minecraft:light_gray_concrete
-fill 120 64 346 124 68 347 minecraft:granite
-setblock 120 64 347 minecraft:copper_ore
-setblock 121 64 347 minecraft:copper_ore
-setblock 121 65 347 minecraft:copper_ore
-setblock 122 65 347 minecraft:copper_ore
-setblock 123 66 347 minecraft:copper_ore
-setblock 124 67 347 minecraft:copper_ore
-setblock 124 68 347 minecraft:copper_ore
-setblock 120 65 347 minecraft:copper_ore
-setblock 123 67 347 minecraft:copper_ore
-setblock 122 66 347 minecraft:raw_copper_block
-setblock 123 68 347 minecraft:raw_copper_block
-setblock 121 66 347 minecraft:raw_copper_block
-setblock 128 64 354 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "151.3"}','{"text": "exploration"}','{"text": "e_lootr"}','{"text": ""}']}}
-setblock 129 64 354 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Lass die Kisten"}','{"text": "stehen"}','{"text": ""}','{"text": ""}']}}
-fill 137 64 342 137 79 355 minecraft:light_gray_concrete
-fill 131 64 346 134 64 348 minecraft:mossy_cobblestone
-fill 131 65 346 134 66 346 minecraft:mossy_stone_bricks
-setblock 134 67 346 minecraft:cracked_stone_bricks
-setblock 131 65 347 minecraft:cracked_stone_bricks
-setblock 131 66 347 minecraft:mossy_stone_brick_slab
-setblock 133 65 347 lootr:lootr_chest[facing=south]{LootTable:"minecraft:chests/simple_dungeon"}
-setblock 132 65 347 minecraft:lantern
-setblock 138 64 354 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "151.4"}','{"text": "exploration"}','{"text": "e_campsite"}','{"text": ""}']}}
-setblock 139 64 354 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Finde ein"}','{"text": "Höhlenlager"}','{"text": ""}','{"text": ""}']}}
-fill 147 64 342 147 79 355 minecraft:light_gray_concrete
-fill 140 64 345 144 64 349 minecraft:stone
-fill 140 65 345 144 67 345 minecraft:stone
-fill 140 65 346 140 67 349 minecraft:stone
-fill 141 64 346 144 64 349 minecraft:oak_planks
-setblock 142 65 348 minecraft:campfire[facing=south,lit=true]
-setblock 141 65 346 minecraft:furnace[facing=south]
-setblock 141 66 346 minecraft:cobblestone_wall
-setblock 142 65 346 minecraft:crafting_table
-setblock 143 65 346 lootr:lootr_chest[facing=south]{LootTable:"artifacts:chests/campsite_chest"}
-setblock 144 65 346 minecraft:potted_red_tulip
-setblock 144 65 347 minecraft:red_bed[facing=north,part=head]
-setblock 144 65 348 minecraft:red_bed[facing=north,part=foot]
-setblock 141 65 347 minecraft:lantern
-setblock 148 64 354 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "151.5"}','{"text": "exploration"}','{"text": "e_yung_dungeon"}','{"text": ""}']}}
-setblock 149 64 354 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Räum ein"}','{"text": "Verlies aus"}','{"text": ""}','{"text": ""}']}}
-fill 157 64 342 157 79 355 minecraft:light_gray_concrete
-fill 150 64 345 154 64 349 minecraft:mossy_cobblestone
-fill 150 65 345 154 67 345 minecraft:cobblestone
-fill 150 65 346 150 67 349 minecraft:mossy_cobblestone
-setblock 152 66 345 minecraft:mossy_cobblestone
-setblock 153 65 345 minecraft:mossy_cobblestone
-setblock 152 65 347 minecraft:spawner{SpawnData:{entity:{id:"minecraft:skeleton"}}}
-setblock 151 65 346 lootr:lootr_chest[facing=south]{LootTable:"minecraft:chests/simple_dungeon"}
-setblock 154 65 346 lootr:lootr_chest[facing=south]{LootTable:"minecraft:chests/simple_dungeon"}
-setblock 153 65 346 minecraft:skeleton_skull[rotation=2]
-setblock 151 65 348 minecraft:cobweb
+# 151 pneumaticcraft/chamber, refinery, vortex, elevator, safety, plastic, etching
+#area 115 317 194 346
+fill 115 64 317 148 95 346 minecraft:air
+fill 149 64 317 182 95 346 minecraft:air
+fill 183 64 317 194 95 346 minecraft:air
+fill 115 60 317 194 62 346 minecraft:stone
+fill 115 63 317 194 63 346 minecraft:light_gray_concrete
+fill 119 64 323 194 83 323 minecraft:light_gray_concrete
+fill 119 64 323 119 83 340 minecraft:light_gray_concrete
+setblock 120 64 339 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "151.1"}','{"text": "pneumaticcraft"}','{"text": "chamber"}','{"text": ""}']}}
+setblock 121 64 339 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Setz die"}','{"text": "Druckkammer"}','{"text": "zusammen"}','{"text": ""}']}}
+fill 129 64 323 129 83 340 minecraft:light_gray_concrete
+setblock 123 64 327 pneumaticcraft:pressure_chamber_wall[wall_state=none]
+setblock 123 64 328 pneumaticcraft:pressure_chamber_wall[wall_state=none]
+setblock 123 64 329 pneumaticcraft:pressure_chamber_wall[wall_state=none]
+setblock 123 65 327 pneumaticcraft:pressure_chamber_wall[wall_state=none]
+setblock 123 65 328 pneumaticcraft:pressure_chamber_interface[facing=west]
+setblock 123 65 329 pneumaticcraft:pressure_chamber_wall[wall_state=none]
+setblock 123 66 327 pneumaticcraft:pressure_chamber_wall[wall_state=none]
+setblock 123 66 328 pneumaticcraft:pressure_chamber_wall[wall_state=none]
+setblock 124 64 327 pneumaticcraft:pressure_chamber_wall[wall_state=none]
+setblock 124 64 328 pneumaticcraft:pressure_chamber_glass
+setblock 124 64 329 pneumaticcraft:pressure_chamber_wall[wall_state=none]
+setblock 124 65 327 pneumaticcraft:pressure_chamber_glass
+setblock 124 65 329 pneumaticcraft:pressure_chamber_glass
+setblock 124 66 327 pneumaticcraft:pressure_chamber_wall[wall_state=none]
+setblock 124 66 328 pneumaticcraft:pressure_chamber_glass
+setblock 124 66 329 pneumaticcraft:pressure_chamber_wall[wall_state=none]
+setblock 125 64 327 pneumaticcraft:pressure_chamber_wall[wall_state=none]
+setblock 125 64 328 pneumaticcraft:pressure_chamber_wall[wall_state=none]
+setblock 125 64 329 pneumaticcraft:pressure_chamber_wall[wall_state=none]
+setblock 125 65 327 pneumaticcraft:pressure_chamber_wall[wall_state=none]
+setblock 125 65 328 pneumaticcraft:pressure_chamber_valve[facing=east,formed=false]
+setblock 125 65 329 pneumaticcraft:pressure_chamber_wall[wall_state=none]
+setblock 125 66 327 pneumaticcraft:pressure_chamber_wall[wall_state=none]
+setblock 125 66 328 pneumaticcraft:pressure_chamber_wall[wall_state=none]
+setblock 125 66 329 pneumaticcraft:pressure_chamber_wall[wall_state=none]
+kw testworld use 123 65 329 up pneumaticcraft:pressure_chamber_wall
+execute if block 125 65 328 pneumaticcraft:pressure_chamber_valve[formed=true]
+setblock 130 64 339 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "151.2"}','{"text": "pneumaticcraft"}','{"text": "refinery"}','{"text": ""}']}}
+setblock 131 64 339 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Bau die"}','{"text": "Raffinerie"}','{"text": ""}','{"text": ""}']}}
+fill 139 64 323 139 83 340 minecraft:light_gray_concrete
+setblock 134 64 327 pneumaticcraft:refinery[facing=south]
+setblock 134 65 327 pneumaticcraft:refinery_output[facing=south]
+setblock 134 66 327 pneumaticcraft:refinery_output[facing=south]
+setblock 134 67 327 pneumaticcraft:refinery_output[facing=south]
+setblock 134 68 327 pneumaticcraft:refinery_output[facing=south]
+setblock 140 64 339 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "151.3"}','{"text": "pneumaticcraft"}','{"text": "vortex"}','{"text": ""}']}}
+setblock 141 64 339 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Bau ein"}','{"text": "Wirbelrohr"}','{"text": ""}','{"text": ""}']}}
+fill 149 64 323 149 83 340 minecraft:light_gray_concrete
+setblock 143 64 328 pneumaticcraft:pressure_tube
+setblock 144 64 328 pneumaticcraft:pressure_tube
+setblock 145 64 328 pneumaticcraft:vortex_tube[facing=east]
+setblock 150 64 339 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "151.4"}','{"text": "pneumaticcraft"}','{"text": "elevator"}','{"text": ""}']}}
+setblock 151 64 339 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Bau einen"}','{"text": "Aufzug"}','{"text": ""}','{"text": ""}']}}
+fill 159 64 323 159 83 340 minecraft:light_gray_concrete
+setblock 154 64 327 pneumaticcraft:elevator_base
+fill 154 65 327 154 68 327 pneumaticcraft:elevator_frame
+fill 155 64 327 155 67 327 minecraft:stone_bricks
+setblock 155 68 327 pneumaticcraft:elevator_caller[facing=south]
+setblock 160 64 339 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "151.5"}','{"text": "pneumaticcraft"}','{"text": "safety"}','{"text": ""}']}}
+setblock 161 64 339 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Setz ein"}','{"text": "Sicherheitsventil"}','{"text": ""}','{"text": ""}']}}
+fill 169 64 323 169 83 340 minecraft:light_gray_concrete
+fill 163 64 328 165 64 328 pneumaticcraft:pressure_tube
+kw testworld use 163 64 328 up pneumaticcraft:safety_tube_module
+kw testworld use 165 64 328 up pneumaticcraft:pressure_gauge_module
+setblock 170 64 339 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "151.6"}','{"text": "pneumaticcraft"}','{"text": "plastic"}','{"text": ""}']}}
+setblock 171 64 339 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Koch Kunststoff"}','{"text": ""}','{"text": ""}','{"text": ""}']}}
+fill 179 64 323 179 83 340 minecraft:light_gray_concrete
+setblock 174 64 328 minecraft:magma_block
+setblock 174 65 328 pneumaticcraft:thermopneumatic_processing_plant[facing=south]
+setblock 180 64 339 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "151.7"}','{"text": "pneumaticcraft"}','{"text": "etching"}','{"text": ""}']}}
+setblock 181 64 339 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Ätze die"}','{"text": "Platine"}','{"text": ""}','{"text": ""}']}}
+fill 189 64 323 189 83 340 minecraft:light_gray_concrete
+setblock 184 64 328 pneumaticcraft:etching_tank
 execute as @e[type=minecraft:item,tag=!kw_shot] run kill @s

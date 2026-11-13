@@ -1,23 +1,27 @@
-# 128 industrial/extractor, latex_unit
-#area -4 252 25 277
-fill -4 64 252 25 91 277 minecraft:air
-fill -4 60 252 25 62 277 minecraft:stone
-fill -4 63 252 25 63 277 minecraft:light_gray_concrete
-fill 0 64 258 25 79 258 minecraft:light_gray_concrete
-fill 0 64 258 0 79 271 minecraft:light_gray_concrete
-setblock 1 64 270 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "128.1"}','{"text": "industrial"}','{"text": "extractor"}','{"text": ""}']}}
-setblock 2 64 270 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "pity frame"}','{"text": "recipe,"}','{"text": "extractors"}','{"text": "around a log"}']}}
-setblock 3 64 270 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "column, the"}','{"text": "latex unit GUI,"}','{"text": "dry rubber in a"}','{"text": "furnace, the"}']}}
-setblock 4 64 270 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "dissolution"}','{"text": "chamber GUI"}','{"text": ""}','{"text": ""}']}}
-fill 10 64 258 10 79 271 minecraft:light_gray_concrete
-fill 5 64 263 5 67 263 minecraft:acacia_log[axis=y]
-setblock 4 64 263 industrialforegoing:fluid_extractor[subfacing=east]
-setblock 6 64 263 industrialforegoing:fluid_extractor[subfacing=west]
-setblock 4 65 263 industrialforegoing:fluid_extractor[subfacing=east]
-setblock 6 65 263 industrialforegoing:fluid_extractor[subfacing=west]
-setblock 11 64 270 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "128.2"}','{"text": "industrial"}','{"text": "latex_unit"}','{"text": ""}']}}
-setblock 12 64 270 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Bau eine"}','{"text": "Latexverarbeitungsmaschine"}','{"text": ""}','{"text": ""}']}}
-fill 20 64 258 20 79 271 minecraft:light_gray_concrete
-setblock 14 64 263 industrialforegoing:latex_processing_unit[subfacing=south]
-setblock 16 64 263 industrialforegoing:dissolution_chamber[subfacing=south]
+# 128 immersive/tank, silo, shelf
+#area 194 217 233 246
+fill 194 64 217 228 94 246 minecraft:air
+fill 229 64 217 233 94 246 minecraft:air
+fill 194 60 217 233 62 246 minecraft:stone
+fill 194 63 217 233 63 246 minecraft:light_gray_concrete
+fill 198 64 223 233 82 223 minecraft:light_gray_concrete
+fill 198 64 223 198 82 240 minecraft:light_gray_concrete
+setblock 199 64 239 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "128.1"}','{"text": "immersive"}','{"text": "tank"}','{"text": ""}']}}
+setblock 200 64 239 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "the formed"}','{"text": "structures"}','{"text": ""}','{"text": ""}']}}
+fill 208 64 223 208 82 240 minecraft:light_gray_concrete
+place template immersiveengineering:multiblocks/sheetmetal_tank 202 64 226 none
+kw testworld use 203 65 228 south immersiveengineering:hammer
+execute unless block 203 65 228 immersiveengineering:sheetmetal_iron
+setblock 209 64 239 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "128.2"}','{"text": "immersive"}','{"text": "silo"}','{"text": ""}']}}
+setblock 210 64 239 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Form ein"}','{"text": "Elementsilo"}','{"text": ""}','{"text": ""}']}}
+fill 218 64 223 218 82 240 minecraft:light_gray_concrete
+place template immersiveengineering:multiblocks/silo 212 64 226 none
+kw testworld use 213 65 228 south immersiveengineering:hammer
+execute unless block 213 65 228 immersiveengineering:sheetmetal_iron
+setblock 219 64 239 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "128.3"}','{"text": "immersive"}','{"text": "shelf"}','{"text": ""}']}}
+setblock 220 64 239 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Form ein"}','{"text": "Kistenregal"}','{"text": ""}','{"text": ""}']}}
+fill 228 64 223 228 82 240 minecraft:light_gray_concrete
+place template immersiveengineering:multiblocks/shelf 221 64 226 none
+kw testworld use 222 65 227 south immersiveengineering:hammer
+execute unless block 222 65 227 immersiveengineering:steel_catwalk
 execute as @e[type=minecraft:item,tag=!kw_shot] run kill @s

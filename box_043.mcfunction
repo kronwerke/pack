@@ -1,45 +1,14 @@
-# 043 mekanism/dynamic_tank
-#area 11 95 30 120
-fill 11 64 95 30 91 120 minecraft:air
-fill 11 60 95 30 62 120 minecraft:stone
-fill 11 63 95 30 63 120 minecraft:light_gray_concrete
-fill 15 64 101 30 79 101 minecraft:light_gray_concrete
-fill 15 64 101 15 79 114 minecraft:light_gray_concrete
-setblock 16 64 113 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "043"}','{"text": "mekanism"}','{"text": "dynamic_tank"}','{"text": ""}']}}
-setblock 17 64 113 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "a 3x3x3 dynamic"}','{"text": "tank with valve"}','{"text": "and structural"}','{"text": "glass"}']}}
-fill 25 64 101 25 79 114 minecraft:light_gray_concrete
-setblock 18 64 105 mekanism:dynamic_tank
-setblock 18 64 106 mekanism:dynamic_tank
-setblock 18 64 107 mekanism:dynamic_tank
-setblock 18 65 105 mekanism:dynamic_tank
-setblock 18 65 106 mekanism:structural_glass
-setblock 18 65 107 mekanism:dynamic_tank
-setblock 18 66 105 mekanism:dynamic_tank
-setblock 18 66 106 mekanism:dynamic_tank
-setblock 18 66 107 mekanism:dynamic_tank
-setblock 19 64 105 mekanism:dynamic_tank
-setblock 19 64 106 mekanism:dynamic_tank
-setblock 19 64 107 mekanism:dynamic_tank
-setblock 19 65 105 mekanism:structural_glass
-setblock 19 65 107 mekanism:structural_glass
-setblock 19 66 105 mekanism:dynamic_tank
-setblock 19 66 106 mekanism:structural_glass
-setblock 19 66 107 mekanism:dynamic_tank
-setblock 20 64 105 mekanism:dynamic_tank
-setblock 20 64 106 mekanism:dynamic_tank
-setblock 20 64 107 mekanism:dynamic_tank
-setblock 20 65 105 mekanism:structural_glass
-setblock 20 65 107 mekanism:dynamic_valve
-setblock 20 66 105 mekanism:dynamic_tank
-setblock 20 66 106 mekanism:structural_glass
-setblock 20 66 107 mekanism:dynamic_tank
-setblock 21 64 105 mekanism:dynamic_tank
-setblock 21 64 106 mekanism:dynamic_tank
-setblock 21 64 107 mekanism:dynamic_tank
-setblock 21 65 105 mekanism:dynamic_tank
-setblock 21 65 106 mekanism:structural_glass
-setblock 21 65 107 mekanism:dynamic_tank
-setblock 21 66 105 mekanism:dynamic_tank
-setblock 21 66 106 mekanism:dynamic_tank
-setblock 21 66 107 mekanism:dynamic_tank
+# 043 mekanism/configurator
+#area -4 95 15 120
+fill -4 64 95 15 91 120 minecraft:air
+fill -4 60 95 15 62 120 minecraft:stone
+fill -4 63 95 15 63 120 minecraft:light_gray_concrete
+fill 0 64 101 15 79 101 minecraft:light_gray_concrete
+fill 0 64 101 0 79 114 minecraft:light_gray_concrete
+setblock 1 64 113 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "043"}','{"text": "mekanism"}','{"text": "configurator"}','{"text": ""}']}}
+setblock 2 64 113 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "side"}','{"text": "configuration"}','{"text": "tab with auto"}','{"text": "eject"}']}}
+fill 10 64 101 10 79 114 minecraft:light_gray_concrete
+setblock 4 64 106 mekanism:metallurgic_infuser[facing=south]
+setblock 6 64 106 minecraft:smooth_stone_slab
+summon item_display 6.5 64.95 106.5 {item:{id:"mekanism:configurator",count:1},item_display:"fixed",billboard:"vertical",transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[1.0f,1.0f,1.0f]},brightness:{sky:15,block:15},Tags:["kw_shot"]}
 execute as @e[type=minecraft:item,tag=!kw_shot] run kill @s

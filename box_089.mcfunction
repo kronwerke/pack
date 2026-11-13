@@ -1,17 +1,18 @@
-# 089 botania_runes/gourmaryllis
-#area 152 145 171 170
-fill 152 64 145 171 91 170 minecraft:air
-fill 152 60 145 171 62 170 minecraft:stone
-fill 152 63 145 171 63 170 minecraft:light_gray_concrete
-fill 156 64 151 171 79 151 minecraft:light_gray_concrete
-fill 156 64 151 156 79 164 minecraft:light_gray_concrete
-setblock 157 64 163 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "089"}','{"text": "botania_runes"}','{"text": "gourmaryllis"}','{"text": ""}']}}
-setblock 158 64 163 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "a belt dropping"}','{"text": "varied food"}','{"text": ""}','{"text": ""}']}}
-fill 166 64 151 166 79 164 minecraft:light_gray_concrete
-fill 159 63 155 163 63 157 minecraft:grass_block[snowy=false]
-setblock 161 64 156 botania:gourmaryllis
-summon item 160.5 64.2 157.5 {Item:{id:"minecraft:bread",count:1},PickupDelay:32767,Age:-32768,Tags:["kw_shot"]}
-summon item 162.5 64.2 157.5 {Item:{id:"minecraft:cooked_beef",count:1},PickupDelay:32767,Age:-32768,Tags:["kw_shot"]}
-summon item 160.5 64.2 155.5 {Item:{id:"minecraft:apple",count:1},PickupDelay:32767,Age:-32768,Tags:["kw_shot"]}
-summon item 162.5 64.2 155.5 {Item:{id:"minecraft:baked_potato",count:1},PickupDelay:32767,Age:-32768,Tags:["kw_shot"]}
+# 089 botania_runes/runic_altar
+#area 122 145 141 170
+fill 122 64 145 141 91 170 minecraft:air
+fill 122 60 145 141 62 170 minecraft:stone
+fill 122 63 145 141 63 170 minecraft:light_gray_concrete
+fill 126 64 151 141 79 151 minecraft:light_gray_concrete
+fill 126 64 151 126 79 164 minecraft:light_gray_concrete
+setblock 127 64 163 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "089"}','{"text": "botania_runes"}','{"text": "runic_altar"}','{"text": ""}']}}
+setblock 128 64 163 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "altar with"}','{"text": "ingredients, a"}','{"text": "spreader aimed"}','{"text": "at it, wand HUD"}']}}
+fill 136 64 151 136 79 164 minecraft:light_gray_concrete
+setblock 128 64 156 botania:mana_pool{mana:1000000}
+setblock 129 64 156 botania:mana_spreader{rotationX:180f,rotationY:0f,mana:1000}
+setblock 133 64 156 botania:runic_altar
+kw testworld use 133 64 156 up botania:manasteel_ingot
+kw testworld use 133 64 156 up botania:mana_powder
+kw testworld use 133 64 156 up minecraft:bone_meal
+kw testworld use 133 64 156 up minecraft:sugar_cane
 execute as @e[type=minecraft:item,tag=!kw_shot] run kill @s

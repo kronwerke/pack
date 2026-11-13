@@ -1,27 +1,30 @@
-# 132 industrial/washing, conveyor
-#area 88 252 119 277
-fill 88 64 252 119 91 277 minecraft:air
-fill 88 60 252 119 62 277 minecraft:stone
-fill 88 63 252 119 63 277 minecraft:light_gray_concrete
-fill 92 64 258 119 79 258 minecraft:light_gray_concrete
-fill 92 64 258 92 79 271 minecraft:light_gray_concrete
-setblock 93 64 270 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "132.1"}','{"text": "industrial"}','{"text": "washing"}','{"text": ""}']}}
-setblock 94 64 270 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "the ore meat"}','{"text": "machines in a"}','{"text": "row, conveyors"}','{"text": "with upgrades,"}']}}
-setblock 95 64 270 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "two"}','{"text": "transporters"}','{"text": ""}','{"text": ""}']}}
-fill 103 64 258 103 79 271 minecraft:light_gray_concrete
-setblock 96 64 263 industrialforegoing:washing_factory[subfacing=south]
-setblock 98 64 263 industrialforegoing:fermentation_station[subfacing=south]
-setblock 100 64 263 industrialforegoing:fluid_sieving_machine[subfacing=south]
-setblock 104 64 270 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "132.2"}','{"text": "industrial"}','{"text": "conveyor"}','{"text": ""}']}}
-setblock 105 64 270 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Leg"}','{"text": "Förderbänder"}','{"text": ""}','{"text": ""}']}}
-fill 114 64 258 114 79 271 minecraft:light_gray_concrete
-setblock 106 64 263 industrialforegoing:conveyor[facing=east,type=flat]
-setblock 107 64 263 industrialforegoing:conveyor[facing=east,type=flat]
-setblock 108 64 263 industrialforegoing:conveyor[facing=east,type=flat]
-setblock 109 64 263 industrialforegoing:conveyor[facing=east,type=flat]
-setblock 110 64 263 industrialforegoing:conveyor[facing=east,type=flat]
-setblock 111 64 263 industrialforegoing:conveyor[facing=east,type=flat]
-summon item 107.5 64.4 263.5 {Item:{id:"minecraft:raw_iron",count:1},PickupDelay:32767,Age:-32768,Tags:["kw_shot"]}
-summon item 109.5 64.4 263.5 {Item:{id:"minecraft:raw_iron",count:1},PickupDelay:32767,Age:-32768,Tags:["kw_shot"]}
-summon item 110.5 64.4 263.5 {Item:{id:"minecraft:raw_iron",count:1},PickupDelay:32767,Age:-32768,Tags:["kw_shot"]}
+# 132 immersive_heavy/hv, duroplast, survey
+#area 161 240 204 265
+fill 161 64 240 199 95 265 minecraft:air
+fill 200 64 240 204 95 265 minecraft:air
+fill 161 60 240 204 62 265 minecraft:stone
+fill 161 63 240 204 63 265 minecraft:light_gray_concrete
+fill 165 64 246 204 83 246 minecraft:light_gray_concrete
+fill 165 64 246 165 83 259 minecraft:light_gray_concrete
+setblock 166 64 258 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "132.1"}','{"text": "immersive_heavy"}','{"text": "hv"}','{"text": ""}']}}
+setblock 167 64 258 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "an HV line on"}','{"text": "steel posts,"}','{"text": "the bottling"}','{"text": "machine with"}']}}
+setblock 168 64 258 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "resin, a core"}','{"text": "sample on the"}','{"text": "ground"}','{"text": ""}']}}
+fill 179 64 246 179 83 259 minecraft:light_gray_concrete
+kw testworld use 168 63 251 up immersiveengineering:steel_post
+execute unless block 168 67 251 minecraft:air
+kw testworld use 168 67 251 up immersiveengineering:connector_hv
+kw testworld use 176 63 251 up immersiveengineering:steel_post
+execute unless block 176 67 251 minecraft:air
+kw testworld use 176 67 251 up immersiveengineering:connector_hv
+kw testworld use 168 68 251 south immersiveengineering:wirecoil_steel
+kw testworld use 176 68 251 south immersiveengineering:wirecoil_steel
+setblock 180 64 258 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "132.2"}','{"text": "immersive_heavy"}','{"text": "duroplast"}','{"text": ""}']}}
+setblock 181 64 258 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Gieß"}','{"text": "Duroplastplatten"}','{"text": ""}','{"text": ""}']}}
+fill 189 64 246 189 83 259 minecraft:light_gray_concrete
+setblock 184 64 251 minecraft:smooth_stone_slab
+summon item_display 184.5 65.4 251.5 {item:{id:"immersiveengineering:plate_duroplast",count:1},item_display:"fixed",billboard:"vertical",transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[2.0f,2.0f,2.0f]},brightness:{sky:15,block:15},Tags:["kw_shot"]}
+setblock 190 64 258 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "132.3"}','{"text": "immersive_heavy"}','{"text": "survey"}','{"text": ""}']}}
+setblock 191 64 258 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Such eine"}','{"text": "Mineralader"}','{"text": ""}','{"text": ""}']}}
+fill 199 64 246 199 83 259 minecraft:light_gray_concrete
+kw testworld use 194 63 251 up immersiveengineering:sample_drill
 execute as @e[type=minecraft:item,tag=!kw_shot] run kill @s

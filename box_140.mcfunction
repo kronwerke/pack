@@ -1,64 +1,45 @@
-# 140 storage/welcome, drawers_4, config_tool, copper_tier, controller, vault_big, trash
-#area 220 292 300 317
-fill 220 64 292 264 91 317 minecraft:air
-fill 265 64 292 300 91 317 minecraft:air
-fill 220 60 292 300 62 317 minecraft:stone
-fill 220 63 292 300 63 317 minecraft:light_gray_concrete
-fill 224 64 298 300 79 298 minecraft:light_gray_concrete
-fill 224 64 298 224 79 311 minecraft:light_gray_concrete
-setblock 225 64 310 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "140.1"}','{"text": "storage"}','{"text": "welcome"}','{"text": ""}']}}
-setblock 226 64 310 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Näh einen"}','{"text": "Rucksack"}','{"text": ""}','{"text": ""}']}}
-fill 234 64 298 234 79 311 minecraft:light_gray_concrete
-setblock 229 64 303 sophisticatedbackpacks:backpack[facing=south]
-setblock 235 64 310 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "140.2"}','{"text": "storage"}','{"text": "drawers_4"}','{"text": ""}']}}
-setblock 236 64 310 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Bau eine"}','{"text": "Schubladenwand"}','{"text": ""}','{"text": ""}']}}
-fill 244 64 298 244 79 311 minecraft:light_gray_concrete
-setblock 238 64 303 functionalstorage:oak_4[facing=down,subfacing=south]
-data merge block 238 64 303 {handler:{BigItems:{0:{Stack:{id:"minecraft:iron_ingot",count:1},Amount:128},1:{Stack:{id:"minecraft:copper_ingot",count:1},Amount:192},2:{Stack:{id:"minecraft:gold_ingot",count:1},Amount:256},3:{Stack:{id:"minecraft:raw_iron",count:1},Amount:320}}}}
-setblock 239 64 303 functionalstorage:oak_4[facing=down,subfacing=south]
-data merge block 239 64 303 {handler:{BigItems:{0:{Stack:{id:"minecraft:raw_copper",count:1},Amount:128},1:{Stack:{id:"minecraft:raw_gold",count:1},Amount:192},2:{Stack:{id:"minecraft:coal",count:1},Amount:256},3:{Stack:{id:"minecraft:charcoal",count:1},Amount:320}}}}
-setblock 240 64 303 functionalstorage:oak_4[facing=down,subfacing=south]
-data merge block 240 64 303 {handler:{BigItems:{0:{Stack:{id:"minecraft:redstone",count:1},Amount:128},1:{Stack:{id:"minecraft:lapis_lazuli",count:1},Amount:192},2:{Stack:{id:"minecraft:diamond",count:1},Amount:256},3:{Stack:{id:"minecraft:emerald",count:1},Amount:320}}}}
-setblock 238 65 303 functionalstorage:oak_4[facing=down,subfacing=south]
-data merge block 238 65 303 {handler:{BigItems:{0:{Stack:{id:"minecraft:quartz",count:1},Amount:128},1:{Stack:{id:"minecraft:amethyst_shard",count:1},Amount:192},2:{Stack:{id:"minecraft:flint",count:1},Amount:256},3:{Stack:{id:"minecraft:clay_ball",count:1},Amount:320}}}}
-setblock 239 65 303 functionalstorage:oak_4[facing=down,subfacing=south]
-data merge block 239 65 303 {handler:{BigItems:{0:{Stack:{id:"minecraft:bone",count:1},Amount:128},1:{Stack:{id:"minecraft:string",count:1},Amount:192},2:{Stack:{id:"minecraft:gunpowder",count:1},Amount:256},3:{Stack:{id:"minecraft:rotten_flesh",count:1},Amount:320}}}}
-setblock 240 65 303 functionalstorage:oak_4[facing=down,subfacing=south]
-data merge block 240 65 303 {handler:{BigItems:{0:{Stack:{id:"minecraft:leather",count:1},Amount:128},1:{Stack:{id:"minecraft:feather",count:1},Amount:192},2:{Stack:{id:"minecraft:wheat",count:1},Amount:256},3:{Stack:{id:"minecraft:sugar_cane",count:1},Amount:320}}}}
-setblock 238 66 303 functionalstorage:oak_4[facing=down,subfacing=south]
-data merge block 238 66 303 {handler:{BigItems:{0:{Stack:{id:"minecraft:red_dye",count:1},Amount:128},1:{Stack:{id:"minecraft:blue_dye",count:1},Amount:192},2:{Stack:{id:"minecraft:green_dye",count:1},Amount:256},3:{Stack:{id:"minecraft:yellow_dye",count:1},Amount:320}}}}
-setblock 239 66 303 functionalstorage:oak_4[facing=down,subfacing=south]
-data merge block 239 66 303 {handler:{BigItems:{0:{Stack:{id:"minecraft:white_dye",count:1},Amount:128},1:{Stack:{id:"minecraft:black_dye",count:1},Amount:192},2:{Stack:{id:"minecraft:slime_ball",count:1},Amount:256},3:{Stack:{id:"minecraft:ender_pearl",count:1},Amount:320}}}}
-setblock 240 66 303 functionalstorage:oak_4[facing=down,subfacing=south]
-data merge block 240 66 303 {handler:{BigItems:{0:{Stack:{id:"minecraft:blaze_rod",count:1},Amount:128},1:{Stack:{id:"minecraft:glowstone_dust",count:1},Amount:192},2:{Stack:{id:"minecraft:nether_wart",count:1},Amount:256},3:{Stack:{id:"minecraft:paper",count:1},Amount:320}}}}
-setblock 245 64 310 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "140.3"}','{"text": "storage"}','{"text": "config_tool"}','{"text": ""}']}}
-setblock 246 64 310 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Sperr eine"}','{"text": "Schublade"}','{"text": ""}','{"text": ""}']}}
-fill 254 64 298 254 79 311 minecraft:light_gray_concrete
-setblock 248 64 303 functionalstorage:oak_1[facing=down,subfacing=south]
-setblock 250 64 303 minecraft:smooth_stone_slab
-summon item_display 250.5 64.95 303.5 {item:{id:"functionalstorage:configuration_tool",count:1},item_display:"fixed",billboard:"vertical",transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[1.0f,1.0f,1.0f]},brightness:{sky:15,block:15},Tags:["kw_shot"]}
-setblock 255 64 310 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "140.4"}','{"text": "storage"}','{"text": "copper_tier"}','{"text": ""}']}}
-setblock 256 64 310 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Werte auf"}','{"text": "Kupfer auf"}','{"text": ""}','{"text": ""}']}}
-fill 264 64 298 264 79 311 minecraft:light_gray_concrete
-setblock 258 64 303 sophisticatedstorage:barrel[facing=south,flat_top=false]
-setblock 260 64 303 sophisticatedstorage:copper_barrel[facing=south,flat_top=false]
-setblock 265 64 310 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "140.5"}','{"text": "storage"}','{"text": "controller"}','{"text": ""}']}}
-setblock 266 64 310 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Bau einen"}','{"text": "Lagerkern"}','{"text": ""}','{"text": ""}']}}
-fill 274 64 298 274 79 311 minecraft:light_gray_concrete
-setblock 269 64 303 sophisticatedstorage:controller
-setblock 267 64 303 sophisticatedstorage:barrel[facing=south,flat_top=false]
-setblock 268 64 303 sophisticatedstorage:barrel[facing=south,flat_top=false]
-setblock 270 64 303 sophisticatedstorage:barrel[facing=south,flat_top=false]
-setblock 268 65 303 sophisticatedstorage:barrel[facing=south,flat_top=false]
-setblock 269 65 303 sophisticatedstorage:barrel[facing=south,flat_top=false]
-setblock 270 65 303 sophisticatedstorage:barrel[facing=south,flat_top=false]
-setblock 275 64 310 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "140.6"}','{"text": "storage"}','{"text": "vault_big"}','{"text": ""}']}}
-setblock 276 64 310 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Bau einen"}','{"text": "großen Tresor"}','{"text": ""}','{"text": ""}']}}
-fill 285 64 298 285 79 311 minecraft:light_gray_concrete
-fill 277 64 302 282 66 304 create:item_vault[axis=x,large=false]
-setblock 286 64 310 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "140.7"}','{"text": "storage"}','{"text": "trash"}','{"text": ""}']}}
-setblock 287 64 310 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Bau einen"}','{"text": "Mülleimer"}','{"text": ""}','{"text": ""}']}}
-fill 295 64 298 295 79 311 minecraft:light_gray_concrete
-setblock 290 64 303 trashcans:item_trash_can
-setblock 290 65 303 minecraft:hopper[facing=down]
+# 140 enderio/smelter, cap_bank, filter, soul_binder, vacuum_chest, enchanter
+#area 211 275 281 300
+fill 211 64 275 255 91 300 minecraft:air
+fill 256 64 275 281 91 300 minecraft:air
+fill 211 60 275 281 62 300 minecraft:stone
+fill 211 63 275 281 63 300 minecraft:light_gray_concrete
+fill 215 64 281 281 79 281 minecraft:light_gray_concrete
+fill 215 64 281 215 79 294 minecraft:light_gray_concrete
+setblock 216 64 293 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "140.1"}','{"text": "enderio"}','{"text": "smelter"}','{"text": ""}']}}
+setblock 217 64 293 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Bau die"}','{"text": "Legierungsschmelze"}','{"text": ""}','{"text": ""}']}}
+fill 226 64 281 226 79 294 minecraft:light_gray_concrete
+setblock 219 64 286 enderio:alloy_smelter[facing=south,powered=true]
+setblock 221 64 286 enderio:sag_mill[facing=south,powered=true]
+setblock 223 64 286 minecraft:smooth_stone_slab
+summon item_display 223.5 64.95 286.5 {item:{id:"enderio:basic_capacitor",count:1},item_display:"fixed",billboard:"vertical",transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[1.0f,1.0f,1.0f]},brightness:{sky:15,block:15},Tags:["kw_shot"]}
+setblock 227 64 293 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "140.2"}','{"text": "enderio"}','{"text": "cap_bank"}','{"text": ""}']}}
+setblock 228 64 293 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Bau eine"}','{"text": "Kondensatorbank"}','{"text": ""}','{"text": ""}']}}
+fill 236 64 281 236 79 294 minecraft:light_gray_concrete
+fill 230 64 286 232 66 286 enderio:basic_capacitor_bank
+setblock 237 64 293 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "140.3"}','{"text": "enderio"}','{"text": "filter"}','{"text": ""}']}}
+setblock 238 64 293 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Stell eine"}','{"text": "Verbindung ein"}','{"text": ""}','{"text": ""}']}}
+fill 246 64 281 246 79 294 minecraft:light_gray_concrete
+setblock 240 64 286 minecraft:smooth_stone_slab
+summon item_display 240.5 64.95 286.5 {item:{id:"enderio:yeta_wrench",count:1},item_display:"fixed",billboard:"vertical",transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[1.0f,1.0f,1.0f]},brightness:{sky:15,block:15},Tags:["kw_shot"]}
+setblock 242 64 286 minecraft:smooth_stone_slab
+summon item_display 242.5 64.95 286.5 {item:{id:"enderio:basic_item_filter",count:1},item_display:"fixed",billboard:"vertical",transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[1.0f,1.0f,1.0f]},brightness:{sky:15,block:15},Tags:["kw_shot"]}
+setblock 247 64 293 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "140.4"}','{"text": "enderio"}','{"text": "soul_binder"}','{"text": ""}']}}
+setblock 248 64 293 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Bau den"}','{"text": "Seelenbinder"}','{"text": ""}','{"text": ""}']}}
+fill 256 64 281 256 79 294 minecraft:light_gray_concrete
+setblock 250 64 286 enderio:soul_binder[facing=south,powered=true]
+setblock 252 64 286 minecraft:smooth_stone_slab
+summon item_display 252.5 64.95 286.5 {item:{id:"enderio:soul_vial",count:1},item_display:"fixed",billboard:"vertical",transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[1.0f,1.0f,1.0f]},brightness:{sky:15,block:15},Tags:["kw_shot"]}
+setblock 257 64 293 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "140.5"}','{"text": "enderio"}','{"text": "vacuum_chest"}','{"text": ""}']}}
+setblock 258 64 293 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Stell eine"}','{"text": "Vakuumkiste auf"}','{"text": ""}','{"text": ""}']}}
+fill 266 64 281 266 79 294 minecraft:light_gray_concrete
+setblock 261 64 286 enderio:vacuum_chest
+summon item 259.5 64.2 287.5 {Item:{id:"minecraft:rotten_flesh",count:8},PickupDelay:32767,Age:-32768,Tags:["kw_shot"]}
+summon item 263.5 64.2 287.5 {Item:{id:"minecraft:bone",count:8},PickupDelay:32767,Age:-32768,Tags:["kw_shot"]}
+summon item 260.5 64.2 288.5 {Item:{id:"minecraft:gunpowder",count:8},PickupDelay:32767,Age:-32768,Tags:["kw_shot"]}
+summon item 262.5 64.2 285.5 {Item:{id:"minecraft:string",count:8},PickupDelay:32767,Age:-32768,Tags:["kw_shot"]}
+setblock 267 64 293 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "140.6"}','{"text": "enderio"}','{"text": "enchanter"}','{"text": ""}']}}
+setblock 268 64 293 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Bau den"}','{"text": "Verzauberer"}','{"text": ""}','{"text": ""}']}}
+fill 276 64 281 276 79 294 minecraft:light_gray_concrete
+setblock 271 64 286 enderio:enchanter[facing=south]
 execute as @e[type=minecraft:item,tag=!kw_shot] run kill @s

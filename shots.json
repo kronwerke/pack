@@ -1,12 +1,334 @@
 {
  "shots": [
   {
-   "name": "aa_eternal_starlight_portal",
+   "name": "ab_create_trains_welcome",
    "dim": "kronwerke:testworld",
    "pos": [
-    363.54,
-    70.69,
-    355.1
+    338.68,
+    67.16,
+    57.89
+   ],
+   "yaw": 165.0,
+   "pitch": 35.0,
+   "fov": 60,
+   "width": 640,
+   "height": 360
+  },
+  {
+   "name": "ab_ars_master_golem_bookwyrm",
+   "dim": "kronwerke:testworld",
+   "pos": [
+    223.21,
+    66.84,
+    140.5
+   ],
+   "yaw": 165.0,
+   "pitch": 35.0,
+   "fov": 60,
+   "width": 640,
+   "height": 360
+  },
+  {
+   "name": "ab_gaia_fight",
+   "dim": "kronwerke:testworld",
+   "pos": [
+    246.64,
+    67.07,
+    161.76
+   ],
+   "yaw": 165.0,
+   "pitch": 35.0,
+   "fov": 60,
+   "width": 640,
+   "height": 360
+  },
+  {
+   "name": "ab_immersive_pump",
+   "dim": "kronwerke:testworld",
+   "pos": [
+    31.24,
+    65.19,
+    231.27
+   ],
+   "yaw": 165.0,
+   "pitch": 35.0,
+   "fov": 60,
+   "width": 640,
+   "height": 360
+  },
+  {
+   "name": "ab_immersive_treated_wood",
+   "dim": "kronwerke:testworld",
+   "pos": [
+    46.24,
+    65.19,
+    231.27
+   ],
+   "yaw": 165.0,
+   "pitch": 35.0,
+   "fov": 60,
+   "width": 640,
+   "height": 360
+  },
+  {
+   "name": "ab_immersive_heavy_light",
+   "dim": "kronwerke:testworld",
+   "pos": [
+    263.24,
+    65.19,
+    231.27
+   ],
+   "yaw": 165.0,
+   "pitch": 35.0,
+   "fov": 60,
+   "width": 640,
+   "height": 360
+  },
+  {
+   "name": "ab_immersive_heavy_heavy",
+   "dim": "kronwerke:testworld",
+   "pos": [
+    273.24,
+    65.19,
+    231.27
+   ],
+   "yaw": 165.0,
+   "pitch": 35.0,
+   "fov": 60,
+   "width": 640,
+   "height": 360
+  },
+  {
+   "name": "ab_immersive_heavy_resonanz",
+   "dim": "kronwerke:testworld",
+   "pos": [
+    156.24,
+    65.19,
+    254.27
+   ],
+   "yaw": 165.0,
+   "pitch": 35.0,
+   "fov": 60,
+   "width": 640,
+   "height": 360
+  },
+  {
+   "name": "ab_immersive_heavy_duroplast",
+   "dim": "kronwerke:testworld",
+   "pos": [
+    185.24,
+    65.19,
+    254.27
+   ],
+   "yaw": 165.0,
+   "pitch": 35.0,
+   "fov": 60,
+   "width": 640,
+   "height": 360
+  },
+  {
+   "name": "ab_industrial_welcome",
+   "dim": "kronwerke:testworld",
+   "pos": [
+    210.24,
+    65.19,
+    254.27
+   ],
+   "yaw": 165.0,
+   "pitch": 35.0,
+   "fov": 60,
+   "width": 640,
+   "height": 360
+  },
+  {
+   "name": "ab_industrial_plastic",
+   "dim": "kronwerke:testworld",
+   "pos": [
+    240.24,
+    65.19,
+    254.27
+   ],
+   "yaw": 165.0,
+   "pitch": 35.0,
+   "fov": 60,
+   "width": 640,
+   "height": 360
+  },
+  {
+   "name": "ab_industrial_addons",
+   "dim": "kronwerke:testworld",
+   "pos": [
+    272.24,
+    65.19,
+    254.27
+   ],
+   "yaw": 165.0,
+   "pitch": 35.0,
+   "fov": 60,
+   "width": 640,
+   "height": 360
+  },
+  {
+   "name": "ab_oritech_plastic",
+   "dim": "kronwerke:testworld",
+   "pos": [
+    27.31,
+    65.37,
+    289.52
+   ],
+   "yaw": 165.0,
+   "pitch": 35.0,
+   "fov": 60,
+   "width": 640,
+   "height": 360
+  },
+  {
+   "name": "ab_oritech_fragment",
+   "dim": "kronwerke:testworld",
+   "pos": [
+    79.24,
+    65.19,
+    289.27
+   ],
+   "yaw": 165.0,
+   "pitch": 35.0,
+   "fov": 60,
+   "width": 640,
+   "height": 360
+  },
+  {
+   "name": "ab_oritech_addons",
+   "dim": "kronwerke:testworld",
+   "pos": [
+    89.24,
+    65.19,
+    289.27
+   ],
+   "yaw": 165.0,
+   "pitch": 35.0,
+   "fov": 60,
+   "width": 640,
+   "height": 360
+  },
+  {
+   "name": "ab_oritech_addon_quarry",
+   "dim": "kronwerke:testworld",
+   "pos": [
+    99.24,
+    65.19,
+    289.27
+   ],
+   "yaw": 165.0,
+   "pitch": 35.0,
+   "fov": 60,
+   "width": 640,
+   "height": 360
+  },
+  {
+   "name": "ab_oritech_addon_crop",
+   "dim": "kronwerke:testworld",
+   "pos": [
+    109.24,
+    65.19,
+    289.27
+   ],
+   "yaw": 165.0,
+   "pitch": 35.0,
+   "fov": 60,
+   "width": 640,
+   "height": 360
+  },
+  {
+   "name": "ab_productive_trees_pollinated",
+   "dim": "kronwerke:testworld",
+   "pos": [
+    102.24,
+    65.19,
+    379.27
+   ],
+   "yaw": 165.0,
+   "pitch": 35.0,
+   "fov": 60,
+   "width": 640,
+   "height": 360
+  },
+  {
+   "name": "ab_productive_trees_loot_saplings",
+   "dim": "kronwerke:testworld",
+   "pos": [
+    113.61,
+    66.18,
+    380.64
+   ],
+   "yaw": 165.0,
+   "pitch": 35.0,
+   "fov": 60,
+   "width": 640,
+   "height": 360
+  },
+  {
+   "name": "ab_draconic_chaos_reactor",
+   "dim": "kronwerke:testworld",
+   "pos": [
+    45.31,
+    65.37,
+    398.52
+   ],
+   "yaw": 165.0,
+   "pitch": 35.0,
+   "fov": 60,
+   "width": 640,
+   "height": 360
+  },
+  {
+   "name": "ab_mahou_tsukai_cloth",
+   "dim": "kronwerke:testworld",
+   "pos": [
+    142.24,
+    65.19,
+    398.27
+   ],
+   "yaw": 165.0,
+   "pitch": 35.0,
+   "fov": 60,
+   "width": 640,
+   "height": 360
+  },
+  {
+   "name": "ab_mahou_tsukai_fay_sight",
+   "dim": "kronwerke:testworld",
+   "pos": [
+    152.24,
+    65.19,
+    398.27
+   ],
+   "yaw": 165.0,
+   "pitch": 35.0,
+   "fov": 60,
+   "width": 640,
+   "height": 360
+  },
+  {
+   "name": "ab_mahou_tsukai_staff",
+   "dim": "kronwerke:testworld",
+   "pos": [
+    162.24,
+    65.19,
+    398.27
+   ],
+   "yaw": 165.0,
+   "pitch": 35.0,
+   "fov": 60,
+   "width": 640,
+   "height": 360
+  },
+  {
+   "name": "ab_theurgy_wire",
+   "dim": "kronwerke:testworld",
+   "pos": [
+    156.24,
+    65.19,
+    419.27
    ],
    "yaw": 165.0,
    "pitch": 35.0,

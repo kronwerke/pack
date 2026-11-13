@@ -1,14 +1,13 @@
-# 101 occultism/foliot_crusher
-#area 30 182 49 207
-fill 30 64 182 49 91 207 minecraft:air
-fill 30 60 182 49 62 207 minecraft:stone
-fill 30 63 182 49 63 207 minecraft:light_gray_concrete
-fill 34 64 188 49 79 188 minecraft:light_gray_concrete
-fill 34 64 188 34 79 201 minecraft:light_gray_concrete
-setblock 35 64 200 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "101"}','{"text": "occultism"}','{"text": "foliot_crusher"}','{"text": ""}']}}
-setblock 36 64 200 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Foliot crusher"}','{"text": "next to a pile"}','{"text": "of dust"}','{"text": ""}']}}
-fill 44 64 188 44 79 201 minecraft:light_gray_concrete
-summon occultism:foliot 38.5 64 193.5 {NoAI:1b,PersistenceRequired:1b,Silent:1b,Tags:["kw_shot"],Rotation:[180f,0f]}
-summon item 40.5 64.2 193.5 {Item:{id:"minecraft:raw_iron",count:8},PickupDelay:32767,Age:-32768,Tags:["kw_shot"]}
-summon item 41.5 64.2 194.5 {Item:{id:"occultism:iron_dust",count:16},PickupDelay:32767,Age:-32768,Tags:["kw_shot"]}
+# 101 alfheim/elementium_armor
+#area 334 145 353 170
+fill 334 64 145 353 91 170 minecraft:air
+fill 334 60 145 353 62 170 minecraft:stone
+fill 334 63 145 353 63 170 minecraft:light_gray_concrete
+fill 338 64 151 353 79 151 minecraft:light_gray_concrete
+fill 338 64 151 338 79 164 minecraft:light_gray_concrete
+setblock 339 64 163 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "101"}','{"text": "alfheim"}','{"text": "elementium_armor"}','{"text": ""}']}}
+setblock 340 64 163 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "a pixie"}','{"text": "attacking a mob"}','{"text": ""}','{"text": ""}']}}
+fill 348 64 151 348 79 164 minecraft:light_gray_concrete
+summon armor_stand 342.5 64 156.5 {ArmorItems:[{id:"botania:elementium_boots",count:1},{id:"botania:elementium_leggings",count:1},{id:"botania:elementium_chestplate",count:1},{id:"botania:elementium_helmet",count:1}],ShowArms:1b,NoBasePlate:1b,Tags:["kw_shot"],Rotation:[180f,0f]}
+summon botania:pixie 345.5 65 156.5 {NoAI:1b,PersistenceRequired:1b,Silent:1b,Tags:["kw_shot"],Rotation:[180f,0f]}
 execute as @e[type=minecraft:item,tag=!kw_shot] run kill @s

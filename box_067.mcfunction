@@ -1,18 +1,15 @@
-# 067 ars_nouveau/drygmy
-#area 88 124 107 149
-fill 88 64 124 107 91 149 minecraft:air
-fill 88 60 124 107 62 149 minecraft:stone
-fill 88 63 124 107 63 149 minecraft:light_gray_concrete
-fill 92 64 130 107 79 130 minecraft:light_gray_concrete
-fill 92 64 130 92 79 143 minecraft:light_gray_concrete
-setblock 93 64 142 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "067"}','{"text": "ars_nouveau"}','{"text": "drygmy"}','{"text": ""}']}}
-setblock 94 64 142 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Drygmy henge"}','{"text": "with chest and"}','{"text": "jar"}','{"text": ""}']}}
-fill 102 64 130 102 79 143 minecraft:light_gray_concrete
-setblock 97 64 135 minecraft:mossy_cobblestone
-kw testworld use 97 64 135 up ars_nouveau:drygmy_charm
-execute unless block 97 64 135 minecraft:mossy_cobblestone
-setblock 98 64 135 minecraft:chest[facing=south]{Items:[]}
-setblock 96 64 135 ars_nouveau:source_jar[fill=11]{source:10000}
-summon minecraft:cow 99.5 64 137.5 {NoAI:1b,PersistenceRequired:1b,Silent:1b,Tags:["kw_shot"],Rotation:[180f,0f]}
-summon minecraft:sheep 95.5 64 137.5 {NoAI:1b,PersistenceRequired:1b,Silent:1b,Tags:["kw_shot"],Rotation:[180f,0f]}
+# 067 ars_nouveau/starbuncle_work
+#area 73 124 92 149
+fill 73 64 124 92 91 149 minecraft:air
+fill 73 60 124 92 62 149 minecraft:stone
+fill 73 63 124 92 63 149 minecraft:light_gray_concrete
+fill 77 64 130 92 79 130 minecraft:light_gray_concrete
+fill 77 64 130 77 79 143 minecraft:light_gray_concrete
+setblock 78 64 142 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "067"}','{"text": "ars_nouveau"}','{"text": "starbuncle_work"}','{"text": ""}']}}
+setblock 79 64 142 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "dominion wand"}','{"text": "links between"}','{"text": "chamber,"}','{"text": "Starbuncle and"}']}}
+setblock 80 64 142 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "chest"}','{"text": ""}','{"text": ""}','{"text": ""}']}}
+fill 87 64 130 87 79 143 minecraft:light_gray_concrete
+setblock 80 64 135 ars_nouveau:imbuement_chamber[facing=up]
+summon ars_nouveau:starbuncle 82.5 64 135.5 {NoAI:1b,PersistenceRequired:1b,Silent:1b,Tags:["kw_shot"],Rotation:[180f,0f]}
+setblock 84 64 135 minecraft:chest[facing=south,type=single,waterlogged=false]
 execute as @e[type=minecraft:item,tag=!kw_shot] run kill @s

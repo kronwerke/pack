@@ -1,21 +1,17 @@
-# 064 ars_nouveau/apparatus
-#area 43 124 62 149
-fill 43 64 124 62 91 149 minecraft:air
-fill 43 60 124 62 62 149 minecraft:stone
-fill 43 63 124 62 63 149 minecraft:light_gray_concrete
-fill 47 64 130 62 79 130 minecraft:light_gray_concrete
-fill 47 64 130 47 79 143 minecraft:light_gray_concrete
-setblock 48 64 142 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "064"}','{"text": "ars_nouveau"}','{"text": "apparatus"}','{"text": ""}']}}
-setblock 49 64 142 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "core, apparatus"}','{"text": "and pedestals"}','{"text": "in range"}','{"text": ""}']}}
-fill 57 64 130 57 79 143 minecraft:light_gray_concrete
-setblock 52 64 135 ars_nouveau:arcane_core[facing=up]
-setblock 52 65 135 ars_nouveau:enchanting_apparatus[facing=up]
-setblock 50 64 133 ars_nouveau:arcane_pedestal[facing=up]
-setblock 52 64 132 ars_nouveau:arcane_pedestal[facing=up]
-setblock 54 64 133 ars_nouveau:arcane_pedestal[facing=up]
-setblock 49 64 135 ars_nouveau:arcane_pedestal[facing=up]
-setblock 55 64 135 ars_nouveau:arcane_pedestal[facing=up]
-setblock 50 64 137 ars_nouveau:arcane_pedestal[facing=up]
-setblock 54 64 137 ars_nouveau:arcane_pedestal[facing=up]
-setblock 55 64 132 ars_nouveau:source_jar[fill=11]{source:10000}
+# 064 ars_nouveau/chamber_auto
+#area 28 124 47 149
+fill 28 64 124 47 91 149 minecraft:air
+fill 28 60 124 47 62 149 minecraft:stone
+fill 28 63 124 47 63 149 minecraft:light_gray_concrete
+fill 32 64 130 47 79 130 minecraft:light_gray_concrete
+fill 32 64 130 32 79 143 minecraft:light_gray_concrete
+setblock 33 64 142 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "064"}','{"text": "ars_nouveau"}','{"text": "chamber_auto"}','{"text": ""}']}}
+setblock 34 64 142 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "hoppers above"}','{"text": "and below a"}','{"text": "chamber feeding"}','{"text": "a chest"}']}}
+fill 42 64 130 42 79 143 minecraft:light_gray_concrete
+setblock 37 67 135 minecraft:chest[facing=south]{Items:[{Slot:0b,id:"minecraft:amethyst_shard",count:64}]}
+setblock 37 66 135 minecraft:hopper[facing=down]
+setblock 37 65 135 ars_nouveau:imbuement_chamber[facing=up]
+setblock 37 64 135 minecraft:hopper[facing=east]
+setblock 38 64 135 minecraft:chest[facing=south]{Items:[]}
+setblock 35 64 135 ars_nouveau:source_jar[fill=11]{source:10000}
 execute as @e[type=minecraft:item,tag=!kw_shot] run kill @s

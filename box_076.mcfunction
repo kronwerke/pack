@@ -1,13 +1,20 @@
-# 076 ars_master/alteration
-#area 227 124 246 149
-fill 227 64 124 246 91 149 minecraft:air
-fill 227 60 124 246 62 149 minecraft:stone
-fill 227 63 124 246 63 149 minecraft:light_gray_concrete
-fill 231 64 130 246 79 130 minecraft:light_gray_concrete
-fill 231 64 130 231 79 143 minecraft:light_gray_concrete
-setblock 232 64 142 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "076"}','{"text": "ars_master"}','{"text": "alteration"}','{"text": ""}']}}
-setblock 233 64 142 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "alteration"}','{"text": "table with a"}','{"text": "robe on the"}','{"text": "stand"}']}}
-fill 241 64 130 241 79 143 minecraft:light_gray_concrete
-kw testworld use 235 63 135 up ars_nouveau:alteration_table
-summon armor_stand 238.5 64 135.5 {ArmorItems:[{id:"ars_nouveau:arcanist_boots",count:1},{id:"ars_nouveau:arcanist_leggings",count:1},{id:"ars_nouveau:arcanist_robes",count:1},{id:"ars_nouveau:arcanist_hood",count:1}],ShowArms:1b,NoBasePlate:1b,Tags:["kw_shot"],Rotation:[180f,0f]}
+# 076 ars_master/golem_bookwyrm
+#area 212 124 231 149
+fill 212 64 124 231 91 149 minecraft:air
+fill 212 60 124 231 62 149 minecraft:stone
+fill 212 63 124 231 63 149 minecraft:light_gray_concrete
+fill 216 64 130 231 79 130 minecraft:light_gray_concrete
+fill 216 64 130 216 79 143 minecraft:light_gray_concrete
+setblock 217 64 142 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "076"}','{"text": "ars_master"}','{"text": "golem_bookwyrm"}','{"text": ""}']}}
+setblock 218 64 142 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "amethyst golem"}','{"text": "at a geode,"}','{"text": "storage lectern"}','{"text": "GUI"}']}}
+fill 226 64 130 226 79 143 minecraft:light_gray_concrete
+fill 219 64 134 221 66 135 minecraft:calcite
+fill 220 64 135 220 65 135 minecraft:budding_amethyst
+setblock 219 65 135 minecraft:amethyst_block
+setblock 221 64 135 minecraft:amethyst_block
+setblock 220 64 136 minecraft:amethyst_cluster[facing=south]
+setblock 220 66 135 minecraft:amethyst_block
+summon ars_nouveau:amethyst_golem 221.5 64 137.5 {NoAI:1b,PersistenceRequired:1b,Silent:1b,Tags:["kw_shot"],Rotation:[0f,0f]}
+setblock 223 64 135 ars_nouveau:storage_lectern
+setblock 224 64 135 minecraft:chest[facing=south,type=single,waterlogged=false]
 execute as @e[type=minecraft:item,tag=!kw_shot] run kill @s

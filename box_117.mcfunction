@@ -1,15 +1,13 @@
-# 117 immersive/coke_oven
-#area 11 217 30 242
-fill 11 64 217 30 91 242 minecraft:air
-fill 11 60 217 30 62 242 minecraft:stone
-fill 11 63 217 30 63 242 minecraft:light_gray_concrete
-fill 15 64 223 30 79 223 minecraft:light_gray_concrete
-fill 15 64 223 15 79 236 minecraft:light_gray_concrete
-setblock 16 64 235 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "117"}','{"text": "immersive"}','{"text": "coke_oven"}','{"text": ""}']}}
-setblock 17 64 235 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "formed coke"}','{"text": "oven with GUI,"}','{"text": "the bucket"}','{"text": "slot, a pump"}']}}
-setblock 18 64 235 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "with pipes"}','{"text": ""}','{"text": ""}','{"text": ""}']}}
-fill 25 64 223 25 79 236 minecraft:light_gray_concrete
-place template immersiveengineering:multiblocks/coke_oven 19 64 226 none
-kw testworld use 20 65 228 south immersiveengineering:hammer
-execute unless block 20 65 228 immersiveengineering:cokebrick
+# 117 hexerei/candles
+#area 279 182 298 207
+fill 279 64 182 298 91 207 minecraft:air
+fill 279 60 182 298 62 207 minecraft:stone
+fill 279 63 182 298 63 207 minecraft:light_gray_concrete
+fill 283 64 188 298 79 188 minecraft:light_gray_concrete
+fill 283 64 188 283 79 201 minecraft:light_gray_concrete
+setblock 284 64 200 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "117"}','{"text": "hexerei"}','{"text": "candles"}','{"text": ""}']}}
+setblock 285 64 200 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "candle dipper"}','{"text": "on a tallow"}','{"text": "cauldron with"}','{"text": "candles"}']}}
+fill 293 64 188 293 79 201 minecraft:light_gray_concrete
+setblock 288 64 193 hexerei:mixing_cauldron
+setblock 288 65 193 hexerei:candle_dipper[facing=south]
 execute as @e[type=minecraft:item,tag=!kw_shot] run kill @s

@@ -1,13 +1,21 @@
-# 092 botania_runes/rune_core
-#area 199 145 218 170
-fill 199 64 145 218 91 170 minecraft:air
-fill 199 60 145 218 62 170 minecraft:stone
-fill 199 63 145 218 63 170 minecraft:light_gray_concrete
-fill 203 64 151 218 79 151 minecraft:light_gray_concrete
-fill 203 64 151 203 79 164 minecraft:light_gray_concrete
-setblock 204 64 163 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "092"}','{"text": "botania_runes"}','{"text": "rune_core"}','{"text": ""}']}}
-setblock 205 64 163 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "the crafting"}','{"text": "grid"}','{"text": ""}','{"text": ""}']}}
-fill 213 64 151 213 79 164 minecraft:light_gray_concrete
-setblock 208 64 156 minecraft:smooth_stone_slab
-summon item_display 208.5 65.4 156.5 {item:{id:"kronwerke:rune_core",count:1},item_display:"fixed",billboard:"vertical",transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[2.0f,2.0f,2.0f]},brightness:{sky:15,block:15},Tags:["kw_shot"]}
+# 092 botania_runes/plate_base
+#area 167 145 186 170
+fill 167 64 145 186 91 170 minecraft:air
+fill 167 60 145 186 62 170 minecraft:stone
+fill 167 63 145 186 63 170 minecraft:light_gray_concrete
+fill 171 64 151 186 79 151 minecraft:light_gray_concrete
+fill 171 64 151 171 79 164 minecraft:light_gray_concrete
+setblock 172 64 163 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "092"}','{"text": "botania_runes"}','{"text": "plate_base"}','{"text": ""}']}}
+setblock 173 64 163 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "the 3x3 lapis"}','{"text": "and livingrock"}','{"text": "base with plate"}','{"text": "and sparks"}']}}
+fill 181 64 151 181 79 164 minecraft:light_gray_concrete
+setblock 175 64 155 botania:livingrock
+setblock 175 64 156 minecraft:lapis_block
+setblock 175 64 157 botania:livingrock
+setblock 176 64 155 minecraft:lapis_block
+setblock 176 64 156 botania:livingrock
+setblock 176 64 157 minecraft:lapis_block
+setblock 177 64 155 botania:livingrock
+setblock 177 64 156 minecraft:lapis_block
+setblock 177 64 157 botania:livingrock
+setblock 176 65 156 botania:terrestrial_agglomeration_plate
 execute as @e[type=minecraft:item,tag=!kw_shot] run kill @s

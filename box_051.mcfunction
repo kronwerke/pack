@@ -1,21 +1,13 @@
-# 051 mekanism_advanced/teleporter
-#area 144 95 163 120
-fill 144 64 95 163 91 120 minecraft:air
-fill 144 60 95 163 62 120 minecraft:stone
-fill 144 63 95 163 63 120 minecraft:light_gray_concrete
-fill 148 64 101 163 79 101 minecraft:light_gray_concrete
-fill 148 64 101 148 79 114 minecraft:light_gray_concrete
-setblock 149 64 113 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "051"}','{"text": "mekanism_advanced"}','{"text": "teleporter"}','{"text": ""}']}}
-setblock 150 64 113 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "built"}','{"text": "teleporter"}','{"text": "frame with"}','{"text": "portal"}']}}
-fill 158 64 101 158 79 114 minecraft:light_gray_concrete
-setblock 153 64 106 mekanism:teleporter
-setblock 152 64 106 mekanism:teleporter_frame
-setblock 154 64 106 mekanism:teleporter_frame
-setblock 152 65 106 mekanism:teleporter_frame
-setblock 154 65 106 mekanism:teleporter_frame
-setblock 152 66 106 mekanism:teleporter_frame
-setblock 154 66 106 mekanism:teleporter_frame
-setblock 152 67 106 mekanism:teleporter_frame
-setblock 154 67 106 mekanism:teleporter_frame
-setblock 153 67 106 mekanism:teleporter_frame
+# 051 mekanism_ores/foundry
+#area 125 95 148 130
+fill 125 64 95 148 91 130 minecraft:air
+fill 125 60 95 148 62 130 minecraft:stone
+fill 125 63 95 148 63 130 minecraft:light_gray_concrete
+fill 129 64 101 148 79 101 minecraft:light_gray_concrete
+fill 129 64 101 129 79 124 minecraft:light_gray_concrete
+setblock 130 64 123 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "051"}','{"text": "mekanism_ores"}','{"text": "foundry"}','{"text": ""}']}}
+setblock 131 64 123 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "the Metalworks"}','{"text": "foundry with"}','{"text": "raw ore going"}','{"text": "in and the"}']}}
+setblock 132 64 123 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "ingot cast"}','{"text": ""}','{"text": ""}','{"text": ""}']}}
+fill 143 64 101 143 79 124 minecraft:light_gray_concrete
+kw testworld place shots:productivemetalworks/foundry_molten 133 63 105 none
 execute as @e[type=minecraft:item,tag=!kw_shot] run kill @s

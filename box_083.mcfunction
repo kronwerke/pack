@@ -1,13 +1,13 @@
-# 083 botania/mana_void
-#area 56 145 75 170
-fill 56 64 145 75 91 170 minecraft:air
-fill 56 60 145 75 62 170 minecraft:stone
-fill 56 63 145 75 63 170 minecraft:light_gray_concrete
-fill 60 64 151 75 79 151 minecraft:light_gray_concrete
-fill 60 64 151 60 79 164 minecraft:light_gray_concrete
-setblock 61 64 163 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "083"}','{"text": "botania"}','{"text": "mana_void"}','{"text": ""}']}}
-setblock 62 64 163 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "a mana void"}','{"text": "under a pool"}','{"text": ""}','{"text": ""}']}}
-fill 70 64 151 70 79 164 minecraft:light_gray_concrete
-setblock 65 64 156 botania:mana_void
-setblock 65 65 156 botania:mana_pool{mana:1000000}
+# 083 botania/pool
+#area 26 145 45 170
+fill 26 64 145 45 91 170 minecraft:air
+fill 26 60 145 45 62 170 minecraft:stone
+fill 26 63 145 45 63 170 minecraft:light_gray_concrete
+fill 30 64 151 45 79 151 minecraft:light_gray_concrete
+fill 30 64 151 30 79 164 minecraft:light_gray_concrete
+setblock 31 64 163 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "083"}','{"text": "botania"}','{"text": "pool"}','{"text": ""}']}}
+setblock 32 64 163 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "a full pool"}','{"text": "with a spreader"}','{"text": "beam, wand in"}','{"text": "hand"}']}}
+fill 40 64 151 40 79 164 minecraft:light_gray_concrete
+setblock 36 64 156 botania:mana_pool{mana:1000000}
+setblock 33 64 156 botania:mana_spreader{rotationX:180f,rotationY:0f,mana:1000}
 execute as @e[type=minecraft:item,tag=!kw_shot] run kill @s

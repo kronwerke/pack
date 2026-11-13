@@ -1,12 +1,19 @@
-# 075 ars_master/ritual_awakening
-#area 212 124 231 149
-fill 212 64 124 231 91 149 minecraft:air
-fill 212 60 124 231 62 149 minecraft:stone
-fill 212 63 124 231 63 149 minecraft:light_gray_concrete
-fill 216 64 130 231 79 130 minecraft:light_gray_concrete
-fill 216 64 130 216 79 143 minecraft:light_gray_concrete
-setblock 217 64 142 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "075"}','{"text": "ars_master"}','{"text": "ritual_awakening"}','{"text": ""}']}}
-setblock 218 64 142 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "a Weald Walker"}','{"text": ""}','{"text": ""}','{"text": ""}']}}
-fill 226 64 130 226 79 143 minecraft:light_gray_concrete
-summon ars_nouveau:cascading_weald_walker 221.5 64 135.5 {NoAI:1b,PersistenceRequired:1b,Silent:1b,Tags:["kw_shot"],Rotation:[180f,0f]}
+# 075 ars_master/wilden_ritual
+#area 197 124 216 149
+fill 197 64 124 216 91 149 minecraft:air
+fill 197 60 124 216 62 149 minecraft:stone
+fill 197 63 124 216 63 149 minecraft:light_gray_concrete
+fill 201 64 130 216 79 130 minecraft:light_gray_concrete
+fill 201 64 130 201 79 143 minecraft:light_gray_concrete
+setblock 202 64 142 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "075"}','{"text": "ars_master"}','{"text": "wilden_ritual"}','{"text": ""}']}}
+setblock 203 64 142 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "brazier with"}','{"text": "spike, horn and"}','{"text": "wing"}','{"text": ""}']}}
+fill 211 64 130 211 79 143 minecraft:light_gray_concrete
+setblock 206 64 135 ars_nouveau:ritual_brazier
+kw testworld use 206 64 135 up ars_nouveau:ritual_wilden_summon
+setblock 204 64 135 ars_nouveau:arcane_pedestal[facing=up]
+kw testworld use 204 64 135 south ars_nouveau:wilden_spike
+setblock 208 64 135 ars_nouveau:arcane_pedestal[facing=up]
+kw testworld use 208 64 135 south ars_nouveau:wilden_horn
+setblock 206 64 133 ars_nouveau:arcane_pedestal[facing=up]
+kw testworld use 206 64 133 south ars_nouveau:wilden_wing
 execute as @e[type=minecraft:item,tag=!kw_shot] run kill @s

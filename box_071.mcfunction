@@ -1,20 +1,16 @@
-# 071 ars_apprentice/turret
-#area 150 124 169 149
-fill 150 64 124 169 91 149 minecraft:air
-fill 150 60 124 169 62 149 minecraft:stone
-fill 150 63 124 169 63 149 minecraft:light_gray_concrete
-fill 154 64 130 169 79 130 minecraft:light_gray_concrete
-fill 154 64 130 154 79 143 minecraft:light_gray_concrete
-setblock 155 64 142 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "071"}','{"text": "ars_apprentice"}','{"text": "turret"}','{"text": ""}']}}
-setblock 156 64 142 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "turret in front"}','{"text": "of a"}','{"text": "cobblestone"}','{"text": "generator"}']}}
-fill 164 64 130 164 79 143 minecraft:light_gray_concrete
-setblock 159 64 136 ars_nouveau:basic_spell_turret
-setblock 159 64 134 minecraft:cobblestone
-setblock 158 64 134 minecraft:water
-setblock 160 64 134 minecraft:lava
-fill 157 64 133 161 64 133 minecraft:stone_bricks
-setblock 157 64 134 minecraft:stone_bricks
-setblock 161 64 134 minecraft:stone_bricks
-setblock 158 64 135 minecraft:glass
-setblock 160 64 135 minecraft:glass
+# 071 ars_apprentice/potions
+#area 135 124 154 149
+fill 135 64 124 154 91 149 minecraft:air
+fill 135 60 124 154 62 149 minecraft:stone
+fill 135 63 124 154 63 149 minecraft:light_gray_concrete
+fill 139 64 130 154 79 130 minecraft:light_gray_concrete
+fill 139 64 130 139 79 143 minecraft:light_gray_concrete
+setblock 140 64 142 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "071"}','{"text": "ars_apprentice"}','{"text": "potions"}','{"text": ""}']}}
+setblock 141 64 142 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "potion jars"}','{"text": "next to the"}','{"text": "cauldron and an"}','{"text": "alchemical"}']}}
+setblock 142 64 142 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "sourcelink"}','{"text": ""}','{"text": ""}','{"text": ""}']}}
+fill 149 64 130 149 79 143 minecraft:light_gray_concrete
+setblock 144 64 135 ars_nouveau:wixie_cauldron[converted=true,filled=true]
+setblock 142 64 135 ars_nouveau:potion_jar[fill=11]
+setblock 143 64 135 ars_nouveau:potion_jar[fill=6]
+setblock 146 64 135 ars_nouveau:alchemical_sourcelink
 execute as @e[type=minecraft:item,tag=!kw_shot] run kill @s

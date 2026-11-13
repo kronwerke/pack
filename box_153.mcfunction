@@ -1,44 +1,60 @@
-# 153 deeper_darker/portal, transmitter, resonarium, stalker, echo_shard
-#area 228 336 288 363
-fill 228 64 336 268 91 363 minecraft:air
-fill 269 64 336 288 91 363 minecraft:air
-fill 228 60 336 288 62 363 minecraft:stone
-fill 228 63 336 288 63 363 minecraft:light_gray_concrete
-fill 232 64 342 288 79 342 minecraft:light_gray_concrete
-fill 232 64 342 232 79 357 minecraft:light_gray_concrete
-setblock 233 64 356 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "153.1"}','{"text": "deeper_darker"}','{"text": "portal"}','{"text": ""}']}}
-setblock 234 64 356 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Bau das Portal"}','{"text": "zur Anderwelt"}','{"text": ""}','{"text": ""}']}}
-fill 241 64 342 241 79 357 minecraft:light_gray_concrete
-setblock 235 65 347 minecraft:reinforced_deepslate
-setblock 235 66 347 minecraft:reinforced_deepslate
-setblock 235 67 347 minecraft:reinforced_deepslate
-setblock 236 64 347 minecraft:reinforced_deepslate
-setblock 236 68 347 minecraft:reinforced_deepslate
-setblock 237 64 347 minecraft:reinforced_deepslate
-setblock 237 68 347 minecraft:reinforced_deepslate
-setblock 238 65 347 minecraft:reinforced_deepslate
-setblock 238 66 347 minecraft:reinforced_deepslate
-setblock 238 67 347 minecraft:reinforced_deepslate
-fill 236 65 347 237 67 347 deeperdarker:otherside_portal[axis=x]
-execute if block 236 66 347 deeperdarker:otherside_portal
-setblock 242 64 356 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "153.2"}','{"text": "deeper_darker"}','{"text": "transmitter"}','{"text": ""}']}}
-setblock 243 64 356 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Verbinde einen"}','{"text": "Sculksender"}','{"text": ""}','{"text": ""}']}}
-fill 251 64 342 251 79 357 minecraft:light_gray_concrete
-setblock 246 64 347 minecraft:smooth_stone_slab
-summon item_display 246.5 65.4 347.5 {item:{id:"deeperdarker:sculk_transmitter",count:1},item_display:"fixed",billboard:"vertical",transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[2.0f,2.0f,2.0f]},brightness:{sky:15,block:15},Tags:["kw_shot"]}
-setblock 252 64 356 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "153.3"}','{"text": "deeper_darker"}','{"text": "resonarium"}','{"text": ""}']}}
-setblock 253 64 356 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Schmiede"}','{"text": "Resonarium"}','{"text": ""}','{"text": ""}']}}
-fill 261 64 342 261 79 357 minecraft:light_gray_concrete
-summon armor_stand 256.5 64 347.5 {ArmorItems:[{id:"deeperdarker:resonarium_boots",count:1},{id:"deeperdarker:resonarium_leggings",count:1},{id:"deeperdarker:resonarium_chestplate",count:1},{id:"deeperdarker:resonarium_helmet",count:1}],ShowArms:1b,NoBasePlate:1b,Tags:["kw_shot"],Rotation:[180f,0f]}
-setblock 262 64 356 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "153.4"}','{"text": "deeper_darker"}','{"text": "stalker"}','{"text": ""}']}}
-setblock 263 64 356 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Besiege den"}','{"text": "Beobachter"}','{"text": ""}','{"text": ""}']}}
-fill 273 64 342 273 79 357 minecraft:light_gray_concrete
-summon deeperdarker:stalker 267.5 64 348.5 {NoAI:1b,PersistenceRequired:1b,Silent:1b,Tags:["kw_shot"],Rotation:[0f,0f]}
-setblock 274 64 356 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "153.5"}','{"text": "deeper_darker"}','{"text": "echo_shard"}','{"text": ""}']}}
-setblock 275 64 356 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Verstärke eine"}','{"text": "Echoscherbe"}','{"text": ""}','{"text": ""}']}}
-fill 283 64 342 283 79 357 minecraft:light_gray_concrete
-setblock 277 64 347 minecraft:smooth_stone_slab
-summon item_display 277.5 64.95 347.5 {item:{id:"deeperdarker:reinforced_echo_shard",count:1},item_display:"fixed",billboard:"vertical",transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[1.0f,1.0f,1.0f]},brightness:{sky:15,block:15},Tags:["kw_shot"]}
-setblock 279 64 347 minecraft:smooth_stone_slab
-summon item_display 279.5 64.95 347.5 {item:{id:"deeperdarker:ancient_compass",count:1},item_display:"fixed",billboard:"vertical",transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[1.0f,1.0f,1.0f]},brightness:{sky:15,block:15},Tags:["kw_shot"]}
+# 153 hostile_networks/deep_learner, sim_chamber, scaling, data_center
+#area 285 317 338 344
+fill 285 64 317 320 95 344 minecraft:air
+fill 321 64 317 338 95 344 minecraft:air
+fill 285 60 317 338 62 344 minecraft:stone
+fill 285 63 317 338 63 344 minecraft:light_gray_concrete
+fill 289 64 323 338 83 323 minecraft:light_gray_concrete
+fill 289 64 323 289 83 338 minecraft:light_gray_concrete
+setblock 290 64 337 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "153.1"}','{"text": "hostile_networks"}','{"text": "deep_learner"}','{"text": ""}']}}
+setblock 291 64 337 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Bau einen Deep"}','{"text": "Learner"}','{"text": ""}','{"text": ""}']}}
+fill 299 64 323 299 83 338 minecraft:light_gray_concrete
+setblock 294 64 328 minecraft:smooth_stone_slab
+summon item_display 294.5 65.4 328.5 {item:{id:"hostilenetworks:deep_learner",count:1},item_display:"fixed",billboard:"vertical",transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[2.0f,2.0f,2.0f]},brightness:{sky:15,block:15},Tags:["kw_shot"]}
+setblock 300 64 337 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "153.2"}','{"text": "hostile_networks"}','{"text": "sim_chamber"}','{"text": ""}']}}
+setblock 301 64 337 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Die"}','{"text": "Simulationskammer"}','{"text": ""}','{"text": ""}']}}
+fill 309 64 323 309 83 338 minecraft:light_gray_concrete
+setblock 303 64 328 hostilenetworks:sim_chamber[facing=south]
+setblock 305 64 328 hostilenetworks:loot_fabricator[facing=south]
+setblock 310 64 337 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "153.3"}','{"text": "hostile_networks"}','{"text": "scaling"}','{"text": ""}']}}
+setblock 311 64 337 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Viele Kammern,"}','{"text": "ein Modell je"}','{"text": "Kammer"}','{"text": ""}']}}
+fill 321 64 323 321 83 338 minecraft:light_gray_concrete
+setblock 312 64 328 hostilenetworks:sim_chamber[facing=south]
+setblock 313 64 328 hostilenetworks:sim_chamber[facing=south]
+setblock 314 64 328 hostilenetworks:sim_chamber[facing=south]
+setblock 315 64 328 hostilenetworks:sim_chamber[facing=south]
+setblock 316 64 328 hostilenetworks:sim_chamber[facing=south]
+setblock 317 64 328 hostilenetworks:sim_chamber[facing=south]
+setblock 318 64 328 hostilenetworks:sim_chamber[facing=south]
+setblock 315 64 330 hostilenetworks:loot_fabricator[facing=south]
+setblock 322 64 337 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "153.4"}','{"text": "hostile_networks"}','{"text": "data_center"}','{"text": ""}']}}
+setblock 323 64 337 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Das"}','{"text": "Rechenzentrum"}','{"text": ""}','{"text": ""}']}}
+fill 333 64 323 333 83 338 minecraft:light_gray_concrete
+fill 324 64 326 330 64 332 minecraft:obsidian
+fill 324 70 326 330 70 332 minecraft:black_stained_glass
+fill 324 65 326 324 69 326 minecraft:black_stained_glass
+fill 324 65 327 324 69 327 minecraft:black_stained_glass
+fill 324 65 328 324 69 328 minecraft:black_stained_glass
+fill 324 65 329 324 69 329 minecraft:black_stained_glass
+fill 324 65 330 324 69 330 minecraft:black_stained_glass
+fill 324 65 331 324 69 331 minecraft:black_stained_glass
+fill 324 65 332 324 69 332 minecraft:black_stained_glass
+fill 325 65 326 325 69 326 minecraft:black_stained_glass
+fill 325 65 332 325 69 332 minecraft:black_stained_glass
+fill 326 65 326 326 69 326 minecraft:black_stained_glass
+fill 326 65 332 326 69 332 minecraft:black_stained_glass
+fill 327 65 326 327 69 326 minecraft:black_stained_glass
+fill 327 65 332 327 69 332 minecraft:black_stained_glass
+fill 328 65 326 328 69 326 minecraft:black_stained_glass
+fill 328 65 332 328 69 332 minecraft:black_stained_glass
+fill 329 65 326 329 69 326 minecraft:black_stained_glass
+fill 329 65 332 329 69 332 minecraft:black_stained_glass
+fill 330 65 326 330 69 326 minecraft:black_stained_glass
+fill 330 65 327 330 69 327 minecraft:black_stained_glass
+fill 330 65 328 330 69 328 minecraft:black_stained_glass
+fill 330 65 329 330 69 329 minecraft:black_stained_glass
+fill 330 65 330 330 69 330 minecraft:black_stained_glass
+fill 330 65 331 330 69 331 minecraft:black_stained_glass
+fill 330 65 332 330 69 332 minecraft:black_stained_glass
+setblock 327 65 332 hostilenetworks:data_center[facing=south]
 execute as @e[type=minecraft:item,tag=!kw_shot] run kill @s

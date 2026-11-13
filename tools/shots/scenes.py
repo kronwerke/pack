@@ -768,17 +768,17 @@ def _(b):
     gate(b, "minecraft:obsidian", "minecraft:nether_portal[axis=x]")
 
 
-@scene("aether/portal", "list_dimensions/d_aether", w=8)
+@scene("aether/portal", w=8)
 def _(b):
     gate(b, "minecraft:glowstone", "aether:aether_portal[axis=x]")
 
 
-@scene("deeper_darker/portal", "list_dimensions/d_otherside", w=8)
+@scene("deeper_darker/portal", w=8)
 def _(b):
     gate(b, "minecraft:reinforced_deepslate", "deeperdarker:otherside_portal[axis=x]")
 
 
-@scene("undergarden/arrival", "list_dimensions/d_undergarden", w=8)
+@scene("undergarden/arrival", w=8)
 def _(b):
     gate(b, "minecraft:stone_bricks", "undergarden:undergarden_portal[axis=x]")
 
@@ -825,7 +825,7 @@ def _(b):
     b.use(4, 0, 4, "up", "immersiveengineering:connector_lv")
 
 
-@scene("immersive/connectors", "immersive/capacitor", w=11)
+@scene("immersive/connectors", w=11)
 def _(b):
     # two capacitors with a connector each, a relay on a post between them, copper wire from
     # one to the next: connectors and wire placed and strung the way a player does it
@@ -840,7 +840,7 @@ def _(b):
         b.use(x2, y2, 4, "south", "immersiveengineering:wirecoil_copper")
 
 
-@scene("immersive/dynamo", "immersive/windmill", w=15, d=11, h=26)
+@scene("immersive/dynamo", w=15, d=11, h=26)
 def _(b):
     # the dynamo on a post of treated wood, the windmill set against its shaft side
     b.f(7, 0, 3, 7, 6, 3, "immersiveengineering:treated_wood_horizontal")
@@ -1103,7 +1103,7 @@ def _(b):
     b.b(6, 0, 4, "ars_nouveau:source_jar[fill=11]", "{source:10000}")
 
 
-@scene("draconic/stabilizer", "draconic/tiers", w=11, d=11)
+@scene("draconic/stabilizer", w=11, d=11)
 def _(b):
     # the core of tier 3 in its cube of 26 draconium blocks, four stabilizers in one plane on
     # four sides, in line with the core's middle and outside its blocks
@@ -1147,14 +1147,14 @@ def forest_ritual(b, items):
     b.pitch = 48.0
 
 
-@scene("botania/manasteel_prep", "botania_runes/ritual", w=11, d=11)
+@scene("botania/manasteel_prep", w=11, d=11)
 def _(b):
     # manasteel on Kronwerke: four infused iron, two livingwood twigs, a mana diamond and a gold leaf
     forest_ritual(b, ["naturesaura:infused_iron", "botania:livingwood_twig", "naturesaura:infused_iron", "botania:mana_diamond",
                       "naturesaura:gold_leaf", "naturesaura:infused_iron", "botania:livingwood_twig", "naturesaura:infused_iron"])
 
 
-@scene("mekanism_elite/mekasuit", "list_gear/mekasuit")
+@scene("mekanism_elite/mekasuit")
 def _(b):
     # the whole suit on a stand beside the modification station
     b.stand(3, 0, 4, armor=("mekanism:mekasuit_helmet", "mekanism:mekasuit_bodyarmor", "mekanism:mekasuit_pants", "mekanism:mekasuit_boots"))
@@ -1596,13 +1596,14 @@ def _(b):
     b.f(3, 0, 4, 5, 2, 4, "enderio:basic_capacitor_bank")
 
 
-@scene("pneumaticcraft/refinery", h=20)
+@scene("pneumaticcraft/refinery", d=13, h=20)
 def _(b):
-    # the refinery's controller, four outputs stacked on it: the lighter the product, the higher its output
-    b.b(4, 0, 4, "pneumaticcraft:refinery[facing=south]")
+    # the refinery's controller, four outputs stacked on it: the lighter the product, the higher its output.
+    # It stands at the back of a deep cell: a tall thing needs the camera far off.
+    b.b(4, 0, 3, "pneumaticcraft:refinery[facing=south]")
     for y in range(1, 5):
-        b.b(4, y, 4, "pneumaticcraft:refinery_output[facing=south]")
-    b.focus(2, 0, 3, 6, 5, 5)
+        b.b(4, y, 3, "pneumaticcraft:refinery_output[facing=south]")
+    b.focus(3, 0, 2, 5, 5, 4)
 
 
 @scene("list_power/mek_heat")
@@ -1657,24 +1658,26 @@ def _(b):
     totem(b, 4, 4, "runewood", ["arcane", "sacred", "sacred"])
 
 
-@scene("malum/quickening")
+@scene("malum/quickening", d=13, h=20)
 def _(b):
     # the Rite of Quickening: the same kind of totem of soulwood, eldritch, arcane and two infernal runes
-    totem(b, 4, 4, "soulwood", ["eldritch", "arcane", "infernal", "infernal"])
+    totem(b, 4, 3, "soulwood", ["eldritch", "arcane", "infernal", "infernal"])
+    b.focus(3, 0, 2, 5, 5, 4)
 
 
-@scene("pneumaticcraft/elevator")
+@scene("pneumaticcraft/elevator", d=13, h=20)
 def _(b):
     # the elevator base, four frames stacked on it, a caller at the upper floor
-    b.b(4, 0, 4, "pneumaticcraft:elevator_base")
-    b.f(4, 1, 4, 4, 4, 4, "pneumaticcraft:elevator_frame")
-    b.f(5, 0, 4, 5, 3, 4, "minecraft:stone_bricks")
-    b.b(5, 4, 4, "pneumaticcraft:elevator_caller[facing=south]")
+    b.b(4, 0, 3, "pneumaticcraft:elevator_base")
+    b.f(4, 1, 3, 4, 4, 3, "pneumaticcraft:elevator_frame")
+    b.f(5, 0, 3, 5, 3, 3, "minecraft:stone_bricks")
+    b.b(5, 4, 3, "pneumaticcraft:elevator_caller[facing=south]")
+    b.focus(3, 0, 2, 6, 5, 4)
 
 
 @scene("list_gear/mek_jetpack")
 def _(b):
-    b.stand(4, 0, 4, armor=(None, "mekanism:jetpack"))
+    b.stand(4, 0, 4, armor=(None, "mekanism:jetpack"), rot=20)   # its back to the camera: the jetpack is worn there
 
 
 @scene("list_power/nc_passive", w=11)
@@ -1692,14 +1695,6 @@ def _(b):
     b.b(4, 0, 4, "createaddition:alternator[facing=east]")
     b.b(3, 0, 4, "create:shaft[axis=x]")
     housed_motor(b, 2, 0, 4, "east", 64)
-
-
-@scene("enderio/grains")
-def _(b):
-    # a fire on bedrock, left to burn out
-    b.b(4, 0, 4, "minecraft:bedrock")
-    b.b(4, 1, 4, "minecraft:fire")
-    b.focus(3, 0, 3, 5, 2, 5)
 
 
 # ===================================================================================

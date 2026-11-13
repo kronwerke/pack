@@ -371,6 +371,18 @@ def clear(x0, z0, x1, z1, top):
     return out
 
 
+def wanted(key):
+    """Whether the camera takes this scene's picture. With KW_SHOTS_NEW set only what the book
+    has no picture of yet, and what KW_SHOTS_REDO names (keys, comma separated); the world is
+    built whole either way."""
+    if not os.environ.get("KW_SHOTS_NEW"):
+        return True
+    if key in os.environ.get("KW_SHOTS_REDO", "").split(","):
+        return True
+    return not os.path.exists(os.path.join(ROOT, "kubejs", "assets", "kronwerke", "textures", "quests", "shots",
+                                           key.replace("/", "_") + ".png"))
+
+
 def build(check=False):
     import scenes
     idx = quest_index()
@@ -403,7 +415,8 @@ def build(check=False):
         nonlocal x, z, row_depth, row_shots
         # the camera stands in the path south of the row, in front of the next row's north wall
         for k, cell_ in row_shots:
-            shots.append(camera(k, cell_, south_limit=z + row_depth + ROW_GAP - 0.7, yaw=cell_.yaw, pitch=cell_.pitch))
+            if wanted(k):
+                shots.append(camera(k, cell_, south_limit=z + row_depth + ROW_GAP - 0.7, yaw=cell_.yaw, pitch=cell_.pitch))
         row_shots = []
         if row_depth:
             z += row_depth + ROW_GAP

@@ -530,3 +530,7 @@ Incendium, which ran about a tenth of the tick in the 50 player load test:
 - The lines in the lower left of the title screen stand on a dark shade.
 - Kronwerke Core 0.39.31: quiet music of its own on the title screen, in the menus and while connecting, in place of the game's menu music. It follows the Music slider and can be turned off in the `/kw` menu's options.
 - `tools/trailer/`: the Season 2 trailer, thirty seconds of pixel art with music, painted and synthesised by script.
+
+## 0.24.40
+
+- Kronwerke Core 0.39.32: the menus' music no longer tries to start every tick when the Music slider is at zero or the game has no sound.

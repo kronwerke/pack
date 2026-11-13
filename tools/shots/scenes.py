@@ -542,23 +542,18 @@ def _(b):
 
 @scene("create/water_wheel", w=10)
 def _(b):
-    # Four wheels on one shaft, a sheet of water falling past their backs into a trench:
-    # falling water beside a wheel turns it, as in Ponder water_wheel. A source spreads to
-    # every side even while it falls, so the flume is closed all round and open below.
+    # Four wheels on one shaft across a stream: the water runs in a trench in the floor, from
+    # four sources at the back toward the camera, and passes under the wheels. Water that
+    # flows past a wheel turns it, as in Ponder water_wheel.
     for x in range(3, 7):
-        b.b(x, 1, 4, "create:water_wheel[facing=east]")
-        b.b(x, -1, 3, "minecraft:air")                    # the trench the water falls into
+        b.b(x, -1, 1, "minecraft:water")                       # the sources
+        for z in range(2, 8):
+            b.b(x, -1, z, "minecraft:air")                     # the trench they run down
+        b.b(x, 0, 4, "create:water_wheel[facing=east]")
     for x in (2, 7):
-        b.b(x, 0, 4, "create:andesite_casing")
-        b.b(x, 1, 4, "create:andesite_encased_shaft[axis=x]")
-    b.f(2, 2, 2, 7, 2, 3, "minecraft:spruce_planks")
-    # the front of the flume is a row of raised trapdoors: they hold the water and leave the
-    # wheels in view
-    b.f(3, 2, 4, 6, 2, 4, "minecraft:spruce_trapdoor[facing=south,half=bottom,open=true]")
-    b.f(3, 2, 3, 6, 2, 3, "minecraft:water")
-    b.pitch = 24.0
-    b.later(3, 1, 4, "data block @ {Speed:0.0f}", unless=True)       # it turns
-    b.later(4, 0, 5, "block @ minecraft:air")              # nothing spills to the front
+        b.b(x, 0, 4, "create:andesite_encased_shaft[axis=x]")
+    b.later(3, 0, 4, "data block @ {Speed:0.0f}", unless=True)       # it turns
+    b.later(4, -1, 6, "block @ minecraft:water")
 
 
 # ===================================================================================
@@ -857,7 +852,7 @@ def _(b):
 def _(b):
     # from the bottom: lit blaze burner, basin, a block of air, mixer; a cogwheel beside the
     # mixer turns it. In the basin what brass takes on Kronwerke.
-    b.b(4, 0, 4, "create:blaze_burner")
+    b.b(4, 0, 4, "create:blaze_burner[heat_level=smouldering]")
     b.use(4, 0, 4, "south", "create:creative_blaze_cake")
     b.b(4, 1, 4, "create:basin[facing=down]")
     b.b(4, 3, 4, "create:mechanical_mixer")
@@ -987,10 +982,10 @@ def _(b):
 
 @scene("powah/reactor", h=18)
 def _(b):
-    # one reactor block set down with 36 in the hand: it builds itself, three by three and four high
-    b.use(4, -1, 4, "up", "powah:reactor_starter")
-    b.changed(4, 0, 4, "minecraft:air")
-    b.changed(5, 3, 5, "minecraft:air")
+    # the reactor builds itself around its core, three by three and four high. Powah lets no
+    # machine hand place it, so the core block is set and its own builder does the rest.
+    b.b(4, 0, 4, "powah:reactor_starter[core=true]")
+    b.later(5, 3, 5, "block @ powah:reactor_starter")
     b.focus(3, 0, 3, 5, 3, 5)
 
 
@@ -1028,3 +1023,102 @@ def _(b):
     for z in (17, 18, 19):
         b.b(7, 0, z, "botania:cellular_block")
     b.pitch = 55.0
+
+
+# ===================================================================================
+# Third batch
+
+@scene("eidolon/altar")
+def _(b):
+    # three wooden altars in a row, the straw effigy on the middle one, a candle and a skull beside it
+    b.f(3, 0, 4, 5, 0, 4, "eidolon_repraised:wooden_altar")
+    b.b(4, 1, 4, "eidolon_repraised:straw_effigy[facing=south]")
+    b.b(3, 1, 4, "eidolon_repraised:candle")
+    b.b(5, 1, 4, "minecraft:skeleton_skull[rotation=8]")
+
+
+@scene("eidolon/brazier")
+def _(b):
+    # the brazier, stone hands around it for what a ritual takes besides
+    b.b(4, 0, 4, "eidolon_repraised:brazier")
+    for (dx, dz), facing in (((-2, 0), "east"), ((2, 0), "west"), ((0, -2), "south")):
+        b.b(4 + dx, 0, 4 + dz, f"eidolon_repraised:stone_hand[facing={facing}]")
+
+
+@scene("eidolon/crucible")
+def _(b):
+    # the crucible over a campfire, filled with water
+    b.b(4, 0, 4, "minecraft:campfire[facing=south,lit=true]")
+    b.b(4, 1, 4, "eidolon_repraised:crucible")
+    b.use(4, 1, 4, "up", "minecraft:water_bucket")
+
+
+@scene("botania/farm", w=13)
+def _(b):
+    # four endoflames in two pairs, each pair with a spreader that shoots at the pool in the
+    # middle; the manastar at the pool shows whether the farm keeps up
+    stage(b, 1, 2, 11, 6, "minecraft:grass_block")
+    pool(b, 6, 0, 4, mana=200000)
+    b.b(6, 0, 5, "botania:manastar")
+    spreader(b, 3, 0, 4, "east")
+    spreader(b, 9, 0, 4, "west")
+    for x in (2, 10):
+        for z in (3, 5):
+            b.b(x, 0, z, "botania:endoflame")
+
+
+@scene("ars_nouveau/fill_jar", w=11)
+def _(b):
+    # the volcanic sourcelink with logs thrown beside it, the jar within five blocks of it, the
+    # chamber within two of the jar
+    b.b(2, 0, 4, "ars_nouveau:volcanic_sourcelink")
+    for dx, dz in ((1, 1), (0, 1), (-1, 1), (1, 0)):
+        b.drop(2 + dx, 0.2, 4 + dz, "minecraft:oak_log", 64)
+    b.b(6, 0, 4, "ars_nouveau:source_jar[fill=5]", "{source:5000}")
+    b.b(8, 0, 4, "ars_nouveau:imbuement_chamber[facing=up]")
+    b.use(8, 0, 4, "south", "minecraft:amethyst_shard")
+
+
+@scene("ars_nouveau/drygmy")
+def _(b):
+    # the charm on mossy cobblestone makes the henge; chest and jar beside it, animals around
+    b.b(4, 0, 4, "minecraft:mossy_cobblestone")
+    b.use(4, 0, 4, "up", "ars_nouveau:drygmy_charm")
+    b.changed(4, 0, 4, "minecraft:mossy_cobblestone")
+    b.c(5, 0, 4, [], frame=True)
+    b.b(3, 0, 4, "ars_nouveau:source_jar[fill=11]", "{source:10000}")
+    b.m("minecraft:cow", 6, 0, 6)
+    b.m("minecraft:sheep", 2, 0, 6)
+
+
+@scene("ars_apprentice/brazier")
+def _(b):
+    # a tablet on the brazier, started with an empty hand; the jar it draws from beside it
+    b.b(4, 0, 4, "ars_nouveau:ritual_brazier")
+    b.use(4, 0, 4, "up", "ars_nouveau:ritual_flight")
+    b.use(4, 0, 4, "up", "minecraft:air")
+    b.b(6, 0, 4, "ars_nouveau:source_jar[fill=11]", "{source:10000}")
+
+
+@scene("draconic/stabilizer", "draconic/tiers", w=11, d=11)
+def _(b):
+    # the core of tier 3 in its cube of 26 draconium blocks, four stabilizers in one plane on
+    # four sides, in line with the core's middle and outside its blocks
+    cx, cz = 5, 5
+    b.f(cx - 1, 0, cz - 1, cx + 1, 2, cz + 1, "draconicevolution:draconium_block")
+    b.b(cx, 1, cz, "draconicevolution:energy_core")
+    for dx, dz in ((-4, 0), (4, 0), (0, -4), (0, 4)):
+        b.b(cx + dx, 0, cz + dz, "minecraft:polished_deepslate")
+        b.b(cx + dx, 1, cz + dz, "draconicevolution:energy_core_stabilizer")
+
+
+@scene("hexerei/herbs")
+def _(b):
+    # the four herbs, grown: mandrake, belladonna, mugwort and yellow dock
+    stage(b, 2, 3, 6, 5, "minecraft:grass_block")
+    for z in (3, 4, 5):
+        b.b(2, 0, z, "hexerei:mandrake_plant[age=3]")
+        b.b(3, 0, z, "hexerei:belladonna_plant[age=3]")
+        for x, bush in ((5, "mugwort_bush"), (6, "yellow_dock_bush")):
+            b.b(x, 0, z, f"hexerei:{bush}[half=lower,age=3]")
+            b.b(x, 1, z, f"hexerei:{bush}[half=upper,age=3]")

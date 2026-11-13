@@ -8,11 +8,11 @@
  "checks": [
   [
    "create/water_wheel",
-   "execute in kronwerke:testworld unless data block 4 65 32 {Speed:0.0f}"
+   "execute in kronwerke:testworld unless data block 4 64 32 {Speed:0.0f}"
   ],
   [
    "create/water_wheel",
-   "execute in kronwerke:testworld if block 5 64 33 minecraft:air"
+   "execute in kronwerke:testworld if block 5 63 34 minecraft:water"
   ],
   [
    "create/windmill",
@@ -57,6 +57,10 @@
   [
    "antimatter/sps",
    "execute in kronwerke:testworld if data block 122 67 60 inventory_id"
+  ],
+  [
+   "powah/reactor",
+   "execute in kronwerke:testworld if block 16 67 205 powah:reactor_starter"
   ],
   [
    "storage/vault_big",

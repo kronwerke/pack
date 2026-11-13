@@ -2952,3 +2952,27 @@ def _(b):
     # the configurator, and a machine whose sides it sets
     b.b(3, 0, 4, "mekanism:metallurgic_infuser[facing=south]")
     b.show(5, 0, 4, "mekanism:configurator")
+
+
+@scene("hexerei/sage_plate")
+def _(b):
+    # a dried sage bundle on the burning plate, lit with flint and steel: monsters stay away while it smokes
+    b.b(4, 0, 4, "hexerei:sage_burning_plate[facing=south]")
+    b.use(4, 0, 4, "up", "hexerei:dried_sage_bundle")
+    b.use(4, 0, 4, "up", "minecraft:flint_and_steel")
+    b.focus(3, 0, 3, 5, 1, 5)
+
+
+@scene("create_trains/cargo", w=11)
+def _(b):
+    # a wagon's portable storage interface and the platform's, face to face: where they meet, cargo changes sides
+    b.f(1, 0, 4, 9, 0, 4, "create:track[shape=xo,turn=false,waterlogged=false]")
+    b.b(3, 1, 4, "create:small_bogey[axis=x,waterlogged=false]")
+    b.b(7, 1, 4, "create:small_bogey[axis=x,waterlogged=false]")
+    b.f(3, 2, 4, 7, 2, 4, "create:railway_casing")
+    b.b(4, 3, 4, "minecraft:barrel[facing=up]")
+    b.b(5, 3, 4, "create:portable_storage_interface[facing=south]")
+    b.b(6, 3, 4, "minecraft:barrel[facing=up]")
+    b.f(5, 0, 7, 5, 2, 7, "minecraft:stone_bricks")
+    b.b(5, 3, 7, "minecraft:barrel[facing=up]")
+    b.b(5, 3, 6, "create:portable_storage_interface[facing=north]")

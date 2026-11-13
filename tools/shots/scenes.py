@@ -1891,17 +1891,17 @@ def _(b):
     b.f(1, 0, 4, 1, 2, 4, "minecraft:spruce_log[axis=y]")
     b.f(7, 0, 4, 7, 2, 4, "minecraft:spruce_log[axis=y]")
     b.f(1, 3, 4, 7, 3, 4, "minecraft:spruce_planks")
-    b.b(4, 3, 4, "create:hose_pulley[facing=east]")
-    housed_motor(b, 3, 3, 4, "east", -32)     # this way round the hose comes down
+    b.b(4, 3, 4, "create:hose_pulley[facing=south]")     # its shaft runs east to west then (HosePulleyBlock.getRotationAxis)
+    housed_motor(b, 3, 3, 4, "east", 32)
 
 
-@scene("list_power/mekmm_large", w=13, d=15, h=40)
+@scene("list_power/mekmm_large", w=13)
 def _(b):
-    # the large heat generator and the large wind generator, set down the way a player sets them.
-    # The wind generator is a tower: both stand at the back of a deep cell.
-    b.use(3, -1, 3, "up", "mekmm:large_heat_generator")
-    b.use(9, -1, 3, "up", "mekmm:large_wind_generator")
-    b.focus(1, 0, 1, 11, 16, 5)
+    # the large heat generator and the large gas burning generator, set down the way a player sets
+    # them. (The large wind generator is a tower no picture of this size holds.)
+    b.use(3, -1, 4, "up", "mekmm:large_heat_generator")
+    b.use(9, -1, 4, "up", "mekmm:large_gas_burning_generator")
+    b.focus(1, 0, 3, 11, 3, 5)
 
 
 @scene("list_gear/wyvern")

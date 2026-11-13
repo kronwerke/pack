@@ -1,13 +1,13 @@
 # 083 botania/mana_void
-#area 56 143 75 168
-fill 56 64 143 75 91 168 minecraft:air
-fill 56 60 143 75 62 168 minecraft:stone
-fill 56 63 143 75 63 168 minecraft:light_gray_concrete
-fill 60 64 149 75 79 149 minecraft:light_gray_concrete
-fill 60 64 149 60 79 162 minecraft:light_gray_concrete
-setblock 61 64 161 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "083"}','{"text": "botania"}','{"text": "mana_void"}','{"text": ""}']}}
-setblock 62 64 161 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "a mana void"}','{"text": "under a pool"}','{"text": ""}','{"text": ""}']}}
-fill 70 64 149 70 79 162 minecraft:light_gray_concrete
-setblock 65 64 154 botania:mana_void
-setblock 65 65 154 botania:mana_pool{mana:1000000}
+#area 56 145 75 170
+fill 56 64 145 75 91 170 minecraft:air
+fill 56 60 145 75 62 170 minecraft:stone
+fill 56 63 145 75 63 170 minecraft:light_gray_concrete
+fill 60 64 151 75 79 151 minecraft:light_gray_concrete
+fill 60 64 151 60 79 164 minecraft:light_gray_concrete
+setblock 61 64 163 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "083"}','{"text": "botania"}','{"text": "mana_void"}','{"text": ""}']}}
+setblock 62 64 163 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "a mana void"}','{"text": "under a pool"}','{"text": ""}','{"text": ""}']}}
+fill 70 64 151 70 79 164 minecraft:light_gray_concrete
+setblock 65 64 156 botania:mana_void
+setblock 65 65 156 botania:mana_pool{mana:1000000}
 execute as @e[type=minecraft:item,tag=!kw_shot] run kill @s

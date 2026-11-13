@@ -1,87 +1,14 @@
 # 055 mekanism_elite/induction_matrix
-#area 204 95 225 122
-fill 204 64 95 225 91 122 minecraft:air
-fill 204 60 95 225 62 122 minecraft:stone
-fill 204 63 95 225 63 122 minecraft:light_gray_concrete
-fill 208 64 101 225 79 101 minecraft:light_gray_concrete
-fill 208 64 101 208 79 116 minecraft:light_gray_concrete
-setblock 209 64 115 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "055"}','{"text": "mekanism_elite"}','{"text": "induction_matrix"}','{"text": ""}']}}
-setblock 210 64 115 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "matrix with"}','{"text": "cells and"}','{"text": "providers"}','{"text": "behind glass,"}']}}
-setblock 211 64 115 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "port GUI"}','{"text": ""}','{"text": ""}','{"text": ""}']}}
-fill 220 64 101 220 79 116 minecraft:light_gray_concrete
-setblock 212 64 105 mekanism:induction_casing
-setblock 212 64 106 mekanism:induction_casing
-setblock 212 64 107 mekanism:induction_casing
-setblock 212 64 108 mekanism:induction_casing
-setblock 212 64 109 mekanism:induction_casing
-setblock 212 65 105 mekanism:induction_casing
-setblock 212 65 106 mekanism:structural_glass
-setblock 212 65 107 mekanism:structural_glass
-setblock 212 65 108 mekanism:structural_glass
-setblock 212 65 109 mekanism:induction_casing
-setblock 212 66 105 mekanism:induction_casing
-setblock 212 66 106 mekanism:structural_glass
-setblock 212 66 107 mekanism:structural_glass
-setblock 212 66 108 mekanism:structural_glass
-setblock 212 66 109 mekanism:induction_casing
-setblock 212 67 105 mekanism:induction_casing
-setblock 212 67 106 mekanism:structural_glass
-setblock 212 67 107 mekanism:structural_glass
-setblock 212 67 108 mekanism:structural_glass
-setblock 212 67 109 mekanism:induction_casing
-setblock 212 68 105 mekanism:induction_casing
-setblock 212 68 106 mekanism:induction_casing
-setblock 212 68 107 mekanism:induction_casing
-setblock 212 68 108 mekanism:induction_casing
-setblock 212 68 109 mekanism:induction_casing
-setblock 213 64 105 mekanism:induction_casing
-setblock 213 64 106 mekanism:induction_casing
-setblock 213 64 107 mekanism:induction_casing
-setblock 213 64 108 mekanism:induction_casing
-setblock 213 64 109 mekanism:induction_casing
-setblock 213 65 105 mekanism:structural_glass
-setblock 213 65 109 mekanism:structural_glass
-setblock 213 66 105 mekanism:structural_glass
-setblock 213 66 109 mekanism:structural_glass
-setblock 213 67 105 mekanism:structural_glass
-setblock 213 67 109 mekanism:structural_glass
-setblock 213 68 105 mekanism:induction_casing
-setblock 213 68 106 mekanism:structural_glass
-setblock 213 68 107 mekanism:structural_glass
-setblock 213 68 108 mekanism:structural_glass
-setblock 213 68 109 mekanism:induction_casing
-setblock 214 64 105 mekanism:induction_casing
-setblock 214 64 106 mekanism:induction_casing
-setblock 214 64 107 mekanism:induction_casing
-setblock 214 64 108 mekanism:induction_casing
-setblock 214 64 109 mekanism:induction_casing
-setblock 214 65 105 mekanism:structural_glass
-setblock 214 65 109 mekanism:structural_glass
-setblock 214 66 105 mekanism:structural_glass
-setblock 214 66 109 mekanism:structural_glass
-setblock 214 67 105 mekanism:structural_glass
-setblock 214 67 109 mekanism:structural_glass
-setblock 214 68 105 mekanism:induction_casing
-setblock 214 68 106 mekanism:structural_glass
-setblock 214 68 107 mekanism:structural_glass
-setblock 214 68 108 mekanism:structural_glass
-setblock 214 68 109 mekanism:induction_casing
-setblock 215 64 105 mekanism:induction_casing
-setblock 215 64 106 mekanism:induction_casing
-setblock 215 64 107 mekanism:induction_casing
-setblock 215 64 108 mekanism:induction_casing
-setblock 215 64 109 mekanism:induction_casing
-setblock 215 65 105 mekanism:structural_glass
-setblock 215 65 109 mekanism:structural_glass
-setblock 215 66 105 mekanism:structural_glass
-setblock 215 66 109 mekanism:structural_glass
-setblock 215 67 105 mekanism:structural_glass
-setblock 215 67 109 mekanism:structural_glass
-setblock 215 68 105 mekanism:induction_casing
-setblock 215 68 106 mekanism:structural_glass
-setblock 215 68 107 mekanism:structural_glass
-setblock 215 68 108 mekanism:structural_glass
-setblock 215 68 109 mekanism:induction_casing
+#area 208 95 229 122
+fill 208 64 95 229 91 122 minecraft:air
+fill 208 60 95 229 62 122 minecraft:stone
+fill 208 63 95 229 63 122 minecraft:light_gray_concrete
+fill 212 64 101 229 79 101 minecraft:light_gray_concrete
+fill 212 64 101 212 79 116 minecraft:light_gray_concrete
+setblock 213 64 115 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "055"}','{"text": "mekanism_elite"}','{"text": "induction_matrix"}','{"text": ""}']}}
+setblock 214 64 115 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "matrix with"}','{"text": "cells and"}','{"text": "providers"}','{"text": "behind glass,"}']}}
+setblock 215 64 115 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "port GUI"}','{"text": ""}','{"text": ""}','{"text": ""}']}}
+fill 224 64 101 224 79 116 minecraft:light_gray_concrete
 setblock 216 64 105 mekanism:induction_casing
 setblock 216 64 106 mekanism:induction_casing
 setblock 216 64 107 mekanism:induction_casing
@@ -89,7 +16,7 @@ setblock 216 64 108 mekanism:induction_casing
 setblock 216 64 109 mekanism:induction_casing
 setblock 216 65 105 mekanism:induction_casing
 setblock 216 65 106 mekanism:structural_glass
-setblock 216 65 107 mekanism:induction_port[active=false]
+setblock 216 65 107 mekanism:structural_glass
 setblock 216 65 108 mekanism:structural_glass
 setblock 216 65 109 mekanism:induction_casing
 setblock 216 66 105 mekanism:induction_casing
@@ -99,7 +26,7 @@ setblock 216 66 108 mekanism:structural_glass
 setblock 216 66 109 mekanism:induction_casing
 setblock 216 67 105 mekanism:induction_casing
 setblock 216 67 106 mekanism:structural_glass
-setblock 216 67 107 mekanism:induction_port[active=true]
+setblock 216 67 107 mekanism:structural_glass
 setblock 216 67 108 mekanism:structural_glass
 setblock 216 67 109 mekanism:induction_casing
 setblock 216 68 105 mekanism:induction_casing
@@ -107,31 +34,104 @@ setblock 216 68 106 mekanism:induction_casing
 setblock 216 68 107 mekanism:induction_casing
 setblock 216 68 108 mekanism:induction_casing
 setblock 216 68 109 mekanism:induction_casing
-setblock 213 65 106 mekanism:basic_induction_cell
-setblock 213 65 107 mekanism:basic_induction_provider
-setblock 213 65 108 mekanism:basic_induction_cell
-setblock 213 66 106 mekanism:basic_induction_cell
-setblock 213 66 107 mekanism:basic_induction_cell
-setblock 213 66 108 mekanism:basic_induction_cell
-setblock 213 67 106 mekanism:basic_induction_cell
-setblock 213 67 107 mekanism:basic_induction_cell
-setblock 213 67 108 mekanism:basic_induction_cell
-setblock 214 65 106 mekanism:basic_induction_cell
-setblock 214 65 107 mekanism:basic_induction_provider
-setblock 214 65 108 mekanism:basic_induction_cell
-setblock 214 66 106 mekanism:basic_induction_cell
-setblock 214 66 107 mekanism:basic_induction_cell
-setblock 214 66 108 mekanism:basic_induction_cell
-setblock 214 67 106 mekanism:basic_induction_cell
-setblock 214 67 107 mekanism:basic_induction_cell
-setblock 214 67 108 mekanism:basic_induction_cell
-setblock 215 65 106 mekanism:basic_induction_cell
-setblock 215 65 107 mekanism:basic_induction_provider
-setblock 215 65 108 mekanism:basic_induction_cell
-setblock 215 66 106 mekanism:basic_induction_cell
-setblock 215 66 107 mekanism:basic_induction_cell
-setblock 215 66 108 mekanism:basic_induction_cell
-setblock 215 67 106 mekanism:basic_induction_cell
-setblock 215 67 107 mekanism:basic_induction_cell
-setblock 215 67 108 mekanism:basic_induction_cell
+setblock 217 64 105 mekanism:induction_casing
+setblock 217 64 106 mekanism:induction_casing
+setblock 217 64 107 mekanism:induction_casing
+setblock 217 64 108 mekanism:induction_casing
+setblock 217 64 109 mekanism:induction_casing
+setblock 217 65 105 mekanism:structural_glass
+setblock 217 65 109 mekanism:structural_glass
+setblock 217 66 105 mekanism:structural_glass
+setblock 217 66 109 mekanism:structural_glass
+setblock 217 67 105 mekanism:structural_glass
+setblock 217 67 109 mekanism:structural_glass
+setblock 217 68 105 mekanism:induction_casing
+setblock 217 68 106 mekanism:structural_glass
+setblock 217 68 107 mekanism:structural_glass
+setblock 217 68 108 mekanism:structural_glass
+setblock 217 68 109 mekanism:induction_casing
+setblock 218 64 105 mekanism:induction_casing
+setblock 218 64 106 mekanism:induction_casing
+setblock 218 64 107 mekanism:induction_casing
+setblock 218 64 108 mekanism:induction_casing
+setblock 218 64 109 mekanism:induction_casing
+setblock 218 65 105 mekanism:structural_glass
+setblock 218 65 109 mekanism:structural_glass
+setblock 218 66 105 mekanism:structural_glass
+setblock 218 66 109 mekanism:structural_glass
+setblock 218 67 105 mekanism:structural_glass
+setblock 218 67 109 mekanism:structural_glass
+setblock 218 68 105 mekanism:induction_casing
+setblock 218 68 106 mekanism:structural_glass
+setblock 218 68 107 mekanism:structural_glass
+setblock 218 68 108 mekanism:structural_glass
+setblock 218 68 109 mekanism:induction_casing
+setblock 219 64 105 mekanism:induction_casing
+setblock 219 64 106 mekanism:induction_casing
+setblock 219 64 107 mekanism:induction_casing
+setblock 219 64 108 mekanism:induction_casing
+setblock 219 64 109 mekanism:induction_casing
+setblock 219 65 105 mekanism:structural_glass
+setblock 219 65 109 mekanism:structural_glass
+setblock 219 66 105 mekanism:structural_glass
+setblock 219 66 109 mekanism:structural_glass
+setblock 219 67 105 mekanism:structural_glass
+setblock 219 67 109 mekanism:structural_glass
+setblock 219 68 105 mekanism:induction_casing
+setblock 219 68 106 mekanism:structural_glass
+setblock 219 68 107 mekanism:structural_glass
+setblock 219 68 108 mekanism:structural_glass
+setblock 219 68 109 mekanism:induction_casing
+setblock 220 64 105 mekanism:induction_casing
+setblock 220 64 106 mekanism:induction_casing
+setblock 220 64 107 mekanism:induction_casing
+setblock 220 64 108 mekanism:induction_casing
+setblock 220 64 109 mekanism:induction_casing
+setblock 220 65 105 mekanism:induction_casing
+setblock 220 65 106 mekanism:structural_glass
+setblock 220 65 107 mekanism:induction_port[active=false]
+setblock 220 65 108 mekanism:structural_glass
+setblock 220 65 109 mekanism:induction_casing
+setblock 220 66 105 mekanism:induction_casing
+setblock 220 66 106 mekanism:structural_glass
+setblock 220 66 107 mekanism:structural_glass
+setblock 220 66 108 mekanism:structural_glass
+setblock 220 66 109 mekanism:induction_casing
+setblock 220 67 105 mekanism:induction_casing
+setblock 220 67 106 mekanism:structural_glass
+setblock 220 67 107 mekanism:induction_port[active=true]
+setblock 220 67 108 mekanism:structural_glass
+setblock 220 67 109 mekanism:induction_casing
+setblock 220 68 105 mekanism:induction_casing
+setblock 220 68 106 mekanism:induction_casing
+setblock 220 68 107 mekanism:induction_casing
+setblock 220 68 108 mekanism:induction_casing
+setblock 220 68 109 mekanism:induction_casing
+setblock 217 65 106 mekanism:basic_induction_cell
+setblock 217 65 107 mekanism:basic_induction_provider
+setblock 217 65 108 mekanism:basic_induction_cell
+setblock 217 66 106 mekanism:basic_induction_cell
+setblock 217 66 107 mekanism:basic_induction_cell
+setblock 217 66 108 mekanism:basic_induction_cell
+setblock 217 67 106 mekanism:basic_induction_cell
+setblock 217 67 107 mekanism:basic_induction_cell
+setblock 217 67 108 mekanism:basic_induction_cell
+setblock 218 65 106 mekanism:basic_induction_cell
+setblock 218 65 107 mekanism:basic_induction_provider
+setblock 218 65 108 mekanism:basic_induction_cell
+setblock 218 66 106 mekanism:basic_induction_cell
+setblock 218 66 107 mekanism:basic_induction_cell
+setblock 218 66 108 mekanism:basic_induction_cell
+setblock 218 67 106 mekanism:basic_induction_cell
+setblock 218 67 107 mekanism:basic_induction_cell
+setblock 218 67 108 mekanism:basic_induction_cell
+setblock 219 65 106 mekanism:basic_induction_cell
+setblock 219 65 107 mekanism:basic_induction_provider
+setblock 219 65 108 mekanism:basic_induction_cell
+setblock 219 66 106 mekanism:basic_induction_cell
+setblock 219 66 107 mekanism:basic_induction_cell
+setblock 219 66 108 mekanism:basic_induction_cell
+setblock 219 67 106 mekanism:basic_induction_cell
+setblock 219 67 107 mekanism:basic_induction_cell
+setblock 219 67 108 mekanism:basic_induction_cell
 execute as @e[type=minecraft:item,tag=!kw_shot] run kill @s

@@ -334,11 +334,11 @@ hash = "93c982c2e09101877cba15ed69d2eee71ed5be2243ee8dcdcc0734845932c8b6"
 
 [[files]]
 file = "config/ftbquests/quests/lang/de_de.snbt"
-hash = "6af6d0634afb793293c24bc4c4b68f60df9b60d373c8c1e431ff0dd2e8d60662"
+hash = "5d1e006c78606aa3fa81c4c94c1e5eb8e4e01b61bd54fcd1c8b9248a3318cd96"
 
 [[files]]
 file = "config/ftbquests/quests/lang/en_us.snbt"
-hash = "921bcadcdc39898dab081a4c0e3628153586354cd04da3b67a4ed3301a2c28c7"
+hash = "3e1bd1c976921c5058dbb6698dbdb585cba6a980da95b3c28867ec41b00e0385"
 
 [[files]]
 file = "config/ftbquests/quests/reward_tables/s1_common.snbt"
@@ -2631,6 +2631,550 @@ hash = "dabe2a616efb60966bd0bc0315d6e9878fd4d77ca9aa8ca403669c679e89d56e"
 [[files]]
 file = "kubejs/assets/kronwerke/textures/quests/reliquary/werkzeug.png"
 hash = "6212330311c203162abb6faa0aeaaa7969eece54e7db2c1ac1fde637c2767968"
+
+[[files]]
+file = "kubejs/assets/kronwerke/textures/quests/shots/ae2_autocraft.png"
+hash = "b347a435dbb819a0152a98ff4a413ffe0505d6468a16b2c86b3f6b530d3cdbf5"
+
+[[files]]
+file = "kubejs/assets/kronwerke/textures/quests/shots/ae2_controller.png"
+hash = "73655ef7b0e7ae79d3f76a1274f83ea62635d5ee6b2df1ee4cb5966c4e3a2e7d"
+
+[[files]]
+file = "kubejs/assets/kronwerke/textures/quests/shots/ae2_cpu.png"
+hash = "ca2f9eb089bddae695c66122aa3575cce10f5fa05d828d4d8bd9b7a9db38c05c"
+
+[[files]]
+file = "kubejs/assets/kronwerke/textures/quests/shots/ae2_network.png"
+hash = "62fb74edfe18972a0998825344bf3815d8d59c32c9dedadc4217b88c2272cfe6"
+
+[[files]]
+file = "kubejs/assets/kronwerke/textures/quests/shots/aether_portal.png"
+hash = "8ca991ad7c35199e92c9ba08b147ee7e61ada3a42d204353bb5e37d56c7fef28"
+
+[[files]]
+file = "kubejs/assets/kronwerke/textures/quests/shots/alfheim_frame.png"
+hash = "db44f6126052e195df236b1fce0473202ab5c8aa5dd998f3463d4fc5ca82a777"
+
+[[files]]
+file = "kubejs/assets/kronwerke/textures/quests/shots/alfheim_open.png"
+hash = "cfbba76926251baed9398697fb38d90ea0eac61f9b8b7f2872fbc24994adfc16"
+
+[[files]]
+file = "kubejs/assets/kronwerke/textures/quests/shots/antimatter_sps.png"
+hash = "c527a457d3e0c7d034091c2aa06e1666cb9ea86a788fb275beaa80817014c5e0"
+
+[[files]]
+file = "kubejs/assets/kronwerke/textures/quests/shots/antimatter_waste.png"
+hash = "d2542fdafb177d034f7e5e7f74bfc6d52aba6acba2d57ce4c30869554bac1c78"
+
+[[files]]
+file = "kubejs/assets/kronwerke/textures/quests/shots/ars_apprentice_brazier.png"
+hash = "cefe459c9a2aff7bbdb353201cd64bb1a6905a8fd6f6e574cea481e2eee4022d"
+
+[[files]]
+file = "kubejs/assets/kronwerke/textures/quests/shots/ars_apprentice_relay.png"
+hash = "0e7f4a8306cb3ad1943e03bff2c13242a56b98e4ccf5ddd7e8d16fca37bd70fd"
+
+[[files]]
+file = "kubejs/assets/kronwerke/textures/quests/shots/ars_epic_el_armor.png"
+hash = "57656ff3bfb34e4ef617c80afac9ba44abf9bd108b4c8f13b5625c9d76bbc19d"
+
+[[files]]
+file = "kubejs/assets/kronwerke/textures/quests/shots/ars_nouveau_apparatus.png"
+hash = "aac8e20e59a476db6bfd5275a5fc29b063d89c8b4166ab7bfe5904c54b25fcd1"
+
+[[files]]
+file = "kubejs/assets/kronwerke/textures/quests/shots/ars_nouveau_chamber_auto.png"
+hash = "aa8a76d44a622dbeba4c249f4cebf681f1fed53eafe8865acc841e9c94a77d9e"
+
+[[files]]
+file = "kubejs/assets/kronwerke/textures/quests/shots/ars_nouveau_drygmy.png"
+hash = "2d36d0d11d579ae6537886f63076e5970f9910a1fbdffed42eb58da38c3ca2b9"
+
+[[files]]
+file = "kubejs/assets/kronwerke/textures/quests/shots/ars_nouveau_earth_essence.png"
+hash = "afaa53243324460e12a3953eafbbc11585bd9d4038e5a6aa4bfbb606cba55f60"
+
+[[files]]
+file = "kubejs/assets/kronwerke/textures/quests/shots/ars_nouveau_fill_jar.png"
+hash = "e4925ba8a271b273b8e01c1cebc7b0a1367d3a535f13c91cf0081c9d8a8aee03"
+
+[[files]]
+file = "kubejs/assets/kronwerke/textures/quests/shots/ars_nouveau_imbuement.png"
+hash = "87a53c6721e128e85b15baa40e07a4e472a8849a08fa39b097a95b5dc780900b"
+
+[[files]]
+file = "kubejs/assets/kronwerke/textures/quests/shots/botania_endo_auto.png"
+hash = "be0d059c7aa2a91ce23d7a900e4a790b4fde1fee89520f5db69a23ae9807427f"
+
+[[files]]
+file = "kubejs/assets/kronwerke/textures/quests/shots/botania_farm.png"
+hash = "02590504126549b5145521de51661d7578176b805f2173ba7533a4836eb4346c"
+
+[[files]]
+file = "kubejs/assets/kronwerke/textures/quests/shots/botania_mana_void.png"
+hash = "0945e12c5ac8d1a3e1754ab0ee5f64103a764be1c14e7e00f5d8df41790c04dd"
+
+[[files]]
+file = "kubejs/assets/kronwerke/textures/quests/shots/botania_manastar.png"
+hash = "e2dfee2f2e55d79ac1a8b646d71dd6fe3787fa123a48c0445152bc76621aede4"
+
+[[files]]
+file = "kubejs/assets/kronwerke/textures/quests/shots/botania_manasteel_prep.png"
+hash = "dbb58cc7196753672c77a170404c5fb5e0a8959dee8aba4599e187e328dbc0cf"
+
+[[files]]
+file = "kubejs/assets/kronwerke/textures/quests/shots/botania_pool.png"
+hash = "9bc1ab4a1276dd94af6de7fbf0765c830f3471eb18610498f9cc541213b989a0"
+
+[[files]]
+file = "kubejs/assets/kronwerke/textures/quests/shots/botania_pure_daisy.png"
+hash = "8aa806a3a538ed14f97918778a6540895dbcdb3333692f033020c5540ca51816"
+
+[[files]]
+file = "kubejs/assets/kronwerke/textures/quests/shots/botania_runes_mana_pearl.png"
+hash = "774bbcf2a63a0473c410d0a9a416d027819f38ef4cf13e5703b1404e1a81f784"
+
+[[files]]
+file = "kubejs/assets/kronwerke/textures/quests/shots/botania_runes_plate_base.png"
+hash = "ae5fcbba4a71c37bcb1324d14738b5b460b535e70bface6b87389f17e31fbd4b"
+
+[[files]]
+file = "kubejs/assets/kronwerke/textures/quests/shots/botania_runes_runic_altar.png"
+hash = "92166f299e1c2041054e7f7b417dcdfebb9d06e9508a39c9e30b971d766c9c9e"
+
+[[files]]
+file = "kubejs/assets/kronwerke/textures/quests/shots/botania_runes_terrasteel.png"
+hash = "ae2e8ed4c39ba352781e0089660a60350694b13298f09e588737f741db6b5965"
+
+[[files]]
+file = "kubejs/assets/kronwerke/textures/quests/shots/create_belt.png"
+hash = "06d9c72d7a49b02abc1079ad8c64a973ae8311f4a4a99dcb7863acab0f4ecd64"
+
+[[files]]
+file = "kubejs/assets/kronwerke/textures/quests/shots/create_brass_brass_mixing.png"
+hash = "7698adb9f7c5cc73fae212106393c818ede3e15978c69f3fe683e0fff2617137"
+
+[[files]]
+file = "kubejs/assets/kronwerke/textures/quests/shots/create_brass_crafter.png"
+hash = "d69df4cd08b4aab5d79d6f4e56b951ba11847ec39914ff04a6069948dffa1fd9"
+
+[[files]]
+file = "kubejs/assets/kronwerke/textures/quests/shots/create_brass_crushing_wheel.png"
+hash = "46f8cbb68968dee817245bf88a8e6f8471dc84d8b1fea0740acaff6c7751a578"
+
+[[files]]
+file = "kubejs/assets/kronwerke/textures/quests/shots/create_cobble_gen.png"
+hash = "47bfda5fa2045657a1249493952473217a98153852a40622be20000bd397f636"
+
+[[files]]
+file = "kubejs/assets/kronwerke/textures/quests/shots/create_compacting.png"
+hash = "042c8acda342adf51a2cf7de7fb0313935ea9b2f1195afdc1dab71b68ff791b9"
+
+[[files]]
+file = "kubejs/assets/kronwerke/textures/quests/shots/create_depot.png"
+hash = "e2046b45aa67b8ec537b683a4726cc1e8e7479104859bd3f72729ed05fc623a1"
+
+[[files]]
+file = "kubejs/assets/kronwerke/textures/quests/shots/create_mixer.png"
+hash = "ab5ba73019a9cd4b941cd06a0519b397d6808ec8031c02c3b2b5c1f13a5e1339"
+
+[[files]]
+file = "kubejs/assets/kronwerke/textures/quests/shots/create_washing.png"
+hash = "8a43961f240d427d5362f2337b4c2b03b6f572611d2ae2b3f58a609c44379346"
+
+[[files]]
+file = "kubejs/assets/kronwerke/textures/quests/shots/create_water_wheel.png"
+hash = "06254a150fe44481c8d0ded5c6bbce14dd30bf56a6c911bc4e276ce7deb5ba41"
+
+[[files]]
+file = "kubejs/assets/kronwerke/textures/quests/shots/create_windmill.png"
+hash = "cdbd100acc817d89e466506e8d7bc73a1a2931702dcbb8f8904dbb57b15d3ae9"
+
+[[files]]
+file = "kubejs/assets/kronwerke/textures/quests/shots/deeper_darker_portal.png"
+hash = "2e6429db2baab0737a1f359dad0f2e5739caab6e8c27fd88198742de4dac5e49"
+
+[[files]]
+file = "kubejs/assets/kronwerke/textures/quests/shots/draconic_injectors.png"
+hash = "29453f1a1bfc805f01114ec202637275fc54fb5944bd0f5066252545d42ef932"
+
+[[files]]
+file = "kubejs/assets/kronwerke/textures/quests/shots/draconic_stabilizer.png"
+hash = "3f2c94a3d293a744c9714b9d706f6e5592203d27fab9541a3e7bc59f4214e842"
+
+[[files]]
+file = "kubejs/assets/kronwerke/textures/quests/shots/eidolon_altar.png"
+hash = "1ab71f327a4eaff73b9910ada0c46255b77fa64d91f996d196ebfc0f90575ea6"
+
+[[files]]
+file = "kubejs/assets/kronwerke/textures/quests/shots/eidolon_brazier.png"
+hash = "556d77c4f6a3894c4b6e4d191e34761b9497766ea3eba459933045d074bf270c"
+
+[[files]]
+file = "kubejs/assets/kronwerke/textures/quests/shots/eidolon_crucible.png"
+hash = "8ac0cee554788abff20c50cb76f0d96c625012c973a0d4a6989d8037a43acc9c"
+
+[[files]]
+file = "kubejs/assets/kronwerke/textures/quests/shots/eidolon_stone_altar.png"
+hash = "229da86ef5fa9f4a5e4c7db2217dbd4e4602bd035380f9f01351fa57ed6c738b"
+
+[[files]]
+file = "kubejs/assets/kronwerke/textures/quests/shots/enderio_cap_bank.png"
+hash = "0a69028cf57475426626c5c783434f077638a1e0579b6d222d9e14db5e60ea34"
+
+[[files]]
+file = "kubejs/assets/kronwerke/textures/quests/shots/farms_cobble_drill.png"
+hash = "b58149241a20dc08cb4a978008401545fea49339d54f33487bd7f98633713cb2"
+
+[[files]]
+file = "kubejs/assets/kronwerke/textures/quests/shots/farms_crops_essence.png"
+hash = "75fbec59080b0ae2a536f8d3777ec24ef9f6e07d86928f5322ca7a6e8a26350a"
+
+[[files]]
+file = "kubejs/assets/kronwerke/textures/quests/shots/farms_mana_endoflame.png"
+hash = "d6fcbd75c44786562ecaf7530cf7b6428bbdd3bb18fae00f53f78fab98126e23"
+
+[[files]]
+file = "kubejs/assets/kronwerke/textures/quests/shots/farms_source_berries.png"
+hash = "b35af2948a429305467bbeac4500f0cc4ac6c24361208f5fffe28af1f0e9af08"
+
+[[files]]
+file = "kubejs/assets/kronwerke/textures/quests/shots/finale_tech.png"
+hash = "d173675aef5e3fa7e3eaaa89a3ab9c8c861869ac1c11c7c15c78f699f3cf8043"
+
+[[files]]
+file = "kubejs/assets/kronwerke/textures/quests/shots/flux_networks_dust.png"
+hash = "bad929e57fe6d5a591bf8657b4ae83ced3113273db0dc607a301e8980c8badbf"
+
+[[files]]
+file = "kubejs/assets/kronwerke/textures/quests/shots/flux_networks_first_link.png"
+hash = "8162c554756798a5ec5b84e603a2a121c0d938e8f6785532f904b10f917b52d5"
+
+[[files]]
+file = "kubejs/assets/kronwerke/textures/quests/shots/food_f_pot.png"
+hash = "2254ce8b2fa52b487783da26954d6ff6ba8aaa6531c0940befcd78dedf6001b7"
+
+[[files]]
+file = "kubejs/assets/kronwerke/textures/quests/shots/gaia_arena.png"
+hash = "7a18b9f02b78627f904a64eef295f8e86277c424c69266216890aa1e52561f0b"
+
+[[files]]
+file = "kubejs/assets/kronwerke/textures/quests/shots/gaia_dandelifeon.png"
+hash = "d6cc39f843a1268ce46396818701cf315e475487afe554426b65a784a0cfd75d"
+
+[[files]]
+file = "kubejs/assets/kronwerke/textures/quests/shots/hexerei_cauldron.png"
+hash = "b2262323cc75209f5734e2fd4d77f50363979cc1c804f460629039a5bbe69c50"
+
+[[files]]
+file = "kubejs/assets/kronwerke/textures/quests/shots/hexerei_herbs.png"
+hash = "e42247f4f6094fae3dc24a9315d2de2661b174f8975d9acc96b56864d3dfb8b0"
+
+[[files]]
+file = "kubejs/assets/kronwerke/textures/quests/shots/hostile_networks_data_center.png"
+hash = "07a6bb75eff51a53a9873cf9db32b851ed1320920f3fd63fde458b94844db23c"
+
+[[files]]
+file = "kubejs/assets/kronwerke/textures/quests/shots/immersive_blast_furnace.png"
+hash = "eb7a3403b35fb4d224fdff32590a2091cd70eb81a9823f0c6624973c3591e60b"
+
+[[files]]
+file = "kubejs/assets/kronwerke/textures/quests/shots/immersive_coke_oven.png"
+hash = "10012e8b6be36247426a6f15ed5be301752155299a5b9a154dc3ec167860896a"
+
+[[files]]
+file = "kubejs/assets/kronwerke/textures/quests/shots/immersive_connectors.png"
+hash = "99165bdb2d8d11bf2ccf145421f3560d9710c30016113fe6767afdfba887b676"
+
+[[files]]
+file = "kubejs/assets/kronwerke/textures/quests/shots/immersive_dynamo.png"
+hash = "6cc0b51d3e7121a8e2f498405ef88e3ac15ca10dc43b85383f0e1caf1bfe8fe3"
+
+[[files]]
+file = "kubejs/assets/kronwerke/textures/quests/shots/immersive_hammer.png"
+hash = "0e1499b74969238784cc90f80a69c51f0864238e7bc493c43c9254925be199d1"
+
+[[files]]
+file = "kubejs/assets/kronwerke/textures/quests/shots/immersive_heavy_arc.png"
+hash = "a91558ae0e061f3520ffcc457a0db0b47e056f394b8fbb488dd6267f9326fe05"
+
+[[files]]
+file = "kubejs/assets/kronwerke/textures/quests/shots/immersive_heavy_assembler.png"
+hash = "786cf7c2d47f13e2e9a5b08d63f9671d32aa5e9a40c473eeb0e2d5cd8d45140f"
+
+[[files]]
+file = "kubejs/assets/kronwerke/textures/quests/shots/immersive_heavy_auto_workbench.png"
+hash = "acadfaf80805a44f9ef5d7e3a6a2d2b4d852c3839e4a6ee919b765086a7c07c7"
+
+[[files]]
+file = "kubejs/assets/kronwerke/textures/quests/shots/immersive_heavy_bottling.png"
+hash = "3321e9b4d4cfc69176f967d44f95f4bf12e423fa535038193e0749dc53dcdb67"
+
+[[files]]
+file = "kubejs/assets/kronwerke/textures/quests/shots/immersive_heavy_crusher.png"
+hash = "ce06945a245447f596aebbb215f5477740c0beea9d825d74e4981dce68a9261f"
+
+[[files]]
+file = "kubejs/assets/kronwerke/textures/quests/shots/immersive_heavy_diesel.png"
+hash = "8421e50a3397678cd00280ba77e70d0a4a2089bf0aa3aeae67cf3c9b37e3543f"
+
+[[files]]
+file = "kubejs/assets/kronwerke/textures/quests/shots/immersive_heavy_excavator.png"
+hash = "f31ca45f6c9105016c76e099a83b396aa20d92272df47a32c1cd5d7fa4fa99cc"
+
+[[files]]
+file = "kubejs/assets/kronwerke/textures/quests/shots/immersive_heavy_fermenter.png"
+hash = "99c5837b4f3dd3ccc9ad6daaffe868099a11225ff0cc16a08233eefbf91195b8"
+
+[[files]]
+file = "kubejs/assets/kronwerke/textures/quests/shots/immersive_heavy_hv.png"
+hash = "c0cd83c059daf42034240d64494250dd49c76553a0fcb15aa350452693c2ff97"
+
+[[files]]
+file = "kubejs/assets/kronwerke/textures/quests/shots/immersive_heavy_lightning_rod.png"
+hash = "2fa03b10c633023ae45bc12ef811509cfad68f5ef2f90329bda82af80d007439"
+
+[[files]]
+file = "kubejs/assets/kronwerke/textures/quests/shots/immersive_heavy_mixer.png"
+hash = "2c5f1188bc555939574e5844360c4fd38573a1f01944de1e51c3330a7d3c3474"
+
+[[files]]
+file = "kubejs/assets/kronwerke/textures/quests/shots/immersive_heavy_press.png"
+hash = "445c2c1f4a16d740b1a7f569751136de99f644b3528ad9edd89719291614a9b7"
+
+[[files]]
+file = "kubejs/assets/kronwerke/textures/quests/shots/immersive_heavy_radio_tower.png"
+hash = "9effa6663c50f4fe700f65a461743f12d843da34d36708ddc8591d2aba5a621d"
+
+[[files]]
+file = "kubejs/assets/kronwerke/textures/quests/shots/immersive_heavy_refinery.png"
+hash = "0af8585579e6e4bbcf6378a50fe72a9f62ec6b6c9cd44472e512ef7de65b2050"
+
+[[files]]
+file = "kubejs/assets/kronwerke/textures/quests/shots/immersive_heavy_sawmill.png"
+hash = "e43c536c9a35ac06d85dcc139f0d6700d039a882e109bab49d78b79cbfe54ef9"
+
+[[files]]
+file = "kubejs/assets/kronwerke/textures/quests/shots/immersive_heavy_squeezer.png"
+hash = "b6e738d375f094e13d154854f4528bdfc07a1f9f05038f60d408eaa9da985fe1"
+
+[[files]]
+file = "kubejs/assets/kronwerke/textures/quests/shots/immersive_improved_form.png"
+hash = "ffd3679b2dd6b5a85e8a516a696e5d2cf58ea5c2965edfaf25db11cdf2e4b0f0"
+
+[[files]]
+file = "kubejs/assets/kronwerke/textures/quests/shots/immersive_kiln.png"
+hash = "3e680716e2e406e64687a13fd911febf2104e2db4964148bc94e2f5581db6bfb"
+
+[[files]]
+file = "kubejs/assets/kronwerke/textures/quests/shots/immersive_list_mb.png"
+hash = "1a7672ba4d26c00808112ceb39b4a21d7b76fd1f4450521d3d3acd2f9f011e76"
+
+[[files]]
+file = "kubejs/assets/kronwerke/textures/quests/shots/immersive_shelf.png"
+hash = "c1febb4a57a1df8a4bc57db4996cc69873952574c76b85b12c481f226cff544c"
+
+[[files]]
+file = "kubejs/assets/kronwerke/textures/quests/shots/immersive_silo.png"
+hash = "fad2df014f0043183a434154ef540e4b311f1faa291a09d81418fe7430c30f88"
+
+[[files]]
+file = "kubejs/assets/kronwerke/textures/quests/shots/immersive_tank.png"
+hash = "8ada07a053942b55e1143714c634eb0fdfe8472e1ee7f7bd8ec73064ef061d88"
+
+[[files]]
+file = "kubejs/assets/kronwerke/textures/quests/shots/immersive_thermoelectric.png"
+hash = "ddcf3425d2b8c7c74d44c7f7be5441423d688d24d07690f408d73485a557fbfb"
+
+[[files]]
+file = "kubejs/assets/kronwerke/textures/quests/shots/immersive_watermill.png"
+hash = "e95794189f975000143dd13d803a41dcc93995db4bdaca265d0be69918217d18"
+
+[[files]]
+file = "kubejs/assets/kronwerke/textures/quests/shots/list_dimensions_d_mining.png"
+hash = "28c2dad7aa29558db1471ff60380364384f3b9ac2ee1e662f99487ec7c2aa652"
+
+[[files]]
+file = "kubejs/assets/kronwerke/textures/quests/shots/list_gear_mek_jetpack.png"
+hash = "35611f9396fe7149bdccef44b94fbd885f99e55cac23ae3a2b7c4ed3e3bd7608"
+
+[[files]]
+file = "kubejs/assets/kronwerke/textures/quests/shots/list_power_alternator.png"
+hash = "b93eb4fb1f3a31cbc97b9644be5fd4eee160a12d6d018b817db719f9115f9b13"
+
+[[files]]
+file = "kubejs/assets/kronwerke/textures/quests/shots/list_power_mek_heat.png"
+hash = "89959e08d478e10f2b2622c239fa3150942fd3c7141ed80d9fc7bd12ad697342"
+
+[[files]]
+file = "kubejs/assets/kronwerke/textures/quests/shots/list_power_nc_passive.png"
+hash = "dfe4d9c70ad83f5432026e276fcf3184c9f7823bf6b9477e8745326c167f747e"
+
+[[files]]
+file = "kubejs/assets/kronwerke/textures/quests/shots/list_power_steam_engine.png"
+hash = "4892645bd37ecf87b4079491d7978ae9641a44bec37f3ede0df9d79da76a78bb"
+
+[[files]]
+file = "kubejs/assets/kronwerke/textures/quests/shots/list_transport_create_tank.png"
+hash = "f346a020dca5933f15a4f499f7a6ed3dbbd4a72700a8adc3f02acabf2df6c27b"
+
+[[files]]
+file = "kubejs/assets/kronwerke/textures/quests/shots/malum_altar.png"
+hash = "505f838fb892aaa5ab00f056018b04c2ee2512780a48bc20f11cd8c5db92c62d"
+
+[[files]]
+file = "kubejs/assets/kronwerke/textures/quests/shots/malum_healing_rite.png"
+hash = "368ce61e059ea0919aa490ac5ab1d3e5d29f9c12ca5abc2a5f9f09858454a2d8"
+
+[[files]]
+file = "kubejs/assets/kronwerke/textures/quests/shots/malum_obelisk.png"
+hash = "920ab7752a4f0e42b84134d99460ea271d9817df01dcb56143706c41e18741a0"
+
+[[files]]
+file = "kubejs/assets/kronwerke/textures/quests/shots/mekanism_advanced_boiler.png"
+hash = "c6a91c8e3296555eb80bb30d8f62e80409447239885f91a622373d3e25408825"
+
+[[files]]
+file = "kubejs/assets/kronwerke/textures/quests/shots/mekanism_advanced_evap.png"
+hash = "757b4cdad5a782cd7f06860aa1599b75e28970cf63e62ee843e1e45b109c082c"
+
+[[files]]
+file = "kubejs/assets/kronwerke/textures/quests/shots/mekanism_advanced_teleporter.png"
+hash = "9fed2fdfa0505739dbf610605617584f9b1bb07e585949669ef69ea1c3cd69f2"
+
+[[files]]
+file = "kubejs/assets/kronwerke/textures/quests/shots/mekanism_advanced_turbine.png"
+hash = "809ff6b70637bd62491c9ede49d5effd2306339fb074f735b9c563d4f9383fa6"
+
+[[files]]
+file = "kubejs/assets/kronwerke/textures/quests/shots/mekanism_dynamic_tank.png"
+hash = "df70813e1cd34d60bc9b09c41f35b09166b15c9cced4ddc56343efaa793a795c"
+
+[[files]]
+file = "kubejs/assets/kronwerke/textures/quests/shots/mekanism_elite_fusion.png"
+hash = "7532b8ac3875a521c83554a0c92dd71557d510bd1cdf8f94c24325e1d4ad2e54"
+
+[[files]]
+file = "kubejs/assets/kronwerke/textures/quests/shots/mekanism_elite_induction_matrix.png"
+hash = "d1c11a1074f87213f6ea820d3e66e88d11091971b4d52656b3bb7f81fc992034"
+
+[[files]]
+file = "kubejs/assets/kronwerke/textures/quests/shots/mekanism_elite_mekasuit.png"
+hash = "1ca86df6bd882153cb98abf031d9568055afd0b48adcf186f181e47bb0f0782e"
+
+[[files]]
+file = "kubejs/assets/kronwerke/textures/quests/shots/mekanism_ores_line2.png"
+hash = "3b688d51d41d8a6d50e862a25a3d923c0db96facff899c2135363a2c3cd6d271"
+
+[[files]]
+file = "kubejs/assets/kronwerke/textures/quests/shots/mekanism_ores_quintupling.png"
+hash = "4480c122fe8fec0ad7aaec87396a06fb98798926981c5b5a236614bc2ecc3e37"
+
+[[files]]
+file = "kubejs/assets/kronwerke/textures/quests/shots/mekanism_ores_shards.png"
+hash = "caa19da06fe19713303bf529e525bf6dff9aba52cd653b20625131d36978dba4"
+
+[[files]]
+file = "kubejs/assets/kronwerke/textures/quests/shots/mekanism_ores_tripling.png"
+hash = "443fe26453c3cd5f0380b0126b5237060f0e4e5100034ff96ea60341cd0eb19a"
+
+[[files]]
+file = "kubejs/assets/kronwerke/textures/quests/shots/nether_welcome.png"
+hash = "8437013c1c861356b151ce227b3351294033e675d5296d3cf15e74c0633bf629"
+
+[[files]]
+file = "kubejs/assets/kronwerke/textures/quests/shots/nuclearcraft_reactor.png"
+hash = "0918e2a59c0e2f2499f2b3b6b6890681cc34ade0f877800a51c424665b681c19"
+
+[[files]]
+file = "kubejs/assets/kronwerke/textures/quests/shots/occultism_afrit_kandar.png"
+hash = "d05c362c1a8201f3b139ce81dc553d047343d24d8065adf69731e0b4d6772516"
+
+[[files]]
+file = "kubejs/assets/kronwerke/textures/quests/shots/occultism_afrit_marid_crusher.png"
+hash = "27b41801847348984bc80a9859683837f831a4a9fa9d7844a10de61b16f951c8"
+
+[[files]]
+file = "kubejs/assets/kronwerke/textures/quests/shots/occultism_afrit_mineshaft.png"
+hash = "4bdb977543366b19139d6119f1ea647147a6688215b02488f40c8a081cc63462"
+
+[[files]]
+file = "kubejs/assets/kronwerke/textures/quests/shots/occultism_afrit_storage.png"
+hash = "a67c97745538cb5f532316f7ce23d6115e5a56bdc20b753ad6667768feb325dd"
+
+[[files]]
+file = "kubejs/assets/kronwerke/textures/quests/shots/occultism_aviar.png"
+hash = "5ab65704e3d11ed5648920f8a5e9fbdd22b76d3eb999b69515646adf5e3f5de8"
+
+[[files]]
+file = "kubejs/assets/kronwerke/textures/quests/shots/occultism_hedyrin.png"
+hash = "ca20cb5550fd1a5c2a31077db1d03b0213079b511bdd5ed2e27d3517d432a7d8"
+
+[[files]]
+file = "kubejs/assets/kronwerke/textures/quests/shots/occultism_ophyx.png"
+hash = "e831d7c60d6f5b56c1622c7e364e9f1f698cba8554dbc49632ea88e445c534e3"
+
+[[files]]
+file = "kubejs/assets/kronwerke/textures/quests/shots/occultism_spirit_fire.png"
+hash = "c0ee71f08dafba25f42e48c6503b9108dc6b6d4aea468ef2730ac63b0c28e467"
+
+[[files]]
+file = "kubejs/assets/kronwerke/textures/quests/shots/occultism_strigeor.png"
+hash = "5b6c240f2626640dc6ecb296a59a101646c8b8c0ecf8566a1b6674d729e93341"
+
+[[files]]
+file = "kubejs/assets/kronwerke/textures/quests/shots/pneumaticcraft_chamber.png"
+hash = "c90ee728d82974eb36248dd4e3151fac77595eb2c5416927fc482422f3a2644a"
+
+[[files]]
+file = "kubejs/assets/kronwerke/textures/quests/shots/powah_orb.png"
+hash = "ca13fb33dc9d745499263f876d387f000d14398d4426e1aa63d5f8826c8582be"
+
+[[files]]
+file = "kubejs/assets/kronwerke/textures/quests/shots/powah_reactor.png"
+hash = "bf7c99c8e8eedf22996e534171d5ab340f87ca437cb018c5b5484653fd42d91c"
+
+[[files]]
+file = "kubejs/assets/kronwerke/textures/quests/shots/powah_thermo.png"
+hash = "24b87f77dc6a9d892237ac2db42b09799a371cef939af2855655a87e8a318f71"
+
+[[files]]
+file = "kubejs/assets/kronwerke/textures/quests/shots/start_here_m_altar.png"
+hash = "2ad2830f0d776d66f4b66ba465a4306cd0f9cefaf849f2e8e27fde6f4cf25649"
+
+[[files]]
+file = "kubejs/assets/kronwerke/textures/quests/shots/start_here_m_goldleaf.png"
+hash = "02854fc516338e5d2f50f5a409f0276decacd668cdd054a0a992541c40dd1d73"
+
+[[files]]
+file = "kubejs/assets/kronwerke/textures/quests/shots/start_here_m_ritual.png"
+hash = "803bf51e9dfbcc8047772b8fc787ccde7fa3c7ad32d0abfb00dfd9401c2d3c79"
+
+[[files]]
+file = "kubejs/assets/kronwerke/textures/quests/shots/start_here_o_feeder.png"
+hash = "019218ea831fd644f3d793de78bcb34df41899bf6388690d98154a7a3d9ff42d"
+
+[[files]]
+file = "kubejs/assets/kronwerke/textures/quests/shots/storage_controller.png"
+hash = "3ddeb7dc84db71b8ace39f7bb49560fbaddb99a2d2bb7d4994e1e27878e53efb"
+
+[[files]]
+file = "kubejs/assets/kronwerke/textures/quests/shots/storage_drawers_4.png"
+hash = "66bbdd7af5201338ec49224b8a6e754cc4f1679b0ce544af652fae38e0a97616"
+
+[[files]]
+file = "kubejs/assets/kronwerke/textures/quests/shots/storage_vault_big.png"
+hash = "077af307b7178ea7634ab3fefa89b36f3d348eb8989f8e3d53158c02a2118561"
+
+[[files]]
+file = "kubejs/assets/kronwerke/textures/quests/shots/the_end_arrival.png"
+hash = "c78fde952ea84b539e6d710dce0aefad516200205d0acabd2054e5363cb4f16a"
+
+[[files]]
+file = "kubejs/assets/kronwerke/textures/quests/shots/undergarden_arrival.png"
+hash = "7b8fa148da2197552aed56457267f24b3212733d33061207e3e127d8c71e9a29"
 
 [[files]]
 file = "kubejs/assets/kronwerke/textures/quests/silent_gear/first_steps.png"

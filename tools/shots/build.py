@@ -481,9 +481,10 @@ def build(check=False):
     close_row()
 
     # what an earlier build left lying: clearing a box drops the wire coils of its connectors
-    # and the sails of its windmill, and they would lie in whatever scene stands there now
-    if n:
-        files[f"box_{n:03d}"].append("execute as @e[type=minecraft:item,tag=!kw_shot] run kill @s")
+    # and the sails of its windmill, and they would lie in whatever scene stands there now.
+    # At the end of every box, because only then its chunks are sure to be loaded.
+    for name, cmds in files.items():
+        cmds.append("execute as @e[type=minecraft:item,tag=!kw_shot] run kill @s")
 
     files["000_pad"] = pad
     for name, cmds in files.items():

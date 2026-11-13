@@ -1,13 +1,45 @@
-# 036 immersive/hammer
-#area -4 144 15 169
-fill -4 64 144 15 91 169 minecraft:air
-fill -4 60 144 15 62 169 minecraft:stone
-fill -4 63 144 15 63 169 minecraft:light_gray_concrete
-fill 0 64 150 15 79 150 minecraft:light_gray_concrete
-fill 0 64 150 0 79 163 minecraft:light_gray_concrete
-setblock 1 64 162 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "036"}','{"text": "immersive"}','{"text": "hammer"}','{"text": ""}']}}
-setblock 2 64 162 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "right-clicking"}','{"text": "a structure"}','{"text": "with the hammer"}','{"text": ""}']}}
-fill 10 64 150 10 79 163 minecraft:light_gray_concrete
-place template immersiveengineering:multiblocks/coke_oven 4 64 153 none
-setblock 5 64 157 minecraft:smooth_stone_slab
-summon item_display 5.5 65.04 157.5 {item:{id:"immersiveengineering:hammer",count:1},item_display:"fixed",billboard:"vertical",transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[1.2f,1.2f,1.2f]},brightness:{sky:15,block:15},Tags:["kw_shot"]}
+# 036 occultism/aviar
+#area 11 109 34 138
+fill 11 64 109 34 91 138 minecraft:air
+fill 11 60 109 34 62 138 minecraft:stone
+fill 11 63 109 34 63 138 minecraft:light_gray_concrete
+fill 15 64 115 34 79 115 minecraft:light_gray_concrete
+fill 15 64 115 15 79 132 minecraft:light_gray_concrete
+setblock 16 64 131 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "036"}','{"text": "occultism"}','{"text": "aviar"}','{"text": ""}']}}
+setblock 17 64 131 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "finished"}','{"text": "Aviar\'s Circle"}','{"text": "with golden"}','{"text": "bowl, candles"}']}}
+setblock 18 64 131 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "and sacrificial"}','{"text": "bowls"}','{"text": ""}','{"text": ""}']}}
+fill 29 64 115 29 79 132 minecraft:light_gray_concrete
+fill 17 63 117 27 63 127 minecraft:smooth_basalt
+setblock 19 64 121 occultism:chalk_glyph_white[facing=south,sign=0]
+setblock 19 64 122 occultism:chalk_glyph_white[facing=south,sign=5]
+setblock 19 64 123 occultism:chalk_glyph_white[facing=south,sign=10]
+setblock 20 64 120 occultism:chalk_glyph_white[facing=south,sign=2]
+setblock 20 64 122 occultism:chalk_glyph_white[facing=south,sign=7]
+setblock 20 64 124 occultism:chalk_glyph_white[facing=south,sign=12]
+setblock 21 64 119 occultism:chalk_glyph_white[facing=south,sign=4]
+setblock 21 64 121 minecraft:white_candle[candles=1,lit=true]
+setblock 21 64 122 occultism:chalk_glyph_white[facing=south,sign=9]
+setblock 21 64 123 minecraft:white_candle[candles=1,lit=true]
+setblock 21 64 125 occultism:chalk_glyph_white[facing=south,sign=1]
+setblock 22 64 119 occultism:chalk_glyph_white[facing=south,sign=6]
+setblock 22 64 120 occultism:chalk_glyph_white[facing=south,sign=11]
+setblock 22 64 121 occultism:chalk_glyph_white[facing=south,sign=3]
+setblock 22 64 122 occultism:golden_sacrificial_bowl
+setblock 22 64 123 occultism:chalk_glyph_white[facing=south,sign=8]
+setblock 22 64 124 occultism:chalk_glyph_white[facing=south,sign=0]
+setblock 22 64 125 occultism:chalk_glyph_white[facing=south,sign=5]
+setblock 23 64 119 occultism:chalk_glyph_white[facing=south,sign=10]
+setblock 23 64 121 minecraft:white_candle[candles=1,lit=true]
+setblock 23 64 122 occultism:chalk_glyph_white[facing=south,sign=2]
+setblock 23 64 123 minecraft:white_candle[candles=1,lit=true]
+setblock 23 64 125 occultism:chalk_glyph_white[facing=south,sign=7]
+setblock 24 64 120 occultism:chalk_glyph_white[facing=south,sign=12]
+setblock 24 64 122 occultism:chalk_glyph_white[facing=south,sign=4]
+setblock 24 64 124 occultism:chalk_glyph_white[facing=south,sign=9]
+setblock 25 64 121 occultism:chalk_glyph_white[facing=south,sign=1]
+setblock 25 64 122 occultism:chalk_glyph_white[facing=south,sign=6]
+setblock 25 64 123 occultism:chalk_glyph_white[facing=south,sign=11]
+setblock 22 64 117 occultism:sacrificial_bowl[facing=up]
+setblock 27 64 122 occultism:sacrificial_bowl[facing=up]
+setblock 22 64 127 occultism:sacrificial_bowl[facing=up]
+setblock 17 64 122 occultism:sacrificial_bowl[facing=up]

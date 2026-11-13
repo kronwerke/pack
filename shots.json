@@ -281,12 +281,40 @@
    "height": 360
   },
   {
+   "name": "e_ars_nouveau_imbuement",
+   "dim": "kronwerke:testworld",
+   "pos": [
+    7.24,
+    64.99,
+    79.27
+   ],
+   "yaw": 165.0,
+   "pitch": 35.0,
+   "fov": 60,
+   "width": 640,
+   "height": 360
+  },
+  {
    "name": "e_ars_nouveau_apparatus",
    "dim": "kronwerke:testworld",
    "pos": [
-    6.93,
+    21.93,
     67.05,
     81.84
+   ],
+   "yaw": 165.0,
+   "pitch": 35.0,
+   "fov": 60,
+   "width": 640,
+   "height": 360
+  },
+  {
+   "name": "e_ars_nouveau_earth_essence",
+   "dim": "kronwerke:testworld",
+   "pos": [
+    36.74,
+    64.99,
+    78.77
    ],
    "yaw": 165.0,
    "pitch": 35.0,
@@ -309,10 +337,80 @@
    "height": 360
   },
   {
+   "name": "e_botania_pool",
+   "dim": "kronwerke:testworld",
+   "pos": [
+    20.74,
+    64.99,
+    98.27
+   ],
+   "yaw": 165.0,
+   "pitch": 35.0,
+   "fov": 60,
+   "width": 640,
+   "height": 360
+  },
+  {
+   "name": "e_botania_manastar",
+   "dim": "kronwerke:testworld",
+   "pos": [
+    36.62,
+    65.2,
+    99.67
+   ],
+   "yaw": 165.0,
+   "pitch": 35.0,
+   "fov": 60,
+   "width": 640,
+   "height": 360
+  },
+  {
+   "name": "e_botania_mana_void",
+   "dim": "kronwerke:testworld",
+   "pos": [
+    51.24,
+    65.19,
+    98.27
+   ],
+   "yaw": 165.0,
+   "pitch": 35.0,
+   "fov": 60,
+   "width": 640,
+   "height": 360
+  },
+  {
+   "name": "e_botania_runes_mana_pearl",
+   "dim": "kronwerke:testworld",
+   "pos": [
+    66.24,
+    65.19,
+    98.27
+   ],
+   "yaw": 165.0,
+   "pitch": 35.0,
+   "fov": 60,
+   "width": 640,
+   "height": 360
+  },
+  {
+   "name": "e_botania_runes_runic_altar",
+   "dim": "kronwerke:testworld",
+   "pos": [
+    80.96,
+    65.58,
+    99.08
+   ],
+   "yaw": 165.0,
+   "pitch": 35.0,
+   "fov": 60,
+   "width": 640,
+   "height": 360
+  },
+  {
    "name": "e_botania_runes_plate_base",
    "dim": "kronwerke:testworld",
    "pos": [
-    21.31,
+    96.31,
     65.36,
     98.51
    ],
@@ -326,7 +424,7 @@
    "name": "e_botania_runes_terrasteel",
    "dim": "kronwerke:testworld",
    "pos": [
-    37.94,
+    112.94,
     67.47,
     100.87
    ],
@@ -340,7 +438,7 @@
    "name": "e_gaia_arena",
    "dim": "kronwerke:testworld",
    "pos": [
-    57.41,
+    132.41,
     67.75,
     105.63
    ],
@@ -354,7 +452,7 @@
    "name": "e_alfheim_frame",
    "dim": "kronwerke:testworld",
    "pos": [
-    76.04,
+    151.04,
     68.55,
     101.25
    ],
@@ -368,7 +466,7 @@
    "name": "e_alfheim_open",
    "dim": "kronwerke:testworld",
    "pos": [
-    93.04,
+    168.04,
     68.55,
     101.25
    ],
@@ -519,10 +617,38 @@
    "height": 360
   },
   {
+   "name": "e_immersive_blast_furnace",
+   "dim": "kronwerke:testworld",
+   "pos": [
+    36.47,
+    66.21,
+    158.13
+   ],
+   "yaw": 165.0,
+   "pitch": 35.0,
+   "fov": 60,
+   "width": 640,
+   "height": 360
+  },
+  {
+   "name": "e_immersive_improved_form",
+   "dim": "kronwerke:testworld",
+   "pos": [
+    46.64,
+    67.07,
+    158.76
+   ],
+   "yaw": 165.0,
+   "pitch": 35.0,
+   "fov": 60,
+   "width": 640,
+   "height": 360
+  },
+  {
    "name": "e_immersive_kiln",
    "dim": "kronwerke:testworld",
    "pos": [
-    35.74,
+    60.74,
     65.19,
     156.77
    ],
@@ -536,7 +662,7 @@
    "name": "e_immersive_tank",
    "dim": "kronwerke:testworld",
    "pos": [
-    51.81,
+    76.81,
     67.93,
     159.39
    ],
@@ -550,7 +676,7 @@
    "name": "e_immersive_silo",
    "dim": "kronwerke:testworld",
    "pos": [
-    62.15,
+    87.15,
     69.64,
     160.65
    ],
@@ -564,7 +690,7 @@
    "name": "e_immersive_shelf",
    "dim": "kronwerke:testworld",
    "pos": [
-    71.06,
+    96.06,
     66.85,
     157.96
    ],
@@ -578,7 +704,7 @@
    "name": "e_immersive_heavy_crusher",
    "dim": "kronwerke:testworld",
    "pos": [
-    86.55,
+    111.55,
     66.42,
     158.42
    ],
@@ -592,7 +718,7 @@
    "name": "e_immersive_heavy_press",
    "dim": "kronwerke:testworld",
    "pos": [
-    96.36,
+    121.36,
     65.9,
     156.69
    ],
@@ -606,7 +732,7 @@
    "name": "e_immersive_heavy_squeezer",
    "dim": "kronwerke:testworld",
    "pos": [
-    106.47,
+    131.47,
     66.21,
     158.13
    ],
@@ -620,7 +746,7 @@
    "name": "e_immersive_heavy_fermenter",
    "dim": "kronwerke:testworld",
    "pos": [
-    116.47,
+    141.47,
     66.21,
     158.13
    ],
@@ -634,7 +760,7 @@
    "name": "e_immersive_heavy_mixer",
    "dim": "kronwerke:testworld",
    "pos": [
-    126.47,
+    151.47,
     66.21,
     158.13
    ],
@@ -648,7 +774,7 @@
    "name": "e_immersive_heavy_bottling",
    "dim": "kronwerke:testworld",
    "pos": [
-    136.36,
+    161.36,
     65.9,
     157.19
    ],
@@ -662,7 +788,7 @@
    "name": "e_immersive_heavy_arc",
    "dim": "kronwerke:testworld",
    "pos": [
-    147.12,
+    172.12,
     68.77,
     161.56
    ],
@@ -676,7 +802,7 @@
    "name": "e_immersive_heavy_refinery",
    "dim": "kronwerke:testworld",
    "pos": [
-    156.55,
+    181.55,
     66.42,
     158.42
    ],
@@ -690,7 +816,7 @@
    "name": "e_immersive_heavy_diesel",
    "dim": "kronwerke:testworld",
    "pos": [
-    166.79,
+    191.79,
     67.06,
     160.3
    ],
@@ -704,7 +830,7 @@
    "name": "e_immersive_heavy_sawmill",
    "dim": "kronwerke:testworld",
    "pos": [
-    176.55,
+    201.55,
     66.42,
     158.42
    ],
@@ -718,7 +844,7 @@
    "name": "e_immersive_heavy_assembler",
    "dim": "kronwerke:testworld",
    "pos": [
-    186.47,
+    211.47,
     66.21,
     158.13
    ],
@@ -732,7 +858,7 @@
    "name": "e_immersive_heavy_auto_workbench",
    "dim": "kronwerke:testworld",
    "pos": [
-    196.31,
+    221.31,
     65.36,
     157.51
    ],
@@ -746,7 +872,7 @@
    "name": "e_immersive_heavy_excavator",
    "dim": "kronwerke:testworld",
    "pos": [
-    206.94,
+    231.94,
     67.48,
     161.38
    ],
@@ -760,7 +886,7 @@
    "name": "e_immersive_heavy_lightning_rod",
    "dim": "kronwerke:testworld",
    "pos": [
-    216.47,
+    241.47,
     66.21,
     158.13
    ],
@@ -774,9 +900,135 @@
    "name": "e_immersive_heavy_radio_tower",
    "dim": "kronwerke:testworld",
    "pos": [
-    229.64,
+    254.64,
     81.17,
     171.44
+   ],
+   "yaw": 165.0,
+   "pitch": 35.0,
+   "fov": 60,
+   "width": 640,
+   "height": 360
+  },
+  {
+   "name": "e_powah_orb",
+   "dim": "kronwerke:testworld",
+   "pos": [
+    6.34,
+    65.25,
+    192.63
+   ],
+   "yaw": 165.0,
+   "pitch": 35.0,
+   "fov": 60,
+   "width": 640,
+   "height": 360
+  },
+  {
+   "name": "e_nether_welcome",
+   "dim": "kronwerke:testworld",
+   "pos": [
+    6.23,
+    67.71,
+    214.09
+   ],
+   "yaw": 165.0,
+   "pitch": 35.0,
+   "fov": 60,
+   "width": 640,
+   "height": 360
+  },
+  {
+   "name": "e_aether_portal",
+   "dim": "kronwerke:testworld",
+   "pos": [
+    20.23,
+    67.71,
+    214.09
+   ],
+   "yaw": 165.0,
+   "pitch": 35.0,
+   "fov": 60,
+   "width": 640,
+   "height": 360
+  },
+  {
+   "name": "e_deeper_darker_portal",
+   "dim": "kronwerke:testworld",
+   "pos": [
+    34.23,
+    67.71,
+    214.09
+   ],
+   "yaw": 165.0,
+   "pitch": 35.0,
+   "fov": 60,
+   "width": 640,
+   "height": 360
+  },
+  {
+   "name": "e_undergarden_arrival",
+   "dim": "kronwerke:testworld",
+   "pos": [
+    48.23,
+    67.71,
+    214.09
+   ],
+   "yaw": 165.0,
+   "pitch": 35.0,
+   "fov": 60,
+   "width": 640,
+   "height": 360
+  },
+  {
+   "name": "e_list_dimensions_d_mining",
+   "dim": "kronwerke:testworld",
+   "pos": [
+    62.23,
+    67.71,
+    214.09
+   ],
+   "yaw": 165.0,
+   "pitch": 35.0,
+   "fov": 60,
+   "width": 640,
+   "height": 360
+  },
+  {
+   "name": "e_list_dimensions_d_aether",
+   "dim": "kronwerke:testworld",
+   "pos": [
+    71.23,
+    67.71,
+    214.09
+   ],
+   "yaw": 165.0,
+   "pitch": 35.0,
+   "fov": 60,
+   "width": 640,
+   "height": 360
+  },
+  {
+   "name": "e_list_dimensions_d_undergarden",
+   "dim": "kronwerke:testworld",
+   "pos": [
+    80.23,
+    67.71,
+    214.09
+   ],
+   "yaw": 165.0,
+   "pitch": 35.0,
+   "fov": 60,
+   "width": 640,
+   "height": 360
+  },
+  {
+   "name": "e_list_dimensions_d_otherside",
+   "dim": "kronwerke:testworld",
+   "pos": [
+    89.23,
+    67.71,
+    214.09
    ],
    "yaw": 165.0,
    "pitch": 35.0,

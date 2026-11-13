@@ -22,3 +22,9 @@ setblock -6 64 116 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text"
 #area -8 150 -6 152
 setblock -6 63 151 minecraft:smooth_stone
 setblock -6 64 151 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Immersive"}','{"text": "Engineering and"}','{"text": "Industrial"}','{"text": "Foregoing"}']}}
+#area -8 185 -6 187
+setblock -6 63 186 minecraft:smooth_stone
+setblock -6 64 186 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Oritech, Powah,"}','{"text": "Ender IO"}','{"text": ""}','{"text": ""}']}}
+#area -8 204 -6 206
+setblock -6 63 205 minecraft:smooth_stone
+setblock -6 64 205 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Dimensions"}','{"text": ""}','{"text": ""}','{"text": ""}']}}

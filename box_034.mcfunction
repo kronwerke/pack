@@ -1,23 +1,28 @@
-# 034 occultism_afrit/storage
-#area 122 109 145 138
-fill 122 64 109 145 91 138 minecraft:air
-fill 122 60 109 145 62 138 minecraft:stone
-fill 122 63 109 145 63 138 minecraft:light_gray_concrete
-fill 126 64 115 145 79 115 minecraft:light_gray_concrete
-fill 126 64 115 126 79 132 minecraft:light_gray_concrete
-setblock 127 64 131 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "034"}','{"text": "occultism_afrit"}','{"text": "storage"}','{"text": ""}']}}
-setblock 128 64 131 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "storage"}','{"text": "actuator with"}','{"text": "four"}','{"text": "stabilizers"}']}}
-fill 140 64 115 140 79 132 minecraft:light_gray_concrete
-setblock 129 65 122 occultism:otherstone
-setblock 130 65 122 occultism:storage_stabilizer_tier1[facing=east]
-setblock 133 65 118 occultism:otherstone
-setblock 133 65 119 occultism:storage_stabilizer_tier1[facing=south]
-setblock 133 65 125 occultism:storage_stabilizer_tier1[facing=north]
-setblock 133 65 126 occultism:otherstone
-setblock 136 65 122 occultism:storage_stabilizer_tier1[facing=west]
-setblock 137 65 122 occultism:otherstone
-setblock 129 64 122 occultism:otherstone
-setblock 133 64 118 occultism:otherstone
-setblock 133 64 122 occultism:storage_controller
-setblock 133 64 126 occultism:otherstone
-setblock 137 64 122 occultism:otherstone
+# 034 alfheim/open
+#area 156 84 177 109
+fill 156 64 84 177 91 109 minecraft:air
+fill 156 60 84 177 62 109 minecraft:stone
+fill 156 63 84 177 63 109 minecraft:light_gray_concrete
+fill 160 64 90 177 79 90 minecraft:light_gray_concrete
+fill 160 64 90 160 79 103 minecraft:light_gray_concrete
+setblock 161 64 102 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "034"}','{"text": "alfheim"}','{"text": "open"}','{"text": ""}']}}
+setblock 162 64 102 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "the open portal"}','{"text": "with an item"}','{"text": "flying out"}','{"text": ""}']}}
+fill 172 64 90 172 79 103 minecraft:light_gray_concrete
+setblock 166 64 94 botania:elven_gateway_core
+setblock 165 64 94 botania:livingwood_log[axis=x]
+setblock 165 68 94 botania:livingwood_log[axis=x]
+setblock 167 64 94 botania:livingwood_log[axis=x]
+setblock 167 68 94 botania:livingwood_log[axis=x]
+setblock 166 68 94 botania:glimmering_livingwood_log[axis=x]
+setblock 164 65 94 botania:livingwood_log[axis=y]
+setblock 164 66 94 botania:glimmering_livingwood_log[axis=y]
+setblock 164 67 94 botania:livingwood_log[axis=y]
+setblock 168 65 94 botania:livingwood_log[axis=y]
+setblock 168 66 94 botania:glimmering_livingwood_log[axis=y]
+setblock 168 67 94 botania:livingwood_log[axis=y]
+setblock 162 64 96 botania:mana_pool{mana:1000000}
+setblock 162 65 96 botania:natura_pylon
+setblock 170 64 96 botania:mana_pool{mana:1000000}
+setblock 170 65 96 botania:natura_pylon
+kw testworld use 166 64 94 south botania:wand_of_the_forest
+execute unless block 166 64 94 botania:elven_gateway_core[state=off]

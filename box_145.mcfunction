@@ -1,23 +1,26 @@
-# 145 silent_gear/stone_anvil, crude_mixer, alloy_forge
-#area -4 338 35 363
-fill -4 64 338 35 91 363 minecraft:air
-fill -4 60 338 35 62 363 minecraft:stone
-fill -4 63 338 35 63 363 minecraft:light_gray_concrete
-fill 0 64 344 35 79 344 minecraft:light_gray_concrete
-fill 0 64 344 0 79 357 minecraft:light_gray_concrete
-setblock 1 64 356 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "145.1"}','{"text": "silent_gear"}','{"text": "stone_anvil"}','{"text": ""}']}}
-setblock 2 64 356 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Stell einen"}','{"text": "Steinamboss auf"}','{"text": ""}','{"text": ""}']}}
-fill 10 64 344 10 79 357 minecraft:light_gray_concrete
-setblock 4 64 349 silentgear:stone_anvil
-setblock 6 64 349 minecraft:smooth_stone_slab
-summon item_display 6.5 64.95 349.5 {item:{id:"silentgear:hammer",count:1},item_display:"fixed",billboard:"vertical",transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[1.0f,1.0f,1.0f]},brightness:{sky:15,block:15},Tags:["kw_shot"]}
-setblock 11 64 356 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "145.2"}','{"text": "silent_gear"}','{"text": "crude_mixer"}','{"text": ""}']}}
-setblock 12 64 356 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Bau einen Crude"}','{"text": "Mixer"}','{"text": ""}','{"text": ""}']}}
-fill 20 64 344 20 79 357 minecraft:light_gray_concrete
-setblock 15 64 349 silentgear:crude_mixer[facing=south,lit=true]
-setblock 21 64 356 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "145.3"}','{"text": "silent_gear"}','{"text": "alloy_forge"}','{"text": ""}']}}
-setblock 22 64 356 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Bau die"}','{"text": "Legierungsschmiede"}','{"text": ""}','{"text": ""}']}}
-fill 30 64 344 30 79 357 minecraft:light_gray_concrete
-setblock 24 64 349 silentgear:alloy_forge[facing=south,lit=true]
-setblock 26 64 349 silentgear:starlight_charger
+# 145 finale/tech
+#area 97 319 118 346
+fill 97 64 319 118 91 346 minecraft:air
+fill 97 60 319 118 62 346 minecraft:stone
+fill 97 63 319 118 63 346 minecraft:light_gray_concrete
+fill 101 64 325 118 79 325 minecraft:light_gray_concrete
+fill 101 64 325 101 79 340 minecraft:light_gray_concrete
+setblock 102 64 339 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "145"}','{"text": "finale"}','{"text": "tech"}','{"text": ""}']}}
+setblock 103 64 339 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Fusioniere"}','{"text": "Erwachtes"}','{"text": "Draconium"}','{"text": ""}']}}
+fill 113 64 325 113 79 340 minecraft:light_gray_concrete
+setblock 107 64 331 draconicevolution:crafting_core
+setblock 104 64 330 draconicevolution:wyvern_crafting_injector[facing=east]
+kw testworld use 104 64 330 up draconicevolution:draconium_core
+setblock 104 64 332 draconicevolution:wyvern_crafting_injector[facing=east]
+kw testworld use 104 64 332 up draconicevolution:draconium_core
+setblock 110 64 330 draconicevolution:wyvern_crafting_injector[facing=west]
+kw testworld use 110 64 330 up draconicevolution:draconium_core
+setblock 110 64 332 draconicevolution:wyvern_crafting_injector[facing=west]
+kw testworld use 110 64 332 up draconicevolution:draconium_core
+setblock 106 64 328 draconicevolution:wyvern_crafting_injector[facing=south]
+kw testworld use 106 64 328 up botania:gaia_ingot
+setblock 108 64 328 draconicevolution:wyvern_crafting_injector[facing=south]
+kw testworld use 108 64 328 up botania:gaia_ingot
+setblock 107 64 334 draconicevolution:wyvern_crafting_injector[facing=north]
+kw testworld use 107 64 334 up draconicevolution:dragon_heart
 execute as @e[type=minecraft:item,tag=!kw_shot] run kill @s

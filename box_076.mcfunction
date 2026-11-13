@@ -1,21 +1,14 @@
-# 076 botania_runes/plate_base
-#area 167 107 186 132
-fill 167 64 107 186 91 132 minecraft:air
-fill 167 60 107 186 62 132 minecraft:stone
-fill 167 63 107 186 63 132 minecraft:light_gray_concrete
-fill 171 64 113 186 79 113 minecraft:light_gray_concrete
-fill 171 64 113 171 79 126 minecraft:light_gray_concrete
-setblock 172 64 125 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "076"}','{"text": "botania_runes"}','{"text": "plate_base"}','{"text": ""}']}}
-setblock 173 64 125 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "the 3x3 lapis"}','{"text": "and livingrock"}','{"text": "base with plate"}','{"text": "and sparks"}']}}
-fill 181 64 113 181 79 126 minecraft:light_gray_concrete
-setblock 175 64 117 botania:livingrock
-setblock 175 64 118 minecraft:lapis_block
-setblock 175 64 119 botania:livingrock
-setblock 176 64 117 minecraft:lapis_block
-setblock 176 64 118 botania:livingrock
-setblock 176 64 119 minecraft:lapis_block
-setblock 177 64 117 botania:livingrock
-setblock 177 64 118 minecraft:lapis_block
-setblock 177 64 119 botania:livingrock
-setblock 176 65 118 botania:terrestrial_agglomeration_plate
+# 076 botania_runes/thermalily
+#area 137 109 156 134
+fill 137 64 109 156 91 134 minecraft:air
+fill 137 60 109 156 62 134 minecraft:stone
+fill 137 63 109 156 63 134 minecraft:light_gray_concrete
+fill 141 64 115 156 79 115 minecraft:light_gray_concrete
+fill 141 64 115 141 79 128 minecraft:light_gray_concrete
+setblock 142 64 127 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "076"}','{"text": "botania_runes"}','{"text": "thermalily"}','{"text": ""}']}}
+setblock 143 64 127 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "a hose pulley"}','{"text": "feeding lava"}','{"text": "next to the"}','{"text": "lily"}']}}
+fill 151 64 115 151 79 128 minecraft:light_gray_concrete
+fill 144 63 119 148 63 121 minecraft:grass_block[snowy=false]
+setblock 147 63 120 minecraft:lava
+setblock 146 64 120 botania:thermalily
 execute as @e[type=minecraft:item,tag=!kw_shot] run kill @s

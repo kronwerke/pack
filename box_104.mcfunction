@@ -1,12 +1,21 @@
-# 104 immersive/bench
-#area 66 179 86 204
-fill 66 64 179 86 91 204 minecraft:air
-fill 66 60 179 86 62 204 minecraft:stone
-fill 66 63 179 86 63 204 minecraft:light_gray_concrete
-fill 70 64 185 86 79 185 minecraft:light_gray_concrete
-fill 70 64 185 70 79 198 minecraft:light_gray_concrete
-setblock 71 64 197 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "104"}','{"text": "immersive"}','{"text": "bench"}','{"text": ""}']}}
-setblock 72 64 197 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "engineer\'s"}','{"text": "workbench with"}','{"text": "the components"}','{"text": "blueprint"}']}}
-fill 81 64 185 81 79 198 minecraft:light_gray_concrete
-kw testworld use 75 63 190 up immersiveengineering:workbench
+# 104 immersive/blast_furnace, improved_form
+#area 26 181 55 207
+fill 26 64 181 55 91 207 minecraft:air
+fill 26 60 181 55 62 207 minecraft:stone
+fill 26 63 181 55 63 207 minecraft:light_gray_concrete
+fill 30 64 187 55 79 187 minecraft:light_gray_concrete
+fill 30 64 187 30 79 201 minecraft:light_gray_concrete
+setblock 31 64 200 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "104.1"}','{"text": "immersive"}','{"text": "blast_furnace"}','{"text": ""}']}}
+setblock 32 64 200 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "crude blast"}','{"text": "furnace GUI,"}','{"text": "improved"}','{"text": "furnace with"}']}}
+setblock 33 64 200 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "hopper and"}','{"text": "preheaters"}','{"text": ""}','{"text": ""}']}}
+fill 40 64 187 40 79 201 minecraft:light_gray_concrete
+place template immersiveengineering:multiblocks/blast_furnace 34 64 190 none
+kw testworld use 35 65 192 south immersiveengineering:hammer
+execute unless block 35 65 192 immersiveengineering:blastbrick
+setblock 41 64 200 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "104.2"}','{"text": "immersive"}','{"text": "improved_form"}','{"text": ""}']}}
+setblock 42 64 200 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Form einen"}','{"text": "Verbesserten"}','{"text": "Hochofen"}','{"text": ""}']}}
+fill 50 64 187 50 79 201 minecraft:light_gray_concrete
+place template immersiveengineering:multiblocks/improved_blast_furnace 44 64 190 none
+kw testworld use 45 65 192 south immersiveengineering:hammer
+execute unless block 45 65 192 immersiveengineering:blastbrick_reinforced
 execute as @e[type=minecraft:item,tag=!kw_shot] run kill @s

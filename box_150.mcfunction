@@ -1,27 +1,72 @@
-# 150 list_gear/mek_jetpack, wyvern, sg_end
-#area 253 338 292 363
-fill 253 64 338 292 91 363 minecraft:air
-fill 253 60 338 292 62 363 minecraft:stone
-fill 253 63 338 292 63 363 minecraft:light_gray_concrete
-fill 257 64 344 292 79 344 minecraft:light_gray_concrete
-fill 257 64 344 257 79 357 minecraft:light_gray_concrete
-setblock 258 64 356 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "150.1"}','{"text": "list_gear"}','{"text": "mek_jetpack"}','{"text": ""}']}}
-setblock 259 64 356 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Flieg mit dem"}','{"text": "Jetpack"}','{"text": ""}','{"text": ""}']}}
-fill 267 64 344 267 79 357 minecraft:light_gray_concrete
-summon armor_stand 262.5 64 349.5 {ArmorItems:[{},{},{id:"mekanism:jetpack",count:1},{}],ShowArms:1b,NoBasePlate:1b,Tags:["kw_shot"],Rotation:[20f,0f]}
-setblock 268 64 356 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "150.2"}','{"text": "list_gear"}','{"text": "wyvern"}','{"text": ""}']}}
-setblock 269 64 356 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Fusioniere"}','{"text": "Wyvern-Ausrüstung"}','{"text": ""}','{"text": ""}']}}
-fill 277 64 344 277 79 357 minecraft:light_gray_concrete
-summon armor_stand 271.5 64 349.5 {ArmorItems:[{},{},{id:"draconicevolution:wyvern_chestpiece",count:1},{}],HandItems:[{id:"draconicevolution:wyvern_sword",count:1},{}],ShowArms:1b,NoBasePlate:1b,Tags:["kw_shot"],Rotation:[180f,0f]}
-summon armor_stand 273.5 64 349.5 {ArmorItems:[{},{},{},{}],HandItems:[{id:"draconicevolution:wyvern_pickaxe",count:1},{}],ShowArms:1b,NoBasePlate:1b,Tags:["kw_shot"],Rotation:[180f,0f]}
-setblock 278 64 356 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "150.3"}','{"text": "list_gear"}','{"text": "sg_end"}','{"text": ""}']}}
-setblock 279 64 356 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Schmiede"}','{"text": "Azur-Elektrum"}','{"text": "und"}','{"text": "Tyrann-Stahl"}']}}
-fill 287 64 344 287 79 357 minecraft:light_gray_concrete
-fill 281 64 348 283 65 348 minecraft:end_stone
-setblock 282 64 348 silentgear:azure_silver_ore
-setblock 283 65 348 silentgear:azure_silver_ore
-setblock 281 64 350 minecraft:smooth_stone_slab
-summon item_display 281.5 64.95 350.5 {item:{id:"silentgear:azure_electrum_ingot",count:1},item_display:"fixed",billboard:"vertical",transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[1.0f,1.0f,1.0f]},brightness:{sky:15,block:15},Tags:["kw_shot"]}
-setblock 283 64 350 minecraft:smooth_stone_slab
-summon item_display 283.5 64.95 350.5 {item:{id:"silentgear:tyrian_steel_ingot",count:1},item_display:"fixed",billboard:"vertical",transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[1.0f,1.0f,1.0f]},brightness:{sky:15,block:15},Tags:["kw_shot"]}
+# 150 malum/altar, obelisk, crucible, healing_rite, quickening
+#area 196 340 257 369
+fill 196 64 340 229 95 369 minecraft:air
+fill 230 64 340 257 95 369 minecraft:air
+fill 196 60 340 257 62 369 minecraft:stone
+fill 196 63 340 257 63 369 minecraft:light_gray_concrete
+fill 200 64 346 257 83 346 minecraft:light_gray_concrete
+fill 200 64 346 200 83 363 minecraft:light_gray_concrete
+setblock 201 64 362 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "150.1"}','{"text": "malum"}','{"text": "altar"}','{"text": ""}']}}
+setblock 202 64 362 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Bau einen"}','{"text": "Spirit Altar"}','{"text": ""}','{"text": ""}']}}
+fill 210 64 346 210 83 363 minecraft:light_gray_concrete
+setblock 205 64 351 malum:spirit_altar
+kw testworld use 205 64 351 south malum:runewood_planks
+setblock 203 64 351 malum:runewood_planks
+setblock 203 65 351 malum:runewood_item_stand[facing=up,waterlogged=false]
+kw testworld use 203 65 351 south malum:hallowed_gold_ingot
+setblock 207 64 351 malum:runewood_planks
+setblock 207 65 351 malum:runewood_item_stand[facing=up,waterlogged=false]
+kw testworld use 207 65 351 south malum:hallowed_gold_ingot
+setblock 211 64 362 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "150.2"}','{"text": "malum"}','{"text": "obelisk"}','{"text": ""}']}}
+setblock 212 64 362 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Stell"}','{"text": "Runewood-Obelisken"}','{"text": "auf"}','{"text": ""}']}}
+fill 222 64 346 222 83 363 minecraft:light_gray_concrete
+setblock 216 64 351 malum:spirit_altar
+kw testworld use 216 64 351 south malum:runewood_planks
+setblock 214 64 351 malum:runewood_planks
+setblock 214 65 351 malum:runewood_item_stand[facing=up,waterlogged=false]
+kw testworld use 214 65 351 south malum:hallowed_gold_ingot
+setblock 218 64 351 malum:runewood_planks
+setblock 218 65 351 malum:runewood_item_stand[facing=up,waterlogged=false]
+kw testworld use 218 65 351 south malum:hallowed_gold_ingot
+kw testworld use 213 63 349 up malum:runewood_obelisk
+execute unless block 213 64 349 minecraft:air
+kw testworld use 219 63 349 up malum:runewood_obelisk
+execute unless block 219 64 349 minecraft:air
+kw testworld use 213 63 353 up malum:runewood_obelisk
+execute unless block 213 64 353 minecraft:air
+kw testworld use 219 63 353 up malum:runewood_obelisk
+execute unless block 219 64 353 minecraft:air
+setblock 223 64 362 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "150.3"}','{"text": "malum"}','{"text": "crucible"}','{"text": ""}']}}
+setblock 224 64 362 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Bau den Spirit"}','{"text": "Crucible"}','{"text": ""}','{"text": ""}']}}
+fill 232 64 346 232 83 363 minecraft:light_gray_concrete
+kw testworld use 227 63 351 up malum:spirit_crucible
+setblock 233 64 362 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "150.4"}','{"text": "malum"}','{"text": "healing_rite"}','{"text": ""}']}}
+setblock 234 64 362 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Zünde den Rite"}','{"text": "of Healing"}','{"text": ""}','{"text": ""}']}}
+fill 242 64 346 242 83 363 minecraft:light_gray_concrete
+setblock 237 64 351 malum:runewood_totem_base
+setblock 237 65 351 malum:runewood_log[axis=y]
+kw testworld use 237 65 351 south malum:arcane_spirit
+execute unless block 237 65 351 malum:runewood_log
+setblock 237 66 351 malum:runewood_log[axis=y]
+kw testworld use 237 66 351 south malum:sacred_spirit
+execute unless block 237 66 351 malum:runewood_log
+setblock 237 67 351 malum:runewood_log[axis=y]
+kw testworld use 237 67 351 south malum:sacred_spirit
+execute unless block 237 67 351 malum:runewood_log
+setblock 243 64 362 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "150.5"}','{"text": "malum"}','{"text": "quickening"}','{"text": ""}']}}
+setblock 244 64 362 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Zünde den Rite"}','{"text": "of Quickening"}','{"text": ""}','{"text": ""}']}}
+fill 252 64 346 252 83 363 minecraft:light_gray_concrete
+setblock 247 64 350 malum:soulwood_totem_base
+setblock 247 65 350 malum:soulwood_log[axis=y]
+kw testworld use 247 65 350 south malum:eldritch_spirit
+execute unless block 247 65 350 malum:soulwood_log
+setblock 247 66 350 malum:soulwood_log[axis=y]
+kw testworld use 247 66 350 south malum:arcane_spirit
+execute unless block 247 66 350 malum:soulwood_log
+setblock 247 67 350 malum:soulwood_log[axis=y]
+kw testworld use 247 67 350 south malum:infernal_spirit
+execute unless block 247 67 350 malum:soulwood_log
+setblock 247 68 350 malum:soulwood_log[axis=y]
+kw testworld use 247 68 350 south malum:infernal_spirit
+execute unless block 247 68 350 malum:soulwood_log
 execute as @e[type=minecraft:item,tag=!kw_shot] run kill @s

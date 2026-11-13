@@ -1,16 +1,15 @@
-# 115 industrial/laser
-#area 73 214 92 239
-fill 73 64 214 92 91 239 minecraft:air
-fill 73 60 214 92 62 239 minecraft:stone
-fill 73 63 214 92 63 239 minecraft:light_gray_concrete
-fill 77 64 220 92 79 220 minecraft:light_gray_concrete
-fill 77 64 220 77 79 233 minecraft:light_gray_concrete
-setblock 78 64 232 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "115"}','{"text": "industrial"}','{"text": "laser"}','{"text": ""}']}}
-setblock 79 64 232 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "ore laser with"}','{"text": "drills, the"}','{"text": "lens slot,"}','{"text": "fluid laser"}']}}
-setblock 80 64 232 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "over a wither"}','{"text": ""}','{"text": ""}','{"text": ""}']}}
-fill 87 64 220 87 79 233 minecraft:light_gray_concrete
-setblock 82 64 225 industrialforegoing:ore_laser_base
-setblock 80 64 225 industrialforegoing:laser_drill[facing=east]
-setblock 84 64 225 industrialforegoing:laser_drill[facing=west]
-setblock 82 64 223 industrialforegoing:laser_drill[facing=south]
+# 115 industrial/frame_simple
+#area 21 216 42 241
+fill 21 64 216 42 91 241 minecraft:air
+fill 21 60 216 42 62 241 minecraft:stone
+fill 21 63 216 42 63 241 minecraft:light_gray_concrete
+fill 25 64 222 42 79 222 minecraft:light_gray_concrete
+fill 25 64 222 25 79 235 minecraft:light_gray_concrete
+setblock 26 64 234 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "115"}','{"text": "industrial"}','{"text": "frame_simple"}','{"text": ""}']}}
+setblock 27 64 234 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "the three frame"}','{"text": "recipes"}','{"text": ""}','{"text": ""}']}}
+fill 37 64 222 37 79 235 minecraft:light_gray_concrete
+setblock 28 64 227 industrialforegoing:machine_frame_pity
+setblock 30 64 227 industrialforegoing:machine_frame_simple
+setblock 32 64 227 industrialforegoing:machine_frame_advanced
+setblock 34 64 227 industrialforegoing:machine_frame_supreme
 execute as @e[type=minecraft:item,tag=!kw_shot] run kill @s

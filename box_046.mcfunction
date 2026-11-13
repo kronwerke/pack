@@ -1,12 +1,16 @@
-# 046 antimatter/wind
-#area 261 65 280 94
-fill 261 64 65 280 95 94 minecraft:air
-fill 261 60 65 280 62 94 minecraft:stone
-fill 261 63 65 280 63 94 minecraft:light_gray_concrete
-fill 265 64 71 280 83 71 minecraft:light_gray_concrete
-fill 265 64 71 265 83 88 minecraft:light_gray_concrete
-setblock 266 64 87 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "046"}','{"text": "antimatter"}','{"text": "wind"}','{"text": ""}']}}
-setblock 267 64 87 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "the large wind"}','{"text": "generator"}','{"text": ""}','{"text": ""}']}}
-fill 275 64 71 275 83 88 minecraft:light_gray_concrete
-kw testworld use 270 63 75 up mekanismgenerators:wind_generator
+# 046 antimatter/waste
+#area 225 65 246 90
+fill 225 64 65 246 91 90 minecraft:air
+fill 225 60 65 246 62 90 minecraft:stone
+fill 225 63 65 246 63 90 minecraft:light_gray_concrete
+fill 229 64 71 246 79 71 minecraft:light_gray_concrete
+fill 229 64 71 229 79 84 minecraft:light_gray_concrete
+setblock 230 64 83 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "046"}','{"text": "antimatter"}','{"text": "waste"}','{"text": ""}']}}
+setblock 231 64 83 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "row of solar"}','{"text": "neutron"}','{"text": "activators"}','{"text": "under open sky"}']}}
+fill 241 64 71 241 79 84 minecraft:light_gray_concrete
+setblock 232 64 76 mekanism:solar_neutron_activator[facing=south,active=false]
+setblock 234 64 76 mekanism:solar_neutron_activator[facing=south,active=false]
+setblock 236 64 76 mekanism:solar_neutron_activator[facing=south,active=false]
+setblock 238 64 76 mekanism:solar_neutron_activator[facing=south,active=false]
+fill 232 64 75 238 64 75 mekanism:basic_pressurized_tube
 execute as @e[type=minecraft:item,tag=!kw_shot] run kill @s

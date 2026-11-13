@@ -1,21 +1,18 @@
-# 065 botania/pure_daisy
-#area -4 107 15 132
-fill -4 64 107 15 91 132 minecraft:air
-fill -4 60 107 15 62 132 minecraft:stone
-fill -4 63 107 15 63 132 minecraft:light_gray_concrete
-fill 0 64 113 15 79 113 minecraft:light_gray_concrete
-fill 0 64 113 0 79 126 minecraft:light_gray_concrete
-setblock 1 64 125 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "065"}','{"text": "botania"}','{"text": "pure_daisy"}','{"text": ""}']}}
-setblock 2 64 125 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "the daisy with"}','{"text": "8 stone or"}','{"text": "logs, half"}','{"text": "converted"}']}}
-fill 10 64 113 10 79 126 minecraft:light_gray_concrete
-setblock 5 63 118 minecraft:grass_block
-setblock 5 64 118 botania:pure_daisy
-setblock 4 64 117 minecraft:stone
-setblock 5 64 117 botania:livingrock
-setblock 6 64 117 minecraft:stone
-setblock 4 64 118 minecraft:oak_log[axis=y]
-setblock 6 64 118 botania:livingwood_log[axis=y]
-setblock 4 64 119 botania:livingrock
-setblock 5 64 119 minecraft:stone
-setblock 6 64 119 botania:livingrock
+# 065 ars_master/charged_certus
+#area 242 88 261 113
+fill 242 64 88 261 91 113 minecraft:air
+fill 242 60 88 261 62 113 minecraft:stone
+fill 242 63 88 261 63 113 minecraft:light_gray_concrete
+fill 246 64 94 261 79 94 minecraft:light_gray_concrete
+fill 246 64 94 246 79 107 minecraft:light_gray_concrete
+setblock 247 64 106 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "065"}','{"text": "ars_master"}','{"text": "charged_certus"}','{"text": ""}']}}
+setblock 248 64 106 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "chamber with"}','{"text": "redstone and"}','{"text": "glowstone"}','{"text": "pedestals"}']}}
+fill 256 64 94 256 79 107 minecraft:light_gray_concrete
+setblock 251 64 99 ars_nouveau:imbuement_chamber[facing=up]
+setblock 250 64 99 ars_nouveau:arcane_pedestal[facing=up]
+kw testworld use 250 64 99 south minecraft:redstone
+setblock 252 64 99 ars_nouveau:arcane_pedestal[facing=up]
+kw testworld use 252 64 99 south minecraft:glowstone_dust
+kw testworld use 251 64 99 south ae2:certus_quartz_crystal
+setblock 253 64 98 ars_nouveau:source_jar[fill=11]{source:10000}
 execute as @e[type=minecraft:item,tag=!kw_shot] run kill @s

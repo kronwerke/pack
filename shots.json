@@ -1,222 +1,12 @@
 {
  "shots": [
   {
-   "name": "p_create_brass_blaze_burner",
+   "name": "q_farms_lava_seeds",
    "dim": "kronwerke:testworld",
    "pos": [
-    148.89,
-    66.0,
-    56.84
-   ],
-   "yaw": 165.0,
-   "pitch": 35.0,
-   "fov": 60,
-   "width": 640,
-   "height": 360
-  },
-  {
-   "name": "p_create_trains_station",
-   "dim": "kronwerke:testworld",
-   "pos": [
-    260.94,
-    67.47,
-    59.87
-   ],
-   "yaw": 165.0,
-   "pitch": 35.0,
-   "fov": 60,
-   "width": 640,
-   "height": 360
-  },
-  {
-   "name": "p_create_trains_postbox",
-   "dim": "kronwerke:testworld",
-   "pos": [
-    277.94,
-    66.87,
-    59.87
-   ],
-   "yaw": 165.0,
-   "pitch": 35.0,
-   "fov": 60,
-   "width": 640,
-   "height": 360
-  },
-  {
-   "name": "p_ars_nouveau_starbuncle_work",
-   "dim": "kronwerke:testworld",
-   "pos": [
-    83.43,
-    66.1,
-    102.98
-   ],
-   "yaw": 165.0,
-   "pitch": 35.0,
-   "fov": 60,
-   "width": 640,
-   "height": 360
-  },
-  {
-   "name": "p_ars_master_tribute",
-   "dim": "kronwerke:testworld",
-   "pos": [
-    190.32,
-    65.79,
-    102.55
-   ],
-   "yaw": 165.0,
-   "pitch": 35.0,
-   "fov": 60,
-   "width": 640,
-   "height": 360
-  },
-  {
-   "name": "p_ars_master_ritual_awakening",
-   "dim": "kronwerke:testworld",
-   "pos": [
-    220.32,
-    65.79,
-    102.55
-   ],
-   "yaw": 165.0,
-   "pitch": 35.0,
-   "fov": 60,
-   "width": 640,
-   "height": 360
-  },
-  {
-   "name": "p_alfheim_elementium_armor",
-   "dim": "kronwerke:testworld",
-   "pos": [
-    313.06,
-    66.85,
-    122.46
-   ],
-   "yaw": 165.0,
-   "pitch": 35.0,
-   "fov": 60,
-   "width": 640,
-   "height": 360
-  },
-  {
-   "name": "p_occultism_foliot_crusher",
-   "dim": "kronwerke:testworld",
-   "pos": [
-    40.55,
-    66.42,
-    159.42
-   ],
-   "yaw": 165.0,
-   "pitch": 35.0,
-   "fov": 60,
-   "width": 640,
-   "height": 360
-  },
-  {
-   "name": "p_occultism_djinni_familiars",
-   "dim": "kronwerke:testworld",
-   "pos": [
-    121.61,
-    66.58,
-    159.64
-   ],
-   "yaw": 165.0,
-   "pitch": 35.0,
-   "fov": 60,
-   "width": 640,
-   "height": 360
-  },
-  {
-   "name": "p_occultism_afrit_iesnium",
-   "dim": "kronwerke:testworld",
-   "pos": [
-    137.24,
-    65.19,
-    157.77
-   ],
-   "yaw": 165.0,
-   "pitch": 35.0,
-   "fov": 60,
-   "width": 640,
-   "height": 360
-  },
-  {
-   "name": "p_occultism_afrit_unbound_afrit",
-   "dim": "kronwerke:testworld",
-   "pos": [
-    179.32,
-    65.79,
-    158.55
-   ],
-   "yaw": 165.0,
-   "pitch": 35.0,
-   "fov": 60,
-   "width": 640,
-   "height": 360
-  },
-  {
-   "name": "p_hexerei_candles",
-   "dim": "kronwerke:testworld",
-   "pos": [
-    289.24,
-    65.19,
-    158.27
-   ],
-   "yaw": 165.0,
-   "pitch": 35.0,
-   "fov": 60,
-   "width": 640,
-   "height": 360
-  },
-  {
-   "name": "p_immersive_transformer",
-   "dim": "kronwerke:testworld",
-   "pos": [
-    164.55,
-    66.42,
-    194.42
-   ],
-   "yaw": 165.0,
-   "pitch": 35.0,
-   "fov": 60,
-   "width": 640,
-   "height": 360
-  },
-  {
-   "name": "p_industrial_frame_simple",
-   "dim": "kronwerke:testworld",
-   "pos": [
-    32.61,
-    65.98,
-    229.64
-   ],
-   "yaw": 165.0,
-   "pitch": 35.0,
-   "fov": 60,
-   "width": 640,
-   "height": 360
-  },
-  {
-   "name": "p_industrial_transporters",
-   "dim": "kronwerke:testworld",
-   "pos": [
-    120.38,
-    65.56,
-    228.79
-   ],
-   "yaw": 165.0,
-   "pitch": 35.0,
-   "fov": 60,
-   "width": 640,
-   "height": 360
-  },
-  {
-   "name": "p_oritech_pipes",
-   "dim": "kronwerke:testworld",
-   "pos": [
-    16.99,
+    85.99,
     65.86,
-    248.19
+    36.19
    ],
    "yaw": 165.0,
    "pitch": 35.0,
@@ -225,12 +15,12 @@
    "height": 360
   },
   {
-   "name": "p_oritech_reactor",
+   "name": "q_create_trains_unprocessed_sheet",
    "dim": "kronwerke:testworld",
    "pos": [
-    80.18,
-    67.17,
-    248.9
+    259.49,
+    66.65,
+    57.18
    ],
    "yaw": 165.0,
    "pitch": 35.0,
@@ -239,12 +29,12 @@
    "height": 360
   },
   {
-   "name": "p_ae2_channels",
+   "name": "q_ars_master_tribute",
    "dim": "kronwerke:testworld",
    "pos": [
-    7.75,
-    68.33,
-    272.55
+    192.44,
+    69.62,
+    107.72
    ],
    "yaw": 165.0,
    "pitch": 35.0,
@@ -253,26 +43,12 @@
    "height": 360
   },
   {
-   "name": "p_productive_trees_wood_set",
+   "name": "q_productive_trees_time_traveller",
    "dim": "kronwerke:testworld",
    "pos": [
-    181.38,
-    65.56,
-    313.79
-   ],
-   "yaw": 165.0,
-   "pitch": 35.0,
-   "fov": 60,
-   "width": 640,
-   "height": 360
-  },
-  {
-   "name": "p_draconic_chaos_crystals",
-   "dim": "kronwerke:testworld",
-   "pos": [
-    45.64,
-    67.07,
-    332.76
+    203.24,
+    64.99,
+    314.27
    ],
    "yaw": 165.0,
    "pitch": 35.0,

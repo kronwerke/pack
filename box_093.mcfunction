@@ -1,12 +1,14 @@
-# 093 occultism_afrit/unbound_afrit
-#area 169 144 188 169
-fill 169 64 144 188 91 169 minecraft:air
-fill 169 60 144 188 62 169 minecraft:stone
-fill 169 63 144 188 63 169 minecraft:light_gray_concrete
-fill 173 64 150 188 79 150 minecraft:light_gray_concrete
-fill 173 64 150 173 79 163 minecraft:light_gray_concrete
-setblock 174 64 162 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "093"}','{"text": "occultism_afrit"}','{"text": "unbound_afrit"}','{"text": ""}']}}
-setblock 175 64 162 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "fight with an"}','{"text": "unbound Afrit"}','{"text": ""}','{"text": ""}']}}
-fill 183 64 150 183 79 163 minecraft:light_gray_concrete
-summon occultism:afrit_wild 178.5 64 155.5 {NoAI:1b,PersistenceRequired:1b,Silent:1b,Tags:["kw_shot"],Rotation:[180f,0f]}
+# 093 occultism_afrit/iesnium
+#area 127 146 146 171
+fill 127 64 146 146 91 171 minecraft:air
+fill 127 60 146 146 62 171 minecraft:stone
+fill 127 63 146 146 63 171 minecraft:light_gray_concrete
+fill 131 64 152 146 79 152 minecraft:light_gray_concrete
+fill 131 64 152 131 79 165 minecraft:light_gray_concrete
+setblock 132 64 164 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "093"}','{"text": "occultism_afrit"}','{"text": "iesnium"}','{"text": ""}']}}
+setblock 133 64 164 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "divination rod"}','{"text": "highlight on"}','{"text": "iesnium ore in"}','{"text": "the Nether"}']}}
+fill 141 64 152 141 79 165 minecraft:light_gray_concrete
+fill 135 64 156 137 65 157 minecraft:netherrack
+setblock 136 64 157 occultism:iesnium_ore
+setblock 135 65 157 occultism:iesnium_ore
 execute as @e[type=minecraft:item,tag=!kw_shot] run kill @s

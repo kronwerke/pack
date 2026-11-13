@@ -1,25 +1,22 @@
-# 034 mekanism_ores/tripling
-#area 60 65 80 90
-fill 60 64 65 80 91 90 minecraft:air
-fill 60 60 65 80 62 90 minecraft:stone
-fill 60 63 65 80 63 90 minecraft:light_gray_concrete
-fill 64 64 71 80 79 71 minecraft:light_gray_concrete
-fill 64 64 71 64 79 84 minecraft:light_gray_concrete
-setblock 65 64 83 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "034"}','{"text": "mekanism_ores"}','{"text": "tripling"}','{"text": ""}']}}
-setblock 66 64 83 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "purification"}','{"text": "chamber,"}','{"text": "crusher,"}','{"text": "enrichment"}']}}
-setblock 67 64 83 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "chamber,"}','{"text": "smelter with"}','{"text": "separator and"}','{"text": "pump"}']}}
-fill 75 64 71 75 79 84 minecraft:light_gray_concrete
-setblock 66 64 77 minecraft:chest[facing=south]{Items:[]}
-setblock 67 64 77 mekanism:purification_chamber[facing=south,active=false]
-setblock 68 64 77 mekanism:crusher[facing=south,active=false]
-setblock 69 64 77 mekanism:enrichment_chamber[facing=south,active=false]
-setblock 70 64 77 mekanism:energized_smelter[facing=south,active=false]
-setblock 71 64 77 minecraft:chest[facing=south]{Items:[]}
-setblock 67 64 76 mekanism:basic_pressurized_tube
-setblock 67 64 75 mekanism:electrolytic_separator[facing=south]
-setblock 68 64 75 mekanism:basic_mechanical_pipe
-setblock 69 63 75 minecraft:water
-setblock 69 64 75 mekanism:electric_pump[facing=south]
-fill 68 64 76 70 64 76 mekanism:basic_universal_cable
-setblock 71 64 76 mekanism:basic_energy_cube[facing=south]
+# 034 mekanism/ore_line
+#area 26 65 48 90
+fill 26 64 65 48 91 90 minecraft:air
+fill 26 60 65 48 62 90 minecraft:stone
+fill 26 63 65 48 63 90 minecraft:light_gray_concrete
+fill 30 64 71 48 79 71 minecraft:light_gray_concrete
+fill 30 64 71 30 79 84 minecraft:light_gray_concrete
+setblock 31 64 83 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "034"}','{"text": "mekanism"}','{"text": "ore_line"}','{"text": ""}']}}
+setblock 32 64 83 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "the steel line"}','{"text": "from enrichment"}','{"text": "chamber to the"}','{"text": "obelisk chest"}']}}
+fill 43 64 71 43 79 84 minecraft:light_gray_concrete
+setblock 32 64 76 minecraft:chest[facing=south]{Items:[]}
+setblock 34 64 76 mekanism:basic_infusing_factory[facing=south,active=false]
+setblock 36 64 76 mekanism:basic_infusing_factory[facing=south,active=false]
+setblock 38 64 76 mekanism:basic_smelting_factory[facing=south,active=false]
+setblock 40 64 76 minecraft:chest[facing=south]{Items:[]}
+setblock 33 64 76 mekanism:basic_logistical_transporter
+setblock 35 64 76 mekanism:basic_logistical_transporter
+setblock 37 64 76 mekanism:basic_logistical_transporter
+setblock 39 64 76 mekanism:basic_logistical_transporter
+fill 34 64 75 39 64 75 mekanism:basic_universal_cable
+setblock 40 64 75 mekanism:basic_energy_cube[facing=south]
 execute as @e[type=minecraft:item,tag=!kw_shot] run kill @s

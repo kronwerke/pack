@@ -1,27 +1,21 @@
-# 080 alfheim/frame
-#area 253 107 274 132
-fill 253 64 107 274 91 132 minecraft:air
-fill 253 60 107 274 62 132 minecraft:stone
-fill 253 63 107 274 63 132 minecraft:light_gray_concrete
-fill 257 64 113 274 79 113 minecraft:light_gray_concrete
-fill 257 64 113 257 79 126 minecraft:light_gray_concrete
-setblock 258 64 125 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "080"}','{"text": "alfheim"}','{"text": "frame"}','{"text": ""}']}}
-setblock 259 64 125 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "the finished"}','{"text": "gateway with"}','{"text": "two pools and"}','{"text": "natura pylons"}']}}
-fill 269 64 113 269 79 126 minecraft:light_gray_concrete
-setblock 263 64 117 botania:elven_gateway_core
-setblock 262 64 117 botania:livingwood_log[axis=x]
-setblock 262 68 117 botania:livingwood_log[axis=x]
-setblock 264 64 117 botania:livingwood_log[axis=x]
-setblock 264 68 117 botania:livingwood_log[axis=x]
-setblock 263 68 117 botania:glimmering_livingwood_log[axis=x]
-setblock 261 65 117 botania:livingwood_log[axis=y]
-setblock 261 66 117 botania:glimmering_livingwood_log[axis=y]
-setblock 261 67 117 botania:livingwood_log[axis=y]
-setblock 265 65 117 botania:livingwood_log[axis=y]
-setblock 265 66 117 botania:glimmering_livingwood_log[axis=y]
-setblock 265 67 117 botania:livingwood_log[axis=y]
-setblock 259 64 119 botania:mana_pool{mana:1000000}
-setblock 259 65 119 botania:natura_pylon
-setblock 267 64 119 botania:mana_pool{mana:1000000}
-setblock 267 65 119 botania:natura_pylon
+# 080 gaia/arena
+#area 199 109 224 140
+fill 199 64 109 224 91 140 minecraft:air
+fill 199 60 109 224 62 140 minecraft:stone
+fill 199 63 109 224 63 140 minecraft:light_gray_concrete
+fill 203 64 115 224 79 115 minecraft:light_gray_concrete
+fill 203 64 115 203 79 134 minecraft:light_gray_concrete
+setblock 204 64 133 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "080"}','{"text": "gaia"}','{"text": "arena"}','{"text": ""}']}}
+setblock 205 64 133 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "beacon with"}','{"text": "four pylons"}','{"text": "from above"}','{"text": ""}']}}
+fill 219 64 115 219 79 134 minecraft:light_gray_concrete
+fill 210 63 122 212 63 124 minecraft:iron_block
+setblock 211 64 123 minecraft:beacon
+setblock 207 64 119 minecraft:quartz_block
+setblock 207 65 119 botania:gaia_pylon
+setblock 207 64 127 minecraft:quartz_block
+setblock 207 65 127 botania:gaia_pylon
+setblock 215 64 119 minecraft:quartz_block
+setblock 215 65 119 botania:gaia_pylon
+setblock 215 64 127 minecraft:quartz_block
+setblock 215 65 127 botania:gaia_pylon
 execute as @e[type=minecraft:item,tag=!kw_shot] run kill @s

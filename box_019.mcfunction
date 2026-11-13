@@ -1,23 +1,19 @@
-# 019 create/frogport
-#area 106 42 127 67
-fill 106 64 42 127 91 67 minecraft:air
-fill 106 60 42 127 62 67 minecraft:stone
-fill 106 63 42 127 63 67 minecraft:light_gray_concrete
-fill 110 64 48 127 79 48 minecraft:light_gray_concrete
-fill 110 64 48 110 79 61 minecraft:light_gray_concrete
-setblock 111 64 60 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "019"}','{"text": "create"}','{"text": "frogport"}','{"text": ""}']}}
-setblock 112 64 60 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "chain conveyor"}','{"text": "with a frogport"}','{"text": "carrying a"}','{"text": "package"}']}}
-fill 122 64 48 122 79 61 minecraft:light_gray_concrete
-setblock 113 66 53 create:chain_conveyor{Connections:[[I;6,0,0]]}
-setblock 113 63 53 create:shaft[axis=y]
-setblock 113 64 53 create:shaft[axis=y]
-setblock 113 65 53 create:shaft[axis=y]
-setblock 113 62 53 create:creative_motor[facing=up]{ScrollValue:32}
-setblock 119 66 53 create:chain_conveyor{Connections:[[I;-6,0,0]]}
-setblock 119 63 53 create:shaft[axis=y]
-setblock 119 64 53 create:shaft[axis=y]
-setblock 119 65 53 create:shaft[axis=y]
-setblock 119 62 53 create:creative_motor[facing=up]{ScrollValue:32}
-fill 116 64 54 116 65 54 minecraft:stone_bricks
-setblock 116 66 54 create:package_frogport
+# 019 create/belt
+#area 91 42 110 67
+fill 91 64 42 110 91 67 minecraft:air
+fill 91 60 42 110 62 67 minecraft:stone
+fill 91 63 42 110 63 67 minecraft:light_gray_concrete
+fill 95 64 48 110 79 48 minecraft:light_gray_concrete
+fill 95 64 48 95 79 61 minecraft:light_gray_concrete
+setblock 96 64 60 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "019"}','{"text": "create"}','{"text": "belt"}','{"text": ""}']}}
+setblock 97 64 60 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "a belt between"}','{"text": "two shafts"}','{"text": ""}','{"text": ""}']}}
+fill 105 64 48 105 79 61 minecraft:light_gray_concrete
+setblock 100 64 51 create:shaft[axis=x]
+setblock 100 64 55 create:shaft[axis=x]
+kw testworld use 100 64 51 up create:belt_connector
+kw testworld use 100 64 55 up create:belt_connector
+execute unless block 100 64 53 minecraft:air
+summon item 100.5 65 52.5 {Item:{id:"minecraft:iron_ingot",count:1},PickupDelay:32767,Age:-32768,Tags:["kw_shot"]}
+summon item 100.5 65 53.5 {Item:{id:"minecraft:iron_ingot",count:1},PickupDelay:32767,Age:-32768,Tags:["kw_shot"]}
+summon item 100.5 65 54.5 {Item:{id:"minecraft:iron_ingot",count:1},PickupDelay:32767,Age:-32768,Tags:["kw_shot"]}
 execute as @e[type=minecraft:item,tag=!kw_shot] run kill @s

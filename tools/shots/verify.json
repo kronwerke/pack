@@ -64,7 +64,15 @@
   ],
   [
    "storage/vault_big",
-   "execute in kronwerke:testworld if block 23 64 222 create:item_vault[large=true]"
+   "execute in kronwerke:testworld if block 50 64 222 create:item_vault[large=true]"
+  ],
+  [
+   "list_transport/vault",
+   "execute in kronwerke:testworld if block 86 64 222 create:item_vault[large=true]"
+  ],
+  [
+   "list_power/powah_reactor",
+   "execute in kronwerke:testworld if block 27 67 243 powah:reactor_starter"
   ],
   [
    "list_dimensions/d_mining",

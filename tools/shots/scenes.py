@@ -1321,3 +1321,90 @@ def _(b):
     b.b(4, 0, z - 2, "mekanism:electric_pump[facing=south]")
     b.f(3, 0, z - 1, 5, 0, z - 1, "mekanism:basic_universal_cable")
     b.b(6, 0, z - 1, "mekanism:basic_energy_cube[facing=south]")
+
+
+# ===================================================================================
+# Sixth batch
+
+@scene("ae2/network", w=10)
+def _(b):
+    # energy acceptor, glass cable laid from block to block the way a player lays it, a terminal
+    # on the cable and a drive at its end. A creative cell under the floor gives the power the
+    # acceptor would get from a generator.
+    b.b(2, -1, 4, "ae2:creative_energy_cell")
+    b.b(2, 0, 4, "ae2:energy_acceptor")
+    for x in (2, 3, 4):
+        b.use(x, 0, 4, "east", "ae2:fluix_glass_cable")
+    b.changed(5, 0, 4, "minecraft:air")
+    b.b(6, 0, 4, "ae2:drive[facing=south,spin=0]")
+    b.use(4, 0, 4, "south", "ae2:terminal")
+
+
+@scene("ae2/controller", w=10)
+def _(b):
+    # a controller of three blocks, a smart cable from it past a terminal to two drives: the
+    # stripes on the cable count the channels in use
+    b.b(3, -1, 4, "ae2:creative_energy_cell")
+    b.f(3, 0, 4, 3, 2, 4, "ae2:controller")
+    for x in (3, 4, 5):
+        b.use(x, 0, 4, "east", "ae2:fluix_smart_cable")
+    b.changed(6, 0, 4, "minecraft:air")
+    b.b(7, 0, 4, "ae2:drive[facing=south,spin=0]")
+    b.b(6, 1, 4, "ae2:drive[facing=south,spin=0]")
+    b.use(4, 0, 4, "south", "ae2:terminal")
+
+
+@scene("botania/endo_auto")
+def _(b):
+    # chest, hopper and open crate over the drop point, endoflames around it. The pressure plate
+    # under the drop point locks the hopper while a piece of coal still lies there: its signal
+    # climbs a stair of redstone dust to the block beside the hopper.
+    stage(b, 3, 4, 5, 5, "minecraft:grass_block")
+    b.b(4, -1, 4, "minecraft:light_gray_concrete")
+    b.b(4, 0, 4, "minecraft:oak_pressure_plate")
+    for x, z in ((3, 4), (5, 4), (3, 5), (4, 5), (5, 5)):
+        b.b(x, 0, z, "botania:endoflame")
+    b.b(4, 2, 4, "botania:open_crate")
+    b.b(4, 3, 4, "minecraft:hopper[facing=down]")
+    b.c(4, 4, 4, [("minecraft:coal", 64)], frame=True)
+    stair = "minecraft:stone_bricks"
+    b.b(4, 0, 3, "minecraft:redstone_wire")
+    b.b(4, 0, 2, stair)
+    b.b(4, 1, 2, "minecraft:redstone_wire")
+    b.b(5, 1, 2, stair)
+    b.b(5, 2, 2, "minecraft:redstone_wire")
+    b.b(5, 2, 3, stair)
+    b.b(5, 3, 3, "minecraft:redstone_wire")
+    b.b(5, 3, 4, stair)
+
+
+@scene("draconic_chaos/reactor", w=11, d=11, h=22)
+def _(b):
+    # the core in the air, four stabilizers in one plane on four sides and the energy injector
+    # above, each set by hand against a block (taken away again) so that it looks at the core
+    cx, cy, cz = 5, 3, 5
+    b.b(cx, cy, cz, "draconicevolution:reactor_core")
+    helper = "minecraft:stone"
+    for hx, hz, face in ((0, cz, "east"), (10, cz, "west"), (cx, 0, "south"), (cx, 10, "north")):
+        b.b(hx, cy, hz, helper)
+        b.use(hx, cy, hz, face, "draconicevolution:reactor_stabilizer")
+        b.b(hx, cy, hz, "minecraft:air")
+    b.b(cx, cy + 5, cz, helper)
+    b.use(cx, cy + 5, cz, "down", "draconicevolution:reactor_injector")
+    b.b(cx, cy + 5, cz, "minecraft:air")
+    b.expect(1, cy, cz, "draconicevolution:reactor_stabilizer")
+    b.expect(cx, cy + 4, cz, "draconicevolution:reactor_injector")
+    b.focus(1, 0, 1, 9, cy + 4, 9)
+
+
+@scene("list_transport/create_tank")
+def _(b):
+    # fluid tanks set together merge into one: three by three, four high
+    b.f(3, 0, 3, 5, 3, 5, "create:fluid_tank[bottom=false,shape=window,top=false]")
+
+
+# what a list chapter shows again from the chapter that explains it
+for _again, _first in (("list_transport/belt", "create/belt"), ("list_transport/vault", "storage/vault_big"),
+                       ("list_transport/drawers", "storage/drawers_4"), ("list_power/powah_reactor", "powah/reactor"),
+                       ("list_power/ie_thermo", "immersive/thermoelectric"), ("list_dimensions/r_mekanism", "mekanism_advanced/teleporter")):
+    SCENES[_again] = SCENES[_first]

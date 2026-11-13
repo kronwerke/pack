@@ -7,12 +7,13 @@ the layout files, so the menus can be rebuilt, compared and reviewed like code.
 
     python3 tools/menus/build.py            # into this repo
     python3 tools/menus/build.py <folder>   # into another game folder, for a test client
+    python3 tools/menus/build.py --layouts  # only the layout files (the pictures take minutes)
 
 ## What is generated
 
 | Path | Content |
 |---|---|
-| `config/fancymenu/assets/kronwerke/` | artwork (dusk and night), the moving parts as `anim_*.apng`, logo, button plates, icons, bar, tips |
+| `config/fancymenu/assets/kronwerke/` | artwork (dusk and night: `art_*.png` whole, `title_*.png` its middle enlarged), the moving parts as `anim_*.apng`, logo, button plates, icons, bar, tips |
 | `config/fancymenu/customization/kw_*.txt` | the layouts |
 | `config/fancymenu/customizablemenus.txt` | the screens FancyMenu may touch |
 | `config/fancymenu/options.txt` | pack mode, window title and icon |
@@ -26,9 +27,20 @@ Do not edit these by hand. Change `build.py` (layouts, texts, links) or the scri
 
 ## How it is put together
 
-- Everything sits on a 480x270 grid: FancyMenu scales the layouts to GUI scale 4 at 1920x1080
-  and with the window from there, and the artwork is drawn on the same grid, so one art pixel is
-  one GUI pixel.
+- The layouts set no scale of their own: they run at the game's GUI scale, which is a whole
+  number, so one art pixel is a whole number of screen pixels in every window. (They used to
+  force scale 4 and let FancyMenu scale that with the window: any window that was not 1920x1080
+  got a stretched picture and uneven pixels, and the loading overlay applied the forced scale to
+  the sizes but not to the positions, which threw logo, bar and tip across the screen.)
+- The picture is painted 640x360 around its 480x270 middle (`scene.py`: `W, H` and the margin
+  `OX, OY`) and laid into the middle of the screen as an element, one art pixel on one GUI
+  pixel. At 1920x1080 and the automatic GUI scale the screen shows exactly the middle; a window
+  of another shape or a smaller GUI scale shows more of the valley instead of a stretched
+  picture. Where even 640x360 does not cover the GUI (somebody playing at GUI scale 2), a
+  second element shows the same picture with two GUI pixels to the art pixel. Behind both lies
+  the layout's own background, stretched, for the rare screen that is larger still.
+- Buttons and texts hang on the screen's edges (top right, bottom left) and fit a GUI of
+  384x240, the smallest the automatic scale gives a 16:10 window.
 - The artwork is drawn by `scene.py` from shapes, ramps and patterns. Nothing is traced or
   taken from elsewhere. The night version uses the same drawing with a cooler palette and is
   shown from 20:00 to 06:00 (the player's clock), through two layouts with an hour requirement.
@@ -39,15 +51,15 @@ Do not edit these by hand. Change `build.py` (layouts, texts, links) or the scri
   cheaply, so only the parts that move are cut out as animated PNGs (`SPRITES` in `build.py`:
   region, frames, time per frame) and laid over the still picture. Every frame of such a file
   is a whole frame: FancyMenu draws each one on its own, and Pillow's writer stores only the
-  changed part (`px.apng` writes them instead). The sprites sit at fixed places of the 480x270
-  grid, so they show only when the GUI is exactly that size (16:9); on any other window the
-  picture stands still. They lie under the game's buttons
+  changed part (`px.apng` writes them instead). The sprites are placed from the middle of the
+  screen like the picture itself, so they move in every window. They lie under the game's buttons
   (`render_custom_elements_behind_vanilla`), and elements with the same time stamp in their id
   are stacked in no fixed order, which is why `uid()` counts the stamps up.
 - Before the game's loading screen NeoForge shows its early window. The Drippy Early Loading
   Module (`mods/drippy-early-loading-module.pw.toml`) puts the dusk picture, the logo and a
   brass bar there. It places in absolute pixels and does not scale with the window, so logo
-  and bar are centred, and the loading layout that follows is centred the same way.
+  and bar are centred, and the loading layout that follows is centred the same way (its logo
+  is the same size only at GUI scale 4).
 - The large button joins `kronwerke.net` directly. The line below it reads the player count
   from `https://kronwerke.com/api/status` and hides when there is no answer.
 - The countdown in the lower left shows until the season starts (16.01.2027 18:00).
@@ -62,7 +74,7 @@ Do not edit these by hand. Change `build.py` (layouts, texts, links) or the scri
   Supplementaries' config buttons) are switched off in those mods' configs, which the build
   writes as well.
 - Joining and loading the world are not FancyMenu's: Core draws its own picture there
-  (`JoinOverlay`, `TravelOverlay`).
+  (`JoinOverlay`, `TravelOverlay`). The music of the menus is Core's too (`MenuMusic`).
 
 ## Looking at it
 

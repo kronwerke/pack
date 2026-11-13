@@ -520,3 +520,13 @@ Incendium, which ran about a tenth of the tick in the 50 player load test:
 - Drippy Early Loading Module: the window that shows before the game's own loading screen carries the dusk picture, the logo and a brass bar. The loading screen after it is centred the same way.
 - Kronwerke Core 0.39.30: handing in works by hand at the obelisk and nowhere else (no `/kw deposit`, no buttons in the menu, no feeder block: `kronwerke:obelisk_intake` and its recipe are gone, the zone around the obelisk is closed for hoppers, pipes and belts), the obelisk no longer falls asleep, and the `/kw` menu wears the pixel look of the menus with four pages: goals, ranking, options, help.
 - Quest book: about fifty lines that sent goods to the obelisk by `/kw deposit`, a feeder, a chest next to it or a belt now say what is true: factories fill chests, players carry the yield over and hand it in by hand. The quest "Stell einen Zubringer auf" is gone, "Schließ eine Farm an" is "Bau eine Farm fürs Ziel", the tip quest is "Tipp: Alles auf einmal".
+
+## 0.24.39
+
+- The menus are sharp in every window. The layouts run at the game's own GUI scale instead of a forced one, and the picture is painted wider and taller than before (640x360 around its 480x270 middle) and laid into the middle of the screen pixel for pixel: a 16:10 window, a small one or another GUI scale shows more of the valley instead of a stretched picture with uneven pixels.
+- The title picture moves in every window, not only at 1920x1080.
+- The loading screen is in one piece at every window size. Logo, bar and tip were thrown across the screen whenever the game's GUI scale was not 4 (a 1920x1200 window, a 1280x720 one).
+- The plate under the logo reads SEASON 2: the small font's N looked like an M.
+- The lines in the lower left of the title screen stand on a dark shade.
+- Kronwerke Core 0.39.31: quiet music of its own on the title screen, in the menus and while connecting, in place of the game's menu music. It follows the Music slider and can be turned off in the `/kw` menu's options.
+- `tools/trailer/`: the Season 2 trailer, thirty seconds of pixel art with music, painted and synthesised by script.

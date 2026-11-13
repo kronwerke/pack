@@ -1,6 +1,6 @@
 """The Kronwerk itself: halls, tower with the crown, chimneys, obelisk. Drawn on its own layer."""
 import numpy as np
-from px import Canvas
+from px import BAYER4, Canvas
 
 BASE = 173
 LOOP = 200          # frames of the whole animation, 10 per second
@@ -8,15 +8,16 @@ STILL = 60          # the frame used as the still picture: the train stands at t
 
 
 def train_x(t):
-    """Where the rear wagon is at frame t, or None while no train is on the track: in, wait, out, pause."""
+    """Where the rear wagon is at frame t, or None while no train is on the track: in, wait, out, pause.
+    It comes from beyond the left margin of the picture and leaves beyond the right one."""
     if t < 40:
         u = t / 40.0
-        return int(round(-80 + 108 * (1 - (1 - u) ** 2)))
+        return int(round(-160 + 188 * (1 - (1 - u) ** 2)))
     if t < 80:
         return 28
     if t < 160:
         u = (t - 80) / 80.0
-        return int(round(28 + 470 * u * u))
+        return int(round(28 + 545 * u * u))
     return None
 
 
@@ -27,7 +28,7 @@ def blend(a, col, k):
 def brick(b, m, P, seed=0, key='brick', bw=7, bh=3, lit_from=None):
     """Brick or stone courses inside a mask, lighter towards the right."""
     R = P[key]
-    xs = np.where(m.any(axis=0))[0]
+    xs = np.where(m.any(axis=0))[0] - b.ox
     if len(xs) == 0:
         return
     x0, x1 = xs.min(), xs.max() + 1
@@ -49,8 +50,8 @@ def brick(b, m, P, seed=0, key='brick', bw=7, bh=3, lit_from=None):
 
 def slate(b, m, P):
     R = P['roof']
-    ys = np.where(m.any(axis=1))[0]
-    xs = np.where(m.any(axis=0))[0]
+    ys = np.where(m.any(axis=1))[0] - b.oy
+    xs = np.where(m.any(axis=0))[0] - b.ox
     if len(ys) == 0:
         return
     y0, x0, x1 = ys.min(), xs.min(), xs.max() + 1
@@ -163,7 +164,7 @@ def trail(c, P, t, ry):
         if x is None:
             continue
         fx = x + 42 + 23
-        fy = int(ry[min(c.w - 1, max(0, fx))]) + 3 + 2 - 19
+        fy = int(ry[min(c.w - 1, max(0, fx + c.ox))]) + 3 + 2 - 19
         rng = np.random.default_rng(900 + (te // 3) % 67)
         age = a + (t % 3)
         r = 1.7 + 0.2 * age
@@ -188,10 +189,10 @@ def obelisk(c, P, x, base, h, night, v=0):
     # the beam first, so the stone covers its foot
     for y in range(base - h - 1, 8, -1):
         f = (base - h - y) / float(base - h - 8)
-        if f < 0.3 or c.bayer[(y + v) % c.h, x] < 1.25 - f * 1.3:
+        if f < 0.3 or BAYER4[((y + v) % 270) % 4, x % 4] < 1.25 - f * 1.3:
             c.px(x, y, P['beam'])
         for dx in (-1, 1):
-            if f < 0.12 or c.bayer[(y + v * 2) % c.h, x + dx] < 0.3 - f * 0.9:
+            if f < 0.12 or BAYER4[((y + v * 2) % 270) % 4, (x + dx) % 4] < 0.3 - f * 0.9:
                 c.px(x + dx, y, P['glow'][2])
     m = c.poly([(x - 6, base), (x - 4, base - h + 8), (x, base - h), (x + 4, base - h + 8), (x + 6, base)])
     c.ramp(m, [S[2], S[3], S[4]], 1 - (c.xx - (x - 6)) / 13.0 + 0.2, soft=0.25)
@@ -223,7 +224,7 @@ def train(c, P, x, ry):
     K, B, Wd, D = P['brass'], P['brick'], P['wood'], P['dark']
 
     def rail(px_):
-        return int(ry[min(c.w - 1, max(0, int(px_)))]) + 3
+        return int(ry[min(c.w - 1, max(0, int(px_) + c.ox))]) + 3
 
     y = rail(x + 9)
 
@@ -270,18 +271,19 @@ def train(c, P, x, ry):
 
 def rails(c, P, g, f):
     """A track across the lower slope, from the left edge to the right: bed, sleepers, two rails."""
-    xs = np.arange(c.w)
+    xs = np.arange(c.w) - c.ox
     ys = np.round(207 + xs * 0.058 + np.sin(xs / 70.0) * 2.0).astype(int)
     S = P['stone']
-    for x in xs:
-        c.fill(c.rect(x, ys[x] - 1, x + 1, ys[x] + 5), P['path'][2])
-        c.px(x, ys[x] + 5, P['grass'][5])
-    for x in range(1, c.w, 5):
-        c.fill(c.rect(x, ys[x] - 1, x + 2, ys[x] + 5), P['wood'][2])
-        c.fill(c.rect(x, ys[x] - 1, x + 2, ys[x]), P['wood'][1])
-    for x in xs:
-        c.px(x, ys[x], S[0]); c.px(x, ys[x] + 1, S[3])
-        c.px(x, ys[x] + 3, S[1]); c.px(x, ys[x] + 4, S[4])
+    for x, y in zip(xs, ys):
+        c.fill(c.rect(x, y - 1, x + 1, y + 5), P['path'][2])
+        c.px(x, y + 5, P['grass'][5])
+    for x, y in zip(xs, ys):
+        if x % 5 == 1:
+            c.fill(c.rect(x, y - 1, x + 2, y + 5), P['wood'][2])
+            c.fill(c.rect(x, y - 1, x + 2, y), P['wood'][1])
+    for x, y in zip(xs, ys):
+        c.px(x, y, S[0]); c.px(x, y + 1, S[3])
+        c.px(x, y + 3, S[1]); c.px(x, y + 4, S[4])
     return ys
 
 
@@ -309,7 +311,7 @@ _HALL = {}
 def draw(c, P, g, night, t=STILL):
     v = (t // 5) % 4
     key = id(P)
-    b = Canvas(c.w, c.h)
+    b = Canvas(c.w, c.h, c.ox, c.oy)
     if key in _HALL:
         b.a, b.alpha = _HALL[key][0].copy(), _HALL[key][1].copy()
     cached = key in _HALL
@@ -425,7 +427,7 @@ def draw(c, P, g, night, t=STILL):
     c.paste(b)
 
     # ---- things in front -----------------------------------------------------
-    obelisk(c, P, 256, int(g[256]) + 1, 56, night, v)
+    obelisk(c, P, 256, int(g[256 + c.ox]) + 1, 56, night, v)
     path = c.poly([(140, BASE), (155, BASE), (176, 196), (214, 222), (262, 252), (222, 252), (176, 226), (146, 198)])
     c.ramp(path, P['path'], (c.yy - BASE) / 80.0 + (c.bayer - 0.5) * 0.3, soft=0.6)
     c.fill(path & ~c.shift(path, 1, 0), P['path'][2])

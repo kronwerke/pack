@@ -1,16 +1,40 @@
 #!/usr/bin/env python3
 """The Kronwerke menu artwork: the works in the valley, drawn as pixel art on a 480x270 grid.
 
-    scene.py <outdir>            writes title_dusk.png and title_night.png (1920x1080) and previews
+    scene.py <outdir>            writes previews of the dusk and the night picture
 
 Everything is drawn by this script, nothing is traced or imported. Light comes from the right.
+
+The picture proper is 480x270 (W, H). It is painted 80 further to the left and right and 45
+further up and down (OX, OY, 640x360 in all), so that a window of another shape or a smaller
+GUI scale shows more of the valley instead of a stretched picture. Coordinates are those of
+the picture proper: 0, 0 is its corner, the margin has negative ones. Lines that hold one
+value for every column (ridges, the ground) cover the whole width; XS are their x values and
+col(x) is the place of x in them.
 """
 import sys, os
 import numpy as np
 from px import Canvas, cols, hexc, noise1d, noise2d, smooth
 
 W, H = 480, 270
+OX, OY = 80, 45
+FW, FH = W + 2 * OX, H + 2 * OY
+X0, X1, Y0, Y1 = -OX, W + OX, -OY, H + OY
+XS = np.arange(X0, X1)
 HORIZON = 150
+
+
+def canvas():
+    return Canvas(FW, FH, OX, OY)
+
+
+def col(x):
+    return x + OX
+
+
+def core(a):
+    """The picture proper out of a whole one (an array)."""
+    return a[OY:OY + H, OX:OX + W]
 
 PAL = {
     'dusk': dict(
@@ -36,9 +60,10 @@ PAL = {
 }
 
 
-def lerp_pts(pts, n):
+def lerp_pts(pts):
+    """A line through points, one value for every column; it runs on level beyond its ends."""
     xs, ys = zip(*pts)
-    return np.interp(np.arange(n), xs, ys)
+    return np.interp(XS, xs, ys)
 
 
 def sky(c, P, night, v=0):
@@ -46,7 +71,10 @@ def sky(c, P, night, v=0):
     sx, sy = 268, 122
     d = np.hypot((c.xx - sx) / 1.6, c.yy - sy)
     t = np.clip(t * 0.96 + 0.22 * np.exp(-(d / 70.0) ** 2), 0, 1)
-    c.ramp(c.rect(0, 0, W, HORIZON + 2), P['sky'], t, soft=0.5)
+    c.ramp(c.rect(X0, Y0, X1, HORIZON + 2), P['sky'], t, soft=0.5)
+    # above the picture proper the sky goes on getting darker
+    deep = tuple(int(v * 0.78) for v in P['sky'][0])
+    c.dither(c.rect(X0, Y0, X1, 0), P['sky'][0], deep, np.clip(-c.yy / float(OY), 0, 1) * 0.85)
     if night:
         rng = np.random.default_rng(7)
         for i in range(150):
@@ -54,7 +82,14 @@ def sky(c, P, night, v=0):
             col = P['star'][int(rng.integers(0, 2))]
             if i % 4 != v:                     # a quarter of the small stars is dark in each phase
                 c.px(x, y, col)
-        for i, (x, y) in enumerate(((60, 30), (150, 58), (232, 22), (318, 70), (410, 40), (455, 96), (26, 92))):
+        rng = np.random.default_rng(8)
+        for i in range(190):                   # and the stars of the margin
+            x, y = int(rng.integers(X0, X1)), int(rng.integers(Y0, HORIZON - 15))
+            col = P['star'][int(rng.integers(0, 2))]
+            if (x < 0 or x >= W or y < 0) and i % 4 != v:
+                c.px(x, y, col)
+        for i, (x, y) in enumerate(((60, 30), (150, 58), (232, 22), (318, 70), (410, 40), (455, 96), (26, 92),
+                                    (-52, 48), (530, 70), (104, -22), (372, -30), (-30, -18), (522, -12))):
             for dx, dy in ((0, 0), (1, 0), (-1, 0), (0, 1), (0, -1)):
                 c.px(x + dx, y + dy, P['star'][0])
             if (i + v) % 4 != 0:               # the large stars lose their rays for one phase
@@ -98,8 +133,8 @@ def cloud(c, P, cx, base, width, seed, flat=False):
 
 
 def ridge(c, P, key, base, amp, seed, lit, snow=None, sharp=0.0):
-    n = noise1d(W, seed) * 0.5 + 0.5
-    peaks = 1 - np.abs(noise1d(W, seed + 1, ((27, 1.0), (11, 0.4))))
+    n = noise1d(W, seed, pad=OX) * 0.5 + 0.5
+    peaks = 1 - np.abs(noise1d(W, seed + 1, ((27, 1.0), (11, 0.4)), pad=OX))
     ys = HORIZON - (base + amp * ((1 - sharp) * n + sharp * n * peaks))
     ys = np.round(ys).astype(int)
     m = c.below(ys) & (c.yy < HORIZON + 2)
@@ -119,17 +154,18 @@ def ridge(c, P, key, base, amp, seed, lit, snow=None, sharp=0.0):
 
 
 def lake(c, P, sx, night, v=0):
-    m = c.rect(0, HORIZON, W, 236)
+    m = c.rect(X0, HORIZON, X1, 236)
     t = (c.yy - HORIZON) / 55.0
     c.ramp(m, P['lake'], t, soft=0.45)
-    rng = np.random.default_rng(11)
-    for _ in range(170):
-        y = int(rng.integers(HORIZON + 2, 212))
-        x = int(rng.integers(0, W))
-        ln = int(rng.integers(3, 14))
-        k = min(len(P['lake']) - 1, int((y - HORIZON) / 55.0 * (len(P['lake']) - 1)))
-        col = P['lake'][max(0, k - 1)] if rng.random() < 0.6 else P['lake'][min(len(P['lake']) - 1, k + 1)]
-        c.fill(c.rect(x, y, x + ln, y + 1), col)
+    for seed, count, lo, hi in ((11, 170, 0, W), (12, 30, X0, 0), (13, 30, W, X1)):      # the picture proper, then the margins
+        rng = np.random.default_rng(seed)
+        for _ in range(count):
+            y = int(rng.integers(HORIZON + 2, 212))
+            x = int(rng.integers(lo, hi))
+            ln = int(rng.integers(3, 14))
+            k = min(len(P['lake']) - 1, int((y - HORIZON) / 55.0 * (len(P['lake']) - 1)))
+            col = P['lake'][max(0, k - 1)] if rng.random() < 0.6 else P['lake'][min(len(P['lake']) - 1, k + 1)]
+            c.fill(c.rect(x, y, x + ln, y + 1), col)
     gx = 286 if night else sx
     rng = np.random.default_rng(300 + v)        # the glitter changes with the phase
     for y in range(HORIZON + 1, 212, 2):
@@ -159,20 +195,26 @@ def pine(c, P, x, base, h, tone, lit=True):
 
 
 def far_shore(c, P):
-    top = lerp_pts([(276, 152), (300, 149), (330, 144), (372, 136), (420, 126), (480, 114)], W)
-    top = np.round(top + noise1d(W, 5, ((23, 1.0), (9, 0.5))) * 2.2).astype(int)
-    shore = np.round(lerp_pts([(276, 153), (330, 160), (400, 172), (480, 188)], W) + noise1d(W, 6, ((29, 1.0), (10, 0.5))) * 1.5).astype(int)
+    top = lerp_pts([(276, 152), (300, 149), (330, 144), (372, 136), (420, 126), (480, 114), (X1, 100)])
+    top = np.round(top + noise1d(W, 5, ((23, 1.0), (9, 0.5)), pad=OX) * 2.2).astype(int)
+    shore = np.round(lerp_pts([(276, 153), (330, 160), (400, 172), (480, 188), (X1, 204)]) + noise1d(W, 6, ((29, 1.0), (10, 0.5)), pad=OX) * 1.5).astype(int)
     m = c.below(top) & ~c.below(shore) & (c.xx >= 276)
     c.ramp(m, [P['forest'][2], P['forest'][1], P['forest'][0]], (c.yy - top[None, :]) / 24.0, soft=0.4)
     rng = np.random.default_rng(3)
-    for row, (off, tone, lo, hi) in enumerate(((2, 1, 12, 19), (9, 1, 12, 20), (18, 0, 13, 21), (28, 0, 14, 22), (40, 0, 14, 23))):
-        for x in range(282 + row * 3, W + 8, 7):
-            xx = x + int(rng.integers(-2, 3))
-            k = min(W - 1, xx)
+    more = np.random.default_rng(4)                 # the trees of the margin take their chance from here, so the others stay as they were
+    for row, (off, tone, lo, hi) in enumerate(((2, 1, 12, 19), (9, 1, 12, 20), (18, 0, 13, 21), (28, 0, 14, 22), (40, 0, 14, 23),
+                                               (54, 0, 15, 24), (68, 0, 15, 24))):
+        for x in range(282 + row * 3, X1 + 8, 7):
+            inner = x < W + 8
+            if inner and row >= 5:                  # the two nearest rows stand only in the margin, where the bank lies lower
+                continue
+            r = rng if inner else more
+            xx = x + int(r.integers(-2, 3))
+            k = col(min(W - 1, xx) if inner else min(X1 - 1, xx))
             base = int(top[k]) + off
             if base > shore[k] + 1 or base - 4 < top[k]:
                 continue
-            pine(c, P, xx, min(base, int(shore[k])), int(rng.integers(lo, hi)), tone)
+            pine(c, P, xx, min(base, int(shore[k])), int(r.integers(lo, hi)), tone)
     # dark bank and its reflection in the water
     bank = c.below(shore - 2) & ~c.below(shore + 1) & (c.xx >= 276)
     c.fill(bank, P['forest'][0])
@@ -182,35 +224,35 @@ def far_shore(c, P):
 
 
 def ground(c, P):
-    g = lerp_pts([(0, 181), (30, 176), (58, 172), (240, 172), (268, 180), (300, 195), (340, 207), (400, 216), (480, 222)], W)
-    g = np.round(g + noise1d(W, 21, ((31, 1.0), (11, 0.4))) * 1.2).astype(int)
-    g[58:240] = 172
+    g = lerp_pts([(X0, 190), (-40, 186), (0, 181), (30, 176), (58, 172), (240, 172), (268, 180), (300, 195), (340, 207), (400, 216), (480, 222), (X1, 226)])
+    g = np.round(g + noise1d(W, 21, ((31, 1.0), (11, 0.4)), pad=OX) * 1.2).astype(int)
+    g[col(58):col(240)] = 172
     m = c.below(g)
     depth = np.clip(c.yy - g[None, :], 0, None) / 64.0
-    patch = noise2d(W, H, 77, period=30, octaves=3)
+    patch = noise2d(W, H, 77, period=30, octaves=3, pad=(OX, OY))
     sunny = np.clip((c.xx - 150) / 330.0, 0, 1) * 0.12
     t = 0.12 + depth ** 0.85 * 0.62 + (patch - 0.5) * 0.42 - sunny
     c.ramp(m, P['grass'], t, soft=0.28)
     c.fill(m & (c.yy == g[None, :]), P['grass'][0])
     c.fill(m & (c.yy == g[None, :] + 1), P['grass'][1])
-    rng = np.random.default_rng(31)
-    n = len(P['grass'])
-    for _ in range(300):
-        x = int(rng.integers(0, W)); y = int(g[x] + rng.integers(4, 74))
-        if y >= H or x >= W - 1:
-            continue
-        cur = tuple(int(v) for v in c.a[y, x])
-        k = P['grass'].index(cur) if cur in P['grass'] else 3
-        col = P['grass'][max(0, k - 1)]
-        c.px(x, y, col); c.px(x + 1, y - 1, col)
-        if rng.random() < 0.4:
-            c.px(x - 1, y - 1, col)
+    for seed, count, lo, hi in ((31, 300, 0, W), (32, 60, X0, 0), (33, 60, W, X1)):      # tufts: the picture proper, then the margins
+        rng = np.random.default_rng(seed)
+        for _ in range(count):
+            x = int(rng.integers(lo, hi)); y = int(g[col(x)] + rng.integers(4, 74))
+            if y >= H or x >= hi - 1:
+                continue
+            cur = tuple(int(v) for v in c.a[y + OY, col(x)])
+            k = P['grass'].index(cur) if cur in P['grass'] else 3
+            tuft = P['grass'][max(0, k - 1)]
+            c.px(x, y, tuft); c.px(x + 1, y - 1, tuft)
+            if rng.random() < 0.4:
+                c.px(x - 1, y - 1, tuft)
     return g
 
 
 def foreground(c, P):
-    f = lerp_pts([(0, 226), (60, 236), (140, 246), (260, 252), (360, 250), (430, 242), (480, 232)], W)
-    f = np.round(f + noise1d(W, 41, ((19, 1.0), (7, 0.5))) * 1.5).astype(int)
+    f = lerp_pts([(X0, 214), (-40, 220), (0, 226), (60, 236), (140, 246), (260, 252), (360, 250), (430, 242), (480, 232), (520, 226), (X1, 220)])
+    f = np.round(f + noise1d(W, 41, ((19, 1.0), (7, 0.5)), pad=OX) * 1.5).astype(int)
     m = c.below(f)
     c.ramp(m, P['fore'], (c.yy - f[None, :]) / 30.0, soft=0.5)
     c.fill(m & (c.yy == f[None, :]), P['grass'][3])
@@ -227,16 +269,31 @@ def foreground(c, P):
         c.fill(top, P['fore'][0])
         for _ in range(int(r * 2.2)):
             x, y = int(cx + rng.uniform(-r * 1.4, r * 1.4)), int(cy + rng.uniform(-r * 0.8, r * 0.6))
-            if 0 <= x < W - 2 and 0 <= y < H - 1 and b[y, x]:
+            if X0 <= x < X1 - 2 and Y0 <= y < Y1 - 1 and b[y + OY, col(x)]:
                 c.px(x, y, P['leaf']); c.px(x + 1, y, P['leaf']); c.px(x + 1, y - 1, P['fore'][0])
 
+    def flowers(count, lo, hi, deep, limit):
+        for _ in range(count):
+            x = int(rng.integers(lo, hi)); y = int(f[col(x)] + rng.integers(4, deep))
+            if y < limit:
+                bloom = P['flower'][int(rng.integers(0, len(P['flower'])))]
+                c.px(x, y, bloom); c.px(x + 1, y, bloom); c.px(x, y - 1, bloom)
+                c.px(x, y + 1, P['fore'][0])
+
     bush(22, 262, 30, 16); bush(86, 272, 22, 12); bush(455, 262, 34, 18); bush(392, 274, 20, 10); bush(250, 280, 18, 8)
-    for _ in range(26):
-        x = int(rng.integers(100, 390)); y = int(f[x] + rng.integers(4, 22))
-        if y < H - 1:
-            col = P['flower'][int(rng.integers(0, len(P['flower'])))]
-            c.px(x, y, col); c.px(x + 1, y, col); c.px(x, y - 1, col)
-            c.px(x, y + 1, P['fore'][0])
+    flowers(26, 100, 390, 22, H - 1)
+    # below and beside the picture proper: more of the thicket, in rows that come nearer
+    rng = np.random.default_rng(44)
+    for cx, cy, r, n in ((-48, 252, 30, 16), (536, 256, 32, 16), (160, 292, 24, 12), (330, 296, 26, 12), (-10, 296, 26, 12), (498, 298, 26, 12),
+                         (70, 318, 32, 14), (244, 322, 34, 16), (420, 318, 32, 14), (-60, 322, 30, 14), (560, 324, 30, 14)):
+        bush(cx, cy, r, n)
+    flowers(46, X0 + 4, X1 - 4, 60, Y1 - 1)
+    for _ in range(90):                                    # blades of grass standing out of the dark
+        x = int(rng.integers(X0, X1 - 1)); y = int(rng.integers(256, Y1 - 2))
+        if y > f[col(x)] + 6:
+            c.px(x, y, P['fore'][1]); c.px(x, y - 1, P['fore'][0])
+            if rng.random() < 0.5:
+                c.px(x + 1, y - 2, P['fore'][0])
     return f
 
 
@@ -287,12 +344,15 @@ def build(mode='dusk', t=None):
     v = (t // 5) % 4
     P = PAL[mode]
     night = mode == 'night'
-    c = Canvas(W, H)
+    c = canvas()
     if (mode, v) not in _BACK:
         sx, sy = sky(c, P, night, v)
         sun(c, P, sx, sy, night)
         for cx, base, w, seed, flat in ((70, 44, 84, 1, False), (205, 30, 60, 2, False), (372, 58, 96, 3, False), (150, 84, 70, 4, True),
-                                        (430, 24, 50, 5, False), (318, 104, 80, 6, True), (20, 108, 60, 8, True), (240, 66, 40, 9, True)):
+                                        (430, 24, 50, 5, False), (318, 104, 80, 6, True), (20, 108, 60, 8, True), (240, 66, 40, 9, True),
+                                        (-46, 70, 64, 11, False), (532, 86, 70, 12, False), (120, -8, 90, 13, False), (352, -16, 72, 14, False),
+                                        (-30, -14, 60, 15, True), (540, 20, 56, 16, True), (250, -30, 50, 17, True), (500, -26, 60, 18, False),
+                                        (-56, 122, 50, 19, True)):
             cloud(c, P, cx, base, w, seed, flat)
         ridge(c, P, 'far', 14, 44, 100, P['far_lit'], P['snow'])
         ridge(c, P, 'mid', 4, 24, 200, P['mid_lit'])
@@ -304,7 +364,7 @@ def build(mode='dusk', t=None):
     c.alpha[:] = True
     works.draw(c, P, g, night, t)
     if mode not in _FORE:
-        f = Canvas(W, H)
+        f = canvas()
         foreground(f, P)
         _FORE[mode] = f
     c.paste(_FORE[mode])
@@ -316,6 +376,5 @@ if __name__ == '__main__':
     os.makedirs(out, exist_ok=True)
     for mode in PAL:
         c = build(mode)
-        c.image(4).save(os.path.join(out, f'title_{mode}.png'), optimize=True)
         c.image(3).save(os.path.join(out, f'preview_{mode}.png'))
         print('wrote', mode)

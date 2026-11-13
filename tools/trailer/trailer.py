@@ -293,7 +293,7 @@ _VALLEY = {}
 def valley(t):
     if t not in _VALLEY:
         import scene
-        _VALLEY[t] = np.array(scene.build('dusk', t).image(1))
+        _VALLEY[t] = scene.core(scene.build('dusk', t).a).copy()       # the picture proper; the menus paint it wider
     return _VALLEY[t]
 
 

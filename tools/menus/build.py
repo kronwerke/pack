@@ -13,7 +13,8 @@ import json, os, sys, uuid
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, os.path.join(HERE, 'art'))
-ROOT = os.path.abspath(sys.argv[1]) if len(sys.argv) > 1 else os.path.abspath(os.path.join(HERE, '..', '..'))
+ARGS = [a for a in sys.argv[1:] if not a.startswith('--')]
+ROOT = os.path.abspath(ARGS[0]) if ARGS else os.path.abspath(os.path.join(HERE, '..', '..'))
 FM = os.path.join(ROOT, 'config', 'fancymenu')
 ASSETS = os.path.join(FM, 'assets', 'kronwerke')
 LAYOUTS = os.path.join(FM, 'customization')
@@ -211,33 +212,56 @@ COL = -164          # left edge of the button column, from the right screen edge
 CW = 148
 
 
+# The picture is painted 640x360 around its 480x270 middle (tools/menus/art/scene.py) and laid
+# into the middle of the screen as an element, one art pixel on one GUI pixel. The layouts do
+# not set a scale of their own: they run at the game's GUI scale, which is a whole number, so
+# every art pixel is a whole number of screen pixels at any window size, and a window that is
+# not 16:9 or a smaller GUI scale shows more of the valley instead of a stretched picture.
+ART_W, ART_H = 640, 360
+MID_X, MID_Y = 240, 135       # the picture's middle in the coordinates it is painted in
+
 # The moving parts of the picture: cut-outs of the frames `art()` renders, laid over the still.
-# name, region (x0, y0, x1, y1) on the 480x270 grid, frames, milliseconds per frame. Order is
-# bottom to top: a later one lies over an earlier one where they overlap.
+# name, region (x0, y0, x1, y1) in the picture's coordinates (the margin has negative ones),
+# frames, milliseconds per frame. Order is bottom to top: a later one lies over an earlier one
+# where they overlap.
 SPRITES = [
-    ('slow', (0, 0, 480, 214), [0, 5, 10, 15], 500),           # stars, glitter on the water, the obelisk's beam, birds
+    ('slow', (-80, -45, 560, 214), [0, 5, 10, 15], 500),       # stars, glitter on the water, the obelisk's beam, birds
     ('smoke', (66, 6, 186, 104), list(range(40)), 100),        # both chimneys
-    ('train', (0, 164, 480, 246), list(range(161)), 100),      # in, wait, out; the last frame (empty track) stays 4 s
+    ('train', (-80, 164, 560, 246), list(range(161)), 100),    # in, wait, out; the last frame (empty track) stays 4 s
     ('gear_tower', (183, 78, 212, 107), list(range(8)), 100),
     ('gear_gate', (136, 120, 159, 143), list(range(8)), 100),
     ('gear_wheel', (224, 154, 249, 179), list(range(20)), 100),
 ]
 
 
-def moving(L, mode):
-    """The sprites, only where the picture sits exactly on the 480x270 grid (a 16:9 window)."""
-    exact = [('fancymenu_visibility_requirement_is_number', 'if', '["mode":"equals","number":"%s","compare_with":"480"]$' % ph('guiwidth')),
-             ('fancymenu_visibility_requirement_is_number', 'if', '["mode":"equals","number":"%s","compare_with":"270"]$' % ph('guiheight'))]
+def picture(L, src, mode=None):
+    """The picture in the middle of the screen, and its moving parts when mode is given.
+
+    One art pixel on one GUI pixel where that covers the whole screen (a GUI of up to 640x360:
+    every window at the automatic scale), else two GUI pixels to the art pixel, which covers a
+    GUI of up to 1280x720 (somebody playing at a small GUI scale). A larger GUI still shows
+    the layout's stretched background at the edges."""
+    fits = [('fancymenu_visibility_requirement_is_number', 'if', '["mode":"smaller-than","number":"%s","compare_with":"%d"]$' % (ph('guiwidth'), ART_W + 1)),
+            ('fancymenu_visibility_requirement_is_number', 'if', '["mode":"smaller-than","number":"%s","compare_with":"%d"]$' % (ph('guiheight'), ART_H + 1))]
+    over = ph('maxnum', first=ph('calc', expression='%s - %d' % (ph('guiwidth'), ART_W), decimal='false'),
+              second=ph('calc', expression='%s - %d' % (ph('guiheight'), ART_H), decimal='false'))
+    larger = [('fancymenu_visibility_requirement_is_number', 'if', '["mode":"bigger-than","number":"%s","compare_with":"0"]$' % over)]
     b = ''
-    for name, (x0, y0, x1, y1), _, _ in SPRITES:
-        b += image(f'{L}:anim_{name}', f'anim_{mode}_{name}.apng', 'top-left', x0, y0, x1 - x0, y1 - y0,
-                   req=requirement(f'{L}:anim_{name}', lines=exact))
+    for k in (2, 1):
+        lines = fits if k == 1 else larger
+        b += image(f'{L}:art{k}', src, 'mid-centered', -ART_W * k // 2, -ART_H * k // 2, ART_W * k, ART_H * k,
+                   req=requirement(f'{L}:art{k}', lines=lines))
+        if mode:
+            for name, (x0, y0, x1, y1), _, _ in SPRITES:
+                b += image(f'{L}:anim{k}_{name}', f'anim_{mode}_{name}.apng', 'mid-centered', (x0 - MID_X) * k, (y0 - MID_Y) * k,
+                           (x1 - x0) * k, (y1 - y0) * k, req=requirement(f'{L}:anim{k}_{name}', lines=lines))
     return b
 
 
 def title(name, art, hours):
     L = name
-    b = moving(L, 'night' if 'night' in name else 'dusk')
+    mode = 'night' if 'night' in name else 'dusk'
+    b = picture(L, f'art_{mode}.png', mode)
     b += image(L + ':logo', 'logo.png', 'top-right', COL - 8, 8, 163, 62)
     b += button(L + ':join', local('join'), 'top-right', COL, 78, CW, 32, 'btn_main.png', 'btn_main_hover.png',
                 [('joinserver', SERVER)], tip=local('join.tip'))
@@ -260,11 +284,14 @@ def title(name, art, hours):
                 [('opengui', 'language_select_screen')], tip=local('lang.tip'))
     b += vanilla('mc_titlescreen_quit_button', 'top-right', COL + 76, y + 72, 72, 20, 'btn_half.png', 'btn_half_hover.png',
                  label=local('quit'), layout=L)
+    # the lines in the lower left stand on a dark shade: the picture under them is another one in every window
+    before = [('fancymenu_visibility_requirement_is_number', 'if', '["mode":"smaller-than","number":"%s","compare_with":"%d"]$' % (ph('unix_time'), START_MS))]
+    b += image(L + ':shade', 'shade.png', 'bottom-left', 0, -28, 142, 28)
+    b += image(L + ':shade2', 'shade.png', 'bottom-left', 0, -43, 162, 15, req=requirement(L + ':shade2', lines=before))
     b += text(L + ':version', gold('Kronwerke') + ' Season 2%n%Minecraft ' + ph('mcversion') + ' · NeoForge', 'bottom-left', 4, -26, 220, 26)
     days = ph('calc', expression='(%d - %s) / 86400000 + 0.5' % (START_MS, ph('unix_time')), decimal='false')
     b += text(L + ':countdown', gold(local('countdown.a') + ' ' + days + ' ' + local('countdown.b')), 'bottom-left', 4, -41, 260, 15,
-              req=requirement(L + ':countdown', lines=[('fancymenu_visibility_requirement_is_number', 'if',
-                                                        '["mode":"smaller-than","number":"%s","compare_with":"%d"]$' % (ph('unix_time'), START_MS))]))
+              req=requirement(L + ':countdown', lines=before))
     b += hide(L, *TITLE_HIDDEN)
     extra = ''
     if 'night' in name:
@@ -272,7 +299,7 @@ def title(name, art, hours):
                                              ('show_decoration_overlay', 'true'), ('firefly_group_density', '0.6'),
                                              ('firefly_group_amount', '0.7'), ('firefly_group_size', '0.8'), ('firefly_scale', '1.0'),
                                              ('firefly_follow_mouse', 'true'), ('firefly_landing', 'true'), ('firefly_color_hex', '#FFE08A')])
-    return layout(name, 'title_screen', b, background=art, behind=True, req=requirement(name + ':layout', hours=hours), extra=extra)
+    return layout(name, 'title_screen', b, background=art, behind=True, scale=None, req=requirement(name + ':layout', hours=hours), extra=extra)
 
 
 # ---------------------------------------------------------------------------------------------
@@ -284,7 +311,8 @@ def not_in_world(name):
 
 
 def universal():
-    return layout('universal', '%fancymenu:universal_layout%', '', background='menu_dim.png', scale=None, req=not_in_world('universal'))
+    return layout('universal', '%fancymenu:universal_layout%', picture('universal', 'art_dim.png'), background='menu_dim.png', behind=True, scale=None,
+                  req=not_in_world('universal'))
 
 
 def multiplayer():
@@ -324,7 +352,7 @@ def pause():
     b += button(L + ':status', '', 'top-right', x + 54, y + 96, 20, 20, 'icon_book.png', 'icon_book_hover.png', [('openlink', WEBSITE + '/status')], tip=local('status.tip'))
     b += vanilla('pause_disconnect_button', 'top-right', x + 84, y + 96, 64, 20, *right, label=local('leave'), layout=L)
     b += hide(L, 'pause_send_feedback_button', 'pause_report_bugs_button', 'pause_share_to_lan_button', '40')     # 40: the "Game Menu" line
-    return layout(L, 'pause_screen', b)
+    return layout(L, 'pause_screen', b, scale=None)
 
 
 # ---------------------------------------------------------------------------------------------
@@ -333,9 +361,12 @@ def pause():
 # ---------------------------------------------------------------------------------------------
 
 def loading(name, art, hours):
-    """Logo and bar in the middle, where the early window before it has them."""
+    """Logo and bar in the middle, where the early window before it has them. No scale of its own:
+    a forced scale is not applied to the positions in this overlay, only to the sizes, and
+    everything lands in the wrong place whenever the game's own GUI scale is another one."""
     L = name
-    b = image(L + ':logo', 'logo.png', 'mid-centered', -82, -50, 163, 62)
+    b = picture(L, 'art_night.png' if 'night' in name else 'art_dusk.png')
+    b += image(L + ':logo', 'logo.png', 'mid-centered', -82, -50, 163, 62)
     b += image(L + ':frame', 'bar_frame.png', 'mid-centered', -74, 14, CW, 20)
     p = base(L + ':bar', 'progress_bar', 'mid-centered', -70, 18, CW - 8, 12)
     head = [('bar_color', '#E5B451FF'), ('bar_texture', A + 'bar_fill.png'), ('background_color', '#00000000'), ('direction', 'right'),
@@ -348,7 +379,7 @@ def loading(name, art, hours):
         b += text(L + ':tip_' + lang, centered(tip), 'mid-centered', -106, 43, 212, 24,
                   req=requirement(L + ':tip_' + lang, lines=[('fancymenu_loading_requirement_is_language', mode, 'de_de')]))
     b += hide(L, 'progress_bar', 'mojang_logo')
-    return layout(name, 'drippy_loading_overlay', b, background=art, req=requirement(name + ':layout', hours=hours))
+    return layout(name, 'drippy_loading_overlay', b, background=art, scale=None, req=requirement(name + ':layout', hours=hours))
 
 
 LANG = {
@@ -475,20 +506,26 @@ def art():
     import works, px
     dusk = None
     last = max(max(fr) for _, _, fr, _ in SPRITES)
+    ox, oy = scene.OX, scene.OY
+    assert (scene.FW, scene.FH) == (ART_W, ART_H) and (scene.W // 2, scene.H // 2) == (MID_X, MID_Y)
     for mode in scene.PAL:
         frames = [scene.build(mode, t).a.copy() for t in range(last + 1)]
         still = scene.build(mode)
-        still.image(4).save(os.path.join(ASSETS, f'title_{mode}.png'), optimize=True)
+        # the whole picture one to one for the layouts, its middle four times as large for the
+        # early window and as the stretched background behind everything
+        still.image(1).save(os.path.join(ASSETS, f'art_{mode}.png'), optimize=True)
+        Image.fromarray(scene.core(still.a), 'RGB').resize((1920, 1080), Image.NEAREST).save(os.path.join(ASSETS, f'title_{mode}.png'), optimize=True)
         if mode == 'dusk':
             dusk = still
         for name, (x0, y0, x1, y1), fr, ms in SPRITES:
             dur = [ms] * len(fr)
             if name == 'train':
                 dur[-1] = (works.LOOP - last) * ms
-            px.apng(os.path.join(ASSETS, f'anim_{mode}_{name}.apng'), [frames[t][y0:y1, x0:x1] for t in fr], dur)
+            px.apng(os.path.join(ASSETS, f'anim_{mode}_{name}.apng'), [frames[t][y0 + oy:y1 + oy, x0 + ox:x1 + ox] for t in fr], dur)
     # the dimmed picture behind the other menus: darker, cooler, same pixels
     dim = (dusk.a.astype(float) * 0.34 + np.array([13, 11, 16], float) * 0.66).astype(np.uint8)
-    Image.fromarray(dim, 'RGB').resize((1920, 1080), Image.NEAREST).save(os.path.join(ASSETS, 'menu_dim.png'), optimize=True)
+    Image.fromarray(dim, 'RGB').save(os.path.join(ASSETS, 'art_dim.png'), optimize=True)
+    Image.fromarray(scene.core(dim), 'RGB').resize((1920, 1080), Image.NEAREST).save(os.path.join(ASSETS, 'menu_dim.png'), optimize=True)
     items = ui.build(os.path.join(ASSETS, '_tmp'))
     for k in items:
         os.replace(os.path.join(ASSETS, '_tmp', k + '.png'), os.path.join(ASSETS, k + '.png'))
@@ -510,6 +547,8 @@ def art():
     fill = Image.new('RGBA', (148, 20), (0, 0, 0, 0))
     fill.paste(ui.bar_fill(140, 12).image(1, rgba=True), (4, 4))
     fill.resize((592, 80), Image.NEAREST).save(os.path.join(ASSETS, 'bar_fill_early.png'), optimize=True)
+    # a dark shade for writing that stands on the picture
+    Image.new('RGBA', (8, 8), (13, 11, 16, 150)).save(os.path.join(ASSETS, 'shade.png'))
     # window icons
     for size in (16, 32):
         ui.window_icon(size).image(1, rgba=True).save(os.path.join(ASSETS, f'icon_{size}.png'), optimize=True)
@@ -518,7 +557,8 @@ def art():
 
 
 def main():
-    art()
+    if '--layouts' not in sys.argv:          # the pictures take minutes; with --layouts only the layout files are written
+        art()
     for f in os.listdir(LAYOUTS) if os.path.isdir(LAYOUTS) else []:
         if f.startswith('kw_'):
             os.remove(os.path.join(LAYOUTS, f))

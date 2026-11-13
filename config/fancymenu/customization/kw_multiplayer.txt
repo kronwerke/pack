@@ -9,7 +9,7 @@ layout-meta {
   randomgroup = 1
   randomonlyfirsttime = false
   layout_index = 0
-  [loading_requirement_container_meta:c2dcd9ec-2afb-5b86-ab23-ca072d299a0a-1763000000285] = [groups:][instances:]
+  [loading_requirement_container_meta:c2dcd9ec-2afb-5b86-ab23-ca072d299a0a-1763000000366] = [groups:][instances:]
 }
 
 customization {
@@ -32,9 +32,9 @@ layout_action_executable_blocks {
 }
 
 element {
-  button_element_executable_block_identifier = 094942c4-9b9e-5412-978f-14d18e50d651-1763000000274
-  [executable_action_instance:9f90223d-53cb-5815-8fb1-a8b18fd48f46-1763000000275][action_type:joinserver] = kronwerke.net
-  [executable_block:094942c4-9b9e-5412-978f-14d18e50d651-1763000000274][type:generic] = [executables:9f90223d-53cb-5815-8fb1-a8b18fd48f46-1763000000275;]
+  button_element_executable_block_identifier = 094942c4-9b9e-5412-978f-14d18e50d651-1763000000355
+  [executable_action_instance:9f90223d-53cb-5815-8fb1-a8b18fd48f46-1763000000356][action_type:joinserver] = kronwerke.net
+  [executable_block:094942c4-9b9e-5412-978f-14d18e50d651-1763000000355][type:generic] = [executables:9f90223d-53cb-5815-8fb1-a8b18fd48f46-1763000000356;]
   backgroundnormal = [source:local]/config/fancymenu/assets/kronwerke/btn_join.png
   backgroundhovered = [source:local]/config/fancymenu/assets/kronwerke/btn_join_hover.png
   underline_label_on_hover = false
@@ -44,8 +44,8 @@ element {
   description = {"placeholder":"local","values":{"key":"kwmenu.join.tip"}}
   label = {"placeholder":"local","values":{"key":"kwmenu.join"}}
   navigatable = true
-  widget_active_state_requirement_container_identifier = 17cccbb0-ed59-560a-abe3-57609f555aa8-1763000000276
-  [loading_requirement_container_meta:17cccbb0-ed59-560a-abe3-57609f555aa8-1763000000276] = [groups:][instances:]
+  widget_active_state_requirement_container_identifier = 17cccbb0-ed59-560a-abe3-57609f555aa8-1763000000357
+  [loading_requirement_container_meta:17cccbb0-ed59-560a-abe3-57609f555aa8-1763000000357] = [groups:][instances:]
   is_template = false
   template_apply_width = false
   template_apply_height = false
@@ -57,7 +57,7 @@ element {
   template_share_with = buttons
   nine_slice_slider_handle = false
   element_type = custom_button
-  instance_identifier = eed036f7-09ca-57c7-afea-3d4283c0e846-1763000000278
+  instance_identifier = eed036f7-09ca-57c7-afea-3d4283c0e846-1763000000359
   appearance_delay = no_delay
   disappearance_delay = no_delay
   fade_in_v2 = no_fading
@@ -72,8 +72,8 @@ element {
   width = 148
   height = 24
   stay_on_screen = false
-  element_loading_requirement_container_identifier = 2062faeb-0584-5497-8178-b9841f8aaa8b-1763000000277
-  [loading_requirement_container_meta:2062faeb-0584-5497-8178-b9841f8aaa8b-1763000000277] = [groups:][instances:]
+  element_loading_requirement_container_identifier = 2062faeb-0584-5497-8178-b9841f8aaa8b-1763000000358
+  [loading_requirement_container_meta:2062faeb-0584-5497-8178-b9841f8aaa8b-1763000000358] = [groups:][instances:]
   enable_parallax = false
   invert_parallax = false
   animated_offset_x = 0
@@ -114,7 +114,7 @@ element {
 
 element {
   element_type = image
-  instance_identifier = 09ca3a1d-ec09-5169-a1be-0516549bec41-1763000000281
+  instance_identifier = 09ca3a1d-ec09-5169-a1be-0516549bec41-1763000000362
   appearance_delay = no_delay
   disappearance_delay = no_delay
   fade_in_v2 = no_fading
@@ -129,9 +129,9 @@ element {
   width = 104
   height = 14
   stay_on_screen = false
-  element_loading_requirement_container_identifier = 02e7af8b-a0e3-5d61-8b6d-bb2a2b8c7c9c-1763000000279
-  [loading_requirement_container_meta:02e7af8b-a0e3-5d61-8b6d-bb2a2b8c7c9c-1763000000279] = [groups:][instances:639441b8-7ee1-508b-a9d9-28482e9e5002-1763000000280;]
-  [loading_requirement:fancymenu_visibility_requirement_is_number][requirement_mode:if][req_id:639441b8-7ee1-508b-a9d9-28482e9e5002-1763000000280] = ["mode":"bigger-than-or-equals","number":"{"placeholder":"json","values":{"source":"https://kronwerke.com/api/status","json_path":"$.server.players"}}","compare_with":"0"]$
+  element_loading_requirement_container_identifier = 02e7af8b-a0e3-5d61-8b6d-bb2a2b8c7c9c-1763000000360
+  [loading_requirement_container_meta:02e7af8b-a0e3-5d61-8b6d-bb2a2b8c7c9c-1763000000360] = [groups:][instances:639441b8-7ee1-508b-a9d9-28482e9e5002-1763000000361;]
+  [loading_requirement:fancymenu_visibility_requirement_is_number][requirement_mode:if][req_id:639441b8-7ee1-508b-a9d9-28482e9e5002-1763000000361] = ["mode":"bigger-than-or-equals","number":"{"placeholder":"json","values":{"source":"https://kronwerke.com/api/status","json_path":"$.server.players"}}","compare_with":"0"]$
   enable_parallax = false
   invert_parallax = false
   animated_offset_x = 0
@@ -201,7 +201,7 @@ element {
   table_row_background_color = #282828FF
   table_alternate_row_color = #3C3C3CFF
   element_type = text_v2
-  instance_identifier = 9e132c5f-4bd3-57d2-94d1-960b780d68c3-1763000000284
+  instance_identifier = 9e132c5f-4bd3-57d2-94d1-960b780d68c3-1763000000365
   appearance_delay = no_delay
   disappearance_delay = no_delay
   fade_in_v2 = no_fading
@@ -216,9 +216,9 @@ element {
   width = 104
   height = 16
   stay_on_screen = false
-  element_loading_requirement_container_identifier = 43ef931c-3366-55d3-87ad-5f61f3f09926-1763000000282
-  [loading_requirement_container_meta:43ef931c-3366-55d3-87ad-5f61f3f09926-1763000000282] = [groups:][instances:b1bf8ad1-391f-5f7f-8996-7feb36f519ba-1763000000283;]
-  [loading_requirement:fancymenu_visibility_requirement_is_number][requirement_mode:if][req_id:b1bf8ad1-391f-5f7f-8996-7feb36f519ba-1763000000283] = ["mode":"bigger-than-or-equals","number":"{"placeholder":"json","values":{"source":"https://kronwerke.com/api/status","json_path":"$.server.players"}}","compare_with":"0"]$
+  element_loading_requirement_container_identifier = 43ef931c-3366-55d3-87ad-5f61f3f09926-1763000000363
+  [loading_requirement_container_meta:43ef931c-3366-55d3-87ad-5f61f3f09926-1763000000363] = [groups:][instances:b1bf8ad1-391f-5f7f-8996-7feb36f519ba-1763000000364;]
+  [loading_requirement:fancymenu_visibility_requirement_is_number][requirement_mode:if][req_id:b1bf8ad1-391f-5f7f-8996-7feb36f519ba-1763000000364] = ["mode":"bigger-than-or-equals","number":"{"placeholder":"json","values":{"source":"https://kronwerke.com/api/status","json_path":"$.server.players"}}","compare_with":"0"]$
   enable_parallax = false
   invert_parallax = false
   animated_offset_x = 0

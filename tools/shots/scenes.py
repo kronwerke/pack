@@ -3199,3 +3199,62 @@ def _(b):
     b.use(4, 1, 4, "south", "eternal_starlight:orb_of_prophecy")
     b.expect(4, 3, 4, "eternal_starlight:starlight_portal")
     b.focus(1, 0, 2, 7, 6, 6)            # the ring, not the fallen half of the ruin beside it
+
+
+# ---- batch 23: quests about a part, shown as the part; two lines of the book that still had no picture ----
+
+shelf("immersive/pump", ["immersiveengineering:fluid_pump", "immersiveengineering:fluid_pipe"])
+shelf("immersive/treated_wood", ["immersiveengineering:creosote_bucket", "immersiveengineering:treated_wood_horizontal"])
+shelf("immersive_heavy/light", ["immersiveengineering:light_engineering"])
+shelf("immersive_heavy/heavy", ["immersiveengineering:heavy_engineering"])
+shelf("immersive_heavy/resonanz", ["immersiveengineering:resonanz_engineering"])
+shelf("immersive_heavy/duroplast", ["immersiveengineering:plate_duroplast"])
+shelf("industrial/welcome", ["industrialforegoing:machine_frame_pity"])
+shelf("industrial/plastic", ["industrialforegoing:dryrubber", "industrialforegoing:plastic"])
+shelf("industrial/addons", ["industrialforegoing:speed_addon_tier_1", "industrialforegoing:efficiency_addon_tier_1"])
+shelf("oritech/plastic", ["oritech:packed_wheat", "oritech:raw_biopolymer", "oritech:plastic_sheet"])
+shelf("oritech/fragment", ["oritech:iron_clump", "oritech:iron_gem"])
+shelf("oritech/addons", ["oritech:machine_speed_addon"])
+shelf("oritech/addon_quarry", ["oritech:quarry_addon"])
+shelf("oritech/addon_crop", ["oritech:crop_filter_addon"])
+shelf("productive_trees/pollinated", ["productivetrees:hazel_sapling"])
+shelf("productive_trees/loot_saplings", ["productivetrees:blue_yonder_sapling", "productivetrees:flickering_sun_sapling",
+                                         "productivetrees:firecracker_sapling", "productivetrees:brown_amber_sapling"])
+shelf("draconic_chaos/reactor", ["draconicevolution:reactor_stabilizer", "draconicevolution:reactor_core", "draconicevolution:reactor_injector"])
+shelf("mahou_tsukai/cloth", ["mahoutsukai:dagger", "mahoutsukai:spell_cloth"])
+shelf("mahou_tsukai/fay_sight", ["mahoutsukai:scroll_fay_sight"])
+shelf("mahou_tsukai/staff", ["mahoutsukai:mystic_staff"])
+shelf("theurgy/wire", ["theurgy:copper_wire"])
+
+
+@scene("create_trains/welcome", w=11)
+def _(b):
+    # the track line: a sleeper rides the belt under two deployers with nuggets and a press
+    b.b(2, 0, 4, "create:shaft[axis=z]")
+    b.b(8, 0, 4, "create:shaft[axis=z]")
+    b.use(2, 0, 4, "up", "create:belt_connector")
+    b.use(8, 0, 4, "up", "create:belt_connector")
+    b.changed(5, 0, 4, "minecraft:air")
+    for x in (4, 5):
+        b.b(x, 2, 4, "create:deployer[facing=down,axis_along_first=true]", '{HeldItem:{id:"minecraft:iron_nugget",count:1}}')
+    b.b(7, 2, 4, "create:mechanical_press[facing=south]")
+    b.f(4, 3, 4, 7, 3, 4, "create:andesite_casing")
+    b.drop(3, 1, 4, "minecraft:andesite_slab")
+    b.drop(6, 1, 4, "create:incomplete_track")
+
+
+@scene("ars_master/golem_bookwyrm")
+def _(b):
+    # an amethyst golem at its geode, and the storage lectern the bookwyrms sort for
+    b.f(2, 0, 3, 4, 2, 4, "minecraft:calcite")
+    b.f(3, 0, 4, 3, 1, 4, "minecraft:budding_amethyst")
+    b.b(2, 1, 4, "minecraft:amethyst_block")
+    b.b(4, 0, 4, "minecraft:amethyst_block")
+    b.b(3, 0, 5, "minecraft:amethyst_cluster[facing=south]")
+    b.b(3, 2, 4, "minecraft:amethyst_block")
+    b.m("ars_nouveau:amethyst_golem", 4, 0, 6, rot=0)
+    b.b(6, 0, 4, "ars_nouveau:storage_lectern")
+    b.b(7, 0, 4, "minecraft:chest[facing=south,type=single,waterlogged=false]")
+
+
+creature("gaia/fight", "botania:gaia_guardian", big=True)

@@ -1169,15 +1169,20 @@ def _(b):
 
 @scene("storage/drawers_4")
 def _(b):
-    # a wall of drawers, three by three, set against planks so every one looks out, something in each
+    # a wall of drawers, three by three, set against planks so every one looks out; four kinds
+    # in each (the hand cannot aim at one of the four compartments, so the contents are written
+    # into the drawer the way the drawer itself stores them)
     b.f(3, 0, 3, 5, 2, 3, "minecraft:oak_planks")
-    items = ["minecraft:iron_ingot", "minecraft:copper_ingot", "minecraft:gold_ingot", "minecraft:redstone", "minecraft:coal",
-             "minecraft:lapis_lazuli", "minecraft:diamond", "minecraft:quartz", "minecraft:bone"]
-    for i, item in enumerate(items):
+    kinds = ["iron_ingot", "copper_ingot", "gold_ingot", "raw_iron", "raw_copper", "raw_gold", "coal", "charcoal", "redstone",
+             "lapis_lazuli", "diamond", "emerald", "quartz", "amethyst_shard", "flint", "clay_ball", "bone", "string", "gunpowder",
+             "rotten_flesh", "leather", "feather", "wheat", "sugar_cane", "red_dye", "blue_dye", "green_dye", "yellow_dye",
+             "white_dye", "black_dye", "slime_ball", "ender_pearl", "blaze_rod", "glowstone_dust", "nether_wart", "paper"]
+    for i in range(9):
         x, y = 3 + i % 3, i // 3
         b.use(x, y, 3, "south", "functionalstorage:oak_4")
         b.changed(x, y, 4, "minecraft:air")
-        b.use(x, y, 4, "south", item)
+        slots = ",".join(f'{k}:{{Stack:{{id:"minecraft:{kinds[i * 4 + k]}",count:1}},Amount:{64 * (k + 2)}}}' for k in range(4))
+        b.cmd(f"data merge block {b._p(x, y, 4)} {{handler:{{BigItems:{{{slots}}}}}}}")
 
 
 @scene("antimatter/waste", w=11)

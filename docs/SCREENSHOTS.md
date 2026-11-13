@@ -33,6 +33,14 @@ Nether and End are servers of their own, and the camera gets there the way a tel
 
 The worlds are reset before the season. The places are gone then, the pictures stay true to the kind of place; only `exploration/e_tnt_village` shows the spawn village of the test season with its obelisk and should be taken again in the new world.
 
+Pictures of a screen (a machine's window, a book, the map, the HUD):
+
+The camera sees no screens; the test player does (`{cmd:"tester"}` on the camera's console, back with `{cmd:"camera"}`; Core's `probe` commands drive it). `probe lang de_de` first: the client starts in English every time. The player stands in front of the machine or holds the item, `probe tap use` or the key opens the screen (`probe key m` for the map of FTB Chunks, `probe tap key.curios.open.desc`), `probe screen` lists slots and buttons with their places, `probe shot NAME 960` takes the frame. `tools/shots/fetch/guishot.py` cuts it to the book's 480x270 and copies it into the pack.
+
+- The test player is in stage 1 like a new player. That is the picture for `start_here/s_locked`; for every other machine `/kw admin bypass on KronwerkeTest`, and off again afterwards.
+- A machine whose recipes belong to a later stage takes no item by shift click even with the bypass, the window stays empty (`mekanism/infuser` shows the two ingredients in the inventory for that reason).
+- These pictures are plain PNGs of about 60 to 190 KB, larger than a scene's.
+
 Chapters without a list here (most of the stage 1 gap chapters from the first wave) work without pictures for now.
 
 ## Start

@@ -501,8 +501,10 @@ def build(check=False):
             for again, first in json.load(fh).items():
                 if again not in idx:
                     problems.append(f"same.json: {again} is no quest")
-                if first not in scenes.SCENES:
-                    problems.append(f"same.json: {first} has no scene")
+                # a picture of a real place or of a screen has no scene, only its file in the book
+                shot = os.path.join(ROOT, "kubejs", "assets", "kronwerke", "textures", "quests", "shots", first.replace("/", "_") + ".png")
+                if first not in scenes.SCENES and not os.path.exists(shot):
+                    problems.append(f"same.json: {first} has no scene and no picture")
                 if again in scenes.SCENES:
                     problems.append(f"same.json: {again} has a scene of its own")
     print(f"{n} boxes, {len(shots)} scenes, {len(Cell.vendored)} structures -> {OUT}")

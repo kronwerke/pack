@@ -3057,21 +3057,23 @@ def _(b):
 # ===================================================================================
 # The bosses and beasts of the other worlds, standing still for their portrait
 
-def creature(key, entity, big=False, nbt=""):
+def creature(key, entity, big=False, tall=False, nbt=""):
     @scene(key, w=11, d=11)
     def _(b):
         b.m(entity, 5, 0, 5, nbt=nbt, rot=0)
-        if big:
-            b.focus(4, 0, 4, 6, 3, 6)      # three blocks wide, four high: five wide left them small in the picture
+        if tall:
+            b.focus(3, 0, 3, 7, 3, 7)      # the stalker and the monstrosity reach higher than four blocks: the wide frame holds them
+        elif big:
+            b.focus(4, 0, 4, 6, 3, 6)      # three blocks wide, four high: five wide left the others small in the picture
 
 
 creature("aether/slider", "aether:slider", big=True)
 creature("aether/queen", "aether:valkyrie_queen")
 creature("aether/ride", "aether:moa")
 creature("undergarden/guardian", "undergarden:forgotten_guardian", big=True)
-creature("deeper_darker/stalker", "deeperdarker:stalker", big=True)
+creature("deeper_darker/stalker", "deeperdarker:stalker", tall=True)
 creature("eternal_starlight/golem", "eternal_starlight:starlight_golem", big=True)
-creature("eternal_starlight/monstrosity", "eternal_starlight:lunar_monstrosity", big=True)
+creature("eternal_starlight/monstrosity", "eternal_starlight:lunar_monstrosity", tall=True)
 creature("eternal_starlight/orb", "eternal_starlight:the_gatekeeper")
 
 shelf("aether/gloves", ["aether:zanite_gloves"])

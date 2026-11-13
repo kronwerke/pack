@@ -31,28 +31,28 @@ fill 104 64 237 104 79 250 minecraft:light_gray_concrete
 fill 98 64 241 100 66 241 minecraft:oak_planks
 kw testworld use 98 64 241 south functionalstorage:oak_4
 execute unless block 98 64 242 minecraft:air
-kw testworld use 98 64 242 south minecraft:iron_ingot
+data merge block 98 64 242 {handler:{BigItems:{0:{Stack:{id:"minecraft:iron_ingot",count:1},Amount:128},1:{Stack:{id:"minecraft:copper_ingot",count:1},Amount:192},2:{Stack:{id:"minecraft:gold_ingot",count:1},Amount:256},3:{Stack:{id:"minecraft:raw_iron",count:1},Amount:320}}}}
 kw testworld use 99 64 241 south functionalstorage:oak_4
 execute unless block 99 64 242 minecraft:air
-kw testworld use 99 64 242 south minecraft:copper_ingot
+data merge block 99 64 242 {handler:{BigItems:{0:{Stack:{id:"minecraft:raw_copper",count:1},Amount:128},1:{Stack:{id:"minecraft:raw_gold",count:1},Amount:192},2:{Stack:{id:"minecraft:coal",count:1},Amount:256},3:{Stack:{id:"minecraft:charcoal",count:1},Amount:320}}}}
 kw testworld use 100 64 241 south functionalstorage:oak_4
 execute unless block 100 64 242 minecraft:air
-kw testworld use 100 64 242 south minecraft:gold_ingot
+data merge block 100 64 242 {handler:{BigItems:{0:{Stack:{id:"minecraft:redstone",count:1},Amount:128},1:{Stack:{id:"minecraft:lapis_lazuli",count:1},Amount:192},2:{Stack:{id:"minecraft:diamond",count:1},Amount:256},3:{Stack:{id:"minecraft:emerald",count:1},Amount:320}}}}
 kw testworld use 98 65 241 south functionalstorage:oak_4
 execute unless block 98 65 242 minecraft:air
-kw testworld use 98 65 242 south minecraft:redstone
+data merge block 98 65 242 {handler:{BigItems:{0:{Stack:{id:"minecraft:quartz",count:1},Amount:128},1:{Stack:{id:"minecraft:amethyst_shard",count:1},Amount:192},2:{Stack:{id:"minecraft:flint",count:1},Amount:256},3:{Stack:{id:"minecraft:clay_ball",count:1},Amount:320}}}}
 kw testworld use 99 65 241 south functionalstorage:oak_4
 execute unless block 99 65 242 minecraft:air
-kw testworld use 99 65 242 south minecraft:coal
+data merge block 99 65 242 {handler:{BigItems:{0:{Stack:{id:"minecraft:bone",count:1},Amount:128},1:{Stack:{id:"minecraft:string",count:1},Amount:192},2:{Stack:{id:"minecraft:gunpowder",count:1},Amount:256},3:{Stack:{id:"minecraft:rotten_flesh",count:1},Amount:320}}}}
 kw testworld use 100 65 241 south functionalstorage:oak_4
 execute unless block 100 65 242 minecraft:air
-kw testworld use 100 65 242 south minecraft:lapis_lazuli
+data merge block 100 65 242 {handler:{BigItems:{0:{Stack:{id:"minecraft:leather",count:1},Amount:128},1:{Stack:{id:"minecraft:feather",count:1},Amount:192},2:{Stack:{id:"minecraft:wheat",count:1},Amount:256},3:{Stack:{id:"minecraft:sugar_cane",count:1},Amount:320}}}}
 kw testworld use 98 66 241 south functionalstorage:oak_4
 execute unless block 98 66 242 minecraft:air
-kw testworld use 98 66 242 south minecraft:diamond
+data merge block 98 66 242 {handler:{BigItems:{0:{Stack:{id:"minecraft:red_dye",count:1},Amount:128},1:{Stack:{id:"minecraft:blue_dye",count:1},Amount:192},2:{Stack:{id:"minecraft:green_dye",count:1},Amount:256},3:{Stack:{id:"minecraft:yellow_dye",count:1},Amount:320}}}}
 kw testworld use 99 66 241 south functionalstorage:oak_4
 execute unless block 99 66 242 minecraft:air
-kw testworld use 99 66 242 south minecraft:quartz
+data merge block 99 66 242 {handler:{BigItems:{0:{Stack:{id:"minecraft:white_dye",count:1},Amount:128},1:{Stack:{id:"minecraft:black_dye",count:1},Amount:192},2:{Stack:{id:"minecraft:slime_ball",count:1},Amount:256},3:{Stack:{id:"minecraft:ender_pearl",count:1},Amount:320}}}}
 kw testworld use 100 66 241 south functionalstorage:oak_4
 execute unless block 100 66 242 minecraft:air
-kw testworld use 100 66 242 south minecraft:bone
+data merge block 100 66 242 {handler:{BigItems:{0:{Stack:{id:"minecraft:blaze_rod",count:1},Amount:128},1:{Stack:{id:"minecraft:glowstone_dust",count:1},Amount:192},2:{Stack:{id:"minecraft:nether_wart",count:1},Amount:256},3:{Stack:{id:"minecraft:paper",count:1},Amount:320}}}}

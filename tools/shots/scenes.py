@@ -2599,3 +2599,73 @@ def _(b):
     b.b(4, 0, 4, "create:mechanical_arm[ceiling=false]",
         '{InteractionPoints:[{Type:"create:depot",Pos:[I;-2,0,0],Mode:"TAKE"},{Type:"create:blaze_burner",Pos:[I;2,0,0],Mode:"DEPOSIT"}]}')
     drive_from_below(b, 4, 0, 4)
+
+
+# ===================================================================================
+# Seventeenth batch: things set and filled by hand
+
+@scene("immersive/cloche", h=14)
+def _(b):
+    # the garden cloche, set down by hand (three blocks high), with earth, a hemp seed, water and
+    # power in it: the plant grows under the glass
+    b.use(4, -1, 4, "up", "immersiveengineering:cloche")
+    b.cmd(f"data merge block {b._p(4, 0, 4)} {{Items:[{{Slot:0b,id:\"minecraft:dirt\",count:1}},"
+          f"{{Slot:1b,id:\"immersiveengineering:seed\",count:1}}],energy:16000,tank:{{Fluid:{{id:\"minecraft:water\",amount:4000}}}}}}")
+    b.focus(3, 0, 3, 5, 3, 5)
+
+
+@scene("ae2/p2p", w=10)
+def _(b):
+    # a P2P tunnel at each end of a dense cable: the dense cable's channels travel through one channel
+    b.b(1, -1, 4, "ae2:creative_energy_cell")
+    b.b(1, 0, 4, "ae2:energy_acceptor")
+    b.use(1, 0, 4, "east", "ae2:fluix_glass_cable")
+    b.use(2, 0, 4, "east", "ae2:me_p2p_tunnel")
+    for x in (3, 4, 5, 6):
+        b.use(x, -1, 4, "up", "ae2:fluix_covered_dense_cable")
+    b.use(7, -1, 4, "up", "ae2:fluix_glass_cable")
+    b.use(7, 0, 4, "west", "ae2:me_p2p_tunnel")
+    b.focus(1, 0, 3, 7, 1, 5)
+
+
+@scene("pneumaticcraft/safety")
+def _(b):
+    # a pressure tube with a safety valve and a gauge clicked onto it
+    b.f(3, 0, 4, 5, 0, 4, "pneumaticcraft:pressure_tube")
+    b.use(3, 0, 4, "up", "pneumaticcraft:safety_tube_module")
+    b.use(5, 0, 4, "up", "pneumaticcraft:pressure_gauge_module")
+    b.focus(3, 0, 3, 5, 1, 5)
+
+
+@scene("pneumaticcraft_advanced/frames")
+def _(b):
+    # a provider frame on one chest, a requester frame on the other: drones carry between them
+    b.b(2, 0, 4, "minecraft:chest[facing=south,type=single,waterlogged=false]")
+    b.b(6, 0, 4, "minecraft:chest[facing=south,type=single,waterlogged=false]")
+    b.use(2, 0, 4, "south", "pneumaticcraft:logistics_frame_passive_provider")
+    b.use(6, 0, 4, "south", "pneumaticcraft:logistics_frame_requester")
+
+
+@scene("pneumaticcraft_advanced/first_program")
+def _(b):
+    b.b(3, 0, 4, "pneumaticcraft:programmer[facing=south]")
+    b.show(5, 0, 4, "pneumaticcraft:drone")
+
+
+@scene("productive_trees/pots")
+def _(b):
+    # a hopper botany pot on a chest, earth and a walnut sapling put in by hand
+    b.b(4, 0, 4, "minecraft:chest[facing=south,type=single,waterlogged=false]")
+    b.b(4, 1, 4, "botanypots:terracotta_hopper_botany_pot")
+    b.use(4, 1, 4, "up", "minecraft:dirt")
+    b.use(4, 1, 4, "up", "productivetrees:walnut_sapling")
+
+
+@scene("logistics/laser_node")
+def _(b):
+    # a laser node on each chest, joined with two clicks of the laser wrench
+    for x in (2, 6):
+        b.b(x, 0, 4, "minecraft:chest[facing=south,type=single,waterlogged=false]")
+        b.b(x, 1, 4, "laserio:laser_node")
+    b.use(2, 1, 4, "south", "laserio:laser_wrench")
+    b.use(6, 1, 4, "south", "laserio:laser_wrench")

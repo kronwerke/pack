@@ -76,11 +76,11 @@
   ],
   [
    "ae2_advanced/bridge",
-   "execute in kronwerke:testworld if data block 82 65 265 inventory_id"
+   "execute in kronwerke:testworld if data block 93 65 265 inventory_id"
   ],
   [
    "storage/vault_big",
-   "execute in kronwerke:testworld if block 209 64 264 create:item_vault[large=true]"
+   "execute in kronwerke:testworld if block 230 64 264 create:item_vault[large=true]"
   ],
   [
    "list_dimensions/d_mining",

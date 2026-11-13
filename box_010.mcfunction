@@ -1,16 +1,18 @@
-# 010 create/depot
-#area 31 40 50 65
-fill 31 64 40 50 91 65 minecraft:air
-fill 31 60 40 50 62 65 minecraft:stone
-fill 31 63 40 50 63 65 minecraft:light_gray_concrete
-fill 35 64 46 50 79 46 minecraft:light_gray_concrete
-fill 35 64 46 35 79 59 minecraft:light_gray_concrete
-setblock 36 64 58 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "010"}','{"text": "create"}','{"text": "depot"}','{"text": ""}']}}
-setblock 37 64 58 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "press above a"}','{"text": "depot with one"}','{"text": "block of air"}','{"text": "between"}']}}
-fill 45 64 46 45 79 59 minecraft:light_gray_concrete
-setblock 40 64 51 create:depot
-setblock 40 66 51 create:mechanical_press[facing=south]
-fill 39 64 50 41 67 50 create:andesite_casing
-setblock 40 66 50 create:andesite_encased_shaft[axis=z]
-setblock 40 66 49 create:creative_motor[facing=south]{ScrollValue:32}
-kw testworld use 40 64 51 up minecraft:iron_ingot
+# 010 create/windmill
+#area 12 40 35 69
+fill 12 64 40 35 99 69 minecraft:air
+fill 12 60 40 35 62 69 minecraft:stone
+fill 12 63 40 35 63 69 minecraft:light_gray_concrete
+fill 16 64 46 35 87 46 minecraft:light_gray_concrete
+fill 16 64 46 16 87 63 minecraft:light_gray_concrete
+setblock 17 64 62 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "010"}','{"text": "create"}','{"text": "windmill"}','{"text": ""}']}}
+setblock 18 64 62 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "a finished"}','{"text": "windmill with"}','{"text": "32 sails"}','{"text": ""}']}}
+fill 30 64 46 30 87 63 minecraft:light_gray_concrete
+fill 23 64 52 23 69 52 minecraft:spruce_log[axis=y]
+setblock 23 70 52 create:windmill_bearing[facing=south]
+setblock 23 70 53 create:white_sail[facing=south]
+fill 23 71 53 24 74 53 create:white_sail[facing=south]
+fill 24 69 53 27 70 53 create:white_sail[facing=south]
+fill 22 66 53 23 69 53 create:white_sail[facing=south]
+fill 19 70 53 22 71 53 create:white_sail[facing=south]
+kw testworld use 23 70 52 south minecraft:air

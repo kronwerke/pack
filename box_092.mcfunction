@@ -1,80 +1,22 @@
-# 092 list_dimensions/d_mining, d_aether, d_undergarden, d_otherside, r_mekanism
-#area 67 269 122 294
-fill 67 64 269 111 91 294 minecraft:air
-fill 112 64 269 122 91 294 minecraft:air
-fill 67 60 269 122 62 294 minecraft:stone
-fill 67 63 269 122 63 294 minecraft:light_gray_concrete
-fill 71 64 275 122 79 275 minecraft:light_gray_concrete
-fill 71 64 275 71 79 288 minecraft:light_gray_concrete
-setblock 72 64 287 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "092.1"}','{"text": "list_dimensions"}','{"text": "d_mining"}','{"text": ""}']}}
-setblock 73 64 287 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Die Farmwelt"}','{"text": ""}','{"text": ""}','{"text": ""}']}}
-fill 80 64 275 80 79 288 minecraft:light_gray_concrete
-setblock 74 65 280 kronwerke:grubenrahmen
-setblock 74 66 280 kronwerke:grubenrahmen
-setblock 74 67 280 kronwerke:grubenrahmen
-setblock 75 64 280 kronwerke:grubenrahmen
-setblock 75 68 280 kronwerke:grubenrahmen
-setblock 76 64 280 kronwerke:grubenrahmen
-setblock 76 68 280 kronwerke:grubenrahmen
-setblock 77 65 280 kronwerke:grubenrahmen
-setblock 77 66 280 kronwerke:grubenrahmen
-setblock 77 67 280 kronwerke:grubenrahmen
-kw testworld use 75 64 280 up ars_nouveau:source_gem
-setblock 81 64 287 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "092.2"}','{"text": "list_dimensions"}','{"text": "d_aether"}','{"text": ""}']}}
-setblock 82 64 287 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Bau ein"}','{"text": "Aether-Portal"}','{"text": ""}','{"text": ""}']}}
-fill 89 64 275 89 79 288 minecraft:light_gray_concrete
-setblock 83 65 280 minecraft:glowstone
-setblock 83 66 280 minecraft:glowstone
-setblock 83 67 280 minecraft:glowstone
-setblock 84 64 280 minecraft:glowstone
-setblock 84 68 280 minecraft:glowstone
-setblock 85 64 280 minecraft:glowstone
-setblock 85 68 280 minecraft:glowstone
-setblock 86 65 280 minecraft:glowstone
-setblock 86 66 280 minecraft:glowstone
-setblock 86 67 280 minecraft:glowstone
-fill 84 65 280 85 67 280 aether:aether_portal[axis=x]
-execute if block 84 66 280 aether:aether_portal
-setblock 90 64 287 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "092.3"}','{"text": "list_dimensions"}','{"text": "d_undergarden"}','{"text": ""}']}}
-setblock 91 64 287 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Öffne den"}','{"text": "Undergarden"}','{"text": ""}','{"text": ""}']}}
-fill 98 64 275 98 79 288 minecraft:light_gray_concrete
-setblock 92 65 280 minecraft:stone_bricks
-setblock 92 66 280 minecraft:stone_bricks
-setblock 92 67 280 minecraft:stone_bricks
-setblock 93 64 280 minecraft:stone_bricks
-setblock 93 68 280 minecraft:stone_bricks
-setblock 94 64 280 minecraft:stone_bricks
-setblock 94 68 280 minecraft:stone_bricks
-setblock 95 65 280 minecraft:stone_bricks
-setblock 95 66 280 minecraft:stone_bricks
-setblock 95 67 280 minecraft:stone_bricks
-fill 93 65 280 94 67 280 undergarden:undergarden_portal[axis=x]
-execute if block 93 66 280 undergarden:undergarden_portal
-setblock 99 64 287 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "092.4"}','{"text": "list_dimensions"}','{"text": "d_otherside"}','{"text": ""}']}}
-setblock 100 64 287 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Öffne die"}','{"text": "Otherside"}','{"text": ""}','{"text": ""}']}}
-fill 107 64 275 107 79 288 minecraft:light_gray_concrete
-setblock 101 65 280 minecraft:reinforced_deepslate
-setblock 101 66 280 minecraft:reinforced_deepslate
-setblock 101 67 280 minecraft:reinforced_deepslate
-setblock 102 64 280 minecraft:reinforced_deepslate
-setblock 102 68 280 minecraft:reinforced_deepslate
-setblock 103 64 280 minecraft:reinforced_deepslate
-setblock 103 68 280 minecraft:reinforced_deepslate
-setblock 104 65 280 minecraft:reinforced_deepslate
-setblock 104 66 280 minecraft:reinforced_deepslate
-setblock 104 67 280 minecraft:reinforced_deepslate
-fill 102 65 280 103 67 280 deeperdarker:otherside_portal[axis=x]
-execute if block 102 66 280 deeperdarker:otherside_portal
-setblock 108 64 287 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "092.5"}','{"text": "list_dimensions"}','{"text": "r_mekanism"}','{"text": ""}']}}
-setblock 109 64 287 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Bau einen"}','{"text": "Teleporter"}','{"text": ""}','{"text": ""}']}}
-fill 117 64 275 117 79 288 minecraft:light_gray_concrete
-setblock 112 64 280 mekanism:teleporter
-setblock 111 64 280 mekanism:teleporter_frame
-setblock 113 64 280 mekanism:teleporter_frame
-setblock 111 65 280 mekanism:teleporter_frame
-setblock 113 65 280 mekanism:teleporter_frame
-setblock 111 66 280 mekanism:teleporter_frame
-setblock 113 66 280 mekanism:teleporter_frame
-setblock 111 67 280 mekanism:teleporter_frame
-setblock 113 67 280 mekanism:teleporter_frame
-setblock 112 67 280 mekanism:teleporter_frame
+# 092 undergarden/arrival
+#area 53 269 71 294
+fill 53 64 269 71 91 294 minecraft:air
+fill 53 60 269 71 62 294 minecraft:stone
+fill 53 63 269 71 63 294 minecraft:light_gray_concrete
+fill 57 64 275 71 79 275 minecraft:light_gray_concrete
+fill 57 64 275 57 79 288 minecraft:light_gray_concrete
+setblock 58 64 287 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "092"}','{"text": "undergarden"}','{"text": "arrival"}','{"text": ""}']}}
+setblock 59 64 287 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Steig hinunter"}','{"text": ""}','{"text": ""}','{"text": ""}']}}
+fill 66 64 275 66 79 288 minecraft:light_gray_concrete
+setblock 60 65 280 minecraft:stone_bricks
+setblock 60 66 280 minecraft:stone_bricks
+setblock 60 67 280 minecraft:stone_bricks
+setblock 61 64 280 minecraft:stone_bricks
+setblock 61 68 280 minecraft:stone_bricks
+setblock 62 64 280 minecraft:stone_bricks
+setblock 62 68 280 minecraft:stone_bricks
+setblock 63 65 280 minecraft:stone_bricks
+setblock 63 66 280 minecraft:stone_bricks
+setblock 63 67 280 minecraft:stone_bricks
+fill 61 65 280 62 67 280 undergarden:undergarden_portal[axis=x]
+execute if block 61 66 280 undergarden:undergarden_portal

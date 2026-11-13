@@ -1,22 +1,37 @@
-# 087 nether/welcome
-#area -4 269 14 294
-fill -4 64 269 14 91 294 minecraft:air
-fill -4 60 269 14 62 294 minecraft:stone
-fill -4 63 269 14 63 294 minecraft:light_gray_concrete
-fill 0 64 275 14 79 275 minecraft:light_gray_concrete
-fill 0 64 275 0 79 288 minecraft:light_gray_concrete
-setblock 1 64 287 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "087"}','{"text": "nether"}','{"text": "welcome"}','{"text": ""}']}}
-setblock 2 64 287 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Betritt den"}','{"text": "Nether"}','{"text": ""}','{"text": ""}']}}
-fill 9 64 275 9 79 288 minecraft:light_gray_concrete
-setblock 3 65 280 minecraft:obsidian
-setblock 3 66 280 minecraft:obsidian
-setblock 3 67 280 minecraft:obsidian
-setblock 4 64 280 minecraft:obsidian
-setblock 4 68 280 minecraft:obsidian
-setblock 5 64 280 minecraft:obsidian
-setblock 5 68 280 minecraft:obsidian
-setblock 6 65 280 minecraft:obsidian
-setblock 6 66 280 minecraft:obsidian
-setblock 6 67 280 minecraft:obsidian
-fill 4 65 280 5 67 280 minecraft:nether_portal[axis=x]
-execute if block 4 66 280 minecraft:nether_portal
+# 087 pneumaticcraft/chamber
+#area 63 250 82 275
+fill 63 64 250 82 91 275 minecraft:air
+fill 63 60 250 82 62 275 minecraft:stone
+fill 63 63 250 82 63 275 minecraft:light_gray_concrete
+fill 67 64 256 82 79 256 minecraft:light_gray_concrete
+fill 67 64 256 67 79 269 minecraft:light_gray_concrete
+setblock 68 64 268 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "087"}','{"text": "pneumaticcraft"}','{"text": "chamber"}','{"text": ""}']}}
+setblock 69 64 268 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Setz die"}','{"text": "Druckkammer"}','{"text": "zusammen"}','{"text": ""}']}}
+fill 77 64 256 77 79 269 minecraft:light_gray_concrete
+setblock 71 64 260 pneumaticcraft:pressure_chamber_wall[wall_state=none]
+setblock 71 64 261 pneumaticcraft:pressure_chamber_wall[wall_state=none]
+setblock 71 64 262 pneumaticcraft:pressure_chamber_wall[wall_state=none]
+setblock 71 65 260 pneumaticcraft:pressure_chamber_wall[wall_state=none]
+setblock 71 65 261 pneumaticcraft:pressure_chamber_interface[facing=west]
+setblock 71 65 262 pneumaticcraft:pressure_chamber_wall[wall_state=none]
+setblock 71 66 260 pneumaticcraft:pressure_chamber_wall[wall_state=none]
+setblock 71 66 261 pneumaticcraft:pressure_chamber_wall[wall_state=none]
+setblock 72 64 260 pneumaticcraft:pressure_chamber_wall[wall_state=none]
+setblock 72 64 261 pneumaticcraft:pressure_chamber_glass
+setblock 72 64 262 pneumaticcraft:pressure_chamber_wall[wall_state=none]
+setblock 72 65 260 pneumaticcraft:pressure_chamber_glass
+setblock 72 65 262 pneumaticcraft:pressure_chamber_glass
+setblock 72 66 260 pneumaticcraft:pressure_chamber_wall[wall_state=none]
+setblock 72 66 261 pneumaticcraft:pressure_chamber_glass
+setblock 72 66 262 pneumaticcraft:pressure_chamber_wall[wall_state=none]
+setblock 73 64 260 pneumaticcraft:pressure_chamber_wall[wall_state=none]
+setblock 73 64 261 pneumaticcraft:pressure_chamber_wall[wall_state=none]
+setblock 73 64 262 pneumaticcraft:pressure_chamber_wall[wall_state=none]
+setblock 73 65 260 pneumaticcraft:pressure_chamber_wall[wall_state=none]
+setblock 73 65 261 pneumaticcraft:pressure_chamber_valve[facing=east,formed=false]
+setblock 73 65 262 pneumaticcraft:pressure_chamber_wall[wall_state=none]
+setblock 73 66 260 pneumaticcraft:pressure_chamber_wall[wall_state=none]
+setblock 73 66 261 pneumaticcraft:pressure_chamber_wall[wall_state=none]
+setblock 73 66 262 pneumaticcraft:pressure_chamber_wall[wall_state=none]
+kw testworld use 71 65 262 up pneumaticcraft:pressure_chamber_wall
+execute if block 73 65 261 pneumaticcraft:pressure_chamber_valve[formed=true]

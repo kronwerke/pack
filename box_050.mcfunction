@@ -1,44 +1,13 @@
-# 050 botania_runes/ritual
-#area 122 105 143 132
-fill 122 64 105 143 91 132 minecraft:air
-fill 122 60 105 143 62 132 minecraft:stone
-fill 122 63 105 143 63 132 minecraft:light_gray_concrete
-fill 126 64 111 143 79 111 minecraft:light_gray_concrete
-fill 126 64 111 126 79 126 minecraft:light_gray_concrete
-setblock 127 64 125 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "050"}','{"text": "botania_runes"}','{"text": "ritual"}','{"text": ""}']}}
-setblock 128 64 125 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "the oak ritual"}','{"text": "growing"}','{"text": ""}','{"text": ""}']}}
-fill 138 64 111 138 79 126 minecraft:light_gray_concrete
-setblock 132 64 113 naturesaura:wood_stand
-setblock 129 64 114 naturesaura:wood_stand
-setblock 135 64 114 naturesaura:wood_stand
-setblock 131 64 115 naturesaura:gold_powder
-setblock 132 64 115 naturesaura:gold_powder
-setblock 133 64 115 naturesaura:gold_powder
-setblock 130 64 116 naturesaura:gold_powder
-setblock 131 64 116 naturesaura:gold_powder
-setblock 133 64 116 naturesaura:gold_powder
-setblock 134 64 116 naturesaura:gold_powder
-setblock 128 64 117 naturesaura:wood_stand
-setblock 130 64 117 naturesaura:gold_powder
-setblock 132 64 117 minecraft:oak_sapling
-setblock 134 64 117 naturesaura:gold_powder
-setblock 136 64 117 naturesaura:wood_stand
-setblock 130 64 118 naturesaura:gold_powder
-setblock 131 64 118 naturesaura:gold_powder
-setblock 133 64 118 naturesaura:gold_powder
-setblock 134 64 118 naturesaura:gold_powder
-setblock 131 64 119 naturesaura:gold_powder
-setblock 132 64 119 naturesaura:gold_powder
-setblock 133 64 119 naturesaura:gold_powder
-setblock 129 64 120 naturesaura:wood_stand
-setblock 135 64 120 naturesaura:wood_stand
-setblock 132 64 121 naturesaura:wood_stand
-setblock 132 63 117 minecraft:grass_block
-kw testworld use 132 64 113 up naturesaura:infused_iron
-kw testworld use 129 64 114 up botania:livingwood_twig
-kw testworld use 135 64 114 up naturesaura:infused_iron
-kw testworld use 128 64 117 up botania:mana_diamond
-kw testworld use 136 64 117 up naturesaura:gold_leaf
-kw testworld use 129 64 120 up naturesaura:infused_iron
-kw testworld use 135 64 120 up botania:livingwood_twig
-kw testworld use 132 64 121 up naturesaura:infused_iron
+# 050 botania_runes/mana_pearl
+#area 107 105 126 130
+fill 107 64 105 126 91 130 minecraft:air
+fill 107 60 105 126 62 130 minecraft:stone
+fill 107 63 105 126 63 130 minecraft:light_gray_concrete
+fill 111 64 111 126 79 111 minecraft:light_gray_concrete
+fill 111 64 111 111 79 124 minecraft:light_gray_concrete
+setblock 112 64 123 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "050"}','{"text": "botania_runes"}','{"text": "mana_pearl"}','{"text": ""}']}}
+setblock 113 64 123 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "a pool on a"}','{"text": "brass casing"}','{"text": "with a pearl in"}','{"text": "it"}']}}
+fill 121 64 111 121 79 124 minecraft:light_gray_concrete
+setblock 116 64 116 create:brass_casing
+setblock 116 65 116 botania:mana_pool{mana:1000000}
+summon item 116.5 66 116.5 {Item:{id:"minecraft:ender_pearl",count:1},PickupDelay:32767,Age:-32768,Tags:["kw_shot"]}

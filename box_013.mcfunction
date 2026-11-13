@@ -1,25 +1,19 @@
-# 013 create/washing
-#area 76 40 95 65
-fill 76 64 40 95 91 65 minecraft:air
-fill 76 60 40 95 62 65 minecraft:stone
-fill 76 63 40 95 63 65 minecraft:light_gray_concrete
-fill 80 64 46 95 79 46 minecraft:light_gray_concrete
-fill 80 64 46 80 79 59 minecraft:light_gray_concrete
-setblock 81 64 58 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "013"}','{"text": "create"}','{"text": "washing"}','{"text": ""}']}}
-setblock 82 64 58 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "fan blowing"}','{"text": "through water"}','{"text": "over a belt of"}','{"text": "gravel"}']}}
-fill 90 64 46 90 79 59 minecraft:light_gray_concrete
-setblock 84 64 49 create:shaft[axis=x]
-setblock 84 64 53 create:shaft[axis=x]
-kw testworld use 84 64 49 up create:belt_connector
-kw testworld use 84 64 53 up create:belt_connector
-execute unless block 84 64 51 minecraft:air
-setblock 85 64 50 minecraft:glass
-setblock 85 64 52 minecraft:glass
-setblock 85 64 51 minecraft:water
-setblock 86 64 51 create:encased_fan[facing=west]
-setblock 87 64 51 create:creative_motor[facing=west]{ScrollValue:64}
-setblock 88 64 51 create:andesite_casing
-setblock 87 64 52 create:andesite_casing
-setblock 87 64 50 create:andesite_casing
-setblock 87 65 51 create:andesite_casing
-summon item 84.5 65 51.5 {Item:{id:"minecraft:gravel",count:8},PickupDelay:32767,Age:-32768,Tags:["kw_shot"]}
+# 013 create/compacting
+#area 61 40 80 65
+fill 61 64 40 80 91 65 minecraft:air
+fill 61 60 40 80 62 65 minecraft:stone
+fill 61 63 40 80 63 65 minecraft:light_gray_concrete
+fill 65 64 46 80 79 46 minecraft:light_gray_concrete
+fill 65 64 46 65 79 59 minecraft:light_gray_concrete
+setblock 66 64 58 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "013"}','{"text": "create"}','{"text": "compacting"}','{"text": ""}']}}
+setblock 67 64 58 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "press over"}','{"text": "basin making"}','{"text": "andesite from"}','{"text": "flint, gravel"}']}}
+setblock 68 64 58 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "and lava"}','{"text": ""}','{"text": ""}','{"text": ""}']}}
+fill 75 64 46 75 79 59 minecraft:light_gray_concrete
+setblock 70 64 51 create:basin[facing=down]
+setblock 70 66 51 create:mechanical_press[facing=south]
+fill 69 64 50 71 67 50 create:andesite_casing
+setblock 70 66 50 create:andesite_encased_shaft[axis=z]
+setblock 70 66 49 create:creative_motor[facing=south]{ScrollValue:32}
+summon item 70.5 65 51.5 {Item:{id:"minecraft:flint",count:8},PickupDelay:32767,Age:-32768,Tags:["kw_shot"]}
+summon item 70.5 65.3 51.5 {Item:{id:"minecraft:gravel",count:8},PickupDelay:32767,Age:-32768,Tags:["kw_shot"]}
+kw testworld use 70 64 51 up minecraft:lava_bucket

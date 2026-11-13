@@ -26,10 +26,10 @@ GLYPH = {
 }
 SMALL = {
     'S': '.XX X.. .X. ..X XX.', 'E': 'XXX X.. XX. X.. XXX', 'A': '.X. X.X XXX X.X X.X', 'O': '.X. X.X X.X X.X .X.',
-    'N': 'X.X XXX XXX X.X X.X', '2': 'XX. ..X .X. X.. XXX', ' ': '... ... ... ... ...', 'T': 'XXX .X. .X. .X. .X.',
+    'N': 'X..X XX.X X.XX X..X X..X', '2': 'XX. ..X .X. X.. XXX', ' ': '... ... ... ... ...', 'T': 'XXX .X. .X. .X. .X.',
     'F': 'XXX X.. XX. X.. X..', 'L': 'X.. X.. X.. X.. XXX', 'I': 'XXX .X. .X. .X. XXX', 'D': 'XX. X.X X.X X.X XX.',
     'G': '.XX X.. X.X X.X .XX', 'R': 'XX. X.X XX. X.X X.X', 'U': 'X.X X.X X.X X.X XXX', 'C': '.XX X.. X.. X.. .XX',
-    'H': 'X.X X.X XXX X.X X.X', 'K': 'X.X X.X XX. X.X X.X', 'W': 'X.X X.X XXX XXX X.X', 'M': 'X.X XXX XXX X.X X.X',
+    'H': 'X.X X.X XXX X.X X.X', 'K': 'X.X X.X XX. X.X X.X', 'W': 'X...X X...X X.X.X XX.XX X...X', 'M': 'X...X XX.XX X.X.X X...X X...X',
     'P': 'XX. X.X XX. X.. X..', 'B': 'XX. X.X XX. X.X XX.', 'V': 'X.X X.X X.X X.X .X.', 'Y': 'X.X X.X .X. .X. .X.',
     'Z': 'XXX ..X .X. X.. XXX', '1': '.X. XX. .X. .X. XXX', '3': 'XX. ..X .X. ..X XX.', '.': '... ... ... ... .X.',
     '0': 'XXX X.X X.X X.X XXX', '%': 'X.X ..X .X. X.. X.X', ':': '... .X. ... .X. ...', '-': '... ... XXX ... ...',
@@ -51,12 +51,12 @@ def small_text(c, text, x, y, col, shadow=None):
         if shadow is not None:
             c.fill(c.shift(m, 0, 1), shadow)
         c.fill(m, col)
-        x += 4
+        x += len(SMALL[ch].split()[0]) + 1
     return x
 
 
 def text_width(text):
-    return len(text) * 4 - 1
+    return sum(len(SMALL[ch].split()[0]) + 1 for ch in text) - 1
 
 
 def crown_mark(c, cx, base, w, h, R=K):

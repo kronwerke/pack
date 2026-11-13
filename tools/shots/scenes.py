@@ -2938,3 +2938,17 @@ def _(b):
 @scene("productive_trees/time_traveller")
 def _(b):
     b.b(4, 0, 4, "productivetrees:time_traveller_display[axis=y]")
+
+
+@scene("nuclearcraft/irradiation")
+def _(b):
+    # the irradiation chamber that goes into the reactor, and the irradiator that works on its own
+    b.b(3, 0, 4, "nuclearcraft:fission_reactor_irradiation_chamber")
+    b.b(5, 0, 4, "nuclearcraft:irradiator[facing=south,powered=false]")
+
+
+@scene("mekanism/configurator")
+def _(b):
+    # the configurator, and a machine whose sides it sets
+    b.b(3, 0, 4, "mekanism:metallurgic_infuser[facing=south,active=false]")
+    b.show(5, 0, 4, "mekanism:configurator")

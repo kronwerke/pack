@@ -1,37 +1,22 @@
-# 067 malum/altar, obelisk
-#area -4 290 27 315
-fill -4 64 290 27 91 315 minecraft:air
-fill -4 60 290 27 62 315 minecraft:stone
-fill -4 63 290 27 63 315 minecraft:light_gray_concrete
-fill 0 64 296 27 79 296 minecraft:light_gray_concrete
-fill 0 64 296 0 79 309 minecraft:light_gray_concrete
-setblock 1 64 308 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "067.1"}','{"text": "malum"}','{"text": "altar"}','{"text": ""}']}}
-setblock 2 64 308 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Bau einen"}','{"text": "Spirit Altar"}','{"text": ""}','{"text": ""}']}}
-fill 10 64 296 10 79 309 minecraft:light_gray_concrete
-setblock 5 64 301 malum:spirit_altar
-kw testworld use 5 64 301 south malum:runewood_planks
-setblock 3 64 301 malum:runewood_planks
-setblock 3 65 301 malum:runewood_item_stand[facing=up,waterlogged=false]
-kw testworld use 3 65 301 south malum:hallowed_gold_ingot
-setblock 7 64 301 malum:runewood_planks
-setblock 7 65 301 malum:runewood_item_stand[facing=up,waterlogged=false]
-kw testworld use 7 65 301 south malum:hallowed_gold_ingot
-setblock 11 64 308 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "067.2"}','{"text": "malum"}','{"text": "obelisk"}','{"text": ""}']}}
-setblock 12 64 308 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Stell"}','{"text": "Runewood-Obelisken"}','{"text": "auf"}','{"text": ""}']}}
-fill 22 64 296 22 79 309 minecraft:light_gray_concrete
-setblock 16 64 301 malum:spirit_altar
-kw testworld use 16 64 301 south malum:runewood_planks
-setblock 14 64 301 malum:runewood_planks
-setblock 14 65 301 malum:runewood_item_stand[facing=up,waterlogged=false]
-kw testworld use 14 65 301 south malum:hallowed_gold_ingot
-setblock 18 64 301 malum:runewood_planks
-setblock 18 65 301 malum:runewood_item_stand[facing=up,waterlogged=false]
-kw testworld use 18 65 301 south malum:hallowed_gold_ingot
-kw testworld use 13 63 299 up malum:runewood_obelisk
-execute unless block 13 64 299 minecraft:air
-kw testworld use 19 63 299 up malum:runewood_obelisk
-execute unless block 19 64 299 minecraft:air
-kw testworld use 13 63 303 up malum:runewood_obelisk
-execute unless block 13 64 303 minecraft:air
-kw testworld use 19 63 303 up malum:runewood_obelisk
-execute unless block 19 64 303 minecraft:air
+# 067 aether/portal
+#area 10 250 28 275
+fill 10 64 250 28 91 275 minecraft:air
+fill 10 60 250 28 62 275 minecraft:stone
+fill 10 63 250 28 63 275 minecraft:light_gray_concrete
+fill 14 64 256 28 79 256 minecraft:light_gray_concrete
+fill 14 64 256 14 79 269 minecraft:light_gray_concrete
+setblock 15 64 268 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "067"}','{"text": "aether"}','{"text": "portal"}','{"text": ""}']}}
+setblock 16 64 268 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Bau das"}','{"text": "Glowstone-Portal"}','{"text": ""}','{"text": ""}']}}
+fill 23 64 256 23 79 269 minecraft:light_gray_concrete
+setblock 17 65 261 minecraft:glowstone
+setblock 17 66 261 minecraft:glowstone
+setblock 17 67 261 minecraft:glowstone
+setblock 18 64 261 minecraft:glowstone
+setblock 18 68 261 minecraft:glowstone
+setblock 19 64 261 minecraft:glowstone
+setblock 19 68 261 minecraft:glowstone
+setblock 20 65 261 minecraft:glowstone
+setblock 20 66 261 minecraft:glowstone
+setblock 20 67 261 minecraft:glowstone
+fill 18 65 261 19 67 261 aether:aether_portal[axis=x]
+execute if block 18 66 261 aether:aether_portal

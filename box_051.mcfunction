@@ -1,20 +1,23 @@
-# 051 immersive/blast_furnace, improved_form
-#area 26 158 55 184
-fill 26 64 158 55 91 184 minecraft:air
-fill 26 60 158 55 62 184 minecraft:stone
-fill 26 63 158 55 63 184 minecraft:light_gray_concrete
-fill 30 64 164 55 79 164 minecraft:light_gray_concrete
-fill 30 64 164 30 79 178 minecraft:light_gray_concrete
-setblock 31 64 177 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "051.1"}','{"text": "immersive"}','{"text": "blast_furnace"}','{"text": ""}']}}
-setblock 32 64 177 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "crude blast"}','{"text": "furnace GUI,"}','{"text": "improved"}','{"text": "furnace with"}']}}
-setblock 33 64 177 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "hopper and"}','{"text": "preheaters"}','{"text": ""}','{"text": ""}']}}
-fill 40 64 164 40 79 178 minecraft:light_gray_concrete
-place template immersiveengineering:multiblocks/blast_furnace 34 64 167 none
-kw testworld use 35 65 169 south immersiveengineering:hammer
-execute unless block 35 65 169 immersiveengineering:blastbrick
-setblock 41 64 177 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "051.2"}','{"text": "immersive"}','{"text": "improved_form"}','{"text": ""}']}}
-setblock 42 64 177 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Form einen"}','{"text": "Verbesserten"}','{"text": "Hochofen"}','{"text": ""}']}}
-fill 50 64 164 50 79 178 minecraft:light_gray_concrete
-place template immersiveengineering:multiblocks/improved_blast_furnace 44 64 167 none
-kw testworld use 45 65 169 south immersiveengineering:hammer
-execute unless block 45 65 169 immersiveengineering:blastbrick_reinforced
+# 051 occultism_afrit/storage
+#area 137 123 160 152
+fill 137 64 123 160 91 152 minecraft:air
+fill 137 60 123 160 62 152 minecraft:stone
+fill 137 63 123 160 63 152 minecraft:light_gray_concrete
+fill 141 64 129 160 79 129 minecraft:light_gray_concrete
+fill 141 64 129 141 79 146 minecraft:light_gray_concrete
+setblock 142 64 145 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "051"}','{"text": "occultism_afrit"}','{"text": "storage"}','{"text": ""}']}}
+setblock 143 64 145 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "storage"}','{"text": "actuator with"}','{"text": "four"}','{"text": "stabilizers"}']}}
+fill 155 64 129 155 79 146 minecraft:light_gray_concrete
+setblock 144 65 136 occultism:otherstone
+setblock 145 65 136 occultism:storage_stabilizer_tier1[facing=east]
+setblock 148 65 132 occultism:otherstone
+setblock 148 65 133 occultism:storage_stabilizer_tier1[facing=south]
+setblock 148 65 139 occultism:storage_stabilizer_tier1[facing=north]
+setblock 148 65 140 occultism:otherstone
+setblock 151 65 136 occultism:storage_stabilizer_tier1[facing=west]
+setblock 152 65 136 occultism:otherstone
+setblock 144 64 136 occultism:otherstone
+setblock 148 64 132 occultism:otherstone
+setblock 148 64 136 occultism:storage_controller
+setblock 148 64 140 occultism:otherstone
+setblock 152 64 136 occultism:otherstone

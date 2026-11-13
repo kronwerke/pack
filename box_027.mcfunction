@@ -1,19 +1,20 @@
-# 027 ars_nouveau/earth_essence
-#area 41 67 60 92
-fill 41 64 67 60 91 92 minecraft:air
-fill 41 60 67 60 62 92 minecraft:stone
-fill 41 63 67 60 63 92 minecraft:light_gray_concrete
-fill 45 64 73 60 79 73 minecraft:light_gray_concrete
-fill 45 64 73 45 79 86 minecraft:light_gray_concrete
-setblock 46 64 85 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "027"}','{"text": "ars_nouveau"}','{"text": "earth_essence"}','{"text": ""}']}}
-setblock 47 64 85 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "chamber with"}','{"text": "three pedestals"}','{"text": "next to it"}','{"text": ""}']}}
-fill 55 64 73 55 79 86 minecraft:light_gray_concrete
-setblock 50 64 78 ars_nouveau:imbuement_chamber[facing=up]
+# 027 ars_nouveau/apparatus
+#area 43 67 62 92
+fill 43 64 67 62 91 92 minecraft:air
+fill 43 60 67 62 62 92 minecraft:stone
+fill 43 63 67 62 63 92 minecraft:light_gray_concrete
+fill 47 64 73 62 79 73 minecraft:light_gray_concrete
+fill 47 64 73 47 79 86 minecraft:light_gray_concrete
+setblock 48 64 85 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "027"}','{"text": "ars_nouveau"}','{"text": "apparatus"}','{"text": ""}']}}
+setblock 49 64 85 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "core, apparatus"}','{"text": "and pedestals"}','{"text": "in range"}','{"text": ""}']}}
+fill 57 64 73 57 79 86 minecraft:light_gray_concrete
+setblock 52 64 78 ars_nouveau:arcane_core[facing=up]
+setblock 52 65 78 ars_nouveau:enchanting_apparatus[facing=up]
+setblock 50 64 76 ars_nouveau:arcane_pedestal[facing=up]
+setblock 52 64 75 ars_nouveau:arcane_pedestal[facing=up]
+setblock 54 64 76 ars_nouveau:arcane_pedestal[facing=up]
 setblock 49 64 78 ars_nouveau:arcane_pedestal[facing=up]
-kw testworld use 49 64 78 south minecraft:iron_ingot
-setblock 51 64 78 ars_nouveau:arcane_pedestal[facing=up]
-kw testworld use 51 64 78 south minecraft:wheat_seeds
-setblock 50 64 77 ars_nouveau:arcane_pedestal[facing=up]
-kw testworld use 50 64 77 south minecraft:dirt
-kw testworld use 50 64 78 south ars_nouveau:source_gem
-setblock 52 64 77 ars_nouveau:source_jar[fill=11]{source:10000}
+setblock 55 64 78 ars_nouveau:arcane_pedestal[facing=up]
+setblock 50 64 80 ars_nouveau:arcane_pedestal[facing=up]
+setblock 54 64 80 ars_nouveau:arcane_pedestal[facing=up]
+setblock 55 64 75 ars_nouveau:source_jar[fill=11]{source:10000}

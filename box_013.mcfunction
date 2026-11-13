@@ -8,7 +8,7 @@ fill 125 64 27 125 79 40 minecraft:light_gray_concrete
 setblock 126 64 39 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "013"}','{"text": "create_brass"}','{"text": "brass_mixing"}','{"text": ""}']}}
 setblock 127 64 39 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "heated burner,"}','{"text": "basin and mixer"}','{"text": "stack"}','{"text": ""}']}}
 fill 135 64 27 135 79 40 minecraft:light_gray_concrete
-setblock 130 64 32 create:blaze_burner
+setblock 130 64 32 create:blaze_burner[heat_level=smouldering]
 kw testworld use 130 64 32 south create:creative_blaze_cake
 setblock 130 65 32 create:basin[facing=down]
 setblock 130 67 32 create:mechanical_mixer

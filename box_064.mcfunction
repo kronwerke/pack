@@ -1,22 +1,11 @@
-# 064 undergarden/arrival
-#area 38 250 56 275
-fill 38 64 250 56 91 275 minecraft:air
-fill 38 60 250 56 62 275 minecraft:stone
-fill 38 63 250 56 63 275 minecraft:light_gray_concrete
-fill 42 64 256 56 79 256 minecraft:light_gray_concrete
-fill 42 64 256 42 79 269 minecraft:light_gray_concrete
-setblock 43 64 268 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "064"}','{"text": "undergarden"}','{"text": "arrival"}','{"text": ""}']}}
-setblock 44 64 268 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Steig hinunter"}','{"text": ""}','{"text": ""}','{"text": ""}']}}
-fill 51 64 256 51 79 269 minecraft:light_gray_concrete
-setblock 45 65 261 minecraft:stone_bricks
-setblock 45 66 261 minecraft:stone_bricks
-setblock 45 67 261 minecraft:stone_bricks
-setblock 46 64 261 minecraft:stone_bricks
-setblock 46 68 261 minecraft:stone_bricks
-setblock 47 64 261 minecraft:stone_bricks
-setblock 47 68 261 minecraft:stone_bricks
-setblock 48 65 261 minecraft:stone_bricks
-setblock 48 66 261 minecraft:stone_bricks
-setblock 48 67 261 minecraft:stone_bricks
-fill 46 65 261 47 67 261 undergarden:undergarden_portal[axis=x]
-execute if block 46 66 261 undergarden:undergarden_portal
+# 064 storage/vault_big
+#area -4 212 16 237
+fill -4 64 212 16 91 237 minecraft:air
+fill -4 60 212 16 62 237 minecraft:stone
+fill -4 63 212 16 63 237 minecraft:light_gray_concrete
+fill 0 64 218 16 79 218 minecraft:light_gray_concrete
+fill 0 64 218 0 79 231 minecraft:light_gray_concrete
+setblock 1 64 230 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "064"}','{"text": "storage"}','{"text": "vault_big"}','{"text": ""}']}}
+setblock 2 64 230 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Bau einen"}','{"text": "großen Tresor"}','{"text": ""}','{"text": ""}']}}
+fill 11 64 218 11 79 231 minecraft:light_gray_concrete
+fill 3 64 222 8 66 224 create:item_vault[axis=x,large=false]

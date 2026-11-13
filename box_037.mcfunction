@@ -1,25 +1,17 @@
-# 037 gaia/dandelifeon
-#area 139 86 176 129
-fill 139 64 86 164 91 129 minecraft:air
-fill 165 64 86 176 91 129 minecraft:air
-fill 139 60 86 176 62 129 minecraft:stone
-fill 139 63 86 176 63 129 minecraft:light_gray_concrete
-fill 143 64 92 176 79 92 minecraft:light_gray_concrete
-fill 143 64 92 143 79 123 minecraft:light_gray_concrete
-setblock 144 64 122 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "037"}','{"text": "gaia"}','{"text": "dandelifeon"}','{"text": ""}']}}
-setblock 145 64 122 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "a 25x25 cell"}','{"text": "field"}','{"text": ""}','{"text": ""}']}}
-fill 171 64 92 171 79 123 minecraft:light_gray_concrete
-fill 145 63 94 169 63 118 minecraft:smooth_stone
-setblock 157 63 106 minecraft:grass_block
-setblock 157 64 106 botania:dandelifeon
-setblock 150 64 99 botania:cellular_block
-setblock 151 64 100 botania:cellular_block
-setblock 152 64 100 botania:cellular_block
-setblock 150 64 101 botania:cellular_block
-setblock 151 64 101 botania:cellular_block
-setblock 162 64 101 botania:cellular_block
-setblock 163 64 101 botania:cellular_block
-setblock 164 64 101 botania:cellular_block
-setblock 151 64 110 botania:cellular_block
-setblock 151 64 111 botania:cellular_block
-setblock 151 64 112 botania:cellular_block
+# 037 botania_runes/runic_altar
+#area 90 86 109 111
+fill 90 64 86 109 91 111 minecraft:air
+fill 90 60 86 109 62 111 minecraft:stone
+fill 90 63 86 109 63 111 minecraft:light_gray_concrete
+fill 94 64 92 109 79 92 minecraft:light_gray_concrete
+fill 94 64 92 94 79 105 minecraft:light_gray_concrete
+setblock 95 64 104 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "037"}','{"text": "botania_runes"}','{"text": "runic_altar"}','{"text": ""}']}}
+setblock 96 64 104 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "altar with"}','{"text": "ingredients, a"}','{"text": "spreader aimed"}','{"text": "at it, wand HUD"}']}}
+fill 104 64 92 104 79 105 minecraft:light_gray_concrete
+setblock 96 64 97 botania:mana_pool{mana:1000000}
+setblock 97 64 97 botania:mana_spreader{rotationX:180f,rotationY:0f,mana:1000}
+setblock 101 64 97 botania:runic_altar
+kw testworld use 101 64 97 up botania:manasteel_ingot
+kw testworld use 101 64 97 up botania:mana_powder
+kw testworld use 101 64 97 up minecraft:bone_meal
+kw testworld use 101 64 97 up minecraft:sugar_cane

@@ -1,37 +1,26 @@
-# 060 pneumaticcraft/chamber
-#area -4 231 15 256
-fill -4 64 231 15 91 256 minecraft:air
-fill -4 60 231 15 62 256 minecraft:stone
-fill -4 63 231 15 63 256 minecraft:light_gray_concrete
-fill 0 64 237 15 79 237 minecraft:light_gray_concrete
-fill 0 64 237 0 79 250 minecraft:light_gray_concrete
-setblock 1 64 249 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "060"}','{"text": "pneumaticcraft"}','{"text": "chamber"}','{"text": ""}']}}
-setblock 2 64 249 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Setz die"}','{"text": "Druckkammer"}','{"text": "zusammen"}','{"text": ""}']}}
-fill 10 64 237 10 79 250 minecraft:light_gray_concrete
-setblock 4 64 241 pneumaticcraft:pressure_chamber_wall[wall_state=none]
-setblock 4 64 242 pneumaticcraft:pressure_chamber_wall[wall_state=none]
-setblock 4 64 243 pneumaticcraft:pressure_chamber_wall[wall_state=none]
-setblock 4 65 241 pneumaticcraft:pressure_chamber_wall[wall_state=none]
-setblock 4 65 242 pneumaticcraft:pressure_chamber_interface[facing=west]
-setblock 4 65 243 pneumaticcraft:pressure_chamber_wall[wall_state=none]
-setblock 4 66 241 pneumaticcraft:pressure_chamber_wall[wall_state=none]
-setblock 4 66 242 pneumaticcraft:pressure_chamber_wall[wall_state=none]
-setblock 5 64 241 pneumaticcraft:pressure_chamber_wall[wall_state=none]
-setblock 5 64 242 pneumaticcraft:pressure_chamber_glass
-setblock 5 64 243 pneumaticcraft:pressure_chamber_wall[wall_state=none]
-setblock 5 65 241 pneumaticcraft:pressure_chamber_glass
-setblock 5 65 243 pneumaticcraft:pressure_chamber_glass
-setblock 5 66 241 pneumaticcraft:pressure_chamber_wall[wall_state=none]
-setblock 5 66 242 pneumaticcraft:pressure_chamber_glass
-setblock 5 66 243 pneumaticcraft:pressure_chamber_wall[wall_state=none]
-setblock 6 64 241 pneumaticcraft:pressure_chamber_wall[wall_state=none]
-setblock 6 64 242 pneumaticcraft:pressure_chamber_wall[wall_state=none]
-setblock 6 64 243 pneumaticcraft:pressure_chamber_wall[wall_state=none]
-setblock 6 65 241 pneumaticcraft:pressure_chamber_wall[wall_state=none]
-setblock 6 65 242 pneumaticcraft:pressure_chamber_valve[facing=east,formed=false]
-setblock 6 65 243 pneumaticcraft:pressure_chamber_wall[wall_state=none]
-setblock 6 66 241 pneumaticcraft:pressure_chamber_wall[wall_state=none]
-setblock 6 66 242 pneumaticcraft:pressure_chamber_wall[wall_state=none]
-setblock 6 66 243 pneumaticcraft:pressure_chamber_wall[wall_state=none]
-kw testworld use 4 65 243 up pneumaticcraft:pressure_chamber_wall
-execute if block 6 65 242 pneumaticcraft:pressure_chamber_valve[formed=true]
+# 060 immersive/tank, silo, shelf
+#area 142 158 181 187
+fill 142 64 158 176 94 187 minecraft:air
+fill 177 64 158 181 94 187 minecraft:air
+fill 142 60 158 181 62 187 minecraft:stone
+fill 142 63 158 181 63 187 minecraft:light_gray_concrete
+fill 146 64 164 181 82 164 minecraft:light_gray_concrete
+fill 146 64 164 146 82 181 minecraft:light_gray_concrete
+setblock 147 64 180 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "060.1"}','{"text": "immersive"}','{"text": "tank"}','{"text": ""}']}}
+setblock 148 64 180 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "the formed"}','{"text": "structures"}','{"text": ""}','{"text": ""}']}}
+fill 156 64 164 156 82 181 minecraft:light_gray_concrete
+place template immersiveengineering:multiblocks/sheetmetal_tank 150 64 167 none
+kw testworld use 151 65 169 south immersiveengineering:hammer
+execute unless block 151 65 169 immersiveengineering:sheetmetal_iron
+setblock 157 64 180 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "060.2"}','{"text": "immersive"}','{"text": "silo"}','{"text": ""}']}}
+setblock 158 64 180 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Form ein"}','{"text": "Elementsilo"}','{"text": ""}','{"text": ""}']}}
+fill 166 64 164 166 82 181 minecraft:light_gray_concrete
+place template immersiveengineering:multiblocks/silo 160 64 167 none
+kw testworld use 161 65 169 south immersiveengineering:hammer
+execute unless block 161 65 169 immersiveengineering:sheetmetal_iron
+setblock 167 64 180 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "060.3"}','{"text": "immersive"}','{"text": "shelf"}','{"text": ""}']}}
+setblock 168 64 180 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Form ein"}','{"text": "Kistenregal"}','{"text": ""}','{"text": ""}']}}
+fill 176 64 164 176 82 181 minecraft:light_gray_concrete
+place template immersiveengineering:multiblocks/shelf 169 64 167 none
+kw testworld use 170 65 168 south immersiveengineering:hammer
+execute unless block 170 65 168 immersiveengineering:steel_catwalk

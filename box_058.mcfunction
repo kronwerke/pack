@@ -1,20 +1,23 @@
-# 058 powah/orb, reactor
-#area -4 193 25 218
-fill -4 64 193 25 93 218 minecraft:air
-fill -4 60 193 25 62 218 minecraft:stone
-fill -4 63 193 25 63 218 minecraft:light_gray_concrete
-fill 0 64 199 25 81 199 minecraft:light_gray_concrete
-fill 0 64 199 0 81 212 minecraft:light_gray_concrete
-setblock 1 64 211 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "058.1"}','{"text": "powah"}','{"text": "orb"}','{"text": ""}']}}
-setblock 2 64 211 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Bau die"}','{"text": "Energizing Orb"}','{"text": ""}','{"text": ""}']}}
-fill 10 64 199 10 81 212 minecraft:light_gray_concrete
-setblock 5 64 204 powah:energizing_orb[facing=down]
-setblock 3 64 204 powah:energizing_rod_starter[facing=down]
-setblock 7 64 204 powah:energizing_rod_starter[facing=down]
-setblock 5 64 202 powah:energizing_rod_starter[facing=down]
-setblock 11 64 211 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "058.2"}','{"text": "powah"}','{"text": "reactor"}','{"text": ""}']}}
-setblock 12 64 211 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Bau einen"}','{"text": "Reaktor"}','{"text": ""}','{"text": ""}']}}
-fill 20 64 199 20 81 212 minecraft:light_gray_concrete
-kw testworld use 15 63 204 up powah:reactor_starter
-execute unless block 15 64 204 minecraft:air
-execute unless block 16 67 205 minecraft:air
+# 058 immersive/dynamo, windmill
+#area 66 158 107 185
+fill 66 64 158 95 101 185 minecraft:air
+fill 96 64 158 107 101 185 minecraft:air
+fill 66 60 158 107 62 185 minecraft:stone
+fill 66 63 158 107 63 185 minecraft:light_gray_concrete
+fill 70 64 164 107 89 164 minecraft:light_gray_concrete
+fill 70 64 164 70 89 179 minecraft:light_gray_concrete
+setblock 71 64 178 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "058.1"}','{"text": "immersive"}','{"text": "dynamo"}','{"text": ""}']}}
+setblock 72 64 178 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "dynamo with"}','{"text": "windmill, a"}','{"text": "windmill on a"}','{"text": "tower, three"}']}}
+setblock 73 64 178 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "water wheels on"}','{"text": "one shaft"}','{"text": ""}','{"text": ""}']}}
+fill 86 64 164 86 89 179 minecraft:light_gray_concrete
+fill 78 64 168 78 70 168 immersiveengineering:treated_wood_horizontal
+setblock 78 71 168 immersiveengineering:dynamo[facing=south]
+kw testworld use 78 71 168 south immersiveengineering:windmill
+execute unless block 78 71 169 minecraft:air
+setblock 87 64 178 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "058.2"}','{"text": "immersive"}','{"text": "windmill"}','{"text": ""}']}}
+setblock 88 64 178 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Setz eine"}','{"text": "Windmühle an"}','{"text": "den Dynamo"}','{"text": ""}']}}
+fill 102 64 164 102 89 179 minecraft:light_gray_concrete
+fill 94 64 168 94 70 168 immersiveengineering:treated_wood_horizontal
+setblock 94 71 168 immersiveengineering:dynamo[facing=south]
+kw testworld use 94 71 168 south immersiveengineering:windmill
+execute unless block 94 71 169 minecraft:air

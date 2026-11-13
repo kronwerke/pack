@@ -9,18 +9,37 @@ setblock 1 64 39 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": 
 setblock 2 64 39 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "four water"}','{"text": "wheels in a row"}','{"text": "with water over"}','{"text": "the paddles"}']}}
 setblock 3 64 39 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "from above"}','{"text": ""}','{"text": ""}','{"text": ""}']}}
 fill 11 64 27 11 79 40 minecraft:light_gray_concrete
-setblock 4 65 32 create:water_wheel[facing=east]
+setblock 4 63 29 minecraft:water
+setblock 4 63 30 minecraft:air
 setblock 4 63 31 minecraft:air
-setblock 5 65 32 create:water_wheel[facing=east]
+setblock 4 63 32 minecraft:air
+setblock 4 63 33 minecraft:air
+setblock 4 63 34 minecraft:air
+setblock 4 63 35 minecraft:air
+setblock 4 64 32 create:water_wheel[facing=east]
+setblock 5 63 29 minecraft:water
+setblock 5 63 30 minecraft:air
 setblock 5 63 31 minecraft:air
-setblock 6 65 32 create:water_wheel[facing=east]
+setblock 5 63 32 minecraft:air
+setblock 5 63 33 minecraft:air
+setblock 5 63 34 minecraft:air
+setblock 5 63 35 minecraft:air
+setblock 5 64 32 create:water_wheel[facing=east]
+setblock 6 63 29 minecraft:water
+setblock 6 63 30 minecraft:air
 setblock 6 63 31 minecraft:air
-setblock 7 65 32 create:water_wheel[facing=east]
+setblock 6 63 32 minecraft:air
+setblock 6 63 33 minecraft:air
+setblock 6 63 34 minecraft:air
+setblock 6 63 35 minecraft:air
+setblock 6 64 32 create:water_wheel[facing=east]
+setblock 7 63 29 minecraft:water
+setblock 7 63 30 minecraft:air
 setblock 7 63 31 minecraft:air
-setblock 3 64 32 create:andesite_casing
-setblock 3 65 32 create:andesite_encased_shaft[axis=x]
-setblock 8 64 32 create:andesite_casing
-setblock 8 65 32 create:andesite_encased_shaft[axis=x]
-fill 3 66 30 8 66 31 minecraft:spruce_planks
-fill 4 66 32 7 66 32 minecraft:spruce_trapdoor[facing=south,half=bottom,open=true]
-fill 4 66 31 7 66 31 minecraft:water
+setblock 7 63 32 minecraft:air
+setblock 7 63 33 minecraft:air
+setblock 7 63 34 minecraft:air
+setblock 7 63 35 minecraft:air
+setblock 7 64 32 create:water_wheel[facing=east]
+setblock 3 64 32 create:andesite_encased_shaft[axis=x]
+setblock 8 64 32 create:andesite_encased_shaft[axis=x]

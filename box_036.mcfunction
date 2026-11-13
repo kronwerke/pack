@@ -1,20 +1,13 @@
-# 036 gaia/arena
-#area 118 86 143 117
-fill 118 64 86 143 91 117 minecraft:air
-fill 118 60 86 143 62 117 minecraft:stone
-fill 118 63 86 143 63 117 minecraft:light_gray_concrete
-fill 122 64 92 143 79 92 minecraft:light_gray_concrete
-fill 122 64 92 122 79 111 minecraft:light_gray_concrete
-setblock 123 64 110 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "036"}','{"text": "gaia"}','{"text": "arena"}','{"text": ""}']}}
-setblock 124 64 110 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "beacon with"}','{"text": "four pylons"}','{"text": "from above"}','{"text": ""}']}}
-fill 138 64 92 138 79 111 minecraft:light_gray_concrete
-fill 129 63 99 131 63 101 minecraft:iron_block
-setblock 130 64 100 minecraft:beacon
-setblock 126 64 96 minecraft:quartz_block
-setblock 126 65 96 botania:gaia_pylon
-setblock 126 64 104 minecraft:quartz_block
-setblock 126 65 104 botania:gaia_pylon
-setblock 134 64 96 minecraft:quartz_block
-setblock 134 65 96 botania:gaia_pylon
-setblock 134 64 104 minecraft:quartz_block
-setblock 134 65 104 botania:gaia_pylon
+# 036 botania_runes/mana_pearl
+#area 75 86 94 111
+fill 75 64 86 94 91 111 minecraft:air
+fill 75 60 86 94 62 111 minecraft:stone
+fill 75 63 86 94 63 111 minecraft:light_gray_concrete
+fill 79 64 92 94 79 92 minecraft:light_gray_concrete
+fill 79 64 92 79 79 105 minecraft:light_gray_concrete
+setblock 80 64 104 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "036"}','{"text": "botania_runes"}','{"text": "mana_pearl"}','{"text": ""}']}}
+setblock 81 64 104 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "a pool on a"}','{"text": "brass casing"}','{"text": "with a pearl in"}','{"text": "it"}']}}
+fill 89 64 92 89 79 105 minecraft:light_gray_concrete
+setblock 84 64 97 create:brass_casing
+setblock 84 65 97 botania:mana_pool{mana:1000000}
+summon item 84.5 66 97.5 {Item:{id:"minecraft:ender_pearl",count:1},PickupDelay:32767,Age:-32768,Tags:["kw_shot"]}

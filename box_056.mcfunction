@@ -1,31 +1,20 @@
-# 056 immersive/list_mb
-#area 177 158 205 186
-fill 177 64 158 205 95 186 minecraft:air
-fill 177 60 158 205 62 186 minecraft:stone
-fill 177 63 158 205 63 186 minecraft:light_gray_concrete
-fill 181 64 164 205 83 164 minecraft:light_gray_concrete
-fill 181 64 164 181 83 180 minecraft:light_gray_concrete
-setblock 182 64 179 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "056"}','{"text": "immersive"}','{"text": "list_mb"}','{"text": ""}']}}
-setblock 183 64 179 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "all seven stage"}','{"text": "2 structures"}','{"text": "side by side"}','{"text": ""}']}}
-fill 200 64 164 200 83 180 minecraft:light_gray_concrete
-place template immersiveengineering:multiblocks/sheetmetal_tank 183 64 166 none
-kw testworld use 184 65 168 south immersiveengineering:hammer
-execute unless block 184 65 168 immersiveengineering:sheetmetal_iron
-place template immersiveengineering:multiblocks/silo 187 64 166 none
-kw testworld use 188 65 168 south immersiveengineering:hammer
-execute unless block 188 65 168 immersiveengineering:sheetmetal_iron
-place template immersiveengineering:multiblocks/improved_blast_furnace 191 64 166 none
-kw testworld use 192 65 168 south immersiveengineering:hammer
-execute unless block 192 65 168 immersiveengineering:blastbrick_reinforced
-place template immersiveengineering:multiblocks/shelf 195 64 166 none
-kw testworld use 196 65 167 south immersiveengineering:hammer
-execute unless block 196 65 167 immersiveengineering:steel_catwalk
-place template immersiveengineering:multiblocks/coke_oven 185 64 172 none
-kw testworld use 186 65 174 south immersiveengineering:hammer
-execute unless block 186 65 174 immersiveengineering:cokebrick
-place template immersiveengineering:multiblocks/blast_furnace 190 64 172 none
-kw testworld use 191 65 174 south immersiveengineering:hammer
-execute unless block 191 65 174 immersiveengineering:blastbrick
-place template immersiveengineering:multiblocks/alloy_smelter 195 64 172 none
-kw testworld use 196 65 173 south immersiveengineering:hammer
-execute unless block 196 65 173 immersiveengineering:alloybrick
+# 056 immersive/blast_furnace, improved_form
+#area 26 158 55 184
+fill 26 64 158 55 91 184 minecraft:air
+fill 26 60 158 55 62 184 minecraft:stone
+fill 26 63 158 55 63 184 minecraft:light_gray_concrete
+fill 30 64 164 55 79 164 minecraft:light_gray_concrete
+fill 30 64 164 30 79 178 minecraft:light_gray_concrete
+setblock 31 64 177 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "056.1"}','{"text": "immersive"}','{"text": "blast_furnace"}','{"text": ""}']}}
+setblock 32 64 177 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "crude blast"}','{"text": "furnace GUI,"}','{"text": "improved"}','{"text": "furnace with"}']}}
+setblock 33 64 177 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "hopper and"}','{"text": "preheaters"}','{"text": ""}','{"text": ""}']}}
+fill 40 64 164 40 79 178 minecraft:light_gray_concrete
+place template immersiveengineering:multiblocks/blast_furnace 34 64 167 none
+kw testworld use 35 65 169 south immersiveengineering:hammer
+execute unless block 35 65 169 immersiveengineering:blastbrick
+setblock 41 64 177 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "056.2"}','{"text": "immersive"}','{"text": "improved_form"}','{"text": ""}']}}
+setblock 42 64 177 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Form einen"}','{"text": "Verbesserten"}','{"text": "Hochofen"}','{"text": ""}']}}
+fill 50 64 164 50 79 178 minecraft:light_gray_concrete
+place template immersiveengineering:multiblocks/improved_blast_furnace 44 64 167 none
+kw testworld use 45 65 169 south immersiveengineering:hammer
+execute unless block 45 65 169 immersiveengineering:blastbrick_reinforced

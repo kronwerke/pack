@@ -1,19 +1,22 @@
-# 066 draconic/injectors
-#area -4 269 17 296
-fill -4 64 269 17 91 296 minecraft:air
-fill -4 60 269 17 62 296 minecraft:stone
-fill -4 63 269 17 63 296 minecraft:light_gray_concrete
-fill 0 64 275 17 79 275 minecraft:light_gray_concrete
-fill 0 64 275 0 79 290 minecraft:light_gray_concrete
-setblock 1 64 289 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "066"}','{"text": "draconic"}','{"text": "injectors"}','{"text": ""}']}}
-setblock 2 64 289 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Stell acht"}','{"text": "Draconium-Injektoren"}','{"text": "auf"}','{"text": ""}']}}
-fill 12 64 275 12 79 290 minecraft:light_gray_concrete
-setblock 6 64 281 draconicevolution:crafting_core
-setblock 3 64 280 draconicevolution:basic_crafting_injector[facing=east]
-setblock 5 64 278 draconicevolution:basic_crafting_injector[facing=south]
-setblock 9 64 280 draconicevolution:basic_crafting_injector[facing=west]
-setblock 5 64 284 draconicevolution:basic_crafting_injector[facing=north]
-setblock 3 64 282 draconicevolution:basic_crafting_injector[facing=east]
-setblock 7 64 278 draconicevolution:basic_crafting_injector[facing=south]
-setblock 9 64 282 draconicevolution:basic_crafting_injector[facing=west]
-setblock 7 64 284 draconicevolution:basic_crafting_injector[facing=north]
+# 066 nether/welcome
+#area -4 250 14 275
+fill -4 64 250 14 91 275 minecraft:air
+fill -4 60 250 14 62 275 minecraft:stone
+fill -4 63 250 14 63 275 minecraft:light_gray_concrete
+fill 0 64 256 14 79 256 minecraft:light_gray_concrete
+fill 0 64 256 0 79 269 minecraft:light_gray_concrete
+setblock 1 64 268 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "066"}','{"text": "nether"}','{"text": "welcome"}','{"text": ""}']}}
+setblock 2 64 268 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Betritt den"}','{"text": "Nether"}','{"text": ""}','{"text": ""}']}}
+fill 9 64 256 9 79 269 minecraft:light_gray_concrete
+setblock 3 65 261 minecraft:obsidian
+setblock 3 66 261 minecraft:obsidian
+setblock 3 67 261 minecraft:obsidian
+setblock 4 64 261 minecraft:obsidian
+setblock 4 68 261 minecraft:obsidian
+setblock 5 64 261 minecraft:obsidian
+setblock 5 68 261 minecraft:obsidian
+setblock 6 65 261 minecraft:obsidian
+setblock 6 66 261 minecraft:obsidian
+setblock 6 67 261 minecraft:obsidian
+fill 4 65 261 5 67 261 minecraft:nether_portal[axis=x]
+execute if block 4 66 261 minecraft:nether_portal

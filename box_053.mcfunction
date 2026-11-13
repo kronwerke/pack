@@ -1,23 +1,29 @@
-# 053 immersive/dynamo, windmill
-#area 66 158 107 185
-fill 66 64 158 95 101 185 minecraft:air
-fill 96 64 158 107 101 185 minecraft:air
-fill 66 60 158 107 62 185 minecraft:stone
-fill 66 63 158 107 63 185 minecraft:light_gray_concrete
-fill 70 64 164 107 89 164 minecraft:light_gray_concrete
-fill 70 64 164 70 89 179 minecraft:light_gray_concrete
-setblock 71 64 178 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "053.1"}','{"text": "immersive"}','{"text": "dynamo"}','{"text": ""}']}}
-setblock 72 64 178 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "dynamo with"}','{"text": "windmill, a"}','{"text": "windmill on a"}','{"text": "tower, three"}']}}
-setblock 73 64 178 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "water wheels on"}','{"text": "one shaft"}','{"text": ""}','{"text": ""}']}}
-fill 86 64 164 86 89 179 minecraft:light_gray_concrete
-fill 78 64 168 78 70 168 immersiveengineering:treated_wood_horizontal
-setblock 78 71 168 immersiveengineering:dynamo[facing=south]
-kw testworld use 78 71 168 south immersiveengineering:windmill
-execute unless block 78 71 169 minecraft:air
-setblock 87 64 178 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "053.2"}','{"text": "immersive"}','{"text": "windmill"}','{"text": ""}']}}
-setblock 88 64 178 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Setz eine"}','{"text": "Windmühle an"}','{"text": "den Dynamo"}','{"text": ""}']}}
-fill 102 64 164 102 89 179 minecraft:light_gray_concrete
-fill 94 64 168 94 70 168 immersiveengineering:treated_wood_horizontal
-setblock 94 71 168 immersiveengineering:dynamo[facing=south]
-kw testworld use 94 71 168 south immersiveengineering:windmill
-execute unless block 94 71 169 minecraft:air
+# 053 hexerei/herbs
+#area 187 123 206 148
+fill 187 64 123 206 91 148 minecraft:air
+fill 187 60 123 206 62 148 minecraft:stone
+fill 187 63 123 206 63 148 minecraft:light_gray_concrete
+fill 191 64 129 206 79 129 minecraft:light_gray_concrete
+fill 191 64 129 191 79 142 minecraft:light_gray_concrete
+setblock 192 64 141 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "053"}','{"text": "hexerei"}','{"text": "herbs"}','{"text": ""}']}}
+setblock 193 64 141 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "herb garden"}','{"text": "with all four"}','{"text": "plants grown"}','{"text": ""}']}}
+fill 201 64 129 201 79 142 minecraft:light_gray_concrete
+fill 194 63 133 198 63 135 minecraft:grass_block
+setblock 194 64 133 hexerei:mandrake_plant[age=3]
+setblock 195 64 133 hexerei:belladonna_plant[age=3]
+setblock 197 64 133 hexerei:mugwort_bush[half=lower,age=3]
+setblock 197 65 133 hexerei:mugwort_bush[half=upper,age=3]
+setblock 198 64 133 hexerei:yellow_dock_bush[half=lower,age=3]
+setblock 198 65 133 hexerei:yellow_dock_bush[half=upper,age=3]
+setblock 194 64 134 hexerei:mandrake_plant[age=3]
+setblock 195 64 134 hexerei:belladonna_plant[age=3]
+setblock 197 64 134 hexerei:mugwort_bush[half=lower,age=3]
+setblock 197 65 134 hexerei:mugwort_bush[half=upper,age=3]
+setblock 198 64 134 hexerei:yellow_dock_bush[half=lower,age=3]
+setblock 198 65 134 hexerei:yellow_dock_bush[half=upper,age=3]
+setblock 194 64 135 hexerei:mandrake_plant[age=3]
+setblock 195 64 135 hexerei:belladonna_plant[age=3]
+setblock 197 64 135 hexerei:mugwort_bush[half=lower,age=3]
+setblock 197 65 135 hexerei:mugwort_bush[half=upper,age=3]
+setblock 198 64 135 hexerei:yellow_dock_bush[half=lower,age=3]
+setblock 198 65 135 hexerei:yellow_dock_bush[half=upper,age=3]

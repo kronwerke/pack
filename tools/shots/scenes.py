@@ -2748,7 +2748,7 @@ def _(b):
         b.b(x, 0, 7, "ae2:drive[facing=south,spin=0]")
         b.use(x, 0, 4, "north", "ae2:fluix_smart_cable")
         b.b(x, 0, 2, "ae2:drive[facing=south,spin=0]")
-    b.focus(2, 0, 2, 7, 1, 7)
+    b.focus(1, 0, 1, 8, 2, 8)      # a block more on every side: the front drives were cut at the picture's edge
 
 
 @scene("create/frogport", w=11, h=14)

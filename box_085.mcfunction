@@ -1,22 +1,23 @@
-# 085 nether/welcome
-#area -4 250 14 275
-fill -4 64 250 14 91 275 minecraft:air
-fill -4 60 250 14 62 275 minecraft:stone
-fill -4 63 250 14 63 275 minecraft:light_gray_concrete
-fill 0 64 256 14 79 256 minecraft:light_gray_concrete
-fill 0 64 256 0 79 269 minecraft:light_gray_concrete
-setblock 1 64 268 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "085"}','{"text": "nether"}','{"text": "welcome"}','{"text": ""}']}}
-setblock 2 64 268 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Betritt den"}','{"text": "Nether"}','{"text": ""}','{"text": ""}']}}
-fill 9 64 256 9 79 269 minecraft:light_gray_concrete
-setblock 3 65 261 minecraft:obsidian
-setblock 3 66 261 minecraft:obsidian
-setblock 3 67 261 minecraft:obsidian
-setblock 4 64 261 minecraft:obsidian
-setblock 4 68 261 minecraft:obsidian
-setblock 5 64 261 minecraft:obsidian
-setblock 5 68 261 minecraft:obsidian
-setblock 6 65 261 minecraft:obsidian
-setblock 6 66 261 minecraft:obsidian
-setblock 6 67 261 minecraft:obsidian
-fill 4 65 261 5 67 261 minecraft:nether_portal[axis=x]
-execute if block 4 66 261 minecraft:nether_portal
+# 085 the_end/arrival
+#area 10 250 29 275
+fill 10 64 250 29 91 275 minecraft:air
+fill 10 60 250 29 62 275 minecraft:stone
+fill 10 63 250 29 63 275 minecraft:light_gray_concrete
+fill 14 64 256 29 79 256 minecraft:light_gray_concrete
+fill 14 64 256 14 79 269 minecraft:light_gray_concrete
+setblock 15 64 268 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "085"}','{"text": "the_end"}','{"text": "arrival"}','{"text": ""}']}}
+setblock 16 64 268 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Betritt das End"}','{"text": ""}','{"text": ""}','{"text": ""}']}}
+fill 24 64 256 24 79 269 minecraft:light_gray_concrete
+setblock 18 64 259 minecraft:end_portal_frame[eye=true,facing=south]
+setblock 18 64 263 minecraft:end_portal_frame[eye=true,facing=north]
+setblock 17 64 260 minecraft:end_portal_frame[eye=true,facing=east]
+setblock 21 64 260 minecraft:end_portal_frame[eye=true,facing=west]
+setblock 19 64 259 minecraft:end_portal_frame[eye=true,facing=south]
+setblock 19 64 263 minecraft:end_portal_frame[eye=true,facing=north]
+setblock 17 64 261 minecraft:end_portal_frame[eye=true,facing=east]
+setblock 21 64 261 minecraft:end_portal_frame[eye=true,facing=west]
+setblock 20 64 259 minecraft:end_portal_frame[eye=true,facing=south]
+setblock 20 64 263 minecraft:end_portal_frame[eye=true,facing=north]
+setblock 17 64 262 minecraft:end_portal_frame[eye=true,facing=east]
+setblock 21 64 262 minecraft:end_portal_frame[eye=true,facing=west]
+fill 18 64 260 20 64 262 minecraft:end_portal

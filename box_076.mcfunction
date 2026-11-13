@@ -1,19 +1,23 @@
-# 076 immersive_heavy/hv
-#area 368 158 391 183
-fill 368 64 158 391 95 183 minecraft:air
-fill 368 60 158 391 62 183 minecraft:stone
-fill 368 63 158 391 63 183 minecraft:light_gray_concrete
-fill 372 64 164 391 83 164 minecraft:light_gray_concrete
-fill 372 64 164 372 83 177 minecraft:light_gray_concrete
-setblock 373 64 176 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "076"}','{"text": "immersive_heavy"}','{"text": "hv"}','{"text": ""}']}}
-setblock 374 64 176 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "an HV line on"}','{"text": "steel posts,"}','{"text": "the bottling"}','{"text": "machine with"}']}}
-setblock 375 64 176 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "resin, a core"}','{"text": "sample on the"}','{"text": "ground"}','{"text": ""}']}}
-fill 386 64 164 386 83 177 minecraft:light_gray_concrete
-kw testworld use 375 63 169 up immersiveengineering:steel_post
-execute unless block 375 67 169 minecraft:air
-kw testworld use 375 67 169 up immersiveengineering:connector_hv
-kw testworld use 383 63 169 up immersiveengineering:steel_post
-execute unless block 383 67 169 minecraft:air
-kw testworld use 383 67 169 up immersiveengineering:connector_hv
-kw testworld use 375 68 169 south immersiveengineering:wirecoil_steel
-kw testworld use 383 68 169 south immersiveengineering:wirecoil_steel
+# 076 powah/orb, thermo, reactor
+#area -4 193 35 218
+fill -4 64 193 35 93 218 minecraft:air
+fill -4 60 193 35 62 218 minecraft:stone
+fill -4 63 193 35 63 218 minecraft:light_gray_concrete
+fill 0 64 199 35 81 199 minecraft:light_gray_concrete
+fill 0 64 199 0 81 212 minecraft:light_gray_concrete
+setblock 1 64 211 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "076.1"}','{"text": "powah"}','{"text": "orb"}','{"text": ""}']}}
+setblock 2 64 211 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Bau die"}','{"text": "Energizing Orb"}','{"text": ""}','{"text": ""}']}}
+fill 10 64 199 10 81 212 minecraft:light_gray_concrete
+setblock 5 64 204 powah:energizing_orb[facing=down]
+setblock 3 64 204 powah:energizing_rod_starter[facing=down]
+setblock 7 64 204 powah:energizing_rod_starter[facing=down]
+setblock 5 64 202 powah:energizing_rod_starter[facing=down]
+setblock 11 64 211 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "076.2"}','{"text": "powah"}','{"text": "thermo"}','{"text": ""}']}}
+setblock 12 64 211 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Stell einen"}','{"text": "Thermo"}','{"text": "Generator auf"}','{"text": ""}']}}
+fill 20 64 199 20 81 212 minecraft:light_gray_concrete
+setblock 15 64 204 minecraft:magma_block
+setblock 15 65 204 powah:thermo_generator_starter
+setblock 21 64 211 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "076.3"}','{"text": "powah"}','{"text": "reactor"}','{"text": ""}']}}
+setblock 22 64 211 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Bau einen"}','{"text": "Reaktor"}','{"text": ""}','{"text": ""}']}}
+fill 30 64 199 30 81 212 minecraft:light_gray_concrete
+setblock 25 64 204 powah:reactor_starter[core=true]

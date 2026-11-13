@@ -1,58 +1,32 @@
-# 080 list_transport/belt, create_tank, vault, drawers
-#area 59 212 109 237
-fill 59 64 212 103 91 237 minecraft:air
-fill 104 64 212 109 91 237 minecraft:air
-fill 59 60 212 109 62 237 minecraft:stone
-fill 59 63 212 109 63 237 minecraft:light_gray_concrete
-fill 63 64 218 109 79 218 minecraft:light_gray_concrete
-fill 63 64 218 63 79 231 minecraft:light_gray_concrete
-setblock 64 64 230 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "080.1"}','{"text": "list_transport"}','{"text": "belt"}','{"text": ""}']}}
-setblock 65 64 230 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Spann ein"}','{"text": "Förderband"}','{"text": ""}','{"text": ""}']}}
-fill 73 64 218 73 79 231 minecraft:light_gray_concrete
-setblock 68 64 221 create:shaft[axis=x]
-setblock 68 64 225 create:shaft[axis=x]
-kw testworld use 68 64 221 up create:belt_connector
-kw testworld use 68 64 225 up create:belt_connector
-execute unless block 68 64 223 minecraft:air
-summon item 68.5 65 222.5 {Item:{id:"minecraft:iron_ingot",count:1},PickupDelay:32767,Age:-32768,Tags:["kw_shot"]}
-summon item 68.5 65 223.5 {Item:{id:"minecraft:iron_ingot",count:1},PickupDelay:32767,Age:-32768,Tags:["kw_shot"]}
-summon item 68.5 65 224.5 {Item:{id:"minecraft:iron_ingot",count:1},PickupDelay:32767,Age:-32768,Tags:["kw_shot"]}
-setblock 74 64 230 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "080.2"}','{"text": "list_transport"}','{"text": "create_tank"}','{"text": ""}']}}
-setblock 75 64 230 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Bau einen"}','{"text": "Flüssigkeitstank"}','{"text": ""}','{"text": ""}']}}
-fill 83 64 218 83 79 231 minecraft:light_gray_concrete
-fill 77 64 222 79 67 224 create:fluid_tank[bottom=false,shape=window,top=false]
-setblock 84 64 230 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "080.3"}','{"text": "list_transport"}','{"text": "vault"}','{"text": ""}']}}
-setblock 85 64 230 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Bau einen"}','{"text": "Tresor"}','{"text": ""}','{"text": ""}']}}
-fill 94 64 218 94 79 231 minecraft:light_gray_concrete
-fill 86 64 222 91 66 224 create:item_vault[axis=x,large=false]
-setblock 95 64 230 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "080.4"}','{"text": "list_transport"}','{"text": "drawers"}','{"text": ""}']}}
-setblock 96 64 230 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Bau Schubladen"}','{"text": ""}','{"text": ""}','{"text": ""}']}}
-fill 104 64 218 104 79 231 minecraft:light_gray_concrete
-fill 98 64 222 100 66 222 minecraft:oak_planks
-kw testworld use 98 64 222 south functionalstorage:oak_4
-execute unless block 98 64 223 minecraft:air
-kw testworld use 98 64 223 south minecraft:iron_ingot
-kw testworld use 99 64 222 south functionalstorage:oak_4
-execute unless block 99 64 223 minecraft:air
-kw testworld use 99 64 223 south minecraft:copper_ingot
-kw testworld use 100 64 222 south functionalstorage:oak_4
-execute unless block 100 64 223 minecraft:air
-kw testworld use 100 64 223 south minecraft:gold_ingot
-kw testworld use 98 65 222 south functionalstorage:oak_4
-execute unless block 98 65 223 minecraft:air
-kw testworld use 98 65 223 south minecraft:redstone
-kw testworld use 99 65 222 south functionalstorage:oak_4
-execute unless block 99 65 223 minecraft:air
-kw testworld use 99 65 223 south minecraft:coal
-kw testworld use 100 65 222 south functionalstorage:oak_4
-execute unless block 100 65 223 minecraft:air
-kw testworld use 100 65 223 south minecraft:lapis_lazuli
-kw testworld use 98 66 222 south functionalstorage:oak_4
-execute unless block 98 66 223 minecraft:air
-kw testworld use 98 66 223 south minecraft:diamond
-kw testworld use 99 66 222 south functionalstorage:oak_4
-execute unless block 99 66 223 minecraft:air
-kw testworld use 99 66 223 south minecraft:quartz
-kw testworld use 100 66 222 south functionalstorage:oak_4
-execute unless block 100 66 223 minecraft:air
-kw testworld use 100 66 223 south minecraft:bone
+# 080 list_power/steam_engine, ie_thermo, powah_reactor
+#area -4 231 36 256
+fill -4 64 231 36 93 256 minecraft:air
+fill -4 60 231 36 62 256 minecraft:stone
+fill -4 63 231 36 63 256 minecraft:light_gray_concrete
+fill 0 64 237 36 81 237 minecraft:light_gray_concrete
+fill 0 64 237 0 81 250 minecraft:light_gray_concrete
+setblock 1 64 249 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "080.1"}','{"text": "list_power"}','{"text": "steam_engine"}','{"text": ""}']}}
+setblock 2 64 249 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Heiz einen"}','{"text": "Dampfkessel an"}','{"text": ""}','{"text": ""}']}}
+fill 11 64 237 11 81 250 minecraft:light_gray_concrete
+setblock 4 64 241 create:blaze_burner[blaze=smouldering]
+kw testworld use 4 64 241 up create:creative_blaze_cake
+setblock 4 64 242 create:blaze_burner[blaze=smouldering]
+kw testworld use 4 64 242 up create:creative_blaze_cake
+setblock 5 64 241 create:blaze_burner[blaze=smouldering]
+kw testworld use 5 64 241 up create:creative_blaze_cake
+setblock 5 64 242 create:blaze_burner[blaze=smouldering]
+kw testworld use 5 64 242 up create:creative_blaze_cake
+fill 4 65 241 5 67 242 create:fluid_tank[bottom=false,shape=window,top=false]
+setblock 4 66 244 create:shaft[axis=x]
+setblock 4 66 243 create:steam_engine[face=wall,facing=south,waterlogged=false]
+setblock 12 64 249 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "080.2"}','{"text": "list_power"}','{"text": "ie_thermo"}','{"text": ""}']}}
+setblock 13 64 249 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Spann Lava"}','{"text": "gegen Wasser"}','{"text": ""}','{"text": ""}']}}
+fill 21 64 237 21 81 250 minecraft:light_gray_concrete
+setblock 15 64 242 minecraft:magma_block
+setblock 16 64 242 immersiveengineering:thermoelectric_generator
+setblock 17 64 242 minecraft:blue_ice
+kw testworld use 16 64 242 up immersiveengineering:connector_lv
+setblock 22 64 249 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "080.3"}','{"text": "list_power"}','{"text": "powah_reactor"}','{"text": ""}']}}
+setblock 23 64 249 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Zünde den"}','{"text": "Powah-Reaktor"}','{"text": ""}','{"text": ""}']}}
+fill 31 64 237 31 81 250 minecraft:light_gray_concrete
+setblock 26 64 242 powah:reactor_starter[core=true]

@@ -1,13 +1,175 @@
-# 058 mekanism_elite/mekasuit
-#area 244 95 263 120
-fill 244 64 95 263 91 120 minecraft:air
-fill 244 60 95 263 62 120 minecraft:stone
-fill 244 63 95 263 63 120 minecraft:light_gray_concrete
-fill 248 64 101 263 79 101 minecraft:light_gray_concrete
-fill 248 64 101 248 79 114 minecraft:light_gray_concrete
-setblock 249 64 113 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "058"}','{"text": "mekanism_elite"}','{"text": "mekasuit"}','{"text": ""}']}}
-setblock 250 64 113 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "full MekaSuit"}','{"text": "at the"}','{"text": "modification"}','{"text": "station"}']}}
-fill 258 64 101 258 79 114 minecraft:light_gray_concrete
-summon armor_stand 252.5 64 106.5 {ArmorItems:[{id:"mekanism:mekasuit_boots",count:1},{id:"mekanism:mekasuit_pants",count:1},{id:"mekanism:mekasuit_bodyarmor",count:1},{id:"mekanism:mekasuit_helmet",count:1}],ShowArms:1b,NoBasePlate:1b,Tags:["kw_shot"],Rotation:[180f,0f]}
-setblock 254 64 106 mekanism:modification_station[facing=south]
+# 058 mekanism_advanced/boiler
+#area 206 97 227 124
+fill 206 64 97 227 91 124 minecraft:air
+fill 206 60 97 227 62 124 minecraft:stone
+fill 206 63 97 227 63 124 minecraft:light_gray_concrete
+fill 210 64 103 227 79 103 minecraft:light_gray_concrete
+fill 210 64 103 210 79 118 minecraft:light_gray_concrete
+setblock 211 64 117 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "058"}','{"text": "mekanism_advanced"}','{"text": "boiler"}','{"text": ""}']}}
+setblock 212 64 117 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "boiler cutaway"}','{"text": "with heaters"}','{"text": "and conductors"}','{"text": ""}']}}
+fill 222 64 103 222 79 118 minecraft:light_gray_concrete
+setblock 214 64 107 mekanism:boiler_casing
+setblock 214 64 108 mekanism:boiler_casing
+setblock 214 64 109 mekanism:boiler_casing
+setblock 214 64 110 mekanism:boiler_casing
+setblock 214 64 111 mekanism:boiler_casing
+setblock 214 65 107 mekanism:boiler_casing
+setblock 214 65 108 mekanism:boiler_casing
+setblock 214 65 109 mekanism:boiler_casing
+setblock 214 65 110 mekanism:boiler_casing
+setblock 214 65 111 mekanism:boiler_casing
+setblock 214 66 107 mekanism:boiler_casing
+setblock 214 66 108 mekanism:boiler_casing
+setblock 214 66 109 mekanism:boiler_casing
+setblock 214 66 110 mekanism:boiler_casing
+setblock 214 66 111 mekanism:boiler_casing
+setblock 214 67 107 mekanism:boiler_casing
+setblock 214 67 108 mekanism:boiler_casing
+setblock 214 67 109 mekanism:boiler_casing
+setblock 214 67 110 mekanism:boiler_casing
+setblock 214 67 111 mekanism:boiler_casing
+setblock 214 68 107 mekanism:boiler_casing
+setblock 214 68 108 mekanism:boiler_casing
+setblock 214 68 109 mekanism:boiler_casing
+setblock 214 68 110 mekanism:boiler_casing
+setblock 214 68 111 mekanism:boiler_casing
+setblock 214 69 107 mekanism:boiler_casing
+setblock 214 69 108 mekanism:boiler_casing
+setblock 214 69 109 mekanism:boiler_casing
+setblock 214 69 110 mekanism:boiler_casing
+setblock 214 69 111 mekanism:boiler_casing
+setblock 214 70 107 mekanism:boiler_casing
+setblock 214 70 108 mekanism:boiler_casing
+setblock 214 70 109 mekanism:boiler_casing
+setblock 214 70 110 mekanism:boiler_casing
+setblock 214 70 111 mekanism:boiler_casing
+setblock 214 71 107 mekanism:boiler_casing
+setblock 214 71 108 mekanism:boiler_casing
+setblock 214 71 109 mekanism:boiler_casing
+setblock 214 71 110 mekanism:boiler_casing
+setblock 214 71 111 mekanism:boiler_casing
+setblock 215 64 107 mekanism:boiler_casing
+setblock 215 64 108 mekanism:boiler_casing
+setblock 215 64 109 mekanism:boiler_casing
+setblock 215 64 110 mekanism:boiler_casing
+setblock 215 64 111 mekanism:boiler_casing
+setblock 215 65 107 mekanism:boiler_casing
+setblock 215 65 111 mekanism:structural_glass
+setblock 215 66 107 mekanism:boiler_casing
+setblock 215 66 111 mekanism:structural_glass
+setblock 215 67 107 mekanism:boiler_casing
+setblock 215 67 111 mekanism:structural_glass
+setblock 215 68 107 mekanism:boiler_casing
+setblock 215 68 111 mekanism:structural_glass
+setblock 215 69 107 mekanism:boiler_casing
+setblock 215 69 111 mekanism:structural_glass
+setblock 215 70 107 mekanism:boiler_casing
+setblock 215 70 111 mekanism:structural_glass
+setblock 215 71 107 mekanism:boiler_casing
+setblock 215 71 108 mekanism:boiler_casing
+setblock 215 71 109 mekanism:boiler_casing
+setblock 215 71 110 mekanism:boiler_casing
+setblock 215 71 111 mekanism:boiler_casing
+setblock 216 64 107 mekanism:boiler_casing
+setblock 216 64 108 mekanism:boiler_casing
+setblock 216 64 109 mekanism:boiler_casing
+setblock 216 64 110 mekanism:boiler_casing
+setblock 216 64 111 mekanism:boiler_casing
+setblock 216 65 107 mekanism:boiler_casing
+setblock 216 65 111 mekanism:structural_glass
+setblock 216 66 107 mekanism:boiler_casing
+setblock 216 66 111 mekanism:structural_glass
+setblock 216 67 107 mekanism:boiler_casing
+setblock 216 67 111 mekanism:structural_glass
+setblock 216 68 107 mekanism:boiler_casing
+setblock 216 68 111 mekanism:structural_glass
+setblock 216 69 107 mekanism:boiler_casing
+setblock 216 69 111 mekanism:structural_glass
+setblock 216 70 107 mekanism:boiler_casing
+setblock 216 70 111 mekanism:structural_glass
+setblock 216 71 107 mekanism:boiler_casing
+setblock 216 71 108 mekanism:boiler_casing
+setblock 216 71 109 mekanism:boiler_casing
+setblock 216 71 110 mekanism:boiler_casing
+setblock 216 71 111 mekanism:boiler_casing
+setblock 217 64 107 mekanism:boiler_casing
+setblock 217 64 108 mekanism:boiler_casing
+setblock 217 64 109 mekanism:boiler_casing
+setblock 217 64 110 mekanism:boiler_casing
+setblock 217 64 111 mekanism:boiler_casing
+setblock 217 65 107 mekanism:boiler_casing
+setblock 217 65 111 mekanism:structural_glass
+setblock 217 66 107 mekanism:boiler_casing
+setblock 217 66 111 mekanism:structural_glass
+setblock 217 67 107 mekanism:boiler_casing
+setblock 217 67 111 mekanism:structural_glass
+setblock 217 68 107 mekanism:boiler_casing
+setblock 217 68 111 mekanism:structural_glass
+setblock 217 69 107 mekanism:boiler_casing
+setblock 217 69 111 mekanism:structural_glass
+setblock 217 70 107 mekanism:boiler_casing
+setblock 217 70 111 mekanism:structural_glass
+setblock 217 71 107 mekanism:boiler_casing
+setblock 217 71 108 mekanism:boiler_casing
+setblock 217 71 109 mekanism:boiler_casing
+setblock 217 71 110 mekanism:boiler_casing
+setblock 217 71 111 mekanism:boiler_casing
+setblock 218 64 107 mekanism:boiler_casing
+setblock 218 64 108 mekanism:boiler_casing
+setblock 218 64 109 mekanism:boiler_casing
+setblock 218 64 110 mekanism:boiler_casing
+setblock 218 64 111 mekanism:boiler_casing
+setblock 218 65 107 mekanism:boiler_casing
+setblock 218 65 108 mekanism:boiler_casing
+setblock 218 65 109 mekanism:boiler_casing
+setblock 218 65 110 mekanism:boiler_casing
+setblock 218 65 111 mekanism:boiler_casing
+setblock 218 66 107 mekanism:boiler_casing
+setblock 218 66 108 mekanism:boiler_casing
+setblock 218 66 109 mekanism:boiler_valve[mode=input]
+setblock 218 66 110 mekanism:boiler_casing
+setblock 218 66 111 mekanism:boiler_casing
+setblock 218 67 107 mekanism:boiler_casing
+setblock 218 67 108 mekanism:boiler_casing
+setblock 218 67 109 mekanism:boiler_casing
+setblock 218 67 110 mekanism:boiler_casing
+setblock 218 67 111 mekanism:boiler_casing
+setblock 218 68 107 mekanism:boiler_casing
+setblock 218 68 108 mekanism:boiler_casing
+setblock 218 68 109 mekanism:boiler_casing
+setblock 218 68 110 mekanism:boiler_casing
+setblock 218 68 111 mekanism:boiler_casing
+setblock 218 69 107 mekanism:boiler_casing
+setblock 218 69 108 mekanism:boiler_casing
+setblock 218 69 109 mekanism:boiler_casing
+setblock 218 69 110 mekanism:boiler_casing
+setblock 218 69 111 mekanism:boiler_casing
+setblock 218 70 107 mekanism:boiler_casing
+setblock 218 70 108 mekanism:boiler_casing
+setblock 218 70 109 mekanism:boiler_valve[mode=output_steam]
+setblock 218 70 110 mekanism:boiler_casing
+setblock 218 70 111 mekanism:boiler_casing
+setblock 218 71 107 mekanism:boiler_casing
+setblock 218 71 108 mekanism:boiler_casing
+setblock 218 71 109 mekanism:boiler_casing
+setblock 218 71 110 mekanism:boiler_casing
+setblock 218 71 111 mekanism:boiler_casing
+setblock 215 65 108 mekanism:superheating_element[active=false]
+setblock 215 68 108 mekanism:pressure_disperser
+setblock 215 65 109 mekanism:superheating_element[active=false]
+setblock 215 68 109 mekanism:pressure_disperser
+setblock 215 65 110 mekanism:superheating_element[active=false]
+setblock 215 68 110 mekanism:pressure_disperser
+setblock 216 65 108 mekanism:superheating_element[active=false]
+setblock 216 68 108 mekanism:pressure_disperser
+setblock 216 65 109 mekanism:superheating_element[active=false]
+setblock 216 68 109 mekanism:pressure_disperser
+setblock 216 65 110 mekanism:superheating_element[active=false]
+setblock 216 68 110 mekanism:pressure_disperser
+setblock 217 65 108 mekanism:superheating_element[active=false]
+setblock 217 68 108 mekanism:pressure_disperser
+setblock 217 65 109 mekanism:superheating_element[active=false]
+setblock 217 68 109 mekanism:pressure_disperser
+setblock 217 65 110 mekanism:superheating_element[active=false]
+setblock 217 68 110 mekanism:pressure_disperser
 execute as @e[type=minecraft:item,tag=!kw_shot] run kill @s

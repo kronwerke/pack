@@ -1,14 +1,13 @@
-# 104 occultism/foliot_crusher
-#area 30 182 49 207
-fill 30 64 182 49 91 207 minecraft:air
-fill 30 60 182 49 62 207 minecraft:stone
-fill 30 63 182 49 63 207 minecraft:light_gray_concrete
-fill 34 64 188 49 79 188 minecraft:light_gray_concrete
-fill 34 64 188 34 79 201 minecraft:light_gray_concrete
-setblock 35 64 200 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "104"}','{"text": "occultism"}','{"text": "foliot_crusher"}','{"text": ""}']}}
-setblock 36 64 200 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Foliot crusher"}','{"text": "next to a pile"}','{"text": "of dust"}','{"text": ""}']}}
-fill 44 64 188 44 79 201 minecraft:light_gray_concrete
-summon occultism:foliot 38.5 64 193.5 {NoAI:1b,PersistenceRequired:1b,Silent:1b,Tags:["kw_shot"],Rotation:[180f,0f]}
-summon item 40.5 64.2 193.5 {Item:{id:"minecraft:raw_iron",count:8},PickupDelay:32767,Age:-32768,Tags:["kw_shot"]}
-summon item 41.5 64.2 194.5 {Item:{id:"occultism:iron_dust",count:16},PickupDelay:32767,Age:-32768,Tags:["kw_shot"]}
+# 104 gaia/tiara
+#area 235 147 254 172
+fill 235 64 147 254 91 172 minecraft:air
+fill 235 60 147 254 62 172 minecraft:stone
+fill 235 63 147 254 63 172 minecraft:light_gray_concrete
+fill 239 64 153 254 79 153 minecraft:light_gray_concrete
+fill 239 64 153 239 79 166 minecraft:light_gray_concrete
+setblock 240 64 165 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "104"}','{"text": "gaia"}','{"text": "tiara"}','{"text": ""}']}}
+setblock 241 64 165 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "flying with the"}','{"text": "flight bar"}','{"text": "visible"}','{"text": ""}']}}
+fill 249 64 153 249 79 166 minecraft:light_gray_concrete
+setblock 244 64 158 minecraft:smooth_stone_slab
+summon item_display 244.5 65.4 158.5 {item:{id:"botania:flugel_tiara",count:1},item_display:"fixed",billboard:"vertical",transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[2.0f,2.0f,2.0f]},brightness:{sky:15,block:15},Tags:["kw_shot"]}
 execute as @e[type=minecraft:item,tag=!kw_shot] run kill @s

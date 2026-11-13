@@ -1,46 +1,34 @@
-# 014 create/water_wheel
-#area -4 42 16 67
-fill -4 64 42 16 91 67 minecraft:air
-fill -4 60 42 16 62 67 minecraft:stone
-fill -4 63 42 16 63 67 minecraft:light_gray_concrete
-fill 0 64 48 16 79 48 minecraft:light_gray_concrete
-fill 0 64 48 0 79 61 minecraft:light_gray_concrete
-setblock 1 64 60 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "014"}','{"text": "create"}','{"text": "water_wheel"}','{"text": ""}']}}
-setblock 2 64 60 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "four water"}','{"text": "wheels in a row"}','{"text": "with water over"}','{"text": "the paddles"}']}}
-setblock 3 64 60 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "from above"}','{"text": ""}','{"text": ""}','{"text": ""}']}}
-fill 11 64 48 11 79 61 minecraft:light_gray_concrete
-setblock 4 63 50 minecraft:water
-setblock 4 63 51 minecraft:air
-setblock 4 63 52 minecraft:air
-setblock 4 63 53 minecraft:air
-setblock 4 63 54 minecraft:air
-setblock 4 63 55 minecraft:air
-setblock 4 63 56 minecraft:air
-setblock 4 64 53 create:water_wheel[facing=east]
-setblock 5 63 50 minecraft:water
-setblock 5 63 51 minecraft:air
-setblock 5 63 52 minecraft:air
-setblock 5 63 53 minecraft:air
-setblock 5 63 54 minecraft:air
-setblock 5 63 55 minecraft:air
-setblock 5 63 56 minecraft:air
-setblock 5 64 53 create:water_wheel[facing=east]
-setblock 6 63 50 minecraft:water
-setblock 6 63 51 minecraft:air
-setblock 6 63 52 minecraft:air
-setblock 6 63 53 minecraft:air
-setblock 6 63 54 minecraft:air
-setblock 6 63 55 minecraft:air
-setblock 6 63 56 minecraft:air
-setblock 6 64 53 create:water_wheel[facing=east]
-setblock 7 63 50 minecraft:water
-setblock 7 63 51 minecraft:air
-setblock 7 63 52 minecraft:air
-setblock 7 63 53 minecraft:air
-setblock 7 63 54 minecraft:air
-setblock 7 63 55 minecraft:air
-setblock 7 63 56 minecraft:air
-setblock 7 64 53 create:water_wheel[facing=east]
-setblock 3 64 53 create:andesite_encased_shaft[axis=x]
-setblock 8 64 53 create:andesite_encased_shaft[axis=x]
+# 014 farms/mana_endoflame
+#area 122 21 143 46
+fill 122 64 21 143 91 46 minecraft:air
+fill 122 60 21 143 62 46 minecraft:stone
+fill 122 63 21 143 63 46 minecraft:light_gray_concrete
+fill 126 64 27 143 79 27 minecraft:light_gray_concrete
+fill 126 64 27 126 79 40 minecraft:light_gray_concrete
+setblock 127 64 39 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "014"}','{"text": "farms"}','{"text": "mana_endoflame"}','{"text": ""}']}}
+setblock 128 64 39 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Endoflame ring,"}','{"text": "spreader, open"}','{"text": "crate with"}','{"text": "hopper and"}']}}
+setblock 129 64 39 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "chest, pressure"}','{"text": "plate"}','{"text": ""}','{"text": ""}']}}
+fill 138 64 27 138 79 40 minecraft:light_gray_concrete
+fill 130 63 30 134 63 34 minecraft:grass_block
+setblock 136 64 32 botania:mana_pool{mana:300000}
+setblock 133 64 32 botania:mana_spreader{rotationX:180f,rotationY:0f,mana:1000}
+setblock 131 64 31 botania:endoflame
+setblock 132 64 31 botania:endoflame
+setblock 133 64 31 botania:endoflame
+setblock 131 64 33 botania:endoflame
+setblock 132 64 33 botania:endoflame
+setblock 133 64 33 botania:endoflame
+setblock 132 64 32 botania:endoflame
+setblock 130 64 32 minecraft:oak_pressure_plate
+setblock 130 66 32 botania:open_crate
+setblock 130 67 32 minecraft:hopper[facing=down]
+setblock 130 68 32 minecraft:chest[facing=south]{Items:[{Slot:0b,id:"minecraft:coal",count:64}]}
+setblock 130 64 31 minecraft:redstone_wire
+setblock 130 64 30 minecraft:stone_bricks
+setblock 130 65 30 minecraft:redstone_wire
+setblock 131 65 30 minecraft:stone_bricks
+setblock 131 66 30 minecraft:redstone_wire
+setblock 131 66 31 minecraft:stone_bricks
+setblock 131 67 31 minecraft:redstone_wire
+setblock 131 67 32 minecraft:stone_bricks
 execute as @e[type=minecraft:item,tag=!kw_shot] run kill @s

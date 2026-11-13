@@ -1,48 +1,97 @@
-# 157 aether/portal, altar, ride, gloves, slider, queen
-#area 158 340 232 367
-fill 158 64 340 198 91 367 minecraft:air
-fill 199 64 340 232 91 367 minecraft:air
-fill 158 60 340 232 62 367 minecraft:stone
-fill 158 63 340 232 63 367 minecraft:light_gray_concrete
-fill 162 64 346 232 79 346 minecraft:light_gray_concrete
-fill 162 64 346 162 79 361 minecraft:light_gray_concrete
-setblock 163 64 360 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "157.1"}','{"text": "aether"}','{"text": "portal"}','{"text": ""}']}}
-setblock 164 64 360 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Bau das"}','{"text": "Glowstone-Portal"}','{"text": ""}','{"text": ""}']}}
-fill 171 64 346 171 79 361 minecraft:light_gray_concrete
-setblock 165 65 351 minecraft:glowstone
-setblock 165 66 351 minecraft:glowstone
-setblock 165 67 351 minecraft:glowstone
-setblock 166 64 351 minecraft:glowstone
-setblock 166 68 351 minecraft:glowstone
-setblock 167 64 351 minecraft:glowstone
-setblock 167 68 351 minecraft:glowstone
-setblock 168 65 351 minecraft:glowstone
-setblock 168 66 351 minecraft:glowstone
-setblock 168 67 351 minecraft:glowstone
-fill 166 65 351 167 67 351 aether:aether_portal[axis=x]
-execute if block 166 66 351 aether:aether_portal
-setblock 172 64 360 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "157.2"}','{"text": "aether"}','{"text": "altar"}','{"text": ""}']}}
-setblock 173 64 360 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Bau einen Altar"}','{"text": ""}','{"text": ""}','{"text": ""}']}}
-fill 181 64 346 181 79 361 minecraft:light_gray_concrete
-fill 174 63 350 178 63 352 aether:holystone
-setblock 174 64 351 aether:altar
-setblock 176 64 351 aether:freezer
-setblock 178 64 351 aether:incubator
-setblock 182 64 360 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "157.3"}','{"text": "aether"}','{"text": "ride"}','{"text": ""}']}}
-setblock 183 64 360 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Reite ein Moa"}','{"text": ""}','{"text": ""}','{"text": ""}']}}
-fill 193 64 346 193 79 361 minecraft:light_gray_concrete
-summon aether:moa 187.5 64 352.5 {NoAI:1b,PersistenceRequired:1b,Silent:1b,Tags:["kw_shot"],Rotation:[0f,0f]}
-setblock 194 64 360 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "157.4"}','{"text": "aether"}','{"text": "gloves"}','{"text": ""}']}}
-setblock 195 64 360 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Trag Handschuhe"}','{"text": ""}','{"text": ""}','{"text": ""}']}}
-fill 203 64 346 203 79 361 minecraft:light_gray_concrete
-setblock 198 64 351 minecraft:smooth_stone_slab
-summon item_display 198.5 65.4 351.5 {item:{id:"aether:zanite_gloves",count:1},item_display:"fixed",billboard:"vertical",transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[2.0f,2.0f,2.0f]},brightness:{sky:15,block:15},Tags:["kw_shot"]}
-setblock 204 64 360 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "157.5"}','{"text": "aether"}','{"text": "slider"}','{"text": ""}']}}
-setblock 205 64 360 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Besiege den"}','{"text": "Slider"}','{"text": ""}','{"text": ""}']}}
-fill 215 64 346 215 79 361 minecraft:light_gray_concrete
-summon aether:slider 209.5 64 352.5 {NoAI:1b,PersistenceRequired:1b,Silent:1b,Tags:["kw_shot"],Rotation:[0f,0f]}
-setblock 216 64 360 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "157.6"}','{"text": "aether"}','{"text": "queen"}','{"text": ""}']}}
-setblock 217 64 360 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Besiege die"}','{"text": "Valkyrie Queen"}','{"text": ""}','{"text": ""}']}}
-fill 227 64 346 227 79 361 minecraft:light_gray_concrete
-summon aether:valkyrie_queen 221.5 64 352.5 {NoAI:1b,PersistenceRequired:1b,Silent:1b,Tags:["kw_shot"],Rotation:[0f,0f]}
+# 157 ae2/meteorite, presses, inscriber, network, controller, autocraft, cpu, p2p
+#area 13 298 106 323
+fill 13 64 298 57 91 323 minecraft:air
+fill 58 64 298 102 91 323 minecraft:air
+fill 103 64 298 106 91 323 minecraft:air
+fill 13 60 298 106 62 323 minecraft:stone
+fill 13 63 298 106 63 323 minecraft:light_gray_concrete
+fill 17 64 304 106 79 304 minecraft:light_gray_concrete
+fill 17 64 304 17 79 317 minecraft:light_gray_concrete
+setblock 18 64 316 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "157.1"}','{"text": "ae2"}','{"text": "meteorite"}','{"text": ""}']}}
+setblock 19 64 316 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Finde einen"}','{"text": "Meteoriten"}','{"text": ""}','{"text": ""}']}}
+fill 27 64 304 27 79 317 minecraft:light_gray_concrete
+fill 19 63 306 25 63 312 ae2:sky_stone_block
+fill 19 64 306 25 65 306 ae2:sky_stone_block
+fill 19 64 307 19 65 309 ae2:sky_stone_block
+fill 25 64 307 25 65 309 ae2:sky_stone_block
+fill 19 64 310 19 64 311 ae2:sky_stone_block
+fill 25 64 310 25 64 311 ae2:sky_stone_block
+setblock 22 64 309 ae2:mysterious_cube
+setblock 20 64 307 ae2:flawless_budding_quartz
+setblock 20 65 307 ae2:quartz_cluster[facing=up,waterlogged=false]
+setblock 20 64 308 ae2:quartz_cluster[facing=south,waterlogged=false]
+setblock 24 64 307 ae2:flawless_budding_quartz
+setblock 24 65 307 ae2:quartz_cluster[facing=up,waterlogged=false]
+setblock 23 64 307 ae2:quartz_cluster[facing=west,waterlogged=false]
+setblock 28 64 316 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "157.2"}','{"text": "ae2"}','{"text": "presses"}','{"text": ""}']}}
+setblock 29 64 316 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Hol die vier"}','{"text": "Pressen"}','{"text": ""}','{"text": ""}']}}
+fill 38 64 304 38 79 317 minecraft:light_gray_concrete
+setblock 30 64 309 minecraft:smooth_stone_slab
+summon item_display 30.5 64.95 309.5 {item:{id:"ae2:silicon_press",count:1},item_display:"fixed",billboard:"vertical",transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[1.0f,1.0f,1.0f]},brightness:{sky:15,block:15},Tags:["kw_shot"]}
+setblock 32 64 309 minecraft:smooth_stone_slab
+summon item_display 32.5 64.95 309.5 {item:{id:"ae2:logic_processor_press",count:1},item_display:"fixed",billboard:"vertical",transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[1.0f,1.0f,1.0f]},brightness:{sky:15,block:15},Tags:["kw_shot"]}
+setblock 34 64 309 minecraft:smooth_stone_slab
+summon item_display 34.5 64.95 309.5 {item:{id:"ae2:calculation_processor_press",count:1},item_display:"fixed",billboard:"vertical",transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[1.0f,1.0f,1.0f]},brightness:{sky:15,block:15},Tags:["kw_shot"]}
+setblock 36 64 309 minecraft:smooth_stone_slab
+summon item_display 36.5 64.95 309.5 {item:{id:"ae2:engineering_processor_press",count:1},item_display:"fixed",billboard:"vertical",transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[1.0f,1.0f,1.0f]},brightness:{sky:15,block:15},Tags:["kw_shot"]}
+setblock 39 64 316 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "157.3"}','{"text": "ae2"}','{"text": "inscriber"}','{"text": ""}']}}
+setblock 40 64 316 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Bau eine"}','{"text": "Gravurmaschine"}','{"text": ""}','{"text": ""}']}}
+fill 48 64 304 48 79 317 minecraft:light_gray_concrete
+setblock 42 63 309 ae2:creative_energy_cell
+setblock 42 64 309 ae2:inscriber[facing=south,spin=0]
+setblock 44 64 309 ae2:charger[facing=south,spin=0]
+kw testworld use 42 64 309 east ae2:fluix_glass_cable
+setblock 49 64 316 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "157.4"}','{"text": "ae2"}','{"text": "network"}','{"text": ""}']}}
+setblock 50 64 316 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Schließ dein"}','{"text": "erstes Netz an"}','{"text": ""}','{"text": ""}']}}
+fill 59 64 304 59 79 317 minecraft:light_gray_concrete
+setblock 51 63 309 ae2:creative_energy_cell
+setblock 51 64 309 ae2:energy_acceptor
+kw testworld use 51 64 309 east ae2:fluix_glass_cable
+kw testworld use 52 64 309 east ae2:fluix_glass_cable
+kw testworld use 53 64 309 east ae2:fluix_glass_cable
+execute unless block 54 64 309 minecraft:air
+setblock 55 64 309 ae2:drive[facing=south,spin=0]
+kw testworld use 53 64 309 south ae2:terminal
+setblock 60 64 316 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "157.5"}','{"text": "ae2"}','{"text": "controller"}','{"text": ""}']}}
+setblock 61 64 316 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Bau einen"}','{"text": "ME-Controller"}','{"text": ""}','{"text": ""}']}}
+fill 70 64 304 70 79 317 minecraft:light_gray_concrete
+setblock 63 63 309 ae2:creative_energy_cell
+fill 63 64 309 63 66 309 ae2:controller
+kw testworld use 63 64 309 east ae2:fluix_smart_cable
+kw testworld use 64 64 309 east ae2:fluix_smart_cable
+kw testworld use 65 64 309 east ae2:fluix_smart_cable
+kw testworld use 66 64 309 east ae2:fluix_smart_cable
+execute unless block 66 64 309 minecraft:air
+setblock 67 64 309 ae2:drive[facing=south,spin=0]
+setblock 66 65 309 ae2:drive[facing=south,spin=0]
+kw testworld use 64 64 309 south ae2:terminal
+setblock 71 64 316 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "157.6"}','{"text": "ae2"}','{"text": "autocraft"}','{"text": ""}']}}
+setblock 72 64 316 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Stell einen"}','{"text": "Molekularassembler"}','{"text": "daneben"}','{"text": ""}']}}
+fill 80 64 304 80 79 317 minecraft:light_gray_concrete
+setblock 75 63 309 ae2:creative_energy_cell
+setblock 75 64 309 ae2:pattern_provider[push_direction=all]
+setblock 74 64 309 ae2:molecular_assembler
+setblock 76 64 309 ae2:molecular_assembler
+setblock 75 65 309 ae2:molecular_assembler
+setblock 81 64 316 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "157.7"}','{"text": "ae2"}','{"text": "cpu"}','{"text": ""}']}}
+setblock 82 64 316 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Bau eine"}','{"text": "Fertigungs-CPU"}','{"text": ""}','{"text": ""}']}}
+fill 90 64 304 90 79 317 minecraft:light_gray_concrete
+setblock 84 63 310 ae2:creative_energy_cell
+fill 84 64 309 85 65 309 ae2:crafting_unit[formed=false]
+fill 84 64 310 85 64 310 ae2:1k_crafting_storage[formed=false]
+setblock 84 65 310 ae2:crafting_monitor[facing=south,formed=false]
+setblock 85 65 310 ae2:crafting_accelerator[formed=false]
+setblock 91 64 316 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "157.8"}','{"text": "ae2"}','{"text": "p2p"}','{"text": ""}']}}
+setblock 92 64 316 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Bau einen ME"}','{"text": "P2P-Tunnel"}','{"text": ""}','{"text": ""}']}}
+fill 101 64 304 101 79 317 minecraft:light_gray_concrete
+setblock 92 63 309 ae2:creative_energy_cell
+setblock 92 64 309 ae2:energy_acceptor
+kw testworld use 92 64 309 east ae2:fluix_glass_cable
+kw testworld use 93 64 309 east ae2:me_p2p_tunnel
+kw testworld use 94 63 309 up ae2:fluix_covered_dense_cable
+kw testworld use 95 63 309 up ae2:fluix_covered_dense_cable
+kw testworld use 96 63 309 up ae2:fluix_covered_dense_cable
+kw testworld use 97 63 309 up ae2:fluix_covered_dense_cable
+kw testworld use 98 63 309 up ae2:fluix_glass_cable
+kw testworld use 98 64 309 west ae2:me_p2p_tunnel
 execute as @e[type=minecraft:item,tag=!kw_shot] run kill @s

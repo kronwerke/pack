@@ -1,12 +1,20 @@
-# 030 create_brass/boiler
-#area 250 42 269 74
-fill 250 64 42 269 93 74 minecraft:air
-fill 250 60 42 269 62 74 minecraft:stone
-fill 250 63 42 269 63 74 minecraft:light_gray_concrete
-fill 254 64 48 269 81 48 minecraft:light_gray_concrete
-fill 254 64 48 254 81 68 minecraft:light_gray_concrete
-setblock 255 64 67 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "030"}','{"text": "create_brass"}','{"text": "boiler"}','{"text": ""}']}}
-setblock 256 64 67 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "a four engine"}','{"text": "boiler with the"}','{"text": "goggles boiler"}','{"text": "overlay"}']}}
-fill 264 64 48 264 81 68 minecraft:light_gray_concrete
-kw testworld place shots:create/steam_engine 256 63 50 none
+# 030 create_brass/crushing_wheel
+#area 216 44 237 69
+fill 216 64 44 237 91 69 minecraft:air
+fill 216 60 44 237 62 69 minecraft:stone
+fill 216 63 44 237 63 69 minecraft:light_gray_concrete
+fill 220 64 50 237 79 50 minecraft:light_gray_concrete
+fill 220 64 50 220 79 63 minecraft:light_gray_concrete
+setblock 221 64 62 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "030"}','{"text": "create_brass"}','{"text": "crushing_wheel"}','{"text": ""}']}}
+setblock 222 64 62 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "a pair of"}','{"text": "crushing"}','{"text": "wheels, goggles"}','{"text": "showing the"}']}}
+setblock 223 64 62 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "stress"}','{"text": ""}','{"text": ""}','{"text": ""}']}}
+fill 232 64 50 232 79 63 minecraft:light_gray_concrete
+setblock 225 65 55 create:crushing_wheel[axis=z]
+setblock 227 65 55 create:crushing_wheel[axis=z]
+fill 224 64 54 228 66 54 create:andesite_casing
+setblock 225 65 54 create:andesite_encased_shaft[axis=z]
+setblock 225 65 53 create:creative_motor[facing=south]{ScrollValue:32}
+setblock 227 65 54 create:andesite_encased_shaft[axis=z]
+setblock 227 65 53 create:creative_motor[facing=south]{ScrollValue:-32}
+summon item 226.5 67 55.5 {Item:{id:"minecraft:raw_iron",count:8},PickupDelay:32767,Age:-32768,Tags:["kw_shot"]}
 execute as @e[type=minecraft:item,tag=!kw_shot] run kill @s

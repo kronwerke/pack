@@ -1,19 +1,21 @@
-# 075 ars_master/wilden_ritual
-#area 197 124 216 149
-fill 197 64 124 216 91 149 minecraft:air
-fill 197 60 124 216 62 149 minecraft:stone
-fill 197 63 124 216 63 149 minecraft:light_gray_concrete
-fill 201 64 130 216 79 130 minecraft:light_gray_concrete
-fill 201 64 130 201 79 143 minecraft:light_gray_concrete
-setblock 202 64 142 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "075"}','{"text": "ars_master"}','{"text": "wilden_ritual"}','{"text": ""}']}}
-setblock 203 64 142 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "brazier with"}','{"text": "spike, horn and"}','{"text": "wing"}','{"text": ""}']}}
-fill 211 64 130 211 79 143 minecraft:light_gray_concrete
-setblock 206 64 135 ars_nouveau:ritual_brazier
-kw testworld use 206 64 135 up ars_nouveau:ritual_wilden_summon
-setblock 204 64 135 ars_nouveau:arcane_pedestal[facing=up]
-kw testworld use 204 64 135 south ars_nouveau:wilden_spike
-setblock 208 64 135 ars_nouveau:arcane_pedestal[facing=up]
-kw testworld use 208 64 135 south ars_nouveau:wilden_horn
-setblock 206 64 133 ars_nouveau:arcane_pedestal[facing=up]
-kw testworld use 206 64 133 south ars_nouveau:wilden_wing
+# 075 ars_apprentice/relay
+#area 118 126 139 151
+fill 118 64 126 139 91 151 minecraft:air
+fill 118 60 126 139 62 151 minecraft:stone
+fill 118 63 126 139 63 151 minecraft:light_gray_concrete
+fill 122 64 132 139 79 132 minecraft:light_gray_concrete
+fill 122 64 132 122 79 145 minecraft:light_gray_concrete
+setblock 123 64 144 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "075"}','{"text": "ars_apprentice"}','{"text": "relay"}','{"text": ""}']}}
+setblock 124 64 144 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "two relays"}','{"text": "bridging jars"}','{"text": "about 20 blocks"}','{"text": "apart"}']}}
+fill 134 64 132 134 79 145 minecraft:light_gray_concrete
+setblock 125 64 137 ars_nouveau:source_jar[fill=11]{source:10000}
+setblock 127 64 137 ars_nouveau:relay
+setblock 129 64 137 ars_nouveau:relay
+setblock 131 64 137 ars_nouveau:source_jar[fill=0]
+kw testworld use 125 64 137 south ars_nouveau:dominion_wand
+kw testworld use 127 64 137 south ars_nouveau:dominion_wand
+kw testworld use 127 64 137 south ars_nouveau:dominion_wand
+kw testworld use 129 64 137 south ars_nouveau:dominion_wand
+kw testworld use 129 64 137 south ars_nouveau:dominion_wand
+kw testworld use 131 64 137 south ars_nouveau:dominion_wand
 execute as @e[type=minecraft:item,tag=!kw_shot] run kill @s

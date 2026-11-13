@@ -1,12 +1,12 @@
-# 039 create_trains/schedule
-#area -4 68 22 98
-fill -4 64 68 22 91 98 minecraft:air
-fill -4 60 68 22 62 98 minecraft:stone
-fill -4 63 68 22 63 98 minecraft:light_gray_concrete
-fill 0 64 74 22 79 74 minecraft:light_gray_concrete
-fill 0 64 74 0 79 92 minecraft:light_gray_concrete
-setblock 1 64 91 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "039"}','{"text": "create_trains"}','{"text": "schedule"}','{"text": ""}']}}
-setblock 2 64 91 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "the schedule"}','{"text": "screen with"}','{"text": "conditions"}','{"text": ""}']}}
-fill 17 64 74 17 79 92 minecraft:light_gray_concrete
-kw testworld place shots:create/train_station/schedule 2 63 76 none
+# 039 create_trains/first_train
+#area 376 44 399 71
+fill 376 64 44 399 91 71 minecraft:air
+fill 376 60 44 399 62 71 minecraft:stone
+fill 376 63 44 399 63 71 minecraft:light_gray_concrete
+fill 380 64 50 399 79 50 minecraft:light_gray_concrete
+fill 380 64 50 380 79 65 minecraft:light_gray_concrete
+setblock 381 64 64 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "039"}','{"text": "create_trains"}','{"text": "first_train"}','{"text": ""}']}}
+setblock 382 64 64 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "a finished"}','{"text": "small train"}','{"text": ""}','{"text": ""}']}}
+fill 394 64 50 394 79 65 minecraft:light_gray_concrete
+kw testworld place shots:create/train_controls 382 63 52 none
 execute as @e[type=minecraft:item,tag=!kw_shot] run kill @s

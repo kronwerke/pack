@@ -1,13 +1,12 @@
-# 085 botania/mana_void
-#area 56 145 75 170
-fill 56 64 145 75 91 170 minecraft:air
-fill 56 60 145 75 62 170 minecraft:stone
-fill 56 63 145 75 63 170 minecraft:light_gray_concrete
-fill 60 64 151 75 79 151 minecraft:light_gray_concrete
-fill 60 64 151 60 79 164 minecraft:light_gray_concrete
-setblock 61 64 163 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "085"}','{"text": "botania"}','{"text": "mana_void"}','{"text": ""}']}}
-setblock 62 64 163 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "a mana void"}','{"text": "under a pool"}','{"text": ""}','{"text": ""}']}}
-fill 70 64 151 70 79 164 minecraft:light_gray_concrete
-setblock 65 64 156 botania:mana_void
-setblock 65 65 156 botania:mana_pool{mana:1000000}
+# 085 ars_master/ritual_awakening
+#area 272 126 291 151
+fill 272 64 126 291 91 151 minecraft:air
+fill 272 60 126 291 62 151 minecraft:stone
+fill 272 63 126 291 63 151 minecraft:light_gray_concrete
+fill 276 64 132 291 79 132 minecraft:light_gray_concrete
+fill 276 64 132 276 79 145 minecraft:light_gray_concrete
+setblock 277 64 144 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "085"}','{"text": "ars_master"}','{"text": "ritual_awakening"}','{"text": ""}']}}
+setblock 278 64 144 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "a Weald Walker"}','{"text": ""}','{"text": ""}','{"text": ""}']}}
+fill 286 64 132 286 79 145 minecraft:light_gray_concrete
+summon ars_nouveau:cascading_weald_walker 281.5 64 137.5 {NoAI:1b,PersistenceRequired:1b,Silent:1b,Tags:["kw_shot"],Rotation:[180f,0f]}
 execute as @e[type=minecraft:item,tag=!kw_shot] run kill @s

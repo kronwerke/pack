@@ -1,14 +1,29 @@
-# 108 occultism/djinni_familiars
-#area 110 182 131 207
-fill 110 64 182 131 91 207 minecraft:air
-fill 110 60 182 131 62 207 minecraft:stone
-fill 110 63 182 131 63 207 minecraft:light_gray_concrete
-fill 114 64 188 131 79 188 minecraft:light_gray_concrete
-fill 114 64 188 114 79 201 minecraft:light_gray_concrete
-setblock 115 64 200 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "108"}','{"text": "occultism"}','{"text": "djinni_familiars"}','{"text": ""}']}}
-setblock 116 64 200 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "a player with"}','{"text": "two or three"}','{"text": "familiars"}','{"text": ""}']}}
-fill 126 64 188 126 79 201 minecraft:light_gray_concrete
-summon occultism:dragon_familiar 117.5 64 193.5 {NoAI:1b,PersistenceRequired:1b,Silent:1b,Tags:["kw_shot"],Rotation:[180f,0f]}
-summon occultism:greedy_familiar 120.5 64 193.5 {NoAI:1b,PersistenceRequired:1b,Silent:1b,Tags:["kw_shot"],Rotation:[180f,0f]}
-summon occultism:deer_familiar 123.5 64 193.5 {NoAI:1b,PersistenceRequired:1b,Silent:1b,Tags:["kw_shot"],Rotation:[180f,0f]}
+# 108 alfheim/open
+#area 315 147 336 172
+fill 315 64 147 336 91 172 minecraft:air
+fill 315 60 147 336 62 172 minecraft:stone
+fill 315 63 147 336 63 172 minecraft:light_gray_concrete
+fill 319 64 153 336 79 153 minecraft:light_gray_concrete
+fill 319 64 153 319 79 166 minecraft:light_gray_concrete
+setblock 320 64 165 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "108"}','{"text": "alfheim"}','{"text": "open"}','{"text": ""}']}}
+setblock 321 64 165 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "the open portal"}','{"text": "with an item"}','{"text": "flying out"}','{"text": ""}']}}
+fill 331 64 153 331 79 166 minecraft:light_gray_concrete
+setblock 325 64 157 botania:elven_gateway_core
+setblock 324 64 157 botania:livingwood_log[axis=x]
+setblock 324 68 157 botania:livingwood_log[axis=x]
+setblock 326 64 157 botania:livingwood_log[axis=x]
+setblock 326 68 157 botania:livingwood_log[axis=x]
+setblock 325 68 157 botania:glimmering_livingwood_log[axis=x]
+setblock 323 65 157 botania:livingwood_log[axis=y]
+setblock 323 66 157 botania:glimmering_livingwood_log[axis=y]
+setblock 323 67 157 botania:livingwood_log[axis=y]
+setblock 327 65 157 botania:livingwood_log[axis=y]
+setblock 327 66 157 botania:glimmering_livingwood_log[axis=y]
+setblock 327 67 157 botania:livingwood_log[axis=y]
+setblock 321 64 159 botania:mana_pool{mana:1000000}
+setblock 321 65 159 botania:natura_pylon
+setblock 329 64 159 botania:mana_pool{mana:1000000}
+setblock 329 65 159 botania:natura_pylon
+kw testworld use 325 64 157 south botania:wand_of_the_forest
+execute unless block 325 64 157 botania:elven_gateway_core[state=off]
 execute as @e[type=minecraft:item,tag=!kw_shot] run kill @s

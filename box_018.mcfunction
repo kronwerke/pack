@@ -1,20 +1,17 @@
-# 018 create/compacting
-#area 61 42 80 67
-fill 61 64 42 80 91 67 minecraft:air
-fill 61 60 42 80 62 67 minecraft:stone
-fill 61 63 42 80 63 67 minecraft:light_gray_concrete
-fill 65 64 48 80 79 48 minecraft:light_gray_concrete
-fill 65 64 48 65 79 61 minecraft:light_gray_concrete
-setblock 66 64 60 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "018"}','{"text": "create"}','{"text": "compacting"}','{"text": ""}']}}
-setblock 67 64 60 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "press over"}','{"text": "basin making"}','{"text": "andesite from"}','{"text": "flint, gravel"}']}}
-setblock 68 64 60 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "and lava"}','{"text": ""}','{"text": ""}','{"text": ""}']}}
-fill 75 64 48 75 79 61 minecraft:light_gray_concrete
-setblock 70 64 53 create:basin[facing=down]
-setblock 70 66 53 create:mechanical_press[facing=south]
-fill 69 64 52 71 67 52 create:andesite_casing
-setblock 70 66 52 create:andesite_encased_shaft[axis=z]
-setblock 70 66 51 create:creative_motor[facing=south]{ScrollValue:32}
-summon item 70.5 65 53.5 {Item:{id:"minecraft:flint",count:8},PickupDelay:32767,Age:-32768,Tags:["kw_shot"]}
-summon item 70.5 65.3 53.5 {Item:{id:"minecraft:gravel",count:8},PickupDelay:32767,Age:-32768,Tags:["kw_shot"]}
-kw testworld use 70 64 53 up minecraft:lava_bucket
+# 018 create/depot
+#area 31 44 50 69
+fill 31 64 44 50 91 69 minecraft:air
+fill 31 60 44 50 62 69 minecraft:stone
+fill 31 63 44 50 63 69 minecraft:light_gray_concrete
+fill 35 64 50 50 79 50 minecraft:light_gray_concrete
+fill 35 64 50 35 79 63 minecraft:light_gray_concrete
+setblock 36 64 62 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "018"}','{"text": "create"}','{"text": "depot"}','{"text": ""}']}}
+setblock 37 64 62 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "press above a"}','{"text": "depot with one"}','{"text": "block of air"}','{"text": "between"}']}}
+fill 45 64 50 45 79 63 minecraft:light_gray_concrete
+setblock 40 64 55 create:depot
+setblock 40 66 55 create:mechanical_press[facing=south]
+fill 39 64 54 41 67 54 create:andesite_casing
+setblock 40 66 54 create:andesite_encased_shaft[axis=z]
+setblock 40 66 53 create:creative_motor[facing=south]{ScrollValue:32}
+kw testworld use 40 64 55 up minecraft:iron_ingot
 execute as @e[type=minecraft:item,tag=!kw_shot] run kill @s

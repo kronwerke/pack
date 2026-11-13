@@ -1,14 +1,13 @@
-# 102 occultism/spirit_fire
-#area -4 182 15 207
-fill -4 64 182 15 91 207 minecraft:air
-fill -4 60 182 15 62 207 minecraft:stone
-fill -4 63 182 15 63 207 minecraft:light_gray_concrete
-fill 0 64 188 15 79 188 minecraft:light_gray_concrete
-fill 0 64 188 0 79 201 minecraft:light_gray_concrete
-setblock 1 64 200 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "102"}','{"text": "occultism"}','{"text": "spirit_fire"}','{"text": ""}']}}
-setblock 2 64 200 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "spirit fire"}','{"text": "turning"}','{"text": "andesite into"}','{"text": "otherstone"}']}}
-fill 10 64 188 10 79 201 minecraft:light_gray_concrete
-setblock 5 64 193 occultism:spirit_fire[color=white]
-summon item 5.5 65.5 193.5 {Item:{id:"minecraft:andesite",count:8},PickupDelay:32767,Age:-32768,Tags:["kw_shot"]}
-summon item 6.5 64.2 194.5 {Item:{id:"occultism:otherstone",count:4},PickupDelay:32767,Age:-32768,Tags:["kw_shot"]}
+# 102 botania_runes/rune_core
+#area 199 147 218 172
+fill 199 64 147 218 91 172 minecraft:air
+fill 199 60 147 218 62 172 minecraft:stone
+fill 199 63 147 218 63 172 minecraft:light_gray_concrete
+fill 203 64 153 218 79 153 minecraft:light_gray_concrete
+fill 203 64 153 203 79 166 minecraft:light_gray_concrete
+setblock 204 64 165 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "102"}','{"text": "botania_runes"}','{"text": "rune_core"}','{"text": ""}']}}
+setblock 205 64 165 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "the crafting"}','{"text": "grid"}','{"text": ""}','{"text": ""}']}}
+fill 213 64 153 213 79 166 minecraft:light_gray_concrete
+setblock 208 64 158 minecraft:smooth_stone_slab
+summon item_display 208.5 65.4 158.5 {item:{id:"kronwerke:rune_core",count:1},item_display:"fixed",billboard:"vertical",transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[2.0f,2.0f,2.0f]},brightness:{sky:15,block:15},Tags:["kw_shot"]}
 execute as @e[type=minecraft:item,tag=!kw_shot] run kill @s

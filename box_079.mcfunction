@@ -1,18 +1,16 @@
-# 079 ars_master/charged_certus
-#area 257 124 276 149
-fill 257 64 124 276 91 149 minecraft:air
-fill 257 60 124 276 62 149 minecraft:stone
-fill 257 63 124 276 63 149 minecraft:light_gray_concrete
-fill 261 64 130 276 79 130 minecraft:light_gray_concrete
-fill 261 64 130 261 79 143 minecraft:light_gray_concrete
-setblock 262 64 142 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "079"}','{"text": "ars_master"}','{"text": "charged_certus"}','{"text": ""}']}}
-setblock 263 64 142 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "chamber with"}','{"text": "redstone and"}','{"text": "glowstone"}','{"text": "pedestals"}']}}
-fill 271 64 130 271 79 143 minecraft:light_gray_concrete
-setblock 266 64 135 ars_nouveau:imbuement_chamber[facing=up]
-setblock 265 64 135 ars_nouveau:arcane_pedestal[facing=up]
-kw testworld use 265 64 135 south minecraft:redstone
-setblock 267 64 135 ars_nouveau:arcane_pedestal[facing=up]
-kw testworld use 267 64 135 south minecraft:glowstone_dust
-kw testworld use 266 64 135 south ae2:certus_quartz_crystal
-setblock 268 64 134 ars_nouveau:source_jar[fill=11]{source:10000}
+# 079 ars_apprentice/potions
+#area 180 126 199 151
+fill 180 64 126 199 91 151 minecraft:air
+fill 180 60 126 199 62 151 minecraft:stone
+fill 180 63 126 199 63 151 minecraft:light_gray_concrete
+fill 184 64 132 199 79 132 minecraft:light_gray_concrete
+fill 184 64 132 184 79 145 minecraft:light_gray_concrete
+setblock 185 64 144 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "079"}','{"text": "ars_apprentice"}','{"text": "potions"}','{"text": ""}']}}
+setblock 186 64 144 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "potion jars"}','{"text": "next to the"}','{"text": "cauldron and an"}','{"text": "alchemical"}']}}
+setblock 187 64 144 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "sourcelink"}','{"text": ""}','{"text": ""}','{"text": ""}']}}
+fill 194 64 132 194 79 145 minecraft:light_gray_concrete
+setblock 189 64 137 ars_nouveau:wixie_cauldron[converted=true,filled=true]
+setblock 187 64 137 ars_nouveau:potion_jar[fill=11]
+setblock 188 64 137 ars_nouveau:potion_jar[fill=6]
+setblock 191 64 137 ars_nouveau:alchemical_sourcelink
 execute as @e[type=minecraft:item,tag=!kw_shot] run kill @s

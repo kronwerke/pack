@@ -1,20 +1,13 @@
-# 086 botania/farm
-#area 71 145 94 170
-fill 71 64 145 94 91 170 minecraft:air
-fill 71 60 145 94 62 170 minecraft:stone
-fill 71 63 145 94 63 170 minecraft:light_gray_concrete
-fill 75 64 151 94 79 151 minecraft:light_gray_concrete
-fill 75 64 151 75 79 164 minecraft:light_gray_concrete
-setblock 76 64 163 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "086"}','{"text": "botania"}','{"text": "farm"}','{"text": ""}']}}
-setblock 77 64 163 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "the finished"}','{"text": "stage 1 mana"}','{"text": "farm"}','{"text": ""}']}}
-fill 89 64 151 89 79 164 minecraft:light_gray_concrete
-fill 77 63 154 87 63 158 minecraft:grass_block
-setblock 82 64 156 botania:mana_pool{mana:200000}
-setblock 82 64 157 botania:manastar
-setblock 79 64 156 botania:mana_spreader{rotationX:180f,rotationY:0f,mana:1000}
-setblock 85 64 156 botania:mana_spreader{rotationX:0f,rotationY:0f,mana:1000}
-setblock 78 64 155 botania:endoflame
-setblock 78 64 157 botania:endoflame
-setblock 86 64 155 botania:endoflame
-setblock 86 64 157 botania:endoflame
+# 086 ars_master/alteration
+#area 287 126 306 151
+fill 287 64 126 306 91 151 minecraft:air
+fill 287 60 126 306 62 151 minecraft:stone
+fill 287 63 126 306 63 151 minecraft:light_gray_concrete
+fill 291 64 132 306 79 132 minecraft:light_gray_concrete
+fill 291 64 132 291 79 145 minecraft:light_gray_concrete
+setblock 292 64 144 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "086"}','{"text": "ars_master"}','{"text": "alteration"}','{"text": ""}']}}
+setblock 293 64 144 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "alteration"}','{"text": "table with a"}','{"text": "robe on the"}','{"text": "stand"}']}}
+fill 301 64 132 301 79 145 minecraft:light_gray_concrete
+kw testworld use 295 63 137 up ars_nouveau:alteration_table
+summon armor_stand 298.5 64 137.5 {ArmorItems:[{id:"ars_nouveau:arcanist_boots",count:1},{id:"ars_nouveau:arcanist_leggings",count:1},{id:"ars_nouveau:arcanist_robes",count:1},{id:"ars_nouveau:arcanist_hood",count:1}],ShowArms:1b,NoBasePlate:1b,Tags:["kw_shot"],Rotation:[180f,0f]}
 execute as @e[type=minecraft:item,tag=!kw_shot] run kill @s

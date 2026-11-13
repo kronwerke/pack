@@ -1,22 +1,25 @@
-# 050 mekanism_ores/quintupling
-#area 107 95 129 120
-fill 107 64 95 129 91 120 minecraft:air
-fill 107 60 95 129 62 120 minecraft:stone
-fill 107 63 95 129 63 120 minecraft:light_gray_concrete
-fill 111 64 101 129 79 101 minecraft:light_gray_concrete
-fill 111 64 101 111 79 114 minecraft:light_gray_concrete
-setblock 112 64 113 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "050"}','{"text": "mekanism_ores"}','{"text": "quintupling"}','{"text": ""}']}}
-setblock 113 64 113 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "the full eight"}','{"text": "machine ladder"}','{"text": "with gas tubes"}','{"text": ""}']}}
-fill 124 64 101 124 79 114 minecraft:light_gray_concrete
-setblock 113 64 107 minecraft:chest[facing=south]{Items:[]}
-setblock 114 64 107 mekanism:chemical_dissolution_chamber[facing=south]
-setblock 115 64 107 mekanism:chemical_washer[facing=south]
-setblock 116 64 107 mekanism:chemical_crystallizer[facing=south]
-setblock 117 64 107 mekanism:chemical_injection_chamber[facing=south]
-setblock 118 64 107 mekanism:purification_chamber[facing=south]
-setblock 119 64 107 mekanism:crusher[facing=south]
-setblock 120 64 107 mekanism:enrichment_chamber[facing=south]
-setblock 121 64 107 mekanism:energized_smelter[facing=south]
-setblock 122 64 107 minecraft:chest[facing=south]{Items:[]}
-fill 114 65 107 116 65 107 mekanism:basic_pressurized_tube
+# 050 mekanism_ores/tripling
+#area 75 97 95 122
+fill 75 64 97 95 91 122 minecraft:air
+fill 75 60 97 95 62 122 minecraft:stone
+fill 75 63 97 95 63 122 minecraft:light_gray_concrete
+fill 79 64 103 95 79 103 minecraft:light_gray_concrete
+fill 79 64 103 79 79 116 minecraft:light_gray_concrete
+setblock 80 64 115 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "050"}','{"text": "mekanism_ores"}','{"text": "tripling"}','{"text": ""}']}}
+setblock 81 64 115 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "purification"}','{"text": "chamber,"}','{"text": "crusher,"}','{"text": "enrichment"}']}}
+setblock 82 64 115 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "chamber,"}','{"text": "smelter with"}','{"text": "separator and"}','{"text": "pump"}']}}
+fill 90 64 103 90 79 116 minecraft:light_gray_concrete
+setblock 81 64 109 minecraft:chest[facing=south]{Items:[]}
+setblock 82 64 109 mekanism:purification_chamber[facing=south,active=false]
+setblock 83 64 109 mekanism:crusher[facing=south,active=false]
+setblock 84 64 109 mekanism:enrichment_chamber[facing=south,active=false]
+setblock 85 64 109 mekanism:energized_smelter[facing=south,active=false]
+setblock 86 64 109 minecraft:chest[facing=south]{Items:[]}
+setblock 82 64 108 mekanism:basic_pressurized_tube
+setblock 82 64 107 mekanism:electrolytic_separator[facing=south]
+setblock 83 64 107 mekanism:basic_mechanical_pipe
+setblock 84 63 107 minecraft:water
+setblock 84 64 107 mekanism:electric_pump[facing=south]
+fill 83 64 108 85 64 108 mekanism:basic_universal_cable
+setblock 86 64 108 mekanism:basic_energy_cube[facing=south]
 execute as @e[type=minecraft:item,tag=!kw_shot] run kill @s

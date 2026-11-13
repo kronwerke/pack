@@ -1,24 +1,35 @@
-# 025 create_brass/brass_mixing
-#area 169 42 188 67
-fill 169 64 42 188 91 67 minecraft:air
-fill 169 60 42 188 62 67 minecraft:stone
-fill 169 63 42 188 63 67 minecraft:light_gray_concrete
-fill 173 64 48 188 79 48 minecraft:light_gray_concrete
-fill 173 64 48 173 79 61 minecraft:light_gray_concrete
-setblock 174 64 60 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "025"}','{"text": "create_brass"}','{"text": "brass_mixing"}','{"text": ""}']}}
-setblock 175 64 60 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "heated burner,"}','{"text": "basin and mixer"}','{"text": "stack"}','{"text": ""}']}}
-fill 183 64 48 183 79 61 minecraft:light_gray_concrete
-setblock 178 64 53 create:blaze_burner[blaze=smouldering]
-kw testworld use 178 64 53 south create:creative_blaze_cake
-setblock 178 65 53 create:basin[facing=down]
-setblock 178 67 53 create:mechanical_mixer
-setblock 179 67 53 create:cogwheel[axis=y]
-setblock 179 63 53 create:shaft[axis=y]
-setblock 179 64 53 create:shaft[axis=y]
-setblock 179 65 53 create:shaft[axis=y]
-setblock 179 66 53 create:shaft[axis=y]
-setblock 179 62 53 create:creative_motor[facing=up]{ScrollValue:32}
-summon item 178.5 66.2 53.5 {Item:{id:"minecraft:copper_ingot",count:64},PickupDelay:32767,Age:-32768,Tags:["kw_shot"]}
-summon item 178.5 66.2 53.5 {Item:{id:"create:zinc_ingot",count:32},PickupDelay:32767,Age:-32768,Tags:["kw_shot"]}
-summon item 178.5 66.2 53.5 {Item:{id:"minecraft:blaze_powder",count:32},PickupDelay:32767,Age:-32768,Tags:["kw_shot"]}
+# 025 create/cobble_gen
+#area 139 44 158 69
+fill 139 64 44 158 91 69 minecraft:air
+fill 139 60 44 158 62 69 minecraft:stone
+fill 139 63 44 158 63 69 minecraft:light_gray_concrete
+fill 143 64 50 158 79 50 minecraft:light_gray_concrete
+fill 143 64 50 143 79 63 minecraft:light_gray_concrete
+setblock 144 64 62 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "025"}','{"text": "create"}','{"text": "cobble_gen"}','{"text": ""}']}}
+setblock 145 64 62 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "drill in front"}','{"text": "of a cobble"}','{"text": "generator"}','{"text": ""}']}}
+fill 153 64 50 153 79 63 minecraft:light_gray_concrete
+setblock 145 64 54 minecraft:stone_bricks
+setblock 145 64 56 minecraft:glass
+setblock 146 64 54 minecraft:stone_bricks
+setblock 146 64 56 minecraft:glass
+setblock 147 64 54 minecraft:stone_bricks
+setblock 147 64 56 minecraft:glass
+setblock 148 64 54 minecraft:stone_bricks
+setblock 148 64 56 minecraft:glass
+setblock 149 64 54 minecraft:stone_bricks
+setblock 149 64 56 minecraft:glass
+setblock 150 64 54 minecraft:stone_bricks
+setblock 150 64 56 minecraft:glass
+setblock 151 64 54 minecraft:stone_bricks
+setblock 151 64 56 minecraft:glass
+setblock 145 64 55 minecraft:stone_bricks
+setblock 151 64 55 minecraft:stone_bricks
+setblock 146 64 55 minecraft:water
+setblock 148 63 55 minecraft:air
+setblock 149 64 55 minecraft:cobblestone
+setblock 150 64 55 minecraft:lava
+setblock 149 64 54 create:mechanical_drill[facing=south]
+fill 148 64 53 150 65 53 create:andesite_casing
+setblock 149 64 53 create:andesite_encased_shaft[axis=z]
+setblock 149 64 52 create:creative_motor[facing=south]{ScrollValue:32}
 execute as @e[type=minecraft:item,tag=!kw_shot] run kill @s

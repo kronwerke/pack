@@ -1,76 +1,45 @@
-# 170 food/f_cutting_board, f_pot, f_rice, f_rich_soil, f_feast, f_market, f_rod
-#area 41 405 120 430
-fill 41 64 405 85 91 430 minecraft:air
-fill 86 64 405 120 91 430 minecraft:air
-fill 41 60 405 120 62 430 minecraft:stone
-fill 41 63 405 120 63 430 minecraft:light_gray_concrete
-fill 45 64 411 120 79 411 minecraft:light_gray_concrete
-fill 45 64 411 45 79 424 minecraft:light_gray_concrete
-setblock 46 64 423 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "170.1"}','{"text": "food"}','{"text": "f_cutting_board"}','{"text": ""}']}}
-setblock 47 64 423 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Bau ein"}','{"text": "Schneidebrett"}','{"text": ""}','{"text": ""}']}}
-fill 55 64 411 55 79 424 minecraft:light_gray_concrete
-setblock 49 64 416 farmersdelight:oak_cabinet[facing=south,open=false]
-setblock 49 65 416 farmersdelight:cutting_board[facing=south]
-setblock 50 64 416 farmersdelight:stove[facing=south,lit=true]
-setblock 50 65 416 farmersdelight:cooking_pot[facing=south,support=tray]
-setblock 51 64 416 farmersdelight:oak_cabinet[facing=south,open=false]
-setblock 56 64 423 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "170.2"}','{"text": "food"}','{"text": "f_pot"}','{"text": ""}']}}
-setblock 57 64 423 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Stell einen"}','{"text": "Kochtopf auf"}','{"text": ""}','{"text": ""}']}}
-fill 65 64 411 65 79 424 minecraft:light_gray_concrete
-setblock 60 64 416 farmersdelight:stove[facing=south,lit=true]
-setblock 60 65 416 farmersdelight:cooking_pot[facing=south,support=none]
-setblock 61 64 416 minecraft:oak_planks
-setblock 61 65 416 farmersdelight:cutting_board[facing=south]
-setblock 66 64 423 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "170.3"}','{"text": "food"}','{"text": "f_rice"}','{"text": ""}']}}
-setblock 67 64 423 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Pflanz Reis ins"}','{"text": "Wasser"}','{"text": ""}','{"text": ""}']}}
-fill 75 64 411 75 79 424 minecraft:light_gray_concrete
-fill 68 62 415 72 62 417 minecraft:dirt
-fill 68 63 415 72 63 417 minecraft:water
-setblock 68 63 416 farmersdelight:rice[age=3,supporting=true]
-setblock 68 64 416 farmersdelight:rice_panicles[age=3]
-setblock 68 63 417 farmersdelight:rice[age=3,supporting=true]
-setblock 68 64 417 farmersdelight:rice_panicles[age=3]
-setblock 69 63 415 farmersdelight:rice[age=3,supporting=true]
-setblock 69 64 415 farmersdelight:rice_panicles[age=3]
-setblock 69 63 416 farmersdelight:rice[age=3,supporting=true]
-setblock 69 64 416 farmersdelight:rice_panicles[age=3]
-setblock 69 63 417 farmersdelight:rice[age=3,supporting=true]
-setblock 69 64 417 farmersdelight:rice_panicles[age=3]
-setblock 70 63 415 farmersdelight:rice[age=3,supporting=true]
-setblock 70 64 415 farmersdelight:rice_panicles[age=3]
-setblock 70 63 416 farmersdelight:rice[age=3,supporting=true]
-setblock 70 64 416 farmersdelight:rice_panicles[age=3]
-setblock 71 63 415 farmersdelight:rice[age=3,supporting=true]
-setblock 71 64 415 farmersdelight:rice_panicles[age=3]
-setblock 71 63 417 farmersdelight:rice[age=3,supporting=true]
-setblock 71 64 417 farmersdelight:rice_panicles[age=3]
-setblock 72 63 416 farmersdelight:rice[age=3,supporting=true]
-setblock 72 64 416 farmersdelight:rice_panicles[age=3]
-setblock 72 63 417 farmersdelight:rice[age=3,supporting=true]
-setblock 72 64 417 farmersdelight:rice_panicles[age=3]
-setblock 76 64 423 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "170.4"}','{"text": "food"}','{"text": "f_rich_soil"}','{"text": ""}']}}
-setblock 77 64 423 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Mach"}','{"text": "Reichhaltige"}','{"text": "Erde"}','{"text": ""}']}}
-fill 85 64 411 85 79 424 minecraft:light_gray_concrete
-fill 78 63 415 82 63 417 minecraft:podzol[snowy=false]
-setblock 79 63 416 farmersdelight:organic_compost[composting=2]
-setblock 80 63 416 farmersdelight:organic_compost[composting=6]
-setblock 81 63 416 farmersdelight:rich_soil
-setblock 81 64 416 farmersdelight:brown_mushroom_colony[age=3]
-setblock 78 64 415 minecraft:brown_mushroom
-setblock 82 64 417 minecraft:red_mushroom
-setblock 86 64 423 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "170.5"}','{"text": "food"}','{"text": "f_feast"}','{"text": ""}']}}
-setblock 87 64 423 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Tisch ein"}','{"text": "Backhähnchen"}','{"text": "auf"}','{"text": ""}']}}
-fill 95 64 411 95 79 424 minecraft:light_gray_concrete
-fill 89 64 416 91 64 416 minecraft:spruce_slab[type=top]
-setblock 90 65 416 farmersdelight:roast_chicken_block[facing=south,servings=4]
-setblock 96 64 423 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "170.6"}','{"text": "food"}','{"text": "f_market"}','{"text": ""}']}}
-setblock 97 64 423 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Stell einen"}','{"text": "Markt auf"}','{"text": ""}','{"text": ""}']}}
-fill 105 64 411 105 79 424 minecraft:light_gray_concrete
-setblock 100 64 416 farmingforblockheads:market[facing=south,half=lower]
-setblock 100 65 416 farmingforblockheads:market[facing=south,half=upper]
-setblock 106 64 423 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "170.7"}','{"text": "food"}','{"text": "f_rod"}','{"text": ""}']}}
-setblock 107 64 423 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Bau eine"}','{"text": "Eisen-Angelrute"}','{"text": ""}','{"text": ""}']}}
-fill 115 64 411 115 79 424 minecraft:light_gray_concrete
-setblock 110 64 416 minecraft:smooth_stone_slab
-summon item_display 110.5 65.4 416.5 {item:{id:"aquaculture:iron_fishing_rod",count:1},item_display:"fixed",billboard:"vertical",transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[2.0f,2.0f,2.0f]},brightness:{sky:15,block:15},Tags:["kw_shot"]}
+# 170 the_end/arrival, crystals, egg, elytra, cg_kill
+#area 46 342 107 371
+fill 46 64 342 79 95 371 minecraft:air
+fill 80 64 342 107 95 371 minecraft:air
+fill 46 60 342 107 62 371 minecraft:stone
+fill 46 63 342 107 63 371 minecraft:light_gray_concrete
+fill 50 64 348 107 83 348 minecraft:light_gray_concrete
+fill 50 64 348 50 83 365 minecraft:light_gray_concrete
+setblock 51 64 364 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "170.1"}','{"text": "the_end"}','{"text": "arrival"}','{"text": ""}']}}
+setblock 52 64 364 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Betritt das End"}','{"text": ""}','{"text": ""}','{"text": ""}']}}
+fill 60 64 348 60 83 365 minecraft:light_gray_concrete
+setblock 54 64 351 minecraft:end_portal_frame[eye=true,facing=south]
+setblock 54 64 355 minecraft:end_portal_frame[eye=true,facing=north]
+setblock 53 64 352 minecraft:end_portal_frame[eye=true,facing=east]
+setblock 57 64 352 minecraft:end_portal_frame[eye=true,facing=west]
+setblock 55 64 351 minecraft:end_portal_frame[eye=true,facing=south]
+setblock 55 64 355 minecraft:end_portal_frame[eye=true,facing=north]
+setblock 53 64 353 minecraft:end_portal_frame[eye=true,facing=east]
+setblock 57 64 353 minecraft:end_portal_frame[eye=true,facing=west]
+setblock 56 64 351 minecraft:end_portal_frame[eye=true,facing=south]
+setblock 56 64 355 minecraft:end_portal_frame[eye=true,facing=north]
+setblock 53 64 354 minecraft:end_portal_frame[eye=true,facing=east]
+setblock 57 64 354 minecraft:end_portal_frame[eye=true,facing=west]
+fill 54 64 352 56 64 354 minecraft:end_portal
+setblock 61 64 364 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "170.2"}','{"text": "the_end"}','{"text": "crystals"}','{"text": ""}']}}
+setblock 62 64 364 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Zerstör die"}','{"text": "Endkristalle"}','{"text": ""}','{"text": ""}']}}
+fill 70 64 348 70 83 365 minecraft:light_gray_concrete
+fill 64 64 351 66 69 353 minecraft:obsidian
+setblock 65 70 352 minecraft:bedrock
+summon minecraft:end_crystal 65.5 71 352.5 {Tags:["kw_shot"],ShowBottom:0b}
+setblock 71 64 364 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "170.3"}','{"text": "the_end"}','{"text": "egg"}','{"text": ""}']}}
+setblock 72 64 364 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Hol das"}','{"text": "Drachenei"}','{"text": ""}','{"text": ""}']}}
+fill 80 64 348 80 83 365 minecraft:light_gray_concrete
+fill 74 64 352 76 64 354 minecraft:bedrock
+fill 75 65 353 75 67 353 minecraft:bedrock
+setblock 75 68 353 minecraft:dragon_egg
+setblock 81 64 364 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "170.4"}','{"text": "the_end"}','{"text": "elytra"}','{"text": ""}']}}
+setblock 82 64 364 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Hol dir Elytren"}','{"text": ""}','{"text": ""}','{"text": ""}']}}
+fill 90 64 348 90 83 365 minecraft:light_gray_concrete
+summon armor_stand 85.5 64 353.5 {ArmorItems:[{},{},{id:"minecraft:elytra",count:1},{}],ShowArms:1b,NoBasePlate:1b,Tags:["kw_shot"],Rotation:[20f,0f]}
+setblock 91 64 364 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "170.5"}','{"text": "the_end"}','{"text": "cg_kill"}','{"text": ""}']}}
+setblock 92 64 364 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Besiege den"}','{"text": "Ender Guardian"}','{"text": ""}','{"text": ""}']}}
+fill 102 64 348 102 83 365 minecraft:light_gray_concrete
+summon cataclysm:ender_guardian 96.5 64 354.5 {NoAI:1b,PersistenceRequired:1b,Silent:1b,Tags:["kw_shot"],Rotation:[0f,0f]}
 execute as @e[type=minecraft:item,tag=!kw_shot] run kill @s

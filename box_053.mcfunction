@@ -1,90 +1,15 @@
-# 053 mekanism_advanced/evap
-#area 159 95 178 120
-fill 159 64 95 178 95 120 minecraft:air
-fill 159 60 95 178 62 120 minecraft:stone
-fill 159 63 95 178 63 120 minecraft:light_gray_concrete
-fill 163 64 101 178 83 101 minecraft:light_gray_concrete
-fill 163 64 101 163 83 114 minecraft:light_gray_concrete
-setblock 164 64 113 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "053"}','{"text": "mekanism_advanced"}','{"text": "evap"}','{"text": ""}']}}
-setblock 165 64 113 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "thermal"}','{"text": "evaporation"}','{"text": "tower"}','{"text": ""}']}}
-fill 173 64 101 173 83 114 minecraft:light_gray_concrete
-setblock 167 64 104 mekanism:thermal_evaporation_block
-setblock 167 64 105 mekanism:thermal_evaporation_block
-setblock 167 64 106 mekanism:thermal_evaporation_block
-setblock 167 64 107 mekanism:thermal_evaporation_block
-setblock 168 64 104 mekanism:thermal_evaporation_block
-setblock 168 64 105 mekanism:thermal_evaporation_block
-setblock 168 64 106 mekanism:thermal_evaporation_block
-setblock 168 64 107 mekanism:thermal_evaporation_block
-setblock 169 64 104 mekanism:thermal_evaporation_block
-setblock 169 64 105 mekanism:thermal_evaporation_block
-setblock 169 64 106 mekanism:thermal_evaporation_block
-setblock 169 64 107 mekanism:thermal_evaporation_block
-setblock 170 64 104 mekanism:thermal_evaporation_block
-setblock 170 64 105 mekanism:thermal_evaporation_block
-setblock 170 64 106 mekanism:thermal_evaporation_block
-setblock 170 64 107 mekanism:thermal_evaporation_block
-setblock 167 65 104 mekanism:thermal_evaporation_block
-setblock 167 65 105 mekanism:thermal_evaporation_block
-setblock 167 65 106 mekanism:thermal_evaporation_block
-setblock 167 65 107 mekanism:thermal_evaporation_block
-setblock 168 65 104 mekanism:thermal_evaporation_block
-setblock 168 65 107 mekanism:thermal_evaporation_block
-setblock 169 65 104 mekanism:thermal_evaporation_block
-setblock 169 65 107 mekanism:thermal_evaporation_block
-setblock 170 65 104 mekanism:thermal_evaporation_block
-setblock 170 65 105 mekanism:thermal_evaporation_block
-setblock 170 65 106 mekanism:thermal_evaporation_block
-setblock 170 65 107 mekanism:thermal_evaporation_block
-setblock 167 66 104 mekanism:thermal_evaporation_block
-setblock 167 66 105 mekanism:thermal_evaporation_block
-setblock 167 66 106 mekanism:thermal_evaporation_block
-setblock 167 66 107 mekanism:thermal_evaporation_block
-setblock 168 66 104 mekanism:thermal_evaporation_block
-setblock 168 66 107 mekanism:thermal_evaporation_block
-setblock 169 66 104 mekanism:thermal_evaporation_block
-setblock 169 66 107 mekanism:thermal_evaporation_block
-setblock 170 66 104 mekanism:thermal_evaporation_block
-setblock 170 66 105 mekanism:thermal_evaporation_block
-setblock 170 66 106 mekanism:thermal_evaporation_block
-setblock 170 66 107 mekanism:thermal_evaporation_block
-setblock 167 67 104 mekanism:thermal_evaporation_block
-setblock 167 67 105 mekanism:thermal_evaporation_block
-setblock 167 67 106 mekanism:thermal_evaporation_block
-setblock 167 67 107 mekanism:thermal_evaporation_block
-setblock 168 67 104 mekanism:thermal_evaporation_block
-setblock 168 67 107 mekanism:thermal_evaporation_block
-setblock 169 67 104 mekanism:thermal_evaporation_block
-setblock 169 67 107 mekanism:thermal_evaporation_block
-setblock 170 67 104 mekanism:thermal_evaporation_block
-setblock 170 67 105 mekanism:thermal_evaporation_block
-setblock 170 67 106 mekanism:thermal_evaporation_block
-setblock 170 67 107 mekanism:thermal_evaporation_block
-setblock 167 68 104 mekanism:thermal_evaporation_block
-setblock 167 68 105 mekanism:thermal_evaporation_block
-setblock 167 68 106 mekanism:thermal_evaporation_block
-setblock 167 68 107 mekanism:thermal_evaporation_block
-setblock 168 68 104 mekanism:thermal_evaporation_block
-setblock 168 68 107 mekanism:thermal_evaporation_block
-setblock 169 68 104 mekanism:thermal_evaporation_block
-setblock 169 68 107 mekanism:thermal_evaporation_block
-setblock 170 68 104 mekanism:thermal_evaporation_block
-setblock 170 68 105 mekanism:thermal_evaporation_block
-setblock 170 68 106 mekanism:thermal_evaporation_block
-setblock 170 68 107 mekanism:thermal_evaporation_block
-setblock 167 69 104 mekanism:thermal_evaporation_block
-setblock 167 69 105 mekanism:thermal_evaporation_block
-setblock 167 69 106 mekanism:thermal_evaporation_block
-setblock 167 69 107 mekanism:thermal_evaporation_block
-setblock 168 69 104 mekanism:thermal_evaporation_block
-setblock 168 69 107 mekanism:thermal_evaporation_block
-setblock 169 69 104 mekanism:thermal_evaporation_block
-setblock 169 69 107 mekanism:thermal_evaporation_block
-setblock 170 69 104 mekanism:thermal_evaporation_block
-setblock 170 69 105 mekanism:thermal_evaporation_block
-setblock 170 69 106 mekanism:thermal_evaporation_block
-setblock 170 69 107 mekanism:thermal_evaporation_block
-setblock 168 66 107 mekanism:thermal_evaporation_controller[facing=south,active=false]
-setblock 169 65 107 mekanism:thermal_evaporation_valve
-setblock 170 65 106 mekanism:thermal_evaporation_valve
+# 053 mekanism_ores/full
+#area 125 97 144 122
+fill 125 64 97 144 91 122 minecraft:air
+fill 125 60 97 144 62 122 minecraft:stone
+fill 125 63 97 144 63 122 minecraft:light_gray_concrete
+fill 129 64 103 144 79 103 minecraft:light_gray_concrete
+fill 129 64 103 129 79 116 minecraft:light_gray_concrete
+setblock 130 64 115 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "053"}','{"text": "mekanism_ores"}','{"text": "full"}','{"text": ""}']}}
+setblock 131 64 115 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "a machine GUI"}','{"text": "with 8 speed"}','{"text": "and 8 energy"}','{"text": "upgrades"}']}}
+fill 139 64 103 139 79 116 minecraft:light_gray_concrete
+setblock 133 64 108 minecraft:smooth_stone_slab
+summon item_display 133.5 64.95 108.5 {item:{id:"mekanism:upgrade_speed",count:1},item_display:"fixed",billboard:"vertical",transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[1.0f,1.0f,1.0f]},brightness:{sky:15,block:15},Tags:["kw_shot"]}
+setblock 135 64 108 minecraft:smooth_stone_slab
+summon item_display 135.5 64.95 108.5 {item:{id:"mekanism:upgrade_energy",count:1},item_display:"fixed",billboard:"vertical",transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[1.0f,1.0f,1.0f]},brightness:{sky:15,block:15},Tags:["kw_shot"]}
 execute as @e[type=minecraft:item,tag=!kw_shot] run kill @s

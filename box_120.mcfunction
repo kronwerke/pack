@@ -1,22 +1,14 @@
-# 120 immersive/coke_oven, pump
-#area 11 217 40 242
-fill 11 64 217 40 91 242 minecraft:air
-fill 11 60 217 40 62 242 minecraft:stone
-fill 11 63 217 40 63 242 minecraft:light_gray_concrete
-fill 15 64 223 40 79 223 minecraft:light_gray_concrete
-fill 15 64 223 15 79 236 minecraft:light_gray_concrete
-setblock 16 64 235 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "120.1"}','{"text": "immersive"}','{"text": "coke_oven"}','{"text": ""}']}}
-setblock 17 64 235 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "formed coke"}','{"text": "oven with GUI,"}','{"text": "the bucket"}','{"text": "slot, a pump"}']}}
-setblock 18 64 235 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "with pipes"}','{"text": ""}','{"text": ""}','{"text": ""}']}}
-fill 25 64 223 25 79 236 minecraft:light_gray_concrete
-place template immersiveengineering:multiblocks/coke_oven 19 64 226 none
-kw testworld use 20 65 228 south immersiveengineering:hammer
-execute unless block 20 65 228 immersiveengineering:cokebrick
-setblock 26 64 235 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "120.2"}','{"text": "immersive"}','{"text": "pump"}','{"text": ""}']}}
-setblock 27 64 235 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Pump das"}','{"text": "Kreosot ab"}','{"text": ""}','{"text": ""}']}}
-fill 35 64 223 35 79 236 minecraft:light_gray_concrete
-setblock 29 64 228 minecraft:smooth_stone_slab
-summon item_display 29.5 64.95 228.5 {item:{id:"immersiveengineering:fluid_pump",count:1},item_display:"fixed",billboard:"vertical",transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[1.0f,1.0f,1.0f]},brightness:{sky:15,block:15},Tags:["kw_shot"]}
-setblock 31 64 228 minecraft:smooth_stone_slab
-summon item_display 31.5 64.95 228.5 {item:{id:"immersiveengineering:fluid_pipe",count:1},item_display:"fixed",billboard:"vertical",transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[1.0f,1.0f,1.0f]},brightness:{sky:15,block:15},Tags:["kw_shot"]}
+# 120 occultism/djinni_familiars
+#area 125 184 146 209
+fill 125 64 184 146 91 209 minecraft:air
+fill 125 60 184 146 62 209 minecraft:stone
+fill 125 63 184 146 63 209 minecraft:light_gray_concrete
+fill 129 64 190 146 79 190 minecraft:light_gray_concrete
+fill 129 64 190 129 79 203 minecraft:light_gray_concrete
+setblock 130 64 202 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "120"}','{"text": "occultism"}','{"text": "djinni_familiars"}','{"text": ""}']}}
+setblock 131 64 202 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "a player with"}','{"text": "two or three"}','{"text": "familiars"}','{"text": ""}']}}
+fill 141 64 190 141 79 203 minecraft:light_gray_concrete
+summon occultism:dragon_familiar 132.5 64 195.5 {NoAI:1b,PersistenceRequired:1b,Silent:1b,Tags:["kw_shot"],Rotation:[180f,0f]}
+summon occultism:greedy_familiar 135.5 64 195.5 {NoAI:1b,PersistenceRequired:1b,Silent:1b,Tags:["kw_shot"],Rotation:[180f,0f]}
+summon occultism:deer_familiar 138.5 64 195.5 {NoAI:1b,PersistenceRequired:1b,Silent:1b,Tags:["kw_shot"],Rotation:[180f,0f]}
 execute as @e[type=minecraft:item,tag=!kw_shot] run kill @s

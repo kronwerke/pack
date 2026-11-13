@@ -1,27 +1,14 @@
-# 098 alfheim/frame
-#area 285 145 306 170
-fill 285 64 145 306 91 170 minecraft:air
-fill 285 60 145 306 62 170 minecraft:stone
-fill 285 63 145 306 63 170 minecraft:light_gray_concrete
-fill 289 64 151 306 79 151 minecraft:light_gray_concrete
-fill 289 64 151 289 79 164 minecraft:light_gray_concrete
-setblock 290 64 163 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "098"}','{"text": "alfheim"}','{"text": "frame"}','{"text": ""}']}}
-setblock 291 64 163 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "the finished"}','{"text": "gateway with"}','{"text": "two pools and"}','{"text": "natura pylons"}']}}
-fill 301 64 151 301 79 164 minecraft:light_gray_concrete
-setblock 295 64 155 botania:elven_gateway_core
-setblock 294 64 155 botania:livingwood_log[axis=x]
-setblock 294 68 155 botania:livingwood_log[axis=x]
-setblock 296 64 155 botania:livingwood_log[axis=x]
-setblock 296 68 155 botania:livingwood_log[axis=x]
-setblock 295 68 155 botania:glimmering_livingwood_log[axis=x]
-setblock 293 65 155 botania:livingwood_log[axis=y]
-setblock 293 66 155 botania:glimmering_livingwood_log[axis=y]
-setblock 293 67 155 botania:livingwood_log[axis=y]
-setblock 297 65 155 botania:livingwood_log[axis=y]
-setblock 297 66 155 botania:glimmering_livingwood_log[axis=y]
-setblock 297 67 155 botania:livingwood_log[axis=y]
-setblock 291 64 157 botania:mana_pool{mana:1000000}
-setblock 291 65 157 botania:natura_pylon
-setblock 299 64 157 botania:mana_pool{mana:1000000}
-setblock 299 65 157 botania:natura_pylon
+# 098 botania_runes/thermalily
+#area 137 147 156 172
+fill 137 64 147 156 91 172 minecraft:air
+fill 137 60 147 156 62 172 minecraft:stone
+fill 137 63 147 156 63 172 minecraft:light_gray_concrete
+fill 141 64 153 156 79 153 minecraft:light_gray_concrete
+fill 141 64 153 141 79 166 minecraft:light_gray_concrete
+setblock 142 64 165 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "098"}','{"text": "botania_runes"}','{"text": "thermalily"}','{"text": ""}']}}
+setblock 143 64 165 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "a hose pulley"}','{"text": "feeding lava"}','{"text": "next to the"}','{"text": "lily"}']}}
+fill 151 64 153 151 79 166 minecraft:light_gray_concrete
+fill 144 63 157 148 63 159 minecraft:grass_block[snowy=false]
+setblock 147 63 158 minecraft:lava
+setblock 146 64 158 botania:thermalily
 execute as @e[type=minecraft:item,tag=!kw_shot] run kill @s

@@ -1,41 +1,15 @@
-# 163 draconic/dust, injectors, stabilizer
-#area -4 384 39 411
-fill -4 64 384 36 91 411 minecraft:air
-fill 37 64 384 39 91 411 minecraft:air
-fill -4 60 384 39 62 411 minecraft:stone
-fill -4 63 384 39 63 411 minecraft:light_gray_concrete
-fill 0 64 390 39 79 390 minecraft:light_gray_concrete
-fill 0 64 390 0 79 405 minecraft:light_gray_concrete
-setblock 1 64 404 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "163.1"}','{"text": "draconic"}','{"text": "dust"}','{"text": ""}']}}
-setblock 2 64 404 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Bau Draconium"}','{"text": "im End ab"}','{"text": ""}','{"text": ""}']}}
-fill 10 64 390 10 79 405 minecraft:light_gray_concrete
-fill 4 64 394 6 65 395 minecraft:end_stone
-setblock 5 64 395 draconicevolution:end_draconium_ore
-setblock 6 65 395 draconicevolution:end_draconium_ore
-setblock 4 65 394 draconicevolution:end_draconium_ore
-setblock 11 64 404 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "163.2"}','{"text": "draconic"}','{"text": "injectors"}','{"text": ""}']}}
-setblock 12 64 404 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Stell acht"}','{"text": "Draconium-Injektoren"}','{"text": "auf"}','{"text": ""}']}}
-fill 22 64 390 22 79 405 minecraft:light_gray_concrete
-setblock 16 64 396 draconicevolution:crafting_core
-setblock 13 64 395 draconicevolution:basic_crafting_injector[facing=east]
-setblock 15 64 393 draconicevolution:basic_crafting_injector[facing=south]
-setblock 19 64 395 draconicevolution:basic_crafting_injector[facing=west]
-setblock 15 64 399 draconicevolution:basic_crafting_injector[facing=north]
-setblock 13 64 397 draconicevolution:basic_crafting_injector[facing=east]
-setblock 17 64 393 draconicevolution:basic_crafting_injector[facing=south]
-setblock 19 64 397 draconicevolution:basic_crafting_injector[facing=west]
-setblock 17 64 399 draconicevolution:basic_crafting_injector[facing=north]
-setblock 23 64 404 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "163.3"}','{"text": "draconic"}','{"text": "stabilizer"}','{"text": ""}']}}
-setblock 24 64 404 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Bau vier"}','{"text": "Stabilisatoren"}','{"text": "mit Gaia"}','{"text": ""}']}}
-fill 34 64 390 34 79 405 minecraft:light_gray_concrete
-fill 27 64 395 29 66 397 draconicevolution:draconium_block
-setblock 28 65 396 draconicevolution:energy_core
-setblock 24 64 396 minecraft:polished_deepslate
-setblock 24 65 396 draconicevolution:energy_core_stabilizer
-setblock 32 64 396 minecraft:polished_deepslate
-setblock 32 65 396 draconicevolution:energy_core_stabilizer
-setblock 28 64 392 minecraft:polished_deepslate
-setblock 28 65 392 draconicevolution:energy_core_stabilizer
-setblock 28 64 400 minecraft:polished_deepslate
-setblock 28 65 400 draconicevolution:energy_core_stabilizer
+# 163 flux_networks/dust
+#area 58 319 77 344
+fill 58 64 319 77 91 344 minecraft:air
+fill 58 60 319 77 62 344 minecraft:stone
+fill 58 63 319 77 63 344 minecraft:light_gray_concrete
+fill 62 64 325 77 79 325 minecraft:light_gray_concrete
+fill 62 64 325 62 79 338 minecraft:light_gray_concrete
+setblock 63 64 337 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "163"}','{"text": "flux_networks"}','{"text": "dust"}','{"text": ""}']}}
+setblock 64 64 337 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "the bedrock gap"}','{"text": "with redstone"}','{"text": "and obsidian,"}','{"text": "left-clicking"}']}}
+setblock 65 64 337 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "the obsidian"}','{"text": ""}','{"text": ""}','{"text": ""}']}}
+fill 72 64 325 72 79 338 minecraft:light_gray_concrete
+setblock 67 64 330 minecraft:bedrock
+summon item 67.5 65.1 330.5 {Item:{id:"minecraft:redstone",count:64},PickupDelay:32767,Age:-32768,Tags:["kw_shot"]}
+setblock 67 66 330 minecraft:obsidian
 execute as @e[type=minecraft:item,tag=!kw_shot] run kill @s

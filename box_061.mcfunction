@@ -1,12 +1,137 @@
-# 061 antimatter/wind
-#area 295 95 314 124
-fill 295 64 95 314 95 124 minecraft:air
-fill 295 60 95 314 62 124 minecraft:stone
-fill 295 63 95 314 63 124 minecraft:light_gray_concrete
-fill 299 64 101 314 83 101 minecraft:light_gray_concrete
-fill 299 64 101 299 83 118 minecraft:light_gray_concrete
-setblock 300 64 117 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "061"}','{"text": "antimatter"}','{"text": "wind"}','{"text": ""}']}}
-setblock 301 64 117 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "the large wind"}','{"text": "generator"}','{"text": ""}','{"text": ""}']}}
-fill 309 64 101 309 83 118 minecraft:light_gray_concrete
-kw testworld use 304 63 105 up mekanismgenerators:wind_generator
+# 061 mekanism_elite/induction_matrix
+#area 255 97 276 124
+fill 255 64 97 276 91 124 minecraft:air
+fill 255 60 97 276 62 124 minecraft:stone
+fill 255 63 97 276 63 124 minecraft:light_gray_concrete
+fill 259 64 103 276 79 103 minecraft:light_gray_concrete
+fill 259 64 103 259 79 118 minecraft:light_gray_concrete
+setblock 260 64 117 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "061"}','{"text": "mekanism_elite"}','{"text": "induction_matrix"}','{"text": ""}']}}
+setblock 261 64 117 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "matrix with"}','{"text": "cells and"}','{"text": "providers"}','{"text": "behind glass,"}']}}
+setblock 262 64 117 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "port GUI"}','{"text": ""}','{"text": ""}','{"text": ""}']}}
+fill 271 64 103 271 79 118 minecraft:light_gray_concrete
+setblock 263 64 107 mekanism:induction_casing
+setblock 263 64 108 mekanism:induction_casing
+setblock 263 64 109 mekanism:induction_casing
+setblock 263 64 110 mekanism:induction_casing
+setblock 263 64 111 mekanism:induction_casing
+setblock 263 65 107 mekanism:induction_casing
+setblock 263 65 108 mekanism:structural_glass
+setblock 263 65 109 mekanism:structural_glass
+setblock 263 65 110 mekanism:structural_glass
+setblock 263 65 111 mekanism:induction_casing
+setblock 263 66 107 mekanism:induction_casing
+setblock 263 66 108 mekanism:structural_glass
+setblock 263 66 109 mekanism:structural_glass
+setblock 263 66 110 mekanism:structural_glass
+setblock 263 66 111 mekanism:induction_casing
+setblock 263 67 107 mekanism:induction_casing
+setblock 263 67 108 mekanism:structural_glass
+setblock 263 67 109 mekanism:structural_glass
+setblock 263 67 110 mekanism:structural_glass
+setblock 263 67 111 mekanism:induction_casing
+setblock 263 68 107 mekanism:induction_casing
+setblock 263 68 108 mekanism:induction_casing
+setblock 263 68 109 mekanism:induction_casing
+setblock 263 68 110 mekanism:induction_casing
+setblock 263 68 111 mekanism:induction_casing
+setblock 264 64 107 mekanism:induction_casing
+setblock 264 64 108 mekanism:induction_casing
+setblock 264 64 109 mekanism:induction_casing
+setblock 264 64 110 mekanism:induction_casing
+setblock 264 64 111 mekanism:induction_casing
+setblock 264 65 107 mekanism:structural_glass
+setblock 264 65 111 mekanism:structural_glass
+setblock 264 66 107 mekanism:structural_glass
+setblock 264 66 111 mekanism:structural_glass
+setblock 264 67 107 mekanism:structural_glass
+setblock 264 67 111 mekanism:structural_glass
+setblock 264 68 107 mekanism:induction_casing
+setblock 264 68 108 mekanism:structural_glass
+setblock 264 68 109 mekanism:structural_glass
+setblock 264 68 110 mekanism:structural_glass
+setblock 264 68 111 mekanism:induction_casing
+setblock 265 64 107 mekanism:induction_casing
+setblock 265 64 108 mekanism:induction_casing
+setblock 265 64 109 mekanism:induction_casing
+setblock 265 64 110 mekanism:induction_casing
+setblock 265 64 111 mekanism:induction_casing
+setblock 265 65 107 mekanism:structural_glass
+setblock 265 65 111 mekanism:structural_glass
+setblock 265 66 107 mekanism:structural_glass
+setblock 265 66 111 mekanism:structural_glass
+setblock 265 67 107 mekanism:structural_glass
+setblock 265 67 111 mekanism:structural_glass
+setblock 265 68 107 mekanism:induction_casing
+setblock 265 68 108 mekanism:structural_glass
+setblock 265 68 109 mekanism:structural_glass
+setblock 265 68 110 mekanism:structural_glass
+setblock 265 68 111 mekanism:induction_casing
+setblock 266 64 107 mekanism:induction_casing
+setblock 266 64 108 mekanism:induction_casing
+setblock 266 64 109 mekanism:induction_casing
+setblock 266 64 110 mekanism:induction_casing
+setblock 266 64 111 mekanism:induction_casing
+setblock 266 65 107 mekanism:structural_glass
+setblock 266 65 111 mekanism:structural_glass
+setblock 266 66 107 mekanism:structural_glass
+setblock 266 66 111 mekanism:structural_glass
+setblock 266 67 107 mekanism:structural_glass
+setblock 266 67 111 mekanism:structural_glass
+setblock 266 68 107 mekanism:induction_casing
+setblock 266 68 108 mekanism:structural_glass
+setblock 266 68 109 mekanism:structural_glass
+setblock 266 68 110 mekanism:structural_glass
+setblock 266 68 111 mekanism:induction_casing
+setblock 267 64 107 mekanism:induction_casing
+setblock 267 64 108 mekanism:induction_casing
+setblock 267 64 109 mekanism:induction_casing
+setblock 267 64 110 mekanism:induction_casing
+setblock 267 64 111 mekanism:induction_casing
+setblock 267 65 107 mekanism:induction_casing
+setblock 267 65 108 mekanism:structural_glass
+setblock 267 65 109 mekanism:induction_port[active=false]
+setblock 267 65 110 mekanism:structural_glass
+setblock 267 65 111 mekanism:induction_casing
+setblock 267 66 107 mekanism:induction_casing
+setblock 267 66 108 mekanism:structural_glass
+setblock 267 66 109 mekanism:structural_glass
+setblock 267 66 110 mekanism:structural_glass
+setblock 267 66 111 mekanism:induction_casing
+setblock 267 67 107 mekanism:induction_casing
+setblock 267 67 108 mekanism:structural_glass
+setblock 267 67 109 mekanism:induction_port[active=true]
+setblock 267 67 110 mekanism:structural_glass
+setblock 267 67 111 mekanism:induction_casing
+setblock 267 68 107 mekanism:induction_casing
+setblock 267 68 108 mekanism:induction_casing
+setblock 267 68 109 mekanism:induction_casing
+setblock 267 68 110 mekanism:induction_casing
+setblock 267 68 111 mekanism:induction_casing
+setblock 264 65 108 mekanism:basic_induction_cell
+setblock 264 65 109 mekanism:basic_induction_provider
+setblock 264 65 110 mekanism:basic_induction_cell
+setblock 264 66 108 mekanism:basic_induction_cell
+setblock 264 66 109 mekanism:basic_induction_cell
+setblock 264 66 110 mekanism:basic_induction_cell
+setblock 264 67 108 mekanism:basic_induction_cell
+setblock 264 67 109 mekanism:basic_induction_cell
+setblock 264 67 110 mekanism:basic_induction_cell
+setblock 265 65 108 mekanism:basic_induction_cell
+setblock 265 65 109 mekanism:basic_induction_provider
+setblock 265 65 110 mekanism:basic_induction_cell
+setblock 265 66 108 mekanism:basic_induction_cell
+setblock 265 66 109 mekanism:basic_induction_cell
+setblock 265 66 110 mekanism:basic_induction_cell
+setblock 265 67 108 mekanism:basic_induction_cell
+setblock 265 67 109 mekanism:basic_induction_cell
+setblock 265 67 110 mekanism:basic_induction_cell
+setblock 266 65 108 mekanism:basic_induction_cell
+setblock 266 65 109 mekanism:basic_induction_provider
+setblock 266 65 110 mekanism:basic_induction_cell
+setblock 266 66 108 mekanism:basic_induction_cell
+setblock 266 66 109 mekanism:basic_induction_cell
+setblock 266 66 110 mekanism:basic_induction_cell
+setblock 266 67 108 mekanism:basic_induction_cell
+setblock 266 67 109 mekanism:basic_induction_cell
+setblock 266 67 110 mekanism:basic_induction_cell
 execute as @e[type=minecraft:item,tag=!kw_shot] run kill @s

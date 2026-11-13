@@ -1,13 +1,29 @@
-# 101 alfheim/elementium_armor
-#area 334 145 353 170
-fill 334 64 145 353 91 170 minecraft:air
-fill 334 60 145 353 62 170 minecraft:stone
-fill 334 63 145 353 63 170 minecraft:light_gray_concrete
-fill 338 64 151 353 79 151 minecraft:light_gray_concrete
-fill 338 64 151 338 79 164 minecraft:light_gray_concrete
-setblock 339 64 163 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "101"}','{"text": "alfheim"}','{"text": "elementium_armor"}','{"text": ""}']}}
-setblock 340 64 163 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "a pixie"}','{"text": "attacking a mob"}','{"text": ""}','{"text": ""}']}}
-fill 348 64 151 348 79 164 minecraft:light_gray_concrete
-summon armor_stand 342.5 64 156.5 {ArmorItems:[{id:"botania:elementium_boots",count:1},{id:"botania:elementium_leggings",count:1},{id:"botania:elementium_chestplate",count:1},{id:"botania:elementium_helmet",count:1}],ShowArms:1b,NoBasePlate:1b,Tags:["kw_shot"],Rotation:[180f,0f]}
-summon botania:pixie 345.5 65 156.5 {NoAI:1b,PersistenceRequired:1b,Silent:1b,Tags:["kw_shot"],Rotation:[180f,0f]}
+# 101 botania_runes/terrasteel
+#area 182 147 203 172
+fill 182 64 147 203 91 172 minecraft:air
+fill 182 60 147 203 62 172 minecraft:stone
+fill 182 63 147 203 63 172 minecraft:light_gray_concrete
+fill 186 64 153 203 79 153 minecraft:light_gray_concrete
+fill 186 64 153 186 79 166 minecraft:light_gray_concrete
+setblock 187 64 165 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "101"}','{"text": "botania_runes"}','{"text": "terrasteel"}','{"text": ""}']}}
+setblock 188 64 165 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "the plate mid"}','{"text": "craft"}','{"text": ""}','{"text": ""}']}}
+fill 198 64 153 198 79 166 minecraft:light_gray_concrete
+setblock 191 64 157 botania:livingrock
+setblock 191 64 158 minecraft:lapis_block
+setblock 191 64 159 botania:livingrock
+setblock 192 64 157 minecraft:lapis_block
+setblock 192 64 158 botania:livingrock
+setblock 192 64 159 minecraft:lapis_block
+setblock 193 64 157 botania:livingrock
+setblock 193 64 158 minecraft:lapis_block
+setblock 193 64 159 botania:livingrock
+setblock 192 65 158 botania:terrestrial_agglomeration_plate
+summon botania:mana_spark 192.5 66.25 158.5 {Tags:["kw_shot"]}
+setblock 188 64 158 botania:mana_pool{mana:1000000}
+summon botania:mana_spark 188.5 65.25 158.5 {Tags:["kw_shot"]}
+setblock 196 64 158 botania:mana_pool{mana:1000000}
+summon botania:mana_spark 196.5 65.25 158.5 {Tags:["kw_shot"]}
+summon item 192.5 65.3 158.5 {Item:{id:"botania:manasteel_ingot",count:1},PickupDelay:32767,Age:-32768,Tags:["kw_shot"]}
+summon item 192.5 65.3 158.5 {Item:{id:"botania:mana_pearl",count:1},PickupDelay:32767,Age:-32768,Tags:["kw_shot"]}
+summon item 192.5 65.3 158.5 {Item:{id:"botania:mana_diamond",count:1},PickupDelay:32767,Age:-32768,Tags:["kw_shot"]}
 execute as @e[type=minecraft:item,tag=!kw_shot] run kill @s

@@ -1,21 +1,12 @@
-# 041 create_trains/cargo
-#area 46 68 65 95
-fill 46 64 68 65 91 95 minecraft:air
-fill 46 60 68 65 62 95 minecraft:stone
-fill 46 63 68 65 63 95 minecraft:light_gray_concrete
-fill 50 64 74 65 79 74 minecraft:light_gray_concrete
-fill 50 64 74 50 79 89 minecraft:light_gray_concrete
-setblock 51 64 88 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "041"}','{"text": "create_trains"}','{"text": "cargo"}','{"text": ""}']}}
-setblock 52 64 88 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "a portable"}','{"text": "storage"}','{"text": "interface pair"}','{"text": "at a platform"}']}}
-fill 60 64 74 60 79 89 minecraft:light_gray_concrete
-fill 55 64 76 55 64 84 create:track[shape=zo,turn=false,waterlogged=false]
-setblock 55 65 78 create:small_bogey[axis=z,waterlogged=false]
-setblock 55 65 82 create:small_bogey[axis=z,waterlogged=false]
-fill 55 66 78 55 66 82 create:railway_casing
-setblock 55 67 79 minecraft:barrel[facing=up]
-setblock 55 67 80 create:portable_storage_interface[facing=east]
-setblock 55 67 81 minecraft:barrel[facing=up]
-fill 58 64 80 58 66 80 minecraft:stone_bricks
-setblock 58 67 80 minecraft:barrel[facing=up]
-setblock 57 67 80 create:portable_storage_interface[facing=west]
+# 041 create_trains/schedule
+#area -4 70 22 100
+fill -4 64 70 22 91 100 minecraft:air
+fill -4 60 70 22 62 100 minecraft:stone
+fill -4 63 70 22 63 100 minecraft:light_gray_concrete
+fill 0 64 76 22 79 76 minecraft:light_gray_concrete
+fill 0 64 76 0 79 94 minecraft:light_gray_concrete
+setblock 1 64 93 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "041"}','{"text": "create_trains"}','{"text": "schedule"}','{"text": ""}']}}
+setblock 2 64 93 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "the schedule"}','{"text": "screen with"}','{"text": "conditions"}','{"text": ""}']}}
+fill 17 64 76 17 79 94 minecraft:light_gray_concrete
+kw testworld place shots:create/train_station/schedule 2 63 78 none
 execute as @e[type=minecraft:item,tag=!kw_shot] run kill @s

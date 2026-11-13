@@ -1,32 +1,50 @@
-# 174 list_gear/mek_jetpack, drilling, wyvern, sg_end
-#area 293 405 344 434
-fill 293 64 405 331 91 434 minecraft:air
-fill 332 64 405 344 91 434 minecraft:air
-fill 293 60 405 344 62 434 minecraft:stone
-fill 293 63 405 344 63 434 minecraft:light_gray_concrete
-fill 297 64 411 344 79 411 minecraft:light_gray_concrete
-fill 297 64 411 297 79 428 minecraft:light_gray_concrete
-setblock 298 64 427 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "174.1"}','{"text": "list_gear"}','{"text": "mek_jetpack"}','{"text": ""}']}}
-setblock 299 64 427 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Flieg mit dem"}','{"text": "Jetpack"}','{"text": ""}','{"text": ""}']}}
-fill 307 64 411 307 79 428 minecraft:light_gray_concrete
-summon armor_stand 302.5 64 416.5 {ArmorItems:[{},{},{id:"mekanism:jetpack",count:1},{}],ShowArms:1b,NoBasePlate:1b,Tags:["kw_shot"],Rotation:[20f,0f]}
-setblock 308 64 427 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "174.2"}','{"text": "list_gear"}','{"text": "drilling"}','{"text": ""}']}}
-setblock 309 64 427 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Stell eine"}','{"text": "Bohrmaschine"}','{"text": "auf"}','{"text": ""}']}}
-fill 319 64 411 319 79 428 minecraft:light_gray_concrete
-kw testworld place shots:createoreexcavation/drilling_machine 309 63 413 none
-setblock 320 64 427 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "174.3"}','{"text": "list_gear"}','{"text": "wyvern"}','{"text": ""}']}}
-setblock 321 64 427 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Fusioniere"}','{"text": "Wyvern-Ausrüstung"}','{"text": ""}','{"text": ""}']}}
-fill 329 64 411 329 79 428 minecraft:light_gray_concrete
-summon armor_stand 323.5 64 416.5 {ArmorItems:[{},{},{id:"draconicevolution:wyvern_chestpiece",count:1},{}],HandItems:[{id:"draconicevolution:wyvern_sword",count:1},{}],ShowArms:1b,NoBasePlate:1b,Tags:["kw_shot"],Rotation:[180f,0f]}
-summon armor_stand 325.5 64 416.5 {ArmorItems:[{},{},{},{}],HandItems:[{id:"draconicevolution:wyvern_pickaxe",count:1},{}],ShowArms:1b,NoBasePlate:1b,Tags:["kw_shot"],Rotation:[180f,0f]}
-setblock 330 64 427 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "174.4"}','{"text": "list_gear"}','{"text": "sg_end"}','{"text": ""}']}}
-setblock 331 64 427 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Schmiede"}','{"text": "Azur-Elektrum"}','{"text": "und"}','{"text": "Tyrann-Stahl"}']}}
-fill 339 64 411 339 79 428 minecraft:light_gray_concrete
-fill 333 64 415 335 65 415 minecraft:end_stone
-setblock 334 64 415 silentgear:azure_silver_ore
-setblock 335 65 415 silentgear:azure_silver_ore
-setblock 333 64 417 minecraft:smooth_stone_slab
-summon item_display 333.5 64.95 417.5 {item:{id:"silentgear:azure_electrum_ingot",count:1},item_display:"fixed",billboard:"vertical",transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[1.0f,1.0f,1.0f]},brightness:{sky:15,block:15},Tags:["kw_shot"]}
-setblock 335 64 417 minecraft:smooth_stone_slab
-summon item_display 335.5 64.95 417.5 {item:{id:"silentgear:tyrian_steel_ingot",count:1},item_display:"fixed",billboard:"vertical",transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[1.0f,1.0f,1.0f]},brightness:{sky:15,block:15},Tags:["kw_shot"]}
+# 174 undergarden/arrival, guardian, forgotten, depths, infuser
+#area 284 342 344 369
+fill 284 64 342 324 91 369 minecraft:air
+fill 325 64 342 344 91 369 minecraft:air
+fill 284 60 342 344 62 369 minecraft:stone
+fill 284 63 342 344 63 369 minecraft:light_gray_concrete
+fill 288 64 348 344 79 348 minecraft:light_gray_concrete
+fill 288 64 348 288 79 363 minecraft:light_gray_concrete
+setblock 289 64 362 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "174.1"}','{"text": "undergarden"}','{"text": "arrival"}','{"text": ""}']}}
+setblock 290 64 362 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Steig hinunter"}','{"text": ""}','{"text": ""}','{"text": ""}']}}
+fill 297 64 348 297 79 363 minecraft:light_gray_concrete
+setblock 291 65 353 minecraft:stone_bricks
+setblock 291 66 353 minecraft:stone_bricks
+setblock 291 67 353 minecraft:stone_bricks
+setblock 292 64 353 minecraft:stone_bricks
+setblock 292 68 353 minecraft:stone_bricks
+setblock 293 64 353 minecraft:stone_bricks
+setblock 293 68 353 minecraft:stone_bricks
+setblock 294 65 353 minecraft:stone_bricks
+setblock 294 66 353 minecraft:stone_bricks
+setblock 294 67 353 minecraft:stone_bricks
+fill 292 65 353 293 67 353 undergarden:undergarden_portal[axis=x]
+execute if block 292 66 353 undergarden:undergarden_portal
+setblock 298 64 362 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "174.2"}','{"text": "undergarden"}','{"text": "guardian"}','{"text": ""}']}}
+setblock 299 64 362 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Besiege den"}','{"text": "Vergessenen"}','{"text": "Wächter"}','{"text": ""}']}}
+fill 309 64 348 309 79 363 minecraft:light_gray_concrete
+summon undergarden:forgotten_guardian 303.5 64 354.5 {NoAI:1b,PersistenceRequired:1b,Silent:1b,Tags:["kw_shot"],Rotation:[0f,0f]}
+setblock 310 64 362 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "174.3"}','{"text": "undergarden"}','{"text": "forgotten"}','{"text": ""}']}}
+setblock 311 64 362 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Werte die"}','{"text": "Spitzhacke auf"}','{"text": ""}','{"text": ""}']}}
+fill 319 64 348 319 79 363 minecraft:light_gray_concrete
+setblock 314 64 353 minecraft:smooth_stone_slab
+summon item_display 314.5 65.4 353.5 {item:{id:"undergarden:forgotten_pickaxe",count:1},item_display:"fixed",billboard:"vertical",transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[2.0f,2.0f,2.0f]},brightness:{sky:15,block:15},Tags:["kw_shot"]}
+setblock 320 64 362 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "174.4"}','{"text": "undergarden"}','{"text": "depths"}','{"text": ""}']}}
+setblock 321 64 362 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Brich in die"}','{"text": "Tiefen durch"}','{"text": ""}','{"text": ""}']}}
+fill 329 64 348 329 79 363 minecraft:light_gray_concrete
+fill 322 64 352 326 67 353 undergarden:dreadrock
+setblock 323 65 353 undergarden:dreadrock_rogdorium_ore
+setblock 324 65 353 undergarden:dreadrock_rogdorium_ore
+setblock 324 66 353 undergarden:dreadrock_rogdorium_ore
+setblock 325 66 353 undergarden:dreadrock_rogdorium_ore
+setblock 322 67 353 undergarden:dreadrock_rogdorium_ore
+setblock 326 64 353 undergarden:dreadrock_rogdorium_ore
+setblock 324 64 355 minecraft:smooth_stone_slab
+summon item_display 324.5 65.175 355.5 {item:{id:"undergarden:rogdorium",count:1},item_display:"fixed",billboard:"vertical",transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[1.5f,1.5f,1.5f]},brightness:{sky:15,block:15},Tags:["kw_shot"]}
+setblock 330 64 362 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "174.5"}','{"text": "undergarden"}','{"text": "infuser"}','{"text": ""}']}}
+setblock 331 64 362 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Bau den"}','{"text": "Infusionstisch"}','{"text": ""}','{"text": ""}']}}
+fill 339 64 348 339 79 363 minecraft:light_gray_concrete
+fill 333 63 352 335 63 354 undergarden:depthrock
+setblock 334 64 353 undergarden:infuser[state=infusing_utherium]
 execute as @e[type=minecraft:item,tag=!kw_shot] run kill @s

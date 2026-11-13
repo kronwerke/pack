@@ -1,25 +1,24 @@
-# 027 create_brass/crafter
-#area 201 42 220 67
-fill 201 64 42 220 91 67 minecraft:air
-fill 201 60 42 220 62 67 minecraft:stone
-fill 201 63 42 220 63 67 minecraft:light_gray_concrete
-fill 205 64 48 220 79 48 minecraft:light_gray_concrete
-fill 205 64 48 205 79 61 minecraft:light_gray_concrete
-setblock 206 64 60 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "027"}','{"text": "create_brass"}','{"text": "crafter"}','{"text": ""}']}}
-setblock 207 64 60 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "a 3x3"}','{"text": "mechanical"}','{"text": "crafter grid"}','{"text": "with its arrows"}']}}
-fill 215 64 48 215 79 61 minecraft:light_gray_concrete
-setblock 209 64 53 create:mechanical_crafter[facing=south,pointing=right]
-setblock 209 65 53 create:mechanical_crafter[facing=south,pointing=down]
-setblock 209 66 53 create:mechanical_crafter[facing=south,pointing=down]
-setblock 210 64 53 create:mechanical_crafter[facing=south,pointing=right]
-setblock 210 65 53 create:mechanical_crafter[facing=south,pointing=down]
-setblock 210 66 53 create:mechanical_crafter[facing=south,pointing=down]
-setblock 211 64 53 create:mechanical_crafter[facing=south,pointing=right]
-setblock 211 65 53 create:mechanical_crafter[facing=south,pointing=down]
-setblock 211 66 53 create:mechanical_crafter[facing=south,pointing=down]
-setblock 212 64 53 create:depot
-setblock 208 64 53 create:cogwheel[axis=z]
-fill 207 64 52 209 65 52 create:andesite_casing
-setblock 208 64 52 create:andesite_encased_shaft[axis=z]
-setblock 208 64 51 create:creative_motor[facing=south]{ScrollValue:32}
+# 027 create_brass/brass_mixing
+#area 169 44 188 69
+fill 169 64 44 188 91 69 minecraft:air
+fill 169 60 44 188 62 69 minecraft:stone
+fill 169 63 44 188 63 69 minecraft:light_gray_concrete
+fill 173 64 50 188 79 50 minecraft:light_gray_concrete
+fill 173 64 50 173 79 63 minecraft:light_gray_concrete
+setblock 174 64 62 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "027"}','{"text": "create_brass"}','{"text": "brass_mixing"}','{"text": ""}']}}
+setblock 175 64 62 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "heated burner,"}','{"text": "basin and mixer"}','{"text": "stack"}','{"text": ""}']}}
+fill 183 64 50 183 79 63 minecraft:light_gray_concrete
+setblock 178 64 55 create:blaze_burner[blaze=smouldering]
+kw testworld use 178 64 55 south create:creative_blaze_cake
+setblock 178 65 55 create:basin[facing=down]
+setblock 178 67 55 create:mechanical_mixer
+setblock 179 67 55 create:cogwheel[axis=y]
+setblock 179 63 55 create:shaft[axis=y]
+setblock 179 64 55 create:shaft[axis=y]
+setblock 179 65 55 create:shaft[axis=y]
+setblock 179 66 55 create:shaft[axis=y]
+setblock 179 62 55 create:creative_motor[facing=up]{ScrollValue:32}
+summon item 178.5 66.2 55.5 {Item:{id:"minecraft:copper_ingot",count:64},PickupDelay:32767,Age:-32768,Tags:["kw_shot"]}
+summon item 178.5 66.2 55.5 {Item:{id:"create:zinc_ingot",count:32},PickupDelay:32767,Age:-32768,Tags:["kw_shot"]}
+summon item 178.5 66.2 55.5 {Item:{id:"minecraft:blaze_powder",count:32},PickupDelay:32767,Age:-32768,Tags:["kw_shot"]}
 execute as @e[type=minecraft:item,tag=!kw_shot] run kill @s

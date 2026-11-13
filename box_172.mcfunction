@@ -1,36 +1,48 @@
-# 172 eidolon/brazier, crucible, altar, stone_altar
-#area 181 405 230 430
-fill 181 64 405 225 91 430 minecraft:air
-fill 226 64 405 230 91 430 minecraft:air
-fill 181 60 405 230 62 430 minecraft:stone
-fill 181 63 405 230 63 430 minecraft:light_gray_concrete
-fill 185 64 411 230 79 411 minecraft:light_gray_concrete
-fill 185 64 411 185 79 424 minecraft:light_gray_concrete
-setblock 186 64 423 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "172.1"}','{"text": "eidolon"}','{"text": "brazier"}','{"text": ""}']}}
-setblock 187 64 423 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Bau Brazier und"}','{"text": "Stone Hands"}','{"text": ""}','{"text": ""}']}}
-fill 195 64 411 195 79 424 minecraft:light_gray_concrete
-setblock 190 64 416 eidolon_repraised:brazier
-setblock 188 64 416 eidolon_repraised:stone_hand[facing=east]
-setblock 192 64 416 eidolon_repraised:stone_hand[facing=west]
-setblock 190 64 414 eidolon_repraised:stone_hand[facing=south]
-setblock 196 64 423 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "172.2"}','{"text": "eidolon"}','{"text": "crucible"}','{"text": ""}']}}
-setblock 197 64 423 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Setz einen"}','{"text": "Crucible auf"}','{"text": ""}','{"text": ""}']}}
-fill 205 64 411 205 79 424 minecraft:light_gray_concrete
-setblock 200 64 416 minecraft:campfire[facing=south,lit=true]
-setblock 200 65 416 eidolon_repraised:crucible
-kw testworld use 200 65 416 up minecraft:water_bucket
-setblock 206 64 423 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "172.3"}','{"text": "eidolon"}','{"text": "altar"}','{"text": ""}']}}
-setblock 207 64 423 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Bau einen Altar"}','{"text": "mit Bildnis"}','{"text": ""}','{"text": ""}']}}
-fill 215 64 411 215 79 424 minecraft:light_gray_concrete
-fill 209 64 416 211 64 416 eidolon_repraised:wooden_altar
-setblock 210 65 416 eidolon_repraised:straw_effigy[facing=south]
-setblock 209 65 416 eidolon_repraised:candle
-setblock 211 65 416 minecraft:skeleton_skull[rotation=8]
-setblock 216 64 423 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "172.4"}','{"text": "eidolon"}','{"text": "stone_altar"}','{"text": ""}']}}
-setblock 217 64 423 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Bau Stone Altar"}','{"text": "und Elder"}','{"text": "Statue"}','{"text": ""}']}}
-fill 225 64 411 225 79 424 minecraft:light_gray_concrete
-fill 219 64 416 221 64 416 eidolon_repraised:stone_altar
-setblock 220 65 416 eidolon_repraised:unholy_effigy[facing=south]
-setblock 219 65 416 eidolon_repraised:goblet
-setblock 221 65 416 eidolon_repraised:candle
+# 172 aether/portal, altar, ride, gloves, slider, queen
+#area 158 342 232 369
+fill 158 64 342 198 91 369 minecraft:air
+fill 199 64 342 232 91 369 minecraft:air
+fill 158 60 342 232 62 369 minecraft:stone
+fill 158 63 342 232 63 369 minecraft:light_gray_concrete
+fill 162 64 348 232 79 348 minecraft:light_gray_concrete
+fill 162 64 348 162 79 363 minecraft:light_gray_concrete
+setblock 163 64 362 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "172.1"}','{"text": "aether"}','{"text": "portal"}','{"text": ""}']}}
+setblock 164 64 362 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Bau das"}','{"text": "Glowstone-Portal"}','{"text": ""}','{"text": ""}']}}
+fill 171 64 348 171 79 363 minecraft:light_gray_concrete
+setblock 165 65 353 minecraft:glowstone
+setblock 165 66 353 minecraft:glowstone
+setblock 165 67 353 minecraft:glowstone
+setblock 166 64 353 minecraft:glowstone
+setblock 166 68 353 minecraft:glowstone
+setblock 167 64 353 minecraft:glowstone
+setblock 167 68 353 minecraft:glowstone
+setblock 168 65 353 minecraft:glowstone
+setblock 168 66 353 minecraft:glowstone
+setblock 168 67 353 minecraft:glowstone
+fill 166 65 353 167 67 353 aether:aether_portal[axis=x]
+execute if block 166 66 353 aether:aether_portal
+setblock 172 64 362 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "172.2"}','{"text": "aether"}','{"text": "altar"}','{"text": ""}']}}
+setblock 173 64 362 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Bau einen Altar"}','{"text": ""}','{"text": ""}','{"text": ""}']}}
+fill 181 64 348 181 79 363 minecraft:light_gray_concrete
+fill 174 63 352 178 63 354 aether:holystone
+setblock 174 64 353 aether:altar
+setblock 176 64 353 aether:freezer
+setblock 178 64 353 aether:incubator
+setblock 182 64 362 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "172.3"}','{"text": "aether"}','{"text": "ride"}','{"text": ""}']}}
+setblock 183 64 362 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Reite ein Moa"}','{"text": ""}','{"text": ""}','{"text": ""}']}}
+fill 193 64 348 193 79 363 minecraft:light_gray_concrete
+summon aether:moa 187.5 64 354.5 {NoAI:1b,PersistenceRequired:1b,Silent:1b,Tags:["kw_shot"],Rotation:[0f,0f]}
+setblock 194 64 362 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "172.4"}','{"text": "aether"}','{"text": "gloves"}','{"text": ""}']}}
+setblock 195 64 362 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Trag Handschuhe"}','{"text": ""}','{"text": ""}','{"text": ""}']}}
+fill 203 64 348 203 79 363 minecraft:light_gray_concrete
+setblock 198 64 353 minecraft:smooth_stone_slab
+summon item_display 198.5 65.4 353.5 {item:{id:"aether:zanite_gloves",count:1},item_display:"fixed",billboard:"vertical",transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[2.0f,2.0f,2.0f]},brightness:{sky:15,block:15},Tags:["kw_shot"]}
+setblock 204 64 362 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "172.5"}','{"text": "aether"}','{"text": "slider"}','{"text": ""}']}}
+setblock 205 64 362 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Besiege den"}','{"text": "Slider"}','{"text": ""}','{"text": ""}']}}
+fill 215 64 348 215 79 363 minecraft:light_gray_concrete
+summon aether:slider 209.5 64 354.5 {NoAI:1b,PersistenceRequired:1b,Silent:1b,Tags:["kw_shot"],Rotation:[0f,0f]}
+setblock 216 64 362 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "172.6"}','{"text": "aether"}','{"text": "queen"}','{"text": ""}']}}
+setblock 217 64 362 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Besiege die"}','{"text": "Valkyrie Queen"}','{"text": ""}','{"text": ""}']}}
+fill 227 64 348 227 79 363 minecraft:light_gray_concrete
+summon aether:valkyrie_queen 221.5 64 354.5 {NoAI:1b,PersistenceRequired:1b,Silent:1b,Tags:["kw_shot"],Rotation:[0f,0f]}
 execute as @e[type=minecraft:item,tag=!kw_shot] run kill @s

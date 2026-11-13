@@ -1,12 +1,20 @@
-# 080 ars_epic/el_armor
-#area 272 124 291 149
-fill 272 64 124 291 91 149 minecraft:air
-fill 272 60 124 291 62 149 minecraft:stone
-fill 272 63 124 291 63 149 minecraft:light_gray_concrete
-fill 276 64 130 291 79 130 minecraft:light_gray_concrete
-fill 276 64 130 276 79 143 minecraft:light_gray_concrete
-setblock 277 64 142 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "080"}','{"text": "ars_epic"}','{"text": "el_armor"}','{"text": ""}']}}
-setblock 278 64 142 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "a full"}','{"text": "elemental robe"}','{"text": "set"}','{"text": ""}']}}
-fill 286 64 130 286 79 143 minecraft:light_gray_concrete
-summon armor_stand 281.5 64 135.5 {ArmorItems:[{id:"ars_elemental:fire_boots",count:1},{id:"ars_elemental:fire_leggings",count:1},{id:"ars_elemental:fire_robes",count:1},{id:"ars_elemental:fire_hat",count:1}],ShowArms:1b,NoBasePlate:1b,Tags:["kw_shot"],Rotation:[180f,0f]}
+# 080 ars_apprentice/turret
+#area 195 126 214 151
+fill 195 64 126 214 91 151 minecraft:air
+fill 195 60 126 214 62 151 minecraft:stone
+fill 195 63 126 214 63 151 minecraft:light_gray_concrete
+fill 199 64 132 214 79 132 minecraft:light_gray_concrete
+fill 199 64 132 199 79 145 minecraft:light_gray_concrete
+setblock 200 64 144 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "080"}','{"text": "ars_apprentice"}','{"text": "turret"}','{"text": ""}']}}
+setblock 201 64 144 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "turret in front"}','{"text": "of a"}','{"text": "cobblestone"}','{"text": "generator"}']}}
+fill 209 64 132 209 79 145 minecraft:light_gray_concrete
+setblock 204 64 138 ars_nouveau:basic_spell_turret
+setblock 204 64 136 minecraft:cobblestone
+setblock 203 64 136 minecraft:water
+setblock 205 64 136 minecraft:lava
+fill 202 64 135 206 64 135 minecraft:stone_bricks
+setblock 202 64 136 minecraft:stone_bricks
+setblock 206 64 136 minecraft:stone_bricks
+setblock 203 64 137 minecraft:glass
+setblock 205 64 137 minecraft:glass
 execute as @e[type=minecraft:item,tag=!kw_shot] run kill @s

@@ -1,14 +1,21 @@
-# 043 mekanism/configurator
-#area -4 95 15 120
-fill -4 64 95 15 91 120 minecraft:air
-fill -4 60 95 15 62 120 minecraft:stone
-fill -4 63 95 15 63 120 minecraft:light_gray_concrete
-fill 0 64 101 15 79 101 minecraft:light_gray_concrete
-fill 0 64 101 0 79 114 minecraft:light_gray_concrete
-setblock 1 64 113 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "043"}','{"text": "mekanism"}','{"text": "configurator"}','{"text": ""}']}}
-setblock 2 64 113 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "side"}','{"text": "configuration"}','{"text": "tab with auto"}','{"text": "eject"}']}}
-fill 10 64 101 10 79 114 minecraft:light_gray_concrete
-setblock 4 64 106 mekanism:metallurgic_infuser[facing=south]
-setblock 6 64 106 minecraft:smooth_stone_slab
-summon item_display 6.5 64.95 106.5 {item:{id:"mekanism:configurator",count:1},item_display:"fixed",billboard:"vertical",transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[1.0f,1.0f,1.0f]},brightness:{sky:15,block:15},Tags:["kw_shot"]}
+# 043 create_trains/cargo
+#area 46 70 65 97
+fill 46 64 70 65 91 97 minecraft:air
+fill 46 60 70 65 62 97 minecraft:stone
+fill 46 63 70 65 63 97 minecraft:light_gray_concrete
+fill 50 64 76 65 79 76 minecraft:light_gray_concrete
+fill 50 64 76 50 79 91 minecraft:light_gray_concrete
+setblock 51 64 90 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "043"}','{"text": "create_trains"}','{"text": "cargo"}','{"text": ""}']}}
+setblock 52 64 90 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "a portable"}','{"text": "storage"}','{"text": "interface pair"}','{"text": "at a platform"}']}}
+fill 60 64 76 60 79 91 minecraft:light_gray_concrete
+fill 55 64 78 55 64 86 create:track[shape=zo,turn=false,waterlogged=false]
+setblock 55 65 80 create:small_bogey[axis=z,waterlogged=false]
+setblock 55 65 84 create:small_bogey[axis=z,waterlogged=false]
+fill 55 66 80 55 66 84 create:railway_casing
+setblock 55 67 81 minecraft:barrel[facing=up]
+setblock 55 67 82 create:portable_storage_interface[facing=east]
+setblock 55 67 83 minecraft:barrel[facing=up]
+fill 58 64 82 58 66 82 minecraft:stone_bricks
+setblock 58 67 82 minecraft:barrel[facing=up]
+setblock 57 67 82 create:portable_storage_interface[facing=west]
 execute as @e[type=minecraft:item,tag=!kw_shot] run kill @s

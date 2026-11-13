@@ -1,30 +1,33 @@
-# 010 farms/lava_seeds
-#area 75 21 94 46
-fill 75 64 21 94 91 46 minecraft:air
-fill 75 60 21 94 62 46 minecraft:stone
-fill 75 63 21 94 63 46 minecraft:light_gray_concrete
-fill 79 64 27 94 79 27 minecraft:light_gray_concrete
-fill 79 64 27 79 79 40 minecraft:light_gray_concrete
-setblock 80 64 39 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "010"}','{"text": "farms"}','{"text": "lava_seeds"}','{"text": ""}']}}
-setblock 81 64 39 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "fire seed"}','{"text": "field, the lava"}','{"text": "bucket recipe,"}','{"text": "item drain into"}']}}
-setblock 82 64 39 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "fluid tanks"}','{"text": ""}','{"text": ""}','{"text": ""}']}}
-fill 89 64 27 89 79 40 minecraft:light_gray_concrete
-fill 82 63 31 86 63 33 minecraft:farmland[moisture=7]
-setblock 84 63 32 minecraft:water
-setblock 82 64 31 mysticalagriculture:fire_crop[age=7]
-setblock 82 64 32 mysticalagriculture:fire_crop[age=7]
-setblock 82 64 33 mysticalagriculture:fire_crop[age=7]
-setblock 83 64 31 mysticalagriculture:fire_crop[age=7]
-setblock 83 64 32 mysticalagriculture:fire_crop[age=7]
-setblock 83 64 33 mysticalagriculture:fire_crop[age=7]
-setblock 84 64 31 mysticalagriculture:fire_crop[age=7]
-setblock 84 64 33 mysticalagriculture:fire_crop[age=7]
-setblock 85 64 31 mysticalagriculture:fire_crop[age=7]
-setblock 85 64 32 mysticalagriculture:fire_crop[age=7]
-setblock 85 64 33 mysticalagriculture:fire_crop[age=7]
-setblock 86 64 31 mysticalagriculture:fire_crop[age=7]
-setblock 86 64 32 mysticalagriculture:fire_crop[age=7]
-setblock 86 64 33 mysticalagriculture:fire_crop[age=7]
-setblock 87 64 32 create:fluid_tank[bottom=true,shape=window,top=true]
-setblock 87 65 32 create:item_drain
+# 010 farms/animals_thorn
+#area 60 21 79 46
+fill 60 64 21 79 91 46 minecraft:air
+fill 60 60 21 79 62 46 minecraft:stone
+fill 60 63 21 79 63 46 minecraft:light_gray_concrete
+fill 64 64 27 79 79 27 minecraft:light_gray_concrete
+fill 64 64 27 64 79 40 minecraft:light_gray_concrete
+setblock 65 64 39 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "010"}','{"text": "farms"}','{"text": "animals_thorn"}','{"text": ""}']}}
+setblock 66 64 39 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "fenced pen with"}','{"text": "feeding trough,"}','{"text": "Dreadthorne,"}','{"text": "hopper floor,"}']}}
+setblock 67 64 39 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "mana pool"}','{"text": "nearby"}','{"text": ""}','{"text": ""}']}}
+fill 74 64 27 74 79 40 minecraft:light_gray_concrete
+fill 67 63 30 71 63 34 minecraft:grass_block[snowy=false]
+setblock 67 64 30 minecraft:oak_fence
+setblock 67 64 34 minecraft:oak_fence
+setblock 68 64 30 minecraft:oak_fence
+setblock 68 64 34 minecraft:oak_fence
+setblock 69 64 30 minecraft:oak_fence
+setblock 69 64 34 minecraft:oak_fence
+setblock 70 64 30 minecraft:oak_fence
+setblock 70 64 34 minecraft:oak_fence
+setblock 71 64 30 minecraft:oak_fence
+setblock 71 64 34 minecraft:oak_fence
+setblock 67 64 31 minecraft:oak_fence
+setblock 71 64 31 minecraft:oak_fence
+setblock 67 64 32 minecraft:oak_fence
+setblock 71 64 32 minecraft:oak_fence
+setblock 67 64 33 minecraft:oak_fence
+setblock 71 64 33 minecraft:oak_fence
+setblock 69 64 32 botania:dreadthorne
+summon minecraft:cow 68.5 64 33.5 {NoAI:1b,PersistenceRequired:1b,Silent:1b,Tags:["kw_shot"],Rotation:[180f,0f]}
+summon minecraft:cow 70.5 64 31.5 {NoAI:1b,PersistenceRequired:1b,Silent:1b,Tags:["kw_shot"],Rotation:[180f,0f],Age:-24000}
+setblock 72 64 32 botania:mana_pool{mana:200000}
 execute as @e[type=minecraft:item,tag=!kw_shot] run kill @s

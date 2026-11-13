@@ -1,20 +1,12 @@
-# 066 ars_nouveau/earth_essence
-#area 58 124 77 149
-fill 58 64 124 77 91 149 minecraft:air
-fill 58 60 124 77 62 149 minecraft:stone
-fill 58 63 124 77 63 149 minecraft:light_gray_concrete
-fill 62 64 130 77 79 130 minecraft:light_gray_concrete
-fill 62 64 130 62 79 143 minecraft:light_gray_concrete
-setblock 63 64 142 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "066"}','{"text": "ars_nouveau"}','{"text": "earth_essence"}','{"text": ""}']}}
-setblock 64 64 142 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "chamber with"}','{"text": "three pedestals"}','{"text": "next to it"}','{"text": ""}']}}
-fill 72 64 130 72 79 143 minecraft:light_gray_concrete
-setblock 67 64 135 ars_nouveau:imbuement_chamber[facing=up]
-setblock 66 64 135 ars_nouveau:arcane_pedestal[facing=up]
-kw testworld use 66 64 135 south minecraft:iron_ingot
-setblock 68 64 135 ars_nouveau:arcane_pedestal[facing=up]
-kw testworld use 68 64 135 south minecraft:wheat_seeds
-setblock 67 64 134 ars_nouveau:arcane_pedestal[facing=up]
-kw testworld use 67 64 134 south minecraft:dirt
-kw testworld use 67 64 135 south ars_nouveau:source_gem
-setblock 69 64 134 ars_nouveau:source_jar[fill=11]{source:10000}
+# 066 antimatter/wind
+#area 342 97 361 126
+fill 342 64 97 361 95 126 minecraft:air
+fill 342 60 97 361 62 126 minecraft:stone
+fill 342 63 97 361 63 126 minecraft:light_gray_concrete
+fill 346 64 103 361 83 103 minecraft:light_gray_concrete
+fill 346 64 103 346 83 120 minecraft:light_gray_concrete
+setblock 347 64 119 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "066"}','{"text": "antimatter"}','{"text": "wind"}','{"text": ""}']}}
+setblock 348 64 119 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "the large wind"}','{"text": "generator"}','{"text": ""}','{"text": ""}']}}
+fill 356 64 103 356 83 120 minecraft:light_gray_concrete
+kw testworld use 351 63 107 up mekanismgenerators:wind_generator
 execute as @e[type=minecraft:item,tag=!kw_shot] run kill @s

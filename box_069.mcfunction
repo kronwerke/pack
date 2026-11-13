@@ -1,21 +1,17 @@
-# 069 ars_apprentice/relay
-#area 103 124 124 149
-fill 103 64 124 124 91 149 minecraft:air
-fill 103 60 124 124 62 149 minecraft:stone
-fill 103 63 124 124 63 149 minecraft:light_gray_concrete
-fill 107 64 130 124 79 130 minecraft:light_gray_concrete
-fill 107 64 130 107 79 143 minecraft:light_gray_concrete
-setblock 108 64 142 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "069"}','{"text": "ars_apprentice"}','{"text": "relay"}','{"text": ""}']}}
-setblock 109 64 142 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "two relays"}','{"text": "bridging jars"}','{"text": "about 20 blocks"}','{"text": "apart"}']}}
-fill 119 64 130 119 79 143 minecraft:light_gray_concrete
-setblock 110 64 135 ars_nouveau:source_jar[fill=11]{source:10000}
-setblock 112 64 135 ars_nouveau:relay
-setblock 114 64 135 ars_nouveau:relay
-setblock 116 64 135 ars_nouveau:source_jar[fill=0]
-kw testworld use 110 64 135 south ars_nouveau:dominion_wand
-kw testworld use 112 64 135 south ars_nouveau:dominion_wand
-kw testworld use 112 64 135 south ars_nouveau:dominion_wand
-kw testworld use 114 64 135 south ars_nouveau:dominion_wand
-kw testworld use 114 64 135 south ars_nouveau:dominion_wand
-kw testworld use 116 64 135 south ars_nouveau:dominion_wand
+# 069 ars_nouveau/chamber_auto
+#area 28 126 47 151
+fill 28 64 126 47 91 151 minecraft:air
+fill 28 60 126 47 62 151 minecraft:stone
+fill 28 63 126 47 63 151 minecraft:light_gray_concrete
+fill 32 64 132 47 79 132 minecraft:light_gray_concrete
+fill 32 64 132 32 79 145 minecraft:light_gray_concrete
+setblock 33 64 144 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "069"}','{"text": "ars_nouveau"}','{"text": "chamber_auto"}','{"text": ""}']}}
+setblock 34 64 144 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "hoppers above"}','{"text": "and below a"}','{"text": "chamber feeding"}','{"text": "a chest"}']}}
+fill 42 64 132 42 79 145 minecraft:light_gray_concrete
+setblock 37 67 137 minecraft:chest[facing=south]{Items:[{Slot:0b,id:"minecraft:amethyst_shard",count:64}]}
+setblock 37 66 137 minecraft:hopper[facing=down]
+setblock 37 65 137 ars_nouveau:imbuement_chamber[facing=up]
+setblock 37 64 137 minecraft:hopper[facing=east]
+setblock 38 64 137 minecraft:chest[facing=south]{Items:[]}
+setblock 35 64 137 ars_nouveau:source_jar[fill=11]{source:10000}
 execute as @e[type=minecraft:item,tag=!kw_shot] run kill @s

@@ -1,15 +1,14 @@
-# 121 immersive/treated_wood
-#area 36 217 55 242
-fill 36 64 217 55 91 242 minecraft:air
-fill 36 60 217 55 62 242 minecraft:stone
-fill 36 63 217 55 63 242 minecraft:light_gray_concrete
-fill 40 64 223 55 79 223 minecraft:light_gray_concrete
-fill 40 64 223 40 79 236 minecraft:light_gray_concrete
-setblock 41 64 235 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "121"}','{"text": "immersive"}','{"text": "treated_wood"}','{"text": ""}']}}
-setblock 42 64 235 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "planks around"}','{"text": "the creosote"}','{"text": "bucket"}','{"text": ""}']}}
-fill 50 64 223 50 79 236 minecraft:light_gray_concrete
-setblock 44 64 228 minecraft:smooth_stone_slab
-summon item_display 44.5 64.95 228.5 {item:{id:"immersiveengineering:creosote_bucket",count:1},item_display:"fixed",billboard:"vertical",transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[1.0f,1.0f,1.0f]},brightness:{sky:15,block:15},Tags:["kw_shot"]}
-setblock 46 64 228 minecraft:smooth_stone_slab
-summon item_display 46.5 64.95 228.5 {item:{id:"immersiveengineering:treated_wood_horizontal",count:1},item_display:"fixed",billboard:"vertical",transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[1.0f,1.0f,1.0f]},brightness:{sky:15,block:15},Tags:["kw_shot"]}
+# 121 occultism_afrit/iesnium
+#area 142 184 161 209
+fill 142 64 184 161 91 209 minecraft:air
+fill 142 60 184 161 62 209 minecraft:stone
+fill 142 63 184 161 63 209 minecraft:light_gray_concrete
+fill 146 64 190 161 79 190 minecraft:light_gray_concrete
+fill 146 64 190 146 79 203 minecraft:light_gray_concrete
+setblock 147 64 202 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "121"}','{"text": "occultism_afrit"}','{"text": "iesnium"}','{"text": ""}']}}
+setblock 148 64 202 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "divination rod"}','{"text": "highlight on"}','{"text": "iesnium ore in"}','{"text": "the Nether"}']}}
+fill 156 64 190 156 79 203 minecraft:light_gray_concrete
+fill 150 64 194 152 65 195 minecraft:netherrack
+setblock 151 64 195 occultism:iesnium_ore
+setblock 150 65 195 occultism:iesnium_ore
 execute as @e[type=minecraft:item,tag=!kw_shot] run kill @s

@@ -1,45 +1,50 @@
-# 155 the_end/arrival, crystals, egg, elytra, cg_kill
-#area 46 340 107 369
-fill 46 64 340 79 95 369 minecraft:air
-fill 80 64 340 107 95 369 minecraft:air
-fill 46 60 340 107 62 369 minecraft:stone
-fill 46 63 340 107 63 369 minecraft:light_gray_concrete
-fill 50 64 346 107 83 346 minecraft:light_gray_concrete
-fill 50 64 346 50 83 363 minecraft:light_gray_concrete
-setblock 51 64 362 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "155.1"}','{"text": "the_end"}','{"text": "arrival"}','{"text": ""}']}}
-setblock 52 64 362 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Betritt das End"}','{"text": ""}','{"text": ""}','{"text": ""}']}}
-fill 60 64 346 60 83 363 minecraft:light_gray_concrete
-setblock 54 64 349 minecraft:end_portal_frame[eye=true,facing=south]
-setblock 54 64 353 minecraft:end_portal_frame[eye=true,facing=north]
-setblock 53 64 350 minecraft:end_portal_frame[eye=true,facing=east]
-setblock 57 64 350 minecraft:end_portal_frame[eye=true,facing=west]
-setblock 55 64 349 minecraft:end_portal_frame[eye=true,facing=south]
-setblock 55 64 353 minecraft:end_portal_frame[eye=true,facing=north]
-setblock 53 64 351 minecraft:end_portal_frame[eye=true,facing=east]
-setblock 57 64 351 minecraft:end_portal_frame[eye=true,facing=west]
-setblock 56 64 349 minecraft:end_portal_frame[eye=true,facing=south]
-setblock 56 64 353 minecraft:end_portal_frame[eye=true,facing=north]
-setblock 53 64 352 minecraft:end_portal_frame[eye=true,facing=east]
-setblock 57 64 352 minecraft:end_portal_frame[eye=true,facing=west]
-fill 54 64 350 56 64 352 minecraft:end_portal
-setblock 61 64 362 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "155.2"}','{"text": "the_end"}','{"text": "crystals"}','{"text": ""}']}}
-setblock 62 64 362 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Zerstör die"}','{"text": "Endkristalle"}','{"text": ""}','{"text": ""}']}}
-fill 70 64 346 70 83 363 minecraft:light_gray_concrete
-fill 64 64 349 66 69 351 minecraft:obsidian
-setblock 65 70 350 minecraft:bedrock
-summon minecraft:end_crystal 65.5 71 350.5 {Tags:["kw_shot"],ShowBottom:0b}
-setblock 71 64 362 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "155.3"}','{"text": "the_end"}','{"text": "egg"}','{"text": ""}']}}
-setblock 72 64 362 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Hol das"}','{"text": "Drachenei"}','{"text": ""}','{"text": ""}']}}
-fill 80 64 346 80 83 363 minecraft:light_gray_concrete
-fill 74 64 350 76 64 352 minecraft:bedrock
-fill 75 65 351 75 67 351 minecraft:bedrock
-setblock 75 68 351 minecraft:dragon_egg
-setblock 81 64 362 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "155.4"}','{"text": "the_end"}','{"text": "elytra"}','{"text": ""}']}}
-setblock 82 64 362 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Hol dir Elytren"}','{"text": ""}','{"text": ""}','{"text": ""}']}}
-fill 90 64 346 90 83 363 minecraft:light_gray_concrete
-summon armor_stand 85.5 64 351.5 {ArmorItems:[{},{},{id:"minecraft:elytra",count:1},{}],ShowArms:1b,NoBasePlate:1b,Tags:["kw_shot"],Rotation:[20f,0f]}
-setblock 91 64 362 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "155.5"}','{"text": "the_end"}','{"text": "cg_kill"}','{"text": ""}']}}
-setblock 92 64 362 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Besiege den"}','{"text": "Ender Guardian"}','{"text": ""}','{"text": ""}']}}
-fill 102 64 346 102 83 363 minecraft:light_gray_concrete
-summon cataclysm:ender_guardian 96.5 64 352.5 {NoAI:1b,PersistenceRequired:1b,Silent:1b,Tags:["kw_shot"],Rotation:[0f,0f]}
+# 155 enderio/smelter, cap_bank, conduits, filter, soul_binder, vacuum_chest, enchanter
+#area 211 277 291 302
+fill 211 64 277 255 91 302 minecraft:air
+fill 256 64 277 291 91 302 minecraft:air
+fill 211 60 277 291 62 302 minecraft:stone
+fill 211 63 277 291 63 302 minecraft:light_gray_concrete
+fill 215 64 283 291 79 283 minecraft:light_gray_concrete
+fill 215 64 283 215 79 296 minecraft:light_gray_concrete
+setblock 216 64 295 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "155.1"}','{"text": "enderio"}','{"text": "smelter"}','{"text": ""}']}}
+setblock 217 64 295 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Bau die"}','{"text": "Legierungsschmelze"}','{"text": ""}','{"text": ""}']}}
+fill 226 64 283 226 79 296 minecraft:light_gray_concrete
+setblock 219 64 288 enderio:alloy_smelter[facing=south,powered=true]
+setblock 221 64 288 enderio:sag_mill[facing=south,powered=true]
+setblock 223 64 288 minecraft:smooth_stone_slab
+summon item_display 223.5 64.95 288.5 {item:{id:"enderio:basic_capacitor",count:1},item_display:"fixed",billboard:"vertical",transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[1.0f,1.0f,1.0f]},brightness:{sky:15,block:15},Tags:["kw_shot"]}
+setblock 227 64 295 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "155.2"}','{"text": "enderio"}','{"text": "cap_bank"}','{"text": ""}']}}
+setblock 228 64 295 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Bau eine"}','{"text": "Kondensatorbank"}','{"text": ""}','{"text": ""}']}}
+fill 236 64 283 236 79 296 minecraft:light_gray_concrete
+fill 230 64 288 232 66 288 enderio:basic_capacitor_bank
+setblock 237 64 295 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "155.3"}','{"text": "enderio"}','{"text": "conduits"}','{"text": ""}']}}
+setblock 238 64 295 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Leg Leitungen"}','{"text": ""}','{"text": ""}','{"text": ""}']}}
+fill 246 64 283 246 79 296 minecraft:light_gray_concrete
+setblock 241 64 288 minecraft:smooth_stone_slab
+summon item_display 241.5 65.4 288.5 {item:{id:"enderio:conduit",count:1},item_display:"fixed",billboard:"vertical",transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[2.0f,2.0f,2.0f]},brightness:{sky:15,block:15},Tags:["kw_shot"]}
+setblock 247 64 295 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "155.4"}','{"text": "enderio"}','{"text": "filter"}','{"text": ""}']}}
+setblock 248 64 295 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Stell eine"}','{"text": "Verbindung ein"}','{"text": ""}','{"text": ""}']}}
+fill 256 64 283 256 79 296 minecraft:light_gray_concrete
+setblock 250 64 288 minecraft:smooth_stone_slab
+summon item_display 250.5 64.95 288.5 {item:{id:"enderio:yeta_wrench",count:1},item_display:"fixed",billboard:"vertical",transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[1.0f,1.0f,1.0f]},brightness:{sky:15,block:15},Tags:["kw_shot"]}
+setblock 252 64 288 minecraft:smooth_stone_slab
+summon item_display 252.5 64.95 288.5 {item:{id:"enderio:basic_item_filter",count:1},item_display:"fixed",billboard:"vertical",transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[1.0f,1.0f,1.0f]},brightness:{sky:15,block:15},Tags:["kw_shot"]}
+setblock 257 64 295 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "155.5"}','{"text": "enderio"}','{"text": "soul_binder"}','{"text": ""}']}}
+setblock 258 64 295 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Bau den"}','{"text": "Seelenbinder"}','{"text": ""}','{"text": ""}']}}
+fill 266 64 283 266 79 296 minecraft:light_gray_concrete
+setblock 260 64 288 enderio:soul_binder[facing=south,powered=true]
+setblock 262 64 288 minecraft:smooth_stone_slab
+summon item_display 262.5 64.95 288.5 {item:{id:"enderio:soul_vial",count:1},item_display:"fixed",billboard:"vertical",transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[1.0f,1.0f,1.0f]},brightness:{sky:15,block:15},Tags:["kw_shot"]}
+setblock 267 64 295 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "155.6"}','{"text": "enderio"}','{"text": "vacuum_chest"}','{"text": ""}']}}
+setblock 268 64 295 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Stell eine"}','{"text": "Vakuumkiste auf"}','{"text": ""}','{"text": ""}']}}
+fill 276 64 283 276 79 296 minecraft:light_gray_concrete
+setblock 271 64 288 enderio:vacuum_chest
+summon item 269.5 64.2 289.5 {Item:{id:"minecraft:rotten_flesh",count:8},PickupDelay:32767,Age:-32768,Tags:["kw_shot"]}
+summon item 273.5 64.2 289.5 {Item:{id:"minecraft:bone",count:8},PickupDelay:32767,Age:-32768,Tags:["kw_shot"]}
+summon item 270.5 64.2 290.5 {Item:{id:"minecraft:gunpowder",count:8},PickupDelay:32767,Age:-32768,Tags:["kw_shot"]}
+summon item 272.5 64.2 287.5 {Item:{id:"minecraft:string",count:8},PickupDelay:32767,Age:-32768,Tags:["kw_shot"]}
+setblock 277 64 295 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "155.7"}','{"text": "enderio"}','{"text": "enchanter"}','{"text": ""}']}}
+setblock 278 64 295 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Bau den"}','{"text": "Verzauberer"}','{"text": ""}','{"text": ""}']}}
+fill 286 64 283 286 79 296 minecraft:light_gray_concrete
+setblock 281 64 288 enderio:enchanter[facing=south]
 execute as @e[type=minecraft:item,tag=!kw_shot] run kill @s

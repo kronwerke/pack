@@ -1,62 +1,18 @@
-# 005 farms/cobble_drill
-#area -4 21 15 46
-fill -4 64 21 15 91 46 minecraft:air
-fill -4 60 21 15 62 46 minecraft:stone
-fill -4 63 21 15 63 46 minecraft:light_gray_concrete
-fill 0 64 27 15 79 27 minecraft:light_gray_concrete
-fill 0 64 27 0 79 40 minecraft:light_gray_concrete
-setblock 1 64 39 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "005"}','{"text": "farms"}','{"text": "cobble_drill"}','{"text": ""}']}}
-setblock 2 64 39 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "water and lava"}','{"text": "cobble"}','{"text": "generator with"}','{"text": "a drill and an"}']}}
-setblock 3 64 39 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "andesite"}','{"text": "funnel, belt"}','{"text": "leading away"}','{"text": ""}']}}
-fill 10 64 27 10 79 40 minecraft:light_gray_concrete
-setblock 2 64 31 minecraft:stone_bricks
-setblock 2 65 31 minecraft:stone_bricks
-setblock 2 65 33 minecraft:glass
-setblock 2 64 33 minecraft:stone_bricks
-setblock 2 64 32 minecraft:stone_bricks
-setblock 3 64 31 minecraft:stone_bricks
-setblock 3 65 31 minecraft:stone_bricks
-setblock 3 65 33 minecraft:glass
-setblock 3 64 33 minecraft:stone_bricks
-setblock 3 64 32 minecraft:stone_bricks
-setblock 4 64 31 minecraft:stone_bricks
-setblock 4 65 31 minecraft:stone_bricks
-setblock 4 65 33 minecraft:glass
-setblock 4 64 33 minecraft:stone_bricks
-setblock 4 64 32 minecraft:stone_bricks
-setblock 5 64 31 minecraft:stone_bricks
-setblock 5 65 31 minecraft:stone_bricks
-setblock 5 65 33 minecraft:glass
-setblock 5 64 33 minecraft:stone_bricks
-setblock 5 64 32 minecraft:stone_bricks
-setblock 6 64 31 minecraft:stone_bricks
-setblock 6 65 31 minecraft:stone_bricks
-setblock 6 65 33 minecraft:glass
-setblock 7 64 31 minecraft:stone_bricks
-setblock 7 65 31 minecraft:stone_bricks
-setblock 7 65 33 minecraft:glass
-setblock 7 64 33 minecraft:stone_bricks
-setblock 7 64 32 minecraft:stone_bricks
-setblock 8 64 31 minecraft:stone_bricks
-setblock 8 65 31 minecraft:stone_bricks
-setblock 8 65 33 minecraft:glass
-setblock 8 64 33 minecraft:stone_bricks
-setblock 8 64 32 minecraft:stone_bricks
-setblock 2 65 32 minecraft:stone_bricks
-setblock 8 65 32 minecraft:stone_bricks
-setblock 5 64 32 minecraft:air
-setblock 5 63 32 minecraft:air
-setblock 6 64 32 create:shaft[axis=x]
-setblock 6 64 35 create:shaft[axis=x]
-kw testworld use 6 64 32 up create:belt_connector
-kw testworld use 6 64 35 up create:belt_connector
-execute unless block 6 64 33 minecraft:air
-setblock 7 64 32 create:creative_motor[facing=west]{ScrollValue:16}
-setblock 3 65 32 minecraft:water
-setblock 6 65 32 minecraft:cobblestone
-setblock 7 65 32 minecraft:lava
-setblock 6 65 31 create:mechanical_drill[facing=south,waterlogged=false]
-fill 5 64 30 7 66 30 create:andesite_casing
-setblock 6 65 30 create:andesite_encased_shaft[axis=z]
-setblock 6 65 29 create:creative_motor[facing=south]{ScrollValue:32}
+# 005 start_here/m_gearbox, m_keystone
+#area 66 -6 95 19
+fill 66 64 -6 95 91 19 minecraft:air
+fill 66 60 -6 95 62 19 minecraft:stone
+fill 66 63 -6 95 63 19 minecraft:light_gray_concrete
+fill 70 64 0 95 79 0 minecraft:light_gray_concrete
+fill 70 64 0 70 79 13 minecraft:light_gray_concrete
+setblock 71 64 12 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "005.1"}','{"text": "start_here"}','{"text": "m_gearbox"}','{"text": ""}']}}
+setblock 72 64 12 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "the crafting"}','{"text": "grid in JEI"}','{"text": ""}','{"text": ""}']}}
+fill 80 64 0 80 79 13 minecraft:light_gray_concrete
+setblock 75 64 5 minecraft:smooth_stone_slab
+summon item_display 75.5 65.4 5.5 {item:{id:"kronwerke:stone_gearbox",count:1},item_display:"fixed",billboard:"vertical",transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[2.0f,2.0f,2.0f]},brightness:{sky:15,block:15},Tags:["kw_shot"]}
+setblock 81 64 12 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "005.2"}','{"text": "start_here"}','{"text": "m_keystone"}','{"text": ""}']}}
+setblock 82 64 12 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Bau einen"}','{"text": "Quellschlussstein"}','{"text": ""}','{"text": ""}']}}
+fill 90 64 0 90 79 13 minecraft:light_gray_concrete
+setblock 85 64 5 minecraft:smooth_stone_slab
+summon item_display 85.5 65.4 5.5 {item:{id:"kronwerke:source_keystone",count:1},item_display:"fixed",billboard:"vertical",transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[2.0f,2.0f,2.0f]},brightness:{sky:15,block:15},Tags:["kw_shot"]}
 execute as @e[type=minecraft:item,tag=!kw_shot] run kill @s

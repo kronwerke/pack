@@ -1,14 +1,12 @@
-# 088 botania_runes/mana_pearl
-#area 107 145 126 170
-fill 107 64 145 126 91 170 minecraft:air
-fill 107 60 145 126 62 170 minecraft:stone
-fill 107 63 145 126 63 170 minecraft:light_gray_concrete
-fill 111 64 151 126 79 151 minecraft:light_gray_concrete
-fill 111 64 151 111 79 164 minecraft:light_gray_concrete
-setblock 112 64 163 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "088"}','{"text": "botania_runes"}','{"text": "mana_pearl"}','{"text": ""}']}}
-setblock 113 64 163 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "a pool on a"}','{"text": "brass casing"}','{"text": "with a pearl in"}','{"text": "it"}']}}
-fill 121 64 151 121 79 164 minecraft:light_gray_concrete
-setblock 116 64 156 create:brass_casing
-setblock 116 65 156 botania:mana_pool{mana:1000000}
-summon item 116.5 66 156.5 {Item:{id:"minecraft:ender_pearl",count:1},PickupDelay:32767,Age:-32768,Tags:["kw_shot"]}
+# 088 ars_epic/el_armor
+#area 317 126 336 151
+fill 317 64 126 336 91 151 minecraft:air
+fill 317 60 126 336 62 151 minecraft:stone
+fill 317 63 126 336 63 151 minecraft:light_gray_concrete
+fill 321 64 132 336 79 132 minecraft:light_gray_concrete
+fill 321 64 132 321 79 145 minecraft:light_gray_concrete
+setblock 322 64 144 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "088"}','{"text": "ars_epic"}','{"text": "el_armor"}','{"text": ""}']}}
+setblock 323 64 144 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "a full"}','{"text": "elemental robe"}','{"text": "set"}','{"text": ""}']}}
+fill 331 64 132 331 79 145 minecraft:light_gray_concrete
+summon armor_stand 326.5 64 137.5 {ArmorItems:[{id:"ars_elemental:fire_boots",count:1},{id:"ars_elemental:fire_leggings",count:1},{id:"ars_elemental:fire_robes",count:1},{id:"ars_elemental:fire_hat",count:1}],ShowArms:1b,NoBasePlate:1b,Tags:["kw_shot"],Rotation:[180f,0f]}
 execute as @e[type=minecraft:item,tag=!kw_shot] run kill @s

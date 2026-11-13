@@ -1,20 +1,20 @@
-# 072 ars_apprentice/turret
-#area 150 124 169 149
-fill 150 64 124 169 91 149 minecraft:air
-fill 150 60 124 169 62 149 minecraft:stone
-fill 150 63 124 169 63 149 minecraft:light_gray_concrete
-fill 154 64 130 169 79 130 minecraft:light_gray_concrete
-fill 154 64 130 154 79 143 minecraft:light_gray_concrete
-setblock 155 64 142 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "072"}','{"text": "ars_apprentice"}','{"text": "turret"}','{"text": ""}']}}
-setblock 156 64 142 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "turret in front"}','{"text": "of a"}','{"text": "cobblestone"}','{"text": "generator"}']}}
-fill 164 64 130 164 79 143 minecraft:light_gray_concrete
-setblock 159 64 136 ars_nouveau:basic_spell_turret
-setblock 159 64 134 minecraft:cobblestone
-setblock 158 64 134 minecraft:water
-setblock 160 64 134 minecraft:lava
-fill 157 64 133 161 64 133 minecraft:stone_bricks
-setblock 157 64 134 minecraft:stone_bricks
-setblock 161 64 134 minecraft:stone_bricks
-setblock 158 64 135 minecraft:glass
-setblock 160 64 135 minecraft:glass
+# 072 ars_nouveau/earth_essence
+#area 73 126 92 151
+fill 73 64 126 92 91 151 minecraft:air
+fill 73 60 126 92 62 151 minecraft:stone
+fill 73 63 126 92 63 151 minecraft:light_gray_concrete
+fill 77 64 132 92 79 132 minecraft:light_gray_concrete
+fill 77 64 132 77 79 145 minecraft:light_gray_concrete
+setblock 78 64 144 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "072"}','{"text": "ars_nouveau"}','{"text": "earth_essence"}','{"text": ""}']}}
+setblock 79 64 144 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "chamber with"}','{"text": "three pedestals"}','{"text": "next to it"}','{"text": ""}']}}
+fill 87 64 132 87 79 145 minecraft:light_gray_concrete
+setblock 82 64 137 ars_nouveau:imbuement_chamber[facing=up]
+setblock 81 64 137 ars_nouveau:arcane_pedestal[facing=up]
+kw testworld use 81 64 137 south minecraft:iron_ingot
+setblock 83 64 137 ars_nouveau:arcane_pedestal[facing=up]
+kw testworld use 83 64 137 south minecraft:wheat_seeds
+setblock 82 64 136 ars_nouveau:arcane_pedestal[facing=up]
+kw testworld use 82 64 136 south minecraft:dirt
+kw testworld use 82 64 137 south ars_nouveau:source_gem
+setblock 84 64 136 ars_nouveau:source_jar[fill=11]{source:10000}
 execute as @e[type=minecraft:item,tag=!kw_shot] run kill @s

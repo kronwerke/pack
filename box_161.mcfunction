@@ -1,33 +1,38 @@
-# 161 list_dimensions/d_mining, r_plates, r_enderio
-#area -4 365 34 390
-fill -4 64 365 34 91 390 minecraft:air
-fill -4 60 365 34 62 390 minecraft:stone
-fill -4 63 365 34 63 390 minecraft:light_gray_concrete
-fill 0 64 371 34 79 371 minecraft:light_gray_concrete
-fill 0 64 371 0 79 384 minecraft:light_gray_concrete
-setblock 1 64 383 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "161.1"}','{"text": "list_dimensions"}','{"text": "d_mining"}','{"text": ""}']}}
-setblock 2 64 383 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Die Farmwelt"}','{"text": ""}','{"text": ""}','{"text": ""}']}}
-fill 9 64 371 9 79 384 minecraft:light_gray_concrete
-setblock 3 65 376 kronwerke:grubenrahmen
-setblock 3 66 376 kronwerke:grubenrahmen
-setblock 3 67 376 kronwerke:grubenrahmen
-setblock 4 64 376 kronwerke:grubenrahmen
-setblock 4 68 376 kronwerke:grubenrahmen
-setblock 5 64 376 kronwerke:grubenrahmen
-setblock 5 68 376 kronwerke:grubenrahmen
-setblock 6 65 376 kronwerke:grubenrahmen
-setblock 6 66 376 kronwerke:grubenrahmen
-setblock 6 67 376 kronwerke:grubenrahmen
-kw testworld use 4 64 376 up ars_nouveau:source_gem
-setblock 10 64 383 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "161.2"}','{"text": "list_dimensions"}','{"text": "r_plates"}','{"text": ""}']}}
-setblock 11 64 383 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Verbinde zwei"}','{"text": "Orte mit"}','{"text": "Warpplatten"}','{"text": ""}']}}
-fill 19 64 371 19 79 384 minecraft:light_gray_concrete
-setblock 12 64 376 waystones:warp_plate[status=idle]
-setblock 16 64 376 waystones:warp_plate[status=idle]
-setblock 20 64 383 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "161.3"}','{"text": "list_dimensions"}','{"text": "r_enderio"}','{"text": ""}']}}
-setblock 21 64 383 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Setz Reiseanker"}','{"text": ""}','{"text": ""}','{"text": ""}']}}
-fill 29 64 371 29 79 384 minecraft:light_gray_concrete
-setblock 22 64 377 enderio:travel_anchor
-fill 26 64 375 26 66 375 minecraft:stone_bricks
-setblock 26 67 375 enderio:travel_anchor
+# 161 list_transport/packages, create_tank, hose_pulley
+#area 306 298 345 323
+fill 306 64 298 345 91 323 minecraft:air
+fill 306 60 298 345 62 323 minecraft:stone
+fill 306 63 298 345 63 323 minecraft:light_gray_concrete
+fill 310 64 304 345 79 304 minecraft:light_gray_concrete
+fill 310 64 304 310 79 317 minecraft:light_gray_concrete
+setblock 311 64 316 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "161.1"}','{"text": "list_transport"}','{"text": "packages"}','{"text": ""}']}}
+setblock 312 64 316 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Verschick ein"}','{"text": "Paket"}','{"text": ""}','{"text": ""}']}}
+fill 320 64 304 320 79 317 minecraft:light_gray_concrete
+setblock 315 64 308 minecraft:barrel[facing=up]
+setblock 315 64 309 create:packager[facing=south,linked=false,powered=false]
+setblock 313 64 310 create:shaft[axis=z]
+setblock 317 64 310 create:shaft[axis=z]
+kw testworld use 313 64 310 up create:belt_connector
+kw testworld use 317 64 310 up create:belt_connector
+execute unless block 315 64 310 minecraft:air
+summon item 315.5 65 310.5 {Item:{id:"create:cardboard_package_10x12",count:1},PickupDelay:32767,Age:-32768,Tags:["kw_shot"]}
+summon item 316.5 65 310.5 {Item:{id:"create:cardboard_package_10x8",count:1},PickupDelay:32767,Age:-32768,Tags:["kw_shot"]}
+setblock 321 64 316 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "161.2"}','{"text": "list_transport"}','{"text": "create_tank"}','{"text": ""}']}}
+setblock 322 64 316 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Bau einen"}','{"text": "Flüssigkeitstank"}','{"text": ""}','{"text": ""}']}}
+fill 330 64 304 330 79 317 minecraft:light_gray_concrete
+fill 324 64 308 326 67 310 create:fluid_tank[bottom=false,shape=window,top=false]
+setblock 331 64 316 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "161.3"}','{"text": "list_transport"}','{"text": "hose_pulley"}','{"text": ""}']}}
+setblock 332 64 316 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Häng einen"}','{"text": "Schlauchaufzug"}','{"text": "über den See"}','{"text": ""}']}}
+fill 340 64 304 340 79 317 minecraft:light_gray_concrete
+fill 334 62 308 336 63 310 minecraft:water
+fill 332 64 309 332 66 309 minecraft:spruce_log[axis=y]
+fill 338 64 309 338 66 309 minecraft:spruce_log[axis=y]
+fill 332 67 309 338 67 309 minecraft:spruce_planks
+setblock 335 67 309 create:hose_pulley[facing=south]
+setblock 334 67 309 create:creative_motor[facing=east]{ScrollValue:32}
+setblock 333 67 309 create:andesite_casing
+setblock 334 67 310 create:andesite_casing
+setblock 334 67 308 create:andesite_casing
+setblock 334 68 309 create:andesite_casing
+setblock 334 66 309 create:andesite_casing
 execute as @e[type=minecraft:item,tag=!kw_shot] run kill @s

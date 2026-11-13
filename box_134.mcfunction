@@ -1,15 +1,14 @@
-# 134 industrial/frame_simple
-#area 245 240 266 265
-fill 245 64 240 266 91 265 minecraft:air
-fill 245 60 240 266 62 265 minecraft:stone
-fill 245 63 240 266 63 265 minecraft:light_gray_concrete
-fill 249 64 246 266 79 246 minecraft:light_gray_concrete
-fill 249 64 246 249 79 259 minecraft:light_gray_concrete
-setblock 250 64 258 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "134"}','{"text": "industrial"}','{"text": "frame_simple"}','{"text": ""}']}}
-setblock 251 64 258 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "the three frame"}','{"text": "recipes"}','{"text": ""}','{"text": ""}']}}
-fill 261 64 246 261 79 259 minecraft:light_gray_concrete
-setblock 252 64 251 industrialforegoing:machine_frame_pity
-setblock 254 64 251 industrialforegoing:machine_frame_simple
-setblock 256 64 251 industrialforegoing:machine_frame_advanced
-setblock 258 64 251 industrialforegoing:machine_frame_supreme
+# 134 immersive/hammer
+#area -4 219 15 244
+fill -4 64 219 15 91 244 minecraft:air
+fill -4 60 219 15 62 244 minecraft:stone
+fill -4 63 219 15 63 244 minecraft:light_gray_concrete
+fill 0 64 225 15 79 225 minecraft:light_gray_concrete
+fill 0 64 225 0 79 238 minecraft:light_gray_concrete
+setblock 1 64 237 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "134"}','{"text": "immersive"}','{"text": "hammer"}','{"text": ""}']}}
+setblock 2 64 237 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "right-clicking"}','{"text": "a structure"}','{"text": "with the hammer"}','{"text": ""}']}}
+fill 10 64 225 10 79 238 minecraft:light_gray_concrete
+place template immersiveengineering:multiblocks/coke_oven 4 64 228 none
+setblock 5 64 232 minecraft:smooth_stone_slab
+summon item_display 5.5 65.04 232.5 {item:{id:"immersiveengineering:hammer",count:1},item_display:"fixed",billboard:"vertical",transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[1.2f,1.2f,1.2f]},brightness:{sky:15,block:15},Tags:["kw_shot"]}
 execute as @e[type=minecraft:item,tag=!kw_shot] run kill @s

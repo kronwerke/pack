@@ -1,45 +1,32 @@
-# 144 logistics/menril, programmer, xnet_connectors, laser_node, mg_gadget
-#area 164 296 224 321
-fill 164 64 296 208 91 321 minecraft:air
-fill 209 64 296 224 91 321 minecraft:air
-fill 164 60 296 224 62 321 minecraft:stone
-fill 164 63 296 224 63 321 minecraft:light_gray_concrete
-fill 168 64 302 224 79 302 minecraft:light_gray_concrete
-fill 168 64 302 168 79 315 minecraft:light_gray_concrete
-setblock 169 64 314 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "144.1"}','{"text": "logistics"}','{"text": "menril"}','{"text": ""}']}}
-setblock 170 64 314 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Press"}','{"text": "Menril-Harz"}','{"text": ""}','{"text": ""}']}}
-fill 178 64 302 178 79 315 minecraft:light_gray_concrete
-fill 171 64 306 171 66 306 integrateddynamics:menril_log[axis=y]
-setblock 173 64 307 integrateddynamics:squeezer[axis=x,height=1]
-setblock 174 64 307 integrateddynamics:drying_basin
-setblock 179 64 314 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "144.2"}','{"text": "logistics"}','{"text": "programmer"}','{"text": ""}']}}
-setblock 180 64 314 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Schreib Karten"}','{"text": "im Logic"}','{"text": "Programmer"}','{"text": ""}']}}
-fill 188 64 302 188 79 315 minecraft:light_gray_concrete
-setblock 182 64 307 integrateddynamics:logic_programmer[facing=south]
-setblock 184 64 307 integrateddynamics:variablestore[facing=south]
-setblock 189 64 314 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "144.3"}','{"text": "logistics"}','{"text": "xnet_connectors"}','{"text": ""}']}}
-setblock 190 64 314 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Setz Connectors"}','{"text": "und Kabel"}','{"text": ""}','{"text": ""}']}}
-fill 199 64 302 199 79 315 minecraft:light_gray_concrete
-setblock 191 64 307 minecraft:chest[facing=south,type=single,waterlogged=false]
-setblock 197 64 307 minecraft:furnace[facing=south,lit=false]
-setblock 194 64 308 xnet:controller[facing=south,error=false]
-kw testworld use 192 63 307 up xnet:connector_blue
-kw testworld use 196 63 307 up xnet:connector_blue
-kw testworld use 193 63 307 up xnet:netcable_blue
-kw testworld use 194 63 307 up xnet:netcable_blue
-kw testworld use 195 63 307 up xnet:netcable_blue
-setblock 200 64 314 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "144.4"}','{"text": "logistics"}','{"text": "laser_node"}','{"text": ""}']}}
-setblock 201 64 314 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Verbinde zwei"}','{"text": "Laser Nodes"}','{"text": ""}','{"text": ""}']}}
-fill 209 64 302 209 79 315 minecraft:light_gray_concrete
-setblock 202 64 307 minecraft:chest[facing=south,type=single,waterlogged=false]
-setblock 202 65 307 laserio:laser_node
-setblock 206 64 307 minecraft:chest[facing=south,type=single,waterlogged=false]
-setblock 206 65 307 laserio:laser_node
-kw testworld use 202 65 307 south laserio:laser_wrench
-kw testworld use 206 65 307 south laserio:laser_wrench
-setblock 210 64 314 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "144.5"}','{"text": "logistics"}','{"text": "mg_gadget"}','{"text": ""}']}}
-setblock 211 64 314 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Bau einen"}','{"text": "Mining Gadget"}','{"text": ""}','{"text": ""}']}}
-fill 219 64 302 219 79 315 minecraft:light_gray_concrete
-setblock 214 64 307 minecraft:smooth_stone_slab
-summon item_display 214.5 65.4 307.5 {item:{id:"mininggadgets:mininggadget_simple",count:1},item_display:"fixed",billboard:"vertical",transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[2.0f,2.0f,2.0f]},brightness:{sky:15,block:15},Tags:["kw_shot"]}
+# 144 immersive/list_mb
+#area 229 219 257 247
+fill 229 64 219 257 95 247 minecraft:air
+fill 229 60 219 257 62 247 minecraft:stone
+fill 229 63 219 257 63 247 minecraft:light_gray_concrete
+fill 233 64 225 257 83 225 minecraft:light_gray_concrete
+fill 233 64 225 233 83 241 minecraft:light_gray_concrete
+setblock 234 64 240 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "144"}','{"text": "immersive"}','{"text": "list_mb"}','{"text": ""}']}}
+setblock 235 64 240 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "all seven stage"}','{"text": "2 structures"}','{"text": "side by side"}','{"text": ""}']}}
+fill 252 64 225 252 83 241 minecraft:light_gray_concrete
+place template immersiveengineering:multiblocks/sheetmetal_tank 235 64 227 none
+kw testworld use 236 65 229 south immersiveengineering:hammer
+execute unless block 236 65 229 immersiveengineering:sheetmetal_iron
+place template immersiveengineering:multiblocks/silo 239 64 227 none
+kw testworld use 240 65 229 south immersiveengineering:hammer
+execute unless block 240 65 229 immersiveengineering:sheetmetal_iron
+place template immersiveengineering:multiblocks/improved_blast_furnace 243 64 227 none
+kw testworld use 244 65 229 south immersiveengineering:hammer
+execute unless block 244 65 229 immersiveengineering:blastbrick_reinforced
+place template immersiveengineering:multiblocks/shelf 247 64 227 none
+kw testworld use 248 65 228 south immersiveengineering:hammer
+execute unless block 248 65 228 immersiveengineering:steel_catwalk
+place template immersiveengineering:multiblocks/coke_oven 237 64 233 none
+kw testworld use 238 65 235 south immersiveengineering:hammer
+execute unless block 238 65 235 immersiveengineering:cokebrick
+place template immersiveengineering:multiblocks/blast_furnace 242 64 233 none
+kw testworld use 243 65 235 south immersiveengineering:hammer
+execute unless block 243 65 235 immersiveengineering:blastbrick
+place template immersiveengineering:multiblocks/alloy_smelter 247 64 233 none
+kw testworld use 248 65 234 south immersiveengineering:hammer
+execute unless block 248 65 234 immersiveengineering:alloybrick
 execute as @e[type=minecraft:item,tag=!kw_shot] run kill @s

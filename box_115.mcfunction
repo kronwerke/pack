@@ -1,30 +1,14 @@
-# 115 hexerei/herbs
-#area 249 182 268 207
-fill 249 64 182 268 91 207 minecraft:air
-fill 249 60 182 268 62 207 minecraft:stone
-fill 249 63 182 268 63 207 minecraft:light_gray_concrete
-fill 253 64 188 268 79 188 minecraft:light_gray_concrete
-fill 253 64 188 253 79 201 minecraft:light_gray_concrete
-setblock 254 64 200 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "115"}','{"text": "hexerei"}','{"text": "herbs"}','{"text": ""}']}}
-setblock 255 64 200 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "herb garden"}','{"text": "with all four"}','{"text": "plants grown"}','{"text": ""}']}}
-fill 263 64 188 263 79 201 minecraft:light_gray_concrete
-fill 256 63 192 260 63 194 minecraft:grass_block
-setblock 256 64 192 hexerei:mandrake_plant[age=3]
-setblock 257 64 192 hexerei:belladonna_plant[age=3]
-setblock 259 64 192 hexerei:mugwort_bush[half=lower,age=3]
-setblock 259 65 192 hexerei:mugwort_bush[half=upper,age=3]
-setblock 260 64 192 hexerei:yellow_dock_bush[half=lower,age=3]
-setblock 260 65 192 hexerei:yellow_dock_bush[half=upper,age=3]
-setblock 256 64 193 hexerei:mandrake_plant[age=3]
-setblock 257 64 193 hexerei:belladonna_plant[age=3]
-setblock 259 64 193 hexerei:mugwort_bush[half=lower,age=3]
-setblock 259 65 193 hexerei:mugwort_bush[half=upper,age=3]
-setblock 260 64 193 hexerei:yellow_dock_bush[half=lower,age=3]
-setblock 260 65 193 hexerei:yellow_dock_bush[half=upper,age=3]
-setblock 256 64 194 hexerei:mandrake_plant[age=3]
-setblock 257 64 194 hexerei:belladonna_plant[age=3]
-setblock 259 64 194 hexerei:mugwort_bush[half=lower,age=3]
-setblock 259 65 194 hexerei:mugwort_bush[half=upper,age=3]
-setblock 260 64 194 hexerei:yellow_dock_bush[half=lower,age=3]
-setblock 260 65 194 hexerei:yellow_dock_bush[half=upper,age=3]
+# 115 occultism/foliot_crusher
+#area 30 184 49 209
+fill 30 64 184 49 91 209 minecraft:air
+fill 30 60 184 49 62 209 minecraft:stone
+fill 30 63 184 49 63 209 minecraft:light_gray_concrete
+fill 34 64 190 49 79 190 minecraft:light_gray_concrete
+fill 34 64 190 34 79 203 minecraft:light_gray_concrete
+setblock 35 64 202 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "115"}','{"text": "occultism"}','{"text": "foliot_crusher"}','{"text": ""}']}}
+setblock 36 64 202 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Foliot crusher"}','{"text": "next to a pile"}','{"text": "of dust"}','{"text": ""}']}}
+fill 44 64 190 44 79 203 minecraft:light_gray_concrete
+summon occultism:foliot 38.5 64 195.5 {NoAI:1b,PersistenceRequired:1b,Silent:1b,Tags:["kw_shot"],Rotation:[180f,0f]}
+summon item 40.5 64.2 195.5 {Item:{id:"minecraft:raw_iron",count:8},PickupDelay:32767,Age:-32768,Tags:["kw_shot"]}
+summon item 41.5 64.2 196.5 {Item:{id:"occultism:iron_dust",count:16},PickupDelay:32767,Age:-32768,Tags:["kw_shot"]}
 execute as @e[type=minecraft:item,tag=!kw_shot] run kill @s

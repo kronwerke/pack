@@ -1,20 +1,15 @@
-# 076 ars_master/golem_bookwyrm
-#area 212 124 231 149
-fill 212 64 124 231 91 149 minecraft:air
-fill 212 60 124 231 62 149 minecraft:stone
-fill 212 63 124 231 63 149 minecraft:light_gray_concrete
-fill 216 64 130 231 79 130 minecraft:light_gray_concrete
-fill 216 64 130 216 79 143 minecraft:light_gray_concrete
-setblock 217 64 142 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "076"}','{"text": "ars_master"}','{"text": "golem_bookwyrm"}','{"text": ""}']}}
-setblock 218 64 142 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "amethyst golem"}','{"text": "at a geode,"}','{"text": "storage lectern"}','{"text": "GUI"}']}}
-fill 226 64 130 226 79 143 minecraft:light_gray_concrete
-fill 219 64 134 221 66 135 minecraft:calcite
-fill 220 64 135 220 65 135 minecraft:budding_amethyst
-setblock 219 65 135 minecraft:amethyst_block
-setblock 221 64 135 minecraft:amethyst_block
-setblock 220 64 136 minecraft:amethyst_cluster[facing=south]
-setblock 220 66 135 minecraft:amethyst_block
-summon ars_nouveau:amethyst_golem 221.5 64 137.5 {NoAI:1b,PersistenceRequired:1b,Silent:1b,Tags:["kw_shot"],Rotation:[0f,0f]}
-setblock 223 64 135 ars_nouveau:storage_lectern
-setblock 224 64 135 minecraft:chest[facing=south,type=single,waterlogged=false]
+# 076 ars_apprentice/collector
+#area 135 126 154 151
+fill 135 64 126 154 91 151 minecraft:air
+fill 135 60 126 154 62 151 minecraft:stone
+fill 135 63 126 154 63 151 minecraft:light_gray_concrete
+fill 139 64 132 154 79 132 minecraft:light_gray_concrete
+fill 139 64 132 139 79 145 minecraft:light_gray_concrete
+setblock 140 64 144 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "076"}','{"text": "ars_apprentice"}','{"text": "collector"}','{"text": ""}']}}
+setblock 141 64 144 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "collector at"}','{"text": "the link farm,"}','{"text": "depositor at"}','{"text": "the workshop"}']}}
+fill 149 64 132 149 79 145 minecraft:light_gray_concrete
+setblock 143 64 137 minecraft:smooth_stone_slab
+summon item_display 143.5 64.95 137.5 {item:{id:"ars_nouveau:relay_collector",count:1},item_display:"fixed",billboard:"vertical",transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[1.0f,1.0f,1.0f]},brightness:{sky:15,block:15},Tags:["kw_shot"]}
+setblock 145 64 137 minecraft:smooth_stone_slab
+summon item_display 145.5 64.95 137.5 {item:{id:"ars_nouveau:relay_deposit",count:1},item_display:"fixed",billboard:"vertical",transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[1.0f,1.0f,1.0f]},brightness:{sky:15,block:15},Tags:["kw_shot"]}
 execute as @e[type=minecraft:item,tag=!kw_shot] run kill @s

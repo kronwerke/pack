@@ -1,13 +1,19 @@
-# 022 create/stock_ticker
-#area 123 42 143 68
-fill 123 64 42 143 91 68 minecraft:air
-fill 123 60 42 143 62 68 minecraft:stone
-fill 123 63 42 143 63 68 minecraft:light_gray_concrete
-fill 127 64 48 143 79 48 minecraft:light_gray_concrete
-fill 127 64 48 127 79 62 minecraft:light_gray_concrete
-setblock 128 64 61 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "022"}','{"text": "create"}','{"text": "stock_ticker"}','{"text": ""}']}}
-setblock 129 64 61 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "a seated"}','{"text": "villager next"}','{"text": "to the stock"}','{"text": "ticker, order"}']}}
-setblock 130 64 61 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "screen open"}','{"text": ""}','{"text": ""}','{"text": ""}']}}
-fill 138 64 48 138 79 62 minecraft:light_gray_concrete
-kw testworld place shots:create/high_logistics/stock_ticker 129 63 50 none
+# 022 create/belt
+#area 91 44 110 69
+fill 91 64 44 110 91 69 minecraft:air
+fill 91 60 44 110 62 69 minecraft:stone
+fill 91 63 44 110 63 69 minecraft:light_gray_concrete
+fill 95 64 50 110 79 50 minecraft:light_gray_concrete
+fill 95 64 50 95 79 63 minecraft:light_gray_concrete
+setblock 96 64 62 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "022"}','{"text": "create"}','{"text": "belt"}','{"text": ""}']}}
+setblock 97 64 62 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "a belt between"}','{"text": "two shafts"}','{"text": ""}','{"text": ""}']}}
+fill 105 64 50 105 79 63 minecraft:light_gray_concrete
+setblock 100 64 53 create:shaft[axis=x]
+setblock 100 64 57 create:shaft[axis=x]
+kw testworld use 100 64 53 up create:belt_connector
+kw testworld use 100 64 57 up create:belt_connector
+execute unless block 100 64 55 minecraft:air
+summon item 100.5 65 54.5 {Item:{id:"minecraft:iron_ingot",count:1},PickupDelay:32767,Age:-32768,Tags:["kw_shot"]}
+summon item 100.5 65 55.5 {Item:{id:"minecraft:iron_ingot",count:1},PickupDelay:32767,Age:-32768,Tags:["kw_shot"]}
+summon item 100.5 65 56.5 {Item:{id:"minecraft:iron_ingot",count:1},PickupDelay:32767,Age:-32768,Tags:["kw_shot"]}
 execute as @e[type=minecraft:item,tag=!kw_shot] run kill @s

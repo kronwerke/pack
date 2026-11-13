@@ -1,23 +1,26 @@
-# 021 create/frogport
-#area 106 42 127 67
-fill 106 64 42 127 91 67 minecraft:air
-fill 106 60 42 127 62 67 minecraft:stone
-fill 106 63 42 127 63 67 minecraft:light_gray_concrete
-fill 110 64 48 127 79 48 minecraft:light_gray_concrete
-fill 110 64 48 110 79 61 minecraft:light_gray_concrete
-setblock 111 64 60 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "021"}','{"text": "create"}','{"text": "frogport"}','{"text": ""}']}}
-setblock 112 64 60 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "chain conveyor"}','{"text": "with a frogport"}','{"text": "carrying a"}','{"text": "package"}']}}
-fill 122 64 48 122 79 61 minecraft:light_gray_concrete
-setblock 113 66 53 create:chain_conveyor{Connections:[[I;6,0,0]]}
-setblock 113 63 53 create:shaft[axis=y]
-setblock 113 64 53 create:shaft[axis=y]
-setblock 113 65 53 create:shaft[axis=y]
-setblock 113 62 53 create:creative_motor[facing=up]{ScrollValue:32}
-setblock 119 66 53 create:chain_conveyor{Connections:[[I;-6,0,0]]}
-setblock 119 63 53 create:shaft[axis=y]
-setblock 119 64 53 create:shaft[axis=y]
-setblock 119 65 53 create:shaft[axis=y]
-setblock 119 62 53 create:creative_motor[facing=up]{ScrollValue:32}
-fill 116 64 54 116 65 54 minecraft:stone_bricks
-setblock 116 66 54 create:package_frogport
+# 021 create/washing
+#area 76 44 95 69
+fill 76 64 44 95 91 69 minecraft:air
+fill 76 60 44 95 62 69 minecraft:stone
+fill 76 63 44 95 63 69 minecraft:light_gray_concrete
+fill 80 64 50 95 79 50 minecraft:light_gray_concrete
+fill 80 64 50 80 79 63 minecraft:light_gray_concrete
+setblock 81 64 62 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "021"}','{"text": "create"}','{"text": "washing"}','{"text": ""}']}}
+setblock 82 64 62 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "fan blowing"}','{"text": "through water"}','{"text": "over a belt of"}','{"text": "gravel"}']}}
+fill 90 64 50 90 79 63 minecraft:light_gray_concrete
+setblock 84 64 53 create:shaft[axis=x]
+setblock 84 64 57 create:shaft[axis=x]
+kw testworld use 84 64 53 up create:belt_connector
+kw testworld use 84 64 57 up create:belt_connector
+execute unless block 84 64 55 minecraft:air
+setblock 85 64 54 minecraft:glass
+setblock 85 64 56 minecraft:glass
+setblock 85 64 55 minecraft:water
+setblock 86 64 55 create:encased_fan[facing=west]
+setblock 87 64 55 create:creative_motor[facing=west]{ScrollValue:64}
+setblock 88 64 55 create:andesite_casing
+setblock 87 64 56 create:andesite_casing
+setblock 87 64 54 create:andesite_casing
+setblock 87 65 55 create:andesite_casing
+summon item 84.5 65 55.5 {Item:{id:"minecraft:gravel",count:8},PickupDelay:32767,Age:-32768,Tags:["kw_shot"]}
 execute as @e[type=minecraft:item,tag=!kw_shot] run kill @s

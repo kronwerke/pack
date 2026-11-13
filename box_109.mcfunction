@@ -1,14 +1,13 @@
-# 109 occultism_afrit/iesnium
-#area 127 182 146 207
-fill 127 64 182 146 91 207 minecraft:air
-fill 127 60 182 146 62 207 minecraft:stone
-fill 127 63 182 146 63 207 minecraft:light_gray_concrete
-fill 131 64 188 146 79 188 minecraft:light_gray_concrete
-fill 131 64 188 131 79 201 minecraft:light_gray_concrete
-setblock 132 64 200 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "109"}','{"text": "occultism_afrit"}','{"text": "iesnium"}','{"text": ""}']}}
-setblock 133 64 200 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "divination rod"}','{"text": "highlight on"}','{"text": "iesnium ore in"}','{"text": "the Nether"}']}}
-fill 141 64 188 141 79 201 minecraft:light_gray_concrete
-fill 135 64 192 137 65 193 minecraft:netherrack
-setblock 136 64 193 occultism:iesnium_ore
-setblock 135 65 193 occultism:iesnium_ore
+# 109 alfheim/elementium_line
+#area 332 147 351 172
+fill 332 64 147 351 91 172 minecraft:air
+fill 332 60 147 351 62 172 minecraft:stone
+fill 332 63 147 351 63 172 minecraft:light_gray_concrete
+fill 336 64 153 351 79 153 minecraft:light_gray_concrete
+fill 336 64 153 336 79 166 minecraft:light_gray_concrete
+setblock 337 64 165 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "109"}','{"text": "alfheim"}','{"text": "elementium_line"}','{"text": ""}']}}
+setblock 338 64 165 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "an automated"}','{"text": "manasteel block"}','{"text": "line into the"}','{"text": "portal"}']}}
+fill 346 64 153 346 79 166 minecraft:light_gray_concrete
+setblock 341 64 158 minecraft:smooth_stone_slab
+summon item_display 341.5 65.4 158.5 {item:{id:"botania:elementium_ingot",count:1},item_display:"fixed",billboard:"vertical",transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[2.0f,2.0f,2.0f]},brightness:{sky:15,block:15},Tags:["kw_shot"]}
 execute as @e[type=minecraft:item,tag=!kw_shot] run kill @s

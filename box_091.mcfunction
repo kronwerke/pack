@@ -1,17 +1,13 @@
-# 091 botania_runes/gourmaryllis
-#area 152 145 171 170
-fill 152 64 145 171 91 170 minecraft:air
-fill 152 60 145 171 62 170 minecraft:stone
-fill 152 63 145 171 63 170 minecraft:light_gray_concrete
-fill 156 64 151 171 79 151 minecraft:light_gray_concrete
-fill 156 64 151 156 79 164 minecraft:light_gray_concrete
-setblock 157 64 163 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "091"}','{"text": "botania_runes"}','{"text": "gourmaryllis"}','{"text": ""}']}}
-setblock 158 64 163 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "a belt dropping"}','{"text": "varied food"}','{"text": ""}','{"text": ""}']}}
-fill 166 64 151 166 79 164 minecraft:light_gray_concrete
-fill 159 63 155 163 63 157 minecraft:grass_block[snowy=false]
-setblock 161 64 156 botania:gourmaryllis
-summon item 160.5 64.2 157.5 {Item:{id:"minecraft:bread",count:1},PickupDelay:32767,Age:-32768,Tags:["kw_shot"]}
-summon item 162.5 64.2 157.5 {Item:{id:"minecraft:cooked_beef",count:1},PickupDelay:32767,Age:-32768,Tags:["kw_shot"]}
-summon item 160.5 64.2 155.5 {Item:{id:"minecraft:apple",count:1},PickupDelay:32767,Age:-32768,Tags:["kw_shot"]}
-summon item 162.5 64.2 155.5 {Item:{id:"minecraft:baked_potato",count:1},PickupDelay:32767,Age:-32768,Tags:["kw_shot"]}
+# 091 botania/pool
+#area 26 147 45 172
+fill 26 64 147 45 91 172 minecraft:air
+fill 26 60 147 45 62 172 minecraft:stone
+fill 26 63 147 45 63 172 minecraft:light_gray_concrete
+fill 30 64 153 45 79 153 minecraft:light_gray_concrete
+fill 30 64 153 30 79 166 minecraft:light_gray_concrete
+setblock 31 64 165 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "091"}','{"text": "botania"}','{"text": "pool"}','{"text": ""}']}}
+setblock 32 64 165 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "a full pool"}','{"text": "with a spreader"}','{"text": "beam, wand in"}','{"text": "hand"}']}}
+fill 40 64 153 40 79 166 minecraft:light_gray_concrete
+setblock 36 64 158 botania:mana_pool{mana:1000000}
+setblock 33 64 158 botania:mana_spreader{rotationX:180f,rotationY:0f,mana:1000}
 execute as @e[type=minecraft:item,tag=!kw_shot] run kill @s

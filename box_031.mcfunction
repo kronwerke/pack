@@ -1,17 +1,23 @@
-# 031 create_brass/arm
-#area 265 42 284 67
-fill 265 64 42 284 91 67 minecraft:air
-fill 265 60 42 284 62 67 minecraft:stone
-fill 265 63 42 284 63 67 minecraft:light_gray_concrete
-fill 269 64 48 284 79 48 minecraft:light_gray_concrete
-fill 269 64 48 269 79 61 minecraft:light_gray_concrete
-setblock 270 64 60 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "031"}','{"text": "create_brass"}','{"text": "arm"}','{"text": ""}']}}
-setblock 271 64 60 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "a mechanical"}','{"text": "arm feeding a"}','{"text": "blaze burner"}','{"text": ""}']}}
-fill 279 64 48 279 79 61 minecraft:light_gray_concrete
-setblock 272 64 53 create:depot
-kw testworld use 272 64 53 up minecraft:coal
-setblock 276 64 53 create:blaze_burner[blaze=smouldering]
-setblock 274 64 53 create:mechanical_arm[ceiling=false]{InteractionPoints:[{Type:"create:depot",Pos:[I;-2,0,0],Mode:"TAKE"},{Type:"create:blaze_burner",Pos:[I;2,0,0],Mode:"DEPOSIT"}]}
-setblock 274 63 53 create:shaft[axis=y]
-setblock 274 62 53 create:creative_motor[facing=up]{ScrollValue:32}
+# 031 create_brass/blaze_cake
+#area 233 44 254 69
+fill 233 64 44 254 91 69 minecraft:air
+fill 233 60 44 254 62 69 minecraft:stone
+fill 233 63 44 254 63 69 minecraft:light_gray_concrete
+fill 237 64 50 254 79 50 minecraft:light_gray_concrete
+fill 237 64 50 237 79 63 minecraft:light_gray_concrete
+setblock 238 64 62 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "031"}','{"text": "create_brass"}','{"text": "blaze_cake"}','{"text": ""}']}}
+setblock 239 64 62 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "press over"}','{"text": "basin, then"}','{"text": "spout over"}','{"text": "depot"}']}}
+fill 249 64 50 249 79 63 minecraft:light_gray_concrete
+setblock 241 64 55 create:basin[facing=down]
+setblock 241 66 55 create:mechanical_press[facing=south]
+fill 240 64 54 242 67 54 create:andesite_casing
+setblock 241 66 54 create:andesite_encased_shaft[axis=z]
+setblock 241 66 53 create:creative_motor[facing=south]{ScrollValue:32}
+summon item 241.5 65 55.5 {Item:{id:"minecraft:egg",count:1},PickupDelay:32767,Age:-32768,Tags:["kw_shot"]}
+summon item 241.5 65.2 55.5 {Item:{id:"minecraft:sugar",count:1},PickupDelay:32767,Age:-32768,Tags:["kw_shot"]}
+summon item 241.5 65.4 55.5 {Item:{id:"create:cinder_flour",count:1},PickupDelay:32767,Age:-32768,Tags:["kw_shot"]}
+setblock 245 64 55 create:depot
+setblock 245 66 55 create:spout
+setblock 245 67 55 create:fluid_tank[bottom=true,shape=window,top=true]
+kw testworld use 245 64 55 up create:blaze_cake_base
 execute as @e[type=minecraft:item,tag=!kw_shot] run kill @s

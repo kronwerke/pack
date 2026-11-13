@@ -1,56 +1,118 @@
-# 008 farms/crops_essence
-#area 45 21 64 46
-fill 45 64 21 64 91 46 minecraft:air
-fill 45 60 21 64 62 46 minecraft:stone
-fill 45 63 21 64 63 46 minecraft:light_gray_concrete
-fill 49 64 27 64 79 27 minecraft:light_gray_concrete
-fill 49 64 27 49 79 40 minecraft:light_gray_concrete
-setblock 50 64 39 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "008"}','{"text": "farms"}','{"text": "crops_essence"}','{"text": ""}']}}
-setblock 51 64 39 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "cross section"}','{"text": "of inferium"}','{"text": "farmland with"}','{"text": "growth"}']}}
-setblock 52 64 39 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "accelerators"}','{"text": "underneath"}','{"text": ""}','{"text": ""}']}}
-fill 59 64 27 59 79 40 minecraft:light_gray_concrete
-fill 52 64 31 52 65 31 mysticalagriculture:inferium_growth_accelerator
-setblock 52 66 31 mysticalagriculture:inferium_farmland[moisture=7]
-setblock 52 67 31 mysticalagriculture:inferium_crop[age=7]
-fill 52 64 32 52 65 32 mysticalagriculture:inferium_growth_accelerator
-setblock 52 66 32 mysticalagriculture:inferium_farmland[moisture=7]
-setblock 52 67 32 mysticalagriculture:inferium_crop[age=7]
-fill 52 64 33 52 65 33 mysticalagriculture:inferium_growth_accelerator
-setblock 52 66 33 mysticalagriculture:inferium_farmland[moisture=7]
-setblock 52 67 33 mysticalagriculture:inferium_crop[age=7]
-fill 53 64 31 53 65 31 mysticalagriculture:inferium_growth_accelerator
-setblock 53 66 31 mysticalagriculture:inferium_farmland[moisture=7]
-setblock 53 67 31 mysticalagriculture:inferium_crop[age=7]
-fill 53 64 32 53 65 32 mysticalagriculture:inferium_growth_accelerator
-setblock 53 66 32 mysticalagriculture:inferium_farmland[moisture=7]
-setblock 53 67 32 mysticalagriculture:inferium_crop[age=7]
-fill 53 64 33 53 65 33 mysticalagriculture:inferium_growth_accelerator
-setblock 53 66 33 mysticalagriculture:inferium_farmland[moisture=7]
-setblock 53 67 33 mysticalagriculture:inferium_crop[age=7]
-fill 54 64 31 54 65 31 mysticalagriculture:inferium_growth_accelerator
-setblock 54 66 31 mysticalagriculture:inferium_farmland[moisture=7]
-setblock 54 67 31 mysticalagriculture:inferium_crop[age=7]
-fill 54 64 32 54 65 32 mysticalagriculture:inferium_growth_accelerator
-setblock 54 66 32 minecraft:water
-fill 54 64 33 54 65 33 mysticalagriculture:inferium_growth_accelerator
-setblock 54 66 33 mysticalagriculture:inferium_farmland[moisture=7]
-setblock 54 67 33 mysticalagriculture:inferium_crop[age=7]
-fill 55 64 31 55 65 31 mysticalagriculture:inferium_growth_accelerator
-setblock 55 66 31 mysticalagriculture:inferium_farmland[moisture=7]
-setblock 55 67 31 mysticalagriculture:inferium_crop[age=7]
-fill 55 64 32 55 65 32 mysticalagriculture:inferium_growth_accelerator
-setblock 55 66 32 mysticalagriculture:inferium_farmland[moisture=7]
-setblock 55 67 32 mysticalagriculture:inferium_crop[age=7]
-fill 55 64 33 55 65 33 mysticalagriculture:inferium_growth_accelerator
-setblock 55 66 33 mysticalagriculture:inferium_farmland[moisture=7]
-setblock 55 67 33 mysticalagriculture:inferium_crop[age=7]
-fill 56 64 31 56 65 31 mysticalagriculture:inferium_growth_accelerator
-setblock 56 66 31 mysticalagriculture:inferium_farmland[moisture=7]
-setblock 56 67 31 mysticalagriculture:inferium_crop[age=7]
-fill 56 64 32 56 65 32 mysticalagriculture:inferium_growth_accelerator
-setblock 56 66 32 mysticalagriculture:inferium_farmland[moisture=7]
-setblock 56 67 32 mysticalagriculture:inferium_crop[age=7]
-fill 56 64 33 56 65 33 mysticalagriculture:inferium_growth_accelerator
-setblock 56 66 33 mysticalagriculture:inferium_farmland[moisture=7]
-setblock 56 67 33 mysticalagriculture:inferium_crop[age=7]
+# 008 farms/crops_harvester
+#area 28 21 49 48
+fill 28 64 21 49 91 48 minecraft:air
+fill 28 60 21 49 62 48 minecraft:stone
+fill 28 63 21 49 63 48 minecraft:light_gray_concrete
+fill 32 64 27 49 79 27 minecraft:light_gray_concrete
+fill 32 64 27 32 79 42 minecraft:light_gray_concrete
+setblock 33 64 41 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "008"}','{"text": "farms"}','{"text": "crops_harvester"}','{"text": ""}']}}
+setblock 34 64 41 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "bearing with"}','{"text": "two harvesters"}','{"text": "and a chest"}','{"text": "sweeping a"}']}}
+setblock 35 64 41 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "round wheat"}','{"text": "field"}','{"text": ""}','{"text": ""}']}}
+fill 44 64 27 44 79 42 minecraft:light_gray_concrete
+setblock 35 63 31 minecraft:farmland[moisture=7]
+setblock 35 64 31 minecraft:wheat[age=7]
+setblock 35 63 32 minecraft:farmland[moisture=7]
+setblock 35 64 32 minecraft:wheat[age=7]
+setblock 35 63 33 minecraft:farmland[moisture=7]
+setblock 35 64 33 minecraft:wheat[age=7]
+setblock 35 63 34 minecraft:farmland[moisture=7]
+setblock 35 64 34 minecraft:wheat[age=7]
+setblock 35 63 35 minecraft:farmland[moisture=7]
+setblock 35 64 35 minecraft:wheat[age=7]
+setblock 36 63 30 minecraft:farmland[moisture=7]
+setblock 36 64 30 minecraft:wheat[age=7]
+setblock 36 63 31 minecraft:farmland[moisture=7]
+setblock 36 64 31 minecraft:wheat[age=7]
+setblock 36 63 32 minecraft:farmland[moisture=7]
+setblock 36 64 32 minecraft:wheat[age=7]
+setblock 36 63 33 minecraft:farmland[moisture=7]
+setblock 36 64 33 minecraft:wheat[age=7]
+setblock 36 63 34 minecraft:farmland[moisture=7]
+setblock 36 64 34 minecraft:wheat[age=7]
+setblock 36 63 35 minecraft:farmland[moisture=7]
+setblock 36 64 35 minecraft:wheat[age=7]
+setblock 36 63 36 minecraft:farmland[moisture=7]
+setblock 36 64 36 minecraft:wheat[age=7]
+setblock 37 63 30 minecraft:farmland[moisture=7]
+setblock 37 64 30 minecraft:wheat[age=7]
+setblock 37 63 31 minecraft:farmland[moisture=7]
+setblock 37 64 31 minecraft:wheat[age=7]
+setblock 37 63 32 minecraft:farmland[moisture=7]
+setblock 37 64 32 minecraft:wheat[age=7]
+setblock 37 63 33 minecraft:farmland[moisture=7]
+setblock 37 64 33 minecraft:wheat[age=7]
+setblock 37 63 34 minecraft:farmland[moisture=7]
+setblock 37 64 34 minecraft:wheat[age=7]
+setblock 37 63 35 minecraft:farmland[moisture=7]
+setblock 37 64 35 minecraft:wheat[age=7]
+setblock 37 63 36 minecraft:farmland[moisture=7]
+setblock 37 64 36 minecraft:wheat[age=7]
+setblock 38 63 30 minecraft:farmland[moisture=7]
+setblock 38 64 30 minecraft:wheat[age=7]
+setblock 38 63 31 minecraft:farmland[moisture=7]
+setblock 38 64 31 minecraft:wheat[age=7]
+setblock 38 63 32 minecraft:farmland[moisture=7]
+setblock 38 64 32 minecraft:wheat[age=7]
+setblock 38 63 33 minecraft:farmland[moisture=7]
+setblock 38 64 33 minecraft:wheat[age=7]
+setblock 38 63 34 minecraft:farmland[moisture=7]
+setblock 38 64 34 minecraft:wheat[age=7]
+setblock 38 63 35 minecraft:farmland[moisture=7]
+setblock 38 64 35 minecraft:wheat[age=7]
+setblock 38 63 36 minecraft:farmland[moisture=7]
+setblock 38 64 36 minecraft:wheat[age=7]
+setblock 39 63 30 minecraft:farmland[moisture=7]
+setblock 39 64 30 minecraft:wheat[age=7]
+setblock 39 63 31 minecraft:farmland[moisture=7]
+setblock 39 64 31 minecraft:wheat[age=7]
+setblock 39 63 32 minecraft:farmland[moisture=7]
+setblock 39 64 32 minecraft:wheat[age=7]
+setblock 39 63 33 minecraft:farmland[moisture=7]
+setblock 39 64 33 minecraft:wheat[age=7]
+setblock 39 63 34 minecraft:farmland[moisture=7]
+setblock 39 64 34 minecraft:wheat[age=7]
+setblock 39 63 35 minecraft:farmland[moisture=7]
+setblock 39 64 35 minecraft:wheat[age=7]
+setblock 39 63 36 minecraft:farmland[moisture=7]
+setblock 39 64 36 minecraft:wheat[age=7]
+setblock 40 63 30 minecraft:farmland[moisture=7]
+setblock 40 64 30 minecraft:wheat[age=7]
+setblock 40 63 31 minecraft:farmland[moisture=7]
+setblock 40 64 31 minecraft:wheat[age=7]
+setblock 40 63 32 minecraft:farmland[moisture=7]
+setblock 40 64 32 minecraft:wheat[age=7]
+setblock 40 63 33 minecraft:farmland[moisture=7]
+setblock 40 64 33 minecraft:wheat[age=7]
+setblock 40 63 34 minecraft:farmland[moisture=7]
+setblock 40 64 34 minecraft:wheat[age=7]
+setblock 40 63 35 minecraft:farmland[moisture=7]
+setblock 40 64 35 minecraft:wheat[age=7]
+setblock 40 63 36 minecraft:farmland[moisture=7]
+setblock 40 64 36 minecraft:wheat[age=7]
+setblock 41 63 31 minecraft:farmland[moisture=7]
+setblock 41 64 31 minecraft:wheat[age=7]
+setblock 41 63 32 minecraft:farmland[moisture=7]
+setblock 41 64 32 minecraft:wheat[age=7]
+setblock 41 63 33 minecraft:farmland[moisture=7]
+setblock 41 64 33 minecraft:wheat[age=7]
+setblock 41 63 34 minecraft:farmland[moisture=7]
+setblock 41 64 34 minecraft:wheat[age=7]
+setblock 41 63 35 minecraft:farmland[moisture=7]
+setblock 41 64 35 minecraft:wheat[age=7]
+setblock 34 63 33 minecraft:water
+setblock 42 63 33 minecraft:water
+setblock 38 63 29 minecraft:water
+setblock 38 63 37 minecraft:water
+setblock 38 63 33 create:mechanical_bearing[facing=up]
+setblock 38 62 33 create:creative_motor[facing=up]{ScrollValue:8}
+setblock 36 64 33 create:linear_chassis[axis=x,sticky_bottom=true,sticky_top=true]
+setblock 37 64 33 create:linear_chassis[axis=x,sticky_bottom=false,sticky_top=false]
+setblock 38 64 33 create:linear_chassis[axis=x,sticky_bottom=false,sticky_top=false]
+setblock 39 64 33 create:linear_chassis[axis=x,sticky_bottom=false,sticky_top=false]
+setblock 40 64 33 create:linear_chassis[axis=x,sticky_bottom=true,sticky_top=true]
+setblock 39 64 34 create:mechanical_harvester[facing=south,waterlogged=false]
+setblock 40 64 34 create:mechanical_harvester[facing=south,waterlogged=false]
+setblock 37 64 32 create:mechanical_harvester[facing=north,waterlogged=false]
+setblock 36 64 32 create:mechanical_harvester[facing=north,waterlogged=false]
+kw testworld use 38 63 33 up minecraft:air
 execute as @e[type=minecraft:item,tag=!kw_shot] run kill @s

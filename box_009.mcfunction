@@ -1,33 +1,56 @@
-# 009 farms/animals_thorn
-#area 60 21 79 46
-fill 60 64 21 79 91 46 minecraft:air
-fill 60 60 21 79 62 46 minecraft:stone
-fill 60 63 21 79 63 46 minecraft:light_gray_concrete
-fill 64 64 27 79 79 27 minecraft:light_gray_concrete
-fill 64 64 27 64 79 40 minecraft:light_gray_concrete
-setblock 65 64 39 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "009"}','{"text": "farms"}','{"text": "animals_thorn"}','{"text": ""}']}}
-setblock 66 64 39 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "fenced pen with"}','{"text": "feeding trough,"}','{"text": "Dreadthorne,"}','{"text": "hopper floor,"}']}}
-setblock 67 64 39 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "mana pool"}','{"text": "nearby"}','{"text": ""}','{"text": ""}']}}
-fill 74 64 27 74 79 40 minecraft:light_gray_concrete
-fill 67 63 30 71 63 34 minecraft:grass_block[snowy=false]
-setblock 67 64 30 minecraft:oak_fence
-setblock 67 64 34 minecraft:oak_fence
-setblock 68 64 30 minecraft:oak_fence
-setblock 68 64 34 minecraft:oak_fence
-setblock 69 64 30 minecraft:oak_fence
-setblock 69 64 34 minecraft:oak_fence
-setblock 70 64 30 minecraft:oak_fence
-setblock 70 64 34 minecraft:oak_fence
-setblock 71 64 30 minecraft:oak_fence
-setblock 71 64 34 minecraft:oak_fence
-setblock 67 64 31 minecraft:oak_fence
-setblock 71 64 31 minecraft:oak_fence
-setblock 67 64 32 minecraft:oak_fence
-setblock 71 64 32 minecraft:oak_fence
-setblock 67 64 33 minecraft:oak_fence
-setblock 71 64 33 minecraft:oak_fence
-setblock 69 64 32 botania:dreadthorne
-summon minecraft:cow 68.5 64 33.5 {NoAI:1b,PersistenceRequired:1b,Silent:1b,Tags:["kw_shot"],Rotation:[180f,0f]}
-summon minecraft:cow 70.5 64 31.5 {NoAI:1b,PersistenceRequired:1b,Silent:1b,Tags:["kw_shot"],Rotation:[180f,0f],Age:-24000}
-setblock 72 64 32 botania:mana_pool{mana:200000}
+# 009 farms/crops_essence
+#area 45 21 64 46
+fill 45 64 21 64 91 46 minecraft:air
+fill 45 60 21 64 62 46 minecraft:stone
+fill 45 63 21 64 63 46 minecraft:light_gray_concrete
+fill 49 64 27 64 79 27 minecraft:light_gray_concrete
+fill 49 64 27 49 79 40 minecraft:light_gray_concrete
+setblock 50 64 39 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "009"}','{"text": "farms"}','{"text": "crops_essence"}','{"text": ""}']}}
+setblock 51 64 39 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "cross section"}','{"text": "of inferium"}','{"text": "farmland with"}','{"text": "growth"}']}}
+setblock 52 64 39 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "accelerators"}','{"text": "underneath"}','{"text": ""}','{"text": ""}']}}
+fill 59 64 27 59 79 40 minecraft:light_gray_concrete
+fill 52 64 31 52 65 31 mysticalagriculture:inferium_growth_accelerator
+setblock 52 66 31 mysticalagriculture:inferium_farmland[moisture=7]
+setblock 52 67 31 mysticalagriculture:inferium_crop[age=7]
+fill 52 64 32 52 65 32 mysticalagriculture:inferium_growth_accelerator
+setblock 52 66 32 mysticalagriculture:inferium_farmland[moisture=7]
+setblock 52 67 32 mysticalagriculture:inferium_crop[age=7]
+fill 52 64 33 52 65 33 mysticalagriculture:inferium_growth_accelerator
+setblock 52 66 33 mysticalagriculture:inferium_farmland[moisture=7]
+setblock 52 67 33 mysticalagriculture:inferium_crop[age=7]
+fill 53 64 31 53 65 31 mysticalagriculture:inferium_growth_accelerator
+setblock 53 66 31 mysticalagriculture:inferium_farmland[moisture=7]
+setblock 53 67 31 mysticalagriculture:inferium_crop[age=7]
+fill 53 64 32 53 65 32 mysticalagriculture:inferium_growth_accelerator
+setblock 53 66 32 mysticalagriculture:inferium_farmland[moisture=7]
+setblock 53 67 32 mysticalagriculture:inferium_crop[age=7]
+fill 53 64 33 53 65 33 mysticalagriculture:inferium_growth_accelerator
+setblock 53 66 33 mysticalagriculture:inferium_farmland[moisture=7]
+setblock 53 67 33 mysticalagriculture:inferium_crop[age=7]
+fill 54 64 31 54 65 31 mysticalagriculture:inferium_growth_accelerator
+setblock 54 66 31 mysticalagriculture:inferium_farmland[moisture=7]
+setblock 54 67 31 mysticalagriculture:inferium_crop[age=7]
+fill 54 64 32 54 65 32 mysticalagriculture:inferium_growth_accelerator
+setblock 54 66 32 minecraft:water
+fill 54 64 33 54 65 33 mysticalagriculture:inferium_growth_accelerator
+setblock 54 66 33 mysticalagriculture:inferium_farmland[moisture=7]
+setblock 54 67 33 mysticalagriculture:inferium_crop[age=7]
+fill 55 64 31 55 65 31 mysticalagriculture:inferium_growth_accelerator
+setblock 55 66 31 mysticalagriculture:inferium_farmland[moisture=7]
+setblock 55 67 31 mysticalagriculture:inferium_crop[age=7]
+fill 55 64 32 55 65 32 mysticalagriculture:inferium_growth_accelerator
+setblock 55 66 32 mysticalagriculture:inferium_farmland[moisture=7]
+setblock 55 67 32 mysticalagriculture:inferium_crop[age=7]
+fill 55 64 33 55 65 33 mysticalagriculture:inferium_growth_accelerator
+setblock 55 66 33 mysticalagriculture:inferium_farmland[moisture=7]
+setblock 55 67 33 mysticalagriculture:inferium_crop[age=7]
+fill 56 64 31 56 65 31 mysticalagriculture:inferium_growth_accelerator
+setblock 56 66 31 mysticalagriculture:inferium_farmland[moisture=7]
+setblock 56 67 31 mysticalagriculture:inferium_crop[age=7]
+fill 56 64 32 56 65 32 mysticalagriculture:inferium_growth_accelerator
+setblock 56 66 32 mysticalagriculture:inferium_farmland[moisture=7]
+setblock 56 67 32 mysticalagriculture:inferium_crop[age=7]
+fill 56 64 33 56 65 33 mysticalagriculture:inferium_growth_accelerator
+setblock 56 66 33 mysticalagriculture:inferium_farmland[moisture=7]
+setblock 56 67 33 mysticalagriculture:inferium_crop[age=7]
 execute as @e[type=minecraft:item,tag=!kw_shot] run kill @s

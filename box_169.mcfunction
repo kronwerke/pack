@@ -1,29 +1,38 @@
-# 169 silent_gear/stone_anvil, crude_mixer, repair_kit, alloy_forge
-#area -4 405 45 430
-fill -4 64 405 40 91 430 minecraft:air
-fill 41 64 405 45 91 430 minecraft:air
-fill -4 60 405 45 62 430 minecraft:stone
-fill -4 63 405 45 63 430 minecraft:light_gray_concrete
-fill 0 64 411 45 79 411 minecraft:light_gray_concrete
-fill 0 64 411 0 79 424 minecraft:light_gray_concrete
-setblock 1 64 423 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "169.1"}','{"text": "silent_gear"}','{"text": "stone_anvil"}','{"text": ""}']}}
-setblock 2 64 423 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Stell einen"}','{"text": "Steinamboss auf"}','{"text": ""}','{"text": ""}']}}
-fill 10 64 411 10 79 424 minecraft:light_gray_concrete
-setblock 4 64 416 silentgear:stone_anvil
-setblock 6 64 416 minecraft:smooth_stone_slab
-summon item_display 6.5 64.95 416.5 {item:{id:"silentgear:hammer",count:1},item_display:"fixed",billboard:"vertical",transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[1.0f,1.0f,1.0f]},brightness:{sky:15,block:15},Tags:["kw_shot"]}
-setblock 11 64 423 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "169.2"}','{"text": "silent_gear"}','{"text": "crude_mixer"}','{"text": ""}']}}
-setblock 12 64 423 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Bau einen Crude"}','{"text": "Mixer"}','{"text": ""}','{"text": ""}']}}
-fill 20 64 411 20 79 424 minecraft:light_gray_concrete
-setblock 15 64 416 silentgear:crude_mixer[facing=south,lit=true]
-setblock 21 64 423 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "169.3"}','{"text": "silent_gear"}','{"text": "repair_kit"}','{"text": ""}']}}
-setblock 22 64 423 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Füll ein"}','{"text": "Reparaturkit"}','{"text": ""}','{"text": ""}']}}
-fill 30 64 411 30 79 424 minecraft:light_gray_concrete
-setblock 25 64 416 minecraft:smooth_stone_slab
-summon item_display 25.5 65.4 416.5 {item:{id:"silentgear:crude_repair_kit",count:1},item_display:"fixed",billboard:"vertical",transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0f,0f],scale:[2.0f,2.0f,2.0f]},brightness:{sky:15,block:15},Tags:["kw_shot"]}
-setblock 31 64 423 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "169.4"}','{"text": "silent_gear"}','{"text": "alloy_forge"}','{"text": ""}']}}
-setblock 32 64 423 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Bau die"}','{"text": "Legierungsschmiede"}','{"text": ""}','{"text": ""}']}}
-fill 40 64 411 40 79 424 minecraft:light_gray_concrete
-setblock 34 64 416 silentgear:alloy_forge[facing=south,lit=true]
-setblock 36 64 416 silentgear:starlight_charger
+# 169 nether/welcome, ig_kill, nm_kill, debris
+#area -4 342 50 373
+fill -4 64 342 27 95 373 minecraft:air
+fill 28 64 342 50 95 373 minecraft:air
+fill -4 60 342 50 62 373 minecraft:stone
+fill -4 63 342 50 63 373 minecraft:light_gray_concrete
+fill 0 64 348 50 83 348 minecraft:light_gray_concrete
+fill 0 64 348 0 83 367 minecraft:light_gray_concrete
+setblock 1 64 366 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "169.1"}','{"text": "nether"}','{"text": "welcome"}','{"text": ""}']}}
+setblock 2 64 366 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Betritt den"}','{"text": "Nether"}','{"text": ""}','{"text": ""}']}}
+fill 9 64 348 9 83 367 minecraft:light_gray_concrete
+setblock 3 65 353 minecraft:obsidian
+setblock 3 66 353 minecraft:obsidian
+setblock 3 67 353 minecraft:obsidian
+setblock 4 64 353 minecraft:obsidian
+setblock 4 68 353 minecraft:obsidian
+setblock 5 64 353 minecraft:obsidian
+setblock 5 68 353 minecraft:obsidian
+setblock 6 65 353 minecraft:obsidian
+setblock 6 66 353 minecraft:obsidian
+setblock 6 67 353 minecraft:obsidian
+fill 4 65 353 5 67 353 minecraft:nether_portal[axis=x]
+execute if block 4 66 353 minecraft:nether_portal
+setblock 10 64 366 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "169.2"}','{"text": "nether"}','{"text": "ig_kill"}','{"text": ""}']}}
+setblock 11 64 366 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Besiege Ignis"}','{"text": ""}','{"text": ""}','{"text": ""}']}}
+fill 21 64 348 21 83 367 minecraft:light_gray_concrete
+summon cataclysm:ignis 15.5 64 354.5 {NoAI:1b,PersistenceRequired:1b,Silent:1b,Tags:["kw_shot"],Rotation:[0f,0f]}
+setblock 22 64 366 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "169.3"}','{"text": "nether"}','{"text": "nm_kill"}','{"text": ""}']}}
+setblock 23 64 366 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Besiege die"}','{"text": "Netherite"}','{"text": "Monstrosity"}','{"text": ""}']}}
+fill 35 64 348 35 83 367 minecraft:light_gray_concrete
+summon cataclysm:netherite_monstrosity 28.5 64 353.5 {NoAI:1b,PersistenceRequired:1b,Silent:1b,Tags:["kw_shot"],Rotation:[0f,0f]}
+setblock 36 64 366 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "169.4"}','{"text": "nether"}','{"text": "debris"}','{"text": ""}']}}
+setblock 37 64 366 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Grab Antiken"}','{"text": "Schrott"}','{"text": ""}','{"text": ""}']}}
+fill 45 64 348 45 83 367 minecraft:light_gray_concrete
+fill 39 64 352 41 65 353 minecraft:netherrack
+setblock 40 64 353 minecraft:ancient_debris
+setblock 41 65 353 minecraft:ancient_debris
 execute as @e[type=minecraft:item,tag=!kw_shot] run kill @s

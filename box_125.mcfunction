@@ -1,13 +1,24 @@
-# 125 immersive/cloche
-#area 107 217 126 242
-fill 107 64 217 126 91 242 minecraft:air
-fill 107 60 217 126 62 242 minecraft:stone
-fill 107 63 217 126 63 242 minecraft:light_gray_concrete
-fill 111 64 223 126 79 223 minecraft:light_gray_concrete
-fill 111 64 223 111 79 236 minecraft:light_gray_concrete
-setblock 112 64 235 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "125"}','{"text": "immersive"}','{"text": "cloche"}','{"text": ""}']}}
-setblock 113 64 235 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "a garden cloche"}','{"text": "growing hemp"}','{"text": ""}','{"text": ""}']}}
-fill 121 64 223 121 79 236 minecraft:light_gray_concrete
-kw testworld use 116 63 228 up immersiveengineering:cloche
-data merge block 116 64 228 {Items:[{Slot:0b,id:"minecraft:dirt",count:1},{Slot:1b,id:"immersiveengineering:seed",count:1}],energy:16000,tank:{Fluid:{id:"minecraft:water",amount:4000}}}
+# 125 occultism_afrit/storage
+#area 214 184 237 213
+fill 214 64 184 237 91 213 minecraft:air
+fill 214 60 184 237 62 213 minecraft:stone
+fill 214 63 184 237 63 213 minecraft:light_gray_concrete
+fill 218 64 190 237 79 190 minecraft:light_gray_concrete
+fill 218 64 190 218 79 207 minecraft:light_gray_concrete
+setblock 219 64 206 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "125"}','{"text": "occultism_afrit"}','{"text": "storage"}','{"text": ""}']}}
+setblock 220 64 206 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "storage"}','{"text": "actuator with"}','{"text": "four"}','{"text": "stabilizers"}']}}
+fill 232 64 190 232 79 207 minecraft:light_gray_concrete
+setblock 221 65 197 occultism:otherstone
+setblock 222 65 197 occultism:storage_stabilizer_tier1[facing=east]
+setblock 225 65 193 occultism:otherstone
+setblock 225 65 194 occultism:storage_stabilizer_tier1[facing=south]
+setblock 225 65 200 occultism:storage_stabilizer_tier1[facing=north]
+setblock 225 65 201 occultism:otherstone
+setblock 228 65 197 occultism:storage_stabilizer_tier1[facing=west]
+setblock 229 65 197 occultism:otherstone
+setblock 221 64 197 occultism:otherstone
+setblock 225 64 193 occultism:otherstone
+setblock 225 64 197 occultism:storage_controller
+setblock 225 64 201 occultism:otherstone
+setblock 229 64 197 occultism:otherstone
 execute as @e[type=minecraft:item,tag=!kw_shot] run kill @s

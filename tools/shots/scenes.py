@@ -2950,5 +2950,5 @@ def _(b):
 @scene("mekanism/configurator")
 def _(b):
     # the configurator, and a machine whose sides it sets
-    b.b(3, 0, 4, "mekanism:metallurgic_infuser[facing=south,active=false]")
+    b.b(3, 0, 4, "mekanism:metallurgic_infuser[facing=south]")
     b.show(5, 0, 4, "mekanism:configurator")

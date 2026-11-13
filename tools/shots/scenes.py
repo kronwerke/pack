@@ -1403,6 +1403,104 @@ def _(b):
     b.f(3, 0, 3, 5, 3, 5, "create:fluid_tank[bottom=false,shape=window,top=false]")
 
 
+
+# ===================================================================================
+# Seventh batch
+
+def mek_row(b, names, x0, z):
+    """Mekanism machines side by side, fronts to the camera: each hands on to the next."""
+    for i, name in enumerate(names):
+        b.b(x0 + i, 0, z, f"mekanism:{name}[facing=south]")
+
+
+@scene("mekanism_ores/shards", w=10)
+def _(b):
+    # the line of five from the injection chamber to the smelter. Behind the injection chamber
+    # the chemical infuser that makes its hydrogen chloride, a separator on either side of the
+    # infuser: the one for water also stands behind the purification chamber and gives it oxygen
+    z = 5
+    b.c(1, 0, z, [], frame=True)
+    mek_row(b, ["chemical_injection_chamber", "purification_chamber", "crusher", "enrichment_chamber", "energized_smelter"], 2, z)
+    b.c(7, 0, z, [], frame=True)
+    mek_row(b, ["electrolytic_separator", "chemical_infuser", "electrolytic_separator"], 1, z - 1)
+
+
+@scene("mekanism_ores/quintupling", w=12)
+def _(b):
+    # the whole ladder of eight, from the dissolution chamber to the smelter; a tube over the
+    # first three carries the slurry on
+    z = 5
+    b.c(1, 0, z, [], frame=True)
+    mek_row(b, ["chemical_dissolution_chamber", "chemical_washer", "chemical_crystallizer", "chemical_injection_chamber",
+                "purification_chamber", "crusher", "enrichment_chamber", "energized_smelter"], 2, z)
+    b.c(10, 0, z, [], frame=True)
+    b.f(2, 1, z, 4, 1, z, "mekanism:basic_pressurized_tube")
+
+
+@scene("immersive_heavy/hv", w=13, h=20)
+def _(b):
+    # two steel posts, an HV connector on each, steel wire between them: hung high, it cannot be insulated
+    for x in (2, 10):
+        b.use(x, -1, 4, "up", "immersiveengineering:steel_post")
+        b.changed(x, 3, 4, "minecraft:air")
+        b.use(x, 3, 4, "up", "immersiveengineering:connector_hv")
+    b.use(2, 4, 4, "south", "immersiveengineering:wirecoil_steel")
+    b.use(10, 4, 4, "south", "immersiveengineering:wirecoil_steel")
+    b.focus(1, 0, 3, 11, 5, 5)
+
+
+@scene("ars_apprentice/relay", w=17)
+def _(b):
+    # full jar, relay, relay, empty jar, linked with the dominion wand in that order
+    b.b(1, 0, 4, "ars_nouveau:source_jar[fill=11]", "{source:10000}")
+    b.b(6, 0, 4, "ars_nouveau:relay")
+    b.b(10, 0, 4, "ars_nouveau:relay")
+    b.b(15, 0, 4, "ars_nouveau:source_jar[fill=0]")
+    for a, c in ((1, 6), (6, 10), (10, 15)):
+        b.use(a, 0, 4, "south", "ars_nouveau:dominion_wand")
+        b.use(c, 0, 4, "south", "ars_nouveau:dominion_wand")
+
+
+@scene("flux_networks/dust")
+def _(b):
+    # redstone on bedrock, a block of air, obsidian over it: a hit on the obsidian turns the redstone into flux dust
+    b.b(4, 0, 4, "minecraft:bedrock")
+    b.drop(4, 1.1, 4, "minecraft:redstone", 64)
+    b.b(4, 2, 4, "minecraft:obsidian")
+    b.focus(3, 0, 3, 5, 2, 5)
+
+
+@scene("flux_networks/first_link", w=10)
+def _(b):
+    # a plug on the generator, a point on the machine, and no cable between them
+    b.b(2, 0, 4, "powah:furnator_starter[facing=south]")
+    b.b(2, 1, 4, "fluxnetworks:flux_plug")
+    b.b(7, 0, 4, "mekanism:enrichment_chamber[facing=south]")
+    b.b(7, 1, 4, "fluxnetworks:flux_point")
+
+
+@scene("nuclearcraft/reactor", w=11, d=11)
+def _(b):
+    # the first fission reactor, opened by a front of glass: a fuel cell in the middle, graphite
+    # on two sides of it, water heat sinks on the other four; controller and port in the wall
+    x0, z0 = 3, 3
+    for x in range(5):
+        for y in range(5):
+            for z in range(5):
+                on = sum((x in (0, 4), y in (0, 4), z in (0, 4)))
+                if on == 0:
+                    continue
+                front = on == 1 and z == 4
+                b.b(x0 + x, y, z0 + z, "nuclearcraft:fission_reactor_glass" if front else "nuclearcraft:fission_reactor_casing")
+    b.b(x0 + 4, 1, z0 + 2, "nuclearcraft:fission_reactor_controller[facing=east]")
+    b.b(x0 + 4, 3, z0 + 2, "nuclearcraft:fission_reactor_port")
+    b.b(x0 + 2, 2, z0 + 2, "nuclearcraft:fission_reactor_solid_fuel_cell")
+    for dx in (-1, 1):
+        b.b(x0 + 2 + dx, 2, z0 + 2, "nuclearcraft:graphite_block")
+    for dy, dz in ((1, 0), (-1, 0), (0, 1), (0, -1)):
+        b.b(x0 + 2, 2 + dy, z0 + 2 + dz, "nuclearcraft:water_heat_sink")
+
+
 # what a list chapter shows again from the chapter that explains it
 for _again, _first in (("list_transport/belt", "create/belt"), ("list_transport/vault", "storage/vault_big"),
                        ("list_transport/drawers", "storage/drawers_4"), ("list_power/powah_reactor", "powah/reactor"),

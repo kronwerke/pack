@@ -2587,3 +2587,15 @@ def _(b):
     # the engineer's workbench is two blocks wide
     b.use(4, -1, 4, "up", "immersiveengineering:workbench")
     b.focus(3, 0, 3, 6, 1, 5)
+
+
+@scene("create_brass/arm")
+def _(b):
+    # the mechanical arm takes coal from the depot and feeds the blaze burner: where it takes
+    # and where it gives is what a player clicks before setting the arm down
+    b.b(2, 0, 4, "create:depot")
+    b.use(2, 0, 4, "up", "minecraft:coal")
+    b.b(6, 0, 4, "create:blaze_burner[blaze=smouldering]")
+    b.b(4, 0, 4, "create:mechanical_arm[ceiling=false]",
+        '{InteractionPoints:[{Type:"create:depot",Pos:[I;-2,0,0],Mode:"TAKE"},{Type:"create:blaze_burner",Pos:[I;2,0,0],Mode:"DEPOSIT"}]}')
+    drive_from_below(b, 4, 0, 4)

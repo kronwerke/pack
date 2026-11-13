@@ -1,21 +1,30 @@
-# 086 immersive/blast_furnace, improved_form
-#area 26 179 55 205
-fill 26 64 179 55 91 205 minecraft:air
-fill 26 60 179 55 62 205 minecraft:stone
-fill 26 63 179 55 63 205 minecraft:light_gray_concrete
-fill 30 64 185 55 79 185 minecraft:light_gray_concrete
-fill 30 64 185 30 79 199 minecraft:light_gray_concrete
-setblock 31 64 198 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "086.1"}','{"text": "immersive"}','{"text": "blast_furnace"}','{"text": ""}']}}
-setblock 32 64 198 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "crude blast"}','{"text": "furnace GUI,"}','{"text": "improved"}','{"text": "furnace with"}']}}
-setblock 33 64 198 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "hopper and"}','{"text": "preheaters"}','{"text": ""}','{"text": ""}']}}
-fill 40 64 185 40 79 199 minecraft:light_gray_concrete
-place template immersiveengineering:multiblocks/blast_furnace 34 64 188 none
-kw testworld use 35 65 190 south immersiveengineering:hammer
-execute unless block 35 65 190 immersiveengineering:blastbrick
-setblock 41 64 198 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "086.2"}','{"text": "immersive"}','{"text": "improved_form"}','{"text": ""}']}}
-setblock 42 64 198 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Form einen"}','{"text": "Verbesserten"}','{"text": "Hochofen"}','{"text": ""}']}}
-fill 50 64 185 50 79 199 minecraft:light_gray_concrete
-place template immersiveengineering:multiblocks/improved_blast_furnace 44 64 188 none
-kw testworld use 45 65 190 south immersiveengineering:hammer
-execute unless block 45 65 190 immersiveengineering:blastbrick_reinforced
+# 086 hexerei/herbs
+#area 187 144 206 169
+fill 187 64 144 206 91 169 minecraft:air
+fill 187 60 144 206 62 169 minecraft:stone
+fill 187 63 144 206 63 169 minecraft:light_gray_concrete
+fill 191 64 150 206 79 150 minecraft:light_gray_concrete
+fill 191 64 150 191 79 163 minecraft:light_gray_concrete
+setblock 192 64 162 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "086"}','{"text": "hexerei"}','{"text": "herbs"}','{"text": ""}']}}
+setblock 193 64 162 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "herb garden"}','{"text": "with all four"}','{"text": "plants grown"}','{"text": ""}']}}
+fill 201 64 150 201 79 163 minecraft:light_gray_concrete
+fill 194 63 154 198 63 156 minecraft:grass_block
+setblock 194 64 154 hexerei:mandrake_plant[age=3]
+setblock 195 64 154 hexerei:belladonna_plant[age=3]
+setblock 197 64 154 hexerei:mugwort_bush[half=lower,age=3]
+setblock 197 65 154 hexerei:mugwort_bush[half=upper,age=3]
+setblock 198 64 154 hexerei:yellow_dock_bush[half=lower,age=3]
+setblock 198 65 154 hexerei:yellow_dock_bush[half=upper,age=3]
+setblock 194 64 155 hexerei:mandrake_plant[age=3]
+setblock 195 64 155 hexerei:belladonna_plant[age=3]
+setblock 197 64 155 hexerei:mugwort_bush[half=lower,age=3]
+setblock 197 65 155 hexerei:mugwort_bush[half=upper,age=3]
+setblock 198 64 155 hexerei:yellow_dock_bush[half=lower,age=3]
+setblock 198 65 155 hexerei:yellow_dock_bush[half=upper,age=3]
+setblock 194 64 156 hexerei:mandrake_plant[age=3]
+setblock 195 64 156 hexerei:belladonna_plant[age=3]
+setblock 197 64 156 hexerei:mugwort_bush[half=lower,age=3]
+setblock 197 65 156 hexerei:mugwort_bush[half=upper,age=3]
+setblock 198 64 156 hexerei:yellow_dock_bush[half=lower,age=3]
+setblock 198 65 156 hexerei:yellow_dock_bush[half=upper,age=3]
 execute as @e[type=minecraft:item,tag=!kw_shot] run kill @s

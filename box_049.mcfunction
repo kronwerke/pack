@@ -1,16 +1,18 @@
-# 049 ars_apprentice/potions
-#area 120 88 139 113
-fill 120 64 88 139 91 113 minecraft:air
-fill 120 60 88 139 62 113 minecraft:stone
-fill 120 63 88 139 63 113 minecraft:light_gray_concrete
-fill 124 64 94 139 79 94 minecraft:light_gray_concrete
-fill 124 64 94 124 79 107 minecraft:light_gray_concrete
-setblock 125 64 106 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "049"}','{"text": "ars_apprentice"}','{"text": "potions"}','{"text": ""}']}}
-setblock 126 64 106 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "potion jars"}','{"text": "next to the"}','{"text": "cauldron and an"}','{"text": "alchemical"}']}}
-setblock 127 64 106 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "sourcelink"}','{"text": ""}','{"text": ""}','{"text": ""}']}}
-fill 134 64 94 134 79 107 minecraft:light_gray_concrete
-setblock 129 64 99 ars_nouveau:wixie_cauldron[converted=true,filled=true]
-setblock 127 64 99 ars_nouveau:potion_jar[fill=11]
-setblock 128 64 99 ars_nouveau:potion_jar[fill=6]
-setblock 131 64 99 ars_nouveau:alchemical_sourcelink
+# 049 ars_nouveau/drygmy
+#area 73 88 92 113
+fill 73 64 88 92 91 113 minecraft:air
+fill 73 60 88 92 62 113 minecraft:stone
+fill 73 63 88 92 63 113 minecraft:light_gray_concrete
+fill 77 64 94 92 79 94 minecraft:light_gray_concrete
+fill 77 64 94 77 79 107 minecraft:light_gray_concrete
+setblock 78 64 106 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "049"}','{"text": "ars_nouveau"}','{"text": "drygmy"}','{"text": ""}']}}
+setblock 79 64 106 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Drygmy henge"}','{"text": "with chest and"}','{"text": "jar"}','{"text": ""}']}}
+fill 87 64 94 87 79 107 minecraft:light_gray_concrete
+setblock 82 64 99 minecraft:mossy_cobblestone
+kw testworld use 82 64 99 up ars_nouveau:drygmy_charm
+execute unless block 82 64 99 minecraft:mossy_cobblestone
+setblock 83 64 99 minecraft:chest[facing=south]{Items:[]}
+setblock 81 64 99 ars_nouveau:source_jar[fill=11]{source:10000}
+summon minecraft:cow 84.5 64 101.5 {NoAI:1b,PersistenceRequired:1b,Silent:1b,Tags:["kw_shot"],Rotation:[180f,0f]}
+summon minecraft:sheep 80.5 64 101.5 {NoAI:1b,PersistenceRequired:1b,Silent:1b,Tags:["kw_shot"],Rotation:[180f,0f]}
 execute as @e[type=minecraft:item,tag=!kw_shot] run kill @s

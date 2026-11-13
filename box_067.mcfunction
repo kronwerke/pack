@@ -1,21 +1,18 @@
-# 067 botania_runes/plate_base
-#area 167 107 186 132
-fill 167 64 107 186 91 132 minecraft:air
-fill 167 60 107 186 62 132 minecraft:stone
-fill 167 63 107 186 63 132 minecraft:light_gray_concrete
-fill 171 64 113 186 79 113 minecraft:light_gray_concrete
-fill 171 64 113 171 79 126 minecraft:light_gray_concrete
-setblock 172 64 125 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "067"}','{"text": "botania_runes"}','{"text": "plate_base"}','{"text": ""}']}}
-setblock 173 64 125 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "the 3x3 lapis"}','{"text": "and livingrock"}','{"text": "base with plate"}','{"text": "and sparks"}']}}
-fill 181 64 113 181 79 126 minecraft:light_gray_concrete
-setblock 175 64 117 botania:livingrock
-setblock 175 64 118 minecraft:lapis_block
-setblock 175 64 119 botania:livingrock
-setblock 176 64 117 minecraft:lapis_block
-setblock 176 64 118 botania:livingrock
-setblock 176 64 119 minecraft:lapis_block
-setblock 177 64 117 botania:livingrock
-setblock 177 64 118 minecraft:lapis_block
-setblock 177 64 119 botania:livingrock
-setblock 176 65 118 botania:terrestrial_agglomeration_plate
+# 067 botania_runes/runic_altar
+#area 122 107 141 132
+fill 122 64 107 141 91 132 minecraft:air
+fill 122 60 107 141 62 132 minecraft:stone
+fill 122 63 107 141 63 132 minecraft:light_gray_concrete
+fill 126 64 113 141 79 113 minecraft:light_gray_concrete
+fill 126 64 113 126 79 126 minecraft:light_gray_concrete
+setblock 127 64 125 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "067"}','{"text": "botania_runes"}','{"text": "runic_altar"}','{"text": ""}']}}
+setblock 128 64 125 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "altar with"}','{"text": "ingredients, a"}','{"text": "spreader aimed"}','{"text": "at it, wand HUD"}']}}
+fill 136 64 113 136 79 126 minecraft:light_gray_concrete
+setblock 128 64 118 botania:mana_pool{mana:1000000}
+setblock 129 64 118 botania:mana_spreader{rotationX:180f,rotationY:0f,mana:1000}
+setblock 133 64 118 botania:runic_altar
+kw testworld use 133 64 118 up botania:manasteel_ingot
+kw testworld use 133 64 118 up botania:mana_powder
+kw testworld use 133 64 118 up minecraft:bone_meal
+kw testworld use 133 64 118 up minecraft:sugar_cane
 execute as @e[type=minecraft:item,tag=!kw_shot] run kill @s

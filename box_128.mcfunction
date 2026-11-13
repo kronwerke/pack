@@ -1,44 +1,118 @@
-# 128 theurgy/sal_tank, liquefaction, vessels, array, fermentation
-#area 96 340 155 365
-fill 96 64 340 140 91 365 minecraft:air
-fill 141 64 340 155 91 365 minecraft:air
-fill 96 60 340 155 62 365 minecraft:stone
-fill 96 63 340 155 63 365 minecraft:light_gray_concrete
-fill 100 64 346 155 79 346 minecraft:light_gray_concrete
-fill 100 64 346 100 79 359 minecraft:light_gray_concrete
-setblock 101 64 358 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "128.1"}','{"text": "theurgy"}','{"text": "sal_tank"}','{"text": ""}']}}
-setblock 102 64 358 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Stell Tank und"}','{"text": "Akkumulator auf"}','{"text": ""}','{"text": ""}']}}
-fill 110 64 346 110 79 359 minecraft:light_gray_concrete
-setblock 105 64 351 theurgy:sal_ammoniac_tank
-setblock 105 65 351 theurgy:sal_ammoniac_accumulator
-setblock 111 64 358 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "128.2"}','{"text": "theurgy"}','{"text": "liquefaction"}','{"text": ""}']}}
-setblock 112 64 358 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Löse Sulfur aus"}','{"text": "Raw Iron"}','{"text": ""}','{"text": ""}']}}
-fill 120 64 346 120 79 359 minecraft:light_gray_concrete
-setblock 115 64 351 theurgy:pyromantic_brazier[lit=true]
-setblock 115 65 351 theurgy:liquefaction_cauldron[half=lower,lit=true]
-setblock 115 66 351 theurgy:liquefaction_cauldron[half=upper,lit=true]
-setblock 121 64 358 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "128.3"}','{"text": "theurgy"}','{"text": "vessels"}','{"text": ""}']}}
-setblock 122 64 358 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Stell die drei"}','{"text": "Gefäße auf"}','{"text": ""}','{"text": ""}']}}
-fill 130 64 346 130 79 359 minecraft:light_gray_concrete
-setblock 125 64 351 theurgy:pyromantic_brazier[lit=true]
-setblock 125 65 351 theurgy:incubator[half=lower]
-setblock 125 66 351 theurgy:incubator[half=upper]
-setblock 124 64 351 minecraft:stone_bricks
-setblock 124 65 351 theurgy:incubator_salt_vessel
-setblock 126 64 351 minecraft:stone_bricks
-setblock 126 65 351 theurgy:incubator_sulfur_vessel
-setblock 125 64 350 minecraft:stone_bricks
-setblock 125 65 350 theurgy:incubator_mercury_vessel
-setblock 131 64 358 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "128.4"}','{"text": "theurgy"}','{"text": "array"}','{"text": ""}']}}
-setblock 132 64 358 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Stell drei"}','{"text": "Pedestale auf"}','{"text": ""}','{"text": ""}']}}
-fill 140 64 346 140 79 359 minecraft:light_gray_concrete
-setblock 133 64 351 theurgy:reformation_source_pedestal
-setblock 135 64 350 theurgy:reformation_target_pedestal
-setblock 137 64 351 theurgy:reformation_result_pedestal
-setblock 135 64 353 minecraft:stone_bricks
-setblock 135 65 353 theurgy:sulfuric_flux_emitter[facing=up]
-setblock 141 64 358 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "128.5"}','{"text": "theurgy"}','{"text": "fermentation"}','{"text": ""}']}}
-setblock 142 64 358 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Vergär Sulfur"}','{"text": "zu Niter"}','{"text": ""}','{"text": ""}']}}
-fill 150 64 346 150 79 359 minecraft:light_gray_concrete
-setblock 145 64 351 theurgy:fermentation_vat[facing=south,has_output=false,open=true]
+# 128 nuclearcraft/reactor
+#area 35 317 56 344
+fill 35 64 317 56 91 344 minecraft:air
+fill 35 60 317 56 62 344 minecraft:stone
+fill 35 63 317 56 63 344 minecraft:light_gray_concrete
+fill 39 64 323 56 79 323 minecraft:light_gray_concrete
+fill 39 64 323 39 79 338 minecraft:light_gray_concrete
+setblock 40 64 337 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "128"}','{"text": "nuclearcraft"}','{"text": "reactor"}','{"text": ""}']}}
+setblock 41 64 337 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Starte den"}','{"text": "ersten"}','{"text": "Spaltreaktor"}','{"text": ""}']}}
+fill 51 64 323 51 79 338 minecraft:light_gray_concrete
+setblock 43 64 327 nuclearcraft:fission_reactor_casing
+setblock 43 64 328 nuclearcraft:fission_reactor_casing
+setblock 43 64 329 nuclearcraft:fission_reactor_casing
+setblock 43 64 330 nuclearcraft:fission_reactor_casing
+setblock 43 64 331 nuclearcraft:fission_reactor_casing
+setblock 43 65 327 nuclearcraft:fission_reactor_casing
+setblock 43 65 328 nuclearcraft:fission_reactor_casing
+setblock 43 65 329 nuclearcraft:fission_reactor_casing
+setblock 43 65 330 nuclearcraft:fission_reactor_casing
+setblock 43 65 331 nuclearcraft:fission_reactor_casing
+setblock 43 66 327 nuclearcraft:fission_reactor_casing
+setblock 43 66 328 nuclearcraft:fission_reactor_casing
+setblock 43 66 329 nuclearcraft:fission_reactor_casing
+setblock 43 66 330 nuclearcraft:fission_reactor_casing
+setblock 43 66 331 nuclearcraft:fission_reactor_casing
+setblock 43 67 327 nuclearcraft:fission_reactor_casing
+setblock 43 67 328 nuclearcraft:fission_reactor_casing
+setblock 43 67 329 nuclearcraft:fission_reactor_casing
+setblock 43 67 330 nuclearcraft:fission_reactor_casing
+setblock 43 67 331 nuclearcraft:fission_reactor_casing
+setblock 43 68 327 nuclearcraft:fission_reactor_casing
+setblock 43 68 328 nuclearcraft:fission_reactor_casing
+setblock 43 68 329 nuclearcraft:fission_reactor_casing
+setblock 43 68 330 nuclearcraft:fission_reactor_casing
+setblock 43 68 331 nuclearcraft:fission_reactor_casing
+setblock 44 64 327 nuclearcraft:fission_reactor_casing
+setblock 44 64 328 nuclearcraft:fission_reactor_casing
+setblock 44 64 329 nuclearcraft:fission_reactor_casing
+setblock 44 64 330 nuclearcraft:fission_reactor_casing
+setblock 44 64 331 nuclearcraft:fission_reactor_casing
+setblock 44 65 327 nuclearcraft:fission_reactor_casing
+setblock 44 65 331 nuclearcraft:fission_reactor_glass
+setblock 44 66 327 nuclearcraft:fission_reactor_casing
+setblock 44 66 331 nuclearcraft:fission_reactor_glass
+setblock 44 67 327 nuclearcraft:fission_reactor_casing
+setblock 44 67 331 nuclearcraft:fission_reactor_glass
+setblock 44 68 327 nuclearcraft:fission_reactor_casing
+setblock 44 68 328 nuclearcraft:fission_reactor_casing
+setblock 44 68 329 nuclearcraft:fission_reactor_casing
+setblock 44 68 330 nuclearcraft:fission_reactor_casing
+setblock 44 68 331 nuclearcraft:fission_reactor_casing
+setblock 45 64 327 nuclearcraft:fission_reactor_casing
+setblock 45 64 328 nuclearcraft:fission_reactor_casing
+setblock 45 64 329 nuclearcraft:fission_reactor_casing
+setblock 45 64 330 nuclearcraft:fission_reactor_casing
+setblock 45 64 331 nuclearcraft:fission_reactor_casing
+setblock 45 65 327 nuclearcraft:fission_reactor_casing
+setblock 45 65 331 nuclearcraft:fission_reactor_glass
+setblock 45 66 327 nuclearcraft:fission_reactor_casing
+setblock 45 66 331 nuclearcraft:fission_reactor_glass
+setblock 45 67 327 nuclearcraft:fission_reactor_casing
+setblock 45 67 331 nuclearcraft:fission_reactor_glass
+setblock 45 68 327 nuclearcraft:fission_reactor_casing
+setblock 45 68 328 nuclearcraft:fission_reactor_casing
+setblock 45 68 329 nuclearcraft:fission_reactor_casing
+setblock 45 68 330 nuclearcraft:fission_reactor_casing
+setblock 45 68 331 nuclearcraft:fission_reactor_casing
+setblock 46 64 327 nuclearcraft:fission_reactor_casing
+setblock 46 64 328 nuclearcraft:fission_reactor_casing
+setblock 46 64 329 nuclearcraft:fission_reactor_casing
+setblock 46 64 330 nuclearcraft:fission_reactor_casing
+setblock 46 64 331 nuclearcraft:fission_reactor_casing
+setblock 46 65 327 nuclearcraft:fission_reactor_casing
+setblock 46 65 331 nuclearcraft:fission_reactor_glass
+setblock 46 66 327 nuclearcraft:fission_reactor_casing
+setblock 46 66 331 nuclearcraft:fission_reactor_glass
+setblock 46 67 327 nuclearcraft:fission_reactor_casing
+setblock 46 67 331 nuclearcraft:fission_reactor_glass
+setblock 46 68 327 nuclearcraft:fission_reactor_casing
+setblock 46 68 328 nuclearcraft:fission_reactor_casing
+setblock 46 68 329 nuclearcraft:fission_reactor_casing
+setblock 46 68 330 nuclearcraft:fission_reactor_casing
+setblock 46 68 331 nuclearcraft:fission_reactor_casing
+setblock 47 64 327 nuclearcraft:fission_reactor_casing
+setblock 47 64 328 nuclearcraft:fission_reactor_casing
+setblock 47 64 329 nuclearcraft:fission_reactor_casing
+setblock 47 64 330 nuclearcraft:fission_reactor_casing
+setblock 47 64 331 nuclearcraft:fission_reactor_casing
+setblock 47 65 327 nuclearcraft:fission_reactor_casing
+setblock 47 65 328 nuclearcraft:fission_reactor_casing
+setblock 47 65 329 nuclearcraft:fission_reactor_casing
+setblock 47 65 330 nuclearcraft:fission_reactor_casing
+setblock 47 65 331 nuclearcraft:fission_reactor_casing
+setblock 47 66 327 nuclearcraft:fission_reactor_casing
+setblock 47 66 328 nuclearcraft:fission_reactor_casing
+setblock 47 66 329 nuclearcraft:fission_reactor_casing
+setblock 47 66 330 nuclearcraft:fission_reactor_casing
+setblock 47 66 331 nuclearcraft:fission_reactor_casing
+setblock 47 67 327 nuclearcraft:fission_reactor_casing
+setblock 47 67 328 nuclearcraft:fission_reactor_casing
+setblock 47 67 329 nuclearcraft:fission_reactor_casing
+setblock 47 67 330 nuclearcraft:fission_reactor_casing
+setblock 47 67 331 nuclearcraft:fission_reactor_casing
+setblock 47 68 327 nuclearcraft:fission_reactor_casing
+setblock 47 68 328 nuclearcraft:fission_reactor_casing
+setblock 47 68 329 nuclearcraft:fission_reactor_casing
+setblock 47 68 330 nuclearcraft:fission_reactor_casing
+setblock 47 68 331 nuclearcraft:fission_reactor_casing
+setblock 44 65 331 nuclearcraft:fission_reactor_controller[facing=south]
+setblock 46 65 331 nuclearcraft:fission_reactor_port
+setblock 45 66 329 nuclearcraft:fission_reactor_solid_fuel_cell
+setblock 44 66 329 nuclearcraft:graphite_block
+setblock 46 66 329 nuclearcraft:graphite_block
+setblock 45 67 329 nuclearcraft:water_heat_sink
+setblock 45 65 329 nuclearcraft:water_heat_sink
+setblock 45 66 330 nuclearcraft:water_heat_sink
+setblock 45 66 328 nuclearcraft:water_heat_sink
 execute as @e[type=minecraft:item,tag=!kw_shot] run kill @s

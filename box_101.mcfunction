@@ -1,51 +1,45 @@
-# 101 powah/orb, furnator, thermo, reactor, ender_cell, transmitter, power_plant
-#area 63 233 144 258
-fill 63 64 233 104 93 258 minecraft:air
-fill 105 64 233 144 93 258 minecraft:air
-fill 63 60 233 144 62 258 minecraft:stone
-fill 63 63 233 144 63 258 minecraft:light_gray_concrete
-fill 67 64 239 144 81 239 minecraft:light_gray_concrete
-fill 67 64 239 67 81 252 minecraft:light_gray_concrete
-setblock 68 64 251 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "101.1"}','{"text": "powah"}','{"text": "orb"}','{"text": ""}']}}
-setblock 69 64 251 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Bau die"}','{"text": "Energizing Orb"}','{"text": ""}','{"text": ""}']}}
-fill 77 64 239 77 81 252 minecraft:light_gray_concrete
-setblock 72 64 244 powah:energizing_orb[facing=down]
-setblock 70 64 244 powah:energizing_rod_starter[facing=down]
-setblock 74 64 244 powah:energizing_rod_starter[facing=down]
-setblock 72 64 242 powah:energizing_rod_starter[facing=down]
-setblock 78 64 251 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "101.2"}','{"text": "powah"}','{"text": "furnator"}','{"text": ""}']}}
-setblock 79 64 251 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Bau einen"}','{"text": "Furnator"}','{"text": ""}','{"text": ""}']}}
-fill 87 64 239 87 81 252 minecraft:light_gray_concrete
-setblock 81 64 244 powah:furnator_starter[facing=south]
-setblock 82 64 244 powah:energy_cell_starter
-setblock 83 64 244 minecraft:trapped_chest[facing=south]{Items:[{Slot:0b,id:"minecraft:coal",count:1},{Slot:1b,id:"minecraft:coal",count:1},{Slot:2b,id:"minecraft:coal",count:1}]}
-setblock 88 64 251 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "101.3"}','{"text": "powah"}','{"text": "thermo"}','{"text": ""}']}}
-setblock 89 64 251 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Stell einen"}','{"text": "Thermo"}','{"text": "Generator auf"}','{"text": ""}']}}
-fill 97 64 239 97 81 252 minecraft:light_gray_concrete
-setblock 92 64 244 minecraft:magma_block
-setblock 92 65 244 powah:thermo_generator_starter
-setblock 98 64 251 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "101.4"}','{"text": "powah"}','{"text": "reactor"}','{"text": ""}']}}
-setblock 99 64 251 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Bau einen"}','{"text": "Reaktor"}','{"text": ""}','{"text": ""}']}}
-fill 107 64 239 107 81 252 minecraft:light_gray_concrete
-setblock 102 64 244 powah:reactor_starter[core=true]
-setblock 108 64 251 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "101.5"}','{"text": "powah"}','{"text": "ender_cell"}','{"text": ""}']}}
-setblock 109 64 251 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Teil Strom ohne"}','{"text": "Kabel"}','{"text": ""}','{"text": ""}']}}
-fill 119 64 239 119 81 252 minecraft:light_gray_concrete
-setblock 110 64 244 powah:furnator_starter[facing=south]
-setblock 111 64 244 powah:ender_cell_starter
-setblock 115 64 244 powah:ender_cell_starter
-setblock 116 64 244 minecraft:redstone_lamp[lit=true]
-setblock 120 64 251 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "101.6"}','{"text": "powah"}','{"text": "transmitter"}','{"text": ""}']}}
-setblock 121 64 251 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Lad dein"}','{"text": "Werkzeug"}','{"text": "überall"}','{"text": ""}']}}
-fill 129 64 239 129 81 252 minecraft:light_gray_concrete
-setblock 124 64 244 powah:energy_cell_starter
-setblock 124 65 244 powah:player_transmitter_starter[top=false]
-setblock 124 66 244 powah:player_transmitter_starter[top=true]
-setblock 130 64 251 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "101.7"}','{"text": "powah"}','{"text": "power_plant"}','{"text": ""}']}}
-setblock 131 64 251 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Bau ein"}','{"text": "Blazing-Kraftwerk"}','{"text": ""}','{"text": ""}']}}
-fill 139 64 239 139 81 252 minecraft:light_gray_concrete
-setblock 133 64 244 powah:furnator_blazing[facing=south]
-setblock 134 64 244 powah:energy_cell_blazing
-setblock 135 64 244 powah:furnator_blazing[facing=south]
-setblock 134 65 244 powah:furnator_blazing[facing=south]
+# 101 industrial/sower, bio, crusher
+#area 21 214 60 239
+fill 21 64 214 60 91 239 minecraft:air
+fill 21 60 214 60 62 239 minecraft:stone
+fill 21 63 214 60 63 239 minecraft:light_gray_concrete
+fill 25 64 220 60 79 220 minecraft:light_gray_concrete
+fill 25 64 220 25 79 233 minecraft:light_gray_concrete
+setblock 26 64 232 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "101.1"}','{"text": "industrial"}','{"text": "sower"}','{"text": ""}']}}
+setblock 27 64 232 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "the machines at"}','{"text": "work"}','{"text": ""}','{"text": ""}']}}
+fill 35 64 220 35 79 233 minecraft:light_gray_concrete
+setblock 29 64 224 minecraft:oak_log[axis=y]
+setblock 31 64 224 minecraft:oak_log[axis=y]
+setblock 29 64 226 minecraft:oak_log[axis=y]
+setblock 31 64 226 minecraft:oak_log[axis=y]
+setblock 30 64 225 industrialforegoing:plant_sower[subfacing=south]
+fill 29 65 224 31 65 226 minecraft:farmland[moisture=7]
+fill 29 66 224 31 66 226 minecraft:wheat[age=7]
+fill 30 64 223 30 65 223 minecraft:stone_bricks
+setblock 30 66 223 industrialforegoing:plant_gatherer[subfacing=south]
+setblock 36 64 232 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "101.2"}','{"text": "industrial"}','{"text": "bio"}','{"text": ""}']}}
+setblock 37 64 232 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Betreib einen"}','{"text": "Biogenerator"}','{"text": ""}','{"text": ""}']}}
+fill 45 64 220 45 79 233 minecraft:light_gray_concrete
+setblock 40 64 225 industrialforegoing:bioreactor[subfacing=south]
+setblock 46 64 232 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "101.3"}','{"text": "industrial"}','{"text": "crusher"}','{"text": ""}']}}
+setblock 47 64 232 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Stell einen"}','{"text": "Monsterschnetzler"}','{"text": "auf"}','{"text": ""}']}}
+fill 55 64 220 55 79 233 minecraft:light_gray_concrete
+setblock 48 64 224 minecraft:oak_fence
+setblock 48 64 227 minecraft:oak_fence
+setblock 49 64 224 minecraft:oak_fence
+setblock 49 64 227 minecraft:oak_fence
+setblock 50 64 224 minecraft:oak_fence
+setblock 50 64 227 minecraft:oak_fence
+setblock 51 64 224 minecraft:oak_fence
+setblock 51 64 227 minecraft:oak_fence
+setblock 52 64 224 minecraft:oak_fence
+setblock 52 64 227 minecraft:oak_fence
+setblock 48 64 225 minecraft:oak_fence
+setblock 52 64 225 minecraft:oak_fence
+setblock 48 64 226 minecraft:oak_fence
+setblock 52 64 226 minecraft:oak_fence
+summon minecraft:cow 49.5 64 225.5 {NoAI:1b,PersistenceRequired:1b,Silent:1b,Tags:["kw_shot"],Rotation:[180f,0f]}
+summon minecraft:cow 51.5 64 226.5 {NoAI:1b,PersistenceRequired:1b,Silent:1b,Tags:["kw_shot"],Rotation:[180f,0f]}
+setblock 50 64 223 industrialforegoing:mob_crusher[subfacing=south]
+setblock 53 64 225 industrialforegoing:mob_duplicator
 execute as @e[type=minecraft:item,tag=!kw_shot] run kill @s

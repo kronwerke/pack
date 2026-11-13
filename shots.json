@@ -1,12 +1,12 @@
 {
  "shots": [
   {
-   "name": "n_farms_wood_saw",
+   "name": "o_farms_animals_thorn",
    "dim": "kronwerke:testworld",
    "pos": [
-    23.24,
-    67.89,
-    40.0
+    71.49,
+    67.02,
+    38.07
    ],
    "yaw": 165.0,
    "pitch": 35.0,
@@ -15,12 +15,12 @@
    "height": 360
   },
   {
-   "name": "n_farms_crops_harvester",
+   "name": "o_create_frogport",
    "dim": "kronwerke:testworld",
    "pos": [
-    40.24,
-    67.89,
-    40.0
+    117.68,
+    66.16,
+    58.39
    ],
    "yaw": 165.0,
    "pitch": 35.0,
@@ -29,12 +29,12 @@
    "height": 360
   },
   {
-   "name": "n_create_brass_arm",
+   "name": "o_mekanism_ore_line",
    "dim": "kronwerke:testworld",
    "pos": [
-    212.31,
-    64.37,
-    56.52
+    37.91,
+    66.79,
+    81.26
    ],
    "yaw": 165.0,
    "pitch": 35.0,
@@ -43,7 +43,7 @@
    "height": 360
   },
   {
-   "name": "n_ars_apprentice_potions",
+   "name": "o_ars_apprentice_potions",
    "dim": "kronwerke:testworld",
    "pos": [
     130.31,
@@ -57,21 +57,7 @@
    "height": 360
   },
   {
-   "name": "n_ars_apprentice_turret",
-   "dim": "kronwerke:testworld",
-   "pos": [
-    145.42,
-    65.46,
-    102.42
-   ],
-   "yaw": 165.0,
-   "pitch": 35.0,
-   "fov": 60,
-   "width": 640,
-   "height": 360
-  },
-  {
-   "name": "n_ars_apprentice_source_motor",
+   "name": "o_ars_apprentice_source_motor",
    "dim": "kronwerke:testworld",
    "pos": [
     160.74,
@@ -85,12 +71,26 @@
    "height": 360
   },
   {
-   "name": "n_ars_master_wilden_ritual",
+   "name": "o_alfheim_pure_essence",
    "dim": "kronwerke:testworld",
    "pos": [
-    175.34,
-    65.25,
-    101.63
+    296.99,
+    65.73,
+    120.32
+   ],
+   "yaw": 165.0,
+   "pitch": 62.0,
+   "fov": 60,
+   "width": 640,
+   "height": 360
+  },
+  {
+   "name": "o_ae2_channels",
+   "dim": "kronwerke:testworld",
+   "pos": [
+    7.27,
+    66.63,
+    270.75
    ],
    "yaw": 165.0,
    "pitch": 35.0,
@@ -99,150 +99,10 @@
    "height": 360
   },
   {
-   "name": "n_ars_master_alteration",
+   "name": "o_list_transport_hose_pulley",
    "dim": "kronwerke:testworld",
    "pos": [
-    190.55,
-    66.42,
-    103.42
-   ],
-   "yaw": 165.0,
-   "pitch": 35.0,
-   "fov": 60,
-   "width": 640,
-   "height": 360
-  },
-  {
-   "name": "n_ars_master_charged_certus",
-   "dim": "kronwerke:testworld",
-   "pos": [
-    205.74,
-    64.99,
-    101.77
-   ],
-   "yaw": 165.0,
-   "pitch": 35.0,
-   "fov": 60,
-   "width": 640,
-   "height": 360
-  },
-  {
-   "name": "n_immersive_bench",
-   "dim": "kronwerke:testworld",
-   "pos": [
-    76.84,
-    65.46,
-    193.65
-   ],
-   "yaw": 165.0,
-   "pitch": 35.0,
-   "fov": 60,
-   "width": 640,
-   "height": 360
-  },
-  {
-   "name": "n_immersive_cloche",
-   "dim": "kronwerke:testworld",
-   "pos": [
-    92.64,
-    67.07,
-    194.76
-   ],
-   "yaw": 165.0,
-   "pitch": 35.0,
-   "fov": 60,
-   "width": 640,
-   "height": 360
-  },
-  {
-   "name": "n_immersive_heavy_survey",
-   "dim": "kronwerke:testworld",
-   "pos": [
-    397.64,
-    67.07,
-    194.76
-   ],
-   "yaw": 165.0,
-   "pitch": 35.0,
-   "fov": 60,
-   "width": 640,
-   "height": 360
-  },
-  {
-   "name": "n_oritech_laser",
-   "dim": "kronwerke:testworld",
-   "pos": [
-    16.24,
-    65.19,
-    247.27
-   ],
-   "yaw": 165.0,
-   "pitch": 35.0,
-   "fov": 60,
-   "width": 640,
-   "height": 360
-  },
-  {
-   "name": "n_oritech_atomic_forge",
-   "dim": "kronwerke:testworld",
-   "pos": [
-    26.24,
-    64.99,
-    247.27
-   ],
-   "yaw": 165.0,
-   "pitch": 35.0,
-   "fov": 60,
-   "width": 640,
-   "height": 360
-  },
-  {
-   "name": "n_oritech_fragment_forge",
-   "dim": "kronwerke:testworld",
-   "pos": [
-    48.24,
-    64.99,
-    247.27
-   ],
-   "yaw": 165.0,
-   "pitch": 35.0,
-   "fov": 60,
-   "width": 640,
-   "height": 360
-  },
-  {
-   "name": "n_ae2_p2p",
-   "dim": "kronwerke:testworld",
-   "pos": [
-    79.64,
-    66.26,
-    269.75
-   ],
-   "yaw": 165.0,
-   "pitch": 35.0,
-   "fov": 60,
-   "width": 640,
-   "height": 360
-  },
-  {
-   "name": "n_logistics_laser_node",
-   "dim": "kronwerke:testworld",
-   "pos": [
-    178.31,
-    65.37,
-    268.52
-   ],
-   "yaw": 165.0,
-   "pitch": 35.0,
-   "fov": 60,
-   "width": 640,
-   "height": 360
-  },
-  {
-   "name": "n_list_transport_hose_pulley",
-   "dim": "kronwerke:testworld",
-   "pos": [
-    280.3,
+    297.3,
     68.05,
     272.22
    ],
@@ -253,12 +113,12 @@
    "height": 360
   },
   {
-   "name": "n_list_power_mekmm_large",
+   "name": "o_list_power_mekmm_large",
    "dim": "kronwerke:testworld",
    "pos": [
-    42.37,
-    79.66,
-    299.96
+    40.24,
+    68.68,
+    292.99
    ],
    "yaw": 165.0,
    "pitch": 35.0,
@@ -267,82 +127,12 @@
    "height": 360
   },
   {
-   "name": "n_flux_networks_setup_mek",
-   "dim": "kronwerke:testworld",
-   "pos": [
-    99.74,
-    65.19,
-    289.27
-   ],
-   "yaw": 165.0,
-   "pitch": 35.0,
-   "fov": 60,
-   "width": 640,
-   "height": 360
-  },
-  {
-   "name": "n_flux_networks_setup_reactor",
-   "dim": "kronwerke:testworld",
-   "pos": [
-    110.81,
-    67.93,
-    291.39
-   ],
-   "yaw": 165.0,
-   "pitch": 35.0,
-   "fov": 60,
-   "width": 640,
-   "height": 360
-  },
-  {
-   "name": "n_pneumaticcraft_safety",
-   "dim": "kronwerke:testworld",
-   "pos": [
-    165.31,
-    65.36,
-    289.51
-   ],
-   "yaw": 165.0,
-   "pitch": 35.0,
-   "fov": 60,
-   "width": 640,
-   "height": 360
-  },
-  {
-   "name": "n_pneumaticcraft_advanced_first_program",
-   "dim": "kronwerke:testworld",
-   "pos": [
-    240.24,
-    65.19,
-    289.27
-   ],
-   "yaw": 165.0,
-   "pitch": 35.0,
-   "fov": 60,
-   "width": 640,
-   "height": 360
-  },
-  {
-   "name": "n_pneumaticcraft_advanced_frames",
-   "dim": "kronwerke:testworld",
-   "pos": [
-    250.31,
-    65.17,
-    289.52
-   ],
-   "yaw": 165.0,
-   "pitch": 35.0,
-   "fov": 60,
-   "width": 640,
-   "height": 360
-  },
-  {
-   "name": "n_productive_trees_pots",
+   "name": "o_productive_trees_pots",
    "dim": "kronwerke:testworld",
    "pos": [
     161.24,
     65.19,
-    314.27
+    312.27
    ],
    "yaw": 165.0,
    "pitch": 35.0,
@@ -351,12 +141,12 @@
    "height": 360
   },
   {
-   "name": "n_quarries_quarry",
+   "name": "o_productive_trees_station",
    "dim": "kronwerke:testworld",
    "pos": [
-    72.76,
-    65.03,
-    333.33
+    183.44,
+    69.04,
+    316.75
    ],
    "yaw": 165.0,
    "pitch": 35.0,
@@ -365,12 +155,12 @@
    "height": 360
   },
   {
-   "name": "n_quarries_coe_netherite",
+   "name": "o_quarries_coe_netherite",
    "dim": "kronwerke:testworld",
    "pos": [
     92.31,
     65.37,
-    333.52
+    331.52
    ],
    "yaw": 165.0,
    "pitch": 35.0,

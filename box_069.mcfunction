@@ -1,21 +1,17 @@
-# 069 gaia/arena
-#area 199 107 224 138
-fill 199 64 107 224 91 138 minecraft:air
-fill 199 60 107 224 62 138 minecraft:stone
-fill 199 63 107 224 63 138 minecraft:light_gray_concrete
-fill 203 64 113 224 79 113 minecraft:light_gray_concrete
-fill 203 64 113 203 79 132 minecraft:light_gray_concrete
-setblock 204 64 131 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "069"}','{"text": "gaia"}','{"text": "arena"}','{"text": ""}']}}
-setblock 205 64 131 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "beacon with"}','{"text": "four pylons"}','{"text": "from above"}','{"text": ""}']}}
-fill 219 64 113 219 79 132 minecraft:light_gray_concrete
-fill 210 63 120 212 63 122 minecraft:iron_block
-setblock 211 64 121 minecraft:beacon
-setblock 207 64 117 minecraft:quartz_block
-setblock 207 65 117 botania:gaia_pylon
-setblock 207 64 125 minecraft:quartz_block
-setblock 207 65 125 botania:gaia_pylon
-setblock 215 64 117 minecraft:quartz_block
-setblock 215 65 117 botania:gaia_pylon
-setblock 215 64 125 minecraft:quartz_block
-setblock 215 65 125 botania:gaia_pylon
+# 069 botania_runes/gourmaryllis
+#area 152 107 171 132
+fill 152 64 107 171 91 132 minecraft:air
+fill 152 60 107 171 62 132 minecraft:stone
+fill 152 63 107 171 63 132 minecraft:light_gray_concrete
+fill 156 64 113 171 79 113 minecraft:light_gray_concrete
+fill 156 64 113 156 79 126 minecraft:light_gray_concrete
+setblock 157 64 125 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "069"}','{"text": "botania_runes"}','{"text": "gourmaryllis"}','{"text": ""}']}}
+setblock 158 64 125 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "a belt dropping"}','{"text": "varied food"}','{"text": ""}','{"text": ""}']}}
+fill 166 64 113 166 79 126 minecraft:light_gray_concrete
+fill 159 63 117 163 63 119 minecraft:grass_block[snowy=false]
+setblock 161 64 118 botania:gourmaryllis
+summon item 160.5 64.2 119.5 {Item:{id:"minecraft:bread",count:1},PickupDelay:32767,Age:-32768,Tags:["kw_shot"]}
+summon item 162.5 64.2 119.5 {Item:{id:"minecraft:cooked_beef",count:1},PickupDelay:32767,Age:-32768,Tags:["kw_shot"]}
+summon item 160.5 64.2 117.5 {Item:{id:"minecraft:apple",count:1},PickupDelay:32767,Age:-32768,Tags:["kw_shot"]}
+summon item 162.5 64.2 117.5 {Item:{id:"minecraft:baked_potato",count:1},PickupDelay:32767,Age:-32768,Tags:["kw_shot"]}
 execute as @e[type=minecraft:item,tag=!kw_shot] run kill @s

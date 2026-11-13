@@ -1,45 +1,32 @@
-# 097 industrial/sower, bio, crusher
-#area 21 214 60 239
-fill 21 64 214 60 91 239 minecraft:air
-fill 21 60 214 60 62 239 minecraft:stone
-fill 21 63 214 60 63 239 minecraft:light_gray_concrete
-fill 25 64 220 60 79 220 minecraft:light_gray_concrete
-fill 25 64 220 25 79 233 minecraft:light_gray_concrete
-setblock 26 64 232 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "097.1"}','{"text": "industrial"}','{"text": "sower"}','{"text": ""}']}}
-setblock 27 64 232 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "the machines at"}','{"text": "work"}','{"text": ""}','{"text": ""}']}}
-fill 35 64 220 35 79 233 minecraft:light_gray_concrete
-setblock 29 64 224 minecraft:oak_log[axis=y]
-setblock 31 64 224 minecraft:oak_log[axis=y]
-setblock 29 64 226 minecraft:oak_log[axis=y]
-setblock 31 64 226 minecraft:oak_log[axis=y]
-setblock 30 64 225 industrialforegoing:plant_sower[subfacing=south]
-fill 29 65 224 31 65 226 minecraft:farmland[moisture=7]
-fill 29 66 224 31 66 226 minecraft:wheat[age=7]
-fill 30 64 223 30 65 223 minecraft:stone_bricks
-setblock 30 66 223 industrialforegoing:plant_gatherer[subfacing=south]
-setblock 36 64 232 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "097.2"}','{"text": "industrial"}','{"text": "bio"}','{"text": ""}']}}
-setblock 37 64 232 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Betreib einen"}','{"text": "Biogenerator"}','{"text": ""}','{"text": ""}']}}
-fill 45 64 220 45 79 233 minecraft:light_gray_concrete
-setblock 40 64 225 industrialforegoing:bioreactor[subfacing=south]
-setblock 46 64 232 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "097.3"}','{"text": "industrial"}','{"text": "crusher"}','{"text": ""}']}}
-setblock 47 64 232 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Stell einen"}','{"text": "Monsterschnetzler"}','{"text": "auf"}','{"text": ""}']}}
-fill 55 64 220 55 79 233 minecraft:light_gray_concrete
-setblock 48 64 224 minecraft:oak_fence
-setblock 48 64 227 minecraft:oak_fence
-setblock 49 64 224 minecraft:oak_fence
-setblock 49 64 227 minecraft:oak_fence
-setblock 50 64 224 minecraft:oak_fence
-setblock 50 64 227 minecraft:oak_fence
-setblock 51 64 224 minecraft:oak_fence
-setblock 51 64 227 minecraft:oak_fence
-setblock 52 64 224 minecraft:oak_fence
-setblock 52 64 227 minecraft:oak_fence
-setblock 48 64 225 minecraft:oak_fence
-setblock 52 64 225 minecraft:oak_fence
-setblock 48 64 226 minecraft:oak_fence
-setblock 52 64 226 minecraft:oak_fence
-summon minecraft:cow 49.5 64 225.5 {NoAI:1b,PersistenceRequired:1b,Silent:1b,Tags:["kw_shot"],Rotation:[180f,0f]}
-summon minecraft:cow 51.5 64 226.5 {NoAI:1b,PersistenceRequired:1b,Silent:1b,Tags:["kw_shot"],Rotation:[180f,0f]}
-setblock 50 64 223 industrialforegoing:mob_crusher[subfacing=south]
-setblock 53 64 225 industrialforegoing:mob_duplicator
+# 097 immersive/list_mb
+#area 194 179 222 207
+fill 194 64 179 222 95 207 minecraft:air
+fill 194 60 179 222 62 207 minecraft:stone
+fill 194 63 179 222 63 207 minecraft:light_gray_concrete
+fill 198 64 185 222 83 185 minecraft:light_gray_concrete
+fill 198 64 185 198 83 201 minecraft:light_gray_concrete
+setblock 199 64 200 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "097"}','{"text": "immersive"}','{"text": "list_mb"}','{"text": ""}']}}
+setblock 200 64 200 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "all seven stage"}','{"text": "2 structures"}','{"text": "side by side"}','{"text": ""}']}}
+fill 217 64 185 217 83 201 minecraft:light_gray_concrete
+place template immersiveengineering:multiblocks/sheetmetal_tank 200 64 187 none
+kw testworld use 201 65 189 south immersiveengineering:hammer
+execute unless block 201 65 189 immersiveengineering:sheetmetal_iron
+place template immersiveengineering:multiblocks/silo 204 64 187 none
+kw testworld use 205 65 189 south immersiveengineering:hammer
+execute unless block 205 65 189 immersiveengineering:sheetmetal_iron
+place template immersiveengineering:multiblocks/improved_blast_furnace 208 64 187 none
+kw testworld use 209 65 189 south immersiveengineering:hammer
+execute unless block 209 65 189 immersiveengineering:blastbrick_reinforced
+place template immersiveengineering:multiblocks/shelf 212 64 187 none
+kw testworld use 213 65 188 south immersiveengineering:hammer
+execute unless block 213 65 188 immersiveengineering:steel_catwalk
+place template immersiveengineering:multiblocks/coke_oven 202 64 193 none
+kw testworld use 203 65 195 south immersiveengineering:hammer
+execute unless block 203 65 195 immersiveengineering:cokebrick
+place template immersiveengineering:multiblocks/blast_furnace 207 64 193 none
+kw testworld use 208 65 195 south immersiveengineering:hammer
+execute unless block 208 65 195 immersiveengineering:blastbrick
+place template immersiveengineering:multiblocks/alloy_smelter 212 64 193 none
+kw testworld use 213 65 194 south immersiveengineering:hammer
+execute unless block 213 65 194 immersiveengineering:alloybrick
 execute as @e[type=minecraft:item,tag=!kw_shot] run kill @s

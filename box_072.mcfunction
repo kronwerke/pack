@@ -1,29 +1,21 @@
-# 072 alfheim/open
-#area 270 107 291 132
-fill 270 64 107 291 91 132 minecraft:air
-fill 270 60 107 291 62 132 minecraft:stone
-fill 270 63 107 291 63 132 minecraft:light_gray_concrete
-fill 274 64 113 291 79 113 minecraft:light_gray_concrete
-fill 274 64 113 274 79 126 minecraft:light_gray_concrete
-setblock 275 64 125 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "072"}','{"text": "alfheim"}','{"text": "open"}','{"text": ""}']}}
-setblock 276 64 125 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "the open portal"}','{"text": "with an item"}','{"text": "flying out"}','{"text": ""}']}}
-fill 286 64 113 286 79 126 minecraft:light_gray_concrete
-setblock 280 64 117 botania:elven_gateway_core
-setblock 279 64 117 botania:livingwood_log[axis=x]
-setblock 279 68 117 botania:livingwood_log[axis=x]
-setblock 281 64 117 botania:livingwood_log[axis=x]
-setblock 281 68 117 botania:livingwood_log[axis=x]
-setblock 280 68 117 botania:glimmering_livingwood_log[axis=x]
-setblock 278 65 117 botania:livingwood_log[axis=y]
-setblock 278 66 117 botania:glimmering_livingwood_log[axis=y]
-setblock 278 67 117 botania:livingwood_log[axis=y]
-setblock 282 65 117 botania:livingwood_log[axis=y]
-setblock 282 66 117 botania:glimmering_livingwood_log[axis=y]
-setblock 282 67 117 botania:livingwood_log[axis=y]
-setblock 276 64 119 botania:mana_pool{mana:1000000}
-setblock 276 65 119 botania:natura_pylon
-setblock 284 64 119 botania:mana_pool{mana:1000000}
-setblock 284 65 119 botania:natura_pylon
-kw testworld use 280 64 117 south botania:wand_of_the_forest
-execute unless block 280 64 117 botania:elven_gateway_core[state=off]
+# 072 gaia/arena
+#area 199 107 224 138
+fill 199 64 107 224 91 138 minecraft:air
+fill 199 60 107 224 62 138 minecraft:stone
+fill 199 63 107 224 63 138 minecraft:light_gray_concrete
+fill 203 64 113 224 79 113 minecraft:light_gray_concrete
+fill 203 64 113 203 79 132 minecraft:light_gray_concrete
+setblock 204 64 131 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "072"}','{"text": "gaia"}','{"text": "arena"}','{"text": ""}']}}
+setblock 205 64 131 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "beacon with"}','{"text": "four pylons"}','{"text": "from above"}','{"text": ""}']}}
+fill 219 64 113 219 79 132 minecraft:light_gray_concrete
+fill 210 63 120 212 63 122 minecraft:iron_block
+setblock 211 64 121 minecraft:beacon
+setblock 207 64 117 minecraft:quartz_block
+setblock 207 65 117 botania:gaia_pylon
+setblock 207 64 125 minecraft:quartz_block
+setblock 207 65 125 botania:gaia_pylon
+setblock 215 64 117 minecraft:quartz_block
+setblock 215 65 117 botania:gaia_pylon
+setblock 215 64 125 minecraft:quartz_block
+setblock 215 65 125 botania:gaia_pylon
 execute as @e[type=minecraft:item,tag=!kw_shot] run kill @s

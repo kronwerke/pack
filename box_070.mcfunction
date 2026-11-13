@@ -1,26 +1,21 @@
-# 070 gaia/dandelifeon
-#area 220 107 257 150
-fill 220 64 107 245 91 150 minecraft:air
-fill 246 64 107 257 91 150 minecraft:air
-fill 220 60 107 257 62 150 minecraft:stone
-fill 220 63 107 257 63 150 minecraft:light_gray_concrete
-fill 224 64 113 257 79 113 minecraft:light_gray_concrete
-fill 224 64 113 224 79 144 minecraft:light_gray_concrete
-setblock 225 64 143 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "070"}','{"text": "gaia"}','{"text": "dandelifeon"}','{"text": ""}']}}
-setblock 226 64 143 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "a 25x25 cell"}','{"text": "field"}','{"text": ""}','{"text": ""}']}}
-fill 252 64 113 252 79 144 minecraft:light_gray_concrete
-fill 226 63 115 250 63 139 minecraft:smooth_stone
-setblock 238 63 127 minecraft:grass_block
-setblock 238 64 127 botania:dandelifeon
-setblock 231 64 120 botania:cellular_block
-setblock 232 64 121 botania:cellular_block
-setblock 233 64 121 botania:cellular_block
-setblock 231 64 122 botania:cellular_block
-setblock 232 64 122 botania:cellular_block
-setblock 243 64 122 botania:cellular_block
-setblock 244 64 122 botania:cellular_block
-setblock 245 64 122 botania:cellular_block
-setblock 232 64 131 botania:cellular_block
-setblock 232 64 132 botania:cellular_block
-setblock 232 64 133 botania:cellular_block
+# 070 botania_runes/plate_base
+#area 167 107 186 132
+fill 167 64 107 186 91 132 minecraft:air
+fill 167 60 107 186 62 132 minecraft:stone
+fill 167 63 107 186 63 132 minecraft:light_gray_concrete
+fill 171 64 113 186 79 113 minecraft:light_gray_concrete
+fill 171 64 113 171 79 126 minecraft:light_gray_concrete
+setblock 172 64 125 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "070"}','{"text": "botania_runes"}','{"text": "plate_base"}','{"text": ""}']}}
+setblock 173 64 125 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "the 3x3 lapis"}','{"text": "and livingrock"}','{"text": "base with plate"}','{"text": "and sparks"}']}}
+fill 181 64 113 181 79 126 minecraft:light_gray_concrete
+setblock 175 64 117 botania:livingrock
+setblock 175 64 118 minecraft:lapis_block
+setblock 175 64 119 botania:livingrock
+setblock 176 64 117 minecraft:lapis_block
+setblock 176 64 118 botania:livingrock
+setblock 176 64 119 minecraft:lapis_block
+setblock 177 64 117 botania:livingrock
+setblock 177 64 118 minecraft:lapis_block
+setblock 177 64 119 botania:livingrock
+setblock 176 65 118 botania:terrestrial_agglomeration_plate
 execute as @e[type=minecraft:item,tag=!kw_shot] run kill @s

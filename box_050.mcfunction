@@ -1,20 +1,21 @@
-# 050 ars_apprentice/turret
-#area 135 88 154 113
-fill 135 64 88 154 91 113 minecraft:air
-fill 135 60 88 154 62 113 minecraft:stone
-fill 135 63 88 154 63 113 minecraft:light_gray_concrete
-fill 139 64 94 154 79 94 minecraft:light_gray_concrete
-fill 139 64 94 139 79 107 minecraft:light_gray_concrete
-setblock 140 64 106 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "050"}','{"text": "ars_apprentice"}','{"text": "turret"}','{"text": ""}']}}
-setblock 141 64 106 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "turret in front"}','{"text": "of a"}','{"text": "cobblestone"}','{"text": "generator"}']}}
-fill 149 64 94 149 79 107 minecraft:light_gray_concrete
-setblock 144 64 100 ars_nouveau:basic_spell_turret
-setblock 144 64 98 minecraft:cobblestone
-setblock 143 64 98 minecraft:water
-setblock 145 64 98 minecraft:lava
-fill 142 64 97 146 64 97 minecraft:stone_bricks
-setblock 142 64 98 minecraft:stone_bricks
-setblock 146 64 98 minecraft:stone_bricks
-setblock 143 64 99 minecraft:glass
-setblock 145 64 99 minecraft:glass
+# 050 ars_apprentice/relay
+#area 88 88 109 113
+fill 88 64 88 109 91 113 minecraft:air
+fill 88 60 88 109 62 113 minecraft:stone
+fill 88 63 88 109 63 113 minecraft:light_gray_concrete
+fill 92 64 94 109 79 94 minecraft:light_gray_concrete
+fill 92 64 94 92 79 107 minecraft:light_gray_concrete
+setblock 93 64 106 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "050"}','{"text": "ars_apprentice"}','{"text": "relay"}','{"text": ""}']}}
+setblock 94 64 106 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "two relays"}','{"text": "bridging jars"}','{"text": "about 20 blocks"}','{"text": "apart"}']}}
+fill 104 64 94 104 79 107 minecraft:light_gray_concrete
+setblock 95 64 99 ars_nouveau:source_jar[fill=11]{source:10000}
+setblock 97 64 99 ars_nouveau:relay
+setblock 99 64 99 ars_nouveau:relay
+setblock 101 64 99 ars_nouveau:source_jar[fill=0]
+kw testworld use 95 64 99 south ars_nouveau:dominion_wand
+kw testworld use 97 64 99 south ars_nouveau:dominion_wand
+kw testworld use 97 64 99 south ars_nouveau:dominion_wand
+kw testworld use 99 64 99 south ars_nouveau:dominion_wand
+kw testworld use 99 64 99 south ars_nouveau:dominion_wand
+kw testworld use 101 64 99 south ars_nouveau:dominion_wand
 execute as @e[type=minecraft:item,tag=!kw_shot] run kill @s

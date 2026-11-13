@@ -1,107 +1,61 @@
-# 104 ae2_advanced/bridge, spatial, reaction, matrix
-#area 85 254 141 281
-fill 85 64 254 125 91 281 minecraft:air
-fill 126 64 254 141 91 281 minecraft:air
-fill 85 60 254 141 62 281 minecraft:stone
-fill 85 63 254 141 63 281 minecraft:light_gray_concrete
-fill 89 64 260 141 79 260 minecraft:light_gray_concrete
-fill 89 64 260 89 79 275 minecraft:light_gray_concrete
-setblock 90 64 274 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "104.1"}','{"text": "ae2_advanced"}','{"text": "bridge"}','{"text": ""}']}}
-setblock 91 64 274 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Verbinde zwei"}','{"text": "Orte mit einer"}','{"text": "Quantenbrücke"}','{"text": ""}']}}
-fill 103 64 260 103 79 275 minecraft:light_gray_concrete
-fill 92 64 265 94 66 265 ae2:quantum_ring
-setblock 93 65 265 ae2:quantum_link
-fill 98 64 265 100 66 265 ae2:quantum_ring
-setblock 99 65 265 ae2:quantum_link
-setblock 104 64 274 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "104.2"}','{"text": "ae2_advanced"}','{"text": "spatial"}','{"text": ""}']}}
-setblock 105 64 274 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Stell"}','{"text": "Raumpylone auf"}','{"text": ""}','{"text": ""}']}}
-fill 115 64 260 115 79 275 minecraft:light_gray_concrete
-setblock 107 64 264 ae2:spatial_pylon
-setblock 107 64 265 ae2:spatial_pylon
-setblock 107 64 266 ae2:spatial_pylon
-setblock 107 64 267 ae2:spatial_pylon
-setblock 107 64 268 ae2:spatial_pylon
-setblock 107 65 264 ae2:spatial_pylon
-setblock 107 65 268 ae2:spatial_pylon
-setblock 107 66 264 ae2:spatial_pylon
-setblock 107 66 268 ae2:spatial_pylon
-setblock 107 67 264 ae2:spatial_pylon
-setblock 107 67 268 ae2:spatial_pylon
-setblock 107 68 264 ae2:spatial_pylon
-setblock 107 68 265 ae2:spatial_pylon
-setblock 107 68 266 ae2:spatial_pylon
-setblock 107 68 267 ae2:spatial_pylon
-setblock 107 68 268 ae2:spatial_pylon
-setblock 108 64 264 ae2:spatial_pylon
-setblock 108 64 268 ae2:spatial_pylon
-setblock 108 68 264 ae2:spatial_pylon
-setblock 108 68 268 ae2:spatial_pylon
-setblock 109 64 264 ae2:spatial_pylon
-setblock 109 64 268 ae2:spatial_pylon
-setblock 109 68 264 ae2:spatial_pylon
-setblock 109 68 268 ae2:spatial_pylon
-setblock 110 64 264 ae2:spatial_pylon
-setblock 110 64 268 ae2:spatial_pylon
-setblock 110 68 264 ae2:spatial_pylon
-setblock 110 68 268 ae2:spatial_pylon
-setblock 111 64 264 ae2:spatial_pylon
-setblock 111 64 265 ae2:spatial_pylon
-setblock 111 64 266 ae2:spatial_pylon
-setblock 111 64 267 ae2:spatial_pylon
-setblock 111 64 268 ae2:spatial_pylon
-setblock 111 65 264 ae2:spatial_pylon
-setblock 111 65 268 ae2:spatial_pylon
-setblock 111 66 264 ae2:spatial_pylon
-setblock 111 66 268 ae2:spatial_pylon
-setblock 111 67 264 ae2:spatial_pylon
-setblock 111 67 268 ae2:spatial_pylon
-setblock 111 68 264 ae2:spatial_pylon
-setblock 111 68 265 ae2:spatial_pylon
-setblock 111 68 266 ae2:spatial_pylon
-setblock 111 68 267 ae2:spatial_pylon
-setblock 111 68 268 ae2:spatial_pylon
-setblock 106 64 268 ae2:spatial_io_port[facing=south,spin=0,powered=false]
-setblock 116 64 274 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "104.3"}','{"text": "ae2_advanced"}','{"text": "reaction"}','{"text": ""}']}}
-setblock 117 64 274 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Bau eine"}','{"text": "Reaktionskammer"}','{"text": ""}','{"text": ""}']}}
-fill 125 64 260 125 79 275 minecraft:light_gray_concrete
-setblock 120 64 265 advanced_ae:reaction_chamber[working=true]
-setblock 126 64 274 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "104.4"}','{"text": "ae2_advanced"}','{"text": "matrix"}','{"text": ""}']}}
-setblock 127 64 274 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Bau eine"}','{"text": "Assembler-Matrix"}','{"text": ""}','{"text": ""}']}}
-fill 136 64 260 136 79 275 minecraft:light_gray_concrete
-setblock 129 64 264 extendedae:assembler_matrix_frame
-setblock 129 64 265 extendedae:assembler_matrix_frame
-setblock 129 64 266 extendedae:assembler_matrix_frame
-setblock 129 65 264 extendedae:assembler_matrix_frame
-setblock 129 65 265 extendedae:assembler_matrix_wall
-setblock 129 65 266 extendedae:assembler_matrix_frame
-setblock 129 66 264 extendedae:assembler_matrix_frame
-setblock 129 66 265 extendedae:assembler_matrix_frame
-setblock 129 66 266 extendedae:assembler_matrix_frame
-setblock 130 64 264 extendedae:assembler_matrix_frame
-setblock 130 64 265 extendedae:assembler_matrix_wall
-setblock 130 64 266 extendedae:assembler_matrix_frame
-setblock 130 65 264 extendedae:assembler_matrix_wall
-setblock 130 65 266 extendedae:assembler_matrix_glass
-setblock 130 66 264 extendedae:assembler_matrix_frame
-setblock 130 66 265 extendedae:assembler_matrix_wall
-setblock 130 66 266 extendedae:assembler_matrix_frame
-setblock 131 64 264 extendedae:assembler_matrix_frame
-setblock 131 64 265 extendedae:assembler_matrix_wall
-setblock 131 64 266 extendedae:assembler_matrix_frame
-setblock 131 65 264 extendedae:assembler_matrix_wall
-setblock 131 65 266 extendedae:assembler_matrix_glass
-setblock 131 66 264 extendedae:assembler_matrix_frame
-setblock 131 66 265 extendedae:assembler_matrix_wall
-setblock 131 66 266 extendedae:assembler_matrix_frame
-setblock 132 64 264 extendedae:assembler_matrix_frame
-setblock 132 64 265 extendedae:assembler_matrix_frame
-setblock 132 64 266 extendedae:assembler_matrix_frame
-setblock 132 65 264 extendedae:assembler_matrix_frame
-setblock 132 65 265 extendedae:assembler_matrix_wall
-setblock 132 65 266 extendedae:assembler_matrix_frame
-setblock 132 66 264 extendedae:assembler_matrix_frame
-setblock 132 66 265 extendedae:assembler_matrix_frame
-setblock 132 66 266 extendedae:assembler_matrix_frame
-setblock 130 65 265 extendedae:assembler_matrix_pattern
-setblock 131 65 265 extendedae:assembler_matrix_crafter
+# 104 oritech/cores, laser, atomic_forge, destroyer, fragment_forge, exo
+#area -4 233 67 260
+fill -4 64 233 36 91 260 minecraft:air
+fill 37 64 233 67 91 260 minecraft:air
+fill -4 60 233 67 62 260 minecraft:stone
+fill -4 63 233 67 63 260 minecraft:light_gray_concrete
+fill 0 64 239 67 79 239 minecraft:light_gray_concrete
+fill 0 64 239 0 79 254 minecraft:light_gray_concrete
+setblock 1 64 253 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "104.1"}','{"text": "oritech"}','{"text": "cores"}','{"text": ""}']}}
+setblock 2 64 253 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Bau"}','{"text": "Maschinenkerne"}','{"text": ""}','{"text": ""}']}}
+fill 10 64 239 10 79 254 minecraft:light_gray_concrete
+setblock 4 64 244 oritech:machine_core_1
+setblock 6 64 244 oritech:machine_core_2
+setblock 11 64 253 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "104.2"}','{"text": "oritech"}','{"text": "laser"}','{"text": ""}']}}
+setblock 12 64 253 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Bau den"}','{"text": "Enderischen"}','{"text": "Laser"}','{"text": ""}']}}
+fill 20 64 239 20 79 254 minecraft:light_gray_concrete
+kw testworld use 15 63 244 up oritech:laser_arm_block
+setblock 21 64 253 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "104.3"}','{"text": "oritech"}','{"text": "atomic_forge"}','{"text": ""}']}}
+setblock 22 64 253 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Speis eine"}','{"text": "Atomic Forge"}','{"text": ""}','{"text": ""}']}}
+fill 30 64 239 30 79 254 minecraft:light_gray_concrete
+kw testworld use 25 63 244 up oritech:atomic_forge_block
+setblock 31 64 253 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "104.4"}','{"text": "oritech"}','{"text": "destroyer"}','{"text": ""}']}}
+setblock 32 64 253 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Spann einen"}','{"text": "Rahmen mit"}','{"text": "Zerstörer"}','{"text": ""}']}}
+fill 42 64 239 42 79 254 minecraft:light_gray_concrete
+fill 33 63 242 39 63 248 minecraft:farmland[moisture=7]
+fill 33 64 242 39 64 248 minecraft:wheat[age=7]
+setblock 33 66 242 oritech:machine_frame_block
+setblock 33 66 243 oritech:machine_frame_block
+setblock 33 66 244 oritech:machine_frame_block
+setblock 33 66 245 oritech:machine_frame_block
+setblock 33 66 246 oritech:machine_frame_block
+setblock 33 66 247 oritech:machine_frame_block
+setblock 33 66 248 oritech:machine_frame_block
+setblock 34 66 242 oritech:machine_frame_block
+setblock 34 66 248 oritech:machine_frame_block
+setblock 35 66 242 oritech:machine_frame_block
+setblock 35 66 248 oritech:machine_frame_block
+setblock 36 66 242 oritech:machine_frame_block
+setblock 36 66 248 oritech:machine_frame_block
+setblock 37 66 242 oritech:machine_frame_block
+setblock 37 66 248 oritech:machine_frame_block
+setblock 38 66 242 oritech:machine_frame_block
+setblock 38 66 248 oritech:machine_frame_block
+setblock 39 66 242 oritech:machine_frame_block
+setblock 39 66 243 oritech:machine_frame_block
+setblock 39 66 244 oritech:machine_frame_block
+setblock 39 66 245 oritech:machine_frame_block
+setblock 39 66 246 oritech:machine_frame_block
+setblock 39 66 247 oritech:machine_frame_block
+setblock 39 66 248 oritech:machine_frame_block
+fill 32 64 248 32 65 248 minecraft:stone_bricks
+setblock 32 66 248 oritech:destroyer_block[facing=south,machine_assembled=false]
+setblock 43 64 253 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "104.5"}','{"text": "oritech"}','{"text": "fragment_forge"}','{"text": ""}']}}
+setblock 44 64 253 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Bau die"}','{"text": "Fragment Forge"}','{"text": ""}','{"text": ""}']}}
+fill 52 64 239 52 79 254 minecraft:light_gray_concrete
+kw testworld use 47 63 244 up oritech:fragment_forge_block
+setblock 53 64 253 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "104.6"}','{"text": "oritech"}','{"text": "exo"}','{"text": ""}']}}
+setblock 54 64 253 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Zieh die"}','{"text": "Exo-Rüstung an"}','{"text": ""}','{"text": ""}']}}
+fill 62 64 239 62 79 254 minecraft:light_gray_concrete
+summon armor_stand 57.5 64 244.5 {ArmorItems:[{id:"oritech:exo_boots",count:1},{id:"oritech:exo_leggings",count:1},{id:"oritech:exo_chestplate",count:1},{id:"oritech:exo_helmet",count:1}],ShowArms:1b,NoBasePlate:1b,Tags:["kw_shot"],Rotation:[180f,0f]}
 execute as @e[type=minecraft:item,tag=!kw_shot] run kill @s

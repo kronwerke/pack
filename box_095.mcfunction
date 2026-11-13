@@ -1,24 +1,29 @@
-# 095 immersive_heavy/hv, survey
-#area 373 179 406 204
-fill 373 64 179 406 95 204 minecraft:air
-fill 373 60 179 406 62 204 minecraft:stone
-fill 373 63 179 406 63 204 minecraft:light_gray_concrete
-fill 377 64 185 406 83 185 minecraft:light_gray_concrete
-fill 377 64 185 377 83 198 minecraft:light_gray_concrete
-setblock 378 64 197 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "095.1"}','{"text": "immersive_heavy"}','{"text": "hv"}','{"text": ""}']}}
-setblock 379 64 197 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "an HV line on"}','{"text": "steel posts,"}','{"text": "the bottling"}','{"text": "machine with"}']}}
-setblock 380 64 197 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "resin, a core"}','{"text": "sample on the"}','{"text": "ground"}','{"text": ""}']}}
-fill 391 64 185 391 83 198 minecraft:light_gray_concrete
-kw testworld use 380 63 190 up immersiveengineering:steel_post
-execute unless block 380 67 190 minecraft:air
-kw testworld use 380 67 190 up immersiveengineering:connector_hv
-kw testworld use 388 63 190 up immersiveengineering:steel_post
-execute unless block 388 67 190 minecraft:air
-kw testworld use 388 67 190 up immersiveengineering:connector_hv
-kw testworld use 380 68 190 south immersiveengineering:wirecoil_steel
-kw testworld use 388 68 190 south immersiveengineering:wirecoil_steel
-setblock 392 64 197 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "095.2"}','{"text": "immersive_heavy"}','{"text": "survey"}','{"text": ""}']}}
-setblock 393 64 197 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Such eine"}','{"text": "Mineralader"}','{"text": ""}','{"text": ""}']}}
-fill 401 64 185 401 83 198 minecraft:light_gray_concrete
-kw testworld use 396 63 190 up immersiveengineering:sample_drill
+# 095 immersive/connectors, thermoelectric
+#area 132 179 163 204
+fill 132 64 179 163 91 204 minecraft:air
+fill 132 60 179 163 62 204 minecraft:stone
+fill 132 63 179 163 63 204 minecraft:light_gray_concrete
+fill 136 64 185 163 79 185 minecraft:light_gray_concrete
+fill 136 64 185 136 79 198 minecraft:light_gray_concrete
+setblock 137 64 197 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "095.1"}','{"text": "immersive"}','{"text": "connectors"}','{"text": ""}']}}
+setblock 138 64 197 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "LV wires on"}','{"text": "posts, the"}','{"text": "accumulator,"}','{"text": "the generator"}']}}
+setblock 139 64 197 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "between magma"}','{"text": "and blue ice, a"}','{"text": "transformer"}','{"text": "with LV and MV"}']}}
+fill 148 64 185 148 79 198 minecraft:light_gray_concrete
+setblock 139 64 190 immersiveengineering:capacitor_lv
+setblock 145 64 190 immersiveengineering:capacitor_lv
+fill 142 64 190 142 66 190 immersiveengineering:treated_fence
+kw testworld use 139 64 190 up immersiveengineering:connector_lv
+kw testworld use 145 64 190 up immersiveengineering:connector_lv
+kw testworld use 142 66 190 up immersiveengineering:connector_lv_relay
+kw testworld use 139 65 190 south immersiveengineering:wirecoil_copper
+kw testworld use 142 67 190 south immersiveengineering:wirecoil_copper
+kw testworld use 142 67 190 south immersiveengineering:wirecoil_copper
+kw testworld use 145 65 190 south immersiveengineering:wirecoil_copper
+setblock 149 64 197 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "095.2"}','{"text": "immersive"}','{"text": "thermoelectric"}','{"text": ""}']}}
+setblock 150 64 197 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Bau einen"}','{"text": "Thermoelektrischen"}','{"text": "Generator"}','{"text": ""}']}}
+fill 158 64 185 158 79 198 minecraft:light_gray_concrete
+setblock 152 64 190 minecraft:magma_block
+setblock 153 64 190 immersiveengineering:thermoelectric_generator
+setblock 154 64 190 minecraft:blue_ice
+kw testworld use 153 64 190 up immersiveengineering:connector_lv
 execute as @e[type=minecraft:item,tag=!kw_shot] run kill @s

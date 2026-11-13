@@ -1,16 +1,40 @@
-# 110 flux_networks/first_link
-#area 73 275 93 300
-fill 73 64 275 93 91 300 minecraft:air
-fill 73 60 275 93 62 300 minecraft:stone
-fill 73 63 275 93 63 300 minecraft:light_gray_concrete
-fill 77 64 281 93 79 281 minecraft:light_gray_concrete
-fill 77 64 281 77 79 294 minecraft:light_gray_concrete
-setblock 78 64 293 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "110"}','{"text": "flux_networks"}','{"text": "first_link"}','{"text": ""}']}}
-setblock 79 64 293 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "a generator"}','{"text": "with a plug and"}','{"text": "a machine with"}','{"text": "a point, no"}']}}
-setblock 80 64 293 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "cables"}','{"text": ""}','{"text": ""}','{"text": ""}']}}
-fill 88 64 281 88 79 294 minecraft:light_gray_concrete
-setblock 80 64 286 powah:furnator_starter[facing=south]
-setblock 80 65 286 fluxnetworks:flux_plug
-setblock 85 64 286 mekanism:enrichment_chamber[facing=south]
-setblock 85 65 286 fluxnetworks:flux_point
+# 110 logistics/menril, programmer, xnet_connectors, laser_node
+#area 154 254 204 279
+fill 154 64 254 198 91 279 minecraft:air
+fill 199 64 254 204 91 279 minecraft:air
+fill 154 60 254 204 62 279 minecraft:stone
+fill 154 63 254 204 63 279 minecraft:light_gray_concrete
+fill 158 64 260 204 79 260 minecraft:light_gray_concrete
+fill 158 64 260 158 79 273 minecraft:light_gray_concrete
+setblock 159 64 272 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "110.1"}','{"text": "logistics"}','{"text": "menril"}','{"text": ""}']}}
+setblock 160 64 272 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Press"}','{"text": "Menril-Harz"}','{"text": ""}','{"text": ""}']}}
+fill 168 64 260 168 79 273 minecraft:light_gray_concrete
+fill 161 64 264 161 66 264 integrateddynamics:menril_log[axis=y]
+setblock 163 64 265 integrateddynamics:squeezer[axis=x,height=1]
+setblock 164 64 265 integrateddynamics:drying_basin
+setblock 169 64 272 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "110.2"}','{"text": "logistics"}','{"text": "programmer"}','{"text": ""}']}}
+setblock 170 64 272 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Schreib Karten"}','{"text": "im Logic"}','{"text": "Programmer"}','{"text": ""}']}}
+fill 178 64 260 178 79 273 minecraft:light_gray_concrete
+setblock 172 64 265 integrateddynamics:logic_programmer[facing=south]
+setblock 174 64 265 integrateddynamics:variablestore[facing=south]
+setblock 179 64 272 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "110.3"}','{"text": "logistics"}','{"text": "xnet_connectors"}','{"text": ""}']}}
+setblock 180 64 272 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Setz Connectors"}','{"text": "und Kabel"}','{"text": ""}','{"text": ""}']}}
+fill 189 64 260 189 79 273 minecraft:light_gray_concrete
+setblock 181 64 265 minecraft:chest[facing=south,type=single,waterlogged=false]
+setblock 187 64 265 minecraft:furnace[facing=south,lit=false]
+setblock 184 64 266 xnet:controller[facing=south,error=false]
+kw testworld use 182 63 265 up xnet:connector_blue
+kw testworld use 186 63 265 up xnet:connector_blue
+kw testworld use 183 63 265 up xnet:netcable_blue
+kw testworld use 184 63 265 up xnet:netcable_blue
+kw testworld use 185 63 265 up xnet:netcable_blue
+setblock 190 64 272 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "110.4"}','{"text": "logistics"}','{"text": "laser_node"}','{"text": ""}']}}
+setblock 191 64 272 minecraft:oak_sign[rotation=0]{front_text:{messages:['{"text": "Verbinde zwei"}','{"text": "Laser Nodes"}','{"text": ""}','{"text": ""}']}}
+fill 199 64 260 199 79 273 minecraft:light_gray_concrete
+setblock 192 64 265 minecraft:chest[facing=south,type=single,waterlogged=false]
+setblock 192 65 265 laserio:laser_node
+setblock 196 64 265 minecraft:chest[facing=south,type=single,waterlogged=false]
+setblock 196 65 265 laserio:laser_node
+kw testworld use 192 65 265 south laserio:laser_wrench
+kw testworld use 196 65 265 south laserio:laser_wrench
 execute as @e[type=minecraft:item,tag=!kw_shot] run kill @s

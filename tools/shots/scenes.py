@@ -852,7 +852,7 @@ def _(b):
 def _(b):
     # from the bottom: lit blaze burner, basin, a block of air, mixer; a cogwheel beside the
     # mixer turns it. In the basin what brass takes on Kronwerke.
-    b.b(4, 0, 4, "create:blaze_burner[heat_level=smouldering]")
+    b.b(4, 0, 4, "create:blaze_burner[blaze=smouldering]")
     b.use(4, 0, 4, "south", "create:creative_blaze_cake")
     b.b(4, 1, 4, "create:basin[facing=down]")
     b.b(4, 3, 4, "create:mechanical_mixer")
@@ -1093,10 +1093,9 @@ def _(b):
 
 @scene("ars_apprentice/brazier")
 def _(b):
-    # a tablet on the brazier, started with an empty hand; the jar it draws from beside it
+    # a tablet on the brazier, the jar it draws from beside it (the empty hand that starts it is a player's)
     b.b(4, 0, 4, "ars_nouveau:ritual_brazier")
     b.use(4, 0, 4, "up", "ars_nouveau:ritual_flight")
-    b.use(4, 0, 4, "up", "minecraft:air")
     b.b(6, 0, 4, "ars_nouveau:source_jar[fill=11]", "{source:10000}")
 
 
@@ -1122,3 +1121,117 @@ def _(b):
         for x, bush in ((5, "mugwort_bush"), (6, "yellow_dock_bush")):
             b.b(x, 0, z, f"hexerei:{bush}[half=lower,age=3]")
             b.b(x, 1, z, f"hexerei:{bush}[half=upper,age=3]")
+
+
+# ===================================================================================
+# Fourth batch
+
+def forest_ritual(b, items):
+    """The Ritual of the Forest of Nature's Aura: gold powder around an oak sapling, eight
+    wooden stands outside, one item on each stand (in the order the pattern is read)."""
+    blocks = {"W": "naturesaura:wood_stand", "G": "naturesaura:gold_powder", "0": "minecraft:oak_sapling"}
+    stands = []
+    for z, row in enumerate(TREE_RITUAL):
+        for x, ch in enumerate(row):
+            if ch != " ":
+                b.b(1 + x, 0, 1 + z, blocks[ch])
+                if ch == "W":
+                    stands.append((1 + x, 1 + z))
+    b.b(5, -1, 5, "minecraft:grass_block")
+    for (x, z), item in zip(stands, items):
+        b.use(x, 0, z, "up", item)
+    b.pitch = 48.0
+
+
+@scene("botania/manasteel_prep", "botania_runes/ritual", w=11, d=11)
+def _(b):
+    # manasteel on Kronwerke: four infused iron, two livingwood twigs, a mana diamond and a gold leaf
+    forest_ritual(b, ["naturesaura:infused_iron", "botania:livingwood_twig", "naturesaura:infused_iron", "botania:mana_diamond",
+                      "naturesaura:gold_leaf", "naturesaura:infused_iron", "botania:livingwood_twig", "naturesaura:infused_iron"])
+
+
+@scene("mekanism_elite/mekasuit", "list_gear/mekasuit")
+def _(b):
+    # the whole suit on a stand beside the modification station
+    b.stand(3, 0, 4, armor=("mekanism:mekasuit_helmet", "mekanism:mekasuit_bodyarmor", "mekanism:mekasuit_pants", "mekanism:mekasuit_boots"))
+    b.b(5, 0, 4, "mekanism:modification_station[facing=south]")
+
+
+@scene("ars_epic/el_armor")
+def _(b):
+    # a whole robe set of one school: fire
+    b.stand(4, 0, 4, armor=("ars_elemental:fire_hat", "ars_elemental:fire_robes", "ars_elemental:fire_leggings", "ars_elemental:fire_boots"))
+
+
+@scene("storage/drawers_4")
+def _(b):
+    # a wall of drawers, three by three, set against planks so every one looks out, something in each
+    b.f(3, 0, 3, 5, 2, 3, "minecraft:oak_planks")
+    items = ["minecraft:iron_ingot", "minecraft:copper_ingot", "minecraft:gold_ingot", "minecraft:redstone", "minecraft:coal",
+             "minecraft:lapis_lazuli", "minecraft:diamond", "minecraft:quartz", "minecraft:bone"]
+    for i, item in enumerate(items):
+        x, y = 3 + i % 3, i // 3
+        b.use(x, y, 3, "south", "functionalstorage:oak_4")
+        b.changed(x, y, 4, "minecraft:air")
+        b.use(x, y, 4, "south", item)
+
+
+@scene("antimatter/waste", w=11)
+def _(b):
+    # a row of solar neutron activators under the open sky, a tube along their backs brings the waste
+    for x in (2, 4, 6, 8):
+        b.b(x, 0, 4, "mekanism:solar_neutron_activator[facing=south,active=false]")
+    b.f(2, 0, 3, 8, 0, 3, "mekanism:basic_pressurized_tube")
+
+
+@scene("mekanism_ores/line2", w=10)
+def _(b):
+    # chest, transporter, enrichment chamber, transporter, smelter, transporter, chest; a
+    # universal cable behind both machines from an energy cube
+    z = 4
+    b.c(1, 0, z, [], frame=True)
+    b.b(3, 0, z, "mekanism:enrichment_chamber[facing=south,active=false]")
+    b.b(5, 0, z, "mekanism:energized_smelter[facing=south,active=false]")
+    b.c(7, 0, z, [], frame=True)
+    for x in (2, 4, 6):
+        b.b(x, 0, z, "mekanism:basic_logistical_transporter")
+    b.f(3, 0, z - 1, 6, 0, z - 1, "mekanism:basic_universal_cable")
+    b.b(7, 0, z - 1, "mekanism:basic_energy_cube[facing=south]")
+
+
+@scene("immersive/watermill", w=11, h=20)
+def _(b):
+    # the water wheel set against the dynamo's shaft side, a stream running under it
+    b.f(5, 0, 2, 5, 1, 2, "immersiveengineering:treated_wood_horizontal")
+    b.b(5, 2, 2, "immersiveengineering:dynamo[facing=south]")
+    b.use(5, 2, 2, "south", "immersiveengineering:watermill")
+    b.changed(5, 2, 3, "minecraft:air")
+    b.b(1, -1, 3, "minecraft:water")
+    for x in range(2, 9):
+        b.b(x, -1, 3, "minecraft:air")
+
+
+@scene("the_end/arrival")
+def _(b):
+    # the End portal as it stands in a stronghold: twelve frames with their eyes around the open portal
+    for i in range(3):
+        b.b(3 + i, 0, 2, "minecraft:end_portal_frame[eye=true,facing=south]")
+        b.b(3 + i, 0, 6, "minecraft:end_portal_frame[eye=true,facing=north]")
+        b.b(2, 0, 3 + i, "minecraft:end_portal_frame[eye=true,facing=east]")
+        b.b(6, 0, 3 + i, "minecraft:end_portal_frame[eye=true,facing=west]")
+    b.f(3, 0, 3, 5, 0, 5, "minecraft:end_portal")
+    b.pitch = 50.0
+
+
+@scene("finale/tech", w=11, d=11)
+def _(b):
+    # seven wyvern injectors around the fusion crafting core, on them what awakened draconium
+    # takes: four draconium cores, two Gaia spirit ingots and the dragon heart
+    cx, cz = 5, 5
+    b.b(cx, 0, cz, "draconicevolution:crafting_core")
+    spots = [(-3, -1, "east"), (-3, 1, "east"), (3, -1, "west"), (3, 1, "west"), (-1, -3, "south"), (1, -3, "south"), (0, 3, "north")]
+    items = ["draconicevolution:draconium_core"] * 4 + ["botania:gaia_ingot"] * 2 + ["draconicevolution:dragon_heart"]
+    for (dx, dz, facing), item in zip(spots, items):
+        b.b(cx + dx, 0, cz + dz, f"draconicevolution:wyvern_crafting_injector[facing={facing}]")
+        b.use(cx + dx, 0, cz + dz, "up", item)
+    b.pitch = 44.0

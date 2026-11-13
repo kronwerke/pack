@@ -1,5 +1,5 @@
 {
-  "_": "Pictures taken in the real worlds on main, not in the test world. Each line is the camera of one picture: /execute in <dim> run kw cam shot <name> <x y z> <yaw> <pitch> <fov> 640 360. Take every picture twice, the first pass only loads the area for the camera. Underground the camera needs night vision. The worlds are reset before the season, then the places are gone: locate them again (docs/SCREENSHOTS.md, Landscapes).",
+  "_": "Pictures taken in the real worlds, not in the test world: on main, and for the Nether on the Nether server (a shot in minecraft:the_nether on main hands the camera over; from then on the commands go to that server). Each line is the camera of one picture: /execute in <dim> run kw cam shot <name> <x y z> <yaw> <pitch> <fov> 640 360. Take every picture twice, the first pass only loads the area for the camera. Underground the camera needs night vision. The worlds are reset before the season, then the places are gone: locate them again (docs/SCREENSHOTS.md, Landscapes).",
   "aether/silver": ["aether:the_aether", 105, 118, 76, 135, 22, 60],
   "aether/bronze": ["aether:the_aether", 210.5, 49.5, -65.5, -135, 18, 90],
   "eternal_starlight/garden": ["eternal_starlight:starlight", -268, 136, -622, 135, 38, 75],
@@ -14,5 +14,9 @@
   "exploration/e_dnt_tavern": ["minecraft:overworld", -572, 86, -524, 139, 24, 36],
   "exploration/e_tnt_village": ["minecraft:overworld", 100, 88, 40, -45, 25, 60],
   "undergarden/b_cold": ["undergarden:undergarden", 487.5, 66, 2218.5, 90, 14, 90],
-  "exploration/e_arise_sky": ["minecraft:overworld", 102, 168, -746, 136, 19, 46]
+  "exploration/e_arise_sky": ["minecraft:overworld", 102, 168, -746, 136, 19, 46],
+  "nether/fortress": ["nether server, minecraft:the_nether", 39.5, 97, 53.5, -90, 10, 90],
+  "nether/bastion": ["nether server, minecraft:the_nether", -183.5, 92, 290, 0, 30, 90],
+  "nether/structures": ["nether server, minecraft:the_nether", 600.5, 40, 357.5, 0, 10, 90],
+  "nether/biomes": ["nether server, minecraft:the_nether", 648.5, 91, 585.5, 0, 10, 90]
 }

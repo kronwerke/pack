@@ -557,3 +557,7 @@ Core 0.39.33 (13.11.2026): a right click on the obelisk with a block in the hand
 - Quest book in English: Immersive Engineering (303 lines).
 - `tools/addmod.py` adds or updates mods from Modrinth as packwiz files and names missing dependencies.
 - Seen: every mod of this entry loads together in a small client (with JEI, Apotheosis, Curios, FTB, KubeJS, Core) and a world runs; FallingTree felled a test tree; the attribute reads -1000 with a Tireless pickaxe in hand and 0 without; the full server starts with the server mods. Not seen: the whole pack in a client (the test client on the server does not start at the moment, and the pack does not fit into the memory of the machine these checks ran on). JEI's start grew from 4.9 to 12.4 seconds in that small client, 4.4 of them Just Enough Resources.
+
+## 0.24.45
+
+- Quest book in English: Create: Trains and Hexerei (337 lines). 5528 of 16416 lines are translated.

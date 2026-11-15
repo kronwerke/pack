@@ -86,7 +86,7 @@ quests = [
     quest("apothecary", 5, 0, "&aBau eine Blütenapotheke",
           subtitle="Hier entstehen alle besonderen Blumen.",
           description=[
-              "&e6 Bruchstein&r und &e1 Blütenblatt&r ergeben die &aBlütenapotheke&r. Füll sie mit &bWasser&r, wirf die Blütenblätter des Rezepts hinein (Taste Q) und zum Schluss einen &6Samen&r. Die Blume springt heraus.",
+              "&e6 Bruchstein&r und &e1 Blütenblatt&r ergeben die &aBlütenapotheke&r. Füll sie mit &bWasser&r, wirf die Blütenblätter des Rezepts hinein (Taste &e{key:key.drop}&r) und zum Schluss einen &6Samen&r. Die Blume springt heraus.",
               "",
               "Rechtsklick mit leerer Hand holt das zuletzt eingeworfene Teil zurück. Welche Blume welche Blätter braucht, zeigen Lexica und JEI.",
               "",

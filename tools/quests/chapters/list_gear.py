@@ -90,8 +90,8 @@ quests = [
            "Lederrucksack: 27 Plätze, 1 Upgrade. Kupfer (45) und Eisen (54, 2 Upgrades) kommen in Stufe 2, Gold und Diamant in Stufe 3, Netherit in Stufe 4."],
           task_item("sophisticatedbackpacks:backpack", 1), "sophisticatedbackpacks:backpack", ["s1"], section="s1"),
 
-    entry("ultimine", 1, 1, S1, "&6Räum eine Ader mit Ultimine", "FTB Ultimine: bis zu 64 Blöcke pro Schlag.",
-          ["Halt &e`&r gedrückt (links neben der 1), schau auf einen Block, bau ab. Mit Shift und Mausrad wechselst du die Form: Ader, Tunnel 3x3, Stollen.",
+    entry("ultimine", 1, 1, S1, "&6Räum eine Ader mit Ultimine", "FTB Ultimine: bis zu 128 Blöcke pro Schlag.",
+          ["Halt &e{key:key.ftbultimine}&r gedrückt, schau auf einen Block, bau ab. Mit Shift und Mausrad wechselst du die Form: Ader, Tunnel 3x3, Stollen.",
            "",
            "Kostet 20-mal so viel Hunger wie ein Block, also iss vorher. Jede Herkunft darf das. Kapitel &6Komfort&r."],
           task_checkmark("Eine Ader auf einmal abgebaut"), "minecraft:iron_pickaxe", ["s1"], section="s1"),

@@ -713,7 +713,7 @@ quests = [
           description=[
               "&6Sophisticated Backpacks&r, &6Rucksack&r: &e27 Plätze&r und ein Upgrade-Platz, Kupfer und Eisen (Stufe 2), Gold und Diamant (Stufe 3), Netherit (Stufe 4). Pickup, Magnet, Lager- und Auffüll-Upgrade bewegen Gegenstände zwischen dir und den Kisten, jedes mit Filter. &eStufe 1.&r",
               "",
-              "Eine Truhe, vier Leder, vier Fäden. Taste &eB&r öffnet ihn. Siehe Kapitel Lager.",
+              "Eine Truhe, vier Leder, vier Fäden. &e{key:key.sophisticatedbackpacks.open_backpack}&r öffnet ihn. Siehe Kapitel Lager.",
           ],
           tasks=[task_item("sophisticatedbackpacks:backpack", 1)],
           rewards=[reward_item("minecraft:leather", 4), reward_xp(3)],

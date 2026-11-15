@@ -327,7 +327,7 @@ quests = [
           description=[
               "Sechs Wyvern-Injektoren. Katalysator: eine &6Diamantspitzhacke&r. In die Injektoren: &61 Draconiumkern&r, &62 Draconiumbarren&r, &62 Relaiskristalle&r, &61 Wyvern-Energiekontroller&r. Kostet 8 Millionen Energie.",
               "",
-              "Sie läuft mit Strom und geht nicht kaputt. Die Taste &eTool Modules&r (Steuerung, Draconic Evolution) öffnet ihr Modul-Raster.",
+              "Sie läuft mit Strom und geht nicht kaputt. &e{key:key.draconicevolution.tool_modules}&r (Taste Tool Modules) öffnet ihr Modul-Raster.",
           ],
           tasks=[task_item("draconicevolution:wyvern_pickaxe", 1)],
           rewards=[reward_item("draconicevolution:draconium_core", 2), reward_table("s4_uncommon"), reward_xp(15)],

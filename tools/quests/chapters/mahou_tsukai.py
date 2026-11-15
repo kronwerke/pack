@@ -48,7 +48,7 @@ quests = [
     quest("blood", 2.5, 0, "&cZeichne einen Blutkreis",
           subtitle="Ein Kreis auf dem Boden, und du bist Magier.",
           description=[
-              "Leg in der Steuerung eine Taste für &eDraw Mahoujin&r fest. Nimm Schaden und drück &esofort danach&r die Taste, den Blick auf einen festen Block.",
+              "Nimm Schaden und drück &esofort danach&r &e{key:key.drawMahoujin}&r (Draw Mahoujin), den Blick auf einen festen Block.",
               "",
               "Mit dem ersten Kreis bist du ein &cMahou Tsukai&r. Deine Manaleiste erscheint, am Anfang mit &d100 Mana&r.",
           ],

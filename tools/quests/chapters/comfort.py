@@ -88,9 +88,9 @@ quests = [
     quest("magnet_charm", 4.5, 1.5, "&bSteck den Magneten in den Schmuckplatz",
           subtitle="Er wirkt auch dort, und das Inventar bleibt frei.",
           description=[
-              "Drück &eG&r für deine &6Schmuckplätze&r. Der Magnet passt in den Platz &eAnhänger&r und zieht von dort genauso wie aus dem Inventar.",
+              "Drück &e{key:key.curios.open.desc}&r für deine &6Schmuckplätze&r. Der Magnet passt in den Platz &eAnhänger&r und zieht von dort genauso wie aus dem Inventar.",
               "",
-              "So kann ihn Ultimine nicht aus Versehen mit Bruchstein zuschütten, und ein voller Rucksack verdrängt ihn nicht. Ein- und ausschalten geht weiter mit &eAlt+M&r.",
+              "So kann ihn Ultimine nicht aus Versehen mit Bruchstein zuschütten, und ein voller Rucksack verdrängt ihn nicht. Ein- und ausschalten geht weiter mit &e{key:simplemagnets.keys.toggle}&r.",
           ],
           tasks=[task_checkmark("Magnet angelegt")],
           rewards=[reward_xp(3)],
@@ -129,7 +129,7 @@ quests = [
     quest("claims", 3, 5, "&6Sichere deine Basis",
           subtitle="FTB Chunks: Claims mit der Maus ziehen.",
           description=[
-              "Drück &eM&r für die Karte, dann &eC&r für die Claim-Ansicht. &eLinke Maustaste&r über die Chunks ziehen beansprucht sie, &erechte&r gibt sie frei. Dein Team hat bis zu &e500 Chunks&r.",
+              "Drück &e{key:key.ftbchunks.map}&r für die Karte, dann &eC&r für die Claim-Ansicht. &eLinke Maustaste&r über die Chunks ziehen beansprucht sie, &erechte&r gibt sie frei. Dein Team hat bis zu &e500 Chunks&r.",
               "",
               "In deinen Chunks können nur du, dein Team und deine Verbündeten Blöcke abbauen, setzen und Truhen öffnen. Creeper und Ghasts sprengen dort nichts, Endermen klauen nichts. &cPvP bleibt an&r, Claims machen dich nicht unverwundbar.",
               "",
@@ -155,7 +155,7 @@ quests = [
     quest("journeymap", 9, 5, "&aFind dich zurecht",
           subtitle="JourneyMap, Wegpunkte und zwei Minikarten.",
           description=[
-              "Drück &eJ&r für die große Karte von &6JourneyMap&r, &eB&r setzt einen Wegpunkt dort, wo du stehst, &eN&r öffnet die Wegpunktliste. Wegpunkte leuchten in der Welt als Säule, mit Namen und Entfernung.",
+              "Drück &e{key:key.journeymap.map_toggle_alt}&r für die große Karte von &6JourneyMap&r, &e{key:key.journeymap.create_waypoint}&r setzt einen Wegpunkt dort, wo du stehst, &e{key:key.journeymap.fullscreen_waypoints}&r öffnet in der Karte die Wegpunktliste. Wegpunkte leuchten in der Welt als Säule, mit Namen und Entfernung.",
               "",
               "Beim Tod legt JourneyMap von selbst einen Wegpunkt an. Mit der Karte von FTB Chunks (&eM&r) kannst du Wegpunkte außerdem mit deinem Team oder dem ganzen Server teilen.",
               "",
@@ -168,7 +168,7 @@ quests = [
     quest("ping", 12, 5, "&aZeig deinem Team den Weg",
           subtitle="Ping Wheel: ein Klick, ein Zeichen in der Welt.",
           description=[
-              "Ein Klick mit dem &eMausrad&r (mittlere Maustaste) setzt einen &6Ping&r dort, wo du hinschaust. Alle in der Nähe sehen ihn als Zeichen in der Welt, mit Entfernung, und am Bildschirmrand zeigt ein Pfeil die Richtung.",
+              "&e{key:key.pingwheel.ping_location}&r setzt einen &6Ping&r dort, wo du hinschaust. Alle in der Nähe sehen ihn als Zeichen in der Welt, mit Entfernung, und am Bildschirmrand zeigt ein Pfeil die Richtung.",
               "",
               "Ein Ping hält &e7 Sekunden&r. Zielst du auf einen Gegenstand am Boden, zeigt er dessen Symbol. Ideal für \"Hier ist die Ader\" oder \"Pass auf, Creeper\".",
               "",
@@ -182,7 +182,7 @@ quests = [
     quest("jei_lookup", 3, 9.5, "&eSchlag ein Rezept nach",
           subtitle="JEI: R, U und die Suche.",
           description=[
-              "Fahr mit der Maus über einen Gegenstand, im Inventar oder in der Liste rechts, und drück &eR&r für seine Rezepte oder &eU&r für alles, was man damit macht. &eEsc&r oder Rücktaste bringt dich zurück.",
+              "Fahr mit der Maus über einen Gegenstand, im Inventar oder in der Liste rechts, und drück &e{key:key.jei.showRecipe}&r für seine Rezepte oder &e{key:key.jei.showUses}&r für alles, was man damit macht. &eEsc&r oder Rücktaste bringt dich zurück.",
               "",
               "Unten rechts ist das &eSuchfeld&r. &e@create&r zeigt nur Dinge aus Create, &e$ingots&r alles mit dem Tag Barren. Im Rezeptfenster legt der Knopf &e+&r die Zutaten direkt in die Werkbank, wenn du sie dabeihast, mit Shift gleich einen ganzen Stapel.",
               "",
@@ -195,7 +195,7 @@ quests = [
     quest("jei_bookmarks", 6, 8.5, "&eSetz Lesezeichen",
           subtitle="Deine Einkaufsliste links im Inventar.",
           description=[
-              "Fahr über einen Gegenstand und drück &eA&r. Er landet in der Lesezeichenliste &elinks&r im Inventar, wieder A löscht ihn. Im Rezeptfenster gibt es außerdem ein Lesezeichen für das &eganze Rezept&r, dann siehst du die Zutaten ohne Nachschlagen.",
+              "Fahr über einen Gegenstand und drück &e{key:key.jei.bookmark}&r. Er landet in der Lesezeichenliste &elinks&r im Inventar, dieselbe Taste löscht ihn. Im Rezeptfenster gibt es außerdem ein Lesezeichen für das &eganze Rezept&r, dann siehst du die Zutaten ohne Nachschlagen.",
               "",
               "Vor einem großen Bau: alle Maschinen als Lesezeichen setzen, dann Zutat für Zutat abarbeiten. &eStrg und O&r blendet JEI ganz aus, wenn es im Weg ist.",
           ],
@@ -233,7 +233,7 @@ quests = [
     quest("ultimine", 3, 14, "&6Grab mit Ultimine",
           subtitle="Halte die Taste, nimm die ganze Ader.",
           description=[
-              "Halt &e`&r gedrückt (die Taste links neben der 1), schau auf einen Block und bau ihn ab. Alle passenden Nachbarblöcke gehen mit, bis zu &e64&r auf einmal. Das kostet Hunger, &e20-mal&r so viel wie ein normaler Block, also iss vorher.",
+              "Halt &e{key:key.ftbultimine}&r gedrückt, schau auf einen Block und bau ihn ab. Alle passenden Nachbarblöcke gehen mit, bis zu &e128&r auf einmal. Das kostet Hunger, &e20-mal&r so viel wie ein normaler Block, also iss vorher.",
               "",
               "Mit gedrückter Taste und &eShift und Mausrad&r (oder Pfeiltasten) wechselst du die Form: &eFormlos&r für Adern und Bäume, &eKleiner Tunnel&r, &eGroßer Tunnel 3x3&r, &eKleines Quadrat 3x3&r, &eStollen&r und &eFluchttunnel&r nach oben.",
               "",
@@ -248,7 +248,7 @@ quests = [
     quest("voice", 6, 13, "&6Sprich mit deinen Nachbarn",
           subtitle="Simple Voice Chat, nach Entfernung.",
           description=[
-              "Drück &eAlt+V&r für das Menü von &6Simple Voice Chat&r: Mikrofon wählen, Lautstärke, Push-to-Talk oder Sprachaktivierung. Wer bis &e48 Blöcke&r entfernt ist, hört dich, leiser mit der Entfernung. Flüstern reicht 24 Blöcke.",
+              "Drück &e{key:key.voice_chat}&r für das Menü von &6Simple Voice Chat&r: Mikrofon wählen, Lautstärke, Push-to-Talk oder Sprachaktivierung. Wer bis &e48 Blöcke&r entfernt ist, hört dich, leiser mit der Entfernung. Flüstern reicht 24 Blöcke.",
               "",
               "Im selben Menü legst du eine &6Gruppe&r an oder trittst einer bei. Gruppenmitglieder hören sich überall, auch über Dimensionen hinweg. Ein Symbol am Bildschirmrand zeigt, wer gerade spricht, und Aufnahmen über das Menü sind auf dem Server erlaubt.",
           ],
@@ -285,7 +285,7 @@ quests = [
     quest("sort", 9, 15, "&7Räum dein Inventar auf",
           subtitle="Inventory Tweak und Crafting Tweaks.",
           description=[
-              "Klick im Inventar oder in einer offenen Truhe mit dem &eMausrad&r (mittlere Maustaste), und &6Inventory Tweak&r sortiert nach Art, Name oder Seltenheit, je nach Einstellung. Fällt ein Werkzeug unter &e10 Prozent&r Haltbarkeit, warnt es dich mit Text und Ton.",
+              "Drück im Inventar oder in einer offenen Truhe &e{key:key.inventorytweak.sort_inventory_key}&r, und &6Inventory Tweak&r sortiert nach Art, Name oder Seltenheit, je nach Einstellung. Fällt ein Werkzeug unter &e10 Prozent&r Haltbarkeit, warnt es dich mit Text und Ton.",
               "",
               "&6Crafting Tweaks&r setzt drei kleine Knöpfe neben die Werkbank: &eDrehen&r, &eAusgleichen&r (verteilt Stapel gleichmäßig) und &eLeeren&r. Rechtsklick auf das Ergebnis stellt gleich einen ganzen Stapel her.",
               "",
@@ -298,9 +298,9 @@ quests = [
     quest("compress", 12, 15.5, "&7Press Barren mit einer Taste",
           subtitle="Crafting Tweaks: verdichten und nachfüllen.",
           description=[
-              "Im Fenster der Werkbank fährst du mit der Maus über einen Stapel &6Barren&r und drückst &eK&r: &6Crafting Tweaks&r presst ihn zu Blöcken. &eStrg+K&r presst nur einen Block, &eShift+K&r alles dieser Sorte.",
+              "Im Fenster der Werkbank fährst du mit der Maus über einen Stapel &6Barren&r und drückst &e{key:key.craftingtweaks.compress_stack}&r: &6Crafting Tweaks&r presst ihn zu Blöcken. &e{key:key.craftingtweaks.compress_one}&r presst nur einen Block, &e{key:key.craftingtweaks.compress_all}&r alles dieser Sorte.",
               "",
-              "&eTab&r füllt das Raster wieder mit dem letzten Rezept, &eStrg+Tab&r nur einmal. Praktisch, wenn du dreißig Mal dasselbe herstellst.",
+              "&e{key:key.craftingtweaks.refill_last_stack}&r füllt das Raster wieder mit dem letzten Rezept, &e{key:key.craftingtweaks.refill_last}&r nur einmal. Praktisch, wenn du dreißig Mal dasselbe herstellst.",
           ],
           tasks=[task_checkmark("Verdichtet")],
           rewards=[reward_item("minecraft:iron_ingot", 9), reward_xp(3)],

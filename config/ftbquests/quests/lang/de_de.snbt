@@ -1413,7 +1413,7 @@
 	quest.134205C461FAB7B1.quest_subtitle: "Item, Flüssigkeit und Strom in einem."
 	quest.134205C461FAB7B1.title: "Bau den Alles-Müll"
 	quest.13557040AE9FFDB5.quest_desc: [
-		"Drück &eM&r für die Karte, dann &eC&r für die Claim-Ansicht. &eLinke Maustaste&r über die Chunks ziehen beansprucht sie, &erechte&r gibt sie frei. Dein Team hat bis zu &e500 Chunks&r."
+		"[\"\",{\"text\":\"Drück \"},{\"keybind\":\"key.ftbchunks.map\",\"color\":\"yellow\"},{\"text\":\" für die Karte, dann \"},{\"text\":\"C\",\"color\":\"yellow\"},{\"text\":\" für die Claim-Ansicht. \"},{\"text\":\"Linke Maustaste\",\"color\":\"yellow\"},{\"text\":\" über die Chunks ziehen beansprucht sie, \"},{\"text\":\"rechte\",\"color\":\"yellow\"},{\"text\":\" gibt sie frei. Dein Team hat bis zu \"},{\"text\":\"500 Chunks\",\"color\":\"yellow\"},{\"text\":\".\"}]"
 		""
 		"In deinen Chunks können nur du, dein Team und deine Verbündeten Blöcke abbauen, setzen und Truhen öffnen. Creeper und Ghasts sprengen dort nichts, Endermen klauen nichts. &cPvP bleibt an&r, Claims machen dich nicht unverwundbar."
 		""
@@ -1762,7 +1762,7 @@
 	quest.146984CF36C14623.quest_subtitle: "Ein Beet, das Quelle macht, während es wächst."
 	quest.146984CF36C14623.title: "&dPflanze Quellbeeren"
 	quest.146B81741AB4AAA1.quest_desc: [
-		"Öffne mit &eM&r die Karte, beanspruche den Chunk der Maschine und ihres Lagers und lade ihn zwangsweise (Umschalt und Linksklick). Jedes Team hat dafür höchstens &e25&r Chunks."
+		"[\"\",{\"text\":\"Öffne mit \"},{\"keybind\":\"key.ftbchunks.map\",\"color\":\"yellow\"},{\"text\":\" die Karte, beanspruche den Chunk der Maschine und ihres Lagers und lade ihn zwangsweise (Umschalt und Linksklick). Jedes Team hat dafür höchstens \"},{\"text\":\"25\",\"color\":\"yellow\"},{\"text\":\" Chunks.\"}]"
 		""
 		"Nicht den ganzen Abbaubereich nehmen. Steht ein ME-Netz am Steinbruch, hält der &6Raumanker&r aus dem Kapitel Applied Energistics 2: Fortgeschritten das ganze Netz wach."
 	]
@@ -1789,7 +1789,7 @@
 		"{image:kronwerke:textures/quests/shots/list_gear_wyvern.png width:224 height:126 align:center}"
 		"Sechs Wyvern-Injektoren. Katalysator: eine &6Diamantspitzhacke&r. In die Injektoren: &61 Draconiumkern&r, &62 Draconiumbarren&r, &62 Relaiskristalle&r, &61 Wyvern-Energiekontroller&r. Kostet 8 Millionen Energie."
 		""
-		"Sie läuft mit Strom und geht nicht kaputt. Die Taste &eTool Modules&r (Steuerung, Draconic Evolution) öffnet ihr Modul-Raster."
+		"[\"\",{\"text\":\"Sie läuft mit Strom und geht nicht kaputt. \"},{\"keybind\":\"key.draconicevolution.tool_modules\",\"color\":\"yellow\"},{\"text\":\" (Taste Tool Modules) öffnet ihr Modul-Raster.\"}]"
 	]
 	quest.147222A2E72EC38E.quest_subtitle: "Werkzeug mit Strom und Modulen."
 	quest.147222A2E72EC38E.title: "&d&lFusionier eine Wyvern-Spitzhacke"
@@ -2009,7 +2009,7 @@
 	quest.150E6494E7D3E1C4.quest_subtitle: "Druck ist Luft geteilt durch Volumen."
 	quest.150E6494E7D3E1C4.title: "&bVersteh, was Bar bedeutet"
 	quest.15115DED00A268E2.quest_desc: [
-		"Klick im Inventar oder in einer offenen Truhe mit dem &eMausrad&r (mittlere Maustaste), und &6Inventory Tweak&r sortiert nach Art, Name oder Seltenheit, je nach Einstellung. Fällt ein Werkzeug unter &e10 Prozent&r Haltbarkeit, warnt es dich mit Text und Ton."
+		"[\"\",{\"text\":\"Drück im Inventar oder in einer offenen Truhe \"},{\"keybind\":\"key.inventorytweak.sort_inventory_key\",\"color\":\"yellow\"},{\"text\":\", und \"},{\"text\":\"Inventory Tweak\",\"color\":\"gold\"},{\"text\":\" sortiert nach Art, Name oder Seltenheit, je nach Einstellung. Fällt ein Werkzeug unter \"},{\"text\":\"10 Prozent\",\"color\":\"yellow\"},{\"text\":\" Haltbarkeit, warnt es dich mit Text und Ton.\"}]"
 		""
 		"&6Crafting Tweaks&r setzt drei kleine Knöpfe neben die Werkbank: &eDrehen&r, &eAusgleichen&r (verteilt Stapel gleichmäßig) und &eLeeren&r. Rechtsklick auf das Ergebnis stellt gleich einen ganzen Stapel her."
 		""
@@ -2330,13 +2330,13 @@
 	quest.16153C5F8F8E85AA.quest_subtitle: "Mit Brennstoff fahren Züge 40 statt 28 Blöcke pro Sekunde."
 	quest.16153C5F8F8E85AA.title: "&6Tank Diesel in den Zug"
 	quest.16192D32943C61EB.quest_desc: [
-		"Buch anlegen, mit &eAlt + Mausrad&r oder im Zauberrad (&eR&r halten) den Zauber wählen, &eStrg+V&r drücken. Fertig."
+		"[\"\",{\"text\":\"Buch anlegen, mit \"},{\"keybind\":\"key.irons_spellbooks.spell_bar_modifier\",\"color\":\"yellow\"},{\"text\":\" + Mausrad\",\"color\":\"yellow\"},{\"text\":\" oder im Zauberrad (\"},{\"keybind\":\"key.irons_spellbooks.spell_wheel\",\"color\":\"yellow\"},{\"text\":\" halten) den Zauber wählen, \"},{\"keybind\":\"key.irons_spellbooks.spellbook_cast\",\"color\":\"yellow\"},{\"text\":\" drücken. Fertig.\"}]"
 		""
-		"Der Tooltip jeder Rolle nennt die Art des Zaubers. &eInstant&r wirkt sofort. &eLong Cast&r und &eCharge&r brauchen eine Aufladezeit, in der du Strg+V hältst. Zauber mit &eHold&r in der Beschreibung (Fire Breath, Cone of Cold, Electrocute) laufen, solange du Strg+V hältst, und kosten Mana pro Sekunde."
+		"Der Tooltip jeder Rolle nennt die Art des Zaubers. &eInstant&r wirkt sofort. &eLong Cast&r und &eCharge&r brauchen eine Aufladezeit, in der du die Zaubertaste hältst. Zauber mit &eHold&r in der Beschreibung (Fire Breath, Cone of Cold, Electrocute) laufen, solange du die Zaubertaste hältst, und kosten Mana pro Sekunde."
 		""
 		"&eTipp:&r Vier gewöhnliche Zauber decken alles ab: ein Angriff (Magic Missile, Firebolt, Icicle), eine Flucht (Burning Dash, Volt Strike), ein Schutz (Shield, Oakskin) und eine Heilung (Healing Circle, Blessing of Life)."
 	]
-	quest.16192D32943C61EB.quest_subtitle: "Buch an, Zauber wählen, Strg+V."
+	quest.16192D32943C61EB.quest_subtitle: "[\"\",{\"text\":\"Buch an, Zauber wählen, \"},{\"keybind\":\"key.irons_spellbooks.spellbook_cast\"},{\"text\":\".\"}]"
 	quest.16192D32943C61EB.title: "&dWirke deinen ersten Zauber"
 	quest.162379C67E14B4C2.quest_desc: [
 		"Werkbank: eine &6Utherische Scherbe&r auf einen &6Stock&r ergibt eine &6Scherbenfackel&r."
@@ -2498,7 +2498,7 @@
 	quest.16ADC81D8EEB6C5D.quest_subtitle: "Kupfer in Stahl."
 	quest.16ADC81D8EEB6C5D.title: "&6Bau Wärmeverdampfungsblöcke"
 	quest.16B19AD46F39E477.quest_desc: [
-		"&e6 Bruchstein&r und &e1 Blütenblatt&r ergeben die &aBlütenapotheke&r. Füll sie mit &bWasser&r, wirf die Blütenblätter des Rezepts hinein (Taste Q) und zum Schluss einen &6Samen&r. Die Blume springt heraus."
+		"[\"\",{\"text\":\"6 Bruchstein\",\"color\":\"yellow\"},{\"text\":\" und \"},{\"text\":\"1 Blütenblatt\",\"color\":\"yellow\"},{\"text\":\" ergeben die \"},{\"text\":\"Blütenapotheke\",\"color\":\"green\"},{\"text\":\". Füll sie mit \"},{\"text\":\"Wasser\",\"color\":\"aqua\"},{\"text\":\", wirf die Blütenblätter des Rezepts hinein (Taste \"},{\"keybind\":\"key.drop\",\"color\":\"yellow\"},{\"text\":\") und zum Schluss einen \"},{\"text\":\"Samen\",\"color\":\"gold\"},{\"text\":\". Die Blume springt heraus.\"}]"
 		""
 		"Rechtsklick mit leerer Hand holt das zuletzt eingeworfene Teil zurück. Welche Blume welche Blätter braucht, zeigen Lexica und JEI."
 		""
@@ -2923,11 +2923,11 @@
 	quest.17CDD0332811C550.quest_subtitle: "Jede Quelle im Pack kennst du jetzt beim Namen."
 	quest.17CDD0332811C550.title: "&6&lZieh Bilanz"
 	quest.17CDE921479E3CAD.quest_desc: [
-		"Mit &eStrg+F&r springst du ins Suchfeld unten rechts. Tipp einen Teil des Namens, die Liste filtert sofort. Mit &e@create&r siehst du alles aus einem Mod, zum Beispiel alle Blöcke von Create."
+		"[\"\",{\"text\":\"Mit \"},{\"keybind\":\"key.jei.focusSearch\",\"color\":\"yellow\"},{\"text\":\" springst du ins Suchfeld unten rechts. Tipp einen Teil des Namens, die Liste filtert sofort. Mit \"},{\"text\":\"@create\",\"color\":\"yellow\"},{\"text\":\" siehst du alles aus einem Mod, zum Beispiel alle Blöcke von Create.\"}]"
 		""
 		"&eA&r über einem Gegenstand setzt ein &eLesezeichen&r. Die Lesezeichen stehen links im Inventar und bleiben, bis du sie mit A wieder löschst. Praktisch für die Zutatenliste einer größeren Maschine."
 		""
-		"&eStrg+O&r blendet JEI komplett aus und wieder ein, falls du mal Platz brauchst."
+		"[\"\",{\"keybind\":\"key.jei.toggleOverlay\",\"color\":\"yellow\"},{\"text\":\" blendet JEI komplett aus und wieder ein, falls du mal Platz brauchst.\"}]"
 	]
 	quest.17CDE921479E3CAD.quest_subtitle: "Suchfeld, Mod-Filter, Lesezeichen."
 	quest.17CDE921479E3CAD.title: "&6Such etwas in JEI"
@@ -3807,7 +3807,7 @@
 	quest.1A4B773D269B58C8.quest_desc: [
 		"&6Sophisticated Backpacks&r, &6Rucksack&r: &e27 Plätze&r und ein Upgrade-Platz, Kupfer und Eisen (Stufe 2), Gold und Diamant (Stufe 3), Netherit (Stufe 4). Pickup, Magnet, Lager- und Auffüll-Upgrade bewegen Gegenstände zwischen dir und den Kisten, jedes mit Filter. &eStufe 1.&r"
 		""
-		"Eine Truhe, vier Leder, vier Fäden. Taste &eB&r öffnet ihn. Siehe Kapitel Lager."
+		"[\"\",{\"text\":\"Eine Truhe, vier Leder, vier Fäden. \"},{\"keybind\":\"key.sophisticatedbackpacks.open_backpack\",\"color\":\"yellow\"},{\"text\":\" öffnet ihn. Siehe Kapitel Lager.\"}]"
 	]
 	quest.1A4B773D269B58C8.quest_subtitle: "Sophisticated Backpacks, Rucksack: 27 Plätze zum Mitnehmen."
 	quest.1A4B773D269B58C8.title: "Näh einen Rucksack"
@@ -4776,7 +4776,7 @@
 	quest.1D676F3F50213DC1.quest_subtitle: "Die Hotbar wird nie leer."
 	quest.1D676F3F50213DC1.title: "Bau ein Nachfüll-Upgrade"
 	quest.1D68228F76A8678F.quest_desc: [
-		"Drück &eAlt+V&r für das Menü von &6Simple Voice Chat&r: Mikrofon wählen, Lautstärke, Push-to-Talk oder Sprachaktivierung. Wer bis &e48 Blöcke&r entfernt ist, hört dich, leiser mit der Entfernung. Flüstern reicht 24 Blöcke."
+		"[\"\",{\"text\":\"Drück \"},{\"keybind\":\"key.voice_chat\",\"color\":\"yellow\"},{\"text\":\" für das Menü von \"},{\"text\":\"Simple Voice Chat\",\"color\":\"gold\"},{\"text\":\": Mikrofon wählen, Lautstärke, Push-to-Talk oder Sprachaktivierung. Wer bis \"},{\"text\":\"48 Blöcke\",\"color\":\"yellow\"},{\"text\":\" entfernt ist, hört dich, leiser mit der Entfernung. Flüstern reicht 24 Blöcke.\"}]"
 		""
 		"Im selben Menü legst du eine &6Gruppe&r an oder trittst einer bei. Gruppenmitglieder hören sich überall, auch über Dimensionen hinweg. Ein Symbol am Bildschirmrand zeigt, wer gerade spricht, und Aufnahmen über das Menü sind auf dem Server erlaubt."
 	]
@@ -5741,7 +5741,7 @@
 	quest.2049A8B037D98CD5.quest_subtitle: "Leichte Rüstung aus Seidentuch."
 	quest.2049A8B037D98CD5.title: "&7Kleid dich als Seelenjäger"
 	quest.204BC55FA2CD7C85.quest_desc: [
-		"Halte &e`&r (links neben der 1) gedrückt, während du einen Block abbaust. Alle passenden Blöcke daneben gehen mit: Erzadern, Bäume, eine Reihe Stein."
+		"[\"\",{\"text\":\"Halte \"},{\"keybind\":\"key.ftbultimine\",\"color\":\"yellow\"},{\"text\":\" gedrückt, während du einen Block abbaust. Alle passenden Blöcke daneben gehen mit: Erzadern, Bäume, eine Reihe Stein.\"}]"
 		""
 		"Das kostet Hunger, nimm Essen mit. Für die Stein-Säule ist Ultimine dein bester Freund."
 	]
@@ -7402,7 +7402,7 @@
 	quest.24EC81B106F356D9.quest_subtitle: "Fusion braucht Magie zum Start."
 	quest.24EC81B106F356D9.title: "&dBau Laser-Fokusmatrizen"
 	quest.24FFC1AEC52A81F8.quest_desc: [
-		"Fahr über einen Gegenstand und drück &eA&r. Er landet in der Lesezeichenliste &elinks&r im Inventar, wieder A löscht ihn. Im Rezeptfenster gibt es außerdem ein Lesezeichen für das &eganze Rezept&r, dann siehst du die Zutaten ohne Nachschlagen."
+		"[\"\",{\"text\":\"Fahr über einen Gegenstand und drück \"},{\"keybind\":\"key.jei.bookmark\",\"color\":\"yellow\"},{\"text\":\". Er landet in der Lesezeichenliste \"},{\"text\":\"links\",\"color\":\"yellow\"},{\"text\":\" im Inventar, dieselbe Taste löscht ihn. Im Rezeptfenster gibt es außerdem ein Lesezeichen für das \"},{\"text\":\"ganze Rezept\",\"color\":\"yellow\"},{\"text\":\", dann siehst du die Zutaten ohne Nachschlagen.\"}]"
 		""
 		"Vor einem großen Bau: alle Maschinen als Lesezeichen setzen, dann Zutat für Zutat abarbeiten. &eStrg und O&r blendet JEI ganz aus, wenn es im Weg ist."
 	]
@@ -7767,7 +7767,7 @@
 	quest.2617F7531D087224.quest_subtitle: "Stein aus dem Nichts."
 	quest.2617F7531D087224.title: "&7Bau ein Steingenerator-Upgrade"
 	quest.262F25304F0CF4B2.quest_desc: [
-		"Die Liste rechts in jedem Inventar ist &6JEI&r. Fahr mit der Maus über einen Gegenstand, egal ob in der Liste oder in deinem Inventar, und drück &eR&r: JEI zeigt dir alle Wege, ihn herzustellen. &eU&r zeigt dir alles, wofür er gebraucht wird."
+		"[\"\",{\"text\":\"Die Liste rechts in jedem Inventar ist \"},{\"text\":\"JEI\",\"color\":\"gold\"},{\"text\":\". Fahr mit der Maus über einen Gegenstand, egal ob in der Liste oder in deinem Inventar, und drück \"},{\"keybind\":\"key.jei.showRecipe\",\"color\":\"yellow\"},{\"text\":\": JEI zeigt dir alle Wege, ihn herzustellen. \"},{\"keybind\":\"key.jei.showUses\",\"color\":\"yellow\"},{\"text\":\" zeigt dir alles, wofür er gebraucht wird.\"}]"
 		""
 		"Oben im Rezeptfenster blätterst du durch die Arten: Werkbank, Ofen, Mahlstein, Manabecken und so weiter. Mit der &eRücktaste&r springst du zum vorigen Rezept zurück, &eEsc&r schließt das Fenster."
 		""
@@ -8050,7 +8050,7 @@
 	quest.27150228414A47B6.quest_subtitle: "Der Dampf entsteht im Kessel."
 	quest.27150228414A47B6.title: "&bKühl mit Natrium"
 	quest.271A4FC16C7BED10.quest_desc: [
-		"Drück &eJ&r für die große Karte von &6JourneyMap&r, &eB&r setzt einen Wegpunkt dort, wo du stehst, &eN&r öffnet die Wegpunktliste. Wegpunkte leuchten in der Welt als Säule, mit Namen und Entfernung."
+		"[\"\",{\"text\":\"Drück \"},{\"keybind\":\"key.journeymap.map_toggle_alt\",\"color\":\"yellow\"},{\"text\":\" für die große Karte von \"},{\"text\":\"JourneyMap\",\"color\":\"gold\"},{\"text\":\", \"},{\"keybind\":\"key.journeymap.create_waypoint\",\"color\":\"yellow\"},{\"text\":\" setzt einen Wegpunkt dort, wo du stehst, \"},{\"keybind\":\"key.journeymap.fullscreen_waypoints\",\"color\":\"yellow\"},{\"text\":\" öffnet in der Karte die Wegpunktliste. Wegpunkte leuchten in der Welt als Säule, mit Namen und Entfernung.\"}]"
 		""
 		"Beim Tod legt JourneyMap von selbst einen Wegpunkt an. Mit der Karte von FTB Chunks (&eM&r) kannst du Wegpunkte außerdem mit deinem Team oder dem ganzen Server teilen."
 		""
@@ -8433,7 +8433,7 @@
 		""
 		"Affixe sind Boni wie bei Verzauberungen: mehr Schaden, Lebensraub, schnelleres Abbauen, mehr Rüstung, Glück. Was ein Teil kann, steht im Tooltip. Apotheosis hat keine deutschen Namen, darum stehen die Begriffe hier auf Englisch."
 		""
-		"&cAchtung:&r Bis du einmal eine Weltstufe aktiviert hast, heißen die Teile &9Unidentified&r und zeigen nichts an. Drück &eStrg+T&r und aktiviere &eHaven&r, dann liest du alles."
+		"[\"\",{\"text\":\"Achtung:\",\"color\":\"red\"},{\"text\":\" Bis du einmal eine Weltstufe aktiviert hast, heißen die Teile \"},{\"text\":\"Unidentified\",\"color\":\"blue\"},{\"text\":\" und zeigen nichts an. Drück \"},{\"keybind\":\"key.apotheosis.open_world_tier_select\",\"color\":\"yellow\"},{\"text\":\" und aktiviere \"},{\"text\":\"Haven\",\"color\":\"yellow\"},{\"text\":\", dann liest du alles.\"}]"
 		""
 		"Ein &6Buch&r und ein &6Goldbarren&r ergeben das &6Chronicle of Shadows&r, das Handbuch zu allem in diesem Kapitel."
 	]
@@ -8973,7 +8973,7 @@
 	quest.299C84C4C154CDCB.quest_subtitle: "Die Festung der Piglins."
 	quest.299C84C4C154CDCB.title: "&8&lPlünder eine Bastion"
 	quest.29A2E8E667E65D2E.quest_desc: [
-		"Drück &eE&r für dein Inventar. Oben links sitzt ein kleines &6Buch&r, ein Klick darauf öffnet das Questbuch. Links stehen die Kapitel, in der Mitte die Quests, eine angeklickte Quest öffnet sich rechts als Text."
+		"[\"\",{\"text\":\"Drück \"},{\"keybind\":\"key.inventory\",\"color\":\"yellow\"},{\"text\":\" für dein Inventar. Oben links sitzt ein kleines \"},{\"text\":\"Buch\",\"color\":\"gold\"},{\"text\":\", ein Klick darauf öffnet das Questbuch. Links stehen die Kapitel, in der Mitte die Quests, eine angeklickte Quest öffnet sich rechts als Text.\"}]"
 		""
 		"Jede Quest hat &eAufgaben&r (unten links im Questfenster) und &eBelohnungen&r (unten rechts). Gegenstandsaufgaben erledigen sich von selbst, sobald der Gegenstand in deinem Inventar liegt. Er wird dir nicht weggenommen, außer die Quest sagt es ausdrücklich."
 		""
@@ -13152,7 +13152,7 @@
 	quest.39949DD23D8542B2.quest_subtitle: "Kommt in Stufe 3. Die Werkbank reicht für den Anfang."
 	quest.39949DD23D8542B2.title: "&aVorhersagen ohne Fabrikator"
 	quest.39A74282BA312818.quest_desc: [
-		"Drück &eM&r für die Karte von &6FTB Chunks&r oder &eJ&r für JourneyMap. Beide zeichnen alles auf, was du gesehen hast."
+		"[\"\",{\"text\":\"Drück \"},{\"keybind\":\"key.ftbchunks.map\",\"color\":\"yellow\"},{\"text\":\" für die Karte von \"},{\"text\":\"FTB Chunks\",\"color\":\"gold\"},{\"text\":\" oder \"},{\"keybind\":\"key.journeymap.map_toggle_alt\",\"color\":\"yellow\"},{\"text\":\" für JourneyMap. Beide zeichnen alles auf, was du gesehen hast.\"}]"
 		""
 		"Setz dir &eWegpunkte&r an Basis, Erzfunden, Dörfern und Portalen. Mit &eF3&r siehst du deine Koordinaten, schreib sie auf, bevor du irgendwo hinabsteigst."
 	]
@@ -13318,7 +13318,7 @@
 		""
 		"{image:forbidden_arcanus:textures/block/gilded_chiseled_polished_darkstone.png width:32 height:32 align:center}"
 		""
-		"&eTipp:&r Ponder zeigt den Bau Schritt für Schritt: Halte die Hephaestus Forge in JEI mit der Maus und drück &eW&r."
+		"[\"\",{\"text\":\"Tipp:\",\"color\":\"yellow\"},{\"text\":\" Ponder zeigt den Bau Schritt für Schritt: Halte die Hephaestus Forge in JEI mit der Maus und drück \"},{\"keybind\":\"key.ponder.ponder\",\"color\":\"yellow\"},{\"text\":\".\"}]"
 	]
 	quest.3A6F605AA8A2AECB.quest_subtitle: "9 mal 9 Darkstone mit Gold und Kristall."
 	quest.3A6F605AA8A2AECB.title: "&7Lege den Boden der Schmiede"
@@ -14298,11 +14298,11 @@
 	quest.3E49A7C3393DBF2E.quest_subtitle: "Mekanism, Fusion: D-T-Treibstoff, Laser, Strom oder Dampf."
 	quest.3E49A7C3393DBF2E.title: "&5Zünde den Fusionsreaktor"
 	quest.3E4E61C75AEC6B2D.quest_desc: [
-		"Halt &e`&r gedrückt (links neben der 1), schau auf einen Block, bau ab. Mit Shift und Mausrad wechselst du die Form: Ader, Tunnel 3x3, Stollen."
+		"[\"\",{\"text\":\"Halt \"},{\"keybind\":\"key.ftbultimine\",\"color\":\"yellow\"},{\"text\":\" gedrückt, schau auf einen Block, bau ab. Mit Shift und Mausrad wechselst du die Form: Ader, Tunnel 3x3, Stollen.\"}]"
 		""
 		"Kostet 20-mal so viel Hunger wie ein Block, also iss vorher. Jede Herkunft darf das. Kapitel &6Komfort&r."
 	]
-	quest.3E4E61C75AEC6B2D.quest_subtitle: "FTB Ultimine: bis zu 64 Blöcke pro Schlag."
+	quest.3E4E61C75AEC6B2D.quest_subtitle: "FTB Ultimine: bis zu 128 Blöcke pro Schlag."
 	quest.3E4E61C75AEC6B2D.title: "&6Räum eine Ader mit Ultimine"
 	quest.3E50797AB2FE6514.quest_desc: [
 		"{image:kronwerke:textures/quests/shots/productive_trees_mega.png width:224 height:126 align:center}"
@@ -14696,7 +14696,7 @@
 	quest.4004879497A32E3B.quest_subtitle: "Ein Stoffdach über Marktstand und Tür."
 	quest.4004879497A32E3B.title: "&aSpann eine Markise"
 	quest.400BE4CC7BBC12F8.quest_desc: [
-		"&eAlt+V&r öffnet das Menü von &6Simple Voice Chat&r. Dort wählst du dein Mikrofon, stellst die Lautstärke ein und entscheidest zwischen &eSprachaktivierung&r und &ePush-to-Talk&r. Die Push-to-Talk-Taste legst du in den Steuerungseinstellungen fest, standardmäßig ist keine belegt."
+		"[\"\",{\"keybind\":\"key.voice_chat\",\"color\":\"yellow\"},{\"text\":\" öffnet das Menü von \"},{\"text\":\"Simple Voice Chat\",\"color\":\"gold\"},{\"text\":\". Dort wählst du dein Mikrofon, stellst die Lautstärke ein und entscheidest zwischen \"},{\"text\":\"Sprachaktivierung\",\"color\":\"yellow\"},{\"text\":\" und \"},{\"text\":\"Push-to-Talk\",\"color\":\"yellow\"},{\"text\":\". Die Push-to-Talk-Taste legst du in den Steuerungseinstellungen fest, standardmäßig ist keine belegt.\"}]"
 		""
 		"Wer näher als &e48 Blöcke&r ist, hört dich, leiser mit der Entfernung. Flüstern reicht 24 Blöcke. Über das Menü legst du &eGruppen&r an, dann hört dich dein Team über jede Entfernung."
 		""
@@ -14705,7 +14705,7 @@
 	quest.400BE4CC7BBC12F8.quest_subtitle: "48 Blöcke weit hört man dich."
 	quest.400BE4CC7BBC12F8.title: "&6Richte den Sprachchat ein"
 	quest.402282C84DFC4F3C.quest_desc: [
-		"Leg in der Steuerung eine Taste für &eDraw Mahoujin&r fest. Nimm Schaden und drück &esofort danach&r die Taste, den Blick auf einen festen Block."
+		"[\"\",{\"text\":\"Nimm Schaden und drück \"},{\"text\":\"sofort danach\",\"color\":\"yellow\"},{\"text\":\" \"},{\"keybind\":\"key.drawMahoujin\",\"color\":\"yellow\"},{\"text\":\" (Draw Mahoujin), den Blick auf einen festen Block.\"}]"
 		""
 		"Mit dem ersten Kreis bist du ein &cMahou Tsukai&r. Deine Manaleiste erscheint, am Anfang mit &d100 Mana&r."
 	]
@@ -16354,7 +16354,7 @@
 	quest.479BDFDA8EB2572E.quest_subtitle: "Kreuzen ohne Bienen."
 	quest.479BDFDA8EB2572E.title: "&eSieb Pollen aus Blättern"
 	quest.47A0BA899F7092C0.quest_desc: [
-		"Öffne mit &eM&r die Karte und drück &eC&r für die Claim-Ansicht. &eLinke Maustaste&r ziehen beansprucht Chunks, &erechte Maustaste&r ziehen gibt sie frei. In deinen Chunks kann niemand außer deinem Team Blöcke abbauen, Truhen öffnen oder Tiere schlagen, und Creeper sprengen nichts."
+		"[\"\",{\"text\":\"Öffne mit \"},{\"keybind\":\"key.ftbchunks.map\",\"color\":\"yellow\"},{\"text\":\" die Karte und drück \"},{\"text\":\"C\",\"color\":\"yellow\"},{\"text\":\" für die Claim-Ansicht. \"},{\"text\":\"Linke Maustaste\",\"color\":\"yellow\"},{\"text\":\" ziehen beansprucht Chunks, \"},{\"text\":\"rechte Maustaste\",\"color\":\"yellow\"},{\"text\":\" ziehen gibt sie frei. In deinen Chunks kann niemand außer deinem Team Blöcke abbauen, Truhen öffnen oder Tiere schlagen, und Creeper sprengen nichts.\"}]"
 		""
 		"Du hast &e500 Chunks&r. Das ist viel, aber nicht das ganze Tal: Ein Chunk ist 16 mal 16 Blöcke, 500 reichen für eine große Basis mit Feldern und Fabrik."
 		""
@@ -16590,7 +16590,7 @@
 	quest.48591788BD0ABF5E.quest_subtitle: "Er baut die Schaltkreise."
 	quest.48591788BD0ABF5E.title: "&bBau einen Assembler"
 	quest.4865FD84899DDCDA.quest_desc: [
-		"Halt &e`&r gedrückt (die Taste links neben der 1), schau auf einen Block und bau ihn ab. Alle passenden Nachbarblöcke gehen mit, bis zu &e64&r auf einmal. Das kostet Hunger, &e20-mal&r so viel wie ein normaler Block, also iss vorher."
+		"[\"\",{\"text\":\"Halt \"},{\"keybind\":\"key.ftbultimine\",\"color\":\"yellow\"},{\"text\":\" gedrückt, schau auf einen Block und bau ihn ab. Alle passenden Nachbarblöcke gehen mit, bis zu \"},{\"text\":\"128\",\"color\":\"yellow\"},{\"text\":\" auf einmal. Das kostet Hunger, \"},{\"text\":\"20-mal\",\"color\":\"yellow\"},{\"text\":\" so viel wie ein normaler Block, also iss vorher.\"}]"
 		""
 		"Mit gedrückter Taste und &eShift und Mausrad&r (oder Pfeiltasten) wechselst du die Form: &eFormlos&r für Adern und Bäume, &eKleiner Tunnel&r, &eGroßer Tunnel 3x3&r, &eKleines Quadrat 3x3&r, &eStollen&r und &eFluchttunnel&r nach oben."
 		""
@@ -18021,7 +18021,7 @@
 		""
 		"Ein Team teilt sich die &eClaims&r (500 Chunks fürs ganze Team, nicht pro Kopf) und den &eQuestfortschritt&r: Was einer erledigt, ist für alle erledigt. Die Belohnung holt sich trotzdem jeder selbst ab."
 		""
-		"&eTipp:&r Mit &6Ping Wheel&r zeigst du deinem Team, wo es langgeht: ein Klick mit dem &eMausrad&r setzt einen Ping dort, wo du hinschaust, sichtbar für alle in der Nähe."
+		"[\"\",{\"text\":\"Tipp:\",\"color\":\"yellow\"},{\"text\":\" Mit \"},{\"text\":\"Ping Wheel\",\"color\":\"gold\"},{\"text\":\" zeigst du deinem Team, wo es langgeht: \"},{\"keybind\":\"key.pingwheel.ping_location\",\"color\":\"yellow\"},{\"text\":\" setzt einen Ping dort, wo du hinschaust, sichtbar für alle in der Nähe.\"}]"
 	]
 	quest.4E9928EE0CC2B85D.quest_subtitle: "Geteilte Claims, geteilter Fortschritt."
 	quest.4E9928EE0CC2B85D.title: "&6Gründe ein Team"
@@ -18094,13 +18094,13 @@
 	quest.4EF1A088955F811B.quest_subtitle: "Viel Arcana auf einen Schlag."
 	quest.4EF1A088955F811B.title: "&3Schmiede ein Heart-Forged Seashelf"
 	quest.4EF20F3F4BEAF5AF.quest_desc: [
-		"Deine Herkunft liegt auf &eZ&r, &eX&r, &eC&r und &eAlt+R&r (Fähigkeit 1 bis 4), die Rolle auf &eH&r, die Übersicht auf &eO&r. Dazu &eR&r und &eU&r in JEI, &eM&r Karte und Claims, &eB&r Rucksack, &eG&r Schmuckplätze, &e`&r (links neben der 1) Ultimine, &eW&r halten für Ponder, &eU&r außerhalb von Menüs die Todeshistorie."
+		"[\"\",{\"text\":\"Deine Herkunft liegt auf \"},{\"keybind\":\"key.neoorigins.skill_1\",\"color\":\"yellow\"},{\"text\":\", \"},{\"keybind\":\"key.neoorigins.skill_2\",\"color\":\"yellow\"},{\"text\":\", \"},{\"keybind\":\"key.neoorigins.skill_3\",\"color\":\"yellow\"},{\"text\":\" und \"},{\"keybind\":\"key.neoorigins.skill_4\",\"color\":\"yellow\"},{\"text\":\" (Fähigkeit 1 bis 4), die Rolle auf \"},{\"keybind\":\"key.neoorigins.class_skill\",\"color\":\"yellow\"},{\"text\":\", die Übersicht auf \"},{\"keybind\":\"key.neoorigins.view_info\",\"color\":\"yellow\"},{\"text\":\". Dazu \"},{\"keybind\":\"key.jei.showRecipe\",\"color\":\"yellow\"},{\"text\":\" und \"},{\"keybind\":\"key.jei.showUses\",\"color\":\"yellow\"},{\"text\":\" in JEI, \"},{\"keybind\":\"key.ftbchunks.map\",\"color\":\"yellow\"},{\"text\":\" Karte und Claims, \"},{\"keybind\":\"key.sophisticatedbackpacks.open_backpack\",\"color\":\"yellow\"},{\"text\":\" Rucksack, \"},{\"keybind\":\"key.curios.open.desc\",\"color\":\"yellow\"},{\"text\":\" Schmuckplätze, \"},{\"keybind\":\"key.ftbultimine\",\"color\":\"yellow\"},{\"text\":\" Ultimine, \"},{\"keybind\":\"key.ponder.ponder\",\"color\":\"yellow\"},{\"text\":\" halten für Ponder, \"},{\"keybind\":\"key.corpse.death_history\",\"color\":\"yellow\"},{\"text\":\" außerhalb von Menüs die Todeshistorie.\"}]"
 		""
-		"Seltene Tasten liegen auf &eAlt&r, &eStrg&r oder &eShift&r plus Buchstabe, zum Beispiel &eAlt+V&r Sprachchat-Menü, &eShift+G&r Sprachchat-Gruppen. Das &eMausrad&r sortiert im Inventar und setzt in der Welt einen Ping; Block auswählen liegt dafür auf &eMaustaste 5&r. Rot markierte Tasten in den &eSteuerungseinstellungen&r liegen doppelt."
+		"Kronwerke legt keine eigenen Tasten fest, jede Mod bringt ihre mit. Manche liegen deshalb doppelt, die stehen in den &eSteuerungseinstellungen&r rot. Leg um, was du brauchst: dieses Buch zeigt immer die Taste, die bei dir gerade gilt. Mit &6KeyBind Bundles&r legst du mehrere Aktionen als Ringmenü auf eine Taste."
 		""
-		"Hast du eine Taste schon selbst geändert, bleibt deine Belegung. Doppelt belegte Tasten legst du dann selbst um."
+		"In den Steuerungseinstellungen löscht &6KeybindsPurger&r auf Knopfdruck alle Tasten einer Mod oder aller Mods, wenn du lieber bei null anfängst."
 	]
-	quest.4EF20F3F4BEAF5AF.quest_subtitle: "Kronwerke hat die Tasten schon sortiert."
+	quest.4EF20F3F4BEAF5AF.quest_subtitle: "Jede Mod bringt ihre Tasten mit, das Buch zeigt deine."
 	quest.4EF20F3F4BEAF5AF.title: "&6Prüf deine Tasten"
 	quest.4EF70CDED4C9B534.quest_desc: [
 		"&6Mechanischer Mixer&r: &d4 SU pro RPM&r. Bei 64 RPM 256 SU, ein Wasserrad pro Mixer."
@@ -18866,13 +18866,13 @@
 	quest.52B9F48B7C9C8BD9.quest_subtitle: "Er schneidet Bleche zu Kabeln und Drähte ab."
 	quest.52B9F48B7C9C8BD9.title: "&7Bau einen Kabelschneider"
 	quest.52CDB5AFF4147675.quest_desc: [
-		"Drück &eStrg+T&r (Taste &eOpen World Tier Select&r in den Steuerungseinstellungen), wähl &6Haven&r und klick &eActivate&r. Erst dann zeigen deine Affix-Items, was sie können."
+		"[\"\",{\"text\":\"Drück \"},{\"keybind\":\"key.apotheosis.open_world_tier_select\",\"color\":\"yellow\"},{\"text\":\" (Taste \"},{\"text\":\"Open World Tier Select\",\"color\":\"yellow\"},{\"text\":\" in den Steuerungseinstellungen), wähl \"},{\"text\":\"Haven\",\"color\":\"gold\"},{\"text\":\" und klick \"},{\"text\":\"Activate\",\"color\":\"yellow\"},{\"text\":\". Erst dann zeigen deine Affix-Items, was sie können.\"}]"
 		""
 		"Eine &6Weltstufe&r gilt nur für dich. Sie legt fest, wie stark Monster in deiner Nähe sind und wie gut die Beute ausfällt. In Haven fällt &7Common&r zu 60 Prozent, &aUncommon&r zu 36 und &9Rare&r zu 4 Prozent."
 		""
 		"Fünf Stufen gibt es: Haven, Frontier, Ascent, Summit und Pinnacle. Jede muss erst freigeschaltet und dann hier aktiviert werden. Der Knopf &eDetailed Info&r zeigt für jede Stufe die Chancen und die Boni."
 	]
-	quest.52CDB5AFF4147675.quest_subtitle: "Strg+T öffnet das Menü."
+	quest.52CDB5AFF4147675.quest_subtitle: "[\"\",{\"keybind\":\"key.apotheosis.open_world_tier_select\"},{\"text\":\" öffnet das Menü.\"}]"
 	quest.52CDB5AFF4147675.title: "&eAktiviere die Weltstufe Haven"
 	quest.52D1CFF3595407C9.quest_desc: [
 		"&6Controller&r: Herz des Netzes, 32 Kanäle pro Seite. &6Energieakzeptor&r: 2 FE zu 1 AE. &6Energiezelle&r und &6Dichte Energiezelle&r: 200 000 und 1,6 Mio. AE Puffer. &6Vibrationskammer&r: Brennstoff zu 40 AE/t."
@@ -20545,7 +20545,7 @@
 	quest.5A0F9713892A89DA.quest_desc: [
 		"Wirf keinen Bruchstein weg. Der Obelisk will in Stufe 1 &e20 000 Stück&r vom ganzen Server, und jede Sorte zählt: normaler, bemooster und Bruchtiefenschiefer."
 		""
-		"&eTipp:&r Halte &e`&r (links neben der 1) beim Abbauen, dann nimmt &6Ultimine&r eine ganze Reihe auf einmal mit."
+		"[\"\",{\"text\":\"Tipp:\",\"color\":\"yellow\"},{\"text\":\" Halte \"},{\"keybind\":\"key.ftbultimine\",\"color\":\"yellow\"},{\"text\":\" beim Abbauen, dann nimmt \"},{\"text\":\"Ultimine\",\"color\":\"gold\"},{\"text\":\" eine ganze Reihe auf einmal mit.\"}]"
 	]
 	quest.5A0F9713892A89DA.quest_subtitle: "Dein erster Stapel für den Obelisken."
 	quest.5A0F9713892A89DA.title: "&7Sammle 64 Bruchstein"
@@ -20897,7 +20897,7 @@
 	quest.5B60791811808507.quest_subtitle: "Die Wachmaschine der alten Fabrik."
 	quest.5B60791811808507.title: "&7Leg einen Prowler still"
 	quest.5B709BC504B96D05.quest_desc: [
-		"Öffne mit &eM&r die Karte von &6FTB Chunks&r und zieh mit gedrückter linker Maustaste über die Chunks deiner Basis. Ein Team kann bis zu &e500 Chunks&r beanspruchen, mehr als genug. Wie Teams gehen, steht im Startkapitel unter Claims."
+		"[\"\",{\"text\":\"Öffne mit \"},{\"keybind\":\"key.ftbchunks.map\",\"color\":\"yellow\"},{\"text\":\" die Karte von \"},{\"text\":\"FTB Chunks\",\"color\":\"gold\"},{\"text\":\" und zieh mit gedrückter linker Maustaste über die Chunks deiner Basis. Ein Team kann bis zu \"},{\"text\":\"500 Chunks\",\"color\":\"yellow\"},{\"text\":\" beanspruchen, mehr als genug. Wie Teams gehen, steht im Startkapitel unter Claims.\"}]"
 		""
 		"&eChunkgrenzen:&r &eF3 und G&r blendet sie ein. Bau Maschinenreihen so, dass sie nicht über eine Grenze laufen. Wenn der Nachbarchunk gerade nicht geladen ist, steht die halbe Anlage still, und Förderbänder oder Rohre über der Grenze stauen."
 		""
@@ -22013,16 +22013,16 @@
 	quest.60D275D1E33B82BB.quest_subtitle: "Ein Sockel mehr, bis zu zwei."
 	quest.60D275D1E33B82BB.title: "&dSigil of Socketing"
 	quest.60D9C334A54D24D6.quest_desc: [
-		"&eAlt+V&r öffnet das Menü von Simple Voice Chat. Tritt der &eGruppe&r bei, die das Team für das Finale anlegt. In einer Gruppe hörst du die anderen über jede Entfernung."
+		"[\"\",{\"keybind\":\"key.voice_chat\",\"color\":\"yellow\"},{\"text\":\" öffnet das Menü von Simple Voice Chat. Tritt der \"},{\"text\":\"Gruppe\",\"color\":\"yellow\"},{\"text\":\" bei, die das Team für das Finale anlegt. In einer Gruppe hörst du die anderen über jede Entfernung.\"}]"
 		""
-		"Ohne Gruppe reicht deine Stimme nur 48 Blöcke, und die Insel ist viel größer. Prüf vorher im Sprachchat-Menü (&eAlt+V&r), ob dein Mikrofon an ist."
+		"[\"\",{\"text\":\"Ohne Gruppe reicht deine Stimme nur 48 Blöcke, und die Insel ist viel größer. Prüf vorher im Sprachchat-Menü (\"},{\"keybind\":\"key.voice_chat\",\"color\":\"yellow\"},{\"text\":\"), ob dein Mikrofon an ist.\"}]"
 	]
 	quest.60D9C334A54D24D6.quest_subtitle: "Über die ganze Insel hören, wer was ansagt."
 	quest.60D9C334A54D24D6.title: "&eTritt der Sprachgruppe bei"
 	quest.60DCDA43CC63EA05.quest_desc: [
-		"Drück &eG&r für deine &6Schmuckplätze&r. Der Magnet passt in den Platz &eAnhänger&r und zieht von dort genauso wie aus dem Inventar."
+		"[\"\",{\"text\":\"Drück \"},{\"keybind\":\"key.curios.open.desc\",\"color\":\"yellow\"},{\"text\":\" für deine \"},{\"text\":\"Schmuckplätze\",\"color\":\"gold\"},{\"text\":\". Der Magnet passt in den Platz \"},{\"text\":\"Anhänger\",\"color\":\"yellow\"},{\"text\":\" und zieht von dort genauso wie aus dem Inventar.\"}]"
 		""
-		"So kann ihn Ultimine nicht aus Versehen mit Bruchstein zuschütten, und ein voller Rucksack verdrängt ihn nicht. Ein- und ausschalten geht weiter mit &eAlt+M&r."
+		"[\"\",{\"text\":\"So kann ihn Ultimine nicht aus Versehen mit Bruchstein zuschütten, und ein voller Rucksack verdrängt ihn nicht. Ein- und ausschalten geht weiter mit \"},{\"keybind\":\"simplemagnets.keys.toggle\",\"color\":\"yellow\"},{\"text\":\".\"}]"
 	]
 	quest.60DCDA43CC63EA05.quest_subtitle: "Er wirkt auch dort, und das Inventar bleibt frei."
 	quest.60DCDA43CC63EA05.title: "&bSteck den Magneten in den Schmuckplatz"
@@ -23013,9 +23013,9 @@
 	quest.65112CE2572657C6.quest_subtitle: "Wo kein Monster spawnt und trotzdem alles still ist."
 	quest.65112CE2572657C6.title: "&8&lFinde die Tiefe Dunkelheit"
 	quest.65140A8B6C58771A.quest_desc: [
-		"Im Fenster der Werkbank fährst du mit der Maus über einen Stapel &6Barren&r und drückst &eK&r: &6Crafting Tweaks&r presst ihn zu Blöcken. &eStrg+K&r presst nur einen Block, &eShift+K&r alles dieser Sorte."
+		"[\"\",{\"text\":\"Im Fenster der Werkbank fährst du mit der Maus über einen Stapel \"},{\"text\":\"Barren\",\"color\":\"gold\"},{\"text\":\" und drückst \"},{\"keybind\":\"key.craftingtweaks.compress_stack\",\"color\":\"yellow\"},{\"text\":\": \"},{\"text\":\"Crafting Tweaks\",\"color\":\"gold\"},{\"text\":\" presst ihn zu Blöcken. \"},{\"keybind\":\"key.craftingtweaks.compress_one\",\"color\":\"yellow\"},{\"text\":\" presst nur einen Block, \"},{\"keybind\":\"key.craftingtweaks.compress_all\",\"color\":\"yellow\"},{\"text\":\" alles dieser Sorte.\"}]"
 		""
-		"&eTab&r füllt das Raster wieder mit dem letzten Rezept, &eStrg+Tab&r nur einmal. Praktisch, wenn du dreißig Mal dasselbe herstellst."
+		"[\"\",{\"keybind\":\"key.craftingtweaks.refill_last_stack\",\"color\":\"yellow\"},{\"text\":\" füllt das Raster wieder mit dem letzten Rezept, \"},{\"keybind\":\"key.craftingtweaks.refill_last\",\"color\":\"yellow\"},{\"text\":\" nur einmal. Praktisch, wenn du dreißig Mal dasselbe herstellst.\"}]"
 	]
 	quest.65140A8B6C58771A.quest_subtitle: "Crafting Tweaks: verdichten und nachfüllen."
 	quest.65140A8B6C58771A.title: "&7Press Barren mit einer Taste"
@@ -25014,7 +25014,7 @@
 	quest.6E3F4844B0942666.quest_subtitle: "Von der Fledermaus."
 	quest.6E3F4844B0942666.title: "&8Bat Wing"
 	quest.6E5766817EEA260D.quest_desc: [
-		"Öffne dein Inventar und leg das Zauberbuch in den &6Zauberbuch-Slot&r neben der Rüstung (Curios). Zaubern: &eStrg+V&r wirkt den gewählten Zauber, &eR&r gedrückt halten öffnet das Zauberrad, &eAlt + Mausrad&r wechselt den Zauber."
+		"[\"\",{\"text\":\"Öffne dein Inventar und leg das Zauberbuch in den \"},{\"text\":\"Zauberbuch-Slot\",\"color\":\"gold\"},{\"text\":\" neben der Rüstung (Curios). Zaubern: \"},{\"keybind\":\"key.irons_spellbooks.spellbook_cast\",\"color\":\"yellow\"},{\"text\":\" wirkt den gewählten Zauber, \"},{\"keybind\":\"key.irons_spellbooks.spell_wheel\",\"color\":\"yellow\"},{\"text\":\" gedrückt halten öffnet das Zauberrad, \"},{\"keybind\":\"key.irons_spellbooks.spell_bar_modifier\",\"color\":\"yellow\"},{\"text\":\" + Mausrad\",\"color\":\"yellow\"},{\"text\":\" wechselt den Zauber.\"}]"
 		""
 		"Dein &bMana&r siehst du als blaue Leiste bei der Hotbar. Du startest mit &e100 Mana&r. Alle halbe Sekunde kommt &e1 Prozent&r deines Maximums zurück, bei 100 Mana also 2 pro Sekunde, eine volle Leiste in 50 Sekunden."
 		""
@@ -26268,7 +26268,7 @@
 	quest.7492CA8E478271AC.quest_subtitle: "Mekanism, Tonne: 4 096 Stück einer Sorte, QIO in Stufe 4."
 	quest.7492CA8E478271AC.title: "Lies: Tonne und Persönliche Truhe"
 	quest.74995A3FE722D93F.quest_desc: [
-		"Ein Klick mit dem &eMausrad&r (mittlere Maustaste) setzt einen &6Ping&r dort, wo du hinschaust. Alle in der Nähe sehen ihn als Zeichen in der Welt, mit Entfernung, und am Bildschirmrand zeigt ein Pfeil die Richtung."
+		"[\"\",{\"keybind\":\"key.pingwheel.ping_location\",\"color\":\"yellow\"},{\"text\":\" setzt einen \"},{\"text\":\"Ping\",\"color\":\"gold\"},{\"text\":\" dort, wo du hinschaust. Alle in der Nähe sehen ihn als Zeichen in der Welt, mit Entfernung, und am Bildschirmrand zeigt ein Pfeil die Richtung.\"}]"
 		""
 		"Ein Ping hält &e7 Sekunden&r. Zielst du auf einen Gegenstand am Boden, zeigt er dessen Symbol. Ideal für \"Hier ist die Ader\" oder \"Pass auf, Creeper\"."
 		""
@@ -26465,7 +26465,7 @@
 	quest.755591FD0C010404.quest_subtitle: "14 Hunger, 21 Sättigung."
 	quest.755591FD0C010404.title: "&6Koch Nudelsuppe"
 	quest.75568FD704BF8034.quest_desc: [
-		"Halte über einem Create-Block im Inventar oder in JEI die Taste &eW&r gedrückt. Dann öffnet sich die &6Ponder&r-Ansicht, eine kleine animierte Anleitung zu genau diesem Block."
+		"[\"\",{\"text\":\"Halte über einem Create-Block im Inventar oder in JEI die Taste \"},{\"keybind\":\"key.ponder.ponder\",\"color\":\"yellow\"},{\"text\":\" gedrückt. Dann öffnet sich die \"},{\"text\":\"Ponder\",\"color\":\"gold\"},{\"text\":\"-Ansicht, eine kleine animierte Anleitung zu genau diesem Block.\"}]"
 		""
 		"Create erzeugt keinen Strom, sondern &dRotation&r. Wasserräder und Windmühlen drehen Wellen und Zahnräder, die treiben Maschinen an, die mahlen, pressen, mischen und ganze Bauwerke bewegen."
 		""
@@ -27054,7 +27054,7 @@
 	quest.779C60A79312779E.quest_subtitle: "Freunde in deine Chunks lassen, ohne ein Team zu teilen."
 	quest.779C60A79312779E.title: "&6Nimm Verbündete auf"
 	quest.77A44B861E5D9B45.quest_desc: [
-		"Trag ein Affix-Item an &6Kopf, Brust, Beinen und Füßen&r und halte eine Affix-Waffe in der Hand. Die Seltenheit ist egal, Common reicht. Das schaltet &6Frontier&r frei, aktivieren musst du es dann mit &eStrg+T&r."
+		"[\"\",{\"text\":\"Trag ein Affix-Item an \"},{\"text\":\"Kopf, Brust, Beinen und Füßen\",\"color\":\"gold\"},{\"text\":\" und halte eine Affix-Waffe in der Hand. Die Seltenheit ist egal, Common reicht. Das schaltet \"},{\"text\":\"Frontier\",\"color\":\"gold\"},{\"text\":\" frei, aktivieren musst du es dann mit \"},{\"keybind\":\"key.apotheosis.open_world_tier_select\",\"color\":\"yellow\"},{\"text\":\".\"}]"
 		""
 		"In Frontier fällt &aUncommon&r zu 60 Prozent, &9Rare&r zu 10, Common nur noch zu 29. Du bekommst &e20 Prozent mehr Glück&r und &e35 Prozent mehr Erfahrung&r, Monster bekommen 4 Rüstungspunkte dazu, und &cApothic Invader&r tauchen auf."
 		""
@@ -27914,7 +27914,7 @@
 	quest.7C15F7F39DE06D46.quest_subtitle: "Ein Portal, durch das nur Waren gehen. Stufe 3."
 	quest.7C15F7F39DE06D46.title: "&aÖffne das Tor nach Alfheim"
 	quest.7C1C3006C7CEECAC.quest_desc: [
-		"Fahr mit der Maus über einen Gegenstand, im Inventar oder in der Liste rechts, und drück &eR&r für seine Rezepte oder &eU&r für alles, was man damit macht. &eEsc&r oder Rücktaste bringt dich zurück."
+		"[\"\",{\"text\":\"Fahr mit der Maus über einen Gegenstand, im Inventar oder in der Liste rechts, und drück \"},{\"keybind\":\"key.jei.showRecipe\",\"color\":\"yellow\"},{\"text\":\" für seine Rezepte oder \"},{\"keybind\":\"key.jei.showUses\",\"color\":\"yellow\"},{\"text\":\" für alles, was man damit macht. \"},{\"text\":\"Esc\",\"color\":\"yellow\"},{\"text\":\" oder Rücktaste bringt dich zurück.\"}]"
 		""
 		"Unten rechts ist das &eSuchfeld&r. &e@create&r zeigt nur Dinge aus Create, &e$ingots&r alles mit dem Tag Barren. Im Rezeptfenster legt der Knopf &e+&r die Zutaten direkt in die Werkbank, wenn du sie dabeihast, mit Shift gleich einen ganzen Stapel."
 		""

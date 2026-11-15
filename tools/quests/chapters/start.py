@@ -47,7 +47,7 @@ quests = [
           description=[
               "Wirf keinen Bruchstein weg. Der Obelisk will in Stufe 1 &e20 000 Stück&r vom ganzen Server, und jede Sorte zählt: normaler, bemooster und Bruchtiefenschiefer.",
               "",
-              "&eTipp:&r Halte &e`&r (links neben der 1) beim Abbauen, dann nimmt &6Ultimine&r eine ganze Reihe auf einmal mit.",
+              "&eTipp:&r Halte &e{key:key.ftbultimine}&r beim Abbauen, dann nimmt &6Ultimine&r eine ganze Reihe auf einmal mit.",
           ],
           tasks=[task_item("minecraft:cobblestone", 64)],
           rewards=[reward_xp(3)],
@@ -546,7 +546,7 @@ quests = [
     quest("v_ultimine", 12, 16, "&6Bau mit Ultimine ab",
           subtitle="Eine ganze Ader auf einmal.",
           description=[
-              "Halte &e`&r (links neben der 1) gedrückt, während du einen Block abbaust. Alle passenden Blöcke daneben gehen mit: Erzadern, Bäume, eine Reihe Stein.",
+              "Halte &e{key:key.ftbultimine}&r gedrückt, während du einen Block abbaust. Alle passenden Blöcke daneben gehen mit: Erzadern, Bäume, eine Reihe Stein.",
               "",
               "Das kostet Hunger, nimm Essen mit. Für die Stein-Säule ist Ultimine dein bester Freund.",
           ],

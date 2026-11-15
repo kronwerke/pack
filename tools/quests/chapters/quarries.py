@@ -299,7 +299,7 @@ quests = [
     quest("chunkload", 0, 17, "&eHalt den Steinbruch geladen",
           subtitle="Kein Spieler, kein Steinbruch.",
           description=[
-              "Öffne mit &eM&r die Karte, beanspruche den Chunk der Maschine und ihres Lagers und lade ihn zwangsweise (Umschalt und Linksklick). Jedes Team hat dafür höchstens &e25&r Chunks.",
+              "Öffne mit &e{key:key.ftbchunks.map}&r die Karte, beanspruche den Chunk der Maschine und ihres Lagers und lade ihn zwangsweise (Umschalt und Linksklick). Jedes Team hat dafür höchstens &e25&r Chunks.",
               "",
               "Nicht den ganzen Abbaubereich nehmen. Steht ein ME-Netz am Steinbruch, hält der &6Raumanker&r aus dem Kapitel Applied Energistics 2: Fortgeschritten das ganze Netz wach.",
           ],

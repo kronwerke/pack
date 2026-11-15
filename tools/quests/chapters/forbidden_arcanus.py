@@ -127,7 +127,7 @@ quests = [
               "",
               img("forbidden_arcanus:textures/block/gilded_chiseled_polished_darkstone.png", 32, 32),
               "",
-              "&eTipp:&r Ponder zeigt den Bau Schritt für Schritt: Halte die Hephaestus Forge in JEI mit der Maus und drück &eW&r.",
+              "&eTipp:&r Ponder zeigt den Bau Schritt für Schritt: Halte die Hephaestus Forge in JEI mit der Maus und drück &e{key:key.ponder.ponder}&r.",
           ],
           tasks=[task_item("forbidden_arcanus:gilded_chiseled_polished_darkstone", 9),
                  task_item("forbidden_arcanus:chiseled_arcane_polished_darkstone", 4)],

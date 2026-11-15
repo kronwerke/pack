@@ -18,6 +18,7 @@ kubejs/assets/kronwerke/textures/quests/, see banner().
 import hashlib
 import json
 import os
+import re
 import shutil
 
 LOCALES = ("de_de", "en_us")
@@ -343,12 +344,56 @@ def translate(value, table):
     return value
 
 
+_COLOURS = {"0": "black", "1": "dark_blue", "2": "dark_green", "3": "dark_aqua", "4": "dark_red", "5": "dark_purple",
+            "6": "gold", "7": "gray", "8": "dark_gray", "9": "blue", "a": "green", "b": "aqua", "c": "red",
+            "d": "light_purple", "e": "yellow", "f": "white"}
+_STYLES = {"k": "obfuscated", "l": "bold", "m": "strikethrough", "n": "underlined", "o": "italic"}
+_KEYED = re.compile(r"&([0-9a-fk-or])|\{key:([A-Za-z0-9_.$-]+)\}")
+
+
+def keyed(text):
+    """A line that names keys as {key:key.jei.showRecipe} shows what the reader has bound.
+
+    FTB Quests reads a line that starts with [ and ends with ] as a JSON text component, and the
+    game's own "keybind" component prints the key the client has on that binding, with its
+    modifier, in the client's language. The & codes of the line are turned into the styles of
+    the component here, since FTB Quests does not apply them to a JSON line. A line without
+    {key:...} stays as it is."""
+    if isinstance(text, list):
+        return [keyed(t) for t in text]
+    if not isinstance(text, str) or "{key:" not in text:
+        return text
+    import json
+    parts, style, pos = [""], {}, 0
+
+    def emit(part):
+        part.update(style)
+        parts.append(part)
+
+    for m in _KEYED.finditer(text):
+        if m.start() > pos:
+            emit({"text": text[pos:m.start()]})
+        pos = m.end()
+        code, key = m.group(1), m.group(2)
+        if key:
+            emit({"keybind": key})
+        elif code == "r":
+            style = {}
+        elif code in _COLOURS:
+            style = {"color": _COLOURS[code]}  # a colour ends the styles before it, as in the game
+        else:
+            style = dict(style, **{_STYLES[code]: True})
+    if pos < len(text):
+        emit({"text": text[pos:]})
+    return json.dumps(parts, ensure_ascii=False, separators=(",", ":"))
+
+
 def _write_lang(qdir, entries):
     """One file per locale; FTB Quests 2101.1 reads lang/<locale>.snbt."""
     os.makedirs(os.path.join(qdir, "lang"), exist_ok=True)
     for loc in LOCALES:
         table = {} if loc == "de_de" else _translations(loc)
-        out = {k: translate(v, table) for k, v in sorted(entries.items())}
+        out = {k: keyed(translate(v, table)) for k, v in sorted(entries.items())}
         with open(os.path.join(qdir, "lang", loc + ".snbt"), "w") as f:
             f.write(_s(out) + "\n")
 

@@ -561,3 +561,15 @@ Core 0.39.33 (13.11.2026): a right click on the obelisk with a block in the hand
 ## 0.24.45
 
 - Quest book in English: Create: Trains and Hexerei (337 lines). 5528 of 16416 lines are translated.
+
+## 0.24.46
+
+- No pack keys any more (decided by Samuel on 15.11.2026: "die Standard-Mod-Tasten, keine Defaults mehr von uns"). `config/defaultoptions/keybindings.txt` is gone, every mod keeps its own default, as in ATM10. Core 0.39.36 puts the 90 keys of the earlier layouts back once on instances that had them. `tools/keys/layout.py` is replaced by `tools/keys/defaults.py`, which writes Core's list; `docs/KEYS.md` is rewritten.
+- The quest book prints the key the reader has bound. A text names a key as `{key:NAME}` (the name of the binding, such as `key.ftbultimine`), and `tools/quests/ftbq.py` writes such a line as a text component with a `keybind` part, which the client fills in with its own setting. 42 places in 16 chapters named a letter before, 41 lines per language carry a key now. The quest about keys in the tips chapter is rewritten (KeyBind Bundles, KeybindsPurger). Seen in a small client: a quest shows R, U, G and the grave key as bound there.
+- First start (`config/defaultoptions/options.txt`): auto jump off, tutorial off, narrator key off, no accessibility screen, no multiplayer warning. Only for new instances, an existing one keeps its options.
+- Endermen pick up no blocks (`enderman_holdable` is empty).
+- A slot of its own for Create's goggles (Curios slot `goggles`, Brille). Seen in the small client: the slot is in the Curios column with a goggles outline. Not seen: the goggles in it showing what they show on the head, that is for the real client.
+- The night, phantoms and farmland are Core's (0.39.36): a quarter of a world sleeping skips the night, no phantoms, no trampled fields.
+- Every enchantment has a description in English and German (Enchantment Descriptions was in the pack already). Of the 96 enchantments the mods bring, 7 had no English text and 70 no German one, and 5 of the game's own had no German one. All are written now, in `kubejs/assets/kronwerke/lang`. Rewritten because they said nothing or said it badly: Hell Strider ("Swim faster in lava." for three lines of prose), Dungeons and Taverns' "Is just multishot but for bows." and its two siblings, its German texts (one described another enchantment) and six of its German names, Chainsaw, Berserker's Fury (now with the numbers), Unusing. `tools/check_enchant_desc.py <mods folder>` fails when one is missing. Three enchantments of Dungeons and Taverns are equipment of its bosses and carry a literal text, they are left as they are. Not seen in the game yet.
+- spark no longer profiles in the background (`config/spark/config.json`). Its profiler threw the JFR exceptions that filled the consoles of the side servers. `/spark profiler start` works as before.
+- Ultimine's quest texts say 128 blocks.

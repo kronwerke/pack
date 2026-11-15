@@ -20,7 +20,7 @@ quests = [
               "",
               "Affixe sind Boni wie bei Verzauberungen: mehr Schaden, Lebensraub, schnelleres Abbauen, mehr Rüstung, Glück. Was ein Teil kann, steht im Tooltip. Apotheosis hat keine deutschen Namen, darum stehen die Begriffe hier auf Englisch.",
               "",
-              "&cAchtung:&r Bis du einmal eine Weltstufe aktiviert hast, heißen die Teile &9Unidentified&r und zeigen nichts an. Drück &eStrg+T&r und aktiviere &eHaven&r, dann liest du alles.",
+              "&cAchtung:&r Bis du einmal eine Weltstufe aktiviert hast, heißen die Teile &9Unidentified&r und zeigen nichts an. Drück &e{key:key.apotheosis.open_world_tier_select}&r und aktiviere &eHaven&r, dann liest du alles.",
               "",
               "Ein &6Buch&r und ein &6Goldbarren&r ergeben das &6Chronicle of Shadows&r, das Handbuch zu allem in diesem Kapitel.",
           ],
@@ -44,9 +44,9 @@ quests = [
           deps=["welcome"], icon="minecraft:name_tag"),
 
     quest("tiers", 2.5, 2, "&eAktiviere die Weltstufe Haven",
-          subtitle="Strg+T öffnet das Menü.",
+          subtitle="{key:key.apotheosis.open_world_tier_select} öffnet das Menü.",
           description=[
-              "Drück &eStrg+T&r (Taste &eOpen World Tier Select&r in den Steuerungseinstellungen), wähl &6Haven&r und klick &eActivate&r. Erst dann zeigen deine Affix-Items, was sie können.",
+              "Drück &e{key:key.apotheosis.open_world_tier_select}&r (Taste &eOpen World Tier Select&r in den Steuerungseinstellungen), wähl &6Haven&r und klick &eActivate&r. Erst dann zeigen deine Affix-Items, was sie können.",
               "",
               "Eine &6Weltstufe&r gilt nur für dich. Sie legt fest, wie stark Monster in deiner Nähe sind und wie gut die Beute ausfällt. In Haven fällt &7Common&r zu 60 Prozent, &aUncommon&r zu 36 und &9Rare&r zu 4 Prozent.",
               "",
@@ -59,7 +59,7 @@ quests = [
     quest("frontier", 5, 1, "&a&lRüste dich voll aus: Frontier",
           subtitle="Vier Rüstungsteile und eine Waffe mit Affix.",
           description=[
-              "Trag ein Affix-Item an &6Kopf, Brust, Beinen und Füßen&r und halte eine Affix-Waffe in der Hand. Die Seltenheit ist egal, Common reicht. Das schaltet &6Frontier&r frei, aktivieren musst du es dann mit &eStrg+T&r.",
+              "Trag ein Affix-Item an &6Kopf, Brust, Beinen und Füßen&r und halte eine Affix-Waffe in der Hand. Die Seltenheit ist egal, Common reicht. Das schaltet &6Frontier&r frei, aktivieren musst du es dann mit &e{key:key.apotheosis.open_world_tier_select}&r.",
               "",
               "In Frontier fällt &aUncommon&r zu 60 Prozent, &9Rare&r zu 10, Common nur noch zu 29. Du bekommst &e20 Prozent mehr Glück&r und &e35 Prozent mehr Erfahrung&r, Monster bekommen 4 Rüstungspunkte dazu, und &cApothic Invader&r tauchen auf.",
               "",

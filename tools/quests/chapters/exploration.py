@@ -35,7 +35,7 @@ quests = [
     quest("e_map", 4.5, -8, "&6Öffne die Karte",
           subtitle="Nie wieder verlaufen.",
           description=[
-              "Drück &eM&r für die Karte von &6FTB Chunks&r oder &eJ&r für JourneyMap. Beide zeichnen alles auf, was du gesehen hast.",
+              "Drück &e{key:key.ftbchunks.map}&r für die Karte von &6FTB Chunks&r oder &e{key:key.journeymap.map_toggle_alt}&r für JourneyMap. Beide zeichnen alles auf, was du gesehen hast.",
               "",
               "Setz dir &eWegpunkte&r an Basis, Erzfunden, Dörfern und Portalen. Mit &eF3&r siehst du deine Koordinaten, schreib sie auf, bevor du irgendwo hinabsteigst.",
           ],

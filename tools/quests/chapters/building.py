@@ -366,7 +366,7 @@ quests = [
     quest("claims", 11, 5, "&aSichere deine Basis",
           subtitle="Claims, Chunkgrenzen und was geladen bleibt.",
           description=[
-              "Öffne mit &eM&r die Karte von &6FTB Chunks&r und zieh mit gedrückter linker Maustaste über die Chunks deiner Basis. Ein Team kann bis zu &e500 Chunks&r beanspruchen, mehr als genug. Wie Teams gehen, steht im Startkapitel unter Claims.",
+              "Öffne mit &e{key:key.ftbchunks.map}&r die Karte von &6FTB Chunks&r und zieh mit gedrückter linker Maustaste über die Chunks deiner Basis. Ein Team kann bis zu &e500 Chunks&r beanspruchen, mehr als genug. Wie Teams gehen, steht im Startkapitel unter Claims.",
               "",
               "&eChunkgrenzen:&r &eF3 und G&r blendet sie ein. Bau Maschinenreihen so, dass sie nicht über eine Grenze laufen. Wenn der Nachbarchunk gerade nicht geladen ist, steht die halbe Anlage still, und Förderbänder oder Rohre über der Grenze stauen.",
               "",

@@ -37,7 +37,7 @@ quests = [
     quest("welcome", A, 2.5, "&6&lFang mit Create an",
           subtitle="Drehbewegung statt Strom: so läuft hier jede Maschine.",
           description=[
-              "Halte über einem Create-Block im Inventar oder in JEI die Taste &eW&r gedrückt. Dann öffnet sich die &6Ponder&r-Ansicht, eine kleine animierte Anleitung zu genau diesem Block.",
+              "Halte über einem Create-Block im Inventar oder in JEI die Taste &e{key:key.ponder.ponder}&r gedrückt. Dann öffnet sich die &6Ponder&r-Ansicht, eine kleine animierte Anleitung zu genau diesem Block.",
               "",
               "Create erzeugt keinen Strom, sondern &dRotation&r. Wasserräder und Windmühlen drehen Wellen und Zahnräder, die treiben Maschinen an, die mahlen, pressen, mischen und ganze Bauwerke bewegen.",
               "",

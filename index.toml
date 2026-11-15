@@ -21,12 +21,8 @@ file = "config/cumulus_menus-client.toml"
 hash = "ad20185a8ed7d0784f46710ebd86f1520ba589044aaa689c9294acdc635b598f"
 
 [[files]]
-file = "config/defaultoptions/keybindings.txt"
-hash = "ce8c481b348373696e611638c47d5dbc4086a302538ab1e0170cecbb8beee575"
-
-[[files]]
 file = "config/defaultoptions/options.txt"
-hash = "ee724c1c5fae33f5f53312baaf8993af08d93f28d9fd72cd1a809f0ca71890a0"
+hash = "da323aacc5a37d3b830c389c4c3cf668e2a91a93dd475bab9c62f202a2ff3345"
 
 [[files]]
 file = "config/drippyloadingscreen/options.txt"
@@ -634,11 +630,11 @@ hash = "93c982c2e09101877cba15ed69d2eee71ed5be2243ee8dcdcc0734845932c8b6"
 
 [[files]]
 file = "config/ftbquests/quests/lang/de_de.snbt"
-hash = "ba7887705213d752220695fb2cfb523467acac5e980aa8582446ccb0091b1f6c"
+hash = "91016594810444b62e8e2f349d5c13d3b8bcce4e7f6b9d57ffa3513ae93c2ef6"
 
 [[files]]
 file = "config/ftbquests/quests/lang/en_us.snbt"
-hash = "fb22174d611193b9aba5be04fde26e79711495307f970651127254be60531c18"
+hash = "2465c650f854c138b215c94c678e3d1b8b29d6562232387860542254c30d538c"
 
 [[files]]
 file = "config/ftbquests/quests/reward_tables/s1_common.snbt"
@@ -747,6 +743,10 @@ hash = "597598f10256238d891b9d614376663dd99c2352590a09deba17106cd6cd9dc2"
 [[files]]
 file = "config/servercore/optimizations.yml"
 hash = "16e44667a63c3d364b2a1bb6baa302775bc68b9d765e974d2bd9809554669385"
+
+[[files]]
+file = "config/spark/config.json"
+hash = "808735d966e11fe08ccae1cf008c2e1a121b9fcfbf6a48150c5975cd27efa0cf"
 
 [[files]]
 file = "config/supplementaries-client.toml"
@@ -878,11 +878,11 @@ hash = "154245b386499916bba4b1f4cce63a22039198095fe839ff354ebe19e0d9f62d"
 
 [[files]]
 file = "kubejs/assets/kronwerke/lang/de_de.json"
-hash = "6882cef97ca4ebd8523c195c0b055d71c623c6b62a358517e58c696f4408c139"
+hash = "53eaaff024f0f9127b777d35ee5b9faf4bd7218944c351048c53d51143cc2315"
 
 [[files]]
 file = "kubejs/assets/kronwerke/lang/en_us.json"
-hash = "d7982095035277842b2da0549b933032d62a9919642b66ffa4876c2fcd2cff17"
+hash = "beb62d0bbc568ece40fe4462fc2ca9437a13291adf1e4a1ec2967e3300bff3ac"
 
 [[files]]
 file = "kubejs/assets/kronwerke/textures/block/ctm/plinth_side/center.png"
@@ -4713,6 +4713,10 @@ file = "kubejs/assets/kronwerke/textures/quests/undergarden/title.png"
 hash = "b5d53e67ad301f32cb05a9b162fb426f926bf75ff82e705227294dbd349bc062"
 
 [[files]]
+file = "kubejs/assets/kronwerke/textures/slot/goggles.png"
+hash = "91cd5f2b402ff31c31c17b8d7b48aa90ec48ef6f7ce918becc4742a625146b9d"
+
+[[files]]
 file = "kubejs/assets/kwmenu/lang/de_de.json"
 hash = "67cddc6a4c6634c0b1e756c63fb42c5299890a31fafe04b3481446da643250ba"
 
@@ -4871,6 +4875,10 @@ hash = "b93e7cb8d7d0e8af1887c318e3388a764ccc6778634db5b8dba63eca1024db70"
 [[files]]
 file = "kubejs/data/createdieselgenerators/loot_table/blocks/andesite_girder_strut.json"
 hash = "ee2d82b7e27ba02767e0ac59e8a0a1e95181a6758c5f0bb6d948fc5359edbab8"
+
+[[files]]
+file = "kubejs/data/curios/tags/item/goggles.json"
+hash = "c823b25f6a6eb127d67cf6789cf0e3cfff0abefc85e219d0da70314ac8081338"
 
 [[files]]
 file = "kubejs/data/draconicevolution/neoforge/biome_modifier/nether_draconium_ore.json"
@@ -5427,6 +5435,14 @@ hash = "5879f1b53cb29efc2eabc9b478705ea84ef1cf4cf0b1d62244033d9b0306e778"
 [[files]]
 file = "kubejs/data/kronwerke/chapters/stages/stage5.json"
 hash = "7e14e8df223bc176593a11a1d661af35f168f08cd4ddfbbe592e28e684bc69b9"
+
+[[files]]
+file = "kubejs/data/kronwerke/curios/entities/goggles.json"
+hash = "3df9a8892ebdad02ed12cb68c6975b340b5a4e66e98703b739eb08d2c6037351"
+
+[[files]]
+file = "kubejs/data/kronwerke/curios/slots/goggles.json"
+hash = "7776a3096ed59339950b1b1e9beb5d244b68e9097cf780090fad60e9f60707b4"
 
 [[files]]
 file = "kubejs/data/kronwerke/dimension/testworld.json"
@@ -6807,6 +6823,10 @@ hash = "21b11674b18c3fb0d8292095cf7c12bca82ef4054ec3f1cd8d1e0222d1655629"
 [[files]]
 file = "kubejs/data/minecraft/dimension_type/overworld.json"
 hash = "ce1954f5921b4e7b5c691c9667d38c66c883938e0c430d17a023dd060937285f"
+
+[[files]]
+file = "kubejs/data/minecraft/tags/block/enderman_holdable.json"
+hash = "bef4d172fc1bfb34d342e79090726c4a0c272dd404783c3ea022b992e0e0415e"
 
 [[files]]
 file = "kubejs/data/minecraft/tags/enchantment/in_enchanting_table.json"
@@ -8739,7 +8759,7 @@ metafile = true
 
 [[files]]
 file = "mods/kronwerke-core.pw.toml"
-hash = "e4ef24ac1eaa27b40b4c8373b92ac97eb5cfb9b26c40aa8649886b619c685818"
+hash = "8d3766edbc8e2268f0ec4d0a434ab61c7ed1330c8c5749fd32008b5ff126e95c"
 metafile = true
 
 [[files]]

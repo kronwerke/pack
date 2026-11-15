@@ -769,12 +769,36 @@ file = "journeymap/server/6.0/journeymap.server.global.config"
 hash = "c53c103b82a6b611a38172136de35e7983058d124d31be81a93c70b8e8b1672b"
 
 [[files]]
+file = "kubejs/assets/apothic_enchanting/lang/en_us.json"
+hash = "2bb1ce8d6f0a8dce53705bc894bbb358357709711f035931ffad46c5184be778"
+
+[[files]]
+file = "kubejs/assets/ars_elemental/lang/de_de.json"
+hash = "657c380c6c3571181ed2cf4663b4d01996c1757a1484280bbc4b6df7ca2b94bc"
+
+[[files]]
+file = "kubejs/assets/ars_elemental/lang/en_us.json"
+hash = "ce94045a54018fed7e457caab2c178fb48740cf3caccb141ed7a43549cd8f18f"
+
+[[files]]
 file = "kubejs/assets/bountiful/lang/de_de.json"
 hash = "7deab2957d2974f1cf6b1bd4fbcbacd7432295e6758bb9647437fccd893ba4b5"
 
 [[files]]
 file = "kubejs/assets/bountiful/lang/en_us.json"
 hash = "5312909b4c3f0c0c4cf031f00cc849b14133623b96fe11a374a2baadf268e554"
+
+[[files]]
+file = "kubejs/assets/dnt/lang/de_de.json"
+hash = "e9f2da276feb4deb28d2a7c7be17b8f9a427aaf2be6c48ffe6dce7edfb31a964"
+
+[[files]]
+file = "kubejs/assets/dnt/lang/en_us.json"
+hash = "1909c9605fdaa57886d3dd2beef8ae21d0a9423635a30dab858c4fd10f0f5cf6"
+
+[[files]]
+file = "kubejs/assets/evilcraft/lang/en_us.json"
+hash = "dff3f876721045b830b2061b09ff35ce4353762111bffc412a2242686ede9fb3"
 
 [[files]]
 file = "kubejs/assets/ftbquests/ftb_quests_theme.txt"
@@ -878,11 +902,11 @@ hash = "154245b386499916bba4b1f4cce63a22039198095fe839ff354ebe19e0d9f62d"
 
 [[files]]
 file = "kubejs/assets/kronwerke/lang/de_de.json"
-hash = "53eaaff024f0f9127b777d35ee5b9faf4bd7218944c351048c53d51143cc2315"
+hash = "4df6e2785a7a749fab8e5a6e00dfe0bcd4f492b54017b75c363c34c8d27a70d2"
 
 [[files]]
 file = "kubejs/assets/kronwerke/lang/en_us.json"
-hash = "beb62d0bbc568ece40fe4462fc2ca9437a13291adf1e4a1ec2967e3300bff3ac"
+hash = "78c01dcf5d496f3ae552979acf5b2e336660ba6b536fc4813759ec58ee0964e0"
 
 [[files]]
 file = "kubejs/assets/kronwerke/textures/block/ctm/plinth_side/center.png"
@@ -4781,6 +4805,22 @@ file = "kubejs/assets/minecraft/textures/gui/sprites/widget/slider_highlighted.p
 hash = "97fe75acf0b6c519e8a47d26680c6806f415ea4bc8691f286a0699ed1027549a"
 
 [[files]]
+file = "kubejs/assets/netherdepthsupgrade/lang/en_us.json"
+hash = "a994950066b76b254065ee05a374d7dcdfe963f4cabe0e2265fe62ee7ebec023"
+
+[[files]]
+file = "kubejs/assets/reliquary/lang/en_us.json"
+hash = "7fb4ba6b760aaff27575dcf1f1620f92c429855867f2114145bd8bbe9c77f59a"
+
+[[files]]
+file = "kubejs/assets/supplementaries/lang/de_de.json"
+hash = "23bc35fef34fe496dc0e94744be54ece805f198c503bb861a9e00d02942e2dbc"
+
+[[files]]
+file = "kubejs/assets/undergarden/lang/de_de.json"
+hash = "9911a094e80d71115cbba14aca3a8ac1b9c7d07aa3ddb62a7c8b0cd1e1ed89a1"
+
+[[files]]
 file = "kubejs/client_scripts/obelisk_ctm.js"
 hash = "a9b10f97b616ecc562b0cd9ab5eed5021e3e8e8b9bba6dd9dcc04a6e1212f2a5"
 
@@ -8435,6 +8475,11 @@ metafile = true
 [[files]]
 file = "mods/elytra-trims.pw.toml"
 hash = "7b3c7609e07faade9f1c2f5bcf9c655215d38c2ae32d68fc2de7b5b1459fda4c"
+metafile = true
+
+[[files]]
+file = "mods/emi.pw.toml"
+hash = "4603c93edafe22ced6578fd08ca44f8c7e4c7f4e0a59c853e7552c6b8dc99388"
 metafile = true
 
 [[files]]

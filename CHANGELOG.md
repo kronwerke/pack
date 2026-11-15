@@ -542,3 +542,8 @@ Core 0.39.33 (13.11.2026): a right click on the obelisk with a block in the hand
 ## 0.24.42
 
 - Kronwerke Core 0.39.34 (13.11.2026): who joins or comes over from another server takes no damage and is no target for mobs until their client is through loading, and the leaderboard wall is dark on its sides and back.
+
+## 0.24.43
+
+- Kronwerke Core 0.39.35 (15.11.2026): founding or joining a party keeps the stages. In a singleplayer world the pack was locked again as soon as a team was founded, which the first chapter of the quest book asks for.
+- Artifacts: a campsite holds a mimic one time in ten instead of three in ten (`config/artifacts/general.toml`, `mimicChance`). Only for terrain generated from now on.

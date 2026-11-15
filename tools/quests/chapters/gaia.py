@@ -361,7 +361,7 @@ quests = [
     quest("reservoir", 20.25, -3.2, "&dSchnitz die Rute des instabilen Reservoirs",
           subtitle="Ein Schwarm Zielsuchgeschosse.",
           description=[
-              "&e2 Gaia-Seelen&r, &e3 Drachensteine&r und &e2 Traumholzzweige&r, wie in JEI gezeigt.",
+              "&e2 Gaia-Seelen&r, &e3 Drachensteine&r und &e2 Traumholzzweige&r, wie in EMI gezeigt.",
               "",
               "Benutzt beschwört die Rute aus Mana unzählige magische Geschosse, die sich zufällige Ziele suchen. Am stärksten gegen große Gruppen.",
               "",

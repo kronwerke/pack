@@ -1,5 +1,5 @@
 """Tips and tricks for people who have never played a modpack: how the quest book works
-(rewards, pinned quests, chapter groups, veiled locked items), JEI and Jade, map, waystones,
+(rewards, pinned quests, chapter groups, veiled locked items), EMI and Jade, map, waystones,
 claims and teams, the server rules of Kronwerke (STAGES.md), what to do about lag and crashes,
 the keybinds that matter and their conflicts, death with the Corpse mod, and where to get help.
 Checkmark quests only. Facts come from the server configs and the mod jars (key defaults were
@@ -79,7 +79,7 @@ quests = [
     quest("q_locked", 12.5, -8, "&cErkenne gesperrte Gegenstände",
           subtitle="Dunkles Feld, Fragezeichen, drei Zeilen Tooltip.",
           description=[
-              "Gegenstände einer Stufe, die noch nicht offen ist, werden &everhüllt&r gezeichnet: ein dunkles Feld mit einem Fragezeichen, egal ob im Inventar, in einer Truhe oder in JEI. Der Tooltip sagt &7???&r, darunter &cÖffnet in Stufe 2 (Messingwerk).&r und &8Einstecken geht, benutzen noch nicht.&r",
+              "Gegenstände einer Stufe, die noch nicht offen ist, werden &everhüllt&r gezeichnet: ein dunkles Feld mit einem Fragezeichen, egal ob im Inventar, in einer Truhe oder in EMI. Der Tooltip sagt &7???&r, darunter &cÖffnet in Stufe 2 (Messingwerk).&r und &8Einstecken geht, benutzen noch nicht.&r",
               "",
               "Genau so ist es gemeint: Aufheben und lagern darfst du alles. In der Hand halten, anziehen, platzieren oder herstellen geht erst, wenn die Stufe offen ist. Landet so etwas in deiner Hand, wandert es von selbst zurück ins Inventar.",
               "",
@@ -89,11 +89,11 @@ quests = [
           rewards=[reward_table("s1_common"), reward_xp(3)],
           deps=["q_groups"], icon="minecraft:barrier"),
 
-    # ---- JEI und Jade ------------------------------------------------------------
+    # ---- EMI und Jade ------------------------------------------------------------
     quest("j_recipe", 4.5, -4, "&6Schau ein Rezept nach",
           subtitle="R für das Rezept, U für die Verwendung.",
           description=[
-              "Die Liste rechts in jedem Inventar ist &6JEI&r. Fahr mit der Maus über einen Gegenstand, egal ob in der Liste oder in deinem Inventar, und drück &e{key:key.jei.showRecipe}&r: JEI zeigt dir alle Wege, ihn herzustellen. &e{key:key.jei.showUses}&r zeigt dir alles, wofür er gebraucht wird.",
+              "Die Liste rechts in jedem Inventar ist &6JEI&r. Fahr mit der Maus über einen Gegenstand, egal ob in der Liste oder in deinem Inventar, und drück &eR&r: EMI zeigt dir alle Wege, ihn herzustellen. &eU&r zeigt dir alles, wofür er gebraucht wird.",
               "",
               "Oben im Rezeptfenster blätterst du durch die Arten: Werkbank, Ofen, Mahlstein, Manabecken und so weiter. Mit der &eRücktaste&r springst du zum vorigen Rezept zurück, &eEsc&r schließt das Fenster.",
               "",
@@ -103,23 +103,25 @@ quests = [
           rewards=[reward_xp(2)],
           deps=["welcome"], icon="minecraft:knowledge_book"),
 
-    quest("j_search", 6.5, -4, "&6Such etwas in JEI",
-          subtitle="Suchfeld, Mod-Filter, Lesezeichen.",
+    quest("j_search", 6.5, -4, "&6Such etwas in EMI",
+          subtitle="Suchfeld, Mod-Filter, Favoriten.",
           description=[
-              "Mit &e{key:key.jei.focusSearch}&r springst du ins Suchfeld unten rechts. Tipp einen Teil des Namens, die Liste filtert sofort. Mit &e@create&r siehst du alles aus einem Mod, zum Beispiel alle Blöcke von Create.",
+              "Mit &eStrg+F&r springst du ins Suchfeld unten in der Mitte. Tipp einen Teil des Namens, die Liste filtert sofort. Mit &e@create&r siehst du alles aus einem Mod, zum Beispiel alle Blöcke von Create.",
               "",
-              "&eA&r über einem Gegenstand setzt ein &eLesezeichen&r. Die Lesezeichen stehen links im Inventar und bleiben, bis du sie mit A wieder löschst. Praktisch für die Zutatenliste einer größeren Maschine.",
+              "&eA&r über einem Gegenstand macht ihn zum &eFavoriten&r. Die Favoriten stehen links im Inventar und bleiben, bis du sie mit A wieder löschst. Praktisch für die Zutatenliste einer größeren Maschine.",
               "",
-              "&e{key:key.jei.toggleOverlay}&r blendet JEI komplett aus und wieder ein, falls du mal Platz brauchst.",
+              "&eStrg+O&r blendet EMI komplett aus und wieder ein, falls du mal Platz brauchst.",
+              "",
+              "Diese Tasten gehören EMI selbst und stehen nicht in den Steuerungsoptionen. Ändern kannst du sie über den Knopf &eEMI&r unten links.",
           ],
           tasks=[task_checkmark("Gesucht und gefunden")],
           rewards=[reward_xp(3)],
           deps=["j_recipe"], icon="minecraft:spyglass"),
 
-    quest("j_transfer", 8.5, -4, "&6Lass JEI die Werkbank füllen",
+    quest("j_transfer", 8.5, -4, "&6Lass EMI die Werkbank füllen",
           subtitle="Der Plus-Knopf legt die Zutaten hinein.",
           description=[
-              "Steh an einer &6Werkbank&r, such das Rezept mit &eR&r heraus und klick auf das kleine &e+&r unten rechts im Rezept. JEI legt die Zutaten aus deinem Inventar an die richtigen Stellen. &eShift&r und Klick füllt gleich einen ganzen Stapel.",
+              "Steh an einer &6Werkbank&r, such das Rezept mit &eR&r heraus und klick auf das kleine &e+&r unten rechts im Rezept. EMI legt die Zutaten aus deinem Inventar an die richtigen Stellen. &eShift&r und Klick füllt gleich einen ganzen Stapel.",
               "",
               "Ist der Knopf rot, fehlt dir etwas. Fahr mit der Maus darüber, dann steht dort, was.",
               "",
@@ -132,7 +134,7 @@ quests = [
     quest("j_next", 10.5, -4, "&6Sieh, was in der nächsten Stufe kommt",
           subtitle="Verhüllt, aber mit Rezept.",
           description=[
-              "Die Gegenstände der &enächsten Stufe&r stehen schon in der JEI-Liste, verhüllt mit dem dunklen Feld und dem Fragezeichen. Mit &eR&r siehst du trotzdem ihr Rezept und kannst &evorausplanen&r: Zink für Messing lässt sich zum Beispiel schon in Stufe 1 abbauen und einlagern.",
+              "Die Gegenstände der &enächsten Stufe&r stehen schon in der EMI-Liste, verhüllt mit dem dunklen Feld und dem Fragezeichen. Mit &eR&r siehst du trotzdem ihr Rezept und kannst &evorausplanen&r: Zink für Messing lässt sich zum Beispiel schon in Stufe 1 abbauen und einlagern.",
               "",
               "Stufe 3 und alles danach bleibt unsichtbar, bis es an der Reihe ist. So siehst du immer, wie viel kommt, aber die Liste wird nicht von Dingen überschwemmt, die noch Wochen entfernt sind.",
               "",
@@ -160,9 +162,9 @@ quests = [
           description=[
               "Das Questbuch führt dich durch den Anfang jedes Mods. Für alles, was tiefer geht, haben die Mods eigene Bücher: die &6Lexica Botania&r (ein Buch und ein Setzling an der Werkbank), das &6Abgenutzte Notizbuch&r von Ars Nouveau, die &6Silent Gear Anleitung&r und das &6Dictionary of Spirits&r von Occultism.",
               "",
-              "Create erklärt sich mit &6Ponder&r: Fahr im Inventar oder in JEI über einen Create-Block und halte &eW&r gedrückt. Eine kleine Szene zeigt dir, wie er funktioniert.",
+              "Create erklärt sich mit &6Ponder&r: Fahr im Inventar oder in EMI über einen Create-Block und halte &eW&r gedrückt. Eine kleine Szene zeigt dir, wie er funktioniert.",
               "",
-              "Alle Bücher sind in JEI zu finden. Such nach dem Mod mit &e@&r, das Buch steht meist ganz vorn.",
+              "Alle Bücher sind in EMI zu finden. Such nach dem Mod mit &e@&r, das Buch steht meist ganz vorn.",
           ],
           tasks=[task_checkmark("Ein Buch aufgeschlagen")],
           rewards=[reward_table("s1_common"), reward_xp(3)],
@@ -330,7 +332,7 @@ quests = [
     quest("h_keys", 10.5, 8, "&6Prüf deine Tasten",
           subtitle="Jede Mod bringt ihre Tasten mit, das Buch zeigt deine.",
           description=[
-              "Deine Herkunft liegt auf &e{key:key.neoorigins.skill_1}&r, &e{key:key.neoorigins.skill_2}&r, &e{key:key.neoorigins.skill_3}&r und &e{key:key.neoorigins.skill_4}&r (Fähigkeit 1 bis 4), die Rolle auf &e{key:key.neoorigins.class_skill}&r, die Übersicht auf &e{key:key.neoorigins.view_info}&r. Dazu &e{key:key.jei.showRecipe}&r und &e{key:key.jei.showUses}&r in JEI, &e{key:key.ftbchunks.map}&r Karte und Claims, &e{key:key.sophisticatedbackpacks.open_backpack}&r Rucksack, &e{key:key.curios.open.desc}&r Schmuckplätze, &e{key:key.ftbultimine}&r Ultimine, &e{key:key.ponder.ponder}&r halten für Ponder, &e{key:key.corpse.death_history}&r außerhalb von Menüs die Todeshistorie.",
+              "Deine Herkunft liegt auf &e{key:key.neoorigins.skill_1}&r, &e{key:key.neoorigins.skill_2}&r, &e{key:key.neoorigins.skill_3}&r und &e{key:key.neoorigins.skill_4}&r (Fähigkeit 1 bis 4), die Rolle auf &e{key:key.neoorigins.class_skill}&r, die Übersicht auf &e{key:key.neoorigins.view_info}&r. Dazu &eR&r und &eU&r in EMI, &e{key:key.ftbchunks.map}&r Karte und Claims, &e{key:key.sophisticatedbackpacks.open_backpack}&r Rucksack, &e{key:key.curios.open.desc}&r Schmuckplätze, &e{key:key.ftbultimine}&r Ultimine, &e{key:key.ponder.ponder}&r halten für Ponder, &e{key:key.corpse.death_history}&r außerhalb von Menüs die Todeshistorie.",
               "",
               "Kronwerke legt keine eigenen Tasten fest, jede Mod bringt ihre mit. Manche liegen deshalb doppelt, die stehen in den &eSteuerungseinstellungen&r rot. Leg um, was du brauchst: dieses Buch zeigt immer die Taste, die bei dir gerade gilt. Mit &6KeyBind Bundles&r legst du mehrere Aktionen als Ringmenü auf eine Taste.",
               "",
@@ -472,9 +474,9 @@ quests = [
     quest("h_help", 20.5, 0, "&6Frag nach Hilfe",
           subtitle="Hier hilft man sich. Wirklich.",
           description=[
-              "Du kennst jetzt das Buch, JEI, die Karte, die Regeln und die Tasten. Alles andere lernst du beim Spielen, und niemand erwartet, dass du 230 Mods kennst.",
+              "Du kennst jetzt das Buch, EMI, die Karte, die Regeln und die Tasten. Alles andere lernst du beim Spielen, und niemand erwartet, dass du 230 Mods kennst.",
               "",
-              "Wenn du nicht weiterkommst: Erst &eR&r und &eU&r in JEI, dann das passende &eKapitel&r im Buch, dann der &eChat&r oder der &eSprachchat&r. Dreißig Leute auf dem Server, einer hat die Maschine garantiert schon gebaut. Für alles Technische (Absturz, Installation, Whitelist) ist der &9Discord&r da, auf &ekronwerke.com&r stehen die häufigsten Fragen und der Stand des Obelisken.",
+              "Wenn du nicht weiterkommst: Erst &eR&r und &eU&r in EMI, dann das passende &eKapitel&r im Buch, dann der &eChat&r oder der &eSprachchat&r. Dreißig Leute auf dem Server, einer hat die Maschine garantiert schon gebaut. Für alles Technische (Absturz, Installation, Whitelist) ist der &9Discord&r da, auf &ekronwerke.com&r stehen die häufigsten Fragen und der Stand des Obelisken.",
               "",
               "Und umgekehrt: Wenn dich jemand im Chat fragt, wie ein Wasserrad geht, antworte. So funktioniert Kronwerke.",
           ],
@@ -487,7 +489,7 @@ quests = [
 images = [
     banner("tips/title", "Tipps und Tricks", 0, -2.6, height=1.2, kind="title", colour="brass"),
     banner("tips/book", "Das Questbuch", 8.5, -9.8, height=0.9, colour="brass"),
-    banner("tips/jei", "JEI und Jade", 9.5, -5.8, height=0.9, colour="water"),
+    banner("tips/jei", "EMI und Jade", 9.5, -5.8, height=0.9, colour="water"),
     banner("tips/map", "Karte, Claims und Team", 7.5, -1.8, height=0.9, colour="nature"),
     banner("tips/rules", "Die Regeln von Kronwerke", 8.5, 2.2, height=0.9, colour="stone"),
     banner("tips/help", "Wenn es hakt", 10.5, 6.2, height=0.9, colour="magic"),
@@ -495,5 +497,5 @@ images = [
 ]
 
 chapter(C, "Tipps und Tricks", "minecraft:knowledge_book", "start", quests, shape="circle", order=1,
-        subtitle=["Questbuch, JEI, Karte, Claims, Regeln und Tasten. Für alle, die noch nie ein Modpack gespielt haben."],
+        subtitle=["Questbuch, EMI, Karte, Claims, Regeln und Tasten. Für alle, die noch nie ein Modpack gespielt haben."],
         images=images)

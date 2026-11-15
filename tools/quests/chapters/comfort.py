@@ -1,7 +1,7 @@
 """Comfort in stage 1: the small mods that make the day easier. Simple Magnets, Item Collectors
 (advanced collector is stage 2 and only mentioned), Pylons (harvester; infusion, interdiction,
 expulsion and protection are stage 2 and only mentioned), FTB Chunks claims and chunk loading,
-JourneyMap, JEI, Jade, FTB Ultimine, Simple Voice Chat, Corpse, Trash Cans, Inventory Tweak and
+JourneyMap, EMI, Jade, FTB Ultimine, Simple Voice Chat, Corpse, Trash Cans, Inventory Tweak and
 Crafting Tweaks. Numbers follow the server configs in config/. Waystones has its own chapter.
 Cobweb in the mod list is only the Crystal Nest library and has nothing for players; Xaero is not
 in the pack (JourneyMap is). Mouse Tweaks is in the pack and covered in the tips chapter."""
@@ -20,7 +20,7 @@ quests = [
     quest("welcome", 0, 6, "&6&lRichte dir den Alltag ein",
           subtitle="Kleine Mods, große Erleichterung.",
           description=[
-              "Neben den großen Mods stecken im Pack ein Dutzend kleine, die jeden Tag ein paar Minuten sparen: ein &6Magnet&r, ein &6Sammler&r für Farmen, &6Claims&r und &6Chunkloading&r, zwei Karten, JEI, Jade, Ultimine, der Sprachchat, dein Körper nach dem Tod, Mülltonnen und ein Sortierknopf fürs Inventar.",
+              "Neben den großen Mods stecken im Pack ein Dutzend kleine, die jeden Tag ein paar Minuten sparen: ein &6Magnet&r, ein &6Sammler&r für Farmen, &6Claims&r und &6Chunkloading&r, zwei Karten, EMI, Jade, Ultimine, der Sprachchat, dein Körper nach dem Tod, Mülltonnen und ein Sortierknopf fürs Inventar.",
               "",
               "Dieses Kapitel geht sie einzeln durch, mit einer Zeile dazu, wie du sie benutzt. Nichts davon ist Pflicht, aber wer die Abschnitte &eKarte&r und &eWissen&r kennt, kommt im Rest des Buchs schneller voran.",
               "",
@@ -180,11 +180,11 @@ quests = [
 
     # ---- Wissen ------------------------------------------------------------------
     quest("jei_lookup", 3, 9.5, "&eSchlag ein Rezept nach",
-          subtitle="JEI: R, U und die Suche.",
+          subtitle="EMI: R, U und die Suche.",
           description=[
-              "Fahr mit der Maus über einen Gegenstand, im Inventar oder in der Liste rechts, und drück &e{key:key.jei.showRecipe}&r für seine Rezepte oder &e{key:key.jei.showUses}&r für alles, was man damit macht. &eEsc&r oder Rücktaste bringt dich zurück.",
+              "Fahr mit der Maus über einen Gegenstand, im Inventar oder in der Liste rechts, und drück &eR&r für seine Rezepte oder &eU&r für alles, was man damit macht. &eEsc&r oder Rücktaste bringt dich zurück.",
               "",
-              "Unten rechts ist das &eSuchfeld&r. &e@create&r zeigt nur Dinge aus Create, &e$ingots&r alles mit dem Tag Barren. Im Rezeptfenster legt der Knopf &e+&r die Zutaten direkt in die Werkbank, wenn du sie dabeihast, mit Shift gleich einen ganzen Stapel.",
+              "Unten in der Mitte ist das &eSuchfeld&r. &e@create&r zeigt nur Dinge aus Create, &e#ingots&r alles mit dem Tag Barren. Im Rezeptfenster legt der Knopf &e+&r die Zutaten direkt in die Werkbank, wenn du sie dabeihast, mit Shift gleich einen ganzen Stapel.",
               "",
               "Oben im Rezeptfenster stehen Reiter: Werkbank, Ofen, Mixer, Infusionsanlage, Manabecken. Jede Maschine im Pack hat ihren eigenen Reiter, und die Pfeile wechseln zwischen mehreren Rezepten.",
           ],
@@ -192,21 +192,21 @@ quests = [
           rewards=[reward_xp(3)],
           deps=["welcome"], icon="minecraft:crafting_table"),
 
-    quest("jei_bookmarks", 6, 8.5, "&eSetz Lesezeichen",
+    quest("jei_bookmarks", 6, 8.5, "&eSetz Favoriten",
           subtitle="Deine Einkaufsliste links im Inventar.",
           description=[
-              "Fahr über einen Gegenstand und drück &e{key:key.jei.bookmark}&r. Er landet in der Lesezeichenliste &elinks&r im Inventar, dieselbe Taste löscht ihn. Im Rezeptfenster gibt es außerdem ein Lesezeichen für das &eganze Rezept&r, dann siehst du die Zutaten ohne Nachschlagen.",
+              "Fahr über einen Gegenstand und drück &eA&r. Er landet bei den Favoriten &elinks&r im Inventar, dieselbe Taste löscht ihn. Setzt du ihn im Rezeptfenster, merkt sich EMI das &eRezept&r dazu, dann siehst du die Zutaten ohne Nachschlagen.",
               "",
-              "Vor einem großen Bau: alle Maschinen als Lesezeichen setzen, dann Zutat für Zutat abarbeiten. &eStrg und O&r blendet JEI ganz aus, wenn es im Weg ist.",
+              "Vor einem großen Bau: alle Maschinen als Favoriten setzen, dann Zutat für Zutat abarbeiten. &eStrg und O&r blendet EMI ganz aus, wenn es im Weg ist.",
           ],
-          tasks=[task_checkmark("Lesezeichen gesetzt")],
+          tasks=[task_checkmark("Favoriten gesetzt")],
           rewards=[reward_xp(3)],
           deps=["jei_lookup"], icon="minecraft:book"),
 
     quest("jei_stages", 6, 10.5, "&eSchau in die nächste Stufe",
           subtitle="Gesperrt heißt sichtbar, nicht herstellbar.",
           description=[
-              "JEI zeigt dir auch die Rezepte aller späteren Stufen. Der &eTooltip&r eines gesperrten Gegenstands sagt, mit welcher Stufe er öffnet. Du kannst ihn tragen und lagern, aber nicht halten, anlegen, setzen oder herstellen.",
+              "EMI zeigt dir auch die Rezepte aller späteren Stufen. Der &eTooltip&r eines gesperrten Gegenstands sagt, mit welcher Stufe er öffnet. Du kannst ihn tragen und lagern, aber nicht halten, anlegen, setzen oder herstellen.",
               "",
               "Nutz das zum Vorausplanen: Zink, Osmium, Lebeholz und Quellsteine kannst du in Stufe 1 schon sammeln, damit dein Messingwerk am ersten Abend von Stufe 2 läuft.",
               "",
@@ -348,7 +348,7 @@ quests = [
           description=[
               "Ein &6Magnet&r in der Tasche, ein &6Sammler&r an der ersten Farm, eine &6Mülltonne&r am Lager, die Basis beansprucht und ein Wegpunkt gesetzt. Damit bist du schneller als die meisten, die hier anfangen.",
               "",
-              "Was jetzt kommt, steht in den großen Kapiteln: Create, Ars Nouveau, Botania, das Lager. Und wenn du vergisst, wie etwas geht: &eR&r in JEI.",
+              "Was jetzt kommt, steht in den großen Kapiteln: Create, Ars Nouveau, Botania, das Lager. Und wenn du vergisst, wie etwas geht: &eR&r in EMI.",
           ],
           tasks=[task_item("simplemagnets:basicmagnet", 1), task_item("itemcollectors:basic_collector", 1),
                  task_item("trashcans:item_trash_can", 1)],

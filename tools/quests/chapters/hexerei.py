@@ -23,7 +23,7 @@ quests = [
               "",
               "&2Hexerei&r ist Hexenkunst zum Anfassen: Kräuter sammeln, trocknen, zerstoßen, im Kessel mischen, Kerzen ziehen und auf einem Besen davonfliegen. Die ganze Mod öffnet mit &6Stufe 2&r.",
               "",
-              "Im Buch zeigt eine Taste über jedem Item das Rezept in JEI. Lesezeichen setzt du oben links.",
+              "Im Buch zeigt eine Taste über jedem Item das Rezept in EMI. Lesezeichen setzt du oben links.",
           ],
           tasks=[task_item("hexerei:book_of_shadows", 1)],
           rewards=[reward_item("hexerei:sage_seed", 8), reward_table("s2_common")],

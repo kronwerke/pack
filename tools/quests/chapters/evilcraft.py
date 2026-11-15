@@ -37,7 +37,7 @@ quests = [
           description=[
               "Craft einen &6Darkened Apple&r aus einem &6Apfel&r und einem &6Dark Gem&r und füttere ihn an ein Tier. Das Tier stirbt, an der Stelle bleibt eine lila Anomalie. Wirf ein &6Buch&r hinein, und heraus kommt &6Origins of Darkness&r.",
               "",
-              "Das Buch erklärt jedes Rezept und jede Maschine der Mod und ist mit JEI verknüpft. Es liegt auch manchmal in Verlieskisten.",
+              "Das Buch erklärt jedes Rezept und jede Maschine der Mod und ist mit EMI verknüpft. Es liegt auch manchmal in Verlieskisten.",
           ],
           tasks=[task_item("evilcraft:origins_of_darkness", 1)],
           rewards=[reward_item("minecraft:apple", 8), reward_xp(3)],

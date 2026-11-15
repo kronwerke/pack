@@ -102,7 +102,7 @@ quests = [
           description=[
               "&e4 Lebestein&r, &e2 Goldbarren&r, &e2 Braustände&r und &e1 Manaperle&r. Unter einem Manabecken lässt er das Becken Dinge umwandeln statt infundieren.",
               "",
-              "JEI zeigt alle Rezepte unter dem Katalysator. Eine Funktionsblume ins Becken mit Katalysator geworfen wird für etwas Mana kleiner: gleiche Wirkung, kleinerer Bereich.",
+              "EMI zeigt alle Rezepte unter dem Katalysator. Eine Funktionsblume ins Becken mit Katalysator geworfen wird für etwas Mana kleiner: gleiche Wirkung, kleinerer Bereich.",
               "",
               "In Stufe 3 wird er zum Zauberkatalysator, siehe &aBotania: Alfheim&r.",
           ],
@@ -170,7 +170,7 @@ quests = [
           description=[
               "&e4 Manastahlbarren&r um einen Block &eGlas&r. Rechtsklick setzt sie in einen Verbreiter. Allein färbt sie nur den Stoß, sie ist die Basis aller Speziallinsen.",
               "",
-              "&eGeschwindigkeit&r, &eStärke&r (doppeltes Mana pro Stoß), &eWiderstand&r und &eEffizienz&r (weniger Verlust), &eBote&r und viele mehr. Zwei Linsen verbindet ein Schleimball. Alle Rezepte in JEI.",
+              "&eGeschwindigkeit&r, &eStärke&r (doppeltes Mana pro Stoß), &eWiderstand&r und &eEffizienz&r (weniger Verlust), &eBote&r und viele mehr. Zwei Linsen verbindet ein Schleimball. Alle Rezepte in EMI.",
           ],
           tasks=[task_item("botania:mana_lens", 1)],
           rewards=[reward_item("minecraft:glass", 16)],

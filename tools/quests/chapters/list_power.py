@@ -352,7 +352,7 @@ quests = [
     check("powah_passive", X[1], Y3, "&bLeg Solarmodule und Thermogeneratoren",
           "Powah, 20 bis 800 FE/t ohne Brennstoff.",
           [
-              "Das &6Solar Panel&r braucht freien Himmel, der &6Thermo Generator&r steht auf Lava oder Magma und bekommt Wasser als Kühlmittel in den Tank. JEI zeigt unter Heat Sources, was als Wärmequelle zählt.",
+              "Das &6Solar Panel&r braucht freien Himmel, der &6Thermo Generator&r steht auf Lava oder Magma und bekommt Wasser als Kühlmittel in den Tank. EMI zeigt unter Heat Sources, was als Wärmequelle zählt.",
               "",
               "&ePowah, Solar Panel und Thermo Generator:&r beide Starter &d20 FE/t&r, Basic 60, Hardened 100, Blazing 200, Niotic 400, Spirited 800. Das Solarmodul nur bei Tag, der Thermogenerator rund um die Uhr. Mit einer &6Lens of Ender&r sieht das Solarmodul durch Blöcke über sich. Offen ab Stufe 3.",
           ],
@@ -495,7 +495,7 @@ quests = [
           [
               "&eRezept:&r Stein in die Ecken, Redstone oben und unten in der Mitte, Papier, Verstärker, Papier in der mittleren Reihe: das &6Generator-Augment&r. Rechtsklick damit auf einen Ofen von Iron Furnaces.",
               "",
-              "&eIron Furnaces, Generator-Augment:&r Statt zu schmelzen verbrennt der Ofen Brennstoff zu Strom, was er nimmt, zeigt JEI unter &eAugment: Generator&r. Eisen- und Kupferofen &d40 FE/t&r, Silber 100, Gold 160, Diamant 240, Smaragd 320, Kristall 360, Obsidian 500, Netherit &d1 000 FE/t&r. Offen ab Stufe 3.",
+              "&eIron Furnaces, Generator-Augment:&r Statt zu schmelzen verbrennt der Ofen Brennstoff zu Strom, was er nimmt, zeigt EMI unter &eAugment: Generator&r. Eisen- und Kupferofen &d40 FE/t&r, Silber 100, Gold 160, Diamant 240, Smaragd 320, Kristall 360, Obsidian 500, Netherit &d1 000 FE/t&r. Offen ab Stufe 3.",
           ],
           "ironfurnaces:iron_furnace", ["s3_choice"]),
 
@@ -529,7 +529,7 @@ quests = [
     check("mycelial", X[3], Y3 + 3.5, "&aVerfeuere alles in Myzel-Generatoren",
           "Industrial Foregoing: sechzehn Generatoren, jeder frisst etwas anderes.",
           [
-              "Die &6Myzel-Generatoren&r baust du an der Werkbank, den Reaktor im Auflösungsapparat. Jeder Generator verbrennt eine eigene Sorte: der Ofen-Generator Brennstoff, der Kulinarische Essen, der Trank-Generator Tränke, der Netherstern-Generator Nethersterne. JEI zeigt unter jedem, was er nimmt.",
+              "Die &6Myzel-Generatoren&r baust du an der Werkbank, den Reaktor im Auflösungsapparat. Jeder Generator verbrennt eine eigene Sorte: der Ofen-Generator Brennstoff, der Kulinarische Essen, der Trank-Generator Tränke, der Netherstern-Generator Nethersterne. EMI zeigt unter jedem, was er nimmt.",
               "",
               "&eIndustrial Foregoing, Myzel-Reaktor:&r Er erzeugt sehr viel Strom, aber nur, solange von &ejeder&r Sorte Myzel-Generator einer gleichzeitig läuft. Ein Langzeitprojekt. Offen ab Stufe 3, siehe Kapitel &aIndustrial Foregoing&r.",
           ],

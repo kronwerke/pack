@@ -4,7 +4,7 @@ percent hold), the Nature's Aura steps behind both stage 1 milestones (brilliant
 ritual of the forest, token of joy, natural altar, infused iron), the five stages and locked items,
 the server, and a hub that points to every stage 1 chapter. Rules from docs/STAGES.md and
 config/kronwerke/goals.json, lock texts from the Kronwerke Core 0.6.0 lang file, Nature's Aura
-recipes and the altar multiblock from its jar. Questbook, JEI, map, team and death basics live in
+recipes and the altar multiblock from its jar. Questbook, EMI, map, team and death basics live in
 tips.py, automated farms in farms.py."""
 from ftbq import (chapter, quest, task_item, task_checkmark, task_advancement, reward_item, reward_table, reward_xp,
                   banner, img, item_texture)
@@ -23,7 +23,7 @@ quests = [
               "",
               "&6Kronwerke Season 2&r: rund fünfzig Leute, eine Welt, fünf &6Stufen&r. Jede Stufe öffnet sich für alle, sobald der Server am &6Obelisken&r am Spawn ein gemeinsames Ziel gefüllt hat.",
               "",
-              "Fertige Quests klickst du an und holst dir die Belohnung. Wie das Buch, JEI und die Karte funktionieren, steht im Kapitel &6Tipps und Tricks&r.",
+              "Fertige Quests klickst du an und holst dir die Belohnung. Wie das Buch, EMI und die Karte funktionieren, steht im Kapitel &6Tipps und Tricks&r.",
           ],
           tasks=[task_checkmark("Los geht's")],
           rewards=[reward_item("minecraft:bread", 16), reward_table("s1_common")],
@@ -440,7 +440,7 @@ quests = [
           description=[
               "Ein Gegenstand einer späteren Stufe heißt im Tooltip &7???&r, darunter &cÖffnet in Stufe 2 (Messingwerk).&r und &8Einstecken geht, benutzen noch nicht.&r Aufheben und lagern darfst du ihn, halten, anziehen, platzieren und herstellen nicht.",
               "",
-              "In JEI siehst du nur die &enächste&r Stufe, verhüllt, aber mit Rezept. Spätere Stufen bleiben ganz unsichtbar. Zink für Messing kannst du also schon jetzt einlagern.",
+              "In EMI siehst du nur die &enächste&r Stufe, verhüllt, aber mit Rezept. Spätere Stufen bleiben ganz unsichtbar. Zink für Messing kannst du also schon jetzt einlagern.",
               "",
               "Mehr dazu im Kapitel &6Tipps und Tricks&r.",
           ],
@@ -522,7 +522,7 @@ quests = [
           deps=["v_discord"], icon="minecraft:player_head"),
 
     quest("v_tips", 9.5, 16, "&6Lies Tipps und Tricks",
-          subtitle="Questbuch, JEI, Karte, Team, Sprachchat, Tod.",
+          subtitle="Questbuch, EMI, Karte, Team, Sprachchat, Tod.",
           description=[
               "Öffne links im Buch das Kapitel &6Tipps und Tricks&r. Dort steht, wie du Belohnungen einsammelst, Rezepte findest, ein Team gründest, den Sprachchat einrichtest und deine Sachen nach dem Tod zurückholst.",
               "",

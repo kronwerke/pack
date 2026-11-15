@@ -310,7 +310,7 @@ quests = [
     quest("essence_crafting", 22.5, 1, "&6Verarbeite Essenz zu Blöcken",
           subtitle="Was man aus den Samen der Stufe 1 bauen kann.",
           description=[
-              "Jede Essenz hat ihre Rezepte an der Werkbank, der Guide und JEI zeigen sie alle. Die wichtigsten für Stufe 1:",
+              "Jede Essenz hat ihre Rezepte an der Werkbank, der Guide und EMI zeigen sie alle. Die wichtigsten für Stufe 1:",
               "",
               img("mysticalagriculture:textures/item/essence/stone_essence.png", 32, 32),
               "",

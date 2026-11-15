@@ -432,7 +432,7 @@ quests = [
               "",
               "Nebenzutaten auf Podeste im Umkreis von &e3 Blöcken&r, dann mit der Hauptzutat auf den Apparat klicken. Quelle zieht er aus Gläsern in der Nähe.",
               "",
-              "Er verzaubert auch Werkzeuge und Rüstung direkt, bis hin zu Mana-Boost und Mana-Regeneration. JEI zeigt alle Rezepte.",
+              "Er verzaubert auch Werkzeuge und Rüstung direkt, bis hin zu Mana-Boost und Mana-Regeneration. EMI zeigt alle Rezepte.",
           ],
           tasks=[task_item("ars_nouveau:enchanting_apparatus", 1)],
           rewards=[reward_table("s1_uncommon"), reward_xp(8)],

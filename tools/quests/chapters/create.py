@@ -37,7 +37,7 @@ quests = [
     quest("welcome", A, 2.5, "&6&lFang mit Create an",
           subtitle="Drehbewegung statt Strom: so läuft hier jede Maschine.",
           description=[
-              "Halte über einem Create-Block im Inventar oder in JEI die Taste &e{key:key.ponder.ponder}&r gedrückt. Dann öffnet sich die &6Ponder&r-Ansicht, eine kleine animierte Anleitung zu genau diesem Block.",
+              "Halte über einem Create-Block im Inventar oder in EMI die Taste &e{key:key.ponder.ponder}&r gedrückt. Dann öffnet sich die &6Ponder&r-Ansicht, eine kleine animierte Anleitung zu genau diesem Block.",
               "",
               "Create erzeugt keinen Strom, sondern &dRotation&r. Wasserräder und Windmühlen drehen Wellen und Zahnräder, die treiben Maschinen an, die mahlen, pressen, mischen und ganze Bauwerke bewegen.",
               "",
@@ -282,7 +282,7 @@ quests = [
           description=[
               "&6Zahnrad&r, &6Andesitgehäuse&r und &6Stein&r ergeben den &6Mahlstein&r. Treib ihn von der Seite oder von oben an und wirf Items oben hinein.",
               "",
-              "&6Weizen&r wird zu &6Weizenmehl&r, &6Bruchstein&r zu &6Kies&r, Kies zu &6Feuerstein&r, Andesit zu Bruchstein, Blumen zu doppelt so viel Farbstoff. Alles Weitere zeigt JEI.",
+              "&6Weizen&r wird zu &6Weizenmehl&r, &6Bruchstein&r zu &6Kies&r, Kies zu &6Feuerstein&r, Andesit zu Bruchstein, Blumen zu doppelt so viel Farbstoff. Alles Weitere zeigt EMI.",
               "",
               "Rechtsklick holt das Ergebnis heraus, eine Andesitschleuse an der Seite zieht es ab. Erze zerkleinern erst die Mahlwerkräder aus Stufe 2.",
           ],
@@ -350,7 +350,7 @@ quests = [
               "",
               "Ohne Hitze kann er: zwei Legierungen aus Andesit und Klumpen, &6Teig&r aus Mehl und Wasser, &6Zellstoff&r für Karton, &6Schlamm&r und viele formlose Rezepte.",
               "",
-              "Rezepte mit &cErhitzt&r oder &cÜberhitzt&r in JEI brauchen einen &6Lohenbrenner&r unter dem Becken. Der kommt in Stufe 2, mit ihm auch Messing.",
+              "Rezepte mit &cErhitzt&r oder &cÜberhitzt&r in EMI brauchen einen &6Lohenbrenner&r unter dem Becken. Der kommt in Stufe 2, mit ihm auch Messing.",
           ],
           tasks=[task_item("create:mechanical_mixer", 1)],
           rewards=[reward_table("s1_uncommon"), reward_xp(5)],
@@ -630,7 +630,7 @@ quests = [
     quest("spout", B + 7.5, 3.5, "&6Füll mit dem Ausguss",
           subtitle="Flüssigkeit in Items hinein und heraus.",
           description=[
-              "&6Kupferrahmen&r über &6getrocknetem Seetang&r ergibt den &6Ausguss&r. Über einem Depot oder Band befüllt er Eimer, Flaschen und alle &eBefüllen&r-Rezepte aus JEI.",
+              "&6Kupferrahmen&r über &6getrocknetem Seetang&r ergibt den &6Ausguss&r. Über einem Depot oder Band befüllt er Eimer, Flaschen und alle &eBefüllen&r-Rezepte aus EMI.",
               "",
               "Der &6Abfluss&r (Eisengitter über Kupferrahmen) leert Items, die darauf landen, ins Rohr. Andere Items lässt er durch wie ein Stück Band.",
           ],

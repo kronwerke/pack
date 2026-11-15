@@ -555,7 +555,7 @@ quests = [
     quest("tools", 25.5, 11, "&eBau Handbohrer und Kettensäge",
           subtitle="Unzerstörbar, solange Strom drin ist.",
           description=[
-              "Beide aus drei &6Enderic Compound&r, einem &6Adamant Barren&r, einem &6Motor&r und zwei &6Stahl&r, nur anders gelegt. JEI zeigt die Form.",
+              "Beide aus drei &6Enderic Compound&r, einem &6Adamant Barren&r, einem &6Motor&r und zwei &6Stahl&r, nur anders gelegt. EMI zeigt die Form.",
               "",
               "Der &6Handbohrer&r ist Spitzhacke und Schaufel zugleich, die &6Kettensäge&r Axt und Schwert. Mit &eShift&r fällt die Säge einen ganzen Baum auf einmal. Beide fassen &e10 000 RF&r und gehen nie kaputt, ohne Strom arbeiten sie nur sehr langsam.",
               "",

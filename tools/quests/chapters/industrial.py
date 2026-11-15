@@ -299,7 +299,7 @@ quests = [
           description=[
               "Kunststoff, &6Diamantspitzhacke&r, Kunststoff oben, &6Eisenerz&r links und rechts vom &6Fortschrittlichen Gehäuse&r, &6Diamantzahnräder&r und Redstone unten.",
               "",
-              "Voll geladen von den Laserbohrern erzeugt sie ein Erz. Jedes Erz hat ein Gewicht je nach Biom und eingestellter Tiefe: Rohes Eisen zwischen Y 5 und 68 Gewicht 20, sonst 3. JEI zeigt alle Werte.",
+              "Voll geladen von den Laserbohrern erzeugt sie ein Erz. Jedes Erz hat ein Gewicht je nach Biom und eingestellter Tiefe: Rohes Eisen zwischen Y 5 und 68 Gewicht 20, sonst 3. EMI zeigt alle Werte.",
               "",
               "&eKronwerke:&r Ein Laser auf Eisen ist die bequemste Eisenquelle des Packs. Hinter einer Erzverdreifachung wird daraus Stahl für das Ziel &6Der Ofen schläft nie&r.",
           ],
@@ -312,7 +312,7 @@ quests = [
           description=[
               "Im Auflösungsapparat: vier &6Glasscheiben&r, ein &6Farbstoff&r und &e250 mB Latex&r ergeben eine &6Laserlinse&r in der Farbe des Farbstoffs.",
               "",
-              "In der Basis hebt sie das Gewicht ihres Erzes stark an und wird nicht verbraucht. &6Braun&r Eisen, &6Orange&r Kupfer, &6Gelb&r Gold, &6Hellgrau&r Osmium, &6Schwarz&r Kohle, &6Hellgrün&r Uran. Die übrigen zeigt JEI.",
+              "In der Basis hebt sie das Gewicht ihres Erzes stark an und wird nicht verbraucht. &6Braun&r Eisen, &6Orange&r Kupfer, &6Gelb&r Gold, &6Hellgrau&r Osmium, &6Schwarz&r Kohle, &6Hellgrün&r Uran. Die übrigen zeigt EMI.",
           ],
           tasks=[task_item("industrialforegoing:brown_laser_lens", 1)],
           rewards=[reward_item("minecraft:raw_iron", 32), reward_xp(10)],
@@ -530,7 +530,7 @@ quests = [
               "",
               "Der Reaktor spürt über das Myzelnetz deine anderen Myzel-Generatoren auf. Er erzeugt riesige Mengen Strom, aber nur, solange von &ejeder Sorte&r einer gleichzeitig läuft.",
               "",
-              "Das ist ein Langzeitprojekt: JEI zeigt unter jedem Generator, was er verbrennt, vom Schneeball bis zum Netherstern.",
+              "Das ist ein Langzeitprojekt: EMI zeigt unter jedem Generator, was er verbrennt, vom Schneeball bis zum Netherstern.",
           ],
           tasks=[task_item("industrialforegoing:mycelial_reactor", 1)],
           rewards=[reward_table("s3_rare"), reward_xp(30)],

@@ -171,7 +171,7 @@ quests = [
           description=[
               "&6Item Collectors&r, &6Basic Item Collector&r: sammelt alle Gegenstände im eingestellten Bereich bis &e5 Blöcke&r um sich herum in das Inventar, auf dem er sitzt. Kein Filter. &eStufe 1.&r",
               "",
-              "Rezept in JEI, Bereich im Fenster einstellen. Ein Collector auf einer Truhe unter dem Mob-Fall ersetzt alle Wasserströme.",
+              "Rezept in EMI, Bereich im Fenster einstellen. Ein Collector auf einer Truhe unter dem Mob-Fall ersetzt alle Wasserströme.",
               "",
               "&eStufe 2:&r Der &6Advanced Item Collector&r reicht &e7 Blöcke&r und hat einen Filter mit Whitelist und Blacklist.",
           ],
@@ -184,7 +184,7 @@ quests = [
           description=[
               "&6Simple Magnets&r, &6Magnet&r: zieht Gegenstände und Erfahrung bis &e5 Blöcke&r weit zu dir, solange er an ist. Der &6Fortgeschrittene Magnet&r reicht &e3 bis 11 Blöcke&r, einstellbar, mit Filter. Beide &eStufe 1.&r",
               "",
-              "Rezepte in JEI. Mit der Taste im Tastenmenü schaltest du ihn an und aus. Eine &6Entmagnetisierungsspule&r hält einen Bereich frei, zum Beispiel über dem Werfer deines Handelsplatzes.",
+              "Rezepte in EMI. Mit der Taste im Tastenmenü schaltest du ihn an und aus. Eine &6Entmagnetisierungsspule&r hält einen Bereich frei, zum Beispiel über dem Werfer deines Handelsplatzes.",
               "",
               "Dasselbe steckt im &6Magnet-Upgrade&r des Rucksacks, siehe Kapitel Lager.",
           ],
@@ -197,7 +197,7 @@ quests = [
           description=[
               "&6Pylons&r, &6Harvester Pylon&r: erntet und pflanzt im eingestellten Bereich alle &e3 Sekunden&r eine Pflanze neu und legt die Ernte in das Inventar direkt über sich. Braucht eine &6Hacke&r im Pylon, keinen Strom, keinen Filter. &eStufe 2&r, Quarz und Schwarzstein kommen aus dem Nether.",
               "",
-              "Rezept in JEI. Den Arbeitsbereich stellst du im Fenster in Blöcken ein. Ohne Inventar darüber steht er still. In Stufe 1 übernimmt das der Trichter-Pflanztopf oder die Create-Erntemaschine.",
+              "Rezept in EMI. Den Arbeitsbereich stellst du im Fenster in Blöcken ein. Ohne Inventar darüber steht er still. In Stufe 1 übernimmt das der Trichter-Pflanztopf oder die Create-Erntemaschine.",
               "",
               "Die anderen drei Pylonen (Infusion, Interdiktion, Expulsion) haben mit Gegenständen nichts zu tun.",
           ],
@@ -258,7 +258,7 @@ quests = [
           description=[
               "&6Immersive Engineering&r, &6Förderband&r: bewegt Gegenstände und Tiere ganz ohne Antrieb und schiebt sie am Ende in ein Inventar. Varianten: &6Extrahierend&r (zieht wie ein Trichter), &6Senkrecht&r, &6Fallend&r, &6Teilend&r, &6Redstone-gesteuert&r und &6Abgedeckt&r. Kein Filter. &eStufe 2.&r",
               "",
-              "Rezepte in JEI, Richtung und Steigung mit dem Ingenieurshammer. Farbstoff färbt die Seitenwände. Siehe Kapitel Immersive Engineering.",
+              "Rezepte in EMI, Richtung und Steigung mit dem Ingenieurshammer. Farbstoff färbt die Seitenwände. Siehe Kapitel Immersive Engineering.",
           ],
           tasks=[task_checkmark("Gelesen")],
           rewards=[reward_xp(2)],
@@ -536,7 +536,7 @@ quests = [
           description=[
               "&6PneumaticCraft&r, &6Druckrohr&r: trägt Druckluft von Kompressoren zu Maschinen, sicher bis &e5 Bar&r, das &6Verstärkte Druckrohr&r bis 10 Bar, das &6Fortgeschrittene&r bis 20 Bar (Stufe 3). Darüber platzt es. Module auf dem Rohr: Regler, Sicherheitsventil, Logistik. &eStufe 2.&r",
               "",
-              "Rezepte in JEI. Mekanism-Gase passen nicht hinein, nur die Luft von PneumaticCraft. Eine &6Rohrkreuzung&r lässt zwei Stränge kreuzen, ohne sie zu verbinden.",
+              "Rezepte in EMI. Mekanism-Gase passen nicht hinein, nur die Luft von PneumaticCraft. Eine &6Rohrkreuzung&r lässt zwei Stränge kreuzen, ohne sie zu verbinden.",
           ],
           tasks=[task_checkmark("Gelesen")],
           rewards=[reward_xp(2)],

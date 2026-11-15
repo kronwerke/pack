@@ -371,7 +371,7 @@ quests = [
           description=[
               "&6Eisen&r in die Ecken, &6Redstone&r oben und unten, &6Gold&r links und rechts, ein &6Draconiumbarren&r in die Mitte.",
               "",
-              "Aus ihm werden die Module: AOE, Speed, Damage, Junk Filter, Night Vision, Undying und mehr. Die Rezepte zeigt JEI. Wyvern-Module passen in Wyvern-Ausrüstung.",
+              "Aus ihm werden die Module: AOE, Speed, Damage, Junk Filter, Night Vision, Undying und mehr. Die Rezepte zeigt EMI. Wyvern-Module passen in Wyvern-Ausrüstung.",
           ],
           tasks=[task_item("draconicevolution:module_core", 4)],
           rewards=[reward_item("draconicevolution:draconium_ingot", 4)],

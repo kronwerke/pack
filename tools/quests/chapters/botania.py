@@ -88,7 +88,7 @@ quests = [
           description=[
               "&e6 Bruchstein&r und &e1 Blütenblatt&r ergeben die &aBlütenapotheke&r. Füll sie mit &bWasser&r, wirf die Blütenblätter des Rezepts hinein (Taste &e{key:key.drop}&r) und zum Schluss einen &6Samen&r. Die Blume springt heraus.",
               "",
-              "Rechtsklick mit leerer Hand holt das zuletzt eingeworfene Teil zurück. Welche Blume welche Blätter braucht, zeigen Lexica und JEI.",
+              "Rechtsklick mit leerer Hand holt das zuletzt eingeworfene Teil zurück. Welche Blume welche Blätter braucht, zeigen Lexica und EMI.",
               "",
               "&eTipp:&r Bis zu 20 Sekunden nach einer fertigen Blume holt ein Rechtsklick mit leerer Hand (Wasser vorher nachfüllen) dieselben Zutaten aus deinem Inventar.",
               "",
@@ -361,7 +361,7 @@ quests = [
           description=[
               "Wirf farbloses &6Glas&r ins Becken. Jeder Block kostet &d150 Mana&r und kommt als &6Managlas&r zurück.",
               "",
-              "So geht jede Infusion: Gegenstand hinein, solange genug Mana da ist, wird Stück für Stück verwandelt. JEI zeigt unter dem Manabecken alle Rezepte mit Preis.",
+              "So geht jede Infusion: Gegenstand hinein, solange genug Mana da ist, wird Stück für Stück verwandelt. EMI zeigt unter dem Manabecken alle Rezepte mit Preis.",
               "",
               "Managlas brauchst du für Phiolen der Brauerei und als Tauschware für Alfheim in Stufe 3.",
           ],

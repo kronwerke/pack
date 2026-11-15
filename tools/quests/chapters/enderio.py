@@ -332,7 +332,7 @@ quests = [
           description=[
               "Ein &6Buch&r oben, &6Diamant&r, &6Lesepult&r, Diamant in der Mitte, drei &6Dunkelstahl&r unten.",
               "",
-              "Leg ein Buch, eine Zutat und Lapis hinein und zahl Erfahrungsstufen: heraus kommt ein Verzaubertes Buch. Redstone gibt Effizienz, Schleim Behutsamkeit, Smaragd Glück, Obsidian Haltbarkeit. Mehr Zutat heißt höhere Stufe, JEI zeigt die Mengen.",
+              "Leg ein Buch, eine Zutat und Lapis hinein und zahl Erfahrungsstufen: heraus kommt ein Verzaubertes Buch. Redstone gibt Effizienz, Schleim Behutsamkeit, Smaragd Glück, Obsidian Haltbarkeit. Mehr Zutat heißt höhere Stufe, EMI zeigt die Mengen.",
           ],
           tasks=[task_item("enderio:enchanter", 1)],
           rewards=[reward_item("minecraft:lapis_lazuli", 32), reward_xp(10)],
@@ -352,7 +352,7 @@ quests = [
     quest("farming", 15.5, 12, "&2Lies: Die Ackerbaustation",
           subtitle="Warum es sie hier nicht gibt.",
           description=[
-              "In JEI siehst du vielleicht die &6Ackerbaustation&r. Ender IO liefert sie in dieser Version nur als &cexperimentelles Datenpaket&r, das als unfertig markiert ist. Auf Kronwerke ist es nicht aktiv, die Station geht weder zu bauen noch aufzustellen.",
+              "In EMI siehst du vielleicht die &6Ackerbaustation&r. Ender IO liefert sie in dieser Version nur als &cexperimentelles Datenpaket&r, das als unfertig markiert ist. Auf Kronwerke ist es nicht aktiv, die Station geht weder zu bauen noch aufzustellen.",
               "",
               "Felder automatisierst du mit &6Industrial Foregoing&r oder dem Zerstörer mit Ernte-Filter von &6Oritech&r.",
           ],

@@ -425,7 +425,7 @@ quests = [
               "",
               pic("silentgear:azure_electrum_ingot"),
               "",
-              "Azur-Elektrum ist ein weiteres Metall für Werkzeugköpfe und Rüstung. Was es kann, zeigt dir JEI am Barren, die Teile baust du wie immer (Kapitel &6Silent Gear&r).",
+              "Azur-Elektrum ist ein weiteres Metall für Werkzeugköpfe und Rüstung. Was es kann, zeigt dir EMI am Barren, die Teile baust du wie immer (Kapitel &6Silent Gear&r).",
           ],
           tasks=[task_item("silentgear:azure_electrum_ingot", 3)],
           rewards=[reward_item("minecraft:gold_ingot", 8), reward_xp(10)],

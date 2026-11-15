@@ -95,7 +95,7 @@ quests = [
           description=[
               "Pulverisierter Obsidian aufs Depot oder Band unter einen &6Ausguss&r. Er gießt &b500 mB Lava&r darauf, heraus kommt ein &6Unverarbeitetes Obsidianblatt&r.",
               "",
-              "Das ist der erste Schritt einer sequenziellen Montage. JEI zeigt die ganze Folge unter dem Robusten Blech.",
+              "Das ist der erste Schritt einer sequenziellen Montage. EMI zeigt die ganze Folge unter dem Robusten Blech.",
           ],
           tasks=[task_item("create:unprocessed_obsidian_sheet", 1)],
           rewards=[reward_item("minecraft:lava_bucket", 1), reward_xp(3)],

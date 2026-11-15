@@ -41,7 +41,7 @@ quests = [
               "",
               "Upgrades stecken links neben dem Rucksackinventar. Der Lederrucksack hat nur einen Platz, du tauschst sie also je nach Tag: Bergbau, Bauen, Farmen.",
               "",
-              "&6Tipp:&r Sophisticated Storage hat eine eigene Upgrade-Basis für Truhen. Achte in JEI darauf, welche Mod im Rezept steht.",
+              "&6Tipp:&r Sophisticated Storage hat eine eigene Upgrade-Basis für Truhen. Achte in EMI darauf, welche Mod im Rezept steht.",
           ],
           tasks=[task_item("sophisticatedbackpacks:upgrade_base", 2)],
           rewards=[reward_item("minecraft:string", 16), reward_item("minecraft:iron_ingot", 4)],
@@ -113,7 +113,7 @@ quests = [
           description=[
               "Eine &6Werkbank&r oben, &6zwei Eisenbarren&r neben der Upgrade-Basis, eine &6Truhe&r unten.",
               "",
-              "Ein 3x3-Raster in einem eigenen Tab, das direkt auf den Rucksackinhalt zugreift. JEI-Rezepte legst du mit dem Plus hinein.",
+              "Ein 3x3-Raster in einem eigenen Tab, das direkt auf den Rucksackinhalt zugreift. EMI-Rezepte legst du mit dem Plus hinein.",
           ],
           tasks=[task_item("sophisticatedbackpacks:crafting_upgrade", 1)],
           rewards=[reward_xp(3)],
@@ -450,7 +450,7 @@ quests = [
           description=[
               "&6Fünf Bretter&r und &6vier Eisenbarren&r im Schachbrettmuster.",
               "",
-              "Truhen und Fässer nehmen fast dieselben Upgrades wie der Rucksack. Ein fertiges Upgrade lässt sich zwischen Rucksack und Lager umbauen, JEI zeigt die Rezepte.",
+              "Truhen und Fässer nehmen fast dieselben Upgrades wie der Rucksack. Ein fertiges Upgrade lässt sich zwischen Rucksack und Lager umbauen, EMI zeigt die Rezepte.",
           ],
           tasks=[task_item("sophisticatedstorage:upgrade_base", 2)],
           rewards=[reward_item("minecraft:iron_ingot", 8)],
@@ -516,7 +516,7 @@ quests = [
     quest("limited_barrel", 6.5, 16.5, "Bau ein Eingeschränktes Fass",
           subtitle="Schublade oder Fass? Beides.",
           description=[
-              "Bretter, Holzstufen und ein Hebel, je nach Variante in anderem Muster, JEI zeigt alle vier.",
+              "Bretter, Holzstufen und ein Hebel, je nach Variante in anderem Muster, EMI zeigt alle vier.",
               "",
               "&6I&r: ein Fach mit &e32 Stapeln&r. &6II&r: zwei mit je 16. &6III&r: drei mit je 10. &6IV&r: vier mit je 8. Anders als Functional Storage lassen sie sich auf Kupfer und Eisen aufwerten und nehmen Sophisticated-Upgrades.",
           ],

@@ -141,7 +141,7 @@ quests = [
           description=[
               "Ein &6Warpstein&r in der Mitte, &63 Steinziegel&r darüber und daneben, &63 Obsidian&r als Sockel ergeben einen &6Wegstein&r.",
               "",
-              "Gib ihm einen Namen, den andere wiedererkennen. Es gibt ihn auch bemoost, aus Sandstein, Tiefenschiefer und mehr, JEI zeigt alle Varianten.",
+              "Gib ihm einen Namen, den andere wiedererkennen. Es gibt ihn auch bemoost, aus Sandstein, Tiefenschiefer und mehr, EMI zeigt alle Varianten.",
           ],
           tasks=[task_item("waystones:waystone", 1)],
           rewards=[reward_item("minecraft:ender_pearl", 2), reward_xp(3)],

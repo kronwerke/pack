@@ -16,7 +16,7 @@ quests = [
     quest("welcome", 0, 0, "&d&lBau vier Feuerschalen",
           subtitle="Jedes Gerät steht auf einer.",
           description=[
-              "&6Pyromantic Brazier&r: fünf &6Kupferbarren&r und vier &6Stein&r, siehe JEI. Gefüttert wird sie mit normalem Ofenbrennstoff.",
+              "&6Pyromantic Brazier&r: fünf &6Kupferbarren&r und vier &6Stein&r, siehe EMI. Gefüttert wird sie mit normalem Ofenbrennstoff.",
               "",
               "&dTheurgy&r trennt Dinge in drei Prinzipien: &6Salt&r (Körper), &6Sulfur&r (Seele) und &6Mercury&r (Energie). Dann setzt du sie wieder zusammen, aus einem Raw Iron werden so drei Barren.",
               "",
@@ -120,7 +120,7 @@ quests = [
           description=[
               "&6Iron Sulfur&r, &6Mineral Salt&r und &6Mercury Shards&r in die Gefäße, heizen. Ein Sulfur, ein Salz und ein Shard geben einen Eisenbarren.",
               "",
-              "Das geht mit fast jedem Erz im Pack: Kupfer, Gold, Osmium, Zinn, Blei, Zink und mehr. JEI zeigt beim Liquefaction Cauldron, welche.",
+              "Das geht mit fast jedem Erz im Pack: Kupfer, Gold, Osmium, Zinn, Blei, Zink und mehr. EMI zeigt beim Liquefaction Cauldron, welche.",
               "",
               "&eKronwerke:&r Mit Absicht so stark wie Mekanisms Verdreifachung, nur mit Feuer statt Strom. Das Stufenziel will &e4 000 Stahl&r, und jeder Stahlbarren beginnt als Eisen.",
           ],
@@ -176,7 +176,7 @@ quests = [
     quest("caloric", 7.5, 5, "&cHeiz ohne Kohle",
           subtitle="Caloric Flux Emitter.",
           description=[
-              "&6Caloric Flux Emitter&r: ein &6Lagerfeuer&r (oder Lavaeimer), zwei Goldbarren, ein Mercury, drei Stein, siehe JEI.",
+              "&6Caloric Flux Emitter&r: ein &6Lagerfeuer&r (oder Lavaeimer), zwei Goldbarren, ein Mercury, drei Stein, siehe EMI.",
               "",
               "Klick mit dem Emitter das Gerät an, bis es leuchtet, und setz ihn auf einen Mercury Catalyst. Er heizt bis &e8 Blöcke&r weit, solange Flux da ist.",
           ],
@@ -187,7 +187,7 @@ quests = [
     quest("divination", 2.5, 7.2, "&7Bau eine Glas-Wünschelrute",
           subtitle="Findet häufige Erze.",
           description=[
-              "Zwei &6Glas&r und drei &6Stöcke&r diagonal, siehe JEI.",
+              "Zwei &6Glas&r und drei &6Stöcke&r diagonal, siehe EMI.",
               "",
               "Schleichend auf einen Block klicken stimmt sie ein. Rechtsklick halten sucht, ein kurzer Rechtsklick zeigt den letzten Fund ohne Haltbarkeit. Findet Eisen und Kohle.",
           ],
@@ -259,7 +259,7 @@ quests = [
           description=[
               "&6Source Pedestal&r: hier liegt das Sulfur, das verbraucht wird. &6Target Pedestal&r: das Sulfur, von dem du mehr willst, es bleibt. &6Result Pedestal&r: hier landet das Ergebnis.",
               "",
-              "Kein fester Aufbau, alles nur wenige Blöcke auseinander. Rezepte in JEI.",
+              "Kein fester Aufbau, alles nur wenige Blöcke auseinander. Rezepte in EMI.",
           ],
           tasks=[task_item("theurgy:reformation_source_pedestal", 2), task_item("theurgy:reformation_target_pedestal", 1),
                  task_item("theurgy:reformation_result_pedestal", 1)],
@@ -269,7 +269,7 @@ quests = [
     quest("flux_emitter", 2.5, 11.5, "&6Verbinde den Sulfuric Flux Emitter",
           subtitle="Er steuert die Reformation.",
           description=[
-              "Sal Ammoniac Crystal, Gold, ein Sulfur und Stein, siehe JEI. Klick jedes Pedestal mit ihm an und setz ihn dann auf einen Mercury Catalyst.",
+              "Sal Ammoniac Crystal, Gold, ein Sulfur und Stein, siehe EMI. Klick jedes Pedestal mit ihm an und setz ihn dann auf einen Mercury Catalyst.",
               "",
               "Ein Rechtsklick auf den gesetzten Emitter zeigt, ob alles verbunden ist.",
           ],
@@ -282,7 +282,7 @@ quests = [
           description=[
               "&6Lapis Sulfur&r auf ein Source Pedestal, ein &6Quartz Sulfur&r aufs Target Pedestal. Der Emitter wandelt eins zu eins, das Ziel-Sulfur bleibt liegen.",
               "",
-              "So wird Lapis auch zu &6Certus Quartz&r für AE2. JEI zeigt beim Ziel-Sulfur alle Quellen.",
+              "So wird Lapis auch zu &6Certus Quartz&r für AE2. EMI zeigt beim Ziel-Sulfur alle Quellen.",
           ],
           tasks=[task_item("theurgy:alchemical_sulfur_quartz", 4)],
           rewards=[reward_item("minecraft:lapis_lazuli", 16), reward_xp(6)],
@@ -315,7 +315,7 @@ quests = [
           description=[
               "&6Common Gems Niter&r als Quelle, ein &6Common Metals Niter&r als Ziel. Das Ergebnis reformierst du mit einem Iron Sulfur auf dem Target zu Iron Sulfur.",
               "",
-              "Zwei Metalle sind einen Edelstein wert, zwei sonstige Minerale ein Metall. JEI zeigt, wie viele Quellen nötig sind.",
+              "Zwei Metalle sind einen Edelstein wert, zwei sonstige Minerale ein Metall. EMI zeigt, wie viele Quellen nötig sind.",
           ],
           tasks=[task_item("theurgy:alchemical_niter_metals_common", 4)],
           rewards=[reward_item("theurgy:alchemical_sulfur_iron", 8), reward_xp(7)],

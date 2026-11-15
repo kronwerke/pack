@@ -206,7 +206,7 @@ quests = [
               "",
               "Leg ein &6Ei&r und einen Honey Treat mit dem &eTyp-Gen&r einer Biene hinein. Nach &e3 Minuten&r hältst du ein &6Spawn-Ei&r genau dieser Biene. Nur das Typ-Gen zählt, andere Gene auf dem Treat gehen verloren.",
               "",
-              "Das ist die Brücke zu den anderen Mods: Ein Ei der Eisenbiene wird im &aManabecken&r mit 10 000 Mana zum Ei der &6Manastahlbiene&r, auf dem &aNatural Altar&r mit 15 000 Aura zum Ei der &6Infused-Iron-Biene&r, in der &6Gießerei&r mit flüssigem Stahl zum Ei der &6Stahlbiene&r. Was es alles gibt, zeigt JEI beim Spawn-Ei.",
+              "Das ist die Brücke zu den anderen Mods: Ein Ei der Eisenbiene wird im &aManabecken&r mit 10 000 Mana zum Ei der &6Manastahlbiene&r, auf dem &aNatural Altar&r mit 15 000 Aura zum Ei der &6Infused-Iron-Biene&r, in der &6Gießerei&r mit flüssigem Stahl zum Ei der &6Stahlbiene&r. Was es alles gibt, zeigt EMI beim Spawn-Ei.",
               "",
               "&eNebenbei:&r Ein Bienenkind im Käfig wächst im Inkubator mit 20 Honey Treats in 3 Minuten aus.",
           ],
@@ -220,7 +220,7 @@ quests = [
           description=[
               "Fang eine &6Yellow Carpenter Bee&r und eine &6Green Carpenter Bee&r aus Holznestern, lass sie zusammen frei und gib beiden eine &6Blume&r. Das Kind ist eine &6Lumber Bee&r, die Stämme in der Nähe anknabbert und Holz im Stock ablegt.",
               "",
-              "So geht jede Zucht: Zwei Bienen verschiedener Art, beide gefüttert, und das Kind ist das, was JEI unter &eBee Breeding&r für dieses Paar zeigt. Kinder wachsen von selbst, mit Honey Treats schneller.",
+              "So geht jede Zucht: Zwei Bienen verschiedener Art, beide gefüttert, und das Kind ist das, was EMI unter &eBee Breeding&r für dieses Paar zeigt. Kinder wachsen von selbst, mit Honey Treats schneller.",
               "",
               "&eWeitere Berufe:&r &6Quarry Bee&r (Chocolate Mining und Digger Bee) sammelt Steinsplitter, &6Rancher Bee&r (Lumber und Sweat Bee) melkt und schert, &6Farmer Bee&r (Lumber und Rancher) erntet Felder, &6CuBee&r (Farmer und Rancher) bringt Tiere in Stimmung. Eine normale Biene mit einem &6Trichter&r gefüttert wird zur &6Collector Bee&r, die Gegenstände vom Boden in den Stock trägt.",
               "",

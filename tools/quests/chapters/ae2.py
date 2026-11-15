@@ -321,7 +321,7 @@ quests = [
     quest("first_pattern", 2.5, 17, "&aSchreib eine Fertigungsschablone",
           subtitle="Ein Werkbankrezept auf Papier.",
           description=[
-              "In der Schablonenkonsole Modus &eFertigung&r wählen, das Rezept ins Raster legen (aus JEI mit dem Plus), leere Schablone einlegen, Pfeil drücken. Heraus kommt eine &6Fertigungsschablone&r.",
+              "In der Schablonenkonsole Modus &eFertigung&r wählen, das Rezept ins Raster legen (aus EMI mit dem Plus), leere Schablone einlegen, Pfeil drücken. Heraus kommt eine &6Fertigungsschablone&r.",
               "",
               "Fang mit etwas Einfachem an, zum Beispiel Holz zu Brettern. Eine Schablone darf auch 8 Bruchstein zu 8 Stein sagen, dann arbeitet die Maschine in größeren Schritten.",
           ],
@@ -573,7 +573,7 @@ quests = [
           description=[
               "&6Speicherzellenwerkbank:&r Wolle, Kalkulationsprozessor, Wolle oben, Eisen, Truhe, Eisen in der Mitte, drei Eisen unten.",
               "",
-              "Leg eine Zelle hinein und zieh die Gegenstände, die sie nehmen soll, aus JEI in die Filterplätze. Danach landet nur noch das darin. Ein Knopf übernimmt den aktuellen Inhalt als Filter.",
+              "Leg eine Zelle hinein und zieh die Gegenstände, die sie nehmen soll, aus EMI in die Filterplätze. Danach landet nur noch das darin. Ein Knopf übernimmt den aktuellen Inhalt als Filter.",
               "",
               "Karten kommen auch hier in die Zelle: die &6Gleichmäßige-Verteilungskarte&r teilt den Platz auf alle Typen auf, die &6Overflow Zerstörungskarte&r löscht, was nicht mehr passt. Die nur mit Filter benutzen.",
           ],

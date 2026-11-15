@@ -140,7 +140,7 @@ quests = [
     quest("actuator", 10, 6, "&7Bau einen Aktuator",
           subtitle="Für Pressurizer, Assembler und Hastener.",
           description=[
-              "Oben rechts &6Stahl&r, in der Mitte &6Ferroboron&r und ein &6Kolben&r, unten &6Kupfer&r und &6Ferroboron&r. Die genaue Lage zeigt JEI.",
+              "Oben rechts &6Stahl&r, in der Mitte &6Ferroboron&r und ein &6Kolben&r, unten &6Kupfer&r und &6Ferroboron&r. Die genaue Lage zeigt EMI.",
           ],
           tasks=[task_item("nuclearcraft:actuator", 2)],
           rewards=[reward_item("nuclearcraft:ferroboron_ingot", 4), reward_xp(5)],
@@ -284,7 +284,7 @@ quests = [
           description=[
               "&6Empty Heat Sink:&r Tough Alloy in die Ecken, &6Thermoconducting-Platten&r oben und unten, &6Eisengitter, Eimer, Eisengitter&r in der Mitte. Dann mit &e1 000 mB Wasser&r in den &6Fluid Infuser&r.",
               "",
-              "Ein &6Water Heat Sink&r kühlt &e60 pro Tick&r, wenn er an eine Zelle oder einen Moderator grenzt. Eine LEU-Zelle ohne Moderator macht 50. Alle Regeln zeigt JEI unter &eHeat Sink Placement&r.",
+              "Ein &6Water Heat Sink&r kühlt &e60 pro Tick&r, wenn er an eine Zelle oder einen Moderator grenzt. Eine LEU-Zelle ohne Moderator macht 50. Alle Regeln zeigt EMI unter &eHeat Sink Placement&r.",
           ],
           tasks=[task_item("nuclearcraft:empty_heat_sink", 1), task_item("nuclearcraft:water_heat_sink", 4)],
           rewards=[reward_item("nuclearcraft:tough_alloy_ingot", 8), reward_table("s4_common"), reward_xp(10)],
@@ -441,7 +441,7 @@ quests = [
           description=[
               "Ein &6Empty Heat Sink&r mit vier &6Redstonestaub&r im Kreuz ergibt einen &6Redstone Heat Sink&r.",
               "",
-              "Jede Sorte Kühlkörper hat ihre eigene Kühlrate und eigene Regeln, wo sie sitzen darf. Der Tooltip zeigt die Rate in H/t, JEI unter &eHeat Sink Placement&r die Regel. Mit mehreren Sorten kühlst du dichtere Reaktoren.",
+              "Jede Sorte Kühlkörper hat ihre eigene Kühlrate und eigene Regeln, wo sie sitzen darf. Der Tooltip zeigt die Rate in H/t, EMI unter &eHeat Sink Placement&r die Regel. Mit mehreren Sorten kühlst du dichtere Reaktoren.",
           ],
           tasks=[task_item("nuclearcraft:redstone_heat_sink", 4)],
           rewards=[reward_item("minecraft:redstone_block", 4), reward_xp(10)],

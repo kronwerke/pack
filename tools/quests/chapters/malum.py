@@ -277,7 +277,7 @@ quests = [
           description=[
               "&e4 Calx&r auf den Altar, auf die Stands &e4 Refined Soulstone&r und &e2 Hex Ash&r, dazu &e4 Arcane&r und &e4 Earthen&r.",
               "",
-              "Im Crucible mit unterschiedlichen Arcana entstehen daraus Pulver und Reagenzien, JEI zeigt welche.",
+              "Im Crucible mit unterschiedlichen Arcana entstehen daraus Pulver und Reagenzien, EMI zeigt welche.",
           ],
           tasks=[task_item("malum:alchemical_impetus", 1)],
           rewards=[reward_item("malum:arcane_spirit", 8), reward_xp(7)],

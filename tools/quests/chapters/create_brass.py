@@ -79,7 +79,7 @@ quests = [
           description=[
               "&eRezept auf Kronwerke:&r Oben Quelljuwel, Eisenblech, Quelljuwel. Mitte Eisenblech, &6Netherrack&r, Eisenblech. Unten nur ein Eisenblech.",
               "",
-              "Also vier &6Eisenbleche&r, ein Netherrack und zwei &dQuelljuwelen&r. JEI zeigt das geänderte Rezept.",
+              "Also vier &6Eisenbleche&r, ein Netherrack und zwei &dQuelljuwelen&r. EMI zeigt das geänderte Rezept.",
           ],
           tasks=[task_item("create:empty_blaze_burner", 1)],
           rewards=[reward_item("create:iron_sheet", 8), reward_xp(3)],
@@ -189,7 +189,7 @@ quests = [
           description=[
               "&6Elektronenröhre&r, &6Andesitgehäuse&r und &6Messing Hand&r untereinander ergeben das &6Einsatzgerät&r. Es tut mit seinem Item, was ein Spieler täte.",
               "",
-              "Über Depot oder Band wendet es sein Item auf alles darunter an: Schmirgelpapier auf Rosenquarz, Bretter auf Wellen für Zahnräder. JEI listet alles unter &eEinsetzen&r. Es kostet &d4 SU pro RPM&r.",
+              "Über Depot oder Band wendet es sein Item auf alles darunter an: Schmirgelpapier auf Rosenquarz, Bretter auf Wellen für Zahnräder. EMI listet alles unter &eEinsetzen&r. Es kostet &d4 SU pro RPM&r.",
               "",
               "Für die Präzisionslinie brauchst du drei: Zahnrad, Röhre, Klumpen.",
           ],
@@ -796,7 +796,7 @@ quests = [
           description=[
               "Eine &6Handkurbel&r und ein &6Zahnrad&r ergeben das &6Kurbelrad&r, eine Kurbel, die mit Zahnrädern daneben kämmt.",
               "",
-              "Dazu gibt es &6Bremse&r, &6Zentrifugal Kupplung&r, &6Kinetische Batterie&r, &6Item Silo&r und &6Flüssigkeitsgefäß&r. JEI zeigt alle Rezepte.",
+              "Dazu gibt es &6Bremse&r, &6Zentrifugal Kupplung&r, &6Kinetische Batterie&r, &6Item Silo&r und &6Flüssigkeitsgefäß&r. EMI zeigt alle Rezepte.",
           ],
           tasks=[task_item("create_connected:crank_wheel", 1)],
           rewards=[reward_xp(3)],
@@ -819,7 +819,7 @@ quests = [
           description=[
               "Stell &bSeelenfeuer&r direkt vor einen &6Ummantelten Lüfter&r: Feuer auf &6Seelensand&r oder ein &6Seelenlagerfeuer&r. Der Luftstrom &5sucht heim&r, was hindurchfliegt.",
               "",
-              "&6Tintenbeutel&r werden zu Leuchttintenbeuteln, &6Süßbeeren&r zu Leuchtbeeren, &6Ziegel&r zu Netherziegeln, Fackeln und Laternen zu ihren Seelen-Varianten. JEI zeigt alles unter &eHeimsuchen&r.",
+              "&6Tintenbeutel&r werden zu Leuchttintenbeuteln, &6Süßbeeren&r zu Leuchtbeeren, &6Ziegel&r zu Netherziegeln, Fackeln und Laternen zu ihren Seelen-Varianten. EMI zeigt alles unter &eHeimsuchen&r.",
               "",
               "Ein &6Messingblock&r über einem &6Messingblech&r ergibt die &6Seltsame Glocke&r. Heimgesucht wird sie zur &6Spukglocke&r: in der Hand oder geläutet zeigt sie dunkle Stellen, an denen Monster erscheinen können.",
           ],

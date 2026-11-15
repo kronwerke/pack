@@ -47,7 +47,7 @@ quests = [
           description=[
               "&eRechtsklick&r auf das &6Blaupausenbündel&r aus deinem Startinventar. Du bekommst Blaupausen für Stiel, Spitzhacke, Schaufel, Axt, Hacke und Schwert.",
               "",
-              "Blaupausen werden beim Herstellen &enicht verbraucht&r. Über einer Blaupause zeigt &eAlt&r, welche Teile das Werkzeug braucht, &eU&r zeigt die Rezepte in JEI.",
+              "Blaupausen werden beim Herstellen &enicht verbraucht&r. Über einer Blaupause zeigt &eAlt&r, welche Teile das Werkzeug braucht, &eU&r zeigt die Rezepte in EMI.",
           ],
           tasks=[task_item("silentgear:pickaxe_blueprint", 1)],
           rewards=[reward_item("minecraft:paper", 8), reward_xp(2)],
@@ -375,7 +375,7 @@ quests = [
     quest("saw", 10, 12, "&7Bau eine Säge",
           subtitle="Ein Schnitt, der ganze Baum fällt.",
           description=[
-              "&eBlaupause:&r fünf Blaues Papier und zwei Stöcke, siehe JEI. Das Sägeblatt braucht &efünf&r Material, dazu ein Stiel.",
+              "&eBlaupause:&r fünf Blaues Papier und zwei Stöcke, siehe EMI. Das Sägeblatt braucht &efünf&r Material, dazu ein Stiel.",
               "",
               "Die Säge fällt den ganzen Baum auf einmal. Pro Stamm kostet sie Haltbarkeit.",
           ],
@@ -695,7 +695,7 @@ quests = [
     quest("arrows", 5, 17, "&7Bau eigene Pfeile",
           subtitle="Pfeilspitzen aus jedem Material.",
           description=[
-              "&eBlaupause:&r Blaues Papier, Stock und Feder übereinander. Die &6Pfeilspitzen&r brauchen &eein&r Material, dazu ein Stiel und eine &6Befiederung&r. Welche Teile genau, zeigt JEI.",
+              "&eBlaupause:&r Blaues Papier, Stock und Feder übereinander. Die &6Pfeilspitzen&r brauchen &eein&r Material, dazu ein Stiel und eine &6Befiederung&r. Welche Teile genau, zeigt EMI.",
               "",
               "Die Pfeile passen in Bogen und Armbrust. Das Material der Spitze bestimmt den Schaden.",
           ],

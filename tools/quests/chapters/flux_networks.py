@@ -21,7 +21,7 @@ quests = [
               "",
               img(item_texture("fluxnetworks:flux_dust"), 32, 32),
               "",
-              "&eTipp:&r Wirf gleich acht Stapel hinein. Ein Obsidian für 512 Staub ist ein guter Preis, und Bruchstein ist schneller weggehackt als Obsidian. Grundgestein liegt ganz unten in der Oberwelt und im Nether. JEI zeigt das Ganze unter &eCreating Flux&r.",
+              "&eTipp:&r Wirf gleich acht Stapel hinein. Ein Obsidian für 512 Staub ist ein guter Preis, und Bruchstein ist schneller weggehackt als Obsidian. Grundgestein liegt ganz unten in der Oberwelt und im Nether. EMI zeigt das Ganze unter &eCreating Flux&r.",
               "",
               "&eSpäter:&r Statt Grundgestein tut es auch ein &6Flux-Block&r. Sobald du einen hast, machst du den Staub zu Hause.",
               "",

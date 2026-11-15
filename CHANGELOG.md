@@ -587,3 +587,10 @@ Core 0.39.33 (13.11.2026): a right click on the obelisk with a block in the hand
 
 - EMI is in, next to JEI (client; decided by Samuel on 15.11.2026 after the measurement of 0.24.48). Core 0.39.37 brings what was missing: the stage locks in EMI's list, EMI kept across a move between servers, and the recipes of Chipped's workbenches. The quest book still says JEI, the texts follow.
 - Easy Anvils and Visual Workbench are in after all (asked for by Samuel). What held them back in 0.24.44: an anvil no player had set answered "Unable to open. Break and replace to use.". Visual Workbench 21.1.2 swaps such a crafting table by itself when it is clicked, and Core 0.39.37 does the same for anvils. Easy Magic stays out (not compatible with Apotheosis by its own page).
+
+## 0.24.50
+
+- The quest book says EMI where it said JEI (161 lines in 40 chapters and their translations). The four quests that explain the recipe viewer are rewritten for it: the search field is at the bottom centre, a tag is searched with `#`, bookmarks are favorites, and a note says that EMI's keys are EMI's own (its button at the bottom left) and not in the controls settings. That is also why these quests name R, U, A, Ctrl+F and Ctrl+O as letters again: EMI's keys are no key bindings of the game, the book cannot ask for them.
+- Core 0.39.38: EMI keeps its lists when a player moves between the servers.
+- Five items EMI listed and JEI did not are hidden from recipe viewers (`c:hidden_from_recipe_viewers`): the placeable backtanks of Create Goggles, blocks without a use of their own that drew as a red barrier sign. NuclearCraft's five recipe categories without a name in EMI have one, in English and German.
+- Seen with 0.24.49 on the server: a plain anvil set by a command in the farm world opens Easy Anvils' window at the first click and is the mod's block afterwards; EMI with the stage locks (157 pages instead of 198 at stage 1).

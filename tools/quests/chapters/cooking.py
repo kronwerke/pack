@@ -281,7 +281,7 @@ quests = [
               "",
               pic("productivetrees:pollen"),
               "",
-              "Klick mit dem Pollen auf ein Blatt eines anderen Baums, und es ist bestäubt, als wäre eine Biene da gewesen. JEI zeigt unter &eBaumbestäubung&r, welcher Pollen auf welches Blatt gehört. So kreuzt du gezielt, auch unter Tage und ohne Blumenwiese.",
+              "Klick mit dem Pollen auf ein Blatt eines anderen Baums, und es ist bestäubt, als wäre eine Biene da gewesen. EMI zeigt unter &eBaumbestäubung&r, welcher Pollen auf welches Blatt gehört. So kreuzt du gezielt, auch unter Tage und ohne Blumenwiese.",
           ],
           tasks=[task_item("productivetrees:pollen_sifter", 1)],
           rewards=[reward_item("minecraft:brush", 1), reward_xp(3)],
@@ -303,7 +303,7 @@ quests = [
     quest("hybrids", 7.5, 11, "&dAusblick: Hybriden und Fundstücke",
           subtitle="148 Kreuzungen, sechs Setzlinge aus Truhen.",
           description=[
-              "Productive Trees hat &e148 Kreuzungen&r und 163 Baumarten. Fast jede neue Art ist ein Elternteil für die nächste: Buche und Birke ergeben die Erle, und so weiter bis zu Mahagoni, Ebenholz, Zuckerahorn und dem Gummibaum. JEI unter Baumbestäubung ist dein Stammbaum.",
+              "Productive Trees hat &e148 Kreuzungen&r und 163 Baumarten. Fast jede neue Art ist ein Elternteil für die nächste: Buche und Birke ergeben die Erle, und so weiter bis zu Mahagoni, Ebenholz, Zuckerahorn und dem Gummibaum. EMI unter Baumbestäubung ist dein Stammbaum.",
               "",
               "Sechs Setzlinge wachsen nicht aus Kreuzungen, sondern liegen in Truhen: &6Blue Yonder&r in Schiffswrack-Schatztruhen, &6Flickering Sun&r in Wüstentempeln, &6Firecracker&r in Antiken Städten, &6Brown Amber&r beim Ausgraben in kalten Ozeanruinen. &6Black Ember&r (Bastionen) kommt mit dem Nether in Stufe 2, &6Soul Tree&r (Endsiedlungen) mit dem End in Stufe 4.",
               "",

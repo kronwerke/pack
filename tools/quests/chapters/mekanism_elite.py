@@ -550,7 +550,7 @@ quests = [
           description=[
               "Der &6Large C. Infuser&r: Robit in der Mitte, Ultimative Max-Chemikalientanks links und rechts, Ultimative Schaltkreise oben und unten, Stahlblöcke in die Ecken.",
               "",
-              "Ebenso gibt es den großen Elektrolyseur, Rotationskondensator, Solarneutronenaktivator, Wärme- und Gasgenerator. Schau dir die Rezepte in JEI an. Der große Windgenerator kommt in Stufe 5.",
+              "Ebenso gibt es den großen Elektrolyseur, Rotationskondensator, Solarneutronenaktivator, Wärme- und Gasgenerator. Schau dir die Rezepte in EMI an. Der große Windgenerator kommt in Stufe 5.",
           ],
           tasks=[task_item("mekmm:large_chemical_infuser", 1)],
           rewards=[reward_item("mekanism:alloy_atomic", 4), reward_table("s4_uncommon"), reward_xp(10)],

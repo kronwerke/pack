@@ -320,7 +320,7 @@ quests = [
           description=[
               "&e100 mB zufällige Spawnflüssigkeit&r und eine Zutat ergeben im Mixer &e250 mB&r einer festen Sorte: &6Verrottetes Fleisch&r für Zombies, &6Knochen&r für Skelette, &6Schwarzpulver&r für Creeper, &6Leder und Weizen&r für Kühe, &6Smaragd&r für Dorfbewohner.",
               "",
-              "Manche brauchen Hitze: &6Lohenrute&r für Lohen und &6Enderperle&r für Endermen im erhitzten, &6Smaragd und Buch&r für Magier im überhitzten Becken. JEI listet alle Sorten unter Mixen.",
+              "Manche brauchen Hitze: &6Lohenrute&r für Lohen und &6Enderperle&r für Endermen im erhitzten, &6Smaragd und Buch&r für Magier im überhitzten Becken. EMI listet alle Sorten unter Mixen.",
               "",
               "&eKronwerke:&r Eine Lohenfarm aus dem Spawner liefert die Lohenruten für den Lohenstaub im Messing, ganz ohne Festung.",
           ],

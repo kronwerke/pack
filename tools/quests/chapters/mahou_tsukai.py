@@ -59,7 +59,7 @@ quests = [
     quest("dagger", 2.5, 2, "&cSchmiede einen Dolch",
           subtitle="Schaden auf Knopfdruck.",
           description=[
-              "Oben &6Stock&r und &6Gold&r, in der Mitte &6lila Farbstoff, Eisen, Gold&r, unten &6Eisen&r und &6lila Farbstoff&r. Die genaue Lage zeigt JEI.",
+              "Oben &6Stock&r und &6Gold&r, in der Mitte &6lila Farbstoff, Eisen, Gold&r, unten &6Eisen&r und &6lila Farbstoff&r. Die genaue Lage zeigt EMI.",
               "",
               "Rechtsklick lässt dich bluten, schon hast du den Schaden für den Kreis. Der Dolch schneidet auch das Zaubertuch.",
           ],

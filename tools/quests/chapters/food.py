@@ -432,7 +432,7 @@ quests = [
     quest("f_trough", 4.5, 12, "&6Bau einen Futtertrog",
           subtitle="Die Tiere füttern sich selbst.",
           description=[
-              "Bretter, ein &6Heuballen&r und eine &6Goldene Karotte&r, siehe JEI. Füll ihn mit Weizen, Karotten oder Samen.",
+              "Bretter, ein &6Heuballen&r und eine &6Goldene Karotte&r, siehe EMI. Füll ihn mit Weizen, Karotten oder Samen.",
               "",
               "Tiere in der Nähe fressen daraus und vermehren sich von selbst. Leder, Fleisch und Wolle kommen nebenbei.",
           ],
@@ -454,7 +454,7 @@ quests = [
     quest("f_market", 7, 13, "&6Stell einen Markt auf",
           subtitle="Samen und Setzlinge für Smaragde.",
           description=[
-              "Bretter und eine &6Rote Wolle&r oben, &6Holzstämme&r als Gestell, siehe JEI.",
+              "Bretter und eine &6Rote Wolle&r oben, &6Holzstämme&r als Gestell, siehe EMI.",
               "",
               "Der Markt verkauft Samen, Setzlinge, Blumen und Dünger gegen Smaragde, auch die wilden Pflanzen von Farmer's Delight.",
               "",
@@ -489,7 +489,7 @@ quests = [
     quest("f_horse_feed", 9.5, 13, "&7Misch Pferdefutter",
           subtitle="Für schnelle Reisen.",
           description=[
-              "Ein &6Heuballen&r oder Reisballen, zwei &6Äpfel&r und eine &6Goldene Karotte&r, siehe JEI.",
+              "Ein &6Heuballen&r oder Reisballen, zwei &6Äpfel&r und eine &6Goldene Karotte&r, siehe EMI.",
               "",
               "Ein gezähmtes Reittier bekommt davon für eine Weile Effekte, die der Tooltip auflistet.",
           ],
@@ -501,7 +501,7 @@ quests = [
     quest("f_rod", 4.5, 18, "&6Bau eine Eisen-Angelrute",
           subtitle="Neue Fische, neue Ruten.",
           description=[
-              "Zwei &6Eisenbleche&r aus der Create-Presse, zwei &6Fäden&r und ein &6Stock&r, siehe JEI.",
+              "Zwei &6Eisenbleche&r aus der Create-Presse, zwei &6Fäden&r und ein &6Stock&r, siehe EMI.",
               "",
               "Aquaculture bringt Dutzende Fische mit eigenem Lebensraum. Schleichen und Rechtsklick mit der Rute öffnet ihre Plätze für Haken, Köder, Leine und Schwimmer.",
           ],
@@ -523,7 +523,7 @@ quests = [
     quest("f_worm_farm", 7, 19, "&7Bau eine Wurmfarm",
           subtitle="Köder aus Küchenresten.",
           description=[
-              "Zäune, ein Block &6Erde&r und Bretter, siehe JEI. Füll sie mit Pflanzenresten.",
+              "Zäune, ein Block &6Erde&r und Bretter, siehe EMI. Füll sie mit Pflanzenresten.",
               "",
               "Mit der Zeit kommen &6Würmer&r heraus. In die Rute eingesetzt beißen die Fische schneller an.",
           ],
@@ -545,7 +545,7 @@ quests = [
     quest("f_tackle", 12, 17, "&7Bau eine Angelkiste",
           subtitle="Alles an einem Platz.",
           description=[
-              "Eine &6Truhe&r, Eisenbarren, ein &6Eisenblock&r und oben grüner Farbstoff, Seetang oder Algen, siehe JEI.",
+              "Eine &6Truhe&r, Eisenbarren, ein &6Eisenblock&r und oben grüner Farbstoff, Seetang oder Algen, siehe EMI.",
               "",
               "Sie hält Haken, Köder, Leinen und Schwimmer zusammen, und du rüstest darin die Rute aus.",
           ],
@@ -556,7 +556,7 @@ quests = [
     quest("f_sushi", 12, 19, "&7Roll Sushi",
           subtitle="Roh, aber lecker.",
           description=[
-              "Ein &6Rohes Fischfilet&r und &6Seetang&r, siehe JEI.",
+              "Ein &6Rohes Fischfilet&r und &6Seetang&r, siehe EMI.",
               "",
               "Schnell gemacht und ein Snack für unterwegs.",
           ],

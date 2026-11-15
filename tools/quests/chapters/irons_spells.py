@@ -524,7 +524,7 @@ quests = [
     quest("mana_ring", 3.5, 6.5, "&bSchmiede einen Ring of Mana",
           subtitle="+100 Mana am Finger.",
           description=[
-              "Ein &6Diamant&r oben links und vier &6Arcane Ingots&r im Ring darum ergeben den &6Ring of Mana&r. Die Lage zeigt JEI.",
+              "Ein &6Diamant&r oben links und vier &6Arcane Ingots&r im Ring darum ergeben den &6Ring of Mana&r. Die Lage zeigt EMI.",
               "",
               "Er kommt in einen &eRing-Slot&r (Curios) und gibt &e+100 Mana&r, so viel wie die ganze Wanderer-Robe. Mehr Maximum heißt auch schnellere Regeneration.",
               "",
@@ -537,7 +537,7 @@ quests = [
     quest("ice_staff", 3.5, 8.5, "&bSetz den Ice Staff zusammen",
           subtitle="Griff aus Knochen, Spitze aus dem Eisschiff.",
           description=[
-              "Der &6Frosted Helve&r ist vier &6Frozen Bones&r und drei &6Arcane Ingots&r in einer Diagonale (JEI zeigt das Muster). Dazu der &6Permafrost Shard&r aus dem Eisschiff, beides formlos ergibt den &6Ice Staff&r.",
+              "Der &6Frosted Helve&r ist vier &6Frozen Bones&r und drei &6Arcane Ingots&r in einer Diagonale (EMI zeigt das Muster). Dazu der &6Permafrost Shard&r aus dem Eisschiff, beides formlos ergibt den &6Ice Staff&r.",
               "",
               "Er gibt &e+15 Prozent Eiszauberkraft&r, &e+5 Prozent Zauberkraft&r und &e+25 Prozent Manaregeneration&r. Rechtsklick wirkt deinen aktiven Zauber wie bei jedem Stab.",
           ],

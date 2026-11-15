@@ -62,7 +62,7 @@ quests = [
     quest("brazier", 5, 1, "&6Bau Brazier und Stone Hands",
           subtitle="Der Ort für Rituale.",
           description=[
-              "&6Brazier&r: drei &6Pewter&r oben, ein &6Kohleblock&r darunter, zwei Stöcke als Beine. &6Stone Hand&r: Steinstufen und Stein, siehe JEI.",
+              "&6Brazier&r: drei &6Pewter&r oben, ein &6Kohleblock&r darunter, zwei Stöcke als Beine. &6Stone Hand&r: Steinstufen und Stein, siehe EMI.",
               "",
               "Ritual: Item auf die Brazier, weitere Zutaten auf Stone Hands drumherum, mit dem &6Feuerzeug&r anzünden. Leere Hand löscht sie und beendet das Ritual.",
           ],

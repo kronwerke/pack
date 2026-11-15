@@ -71,7 +71,7 @@ quests = [
               "",
               "Den Manadiamanten macht jeder Botaniker im Manabecken aus einem Diamanten. Kein Becken? Frag im Chat.",
               "",
-              "Die Kugel lädt Gegenstände mit Strom, bis sie sich verwandeln. Öffne sie und leg die Zutaten hinein, JEI zeigt unter &eEnergizing&r alle Rezepte mit FE-Bedarf.",
+              "Die Kugel lädt Gegenstände mit Strom, bis sie sich verwandeln. Öffne sie und leg die Zutaten hinein, EMI zeigt unter &eEnergizing&r alle Rezepte mit FE-Bedarf.",
           ],
           tasks=[task_item("powah:energizing_orb", 1)],
           rewards=[reward_item("botania:mana_diamond", 1), reward_table("s3_common"), reward_xp(10)],

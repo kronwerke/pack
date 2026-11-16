@@ -615,3 +615,7 @@ Core 0.39.33 (13.11.2026): a right click on the obelisk with a block in the hand
 - Six quests in the comfort chapter for the quality of life mods of 0.24.44 and after: felling whole trees, villagers as items and trade cycling (with the keys the reader has bound), the slots for elytra and goggles, the Mega Torch, the new anvil and crafting table, and the small things (double doors, stack refill, tooltips, bridging, the Tireless enchantment).
 - Quest book in English: Applied Energistics 2 (254 lines). 5783 of 16423 lines are translated.
 - Seen with 0.24.52 on the servers: Immersive Engineering's silver ore drops Occultism's raw silver (the item that stays), EMI in the test client has 42517 stacks where it had 42686 (the hidden duplicates), no error from Almost Unified or EMI in the client's log, the wait after the login is unchanged (13.1 s).
+
+## 0.24.54
+
+- Quest book in English: Logistics (145 lines). 5928 of 16453 lines are translated.

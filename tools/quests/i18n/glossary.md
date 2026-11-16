@@ -36,3 +36,11 @@ own words and chapter names, so references between chapters stay the same.
 | Der Nether, Der Aether, Der Undergarden, Das End | The Nether, The Aether, The Undergarden, The End |
 | Farmwelt (früher Minenwelt), Grubenrahmen, Minenportal | farm world, Mine Frame, Mine Portal |
 | hak ab (Checkmark-Quest) | tick this off |
+| AE2: Fortgeschritten | AE2: Advanced |
+| Lager (Kapitel) | Storage |
+| Rohre und Router | Pipes and Routers |
+| Checkliste: Transport und Lager | Checklist: Transport and Storage |
+| Logistik (Kapitel) | Logistics |
+| "Der Ofen schläft nie" (Ziel Stufe 3) | "The Furnace Never Sleeps" |
+| Stahlstraße | steel line |
+| JEI (bis 15.11.2026) | EMI: the book names EMI since pack 0.24.50; its keys are written as letters (R, U, A, Ctrl+F, Ctrl+O) |

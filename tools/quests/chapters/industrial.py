@@ -117,7 +117,7 @@ quests = [
               "",
               "Eisen geht in Sämaschine und Abwassermaschinen, Gold in Erntemaschine und Laserbohrer, Diamant in Auflösungsapparat, Bioreaktor und alle Laserbasen.",
           ],
-          tasks=[task_item("industrialforegoing:iron_gear", 2), task_item("industrialforegoing:gold_gear", 2), task_item("industrialforegoing:diamond_gear", 1)],
+          tasks=[task_item("enderio:iron_gear", 2), task_item("industrialforegoing:gold_gear", 2), task_item("industrialforegoing:diamond_gear", 1)],
           rewards=[reward_item("minecraft:gold_ingot", 8)],
           deps=["welcome"], icon="industrialforegoing:diamond_gear"),
 

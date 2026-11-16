@@ -318,7 +318,7 @@ quests = [
               "Leg den Hohlraum in einen Chemikalienbehälter mit D-T-Treibstoff, er fasst &e10 mB&r. Gefüllt kommt er in den Reaktor-Controller und zündet.",
           ],
           tasks=[task_item("mekanismgenerators:hohlraum", 1)],
-          rewards=[reward_item("mekanism:dust_gold", 8), reward_item("mekanism:enriched_carbon", 16), reward_xp(5)],
+          rewards=[reward_item("occultism:gold_dust", 8), reward_item("mekanism:enriched_carbon", 16), reward_xp(5)],
           deps=["deuterium", "tritium"], icon="mekanismgenerators:hohlraum"),
 
     quest("focus", 5, 18.5, "&dBau Laser-Fokusmatrizen",

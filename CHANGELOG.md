@@ -601,3 +601,11 @@ Core 0.39.33 (13.11.2026): a right click on the obelisk with a block in the hand
 - Its settings in the pack (`config/carryon-common.toml`): players cannot be lifted (the mod's default allows it), and Kronwerke's own blocks and waystones stay where they are, next to what the mod leaves out by itself (Botania, Immersive Engineering, Industrial Foregoing and others).
 - A quest in the comfort chapter explains it.
 - Not seen: Carry On with the whole pack and on the real servers; a carried animal across a move; a carried block of a mod whose contents live outside the block (a Refined Storage disk drive: the disks' contents are world data of one server, which is so for a disk in the inventory too and is not solved).
+
+## 0.24.52
+
+- One of each material (asked for by Samuel: "Unified Ores"). Almost Unified, with its companion for Immersive Engineering, makes every recipe give and take one item per material and form: 82 tags, 164 items give way and are hidden in EMI. Which item stays is worked out by `tools/recipes/unify.py`: the lowest stage wins, then Create, Mekanism, Immersive Engineering, Occultism; one mod per material where that costs no stage (table in `docs/RECIPES.md`). Ores stay as they are in the world and all drop the same raw material (loot unification). Not unified: Oritech's biosteel, Silent Gear's shards, Create's sturdy sheet, Power Grid's wires.
+- The quest book asks for and hands out the items that stay (46 places in 9 chapters, among them steel, lead, silver and the plates of the Immersive Engineering chapters).
+- Checked with the progression checker on a dump of the whole pack on a local server, before and after: the 37 sanity and goal checks pass, the same 82 quest items are out of reach of their stage as before (none new), locked items that can be made early go from 72 to 65. New among them: Oritech's small platinum and small plutonium dust (stage 3) come out of Create's washing in stage 2 as a by-product.
+- Almost Unified reports 20 Botania recipes it cannot read (marimorphosis); it leaves those as they are.
+- Not seen: any of this in a client (the hidden items in EMI, a unified recipe in a machine, an ore's drop).

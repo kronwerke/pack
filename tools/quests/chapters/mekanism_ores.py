@@ -109,9 +109,9 @@ quests = [
               "",
               "&eNebenbei:&r Dieselbe Kammer macht aus Kohle &6Angereicherten Kohlenstoff&r (80 mB statt 10 mB in der Infusionsanlage) und aus einem Salzblock vier &6Salz&r. Das Salz brauchst du in Stufe 4 wieder.",
           ],
-          tasks=[task_item("mekanism:dust_iron", 32), task_item("mekanism:dust_copper", 32)],
+          tasks=[task_item("occultism:iron_dust", 32), task_item("occultism:copper_dust", 32)],
           rewards=[reward_item("minecraft:raw_iron", 32), reward_item("minecraft:raw_copper", 16)],
-          deps=["enrichment"], icon="mekanism:dust_iron"),
+          deps=["enrichment"], icon="occultism:iron_dust"),
 
     quest("smelter", 5, 5.5, "&6Bau einen Energiegeladenen Schmelzer",
           subtitle="Staub wird Barren, ohne Kohle.",
@@ -290,9 +290,9 @@ quests = [
               "",
               "&cAchtung:&r Rohes Erz gehört jetzt vor die Klärkammer, nicht mehr in die Anreicherungskammer. Sonst verschenkst du einen Barren pro Erz.",
           ],
-          tasks=[task_item("mekanism:dust_iron", 48, title="Eisenstaub aus Dreckigem Staub")],
+          tasks=[task_item("occultism:iron_dust", 48, title="Eisenstaub aus Dreckigem Staub")],
           rewards=[reward_item("minecraft:raw_gold", 16), reward_item("mekanism:enriched_carbon", 16), reward_xp(5)],
-          deps=["crush"], icon="mekanism:dust_iron"),
+          deps=["crush"], icon="occultism:iron_dust"),
 
     quest("layout", 2.5, 11.75, "&eVerlege die Leitungen",
           subtitle="Transporter, Druckschläuche, Rohrleitungen.",
@@ -531,7 +531,7 @@ quests = [
               "&eZusammen:&r 8 Geschwindigkeit und 8 Energie heben sich beim Strom pro Gegenstand genau auf: zehnmal so schnell für denselben Strom pro Barren, nur eben zehnmal so viel pro Tick. Das ist der Standard-Ausbau jeder Maschine in der Straße.",
           ],
           tasks=[task_item("mekanism:upgrade_energy", 4)],
-          rewards=[reward_item("mekanism:dust_gold", 8), reward_xp(5)],
+          rewards=[reward_item("occultism:gold_dust", 8), reward_xp(5)],
           deps=["speed"], icon="mekanism:upgrade_energy"),
 
     quest("chemical", 5, 25.75, "&8Steck ein Chemie-Upgrade hinein",
@@ -625,7 +625,7 @@ quests = [
           ],
           tasks=[task_checkmark("Gelesen")],
           rewards=[reward_table("s2_uncommon"), reward_xp(10)],
-          deps=["oritech"], icon="mekanism:dust_iron", size=1.75, shape="hexagon"),
+          deps=["oritech"], icon="occultism:iron_dust", size=1.75, shape="hexagon"),
 ]
 
 images = [

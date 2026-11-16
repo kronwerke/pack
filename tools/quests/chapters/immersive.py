@@ -62,9 +62,9 @@ quests = [
               "",
               "&6Eisenbleche&r brauchst du für Komponenten und Rohre, &6Kupferbleche&r für Kupferkabel, &6Bleibleche&r für den Kondensator. In Stufe 3 übernimmt die Metallpresse das.",
           ],
-          tasks=[task_item("immersiveengineering:plate_iron", 4), task_item("immersiveengineering:plate_copper", 2)],
+          tasks=[task_item("create:iron_sheet", 4), task_item("create:copper_sheet", 2)],
           rewards=[reward_item("minecraft:iron_ingot", 8), reward_item("minecraft:copper_ingot", 8)],
-          deps=["hammer"], icon="immersiveengineering:plate_iron"),
+          deps=["hammer"], icon="create:iron_sheet"),
 
     quest("wirecutter", 0, 9.2, "&7Bau einen Kabelschneider",
           subtitle="Er schneidet Bleche zu Kabeln und Drähte ab.",
@@ -97,9 +97,9 @@ quests = [
               "",
               "Silber geht in Elektrum, Nickel in Constantan und Vakuumröhren, Blei in den Kondensator. Rohe Erze schmilzt du im Ofen oder schickst sie durch die Anreicherungskammer von Mekanism.",
           ],
-          tasks=[task_item("immersiveengineering:ingot_lead", 4), task_item("immersiveengineering:ingot_silver", 4), task_item("immersiveengineering:ingot_nickel", 4)],
+          tasks=[task_item("mekanism:ingot_lead", 4), task_item("occultism:silver_ingot", 4), task_item("immersiveengineering:ingot_nickel", 4)],
           rewards=[reward_item("minecraft:raw_iron", 16), reward_xp(5)],
-          deps=["welcome"], icon="immersiveengineering:raw_silver"),
+          deps=["welcome"], icon="occultism:raw_silver"),
 
     # ---- Koks und Kreosot ----------------------------------------------------
     quest("cokebrick", 5, 0, "&6Brenn 27 Koksziegel",
@@ -169,7 +169,7 @@ quests = [
               "Der Ofen gibt sein Kreosot nicht selbst ab, die Pumpe zieht es heraus. Mit Strom pumpt sie viel schneller. Seiten stellst du mit dem Hammer auf Eingang, Ausgang oder zu.",
           ],
           tasks=[task_item("immersiveengineering:fluid_pump", 1), task_item("immersiveengineering:fluid_pipe", 8)],
-          rewards=[reward_item("immersiveengineering:plate_iron", 8), reward_xp(5)],
+          rewards=[reward_item("create:iron_sheet", 8), reward_xp(5)],
           deps=["creosote", "component"], icon="immersiveengineering:fluid_pump", optional=True),
 
     quest("treated_wood", 12.5, 1, "&6Tränk Bretter in Kreosot",
@@ -252,9 +252,9 @@ quests = [
               "",
               tex("metal_ingot_steel"),
           ],
-          tasks=[task_item("immersiveengineering:ingot_steel", 16)],
+          tasks=[task_item("mekanism:ingot_steel", 16)],
           rewards=[reward_item("minecraft:iron_ingot", 32)],
-          deps=["blast_furnace"], icon="immersiveengineering:ingot_steel", size=1.5),
+          deps=["blast_furnace"], icon="mekanism:ingot_steel", size=1.5),
 
     quest("slag", 23, 1, "&7Heb die Schlacke auf",
           subtitle="Abfall mit Nutzen.",
@@ -275,7 +275,7 @@ quests = [
               "Du brauchst &e27&r Stück, also 27 Stahlbleche. Den Stahl dafür liefert dein Roh-Hochofen.",
           ],
           tasks=[task_item("immersiveengineering:blastbrick_reinforced", 27)],
-          rewards=[reward_item("immersiveengineering:ingot_steel", 8), reward_xp(5)],
+          rewards=[reward_item("mekanism:ingot_steel", 8), reward_xp(5)],
           deps=["steel"], icon="immersiveengineering:blastbrick_reinforced"),
 
     quest("improved_form", 20.5, 2.4, "&c&lForm einen Verbesserten Hochofen",
@@ -297,7 +297,7 @@ quests = [
               "Bis zu &ezwei&r Vorwärmer an die Seiten des Verbesserten Hochofens, jeder zieht &d32 FE/t&r. Ohne Strom geht es auch, nur langsamer.",
           ],
           tasks=[task_item("immersiveengineering:blastfurnace_preheater", 2)],
-          rewards=[reward_item("immersiveengineering:ingot_steel", 8), reward_xp(10)],
+          rewards=[reward_item("mekanism:ingot_steel", 8), reward_xp(10)],
           deps=["improved_form", "external_heater"], icon="immersiveengineering:blastfurnace_preheater", optional=True),
 
     quest("engineer", 26, -1, "&6&lLeg 64 Stahlbarren auf Vorrat",
@@ -309,9 +309,9 @@ quests = [
               "",
               "Damit sitzen die Grundlagen: Multiblöcke, Koks, Kreosot, Legierungen und Stahl.",
           ],
-          tasks=[task_item("immersiveengineering:ingot_steel", 64)],
+          tasks=[task_item("mekanism:ingot_steel", 64)],
           rewards=[reward_table("s2_rare"), reward_item("immersiveengineering:coal_coke", 32), reward_xp(20)],
-          deps=["steel"], icon="immersiveengineering:storage_steel", size=2.5, shape="gear"),
+          deps=["steel"], icon="mekanism:block_steel", size=2.5, shape="gear"),
 
     quest("steel_tools", 26, 1.4, "&7Schmied eine Stahlspitzhacke",
           subtitle="Hält deutlich länger als Eisen.",
@@ -323,7 +323,7 @@ quests = [
               tex("tool_pickaxe_steel"),
           ],
           tasks=[task_item("immersiveengineering:pickaxe_steel", 1)],
-          rewards=[reward_item("immersiveengineering:ingot_steel", 4)],
+          rewards=[reward_item("mekanism:ingot_steel", 4)],
           deps=["engineer"], optional=True),
 
     # ---- Legierungen ---------------------------------------------------------
@@ -533,7 +533,7 @@ quests = [
               tex("material_waterwheel_segment"),
           ],
           tasks=[task_item("immersiveengineering:watermill", 1)],
-          rewards=[reward_item("immersiveengineering:ingot_steel", 4)],
+          rewards=[reward_item("mekanism:ingot_steel", 4)],
           deps=["dynamo", "steel"], optional=True),
 
     quest("connectors", 18.5, 13, "&cSpann deinen ersten Draht",
@@ -604,7 +604,7 @@ quests = [
               "Neben einem normalen Ofen heizt er mit &d8 FE/t&r, ist der Ofen ganz heiß, mit bis zu &d32 FE/t&r für doppeltes Tempo. Er steckt auch im Hochofen-Vorwärmer.",
           ],
           tasks=[task_item("immersiveengineering:furnace_heater", 1)],
-          rewards=[reward_item("immersiveengineering:plate_copper", 4), reward_xp(5)],
+          rewards=[reward_item("create:copper_sheet", 4), reward_xp(5)],
           deps=["wirecoil"], icon="immersiveengineering:furnace_heater"),
 
     # ---- Mittelspannung --------------------------------------------------------

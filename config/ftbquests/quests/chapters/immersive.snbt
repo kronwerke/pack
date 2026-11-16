@@ -94,7 +94,7 @@
 			x: 2.65d
 			y: 12.299999999999999d
 			icon: {
-				id: "immersiveengineering:plate_iron"
+				id: "create:iron_sheet"
 				count: 1
 			}
 			dependencies: [
@@ -105,7 +105,7 @@
 					id: "535D54A63D4E4F98"
 					type: "item"
 					item: {
-						id: "immersiveengineering:plate_iron"
+						id: "create:iron_sheet"
 						count: 1
 					}
 					count: 4
@@ -114,7 +114,7 @@
 					id: "3989502FA705D99C"
 					type: "item"
 					item: {
-						id: "immersiveengineering:plate_copper"
+						id: "create:copper_sheet"
 						count: 1
 					}
 					count: 2
@@ -221,7 +221,7 @@
 			x: 0.25d
 			y: 15.75d
 			icon: {
-				id: "immersiveengineering:raw_silver"
+				id: "occultism:raw_silver"
 				count: 1
 			}
 			hide_dependency_lines: true
@@ -233,7 +233,7 @@
 					id: "2BE89B9A8070EF3B"
 					type: "item"
 					item: {
-						id: "immersiveengineering:ingot_lead"
+						id: "mekanism:ingot_lead"
 						count: 1
 					}
 					count: 4
@@ -242,7 +242,7 @@
 					id: "2877C5245DA8652C"
 					type: "item"
 					item: {
-						id: "immersiveengineering:ingot_silver"
+						id: "occultism:silver_ingot"
 						count: 1
 					}
 					count: 4
@@ -491,7 +491,7 @@
 					id: "418E39B5388DA1CC"
 					type: "item"
 					item: {
-						id: "immersiveengineering:plate_iron"
+						id: "create:iron_sheet"
 						count: 1
 					}
 					count: 8
@@ -721,7 +721,7 @@
 			x: 20.2d
 			y: 5.449999999999999d
 			icon: {
-				id: "immersiveengineering:ingot_steel"
+				id: "mekanism:ingot_steel"
 				count: 1
 			}
 			size: 1.5d
@@ -734,7 +734,7 @@
 					id: "11F724B566A0CD41"
 					type: "item"
 					item: {
-						id: "immersiveengineering:ingot_steel"
+						id: "mekanism:ingot_steel"
 						count: 1
 					}
 					count: 16
@@ -806,7 +806,7 @@
 					id: "2035017D71DEDFC3"
 					type: "item"
 					item: {
-						id: "immersiveengineering:ingot_steel"
+						id: "mekanism:ingot_steel"
 						count: 1
 					}
 					count: 8
@@ -891,7 +891,7 @@
 					id: "1230A685A9E5D159"
 					type: "item"
 					item: {
-						id: "immersiveengineering:ingot_steel"
+						id: "mekanism:ingot_steel"
 						count: 1
 					}
 					count: 8
@@ -908,7 +908,7 @@
 			x: 22.6d
 			y: 7.699999999999999d
 			icon: {
-				id: "immersiveengineering:storage_steel"
+				id: "mekanism:block_steel"
 				count: 1
 			}
 			size: 2.5d
@@ -921,7 +921,7 @@
 					id: "51CAE429F1C247DE"
 					type: "item"
 					item: {
-						id: "immersiveengineering:ingot_steel"
+						id: "mekanism:ingot_steel"
 						count: 1
 					}
 					count: 64
@@ -973,7 +973,7 @@
 					id: "6A3365DEF5368931"
 					type: "item"
 					item: {
-						id: "immersiveengineering:ingot_steel"
+						id: "mekanism:ingot_steel"
 						count: 1
 					}
 					count: 4
@@ -1604,7 +1604,7 @@
 					id: "2D7D92E108D11F66"
 					type: "item"
 					item: {
-						id: "immersiveengineering:ingot_steel"
+						id: "mekanism:ingot_steel"
 						count: 1
 					}
 					count: 4
@@ -1855,7 +1855,7 @@
 					id: "3E6BCEB6B1E7EE35"
 					type: "item"
 					item: {
-						id: "immersiveengineering:plate_copper"
+						id: "create:copper_sheet"
 						count: 1
 					}
 					count: 4

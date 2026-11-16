@@ -138,6 +138,27 @@ One crafted item per pillar in stages 1 to 3, registered in `kubejs/startup_scri
 
 Draconium ore only generates in the End: the overworld and Nether ore features are switched off in `kubejs/data/draconicevolution/neoforge/biome_modifier/`. Otherwise stage 4's draconium could be mined and smelted on day one.
 
+### One of each material
+
+Almost Unified (pack 0.24.52) makes every recipe give and take one item per material and form: one lead ingot, one steel dust, one copper plate. 82 tags are unified, 164 items give way; they stay in the game for what already lies in a chest, but no recipe makes them and the recipe viewer hides them.
+
+Which item stands for a material is worked out by `tools/recipes/unify.py`, not picked by hand: the item of the lowest stage wins, so nothing a stage can make turns into a locked item; among items of the same stage Create comes first, then Mekanism, Immersive Engineering, Occultism, Silent Gear and the rest, NuclearCraft last. One mod per material where that costs no stage.
+
+| Material | Stands for it |
+|---|---|
+| Lead, tin, osmium, uranium, steel, bronze, fluorite, sulfur | Mekanism (plates of lead, steel and uranium: Immersive Engineering) |
+| Aluminum, electrum, nickel, copper wire | Immersive Engineering |
+| Silver | Occultism (stage 1; the plate: Immersive Engineering) |
+| Zinc, plates of copper, gold and iron, copper nugget, obsidian dust | Create |
+| Dusts of copper, gold, iron, lapis, emerald, netherite | Occultism (stage 1, from its crusher) |
+| Platinum | Oritech |
+| Iron rod | Silent Gear |
+| Iron gear | Ender IO |
+
+Left alone on purpose: ores (every mod's ore block stays in the world and in the viewer; loot unification makes them all drop the same raw material), Oritech's biosteel (tagged as steel, but a tier of its own), Silent Gear's diamond and emerald shards, Create's sturdy sheet, and Power Grid's wires (they are strung between terminals, no crafting part).
+
+After a change to the mods or the stage files: start a server with `dump_tags` true in `config/almostunified/debug.json`, copy `logs/almostunified/debug/tags.txt` to `tools/recipes/data/unify-tags.txt`, run `python3 tools/recipes/unify.py tools/recipes/data/unify-tags.txt --write` (it writes the config and swaps the items in the quest chapters), then the progression check below.
+
 ## Notes for writing recipes
 
 - `event.remove({ output: ... })` misses Oritech's recipes, which list their outputs under `results`. Remove those by id.

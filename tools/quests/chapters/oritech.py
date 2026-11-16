@@ -31,9 +31,9 @@ quests = [
               "",
               "&eGut zu wissen:&r Nickel aus Immersive Engineering zählt in jedem Oritech-Rezept genauso.",
           ],
-          tasks=[task_item("oritech:raw_nickel", 16)],
+          tasks=[task_item("immersiveengineering:raw_nickel", 16)],
           rewards=[reward_item("minecraft:iron_ingot", 16), reward_table("s3_common")],
-          icon="oritech:nickel_ingot", size=2.0, shape="hexagon"),
+          icon="immersiveengineering:ingot_nickel", size=2.0, shape="hexagon"),
 
     quest("steel", 2.5, 0, "&8Mach Stahl an der Werkbank",
           subtitle="Zwei Eisen, zwei Kohle, ein Barren.",
@@ -44,9 +44,9 @@ quests = [
               "",
               "&eKronwerke:&r Jeder Stahlbarren zählt am Obelisken für &6Der Ofen schläft nie&r.",
           ],
-          tasks=[task_item("oritech:steel_ingot", 16)],
+          tasks=[task_item("mekanism:ingot_steel", 16)],
           rewards=[reward_item("minecraft:coal", 32)],
-          deps=["nickel"], icon="oritech:steel_ingot"),
+          deps=["nickel"], icon="mekanism:ingot_steel"),
 
     quest("electrum", 2.5, 2, "&eMach Electrum",
           subtitle="Gold und Redstone werden ein Leiter.",
@@ -55,7 +55,7 @@ quests = [
               "",
               "Electrum steckt in Energierohren, Gießerei, angetriebenem Ofen, Verarbeitungseinheit und Laser.",
           ],
-          tasks=[task_item("oritech:electrum_ingot", 8)],
+          tasks=[task_item("immersiveengineering:ingot_electrum", 8)],
           rewards=[reward_item("minecraft:gold_ingot", 8), reward_item("minecraft:redstone", 16)],
           deps=["nickel"]),
 
@@ -67,7 +67,7 @@ quests = [
               "Spulen stecken im Motor, im Generator, im Ofen und in vielen Addons. Der Zusammenfüger macht später sechs aus einem Stahl, zwei Nickel und einem Kupfer.",
           ],
           tasks=[task_item("oritech:magnetic_coil", 8)],
-          rewards=[reward_item("oritech:nickel_ingot", 4)],
+          rewards=[reward_item("immersiveengineering:ingot_nickel", 4)],
           deps=["steel"], icon="oritech:magnetic_coil"),
 
     quest("plating", 5, 2, "&7Press Kupferverstärkte Platten",
@@ -127,7 +127,7 @@ quests = [
               "Energierohre tragen &e10 000 RF/t&r. Der &6Pipe Wrench&r (Stahl und Nickel) trennt einzelne Seiten.",
           ],
           tasks=[task_item("oritech:energy_pipe", 12), task_item("oritech:item_pipe", 12), task_item("oritech:wrench", 1)],
-          rewards=[reward_item("oritech:electrum_ingot", 4)],
+          rewards=[reward_item("immersiveengineering:ingot_electrum", 4)],
           deps=["generator", "electrum"], icon="oritech:energy_pipe"),
 
     # ---- Verarbeitung --------------------------------------------------------
@@ -313,7 +313,7 @@ quests = [
     addon("addon_efficiency", 2.5, 10, "&aSpar Strom mit dem Efficiency Addon", "20 Prozent weniger Verbrauch.",
           "Fünf &6Plastik&r, ein &6Electrum&r in der Mitte, unten Kohlefaser, Platte, Kohlefaser.",
           "Jedes senkt den Verbrauch um &e20 Prozent&r, ohne die Maschine langsamer zu machen. Passt gut zu Speed Addons.",
-          "oritech:machine_efficiency_addon", [reward_item("oritech:electrum_ingot", 2)]),
+          "oritech:machine_efficiency_addon", [reward_item("immersiveengineering:ingot_electrum", 2)]),
     addon("addon_capacitor", 5, 10, "&aVergrößer den Puffer", "Capacitor Addon, 2 Millionen RF mehr.",
           "Fünf &6Plastik&r, eine &6Magnetspule&r in der Mitte, unten Energite, Platte, Energite. &6Energite&r gießt die Gießerei aus Nickel und Fluxite.",
           "Jedes gibt &e2 000 000 RF&r Speicher und &e2 000 RF/t&r mehr Eingang. Für Maschinen mit vielen Speed Addons.",
@@ -321,7 +321,7 @@ quests = [
     addon("addon_acceptor", 7.5, 10, "&aLeg einen zweiten Stromeingang", "Acceptor Addon.",
           "Fünf &6Plastik&r, ein &6Energite&r in der Mitte, unten Electrum, Platte, Electrum.",
           "Strom geht direkt ins Addon statt in die Maschine: &e500 000 RF&r Puffer, &e5 000 RF/t&r Eingang. Wenn die Maschinenseiten schon belegt sind.",
-          "oritech:machine_acceptor_addon", [reward_item("oritech:electrum_ingot", 2)]),
+          "oritech:machine_acceptor_addon", [reward_item("immersiveengineering:ingot_electrum", 2)]),
     addon("addon_burst", 10, 10, "&aDreh kurz auf mit dem Burst Addon", "Achtfaches Tempo, 12 Sekunden lang.",
           "&6Redstone&r, &6Stahl&r, Redstone oben, Electrum, &6Metal Girder&r, Electrum in der Mitte, drei Platten unten.",
           "Die Maschine läuft &eachtmal so schnell&r, bis das Burst-Maß leer ist, je Addon 12 Sekunden. Danach läuft sie gedrosselt, bis sie abgekühlt ist. Gut für Stoßarbeit, schlecht für Dauerbetrieb.",
@@ -419,7 +419,7 @@ quests = [
               "",
               "Den Uran-Kristall zerstört der Laser zu Plutoniumstaub. Ein Plutoniumpellet brennt zehnmal so lange wie eins aus Uran.",
           ],
-          tasks=[task_item("oritech:raw_uranium", 16), task_item("oritech:uranium_pellet", 8)],
+          tasks=[task_item("mekanism:raw_uranium", 16), task_item("oritech:uranium_pellet", 8)],
           rewards=[reward_item("oritech:plastic_sheet", 8), reward_xp(10)],
           deps=["atomic_forge"], icon="oritech:uranium_pellet"),
 

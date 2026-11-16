@@ -40,10 +40,10 @@ quests = [
               "",
               "Rohes Uran und Lithiumstaub von Mekanism gehen auch. Mahl Rohes Erz in der Manufactory, ein Erz gibt zwei Staub. Blei brauchst du in großen Mengen.",
           ],
-          tasks=[task_item("nuclearcraft:raw_uranium", 16), task_item("nuclearcraft:raw_boron", 8),
+          tasks=[task_item("mekanism:raw_uranium", 16), task_item("nuclearcraft:raw_boron", 8),
                  task_item("nuclearcraft:raw_lithium", 8)],
           rewards=[reward_item("mekanism:ingot_lead", 16), reward_xp(5)],
-          deps=["welcome"], icon="nuclearcraft:raw_uranium"),
+          deps=["welcome"], icon="mekanism:raw_uranium"),
 
     quest("graphite", 2.5, 2.5, "&8Mahl Kohle zu Graphit",
           subtitle="Zweimal durch die Manufactory.",
@@ -154,7 +154,7 @@ quests = [
               "Zehn Uranstaub ergeben neun &6Uran-238&r und ein &6Uran-235&r. Thoriumstaub wird zu Thorium-232 und Thorium-230.",
           ],
           tasks=[task_item("nuclearcraft:isotope_separator", 1), task_item("nuclearcraft:uranium_235", 2)],
-          rewards=[reward_item("nuclearcraft:raw_uranium", 16), reward_xp(10)],
+          rewards=[reward_item("mekanism:raw_uranium", 16), reward_xp(10)],
           deps=["actuator"], icon="nuclearcraft:isotope_separator"),
 
     quest("fuel", 15, 6, "&a&lMisch LEU-235",

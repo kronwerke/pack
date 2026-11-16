@@ -179,7 +179,7 @@ loot_table("s4_uncommon", "Drachenkiste", stage=4, loot_size=3, entries=[
     ("draconicevolution:draconium_core", 1, 6),
     ("ae2:cell_component_64k", 1, 6),
     ("megacells:cell_component_1m", 1, 3),
-    ("nuclearcraft:uranium_ingot", 4, 5, 4),
+    ("mekanism:ingot_uranium", 4, 5, 4),
     ("minecraft:dragon_breath", 4, 5, 4),
     ("minecraft:nether_star", 1, 3),
     ("minecraft:netherite_ingot", 1, 3),

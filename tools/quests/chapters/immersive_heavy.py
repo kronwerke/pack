@@ -83,7 +83,7 @@ quests = [
               "Der Bagger allein braucht &e26&r Gerüste, der Zerkleinerer 10 Gerüste und 8 Zäune.",
           ],
           tasks=[task_item("immersiveengineering:steel_scaffolding_standard", 32), task_item("immersiveengineering:steel_fence", 8)],
-          rewards=[reward_item("immersiveengineering:ingot_steel", 16)],
+          rewards=[reward_item("mekanism:ingot_steel", 16)],
           deps=["light"], icon="immersiveengineering:steel_scaffolding_standard"),
 
     quest("sheetmetal", 2.5, 8, "&7Bau Stahlblechblöcke",
@@ -94,7 +94,7 @@ quests = [
               "Der Lichtbogenofen braucht 8 Blöcke und 14 Stufen, der Bagger 16 Blöcke. Ab der Metallpresse kommen die Bleche von selbst.",
           ],
           tasks=[task_item("immersiveengineering:sheetmetal_steel", 16)],
-          rewards=[reward_item("immersiveengineering:ingot_steel", 16)],
+          rewards=[reward_item("mekanism:ingot_steel", 16)],
           deps=["scaffold"], icon="immersiveengineering:sheetmetal_steel"),
 
     # ---- Zum Lichtbogenofen --------------------------------------------------
@@ -155,7 +155,7 @@ quests = [
           ],
           tasks=[mb("mb_metalpress", "Eine Metallpresse formen"), task_item("immersiveengineering:mold_plate", 1),
                  task_item("immersiveengineering:mold_rod", 1), task_item("immersiveengineering:plate_steel", 32)],
-          rewards=[reward_item("immersiveengineering:ingot_steel", 16), reward_xp(10)],
+          rewards=[reward_item("mekanism:ingot_steel", 16), reward_xp(10)],
           deps=["heavy", "parts"], icon="immersiveengineering:metal_press"),
 
     quest("bottling", 16, 0.5, "&bForm eine Abfüllanlage",
@@ -204,9 +204,9 @@ quests = [
               "",
               "&eKronwerke:&r Das Stufenziel will &e4 000 Stahlbarren&r. Sammle die Ausgabe in Kisten und bring sie zum Obelisken.",
           ],
-          tasks=[task_item("immersiveengineering:ingot_steel", 256)],
+          tasks=[task_item("mekanism:ingot_steel", 256)],
           rewards=[reward_item("immersiveengineering:coal_coke", 64), reward_table("s3_uncommon"), reward_xp(15)],
-          deps=["arc"], icon="immersiveengineering:ingot_steel", size=1.5),
+          deps=["arc"], icon="mekanism:ingot_steel", size=1.5),
 
     # ---- Öl und Diesel -------------------------------------------------------
     quest("fermenter", 8.5, 6.5, "&eForm einen Industriefermenter",
@@ -383,7 +383,7 @@ quests = [
               "&eRein:&r &d4 096 FE/t&r über die drei Anschlüsse an der Seite, ein Dieselgenerator pro Bagger. &eRaus:&r Erz hinten am Motor. Eine Ader gibt höchstens &e38 400&r Erze, je weiter weg vom Zentrum, desto mehr taubes Gestein.",
           ],
           tasks=[mb("mb_excavator", "Einen Bagger formen")],
-          rewards=[reward_item("immersiveengineering:ingot_steel", 32), reward_table("s3_uncommon"), reward_xp(20)],
+          rewards=[reward_item("mekanism:ingot_steel", 32), reward_table("s3_uncommon"), reward_xp(20)],
           deps=["diesel", "survey"], icon="immersiveengineering:excavator", size=1.75, shape="hexagon"),
 
     quest("lightning_rod", 21, 12, "&eForm einen Blitzableiter",
@@ -466,9 +466,9 @@ quests = [
               "",
               "Stahl und Bausteine liefert dieses Kapitel. Lass die Stahlstraße in Kisten laufen und bring die Barren zum Obelisken.",
           ],
-          tasks=[task_item("immersiveengineering:ingot_steel", 1024), task_item("immersiveengineering:heavy_engineering", 32)],
-          rewards=[reward_table("s3_rare"), reward_item("immersiveengineering:storage_steel", 8), reward_xp(30)],
-          deps=["arc_steel", "diesel", "electronics"], icon="immersiveengineering:storage_steel", size=2.5, shape="gear"),
+          tasks=[task_item("mekanism:ingot_steel", 1024), task_item("immersiveengineering:heavy_engineering", 32)],
+          rewards=[reward_table("s3_rare"), reward_item("mekanism:block_steel", 8), reward_xp(30)],
+          deps=["arc_steel", "diesel", "electronics"], icon="mekanism:block_steel", size=2.5, shape="gear"),
 
     # ---- neue Quests: Zum Lichtbogenofen ---------------------------------------
     quest("molds", 11, 1.8, "&7Bau weitere Pressformen",

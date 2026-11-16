@@ -1,0 +1,82 @@
+{
+  "mod_priorities": [
+    "minecraft",
+    "kubejs",
+    "create",
+    "mekanism",
+    "immersiveengineering",
+    "occultism",
+    "silentgear",
+    "createaddition",
+    "enderio",
+    "oritech",
+    "powergrid",
+    "createdeco",
+    "eidolon_repraised",
+    "mekmm",
+    "malum",
+    "eternal_starlight",
+    "irons_spellbooks",
+    "appflux",
+    "extendedae",
+    "ae2",
+    "industrialforegoing",
+    "justdirethings",
+    "pneumaticcraft",
+    "nuclearcraft"
+  ],
+  "priority_overrides": {
+    "c:dusts/copper": "occultism",
+    "c:dusts/emerald": "occultism",
+    "c:dusts/gold": "occultism",
+    "c:dusts/iron": "occultism",
+    "c:dusts/lapis": "occultism",
+    "c:dusts/netherite": "occultism",
+    "c:dusts/silver": "occultism",
+    "c:ingots/silver": "occultism",
+    "c:nuggets/silver": "occultism",
+    "c:raw_materials/silver": "occultism",
+    "c:rods/iron": "silentgear",
+    "c:storage_blocks/raw_silver": "occultism",
+    "c:storage_blocks/silver": "occultism"
+  },
+  "stone_variants": [
+    "stone",
+    "andesite",
+    "deepslate",
+    "diorite",
+    "granite",
+    "netherrack",
+    "end_stone"
+  ],
+  "tags": [
+    "c:dusts/{material}",
+    "c:gears/{material}",
+    "c:gems/{material}",
+    "c:ingots/{material}",
+    "c:nuggets/{material}",
+    "c:plates/{material}",
+    "c:raw_materials/{material}",
+    "c:rods/{material}",
+    "c:storage_blocks/raw_{material}",
+    "c:storage_blocks/{material}",
+    "c:wires/{material}"
+  ],
+  "ignored_tags": [],
+  "ignored_items": [
+    "oritech:biosteel_ingot",
+    "silentgear:diamond_shard",
+    "silentgear:emerald_shard",
+    "create:sturdy_sheet",
+    "powergrid:wire",
+    "powergrid:golden_wire",
+    "powergrid:iron_wire"
+  ],
+  "ignored_recipe_types": [
+    "cucumber:shaped_tag"
+  ],
+  "ignored_recipe_ids": [],
+  "recipe_viewer_hiding": true,
+  "loot_unification": true,
+  "ignored_loot_tables": []
+}

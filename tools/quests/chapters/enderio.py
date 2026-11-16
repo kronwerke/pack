@@ -163,7 +163,7 @@ quests = [
     alloy("steel_alloy", 13, 1, "&7Legier Stahl", "Eisen und Kohlestaub, ein Barren.",
           "Ein &6Eisenbarren&r und ein &6Kohlestaub&r geben einen &6Stahlbarren&r von Oritech.",
           "&eKronwerke:&r Jeder Stahlbarren zählt am Obelisken für &6Der Ofen schläft nie&r. Sägemühle für Kohlestaub davor, Kiste dahinter: eine kleine Stahlstraße.",
-          "oritech:steel_ingot", 32,
+          "mekanism:ingot_steel", 32,
           [reward_item("minecraft:iron_ingot", 16), reward_xp(5)], section="alloys"),
     alloy("fused_quartz", 15.5, 1, "&fSchmelz Quarzglas und Klares Glas", "Durchsichtig, und manches leuchtet.",
           "Vier &6Netherquarz&r oder ein Quarzblock geben ein &6Quarzglas&r. Ein &6Glas&r allein wird &6Klares Glas&r.",

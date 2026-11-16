@@ -272,9 +272,9 @@
 	]
 	chapter.71D240A9E09DDDEA.title: "Checkliste: Transport und Lager"
 	chapter.7421615E165D1C33.chapter_subtitle: [
-		"Stufe 3: Montagestraße, Kompressoren für 20 bar, Drohnen und ihre Programme."
+		"Stage 3: assembly line, compressors for 20 bar, drones and their programs."
 	]
-	chapter.7421615E165D1C33.title: "PneumaticCraft: Drohnen und Druck"
+	chapter.7421615E165D1C33.title: "PneumaticCraft: Drones and Pressure"
 	chapter.74704FEDC5681277.chapter_subtitle: [
 		"Stage 3: latex and plastic, four frames, fields, mobs, lasers and ore meat."
 	]
@@ -355,12 +355,12 @@
 	quest.103E0D07B09DD4A1.quest_subtitle: "The portal has been open to everyone since the event."
 	quest.103E0D07B09DD4A1.title: "&5&lEnter the End"
 	quest.103F22E76C4B53C6.quest_desc: [
-		"Ein &6Pressure Chamber Valve&r und ein &6Reinforced Air Canister Array&r formlos ergeben ein &6Unassembled Reinforced Pressure Chamber Valve&r. Mit dem Programm &eLaser&r macht die Montagestraße daraus das &6Reinforced Pressure Chamber Valve&r."
+		"A &6Pressure Chamber Valve&r and a &6Reinforced Air Canister Array&r shapeless give an &6Unassembled Reinforced Pressure Chamber Valve&r. With the &eLaser&r program the assembly line turns it into the &6Reinforced Pressure Chamber Valve&r."
 		""
-		"Tausch die Ventile deiner Druckkammer gegen verstärkte, und die Kammer hält &e20 bar&r statt 5. Sie speichert damit viermal so viel Luft. Wände, Gläser und Schnittstellen bleiben, wie sie sind."
+		"Swap your Pressure Chamber's valves for reinforced ones, and the chamber holds &e20 bar&r instead of 5. With that it stores four times as much air. Walls, glass and interfaces stay as they are."
 	]
-	quest.103F22E76C4B53C6.quest_subtitle: "Ein Ventil, viermal so viel Luft."
-	quest.103F22E76C4B53C6.title: "&3Rüste die Druckkammer auf 20 bar auf"
+	quest.103F22E76C4B53C6.quest_subtitle: "One valve, four times as much air."
+	quest.103F22E76C4B53C6.title: "&3Upgrade the Pressure Chamber to 20 Bar"
 	quest.1040C139EA8F7DF9.quest_desc: [
 		"A &6Basic Filter&r and an &6observer&r, shapeless, give the &6Counting Filter&r."
 		""
@@ -1488,14 +1488,14 @@
 	quest.138F2D1FBD28707E.quest_subtitle: "Gem supply and storage for everything."
 	quest.138F2D1FBD28707E.title: "&dAwaken an Amethyst Golem and Bookwyrm"
 	quest.139110C5F8434A03.quest_desc: [
-		"Programm &eLaser&r in den Controller, &6Empty PCBs&r in die Eingangskiste. Jedes wird zu einem &6Unassembled PCB&r, ohne UV Light Box, ohne Etching Tank und ohne Fehlversuche."
+		"&eLaser&r program into the controller, &6Empty PCBs&r into the input chest. Each becomes an &6Unassembled PCB&r, without UV Light Box, without Etching Tank and without failures."
 		""
-		"Empty PCBs kommen weiter aus der Druckkammer: zwei Redstone-Fackeln, drei Nuggets (Gold oder Kupfer) und ein Plastic Sheet bei 1,5 bar ergeben drei. Mit zwei &6Transistoren&r und zwei &6Kondensatoren&r um das Unassembled PCB wird daraus das fertige &6Printed Circuit Board&r, wie im Kapitel &bPneumaticCraft&r."
+		"Empty PCBs still come from the Pressure Chamber: two redstone torches, three nuggets (gold or copper) and a Plastic Sheet at 1.5 bar give three. With two &6Transistors&r and two &6Capacitors&r around the Unassembled PCB it becomes the finished &6Printed Circuit Board&r, as in the &bPneumaticCraft&r chapter."
 		""
-		"Der Laser ist bequem und schnell genug für ein Dutzend Platinen. Für hunderte ist die Säure mit Heizung am Ende schneller, siehe nächste Aufgabe."
+		"The laser is comfortable and fast enough for a dozen boards. For hundreds the acid with heating is faster in the end, see the next task."
 	]
-	quest.139110C5F8434A03.quest_subtitle: "Kein UV-Kasten, keine Säure mehr."
-	quest.139110C5F8434A03.title: "&aLaser dir Unassembled PCBs"
+	quest.139110C5F8434A03.quest_subtitle: "No UV box, no acid anymore."
+	quest.139110C5F8434A03.title: "&aLaser Yourself Unassembled PCBs"
 	quest.1397CD657DFF33E0.quest_desc: [
 		"Tracks also work in areas where no player is at the moment. Trains keep running there without problems and stop at stations and red signals."
 		""
@@ -1741,25 +1741,25 @@
 	quest.1460AD2C9D62D06E.quest_subtitle: "Fifty kills, and the model knows everything."
 	quest.1460AD2C9D62D06E.title: "&6&lBring a Model to Self Aware"
 	quest.14650F4827AE0381.quest_desc: [
-		"&eRezept:&r ein &6Seismic Sensor&r oben, Plastic Sheet, &6Verstärker&r (Repeater), Plastic Sheet in der Mitte, Plastic Sheet, &6Pressure Tube&r, Plastic Sheet unten."
+		"&eRecipe:&r a &6Seismic Sensor&r on top, Plastic Sheet, &6repeater&r, Plastic Sheet in the middle, Plastic Sheet, &6Pressure Tube&r, Plastic Sheet at the bottom."
 		""
-		"Er misst, was um ihn herum passiert, und gibt ein &cRedstone-Signal&r aus: Druck in einem Rohr, Licht, Regen, Zeit, ein Spieler oder Monster in Reichweite, ein Block an einer Koordinate. Über 15 Bedingungen, jede im Fenster erklärt. Er braucht 1 mL Luft pro Tick."
+		"It measures what happens around it and outputs a &credstone signal&r: pressure in a tube, light, rain, time, a player or monster in range, a block at a coordinate. Over 15 conditions, each explained in the window. It needs 1 mL of air per tick."
 		""
-		"&eUpgrades schalten frei:&r Ein &6Entity Tracker Upgrade&r (Knochen, fermentiertes Spinnenauge) für alles mit Lebewesen, ein Block Tracker Upgrade plus GPS Tool für Blöcke an einer Koordinate. Welcher Sensor welches Upgrade will, steht im Fenster. Range Upgrades vergrößern die Reichweite."
+		"&eUpgrades unlock:&r an &6Entity Tracker Upgrade&r (bone, fermented spider eye) for everything with living things, a Block Tracker Upgrade plus GPS Tool for blocks at a coordinate. Which sensor wants which upgrade is in the window. Range Upgrades enlarge the reach."
 		""
-		"&eBeispiel:&r Entity Tracker hinein, Entity, Within Range, Filter &ecow&r: Das Signal geht an, wenn genug Kühe im Gehege sind, und startet die Schlachtmaschine."
+		"&eExample:&r Entity Tracker in, Entity, Within Range, filter &ecow&r: the signal turns on when there are enough cows in the pen, and starts the slaughter machine."
 	]
-	quest.14650F4827AE0381.quest_subtitle: "Redstone aus Bedingungen."
-	quest.14650F4827AE0381.title: "&3Bau einen Universal Sensor"
+	quest.14650F4827AE0381.quest_subtitle: "Redstone from conditions."
+	quest.14650F4827AE0381.title: "&3Build a Universal Sensor"
 	quest.146623D846D8F44F.quest_desc: [
-		"&eRezept:&r vier &6Turbine Rotors&r um eine &6Feldfrucht&r, zum Beispiel Weizen."
+		"&eRecipe:&r four &6Turbine Rotors&r around a &6crop&r, for example wheat."
 		""
-		"Sie erntet reife Pflanzen und Bäume in einem Würfel von &e17 Blöcken&r um ihren Startpunkt. Setz sie mit &eShift-Rechtsklick&r gegen eine Kiste, in der nur eine &6Hacke&r liegt, dann pflanzt sie nach und arbeitet nur mit Hacke. Gegen jeden anderen Block gesetzt, erntet sie ohne nachzupflanzen."
+		"It harvests ripe plants and trees in a cube of &e17 blocks&r around its starting point. Place it with &eshift right click&r against a chest that holds only a &6hoe&r, then it replants and only works with a hoe. Placed against any other block, it harvests without replanting."
 		""
-		"Aufsammeln tut sie nichts. Dafür gibt es die &6Collector Drone&r (vier Rotoren um einen Trichter): gegen eine Kiste gesetzt sammelt sie alles im 17er-Würfel ein, was auf dem Boden liegt, und filtert auf das, was schon in der Kiste liegt."
+		"It picks nothing up. For that there is the &6Collector Drone&r (four rotors around a hopper): placed against a chest it collects everything lying on the ground in the 17 cube, and filters for what is already in the chest."
 	]
-	quest.146623D846D8F44F.quest_subtitle: "Ein Bauer, der nie schläft."
-	quest.146623D846D8F44F.title: "&aSetz eine Harvesting Drone ein"
+	quest.146623D846D8F44F.quest_subtitle: "A farmer who never sleeps."
+	quest.146623D846D8F44F.title: "&aDeploy a Harvesting Drone"
 	quest.146984CF36C14623.quest_desc: [
 		"{image:kronwerke:textures/quests/shots/farms_source_berries.png width:224 height:126 align:center}"
 		"Plant &6Sourceberry bushes&r from the archwood forest in rows, between them an &6Agronomic Sourcelink&r (2 Source Gems, 2 gold ingots, wheat) and a &6Source Jar&r. Every growth step within &e15 blocks&r brings Source, the link fills jars up to 5 blocks away."
@@ -2252,14 +2252,14 @@
 	quest.15C8A97E51E1DD37.quest_subtitle: "Five ores at once into the Purification Chamber."
 	quest.15C8A97E51E1DD37.title: "&dBuild an Advanced Purifying Factory"
 	quest.15CAA2B40617AB32.quest_desc: [
-		"&6Diamantbohrkopf:&r ein &6Diamantblock&r und &b8 000 mB Schmiermittel&r in der Thermopneumatic Processing Plant bei &e7,5 bar&r und mindestens 500 Grad. Er bricht &e3x3&r Blöcke auf einmal."
+		"&6Diamond Drill Bit:&r a &6diamond block&r and &b8,000 mB of Lubricant&r in the Thermopneumatic Processing Plant at &e7.5 bar&r and at least 500 degrees. It breaks &e3x3&r blocks at once."
 		""
-		"&6Netheritbohrkopf:&r Diamantbohrkopf und ein &6Netheritbarren&r formlos ergeben den unfertigen Kopf, das Programm &eDrill&r der Montagestraße macht ihn fertig. Er ist der schnellste und kann die meisten Abbaumodi."
+		"&6Netherite Drill Bit:&r diamond drill bit and a &6netherite ingot&r shapeless give the unfinished bit, the assembly line's &eDrill&r program finishes it. It is the fastest and can do most mining modes."
 		""
-		"Den Presslufthammer selbst baust du wie im Kapitel &bPneumaticCraft&r beschrieben."
+		"You build the Jackhammer itself as described in the &bPneumaticCraft&r chapter."
 	]
-	quest.15CAA2B40617AB32.quest_subtitle: "Diamant und Netherit für den Bohrkopf."
-	quest.15CAA2B40617AB32.title: "&6Härte den Presslufthammer"
+	quest.15CAA2B40617AB32.quest_subtitle: "Diamond and netherite for the drill bit."
+	quest.15CAA2B40617AB32.title: "&6Harden the Jackhammer"
 	quest.15CE1B1CCE2C7E16.quest_desc: [
 		"An &6iron ingot&r, a &6Powdered Coal&r and an &6obsidian&r give two &6Dark Steel Ingots&r. Without the powder, two regular coal work too."
 		""
@@ -2910,18 +2910,18 @@
 	quest.17C91AA3D7D43887.quest_subtitle: "No flight without a brush."
 	quest.17C91AA3D7D43887.title: "&6Tie a broom brush"
 	quest.17CA3655D2C5898B.quest_desc: [
-		"&eRezept auf Kronwerke:&r drei &6Turbine Rotors&r oben und an den Seiten, ein &6Printed Circuit Board&r in der Mitte, unten ein &6Präzisionsgetriebe&r von Create. Fliegende Maschinen brauchen auf Kronwerke ein Getriebe, wie der Assembler von AE2."
+		"&eRecipe on Kronwerke:&r three &6Turbine Rotors&r on top and on the sides, a &6Printed Circuit Board&r in the middle, a &6Precision Mechanism&r from Create at the bottom. On Kronwerke flying machines need a mechanism, like AE2's Assembler."
 		""
 		"{image:pneumaticcraft:textures/item/drone.png width:32 height:32 align:center}"
 		""
-		"Das Präzisionsgetriebe entsteht auf dem Depot mit dem Einsatzgerät, siehe Kapitel &6Create: Messing&r. Frag die Create-Spieler, die machen die am laufenden Band."
+		"The Precision Mechanism is made on the depot with the deployer, see the &6Create: Brass&r chapter. Ask the Create players, they make them nonstop."
 		""
-		"&eLaden:&r Eine Drohne läuft mit Luft, 1 mL pro Tick. Leg sie in eine &6Charging Station&r. Steck ein &6Dispenser Upgrade&r in die Station, dann wird sie zum Ladefeld: Jede Drohne mit wenig Luft fliegt von selbst zur nächsten Station mit Dispenser Upgrade im Umkreis von 80 Blöcken, tankt und arbeitet weiter."
+		"&eCharging:&r A drone runs on air, 1 mL per tick. Put it in a &6Charging Station&r. Put a &6Dispenser Upgrade&r into the station, then it becomes a charging pad: every drone low on air flies by itself to the nearest station with a Dispenser Upgrade within 80 blocks, refuels and keeps working."
 		""
-		"&cAchtung:&r Geht die Luft aus, fällt die Drohne und nimmt Fallschaden. Zerstört lässt sie sich als Item fallen. Mit einem Pneumatic Wrench nimmst du sie sauber auf."
+		"&cCareful:&r If the air runs out, the drone falls and takes fall damage. Destroyed, it drops as an item. With a Pneumatic Wrench you pick it up cleanly."
 	]
-	quest.17CA3655D2C5898B.quest_subtitle: "Ein fliegender Roboter mit Präzisionsgetriebe."
-	quest.17CA3655D2C5898B.title: "&d&lBau eine Drone"
+	quest.17CA3655D2C5898B.quest_subtitle: "A flying robot with a Precision Mechanism."
+	quest.17CA3655D2C5898B.title: "&d&lBuild a Drone"
 	quest.17CAF7CDCF6B9A76.quest_desc: [
 		"First &6two redstone&r and &6two lapis&r. Then &6four Soul Shards&r and stir twice. Finally a &6Soul Crystal&r from Deeper and Darker."
 		""
@@ -3317,12 +3317,12 @@
 	quest.18D3447E793BAC9F.quest_subtitle: "The most expensive of the three, and the most important."
 	quest.18D3447E793BAC9F.title: "&b&lBuild Engineering Processors"
 	quest.18D8DE96327D89F9.quest_desc: [
-		"&eRezept:&r ein &6rotes Glas&r (Red Stained Glass) oben links, drei &6Pneumatic Cylinders&r, unten Compressed Iron, &6PCB&r, Compressed Iron."
+		"&eRecipe:&r a &6red stained glass&r top left, three &6Pneumatic Cylinders&r, at the bottom Compressed Iron, &6PCB&r, Compressed Iron."
 		""
-		"Auch der Laser muss direkt an die Plattform. Mit dem Programm &eLaser&r macht er aus 20 Pressure Chamber Valves acht &6Advanced Pressure Tubes&r, aus einem Empty PCB ein &6Unassembled PCB&r und aus einem Quarzblock vier Aphorism Tiles."
+		"The laser also has to be directly at the platform. With the &eLaser&r program it turns 20 Pressure Chamber Valves into eight &6Advanced Pressure Tubes&r, an Empty PCB into an &6Unassembled PCB&r and a quartz block into four Aphorism Tiles."
 	]
-	quest.18D8DE96327D89F9.quest_subtitle: "Schneidet, was der Bohrer nicht kann."
-	quest.18D8DE96327D89F9.title: "&bBau einen Assembly Laser"
+	quest.18D8DE96327D89F9.quest_subtitle: "Cuts what the drill cannot."
+	quest.18D8DE96327D89F9.title: "&bBuild an Assembly Laser"
 	quest.18DE4A64C81C52E7.quest_desc: [
 		"Put a &6saddle&r on a &6Phyg&r, the winged pig of the Aether, and get on."
 		""
@@ -3767,14 +3767,14 @@
 	quest.1A2F1D25417D3AEE.quest_subtitle: "Mining Gadgets: ein Laser statt einer Spitzhacke."
 	quest.1A2F1D25417D3AEE.title: "&bBau das Mining Gadget"
 	quest.1A33962F72337913.quest_desc: [
-		"&eHarvest&r erntet jede reife Pflanze und jeden Baum im &eArea&r. Aufsammeln tut sie nichts, dafür wieder &ePick up Items&r dahinter oder eine Sammeldrohne."
+		"&eHarvest&r harvests every ripe plant and every tree in the &eArea&r. It picks nothing up, for that again &ePick up Items&r behind it or a collector drone."
 		""
-		"Lass sie eine &6Hacke&r importieren, dann pflanzt sie &enach&r. Mit Haken bei &eRequires Hoe&r erntet sie nur mit Hacke und holt sich eine neue, wenn die alte bricht. Ein Filter rechts mit dem Samen bestimmt, welche Pflanze sie erntet."
+		"Let it import a &6hoe&r, then it &ereplants&r. With &eRequires Hoe&r ticked it only harvests with a hoe and gets a new one when the old one breaks. A filter on the right with the seed decides which plant it harvests."
 		""
-		"Das war die Grundausstattung. Alles weitere (Bedingungen, Schleifen, Flüssigkeiten, Kämpfen, Crafting) steht im Patchouli-Buch von PneumaticCraft unter Programming."
+		"That was the basic kit. Everything further (conditions, loops, fluids, fighting, crafting) is in PneumaticCraft's Patchouli book under Programming."
 	]
-	quest.1A33962F72337913.quest_subtitle: "Erntet reife Felder und Bäume."
-	quest.1A33962F72337913.title: "&7Puzzleteil: Harvest"
+	quest.1A33962F72337913.quest_subtitle: "Harvests ripe fields and trees."
+	quest.1A33962F72337913.title: "&7Puzzle Piece: Harvest"
 	quest.1A35F04F63E9A5FD.quest_desc: [
 		"&dVenom Spores&r (spore blossom, red mushroom, Earth Essence): spores jump onto poisoned targets."
 		"&dEnvenom&r (poisonous potato, fermented spider eye, suspicious stew): poison that grows into venom."
@@ -4345,16 +4345,16 @@
 	quest.1C3B7E2EEA87A725.quest_subtitle: "Comes in stage 3. The chamber learns, but slowly."
 	quest.1C3B7E2EEA87A725.title: "&bThe Training Mode"
 	quest.1C41349412676BFC.quest_desc: [
-		"&eRezept:&r vier &6Pressure Chamber Walls&r in die Ecken, ein &6Omnidirectional Hopper&r oben, zwei &6Enderperlen&r an den Seiten, ein &6Netherstern&r in der Mitte, ein &6Advanced Pressure Tube&r unten."
+		"&eRecipe:&r four &6Pressure Chamber Walls&r in the corners, an &6Omnidirectional Hopper&r on top, two &6ender pearls&r on the sides, a &6Nether Star&r in the middle, an &6Advanced Pressure Tube&r at the bottom."
 		""
-		"Unter Druck verhält sich der Block wie ein Inventar, nur dass alles, was hineingeht, &edirekt bei dir&r landet, egal wo du bist. Ein &9Requester&r-Rahmen darauf, 64 Fackeln eingestellt, und du hast immer Fackeln dabei. Über die Seitenkonfiguration erreichst du auch Rüstung, Zweithand und Endertruhe."
+		"Under pressure the block behaves like an inventory, except that everything going in lands &edirectly with you&r, no matter where you are. A &9Requester&r frame on it, set to 64 torches, and you always have torches with you. Via the side configuration you also reach armor, offhand and ender chest."
 		""
-		"&eMehr:&r Mit FE am Block lädt er jedes Strom-Item in deinem Inventar (100 000 FE Puffer). Mit einem &6Dispenser Upgrade&r füttert er dich mit Essen aus dem Netz, sobald du hungrig genug bist, und pumpt flüssige Erfahrung hinein oder heraus. Für 80 mL pro Tick atmest du unter Wasser."
+		"&eMore:&r With FE on the block it charges every power item in your inventory (100,000 FE buffer). With a &6Dispenser Upgrade&r it feeds you food from the network as soon as you are hungry enough, and pumps liquid experience in or out. For 80 mL per tick you breathe underwater."
 		""
-		"Der Netherstern kommt vom Wither, siehe Kapitel &cNether&r. Tu das nicht in der Nähe einer Basis."
+		"The Nether Star comes from the Wither, see the &cNether&r chapter. Do not do that near a base."
 	]
-	quest.1C41349412676BFC.quest_subtitle: "Eine Kiste, die direkt in deine Taschen führt."
-	quest.1C41349412676BFC.title: "&d&lBau ein Aerial Interface"
+	quest.1C41349412676BFC.quest_subtitle: "A chest that leads straight into your pockets."
+	quest.1C41349412676BFC.title: "&d&lBuild an Aerial Interface"
 	quest.1C5237FB9264571A.quest_desc: [
 		"&6Brass casing&r, &6cogwheel&r and &6Electron Tube&r make the &6Sequenced Gearshift&r. On redstone it plays back up to five instructions: turn by an angle, move pistons by blocks, wait, reverse."
 		""
@@ -4817,14 +4817,14 @@
 	quest.1D8329C22BA9ED50.quest_subtitle: "Warm light for table and wall."
 	quest.1D8329C22BA9ED50.title: "&ePut Up Candle Holders"
 	quest.1D892FB5E1EED654.quest_desc: [
-		"&6Display Table:&r drei &6Reinforced Stone Slabs&r über zwei Compressed Iron. Ein &6Buch und Feder&r darüber ergibt die &6Tag Workbench&r."
+		"&6Display Table:&r three &6Reinforced Stone Slabs&r over two Compressed Iron. A &6Book and Quill&r above it gives the &6Tag Workbench&r."
 		""
-		"Leg links einen Gegenstand hinein, wähl seine Tags per Doppelklick, leg Papier in die Mitte und drück auf das Buch: heraus kommt ein &6Tag Filter&r."
+		"Put an item in on the left, select its tags with a double click, put paper in the middle and press the book: out comes a &6Tag Filter&r."
 		""
-		"Den Tag Filter steckst du in die Filter der Logistics Frames oder in Item-Filter-Teile im Programmer. Er passt auf jeden Gegenstand mit einem der Tags, etwa alle Stämme oder alle Rohen Erze."
+		"You put the Tag Filter into the filters of the Logistics Frames or into Item Filter pieces in the Programmer. It matches every item with one of the tags, for example all logs or all raw ores."
 	]
-	quest.1D892FB5E1EED654.quest_subtitle: "Alle Stämme, alle Erze, ein Filter."
-	quest.1D892FB5E1EED654.title: "&6Filter nach Tags"
+	quest.1D892FB5E1EED654.quest_subtitle: "All logs, all ores, one filter."
+	quest.1D892FB5E1EED654.title: "&6Filter by Tags"
 	quest.1D92AB179B32250C.quest_desc: [
 		"A &6nickel&r in the top middle, below it &6steel&r, &6Magnetic Coil&r, steel make one &6Motor&r."
 		""
@@ -5272,14 +5272,14 @@
 	quest.1EB2679182ED50A9.quest_subtitle: "Seismic Vibrator and Seismic Reader."
 	quest.1EB2679182ED50A9.title: "&6Listen into the ground"
 	quest.1EBD80B5168BEC29.quest_desc: [
-		"Zähl zusammen, was dieses Kapitel an &6Printed Circuit Boards&r will: Programmer, Solar Compressor, Security Station, Programmable Controller, jede Drohne, jede Charge Puzzleteile. Sechzehn sind ein guter Anfang."
+		"Add up what this chapter wants in &6Printed Circuit Boards&r: Programmer, Solar Compressor, Security Station, Programmable Controller, every drone, every batch of puzzle pieces. Sixteen are a good start."
 		""
-		"&eWenn die Säure schneller sein soll:&r Ein &6Etching Tank&r ohne Wärme braucht 150 Sekunden pro Platine, aber ätzt 25 auf einmal. Geheizt sinkt die Zeit auf &e30 Sekunden&r, dafür verbraucht er dabei etwas Säure. Speed Upgrades in der &6UV Light Box&r drücken die 10 Minuten Belichtung."
+		"&eIf the acid should be faster:&r An &6Etching Tank&r without heat needs 150 seconds per board, but etches 25 at once. Heated the time drops to &e30 seconds&r, but it uses some acid. Speed Upgrades in the &6UV Light Box&r cut the 10 minutes of exposure."
 		""
-		"&eFehlversuche:&r Ein &6Failed PCB&r wird im Schmelzofen (Blast Furnace) wieder zum Empty PCB. Ein Trichter unter dem Etching Tank in einen Blast Furnace und zurück, und nichts geht verloren."
+		"&eFailures:&r A &6Failed PCB&r becomes an Empty PCB again in the blast furnace. A hopper under the Etching Tank into a blast furnace and back, and nothing is lost."
 	]
-	quest.1EBD80B5168BEC29.quest_subtitle: "Sechzehn PCBs, dann reicht es für alles hier."
-	quest.1EBD80B5168BEC29.title: "&a&lMach Leiterplatten in Serie"
+	quest.1EBD80B5168BEC29.quest_subtitle: "Sixteen PCBs, then there is enough for everything here."
+	quest.1EBD80B5168BEC29.title: "&a&lMake Circuit Boards in Series"
 	quest.1EC7DBE5AE3B7A5E.quest_desc: [
 		"&eRecipe:&r &6Brass Casing&r top and bottom, &6shaft&r, &6clutch&r, &6shaft&r in the middle give the &6Kinetic Bridge&r. It passes a fixed amount of stress capacity, which you set in the value box, from one shaft network to a second one and keeps both separate: if one is overstressed, the other keeps running."
 		""
@@ -5811,12 +5811,12 @@
 	quest.206F07EC971C7521.quest_subtitle: "Kronwerke: brass needs a magician."
 	quest.206F07EC971C7521.title: "&6Build an Empty Blaze Burner"
 	quest.20773ED6F473E146.quest_desc: [
-		"&eRezept:&r ein &6Hopper&r (Import) oder ein &6Dropper&r (Export) oben links, drei &6Pneumatic Cylinders&r, unten Compressed Iron, &6PCB&r, Compressed Iron. Eine Import Unit wird an der Werkbank ohne Zutat zur Export Unit und zurück."
+		"&eRecipe:&r a &6hopper&r (import) or a &6dropper&r (export) top left, three &6Pneumatic Cylinders&r, at the bottom Compressed Iron, &6PCB&r, Compressed Iron. An Import Unit becomes an Export Unit at the crafting table without an ingredient and back."
 		""
-		"Die Straße braucht &egenau zwei&r: eine &9blaue&r Import Unit, die Werkstücke aus einer Kiste auf die Plattform legt, und eine &6orange&r Export Unit, die das Ergebnis in eine Kiste räumt. Die Arme greifen auch &ediagonal&r, Kiste und Plattform müssen also nur in Reichweite stehen."
+		"The line needs &eexactly two&r: a &9blue&r Import Unit, which puts workpieces from a chest onto the platform, and an &6orange&r Export Unit, which clears the result into a chest. The arms also reach &ediagonally&r, so chest and platform only have to be in range."
 	]
-	quest.20773ED6F473E146.quest_subtitle: "Ein Arm, der hineinlegt, einer, der herausnimmt."
-	quest.20773ED6F473E146.title: "&bBau zwei Assembly IO Units"
+	quest.20773ED6F473E146.quest_subtitle: "One arm that puts in, one that takes out."
+	quest.20773ED6F473E146.title: "&bBuild Two Assembly IO Units"
 	quest.207CCFAD971797F7.quest_desc: [
 		"&6Iron&r in the corners, a &6Draconium Ingot&r at the top, a &6diamond sword&r left and right, a &6Wyvern Energy Controller&r in the middle, any &6head&r at the bottom."
 		""
@@ -6031,14 +6031,14 @@
 	quest.210DAD7590BAA085.quest_subtitle: "Oritech: 32 FE/t Basis, 64 Bio und Lava, 256 Brennstoff, 32 Solar."
 	quest.210DAD7590BAA085.title: "&cStell die Oritech-Generatoren"
 	quest.210F792C17475B19.quest_desc: [
-		"&eRezept:&r vier &6Redstone&r um einen &6Logistics Core&r, unten zwei &6Pressure Tubes&r."
+		"&eRecipe:&r four &6redstone&r around a &6Logistics Core&r, two &6Pressure Tubes&r at the bottom."
 		""
-		"Das Modul sitzt am Rohr und zeigt auf eine Kiste oder einen Tank mit &6Logistics Frame&r. Alle Module, die über Rohre verbunden sind, bilden ein Netz und verschieben Gegenstände und Flüssigkeiten nach den Regeln der Rahmen, wie die Logistics Drone."
+		"The module sits on the tube and points at a chest or tank with a &6Logistics Frame&r. All modules connected via tubes form a network and move items and fluids by the frames' rules, like the Logistics Drone."
 		""
-		"Es braucht mindestens &e3 bar&r. Weiter weg und mehr Ware kostet mehr Luft, verbraucht am empfangenden Modul. Mit Farbstoff wählst du einen von 16 Kanälen. &aGrün&r heißt bereit, &9blau&r blinkend heißt, es läuft gerade etwas."
+		"It needs at least &e3 bar&r. Farther away and more goods cost more air, used at the receiving module. With dye you choose one of 16 channels. &aGreen&r means ready, &9blue&r blinking means something is in progress."
 	]
-	quest.210F792C17475B19.quest_subtitle: "Logistik durch Rohre, ganz ohne Drohne."
-	quest.210F792C17475B19.title: "&6Verbinde Kisten mit Logistics Modules"
+	quest.210F792C17475B19.quest_subtitle: "Logistics through tubes, without any drone."
+	quest.210F792C17475B19.title: "&6Connect Chests with Logistics Modules"
 	quest.210FED59F901CC41.quest_desc: [
 		"Eight &6Arcane Essence&r around an &6iron&r, &6copper&r or &6gold ingot&r give an &6Arcane Ingot&r. Use copper, you need it least otherwise."
 		""
@@ -6193,14 +6193,14 @@
 	quest.216A245196723867.title: "&aMake a Quarry with the Quarry Addon"
 	quest.217A0BFE64EE5773.quest_desc: [
 		"{image:kronwerke:textures/quests/shots/pneumaticcraft_advanced_first_run.png width:224 height:126 align:center}"
-		"&eAufbau:&r Plattform in die Mitte, Drill und Laser direkt daneben, die beiden IO Units an die freien Seiten, dahinter je eine Kiste. Der Controller steht irgendwo in der Reihe, alle Maschinen müssen sich &ewaagerecht berühren&r. Nur der Controller bekommt ein Pressure Tube."
+		"&eSetup:&r Platform in the middle, drill and laser directly next to it, the two IO Units on the free sides, a chest behind each. The controller stands somewhere in the row, all machines must &etouch horizontally&r. Only the controller gets a Pressure Tube."
 		""
-		"Leg das Programm &eDrill&r in den Controller und einen &6Compressed Iron Block&r in die Eingangskiste. Die Import Unit legt ihn auf die Plattform, der Bohrer arbeitet, die Export Unit räumt &e20 Pressure Chamber Valves&r in die Ausgangskiste."
+		"Put the &eDrill&r program into the controller and a &6Compressed Iron Block&r into the input chest. The Import Unit puts it on the platform, the drill works, the Export Unit clears &e20 Pressure Chamber Valves&r into the output chest."
 		""
-		"Die Anzeige auf dem Controller sagt dir, was fehlt. Rot heißt meistens: eine Maschine fehlt, steht doppelt oder nicht in der Reihe."
+		"The display on the controller tells you what is missing. Red usually means: a machine is missing, is there twice or is not in the row."
 	]
-	quest.217A0BFE64EE5773.quest_subtitle: "Ein Block hinein, zwanzig Ventile heraus."
-	quest.217A0BFE64EE5773.title: "&b&lLass die Straße laufen"
+	quest.217A0BFE64EE5773.quest_subtitle: "One block in, twenty valves out."
+	quest.217A0BFE64EE5773.title: "&b&lRun the Line"
 	quest.217A679D035F1E09.quest_desc: [
 		"Imperium-Werkzeug in die Mitte, 2 Supremiumbarren und 2 Supremium-Edelsteine drumherum. Erwachtes Supremium kommt aus dem Erweckungsaltar."
 		""
@@ -6727,16 +6727,16 @@
 	quest.22E0E03F4FD890C4.title: "&6Split the Tribute into Marks"
 	quest.22E942AC131830D5.quest_desc: [
 		"{image:kronwerke:textures/quests/shots/pneumaticcraft_advanced_spawner_extractor.png width:224 height:126 align:center}"
-		"&eRezept:&r Compressed Iron, &6Pressure Tube&r, Compressed Iron oben, &6Pressure Chamber Wall&r, &6Spawner Agitator&r, Pressure Chamber Wall in der Mitte, Obsidian, &6Drill Pipe&r, Obsidian unten. Der Agitator: acht Compressed Iron um eine &6Ghast-Träne&r."
+		"&eRecipe:&r Compressed Iron, &6Pressure Tube&r, Compressed Iron on top, &6Pressure Chamber Wall&r, &6Spawner Agitator&r, Pressure Chamber Wall in the middle, obsidian, &6Drill Pipe&r, obsidian at the bottom. The agitator: eight Compressed Iron around a &6ghast tear&r."
 		""
-		"Setz ihn &eauf&r einen Spawner aus einem Verlies und gib ihm &c-0,5 bar&r Unterdruck oder weniger (Vacuum Pump, siehe Kapitel &bPneumaticCraft&r). Dann wehr dich: Der Spawner spawnt wie wild, jedes Monster in der Nähe bremst, zu viele halten alles an. Du musst in der Nähe bleiben."
+		"Put it &eon top of&r a spawner from a dungeon and give it &c-0.5 bar&r of negative pressure or less (Vacuum Pump, see the &bPneumaticCraft&r chapter). Then defend yourself: the spawner spawns like crazy, every monster nearby slows it down, too many stop everything. You have to stay nearby."
 		""
-		"Nach etwa &e60 Sekunden&r springt ein &6Spawner Core&r heraus, zu 100 Prozent mit diesem Monster gefüllt, und der Spawner wird zum &6Empty Spawner&r. Bau den ab, du brauchst ihn für den Pressurized Spawner."
+		"After about &e60 seconds&r a &6Spawner Core&r pops out, filled 100 percent with that monster, and the spawner becomes an &6Empty Spawner&r. Mine it, you need it for the Pressurized Spawner."
 		""
-		"&eTipp:&r Wer Apotheosis-Spawner mit Behutsamkeit holt (Kapitel &dApotheosis&r), stellt sie zu Hause auf und extrahiert dort, mit Licht und Mauern nach Wunsch."
+		"&eTip:&r Whoever gets Apotheosis spawners with Silk Touch (chapter &dApotheosis&r) puts them up at home and extracts there, with light and walls as desired."
 	]
-	quest.22E942AC131830D5.quest_subtitle: "Reiß dem Spawner sein Herz heraus."
-	quest.22E942AC131830D5.title: "&2Bau einen Spawner Extractor"
+	quest.22E942AC131830D5.quest_subtitle: "Rip out the spawner's heart."
+	quest.22E942AC131830D5.title: "&2Build a Spawner Extractor"
 	quest.22EE3CFB439CE226.quest_desc: [
 		"{image:kronwerke:textures/quests/shots/nuclearcraft_reactor.png width:224 height:126 align:center}"
 		"Inside a cell in the middle, one or two graphite blocks next to it, water heat sinks on the remaining sides. Outside the shell, controller and port in the wall. LEU into the port, a redstone signal on the controller or port."
@@ -6769,14 +6769,14 @@
 	quest.22FA0CD5D7FD2963.quest_subtitle: "He gives you the Orb of Prophecy."
 	quest.22FA0CD5D7FD2963.title: "&b&lDefeat the Gatekeeper"
 	quest.230593507CE17849.quest_desc: [
-		"Upgrades kommen über die &6Charging Station&r in die Drohne, Pfeil über dem Slot. &6Inventory Upgrade&r (Lapis in die Ecken, Bretter an die Seiten, Truhe in die Mitte): ein Platz mehr und &e16 000 mB&r mehr Tank je Upgrade. Ohne trägt sie nur einen Stapel."
+		"Upgrades go into the drone via the &6Charging Station&r, arrow above the slot. &6Inventory Upgrade&r (lapis in the corners, planks on the sides, chest in the middle): one slot more and &e16,000 mB&r more tank per upgrade. Without it, it only carries one stack."
 		""
-		"&6Magnet Upgrade&r (Lapis, Compressed Iron, Plastic Sheet in der Mitte): Die Drohne sammelt Gegenstände in &e2 Blöcken&r Umkreis ein, jedes weitere Upgrade einen Block mehr."
+		"&6Magnet Upgrade&r (lapis, Compressed Iron, Plastic Sheet in the middle): the drone collects items within &e2 blocks&r, every further upgrade one block more."
 		""
-		"&6Speed Upgrade:&r 10 Prozent schneller je Stück. &6Standby Upgrade:&r Sie ruht, wenn sie nichts zu tun hat, und spart Luft. &6Chunkloader Upgrade:&r hält ihren Chunk geladen, mit drei Upgrades 3x3 Chunks."
+		"&6Speed Upgrade:&r 10 percent faster each. &6Standby Upgrade:&r it rests when it has nothing to do and saves air. &6Chunkloader Upgrade:&r keeps its chunk loaded, with three upgrades 3x3 chunks."
 	]
-	quest.230593507CE17849.quest_subtitle: "Mehr tragen, Dinge anziehen, Chunks laden."
-	quest.230593507CE17849.title: "&5Rüste deine Drohnen auf"
+	quest.230593507CE17849.quest_subtitle: "Carry more, attract things, load chunks."
+	quest.230593507CE17849.title: "&5Upgrade Your Drones"
 	quest.230AC4A57074C657.quest_desc: [
 		"Plastic Sheet, &6Compressed Iron Block&r, Plastic Sheet on top, Compressed Iron, Pressure Tube, Compressed Iron in the middle, diamond, &6Pneumatic Cylinder&r, diamond at the bottom give the &6Pneumatic Jackhammer&r."
 		""
@@ -8922,14 +8922,14 @@
 	quest.2942F44C4E626DCD.quest_subtitle: "The wireless terminal without a range limit."
 	quest.2942F44C4E626DCD.title: "&dBuild a Quantum Bridge Card"
 	quest.2943E707A8F30D04.quest_desc: [
-		"&eRezept auf Kronwerke:&r oben ein &6Advanced Pressure Tube&r, in der Mitte Gear, Compressed Iron, Gear, unten Compressed Iron, &6Einfacher Steuerschaltkreis&r, Compressed Iron."
+		"&eRecipe on Kronwerke:&r an &6Advanced Pressure Tube&r on top, in the middle gear, Compressed Iron, gear, at the bottom Compressed Iron, &6Basic Control Circuit&r, Compressed Iron."
 		""
-		"Der Dynamo ist der Flux Compressor rückwärts: aus 100 mL Luft werden &e40 FE&r, bei &e40 FE pro Tick&r im Grundzustand und einem Ausgang von 80 FE pro Tick. Speed Upgrades erhöhen beides. Auch er wird warm und braucht Heat Sinks."
+		"The dynamo is the Flux Compressor in reverse: 100 mL of air become &e40 FE&r, at &e40 FE per tick&r in the base state and an output of 80 FE per tick. Speed Upgrades raise both. It also gets warm and needs heat sinks."
 		""
-		"Wann lohnt das? Wenn du mit Elektrostatik oder Sonne mehr Luft hast als Maschinen. Ein Dynamo neben einem Energie-Würfel macht aus dem Überschuss Strom für alle anderen Mods."
+		"When does it pay off? When you have more air than machines from electrostatics or sun. A dynamo next to an energy cube turns the surplus into power for all other mods."
 	]
-	quest.2943E707A8F30D04.quest_subtitle: "Luft wird zu Strom."
-	quest.2943E707A8F30D04.title: "&dBau einen Pneumatic Dynamo"
+	quest.2943E707A8F30D04.quest_subtitle: "Air becomes power."
+	quest.2943E707A8F30D04.title: "&dBuild a Pneumatic Dynamo"
 	quest.2949F53EF3148917.quest_desc: [
 		"The &6Dark Tower&r stands in forests, plains and taigas. Inside: spawners, Bonescallers, Skeleton Thrashers and at the very top the &cSupreme Bonescaller&r (65 health, then a second form with 60)."
 		""
@@ -9270,14 +9270,14 @@
 	quest.2A7035218AA9DFF0.quest_subtitle: "Damage to everything except players."
 	quest.2A7035218AA9DFF0.title: "&6Plant a Bellethorne"
 	quest.2A72E38C0FC2E6EF.quest_desc: [
-		"&eRezept:&r vier &6Turbine Rotors&r um ein &6Eisenschwert&r."
+		"&eRecipe:&r four &6Turbine Rotors&r around an &6iron sword&r."
 		""
-		"Setz sie gegen eine Kiste mit einem Nahkampf-Schwert. Sie holt sich eins und greift jedes feindliche Monster an: &e16 Blöcke&r zur Seite, 8 nach oben, 5 nach unten. Weniger nach unten, damit sie nicht in jede Höhle teleportiert."
+		"Place it against a chest with a melee sword. It takes one and attacks every hostile monster: &e16 blocks&r to the side, 8 up, 5 down. Less downward, so it does not teleport into every cave."
 		""
-		"Leg Ersatzschwerter in die Kiste. Bricht das letzte, kämpft sie mit bloßen Rotoren weiter, und das bringt wenig. In Stufe 4 bekommt sie ein Minigun Upgrade und Munition statt Schwert."
+		"Put spare swords in the chest. If the last one breaks, it keeps fighting with bare rotors, and that does little. In stage 4 it gets a Minigun Upgrade and ammo instead of a sword."
 	]
-	quest.2A72E38C0FC2E6EF.quest_subtitle: "Ein Schwert aus der Kiste, dann Wache."
-	quest.2A72E38C0FC2E6EF.title: "&cSetz eine Guard Drone ein"
+	quest.2A72E38C0FC2E6EF.quest_subtitle: "A sword from the chest, then guard duty."
+	quest.2A72E38C0FC2E6EF.title: "&cDeploy a Guard Drone"
 	quest.2A74FD2E1C36B09C.quest_desc: [
 		"Two &6Treated Sticks&r, three &6Steel Rods&r, two &6LV Wire Connectors&r, a &6leather&r and two &6Insulated LV Wire Coils&r make the frame. At the &6Engineer's Workbench&r you insert an &6accumulator&r."
 		""
@@ -9560,16 +9560,16 @@
 	quest.2B5B554394BB3E43.quest_subtitle: "Ender IO: 40 µI/t Stirling, 4 bis 64 µI/t Photovoltaik, Kondensatorbänke."
 	quest.2B5B554394BB3E43.title: "&5Bau den Stirling Generator"
 	quest.2B5CA14619486FF0.quest_desc: [
-		"&e1.&r &6Upgrade Matrix&r: ein Lapislazuli mit 1 000 mB Wasser in der &6Thermopneumatic Processing Plant&r bei 2 bar ergibt vier Matrizen."
-		"&e2.&r &6Solar Wafer&r: eine Matrix und eine &6Amethystscherbe&r in der Druckkammer bei &e2,5 bar&r."
-		"&e3.&r &6Solar Cell&r: der Wafer mit dem Programm &eDrill&r durch die Montagestraße."
+		"&e1.&r &6Upgrade Matrix&r: a lapis lazuli with 1,000 mB of water in the &6Thermopneumatic Processing Plant&r at 2 bar gives four matrices."
+		"&e2.&r &6Solar Wafer&r: a matrix and an &6amethyst shard&r in the Pressure Chamber at &e2.5 bar&r."
+		"&e3.&r &6Solar Cell&r: the wafer through the assembly line with the &eDrill&r program."
 		""
-		"Du brauchst drei Zellen für den Kompressor und weitere, um ihn zu reparieren, falls er überhitzt. Mach also gleich sechs."
+		"You need three cells for the compressor and more to repair it if it overheats. So make six right away."
 		""
-		"&eTipp:&r Die Upgrade Matrix ersetzt in jedem Upgrade-Rezept den Lapislazuli, aus einem Lapis werden so vier Upgrades statt einem."
+		"&eTip:&r The Upgrade Matrix replaces the lapis lazuli in every upgrade recipe, that way one lapis becomes four upgrades instead of one."
 	]
-	quest.2B5CA14619486FF0.quest_subtitle: "Lapis, Wasser, Amethyst und der Bohrer."
-	quest.2B5CA14619486FF0.title: "&6Mach drei Solar Cells"
+	quest.2B5CA14619486FF0.quest_subtitle: "Lapis, water, amethyst and the drill."
+	quest.2B5CA14619486FF0.title: "&6Make Three Solar Cells"
 	quest.2B62F934479B6975.quest_desc: [
 		"&eRecipe:&r lever on top, &6Brass Casing&r in the middle, &6Precision Mechanism&r at the bottom give a &6Brass Switch&r. Placed like the Andesite Switch: click the track, put it down next to it."
 		""
@@ -10441,14 +10441,14 @@
 	quest.2DE28351347147D7.quest_subtitle: "Create Diesel Generators, 96 RPM, 4 096 bis 8 192 SU aus einem Block."
 	quest.2DE28351347147D7.title: "&6Bau einen Dieselmotor"
 	quest.2DE5C264C705BA2F.quest_desc: [
-		"&eRezept:&r ein &6Advanced Pressure Tube&r oben, Compressed Iron, &6Air Canister&r, Compressed Iron in der Mitte, drei Compressed Iron unten."
+		"&eRecipe:&r an &6Advanced Pressure Tube&r on top, Compressed Iron, &6Air Canister&r, Compressed Iron in the middle, three Compressed Iron at the bottom."
 		""
-		"Er fasst &e6 000 mL&r statt 3 000, lädt bis &e20 bar&r und explodiert nie. In einer Kiste mit einem &6Charging Module&r am Rohr davor wird er zum Luftspeicher, den du überallhin tragen kannst."
+		"It holds &e6,000 mL&r instead of 3,000, charges up to &e20 bar&r and never explodes. In a chest with a &6Charging Module&r on the tube in front of it, it becomes an air storage you can carry anywhere."
 		""
-		"Vier davon im Quadrat ergeben ein &6Reinforced Air Canister Array&r. Das brauchst du im nächsten Schritt."
+		"Four of them in a square give a &6Reinforced Air Canister Array&r. You need it in the next step."
 	]
-	quest.2DE5C264C705BA2F.quest_subtitle: "Doppelt so viel Luft, bis 20 bar."
-	quest.2DE5C264C705BA2F.title: "&3Bau Reinforced Air Canisters"
+	quest.2DE5C264C705BA2F.quest_subtitle: "Twice as much air, up to 20 bar."
+	quest.2DE5C264C705BA2F.title: "&3Build Reinforced Air Canisters"
 	quest.2DE72750DFE6D2F0.quest_desc: [
 		"&64k Crafting Storage:&r a Crafting Unit and a 4k component, shapeless. Larger storages allow orders with more ingredients and steps in between."
 		""
@@ -11565,14 +11565,14 @@
 	quest.322ED1DE454A12EE.quest_subtitle: "Chain conveyor and frog."
 	quest.322ED1DE454A12EE.title: "&6Send packages by chain"
 	quest.3231356B06AD1A32.quest_desc: [
-		"&eRezept GPS Tool:&r eine Redstone-Fackel oben, Plastic Sheet, Glasscheibe, Plastic Sheet in der Mitte, Plastic Sheet, &6Diamant&r, Plastic Sheet unten. Zwei GPS Tools zusammen ergeben das &6GPS Area Tool&r."
+		"&eGPS Tool recipe:&r a redstone torch on top, Plastic Sheet, glass pane, Plastic Sheet in the middle, Plastic Sheet, &6diamond&r, Plastic Sheet at the bottom. Two GPS Tools together give the &6GPS Area Tool&r."
 		""
-		"Das &6GPS Tool&r merkt sich mit Rechtsklick einen Block. Das &6Area Tool&r merkt sich zwei Ecken: Rechtsklick für die erste, Linksklick für die zweite, und zeigt den Bereich dazwischen an."
+		"The &6GPS Tool&r remembers a block with a right click. The &6Area Tool&r remembers two corners: right click for the first, left click for the second, and shows the area in between."
 		""
-		"Im Programmer klickst du mit dem Werkzeug auf ein &eArea&r-Teil, und die Koordinaten springen hinein. Linksklick mit dem Area Tool auf eine freie Stelle legt gleich ein neues Area-Teil an."
+		"In the Programmer you click an &eArea&r piece with the tool, and the coordinates jump in. A left click with the Area Tool on an empty spot creates a new Area piece right away."
 	]
-	quest.3231356B06AD1A32.quest_subtitle: "So sagst du der Drohne, wo."
-	quest.3231356B06AD1A32.title: "&5Bau GPS Tool und GPS Area Tool"
+	quest.3231356B06AD1A32.quest_subtitle: "That is how you tell the drone where."
+	quest.3231356B06AD1A32.title: "&5Build the GPS Tool and GPS Area Tool"
 	quest.32352D5A1345019C.quest_desc: [
 		"&eSunshine&r: Thick Potion (water bottle plus glowstone dust). &eLuck&r: Potion of Luck."
 		""
@@ -11588,14 +11588,14 @@
 	quest.3237EF8B25F399B0.quest_subtitle: "Like the barrel, only as a chest."
 	quest.3237EF8B25F399B0.title: "Build an upgradeable chest"
 	quest.3256C9684CC2EC3A.quest_desc: [
-		"&eRezept:&r oben roter Farbstoff, eine &6schwarze Glasscheibe&r, roter Farbstoff. Mitte: &6Turbine Rotor&r, &6PCB&r, Turbine Rotor. Unten zwei &6Plastic Sheets&r in die Ecken."
+		"&eRecipe:&r on top red dye, a &6black stained glass pane&r, red dye. Middle: &6Turbine Rotor&r, &6PCB&r, Turbine Rotor. Two &6Plastic Sheets&r in the bottom corners."
 		""
-		"Der Programmer braucht &ekeine Luft&r. Du setzt Programme aus &6Puzzleteilen&r zusammen, die ineinandergreifen wie ein Puzzle, und schreibst sie mit dem Pfeil auf eine Drohne im Slot oben rechts. Die Teile dafür liegen in deinem Inventar oder in einer Kiste direkt am Programmer."
+		"The Programmer needs &eno air&r. You assemble programs from &6puzzle pieces&r that fit into each other like a puzzle, and write them with the arrow onto a drone in the top right slot. The pieces for it lie in your inventory or in a chest directly at the Programmer."
 		""
-		"&eIm Fenster:&r Links die Fläche für dein Programm, rechts die Ablage mit allen Teilen (mit &eLeertaste&r aufklappen und suchen), unten die Schwierigkeit: Easy zeigt nur die wichtigsten Teile. Fang damit an."
+		"&eIn the window:&r on the left the area for your program, on the right the tray with all pieces (open and search with &espace&r), at the bottom the difficulty: Easy shows only the most important pieces. Start with that."
 	]
-	quest.3256C9684CC2EC3A.quest_subtitle: "Hier werden Drohnen programmiert."
-	quest.3256C9684CC2EC3A.title: "&5&lBau einen Programmer"
+	quest.3256C9684CC2EC3A.quest_subtitle: "This is where drones get programmed."
+	quest.3256C9684CC2EC3A.title: "&5&lBuild a Programmer"
 	quest.3256D8605808D07A.quest_desc: [
 		"{image:kronwerke:textures/quests/shots/ae2_cpu.png width:224 height:126 align:center}"
 		"&6Crafting Unit:&r iron in the corners, Calculation Processors at the top and bottom, glass cables on the sides, a Logic Processor in the middle. A unit plus a 1k component gives a &61k Crafting Storage&r, a unit plus an Engineering Processor a &6Crafting Co-Processing Unit&r."
@@ -12965,12 +12965,12 @@
 	quest.385B4DD277CDEC98.quest_subtitle: "A clear space, otherwise the beacon accepts nothing."
 	quest.385B4DD277CDEC98.title: "&dBuild the Arena"
 	quest.385C6799DC742026.quest_desc: [
-		"&eRezept:&r acht &6Plastic Sheets&r um ein &6Printed Circuit Board&r ergeben acht &6Programming Puzzles&r."
+		"&eRecipe:&r eight &6Plastic Sheets&r around a &6Printed Circuit Board&r give eight &6Programming Puzzles&r."
 		""
-		"Jedes Teil im Programm kostet beim Schreiben ein Puzzleteil. Überschreibst du die Drohne mit einem kürzeren Programm, bekommst du die Teile zurück. Ein einfaches Programm hat sechs bis zehn Teile, also mach gleich eine Kiste voll."
+		"Every piece in the program costs one puzzle piece when writing. If you overwrite the drone with a shorter program, you get the pieces back. A simple program has six to ten pieces, so make a chest full right away."
 	]
-	quest.385C6799DC742026.quest_subtitle: "Acht Plastik, ein PCB, acht Teile."
-	quest.385C6799DC742026.title: "&5Mach Programming Puzzles"
+	quest.385C6799DC742026.quest_subtitle: "Eight plastic, one PCB, eight pieces."
+	quest.385C6799DC742026.title: "&5Make Programming Puzzles"
 	quest.38697538D116B810.quest_desc: [
 		"An &6Iron Plate&r on top, glass pane, &6Incandescent Light Bulb&r, glass pane in the middle, a &6Copper Wire&r at the bottom make the &6Powered Lantern&r. Light bulbs are made at the workbench with the Components blueprint."
 		""
@@ -13426,16 +13426,16 @@
 	quest.3AEDADF7F021D005.title: "&dFuse the Draconic Bow"
 	quest.3AF7C5D41B08E881.quest_desc: [
 		"{image:kronwerke:textures/quests/shots/pneumaticcraft_advanced_first_program.png width:224 height:126 align:center}"
-		"&eDas Programm:&r Start, darunter &eImport from Inventory&r mit einem Area auf eine Kiste mit einer Schaufel und einem Item Filter auf die Schaufel (Haltbarkeit aus). Darunter &eDig Area&r mit einem Area auf ein Stück Erde oder Sand."
+		"&eThe program:&r Start, below it &eImport from Inventory&r with an Area on a chest with a shovel and an Item Filter on the shovel (durability off). Below that &eDig Area&r with an Area on a patch of dirt or sand."
 		""
-		"Geladene Drohne in den Slot oben rechts, Pfeil drücken, Ton hören. Dann die Drohne irgendwo in der Nähe der Kiste in die Welt klicken und zusehen."
+		"Charged drone into the top right slot, press the arrow, hear the sound. Then click the drone into the world somewhere near the chest and watch."
 		""
-		"&eWenn sie nichts tut:&r Hat sie Luft? Liegt die Schaufel wirklich in der Kiste im Area? Ist der Filter auf dieselbe Schaufel? Ein Rechtsklick mit einem GPS Tool auf die Drohne schickt sie zu dessen Koordinate, so testest du, ob sie überhaupt fliegt."
+		"&eIf it does nothing:&r Does it have air? Is the shovel really in the chest in the Area? Is the filter on the same shovel? A right click on the drone with a GPS Tool sends it to that coordinate, that way you test whether it flies at all."
 		""
-		"Ab hier gilt: Wer eine Drohne programmieren kann, kann fast alles automatisieren. Rechtsklick mit Farbstoff färbt sie, damit du deine Flotte auseinanderhältst."
+		"From here on: whoever can program a drone can automate almost anything. Right click with dye colors it, so you can tell your fleet apart."
 	]
-	quest.3AF7C5D41B08E881.quest_subtitle: "Start, Import, Dig. Mehr braucht es nicht."
-	quest.3AF7C5D41B08E881.title: "&d&lProgrammiere deine erste Drohne"
+	quest.3AF7C5D41B08E881.quest_subtitle: "Start, Import, Dig. That is all it takes."
+	quest.3AF7C5D41B08E881.title: "&d&lProgram Your First Drone"
 	quest.3AFEBCE0356C687A.quest_desc: [
 		"{image:kronwerke:textures/quests/shots/antimatter_wind.png width:224 height:126 align:center}"
 		"Six &6steel blocks&r on the sides, a &6Wind Generator&r in the top middle, a &6Robit&r in the middle, an &6Ultimate Induction Cell&r at the bottom."
@@ -14454,14 +14454,14 @@
 	quest.3EF0490971BDDD89.title: "&6Bake Sourdough Bread"
 	quest.3F05BE6E2C01A787.quest_desc: [
 		"{image:kronwerke:textures/quests/shots/pneumaticcraft_advanced_electrostatic.png width:224 height:126 align:center}"
-		"&eRezept:&r vier &6Eisengitter&r in die Ecken, drei &6Plastic Sheets&r oben und an den Seiten, ein &6Turbine Rotor&r in die Mitte, der &6Advanced Air Compressor&r unten."
+		"&eRecipe:&r four &6iron bars&r in the corners, three &6Plastic Sheets&r on top and on the sides, a &6Turbine Rotor&r in the middle, the &6Advanced Air Compressor&r at the bottom."
 		""
-		"Jeder Blitzeinschlag bringt &e200 000 mL&r Luft auf einmal. Der Kompressor erzeugt die Blitze selbst, bei klarem Himmel fast nie, bei Regen öfter, im &eGewitter&r sehr oft. Echte Blitze zählen nicht."
+		"Every lightning strike brings &e200,000 mL&r of air at once. The compressor creates the lightning itself, almost never under a clear sky, more often in rain, very often in a &ethunderstorm&r. Real lightning does not count."
 		""
-		"&eAufbau:&r Ein Gitter aus &6Eisengittern&r oder Blitzableitern, mit dem Kompressor verbunden, bis 5 Blöcke zur Seite und 5 nach oben und unten, erhöht die Chance. Bis zu 10 Gitter direkt darüber bilden einen Blitzableiter. Eisengitter &edirekt darunter&r leiten je 10 000 mL Überdruck ab, damit er nach dem Einschlag nicht platzt. Zwei bis drei reichen bei einem Kompressor."
+		"&eSetup:&r A grid of &6iron bars&r or lightning rods connected to the compressor, up to 5 blocks to the side and 5 up and down, raises the chance. Up to 10 bars directly above form a lightning rod. Iron bars &edirectly below&r each vent 10,000 mL of overpressure so it does not burst after the strike. Two to three are enough for one compressor."
 	]
-	quest.3F05BE6E2C01A787.quest_subtitle: "Ein Blitz, 200 000 mL Luft."
-	quest.3F05BE6E2C01A787.title: "&eBau einen Electrostatic Compressor"
+	quest.3F05BE6E2C01A787.quest_subtitle: "One lightning bolt, 200,000 mL of air."
+	quest.3F05BE6E2C01A787.title: "&eBuild an Electrostatic Compressor"
 	quest.3F108701026EFF92.quest_desc: [
 		"In the water cauldron: &e6 leather&r, a &6string&r, a &6gold nugget&r. The &6Small Satchel&r gives a broom &e9 slots&r."
 		""
@@ -14870,12 +14870,12 @@
 	quest.40995844B154C20D.quest_subtitle: "Place many blocks at once."
 	quest.40995844B154C20D.title: "&6Build a Worldshaper's Astrolabe"
 	quest.40A70B21ED71996E.quest_desc: [
-		"&eImport from Inventory&r schickt die Drohne zur nächsten Kiste im angegebenen &eArea&r und lässt sie Gegenstände herausnehmen. Das Area-Teil kommt &erechts&r dran, ein &eItem Filter&r ebenfalls rechts."
+		"&eImport from Inventory&r sends the drone to the nearest chest in the given &eArea&r and lets it take items out. The Area piece goes on the &eright&r, an &eItem Filter&r also on the right."
 		""
-		"Filter rechts heißt: nur das. Filter links heißt: alles außer dem. Ohne Filter nimmt sie, was sie findet. Rechtsklick auf das Teil: Seite der Kiste und Höchstmenge. Ohne Inventory Upgrades trägt eine Drohne &eeinen Stapel&r."
+		"Filter on the right means: only that. Filter on the left means: everything except that. Without a filter it takes whatever it finds. Right click on the piece: side of the chest and maximum amount. Without Inventory Upgrades a drone carries &eone stack&r."
 	]
-	quest.40A70B21ED71996E.quest_subtitle: "Die Drohne holt etwas aus einer Kiste."
-	quest.40A70B21ED71996E.title: "&7Puzzleteil: Import from Inventory"
+	quest.40A70B21ED71996E.quest_subtitle: "The drone takes something from a chest."
+	quest.40A70B21ED71996E.title: "&7Puzzle Piece: Import from Inventory"
 	quest.40C0C0197F80B5B4.quest_desc: [
 		"&eRecipe:&r four &6Ferricore Ingots&r in the corners, an &6observer&r in the middle, an &6eye of ender&r on top, &6redstone&r at the bottom, &6lapis&r left and right."
 		""
@@ -15172,12 +15172,12 @@
 	quest.41F339404C023EAA.quest_subtitle: "Loot and Essence without a sword."
 	quest.41F339404C023EAA.title: "&cSet Up a Mob Crusher"
 	quest.41FD0D218C6DDD62.quest_desc: [
-		"&eGo to Location&r schickt die Drohne zum nächsten erreichbaren Block im &eArea&r. Ist sie da, oder kommt sie nicht hin, geht es mit dem nächsten Teil weiter."
+		"&eGo to Location&r sends the drone to the nearest reachable block in the &eArea&r. When it is there, or it cannot get there, it continues with the next piece."
 		""
-		"Nützlich, um die Drohne nach der Arbeit an einen Warteplatz zu schicken statt über der Kiste zu schweben, oder um sie an einer Stelle vorbeizuführen, die sie sonst umfliegt."
+		"Useful to send the drone to a waiting spot after work instead of hovering over the chest, or to guide it past a spot it would otherwise fly around."
 	]
-	quest.41FD0D218C6DDD62.quest_subtitle: "Flieg dorthin, dann weiter."
-	quest.41FD0D218C6DDD62.title: "&7Puzzleteil: Go to Location"
+	quest.41FD0D218C6DDD62.quest_subtitle: "Fly there, then move on."
+	quest.41FD0D218C6DDD62.title: "&7Puzzle Piece: Go to Location"
 	quest.421EAB45386F53B8.quest_desc: [
 		"Four wool around an ingot or brick. It makes machines quieter, nothing more. Worth gold for streamers with many machines next to the microphone."
 	]
@@ -15667,12 +15667,12 @@
 	quest.443EA6D204C4BCEC.quest_subtitle: "Fill the tank first."
 	quest.443EA6D204C4BCEC.title: "&7Fluid Cargo Condition"
 	quest.44477DCB55DFF3B0.quest_desc: [
-		"&ePlace&r setzt Blöcke aus dem Inventar der Drohne in den &eArea&r, zuerst die nächstgelegenen Stellen. Rechtsklick: Schicht für Schicht, von oben oder unten, zufällige Blöcke aus dem Inventar, und eine Höchstzahl."
+		"&ePlace&r places blocks from the drone's inventory into the &eArea&r, the nearest spots first. Right click: layer by layer, from the top or bottom, random blocks from the inventory, and a maximum number."
 		""
-		"Import aus einer Kiste voller Bruchstein, Place in einen Bereich, zurück zu Start: eine Mauer, die sich von selbst baut. Mit einem Filter rechts setzt sie nur bestimmte Blöcke."
+		"Import from a chest full of cobblestone, Place into an area, back to Start: a wall that builds itself. With a filter on the right it only places certain blocks."
 	]
-	quest.44477DCB55DFF3B0.quest_subtitle: "Die Drohne baut aus ihrem Inventar."
-	quest.44477DCB55DFF3B0.title: "&7Puzzleteil: Place"
+	quest.44477DCB55DFF3B0.quest_subtitle: "The drone builds from its inventory."
+	quest.44477DCB55DFF3B0.title: "&7Puzzle Piece: Place"
 	quest.444B9286FB5F51E1.quest_desc: [
 		"{image:kronwerke:textures/quests/shots/quarries_quarry.png width:224 height:126 align:center}"
 		"&6Deepsilver&r from Eternal Starlight, &6obsidian&r, two &6diamond pickaxes&r, a &6dispenser&r, a &6redstone block&r and a &6Marker&r."
@@ -16850,16 +16850,16 @@
 	quest.49971F63EA100B4A.title: "&dSort Genes with the Indexer"
 	quest.499EDB78A6E55E5B.quest_desc: [
 		"{image:kronwerke:textures/quests/shots/pneumaticcraft_advanced_pressurized_spawner.png width:224 height:126 align:center}"
-		"&eRezept:&r vier &6Compressed Iron&r in die Ecken, vier &6Advanced Pressure Tubes&r an die Seiten, der &6Empty Spawner&r in die Mitte."
+		"&eRecipe:&r four &6Compressed Iron&r in the corners, four &6Advanced Pressure Tubes&r on the sides, the &6Empty Spawner&r in the middle."
 		""
-		"Leg einen gefüllten &6Spawner Core&r hinein und gib ihm mindestens &e10 bar&r. Dann spawnt er, egal wie hell es ist und egal, ob ein Spieler in der Nähe steht, und ein Redstone-Signal schaltet ihn ab. Jeder Versuch kostet Luft, auch wenn der Core an der Stelle leer ist."
+		"Put a filled &6Spawner Core&r inside and give it at least &e10 bar&r. Then it spawns, no matter how bright it is and whether a player stands nearby, and a redstone signal turns it off. Every attempt costs air, even if the core is empty at that spot."
 		""
-		"Ein Core zu 50 Prozent Zombie und 25 Prozent Creeper spawnt in der Hälfte der Fälle einen Zombie, in einem Viertel einen Creeper, sonst nichts. Volle Cores aus dem Extractor sind darum die besten."
+		"A core at 50 percent zombie and 25 percent creeper spawns a zombie half the time, a creeper a quarter of the time, otherwise nothing. Full cores from the extractor are therefore the best."
 		""
-		"&eKronwerke:&r Monsterfarmen mit Guard Drone und Collector Drone daneben sind ein Weg zu den Seelen und Essenzen, die die Magier für die Rituale dieser Stufe brauchen. Und wer Hostile Neural Networks spielt, füttert so die Simulation mit Modellen."
+		"&eKronwerke:&r Monster farms with a Guard Drone and Collector Drone next to them are one way to the souls and essences the mages need for this stage's rituals. And whoever plays Hostile Neural Networks feeds the simulation with models this way."
 	]
-	quest.499EDB78A6E55E5B.quest_subtitle: "Ein Spawner, der auf dich hört."
-	quest.499EDB78A6E55E5B.title: "&2&lBau einen Pressurized Spawner"
+	quest.499EDB78A6E55E5B.quest_subtitle: "A spawner that listens to you."
+	quest.499EDB78A6E55E5B.title: "&2&lBuild a Pressurized Spawner"
 	quest.49B9D5E5F252DBB0.quest_desc: [
 		"&6Battery (Starter):&r paste in the corners, four Basic Capacitors on the sides, a &6redstone block&r in the middle. It holds &e1,000,000 FE&r, higher tiers up to 400 million."
 		""
@@ -18162,14 +18162,14 @@
 	quest.4F03184C5C2F0A52.quest_subtitle: "A ship, impaled in the ice."
 	quest.4F03184C5C2F0A52.title: "&bBoard the Impaled Icebreaker"
 	quest.4F06DE55387ECBCE.quest_desc: [
-		"&eRezept:&r zwei &6Pneumatic Cylinders&r in die oberen Ecken, drei &6Plastic Sheets&r in die Mitte, unten Compressed Iron, &6PCB&r, Compressed Iron."
+		"&eRecipe:&r two &6Pneumatic Cylinders&r in the top corners, three &6Plastic Sheets&r in the middle, at the bottom Compressed Iron, &6PCB&r, Compressed Iron."
 		""
-		"Die Plattform hält das Werkstück fest, während Bohrer und Laser arbeiten. Alle anderen Maschinen müssen sie erreichen, also kommt sie in die Mitte."
+		"The platform holds the workpiece while drill and laser work. All other machines have to reach it, so it goes in the middle."
 		""
-		"Einen &6Pneumatic Cylinder&r baust du aus sechs Plastic Sheets, zwei Compressed Iron und einem Cannon Barrel, und bekommst gleich zwei. Die ganze Straße braucht 14 Zylinder, also sieben Rezepte."
+		"You build a &6Pneumatic Cylinder&r from six Plastic Sheets, two Compressed Iron and a Cannon Barrel, and get two at once. The whole line needs 14 cylinders, so seven recipes."
 	]
-	quest.4F06DE55387ECBCE.quest_subtitle: "Der Werktisch in der Mitte."
-	quest.4F06DE55387ECBCE.title: "&bBau eine Assembly Platform"
+	quest.4F06DE55387ECBCE.quest_subtitle: "The workbench in the middle."
+	quest.4F06DE55387ECBCE.title: "&bBuild an Assembly Platform"
 	quest.4F0F188EA19FFC81.quest_desc: [
 		"Blazegold in the corners, &6diamonds&r on top and bottom, &6lapis&r left and right, an &6ender pearl&r in the middle."
 		""
@@ -18520,16 +18520,16 @@
 	quest.509FF7E6C4A446D3.quest_subtitle: "Infused Iron, the raw material for Manasteel."
 	quest.509FF7E6C4A446D3.title: "&6Refine iron at the Natural Altar"
 	quest.50AB5CA48E1320D3.quest_desc: [
-		"Programm &eLaser&r in den Controller, &620 Pressure Chamber Valves&r in die Eingangskiste, heraus kommen &68 Advanced Pressure Tubes&r. Mit dem Programm &eDrill & Laser&r geht es direkt vom &6Compressed Iron Block&r zu den acht Rohren."
+		"&eLaser&r program into the controller, &620 Pressure Chamber Valves&r into the input chest, out come &68 Advanced Pressure Tubes&r. With the &eDrill & Laser&r program it goes straight from the &6Compressed Iron Block&r to the eight tubes."
 		""
 		"{image:pneumaticcraft:textures/item/advanced_pressure_tube.png width:32 height:32 align:center}"
 		""
-		"Ein normales Rohr hält 5 bar, ein Reinforced Tube 10. Das Advanced Tube hält &e20 bar&r und fasst 4 000 mL statt 1 000. Jede Maschine dieser Stufe braucht es als Zutat: die großen Kompressoren, der Dynamo, der Pressurized Spawner, das Aerial Interface."
+		"A normal tube holds 5 bar, a Reinforced Tube 10. The Advanced Tube holds &e20 bar&r and holds 4,000 mL instead of 1,000. Every machine of this stage needs it as an ingredient: the big compressors, the dynamo, the Pressurized Spawner, the Aerial Interface."
 		""
-		"&eTipp:&r Ein Block wird zu acht Rohren. Mach gleich vier Blöcke durch, 32 Rohre brauchst du schnell."
+		"&eTip:&r One block becomes eight tubes. Run four blocks through right away, you quickly need 32 tubes."
 	]
-	quest.50AB5CA48E1320D3.quest_subtitle: "Rohre für 20 bar."
-	quest.50AB5CA48E1320D3.title: "&3&lMach Advanced Pressure Tubes"
+	quest.50AB5CA48E1320D3.quest_subtitle: "Tubes for 20 bar."
+	quest.50AB5CA48E1320D3.title: "&3&lMake Advanced Pressure Tubes"
 	quest.50B1264EBE14692D.quest_desc: [
 		"Look for the three End biomes of Biomes O' Plenty on the outer islands and check off once you have entered one."
 		""
@@ -18573,14 +18573,14 @@
 	quest.5101E57E0AE8D9E1.title: "&8&lSmelt 256 Steel in the Arc Furnace"
 	quest.510403A293E4A17C.quest_desc: [
 		"{image:kronwerke:textures/quests/shots/pneumaticcraft_advanced_adv_air.png width:224 height:126 align:center}"
-		"&eRezept:&r sechs &6Compressed Iron&r, ein &6Advanced Pressure Tube&r rechts in der Mitte und dein alter &6Air Compressor&r unten in der Mitte. Der Kompressor wird aufgewertet, du brauchst keinen neuen."
+		"&eRecipe:&r six &6Compressed Iron&r, an &6Advanced Pressure Tube&r middle right and your old &6Air Compressor&r bottom middle. The compressor gets upgraded, you do not need a new one."
 		""
-		"Er macht &e50 mL Luft pro Tick&r statt 10 und hält &e20 bar&r. Speed Upgrades machen ihn schneller, aber er &cmuss gekühlt&r werden: Je heißer er wird, desto weniger Luft kommt heraus, bis gar nichts mehr."
+		"It makes &e50 mL of air per tick&r instead of 10 and holds &e20 bar&r. Speed Upgrades make it faster, but it &cmust be cooled&r: the hotter it gets, the less air comes out, until none at all."
 		""
-		"&eKühlen:&r Ein &6Heat Sink&r (drei Eisengitter, zwei Compressed Iron, ein Kupfer) an jede freie Seite leitet die Wärme in die Luft. Heat Pipes bringen weitere Kühlkörper heran, ein Air Grate Module an einem Rohr daneben macht sie wirksamer. Offene Seiten zur Luft kühlen von selbst ein bisschen."
+		"&eCooling:&r A &6Heat Sink&r (three iron bars, two Compressed Iron, one copper) on every free side conducts the heat into the air. Heat Pipes bring more heat sinks in, an Air Grate Module on a tube next to it makes them more effective. Sides open to the air cool a little by themselves."
 	]
-	quest.510403A293E4A17C.quest_subtitle: "Fünfmal so viel Luft, und er wird heiß."
-	quest.510403A293E4A17C.title: "&3Bau einen Advanced Air Compressor"
+	quest.510403A293E4A17C.quest_subtitle: "Five times as much air, and it gets hot."
+	quest.510403A293E4A17C.title: "&3Build an Advanced Air Compressor"
 	quest.51141FEBADB3F7D1.quest_desc: [
 		"Antiker Schrott aus dem Nether um Y 15, im Ofen zu Netheritplatten, vier davon plus vier Gold. Am Schmiedetisch mit der Vorlage aus Bastionen auf Diamantausrüstung. Kapitel &cDer Nether&r."
 		""
@@ -19384,14 +19384,14 @@
 	quest.55173FA1D9E683F8.quest_subtitle: "A whole vein in one hit."
 	quest.55173FA1D9E683F8.title: "&bInstall the Ore Miner"
 	quest.551A07D8E07E72B9.quest_desc: [
-		"&eRezept:&r sechs &6Compressed Iron&r, zwei &6Advanced Pressure Tubes&r in der Mitte rechts und dein &6Liquid Compressor&r unten in der Mitte."
+		"&eRecipe:&r six &6Compressed Iron&r, two &6Advanced Pressure Tubes&r middle right and your &6Liquid Compressor&r bottom middle."
 		""
-		"Er verbrennt flüssigen Brennstoff aus der Raffinerie (Kapitel &bPneumaticCraft&r) und macht &e50 mL pro Tick&r. Wie der Luftkompressor muss er gekühlt werden, Heat Sinks an die freien Seiten."
+		"It burns liquid fuel from the refinery (chapter &bPneumaticCraft&r) and makes &e50 mL per tick&r. Like the air compressor it has to be cooled, heat sinks on the free sides."
 		""
-		"Wer eine Raffinerie hat, fährt mit diesem Kompressor am besten: Er läuft, solange der Tank voll ist, Tag und Nacht."
+		"Whoever has a refinery does best with this compressor: it runs as long as the tank is full, day and night."
 	]
-	quest.551A07D8E07E72B9.quest_subtitle: "Diesel, Kerosin oder LPG zu 20 bar."
-	quest.551A07D8E07E72B9.title: "&3Bau einen Advanced Liquid Compressor"
+	quest.551A07D8E07E72B9.quest_subtitle: "Diesel, kerosene or LPG to 20 bar."
+	quest.551A07D8E07E72B9.title: "&3Build an Advanced Liquid Compressor"
 	quest.551D0813201F3D2E.quest_desc: [
 		"First build the &6Flimsy Journal&r: one &6copper ingot&r each top and bottom left, a &6string&r in the middle left, two columns of &6paper&r on the right (6 pieces). It has &e5 spell slots&r."
 		""
@@ -19587,14 +19587,14 @@
 	quest.55C7983DEA86CE05.title: "&8Forge a netherite ingot"
 	quest.55DAFBA4EDCEC57F.quest_desc: [
 		"{image:kronwerke:textures/quests/shots/pneumaticcraft_advanced_thermal.png width:224 height:126 align:center}"
-		"&eRezept:&r vier &6Compressed Iron&r in die Ecken, &6Pressure Tubes&r oben und unten, zwei &6schwere Druckplatten&r (Eisen) links und rechts, ein &6Air Compressor&r in die Mitte."
+		"&eRecipe:&r four &6Compressed Iron&r in the corners, &6Pressure Tubes&r top and bottom, two &6heavy pressure plates&r (iron) left and right, an &6Air Compressor&r in the middle."
 		""
-		"Er macht Luft aus einem &eTemperaturunterschied&r zwischen zwei gegenüberliegenden Seiten: &cLava&r auf der einen, &bPacked Ice&r auf der anderen. Nord-Süd und Ost-West sind getrennt, du kannst also zwei Paare anlegen. Je größer der Unterschied, desto mehr Luft."
+		"It makes air from a &etemperature difference&r between two opposite sides: &clava&r on one, &bpacked ice&r on the other. North-south and east-west are separate, so you can set up two pairs. The bigger the difference, the more air."
 		""
-		"Die Wärme gleicht sich mit der Zeit aus, Eis schmilzt nicht, verliert aber seine Kälte. Nutz ihn für die &eAbwärme&r eines Advanced Compressors oder der heißen Seite eines Vortex Tube, dann holst du etwas zurück, was sonst in Heat Sinks verpufft. Ein Redstone-Signal schaltet ihn ab und hält den Unterschied fest."
+		"The heat evens out over time, ice does not melt but loses its cold. Use it for the &ewaste heat&r of an Advanced Compressor or the hot side of a Vortex Tube, then you get back something that otherwise fizzles out in heat sinks. A redstone signal shuts it off and holds the difference."
 	]
-	quest.55DAFBA4EDCEC57F.quest_subtitle: "Heiß auf der einen Seite, kalt auf der anderen."
-	quest.55DAFBA4EDCEC57F.title: "&cBau einen Thermal Compressor"
+	quest.55DAFBA4EDCEC57F.quest_subtitle: "Hot on one side, cold on the other."
+	quest.55DAFBA4EDCEC57F.title: "&cBuild a Thermal Compressor"
 	quest.55E7999B4727CDA4.quest_desc: [
 		"{image:kronwerke:textures/quests/shots/theurgy_sal_tank.png width:224 height:126 align:center}"
 		"&6Tank&r: iron, copper, iron in two rows, stick, copper, stick at the bottom. &6Accumulator&r: three stone, three iron, two sticks. Accumulator on top of the tank."
@@ -19893,12 +19893,12 @@
 	quest.57156B805C93A1E7.quest_subtitle: "Ars Technica: eating from the chest."
 	quest.57156B805C93A1E7.title: "&dLearn Telefeast"
 	quest.572B2ECDCDEB5B72.quest_desc: [
-		"&eRezept:&r ein &6Diamant&r oben links, drei &6Pneumatic Cylinders&r, unten Compressed Iron, &6PCB&r, Compressed Iron."
+		"&eRecipe:&r a &6diamond&r top left, three &6Pneumatic Cylinders&r, at the bottom Compressed Iron, &6PCB&r, Compressed Iron."
 		""
-		"Der Bohrer greift &cnicht&r diagonal, er muss direkt neben der Plattform stehen. Mit dem Programm &eDrill&r macht er aus einem &6Compressed Iron Block&r 20 Pressure Chamber Valves, aus einem Solar Wafer eine Solar Cell und aus Redstone zwei roten Farbstoff."
+		"The drill does &cnot&r reach diagonally, it has to stand directly next to the platform. With the &eDrill&r program it turns a &6Compressed Iron Block&r into 20 Pressure Chamber Valves, a Solar Wafer into a Solar Cell and redstone into two red dye."
 	]
-	quest.572B2ECDCDEB5B72.quest_subtitle: "Ein Diamantbohrer für die härtesten Blöcke."
-	quest.572B2ECDCDEB5B72.title: "&bBau einen Assembly Drill"
+	quest.572B2ECDCDEB5B72.quest_subtitle: "A diamond drill for the hardest blocks."
+	quest.572B2ECDCDEB5B72.title: "&bBuild an Assembly Drill"
 	quest.5732DEFEF730A6F0.quest_desc: [
 		"The &6Prosperity Seed Base&r into the altar. On the pedestals alternating &e4 Inferium Essence&r and &e4 stone&r (smelted stone, not cobblestone). Wand on the altar, and the &6Stone Seeds&r are done."
 		""
@@ -19946,14 +19946,14 @@
 	quest.5748C3D01E57ADBA.quest_subtitle: "Totems and emeralds."
 	quest.5748C3D01E57ADBA.title: "&2Learn the Evoker"
 	quest.574BCA422130FCBB.quest_desc: [
-		"&eDig Area&r baut jeden Block im &eArea&r ab. Was fällt, lässt sie liegen, dafür hängst du ein &ePick up Items&r-Teil dahinter oder stellst eine Sammeldrohne daneben."
+		"&eDig Area&r mines every block in the &eArea&r. It leaves what drops lying, for that you attach a &ePick up Items&r piece behind it or place a collector drone next to it."
 		""
-		"Lass sie vorher eine &6Spitzhacke&r importieren, sonst gräbt sie mit bloßen Händen, und das dauert. Mit Haken bei &eRequires digging tool&r gräbt sie nur mit Werkzeug. Rechtsklick auf das Teil: Schicht für Schicht, von oben oder von unten, und eine Höchstzahl an Blöcken pro Durchlauf."
+		"Let it import a &6pickaxe&r first, otherwise it digs with bare hands, and that takes a while. With &eRequires digging tool&r ticked it only digs with a tool. Right click on the piece: layer by layer, from the top or from the bottom, and a maximum number of blocks per run."
 		""
-		"Ein Item Filter rechts sagt ihr, welche Blöcke sie abbauen darf. Bei Pflanzen filterst du nach dem Samen, den sie fallen lassen."
+		"An Item Filter on the right tells it which blocks it may mine. For plants you filter by the seed they drop."
 	]
-	quest.574BCA422130FCBB.quest_subtitle: "Die Drohne gräbt einen Bereich aus."
-	quest.574BCA422130FCBB.title: "&7Puzzleteil: Dig Area"
+	quest.574BCA422130FCBB.quest_subtitle: "The drone digs out an area."
+	quest.574BCA422130FCBB.title: "&7Puzzle Piece: Dig Area"
 	quest.5759AFCC802B70A9.quest_desc: [
 		"Top Atomic Alloy, &6Nether Star&r, Atomic Alloy, middle &6Ultimate Induction Provider&r, Module Base, Ultimate Induction Provider, bottom three &5antimatter pellets&r."
 		""
@@ -20568,16 +20568,16 @@
 	quest.5A04E062C833F78E.quest_subtitle: "The pentacle for the Foliot."
 	quest.5A04E062C833F78E.title: "&5Draw Aviar's Circle"
 	quest.5A072D8F78E05A22.quest_desc: [
-		"Die Programme kann niemand craften. Du kaufst sie beim &6Pressure Mechanic&r, einem Dorfbewohner mit eigenem Haus in Dörfern, oder über das &6Amadron Tablet&r: &eAssembly Program: Drill&r und &eAssembly Program: Laser&r kosten je &68 Smaragde&r, &eDrill & Laser&r kostet 14."
+		"Nobody can craft the programs. You buy them from the &6Pressure Mechanic&r, a villager with their own house in villages, or via the &6Amadron Tablet&r: &eAssembly Program: Drill&r and &eAssembly Program: Laser&r cost &68 emeralds&r each, &eDrill & Laser&r costs 14."
 		""
-		"Das &6Amadron Tablet&r (7 Plastic Sheets, ein GPS Tool, ein Air Canister, danach aufladen) bindest du per Rechtsklick an eine Kiste. In der Kiste liegen die Smaragde, eine Drohne holt sie ab, eine zweite bringt die Ware. Gleich dort gibt es auch den &6PCB Blueprint&r."
+		"You bind the &6Amadron Tablet&r (7 Plastic Sheets, a GPS Tool, an Air Canister, then charge it) to a chest with a right click. The emeralds lie in the chest, one drone picks them up, a second one brings the goods. The &6PCB Blueprint&r is available right there too."
 		""
-		"&eTipp:&r Ein arbeitsloser Dorfbewohner neben einer &6Charging Station&r wird von selbst zum Pressure Mechanic. Dann sparst du dir die Lieferdrohnen."
+		"&eTip:&r An unemployed villager next to a &6Charging Station&r becomes a Pressure Mechanic by itself. Then you save yourself the delivery drones."
 		""
-		"Das Programm &eDrill & Laser&r macht nicht beides, sondern nur Rezepte mit zwei Schritten, zum Beispiel vom Compressed Iron Block direkt zum Advanced Pressure Tube."
+		"The &eDrill & Laser&r program does not do both, only recipes with two steps, for example from the Compressed Iron Block straight to the Advanced Pressure Tube."
 	]
-	quest.5A072D8F78E05A22.quest_subtitle: "Drill und Laser, für Smaragde."
-	quest.5A072D8F78E05A22.title: "&eKauf die Assembly Programs"
+	quest.5A072D8F78E05A22.quest_subtitle: "Drill and laser, for emeralds."
+	quest.5A072D8F78E05A22.title: "&eBuy the Assembly Programs"
 	quest.5A0F97042370EA0C.quest_desc: [
 		"Two &6Andesite Alloys&r on top of each other make eight &6Shafts&r. A shaft passes rotation on in a straight line, without loss."
 		""
@@ -22272,16 +22272,16 @@
 	quest.61B89DC3CE373DEA.title: "&6Build the Mechanical Press"
 	quest.61BDE2340B6537C7.quest_desc: [
 		"{image:kronwerke:textures/quests/shots/pneumaticcraft_advanced_security_station.png width:224 height:126 align:center}"
-		"&eRezept:&r grauer Farbstoff, &6Glasscheibe&r, grauer Farbstoff oben, &6Turbine Rotor&r, &6PCB&r, Turbine Rotor in der Mitte, zwei &6Plastic Sheets&r unten in die Ecken."
+		"&eRecipe:&r gray dye, &6glass pane&r, gray dye on top, &6Turbine Rotor&r, &6PCB&r, Turbine Rotor in the middle, two &6Plastic Sheets&r in the bottom corners."
 		""
-		"In ihrem Bereich kann kein fremder Spieler Blöcke setzen, abbauen oder Kisten öffnen. Jedes &6Range Upgrade&r vergrößert den Bereich um einen Block, bis 16 in jede Richtung. Freunde trägst du im Reiter &eShared Users&r ein."
+		"In its area no other player can place or break blocks or open chests. Every &6Range Upgrade&r enlarges the area by one block, up to 16 in every direction. You add friends in the &eShared Users&r tab."
 		""
-		"&eEinrichten:&r Im Netzraster müssen ein &6Diagnostic Subroutine&r, ein &6Network IO Port&r und eine &6Network Registry&r liegen, verbunden durch &6Network Nodes&r (Truhe mit Transistoren und lila Farbstoff, 16 Stück). Die Komponenten sind Plastik oder Transistoren um eine Truhe mit Farbstoff."
+		"&eSetup:&r In the network grid there must be a &6Diagnostic Subroutine&r, a &6Network IO Port&r and a &6Network Registry&r, connected by &6Network Nodes&r (chest with transistors and purple dye, 16 pieces). The components are plastic or transistors around a chest with dye."
 		""
-		"&cHacken ist auf diesem Server erlaubt:&r Mit einem Pneumatic Helmet und Security Upgrades (Stufe 4) kann jemand deine Station knacken. Größere Stapel Network Nodes und Entity Tracker Upgrades machen das schwerer, Security Upgrades in der Station verlangen vom Hacker mehr Upgrades. Versteck sie gut."
+		"&cHacking is allowed on this server:&r With a Pneumatic Helmet and Security Upgrades (stage 4) someone can crack your station. Bigger stacks of Network Nodes and Entity Tracker Upgrades make that harder, Security Upgrades in the station demand more upgrades from the hacker. Hide it well."
 	]
-	quest.61BDE2340B6537C7.quest_subtitle: "Niemand außer dir fasst deine Kisten an."
-	quest.61BDE2340B6537C7.title: "&cBau eine Security Station"
+	quest.61BDE2340B6537C7.quest_subtitle: "Nobody but you touches your chests."
+	quest.61BDE2340B6537C7.title: "&cBuild a Security Station"
 	quest.61C8DBA871625226.quest_desc: [
 		"&6Digestion Vat&r: a decorated pot with two gold ingots, a Sal Ammoniac Crystal and sandstone. Inside: &6gold ingot&r, an &6Alchemical Salt&r, a &6water bucket&r, close it by sneaking."
 		""
@@ -22641,16 +22641,16 @@
 	quest.6330CD0C305AC1D5.quest_subtitle: "Reliquary's own potions."
 	quest.6330CD0C305AC1D5.title: "&dGrind a Potion Essence"
 	quest.6339F26E1BC04DA9.quest_desc: [
-		"&eRezept:&r Compressed Iron, &6Eisenfalltür&r, Compressed Iron oben, &6Reinforced Brick Wall&r, &6Enderauge&r, &6Pressure Tube&r in der Mitte, drei &6Reinforced Stone Slabs&r unten."
+		"&eRecipe:&r Compressed Iron, &6iron trapdoor&r, Compressed Iron on top, &6Reinforced Brick Wall&r, &6eye of ender&r, &6Pressure Tube&r in the middle, three &6Reinforced Stone Slabs&r at the bottom."
 		""
-		"Der zweite Weg zum Spawner Core: Die Falle braucht &c-0,5 bar&r, Volume Upgrades helfen. Leg einen leeren oder halbvollen &6Spawner Core&r hinein und öffne die Klappe mit Shift-Rechtsklick oder Redstone. Jedes Monster, das hineingezogen wird, füllt den Core um 1 Prozent."
+		"The second way to a Spawner Core: the trap needs &c-0.5 bar&r, Volume Upgrades help. Put an empty or half full &6Spawner Core&r inside and open the hatch with shift right click or redstone. Every monster that gets pulled in fills the core by 1 percent."
 		""
-		"&eSpawner Core selbst machen:&r Eine &6Spawner Core Shell&r (vier Compressed Iron, vier Pressure Chamber Glass, ein Smaragd) mit 4 000 mB flüssiger Erfahrung (Memory Essence) in der Thermopneumatic Processing Plant bei 3 bar."
+		"&eMake a Spawner Core yourself:&r a &6Spawner Core Shell&r (four Compressed Iron, four Pressure Chamber Glass, an emerald) with 4,000 mB of liquid experience (Memory Essence) in the Thermopneumatic Processing Plant at 3 bar."
 		""
-		"Mit 100 mB &6Memory Essence&r im Tank der Falle zählt jedes Monster 2 bis 4 Prozent, also 25 bis 50 statt 100. Spieler, Drohnen, Bosse, gezähmte Tiere und Monster aus Spawnern fängt sie nie. Gemischte Cores spawnen gemischt, also eine Falle pro Monsterart."
+		"With 100 mB of &6Memory Essence&r in the trap's tank every monster counts 2 to 4 percent, so 25 to 50 instead of 100. It never catches players, drones, bosses, tamed animals or monsters from spawners. Mixed cores spawn mixed, so one trap per monster type."
 	]
-	quest.6339F26E1BC04DA9.quest_subtitle: "Monster einsaugen, Essenz sammeln."
-	quest.6339F26E1BC04DA9.title: "&2Bau eine Vacuum Trap"
+	quest.6339F26E1BC04DA9.quest_subtitle: "Suck in monsters, collect essence."
+	quest.6339F26E1BC04DA9.title: "&2Build a Vacuum Trap"
 	quest.634227EE9AA2F8EC.quest_desc: [
 		"&6Monorail Track&r is made by sequenced assembly: a &6Metal Girder&r onto the belt, a deployer adds a &6Metal Bracket&r, one an &6iron sheet&r, a press presses, six tracks per girder. A monorail bogey of its own runs on it, which you click onto the track with the Train Casing as usual. The rail can also hang above the train."
 		""
@@ -22661,14 +22661,14 @@
 	quest.634227EE9AA2F8EC.quest_subtitle: "Monorail, Ender Track, Phantom Track."
 	quest.634227EE9AA2F8EC.title: "&6Lay a Monorail"
 	quest.63461E2902C31DC7.quest_desc: [
-		"&6Medium Fluid Tank:&r Plastic Sheet, &6Small Tank&r, Plastic Sheet oben, Gold, Pressure Tube, Gold in der Mitte, Plastic Sheet, Small Tank, Plastic Sheet unten, &e64 000 mB&r. &6Large Fluid Tank:&r dasselbe mit zwei Medium Tanks, zwei Diamanten und einem &6Advanced Pressure Tube&r, &e128 000 mB&r."
+		"&6Medium Fluid Tank:&r Plastic Sheet, &6Small Tank&r, Plastic Sheet on top, gold, Pressure Tube, gold in the middle, Plastic Sheet, Small Tank, Plastic Sheet at the bottom, &e64,000 mB&r. &6Large Fluid Tank:&r the same with two Medium Tanks, two diamonds and an &6Advanced Pressure Tube&r, &e128,000 mB&r."
 		""
-		"Der &6Huge Fluid Tank&r aus Large Tanks, Netherit und einem Reinforced Air Canister fasst 512 000 mB."
+		"The &6Huge Fluid Tank&r from Large Tanks, netherite and a Reinforced Air Canister holds 512,000 mB."
 		""
-		"Rechtsklick mit dem Wrench verbindet Tanks übereinander. Flüssigkeit fließt dann nach unten: oben hinein pumpen, unten heraus."
+		"Right clicking with the wrench connects tanks on top of each other. Fluid then flows downward: pump in at the top, out at the bottom."
 	]
-	quest.63461E2902C31DC7.quest_subtitle: "128 Eimer, stapelbar."
-	quest.63461E2902C31DC7.title: "&9Bau einen Large Fluid Tank"
+	quest.63461E2902C31DC7.quest_subtitle: "128 buckets, stackable."
+	quest.63461E2902C31DC7.title: "&9Build a Large Fluid Tank"
 	quest.63464378907BF306.quest_desc: [
 		"&6Primitiver Heizgenerator:&r Bruchstein in die Ecken, Gold oben, Eisengitter an den Seiten, Ofen unten, das Pity-Maschinengehäuse in die Mitte. Der &6Biokraftstoffgenerator&r braucht Biokraftstoff aus dem Bioreaktor."
 		""
@@ -22677,14 +22677,14 @@
 	quest.63464378907BF306.quest_subtitle: "Industrial Foregoing: 30 FE/t aus Kohle, 160 FE/t aus Biokraftstoff."
 	quest.63464378907BF306.title: "&aHeiz den Primitiven Heizgenerator"
 	quest.6349AFD22B005B3E.quest_desc: [
-		"&eRezept:&r ein &6Network IO Port&r oben, Transistor, &6GPS Tool&r, Transistor in der Mitte, Transistor, &6Network Data Storage&r, Transistor unten."
+		"&eRecipe:&r a &6Network IO Port&r on top, transistor, &6GPS Tool&r, transistor in the middle, transistor, &6Network Data Storage&r, transistor at the bottom."
 		""
-		"Schleichend Rechtsklick öffnet den Editor: Knöpfe, Häkchen und Auswahllisten ziehst du wie Puzzleteile hinein, jedes setzt eine &eglobale Variable&r. Drohnen lesen diese Variablen in ihren Programmen."
+		"Sneak right click opens the editor: you drag buttons, checkboxes and dropdowns in like puzzle pieces, each sets a &eglobal variable&r. Drones read these variables in their programs."
 		""
-		"&eKabelloses Redstone:&r Ein Universal Sensor mit Dispenser Upgrade und der Einstellung World, Global Variable gibt ein Signal, sobald dein Häkchen auf der Fernbedienung gesetzt ist. Egal, wo du gerade stehst."
+		"&eWireless redstone:&r A Universal Sensor with a Dispenser Upgrade and the setting World, Global Variable gives a signal as soon as your checkbox on the remote is set. No matter where you are standing."
 	]
-	quest.6349AFD22B005B3E.quest_subtitle: "Eigene Knöpfe, kabelloses Redstone."
-	quest.6349AFD22B005B3E.title: "&3Bau dir eine Fernbedienung"
+	quest.6349AFD22B005B3E.quest_subtitle: "Your own buttons, wireless redstone."
+	quest.6349AFD22B005B3E.title: "&3Build Yourself a Remote"
 	quest.634B43CE28194F31.quest_desc: [
 		"&dObliterate&r: &6Manipulation Essence&r, &6anvil&r, &6diamond block&r. &dSuperheat&r: &e3 Fire Essences&r, &6blaze rod&r, &6blaze cake&r."
 		""
@@ -23519,16 +23519,16 @@
 	quest.674BFEB3C5381E6C.quest_subtitle: "Ten slots, six good ideas."
 	quest.674BFEB3C5381E6C.title: "&d&lFill your spell book"
 	quest.674C304FB40CDEAC.quest_desc: [
-		"&eRezept:&r oben ein &6Printed Circuit Board&r, in der Mitte ein &6Pressure Tube&r und zwei weitere PCBs, unten drei &6Compressed Iron Ingots&r."
+		"&eRecipe:&r a &6Printed Circuit Board&r on top, in the middle a &6Pressure Tube&r and two more PCBs, three &6Compressed Iron Ingots&r at the bottom."
 		""
-		"Mit &6Stufe 3 (Stahlwerk)&r öffnet PneumaticCraft seine zweite Ebene: die &eMontagestraße&r (Assembly System), Rohre und Kompressoren für &e20 bar&r, und die &eDrohnen&r. Alles davon beginnt hier, denn Advanced Pressure Tubes gibt es nur aus der Montagestraße."
+		"With &6stage 3 (Steel Works)&r PneumaticCraft opens its second level: the &eassembly line&r (Assembly System), tubes and compressors for &e20 bar&r, and the &edrones&r. All of it starts here, because Advanced Pressure Tubes only come from the assembly line."
 		""
-		"Was du mitbringen solltest, steht im Kapitel &bPneumaticCraft&r: Compressed Iron, einen laufenden Air Compressor, die Druckkammer, Plastik und drei fertige PCBs. Der Controller ist die einzige Maschine der Straße, die Luft braucht. Ein Rohr an ihn, und die ganze Straße läuft."
+		"What you should bring is in the &bPneumaticCraft&r chapter: Compressed Iron, a running Air Compressor, the Pressure Chamber, plastic and three finished PCBs. The controller is the only machine of the line that needs air. One tube to it, and the whole line runs."
 		""
-		"&cNoch gesperrt:&r Die &6Pneumatic Armor&r, die &6Minigun&r und die &6Micromissiles&r kommen in Stufe 4."
+		"&cStill locked:&r The &6Pneumatic Armor&r, the &6Minigun&r and the &6Micromissiles&r come in stage 4."
 	]
-	quest.674C304FB40CDEAC.quest_subtitle: "Das Gehirn der Montagestraße."
-	quest.674C304FB40CDEAC.title: "&b&lBau einen Assembly Controller"
+	quest.674C304FB40CDEAC.quest_subtitle: "The brain of the assembly line."
+	quest.674C304FB40CDEAC.title: "&b&lBuild an Assembly Controller"
 	quest.674EE2E2316CDDAD.quest_desc: [
 		"{image:kronwerke:textures/quests/shots/ars_apprentice_collector.png width:224 height:126 align:center}"
 		"In the apparatus: relay with &e4 chests&r becomes the &6Collector&r, with &e4 hoppers&r the &6Depositor&r."
@@ -23817,14 +23817,14 @@
 	quest.689CD3C6861A5DC5.quest_subtitle: "Fill or empty cells in seconds."
 	quest.689CD3C6861A5DC5.title: "&6Build an ME IO Port"
 	quest.68B0BEF2F3D4B62B.quest_desc: [
-		"&eRezept:&r Compressed Iron, &6Remote&r, Compressed Iron oben, &6PCB&r, &6Drone&r, &6Advanced Pressure Tube&r in der Mitte, Compressed Iron, &6Network Registry&r, Compressed Iron unten. Das Remote: Network IO Port, zwei Transistoren, GPS Tool, zwei Transistoren, Network Data Storage."
+		"&eRecipe:&r Compressed Iron, &6Remote&r, Compressed Iron on top, &6PCB&r, &6Drone&r, &6Advanced Pressure Tube&r in the middle, Compressed Iron, &6Network Registry&r, Compressed Iron at the bottom. The Remote: Network IO Port, two transistors, GPS Tool, two transistors, Network Data Storage."
 		""
-		"Leg eine programmierte Drohne oder eine &6Network API&r hinein. Der Block führt das Programm mit einer &eMinidrohne&r aus, die keine echte Einheit ist: kein Pfadfinden, sie geht durch Wände, der Server dankt. Dafür 10 mL Luft pro Tick statt 1."
+		"Put a programmed drone or a &6Network API&r inside. The block runs the program with a &eminidrone&r that is not a real entity: no pathfinding, it goes through walls, the server says thanks. In return 10 mL of air per tick instead of 1."
 		""
-		"Was sie sammelt, nimmst du an den Seiten des Blocks ab, Flüssigkeiten an jeder Seite. Ein Slot und 16 Eimer Tank, jedes Inventory Upgrade (bis 35) gibt einen Slot und 1 000 mB mehr. Teile wie Entity Attack, Teleport und Standby kann sie nicht. Für große Gruben und große Bauten ist sie das richtige Werkzeug."
+		"What it collects you take from the block's sides, fluids from every side. One slot and a 16 bucket tank, every Inventory Upgrade (up to 35) adds a slot and 1,000 mB more. Pieces like Entity Attack, Teleport and Standby it cannot do. For big pits and big builds it is the right tool."
 	]
-	quest.68B0BEF2F3D4B62B.quest_subtitle: "Eine Drohne im Block, die durch Wände geht."
-	quest.68B0BEF2F3D4B62B.title: "&5Bau einen Programmable Controller"
+	quest.68B0BEF2F3D4B62B.quest_subtitle: "A drone in a block that goes through walls."
+	quest.68B0BEF2F3D4B62B.title: "&5Build a Programmable Controller"
 	quest.68C1AE0C047671EE.quest_desc: [
 		"Put, for example, &6two iron&r and &6one gold&r with the blueprint. The head averages the stats and takes along the traits of both."
 		""
@@ -24973,12 +24973,12 @@
 	quest.6E071135D3D34FFA.quest_subtitle: "More battery for tools and armor."
 	quest.6E071135D3D34FFA.title: "&dBuild a Wyvern Energy Module"
 	quest.6E0F9169C15D1706.quest_desc: [
-		"&eExport to Inventory&r ist das Gegenstück: Die Drohne fliegt zur nächsten Kiste im &eArea&r und legt ab, was sie trägt. Item Filter rechts für nur das, links für alles außer dem."
+		"&eExport to Inventory&r is the counterpart: the drone flies to the nearest chest in the &eArea&r and puts down what it carries. Item Filter on the right for only that, on the left for everything except that."
 		""
-		"Import und Export zusammen sind schon ein Programm: Start, Import aus Kiste A, Export in Kiste B. Die Drohne pendelt, bis A leer oder B voll ist, und wartet dann."
+		"Import and export together are already a program: Start, import from chest A, export into chest B. The drone shuttles until A is empty or B is full, and then waits."
 	]
-	quest.6E0F9169C15D1706.quest_subtitle: "Die Drohne legt etwas in eine Kiste."
-	quest.6E0F9169C15D1706.title: "&7Puzzleteil: Export to Inventory"
+	quest.6E0F9169C15D1706.quest_subtitle: "The drone puts something into a chest."
+	quest.6E0F9169C15D1706.title: "&7Puzzle Piece: Export to Inventory"
 	quest.6E1285396527392A.quest_desc: [
 		"&eBore Lens&r: top &6piston&r, middle &6lapis block&r, lens, lapis block, bottom &6redstone&r. The burst mines every block it hits with its mana."
 		"&eMagnetizing Lens&r: shapeless lens, iron ingot, gold ingot. The burst seeks out the nearest block that accepts mana on its own."
@@ -26223,14 +26223,14 @@
 	quest.7404794505731B28.quest_subtitle: "Plants and animals, with power use."
 	quest.7404794505731B28.title: "&6&lCheck Off the Field and Animal Machines"
 	quest.7406572C8402420F.quest_desc: [
-		"&eRezept:&r vier &6Turbine Rotors&r um einen &6Logistics Core&r. Kein PCB, kein Präzisionsgetriebe, kein Programm."
+		"&eRecipe:&r four &6Turbine Rotors&r around a &6Logistics Core&r. No PCB, no Precision Mechanism, no program."
 		""
-		"Lade sie und setz sie mitten in deine Kisten. Sie bedient jeden Rahmen in einem Würfel von &e33 Blöcken&r Kantenlänge um ihren Startpunkt: holt bei Providern, bringt zu Requestern, räumt in Storage. Mehr kann sie nicht, mehr muss sie nicht."
+		"Charge it and put it in the middle of your chests. It serves every frame in a cube with &e33 blocks&r edge length around its starting point: picks up at providers, brings to requesters, clears into storage. It cannot do more, it does not need to."
 		""
-		"&eTipp:&r Speed Upgrades und Inventory Upgrades über die Charging Station (Pfeil über dem Slot) machen sie schneller und lassen sie mehr tragen. Im Requester-Rahmen setzt du eine Mindestmenge, sonst fliegt sie für jedes einzelne Stück."
+		"&eTip:&r Speed Upgrades and Inventory Upgrades via the Charging Station (arrow above the slot) make it faster and let it carry more. In the Requester frame you set a minimum amount, otherwise it flies for every single piece."
 	]
-	quest.7406572C8402420F.quest_subtitle: "Transport ohne eine Zeile Programm."
-	quest.7406572C8402420F.title: "&6Setz eine Logistics Drone ein"
+	quest.7406572C8402420F.quest_subtitle: "Transport without a single line of program."
+	quest.7406572C8402420F.title: "&6Deploy a Logistics Drone"
 	quest.740888978FAE8C47.quest_desc: [
 		"&6Sandpaper&r (paper and sand) in the main hand, &6Rose Quartz&r in the off hand, hold the right mouse button. Out comes &6Polished Rose Quartz&r."
 		"{image:create:textures/item/polished_rose_quartz.png width:32 height:32 align:center}"
@@ -26331,14 +26331,14 @@
 	quest.74995A3FE722D93F.quest_subtitle: "Ping Wheel: one click, a sign in the world."
 	quest.74995A3FE722D93F.title: "&aShow Your Team the Way"
 	quest.749BFCFBFE7FBD99.quest_desc: [
-		"&eRezept auf Kronwerke:&r oben Redstone, &6Compressed Iron Gear&r, &6Einfacher Steuerschaltkreis&r von Mekanism. Mitte: Redstoneblock, &6Turbine Rotor&r, &6Advanced Pressure Tube&r. Unten Redstone, &6Schmelzofen&r (Blast Furnace), noch ein Steuerschaltkreis."
+		"&eRecipe on Kronwerke:&r on top redstone, &6Compressed Iron Gear&r, &6Basic Control Circuit&r from Mekanism. Middle: redstone block, &6Turbine Rotor&r, &6Advanced Pressure Tube&r. Bottom redstone, &6blast furnace&r, another control circuit."
 		""
-		"Der Flux Compressor nimmt &dFE&r aus jedem Kabel des Packs und macht daraus Druckluft: &e40 FE pro Tick&r, aus 100 FE werden 40 mL Luft. Er speichert 100 000 FE und nimmt Strom doppelt so schnell auf, wie er ihn verbraucht. Auch er muss gekühlt werden."
+		"The Flux Compressor takes &dFE&r from any cable in the pack and turns it into compressed air: &e40 FE per tick&r, 100 FE become 40 mL of air. It stores 100,000 FE and takes power twice as fast as it uses it. It has to be cooled too."
 		""
-		"Den Steuerschaltkreis gibt es nur aus der Infusionsanlage mit einer Elektronenröhre, siehe Kapitel &5Mekanism&r. So hängt PneumaticCraft am Stromnetz des Servers: Ein Mekanism-Kabel oder ein Flux Point an diesen Block, und die Luft kommt aus der Steckdose."
+		"The control circuit only comes from the Metallurgic Infuser with an electron tube, see the &5Mekanism&r chapter. That way PneumaticCraft hangs on the server's power network: a Mekanism cable or a Flux Point on this block, and the air comes out of the socket."
 	]
-	quest.749BFCFBFE7FBD99.quest_subtitle: "Strom wird zu Luft."
-	quest.749BFCFBFE7FBD99.title: "&dBau einen Flux Compressor"
+	quest.749BFCFBFE7FBD99.quest_subtitle: "Power becomes air."
+	quest.749BFCFBFE7FBD99.title: "&dBuild a Flux Compressor"
 	quest.749C9E514BE7D62F.quest_desc: [
 		"&eRecipe:&r five &6Blazegold Ingots&r and an &6eye of ender&r: ingots top middle and right, in the middle row left and right of the eye, bottom left."
 		""
@@ -26699,14 +26699,14 @@
 	quest.7626B4C894018396.quest_subtitle: "Your terminal with a crafting table."
 	quest.7626B4C894018396.title: "&dSet Up a QIO Dashboard"
 	quest.763F899230A030F8.quest_desc: [
-		"&eRezept:&r drei &6Solar Cells&r oben, &6PCB&r, &6Compressed Iron Gear&r, &6PCB&r in der Mitte, unten &6Advanced Pressure Tube&r, &6Compressed Iron Block&r, Advanced Pressure Tube."
+		"&eRecipe:&r three &6Solar Cells&r on top, &6PCB&r, &6Compressed Iron Gear&r, &6PCB&r in the middle, at the bottom &6Advanced Pressure Tube&r, &6Compressed Iron Block&r, Advanced Pressure Tube."
 		""
-		"Er braucht &efreien Himmel&r und arbeitet nicht nachts, nicht drinnen und nicht im Gewitter. Das Besondere: Er macht Wärme mit, und er läuft erst richtig, wenn er &eheiß&r ist. Volle Leistung bei &c350 °C&r, ab &c425 °C&r überhitzt er und geht kaputt. Dann reparierst du ihn mit Solar Cells."
+		"It needs &eopen sky&r and does not work at night, indoors or in thunderstorms. The special part: it also makes heat, and it only runs properly when it is &ehot&r. Full output at &c350 °C&r, from &c425 °C&r it overheats and breaks. Then you repair it with Solar Cells."
 		""
-		"&eEinstellen:&r Heat Sinks und Heat Pipes nehmen Wärme weg, ein Vortex Tube kann welche dazugeben. Ziel ist ein Gleichgewicht knapp unter 425 Grad. Solange er still steht, hält er seine Temperatur von selbst."
+		"&eTuning:&r Heat Sinks and Heat Pipes take heat away, a Vortex Tube can add some. The goal is a balance just below 425 degrees. While it stands still, it holds its temperature by itself."
 	]
-	quest.763F899230A030F8.quest_subtitle: "Luft aus Sonne, aber nur bei 350 Grad."
-	quest.763F899230A030F8.title: "&6Bau einen Solar Compressor"
+	quest.763F899230A030F8.quest_subtitle: "Air from sunlight, but only at 350 degrees."
+	quest.763F899230A030F8.title: "&6Build a Solar Compressor"
 	quest.764EA189A25DEF29.quest_desc: [
 		"The same shape, a &6Luminous Crystal Shard&r from salvaged &9Rare&r on top: two templates that turn gold gear into diamond gear at the Smithing Table with &e4 diamonds&r."
 		""
@@ -26722,12 +26722,12 @@
 	quest.7662608598D923AA.quest_subtitle: "Helmet, chestplate, leggings, boots and a shield."
 	quest.7662608598D923AA.title: "&7Wear Full Cloggrum Armor"
 	quest.766D489304D08574.quest_desc: [
-		"Mit &6Stufe 4 (Sternwerk)&r öffnet PneumaticCraft seine Waffenkammer: die &6Pneumatic Armor&r (Helm, Brustplatte, Hose, Stiefel) mit Upgrades für Jetboots, Nachtsicht, Blockscanner, Entity Tracker und das Hacken von Security Stations und Drohnen. Dazu die &6Minigun&r mit Munitionssorten und die &6Micromissiles&r."
+		"With &6stage 4 (Star Works)&r PneumaticCraft opens its armory: the &6Pneumatic Armor&r (helmet, chestplate, leggings, boots) with upgrades for jet boots, night vision, block scanner, entity tracker and hacking Security Stations and drones. Plus the &6Minigun&r with ammo types and the &6Micromissiles&r."
 		""
-		"Bis dahin: Jede Drohne, die du jetzt programmierst, jedes Rohr, das du jetzt legst, läuft dann weiter. Und der Drohnen-Debugger im Helm wird dir zeigen, warum die eine Drohne von damals nie geflogen ist."
+		"Until then: every drone you program now, every tube you lay now, keeps running then. And the drone debugger in the helmet will show you why that one drone from back then never flew."
 	]
-	quest.766D489304D08574.quest_subtitle: "Rüstung, Minigun, Raketen."
-	quest.766D489304D08574.title: "&dAusblick auf Stufe 4"
+	quest.766D489304D08574.quest_subtitle: "Armor, Minigun, missiles."
+	quest.766D489304D08574.title: "&dOutlook on Stage 4"
 	quest.76750A841E948105.quest_desc: [
 		"&e2 Mana Diamonds&r and &e1 Mana Quartz&r on the altar, plus the runes Autumn and Air as catalysts. &d12,000 mana&r."
 		""
@@ -27879,14 +27879,14 @@
 	quest.7B9CE2B18B64FD29.title: "&dBuild a Draconic Energy Controller"
 	quest.7BA5A8754283846C.quest_desc: [
 		"{image:kronwerke:textures/quests/shots/pneumaticcraft_advanced_frames.png width:224 height:126 align:center}"
-		"&eRezept:&r sieben &6Stöcke&r, ein &6Farbstoff&r in der Mitte und ein &6Logistics Core&r unten in der Mitte ergeben acht Rahmen. Der Core: acht &6Reinforced Brick Tiles&r um ein Redstone, ergibt zwei."
+		"&eRecipe:&r seven &6sticks&r, a &6dye&r in the middle and a &6Logistics Core&r bottom middle give eight frames. The core: eight &6Reinforced Brick Tiles&r around a redstone, gives two."
 		""
-		"Die Farbe bestimmt den Rahmen. &cRot, Passive Provider:&r bietet an, nur Anforderer holen ab. &5Lila, Active Provider:&r schiebt alles aktiv weg in Lager und Anforderer. &9Blau, Requester:&r fordert an, du stellst im Rahmen ein, wie viel vorrätig sein soll. &eGelb, Storage:&r nimmt von Active Providern an und gibt an Requester. &aGrün, Default Storage:&r wie Storage, aber zuletzt."
+		"The color decides the frame. &cRed, Passive Provider:&r offers, only requesters pick up. &5Purple, Active Provider:&r actively pushes everything away into storage and requesters. &9Blue, Requester:&r requests, you set in the frame how much should be kept in stock. &eYellow, Storage:&r accepts from Active Providers and gives to Requesters. &aGreen, Default Storage:&r like Storage, but last."
 		""
-		"Rahmen klebst du an jede Kiste oder jeden Tank, auch von anderen Mods. Rechtsklick mit dem Rahmen in der Hand oder mit dem &6Logistics Configurator&r (vier Compressed Iron, roter Farbstoff, Air Canister, Hebel) stellt Filter ein, Shift-Rechtsklick nimmt ihn ab."
+		"You stick frames onto any chest or tank, from other mods too. Right click with the frame in hand or with the &6Logistics Configurator&r (four Compressed Iron, red dye, Air Canister, lever) sets filters, shift right click removes it."
 	]
-	quest.7BA5A8754283846C.quest_subtitle: "Rahmen an die Kiste, fertig ist das Netz."
-	quest.7BA5A8754283846C.title: "&6Bau Logistics Frames"
+	quest.7BA5A8754283846C.quest_subtitle: "Frame on the chest, and the network is done."
+	quest.7BA5A8754283846C.title: "&6Build Logistics Frames"
 	quest.7BB43D4C7CBA97B5.quest_desc: [
 		"On top Bat Wing and &6eye of ender&r, in the middle &6Nebulous Heart&r, &6Void Tear&r, Bat Wing, at the bottom stick and Nebulous Heart give the &6Ender Staff&r. It stores up to &e250 ender pearls&r from your inventory."
 		""
@@ -28637,12 +28637,12 @@
 	quest.7F0E750CD5DC2AA1.quest_subtitle: "Coal that burns three times as long."
 	quest.7F0E750CD5DC2AA1.title: "&8Make Primal Coal"
 	quest.7F11A7C56DB50529.quest_desc: [
-		"Zieh das Teil &eStart&r auf die Fläche. Hier beginnt die Drohne. Es muss genau einmal vorkommen, und alles, was folgen soll, wird &eunten&r angesteckt."
+		"Drag the &eStart&r piece onto the area. This is where the drone begins. It must appear exactly once, and everything that should follow is attached &ebelow&r."
 		""
-		"Ein roter Rand an einem Teil heißt: Da fehlt etwas. Fahr mit der Maus darüber, der Tooltip sagt dir, was. Ist das letzte Teil abgearbeitet, fängt die Drohne wieder bei Start an."
+		"A red border on a piece means: something is missing there. Hover over it, the tooltip tells you what. When the last piece is done, the drone starts again at Start."
 	]
-	quest.7F11A7C56DB50529.quest_subtitle: "Jedes Programm hat genau einen Anfang."
-	quest.7F11A7C56DB50529.title: "&7Puzzleteil: Start"
+	quest.7F11A7C56DB50529.quest_subtitle: "Every program has exactly one beginning."
+	quest.7F11A7C56DB50529.title: "&7Puzzle Piece: Start"
 	quest.7F13FB9DC1D1B328.quest_desc: [
 		"Each piece: top &6Livingwood Twig&r, season rune, twig, middle Terrasteel, the matching &6Manasteel piece&r, Terrasteel, bottom one Terrasteel. Helmet with Spring, chestplate with Summer, leggings with Autumn, boots with Winter."
 		""
@@ -29503,7 +29503,7 @@
 	task.5DECB96CDAD0171C.title: "Tried it"
 	task.5DF06D8D4321C4C2.title: "Read"
 	task.5DFB3F3F2D1F0908.title: "Mango (Orange + Mangrove, 10 %)"
-	task.5E188CCEDA9DAF48.title: "Eine Drohne programmieren"
+	task.5E188CCEDA9DAF48.title: "Program a drone"
 	task.5E1ABE9202D5321E.title: "Noted"
 	task.5E1CCC33C7C803B7.title: "Put seeds into a nest"
 	task.5E227D74022EAFA6.title: "Weihrauchkiefer (Gelbkiefer + Fichte, 10 %)"

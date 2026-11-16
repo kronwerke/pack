@@ -13,6 +13,10 @@ file = "config/artifacts/general.toml"
 hash = "6b65a3abce6f82cc9d5ebae89b850528170e629bb0db6e31abda2e27f5cad0e3"
 
 [[files]]
+file = "config/carryon-common.toml"
+hash = "2b62d971ae9c97f6ec9022d99c5b574cb59bc3bfcd0a02059940ec97868d98c1"
+
+[[files]]
 file = "config/create-client.toml"
 hash = "cdba8f0b0fde512048d7b22bfa7aaa1ebc1d7a5a663531c31542bb5b9c4ddab8"
 
@@ -390,7 +394,7 @@ hash = "d3aaeeb9fd57edaaf5a5650a9b86dfe81b1d070fffb7e0846c4b05443465d81e"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/comfort.snbt"
-hash = "2945e46cf7b5447ef8fbc84bd09e82bcab3d6e60342b99d24251066e25d45a34"
+hash = "8ac0da6afdd86c17a769d6b158586f3616bf7ca51c71ec34129b2e12d9d737cd"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/cooking.snbt"
@@ -630,11 +634,11 @@ hash = "93c982c2e09101877cba15ed69d2eee71ed5be2243ee8dcdcc0734845932c8b6"
 
 [[files]]
 file = "config/ftbquests/quests/lang/de_de.snbt"
-hash = "99d52c263c3f0a8ee3927e7cb1f65567bff21c6834d80d3d9154808b03f37e90"
+hash = "75b71979870603bd28d15f435c305f50d93afae0149bd3226ce839da4bcd63f5"
 
 [[files]]
 file = "config/ftbquests/quests/lang/en_us.snbt"
-hash = "101e3f162e8467863bf4929d6fd45bd999594edd8219c96b9b776265bfc4dd91"
+hash = "b4c1628c41eb722cc03b55aa5b8d19885999b838d16790b78f6f4f134ad2ec46"
 
 [[files]]
 file = "config/ftbquests/quests/reward_tables/s1_common.snbt"
@@ -8224,6 +8228,11 @@ metafile = true
 [[files]]
 file = "mods/caelus.pw.toml"
 hash = "992b0dca9683f225fc774d779762d18a009f2d82b9d051e7c0b55a33a95d9238"
+metafile = true
+
+[[files]]
+file = "mods/carry-on.pw.toml"
+hash = "838dbcb90c93bab58691e82c95045bd97c3e096e3a2680a00cf063e56ce35ce3"
 metafile = true
 
 [[files]]

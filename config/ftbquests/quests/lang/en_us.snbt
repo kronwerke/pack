@@ -176,7 +176,7 @@
 	]
 	chapter.42F4545024F13413.title: "Applied Energistics 2"
 	chapter.4340A80A91A38798.chapter_subtitle: [
-		"Stufe 1. Affixe, Edelsteine, Siegel, Umschmieden, Zaubertisch und Spawner."
+		"Stage 1. Affixes, gems, sigils, reforging, enchanting table and spawners."
 	]
 	chapter.4340A80A91A38798.title: "Apotheosis"
 	chapter.43C26D2C14369E7D.chapter_subtitle: [
@@ -2841,14 +2841,14 @@
 	quest.179CF2AACC3D7BAE.quest_subtitle: "Eine Kiste rein, zwanzig Kisten richtig."
 	quest.179CF2AACC3D7BAE.title: "&6&lBau eine Sortieranlage"
 	quest.179FC6925ECB4AB2.quest_desc: [
-		"&eRezept auf Kronwerke:&r oben drei &6Kupferbleche&r, in der Mitte &6Eisenspitzhacke&r, &6Schmiedetisch&r und &6Eisenaxt&r, unten zwei &6Gem Dust&r mit einem &6Lavaeimer&r dazwischen."
+		"&eRecipe on Kronwerke:&r three &6copper sheets&r on top, in the middle &6iron pickaxe&r, &6Smithing Table&r and &6iron axe&r, at the bottom two &6Gem Dust&r with a &6lava bucket&r between them."
 		""
-		"Leg Affix-Items hinein, die du nicht trägst. Jedes gibt ein bis vier &6Seltenheitsmaterialien&r seiner Stufe. Edelsteine werden zu Gem Dust, und normale Ausrüstung gibt einen Teil ihres Metalls zurück: eine Eisenrüstung ein bis drei Eisenbarren, eine Diamantrüstung ein bis drei Diamanten."
+		"Put affix items in that you do not wear. Each gives one to four &6rarity materials&r of its tier. Gems become Gem Dust, and normal gear gives back part of its metal: iron armor one to three iron ingots, diamond armor one to three diamonds."
 		""
 		"{image:apotheosis:textures/blocks/salvaging_table_front.png width:32 height:32 align:center}"
 	]
-	quest.179FC6925ECB4AB2.quest_subtitle: "Aus Beute werden Materialien."
-	quest.179FC6925ECB4AB2.title: "&6&lBau einen Salvaging Table"
+	quest.179FC6925ECB4AB2.quest_subtitle: "Loot becomes materials."
+	quest.179FC6925ECB4AB2.title: "&6&lBuild a Salvaging Table"
 	quest.17A8D8F1BA111955.quest_desc: [
 		"Five &6carbon fibre&r, one &6Processing Unit&r in the middle, at the bottom chest, Motor, chest."
 		""
@@ -3602,16 +3602,16 @@
 	quest.199342F33A3546F7.quest_subtitle: "The last tier of fusion."
 	quest.199342F33A3546F7.title: "&8Fuse Chaotic Injectors"
 	quest.199535D60605F9A5.quest_desc: [
-		"Stell einen &6Zaubertisch&r auf und fahr mit der Maus über die Balken. Apothic Enchanting rechnet mit vier Werten: &bEterna&r ist das Levelmaximum (ein Bücherregal gibt 2, fünfzehn ergeben Stufe 30). &dQuanta&r ist der Zufall nach oben und unten, &5Arcana&r macht seltene Verzauberungen häufiger und bringt ab 25 Prozent immer zwei, ab 75 immer drei Verzauberungen."
+		"Place an &6enchanting table&r and hover over the bars. Apothic Enchanting works with four values: &bEterna&r is the level maximum (one bookshelf gives 2, fifteen give level 30). &dQuanta&r is the randomness up and down, &5Arcana&r makes rare enchantments more common and from 25 percent always gives two, from 75 always three enchantments."
 		""
-		"&eClues&r sind die Zeilen in der Vorschau, eine hat jeder Tisch. Leg ein Item hinein und klick das &eFragezeichen&r oben rechts: Dort siehst du für jeden Slot, welche Verzauberungen mit welcher Chance drin sind."
+		"&eClues&r are the lines in the preview, every table has one. Put an item in and click the &equestion mark&r top right: there you see for every slot which enchantments are in it with which chance."
 		""
-		"&cWeltstufe:&r Dein Eterna ist durch die Weltstufe gedeckelt. Haven 30, Frontier 45, Ascent 60, Summit 75 (Wither, Stufe 2), Pinnacle 100 (Drache, Stufe 4). Der Tisch sagt dir im Tooltip, wenn das Limit greift."
+		"&cWorld tier:&r Your Eterna is capped by the world tier. Haven 30, Frontier 45, Ascent 60, Summit 75 (Wither, stage 2), Pinnacle 100 (dragon, stage 4). The table tells you in the tooltip when the limit applies."
 		""
-		"Levelkosten sind bei Apotheosis fair: Du zahlst immer so viel Erfahrung, als hättest du genau die verlangten Level, egal wie viele du gerade hast."
+		"Level costs are fair with Apotheosis: you always pay as much experience as if you had exactly the levels required, no matter how many you have right now."
 	]
-	quest.199535D60605F9A5.quest_subtitle: "Vier Werte statt einem."
-	quest.199535D60605F9A5.title: "&b&lSchau in den Zaubertisch"
+	quest.199535D60605F9A5.quest_subtitle: "Four values instead of one."
+	quest.199535D60605F9A5.title: "&b&lLook into the Enchanting Table"
 	quest.199B3CD9BAEC1C95.quest_desc: [
 		"&6Aechor Plants&r sind die großen, grünen Pflanzen mit Zähnen, die auf dem Gras sitzen und nicht laufen können. Sie spucken &6Poison Needles&r. Komm von hinten oder von oben, dann lassen sie ein &6Aechor Petal&r fallen, mit Plünderung mehr."
 		""
@@ -4443,14 +4443,14 @@
 	quest.1C75BD1FD19521C8.quest_subtitle: "For netherite and diamond veins."
 	quest.1C75BD1FD19521C8.title: "&6Build a Netherite Drill"
 	quest.1C76F044A6C17945.quest_desc: [
-		"Halte die Taste &eCompare Hovered Equipment&r (Steuerungseinstellungen unter Apotheosis) über einem Item im Inventar, und neben dem Tooltip erscheint das Teil, das du gerade trägst. So siehst du sofort, ob der Fund besser ist."
+		"Hold the &eCompare Hovered Equipment&r key (controls settings under Apotheosis) over an item in your inventory, and the piece you are wearing appears next to the tooltip. So you see right away whether the find is better."
 		""
-		"Mit &eLink Hovered Item to Chat&r schickst du ein Item in den Chat, alle 5 Sekunden eines. Jeder im Chat kann mit der Maus darauf zeigen und den vollen Tooltip lesen. Praktisch zum Tauschen und zum Angeben."
+		"With &eLink Hovered Item to Chat&r you send an item to chat, one every 5 seconds. Everyone in chat can hover over it and read the full tooltip. Handy for trading and for showing off."
 		""
-		"&eGlück:&r Das Attribut &6Luck&r verschiebt bei jedem Fund die Gewichte zu besseren Seltenheiten und Reinheiten. Frontier gibt 20 Prozent, Glückstränke und Affixe mit Luck zählen auch. &eDetailed Info&r im Weltstufen-Menü rechnet dein Glück schon ein, mit Shift siehst du die Grundwerte."
+		"&eLuck:&r The &6Luck&r attribute shifts the weights toward better rarities and purities with every find. Frontier gives 20 percent, potions of luck and affixes with Luck count too. &eDetailed Info&r in the world tier menu already includes your luck, with Shift you see the base values."
 	]
-	quest.1C76F044A6C17945.quest_subtitle: "Zwei Tasten, die jeder Sammler braucht."
-	quest.1C76F044A6C17945.title: "&eVergleiche und verlinke"
+	quest.1C76F044A6C17945.quest_subtitle: "Two keys every collector needs."
+	quest.1C76F044A6C17945.title: "&eCompare and Link"
 	quest.1C79E8F0E3E0364C.quest_desc: [
 		"The Chaos Guardian is dead, and with it &6Kronwerke Season 2&r ends. The fireworks go up."
 		""
@@ -5523,14 +5523,14 @@
 	quest.1FD04F305DDCBF59.quest_subtitle: "Diamonds under the stars."
 	quest.1FD04F305DDCBF59.title: "&bBuild a Starlit Pickaxe"
 	quest.1FDDDEC3ACEFDA33.quest_desc: [
-		"Stell &e15 Bücherregale&r um den Zaubertisch, ein Block Abstand, wie immer. Jedes gibt &b2 Eterna&r, mehr als 30 bringen Bücherregale dieser Art aber nicht."
+		"Place &e15 bookshelves&r around the enchanting table, one block gap, as always. Each gives &b2 Eterna&r, but bookshelves of this kind give no more than 30."
 		""
-		"Es muss kein Eichenregal sein: Alles, was Minecraft als Bücherregal zählt, gilt auch hier. Das &6Skyroot-Bücherregal&r aus dem Aether, das &6Wisewood-Regal&r von Iron's Spells, die Regale aus allen Hölzern von Productive Trees und die Varianten von Chipped bringen ebenfalls 2 Eterna."
+		"It does not have to be an oak shelf: everything Minecraft counts as a bookshelf counts here too. The &6Skyroot Bookshelf&r from the Aether, the &6Wisewood shelf&r from Iron's Spells, the shelves from all Productive Trees woods and the Chipped variants also give 2 Eterna."
 		""
-		"&eQuanta:&r Jeder &6Schädel&r (Skelett, Zombie, Creeper) in einem Regalplatz gibt 5 Prozent Quanta dazu. Der Tisch startet bei 15 Prozent. Viel Quanta heißt: mal deutlich besser, mal deutlich schlechter als dein Level."
+		"&eQuanta:&r Every &6skull&r (skeleton, zombie, creeper) in a shelf position adds 5 percent Quanta. The table starts at 15 percent. A lot of Quanta means: sometimes clearly better, sometimes clearly worse than your level."
 	]
-	quest.1FDDDEC3ACEFDA33.quest_subtitle: "Jedes Bücherregal zählt, aus welchem Mod auch immer."
-	quest.1FDDDEC3ACEFDA33.title: "&6Stell fünfzehn Regale auf"
+	quest.1FDDDEC3ACEFDA33.quest_subtitle: "Every bookshelf counts, from whatever mod."
+	quest.1FDDDEC3ACEFDA33.title: "&6Place Fifteen Shelves"
 	quest.1FDFA0956359CF09.quest_desc: [
 		"Agree on fixed evenings for fights against the &aGuardian of Gaia&r. Every player in the fight gets &e6 Gaia Spirits&r, whoever lands the last hit &e8&r."
 		""
@@ -5883,14 +5883,14 @@
 	quest.20AC1121F3B1DE67.quest_subtitle: "Drehen, sperren, kopieren."
 	quest.20AC1121F3B1DE67.title: "&6Nimm das Rahmenwerkzeug"
 	quest.20ACF671564976EB.quest_desc: [
-		"Wirf einen Edelstein, den du nicht brauchst, auf den Boden und lass einen &6Amboss&r darauf fallen. Übrig bleibt &6Gem Dust&r."
+		"Throw a gem you do not need on the ground and drop an &6anvil&r on it. What remains is &6Gem Dust&r."
 		""
-		"Gem Dust steckt in jedem Tisch und jedem Siegel dieses Kapitels, und das Schleifen von Edelsteinen frisst ihn stapelweise. Ein Cracked-Stein gibt ein bis zwei Staub, ein Flawed-Stein zwei bis vier."
+		"Gem Dust goes into every table and every sigil of this chapter, and cutting gems eats it by the stack. A Cracked gem gives one to two dust, a Flawed gem two to four."
 		""
-		"Der Amboss ist nur für den Anfang. Sobald der Salvaging Table steht, zerlegst du Edelsteine dort."
+		"The anvil is only for the start. As soon as the Salvaging Table stands, you take gems apart there."
 	]
-	quest.20ACF671564976EB.quest_subtitle: "Ein Amboss, ein Edelstein, Staub."
-	quest.20ACF671564976EB.title: "&7Zerbrich einen Edelstein"
+	quest.20ACF671564976EB.quest_subtitle: "An anvil, a gem, dust."
+	quest.20ACF671564976EB.title: "&7Shatter a Gem"
 	quest.20AE535EE804F883.quest_desc: [
 		"&eFire Resistance&r: Potion of Fire Resistance. &eWater Breathing&r: Potion of Water Breathing."
 		""
@@ -7123,14 +7123,14 @@
 	quest.240A7AC4D860B5AF.quest_subtitle: "Tier 2 checklist: bang and cold."
 	quest.240A7AC4D860B5AF.title: "&dLearn the combat glyphs"
 	quest.2415F481AB3173D5.quest_desc: [
-		"Öffne dein Inventar und klick den Knopf &eShow Attributes&r oben rechts. Die Liste zeigt jedes Attribut mit seinem aktuellen Wert. &eHide Unchanged&r blendet alles aus, was noch auf dem Grundwert steht. Mit &eShift&r über einem Eintrag siehst du Basis, Minimum, Maximum und jeden einzelnen Modifikator mit seiner Quelle."
+		"Open your inventory and click the &eShow Attributes&r button top right. The list shows every attribute with its current value. &eHide Unchanged&r hides everything still at its base value. With &eShift&r over an entry you see base, minimum, maximum and every single modifier with its source."
 		""
-		"Apothic Attributes bringt die Werte mit, auf denen die Affixe arbeiten: &6Crit Chance&r und &6Crit Damage&r, &6Life Steal&r (Teil des Schadens heilt dich) und &6Overheal&r (Teil des Schadens wird Absorption, auch bei vollem Leben), &6Armor Pierce&r und &6Armor Shred&r gegen Rüstung, &6Mining Speed&r, &6Dodge Chance&r, &6Draw Speed&r, &6Experience Gained&r, &6Cooldown Reduction&r."
+		"Apothic Attributes brings the values the affixes work on: &6Crit Chance&r and &6Crit Damage&r, &6Life Steal&r (part of the damage heals you) and &6Overheal&r (part of the damage becomes absorption, even at full health), &6Armor Pierce&r and &6Armor Shred&r against armor, &6Mining Speed&r, &6Dodge Chance&r, &6Draw Speed&r, &6Experience Gained&r, &6Cooldown Reduction&r."
 		""
-		"&eKronwerke:&r Ein paar Teile mit Mining Speed machen den Unterschied, wenn der Obelisk 20 000 Bruchstein will."
+		"&eKronwerke:&r A few pieces with Mining Speed make the difference when the obelisk wants 20,000 cobblestone."
 	]
-	quest.2415F481AB3173D5.quest_subtitle: "Was dein Charakter wirklich kann."
-	quest.2415F481AB3173D5.title: "&e&lÖffne die Attribut-Anzeige"
+	quest.2415F481AB3173D5.quest_subtitle: "What your character can really do."
+	quest.2415F481AB3173D5.title: "&e&lOpen the Attribute Display"
 	quest.241A49BCFA3B8B74.quest_desc: [
 		"{image:kronwerke:textures/quests/shots/create_depot.png width:224 height:126 align:center}"
 		"&6Andesite Alloy&r and &6Andesite Casing&r make a &6Depot&r. Place it two blocks below the press, with one block of air in between."
@@ -7167,11 +7167,11 @@
 	quest.242814FBF1375799.quest_subtitle: "The Re-Packager."
 	quest.242814FBF1375799.title: "&6Bundle orders together"
 	quest.243FC08551254DCB.quest_desc: [
-		"Drei &6Gem-Fused Slate&r oben und unten, drei &6Gem Dust&r in der Mitte ergeben sechs &6Sigils of Rebirth&r."
+		"Three &6Gem-Fused Slate&r on top and bottom, three &6Gem Dust&r in the middle give six &6Sigils of Rebirth&r."
 		""
-		"Der Reforging Table verbraucht sie: &aUncommon&r kostet 1 Siegel je Umschmieden, &9Rare&r 2. Common geht ohne."
+		"The Reforging Table uses them up: &aUncommon&r costs 1 sigil per reforge, &9Rare&r 2. Common works without."
 	]
-	quest.243FC08551254DCB.quest_subtitle: "Der Brennstoff zum Umschmieden."
+	quest.243FC08551254DCB.quest_subtitle: "The fuel for reforging."
 	quest.243FC08551254DCB.title: "&dSigil of Rebirth"
 	quest.24456541C4B62F76.quest_desc: [
 		"Right click a &6Stoneborn&r to open trading. You pay with &6Regalium Crystals&r."
@@ -8449,16 +8449,16 @@
 	quest.281D8DAABEF8ABDA.quest_subtitle: "Feuerlöscher oder Flammenwerfer."
 	quest.281D8DAABEF8ABDA.title: "&6Sprüh mit dem Chemischen Sprüher"
 	quest.2821C33E0BCF27F2.quest_desc: [
-		"Töte Monster oder öffne Kisten in Bauwerken, bis du ein Werkzeug, eine Waffe oder ein Rüstungsteil mit &6Affixen&r in der Hand hältst. Etwa jedes dritte Ausrüstungsstück aus einer Kiste trägt welche."
+		"Kill monsters or open chests in structures until you hold a tool, a weapon or an armor piece with &6affixes&r. About every third piece of gear from a chest has some."
 		""
-		"Affixe sind Boni wie bei Verzauberungen: mehr Schaden, Lebensraub, schnelleres Abbauen, mehr Rüstung, Glück. Was ein Teil kann, steht im Tooltip. Apotheosis hat keine deutschen Namen, darum stehen die Begriffe hier auf Englisch."
+		"Affixes are bonuses like enchantments: more damage, life steal, faster mining, more armor, luck. What a piece can do is in the tooltip. The terms in this chapter are the mod's own names."
 		""
-		"[\"\",{\"text\":\"Achtung:\",\"color\":\"red\"},{\"text\":\" Bis du einmal eine Weltstufe aktiviert hast, heißen die Teile \"},{\"text\":\"Unidentified\",\"color\":\"blue\"},{\"text\":\" und zeigen nichts an. Drück \"},{\"keybind\":\"key.apotheosis.open_world_tier_select\",\"color\":\"yellow\"},{\"text\":\" und aktiviere \"},{\"text\":\"Haven\",\"color\":\"yellow\"},{\"text\":\", dann liest du alles.\"}]"
+		"[\"\",{\"text\":\"Careful:\",\"color\":\"red\"},{\"text\":\" Until you have activated a world tier once, the pieces are called \"},{\"text\":\"Unidentified\",\"color\":\"blue\"},{\"text\":\" and show nothing. Press \"},{\"keybind\":\"key.apotheosis.open_world_tier_select\",\"color\":\"yellow\"},{\"text\":\" and activate \"},{\"text\":\"Haven\",\"color\":\"yellow\"},{\"text\":\", then you can read everything.\"}]"
 		""
-		"Ein &6Buch&r und ein &6Goldbarren&r ergeben das &6Chronicle of Shadows&r, das Handbuch zu allem in diesem Kapitel."
+		"A &6book&r and a &6gold ingot&r give the &6Chronicle of Shadows&r, the handbook for everything in this chapter."
 	]
 	quest.2821C33E0BCF27F2.quest_subtitle: "No sword is like another."
-	quest.2821C33E0BCF27F2.title: "&6&lFinde Beute mit Affix"
+	quest.2821C33E0BCF27F2.title: "&6&lFind Loot with Affixes"
 	quest.28261DC588E02FAE.quest_desc: [
 		"{image:kronwerke:textures/quests/shots/list_transport_create_tank.png width:224 height:126 align:center}"
 		"Two &6Copper Sheets&r around a &6barrel&r make a &6Fluid Tank&r with &b8 buckets&r per block. Stacked tanks merge, up to 3 blocks wide and 32 high."
@@ -8804,14 +8804,14 @@
 	quest.290477188DE42ABC.quest_subtitle: "Two stations, one schedule, no driver."
 	quest.290477188DE42ABC.title: "&6Let a line run by itself"
 	quest.29052538655CDCA9.quest_desc: [
-		"&eStufe 2:&r Das &6Sigil of Withdrawal&r (Slate, eine &6Lohenrute&r, zwei Enderperlen, ein Lavaeimer, Gem Dust, ergibt vier) holt am Schmiedetisch alle Edelsteine wieder heraus, Item und Steine bleiben heil. Die &6Gem Case&r (Glas, Basalt, Gem Cutting Table, &6Endertruhe&r) lagert 32 000 Edelsteine je Sorte und schleift sie direkt im Inventar."
+		"&eStage 2:&r The &6Sigil of Withdrawal&r (slate, a &6blaze rod&r, two ender pearls, a lava bucket, Gem Dust, gives four) takes all gems back out at the Smithing Table, item and gems stay intact. The &6Gem Case&r (glass, basalt, Gem Cutting Table, &6ender chest&r) stores 32,000 gems per kind and cuts them right in your inventory."
 		""
-		"&eStufe 3:&r Der große &6Reforging Table&r ist der einfache Tisch mit einem &6Netheritbarren&r, zwei &6Arcane Sands&r und drei Netherziegeln. Nur er schmiedet &5Epic&r (30 Level, 2 Arcane Sands, 4 Siegel) und &6Mythic&r (50 Level, 3 Godforged Pearls, 5 Siegel)."
+		"&eStage 3:&r The big &6Reforging Table&r is the simple table with a &6netherite ingot&r, two &6Arcane Sands&r and three nether bricks. Only it forges &5Epic&r (30 levels, 2 Arcane Sands, 4 sigils) and &6Mythic&r (50 levels, 3 Godforged Pearls, 5 sigils)."
 		""
-		"&eStufe 4:&r Der &6Augmenting Table&r (Netherstern, zwei &6Godforged Pearls&r, Zaubertisch, polierter Schwarzstein) verbessert einen einzelnen Affix um 25 Prozent für 2 &6Sigils of Enhancement&r und 225 Level, oder würfelt ihn für 1 Siegel und 175 Level neu, ohne die anderen anzurühren."
+		"&eStage 4:&r The &6Augmenting Table&r (Nether Star, two &6Godforged Pearls&r, enchanting table, polished blackstone) improves a single affix by 25 percent for 2 &6Sigils of Enhancement&r and 225 levels, or rerolls it for 1 sigil and 175 levels, without touching the others."
 	]
 	quest.29052538655CDCA9.quest_subtitle: "Withdrawal, Reforging Table, Augmenting."
-	quest.29052538655CDCA9.title: "&5Was später kommt"
+	quest.29052538655CDCA9.title: "&5What Comes Later"
 	quest.2907732BF4D0A15D.quest_desc: [
 		"&eRezept:&r ein &6Stahlgehäuse&r in die Mitte, zwei &6Eisenbarren&r links und rechts, zwei &6Einfache Steuerschaltkreise&r oben und unten, Redstone in die Ecken."
 		""
@@ -9481,13 +9481,13 @@
 	quest.2AF9D599B1A1865F.quest_subtitle: "More planks, and everything from the stonecutter."
 	quest.2AF9D599B1A1865F.title: "&6Cut wood with the saw"
 	quest.2AFDDA6FB7F92C4F.quest_desc: [
-		"Acht &6Bücher&r um einen &6Amboss&r ergeben acht &6Tomes of Scrapping&r."
+		"Eight &6books&r around an &6anvil&r give eight &6Tomes of Scrapping&r."
 		""
-		"Leg ein Tome mit einem verzauberten Item in den Amboss: Das Item wird zerstört, du bekommst ein Buch mit der &eHälfte&r seiner Verzauberungen (aufgerundet, zufällig gewählt). Gut für Beute mit Verzauberungen, die du nicht tragen willst."
+		"Put a tome with an enchanted item into the anvil: the item is destroyed, and you get a book with &ehalf&r of its enchantments (rounded up, chosen at random). Good for loot with enchantments you do not want to wear."
 		""
-		"Per Infusion wird daraus später das &6Tome of Superior Scrapping&r (alle Verzauberungen, Eterna 45) und das &6Tome of Extraction&r (alle Verzauberungen, Item bleibt heil, Eterna 60)."
+		"Through infusion it later becomes the &6Tome of Superior Scrapping&r (all enchantments, Eterna 45) and the &6Tome of Extraction&r (all enchantments, item stays intact, Eterna 60)."
 	]
-	quest.2AFDDA6FB7F92C4F.quest_subtitle: "Verzauberungen retten, bevor das Werkzeug bricht."
+	quest.2AFDDA6FB7F92C4F.quest_subtitle: "Save enchantments before the tool breaks."
 	quest.2AFDDA6FB7F92C4F.title: "&7Tome of Scrapping"
 	quest.2B0AA104CC0C908D.quest_desc: [
 		"Der &cFerrous Wroughtnaut&r aus &6Mowzie's Mobs&r steht in einer Kammer unter der Erde und wacht erst auf, wenn du nah kommst. Von vorn prallt alles ab. Weich seiner Axt aus und schlag in den &eRücken&r, am besten wenn die Axt im Boden steckt."
@@ -9598,14 +9598,14 @@
 	quest.2B98A34EC942E3BF.quest_subtitle: "Almost every big mod comes with its own handbook."
 	quest.2B98A34EC942E3BF.title: "&6Read the mods' books"
 	quest.2B99AA887C15BA2B.quest_desc: [
-		"Spreng einen Spawner, den du nicht brauchst, mit &6TNT&r. Er fängt an zu zittern und detoniert ein paar Sekunden später selbst, dabei fallen das gespeicherte Monster und &e48 bis 64 Spawner Chains&r heraus."
+		"Blow up a spawner you do not need with &6TNT&r. It starts to shake and detonates by itself a few seconds later, dropping the stored monster and &e48 to 64 Spawner Chains&r."
 		""
-		"Zwei &6Gem Dust&r um ein &6Gem-Fused Slate&r oben, zwei Chains um ein Slate in der Mitte, drei Chains unten ergeben zwei leere &6Spawner Runes&r. Jede fertige Rune wird aus einer leeren gebaut."
+		"Two &6Gem Dust&r around a &6Gem-Fused Slate&r on top, two chains around a slate in the middle, three chains at the bottom give two blank &6Spawner Runes&r. Every finished rune is built from a blank one."
 		""
-		"&cAchtung:&r Mit Apotheosis sind die Gegenstände von Apothic Spawners (Zucker, Uhr, fermentiertes Spinnenauge) als Spawner-Upgrade abgeschaltet. Auf Kronwerke geht alles über Runen."
+		"&cCareful:&r With Apotheosis the items of Apothic Spawners (sugar, clock, fermented spider eye) are disabled as spawner upgrades. On Kronwerke everything goes through runes."
 	]
-	quest.2B99AA887C15BA2B.quest_subtitle: "Erst sprengen, dann schmieden."
-	quest.2B99AA887C15BA2B.title: "&8Schmiede Spawner-Runen"
+	quest.2B99AA887C15BA2B.quest_subtitle: "First blow up, then forge."
+	quest.2B99AA887C15BA2B.title: "&8Forge Spawner Runes"
 	quest.2B99F004F95F24A3.quest_desc: [
 		"At the top &6boron ingot, boron block, boron ingot&r, in the middle &6Tough Alloy, tin silver, Tough Alloy&r, at the bottom &6boron ingot, actuator, boron ingot&r."
 		""
@@ -10242,14 +10242,14 @@
 	quest.2D84F5A8DA2CE40A.quest_subtitle: "A number on the wall, a reach into storage."
 	quest.2D84F5A8DA2CE40A.title: "&7Hang Up a Storage Monitor"
 	quest.2D861CC9DB08F9E7.quest_desc: [
-		"Zerleg acht &7Common&r-Items zu &6Mysterious Scrap Metal&r und ein paar &aUncommon&r-Items zu &6Timeworn Fabric&r."
+		"Salvage eight &7Common&r items into &6Mysterious Scrap Metal&r and a few &aUncommon&r items into &6Timeworn Fabric&r."
 		""
-		"&9Rare&r gibt &6Luminous Crystal Shard&r. &5Epic&r gibt &6Arcane Sands&r (Stufe 3), &6Mythic&r gibt &6Godforged Pearl&r (Stufe 4)."
+		"&9Rare&r gives &6Luminous Crystal Shard&r. &5Epic&r gives &6Arcane Sands&r (stage 3), &6Mythic&r gives &6Godforged Pearl&r (stage 4)."
 		""
-		"Die Materialien brauchst du zum Schleifen von Edelsteinen und zum Umschmieden. Heb alles auf, was du findest, auch das Common-Zeug: Scrap Metal geht beim Schleifen in Stapeln weg."
+		"You need the materials for cutting gems and for reforging. Keep everything you find, even the Common stuff: Scrap Metal goes in stacks when cutting."
 	]
-	quest.2D861CC9DB08F9E7.quest_subtitle: "Scrap Metal und Timeworn Fabric."
-	quest.2D861CC9DB08F9E7.title: "&7Zerlege Common und Uncommon"
+	quest.2D861CC9DB08F9E7.quest_subtitle: "Scrap Metal and Timeworn Fabric."
+	quest.2D861CC9DB08F9E7.title: "&7Salvage Common and Uncommon"
 	quest.2D87477B9A30909B.quest_desc: [
 		"{image:kronwerke:textures/quests/shots/aether_slider.png width:224 height:126 align:center}"
 		"Der &6Slider&r ist der riesige Würfel in der Bosshalle. Er schläft, bis du ihn mit einer &6Spitzhacke&r schlägst. Dann rast er in geraden Linien auf dich zu und kracht in die Wände. &cNur Spitzhacken machen ihm Schaden&r, Schwerter prallen ab."
@@ -12919,14 +12919,14 @@
 	quest.382D4F037A92C5A3.quest_subtitle: "Copper, zinc and a breath of blaze."
 	quest.382D4F037A92C5A3.title: "&6Mix brass in the heated basin"
 	quest.3833D03F6FCCC0EE.quest_desc: [
-		"&6Melonshelf:&r drei &6Melonen&r oben und unten, in der Mitte Glitzernde Melonenscheibe, Bücherregal, Glitzernde Melonenscheibe. Es senkt &dQuanta&r um 10 Prozent und Eterna um 2."
+		"&6Melonshelf:&r three &6melons&r on top and bottom, in the middle glistering melon slice, bookshelf, glistering melon slice. It lowers &dQuanta&r by 10 percent and Eterna by 2."
 		""
-		"Andere Regale verschieben die Werte gezielt: Das &6Stoneshelf&r (sechs Polierter Andesit, drei Bücher) senkt &5Arcana&r um 7,5 und Eterna um 3. Das &6Beeshelf&r (Bienenstöcke, Honigwaben, Honigblöcke um ein Regal) setzt Quanta um 100 hoch und Eterna um 30 herunter."
+		"Other shelves shift the values in a targeted way: the &6Stoneshelf&r (six polished andesite, three books) lowers &5Arcana&r by 7.5 and Eterna by 3. The &6Beeshelf&r (beehives, honeycombs, honey blocks around a shelf) raises Quanta by 100 and lowers Eterna by 30."
 		""
-		"&eWozu:&r Manche Infusionen verlangen Quanta oder Arcana in einem engen Bereich. Mit diesen Regalen triffst du ihn, ohne den ganzen Raum umzubauen."
+		"&eWhat for:&r Some infusions ask for Quanta or Arcana in a narrow range. With these shelves you hit it without rebuilding the whole room."
 	]
-	quest.3833D03F6FCCC0EE.quest_subtitle: "Weniger Zufall, gezieltere Bücher."
-	quest.3833D03F6FCCC0EE.title: "&aStimm den Tisch mit Melonshelves ab"
+	quest.3833D03F6FCCC0EE.quest_subtitle: "Less randomness, more targeted books."
+	quest.3833D03F6FCCC0EE.title: "&aTune the Table with Melonshelves"
 	quest.3839EC013C49464F.quest_desc: [
 		"In the heated cauldron with &e1 000 mB&r of Potion of Swiftness: a &6Coffer&r, an &6echo shard&r, &e2 eyes of ender&r, &e4 Moon Dust&r. Out come &e2&r Entangled Coffers."
 		""
@@ -13081,11 +13081,11 @@
 	quest.3938FCAFCD22C593.quest_subtitle: "More dust from every ore."
 	quest.3938FCAFCD22C593.title: "&7&lBuild a SAG Mill"
 	quest.394162B243AC91E2.quest_desc: [
-		"Drei &6Gem-Fused Slate&r, drei &6Feuerstein&r, drei Slate in Reihen ergeben sechs &6Sigils of Unnaming&r."
+		"Three &6Gem-Fused Slate&r, three &6flint&r, three slate in rows give six &6Sigils of Unnaming&r."
 		""
-		"Am Schmiedetisch nimmt ein Siegel die Affix-Teile aus dem Namen eines Items. Die Affixe selbst bleiben, nur der Name wird wieder kurz."
+		"At the Smithing Table a sigil removes the affix parts from an item's name. The affixes themselves stay, only the name becomes short again."
 	]
-	quest.394162B243AC91E2.quest_subtitle: "Weg mit dem langen Namen."
+	quest.394162B243AC91E2.quest_subtitle: "Away with the long name."
 	quest.394162B243AC91E2.title: "&7Sigil of Unnaming"
 	quest.39433CE0D184C9BD.quest_desc: [
 		"Top and bottom &6steel, steel, gold nugget&r, in the middle &6Coil Copper, Coil Copper, iron&r."
@@ -14370,16 +14370,16 @@
 	quest.3E621E87FA4075B1.quest_subtitle: "Create, Verpacker und Kettenförderer: Gegenstände als Paket mit Adresse."
 	quest.3E621E87FA4075B1.title: "Verschick ein Paket"
 	quest.3E6A3398CEDD686B.quest_desc: [
-		"&7Common&r: ein Attributbonus, mit 25 Prozent Chance ein zweiter."
-		"&aUncommon&r: zwei Attributboni, zur Hälfte ein Effekt dazu, bis zu ein Sockel."
-		"&9Rare&r: zwei Attributboni, ein Effekt (35 Prozent für einen zweiten), bis zu zwei Sockel, und es nutzt sich 10 bis 25 Prozent langsamer ab."
+		"&7Common&r: one attribute bonus, a 25 percent chance of a second one."
+		"&aUncommon&r: two attribute bonuses, half the time an effect on top, up to one socket."
+		"&9Rare&r: two attribute bonuses, one effect (35 percent for a second), up to two sockets, and it wears 10 to 25 percent slower."
 		""
-		"&5Epic&r hat drei Attribute, einen Effekt und immer eine &6Fähigkeit&r mit Abklingzeit. &6Mythic&r hat vier Attribute, zwei Effekte und eine Fähigkeit, selten sogar Unzerstörbarkeit."
+		"&5Epic&r has three attributes, one effect and always an &6ability&r with a cooldown. &6Mythic&r has four attributes, two effects and an ability, rarely even unbreakability."
 		""
-		"&eKronwerke:&r Common, Uncommon und ein wenig Rare gibt es in Stufe 1. &5Epic&r kommt in Stufe 3, &6Mythic&r in Stufe 4, mit den Weltstufen Summit und Pinnacle."
+		"&eKronwerke:&r Common, Uncommon and a little Rare exist in stage 1. &5Epic&r comes in stage 3, &6Mythic&r in stage 4, with the world tiers Summit and Pinnacle."
 	]
-	quest.3E6A3398CEDD686B.quest_subtitle: "Die Farbe des Namens sagt, was drinsteckt."
-	quest.3E6A3398CEDD686B.title: "&7Lern die Seltenheiten"
+	quest.3E6A3398CEDD686B.quest_subtitle: "The color of the name says what is inside."
+	quest.3E6A3398CEDD686B.title: "&7Learn the Rarities"
 	quest.3E855AB0F15CBD8B.quest_desc: [
 		"&6Fluid Extractor&r: blue dye, copper, Mercury Shard on top of each other. &6Fluid Inserter&r: blue dye, Mercury Shard, copper."
 		""
@@ -16083,14 +16083,14 @@
 	quest.462C595130F254F7.quest_subtitle: "Drilling faster means more SU."
 	quest.462C595130F254F7.title: "&7Drill: 4 SU per RPM"
 	quest.463E3F017FF4B811.quest_desc: [
-		"Drei &6Nautilusschalen&r oben, ein &6Herz des Meeres&r in der Mitte, ein &6Eisenbarren&r unten ergeben den &6Inert Trident&r."
+		"Three &6nautilus shells&r on top, a &6Heart of the Sea&r in the middle, an &6iron ingot&r at the bottom give the &6Inert Trident&r."
 		""
-		"Im Zaubertisch infundiert, bei &bEterna 40&r, &dQuanta 20 bis 50&r und &5Arcana 35&r, wird er zum echten &6Dreizack&r. Das Herz des Meeres liegt in vergrabenen Schätzen, Nautilusschalen angelst du oder bekommst sie von Ertrunkenen."
+		"Infused in the enchanting table at &bEterna 40&r, &dQuanta 20 to 50&r and &5Arcana 35&r, it becomes a real &6trident&r. The Heart of the Sea lies in buried treasure, nautilus shells you fish or get from drowned."
 		""
-		"Mit &6Kanalisierung&r ruft der Dreizack bei Gewitter Blitze, praktisch für geladene Creeper."
+		"With &6Channeling&r the trident calls lightning during thunderstorms, handy for charged creepers."
 	]
-	quest.463E3F017FF4B811.quest_subtitle: "Dreizack ohne Ertrunkene."
-	quest.463E3F017FF4B811.title: "&3Erweck einen Dreizack"
+	quest.463E3F017FF4B811.quest_subtitle: "A trident without drowned."
+	quest.463E3F017FF4B811.title: "&3Awaken a Trident"
 	quest.4643921A15D7ABC6.quest_desc: [
 		"Put the &6spawn egg of an Iron Bee&r on the &6Casting Table&r and pour &e810 mB of molten steel&r over it. The egg becomes the spawn egg of the &6Steel Bee&r. On this server that is the only way to alloy bees, they cannot be bred."
 		""
@@ -16485,12 +16485,12 @@
 	quest.47D6837AFF83BFB1.quest_subtitle: "Zaubern mit deinem eigenen Aureal."
 	quest.47D6837AFF83BFB1.title: "&dBaue einen Magic Wand"
 	quest.47DA0BBE952265D3.quest_desc: [
-		"Eine &6Spawner-Rune&r mit vier &6Wolle&r drumherum ergibt die &6Rune of Silence&r. Am Spawner angewendet machen die Monster daraus keinen Laut mehr."
+		"A &6Spawner Rune&r with four &6wool&r around it gives the &6Rune of Silence&r. Applied to the spawner, its monsters no longer make a sound."
 		""
-		"Für Farmen neben der Basis, im Keller oder unter dem Gemeinschaftsplatz. Die &6Rune of Perpetual Twilight&r, mit der ein Spawner auch im Hellen arbeitet, braucht Seelenlaternen aus dem Nether."
+		"For farms next to the base, in the basement or under the community square. The &6Rune of Perpetual Twilight&r, which lets a spawner work in the light too, needs soul lanterns from the Nether."
 	]
-	quest.47DA0BBE952265D3.quest_subtitle: "Eine Farm, die niemand hört."
-	quest.47DA0BBE952265D3.title: "&2Mach den Spawner leise"
+	quest.47DA0BBE952265D3.quest_subtitle: "A farm nobody hears."
+	quest.47DA0BBE952265D3.title: "&2Make the Spawner Quiet"
 	quest.47DCFAE50AC52582.quest_desc: [
 		"In EMI you may see the &6Farming Station&r. In this version Ender IO only ships it as an &cexperimental data pack&r marked as unfinished. It is not active on Kronwerke, so the station can neither be crafted nor placed."
 		""
@@ -16768,14 +16768,14 @@
 	quest.493BA659596BA22E.quest_subtitle: "Mekanism Tools: 8 192 Haltbarkeit."
 	quest.493BA659596BA22E.title: "&5Bau Raffiniertes Obsidian"
 	quest.494A21B1D6812CA7.quest_desc: [
-		"Halte eine Rune in der Hand und &eRechtsklick&r auf den Spawner. Jede Rune ist eine leere Spawner Rune mit vier gleichen Gegenständen drumherum:"
+		"Hold a rune in your hand and &eright click&r the spawner. Every rune is a blank Spawner Rune with four identical items around it:"
 		""
-		"&6Kolben&r: Spawn Range +2 (bis 32). &6Komparatoren&r: läuft nur mit Redstone-Signal. &6Wolle&r: die Monster sind stumm. &6Lagerfeuer&r: die Monster brennen. &6Schildkröteneier&r: nur Babys. &6Tropfstein&r: die Monster starten mit 16 Prozent weniger Leben (bis 20 Prozent). &6Seelenlaternen&r: ignoriert Licht, Stufe 2."
+		"&6Pistons&r: Spawn Range +2 (up to 32). &6Comparators&r: only runs with a redstone signal. &6Wool&r: the monsters are silent. &6Campfires&r: the monsters burn. &6Turtle eggs&r: only babies. &6Dripstone&r: the monsters start with 16 percent less health (up to 20 percent). &6Soul lanterns&r: ignores light, stage 2."
 		""
-		"Mit &6Netherquarz&r in der Nebenhand (ab Stufe 2) kehrst du eine Rune um, der Quarz bleibt. &eInfundierte Runen&r (Eterna 70) bringen No AI, Ignores Players, Ignores Conditions und Echoing, mehr Beute pro Monster. EMI zeigt unter dem Spawner jede Rune."
+		"With &6nether quartz&r in your offhand (from stage 2) you reverse a rune, the quartz stays. &eInfused runes&r (Eterna 70) bring No AI, Ignores Players, Ignores Conditions and Echoing, more loot per monster. EMI shows every rune under the spawner."
 	]
-	quest.494A21B1D6812CA7.quest_subtitle: "Eine Rune je Wert."
-	quest.494A21B1D6812CA7.title: "&2Verändere einen Spawner"
+	quest.494A21B1D6812CA7.quest_subtitle: "One rune per value."
+	quest.494A21B1D6812CA7.title: "&2Modify a Spawner"
 	quest.49530F1CA9326122.quest_desc: [
 		"There is a &6waystone&r at spawn. A &eright-click&r activates it for you. From then on every waystone you know brings you back here with one click."
 		""
@@ -17397,14 +17397,14 @@
 	quest.4BF5047D4A9055F9.quest_subtitle: "Hier kommt der Strom wieder heraus."
 	quest.4BF5047D4A9055F9.title: "&c&lBau einen Flux-Punkt"
 	quest.4BFFFD5215CE391C.quest_desc: [
-		"Stell &egenau 10 Bücherregale&r an den Tisch (Eterna 20, nicht mehr), leg eine &6Karotte&r in den Zaubertisch. Der dritte Slot leuchtet: Klick ihn, es kostet 3 Lapis und Erfahrung, und heraus kommt eine &6Goldene Karotte&r."
+		"Place &eexactly 10 bookshelves&r at the table (Eterna 20, no more), put a &6carrot&r into the enchanting table. The third slot lights up: click it, it costs 3 lapis and experience, and out comes a &6Golden Carrot&r."
 		""
-		"So funktioniert &6Infusion&r: Ein Rezept verlangt bestimmte Werte für Eterna, Quanta und Arcana, manchmal mit Obergrenze. Stimmen sie, wird das Item im dritten Slot verwandelt. Die Karotte will Eterna genau 20 und Quanta zwischen 10 und 30, die 15 Prozent des leeren Tischs reichen."
+		"This is how &6infusion&r works: a recipe asks for certain values of Eterna, Quanta and Arcana, sometimes with an upper limit. If they match, the item in the third slot is transformed. The carrot wants Eterna exactly 20 and Quanta between 10 and 30, the 15 percent of the empty table is enough."
 		""
-		"Alle Infusionsrezepte stehen in EMI unter dem Zaubertisch. Honigflaschen werden ab Eterna 20 zu Erfahrungsflaschen, bei Eterna 60 zu acht Stück."
+		"All infusion recipes are in EMI under the enchanting table. Honey bottles become bottles of enchanting from Eterna 20, at Eterna 60 eight of them."
 	]
-	quest.4BFFFD5215CE391C.quest_subtitle: "Eine Karotte wird golden."
-	quest.4BFFFD5215CE391C.title: "&eDeine erste Infusion"
+	quest.4BFFFD5215CE391C.quest_subtitle: "A carrot turns golden."
+	quest.4BFFFD5215CE391C.title: "&eYour First Infusion"
 	quest.4C00C2E9E0EB9370.quest_desc: [
 		"&5Pentacle:&r Hedyrin's Lure."
 		"&6Bowls:&r &e4 bones&r."
@@ -17837,14 +17837,14 @@
 	quest.4DD9D739F3D66B95.quest_subtitle: "Sensors and redstone in the controller."
 	quest.4DD9D739F3D66B95.title: "&eSwitch with a logic channel"
 	quest.4DDB29BABEFA3AD6.quest_desc: [
-		"&eRezept:&r drei &6Prismarinziegel&r oben und unten, in der Mitte eine &6Wasserflasche&r, ein &6Bücherregal&r und ein &6Kugelfisch&r."
+		"&eRecipe:&r three &6prismarine bricks&r on top and bottom, in the middle a &6water bottle&r, a &6bookshelf&r and a &6pufferfish&r."
 		""
-		"Ein &6Seashelf&r gibt &b3 Eterna&r (bis maximal 45) und &53 Prozent Arcana&r. Fünf davon zu deinen fünfzehn Bücherregalen ergeben Eterna 45 und Arcana 15. Prismarin holst du aus einem Ozeanmonument, Kugelfische angelst du im Ozean."
+		"A &6Seashelf&r gives &b3 Eterna&r (up to 45) and &53 percent Arcana&r. Five of them plus your fifteen bookshelves give Eterna 45 and Arcana 15. You get prismarine from an ocean monument, pufferfish you fish in the ocean."
 		""
-		"Die Alternative aus dem Nether, das &6Hellshelf&r (Netherziegel, Lohenrute, Regenerationstrank, Bücherregal), kommt in Stufe 2."
+		"The alternative from the Nether, the &6Hellshelf&r (nether bricks, blaze rod, potion of regeneration, bookshelf), comes in stage 2."
 	]
-	quest.4DDB29BABEFA3AD6.quest_subtitle: "Das Meer hebt den Tisch auf 45."
-	quest.4DDB29BABEFA3AD6.title: "&3Bau fünf Seashelves"
+	quest.4DDB29BABEFA3AD6.quest_subtitle: "The sea raises the table to 45."
+	quest.4DDB29BABEFA3AD6.title: "&3Build Five Seashelves"
 	quest.4DDB9EE8673EB902.quest_desc: [
 		"Keep praying and sacrificing. With enough favor you get the &dSoul Sign&r."
 		""
@@ -18121,14 +18121,14 @@
 	quest.4EEACBE873E2B758.quest_subtitle: "Portable Storage Interfaces."
 	quest.4EEACBE873E2B758.title: "&6Load cargo at the platform"
 	quest.4EF1A088955F811B.quest_desc: [
-		"Ein &6Herz des Meeres&r oben, darunter Prismarinscherbe, &6Infused Seashelf&r, Prismarinscherbe und unten drei Prismarinscherben."
+		"A &6Heart of the Sea&r on top, below prismarine shard, &6Infused Seashelf&r, prismarine shard and three prismarine shards at the bottom."
 		""
-		"Es gibt &b15 Eterna&r (bis 60) und &520 Prozent Arcana&r, so viel wie vier Infused Seashelves. Das &6Crystalline Seashelf&r (Infused Seashelf und drei Prismarinkristalle) gibt dagegen 5 Eterna, 3 Quanta und 5 Arcana."
+		"It gives &b15 Eterna&r (up to 60) and &520 percent Arcana&r, as much as four Infused Seashelves. The &6Crystalline Seashelf&r (Infused Seashelf and three prismarine crystals) on the other hand gives 5 Eterna, 3 Quanta and 5 Arcana."
 		""
-		"Mehr Arcana heißt seltene Verzauberungen und mehr Verzauberungen pro Buch."
+		"More Arcana means rare enchantments and more enchantments per book."
 	]
-	quest.4EF1A088955F811B.quest_subtitle: "Viel Arcana auf einen Schlag."
-	quest.4EF1A088955F811B.title: "&3Schmiede ein Heart-Forged Seashelf"
+	quest.4EF1A088955F811B.quest_subtitle: "A lot of Arcana in one go."
+	quest.4EF1A088955F811B.title: "&3Forge a Heart-Forged Seashelf"
 	quest.4EF20F3F4BEAF5AF.quest_desc: [
 		"[\"\",{\"text\":\"Your origin is on \"},{\"keybind\":\"key.neoorigins.skill_1\",\"color\":\"yellow\"},{\"text\":\", \"},{\"keybind\":\"key.neoorigins.skill_2\",\"color\":\"yellow\"},{\"text\":\", \"},{\"keybind\":\"key.neoorigins.skill_3\",\"color\":\"yellow\"},{\"text\":\" and \"},{\"keybind\":\"key.neoorigins.skill_4\",\"color\":\"yellow\"},{\"text\":\" (ability 1 to 4), your role on \"},{\"keybind\":\"key.neoorigins.class_skill\",\"color\":\"yellow\"},{\"text\":\", the overview on \"},{\"keybind\":\"key.neoorigins.view_info\",\"color\":\"yellow\"},{\"text\":\". Plus \"},{\"text\":\"R\",\"color\":\"yellow\"},{\"text\":\" and \"},{\"text\":\"U\",\"color\":\"yellow\"},{\"text\":\" in EMI, \"},{\"keybind\":\"key.ftbchunks.map\",\"color\":\"yellow\"},{\"text\":\" map and claims, \"},{\"keybind\":\"key.sophisticatedbackpacks.open_backpack\",\"color\":\"yellow\"},{\"text\":\" backpack, \"},{\"keybind\":\"key.curios.open.desc\",\"color\":\"yellow\"},{\"text\":\" accessory slots, \"},{\"keybind\":\"key.ftbultimine\",\"color\":\"yellow\"},{\"text\":\" Ultimine, hold \"},{\"keybind\":\"key.ponder.ponder\",\"color\":\"yellow\"},{\"text\":\" for Ponder, \"},{\"keybind\":\"key.corpse.death_history\",\"color\":\"yellow\"},{\"text\":\" outside of menus the death history.\"}]"
 		""
@@ -18606,14 +18606,14 @@
 	quest.512BBB0DC4DF0398.quest_subtitle: "Frame tier 2, with latex."
 	quest.512BBB0DC4DF0398.title: "&7Build a Simple Machine Frame"
 	quest.512C74E760831B20.quest_desc: [
-		"Leg ein &6Seashelf&r in den Zaubertisch, wenn der Tisch &bEterna 45&r, &dQuanta 15&r und &5Arcana 10&r hat. Fünfzehn Bücherregale, fünf Seashelves und der Grundwert des Tischs reichen genau. Heraus kommt ein &6Infused Seashelf&r."
+		"Put a &6Seashelf&r into the enchanting table when the table has &bEterna 45&r, &dQuanta 15&r and &5Arcana 10&r. Fifteen bookshelves, five Seashelves and the table's base value are exactly enough. Out comes an &6Infused Seashelf&r."
 		""
-		"Das klappt nur, wenn deine Weltstufe &aFrontier&r aktiv ist. In Haven deckelt die Weltstufe dich bei 30, und das Rezept bleibt dunkel."
+		"That only works when your world tier &aFrontier&r is active. In Haven the world tier caps you at 30, and the recipe stays dark."
 		""
-		"Ein Infused Seashelf gibt &b5 Eterna&r (bis 60) und 5 Prozent Arcana. Sechs davon zu den Bücherregalen heben den Tisch auf Eterna 60, nutzbar ab Weltstufe &aAscent&r (Uncommon-Set und ein besiegter Invader)."
+		"An Infused Seashelf gives &b5 Eterna&r (up to 60) and 5 percent Arcana. Six of them plus the bookshelves raise the table to Eterna 60, usable from world tier &aAscent&r (Uncommon set and a defeated invader)."
 	]
-	quest.512C74E760831B20.quest_subtitle: "Eterna 45 verlangt Frontier."
-	quest.512C74E760831B20.title: "&3&lInfundiere ein Seashelf"
+	quest.512C74E760831B20.quest_subtitle: "Eterna 45 needs Frontier."
+	quest.512C74E760831B20.title: "&3&lInfuse a Seashelf"
 	quest.5132E72CB573902F.quest_desc: [
 		"First the &6ME Import Export Bus&r: import bus, Logic Processor, export bus in a row. Then Acceleration Cards in the corners, Quantum Processors at the top, middle and bottom, the Import Export Bus on the left, an &6ME Stock Export Bus&r on the right."
 		""
@@ -18902,14 +18902,14 @@
 	quest.52B9F48B7C9C8BD9.quest_subtitle: "They cut plates into wire and take wires down."
 	quest.52B9F48B7C9C8BD9.title: "&7Build wire cutters"
 	quest.52CDB5AFF4147675.quest_desc: [
-		"[\"\",{\"text\":\"Drück \"},{\"keybind\":\"key.apotheosis.open_world_tier_select\",\"color\":\"yellow\"},{\"text\":\" (Taste \"},{\"text\":\"Open World Tier Select\",\"color\":\"yellow\"},{\"text\":\" in den Steuerungseinstellungen), wähl \"},{\"text\":\"Haven\",\"color\":\"gold\"},{\"text\":\" und klick \"},{\"text\":\"Activate\",\"color\":\"yellow\"},{\"text\":\". Erst dann zeigen deine Affix-Items, was sie können.\"}]"
+		"[\"\",{\"text\":\"Press \"},{\"keybind\":\"key.apotheosis.open_world_tier_select\",\"color\":\"yellow\"},{\"text\":\" (key \"},{\"text\":\"Open World Tier Select\",\"color\":\"yellow\"},{\"text\":\" in the controls settings), choose \"},{\"text\":\"Haven\",\"color\":\"gold\"},{\"text\":\" and click \"},{\"text\":\"Activate\",\"color\":\"yellow\"},{\"text\":\". Only then do your affix items show what they can do.\"}]"
 		""
-		"Eine &6Weltstufe&r gilt nur für dich. Sie legt fest, wie stark Monster in deiner Nähe sind und wie gut die Beute ausfällt. In Haven fällt &7Common&r zu 60 Prozent, &aUncommon&r zu 36 und &9Rare&r zu 4 Prozent."
+		"A &6world tier&r only applies to you. It decides how strong monsters near you are and how good the loot is. In Haven &7Common&r drops 60 percent of the time, &aUncommon&r 36 and &9Rare&r 4 percent."
 		""
-		"Fünf Stufen gibt es: Haven, Frontier, Ascent, Summit und Pinnacle. Jede muss erst freigeschaltet und dann hier aktiviert werden. Der Knopf &eDetailed Info&r zeigt für jede Stufe die Chancen und die Boni."
+		"There are five tiers: Haven, Frontier, Ascent, Summit and Pinnacle. Each has to be unlocked first and then activated here. The &eDetailed Info&r button shows the chances and bonuses for every tier."
 	]
-	quest.52CDB5AFF4147675.quest_subtitle: "[\"\",{\"keybind\":\"key.apotheosis.open_world_tier_select\"},{\"text\":\" öffnet das Menü.\"}]"
-	quest.52CDB5AFF4147675.title: "&eAktiviere die Weltstufe Haven"
+	quest.52CDB5AFF4147675.quest_subtitle: "[\"\",{\"keybind\":\"key.apotheosis.open_world_tier_select\"},{\"text\":\" opens the menu.\"}]"
+	quest.52CDB5AFF4147675.title: "&eActivate the Haven World Tier"
 	quest.52D1CFF3595407C9.quest_desc: [
 		"&6Controller&r: the heart of the network, 32 channels per side. &6Energy Acceptor&r: 2 FE to 1 AE. &6Energy Cell&r and &6Dense Energy Cell&r: 200,000 and 1.6 million AE of buffer. &6Vibration Chamber&r: fuel to 40 AE/t."
 		"&6ME Drive&r: 10 cells. &6ME Chest&r: one cell with a terminal of its own. &6ME IO Port&r: fills or empties cells. &6Cell Workbench&r: filter cells and fit them with cards."
@@ -19162,12 +19162,12 @@
 	quest.540C81F69CC129F8.quest_subtitle: "Licht, das nicht aus dem Boden ragt."
 	quest.540C81F69CC129F8.title: "&e&lHäng Wandfackeln auf"
 	quest.541CB68331DA2C04.quest_desc: [
-		"Ein &6Mysterious Scrap Metal&r oben, darunter zweimal &6Stein&r, Gem-Fused Slate, Stein ergeben zwei Upgrade-Vorlagen. Am &6Schmiedetisch&r machen sie aus Stein-Werkzeug oder Kettenrüstung mit &e4 Eisenbarren&r die Eisenversion."
+		"A &6Mysterious Scrap Metal&r on top, below it twice &6stone&r, Gem-Fused Slate, stone give two upgrade templates. At the &6Smithing Table&r they turn stone tools or chainmail armor into the iron version with &e4 iron ingots&r."
 		""
-		"So behältst du ein Teil mit guten Affixen, auch wenn es aus dem falschen Material gefallen ist. Die nächste Stufe macht aus Eisen Gold: dieselbe Vorlage mit &6Timeworn Fabric&r statt Scrap Metal, dazu 4 Goldbarren."
+		"That way you keep a piece with good affixes, even if it dropped in the wrong material. The next tier turns iron into gold: the same template with &6Timeworn Fabric&r instead of Scrap Metal, plus 4 gold ingots."
 	]
-	quest.541CB68331DA2C04.quest_subtitle: "Gute Affixe auf schlechtem Material."
-	quest.541CB68331DA2C04.title: "&7Wert Affix-Beute auf Eisen auf"
+	quest.541CB68331DA2C04.quest_subtitle: "Good affixes on bad material."
+	quest.541CB68331DA2C04.title: "&7Upgrade Affix Loot to Iron"
 	quest.5422E4D6D824DD27.quest_desc: [
 		"&eRecipe:&r &6honeycomb&r and &6honey bottle&r shapeless give a &6Honey Treat&r. A honey block with four combs gives four at once."
 		""
@@ -19455,14 +19455,14 @@
 	quest.55501AD98352DE31.quest_subtitle: "Your home, one click away."
 	quest.55501AD98352DE31.title: "&6Put a waystone at your base"
 	quest.5551DF3525B3507A.quest_desc: [
-		"Bau einen &6Monsterspawner&r mit einer Spitzhacke mit &6Behutsamkeit&r ab. Das kostet die Spitzhacke &e100 Haltbarkeit&r, aber du bekommst den Spawner samt Monster als Item."
+		"Mine a &6monster spawner&r with a pickaxe with &6Silk Touch&r. That costs the pickaxe &e100 durability&r, but you get the spawner with its monster as an item."
 		""
-		"Halte &eShift&r über dem Spawner-Item, dann siehst du seine Werte: Min und Max Spawn Delay (200 und 800 Ticks), Spawn Count (4), Max Entities (6), Activation Range (16) und Spawn Range (4). Genau diese Werte veränderst du mit Runen."
+		"Hold &eShift&r over the spawner item, then you see its values: Min and Max Spawn Delay (200 and 800 ticks), Spawn Count (4), Max Entities (6), Activation Range (16) and Spawn Range (4). Exactly these values are what you change with runes."
 		""
-		"Spawner findest du in Verliesen, Minen und in den &6Rogue Spawners&r von Apotheosis, die frei in Höhlen stehen und oft eine Kiste dabei haben."
+		"You find spawners in dungeons, mines and in the &6Rogue Spawners&r of Apotheosis, which stand freely in caves and often have a chest with them."
 	]
-	quest.5551DF3525B3507A.quest_subtitle: "Behutsamkeit nimmt ihn mit."
-	quest.5551DF3525B3507A.title: "&2&lHol dir einen Spawner"
+	quest.5551DF3525B3507A.quest_subtitle: "Silk Touch takes it along."
+	quest.5551DF3525B3507A.title: "&2&lGet Yourself a Spawner"
 	quest.555D9BA5A85FCD28.quest_desc: [
 		"&eRecipe on Kronwerke:&r iron in the corners, &6Engineering Processors&r at the top and bottom, two &6Advanced Control Circuits&r from Mekanism left and right, the middle stays empty."
 		""
@@ -20910,14 +20910,14 @@
 	quest.5B2F65D98288796A.quest_subtitle: "163 kinds of trees, fruit, nuts, wood."
 	quest.5B2F65D98288796A.title: "&aOpen Productive Trees"
 	quest.5B32FB094B66B231.quest_desc: [
-		"Eine &6Enderperle&r, eine &6Leine&r und ein &6Goldbarren&r formlos ergeben die &6Flimsy Ender Lead&r. Schlag ein Tier damit, und es steckt in der Leine. Rechtsklick auf den Boden lässt es wieder frei."
+		"An &6ender pearl&r, a &6lead&r and a &6gold ingot&r shapeless give the &6Flimsy Ender Lead&r. Hit an animal with it, and it is stuck in the lead. Right clicking the ground releases it again."
 		""
-		"Damit ziehen Kühe, Schafe und Bienen ohne Zaun und ohne Boot in die neue Basis um. Die schwache Leine nimmt nur Tiere."
+		"With it cows, sheep and bees move to the new base without fences and without a boat. The weak lead only takes animals."
 		""
-		"&eInfusion:&r Bei &bEterna 45&r, &dQuanta 25&r und &5Arcana 40&r wird daraus die &6Ender Lead&r, die fast jedes Wesen fängt. Eterna 45 verlangt die Weltstufe &aFrontier&r."
+		"&eInfusion:&r At &bEterna 45&r, &dQuanta 25&r and &5Arcana 40&r it becomes the &6Ender Lead&r, which catches almost any creature. Eterna 45 needs the world tier &aFrontier&r."
 	]
-	quest.5B32FB094B66B231.quest_subtitle: "Kuh in die Tasche, Kuh wieder raus."
-	quest.5B32FB094B66B231.title: "&5Fang Tiere mit der Ender-Leine"
+	quest.5B32FB094B66B231.quest_subtitle: "Cow into the pocket, cow back out."
+	quest.5B32FB094B66B231.title: "&5Catch Animals with the Ender Lead"
 	quest.5B4A45220537CBE1.quest_desc: [
 		"Vier &6Stöcke&r in Rautenform ergeben einen &6Fachwerkrahmen&r (Timber Frame). Stell ihn auf und klick ihn mit einem &6Vollblock&r an, der Block füllt den Rahmen und die Balken bleiben sichtbar. Vier Stöcke diagonal ergeben die &6Strebe&r, vier Stöcke in den Ecken das &6Kreuz&r."
 		""
@@ -21525,30 +21525,30 @@
 	quest.5E6FF7DF9793C34E.quest_subtitle: "Dieser Punkt kommt vor allen anderen."
 	quest.5E6FF7DF9793C34E.title: "&cSchalte Überspannung ein"
 	quest.5E7928B88E31DFCB.quest_desc: [
-		"Prismarinziegel, &6Infused Seashelf&r, Prismarinziegel oben, drei Prismarinziegelstufen in der Mitte, dasselbe wie oben unten: das &6Seashelf of Aquatic Filtration&r."
+		"Prismarine bricks, &6Infused Seashelf&r, prismarine bricks on top, three prismarine brick slabs in the middle, the same as the top at the bottom: the &6Seashelf of Aquatic Filtration&r."
 		""
-		"Steck verzauberte Bücher hinein. Was in ihnen steht, taucht am Tisch nicht mehr auf. Je mehr Bücher drin sind, desto mehr Eterna und Arcana gibt das Regal selbst."
+		"Put enchanted books into it. What is in them no longer shows up at the table. The more books are inside, the more Eterna and Arcana the shelf itself gives."
 	]
-	quest.5E7928B88E31DFCB.quest_subtitle: "Was du nicht willst, bleibt draußen."
-	quest.5E7928B88E31DFCB.title: "&3Filter Verzauberungen aus"
+	quest.5E7928B88E31DFCB.quest_subtitle: "What you do not want stays out."
+	quest.5E7928B88E31DFCB.title: "&3Filter Out Enchantments"
 	quest.5E7A3C423AC985EB.quest_desc: [
-		"&eRezept:&r eine &6Schere&r zwischen zwei &6Glatten Steinen&r, darunter Bretter mit einem &6Gem Dust&r in der Mitte, unten links und rechts noch je ein Brett."
+		"&eRecipe:&r a pair of &6shears&r between two &6smooth stone&r, below planks with a &6Gem Dust&r in the middle, one more plank each bottom left and right."
 		""
-		"Zum Schleifen legst du den Edelstein in die Mitte, einen &ezweiten Edelstein gleicher Reinheit&r dazu, links Gem Dust und rechts Material. &7Cracked&r zu Chipped kostet 1 Gem Dust und 3 Scrap Metal oder 1 Timeworn Fabric. Chipped zu Flawed kostet 3 Gem Dust und 9 Scrap Metal, 3 Fabric oder 1 Crystal Shard."
+		"To cut, put the gem in the middle, a &esecond gem of the same purity&r with it, Gem Dust on the left and material on the right. &7Cracked&r to Chipped costs 1 Gem Dust and 3 Scrap Metal or 1 Timeworn Fabric. Chipped to Flawed costs 3 Gem Dust and 9 Scrap Metal, 3 Fabric or 1 Crystal Shard."
 		""
-		"Flawed zu Normal kostet schon 5 Gem Dust und 27 Scrap Metal, 9 Fabric, 3 Shards oder 1 Arcane Sands. Darüber brauchst du Material aus Stufe 3 und 4. EMI zeigt jeden Schritt."
+		"Flawed to Normal already costs 5 Gem Dust and 27 Scrap Metal, 9 Fabric, 3 Shards or 1 Arcane Sands. Above that you need materials from stage 3 and 4. EMI shows every step."
 	]
-	quest.5E7A3C423AC985EB.quest_subtitle: "Zwei Steine werden einer, aber ein besserer."
-	quest.5E7A3C423AC985EB.title: "&dBau einen Gem Cutting Table"
+	quest.5E7A3C423AC985EB.quest_subtitle: "Two gems become one, but a better one."
+	quest.5E7A3C423AC985EB.title: "&dBuild a Gem Cutting Table"
 	quest.5E7AD20C9249F102.quest_desc: [
-		"Finde ein &9Rare&r-Item, das du nicht brauchst, und zerleg es im &6Salvaging Table&r zu einem &6Luminous Crystal Shard&r. Oder schmiede dir eins: 15 Level, zwei Shards, zwei Siegel, aber dann hast du die Shards ja schon."
+		"Find a &9Rare&r item you do not need and salvage it in the &6Salvaging Table&r into a &6Luminous Crystal Shard&r. Or forge yourself one: 15 levels, two shards, two sigils, but then you already have the shards."
 		""
-		"Damit hast du alles gesehen, was Apotheosis in Stufe 1 hergibt: Frontier aktiv, ein Set mit Affixen, Edelsteine in den Sockeln, einen Zaubertisch auf 45 und einen Spawner nach deinem Geschmack."
+		"With that you have seen everything Apotheosis has to offer in stage 1: Frontier active, a set with affixes, gems in the sockets, an enchanting table at 45 and a spawner to your taste."
 		""
-		"&eAusblick:&r Mit dem Nether in Stufe 2 kommen Hellshelves, das Sigil of Withdrawal, die Gem Case und mit dem Wither die Weltstufe Summit. &5Epic&r ist für Stufe 3 gedacht, &6Mythic&r und Pinnacle für Stufe 4, nach dem Drachen."
+		"&eOutlook:&r With the Nether in stage 2 come Hellshelves, the Sigil of Withdrawal, the Gem Case and with the Wither the Summit world tier. &5Epic&r is meant for stage 3, &6Mythic&r and Pinnacle for stage 4, after the dragon."
 	]
-	quest.5E7AD20C9249F102.quest_subtitle: "Der Abschluss von Stufe 1 bei Apotheosis."
-	quest.5E7AD20C9249F102.title: "&9&lZerlege ein Rare-Item"
+	quest.5E7AD20C9249F102.quest_subtitle: "The end of stage 1 for Apotheosis."
+	quest.5E7AD20C9249F102.title: "&9&lSalvage a Rare Item"
 	quest.5E835E59CCD257CB.quest_desc: [
 		"Every spell belongs to a &dschool&r. The school decides the focus in the Scroll Forge, the rune for the armor and which spell power makes it stronger."
 		""
@@ -22049,13 +22049,13 @@
 	quest.60C4426ACBBC9B57.quest_subtitle: "Ein Werkzeug, das ganze Flächen abbaut."
 	quest.60C4426ACBBC9B57.title: "&2Terrastomp Prism"
 	quest.60D275D1E33B82BB.quest_desc: [
-		"Oben &6Gem Dust&r, &6Schwarzpulver&r, Gem Dust, in der Mitte drei &6Gem-Fused Slate&r, unten Gem Dust, &6Amethystscherbe&r, Gem Dust. Das ergibt drei &6Sigils of Socketing&r."
+		"On top &6Gem Dust&r, &6gunpowder&r, Gem Dust, in the middle three &6Gem-Fused Slate&r, at the bottom Gem Dust, &6amethyst shard&r, Gem Dust. That gives three &6Sigils of Socketing&r."
 		""
-		"Ein Siegel mit einem Item am &6Schmiedetisch&r gibt dem Item einen Sockel dazu, höchstens zwei pro Item auf diesem Weg. So bekommt auch ein Teil ohne Sockel Platz für einen Edelstein."
+		"A sigil with an item at the &6Smithing Table&r gives the item one more socket, at most two per item this way. So even a piece without sockets gets room for a gem."
 		""
-		"&eSigil of Unnaming:&r drei Slate, drei &6Feuerstein&r, drei Slate ergeben sechs. Am Schmiedetisch nimmt es dem Item den Affix-Namen und den Namen eines Invaders wieder weg."
+		"&eSigil of Unnaming:&r three slate, three &6flint&r, three slate give six. At the Smithing Table it removes the affix name and an invader's name from the item again."
 	]
-	quest.60D275D1E33B82BB.quest_subtitle: "Ein Sockel mehr, bis zu zwei."
+	quest.60D275D1E33B82BB.quest_subtitle: "One more socket, up to two."
 	quest.60D275D1E33B82BB.title: "&dSigil of Socketing"
 	quest.60D9C334A54D24D6.quest_desc: [
 		"[\"\",{\"keybind\":\"key.voice_chat\",\"color\":\"yellow\"},{\"text\":\" opens the Simple Voice Chat menu. Join the \"},{\"text\":\"group\",\"color\":\"yellow\"},{\"text\":\" the team creates for the finale. In a group you hear the others over any distance.\"}]"
@@ -23160,14 +23160,14 @@
 	quest.6585D16B20EBC66B.quest_subtitle: "One fight, one tribute."
 	quest.6585D16B20EBC66B.title: "&dDefeat a Wilden Chimera"
 	quest.659044911D6B77C7.quest_desc: [
-		"Jedes Monster, das du selbst tötest, lässt mit &e4 Prozent&r einen &dEdelstein&r fallen (Tötungen durch Maschinen nur 0,5 Prozent). Edelsteine liegen auch in Kisten, und Invader haben sie öfter dabei."
+		"Every monster you kill yourself has a &e4 percent&r chance to drop a &dgem&r (kills by machines only 0.5 percent). Gems also lie in chests, and invaders carry them more often."
 		""
-		"Einen Edelstein setzt du am &6Schmiedetisch&r ein: Item links, Edelstein rechts. Oder du nimmst ihn im Inventar auf und klickst ihn mit Rechtsklick auf das Item. Der Tooltip sagt unter &eFits In&r, wo er passt, und was er in jedem Itemtyp bewirkt."
+		"You put a gem in at the &6Smithing Table&r: item on the left, gem on the right. Or pick it up in your inventory and right click it onto the item. The tooltip says under &eFits In&r where it fits and what it does in each item type."
 		""
-		"&eReinheit:&r &7Cracked&r, Chipped, Flawed, Normal, Flawless, &6Perfect&r. In Haven fallen 55 Prozent Cracked, 41 Chipped und 4 Flawed. Höhere Reinheiten kommen mit den höheren Weltstufen, oder du schleifst sie selbst."
+		"&ePurity:&r &7Cracked&r, Chipped, Flawed, Normal, Flawless, &6Perfect&r. In Haven 55 percent drop Cracked, 41 Chipped and 4 Flawed. Higher purities come with the higher world tiers, or you cut them yourself."
 	]
-	quest.659044911D6B77C7.quest_subtitle: "Vier Prozent bei jedem Monster."
-	quest.659044911D6B77C7.title: "&d&lFinde einen Edelstein"
+	quest.659044911D6B77C7.quest_subtitle: "Four percent from every monster."
+	quest.659044911D6B77C7.title: "&d&lFind a Gem"
 	quest.659476FBDC55EFDF.quest_desc: [
 		"Slay &e10 shulkers&r. With a bit of luck each drops a shell."
 		""
@@ -23953,11 +23953,11 @@
 	quest.696E8BE753E8080E.quest_subtitle: "Axe head from three material."
 	quest.696E8BE753E8080E.title: "&6Build an axe"
 	quest.696F84A6E32481C2.quest_desc: [
-		"Die Verzauberung &6Capturing&r (bis Stufe III, für Schwerter) lässt Monster mit &e0,5 Prozent je Stufe&r ihr Spawn-Ei fallen. Bosse und manche Monster sind davon ausgenommen."
+		"The &6Capturing&r enchantment (up to level III, for swords) makes monsters drop their spawn egg with &e0.5 percent per level&r. Bosses and some monsters are excluded."
 		""
-		"Mit einem Spawn-Ei stellst du einen Spawner auf ein anderes Monster um: Rechtsklick mit dem Ei auf den Spawner, fertig. Zombie-Spawner aus dem Verlies, Skelette drin."
+		"With a spawn egg you switch a spawner to another monster: right click the spawner with the egg, done. Zombie spawner from the dungeon, skeletons inside."
 	]
-	quest.696F84A6E32481C2.quest_subtitle: "Spawn-Eier von Monstern."
+	quest.696F84A6E32481C2.quest_subtitle: "Spawn eggs from monsters."
 	quest.696F84A6E32481C2.title: "&aCapturing"
 	quest.69720528BCB75EF8.quest_desc: [
 		"{image:kronwerke:textures/quests/shots/create_stock_ticker.png width:224 height:126 align:center}"
@@ -24727,16 +24727,16 @@
 	quest.6CF971351F3417E4.quest_subtitle: "Harvest, infuse, forge."
 	quest.6CF971351F3417E4.title: "&5&lBecome a Soulsmith"
 	quest.6D00C3D5725F225F.quest_desc: [
-		"&eRezept auf Kronwerke:&r ein &6Quelljuwel&r von Ars Nouveau oben, in der Mitte ein &6Zaubertisch&r zwischen zwei &6Gem Dust&r, unten drei &6Glatte Steine&r."
+		"&eRecipe on Kronwerke:&r a &6Source Gem&r from Ars Nouveau on top, in the middle an &6enchanting table&r between two &6Gem Dust&r, three &6smooth stone&r at the bottom."
 		""
-		"&eSo geht es:&r Item in die Mitte, oben links Seltenheitsmaterial der Stufe, die das Item bekommen soll, unten rechts Sigils of Rebirth. Wie am Zaubertisch siehst du drei Angebote, keines ist besser als das andere. Auch Items ohne Affixe lassen sich umschmieden, so oft du willst."
+		"&eHow it works:&r Item in the middle, top left rarity material of the tier the item should get, bottom right Sigils of Rebirth. As at the enchanting table you see three offers, none is better than the other. Items without affixes can be reforged too, as often as you like."
 		""
-		"&eKosten:&r &7Common&r 2 Level und 1 Scrap Metal. &aUncommon&r 5 Level, 2 Fabric, 1 Siegel. &9Rare&r 15 Level, 2 Crystal Shards, 2 Siegel. Das zweite und dritte Angebot verlangen das Doppelte und Dreifache an Levelanforderung und Material, ziehen aber nur ein, zwei oder drei Level ab."
+		"&eCost:&r &7Common&r 2 levels and 1 Scrap Metal. &aUncommon&r 5 levels, 2 Fabric, 1 sigil. &9Rare&r 15 levels, 2 Crystal Shards, 2 sigils. The second and third offers ask for double and triple the level requirement and material, but only take one, two or three levels."
 		""
-		"Der einfache Tisch schafft Items bis &9Rare&r. Für Epic und Mythic brauchst du den großen Reforging Table, siehe nächste Quest."
+		"The simple table handles items up to &9Rare&r. For Epic and Mythic you need the big Reforging Table, see the next quest."
 	]
-	quest.6D00C3D5725F225F.quest_subtitle: "Neu würfeln, bis es passt."
-	quest.6D00C3D5725F225F.title: "&6&lBau einen Simple Reforging Table"
+	quest.6D00C3D5725F225F.quest_subtitle: "Reroll until it fits."
+	quest.6D00C3D5725F225F.title: "&6&lBuild a Simple Reforging Table"
 	quest.6D0868F4EE94F91E.quest_desc: [
 		"&6Livingwood Avatar&r: &e5 Livingwood logs&r around a &bMana Diamond&r as its heart. &6Rod of the Plentiful Mantle&r: &e4 Livingwood Twigs&r and a Mana Diamond."
 		""
@@ -26609,13 +26609,13 @@
 	quest.75A880B536E4CBE9.quest_subtitle: "Create, Flüssigkeitsventil: Rohr auf, Rohr zu."
 	quest.75A880B536E4CBE9.title: "Setz ein Flüssigkeitsventil"
 	quest.75C29E23C9F0E45C.quest_desc: [
-		"Vier &6Timeworn Fabric&r in die Ecken, oben und unten je eine &6Uhr&r, links und rechts je ein &6Feuerstein&r, in der Mitte eine leere &6Spawner Rune&r."
+		"Four &6Timeworn Fabric&r in the corners, one &6clock&r each on top and bottom, one &6flint&r each left and right, a blank &6Spawner Rune&r in the middle."
 		""
-		"Rechtsklick mit der Rune auf einen Spawner setzt die Grundwerte auf einmal: Delay &e150 bis 600&r Ticks, &e7&r Monster pro Spawn, &e12&r Monster erlaubt, Aktivierung bis &e24&r Blöcke. Vorher waren es 200 bis 800, 4, 6 und 16."
+		"Right clicking a spawner with the rune sets the base values at once: delay &e150 to 600&r ticks, &e7&r monsters per spawn, &e12&r monsters allowed, activation up to &e24&r blocks. Before it was 200 to 800, 4, 6 and 16."
 		""
-		"Die nächste Stufe, das &6Wayfarer's Rune&r (Ascent), will Luminous Crystal Shards, ein Spawn-Ei, ein Sigil of Socketing und &6Netherquarz&r, also Stufe 2. Summit und Pinnacle brauchen eine infundierte Rune bei Eterna 70."
+		"The next tier, the &6Wayfarer's Rune&r (Ascent), wants Luminous Crystal Shards, a spawn egg, a Sigil of Socketing and &6nether quartz&r, so stage 2. Summit and Pinnacle need an infused rune at Eterna 70."
 	]
-	quest.75C29E23C9F0E45C.quest_subtitle: "Die Grundwerte in einem Schlag."
+	quest.75C29E23C9F0E45C.quest_subtitle: "The base values in one go."
 	quest.75C29E23C9F0E45C.title: "&aFrontiersman's Rune"
 	quest.75D30FCED20A52EC.quest_desc: [
 		"Collect &e9 magma blocks&r at lava lakes or in the basalt deltas and &e4 magma cream&r from the bouncing &6magma cubes&r."
@@ -26708,12 +26708,12 @@
 	quest.763F899230A030F8.quest_subtitle: "Luft aus Sonne, aber nur bei 350 Grad."
 	quest.763F899230A030F8.title: "&6Bau einen Solar Compressor"
 	quest.764EA189A25DEF29.quest_desc: [
-		"Dieselbe Form, oben ein &6Luminous Crystal Shard&r aus zerlegtem &9Rare&r: zwei Vorlagen, die am Schmiedetisch mit &e4 Diamanten&r aus Goldausrüstung Diamantausrüstung machen."
+		"The same shape, a &6Luminous Crystal Shard&r from salvaged &9Rare&r on top: two templates that turn gold gear into diamond gear at the Smithing Table with &e4 diamonds&r."
 		""
-		"Der Weg lautet also Stein oder Kette, dann Eisen, dann Gold, dann Diamant. Für ein Rare-Schwert aus Gold lohnt sich das fast immer."
+		"So the path is stone or chain, then iron, then gold, then diamond. For a Rare sword made of gold it is almost always worth it."
 	]
-	quest.764EA189A25DEF29.quest_subtitle: "Die Vorlage aus Rare-Material."
-	quest.764EA189A25DEF29.title: "&bWert Affix-Beute auf Diamant auf"
+	quest.764EA189A25DEF29.quest_subtitle: "The template from Rare material."
+	quest.764EA189A25DEF29.title: "&bUpgrade Affix Loot to Diamond"
 	quest.7662608598D923AA.quest_desc: [
 		"Build all four pieces of &6Cloggrum armor&r plus a &6Cloggrum Shield&r: &66 Cloggrum Ingots&r and a plank in the top middle."
 		""
@@ -27108,14 +27108,14 @@
 	quest.779C60A79312779E.quest_subtitle: "Let friends into your chunks without sharing a team."
 	quest.779C60A79312779E.title: "&6Take in allies"
 	quest.77A44B861E5D9B45.quest_desc: [
-		"[\"\",{\"text\":\"Trag ein Affix-Item an \"},{\"text\":\"Kopf, Brust, Beinen und Füßen\",\"color\":\"gold\"},{\"text\":\" und halte eine Affix-Waffe in der Hand. Die Seltenheit ist egal, Common reicht. Das schaltet \"},{\"text\":\"Frontier\",\"color\":\"gold\"},{\"text\":\" frei, aktivieren musst du es dann mit \"},{\"keybind\":\"key.apotheosis.open_world_tier_select\",\"color\":\"yellow\"},{\"text\":\".\"}]"
+		"[\"\",{\"text\":\"Wear an affix item on \"},{\"text\":\"head, chest, legs and feet\",\"color\":\"gold\"},{\"text\":\" and hold an affix weapon in your hand. The rarity does not matter, Common is enough. That unlocks \"},{\"text\":\"Frontier\",\"color\":\"gold\"},{\"text\":\", then you have to activate it with \"},{\"keybind\":\"key.apotheosis.open_world_tier_select\",\"color\":\"yellow\"},{\"text\":\".\"}]"
 		""
-		"In Frontier fällt &aUncommon&r zu 60 Prozent, &9Rare&r zu 10, Common nur noch zu 29. Du bekommst &e20 Prozent mehr Glück&r und &e35 Prozent mehr Erfahrung&r, Monster bekommen 4 Rüstungspunkte dazu, und &cApothic Invader&r tauchen auf."
+		"In Frontier &aUncommon&r drops 60 percent of the time, &9Rare&r 10, Common only 29. You get &e20 percent more luck&r and &e35 percent more experience&r, monsters get 4 armor points extra, and &cApothic Invaders&r show up."
 		""
-		"&eTipp:&r Frontier hebt auch das Limit deines Zaubertischs von Stufe 30 auf &e45&r. Der Abschnitt Apothic Enchanting baut darauf auf."
+		"&eTip:&r Frontier also raises the limit of your enchanting table from level 30 to &e45&r. The Apothic Enchanting section builds on that."
 	]
-	quest.77A44B861E5D9B45.quest_subtitle: "Vier Rüstungsteile und eine Waffe mit Affix."
-	quest.77A44B861E5D9B45.title: "&a&lRüste dich voll aus: Frontier"
+	quest.77A44B861E5D9B45.quest_subtitle: "Four armor pieces and a weapon with affixes."
+	quest.77A44B861E5D9B45.title: "&a&lGear Up Fully: Frontier"
 	quest.77A7D5A5A2260EED.quest_desc: [
 		"At the table, &e160 points&r: the same recipe as Linger."
 		""
@@ -27540,12 +27540,12 @@
 	quest.79E463484896DE27.quest_subtitle: "Getrennte Kreise, getrennte Regeln."
 	quest.79E463484896DE27.title: "&eLeg ein zweites Netz an"
 	quest.79EFB06B93DA8A64.quest_desc: [
-		"Acht &6Tiefenschiefer&r um einen &6Gem Dust&r ergeben acht &6Gem-Fused Slate&r."
+		"Eight &6deepslate&r around a &6Gem Dust&r give eight &6Gem-Fused Slate&r."
 		""
-		"Jedes Siegel in diesem Abschnitt und jede Spawner-Rune im Abschnitt Apothic Spawners wird daraus gebaut. Tiefenschiefer hast du unterhalb von Y 0 mehr als genug, der Gem Dust ist der Engpass."
+		"Every sigil in this section and every spawner rune in the Apothic Spawners section is built from it. You have more than enough deepslate below Y 0, the Gem Dust is the bottleneck."
 	]
-	quest.79EFB06B93DA8A64.quest_subtitle: "Der Rohstoff aller Siegel."
-	quest.79EFB06B93DA8A64.title: "&8Mach Gem-Fused Slate"
+	quest.79EFB06B93DA8A64.quest_subtitle: "The raw material of all sigils."
+	quest.79EFB06B93DA8A64.title: "&8Make Gem-Fused Slate"
 	quest.79F94B4509AF8F33.quest_desc: [
 		"&eRecipe on Kronwerke:&r &64 steel ingots&r in the corners, &64 stone&r on the sides, &61 ender pearl&r in the middle. That makes the &6Catalyst&r."
 		""
@@ -27734,14 +27734,14 @@
 	quest.7A7B18D3CF6E29F4.quest_subtitle: "40 Eimer Blut für einen Goldblock."
 	quest.7A7B18D3CF6E29F4.title: "&6Mach eine Promise of Tenacity II"
 	quest.7A8DD7B14F4F4BEC.quest_desc: [
-		"Die &6Enchantment Library&r braucht vier &6Endertruhen&r, vier infundierte Regale und einen Zaubertisch. Endertruhen brauchen Lohenstaub, also wartet sie auf den Nether in &eStufe 2&r. Sammel bis dahin verzauberte Bücher."
+		"The &6Enchantment Library&r needs four &6ender chests&r, four infused shelves and an enchanting table. Ender chests need blaze powder, so it waits for the Nether in &estage 2&r. Collect enchanted books until then."
 		""
-		"In die Bibliothek wirfst du verzauberte Bücher, jede Verzauberung wird als Punkte gespeichert. Ein Klick holt eine Stufe heraus, Shift-Klick so viele wie möglich, und das Buch dazu entsteht von selbst. Sie merkt sich die höchste Stufe, die je hineinkam, und gibt höchstens Stufe 16 (XVI) aus."
+		"You throw enchanted books into the library, every enchantment is stored as points. One click takes out one level, shift click as many as possible, and the book for it is made by itself. It remembers the highest level that ever went in and gives out level 16 (XVI) at most."
 		""
-		"&eWeiter hinauf:&r Deepshelves (Eterna 70) brauchen Infusion bei Eterna 60, Sculkshelves (80) den Warden, Endshelves (90) Drachenatem aus Stufe 4. Die &6Library of Alexandria&r mit Stufe 31 entsteht per Infusion bei Eterna 100, also in Pinnacle."
+		"&eFurther up:&r Deepshelves (Eterna 70) need infusion at Eterna 60, Sculkshelves (80) the Warden, Endshelves (90) dragon's breath from stage 4. The &6Library of Alexandria&r with level 31 is made by infusion at Eterna 100, so in Pinnacle."
 	]
-	quest.7A8DD7B14F4F4BEC.quest_subtitle: "Kommt in Stufe 2, lohnt sich jetzt zu kennen."
-	quest.7A8DD7B14F4F4BEC.title: "&5Die Verzauberungsbibliothek"
+	quest.7A8DD7B14F4F4BEC.quest_subtitle: "Comes in stage 2, worth knowing now."
+	quest.7A8DD7B14F4F4BEC.title: "&5The Enchantment Library"
 	quest.7A90A5212D250C6C.quest_desc: [
 		"The &6Watering Can&r in the middle, &e4 Inferium Ingots&r left, right, top and bottom, &e4 Mystical Fertilizer&r in the corners: the &6Inferium Watering Can&r is done."
 		""
@@ -27766,14 +27766,14 @@
 	quest.7AA8D39A5638B696.quest_subtitle: "Tier 3 checklist: curses and time."
 	quest.7AA8D39A5638B696.title: "&dLearn Hex, Wither and Rewind"
 	quest.7AB490BEF1B45400.quest_desc: [
-		"Ab Frontier ersetzt ein &cApothic Invader&r hin und wieder ein normales Monster. Ein lautes Geräusch, eine Meldung im Chat und ein Lichtstrahl zeigen dir, wo er steht. Sein Name und die Farbe seines Umrisses verraten die Seltenheit."
+		"From Frontier on an &cApothic Invader&r now and then replaces a normal monster. A loud sound, a chat message and a beam of light show you where it is. Its name and the color of its outline give away the rarity."
 		""
-		"Jeder Invader trägt genau ein Affix-Item seiner Seltenheit, mit stärkeren Affixen als üblich, und lässt es beim Tod &egarantiert&r fallen. Es trägt dann seinen Namen vorneweg. Edelsteine lässt er häufiger fallen als andere Monster."
+		"Every invader carries exactly one affix item of its rarity, with stronger affixes than usual, and drops it on death &eguaranteed&r. It then carries the invader's name in front. It drops gems more often than other monsters."
 		""
-		"&6Eliten&r sind benannte, verstärkte Monster ohne Lichtstrahl. Sie tauchen überall auf und können ebenfalls Affix-Items fallen lassen. Tief unter der Erde stehen &cKäfige&r mit einem gefangenen Invader und Kisten drumherum, der Käfig öffnet sich, wenn du näher kommst."
+		"&6Elites&r are named, strengthened monsters without a beam of light. They show up everywhere and can also drop affix items. Deep underground there are &ccages&r with a captured invader and chests around them, the cage opens when you come closer."
 	]
-	quest.7AB490BEF1B45400.quest_subtitle: "Ein Lichtstrahl am Himmel heißt: Beute."
-	quest.7AB490BEF1B45400.title: "&cInvader und Eliten"
+	quest.7AB490BEF1B45400.quest_subtitle: "A beam of light in the sky means: loot."
+	quest.7AB490BEF1B45400.title: "&cInvaders and Elites"
 	quest.7ACBB7DA76C6A35E.quest_desc: [
 		"&e2 iron, 1 ender&r. Creatures that want into the &e11 block&r radius land on the other side of the boundary. Blocks they would suffocate in are pushed away."
 		""
@@ -28978,7 +28978,7 @@
 	task.1D80871CAB9C21B9.title: "Read"
 	task.1D868F511392795D.title: "Los geht es"
 	task.1D916F103064E996.title: "Reaktor speist das Netz"
-	task.1DB6408FF141133D.title: "Infundiert"
+	task.1DB6408FF141133D.title: "Infused"
 	task.1DF4F92074D7F0D5.title: "Comes in stage 4: read"
 	task.1E03951DEE545C50.title: "Found a mineshaft"
 	task.1E2346CF34071350.title: "Let's go"
@@ -29062,7 +29062,7 @@
 	task.255BB5DA3EC19670.title: "Noted"
 	task.255DD7BD1168FECE.title: "Verstanden, kommt in Stufe 3"
 	task.25614351E4987F93.title: "Read"
-	task.256555174B85FCB8.title: "Einen Spawner mit einer Rune verändern"
+	task.256555174B85FCB8.title: "Modify a spawner with a rune"
 	task.25788EA2F662CA43.title: "Noted"
 	task.2578930943D29FAF.title: "Phoenix Down im Inventar"
 	task.25A69390659C65F1.title: "Beaver summoned"
@@ -29081,7 +29081,7 @@
 	task.26BFF296000158B2.title: "Got it"
 	task.26F1F09B30E4451F.title: "Built and formed a Sawmill"
 	task.26F4DE21C10CC3CE.title: "Read"
-	task.26FE4B471450B74A.title: "Ein Affix-Item aufheben"
+	task.26FE4B471450B74A.title: "Pick up an affix item"
 	task.2706947D1057298D.title: "Got it"
 	task.271927D81AEF3337.title: "Fähnchen gesetzt"
 	task.271B86E1EDDCD36D.title: "Drahtloses Laden aktiv"
@@ -29189,7 +29189,7 @@
 	task.2FC3BE07B57FF734.title: "Origin and role chosen"
 	task.2FD1257A6EADC836.title: "Comes in stage 2: read"
 	task.2FDE99575F493049.title: "Read"
-	task.30038CB74C779091.title: "Haven ist aktiv"
+	task.30038CB74C779091.title: "Haven is active"
 	task.30271B1EB6A38FF1.title: "Purpur-Kreppmyrte (Ceylon-Ebenholz + Kirsche, 5 %)"
 	task.30534FF8E9180C81.title: "Noted"
 	task.3056C37AB7E112BE.title: "Used a spell with Linger or Wall in a fight"
@@ -29432,7 +29432,7 @@
 	task.540817C07EE9867E.title: "Tried it"
 	task.54140FC6EA5D70D7.title: "Granny-Smith-Apfel (Red-Delicious-Apfel + Kirsche, 10 %)"
 	task.541EA4CC6ED7148E.title: "Read"
-	task.54248A06933250E6.title: "Anzeige geöffnet"
+	task.54248A06933250E6.title: "Opened the display"
 	task.54445C49E7FC5DEA.title: "Searched and found"
 	task.54895A75EEE158F8.title: "Noted"
 	task.54B0337454D47C0F.title: "Get the elven Lexica back"
@@ -29556,7 +29556,7 @@
 	task.639E30827F7C97EF.title: "Twenty damage with one pebble"
 	task.63D41D92231BA4F0.title: "Show me"
 	task.63DB43616852CE7E.title: "I am taking part in the finale"
-	task.642277380A5DA4DE.title: "Einen Invader besiegt"
+	task.642277380A5DA4DE.title: "Defeated an invader"
 	task.642D28C1285D9AD9.title: "Read"
 	task.6448F6CD51E23A43.title: "Cempedak (Sykomore + Brotfrucht, 10 %)"
 	task.648E9800163FA5DE.title: "Tried it"
@@ -29568,8 +29568,8 @@
 	task.64DC0486AC688FA2.title: "All six Forgotten tools"
 	task.64F2CEF8FB3A87F1.title: "Two trains pass each other"
 	task.64F747915EC24D9F.title: "Rippling Willow (Blue Yonder + Flickering Sun, 5 %)"
-	task.65086319AA91A7AF.title: "Ein Spawn-Ei bekommen"
-	task.6509567E74FFF2D5.title: "Frontier freischalten"
+	task.65086319AA91A7AF.title: "Got a spawn egg"
+	task.6509567E74FFF2D5.title: "Unlock Frontier"
 	task.650D45EF7A63CAAE.title: "Djinni Crusher summoned"
 	task.653C3E0F1284688B.title: "Blue Mahoe (Teak + Balsa, 5 %)"
 	task.6569DBA332797A13.title: "Noted"

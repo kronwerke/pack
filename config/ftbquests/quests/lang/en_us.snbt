@@ -40,9 +40,9 @@
 	]
 	chapter.16FD490B7EBFFB07.title: "Reliquary"
 	chapter.18844C390CD1219E.chapter_subtitle: [
-		"Jeder Generator des Packs, eine Zeile, ein Haken. Nach Stufen sortiert."
+		"Every generator in the pack, one line, one tick. Sorted by stage."
 	]
-	chapter.18844C390CD1219E.title: "Checkliste: Strom"
+	chapter.18844C390CD1219E.title: "Checklist: Power"
 	chapter.191F443D16F9D169.chapter_subtitle: [
 		"Stage 3: Energizing Orb, crystals up to Spirited, every generator tier, the reactor, cables and cells."
 	]
@@ -911,14 +911,14 @@
 	quest.11D290BB658AA853.title: "&6Züchte Gewürzbäume"
 	quest.11D564C54335FD80.quest_desc: [
 		"{image:kronwerke:textures/quests/shots/immersive_thermoelectric.png width:224 height:126 align:center}"
-		"&6Thermoelektrischer Generator:&r drei Stahl oben, LV-Spule zwischen zwei Constantanblechen, unten drei Constantanbleche. Heiß auf die eine Seite, kalt gegenüber, Strom an jeder freien Seite."
+		"&6Thermoelectric Generator:&r three steel on top, LV coil between two constantan sheets, three constantan sheets at the bottom. Hot on one side, cold opposite, power on every free side."
 		""
-		"&eIE, Thermoelektrisch:&r Brennstoff keiner. Je gegenüberliegendem Paar Wurzel aus dem Temperaturunterschied halbiert: &bLava&r (1 300 K) gegen &bWasser&r (300 K) gibt &d15 FE/t&r, mit drei Paaren &d45 FE/t&r. Eis und Packeis sind kälter als Wasser, ein Uranblock heißer als Lava."
+		"&eIE, Thermoelectric:&r fuel none. Per opposite pair the square root of the temperature difference halved: &blava&r (1,300 K) against &bwater&r (300 K) gives &d15 FE/t&r, with three pairs &d45 FE/t&r. Ice and packed ice are colder than water, a uranium block hotter than lava."
 		""
-		"&eIE, Blitzableiter:&r ein Sockel aus Blitzableiterblöcken mit einer Stange aus Stahlzäunen obendrauf. Ein Einschlag bringt &d16 000 000 FE&r in den Sockel, abgegeben nach und nach über die Anschlüsse. Nur bei Gewitter, dafür umsonst. Offen ab Stufe 2."
+		"&eIE, Lightning Rod:&r a base of lightning rod blocks with a pole of steel fences on top. A strike brings &d16,000,000 FE&r into the base, given out gradually through the connectors. Only during thunderstorms, but free. Open from stage 2."
 	]
-	quest.11D564C54335FD80.quest_subtitle: "Immersive Engineering, Thermoelektrischer Generator und Blitzableiter."
-	quest.11D564C54335FD80.title: "&6Spann Lava gegen Wasser"
+	quest.11D564C54335FD80.quest_subtitle: "Immersive Engineering, Thermoelectric Generator and Lightning Rod."
+	quest.11D564C54335FD80.title: "&6Pit Lava against Water"
 	quest.11E71EFEA3CF26B2.quest_desc: [
 		"The &6Ice Spider Den&r lies in snow and ice biomes, but not in the mountains and not in the ocean. In snowy weather &bice spiders&r patrol outside too. Each drops &e4 to 16 Arcane Essence&r and 2 to 5 string, sometimes an &6Icy Fang&r."
 		""
@@ -1199,12 +1199,12 @@
 	quest.1298361CE320525B.quest_subtitle: "Crafts & Additions: the Rolling Mill."
 	quest.1298361CE320525B.title: "&6Roll wire and rods"
 	quest.1299F490C34A698A.quest_desc: [
-		"&eRezept:&r drei &6Bretter&r in einer Reihe, eine &6Andesitlegierung&r rechts darunter. Rechtsklick gedrückt halten, und die Welle dreht sich."
+		"&eRecipe:&r three &6planks&r in a row, an &6Andesite Alloy&r below on the right. Hold right click, and the shaft turns."
 		""
-		"&eCreate, Handkurbel:&r Brennstoff deine Zeit, &d32 RPM&r, &d256 SU&r. Für die erste Presse und den Mahlstein, bevor das Wasserrad steht. Das &6Kupferventilrad&r macht dasselbe mit 8 SU pro RPM, nur langsamer."
+		"&eCreate, Hand Crank:&r fuel your time, &d32 RPM&r, &d256 SU&r. For the first press and the millstone before the water wheel stands. The &6Copper Valve Handle&r does the same with 8 SU per RPM, only slower."
 	]
-	quest.1299F490C34A698A.quest_subtitle: "Create, 32 RPM, 256 SU, solange du festhältst."
-	quest.1299F490C34A698A.title: "&6Dreh eine Handkurbel"
+	quest.1299F490C34A698A.quest_subtitle: "Create, 32 RPM, 256 SU, as long as you hold on."
+	quest.1299F490C34A698A.title: "&6Turn a Hand Crank"
 	quest.129B699332552A54.quest_desc: [
 		"An &5Awakened Draconium Block&r at the crafting table gives 9 &5Awakened ingots&r, an ingot 9 &5nuggets&r."
 		""
@@ -1974,12 +1974,12 @@
 	quest.14FBA11A9BC492A6.title: "&eBuild Photovoltaic Modules"
 	quest.14FCB31E83345B2E.quest_desc: [
 		"{image:kronwerke:textures/quests/shots/draconic_stabilizer.png width:224 height:126 align:center}"
-		"&6Energiekern&r: Draconiumbarren oben und unten, zwei Wyvern-Energiekontroller und ein Wyvern-Kern. Tier Up und Build Guide im Fenster zeigen die Hülle aus Draconium- und Redstoneblöcken, vier &6Stabilisatoren&r (Kronwerke: ein Gaia-Geist) rundherum, dann Activate."
+		"&6Energy Core&r: Draconium ingots top and bottom, two Wyvern energy controllers and a Wyvern Core. Tier Up and Build Guide in the GUI show the shell of Draconium and redstone blocks, four &6Stabilizers&r (Kronwerke: a Gaia Spirit) around it, then Activate."
 		""
-		"&eDraconic Evolution, Energiekern:&r Stufe 1 &d45,5 Millionen FE&r, 2: 273 Millionen, 3: 1,64 Milliarden, 4: 9,88 Milliarden, 5: 59,3 Milliarden, 6: 356 Milliarden, 7: &d2,14 Billionen&r, Stufe 8 ohne Grenze, aber mit Erwachtem Draconium (Stufe 5). &6Energiepylonen&r bringen den Strom hinein und heraus. &eRezept auf Kronwerke:&r der Stabilisator braucht einen Gaia-Geist. Offen ab Stufe 4."
+		"&eDraconic Evolution, Energy Core:&r tier 1 &d45.5 million FE&r, 2: 273 million, 3: 1.64 billion, 4: 9.88 billion, 5: 59.3 billion, 6: 356 billion, 7: &d2.14 trillion&r, tier 8 without a limit, but with Awakened Draconium (stage 5). &6Energy Pylons&r move the power in and out. &eRecipe on Kronwerke:&r the stabilizer needs a Gaia Spirit. Unlocked from stage 4."
 	]
-	quest.14FCB31E83345B2E.quest_subtitle: "Draconic Evolution, 45,5 Millionen bis 2,14 Billionen FE, Stufe 8 ohne Grenze."
-	quest.14FCB31E83345B2E.title: "&cBau den Energiekern"
+	quest.14FCB31E83345B2E.quest_subtitle: "Draconic Evolution, 45.5 million to 2.14 trillion FE, tier 8 without a limit."
+	quest.14FCB31E83345B2E.title: "&cBuild the Energy Core"
 	quest.14FE22C633678D6D.quest_desc: [
 		"Enderman farm, belt to a pool with a &6brass casing&r underneath, a Hopperhock at the edge of the pool, a chest. Done."
 		""
@@ -2930,14 +2930,14 @@
 	quest.17CAF7CDCF6B9A76.quest_subtitle: "Three steps, stir twice."
 	quest.17CAF7CDCF6B9A76.title: "&dBrew a Lesser Soul Gem"
 	quest.17CDD0332811C550.quest_desc: [
-		"Von 256 SU am Bach bis zu Reaktoren, die Millionen FE pro Tick machen: alles, was in Kronwerke Strom oder Rotation erzeugt, steht in diesem Kapitel. Hak ab, was du gebaut hast, und schau vor jeder neuen Stufe hier nach, bevor du Kabel ziehst."
+		"From 256 SU at the stream to reactors making millions of FE per tick: everything in Kronwerke that makes power or rotation is in this chapter. Tick off what you have built, and look here before every new stage, before you lay cables."
 		""
-		"&eDie Faustregel:&r Stufe 1 Wasserräder, Stufe 2 Wärmegenerator und Dampf, Stufe 3 Powah-Reaktor und Flux, Stufe 4 Nitro, RTGs und Fusion, Stufe 5 Spaltung und Turbine. Wer eine Stufe früher mehr will, baut Ethen."
+		"&eThe rule of thumb:&r stage 1 water wheels, stage 2 heat generator and steam, stage 3 Powah reactor and Flux, stage 4 Nitro, RTGs and fusion, stage 5 fission and turbine. If you want more a stage earlier, build ethylene."
 		""
-		"&eKronwerke-Rezepte in diesem Kapitel:&r Flux-Kern (Quellenedelstein) und Flux-Controller (Fortschrittlicher Schaltkreis), Pneumatischer Dynamo und Flux-Kompressor (Einfacher Schaltkreis), die Laser-Fokusmatrix der Fusion (Quellenedelsteinblock) und der Energiekern-Stabilisator (Gaia-Geist). Alles andere ist wie in den Mods."
+		"&eKronwerke recipes in this chapter:&r Flux Core (Source Gem) and Flux Controller (Advanced Circuit), Pneumatic Dynamo and Flux Compressor (Basic Circuit), the fusion Laser Focus Matrix (block of Source Gem) and the Energy Core Stabilizer (Gaia Spirit). Everything else is as in the mods."
 	]
-	quest.17CDD0332811C550.quest_subtitle: "Jede Quelle im Pack kennst du jetzt beim Namen."
-	quest.17CDD0332811C550.title: "&6&lZieh Bilanz"
+	quest.17CDD0332811C550.quest_subtitle: "You now know every source in the pack by name."
+	quest.17CDD0332811C550.title: "&6&lTake stock"
 	quest.17CDE921479E3CAD.quest_desc: [
 		"&eCtrl+F&r jumps into the search field at the bottom centre. Type part of the name and the list filters at once. &e@create&r shows everything from one mod, for example all blocks from Create."
 		""
@@ -3559,12 +3559,12 @@
 	quest.197AD24AEA823E90.quest_subtitle: "Iron, only three times as durable."
 	quest.197AD24AEA823E90.title: "&5Forge a Fluix Pickaxe"
 	quest.197AFF566957D32D.quest_desc: [
-		"Die &6Kinetische Batterie&r (Präzisionsgetriebe, Messingrahmen, Eisenbleche, Redstone) nimmt Rotation auf und gibt sie später wieder ab. Die &6Batterie&r von Power Grid speichert Strom im Power-Grid-Netz, die &6Tragbare Batterie&r ist dasselbe für die Tasche."
+		"The &6Kinetic Battery&r (Precision Mechanism, Brass Casing, iron sheets, redstone) takes in rotation and gives it back later. Power Grid's &6Battery&r stores power in the Power Grid network, the &6Portable Battery&r is the same for your pocket."
 		""
-		"&eCrafts & Additions, Netzanschlüsse:&r der kleine &6Anschluss&r trägt &d1 000 FE/t&r über 16 Blöcke Draht, der &6Große Anschluss&r &d5 000 FE/t&r über 32 Blöcke, mit einer Kupferspule in der Hand verbindest du zwei. Der &6Modulare Akkumulator&r (2 Millionen FE je Block, bis 3 x 3 x 5 Blöcke, also 90 Millionen, je 5 000 FE/t rein und raus) kommt in Stufe 3. Offen ab Stufe 2."
+		"&eCrafts & Additions, connectors:&r the small &6Connector&r carries &d1,000 FE/t&r over 16 blocks of wire, the &6Large Connector&r &d5,000 FE/t&r over 32 blocks, with a copper spool in hand you connect two. The &6Modular Accumulator&r (2 million FE per block, up to 3 x 3 x 5 blocks, so 90 million, 5,000 FE/t in and out each) comes in stage 3. Open from stage 2."
 	]
-	quest.197AFF566957D32D.quest_subtitle: "Create Connected, Power Grid und Crafts & Additions: Batterien und Netzanschlüsse."
-	quest.197AFF566957D32D.title: "&6Speichere Rotation und FE bei Create"
+	quest.197AFF566957D32D.quest_subtitle: "Create Connected, Power Grid and Crafts & Additions: batteries and grid connectors."
+	quest.197AFF566957D32D.title: "&6Store Rotation and FE with Create"
 	quest.197EC4C400B2FEF2.quest_desc: [
 		"Heat moves from block to block, always from hot to cold, and only between blocks that know heat. &bLava&r next to a machine heats it and slowly turns into &7obsidian&r. &6Magma&r heats and turns into netherrack. Torches and campfires only heat weakly."
 		""
@@ -4915,12 +4915,12 @@
 	quest.1DD1601A67C2C27F.quest_subtitle: "No monsters around the base."
 	quest.1DD1601A67C2C27F.title: "&5Set Up an Aversion Obelisk"
 	quest.1DD703E08D9A6368.quest_desc: [
-		"Der &6Source Motor&r braucht einen Calibrated Precision Mechanism und ein &6Quellglas&r daneben. Er zieht Quelle aus dem Glas und dreht eine Welle, ganz ohne Wasser und Wind."
+		"The &6Source Motor&r needs a Calibrated Precision Mechanism and a &6Source Jar&r next to it. It draws source from the jar and turns a shaft, without any water or wind."
 		""
-		"&eArs Technica, Source Motor:&r Brennstoff Quelle. Die Seiten stellen die Drehzahl, die Front das Verhältnis von Last zu Drehzahl. Mehr Kraft kostet mehr Quelle. Für Magier mit vollen Quellgläsern der Weg zu Create. Offen ab Stufe 2, siehe Kapitel &dArs Nouveau: Magier&r."
+		"&eArs Technica, Source Motor:&r fuel source. The sides set the speed, the front the ratio of stress to speed. More force costs more source. For mages with full source jars the way to Create. Open from stage 2, see the chapter &dArs Nouveau: Mage&r."
 	]
-	quest.1DD703E08D9A6368.quest_subtitle: "Ars Technica: der Source Motor macht aus Quelle Rotation."
-	quest.1DD703E08D9A6368.title: "&dTreib Create mit Quelle an"
+	quest.1DD703E08D9A6368.quest_subtitle: "Ars Technica: the Source Motor turns source into rotation."
+	quest.1DD703E08D9A6368.title: "&dDrive Create with Source"
 	quest.1DDCF058D133D244.quest_desc: [
 		"{image:kronwerke:textures/quests/shots/ae2_presses.png width:224 height:126 align:center}"
 		"Right in the middle of the meteorite sits the &6Mysterious Cube&r. Break it and you have all four presses: &6Silicon&r, &6Logic&r, &6Calculation&r and &6Engineering&r."
@@ -5065,14 +5065,14 @@
 	quest.1E4F8C120BF2D79D.quest_subtitle: "3x5x3, keeps 32 blocks around it active."
 	quest.1E4F8C120BF2D79D.title: "&bForm a Resonanz Observer"
 	quest.1E550CA0FCC62D8E.quest_desc: [
-		"Sechs Dielectric Rods, zwei Eisennuggets und ein Tiny-Kondensator geben zwölf &6Energy Cables&r. Die &6Energy Cell&r: Eisen in die Ecken, Kondensatoren an die Seiten, Casing in die Mitte. Seiten stellst du mit dem &6Wrench&r ein."
+		"Six Dielectric Rods, two iron nuggets and a tiny capacitor make twelve &6Energy Cables&r. The &6Energy Cell&r: iron in the corners, capacitors on the sides, casing in the middle. Set the sides with the &6Wrench&r."
 		""
-		"&ePowah, Kabel:&r Starter &d500 FE/t&r, Basic 2 000, Hardened 5 000, Blazing 20 000, Niotic 50 000, Spirited 200 000. &eEnergy Cell:&r Starter &d1 Million FE&r, Basic 4, Hardened 10, Blazing 40, Niotic 100, Spirited 400 Millionen, Übertragung 1 000 bis 400 000 FE/t."
+		"&ePowah, cables:&r Starter &d500 FE/t&r, Basic 2,000, Hardened 5,000, Blazing 20,000, Niotic 50,000, Spirited 200,000. &eEnergy Cell:&r Starter &d1 million FE&r, Basic 4, Hardened 10, Blazing 40, Niotic 100, Spirited 400 million, transfer 1,000 to 400,000 FE/t."
 		""
-		"&ePowah, drahtlos:&r &6Ender Cells&r teilen einen Speicher über Kanäle, egal wo sie stehen. Der &6Player Transmitter&r lädt mit einer Binding Card deine Werkzeuge in der Tasche, überall. Offen ab Stufe 3."
+		"&ePowah, wireless:&r &6Ender Cells&r share one storage over channels, wherever they stand. The &6Player Transmitter&r with a Binding Card charges the tools in your inventory, anywhere. Unlocked from stage 3."
 	]
-	quest.1E550CA0FCC62D8E.quest_subtitle: "Powah: Kabel 500 bis 200 000 FE/t, Zellen 1 bis 400 Millionen FE."
-	quest.1E550CA0FCC62D8E.title: "&bVerkabel mit Powah"
+	quest.1E550CA0FCC62D8E.quest_subtitle: "Powah: cables 500 to 200,000 FE/t, cells 1 to 400 million FE."
+	quest.1E550CA0FCC62D8E.title: "&bWire up with Powah"
 	quest.1E59922B01A1E873.quest_desc: [
 		"&6Spell Power&r (all 7 essences, Magebloom): more spell damage per level."
 		"&6Life Drain&r (Mendosteen, sculk catalyst, 2 Abjuration Essences): 20 percent of the spell damage heals you."
@@ -5662,16 +5662,16 @@
 	quest.201400F32E9DF3E4.quest_subtitle: "The Mason Table for your pocket."
 	quest.201400F32E9DF3E4.title: "&6Carve a Chisel"
 	quest.2020A0C0A744D54E.quest_desc: [
-		"Fast alle Technikmods reden &dFE&r (Forge Energy). Was Ender IO &dµI&r nennt, Immersive Engineering &dIF&r oder Flux und Draconic &dOP&r, ist dasselbe, eins zu eins. Ein Kabel von Mod A versorgt eine Maschine von Mod B."
+		"Almost all tech mods speak &dFE&r (Forge Energy). What Ender IO calls &dµI&r, Immersive Engineering &dIF&r or Flux and Draconic &dOP&r is the same thing, one to one. A cable from mod A powers a machine from mod B."
 		""
-		"&eMekanism&r rechnet in &dJoule&r: &e1 FE = 2,5 J&r. Alle Mekanism-Zahlen in diesem Kapitel sind schon in FE umgerechnet. &eCreate&r hat keinen Strom, sondern Rotation: &dRPM&r ist die Drehzahl, &dSU&r die Belastbarkeit. Alternator und Elektromotor übersetzen zwischen SU und FE."
+		"&eMekanism&r counts in &djoules&r: &e1 FE = 2.5 J&r. All Mekanism numbers in this chapter are already converted to FE. &eCreate&r has no power, but rotation: &dRPM&r is the speed, &dSU&r the stress capacity. The Alternator and Electric Motor translate between SU and FE."
 		""
-		"&ePneumaticCraft&r arbeitet mit Druckluft in &dbar&r und mL, Dynamo und Flux-Kompressor übersetzen. &eBotania&r-Mana wird im Manaflussfeld zu FE (&e1 Mana = 10 FE&r), &eNature's Aura&r kann Aura zu FE machen (20 Aura = 1 FE)."
+		"&ePneumaticCraft&r works with compressed air in &dbar&r and mL, the dynamo and Flux Compressor translate. &eBotania&r mana becomes FE in the Mana Fluxfield (&e1 mana = 10 FE&r), &eNature's Aura&r can turn Aura into FE (20 Aura = 1 FE)."
 		""
-		"Jede Zeile hier: Mod, Generator, Brennstoff, FE pro Tick, Puffer, und ab welcher Stufe. Die &eWelche Quelle wann&r-Quest am Anfang jeder Stufe sagt dir, was sich lohnt."
+		"Every line here: mod, generator, fuel, FE per tick, buffer, and from which stage. The &eWhich source when&r quest at the start of every stage tells you what pays off."
 	]
-	quest.2020A0C0A744D54E.quest_subtitle: "FE, SU, Joule, bar und Mana, und wie sie zusammenhängen."
-	quest.2020A0C0A744D54E.title: "&6&lLies die Einheiten einmal"
+	quest.2020A0C0A744D54E.quest_subtitle: "FE, SU, joules, bar and mana, and how they relate."
+	quest.2020A0C0A744D54E.title: "&6&lRead the Units Once"
 	quest.20210ADA8839D3DA.quest_desc: [
 		"&e4 Livingrock&r, &e2 gold ingots&r, &e2 brewing stands&r and &e1 Mana Pearl&r. Under a Mana Pool it makes the pool transform things instead of infusing them."
 		""
@@ -6024,12 +6024,12 @@
 	quest.2104FD313A4700DF.quest_subtitle: "Faster, but hungrier."
 	quest.2104FD313A4700DF.title: "&aPut an Inferium Upgrade into the Machine"
 	quest.210DAD7590BAA085.quest_desc: [
-		"&eRezept auf Kronwerke:&r Der &6Grundlegende Generator&r ist Nickel oben und an den Seiten, Kupfer in der Mitte, unten Spule, Andesitgehäuse, Spule, dazu Maschinenkerne um ihn herum. Bio-, Lava- und Brennstoffgenerator sind größere Multiblöcke mit Kernen."
+		"&eRecipe on Kronwerke:&r the &6Basic Generator&r is nickel on top and on the sides, copper in the middle, bottom row coil, andesite casing, coil, plus Machine Cores around it. Bio, Lava and Fuel Generator are larger multiblocks with cores."
 		""
-		"&eOritech, Generatoren:&r Grundlegender Generator &d32 FE/t&r aus allem Brennbaren, Puffer 50 000. &6Biogenerator&r &d64 FE/t&r aus Biomasse, &6Lavagenerator&r &d64 FE/t&r aus Lava, &6Brennstoffgenerator&r &d256 FE/t&r aus Öl-Brennstoff, Puffer 100 000 bis 250 000. Das &6Große Solarmodul&r &d32 FE/t&r bei Tag. Mit dem Dampfkessel-Addon machen die Generatoren statt Strom Dampf, den die &6Dampfmaschine&r eins zu eins zurück in FE wandelt. Offen ab Stufe 3, siehe Kapitel &6Oritech&r."
+		"&eOritech, generators:&r Basic Generator &d32 FE/t&r from anything that burns, buffer 50,000. &6Bio Generator&r &d64 FE/t&r from biomass, &6Lava Generator&r &d64 FE/t&r from lava, &6Fuel Generator&r &d256 FE/t&r from oil fuel, buffer 100,000 to 250,000. The &6Big Solar Panel&r &d32 FE/t&r by day. With the boiler addon the generators make steam instead of power, which the &6Steam Engine&r turns back into FE one to one. Unlocked from stage 3, see the chapter &6Oritech&r."
 	]
-	quest.210DAD7590BAA085.quest_subtitle: "Oritech: 32 FE/t Basis, 64 Bio und Lava, 256 Brennstoff, 32 Solar."
-	quest.210DAD7590BAA085.title: "&cStell die Oritech-Generatoren"
+	quest.210DAD7590BAA085.quest_subtitle: "Oritech: 32 FE/t basic, 64 bio and lava, 256 fuel, 32 solar."
+	quest.210DAD7590BAA085.title: "&cSet up the Oritech generators"
 	quest.210F792C17475B19.quest_desc: [
 		"&eRecipe:&r four &6redstone&r around a &6Logistics Core&r, two &6Pressure Tubes&r at the bottom."
 		""
@@ -6420,12 +6420,12 @@
 	quest.2208D975D4A14794.quest_subtitle: "Source over any distance."
 	quest.2208D975D4A14794.title: "&bBuild a Warper Relay"
 	quest.221089DDA582A04B.quest_desc: [
-		"&eRezept:&r Redstone, Legierung, Redstone oben, Biobrennstoff, Schaltkreis, Biobrennstoff in der Mitte, Eisen, Legierung, Eisen unten. Der &6Zerkleinerer&r macht aus Samen, Setzlingen und Pflanzen &6Biobrennstoff&r."
+		"&eRecipe:&r redstone, alloy, redstone on top, biofuel, circuit, biofuel in the middle, iron, alloy, iron at the bottom. The &6Crusher&r turns seeds, saplings and plants into &6biofuel&r."
 		""
-		"&eMekanism, Biogenerator:&r Brennstoff Biobrennstoff (Tank 24 000 mB), &d140 FE/t&r. Eine Weizenfarm mit Erntemaschine davor, und er läuft ohne Kohle. Offen ab Stufe 2."
+		"&eMekanism, Bio-Generator:&r fuel biofuel (tank 24,000 mB), &d140 FE/t&r. A wheat farm with a harvester in front, and it runs without coal. Open from stage 2."
 	]
-	quest.221089DDA582A04B.quest_subtitle: "Mekanism, Biogenerator, 140 FE/t aus Pflanzenresten."
-	quest.221089DDA582A04B.title: "&6Verfeuere Biobrennstoff"
+	quest.221089DDA582A04B.quest_subtitle: "Mekanism, Bio-Generator, 140 FE/t from plant waste."
+	quest.221089DDA582A04B.title: "&6Burn Biofuel"
 	quest.2210ED2A8D9BD49A.quest_desc: [
 		"Right click on the ripe &6Mandrake&r gives &6Mandrake Root&r and &6Mandrake Flowers&r."
 		""
@@ -6612,12 +6612,12 @@
 	quest.229483C1400B3FF7.quest_subtitle: "The clutch disconnects with redstone."
 	quest.229483C1400B3FF7.title: "&6Switch a shaft off"
 	quest.22A6D32889B2CC5E.quest_desc: [
-		"&6Furnator&r (Starter): drei Paste oben, zwei Tiny-Kondensatoren um ein Dielectric Casing, unten Paste, Ofen, Paste. Der &6Magmator&r hat einen Eimer statt des Ofens und trinkt Lava."
+		"&6Furnator&r (Starter): three paste on top, two tiny capacitors around a Dielectric Casing, at the bottom paste, furnace, paste. The &6Magmator&r has a bucket instead of the furnace and drinks lava."
 		""
-		"&ePowah, Furnator und Magmator:&r Brennstoff alles Brennbare oder heiße Flüssigkeit, &d30 FE je Brenntick&r, eine Kohle also 48 000 FE in jeder Stufe. Erzeugung Starter &d20 FE/t&r, Basic 80, Hardened 200, Blazing 800, Niotic 2 000, Spirited 8 000. Puffer 20 000 bis 8 Millionen, Abgabe das Vierfache der Erzeugung. Offen ab Stufe 3, siehe Kapitel &6Powah&r. Nitro (40 000 FE/t) kommt in Stufe 4."
+		"&ePowah, Furnator and Magmator:&r fuel anything burnable or hot fluid, &d30 FE per burn tick&r, so one coal is 48,000 FE in every tier. Generation Starter &d20 FE/t&r, Basic 80, Hardened 200, Blazing 800, Niotic 2,000, Spirited 8,000. Buffer 20,000 to 8 million, output four times the generation. Open from stage 3, see the &6Powah&r chapter. Nitro (40,000 FE/t) comes in stage 4."
 	]
-	quest.22A6D32889B2CC5E.quest_subtitle: "Powah, 20 bis 8 000 FE/t je nach Stufe, 30 FE je Brenntick."
-	quest.22A6D32889B2CC5E.title: "&bBau Furnator und Magmator"
+	quest.22A6D32889B2CC5E.quest_subtitle: "Powah, 20 to 8,000 FE/t depending on tier, 30 FE per burn tick."
+	quest.22A6D32889B2CC5E.title: "&bBuild a Furnator and Magmator"
 	quest.22AB88F3BE2CEC25.quest_desc: [
 		"The &6Basic Filter&r in a card lets only certain items through or blocks them, and there are filters by count, tag, mod and data as well. The &6Card Overclocker&r raises how much a card moves per operation, the &6Node Overclocker&r (diamonds, redstone, Logic Chip) makes the whole node faster."
 		""
@@ -6808,12 +6808,12 @@
 	quest.232810208ED5820D.quest_subtitle: "The altar needs three."
 	quest.232810208ED5820D.title: "&aMake Livingrock"
 	quest.232CEE39D6999281.quest_desc: [
-		"&eRezept:&r Netherziegel in die Ecken, Eisen an die Seiten, ein Ofen in die Mitte, ein &6Draconiumkern&r unten in die Mitte. Im Fenster wählst du den Modus."
+		"&eRecipe:&r nether bricks in the corners, iron on the sides, a furnace in the middle, a &6Draconium Core&r in the bottom middle. Choose the mode in the GUI."
 		""
-		"&eDraconic Evolution, Generator:&r Brennstoff alles Brennbare. Eco Plus &d5 FE/t&r (50 FE je Brenntick, also 80 000 aus einer Kohle), Eco 20 FE/t, Normal &d40 FE/t&r, Performance 80 FE/t, Overdrive &d300 FE/t&r (5 FE je Brenntick). Kein Kraftwerk, aber ein sparsamer Notstrom. Offen ab Stufe 4, siehe Kapitel &6Draconic Evolution&r."
+		"&eDraconic Evolution, Generator:&r fuel anything that burns. Eco Plus &d5 FE/t&r (50 FE per burn tick, so 80,000 from one coal), Eco 20 FE/t, Normal &d40 FE/t&r, Performance 80 FE/t, Overdrive &d300 FE/t&r (5 FE per burn tick). Not a power plant, but a frugal emergency supply. Unlocked from stage 4, see the chapter &6Draconic Evolution&r."
 	]
-	quest.232CEE39D6999281.quest_subtitle: "Draconic Evolution, 5 bis 300 FE/t, je nach Modus."
-	quest.232CEE39D6999281.title: "&5Bau den Draconic-Generator"
+	quest.232CEE39D6999281.quest_subtitle: "Draconic Evolution, 5 to 300 FE/t, depending on the mode."
+	quest.232CEE39D6999281.title: "&5Build the Draconic Generator"
 	quest.23355607F2145B57.quest_desc: [
 		"&eShift + right click&r with the tool in hand opens the &6Tool Settings&r. Every installed ability is shown there as an icon: &eleft click&r turns it on or off, &eright click&r opens its settings."
 		""
@@ -7188,12 +7188,12 @@
 	quest.244A32B58BBE4EC7.quest_subtitle: "Whoever hits you freezes."
 	quest.244A32B58BBE4EC7.title: "&fWear Full Glacite Armor"
 	quest.244C1FDC7E222768.quest_desc: [
-		"&eRezept:&r Osmium in die Ecken, Legierung oben und unten, zwei Stahlgehäuse an den Seiten, ein &6Elektrolytischer Kern&r in der Mitte. Gas kommt per Druckrohr oder Tank hinein."
+		"&eRecipe:&r osmium in the corners, alloy top and bottom, two steel casings on the sides, an &6Electrolytic Core&r in the middle. Gas goes in by pressurized tube or tank."
 		""
-		"&eMekanism, Gasgenerator:&r &bWasserstoff&r aus dem Elektrolyseur gibt &d80 FE/t&r je mB. &bEthen&r aus dem Druckreaktor (Biobrennstoff, Wasser, Wasserstoff) gibt &d11 280 FE je mB&r. Wie viel er pro Tick verbrennt, hängt davon ab, wie voll der Tank (18 000 mB) ist: randvoll bis &d72 000 FE/t&r bei 6,4 mB Ethen pro Tick. Offen ab Stufe 2. Die stärkste Quelle vor Stufe 3, aber eine ganze Produktionskette."
+		"&eMekanism, Gas-Burning Generator:&r &bhydrogen&r from the Electrolytic Separator gives &d80 FE/t&r per mB. &bEthylene&r from the Pressurized Reaction Chamber (biofuel, water, hydrogen) gives &d11,280 FE per mB&r. How much it burns per tick depends on how full the tank (18,000 mB) is: brim full up to &d72,000 FE/t&r at 6.4 mB of ethylene per tick. Open from stage 2. The strongest source before stage 3, but a whole production chain."
 	]
-	quest.244C1FDC7E222768.quest_subtitle: "Mekanism, Gasgenerator, 80 FE/t bis 72 000 FE/t."
-	quest.244C1FDC7E222768.title: "&6Verbrenne Wasserstoff oder Ethen"
+	quest.244C1FDC7E222768.quest_subtitle: "Mekanism, Gas-Burning Generator, 80 FE/t up to 72,000 FE/t."
+	quest.244C1FDC7E222768.title: "&6Burn Hydrogen or Ethylene"
 	quest.244ED98B6DF2405F.quest_desc: [
 		"Four &6Blazegold Ingots&r in a plus around an &6ender pearl&r."
 		""
@@ -8019,12 +8019,12 @@
 	quest.26F5F69208721FCE.quest_subtitle: "The small mods that make the day easier."
 	quest.26F5F69208721FCE.title: "&6Open Comfort and Building"
 	quest.26F7198DDB281846.quest_desc: [
-		"Eine Hülle aus &6Reaktorwänden&r (bis 64 Blöcke Kantenlänge), innen &6Brennstäbe&r, &6Wärmerohre&r, &6Absorber&r und &6Lüfter&r, ein &6Controller&r und Anschlüsse für Brennstoff und Strom in der Wand."
+		"A shell of &6Reactor Walls&r (up to 64 blocks per edge), inside &6Reactor Rods&r, &6Heat Pipes&r, &6Absorbers&r and &6Heat Vents&r, a &6Controller&r and ports for fuel and power in the wall."
 		""
-		"&eOritech, Reaktor:&r Brennstoff Uranstäbe, &d64 FE je Reaktorpuls&r, Puffer 50 Millionen, Abgabe &d25 000 FE/t je Energieanschluss&r. Über 2 000 Hitze schmilzt er, der sichere Modus ist auf diesem Server &caus&r. &eSpeicher:&r der &6Kleine Energiespeicher&r fasst 1 Million FE (5 000 FE/t), der &6Große&r 20 Millionen (10 000 FE/t), Oritech-&6Energierohre&r verbinden alles. Offen ab Stufe 3."
+		"&eOritech, Reactor:&r fuel uranium rods, &d64 FE per reactor pulse&r, buffer 50 million, output &d25,000 FE/t per energy port&r. Above 2,000 heat it melts down, safe mode is &coff&r on this server. &eStorage:&r the &6Portable Energy Storage&r holds 1 million FE (5,000 FE/t), the &6Large&r one 20 million (10,000 FE/t), Oritech &6Energy Pipes&r connect everything. Unlocked from stage 3."
 	]
-	quest.26F7198DDB281846.quest_subtitle: "Oritech, Kernreaktor, bis 25 000 FE/t je Energieanschluss."
-	quest.26F7198DDB281846.title: "&cBau den Oritech-Reaktor"
+	quest.26F7198DDB281846.quest_subtitle: "Oritech, nuclear reactor, up to 25,000 FE/t per energy port."
+	quest.26F7198DDB281846.title: "&cBuild the Oritech reactor"
 	quest.26F99701DE6670F8.quest_desc: [
 		"&6Tigerseye&r (yellow, brown, orange, lime, Rune of Autumn): creepers don't explode and flee from players."
 		"&6Fallen Kanade&r (2 white, 2 yellow, 1 orange, Rune of Spring): regeneration for players and tame animals."
@@ -8788,14 +8788,14 @@
 	quest.28FB9C8CD9D63670.quest_subtitle: "With it you tell helpers what to do."
 	quest.28FB9C8CD9D63670.title: "&6Build the Dominion Wand"
 	quest.2902E4F857948DD0.quest_desc: [
-		"&6Drahtanschluss&r an beide Enden, mit der &6Drahtspule&r in der Hand erst den einen, dann den anderen anklicken. &6Kondensatoren&r speichern und geben je Seite ab, Seiten stellst du mit dem Hammer ein."
+		"A &6wire connector&r at both ends, with the &6wire coil&r in hand click first one, then the other. &6Capacitors&r store and output per side, you set the sides with the hammer."
 		""
-		"&eIE, Leitungen:&r Kupferdraht &d2 048 FE/t&r, 16 Blöcke weit, Anschluss 256 FE/t je Seite. Elektrum 8 192 FE/t, Anschluss 1 024. HV-Draht 32 768 FE/t, 32 Blöcke, Anschluss 4 096. Je länger, desto mehr Verlust (1,25 Prozent je 16 Blöcke Kupfer)."
+		"&eIE, wiring:&r copper wire &d2,048 FE/t&r, 16 blocks far, connector 256 FE/t per side. Electrum 8,192 FE/t, connector 1,024. HV wire 32,768 FE/t, 32 blocks, connector 4,096. The longer, the more loss (1.25 percent per 16 blocks of copper)."
 		""
-		"&eIE, Kondensatoren:&r LV &d100 000 FE&r und 256 FE/t je Seite, MV 1 Million und 1 024, HV 4 Millionen und 4 096. Alles offen ab Stufe 2."
+		"&eIE, Capacitors:&r LV &d100,000 FE&r and 256 FE/t per side, MV 1 million and 1,024, HV 4 million and 4,096. All open from stage 2."
 	]
-	quest.2902E4F857948DD0.quest_subtitle: "Immersive Engineering: Kupfer 2 048, Elektrum 8 192, HV 32 768 FE/t."
-	quest.2902E4F857948DD0.title: "&6Zieh Draht und stell Kondensatoren"
+	quest.2902E4F857948DD0.quest_subtitle: "Immersive Engineering: copper 2,048, electrum 8,192, HV 32,768 FE/t."
+	quest.2902E4F857948DD0.title: "&6Pull Wire and Place Capacitors"
 	quest.290477188DE42ABC.quest_desc: [
 		"Two stations, a train with a conductor, a schedule with two entries and &eLoop Forever&r. As a condition for example &eWait 20 seconds&r, so passengers can board in peace."
 		""
@@ -9002,12 +9002,12 @@
 	quest.29A2E8E667E65D2E.quest_subtitle: "The book at the top left of your inventory."
 	quest.29A2E8E667E65D2E.title: "&6Open the quest book"
 	quest.29A5104832EA5A19.quest_desc: [
-		"&eRezept:&r Redstoneblöcke in die Ecken, ein &6Token der Furcht&r oben, ein &6Token des Zorns&r unten, zwei &6Himmelsbarren&r an den Seiten, ein &6Umwandlungskatalysator&r in der Mitte."
+		"&eRecipe:&r redstone blocks in the corners, a &6Token of Fear&r on top, a &6Token of Anger&r at the bottom, two &6Ingots of the Skies&r on the sides, a &6Transmutation Catalyst&r in the middle."
 		""
-		"&eNature's Aura, RF-Umwandler:&r Brennstoff Aura aus der Umgebung, &d20 Aura = 1 FE&r. Er leert die Gegend spürbar, also nur neben starken Aura-Generatoren betreiben. Eher ein Notstrom für Magier als ein Kraftwerk. Offen ab Stufe 3 mit dem Himmelsbarren."
+		"&eNature's Aura, Energetic Aura Forge:&r fuel aura from the surroundings, &d20 aura = 1 FE&r. It drains the area noticeably, so only run it next to strong aura generators. More emergency power for mages than a power plant. Unlocked from stage 3 with the Ingot of the Skies."
 	]
-	quest.29A5104832EA5A19.quest_subtitle: "Nature's Aura, RF-Umwandler, 20 Aura = 1 FE."
-	quest.29A5104832EA5A19.title: "&aWandle Aura in Strom"
+	quest.29A5104832EA5A19.quest_subtitle: "Nature's Aura, Energetic Aura Forge, 20 aura = 1 FE."
+	quest.29A5104832EA5A19.title: "&aTurn aura into power"
 	quest.29AD23F9B1AB019A.quest_desc: [
 		"Glass, &6Iron Plate&r, glass on top, three &6Vacuum Tubes&r in the middle, &6Treated Wood&r, &6Copper Coil Block&r, Treated Wood at the bottom make the &6Charging Station&r."
 		""
@@ -9551,14 +9551,14 @@
 	quest.2B59AABCCAFA469D.quest_subtitle: "Three stacks of scrolls in one hand."
 	quest.2B59AABCCAFA469D.title: "&6Sew a Mystic Code"
 	quest.2B5B554394BB3E43.quest_desc: [
-		"&6Stirling Generator:&r Zahnrad, Ofen, Zahnrad oben, Eisen, Gehäuse der Leere, Eisen in der Mitte, Obsidian, Tiefenschiefer, Obsidian unten. Ohne &6Kondensator&r im Slot läuft er nicht."
+		"&6Stirling Generator:&r gear, furnace, gear on top, iron, Void Chassis, iron in the middle, obsidian, deepslate, obsidian at the bottom. Without a &6Capacitor&r in its slot it does not run."
 		""
-		"&eEnder IO, Stirling Generator:&r Brennstoff alles Brennbare, &d40 µI/t&r mit dem einfachen Kondensator, bessere Kondensatoren holen mehr aus jedem Stück heraus, Puffer 64 000. µI ist FE. &ePhotovoltaik-Module:&r Energetisch &d4 µI/t&r, Pulsierend 16, Strahlend 64, nur bei Tag."
+		"&eEnder IO, Stirling Generator:&r fuel anything that burns, &d40 µI/t&r with the basic capacitor, better capacitors get more out of each item, buffer 64,000. µI is FE. &ePhotovoltaic Modules:&r Energetic &d4 µI/t&r, Pulsating 16, Vibrant 64, by day only."
 		""
-		"&eKondensatorbänke:&r Einfach &d500 000 µI&r, Fortgeschritten 2 Millionen, Strahlend 4 Millionen, mehrere nebeneinander werden eine. &6Energieleitungen&r liegen mit Item- und Flüssigkeitsleitungen im selben Block. Offen ab Stufe 3, siehe Kapitel &6Ender IO&r."
+		"&eCapacitor Banks:&r Basic &d500,000 µI&r, Advanced 2 million, Vibrant 4 million, several next to each other become one. &6Energy Conduits&r share a block with item and fluid conduits. Unlocked from stage 3, see the chapter &6Ender IO&r."
 	]
-	quest.2B5B554394BB3E43.quest_subtitle: "Ender IO: 40 µI/t Stirling, 4 bis 64 µI/t Photovoltaik, Kondensatorbänke."
-	quest.2B5B554394BB3E43.title: "&5Bau den Stirling Generator"
+	quest.2B5B554394BB3E43.quest_subtitle: "Ender IO: 40 µI/t Stirling, 4 to 64 µI/t photovoltaic, capacitor banks."
+	quest.2B5B554394BB3E43.title: "&5Build the Stirling Generator"
 	quest.2B5CA14619486FF0.quest_desc: [
 		"&e1.&r &6Upgrade Matrix&r: a lapis lazuli with 1,000 mB of water in the &6Thermopneumatic Processing Plant&r at 2 bar gives four matrices."
 		"&e2.&r &6Solar Wafer&r: a matrix and an &6amethyst shard&r in the Pressure Chamber at &e2.5 bar&r."
@@ -9884,16 +9884,16 @@
 	quest.2C5BEE521A7393D9.quest_subtitle: "Panels and steps that copy any block."
 	quest.2C5BEE521A7393D9.title: "&6&lCut Copycats from Zinc"
 	quest.2C67F6D3BCDC61E7.quest_desc: [
-		"In Stufe 1 gibt es &ckeinen FE-Generator&r. Mekanism, Immersive Engineering, Powah und alle anderen Strommods sind zu, das Manaflussfeld von Botania braucht Manastahl aus Stufe 2. Was läuft, läuft mit &6Rotation&r von Create."
+		"In stage 1 there is &cno FE generator&r. Mekanism, Immersive Engineering, Powah and all other power mods are closed, Botania's Mana Fluxfield needs manasteel from stage 2. What runs, runs on &6rotation&r from Create."
 		""
-		"&e1. Wasserräder:&r acht Bretter um eine Welle, 256 SU pro Rad, beliebig viele hintereinander an einem Bach. Billig, sofort, kein Brennstoff."
-		"&e2. Windmühle:&r ein Windmühlenlager und Segel, bis 2 048 SU mit 32 Segeln. Braucht Platz, bringt dafür mehr als acht Räder."
-		"&e3. Starbuncle-Rad:&r für Ars-Spieler, 256 SU ohne Wasser und ohne Wind, nur ein Starbuncle muss hinein."
+		"&e1. Water wheels:&r eight planks around a shaft, 256 SU per wheel, as many as you like in a row on a stream. Cheap, instant, no fuel."
+		"&e2. Windmill:&r a windmill bearing and sails, up to 2,048 SU with 32 sails. Needs room, but brings more than eight wheels."
+		"&e3. Starbuncle wheel:&r for Ars players, 256 SU without water and without wind, only a Starbuncle has to go inside."
 		""
-		"Was ihr braucht: Presse 8 SU pro RPM, Mahlstein und Mixer 4, Lüfter 2. Zwei Wasserräder tragen eine Presse bei 32 RPM, siehe Kapitel &6Create&r."
+		"What you need: press 8 SU per RPM, millstone and mixer 4, fan 2. Two water wheels carry one press at 32 RPM, see the &6Create&r chapter."
 	]
-	quest.2C67F6D3BCDC61E7.quest_subtitle: "Noch kein Strom, nur Drehung."
-	quest.2C67F6D3BCDC61E7.title: "&e&lStufe 1: Welche Quelle wann"
+	quest.2C67F6D3BCDC61E7.quest_subtitle: "No power yet, only rotation."
+	quest.2C67F6D3BCDC61E7.title: "&e&lStage 1: Which Source When"
 	quest.2C6B1101FBC07225.quest_desc: [
 		"&dSplit&r: &6Splitter&r (the relay), &6Wilden Spike&r, &6stonecutter&r. &dOrbit&r: &6compass&r, &6eye of ender&r, &6blaze rod&r."
 		""
@@ -10434,12 +10434,12 @@
 	quest.2DDE69DD79E59127.quest_subtitle: "A blaze in a cage, and Create gets hot."
 	quest.2DDE69DD79E59127.title: "&6&lCatch a blaze"
 	quest.2DE28351347147D7.quest_desc: [
-		"Pump &bBiodiesel&r, &bDiesel&r oder &bEthanol&r in den &6Dieselmotor&r, ein Eimer wird auf Kronwerke nicht angenommen. Er trinkt &e1 mB pro Sekunde&r, ein Eimer hält 16 Minuten."
+		"Pump &bbiodiesel&r, &bdiesel&r or &bethanol&r into the &6Diesel Engine&r, on Kronwerke it does not accept a bucket. It drinks &e1 mB per second&r, a bucket lasts 16 minutes."
 		""
-		"&eCreate Diesel Generators, Dieselmotor:&r Biodiesel &d96 RPM, 4 096 SU&r, Diesel 6 144 SU, Ethanol 2 048 SU. Der &6Große Dieselmotor&r ist stapelbar, 6 144 SU mit Biodiesel und 8 192 mit Diesel je Block. Der &6Riesen-Dieselmotor&r (224 RPM, bis 16 384 SU) kommt in Stufe 3. Offen ab Stufe 2, siehe Kapitel &6Create: Erweiterungen&r."
+		"&eCreate Diesel Generators, Diesel Engine:&r biodiesel &d96 RPM, 4,096 SU&r, diesel 6,144 SU, ethanol 2,048 SU. The &6Large Diesel Engine&r is stackable, 6,144 SU with biodiesel and 8,192 with diesel per block. The &6Huge Diesel Engine&r (224 RPM, up to 16,384 SU) comes in stage 3. Open from stage 2, see the chapter &6Create: Addons&r."
 	]
-	quest.2DE28351347147D7.quest_subtitle: "Create Diesel Generators, 96 RPM, 4 096 bis 8 192 SU aus einem Block."
-	quest.2DE28351347147D7.title: "&6Bau einen Dieselmotor"
+	quest.2DE28351347147D7.quest_subtitle: "Create Diesel Generators, 96 RPM, 4,096 to 8,192 SU from one block."
+	quest.2DE28351347147D7.title: "&6Build a Diesel Engine"
 	quest.2DE5C264C705BA2F.quest_desc: [
 		"&eRecipe:&r an &6Advanced Pressure Tube&r on top, Compressed Iron, &6Air Canister&r, Compressed Iron in the middle, three Compressed Iron at the bottom."
 		""
@@ -11000,14 +11000,14 @@
 	quest.2FD44501D6EFF51C.title: "&9Configure a Connection"
 	quest.2FD9FD3668833236.quest_desc: [
 		"{image:kronwerke:textures/quests/shots/flux_networks_first_link.png width:224 height:126 align:center}"
-		"&6Flux-Staub:&r Redstone auf einen &6Obsidian&r fallen lassen, der auf Grundgestein steht. &eFlux-Kern (Kronwerke):&r Staub in die Ecken, Obsidian an die Seiten, ein &6Quellenedelstein&r in der Mitte. &eController (Kronwerke):&r Fluxblöcke, Staub, Kern oben und ein &6Fortschrittlicher Steuerschaltkreis&r in der Mitte."
+		"&6Flux Dust:&r drop redstone onto an &6obsidian&r block standing on bedrock. &eFlux Core (Kronwerke):&r dust in the corners, obsidian on the sides, a &6Source Gem&r in the middle. &eController (Kronwerke):&r Flux Blocks, dust, core on top and an &6Advanced Control Circuit&r in the middle."
 		""
-		"&eFlux Networks:&r Ein &6Flux Plug&r nimmt Strom aus Generatoren und Speichern, ein &6Flux Point&r gibt ihn an Maschinen ab, überall auf der Welt, auch in anderen Dimensionen, bis &d800 000 FE/t&r je Gerät. Der &6Controller&r lädt außerdem deine Werkzeuge drahtlos. Jeder Spieler hat bis zu 5 Netze, Chunks werden auf Wunsch geladen."
+		"&eFlux Networks:&r a &6Flux Plug&r takes power from generators and storage, a &6Flux Point&r hands it to machines, anywhere in the world, other dimensions included, up to &d800,000 FE/t&r per device. The &6Controller&r also charges your tools wirelessly. Every player has up to 5 networks, chunks are loaded on request."
 		""
-		"&eSpeicher:&r &6Basic Flux Storage&r &d2 Millionen FE&r, 20 000 FE/t. Herculean 16 Millionen und 120 000 FE/t (Stufe 4), Gargantuan 128 Millionen und 720 000 FE/t (Stufe 5). Mekanism-Kabel tauschen mit Flux ohne Limit. Offen ab Stufe 3."
+		"&eStorage:&r &6Basic Flux Storage&r &d2 million FE&r, 20,000 FE/t. Herculean 16 million and 120,000 FE/t (stage 4), Gargantuan 128 million and 720,000 FE/t (stage 5). Mekanism cables exchange with Flux without a limit. Unlocked from stage 3."
 	]
-	quest.2FD9FD3668833236.quest_subtitle: "Flux Networks, Strom ohne Kabel, 800 000 FE/t je Punkt."
-	quest.2FD9FD3668833236.title: "&dBau ein Flux-Netzwerk"
+	quest.2FD9FD3668833236.quest_subtitle: "Flux Networks, power without cables, 800,000 FE/t per point."
+	quest.2FD9FD3668833236.title: "&dBuild a Flux network"
 	quest.2FDE77C019ED68C9.quest_desc: [
 		"Four &6Fertile Essence&r in the corners, four &6Nether Stars&r on the sides, a &6rose bush&r in the middle give the &6Witherless Rose&r. Fertile Essence is Rib Bone, Catalyzing Gland, a &6Mandrake Root&r from Hexerei and Slime Pearl in the crafting table."
 		""
@@ -11930,12 +11930,12 @@
 	quest.33E381BB2BF8C5E7.quest_subtitle: "Never drown again."
 	quest.33E381BB2BF8C5E7.title: "&3Build a Kraken Shell"
 	quest.33E405C6E2376D48.quest_desc: [
-		"13 Schwere Ingenieursbausteine, 9 Kühler, 4 Generatorblöcke, Stahlgerüste, Rohre und ein Redstone-Baustein, 3 x 3 x 5, geformt am mittleren Generatorblock. Brennstoff unten in die Ecken, Strom an bis zu drei Anschlüssen oben."
+		"13 Heavy Engineering Blocks, 9 Radiator Blocks, 4 Generator Blocks, steel scaffolding, pipes and a Redstone Engineering Block, 3 x 3 x 5, formed on the middle Generator Block. Fuel goes into the bottom corners, power comes out of up to three connectors on top."
 		""
-		"&eIE, Dieselgenerator:&r Brennstoff Biodiesel, Hochcetan-Biodiesel oder zur Not Kreosotöl, &d4 096 FE/t&r, verteilt auf die Anschlüsse, läuft nur, wenn jemand Strom abnimmt. HV-Draht ist Pflicht. Der Generatorblock öffnet mit Stufe 3, siehe Kapitel &6Immersive Engineering: Schwerindustrie&r."
+		"&eIE, Diesel Generator:&r fuel biodiesel, high cetane biodiesel or, if need be, creosote oil, &d4,096 FE/t&r, split across the connectors, only runs when something draws power. HV wire is a must. The Generator Block unlocks with stage 3, see the chapter &6Immersive Engineering: Heavy Industry&r."
 	]
-	quest.33E405C6E2376D48.quest_subtitle: "Immersive Engineering, 4 096 FE/t aus Biodiesel."
-	quest.33E405C6E2376D48.title: "&6Form den Dieselgenerator"
+	quest.33E405C6E2376D48.quest_subtitle: "Immersive Engineering, 4,096 FE/t from biodiesel."
+	quest.33E405C6E2376D48.title: "&6Form the Diesel Generator"
 	quest.33E44C13922F04E9.quest_desc: [
 		"A &6string&r in the pool becomes &6Mana Infused String&r for &d1,250 mana&r."
 		""
@@ -12091,12 +12091,12 @@
 	quest.34491E4586B09655.quest_subtitle: "One ore, three dusts."
 	quest.34491E4586B09655.title: "&d&lSummon a Djinni Crusher"
 	quest.345E080DC5C72914.quest_desc: [
-		"&eRezept:&r Ferricore oben und unten in den Ecken, Redstoneblock oben und unten in der Mitte, Kohle, Ofen, Kohle in der Mitte. Rechtsklick öffnet ihn, Brennstoff hinein."
+		"&eRecipe:&r Ferricore top and bottom in the corners, redstone block top and bottom middle, coal, furnace, coal in the middle. Right click opens it, fuel in."
 		""
-		"&eJust Dire Things, Pocket Generator:&r Brennstoff Kohle, Primal Coal und Blaze Ember mit denselben Werten wie der große Generator. Er fasst &d1 Million FE&r und lädt alles in deinem Inventar, was FE speichert, mit bis zu &d5 000 FE/t&r. Offen ab Stufe 2, siehe Kapitel &6Just Dire Things&r."
+		"&eJust Dire Things, Pocket Generator:&r fuel coal, Primal Coal and Blaze Ember with the same values as the big generator. It holds &d1 million FE&r and charges everything in your inventory that stores FE with up to &d5,000 FE/t&r. Open from stage 2, see the &6Just Dire Things&r chapter."
 	]
-	quest.345E080DC5C72914.quest_subtitle: "Just Dire Things: lädt dein Inventar mit bis zu 5 000 FE/t."
-	quest.345E080DC5C72914.title: "&6Steck einen Taschengenerator ein"
+	quest.345E080DC5C72914.quest_subtitle: "Just Dire Things: charges your inventory with up to 5,000 FE/t."
+	quest.345E080DC5C72914.title: "&6Pocket a Pocket Generator"
 	quest.346226A6919CF5ED.quest_desc: [
 		"Place a &6stripped log&r and right-click it with &6Andesite Alloy&r. It becomes &6Andesite Casing&r. Stripped wood works the same way."
 		""
@@ -12855,12 +12855,12 @@
 	quest.37FA3A0C41F3F520.quest_subtitle: "The fourth press."
 	quest.37FA3A0C41F3F520.title: "&dBuild Quantum Processors"
 	quest.3811E59305462553.quest_desc: [
-		"Zuerst den &6Kinetischen Dynamo&r setzen, dann die &6Windmühle&r (acht Blätter um Eisen) oder das &6Wasserrad&r an seine Wellenseite. Strom über einen LV-Anschluss am Dynamo."
+		"First place the &6Kinetic Dynamo&r, then the &6Windmill&r (eight blades around iron) or the &6Water Wheel&r on its shaft side. Power via an LV connector on the dynamo."
 		""
-		"&eImmersive Engineering, Dynamo:&r Brennstoff Wind oder Wasser. Die Windmühle zählt die freien Blöcke in einem 9 x 9 x 7 Raum vor sich: völlig frei und ohne Segel etwa &d17 FE/t&r, mit acht &6Segeln&r rund &d50 FE/t&r, im Gewitter etwa das Doppelte. Bis drei Wasserräder treiben einen Dynamo, je mehr fließendes Wasser, desto mehr. Offen ab Stufe 2, siehe Kapitel &6Immersive Engineering&r."
+		"&eImmersive Engineering, Dynamo:&r fuel wind or water. The windmill counts the free blocks in a 9 x 9 x 7 space in front of it: completely free and without sails about &d17 FE/t&r, with eight &6sails&r about &d50 FE/t&r, in a thunderstorm about double. Up to three water wheels drive one dynamo, the more flowing water, the more. Open from stage 2, see the &6Immersive Engineering&r chapter."
 	]
-	quest.3811E59305462553.quest_subtitle: "Immersive Engineering, Dynamo mit Windmühle oder Wasserrad."
-	quest.3811E59305462553.title: "&6Häng eine Windmühle an den Dynamo"
+	quest.3811E59305462553.quest_subtitle: "Immersive Engineering, dynamo with windmill or water wheel."
+	quest.3811E59305462553.title: "&6Hang a Windmill on the Dynamo"
 	quest.381652550AB417EB.quest_desc: [
 		"{image:kronwerke:textures/quests/shots/create_windmill.png width:224 height:126 align:center}"
 		"&6Windmill Bearing&r: wooden slab, stone, shaft. Build the sails in front of it, connect everything with &6Super Glue&r and right-click the bearing."
@@ -13031,12 +13031,12 @@
 	quest.38C6C1ABC1A9F762.quest_subtitle: "Create, Andesite Funnel: one item per action onto and off the belt."
 	quest.38C6C1ABC1A9F762.title: "Place Create Funnels and Tunnels"
 	quest.38E89E8B696B9BD8.quest_desc: [
-		"Hülle aus Casing und Glas, innen frei gesetzte &6Brennstoffzellen&r, Moderatoren und Kühlkörper, ein &6Controller&r und ein &6Port&r in der Wand. Netto-Hitze auf null, Redstone-Signal zündet. Im Energie-Modus kommt Strom aus dem Port, im Siede-Modus Dampf für die &6Dampfturbine&r."
+		"A shell of casing and glass, inside freely placed &6fuel cells&r, moderators and heat sinks, a &6Controller&r and a &6Port&r in the wall. Net heat at zero, a redstone signal ignites it. In energy mode power comes out of the port, in boiling mode steam for the &6Steam Turbine&r."
 		""
-		"&eNuclearCraft, Spaltreaktor:&r Brennstoff LEU-235 und andere Brennstoffe, Ausstoß hängt von Zellen und Moderatoren ab. Kernschmelze etwa wie TNT. &eDampfturbine:&r ein Multiblock mit Rotorblättern und Spulen, 5 bis 17 Blöcke Kante, 2 000 mB Dampf je Blatt, Strom aus dem Dampf des Reaktors. &eZerfallsgenerator:&r Strom aus radioaktiven Blöcken daneben, die er langsam zu Blei zerfallen lässt. Offen ab Stufe 4, siehe Kapitel &6NuclearCraft&r."
+		"&eNuclearCraft, Fission Reactor:&r fuel LEU-235 and other fuels, output depends on cells and moderators. A meltdown is roughly like TNT. &eSteam Turbine:&r a multiblock with rotor blades and coils, 5 to 17 blocks per edge, 2,000 mB steam per blade, power from the reactor's steam. &eDecay Generator:&r power from radioactive blocks next to it, which it slowly decays into lead. Unlocked from stage 4, see the chapter &6NuclearCraft&r."
 	]
-	quest.38E89E8B696B9BD8.quest_subtitle: "NuclearCraft: Spaltreaktor, Dampfturbine, Zerfallsgenerator."
-	quest.38E89E8B696B9BD8.title: "&aFahr den NuclearCraft-Spaltreaktor an"
+	quest.38E89E8B696B9BD8.quest_subtitle: "NuclearCraft: fission reactor, steam turbine, decay generator."
+	quest.38E89E8B696B9BD8.title: "&aStart up the NuclearCraft fission reactor"
 	quest.38ED8781794BA9B3.quest_desc: [
 		"Each shapeless from &6Pixie Dust&r, &6Manasteel&r and a rune: &eDispersive&r (water) charges mana items of nearby players, &eDominant&r (fire) pulls mana from pools with normal sparks, &eRecessive&r (earth) spreads its mana to the others, &eIsolated&r (air) stays out of everything."
 		""
@@ -13189,12 +13189,12 @@
 	quest.39A74282BA312818.title: "&6Open the map"
 	quest.39C563005BCBFAFA.quest_desc: [
 		"{image:kronwerke:textures/quests/shots/list_power_steam_engine.png width:224 height:126 align:center}"
-		"&6Dampfmaschine&r an einen &6Flüssigkeitstank&r mit Wasser und &6Lohenbrennern&r darunter, eine Welle davor. Kesselstufe = das kleinste von Hitze, Wasser und Tankgröße."
+		"&6Steam Engine&r on a &6Fluid Tank&r with water and &6Blaze Burners&r underneath, a shaft in front of it. Boiler level = the smallest of heat, water and tank size."
 		""
-		"&eCreate, Dampfmaschine:&r Brennstoff alles, was ein Lohenbrenner frisst (Kohle, Holzkohle, Lohenkuchen, flüssiger Brennstoff mit dem Strohhalm aus Crafts & Additions). Voll versorgt &d64 RPM&r und &d16 384 SU&r pro Maschine, bis 18 Maschinen an einem Kessel. Ein Kessel ohne Brenner (passiv) gibt einer Maschine noch 16 RPM und 2 048 SU. Offen ab Stufe 2, siehe Kapitel &6Create: Messing&r."
+		"&eCreate, Steam Engine:&r fuel everything a Blaze Burner eats (coal, charcoal, blaze cake, liquid fuel with the straw from Crafts & Additions). Fully supplied &d64 RPM&r and &d16,384 SU&r per engine, up to 18 engines on one boiler. A boiler without burners (passive) still gives one engine 16 RPM and 2,048 SU. Open from stage 2, see the chapter &6Create: Brass&r."
 	]
-	quest.39C563005BCBFAFA.quest_subtitle: "Create, Dampfmaschine, 64 RPM und 16 384 SU je Maschine."
-	quest.39C563005BCBFAFA.title: "&6Heiz einen Dampfkessel an"
+	quest.39C563005BCBFAFA.quest_subtitle: "Create, Steam Engine, 64 RPM and 16,384 SU per engine."
+	quest.39C563005BCBFAFA.title: "&6Fire Up a Steam Boiler"
 	quest.39C86A5666F66BCC.quest_desc: [
 		"{image:kronwerke:textures/quests/shots/ars_apprentice_source_motor.png width:224 height:126 align:center}"
 		"Corners and bottom middle &6brass ingots&r, top middle &6Electron Tube&r, left and right a &6cogwheel&r, the calibrated mechanism in the middle."
@@ -13211,12 +13211,12 @@
 	quest.39CA473B386A001B.quest_subtitle: "Gunpowder by the stack."
 	quest.39CA473B386A001B.title: "&aLearn the Creeper"
 	quest.39E18630C8378B08.quest_desc: [
-		"Ein Kasten aus &6Kernreaktorgehäuse&r, innen Säulen aus &6Brennstäben&r mit je einem &6Steuerstab&r obendrauf, &6Schnittstellen&r für Brennstoff, Kühlmittel, Dampf und Abfall in der Wand. Starten mit 0,1 mB pro Tick."
+		"A box of &6Fission Reactor Casing&r, inside columns of &6Fission Fuel Assemblies&r with one &6Control Rod Assembly&r on top of each, &6ports&r for fuel, coolant, steam and waste in the wall. Start at 0.1 mB per tick."
 		""
-		"&eMekanism, Spaltreaktor:&r Brennstoff Spaltbrennstoff, &d1 Million Joule Hitze je mB&r, also 400 000 FE, umgesetzt über Wasser und Dampf in der &6Industrieturbine&r. Brennrate und Turbinengröße bestimmen den Ausstoß. Kernschmelzen sind auf diesem Server &can&r, Radius 8 Blöcke, Strahlung mal fünfzig. Offen ab Stufe 5, siehe Kapitel &6Mekanism: Antimaterie&r."
+		"&eMekanism, Fission Reactor:&r fuel fissile fuel, &d1 million joules of heat per mB&r, so 400,000 FE, converted via water and steam in the &6Industrial Turbine&r. Burn rate and turbine size set the output. Meltdowns are &con&r on this server, radius 8 blocks, radiation times fifty. Unlocked from stage 5, see the chapter &6Mekanism: Antimatter&r."
 	]
-	quest.39E18630C8378B08.quest_subtitle: "Mekanism, Spaltreaktor: Wasser zu Dampf, Dampf zu Strom in der Turbine."
-	quest.39E18630C8378B08.title: "&5Fahr den Spaltreaktor an"
+	quest.39E18630C8378B08.quest_subtitle: "Mekanism, Fission Reactor: water to steam, steam to power in the turbine."
+	quest.39E18630C8378B08.title: "&5Start up the Fission Reactor"
 	quest.39E5871127D49C4D.quest_desc: [
 		"In the apparatus: &6Ring of Lesser Discount&r in the middle, &e4 diamonds&r, &e2 blaze rods&r and &e2 source gems&r on the pedestals."
 		""
@@ -13471,14 +13471,14 @@
 	quest.3B268BFFFDB0AD9A.quest_subtitle: "Four gem blocks and a Source Jar."
 	quest.3B268BFFFDB0AD9A.title: "&dCollect the parts for the keystone"
 	quest.3B26E11DD76DD0D2.quest_desc: [
-		"Stufe 5 öffnet den Spaltreaktor von Mekanism, den Drakonischen Reaktor und den Gargantuan-Speicher von Flux. Das Ziel am Obelisken, 100 Antimaterie-Pellets, braucht eine Billion Joule je Pellet, also 400 Milliarden FE."
+		"Stage 5 opens the Mekanism Fission Reactor, the Draconic Reactor and Flux's Gargantuan storage. The goal at the obelisk, 100 antimatter pellets, needs one trillion joules per pellet, so 400 billion FE."
 		""
-		"&e1. Spaltreaktor plus Industrieturbine:&r Spaltbrennstoff aus Uran, Wasser rein, Dampf raus, die Turbine aus Stufe 3 macht daraus Strom. Der Atommüll daraus ist zugleich der Rohstoff für Polonium und Plutonium."
-		"&e2. Fusionsreaktor aus Stufe 4&r auf hoher Einspritzrate mit Dampf in eine zweite Turbine, wenn der Spaltreaktor dir zu heiß ist."
-		"&e3. Drakonischer Reaktor:&r der größte Ausstoß im Pack, aber er explodiert, wenn das Feld fällt. Nur mit Energiekern als Rücklage für den Injektor."
+		"&e1. Fission Reactor plus Industrial Turbine:&r fissile fuel from uranium, water in, steam out, the turbine from stage 3 turns it into power. The nuclear waste it makes is also the raw material for polonium and plutonium."
+		"&e2. Fusion reactor from stage 4&r at a high injection rate with steam into a second turbine, if the Fission Reactor is too hot for you."
+		"&e3. Draconic Reactor:&r the highest output in the pack, but it explodes if the field fails. Only with an Energy Core as a reserve for the injector."
 	]
-	quest.3B26E11DD76DD0D2.quest_subtitle: "Alles offen. Der Strom für hundert Pellets."
-	quest.3B26E11DD76DD0D2.title: "&e&lStufe 5: Welche Quelle wann"
+	quest.3B26E11DD76DD0D2.quest_subtitle: "Everything is open. Power for a hundred pellets."
+	quest.3B26E11DD76DD0D2.title: "&e&lStage 5: Which source when"
 	quest.3B2FE6FB6C87C628.quest_desc: [
 		"The &6Turbine Valves&r of the Industrial Turbine from &5Mekanism: Advanced&r give their power to every block next to them. Put a &6Flux Plug&r directly on a valve, then everything the turbine makes flows into the network."
 		""
@@ -14057,12 +14057,12 @@
 	quest.3D3132A8699F69CD.quest_subtitle: "The body of the basic machines."
 	quest.3D3132A8699F69CD.title: "&7Build a Void Chassis"
 	quest.3D325AEE94664080.quest_desc: [
-		"Elite- und Ultimativ-Kabel, Würfel und Induktionszellen entstehen aus den fortgeschrittenen mit Verstärkter und Atomlegierung und den Elite- und Ultimativ-Schaltkreisen."
+		"Elite and Ultimate cables, cubes and induction cells are made from the advanced ones with Reinforced and Atomic Alloy and the Elite and Ultimate Control Circuits."
 		""
-		"&eMekanism, Elite:&r Kabel &d409 600 FE/t&r, Würfel 25,6 Millionen FE mit 25 600 FE/t, Induktionszelle 204,8 Milliarden FE, Anschluss 6,5 Millionen FE/t. &eUltimativ:&r Kabel &d3 276 800 FE/t&r, Würfel &d102,4 Millionen FE&r mit 102 400 FE/t, Induktionszelle &d1,6 Billionen FE&r, Anschluss 52,4 Millionen FE/t. Offen ab Stufe 4, siehe Kapitel &6Mekanism: Elite&r."
+		"&eMekanism, Elite:&r cable &d409,600 FE/t&r, cube 25.6 million FE with 25,600 FE/t, induction cell 204.8 billion FE, port 6.5 million FE/t. &eUltimate:&r cable &d3,276,800 FE/t&r, cube &d102.4 million FE&r with 102,400 FE/t, induction cell &d1.6 trillion FE&r, port 52.4 million FE/t. Unlocked from stage 4, see the chapter &6Mekanism: Elite&r."
 	]
-	quest.3D325AEE94664080.quest_subtitle: "Mekanism: bis 3 276 800 FE/t im Kabel, 102,4 Millionen FE im Würfel."
-	quest.3D325AEE94664080.title: "&5Rüste Mekanism auf Elite und Ultimativ"
+	quest.3D325AEE94664080.quest_subtitle: "Mekanism: up to 3,276,800 FE/t in the cable, 102.4 million FE in the cube."
+	quest.3D325AEE94664080.title: "&5Upgrade Mekanism to Elite and Ultimate"
 	quest.3D346F0F81C0F4C4.quest_desc: [
 		"{image:kronwerke:textures/quests/shots/mahou_tsukai_staff.png width:224 height:126 align:center}"
 		"Use the scroll with &d2,000 mana&r in your bar, gems or a circuit within 10 blocks. &eRecipe on Kronwerke:&r The server raised the cost from 100 to 2,000."
@@ -14081,12 +14081,12 @@
 	quest.3D3A8DCEA26335EF.quest_subtitle: "A new world now, the Chaos Island later."
 	quest.3D3A8DCEA26335EF.title: "&dSee What Is Still to Come"
 	quest.3D3FDB0DB9F082C9.quest_desc: [
-		"Die &6Teslaspule&r entsteht in der Mechanischen Werkbank aus Kupferspulen, Andesitlegierung, Kondensatoren, Messinggehäuse, Messingblechen und einer Elektronenröhre. Stell sie über ein Depot oder ein Band."
+		"The &6Tesla Coil&r is made in the Mechanical Crafter from copper spools, Andesite Alloy, capacitors, Brass Casing, brass sheets and an electron tube. Put it above a depot or belt."
 		""
-		"&eCrafts & Additions, Teslaspule:&r lädt FE-Gegenstände unter sich mit &d5 000 FE/t&r, Rezepte zum Aufladen mit 2 000 FE/t, Puffer &d40 000 FE&r. Sie kann auch Mobs in 3 Blöcken einen Schlag versetzen, jeder kostet 1 000 FE. Offen ab Stufe 2, siehe Kapitel &6Create: Erweiterungen&r."
+		"&eCrafts & Additions, Tesla Coil:&r charges FE items under it with &d5,000 FE/t&r, charging recipes with 2,000 FE/t, buffer &d40,000 FE&r. It can also shock mobs within 3 blocks, each costs 1,000 FE. Open from stage 2, see the chapter &6Create: Addons&r."
 	]
-	quest.3D3FDB0DB9F082C9.quest_subtitle: "Crafts & Additions: lädt mit 5 000 FE/t, was unter ihr liegt."
-	quest.3D3FDB0DB9F082C9.title: "&6Lad Gegenstände an der Teslaspule"
+	quest.3D3FDB0DB9F082C9.quest_subtitle: "Crafts & Additions: charges what lies under it with 5,000 FE/t."
+	quest.3D3FDB0DB9F082C9.title: "&6Charge Items at the Tesla Coil"
 	quest.3D4C6F4E8F84D8E6.quest_desc: [
 		"&6Annihilation Plane:&r three fluix at the top, iron, Annihilation Core, iron below. &6Formation Plane:&r the same with a Formation Core."
 		""
@@ -14320,12 +14320,12 @@
 	quest.3E476F6BD11012E2.quest_subtitle: "Enough for a whole stage."
 	quest.3E476F6BD11012E2.title: "&c&lBuild up a Nether supply"
 	quest.3E49A7C3393DBF2E.quest_desc: [
-		"Rauten aus &6Reaktorrahmen&r (Polonium-Pellets im Rezept), Reaktorglas, Anschlüsse, die &6Laser-Fokusmatrix&r (Kronwerke: Quellenedelsteinblock) und der Controller oben. Hohlraum mit D-T-Treibstoff in den Controller, Laserverstärker auf die Matrix, zünden."
+		"Diamonds of &6Fusion Reactor Frames&r (Polonium Pellets in the recipe), Reactor Glass, ports, the &6Laser Focus Matrix&r (Kronwerke: block of Source Gem) and the controller on top. Hohlraum with D-T fuel into the controller, Laser Amplifier onto the matrix, ignite."
 		""
-		"&eMekanism, Fusionsreaktor:&r Brennstoff Deuterium und Tritium aus Wasser (Elektrolyseur, Solar-Neutronenaktivator). Strom direkt über die Anschlüsse, oder mit Wasser Dampf für die Industrieturbine, damit noch mehr. Puffer 400 Millionen FE. Je höher die Einspritzrate, desto mehr Strom, die Zahl hängt von Rate und Kühlung ab. &eRezept auf Kronwerke:&r die Fokusmatrix braucht einen Quellenedelsteinblock. Offen ab Stufe 4, siehe Kapitel &6Mekanism: Elite&r."
+		"&eMekanism, Fusion Reactor:&r fuel deuterium and tritium from water (Electrolytic Separator, Solar Neutron Activator). Power straight from the ports, or with water, steam for the Industrial Turbine for even more. Buffer 400 million FE. The higher the injection rate, the more power, the number depends on rate and cooling. &eRecipe on Kronwerke:&r the focus matrix needs a block of Source Gem. Unlocked from stage 4, see the chapter &6Mekanism: Elite&r."
 	]
-	quest.3E49A7C3393DBF2E.quest_subtitle: "Mekanism, Fusion: D-T-Treibstoff, Laser, Strom oder Dampf."
-	quest.3E49A7C3393DBF2E.title: "&5Zünde den Fusionsreaktor"
+	quest.3E49A7C3393DBF2E.quest_subtitle: "Mekanism, fusion: D-T fuel, laser, power or steam."
+	quest.3E49A7C3393DBF2E.title: "&5Ignite the Fusion Reactor"
 	quest.3E4E61C75AEC6B2D.quest_desc: [
 		"[\"\",{\"text\":\"Hold \"},{\"keybind\":\"key.ftbultimine\",\"color\":\"yellow\"},{\"text\":\", look at a block, mine it. With Shift and mouse wheel you switch the shape: vein, tunnel 3x3, mining tunnel.\"}]"
 		""
@@ -14697,12 +14697,12 @@
 	quest.3FC6B71CB35F1EC8.quest_subtitle: "Stack in hand, right-click the obelisk."
 	quest.3FC6B71CB35F1EC8.title: "&eDeliver your cobblestone"
 	quest.3FCA85F6064E30AB.quest_desc: [
-		"&eRezept:&r Stein in die Ecken, Redstone oben und unten in der Mitte, Papier, Verstärker, Papier in der mittleren Reihe: das &6Generator-Augment&r. Rechtsklick damit auf einen Ofen von Iron Furnaces."
+		"&eRecipe:&r stone in the corners, redstone top and bottom in the middle, paper, repeater, paper in the middle row: the &6Generator Augment&r. Right click a furnace from Iron Furnaces with it."
 		""
-		"&eIron Furnaces, Generator-Augment:&r Statt zu schmelzen verbrennt der Ofen Brennstoff zu Strom, was er nimmt, zeigt EMI unter &eAugment: Generator&r. Eisen- und Kupferofen &d40 FE/t&r, Silber 100, Gold 160, Diamant 240, Smaragd 320, Kristall 360, Obsidian 500, Netherit &d1 000 FE/t&r. Offen ab Stufe 3."
+		"&eIron Furnaces, Generator Augment:&r instead of smelting, the furnace burns fuel into power, EMI shows what it takes under &eAugment: Generator&r. Iron and copper furnace &d40 FE/t&r, silver 100, gold 160, diamond 240, emerald 320, crystal 360, obsidian 500, netherite &d1,000 FE/t&r. Unlocked from stage 3."
 	]
-	quest.3FCA85F6064E30AB.quest_subtitle: "Iron Furnaces: 40 bis 1 000 FE/t, je nach Ofen."
-	quest.3FCA85F6064E30AB.title: "&6Mach einen Eisenofen zum Generator"
+	quest.3FCA85F6064E30AB.quest_subtitle: "Iron Furnaces: 40 to 1,000 FE/t, depending on the furnace."
+	quest.3FCA85F6064E30AB.title: "&6Turn an iron furnace into a generator"
 	quest.3FD4F0B8CBCD3214.quest_desc: [
 		"At the table: &cFire Essence&r, &e2 flint and steel&r, &e2 fire charges&r, &6blaze rod&r."
 		""
@@ -14971,16 +14971,16 @@
 	quest.4140EEBB772BD4AC.quest_subtitle: "The wheels under the train."
 	quest.4140EEBB772BD4AC.title: "&6Place bogeys"
 	quest.4158C1933288D1D2.quest_desc: [
-		"Stufe 3 öffnet Powah, Oritech, Ender IO, Industrial Foregoing, Flux Networks, die großen IE-Maschinen und PneumaticCraft mit Strom. Die Erzverdreifachung und die Fabriken fressen tausende FE pro Tick."
+		"Stage 3 opens Powah, Oritech, Ender IO, Industrial Foregoing, Flux Networks, the big IE machines and PneumaticCraft with power. Ore tripling and the factories eat thousands of FE per tick."
 		""
-		"&e1. Powah-Reaktor:&r 36 Reaktorblöcke, Uraninit als Brennstoff, Wasser und Eis als Kühlung. Schon der Starter macht 250 FE/t, der Blazing-Reaktor &d10 000 FE/t&r, Spirited 100 000. Das beste Verhältnis von Aufwand zu Strom in dieser Stufe."
-		"&e2. Blazing Furnator:&r 800 FE/t aus Kohle, 48 000 FE je Stück, ohne Kühlung und ohne Erz. Eine Baumfarm mit Holzkohle hängt dran, fertig."
-		"&e3. IE-Dieselgenerator:&r 4 096 FE/t aus Biodiesel, wenn die Raffinerie ohnehin läuft. Ein großer Multiblock, aber nur einer."
+		"&e1. Powah reactor:&r 36 reactor blocks, uraninite as fuel, water and ice as coolant. Even the Starter makes 250 FE/t, the Blazing reactor &d10,000 FE/t&r, Spirited 100,000. The best ratio of effort to power in this stage."
+		"&e2. Blazing Furnator:&r 800 FE/t from coal, 48,000 FE per piece, without coolant and without ore. A tree farm with charcoal hangs on it, done."
+		"&e3. IE Diesel Generator:&r 4,096 FE/t from biodiesel, if the refinery runs anyway. A big multiblock, but only one."
 		""
-		"Dazu &6Flux Networks&r als Verteilung: ein Controller, Plugs an den Generatoren, Points an den Maschinen, kein Kabel mehr quer durch die Basis."
+		"Plus &6Flux Networks&r as distribution: one controller, plugs at the generators, points at the machines, no more cables across the base."
 	]
-	quest.4158C1933288D1D2.quest_subtitle: "Das Stahlwerk braucht Kraftwerke."
-	quest.4158C1933288D1D2.title: "&e&lStufe 3: Welche Quelle wann"
+	quest.4158C1933288D1D2.quest_subtitle: "The Steel Works needs power plants."
+	quest.4158C1933288D1D2.title: "&e&lStage 3: Which Source When"
 	quest.415C88030B6FDB7C.quest_desc: [
 		"&ePowdered Gold, Emerald and Diamond&r, cloth."
 		""
@@ -15184,12 +15184,12 @@
 	quest.421EAB45386F53B8.quest_subtitle: "Quiet in the factory hall."
 	quest.421EAB45386F53B8.title: "&7Build a Muffling Upgrade"
 	quest.422BDE42CD38A916.quest_desc: [
-		"Der &6Erweiterte Solargenerator&r: vier Solargeneratoren, Legierung, Schaltkreise und ein Eisenblock, drei Blöcke hoch. Fortgeschrittene Kabel und Würfel entstehen aus den einfachen mit Infundierter Legierung und Fortschrittlichen Schaltkreisen."
+		"The &6Advanced Solar Generator&r: four Solar Generators, alloy, circuits and an iron block, three blocks tall. Advanced cables and cubes are made from the basic ones with Infused Alloy and Advanced Control Circuits."
 		""
-		"&eMekanism, Erweiterter Solargenerator:&r &d120 FE/t&r bei Tag, sechsmal der kleine. &eFortgeschrittenes Universalkabel:&r &d51 200 FE/t&r. &eFortgeschrittener Energie-Würfel:&r &d6,4 Millionen FE&r, 6 400 FE/t. Fortgeschrittene Induktionszellen speichern 25,6 Milliarden FE je Zelle, der Anschluss schafft 819 200 FE/t. Wie die ganze Matrix erst ab Stufe 4."
+		"&eMekanism, Advanced Solar Generator:&r &d120 FE/t&r by day, six times the small one. &eAdvanced Universal Cable:&r &d51,200 FE/t&r. &eAdvanced Energy Cube:&r &d6.4 million FE&r, 6,400 FE/t. Advanced Induction Cells store 25.6 billion FE per cell, the port handles 819,200 FE/t. Like the whole matrix, only from stage 4."
 	]
-	quest.422BDE42CD38A916.quest_subtitle: "Mekanism: 120 FE/t Solar, 51 200 FE/t Kabel, 6,4 Millionen FE Würfel."
-	quest.422BDE42CD38A916.title: "&5Rüste Mekanism auf Fortgeschritten"
+	quest.422BDE42CD38A916.quest_subtitle: "Mekanism: 120 FE/t solar, 51,200 FE/t cable, 6.4 million FE cube."
+	quest.422BDE42CD38A916.title: "&5Upgrade Mekanism to Advanced"
 	quest.422C7E65F845450E.quest_desc: [
 		"The Metallurgic Infuser with an installer. All three slots share one tank of infusion type, so one factory per type."
 	]
@@ -15407,12 +15407,12 @@
 	quest.4302C8F783572309.quest_subtitle: "It hunts you. So turn around."
 	quest.4302C8F783572309.title: "&8Face the Nightmare Stalker"
 	quest.4313E9F0A0D5A27F.quest_desc: [
-		"&eRezept:&r sechs Eisenbarren oben und unten, zwei Redstoneblöcke links und rechts, ein Redstone in der Mitte. Die ziehende Seite kommt an den Generator oder Speicher, Rechtsklick mit dem Schraubenschlüssel öffnet das Menü."
+		"&eRecipe:&r six iron ingots top and bottom, two redstone blocks left and right, a redstone in the middle. The extracting side goes on the generator or storage, right click with the wrench opens the menu."
 		""
-		"&ePipez, Energierohr:&r &d256 FE/t&r ohne Upgrade, Basis-Upgrade 1 024, Verbessert 8 192 (beide Stufe 2), Fortgeschritten 32 768 (Stufe 3), Ultimativ 131 072 FE/t (Stufe 4). Ein Rohr für jede Mod, siehe Kapitel &6Rohre und Router&r."
+		"&ePipez, Energy Pipe:&r &d256 FE/t&r without an upgrade, Basic Upgrade 1,024, Improved 8,192 (both stage 2), Advanced 32,768 (stage 3), Ultimate 131,072 FE/t (stage 4). One pipe for every mod, see the &6Pipes and Routers&r chapter."
 	]
-	quest.4313E9F0A0D5A27F.quest_subtitle: "Pipez, Energierohr, 256 FE/t ohne Upgrade, bis 131 072 mit."
-	quest.4313E9F0A0D5A27F.title: "&6Leg ein Stromrohr von Pipez"
+	quest.4313E9F0A0D5A27F.quest_subtitle: "Pipez, Energy Pipe, 256 FE/t without an upgrade, up to 131,072 with."
+	quest.4313E9F0A0D5A27F.title: "&6Lay a Pipez Energy Pipe"
 	quest.4313FC57036C08F2.quest_desc: [
 		"{image:kronwerke:textures/quests/shots/nether_fortress.png width:224 height:126 align:center}"
 		"Look for a &6Nether fortress&r and bring &e16 Nether bricks&r out. Keep a lookout from above for dark walls over the lava lakes."
@@ -15528,12 +15528,12 @@
 	quest.43A6A31DB3A4D41E.quest_subtitle: "Twice as much powder."
 	quest.43A6A31DB3A4D41E.title: "&eBuild a Mortar and Pestle"
 	quest.43ADA68DB1B12342.quest_desc: [
-		"&eRezept:&r Lebestein in die Ecken, Redstoneblöcke an die Seiten, ein &6Manastahlbarren&r in die Mitte. Schieß Manastöße aus einem Verbreiter hinein, der Strom geht an alle Nachbarn."
+		"&eRecipe:&r livingrock in the corners, redstone blocks on the sides, a &6manasteel ingot&r in the middle. Shoot mana bursts into it from a spreader, the power goes to all neighbors."
 		""
-		"&eBotania, Manaflussfeld:&r Brennstoff Mana, &d1 Mana = 10 FE&r. Puffer 1 280 Mana, also 12 800 FE, Abgabe bis &d1 600 FE/t&r. Ein Becken mit 1 Million Mana sind 10 Millionen FE. Der Block selbst ist frei, der Manastahl im Rezept kommt mit Stufe 2. Einen Rückweg von FE zu Mana gibt es nicht."
+		"&eBotania, Mana Fluxfield:&r fuel mana, &d1 mana = 10 FE&r. Buffer 1,280 mana, so 12,800 FE, output up to &d1,600 FE/t&r. A pool with 1 million mana is 10 million FE. The block itself is open, the manasteel in the recipe comes with stage 2. There is no way back from FE to mana."
 	]
-	quest.43ADA68DB1B12342.quest_subtitle: "Botania, Manaflussfeld, 1 Mana = 10 FE, bis 1 600 FE/t."
-	quest.43ADA68DB1B12342.title: "&dMach aus Mana Strom"
+	quest.43ADA68DB1B12342.quest_subtitle: "Botania, Mana Fluxfield, 1 mana = 10 FE, up to 1,600 FE/t."
+	quest.43ADA68DB1B12342.title: "&dTurn Mana into Power"
 	quest.43ADBB5C52E44FA0.quest_desc: [
 		"&5Pentacle:&r Sevira's Permanent Confinement."
 		"&6Bowls:&r &6Djinni Miner&r, &6Iesnium Pickaxe&r, &bSpirit Attuned Crystal&r, &cAfrit Essence&r, &6echo shard&r, &6crying obsidian&r."
@@ -15629,12 +15629,12 @@
 	quest.4410E9C1FE5C3D7B.quest_subtitle: "The deeper the fall, the harder the blow."
 	quest.4410E9C1FE5C3D7B.title: "&5Forge a Mace"
 	quest.44174E12BFA633C4.quest_desc: [
-		"Eine Hülle aus &6Turbinengehäuse&r (mindestens 5 x 5), innen Rotor mit Blättern, Rotationskomplex, Druckventile, darüber &6Elektromagnetische Spulen&r (eine je vier Blätter), Ventile in der Hülle für Dampf und Strom."
+		"A shell of &6Turbine Casing&r (at least 5 x 5), inside a rotor with blades, Rotational Complex, Pressure Dispersers, above them &6Electromagnetic Coils&r (one per four blades), valves in the shell for steam and power."
 		""
-		"&eMekanism, Industrieturbine:&r Brennstoff Dampf. Dampf kommt vom Thermoelektrischen Dampfkessel, aus Oritech über den Rotationskondensator, und ab Stufe 5 vom Spaltreaktor. Jeder Turbinenblock gibt 6,4 Millionen FE Puffer dazu, der Ausstoß hängt von Blättern, Spulen und Dampfmenge ab. Offen ab Stufe 3, siehe Kapitel &6Mekanism: Fortgeschritten&r."
+		"&eMekanism, Industrial Turbine:&r fuel steam. Steam comes from the Thermoelectric Boiler, from Oritech via the Rotary Condensentrator, and from stage 5 from the Fission Reactor. Every turbine block adds 6.4 million FE of buffer, the output depends on blades, coils and steam flow. Unlocked from stage 3, see the chapter &6Mekanism: Advanced&r."
 	]
-	quest.44174E12BFA633C4.quest_subtitle: "Mekanism, Strom aus Dampf, wächst mit dem Reaktor."
-	quest.44174E12BFA633C4.title: "&5Bau die Industrieturbine"
+	quest.44174E12BFA633C4.quest_subtitle: "Mekanism, power from steam, grows with the reactor."
+	quest.44174E12BFA633C4.title: "&5Build the Industrial Turbine"
 	quest.4421F6507C3F8FC4.quest_desc: [
 		"{image:kronwerke:textures/quests/shots/undergarden_forgotten.png width:224 height:126 align:center}"
 		"Smithing table: &6Smithing Template&r, &6Cloggrum Pickaxe&r, &6Forgotten Ingot&r. Out comes the &6Forgotten Pickaxe&r."
@@ -16952,12 +16952,12 @@
 	quest.49E952C251A80C20.quest_subtitle: "Conway's Game of Life, in mana."
 	quest.49E952C251A80C20.title: "&aPlant a Dandelifeon"
 	quest.49F297EB5E1F759F.quest_desc: [
-		"&eRezept:&r ein &6Starbuncle-Amulett&r und ein &6Wasserrad&r, formlos. Das Starbuncle aus dem Amulett steckt danach im Rad, setz es einfach an eine Welle."
+		"&eRecipe:&r a &6Starbuncle Charm&r and a &6Water Wheel&r, shapeless. The Starbuncle from the charm then sits in the wheel, just put it on a shaft."
 		""
-		"&eArs Creo, Starbuncle-Rad:&r Brennstoff keiner, &d16 RPM&r, &d16 SU pro RPM&r, also &d256 SU&r. Ein &6Goldblock&r direkt vor dem Rad treibt es auf 24 RPM und 384 SU. Es läuft im Keller, in der Wüste, überall."
+		"&eArs Creo, Starbuncle Wheel:&r fuel none, &d16 RPM&r, &d16 SU per RPM&r, so &d256 SU&r. A &6gold block&r directly in front of the wheel drives it to 24 RPM and 384 SU. It runs in the basement, in the desert, anywhere."
 	]
-	quest.49F297EB5E1F759F.quest_subtitle: "Ars Creo, 16 RPM, 256 SU, ein Starbuncle läuft im Rad."
-	quest.49F297EB5E1F759F.title: "&dSetz ein Starbuncle-Rad"
+	quest.49F297EB5E1F759F.quest_subtitle: "Ars Creo, 16 RPM, 256 SU, a Starbuncle runs in the wheel."
+	quest.49F297EB5E1F759F.title: "&dPlace a Starbuncle Wheel"
 	quest.4A055E359602E3DD.quest_desc: [
 		"Put two different materials into the &6Crude Mixer&r, like copper and iron. Out comes a &6crude alloy&r that goes into heads like a material of its own."
 		""
@@ -17211,12 +17211,12 @@
 	quest.4B423869A8D5E500.quest_subtitle: "Protection against magic."
 	quest.4B423869A8D5E500.title: "&5Consecrate a Warded Mail"
 	quest.4B49BF825D8BF19A.quest_desc: [
-		"Eine &6Energiekarte&r in einem &6Laserknoten&r zieht Strom aus dem Block an dieser Seite oder gibt ihn ab. Die Knoten verbindest du mit dem Laserschlüssel, der Strom springt als Laser von Knoten zu Knoten."
+		"An &6Energy Card&r in a &6Laser Node&r pulls power from the block on that side or pushes it out. Link the nodes with the Laser Wrench, the power jumps from node to node as a laser."
 		""
-		"&eLaserIO, Energiekarte:&r bis &d1 000 000 FE/t&r je Karte. Dieselben Knoten tragen auch Items und Flüssigkeiten, eine Leitung für alles. Offen ab Stufe 3, siehe Kapitel &6Logistik&r."
+		"&eLaserIO, Energy Card:&r up to &d1,000,000 FE/t&r per card. The same nodes also carry items and fluids, one line for everything. Unlocked from stage 3, see the chapter &6Logistics&r."
 	]
-	quest.4B49BF825D8BF19A.quest_subtitle: "LaserIO: Energiekarten in Laserknoten, bis 1 Million FE/t."
-	quest.4B49BF825D8BF19A.title: "&dSchick Strom per Laser"
+	quest.4B49BF825D8BF19A.quest_subtitle: "LaserIO: energy cards in laser nodes, up to 1 million FE/t."
+	quest.4B49BF825D8BF19A.title: "&dSend power by laser"
 	quest.4B4E9B5A5A019147.quest_desc: [
 		"The upgrade base in the middle, &6eight iron blocks&r around it."
 		""
@@ -17232,12 +17232,12 @@
 	quest.4B55AB4C0358AE0B.quest_subtitle: "Up to 64 blocks of stroke."
 	quest.4B55AB4C0358AE0B.title: "&6Push with the piston"
 	quest.4B7814CD22951FE2.quest_desc: [
-		"Der &6Kristallresonanzgenerator&r kommt an ein ME-Kabel und versorgt das Netz von selbst. Kein Brennstoff, kein Kabel von einem Kraftwerk."
+		"The &6Crystal Resonance Generator&r goes on an ME cable and powers the network by itself. No fuel, no cable from a power plant."
 		""
-		"&eApplied Energistics 2, Kristallresonanzgenerator:&r &d20 AE pro Tick&r, Tag und Nacht. Für ein kleines Lagernetz reichen ein paar Stück, und der Strom der Basis bleibt für die Maschinen. Offen ab Stufe 3, siehe Kapitel &6Applied Energistics 2&r."
+		"&eApplied Energistics 2, Crystal Resonance Generator:&r &d20 AE per tick&r, day and night. A few of them are enough for a small storage network, and the base's power stays with the machines. Unlocked from stage 3, see the chapter &6Applied Energistics 2&r."
 	]
-	quest.4B7814CD22951FE2.quest_subtitle: "Applied Energistics 2: 20 AE pro Tick ins ME-Netz, ohne Brennstoff."
-	quest.4B7814CD22951FE2.title: "&bStell einen Kristallresonanzgenerator"
+	quest.4B7814CD22951FE2.quest_subtitle: "Applied Energistics 2: 20 AE per tick into the ME network, no fuel."
+	quest.4B7814CD22951FE2.title: "&bSet up a Crystal Resonance Generator"
 	quest.4B7D1B3027AEA796.quest_desc: [
 		"&6Fluid Extractor:&r Pity, 500 FE per operation, optional."
 		"&6Latex Processing Unit:&r Pity, 20 FE/t. &6Dissolution Chamber:&r Pity, 90 FE/t."
@@ -18077,12 +18077,12 @@
 	quest.4E9C4F613B6B9900.quest_subtitle: "Bring fallen familiars back."
 	quest.4E9C4F613B6B9900.title: "&5Draw Susje's Simple Circle"
 	quest.4E9E5114F9F06BCF.quest_desc: [
-		"Der &6Riesen-Dieselmotor&r ist ein großer Multiblock aus Motorteilen, der wie der kleine mit Diesel oder Biodiesel per Rohr gefüllt wird. Ein &6Turbolader&r verdoppelt seine Drehzahl."
+		"The &6Huge Diesel Engine&r is a large multiblock of engine parts, filled by pipe with diesel or biodiesel like the small one. A &6Turbocharger&r doubles its speed."
 		""
-		"&eCreate Diesel Generators, Riesen-Dieselmotor:&r &d224 RPM&r und bis &d16 384 SU&r, so viel wie eine voll versorgte Dampfmaschine, aber bei dreieinhalbfacher Drehzahl. Dazu kommen in Stufe 3 die &6Pumpjacks&r für Rohöl und der &6Destillationsturm&r für Diesel. Offen ab Stufe 3."
+		"&eCreate Diesel Generators, Huge Diesel Engine:&r &d224 RPM&r and up to &d16,384 SU&r, as much as a fully fed steam engine, but at three and a half times the speed. Stage 3 also brings the &6Pumpjacks&r for crude oil and the &6Distillation Tower&r for diesel. Unlocked from stage 3."
 	]
-	quest.4E9E5114F9F06BCF.quest_subtitle: "Create Diesel Generators, 224 RPM, bis 16 384 SU."
-	quest.4E9E5114F9F06BCF.title: "&6Bau den Riesen-Dieselmotor"
+	quest.4E9E5114F9F06BCF.quest_subtitle: "Create Diesel Generators, 224 RPM, up to 16,384 SU."
+	quest.4E9E5114F9F06BCF.title: "&6Build the Huge Diesel Engine"
 	quest.4E9F87181606AF4A.quest_desc: [
 		"&6Four redstone&r in the corners, &6two redstone blocks&r top and bottom, &6two comparators&r on the sides, a &6drawer&r in the middle."
 		""
@@ -18197,12 +18197,12 @@
 	quest.4F162550F48675B5.quest_subtitle: "An ore that looks like netherrack."
 	quest.4F162550F48675B5.title: "&6&lMine Iesnium"
 	quest.4F4C15E347F67B71.quest_desc: [
-		"&ePneumatischer Dynamo (Kronwerke):&r ein Fortgeschrittenes Druckrohr oben, Zahnräder aus Druckeisen um einen Druckeisenbarren, unten Druckeisen, &6Einfacher Steuerschaltkreis&r, Druckeisen. &eFlux-Kompressor (Kronwerke):&r Redstone, Zahnrad, Schaltkreis, Redstoneblock, Turbinenrotor, Druckrohr, Redstone, Schmelzofen, Schaltkreis."
+		"&ePneumatic Dynamo (Kronwerke):&r an Advanced Pressure Tube on top, Compressed Iron Gears around a Compressed Iron Ingot, Compressed Iron at the bottom, &6Basic Control Circuit&r, Compressed Iron. &eFlux Compressor (Kronwerke):&r redstone, gear, circuit, block of redstone, turbine rotor, pressure tube, redstone, blast furnace, circuit."
 		""
-		"&ePneumaticCraft, Pneumatischer Dynamo:&r Brennstoff Druckluft, &d100 mL Luft = 40 FE&r, &d40 FE/t&r ohne Upgrades, Abgabe 80 FE/t. &eFlux-Kompressor:&r &d100 FE = 40 mL Luft&r, verbraucht 40 FE/t, Puffer 100 000. Beide müssen gekühlt werden, sonst sinkt der Wirkungsgrad. &eRezept auf Kronwerke:&r beide brauchen den Mekanism-Schaltkreis statt der gedruckten Platine. Offen ab Stufe 3."
+		"&ePneumaticCraft, Pneumatic Dynamo:&r fuel compressed air, &d100 mL air = 40 FE&r, &d40 FE/t&r without upgrades, output 80 FE/t. &eFlux Compressor:&r &d100 FE = 40 mL air&r, uses 40 FE/t, buffer 100,000. Both need cooling, otherwise efficiency drops. &eRecipe on Kronwerke:&r both need the Mekanism circuit instead of the printed circuit board. Unlocked from stage 3."
 	]
-	quest.4F4C15E347F67B71.quest_subtitle: "PneumaticCraft: Dynamo 40 FE/t aus Luft, Flux-Kompressor 40 FE/t zu Luft."
-	quest.4F4C15E347F67B71.title: "&bÜbersetze Druckluft und FE"
+	quest.4F4C15E347F67B71.quest_subtitle: "PneumaticCraft: Dynamo 40 FE/t from air, Flux Compressor 40 FE/t to air."
+	quest.4F4C15E347F67B71.title: "&bConvert compressed air and FE"
 	quest.4F512F0BF2B89FF9.quest_desc: [
 		"&6One cobblestone&r, &6one dirt&r and &6one stick&r, shapeless, make &efour Crude Tool Parts&r."
 		""
@@ -18265,12 +18265,12 @@
 	quest.4F86631B97461E25.quest_subtitle: "A bowl of stew, a day of escort."
 	quest.4F86631B97461E25.title: "&2Hire a Stranghoul"
 	quest.4F88EEBC3221D925.quest_desc: [
-		"Ein &6Nitro-Kristall&r entsteht in der Kugel aus Netherstern, zwei Redstoneblöcken und einem Block Blazing-Kristalle für 20 Millionen FE. Daraus Kondensatoren, dann wie gewohnt aufrüsten."
+		"A &6Nitro Crystal&r is made in the orb from a nether star, two blocks of redstone and a block of Blazing crystals for 20 million FE. Turn that into capacitors, then upgrade as usual."
 		""
-		"&ePowah, Nitro:&r Furnator und Magmator &d40 000 FE/t&r, Solar und Thermo 2 000 FE/t, Reaktor &d500 000 FE/t&r (Puffer 500 Millionen). Nitro-Kabel 1 Million FE/t, Nitro Energy Cell &d2 Milliarden FE&r mit 2 Millionen FE/t. Offen ab Stufe 4."
+		"&ePowah, Nitro:&r Furnator and Magmator &d40,000 FE/t&r, Solar and Thermo 2,000 FE/t, reactor &d500,000 FE/t&r (buffer 500 million). Nitro cable 1 million FE/t, Nitro Energy Cell &d2 billion FE&r with 2 million FE/t. Unlocked from stage 4."
 	]
-	quest.4F88EEBC3221D925.quest_subtitle: "Powah Nitro: 40 000 FE/t Furnator, 500 000 FE/t Reaktor, 2 Milliarden FE Zelle."
-	quest.4F88EEBC3221D925.title: "&bRüste Powah auf Nitro"
+	quest.4F88EEBC3221D925.quest_subtitle: "Powah Nitro: 40,000 FE/t Furnator, 500,000 FE/t reactor, 2 billion FE cell."
+	quest.4F88EEBC3221D925.title: "&bUpgrade Powah to Nitro"
 	quest.4F9187126774C459.quest_desc: [
 		"You now know the book, EMI, the map, the rules and the keys. Everything else you learn while playing, and nobody expects you to know 230 mods."
 		""
@@ -18282,12 +18282,12 @@
 	quest.4F9187126774C459.title: "&6Ask for help"
 	quest.4F923076C81A87E4.quest_desc: [
 		"{image:kronwerke:textures/quests/shots/create_water_wheel.png width:224 height:126 align:center}"
-		"&eRezept:&r acht &6Bretter&r um eine &6Welle&r. Stell das Rad so, dass Wasser an seinen Schaufeln vorbeifließt, die Welle zeigt zur Seite."
+		"&eRecipe:&r eight &6planks&r around a &6shaft&r. Place the wheel so that water flows past its paddles, the shaft points to the side."
 		""
-		"&eCreate, Wasserrad:&r Brennstoff keiner, &d8 RPM&r, &d256 SU&r, kein Puffer. Mehrere Räder auf einer Welle addieren die SU, nicht die Drehzahl. Offen ab Stufe 1."
+		"&eCreate, Water Wheel:&r fuel none, &d8 RPM&r, &d256 SU&r, no buffer. Several wheels on one shaft add up the SU, not the speed. Open from stage 1."
 	]
-	quest.4F923076C81A87E4.quest_subtitle: "Create, 8 RPM, 256 SU, braucht fließendes Wasser."
-	quest.4F923076C81A87E4.title: "&6Bau ein Wasserrad"
+	quest.4F923076C81A87E4.quest_subtitle: "Create, 8 RPM, 256 SU, needs flowing water."
+	quest.4F923076C81A87E4.title: "&6Build a Water Wheel"
 	quest.4F989279349B6783.quest_desc: [
 		"&6Ultimate Tier Installer:&r Atomic Alloy in the corners, Ultimate Control Circuits at the top and bottom, diamonds left and right, a plank."
 		""
@@ -19303,12 +19303,12 @@
 	quest.54AF6ABEE259F331.title: "&5&lBuild an ME Controller"
 	quest.54B3D1FDD28C9434.quest_desc: [
 		"{image:kronwerke:textures/quests/shots/list_power_mekmm_large.png width:224 height:126 align:center}"
-		"Der &6Große Wärmegenerator&r und der &6Große Windgenerator&r sind die Riesenversionen der Mekanism-Generatoren, der &6Große Gasgenerator&r hat einen Tank von 180 000 mB. Alle drei große Blöcke, der Windgenerator darf keinen zweiten direkt neben sich haben."
+		"The &6Large Heat Generator&r and the &6Large Wind Generator&r are the giant versions of the Mekanism generators, the &6Large Gas-Burning Generator&r has a tank of 180,000 mB. All three are large blocks, the Wind Generator must not have a second one right next to it."
 		""
-		"&eMekanism More Machine, Großer Wärmegenerator:&r &d400 FE/t&r aus Brennstoff, &d140 FE/t je Lavaseite&r, bis 81 Seiten, im Nether 300 FE/t extra, Tank 240 000 mB. &eGroßer Windgenerator:&r &d900 000 FE/t&r unten, &d1 500 000 FE/t&r ganz oben, ohne Brennstoff. Der stärkste Dauerläufer ohne Brennstoff im Pack. Offen ab Stufe 4. Der &6Solar-Wärmegenerator&r (Reflektoren heizen Kühlmittel) ist schon ab Stufe 3 offen."
+		"&eMekanism More Machine, Large Heat Generator:&r &d400 FE/t&r from fuel, &d140 FE/t per lava side&r, up to 81 sides, 300 FE/t extra in the Nether, tank 240,000 mB. &eLarge Wind Generator:&r &d900,000 FE/t&r at the bottom, &d1,500,000 FE/t&r at the very top, no fuel. The strongest fuel free generator that never stops in the pack. Unlocked from stage 4. The &6Solar Heat Generator&r (reflectors heat coolant) is already open from stage 3."
 	]
-	quest.54B3D1FDD28C9434.quest_subtitle: "Mekanism More Machine: 400 FE/t plus Lava, bis 1,5 Millionen FE/t Wind."
-	quest.54B3D1FDD28C9434.title: "&5Stell die großen Generatoren"
+	quest.54B3D1FDD28C9434.quest_subtitle: "Mekanism More Machine: 400 FE/t plus lava, up to 1.5 million FE/t wind."
+	quest.54B3D1FDD28C9434.title: "&5Set up the large generators"
 	quest.54C48D8C04913A6E.quest_desc: [
 		"{image:kronwerke:textures/quests/shots/mekanism_advanced_cnc_stamper.png width:224 height:126 align:center}"
 		"&6Mekanism MoreMachine:&r a Steel Casing in the middle, pistons left and right, circuits at the top and bottom, redstone in the corners."
@@ -20132,16 +20132,16 @@
 	quest.5836D48F1334F4B0.quest_subtitle: "Mekanism: a tool with power."
 	quest.5836D48F1334F4B0.title: "&bBuild the Atomic Disassembler"
 	quest.5837F176723AB096.quest_desc: [
-		"Mit dem Nether öffnen Mekanism, Immersive Engineering, Create-Messing, Just Dire Things und Productive Bees. Ab jetzt gibt es FE."
+		"With the Nether, Mekanism, Immersive Engineering, Create Brass, Just Dire Things and Productive Bees open. From now on there is FE."
 		""
-		"&e1. Wärmegenerator von Mekanism in Lava:&r Eisen, Osmium, Kupfer, Bretter. 80 FE/t mit Kohle, dazu 12 FE/t je Lavaseite, ohne dass die Lava weniger wird. Billig und sofort, genug für drei bis vier Grundmaschinen."
-		"&e2. Generator von Just Dire Things mit Primal Coal:&r 120 FE/t aus einem Stück, 1 Million FE Puffer, gibt 1 000 FE/t ab. Weniger Nachlegen als alles andere in dieser Stufe."
-		"&e3. Dampfkessel mit Alternator:&r Eine Dampfmaschine liefert 16 384 SU, ein Alternator macht daraus bei 256 RPM 360 FE/t. Wer schon einen Kessel für Messing hat, bekommt den Strom fast geschenkt."
+		"&e1. Mekanism Heat Generator in lava:&r iron, osmium, copper, planks. 80 FE/t with coal, plus 12 FE/t per lava side, without the lava getting less. Cheap and instant, enough for three to four basic machines."
+		"&e2. Just Dire Things generator with Primal Coal:&r 120 FE/t from one piece, 1 million FE buffer, gives out 1,000 FE/t. Less refueling than anything else in this stage."
+		"&e3. Steam boiler with Alternator:&r one steam engine delivers 16,384 SU, an Alternator turns that into 360 FE/t at 256 RPM. Whoever already has a boiler for brass gets the power almost for free."
 		""
-		"Für richtig viel: der &6Gasgenerator&r mit Ethen aus dem Druckreaktor, bis 72 000 FE/t. Das ist ein Projekt für das Ende der Stufe."
+		"For really a lot: the &6Gas-Burning Generator&r with ethylene from the Pressurized Reaction Chamber, up to 72,000 FE/t. That is a project for the end of the stage."
 	]
-	quest.5837F176723AB096.quest_subtitle: "Der erste Strom. Drei Wege, die sich lohnen."
-	quest.5837F176723AB096.title: "&e&lStufe 2: Welche Quelle wann"
+	quest.5837F176723AB096.quest_subtitle: "The first power. Three ways that pay off."
+	quest.5837F176723AB096.title: "&e&lStage 2: Which Source When"
 	quest.583982681E14CDD1.quest_desc: [
 		"A &6hay bale&r between two &6planks&r."
 		""
@@ -20387,14 +20387,14 @@
 	quest.591E4839C97A3B2A.quest_subtitle: "Jede Baumart für einen Smaragd."
 	quest.591E4839C97A3B2A.title: "&a&lKauf einen Setzling am Markt"
 	quest.591FF346477C851E.quest_desc: [
-		"Zwei Stahlbarren mit Redstone dazwischen geben acht &6Einfache Universalkabel&r. Der &6Einfache Energie-Würfel&r: zwei Energietabletts, zwei Eisen, vier Redstone um ein Stahlgehäuse."
+		"Two steel ingots with redstone between them give eight &6Basic Universal Cables&r. The &6Basic Energy Cube&r: two Energy Tablets, two iron, four redstone around a steel casing."
 		""
-		"&eMekanism, Einfaches Universalkabel:&r &d3 200 FE/t&r. Fortgeschritten 51 200 FE/t (Stufe 3), Elite 409 600 und Ultimativ 3 276 800 FE/t (Stufe 4). Kabel verbinden sich mit jedem FE-Gerät im Pack."
+		"&eMekanism, Basic Universal Cable:&r &d3,200 FE/t&r. Advanced 51,200 FE/t (stage 3), Elite 409,600 and Ultimate 3,276,800 FE/t (stage 4). Cables connect to every FE device in the pack."
 		""
-		"&eMekanism, Einfacher Energie-Würfel:&r &d1,6 Millionen FE&r, Abgabe 1 600 FE/t. Fortgeschritten 6,4 Millionen und 6 400 FE/t (Stufe 3), Elite 25,6 Millionen und 25 600, Ultimativ 102,4 Millionen und 102 400 FE/t (Stufe 4). Die &6Induktionsmatrix&r (Gehäuse, Zellen, Anschlüsse) speichert schon mit einfachen Zellen &d3,2 Milliarden FE&r je Zelle, der einfache Anschluss schafft 102 400 FE/t. Kommt erst in Stufe 4: der Anschluss braucht Elite-Schaltkreise, die Zellen Lithiumstaub aus dem Kristallisator, siehe Kapitel &6Mekanism: Elite&r."
+		"&eMekanism, Basic Energy Cube:&r &d1.6 million FE&r, output 1,600 FE/t. Advanced 6.4 million and 6,400 FE/t (stage 3), Elite 25.6 million and 25,600, Ultimate 102.4 million and 102,400 FE/t (stage 4). The &6Induction Matrix&r (casing, cells, ports) already stores &d3.2 billion FE&r per cell with basic cells, the basic port handles 102,400 FE/t. Only comes in stage 4: the port needs elite circuits, the cells lithium dust from the crystallizer, see the chapter &6Mekanism: Elite&r."
 	]
-	quest.591FF346477C851E.quest_subtitle: "Mekanism: 3 200 FE/t im Kabel, 1,6 Millionen FE im Würfel."
-	quest.591FF346477C851E.title: "&6Leg Universalkabel und Energie-Würfel"
+	quest.591FF346477C851E.quest_subtitle: "Mekanism: 3,200 FE/t in the cable, 1.6 million FE in the cube."
+	quest.591FF346477C851E.title: "&6Lay Universal Cables and Energy Cubes"
 	quest.592E1500C47B722A.quest_desc: [
 		"&eThe way:&r The &bReality Marble&r scroll from Mahou Tsukai teleports you to a fixed spot in a small world of its own full of swords. It costs &d4,000 mana&r per use."
 		""
@@ -21402,12 +21402,12 @@
 	quest.5DF59C92B3D28C4C.quest_subtitle: "The same storage, made from essence."
 	quest.5DF59C92B3D28C4C.title: "&2Build a Fae Mana Circuit"
 	quest.5DF702AB09013EB4.quest_desc: [
-		"&eRezept:&r ein &6Honigeimer&r oben, ein &6Ofen&r in der Mitte, sieben Eisenbarren. Honig kommt per Rohr, Flasche, Eimer oder Honigblock hinein."
+		"&eRecipe:&r a &6Honey Bucket&r on top, a &6furnace&r in the middle, seven iron ingots. Honey goes in by pipe, bottle, bucket or honey block."
 		""
-		"&eProductive Bees, Honiggenerator:&r Brennstoff Honig, &d2 mB pro Tick&r für &d60 FE/t&r, ein Eimer ist 30 000 FE. Ein paar Bienenstöcke mit Zentrifuge davor, und die Zuchtkammer (50 FE/t) versorgt sich selbst. Offen ab Stufe 2, siehe Kapitel &6Productive Bees&r."
+		"&eProductive Bees, Honey Generator:&r fuel honey, &d2 mB per tick&r for &d60 FE/t&r, one bucket is 30,000 FE. A few beehives with a centrifuge in front, and the Breeding Chamber (50 FE/t) supplies itself. Open from stage 2, see the &6Productive Bees&r chapter."
 	]
-	quest.5DF702AB09013EB4.quest_subtitle: "Productive Bees, Honiggenerator, 60 FE/t aus 2 mB Honig pro Tick."
-	quest.5DF702AB09013EB4.title: "&6Verbrenne Honig"
+	quest.5DF702AB09013EB4.quest_subtitle: "Productive Bees, Honey Generator, 60 FE/t from 2 mB of honey per tick."
+	quest.5DF702AB09013EB4.title: "&6Burn Honey"
 	quest.5DFC4452A45FBEC6.quest_desc: [
 		"A &6Steel Casing&r in the middle, 2 &6antimatter pellets&r left and right, 2 &6Ultimate Control Circuits&r at the top and bottom, 4 &6Atomic Alloys&r in the corners."
 		""
@@ -21639,12 +21639,12 @@
 	quest.5F10428E7D8BBB53.quest_subtitle: "Settings stay on the device."
 	quest.5F10428E7D8BBB53.title: "&7Move Devices"
 	quest.5F2B9B0085B033A8.quest_desc: [
-		"Kupplung, &6Induktionsrotor&r und &6Kollektor&r auf eine Welle, Wicklungen aus Kupferspulen daneben, einen kleinen Erregerstrom hinein. Die Ponder-Szenen (W) zeigen jeden Schritt."
+		"Coupling, &6induction rotor&r and &6collector&r on a shaft, windings of copper spools next to it, a small excitation current in. The Ponder scenes (W) show every step."
 		""
-		"&ePower Grid, Generator:&r Brennstoff Rotation. Er rechnet nicht in FE, sondern in &dVolt und Ampere&r, Leistung = Spannung mal Strom, lange Drähte verlieren. Über den &6Adapter&r (Zinkblech, Kupferbleche, Legierung) versorgt er FE-Maschinen, und das &6Solarmodul&r von Power Grid liefert tagsüber Spannung ohne Welle. Offen ab Stufe 2, siehe Kapitel &6Create: Messing&r."
+		"&ePower Grid, Generator:&r fuel rotation. It does not count in FE but in &dvolts and amperes&r, power = voltage times current, long wires lose. Via the &6Adapter&r (zinc sheet, copper sheets, alloy) it powers FE machines, and Power Grid's &6solar panel&r delivers voltage during the day without a shaft. Open from stage 2, see the chapter &6Create: Brass&r."
 	]
-	quest.5F2B9B0085B033A8.quest_subtitle: "Power Grid, Volt und Ampere, per Adapter auch FE."
-	quest.5F2B9B0085B033A8.title: "&6Wickle einen Power-Grid-Generator"
+	quest.5F2B9B0085B033A8.quest_subtitle: "Power Grid, volts and amperes, FE too via adapter."
+	quest.5F2B9B0085B033A8.title: "&6Wind a Power Grid Generator"
 	quest.5F349A5EDC7882FF.quest_desc: [
 		"&aFlourishing log&r, &6golden apple&r, &5Abjuration Essence&r."
 		""
@@ -21965,14 +21965,14 @@
 	quest.606EE253AF4C1C9A.quest_subtitle: "Reinforced Deepslate and the Heart of the Deep. Stage 3."
 	quest.606EE253AF4C1C9A.title: "&3Open the Otherside"
 	quest.6076914C41D62B34.quest_desc: [
-		"&eRezept auf Kronwerke:&r Der &6Generator&r ist Ferricore in den Ecken, Redstone oben und unten, Kohle links und rechts, ein &6Einfacher Steuerschaltkreis&r in der Mitte. Der &6Brennstoffgenerator&r hat dort Blazegold, Redstone, Eimer und einen Schmelzofen. &6Taschengenerator&r: Rechtsklick, Kohle rein, lädt alles in deinem Inventar."
+		"&eRecipe on Kronwerke:&r The &6generator&r is Ferricore in the corners, redstone top and bottom, coal left and right, a &6Basic Control Circuit&r in the middle. The &6Fuel Generator&r has Blazegold, redstone, buckets and a blast furnace there. &6Pocket Generator&r: right click, coal in, charges everything in your inventory."
 		""
-		"&eJust Dire Things, Generator:&r 15 FE je Brenntick, vierfache Brenngeschwindigkeit. Kohle &d60 FE/t&r (24 000 FE), Primal Coal &d120 FE/t&r (72 000), Blaze Ember &d240 FE/t&r (216 000). Puffer &d1 Million FE&r, Abgabe 1 000 FE/t an alle Nachbarn."
+		"&eJust Dire Things, Generator:&r 15 FE per burn tick, four times the burn speed. Coal &d60 FE/t&r (24,000 FE), Primal Coal &d120 FE/t&r (72,000), Blaze Ember &d240 FE/t&r (216,000). Buffer &d1 million FE&r, output 1,000 FE/t to all neighbors."
 		""
-		"&eBrennstoffgenerator:&r flüssiger Brennstoff aus Blaze Ember, &d450 FE je mB&r, also 450 000 FE pro Eimer, Abgabe &d5 000 FE/t&r, Puffer 5 Millionen. Der &6Energiesender&r schickt 1 000 FE/t drahtlos, mit 1 Prozent Verlust je Block. Offen ab Stufe 2, siehe Kapitel &6Just Dire Things&r."
+		"&eFuel Generator:&r liquid fuel from Blaze Ember, &d450 FE per mB&r, so 450,000 FE per bucket, output &d5,000 FE/t&r, buffer 5 million. The &6Energy Transmitter&r sends 1,000 FE/t wirelessly, with 1 percent loss per block. Open from stage 2, see the &6Just Dire Things&r chapter."
 	]
-	quest.6076914C41D62B34.quest_subtitle: "Just Dire Things: 60 bis 240 FE/t fest, 5 000 FE/t flüssig."
-	quest.6076914C41D62B34.title: "&6Heiz mit Primal Coal"
+	quest.6076914C41D62B34.quest_subtitle: "Just Dire Things: 60 to 240 FE/t solid, 5,000 FE/t liquid."
+	quest.6076914C41D62B34.title: "&6Heat with Primal Coal"
 	quest.60786E7399FA932A.quest_desc: [
 		"The &cAptrgangr&r (160 health, armor 10, 18 damage, throws axe blades for 8) drops the &6Strange Key&r. With it you open the &6Door of Seal&r down in the prison."
 		""
@@ -22670,12 +22670,12 @@
 	quest.63461E2902C31DC7.quest_subtitle: "128 buckets, stackable."
 	quest.63461E2902C31DC7.title: "&9Build a Large Fluid Tank"
 	quest.63464378907BF306.quest_desc: [
-		"&6Primitiver Heizgenerator:&r Bruchstein in die Ecken, Gold oben, Eisengitter an den Seiten, Ofen unten, das Pity-Maschinengehäuse in die Mitte. Der &6Biokraftstoffgenerator&r braucht Biokraftstoff aus dem Bioreaktor."
+		"&6Pitiful Generator:&r cobblestone in the corners, gold on top, iron bars on the sides, furnace at the bottom, the Pity Machine Frame in the middle. The &6Biofuel Generator&r needs biofuel from the Bioreactor."
 		""
-		"&eIndustrial Foregoing, Primitiver Heizgenerator:&r Brennstoff alles Brennbare, &d30 FE/t&r, Puffer 100 000, Abgabe 1 000 FE/t. &eBiokraftstoffgenerator:&r &d160 FE/t&r aus Biokraftstoff (Tank 4 000 mB), Puffer 1 Million, hört auf, wenn er voll ist. Offen ab Stufe 3, siehe Kapitel &6Industrial Foregoing&r."
+		"&eIndustrial Foregoing, Pitiful Generator:&r fuel anything that burns, &d30 FE/t&r, buffer 100,000, output 1,000 FE/t. &eBiofuel Generator:&r &d160 FE/t&r from biofuel (tank 4,000 mB), buffer 1 million, stops when full. Unlocked from stage 3, see the chapter &6Industrial Foregoing&r."
 	]
-	quest.63464378907BF306.quest_subtitle: "Industrial Foregoing: 30 FE/t aus Kohle, 160 FE/t aus Biokraftstoff."
-	quest.63464378907BF306.title: "&aHeiz den Primitiven Heizgenerator"
+	quest.63464378907BF306.quest_subtitle: "Industrial Foregoing: 30 FE/t from coal, 160 FE/t from biofuel."
+	quest.63464378907BF306.title: "&aFire up the Pitiful Generator"
 	quest.6349AFD22B005B3E.quest_desc: [
 		"&eRecipe:&r a &6Network IO Port&r on top, transistor, &6GPS Tool&r, transistor in the middle, transistor, &6Network Data Storage&r, transistor at the bottom."
 		""
@@ -22854,20 +22854,20 @@
 	quest.63FFA1520C119810.title: "&aChecklist: Animals"
 	quest.6406994A9FBB1145.quest_desc: [
 		"{image:kronwerke:textures/quests/shots/list_power_mek_heat.png width:224 height:126 align:center}"
-		"&eRezept:&r drei Eisen oben, Bretter links und rechts vom Osmiumbarren, unten Kupfer, Ofen, Kupfer. Leg Kohle hinein oder stell ihn in ein Lavabecken, am besten beides."
+		"&eRecipe:&r three iron on top, planks left and right of the osmium ingot, at the bottom copper, furnace, copper. Put coal in or place it in a lava pool, best both."
 		""
-		"&eMekanism, Wärmegenerator:&r Brennstoff alles Brennbare, &d80 FE/t&r aktiv. Jede angrenzende Lavaseite &d12 FE/t&r dazu, bis sieben Seiten, im Nether noch einmal 40 FE/t obendrauf. Ein Lavaeimer im Tank (24 000 mB) wird dagegen verbraucht. Puffer klein, Abgabe an alle Nachbarn. Offen ab Stufe 2, siehe Kapitel &6Mekanism&r."
+		"&eMekanism, Heat Generator:&r fuel anything burnable, &d80 FE/t&r active. Every adjacent lava side adds &d12 FE/t&r, up to seven sides, in the Nether another 40 FE/t on top. A lava bucket in the tank (24,000 mB) on the other hand gets used up. Small buffer, outputs to all neighbors. Open from stage 2, see the &6Mekanism&r chapter."
 	]
-	quest.6406994A9FBB1145.quest_subtitle: "Mekanism, 80 FE/t aus Brennstoff plus 12 FE/t je Lavaseite."
-	quest.6406994A9FBB1145.title: "&6Stell einen Wärmegenerator in Lava"
+	quest.6406994A9FBB1145.quest_subtitle: "Mekanism, 80 FE/t from fuel plus 12 FE/t per lava side."
+	quest.6406994A9FBB1145.title: "&6Put a Heat Generator in Lava"
 	quest.6416C10E6A9873E6.quest_desc: [
 		"{image:kronwerke:textures/quests/shots/list_power_nc_passive.png width:224 height:126 align:center}"
-		"Die &6Solarzellen&r brauchen Himmel über sich, die &6RTGs&r nur einen Platz und ein Kabel. Beide laufen, bis du sie abbaust. RTGs strahlen, also Geigerzähler und Abstand."
+		"The &6Solar Panels&r need sky above them, the &6RTGs&r only a spot and a cable. Both run until you mine them. RTGs are radioactive, so bring a Geiger counter and keep your distance."
 		""
-		"&eNuclearCraft, Solarzellen:&r Basic &d28 FE/t&r, Advanced 112, DU 448, Elite &d1 792 FE/t&r, nur bei Tag. &eRTGs:&r Uran &d112 FE/t&r, Americium 448, Plutonium 1 792, Californium &d4 096 FE/t&r, Tag und Nacht, ohne Brennstoff und ohne Kühlung. Americium, Plutonium und Californium kommen aus abgebranntem Brennstoff. &eBatterien:&r Lithium-Ionen-Batterien in vier Stufen als Puffer. Offen ab Stufe 4, siehe Kapitel &6NuclearCraft&r."
+		"&eNuclearCraft, Solar Panels:&r Basic &d28 FE/t&r, Advanced 112, DU 448, Elite &d1,792 FE/t&r, by day only. &eRTGs:&r uranium &d112 FE/t&r, americium 448, plutonium 1,792, californium &d4,096 FE/t&r, day and night, with no fuel and no cooling. Americium, plutonium and californium come from depleted fuel. &eBatteries:&r lithium ion batteries in four tiers as a buffer. Unlocked from stage 4, see the chapter &6NuclearCraft&r."
 	]
-	quest.6416C10E6A9873E6.quest_subtitle: "NuclearCraft: 28 bis 1 792 FE/t Sonne, 112 bis 4 096 FE/t RTG, für immer."
-	quest.6416C10E6A9873E6.title: "&aLeg Solarzellen und RTGs"
+	quest.6416C10E6A9873E6.quest_subtitle: "NuclearCraft: 28 to 1,792 FE/t sun, 112 to 4,096 FE/t RTG, forever."
+	quest.6416C10E6A9873E6.title: "&aLay out solar panels and RTGs"
 	quest.641773C1B4BF6436.quest_desc: [
 		"A crafting CPU as a multiblock, at most &e7 by 7 by 7&r on this server. Outside &6Quantum Computer Structural Glass&r, inside the &6core&r, units, storage, accelerators."
 		""
@@ -23287,12 +23287,12 @@
 	quest.661593931F9FC5C9.quest_subtitle: "Every stack counts, even a small one."
 	quest.661593931F9FC5C9.title: "&6Deliver something at the obelisk"
 	quest.661D0642B6785157.quest_desc: [
-		"&eRezept:&r acht &6Bretter&r um ein fertiges &6Wasserrad&r. Es ist 3 x 3 Blöcke groß und will Wasser an seinem ganzen Rand."
+		"&eRecipe:&r eight &6planks&r around a finished &6Water Wheel&r. It is 3 x 3 blocks big and wants water along its whole rim."
 		""
-		"&eCreate, Großes Wasserrad:&r Brennstoff keiner, &d4 RPM&r, &d512 SU&r. Langsam, aber doppelt so stark wie das kleine, und ein Zahnradpaar macht aus 4 RPM wieder 8."
+		"&eCreate, Large Water Wheel:&r fuel none, &d4 RPM&r, &d512 SU&r. Slow, but twice as strong as the small one, and a pair of cogwheels turns 4 RPM back into 8."
 	]
-	quest.661D0642B6785157.quest_subtitle: "Create, 4 RPM, 512 SU, drei Blöcke groß."
-	quest.661D0642B6785157.title: "&6Bau ein großes Wasserrad"
+	quest.661D0642B6785157.quest_subtitle: "Create, 4 RPM, 512 SU, three blocks big."
+	quest.661D0642B6785157.title: "&6Build a Large Water Wheel"
 	quest.661D89EE5F6C7FD9.quest_desc: [
 		"&68 chiseled stone bricks&r around a &6netherite ingot&r make a &6lodestone&r. Right click it with a &6compass&r and it becomes a lodestone compass."
 		""
@@ -23504,12 +23504,12 @@
 	quest.67350EBAE878C500.quest_subtitle: "Superheated means double brass."
 	quest.67350EBAE878C500.title: "&6Bake a blaze cake"
 	quest.674206390ACA1F92.quest_desc: [
-		"&6Reaktorkern&r, vier &6Stabilisatoren&r und ein &6Energieinjektor&r, alles erst nach dem Chaoswächter. Erwachtes Draconium als Brennstoff, mit dem Injektor aufladen, aktivieren, dann das Eindämmungsfeld dauerhaft füttern."
+		"&6Reactor Core&r, four &6Stabilizers&r and an &6Energy Injector&r, all only after the Chaos Guardian. Awakened Draconium as fuel, charge with the injector, activate, then keep feeding the containment field."
 		""
-		"&eDraconic Evolution, Reaktor:&r Brennstoff Erwachtes Draconium, aus dem nach und nach Chaos wird. Der Ausstoß steigt mit Temperatur und Sättigung in die Millionen FE/t, der Injektor braucht dafür ständig einen Teil zurück. Fällt das Feld auf null, reißt die Explosion einen Krater, die große Explosion ist hier &cnicht abgeschaltet&r. Offen ab Stufe 5, siehe Kapitel &6Draconic: Erwacht und Chaos&r."
+		"&eDraconic Evolution, Reactor:&r fuel Awakened Draconium, which slowly turns into chaos. The output rises with temperature and saturation into millions of FE/t, and the injector constantly needs part of it back. If the field drops to zero, the explosion tears out a crater, the big explosion is &cnot disabled&r here. Unlocked from stage 5, see the chapter &6Draconic: Awakened and Chaos&r."
 	]
-	quest.674206390ACA1F92.quest_subtitle: "Draconic Evolution, Reaktor: riesiger Ausstoß, riesige Explosion."
-	quest.674206390ACA1F92.title: "&cStarte den Drakonischen Reaktor"
+	quest.674206390ACA1F92.quest_subtitle: "Draconic Evolution, Reactor: huge output, huge explosion."
+	quest.674206390ACA1F92.title: "&cStart the Draconic Reactor"
 	quest.674BFEB3C5381E6C.quest_desc: [
 		"&eMining:&r Projectile, Break, Amplify, Pickup. &eLight:&r Projectile, Magelight. &eBridge:&r Projectile, Mageblock."
 		"&eMelee:&r Touch, Harm, Amplify, Amplify. &eRanged:&r Projectile, Harm, Amplify. &eField:&r Touch, Harvest."
@@ -23587,12 +23587,12 @@
 	quest.677B8B1F5C5139D6.quest_subtitle: "The loot without the mob."
 	quest.677B8B1F5C5139D6.title: "&cBuild a Loot Collector"
 	quest.6790BE9A0C937979.quest_desc: [
-		"&6Applied Flux&r bringt Speicherzellen für Strom: Sie stecken wie Item-Zellen im ME-Laufwerk. Der &6Flux Accessor&r am Netz nimmt FE auf und gibt es wieder ab, wie ein großer Akku."
+		"&6Applied Flux&r adds storage cells for power: they go into the ME drive like item cells. The &6Flux Accessor&r on the network takes FE in and hands it out again, like a big battery."
 		""
-		"&eApplied Flux:&r &d1 048 576 FE pro Byte&r Zellenspeicher, der Flux Accessor hat keine Durchsatzgrenze. Das ME-Netz selbst lädt er nicht, dafür bleibt der Kristallresonanzgenerator. Offen ab Stufe 3, größere Zellen ab Stufe 4 und 5."
+		"&eApplied Flux:&r &d1,048,576 FE per byte&r of cell storage, the Flux Accessor has no throughput limit. It does not power the ME network itself, that is still the Crystal Resonance Generator's job. Unlocked from stage 3, larger cells from stages 4 and 5."
 	]
-	quest.6790BE9A0C937979.quest_subtitle: "Applied Flux: FE-Zellen im ME-Laufwerk, über eine Million FE je Byte."
-	quest.6790BE9A0C937979.title: "&bLager Strom im ME-Netz"
+	quest.6790BE9A0C937979.quest_subtitle: "Applied Flux: FE cells in the ME drive, over a million FE per byte."
+	quest.6790BE9A0C937979.title: "&bStore power in the ME network"
 	quest.67A177EC4C84D738.quest_desc: [
 		"Generating flowers consume something and turn it into &dmana&r. They pass it on to the nearest &6Mana Spreader&r, which they bind to on their own when planted."
 		""
@@ -23999,12 +23999,12 @@
 	quest.698F03C1F29CA1B2.quest_subtitle: "It only exists through trade."
 	quest.698F03C1F29CA1B2.title: "&9Get the PCB Blueprint"
 	quest.698F46D26E3952FD.quest_desc: [
-		"&6Solargenerator:&r drei Solarmodule auf Infundierter Legierung, Eisen, Osmium und einem Energietablett. &6Windgenerator:&r Osmium, Legierung, zwei Energietabletts und ein Schaltkreis, braucht freien Himmel über sich."
+		"&6Solar Generator:&r three solar panels on Infused Alloy, iron, osmium and an Energy Tablet. &6Wind Generator:&r osmium, alloy, two Energy Tablets and a circuit, needs open sky above it."
 		""
-		"&eMekanism, Solargenerator:&r &d20 FE/t&r bei Tag und freiem Himmel, nachts und im Regen nichts. &eWindgenerator:&r &d24 FE/t&r unten ab Y 24, &d192 FE/t&r ganz oben, steigt mit der Höhe. Beide ohne Brennstoff. Offen ab Stufe 2. Der &6Erweiterte Solargenerator&r mit 120 FE/t kommt in Stufe 3."
+		"&eMekanism, Solar Generator:&r &d20 FE/t&r by day under open sky, nothing at night and in rain. &eWind Generator:&r &d24 FE/t&r low from Y 24, &d192 FE/t&r at the very top, rises with height. Both without fuel. Open from stage 2. The &6Advanced Solar Generator&r with 120 FE/t comes in stage 3."
 	]
-	quest.698F46D26E3952FD.quest_subtitle: "Mekanism, 20 FE/t Sonne, 24 bis 192 FE/t Wind."
-	quest.698F46D26E3952FD.title: "&6Bau Solar- und Windgenerator"
+	quest.698F46D26E3952FD.quest_subtitle: "Mekanism, 20 FE/t sun, 24 to 192 FE/t wind."
+	quest.698F46D26E3952FD.title: "&6Build Solar and Wind Generators"
 	quest.69929D91298A3292.quest_desc: [
 		"In the plant, again at &e30 to 60 degrees&r: &b100 mB of Yeast Culture&r and a &6sugar&r give &b50 mB of ethanol&r. An apple gives just as much, a potato half. Fermentation warms the plant itself, keep an eye on the temperature."
 		""
@@ -24808,12 +24808,12 @@
 	quest.6D8713C88B54A04A.quest_subtitle: "Slime from slime chunks."
 	quest.6D8713C88B54A04A.title: "&6Plant a Narslimmus"
 	quest.6D87610761B17DE3.quest_desc: [
-		"Eine &6Energiebatterie&r und ein &6Ofen&r formlos ergeben den &6Kohlegenerator&r. Kohle hinein, Strom an die Nachbarn oder ins Integrated-Netz."
+		"An &6Energy Battery&r and a &6Furnace&r, shapeless, give the &6Coal Generator&r. Coal goes in, power goes to its neighbours or into the Integrated network."
 		""
-		"&eIntegrated Dynamics, Kohlegenerator:&r Brennstoff alles Brennbare, &d20 FE/t&r. Die &6Energiebatterie&r speichert &d1 Million FE&r und gibt mindestens 2 000 FE/t ab. Beides ist eher für das eigene Kabelnetz von Integrated Dynamics gedacht als für ein Kraftwerk. Offen ab Stufe 3."
+		"&eIntegrated Dynamics, Coal Generator:&r fuel anything that burns, &d20 FE/t&r. The &6Energy Battery&r stores &d1 million FE&r and outputs at least 2,000 FE/t. Both are meant more for the Integrated Dynamics cable network than for a power plant. Unlocked from stage 3."
 	]
-	quest.6D87610761B17DE3.quest_subtitle: "Integrated Dynamics, 20 FE/t, dazu die Energiebatterie."
-	quest.6D87610761B17DE3.title: "&aStell den Kohlegenerator"
+	quest.6D87610761B17DE3.quest_subtitle: "Integrated Dynamics, 20 FE/t, plus the Energy Battery."
+	quest.6D87610761B17DE3.title: "&aSet up the Coal Generator"
 	quest.6D9190ECBF886CFE.quest_desc: [
 		"&eSash of the Traveller&r (stage 2): manasteel, leather and the runes of earth and air. Walk faster, jump higher, step up blocks like stairs, less fall damage, for a trickle of mana."
 		"&eSash of the Wanderer&r (stage 2): sash, map, pasture seeds, sugar. The longer you run, the faster you get."
@@ -25820,16 +25820,16 @@
 	quest.7242970D694B0A03.quest_subtitle: "Set it once, paste it everywhere."
 	quest.7242970D694B0A03.title: "&7Copy Machine Settings"
 	quest.724DE8D2EAF33DAA.quest_desc: [
-		"Stufe 4 bringt Powah Nitro, Mekanism Elite und Ultimativ mit der Fusion, NuclearCraft, Draconic Evolution und die großen Generatoren von Mekanism More Machine."
+		"Stage 4 brings Powah Nitro, Mekanism Elite and Ultimate with fusion, NuclearCraft, Draconic Evolution and the large generators of Mekanism More Machine."
 		""
-		"&e1. Nitro-Reaktor von Powah:&r &d500 000 FE/t&r aus Uraninit. Nitro-Kristalle brauchen einen Netherstern und 20 Millionen FE je Kristall in der Kugel, danach läuft er wie der kleine."
-		"&e2. RTGs von NuclearCraft:&r kein Brennstoff, keine Kühlung, nie aus. Uran 112, Plutonium 1 792, Californium &d4 096 FE/t&r, Block für Block."
-		"&e3. Fusionsreaktor von Mekanism:&r D-T-Treibstoff aus Wasser, gezündet mit dem Laser, läuft dann für Tage. Das Kraftwerk für die Antimaterie in Stufe 5."
+		"&e1. Nitro reactor from Powah:&r &d500,000 FE/t&r from Uraninite. Nitro crystals need a nether star and 20 million FE per crystal in the orb, after that it runs like the small one."
+		"&e2. RTGs from NuclearCraft:&r no fuel, no cooling, never off. Uranium 112, plutonium 1,792, californium &d4,096 FE/t&r, block by block."
+		"&e3. Fusion reactor from Mekanism:&r D-T fuel from water, ignited with the laser, then runs for days. The power plant for the antimatter in stage 5."
 		""
-		"Speicher: der &6Draconic-Energiekern&r fasst ab 45,5 Millionen FE und wächst in sieben Stufen bis 2,14 Billionen."
+		"Storage: the &6Draconic Energy Core&r holds from 45.5 million FE and grows in seven tiers up to 2.14 trillion."
 	]
-	quest.724DE8D2EAF33DAA.quest_subtitle: "Das End ist offen, die Maschinen fressen Strom."
-	quest.724DE8D2EAF33DAA.title: "&e&lStufe 4: Welche Quelle wann"
+	quest.724DE8D2EAF33DAA.quest_subtitle: "The End is open, the machines devour power."
+	quest.724DE8D2EAF33DAA.title: "&e&lStage 4: Which source when"
 	quest.7251BA17B7A78C2E.quest_desc: [
 		"The way home always leads through the &6portal at the arrival square&r, or through any Mine Portal you build over there yourself. You come out in front of the portal you went through."
 		""
@@ -25866,12 +25866,12 @@
 	quest.726485A25C208EA9.quest_subtitle: "Turn a mana burst into a tool."
 	quest.726485A25C208EA9.title: "&6Grind a Mana Lens"
 	quest.726B86F8F6415630.quest_desc: [
-		"Der &6Gargantuan Flux Storage&r ist die größte Flux-Zelle, gebaut aus dem Herculean-Speicher und Fluxblöcken. Er hängt direkt im Netz, ohne Plug und Point."
+		"The &6Gargantuan Flux Storage&r is the largest Flux cell, built from the Herculean storage and Flux Blocks. It sits directly in the network, without plug and point."
 		""
-		"&eFlux Networks, Gargantuan:&r &d128 Millionen FE&r, &d720 000 FE/t&r rein und raus, drahtlos über das Netz. Für den Draconic-Energiekern zu klein, als Puffer zwischen Reaktor und Fabrik genau richtig. Offen ab Stufe 5."
+		"&eFlux Networks, Gargantuan:&r &d128 million FE&r, &d720,000 FE/t&r in and out, wirelessly over the network. Too small for the Draconic Energy Core, just right as a buffer between reactor and factory. Unlocked from stage 5."
 	]
-	quest.726B86F8F6415630.quest_subtitle: "Flux Networks, 128 Millionen FE, 720 000 FE/t."
-	quest.726B86F8F6415630.title: "&dStell den Gargantuan Flux Storage"
+	quest.726B86F8F6415630.quest_subtitle: "Flux Networks, 128 million FE, 720,000 FE/t."
+	quest.726B86F8F6415630.title: "&dSet up the Gargantuan Flux Storage"
 	quest.7274747BA1993556.quest_desc: [
 		"{image:kronwerke:textures/quests/shots/hexerei_herbs.png width:224 height:126 align:center}"
 		"In the &2swamp&r &6Mandrake&r, &6Belladonna&r, &6Mugwort&r and &6Yellow Dock&r grow wild. Break one plant of each and take it along."
@@ -26443,12 +26443,12 @@
 	quest.74F38C1A19E11431.title: "&5See which worlds are still to come"
 	quest.74FCE26DC9255C60.quest_desc: [
 		"{image:kronwerke:textures/quests/shots/powah_reactor.png width:224 height:126 align:center}"
-		"Nimm &636 Reaktorblöcke&r einer Stufe in die Hand und setz einen ab, der 3 x 3 x 4 Reaktor baut sich selbst. &6Uraninit&r hinein, Wasser und Eis oder Trockeneis zum Kühlen, Kohle und Redstone in die Nebenslots für mehr Leistung."
+		"Hold &636 reactor blocks&r of one tier in your hand and place one, the 3 x 3 x 4 reactor builds itself. &6Uraninite&r goes in, water and ice or dry ice for cooling, coal and redstone in the side slots for more output."
 		""
-		"&ePowah, Reaktor:&r Brennstoff Uraninit (Erz unter Y 64, Mekanism-Uran in der Kugel). Erzeugung Starter &d250 FE/t&r, Basic 1 000, Hardened 2 500, Blazing 10 000, Niotic 25 000, Spirited 100 000. Puffer 250 000 bis 100 Millionen. Offen ab Stufe 3, Nitro (500 000 FE/t) in Stufe 4."
+		"&ePowah, Reactor:&r fuel Uraninite (ore below Y 64, Mekanism uranium in the orb). Output Starter &d250 FE/t&r, Basic 1,000, Hardened 2,500, Blazing 10,000, Niotic 25,000, Spirited 100,000. Buffer 250,000 to 100 million. Unlocked from stage 3, Nitro (500,000 FE/t) in stage 4."
 	]
-	quest.74FCE26DC9255C60.quest_subtitle: "Powah, 250 bis 100 000 FE/t aus Uraninit."
-	quest.74FCE26DC9255C60.title: "&bZünde den Powah-Reaktor"
+	quest.74FCE26DC9255C60.quest_subtitle: "Powah, 250 to 100,000 FE/t from Uraninite."
+	quest.74FCE26DC9255C60.title: "&bIgnite the Powah Reactor"
 	quest.75047AB53B1126D5.quest_desc: [
 		"Collect &e16 slag&r from the blast furnace."
 		""
@@ -26790,12 +26790,12 @@
 	quest.76AFF5CF4F2CAC9A.title: "&5Summon an Afrit Smelter"
 	quest.76B04702E169C588.quest_desc: [
 		"{image:kronwerke:textures/quests/shots/list_power_alternator.png width:224 height:126 align:center}"
-		"&eRezept auf Kronwerke:&r Der &6Alternator&r entsteht in den Handwerkseinheiten aus Kupferspulen, Eisenblechen, einem &6Einfachen Steuerschaltkreis&r und Andesitlegierung. Eine Welle hinein, ein Kabel oder eine Maschine daneben, fertig."
+		"&eRecipe on Kronwerke:&r The &6Alternator&r is made in the crafting units from copper spools, iron sheets, a &6Basic Control Circuit&r and Andesite Alloy. A shaft in, a cable or machine next to it, done."
 		""
-		"&eCrafts & Additions, Alternator:&r Brennstoff Rotation. Bei 256 RPM zieht er &d16 384 SU&r und macht &d360 FE/t&r (480 mal 0,75 Wirkungsgrad), bei 64 RPM entsprechend 4 096 SU und 90 FE/t. Puffer 5 000 FE, Abgabe bis 5 000 FE/t. Der &6Elektromotor&r ist der Rückweg: bis 480 FE/t rein, bis 256 RPM und 16 384 SU raus. Offen ab Stufe 2."
+		"&eCrafts & Additions, Alternator:&r fuel rotation. At 256 RPM it draws &d16,384 SU&r and makes &d360 FE/t&r (480 times 0.75 efficiency), at 64 RPM correspondingly 4,096 SU and 90 FE/t. Buffer 5,000 FE, output up to 5,000 FE/t. The &6Electric Motor&r is the way back: up to 480 FE/t in, up to 256 RPM and 16,384 SU out. Open from stage 2."
 	]
-	quest.76B04702E169C588.quest_subtitle: "Crafts & Additions, Alternator: 360 FE/t bei 256 RPM."
-	quest.76B04702E169C588.title: "&6Mach aus Rotation Strom"
+	quest.76B04702E169C588.quest_subtitle: "Crafts & Additions, Alternator: 360 FE/t at 256 RPM."
+	quest.76B04702E169C588.title: "&6Turn Rotation into Power"
 	quest.76B0AB0DFE921AAC.quest_desc: [
 		"Besides the Overworld Kronwerke has &eseven dimensions&r. One is open from the start, the others come with the stages: &6Nether&r and &6Aether&r in stage 2, &6Undergarden&r and &6Otherside&r in stage 3, &6End&r, &6Eternal Starlight&r and the &6Reality Marble&r in stage 4. The Twilight Forest is not in the pack."
 		""
@@ -27272,12 +27272,12 @@
 	quest.78797DEDDE728B9D.quest_subtitle: "From the Pressurized Reaction Chamber."
 	quest.78797DEDDE728B9D.title: "&fEthene"
 	quest.78899A6FB15511C3.quest_desc: [
-		"Das &6Solar Panel&r braucht freien Himmel, der &6Thermo Generator&r steht auf Lava oder Magma und bekommt Wasser als Kühlmittel in den Tank. EMI zeigt unter Heat Sources, was als Wärmequelle zählt."
+		"The &6Solar Panel&r needs open sky, the &6Thermo Generator&r stands on lava or magma and gets water as coolant into its tank. EMI shows under Heat Sources what counts as a heat source."
 		""
-		"&ePowah, Solar Panel und Thermo Generator:&r beide Starter &d20 FE/t&r, Basic 60, Hardened 100, Blazing 200, Niotic 400, Spirited 800. Das Solarmodul nur bei Tag, der Thermogenerator rund um die Uhr. Mit einer &6Lens of Ender&r sieht das Solarmodul durch Blöcke über sich. Offen ab Stufe 3."
+		"&ePowah, Solar Panel and Thermo Generator:&r both Starter &d20 FE/t&r, Basic 60, Hardened 100, Blazing 200, Niotic 400, Spirited 800. The solar panel only by day, the thermo generator around the clock. With a &6Lens of Ender&r the solar panel sees through blocks above it. Open from stage 3."
 	]
-	quest.78899A6FB15511C3.quest_subtitle: "Powah, 20 bis 800 FE/t ohne Brennstoff."
-	quest.78899A6FB15511C3.title: "&bLeg Solarmodule und Thermogeneratoren"
+	quest.78899A6FB15511C3.quest_subtitle: "Powah, 20 to 800 FE/t without fuel."
+	quest.78899A6FB15511C3.title: "&bLay Solar Panels and Thermo Generators"
 	quest.7891B0DA545DB8D6.quest_desc: [
 		"&eRecipe:&r six &6wool&r in two rows, below on the left a &6stick&r. That gives a &6Flag&r in the color of the wool, all 16 colors work."
 		""
@@ -28168,12 +28168,12 @@
 	quest.7CEDA7A5E67ADD17.title: "&dLet the Wixie brew potions"
 	quest.7CEEFBE845E92B4B.quest_desc: [
 		"{image:kronwerke:textures/quests/shots/create_windmill.png width:224 height:126 align:center}"
-		"&eRezept:&r eine &6Holzstufe&r auf einem &6Stein&r auf einer &6Welle&r ergibt das &6Windmühlenlager&r. Häng mindestens acht &6Segel&r (Wolle oder Create-Segel) daran und klick das Lager mit Rechtsklick an."
+		"&eRecipe:&r a &6wooden slab&r on a &6stone&r on a &6shaft&r gives the &6Windmill Bearing&r. Hang at least eight &6sails&r (wool or Create sails) on it and right click the bearing."
 		""
-		"&eCreate, Windmühle:&r Brennstoff keiner, &d1 RPM pro 8 Segel&r, &d512 SU pro RPM&r. 32 Segel geben 4 RPM und &d2 048 SU&r, 128 Segel 16 RPM und 8 192 SU. Sie dreht sich auch ohne Wind und Wetter, braucht nur freien Platz."
+		"&eCreate, Windmill:&r fuel none, &d1 RPM per 8 sails&r, &d512 SU per RPM&r. 32 sails give 4 RPM and &d2,048 SU&r, 128 sails 16 RPM and 8,192 SU. It turns even without wind and weather, it only needs free space."
 	]
-	quest.7CEEFBE845E92B4B.quest_subtitle: "Create, 1 RPM je acht Segel, 512 SU pro RPM."
-	quest.7CEEFBE845E92B4B.title: "&6Stell eine Windmühle auf"
+	quest.7CEEFBE845E92B4B.quest_subtitle: "Create, 1 RPM per eight sails, 512 SU per RPM."
+	quest.7CEEFBE845E92B4B.title: "&6Put Up a Windmill"
 	quest.7D06DF94043D09D2.quest_desc: [
 		"Backpack in the middle, copper ingots or iron ingots around it, at the crafting table. The contents stay inside."
 		""
@@ -28513,12 +28513,12 @@
 	quest.7E94BCD72AFBE5BE.quest_subtitle: "For your best friend."
 	quest.7E94BCD72AFBE5BE.title: "&7Cook dog food"
 	quest.7EA4571151963D5D.quest_desc: [
-		"Die &6Myzel-Generatoren&r baust du an der Werkbank, den Reaktor im Auflösungsapparat. Jeder Generator verbrennt eine eigene Sorte: der Ofen-Generator Brennstoff, der Kulinarische Essen, der Trank-Generator Tränke, der Netherstern-Generator Nethersterne. EMI zeigt unter jedem, was er nimmt."
+		"The &6Mycelial Generators&r are made at the crafting table, the reactor in the Dissolution Chamber. Every generator burns its own kind: the Furnace generator fuel, the Culinary one food, the Potion generator potions, the Netherstar generator nether stars. EMI shows under each what it takes."
 		""
-		"&eIndustrial Foregoing, Myzel-Reaktor:&r Er erzeugt sehr viel Strom, aber nur, solange von &ejeder&r Sorte Myzel-Generator einer gleichzeitig läuft. Ein Langzeitprojekt. Offen ab Stufe 3, siehe Kapitel &aIndustrial Foregoing&r."
+		"&eIndustrial Foregoing, Mycelial Reactor:&r it makes a huge amount of power, but only while one Mycelial Generator of &eevery&r kind runs at the same time. A long term project. Unlocked from stage 3, see the chapter &aIndustrial Foregoing&r."
 	]
-	quest.7EA4571151963D5D.quest_subtitle: "Industrial Foregoing: sechzehn Generatoren, jeder frisst etwas anderes."
-	quest.7EA4571151963D5D.title: "&aVerfeuere alles in Myzel-Generatoren"
+	quest.7EA4571151963D5D.quest_subtitle: "Industrial Foregoing: sixteen generators, each one eats something else."
+	quest.7EA4571151963D5D.title: "&aBurn everything in Mycelial Generators"
 	quest.7EA7F4A9070E15E8.quest_desc: [
 		"{image:kronwerke:textures/quests/shots/hostile_networks_sim_chamber.png width:224 height:126 align:center}"
 		"&eRecipe on Kronwerke:&r on top a &6netherite ingot&r. Middle &6diamond&r, &6obsidian&r, diamond. Bottom &6gold ingot&r, &6Engineering Processor&r from AE2, gold ingot. The processor replaces the original's comparator."
@@ -28830,7 +28830,7 @@
 	task.10E5A53224B31E87.title: "Noted"
 	task.10E5AE0F514FFDD8.title: "Stechpalme (Erle + Eberesche, 10 %)"
 	task.110010FB166B8FF2.title: "Memory checked"
-	task.111E6D62AF25B33B.title: "Alles gesehen"
+	task.111E6D62AF25B33B.title: "Seen it all"
 	task.11283D98A62B70AB.title: "Wore a robe"
 	task.1137A15DC568978D.title: "Find the Ancient Factory"
 	task.115A6D39CABC874D.title: "Got it"

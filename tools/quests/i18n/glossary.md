@@ -56,3 +56,7 @@ own words and chapter names, so references between chapters stay the same.
 | Einfache Kondensatorbank (Item, Ender IO) | Basic Capacitor |
 | Netheritplatten | Netherite Scrap |
 | Soul Stained Steel / Seelenstahl | Soulstained Steel |
+| "Licht des Drachen" (Ziel Stufe 4) | "Light of the Dragon" |
+| Chaosinsel | Chaos Island |
+| Kondensator (IE) | Accumulator |
+| Endregal / Drachenregal | Endshelf / Draconic Endshelf |

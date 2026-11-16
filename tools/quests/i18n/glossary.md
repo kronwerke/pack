@@ -60,3 +60,9 @@ own words and chapter names, so references between chapters stay the same.
 | Chaosinsel | Chaos Island |
 | Kondensator (IE) | Accumulator |
 | Endregal / Drachenregal | Endshelf / Draconic Endshelf |
+| Prosperium (Splitter, Barren, Edelstein, Samenbasis) | Prosperity (Shard, Ingot, Gemstone, Seed Base); the German "Prosperium" is Mystical Agriculture's own German name |
+| Agglomerat | Agglomeratio |
+| Essenzurne / Seelenurne | Essence Vessel / Soul Jar |
+| Mahou Tsukai: Pulver, Zaubertuch, Mystisches Zeichen | Powdered X, Spell Cloth, Mystic Code |
+| Barriere (Mahou Tsukai) | Boundary (Alarm, Tangible, Displacement, Boundary of Drain Life) |
+| Perle der Realität | Reality Marble |

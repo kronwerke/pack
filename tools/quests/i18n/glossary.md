@@ -44,3 +44,15 @@ own words and chapter names, so references between chapters stay the same.
 | "Der Ofen schläft nie" (Ziel Stufe 3) | "The Furnace Never Sleeps" |
 | Stahlstraße | steel line |
 | JEI (bis 15.11.2026) | EMI: the book names EMI since pack 0.24.50; its keys are written as letters (R, U, A, Ctrl+F, Ctrl+O) |
+| Mekanism: Erz Schritt für Schritt | Mekanism: Ore Step by Step |
+| Mekanism: Fortgeschritten | Mekanism: Advanced |
+| Primitives / Einfaches / Fortschrittliches / Überlegenes Maschinengehäuse | Pity / Simple / Advanced / Supreme Machine Frame |
+| Auflösungsapparat | Dissolution Chamber |
+| Monsterschnetzler | Mob Crusher |
+| Monsterspawner (IF) | Mob Duplicator |
+| Industrieller Schlachter | Mob Slaughter Factory |
+| Primitiver Heizgenerator | Pitiful Generator |
+| Sägemühle (Ender IO) | SAG Mill |
+| Einfache Kondensatorbank (Item, Ender IO) | Basic Capacitor |
+| Netheritplatten | Netherite Scrap |
+| Soul Stained Steel / Seelenstahl | Soulstained Steel |

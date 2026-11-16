@@ -780,7 +780,7 @@
 		{
 			id: "732A6C2688D5B74C"
 			x: 8.8d
-			y: 18.525d
+			y: 20.025d
 			icon: {
 				id: "supplementaries:jar"
 				count: 1
@@ -812,6 +812,32 @@
 				}
 				{
 					id: "5A2EB6EBABEC0EA1"
+					type: "xp_levels"
+					xp_levels: 2
+				}
+			]
+		}
+		{
+			id: "117715D863B98139"
+			x: 8.8d
+			y: 18.525d
+			icon: {
+				id: "minecraft:chest"
+				count: 1
+			}
+			optional: true
+			dependencies: [
+				"6244B68F3856AF43"
+			]
+			tasks: [
+				{
+					id: "7BB4913572E696D0"
+					type: "checkmark"
+				}
+			]
+			rewards: [
+				{
+					id: "29E54746A0D407B4"
 					type: "xp_levels"
 					xp_levels: 2
 				}

@@ -594,3 +594,10 @@ Core 0.39.33 (13.11.2026): a right click on the obelisk with a block in the hand
 - Core 0.39.38: EMI keeps its lists when a player moves between the servers.
 - Five items EMI listed and JEI did not are hidden from recipe viewers (`c:hidden_from_recipe_viewers`): the placeable backtanks of Create Goggles, blocks without a use of their own that drew as a red barrier sign. NuclearCraft's five recipe categories without a name in EMI have one, in English and German.
 - Seen with 0.24.49 on the server: a plain anvil set by a command in the farm world opens Easy Anvils' window at the first click and is the mod's block afterwards; EMI with the stage locks (157 pages instead of 198 at stage 1).
+
+## 0.24.51
+
+- Carry On (asked for by Samuel, "so that it works across a server switch"): sneak with empty hands and right click to lift a chest, a machine or an animal, contents and all. What a player carries is part of the player file, which Core moves whole, so it comes along through a portal. Seen in the local three-server network: a chest with 10 diamonds and 3 iron lifted on main, carried through a nether portal, on the Nether server the client shows it in the hands and the server has it with its contents; back on main the same. A carrier who dies leaves the chest at the place of death with everything in it. Inside the protected spawn a player who is no operator lifts nothing (the mod asks with a break event, the spawn guard says no).
+- Its settings in the pack (`config/carryon-common.toml`): players cannot be lifted (the mod's default allows it), and Kronwerke's own blocks and waystones stay where they are, next to what the mod leaves out by itself (Botania, Immersive Engineering, Industrial Foregoing and others).
+- A quest in the comfort chapter explains it.
+- Not seen: Carry On with the whole pack and on the real servers; a carried animal across a move; a carried block of a mod whose contents live outside the block (a Refined Storage disk drive: the disks' contents are world data of one server, which is so for a disk in the inventory too and is not solved).

@@ -343,6 +343,19 @@ quests = [
           rewards=[reward_item("minecraft:glass", 8), reward_xp(2)],
           deps=["cage"], icon="supplementaries:jar", optional=True),
 
+    quest("carry", 18, 12.5, "&7Trag eine Kiste weg",
+          subtitle="Mit leeren Händen, samt Inhalt.",
+          description=[
+              "Mit &6Carry On&r hebst du Kisten, Fässer, Öfen und viele Maschinen samt Inhalt hoch: &eschleichen&r, beide Hände leer, &eRechtsklick&r. Ein Rechtsklick auf den Boden stellt die Last wieder ab. Tiere trägst du genauso.",
+              "",
+              "Solange du trägst, bist du langsamer und kannst nichts anderes in die Hand nehmen. Durch ein Portal in eine andere Welt kommt die Last mit. Stirbst du, steht sie dort, wo du gestorben bist.",
+              "",
+              "Manches bleibt stehen: alles vom Kronwerk, Wegsteine, andere Spieler und Monster, dazu, was die Mod von sich aus ausnimmt, etwa Blöcke von Botania und Immersive Engineering. Im geschützten Spawn hebst du nichts hoch.",
+          ],
+          tasks=[task_checkmark("Getragen")],
+          rewards=[reward_xp(2)],
+          deps=["cage"], icon="minecraft:chest", optional=True),
+
     quest("done", 13, 14, "&6&lAlles eingerichtet",
           subtitle="Magnet, Sammler, Mülltonne, Claim.",
           description=[

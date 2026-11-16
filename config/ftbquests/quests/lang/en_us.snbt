@@ -268,9 +268,9 @@
 	]
 	chapter.70E257E4349F5E4A.title: "Mahou Tsukai"
 	chapter.71D240A9E09DDDEA.chapter_subtitle: [
-		"Jeder Weg für Gegenstände, Flüssigkeiten, Gase und Strom, eine Zeile je Block, mit Stufe."
+		"Every way for items, fluids, gases and power, one line per block, with stage."
 	]
-	chapter.71D240A9E09DDDEA.title: "Checkliste: Transport und Lager"
+	chapter.71D240A9E09DDDEA.title: "Checklist: Transport and Storage"
 	chapter.7421615E165D1C33.chapter_subtitle: [
 		"Stage 3: assembly line, compressors for 20 bar, drones and their programs."
 	]
@@ -460,12 +460,12 @@
 	quest.10861B93B2E7A489.quest_subtitle: "Früchte reifen am Blatt, Rechtsklick pflückt."
 	quest.10861B93B2E7A489.title: "&aPflanz die Walnuss und ernte Nüsse"
 	quest.1088CC6818EB9DDB.quest_desc: [
-		"&6Applied Energistics 2&r, &6ME-Laufwerk&r mit zehn Zellen: 1k &e8 128&r Stück bei einer Sorte, 4 160 bei 63 Sorten, 16k 130 048. Jede Zelle fasst höchstens 63 Typen. Konsole mit Suche, Busse, Autocrafting mit Molekularen Assemblern, drahtlose Konsolen. &eStufe 3.&r"
+		"&6Applied Energistics 2&r, &6ME Drive&r with ten cells: 1k &e8,128&r items of one kind, 4,160 with 63 kinds, 16k 130,048. Every cell holds at most 63 types. Terminal with search, buses, autocrafting with Molecular Assemblers, wireless terminals. &eStage 3.&r"
 		""
-		"&eRezept auf Kronwerke:&r Das Laufwerk braucht zwei Fortgeschrittene Steuerschaltkreise, der Controller einen Geistgebundenen Edelstein aus Occultism, der Assembler zwei Präzisionsgetriebe. 64k und 256k öffnen in Stufe 4. Siehe Kapitel Applied Energistics 2."
+		"&eRecipe on Kronwerke:&r The drive needs two Advanced Control Circuits, the controller a Spirit Attuned Gem from Occultism, the assembler two Precision Mechanisms. 64k and 256k open in stage 4. See the Applied Energistics 2 chapter."
 	]
-	quest.1088CC6818EB9DDB.quest_subtitle: "AE2, ME-Netz: Zellen mit Bytes und Typen, Autocrafting."
-	quest.1088CC6818EB9DDB.title: "Lies: Applied Energistics 2"
+	quest.1088CC6818EB9DDB.quest_subtitle: "AE2, ME network: cells with bytes and types, autocrafting."
+	quest.1088CC6818EB9DDB.title: "Read: Applied Energistics 2"
 	quest.10A0A019F1B3EAFB.quest_desc: [
 		"Shapeless: &6Pattern Provider&r and &6Accumulation Processor&r give the &6MEGA Pattern Provider&r, &6ME Interface&r and processor the &6MEGA Interface&r."
 		""
@@ -1238,12 +1238,12 @@
 	quest.12AA0D4A1CE026D3.quest_subtitle: "Eight times as much from one coal."
 	quest.12AA0D4A1CE026D3.title: "&8Enrich coal"
 	quest.12B08B1025D23D2B.quest_desc: [
-		"&6Waystones&r, &6Wegstein&r: einmal aktivieren, dann von jedem anderen Wegstein, mit dem &6Warpstein&r oder aus dem Inventar hinreisen. Kostet &e1 Level je 100 Blöcke&r, höchstens 27, zwischen Dimensionen immer 27. &6Schriftrollen&r und &6Warpplatten&r reisen umsonst. &eStufe 1.&r"
+		"&6Waystones&r, &6Waystone&r: activate once, then travel there from any other waystone, with the &6Warp Stone&r or from the inventory. Costs &e1 level per 100 blocks&r, at most 27, between dimensions always 27. &6Scrolls&r and &6warp plates&r travel for free. &eStage 1.&r"
 		""
-		"Rückkehr-Schriftrolle: zwei Goldnuggets und ein Tintenbeutel über drei Papier, bringt dich zum zuletzt aktivierten Wegstein. Wilde Wegsteine stehen alle 25 Chunks und in Dörfern. Siehe Kapitel Erkundung."
+		"Return Scroll: two gold nuggets and an ink sac over three paper, takes you to the last activated waystone. Wild waystones stand every 25 chunks and in villages. See the Exploration chapter."
 	]
-	quest.12B08B1025D23D2B.quest_subtitle: "Waystones, Wegsteine: ein Level je 100 Blöcke, Schriftrollen kostenlos."
-	quest.12B08B1025D23D2B.title: "Schreib eine Rückkehr-Schriftrolle"
+	quest.12B08B1025D23D2B.quest_subtitle: "Waystones, waystones: one level per 100 blocks, scrolls free."
+	quest.12B08B1025D23D2B.title: "Write a Return Scroll"
 	quest.12C42435D584F285.quest_desc: [
 		"{image:kronwerke:textures/quests/shots/immersive_watermill.png width:224 height:126 align:center}"
 		"Four &6Waterwheel Segments&r (Treated Wood and Treated Sticks) around a &6steel ingot&r make the &6Water Wheel&r."
@@ -1830,12 +1830,12 @@
 	quest.148DD1118AF7A40B.quest_subtitle: "Magma cream, and lava from cobblestone."
 	quest.148DD1118AF7A40B.title: "&6Keep a Magmatic Bee"
 	quest.148E13F49394D961.quest_desc: [
-		"&6Ender IO&r, &6Fluid Conduit&r &e200 mB&r, &6Energetic&r 1 000, &6Vibrant&r 8 000 pro Netztakt. Eine Leitung führt eine Flüssigkeit, Energetic und Vibrant mehrere, mit Flüssigkeitsfilter an jeder Verbindung. &eStufe 3.&r"
+		"&6Ender IO&r, &6Fluid Conduit&r &e200 mB&r, &6Energetic&r 1,000, &6Vibrant&r 8,000 per network tick. One conduit carries one fluid, Energetic and Vibrant several, with a fluid filter on every connection. &eStage 3.&r"
 		""
-		"Liegt im selben Block wie Strom- und Gegenstandsleitungen. Siehe Kapitel Ender IO."
+		"Lies in the same block as power and item conduits. See the Ender IO chapter."
 	]
-	quest.148E13F49394D961.quest_subtitle: "Ender IO, Fluid Conduit: 200, 1 000 oder 8 000 mB pro Netztakt."
-	quest.148E13F49394D961.title: "Lies: Ender-IO-Flüssigkeitsleitungen"
+	quest.148E13F49394D961.quest_subtitle: "Ender IO, Fluid Conduit: 200, 1,000 or 8,000 mB per network tick."
+	quest.148E13F49394D961.title: "Read: Ender IO Fluid Conduits"
 	quest.1491084B193A3E66.quest_desc: [
 		"Eight &6andesite alloys&r around a &6shaft&r make the &6Mechanical Grindstone&r. Click an &6Item Drain&r with it (it becomes a grindstone drain) and put a second one on top."
 		""
@@ -2788,12 +2788,12 @@
 	quest.1777A8458BF84651.quest_subtitle: "Food that gives mana back."
 	quest.1777A8458BF84651.title: "&6Plant Sourceberries"
 	quest.177AE47237E3CB18.quest_desc: [
-		"&6Create&r, &6Kupplung&r: trennt die Welle, solange ein Redstone-Signal anliegt. &6Gangschaltung&r: kehrt die Drehrichtung um, solange ein Signal anliegt. So hältst du einen Bohrer an oder lässt ein Band rückwärts laufen. &eStufe 1.&r"
+		"&6Create&r, &6Clutch&r: separates the shaft as long as a redstone signal is applied. &6Gearshift&r: reverses the rotation direction as long as a signal is applied. That way you stop a drill or let a belt run backward. &eStage 1.&r"
 		""
-		"Kupplung: Andesitgehäuse, Welle und Redstone, formlos. Gangschaltung: Andesitgehäuse, Zahnrad und Redstone."
+		"Clutch: Andesite Casing, shaft and redstone, shapeless. Gearshift: Andesite Casing, cogwheel and redstone."
 	]
-	quest.177AE47237E3CB18.quest_subtitle: "Create, Kupplung und Gangschaltung: aus und umgekehrt."
-	quest.177AE47237E3CB18.title: "Schalt Drehung mit Redstone"
+	quest.177AE47237E3CB18.quest_subtitle: "Create, Clutch and Gearshift: off and reversed."
+	quest.177AE47237E3CB18.title: "Switch Rotation with Redstone"
 	quest.1787C8DEB600BA0C.quest_desc: [
 		"In the apparatus: Basic Spell Turret, &6Source Gem block&r and &e2 blaze rods&r."
 		""
@@ -3791,16 +3791,16 @@
 	quest.1A39A7E5F622433E.quest_subtitle: "A sweet lure for Afrit."
 	quest.1A39A7E5F622433E.title: "&6Mix orange chalk"
 	quest.1A39EE189239CD6B.quest_desc: [
-		"&eStufe 1:&r Es gibt keinen Strom, nur &6Drehkraft&r von Create. Wellen, Zahnräder und Riemen tragen sie, ein Getriebe lenkt sie um."
+		"&eStage 1:&r There is no power, only &6rotational force&r from Create. Shafts, cogwheels and belts carry it, a gearbox redirects it."
 		""
-		"&eStufe 2:&r &6Universalkabel von Mekanism&r (3 200 FE/t) für alles in der Basis, &6IE-Drähte&r, wenn Strom über Land soll. Pipez-Stromrohre nur für den Anfang, 256 FE/t sind schnell zu wenig."
+		"&eStage 2:&r &6Universal Cables from Mekanism&r (3,200 FE/t) for everything in the base, &6IE wires&r when power has to go across land. Pipez energy pipes only for the start, 256 FE/t quickly gets too little."
 		""
-		"&eStufe 3:&r &6Flux Networks&r, weil ein Plug und ein Point jedes Kabel ersetzen, auch zwischen Dimensionen. &6Ender-IO-Leitungen&r (bis 192 000 FE/t) oder Powah-Kabel, wo Kabel bleiben sollen."
+		"&eStage 3:&r &6Flux Networks&r, because a plug and a point replace every cable, even between dimensions. &6Ender IO conduits&r (up to 192,000 FE/t) or Powah cables where cables should stay."
 		""
-		"&eStufe 4:&r Elite- und Ultimativkabel von Mekanism bis über 3 Millionen FE/t und Nitro-Kabel von Powah mit einer Million."
+		"&eStage 4:&r Elite and Ultimate cables from Mekanism up to over 3 million FE/t and Nitro cables from Powah with one million."
 	]
-	quest.1A39EE189239CD6B.quest_subtitle: "Zwei Wahlen pro Stufe."
-	quest.1A39EE189239CD6B.title: "&d&lWas wann: Strom"
+	quest.1A39EE189239CD6B.quest_subtitle: "Two choices per stage."
+	quest.1A39EE189239CD6B.title: "&d&lWhat When: Power"
 	quest.1A3ECCB16419ADC0.quest_desc: [
 		"&6Electron Tube&r, two &6brass ingots&r and two &6dried kelp&r make two &6Brass Tunnels&r. Put them on top of a belt."
 		""
@@ -3823,12 +3823,12 @@
 	quest.1A4AE1916414EFF9.quest_subtitle: "Mekanism thinks with Create tubes."
 	quest.1A4AE1916414EFF9.title: "&6Get electron tubes"
 	quest.1A4B773D269B58C8.quest_desc: [
-		"&6Sophisticated Backpacks&r, &6Rucksack&r: &e27 Plätze&r und ein Upgrade-Platz, Kupfer und Eisen (Stufe 2), Gold und Diamant (Stufe 3), Netherit (Stufe 4). Pickup, Magnet, Lager- und Auffüll-Upgrade bewegen Gegenstände zwischen dir und den Kisten, jedes mit Filter. &eStufe 1.&r"
+		"&6Sophisticated Backpacks&r, &6Backpack&r: &e27 slots&r and one upgrade slot, copper and iron (stage 2), gold and diamond (stage 3), netherite (stage 4). Pickup, Magnet, Deposit and Refill Upgrades move items between you and the chests, each with a filter. &eStage 1.&r"
 		""
-		"[\"\",{\"text\":\"Eine Truhe, vier Leder, vier Fäden. \"},{\"keybind\":\"key.sophisticatedbackpacks.open_backpack\",\"color\":\"yellow\"},{\"text\":\" öffnet ihn. Siehe Kapitel Lager.\"}]"
+		"[\"\",{\"text\":\"A chest, four leather, four string. \"},{\"keybind\":\"key.sophisticatedbackpacks.open_backpack\",\"color\":\"yellow\"},{\"text\":\" opens it. See the Storage chapter.\"}]"
 	]
-	quest.1A4B773D269B58C8.quest_subtitle: "Sophisticated Backpacks, Rucksack: 27 Plätze zum Mitnehmen."
-	quest.1A4B773D269B58C8.title: "Näh einen Rucksack"
+	quest.1A4B773D269B58C8.quest_subtitle: "Sophisticated Backpacks, backpack: 27 slots to take along."
+	quest.1A4B773D269B58C8.title: "Sew a Backpack"
 	quest.1A53E760EB884BAC.quest_desc: [
 		"Smithing table: &6Flowglaze Upgrade Smithing Template&r, &6Glacite Scythe&r, &6Flowglaze&r. Out comes the &6Flowglaze Scythe&r."
 		""
@@ -4682,14 +4682,14 @@
 	quest.1D1C996FA3524154.quest_subtitle: "A whole pentacle with one click."
 	quest.1D1C996FA3524154.title: "&6Bind the Artisanal Ritual Satchel"
 	quest.1D1FBF42CFAB8E96.quest_desc: [
-		"&6Create&r, &6Rutsche&r: trägt Gegenstände senkrecht von einem Inventar ins nächste, nach unten von allein, nach oben mit einem Ummantelten Lüfter oben oder unten. Schräg, wenn sie seitlich an eine andere Rutsche gesetzt wird. Kein Filter. &eStufe 1.&r"
+		"&6Create&r, &6Chute&r: carries items vertically from one inventory to the next, downward by itself, upward with an Encased Fan on top or below. Diagonal when placed sideways against another chute. No filter. &eStage 1.&r"
 		""
-		"Zwei Eisenbleche um einen Eisenbarren ergeben vier. Mit dem Schraubenschlüssel bekommt sie ein Fenster."
+		"Two iron sheets around an iron ingot give four. With the wrench it gets a window."
 		""
-		"&eStufe 2:&r Die &6Intelligente Rutsche&r (Messingblech, Rutsche, Elektronenröhre) filtert und zählt Stapel."
+		"&eStage 2:&r The &6Smart Chute&r (brass sheet, chute, electron tube) filters and counts stacks."
 	]
-	quest.1D1FBF42CFAB8E96.quest_subtitle: "Create, Rutsche: senkrecht nach unten, mit Lüfter nach oben."
-	quest.1D1FBF42CFAB8E96.title: "Bau eine Rutsche"
+	quest.1D1FBF42CFAB8E96.quest_subtitle: "Create, Chute: straight down, with a fan upward."
+	quest.1D1FBF42CFAB8E96.title: "Build a Chute"
 	quest.1D20F14FEFA15259.quest_desc: [
 		"In the apparatus: &6campfire&r in the middle, &e3 gold ingots&r and &e3 archwood planks&r on the pedestals."
 		""
@@ -8632,14 +8632,14 @@
 	quest.28868EFFD1C98F52.quest_subtitle: "Ars Nouveau: flight like in creative mode."
 	quest.28868EFFD1C98F52.title: "&dFly with the Ritual"
 	quest.2887799657763FCE.quest_desc: [
-		"&6Ars Nouveau&r, &6Sternbunkel&r: ein Tier, das Gegenstände vom Boden aufsammelt und Stapel aus beliebig vielen Truhen in beliebig viele andere trägt. Filter über eine Gegenstandsrolle in seiner Hand oder einen Rahmen an der Truhe. &eStufe 1.&r"
+		"&6Ars Nouveau&r, &6Starbuncle&r: a creature that picks up items from the ground and carries stacks from any number of chests to any number of others. Filter via an item scroll in its hand or a frame on the chest. &eStage 1.&r"
 		""
-		"Ein Goldnugget an einen wilden Sternbunkel gibt Scherben, die Scherben mit vier Goldbarren im Bezaubernden Apparat den &6Sternbunkel-Charme&r. Einrichten mit dem Dominion-Zauberstab: erst Quelle, dann Tier, dann Ziel."
+		"A gold nugget to a wild Starbuncle gives shards, the shards with four gold ingots in the Enchanting Apparatus the &6Starbuncle Charm&r. Set it up with the Dominion Wand: first source, then the creature, then the target."
 		""
-		"Er braucht weder Strom noch Quelle und läuft durch Wände, wenn eine Tür offen ist. Mehr im Kapitel Ars Nouveau."
+		"It needs neither power nor source and walks through walls when a door is open. More in the Ars Nouveau chapter."
 	]
-	quest.2887799657763FCE.quest_subtitle: "Ars Nouveau, Sternbunkel: trägt Stapel von Truhe zu Truhe."
-	quest.2887799657763FCE.title: "Zähm einen Sternbunkel"
+	quest.2887799657763FCE.quest_subtitle: "Ars Nouveau, Starbuncle: carries stacks from chest to chest."
+	quest.2887799657763FCE.title: "Tame a Starbuncle"
 	quest.288E0C1EE22A463A.quest_desc: [
 		"Crafting table: &62 Froststeel Ingots&r over &61 stick&r make the &6Froststeel Sword&r."
 		""
@@ -8682,12 +8682,12 @@
 	quest.2896DC83DBFDFA42.quest_subtitle: "Where the big spells burn."
 	quest.2896DC83DBFDFA42.title: "&a&lBuild the Ritual Brazier"
 	quest.289E1506658A9E6B.quest_desc: [
-		"&6Ender IO&r, &6Energy Conduit&r &e8 000 FE/t&r, &6Energetic&r 48 000, &6Vibrant&r &e192 000 FE/t&r. Jede Verbindung einzeln auf Eingang, Ausgang oder beides, mit Redstone-Steuerung. Liegt im selben Block wie Gegenstands- und Flüssigkeitsleitungen. &eStufe 3.&r"
+		"&6Ender IO&r, &6Energy Conduit&r &e8,000 FE/t&r, &6Energetic&r 48,000, &6Vibrant&r &e192,000 FE/t&r. Every connection separately on input, output or both, with redstone control. Lies in the same block as item and fluid conduits. &eStage 3.&r"
 		""
-		"Siehe Kapitel Ender IO."
+		"See the Ender IO chapter."
 	]
-	quest.289E1506658A9E6B.quest_subtitle: "Ender IO, Energy Conduit: 8 000, 48 000 oder 192 000 FE pro Tick."
-	quest.289E1506658A9E6B.title: "Lies: Ender-IO-Stromleitungen"
+	quest.289E1506658A9E6B.quest_subtitle: "Ender IO, Energy Conduit: 8,000, 48,000 or 192,000 FE per tick."
+	quest.289E1506658A9E6B.title: "Read: Ender IO Energy Conduits"
 	quest.289E809B78ACB014.quest_desc: [
 		"Iron goes into the parts for Create, the first magic devices, the cooking pot and Silent Gear tools. Iron nuggets and andesite make &6Andesite Alloy&r, the material of the tech pillar at the obelisk."
 		""
@@ -8754,12 +8754,12 @@
 	quest.28D36AAE5A2A44F6.quest_subtitle: "The machine runs even when you are away."
 	quest.28D36AAE5A2A44F6.title: "&dBuild an Anchor Upgrade"
 	quest.28D4E4DA10EAEBC7.quest_desc: [
-		"&6Flux Networks&r, &6Flux Plug&r nimmt Strom ins Netz, &6Flux Point&r gibt ihn ab, überall und in jeder Dimension, bis &e800 000 FE/t&r je Anschluss. &6Basic Flux Storage&r speichert 2 Millionen FE bei 20 000 FE/t. Bis zu 5 Netze je Spieler, Chunks bleiben geladen. &eStufe 3.&r"
+		"&6Flux Networks&r, the &6Flux Plug&r takes power into the network, the &6Flux Point&r gives it out, anywhere and in any dimension, up to &e800,000 FE/t&r per connection. &6Basic Flux Storage&r stores 2 million FE at 20,000 FE/t. Up to 5 networks per player, chunks stay loaded. &eStage 3.&r"
 		""
-		"&eRezept auf Kronwerke:&r Der &6Flux Core&r braucht ein Quelljuwel von Ars Nouveau statt des Enderauges, der &6Flux Controller&r einen Fortgeschrittenen Steuerschaltkreis. Herculean Storage öffnet in Stufe 4, Gargantuan in Stufe 5."
+		"&eRecipe on Kronwerke:&r The &6Flux Core&r needs a Source Gem from Ars Nouveau instead of the eye of ender, the &6Flux Controller&r an Advanced Control Circuit. Herculean Storage opens in stage 4, Gargantuan in stage 5."
 	]
-	quest.28D4E4DA10EAEBC7.quest_subtitle: "Flux Networks, Plug und Point: Strom ohne Kabel, auch zwischen Dimensionen."
-	quest.28D4E4DA10EAEBC7.title: "Lies: Flux Networks"
+	quest.28D4E4DA10EAEBC7.quest_subtitle: "Flux Networks, Plug and Point: power without cables, even between dimensions."
+	quest.28D4E4DA10EAEBC7.title: "Read: Flux Networks"
 	quest.28DB0299AFB55DEF.quest_desc: [
 		"&eRecipe:&r four &6gold ingots&r top and bottom in the two left columns, &6lapis lazuli&r top right, in the middle row your &6Basic Magnet&r, an &6eye of ender&r and a &6diamond&r, &6redstone&r bottom right."
 		""
@@ -8899,12 +8899,12 @@
 	quest.29374643DC18B3D2.quest_subtitle: "At the bow of an End Ship, a pair for everyone."
 	quest.29374643DC18B3D2.title: "&5&lGet Elytra"
 	quest.29391BFAD0ADC922.quest_desc: [
-		"&6Farmwelt&r: ein Portal aus &e10 Grubenrahmen&r (vier breit, fünf hoch, Ecken frei), angezündet mit einem &6Quellstein&r. Drüben ist eine eigene Welt zum Graben, alle drei Tage neu. &eStufe 1.&r"
+		"&6Farm world&r: a portal of &e10 mine frames&r (four wide, five high, corners free), lit with a &6source stone&r. Over there is a world of its own for digging, new every three days. &eStage 1.&r"
 		""
-		"&eWas mitreist:&r Inventar, Enderkiste, Rucksäcke, und alles, was du durchs Portal wirfst. Siehe Kapitel Erkundung."
+		"&eWhat travels along:&r inventory, ender chest, backpacks, and everything you throw through the portal. See the Exploration chapter."
 	]
-	quest.29391BFAD0ADC922.quest_subtitle: "Grubenrahmen und ein Quellstein: Platz für Löcher, Erz ohne Ende."
-	quest.29391BFAD0ADC922.title: "Reise in die Farmwelt"
+	quest.29391BFAD0ADC922.quest_subtitle: "Mine frames and a source stone: room for holes, ore without end."
+	quest.29391BFAD0ADC922.title: "Travel to the Farm World"
 	quest.294217BC9F51D52D.quest_desc: [
 		"&5Pentacle:&r Aviar's Circle."
 		"&6Bowls:&r &6Demon's Dream Fruit&r, &6wheat&r, &6carrot&r, &6potato&r, a &6hoe&r."
@@ -9425,12 +9425,12 @@
 	quest.2ACCF401A4BC26C4.quest_subtitle: "Water in, steam out."
 	quest.2ACCF401A4BC26C4.title: "&6&lBuild a Thermoelectric Boiler"
 	quest.2AD5CA9C51152B0C.quest_desc: [
-		"&6Immersive Engineering&r, &6Förderband&r: bewegt Gegenstände und Tiere ganz ohne Antrieb und schiebt sie am Ende in ein Inventar. Varianten: &6Extrahierend&r (zieht wie ein Trichter), &6Senkrecht&r, &6Fallend&r, &6Teilend&r, &6Redstone-gesteuert&r und &6Abgedeckt&r. Kein Filter. &eStufe 2.&r"
+		"&6Immersive Engineering&r, &6Conveyor Belt&r: moves items and animals without any drive and pushes them into an inventory at the end. Variants: &6Extracting&r (pulls like a hopper), &6Vertical&r, &6Dropping&r, &6Splitting&r, &6Redstone controlled&r and &6Covered&r. No filter. &eStage 2.&r"
 		""
-		"Rezepte in EMI, Richtung und Steigung mit dem Ingenieurshammer. Farbstoff färbt die Seitenwände. Siehe Kapitel Immersive Engineering."
+		"Recipes in EMI, direction and slope with the Engineer's Hammer. Dye colors the side walls. See the Immersive Engineering chapter."
 	]
-	quest.2AD5CA9C51152B0C.quest_subtitle: "Immersive Engineering, Förderband: läuft ohne Antrieb."
-	quest.2AD5CA9C51152B0C.title: "Lies: IE-Förderbänder"
+	quest.2AD5CA9C51152B0C.quest_subtitle: "Immersive Engineering, Conveyor Belt: runs without a drive."
+	quest.2AD5CA9C51152B0C.title: "Read: IE Conveyor Belts"
 	quest.2AE4542C3AE5DBDB.quest_desc: [
 		"&ePoison&r: Potion of Poison. &eSlowness&r: Potion of Slowness. &eInstant Damage&r: Potion of Harming."
 		""
@@ -9456,14 +9456,14 @@
 	quest.2AF19A157D9CAAE2.title: "&6Build Pestle and Mortar"
 	quest.2AF25EF517ED9037.quest_desc: [
 		"{image:kronwerke:textures/quests/shots/create_belt.png width:224 height:126 align:center}"
-		"&6Create&r, &6Mechanisches Förderband&r: Rechtsklick mit dem Band auf zwei Wellen, &e2 bis 20 Blöcke&r lang, waagerecht, schräg oder senkrecht. Trägt Gegenstände und Tiere mit der Drehzahl der Welle. Filter nur über Messing-Trichter und -Tunnel. &eStufe 1.&r"
+		"&6Create&r, &6Mechanical Belt&r: right click two shafts with the belt, &e2 to 20 blocks&r long, horizontal, diagonal or vertical. Carries items and animals at the shaft's speed. Filter only via brass funnels and tunnels. &eStage 1.&r"
 		""
-		"Sechs getrockneter Seetang ergeben ein Band. Rechtsklick mit leerer Hand nimmt Gegenstände vom Band. Andesit-Gehäuse verkleidet es."
+		"Six dried kelp give one belt. Right click with an empty hand takes items off the belt. Andesite Casing covers it."
 		""
-		"Das Band ist die Maschinenstraße von Stufe 1: Mühle, Presse, Sägewerk und Lüfter arbeiten direkt darauf. Mehr im Kapitel Create."
+		"The belt is the machine line of stage 1: millstone, press, saw and fan work directly on it. More in the Create chapter."
 	]
-	quest.2AF25EF517ED9037.quest_subtitle: "Create, Mechanisches Förderband: so schnell wie die Welle dreht."
-	quest.2AF25EF517ED9037.title: "Spann ein Förderband"
+	quest.2AF25EF517ED9037.quest_subtitle: "Create, Mechanical Belt: as fast as the shaft turns."
+	quest.2AF25EF517ED9037.title: "Stretch a Belt"
 	quest.2AF3D2BE896174C2.quest_desc: [
 		"&eRecipe:&r three &6Ferricore Ingots&r at the bottom, two &6hoppers&r left and right of an &6ender pearl&r, a &6diamond&r on top."
 		""
@@ -9614,14 +9614,14 @@
 	quest.2B99F004F95F24A3.quest_subtitle: "The heart of the controller."
 	quest.2B99F004F95F24A3.title: "&bBuild a Decay Hastener"
 	quest.2B9E8D01FC0EB971.quest_desc: [
-		"&6Item Collectors&r, &6Basic Item Collector&r: sammelt alle Gegenstände im eingestellten Bereich bis &e5 Blöcke&r um sich herum in das Inventar, auf dem er sitzt. Kein Filter. &eStufe 1.&r"
+		"&6Item Collectors&r, &6Basic Item Collector&r: collects all items in the set area up to &e5 blocks&r around it into the inventory it sits on. No filter. &eStage 1.&r"
 		""
-		"Rezept in EMI, Bereich im Fenster einstellen. Ein Collector auf einer Truhe unter dem Mob-Fall ersetzt alle Wasserströme."
+		"Recipe in EMI, set the area in the window. A collector on a chest under the mob drop replaces all water streams."
 		""
-		"&eStufe 2:&r Der &6Advanced Item Collector&r reicht &e7 Blöcke&r und hat einen Filter mit Whitelist und Blacklist."
+		"&eStage 2:&r The &6Advanced Item Collector&r reaches &e7 blocks&r and has a filter with whitelist and blacklist."
 	]
-	quest.2B9E8D01FC0EB971.quest_subtitle: "Item Collectors, Basic Collector: saugt im Umkreis von 5 Blöcken ein."
-	quest.2B9E8D01FC0EB971.title: "Stell einen Item Collector auf"
+	quest.2B9E8D01FC0EB971.quest_subtitle: "Item Collectors, Basic Collector: sucks in within 5 blocks."
+	quest.2B9E8D01FC0EB971.title: "Set Up an Item Collector"
 	quest.2BA13083676DB1BC.quest_desc: [
 		"Two small &6flowers&r, a &6coral&r and a &6bone meal&r make two &6Tree Fertilizer&r."
 		""
@@ -10889,14 +10889,14 @@
 	quest.2F71A3F7ABF3A098.quest_subtitle: "The frame of every Powah machine."
 	quest.2F71A3F7ABF3A098.title: "&7Build a Dielectric Casing"
 	quest.2F72A239B381F811.quest_desc: [
-		"&6Create&r, &6Flüssigkeitsrohr&r und &6Mechanische Pumpe&r: Rohre verbinden Quellen und Ziele, die Pumpe treibt das Netz &e16 Blöcke&r weit an, schneller mit mehr Drehzahl, mehrere Pumpen addieren sich. Pfeil zeigt die Richtung, Schraubenschlüssel dreht sie. Kein Filter. &eStufe 1.&r"
+		"&6Create&r, &6Fluid Pipe&r and &6Mechanical Pump&r: pipes connect sources and targets, the pump drives the network &e16 blocks&r far, faster with more speed, several pumps add up. The arrow shows the direction, the wrench turns it. No filter. &eStage 1.&r"
 		""
-		"Zwei Kupferbleche um einen Kupferbarren ergeben vier Rohre, Zahnrad und Rohr eine Pumpe. Ein offenes Rohrende nimmt Quellblöcke auf und setzt sie wieder ab."
+		"Two copper sheets around a copper ingot give four pipes, cogwheel and pipe a pump. An open pipe end takes in source blocks and places them again."
 		""
-		"&eStufe 2:&r Das &6Intelligente Flüssigkeitsrohr&r filtert eine Flüssigkeit. Mehr im Kapitel Create."
+		"&eStage 2:&r The &6Smart Fluid Pipe&r filters one fluid. More in the Create chapter."
 	]
-	quest.2F72A239B381F811.quest_subtitle: "Create, Mechanische Pumpe: treibt 16 Blöcke Rohr an."
-	quest.2F72A239B381F811.title: "Bau Rohr und Pumpe"
+	quest.2F72A239B381F811.quest_subtitle: "Create, Mechanical Pump: drives 16 blocks of pipe."
+	quest.2F72A239B381F811.title: "Build Pipe and Pump"
 	quest.2F75D7990B5FFDC1.quest_desc: [
 		"Every model has a fixed &dpower use per tick&r in the Simulation Chamber. The more dangerous the mob, the more expensive:"
 		""
@@ -11235,12 +11235,12 @@
 	quest.3107F38F6765E074.quest_subtitle: "The largest stage 3 has to offer."
 	quest.3107F38F6765E074.title: "&b&lBuild a 16k cell"
 	quest.310BD6B66D56BF2D.quest_desc: [
-		"&6Tempad&r, &6Tempad&r: speichert Orte und öffnet eine &6Zeittür&r dorthin, &e1 000 Chronon&r für 10 Sekunden, 6 000 im Gerät. Chronon macht das Chronometer oder das Metronom. &eStufe 3.&r"
+		"&6Tempad&r, &6Tempad&r: stores places and opens a &6time door&r there, &e1,000 chronons&r for 10 seconds, 6,000 in the device. The Chronometer or the Metronome makes chronons. &eStage 3.&r"
 		""
-		"&6Mekanism&r, &6Teleporter&r: ein Rahmen aus Teleporterrahmen, Strom und eine Frequenz, der &6Tragbare Teleporter&r aus der Tasche. &eStufe 3.&r Der Quantenverschränker für Gegenstände, Flüssigkeiten, Gas und Strom ohne Rohr kommt in Stufe 4. Siehe Kapitel Rohre und Router und Mekanism: Fortgeschritten."
+		"&6Mekanism&r, &6Teleporter&r: a frame of Teleporter Frames, power and a frequency, the &6Portable Teleporter&r from your pocket. &eStage 3.&r The Quantum Entangloporter for items, fluids, gas and power without pipes comes in stage 4. See the Pipes and Routers and Mekanism: Advanced chapters."
 	]
-	quest.310BD6B66D56BF2D.quest_subtitle: "Tempad, Zeittür: 1 000 Chronon je Tür, auch in andere Dimensionen."
-	quest.310BD6B66D56BF2D.title: "Lies: Tempad und Teleporter"
+	quest.310BD6B66D56BF2D.quest_subtitle: "Tempad, time door: 1,000 chronons per door, into other dimensions too."
+	quest.310BD6B66D56BF2D.title: "Read: Tempad and Teleporter"
 	quest.31219E97B696428D.quest_desc: [
 		"{image:kronwerke:textures/quests/shots/botania_pool.png width:224 height:126 align:center}"
 		"&e5 Livingrock&r in a U shape. Aim the spreader at it with the wand, and the flowers fill it up to &d1,000,000 mana&r."
@@ -11685,12 +11685,12 @@
 	quest.32B5546E756BD485.quest_subtitle: "A witch shows you the way."
 	quest.32B5546E756BD485.title: "&5Learn the Wicked Sign"
 	quest.32B661CCF37A5217.quest_desc: [
-		"&6Sophisticated Storage&r, &6Fass&r und &6Truhe&r: &e27 Plätze&r, Kupfer 45, Eisen &e54&r mit zwei Upgrade-Plätzen, Gold 81 (Stufe 2), Diamant 108 (Stufe 3), Netherit (Stufe 4). Aufwerten per Rechtsklick am stehenden Block, der Inhalt bleibt. Filter in jedem Upgrade. &eStufe 1.&r"
+		"&6Sophisticated Storage&r, &6Barrel&r and &6Chest&r: &e27 slots&r, copper 45, iron &e54&r with two upgrade slots, gold 81 (stage 2), diamond 108 (stage 3), netherite (stage 4). Upgrade by right clicking the placed block, the contents stay. Filter in every upgrade. &eStage 1.&r"
 		""
-		"Sechs Bretter, zwei Stufen und ein Hebel. Das &6Stack-Upgrade&r aus acht Stämmen verdoppelt jeden Platz. Siehe Kapitel Lager."
+		"Six planks, two slabs and a lever. The &6Stack Upgrade&r from eight logs doubles every slot. See the Storage chapter."
 	]
-	quest.32B661CCF37A5217.quest_subtitle: "Sophisticated Storage, Fass: 27 Plätze, Eisen 54, wächst mit den Stufen."
-	quest.32B661CCF37A5217.title: "Bau ein aufwertbares Fass"
+	quest.32B661CCF37A5217.quest_subtitle: "Sophisticated Storage, barrel: 27 slots, iron 54, grows with the stages."
+	quest.32B661CCF37A5217.title: "Build an Upgradeable Barrel"
 	quest.32B8034D36B5E2CE.quest_desc: [
 		"Four &6copper ingots&r in a cross around a &6Compressed Iron Ingot&r give a &6Pressure Gauge&r. Alone it can do nothing, but it goes into the safety valve, the Manometer and the Vacuum Pump."
 		""
@@ -12023,16 +12023,16 @@
 	quest.34213EA5B410E502.quest_subtitle: "The way into AE2, two at a time."
 	quest.34213EA5B410E502.title: "&bCharge certus quartz"
 	quest.3422692534C7F491.quest_desc: [
-		"&eStufe 1:&r &6Förderbänder mit Andesit-Trichtern&r für Maschinenstraßen, &6Schubladen mit Lagerkern und Trichter-Upgrade&r für das Lager. Ein zahmer Sternbunkel ersetzt dazwischen jede Menge Rohre."
+		"&eStage 1:&r &6Belts with Andesite Funnels&r for machine lines, &6drawers with a Storage Controller and Hopper Upgrade&r for the storage. A tame Starbuncle replaces a lot of pipes in between."
 		""
-		"&eStufe 2:&r &6Pipez-Rohre&r, weil sie alles verbinden und nichts kosten, und &6Modular Routers&r, sobald du sortieren willst. Mekanism-Transporter nur innerhalb von Mekanism."
+		"&eStage 2:&r &6Pipez pipes&r, because they connect everything and cost nothing, and &6Modular Routers&r as soon as you want to sort. Mekanism transporters only within Mekanism."
 		""
-		"&eStufe 3:&r &6AE2 oder Refined Storage&r als Lager mit Import- und Exportbussen, und &6XNet&r oder &6LaserIO&r für Maschinen, die nicht am Netz hängen sollen. Ender IO ist die schnellste Einzelleitung."
+		"&eStage 3:&r &6AE2 or Refined Storage&r as storage with import and export buses, and &6XNet&r or &6LaserIO&r for machines that should not hang on the network. Ender IO is the fastest single line."
 		""
-		"&eStufe 4:&r Mekanism-Transporter der Elite- und Ultimativ-Stufe und das QIO-Netz, siehe Kapitel Mekanism."
+		"&eStage 4:&r Mekanism transporters of the Elite and Ultimate tier and the QIO network, see the Mekanism chapter."
 	]
-	quest.3422692534C7F491.quest_subtitle: "Zwei Wahlen pro Stufe."
-	quest.3422692534C7F491.title: "&6&lWas wann: Gegenstände"
+	quest.3422692534C7F491.quest_subtitle: "Two choices per stage."
+	quest.3422692534C7F491.title: "&6&lWhat When: Items"
 	quest.3425074AB5460589.quest_desc: [
 		"&6Decoration Table:&r three &6logs&r on top, &6planks&r next to the chest upgrade base, two planks in the bottom corners. &6Paintbrush:&r two &6wool&r and two &6sticks&r diagonally."
 		""
@@ -12453,12 +12453,12 @@
 	quest.36286F9C00183F19.quest_subtitle: "The Gas-Burning Generator."
 	quest.36286F9C00183F19.title: "&bBurn hydrogen"
 	quest.363BFCAE79B80548.quest_desc: [
-		"&6Applied Energistics 2&r, &6Flüssigkeitszelle&r: 8 Eimer je Byte, eine 1k-Zelle fasst rund &e8 000 Eimer&r einer Sorte, Import- und Exportbus bewegen Flüssigkeiten wie Gegenstände. &6Refined Storage&r, &664B-Flüssigspeicherzelle&r: &e64 Eimer&r, bis 4 096B in Stufe 3. &eStufe 3.&r"
+		"&6Applied Energistics 2&r, &6fluid cell&r: 8 buckets per byte, a 1k cell holds about &e8,000 buckets&r of one kind, import and export buses move fluids like items. &6Refined Storage&r, &664B Fluid Storage Part&r cell: &e64 buckets&r, up to 4,096B in stage 3. &eStage 3.&r"
 		""
-		"Siehe Kapitel Applied Energistics 2 und Refined Storage."
+		"See the Applied Energistics 2 and Refined Storage chapters."
 	]
-	quest.363BFCAE79B80548.quest_subtitle: "AE2 und Refined Storage: Lava und Öl liegen im Laufwerk."
-	quest.363BFCAE79B80548.title: "Lies: Flüssigkeiten im Lagernetz"
+	quest.363BFCAE79B80548.quest_subtitle: "AE2 and Refined Storage: lava and oil lie in the drive."
+	quest.363BFCAE79B80548.title: "Read: Fluids in the Storage Network"
 	quest.363F2F6549495CBA.quest_desc: [
 		"A right click on the Robit opens its window. The tabs: &6Inventory&r, &6Crafting&r, &6Smelting&r (a furnace) and &6Repair&r (an anvil)."
 		""
@@ -12504,14 +12504,14 @@
 	quest.3681668078CC3487.quest_subtitle: "From base to base in one step."
 	quest.3681668078CC3487.title: "&d&lSet up two teleporters"
 	quest.36874E34FB3D2997.quest_desc: [
-		"&6Create&r, &6Mechanischer Arm&r: greift aus beliebig vielen Eingängen und legt in beliebig viele Ausgänge im Umkreis von &e5 Blöcken&r, Ziele vor dem Setzen anklicken. Filter nur über Messing-Trichter als Ziel. &eStufe 2.&r"
+		"&6Create&r, &6Mechanical Arm&r: grabs from any number of inputs and puts into any number of outputs within &e5 blocks&r, click the targets before placing. Filter only via a brass funnel as the target. &eStage 2.&r"
 		""
-		"Messingbleche, Andesitlegierung, Messinggehäuse und ein Präzisionsgetriebe. Verteilt nach Rundlauf, erzwungenem Rundlauf oder dem ersten gewählten Ziel."
+		"Brass sheets, Andesite Alloy, Brass Casing and a Precision Mechanism. Distributes by round robin, forced round robin or the first chosen target."
 		""
-		"Ein Arm füttert ein Dutzend Mixer aus einem Depot. Siehe Kapitel Create: Messing."
+		"One arm feeds a dozen mixers from one depot. See the chapter Create: Brass."
 	]
-	quest.36874E34FB3D2997.quest_subtitle: "Create, Mechanischer Arm: beliebig viele Ziele in 5 Blöcken."
-	quest.36874E34FB3D2997.title: "Lies: Mechanischer Arm"
+	quest.36874E34FB3D2997.quest_subtitle: "Create, Mechanical Arm: any number of targets within 5 blocks."
+	quest.36874E34FB3D2997.title: "Read: Mechanical Arm"
 	quest.368808DE4B76F8D7.quest_desc: [
 		"&eRecipe:&r like the item pipe, but with two &6redstone blocks&r instead of the dispensers. &616 Energy Pipes&r."
 		""
@@ -12872,12 +12872,12 @@
 	quest.381652550AB417EB.quest_subtitle: "Power without water, only with space."
 	quest.381652550AB417EB.title: "&6Get the windmill running"
 	quest.3821E89A4C376966.quest_desc: [
-		"&6Vanilla&r, &6Trichter&r: zieht aus dem Block darüber und schiebt in den Block vor der Spitze, &e1 Gegenstand alle 8 Ticks&r, 5 Plätze, kein Filter. &eStufe 1.&r"
+		"&6Vanilla&r, &6Hopper&r: pulls from the block above and pushes into the block in front of its tip, &e1 item every 8 ticks&r, 5 slots, no filter. &eStage 1.&r"
 		""
-		"Fünf Eisenbarren um eine Truhe. Ein Trichter in eine Kiste, aus der ein anderer Trichter zieht, ist der älteste Zwischenspeicher der Welt. Ein Redstone-Signal hält ihn an."
+		"Five iron ingots around a chest. A hopper into a chest that another hopper pulls from is the oldest buffer in the world. A redstone signal stops it."
 	]
-	quest.3821E89A4C376966.quest_subtitle: "Vanilla, Trichter: 2,5 Stück pro Sekunde, kein Filter."
-	quest.3821E89A4C376966.title: "Setz einen Trichter"
+	quest.3821E89A4C376966.quest_subtitle: "Vanilla, hopper: 2.5 items per second, no filter."
+	quest.3821E89A4C376966.title: "Place a Hopper"
 	quest.3828F18000825CC2.quest_desc: [
 		"&e8 Sage&r around a &6string&r make a &6Sage Bundle&r. Hang it on the Drying Rack, after &e200 seconds&r it is a &6Dried Sage Bundle&r."
 	]
@@ -13022,14 +13022,14 @@
 	quest.38A89DD0539242D1.quest_subtitle: "Every generator, every tool, every path."
 	quest.38A89DD0539242D1.title: "&6Open the Checklists"
 	quest.38C6C1ABC1A9F762.quest_desc: [
-		"&6Create&r, &6Andesit-Trichter&r: zieht einzelne Gegenstände aus Inventaren aufs Band oder vom Band hinein, je nachdem, ob du ihn normal oder schleichend setzt. &6Andesit-Tunnel&r teilen vom Band genau einen Gegenstand pro Stapel zur Seite ab. Kein Filter. &eStufe 1.&r"
+		"&6Create&r, &6Andesite Funnel&r: pulls single items from inventories onto the belt or from the belt into them, depending on whether you place it normally or sneaking. &6Andesite Tunnels&r split exactly one item per stack off the belt to the side. No filter. &eStage 1.&r"
 		""
-		"Andesitlegierung über getrocknetem Seetang ergibt zwei Trichter. Ein Redstone-Signal hält jeden Trichter an."
+		"Andesite Alloy over dried kelp gives two funnels. A redstone signal stops any funnel."
 		""
-		"&eStufe 2:&r &6Messing-Trichter&r ziehen ganze Stapel und haben einen Filter, &6Messing-Tunnel&r sortieren und verteilen (Aufteilen, Rundlauf, Nächster zuerst), siehe Kapitel Create: Messing."
+		"&eStage 2:&r &6Brass Funnels&r pull whole stacks and have a filter, &6Brass Tunnels&r sort and distribute (split, round robin, prefer nearest), see the chapter Create: Brass."
 	]
-	quest.38C6C1ABC1A9F762.quest_subtitle: "Create, Andesit-Trichter: ein Gegenstand pro Vorgang auf und vom Band."
-	quest.38C6C1ABC1A9F762.title: "Setz Trichter und Tunnel von Create"
+	quest.38C6C1ABC1A9F762.quest_subtitle: "Create, Andesite Funnel: one item per action onto and off the belt."
+	quest.38C6C1ABC1A9F762.title: "Place Create Funnels and Tunnels"
 	quest.38E89E8B696B9BD8.quest_desc: [
 		"Hülle aus Casing und Glas, innen frei gesetzte &6Brennstoffzellen&r, Moderatoren und Kühlkörper, ein &6Controller&r und ein &6Port&r in der Wand. Netto-Hitze auf null, Redstone-Signal zündet. Im Energie-Modus kommt Strom aus dem Port, im Siede-Modus Dampf für die &6Dampfturbine&r."
 		""
@@ -13239,12 +13239,12 @@
 	quest.39F9C465FB0CFF5C.quest_subtitle: "See budding amethyst through walls."
 	quest.39F9C465FB0CFF5C.title: "&6Build a Dowsing Rod"
 	quest.3A052AD8C4B22280.quest_desc: [
-		"&6Pipez&r, &6Gasrohr&r: &e200 mB pro Tick&r ohne Modifikation, 400 mit der Normalen, 2 000 mit der Verbesserten, 8 000 mit der Fortgeschrittenen (Stufe 3), 40 000 mit der Ultimativen (Stufe 4). Gasfilter ab Stufe 3. &eStufe 2.&r"
+		"&6Pipez&r, &6Gas Pipe&r: &e200 mB per tick&r without an upgrade, 400 with the Basic one, 2,000 with the Improved one, 8,000 with the Advanced one (stage 3), 40,000 with the Ultimate one (stage 4). Gas filter from stage 3. &eStage 2.&r"
 		""
-		"Wie das Item-Rohr, nur mit zwei Infundierten Legierungen statt der Werfer. Siehe Kapitel Rohre und Router."
+		"Like the item pipe, only with two Infused Alloys instead of the dispensers. See the Pipes and Routers chapter."
 	]
-	quest.3A052AD8C4B22280.quest_subtitle: "Pipez, Gasrohr: 200 mB pro Tick, bis 2 000 mit Modifikation."
-	quest.3A052AD8C4B22280.title: "Lies: Pipez Gasrohr"
+	quest.3A052AD8C4B22280.quest_subtitle: "Pipez, Gas Pipe: 200 mB per tick, up to 2,000 with an upgrade."
+	quest.3A052AD8C4B22280.title: "Read: Pipez Gas Pipe"
 	quest.3A127DF43B65D552.quest_desc: [
 		"Glowstone, &6Menril Glass&r (glass in the Drying Basin with 1,000 mB of resin), both transformers and a Display Panel give the &6Storage Terminal&r."
 		""
@@ -13993,11 +13993,11 @@
 	quest.3CDF143412D7A502.quest_subtitle: "The supports of the machines."
 	quest.3CDF143412D7A502.title: "&7Build Steel Scaffolding and Steel Fences"
 	quest.3CE6BDD1A3B018D6.quest_desc: [
-		"&6Functional Storage&r, &6Fluid Drawer&r: lagert eine Flüssigkeit pro Fach, als 1x1, 1x2 oder 2x2. Eimer in der Hand füllt und leert sie, Rohre jeder Mod ebenso. &eStufe 1.&r"
+		"&6Functional Storage&r, &6Fluid Drawer&r: stores one fluid per compartment, as 1x1, 1x2 or 2x2. A bucket in hand fills and empties it, pipes of any mod too. &eStage 1.&r"
 		""
-		"Ein Eimer in acht Holzbrettern. Mit dem &6Water Generator Upgrade&r füllt sie sich selbst mit Wasser, siehe Kapitel Lager."
+		"A bucket in eight planks. With the &6Water Generator Upgrade&r it fills itself with water, see the Storage chapter."
 	]
-	quest.3CE6BDD1A3B018D6.quest_subtitle: "Functional Storage, Fluid Drawer: eine Flüssigkeit, von Hand und per Rohr."
+	quest.3CE6BDD1A3B018D6.quest_subtitle: "Functional Storage, Fluid Drawer: one fluid, by hand and by pipe."
 	quest.3CE6BDD1A3B018D6.title: "Build a fluid drawer"
 	quest.3CF613F8A8E72CC7.quest_desc: [
 		"&e8 Inferium Essence&r around &6wheat seeds&r give &6Inferium Seeds&r. Plant them on farmland like wheat, each harvest gives &e1 essence&r and the seed back."
@@ -14124,12 +14124,12 @@
 	quest.3D7B3B704740B2A8.title: "&bBuild the Flux Configurator"
 	quest.3D89A434297F0683.quest_desc: [
 		"{image:kronwerke:textures/quests/shots/storage_drawers_4.png width:224 height:126 align:center}"
-		"&6Functional Storage&r, &6Schublade 1x1&r: &e32 Stapel&r einer Sorte, 1x2 zweimal 16, 2x2 viermal 8. Upgrades vervielfachen: Kupfer x8 und Gold x16 (Stufe 2), Diamant x24 (Stufe 3), Netherit x32 (Stufe 4). Sperren mit dem Configuration Tool hält die Sorte fest. &eStufe 1.&r"
+		"&6Functional Storage&r, &6Drawer 1x1&r: &e32 stacks&r of one kind, 1x2 twice 16, 2x2 four times 8. Upgrades multiply: copper x8 and gold x16 (stage 2), diamond x24 (stage 3), netherite x32 (stage 4). Locking with the Configuration Tool holds the kind. &eStage 1.&r"
 		""
-		"Eine Truhe in acht Brettern. Der &6Drawer Controller&r braucht Quarz und damit den Nether (Stufe 2), die &6Kompaktier-Schublade&r für Nugget, Barren und Block öffnet ebenfalls in Stufe 2. Siehe Kapitel Lager."
+		"A chest in eight planks. The &6Drawer Controller&r needs quartz and with it the Nether (stage 2), the &6Compacting Drawer&r for nugget, ingot and block also opens in stage 2. See the Storage chapter."
 	]
-	quest.3D89A434297F0683.quest_subtitle: "Functional Storage, Schublade: 32 Stapel einer Sorte in einem Block."
-	quest.3D89A434297F0683.title: "Bau Schubladen"
+	quest.3D89A434297F0683.quest_subtitle: "Functional Storage, drawer: 32 stacks of one kind in one block."
+	quest.3D89A434297F0683.title: "Build Drawers"
 	quest.3D97518706CB1359.quest_desc: [
 		"Besides the &6Infused Iron&r, a &6Stoneworks Gearbox&r needs four &6Andesite Casings&r, a &6Large Cogwheel&r, a &6Mechanical Press&r, a &6Millstone&r and a &6Water Wheel&r."
 		""
@@ -14361,14 +14361,14 @@
 	quest.3E6072EF5F93C964.title: "&5Hang Up an Experience Lantern"
 	quest.3E621E87FA4075B1.quest_desc: [
 		"{image:kronwerke:textures/quests/shots/list_transport_packages.png width:224 height:126 align:center}"
-		"&6Create&r, &6Verpacker&r: packt den Inhalt eines Inventars in &6Pakete&r, die auf Bändern, in Rutschen und an &6Kettenförderern&r reisen. &6Froschports&r an der Kette nehmen Pakete mit ihrer Adresse an. Filter über die Adresse. &eStufe 1.&r"
+		"&6Create&r, &6Packager&r: packs the contents of an inventory into &6packages&r that travel on belts, in chutes and on &6Chain Conveyors&r. &6Frogports&r on the chain accept packages with their address. Filter by address. &eStage 1.&r"
 		""
-		"Verpacker: ein Pappblock in der Mitte, Eisenbarren oben und an den Seiten, Redstone unten. Kettenförderer: ein Großes Zahnrad in vier Andesit-Gehäusen ergibt zwei, verbunden mit Ketten."
+		"Packager: a cardboard block in the middle, iron ingots on top and on the sides, redstone at the bottom. Chain Conveyor: a large cogwheel in four Andesite Casings gives two, connected with chains."
 		""
-		"Mit &6Lagerverbindung&r und &6Lagerticker&r bestellst du aus allen angeschlossenen Lagern, und der Verpacker schickt es los. Das Postsystem von Create 6, siehe Kapitel Create."
+		"With a &6Stock Link&r and a &6Stock Ticker&r you order from all connected storages, and the packager sends it off. Create 6's postal system, see the Create chapter."
 	]
-	quest.3E621E87FA4075B1.quest_subtitle: "Create, Verpacker und Kettenförderer: Gegenstände als Paket mit Adresse."
-	quest.3E621E87FA4075B1.title: "Verschick ein Paket"
+	quest.3E621E87FA4075B1.quest_subtitle: "Create, Packager and Chain Conveyor: items as a package with an address."
+	quest.3E621E87FA4075B1.title: "Send a Package"
 	quest.3E6A3398CEDD686B.quest_desc: [
 		"&7Common&r: one attribute bonus, a 25 percent chance of a second one."
 		"&aUncommon&r: two attribute bonuses, half the time an effect on top, up to one socket."
@@ -14571,12 +14571,12 @@
 	quest.3F580EF5D09F4B98.quest_subtitle: "Beaten with its own weapons."
 	quest.3F580EF5D09F4B98.title: "&fSend the fireball back"
 	quest.3F5A551957DA7504.quest_desc: [
-		"&6Create&r, &6Ausguss&r: füllt über einem Depot oder Band Eimer, Flaschen und alle Befüllen-Rezepte aus seinem Tank. Der &6Abfluss&r leert Gegenstände, die darauf landen, ins Rohr. Kein Filter, andere Gegenstände rollen durch. &eStufe 1.&r"
+		"&6Create&r, &6Spout&r: above a depot or belt fills buckets, bottles and all filling recipes from its tank. The &6Item Drain&r empties items landing on it into the pipe. No filter, other items roll through. &eStage 1.&r"
 		""
-		"Ausguss: Kupferrahmen über getrocknetem Seetang. Abfluss: Eisengitter über Kupferrahmen. Siehe Kapitel Create."
+		"Spout: copper casing over dried kelp. Item Drain: iron bars over copper casing. See the Create chapter."
 	]
-	quest.3F5A551957DA7504.quest_subtitle: "Create, Ausguss und Abfluss: Flüssigkeit in Eimer und Flaschen, und zurück."
-	quest.3F5A551957DA7504.title: "Füll und leer Gegenstände"
+	quest.3F5A551957DA7504.quest_subtitle: "Create, Spout and Item Drain: fluid into buckets and bottles, and back."
+	quest.3F5A551957DA7504.title: "Fill and Empty Items"
 	quest.3F74FE18841B810E.quest_desc: [
 		"Hoard &6copper&r and &6zinc&r at a ratio of two to one, and press &6Iron Sheets&r ahead of time."
 		""
@@ -14856,12 +14856,12 @@
 	quest.4092E655810B14AB.quest_subtitle: "Copper with granite, iron with tuff."
 	quest.4092E655810B14AB.title: "&6Find a large ore vein"
 	quest.409349A012B39C21.quest_desc: [
-		"&6Pipez&r, &6Stromrohr&r: &e256 FE pro Tick&r ohne Modifikation, 1 024 mit der Normalen, 8 192 mit der Verbesserten, 32 768 mit der Fortgeschrittenen (Stufe 3), 131 072 mit der Ultimativen (Stufe 4). Verteilt reihum auf alle Verbraucher. &eStufe 2.&r"
+		"&6Pipez&r, &6Energy Pipe&r: &e256 FE per tick&r without an upgrade, 1,024 with the Basic one, 8,192 with the Improved one, 32,768 with the Advanced one (stage 3), 131,072 with the Ultimate one (stage 4). Distributes in turn to all consumers. &eStage 2.&r"
 		""
-		"Wie das Item-Rohr, nur mit zwei Redstone-Blöcken statt der Werfer. Siehe Kapitel Rohre und Router."
+		"Like the item pipe, only with two redstone blocks instead of the dispensers. See the Pipes and Routers chapter."
 	]
-	quest.409349A012B39C21.quest_subtitle: "Pipez, Stromrohr: 256 FE pro Tick, bis 8 192 mit Modifikation."
-	quest.409349A012B39C21.title: "Lies: Pipez Stromrohr"
+	quest.409349A012B39C21.quest_subtitle: "Pipez, Energy Pipe: 256 FE per tick, up to 8,192 with an upgrade."
+	quest.409349A012B39C21.title: "Read: Pipez Energy Pipe"
 	quest.40995844B154C20D.quest_desc: [
 		"&e5 Elementium&r, &e2 Gaia Spirits&r, &e1 Dreamwood Log&r."
 		""
@@ -15570,12 +15570,12 @@
 	quest.43D847CCF4429AF2.quest_subtitle: "Ars Technica: one tribute, five marks for tech robes."
 	quest.43D847CCF4429AF2.title: "&6Stamp Marks of Technomancy"
 	quest.43E40E1AA1D5CD02.quest_desc: [
-		"&6Ranged Pumps&r, &6Pumpe&r: pumpt von ihrem Standort aus Ring um Ring bis Reichweite &e64&r alles unter sich weg, &e100 FE pro Block&r, einer alle 8 Ticks, Tank 32 Eimer. Was weg ist, wird zu Stein. Kein Filter, Redstone hält sie an. &eStufe 2.&r"
+		"&6Ranged Pumps&r, &6Pump&r: from where it stands pumps away everything below it ring by ring up to range &e64&r, &e100 FE per block&r, one every 8 ticks, tank 32 buckets. What is gone turns into stone. No filter, redstone stops it. &eStage 2.&r"
 		""
-		"&eRezept auf Kronwerke:&r Obsidian, zwei Eisenspitzhacken, Lava- und Wassereimer, in der Mitte eine Mechanische Pumpe von Create. Siehe Kapitel Rohre und Router."
+		"&eRecipe on Kronwerke:&r obsidian, two iron pickaxes, lava and water bucket, a Mechanical Pump from Create in the middle. See the Pipes and Routers chapter."
 	]
-	quest.43E40E1AA1D5CD02.quest_subtitle: "Ranged Pumps, Pumpe: saugt 64 Blöcke im Umkreis leer."
-	quest.43E40E1AA1D5CD02.title: "Lies: Ranged Pump"
+	quest.43E40E1AA1D5CD02.quest_subtitle: "Ranged Pumps, Pump: sucks 64 blocks around it empty."
+	quest.43E40E1AA1D5CD02.title: "Read: Ranged Pump"
 	quest.43E562D043305A20.quest_desc: [
 		"Tick this off when you find biomes, travel between waystones, dig in the farm world and know which structures belong where."
 		""
@@ -15770,12 +15770,12 @@
 	quest.44A1DF76092DDEDE.quest_subtitle: "Eight foci around it, a rune of the school."
 	quest.44A1DF76092DDEDE.title: "&5Find a Blank Runestone"
 	quest.44A3402F3F3A6857.quest_desc: [
-		"&6Mekanism&r, &6Einfaches Universalkabel&r: &e3 200 FE pro Tick&r, Fortgeschritten 51 200 (Stufe 3), Elite 409 600 und Ultimativ 3 276 800 (Stufe 4). Verbindet sich mit allem, was FE kennt. Seiten mit dem Konfigurator auf Ziehen, Schieben oder Keine. &eStufe 2.&r"
+		"&6Mekanism&r, &6Basic Universal Cable&r: &e3,200 FE per tick&r, Advanced 51,200 (stage 3), Elite 409,600 and Ultimate 3,276,800 (stage 4). Connects to everything that knows FE. Sides with the configurator set to pull, push or none. &eStage 2.&r"
 		""
-		"Zwei Stahlbarren und ein Redstone ergeben acht. Der &6Energie-Würfel&r speichert daneben 1,6 Millionen FE. Siehe Kapitel Mekanism."
+		"Two steel ingots and a redstone give eight. The &6Energy Cube&r next to it stores 1.6 million FE. See the Mekanism chapter."
 	]
-	quest.44A3402F3F3A6857.quest_subtitle: "Mekanism, Universalkabel: 3 200 FE pro Tick, versteht jede Mod."
-	quest.44A3402F3F3A6857.title: "Lies: Universalkabel"
+	quest.44A3402F3F3A6857.quest_subtitle: "Mekanism, Universal Cable: 3,200 FE per tick, understands every mod."
+	quest.44A3402F3F3A6857.title: "Read: Universal Cable"
 	quest.44A3719685353C0E.quest_desc: [
 		"In the apparatus: any &6seeds&r in the middle, &e4 Source Gems&r on the pedestals. Out comes &6Magebloom seeds&r for farmland."
 		""
@@ -15904,14 +15904,14 @@
 	quest.454D94E0C6614703.quest_subtitle: "The furnace needs three, and they wear out."
 	quest.454D94E0C6614703.title: "&8Cast Three Graphite Electrodes"
 	quest.4554D855273D3F41.quest_desc: [
-		"&6Vanilla&r, &6Trichterlore&r: fährt auf Schienen und zieht unterwegs Gegenstände aus Inventaren über der Schiene und vom Boden, 5 Plätze, kein Filter. Ein Trichter unter einer Schiene leert sie im Vorbeifahren. &eStufe 1.&r"
+		"&6Vanilla&r, &6Minecart with Hopper&r: runs on rails and on the way pulls items from inventories above the rail and from the ground, 5 slots, no filter. A hopper under a rail empties it as it passes. &eStage 1.&r"
 		""
-		"Trichter auf eine Lore. Die &6Truhenlore&r trägt 27 Plätze. Aktivierungsschienen stoppen das Aufsammeln."
+		"Hopper onto a minecart. The &6Minecart with Chest&r carries 27 slots. Activator rails stop the pickup."
 		""
-		"&eStufe 2:&r Create-Züge mit Gleisen, Bahnhöfen und Portable Storage Interfaces, siehe Kapitel Create: Züge."
+		"&eStage 2:&r Create trains with tracks, stations and Portable Storage Interfaces, see the chapter Create: Trains."
 	]
-	quest.4554D855273D3F41.quest_subtitle: "Vanilla, Trichterlore: holt von Schienen, was darüber liegt."
-	quest.4554D855273D3F41.title: "Lass eine Lore fahren"
+	quest.4554D855273D3F41.quest_subtitle: "Vanilla, hopper minecart: picks up from rails what lies above."
+	quest.4554D855273D3F41.title: "Run a Minecart"
 	quest.456132EC3D9247D3.quest_desc: [
 		"&6Redstone Relay&r: &e6 gold ingots&r, &6redstone&r top and bottom middle, a &6Source Gem block&r in the middle. Connected with the Dominion Wand, relays send a signal up to &e30 blocks&r. Input is one side, output goes to all the others."
 		""
@@ -15987,16 +15987,16 @@
 	quest.45CECFA8ADF7988F.quest_subtitle: "Items, mobs and fluids on the move."
 	quest.45CECFA8ADF7988F.title: "&eLay Conveyor Belts"
 	quest.45DC4C7499B73924.quest_desc: [
-		"&eStufe 1:&r &6Schubladen&r für alles in Mengen, &6Eisenfässer am Lagerkern&r für den Rest. Der Rucksack ist das Lager unterwegs, die Minendimension der Platz für Löcher."
+		"&eStage 1:&r &6Drawers&r for everything in bulk, &6iron barrels on the Storage Controller&r for the rest. The backpack is the storage on the go, the mining dimension the place for holes."
 		""
-		"&eStufe 2:&r &6Goldfässer&r und &6Kompaktier-Schubladen&r, dazu die &6Tonne&r von Mekanism als Puffer vor der Erzstraße und die &6Endertruhe&r für den Weg zwischen Basis und Nether."
+		"&eStage 2:&r &6Gold barrels&r and &6compacting drawers&r, plus Mekanism's &6Bin&r as a buffer before the ore line and the &6ender chest&r for the way between base and Nether."
 		""
-		"&eStufe 3:&r &6AE2&r, wenn du Autocrafting willst, &6Refined Storage&r, wenn es einfach sein soll. Beide liegen am besten über einer Schubladenwand per Speicherbus. Tempad und Teleporter bringen dich selbst dorthin."
+		"&eStage 3:&r &6AE2&r if you want autocrafting, &6Refined Storage&r if it should be simple. Both sit best over a wall of drawers via the Storage Bus. Tempad and teleporter bring you yourself there."
 		""
-		"&eStufe 4:&r 64k-Zellen, QIO von Mekanism und Netherit für Fässer und Rucksäcke."
+		"&eStage 4:&r 64k cells, Mekanism's QIO and netherite for barrels and backpacks."
 	]
-	quest.45DC4C7499B73924.quest_subtitle: "Zwei Wahlen pro Stufe."
-	quest.45DC4C7499B73924.title: "&7&lWas wann: Lager"
+	quest.45DC4C7499B73924.quest_subtitle: "Two choices per stage."
+	quest.45DC4C7499B73924.title: "&7&lWhat When: Storage"
 	quest.45E40FFB3B7CF3A4.quest_desc: [
 		"In the apparatus: &6Warper Relay&r in the middle, &e2 Air Essences&r and &e2 diamonds&r on the pedestals."
 		""
@@ -16048,12 +16048,12 @@
 	quest.4619DA1F4243B667.title: "&a&lBuild an Autocrafter"
 	quest.46211537A6B0B9DE.quest_desc: [
 		"{image:kronwerke:textures/quests/shots/mekanism_ores_line2.png width:224 height:126 align:center}"
-		"&6Mekanism&r, &6Einfacher Logistiktransporter&r: &e2 Gegenstände pro Sekunde&r mit 1 Meter pro Sekunde. Fortgeschritten (Stufe 3) 32 pro Sekunde, Elite 64, Ultimativ 128 pro Sekunde (Stufe 4). Farben trennen Stränge, der &6Logistische Sortierer&r filtert. &eStufe 2.&r"
+		"&6Mekanism&r, &6Basic Logistical Transporter&r: &e2 items per second&r at 1 meter per second. Advanced (stage 3) 32 per second, Elite 64, Ultimate 128 per second (stage 4). Colors separate lines, the &6Logistical Sorter&r filters. &eStage 2.&r"
 		""
-		"Zwei Stahlbarren und ein Schaltkreis ergeben acht. Zieht nur, wenn eine Seite mit dem Konfigurator auf Ziehen steht oder die Maschine Auto-Auswurf hat. Siehe Kapitel Mekanism."
+		"Two steel ingots and a circuit give eight. Only pulls when a side is set to pull with the configurator or the machine has auto eject. See the Mekanism chapter."
 	]
-	quest.46211537A6B0B9DE.quest_subtitle: "Mekanism, Logistiktransporter: 2 Stück pro Sekunde, Sortierer als Filter."
-	quest.46211537A6B0B9DE.title: "Lies: Logistiktransporter"
+	quest.46211537A6B0B9DE.quest_subtitle: "Mekanism, Logistical Transporter: 2 items per second, sorter as the filter."
+	quest.46211537A6B0B9DE.title: "Read: Logistical Transporter"
 	quest.462A34FB49DF9AFF.quest_desc: [
 		"&eRecipe:&r A blank &6Pattern&r is glass, redstone, glass at the top, redstone, glass, redstone in the middle, three enriched iron at the bottom. The &6Pattern Grid&r is a Grid, an Advanced Processor and a Pattern, shapeless."
 		""
@@ -16071,12 +16071,12 @@
 	quest.462B27F826F1C5C1.quest_subtitle: "All blueprints in one slot."
 	quest.462B27F826F1C5C1.title: "&7Collect blueprints in a book"
 	quest.462C0F7A23F3F88F.quest_desc: [
-		"&6Botania&r, &6Corporea-Funken&r über Truhen bilden ein Netz. Der &6Corporea-Trichter&r holt bei Redstone-Signal einen Gegenstand heraus, der &6Corporea-Index&r liefert, was du in den Chat schreibst, zum Beispiel &e64 cobblestone&r. Filter über den Namen. &eStufe 3.&r"
+		"&6Botania&r, &6Corporea Sparks&r above chests form a network. The &6Corporea Funnel&r pulls an item out on a redstone signal, the &6Corporea Index&r delivers what you type in chat, for example &e64 cobblestone&r. Filter via the name. &eStage 3.&r"
 		""
-		"Braucht Ender-Essenz und Feenstaub aus Alfheim. Siehe Kapitel Alfheim."
+		"Needs ender air and pixie dust from Alfheim. See the Alfheim chapter."
 	]
-	quest.462C0F7A23F3F88F.quest_subtitle: "Botania, Corporea-Funken: ein Lager, das auf den Chat hört."
-	quest.462C0F7A23F3F88F.title: "Lies: Corporea"
+	quest.462C0F7A23F3F88F.quest_subtitle: "Botania, Corporea Spark: a storage that listens to chat."
+	quest.462C0F7A23F3F88F.title: "Read: Corporea"
 	quest.462C595130F254F7.quest_desc: [
 		"&6Mechanical Drill&r: &d4 SU per RPM&r. Four drills at 32 RPM: 512 SU, two water wheels."
 	]
@@ -17123,14 +17123,14 @@
 	quest.4AC74DFF7F405AB6.quest_subtitle: "The Sun Spirit and the end of the eternal day."
 	quest.4AC74DFF7F405AB6.title: "&c&lGold Dungeon: Comes in Stage 3"
 	quest.4AD3365B683EE324.quest_desc: [
-		"&6Simple Magnets&r, &6Magnet&r: zieht Gegenstände und Erfahrung bis &e5 Blöcke&r weit zu dir, solange er an ist. Der &6Fortgeschrittene Magnet&r reicht &e3 bis 11 Blöcke&r, einstellbar, mit Filter. Beide &eStufe 1.&r"
+		"&6Simple Magnets&r, &6Magnet&r: pulls items and experience up to &e5 blocks&r away to you as long as it is on. The &6Advanced Magnet&r reaches &e3 to 11 blocks&r, adjustable, with a filter. Both &estage 1.&r"
 		""
-		"Rezepte in EMI. Mit der Taste im Tastenmenü schaltest du ihn an und aus. Eine &6Entmagnetisierungsspule&r hält einen Bereich frei, zum Beispiel über dem Werfer deines Handelsplatzes."
+		"Recipes in EMI. With the key from the controls menu you toggle it on and off. A &6Demagnetization Coil&r keeps an area free, for example above the dispenser of your trading spot."
 		""
-		"Dasselbe steckt im &6Magnet-Upgrade&r des Rucksacks, siehe Kapitel Lager."
+		"The same is in the backpack's &6Magnet Upgrade&r, see the Storage chapter."
 	]
-	quest.4AD3365B683EE324.quest_subtitle: "Simple Magnets, Magnet: zieht Gegenstände und XP zu dir."
-	quest.4AD3365B683EE324.title: "Trag einen Magneten"
+	quest.4AD3365B683EE324.quest_subtitle: "Simple Magnets, Magnet: pulls items and XP to you."
+	quest.4AD3365B683EE324.title: "Carry a Magnet"
 	quest.4AEDDD3FE376D864.quest_desc: [
 		"An &6HV Accumulator&r, a &6Wooden Grip&r, two &6steel ingots&r, two &6Electrum Coil Blocks&r and an &6Advanced Electronic Component&r make the &6Railgun&r."
 		""
@@ -17277,12 +17277,12 @@
 	quest.4B9042DBF504BABB.quest_subtitle: "Breaker and placer, the pair for every line."
 	quest.4B9042DBF504BABB.title: "&7Build the Block Placer"
 	quest.4B906184EDD78418.quest_desc: [
-		"&6Refined Storage&r, &6Laufwerk&r mit acht Zellen: 1k &e1 024&r Stück, 4k 4 096, 16k &e16 384&r, egal wie viele Sorten. Konsole, Importeur und Exporteur, Externer Speicher, Autocrafting mit Mustern und Autoherstellern, drahtlose Konsole. &eStufe 3.&r"
+		"&6Refined Storage&r, &6Disk Drive&r with eight cells: 1k &e1,024&r items, 4k 4,096, 16k &e16,384&r, no matter how many kinds. Grid, Importer and Exporter, External Storage, autocrafting with patterns and Autocrafters, Wireless Grid. &eStage 3.&r"
 		""
-		"Keine Kanäle, keine Typen, dafür weniger Zellplatz als AE2. 64k öffnet in Stufe 4. Siehe Kapitel Refined Storage."
+		"No channels, no types, but less cell room than AE2. 64k opens in stage 4. See the Refined Storage chapter."
 	]
-	quest.4B906184EDD78418.quest_subtitle: "Refined Storage, Laufwerk: Zellen ohne Typenzahl."
-	quest.4B906184EDD78418.title: "Lies: Refined Storage"
+	quest.4B906184EDD78418.quest_subtitle: "Refined Storage, Disk Drive: cells without a type count."
+	quest.4B906184EDD78418.title: "Read: Refined Storage"
 	quest.4B93ECF961BA2049.quest_desc: [
 		"&5Pentacle:&r Sevira's Permanent Confinement."
 		"&6Bowls:&r your &6Golden Ritual Bowl&r, &6Research Fragment Dust&r, a &bSpirit Attuned Crystal&r, an &6Iesnium block&r, an &cAfrit Essence&r."
@@ -17379,14 +17379,14 @@
 	quest.4BF437761846EE2C.quest_subtitle: "Arenas for real bosses. Not alone."
 	quest.4BF437761846EE2C.title: "&cKnow the dangerous places"
 	quest.4BF4498213060C57.quest_desc: [
-		"&6Botania&r, &6Hopperhock&r: eine Funktionsblume, die herumliegende Gegenstände in ihrer Nähe aufhebt und in angrenzende Inventare legt. Mana ist freiwillig und vergrößert die Reichweite. Filter über Rahmen an den Truhen. &eStufe 1.&r"
+		"&6Botania&r, &6Hopperhock&r: a functional flower that picks up items lying around near it and puts them into adjacent inventories. Mana is optional and enlarges the range. Filter via frames on the chests. &eStage 1.&r"
 		""
-		"Aus der Blütenapotheke, siehe Kapitel Botania. Mit dem Zauberstab des Waldes im Funktionsmodus wechselst du die Sortierregel."
+		"From the Petal Apothecary, see the Botania chapter. With the Wand of the Forest in function mode you switch the sorting rule."
 		""
-		"Unter einer Mobfalle oder hinter einer Kakteenfarm ersetzt eine Blume den ganzen Trichterboden."
+		"Under a mob trap or behind a cactus farm one flower replaces the whole floor of hoppers."
 	]
-	quest.4BF4498213060C57.quest_subtitle: "Botania, Hopperhock: sammelt vom Boden in die Truhe daneben."
-	quest.4BF4498213060C57.title: "Pflanz eine Trichterblume"
+	quest.4BF4498213060C57.quest_subtitle: "Botania, Hopperhock: collects from the ground into the chest next to it."
+	quest.4BF4498213060C57.title: "Plant a Hopperhock"
 	quest.4BF5047D4A9055F9.quest_desc: [
 		"Four &6Flux Cores&r in a cross around a &6redstone block&r give the &6Flux Point&r. It is the cheaper device, because you need many of them."
 		""
@@ -17509,14 +17509,14 @@
 	quest.4C76F7AEDA486664.title: "&dFuse Draconic"
 	quest.4C83C592231CEA3B.quest_desc: [
 		"{image:kronwerke:textures/quests/shots/list_transport_hose_pulley.png width:224 height:126 align:center}"
-		"&6Create&r, &6Schlauchaufzug&r: lässt einen Schlauch bis &e128 Blöcke&r tief herab und pumpt den See darunter leer oder füllt ihn, so schnell wie das angeschlossene Rohrnetz. Ein Gewässer ab &e10 000 Blöcken&r bleibt dabei unverändert: unendlich Wasser oder Lava. &eStufe 1.&r"
+		"&6Create&r, &6Hose Pulley&r: lowers a hose up to &e128 blocks&r deep and pumps the lake below empty or fills it, as fast as the attached pipe network. A body of water from &e10,000 blocks&r stays unchanged: infinite water or lava. &eStage 1.&r"
 		""
-		"Kupfergehäuse, Trockener-Seetang-Block, Kupferblech. Drehrichtung umkehren zieht den Schlauch ein."
+		"Copper Casing, dried kelp block, copper sheet. Reversing the rotation pulls the hose in."
 		""
-		"&eKronwerke:&r Ein Ozean oder ein großer Lavasee im Nether (Stufe 2) am Schlauchaufzug versorgt Waschanlagen und Wärmegeneratoren für immer."
+		"&eKronwerke:&r An ocean or a big lava lake in the Nether (stage 2) on the Hose Pulley supplies washers and Heat Generators forever."
 	]
-	quest.4C83C592231CEA3B.quest_subtitle: "Create, Schlauchaufzug: ab 10 000 Blöcken unendlich."
-	quest.4C83C592231CEA3B.title: "Häng einen Schlauchaufzug über den See"
+	quest.4C83C592231CEA3B.quest_subtitle: "Create, Hose Pulley: infinite from 10,000 blocks."
+	quest.4C83C592231CEA3B.title: "Hang a Hose Pulley over the Lake"
 	quest.4C8F23728456A495.quest_desc: [
 		"&6Jade&r shows at the top middle which block or creature you are looking at and which mod it comes from. For furnaces and machines you see contents and progress, for plants their growth, for animals and monsters their hearts."
 		""
@@ -17532,14 +17532,14 @@
 	quest.4C911CA3C95AB42A.quest_subtitle: "The scythe from the Monstrosity's loot."
 	quest.4C911CA3C95AB42A.title: "&dBuild the Petal Scythe"
 	quest.4C91F9F44885805A.quest_desc: [
-		"Jede Zeile hier ist ein Weg, &6Gegenstände&r, &bFlüssigkeiten&r, &aGase&r oder &dStrom&r zu bewegen oder zu lagern: Mod, Block, Durchsatz oder Fassung, ob es einen Filter gibt und ab welcher Stufe es geht."
+		"Every line here is a way to move or store &6items&r, &bfluids&r, &agases&r or &dpower&r: mod, block, throughput or capacity, whether there is a filter and from which stage it works."
 		""
-		"Hak ab, was du gebaut hast. Stufe-1-Zeilen wollen den Block sehen, spätere Zeilen sind ein Haken, sobald du sie kennst. Die Rezepte und Details stehen in den Modkapiteln, auf die jede Zeile zeigt."
+		"Tick off what you have built. Stage 1 lines want to see the block, later lines are a checkmark as soon as you know them. The recipes and details are in the mod chapters each line points to."
 		""
-		"Vor jedem Abschnitt steht ein &eWas wann&r mit den zwei besten Wahlen pro Stufe. Wer nur das liest, baut nichts Falsches."
+		"Before every section there is a &eWhat when&r with the two best choices per stage. Whoever only reads that builds nothing wrong."
 	]
-	quest.4C91F9F44885805A.quest_subtitle: "Was Dinge bewegt und wo sie liegen bleiben."
-	quest.4C91F9F44885805A.title: "&6&lTransport und Lager"
+	quest.4C91F9F44885805A.quest_subtitle: "What moves things and where they stay."
+	quest.4C91F9F44885805A.title: "&6&lTransport and Storage"
 	quest.4C9474600262A331.quest_desc: [
 		"In the apparatus: &6Containment Jar&r in the middle, &6Conjuration Essence&r, &6Manipulation Essence&r and an &6ender pearl&r on the pedestals."
 		""
@@ -17901,12 +17901,12 @@
 	quest.4E1BA47934236848.quest_subtitle: "Accelerators below, essence farmland, scythe in hand."
 	quest.4E1BA47934236848.title: "&a&lSet Up an Essence Farm"
 	quest.4E1EFA9809C91E7C.quest_desc: [
-		"Du kennst jetzt jeden Weg, auf dem in Kronwerke etwas von A nach B kommt oder liegen bleibt. Zum Abschluss zeig die Stufe-1-Grundausstattung einer Fabrik: Bänder, Trichter, Rohre, Pumpe und ein Fass dafür."
+		"You now know every way in Kronwerke something gets from A to B or stays put. To finish, show the stage 1 basic kit of a factory: belts, funnels, pipes, pump and a barrel for it."
 		""
 		"&eKronwerke:&r Everything in this chapter moves goods as far as your chests. The last stretch to the obelisk you walk yourself: handing in is done by hand."
 	]
-	quest.4E1EFA9809C91E7C.quest_subtitle: "Fünfmal gelesen, einmal gebaut."
-	quest.4E1EFA9809C91E7C.title: "&6&lAlles verbunden"
+	quest.4E1EFA9809C91E7C.quest_subtitle: "Read five times, built once."
+	quest.4E1EFA9809C91E7C.title: "&6&lAll Connected"
 	quest.4E257FC7D1897C14.quest_desc: [
 		"Time for a proper building. Collect &664 Framed Cubes&r, &616 Copycat Panels&r and &616 Sconces&r, then you have roof, facade and light for a house that looks good on stream."
 		""
@@ -18353,12 +18353,12 @@
 	quest.50025CC2C67A07B2.quest_subtitle: "Your first fusion."
 	quest.50025CC2C67A07B2.title: "&d&lFuse a Wyvern Injector"
 	quest.50096F03B27818A8.quest_desc: [
-		"&6Create&r, &6Ummantelter Kettenriemen&r: Liegen mehrere in einer Reihe, gibt jeder die Drehung an den nächsten weiter, ganz ohne Zahnräder. So führst du eine Welle neben Maschinen vorbei, die im Weg stehen. &eStufe 1.&r"
+		"&6Create&r, &6Encased Chain Drive&r: if several lie in a row, each passes the rotation on to the next, without any cogwheels. That way you run a shaft past machines that are in the way. &eStage 1.&r"
 		""
-		"Ein Andesitgehäuse und drei Eisenklumpen, formlos."
+		"An Andesite Casing and three iron nuggets, shapeless."
 	]
-	quest.50096F03B27818A8.quest_subtitle: "Create, Ummantelter Kettenriemen: Drehung seitlich weitergeben."
-	quest.50096F03B27818A8.title: "Leg einen Kettenriemen"
+	quest.50096F03B27818A8.quest_subtitle: "Create, Encased Chain Drive: pass rotation sideways."
+	quest.50096F03B27818A8.title: "Lay a Chain Drive"
 	quest.501774DAD692CFF7.quest_desc: [
 		"A plug or point connects automatically to every neighbor that takes or gives power. On the block you see a small connector on every connected side, in the &eHome&r tab all six sides are listed with the neighboring block and its flow."
 		""
@@ -18549,12 +18549,12 @@
 	quest.50BB336485F2AB6B.quest_subtitle: "96 RPM and 4,096 SU from one block."
 	quest.50BB336485F2AB6B.title: "&6&lBuild a Diesel Engine"
 	quest.5101AD18AC8C7D6D.quest_desc: [
-		"&6Mekanism&r, &6Einfaches Druckrohr&r: zieht &e750 mB Gas pro Tick&r, Fortgeschritten 2 000 (Stufe 3), Elite 64 000 und Ultimativ 256 000 (Stufe 4). &6Chemikalientank&r: &e64 000 mB&r, dann 256 000, 1 024 000 und 8 192 000 mB. Kein Filter, Seiten mit dem Konfigurator. &eStufe 2.&r"
+		"&6Mekanism&r, &6Basic Pressurized Tube&r: pulls &e750 mB of gas per tick&r, Advanced 2,000 (stage 3), Elite 64,000 and Ultimate 256,000 (stage 4). &6Chemical Tank&r: &e64,000 mB&r, then 256,000, 1,024,000 and 8,192,000 mB. No filter, sides with the configurator. &eStage 2.&r"
 		""
-		"Zwei Stahlbarren und ein Glas ergeben acht Rohre. Sauerstoff, Wasserstoff, Chlor und alles andere aus dem Kapitel Mekanism: Fortgeschritten."
+		"Two steel ingots and a glass give eight tubes. Oxygen, hydrogen, chlorine and everything else from the chapter Mekanism: Advanced."
 	]
-	quest.5101AD18AC8C7D6D.quest_subtitle: "Mekanism, Druckrohr: 750 mB pro Tick, Tank 64 000 mB."
-	quest.5101AD18AC8C7D6D.title: "Lies: Druckrohre und Chemikalientanks"
+	quest.5101AD18AC8C7D6D.quest_subtitle: "Mekanism, Pressurized Tube: 750 mB per tick, tank 64,000 mB."
+	quest.5101AD18AC8C7D6D.title: "Read: Pressurized Tubes and Chemical Tanks"
 	quest.5101B4DD22875170.quest_desc: [
 		"&6Diamond tool&r in the middle, 2 Inferium Ingots left and right, 2 Inferium Gemstones top and bottom, at the crafting table."
 		""
@@ -19002,12 +19002,12 @@
 	quest.533B48A119AC94B6.title: "&dSummon a Greedy Familiar"
 	quest.533DFF66309DB39F.quest_desc: [
 		"{image:kronwerke:textures/quests/shots/storage_vault_big.png width:224 height:126 align:center}"
-		"&6Create&r, &6Tresor&r: &e20 Stapel pro Block&r, Grundfläche bis 3 x 3, bis dreimal so lang wie breit, also bis 81 Blöcke und 1 620 Stapel in einem Inventar. Nur Trichter, Bänder, Arme und Rohre kommen hinein, von Hand geht nichts. Kein Filter. &eStufe 1.&r"
+		"&6Create&r, &6Item Vault&r: &e20 stacks per block&r, footprint up to 3 x 3, up to three times as long as wide, so up to 81 blocks and 1,620 stacks in one inventory. Only funnels, belts, arms and pipes get in, by hand nothing goes. No filter. &eStage 1.&r"
 		""
-		"Zwei Eisenbleche um ein Holzfass. Ein Tresor am Ende der Maschinenstraße fängt alles auf, und ein Komparator meldet den Stand."
+		"Two iron sheets around a wooden barrel. A vault at the end of the machine line catches everything, and a comparator reports the level."
 	]
-	quest.533DFF66309DB39F.quest_subtitle: "Create, Tresor: 20 Stapel pro Block, bis 81 Blöcke am Stück."
-	quest.533DFF66309DB39F.title: "Bau einen Tresor"
+	quest.533DFF66309DB39F.quest_subtitle: "Create, Item Vault: 20 stacks per block, up to 81 blocks in one piece."
+	quest.533DFF66309DB39F.title: "Build a Vault"
 	quest.534A7C35D49D8DEF.quest_desc: [
 		"Fish, fish, fish. With luck you pull out &bNeptunium&r as a nugget, or &6Neptune's Bounty&r in the treasure chest."
 		""
@@ -19428,12 +19428,12 @@
 	quest.5538FC75A11EA5BA.quest_subtitle: "This is where trains are built and stop."
 	quest.5538FC75A11EA5BA.title: "&6Build a Train Station"
 	quest.553F4DAFECEB2F43.quest_desc: [
-		"&6Vanilla&r, &6Endertruhe&r: &e27 Plätze&r, die dir allein gehören und in jeder Endertruhe der Welt gleich sind, auch im Nether. Acht Obsidian um ein Enderauge, und das Auge braucht Lohenstaub. &eStufe 2.&r"
+		"&6Vanilla&r, &6Ender Chest&r: &e27 slots&r that belong to you alone and are the same in every ender chest of the world, in the Nether too. Eight obsidian around an eye of ender, and the eye needs blaze powder. &eStage 2.&r"
 		""
-		"Trichter kommen nicht hinein. Shulkerkisten als tragbare Truhen gibt es erst mit dem End in Stufe 4."
+		"Hoppers do not get in. Shulker boxes as portable chests only exist with the End in stage 4."
 	]
-	quest.553F4DAFECEB2F43.quest_subtitle: "Vanilla, Endertruhe: 27 Plätze, überall dieselben."
-	quest.553F4DAFECEB2F43.title: "Lies: Endertruhe"
+	quest.553F4DAFECEB2F43.quest_subtitle: "Vanilla, ender chest: 27 slots, the same everywhere."
+	quest.553F4DAFECEB2F43.title: "Read: Ender Chest"
 	quest.5541B240F8B684F1.quest_desc: [
 		"{image:kronwerke:textures/quests/shots/eidolon_brazier.png width:224 height:126 align:center}"
 		"&6Bone meal&r on the brazier, one &6redstone&r each on two Stone Hands, light it."
@@ -19729,14 +19729,14 @@
 	quest.56974D2C235B8A69.quest_subtitle: "Twice as much, and redstone listens."
 	quest.56974D2C235B8A69.title: "&fBuild the Basic Upgrade"
 	quest.56B13DC9109A3913.quest_desc: [
-		"&6Sophisticated Storage&r, &6Trichter-Upgrade&r: zieht aus dem Block über der Truhe und schiebt in den darunter, jede Richtung mit eigenem Filter. Der &6Lagerkern&r verteilt alles, was Trichter oder Rohre an ihn liefern, auf den ganzen Truhenverbund. &eStufe 1.&r"
+		"&6Sophisticated Storage&r, &6Hopper Upgrade&r: pulls from the block above the chest and pushes into the one below, each direction with its own filter. The &6Storage Controller&r distributes everything hoppers or pipes deliver to it across the whole chest network. &eStage 1.&r"
 		""
-		"Trichter, zwei Eisenbarren, Upgrade-Basis, drei Redstone. Rezepte und Verbund im Kapitel Lager."
+		"Hopper, two iron ingots, Upgrade Base, three redstone. Recipes and network in the Storage chapter."
 		""
-		"Dazu von &6Functional Storage&r: &6Puller-&r und &6Pusher-Upgrade&r an einer Schublade bewegen &e4 Gegenstände alle 4 Ticks&r in die Schublade hinein oder aus ihr heraus."
+		"Plus from &6Functional Storage&r: &6Puller&r and &6Pusher Upgrade&r on a drawer move &e4 items every 4 ticks&r into or out of the drawer."
 	]
-	quest.56B13DC9109A3913.quest_subtitle: "Sophisticated Storage, Trichter-Upgrade und Lagerkern: das Lager zieht selbst."
-	quest.56B13DC9109A3913.title: "Steck ein Trichter-Upgrade ins Fass"
+	quest.56B13DC9109A3913.quest_subtitle: "Sophisticated Storage, Hopper Upgrade and Storage Controller: the storage pulls by itself."
+	quest.56B13DC9109A3913.title: "Put a Hopper Upgrade into the Barrel"
 	quest.56B6AFF9013FDCC8.quest_desc: [
 		"Electrum, &6Bucket of Redstone Acid&r, electrum on top, &6Nickel Plate&r, &6Basic Engineering Block&r, &6Iron Plate&r at the bottom make the &6MV Accumulator&r."
 		""
@@ -20469,12 +20469,12 @@
 	quest.5978B86F57E43FCE.title: "&6Mill in the millstone"
 	quest.5988FAF7D17F3CC9.quest_desc: [
 		"{image:kronwerke:textures/quests/shots/storage_controller.png width:224 height:126 align:center}"
-		"&6Sophisticated Storage&r, &6Lagerkern&r: Alle Sophisticated-Truhen und -Fässer, die ihn oder einander berühren, werden ein Lager. Rechtsklick mit einem Gegenstand legt ihn passend ab, Trichter und Rohre am Kern verteilen auf den ganzen Verbund. &eStufe 1.&r"
+		"&6Sophisticated Storage&r, &6Storage Controller&r: all Sophisticated chests and barrels that touch it or each other become one storage. Right click with an item puts it away in the right place, hoppers and pipes at the controller distribute to the whole network. &eStage 1.&r"
 		""
-		"Vier Stein, zwei Komparatoren, zwei Bretter um ein Holzfass oder eine Holztruhe. Lücken überbrücken Lagerverbindungen. Siehe Kapitel Lager."
+		"Four stone, two comparators, two planks around a wooden barrel or wooden chest. Storage Links bridge gaps. See the Storage chapter."
 	]
-	quest.5988FAF7D17F3CC9.quest_subtitle: "Sophisticated Storage, Lagerkern: viele Truhen, ein Zugang."
-	quest.5988FAF7D17F3CC9.title: "Verbinde Fässer mit dem Lagerkern"
+	quest.5988FAF7D17F3CC9.quest_subtitle: "Sophisticated Storage, Storage Controller: many chests, one access."
+	quest.5988FAF7D17F3CC9.title: "Connect Barrels with the Storage Controller"
 	quest.599FDC8D45DCD789.quest_desc: [
 		"&6Diamond&r: &e1,561&r durability, speed &e8&r, +3 damage, diamond mining level, Brittle II."
 		""
@@ -20956,12 +20956,12 @@
 	quest.5B72439E13FA934F.quest_subtitle: "Depart by radio."
 	quest.5B72439E13FA934F.title: "&7Redstone Link"
 	quest.5B7733539BCEAB3D.quest_desc: [
-		"&6Ender IO&r, &6Item Conduit&r: &e32 Gegenstände pro Netztakt&r, &6Energetic&r 64, &6Vibrant&r 64 doppelt so oft. Jede Verbindung hat einen Ein- und einen Ausgangsfilter mit Farbkanälen, Prioritäten und Rundlauf. Mehrere Leitungssorten liegen in einem Block. &eStufe 3.&r"
+		"&6Ender IO&r, &6Item Conduit&r: &e32 items per network tick&r, &6Energetic&r 64, &6Vibrant&r 64 twice as often. Every connection has an input and an output filter with color channels, priorities and round robin. Several conduit kinds lie in one block. &eStage 3.&r"
 		""
-		"Leitungen aus Conduit Binder und dem Metall der Stufe. Fassaden verstecken sie hinter jedem Block. Siehe Kapitel Ender IO."
+		"Conduits from Conduit Binder and the stage's metal. Facades hide them behind any block. See the Ender IO chapter."
 	]
-	quest.5B7733539BCEAB3D.quest_subtitle: "Ender IO, Item Conduit: 32 Stück pro Netztakt, Filter in jeder Verbindung."
-	quest.5B7733539BCEAB3D.title: "Lies: Ender-IO-Leitungen"
+	quest.5B7733539BCEAB3D.quest_subtitle: "Ender IO, Item Conduit: 32 items per network tick, filter in every connection."
+	quest.5B7733539BCEAB3D.title: "Read: Ender IO Conduits"
 	quest.5B7C517C27E44A58.quest_desc: [
 		"&6Blank Parchment&r: &e1 paper&r surrounded by &e8 Magebloom Fiber&r. Put it on the Scribe's Table, pick the spell in the book and click the table while sneaking."
 		""
@@ -21283,12 +21283,12 @@
 	quest.5D17215C745178DC.quest_subtitle: "From the Smogstem Forest to the Infected Depths."
 	quest.5D17215C745178DC.title: "&2&lVisit All Twenty Biomes"
 	quest.5D1BAF41EFDB096B.quest_desc: [
-		"&6Immersive Engineering&r, &6Flüssigkeitsrohr&r: verteilt gleichmäßig auf alle Ausgänge, langsam ohne Druck, schnell hinter einer &6Flüssigkeitspumpe&r (&e250 RF/t&r für Hochdruck). &6Holz-&r und &6Metallfass&r 12 Eimer, der &6Tank&r aus Blechmetall &e512 Eimer&r. Kein Filter, ein &6Rohrventil&r sperrt per Redstone. &eStufe 2.&r"
+		"&6Immersive Engineering&r, &6Fluid Pipe&r: distributes evenly to all outputs, slow without pressure, fast behind a &6Fluid Pump&r (&e250 RF/t&r for high pressure). &6Wooden&r and &6Metal Barrel&r 12 buckets, the &6Tank&r from sheetmetal &e512 buckets&r. No filter, a &6pipe valve&r closes by redstone. &eStage 2.&r"
 		""
-		"Hammer trennt und verbindet Rohre, Farbstoff färbt sie, gefärbte Rohre verbinden sich nicht mit neuen. Siehe Kapitel Immersive Engineering."
+		"The hammer separates and connects pipes, dye colors them, dyed pipes do not connect to new ones. See the Immersive Engineering chapter."
 	]
-	quest.5D1BAF41EFDB096B.quest_subtitle: "Immersive Engineering: langsam ohne Druck, 512 Eimer im Tank."
-	quest.5D1BAF41EFDB096B.title: "Lies: IE-Rohre, Pumpe und Tanks"
+	quest.5D1BAF41EFDB096B.quest_subtitle: "Immersive Engineering: slow without pressure, 512 buckets in the tank."
+	quest.5D1BAF41EFDB096B.title: "Read: IE Pipes, Pump and Tanks"
 	quest.5D277AE3F3547F8E.quest_desc: [
 		"A train with cargo storage and interfaces, a schedule with two stations, condition &eCargo Idle&r: the train leaves as soon as loading or unloading has been done for a while."
 		""
@@ -21755,23 +21755,23 @@
 	quest.5FA7EB092C1DCFB2.title: "&aBuild a Volcanic Sourcelink"
 	quest.5FB546D07CC0F1E0.quest_desc: [
 		"{image:kronwerke:textures/quests/shots/list_transport_create_tank.png width:224 height:126 align:center}"
-		"&6Create&r, &6Flüssigkeitstank&r: &e8 Eimer pro Block&r, Grundfläche bis 3 x 3, bis &e32 Blöcke hoch&r, zusammen 2 304 Eimer. Rohre füllen und leeren ihn von jeder Seite, ein Komparator misst den Stand. Von Hand geht in Survival nichts hinein. &eStufe 1.&r"
+		"&6Create&r, &6Fluid Tank&r: &e8 buckets per block&r, footprint up to 3 x 3, up to &e32 blocks high&r, 2,304 buckets together. Pipes fill and empty it from any side, a comparator measures the level. By hand nothing goes in in survival. &eStage 1.&r"
 		""
-		"Zwei Kupferbleche um ein Holzfass. Schraubenschlüssel schaltet das Fenster."
+		"Two copper sheets around a wooden barrel. The wrench toggles the window."
 		""
-		"Becken, Flaschenabfüller und Ausguss füllen und leeren Eimer und Flaschen am Tank."
+		"Basin, Item Drain and Spout fill and empty buckets and bottles at the tank."
 	]
-	quest.5FB546D07CC0F1E0.quest_subtitle: "Create, Flüssigkeitstank: 8 Eimer pro Block, bis 2 304 Eimer am Stück."
-	quest.5FB546D07CC0F1E0.title: "Bau einen Flüssigkeitstank"
+	quest.5FB546D07CC0F1E0.quest_subtitle: "Create, Fluid Tank: 8 buckets per block, up to 2,304 buckets in one piece."
+	quest.5FB546D07CC0F1E0.title: "Build a Fluid Tank"
 	quest.5FB9B5C993CE8435.quest_desc: [
-		"&6Pylons&r, &6Harvester Pylon&r: erntet und pflanzt im eingestellten Bereich alle &e3 Sekunden&r eine Pflanze neu und legt die Ernte in das Inventar direkt über sich. Braucht eine &6Hacke&r im Pylon, keinen Strom, keinen Filter. &eStufe 2&r, Quarz und Schwarzstein kommen aus dem Nether."
+		"&6Pylons&r, &6Harvester Pylon&r: harvests and replants one plant in the set area every &e3 seconds&r and puts the harvest into the inventory directly above it. Needs a &6hoe&r in the pylon, no power, no filter. &eStage 2&r, quartz and blackstone come from the Nether."
 		""
-		"Rezept in EMI. Den Arbeitsbereich stellst du im Fenster in Blöcken ein. Ohne Inventar darüber steht er still. In Stufe 1 übernimmt das der Trichter-Pflanztopf oder die Create-Erntemaschine."
+		"Recipe in EMI. You set the work area in blocks in the window. Without an inventory above it stands still. In stage 1 the Hopper Botany Pot or the Create harvester does that."
 		""
-		"Die anderen drei Pylonen (Infusion, Interdiktion, Expulsion) haben mit Gegenständen nichts zu tun."
+		"The other three pylons (Infusion, Interdiction, Expulsion) have nothing to do with items."
 	]
-	quest.5FB9B5C993CE8435.quest_subtitle: "Pylons, Harvester Pylon: erntet alle drei Sekunden in die Kiste über ihm. Stufe 2."
-	quest.5FB9B5C993CE8435.title: "Merk dir den Ernte-Pylon"
+	quest.5FB9B5C993CE8435.quest_subtitle: "Pylons, Harvester Pylon: harvests every three seconds into the chest above it. Stage 2."
+	quest.5FB9B5C993CE8435.title: "Remember the Harvester Pylon"
 	quest.5FB9FCCC02BA9AD6.quest_desc: [
 		"{image:kronwerke:textures/quests/shots/hostile_networks_deep_learner.png width:224 height:126 align:center}"
 		"&eRecipe on Kronwerke:&r on top &6obsidian&r, &6redstone repeater&r, obsidian. Middle repeater, &6Electron Tube&r from Create, repeater. Bottom obsidian, &6redstone&r, obsidian."
@@ -22290,14 +22290,14 @@
 	quest.61C8DBA871625226.quest_subtitle: "The catalyst for digestion."
 	quest.61C8DBA871625226.title: "&6Purify Gold"
 	quest.61CEAEC262E568C2.quest_desc: [
-		"&eStufe 1:&r &6Create-Rohre mit Mechanischer Pumpe&r für alles Kurze und der &6Schlauchaufzug&r über einem See oder Lavasee für Unendliches. Lagern im &6Create-Flüssigkeitstank&r."
+		"&eStage 1:&r &6Create pipes with a Mechanical Pump&r for everything short and the &6Hose Pulley&r over a lake or lava lake for the infinite. Storage in the &6Create Fluid Tank&r."
 		""
-		"&eStufe 2:&r &6Pipez-Flüssigkeitsrohre&r (500 mB/t mit der Verbesserten Modifikation) als Allzweckleitung und die &6Ranged Pump&r im Nether für Lava. Mekanism-Rohre und -Tanks innerhalb der Mekanism-Fabrik."
+		"&eStage 2:&r &6Pipez fluid pipes&r (500 mB/t with the Improved Upgrade) as the all-purpose line and the &6Ranged Pump&r in the Nether for lava. Mekanism pipes and tanks within the Mekanism factory."
 		""
-		"&eStufe 3:&r &6Ender-IO-Flüssigkeitsleitungen&r (bis 8 000 mB) für die großen Mengen und &6Flüssigkeitszellen&r in AE2 oder RS, damit Lava, Öl und Chemie im Lager liegen statt in Tanks."
+		"&eStage 3:&r &6Ender IO fluid conduits&r (up to 8,000 mB) for the big amounts and &6fluid cells&r in AE2 or RS, so lava, oil and chemicals lie in storage instead of tanks."
 	]
-	quest.61CEAEC262E568C2.quest_subtitle: "Zwei Wahlen pro Stufe."
-	quest.61CEAEC262E568C2.title: "&b&lWas wann: Flüssigkeiten"
+	quest.61CEAEC262E568C2.quest_subtitle: "Two choices per stage."
+	quest.61CEAEC262E568C2.title: "&b&lWhat When: Fluids"
 	quest.61D6442CC6B1747B.quest_desc: [
 		"Four &6redstone&r and a &6water bucket&r, shapeless in the crafting table, make a &6Bucket of Redstone Acid&r."
 		""
@@ -22357,12 +22357,12 @@
 	quest.620E5F31B282373E.quest_subtitle: "Signposts and flags for the server."
 	quest.620E5F31B282373E.title: "&6Show the Way"
 	quest.621FDA4F4D181954.quest_desc: [
-		"&6Create&r, &6Gewichteter Werfer&r: wirft, was auf ihm landet, &ebis 32 Blöcke&r weit zu einem Ziel, das du vorher mit Schleichen und Rechtsklick festlegst. Auf eine Kiste gezielt wartet er, bis Platz ist. Mit Stückzahl am Wertefeld wirft er erst ab dieser Menge. &eStufe 1.&r"
+		"&6Create&r, &6Weighted Ejector&r: throws whatever lands on it &eup to 32 blocks&r to a target you set beforehand with sneak and right click. Aimed at a chest, it waits until there is room. With a count in the value box it only throws from that amount. &eStage 1.&r"
 		""
-		"Goldblech, Depot und Zahnrad untereinander, &d2 SU pro RPM&r. Siehe Kapitel Create."
+		"Gold sheet, depot and cogwheel on top of each other, &d2 SU per RPM&r. See the Create chapter."
 	]
-	quest.621FDA4F4D181954.quest_subtitle: "Create, Gewichteter Werfer: bis 32 Blöcke weit, ohne Band."
-	quest.621FDA4F4D181954.title: "Wirf mit dem Gewichteten Werfer"
+	quest.621FDA4F4D181954.quest_subtitle: "Create, Weighted Ejector: up to 32 blocks, without a belt."
+	quest.621FDA4F4D181954.title: "Throw with the Weighted Ejector"
 	quest.623717357CBDF5EB.quest_desc: [
 		"{image:kronwerke:textures/quests/shots/immersive_heavy_crusher.png width:224 height:126 align:center}"
 		"&e10 Light Engineering Blocks, 10 Steel Scaffolding, 8 Steel Fences, 9 hoppers, 1 Redstone Engineering Block&r. Hammer on the middle fence of the long side with the Redstone block."
@@ -22748,12 +22748,12 @@
 	quest.639D8F237FAFF578.title: "&bBuild a Mercury Catalyst"
 	quest.639F097D0FD8C0CE.quest_desc: [
 		"{image:kronwerke:textures/quests/shots/immersive_connectors.png width:224 height:126 align:center}"
-		"&6Immersive Engineering&r, &6Kupferdraht&r (NS): &e2 048 RF/t&r, 16 Blöcke je Spanne, &6Elektrumdraht&r (MS): 8 192 RF/t, 16 Blöcke, &6Stahldraht&r (HS): &e32 768 RF/t&r, 32 Blöcke. Ein &6Verbinder&r nimmt nur 256, 1 024 oder 4 096 RF/t an, &6Relais&r reichen weiter. &eStufe 2.&r"
+		"&6Immersive Engineering&r, &6Copper Wire&r (LV): &e2,048 RF/t&r, 16 blocks per span, &6Electrum Wire&r (MV): 8,192 RF/t, 16 blocks, &6Steel Wire&r (HV): &e32,768 RF/t&r, 32 blocks. A &6connector&r only accepts 256, 1,024 or 4,096 RF/t, &6relays&r pass it on. &eStage 2.&r"
 		""
-		"Drahtspule in der Hand, ersten Verbinder anklicken, zweiten anklicken. Drähte zerreißen, wenn ein Block in ihrem Weg steht, und Berühren tut weh. Siehe Kapitel Immersive Engineering."
+		"Wire coil in hand, click the first connector, click the second one. Wires break when a block stands in their way, and touching them hurts. See the Immersive Engineering chapter."
 	]
-	quest.639F097D0FD8C0CE.quest_subtitle: "Immersive Engineering, Drähte: 2 048, 8 192 oder 32 768 RF pro Tick über Land."
-	quest.639F097D0FD8C0CE.title: "Lies: IE-Drähte"
+	quest.639F097D0FD8C0CE.quest_subtitle: "Immersive Engineering, wires: 2,048, 8,192 or 32,768 RF per tick across land."
+	quest.639F097D0FD8C0CE.title: "Read: IE Wires"
 	quest.63A10BD536201FFA.quest_desc: [
 		"Crafter recipe with copper spools, capacitors, brass casing, brass sheets and an Electron Tube. It charges items on a depot or belt below with FE."
 		""
@@ -22974,12 +22974,12 @@
 	quest.648CD1C6DC37B626.quest_subtitle: "Every ore of the Undergarden with its height."
 	quest.648CD1C6DC37B626.title: "&7&lChecklist: Ores"
 	quest.64A9D9DF0207F477.quest_desc: [
-		"&6PneumaticCraft&r, &6Logistikmodul&r auf einem Druckrohr: holt und liefert zwischen Inventaren mit &6Logistikrahmen&r (Anbieter, Anforderer, Lager) und braucht dafür Luftdruck aus dem Rohr. Filter in jedem Rahmen. &eStufe 2.&r"
+		"&6PneumaticCraft&r, &6Logistics Module&r on a pressure tube: fetches and delivers between inventories with &6Logistics Frames&r (provider, requester, storage) and needs air pressure from the tube for it. Filter in every frame. &eStage 2.&r"
 		""
-		"&eStufe 3:&r Die &6Logistikdrohne&r macht dasselbe fliegend in einem Bereich von &e31 x 31 x 31&r Blöcken, die programmierbare &6Drohne&r alles, was du ihr beibringst. &eRezept auf Kronwerke:&r Jede Drohne braucht ein Präzisionsgetriebe von Create."
+		"&eStage 3:&r The &6Logistics Drone&r does the same flying in an area of &e31 x 31 x 31&r blocks, the programmable &6Drone&r everything you teach it. &eRecipe on Kronwerke:&r Every drone needs a Precision Mechanism from Create."
 	]
-	quest.64A9D9DF0207F477.quest_subtitle: "PneumaticCraft, Logistikmodul: bewegt mit Druckluft, Drohnen fliegen."
-	quest.64A9D9DF0207F477.title: "Lies: Logistikmodule und Drohnen"
+	quest.64A9D9DF0207F477.quest_subtitle: "PneumaticCraft, Logistics Module: moves with compressed air, drones fly."
+	quest.64A9D9DF0207F477.title: "Read: Logistics Modules and Drones"
 	quest.64BF437F7D5CB56E.quest_desc: [
 		"{image:kronwerke:textures/quests/shots/start_here_m_ritual.png width:224 height:126 align:center}"
 		"One Gold Leaf gives 2 &6Gold Powder&r. Lay &e16&r of it as a ring around an empty spot, as the book shows. Around the outside up to 8 &6Wooden Stands&r (Gold Leaf on a log)."
@@ -23621,12 +23621,12 @@
 	quest.67C159C66551679E.quest_subtitle: "Double harvest on every field."
 	quest.67C159C66551679E.title: "&aMake Magical Farmland"
 	quest.67C8E566485640AD.quest_desc: [
-		"&6Vanilla&r, &6Hilfsgeist&r: Gib ihm einen Gegenstand, und er sammelt alles dieser Sorte vom Boden auf und bringt es dir. Spielst du einen &6Notenblock&r, liefert er stattdessen dort ab. Filter ist die eine Sorte in seiner Hand. &eStufe 1.&r"
+		"&6Vanilla&r, &6Allay&r: give it an item, and it collects everything of that kind from the ground and brings it to you. If you play a &6note block&r, it delivers there instead. The filter is the one kind in its hand. &eStage 1.&r"
 		""
-		"Hilfsgeister sitzen in Käfigen bei Plünderer-Außenposten und in Waldanwesen. Ein Notenblock über einem Trichter ist eine Sammelstelle, die ohne Strom und Rohr auskommt."
+		"Allays sit in cages at pillager outposts and in woodland mansions. A note block above a hopper is a collection point that works without power and pipes."
 	]
-	quest.67C8E566485640AD.quest_subtitle: "Vanilla, Hilfsgeist: sucht die Sorte, die du ihm gibst."
-	quest.67C8E566485640AD.title: "Lass einen Hilfsgeist sammeln"
+	quest.67C8E566485640AD.quest_subtitle: "Vanilla, Allay: searches for the kind you give it."
+	quest.67C8E566485640AD.title: "Let an Allay Collect"
 	quest.67CAB45A545ACFE9.quest_desc: [
 		"Binding next to a Starbuncle, then use the script."
 		""
@@ -24338,14 +24338,14 @@
 	quest.6ADDBD81DEBE7D34.quest_subtitle: "The strongest shield of the season."
 	quest.6ADDBD81DEBE7D34.title: "&8Fuse the Chaotic Chestpiece"
 	quest.6AF0D65FDBDA3025.quest_desc: [
-		"&6Pipez&r, &6Item-Rohr&r: &e4 Gegenstände pro Sekunde&r ohne Modifikation, 8 alle 15 Ticks mit der Normalen, 16 alle 10 Ticks mit der Verbesserten. Ein Ende zieht, alle anderen liefern. Filter erst mit der Fortgeschrittenen Modifikation in Stufe 3. &eStufe 2.&r"
+		"&6Pipez&r, &6Item Pipe&r: &e4 items per second&r without an upgrade, 8 every 15 ticks with the Basic one, 16 every 10 ticks with the Improved one. One end extracts, all others deliver. Filter only with the Advanced Upgrade in stage 3. &eStage 2.&r"
 		""
-		"Sechs Eisen, zwei Werfer, ein Redstone ergeben 16 Rohre. Schleichen und Schraubenschlüssel stellt ein Ende auf Ziehen."
+		"Six iron, two dispensers, one redstone give 16 pipes. Sneak and wrench sets an end to extract."
 		""
-		"Alle vier Pipez-Sorten im Kapitel Rohre und Router. Stufe 3 bringt das Universalrohr, Stufe 4 die Ultimative Modifikation mit 64 Stück pro Tick."
+		"All four Pipez kinds in the Pipes and Routers chapter. Stage 3 brings the Universal Pipe, stage 4 the Ultimate Upgrade with 64 items per tick."
 	]
-	quest.6AF0D65FDBDA3025.quest_subtitle: "Pipez, Item-Rohr: 4 Stück pro Sekunde, mit Modifikation mehr."
-	quest.6AF0D65FDBDA3025.title: "Lies: Pipez Item-Rohr"
+	quest.6AF0D65FDBDA3025.quest_subtitle: "Pipez, Item Pipe: 4 items per second, more with an upgrade."
+	quest.6AF0D65FDBDA3025.title: "Read: Pipez Item Pipe"
 	quest.6B059580EA028A54.quest_desc: [
 		"{image:kronwerke:textures/quests/shots/finale_tech.png width:224 height:126 align:center}"
 		"&e4 Draconium Blocks&r into the Fusion Crafting Core, &e4 Draconium Cores&r, &a2 Gaia Spirit Ingots&r and &c1 Dragon Heart&r into the seven Wyvern injectors. Result: &54 Awakened Draconium Blocks&r for 50 million OP."
@@ -25176,12 +25176,12 @@
 	quest.6EE7E899D25E0E86.quest_subtitle: "LPG and coal, poured out."
 	quest.6EE7E899D25E0E86.title: "&f&lCook Plastic"
 	quest.6F07852A716D3465.quest_desc: [
-		"&6Pipez&r, &6Flüssigkeitsrohr&r: &e50 mB pro Tick&r ohne Modifikation, 100 mit der Normalen, 500 mit der Verbesserten, 2 000 mit der Fortgeschrittenen (Stufe 3), 10 000 mit der Ultimativen (Stufe 4). Flüssigkeitsfilter ab Stufe 3. &eStufe 2.&r"
+		"&6Pipez&r, &6Fluid Pipe&r: &e50 mB per tick&r without an upgrade, 100 with the Basic one, 500 with the Improved one, 2,000 with the Advanced one (stage 3), 10,000 with the Ultimate one (stage 4). Fluid filter from stage 3. &eStage 2.&r"
 		""
-		"Wie das Item-Rohr, nur mit zwei Eimern statt der Werfer. Siehe Kapitel Rohre und Router."
+		"Like the item pipe, only with two buckets instead of the dispensers. See the Pipes and Routers chapter."
 	]
-	quest.6F07852A716D3465.quest_subtitle: "Pipez, Flüssigkeitsrohr: 50 mB pro Tick, bis 500 mit Modifikation."
-	quest.6F07852A716D3465.title: "Lies: Pipez Flüssigkeitsrohr"
+	quest.6F07852A716D3465.quest_subtitle: "Pipez, Fluid Pipe: 50 mB per tick, up to 500 with an upgrade."
+	quest.6F07852A716D3465.title: "Read: Pipez Fluid Pipe"
 	quest.6F0E2ECEDFEB12C0.quest_desc: [
 		"&6Terra Shatterer&r: top Terrasteel, &6Mana Tablet&r, Terrasteel, middle Terrasteel, twig, Terrasteel, bottom twig. &6Terra Truncator&r: 4 Terrasteel, glowstone, 2 twigs."
 		""
@@ -25260,12 +25260,12 @@
 	quest.6F6F095C201A9182.quest_subtitle: "It does not want to be touched."
 	quest.6F6F095C201A9182.title: "&5Get the Dragon Egg"
 	quest.6F8E1F1C96414E76.quest_desc: [
-		"&6XNet&r: ein Controller, 8 Kanäle, dünne Kabel zu Connectors an jeder Maschine, Advanced Connector bis &e100 000 RF/t&r und 5 000 mB je Vorgang. &6LaserIO&r: Laser zwischen Nodes bis 8 Blöcke, Karten je Seite, Energy Card bis &e1 000 000 FE/t&r. &6Integrated Tunnels&r: Importer und Exporter am Logiknetz, programmierbar. Alle mit Filtern. &eStufe 3.&r"
+		"&6XNet&r: one controller, 8 channels, thin cables to connectors on every machine, Advanced Connector up to &e100,000 RF/t&r and 5,000 mB per operation. &6LaserIO&r: lasers between nodes up to 8 blocks, cards per side, Energy Card up to &e1,000,000 FE/t&r. &6Integrated Tunnels&r: importers and exporters on the logic network, programmable. All with filters. &eStage 3.&r"
 		""
-		"Alle drei im Kapitel Logistik."
+		"All three in the Logistics chapter."
 	]
-	quest.6F8E1F1C96414E76.quest_subtitle: "Drei Netze, in denen du alles an einer Stelle einstellst."
-	quest.6F8E1F1C96414E76.title: "Lies: XNet, LaserIO, Integrated Tunnels"
+	quest.6F8E1F1C96414E76.quest_subtitle: "Three networks where you set everything up in one place."
+	quest.6F8E1F1C96414E76.title: "Read: XNet, LaserIO, Integrated Tunnels"
 	quest.6F9A91933C4AAD8D.quest_desc: [
 		"&6Cogwheel&r: a shaft and a plank. &6Large Cogwheel&r: a shaft and two planks, or a cogwheel and a plank."
 		""
@@ -25563,14 +25563,14 @@
 	quest.70FACC2FA8C71BAD.quest_subtitle: "Two Manasteel in, one Elementium out."
 	quest.70FACC2FA8C71BAD.title: "&d&lTrade Manasteel for Elementium"
 	quest.71081EF09BA538FD.quest_desc: [
-		"&eStufe 1:&r nichts. Es gibt noch kein Gas zu bewegen."
+		"&eStage 1:&r nothing. There is no gas to move yet."
 		""
-		"&eStufe 2:&r &6Mekanism-Druckrohre&r (750 mB/t) für die kurzen Wege in der Fabrik, &6Pipez-Gasrohre&r, wenn Gas über eine Strecke oder zwischen Mods soll. PneumaticCraft bewegt mit seinen Druckrohren nur seine eigene Druckluft."
+		"&eStage 2:&r &6Mekanism Pressurized Tubes&r (750 mB/t) for the short ways in the factory, &6Pipez gas pipes&r when gas has to travel a distance or between mods. PneumaticCraft only moves its own compressed air with its pressure tubes."
 		""
-		"&eStufe 3:&r &6Fortgeschrittene Druckrohre&r (2 000 mB/t) und &6Chemikalienzellen&r von Applied Mekanistics im AE2-Netz. Stufe 4 bringt die Elite- und Ultimativ-Rohre und den Quantenverschränker, der Gas ohne Rohr verschickt."
+		"&eStage 3:&r &6Advanced Pressurized Tubes&r (2,000 mB/t) and &6chemical cells&r from Applied Mekanistics in the AE2 network. Stage 4 brings the Elite and Ultimate tubes and the Quantum Entangloporter, which sends gas without a tube."
 	]
-	quest.71081EF09BA538FD.quest_subtitle: "Alles Gas ist Mekanism, bis auf die Luft."
-	quest.71081EF09BA538FD.title: "&a&lWas wann: Gase"
+	quest.71081EF09BA538FD.quest_subtitle: "All gas is Mekanism, except for air."
+	quest.71081EF09BA538FD.title: "&a&lWhat When: Gases"
 	quest.711AF6780B31B937.quest_desc: [
 		"Kauf eine &6Banane&r (Generation 3, 4 Smaragde): &e3 Bananen&r pro Blatt mit je 4 Hunger, aber die Blätter reifen langsam (Tempo 0,2). Die Rote Banane (3) ist eine Verwandte mit 4 Hunger. Kochbanane (2), Kokosnuss, Mango, Papaya, Brotfrucht, Jackfrucht, Cempedak, Copoazu, Stachelannone, Hala-Frucht und Baobabfrucht geben &e5 Hunger&r."
 		""
@@ -25940,12 +25940,12 @@
 	quest.729F1279CD6A9918.quest_subtitle: "Alloys without the grid, more per ore."
 	quest.729F1279CD6A9918.title: "&6Build the Alloy Forge"
 	quest.72A517404466EBAB.quest_desc: [
-		"&6Modular Routers&r, &6Router&r: ein Puffer von einem Stapel, neun Module (Ziehen, Senden bis 24 Blöcke durch Wände, Saugen, Vernichten, Abbauen, Setzen), alle 20 Ticks ein Durchlauf, mit Upgrades alle 2 Ticks und 64 Stück. Neun Filterplätze je Modul, der Massenfilter 54. &eStufe 2.&r"
+		"&6Modular Routers&r, &6Router&r: a buffer of one stack, nine modules (pull, send up to 24 blocks through walls, vacuum, void, break, place), one run every 20 ticks, with upgrades every 2 ticks and 64 items. Nine filter slots per module, the bulk filter 54. &eStage 2.&r"
 		""
-		"&eRezept auf Kronwerke:&r Vier Andesitlegierungen, vier Eisengitter und ein Leeres Modul ergeben vier Router. Siehe Kapitel Rohre und Router, dort steht auch die Sortieranlage."
+		"&eRecipe on Kronwerke:&r Four Andesite Alloys, four iron bars and a Blank Module give four routers. See the Pipes and Routers chapter, the sorting system is there too."
 	]
-	quest.72A517404466EBAB.quest_subtitle: "Modular Routers, Router: ein Block, neun Module, jeder Takt ein Stapel."
-	quest.72A517404466EBAB.title: "Lies: Modular Routers"
+	quest.72A517404466EBAB.quest_subtitle: "Modular Routers, Router: one block, nine modules, a stack each cycle."
+	quest.72A517404466EBAB.title: "Read: Modular Routers"
 	quest.72A545400BC9E18B.quest_desc: [
 		"&eRecipe:&r two &6sticks&r diagonally from bottom left, two &6flint&r on top and right, like a small pair of pliers. A &6Wrench&r."
 		""
@@ -26050,12 +26050,12 @@
 	quest.734258EA63B5DEA8.quest_subtitle: "The pickaxe that lasts."
 	quest.734258EA63B5DEA8.title: "&6Forge an Iesnium Pickaxe"
 	quest.73453D0E8632678B.quest_desc: [
-		"&6PneumaticCraft&r, &6Druckrohr&r: trägt Druckluft von Kompressoren zu Maschinen, sicher bis &e5 Bar&r, das &6Verstärkte Druckrohr&r bis 10 Bar, das &6Fortgeschrittene&r bis 20 Bar (Stufe 3). Darüber platzt es. Module auf dem Rohr: Regler, Sicherheitsventil, Logistik. &eStufe 2.&r"
+		"&6PneumaticCraft&r, &6Pressure Tube&r: carries compressed air from compressors to machines, safe up to &e5 bar&r, the &6Reinforced Pressure Tube&r up to 10 bar, the &6Advanced&r one up to 20 bar (stage 3). Above that it bursts. Modules on the tube: regulator, safety valve, logistics. &eStage 2.&r"
 		""
-		"Rezepte in EMI. Mekanism-Gase passen nicht hinein, nur die Luft von PneumaticCraft. Eine &6Rohrkreuzung&r lässt zwei Stränge kreuzen, ohne sie zu verbinden."
+		"Recipes in EMI. Mekanism gases do not fit in, only PneumaticCraft's air. A &6tube junction&r lets two lines cross without connecting them."
 	]
-	quest.73453D0E8632678B.quest_subtitle: "PneumaticCraft, Druckrohr: Luft bis 5 Bar, verstärkt 10, fortgeschritten 20."
-	quest.73453D0E8632678B.title: "Lies: PneumaticCraft-Druckrohre"
+	quest.73453D0E8632678B.quest_subtitle: "PneumaticCraft, Pressure Tube: air up to 5 bar, reinforced 10, advanced 20."
+	quest.73453D0E8632678B.title: "Read: PneumaticCraft Pressure Tubes"
 	quest.734A2C6D76766A84.quest_desc: [
 		"Crafting table: &6Mana Pearl&r, &6Manasteel Ingot&r and &6Livingwood Twig&r on top of each other make the &6Soulscribe&r. Hit an &5enderman&r with it and catch the cloud with an Alfglass Flask."
 		""
@@ -26315,12 +26315,12 @@
 	quest.74920690697F14F5.quest_subtitle: "Hopper on top, hopper below, and you go to sleep."
 	quest.74920690697F14F5.title: "&aAutomate the chamber"
 	quest.7492CA8E478271AC.quest_desc: [
-		"&6Mekanism&r, &6Einfache Tonne&r: &e4 096&r Stück einer Sorte, Fortgeschritten 8 192 (Stufe 3), Elite 32 768 und Ultimativ 262 144 (Stufe 4). Rechtsklick hinein, Linksklick heraus, Auto-Auswurf nach unten. Die &6Persönliche Truhe&r öffnet nur für dich. &eStufe 2.&r"
+		"&6Mekanism&r, &6Basic Bin&r: &e4,096&r of one kind, Advanced 8,192 (stage 3), Elite 32,768 and Ultimate 262,144 (stage 4). Right click in, left click out, auto eject downward. The &6Personal Chest&r only opens for you. &eStage 2.&r"
 		""
-		"&eStufe 4:&r Das &6QIO-Netz&r: Laufwerke mit Millionen Plätzen, Dashboard und tragbares Dashboard, drahtlos ohne Kabel. Siehe Kapitel Mekanism."
+		"&eStage 4:&r The &6QIO network&r: drives with millions of slots, dashboard and portable dashboard, wireless without cables. See the Mekanism chapter."
 	]
-	quest.7492CA8E478271AC.quest_subtitle: "Mekanism, Tonne: 4 096 Stück einer Sorte, QIO in Stufe 4."
-	quest.7492CA8E478271AC.title: "Lies: Tonne und Persönliche Truhe"
+	quest.7492CA8E478271AC.quest_subtitle: "Mekanism, Bin: 4,096 of one kind, QIO in stage 4."
+	quest.7492CA8E478271AC.title: "Read: Bin and Personal Chest"
 	quest.74995A3FE722D93F.quest_desc: [
 		"[\"\",{\"keybind\":\"key.pingwheel.ping_location\",\"color\":\"yellow\"},{\"text\":\" places a \"},{\"text\":\"ping\",\"color\":\"gold\"},{\"text\":\" where you are looking. Everyone nearby sees it as a sign in the world, with distance, and an arrow at the edge of the screen shows the direction.\"}]"
 		""
@@ -26602,12 +26602,12 @@
 	quest.759DFB18CD053CE6.quest_subtitle: "No monsters around the house."
 	quest.759DFB18CD053CE6.title: "&2&lSet up a Sage Burning Plate"
 	quest.75A880B536E4CBE9.quest_desc: [
-		"&6Create&r, &6Flüssigkeitsventil&r: sitzt in einem Rohr und öffnet oder schließt es über eine Welle, die Drehrichtung entscheidet. Mit einer &6Gangschaltung&r an der Welle schaltest du es per Redstone. &eStufe 1.&r"
+		"&6Create&r, &6Fluid Valve&r: sits in a pipe and opens or closes it via a shaft, the rotation direction decides. With a &6Gearshift&r on the shaft you switch it by redstone. &eStage 1.&r"
 		""
-		"Ein Eisenblech und ein Flüssigkeitsrohr, formlos."
+		"An iron sheet and a fluid pipe, shapeless."
 	]
-	quest.75A880B536E4CBE9.quest_subtitle: "Create, Flüssigkeitsventil: Rohr auf, Rohr zu."
-	quest.75A880B536E4CBE9.title: "Setz ein Flüssigkeitsventil"
+	quest.75A880B536E4CBE9.quest_subtitle: "Create, Fluid Valve: pipe open, pipe closed."
+	quest.75A880B536E4CBE9.title: "Place a Fluid Valve"
 	quest.75C29E23C9F0E45C.quest_desc: [
 		"Four &6Timeworn Fabric&r in the corners, one &6clock&r each on top and bottom, one &6flint&r each left and right, a blank &6Spawner Rune&r in the middle."
 		""
@@ -26660,12 +26660,12 @@
 	quest.75F863DBAD6CF428.quest_subtitle: "One item per school."
 	quest.75F863DBAD6CF428.title: "&aCollect the Foci"
 	quest.75FBB19CCF2204F0.quest_desc: [
-		"&6Create&r, &6Werkzeugkasten&r: fasst große Mengen von &e8 verschiedenen&r Gegenständen und behält den Inhalt, wenn du ihn abbaust. Steht er in &e10 Blöcken&r Umkreis, holst du mit gehaltener &eAlt&r-Taste Dinge aus ihm in deine Hand, ohne ihn zu öffnen. &eStufe 1.&r"
+		"&6Create&r, &6Toolbox&r: holds large amounts of &e8 different&r items and keeps the contents when you mine it. If it stands within &e10 blocks&r, holding the &eAlt&r key gets things from it into your hand without opening it. &eStage 1.&r"
 		""
-		"Zahnrad oben, Goldblech, Truhe, Goldblech in der Mitte, Leder unten. Ideal für Schraubenschlüssel, Brille und Baublöcke an der Fabrik. Gefärbt in 16 Farben."
+		"Cogwheel on top, gold sheet, chest, gold sheet in the middle, leather at the bottom. Ideal for wrench, goggles and building blocks at the factory. Dyed in 16 colors."
 	]
-	quest.75FBB19CCF2204F0.quest_subtitle: "Create, Werkzeugkasten: acht Sorten, erreichbar aus 10 Blöcken."
-	quest.75FBB19CCF2204F0.title: "Pack einen Werkzeugkasten"
+	quest.75FBB19CCF2204F0.quest_subtitle: "Create, Toolbox: eight kinds, reachable from 10 blocks."
+	quest.75FBB19CCF2204F0.title: "Pack a Toolbox"
 	quest.761038536A3F396F.quest_desc: [
 		"Draconic tier. Catalyst: the &6Wyvern Pickaxe&r. In eight injectors: &64 netherite ingots&r, &61 Wyvern Core&r, &62 Awakened ingots&r, &61 Draconic Energy Controller&r. Costs 32 million energy."
 		""
@@ -27214,14 +27214,14 @@
 	quest.783B67721615934A.quest_subtitle: "Zehn Bäume, die nur aus Fundstücken entstehen."
 	quest.783B67721615934A.title: "&dZüchte die leuchtenden Hybriden"
 	quest.783E5DE186B29C16.quest_desc: [
-		"&6Create&r, &6Welle&r: trägt Drehkraft geradeaus, &6Zahnräder&r um die Ecke, &6Riemen&r über Abstand, das &6Getriebe&r in alle Richtungen. Belastung in Stresseinheiten, Tempo in Umdrehungen pro Minute, Brille zeigt beides. &eStufe 1.&r"
+		"&6Create&r, &6Shaft&r: carries rotational force straight ahead, &6cogwheels&r around the corner, &6belts&r over distance, the &6Gearbox&r in all directions. Stress in stress units, speed in revolutions per minute, the goggles show both. &eStage 1.&r"
 		""
-		"Zwei Andesitlegierungen übereinander ergeben acht Wellen, Welle und Brett ein Zahnrad. Großes Zahnrad auf kleines verdoppelt die Drehzahl."
+		"Two Andesite Alloys on top of each other give eight shafts, shaft and plank a cogwheel. A large cogwheel onto a small one doubles the speed."
 		""
-		"&eStufe 2:&r Create Crafts and Additions macht mit &6Alternator&r Strom aus Drehkraft und mit dem &6Elektromotor&r Drehkraft aus Strom; seine &6Verbinder&r mit Kupferspule tragen 1 000 FE/t über 16 Blöcke, die großen 5 000 über 32."
+		"&eStage 2:&r Create Crafts and Additions makes power from rotation with the &6Alternator&r and rotation from power with the &6Electric Motor&r; its &6connectors&r with copper spools carry 1,000 FE/t over 16 blocks, the large ones 5,000 over 32."
 	]
-	quest.783E5DE186B29C16.quest_subtitle: "Create, Welle: Drehkraft von Rad zu Maschine."
-	quest.783E5DE186B29C16.title: "Leg Wellen"
+	quest.783E5DE186B29C16.quest_subtitle: "Create, Shaft: rotational force from wheel to machine."
+	quest.783E5DE186B29C16.title: "Lay Shafts"
 	quest.783E84F0CBE1A688.quest_desc: [
 		"Tab &enetwork statistics&r: number of plugs, points, controllers and storages, energy input and output per tick, the total buffer, the stored power and a history of the change. &eAverage Tick&r shows how much computing time your network costs the server."
 		""
@@ -27752,12 +27752,12 @@
 	quest.7A90A5212D250C6C.quest_subtitle: "Five by five, and it waters by itself."
 	quest.7A90A5212D250C6C.title: "&bUpgrade the Watering Can"
 	quest.7AA0054BCF710AF5.quest_desc: [
-		"&6Mekanism&r, &6Einfache Rohrleitung&r: zieht &e250 mB pro Tick&r, Fortgeschritten 1 000 (Stufe 3), Elite 8 000 und Ultimativ 32 000 (Stufe 4). &6Flüssigkeitsbehälter&r: &e32 Eimer&r, dann 64, 128 und 256 Eimer, tragbar mit Inhalt. Kein Filter, Seiten mit dem Konfigurator. &eStufe 2.&r"
+		"&6Mekanism&r, &6Basic Mechanical Pipe&r: pulls &e250 mB per tick&r, Advanced 1,000 (stage 3), Elite 8,000 and Ultimate 32,000 (stage 4). &6Fluid Tank&r: &e32 buckets&r, then 64, 128 and 256 buckets, portable with contents. No filter, sides with the configurator. &eStage 2.&r"
 		""
-		"Zwei Stahlbarren und ein Eimer ergeben acht Rohre. Siehe Kapitel Mekanism."
+		"Two steel ingots and a bucket give eight pipes. See the Mekanism chapter."
 	]
-	quest.7AA0054BCF710AF5.quest_subtitle: "Mekanism, Rohrleitung: 250 mB pro Tick, Tank 32 Eimer."
-	quest.7AA0054BCF710AF5.title: "Lies: Mekanism-Rohre und -Tanks"
+	quest.7AA0054BCF710AF5.quest_subtitle: "Mekanism, Mechanical Pipe: 250 mB per tick, tank 32 buckets."
+	quest.7AA0054BCF710AF5.title: "Read: Mekanism Pipes and Tanks"
 	quest.7AA8D39A5638B696.quest_desc: [
 		"&dHex&r (Abjuration Essence, fermented spider eye, 3 blaze rods, wither rose): more damage under poison, wither or fire, half healing and mana regeneration."
 		"&dWither&r (Abjuration Essence, 3 wither skeleton skulls): the wither effect."
@@ -28231,12 +28231,12 @@
 	quest.7D57F90906C9841C.quest_subtitle: "Snowballs that really hurt."
 	quest.7D57F90906C9841C.title: "&bBuild an Ice Magus Rod"
 	quest.7D5CFC6BE654DAD1.quest_desc: [
-		"&6Powah&r, &6Energiekabel&r: Starter &e500 FE/t&r, Basic 2 000, Hardened 5 000, Blazing 20 000, Niotic 50 000, Spirited &e200 000&r. Die &6Ender-Zelle&r schickt Strom ohne Kabel an jede andere Zelle auf demselben Kanal, Starter 1 000 bis Spirited 400 000 FE/t. &eStufe 3.&r"
+		"&6Powah&r, &6Energy Cable&r: Starter &e500 FE/t&r, Basic 2,000, Hardened 5,000, Blazing 20,000, Niotic 50,000, Spirited &e200,000&r. The &6Ender Cell&r sends power without a cable to every other cell on the same channel, Starter 1,000 to Spirited 400,000 FE/t. &eStage 3.&r"
 		""
-		"Nitro mit 1 000 000 FE/t öffnet in Stufe 4. &eRezept auf Kronwerke:&r Die Energizing Orb, die alle Powah-Metalle macht, braucht einen Manadiamanten. Siehe Kapitel Powah."
+		"Nitro with 1,000,000 FE/t opens in stage 4. &eRecipe on Kronwerke:&r The Energizing Orb, which makes all Powah metals, needs a mana diamond. See the Powah chapter."
 	]
-	quest.7D5CFC6BE654DAD1.quest_subtitle: "Powah, Energiekabel: 500 bis 200 000 FE pro Tick, Ender-Zellen ohne Kabel."
-	quest.7D5CFC6BE654DAD1.title: "Lies: Powah-Kabel und Ender-Zellen"
+	quest.7D5CFC6BE654DAD1.quest_subtitle: "Powah, Energy Cable: 500 to 200,000 FE per tick, Ender Cells without cables."
+	quest.7D5CFC6BE654DAD1.title: "Read: Powah Cables and Ender Cells"
 	quest.7D69F29F6C3D572D.quest_desc: [
 		"An &6Electric Pump&r with a &6Filter Upgrade&r gets &e10 mB of Heavy Water&r per water block. The Electrolytic Separator turns 2 mB of it into &e2 mB of Deuterium&r and 1 mB of oxygen."
 		""
@@ -28259,12 +28259,12 @@
 	quest.7D6F9AF700A832CA.quest_subtitle: "A companion with sound waves."
 	quest.7D6F9AF700A832CA.title: "&dTame a Crystallized Moth"
 	quest.7D70C7C2027FC92F.quest_desc: [
-		"&6Sophisticated Storage&r, &6Packband&r: Rechtsklick auf eine Sophisticated-Truhe, abbauen, und sie fällt mit allem Inhalt als ein Gegenstand. Schleimball und Papier, mehrere Einsätze je Rolle. &eStufe 1.&r"
+		"&6Sophisticated Storage&r, &6Packing Tape&r: right click a Sophisticated chest, mine it, and it drops with all contents as one item. Slimeball and paper, several uses per roll. &eStage 1.&r"
 		""
-		"&eStufe 2:&r Der &6Pappkarton&r von Mekanism (Sägespäne) packt jeden Block mit Inhalt ein, auch Maschinen und Öfen. Create-Tresore und Mekanism-Tanks behalten ihren Inhalt beim Abbauen sowieso."
+		"&eStage 2:&r Mekanism's &6Cardboard Box&r (sawdust) packs any block with contents, machines and furnaces too. Create vaults and Mekanism tanks keep their contents when mined anyway."
 	]
-	quest.7D70C7C2027FC92F.quest_subtitle: "Sophisticated Storage, Packband: eine volle Truhe als ein Gegenstand."
-	quest.7D70C7C2027FC92F.title: "Kleb eine Truhe zu"
+	quest.7D70C7C2027FC92F.quest_subtitle: "Sophisticated Storage, Packing Tape: a full chest as one item."
+	quest.7D70C7C2027FC92F.title: "Tape a Chest Shut"
 	quest.7D82B0CD4091CC36.quest_desc: [
 		"Top &6two Template Boards, iron ingot&r, bottom &6two Template Boards, stick&r."
 		""
@@ -28532,14 +28532,14 @@
 	quest.7EA7F4A9070E15E8.quest_subtitle: "Comes in stage 4. The prediction becomes the drop."
 	quest.7EA7F4A9070E15E8.title: "&6&lThe Loot Fabricator"
 	quest.7EB618D817E03CC1.quest_desc: [
-		"&6Applied Energistics 2&r, &6ME-Importbus&r und &6Exportbus&r: &e4 Vorgänge pro Sekunde&r, 1 Gegenstand je Vorgang, mit vier Beschleunigungskarten 96. Der &6Speicherbus&r macht jede Truhe zum Netzlager. Filterplätze in jedem Bus. &eStufe 3.&r"
+		"&6Applied Energistics 2&r, &6ME Import Bus&r and &6Export Bus&r: &e4 operations per second&r, 1 item per operation, 96 with four Acceleration Cards. The &6Storage Bus&r makes any chest network storage. Filter slots in every bus. &eStage 3.&r"
 		""
-		"&6Refined Storage&r, &6Importeur&r und &6Exporteur&r: je 2 FE pro Tick, neun Filterplätze, Externer Speicher als Gegenstück zum Speicherbus. &eStufe 3.&r"
+		"&6Refined Storage&r, &6Importer&r and &6Exporter&r: 2 FE per tick each, nine filter slots, External Storage as the counterpart to the Storage Bus. &eStage 3.&r"
 		""
-		"Ein Netz ersetzt alle Rohre zwischen Lager und Maschinen. Siehe Kapitel Applied Energistics 2 und Refined Storage."
+		"A network replaces all pipes between storage and machines. See the Applied Energistics 2 and Refined Storage chapters."
 	]
-	quest.7EB618D817E03CC1.quest_subtitle: "AE2 und Refined Storage: das Lager holt und bringt selbst."
-	quest.7EB618D817E03CC1.title: "Lies: Import- und Exportbusse"
+	quest.7EB618D817E03CC1.quest_subtitle: "AE2 and Refined Storage: the storage fetches and brings by itself."
+	quest.7EB618D817E03CC1.title: "Read: Import and Export Buses"
 	quest.7EB98F0503721016.quest_desc: [
 		"Material: &e4 deepslate&r (smelted from cobbled deepslate)."
 		""
@@ -28976,7 +28976,7 @@
 	task.1D73F112CA4E4ED0.title: "Regenbogeneukalyptus (Balsa + Rosen-Eukalyptus, 10 %)"
 	task.1D7524C4044CF5D0.title: "Alloy Kiln"
 	task.1D80871CAB9C21B9.title: "Read"
-	task.1D868F511392795D.title: "Los geht es"
+	task.1D868F511392795D.title: "Let's go"
 	task.1D916F103064E996.title: "Reactor feeds the network"
 	task.1DB6408FF141133D.title: "Infused"
 	task.1DF4F92074D7F0D5.title: "Comes in stage 4: read"
@@ -29086,7 +29086,7 @@
 	task.271927D81AEF3337.title: "Set a flag"
 	task.271B86E1EDDCD36D.title: "Wireless charging active"
 	task.271F6244911CD9A8.title: "Stage 4 is open"
-	task.27272A6E3ED1DE86.title: "Gemerkt"
+	task.27272A6E3ED1DE86.title: "Remembered"
 	task.272DD4E858884480.title: "Got it"
 	task.273835BD738D70C4.title: "Read"
 	task.27390AB19E94EA14.title: "Foliot Crystallizer summoned"

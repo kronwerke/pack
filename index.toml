@@ -9,6 +9,10 @@ file = ".pg-native/libpowergridNative7.so"
 hash = "c90e98869ed32ed8bff68aa5a856f4507ca09025a6152d9df718115637c8e837"
 
 [[files]]
+file = "config/almostunified/unification/materials.json"
+hash = "0eb65d6352a1b57e74d2d03ae692268a8ec3007d3456e070889ba658773bc085"
+
+[[files]]
 file = "config/artifacts/general.toml"
 hash = "6b65a3abce6f82cc9d5ebae89b850528170e629bb0db6e31abda2e27f5cad0e3"
 
@@ -438,7 +442,7 @@ hash = "655358d7b672dbdae614d2df33e5aa3cddf4d889738f6b787289d99c6a2eeb5a"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/enderio.snbt"
-hash = "e59b309083f6aa6ca9a6bb823483df9ed6a7ec086c737b983851939b667e422a"
+hash = "80635c7048433b91309efc8d823382e517b247411681fae96c96addc05ab5bfa"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/eternal_starlight.snbt"
@@ -486,15 +490,15 @@ hash = "4f87ec03ec788c30ef22a598b2e716dd4c8fbbec1d29e9a0c73db3085a565dfd"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/immersive.snbt"
-hash = "0a1ecc37021dc3eccb2ad31188dab39bef3f0a727361ffc6e8671057f23c7698"
+hash = "597f3fe4a3f535cd9bbed7c28d73adf96fed8cc8c6eb3cc8ac2fc9ea55081fdf"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/immersive_heavy.snbt"
-hash = "2db2b0025034e30947f051b1aea3fa02192e214214998e0a8afb7f1f5349ace9"
+hash = "f97884b4d79b627e763ab9d8a2585a10b188ee43135c10ac8ee6e972235e1092"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/industrial.snbt"
-hash = "e0d91674ef6767c94ff396c8b3700983500c2ae27699c7ea5be1c719c60fadef"
+hash = "a1996b4cb15b15685623243ae0203e1e7e59b10e4a325d2e5479d5d9d002c41f"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/irons_spells.snbt"
@@ -538,11 +542,11 @@ hash = "39719c068784ec87f33039312da51c43dcd064ea27da7578902b821d9a78c7d5"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/mekanism_elite.snbt"
-hash = "fea59e49247d71a0b023890039af0093999710432f4fd9e3b5c9007923432632"
+hash = "f409cf4b1f5ee70aa3b69d7678f9fb8bf4a4823533c12b91f601ab81b28c668a"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/mekanism_ores.snbt"
-hash = "82d1acbd9eaf8a566e1cfa4b7ea04ac3da121e07a7fa4e9fbbe7f6c62a9c7a18"
+hash = "c021a31d394e7c87b4d69c25002368247cf6076fa5fbf4345260cbd2e11f9123"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/mystical_agriculture.snbt"
@@ -554,7 +558,7 @@ hash = "1623b9437d0205cd10712c150d2035a2da67bd2d3c8d5db601ce502a102f26fe"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/nuclearcraft.snbt"
-hash = "f60c117332b7c13b98a42aa3cbcc1be97b4f63e7ad778d04adb6a4cdc7ccb822"
+hash = "3d4575655e4265c47b1eeaebd851664da54703435f8b91ced29db2cf313d0d04"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/occultism.snbt"
@@ -566,7 +570,7 @@ hash = "dabb9ce1c042b8601b3b5b9340539ef02ac820664a9352a92c09c44670631963"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/oritech.snbt"
-hash = "410b78e6436de26aef02f929a6a43524c60d77e1e8a811a99b780a2d499729e8"
+hash = "ca600016b3cd9a5ab30a4e4fcb64e52552d1f5d81ff0e73a09be39925cad458a"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/pipes.snbt"
@@ -686,7 +690,7 @@ hash = "c5b18a94e089db11b5fb0eebf9d4f7e144c2e2d94fc815573203e72aad8fea05"
 
 [[files]]
 file = "config/ftbquests/quests/reward_tables/s4_uncommon.snbt"
-hash = "15dfa35052bc5aae07706a91255fcd1b1c9758838ec45889dc71b68d0ba09548"
+hash = "63a783f8cbb646777f2b9529fe4c6096a49498681344d3e2fe3978f08d83e3b7"
 
 [[files]]
 file = "config/ftbquests/quests/reward_tables/s5_common.snbt"
@@ -8043,6 +8047,16 @@ metafile = true
 [[files]]
 file = "mods/ai-improvements.pw.toml"
 hash = "035d27b4ea4da57db6cb1b2999c5ee2017737310811f86fb29f80526718b05fc"
+metafile = true
+
+[[files]]
+file = "mods/almost-unified-ie.pw.toml"
+hash = "502f0faff0907e876b91eea68cc04d3342c22cd656d4555ad4f353885416301a"
+metafile = true
+
+[[files]]
+file = "mods/almostunified.pw.toml"
+hash = "3805fe2877cffdae5e7bf74d85069a2535daa39a0f3ed766755be49294a07680"
 metafile = true
 
 [[files]]

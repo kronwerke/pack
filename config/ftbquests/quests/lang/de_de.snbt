@@ -2856,6 +2856,13 @@
 	]
 	quest.17A8D8F1BA111955.quest_subtitle: "Inventory Proxy Addon."
 	quest.17A8D8F1BA111955.title: "&aGib einem Slot einen eigenen Zugang"
+	quest.17AEFC7B30729BAB.quest_desc: [
+		"Bau mit einer &6Axt&r einen Stamm ab, und der ganze Baum fällt. Die Axt nutzt sich für jeden Stamm ab. Wer &eschleicht&r, baut nur den einen Block ab, so bleibt ein Baumhaus stehen."
+		""
+		"Die Blätter eines gefällten Baums verschwinden nach ein paar Sekunden von selbst, Setzlinge und Äpfel fallen dabei wie sonst."
+	]
+	quest.17AEFC7B30729BAB.quest_subtitle: "Ein Stamm, und alles liegt."
+	quest.17AEFC7B30729BAB.title: "&aFäll den ganzen Baum"
 	quest.17B161F925A01E59.quest_desc: [
 		"Schild-Blaupause (drei Blaues Papier, ein Eisenbarren, drei Stöcke), die Schildplatte aus &ezwei&r Material. Kapitel &6Silent Gear&r."
 		""
@@ -9045,6 +9052,13 @@
 	]
 	quest.29C589728E7570CC.quest_subtitle: "Der graue Stein, aus dem fast alles hier entsteht."
 	quest.29C589728E7570CC.title: "&6Bau Andesit ab"
+	quest.29C8E8BCADDFFA65.quest_desc: [
+		"Die &6Mega Torch&r von Torchmaster verhindert, dass im Umkreis von &e32 Blöcken&r Monster spawnen, auch im Dunkeln und unter der Erde. Spawner arbeiten weiter. Die &6Dread Lamp&r macht dasselbe für friedliche Tiere."
+		""
+		"Die &6Feral Flare Lantern&r setzt unsichtbare Lichter in ihre Umgebung und leuchtet so eine Höhle aus. Rezepte in EMI."
+	]
+	quest.29C8E8BCADDFFA65.quest_subtitle: "Eine Fackel für die ganze Basis."
+	quest.29C8E8BCADDFFA65.title: "&eHalt Monster fern"
 	quest.29D33BAB626DA04B.quest_desc: [
 		"&eRezept auf Kronwerke:&r sieben &6Eisenbarren&r um einen &6Mahlstein&r von Create, oben in der Mitte bleibt frei. Wirf Waben hinein oder leg sie ins Fenster, nach &e15 Sekunden&r kommt heraus, was die Biene gesammelt hat, dazu &6Wachs&r."
 		""
@@ -17606,6 +17620,13 @@
 	]
 	quest.4CE3E78D9929AB65.quest_subtitle: "Karton, Verpacker, Adresse."
 	quest.4CE3E78D9929AB65.title: "&6Pack ein Paket"
+	quest.4CEB661A02C734F7.quest_desc: [
+		"Die &6Elytra&r passen in einen eigenen &eSchmuckplatz&r auf dem Rücken. Dein Brustpanzer bleibt an, und du fliegst trotzdem."
+		""
+		"Die &6Create-Brille&r hat ebenfalls einen eigenen Platz. Im Inventar öffnet der kleine Knopf über deiner Figur die Schmuckplätze."
+	]
+	quest.4CEB661A02C734F7.quest_subtitle: "Die Flügel haben einen eigenen Platz."
+	quest.4CEB661A02C734F7.title: "&bTrag Elytra und Brustpanzer"
 	quest.4CEC503F60C10794.quest_desc: [
 		"{image:kronwerke:textures/quests/shots/storage_controller.png width:224 height:126 align:center}"
 		"&6Vier Stein&r in die Ecken, &6zwei Komparatoren&r oben und unten, &6zwei Bretter&r an den Seiten, ein Sophisticated-Fass oder eine -Truhe der Holzstufe in die Mitte."
@@ -18997,6 +19018,15 @@
 	]
 	quest.53514A25A75A41BB.quest_subtitle: "Nicht dieselbe wie beim Rucksack."
 	quest.53514A25A75A41BB.title: "Bau eine Upgrade-Basis für Truhen"
+	quest.53514EDE2640B797.quest_desc: [
+		"&6Doppeltüren&r gehen zusammen auf. Ein leerer Stapel in der Hand füllt sich aus dem Inventar nach. Der Tooltip einer &6Shulkerkiste&r zeigt ihren Inhalt, der eines Werkzeugs seine Haltbarkeit als Zahl."
+		""
+		"Blöcke setzt du an die Kante vor dir, ohne zu schleichen: schau schräg nach unten über den Rand. Durch Gras und Blumen hindurch triffst du, was dahinter steht."
+		""
+		"Die &6Crafting on a Stick&r-Werkbank trägst du in der Hand. Und im Zaubertisch, bei Händlern und in Truhen findest du &dUnermüdlich&r: mit dieser Verzauberung kostet Ultimine auf dem Werkzeug keinen Hunger."
+	]
+	quest.53514EDE2640B797.quest_subtitle: "Was im Alltag einfach da ist."
+	quest.53514EDE2640B797.title: "&7Kenn die Kleinigkeiten"
 	quest.53598BFDD376FB7D.quest_desc: [
 		"Bau einen &6Braustand&r (Lohenrute, 3 Bruchstein). Wasserflasche plus &6Netherwarze&r, dann &6Magmacreme&r, ergibt den &6Trank der Feuerresistenz&r."
 		""
@@ -23764,6 +23794,15 @@
 	]
 	quest.6880C52DD0366C72.quest_subtitle: "Der Altar wird schneller."
 	quest.6880C52DD0366C72.title: "&eStell Runewood-Obelisken auf"
+	quest.68955C43FCF9E50A.quest_desc: [
+		"[\"\",{\"text\":\"Easy Villagers:\",\"color\":\"gold\"},{\"text\":\" Schleich und drück \"},{\"keybind\":\"key.easy_villagers.pick_up\",\"color\":\"yellow\"},{\"text\":\" vor einem Dorfbewohner, und du hast ihn als Gegenstand im Inventar. Ein Rechtsklick setzt ihn wieder ab. In den Blöcken der Mod arbeitet er, ohne herumzulaufen: \"},{\"text\":\"Trader\",\"color\":\"gold\"},{\"text\":\" zum Handeln, \"},{\"text\":\"Breeder\",\"color\":\"gold\"},{\"text\":\" für Nachwuchs, \"},{\"text\":\"Farmer\",\"color\":\"gold\"},{\"text\":\", \"},{\"text\":\"Iron Farm\",\"color\":\"gold\"},{\"text\":\", \"},{\"text\":\"Converter\",\"color\":\"gold\"},{\"text\":\" und \"},{\"text\":\"Incubator\",\"color\":\"gold\"},{\"text\":\". Rezepte in EMI.\"}]"
+		""
+		"[\"\",{\"text\":\"Gefällt dir ein Angebot nicht, wechsle es im Handelsfenster mit dem Knopf oder mit \"},{\"keybind\":\"key.easy_villagers.cycle_trades\",\"color\":\"yellow\"},{\"text\":\". Das geht, solange du mit ihm noch nicht gehandelt hast.\"}]"
+		""
+		"Dorfbewohner in Blöcken laufen nicht, suchen keine Wege und kosten den Server fast nichts. Eine Handelshalle baust du am besten so."
+	]
+	quest.68955C43FCF9E50A.quest_subtitle: "Als Gegenstand, und mit neuen Angeboten."
+	quest.68955C43FCF9E50A.title: "&aNimm einen Dorfbewohner mit"
 	quest.689CD3C6861A5DC5.quest_desc: [
 		"Drei Glas oben, ME-Laufwerk, Glaskabel, ME-Laufwerk in der Mitte, Eisen, Logikprozessor, Eisen unten."
 		""
@@ -27861,6 +27900,15 @@
 	]
 	quest.7BBA588FE89BA602.quest_subtitle: "Drei Zutaten rein, ein Barren raus."
 	quest.7BBA588FE89BA602.title: "&6&lBau die Legierungsschmelze"
+	quest.7BD2437CE352E835.quest_desc: [
+		"Mit &6Easy Anvils&r bleiben Gegenstände im Amboss liegen, wenn du das Fenster schließt. Die Grenze &eZu teuer&r gibt es nicht mehr, Umbenennen kostet nichts und schadet dem Amboss nicht, und Bücher kosten die Hälfte."
+		""
+		"Ein beschädigter Amboss wird mit einem &6Eisenblock&r in der Hand per Rechtsklick wieder ganz. Ein &6Namensschild&r beschriftest du ohne Amboss: schleichen und Rechtsklick."
+		""
+		"Die &6Werkbank&r behält ihre Zutaten ebenfalls, und du siehst sie auf dem Tisch liegen."
+	]
+	quest.7BD2437CE352E835.quest_subtitle: "Nichts fällt heraus, nichts ist zu teuer."
+	quest.7BD2437CE352E835.title: "&7Lern den neuen Amboss kennen"
 	quest.7BD585B291576480.quest_desc: [
 		"Wirf &6Eisenbarren&r auf den Boden, stell &6TNT&r daneben und zünde es. Aus den Barren wird &6Druckeisen&r (Compressed Iron Ingot), etwa &e20 Prozent&r gehen dabei verloren. Ein Eisenblock wird genauso zu einem Druckeisenblock."
 		""
@@ -29114,6 +29162,7 @@
 	task.2DE27E20F66AA565.title: "Mitglied eingetragen"
 	task.2DED0DD3A609190A.title: "Ein Black Moa geritten"
 	task.2DF457E06D87FE64.title: "Die Kohle fällt von selbst"
+	task.2E08A2E702ECE3C2.title: "Gelesen"
 	task.2E0E6D2B6ACA67C1.title: "Einen Bagger formen"
 	task.2E2108BBFB47A263.title: "Meka-Werkzeug gebaut"
 	task.2E29253624A0C8B2.title: "Abgehakt"
@@ -29278,6 +29327,7 @@
 	task.458DCE11AC0B5C74.title: "Angeschaut"
 	task.45D45D3368E4A82B.title: "Abgehakt"
 	task.45FDA4E09C66629B.title: "Ausprobiert"
+	task.4605EE293A6CBA67.title: "Gefällt"
 	task.462EEF16152A65E1.title: "Hedyrin's Lure gezeichnet"
 	task.464AD4ABC93F26F9.title: "Gelesen"
 	task.468088E0A05589CE.title: "Basis beansprucht"
@@ -29356,6 +29406,7 @@
 	task.5177BE7A650C473D.title: "Gelesen"
 	task.517C5A21FAA6EF99.title: "Gelesen"
 	task.51907BF38E918501.title: "Blitzableiter"
+	task.51C101AC3068E3EE.title: "Angelegt"
 	task.51D4D2CEAAEDDF32.title: "Verstanden"
 	task.51D6EB906E6A4BED.title: "Eziveus' Spectral Compulsion gezeichnet"
 	task.52046C9E5020AEC2.title: "Verstanden"
@@ -29545,6 +29596,7 @@
 	task.694DA063BAFAEB08.title: "Abgehakt"
 	task.6966B4E2528F443D.title: "Gelesen"
 	task.696E0A45A509128F.title: "Gelesen"
+	task.697282531089F33A.title: "Mitgenommen"
 	task.699DABF6076BAC8F.title: "Abgehakt"
 	task.69A910C20B3EABEC.title: "Otherrock-Händler beschworen"
 	task.69C2257B65034D82.title: "Sternbunkel eingerichtet"
@@ -29605,6 +29657,7 @@
 	task.724F910AB8F4B77F.title: "Weiß, wo das Log liegt"
 	task.728D7144F2369098.title: "Netzwerk erstellt"
 	task.72E543045B9E765C.title: "Supremium-Werkzeug gebaut"
+	task.72FE42D9FFCC1040.title: "Gelesen"
 	task.731765BEDF57EB3C.title: "Angeschaut"
 	task.73940789695E95EE.title: "Verstanden"
 	task.73A24673DA264C80.title: "Los geht's"

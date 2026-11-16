@@ -13,7 +13,7 @@
 		{
 			id: "76B6BE3C8FF63884"
 			x: 0.5d
-			y: 3.225d
+			y: 4.075d
 			icon: {
 				id: "simplemagnets:basicmagnet"
 				count: 1
@@ -37,7 +37,7 @@
 		}
 		{
 			id: "185514AA89041936"
-			x: 4.0d
+			x: 6.85d
 			y: 5.475d
 			icon: {
 				id: "simplemagnets:basicmagnet"
@@ -77,7 +77,7 @@
 		}
 		{
 			id: "28DB0299AFB55DEF"
-			x: 6.0d
+			x: 8.85d
 			y: 4.125d
 			icon: {
 				id: "simplemagnets:advancedmagnet"
@@ -118,7 +118,7 @@
 		}
 		{
 			id: "5BF86ABF0D0B011B"
-			x: 6.0d
+			x: 8.85d
 			y: 6.825d
 			icon: {
 				id: "simplemagnets:basic_demagnetization_coil"
@@ -159,7 +159,7 @@
 		}
 		{
 			id: "63F2A47571A71948"
-			x: 6.0d
+			x: 8.85d
 			y: 5.475d
 			icon: {
 				id: "itemcollectors:basic_collector"
@@ -199,7 +199,7 @@
 		}
 		{
 			id: "60DCDA43CC63EA05"
-			x: 7.35d
+			x: 10.2d
 			y: 4.125d
 			icon: {
 				id: "simplemagnets:basicmagnet"
@@ -226,7 +226,7 @@
 		}
 		{
 			id: "1BE3F59805996FA5"
-			x: 10.35d
+			x: 13.2d
 			y: 4.125d
 			icon: {
 				id: "minecraft:hay_block"
@@ -257,7 +257,7 @@
 		}
 		{
 			id: "37449FDD50CEB9E3"
-			x: 12.35d
+			x: 15.2d
 			y: 4.125d
 			icon: {
 				id: "pylons:potion_filter"
@@ -844,6 +844,200 @@
 			]
 		}
 		{
+			id: "17AEFC7B30729BAB"
+			x: 3.8499999999999996d
+			y: 2.725d
+			icon: {
+				id: "minecraft:oak_log"
+				count: 1
+			}
+			optional: true
+			hide_dependency_lines: true
+			dependencies: [
+				"76B6BE3C8FF63884"
+			]
+			tasks: [
+				{
+					id: "4605EE293A6CBA67"
+					type: "checkmark"
+				}
+			]
+			rewards: [
+				{
+					id: "2B440DBCB22DBA44"
+					type: "item"
+					item: {
+						id: "minecraft:oak_sapling"
+						count: 1
+					}
+					count: 8
+				}
+				{
+					id: "419B4BFE8BEE0F14"
+					type: "xp_levels"
+					xp_levels: 2
+				}
+			]
+		}
+		{
+			id: "68955C43FCF9E50A"
+			x: 2.5d
+			y: 2.725d
+			icon: {
+				id: "minecraft:emerald"
+				count: 1
+			}
+			optional: true
+			hide_dependency_lines: true
+			dependencies: [
+				"76B6BE3C8FF63884"
+			]
+			tasks: [
+				{
+					id: "697282531089F33A"
+					type: "checkmark"
+				}
+			]
+			rewards: [
+				{
+					id: "5048D2727238B3B3"
+					type: "item"
+					item: {
+						id: "minecraft:emerald"
+						count: 1
+					}
+					count: 4
+				}
+				{
+					id: "1DE997EF9FA55A36"
+					type: "xp_levels"
+					xp_levels: 3
+				}
+			]
+		}
+		{
+			id: "4CEB661A02C734F7"
+			x: 3.8499999999999996d
+			y: 4.075d
+			icon: {
+				id: "minecraft:elytra"
+				count: 1
+			}
+			optional: true
+			hide_dependency_lines: true
+			dependencies: [
+				"76B6BE3C8FF63884"
+			]
+			tasks: [
+				{
+					id: "51C101AC3068E3EE"
+					type: "checkmark"
+				}
+			]
+			rewards: [
+				{
+					id: "2B7919AFD5E092DB"
+					type: "xp_levels"
+					xp_levels: 2
+				}
+			]
+		}
+		{
+			id: "29C8E8BCADDFFA65"
+			x: 2.5d
+			y: 4.075d
+			icon: {
+				id: "torchmaster:megatorch"
+				count: 1
+			}
+			optional: true
+			hide_dependency_lines: true
+			dependencies: [
+				"76B6BE3C8FF63884"
+			]
+			tasks: [
+				{
+					id: "3A7D768FF4C28292"
+					type: "item"
+					item: {
+						id: "torchmaster:megatorch"
+						count: 1
+					}
+					count: 1
+				}
+			]
+			rewards: [
+				{
+					id: "2D09A5C4259594CD"
+					type: "item"
+					item: {
+						id: "minecraft:torch"
+						count: 1
+					}
+					count: 32
+				}
+				{
+					id: "1F5A9A27EDBA1837"
+					type: "xp_levels"
+					xp_levels: 3
+				}
+			]
+		}
+		{
+			id: "7BD2437CE352E835"
+			x: 3.8499999999999996d
+			y: 5.425000000000001d
+			icon: {
+				id: "minecraft:anvil"
+				count: 1
+			}
+			optional: true
+			hide_dependency_lines: true
+			dependencies: [
+				"76B6BE3C8FF63884"
+			]
+			tasks: [
+				{
+					id: "72FE42D9FFCC1040"
+					type: "checkmark"
+				}
+			]
+			rewards: [
+				{
+					id: "62BCAADB67AB6F59"
+					type: "xp_levels"
+					xp_levels: 2
+				}
+			]
+		}
+		{
+			id: "53514EDE2640B797"
+			x: 2.5d
+			y: 5.425000000000001d
+			icon: {
+				id: "minecraft:shulker_box"
+				count: 1
+			}
+			optional: true
+			hide_dependency_lines: true
+			dependencies: [
+				"76B6BE3C8FF63884"
+			]
+			tasks: [
+				{
+					id: "2E08A2E702ECE3C2"
+					type: "checkmark"
+				}
+			]
+			rewards: [
+				{
+					id: "25791EC3AE1615AD"
+					type: "xp_levels"
+					xp_levels: 2
+				}
+			]
+		}
+		{
 			id: "63E6076D33EED03F"
 			x: 4.0d
 			y: 20.525d
@@ -1087,7 +1281,7 @@
 		{
 			id: "149D24A8D68B2560"
 			image: "kronwerke:textures/quests/comfort/collect.png"
-			x: 5.1d
+			x: 7.949999999999999d
 			y: 2.6750000000000003d
 			width: 3.2d
 			height: 0.9d
@@ -1097,7 +1291,7 @@
 		{
 			id: "124FEA2D8CA2ACD1"
 			image: "kronwerke:textures/quests/comfort/pylons.png"
-			x: 11.245d
+			x: 14.094999999999999d
 			y: 2.6750000000000003d
 			width: 2.79d
 			height: 0.9d

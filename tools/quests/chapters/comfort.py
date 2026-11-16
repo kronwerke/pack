@@ -356,6 +356,79 @@ quests = [
           rewards=[reward_xp(2)],
           deps=["cage"], icon="minecraft:chest", optional=True),
 
+    # ---- Kleine Helfer (QoL-Paket vom November 2026) -------------------------------
+    quest("qol_trees", 3, 24, "&aFäll den ganzen Baum",
+          subtitle="Ein Stamm, und alles liegt.",
+          description=[
+              "Bau mit einer &6Axt&r einen Stamm ab, und der ganze Baum fällt. Die Axt nutzt sich für jeden Stamm ab. Wer &eschleicht&r, baut nur den einen Block ab, so bleibt ein Baumhaus stehen.",
+              "",
+              "Die Blätter eines gefällten Baums verschwinden nach ein paar Sekunden von selbst, Setzlinge und Äpfel fallen dabei wie sonst.",
+          ],
+          tasks=[task_checkmark("Gefällt")],
+          rewards=[reward_item("minecraft:oak_sapling", 8), reward_xp(2)],
+          deps=["welcome"], icon="minecraft:oak_log", optional=True),
+
+    quest("qol_villagers", 6, 23, "&aNimm einen Dorfbewohner mit",
+          subtitle="Als Gegenstand, und mit neuen Angeboten.",
+          description=[
+              "&6Easy Villagers:&r Schau einen Dorfbewohner an und drück &e{key:key.easy_villagers.pick_up}&r, und du hast ihn als Gegenstand im Inventar. Ein Rechtsklick setzt ihn wieder ab. In den Blöcken der Mod arbeitet er, ohne herumzulaufen: &6Trader&r zum Handeln, &6Breeder&r für Nachwuchs, &6Farmer&r, &6Iron Farm&r, &6Converter&r und &6Incubator&r. Rezepte in EMI.",
+              "",
+              "Gefällt dir ein Angebot nicht, wechsle es im Handelsfenster mit dem Knopf oder mit &e{key:key.easy_villagers.cycle_trades}&r. Das geht, solange du mit ihm noch nicht gehandelt hast.",
+              "",
+              "Dorfbewohner in Blöcken laufen nicht, suchen keine Wege und kosten den Server fast nichts. Eine Handelshalle baust du am besten so.",
+          ],
+          tasks=[task_checkmark("Mitgenommen")],
+          rewards=[reward_item("minecraft:emerald", 4), reward_xp(3)],
+          deps=["welcome"], icon="minecraft:emerald", optional=True),
+
+    quest("qol_elytra", 9, 24, "&bTrag Elytra und Brustpanzer",
+          subtitle="Die Flügel haben einen eigenen Platz.",
+          description=[
+              "Die &6Elytra&r passen in einen eigenen &eSchmuckplatz&r auf dem Rücken. Dein Brustpanzer bleibt an, und du fliegst trotzdem.",
+              "",
+              "Die &6Create-Brille&r hat ebenfalls einen eigenen Platz. Im Inventar öffnet der kleine Knopf über deiner Figur die Schmuckplätze.",
+          ],
+          tasks=[task_checkmark("Angelegt")],
+          rewards=[reward_xp(2)],
+          deps=["welcome"], icon="minecraft:elytra", optional=True),
+
+    quest("qol_torch", 12, 23, "&eHalt Monster fern",
+          subtitle="Eine Fackel für die ganze Basis.",
+          description=[
+              "Die &6Mega Torch&r von Torchmaster verhindert, dass im Umkreis von &e32 Blöcken&r Monster spawnen, auch im Dunkeln und unter der Erde. Spawner arbeiten weiter. Die &6Dread Lamp&r macht dasselbe für friedliche Tiere.",
+              "",
+              "Die &6Feral Flare Lantern&r setzt unsichtbare Lichter in ihre Umgebung und leuchtet so eine Höhle aus. Rezepte in EMI.",
+          ],
+          tasks=[task_item("torchmaster:megatorch", 1)],
+          rewards=[reward_item("minecraft:torch", 32), reward_xp(3)],
+          deps=["welcome"], icon="torchmaster:megatorch", optional=True),
+
+    quest("qol_anvil", 15, 24, "&7Lern den neuen Amboss kennen",
+          subtitle="Nichts fällt heraus, nichts ist zu teuer.",
+          description=[
+              "Mit &6Easy Anvils&r bleiben Gegenstände im Amboss liegen, wenn du das Fenster schließt. Die Grenze &eZu teuer&r gibt es nicht mehr, Umbenennen kostet nichts und schadet dem Amboss nicht, und Bücher kosten die Hälfte.",
+              "",
+              "Ein beschädigter Amboss wird mit einem &6Eisenblock&r in der Hand per Rechtsklick wieder ganz. Ein &6Namensschild&r beschriftest du ohne Amboss: schleichen und Rechtsklick.",
+              "",
+              "Die &6Werkbank&r behält ihre Zutaten ebenfalls, und du siehst sie auf dem Tisch liegen.",
+          ],
+          tasks=[task_checkmark("Gelesen")],
+          rewards=[reward_xp(2)],
+          deps=["welcome"], icon="minecraft:anvil", optional=True),
+
+    quest("qol_small", 18, 23, "&7Kenn die Kleinigkeiten",
+          subtitle="Was im Alltag einfach da ist.",
+          description=[
+              "&6Doppeltüren&r gehen zusammen auf. Ein leerer Stapel in der Hand füllt sich aus dem Inventar nach. Der Tooltip einer &6Shulkerkiste&r zeigt ihren Inhalt, der eines Werkzeugs seine Haltbarkeit als Zahl.",
+              "",
+              "Blöcke setzt du an die Kante vor dir, ohne zu schleichen: schau schräg nach unten über den Rand. Durch Gras und Blumen hindurch triffst du, was dahinter steht.",
+              "",
+              "Die &6Crafting on a Stick&r-Werkbank trägst du in der Hand. Und im Zaubertisch, bei Händlern und in Truhen findest du &dUnermüdlich&r: mit dieser Verzauberung kostet Ultimine auf dem Werkzeug keinen Hunger.",
+          ],
+          tasks=[task_checkmark("Gelesen")],
+          rewards=[reward_xp(2)],
+          deps=["welcome"], icon="minecraft:shulker_box", optional=True),
+
     quest("done", 13, 14, "&6&lAlles eingerichtet",
           subtitle="Magnet, Sammler, Mülltonne, Claim.",
           description=[

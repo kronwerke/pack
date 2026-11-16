@@ -172,7 +172,7 @@
 	]
 	chapter.42342087C3E31DF2.title: "Create"
 	chapter.42F4545024F13413.chapter_subtitle: [
-		"Stufe 3: Meteoriten, Prozessoren, das ME-Netz bis 16k und Autocrafting."
+		"Stage 3: meteorites, processors, the ME network up to 16k and autocrafting."
 	]
 	chapter.42F4545024F13413.title: "Applied Energistics 2"
 	chapter.4340A80A91A38798.chapter_subtitle: [
@@ -410,12 +410,12 @@
 	quest.10675807C38F2CB9.quest_subtitle: "Afrit in guardians, hoglins and wardens."
 	quest.10675807C38F2CB9.title: "&5Draw Posuc's Convocation"
 	quest.10683B41B8A2569B.quest_desc: [
-		"Eisen in die Ecken, Glas oben und unten, Annihilationskern links, Formationskern rechts."
+		"Iron in the corners, glass at the top and bottom, an Annihilation Core on the left, a Formation Core on the right."
 		""
-		"Stell in den oberen Plätzen ein, was sie vorrätig halten soll, dann füllt sie sich aus dem Netz. Was du hineinschiebst und nicht eingestellt ist, wandert ins Netz. Sie braucht einen Kanal und ist die Zutat für den Speicherbus."
+		"Set in the upper slots what it should keep in stock, then it fills itself from the network. What you push into it and is not set moves on into the network. It needs one channel and is the ingredient for the storage bus."
 	]
-	quest.10683B41B8A2569B.quest_subtitle: "Eine Kiste, die sich selbst füllt."
-	quest.10683B41B8A2569B.title: "&6Bau eine ME-Schnittstelle"
+	quest.10683B41B8A2569B.quest_subtitle: "A chest that fills itself."
+	quest.10683B41B8A2569B.title: "&6Build an ME Interface"
 	quest.10727BE5079CE08E.quest_desc: [
 		"&6Enchanter's Sword&r: diamond sword with diamond, 2 gold blocks, 2 Source Gem blocks. &6Enchanter's Shield&r: shield with 2 gold blocks, 2 Source Gem blocks."
 		""
@@ -597,14 +597,14 @@
 	quest.11062793CCC81271.quest_subtitle: "Klumpen wird Dreckiger Staub."
 	quest.11062793CCC81271.title: "&4Zerkleinere die Klumpen"
 	quest.110707208D725711.quest_desc: [
-		"&6Extended Machine Frame&r: vier Entro Infused Ingots, Kupfer, Eisen, Quarzglas. Rahmen, Fertigungskonsole, zwei Logikprozessoren, zwei Glaskabel und ein Himmelssteintank ergeben den &6Crystal Assembler&r."
+		"&6Extended Machine Frame&r: four Entro Infused Ingots, copper, iron, quartz glass. A frame, a crafting terminal, two Logic Processors, two glass cables and a Sky Stone Tank give the &6Crystal Assembler&r."
 		""
-		"Er ersetzt das Werfen ins Wasser: aus je vier geladenem Certus, Redstone und Netherquarz mit Wasser macht er acht Fluix. Die Seite mit dem Bildschirm verbindet sich nicht mit dem Netz."
+		"It replaces throwing things into water: from four each of charged certus, redstone and nether quartz with water it makes eight fluix. The side with the screen does not connect to the network."
 		""
-		"&eIn Stufe 3 offen:&r &6Crystal Fixer&r (repariert Knospenblöcke), &6Circuit Slicer&r, &6Tag-&r und &6Mod Storage Bus&r, &6Threshold Level Emitter&r, &6Pattern Modifier&r, &6ME Void Cell&r. &cStufe 4:&r die Ex-Maschinen."
+		"&eOpen in stage 3:&r &6Crystal Fixer&r (repairs budding blocks), &6Circuit Slicer&r, &6Tag&r and &6Mod Storage Bus&r, &6Threshold Level Emitter&r, &6Pattern Modifier&r, &6ME Void Cell&r. &cStage 4:&r the Ex machines."
 	]
-	quest.110707208D725711.quest_subtitle: "Rezepte, die nicht auf die Werkbank passen."
-	quest.110707208D725711.title: "&3Bau einen Crystal Assembler"
+	quest.110707208D725711.quest_subtitle: "Recipes that do not fit on the crafting table."
+	quest.110707208D725711.title: "&3Build a Crystal Assembler"
 	quest.1111000A32B2AB97.quest_desc: [
 		"Put &bsoul fire&r right in front of an &6Encased Fan&r: fire on &6soul sand&r or a &6soul campfire&r. The air stream &5haunts&r whatever flies through."
 		""
@@ -1632,10 +1632,10 @@
 	quest.14042D0E4B70B4FF.quest_subtitle: "Quecksilber trägt Gegenstände."
 	quest.14042D0E4B70B4FF.title: "&bSetz Extraktor und Inserter"
 	quest.140A199B9A2126CC.quest_desc: [
-		"Rechtsklick mit einem &6Eimer&r auf einen platzierten &6ME P2P-Tunnel&r, und er wird zu diesem Typ. Abbauen gibt dir den Tunnel als eigenen Gegenstand."
+		"Right click a placed &6ME P2P Tunnel&r with a &6bucket&r, and it turns into this type. Breaking it gives you the tunnel as an item of its own."
 	]
-	quest.140A199B9A2126CC.quest_subtitle: "Flüssigkeiten ohne Rohr."
-	quest.140A199B9A2126CC.title: "Bau einen Flüssigkeits-Tunnel"
+	quest.140A199B9A2126CC.quest_subtitle: "Fluids without a pipe."
+	quest.140A199B9A2126CC.title: "Build a fluid tunnel"
 	quest.14101AE7D155D8AE.quest_desc: [
 		"Leg &6Schwefelstaub&r in den &6Chemischen Oxidierer&r (den aus der Sole-Quest oder einen zweiten). Jeder Staub gibt &e100 mB Schwefeldioxid&r."
 		""
@@ -2856,6 +2856,13 @@
 	]
 	quest.17A8D8F1BA111955.quest_subtitle: "Inventory Proxy Addon."
 	quest.17A8D8F1BA111955.title: "&aGib einem Slot einen eigenen Zugang"
+	quest.17AEFC7B30729BAB.quest_desc: [
+		"Bau mit einer &6Axt&r einen Stamm ab, und der ganze Baum fällt. Die Axt nutzt sich für jeden Stamm ab. Wer &eschleicht&r, baut nur den einen Block ab, so bleibt ein Baumhaus stehen."
+		""
+		"Die Blätter eines gefällten Baums verschwinden nach ein paar Sekunden von selbst, Setzlinge und Äpfel fallen dabei wie sonst."
+	]
+	quest.17AEFC7B30729BAB.quest_subtitle: "Ein Stamm, und alles liegt."
+	quest.17AEFC7B30729BAB.title: "&aFäll den ganzen Baum"
 	quest.17B161F925A01E59.quest_desc: [
 		"Schild-Blaupause (drei Blaues Papier, ein Eisenbarren, drei Stöcke), die Schildplatte aus &ezwei&r Material. Kapitel &6Silent Gear&r."
 		""
@@ -3198,14 +3205,14 @@
 	quest.18874B5E77D1E9E0.quest_subtitle: "Zwölf Nussbäume, geröstet dreimal so sättigend."
 	quest.18874B5E77D1E9E0.title: "&6Pflanz einen Cashewbaum"
 	quest.188B5DA5652EFC13.quest_desc: [
-		"&6Importbus:&r Annihilationskern oben, darunter Eisen, Kolben, Eisen. &6Exportbus:&r Eisen, Formationskern, Eisen, darunter ein Kolben. Beide sitzen auf einem Kabel und schauen auf einen Block."
+		"&6Import Bus:&r an Annihilation Core at the top, below it iron, piston, iron. &6Export Bus:&r iron, Formation Core, iron, below that a piston. Both sit on a cable and face a block."
 		""
-		"Der Importbus zieht alles aus dem Inventar vor sich ins Netz, der Exportbus schiebt eingestellte Gegenstände hinaus. Zusammen automatisieren sie einen Ofen: Export oben hinein, Import unten heraus."
+		"The Import Bus pulls everything out of the inventory in front of it into the network, the Export Bus pushes the items you set out of it. Together they automate a furnace: export in at the top, import out at the bottom."
 		""
-		"Ohne Karten bewegen sie wenig, siehe nächste Quest."
+		"Without cards they move little, see the next quest."
 	]
-	quest.188B5DA5652EFC13.quest_subtitle: "Rein ins Netz, raus aus dem Netz."
-	quest.188B5DA5652EFC13.title: "&6Setz Import- und Exportbus"
+	quest.188B5DA5652EFC13.quest_subtitle: "Into the network, out of the network."
+	quest.188B5DA5652EFC13.title: "&6Place an import and an export bus"
 	quest.1896B36AB2BFB13A.quest_desc: [
 		"Kunststoff in die Ecken, &6Stämme&r an die Seiten, ein &6Goldzahnrad&r in die Mitte, das &6Einfache Gehäuse&r unten ergeben die &6Fermentationsstation&r."
 		""
@@ -3301,14 +3308,14 @@
 	quest.18BE4FEA72C52A2B.quest_subtitle: "Electrolytic Separator: water into hydrogen and oxygen."
 	quest.18BE4FEA72C52A2B.title: "&fHydrogen"
 	quest.18D3447E793BAC9F.quest_desc: [
-		"&6Diamant&r unter dem Konstruktionsdruck, dann mit &6Redstone&r und &6Gedrucktem Silizium&r fertig pressen."
+		"A &6diamond&r under the Engineering Press, then finish it with &6redstone&r and &6Printed Silicon&r."
 		""
-		"Konstruktionsprozessoren stecken im ME-Laufwerk, im Controller, in P2P-Tunneln und in der Schablonenkonsole."
+		"Engineering Processors go into the ME Drive, the controller, P2P tunnels and the pattern encoding terminal."
 		""
-		"&eKronwerke:&r Der Meilenstein &6Stahlkern&r für Stufe 3 braucht zwei Konstruktionsprozessoren pro Stück, acht Stahlkerne will der Obelisk sehen."
+		"&eKronwerke:&r The milestone &6Steel Core&r for stage 3 needs two Engineering Processors apiece, and the obelisk wants to see eight Steel Cores."
 	]
-	quest.18D3447E793BAC9F.quest_subtitle: "Der teuerste der drei, und der wichtigste."
-	quest.18D3447E793BAC9F.title: "&b&lBau Konstruktionsprozessoren"
+	quest.18D3447E793BAC9F.quest_subtitle: "The most expensive of the three, and the most important."
+	quest.18D3447E793BAC9F.title: "&b&lBuild Engineering Processors"
 	quest.18D8DE96327D89F9.quest_desc: [
 		"&eRezept:&r ein &6rotes Glas&r (Red Stained Glass) oben links, drei &6Pneumatic Cylinders&r, unten Compressed Iron, &6PCB&r, Compressed Iron."
 		""
@@ -3543,14 +3550,14 @@
 	quest.1978F0DBCC126085.quest_subtitle: "Fünf Plätze an jeder Station."
 	quest.1978F0DBCC126085.title: "&a&lStuf die ganze Straße hoch"
 	quest.197AD24AEA823E90.quest_desc: [
-		"&6Fluix-Upgrade:&r formlos aus Papier und einem Fluixkristall. Am Schmiedetisch kommen Vorlage, eine &6Quarzspitzhacke&r (Certus oder Netherquarz) und ein &6Fluixblock&r zusammen."
+		"&6Fluix Upgrade:&r shapeless from paper and a Fluix Crystal. At the smithing table the template, a &6quartz pickaxe&r (certus or nether quartz) and a &6fluix block&r come together."
 		""
-		"Fluix-Werkzeuge sind wie Eisen, halten aber dreimal so lange und schlagen etwas fester zu. Jedes wirkt, als hätte es mindestens &eGlück I&r oder &ePlünderung I&r, ganz ohne Zaubertisch."
+		"Fluix tools are like iron, but last three times as long and hit a little harder. Each works as if it had at least &eFortune I&r or &eLooting I&r, with no enchanting table at all."
 		""
-		"Genau richtig für Netherquarz, den du für Fluix in Mengen brauchst."
+		"Just right for nether quartz, which you need in bulk for fluix."
 	]
-	quest.197AD24AEA823E90.quest_subtitle: "Eisen, nur dreimal so haltbar."
-	quest.197AD24AEA823E90.title: "&5Schmiede eine Fluix-Spitzhacke"
+	quest.197AD24AEA823E90.quest_subtitle: "Iron, only three times as durable."
+	quest.197AD24AEA823E90.title: "&5Forge a Fluix Pickaxe"
 	quest.197AFF566957D32D.quest_desc: [
 		"Die &6Kinetische Batterie&r (Präzisionsgetriebe, Messingrahmen, Eisenbleche, Redstone) nimmt Rotation auf und gibt sie später wieder ab. Die &6Batterie&r von Power Grid speichert Strom im Power-Grid-Netz, die &6Tragbare Batterie&r ist dasselbe für die Tasche."
 		""
@@ -3617,12 +3624,12 @@
 	quest.199B3CD9BAEC1C95.quest_subtitle: "Das Lieblingsfutter der Moas, mit Dornen."
 	quest.199B3CD9BAEC1C95.title: "&dPflück Aechor Petals"
 	quest.199E588067D9CF9F.quest_desc: [
-		"&eRezept auf Kronwerke:&r Eisen in die Ecken, Werkbänke oben und unten, Annihilationskern links, ein &6Präzisionsgetriebe&r von Create in die Mitte, Formationskern rechts."
+		"&eRecipe on Kronwerke:&r iron in the corners, crafting tables at the top and bottom, an Annihilation Core on the left, a &6Precision Mechanism&r from Create in the middle, a Formation Core on the right."
 		""
-		"Der Provider schiebt die Zutaten einer Schablone in den Block daneben und nimmt das Ergebnis wieder an. Er braucht einen Kanal. Leg deine Fertigungsschablone hinein."
+		"The provider pushes the ingredients of a pattern into the block next to it and takes the result back. It needs one channel. Put your crafting pattern into it."
 	]
-	quest.199E588067D9CF9F.quest_subtitle: "Er schickt die Zutaten los."
-	quest.199E588067D9CF9F.title: "&aBau einen Schablonen-Provider"
+	quest.199E588067D9CF9F.quest_subtitle: "It sends the ingredients off."
+	quest.199E588067D9CF9F.title: "&aBuild a pattern provider"
 	quest.19AC1C924F37C21D.quest_desc: [
 		"&5Pentacle:&r Ophyx' Calling."
 		"&6Schalen:&r ein &6Kohleblock&r, ein &6Goldbarren&r, ein &6Eisenbarren&r, ein &6Ofen&r."
@@ -4074,12 +4081,12 @@
 	quest.1B31D4AAD9A6BB6A.quest_subtitle: "Afrit work for you, Marid answer to your name."
 	quest.1B31D4AAD9A6BB6A.title: "&9&lBecome a master of the Otherworld"
 	quest.1B34C1F6E7AC9249.quest_desc: [
-		"In der Schablonenkonsole Modus &eFertigung&r wählen, das Rezept ins Raster legen (aus EMI mit dem Plus), leere Schablone einlegen, Pfeil drücken. Heraus kommt eine &6Fertigungsschablone&r."
+		"In the pattern encoding terminal choose the mode &eCrafting&r, lay the recipe into the grid (from EMI with the plus), put in a blank pattern, press the arrow. Out comes a &6Crafting Pattern&r."
 		""
-		"Fang mit etwas Einfachem an, zum Beispiel Holz zu Brettern. Eine Schablone darf auch 8 Bruchstein zu 8 Stein sagen, dann arbeitet die Maschine in größeren Schritten."
+		"Start with something simple, for example logs to planks. A pattern may also say 8 cobblestone to 8 stone, then the machine works in larger steps."
 	]
-	quest.1B34C1F6E7AC9249.quest_subtitle: "Ein Werkbankrezept auf Papier."
-	quest.1B34C1F6E7AC9249.title: "&aSchreib eine Fertigungsschablone"
+	quest.1B34C1F6E7AC9249.quest_subtitle: "A crafting table recipe on paper."
+	quest.1B34C1F6E7AC9249.title: "&aWrite a crafting pattern"
 	quest.1B35E9F6839801CB.quest_desc: [
 		"&bCascading log&r, &bWater Essence&r, &6sea lantern&r."
 		""
@@ -4213,12 +4220,12 @@
 	quest.1BAF2C84EE920765.quest_subtitle: "Rohes Uran, Gem, Pellet."
 	quest.1BAF2C84EE920765.title: "&aMach Uranpellets"
 	quest.1BB37084A4AB6D92.quest_desc: [
-		"Erst die &6ME-Fertigungskonsole&r (formlos: ME-Konsole, Werkbank, Kalkulationsprozessor), daraus mit einem &6Konstruktionsprozessor&r die &6ME-Schablonenkonsole&r. &6Leere Schablonen&r: Quarzglas, Glowstone, Certus, Eisen und Kupfer, gibt zwei."
+		"First the &6ME Crafting Terminal&r (shapeless: ME Terminal, crafting table, Calculation Processor), from it with an &6Engineering Processor&r the &6ME Pattern Encoding Terminal&r. &6Blank Patterns&r: quartz glass, glowstone, certus, iron and copper, gives two."
 		""
-		"Autocrafting braucht drei Dinge: einen Auftrag, eine &6Fertigungs-CPU&r und einen &6Schablonen-Provider&r mit Schablone. Die nächsten Quests bauen sie Schritt für Schritt."
+		"Autocrafting needs three things: an order, a &6crafting CPU&r and a &6pattern provider&r with a pattern. The next quests build them step by step."
 	]
-	quest.1BB37084A4AB6D92.quest_subtitle: "Hier schreibst du Rezepte auf."
-	quest.1BB37084A4AB6D92.title: "&aBau eine Schablonenkonsole"
+	quest.1BB37084A4AB6D92.quest_subtitle: "Here you write recipes down."
+	quest.1BB37084A4AB6D92.title: "&aBuild a pattern encoding terminal"
 	quest.1BB61C3F5F8A6961.quest_desc: [
 		"&6Crystalline Bee&r und &6Mason Bee&r, oder ein &6Nethergoldnest&r (Diamantschwert und Nethergolderz) im Nether, gelockt mit einem Goldbarren. Blume: Goldblock, Golderz oder Vergoldeter Schwarzstein. Wabe gibt mit 40 Prozent &6Rohgold&r."
 	]
@@ -4916,12 +4923,12 @@
 	quest.1DD703E08D9A6368.title: "&dTreib Create mit Quelle an"
 	quest.1DDCF058D133D244.quest_desc: [
 		"{image:kronwerke:textures/quests/shots/ae2_presses.png width:224 height:126 align:center}"
-		"Ganz in der Mitte des Meteoriten steht der &6Mysteriöse Würfel&r. Bau ihn ab, dann hast du alle vier Pressen: &6Silizium&r, &6Logik&r, &6Kalkulation&r und &6Konstruktion&r."
+		"Right in the middle of the meteorite sits the &6Mysterious Cube&r. Break it and you have all four presses: &6Silicon&r, &6Logic&r, &6Calculation&r and &6Engineering&r."
 		""
-		"Mehr Meteoriten brauchst du nie: Die Gravurmaschine kopiert eine Presse, wenn du sie oben einlegst und einen &6Eisenblock&r in die Mitte. So bekommt auch dein Mitspieler einen Satz."
+		"You never need more meteorites: the Inscriber copies a press when you put it in the top slot and an &6iron block&r in the middle. That way your team mate gets a set too."
 	]
-	quest.1DDCF058D133D244.quest_subtitle: "Einmal finden, für immer kopieren."
-	quest.1DDCF058D133D244.title: "&7Hol die vier Pressen"
+	quest.1DDCF058D133D244.quest_subtitle: "Find them once, copy them forever."
+	quest.1DDCF058D133D244.title: "&7Get the four presses"
 	quest.1DE73DA24F01B600.quest_desc: [
 		"An &6Iron Mechanical Component&r on top, a &6Basic Engineering Block&r, a &6Conveyor Belt&r at the bottom make the &6Item Router&r."
 		""
@@ -5355,16 +5362,16 @@
 	quest.1F39DA19C699832B.quest_subtitle: "Packing Tape."
 	quest.1F39DA19C699832B.title: "Move house without emptying"
 	quest.1F3D0C194EC97397.quest_desc: [
-		"Bau ein &6Ladegerät&r (Eisen rundum, ein &6Kupferbarren&r oben in der Mitte, rechts offen) und leg einen normalen &6Kompass&r hinein. Strom kommt über ein Kabel oder eine &6Holzkurbel&r obendrauf (drei Stöcke, ein Kupferbarren), die du von Hand drehst."
+		"Build a &6Charger&r (iron all around, a &6copper ingot&r at the top centre, the right side open) and put a normal &6compass&r in it. Power comes through a cable or from a &6Wooden Crank&r on top (three sticks, a copper ingot) that you turn by hand."
 		""
-		"&bApplied Energistics 2&r speichert Gegenstände als Daten auf &6Speicherzellen&r. Ein Kabelnetz verbindet Zellen, Konsolen und Maschinen, und später baut das Netz Dinge selbst."
+		"&bApplied Energistics 2&r stores items as data on &6storage cells&r. A cable network links cells, terminals and machines, and later the network builds things by itself."
 		""
-		"&eIn Stufe 3 offen:&r Zellen bis &616k&r, Controller, Busse, P2P, Drahtlos, Autocrafting, dazu &6Extended AE&r, &6Applied Flux&r und &6Applied Mekanistics&r. &cStufe 4:&r 64k und größer, Quantenbrücke, Raumspeicher, MEGA und Advanced AE, siehe Kapitel &bAE2: Fortgeschritten&r."
+		"&eOpen in stage 3:&r cells up to &616k&r, controller, buses, P2P, wireless, autocrafting, plus &6Extended AE&r, &6Applied Flux&r and &6Applied Mekanistics&r. &cStage 4:&r 64k and larger, quantum bridge, spatial storage, MEGA and Advanced AE, see the chapter &bAE2: Advanced&r."
 		""
-		"Lieber ohne Kanäle und Typen? Das Kapitel &3Refined Storage&r ist die einfachere Alternative."
+		"Rather without channels and types? The chapter &3Refined Storage&r is the simpler alternative."
 	]
-	quest.1F3D0C194EC97397.quest_subtitle: "Er zeigt zum nächsten Meteoriten."
-	quest.1F3D0C194EC97397.title: "&b&lBau einen Meteoritenkompass"
+	quest.1F3D0C194EC97397.quest_subtitle: "It points to the nearest meteorite."
+	quest.1F3D0C194EC97397.title: "&b&lBuild a Meteorite Compass"
 	quest.1F43AD9667DA2153.quest_desc: [
 		"Ein &6Trichter-Pflanztopf&r wirft seine Ernte in das Inventar unter sich, und eine &6Küchentheke&r ist eins. Stell Töpfe mit Weizen, Karotten, Kartoffeln, Kohl und Tomaten direkt auf die Theken deiner Küche."
 		""
@@ -5692,14 +5699,14 @@
 	quest.2028305A0B04BDE2.quest_subtitle: "More space with every stage."
 	quest.2028305A0B04BDE2.title: "Read what the next stages bring"
 	quest.20289A0EF28C852A.quest_desc: [
-		"Wirf einen &6Geladenen Certusquarzkristall&r, ein &6Redstone&r und einen &6Netherquarz&r zusammen in Wasser. Nach ein paar Sekunden liegen dort &ezwei Fluixkristalle&r."
+		"Throw a &6Charged Certus Quartz Crystal&r, a &6redstone&r and a &6nether quartz&r into water together. A few seconds later &etwo Fluix Crystals&r lie there."
 		""
-		"Derselbe Trick vermehrt Certus: ein geladener Kristall und ein &6Certusquarzstaub&r im Wasser ergeben zwei normale Kristalle."
+		"The same trick multiplies certus: a charged crystal and a &6Certus Quartz Dust&r in water give two normal crystals."
 		""
-		"Fluix steckt in Kabeln, Kernen, Controller und Wachstumsbeschleuniger. Netherquarz brauchst du in Mengen, nimm Glück auf die Spitzhacke."
+		"Fluix goes into cables, cores, the controller and the growth accelerator. You need nether quartz in bulk, put Fortune on your pickaxe."
 	]
-	quest.20289A0EF28C852A.quest_subtitle: "Drei Zutaten rein, zwei Kristalle raus."
-	quest.20289A0EF28C852A.title: "&5Mach Fluix im Wasser"
+	quest.20289A0EF28C852A.quest_subtitle: "Three ingredients in, two crystals out."
+	quest.20289A0EF28C852A.title: "&5Make fluix in water"
 	quest.2029076869FC26F5.quest_desc: [
 		"Am Tisch: &fLuftessenz&r, &e3 Blitzableiter&r, &bHerz des Meeres&r."
 		""
@@ -6383,12 +6390,12 @@
 	quest.21FFCB8D71BB913D.quest_subtitle: "Ars Additions: ein altes Tor mit Fahrkarte."
 	quest.21FFCB8D71BB913D.title: "&aFinde ein verfallenes Warp-Portal"
 	quest.22026B4EDB5B0C43.quest_desc: [
-		"&6Basiskarte:&r Gold, Eisen, Redstone und ein Kalkulationsprozessor, gibt zwei. Mit Diamant statt Gold wird es die &6Fortgeschrittene Karte&r. Daraus formlos: &6Beschleunigungskarte&r (Fortgeschrittene Karte und Fluix), &6Kapazitätskarte&r (Basiskarte und Certus)."
+		"&6Basic Card:&r gold, iron, redstone and a Calculation Processor, gives two. With diamond in place of gold it is the &6Advanced Card&r. From those, shapeless: &6Acceleration Card&r (Advanced Card and fluix), &6Capacity Card&r (Basic Card and certus)."
 		""
-		"Beschleunigung macht Busse, Gravurmaschine und Assembler schneller. Kapazität gibt Bussen mehr Filterplätze. &6Redstone-&r, &6Ungenauigkeits-&r und &6Umkehrungskarte&r regeln den Rest."
+		"Acceleration makes buses, the Inscriber and the assembler faster. Capacity gives buses more filter slots. &6Redstone&r, &6Fuzzy&r and &6Inverter Card&r handle the rest."
 	]
-	quest.22026B4EDB5B0C43.quest_subtitle: "Schneller, mehr Filter, mehr Logik."
-	quest.22026B4EDB5B0C43.title: "&dSteck Karten in die Busse"
+	quest.22026B4EDB5B0C43.quest_subtitle: "Faster, more filters, more logic."
+	quest.22026B4EDB5B0C43.title: "&dPut cards into the buses"
 	quest.2204C95C148D2A7B.quest_desc: [
 		"&eRezept:&r Lapislazuli in den Ecken, &6Glas&r oben und unten, &6Diamanten&r links und rechts, ein Blank Upgrade Module in der Mitte: &6Range I&r."
 		""
@@ -6911,10 +6918,10 @@
 	quest.2386BFCEF1D05EEB.quest_subtitle: "Ars Elemental: Prismen, die Zauber umbauen."
 	quest.2386BFCEF1D05EEB.title: "&dSchleif Linsen für das Prisma"
 	quest.2388E279E0CADF62.quest_desc: [
-		"Rechtsklick mit &6Redstone&r, einem &6Hebel&r oder einer &6Redstonefackel&r auf einen platzierten &6ME P2P-Tunnel&r, und er wird zu diesem Typ. Abbauen gibt dir den Tunnel als eigenen Gegenstand."
+		"Right click a placed &6ME P2P Tunnel&r with &6redstone&r, a &6lever&r or a &6redstone torch&r, and it turns into this type. Breaking it gives you the tunnel as an item of its own."
 	]
-	quest.2388E279E0CADF62.quest_subtitle: "Ein Signal quer durch die Basis."
-	quest.2388E279E0CADF62.title: "Bau einen Redstone-Tunnel"
+	quest.2388E279E0CADF62.quest_subtitle: "A signal right across the base."
+	quest.2388E279E0CADF62.title: "Build a redstone tunnel"
 	quest.23896ACA781626DA.quest_desc: [
 		"Die &6Formkarte&r in die Mitte, oben ein &6Wassereimer&r, unten ein &6Lavaeimer&r, links und rechts ein leerer &6Eimer&r, &6Redstone&r in die Ecken."
 		""
@@ -6972,12 +6979,12 @@
 	quest.239FE15687A7641D.title: "&8Press Inferiumkohle"
 	quest.23A9E0041A4918F2.quest_desc: [
 		"{image:kronwerke:textures/quests/shots/ae2_meteorite.png width:224 height:126 align:center}"
-		"Folg dem Kompass und grab dich in den Krater. Nimm &616 Certusquarzkristalle&r und &616 Himmelsstein&r mit. Im Ofen wird Himmelsstein zum &6Himmelssteinblock&r für den Controller."
+		"Follow the compass and dig into the crater. Take &616 Certus Quartz Crystals&r and &616 Sky Stone&r with you. In a furnace Sky Stone becomes the &6Sky Stone Block&r for the controller."
 		""
-		"&cAchtung:&r Einen &6Makellosen Certusquarzknospenblock&r nie abbauen. Selbst mit Behutsamkeit wird er unrein, und makellos bekommst du ihn nicht zurück. Lass ihn stehen und ernte die Cluster daran."
+		"&cCareful:&r Never break a &6Flawless Budding Certus Quartz&r. Even with Silk Touch it turns flawed, and you do not get it back flawless. Leave it standing and harvest the clusters on it."
 	]
-	quest.23A9E0041A4918F2.quest_subtitle: "Ein Krater aus Himmelsstein mit Certus drin."
-	quest.23A9E0041A4918F2.title: "&7Finde einen Meteoriten"
+	quest.23A9E0041A4918F2.quest_subtitle: "A crater of sky stone with certus inside."
+	quest.23A9E0041A4918F2.title: "&7Find a meteorite"
 	quest.23B4ED8AC87648BC.quest_desc: [
 		"&eRezept:&r &6Tageslichtsensor&r oben, &6Heuballen&r in der Mitte, sieben &6Eisenbarren&r. Der &6BaBee-Inkubator&r braucht &d10 FE/t&r."
 		""
@@ -7564,19 +7571,19 @@
 	quest.257C717C0E99363E.quest_subtitle: "Dirt, straw, bark, bone meal."
 	quest.257C717C0E99363E.title: "&6Mix Organic Compost"
 	quest.258381499B40FD89.quest_desc: [
-		"Rechtsklick mit einer &6Truhe&r, einem &6Trichter&r oder einem Bus auf einen platzierten &6ME P2P-Tunnel&r, und er wird zu diesem Typ. Abbauen gibt dir den Tunnel als eigenen Gegenstand."
+		"Right click a placed &6ME P2P Tunnel&r with a &6chest&r, a &6hopper&r or a bus, and it turns into this type. Breaking it gives you the tunnel as an item of its own."
 	]
-	quest.258381499B40FD89.quest_subtitle: "Gegenstände von einer Blockseite zur anderen."
-	quest.258381499B40FD89.title: "Bau einen Item-Tunnel"
+	quest.258381499B40FD89.quest_subtitle: "Items from one block face to another."
+	quest.258381499B40FD89.title: "Build an item tunnel"
 	quest.2585FB9E1C72E61B.quest_desc: [
-		"Im Crystal Assembler: ein &6Extended Machine Frame&r, vier Certusquarz und zwei Quarzfasern."
+		"In the Crystal Assembler: an &6Extended Machine Frame&r, four certus quartz and two quartz fibers."
 		""
-		"Setz ihn so, dass seine Vorderseite auf einen &6Certusquarzknospenblock&r zeigt, und gib ihm Strom. Rechtsklick mit &6Geladenem Certusquarzkristall&r füllt ihn auf. Er repariert den Knospenblock und hebt ihn Stufe um Stufe an."
+		"Place it so that its front faces a &6Budding Certus Quartz&r, and give it power. A right click with a &6Charged Certus Quartz Crystal&r fills it up. It repairs the budding block and lifts it level by level."
 		""
-		"So wächst deine Certusfarm ohne Nachwerfen ins Wasser."
+		"That way your certus farm grows without throwing more into the water."
 	]
-	quest.2585FB9E1C72E61B.quest_subtitle: "Der Crystal Fixer macht Certus wieder makellos."
-	quest.2585FB9E1C72E61B.title: "&3Repariere Knospenblöcke"
+	quest.2585FB9E1C72E61B.quest_subtitle: "The Crystal Fixer makes certus flawless again."
+	quest.2585FB9E1C72E61B.title: "&3Repair budding blocks"
 	quest.258E3D497931ED1D.quest_desc: [
 		"Fünfte Generation, zweiter Teil, mit dem Gummibaum."
 		""
@@ -9045,6 +9052,13 @@
 	]
 	quest.29C589728E7570CC.quest_subtitle: "The grey stone almost everything here is made from."
 	quest.29C589728E7570CC.title: "&6Mine andesite"
+	quest.29C8E8BCADDFFA65.quest_desc: [
+		"Die &6Mega Torch&r von Torchmaster verhindert, dass im Umkreis von &e32 Blöcken&r Monster spawnen, auch im Dunkeln und unter der Erde. Spawner arbeiten weiter. Die &6Dread Lamp&r macht dasselbe für friedliche Tiere."
+		""
+		"Die &6Feral Flare Lantern&r setzt unsichtbare Lichter in ihre Umgebung und leuchtet so eine Höhle aus. Rezepte in EMI."
+	]
+	quest.29C8E8BCADDFFA65.quest_subtitle: "Eine Fackel für die ganze Basis."
+	quest.29C8E8BCADDFFA65.title: "&eHalt Monster fern"
 	quest.29D33BAB626DA04B.quest_desc: [
 		"&eRezept auf Kronwerke:&r sieben &6Eisenbarren&r um einen &6Mahlstein&r von Create, oben in der Mitte bleibt frei. Wirf Waben hinein oder leg sie ins Fenster, nach &e15 Sekunden&r kommt heraus, was die Biene gesammelt hat, dazu &6Wachs&r."
 		""
@@ -9789,14 +9803,14 @@
 	quest.2C05DFCA19817882.title: "&5Wandle Edelstein in Metall"
 	quest.2C0843DE3D831B45.quest_desc: [
 		"{image:kronwerke:textures/quests/shots/ae2_inscriber.png width:224 height:126 align:center}"
-		"&6Eisen&r rundherum, je eine &6Mechanische Presse&r aus Create oben und unten in der Mitte, ein &6Kupferbarren&r links in der Mitte, rechts bleibt frei."
+		"&6Iron&r all around, a &6Mechanical Press&r from Create at the top centre and one at the bottom centre, a &6copper ingot&r at the middle left, the right side stays empty."
 		""
-		"&eSo liest du das Fenster:&r oben und unten die Pressen, in die Mitte das Material. Ohne Presse mahlt sie: Certus zu Certusquarzstaub, Enderperlen zu Enderstaub, Himmelsstein zu Himmelssteinstaub."
+		"&eHow to read the window:&r the presses at the top and bottom, the material in the middle. Without a press it grinds: certus to Certus Quartz Dust, ender pearls to Ender Dust, sky stone to Sky Stone Dust."
 		""
-		"Strom (FE oder AE) kommt per Kabel. Mit &6Beschleunigungskarten&r arbeitet sie schneller."
+		"Power (FE or AE) comes by cable. With &6Acceleration Cards&r it works faster."
 	]
-	quest.2C0843DE3D831B45.quest_subtitle: "Sie presst, druckt und mahlt."
-	quest.2C0843DE3D831B45.title: "&7Bau eine Gravurmaschine"
+	quest.2C0843DE3D831B45.quest_subtitle: "It presses, prints and grinds."
+	quest.2C0843DE3D831B45.title: "&7Build an Inscriber"
 	quest.2C0FA41EB83CB8D9.quest_desc: [
 		"Vier &6Diamanten&r im Plus um einen &6Wyvern-Energiekontroller&r. Gibt vier &bEinfache Relaiskristalle&r."
 		""
@@ -10432,14 +10446,14 @@
 	quest.2DE5C264C705BA2F.quest_subtitle: "Doppelt so viel Luft, bis 20 bar."
 	quest.2DE5C264C705BA2F.title: "&3Bau Reinforced Air Canisters"
 	quest.2DE72750DFE6D2F0.quest_desc: [
-		"&64k-Fertigungsspeicher:&r Fertigungseinheit und 4k-Komponente formlos. Größere Speicher erlauben Aufträge mit mehr Zutaten und Zwischenschritten."
+		"&64k Crafting Storage:&r a Crafting Unit and a 4k component, shapeless. Larger storages allow orders with more ingredients and steps in between."
 		""
-		"&6Fertigungsmonitor:&r Fertigungseinheit und &6ME-Speichermonitor&r formlos. In die CPU eingebaut, zeigt er den laufenden Auftrag."
+		"&6Crafting Monitor:&r a Crafting Unit and an &6ME Storage Monitor&r, shapeless. Built into the CPU, it shows the running order."
 		""
-		"Die CPU bleibt ein volles Rechteck. Füllst du Lücken mit Fertigungseinheiten, darf sie jede Form haben."
+		"The CPU stays a full cuboid. If you fill gaps with Crafting Units, it may have any shape."
 	]
-	quest.2DE72750DFE6D2F0.quest_subtitle: "Mehr Speicher, und sehen, was sie tut."
-	quest.2DE72750DFE6D2F0.title: "&7Vergrößer deine CPU"
+	quest.2DE72750DFE6D2F0.quest_subtitle: "More storage, and a look at what it does."
+	quest.2DE72750DFE6D2F0.title: "&7Enlarge your CPU"
 	quest.2DEBCBC68071A08E.quest_desc: [
 		"Wie die Werkzeuge, mit der &6Wyvern-Brustplatte&r als Katalysator."
 		""
@@ -11208,14 +11222,14 @@
 	quest.31067034FD23177A.quest_subtitle: "Projectiles made of blocks."
 	quest.31067034FD23177A.title: "&6Build the Focus of Block Shaping"
 	quest.3107F38F6765E074.quest_desc: [
-		"&616k-Komponente:&r wie die 4k-Komponente, nur mit &6Glowstone-Staub&r in den Ecken und drei 4k-Komponenten."
+		"&616k component:&r like the 4k component, only with &6glowstone dust&r in the corners and three 4k components."
 		""
-		"Eine 16k-Zelle fasst &e130 048&r Stück einer Sorte, &e66 560&r bei 63 Typen. Für viele Sorten in kleinen Mengen sind mehrere kleine Zellen besser, die Typen pro Zelle bleiben immer 63."
+		"A 16k cell holds &e130,048&r of one kind, &e66,560&r with 63 types. For many kinds in small amounts several small cells are better, the types per cell are always 63."
 		""
-		"&cAusblick:&r 64k braucht auf Kronwerke einen &6Himmelsbarren&r von Nature's Aura, 256k einen Draconiumbarren. Beides kommt in Stufe 4."
+		"&cOutlook:&r On Kronwerke 64k needs an &6Ingot of the Skies&r from Nature's Aura, 256k a draconium ingot. Both come in stage 4."
 	]
-	quest.3107F38F6765E074.quest_subtitle: "Das Größte, was Stufe 3 hergibt."
-	quest.3107F38F6765E074.title: "&b&lBau eine 16k-Zelle"
+	quest.3107F38F6765E074.quest_subtitle: "The largest stage 3 has to offer."
+	quest.3107F38F6765E074.title: "&b&lBuild a 16k cell"
 	quest.310BD6B66D56BF2D.quest_desc: [
 		"&6Tempad&r, &6Tempad&r: speichert Orte und öffnet eine &6Zeittür&r dorthin, &e1 000 Chronon&r für 10 Sekunden, 6 000 im Gerät. Chronon macht das Chronometer oder das Metronom. &eStufe 3.&r"
 		""
@@ -11580,14 +11594,14 @@
 	quest.3256C9684CC2EC3A.title: "&5&lBau einen Programmer"
 	quest.3256D8605808D07A.quest_desc: [
 		"{image:kronwerke:textures/quests/shots/ae2_cpu.png width:224 height:126 align:center}"
-		"&6Fertigungseinheit:&r Eisen in die Ecken, Kalkulationsprozessoren oben und unten, Glaskabel an den Seiten, Logikprozessor in die Mitte. Einheit plus 1k-Komponente gibt einen &61k-Fertigungsspeicher&r, Einheit plus Konstruktionsprozessor eine &6Prozessoreinheit&r."
+		"&6Crafting Unit:&r iron in the corners, Calculation Processors at the top and bottom, glass cables on the sides, a Logic Processor in the middle. A unit plus a 1k component gives a &61k Crafting Storage&r, a unit plus an Engineering Processor a &6Crafting Co-Processing Unit&r."
 		""
-		"Die CPU ist ein volles Rechteck ohne Lücken, mit mindestens einem Speicher. Prozessoreinheiten machen sie schneller. Eine CPU, ein Auftrag zur Zeit."
+		"The CPU is a full cuboid without gaps, with at least one storage. Co-processing units make it faster. One CPU, one order at a time."
 		""
-		"&eBestellen:&r In der Konsole auf etwas klicken, das eine Schablone hat. Liegt es schon auf Lager, nimm die Mausrad-Taste."
+		"&eOrdering:&r in the terminal click something that has a pattern. If it is already in stock, use the mouse wheel button."
 	]
-	quest.3256D8605808D07A.quest_subtitle: "Sie plant den Auftrag."
-	quest.3256D8605808D07A.title: "&7Bau eine Fertigungs-CPU"
+	quest.3256D8605808D07A.quest_subtitle: "It plans the order."
+	quest.3256D8605808D07A.title: "&7Build a crafting CPU"
 	quest.325B7A495F752083.quest_desc: [
 		"&6Taboo Book&r, &6Purified Ink&r, &6Awakened Feather&r and &e4 purple dye&r, then bind with the Dictionary."
 		""
@@ -12397,10 +12411,10 @@
 	quest.35DB78E529E71C2E.quest_subtitle: "A Djinni in the gem breaks Iesnium."
 	quest.35DB78E529E71C2E.title: "&6Bind an Infused Pickaxe"
 	quest.35DED8695B795B84.quest_desc: [
-		"Rechtsklick mit einer &6Energiezelle&r oder einem &6Energieakzeptor&r auf einen platzierten &6ME P2P-Tunnel&r, und er wird zu diesem Typ. Abbauen gibt dir den Tunnel als eigenen Gegenstand."
+		"Right click a placed &6ME P2P Tunnel&r with an &6Energy Cell&r or an &6Energy Acceptor&r, and it turns into this type. Breaking it gives you the tunnel as an item of its own."
 	]
-	quest.35DED8695B795B84.quest_subtitle: "Strom ohne Kabel, kostet 2,5 Prozent."
-	quest.35DED8695B795B84.title: "Bau einen FE-Tunnel"
+	quest.35DED8695B795B84.quest_subtitle: "Power without a cable, costs 2.5 percent."
+	quest.35DED8695B795B84.title: "Build an FE tunnel"
 	quest.35F2FF2D65AB0B16.quest_desc: [
 		"&cFeuer&r heißt Schaden und Brand. Gewöhnlich: &6Firebolt&r (kleines Feuergeschoss), &6Fire Breath&r (halten: Feuerkegel), &6Blaze Storm&r (halten: Salve Feuerbälle), &6Burning Dash&r (Sprint nach vorn in Flammen)."
 		"&6Flaming Strike&r (Nahkampfhieb, skaliert mit der Waffe), &6Heat Surge&r (Feuerstoß um dich, senkt Rüstung), &6Wall of Fire&r (Feuerwand zwischen Ankerpunkten, hält Geschosse auf)."
@@ -12798,12 +12812,12 @@
 	quest.37EA1D7DAAE26C90.quest_subtitle: "Throw potions without brewing splash potions."
 	quest.37EA1D7DAAE26C90.title: "&dBuild a Splash Flask Cannon"
 	quest.37EB4DD214F449A0.quest_desc: [
-		"&6ME-Speicherbus:&r formlos aus einer &6ME-Schnittstelle&r und zwei &6Kolben&r. Setz ihn auf ein Kabel vor eine Truhe, ein Fass oder eine Schublade."
+		"&6ME Storage Bus:&r shapeless from an &6ME Interface&r and two &6pistons&r. Put it on a cable in front of a chest, a barrel or a drawer."
 		""
-		"Was in dem Block liegt, siehst du in der Konsole, und das Netz legt dort hinein. Schubladen zählen keine Typen, eine Schubladenwand mit Speicherbus ist oft besser als eine Zelle. Wie du die Wand baust, steht im Kapitel &6Lager&r."
+		"What lies in that block shows in the terminal, and the network stores into it. Drawers count no types, so a drawer wall with a storage bus is often better than a cell. How to build the wall is in the chapter &6Storage&r."
 	]
-	quest.37EB4DD214F449A0.quest_subtitle: "Der Speicherbus macht Kisten zu Zellen."
-	quest.37EB4DD214F449A0.title: "&6Häng eine Schubladenwand ans Netz"
+	quest.37EB4DD214F449A0.quest_subtitle: "The storage bus turns chests into cells."
+	quest.37EB4DD214F449A0.title: "&6Hang a drawer wall on the network"
 	quest.37EF820F3FAEADA8.quest_desc: [
 		"Crafter recipe: four &6iron sheets&r, six &6copper coils&r, two &6magnets&r, one &6shaft&r and one &6conductive casing&r make the &6electric motor&r."
 		""
@@ -14070,16 +14084,16 @@
 	quest.3D3FDB0DB9F082C9.quest_subtitle: "Crafts & Additions: lädt mit 5 000 FE/t, was unter ihr liegt."
 	quest.3D3FDB0DB9F082C9.title: "&6Lad Gegenstände an der Teslaspule"
 	quest.3D4C6F4E8F84D8E6.quest_desc: [
-		"&6Annihilationsfeld:&r drei Fluix oben, Eisen, Annihilationskern, Eisen darunter. &6Formationsfeld:&r genauso mit Formationskern."
+		"&6Annihilation Plane:&r three fluix at the top, iron, Annihilation Core, iron below. &6Formation Plane:&r the same with a Formation Core."
 		""
-		"Das Annihilationsfeld baut den Block vor sich ab und nimmt Gegenstände auf, die es berührt. Es nimmt Spitzhacken-Verzauberungen an: Glück, Behutsamkeit und Effizienz wirken. Es baut nur ab, was das Netz auch speichern kann, also filterst du über eine partitionierte Zelle im Unternetz."
+		"The Annihilation Plane breaks the block in front of it and picks up items that touch it. It takes pickaxe enchantments: Fortune, Silk Touch and Efficiency work. It only breaks what the network can also store, so you filter with a partitioned cell in a subnetwork."
 		""
-		"Das Formationsfeld setzt Blöcke oder wirft Gegenstände aus, die das Netz hineinschiebt. Zusammen mit einem Importbus wird daraus eine Steinfarm ohne Hände."
+		"The Formation Plane places blocks or throws out items the network pushes into it. Together with an Import Bus that makes a stone farm with no hands."
 		""
-		"&cAchtung:&r Beide arbeiten als Fake-Spieler. Erlaube das in deinem Claim."
+		"&cCareful:&r Both work as fake players. Allow that in your claim."
 	]
-	quest.3D4C6F4E8F84D8E6.quest_subtitle: "Das Netz baut ab und setzt Blöcke."
-	quest.3D4C6F4E8F84D8E6.title: "&6Setz Formations- und Annihilationsfeld"
+	quest.3D4C6F4E8F84D8E6.quest_subtitle: "The network breaks and places blocks."
+	quest.3D4C6F4E8F84D8E6.title: "&6Place a formation and an annihilation plane"
 	quest.3D61ECD7368F450F.quest_desc: [
 		"{image:kronwerke:textures/quests/shots/industrial_frame_simple.png width:224 height:126 align:center}"
 		"Im Auflösungsapparat: zwei &6Kunststoff&r, ein &6Fortschrittliches Gehäuse&r, zwei &6Netheritbarren&r, zwei &6Diamanten&r, ein &6Diamantzahnrad&r und &e135 mB Ethergas&r."
@@ -15061,21 +15075,21 @@
 	quest.419C322999E86D94.quest_subtitle: "Power instead of rotation, 80 blocks far."
 	quest.419C322999E86D94.title: "&bStage 2: Mekanism pump and tank"
 	quest.419C965074DD94BD.quest_desc: [
-		"&6Certusquarzkristall&r unter dem Kalkulationsdruck, dann wie beim Logikprozessor mit &6Redstone&r und &6Gedrucktem Silizium&r fertig pressen."
+		"A &6Certus Quartz Crystal&r under the Calculation Press, then finish it like the Logic Processor with &6redstone&r and &6Printed Silicon&r."
 		""
-		"Kalkulationsprozessoren brauchst du für 4k- und 16k-Zellen, Karten, Fertigungseinheiten und den Zugangspunkt."
+		"You need Calculation Processors for 4k and 16k cells, cards, crafting units and the access point."
 	]
-	quest.419C965074DD94BD.quest_subtitle: "Certus unter der Kalkulationspresse."
-	quest.419C965074DD94BD.title: "&bBau einen Kalkulationsprozessor"
+	quest.419C965074DD94BD.quest_subtitle: "Certus under the Calculation Press."
+	quest.419C965074DD94BD.title: "&bBuild a Calculation Processor"
 	quest.419F003B27288373.quest_desc: [
-		"Certusquarz in der Gravurmaschine zu &6Certusquarzstaub&r mahlen, im Ofen zu &6Silizium&r schmelzen, unter dem &6Siliziumdruck&r zu &6Gedrucktem Silizium&r pressen."
+		"Grind certus quartz to &6Certus Quartz Dust&r in the Inscriber, smelt it to &6Silicon&r in a furnace, press it to &6Printed Silicon&r under the &6Silicon Press&r."
 		""
-		"&eRezept auf Kronwerke:&r Der &6Fortgeschrittene Steuerschaltkreis&r von Mekanism ist ein Einfacher Steuerschaltkreis, zwei Infundierte Legierungen und ein &6Gedrucktes Silizium&r an der Werkbank. Einen anderen Weg gibt es nicht."
+		"&eRecipe on Kronwerke:&r Mekanism's &6Advanced Control Circuit&r is a Basic Control Circuit, two Infused Alloys and one &6Printed Silicon&r at the crafting table. There is no other way."
 		""
-		"&eKronwerke:&r Das Ziel von Stufe 3, &e\"Der Ofen schläft nie\"&r, will &e250 Fortgeschrittene Steuerschaltkreise&r."
+		"&eKronwerke:&r The stage 3 goal, &e\"The Furnace Never Sleeps\"&r, wants &e250 Advanced Control Circuits&r."
 	]
-	quest.419F003B27288373.quest_subtitle: "Das Bauteil, auf das Mekanism wartet."
-	quest.419F003B27288373.title: "&8Druck Silizium"
+	quest.419F003B27288373.quest_subtitle: "The part Mekanism is waiting for."
+	quest.419F003B27288373.title: "&8Print silicon"
 	quest.41AA998DC5B64780.quest_desc: [
 		"Sechs &6Verstärkte Steinstufen&r oben und unten, ein &6Druckluftrohr&r zwischen zwei &6Kleinen Tanks&r in der Mitte ergeben die &6Thermopneumatische Anlage&r (Thermopneumatic Processing Plant, kurz TPP)."
 		""
@@ -15427,12 +15441,12 @@
 	quest.43353D99842FDE3E.quest_subtitle: "A second access to the storage."
 	quest.43353D99842FDE3E.title: "&6Build a Stable Wormhole"
 	quest.4342DA54864C265F.quest_desc: [
-		"&6Entro Seed&r: Sand, drei Enderstaub, zwei Redstone, zwei Glowstone, ein Himmelssteinstaub. Rechtsklick damit auf einen &6Fluixblock&r macht einen &6Budding Fully Entroized Fluix&r, auf dem Entro-Knospen wachsen."
+		"&6Entro Seed&r: sand, three Ender Dust, two redstone, two glowstone, one Sky Stone Dust. A right click with it on a &6fluix block&r makes a &6Budding Fully Entroized Fluix&r, on which entro buds grow."
 		""
-		"Der Block verbraucht sich und wird am Ende zum Certusquarzblock, im Schnitt nach etwa zehn Kristallen. Abgebaut gibt er einen &6Entro Dust&r. Entro Dust und Fluix im Wasser ergeben einen Entro Crystal, Entro Dust mit Gold und Lapis einen &6Entro Infused Ingot&r."
+		"The block uses itself up and ends as a Certus Quartz Block, on average after about ten crystals. Broken it gives one &6Entro Dust&r. Entro Dust and fluix in water give an Entro Crystal, Entro Dust with gold and lapis an &6Entro Infused Ingot&r."
 	]
-	quest.4342DA54864C265F.quest_subtitle: "Fluix mit Enderstaub."
-	quest.4342DA54864C265F.title: "&3Züchte Entro"
+	quest.4342DA54864C265F.quest_subtitle: "Fluix with ender dust."
+	quest.4342DA54864C265F.title: "&3Grow entro"
 	quest.4348580594C97569.quest_desc: [
 		"&dEnder Inventory&r (Manipulation Essence, ender chest): opens your ender chest anywhere."
 		"&dName&r (Manipulation Essence, name tag): names the target after the spell."
@@ -16096,14 +16110,14 @@
 	quest.46449D6485143667.title: "&dFeed Endoflames with charcoal"
 	quest.4647FC22948329C2.quest_desc: [
 		"{image:kronwerke:textures/quests/shots/ae2_p2p.png width:224 height:126 align:center}"
-		"Eisen oben und an den Seiten, ein &6Konstruktionsprozessor&r in der Mitte, drei Fluix unten. Verbinden mit der &6Speicherkarte&r: Schleich-Rechtsklick auf den Eingang, Rechtsklick auf jeden Ausgang."
+		"Iron at the top and on the sides, an &6Engineering Processor&r in the middle, three fluix at the bottom. Link them with the &6Memory Card&r: sneak and right click the input, right click every output."
 		""
-		"Der Klassiker: Ein ME-Tunnel braucht selbst einen Kanal, trägt aber alle 32 Kanäle des dichten Kabels an seinem Eingang. So bringst du viele Kanäle durch ein dünnes Kabel. ME-Tunnel lassen sich nicht ineinander schachteln."
+		"The classic: an ME tunnel needs a channel itself, but carries all 32 channels of the dense cable at its input. That way you bring many channels through a thin cable. ME tunnels cannot be nested in each other."
 		""
-		"Andere Typen machst du per Rechtsklick auf einen platzierten Tunnel, siehe die Liste daneben."
+		"You make other types with a right click on a placed tunnel, see the list next to this."
 	]
-	quest.4647FC22948329C2.quest_subtitle: "Ein Portal zwischen zwei Blockseiten."
-	quest.4647FC22948329C2.title: "&d&lBau einen ME P2P-Tunnel"
+	quest.4647FC22948329C2.quest_subtitle: "A portal between two block faces."
+	quest.4647FC22948329C2.title: "&d&lBuild an ME P2P Tunnel"
 	quest.4651C104B13CC0B6.quest_desc: [
 		"{image:kronwerke:textures/quests/shots/immersive_thermoelectric.png width:224 height:126 align:center}"
 		"Three &6steel ingots&r on top, &6Constantan Plate&r, &6Copper Coil Block&r, Constantan Plate in the middle, three Constantan Plates at the bottom make the generator."
@@ -16297,14 +16311,14 @@
 	quest.4735B7BB1918C1E6.quest_subtitle: "Drei Runden auf einem Goldblech."
 	quest.4735B7BB1918C1E6.title: "&6Fertige einen Steuerchip"
 	quest.474868EB59887384.quest_desc: [
-		"Wirf einen &6Certusquarzblock&r mit einem geladenen Kristall ins Wasser, das gibt einen beschädigten &6Knospenblock&r. Stell zwei &6Wachstumsbeschleuniger&r daneben (Eisen, Glaskabel, Quarzglas, Fluixblock in der Mitte)."
+		"Throw a &6Certus Quartz Block&r into water with a charged crystal, that gives a damaged &6Budding Certus Quartz&r. Put two &6Growth Accelerators&r next to it (iron, glass cable, quartz glass, a fluix block in the middle)."
 		""
-		"Jeder weitere geladene Kristall im Wasser hebt den Knospenblock eine Stufe, bis unrein. Jede gewachsene Knospe kann ihn eine Stufe zurückwerfen. Ein fertiger Cluster gibt vier Kristalle, Glück hilft."
+		"Every further charged crystal in the water lifts the budding block one level, up to flawed. Every grown bud can throw it back one level. A finished cluster gives four crystals, Fortune helps."
 		""
-		"Der Beschleuniger nimmt FE oder AE oben und unten, zur Not reicht eine Holzkurbel."
+		"The accelerator takes FE or AE at the top and bottom, a Wooden Crank will do in a pinch."
 	]
-	quest.474868EB59887384.quest_subtitle: "Wie Amethyst, nur mit Strom schneller."
-	quest.474868EB59887384.title: "&aZüchte Certus"
+	quest.474868EB59887384.quest_subtitle: "Like amethyst, only faster with power."
+	quest.474868EB59887384.title: "&aGrow certus"
 	quest.47495DBD8F5EC437.quest_desc: [
 		"Erleg einen &cSkelett-Drescher&r. Er hat 50 Lebenspunkte, Rüstung 10 und schlägt mit seinem Hammer für 8, mit viel Rückstoß."
 		""
@@ -16559,14 +16573,14 @@
 	quest.481976FE5C9A22EC.quest_subtitle: "Splitter, Klumpen, Staub, Barren."
 	quest.481976FE5C9A22EC.title: "&d&lLass Splitter durch die Straße laufen"
 	quest.481D143950165232.quest_desc: [
-		"Verarbeitungsschablonen für Gedrucktes Silizium (Gravurmaschine), Infundierte Legierung und Einfache Steuerschaltkreise (zwei Infusionsanlagen), eine Fertigungsschablone im Assembler für den &6Fortgeschrittenen Steuerschaltkreis&r. Bestell 64 Stück."
+		"Processing patterns for Printed Silicon (Inscriber), Infused Alloy and Basic Control Circuits (two Metallurgic Infusers), and a crafting pattern in the assembler for the &6Advanced Control Circuit&r. Order 64."
 		""
-		"Ein Exportbus mit Fertigungskarte an einer Kiste hält den Vorrat, bis du ihn zum Obelisken trägst. Wer viel Silizium braucht, baut den &6Circuit Slicer&r von Extended AE weiter unten."
+		"An Export Bus with a Crafting Card on a chest keeps the stock until you carry it to the obelisk. If you need a lot of silicon, build the &6Circuit Slicer&r from Extended AE further down."
 		""
-		"&eKronwerke:&r &e\"Der Ofen schläft nie\"&r will &e250 Fortgeschrittene Steuerschaltkreise&r, &e4 000 Stahlbarren&r und &e8 Stahlkerne&r. Abgegeben wird von Hand am Obelisken, und es zählt für den, der abgibt."
+		"&eKronwerke:&r &e\"The Furnace Never Sleeps\"&r wants &e250 Advanced Control Circuits&r, &e4,000 steel ingots&r and &e8 Steel Cores&r. You hand in by hand at the obelisk, and it counts for whoever hands in."
 	]
-	quest.481D143950165232.quest_subtitle: "Der Ofen schläft nie, die Gravurmaschine auch nicht."
-	quest.481D143950165232.title: "&6&lBau die Schaltkreisfabrik"
+	quest.481D143950165232.quest_subtitle: "The furnace never sleeps, and neither does the Inscriber."
+	quest.481D143950165232.title: "&6&lBuild the circuit factory"
 	quest.4824275E4DA2D186.quest_desc: [
 		"&eRezept:&r Eisenbarren, &6Honigeimer&r, Eisenbarren oben, Eisenbarren, &6Ofen&r, Eisenbarren in der Mitte, drei Eisenbarren unten. Den Honigeimer machst du aus vier Honigflaschen und einem Eimer oder aus einem Honigblock und einem Eimer."
 		""
@@ -16994,12 +17008,12 @@
 	quest.4A1D5466A4002F11.quest_subtitle: "Stark wie ein Gott, für kurze Zeit."
 	quest.4A1D5466A4002F11.title: "&6Zeichne Geborgte Kraft"
 	quest.4A401167020FBDB9.quest_desc: [
-		"&6Redstone-Block&r, Fluixkristall und Glowstone-Staub ins Wasser gibt zwei &6Redstone-Kristalle&r, im Ladegerät werden sie geladen. Ein Eisenblock im Ladegerät wird zum &6Energiedruck&r."
+		"A &6redstone block&r, a Fluix Crystal and glowstone dust in water give two &6Redstone Crystals&r, and the Charger charges them. An iron block in the Charger becomes the &6Inscriber Energy Press&r."
 		""
-		"Geladenen Redstone-Kristall unter dem Energiedruck, dann wie jeden Prozessor mit Redstone und Gedrucktem Silizium fertig pressen."
+		"A charged Redstone Crystal under the Energy Press, then finish it like every processor with redstone and Printed Silicon."
 	]
-	quest.4A401167020FBDB9.quest_subtitle: "Strom braucht einen eigenen Prozessor."
-	quest.4A401167020FBDB9.title: "&cMach Energieprozessoren"
+	quest.4A401167020FBDB9.quest_subtitle: "Power needs a processor of its own."
+	quest.4A401167020FBDB9.title: "&cMake Energy Processors"
 	quest.4A455F3B85F81A50.quest_desc: [
 		"&6Taboo Book&r, &6Purified Ink&r, &6Awakened Feather&r and &e4 blue dye&r make the &6Book of Binding: Foliot&r."
 		"Then craft it shapeless with the &6Dictionary of Spirits&r. The Dictionary stays, the book is now bound."
@@ -17405,25 +17419,25 @@
 	quest.4C0F41780FE33540.title: "&6Filter with the brass funnel"
 	quest.4C1E38CDD2758689.quest_desc: [
 		"{image:kronwerke:textures/quests/shots/ae2_channels.png width:224 height:126 align:center}"
-		"Fast jedes Gerät braucht einen &eKanal&r. Ein normales Kabel trägt &e8&r, ein &6dichtes Kabel&r (vier verdeckte Kabel) trägt &e32&r. Bau wie einen Baum: dichte Kabel als Äste vom Controller, normale Kabel als Zweige, höchstens acht Geräte pro Zweig."
+		"Almost every device needs a &echannel&r. A normal cable carries &e8&r, a &6dense cable&r (four covered cables) carries &e32&r. Build like a tree: dense cables as branches from the controller, normal cables as twigs, at most eight devices per twig."
 		""
-		"Kanäle laufen vom Controller den kürzesten Weg, erst durch dichte, dann durch normale Kabel. Ist dieser Weg voll, bleiben Geräte dunkel, auch wenn daneben ein leeres Kabel liegt."
+		"Channels run the shortest way from the controller, first through dense, then through normal cables. If that way is full, devices stay dark, even when an empty cable lies next to it."
 		""
-		"&6Schlaue Kabel&r zeigen mit Streifen, wie viele Kanäle durch sie laufen. &eRezept auf Kronwerke:&r vier verdeckte Kabel in die Ecken, Redstone oben und unten, Glowstone links und rechts, eine &6Elektronenröhre&r von Create in die Mitte, gibt vier."
+		"&6Smart Cables&r show with stripes how many channels run through them. &eRecipe on Kronwerke:&r four covered cables in the corners, redstone at the top and bottom, glowstone left and right, an &6Electron Tube&r from Create in the middle, gives four."
 		""
-		"&cAchtung:&r Kabelfarben haben nichts mit Kanälen zu tun. Zwei Kabel verschiedener Farbe verbinden sich nur nicht."
+		"&cCareful:&r Cable colours have nothing to do with channels. Two cables of different colours just do not connect."
 	]
-	quest.4C1E38CDD2758689.quest_subtitle: "8 pro Kabel, 32 pro dichtem Kabel."
-	quest.4C1E38CDD2758689.title: "&e&lVerstehe Kanäle"
+	quest.4C1E38CDD2758689.quest_subtitle: "8 per cable, 32 per dense cable."
+	quest.4C1E38CDD2758689.title: "&e&lUnderstand channels"
 	quest.4C251A5FBF288288.quest_desc: [
-		"In der Schablonenkonsole Modus &eVerarbeitung&r: oben &6Silizium&r, unten &6Gedrucktes Silizium&r als Ergebnis. Schablone in einen Provider, der direkt an einer Gravurmaschine mit Siliziumdruck sitzt."
+		"In the pattern encoding terminal, mode &eProcessing&r: &6Silicon&r at the top, &6Printed Silicon&r below as the result. Put the pattern into a provider that sits directly against an Inscriber with a Silicon Press."
 		""
-		"Das Ergebnis muss zurück ins Netz. Am einfachsten schiebt die Maschine es zurück in den Provider (Auto-Ausgabe oder ein Rohr), sonst nimm einen Importbus."
+		"The result has to get back into the network. The easiest way is for the machine to push it back into the provider (auto output or a pipe), otherwise use an Import Bus."
 		""
-		"So geht es mit jedem Ofen, jeder Mekanism-Maschine und jedem Mixer."
+		"It works the same with every furnace, every Mekanism machine and every mixer."
 	]
-	quest.4C251A5FBF288288.quest_subtitle: "Verarbeitungsschablone an der Gravurmaschine."
-	quest.4C251A5FBF288288.title: "&aLass eine Maschine für dich arbeiten"
+	quest.4C251A5FBF288288.quest_subtitle: "A processing pattern at the Inscriber."
+	quest.4C251A5FBF288288.title: "&aLet a machine work for you"
 	quest.4C39C948ACC593B6.quest_desc: [
 		"Deliver &6256 brass ingots&r and &632 precision mechanisms&r. They are handed in by hand at the obelisk; sneak and right-click hands in everything that fits."
 		""
@@ -17606,6 +17620,13 @@
 	]
 	quest.4CE3E78D9929AB65.quest_subtitle: "Cardboard, packager, address."
 	quest.4CE3E78D9929AB65.title: "&6Pack a package"
+	quest.4CEB661A02C734F7.quest_desc: [
+		"Die &6Elytra&r passen in einen eigenen &eSchmuckplatz&r auf dem Rücken. Dein Brustpanzer bleibt an, und du fliegst trotzdem."
+		""
+		"Die &6Create-Brille&r hat ebenfalls einen eigenen Platz. Im Inventar öffnet der kleine Knopf über deiner Figur die Schmuckplätze."
+	]
+	quest.4CEB661A02C734F7.quest_subtitle: "Die Flügel haben einen eigenen Platz."
+	quest.4CEB661A02C734F7.title: "&bTrag Elytra und Brustpanzer"
 	quest.4CEC503F60C10794.quest_desc: [
 		"{image:kronwerke:textures/quests/shots/storage_controller.png width:224 height:126 align:center}"
 		"&6Four stone&r in the corners, &6two comparators&r top and bottom, &6two planks&r on the sides, a Sophisticated barrel or chest of the wood tier in the middle."
@@ -18700,14 +18721,14 @@
 	quest.51D7B0370F10EEFA.quest_subtitle: "Die Werkbank von Draconic Evolution."
 	quest.51D7B0370F10EEFA.title: "&dBau einen Fusionskern"
 	quest.51E5531618D4B793.quest_desc: [
-		"&6Komponente:&r Logikprozessor in die Mitte, Certus an die Seiten, Redstone in die Ecken. &6Gehäuse:&r Quarzglas, Redstone, Eisen und Kupfer. Beides zusammen an der Werkbank gibt die Zelle."
+		"&6Component:&r a Logic Processor in the middle, certus on the sides, redstone in the corners. &6Housing:&r quartz glass, redstone, iron and copper. Both together at the crafting table give the cell."
 		""
-		"&eSo rechnet eine Zelle:&r Jeder Typ kostet vorab Bytes, danach brauchen acht Gegenstände ein Byte. Eine 1k-Zelle fasst &e8 128&r Stück einer Sorte oder &e4 160&r, wenn alle 63 Typen belegt sind."
+		"&eHow a cell counts:&r every type costs bytes up front, after that eight items need one byte. A 1k cell holds &e8,128&r of one kind, or &e4,160&r when all 63 types are taken."
 		""
-		"Kaputte Werkzeuge aus der Mobfarm gehören nicht hinein: jede Haltbarkeit ist ein eigener Typ. Leere Zellen zerlegst du mit Schleichen und Rechtsklick."
+		"Broken tools from the mob farm do not belong in it: every durability is a type of its own. Empty cells come apart with sneak and right click."
 	]
-	quest.51E5531618D4B793.quest_subtitle: "1 024 Bytes, 63 Typen."
-	quest.51E5531618D4B793.title: "&7Bau eine 1k-Zelle"
+	quest.51E5531618D4B793.quest_subtitle: "1,024 bytes, 63 types."
+	quest.51E5531618D4B793.title: "&7Build a 1k cell"
 	quest.51E593A88A66EDF2.quest_desc: [
 		"Formlos an der Werkbank: &6Arcane Crystal Dust&r, &6Redstone&r, &6Lohenstaub&r, &6Knochenmehl&r, eine &6Phantomhaut&r und &6Schwarzpulver&r ergeben &e4 Mundabitur Dust&r."
 		""
@@ -18886,14 +18907,14 @@
 	quest.52CDB5AFF4147675.quest_subtitle: "[\"\",{\"keybind\":\"key.apotheosis.open_world_tier_select\"},{\"text\":\" öffnet das Menü.\"}]"
 	quest.52CDB5AFF4147675.title: "&eAktiviere die Weltstufe Haven"
 	quest.52D1CFF3595407C9.quest_desc: [
-		"&6Controller&r: Herz des Netzes, 32 Kanäle pro Seite. &6Energieakzeptor&r: 2 FE zu 1 AE. &6Energiezelle&r und &6Dichte Energiezelle&r: 200 000 und 1,6 Mio. AE Puffer. &6Vibrationskammer&r: Brennstoff zu 40 AE/t."
-		"&6ME-Laufwerk&r: 10 Zellen. &6ME-Truhe&r: eine Zelle mit eigener Konsole. &6ME-IO-Port&r: füllt oder leert Zellen. &6Speicherzellenwerkbank&r: Zellen filtern und mit Karten bestücken."
-		"&6Konsole&r, &6Fertigungskonsole&r, &6Schablonenkonsole&r, &6Schablonen-Zugriffskonsole&r: schauen, craften, Rezepte schreiben, Provider verwalten. &6Speichermonitor&r und &6Konversionsmonitor&r: zeigen eine Menge, der zweite tauscht auch."
-		"&6Import-&r, &6Export-&r und &6Speicherbus&r: rein, raus, fremde Kisten. &6Formations-&r und &6Annihilationsfeld&r: Blöcke setzen und abbauen. &6Füllstandsemitter&r: Redstone nach Bestand, ohne Kanal. &6Schaltbarer Bus&r: Kabel per Redstone trennen."
-		"&6Schnittstelle&r: Kiste mit Vorrat. &6Schablonen-Provider&r und &6Molekularassembler&r: Autocrafting. &6Gravurmaschine&r, &6Ladegerät&r, &6Wachstumsbeschleuniger&r, &6Materiekondensator&r: Maschinen. &6P2P-Tunnel&r und &6Zugangspunkt&r: Verbindungen."
+		"&6Controller&r: the heart of the network, 32 channels per side. &6Energy Acceptor&r: 2 FE to 1 AE. &6Energy Cell&r and &6Dense Energy Cell&r: 200,000 and 1.6 million AE of buffer. &6Vibration Chamber&r: fuel to 40 AE/t."
+		"&6ME Drive&r: 10 cells. &6ME Chest&r: one cell with a terminal of its own. &6ME IO Port&r: fills or empties cells. &6Cell Workbench&r: filter cells and fit them with cards."
+		"&6Terminal&r, &6Crafting Terminal&r, &6Pattern Encoding Terminal&r, &6Pattern Access Terminal&r: look, craft, write recipes, manage providers. &6Storage Monitor&r and &6Conversion Monitor&r: show an amount, the second one also swaps."
+		"&6Import&r, &6Export&r and &6Storage Bus&r: in, out, foreign chests. &6Formation&r and &6Annihilation Plane&r: place and break blocks. &6Level Emitter&r: redstone by stock, without a channel. &6Toggle Bus&r: cut a cable by redstone."
+		"&6Interface&r: a chest with a stock. &6Pattern Provider&r and &6Molecular Assembler&r: autocrafting. &6Inscriber&r, &6Charger&r, &6Growth Accelerator&r, &6Matter Condenser&r: machines. &6P2P Tunnel&r and &6Access Point&r: connections."
 	]
-	quest.52D1CFF3595407C9.quest_subtitle: "Eine Zeile pro Gerät."
-	quest.52D1CFF3595407C9.title: "&7Kenne jedes AE2-Gerät"
+	quest.52D1CFF3595407C9.quest_subtitle: "One line per device."
+	quest.52D1CFF3595407C9.title: "&7Know every AE2 device"
 	quest.52E9875B96B119C7.quest_desc: [
 		"Gold nuggets, an ink sac, an &6ender pearl&r and paper make three &6Warp Scrolls&r. Each opens the list of all your waystones once."
 		""
@@ -18997,6 +19018,15 @@
 	]
 	quest.53514A25A75A41BB.quest_subtitle: "Not the same one as for the backpack."
 	quest.53514A25A75A41BB.title: "Build an upgrade base for chests"
+	quest.53514EDE2640B797.quest_desc: [
+		"&6Doppeltüren&r gehen zusammen auf. Ein leerer Stapel in der Hand füllt sich aus dem Inventar nach. Der Tooltip einer &6Shulkerkiste&r zeigt ihren Inhalt, der eines Werkzeugs seine Haltbarkeit als Zahl."
+		""
+		"Blöcke setzt du an die Kante vor dir, ohne zu schleichen: schau schräg nach unten über den Rand. Durch Gras und Blumen hindurch triffst du, was dahinter steht."
+		""
+		"Die &6Crafting on a Stick&r-Werkbank trägst du in der Hand. Und im Zaubertisch, bei Händlern und in Truhen findest du &dUnermüdlich&r: mit dieser Verzauberung kostet Ultimine auf dem Werkzeug keinen Hunger."
+	]
+	quest.53514EDE2640B797.quest_subtitle: "Was im Alltag einfach da ist."
+	quest.53514EDE2640B797.title: "&7Kenn die Kleinigkeiten"
 	quest.53598BFDD376FB7D.quest_desc: [
 		"Build a &6brewing stand&r (blaze rod, 3 cobblestone). Water bottle plus &6Nether wart&r, then &6magma cream&r, makes the &6Potion of Fire Resistance&r."
 		""
@@ -19037,12 +19067,12 @@
 	quest.538B0C7E814E36A3.quest_subtitle: "Ein Stecker am Kraftwerk, ein Punkt an jeder Maschine."
 	quest.538B0C7E814E36A3.title: "&6&lVersorge die ganze Basis"
 	quest.53A2D8B1C75626E4.quest_desc: [
-		"Formlos aus einem &6Leuchtfeld&r, einem &6Konstruktionsprozessor&r und einem &6Schablonen-Provider&r."
+		"Shapeless from an &6Illuminated Panel&r, an &6Engineering Processor&r and a &6Pattern Provider&r."
 		""
-		"Steht eine Wand aus Providern und Assemblern dicht an dicht, kommst du an die mittleren nicht mehr heran. Die Konsole zeigt jeden Provider im Netz, und du legst Schablonen direkt hinein."
+		"When a wall of providers and assemblers stands packed together, you cannot reach the middle ones any more. The terminal shows every provider in the network, and you put patterns straight into them."
 	]
-	quest.53A2D8B1C75626E4.quest_subtitle: "Alle Provider in einem Fenster."
-	quest.53A2D8B1C75626E4.title: "&aBau eine Schablonen-Zugriffskonsole"
+	quest.53A2D8B1C75626E4.quest_subtitle: "All providers in one window."
+	quest.53A2D8B1C75626E4.title: "&aBuild a pattern access terminal"
 	quest.53A3C71A0B5C3715.quest_desc: [
 		"{image:kronwerke:textures/quests/shots/alfheim_corporea_index.png width:224 height:126 align:center}"
 		"Werkbank: &62 Reine Ender-Essenz&r, &64 Obsidian&r, &61 Corporea-Block&r, &62 Drachensteine&r."
@@ -19259,14 +19289,14 @@
 	quest.54AC82A8BC800ADE.title: "&6Clock your setup"
 	quest.54AF6ABEE259F331.quest_desc: [
 		"{image:kronwerke:textures/quests/shots/ae2_controller.png width:224 height:126 align:center}"
-		"&eRezept auf Kronwerke:&r &6Himmelssteinblöcke&r in die vier Ecken, ein &6Spirit Attuned Gem&r von Occultism oben in die Mitte, &6Fluixkristalle&r links, rechts und unten in der Mitte, ein &6Konstruktionsprozessor&r ins Zentrum."
+		"&eRecipe on Kronwerke:&r &6Sky Stone Blocks&r in the four corners, a &6Spirit Attuned Gem&r from Occultism at the top centre, &6Fluix Crystals&r left, right and bottom centre, an &6Engineering Processor&r in the centre."
 		""
-		"Das Juwel machst du aus Lapis im Geisterfeuer, siehe Kapitel &5Occultism&r. Jede Seite des Controllers gibt &e32 Kanäle&r aus."
+		"You make the gem from lapis in Spiritfire, see the chapter &5Occultism&r. Every side of the controller gives out &e32 channels&r."
 		""
-		"&eRegeln:&r ein Controller pro Netz, er darf aus mehreren Blöcken bestehen, alles in 7 x 7 x 7. Er braucht &d6 AE/t&r pro Block. Wird ein Block rot, stimmt die Form nicht."
+		"&eRules:&r one controller per network, it may be made of several blocks, all within 7 x 7 x 7. It needs &d6 AE/t&r per block. If a block turns red, the shape is wrong."
 	]
-	quest.54AF6ABEE259F331.quest_subtitle: "Netze brauchen ein Ritual."
-	quest.54AF6ABEE259F331.title: "&5&lBau einen ME-Controller"
+	quest.54AF6ABEE259F331.quest_subtitle: "Networks need a ritual."
+	quest.54AF6ABEE259F331.title: "&5&lBuild an ME Controller"
 	quest.54B3D1FDD28C9434.quest_desc: [
 		"{image:kronwerke:textures/quests/shots/list_power_mekmm_large.png width:224 height:126 align:center}"
 		"Der &6Große Wärmegenerator&r und der &6Große Windgenerator&r sind die Riesenversionen der Mekanism-Generatoren, der &6Große Gasgenerator&r hat einen Tank von 180 000 mB. Alle drei große Blöcke, der Windgenerator darf keinen zweiten direkt neben sich haben."
@@ -19430,12 +19460,12 @@
 	quest.5551DF3525B3507A.quest_subtitle: "Behutsamkeit nimmt ihn mit."
 	quest.5551DF3525B3507A.title: "&2&lHol dir einen Spawner"
 	quest.555D9BA5A85FCD28.quest_desc: [
-		"&eRezept auf Kronwerke:&r Eisen in die Ecken, &6Konstruktionsprozessoren&r oben und unten, zwei &6Fortgeschrittene Steuerschaltkreise&r von Mekanism links und rechts, die Mitte bleibt frei."
+		"&eRecipe on Kronwerke:&r iron in the corners, &6Engineering Processors&r at the top and bottom, two &6Advanced Control Circuits&r from Mekanism left and right, the middle stays empty."
 		""
-		"Die Schaltkreise ersetzen die Fluix-Glaskabel des Originals: Lagernetze brauchen Mekanism. Das Laufwerk hält bis zu &e10 Zellen&r und braucht einen Kanal."
+		"The circuits replace the fluix glass cables of the original: storage networks need Mekanism. The drive holds up to &e10 cells&r and needs one channel."
 	]
-	quest.555D9BA5A85FCD28.quest_subtitle: "Zehn Plätze für Speicherzellen."
-	quest.555D9BA5A85FCD28.title: "&3Bau ein ME-Laufwerk"
+	quest.555D9BA5A85FCD28.quest_subtitle: "Ten slots for storage cells."
+	quest.555D9BA5A85FCD28.title: "&3Build an ME Drive"
 	quest.555DD9CA6B18F83F.quest_desc: [
 		"&e3 leaf blocks&r, &e1 spider eye&r, catalysts Fire and Air. &d8,000 mana&r."
 		""
@@ -20498,23 +20528,23 @@
 	quest.59DB7135CD26CAD3.quest_subtitle: "Arcana landen nicht mehr im Inventar."
 	quest.59DB7135CD26CAD3.title: "&7Näh einen Soulwoven Pouch"
 	quest.59DEA4114D1D5E3B.quest_desc: [
-		"&6Speicherzellenwerkbank:&r Wolle, Kalkulationsprozessor, Wolle oben, Eisen, Truhe, Eisen in der Mitte, drei Eisen unten."
+		"&6Cell Workbench:&r wool, Calculation Processor, wool at the top, iron, chest, iron in the middle, three iron at the bottom."
 		""
-		"Leg eine Zelle hinein und zieh die Gegenstände, die sie nehmen soll, aus EMI in die Filterplätze. Danach landet nur noch das darin. Ein Knopf übernimmt den aktuellen Inhalt als Filter."
+		"Put a cell into it and drag the items it should take from EMI into the filter slots. After that only those land in it. A button takes the current contents as the filter."
 		""
-		"Karten kommen auch hier in die Zelle: die &6Gleichmäßige-Verteilungskarte&r teilt den Platz auf alle Typen auf, die &6Overflow Zerstörungskarte&r löscht, was nicht mehr passt. Die nur mit Filter benutzen."
+		"Cards go into the cell here too: the &6Equal Distribution Card&r splits the room across all types, the &6Overflow Destruction Card&r deletes what no longer fits. Use that one only with a filter."
 	]
-	quest.59DEA4114D1D5E3B.quest_subtitle: "Eine Zelle nur für Erze."
-	quest.59DEA4114D1D5E3B.title: "&dPartitioniere eine Zelle"
+	quest.59DEA4114D1D5E3B.quest_subtitle: "A cell just for ores."
+	quest.59DEA4114D1D5E3B.title: "&dPartition a cell"
 	quest.59EE5DF5D7393061.quest_desc: [
-		"&6FE-Zellengehäuse&r mit &6gehärtetem Isolierharz&r (Wassereimer, zwei Kakteen, Knochenmehl, Silizium, Schleimball, Glowstone, im Ofen gehärtet). Komponente: Logikprozessor mit Redstone-Kristallen und Certusquarzstaub."
+		"An &6ME FE Cell Housing&r with &6Harden Insulating Resin&r (a water bucket, two cacti, bone meal, silicon, a slime ball, glowstone, hardened in a furnace). Component: a Logic Processor with Redstone Crystals and Certus Quartz Dust."
 		""
-		"Pro Byte passen &d1 048 576 FE&r hinein, die 1k-Zelle schluckt also rund eine Milliarde FE. Der &6Flux Accessor&r ist die Steckdose: Strom rein über Kabel, Strom raus an Maschinen daneben. Die &6Induktionskarte&r macht dasselbe aus Schnittstelle oder Provider."
+		"&d1,048,576 FE&r fit into one byte, so the 1k cell swallows about a billion FE. The &6Flux Accessor&r is the socket: power in through a cable, power out to machines next to it. The &6Induction Card&r does the same from an interface or a provider."
 		""
-		"&eKronwerke:&r Der gespeicherte Strom versorgt nicht das ME-Netz selbst, dafür bleibt der Energieakzeptor. Zellen bis 16k in Stufe 3."
+		"&eKronwerke:&r The stored power does not feed the ME network itself, the Energy Acceptor stays for that. Cells up to 16k in stage 3."
 	]
-	quest.59EE5DF5D7393061.quest_subtitle: "Ein Akku, der ins Laufwerk passt."
-	quest.59EE5DF5D7393061.title: "&c&lSpeicher Strom in Zellen"
+	quest.59EE5DF5D7393061.quest_subtitle: "A battery that fits into the drive."
+	quest.59EE5DF5D7393061.title: "&c&lStore power in cells"
 	quest.59F84C7BFF6888A2.quest_desc: [
 		"Iron all around, a piston on top, a circuit in the middle. It pulls by filter from the chest behind it and pushes into the transporter in front of it."
 		""
@@ -20969,12 +20999,12 @@
 	quest.5B96C535381949C2.quest_subtitle: "Der Reaktor meldet sich per Redstone."
 	quest.5B96C535381949C2.title: "&cBau einen Fusions-Logikadapter"
 	quest.5BBDB9E4B8166E3A.quest_desc: [
-		"Im Crystal Assembler: Maschinenrahmen, acht Konstruktionsprozessoren, alle vier Pressen, eine &6Inscriber Concurrent Press&r (drei Enderaugen, vier Entro Crystals, Siliziumdruck) und eine Steinsäge."
+		"In the Crystal Assembler: a machine frame, eight Engineering Processors, all four presses, an &6Inscriber Concurrent Press&r (three eyes of ender, four Entro Crystals, a Silicon Press) and a stonecutter."
 		""
-		"Ein &6Siliziumblock&r gibt neun Gedruckte Silizium, ein Goldblock neun Logikschaltkreise, ein Diamantblock neun Konstruktionsschaltkreise, ein Certusquarzblock vier Kalkulationsschaltkreise. Die schnellste Siliziumquelle in Stufe 3."
+		"A &6silicon block&r gives nine Printed Silicon, a gold block nine logic circuits, a diamond block nine engineering circuits, a Certus Quartz Block four calculation circuits. The fastest source of silicon in stage 3."
 	]
-	quest.5BBDB9E4B8166E3A.quest_subtitle: "Neun Platten aus einem Block."
-	quest.5BBDB9E4B8166E3A.title: "&3Bau einen Circuit Slicer"
+	quest.5BBDB9E4B8166E3A.quest_subtitle: "Nine plates from one block."
+	quest.5BBDB9E4B8166E3A.title: "&3Build a Circuit Slicer"
 	quest.5BCBAB91759BF922.quest_desc: [
 		"&6Einfache Batterie:&r ein Stahl oben, darunter zweimal Plastik, Electrum, Plastik. Speicher: drei &6Nickel&r oben, Silizium, &6Magnetspule&r, Silizium in der Mitte, drei Batterien unten."
 		""
@@ -21043,19 +21073,19 @@
 	quest.5BF96ACCE4732BD0.quest_subtitle: "The pentacle for Foliot possession."
 	quest.5BF96ACCE4732BD0.title: "&5Draw Hedyrin's Lure"
 	quest.5C15963A121D43D5.quest_desc: [
-		"&6ME Tag Storage Bus:&r Logikprozessor oben, Redstone, Speicherbus, Redstone in der Mitte, ein Buch unten."
+		"&6ME Tag Storage Bus:&r a Logic Processor at the top, redstone, storage bus, redstone in the middle, a book at the bottom."
 		""
-		"Statt einzelner Gegenstände gibst du einen Tag ein, Sternchen sind erlaubt. &ec:raw_materials/*&r schickt alle Roherze in die Kiste dahinter, &ec:ingots/* | c:gems/*&r alle Barren und Edelsteine: &e|&r heißt oder."
+		"In place of single items you enter a tag, asterisks are allowed. &ec:raw_materials/*&r sends all raw ores into the chest behind it, &ec:ingots/* | c:gems/*&r all ingots and gems: &e|&r means or."
 	]
-	quest.5C15963A121D43D5.quest_subtitle: "Ein Speicherbus, der Tags lesen kann."
-	quest.5C15963A121D43D5.title: "&3Filter nach Tags"
+	quest.5C15963A121D43D5.quest_subtitle: "A storage bus that can read tags."
+	quest.5C15963A121D43D5.title: "&3Filter by tags"
 	quest.5C1BE0D2A1DC8D0B.quest_desc: [
-		"&64k-Komponente:&r Redstone in die Ecken, ein Kalkulationsprozessor oben, drei 1k-Komponenten links, rechts und unten, Quarzglas in die Mitte."
+		"&64k component:&r redstone in the corners, a Calculation Processor at the top, three 1k components left, right and bottom, quartz glass in the middle."
 		""
-		"Eine 4k-Zelle fasst &e32 512&r Stück einer Sorte, &e16 640&r bei 63 Typen. Volle Zelle und größere Komponente an der Werkbank tauschen die Komponente, der Inhalt bleibt."
+		"A 4k cell holds &e32,512&r of one kind, &e16,640&r with 63 types. A full cell and a larger component at the crafting table swap the component, the contents stay."
 	]
-	quest.5C1BE0D2A1DC8D0B.quest_subtitle: "Viermal so viel Platz, gleiche Typen."
-	quest.5C1BE0D2A1DC8D0B.title: "&9Rüste auf 4k auf"
+	quest.5C1BE0D2A1DC8D0B.quest_subtitle: "Four times the room, the same types."
+	quest.5C1BE0D2A1DC8D0B.title: "&9Upgrade to 4k"
 	quest.5C3395CA4CBB0A61.quest_desc: [
 		"Erst die &6Shears of Winter&r: Frozen Core, Schere und zwei Diamanten formlos. Rechtsklick halten schert Schafe und reißt Laub im Umkreis ab."
 		""
@@ -22436,12 +22466,12 @@
 	quest.62868D7A8B29245D.quest_subtitle: "Bruchstein und Wasser ohne Ende."
 	quest.62868D7A8B29245D.title: "&3Bau unendliche Zellen"
 	quest.628BB49DC2AAA41F.quest_desc: [
-		"&6Fertigungskarte:&r formlos aus Basiskarte und Werkbank. Steck sie in einen Exportbus, stell den Gegenstand ein, und fehlt er im Netz, bestellt der Bus ihn selbst."
+		"&6Crafting Card:&r shapeless from a Basic Card and a crafting table. Put it into an Export Bus, set the item, and when it is missing in the network the bus orders it by itself."
 		""
-		"Der &6ME-Füllstandsemitter&r (formlos: Redstonefackel und Kalkulationsprozessor) gibt Redstone, sobald ein Bestand unter eine Zahl fällt. Mit Fertigungskarte kann er sogar eine Farm einschalten, die ohne Zutaten arbeitet."
+		"The &6ME Level Emitter&r (shapeless: redstone torch and Calculation Processor) gives redstone as soon as a stock falls below a number. With a Crafting Card it can even switch on a farm that works without ingredients."
 	]
-	quest.628BB49DC2AAA41F.quest_subtitle: "Die Fertigungskarte bestellt nach."
-	quest.628BB49DC2AAA41F.title: "&aHalt einen Vorrat"
+	quest.628BB49DC2AAA41F.quest_subtitle: "The Crafting Card reorders."
+	quest.628BB49DC2AAA41F.title: "&aKeep a stock"
 	quest.628D4F8468034B1E.quest_desc: [
 		"Find one of these structures and tick this off: &6Creeping Crypt&r, &6Undead Crypt&r, &6Stray Fort&r, &6Illager Manor&r, illager hideout, &6Toxic Lair&r, jungle or desert ruins."
 		""
@@ -23326,14 +23356,14 @@
 	quest.6677E555381A9836.quest_subtitle: "Deine Level auf Vorrat, verlustfrei."
 	quest.6677E555381A9836.title: "&aSpeicher Erfahrung im EP-Obelisken"
 	quest.667B8F1B1F4833EA.quest_desc: [
-		"Kupfer oben und an den Seiten, ein &6Fluixblock&r oben in der Mitte, ein &6Geladener Certusquarzkristall&r in die Mitte, drei Eisen unten."
+		"Copper at the top and on the sides, a &6fluix block&r at the top centre, a &6Charged Certus Quartz Crystal&r in the middle, three iron at the bottom."
 		""
-		"Er gibt dem Netz &d20 AE/t&r, ohne dass du je etwas nachfüllst. Mehr als einer pro Netz geht nicht, die Schwingungen stören sich, sogar durch Quarzfaser hindurch."
+		"It gives the network &d20 AE/t&r without you ever refilling anything. More than one per network does not work, the vibrations disturb each other, even through quartz fiber."
 		""
-		"Für ein kleines Netz reicht das im Leerlauf. Wer mehr braucht, bleibt beim Energieakzeptor."
+		"For a small network that is enough when idle. If you need more, stay with the Energy Acceptor."
 	]
-	quest.667B8F1B1F4833EA.quest_subtitle: "Strom ohne Brennstoff."
-	quest.667B8F1B1F4833EA.title: "&eBau einen Kristallresonanzgenerator"
+	quest.667B8F1B1F4833EA.quest_subtitle: "Power without fuel."
+	quest.667B8F1B1F4833EA.title: "&eBuild a Crystal Resonance Generator"
 	quest.669763008F19B86D.quest_desc: [
 		"&eBlueprint:&r one &6Blueprint Paper&r and &6two string&r, shapeless. Then blueprint plus &eone&r material: the binding."
 		""
@@ -23374,14 +23404,14 @@
 	quest.66D79B61D760D2D0.quest_subtitle: "Bretter, Boote, Türen, und ein Setzling aus dem Laub."
 	quest.66D79B61D760D2D0.title: "&2Pflanze Echoholz"
 	quest.66E6A917F19C6D28.quest_desc: [
-		"&6Drahtloser Zugangspunkt:&r Drahtlosempfänger, Kalkulationsprozessor, Glaskabel übereinander. &6Drahtlose Fertigungskonsole:&r Empfänger, Fertigungskonsole, Dichte Energiezelle übereinander. Leg die Konsole in den Platz oben rechts im Zugangspunkt, dann ist sie verbunden."
+		"&6Wireless Access Point:&r Wireless Receiver, Calculation Processor, glass cable on top of each other. &6Wireless Crafting Terminal:&r receiver, crafting terminal, Dense Energy Cell on top of each other. Put the terminal into the slot at the top right of the access point, then it is linked."
 		""
-		"&6Drahtlosverstärker&r im Zugangspunkt erhöhen Reichweite und Stromverbrauch. Aufladen geht im Ladegerät."
+		"&6Wireless Boosters&r in the access point raise range and power draw. It recharges in the Charger."
 		""
-		"&6AE2 Wireless Terminals&r legt mehrere drahtlose Konsolen zur &6Universalkonsole&r zusammen, die &6Magnetkarte&r darin zieht Gegenstände in der Nähe ins Netz."
+		"&6AE2 Wireless Terminals&r joins several wireless terminals into the &6Wireless Universal Terminal&r, and the &6Magnet Card&r in it pulls nearby items into the network."
 	]
-	quest.66E6A917F19C6D28.quest_subtitle: "Das Lager in der Tasche."
-	quest.66E6A917F19C6D28.title: "&bGeh drahtlos"
+	quest.66E6A917F19C6D28.quest_subtitle: "The storage in your pocket."
+	quest.66E6A917F19C6D28.title: "&bGo wireless"
 	quest.66E90CB505CEE239.quest_desc: [
 		"Cowl from &e5&r, Robe Top from &e8&r Manaweave Cloth, Robe Bottom and Boots the same as with leather."
 		""
@@ -23747,10 +23777,10 @@
 	quest.68722186C6F083CB.quest_subtitle: "Sweet rolls from the spout."
 	quest.68722186C6F083CB.title: "&6Fill bread with milk"
 	quest.68751490DDDE0237.quest_desc: [
-		"Rechtsklick mit einem &6Chemikalientank&r von Mekanism auf einen platzierten &6ME P2P-Tunnel&r, und er wird zu diesem Typ. Abbauen gibt dir den Tunnel als eigenen Gegenstand."
+		"Right click a placed &6ME P2P Tunnel&r with a &6Chemical Tank&r from Mekanism, and it turns into this type. Breaking it gives you the tunnel as an item of its own."
 	]
-	quest.68751490DDDE0237.quest_subtitle: "Mekanism-Gase ohne Druckrohr (Applied Mekanistics)."
-	quest.68751490DDDE0237.title: "Bau einen Chemie-Tunnel"
+	quest.68751490DDDE0237.quest_subtitle: "Mekanism gases without a pressurized tube (Applied Mekanistics)."
+	quest.68751490DDDE0237.title: "Build a chemical tunnel"
 	quest.687BFE692FDDE430.quest_desc: [
 		"Oben und unten eine &6Plate Basic&r, in der Mitte &6Tough Alloy, Redstone, Tough Alloy&r. Gibt zwei."
 	]
@@ -23764,15 +23794,24 @@
 	]
 	quest.6880C52DD0366C72.quest_subtitle: "Der Altar wird schneller."
 	quest.6880C52DD0366C72.title: "&eStell Runewood-Obelisken auf"
-	quest.689CD3C6861A5DC5.quest_desc: [
-		"Drei Glas oben, ME-Laufwerk, Glaskabel, ME-Laufwerk in der Mitte, Eisen, Logikprozessor, Eisen unten."
+	quest.68955C43FCF9E50A.quest_desc: [
+		"[\"\",{\"text\":\"Easy Villagers:\",\"color\":\"gold\"},{\"text\":\" Schleich und drück \"},{\"keybind\":\"key.easy_villagers.pick_up\",\"color\":\"yellow\"},{\"text\":\" vor einem Dorfbewohner, und du hast ihn als Gegenstand im Inventar. Ein Rechtsklick setzt ihn wieder ab. In den Blöcken der Mod arbeitet er, ohne herumzulaufen: \"},{\"text\":\"Trader\",\"color\":\"gold\"},{\"text\":\" zum Handeln, \"},{\"text\":\"Breeder\",\"color\":\"gold\"},{\"text\":\" für Nachwuchs, \"},{\"text\":\"Farmer\",\"color\":\"gold\"},{\"text\":\", \"},{\"text\":\"Iron Farm\",\"color\":\"gold\"},{\"text\":\", \"},{\"text\":\"Converter\",\"color\":\"gold\"},{\"text\":\" und \"},{\"text\":\"Incubator\",\"color\":\"gold\"},{\"text\":\". Rezepte in EMI.\"}]"
 		""
-		"Der Pfeil in der Mitte stellt die Richtung ein: aus der Zelle ins Netz oder aus dem Netz in die Zelle. Fertige Zellen wandern in die Ausgabeplätze. So ziehst du eine volle 1k-Zelle auf eine 16k-Zelle um."
+		"[\"\",{\"text\":\"Gefällt dir ein Angebot nicht, wechsle es im Handelsfenster mit dem Knopf oder mit \"},{\"keybind\":\"key.easy_villagers.cycle_trades\",\"color\":\"yellow\"},{\"text\":\". Das geht, solange du mit ihm noch nicht gehandelt hast.\"}]"
 		""
-		"&6Beschleunigungskarten&r bewegen mehr pro Schritt, die &6Redstone-Karte&r schaltet ihn per Signal."
+		"Dorfbewohner in Blöcken laufen nicht, suchen keine Wege und kosten den Server fast nichts. Eine Handelshalle baust du am besten so."
 	]
-	quest.689CD3C6861A5DC5.quest_subtitle: "Zellen in Sekunden füllen oder leeren."
-	quest.689CD3C6861A5DC5.title: "&6Bau einen ME-IO-Port"
+	quest.68955C43FCF9E50A.quest_subtitle: "Als Gegenstand, und mit neuen Angeboten."
+	quest.68955C43FCF9E50A.title: "&aNimm einen Dorfbewohner mit"
+	quest.689CD3C6861A5DC5.quest_desc: [
+		"Three glass at the top, ME Drive, glass cable, ME Drive in the middle, iron, Logic Processor, iron at the bottom."
+		""
+		"The arrow in the middle sets the direction: out of the cell into the network or out of the network into the cell. Finished cells move to the output slots. That is how you move a full 1k cell over to a 16k cell."
+		""
+		"&6Acceleration Cards&r move more per step, the &6Redstone Card&r switches it by signal."
+	]
+	quest.689CD3C6861A5DC5.quest_subtitle: "Fill or empty cells in seconds."
+	quest.689CD3C6861A5DC5.title: "&6Build an ME IO Port"
 	quest.68B0BEF2F3D4B62B.quest_desc: [
 		"&eRezept:&r Compressed Iron, &6Remote&r, Compressed Iron oben, &6PCB&r, &6Drone&r, &6Advanced Pressure Tube&r in der Mitte, Compressed Iron, &6Network Registry&r, Compressed Iron unten. Das Remote: Network IO Port, zwei Transistoren, GPS Tool, zwei Transistoren, Network Data Storage."
 		""
@@ -23799,14 +23838,14 @@
 	quest.68C246034187E5F6.title: "&4Bau eine Waschfabrik"
 	quest.68DB324F17A467F3.quest_desc: [
 		"{image:kronwerke:textures/quests/shots/ae2_network.png width:224 height:126 align:center}"
-		"Bau einen &6Energieakzeptor&r (Eisen in die Ecken, Quarzglas an die Seiten, Kupfer in die Mitte) und eine &6ME-Konsole&r (formlos: Formationskern, Annihilationskern, Leuchtfeld, Logikprozessor). Verbinde alles mit &6Fluix-Glaskabeln&r (Quarzfaser und zwei Fluix gibt vier)."
+		"Build an &6Energy Acceptor&r (iron in the corners, quartz glass on the sides, copper in the middle) and an &6ME Terminal&r (shapeless: Formation Core, Annihilation Core, Illuminated Panel, Logic Processor). Connect everything with &6Fluix ME Glass Cables&r (a quartz fiber and two fluix give four)."
 		""
-		"Der Akzeptor wandelt &d2 FE in 1 AE&r. Eine &6Energiezelle&r (200 000 AE) daneben fängt Stromspitzen beim Einlagern ab, sonst startet das Netz kurz neu."
+		"The acceptor turns &d2 FE into 1 AE&r. An &6Energy Cell&r (200,000 AE) next to it catches power spikes when you store things, otherwise the network restarts for a moment."
 		""
-		"Ohne Controller ist das Netz &ead hoc&r und trägt höchstens &e8 Geräte&r mit Kanal. Beim neunten geht alles aus."
+		"Without a controller the network is &ead hoc&r and carries at most &e8 devices&r with a channel. With the ninth everything goes dark."
 	]
-	quest.68DB324F17A467F3.quest_subtitle: "Laufwerk, Strom, Konsole, Kabel."
-	quest.68DB324F17A467F3.title: "&b&lSchließ dein erstes Netz an"
+	quest.68DB324F17A467F3.quest_subtitle: "Drive, power, terminal, cable."
+	quest.68DB324F17A467F3.title: "&b&lConnect your first network"
 	quest.68E11E26D9DEED7A.quest_desc: [
 		"{image:kronwerke:textures/quests/shots/create_brass_boiler.png width:224 height:126 align:center}"
 		"Place &64 Steam Engines&r on a big boiler and &64 Blaze Burners&r below. The Engineer's Goggles show the &eboiler level&r and what is missing: heat, water or size."
@@ -24256,7 +24295,7 @@
 		""
 		"&cAusblick:&r Der 64k-Kern (vier Fortschrittliche Prozessoren, drei 16k-Kerne) öffnet in Stufe 4."
 	]
-	quest.6AB3A70FA2E18096.quest_subtitle: "Das Größte, was Stufe 3 hergibt."
+	quest.6AB3A70FA2E18096.quest_subtitle: "The largest stage 3 has to offer."
 	quest.6AB3A70FA2E18096.title: "&bRüste auf 16k auf"
 	quest.6ABC6EFAB9C1B498.quest_desc: [
 		"An &6iron ingot&r over a &6stick&r. Gold or diamond work the same way."
@@ -25248,12 +25287,12 @@
 	quest.6FB03CF421652A7D.quest_subtitle: "A spell on a redstone pulse."
 	quest.6FB03CF421652A7D.title: "&a&lBuild a Basic Spell Turret"
 	quest.6FB0CE50046D4F85.quest_desc: [
-		"&6Goldbarren&r unter dem Logikdruck gibt einen gedruckten Logikschaltkreis. Den legst du oben ein, &6Redstone&r in die Mitte, &6Gedrucktes Silizium&r unten: fertig ist der &6Logikprozessor&r."
+		"A &6gold ingot&r under the Logic Press gives a Printed Logic Circuit. Put that in the top slot, &6redstone&r in the middle, &6Printed Silicon&r at the bottom: the &6Logic Processor&r is done."
 		""
-		"Logikprozessoren stecken in Zellen, Konsolen und den Formations- und Annihilationskernen."
+		"Logic Processors go into cells, terminals and the formation and annihilation cores."
 	]
-	quest.6FB0CE50046D4F85.quest_subtitle: "Gold, dann Redstone und Silizium."
-	quest.6FB0CE50046D4F85.title: "&eBau einen Logikprozessor"
+	quest.6FB0CE50046D4F85.quest_subtitle: "Gold, then redstone and silicon."
+	quest.6FB0CE50046D4F85.title: "&eBuild a Logic Processor"
 	quest.6FB294DD0D637FC4.quest_desc: [
 		"Setz einen &6Eichensetzling&r auf Erde in einen Pflanztopf. Nach &e2 Minuten&r ist der Baum reif und gibt &e1 bis 4 Eichenstämme&r, dazu mit je 5 Prozent einen Setzling oder einen Apfel. Mit einer Schere im Werkzeugplatz kommen Blätter dazu."
 		""
@@ -25439,15 +25478,15 @@
 	quest.709D024E47EC8723.quest_subtitle: "Hier laufen mehr Endermen als irgendwo sonst."
 	quest.709D024E47EC8723.title: "&5Sammle Enderperlen"
 	quest.709FC144CB431019.quest_desc: [
-		"&eRezept auf Kronwerke, Weg 1:&r &6Imbuement-Kammer&r von Ars Nouveau, ein &6Certusquarzkristall&r hinein, zwei Sockel daneben mit &6Redstone-Staub&r und &6Glowstone-Staub&r. &d2 000 Quelle&r pro Kristall."
-		"&eRezept auf Kronwerke, Weg 2:&r &6Energizing Orb&r von Powah, ein Kristall und ein Redstone ergeben für &d20 000 FE&r gleich &ezwei&r geladene Kristalle."
+		"&eRecipe on Kronwerke, way 1:&r the &6Imbuement Chamber&r from Ars Nouveau, a &6Certus Quartz Crystal&r inside, two pedestals next to it with &6redstone dust&r and &6glowstone dust&r. &d2,000 source&r per crystal."
+		"&eRecipe on Kronwerke, way 2:&r the &6Energizing Orb&r from Powah, one crystal and one redstone give &etwo&r charged crystals for &d20,000 FE&r."
 		""
-		"Das Ladegerät lädt auf Kronwerke keinen Certus, und auch die Abkürzungen anderer Mods sind weg. Der Orb braucht hier einen Manadiamanten von Botania, siehe Kapitel &cPowah&r."
+		"On Kronwerke the Charger charges no certus, and the shortcuts of other mods are gone too. The orb needs a mana diamond from Botania here, see the chapter &cPowah&r."
 		""
-		"Das Starterpaket von Stufe 3 enthält acht geladene Kristalle. Spar sie für Fluix."
+		"The starter kit of stage 3 holds eight charged crystals. Save them for fluix."
 	]
-	quest.709FC144CB431019.quest_subtitle: "Erst ein Magier, später ein Kraftwerk."
-	quest.709FC144CB431019.title: "&e&lLade Certusquarz auf"
+	quest.709FC144CB431019.quest_subtitle: "First a mage, later a power plant."
+	quest.709FC144CB431019.title: "&e&lCharge certus quartz"
 	quest.70A9D4BB89E0A4CD.quest_desc: [
 		"{image:kronwerke:textures/quests/shots/the_end_st_aviary.png width:224 height:126 align:center}"
 		"Finde die &6Aviary&r (Voliere) von When Dungeons Arise. Sie steht nur in den End-Hochländern und Mittelländern."
@@ -25707,10 +25746,10 @@
 	quest.71FBBD10C8CECAFA.quest_subtitle: "Quartz with redstone, polished, on an iron sheet."
 	quest.71FBBD10C8CECAFA.title: "&dMake electron tubes"
 	quest.7201DEE5406460F3.quest_desc: [
-		"Rechtsklick mit einer &6Fackel&r oder &6Glowstone&r auf einen platzierten &6ME P2P-Tunnel&r, und er wird zu diesem Typ. Abbauen gibt dir den Tunnel als eigenen Gegenstand."
+		"Right click a placed &6ME P2P Tunnel&r with a &6torch&r or &6glowstone&r, and it turns into this type. Breaking it gives you the tunnel as an item of its own."
 	]
-	quest.7201DEE5406460F3.quest_subtitle: "Licht von hier nach dort."
-	quest.7201DEE5406460F3.title: "Bau einen Licht-Tunnel"
+	quest.7201DEE5406460F3.quest_subtitle: "Light from here to there."
+	quest.7201DEE5406460F3.title: "Build a light tunnel"
 	quest.72173DD90F34093A.quest_desc: [
 		"Bronzenuggets in die Ecken, Zinn an die Seiten, eine HDPE Platte in die Mitte, gibt zwei."
 		""
@@ -26430,14 +26469,14 @@
 	quest.75252D5A74788A46.quest_subtitle: "An Unprocessed Obsidian Sheet."
 	quest.75252D5A74788A46.title: "&6Pour lava on the powder"
 	quest.752AFBB1F67EAA89.quest_desc: [
-		"&6Flüssigkeitszellengehäuse&r und eine &61k-Komponente&r an der Werkbank ergeben die &61k-ME-Flüssigkeitsspeicherzelle&r. Sie kommt ins Laufwerk wie jede Zelle."
+		"An &6ME Fluid Cell Housing&r and a &61k component&r at the crafting table give the &61k ME Fluid Storage Cell&r. It goes into the drive like every cell."
 		""
-		"Eine Flüssigkeitszelle hält nur &e5 Typen&r, dafür passen &d8 Eimer&r in ein Byte. Lava, Wasser und Öl landen so direkt im Netz, abfüllen geht in der Konsole mit einem Eimer oder Tank."
+		"A fluid cell holds only &e5 types&r, but &d8 buckets&r fit into one byte. Lava, water and oil land straight in the network, and you draw them off in the terminal with a bucket or a tank."
 		""
-		"&eApplied Mekanistics:&r Mit einem &6Chemiezellengehäuse&r (Quarzglas, Redstone, drei Osmiumbarren unten) und derselben Komponente speicherst du Mekanism-Gase."
+		"&eApplied Mekanistics:&r With an &6ME Chemical Cell Housing&r (quartz glass, redstone, three osmium ingots at the bottom) and the same component you store Mekanism gases."
 	]
-	quest.752AFBB1F67EAA89.quest_subtitle: "Eimer brauchst du keine mehr."
-	quest.752AFBB1F67EAA89.title: "&9Lager Flüssigkeiten ein"
+	quest.752AFBB1F67EAA89.quest_subtitle: "You need no buckets any more."
+	quest.752AFBB1F67EAA89.title: "&9Store fluids"
 	quest.7530435B9DB892CE.quest_desc: [
 		"&6Molten Core&r, &6Goldbarren&r, &6Lohenrute&r und &6Void Tear&r formlos ergeben den &6Sojourner's Staff&r. Er zieht Fackeln, Laternen, Seelenfackeln, Glowstone und ähnliche Lichter aus deinem Inventar in sich, bis zu &e1.500 pro Sorte&r."
 		""
@@ -26632,14 +26671,14 @@
 	quest.761038536A3F396F.title: "&d&lFusionier eine Drakonische Spitzhacke"
 	quest.761A5ACAEE9A1588.quest_desc: [
 		"{image:kronwerke:textures/quests/shots/ae2_autocraft.png width:224 height:126 align:center}"
-		"&eRezept auf Kronwerke:&r Eisen in die Ecken, Quarzglas oben und unten, zwei &6Präzisionsgetriebe&r links und rechts, eine &6Werkbank&r in die Mitte. Setz ihn direkt an den Provider."
+		"&eRecipe on Kronwerke:&r iron in the corners, quartz glass at the top and bottom, two &6Precision Mechanisms&r left and right, a &6crafting table&r in the middle. Put it directly against the provider."
 		""
-		"Der Provider schickt Zutaten und Rezept hinüber, der Assembler craftet und gibt das Ergebnis zurück. Ein Provider kann mehrere Assembler ringsum bedienen. &6Beschleunigungskarten&r machen ihn schneller."
+		"The provider sends ingredients and recipe over, the assembler crafts and hands the result back. One provider can serve several assemblers around it. &6Acceleration Cards&r make it faster."
 		""
-		"Autocrafting gibt es auf Kronwerke nur mit Create."
+		"On Kronwerke there is no autocrafting without Create."
 	]
-	quest.761A5ACAEE9A1588.quest_subtitle: "Werkbankrezepte ganz ohne Hände."
-	quest.761A5ACAEE9A1588.title: "&a&lStell einen Molekularassembler daneben"
+	quest.761A5ACAEE9A1588.quest_subtitle: "Crafting table recipes with no hands at all."
+	quest.761A5ACAEE9A1588.title: "&a&lPut a Molecular Assembler next to it"
 	quest.7621EE6A605A6664.quest_desc: [
 		"&6Wooden slab&r, &6brass casing&r and &6Electron Tube&r on top of each other make the &6Clockwork Bearing&r. With rotation it turns the blocks in front of it by the time of day: an hour hand."
 		""
@@ -27138,13 +27177,13 @@
 	quest.77F0D85FF6203B4B.quest_subtitle: "Ars Technica: tier 2 checklist."
 	quest.77F0D85FF6203B4B.title: "&dLearn the Create glyphs"
 	quest.77FEE5209B67A4B4.quest_desc: [
-		"&61k&r: 8 128 Stück einer Sorte. &64k&r: 32 512. &616k&r: 130 048. Alle drei in Stufe 3, dazu Flüssigkeitszellen (8 Eimer pro Byte), Chemiezellen von Applied Mekanistics und FE-Zellen von Applied Flux in denselben Größen."
-		"&664k&r: 520 192, Himmelsbarren in der Komponente, Stufe 4. &6256k&r: 2 080 768, Draconium, Stufe 4."
-		"&6MEGA 1M&r und &64M&r: Draconium und Akkumulationsprozessor, Stufe 4. &6MEGA 16M&r bis &6256M&r und die &6Bulk-Zelle&r: Erwachtes Draconium, Stufe 5."
-		"Jede Zelle, egal wie groß, hat &e63 Typen&r. Die großen Zellen stehen im Kapitel &bAE2: Fortgeschritten&r."
+		"&61k&r: 8,128 of one kind. &64k&r: 32,512. &616k&r: 130,048. All three in stage 3, plus fluid cells (8 buckets per byte), chemical cells from Applied Mekanistics and FE cells from Applied Flux in the same sizes."
+		"&664k&r: 520,192, an Ingot of the Skies in the component, stage 4. &6256k&r: 2,080,768, draconium, stage 4."
+		"&6MEGA 1M&r and &64M&r: draconium and Accumulation Processor, stage 4. &6MEGA 16M&r to &6256M&r and the &6bulk cell&r: awakened draconium, stage 5."
+		"Every cell, however large, has &e63 types&r. The large cells are in the chapter &bAE2: Advanced&r."
 	]
-	quest.77FEE5209B67A4B4.quest_subtitle: "Was wann öffnet, und was hineinpasst."
-	quest.77FEE5209B67A4B4.title: "&7Kenne jede Zellengröße"
+	quest.77FEE5209B67A4B4.quest_subtitle: "What opens when, and what fits in."
+	quest.77FEE5209B67A4B4.title: "&7Know every cell size"
 	quest.780E0900D2373001.quest_desc: [
 		"&e3 slabs&r on top, &e4 planks&r below as two legs, of mahogany, willow or witch hazel. That is the &6Altar&r."
 		""
@@ -27861,6 +27900,15 @@
 	]
 	quest.7BBA588FE89BA602.quest_subtitle: "Drei Zutaten rein, ein Barren raus."
 	quest.7BBA588FE89BA602.title: "&6&lBau die Legierungsschmelze"
+	quest.7BD2437CE352E835.quest_desc: [
+		"Mit &6Easy Anvils&r bleiben Gegenstände im Amboss liegen, wenn du das Fenster schließt. Die Grenze &eZu teuer&r gibt es nicht mehr, Umbenennen kostet nichts und schadet dem Amboss nicht, und Bücher kosten die Hälfte."
+		""
+		"Ein beschädigter Amboss wird mit einem &6Eisenblock&r in der Hand per Rechtsklick wieder ganz. Ein &6Namensschild&r beschriftest du ohne Amboss: schleichen und Rechtsklick."
+		""
+		"Die &6Werkbank&r behält ihre Zutaten ebenfalls, und du siehst sie auf dem Tisch liegen."
+	]
+	quest.7BD2437CE352E835.quest_subtitle: "Nichts fällt heraus, nichts ist zu teuer."
+	quest.7BD2437CE352E835.title: "&7Lern den neuen Amboss kennen"
 	quest.7BD585B291576480.quest_desc: [
 		"Wirf &6Eisenbarren&r auf den Boden, stell &6TNT&r daneben und zünde es. Aus den Barren wird &6Druckeisen&r (Compressed Iron Ingot), etwa &e20 Prozent&r gehen dabei verloren. Ein Eisenblock wird genauso zu einem Druckeisenblock."
 		""
@@ -29114,6 +29162,7 @@
 	task.2DE27E20F66AA565.title: "Mitglied eingetragen"
 	task.2DED0DD3A609190A.title: "Ein Black Moa geritten"
 	task.2DF457E06D87FE64.title: "The coal falls on its own"
+	task.2E08A2E702ECE3C2.title: "Read"
 	task.2E0E6D2B6ACA67C1.title: "Einen Bagger formen"
 	task.2E2108BBFB47A263.title: "Meka-Werkzeug gebaut"
 	task.2E29253624A0C8B2.title: "Noted"
@@ -29278,6 +29327,7 @@
 	task.458DCE11AC0B5C74.title: "Had a look"
 	task.45D45D3368E4A82B.title: "Noted"
 	task.45FDA4E09C66629B.title: "Tried it"
+	task.4605EE293A6CBA67.title: "Gefällt"
 	task.462EEF16152A65E1.title: "Hedyrin's Lure drawn"
 	task.464AD4ABC93F26F9.title: "Read"
 	task.468088E0A05589CE.title: "Basis beansprucht"
@@ -29356,6 +29406,7 @@
 	task.5177BE7A650C473D.title: "Read"
 	task.517C5A21FAA6EF99.title: "Read"
 	task.51907BF38E918501.title: "Blitzableiter"
+	task.51C101AC3068E3EE.title: "Angelegt"
 	task.51D4D2CEAAEDDF32.title: "Got it"
 	task.51D6EB906E6A4BED.title: "Eziveus' Spectral Compulsion drawn"
 	task.52046C9E5020AEC2.title: "Got it"
@@ -29545,6 +29596,7 @@
 	task.694DA063BAFAEB08.title: "Noted"
 	task.6966B4E2528F443D.title: "Read"
 	task.696E0A45A509128F.title: "Read"
+	task.697282531089F33A.title: "Mitgenommen"
 	task.699DABF6076BAC8F.title: "Noted"
 	task.69A910C20B3EABEC.title: "Otherrock trader summoned"
 	task.69C2257B65034D82.title: "Starbuncle set up"
@@ -29605,6 +29657,7 @@
 	task.724F910AB8F4B77F.title: "Know where the log is"
 	task.728D7144F2369098.title: "Netzwerk erstellt"
 	task.72E543045B9E765C.title: "Supremium-Werkzeug gebaut"
+	task.72FE42D9FFCC1040.title: "Read"
 	task.731765BEDF57EB3C.title: "Had a look"
 	task.73940789695E95EE.title: "Got it"
 	task.73A24673DA264C80.title: "Let's go"

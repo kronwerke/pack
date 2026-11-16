@@ -210,7 +210,7 @@ quests = [
               "",
               "Nutz das zum Vorausplanen: Zink, Osmium, Lebeholz und Quellsteine kannst du in Stufe 1 schon sammeln, damit dein Messingwerk am ersten Abend von Stufe 2 läuft.",
               "",
-              "&eKronwerke:&r Was eine Stufe öffnet und was der Obelisk dafür will, steht im Kapitel &6Hier geht's los&r unter &eFünf Stufen&r.",
+              "&eKronwerke:&r Was eine Stufe öffnet und was der Obelisk dafür will, steht im Kapitel &6Hier geht's los&r bei den Quests zum &eObelisken&r.",
           ],
           tasks=[task_checkmark("Verstanden")],
           rewards=[reward_xp(3)],

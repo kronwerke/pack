@@ -464,7 +464,7 @@ quests = [
               "&eSägewerk und Sieber:&r jedes Speed-Upgrade plus eine Geschwindigkeitsstufe, vier Stück machen das Sägewerk fünfmal so schnell, ein Stamm in 2 Sekunden. &6Upgrade: Speedier&r zählt doppelt, braucht aber Netherstern und Herz des Meeres.",
               "&eEntrinder:&r jedes Speed-Upgrade entrindet &e4 Blöcke&r pro halbe Sekunde statt einem, Speedier 8. Die Axt verliert entsprechend mehr Haltbarkeit.",
               "",
-              "&cStufe 2:&r Die &6Upgrade-Basis&r braucht ein &6Honey Treat&r aus Productive Bees, das Rezept steht im Kapitel &6Bienen&r. Vorher läuft alles in der Grundgeschwindigkeit.",
+              "&cStufe 2:&r Die &6Upgrade-Basis&r braucht ein &6Honey Treat&r aus Productive Bees, das Rezept steht im Kapitel &6Productive Bees&r. Vorher läuft alles in der Grundgeschwindigkeit.",
           ],
           tasks=[task_checkmark("Gelesen")],
           rewards=[reward_item("minecraft:clock", 1)],

@@ -390,7 +390,7 @@ quests = [
           ],
           tasks=[task_checkmark("Angelegt")],
           rewards=[reward_xp(2)],
-          deps=["welcome"], icon="minecraft:elytra", optional=True),
+          deps=["welcome"], icon="minecraft:phantom_membrane", optional=True),
 
     quest("qol_torch", 12, 23, "&eHalt Monster fern",
           subtitle="Eine Fackel für die ganze Basis.",
@@ -427,7 +427,7 @@ quests = [
           ],
           tasks=[task_checkmark("Gelesen")],
           rewards=[reward_xp(2)],
-          deps=["welcome"], icon="minecraft:shulker_box", optional=True),
+          deps=["welcome"], icon="minecraft:oak_door", optional=True),
 
     quest("done", 13, 14, "&6&lAlles eingerichtet",
           subtitle="Magnet, Sammler, Mülltonne, Claim.",

@@ -1,0 +1,573 @@
+{
+ "welcome": {
+  "de": [
+   "Ein Gleis ist eine sequenzielle Montage mit einem Durchlauf: Ein [[create:deployer]] setzt einen Klumpen auf die Stufe, ein zweiter noch einen, dann drückt die [[create:mechanical_press]]. Jeder Einsatz nimmt [[minecraft:iron_nugget]] oder [[create:zinc_nugget]], du kannst also mischen.",
+   "Pro Gleis brauchst du eine Stufe und zwei Klumpen, ein Eisenbarren reicht für viereinhalb Gleise. **Bruchsteinstufen gehen nicht**, nur Stein, glatter Stein und Andesit. Einsatzgeräte baust du in {{create_brass/deployer}}."
+  ],
+  "en": [
+   "A track is a one pass sequenced assembly: a [[create:deployer]] puts a nugget on the slab, a second one another, then the [[create:mechanical_press]] presses. Each step takes [[minecraft:iron_nugget]] or [[create:zinc_nugget]], so you can mix them.",
+   "Each track needs one slab and two nuggets, one iron ingot is enough for four and a half tracks. **Cobblestone slabs do not work**, only stone, smooth stone and andesite. Deployers come from {{create_brass/deployer}}."
+  ],
+  "sources": [
+   "create:sequenced_assembly/track",
+   "create.jar data/create/tags/item/sleepers.json"
+  ]
+ },
+ "laying": {
+  "de": [
+   "Die 32 Blöcke pro Abschnitt sind die Grenze dieses Servers. Für längere Strecken setzt du am Ende des letzten Abschnitts neu an.",
+   "**Rund um den Spawn kann niemand außer den Admins Blöcke setzen**, 96 Blöcke in jede Richtung, auch keine Gleise. Fahrende Züge machen hier Schaden, also leg Strecken nicht quer über Wege, die andere zu Fuß nehmen."
+  ],
+  "en": [
+   "Sections of up to 32 blocks are this server's limit. For longer lines start again at the end of the last section.",
+   "**Nobody but the admins can place blocks around spawn**, 96 blocks in every direction, tracks included. Moving trains deal damage here, so keep your lines off paths other players walk."
+  ],
+  "sources": [
+   "srv/config/create-server.toml [trains] (maxTrackPlacementLength 32, trainsCauseDamage true)",
+   "config/kronwerke-common.toml (spawn radius 96)",
+   "core: src/main/java/de/kronwerke/core/spawn/SpawnGuard.java"
+  ]
+ },
+ "track_factory": {
+  "de": [
+   "Die [[create:mechanical_saw]] nutzt auf diesem Server auch Steinmetz-Rezepte: Mit [[minecraft:stone_slab]] als Filter macht sie aus einem Stein zwei Stufen. Für die 256 Gleise brauchst du also 128 Stein und 512 Klumpen, gut 57 Eisenbarren.",
+   "Stein bekommst du aus einem Bruchsteingenerator ({{create/cobble_gen}}) und einem Lüfter, der den Bruchstein brennt ({{create/fan_smelting}}). Die Gleise brauchst du in Massen für {{create_trains/obelisk_line}}."
+  ],
+  "en": [
+   "On this server the [[create:mechanical_saw]] also runs stonecutter recipes: with [[minecraft:stone_slab]] as its filter it turns one stone into two slabs. So 256 tracks take 128 stone and 512 nuggets, about 57 iron ingots.",
+   "Stone comes from a cobblestone generator ({{create/cobble_gen}}) and a fan that smelts the cobblestone ({{create/fan_smelting}}). You need tracks by the hundred for {{create_trains/obelisk_line}}."
+  ],
+  "sources": [
+   "srv/config/create-server.toml (allowStonecuttingOnSaw true)",
+   "minecraft:stone_slab_from_stone_stonecutting",
+   "create:sequenced_assembly/track"
+  ],
+  "client": [
+   "the saw's filter slot picks the stonecutting output"
+  ]
+ },
+ "nether_line": {
+  "de": [
+   "**Auf Kronwerke führt kein Gleis durch ein Netherportal.** Der Nether läuft auf einem eigenen Server, und Kronwerke Core lässt Create die Strecke dort nicht fortsetzen, sonst verschwände der Zug mit seiner Fracht in einer Kopie des Nethers, die niemand besucht.",
+   "Eine Bahn im Nether selbst kannst du bauen, nur eben auf beiden Seiten getrennt. Für weite Wege zwischen Basen nimm Wegsteine oder den Nether zu Fuß ({{nether/fast_travel}})."
+  ],
+  "en": [
+   "**On Kronwerke no track leads through a Nether portal.** The Nether runs on a server of its own, and Kronwerke Core stops Create from continuing the line there, otherwise the train and its cargo would vanish into a copy of the Nether nobody visits.",
+   "You can build a railway inside the Nether, just separate from the one in the overworld. For long trips between bases use waystones or walk the Nether ({{nether/fast_travel}})."
+  ],
+  "sources": [
+   "core: src/main/java/de/kronwerke/core/mixin/CreatePortalTrackMixin.java",
+   "core: src/main/java/de/kronwerke/core/portal/Dimensions.java",
+   "config/kronwerke-common.toml (dimensionServers minecraft:the_nether=nether)"
+  ]
+ },
+ "powder": {
+  "de": [
+   "Weil der Obsidian mit 75 Prozent zurückkommt, gibt ein Block im Mahlwerk im Schnitt vier [[create:powdered_obsidian]]. Schneller geht es mit dem [[mekanism:crusher]], der aus jedem Obsidian sofort 4 Pulver macht und in Stufe 2 offen ist.",
+   "Jedes Robuste Blech braucht ein Pulver. Mahlwerkräder baust du in {{create_brass/crushing_wheel}}."
+  ],
+  "en": [
+   "Since the obsidian comes back 75 percent of the time, one block gives four [[create:powdered_obsidian]] on average in the crushing wheels. Faster is the [[mekanism:crusher]], which turns each obsidian into 4 powder at once and is open in stage 2.",
+   "Every sturdy sheet takes one powder. Crushing wheels are built in {{create_brass/crushing_wheel}}."
+  ],
+  "sources": [
+   "create:crushing/obsidian",
+   "mekanism:crushing/obsidian_to_dust",
+   "mekanism:crusher (stage 2)"
+  ]
+ },
+ "unprocessed_sheet": {
+  "de": [
+   "Das Blatt ist nur der Zwischenschritt der Montage zum [[create:sturdy_sheet]]. Bau die Linie gleich ganz: Band, [[create:spout]] mit Lava, dahinter zwei Pressen. Für die Quest nimmst du ein Blatt direkt hinter dem Ausguss vom Band.",
+   "Ein Lavaeimer reicht für zwei Bleche. Lava holst du mit einer [[create:mechanical_pump]] aus einem Lavasee oder per Tankzug ({{create_trains/fluid_cargo}})."
+  ],
+  "en": [
+   "The sheet is only the middle step of the assembly into a [[create:sturdy_sheet]]. Build the whole line now: belt, [[create:spout]] with lava, two presses behind it. For the quest take one sheet off the belt right after the spout.",
+   "One lava bucket is enough for two sheets. Get lava with a [[create:mechanical_pump]] from a lava lake or by tank train ({{create_trains/fluid_cargo}})."
+  ],
+  "sources": [
+   "create:sequenced_assembly/sturdy_sheet (filling 500 mB lava, pressing, pressing)"
+  ]
+ },
+ "sturdy_sheet": {
+  "de": [
+   "Die ganze Folge läuft in einem Durchgang: Pulver, 500 mB Lava, Presse, Presse. Es gibt keinen Ausschuss wie beim Präzisionsgetriebe.",
+   "Robuste Bleche brauchst du für [[create:railway_casing]] und [[create:schedule]]. Ein Blech und ein Papier geben vier Fahrpläne."
+  ],
+  "en": [
+   "The whole sequence runs in one pass: powder, 500 mB of lava, press, press. There is no scrap like with the precision mechanism.",
+   "Sturdy sheets go into the [[create:railway_casing]] and the [[create:schedule]]. One sheet and one paper make four schedules."
+  ],
+  "sources": [
+   "create:sequenced_assembly/sturdy_sheet",
+   "create:crafting/kinetics/schedule"
+  ]
+ },
+ "casing": {
+  "de": [
+   "Den [[create:brass_casing]] machst du aus entrindetem Holz und einem Messingbarren ({{create_brass/brass_casing}}). Am Band legt ein Einsatzgerät mit Robusten Blechen auf jeden Messingrahmen eins auf.",
+   "Ein [[create:railway_casing]] ergibt zwei Bahnhöfe, vier Signale oder zwei Zugbeobachter. Zugsteuerung, Zugtür und jedes Drehgestell kosten je einen."
+  ],
+  "en": [
+   "You make the [[create:brass_casing]] from stripped wood and a brass ingot ({{create_brass/brass_casing}}). On a belt a deployer holding sturdy sheets applies one to every brass casing.",
+   "One [[create:railway_casing]] makes two stations, four signals or two train observers. Controls, a train door and every bogey cost one each."
+  ],
+  "sources": [
+   "create:item_application/railway_casing",
+   "create:crafting/kinetics/track_station",
+   "create:crafting/kinetics/track_signal",
+   "create:crafting/kinetics/track_observer",
+   "create:crafting/kinetics/controls",
+   "create:crafting/kinetics/train_door"
+  ]
+ },
+ "station": {
+  "de": [
+   "Rezept: [[create:railway_casing]] und [[minecraft:compass]], formlos, für zwei Bahnhöfe. Die 128 Blöcke Montagestrecke sind die Grenze dieses Servers.",
+   "Gib jedem Bahnhof einen eindeutigen Namen, Fahrpläne finden ihn darüber. Weiter geht es mit {{create_trains/bogey}} und {{create_trains/controls}}."
+  ],
+  "en": [
+   "Recipe: [[create:railway_casing]] and a [[minecraft:compass]], shapeless, for two stations. 128 blocks of assembly track is this server's limit.",
+   "Give every station a unique name, schedules find it by that name. Next come {{create_trains/bogey}} and {{create_trains/controls}}."
+  ],
+  "sources": [
+   "create:crafting/kinetics/track_station",
+   "srv/config/create-server.toml [trains] (maxAssemblyLength 128)"
+  ]
+ },
+ "bogey": {
+  "de": [
+   "Jedes Drehgestell verbraucht einen [[create:railway_casing]]. Höchstens 20 pro Zug sind die Grenze dieses Servers.",
+   "Den [[create:super_glue]] machst du aus Schleimball, Eisenblech und Eisenklumpen ({{create/glue}}). Klebst du nicht alles fest, bleibt beim Zusammenbauen ein Teil des Zuges stehen."
+  ],
+  "en": [
+   "Every bogey uses up one [[create:railway_casing]]. At most 20 per train is this server's limit.",
+   "[[create:super_glue]] is made from a slimeball, an iron sheet and iron nuggets ({{create/glue}}). Whatever you do not glue stays behind when the train assembles."
+  ],
+  "sources": [
+   "srv/config/create-server.toml [trains] (maxBogeyCount 20)",
+   "create:crafting/kinetics/super_glue"
+  ],
+  "client": [
+   "unglued blocks are left behind on assembly"
+  ]
+ },
+ "controls": {
+  "de": [
+   "Rezept von oben nach unten: [[minecraft:lever]], [[create:railway_casing]], [[create:precision_mechanism]]. Das Präzisionsgetriebe ist der teure Teil: Auf Kronwerke kommt es nur zu 80 Prozent heraus, der Rest wird Messingklumpen oder Zahnrad ({{create_brass/precision}}).",
+   "Für einen Zug, der ohne Wendeschleife zurückfährt, brauchst du gleich eine zweite ({{create_trains/double_ended}})."
+  ],
+  "en": [
+   "Recipe from top to bottom: [[minecraft:lever]], [[create:railway_casing]], [[create:precision_mechanism]]. The precision mechanism is the costly part: on Kronwerke only 80 percent come out, the rest becomes brass nuggets or cogwheels ({{create_brass/precision}}).",
+   "A train that returns without a turning loop needs a second one ({{create_trains/double_ended}})."
+  ],
+  "sources": [
+   "create:crafting/kinetics/controls",
+   "kronwerke:create/precision_mechanism"
+  ]
+ },
+ "first_train": {
+  "de": [
+   "Wenn der Zusammenbau scheitert, liegt es meist an einer fehlenden oder verdrehten [[create:controls]], an Blöcken ohne Kleber oder an einem Zug, der länger ist als das Montagegleis. Mehr als 20 Drehgestelle nimmt der Server nicht.",
+   "Der Zug braucht keinen Treibstoff und fährt bis 28 Blöcke pro Sekunde. Mit einem Treibstofftank aus Steam 'n' Rails werden daraus 40 ({{create_addons/fuel}})."
+  ],
+  "en": [
+   "When assembly fails it is usually missing or reversed [[create:controls]], blocks without glue, or a train longer than the assembly track. The server takes no more than 20 bogeys.",
+   "The train needs no fuel and runs up to 28 blocks per second. A fuel tank from Steam 'n' Rails raises that to 40 ({{create_addons/fuel}})."
+  ],
+  "sources": [
+   "srv/config/create-server.toml [trains] (trainTopSpeed 28, poweredTrainTopSpeed 40, maxBogeyCount 20)"
+  ],
+  "client": [
+   "the station shows why assembly failed"
+  ]
+ },
+ "drive": {
+  "de": [
+   "Von Hand fährst du mit 75 Prozent der Höchstgeschwindigkeit, also bis 21 statt 28 Blöcke pro Sekunde. Für lange Strecken lohnt sich darum ein Fahrplan ({{create_trains/schedule}}).",
+   "Halt nicht auf Kreuzungen: ein stehender Zug blockiert den Abschnitt für alle anderen."
+  ],
+  "en": [
+   "Driving by hand runs at 75 percent of top speed, so up to 21 instead of 28 blocks per second. For long lines a schedule pays off ({{create_trains/schedule}}).",
+   "Do not stop on junctions: a standing train blocks the section for everyone else."
+  ],
+  "sources": [
+   "srv/config/create-server.toml [trains] (manualTrainSpeedModifier 0.75, trainTopSpeed 28)"
+  ]
+ },
+ "disassemble": {
+  "de": [
+   "Beim Zerlegen bleiben Kleber und Drehgestelle erhalten, nur neu angebaute Teile musst du verkleben. Steht der Bahnhof noch im Montagemodus, fährt kein anderer Zug hinein.",
+   "So baust du auch die zweite [[create:controls]] für {{create_trains/double_ended}} an oder tauschst Kisten gegen [[create:item_vault]] für {{create_trains/cargo}}."
+  ],
+  "en": [
+   "When disassembled, glue and bogeys stay where they are, only new parts need glue. While the station is in assembly mode no other train enters it.",
+   "This is also how you add the second [[create:controls]] for {{create_trains/double_ended}} or swap chests for [[create:item_vault]] for {{create_trains/cargo}}."
+  ],
+  "sources": [
+   "create.jar (station assembly mode)"
+  ],
+  "client": [
+   "glue persists after disassembly",
+   "no train enters a station in assembly mode"
+  ]
+ },
+ "doors": {
+  "de": [
+   "Rezepte formlos: eine beliebige Holztür und ein [[create:railway_casing]] ergeben eine [[create:train_door]], eine Holzfalltür und ein Zugrahmen eine [[create:train_trapdoor]]. Pro Zugrahmen bekommst du nur eine Tür, für ein Türpaar also zwei."
+  ],
+  "en": [
+   "Shapeless recipes: any wooden door and a [[create:railway_casing]] make a [[create:train_door]], a wooden trapdoor and a train casing make a [[create:train_trapdoor]]. Each train casing gives only one door, so a pair costs two."
+  ],
+  "sources": [
+   "create:crafting/kinetics/train_door",
+   "create:crafting/kinetics/train_trapdoor"
+  ]
+ },
+ "schedule": {
+  "de": [
+   "Rezept formlos: ein [[create:sturdy_sheet]] und ein Papier für vier [[create:schedule]]. Ein beschriebener Fahrplan lässt sich im Raster wieder leeren.",
+   "Im Spiel heißt der Schalter fürs Wiederholen **Fortlaufend wiederholen**. Platzhalter wie Mine* nehmen den nächsten freien Bahnhof, der passt. Die Bedingungen darunter erklären die grauen Quests dieser Reihe, etwa {{create_trains/cond_delay}}."
+  ],
+  "en": [
+   "Shapeless recipe: one [[create:sturdy_sheet]] and a paper for four [[create:schedule]]. A written schedule is cleared by crafting it on its own.",
+   "The repeat switch is called **Loop Forever** in the game. Wildcards like Mine* pick the nearest free matching station. The grey quests of this row explain the conditions, starting with {{create_trains/cond_delay}}."
+  ],
+  "sources": [
+   "create:crafting/kinetics/schedule",
+   "create:crafting/appliances/schedule_clear",
+   "create.jar lang (create.schedule.loop, filter_edit_box_3)"
+  ]
+ },
+ "conductor": {
+  "de": [
+   "Der Schaffner muss vor einer [[create:controls]] sitzen, sonst nimmt er den Fahrplan nicht an. Lohe oder Dorfbewohner gehen, und Steam 'n' Rails hat einen eigenen Schaffner, der nicht wegläuft ({{create_addons/conductor}}).",
+   "Mit leerer Hand nimmst du ihm den Fahrplan wieder ab."
+  ],
+  "en": [
+   "The conductor has to sit in front of [[create:controls]], otherwise it does not take the schedule. A blaze or a villager works, and Steam 'n' Rails adds its own conductor that never wanders off ({{create_addons/conductor}}).",
+   "With an empty hand you take the schedule back."
+  ],
+  "sources": [
+   "create.jar lang (create.schedule.non_controlling_seat, remove_with_empty_hand)"
+  ]
+ },
+ "auto_line": {
+  "de": [
+   "Ein Zug ohne zweite Zugsteuerung kann nur vorwärts fahren. Bau an beiden Enden eine Wendeschleife oder setz eine zweite [[create:controls]] ans Zugende ({{create_trains/double_ended}}).",
+   "Fährt mehr als ein Zug auf der Strecke, teil sie mit Signalen ({{create_trains/signal}})."
+  ],
+  "en": [
+   "A train without second controls only runs forward. Build a turning loop at each end or add second [[create:controls]] at the rear ({{create_trains/double_ended}}).",
+   "If more than one train uses the line, divide it with signals ({{create_trains/signal}})."
+  ],
+  "sources": [
+   "create:crafting/kinetics/controls"
+  ]
+ },
+ "display": {
+  "de": [
+   "Der [[create:display_link]] entsteht aus einem Sender über einem [[create:brass_casing]]. Die [[create:display_board]] gibt es zu zweit aus einer Elektronenröhre zwischen zwei Andesitlegierungen, für sechs Tafeln also drei Röhren. Mehr dazu steht in {{create_brass/display}}."
+  ],
+  "en": [
+   "The [[create:display_link]] is a transmitter on top of a [[create:brass_casing]]. The [[create:display_board]] comes in pairs from one electron tube between two andesite alloys, so six boards take three tubes. More in {{create_brass/display}}."
+  ],
+  "sources": [
+   "create:crafting/logistics/display_link",
+   "create:crafting/kinetics/display_board"
+  ]
+ },
+ "cond_delay": {
+  "de": [
+   "Die Zeit beginnt, wenn der Zug am Bahnhof steht. Für Personenzüge sind 10 bis 20 Sekunden ein guter Wert."
+  ],
+  "en": [
+   "The timer starts once the train stands at the station. For passenger trains 10 to 20 seconds work well."
+  ],
+  "sources": [
+   "create.jar lang (create.schedule.condition.delay)"
+  ]
+ },
+ "cond_time": {
+  "de": [
+   "Ein Minecraft-Tag hat 20 Minuten. Für eine Zuglinie, die nur einmal am Tag fährt, kombiniere Tageszeit mit einer zweiten Bedingung wie Item-Ladestand."
+  ],
+  "en": [
+   "A Minecraft day lasts 20 minutes. For a line that runs once a day, combine time of day with a second condition such as item cargo."
+  ],
+  "sources": [
+   "create.jar lang (create.schedule.condition.time_of_day)"
+  ]
+ },
+ "cond_items": {
+  "de": [
+   "Die Bedingung zählt alles, was in den Kisten und Tresoren des Zuges liegt. Zusammen mit {{create_trains/cargo}} wird daraus ein Zug, der erst voll beladen losfährt."
+  ],
+  "en": [
+   "The condition counts everything in the train's chests and vaults. Together with {{create_trains/cargo}} you get a train that leaves only when fully loaded."
+  ],
+  "sources": [
+   "create.jar lang (create.schedule.condition.item_threshold)"
+  ]
+ },
+ "cond_redstone": {
+  "de": [
+   "Der Bahnhof selbst muss das Signal bekommen, ein Knopf direkt daneben reicht. Aus der Ferne geht es mit {{create_trains/cond_link}}."
+  ],
+  "en": [
+   "The station itself has to receive the signal, a button right next to it is enough. From afar use {{create_trains/cond_link}}."
+  ],
+  "sources": [
+   "create.jar lang (create.schedule.condition.powered)"
+  ]
+ },
+ "cond_players": {
+  "de": [
+   "Gezählt werden Spieler auf den Sitzen des Zuges, nicht Mobs. Sitze baust du in {{create_trains/passenger}}."
+  ],
+  "en": [
+   "It counts players on the train's seats, not mobs. Seats are made in {{create_trains/passenger}}."
+  ],
+  "sources": [
+   "create.jar lang (create.schedule.condition.player_count)"
+  ]
+ },
+ "cond_fluids": {
+  "de": [
+   "Gezählt wird der Inhalt der [[create:fluid_tank]] auf dem Zug. Wie du sie befüllst, zeigt {{create_trains/fluid_cargo}}."
+  ],
+  "en": [
+   "It counts the content of the [[create:fluid_tank]] on the train. How to fill them is in {{create_trains/fluid_cargo}}."
+  ],
+  "sources": [
+   "create.jar lang (create.schedule.condition.fluid_threshold)"
+  ]
+ },
+ "cond_link": {
+  "de": [
+   "Die Frequenz stellst du mit zwei Items ein, genau wie bei der [[create:redstone_link]] ({{create/redstone_link}}). Die Gegenstelle muss in einem geladenen Chunk stehen."
+  ],
+  "en": [
+   "You set the frequency with two items, the same as on a [[create:redstone_link]] ({{create/redstone_link}}). The sending link has to be in a loaded chunk."
+  ],
+  "sources": [
+   "create.jar lang (create.schedule.condition.redstone_link)"
+  ],
+  "client": [
+   "sending link must be loaded"
+  ]
+ },
+ "cond_unloaded": {
+  "de": [
+   "Nützlich an Bahnhöfen weit draußen: Der Zug wartet, solange jemand dort ist, und fährt ab, sobald der Chunk entladen wird. Lädt dein Team den Chunk per FTB Chunks dauerhaft, tritt die Bedingung nie ein."
+  ],
+  "en": [
+   "Useful at remote stations: the train waits while someone is around and leaves once the chunk unloads. If your team force loads that chunk with FTB Chunks, the condition never comes true."
+  ],
+  "sources": [
+   "create.jar lang (create.schedule.condition.unloaded)",
+   "config/ftbchunks-world.snbt (force_load_mode always)"
+  ]
+ },
+ "signal": {
+  "de": [
+   "Rezept formlos: ein [[create:railway_casing]] und eine [[create:electron_tube]] für vier [[create:track_signal]]. Elektronenröhren kommen aus {{create_brass/electron_tube}}.",
+   "Wie du Kreuzungen damit sicherst, zeigt {{create_trains/junction}}."
+  ],
+  "en": [
+   "Shapeless recipe: one [[create:railway_casing]] and one [[create:electron_tube]] for four [[create:track_signal]]. Electron tubes come from {{create_brass/electron_tube}}.",
+   "How to secure junctions with them is shown in {{create_trains/junction}}."
+  ],
+  "sources": [
+   "create:crafting/kinetics/track_signal"
+  ]
+ },
+ "junction": {
+  "de": [
+   "Mit der [[create:goggles]] siehst du, welcher Abschnitt belegt ist. Die gleiche Regel brauchst du für zwei Züge auf einem Gleis ({{create_trains/passing_loop}})."
+  ],
+  "en": [
+   "With [[create:goggles]] you see which section is occupied. The same rule applies to two trains on one track ({{create_trains/passing_loop}})."
+  ],
+  "sources": [
+   "create:track_signal"
+  ],
+  "client": [
+   "goggles show signal section state"
+  ]
+ },
+ "observer": {
+  "de": [
+   "Rezept formlos: ein [[create:railway_casing]] und eine Holzdruckplatte für zwei [[create:track_observer]]. Alternativ geht es mit je einer Stein-, Schwarzstein-, Eisen- und Golddruckplatte."
+  ],
+  "en": [
+   "Shapeless recipe: one [[create:railway_casing]] and a wooden pressure plate for two [[create:track_observer]]. Alternatively use one each of the stone, blackstone, heavy and light weighted pressure plates."
+  ],
+  "sources": [
+   "create:crafting/kinetics/track_observer",
+   "create:crafting/kinetics/track_observer_from_other_plates"
+  ]
+ },
+ "cargo": {
+  "de": [
+   "Die [[create:portable_storage_interface]] ist Andesitgehäuse plus Schacht, der [[create:item_vault]] ein Fass zwischen zwei Eisenblechen. Beide kennst du schon aus {{create/psi}} und {{create/vault}}.",
+   "Die Schnittstellen arbeiten nur, wenn der Zug hält. Halt den Bahnhof geladen, sonst wird dort nichts umgeladen."
+  ],
+  "en": [
+   "The [[create:portable_storage_interface]] is an andesite casing plus a chute, the [[create:item_vault]] a barrel between two iron sheets. You know both from {{create/psi}} and {{create/vault}}.",
+   "They only work while the train stands still. Keep the station loaded, otherwise nothing is transferred there."
+  ],
+  "sources": [
+   "create:crafting/kinetics/portable_storage_interface",
+   "create:crafting/kinetics/item_vault"
+  ],
+  "client": [
+   "interfaces work only while the train stands",
+   "transfer only in loaded chunks"
+  ]
+ },
+ "fluid_cargo": {
+  "de": [
+   "Die [[create:portable_fluid_interface]] ist [[create:copper_casing]] plus Schacht, der [[create:fluid_tank]] ein Fass zwischen zwei Kupferblechen. Die Pumpe an der festen Schnittstelle braucht Rotation.",
+   "Tanks auf dem Zug verkleben wie jeden anderen Block."
+  ],
+  "en": [
+   "The [[create:portable_fluid_interface]] is a [[create:copper_casing]] plus a chute, the [[create:fluid_tank]] a barrel between two copper sheets. The pump at the fixed interface needs rotation.",
+   "Glue the tanks on the train like any other block."
+  ],
+  "sources": [
+   "create:crafting/kinetics/portable_fluid_interface",
+   "create:crafting/kinetics/fluid_tank"
+  ]
+ },
+ "freight": {
+  "de": [
+   "Die Bedingung heißt im Spiel **Kein weiterer Güteraustausch**. Beide Bahnhöfe müssen geladen sein, wenn der Zug dort hält: Dein Team kann Chunks mit FTB Chunks dauerhaft laden, auch wenn niemand online ist.",
+   "Für das Stufenziel geht die Fracht danach nicht von selbst in den Obelisken, siehe {{create_trains/obelisk_line}}."
+  ],
+  "en": [
+   "The condition is called **Cargo Inactivity** in the game. Both stations have to be loaded when the train stops there: your team can force load chunks with FTB Chunks, even while nobody is online.",
+   "For the stage goal the cargo does not go into the obelisk on its own, see {{create_trains/obelisk_line}}."
+  ],
+  "sources": [
+   "create.jar lang (create.schedule.condition.idle)",
+   "config/ftbchunks-world.snbt (force_load_mode always)"
+  ],
+  "client": [
+   "transfer only in loaded chunks"
+  ]
+ },
+ "postbox": {
+  "de": [
+   "Rezept von oben nach unten: weißer Farbstoff, [[minecraft:barrel]], [[create:andesite_alloy]]. Andere Farben bekommst du, wenn du einen Briefkasten mit Farbstoff umfärbst.",
+   "Pakete packst du mit dem Packer aus {{create/packager}}."
+  ],
+  "en": [
+   "Recipe from top to bottom: white dye, a [[minecraft:barrel]], [[create:andesite_alloy]]. Other colours come from dyeing a postbox.",
+   "Packages are made with the packager from {{create/packager}}."
+  ],
+  "sources": [
+   "create:crafting/logistics/white_postbox",
+   "create:crafting/logistics/white_postbox_from_other_postbox"
+  ]
+ },
+ "obelisk_line": {
+  "de": [
+   "**Um den Spawn setzt niemand außer den Admins Blöcke**, 96 Blöcke in jede Richtung. Dein Bahnhof steht also außerhalb, und das letzte Stück trägst du die Ladung zu Fuß. Der Obelisk nimmt nur von Hand: Rechtsklick gibt den Stapel in der Hand ab, zweimal Schleich-Rechtsklick mit einem Item in der Hand innerhalb von 5 Sekunden die Hauptreihen deines Inventars, nicht Schnellleiste und Rucksack.",
+   "Für 512 Gleise brauchst du 256 Stein und 1024 Klumpen, gut 114 Eisenbarren. Das Stufenziel will 2000 Messingbarren und 150 Präzisionsgetriebe als Grundwert, die Menge wächst mit der Zahl aktiver Spieler."
+  ],
+  "en": [
+   "**Nobody but the admins places blocks around spawn**, 96 blocks in every direction. So your station stands outside and you carry the cargo the last stretch. The obelisk only takes items by hand: right click gives the stack in your hand, two sneak right clicks with an item in hand within 5 seconds give the main rows of your inventory, not the hotbar and not a backpack.",
+   "512 tracks take 256 stone and 1024 nuggets, about 114 iron ingots. The stage goal asks for 2000 brass ingots and 150 precision mechanisms as a base, the amount grows with the number of active players."
+  ],
+  "sources": [
+   "core: src/main/java/de/kronwerke/core/spawn/SpawnGuard.java",
+   "config/kronwerke-common.toml (spawn radius 96)",
+   "config/kronwerke/goals.json (stage2 tech)",
+   "docs/STAGES.md (obelisk)"
+  ]
+ },
+ "girders": {
+  "de": [
+   "Rezept: drei Eisenbleche über drei [[create:andesite_alloy]] für acht [[create:metal_girder]]. Bleche presst du in {{create/sheets}}.",
+   "An Gleisen gehen Träger nur außerhalb des Spawnbereichs, dort setzt niemand Blöcke."
+  ],
+  "en": [
+   "Recipe: three iron sheets above three [[create:andesite_alloy]] for eight [[create:metal_girder]]. Sheets are pressed in {{create/sheets}}.",
+   "Like track, girders only go outside the spawn area, nobody places blocks there."
+  ],
+  "sources": [
+   "create:crafting/kinetics/metal_girder",
+   "core: src/main/java/de/kronwerke/core/spawn/SpawnGuard.java"
+  ]
+ },
+ "double_ended": {
+  "de": [
+   "Beide [[create:controls]] zeigen mit der Front nach außen, eine nach vorn, eine nach hinten. Im Fahrplan reichen dann zwei Einträge mit Fortlaufend wiederholen, der Zug wendet an jedem Endbahnhof.",
+   "Die zweite Steuerung kostet ein weiteres [[create:precision_mechanism]]."
+  ],
+  "en": [
+   "Both [[create:controls]] face outward, one forward, one backward. Two schedule entries with Loop Forever are then enough, the train reverses at each end station.",
+   "The second controls cost another [[create:precision_mechanism]]."
+  ],
+  "sources": [
+   "create:crafting/kinetics/controls"
+  ]
+ },
+ "passenger": {
+  "de": [
+   "Rezept formlos: Wolle und eine beliebige Holzstufe für einen [[create:white_seat]]. Andere Farben bekommst du mit farbiger Wolle oder durch Umfärben.",
+   "Mit {{create_trains/cond_players}} fährt der Zug los, wenn genug Spieler sitzen."
+  ],
+  "en": [
+   "Shapeless recipe: wool and any wooden slab for one [[create:white_seat]]. Other colours come from coloured wool or by dyeing.",
+   "With {{create_trains/cond_players}} the train leaves once enough players are seated."
+  ],
+  "sources": [
+   "create:crafting/kinetics/white_seat",
+   "create:crafting/kinetics/white_seat_from_other_seat"
+  ]
+ },
+ "drill_train": {
+  "de": [
+   "Der [[create:mechanical_drill]] ist Andesitlegierung, Eisenbarren und Andesitgehäuse, wie in {{create/drill}}.",
+   "Lädt dein Team den Tunnel per FTB Chunks, laufen die Bohrer auch, wenn niemand daneben steht. Für Erze lohnt sich danach das Mahlwerk ({{create_brass/ore_processing}})."
+  ],
+  "en": [
+   "The [[create:mechanical_drill]] is andesite alloy, an iron ingot and an andesite casing, as in {{create/drill}}.",
+   "If your team force loads the tunnel with FTB Chunks, the drills also work while nobody stands next to them. For ores the crushing wheels pay off afterwards ({{create_brass/ore_processing}})."
+  ],
+  "sources": [
+   "create:crafting/kinetics/mechanical_drill",
+   "config/ftbchunks-world.snbt"
+  ],
+  "client": [
+   "drills on a train work in force loaded chunks without a player"
+  ]
+ },
+ "unloaded": {
+  "de": [
+   "Bahnhöfe, an denen be- oder entladen wird, brauchen einen geladenen Chunk. Dein Team kann mit FTB Chunks Chunks dauerhaft laden, auch wenn niemand online ist, höchstens 25 pro Team. Nimm sie für Bahnhöfe, nicht für die Strecke dazwischen."
+  ],
+  "en": [
+   "Stations that load or unload need a loaded chunk. Your team can force load chunks with FTB Chunks, even while nobody is online, at most 25 per team. Use them for stations, not for the track in between."
+  ],
+  "sources": [
+   "config/ftbchunks-world.snbt (force_load_mode always, hard_team_force_limit 25)"
+  ],
+  "client": [
+   "transfer only in loaded chunks"
+  ]
+ },
+ "passing_loop": {
+  "de": [
+   "Die Ausweichstelle muss länger sein als dein längster Zug, sonst steht sein Ende noch im Abschnitt davor. Die Abzweigungen setzt du wie in {{create_trains/laying}}, indem du mitten auf der Strecke ansetzt."
+  ],
+  "en": [
+   "The passing loop has to be longer than your longest train, otherwise its rear still occupies the section before it. Lay the branches as in {{create_trains/laying}}, by starting in the middle of the line."
+  ],
+  "sources": [
+   "create:track_signal"
+  ]
+ }
+}

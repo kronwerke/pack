@@ -1,0 +1,515 @@
+{
+ "deep_dark": {
+  "de": [
+   "Die Quest hakt sich ab, sobald du das Biom betrittst, im Spiel heißt es Tiefes Dunkel. Wärter und Antike Städte gibt es nur dort, in der Oberwelt.",
+   "Auf Kronwerke werden alle Monster mit jeder Stufe zäher: in Stufe 3 haben sie **70 Prozent mehr Leben**, 45 Prozent mehr Schaden und 4 Rüstungspunkte extra. Nimm eine Spitzhacke mit **Behutsamkeit** mit, ohne sie bekommst du hier fast nichts heil heraus."
+  ],
+  "en": [
+   "The quest ticks once you enter the Deep Dark biome. Wardens and ancient cities only exist there, in the overworld.",
+   "On Kronwerke every stage makes monsters tougher: in stage 3 they have **70 percent more health**, 45 percent more damage and 4 extra armor points. Bring a pickaxe with **Silk Touch**, without it almost nothing here drops as a block."
+  ],
+  "sources": [
+   "deeperdarker-neoforge-1.21.1-1.4.1.jar data/deeperdarker/advancement/main/root.json",
+   "config/kronwerke-common.toml [mobs] (health 0.7, damage 0.45, armor 4 in stage 3)",
+   "core: src/main/java/de/kronwerke/core/mobs/MobStages.java"
+  ]
+ },
+ "sculk": {
+  "de": [
+   "**Auch Sculk selbst fällt nur mit Behutsamkeit**, ohne sie gibt jeder Block bloß Erfahrung. Das gilt genauso für [[minecraft:sculk_sensor]], Kreischer und [[minecraft:sculk_catalyst]]. Am schnellsten geht es mit einer Hacke mit Behutsamkeit.",
+   "Wer keine hat: In den Truhen der Antiken Tempel liegen oft 5 bis 8 Sculk."
+  ],
+  "en": [
+   "**Sculk itself only drops with Silk Touch**, without it every block just gives experience. The same holds for the [[minecraft:sculk_sensor]], shriekers and the [[minecraft:sculk_catalyst]]. A hoe with Silk Touch is fastest.",
+   "Without one: ancient temple chests often hold 5 to 8 sculk."
+  ],
+  "sources": [
+   "minecraft:blocks/sculk, sculk_sensor, sculk_catalyst, sculk_shrieker (silk touch only)",
+   "deeperdarker-neoforge-1.21.1-1.4.1.jar data/deeperdarker/loot_table/chests/ancient_temple_apex.json"
+  ]
+ },
+ "ancient_city": {
+  "de": [
+   "Die Zahlen stimmen: Jede Truhe der Stadt hat 45 Prozent Chance auf eine [[deeperdarker:resonarium_upgrade_smithing_template]], 45 Prozent auf die Wärter-Vorlage und 20 Prozent auf einen [[deeperdarker:warden_carapace]]. Das Buch mit Flinkes Schleichen heißt im Spiel **Huschen**.",
+   "Lootr gibt jedem Spieler jede Truhe neu, eine Stadt lohnt sich also für jeden. Ab hoher Zaubertisch-Stufe macht die Infusion aus einer [[minecraft:echo_shard]] vier (Eterna 70, Quanta 50, Arcana 50, siehe {{apotheosis/library}})."
+  ],
+  "en": [
+   "The numbers: every chest of the city has a 45 percent chance for a [[deeperdarker:resonarium_upgrade_smithing_template]], 45 percent for the warden template and 20 percent for a [[deeperdarker:warden_carapace]].",
+   "Lootr fills every chest anew for each player, so a city pays off for everyone. At a high enchanting table, infusion turns one [[minecraft:echo_shard]] into four (Eterna 70, Quanta 50, Arcana 50, see {{apotheosis/library}})."
+  ],
+  "sources": [
+   "deeperdarker-neoforge-1.21.1-1.4.1.jar data/deeperdarker/loot_modifiers/*_from_ancient_city.json",
+   "minecraft lang de_de (enchantment.minecraft.swift_sneak = Huschen)",
+   "apothic_enchanting:infusion/echo_shard"
+  ]
+ },
+ "warden": {
+  "de": [
+   "Der Wärter ist kein Boss im Sinn von Kronwerke, er wächst nicht mit der Gruppe, aber mit der Stufe: **in Stufe 3 hat er 850 statt 500 Lebenspunkte** und schlägt 45 Prozent härter zu. Er lässt immer einen [[minecraft:sculk_catalyst]], 1 bis 3 [[deeperdarker:warden_carapace]] und ein [[deeperdarker:heart_of_the_deep]] fallen.",
+   "Mit Sculk-Bann auf dem Schwert ({{deeper_darker/dd_sculk_smite}}) und Resonariumrüstung gegen den Schallangriff ({{deeper_darker/resonarium}}) wird der Kampf deutlich leichter."
+  ],
+  "en": [
+   "The warden is not a Kronwerke boss, it does not grow with the group, but it grows with the stage: **in stage 3 it has 850 instead of 500 health** and hits 45 percent harder. It always drops a [[minecraft:sculk_catalyst]], 1 to 3 [[deeperdarker:warden_carapace]] and a [[deeperdarker:heart_of_the_deep]].",
+   "Sculk Smite on your sword ({{deeper_darker/dd_sculk_smite}}) and resonarium armor against the sonic boom ({{deeper_darker/resonarium}}) make the fight much easier."
+  ],
+  "sources": [
+   "config/kronwerke-common.toml [mobs] (health 0.7, damage 0.45, armor 4 in stage 3)",
+   "config/kronwerke-common.toml [bosses] scaling (no minecraft:warden)",
+   "minecraft:entities/warden",
+   "deeperdarker-neoforge-1.21.1-1.4.1.jar data/deeperdarker/loot_modifiers/warden_carapace_from_warden.json, warden_heart_from_warden.json"
+  ]
+ },
+ "echo_shard": {
+  "de": [
+   "Rezept: [[minecraft:echo_shard]] in der Mitte, 4 [[deeperdarker:warden_carapace]] an den Seiten, 4 [[minecraft:phantom_membrane]] in den Ecken. **Ein Wärter gibt höchstens 3 Panzer**, für diese Quest brauchst du mit dem [[deeperdarker:ancient_compass]] zusammen aber 8.",
+   "Den Rest holst du aus Truhen der Antiken Stadt (jede fünfte hat einen) oder von weiteren Wärtern. Die Verstärkte Echoscherbe steckt auf Kronwerke auch im Dislokator von Draconic Evolution."
+  ],
+  "en": [
+   "Recipe: an [[minecraft:echo_shard]] in the middle, 4 [[deeperdarker:warden_carapace]] on the sides, 4 [[minecraft:phantom_membrane]] in the corners. **A warden drops at most 3 carapaces**, but together with the [[deeperdarker:ancient_compass]] this quest needs 8.",
+   "Get the rest from ancient city chests (one in five has one) or from more wardens. On Kronwerke the reinforced echo shard also goes into Draconic Evolution's dislocator."
+  ],
+  "sources": [
+   "deeperdarker:reinforced_echo_shard",
+   "deeperdarker:ancient_compass",
+   "deeperdarker-neoforge-1.21.1-1.4.1.jar data/deeperdarker/loot_modifiers/warden_carapace_from_warden.json (1 to 3)",
+   "warden_carapace_from_ancient_city.json (0.2)",
+   "draconicevolution:tools/dislocator (kubejs round.js)"
+  ]
+ },
+ "portal": {
+  "de": [
+   "Den [[minecraft:reinforced_deepslate]] hat Kronwerke ergänzt: 4 [[minecraft:deepslate]] in die Ecken, 4 Stahlbarren an die Seiten, eine [[minecraft:echo_shard]] in die Mitte, für zwei Blöcke. Stahl kommt aus Stufe 3, die Anderwelt ist ebenfalls erst ab Stufe 3 offen.",
+   "**Das Herz zündet nur in der Oberwelt** und in der Anderwelt selbst, im Nether oder anderen Dimensionen passiert nichts. Das Ritual aus Occultism steht in {{occultism_afrit/reinforced_deepslate}}."
+  ],
+  "en": [
+   "Kronwerke added the [[minecraft:reinforced_deepslate]] recipe: 4 [[minecraft:deepslate]] in the corners, 4 steel ingots on the sides, an [[minecraft:echo_shard]] in the middle, for two blocks. Steel is a stage 3 material, and the Otherside also opens only with stage 3.",
+   "**The heart only lights the portal in the overworld** and in the Otherside itself, in the Nether or other dimensions nothing happens. The Occultism ritual is in {{occultism_afrit/reinforced_deepslate}}."
+  ],
+  "sources": [
+   "kronwerke:added/reinforced_deepslate",
+   "config/kronwerke-common.toml (deeperdarker:otherside=kronwerke:stage3)",
+   "deeperdarker-neoforge-1.21.1-1.4.1.jar WardenHeartItem.useOn (overworld or otherside only, consumes the heart)",
+   "occultism:ritual/misc_reinforced_deepslate"
+  ]
+ },
+ "arrival": {
+  "de": [
+   "Monster spawnen hier bei Licht 7 oder weniger, Fackeln helfen also wie oben. **Seelenanker funktionieren hier nicht**, Betten schon: Schlaf an deinem Lager, damit du nach einem Tod nicht durchs Portal zurückmusst.",
+   "Weil die Welt eine Decke hat, gibt es keinen Himmel, der dir die Richtung zeigt. Merk dir die Koordinaten des Portals."
+  ],
+  "en": [
+   "Monsters spawn here at light 7 or less, so torches help as they do at home. **Respawn anchors do not work here**, beds do: sleep at your camp so a death does not send you back through the portal.",
+   "The world has a ceiling, so there is no sky to tell you where you are. Note the portal's coordinates."
+  ],
+  "sources": [
+   "deeperdarker-neoforge-1.21.1-1.4.1.jar data/deeperdarker/dimension_type/otherside.json (bed_works, respawn_anchor_works false, monster_spawn_light_level 7, fixed_time 18000, height 128)"
+  ]
+ },
+ "deeplands": {
+  "de": [
+   "In den Tiefenlanden spawnen Sculk-Schnapper am häufigsten, dazu Hundertfüßer, Zerschmetterte und Phantome. [[deeperdarker:sculk_gleam]] fällt beim Abbauen als Block, du brauchst kein Behutsamkeit.",
+   "Von hier aus gehen {{deeper_darker/gleam_gel}} und {{deeper_darker/temple}} weiter."
+  ],
+  "en": [
+   "Sculk snappers spawn most in the Deeplands, along with centipedes, the Shattered and phantoms. [[deeperdarker:sculk_gleam]] drops as itself, no Silk Touch needed.",
+   "From here {{deeper_darker/gleam_gel}} and {{deeper_darker/temple}} continue."
+  ],
+  "sources": [
+   "deeperdarker-neoforge-1.21.1-1.4.1.jar data/deeperdarker/worldgen/biome/deeplands.json",
+   "deeperdarker-neoforge-1.21.1-1.4.1.jar data/deeperdarker/loot_table/blocks/sculk_gleam.json"
+  ]
+ },
+ "echoing_forest": {
+  "de": [
+   "Im Hallenden Wald spawnen die Zerschmetterten dreimal so oft wie in den Tiefenlanden. In der Säge werden aus einem entrindeten Echostamm sechs statt vier Bretter.",
+   "Setzlinge und Holz behandelt {{deeper_darker/echo_wood}}."
+  ],
+  "en": [
+   "In the Echoing Forest the Shattered spawn three times as often as in the Deeplands. A saw turns a stripped echo log into six planks instead of four.",
+   "Saplings and wood are covered in {{deeper_darker/echo_wood}}."
+  ],
+  "sources": [
+   "deeperdarker-neoforge-1.21.1-1.4.1.jar data/deeperdarker/worldgen/biome/echoing_forest.json (shattered weight 17)",
+   "create:cutting/runtime_generated/compat/deeperdarker/stripped_echo_log_to_echo_planks"
+  ]
+ },
+ "blooming_caverns": {
+  "de": [
+   "Den [[deeperdarker:angler_fish]] brätst du im Ofen, Räucherofen oder am Lagerfeuer. Neben dem Schlamm spawnen hier auch ein paar Sculk-Schnapper.",
+   "Schlamm ist der einzige Weg zu Resonarium, siehe {{deeper_darker/sludge}}."
+  ],
+  "en": [
+   "Cook the [[deeperdarker:angler_fish]] in a furnace, smoker or on a campfire. Next to the sludge a few sculk snappers spawn here too.",
+   "Sludge is the only way to resonarium, see {{deeper_darker/sludge}}."
+  ],
+  "sources": [
+   "deeperdarker:cooked_angler_fish (smelting, smoking, campfire)",
+   "deeperdarker-neoforge-1.21.1-1.4.1.jar data/deeperdarker/worldgen/biome/blooming_caverns.json"
+  ]
+ },
+ "overcast_columns": {
+  "de": [
+   "Der [[deeperdarker:crystallized_amber]] sitzt als Mittelstück in den Säulen. Ohne Behutsamkeit kann statt des Inhalts ein Sculk-Egel herauskommen.",
+   "Der [[deeperdarker:gloomy_geyser]] hat für PneumaticCraft 2000 Grad. Entziehst du ihm zu viel Wärme, wird er zu Düsterem Sculk."
+  ],
+  "en": [
+   "The [[deeperdarker:crystallized_amber]] sits as the middle piece in the columns. Without Silk Touch a sculk leech may come out instead of the content.",
+   "The [[deeperdarker:gloomy_geyser]] counts as 2000 degrees for PneumaticCraft. Draw too much heat from it and it turns into gloomy sculk."
+  ],
+  "sources": [
+   "deeperdarker-neoforge-1.21.1-1.4.1.jar data/deeperdarker/worldgen/configured_feature/gloomslate_column.json",
+   "deeperdarker-neoforge-1.21.1-1.4.1.jar data/deeperdarker/recipe/compatibility/pneumaticcraft/block_heat_properties/deeperdarker/gloomy_geyser.json"
+  ]
+ },
+ "explore_all": {
+  "de": [
+   "Gezählt wird, dass du in jedem der vier Biome einmal gestanden hast, wo genau ist egal. Die Biome hängen an: {{deeper_darker/deeplands}}, {{deeper_darker/echoing_forest}}, {{deeper_darker/blooming_caverns}} und {{deeper_darker/overcast_columns}}."
+  ],
+  "en": [
+   "It counts once you have stood in each of the four biomes, anywhere inside. The biome quests are {{deeper_darker/deeplands}}, {{deeper_darker/echoing_forest}}, {{deeper_darker/blooming_caverns}} and {{deeper_darker/overcast_columns}}."
+  ],
+  "sources": [
+   "deeperdarker-neoforge-1.21.1-1.4.1.jar data/deeperdarker/advancement/main/explore_otherside.json"
+  ]
+ },
+ "stone": {
+  "de": [
+   "Der Mekanism-Anreicherer ({{mekanism/enrichment}}) macht auch Platten, Treppen und Mauern um. Die Erze gibst du lieber mit Behutsamkeit ins Mahlwerk: **ein Diamanterz gibt dort 3 Diamanten** und mit 25 Prozent einen vierten, mehr als Tiefenschiefer-Diamanterz."
+  ],
+  "en": [
+   "The Mekanism enrichment chamber ({{mekanism/enrichment}}) also converts slabs, stairs and walls. Better mine the ores with Silk Touch and put them through the crushing wheels: **a diamond ore gives 3 diamonds there** plus a fourth at 25 percent, more than deepslate diamond ore."
+  ],
+  "sources": [
+   "deeperdarker:compatibility/mekanism/enriching/conversion/*",
+   "deeperdarker:compatibility/create/crushing/sculk_stone_diamond_ore",
+   "create:crushing/deepslate_diamond_ore"
+  ]
+ },
+ "light": {
+  "de": [
+   "Rezept: ein [[deeperdarker:sculk_gleam]] in der Mitte, oben, unten, links und rechts je ein [[deeperdarker:gloomslate]], die Ecken bleiben frei. Gebrannten Düsterschiefer bekommst du aus dem Bruchstein im Ofen."
+  ],
+  "en": [
+   "Recipe: a [[deeperdarker:sculk_gleam]] in the middle, one [[deeperdarker:gloomslate]] above, below, left and right, corners empty. Smelt cobbled gloomslate to get gloomslate."
+  ],
+  "sources": [
+   "deeperdarker:gloomslate_light",
+   "deeperdarker:gloomslate (smelting)"
+  ]
+ },
+ "echo_wood": {
+  "de": [
+   "Echolaub gibt ohne Schere 5 Prozent einen [[deeperdarker:echo_sapling]], mit Glück III sind es 10 Prozent. In den Lagerkammern der Antiken Tempel liegen außerdem 2 bis 8 Echostämme."
+  ],
+  "en": [
+   "Echo leaves drop an [[deeperdarker:echo_sapling]] 5 percent of the time without shears, 10 percent with Fortune III. Ancient temple storage chests also hold 2 to 8 echo logs."
+  ],
+  "sources": [
+   "deeperdarker-neoforge-1.21.1-1.4.1.jar data/deeperdarker/loot_table/blocks/echo_leaves.json",
+   "deeperdarker-neoforge-1.21.1-1.4.1.jar data/deeperdarker/loot_table/chests/ancient_temple_storage.json"
+  ]
+ },
+ "gleam_gel": {
+  "de": [
+   "Ein Seltsamer Trank mit [[deeperdarker:gleam_gel]] gibt einen **Trank des Glühens**, neun Gel einen [[deeperdarker:gleam_gel_block]]. Zum Zähmen eines Schnappers rechne mit mehreren Gel, jeder Versuch klappt nur zu 20 Prozent."
+  ],
+  "en": [
+   "An awkward potion with [[deeperdarker:gleam_gel]] brews a potion of glowing, nine gel make a [[deeperdarker:gleam_gel_block]]. Taming a snapper takes several gel, each try works only 20 percent of the time."
+  ],
+  "sources": [
+   "DeeperDarkerEvents.registerBrewingRecipes (AWKWARD + GLEAM_GEL)",
+   "deeperdarker:gleam_gel_block",
+   "SculkSnapper.mobInteract (0.2)"
+  ],
+  "client": [
+   "shears on porous sculk gleam give gel"
+  ]
+ },
+ "snapper": {
+  "de": [
+   "Jedes Stück [[deeperdarker:gleam_gel]] zähmt ihn nur mit **20 Prozent**. Er gräbt nur, solange du höchstens 5 Blöcke entfernt bist, im Schnitt etwa alle drei Minuten ein Buch mit einer zufälligen Verzauberung.",
+   "Jeder getötete Schnapper lässt einen [[deeperdarker:soul_dust]] fallen, mit Plünderung mehr. Als Tier zählt er nicht als Monster und wird auf Kronwerke nicht stärker."
+  ],
+  "en": [
+   "Each [[deeperdarker:gleam_gel]] tames it with only **20 percent** chance. It digs only while you are at most 5 blocks away, on average about one book with a random enchantment every three minutes.",
+   "Every snapper killed drops one [[deeperdarker:soul_dust]], more with Looting. As an animal it is no monster and does not get stronger on Kronwerke."
+  ],
+  "sources": [
+   "SculkSnapper.mobInteract (0.2)",
+   "SculkSnapper.tick (owner within 5, 2.5E-4 per tick, snapperDropLimit)",
+   "srv/config/deeperdarker-common.toml (snapperDropLimit 8)",
+   "deeperdarker-neoforge-1.21.1-1.4.1.jar data/deeperdarker/loot_table/entities/sculk_snapper.json"
+  ]
+ },
+ "shattered": {
+  "de": [
+   "Auf Kronwerke haben sie in Stufe 3 **85 Lebenspunkte** und 8,7 Schaden. Jeder lässt 1 bis 3 [[deeperdarker:sculk_bone]] fallen, mit Plünderung mehr.",
+   "Sculkknochen liegen auch reichlich in den Truhen der Antiken Tempel. Den Bann lernst du in {{deeper_darker/dd_sculk_smite}}."
+  ],
+  "en": [
+   "On Kronwerke in stage 3 they have **85 health** and deal 8.7 damage. Each drops 1 to 3 [[deeperdarker:sculk_bone]], more with Looting.",
+   "Sculk bones are also plentiful in ancient temple chests. The enchantment is covered in {{deeper_darker/dd_sculk_smite}}."
+  ],
+  "sources": [
+   "Shattered.createAttributes (50 health, 6 damage, 3.5 armor)",
+   "config/kronwerke-common.toml [mobs] (health 0.7, damage 0.45, armor 4 in stage 3)",
+   "deeperdarker-neoforge-1.21.1-1.4.1.jar data/deeperdarker/loot_table/entities/shattered.json"
+  ]
+ },
+ "infested": {
+  "de": [
+   "Ein Sculk-Egel lässt nur mit Glück einen [[deeperdarker:soul_dust]] fallen, mal einen, mal keinen. Für die 16 Seelenstaub aus {{deeper_darker/soul_dust}} sind Schnapper und Tempeltruhen ergiebiger."
+  ],
+  "en": [
+   "A sculk leech only sometimes drops a [[deeperdarker:soul_dust]], one or none. For the 16 soul dust of {{deeper_darker/soul_dust}} snappers and temple chests give more."
+  ],
+  "sources": [
+   "deeperdarker-neoforge-1.21.1-1.4.1.jar data/deeperdarker/loot_table/entities/sculk_leech.json (0 to 1)",
+   "deeperdarker-neoforge-1.21.1-1.4.1.jar data/deeperdarker/loot_table/chests/ancient_temple_basement.json"
+  ]
+ },
+ "shriek_worm": {
+  "de": [
+   "In Stufe 3 hat er auf Kronwerke **170 Lebenspunkte**. Er steigt nur aus [[deeperdarker:infested_sculk]], also brich davon so lange Blöcke ohne Behutsamkeit, bis einer kommt."
+  ],
+  "en": [
+   "In stage 3 on Kronwerke it has **170 health**. It only rises from [[deeperdarker:infested_sculk]], so keep breaking those without Silk Touch until one shows up."
+  ],
+  "sources": [
+   "ShriekWorm.createAttributes (100 health, 7 damage)",
+   "config/kronwerke-common.toml [mobs] (health 0.7, damage 0.45, armor 4 in stage 3)",
+   "deeperdarker-neoforge-1.21.1-1.4.1.jar data/deeperdarker/loot_table/entities/shriek_worm.json (empty)"
+  ],
+  "client": [
+   "shriek worm comes from infested sculk"
+  ]
+ },
+ "sludge": {
+  "de": [
+   "Im Schnitt gibt nur jeder zweite kleinste Schlamm ein [[deeperdarker:resonarium]], Plünderung III hebt das spürbar. Für die Brustplatte und drei weitere Teile in {{deeper_darker/dd_resonarium_set}} brauchst du 16 Resonarium, dazu eins für jede kopierte Vorlage."
+  ],
+  "en": [
+   "On average only every second smallest sludge drops a [[deeperdarker:resonarium]], Looting III helps a lot. The chestplate plus three more pieces in {{deeper_darker/dd_resonarium_set}} take 16 resonarium, and one more for each template you copy."
+  ],
+  "sources": [
+   "deeperdarker-neoforge-1.21.1-1.4.1.jar data/deeperdarker/loot_table/entities/sludge.json (size 1, 0 to 1, looting)",
+   "deeperdarker:resonarium_plate",
+   "deeperdarker:resonarium_upgrade_smithing_template"
+  ]
+ },
+ "temple": {
+  "de": [
+   "Die Quest hakt sich ab, sobald du im Tempel stehst. Den Sculksender gibt es nur in der Geheimtruhe, und dort immer ({{deeper_darker/transmitter}}).",
+   "Monster sind hier in Stufe 3 auf Kronwerke 70 Prozent zäher. Ein [[deeperdarker:warden_carapace]] liegt nur selten in Tempeltruhen oder Vasen, der verlässliche Weg ist der Wärter."
+  ],
+  "en": [
+   "The quest ticks once you stand inside the temple. The sculk transmitter is only in the secret chest, and always there ({{deeper_darker/transmitter}}).",
+   "Monsters are 70 percent tougher here in stage 3 on Kronwerke. A [[deeperdarker:warden_carapace]] is rare in temple chests and vases, the reliable source is the warden."
+  ],
+  "sources": [
+   "deeperdarker-neoforge-1.21.1-1.4.1.jar data/deeperdarker/advancement/main/find_ancient_temple.json",
+   "deeperdarker-neoforge-1.21.1-1.4.1.jar data/deeperdarker/loot_table/chests/ancient_temple_secret.json",
+   "ancient_temple_apex.json, ancient_temple_basement.json, blocks/ancient_vase.json (carapace weight 1)",
+   "config/kronwerke-common.toml [mobs] (health 0.7, damage 0.45, armor 4 in stage 3)"
+  ]
+ },
+ "stalker": {
+  "de": [
+   "Auf Kronwerke hat er in Stufe 3 **340 Lebenspunkte**, 8 Rüstung und trifft mit fast 32 Schaden. Eine zerbrochene Vase ist zu 16 Prozent unecht, und aus knapp jeder dritten unechten kommt er.",
+   "Er lässt einen [[deeperdarker:soul_crystal]] fallen, jede Stufe Plünderung kann einen mehr geben, mit Plünderung III also bis zu vier."
+  ],
+  "en": [
+   "On Kronwerke in stage 3 it has **340 health**, 8 armor and hits for almost 32 damage. A broken vase is fake 16 percent of the time, and nearly one in three fake vases releases it.",
+   "It drops one [[deeperdarker:soul_crystal]], each Looting level can add one, so up to four with Looting III."
+  ],
+  "sources": [
+   "Stalker.createAttributes (200 health, 22 damage, 4 armor)",
+   "config/kronwerke-common.toml [mobs] (health 0.7, damage 0.45, armor 4 in stage 3)",
+   "srv/config/deeperdarker-common.toml (fakeVaseChance 0.16, stalkerSpawnChance 0.3125)",
+   "deeperdarker-neoforge-1.21.1-1.4.1.jar data/deeperdarker/loot_table/entities/stalker.json"
+  ]
+ },
+ "transmitter": {
+  "de": [
+   "Verbinden kannst du auch Shulkerkisten, Trichter, Spender, Braustand, Schmiedetisch, Steinsäge und Leuchtfeuer. Der Zielchunk muss geladen sein: lade ihn mit FTB Chunks dauerhaft, dann geht es auch, wenn sonst niemand dort ist.",
+   "Auf Kronwerke steckt der Sculksender außerdem im [[ae2:wireless_receiver]] von AE2."
+  ],
+  "en": [
+   "You can also link shulker boxes, hoppers, dispensers, brewing stands, smithing tables, stonecutters and beacons. The target chunk has to be loaded: force load it with FTB Chunks and it works while nobody else is there.",
+   "On Kronwerke the sculk transmitter also goes into AE2's [[ae2:wireless_receiver]]."
+  ],
+  "sources": [
+   "deeperdarker-neoforge-1.21.1-1.4.1.jar data/deeperdarker/tags/block/transmittable.json",
+   "ae2:network/wireless_part (kubejs round.js)",
+   "config/ftbchunks-world.snbt (force_load_mode always)"
+  ]
+ },
+ "soul_dust": {
+  "de": [
+   "Mit einem **Trank der Unsichtbarkeit (verlängert)** plus [[deeperdarker:soul_dust]] bekommst du gleich die lange Sculk-Affinität. Den Staub bringen Schnapper (immer einer), Egel, Bernstein und die Keller- und Brunnentruhen der Tempel.",
+   "Für 4 [[deeperdarker:soundproof_glass]] reichen zwei Rezepte, also 8 Staub und 2 Glas."
+  ],
+  "en": [
+   "A **long potion of invisibility** plus [[deeperdarker:soul_dust]] gives the long sculk affinity directly. Soul dust comes from snappers (always one), leeches, amber and the basement and fountain chests of temples.",
+   "4 [[deeperdarker:soundproof_glass]] take two crafts, so 8 dust and 2 glass."
+  ],
+  "sources": [
+   "DeeperDarkerEvents.registerBrewingRecipes (LONG_INVISIBILITY + SOUL_DUST = LONG_SCULK_AFFINITY)",
+   "deeperdarker:soundproof_glass",
+   "deeperdarker-neoforge-1.21.1-1.4.1.jar data/deeperdarker/loot_table/entities/sculk_snapper.json, sculk_leech.json, chests/crystallized_amber.json"
+  ]
+ },
+ "resonarium": {
+  "de": [
+   "Ein Hornschild ist ein [[minecraft:turtle_scute]] oder [[minecraft:armadillo_scute]]. Die Vorlage hat Chancen von 45 Prozent pro Truhe der Antiken Stadt, 32 Prozent in Festungsgängen und 28 Prozent in den gewöhnlichen Belohnungen der Prüfungskammern.",
+   "Kopieren: Vorlage in die Mitte oben, [[deeperdarker:resonarium]] in die Mitte, sieben Diamanten drumherum, für zwei Vorlagen."
+  ],
+  "en": [
+   "A scute is a [[minecraft:turtle_scute]] or an [[minecraft:armadillo_scute]]. The template has a 45 percent chance per ancient city chest, 32 percent in stronghold corridors and 28 percent in common trial chamber rewards.",
+   "Copying: template top middle, [[deeperdarker:resonarium]] in the center, seven diamonds around it, for two templates."
+  ],
+  "sources": [
+   "deeperdarker:resonarium_plate",
+   "deeperdarker:resonarium_chestplate_smithing",
+   "deeperdarker:resonarium_upgrade_smithing_template",
+   "deeperdarker-neoforge-1.21.1-1.4.1.jar data/deeperdarker/loot_modifiers/resonarium_upgrade_from_*.json",
+   "DeeperDarkerEvents.livingDamageEvent (BYPASSES_ARMOR / 4 per piece)"
+  ]
+ },
+ "slayer": {
+  "de": [
+   "Phantom und Wärter dürfen auch aus der Oberwelt kommen, gezählt wird nur, dass du sie getötet hast. Die Afrit-Essenz für das Stufenziel ist ein Grundwert, er wächst mit der Zahl aktiver Spieler ({{occultism_afrit/essence_line}})."
+  ],
+  "en": [
+   "The phantom and the warden may come from the overworld, all that counts is that you killed them. The afrit essence for the stage goal is a base amount that grows with the number of active players ({{occultism_afrit/essence_line}})."
+  ],
+  "sources": [
+   "deeperdarker-neoforge-1.21.1-1.4.1.jar data/deeperdarker/advancement/main/kill_all_sculk_mobs.json",
+   "config/kronwerke/goals.json (stage3 occultism:afrit_essence base 150, scale true)"
+  ]
+ },
+ "outlook": {
+  "de": [
+   "Alles Wärterzeug ist in Stufe 3 gesperrt: du kannst es schon im Inventar haben und einlagern, aber erst mit Stufe 4 herstellen und anlegen. Die Wärter-Vorlage kopierst du mit Vorlage, [[minecraft:sculk]] und sieben Diamanten, für zwei."
+  ],
+  "en": [
+   "All warden gear is locked in stage 3: you can carry and store it, but craft and wear it only with stage 4. Copy the warden template with the template, [[minecraft:sculk]] and seven diamonds, for two."
+  ],
+  "sources": [
+   "deeperdarker:warden_upgrade_smithing_template (stage 4)",
+   "deeperdarker:soul_elytra (stage 4)",
+   "deeperdarker:sonorous_staff (stage 4)",
+   "docs/STAGES.md (stage 4 the Otherside warden gear)"
+  ]
+ },
+ "dd_catalyst": {
+  "de": [
+   "Den Katalysator bekommst du nur mit Behutsamkeit heil aus dem Boden, vom Wärter fällt er immer. An der Mobfarm lohnt er sich vor allem für Erfahrung: Sculk, den du ohne Behutsamkeit abbaust, gibt Erfahrung statt Blöcke."
+  ],
+  "en": [
+   "Mined from the ground the catalyst only drops with Silk Touch, the warden always drops one. At a mob farm it pays off mostly for experience: sculk mined without Silk Touch gives experience instead of blocks."
+  ],
+  "sources": [
+   "minecraft:blocks/sculk_catalyst",
+   "minecraft:entities/warden"
+  ]
+ },
+ "dd_disc": {
+  "de": [
+   "In den Truhen liegen je 1 bis 3 [[minecraft:disc_fragment_5]], in den Haupthallen der Antiken Tempel ebenfalls. Die neun Bruchstücke kommen formlos ins Raster."
+  ],
+  "en": [
+   "Chests hold 1 to 3 [[minecraft:disc_fragment_5]] at a time, the apex chests of ancient temples too. The nine fragments go shapeless into the grid."
+  ],
+  "sources": [
+   "minecraft:chests/ancient_city",
+   "deeperdarker-neoforge-1.21.1-1.4.1.jar data/deeperdarker/loot_table/chests/ancient_temple_apex.json"
+  ],
+  "client": [
+   "disc fragment count per ancient city chest"
+  ]
+ },
+ "dd_ores": {
+  "de": [
+   "Bau die Diamanterze mit Behutsamkeit ab und gib sie ins Mahlwerk: **3 Diamanten pro Erz** und mit 25 Prozent ein vierter. Mit drei Erzen hast du die Quest fast zusammen."
+  ],
+  "en": [
+   "Mine the diamond ores with Silk Touch and run them through the crushing wheels: **3 diamonds per ore** plus a fourth at 25 percent. Three ores almost finish the quest."
+  ],
+  "sources": [
+   "deeperdarker:compatibility/create/crushing/sculk_stone_diamond_ore",
+   "deeperdarker:compatibility/create/crushing/gloomslate_diamond_ore"
+  ]
+ },
+ "dd_centipede": {
+  "de": [
+   "Sie spawnen nur in den Tiefenlanden und haben auf Kronwerke in Stufe 3 34 Lebenspunkte. Jeder lässt höchstens einen Faden fallen, mit Plünderung mehr; mehr Fäden findest du in den Kellertruhen der Tempel."
+  ],
+  "en": [
+   "They spawn only in the Deeplands and have 34 health in stage 3 on Kronwerke. Each drops at most one string, more with Looting; temple basement chests hold more string."
+  ],
+  "sources": [
+   "SculkCentipede.createAttributes (20 health)",
+   "config/kronwerke-common.toml [mobs] (health 0.7, damage 0.45, armor 4 in stage 3)",
+   "deeperdarker-neoforge-1.21.1-1.4.1.jar data/deeperdarker/worldgen/biome/deeplands.json",
+   "deeperdarker-neoforge-1.21.1-1.4.1.jar data/deeperdarker/loot_table/entities/sculk_centipede.json"
+  ]
+ },
+ "dd_sculk_smite": {
+  "de": [
+   "Sculk-Bann V gibt also 12,5 Schaden mehr. Gegen Phantome wirkt er auch, sie gehören zu den Sculk-Wesen.",
+   "Das ist kein Schatz-Zauber: du bekommst ihn am Zaubertisch, aus Büchern der Antiken Städte und Tempel oder von einem gezähmten Schnapper ({{deeper_darker/snapper}})."
+  ],
+  "en": [
+   "Sculk Smite V adds 12.5 damage. It also works against phantoms, they count as sculk creatures.",
+   "It is not a treasure enchantment: you get it at the enchanting table, from books in ancient cities and temples or from a tamed snapper ({{deeper_darker/snapper}})."
+  ],
+  "sources": [
+   "deeperdarker-neoforge-1.21.1-1.4.1.jar data/deeperdarker/enchantment/sculk_smite.json",
+   "deeperdarker-neoforge-1.21.1-1.4.1.jar data/deeperdarker/tags/entity_type/sculk.json",
+   "deeperdarker-neoforge-1.21.1-1.4.1.jar data/minecraft/tags/enchantment/non_treasure.json",
+   "config/kronwerke-common.toml [mobs] (health 0.7, damage 0.45, armor 4 in stage 3)"
+  ]
+ },
+ "dd_carapace": {
+  "de": [
+   "Die beste Quelle neben dem Wärter (1 bis 3) sind die **Truhen der Antiken Stadt**: jede fünfte hat einen Panzer, und Lootr füllt sie für jeden Spieler neu. In Tempeltruhen und Vasen ist er sehr selten.",
+   "Vier Panzer und ein Kompass geben auch den [[deeperdarker:ancient_compass]]."
+  ],
+  "en": [
+   "The best source besides the warden (1 to 3) are **ancient city chests**: one in five has a carapace, and Lootr fills them anew for each player. In temple chests and vases it is very rare.",
+   "Four carapaces and a compass also make the [[deeperdarker:ancient_compass]]."
+  ],
+  "sources": [
+   "deeperdarker-neoforge-1.21.1-1.4.1.jar data/deeperdarker/loot_modifiers/warden_carapace_from_ancient_city.json (0.2), warden_carapace_from_warden.json",
+   "ancient_temple_apex.json, ancient_temple_basement.json, blocks/ancient_vase.json",
+   "deeperdarker:ancient_compass"
+  ]
+ },
+ "dd_soul_crystals": {
+  "de": [
+   "Jede Stufe Plünderung kann einen Kristall mehr geben. Auf Kronwerke brauchst du einen auch für den [[eidolon_repraised:lesser_soul_gem]] von Eidolon, im Tiegel."
+  ],
+  "en": [
+   "Each Looting level can add one crystal. On Kronwerke you also need one for Eidolon's [[eidolon_repraised:lesser_soul_gem]], in the crucible."
+  ],
+  "sources": [
+   "deeperdarker-neoforge-1.21.1-1.4.1.jar data/deeperdarker/loot_table/entities/stalker.json",
+   "kronwerke:round/eidolon_repraised_lesser_soul_gem"
+  ]
+ },
+ "dd_resonarium_set": {
+  "de": [
+   "Jedes Teil braucht eine eigene Vorlage, die beim Schmieden verbraucht wird. Kopier sie also, bevor du die letzte einsetzt ({{deeper_darker/resonarium}}).",
+   "Jedes Teil fängt ein Viertel des Schadens ab, der durch Rüstung geht, und verliert dafür Haltbarkeit."
+  ],
+  "en": [
+   "Each piece needs its own template, which the smithing uses up. Copy it before you spend the last one ({{deeper_darker/resonarium}}).",
+   "Each piece absorbs a quarter of the damage that bypasses armor and loses durability for it."
+  ],
+  "sources": [
+   "deeperdarker:resonarium_helmet_smithing, leggings, boots",
+   "DeeperDarkerEvents.livingDamageEvent"
+  ]
+ }
+}

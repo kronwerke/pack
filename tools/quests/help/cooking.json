@@ -1,0 +1,477 @@
+{
+ "book": {
+  "de": [
+   "Das Buch kommt nach 10 Sekunden aus jedem Ofen. Papier dafür machst du aus Zuckerrohr oder später aus Sägemehl ({{cooking/sawmill}}).",
+   "Die formlos gecraftete Ausgabe ohne Filter lässt sich im Ofen wieder zu [[cookingforblockheads:recipe_book]] zurückschmelzen, du verlierst also nichts beim Ausprobieren. Weiter geht es mit Band II ({{cooking/book2}})."
+  ],
+  "en": [
+   "The book comes out of any furnace after 10 seconds. Make the paper from sugar cane or later from sawdust ({{cooking/sawmill}}).",
+   "The no filter edition, crafted shapeless, smelts back into [[cookingforblockheads:recipe_book]], so trying it costs you nothing. Next comes volume II ({{cooking/book2}})."
+  ],
+  "sources": [
+   "cookingforblockheads:recipe_book (smelting, cookingtime 200)",
+   "cookingforblockheads:recipe_book_from_smelting_no_filter_edition",
+   "cookingforblockheads:no_filter_edition"
+  ]
+ },
+ "book2": {
+  "de": [
+   "Die zwei Diamanten kommen oben und unten ins Raster, die Werkbänke links und rechts. Einen Diamanten gibt dir die Quest als Belohnung zurück.",
+   "Behalt Band II nicht lange: Er ist die Zutat für den [[cookingforblockheads:cooking_table]] ({{cooking/table}}), und der Tisch kann alles, was das Buch kann, plus die ganze Küche."
+  ],
+  "en": [
+   "The two diamonds go above and below, the crafting tables left and right. The quest gives one diamond back as its reward.",
+   "Do not keep volume II for long: it is the ingredient of the [[cookingforblockheads:cooking_table]] ({{cooking/table}}), and the table does everything the book does, plus the whole kitchen."
+  ],
+  "sources": [
+   "cookingforblockheads:crafting_book (pattern \" D \", \"CBC\", \" D \")"
+  ]
+ },
+ "table": {
+  "de": [
+   "Für die obere Reihe zählt nur Stein aus #c:stones, also Stein, Andesit, Diorit, Granit, Tiefenschiefer oder Tuff, kein Bruchstein. Bruchstein schmilzt du im Ofen zu Stein.",
+   "Der [[farmersdelight:cooking_pot]] gehört wirklich zur Küche: Cooking for Blockheads bringt dafür eine eigene Anbindung an Farmer's Delight mit ({{food/f_pot}}). Den [[cookingforblockheads:white_kitchen_floor]] gibt es auch aus je zwei schwarzen und weißen Betonblöcken, dann aber nur vier Stück."
+  ],
+  "en": [
+   "The top row only takes stone from #c:stones, meaning stone, andesite, diorite, granite, deepslate or tuff, not cobblestone. Smelt cobblestone into stone in a furnace.",
+   "The [[farmersdelight:cooking_pot]] really is part of the kitchen: Cooking for Blockheads ships its own Farmer's Delight link for it ({{food/f_pot}}). The [[cookingforblockheads:white_kitchen_floor]] also comes from two black and two white concrete blocks, but then only four of them."
+  ],
+  "sources": [
+   "cookingforblockheads:cooking_table (#c:stones, terracotta, crafting_book)",
+   "cookingforblockheads:kitchen_floor_from_concrete (4), cookingforblockheads:white_kitchen_floor (12)",
+   "cookingforblockheads jar: compat/FarmersDelightAddon, FarmersDelightCookingPotItemProcessor"
+  ]
+ },
+ "counters": {
+  "de": [
+   "Für Theke und Schrank geht jede Holztruhe (#c:chests/wooden), auch eine aus anderem Holz. Gefärbte Blöcke bekommst du formlos mit Knochenmehl zurück zu weiß.",
+   "Ein Schrank ist billiger als eine Theke (fünf Terrakotta, kein Stein). Danach kommen Spülbecken ({{cooking/sink}}), Backofen ({{cooking/oven}}) und Kühlschrank ({{cooking/fridge}})."
+  ],
+  "en": [
+   "Counter and cabinet take any wooden chest (#c:chests/wooden), from any wood. Dyed blocks turn white again with bone meal, shapeless.",
+   "A cabinet is cheaper than a counter (five terracotta, no stone). Next come the sink ({{cooking/sink}}), the oven ({{cooking/oven}}) and the fridge ({{cooking/fridge}})."
+  ],
+  "sources": [
+   "cookingforblockheads:counter (pattern SSS/CBC/CCC)",
+   "cookingforblockheads:cabinet (pattern CCC/CBC)",
+   "cookingforblockheads:remove_dye_from_cooking_table and the other remove_dye recipes"
+  ]
+ },
+ "sink": {
+  "de": [
+   "Auf Kronwerke braucht das Spülbecken keinen Wasseranschluss: Es liefert Wasser ohne Ende, auch ohne Quelle daneben. Den leeren Eimer aus dem Rezept bekommst du beim Craften zurück.",
+   "Das Eisen kann jeder Barren aus #c:ingots/iron sein. Die zwei Eimer aus der Belohnung füllst du direkt am Becken."
+  ],
+  "en": [
+   "On Kronwerke the sink needs no water supply: it gives endless water, with no source next to it. You get the empty bucket of the recipe back when crafting.",
+   "The iron can be any ingot from #c:ingots/iron. Fill the two reward buckets right at the sink."
+  ],
+  "sources": [
+   "config/cookingforblockheads-common.toml (sinkRequiresWater = false)",
+   "cookingforblockheads:sink"
+  ]
+ },
+ "oven": {
+  "de": [
+   "Das Schwarze Glas färbst du aus Glas und schwarzem Farbstoff. Brennstoff hält im Backofen nur 0,33 mal so lange wie im Ofen, die Garzeit ist dieselbe.",
+   "Auf Kronwerke darf der Backofen automatisiert werden: Trichter und Schleusen können ihn befüllen und leeren, Kochöl braucht er nicht. Die [[cookingforblockheads:heating_unit]] ist ein Ofen-Upgrade aus drei Eisenklumpen, zwei Eisenbarren und einem Komparator."
+  ],
+  "en": [
+   "Black stained glass is glass plus black dye. Fuel only lasts 0.33 times as long in the oven as in a furnace, the cooking time is the same.",
+   "On Kronwerke the oven may be automated: hoppers and funnels can fill and empty it, and it needs no cooking oil. The [[cookingforblockheads:heating_unit]] is an oven upgrade made of three iron nuggets, two iron ingots and a comparator."
+  ],
+  "sources": [
+   "config/cookingforblockheads-common.toml (ovenFuelTimeMultiplier 0.33, ovenCookTimeMultiplier 1.0, disallowOvenAutomation false, ovenRequiresCookingOil false)",
+   "cookingforblockheads:white_oven",
+   "cookingforblockheads:heating_unit (pattern NNN/ICI)"
+  ],
+  "client": [
+   "which sides of the oven hoppers and funnels feed and empty"
+  ]
+ },
+ "fridge": {
+  "de": [
+   "Konservierungskammer und Eiseinheit sind beides Kühlschrank-Upgrades und folgen demselben Muster: drei gleiche Teile oben (Redstone oder Schneebälle), darunter Eisen, Komparator, Eisen.",
+   "Für den Kühlschrank geht jede Holztruhe mit einer [[minecraft:iron_door]]. Mit dem Eisen aus der Belohnung baust du die zweite Kammer oder die Eiseinheit."
+  ],
+  "en": [
+   "Preservation chamber and ice unit are both fridge upgrades with the same pattern: three of the same item on top (redstone or snowballs), below them iron, comparator, iron.",
+   "The fridge takes any wooden chest plus an [[minecraft:iron_door]]. The reward iron covers a second chamber or the ice unit."
+  ],
+  "sources": [
+   "cookingforblockheads:preservation_chamber (RRR/ICI)",
+   "cookingforblockheads:ice_unit (SSS/ICI)",
+   "cookingforblockheads:white_fridge (shapeless, #c:chests/wooden + iron door)",
+   "cookingforblockheads lang de_de (tooltip.fridge_upgrade)"
+  ]
+ },
+ "cow": {
+  "de": [
+   "Es zählt nur eine normale Kuh, keine Mooshroom. Der Schaden muss vom fallenden Amboss kommen, während die Kuh im Milchglas oder direkt darüber steht.",
+   "Ein Milchglas fasst **32 000 mB**, die Kuh füllt es mit 1 mB pro Tick, also in etwa 27 Minuten. Mehr zur Kuh im Glas als Farm steht in {{farms/animals_nest}}."
+  ],
+  "en": [
+   "Only a plain cow counts, no mooshroom. The damage must come from a falling anvil while the cow stands in the milk jar or right above it.",
+   "A milk jar holds **32,000 mB**, and the cow fills it at 1 mB per tick, so in about 27 minutes. More on the cow in a jar as a farm is in {{farms/animals_nest}}."
+  ],
+  "sources": [
+   "cookingforblockheads jar: CowJarHandler (damage source anvil, tag cookingforblockheads:cows, findMilkJar at and below the cow)",
+   "data/cookingforblockheads/tags/entity_type/cows.json (minecraft:cow)",
+   "MilkJarBlockEntity (MILK_CAPACITY = 32000)",
+   "config/cookingforblockheads-common.toml (cowJarMilkPerTick = 1)"
+  ]
+ },
+ "gadgets": {
+  "de": [
+   "Werkzeugregal und Gewürzregal brauchen nur Holzstufen (das Werkzeugregal dazu zwei Eisenklumpen), sie sind also billig. Für den [[cookingforblockheads:toaster]] brauchst du einen Lavaeimer und eine Eisenfalltür.",
+   "Häng das [[farmersdelight:flint_knife]] oder ein besseres Messer ins Werkzeugregal ({{food/f_knife}}), dann kann der Kochtisch Rezepte mit Messer machen, ohne dass du es trägst."
+  ],
+  "en": [
+   "Tool rack and spice rack only need wooden slabs (the tool rack also two iron nuggets), so they are cheap. The [[cookingforblockheads:toaster]] needs a lava bucket and an iron trapdoor.",
+   "Hang the [[farmersdelight:flint_knife]] or a better knife on the tool rack ({{food/f_knife}}), and the cooking table can make recipes that need a knife without you carrying one."
+  ],
+  "sources": [
+   "cookingforblockheads:tool_rack (SSS/I I)",
+   "cookingforblockheads:spice_rack (SS)",
+   "cookingforblockheads:toaster",
+   "data/cookingforblockheads/tags/item/utensils.json"
+  ],
+  "client": [
+   "that the cooking table uses a knife from the tool rack"
+  ]
+ },
+ "connector": {
+  "de": [
+   "Für die vier Verbinder brauchst du zwölf Stein und 24 Terrakotta, die Belohnung gibt dir acht davon zurück. Über größere Abstände verbindet der [[cookingforblockheads:white_kitchen_floor]]: zwei Kohleblöcke und zwei Quarzblöcke im Schachbrett ergeben zwölf Stück."
+  ],
+  "en": [
+   "The four connectors cost twelve stone and 24 terracotta, the reward gives eight terracotta back. For larger gaps use the [[cookingforblockheads:white_kitchen_floor]]: two coal blocks and two quartz blocks in a checkerboard make twelve."
+  ],
+  "sources": [
+   "cookingforblockheads:connector (SSS/CCC/CCC)",
+   "cookingforblockheads:white_kitchen_floor (BW/WB, 12)"
+  ]
+ },
+ "cake": {
+  "de": [
+   "Das Ei darf jedes Ei aus #c:eggs sein. Am Schneidebrett ({{food/f_cutting_board}}) brauchst du ein Messer in der Hand, aus sieben Kuchenstücken wird an der Werkbank wieder ein ganzer Kuchen."
+  ],
+  "en": [
+   "Any egg from #c:eggs works. At the cutting board ({{food/f_cutting_board}}) you need a knife in hand, and seven slices craft back into a whole cake."
+  ],
+  "sources": [
+   "farmersdelight:cutting/cake (7 cake slices)",
+   "farmersdelight:cake_from_slices"
+  ]
+ },
+ "pot": {
+  "de": [
+   "Das Rezept braucht **fünf** Terrakotta, nicht vier: zwei oben, zwei neben dem Blumentopf, eine unten in der Mitte. Gefärbte Terrakotta gibt farbige Töpfe.",
+   "Zuckerrohr wächst übrigens auf Sand oder Erde, Kaktus nur auf Sand. Weiter geht es mit dem Trichter-Topf ({{cooking/hopper_pot}}) und den Böden ({{cooking/soil}})."
+  ],
+  "en": [
+   "The recipe takes **five** terracotta, not four: two on top, two beside the flower pot, one bottom centre. Dyed terracotta gives coloured pots.",
+   "Sugar cane grows on sand or dirt, cactus only on sand. Next come the hopper pot ({{cooking/hopper_pot}}) and the soils ({{cooking/soil}})."
+  ],
+  "sources": [
+   "botanypots:botanypots/crafting/terracotta_botany_pot (pattern \"M M\", \"MPM\", \" M \")",
+   "botanypots jar: data/botanypots/recipe/minecraft/crop/sugar_cane.json (sand or dirt), cactus.json (sand)"
+  ]
+ },
+ "hopper_pot": {
+  "de": [
+   "Schneller geht es gleich beim Töpfern: Trichter oben in die Mitte, dazu fünf Terrakotta und ein Blumentopf. Vier Trichter-Töpfe kosten dich vier Trichter, die Belohnung gibt zwei zurück.",
+   "Stell sie direkt auf eine Küchentheke, dann füllt sich die Küche von selbst ({{cooking/auto_counter}})."
+  ],
+  "en": [
+   "It is quicker to build it straight away: hopper in the top centre, plus five terracotta and a flower pot. Four hopper pots cost four hoppers, the reward gives two back.",
+   "Put them right on a kitchen counter and the kitchen fills itself ({{cooking/auto_counter}})."
+  ],
+  "sources": [
+   "botanypots:botanypots/crafting/terracotta_hopper_botany_pot_quick (MHM/MPM/ M )",
+   "botanypots:botanypots/crafting/terracotta_hopper_botany_pot (shapeless)"
+  ]
+ },
+ "soil": {
+  "de": [
+   "Reichhaltige Erde machst du aus Organischem Kompost ({{food/f_rich_soil}}). Im Topf bringt sie 10 Prozent, Organischer Kompost ebenfalls 10, umgegrabene Reichhaltige Erde 15 Prozent.",
+   "Ein Trick ohne Farmer's Delight: Rechtsklick mit einer Hacke auf Erde im Topf macht Ackerboden daraus, und der wächst genauso 10 Prozent schneller. Effizienz bringt 5 Prozent pro Stufe, Knochenmehl 400 bis 600 Ticks auf einmal."
+  ],
+  "en": [
+   "Make rich soil from organic compost ({{food/f_rich_soil}}). In a pot it gives 10 percent, organic compost also 10, tilled rich soil 15 percent.",
+   "A trick without Farmer's Delight: right click dirt in a pot with a hoe and it becomes farmland, which also grows 10 percent faster. Efficiency gives 5 percent per level, bone meal 400 to 600 ticks at once."
+  ],
+  "sources": [
+   "botanypots jar: recipe/farmersdelight/soil/rich_soil.json (0.10), organic_compost.json (0.10), rich_soil_farmland.json (0.15)",
+   "botanypots jar: recipe/minecraft/soil/farmland.json (0.10), interaction/till_farmland.json, fertilizer/bone_meal.json (400 to 600)",
+   "config/botanypots.json (efficiency_growth_modifier 0.05, damage_harvest_tool true)"
+  ]
+ },
+ "trees": {
+  "de": [
+   "Ein Eichenbaum im Topf braucht 2 400 Ticks und gibt 1 bis 4 Stämme, Blätter (1 bis 3) nur mit Schere im Werkzeugplatz. Für 32 Stämme lohnen sich also vier Trichter-Töpfe nebeneinander.",
+   "Auch die Setzlinge von Productive Trees wachsen im Topf, die Buche gibt dort zum Beispiel 2 Stämme und 3 Bucheckern pro Ernte ({{productive_trees/pots}})."
+  ],
+  "en": [
+   "An oak in a pot takes 2,400 ticks and gives 1 to 4 logs, and leaves (1 to 3) only with shears in the tool slot. For 32 logs, four hopper pots side by side are worth it.",
+   "The Productive Trees saplings grow in pots too: the beech gives 2 logs and 3 beechnuts per harvest there ({{productive_trees/pots}})."
+  ],
+  "sources": [
+   "botanytrees jar: recipe/minecraft/oak.json (grow_time 2400)",
+   "botanytrees jar: loot_table/tree_drops/minecraft/oak.json",
+   "productivetrees jar: recipe/botanypots/beech.json"
+  ]
+ },
+ "auto_counter": {
+  "de": [
+   "Ein Trichter-Topf gibt seine Ernte nach unten ab, eine Küchentheke direkt darunter nimmt sie an. Gute Kandidaten sind Weizen, Karotten, Kartoffeln und die Farmer's Delight Pflanzen Tomate, Weißkohl und Zwiebel.",
+   "Hak die Quest ab, sobald die erste Theke sich füllt. Zucker und Beeren kommen in {{cooking/pot_sweets}} dazu."
+  ],
+  "en": [
+   "A hopper pot drops its harvest downwards, and a kitchen counter right below takes it. Good picks are wheat, carrots, potatoes and the Farmer's Delight crops tomato, cabbage and onion.",
+   "Tick the quest off once the first counter fills. Sugar and berries follow in {{cooking/pot_sweets}}."
+  ],
+  "sources": [
+   "botanypots: hopper pot",
+   "cookingforblockheads:counter"
+  ],
+  "client": [
+   "that a hopper pot outputs into a kitchen counter below it"
+  ]
+ },
+ "pot_sweets": {
+  "de": [
+   "Zuckerrohr wächst im Topf auf Sand oder Erde, nicht nur auf Sand. Süßbeeren wachsen als Busch im Topf, Leuchtbeeren als Höhlenranke.",
+   "Mit einem Trichter-Topf über einer Truhe oder Theke sind die 32 Stück schnell da. Die Süßbeeren brauchst du für {{cooking/m_ham}} und {{cooking/m_salmon}}, die Leuchtbeeren für {{cooking/m_gleaming}}."
+  ],
+  "en": [
+   "Sugar cane grows in a pot on sand or dirt, not only on sand. Sweet berries grow as a bush in the pot, glow berries as cave vines.",
+   "With a hopper pot over a chest or counter the 32 come quickly. You need the sweet berries for {{cooking/m_ham}} and {{cooking/m_salmon}}, the glow berries for {{cooking/m_gleaming}}."
+  ],
+  "sources": [
+   "botanypots jar: recipe/minecraft/crop/sugar_cane.json, sweet_berry_bush.json, cave_vines.json"
+  ]
+ },
+ "sawmill": {
+  "de": [
+   "Das Sägewerk sägt jeden Stamm, auch die vielen Holzarten von Productive Trees. Acht [[productivetrees:sawdust]] um einen Wassereimer (oder eine Wasserflasche) ergeben zwei Papier.",
+   "Die Andesitlegierung mischst du in {{create/andesite_alloy}}. Mehr zum Sägewerk steht in {{productive_trees/sawmill_run}}, der Entrinder in {{productive_trees/stripper}}."
+  ],
+  "en": [
+   "The sawmill cuts every log, including the many Productive Trees woods. Eight [[productivetrees:sawdust]] around a water bucket (or a water bottle) make two paper.",
+   "Mix the andesite alloy in {{create/andesite_alloy}}. More on the sawmill is in {{productive_trees/sawmill_run}}, the stripper in {{productive_trees/stripper}}."
+  ],
+  "sources": [
+   "productivetrees:sawmill (kubejs/server_scripts/kronwerke/links.js: iron swapped for andesite alloy)",
+   "productivetrees jar: recipe/sawmill/oak_planks_from_log.json (6 planks, 2 sawdust)",
+   "productivetrees jar: recipe/sawdust_to_paper.json, sawdust_to_paper_water_bottle.json, guide_book.json"
+  ]
+ },
+ "bees": {
+  "de": [
+   "Eiche mit Birke hat zwei Ergebnisse, Buche (50 Prozent) und Silberlinde (55 Prozent). Die Buche gibt es aber auch ohne Kreuzen: Der Markt verkauft den [[productivetrees:beech_sapling]] für einen Smaragd ({{food/f_market}}).",
+   "Den Weg über den Markt beschreibt {{productive_trees/market}}. Pollen von Hand ohne Bienen bringt {{cooking/sifter}}."
+  ],
+  "en": [
+   "Oak with birch has two results, beech (50 percent) and silver lime (55 percent). You can also skip the breeding: the market sells the [[productivetrees:beech_sapling]] for one emerald ({{food/f_market}}).",
+   "{{productive_trees/market}} describes the market route. Pollen by hand, without bees, comes in {{cooking/sifter}}."
+  ],
+  "sources": [
+   "productivetrees jar: recipe/pollination/beech.json (0.5), silver_lime.json (0.55)",
+   "kronwerke:market/productivetrees/beech_sapling (preset productivetrees_saplings_1)",
+   "kubejs/data/kronwerke/market_presets/productivetrees_saplings_1.json (1 emerald)"
+  ],
+  "client": [
+   "how a bee pollinates leaves (range, flowers)"
+  ]
+ },
+ "sifter": {
+  "de": [
+   "Der Klebrige Kolben ist ein Kolben mit einem Schleimball, den [[minecraft:brush]] baust du aus Feder, Kupferbarren und Stock. Den Pinsel bekommst du als Belohnung zurück.",
+   "Wie Pollen und Blatt zusammenkommen, zeigt {{productive_trees/pollen}}."
+  ],
+  "en": [
+   "The sticky piston is a piston plus a slimeball, the [[minecraft:brush]] is a feather, a copper ingot and a stick. The reward gives you the brush back.",
+   "{{productive_trees/pollen}} shows how pollen and leaf come together."
+  ],
+  "sources": [
+   "kronwerke:added/pollen_sifter (kubejs/server_scripts/kronwerke/added.js)",
+   "productivetrees jar: recipe/pollen_sifter.json (condition: not productivebees)"
+  ]
+ },
+ "nuts": {
+  "de": [
+   "Am schnellsten geht es mit einem [[productivetrees:beech_sapling]] vom Markt im Trichter-Topf: Er gibt alle 2 400 Ticks drei [[productivetrees:beechnut]] und zwei Stämme.",
+   "Im Räucherofen ist eine Buchecker nach 20 Ticks geröstet, im Ofen nach 120. Mit dem Lüfter röstest du ganze Stapel ({{productive_trees/fan_roast}})."
+  ],
+  "en": [
+   "The fastest way is a [[productivetrees:beech_sapling]] from the market in a hopper pot: every 2,400 ticks it gives three [[productivetrees:beechnut]] and two logs.",
+   "In a smoker a beechnut roasts in 20 ticks, in a furnace in 120. An encased fan roasts whole stacks ({{productive_trees/fan_roast}})."
+  ],
+  "sources": [
+   "productivetrees jar: recipe/botanypots/beech.json",
+   "productivetrees:roasting/roasted_beechnut_smoking (20)",
+   "productivetrees:roasting/roasted_beechnut_smelting (120)",
+   "kronwerke:market/productivetrees/beech_sapling"
+  ]
+ },
+ "hybrids": {
+  "de": [
+   "Der Markt verkauft die Hybriden der Generationen 1 bis 3 für einen, zwei oder vier Smaragde, darunter Buche, Silberlinde, Teak, Kakao, Lärche und Red Delicious für je einen. Damit sparst du dir die ersten Kreuzungen.",
+   "Das ganze Thema hat ein eigenes Kapitel, von {{productive_trees/market}} bis zu den Fundstücken in {{productive_trees/loot_saplings}}. Bienen kommen in Stufe 2 im Kapitel Bienen ({{bees/hive}})."
+  ],
+  "en": [
+   "The market sells the hybrids of generations 1 to 3 for one, two or four emeralds, among them beech, silver lime, teak, cacao, larch and Red Delicious for one each. That saves you the first crossings.",
+   "The topic has a chapter of its own, from {{productive_trees/market}} to the loot finds in {{productive_trees/loot_saplings}}. Bees come in stage 2 in the Bees chapter ({{bees/hive}})."
+  ],
+  "sources": [
+   "docs/RECIPES.md (Farming for Blockheads market)",
+   "kubejs/data/kronwerke/recipe/market/productivetrees (presets saplings_1 to 3)",
+   "kubejs/data/kronwerke/market_presets/productivetrees_saplings_1.json"
+  ]
+ },
+ "stuffed_pumpkin": {
+  "de": [
+   "Das „weitere Gemüse“ darf alles aus #c:foods/vegetable sein, nur keine Melonenscheibe. Reis kommt aus {{food/f_rice}}, Zwiebeln aus {{food/f_wild_onion}}, der Kochtopf steht in {{food/f_pot}}.",
+   "Der Kürbis ist der Behälter: Leg ihn in den Behälterplatz des Kochtopfs, nicht zu den Zutaten. Die Schüsseln aus der Belohnung brauchst du für die Portionen."
+  ],
+  "en": [
+   "The \"other vegetable\" can be anything from #c:foods/vegetable, except a melon slice. Rice comes from {{food/f_rice}}, onions from {{food/f_wild_onion}}, the cooking pot is in {{food/f_pot}}.",
+   "The pumpkin is the container: put it in the cooking pot's container slot, not with the ingredients. You need the reward bowls for the servings."
+  ],
+  "sources": [
+   "farmersdelight:cooking/stuffed_pumpkin_block (container pumpkin, vegetable minus melon_slice, cookingtime 400)"
+  ]
+ },
+ "m_noodles": {
+  "de": [
+   "[[farmersdelight:raw_pasta]] schneidest du mit dem Messer aus Teig ({{food/f_dough}}). Auch hier zählt die Melonenscheibe nicht als Gemüse, jeder Pilz aus #c:mushrooms geht."
+  ],
+  "en": [
+   "Cut [[farmersdelight:raw_pasta]] from dough with a knife ({{food/f_dough}}). Here too a melon slice does not count as a vegetable, any mushroom from #c:mushrooms works."
+  ],
+  "sources": [
+   "farmersdelight:cooking/vegetable_noodles",
+   "farmersdelight:cutting/tag_dough"
+  ]
+ },
+ "m_squid": {
+  "de": [
+   "Der Tintenbeutel kommt von Tintenfischen. Der Fisch muss roh sein, gebratener Fisch geht nicht. Die Nudeln schneidest du wie bei {{cooking/m_noodles}} aus Teig."
+  ],
+  "en": [
+   "The ink sac drops from squids. The fish must be raw, cooked fish does not work. Cut the pasta from dough as in {{cooking/m_noodles}}."
+  ],
+  "sources": [
+   "farmersdelight:cooking/squid_ink_pasta (#c:foods/safe_raw_fish)"
+  ]
+ },
+ "m_pumpkin": {
+  "de": [
+   "Jede Milch aus #c:drinks/milk zählt, also auch Milch aus dem Milchglas, wenn der Kochtisch kocht ({{cooking/cow}}). Einen Kürbis zerschneidest du am Schneidebrett ({{food/f_cutting_board}}) in Scheiben, die vier Kürbisse aus der Belohnung reichen für viele Suppen."
+  ],
+  "en": [
+   "Any milk from #c:drinks/milk counts, including milk from the milk jar when the cooking table cooks ({{cooking/cow}}). Slice a pumpkin at the cutting board ({{food/f_cutting_board}}), and the four reward pumpkins last for many soups."
+  ],
+  "sources": [
+   "farmersdelight:cooking/pumpkin_soup"
+  ]
+ },
+ "m_noodle_soup": {
+  "de": [
+   "Getrockneten Seetang brätst du aus Seetang im Ofen. Mit dem Kochtisch an der Küche ziehst du Ei und Schweinefleisch direkt aus den Theken."
+  ],
+  "en": [
+   "Dried kelp is kelp smelted in a furnace. With the cooking table at the kitchen, egg and pork come straight from the counters."
+  ],
+  "sources": [
+   "farmersdelight:cooking/noodle_soup"
+  ]
+ },
+ "m_cod": {
+  "de": [
+   "Alle vier Zutaten wachsen oder schwimmen in Stufe 1: Kabeljau aus dem Meer oder der Angel ({{food/f_rod}}), Tomaten aus {{food/f_wild}}. Die acht Kabeljau aus der Belohnung reichen für zwei weitere Runden."
+  ],
+  "en": [
+   "All four ingredients are stage 1: cod from the sea or a fishing rod ({{food/f_rod}}), tomatoes from {{food/f_wild}}. The eight reward cod cover two more rounds."
+  ],
+  "sources": [
+   "farmersdelight:cooking/baked_cod_stew"
+  ]
+ },
+ "m_mutton": {
+  "de": [
+   "Am schnellsten schneidest du **gebratenes** Hammelfleisch am Schneidebrett: Das gibt direkt zwei gebratene Koteletts, ohne zweiten Gang in den Ofen. Den Reis kochst du in {{food/f_rice_cooked}}."
+  ],
+  "en": [
+   "The fastest way is to cut **cooked** mutton at the cutting board: it gives two cooked chops straight away, with no second trip to the furnace. Cook the rice in {{food/f_rice_cooked}}."
+  ],
+  "sources": [
+   "farmersdelight:cutting/cooked_mutton (2 cooked mutton chops)",
+   "farmersdelight:roasted_mutton_chops"
+  ]
+ },
+ "m_salmon": {
+  "de": [
+   "Gebratenen Lachs bekommst du im Ofen, Räucherofen oder auf dem Lagerfeuer. Weißkohl kommt aus {{food/f_wild_cabbage}}, die Süßbeeren aus dem Topf ({{cooking/pot_sweets}})."
+  ],
+  "en": [
+   "Cooked salmon comes from a furnace, smoker or campfire. Cabbage comes from {{food/f_wild_cabbage}}, the sweet berries from a pot ({{cooking/pot_sweets}})."
+  ],
+  "sources": [
+   "farmersdelight:grilled_salmon (#c:foods/cooked_salmon)"
+  ]
+ },
+ "m_shepherd": {
+  "de": [
+   "Die Quest will vier Portionen, nicht den Block: Stell den [[farmersdelight:shepherds_pie_block]] ab und hol mit Schüsseln vier Teller heraus. Die Milchflasche ist jede Milch aus #c:drinks/milk, ein Milcheimer geht also auch."
+  ],
+  "en": [
+   "The quest wants four servings, not the block: place the [[farmersdelight:shepherds_pie_block]] and take four plates out with bowls. The milk can be any milk from #c:drinks/milk, so a milk bucket works too."
+  ],
+  "sources": [
+   "farmersdelight:shepherds_pie_block (2 baked potato, milk, 3 cooked mutton, 2 onion, bowl)"
+  ],
+  "client": [
+   "how many servings one shepherd's pie block gives"
+  ]
+ },
+ "m_ham": {
+  "de": [
+   "Den Schinken lässt ein Schwein oder Hoglin fallen, das du mit einem Messer tötest ({{food/f_ham}}). Räuchern geht **nur im Räucherofen**, es gibt kein Lagerfeuer- und kein Ofenrezept.",
+   "Die Quest will vier Portionen: Stell den [[farmersdelight:honey_glazed_ham_block]] ab und hol sie mit Schüsseln heraus."
+  ],
+  "en": [
+   "Ham drops from a pig or hoglin you kill with a knife ({{food/f_ham}}). Smoking works **only in a smoker**, there is no campfire or furnace recipe.",
+   "The quest wants four servings: place the [[farmersdelight:honey_glazed_ham_block]] and take them out with bowls."
+  ],
+  "sources": [
+   "farmersdelight:smoked_ham (minecraft:smoking only)",
+   "farmersdelight jar: loot_modifiers/scavenging_ham_from_pig.json, scavenging_ham_from_hoglin.json",
+   "farmersdelight:honey_glazed_ham_block"
+  ]
+ },
+ "m_gleaming": {
+  "de": [
+   "Die Goldene Karotte ist eine Karotte in acht Goldklumpen. Die Quest will vier Schüsseln Salat: Stell den [[farmersdelight:gleaming_salad_block]] ab und hol sie mit Schüsseln heraus. Leuchtbeeren ziehst du im Topf ({{cooking/pot_sweets}})."
+  ],
+  "en": [
+   "A golden carrot is a carrot in eight gold nuggets. The quest wants four bowls of salad: place the [[farmersdelight:gleaming_salad_block]] and take them out with bowls. Grow the glow berries in a pot ({{cooking/pot_sweets}})."
+  ],
+  "sources": [
+   "farmersdelight:gleaming_salad_block"
+  ]
+ },
+ "m_rabbit": {
+  "de": [
+   "Einfacher ist der Kochtopf: Er nimmt **rohes** Kaninchen, eine rohe Kartoffel, eine Karotte und einen braunen oder roten Pilz, mit Schüssel. An der Werkbank geht statt des Pilzes auch ein Wulstling aus Biomes O' Plenty."
+  ],
+  "en": [
+   "The cooking pot is easier: it takes **raw** rabbit, a raw potato, a carrot and a brown or red mushroom, with a bowl. At the crafting table a Biomes O' Plenty toadstool works instead of the mushroom."
+  ],
+  "sources": [
+   "farmersdelight:cooking/rabbit_stew (minecraft:rabbit, container bowl)",
+   "biomesoplenty:rabbit_stew_from_toadstool"
+  ]
+ }
+}

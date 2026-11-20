@@ -1,0 +1,600 @@
+{
+ "welcome": {
+  "de": [
+   "Das [[create:andesite_casing]] machst du wie in {{create/casing}}, den Hebel aus Stock und Bruchstein. Auf Kronwerke darf die Weiche bis zu 64 Blöcke vom Gleis entfernt stehen.",
+   "Alle Addons dieses Kapitels öffnen mit Stufe 2 (Messingwerk). Wenn du noch keinen Zug hast, fang mit {{create_trains/welcome}} an."
+  ],
+  "en": [
+   "Make the [[create:andesite_casing]] as in {{create/casing}}, the lever from a stick and cobblestone. On Kronwerke the switch may stand up to 64 blocks away from the track.",
+   "All add-ons of this chapter open with stage 2 (Brass Works). If you have no train yet, start with {{create_trains/welcome}}."
+  ],
+  "sources": [
+   "railways:crafting/track_switch_andesite (L/C/W)",
+   "config/railways-server.toml (switchPlacementRange = 64)",
+   "docs/STAGES.md (stage 2: Steam 'n' Rails)"
+  ]
+ },
+ "brass_switch": {
+  "de": [
+   "Den [[create:brass_casing]] gibt es in {{create_brass/brass_casing}}, das [[create:precision_mechanism]] in {{create_brass/precision}}. Mehr als den Messingrahmen und ein Präzisionsgetriebe kostet die Messing-Weiche nicht.",
+   "Für die Anzeigetafel brauchst du einen Anzeige-Link, wie in {{create_brass/display}}."
+  ],
+  "en": [
+   "The [[create:brass_casing]] comes from {{create_brass/brass_casing}}, the [[create:precision_mechanism]] from {{create_brass/precision}}. Beyond those two, the brass switch only costs a lever.",
+   "For the display board you need a display link, as in {{create_brass/display}}."
+  ],
+  "sources": [
+   "railways:crafting/track_switch_brass (L/C/P)"
+  ],
+  "client": [
+   "switch mode value box and switching from inside the train"
+  ]
+ },
+ "coupler": {
+  "de": [
+   "Der [[create:railway_casing]] ist der Zugrahmen aus {{create_trains/casing}}. Auf Kronwerke ist der Kuppler nicht streng eingestellt, die Drehgestelle müssen also nicht millimetergenau über den Punkten stehen.",
+   "Der Kuppler zeigt seine Wirkung erst mit zwei Zügen, also nach {{create_trains/first_train}}."
+  ],
+  "en": [
+   "The [[create:railway_casing]] is the train casing from {{create_trains/casing}}. On Kronwerke the coupler is not set to strict, so the bogeys do not have to sit exactly over the points.",
+   "The coupler only shows what it does with two trains, so after {{create_trains/first_train}}."
+  ],
+  "sources": [
+   "railways:crafting/track_coupler (=/#/T)",
+   "config/railways-server.toml (strictCoupler = false)"
+  ],
+  "client": [
+   "how far off the bogeys may be with strictCoupler = false"
+  ]
+ },
+ "semaphore": {
+  "de": [
+   "Ein Rezept gibt vier Semaphoren, im Spiel heißen sie Formsignal. Die Elektronenröhre kommt aus {{create_brass/electron_tube}}, der Zaun darf jeder Zaun sein.",
+   "Die Signale selbst, unter die du den Mast stellst, erklärt {{create_trains/signal}}."
+  ],
+  "en": [
+   "One recipe gives four semaphores. The electron tube comes from {{create_brass/electron_tube}}, and the fence can be any fence.",
+   "The signals you put the mast over are explained in {{create_trains/signal}}."
+  ],
+  "sources": [
+   "railways:crafting/semaphore (\" S \", \"FCT\", \" S \", 4)"
+  ]
+ },
+ "conductor": {
+  "de": [
+   "Die Mütze ist ein Durchgang ohne Wiederholung: Säge, dann [[create:precision_mechanism]], dann Faden. Eine fertige Mütze färbst du formlos mit Farbstoff um, ohne eine neue zu bauen.",
+   "Schaffner bedienen auf Kronwerke Knöpfe und Hebel bis 16 Blöcke weit, und du musst den Zug nicht besitzen, an den du sie bindest. Die Grundlagen stehen in {{create_trains/conductor}}."
+  ],
+  "en": [
+   "The cap takes a single pass: saw, then [[create:precision_mechanism]], then string. Recolour a finished cap with dye, shapeless, instead of building a new one.",
+   "On Kronwerke conductors work buttons and levers up to 16 blocks away, and you do not have to own the train you bind them to. The basics are in {{create_trains/conductor}}."
+  ],
+  "sources": [
+   "railways:sequenced_assembly/white_conductor_cap (cutting, deploying precision mechanism, deploying string)",
+   "railways:dying_existing_cap_white",
+   "config/railways-server.toml (activationDistance = 16, mustOwnBoundTrain = false)"
+  ]
+ },
+ "whistle": {
+  "de": [
+   "Den Messingklumpen craftest du aus einem Messingbarren. Das Fernobjektiv braucht ein Enderauge, also Enderperle und Lohenstaub aus dem Nether ({{create_brass/blaze_powder}}).",
+   "Beide Werkzeuge sind formlose Rezepte."
+  ],
+  "en": [
+   "Craft the brass nugget from a brass ingot. The remote lens needs an eye of ender, so an ender pearl and blaze powder from the Nether ({{create_brass/blaze_powder}}).",
+   "Both tools are shapeless recipes."
+  ],
+  "sources": [
+   "railways:crafting/conductor_whistle (copper ingot, brass nugget)",
+   "railways:crafting/remote_lens (precision mechanism, eye of ender, brass sheet)"
+  ],
+  "client": [
+   "whistle and remote lens behaviour"
+  ]
+ },
+ "fuel": {
+  "de": [
+   "Das [[create:sturdy_sheet]] machst du in {{create_trains/sturdy_sheet}}. Auf Kronwerke sind die Treibstofftanks realistisch eingestellt: Sie nehmen nur Brennstoff, keine anderen Flüssigkeiten.",
+   "Die 40 und 20 Blöcke pro Sekunde stehen so in der Create-Konfiguration des Servers. Biodiesel für den Tank kommt aus {{create_addons/biodiesel}}."
+  ],
+  "en": [
+   "Make the [[create:sturdy_sheet]] in {{create_trains/sturdy_sheet}}. On Kronwerke fuel tanks are set to realistic: they only take fuel, no other fluids.",
+   "The 40 and 20 blocks per second are what the server's Create config says. Biodiesel for the tank comes from {{create_addons/biodiesel}}."
+  ],
+  "sources": [
+   "railways:crafting/fuel_tank (S/F/S)",
+   "railways:crafting/portable_fuel_interface",
+   "config/railways-server.toml (realisticFuelTanks = true, realisticTrains = false)",
+   "config/create-server.toml (trainTopSpeed 28, poweredTrainTopSpeed 40, poweredTrainTurningTopSpeed 20)"
+  ]
+ },
+ "bogeys": {
+  "de": [
+   "Acht [[railways:riveted_locometal]] kosten genau einen Eisenblock im Steinschneider, jeder Block aus #c:storage_blocks/iron geht. Der [[railways:smokestack_streamlined]] ist ein Lagerfeuer zwischen zwei Eisenblechen.",
+   "Die anderen Locometal-Formen schneidest du aus demselben Eisenblock, im Steinschneider wählst du die Form."
+  ],
+  "en": [
+   "Eight [[railways:riveted_locometal]] cost exactly one iron block in the stonecutter, any block from #c:storage_blocks/iron works. The [[railways:smokestack_streamlined]] is a campfire between two iron sheets.",
+   "The other locometal shapes come from the same iron block, you pick the shape in the stonecutter."
+  ],
+  "sources": [
+   "railways:stonecutting/riveted_locometal (8)",
+   "railways:crafting/smokestack_streamlined (#+#)"
+  ],
+  "client": [
+   "bogey menu key (Alt) and variant cycling"
+  ]
+ },
+ "tracks": {
+  "de": [
+   "Im Spiel heißt das Teil, das das zweite Einsatzgerät setzt, [[create:metal_bracket]]. Ein Durchgang ohne Wiederholung, Ergebnis sechs [[railways:track_monorail]] pro Träger, für 12 Gleise also zwei [[create:metal_girder]].",
+   "Phantomgleise entstehen ebenfalls durch sequenzielle Montage: Phantomhaut aufs Band, zweimal Eisen einsetzen, pressen, 32 Stück. Phantomhaut lassen Phantome fallen."
+  ],
+  "en": [
+   "The part the second deployer places is called [[create:metal_bracket]] in the game. One pass, no repeats, six [[railways:track_monorail]] per girder, so two [[create:metal_girder]] for 12 tracks.",
+   "Phantom tracks are sequenced assembly too: phantom membrane on the belt, deploy iron twice, press, 32 tracks. Phantoms drop the membrane."
+  ],
+  "sources": [
+   "railways:sequenced_assembly/track_monorail (girder, bracket, iron sheet, pressing, 6)",
+   "railways:sequenced_assembly/track_phantom (membrane, 2 iron ingots, pressing, 32)"
+  ]
+ },
+ "gearboxes": {
+  "de": [
+   "Das 6-Wege-Getriebe braucht im Raster **vier** Zahnräder, zwei große Zahnräder und ein Andesitgehäuse. Einfacher ist der formlose Weg: ein [[create:gearbox]] und zwei [[create:large_cogwheel]].",
+   "Für das Messing-Getriebe brauchst du einen Drehzahlregler ({{create_brass/speed_controller}}). Beide Getriebe erzeugen selbst keine Belastung."
+  ],
+  "en": [
+   "The 6-way gearbox takes **four** cogwheels in the grid, two large cogwheels and an andesite casing. The shapeless way is easier: one [[create:gearbox]] and two [[create:large_cogwheel]].",
+   "The brass gearbox needs a rotation speed controller ({{create_brass/speed_controller}}). Neither gearbox adds stress itself."
+  ],
+  "sources": [
+   "create_connected:crafting/kinetics/six_way_gearbox (pattern \"lc \", \"csc\", \" cl\")",
+   "create_connected:crafting/kinetics/six_way_gearbox_from_gearbox",
+   "create_connected:crafting/kinetics/brass_gearbox",
+   "config/create_connected-server.toml (brass_gearbox, six_way_gearbox impact 0)"
+  ]
+ },
+ "control_chip": {
+  "de": [
+   "Goldbleche presst du aus Goldbarren wie Eisenbleche ({{create/sheets}}). Der Ausschuss teilt sich die restlichen 20 Prozent: Redstone, Elektronenröhre, Goldblech, Goldklumpen, Eisenblech, zerkleinertes Golderz, ganz selten Quarz oder ein Kompass.",
+   "Die Linie aus {{create_brass/precision_line}} baust du dafür nur um: anderes Startblech, andere Items in den Einsatzgeräten."
+  ],
+  "en": [
+   "Press gold sheets from gold ingots like iron sheets ({{create/sheets}}). The scrap shares the other 20 percent: redstone, electron tube, golden sheet, gold nugget, iron sheet, crushed gold ore, and rarely quartz or a compass.",
+   "Just rebuild the line from {{create_brass/precision_line}}: a different starting sheet, different items in the deployers."
+  ],
+  "sources": [
+   "create_connected:sequenced_assembly/control_chip (loops 3, chances 120 of 150)"
+  ]
+ },
+ "pulse_generator": {
+  "de": [
+   "Der Funk-Sender ist eine formlos umgewandelte [[create:redstone_link]] ({{create/redstone_link}}). Auf diesem Server reichen Redstone-Verbindungen **256 Blöcke** weit, nicht 128.",
+   "Den Steuerchip dafür fertigst du in {{create_addons/control_chip}}."
+  ],
+  "en": [
+   "The linked transmitter is a [[create:redstone_link]] converted shapeless ({{create/redstone_link}}). On this server redstone links reach **256 blocks**, not 128.",
+   "Make the control chip in {{create_addons/control_chip}}."
+  ],
+  "sources": [
+   "create_connected:crafting/kinetics/sequenced_pulse_generator (EC /EBT/SSS)",
+   "create_connected:crafting/kinetics/linked_transmitter_from_conversion",
+   "config/create-server.toml (linkRange = 256)"
+  ],
+  "client": [
+   "waxing with honeycomb, program GUI"
+  ]
+ },
+ "inventory_bridge": {
+  "de": [
+   "Ein Rezept gibt zwei Zugänge, und zwei Zugänge sind eine Brücke. Für die Quest reicht also **ein** Rezept nicht: Du brauchst zwei Rezepte, zwei Zugänge behältst du, zwei werden die Brücke.",
+   "Gegenstandstresore aus {{create/vault}} sind das typische Lager dahinter."
+  ],
+  "en": [
+   "One recipe gives two ports, and two ports make one bridge. So **one** recipe is not enough for the quest: craft it twice, keep two ports and turn two into the bridge.",
+   "Item vaults from {{create/vault}} are the usual storage behind them."
+  ],
+  "sources": [
+   "create_connected:crafting/kinetics/inventory_access_port (B/C/E, 2)",
+   "create_connected:crafting/kinetics/inventory_bridge (2 ports)"
+  ]
+ },
+ "kinetic_bridge": {
+  "de": [
+   "Den [[create_connected:shear_pin]] sägst du aus einer Welle in der Mechanischen Säge, für die Quest also zwei Wellen. Kupplung und Welle kommen aus {{create/clutch_gearshift}}.",
+   "Weiter geht es mit Bremse und Kupplungen in {{create_addons/clutches}}."
+  ],
+  "en": [
+   "Saw the [[create_connected:shear_pin]] from a shaft in a mechanical saw, so two shafts for the quest. Clutch and shaft come from {{create/clutch_gearshift}}.",
+   "Brake and clutches follow in {{create_addons/clutches}}."
+  ],
+  "sources": [
+   "create:cutting/shaft (create_connected:shear_pin)",
+   "create_connected:crafting/kinetics/kinetic_bridge",
+   "create_connected:crafting/kinetics/overstress_clutch"
+  ]
+ },
+ "liquid_dye": {
+  "de": [
+   "Der Mixer braucht für den flüssigen Farbstoff keine Hitze, nur fürs Zurückmischen zum Item. Ein Becken mit 1 000 mB Farbstoff ergibt später über einen Ausguss einen Färbe-Katalysator ({{create_addons/bulk_fan}}).",
+   "Hak die Quest ab, sobald der erste Farbstoff im Becken ist."
+  ],
+  "en": [
+   "The mixer needs no heat for liquid dye, only for mixing it back into an item. 1,000 mB of dye later fills a dyeing catalyst through a spout ({{create_addons/bulk_fan}}).",
+   "Tick the quest off once the first dye is in the basin."
+  ],
+  "sources": [
+   "create_dragons_plus:mixing/red_dye_from_item (250 water, 250 dye)",
+   "create_dragons_plus:mixing/red_dye_from_fluid (heated)",
+   "create_connected:filling/red_fan_dyeing_catalyst_dragons_plus (1000 mB)"
+  ],
+  "client": [
+   "dyeing items, mobs and players in the fluid, concrete from dye and lava"
+  ]
+ },
+ "bulk_fan": {
+  "de": [
+   "Der [[create_connected:empty_fan_catalyst]] ist vier Messingbarren in den Ecken und vier Eisengitter dazwischen. Mit Pulverschnee-Eimer oder Sand darauf wird er zum Gefrier- oder Schleifkatalysator.",
+   "Der Schleif-Katalysator kann alles, was Schmirgelpapier poliert, über 300 Rezepte. Den Wasch-Katalysator kennst du schon aus {{create_brass/fan_catalyst}}."
+  ],
+  "en": [
+   "The [[create_connected:empty_fan_catalyst]] is four brass ingots in the corners with four iron bars between them. Apply a powder snow bucket or sand to make the freezing or sanding catalyst.",
+   "The sanding catalyst does everything sandpaper polishes, over 300 recipes. You know the washing catalyst from {{create_brass/fan_catalyst}}."
+  ],
+  "sources": [
+   "create_connected:crafting/kinetics/empty_fan_catalyst (bib/i i/bib)",
+   "create_connected:item_application/freezing_catalyst_from_empty",
+   "create_connected:item_application/sanding_catalyst_from_empty",
+   "create_dragons_plus:freezing/* (4 recipes)",
+   "create_dragons_plus:sandpaper_polishing/* (311 recipes)"
+  ]
+ },
+ "fluid_hatch": {
+  "de": [
+   "Der [[create:item_drain]] ist der Abfluss aus Create, die Luke ist er mit einem Kupferbarren dazu. Den [[create:experience_block]] (im Spiel Gehärtete Erfahrung) craftest du aus neun Erfahrungsklumpen.",
+   "Erfahrungsklumpen fallen beim Zerkleinern von Erz an ({{create_brass/ore_processing}}). Mehr zur Erfahrungslaterne steht in {{create_addons/xp_lantern}}."
+  ],
+  "en": [
+   "The [[create:item_drain]] is Create's drain, and the hatch is a drain plus a copper ingot. Craft the [[create:experience_block]] from nine experience nuggets.",
+   "Experience nuggets drop when you crush ore ({{create_brass/ore_processing}}). More on the experience lantern is in {{create_addons/xp_lantern}}."
+  ],
+  "sources": [
+   "create_dragons_plus:crafting/fluid_hatch",
+   "create_enchantment_industry:item_application/experience_hatch",
+   "create:crafting/materials/experience_block",
+   "create:crushing/raw_silver (experience_nugget 0.75)"
+  ],
+  "client": [
+   "hatch and experience hatch click behaviour"
+  ]
+ },
+ "enchanting_template": {
+  "de": [
+   "Zwei Vorlagen brauchen zwei [[create:experience_block]], also 18 Erfahrungsklumpen oder 54 mB flüssige Erfahrung. Flüssige Erfahrung liefert der Mechanische Schleifstein ({{create_brass/grindstone}}), dazu 10 mB pro Erfahrungströpfchen von Mystical Agriculture am Abfluss.",
+   "Gefüllt werden die Vorlagen im Lohen-Verzauberer ({{create_brass/blaze_enchanter}})."
+  ],
+  "en": [
+   "Two templates need two [[create:experience_block]], so 18 experience nuggets or 54 mB of liquid experience. The mechanical grindstone gives liquid experience ({{create_brass/grindstone}}), and a Mystical Agriculture experience droplet gives 10 mB at a drain.",
+   "The blaze enchanter fills the templates ({{create_brass/blaze_enchanter}})."
+  ],
+  "sources": [
+   "create_enchantment_industry:pressing/enchanting_template",
+   "create_enchantment_industry:compacting/experience_block (27 mB)",
+   "create_enchantment_industry:emptying/mysticalagriculture/experience_droplet (10 mB)",
+   "create_enchantment_industry:emptying/experience_bottle (10 mB)"
+  ]
+ },
+ "blaze_forger": {
+  "de": [
+   "Der Lohenbrenner muss ein voller sein, mit Lohe darin ({{create_brass/blaze_burner}}). Die Schmiedevorlage kopierst du in {{create_addons/blaze_template}}, damit eine für Verzauberer und Schmied reicht.",
+   "Auf Kronwerke ignoriert der Schmied die Verträglichkeit von Verzauberungen, er vereint also auch Paare, die sich am Amboss ausschließen."
+  ],
+  "en": [
+   "The blaze burner must be a full one, with a blaze inside ({{create_brass/blaze_burner}}). Copy the smithing template in {{create_addons/blaze_template}} so one serves the enchanter and one the forger.",
+   "On Kronwerke the forger ignores enchantment compatibility, so it also merges pairs that an anvil refuses."
+  ],
+  "sources": [
+   "create_enchantment_industry:smithing/blaze_forger",
+   "config/create_enchantment_industry-server.toml (blazeForgerFluidCapacity 4000, ignoreEnchantmentCompatibility true)"
+  ]
+ },
+ "experience_cake": {
+  "de": [
+   "Die Kuchenbasis wird verdichtet, nicht gepresst: Ei, Zucker und Lapis ins Becken unter der Presse. 1 000 mB Erfahrung sind viel, ein Mechanischer Schleifstein oder eine Erfahrungslaterne an einer Mobfarm füllt den Tank.",
+   "Ein Blitz verwandelt einen Erfahrungsblock auf Kronwerke immer in einen [[create_enchantment_industry:super_experience_block]]. Den gibt es auch aus neun Super Erfahrungsklumpen. Wird der Blitz beim Lohen-Verzauberer abgefangen, gibt es mit 50 Prozent einen Fluch der Stufe 1."
+  ],
+  "en": [
+   "The cake base is compacted, not pressed: egg, sugar and lapis go into the basin under the press. 1,000 mB of experience is a lot; a mechanical grindstone or an experience lantern at a mob farm fills the tank.",
+   "On Kronwerke lightning always turns a block of experience into a [[create_enchantment_industry:super_experience_block]]. Nine super experience nuggets make one too. If the lightning is blocked at a blaze enchanter, there is a 50 percent chance of a level 1 curse."
+  ],
+  "sources": [
+   "create_enchantment_industry:compacting/experience_cake_base",
+   "create_enchantment_industry:filling/experience_cake (1000 mB)",
+   "create_enchantment_industry:crafting/super_experience_block",
+   "config/create_enchantment_industry-server.toml (regularLightningStrikeTransformXpBlockChance 1.0, blazeEnchanterMaxSuperEnchantLevel 60, blazeEnchanterBlockedLightningCurseChance 0.5)"
+  ]
+ },
+ "infuser": {
+  "de": [
+   "Zwei Elektronenröhren ergeben formlos vier [[create:nixie_tube]], ein Rezept reicht also. Den [[create:spout]] kennst du aus {{create/spout}}. Die Apotheosis-Infusion selbst erklärt {{apotheosis/first_infusion}}.",
+   "Der Edelsteinschneider braucht Edelsteinstaub, den du in {{apotheosis/gem_dust}} gewinnst."
+  ],
+  "en": [
+   "Two electron tubes make four [[create:nixie_tube]], shapeless, so one craft is enough. The [[create:spout]] is from {{create/spout}}. {{apotheosis/first_infusion}} explains Apotheosis infusion itself.",
+   "The gem cutter needs gem dust, which you get in {{apotheosis/gem_dust}}."
+  ],
+  "sources": [
+   "create_enchantment_industry:crafting/infuser (\" - \", \" o \", \"===\")",
+   "create_enchantment_industry:crafting/gem_cutter"
+  ]
+ },
+ "spawn_fluid": {
+  "de": [
+   "Aus 500 mB Erfahrung werden 1 000 mB Spawnflüssigkeit, das reicht für zehn Mobs. Der Weg über Lohenrute und Enderperle gibt nur 250 mB pro Runde.",
+   "Den Spawner baust du in {{create_brass/spawner}}. Erfahrung pumpst du aus dem Mechanischen Schleifstein ({{create_brass/grindstone}})."
+  ],
+  "en": [
+   "500 mB of experience become 1,000 mB of spawn fluid, enough for ten mobs. The blaze rod and ender pearl route only gives 250 mB per round.",
+   "Build the spawner in {{create_brass/spawner}}. Pump experience out of the mechanical grindstone ({{create_brass/grindstone}})."
+  ],
+  "sources": [
+   "create_mechanical_spawner:spawn_fluid_enchantment_industry_experience (heated, 1000 mB)",
+   "create_mechanical_spawner:mixing/spawn_fluid_random_legacy",
+   "config/create_mechanical_spawner-server.toml (minimumSpeed 100, liquidCapacity 1000, mechanical_spawner impact 16)"
+  ]
+ },
+ "mob_fluids": {
+  "de": [
+   "Mehr Sorten: Weizensamen für Hühner, Karotte für Kaninchen, Spinnenauge für Spinnen, Schleimball für Schleime, Goldbarren für Piglins, Honigwabe für Bienen. Hexen brauchen Glasflasche, Redstone und Glowstonestaub.",
+   "Hühner, Kaninchen und Fledermäuse spawnen schneller als Zombies und Kühe, Lohen, Endermen und Dorfbewohner brauchen doppelt so lange."
+  ],
+  "en": [
+   "More kinds: wheat seeds for chickens, carrot for rabbits, spider eye for spiders, slimeball for slimes, gold ingot for piglins, honeycomb for bees. Witches need a glass bottle, redstone and glowstone dust.",
+   "Chickens, rabbits and bats spawn faster than zombies and cows; blazes, endermen and villagers take twice as long."
+  ],
+  "sources": [
+   "create_mechanical_spawner:mixing/spawn_fluid_* (100 mB random, 250 mB out)",
+   "create_mechanical_spawner:spawner/* (processingTime zombie 2500, cow 2500, chicken 1000, rabbit 1000, bat 1000, blaze 5000, enderman 5000, villager 5000)"
+  ]
+ },
+ "loot_collector": {
+  "de": [
+   "Auf Kronwerke ist der Sammler freiwillig, der Spawner läuft auch ohne. Statt eines Sammlers nimmt er auch einen Gegenstandstresor, andere Kisten nicht.",
+   "Gebaut wird er in den Mechanischen Handwerkseinheiten ({{create_brass/crafter}})."
+  ],
+  "en": [
+   "On Kronwerke the collector is optional, the spawner works without one. Instead of a collector it also takes an item vault, but no other chests.",
+   "Build it in the mechanical crafters ({{create_brass/crafter}})."
+  ],
+  "sources": [
+   "create_mechanical_spawner:loot_collector (5 x 5)",
+   "config/create_mechanical_spawner-server.toml (lootCollectorRequired false, allowCreateItemVaultForLootCollector true, allowAnyContainerForLootCollector false, lootCollectorCapacity 8)"
+  ]
+ },
+ "ethanol": {
+  "de": [
+   "Neben Zucker, Äpfeln, Kartoffeln und Zuckerrohr gären auch **Tomaten und Zwiebeln** von Farmer's Delight. Jede Gärung braucht ein Knochenmehl.",
+   "Die Lava aus Bruchstein braucht im Massenfermenter **Hitze** von unten. Für Zellstoff gehen vier beliebige Teile aus Bambus, Zuckerrohr oder Setzlingen mit 250 mB Wasser."
+  ],
+  "en": [
+   "Besides sugar, apples, potatoes and sugar cane, Farmer's Delight **tomatoes and onions** ferment too. Every fermentation takes one bone meal.",
+   "Lava from cobblestone needs **heat** below the bulk fermenter. For pulp, any four of bamboo, sugar cane or saplings go in with 250 mB of water."
+  ],
+  "sources": [
+   "createdieselgenerators:basin_fermenting/fermentable (200 mB)",
+   "createdieselgenerators:bulk_fermenting/fermentable (400 mB)",
+   "createdieselgenerators:bulk_fermenting/lava (heated, 50 mB)",
+   "createdieselgenerators:bulk_fermenting/pulp",
+   "createdieselgenerators jar: data/createdieselgenerators/tags/item/fermentable.json"
+  ]
+ },
+ "biodiesel": {
+  "de": [
+   "Pflanzenöl verdichtet die Presse aus jedem Samen aus #c:seeds, also auch Kürbis- und Melonenkernen. Auf Kronwerke lässt sich der Kanister am Ausguss füllen.",
+   "Pflanzenöl allein brennt im Dieselmotor auch, aber nur mit 74 RPM und 2 048 SU."
+  ],
+  "en": [
+   "The press compacts plant oil from any seed in #c:seeds, including pumpkin and melon seeds. On Kronwerke the canister can be filled at a spout.",
+   "Plant oil alone also burns in a diesel engine, but only at 74 RPM and 2,048 SU."
+  ],
+  "sources": [
+   "createdieselgenerators:mixing/biodiesel",
+   "createdieselgenerators jar: recipe/compacting/plant_oil.json (#c:seeds, 100 mB)",
+   "createdieselgenerators jar: fuel_type/plantoil.json",
+   "config/createdieselgenerators-server.toml (Canister can be filled by spouts = true)",
+   "createaddition:liquid_burning/biodiesel (24000 ticks)"
+  ]
+ },
+ "diesel_engine": {
+  "de": [
+   "Den Einfachen Steuerschaltkreis infundierst du in {{mekanism/circuit}}, Mekanism öffnet ebenfalls in Stufe 2. Ein Messingblock sind neun Messingbarren.",
+   "Mit dem Turbolader läuft der Motor mit 192 RPM bei gleichem Verbrauch. Zum Vergleich: Ethanol bringt 2 048 SU, Pflanzenöl 2 048 SU bei nur 74 RPM."
+  ],
+  "en": [
+   "Infuse the basic control circuit in {{mekanism/circuit}}; Mekanism opens in stage 2 as well. A brass block is nine brass ingots.",
+   "With the turbocharger the engine runs at 192 RPM for the same fuel. For comparison, ethanol gives 2,048 SU, plant oil 2,048 SU at only 74 RPM."
+  ],
+  "sources": [
+   "createdieselgenerators:crafting/diesel_engine (kubejs links.js: flint and steel swapped for mekanism:basic_control_circuit)",
+   "createdieselgenerators jar: fuel_type/biodiesel.json, diesel.json, ethanol.json, plantoil.json (burn_rate 0.05 per tick)",
+   "config/createdieselgenerators-server.toml (Turbocharged Speed Multiplier 2.0, Burn Rate Multiplier 1.0, Engines filled with a bucket = false)"
+  ]
+ },
+ "modular_engine": {
+  "de": [
+   "Jeder Motor im Stapel verbraucht **1 mB pro Sekunde**, nicht einen Liter: Vier Motoren brauchen also 4 mB pro Sekunde, ein Eimer Biodiesel hält für vier etwa vier Minuten.",
+   "Mit Ethanol schafft ein modularer Motor 3 072 SU. Für die Quest brauchst du zwei Dieselmotoren als Zutat."
+  ],
+  "en": [
+   "Each engine in the stack burns **1 mB per second**, not a litre: four engines use 4 mB per second, so a bucket of biodiesel lasts four of them about four minutes.",
+   "On ethanol a modular engine gives 3,072 SU. The quest needs two diesel engines as ingredients."
+  ],
+  "sources": [
+   "createdieselgenerators:crafting/large_diesel_engine",
+   "createdieselgenerators jar: fuel_type/biodiesel.json (modular 6144, burn_rate 0.05), ethanol.json (modular 3072)"
+  ],
+  "client": [
+   "stacking behaviour of modular engines"
+  ]
+ },
+ "oil_scanner": {
+  "de": [
+   "Der Scanner selbst ist Stufe 2, alles zum Fördern und Destillieren öffnet erst in Stufe 3. Auf Kronwerke ist die Ölmenge pro Chunk erhöht: normale Ölchunks 1,3 mal, ergiebige 2 mal so viel wie üblich."
+  ],
+  "en": [
+   "The scanner itself is stage 2, everything for pumping and distilling opens only in stage 3. On Kronwerke the oil per chunk is raised: normal oil chunks 1.3 times, rich ones 2 times the usual amount."
+  ],
+  "sources": [
+   "createdieselgenerators jar: recipe/crafting/oil_scanner.json",
+   "createdieselgenerators:distillation/crude_oil (50/50), superheated_crude_oil (75/75)",
+   "config/createdieselgenerators-server.toml (Normal oil chunks multiplier 1.3, High oil chunks multiplier 2.0)"
+  ]
+ },
+ "ore_excavation": {
+  "de": [
+   "Der Eisenbohrer ist zwei Eisenblöcke und fünf Eisenbarren, die Bohrmaschine kostet dazu einen Messingtunnel, einen Ausguss und einen Messingblock. Kohle fördert sie alle 200 Ticks, Kupfer, Zink und Gold alle 600.",
+   "Die 4 000 Stahlbarren gelten für 30 aktive Spieler, das Ziel wird zu Beginn der Stufe an die Spielerzahl angepasst."
+  ],
+  "en": [
+   "The iron drill is two iron blocks and five iron ingots; the drilling machine also costs a brass tunnel, a spout and a brass block. It mines coal every 200 ticks, copper, zinc and gold every 600.",
+   "The 4,000 steel ingots assume 30 active players; the goal is scaled to the player count when the stage opens."
+  ],
+  "sources": [
+   "createoreexcavation:drill",
+   "createoreexcavation:drilling_machine",
+   "createoreexcavation:drilling/coal (200), iron (600, 256 SU), copper, zinc, gold (600)",
+   "config/createoreexcavation-server.toml (defaultInfinite true)",
+   "config/kronwerke/goals.json (stage3 #c:ingots/steel base 4000)",
+   "docs/STAGES.md (rule 4, scaling)"
+  ]
+ },
+ "jetpack": {
+  "de": [
+   "Den Kupfer-Rückentank baust du schon in {{create/diving}}. Auf Kronwerke hat das Jetpack keine Höhengrenze über dem Boden."
+  ],
+  "en": [
+   "You build the copper backtank already in {{create/diving}}. On Kronwerke the jetpack has no height limit above the ground."
+  ],
+  "sources": [
+   "config/create_jetpack-common.toml (seconds_per_tank 450, seconds_per_tank_hover 900, heightAboveGroundLimit -1)",
+   "create_jetpack:jetpack (stage 4)"
+  ]
+ },
+ "kinetic_battery": {
+  "de": [
+   "Ein Rezept gibt acht Batterien. Beim Laden belastet eine Batterie das Netz mit 64 SU pro RPM, entladen dreht sie mit 64 RPM und liefert 32 SU pro RPM, also 2 048 SU.",
+   "Abbauen, laden lassen und woanders aufstellen: so trägst du Rotation an Orte ohne Wasserrad."
+  ],
+  "en": [
+   "One recipe gives eight batteries. While charging a battery puts 64 SU per RPM on the network; discharging, it turns at 64 RPM and gives 32 SU per RPM, so 2,048 SU.",
+   "Break it, carry it charged and place it elsewhere: that is how you bring rotation to places without a water wheel."
+  ],
+  "sources": [
+   "create_connected:crafting/kinetics/kinetic_battery (8)",
+   "config/create_connected-server.toml (batteryDischargeRPM 64, kinetic_battery impact 64, capacity 32, batteryCapacity 512)"
+  ],
+  "client": [
+   "charging and discharging numbers in the goggles"
+  ]
+ },
+ "clutches": {
+  "de": [
+   "Auf Kronwerke bremst die aktive Bremse mit 16 384 SU, das bringt fast jedes Netz zum Stehen. Ohne Signal belasten alle drei das Netz gar nicht.",
+   "Den Tachometer für die Zentrifugal Kupplung baust du in {{create/speedometer}}."
+  ],
+  "en": [
+   "On Kronwerke an active brake puts 16,384 SU of stress on the network, which stops almost any network. Without a signal none of the three add stress.",
+   "Build the speedometer for the centrifugal clutch in {{create/speedometer}}."
+  ],
+  "sources": [
+   "create_connected:crafting/kinetics/brake, centrifugal_clutch, freewheel_clutch",
+   "config/create_connected-server.toml (brakeActiveStress 16384, brake, centrifugal_clutch, freewheel_clutch impact 0)"
+  ]
+ },
+ "silo": {
+  "de": [
+   "Silo und Gefäß tauschst du formlos gegen Gegenstandstresor und Flüssigkeitstank, in beide Richtungen. Als Kessel liefert das Gefäß auf Kronwerke 0,8125 mal die Leistung, mit halber Hitze und höchstens Stufe 18."
+  ],
+  "en": [
+   "Swap silo and vessel shapeless for an item vault and a fluid tank, in both directions. As a boiler the vessel gives 0.8125 times the output on Kronwerke, with half the heat and at most level 18."
+  ],
+  "sources": [
+   "create_connected:crafting/kinetics/item_silo (BCB), item_silo_from_conversion",
+   "create_connected:crafting/kinetics/fluid_vessel (BCB), fluid_vessel_from_conversion",
+   "config/create_connected-server.toml (vesselBoilerStressMultiplier 0.8125, vesselHeatMultiplier 0.5, vesselMaxLevel 18)"
+  ]
+ },
+ "blaze_template": {
+  "de": [
+   "Die Vorlage findest du in Bastionen (Schatzkammer, Brücke, Hoglinstall, übrige Truhen) und in Netherfestungen. Mit Netherrack und sieben [[minecraft:blaze_rod]] wird aus einer Vorlage jedes Mal zwei.",
+   "Die Lohenruten liefert dir später ein Spawner ({{create_addons/blaze_fluid}})."
+  ],
+  "en": [
+   "You find the template in bastions (treasure room, bridge, hoglin stable, other chests) and in Nether fortresses. With netherrack and seven [[minecraft:blaze_rod]] one template becomes two every time.",
+   "Later a spawner supplies the blaze rods ({{create_addons/blaze_fluid}})."
+  ],
+  "sources": [
+   "create_dragons_plus:crafting/blaze_upgrade_smithing_template (btb/bnb/bbb, 2)",
+   "CreateDragonsPlus jar: CDPLoots$TableInjections (BASTION_TREASURE, BASTION_OTHER, BASTION_BRIDGE, BASTION_HOGLIN_STABLE, NETHER_BRIDGE)"
+  ]
+ },
+ "xp_lantern": {
+  "de": [
+   "Auf Kronwerke zieht die Laterne Kugeln aus bis zu 10 Blöcken heran und fasst 1 000 mB. Pump sie mit einem Rohr leer, sonst ist sie schnell voll."
+  ],
+  "en": [
+   "On Kronwerke the lantern pulls orbs from up to 10 blocks and holds 1,000 mB. Pump it empty with a pipe, or it fills up fast."
+  ],
+  "sources": [
+   "create_enchantment_industry:crafting/experience_lantern (a/s/c)",
+   "config/create_enchantment_industry-server.toml (experienceLanternFluidCapacity 1000, experienceLanternPullRadius 10)"
+  ],
+  "client": [
+   "whether a pipe can drain the lantern"
+  ]
+ },
+ "blaze_fluid": {
+  "de": [
+   "Pro Runde wird aus 100 mB zufälliger Spawnflüssigkeit und einer Lohenrute 250 mB, genug für zwei Lohen und ein bisschen. Den Mixer heizt ein Lohenbrenner oder der Brenner aus {{create_addons/burner}}."
+  ],
+  "en": [
+   "Each round turns 100 mB of random spawn fluid and one blaze rod into 250 mB, enough for two blazes and a bit. Heat the mixer with a blaze burner or the burner from {{create_addons/burner}}."
+  ],
+  "sources": [
+   "create_mechanical_spawner:mixing/spawn_fluid_blaze (heated)",
+   "create_mechanical_spawner:spawner/blaze (100 mB, processingTime 5000)"
+  ]
+ },
+ "burner": {
+  "de": [
+   "Feuerzeuge, Welle und Andesitlegierung sind billig, teuer ist nur der [[create:empty_blaze_burner]] ({{create_brass/empty_burner}}). Die Quelljuwelen dafür gibt es in {{create_brass/source_gems}}."
+  ],
+  "en": [
+   "Flint and steel, shaft and andesite alloy are cheap; only the [[create:empty_blaze_burner]] is costly ({{create_brass/empty_burner}}). Get the source gems for it in {{create_brass/source_gems}}."
+  ],
+  "sources": [
+   "createdieselgenerators:crafting/burner (FIF/ S /ABA)",
+   "kronwerke:empty_blaze_burner (GIG/INI/ I )"
+  ],
+  "client": [
+   "which fluids the burner accepts and how the valve controls it"
+  ]
+ },
+ "sprayer": {
+  "de": [
+   "Der [[createdieselgenerators:chemical_turret]] braucht den Sprüher, ein Präzisionsgetriebe, ein Zahnrad, einen Kupferrahmen und drei Kupferbleche. Den Lighter setzt ein Einsatzgerät auf den Sprüher.",
+   "Ethanol aus {{create_addons/ethanol}} ist die einfachste brennbare Füllung."
+  ],
+  "en": [
+   "The [[createdieselgenerators:chemical_turret]] needs the sprayer, a precision mechanism, a cogwheel, a copper casing and three copper sheets. A deployer puts the lighter on the sprayer.",
+   "Ethanol from {{create_addons/ethanol}} is the easiest burnable filling."
+  ],
+  "sources": [
+   "createdieselgenerators jar: recipe/mechanical_crafting/chemcial_sprayer.json, crafting/chemical_turret.json, crafting/lighter.json, deploying/chemical_sprayer_lighter.json"
+  ],
+  "client": [
+   "sprayer and turret behaviour"
+  ]
+ }
+}

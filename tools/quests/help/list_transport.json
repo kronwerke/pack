@@ -1,0 +1,1003 @@
+{
+ "welcome": {
+  "de": [
+   "Die Gegenstandsquests prüfen nur, ob der Block in deinem Inventar liegt, nichts wird verbraucht. Du kannst also alles danach gleich verbauen.",
+   "Zum Abschluss {{list_transport/done}} brauchst du alle fünf Was-wann-Quests und einmal die Grundausstattung einer Stufe-1-Fabrik. Die Rezepte stehen jeweils in der Hilfe der einzelnen Zeile."
+  ],
+  "en": [
+   "Item quests only check that the block is in your inventory, nothing is consumed. You can place everything right after.",
+   "The chapter end {{list_transport/done}} needs all five \"What when\" quests and one set of stage 1 factory basics. Each line's help gives the recipe."
+  ],
+  "sources": [
+   "tools/quests/ftbq.py (task_item consume=False)",
+   "tools/quests/chapters/list_transport.py"
+  ]
+ },
+ "items_when": {
+  "de": [
+   "Achtung beim Lager in Stufe 1: Der [[sophisticatedstorage:controller]] verbindet nur Truhen und Fässer von Sophisticated Storage, keine Schubladen von Functional Storage. Deren eigener Storage Controller braucht einen Quarzblock und öffnet erst in Stufe 2.",
+   "Für Stufe 1 heißt das: Schubladen für große Mengen einer Sorte, Fässer am Lagerkern für den Rest ({{list_transport/controller}})."
+  ],
+  "en": [
+   "A caveat for stage 1 storage: the [[sophisticatedstorage:controller]] links only Sophisticated Storage chests and barrels, not Functional Storage drawers. Functional Storage's own Storage Controller needs a block of quartz and opens in stage 2.",
+   "So for stage 1: drawers for large amounts of one kind, barrels on the Storage Controller for the rest ({{list_transport/controller}})."
+  ],
+  "sources": [
+   "functionalstorage:storage_controller (stage 2, quartz_block)",
+   "sophisticatedstorage:controller (stage 1)"
+  ]
+ },
+ "hopper": {
+  "de": [
+   "Fünf Eisenbarren in V-Form um eine Truhe ergeben einen [[minecraft:hopper]]. Für Maschinenstraßen nimm lieber die Andesitschleuse ({{list_transport/funnel}}): gleich schnell, aber sie arbeitet direkt am Förderband."
+  ],
+  "en": [
+   "Five iron ingots in a V around a chest make a [[minecraft:hopper]]. For machine lines the Andesite Funnel ({{list_transport/funnel}}) is the better pick: just as fast, and it works right on the belt."
+  ],
+  "sources": [
+   "minecraft:hopper",
+   "srv/config/create-server.toml (defaultExtractionTimer 8)"
+  ]
+ },
+ "minecart": {
+  "de": [
+   "Die [[minecraft:hopper_minecart]] ist formlos: ein Trichter und eine Lore. Die Schienen aus der Belohnung reichen für eine kurze Sammelstrecke unter einer Farm.",
+   "Create-Züge aus Stufe 2 ({{create_trains/welcome}}) fahren nicht durch das Netherportal, denn der Nether läuft auf einem eigenen Server."
+  ],
+  "en": [
+   "The [[minecraft:hopper_minecart]] is shapeless: a hopper and a minecart. The rails from the reward are enough for a short collection track under a farm.",
+   "Create trains from stage 2 ({{create_trains/welcome}}) do not go through the Nether portal, since the Nether runs on a server of its own."
+  ],
+  "sources": [
+   "minecraft:hopper_minecart",
+   "core: mixin/CreatePortalTrackMixin.java",
+   "docs/SCREENSHOTS.md (Nether and End are servers of their own)"
+  ]
+ },
+ "belt": {
+  "de": [
+   "Sechs [[minecraft:dried_kelp]] in zwei Reihen ergeben ein [[create:belt_connector]]. Das Band selbst kostet keine Stresseinheiten, nur die Maschinen darauf.",
+   "Getrockneten Seetang bekommst du im Ofen oder mit einem Lüfter vor Feuer. Mehr zum Band in {{create/belt}}."
+  ],
+  "en": [
+   "Six [[minecraft:dried_kelp]] in two rows make a [[create:belt_connector]]. The belt itself costs no stress units, only the machines on it do.",
+   "Dried kelp comes from a furnace or a fan blowing through fire. More on belts in {{create/belt}}."
+  ],
+  "sources": [
+   "create:crafting/kinetics/belt_connector",
+   "srv/config/create-server.toml (maxBeltLength 20, belt stress 0.0)"
+  ]
+ },
+ "chute": {
+  "de": [
+   "Im Spiel heißt sie [[create:chute]]: ein Eisenblech, ein Eisenbarren, ein Eisenblech übereinander ergeben vier. Eisenbleche presst die Mechanische Presse aus Eisenbarren.",
+   "Der Schlaue Schacht, der filtert, braucht Messingblech und eine Elektronenröhre und kommt in Stufe 2 ({{create_brass/smart_chute}})."
+  ],
+  "en": [
+   "Iron sheet, iron ingot, iron sheet stacked make four [[create:chute]]. The Mechanical Press makes iron sheets from ingots.",
+   "The filtering Smart Chute needs a brass sheet and an electron tube and comes in stage 2 ({{create_brass/smart_chute}})."
+  ],
+  "sources": [
+   "create:crafting/kinetics/chute",
+   "create:crafting/kinetics/smart_chute (stage 2)"
+  ]
+ },
+ "funnel": {
+  "de": [
+   "Im Spiel heißt sie [[create:andesite_funnel]]: Andesitlegierung über getrocknetem Seetang ergibt zwei. Ohne Redstone-Takt wartet sie **8 Ticks** zwischen zwei Gegenständen, so schnell wie ein Trichter.",
+   "Der [[create:andesite_tunnel]] hat dasselbe Rezept aus Andesitlegierung und Seetang. Messingschleuse und Messingtunnel öffnen in Stufe 2 ({{create_brass/brass_funnel}})."
+  ],
+  "en": [
+   "Andesite alloy over dried kelp makes two [[create:andesite_funnel]]. Without a redstone pulse it waits **8 ticks** between two items, as fast as a hopper.",
+   "The [[create:andesite_tunnel]] is made from andesite alloy and kelp as well. Brass funnels and tunnels open in stage 2 ({{create_brass/brass_funnel}})."
+  ],
+  "sources": [
+   "create:crafting/logistics/andesite_funnel",
+   "create:andesite_tunnel",
+   "srv/config/create-server.toml (defaultExtractionTimer 8)"
+  ]
+ },
+ "packages": {
+  "de": [
+   "Der Weg zum [[create:cardboard_block]]: vier Bambus, Zuckerrohr oder Setzlinge mit 250 mB Wasser im Mixer ergeben [[create:pulp]], die Presse macht daraus Karton, vier Karton einen Block. Im [[create:packager]] sitzt Eisen oben, an beiden Seiten und unten in der Mitte, Redstone in den unteren Ecken.",
+   "Ein [[create:package_frogport]] darf höchstens 5 Blöcke von seinem Ziel stehen, ein Kettenförderer trägt bis zu 20 Pakete auf einmal. Weiter geht es mit {{create/frogport}} und {{create/stock}}."
+  ],
+  "en": [
+   "The way to the [[create:cardboard_block]]: four bamboo, sugar cane or saplings with 250 mB water in the mixer make [[create:pulp]], the press turns it into cardboard, four cardboard make a block. In the [[create:packager]] iron goes on top, both sides and bottom middle, redstone in the bottom corners.",
+   "A [[create:package_frogport]] may stand at most 5 blocks from its target, and a chain conveyor carries up to 20 packages at a time. Continue with {{create/frogport}} and {{create/stock}}."
+  ],
+  "sources": [
+   "create:crafting/logistics/packager",
+   "create:mixing/cardboard_pulp",
+   "create:pressing/cardboard",
+   "create:crafting/materials/cardboard_block",
+   "srv/config/create-server.toml (packagePortRange 5, chainConveyorCapacity 20)"
+  ]
+ },
+ "starbuncle": {
+  "de": [
+   "Der Bezaubernde Apparat braucht für den [[ars_nouveau:starbuncle_charm]] keine Quelle: vier Goldbarren auf Arkanen Podesten drumherum, die [[ars_nouveau:starbuncle_shards]] in den Apparat. Die Scherben behalten dabei die Daten des Tiers.",
+   "Filtern kannst du mit [[ars_nouveau:allow_scroll]] in seiner Hand. Die einzelnen Schritte stehen in {{ars_nouveau/starbuncle_charm}} und {{ars_nouveau/starbuncle_work}}."
+  ],
+  "en": [
+   "The Enchanting Apparatus needs no source for the [[ars_nouveau:starbuncle_charm]]: four gold ingots on Arcane Pedestals around it, the [[ars_nouveau:starbuncle_shards]] into the apparatus. The token keeps the creature's data.",
+   "Filter with an [[ars_nouveau:allow_scroll]] in its hand. The steps are in {{ars_nouveau/starbuncle_charm}} and {{ars_nouveau/starbuncle_work}}."
+  ],
+  "sources": [
+   "ars_nouveau:starbuncle_charm (enchanting_apparatus, sourceCost 0, keepNbtOfReagent)",
+   "ars_nouveau:allow_scroll"
+  ]
+ },
+ "hopperhock": {
+  "de": [
+   "Im Spiel heißt sie [[botania:hopperhock]]. **In Stufe 1 kannst du sie noch nicht bauen:** Das Rezept der Blütenapotheke braucht neben zwei grauen, zwei hellgrauen Blütenblättern und einer [[botania:redstone_root]] eine [[botania:rune_of_air]], und der Runenaltar öffnet erst in Stufe 2.",
+   "Sie hebt Gegenstände in 6 Blöcken Umkreis auf, mit Mana in 10 Blöcken."
+  ],
+  "en": [
+   "**You cannot make the [[botania:hopperhock]] in stage 1 yet:** besides two gray and two light gray petals and a [[botania:redstone_root]], its Petal Apothecary recipe needs a [[botania:rune_of_air]], and the Runic Altar opens in stage 2.",
+   "It picks up items within 6 blocks, with mana within 10."
+  ],
+  "sources": [
+   "botania:petal_apothecary/hopperhock",
+   "botania:rune_of_air (stage 2)",
+   "docs/STAGES.md (stage 1: no runic altar)",
+   "botania jar: HopperhockBlockEntity (RANGE 6, RANGE_MANA 10)"
+  ]
+ },
+ "soph_hopper": {
+  "de": [
+   "Rezept: Trichter oben, Eisenbarren, [[sophisticatedstorage:upgrade_base]], Eisenbarren in der Mitte, drei Redstone unten. Ein Holzfass hat nur einen Upgrade-Platz, ein Eisenfass zwei.",
+   "Das Puller Upgrade und das Pusher Upgrade von Functional Storage sind schon in Stufe 1 offen. Beide brauchen eine Schublade, einen Trichter und Redstone."
+  ],
+  "en": [
+   "Recipe: hopper on top, iron ingot, [[sophisticatedstorage:upgrade_base]], iron ingot in the middle, three redstone at the bottom. A wooden barrel has only one upgrade slot, an iron barrel two.",
+   "Functional Storage's Puller Upgrade and Pusher Upgrade are already open in stage 1. Both take a drawer, a hopper and redstone."
+  ],
+  "sources": [
+   "sophisticatedstorage:hopper_upgrade",
+   "srv/config/sophisticatedstorage-server.toml (upgradeSlotCount)",
+   "functionalstorage:puller_upgrade (stage 1)",
+   "srv/config/functionalstorage/functionalstorage-common.toml (UPGRADE_TICK 4, UPGRADE_PULL_ITEMS 4)"
+  ]
+ },
+ "collector": {
+  "de": [
+   "Rezept: eine Enderperle über einem Obsidian, darunter drei Obsidian. Den Obsidian machst du mit Wasser über einem Lavasee und baust ihn mit einer Diamantspitzhacke ab.",
+   "Der Advanced Item Collector braucht zusätzlich ein Enderauge und damit Lohenstaub aus dem Nether, deshalb kommt er erst in Stufe 2."
+  ],
+  "en": [
+   "Recipe: an ender pearl over one obsidian, three obsidian below. Make obsidian by pouring water onto lava and mine it with a diamond pickaxe.",
+   "The Advanced Item Collector also needs an eye of ender and so blaze powder from the Nether, which is why it waits for stage 2."
+  ],
+  "sources": [
+   "itemcollectors:basic_collector",
+   "itemcollectors:advanced_collector (stage 2, ender_eye)",
+   "srv/config/itemcollectors-common.toml"
+  ]
+ },
+ "magnet": {
+  "de": [
+   "Der Magnet besteht aus Eisenbarren in Hufeisenform mit Lapislazuli, Enderperle und Redstone. Für den Fortgeschrittenen Magneten brauchst du dazu Gold, einen Diamanten und ein Enderauge, also Lohenstaub aus dem Nether.",
+   "Die einfache Entmagnetisierungsspule hält 1 bis 3 Blöcke frei, die fortgeschrittene 1 bis 5 Blöcke, mit Filter."
+  ],
+  "en": [
+   "The magnet is iron ingots in a horseshoe with lapis, an ender pearl and redstone. The Advanced Magnet also needs gold, a diamond and an eye of ender, so blaze powder from the Nether.",
+   "The basic Demagnetization Coil keeps 1 to 3 blocks clear, the advanced one 1 to 5 blocks, with a filter."
+  ],
+  "sources": [
+   "simplemagnets:basicmagnet",
+   "simplemagnets:advancedmagnet",
+   "srv/config/simplemagnets-common.toml (coil ranges)"
+  ]
+ },
+ "harvester": {
+  "de": [
+   "Der Pylon erntet ein Feld von 3 x 3 bis 9 x 9 Blöcken. Setz ihn in den Wasserblock des Felds oder auf Höhe der Pflanzen, die Kiste kommt direkt auf ihn.",
+   "Jede Ernte kostet die Hacke einen Haltbarkeitspunkt, Haltbarkeit und Unzerbrechlichkeit helfen. Hacken lassen sich auf Kronwerke nicht per Rohr nachfüllen. Die Pylon-Reihe gibt es auch als {{farms/s2_pylon}}."
+  ],
+  "en": [
+   "The pylon harvests a field of 3 x 3 up to 9 x 9 blocks. Place it in the field's water block or level with the crops, the chest goes right on top of it.",
+   "Each harvest costs the hoe one point of durability, Unbreaking and unbreakable tools help. On Kronwerke hoes cannot be piped in. The pylon also has its own quest, {{farms/s2_pylon}}."
+  ],
+  "sources": [
+   "srv/config/pylons-server.toml (harvesterWorkDelay 60, harvesterRequiresTool true, harvesterCanBeAutomated false)",
+   "pylons jar: lang pylons.int.jei.category.harvester_pylon",
+   "pylons:harvester_pylon (stage 2)"
+  ]
+ },
+ "arm": {
+  "de": [
+   "Der Arm braucht 2 Stresseinheiten pro Umdrehung und kommt mit Messing in Stufe 2. Präzisionsgetriebe sind auf Kronwerke ein eigenes Rezept, siehe {{create_brass/precision}}.",
+   "Alles dazu in {{create_brass/arm}}."
+  ],
+  "en": [
+   "The arm takes 2 stress units per RPM and comes with brass in stage 2. Precision mechanisms have their own Kronwerke recipe, see {{create_brass/precision}}.",
+   "Everything else in {{create_brass/arm}}."
+  ],
+  "sources": [
+   "create:crafting/kinetics/mechanical_arm (stage 2)",
+   "srv/config/create-server.toml (mechanical_arm 2.0, mechanicalArmRange 5)",
+   "kubejs/server_scripts/kronwerke/create.js (precision_mechanism)"
+  ]
+ },
+ "pipez_item": {
+  "de": [
+   "Die [[pipez:basic_upgrade]] bringt nur die Redstone-Steuerung. Mit der [[pipez:improved_upgrade]] wählst du die Verteilung (nächstes, fernstes Ziel, Rundlauf, Zufall), erst die [[pipez:advanced_upgrade]] hat den Filter.",
+   "Auf Kronwerke braucht die Verbesserte Modifikation Messingbarren. Mehr in {{pipes/item_pipe}} und {{pipes/improved_upgrade}}."
+  ],
+  "en": [
+   "The [[pipez:basic_upgrade]] only adds redstone control. The [[pipez:improved_upgrade]] lets you pick the distribution (nearest, furthest, round robin, random), and only the [[pipez:advanced_upgrade]] has the filter.",
+   "On Kronwerke the Improved Upgrade takes brass ingots. More in {{pipes/item_pipe}} and {{pipes/improved_upgrade}}."
+  ],
+  "sources": [
+   "pipez jar: de/maxhenkel/pipez/Upgrade (canChangeRedstoneMode, canChangeDistributionMode, canChangeFilter)",
+   "pipez:improved_upgrade (create:brass_ingot)",
+   "srv/config/pipez-server.toml"
+  ]
+ },
+ "routers": {
+  "de": [
+   "Das [[modularrouters:blank_module]] kommt aus drei Goldnuggets, drei Papier und einem Redstone, sechs auf einmal. Das Sendermodul Mk2 reicht 24 Blöcke, mit Reichweiten-Upgrades bis 48.",
+   "Jedes Geschwindigkeits-Upgrade nimmt dem Takt 2 Ticks ab, bis zum Minimum von 2 Ticks. Die Module erklärt {{pipes/router}}."
+  ],
+  "en": [
+   "The [[modularrouters:blank_module]] takes three gold nuggets, three paper and one redstone, six at once. The Sender Module Mk2 reaches 24 blocks, up to 48 with range upgrades.",
+   "Each speed upgrade takes 2 ticks off the cycle, down to the minimum of 2 ticks. {{pipes/router}} explains the modules."
+  ],
+  "sources": [
+   "modularrouters:modular_router",
+   "modularrouters:blank_module",
+   "srv/config/modularrouters-common.toml (sender2BaseRange 24, sender2MaxRange 48, ticksPerUpgrade 2, hardMinTickRate 2)"
+  ]
+ },
+ "mek_transporter": {
+  "de": [
+   "Der [[mekanism:basic_logistical_transporter]] braucht einen [[mekanism:basic_control_circuit]] zwischen zwei Stahlbarren. Der [[mekanism:logistical_sorter]] zieht selbst aus dem Inventar hinter sich, dafür braucht er keinen Konfigurator.",
+   "Mehr in {{mekanism/transporter}} und {{mekanism/sorter}}."
+  ],
+  "en": [
+   "The [[mekanism:basic_logistical_transporter]] takes a [[mekanism:basic_control_circuit]] between two steel ingots. The [[mekanism:logistical_sorter]] pulls from the inventory behind it on its own, no Configurator needed.",
+   "More in {{mekanism/transporter}} and {{mekanism/sorter}}."
+  ],
+  "sources": [
+   "mekanism:transmitter/logistical_transporter/basic",
+   "srv/config/Mekanism/tiers.toml (transmitters.items)"
+  ],
+  "client": [
+   "Logistical Sorter pulls from the inventory behind it without configuration"
+  ]
+ },
+ "ie_conveyor": {
+  "de": [
+   "Eisen, Leder und Redstone ergeben acht [[immersiveengineering:conveyor_basic]]. Das [[immersiveengineering:conveyor_extract]] zieht aus der Kiste, an der es hängt.",
+   "Mehr in {{immersive/conveyor}} und {{immersive/conveyor_special}}."
+  ],
+  "en": [
+   "Iron, leather and redstone make eight [[immersiveengineering:conveyor_basic]]. The [[immersiveengineering:conveyor_extract]] pulls from the chest it is attached to.",
+   "More in {{immersive/conveyor}} and {{immersive/conveyor_special}}."
+  ],
+  "sources": [
+   "immersiveengineering:crafting/conveyor_basic",
+   "immersiveengineering:conveyor_extract (stage 2)"
+  ]
+ },
+ "pnc_logistics": {
+  "de": [
+   "**Nur die programmierbare [[pneumaticcraft:drone]] braucht auf Kronwerke ein Präzisionsgetriebe.** Die [[pneumaticcraft:logistics_drone]] ist weiter vier Turbinenrotoren um einen Logistikkern, Sammel-, Ernte- und Wachdrohne ebenso mit Rotoren.",
+   "Das Druckrohr selbst nimmt auf Kronwerke ein Create-Flüssigkeitsrohr statt Glas. Mehr in {{pneumaticcraft/welcome}}."
+  ],
+  "en": [
+   "**Only the programmable [[pneumaticcraft:drone]] needs a precision mechanism on Kronwerke.** The [[pneumaticcraft:logistics_drone]] is still four turbine rotors around a logistics core, and the collector, harvesting and guard drones are made from rotors as well.",
+   "The pressure tube itself takes a Create fluid pipe instead of glass on Kronwerke. More in {{pneumaticcraft/welcome}}."
+  ],
+  "sources": [
+   "kronwerke:added/drone (kubejs/server_scripts/kronwerke/added.js)",
+   "pneumaticcraft:logistics_drone",
+   "pneumaticcraft:collector_drone",
+   "pneumaticcraft:harvesting_drone",
+   "pneumaticcraft:guard_drone",
+   "kubejs/server_scripts/kronwerke/round.js (pneumaticcraft:pressure_tube)"
+  ]
+ },
+ "enderio_item": {
+  "de": [
+   "Die Stufen heißen im Spiel Gegenstandsleitung, Energetische und Strahlende Gegenstandsleitung. Die Strahlende arbeitet alle 10 Ticks statt alle 20.",
+   "Filter und Rezepte in {{enderio/conduits}} und {{enderio/filter}}."
+  ],
+  "en": [
+   "The tiers are the Item Conduit, the Energetic and the Vibrant Item Conduit. The Vibrant one works every 10 ticks instead of every 20.",
+   "Filters and recipes in {{enderio/conduits}} and {{enderio/filter}}."
+  ],
+  "sources": [
+   "enderio jar: data/enderio/enderio/conduit/item.json, enhanced_item.json, ender_item.json (transfer_rate, ticks_per_cycle)",
+   "lang conduit.enderio.*"
+  ]
+ },
+ "me_buses": {
+  "de": [
+   "Busse brauchen in AE2 einen Kanal. Ohne [[ae2:controller]] trägt ein Netz nur wenige Geräte, mit Controller trägt jedes Kabel seine Kanäle. Der Controller braucht auf Kronwerke einen Spirit Attuned Gem aus Occultism.",
+   "Mehr zu Bussen und Karten in {{ae2/buses}}, {{ae2/cards}} und {{refined_storage/importer}}."
+  ],
+  "en": [
+   "Buses need a channel in AE2. Without an [[ae2:controller]] a network carries only a few devices, with one every cable carries its channels. On Kronwerke the controller needs a Spirit Attuned Gem from Occultism.",
+   "More on buses and cards in {{ae2/buses}}, {{ae2/cards}} and {{refined_storage/importer}}."
+  ],
+  "sources": [
+   "kronwerke:ae2/controller (occultism:spirit_attuned_gem)",
+   "srv/config/ae2-common.toml (channels DEFAULT)",
+   "srv/config/refinedstorage-common.toml (importer/exporter energyUsage 2)"
+  ]
+ },
+ "xnet_laser": {
+  "de": [
+   "Ein normaler XNet-Connector schafft 10 000 RF/t und 1 000 mB je Vorgang, der Advanced Connector das Zehn- und Fünffache. Bei LaserIO tragen Fluid Cards 5 000 mB, Chemical Cards 15 000 mB, mehr mit Upgrades.",
+   "Alles in {{logistics/xnet_controller}}, {{logistics/laser_node}} und {{logistics/tunnels}}."
+  ],
+  "en": [
+   "A normal XNet connector moves 10,000 RF/t and 1,000 mB per operation, the Advanced Connector ten and five times that. In LaserIO fluid cards carry 5,000 mB and chemical cards 15,000 mB, more with upgrades.",
+   "Everything in {{logistics/xnet_controller}}, {{logistics/laser_node}} and {{logistics/tunnels}}."
+  ],
+  "sources": [
+   "srv/config/xnet-server.toml (maxRfRateNormal 10000, maxRfRateAdvanced 100000, maxFluidRateNormal 1000, maxFluidRateAdvanced 5000)",
+   "srv/config/laserio-common.toml (fluid_card 5000, chemical_card 15000, energy_card 1000000)"
+  ]
+ },
+ "corporea": {
+  "de": [
+   "Der [[botania:corporea_spark]] und alles Weitere brauchen [[botania:pixie_dust]], und den gibt es erst mit dem Elfenportal in Stufe 3.",
+   "Der Einstieg steht im Kapitel Alfheim."
+  ],
+  "en": [
+   "The [[botania:corporea_spark]] and everything after it need [[botania:pixie_dust]], which you get only through the elven portal in stage 3.",
+   "The way in is in the Alfheim chapter."
+  ],
+  "sources": [
+   "botania:corporea_spark (stage 3)",
+   "botania:pixie_dust (stage 3)"
+  ]
+ },
+ "ejector": {
+  "de": [
+   "Rezept: [[create:golden_sheet]] über einem [[create:depot]] über einem Zahnrad. Das Goldblech presst die Mechanische Presse aus Goldbarren.",
+   "Mehr dazu in {{create/ejector}}."
+  ],
+  "en": [
+   "Recipe: [[create:golden_sheet]] over a [[create:depot]] over a cogwheel. The Mechanical Press makes the golden sheet from a gold ingot.",
+   "More in {{create/ejector}}."
+  ],
+  "sources": [
+   "create:crafting/kinetics/weighted_ejector",
+   "srv/config/create-server.toml (maxEjectorDistance 32, weighted_ejector 2.0)"
+  ]
+ },
+ "allay": {
+  "de": [
+   "Den Notenblock aus der Belohnung stellst du an deine Sammelstelle, am besten über einen Trichter in eine Kiste. Wichtig ist der Gegenstand, den du dem Hilfsgeist in die Hand gibst."
+  ],
+  "en": [
+   "Put the note block from the reward at your drop point, best above a hopper into a chest. What matters is the item you hand to the Allay."
+  ],
+  "sources": [
+   "tools/quests/chapters/list_transport.py (reward minecraft:note_block)"
+  ]
+ },
+ "fluids_when": {
+  "de": [
+   "Lava aus dem Nether bleibt im Nether: Der Nether ist ein eigener Server, Rohre und Kontraptionen gehen nicht durch das Portal. Zu Hause bekommst du unendlich Wasser aus jedem Gewässer ab 10 000 Blöcken mit der Schlauchrolle ({{list_transport/hose_pulley}}).",
+   "Die Mekanism-Behälter behalten ihren Inhalt, wenn du sie abbaust. So trägst du Flüssigkeiten von einem Server zum anderen."
+  ],
+  "en": [
+   "Lava from the Nether stays in the Nether: the Nether is a server of its own, and pipes and contraptions do not pass the portal. At home any body of water of 10,000 blocks or more gives endless water through the Hose Pulley ({{list_transport/hose_pulley}}).",
+   "Mekanism tanks keep their contents when you break them. That is how you carry fluids from one server to the other."
+  ],
+  "sources": [
+   "core: mixin/CreatePortalTrackMixin.java",
+   "docs/SCREENSHOTS.md",
+   "srv/config/create-server.toml (hosePulleyBlockThreshold 10000)"
+  ],
+  "client": [
+   "Mekanism fluid tank keeps its contents when broken"
+  ]
+ },
+ "create_pump": {
+  "de": [
+   "Die [[create:mechanical_pump]] ist formlos aus Zahnrad und Flüssigkeitsrohr. Sie braucht 4 Stresseinheiten pro Umdrehung, ein Wasserrad am Anfang reicht für kurze Strecken.",
+   "Kupferbleche presst die Mechanische Presse aus Kupferbarren. Mehr in {{create/pipes}} und {{create/pump}}."
+  ],
+  "en": [
+   "The [[create:mechanical_pump]] is shapeless from a cogwheel and a fluid pipe. It takes 4 stress units per RPM, so an early water wheel covers short runs.",
+   "The Mechanical Press makes copper sheets from ingots. More in {{create/pipes}} and {{create/pump}}."
+  ],
+  "sources": [
+   "create:crafting/kinetics/mechanical_pump",
+   "create:crafting/kinetics/fluid_pipe",
+   "srv/config/create-server.toml (mechanical_pump 4.0, mechanicalPumpRange 16)"
+  ]
+ },
+ "create_tank": {
+  "de": [
+   "Rezept: Kupferblech, Holzfass, Kupferblech übereinander. Tanks nebeneinander oder übereinander verbinden sich zu einem großen Tank.",
+   "Mehr in {{create/tank}}."
+  ],
+  "en": [
+   "Recipe: copper sheet, wooden barrel, copper sheet stacked. Tanks placed next to or on top of each other merge into one big tank.",
+   "More in {{create/tank}}."
+  ],
+  "sources": [
+   "create:crafting/kinetics/fluid_tank",
+   "srv/config/create-server.toml (fluidTankCapacity 8, fluidTankMaxHeight 32)"
+  ]
+ },
+ "hose_pulley": {
+  "de": [
+   "Im Spiel heißt sie [[create:hose_pulley]]: [[create:copper_casing]], Getrockneter Seetangblock und Kupferblech übereinander. Sie braucht 4 Stresseinheiten pro Umdrehung.",
+   "Unendlich gelten nur Wasser und Lava, und nur beim Abpumpen: Füllen hört bei einem großen See auf. Lava aus dem Nether bleibt dort, denn kein Rohr führt durch das Portal zum Hauptserver."
+  ],
+  "en": [
+   "[[create:copper_casing]], dried kelp block and copper sheet stacked make the [[create:hose_pulley]]. It takes 4 stress units per RPM.",
+   "Only water and lava count as endless, and only when draining: filling stops at a large lake. Lava from the Nether stays there, since no pipe crosses the portal to the main server."
+  ],
+  "sources": [
+   "create:crafting/kinetics/hose_pulley",
+   "srv/config/create-server.toml (hosePulleyRange 128, hosePulleyBlockThreshold 10000, fillInfinite false, bottomlessFluidMode ALLOW_BY_TAG)",
+   "create jar: data/create/tags/fluid/bottomless/allow.json (water, lava)",
+   "core: mixin/CreatePortalTrackMixin.java"
+  ]
+ },
+ "fluid_drawer": {
+  "de": [
+   "Das Water Generator Upgrade ist schon in Stufe 1 offen: ein Wassereimer und zwei Eimer in Stein. Pusher und Puller Upgrade bewegen bei Flüssigkeiten 500 mB alle 4 Ticks.",
+   "Die größeren Fluid Drawer (1x2 und 2x2) sind ebenfalls Stufe 1. Mehr in {{storage/fluid}} und {{storage/water_gen}}."
+  ],
+  "en": [
+   "The Water Generator Upgrade is open in stage 1 already: a water bucket and two buckets in stone. Pusher and Puller Upgrades move 500 mB of fluid every 4 ticks.",
+   "The bigger Fluid Drawers (1x2 and 2x2) are stage 1 too. More in {{storage/fluid}} and {{storage/water_gen}}."
+  ],
+  "sources": [
+   "functionalstorage:fluid_1",
+   "functionalstorage:water_generator_upgrade (stage 1)",
+   "srv/config/functionalstorage/functionalstorage-common.toml (UPGRADE_TICK 4, UPGRADE_PULL_FLUID 500)"
+  ]
+ },
+ "spout": {
+  "de": [
+   "Der [[create:copper_casing]] für Ausguss und Abfluss entsteht, wenn du Kupferbarren auf entrindetes Holz anwendest. Ausguss und Abfluss arbeiten am besten an einem Becken oder Tank mit Rohr.",
+   "Mehr in {{create/spout}}."
+  ],
+  "en": [
+   "The [[create:copper_casing]] for spout and drain comes from applying a copper ingot to stripped wood. Spout and drain work best piped to a tank.",
+   "More in {{create/spout}}."
+  ],
+  "sources": [
+   "create:crafting/kinetics/spout",
+   "create:crafting/kinetics/item_drain",
+   "create:item_application (copper_casing)"
+  ]
+ },
+ "pipez_fluid": {
+  "de": [
+   "Anders als Create-Rohre braucht das [[pipez:fluid_pipe]] weder Pumpe noch Drehkraft: Das ziehende Ende saugt den Tank selbst leer. Die Modifikationen steckst du am ziehenden Ende ein.",
+   "Mehr in {{pipes/fluid_pipe}} und {{pipes/extract}}."
+  ],
+  "en": [
+   "Unlike Create pipes the [[pipez:fluid_pipe]] needs neither pump nor rotation: the extracting end drains the tank by itself. Upgrades go into the extracting end.",
+   "More in {{pipes/fluid_pipe}} and {{pipes/extract}}."
+  ],
+  "sources": [
+   "pipez:fluid_pipe",
+   "srv/config/pipez-server.toml (fluid_pipe.amount)"
+  ]
+ },
+ "mek_pipe": {
+  "de": [
+   "Der [[mekanism:basic_fluid_tank]] aus Einfacher Legierung und Eisen gibt höchstens 1 000 mB pro Tick ab, die höheren Stufen 4 000, 16 000 und 64 000. Weil er seinen Inhalt beim Abbauen behält, trägst du mit ihm Lava aus dem Nether nach Hause.",
+   "Mehr in {{mekanism/pipes}} und {{mekanism/dynamic_tank}}."
+  ],
+  "en": [
+   "The [[mekanism:basic_fluid_tank]] from basic alloy and iron outputs at most 1,000 mB per tick, the higher tiers 4,000, 16,000 and 64,000. Since it keeps its contents when broken, it is how you carry lava home from the Nether.",
+   "More in {{mekanism/pipes}} and {{mekanism/dynamic_tank}}."
+  ],
+  "sources": [
+   "mekanism:transmitter/mechanical_pipe/basic",
+   "mekanism:fluid_tank/basic",
+   "srv/config/Mekanism/tiers.toml (fluid_tanks, transmitters.fluid)"
+  ]
+ },
+ "ie_fluid": {
+  "de": [
+   "Die [[immersiveengineering:fluid_pump]] braucht **250 Flux für jeden Flüssigkeitsblock**, den sie aus der Welt holt, und setzt dort Bruchstein hin. Das Beschleunigen im Rohr kostet nur 5 Flux.",
+   "Die Pumpe besteht aus einer Mechanischen Eisenkomponente, Eisenblech und IE-Flüssigkeitsrohr. Mehr in {{immersive/pump}}, {{immersive/tank}} und {{immersive/barrel}}."
+  ],
+  "en": [
+   "The [[immersiveengineering:fluid_pump]] needs **250 Flux for each fluid block** it takes from the world, and puts cobblestone there. Pressurizing in the pipe costs only 5 Flux.",
+   "The pump is made from an iron mechanical component, an iron plate and an IE fluid pipe. More in {{immersive/pump}}, {{immersive/tank}} and {{immersive/barrel}}."
+  ],
+  "sources": [
+   "srv/config/immersiveengineering-server.toml (machines.pump consumption 250, consumption_accelerate 5, placeCobble true)",
+   "immersiveengineering:crafting/fluid_pump",
+   "IE jar: SheetmetalTankLogic$State (512000), WoodenBarrelBlockEntity (12000)"
+  ]
+ },
+ "ranged_pump": {
+  "de": [
+   "Die Pumpe speichert 32 000 FE, das reicht für 320 Blöcke. Stell sie nicht an einen See, den du behalten willst: Alles im Umkreis wird zu Stein.",
+   "Im Nether bleibt die Lava auf dem Nether-Server. Mehr in {{pipes/pump}}."
+  ],
+  "en": [
+   "The pump stores 32,000 FE, enough for 320 blocks. Keep it away from lakes you want to keep: everything in range turns into stone.",
+   "In the Nether the lava stays on the Nether server. More in {{pipes/pump}}."
+  ],
+  "sources": [
+   "srv/config/rangedpumps-server.toml (energyCapacity 32000, energyUsagePerDrain 100, blockIdToReplaceLiquidsWith stone)",
+   "kubejs/server_scripts/kronwerke/links.js (rangedpumps:pump)"
+  ]
+ },
+ "enderio_fluid": {
+  "de": [
+   "Die Stufen heißen im Spiel Flüssigkeitsleitung, Energetische und Strahlende Flüssigkeitsleitung. Mehr in {{enderio/fluids}} und {{enderio/conduits}}."
+  ],
+  "en": [
+   "The tiers are the Fluid Conduit, the Energetic and the Vibrant Fluid Conduit. More in {{enderio/fluids}} and {{enderio/conduits}}."
+  ],
+  "sources": [
+   "enderio jar: data/enderio/enderio/conduit/fluid.json, pressurized_fluid.json, ender_fluid.json",
+   "lang conduit.enderio.*"
+  ]
+ },
+ "fluid_cells": {
+  "de": [
+   "Die [[ae2:fluid_storage_cell_1k]] steckst du wie jede Zelle ins ME-Laufwerk, die [[refinedstorage:64b_fluid_storage_disk]] ins Laufwerk von Refined Storage. Alle Größen bis 4 096B sind bei Refined Storage schon in Stufe 3 offen.",
+   "Mehr in {{ae2/fluid_cell}} und {{refined_storage/fluids}}."
+  ],
+  "en": [
+   "The [[ae2:fluid_storage_cell_1k]] goes into the ME Drive like any cell, the [[refinedstorage:64b_fluid_storage_disk]] into the Refined Storage Disk Drive. Every size up to 4096B is already open in stage 3 for Refined Storage.",
+   "More in {{ae2/fluid_cell}} and {{refined_storage/fluids}}."
+  ],
+  "sources": [
+   "ae2:fluid_storage_cell_1k (stage 3)",
+   "refinedstorage:64b_fluid_storage_disk (stage 3)",
+   "refinedstorage:4096b_fluid_storage_disk (stage 3)"
+  ]
+ },
+ "fluid_valve": {
+  "de": [
+   "Das Ventil braucht Drehkraft, eine Welle am Ventil reicht.",
+   "Mit dem Schlauen Flüssigkeitsrohr aus Stufe 2 ({{create_brass/smart_pipe}}) filterst du statt nur zu sperren."
+  ],
+  "en": [
+   "The valve needs rotation, a shaft into it is enough.",
+   "The Smart Fluid Pipe from stage 2 ({{create_brass/smart_pipe}}) filters instead of just blocking."
+  ],
+  "sources": [
+   "create:crafting/kinetics/fluid_valve",
+   "create:smart_fluid_pipe (stage 2)"
+  ]
+ },
+ "gas_when": {
+  "de": [
+   "Die ersten Gase sind Wasserstoff und Sauerstoff aus dem Elektrolytischen Separator, siehe {{mekanism/gas_hydrogen}} und {{mekanism/gas_oxygen}}. Die Zellen von Applied Mekanistics öffnen mit AE2 in Stufe 3."
+  ],
+  "en": [
+   "The first gases are hydrogen and oxygen from the Electrolytic Separator, see {{mekanism/gas_hydrogen}} and {{mekanism/gas_oxygen}}. The Applied Mekanistics cells open with AE2 in stage 3."
+  ],
+  "sources": [
+   "appmek:chemical_storage_cell_1k (stage 3)",
+   "mekanism:advanced_pressurized_tube (stage 3)"
+  ]
+ },
+ "mek_tube": {
+  "de": [
+   "Im Spiel heißt es [[mekanism:basic_pressurized_tube]]: zwei Stahlbarren um ein Glas ergeben acht. Der Chemikalientank braucht Osmium und Einfache Legierung.",
+   "Mehr in {{mekanism/tube}} und {{mekanism/chem_tank}}."
+  ],
+  "en": [
+   "Two steel ingots around a glass make eight [[mekanism:basic_pressurized_tube]]. The chemical tank takes osmium and basic alloy.",
+   "More in {{mekanism/tube}} and {{mekanism/chem_tank}}."
+  ],
+  "sources": [
+   "mekanism:transmitter/pressurized_tube/basic",
+   "mekanism:chemical_tank/basic",
+   "srv/config/Mekanism/tiers.toml (transmitters.chemical, chemical_tanks)"
+  ]
+ },
+ "pipez_gas": {
+  "de": [
+   "Die [[mekanism:alloy_infused]] machst du im Metallurgischen Infuser aus Eisen und Redstone, das Gasrohr kommt also erst mit Mekanism. Die Modifikationen sind dieselben wie beim Item-Rohr.",
+   "Mehr in {{pipes/gas_pipe}}."
+  ],
+  "en": [
+   "The [[mekanism:alloy_infused]] comes from the Metallurgic Infuser (iron and redstone), so the gas pipe waits for Mekanism. The upgrades are the same as for the item pipe.",
+   "More in {{pipes/gas_pipe}}."
+  ],
+  "sources": [
+   "pipez:gas_pipe",
+   "srv/config/pipez-server.toml (gas_pipe.amount)"
+  ]
+ },
+ "pnc_tube": {
+  "de": [
+   "Auf Kronwerke nimmt das Druckrohr ein Create-[[create:fluid_pipe]] statt Glas, acht Stück aus Komprimiertem Eisen. Kritisch werden 7 bar beim einfachen, 12 bar beim verstärkten und 25 bar beim fortgeschrittenen Rohr.",
+   "Mehr in {{pneumaticcraft/welcome}}."
+  ],
+  "en": [
+   "On Kronwerke the pressure tube takes a Create [[create:fluid_pipe]] instead of glass, eight from compressed iron. Critical pressure is 7 bar for the basic, 12 bar for the reinforced and 25 bar for the advanced tube.",
+   "More in {{pneumaticcraft/welcome}}."
+  ],
+  "sources": [
+   "kubejs/server_scripts/kronwerke/round.js (pneumaticcraft:pressure_tube)",
+   "pneumaticcraft jar: api/pressure/PressureTier (5/7, 10/12, 20/25)"
+  ]
+ },
+ "power_when": {
+  "de": [
+   "Strom von Flux Networks reicht nicht in den Nether, denn der läuft auf einem eigenen Server. Das gilt auch für das End.",
+   "In Stufe 2 hängst du Generatoren an das Universalkabel, siehe {{mekanism/cables}}."
+  ],
+  "en": [
+   "Flux Networks power does not reach into the Nether, which runs on a server of its own. The same holds for the End.",
+   "In stage 2 the generators go on universal cables, see {{mekanism/cables}}."
+  ],
+  "sources": [
+   "core: portal/Dimensions.java (the Nether and the End run on servers of their own)"
+  ]
+ },
+ "shafts": {
+  "de": [
+   "Im Sägewerk ergibt eine Andesitlegierung sechs Wellen, im Handwerk zwei Legierungen acht. Ab Stufe 2 macht auch ein Einsatzgerät Zahnräder aus Welle und Brett.",
+   "Mehr in {{create/shaft}}, {{create/cogwheel}} und {{create/stress}}."
+  ],
+  "en": [
+   "In the saw one andesite alloy makes six shafts, by hand two alloys make eight. From stage 2 a deployer also makes cogwheels from a shaft and a plank.",
+   "More in {{create/shaft}}, {{create/cogwheel}} and {{create/stress}}."
+  ],
+  "sources": [
+   "create:crafting/kinetics/shaft",
+   "create:cutting/andesite_alloy",
+   "create:deploying/cogwheel",
+   "create:deployer (stage 2)"
+  ]
+ },
+ "chain_drive": {
+  "de": [
+   "Statt der drei Eisennuggets gehen auch drei Zinknuggets. Der Kettenriemen selbst kostet keine Stresseinheiten."
+  ],
+  "en": [
+   "Three zinc nuggets work instead of the three iron nuggets. The chain drive itself costs no stress units."
+  ],
+  "sources": [
+   "create:crafting/kinetics/encased_chain_drive",
+   "create:crafting/kinetics/encased_chain_drive_from_zinc",
+   "srv/config/create-server.toml (encased_chain_drive 0.0)"
+  ]
+ },
+ "clutch": {
+  "de": [
+   "Beide sind formlos und kosten keine Stresseinheiten. Mehr in {{create/clutch_gearshift}}."
+  ],
+  "en": [
+   "Both are shapeless and cost no stress units. More in {{create/clutch_gearshift}}."
+  ],
+  "sources": [
+   "create:crafting/kinetics/clutch",
+   "create:crafting/kinetics/gearshift",
+   "srv/config/create-server.toml (clutch 0.0, gearshift 0.0)"
+  ]
+ },
+ "mek_cable": {
+  "de": [
+   "Der [[mekanism:basic_energy_cube]] braucht ein Stahlgehäuse, Energietabletts, Eisen und Einfache Legierung. Mehr in {{mekanism/cables}} und {{mekanism/cube}}."
+  ],
+  "en": [
+   "The [[mekanism:basic_energy_cube]] takes a steel casing, energy tablets, iron and basic alloy. More in {{mekanism/cables}} and {{mekanism/cube}}."
+  ],
+  "sources": [
+   "mekanism:transmitter/universal_cable/basic",
+   "mekanism:energy_cube/basic",
+   "srv/config/Mekanism/tiers.toml and general.toml (feConversionRate 2.5)"
+  ]
+ },
+ "ie_wire": {
+  "de": [
+   "Ein Block mitten in einem Draht zerreißt ihn, und berührst du einen Draht unter Strom, nimmst du Schaden. Die [[immersiveengineering:wirecoil_copper]] kommt aus Kupferdraht und einem Holzstab, vier auf einmal.",
+   "Mehr in {{immersive/wire}} und {{immersive/connectors}}."
+  ],
+  "en": [
+   "A block placed in a wire breaks it, and touching a live wire hurts. An [[immersiveengineering:wirecoil_copper]] is made from copper wire and a stick, four at once.",
+   "More in {{immersive/wire}} and {{immersive/connectors}}."
+  ],
+  "sources": [
+   "srv/config/immersiveengineering-server.toml (wires, enableWireDamage, blocksBreakWires)",
+   "immersiveengineering:crafting/wirecoil_copper"
+  ]
+ },
+ "pipez_energy": {
+  "de": [
+   "Statt der Werfer kommen Redstoneblöcke ins Rezept. Mehr in {{pipes/energy_pipe}}."
+  ],
+  "en": [
+   "The recipe takes redstone blocks instead of the droppers. More in {{pipes/energy_pipe}}."
+  ],
+  "sources": [
+   "pipez:energy_pipe",
+   "srv/config/pipez-server.toml (energy_pipe.amount)"
+  ]
+ },
+ "powah_cable": {
+  "de": [
+   "Ender-Zellen haben je Stufe unterschiedlich viele Kanäle: Starter 1, Basic 2, Hardened 3, Blazing 5, Niotic 7, Spirited 9. Die Kabel kommen zwölf auf einmal.",
+   "Mehr in {{powah/cables}} und {{powah/ender_cell}}."
+  ],
+  "en": [
+   "Ender cells have a different number of channels per tier: Starter 1, Basic 2, Hardened 3, Blazing 5, Niotic 7, Spirited 9. Cables come twelve at a time.",
+   "More in {{powah/cables}} and {{powah/ender_cell}}."
+  ],
+  "sources": [
+   "srv/config/powah.json5 (cables, ender_cells.channels)",
+   "powah:crafting/cable_starter",
+   "kronwerke:tech/energizing_orb"
+  ]
+ },
+ "flux": {
+  "de": [
+   "Chunks laden Flux-Geräte nur, wenn du es im Gerät einschaltest. Netze verbinden nur Geräte auf demselben Server, also nicht in den Nether oder ins End.",
+   "Mehr in {{flux_networks/plug}}, {{flux_networks/point}} und {{flux_networks/chunks}}."
+  ],
+  "en": [
+   "Flux devices load chunks only when you switch it on in the device. Networks only link devices on the same server, so not into the Nether or the End.",
+   "More in {{flux_networks/plug}}, {{flux_networks/point}} and {{flux_networks/chunks}}."
+  ],
+  "sources": [
+   "srv/config/fluxnetworks-server.toml (enableChunkLoading true, maximumPerPlayer 5, defaultLimit 800000)",
+   "kronwerke:added/flux_core",
+   "kronwerke:added/flux_controller",
+   "core: portal/Dimensions.java"
+  ],
+  "client": [
+   "chunk loading is a per-device toggle in the Flux GUI"
+  ]
+ },
+ "enderio_energy": {
+  "de": [
+   "Die Stufen heißen im Spiel Energieleitung, Energetische und Strahlende Energieleitung. Mehr in {{enderio/conduits}}."
+  ],
+  "en": [
+   "The tiers are the Energy Conduit, the Energetic and the Vibrant Energy Conduit. More in {{enderio/conduits}}."
+  ],
+  "sources": [
+   "enderio jar: data/enderio/enderio/conduit/energy.json, enhanced_energy.json, ender_energy.json",
+   "lang conduit.enderio.*"
+  ]
+ },
+ "storage_when": {
+  "de": [
+   "Die Farmwelt ist gut für Löcher, aber kein Lager: Sie wird alle drei Tage neu erzeugt. Was du dort abstellst, ist danach weg.",
+   "Die Endertruhe reist mit dir auf jeden Server, auch in den Nether und die Farmwelt."
+  ],
+  "en": [
+   "The farm world is good for holes, not for storage: it is regenerated every three days, and whatever you leave there is gone.",
+   "The ender chest travels with you to every server, the Nether and the farm world included."
+  ],
+  "sources": [
+   "docs/STAGES.md (mining world reset every three days)",
+   "core: portal/Travel.java (player file with ender chest)"
+  ]
+ },
+ "barrels": {
+  "de": [
+   "Das Holz bestimmt das Aussehen, jedes Brett mit passender Stufe geht. Die Stufen-Upgrades machst du aus einem Hebel in acht Kupferbarren, für Eisen auf Kronwerke in acht [[create:iron_sheet]].",
+   "Höchstens zwei Stack-Upgrades passen in ein Fass. Mehr in {{storage/barrel}} und {{storage/tiers}}."
+  ],
+  "en": [
+   "The wood only sets the look, any planks with matching slabs work. Tier upgrades are a lever in eight copper ingots, for iron on Kronwerke in eight [[create:iron_sheet]].",
+   "A barrel takes at most two stack upgrades. More in {{storage/barrel}} and {{storage/tiers}}."
+  ],
+  "sources": [
+   "sophisticatedstorage:oak_barrel",
+   "sophisticatedstorage:basic_to_copper_tier_upgrade",
+   "sophisticatedstorage:basic_to_iron_tier_upgrade (create:iron_sheet)",
+   "srv/config/sophisticatedstorage-server.toml (maxUpgradesPerStorage barrel stack_upgrades 2)"
+  ]
+ },
+ "drawers": {
+  "de": [
+   "Mit dem Configuration Tool verbindest du Schubladen auch ohne Controller nicht, dafür sperrst du sie damit. Der Storage Controller verbindet ab Stufe 2 Schubladen in 8 Blöcken Umkreis.",
+   "Mehr in {{storage/drawers}}, {{storage/config_tool}} und {{storage/drawers_4}}."
+  ],
+  "en": [
+   "The Configuration Tool does not link drawers, it locks them. From stage 2 Functional Storage's Storage Controller links drawers within 8 blocks.",
+   "More in {{storage/drawers}}, {{storage/config_tool}} and {{storage/drawers_4}}."
+  ],
+  "sources": [
+   "functionalstorage:oak_1",
+   "srv/config/functionalstorage/functionalstorage-common.toml (DRAWER_CONTROLLER_LINKING_RANGE 8, multipliers)",
+   "functionalstorage:storage_controller (stage 2)"
+  ]
+ },
+ "vault": {
+  "de": [
+   "Rezept: Eisenblech, Holzfass, Eisenblech übereinander. Tresore nebeneinander verbinden sich zu einem Inventar.",
+   "Mehr in {{create/vault}}."
+  ],
+  "en": [
+   "Recipe: iron sheet, wooden barrel, iron sheet stacked. Vaults placed next to each other merge into one inventory.",
+   "More in {{create/vault}}."
+  ],
+  "sources": [
+   "create:crafting/kinetics/item_vault",
+   "srv/config/create-server.toml (vaultCapacity 20)"
+  ]
+ },
+ "backpack": {
+  "de": [
+   "Ein Lederrucksack hat einen Upgrade-Platz, ein eiserner 54 Plätze und zwei, ein Netheritrucksack 120 Plätze und sieben. Das Magnet-Upgrade des Rucksacks reicht 3 Blöcke.",
+   "Mehr in {{storage/upgrade_base}}, {{storage/pickup}} und {{storage/magnet}}."
+  ],
+  "en": [
+   "A leather backpack has one upgrade slot, an iron one 54 slots and two, a netherite one 120 slots and seven. The backpack's Magnet Upgrade reaches 3 blocks.",
+   "More in {{storage/upgrade_base}}, {{storage/pickup}} and {{storage/magnet}}."
+  ],
+  "sources": [
+   "sophisticatedbackpacks:backpack",
+   "srv/config/sophisticatedbackpacks-server.toml (slot counts, magnetRange 3)"
+  ]
+ },
+ "packing": {
+  "de": [
+   "Das Packband ist formlos aus einem Schleimball und einem Papier. Ohne Band verweigert eine volle Truhe den Abbau, wenn mehr als 200 Gegenstände herausfallen würden, solange du nicht schleichst.",
+   "Die [[mekanism:cardboard_box]] machst du aus vier Sägespänen. Mehr in {{storage/packing_tape}}."
+  ],
+  "en": [
+   "Packing tape is shapeless from a slime ball and a paper. Without tape a full chest refuses to break if more than 200 items would drop, unless you sneak.",
+   "The [[mekanism:cardboard_box]] takes four sawdust. More in {{storage/packing_tape}}."
+  ],
+  "sources": [
+   "sophisticatedstorage:packing_tape",
+   "srv/config/sophisticatedstorage-server.toml (drop threshold 200)",
+   "mekanism:cardboard_box"
+  ]
+ },
+ "mining_dim": {
+  "de": [
+   "Zwei [[kronwerke:grubenrahmen]] entstehen aus vier Andesitgehäusen, vier [[naturesaura:infused_iron]] und einem [[ars_nouveau:source_gem]]. Für zehn Rahmen und das Anzünden brauchst du also sechs Quellsteine, denn der Stein zum Anzünden wird verbraucht.",
+   "Die Farmwelt ist ein eigener Server und wird alle drei Tage neu erzeugt: Lass dort nichts liegen. Mehr in {{exploration/e_frame}} und {{list_dimensions/d_mining_rules}}."
+  ],
+  "en": [
+   "Two [[kronwerke:grubenrahmen]] come from four andesite casings, four [[naturesaura:infused_iron]] and one [[ars_nouveau:source_gem]]. Ten frames plus lighting take six source gems, since lighting uses one up.",
+   "The farm world is a server of its own and is regenerated every three days: leave nothing there. More in {{exploration/e_frame}} and {{list_dimensions/d_mining_rules}}."
+  ],
+  "sources": [
+   "kronwerke:grubenrahmen",
+   "core: portal/Ignite.java (source gem used up)",
+   "core: portal/PortalShape.java",
+   "docs/STAGES.md"
+  ]
+ },
+ "waystones": {
+  "de": [
+   "Das Rezept ergibt **drei** Schriftrollen. Sie bringen dich zum nächstgelegenen Wegstein, den du aktiviert hast.",
+   "Reisen zu einem globalen Wegstein kosten nichts. Die Reise über den Knopf im Inventar kostet Level und hat danach 300 Sekunden Abklingzeit. Mehr in {{exploration/e_return_scroll}}."
+  ],
+  "en": [
+   "The recipe makes **three** scrolls. They take you to the nearest waystone you have activated.",
+   "Travel to a global waystone is free. Travel through the inventory button costs levels and then has a 300 second cooldown. More in {{exploration/e_return_scroll}}."
+  ],
+  "sources": [
+   "waystones:return_scroll",
+   "waystones jar: item/ReturnScrollItem (PlayerWaystoneManager.getNearestWaystone)",
+   "srv/config/waystones-common.toml (warpRequirements: target_is_global, inventory_button cooldown 300)"
+  ]
+ },
+ "controller": {
+  "de": [
+   "Die [[sophisticatedstorage:storage_link]] aus Enderperle, Brett, Verstärker und Stein überbrückt Lücken. Aus einem Lagerkern und einer Enderperle entstehen drei auf einmal.",
+   "Mehr in {{storage/controller}} und {{storage/storage_link}}."
+  ],
+  "en": [
+   "The [[sophisticatedstorage:storage_link]] from an ender pearl, a plank, a repeater and stone bridges gaps. A Storage Controller and an ender pearl make three at once.",
+   "More in {{storage/controller}} and {{storage/storage_link}}."
+  ],
+  "sources": [
+   "sophisticatedstorage:controller",
+   "sophisticatedstorage:storage_link",
+   "sophisticatedstorage:storage_link_from_controller"
+  ]
+ },
+ "toolbox": {
+  "de": [
+   "Für die Quest zählt nur der braune Werkzeugkasten aus dem Grundrezept. Goldblech presst die Mechanische Presse aus Goldbarren."
+  ],
+  "en": [
+   "The quest only counts the brown toolbox from the base recipe. The Mechanical Press makes golden sheets from gold ingots."
+  ],
+  "sources": [
+   "create:crafting/curiosities/brown_toolbox",
+   "srv/config/create-server.toml (toolboxRange 10)"
+  ]
+ },
+ "bins": {
+  "de": [
+   "Die [[mekanism:basic_bin]] braucht Einfache Legierung und einen Einfachen Steuerschaltkreis. Die Persönliche Truhe braucht Stahl, Glas, eine Holztruhe und einen Einfachen Steuerschaltkreis.",
+   "Mehr in {{mekanism/bin}} und {{mekanism/personal_chest}}."
+  ],
+  "en": [
+   "The [[mekanism:basic_bin]] takes basic alloy and a basic control circuit. The Personal Chest takes steel, glass, a wooden chest and a basic control circuit.",
+   "More in {{mekanism/bin}} and {{mekanism/personal_chest}}."
+  ],
+  "sources": [
+   "mekanism:bin/basic",
+   "mekanism:personal_chest"
+  ]
+ },
+ "ender_chest": {
+  "de": [
+   "Der Inhalt deiner Endertruhe reist mit dir über jedes Portal, auch zum Nether-Server und in die Farmwelt. Lohenstaub kommt von Lohen in Netherfestungen."
+  ],
+  "en": [
+   "Your ender chest contents travel with you through every portal, to the Nether server and the farm world too. Blaze powder comes from blazes in Nether fortresses."
+  ],
+  "sources": [
+   "core: portal/Travel.java (player file: inventory, ender chest)",
+   "minecraft:ender_chest",
+   "minecraft:ender_eye"
+  ]
+ },
+ "ae2": {
+  "de": [
+   "Molekularassembler und Musteranbieter brauchen auf Kronwerke Präzisionsgetriebe von Create. Der Einstieg ist der Meteorit mit den Pressen, siehe {{ae2/meteorite}}."
+  ],
+  "en": [
+   "On Kronwerke molecular assemblers and pattern providers need precision mechanisms from Create. The way in is the meteorite with its presses, see {{ae2/meteorite}}."
+  ],
+  "sources": [
+   "kronwerke:ae2/drive",
+   "kronwerke:ae2/controller",
+   "kronwerke:ae2/molecular_assembler",
+   "kubejs/server_scripts/kronwerke/ae2.js (pattern provider)"
+  ]
+ },
+ "rs": {
+  "de": [
+   "Controller und Laufwerk brauchen auf Kronwerke einen [[mekanism:advanced_control_circuit]], der Autohersteller ein Präzisionsgetriebe. Mehr in {{refined_storage/controller}} und {{refined_storage/drive}}."
+  ],
+  "en": [
+   "On Kronwerke the controller and the disk drive need an [[mekanism:advanced_control_circuit]], the autocrafter a precision mechanism. More in {{refined_storage/controller}} and {{refined_storage/drive}}."
+  ],
+  "sources": [
+   "refinedstorage:controller",
+   "refinedstorage:disk_drive",
+   "kubejs/server_scripts/kronwerke/links.js (refinedstorage:autocrafter)"
+  ]
+ },
+ "tempad": {
+  "de": [
+   "Zeittüren und Teleporter wirken nur auf demselben Server: Der Nether und das End laufen auf eigenen Servern, dorthin geht es nur durch das Portal.",
+   "Mehr in {{pipes/tempad}} und {{list_dimensions/r_tempad}}."
+  ],
+  "en": [
+   "Time doors and teleporters only work within the same server: the Nether and the End run on servers of their own, and the only way there is the portal.",
+   "More in {{pipes/tempad}} and {{list_dimensions/r_tempad}}."
+  ],
+  "sources": [
+   "srv/config/tempad.jsonc (cost_per_door 1000, tempad capacity 6000)",
+   "core: portal/Dimensions.java"
+  ],
+  "client": [
+   "Tempad and Mekanism teleporter cannot target the Nether or End server"
+  ]
+ },
+ "done": {
+  "de": [
+   "Abgeben am Obelisken: Rechtsklick gibt ab, was du in der Hand hältst. Schleichen und zweimal klicken gibt alles Passende aus dem Inventar ab, Hotbar und Nebenhand bleiben dabei unberührt.",
+   "Die Gegenstände für diese Quest verbrauchst du nicht, du kannst sie danach verbauen. Die Ziele des Obelisken wachsen mit der Zahl der aktiven Spieler."
+  ],
+  "en": [
+   "Handing in at the obelisk: a right click hands in what you hold. Sneaking and clicking twice hands in everything that fits from your inventory, hotbar and offhand stay untouched.",
+   "The items for this quest are not consumed, you can build with them afterwards. The obelisk's goals grow with the number of active players."
+  ],
+  "sources": [
+   "core: obelisk/Obelisk.java (right click, sneak twice, hotbar and offhand stay)",
+   "config/kronwerke/goals.json (scaling)",
+   "tools/quests/ftbq.py (task_item consume=False)"
+  ]
+ }
+}

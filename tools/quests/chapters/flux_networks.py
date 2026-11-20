@@ -75,7 +75,7 @@ quests = [
     quest("configurator", 2.5, 3.2, "&bBau den Flux-Konfigurator",
           subtitle="Das Netz in der Tasche.",
           description=[
-              "Ein &6Enderauge&r oben rechts, zwei &6Flux-Staub&r und zwei &6Obsidian&r in einer Diagonale von unten links nach oben rechts ergeben den &6Flux-Konfigurator&r.",
+              "Oben in der Mitte &6Flux-Staub&r und rechts ein &6Enderauge&r, in der mittleren Reihe &6Obsidian&r in der Mitte und Flux-Staub rechts, unten links noch ein Obsidian: Das ergibt den &6Flux-Konfigurator&r.",
               "",
               "Rechtsklick in die Luft öffnet dein Netzwerk-Fenster von überall, ohne an einem Gerät zu stehen. &eSchleichen und Rechtsklick&r auf ein Flux-Gerät kopiert dessen Einstellungen (Netz, Priorität, Limit), &eRechtsklick&r auf das nächste Gerät fügt sie ein.",
               "",
@@ -113,9 +113,9 @@ quests = [
           deps=["network"], icon="minecraft:iron_door"),
 
     quest("members", 10, 2.2, "&eLade Mitglieder ein",
-          subtitle="Besitzer, Admin, Benutzer.",
+          subtitle="Besitzer, Admin, Nutzer.",
           description=[
-              "Im Reiter &eNetzwerkmitglieder&r trägst du einen Spielernamen ein und setzt ihn als &6Benutzer&r oder &6Admin&r. Benutzer dürfen Geräte anschließen und bedienen, Admins auch Einstellungen ändern und Mitglieder verwalten.",
+              "Im Reiter &eNetzwerkmitglieder&r trägst du einen Spielernamen ein und setzt ihn als &6Nutzer&r oder &6Admin&r. Nutzer dürfen Geräte anschließen und bedienen, Admins auch Einstellungen ändern und Mitglieder verwalten.",
               "",
               "Nur der &6Besitzer&r kann das Netz löschen oder den Besitz übertragen. Für ein gemeinsames Team-Kraftwerk macht einer das Netz auf und setzt die anderen als Admins. Wer nicht eingetragen ist, gilt als &7Fremder&r.",
               "",
@@ -269,7 +269,7 @@ quests = [
               "",
               "Der Controller ist das Gerät für &edrahtloses Laden&r: Er zieht Strom aus dem Netz und füllt die Gegenstände, die Mitglieder am Körper tragen, überall auf der Welt. Pro Netzwerk ist nur &dein&r Controller erlaubt.",
               "",
-              "Der Schaltkreis braucht Gedrucktes Silizium aus dem AE2-Inscriber, siehe Kapitel &5Mekanism: Fortgeschritten&r. Mit Blöcken, Kern und Staub stecken 21 Kerne im Controller, also 48 Staub, 21 Obsidian und sechs Quelljuwelen.",
+              "Der Schaltkreis braucht Gedrucktes Silizium aus dem AE2-Inscriber, siehe Kapitel &5Mekanism: Fortgeschritten&r. In ganzen Handwerksgängen gerechnet stecken mit Blöcken, Kern und Staub 51 Staub, 24 Obsidian und sechs Quelljuwelen im Controller.",
           ],
           tasks=[task_item("fluxnetworks:flux_controller", 1)],
           rewards=[reward_table("s3_uncommon"), reward_item("mekanism:advanced_control_circuit", 2), reward_xp(15)],
@@ -467,7 +467,7 @@ quests = [
           description=[
               "Ein Netz mit &6Stecker&r am Kraftwerk, einem &6Controller&r, einem &6Speicher&r und mindestens sechzehn &6Punkten&r: Das ist der Stand, mit dem der Rest von Kronwerke läuft. Alles, was ab Stufe 4 kommt, der Fusionsreaktor, Draconic, die großen AE2-Netze, hängt einfach an einem weiteren Punkt.",
               "",
-              "&eKronwerke:&r Die Technikseite des Ziels von Stufe 3 will 4.000 Stahl und 250 Fortschrittliche Steuerschaltkreise. Jede Stahlstraße, die du jetzt ohne Kabelsalat irgendwo hinstellst, zahlt darauf ein.",
+              "&eKronwerke:&r Die Technikseite des Ziels von Stufe 3 will bei 30 aktiven Spielern 4.000 Stahl und 250 Fortschrittliche Steuerschaltkreise. Jede Stahlstraße, die du jetzt ohne Kabelsalat irgendwo hinstellst, zahlt darauf ein.",
           ],
           tasks=[task_item("fluxnetworks:flux_point", 16), task_item("fluxnetworks:basic_flux_storage", 1)],
           rewards=[reward_table("s3_rare"), reward_item("ars_nouveau:source_gem", 16), reward_xp(25)],

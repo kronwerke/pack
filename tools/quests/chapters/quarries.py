@@ -403,7 +403,7 @@ quests = [
     quest("sample_drill", 5, 14.5, "&7Kartier deine Erzadern",
           subtitle="Probebohrer und Erzadern-Atlas.",
           description=[
-              "&6Erzadern-Atlas:&r eine Truhe und ein Amethyst oben, eine Karte und ein Buch und Feder unten. &6Probebohrer:&r im Mechanischen Handwerk aus Messingblechen, einer Elektronenröhre, einem Präzisionsgetriebe, einem Messinggehäuse, Robusten Blechen und einem Mechanischen Bohrer.",
+              "&6Erzadern-Atlas:&r eine Truhe und ein Amethyst oben, eine Karte und ein Buch und Feder unten. &6Probebohrer:&r im Mechanischen Handwerk aus Messingblechen, einer Elektronenröhre, einem Präzisionsgetriebe, einem Messingrahmen, Robusten Blechen und einem Mechanischen Bohrer.",
               "",
               "Stell den Probebohrer über eine Ader, setz einen &6Kupfer-Rückentank&r mit Luft obendrauf und klick ihn an. Ist er fertig, klickst du ihn mit dem Atlas an. Ein Klick mit dem Atlas auf eine laufende Bohrmaschine geht auch.",
               "",

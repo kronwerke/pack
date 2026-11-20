@@ -102,7 +102,7 @@ quests = [
           description=[
               "&eRezept:&r drei &6Quarzstufen&r oben, &6Eisengitter&r, &6Heuballen&r, &6Eisengitter&r in der Mitte, drei &6Polierter Schwarzstein&r unten. Ein &6Erntepylon&r.",
               "",
-              "Stell ihn in oder über den Wasserblock deines Feldes, eine &6Truhe&r direkt darüber und eine &6Hacke&r in den Pylon. Alle &e3 Sekunden&r erntet er reife Pflanzen im eingestellten Bereich, pflanzt nach und legt den Ertrag in die Truhe. Jede Ernte kostet die Hacke einen Punkt Haltbarkeit.",
+              "Stell ihn in den Wasserblock deines Feldes oder auf Höhe der Pflanzen, eine &6Truhe&r direkt darüber und eine &6Hacke&r in den Pylon. Alle &e3 Sekunden&r erntet er reife Pflanzen im eingestellten Bereich, pflanzt nach und legt den Ertrag in die Truhe. Jede Ernte kostet die Hacke einen Punkt Haltbarkeit.",
               "",
               "&cHinweis:&r Quarz und Schwarzstein kommen aus dem Nether, der Pylon öffnet mit &eStufe 2&r. Sammle bis dahin den Heuballen und die Gitter. In Stufe 1 ernten der Trichter-Pflanztopf und die Create-Erntemaschine, siehe Kapitel Erste Farmen.",
               "",
@@ -131,7 +131,7 @@ quests = [
           description=[
               "Drück &e{key:key.ftbchunks.map}&r für die Karte, dann &eC&r für die Claim-Ansicht. &eLinke Maustaste&r über die Chunks ziehen beansprucht sie, &erechte&r gibt sie frei. Dein Team hat bis zu &e500 Chunks&r.",
               "",
-              "In deinen Chunks können nur du, dein Team und deine Verbündeten Blöcke abbauen, setzen und Truhen öffnen. Creeper und Ghasts sprengen dort nichts, Endermen klauen nichts. &cPvP bleibt an&r, Claims machen dich nicht unverwundbar.",
+              "In deinen Chunks können nur du, dein Team und deine Verbündeten Blöcke abbauen, setzen und Truhen öffnen. Creeper und Ghasts sprengen dort nichts, Endermen klauen nichts. &ePvP ist für Teams von Haus aus aus&r und lässt sich in den Team-Einstellungen einschalten.",
               "",
               "&eTipp:&r Verbündete trägst du in den Team-Einstellungen ein. Wer eine Maschine mit Fake-Spieler aufstellt (ein Router mit Breaker-Modul), muss &eFake-Spieler erlauben&r oder dem Router ein Sicherheits-Upgrade geben, sonst darf er in deinem Claim nichts.",
           ],
@@ -140,11 +140,11 @@ quests = [
           deps=["welcome"], icon="minecraft:iron_door"),
 
     quest("chunkload", 6, 5, "&6Halt deine Farm am Laufen",
-          subtitle="Chunkloading, solange einer von euch da ist.",
+          subtitle="Chunkloading, auch wenn ihr offline seid.",
           description=[
               "In der Claim-Ansicht ziehst du mit &eShift und linker Maustaste&r über beanspruchte Chunks, um sie zu laden, mit &eShift und rechter&r lädst du sie wieder aus. Geladene Chunks werden auf der Karte eigens markiert. Bis zu &e25 Chunks&r pro Team.",
               "",
-              "Geladen heißt: Maschinen, Farmen und Rohre laufen dort weiter, auch wenn niemand in der Nähe ist. Auf Kronwerke laufen sie auch, wenn &edein ganzes Team offline&r ist. Die Farm arbeitet über Nacht weiter.",
+              "Geladen heißt: Maschinen, Farmen und Rohre laufen dort weiter, auch wenn niemand in der Nähe ist. Auf Kronwerke laufen sie auch, wenn &edein ganzes Team offline&r ist. Die Farm arbeitet über Nacht weiter. Erst wenn das ganze Team sieben Tage nicht da war, endet das Laden.",
               "",
               "Mit dem &eMausrad&r über einem geladenen Chunk stellst du ein, wann das Laden von selbst endet. Für einen Nachtlauf des Brass-Mixers genügt das.",
           ],
@@ -206,9 +206,9 @@ quests = [
     quest("jei_stages", 6, 10.5, "&eSchau in die nächste Stufe",
           subtitle="Gesperrt heißt sichtbar, nicht herstellbar.",
           description=[
-              "EMI zeigt dir auch die Rezepte aller späteren Stufen. Der &eTooltip&r eines gesperrten Gegenstands sagt, mit welcher Stufe er öffnet. Du kannst ihn tragen und lagern, aber nicht halten, anlegen, setzen oder herstellen.",
+              "EMI zeigt dir auch die Rezepte der &enächsten&r Stufe, mit einem Schleier darüber. Was noch später kommt, blendet EMI aus. Der &eTooltip&r eines gesperrten Gegenstands sagt, mit welcher Stufe er öffnet. Du kannst ihn tragen und lagern, aber nicht halten, anlegen, setzen oder herstellen.",
               "",
-              "Nutz das zum Vorausplanen: Zink, Osmium, Lebeholz und Quellsteine kannst du in Stufe 1 schon sammeln, damit dein Messingwerk am ersten Abend von Stufe 2 läuft.",
+              "Nutz das zum Vorausplanen: Zink, Osmium, Lebeholz und Quelljuwelen kannst du in Stufe 1 schon sammeln, damit dein Messingwerk am ersten Abend von Stufe 2 läuft.",
               "",
               "&eKronwerke:&r Was eine Stufe öffnet und was der Obelisk dafür will, steht im Kapitel &6Hier geht's los&r bei den Quests zum &eObelisken&r.",
           ],
@@ -250,7 +250,7 @@ quests = [
           description=[
               "Drück &e{key:key.voice_chat}&r für das Menü von &6Simple Voice Chat&r: Mikrofon wählen, Lautstärke, Push-to-Talk oder Sprachaktivierung. Wer bis &e48 Blöcke&r entfernt ist, hört dich, leiser mit der Entfernung. Flüstern reicht 24 Blöcke.",
               "",
-              "Im selben Menü legst du eine &6Gruppe&r an oder trittst einer bei. Gruppenmitglieder hören sich überall, auch über Dimensionen hinweg. Ein Symbol am Bildschirmrand zeigt, wer gerade spricht, und Aufnahmen über das Menü sind auf dem Server erlaubt.",
+              "Im selben Menü legst du eine &6Gruppe&r an oder trittst einer bei. Gruppenmitglieder hören sich überall, auch über Dimensionen hinweg. Ein Symbol am Bildschirmrand zeigt, wer gerade spricht. Aufnahmen über das Menü sind auf dem Server ausgeschaltet.",
           ],
           tasks=[task_checkmark("Eingerichtet")],
           rewards=[reward_xp(3)],
@@ -395,7 +395,7 @@ quests = [
     quest("qol_torch", 12, 23, "&eHalt Monster fern",
           subtitle="Eine Fackel für die ganze Basis.",
           description=[
-              "Die &6Mega Torch&r von Torchmaster verhindert, dass im Umkreis von &e32 Blöcken&r Monster spawnen, auch im Dunkeln und unter der Erde. Spawner arbeiten weiter. Die &6Dread Lamp&r macht dasselbe für friedliche Tiere.",
+              "Die &6Mega Torch&r von Torchmaster verhindert, dass im Umkreis von &e64 Blöcken&r Monster spawnen, auch im Dunkeln und unter der Erde. Spawner arbeiten weiter. Die &6Dread Lamp&r macht dasselbe für friedliche Tiere.",
               "",
               "Die &6Feral Flare Lantern&r setzt unsichtbare Lichter in ihre Umgebung und leuchtet so eine Höhle aus. Rezepte in EMI.",
           ],

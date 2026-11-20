@@ -77,7 +77,7 @@ quests = [
     quest("smelter", 5, 1.5, "&6&lBau die Legierungsschmelze",
           subtitle="Drei Zutaten rein, ein Barren raus.",
           description=[
-              "&eRezept auf Kronwerke:&r Oben Zahnrad, &6Ofen&r, Zahnrad. Mitte Ofen, &6Gehäuse der Leere&r, Ofen. Unten Eisenbarren, ein &6Messinggehäuse&r von Create, Eisenbarren. Kondensator in den Slot.",
+              "&eRezept auf Kronwerke:&r Oben Zahnrad, &6Ofen&r, Zahnrad. Mitte Ofen, &6Gehäuse der Leere&r, Ofen. Unten Eisenbarren, ein &6Messingrahmen&r von Create, Eisenbarren. Kondensator in den Slot.",
               "",
               "Oben im Fenster wählst du den Modus: Legieren und Schmelzen, nur Legieren, nur Schmelzen. Im Schmelzmodus ist sie ein elektrischer Ofen. Sie zieht &e20 µI/t&r, µI ist dasselbe wie FE.",
           ],
@@ -165,9 +165,9 @@ quests = [
           "&eKronwerke:&r Jeder Stahlbarren zählt am Obelisken für &6Der Ofen schläft nie&r. Sägemühle für Kohlestaub davor, Kiste dahinter: eine kleine Stahlstraße.",
           "mekanism:ingot_steel", 32,
           [reward_item("minecraft:iron_ingot", 16), reward_xp(5)], section="alloys"),
-    alloy("fused_quartz", 15.5, 1, "&fSchmelz Quarzglas und Klares Glas", "Durchsichtig, und manches leuchtet.",
-          "Vier &6Netherquarz&r oder ein Quarzblock geben ein &6Quarzglas&r. Ein &6Glas&r allein wird &6Klares Glas&r.",
-          "Klares Glas steckt in der Flüssigkeitsleitung, Quarzglas in der Seelenampulle und den schnellen Flüssigkeitsleitungen. Mit Glowstone dazu leuchtet es, mit Amethyst wird es dunkel.",
+    alloy("fused_quartz", 15.5, 1, "&fSchmelz Quarzglas und Klarglas", "Durchsichtig, und manches leuchtet.",
+          "Vier &6Netherquarz&r oder ein Quarzblock geben ein &6Quarzglas&r. Ein &6Glas&r allein wird &6Klarglas&r.",
+          "Klarglas steckt in der Flüssigkeitsleitung, Quarzglas in der Seelenampulle und den schnellen Flüssigkeitsleitungen. Mit Glowstone dazu leuchtet es, mit Amethyst wird es dunkel.",
           "enderio:fused_quartz", 8,
           [reward_item("minecraft:quartz", 16)]),
 
@@ -177,7 +177,7 @@ quests = [
           description=[
               "&eRezept auf Kronwerke:&r Oben Zahnrad, &6Feuerstein&r, Zahnrad. Mitte Eisen, &6Gehäuse der Leere&r, Eisen. Unten Obsidian, ein &6Mahlwerkrad&r von Create, Obsidian. Sie heißt &6SAG Mill&r und mahlt, statt zu sägen.",
               "",
-              "Ein Rohes Eisen wird ein &6Pulverisiertes Eisen&r und mit 80 Prozent ein zweites. Kohle wird &6Pulverisierte Kohle&r, Sand mit 50 Prozent &6Silikon&r.",
+              "Ein Rohes Eisen wird ein &6Eisenstaub&r (der von Occultism, nicht Pulverisiertes Eisen) und mit 80 Prozent ein zweiter. Kohle wird &6Pulverisierte Kohle&r, Sand mit 50 Prozent &6Silikon&r.",
               "",
               "&eKronwerke:&r Mehr Eisen aus jedem Erz heißt mehr Stahl, und die Kohle geht direkt in die Schmelze.",
           ],
@@ -210,7 +210,7 @@ quests = [
     quest("conduits", 5, 9, "&9&lLeg Leitungen",
           subtitle="Strom, Gegenstände, Flüssigkeit in einem Block.",
           description=[
-              "Bindemittel oben und unten, drei Barren in die Mitte, gibt acht. &eStrom:&r drei Leitfähige. &eGegenstände:&r Leitfähig, Pulsierend, Leitfähig. &eFlüssigkeit:&r Leitfähig, Klares Glas, Leitfähig. &eRedstone:&r drei Redstone-Legierung.",
+              "Bindemittel oben und unten, drei Barren in die Mitte, gibt acht. &eStrom:&r drei Leitfähige. &eGegenstände:&r Leitfähig, Pulsierend, Leitfähig. &eFlüssigkeit:&r Leitfähig, Klarglas, Leitfähig. &eRedstone:&r drei Redstone-Legierung.",
               "",
               "Verschiedene Leitungen teilen sich &eeinen Block&r, ohne sich zu mischen. Mit Energetischer oder Strahlender Legierung gibt es schnellere Stufen. Die Werte stehen in der Checkliste &eTransport&r.",
               "",
@@ -281,7 +281,7 @@ quests = [
           description=[
               "Oben Soularium, ein &6Mobkopf&r, Soularium. Mitte Soularium, &6Versiegeltes Gerüst&r, Soularium. Unten &6Energetisiertes Zahnrad&r, Eisengitter, Energetisiertes Zahnrad. In die Werkzeugslots eine &6Axt&r und eine &6Schere&r.",
               "",
-              "&6Z-Logic Regler:&r Soularium, &6Zombiekopf&r, Soularium, unten Silikon, Redstone, Silikon. Zombieköpfe gibt es vom geladenen Creeper oder vom Schwert Der Ender.",
+              "&6Z-Logic Regler&r (im Slice'N'Splice, nicht an der Werkbank, 20 000 µI): Soularium, &6Zombiekopf&r, Soularium, unten Silikon, Redstone, Silikon. Zombieköpfe gibt es vom geladenen Creeper oder vom Schwert Der Ender.",
           ],
           tasks=[task_item("enderio:slice_and_splice", 1), task_item("enderio:z_logic_controller", 1)],
           rewards=[reward_item("enderio:energized_gear", 2), reward_xp(10)],
@@ -318,7 +318,7 @@ quests = [
           description=[
               "&6Zombie&r in einen Z-Logic Regler gibt &6Frank'N'Zombie&r. &6Dorfbewohner&r in einen Smaragd gibt den &6Verlockenden Kristall&r. &6Enderman&r in einen Strahlenden Kristall gibt den &6Enderkristall&r für den Stab des Reisenden.",
               "",
-              "Ein &6Kaputter Spawner&r (fällt beim Abbau eines Spawners) nimmt jede Seele und wird Herz des &6Energiebetriebenen Spawners&r.",
+              "Ein &6Kaputter Spawner&r (auf Kronwerke: einen mit Behutsamkeit abgebauten Spawner allein ins Handwerksfeld legen, beim Abbau fällt er nicht) nimmt jede Seele und wird Herz des &6Energiebetriebenen Spawners&r.",
               "",
               "&eKronwerke:&r Ein Dubioser Behälter aus Oritech mit der Seele eines Allays, Phantoms oder Plagegeists wird &6Unheilige Intelligenz&r, die Oritech für späte Addons braucht.",
           ],

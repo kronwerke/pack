@@ -300,7 +300,7 @@ quests = [
     check("tesla_coil", X[8], Y2 + 2, "&6Lad Gegenstände an der Teslaspule",
           "Crafts & Additions: lädt mit 5 000 FE/t, was unter ihr liegt.",
           [
-              "Die &6Teslaspule&r entsteht in der Mechanischen Werkbank aus Kupferspulen, Andesitlegierung, Kondensatoren, Messinggehäuse, Messingblechen und einer Elektronenröhre. Stell sie über ein Depot oder ein Band.",
+              "Die &6Teslaspule&r entsteht in der Mechanischen Werkbank aus Kupferspulen, Andesitlegierung, Kondensatoren, Messingrahmen, Messingblechen und einer Elektronenröhre. Stell sie über ein Depot oder ein Band.",
               "",
               "&eCrafts & Additions, Teslaspule:&r lädt FE-Gegenstände unter sich mit &d5 000 FE/t&r, Rezepte zum Aufladen mit 2 000 FE/t, Puffer &d40 000 FE&r. Sie kann auch Mobs in 3 Blöcken einen Schlag versetzen, jeder kostet 1 000 FE. Offen ab Stufe 2, siehe Kapitel &6Create: Erweiterungen&r.",
           ],

@@ -183,7 +183,7 @@ quests = [
     quest("axe", 15.5, 0, "&2Fäll Bäume mit einem Schlag",
           subtitle="Ferricore-Axt mit Tree Feller.",
           description=[
-              "Zwei &6Ferricore Ingots&r und zwei Stöcke ergeben die &6Ferricore Axe&r. Das &6Tree Feller&r Upgrade sind zwei &6Diamantäxte&r links und rechts von einem Blank Upgrade.",
+              "Drei &6Ferricore Ingots&r und zwei Stöcke ergeben die &6Ferricore Axe&r. Das &6Tree Feller&r Upgrade sind zwei &6Diamantäxte&r links und rechts von einem Blank Upgrade.",
               "",
               "Tree Feller ist passiv: Ein Stamm abgebaut, und alle verbundenen Stämme fallen mit, bis zu 64 Blöcke. Der Schlag dauert dafür etwas länger als bei einem einzelnen Block.",
               "",

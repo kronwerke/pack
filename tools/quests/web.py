@@ -8,7 +8,8 @@ Writes, from the same chapters build.py turns into FTB Quests files:
   OUT_DIR/chapters/<name>.json  one chapter: quests with their place after layout.py, texts in both
                                 languages, tasks, rewards, dependencies (by quest name), canvas pictures
   OUT_DIR/items.json            every item the book names: German and English name, mod, stage
-  OUT_DIR/tex/<ns>/<path>.png   every picture the book shows: camera shots, banners, item textures
+  OUT_DIR/tex/<ns>/<path>.webp  every picture the book shows: camera shots, banners (and each
+                                banner again in English as <name>.en.webp), item textures
   OUT_DIR/help/<chapter>.json   the hand written help of tools/quests/help, if there is any
 
 Texts keep the book's own markup: & colour codes, {image:ns:path width:w height:h align:a} and
@@ -172,6 +173,8 @@ def main():
 
     groups = [{"name": g, "title": {"de": t, "en": tr(t)}} for g, t in ftbq._groups]
     banner_kind = lambda tex: ftbq._banners.get(tex, ("", "section", ""))[1]
+    import banners
+    banners_en = {}
     items, textures = set(), set()
     book = []
     for i, ch in enumerate(chapters):
@@ -215,9 +218,21 @@ def main():
         images = []
         for im in ch["images"]:
             textures.add(im["image"])
-            images.append({"image": im["image"], "x": im["x"], "y": im["y"], "w": im["width"], "h": im["height"],
-                           "rot": im["rotation"], "order": im["order"], "kind": banner_kind(im["image"])
-                           if im["image"] in ftbq._banners else "picture"})
+            one = {"image": im["image"], "x": im["x"], "y": im["y"], "w": im["width"], "h": im["height"],
+                   "rot": im["rotation"], "order": im["order"], "kind": banner_kind(im["image"])
+                   if im["image"] in ftbq._banners else "picture"}
+            if im["image"] in ftbq._banners:
+                # lettering is a picture of German words: the page gets a second one in English,
+                # as tall as the first and as wide as its own words need
+                text, kind, colour = ftbq._banners[im["image"]]
+                en = tr(text)
+                if en != text:
+                    tex_en = im["image"][:-4] + ".en.png"
+                    banners_en[tex_en] = (en, kind, colour)
+                    textures.add(tex_en)
+                    wpx, hpx = banners.measure(en, kind)
+                    one["en"] = {"image": tex_en, "w": round(im["height"] * wpx / hpx, 2)}
+            images.append(one)
         items.add(ch["icon"])
         c = {"name": ch["name"], "title": {"de": ch["title"], "en": tr(ch["title"])},
              "subtitle": {"de": ch["subtitle"], "en": tr(ch["subtitle"])} if ch["subtitle"] else None,
@@ -233,9 +248,8 @@ def main():
         json.dump({"groups": groups, "chapters": book}, f, ensure_ascii=False, separators=(",", ":"))
 
     # the banners are drawn by the build; draw them here too so nothing depends on a build before
-    import banners
     tmp = os.path.join(out, ".banners")
-    for tex, (text, kind, colour) in ftbq._banners.items():
+    for tex, (text, kind, colour) in list(ftbq._banners.items()) + list(banners_en.items()):
         ns, path = tex.split(":", 1)
         banners.write(os.path.join(tmp, ns, path), text, kind, colour)
 

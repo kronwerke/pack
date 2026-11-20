@@ -82,7 +82,7 @@ quests = [
     quest("hemp", 0, 3.8, "&2Bau Industriehanf an",
           subtitle="Fasern für Segel, Gewebe und Pflanzenöl.",
           description=[
-              "&6Industriehanfsamen&r fallen beim Abbauen von hohem Gras. Pflanz sie auf Ackerboden, der obere Block gibt beim Ernten &6Industriehanffasern&r.",
+              "&6Industriehanfsamen&r fallen beim Abbauen von hohem und kurzem Gras, etwa jedes zehnte Mal und nicht mit der Schere. Pflanz sie auf Ackerboden, der obere Block gibt beim Ernten &6Industriehanffasern&r.",
               "",
               "Acht Fasern um einen Stock ergeben &6Robustes Gewebe&r. Daraus werden Windmühlensegel, Sprungkissen und Ballons. Die Samen sind in Stufe 3 der beste Rohstoff für Pflanzenöl.",
           ],
@@ -118,9 +118,9 @@ quests = [
           description=[
               "Stell die &627 Koksziegel&r als &e3x3x3-Würfel&r auf und schlag mit dem Hammer auf die Mitte einer Seite.",
               "",
-              "&eRein:&r bis zu &e16 Kohle&r oder &e8 Stämme&r pro Ladung. &eRaus:&r Koks oder Holzkohle, dazu &bKreosotöl&r im Tank: 500 mB pro Ladung Kohle (5 Minuten), 250 mB pro Ladung Stämme.",
+              "&eRein:&r bis zu &e16 Kohle&r oder &e8 Stämme&r pro Ladung. &eRaus:&r Koks oder Holzkohle, dazu &bKreosotöl&r im Tank: 500 mB pro Kohle (je 5 Minuten), 250 mB pro Stamm.",
               "",
-              "&eTipp:&r Zwei &6Kohleblöcke&r geben einen Koksblock und gleich &e5 000 mB&r Kreosot. Für Kreosot sind Kohleblöcke also viel besser als lose Kohle.",
+              "&eTipp:&r Ein &6Kohleblock&r gibt einen Koksblock und &e5 000 mB&r Kreosot, etwas mehr als neun lose Kohle mit zusammen 4 500 mB. Zwei Blöcke passen auf einmal hinein.",
           ],
           tasks=[task_advancement("immersiveengineering:main/mb_cokeoven", "Einen Koksofen formen")],
           rewards=[reward_item("minecraft:coal", 32), reward_table("s2_common"), reward_xp(10)],
@@ -144,7 +144,7 @@ quests = [
           description=[
               "Neun &6Koks&r ergeben einen &6Koksblock&r, und er wird wieder zu neun.",
               "",
-              "Der Koksofen macht aus zwei Kohleblöcken direkt einen Koksblock, mit zehnmal so viel Kreosot wie eine Ladung loser Kohle.",
+              "Der Koksofen macht aus einem Kohleblock direkt einen Koksblock, mit 5 000 mB Kreosot statt 4 500 mB aus neun losen Kohlen.",
           ],
           tasks=[task_item("immersiveengineering:coke", 4)],
           rewards=[reward_item("minecraft:coal", 16)],
@@ -199,7 +199,7 @@ quests = [
     quest("workbench", 12.5, 2.8, "&6Bau eine Ingenieurswerkbank",
           subtitle="Eine Werkbank, die ihre Zutaten behält.",
           description=[
-              "Drei &6Behandelte Holzstufen&r oben, &6Behandelte Stöcke&r links und rechts, eine normale &6Werkbank&r in der Mitte ergeben die &6Ingenieurswerkbank&r.",
+              "Drei &6Behandelte Holzstufen&r oben, je zwei &6Behandelte Stöcke&r links und rechts darunter, eine normale &6Werkbank&r in der Mitte ergeben die &6Ingenieurswerkbank&r.",
               "",
               "Sie behält die Zutaten im Raster, wenn du sie schließt, und hat eine Schublade. Sie ist außerdem die Zutat für den Ingenieursarbeitstisch.",
           ],
@@ -305,7 +305,7 @@ quests = [
           description=[
               "Sammle &e64 Stahlbarren&r. Roh-Hochofen, Verbesserter Hochofen oder Mekanism, alles zählt.",
               "",
-              "&eKronwerke:&r Das Obelisk-Ziel von &6Stufe 3&r will &e4 000 Stahlbarren&r. Zwei, drei Hochöfen, die jetzt schon laufen, machen das später entspannt. Abgegeben wird später von Hand am Obelisken.",
+              "&eKronwerke:&r Das Obelisk-Ziel von &6Stufe 3&r will bei 30 aktiven Spielern &e4 000 Stahlbarren&r. Zwei, drei Hochöfen, die jetzt schon laufen, machen das später entspannt. Abgegeben wird später von Hand am Obelisken.",
               "",
               "Damit sitzen die Grundlagen: Multiblöcke, Koks, Kreosot, Legierungen und Stahl.",
           ],
@@ -819,7 +819,7 @@ quests = [
     quest("sorter", 8.5, 23.5, "&9Sortier mit dem Element-Router",
           subtitle="Sechs Seiten, jede mit eigenem Filter.",
           description=[
-              "Eine &6Mechanische Eisenkomponente&r oben, ein &6Einfacher Ingenieursbaustein&r, ein &6Förderband&r unten ergeben den &6Element-Router&r.",
+              "Eine &6Mechanische Eisenkomponente&r oben, ein &6Einfacher Ingenieursbaustein&r, ein &6Förderband&r unten ergeben den &6Element Router&r.",
               "",
               "Jede Seite hat eine Farbe und eigene Filterplätze. Was hineinkommt, geht an eine Seite, deren Filter passt, sonst an eine Seite ohne Filter. Passt gar nichts, nimmt er es nicht an.",
               "",

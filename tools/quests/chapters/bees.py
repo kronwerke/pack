@@ -20,7 +20,7 @@ quests = [
     quest("hive", 0, 1, "&e&lBau einen Fortgeschrittenen Bienenstock",
           subtitle="Ein Stock mit Fenster, in den du hineinschauen kannst.",
           description=[
-              "&eRezept:&r oben drei Eichenbretter, in der Mitte &6Honigwabe&r, &6Bienenstock&r (oder Bienennest), Honigwabe, unten &6Lagerfeuer&r, Eichenbrett, &6Schere&r. Honigwaben und Honigflaschen holst du vorher mit einer Schere und Flaschen an einem wilden Bienennest.",
+              "&eRezept:&r oben drei Eichenbretter, in der Mitte &6Honigwabe&r, &6Bienenstock&r (ein Bienennest geht nicht), Honigwabe, unten &6Lagerfeuer&r, Eichenbrett, &6Schere&r. Honigwaben und Honigflaschen holst du vorher mit einer Schere und Flaschen an einem wilden Bienennest.",
               "",
               img("productivebees:textures/block/advanced_beehive/oak_beehive_front.png", 32, 32),
               "",
@@ -334,14 +334,14 @@ quests = [
 
     quest("c_coal", 10.5, 10.2, "&8Züchte die Kohlebiene",
           subtitle="Kohle aus Waben.",
-          description=["&6Magmatic Bee&r und &6Leafcutter Bee&r (Erdnest). Blume: &6Kohleblock&r. Wabe gibt mit 60 Prozent &6Kohle&r. Mit der Magmatic Bee gepaart wird daraus die Schwefelbiene, mit einer CreeBee die Salpeterbiene."],
+          description=["&6Magmatic Bee&r und &6Leafcutter Bee&r (Erdnest). Blume: &6Kohleblock&r. Wabe gibt mit 60 Prozent &6Kohle&r. Mit der Magmatic Bee gepaart wird daraus die Schwefelbiene."],
           tasks=[task_checkmark("Kohlebiene gezüchtet")],
           rewards=[reward_item("minecraft:coal", 32), reward_xp(3)],
           deps=["c_magmatic"], icon="minecraft:coal"),
 
     quest("c_blazing", 12.5, 10.2, "&cZüchte die BlazBee",
           subtitle="Lohenstaub ohne Festung.",
-          description=["&6Magmatic Bee&r und &6Nomad Bee&r (aus Nestern der Ashy Mining Bee). Blume: Magmablock oder Feuer. Wabe gibt mit 30 Prozent &6Lohenstaub&r. Feuerfest, wehrt sich mit Feuer. &eKronwerke:&r Lohenstaub heizt den Messingmixer."],
+          description=["&6Magmatic Bee&r und &6Nomad Bee&r (aus Nestern der Ashy Mining Bee). Blume: Magmablock oder Feuer. Wabe gibt mit 30 Prozent &6Lohenstaub&r. Feuerfest, wehrt sich mit Feuer. &eKronwerke:&r Lohenstaub ist eine Zutat der Messingmischung im beheizten Mixer."],
           tasks=[task_checkmark("BlazBee gezüchtet")],
           rewards=[reward_item("minecraft:blaze_powder", 8), reward_xp(3)],
           deps=["c_coal"], icon="minecraft:blaze_powder"),
@@ -401,7 +401,7 @@ quests = [
           description=[
               "Leg das &6Spawn-Ei einer Eisenbiene&r auf den &6Gießtisch&r und gieß &e810 mB flüssigen Stahl&r darüber. Das Ei wird zum Spawn-Ei der &6Stahlbiene&r. Das ist auf diesem Server der einzige Weg zu Legierungsbienen, züchten lassen sie sich nicht.",
               "",
-              "&eSo geht jede Legierung:&r Ei eines Grundmetalls plus 810 mB (neun Barren) der Legierung. Kupfer- oder Zinnbiene mit &6Bronze&r, Eisen- oder Nickelbiene mit &6Invar&r, Kupfer- oder Nickelbiene mit &6Konstantan&r, Gold- oder Silberbiene mit &6Elektrum&r, Kupfer- oder Zinkbiene mit eingeschmolzenem &6Messing&r.",
+              "&eSo geht jede Legierung:&r Ei eines Grundmetalls plus 810 mB (neun Barren) der Legierung. Kupfer- oder Zinnbiene mit &6Bronze&r, Kupfer- oder Nickelbiene mit &6Konstantan&r, Gold- oder Silberbiene mit &6Elektrum&r. Eine Invarbiene gibt es im Pack nicht, und die Wabe der Messingbiene gibt auf Kronwerke nichts: Messing kommt nur aus dem Mixer.",
               "",
               "Legierungsbienen brauchen einen Block ihrer Legierung als Blume und geben pro Wabe sicher &e4 bis 6 Klumpen&r, die Stahlbiene sogar 7 bis 12.",
               "",
@@ -414,10 +414,10 @@ quests = [
     quest("outlook", 23, 13.5, "&dWas später kommt",
           subtitle="Bienen für Stufe 3 und 4.",
           description=[
-              "&eStufe 3:&r Osmium- und Obsidianbiene (Lavabiene mit Water Bee aus dem Fluss) ergeben die Biene für &6Raffiniertes Obsidian&r. Das Ei der Infused-Iron-Biene wird am Opfertisch zur Biene für &6Himmelsbarren&r, das Manastahl-Ei im Elfenportal zum Ei der &6Elementiumbiene&r.",
+              "&eStufe 3:&r Osmium- und Obsidianbiene (Lavabiene mit Water Bee aus dem Fluss) ergeben die Biene für &6Raffiniertes Obsidian&r. Das Ei der Infused-Iron-Biene wird am Opfertisch zur Biene für &6Himmelsbarren&r, das Manastahl-Ei im Manabecken auf einem Beschwörungskatalysator (25 000 Mana) zum Ei der &6Elementiumbiene&r.",
               "Nomad und Reed Bee ergeben die &6Siliziumbiene&r für AE2, Crystalline und Neon Cuckoo die &6Menrilbiene&r, und Powah macht aus Eisen- und Goldbienen die Biene für &6Energetisierten Stahl&r.",
               "",
-              "&eStufe 4:&r Im End leben die &6Ender Bee&r im Endsteinnest und die &6Draconic Bee&r in Obsidiansäulen. Von der Ender Bee stammen Diamant-, Smaragd-, Erfahrungs- und alle Edelsteinbienen ab, aus der Diamantbiene werden die &6Arkanen Bienen&r von Ars Nouveau und die Netheritbiene. Die Draconic Bee liefert den Drachenstaub für das Produktivitäts-Upgrade, und ein Drachenei wird zur Heißen Zentrifuge.",
+              "&eStufe 4:&r Im End leben die &6Ender Bee&r im Endsteinnest und die &6Draconic Bee&r in Obsidiansäulen. Von der Ender Bee stammen Diamant-, Smaragd-, Erfahrungs- und alle Edelsteinbienen ab, aus der Amethystbiene wird die &6Arkane Biene&r von Ars Nouveau, aus der Diamantbiene die Netheritbiene. Die Draconic Bee liefert den Drachenstaub für das Produktivitäts-Upgrade, und ein Drachenei wird zur Heißen Zentrifuge.",
               "",
               "Alles, was du bis dahin züchtest, bleibt. Eine gute Eisen- und Crystalline-Linie ist der Anfang jeder dieser Bienen.",
           ],

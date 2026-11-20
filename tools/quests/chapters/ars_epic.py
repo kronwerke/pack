@@ -131,7 +131,7 @@ quests = [
     quest("bangle", 7.5, 0, "&6Schmied einen Armreif",
           subtitle="Ars Elemental: Zauberschaden am Handgelenk.",
           description=[
-              "Im Apparat: &6Ring des Potenzials&r in die Mitte, &6Quelljuwelblock&r, &e2 Goldblöcke&r, &5Endkristall&r auf die Podeste.",
+              "Im Apparat: &6Ring des Potenzials&r in die Mitte, &6Quelledelsteinblock&r, &e2 Goldblöcke&r, &5Endkristall&r auf die Podeste.",
               "",
               "Der &6Armreif des Verzauberers&r hat eine Chance, deinen Zauberschaden zu erhöhen, unzuverlässig. Auf eine Schule abgestimmt wird er stabil.",
           ],
@@ -287,7 +287,7 @@ quests = [
     quest("fruits", 10, 3.2, "&aSammle die Archwood-Früchte",
           subtitle="Zutaten für die Tränke von Ars Nouveau.",
           description=[
-              "Vier Früchte, die du in den Truhen von Nexus-Türmen und Arkanen Bibliotheken findest:",
+              "Vier Früchte, die vor allem an wilden Archwood-Bäumen wachsen. Truhen in Nexus-Türmen und Arkanen Bibliotheken geben je eine zufällige:",
               "&6Bastionsfrucht&r: Trank der Verteidigung, weniger Schaden.",
               "&6Frostaya&r: Trank des Frierens, friert das Ziel nach und nach ein. Macht die Insel-Tafel verschneit.",
               "&6Mendosteen&r: Trank der Erholung, jede Heilung wirkt stärker. Steckt auch im Faden des Lebensentzugs.",
@@ -359,7 +359,7 @@ quests = [
     quest("tech_armor", 10, 6, "&6Bau eine Technik-Robe",
           subtitle="Ars Technica: Technomancer, Machinaguard, Artificer.",
           description=[
-              "Im Apparat: ein Robenteil der &eStufe 3&r, &6Mal der Technomantie&r, &6Netheritbarren&r, &e2 Messingbarren&r (beim Helm Messing und Ingenieursbrille), &d7 000 Quelle&r.",
+              "Im Apparat: ein Robenteil der &eStufe 3&r, &6Mal der Technomantie&r (ein Mal der Meisterschaft geht auch), &6Netheritbarren&r, &e2 Messingbarren&r (beim Helm Messing und Ingenieursbrille), &d7 000 Quelle&r.",
               "",
               "Aus dem Arkanisten wird der Technomancer, aus dem Kampfmagier der Machinaguard, aus dem Zauberer der Artificer.",
           ],
@@ -369,9 +369,9 @@ quests = [
 
     # ---- Die Chimäre --------------------------------------------------------------------
     quest("parts", 0, 11, "&5Sammle Teile für sechs Kämpfe",
-          subtitle="Jeder Kampf frisst sechs Wilden-Teile.",
+          subtitle="Jeder Kampf frisst drei Wilden-Teile.",
           description=[
-              "Pro Chimäre: &e3 Teile&r für die Tafel &5Beschwöre Wilden&r (dazu Ärgerlicher Stamm, Lapisblock) und je ein &eStachel&r, &eHorn&r, &eFlügel&r als Zusatz.",
+              "Pro Chimäre: je ein &eStachel&r, &eHorn&r und &eFlügel&r als Zusatz im Ritual. Die Tafel &5Beschwöre Wilden&r hat auch ein Rezept ohne Wilden-Teile, EMI zeigt beide.",
               "",
               "&eHörner&r von Jägern, &eFlügel&r von Pirschern, beide nachts um Wilden-Baue im Wald. &eStacheln&r nur von Verteidigern in kalten Biomen. Ein Wegstein im Schnee spart Wege. Die Tafel Struktur finden mit einem Quelljuwel zeigt den nächsten Wilden-Bau.",
           ],
@@ -383,7 +383,7 @@ quests = [
     quest("phases", 2.5, 11, "&5Lern die vier Phasen",
           subtitle="Was die Chimäre im Kampf tut.",
           description=[
-              "Bei jedem verlorenen Viertel ihrer &c1 000 Lebenspunkte&r hält sie an, ist kurz unverwundbar und bekommt Flügel, Stacheln oder Hörner, bis sie alles hat.",
+              "Bei jedem verlorenen Viertel ihrer Lebenspunkte (&c1 000&r als Basis, mit dem Stufenbonus 1 700 in Stufe 3, 2 200 in Stufe 4 und 2 800 in Stufe 5) hält sie an, ist kurz unverwundbar und bekommt Flügel, Stacheln oder Hörner, bis sie alles hat.",
               "",
               "&eFlügel:&r Sturzflug, der hier Blöcke zerstört. &eStacheln:&r Stachelbeschuss und Einrollen, &ceingerollt nimmt sie keinen Schaden&r und sticht im Nahkampf. &eHörner:&r Anlauf und Rammen.",
               "",

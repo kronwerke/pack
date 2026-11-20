@@ -97,7 +97,7 @@ quests = [
     quest("f_wild_onion", 11, -7, "&aGrab wilde Zwiebeln aus",
           subtitle="In gemäßigten Gegenden.",
           description=[
-              "&6Wildzwiebeln&r, &6Wildkarotten&r und &6Wildkartoffeln&r wachsen in gemäßigten Biomen. Zwiebeln setzt du direkt wieder ein.",
+              "&6Wildzwiebeln&r und &6Wildkarotten&r wachsen in gemäßigten Biomen, &6Wildkartoffeln&r in kalten. Zwiebeln setzt du direkt wieder ein.",
               "",
               "Zwiebeln stecken in gebratenem Reis, Burgern, Eintöpfen und fast jeder großen Mahlzeit.",
           ],
@@ -108,7 +108,7 @@ quests = [
     quest("f_rice", 13, -8, "&6Pflanz Reis ins Wasser",
           subtitle="Wächst mit nassen Füßen.",
           description=[
-              "Setz &6Reis&r in Wasser, das genau einen Block tief ist, mit Erde darunter. Wildreis findest du in Sümpfen und an Flussufern.",
+              "Setz &6Reis&r in Wasser, das genau einen Block tief ist, mit Erde darunter. Wildreis findest du in Sümpfen und anderen feuchten Biomen, nicht an Flüssen.",
               "",
               "Oben wachsen &6Reisrispen&r. Am Schneidebrett werden sie mit dem Messer zu Reis und Stroh.",
           ],
@@ -400,7 +400,7 @@ quests = [
           description=[
               "Oben drei &6grüne Farbstoffe&r, Mitte &6Goldnugget, Weizensamen, Goldnugget&r, unten drei &6Weizen&r: vier Dünger.",
               "",
-              "Gedüngtes Ackerland mit Grün gibt mehr Ertrag. Beide Dünger zusammen ergeben das beste Feld.",
+              "Gedüngtes Ackerland mit Grün gibt mehr Ertrag. Kombinieren lässt sich Grün nur mit Gelb, Rot nur mit Gelb. Rot und Grün zusammen bringen nichts.",
           ],
           tasks=[task_item("farmingforblockheads:green_fertilizer", 4)],
           rewards=[reward_item("minecraft:gold_nugget", 8)],
@@ -456,7 +456,7 @@ quests = [
           description=[
               "Bretter und eine &6Rote Wolle&r oben, &6Holzstämme&r als Gestell, siehe EMI.",
               "",
-              "Der Markt verkauft Samen, Setzlinge, Blumen und Dünger gegen Smaragde, auch die wilden Pflanzen von Farmer's Delight.",
+              "Der Markt verkauft Samen, Setzlinge, Knochenmehl und Baumdünger gegen Smaragde. Blumen, Felddünger und die wilden Pflanzen von Farmer's Delight sind auf Kronwerke nicht im Angebot.",
               "",
               "&eRezept auf Kronwerke:&r Er verkauft auch die Productive-Trees-Hybriden der Generationen 1 bis 3 für 1, 2 und 4 Smaragde, siehe Kapitel Kochen.",
           ],
@@ -556,7 +556,7 @@ quests = [
     quest("f_sushi", 12, 19, "&7Roll Sushi",
           subtitle="Roh, aber lecker.",
           description=[
-              "Ein &6Rohes Fischfilet&r und &6Seetang&r, siehe EMI.",
+              "Ein &6Rohes Fischfilet&r und &6Seegras&r, siehe EMI.",
               "",
               "Schnell gemacht und ein Snack für unterwegs.",
           ],

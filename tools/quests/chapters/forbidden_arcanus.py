@@ -75,7 +75,7 @@ quests = [
     quest("deorum", 7.5, 0, "&6Schmiede Deorum",
           subtitle="Gold, das Magie leitet.",
           description=[
-              "Ein &6Goldbarren&r in die Mitte, links und rechts je ein &6Mundabitur Dust&r, oben und unten je ein &6Arcane Crystal Dust&r, &6Holzkohle&r in die vier Ecken: ein &6Deorum Ingot&r.",
+              "Ein &6Goldbarren&r in die Mitte, links und rechts je ein &6Mundabitur Dust&r, oben und unten je ein &6Arcane Crystal Dust&r, &6Holzkohle&r in die vier Ecken: ein &6Deorum Ingot&r. Auf Kronwerke geht es im beheizten Mixer von Create billiger, EMI zeigt die Rezepte.",
               "",
               pic("forbidden_arcanus:deorum_ingot"),
               "",
@@ -152,7 +152,7 @@ quests = [
           description=[
               "Ein &6Darkstone Pedestal&r: oben drei &6Arcane Polished Darkstone Slabs&r, in der Mitte ein &6Arcane Polished Darkstone Pillar&r (zwei Arcane Polished Darkstone übereinander), unten drei &6Polished Darkstone&r.",
               "",
-              "Podeste gehören auf die &eacht äußeren vergoldeten Blöcke&r. Rechtsklick mit einem Gegenstand legt genau einen darauf, Rechtsklick mit leerer Hand nimmt ihn wieder. Die Schmiede sieht jedes Podest im Umkreis von &e4 Blöcken&r.",
+              "Die vergoldeten Blöcke brauchen nur die Obelisken. Podeste dürfen überall im Umkreis stehen, die acht äußeren Blöcke sind bloß der ordentlichste Platz. Rechtsklick mit einem Gegenstand legt genau einen darauf, Rechtsklick mit leerer Hand nimmt ihn wieder. Die Schmiede sieht jedes Podest im Umkreis von &e4 Blöcken&r.",
               "",
               "Für die ersten Rituale reichen vier Podeste. Spätere Rituale brauchen mehr: das Upgrade der Schmiede auf Stufe 2 legt acht Zutaten aus, die Ferrognetic Mixture sieben. Bau mit der Zeit alle acht.",
           ],
@@ -176,7 +176,7 @@ quests = [
     quest("gavel", 18, 1, "&7Baue einen Blacksmith Gavel",
           subtitle="Der Hammer, der ein Ritual startet.",
           description=[
-              "Erst der Kopf: &e5 Tonklumpen&r in T-Form, drei oben, zwei darunter versetzt, ergeben einen &6Blacksmith Gavel Head&r. Dann der Hammer wie eine Spitzhacke: &6Eisenbarren&r, Kopf, Eisenbarren oben, Eisen, Stock, Eisen in der Mitte, Stock unten: ein &6Iron Blacksmith Gavel&r.",
+              "Erst der Kopf: &e6 Tonklumpen&r, drei oben und drei darunter, ergeben einen &6Blacksmith Gavel Head&r. Dann der Hammer wie eine Spitzhacke: &6Eisenbarren&r, Kopf, Eisenbarren oben, Eisen, Stock, Eisen in der Mitte, Stock unten: ein &6Iron Blacksmith Gavel&r.",
               "",
               "Rechtsklick mit dem Gavel auf die Schmiede startet das Ritual, wenn Zutaten und Essenzen passen. Das kostet &e50 Haltbarkeit&r, der Eisenhammer schafft also 5 Rituale, der Diamanthammer 31.",
               "",
@@ -205,7 +205,7 @@ quests = [
           description=[
               "&6Lost Souls&r sind kleine bleiche Geister, die überall in der Oberwelt auftauchen, oft zu zweit oder dritt. Jede lässt eine &6Soul&r fallen, und eine Soul ist &e1 Seele&r in der Schmiede.",
               "",
-              "Der &6Soul Extractor&r (ein Utrem Jar oben links, darunter zwei Netherziegel und ein Quarzblock, unten ein Netherquarz) zieht aus &6Seelensand&r eine Soul: Rechtsklick halten, der Sand wird zu Soulless Sand. Das Utrem Jar sind acht Glas um ein Edelwood Plank, bis dahin leihst du dir eins oder sammelst von Hand.",
+              "Der &6Soul Extractor&r (ein Utrem Jar oben links, darunter zwei Netherziegel und ein Quarzblock, unten ein Netherquarz) zieht aus &6Seelensand&r eine Soul: Rechtsklick halten, der Sand wird zu Soulless Sand. Das Utrem Jar sind sieben Glas mit einem Edelwood Plank oben in der Mitte, bis dahin leihst du dir eins oder sammelst von Hand.",
               "",
               "&eZehnfach:&r Rechtsklick mit einer &6Aureal Bottle&r auf eine Lost Soul macht eine &6Enchanted Lost Soul&r daraus. Ihre &6Enchanted Soul&r zählt &e10 Seelen&r und ist der beste Brennstoff für den Clibano.",
           ],
@@ -304,7 +304,7 @@ quests = [
               "",
               "Der Clibano schmilzt Erze und Roherze wie ein Schmelzofen in 5 Sekunden. Eine &6Soul&r im Seelenslot macht &bSeelenfeuer&r, 1,5 mal so schnell, eine &6Enchanted Soul&r &dverzaubertes Feuer&r, 2,5 mal so schnell.",
               "",
-              "&eRückstände:&r Bei jedem dritten Erz bleibt ein Rest der Sorte im Clibano. Neun Reste ergeben einen ganzen Block, Eisenblock, Kupferblock oder Arcane Crystal Block. Das ist die Erzvermehrung der Mod.",
+              "&eRückstände:&r Mit einer Chance je nach Erz bleibt ein Rest der Sorte im Clibano: bei Eisen, Kupfer und Kohle etwa jedes dritte Mal, bei Gold jedes fünfte, bei Diamant und Smaragd jedes zehnte, bei Netherit jedes zwanzigste. Neun Reste ergeben einen ganzen Block, Eisenblock, Kupferblock oder Arcane Crystal Block. Das ist die Erzvermehrung der Mod.",
           ],
           tasks=[task_item("forbidden_arcanus:clibano_core", 1)],
           rewards=[reward_item("forbidden_arcanus:polished_darkstone", 32), reward_table("s2_uncommon"), reward_xp(10)],

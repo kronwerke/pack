@@ -50,7 +50,7 @@ quests = [
           description=[
               "Gelbkuchen in den &6Chemischen Oxidierer&r. Ein Stück gibt &e250 mB Uranoxid&r.",
               "",
-              "Häng einen Chemikalientank an den Ausgang, das Oxid wartet dort auf die Säure.",
+              "Häng einen Chemikalienbehälter an den Ausgang, das Oxid wartet dort auf die Säure.",
           ],
           tasks=[task_item("mekanism:chemical_oxidizer", 1)],
           rewards=[reward_item("mekanism:yellow_cake_uranium", 8), reward_xp(5)],
@@ -390,7 +390,7 @@ quests = [
     quest("elytra_module", 12.5, 17.5, "&5Bau Flügel in die MekaSuit",
           subtitle="Die Elytra-Einheit.",
           description=[
-              "&6HDPE Verstärkte Elytra:&r oben HDPE, Atomlegierung, HDPE, Mitte HDPE, eine &6Elytra&r aus der Endstadt, HDPE, unten zwei HDPE in die Ecken. Dann das Modul: Verstärkte Legierung um die HDPE-Elytra und das Basismodul, unten Polonium, ein &5Antimaterie-Pellet&r, Polonium.",
+              "&6HDPE Verstärkte Elytra:&r oben Atomlegierung, HDPE, Atomlegierung, Mitte HDPE, eine &6Elytra&r aus der Endstadt, HDPE, unten zwei HDPE in die Ecken. Dann das Modul: Verstärkte Legierung um die HDPE-Elytra und das Basismodul, unten Polonium, ein &5Antimaterie-Pellet&r, Polonium.",
               "",
               "Die MekaSuit gleitet dann wie mit Elytra, ohne dass du den Brustplatz hergibst. Laut Config kostet das 12 800 FE pro Sekunde Flug.",
           ],
@@ -437,7 +437,7 @@ quests = [
     quest("bulk", 5, 21, "&bBau eine Bulk-Zelle",
           subtitle="Eine Sorte, so viel du willst.",
           description=[
-              "&eRezept auf Kronwerke:&r Bulk-Komponente aus einer &61M-Komponente&r, einer &6Räumlichen Komponente 16³&r, 2 &6Akkumulationsprozessoren&r, &6Himmelssteinstaub&r und einem &5Erwachten Nugget&r. Die Zelle: Vibrierendes Quarzglas, Himmelssteinstaub, 3 Netheritbarren.",
+              "&eRezept auf Kronwerke:&r Bulk-Komponente aus einer &61M-Komponente&r, einer &6Räumlichen Komponente 2³&r, 2 &6Akkumulationsprozessoren&r, &6Himmelssteinstaub&r und einem &5Erwachten Nugget&r. Die Zelle: Polarisiertes Quarzglas, Himmelssteinstaub, 3 Netheritbarren.",
               "",
               "Sie speichert eine einzige Sorte, davon fast beliebig viel. Die &6Komprimierungskarte&r rechnet zwischen Barren, Blöcken und Nuggets um.",
           ],
@@ -450,7 +450,7 @@ quests = [
           description=[
               "Eine Crafting-CPU als Multiblock, auf diesem Server höchstens &e7 mal 7 mal 7&r. Außen &6Quantencomputer-Strukturglas&r, innen &6Kern&r, Einheiten, Speicher, Beschleuniger.",
               "",
-              "Jeder Beschleuniger bringt 8 Threads. Ein Multi-Threader vervierfacht sie, ein Datenverschränker den Speicher, je einer pro Computer. Die Teile brauchen Singularitäten aus der Reaktionskammer von Advanced AE.",
+              "Jeder Beschleuniger bringt 8 Threads. Ein Multi-Threader vervierfacht sie, ein Datenverschränker den Speicher, je einer pro Computer. Die Teile brauchen Singularitäten aus dem Materiekondensator von AE2. Die Reaktionskammer von Advanced AE macht daraus nur zersplitterte Singularitäten.",
           ],
           tasks=[task_item("advanced_ae:quantum_core", 1), task_item("advanced_ae:quantum_structure", 16)],
           rewards=[reward_item("ae2:singularity", 4), reward_xp(15)],

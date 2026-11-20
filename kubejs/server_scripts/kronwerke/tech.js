@@ -171,4 +171,22 @@ ServerEvents.recipes(event => {
     techLevel: 'wyvern',
     totalEnergy: 50000000
   }).id('kronwerke:tech/awakened_draconium_block')
+
+  // Oritech's shortcuts around the pack's metal lines (decided 20.11.2026). Steel from two iron
+  // and two coal in the crafting grid skipped the blast furnace; electrum from gold and redstone
+  // skipped silver in five machines.
+  event.remove({ id: 'oritech:crafting/alloy/steel' })
+  for (let id of ['oritech:crafting/alloy/electrum', 'oritech:foundry/alloy/electrum',
+    'oritech:compat/immersiveengineering/alloying/electrum', 'oritech:compat/immersiveengineering/arcalloying/electrum',
+    'oritech:compat/productivemetalworks/alloying/electrum']) {
+    event.remove({ id: id })
+  }
+
+  // Mahou Tsukai's attuner costs four terrasteel (round.js). It was used up by every gem it
+  // attuned; now it stays in the grid like a tool (decided 20.11.2026).
+  for (let gem of ['diamond', 'emerald']) {
+    event.remove({ id: 'mahoutsukai:attuned_' + gem })
+    event.shapeless('mahoutsukai:attuned_' + gem, ['mahoutsukai:attuner', '#c:gems/' + gem])
+      .keepIngredient('mahoutsukai:attuner').id('kronwerke:tech/attuned_' + gem)
+  }
 })

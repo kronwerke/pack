@@ -217,7 +217,7 @@ quests = [
     quest("r_plates", 6.5, 8.5, "&6Verbinde zwei Orte mit Warpplatten",
           subtitle="Draufstellen, weg, und es kostet nichts.",
           description=[
-              "&eSo geht es:&r Zwei &6Warpplatten&r, ein &6Ruhender Splitter&r (2 Warppulver, Feuerstein) in die erste Platte gelegt wird eingestellt, den trägst du zur zweiten. Ab dann bringt dich jede Platte zur anderen, sobald du eine Dreiviertelsekunde darauf stehst.",
+              "&eSo geht es:&r Zwei &6Warpplatten&r, ein &6Ruhender Splitter&r (2 Warppulver, Feuerstein) in die erste Platte gelegt wird eingestellt, den trägst du zur zweiten. Das ist der Weg zurück zur ersten, für die Gegenrichtung brauchst du einen zweiten Splitter aus der zweiten Platte. Dann bringt dich jede Platte zur anderen, sobald du eine Dreiviertelsekunde darauf stehst.",
               "",
               "&eWarum:&r Warpplatten kosten laut Serverconfig &ekeine Erfahrung&r, auch zwischen Dimensionen nicht. Eine Platte an der Basis, eine am Portal in der Mine oder im Nether, und du sparst dir die 27 Level jedes Mal.",
               "",

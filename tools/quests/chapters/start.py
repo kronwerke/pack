@@ -34,7 +34,7 @@ quests = [
           description=[
               "Such dir einen Platz, bau was Festes hin und sichere es: &eM&r öffnet die Karte, &eC&r die Claim-Ansicht. Mit gedrückter &elinker Maustaste&r über die Chunks deiner Basis ziehen.",
               "",
-              "In deinen Chunks kann niemand außer deinem Team abbauen oder Truhen öffnen. Wie viele Chunks du hast und wie du sie dauerhaft lädst, steht im Kapitel &6Tipps und Tricks&r.",
+              "In deinen Chunks können nur dein Team und deine Verbündeten abbauen oder Truhen öffnen. Wie viele Chunks du hast und wie du sie dauerhaft lädst, steht im Kapitel &6Tipps und Tricks&r.",
               "",
               "Nachts ziehen neben Zombies und Skeletten die Kreaturen aus &6Born in Chaos&r herum, und einige sind zäh. Licht und Wände helfen wie immer.",
           ],
@@ -69,7 +69,7 @@ quests = [
           description=[
               "Halte den Bruchstein in der Hand und mach einen &eRechtsklick&r auf den Obelisken. Der ganze Stapel geht hinein und wird dir gutgeschrieben.",
               "",
-              "&eSchleichen und Rechtsklick&r gibt alles aus deinem Inventar ab, was das Ziel gerade braucht. Was es nicht braucht, bleibt bei dir. Abgaben ab 64 Stück stehen im Chat.",
+              "&eSchleichen und zweimal Rechtsklick&r mit einem Item in der Hand gibt alles aus den drei Reihen deines Inventars ab, was das Ziel gerade braucht. Hotbar, Nebenhand, Rüstung und Rucksäcke bleiben, wie sie sind. Abgaben ab 64 Stück stehen im Chat.",
           ],
           tasks=[task_advancement("kronwerke:steps/deposited", "Etwas abgegeben")],
           rewards=[reward_table("s1_uncommon"), reward_xp(5)],
@@ -80,7 +80,7 @@ quests = [
           description=[
               "Eisen steckt in den Teilen für Create, den ersten Zauber-Geräten, dem Kochtopf und dem Werkzeug von Silent Gear. Eisennuggets und Andesit ergeben &6Andesitlegierung&r, das Material der Technik-Säule am Obelisken.",
               "",
-              "Andesit-Gehäuse, Infundiertes Eisen und ein Quellstein ergeben den &6Grubenrahmen&r, das Tor zur &6Farmwelt&r. Alles dazu im Kapitel &6Erkundung&r.",
+              "Andesitrahmen, Infused Iron und ein Quelljuwel ergeben den &6Grubenrahmen&r, das Tor zur &6Farmwelt&r. Alles dazu im Kapitel &6Erkundung&r.",
           ],
           tasks=[task_item("minecraft:iron_ingot", 16)],
           rewards=[reward_item("minecraft:coal", 16)],
@@ -156,7 +156,7 @@ quests = [
     quest("o_farm", 10.1, 0, "&6Bau eine Farm fürs Ziel",
           subtitle="Die Farm füllt die Truhe, du trägst sie hin.",
           description=[
-              "Bruchstein, Andesitlegierung und Quelljuwelen lassen sich automatisch herstellen. Abgeben musst du selbst: Pack die Ausbeute in einen Rucksack, geh zum Obelisken, und Schleichen mit Rechtsklick gibt alles Passende auf einmal ab.",
+              "Bruchstein, Andesitlegierung und Quelljuwelen lassen sich automatisch herstellen. Abgeben musst du selbst: Trag die Ausbeute im Inventar zum Obelisken (einen Rucksack leert er nicht): Schleichen und zweimal Rechtsklick mit einem Item in der Hand gibt alles Passende aus den drei Inventarreihen auf einmal ab.",
               "",
               "Wie man einen Bruchsteingenerator, eine Legierungsstraße oder eine Juwelenanlage baut, zeigt das Kapitel &6Erste Farmen&r.",
           ],
@@ -191,7 +191,7 @@ quests = [
     quest("o_magic", 13.5, 1.5, "&dFüll die Magie-Säule",
           subtitle="800 Quelljuwelen und 12 Quellschlusssteine.",
           description=[
-              "&6Quelljuwelen&r gibt es nur aus der &aImbuement-Kammer&r: Amethyst hinein, ein &6Quellglas&r mit &dSource&r daneben.",
+              "&6Quelljuwelen&r macht die &aImbuement-Kammer&r: Amethyst oder Lapislazuli hinein, ein &6Quellglas&r mit &dSource&r daneben. Ab Stufe 2 geht es auch im beheizten Mischer von Create.",
               "",
               img(item_texture("ars_nouveau:source_gem"), 32, 32),
               "",
@@ -204,7 +204,7 @@ quests = [
     quest("o_scale", 16, 0, "&6Prüf die echten Mengen",
           subtitle="Mehr Spieler, größere Ziele.",
           description=[
-              "Die Zahlen gelten für &e30 aktive Spieler&r. Aktiv ist, wer in den letzten 7 Tagen mehr als eine Stunde gespielt hat. Beim Öffnen einer Stufe wird die Menge mit diesem Anteil multipliziert, mindestens 0,4, höchstens 1,5, und bleibt dann fest.",
+              "Die Zahlen gelten für &e30 aktive Spieler&r. Aktiv ist, wer in den letzten 7 Tagen mehr als eine Stunde gespielt hat. Beim Öffnen einer Stufe wird die Menge mit diesem Anteil multipliziert, mindestens 0,4, höchstens 1,5, und bleibt dann fest. Nur Stufe 1 startet mit einer vorläufigen Menge und wird nach den ersten 24 Stunden einmal neu berechnet.",
               "",
               "&eAusnahme:&r Die 12 Steinwerk-Getriebe und 12 Quellschlusssteine bleiben immer gleich. Was gerade gilt, zeigen &e/kw goals&r und die Statusseite auf der Website.",
           ],
@@ -310,7 +310,7 @@ quests = [
     quest("m_keystone", 15.75, 6.75, "&dBau einen Quellschlussstein",
           subtitle="Der Meilenstein der Magie-Säule.",
           description=[
-              "Oben: &6Quelljuwelblock&r, &6Quellglas&r, &6Quelljuwelblock&r. Mitte: &bManadiamant&r, &6Andesitlegierung&r, &bManadiamant&r. Unten: &6Quelljuwelblock&r, &6Gold Leaf&r, &6Quelljuwelblock&r.",
+              "Oben: &6Quelledelsteinblock&r, &6Quellglas&r, &6Quelledelsteinblock&r. Mitte: &bManadiamant&r, &6Andesitlegierung&r, &bManadiamant&r. Unten: &6Quelledelsteinblock&r, &6Gold Leaf&r, &6Quelledelsteinblock&r.",
               "",
               img("kronwerke:textures/item/source_keystone.png", 32, 32),
               "",
@@ -360,7 +360,7 @@ quests = [
     quest("m_keyparts", 17.5, 6, "&dSammle die Teile für den Schlussstein",
           subtitle="Vier Juwelblöcke und ein Quellglas.",
           description=[
-              "Ein &6Quelljuwelblock&r sind vier &6Quelljuwelen&r im Quadrat. Oder du legst einen &6Amethystblock&r in die &aImbuement-Kammer&r, das kostet &d2 000 Source&r und spart dir die vier Juwelen.",
+              "Ein &6Quelledelsteinblock&r sind vier &6Quelljuwelen&r im Quadrat. Oder du legst einen &6Amethystblock&r in die &aImbuement-Kammer&r, das kostet &d2 000 Source&r und spart dir die vier Juwelen.",
               "",
               "Das &6Quellglas&r: oben und unten je drei &6Archwood-Platten&r, an den Seiten Glas. Mit Manadiamanten, Andesitlegierung und Gold Leaf hast du dann alles für den &6Quellschlussstein&r.",
           ],
@@ -451,7 +451,7 @@ quests = [
     quest("s_latejoin", 9, 12.25, "&aHol dir dein Starterpaket",
           subtitle="Wer später kommt, fängt nicht bei null an.",
           description=[
-              "Wer später einsteigt, bekommt die &6Starterpakete&r aller Stufen, die schon offen sind. Mit Stufe 2 sind das 16 Messingbarren, ein Lohenbrenner, ein Quellglas und 8 Manaperlen.",
+              "Jede Stufe bringt allen ein &6Starterpaket&r. Wer später einsteigt, bekommt die Pakete aller Stufen, die schon offen sind. Mit Stufe 2 sind das 16 Messingbarren, ein Lohenbrenner, ein Quellglas und 8 Manaperlen.",
               "",
               "So bist du gleich bei den anderen dabei. Wer Hilfe braucht, fragt im Chat oder im Sprachchat.",
           ],
@@ -464,7 +464,7 @@ quests = [
           description=[
               "Einige Rezepte binden die Seiten aneinander. Schon in Stufe 1: das Getriebe braucht &6Infused Iron&r, der Schlussstein &bManadiamanten&r und &6Andesitlegierung&r.",
               "",
-              "Ab Stufe 2: Der &6Lohenbrenner&r braucht 2 &6Quelljuwelen&r, der Runenaltar einen &6Messingbarren&r, &6Manaperlen&r ein &6Messinggehäuse&r unter dem Becken, die Infusionsanlage von Mekanism &6Manastahl&r.",
+              "Ab Stufe 2: Der &6Leere Lohenbrenner&r braucht 2 &6Quelljuwelen&r, der Runenaltar einen &6Messingbarren&r, &6Manaperlen&r einen &6Messingrahmen&r unter dem Becken, die Infusionsanlage von Mekanism &6Manastahl&r.",
               "",
               "Die betroffenen Quests nennen das Rezept jeweils als &eRezept auf Kronwerke&r. Klärt früh, wer was übernimmt.",
           ],
@@ -559,7 +559,7 @@ quests = [
           description=[
               "3 Wolle übereinander: ein &6Schlafsack&r aus Comforts. Damit überspringst du unterwegs die Nacht, dein Spawnpunkt bleibt am Bett.",
               "",
-              "Die &6Hängematte&r (Wolle, Faden, Stöcke) macht dasselbe für den Tag. Jede Farbe geht.",
+              "Die &6Hängematte&r (Wolle, Faden, Stöcke) macht dasselbe für den Tag. Sie hängt zwischen zwei &6Seil und Nägel&r, die du dazu brauchst. Jede Farbe geht.",
           ],
           tasks=[task_checkmark("Habe einen")],
           rewards=[reward_item("minecraft:cooked_beef", 8)],
@@ -589,7 +589,7 @@ quests = [
     quest("p_ars", P1, -2, "&dÖffne Ars Nouveau",
           subtitle="Zauber aus Glyphen, Quelle, Quelljuwelen.",
           description=[
-              "Zauber selbst zusammensetzen, Quellgläser, Sternbunkel und die &aImbuement-Kammer&r, der einzige Weg zu Quelljuwelen für die Magie-Säule.",
+              "Zauber selbst zusammensetzen, Quellgläser, Sternbunkel und die &aImbuement-Kammer&r, der erste Weg zu Quelljuwelen für die Magie-Säule.",
           ],
           tasks=[task_checkmark("Angeschaut")],
           rewards=[reward_xp(2)],

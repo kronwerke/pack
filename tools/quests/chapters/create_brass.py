@@ -90,7 +90,7 @@ quests = [
           description=[
               "Rechtsklicke eine &6Lohe&r mit dem leeren Brenner in der Hand, auch direkt am Spawner in der Festung. Du hältst einen &6Lohenbrenner&r.",
               "",
-              "Unter einem Becken glimmt er nur. Mit Ofenbrennstoff (Kohle, Holz) ist er &cerhitzt&r, mit einem &6Lohenkuchen&r eine Weile &cüberhitzt&r. Eine Schleuse oder ein Arm füttert ihn.",
+              "Unter einem Becken glimmt er nur. Mit Ofenbrennstoff (Kohle, Holz) ist er &cerhitzt&r, mit einem &6Lohenkuchen&r eine Weile &cüberhitzt&r. Ein Einsatzgerät oder ein Arm füttert ihn, eine Schleuse kann das nicht.",
           ],
           tasks=[task_item("create:blaze_burner", 1)],
           rewards=[reward_item("minecraft:coal_block", 8), reward_table("s2_common")],
@@ -252,7 +252,7 @@ quests = [
           description=[
               "Rosenquarz aufs Band, ein &6Einsatzgerät&r mit Schmirgelpapier poliert ihn, zwei &6Handwerkseinheiten&r übereinander setzen ihn auf ein Eisenblech.",
               "",
-              "Pro Präzisionsgetriebe brauchst du im Schnitt über acht Röhren. Ohne diese Linie steht die Präzisionslinie bald still.",
+              "Pro Präzisionsgetriebe brauchst du im Schnitt knapp vier Röhren. Ohne diese Linie steht die Präzisionslinie bald still.",
           ],
           tasks=[task_item("create:electron_tube", 128)],
           rewards=[reward_item("minecraft:quartz", 32), reward_table("s2_uncommon")],
@@ -298,7 +298,7 @@ quests = [
           description=[
               "Presse über Becken: &6Aschenmehl&r, &6Zucker&r und ein &6Ei&r ergeben die &6Lohenkuchenbasis&r. Ein &6Ausguss&r füllt &b250 mB Lava&r hinein: fertig ist der &6Lohenkuchen&r.",
               pic("create:blaze_cake"),
-              "Gib ihn dem Brenner, und er ist eine Weile &cüberhitzt&r. Ein Arm oder eine Schleuse legt nach.",
+              "Gib ihn dem Brenner, und er ist eine Weile &cüberhitzt&r. Ein Arm oder ein Einsatzgerät legt nach.",
           ],
           tasks=[task_item("create:blaze_cake", 4)],
           rewards=[reward_item("minecraft:egg", 16), reward_item("minecraft:sugar", 16), reward_xp(5)],
@@ -408,9 +408,9 @@ quests = [
           deps=["precision"], icon="kronwerke:brass_heart", size=1.75, shape="gear"),
 
     quest("brass_engine", A + 7, 25, "&6&lFütter den Obelisken mit Messing",
-          subtitle="Das Ziel von Stufe 2: Die Messingmaschine.",
+          subtitle="Das Ziel von Stufe 2: Das Messingwerk.",
           description=[
-              "Liefere &6256 Messingbarren&r und &632 Präzisionsgetriebe&r. Abgegeben wird von Hand am Obelisken, Schleichen und Rechtsklick gibt alles Passende ab.",
+              "Liefere &6256 Messingbarren&r und &632 Präzisionsgetriebe&r. Abgegeben wird von Hand am Obelisken: Schleichen und zweimal Rechtsklick mit einem Item in der Hand gibt alles Passende aus den drei Inventarreihen ab.",
               "",
               "&eKronwerke:&r Der Technik-Pfeiler will 2 000 Barren, 150 Getriebe und 8 Herzen. Dafür brauchst du mehrere überhitzte Mixer, Kupfer und Zink aus Mahlwerk und Wäsche, eine Röhrenlinie und mindestens eine Präzisionslinie.",
               "",
@@ -738,7 +738,7 @@ quests = [
           description=[
               "Eisenbleche, Wellen, Legierung und Andesitgehäuse ergeben das &6Walzwerk&r (8 SU pro RPM). Ein Kupferbarren wird zu zwei &6Kupferruten&r, ein Kupferblech zu zwei &6Kupferkabeln&r.",
               "",
-              "Vier Kupferkabel um eine &6leere Spule&r (Eisenbleche und Eisenrute, 24 Stück) ergeben eine &6Kupferspule&r.",
+              "Vier Kupferkabel um eine &6leere Spule&r (Eisenbleche und Eisenrute, 24 Stück) ergeben eine &6Kupferspule&r von Crafts & Additions (im Spiel steht dort der Tippfehler \"Kupfersuple\").",
           ],
           tasks=[task_item("createaddition:rolling_mill", 1), task_item("createaddition:copper_spool", 2)],
           rewards=[reward_item("minecraft:copper_ingot", 32), reward_xp(3)],

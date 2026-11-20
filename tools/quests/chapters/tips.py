@@ -240,7 +240,7 @@ quests = [
     quest("r_obelisk", 6.5, 4, "&6Gib etwas am Obelisken ab",
           subtitle="Jeder Stapel zählt, auch der kleine.",
           description=[
-              "Der &6Obelisk&r steht am Spawn. Halte einen Stapel in der Hand und mach einen &eRechtsklick&r darauf. &eSchleichen&r und Rechtsklick gibt alles aus deinem Inventar ab, was das Ziel gerade braucht.",
+              "Der &6Obelisk&r steht am Spawn. Halte einen Stapel in der Hand und mach einen &eRechtsklick&r darauf. &eSchleichen&r und zweimal Rechtsklick mit einem Item in der Hand gibt alles aus den drei Reihen deines Inventars ab, was das Ziel gerade braucht. Hotbar, Nebenhand, Rüstung und Rucksäcke bleiben.",
               "",
               "In Stufe 1 will das Ziel &6Bruchstein&r, &6Andesitlegierung&r und &6Quelljuwelen&r. Bruchstein hat jeder, also wirf ihn nicht weg. Wie weit es ist, siehst du an der &eBossleiste&r oben und mit &e/kw goals&r.",
               "",

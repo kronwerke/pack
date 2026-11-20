@@ -22,7 +22,7 @@ quests = [
     quest("start", 0, 1.5, "&5&lSchmiede einen Gaia-Geistbarren",
           subtitle="Der Barren, den beide Säulen brauchen.",
           description=[
-              "Ein &6Terrastahlbarren&r in die Mitte, &a4 Gaia-Geister&r oben, unten, links und rechts. Heraus kommt ein &aGaia-Geistbarren&r.",
+              "Ein &6Terrastahlbarren&r in die Mitte, &a4 Gaia-Seelen&r oben, unten, links und rechts. Heraus kommt ein &aGaia-Geistbarren&r.",
               "",
               "Das Ziel von Stufe 5 heißt &5Der Chaoswächter&r. Es öffnet keine Stufe mehr, es will die Dinge, die den Endkampf möglich machen:",
               "&6Technik:&r &e64 Erwachte Draconiumblöcke&r (fest) und &e100 Antimaterie-Pellets&r.",
@@ -53,7 +53,7 @@ quests = [
           description=[
               "Das &6SPS&r macht aus &e1 000 mB Polonium&r &e1 mB Antimaterie&r. Der &6Chemische Kristallisator&r macht aus 1 000 mB Antimaterie ein &5Pellet&r.",
               "",
-              "Ein Pellet braucht also eine Million mB Polonium. Hundert davon will der Obelisk, jedes zählt 30 Punkte. Das heißt: mehrere Spaltreaktoren und Strom aus allem, was ihr habt.",
+              "Ein Pellet braucht also eine Million mB Polonium. Hundert davon will der Obelisk bei 30 aktiven Spielern, jedes zählt 30 Punkte. Das heißt: mehrere Spaltreaktoren und Strom aus allem, was ihr habt.",
               "",
               "Alles dazu im Kapitel &5Mekanism: Antimaterie&r.",
           ],
@@ -65,9 +65,9 @@ quests = [
     quest("magic", 2.75, 3.5, "&dPlant die Gaia-Kämpfe",
           subtitle="Rund 640 Geister, das sind viele Abende.",
           description=[
-              "Verabredet feste Abende für Kämpfe gegen die &aGaia-Wächterin&r. Jeder Spieler im Kampf bekommt &e6 Gaia-Geister&r, wer den letzten Treffer landet, &e8&r.",
+              "Verabredet feste Abende für Kämpfe gegen die &aGaia-Wächterin&r. Jeder Spieler im Kampf bekommt &e6 Gaia-Seelen&r, wer den letzten Treffer landet, &e8&r.",
               "",
-              "Die Rechnung: 128 Barren für den Obelisken und 32 für die Fusionen sind 160 Barren, also &e640 Gaia-Geister&r. Mit vier Leuten pro Kampf sind das gut 25 Kämpfe.",
+              "Die Rechnung: 128 Barren für den Obelisken (bei 30 aktiven Spielern) und 32 für die Fusionen sind 160 Barren, also &e640 Gaia-Seelen&r. Mit vier Leuten pro Kampf sind das gut 25 Kämpfe.",
               "",
               "Jeder abgegebene Barren zählt 25 Punkte. Die Kämpfe stehen im Kapitel &aBotania: Gaia&r.",
           ],
@@ -235,7 +235,7 @@ quests = [
     quest("m_ingots", 5.25, 5, "&d&lSchmiede 32 Gaia-Geistbarren",
           subtitle="Genug für 16 Fusionen.",
           description=[
-              "&e32 Gaia-Geistbarren&r sind 128 Gaia-Geister, also viele Kämpfe gegen die Gaia-Wächterin. Genau so viele brauchen die Techniker für alle 16 Fusionen von Erwachtem Draconium.",
+              "&e32 Gaia-Geistbarren&r sind 128 Gaia-Seelen, also viele Kämpfe gegen die Gaia-Wächterin. Genau so viele brauchen die Techniker für alle 16 Fusionen von Erwachtem Draconium.",
               "",
               "Wer sie hat, entscheidet gemeinsam, was zuerst geht: in den Fusionskern oder in den Obelisken. Beides zählt für dasselbe Ziel.",
           ],

@@ -84,7 +84,7 @@ quests = [
     quest("behaviour", 7.75, -2.5, "&5Lern, was er tut",
           subtitle="Bleib weg vom Lila.",
           description=[
-              "Allein hat er &e320 Lebenspunkte&r, jeder weitere Spieler bringt ein Viertel dazu: zu zweit 480, zu viert 640.",
+              "Botania gibt ihm &e320 Lebenspunkte&r allein, 480 zu zweit, 640 zu viert. Auf Kronwerke kommt der Stufenbonus dazu: In Stufe 4 sind es allein etwa &e704&r.",
               "",
               "Er &eteleportiert&r sich durch die Arena, schießt &dlila Geschosse&r, legt &dlila Fallen&r auf den Boden und ruft &eWellen von Monstern&r. Wer die Arena verlässt, wird zurückgeholt.",
           ],
@@ -95,7 +95,7 @@ quests = [
     quest("fight", 7.75, 5.2, "&d&lBesiege den Wächter von Gaia",
           subtitle="Der erste Kampf.",
           description=[
-              "Starte das Ritual und gewinne. &eJeder Mitkämpfer bekommt 6&r Gaia-Seelen, &ewer den letzten Treffer setzt, 8&r. Mit 20 Prozent fällt eine Schallplatte dazu.",
+              "Starte das Ritual und gewinne. &eJeder, der den Wächter getroffen hat, bekommt 6&r Gaia-Seelen, &ewer den letzten Treffer setzt, 8&r. Mit 20 Prozent fällt eine Schallplatte dazu.",
               "",
               pic("botania:gaia_spirit"),
           ],

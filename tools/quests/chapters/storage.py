@@ -657,7 +657,7 @@ quests = [
               "",
               "Sie löscht alles, was hineinkommt, per Hand, Trichter oder Förderband. Ihr Filter hat &e9 Plätze&r als Whitelist oder Blacklist.",
               "",
-              "&cAchtung:&r Bruchstein vorher abgeben, der Obelisk braucht ihn. Schleichen und Rechtsklick am Obelisken gibt alles ab, was das Ziel brauchen kann.",
+              "&cAchtung:&r Bruchstein vorher abgeben, der Obelisk braucht ihn. Am Obelisken: Schleichen und zweimal Rechtsklick mit einem Item in der Hand gibt alles Passende aus den drei Inventarreihen ab.",
           ],
           tasks=[task_item("trashcans:item_trash_can", 1)],
           rewards=[reward_xp(3), reward_table("s1_common")],

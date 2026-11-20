@@ -86,7 +86,7 @@ quests = [
     quest("wand_elven", 12.5, 1.2, "&6Schnitz Traumholzzweige",
           subtitle="Griffe für alles Elfische.",
           description=[
-              "Werkbank: &62 Traumholzstämme&r übereinander ergeben &61 Traumholzzweig&r.",
+              "Werkbank: &62 Traumholzstämme&r diagonal ergeben &61 Traumholzzweig&r.",
               "",
               "Zweige stecken in den Elementiumwerkzeugen und im &6Stab des Elfenwaldes&r (3 Zweige, 2 Blütenblätter), der Elfenvariante des Stabs des Waldes.",
           ],
@@ -147,7 +147,7 @@ quests = [
               "",
               pic("botania:pixie_dust"),
               "",
-              "Feenstaub steckt in den neuen Blumen, im Corporea-Funken, im Zauberkatalysator, im Großen Feenring und zweimal in jedem &dElfenstern&r. Die Perlenfabrik aus Stufe 2 (Messinggehäuse unter dem Becken) läuft einfach weiter.",
+              "Feenstaub steckt in den neuen Blumen, im Corporea-Funken, im Zauberkatalysator, im Großen Feenring und zweimal in jedem &dElfenstern&r. Die Perlenfabrik aus Stufe 2 (Messingrahmen unter dem Becken) läuft einfach weiter.",
           ],
           tasks=[task_item("botania:pixie_dust", 8)],
           rewards=[reward_item("botania:mana_pearl", 4), reward_xp(5)],

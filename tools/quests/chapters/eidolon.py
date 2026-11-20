@@ -133,7 +133,7 @@ quests = [
           description=[
               "&6Wooden Altar&r: Holzstufen über Brettern, gibt drei. &6Straw Effigy&r: fünf Weizen im Kreuz. Bildnis oben drauf.",
               "",
-              "Kerzen, Schädel von Untoten und seltene Kräuter im Topf auf dem Altar erhöhen &ePower&r und &eCapacity&r. Pro Sorte zählt nur das beste Stück.",
+              "Kerzen von Eidolon (normale Kerzen zählen nicht), Schädel von Untoten und seltene Kräuter im Topf auf dem Altar erhöhen &ePower&r und &eCapacity&r. Pro Sorte zählt nur das beste Stück.",
           ],
           tasks=[task_item("eidolon_repraised:wooden_altar", 3), task_item("eidolon_repraised:straw_effigy", 1)],
           rewards=[reward_item("minecraft:candle", 4), reward_xp(3)],
@@ -189,7 +189,7 @@ quests = [
     quest("sign_soul", 12.5, 6, "&dEmpfang das Soul Sign",
           subtitle="Das Zeichen, das Seelen bindet.",
           description=[
-              "Bete und opfere weiter. Mit genug Gunst bekommst du das &dSoul Sign&r.",
+              "Das &dSoul Sign&r bekommst du mit deinem ersten Tieropfer am Altar. Das Blood Sign folgt, wenn deine Gunst Stufe 3 erreicht.",
               "",
               "Damit kennst du &5Touch of Darkness&r (Wicked, Soul, Wicked, Soul). Die Gesänge mit Flame, Winter oder Death stehen im Codex, sobald du die Zeichen hast.",
           ],
@@ -390,7 +390,7 @@ quests = [
           subtitle="Halber Schaden von Magie und Wither.",
           description=[
               "&6Wicked Weave&r: &e8 weiße Wolle&r um einen &6Shadow Gem&r, extra ein &6Unholy Symbol&r und &6blauer Farbstoff&r. Das gibt &e8&r Stück.",
-              "&6Warlock's Cloak&r: &e7 Wicked Weave&r in Brustplattenform, extra &e2 Soul Shards&r.",
+              "&6Warlock's Cloak&r: &e8 Wicked Weave&r in Brustplattenform, extra &e2 Soul Shards&r.",
               "",
               "Der Umhang halbiert Magie- und Witherschaden. Der Hut gibt &d50 Prozent&r mehr Magie- und Witherschaden, die Stiefel machen dich immun gegen Langsamkeit.",
           ],

@@ -31,7 +31,7 @@ quests = [
     quest("welcome", 0, 1, "&b&lBau einen Meteoritenkompass",
           subtitle="Er zeigt zum nächsten Meteoriten.",
           description=[
-              "Bau ein &6Ladegerät&r (Eisen rundum, ein &6Kupferbarren&r oben in der Mitte, rechts offen) und leg einen normalen &6Kompass&r hinein. Strom kommt über ein Kabel oder eine &6Holzkurbel&r obendrauf (drei Stöcke, ein Kupferbarren), die du von Hand drehst.",
+              "Bau ein &6Ladegerät&r (Eisen links und in den Ecken, je ein &6Kupferbarren&r oben und unten in der Mitte, Mitte und rechts Mitte frei) und leg einen normalen &6Kompass&r hinein. Strom kommt über ein Kabel oder eine &6Holzkurbel&r obendrauf (vier Stöcke, ein Kupferbarren), die du von Hand drehst.",
               "",
               "&bApplied Energistics 2&r speichert Gegenstände als Daten auf &6Speicherzellen&r. Ein Kabelnetz verbindet Zellen, Konsolen und Maschinen, und später baut das Netz Dinge selbst.",
               "",
@@ -48,7 +48,7 @@ quests = [
           description=[
               "Folg dem Kompass und grab dich in den Krater. Nimm &616 Certusquarzkristalle&r und &616 Himmelsstein&r mit. Im Ofen wird Himmelsstein zum &6Himmelssteinblock&r für den Controller.",
               "",
-              "&cAchtung:&r Einen &6Makellosen Certusquarzknospenblock&r nie abbauen. Selbst mit Behutsamkeit wird er unrein, und makellos bekommst du ihn nicht zurück. Lass ihn stehen und ernte die Cluster daran.",
+              "&cAchtung:&r Einen &6Makellosen Certusquarzknospenblock&r nie abbauen. Selbst mit Behutsamkeit wird er unrein, und makellos bekommst du ihn erst in Stufe 3 mit dem &6Crystal Fixer&r von Extended AE zurück. Lass ihn stehen und ernte die Cluster daran.",
           ],
           tasks=[task_item("ae2:certus_quartz_crystal", 16), task_item("ae2:sky_stone_block", 16)],
           rewards=[reward_item("minecraft:iron_ingot", 16), reward_xp(5)],
@@ -110,7 +110,7 @@ quests = [
     quest("inscriber", 0, 5.5, "&7Bau eine Gravurmaschine",
           subtitle="Sie presst, druckt und mahlt.",
           description=[
-              "&6Eisen&r rundherum, je eine &6Mechanische Presse&r aus Create oben und unten in der Mitte, ein &6Kupferbarren&r links in der Mitte, rechts bleibt frei.",
+              "&6Eisen&r rundherum, je eine &6Mechanische Presse&r aus Create oben und unten in der Mitte, ein &6Kupferbarren&r links in der Mitte, rechts in der Mitte Eisen, das Zentrum bleibt frei.",
               "",
               "&eSo liest du das Fenster:&r oben und unten die Pressen, in die Mitte das Material. Ohne Presse mahlt sie: Certus zu Certusquarzstaub, Enderperlen zu Enderstaub, Himmelsstein zu Himmelssteinstaub.",
               "",
@@ -127,7 +127,7 @@ quests = [
               "",
               "&eRezept auf Kronwerke:&r Der &6Fortgeschrittene Steuerschaltkreis&r von Mekanism ist ein Einfacher Steuerschaltkreis, zwei Infundierte Legierungen und ein &6Gedrucktes Silizium&r an der Werkbank. Einen anderen Weg gibt es nicht.",
               "",
-              "&eKronwerke:&r Das Ziel von Stufe 3, &e\"Der Ofen schläft nie\"&r, will &e250 Fortgeschrittene Steuerschaltkreise&r.",
+              "&eKronwerke:&r Das Ziel von Stufe 3, &e\"Der Ofen schläft nie\"&r, will bei 30 aktiven Spielern &e250 Fortschrittliche Steuerschaltkreise&r.",
           ],
           tasks=[task_item("ae2:printed_silicon", 16)],
           rewards=[reward_item("mekanism:alloy_infused", 8), reward_xp(5)],
@@ -235,7 +235,7 @@ quests = [
           description=[
               "&eRezept auf Kronwerke:&r &6Himmelssteinblöcke&r in die vier Ecken, ein &6Spirit Attuned Gem&r von Occultism oben in die Mitte, &6Fluixkristalle&r links, rechts und unten in der Mitte, ein &6Konstruktionsprozessor&r ins Zentrum.",
               "",
-              "Das Juwel machst du aus Lapis im Geisterfeuer, siehe Kapitel &5Occultism&r. Jede Seite des Controllers gibt &e32 Kanäle&r aus.",
+              "Das Juwel machst du aus einem Diamanten im Geisterfeuer, siehe Kapitel &5Occultism&r. Jede Seite des Controllers gibt &e32 Kanäle&r aus.",
               "",
               "&eRegeln:&r ein Controller pro Netz, er darf aus mehreren Blöcken bestehen, alles in 7 x 7 x 7. Er braucht &d6 AE/t&r pro Block. Wird ein Block rot, stimmt die Form nicht.",
           ],
@@ -397,7 +397,7 @@ quests = [
               "",
               "Ein Exportbus mit Fertigungskarte an einer Kiste hält den Vorrat, bis du ihn zum Obelisken trägst. Wer viel Silizium braucht, baut den &6Circuit Slicer&r von Extended AE weiter unten.",
               "",
-              "&eKronwerke:&r &e\"Der Ofen schläft nie\"&r will &e250 Fortgeschrittene Steuerschaltkreise&r, &e4 000 Stahlbarren&r und &e8 Stahlkerne&r. Abgegeben wird von Hand am Obelisken, und es zählt für den, der abgibt.",
+              "&eKronwerke:&r &e\"Der Ofen schläft nie\"&r will bei 30 aktiven Spielern &e250 Fortschrittliche Steuerschaltkreise&r und &e4 000 Stahlbarren&r, dazu immer &e8 Stahlkerne&r. Abgegeben wird von Hand am Obelisken, und es zählt für den, der abgibt.",
           ],
           tasks=[task_item("mekanism:advanced_control_circuit", 64), task_item("ae2:engineering_processor", 16)],
           rewards=[reward_table("s3_rare"), reward_item("ae2:cell_component_16k", 1), reward_xp(25)],
@@ -428,7 +428,7 @@ quests = [
     p2p("p2p_light", 4.5, 23, "ae2:light_p2p_tunnel", "Bau einen Licht-Tunnel",
         "Licht von hier nach dort.", "einer &6Fackel&r oder &6Glowstone&r"),
     p2p("p2p_chemical", 6.5, 23, "appmek:chemical_p2p_tunnel", "Bau einen Chemie-Tunnel",
-        "Mekanism-Gase ohne Druckrohr (Applied Mekanistics).", "einem &6Chemikalientank&r von Mekanism"),
+        "Mekanism-Gase ohne Druckrohr (Applied Mekanistics).", "einem &6Chemikalienbehälter&r von Mekanism"),
 
     # ---- Geräte und Zellen -------------------------------------------------------
     quest("interface", 10, 22, "&6Bau eine ME-Schnittstelle",

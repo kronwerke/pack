@@ -210,7 +210,7 @@ quests = [
           description=[
               "&6Create&r, &6Mechanischer Arm&r: greift aus beliebig vielen Eingängen und legt in beliebig viele Ausgänge im Umkreis von &e5 Blöcken&r, Ziele vor dem Setzen anklicken. Filter nur über Messing-Trichter als Ziel. &eStufe 2.&r",
               "",
-              "Messingbleche, Andesitlegierung, Messinggehäuse und ein Präzisionsgetriebe. Verteilt nach Rundlauf, erzwungenem Rundlauf oder dem ersten gewählten Ziel.",
+              "Messingbleche, Andesitlegierung, Messingrahmen und ein Präzisionsgetriebe. Verteilt nach Rundlauf, erzwungenem Rundlauf oder dem ersten gewählten Ziel.",
               "",
               "Ein Arm füttert ein Dutzend Mixer aus einem Depot. Siehe Kapitel Create: Messing.",
           ],
@@ -509,10 +509,10 @@ quests = [
           rewards=[reward_table("s1_common"), reward_xp(5)],
           deps=["fluids_when"], icon="minecraft:glass_bottle", size=1.75, shape="hexagon"),
 
-    quest("mek_tube", col(0), 11.5, "Lies: Druckrohre und Chemikalientanks",
+    quest("mek_tube", col(0), 11.5, "Lies: Druckrohre und Chemikalienbehälters",
           subtitle="Mekanism, Druckrohr: 750 mB pro Tick, Tank 64 000 mB.",
           description=[
-              "&6Mekanism&r, &6Einfaches Druckrohr&r: zieht &e750 mB Gas pro Tick&r, Fortgeschritten 2 000 (Stufe 3), Elite 64 000 und Ultimativ 256 000 (Stufe 4). &6Chemikalientank&r: &e64 000 mB&r, dann 256 000, 1 024 000 und 8 192 000 mB. Kein Filter, Seiten mit dem Konfigurator. &eStufe 2.&r",
+              "&6Mekanism&r, &6Einfaches Druckrohr&r: zieht &e750 mB Gas pro Tick&r, Fortgeschritten 2 000 (Stufe 3), Elite 64 000 und Ultimativ 256 000 (Stufe 4). &6Chemikalienbehälter&r: &e64 000 mB&r, dann 256 000, 1 024 000 und 8 192 000 mB. Kein Filter, Seiten mit dem Konfigurator. &eStufe 2.&r",
               "",
               "Zwei Stahlbarren und ein Glas ergeben acht Rohre. Sauerstoff, Wasserstoff, Chlor und alles andere aus dem Kapitel Mekanism: Fortgeschritten.",
           ],

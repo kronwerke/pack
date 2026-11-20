@@ -3,7 +3,7 @@ herbs one by one, the witch woods, the Mixing Cauldron with tallow, candles, blo
 the cauldron crafts, the drying rack, sage and the Pestle and Mortar, every potion a candle can
 carry (checklist), the brooms with all brushes and tips, crows and owls. Numbers come from the
 recipe jsons, the Book of Shadows text and config/Hexerei-common.toml."""
-from ftbq import (chapter, quest, task_item, task_checkmark, reward_item, reward_table,
+from ftbq import (chapter, quest, task_item, task_any, task_checkmark, reward_item, reward_table,
                   reward_xp, banner, img, item_texture)
 
 C = "hexerei"
@@ -47,7 +47,7 @@ quests = [
               "",
               "Leg das Book of Shadows darauf, dann liest du es im Stehen. Andere Items stellt er aus. Brennende Kerzen in der Nähe schweben um ihn herum.",
           ],
-          tasks=[task_item("hexerei:book_of_shadows_altar", 1)],
+          tasks=[task_any("hexerei_altar", ["hexerei:book_of_shadows_altar", "hexerei:willow_altar", "hexerei:witch_hazel_altar"], "Altar, aus jedem der drei Hölzer")],
           rewards=[reward_xp(3)],
           deps=["welcome"], icon="hexerei:book_of_shadows_altar", optional=True),
 
@@ -125,7 +125,7 @@ quests = [
           description=[
               "Rechtsklick auf den reifen &6Yellow Dock&r gibt &6Yellow Dock Leaves&r und &6Yellow Dock Flowers&r.",
               "",
-              "Wie beim Mugwort: Blätter in die normale Bürste, Blüten in die Enhanced Brush, getrocknet beide ins Krähen-Ankh und in die Replacer Satchel.",
+              "Wie beim Mugwort: Blätter in die normale Bürste, Blüten in die Enhanced Brush, getrocknet beide ins Krähen-Ankh. Die Replacer Satchel nimmt nur die getrockneten Blüten.",
           ],
           tasks=[task_item("hexerei:yellow_dock_leaves", 4), task_item("hexerei:yellow_dock_flowers", 2)],
           rewards=[reward_item("minecraft:bone_meal", 8)],
@@ -262,7 +262,7 @@ quests = [
           subtitle="Hut, Robe und Stiefel.",
           description=[
               "Im Wasserkessel: &e2 schwarzer Farbstoff&r, &e4 Leder&r, &e2 Fäden&r ergeben &e2 Infused Fabric&r.",
-              "Hut aus &e5&r, Robe aus &e7&r, Stiefel aus &e4&r Stoff, geformt wie normale Rüstung. Das sind 16 Stoff, also acht Mischungen.",
+              "Hut aus &e5&r, Robe aus &e8&r, Stiefel aus &e4&r Stoff, geformt wie normale Rüstung. Das sind 17 Stoff, also neun Mischungen.",
               "",
               "Das ganze Set gibt ein paar Vorteile. Jedes Teil lässt sich färben, benannt wechselt es die Farbe.",
           ],
@@ -547,7 +547,7 @@ quests = [
               "",
               "Empfänger ist ein Spieler oder ein &6Courier Depot&r, der Briefkasten aus Hexerei-Planken. Auf einem Server mit vielen Basen der schönste Weg, Freunden etwas zu schicken.",
           ],
-          tasks=[task_item("hexerei:courier_package", 1), task_item("hexerei:willow_courier_depot", 1)],
+          tasks=[task_item("hexerei:courier_package", 1), task_any("hexerei_depot", ["hexerei:willow_courier_depot", "hexerei:mahogany_courier_depot", "hexerei:witch_hazel_courier_depot"], "Courier Depot, aus jedem der drei Hölzer")],
           rewards=[reward_item("minecraft:cod", 8), reward_xp(5)],
           deps=["crow"], icon="hexerei:courier_package", optional=True),
 
@@ -571,7 +571,7 @@ quests = [
               "",
               "Er schneidet Holz und Planken wie eine Steinsäge: verbundene Plankenmuster, die es nur hier gibt, und Treppen, Stufen und mehr mit weniger Verschnitt als an der Werkbank.",
           ],
-          tasks=[task_item("hexerei:willow_woodcutter", 1)],
+          tasks=[task_any("hexerei_woodcutter", ["hexerei:willow_woodcutter", "hexerei:mahogany_woodcutter", "hexerei:witch_hazel_woodcutter"], "Woodcutter, aus jedem der drei Hölzer")],
           rewards=[reward_item("hexerei:willow_planks", 16), reward_xp(3)],
           deps=["woods"], icon="hexerei:willow_woodcutter", optional=True),
 

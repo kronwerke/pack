@@ -80,7 +80,7 @@ Theme: brass, the Nether, mana, the first machines that do work while you sleep.
 | Pillar | Item | Base amount | Points each | Why |
 | --- | --- | --- | --- | --- |
 | Tech | Brass Ingot | 2 000 | 1 | A heated mixer makes one per blaze powder, a superheated one two. |
-| Tech | Precision Mechanism | 150 | 5 | Five loops on a brass sheet, 60 percent come out. Forces a real sequenced assembly line. |
+| Tech | Precision Mechanism | 150 | 5 | Three loops on a brass sheet, 80 percent come out. Forces a real sequenced assembly line. |
 | Tech | Messingherz (milestone) | 8, fixed | 300 | Brass casings, a precision mechanism, electron tubes, a blaze burner and a fire rune. |
 | Magic | Mana Pearl | 600 | 2 | 6 000 mana each, and only with a brass casing under the pool. |
 | Magic | Terrasteel Ingot | 50 | 20 | The terra plate and half a pool each. |

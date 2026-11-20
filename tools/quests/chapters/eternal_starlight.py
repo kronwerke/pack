@@ -226,7 +226,7 @@ quests = [
     quest("weapons", 10, 4, "&cBau eine Springstone-Sense",
           subtitle="Die erste Sense.",
           description=[
-              "Werkbank: &63 Thermal Springstone Ingots&r oben, &62 Stöcke&r darunter, wie eine Spitzhacke. Das ergibt die &6Thermal Springstone Scythe&r.",
+              "Werkbank: &63 Thermal Springstone Ingots&r oben, &62 Stöcke&r darunter in der rechten Spalte, nicht in der Mitte wie bei einer Spitzhacke. Das ergibt die &6Thermal Springstone Scythe&r.",
               "",
               "Sensen sind eine eigene Waffenart neben Schwert und Axt. Zubehör legst du wie in ein Bündel hinein. Geht das Teil kaputt, ist das Zubehör weg.",
           ],

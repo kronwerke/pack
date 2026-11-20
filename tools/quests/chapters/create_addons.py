@@ -131,7 +131,7 @@ quests = [
     quest("tracks", A + 12.5, 1, "&6Verleg eine Einschienenbahn",
           subtitle="Monorail, Endergleis, Phantomgleis.",
           description=[
-              "&6Einschienengleis&r entsteht durch sequenzielle Montage: ein &6Metallträger&r aufs Band, ein Einsatzgerät setzt eine &6Metallstrebe&r, eines ein &6Eisenblech&r, eine Presse drückt, sechs Gleise pro Träger. Darauf fährt ein eigenes Monorail-Drehgestell, das du wie gewohnt mit dem Zugrahmen aufs Gleis klickst. Die Schiene kann auch über dem Zug hängen.",
+              "&6Einschienengleis&r entsteht durch sequenzielle Montage: ein &6Metallträger&r aufs Band, ein Einsatzgerät setzt eine &6Metallhalterung&r, eines ein &6Eisenblech&r, eine Presse drückt, sechs Gleise pro Träger. Darauf fährt ein eigenes Monorail-Drehgestell, das du wie gewohnt mit dem Zugrahmen aufs Gleis klickst. Die Schiene kann auch über dem Zug hängen.",
               "",
               "&6Phantomgleise&r (Phantomhaut, Eisen, 32 Stück pro Haut) sind unsichtbar, solange du keins in der Hand hast, und passen zu jeder Spurweite. &6Endergleise&r aus Endsteinziegelstufen kommen mit dem End in Stufe 4. &6Gleise ohne Schwellen&r gibt es für Brücken aus Metallträgern.",
               "",
@@ -147,7 +147,7 @@ quests = [
           description=[
               "Vier &6Zahnräder&r um einen &6Drehzahlregler&r ergeben ein &6Messing-Getriebe&r. Jede seiner vier Seiten lässt sich mit dem Schraubenschlüssel einzeln auf vorwärts oder rückwärts stellen.",
               "",
-              "Das &66-Wege-Getriebe&r (Andesitgehäuse, drei Zahnräder und zwei große Zahnräder, oder ein Getriebe plus zwei große Zahnräder) hat Wellen an allen sechs Seiten, oben und unten mit halber Drehzahl. Der &6Kreuzverbinder&r (vier Wellen um ein Getriebe) führt zwei Wellen unabhängig voneinander durch denselben Block.",
+              "Das &66-Wege-Getriebe&r (Andesitgehäuse, vier Zahnräder und zwei große Zahnräder, oder ein Getriebe plus zwei große Zahnräder) hat Wellen an allen sechs Seiten, oben und unten mit halber Drehzahl. Der &6Kreuzverbinder&r (vier Wellen um ein Getriebe) führt zwei Wellen unabhängig voneinander durch denselben Block.",
               "",
               "Dazu kommen das &6Armaturenbrett&r (Anzeigetafel auf Messingrahmen), eine kleine Anzeige mit vier Zeilen, deren Inhalt Spieler auf einem Sitz davor als Einblendung sehen, und der &6Messingschacht&r, der 64 Items auf einmal bewegt.",
           ],
@@ -175,7 +175,7 @@ quests = [
               "",
               "Rechtsklick öffnet sein Programm: eine zeitlich geordnete Liste von Signalen, die er abspielt, sobald von hinten ein Signal kommt. Danach wartet er auf das nächste. Ein Signal von der Seite bricht ab, ein Komparator liest den Fortschritt. Damit öffnet ein Knopf erst das Tor, dann die Schranke, dann die Lampe, in genau der Reihenfolge.",
               "",
-              "Der &6Funk-Sender&r ist eine umgewandelte Redstone-Verbindung: Rechtsklick auf einen Hebel, Knopf oder analogen Hebel, und dessen Signal wird kabellos bis 128 Blöcke weit an Empfänger derselben Frequenz gefunkt. Honigwabe wachst ihn gegen Fehlklicks, die Axt löst das Wachs wieder.",
+              "Der &6Funk-Sender&r ist eine umgewandelte Redstone-Verbindung: Rechtsklick auf einen Hebel, Knopf oder analogen Hebel, und dessen Signal wird kabellos bis 256 Blöcke weit an Empfänger derselben Frequenz gefunkt. Honigwabe wachst ihn gegen Fehlklicks, die Axt löst das Wachs wieder.",
           ],
           tasks=[task_item("create_connected:sequenced_pulse_generator", 1), task_item("create_connected:linked_transmitter", 1)],
           rewards=[reward_item("minecraft:redstone", 32), reward_xp(5)],
@@ -347,7 +347,7 @@ quests = [
           description=[
               "Drei &6Andesitlegierungen&r und eine &6Uhr&r ergeben den &6Beckendeckel&r. Setz ihn auf ein &6Becken&r: &6Zucker&r, &6Äpfel&r, &6Kartoffeln&r oder &6Zuckerrohr&r mit &6Knochenmehl&r vergären darin zu &b200 mB Ethanol&r. Ohne Mixer, ohne Hitze.",
               "",
-              "Mehr bringt der &6Massenfermenter&r (zwei Andesitlegierungen und ein Fass): dieselben Zutaten ergeben &b400 mB&r. Er macht außerdem aus vier Zuckerrohr und Wasser Zellstoff für Karton und aus &6Bruchstein&r &c50 mB Lava&r, ein unendlicher Lavatropf aus dem Bruchsteingenerator.",
+              "Mehr bringt der &6Massenfermenter&r (zwei Andesitlegierungen und ein Fass): dieselben Zutaten ergeben &b400 mB&r. Er macht außerdem aus vier Zuckerrohr und Wasser Zellstoff für Karton und, mit Hitze darunter, aus &6Bruchstein&r &c50 mB Lava&r, ein unendlicher Lavatropf aus dem Bruchsteingenerator.",
               "",
               "&6Pflanzenöl&r ist die zweite Hälfte des Biodiesels: eine Presse über einem Becken verdichtet &6Samen&r zu &b100 mB&r. Eine Weizenfarm mit Erntemaschine liefert beides, Zucker aus Zuckerrohr und Samen aus dem Weizen.",
           ],
@@ -388,7 +388,7 @@ quests = [
           description=[
               "&eRezept:&r &6Andesitlegierung&r oben, &6Dieselmotor&r zwischen zwei &6Messingblechen&r, &6polierte Schwarzsteinstufe&r unten ergeben den &6Modularen Dieselmotor&r.",
               "",
-              "Er arbeitet wie der normale Motor, aber du kannst mehrere &eaufeinanderstapeln&r. Jeder Block im Stapel bringt seine Belastbarkeit ein: einer schafft mit Biodiesel &e6 144 SU&r, mit Diesel 8 192 SU, vier Stück entsprechend das Vierfache, alle mit 96 RPM an einer Welle. Jeder frisst seinen eigenen Liter pro Sekunde, also plane die Biodiesel-Linie groß genug.",
+              "Er arbeitet wie der normale Motor, aber du kannst mehrere &eaufeinanderstapeln&r. Jeder Block im Stapel bringt seine Belastbarkeit ein: einer schafft mit Biodiesel &e6 144 SU&r, mit Diesel 8 192 SU, vier Stück entsprechend das Vierfache, alle mit 96 RPM an einer Welle. Jeder frisst sein eigenes Millibucket pro Sekunde, also plane die Biodiesel-Linie groß genug.",
               "",
               "&eSo wird es ein Kraftwerk:&r Zuckerrohr- und Weizenfarm, Massenfermenter und Presse für Öl, ein Mixer für Biodiesel, ein Tank, und daran der Motorstapel. Alles ohne Lohenbrenner, ohne Kohle, ohne Wasserrad-Wald.",
               "",
@@ -419,7 +419,7 @@ quests = [
               "",
               "Die &6Bohrmaschine&r (5 x 5 Rezept aus Messing, Robusten Blechen, Präzisionsgetrieben und einem Mechanischen Bohrer) steht auf festem Boden über der Ader, bekommt einen &6Eisenbohrer&r und Rotation und fördert dann Roherz, zum Beispiel alle 30 Sekunden ein Roheisen bei 256 SU. Die Adern sind auf Kronwerke unerschöpflich. Diamant- und Netheritbohrer kommen in Stufe 4.",
               "",
-              "&eKronwerke:&r Das Ziel von Stufe 3 will 4 000 Stahlbarren. Eine Bohrmaschine auf einer Eisenader, die Tag und Nacht fördert, ist der ruhigste Weg dorthin.",
+              "&eKronwerke:&r Das Ziel von Stufe 3 will bei 30 aktiven Spielern 4 000 Stahlbarren. Eine Bohrmaschine auf einer Eisenader, die Tag und Nacht fördert, ist der ruhigste Weg dorthin.",
           ],
           tasks=[task_checkmark("Gelesen")],
           rewards=[reward_xp(5)],

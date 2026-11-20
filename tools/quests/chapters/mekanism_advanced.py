@@ -552,7 +552,7 @@ quests = [
           rewards=[reward_item("minecraft:cobblestone", 64), reward_xp(3)],
           deps=["stamping_factory"], icon="mekmm:recycler", optional=True),
 
-    quest("mid_tank", 16, 17.5, "&3Bau einen Mittleren Chemikalientank",
+    quest("mid_tank", 16, 17.5, "&3Bau einen Mittleren Chemikalienbehälter",
           subtitle="Mehr Gas auf einem Block.",
           description=[
               "Fünf Dynamische Tanks um zwei Einfache Chemikalienbehälter geben den &6Basic Mid Chemical Tank&r. Mit fünf weiteren Dynamischen Tanks um ihn wird er zum &6Max&r-Tank.",
@@ -580,7 +580,7 @@ quests = [
     quest("goal", 3, 22, "&5&lFütter den Obelisken",
           subtitle="Der Ofen schläft nie.",
           description=[
-              "Sammle Stahl und Schaltkreise in Kisten und gib sie von Hand am Obelisken ab, Schleichen und Rechtsklick nimmt alles Passende. Den Stand zeigt &e/kw goals&r.",
+              "Sammle Stahl und Schaltkreise in Kisten und gib sie von Hand am Obelisken ab: Schleichen und zweimal Rechtsklick mit einem Item in der Hand gibt alles Passende aus den drei Inventarreihen ab. Den Stand zeigt &e/kw goals&r.",
               "",
               "&eTechnik-Pfeiler von Stufe 3:&r &64 000 Stahlbarren&r, &6250 Fortgeschrittene Schaltkreise&r, &68 Stahlkerne&r. Der Magie-Pfeiler will Elementium, Afrit-Essenz und Elfensterne, und beide müssen voll werden.",
               "",

@@ -1,0 +1,18 @@
+{
+  "criteria": {
+    "has": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "hexerei:book_of_shadows_altar",
+              "hexerei:willow_altar",
+              "hexerei:witch_hazel_altar"
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

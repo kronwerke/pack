@@ -548,7 +548,7 @@ quests = [
     quest("large", 5, 29, "&3Bau eine große Maschine",
           subtitle="Robit in der Mitte, Stahlblöcke drumherum.",
           description=[
-              "Der &6Large C. Infuser&r: Robit in der Mitte, Ultimative Max-Chemikalientanks links und rechts, Ultimative Schaltkreise oben und unten, Stahlblöcke in die Ecken.",
+              "Der &6Large C. Infuser&r: Robit in der Mitte, Ultimative Max-Chemikalienbehälters links und rechts, Ultimative Schaltkreise oben und unten, Stahlblöcke in die Ecken.",
               "",
               "Ebenso gibt es den großen Elektrolyseur, Rotationskondensator, Solarneutronenaktivator, Wärme- und Gasgenerator. Schau dir die Rezepte in EMI an. Der große Windgenerator kommt in Stufe 5.",
           ],

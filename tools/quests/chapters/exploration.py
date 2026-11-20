@@ -189,7 +189,7 @@ quests = [
           description=[
               "Bau &e2 Warpplatten&r. Leg einen &6Ruhenden Splitter&r (2 Warppulver, Feuerstein) in die erste, nimm den eingestellten Splitter heraus und leg ihn in die zweite.",
               "",
-              "Ab dann bringt dich jede Platte zur anderen, kostenlos. Gut für feste Wege, etwa von der Basis zur Mine.",
+              "Ein Splitter führt nur in eine Richtung, zur Platte, in der er eingestellt wurde. Für den Rückweg stellst du in der zweiten Platte einen zweiten Splitter ein und legst ihn in die erste. Dann bringt dich jede Platte zur anderen, kostenlos. Gut für feste Wege, etwa von der Basis zur Mine.",
           ],
           tasks=[task_item("waystones:warp_plate", 2)],
           rewards=[reward_item("waystones:warp_dust", 4), reward_xp(5)],
@@ -256,7 +256,7 @@ quests = [
           description=[
               "Bring &e512 Bruchstein&r mit. Sneak und Rechtsklick auf den Obelisken, und alles aus deinem Inventar ist drin.",
               "",
-              "&eKronwerke:&r Die Stein-Säule der Stufe 1 will &e20 000 Bruchstein&r. Sammel ihn in einer Truhe am Portal und bring ihn gebündelt zum Spawn.",
+              "&eKronwerke:&r Die Stein-Säule der Stufe 1 will bei 30 aktiven Spielern &e20 000 Bruchstein&r. Sammel ihn in einer Truhe am Portal und bring ihn gebündelt zum Spawn.",
           ],
           tasks=[task_item("minecraft:cobblestone", 512)],
           rewards=[reward_table("s1_common")],
@@ -345,7 +345,7 @@ quests = [
           description=[
               "Finde ein &6Höhlenlager&r von Artifacts und hak ab. Es liegt in Höhlen zwischen &eY -60 und 40&r, mit Licht und einer Truhe.",
               "",
-              "In der Truhe liegen oft Artefakte. &cAber:&r Etwa jede dritte Truhe in einem Lager ist ein Mimic (nächste Quest).",
+              "In der Truhe liegen oft Artefakte. &cAber:&r Etwa jede zehnte Truhe in einem Lager ist ein Mimic (nächste Quest).",
           ],
           tasks=[task_checkmark("Ein Höhlenlager gefunden")],
           rewards=[reward_item("minecraft:torch", 16), reward_xp(3)],
@@ -435,7 +435,7 @@ quests = [
           description=[
               "Finde einen &6Plünderer-Außenposten&r und hak ab. Towns and Towers baut ihn in jedem Biom anders, von Tafelberg bis Schneehang.",
               "",
-              "Armbrustschützen treffen weit. Geh mit Schild, und lass das Banner des Hauptmanns liegen, wenn du keinen Überfall auf dein Dorf willst.",
+              "Armbrustschützen treffen weit. Geh mit Schild, und trink die &6Unheilvolle Flasche&r des Hauptmanns nicht, wenn du keinen Überfall auf dein Dorf willst.",
           ],
           tasks=[task_checkmark("Einen Außenposten gefunden")],
           rewards=[reward_item("minecraft:arrow", 32), reward_xp(3)],
@@ -444,7 +444,7 @@ quests = [
     quest("e_dnt_tavern", 11, 16, "&6Kauf eine Karte in der Taverne",
           subtitle="14 Smaragde und ein Kompass, einmal pro Taverne.",
           description=[
-              "Geh in eine &6Taverne&r von Dungeons and Taverns. Ein Dorfbewohner dort tauscht &e14 Smaragde&r und einen &6Kompass&r einmalig gegen eine Karte zu einem Bauwerk.",
+              "Geh in eine &6Taverne&r von Dungeons and Taverns. Ein Dorfbewohner dort tauscht &e14 Smaragde&r und einen &6Kompass&r gegen eine Karte zu einem Bauwerk. Er hat zwei solche Angebote.",
               "",
               "Die Karte führt zu Krypten, Ruinen, einer antiken Stadt und anderen Orten der Mod. Tavernen gibt es in elf Stilen, von Eiche bis Mangrove.",
           ],

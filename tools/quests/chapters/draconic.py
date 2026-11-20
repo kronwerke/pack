@@ -196,7 +196,7 @@ quests = [
               "",
               pic("components/wyvern_core"),
               "",
-              "Jeder Kern kostet einen &5Wither&r. Für den Anfang brauchst du zwei: einen für den Wyvern-Injektor, einen für den Energiekern.",
+              "Jeder Kern kostet einen &5Wither&r. Für den Anfang brauchst du sieben: je einen für sechs Wyvern-Injektoren und einen für den Energiekern.",
           ],
           tasks=[task_item("draconicevolution:wyvern_core", 2)],
           rewards=[reward_item("draconicevolution:draconium_ingot", 8), reward_xp(10)],
@@ -205,7 +205,7 @@ quests = [
     quest("w_injector", 5, 11.5, "&d&lFusionier einen Wyvern-Injektor",
           subtitle="Deine erste Fusion.",
           description=[
-              "Katalysator: ein &6Draconium-Injektor&r. In acht Injektoren: &61 Wyvern-Kern&r, &62 Draconiumkerne&r, &64 Diamanten&r, &61 Draconiumblock&r. Kostet 32 000 Energie.",
+              "Katalysator: ein &6Draconium-Injektor&r, der dabei verbraucht wird. In acht Injektoren: &61 Wyvern-Kern&r, &62 Draconiumkerne&r, &64 Diamanten&r, &61 Draconiumblock&r. Kostet 32 000 Energie.",
               "",
               "Wyvern-Werkzeuge und die Brustplatte brauchen &esechs&r Wyvern-Injektoren, der Kondensator acht. Fehlen welche, meldet der Kern &e\"Not enough wyvern tier injectors\"&r.",
               "",

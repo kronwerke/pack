@@ -97,7 +97,7 @@ quests = [
           description=[
               "Wyvern-Stufe. Katalysator: ein &6Wyvern-Injektor&r. In sieben Injektoren: &64 Diamanten&r, &62 Wyvern-Kerne&r, &61 Erwachter Draconiumblock&r. Kostet 256 000 Energie.",
               "",
-              "Drakonische Werkzeuge haben acht Zutaten, du brauchst also acht. Ein drakonischer Injektor lädt in 7 Sekunden statt 11.",
+              "Die meisten drakonischen Rezepte haben acht Zutaten, manche mehr: Stab und Reaktor-Injektor zehn, der chaotische Kern zwölf. Mit zwölf Injektoren reicht es für alles. Ein drakonischer Injektor lädt in 7 Sekunden statt 11.",
           ],
           tasks=[task_item("draconicevolution:awakened_crafting_injector", 8)],
           rewards=[reward_item("minecraft:diamond", 16), reward_xp(10)],
@@ -332,7 +332,7 @@ quests = [
               "",
               "Bei 98 Prozent wird der Termin für das Finale gesetzt.",
           ],
-          tasks=[task_item("draconicevolution:awakened_draconium_block", 16)],
+          tasks=[task_item("draconicevolution:awakened_draconium_block", 64)],
           rewards=[reward_table("s5_rare"), reward_xp(30)],
           deps=["awakened"], icon="draconicevolution:awakened_draconium_block", size=2.5, shape="gear", section="reactor"),
 

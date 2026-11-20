@@ -98,12 +98,13 @@
 			tasks: [
 				{
 					id: "4C5974B75E596489"
-					type: "item"
-					item: {
+					type: "advancement"
+					advancement: "kronwerke:quests/hexerei_altar"
+					criterion: ""
+					icon: {
 						id: "hexerei:book_of_shadows_altar"
 						count: 1
 					}
-					count: 1
 				}
 			]
 			rewards: [
@@ -1697,12 +1698,13 @@
 				}
 				{
 					id: "5821965D051DE226"
-					type: "item"
-					item: {
+					type: "advancement"
+					advancement: "kronwerke:quests/hexerei_depot"
+					criterion: ""
+					icon: {
 						id: "hexerei:willow_courier_depot"
 						count: 1
 					}
-					count: 1
 				}
 			]
 			rewards: [
@@ -1786,12 +1788,13 @@
 			tasks: [
 				{
 					id: "3E6908C9ED918684"
-					type: "item"
-					item: {
+					type: "advancement"
+					advancement: "kronwerke:quests/hexerei_woodcutter"
+					criterion: ""
+					icon: {
 						id: "hexerei:willow_woodcutter"
 						count: 1
 					}
-					count: 1
 				}
 			]
 			rewards: [

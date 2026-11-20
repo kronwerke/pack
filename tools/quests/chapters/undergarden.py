@@ -119,7 +119,7 @@ quests = [
           description=[
               "Fäll &616 Smogstielstämme&r. Das ist das Bauholz des Undergarden.",
               "",
-              "&eDie Waldbiome:&r &6Smogstielwald&r, &6Dichter Wald&r, &6Wackelholzwald&r, &6Grongelwucher&r und die &6Smogtürme&r mit ihren rauchenden Schlitzen. Im &6Vergessenen Feld&r stehen die Katakomben.",
+              "&eDie Waldbiome:&r &6Smogstielwald&r, &6Dichter Wald&r, &6Wackelholzwald&r, &6Grongelwucher&r und die &6Smogtürme&r mit ihren rauchenden Schlitzen. Katakomben stehen in sechs Biomen, nicht nur im &6Vergessenen Feld&r.",
           ],
           tasks=[task_item("undergarden:smogstem_log", 16)],
           rewards=[reward_item("minecraft:torch", 32), reward_xp(4)],
@@ -162,7 +162,7 @@ quests = [
     quest("cloggrum", 5, 0, "&7&lSchmelz Cloggrum",
           subtitle="Das Eisen des Undergarden.",
           description=[
-              "Bau &6Cloggrumerz&r ab (Tiefstein oder Schlotterstein, &eY -64 bis 64&r, unten am meisten). Es gibt &6Rohcloggrum&r, im Ofen wird daraus ein &6Cloggrumbarren&r.",
+              "Bau &6Cloggrumerz&r ab (Tiefstein oder Schlotterstein, &eY -64 bis 64&r, unten am meisten). Es gibt &6Rohkloggrum&r, im Ofen wird daraus ein &6Cloggrumbarren&r.",
               "",
               pic("undergarden:cloggrum_ingot"),
               "",
@@ -542,7 +542,7 @@ quests = [
           description=[
               "Je ein Block aus &6Cloggrum&r, &6Froststahl&r, &6Utherium&r, &6Regalium&r und &6Rogdorium&r, jeweils aus 9 Barren oder Kristallen.",
               "",
-              "&eKronwerke:&r Der Undergarden hat sehr viel &6Kohle&r im Tiefstein. Kohle wird im Koksofen zu Koks, und Koks braucht jeder Hochofen für den Stahl. Für die &e4.000 Stahlbarren&r des Stufenziels \"Der Ofen schläft nie\" ist das ein guter zweiter Bergbauplatz.",
+              "&eKronwerke:&r Der Undergarden hat sehr viel &6Kohle&r im Tiefstein. Kohle wird im Koksofen zu Koks, und Koks braucht jeder Hochofen für den Stahl. Für die &e4.000 Stahlbarren&r (bei 30 aktiven Spielern) des Stufenziels \"Der Ofen schläft nie\" ist das ein guter zweiter Bergbauplatz.",
           ],
           tasks=[task_item("undergarden:cloggrum_block", 1), task_item("undergarden:froststeel_block", 1),
                  task_item("undergarden:utherium_block", 1), task_item("undergarden:regalium_block", 1),

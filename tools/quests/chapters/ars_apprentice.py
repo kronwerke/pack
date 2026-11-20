@@ -264,7 +264,7 @@ quests = [
           subtitle="Checkliste Stufe 2: Ars Elemental, Teil 2.",
           description=[
               "&dGiftsporen&r (Sporenblüte, Roter Pilz, Erdessenz): Sporen springen auf vergiftete Ziele über.",
-              "&dVergiften&r (Giftige Kartoffel, Fermentiertes Spinnenauge, Seltsame Suppe): Gift, das sich zu Gift steigert.",
+              "&dVergiften&r (Giftige Kartoffel, Fermentiertes Spinnenauge, Seltsame Suppe): vergiftet das Ziel. Ist es schon vergiftet, wird daraus das stärkere Gift Venom.",
               "&dStachel&r (Spitzer Tropfstein, Netheritbarren, Erdessenz): ein Tropfsteinstachel aus dem Boden.",
               "&dBienen beschwören&r (Erd- und Beschwörungsessenz, Magebloom, Honigwabe), &dSchleime beschwören&r (Wasser- und Beschwörungsessenz, 2 Schleimbälle): je drei Kämpfer.",
           ],
@@ -290,7 +290,7 @@ quests = [
     quest("relay", 0, 10.5, "&a&lBau ein Quellrelais",
           subtitle="Quelle über 30 Blöcke, ohne Gläser zu schleppen.",
           description=[
-              "&e6 Goldbarren&r an den Seiten, ein &6Quelljuwelblock&r in der Mitte, oben und unten Mitte frei.",
+              "&e6 Goldbarren&r an den Seiten, ein &6Quelledelsteinblock&r in der Mitte, oben und unten Mitte frei.",
               "",
               "Dominion-Zauberstab: erst das Glas, dann das Relais, dann das Relais, dann das Ziel (Glas oder nächstes Relais). Reichweite &e30 Blöcke&r. Schleichend klicken löscht, Redstone schaltet ab.",
               "",
@@ -318,7 +318,7 @@ quests = [
               "",
               "Der Kollektor saugt aus allen Gläsern in &e5 Blöcken&r, der Einzahler füllt alle Gläser in &e5 Blöcken&r. Kollektor an der Link-Farm, Einzahler in der Werkstatt, fertig.",
               "",
-              "Das &6Warper-Relais&r für endlose Strecken braucht Chorusfrüchte und kommt mit Stufe 4.",
+              "Das &6Warper-Relais&r für endlose Strecken ist ab Stufe 2 frei, braucht aber geplatzte Chorusfrüchte aus dem End und kommt damit praktisch erst mit Stufe 4.",
           ],
           tasks=[task_item("ars_nouveau:relay_collector", 1), task_item("ars_nouveau:relay_deposit", 1)],
           rewards=[reward_item("minecraft:hopper", 2), reward_xp(5)],
@@ -328,7 +328,7 @@ quests = [
     quest("brazier", 0, 17, "&a&lBau das Ritual-Kohlenbecken",
           subtitle="Wo die großen Zauber brennen.",
           description=[
-              "Formlos: &6Arkanes Podest&r, &6Quelljuwelblock&r, &e3 Goldbarren&r.",
+              "Formlos: &6Arkanes Podest&r, &6Quelledelsteinblock&r, &e3 Goldbarren&r.",
               "",
               "Jedes Ritual ist eine &6Ritualtafel&r aus einem farbigen Archwood-Stamm und Zutaten. Tafel auf das Becken, Zusätze daraufwerfen, mit leerer Hand starten. Quelle kommt aus Gläsern in der Nähe, Redstone hält es an.",
           ],
@@ -350,7 +350,7 @@ quests = [
     quest("ritual_scrying", 2.5, 17, "&aMach die Tafel Wahrsagerei",
           subtitle="Einen Block durch alle anderen sehen.",
           description=[
-              "&5Ärgerlicher Stamm&r, &e3 Spinnenaugen&r, &6Glowstone&r, &6Quelljuwelblock&r.",
+              "&5Ärgerlicher Stamm&r, &e3 Spinnenaugen&r, &6Glowstone&r, &6Quelledelsteinblock&r.",
               "",
               "Vor dem Start einen Block auf das Becken werfen, etwa Zinkerz. Danach siehst du jeden Block dieser Sorte durch die Erde: weiß nah, grün mittel, blau weit. Mit einer Manipulationsessenz dazu &e15 Minuten&r lang.",
           ],
@@ -464,7 +464,7 @@ quests = [
     quest("ritual_cloudshaping", 10, 17, "&aMach die Tafel Wolkenformung",
           subtitle="Wetter nach Wunsch.",
           description=[
-              "&bKaskadierender Stamm&r, &6Feder&r, &6Quelljuwelblock&r.",
+              "&bKaskadierender Stamm&r, &6Feder&r, &6Quelledelsteinblock&r.",
               "",
               "Ohne Zusatz klares Wetter, mit Schwarzpulver Regen, mit einem Lapisblock Gewitter. Sprecht euch ab, das Wetter gilt für alle.",
           ],
@@ -534,8 +534,8 @@ quests = [
           description=[
               "&aAnziehung&r (Blühender Stamm, 2 Eisenbarren, Erdessenz): zieht Wesen in &e8 Blöcken&r zum Becken.",
               "&aAbstoßung&r (Blitzender Stamm, 2 Luftessenzen, Kolben): stößt Wesen in &e15 Blöcken&r weg, mit Knochen nur Untote.",
-              "&aEntdeckung&r (Blitzender Stamm, 2 Spinnenaugen, Glowstonestaub, Quelljuwelblock): Monster in &e128 Blöcken&r leuchten 10 Minuten.",
-              "&aZapping&r (Blitzender Stamm, Luftessenz, 2 Diamanten, Blitzableiter, Quelljuwelblock): Blitze auf alles, was sich nähert.",
+              "&aEntdeckung&r (Blitzender Stamm, 2 Spinnenaugen, Glowstonestaub, Quelledelsteinblock): Monster in &e128 Blöcken&r leuchten 10 Minuten.",
+              "&aZapping&r (Blitzender Stamm, Luftessenz, 2 Diamanten, Blitzableiter, Quelledelsteinblock): Blitze auf alles, was sich nähert.",
           ],
           tasks=[task_item("ars_elemental:ritual_attraction", 1), task_item("ars_elemental:ritual_repulsion", 1),
                  task_item("ars_elemental:ritual_detection", 1), task_item("ars_elemental:ritual_tesla_coil", 1)],
@@ -571,7 +571,7 @@ quests = [
     quest("spell_turret", 2.5, 23, "&aVerzaubere den Turm",
           subtitle="Halbe Kosten, gleiche Wirkung.",
           description=[
-              "Im Apparat: Einfacher Zauberturm, &6Quelljuwelblock&r und &e2 Lohenruten&r.",
+              "Im Apparat: Einfacher Zauberturm, &6Quelledelsteinblock&r und &e2 Lohenruten&r.",
               "",
               "Der &6Verzauberte Zauberturm&r wirkt zum halben Quellpreis. Mit einem großen Fokus von Ars Elemental wird er ab Stufe 3 zum Elementar-Turm.",
           ],
@@ -584,7 +584,7 @@ quests = [
           description=[
               "&6Zauberprisma&r: Ecken Gold, Seiten Archwood-Planken, Mitte Quarzblock. Lenkt Projektilzauber in seine Blickrichtung.",
               "&6Fortgeschrittenes Prisma&r (Ars Elemental): Prisma mit 4 Quarz und 4 Quelljuwelen, per Dominion-Zauberstab auf einen Block ausgerichtet, mit Linsen.",
-              "&6Zauberspiegel&r (Ars Elemental, im Apparat aus Quelljuwelblock, 2 Archwood-Stämmen, 2 Quarz, 2 Gold, ergibt 2): wirft Projektile im Spiegelwinkel zurück.",
+              "&6Zauberspiegel&r (Ars Elemental, im Apparat aus Quelledelsteinblock, 2 Archwood-Stämmen, 2 Quarz, 2 Gold, ergibt 2): wirft Projektile im Spiegelwinkel zurück.",
           ],
           tasks=[task_item("ars_nouveau:spell_prism", 1), task_item("ars_elemental:advanced_prism", 1),
                  task_item("ars_elemental:spell_mirror", 1)],
@@ -607,7 +607,7 @@ quests = [
           description=[
               "Im Apparat: Warp-Schriftrolle, &e4 Lohenstaub&r, &e2 Enderperlen&r.",
               "",
-              "Bleibt nach dem Benutzen erhalten. Eine beschriebene Rolle kopiert der Apparat für &d1 000 Quelle&r, gib Freunden eine mit eurer Gemeinschaftsbasis.",
+              "Bleibt nach dem Benutzen erhalten. Kopieren kann der Apparat nur die einfache beschriebene Warp-Schriftrolle (für &d1 000 Quelle&r), nicht die stabilisierte: Mach die Kopien für Freunde, bevor du stabilisierst.",
           ],
           tasks=[task_item("ars_nouveau:stable_warp_scroll", 1)],
           rewards=[reward_item("minecraft:ender_pearl", 2), reward_xp(4)],
@@ -685,7 +685,7 @@ quests = [
     quest("source_motor", 5, 29, "&6Bau einen Source Motor",
           subtitle="Ars Technica: Quelle wird Drehung.",
           description=[
-              "Ecken und unten Mitte &6Messingbarren&r, oben Mitte &6Elektronenröhre&r, links und rechts &6Zahnrad&r, Mitte der kalibrierte Mechanismus.",
+              "Ecken &6Messingbarren&r, oben Mitte &6Elektronenröhre&r, links, rechts und unten Mitte &6Zahnrad&r, Mitte der kalibrierte Mechanismus.",
               "",
               "Macht aus Quelle aus einem Glas daneben Rotationskraft für Create. Seiten stellen die Drehzahl, die Front das Verhältnis von Last zu Drehzahl. Mehr Kraft kostet mehr Quelle.",
           ],
@@ -705,7 +705,7 @@ quests = [
           deps=["calibrated_mechanism"], icon="ars_technica:glyph_press", optional=True),
 
     quest("tech_glyphs", 5, 31, "&dLern die Create-Glyphen",
-          subtitle="Ars Technica: Checkliste Stufe 2.",
+          subtitle="Ars Technica: Checkliste.",
           description=[
               "&dFuse&r (Manipulationsessenz, Feueressenz, 3 Lohenruten): mischt Items wie ein Mixer, nimmt Flüssigkeiten aus Tanks daneben.",
               "&dPolish&r (Manipulationsessenz, Sandpapier): schleift Items. &dWhirl&r (Manipulationsessenz, 3 Luftessenzen): ein Wirbel wie ein Ventilator, mit Wasser, Fackel, Schmelzen oder Verhexen als Verarbeitung.",
@@ -749,7 +749,7 @@ quests = [
     quest("redstone_magic", 2.5, 26, "&aSchalte mit Magie",
           subtitle="Redstone ohne Kabel.",
           description=[
-              "&6Redstone-Relais&r: &e6 Goldbarren&r, oben und unten Mitte &6Redstone&r, ein &6Quelljuwelblock&r in die Mitte. Mit dem Dominion-Zauberstab verbunden schicken Relais ein Signal bis &e30 Blöcke&r weit. Eingang ist eine Seite, ausgegeben wird an allen anderen.",
+              "&6Redstone-Relais&r: &e6 Goldbarren&r, oben und unten Mitte &6Redstone&r, ein &6Quelledelsteinblock&r in die Mitte. Mit dem Dominion-Zauberstab verbunden schicken Relais ein Signal bis &e30 Blöcke&r weit. Eingang ist eine Seite, ausgegeben wird an allen anderen.",
               "",
               "&6Schaukasten&r: oben &e3 Glas&r, Mitte Glas, &6Beobachter&r, Glas, unten &e3 Archwood-Planken&r. Binde mit dem Zauberstab eine Truhe daran, klick das Item darauf, das gezählt werden soll. Rechtsklick erhöht die Schwelle, Schlagen senkt sie. Über der Schwelle gibt er ein Signal.",
               "",

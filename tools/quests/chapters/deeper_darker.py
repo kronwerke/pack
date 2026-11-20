@@ -32,7 +32,7 @@ quests = [
     quest("sculk", 3, 3.5, "&3Ernte Sculk",
           subtitle="Mit der Hacke, nicht mit der Spitzhacke.",
           description=[
-              "&6Sculk&r baust du mit einer &6Hacke&r ab, er gibt Erfahrung. &6Sensoren&r, &6Kreischer&r und &6Katalysatoren&r bekommst du nur mit &eBehutsamkeit&r heil heraus.",
+              "&6Sculk&r baust du mit einer &6Hacke&r ab, er gibt Erfahrung. Als Block bekommst du ihn, wie &6Sensoren&r, &6Kreischer&r und &6Katalysatoren&r, nur mit &eBehutsamkeit&r heraus.",
               "",
               "&eKatalysatoren&r lassen Sculk wachsen: Stirbt ein Monster in ihrer Nähe, breitet er sich aus und setzt neue Sensoren und Kreischer. Kreischer, die so entstehen, können einen Wärter rufen.",
               "",
@@ -47,7 +47,7 @@ quests = [
           description=[
               "In manchen Tiefen Dunkelheiten steht eine &6Antike Stadt&r aus Tiefenschiefer, mit einem großen Rahmen aus &6Verstärktem Tiefenschiefer&r in der Mitte. Folge den Seelenlaternen, die Stadt liegt meist in der Mitte des Bioms.",
               "",
-              "&eIn den Truhen:&r &6Echoscherben&r, Plattenbruchstücke, Bücher mit Flinkes Schleichen, und von Deeper and Darker die &6Resonarium-Schmiedevorlage&r (etwa jede zweite Truhe), der &6Wärterpanzer&r (jede fünfte) und die &6Wärter-Schmiedevorlage&r für Stufe 4.",
+              "&eIn den Truhen:&r &6Echoscherben&r, Plattenbruchstücke, Bücher mit Huschen, und von Deeper and Darker die &6Resonarium-Schmiedevorlage&r (etwa jede zweite Truhe), der &6Wärterpanzer&r (jede fünfte) und die &6Wärter-Schmiedevorlage&r für Stufe 4.",
               "",
               "&eEchoscherben&r brauchst du gleich für den Portalrahmen, nimm alle mit. Occultism kann sie auch herstellen, aus Grauer Paste und Echostaub.",
               "",
@@ -212,7 +212,7 @@ quests = [
           description=[
               "An den Sculkglanz-Klumpen sitzt &6Poröser Sculkglanz&r. Mit der &6Schere&r kratzt du &6Glanzgel&r ab, und der Block füllt sich wieder.",
               "",
-              "&eWofür:&r Mit Glanzgel &ezähmst&r du Sculk-Schnapper, siehe unten. Ein &6Seltsamer Trank&r plus Glanzgel wird zum &6Trank der Leuchtkraft&r. Neun Gel ergeben einen &6Glanzgelblock&r, der einen Sturz abfängt.",
+              "&eWofür:&r Mit Glanzgel &ezähmst&r du Sculk-Schnapper, siehe unten. Ein &6Seltsamer Trank&r plus Glanzgel wird zum &6Trank des Glühens&r. Neun Gel ergeben einen &6Glanzgelblock&r, der einen Sturz abfängt.",
           ],
           tasks=[task_item("deeperdarker:gleam_gel", 8)],
           rewards=[reward_item("minecraft:shears", 1), reward_xp(5)],
@@ -295,7 +295,7 @@ quests = [
           description=[
               "Der &4Beobachter&r (Stalker) ist drei Blöcke hoch, hat &e200 Lebenspunkte&r, Rüstung und schlägt mit &c22 Schaden&r zu. Wenn er dich trifft, lässt er &6Sculk-Egel&r auf dich los. Er kommt aus unechten Vasen im Tempel.",
               "",
-              "&eBeute:&r Ein &6Seelenkristall&r, mit Plünderung bis zu drei. Den Kristall brauchst du für den Trank der Sculk-Affinität und für die Seelenelytren aus Stufe 4.",
+              "&eBeute:&r Ein &6Seelenkristall&r, mit Plünderung III bis zu vier. Den Kristall brauchst du für den Trank der Sculk-Affinität und für die Seelenelytren aus Stufe 4.",
               "",
               "&eTipps:&r Volle Diamantrüstung, Goldäpfel, und zerschlag die Vasen eine nach der anderen. Zu zweit ist er machbar, zu dritt bequem.",
           ],
@@ -430,7 +430,7 @@ quests = [
     quest("dd_carapace", 17, 13.5, "&8Sammle Wärterpanzer",
           subtitle="Für Echoscherben und die Rüstung in Stufe 4.",
           description=[
-              "Sammle &e4 Wärterpanzer&r. Neben dem Wärter selbst liegen sie in den Truhen des Antiken Tempels und in &6Antiken Vasen&r.",
+              "Sammle &e4 Wärterpanzer&r. Die beste Quelle sind die Truhen der Antiken Stadt (etwa jede fünfte). Dazu kommen der Wärter selbst, die Truhen des Antiken Tempels und &6Antike Vasen&r.",
               "",
               "Aus Panzer und Phantomhaut werden &6Verstärkte Echoscherben&r. Jedes Teil der Wärterrüstung in Stufe 4 braucht eine, also leg schon jetzt einen Vorrat an.",
           ],

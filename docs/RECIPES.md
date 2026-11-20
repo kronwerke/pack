@@ -80,6 +80,9 @@ The id of each new recipe is `kronwerke:<family>/<name>`. "Remove all" means eve
 | Productive Bees brass comb | No centrifuge output. | A brass bee would hand out the stage 2 milestone metal for free. The bee stays. |
 | Farming for Blockheads market | Sells the Productive Trees hybrids of generations 1 to 3 and the five mutation saplings: 1, 2 and 4 emeralds by generation (`kubejs/data/kronwerke/recipe/market/productivetrees`). | The mod's trees do not generate in this version; the market is the way in. Generations 4 to 9, the glowing trees and the loot saplings stay with breeding and loot. |
 | Mahou Tsukai Mystic Staff | Summoning costs 2 000 mana instead of 100 (`config/mahoutsukai-server.toml`). | The stage 4 goal asks for 30 staffs, each meant as a real investment of one mage. |
+| Mahou Tsukai Attuner | Attuning a diamond or an emerald keeps the attuner (`kronwerke:tech/attuned_diamond`, `attuned_emerald`). | It costs four terrasteel. Used up by every gem, that was a terrasteel bill nobody paid twice. |
+| Oritech steel in the crafting grid | Removed (`oritech:crafting/alloy/steel`). | Two iron and two coal by hand skipped the blast furnace in stage 2. Oritech's foundry and the heated mixer still make steel from iron and coal dust. |
+| Oritech electrum from gold and redstone | Removed in the crafting grid, the foundry, the alloy kiln, the arc furnace and the melter. | Electrum is gold and silver; redstone made the silver line pointless. |
 
 ### Cross links
 

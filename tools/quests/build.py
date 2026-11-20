@@ -17,6 +17,19 @@ out = sys.argv[1] if len(sys.argv) > 1 else os.path.join(here, "..", "..", "conf
 assets = sys.argv[2] if len(sys.argv) > 2 else os.path.join(here, "..", "..", "kubejs", "assets")
 chapters, quests, tables = ftbq.write(out, assets_dir=assets)
 
+# the advancements behind task_any(): "one of these items is in the inventory", without a
+# display, so the game shows no toast and no entry in its advancement screen
+import json  # noqa: E402
+import shutil  # noqa: E402
+adv = os.path.join(here, "..", "..", "kubejs", "data", "kronwerke", "advancement", "quests")
+shutil.rmtree(adv, ignore_errors=True)
+for name, items in sorted(ftbq._any.items()):
+    os.makedirs(adv, exist_ok=True)
+    with open(os.path.join(adv, name + ".json"), "w", encoding="utf-8") as f:
+        json.dump({"criteria": {"has": {"trigger": "minecraft:inventory_changed", "conditions": {"items": [{"items": items}]}}}},
+                  f, indent=2)
+        f.write("\n")
+
 # the theme of the book: colours, quest shapes, dependency lines, background
 import theme  # noqa: E402
 theme.write(assets)

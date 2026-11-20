@@ -32,6 +32,7 @@ _chapters = []
 _groups = []
 _tables = {}
 _banners = {}   # texture path -> (text, kind, colour)
+_any = {}       # advancement name -> the items of a task_any()
 
 
 def qid(*parts):
@@ -64,6 +65,16 @@ def task_item(id, count=1, consume=False, title=None):
     return t
 
 
+def task_any(name, items, title):
+    """One of several items, for a block that comes in every kind of wood: FTB Quests' item task
+    takes exactly one item, so this is an advancement task. build.py writes the hidden advancement
+    kronwerke:quests/<name>, which the game grants as soon as one of the items is in the
+    inventory. title is what the task is called in the book."""
+    _any[name] = list(items)
+    return {"type": "advancement", "advancement": f"kronwerke:quests/{name}", "criterion": "", "title": title,
+            "icon_item": items[0]}
+
+
 def task_checkmark(title):
     return {"type": "checkmark", "title": title}
 
@@ -75,8 +86,15 @@ def task_advancement(advancement, title=None):
     return t
 
 
-def task_kill(entity, count=1):
-    return {"type": "kill", "entity": entity, "value": int(count)}
+def task_kill(entity, count=1, tag=None, title=None):
+    """tag: an entity type tag like "kronwerke:hnn/zombie". Every mob in it counts, and entity
+    only gives the task its icon. For quests whose text promises variants."""
+    t = {"type": "kill", "entity": entity, "value": int(count)}
+    if tag:
+        t["entity_type_tag"] = tag
+    if title:
+        t["title"] = title
+    return t
 
 
 def task_dimension(dimension):
@@ -284,6 +302,8 @@ def _build_chapter(ch, order_index, lang):
             task_id = qid("task", ch["name"], q["name"], str(i))
             if "title" in t:
                 lang[f"task.{task_id}.title"] = t.pop("title")
+            if "icon_item" in t:
+                t["icon"] = item(t.pop("icon_item"))
             t = {"id": task_id, **t}
             qd["tasks"].append(t)
         qd["rewards"] = []

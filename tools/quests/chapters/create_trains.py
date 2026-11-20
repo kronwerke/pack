@@ -70,11 +70,11 @@ quests = [
     quest("nether_line", A + 5, 2, "&cFahr durch den Nether",
           subtitle="Ein Block Nether, acht Blöcke Oberwelt.",
           description=[
-              "Verleg das Gleis bis in ein &cNetherportal&r hinein. Create setzt die Strecke auf der anderen Seite fort.",
+              "&cNoch nicht:&r Der Nether läuft auf Kronwerke auf einem eigenen Server, und Züge kommen noch nicht durch das Portal. Daran wird gebaut. Bis dahin endet die Strecke am &cNetherportal&r: Bahnhof davor, zu Fuß hindurch, Bahnhof dahinter.",
               "",
               "Eine kurze Netherstrecke verbindet weit entfernte Basen. Sichere sie ab, Ghasts halten nichts von Fahrplänen.",
           ],
-          tasks=[task_checkmark("Eine Netherbahn gebaut")],
+          tasks=[task_checkmark("Verstanden")],
           rewards=[reward_xp(5)],
           deps=["laying"], icon="minecraft:obsidian", optional=True),
 
@@ -206,7 +206,7 @@ quests = [
           description=[
               "Ein &6Robustes Blech&r und &6Papier&r ergeben vier &6Zugfahrpläne&r. Leg Einträge an: &eFahre zu Bahnhof&r, darunter die Bedingung, wann es weitergeht.",
               pic("create:schedule"),
-              "Mit &eWiederholen&r springt der Plan an den Anfang. &eMine*&r passt auf jeden freien Bahnhof, dessen Name mit Mine beginnt. &eÄndere Höchstgeschwindigkeit&r bremst den Zug auf einem Abschnitt.",
+              "Mit &eFortlaufend wiederholen&r springt der Plan an den Anfang. &eMine*&r passt auf jeden freien Bahnhof, dessen Name mit Mine beginnt. &eÄndere Höchstgeschwindigkeit&r bremst den Zug auf einem Abschnitt.",
           ],
           tasks=[task_item("create:schedule", 1)],
           rewards=[reward_table("s2_uncommon"), reward_xp(4)],
@@ -354,7 +354,7 @@ quests = [
     quest("obelisk_line", B + 6, 20.5, "&6&lFahr eine Linie zum Obelisken",
           subtitle="Alle Wege führen zum Spawn.",
           description=[
-              "Ein Bahnhof vor dem Spawn, ein Güterzug, der dort hält, und eine Schleuse, die aus der Portablen Lagerschnittstelle in eine Kiste lädt. Von dort trägst du die Ladung die letzten Schritte zum Obelisken und gibst sie von Hand ab.",
+              "Ein Bahnhof vor dem Spawn, mindestens 96 Blöcke vom Obelisken entfernt (näher lässt der Spawnschutz niemanden bauen), ein Güterzug, der dort hält, und eine Schleuse, die aus der Portablen Lagerschnittstelle in eine Kiste lädt. Von dort trägst du die Ladung die letzten Schritte zum Obelisken und gibst sie von Hand ab.",
               "",
               "&eKronwerke:&r Messingbarren und Präzisionsgetriebe in dieser Stufe, Stahl in der nächsten: die Ziele wollen große Mengen, und ein Zug bringt sie ohne Laufen.",
               "",

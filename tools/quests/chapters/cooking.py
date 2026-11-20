@@ -172,7 +172,7 @@ quests = [
     quest("pot", 0, 6, "&a&lTöpfere einen Pflanztopf",
           subtitle="Ein Feld in einem Block.",
           description=[
-              "&eRezept:&r vier &6Terrakotta&r um einen &6Blumentopf&r (oben links und rechts, in der Mitte links und rechts, eine unten). Das ist der &6Pflanztopf&r (Botany Pot).",
+              "&eRezept:&r fünf &6Terrakotta&r um einen &6Blumentopf&r (oben links und rechts, in der Mitte links und rechts, eine unten). Das ist der &6Pflanztopf&r (Botany Pot).",
               "",
               "Rechtsklick mit &6Erde&r setzt den Boden, Rechtsklick mit &6Samen&r die Pflanze. Sie wächst ohne Wasser, Licht oder Platz, und mit Rechtsklick erntest du, die Pflanze bleibt stehen. Weizen, Karotten, Kartoffeln, Zuckerrohr, Kaktus, Pilze, Blumen, Seegras, Netherwarze, alles geht.",
               "",

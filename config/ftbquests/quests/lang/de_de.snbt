@@ -331,7 +331,7 @@
 	quest.102BC3916E92EB8B.quest_desc: [
 		"Bau &e2 Warpplatten&r. Leg einen &6Ruhenden Splitter&r (2 Warppulver, Feuerstein) in die erste, nimm den eingestellten Splitter heraus und leg ihn in die zweite."
 		""
-		"Ab dann bringt dich jede Platte zur anderen, kostenlos. Gut für feste Wege, etwa von der Basis zur Mine."
+		"Ein Splitter führt nur in eine Richtung, zur Platte, in der er eingestellt wurde. Für den Rückweg stellst du in der zweiten Platte einen zweiten Splitter ein und legst ihn in die erste. Dann bringt dich jede Platte zur anderen, kostenlos. Gut für feste Wege, etwa von der Basis zur Mine."
 	]
 	quest.102BC3916E92EB8B.quest_subtitle: "Draufstellen und weg."
 	quest.102BC3916E92EB8B.title: "&6Leg zwei Warpplatten"
@@ -504,7 +504,7 @@
 		""
 		"Bei klarem Himmel bekommst du einen &6Clear&r-Container und es fängt an zu regnen, bei Regen einen &6Rain&r-Container, bei Gewitter &6Lightning&r. Zwischen zwei Durchgängen braucht der Tempel 60 Sekunden Pause, und er verdirbt langsam das Biom um sich herum."
 		""
-		"&eLohnt sich:&r Ein Rain-Container mit 7 Glasscheiben und einem Dark Block ergibt 4 &6Eternal Water&r, eine unendliche Wasserquelle als Block. Mit 3 Dark Gems statt der Scheiben werden es 4 &6Buckets of Eternal Water&r. Lightning-Container verstärken die Inverted Potentia für die Mace of Distortion."
+		"&eLohnt sich:&r Ein Rain-Container mit 7 Glasscheiben und einem Dark Block ergibt 4 &6Eternal Water&r, eine unendliche Wasserquelle als Block. Mit 3 Dark Gems statt der Scheiben werden es 4 &6Buckets of Eternal Water&r. Die Inverted Potentia für die Mace of Distortion verstärkst du, indem du sie bei Gewitter auf den Boden wirfst."
 	]
 	quest.10D8416A9B416603.quest_subtitle: "Wetter in Flaschen, Wasser ohne Ende."
 	quest.10D8416A9B416603.title: "&5Finde einen Dark Temple"
@@ -551,12 +551,12 @@
 	quest.10EA5410ED9559AD.quest_subtitle: "Mehr Erz pro Block."
 	quest.10EA5410ED9559AD.title: "&aBau eine Glückskarte"
 	quest.10F5975BE0FF3E12.quest_desc: [
-		"Vier &6Netherquarz&r oder ein Quarzblock geben ein &6Quarzglas&r. Ein &6Glas&r allein wird &6Klares Glas&r."
+		"Vier &6Netherquarz&r oder ein Quarzblock geben ein &6Quarzglas&r. Ein &6Glas&r allein wird &6Klarglas&r."
 		""
-		"Klares Glas steckt in der Flüssigkeitsleitung, Quarzglas in der Seelenampulle und den schnellen Flüssigkeitsleitungen. Mit Glowstone dazu leuchtet es, mit Amethyst wird es dunkel."
+		"Klarglas steckt in der Flüssigkeitsleitung, Quarzglas in der Seelenampulle und den schnellen Flüssigkeitsleitungen. Mit Glowstone dazu leuchtet es, mit Amethyst wird es dunkel."
 	]
 	quest.10F5975BE0FF3E12.quest_subtitle: "Durchsichtig, und manches leuchtet."
-	quest.10F5975BE0FF3E12.title: "&fSchmelz Quarzglas und Klares Glas"
+	quest.10F5975BE0FF3E12.title: "&fSchmelz Quarzglas und Klarglas"
 	quest.10F8558625071230.quest_desc: [
 		"Ein &6Stahlgehäuse&r in die Mitte, &64 Bleibarren&r drumherum. Gibt 4 &6Kernreaktorgehäuse&r."
 		""
@@ -638,7 +638,7 @@
 	quest.1131CB21A6634931.quest_desc: [
 		"Ein &6Darkstone Pedestal&r: oben drei &6Arcane Polished Darkstone Slabs&r, in der Mitte ein &6Arcane Polished Darkstone Pillar&r (zwei Arcane Polished Darkstone übereinander), unten drei &6Polished Darkstone&r."
 		""
-		"Podeste gehören auf die &eacht äußeren vergoldeten Blöcke&r. Rechtsklick mit einem Gegenstand legt genau einen darauf, Rechtsklick mit leerer Hand nimmt ihn wieder. Die Schmiede sieht jedes Podest im Umkreis von &e4 Blöcken&r."
+		"Die vergoldeten Blöcke brauchen nur die Obelisken. Podeste dürfen überall im Umkreis stehen, die acht äußeren Blöcke sind bloß der ordentlichste Platz. Rechtsklick mit einem Gegenstand legt genau einen darauf, Rechtsklick mit leerer Hand nimmt ihn wieder. Die Schmiede sieht jedes Podest im Umkreis von &e4 Blöcken&r."
 		""
 		"Für die ersten Rituale reichen vier Podeste. Spätere Rituale brauchen mehr: das Upgrade der Schmiede auf Stufe 2 legt acht Zutaten aus, die Ferrognetic Mixture sieben. Bau mit der Zeit alle acht."
 	]
@@ -742,8 +742,8 @@
 	quest.1173CCA07DACD7FB.quest_desc: [
 		"&aAnziehung&r (Blühender Stamm, 2 Eisenbarren, Erdessenz): zieht Wesen in &e8 Blöcken&r zum Becken."
 		"&aAbstoßung&r (Blitzender Stamm, 2 Luftessenzen, Kolben): stößt Wesen in &e15 Blöcken&r weg, mit Knochen nur Untote."
-		"&aEntdeckung&r (Blitzender Stamm, 2 Spinnenaugen, Glowstonestaub, Quelljuwelblock): Monster in &e128 Blöcken&r leuchten 10 Minuten."
-		"&aZapping&r (Blitzender Stamm, Luftessenz, 2 Diamanten, Blitzableiter, Quelljuwelblock): Blitze auf alles, was sich nähert."
+		"&aEntdeckung&r (Blitzender Stamm, 2 Spinnenaugen, Glowstonestaub, Quelledelsteinblock): Monster in &e128 Blöcken&r leuchten 10 Minuten."
+		"&aZapping&r (Blitzender Stamm, Luftessenz, 2 Diamanten, Blitzableiter, Quelledelsteinblock): Blitze auf alles, was sich nähert."
 	]
 	quest.1173CCA07DACD7FB.quest_subtitle: "Ars Elemental: Checkliste für die Basis."
 	quest.1173CCA07DACD7FB.title: "&aMach die Wächter-Rituale"
@@ -841,7 +841,7 @@
 	quest.11ACBB04C125D6E9.quest_subtitle: "Die Logik in jeder Messingmaschine."
 	quest.11ACBB04C125D6E9.title: "&6Bau Elektronenröhren"
 	quest.11B4C1BD496F1FC7.quest_desc: [
-		"Der &6Large C. Infuser&r: Robit in der Mitte, Ultimative Max-Chemikalientanks links und rechts, Ultimative Schaltkreise oben und unten, Stahlblöcke in die Ecken."
+		"Der &6Large C. Infuser&r: Robit in der Mitte, Ultimative Max-Chemikalienbehälters links und rechts, Ultimative Schaltkreise oben und unten, Stahlblöcke in die Ecken."
 		""
 		"Ebenso gibt es den großen Elektrolyseur, Rotationskondensator, Solarneutronenaktivator, Wärme- und Gasgenerator. Schau dir die Rezepte in EMI an. Der große Windgenerator kommt in Stufe 5."
 	]
@@ -854,7 +854,7 @@
 		""
 		"Die Vorschau zeigt den Block einzeln, als 2x2 oder als waagerechte oder senkrechte Reihe, damit du siehst, wie Muster zusammenlaufen."
 		""
-		"&eKronwerke:&r Chipped ändert nur das Aussehen. Für den Obelisken zählt &6Bruchstein&r in jeder Variante gleich, das Ziel von Stufe 1 will 20 000 davon."
+		"&eKronwerke:&r Chipped ändert das Aussehen, aber der Obelisk nimmt nur echten &6Bruchstein&r, keine Chipped-Varianten. Das Ziel von Stufe 1 will bei 30 aktiven Spielern 20 000 davon: erst abgeben, dann verzieren."
 	]
 	quest.11BA3B9F87029256.quest_subtitle: "Über 60 Varianten aus jedem Stein."
 	quest.11BA3B9F87029256.title: "&7&lBau einen Steinmetztisch"
@@ -998,7 +998,7 @@
 	quest.1209E058EB1AF92A.quest_subtitle: "Die Meere des Undergarden."
 	quest.1209E058EB1AF92A.title: "&3Fang einen Gwibbling"
 	quest.120BD5C808DBF981.quest_desc: [
-		"Bau &6Cloggrumerz&r ab (Tiefstein oder Schlotterstein, &eY -64 bis 64&r, unten am meisten). Es gibt &6Rohcloggrum&r, im Ofen wird daraus ein &6Cloggrumbarren&r."
+		"Bau &6Cloggrumerz&r ab (Tiefstein oder Schlotterstein, &eY -64 bis 64&r, unten am meisten). Es gibt &6Rohkloggrum&r, im Ofen wird daraus ein &6Cloggrumbarren&r."
 		""
 		"{image:undergarden:textures/item/cloggrum_ingot.png width:32 height:32 align:center}"
 		""
@@ -1169,7 +1169,7 @@
 	quest.127D84087F7EB2D6.title: "&fBau eine Glacite-Sense"
 	quest.128344D4FB2BEBDC.quest_desc: [
 		"{image:kronwerke:textures/quests/shots/food_f_rice.png width:224 height:126 align:center}"
-		"Setz &6Reis&r in Wasser, das genau einen Block tief ist, mit Erde darunter. Wildreis findest du in Sümpfen und an Flussufern."
+		"Setz &6Reis&r in Wasser, das genau einen Block tief ist, mit Erde darunter. Wildreis findest du in Sümpfen und anderen feuchten Biomen, nicht an Flüssen."
 		""
 		"Oben wachsen &6Reisrispen&r. Am Schneidebrett werden sie mit dem Messer zu Reis und Stroh."
 	]
@@ -1194,7 +1194,7 @@
 	quest.1298361CE320525B.quest_desc: [
 		"Eisenbleche, Wellen, Legierung und Andesitgehäuse ergeben das &6Walzwerk&r (8 SU pro RPM). Ein Kupferbarren wird zu zwei &6Kupferruten&r, ein Kupferblech zu zwei &6Kupferkabeln&r."
 		""
-		"Vier Kupferkabel um eine &6leere Spule&r (Eisenbleche und Eisenrute, 24 Stück) ergeben eine &6Kupferspule&r."
+		"Vier Kupferkabel um eine &6leere Spule&r (Eisenbleche und Eisenrute, 24 Stück) ergeben eine &6Kupferspule&r von Crafts & Additions (im Spiel steht dort der Tippfehler \"Kupfersuple\")."
 	]
 	quest.1298361CE320525B.quest_subtitle: "Crafts & Additions: das Walzwerk."
 	quest.1298361CE320525B.title: "&6Walz Draht und Ruten"
@@ -1376,7 +1376,7 @@
 	quest.12FFA45EAC31C4F5.quest_desc: [
 		"&6Lost Souls&r sind kleine bleiche Geister, die überall in der Oberwelt auftauchen, oft zu zweit oder dritt. Jede lässt eine &6Soul&r fallen, und eine Soul ist &e1 Seele&r in der Schmiede."
 		""
-		"Der &6Soul Extractor&r (ein Utrem Jar oben links, darunter zwei Netherziegel und ein Quarzblock, unten ein Netherquarz) zieht aus &6Seelensand&r eine Soul: Rechtsklick halten, der Sand wird zu Soulless Sand. Das Utrem Jar sind acht Glas um ein Edelwood Plank, bis dahin leihst du dir eins oder sammelst von Hand."
+		"Der &6Soul Extractor&r (ein Utrem Jar oben links, darunter zwei Netherziegel und ein Quarzblock, unten ein Netherquarz) zieht aus &6Seelensand&r eine Soul: Rechtsklick halten, der Sand wird zu Soulless Sand. Das Utrem Jar sind sieben Glas mit einem Edelwood Plank oben in der Mitte, bis dahin leihst du dir eins oder sammelst von Hand."
 		""
 		"&eZehnfach:&r Rechtsklick mit einer &6Aureal Bottle&r auf eine Lost Soul macht eine &6Enchanted Lost Soul&r daraus. Ihre &6Enchanted Soul&r zählt &e10 Seelen&r und ist der beste Brennstoff für den Clibano."
 	]
@@ -1424,7 +1424,7 @@
 	quest.13557040AE9FFDB5.quest_desc: [
 		"[\"\",{\"text\":\"Drück \"},{\"keybind\":\"key.ftbchunks.map\",\"color\":\"yellow\"},{\"text\":\" für die Karte, dann \"},{\"text\":\"C\",\"color\":\"yellow\"},{\"text\":\" für die Claim-Ansicht. \"},{\"text\":\"Linke Maustaste\",\"color\":\"yellow\"},{\"text\":\" über die Chunks ziehen beansprucht sie, \"},{\"text\":\"rechte\",\"color\":\"yellow\"},{\"text\":\" gibt sie frei. Dein Team hat bis zu \"},{\"text\":\"500 Chunks\",\"color\":\"yellow\"},{\"text\":\".\"}]"
 		""
-		"In deinen Chunks können nur du, dein Team und deine Verbündeten Blöcke abbauen, setzen und Truhen öffnen. Creeper und Ghasts sprengen dort nichts, Endermen klauen nichts. &cPvP bleibt an&r, Claims machen dich nicht unverwundbar."
+		"In deinen Chunks können nur du, dein Team und deine Verbündeten Blöcke abbauen, setzen und Truhen öffnen. Creeper und Ghasts sprengen dort nichts, Endermen klauen nichts. &ePvP ist für Teams von Haus aus aus&r und lässt sich in den Team-Einstellungen einschalten."
 		""
 		"&eTipp:&r Verbündete trägst du in den Team-Einstellungen ein. Wer eine Maschine mit Fake-Spieler aufstellt (ein Router mit Breaker-Modul), muss &eFake-Spieler erlauben&r oder dem Router ein Sicherheits-Upgrade geben, sonst darf er in deinem Claim nichts."
 	]
@@ -1534,7 +1534,7 @@
 	quest.13B1AD70D0753150.quest_desc: [
 		"Rechtsklick auf den reifen &6Yellow Dock&r gibt &6Yellow Dock Leaves&r und &6Yellow Dock Flowers&r."
 		""
-		"Wie beim Mugwort: Blätter in die normale Bürste, Blüten in die Enhanced Brush, getrocknet beide ins Krähen-Ankh und in die Replacer Satchel."
+		"Wie beim Mugwort: Blätter in die normale Bürste, Blüten in die Enhanced Brush, getrocknet beide ins Krähen-Ankh. Die Replacer Satchel nimmt nur die getrockneten Blüten."
 	]
 	quest.13B1AD70D0753150.quest_subtitle: "Der letzte Busch im Garten."
 	quest.13B1AD70D0753150.title: "&eErnte Yellow Dock"
@@ -1868,7 +1868,7 @@
 	quest.149E9A5BBE9D9BBC.title: "&bBau das Meka-Werkzeug"
 	quest.14A0D801856449FD.quest_desc: [
 		"{image:kronwerke:textures/quests/shots/aether_gloves.png width:224 height:126 align:center}"
-		"Zwei &6Zanite Gemstones&r nebeneinander ergeben &6Zanite Gloves&r, genauso Handschuhe aus Leder, Eisen, Gold oder Diamant. Sie geben Rüstung und machen ein Set erst komplett: Auf Kronwerke brauchen Set-Fähigkeiten die passenden Handschuhe."
+		"Zwei &6Zanite Gemstones&r in einer Reihe mit einem freien Feld dazwischen ergeben &6Zanite Gloves&r, genauso Handschuhe aus Leder, Eisen, Gold oder Diamant. Sie geben Rüstung und machen ein Set erst komplett: Auf Kronwerke brauchen Set-Fähigkeiten die passenden Handschuhe."
 		""
 		"&eDas Menü:&r Der Aether nutzt den &6Accessories&r-Rahmen mit einem eigenen Menü, der Knopf dafür sitzt im Inventar. Die Slots: &e1 Gloves&r, &e2 Rings&r, &e1 Pendant&r, &e1 Cape&r, &e1 Shield&r und &e2 Misc&r für Dinge wie Iron Bubble oder Regeneration Stone."
 		""
@@ -1936,12 +1936,12 @@
 		"&6Magische Kapazität&r (3 Quellbeeren, 3 Magebloom): &e+10&r Prozent Mana je Stufe."
 		"&6Reparieren&r (Amboss, 2 Manipulationsessenzen): repariert alle Magierausrüstung mit Mana."
 		"&6Feder&r (4 Federn, 2 Abschwörungsessenzen): weniger Fallschaden. &6Hoher Schritt&r (3 Luftessenzen): ein Block mehr Stufenhöhe."
-		"Die Helfer-Fäden aus je 3 Scherben: &6Sternbunkel&r 20 Prozent schneller, &6Wirbelzweig&r mehr Sättigung, &6Wixie&r längere Tränke, &6Drygmy&r mehr Beute."
+		"Die Helfer-Fäden aus den Scherben ihres Helfers (wie viele, zeigt EMI): &6Sternbunkel&r 20 Prozent schneller, &6Wirbelzweig&r mehr Sättigung, &6Wixie&r längere Tränke, &6Drygmy&r mehr Beute."
 	]
 	quest.14D74A089FE60670.quest_subtitle: "Checkliste: Mana, Reparatur, Bewegung."
 	quest.14D74A089FE60670.title: "&6Näh Fäden für den Alltag"
 	quest.14E08F74C89000B7.quest_desc: [
-		"Vier Früchte, die du in den Truhen von Nexus-Türmen und Arkanen Bibliotheken findest:"
+		"Vier Früchte, die vor allem an wilden Archwood-Bäumen wachsen. Truhen in Nexus-Türmen und Arkanen Bibliotheken geben je eine zufällige:"
 		"&6Bastionsfrucht&r: Trank der Verteidigung, weniger Schaden."
 		"&6Frostaya&r: Trank des Frierens, friert das Ziel nach und nach ein. Macht die Insel-Tafel verschneit."
 		"&6Mendosteen&r: Trank der Erholung, jede Heilung wirkt stärker. Steckt auch im Faden des Lebensentzugs."
@@ -1981,9 +1981,9 @@
 	quest.14FCB31E83345B2E.quest_subtitle: "Draconic Evolution, 45,5 Millionen bis 2,14 Billionen FE, Stufe 8 ohne Grenze."
 	quest.14FCB31E83345B2E.title: "&cBau den Energiekern"
 	quest.14FE22C633678D6D.quest_desc: [
-		"Endermanfarm, Förderband zu einem Becken mit &6Messinggehäuse&r darunter, Trichtermalve am Beckenrand, Truhe. Fertig."
+		"Endermanfarm, Förderband zu einem Becken mit &6Messingrahmen&r darunter, Trichtermalve am Beckenrand, Truhe. Fertig."
 		""
-		"600 Perlen sind &d3,6 Millionen Mana&r und 600 Enderperlen. Abgegeben wird von Hand am Obelisken, ein Rucksack voll auf einmal."
+		"600 Perlen (die Menge bei 30 aktiven Spielern) sind &d3,6 Millionen Mana&r und 600 Enderperlen. Abgegeben wird von Hand am Obelisken, aus dem Inventar: Einen Rucksack leert er nicht."
 	]
 	quest.14FE22C633678D6D.quest_subtitle: "Sechshundert Perlen wollen verdient sein."
 	quest.14FE22C633678D6D.title: "&bBau eine Perlenfabrik"
@@ -2103,7 +2103,7 @@
 		""
 		"Superior startet mit &e65 Prozent&r Genauigkeit. Ab hier lohnt sich ein Modell schon richtig in der Kammer: zwei von drei Simulationen bringen eine Vorhersage."
 		""
-		"&eTipp:&r Ein Schwert mit Plünderung ändert nichts an den Daten, aber es gibt dir nebenbei mehr Drops. Spawner in Verliesen und Minenschächten sind die schnellste Quelle für Zombies und Skelette."
+		"&eTipp:&r Ein Schwert mit Plünderung ändert nichts an den Daten, aber es gibt dir nebenbei mehr Drops. Spawner in Verliesen sind die schnellste Quelle für Zombies und Skelette. In Minenschächten stehen nur Spawner für Höhlenspinnen."
 	]
 	quest.157ABCC6AB733128.quest_subtitle: "Dreißig Kills, jetzt wird es ernst."
 	quest.157ABCC6AB733128.title: "&dBring ein Modell auf Superior"
@@ -2126,7 +2126,7 @@
 	quest.158DEDBA440C2530.quest_desc: [
 		"3 Wolle übereinander: ein &6Schlafsack&r aus Comforts. Damit überspringst du unterwegs die Nacht, dein Spawnpunkt bleibt am Bett."
 		""
-		"Die &6Hängematte&r (Wolle, Faden, Stöcke) macht dasselbe für den Tag. Jede Farbe geht."
+		"Die &6Hängematte&r (Wolle, Faden, Stöcke) macht dasselbe für den Tag. Sie hängt zwischen zwei &6Seil und Nägel&r, die du dazu brauchst. Jede Farbe geht."
 	]
 	quest.158DEDBA440C2530.quest_subtitle: "Unterwegs schlafen, ohne den Spawnpunkt zu verlieren."
 	quest.158DEDBA440C2530.title: "&6Bau einen Schlafsack"
@@ -2193,7 +2193,7 @@
 	quest.15B8249EF0C1A236.quest_desc: [
 		"Drei &6Holzstufen&r in einer Reihe ergeben zwei &6Regale&r (Item Shelf). Sie hängen an der Wand, und jedes zeigt einen Gegenstand, den du darauf legst. Das &6Schwarze Brett&r (acht Bretter um ein Papier) zeigt den Text eines Buches oder eine Karte."
 		""
-		"Auf der &6Tafel&r (zwei Holzstufen, zwei Schwarzstein, ein weißer Farbstoff oder Quarz, ergibt zwei) zeichnest du Pixel für Pixel. Mit einer Honigwabe wird die Zeichnung fest, dann kann niemand mehr darüber malen."
+		"Auf der &6Tafel&r (drei Holzstufen, drei Schwarzstein, ein weißer Farbstoff) zeichnest du Pixel für Pixel. Mit einer Honigwabe wird die Zeichnung fest, dann kann niemand mehr darüber malen."
 		""
 		"&eFür den Stream:&r Ein Schwarzes Brett mit den Koordinaten der Basis, der Wegsteine und der Farmen spart dir die Frage im Chat."
 	]
@@ -2369,7 +2369,7 @@
 	quest.16303DC9162B0830.quest_subtitle: "Heute nebensächlich, morgen gesucht."
 	quest.16303DC9162B0830.title: "&7Leg eine Kiste für Blei und Salz an"
 	quest.1635091111ED4E18.quest_desc: [
-		"Erst der Kopf: &e5 Tonklumpen&r in T-Form, drei oben, zwei darunter versetzt, ergeben einen &6Blacksmith Gavel Head&r. Dann der Hammer wie eine Spitzhacke: &6Eisenbarren&r, Kopf, Eisenbarren oben, Eisen, Stock, Eisen in der Mitte, Stock unten: ein &6Iron Blacksmith Gavel&r."
+		"Erst der Kopf: &e6 Tonklumpen&r, drei oben und drei darunter, ergeben einen &6Blacksmith Gavel Head&r. Dann der Hammer wie eine Spitzhacke: &6Eisenbarren&r, Kopf, Eisenbarren oben, Eisen, Stock, Eisen in der Mitte, Stock unten: ein &6Iron Blacksmith Gavel&r."
 		""
 		"Rechtsklick mit dem Gavel auf die Schmiede startet das Ritual, wenn Zutaten und Essenzen passen. Das kostet &e50 Haltbarkeit&r, der Eisenhammer schafft also 5 Rituale, der Diamanthammer 31."
 		""
@@ -2730,7 +2730,7 @@
 	quest.174F520608227318.quest_subtitle: "Wütende Bienen lassen dich in Ruhe."
 	quest.174F520608227318.title: "&eSetz einen Bienennest-Helm auf"
 	quest.1760522667E003B6.quest_desc: [
-		"Rechtsklick mit &eFarbstoff&r auf einen braunen oder roten &6Pilz&r macht daraus einen &6Schillernden Pilz&r in dieser Farbe. Er zählt in jedem Rezept als Blütenblatt der gleichen Farbe."
+		"Ein brauner oder roter &6Pilz&r und ein &eFarbstoff&r, formlos an der Werkbank, ergeben einen &6Schillernden Pilz&r in dieser Farbe. Er zählt in jedem Rezept als Blütenblatt der gleichen Farbe."
 		""
 		"Tief unter der Erde findest du sie manchmal auch in kleinen Flecken."
 	]
@@ -2746,7 +2746,7 @@
 	quest.1761F3A1D3D8DB7E.quest_desc: [
 		"Einige Rezepte binden die Seiten aneinander. Schon in Stufe 1: das Getriebe braucht &6Infused Iron&r, der Schlussstein &bManadiamanten&r und &6Andesitlegierung&r."
 		""
-		"Ab Stufe 2: Der &6Lohenbrenner&r braucht 2 &6Quelljuwelen&r, der Runenaltar einen &6Messingbarren&r, &6Manaperlen&r ein &6Messinggehäuse&r unter dem Becken, die Infusionsanlage von Mekanism &6Manastahl&r."
+		"Ab Stufe 2: Der &6Leere Lohenbrenner&r braucht 2 &6Quelljuwelen&r, der Runenaltar einen &6Messingbarren&r, &6Manaperlen&r einen &6Messingrahmen&r unter dem Becken, die Infusionsanlage von Mekanism &6Manastahl&r."
 		""
 		"Die betroffenen Quests nennen das Rezept jeweils als &eRezept auf Kronwerke&r. Klärt früh, wer was übernimmt."
 	]
@@ -2795,7 +2795,7 @@
 	quest.177AE47237E3CB18.quest_subtitle: "Create, Kupplung und Gangschaltung: aus und umgekehrt."
 	quest.177AE47237E3CB18.title: "Schalt Drehung mit Redstone"
 	quest.1787C8DEB600BA0C.quest_desc: [
-		"Im Apparat: Einfacher Zauberturm, &6Quelljuwelblock&r und &e2 Lohenruten&r."
+		"Im Apparat: Einfacher Zauberturm, &6Quelledelsteinblock&r und &e2 Lohenruten&r."
 		""
 		"Der &6Verzauberte Zauberturm&r wirkt zum halben Quellpreis. Mit einem großen Fokus von Ars Elemental wird er ab Stufe 3 zum Elementar-Turm."
 	]
@@ -3018,7 +3018,7 @@
 	quest.17F2803C43A50024.quest_desc: [
 		"Drei &6Andesitlegierungen&r und eine &6Uhr&r ergeben den &6Beckendeckel&r. Setz ihn auf ein &6Becken&r: &6Zucker&r, &6Äpfel&r, &6Kartoffeln&r oder &6Zuckerrohr&r mit &6Knochenmehl&r vergären darin zu &b200 mB Ethanol&r. Ohne Mixer, ohne Hitze."
 		""
-		"Mehr bringt der &6Massenfermenter&r (zwei Andesitlegierungen und ein Fass): dieselben Zutaten ergeben &b400 mB&r. Er macht außerdem aus vier Zuckerrohr und Wasser Zellstoff für Karton und aus &6Bruchstein&r &c50 mB Lava&r, ein unendlicher Lavatropf aus dem Bruchsteingenerator."
+		"Mehr bringt der &6Massenfermenter&r (zwei Andesitlegierungen und ein Fass): dieselben Zutaten ergeben &b400 mB&r. Er macht außerdem aus vier Zuckerrohr und Wasser Zellstoff für Karton und, mit Hitze darunter, aus &6Bruchstein&r &c50 mB Lava&r, ein unendlicher Lavatropf aus dem Bruchsteingenerator."
 		""
 		"&6Pflanzenöl&r ist die zweite Hälfte des Biodiesels: eine Presse über einem Becken verdichtet &6Samen&r zu &b100 mB&r. Eine Weizenfarm mit Erntemaschine liefert beides, Zucker aus Zuckerrohr und Samen aus dem Weizen."
 	]
@@ -3125,7 +3125,7 @@
 	quest.18302206258B4B4E.title: "&aMach die Tafel Fast Squirrels"
 	quest.183250A2C01779E4.quest_desc: [
 		"{image:kronwerke:textures/quests/shots/ars_nouveau_apparatus.png width:224 height:126 align:center}"
-		"Ecken &6Goldnuggets&r, oben und unten Mitte &6Quellstein&r, Mitte Goldbarren, &6Diamant&r, Goldbarren. Stell ihn auf den Arkanen Kern."
+		"Ecken &6Goldnuggets&r, oben und unten Mitte &6Quellstein&r, Mitte Infused Iron, &6Diamant&r, Infused Iron (von Nature's Aura). Stell ihn auf den Arkanen Kern."
 		""
 		"Nebenzutaten auf Podeste im Umkreis von &e3 Blöcken&r, dann mit der Hauptzutat auf den Apparat klicken. Quelle zieht er aus Gläsern in der Nähe."
 		""
@@ -3254,7 +3254,7 @@
 	quest.18AD624776BFD260.quest_subtitle: "Reformation unter Kreaturen."
 	quest.18AD624776BFD260.title: "&5Mach Enderperlen aus Pfeilen"
 	quest.18AEB2BD64542C78.quest_desc: [
-		"Im Apparat: &6Quelljuwelblock&r in die Mitte, &6Wilden-Horn&r, &6-Stachel&r, &6-Flügel&r, &5Wilden-Tribut&r, &6Goldbarren&r auf die Podeste."
+		"Im Apparat: &6Quelledelsteinblock&r in die Mitte, &6Wilden-Horn&r, &6-Stachel&r, &6-Flügel&r, &5Wilden-Tribut&r, &6Goldbarren&r auf die Podeste."
 		""
 		"Beschworene Wesen halten länger, sind stärker und schneller. Selbst-Zauber wirken als Kopie auch auf sie. Ars Elemental macht daraus mit 2 Wither-Rosen, Witherskelettschädel und Anima den &6Fokus der Nekromantie&r: deine Beschwörungen stehen einmal wieder auf."
 	]
@@ -3619,7 +3619,7 @@
 		""
 		"Rechtsklick mit einem &6Skyroot Bucket&r auf eine lebende Pflanze füllt ihn mit &6Gift&r, Zutat für Poison Darts und, im Altar verzaubert, für den &6Remedy Bucket&r gegen Vergiftung."
 		""
-		"Eine Blume auf Enchanted Grass neben deinem Haus hält Aechor Plants vom Spawnen ab."
+		"Eine weiße oder violette Aether-Blume auf Enchanted Grass neben deinem Haus hält Aechor Plants vom Spawnen ab."
 	]
 	quest.199B3CD9BAEC1C95.quest_subtitle: "Das Lieblingsfutter der Moas, mit Dornen."
 	quest.199B3CD9BAEC1C95.title: "&dPflück Aechor Petals"
@@ -3777,7 +3777,7 @@
 	quest.1A33962F72337913.title: "&7Puzzleteil: Harvest"
 	quest.1A35F04F63E9A5FD.quest_desc: [
 		"&dGiftsporen&r (Sporenblüte, Roter Pilz, Erdessenz): Sporen springen auf vergiftete Ziele über."
-		"&dVergiften&r (Giftige Kartoffel, Fermentiertes Spinnenauge, Seltsame Suppe): Gift, das sich zu Gift steigert."
+		"&dVergiften&r (Giftige Kartoffel, Fermentiertes Spinnenauge, Seltsame Suppe): vergiftet das Ziel. Ist es schon vergiftet, wird daraus das stärkere Gift Venom."
 		"&dStachel&r (Spitzer Tropfstein, Netheritbarren, Erdessenz): ein Tropfsteinstachel aus dem Boden."
 		"&dBienen beschwören&r (Erd- und Beschwörungsessenz, Magebloom, Honigwabe), &dSchleime beschwören&r (Wasser- und Beschwörungsessenz, 2 Schleimbälle): je drei Kämpfer."
 	]
@@ -3887,7 +3887,7 @@
 		""
 		"{image:botania:textures/item/pixie_dust.png width:32 height:32 align:center}"
 		""
-		"Feenstaub steckt in den neuen Blumen, im Corporea-Funken, im Zauberkatalysator, im Großen Feenring und zweimal in jedem &dElfenstern&r. Die Perlenfabrik aus Stufe 2 (Messinggehäuse unter dem Becken) läuft einfach weiter."
+		"Feenstaub steckt in den neuen Blumen, im Corporea-Funken, im Zauberkatalysator, im Großen Feenring und zweimal in jedem &dElfenstern&r. Die Perlenfabrik aus Stufe 2 (Messingrahmen unter dem Becken) läuft einfach weiter."
 	]
 	quest.1A98FA4E62659939.quest_subtitle: "Eine Perle wird zu Staub, der funkelt."
 	quest.1A98FA4E62659939.title: "&dTausch Manaperlen gegen Feenstaub"
@@ -4204,7 +4204,7 @@
 	quest.1BA383CB538934F3.title: "&bLass die Bienen zu Hause"
 	quest.1BAF095A8D0F5B04.quest_desc: [
 		"{image:kronwerke:textures/quests/shots/ars_apprentice_ritual_scrying.png width:224 height:126 align:center}"
-		"&5Ärgerlicher Stamm&r, &e3 Spinnenaugen&r, &6Glowstone&r, &6Quelljuwelblock&r."
+		"&5Ärgerlicher Stamm&r, &e3 Spinnenaugen&r, &6Glowstone&r, &6Quelledelsteinblock&r."
 		""
 		"Vor dem Start einen Block auf das Becken werfen, etwa Zinkerz. Danach siehst du jeden Block dieser Sorte durch die Erde: weiß nah, grün mittel, blau weit. Mit einer Manipulationsessenz dazu &e15 Minuten&r lang."
 	]
@@ -4246,7 +4246,7 @@
 	quest.1BC47FEDF2DE0457.quest_subtitle: "Höllische Arcana."
 	quest.1BC47FEDF2DE0457.title: "&cInfernal"
 	quest.1BD27D3045508B31.quest_desc: [
-		"Drei &6Flachs&r übereinander oder drei &6Fäden&r diagonal ergeben drei &6Seile&r. Häng sie an einen Block, und sie fallen nach unten, so weit du Seile hast. Du kletterst daran wie an einer Leiter, und sie lassen sich auch waagerecht von Pfosten zu Pfosten spannen."
+		"Drei &6Flachs&r übereinander ergeben drei &6Seile&r. Häng sie an einen Block, und sie fallen nach unten, so weit du Seile hast. Du kletterst daran wie an einer Leiter, und sie lassen sich auch waagerecht von Pfosten zu Pfosten spannen."
 		""
 		"{image:supplementaries:textures/item/flax.png width:32 height:32 align:center}"
 		""
@@ -4279,7 +4279,7 @@
 	quest.1BE3F59805996FA5.quest_desc: [
 		"&eRezept:&r drei &6Quarzstufen&r oben, &6Eisengitter&r, &6Heuballen&r, &6Eisengitter&r in der Mitte, drei &6Polierter Schwarzstein&r unten. Ein &6Erntepylon&r."
 		""
-		"Stell ihn in oder über den Wasserblock deines Feldes, eine &6Truhe&r direkt darüber und eine &6Hacke&r in den Pylon. Alle &e3 Sekunden&r erntet er reife Pflanzen im eingestellten Bereich, pflanzt nach und legt den Ertrag in die Truhe. Jede Ernte kostet die Hacke einen Punkt Haltbarkeit."
+		"Stell ihn in den Wasserblock deines Feldes oder auf Höhe der Pflanzen, eine &6Truhe&r direkt darüber und eine &6Hacke&r in den Pylon. Alle &e3 Sekunden&r erntet er reife Pflanzen im eingestellten Bereich, pflanzt nach und legt den Ertrag in die Truhe. Jede Ernte kostet die Hacke einen Punkt Haltbarkeit."
 		""
 		"&cHinweis:&r Quarz und Schwarzstein kommen aus dem Nether, der Pylon öffnet mit &eStufe 2&r. Sammle bis dahin den Heuballen und die Gitter. In Stufe 1 ernten der Trichter-Pflanztopf und die Create-Erntemaschine, siehe Kapitel Erste Farmen."
 		""
@@ -4426,7 +4426,7 @@
 	quest.1C73E7DE9BF8CAA8.quest_desc: [
 		"In manchen Tiefen Dunkelheiten steht eine &6Antike Stadt&r aus Tiefenschiefer, mit einem großen Rahmen aus &6Verstärktem Tiefenschiefer&r in der Mitte. Folge den Seelenlaternen, die Stadt liegt meist in der Mitte des Bioms."
 		""
-		"&eIn den Truhen:&r &6Echoscherben&r, Plattenbruchstücke, Bücher mit Flinkes Schleichen, und von Deeper and Darker die &6Resonarium-Schmiedevorlage&r (etwa jede zweite Truhe), der &6Wärterpanzer&r (jede fünfte) und die &6Wärter-Schmiedevorlage&r für Stufe 4."
+		"&eIn den Truhen:&r &6Echoscherben&r, Plattenbruchstücke, Bücher mit Huschen, und von Deeper and Darker die &6Resonarium-Schmiedevorlage&r (etwa jede zweite Truhe), der &6Wärterpanzer&r (jede fünfte) und die &6Wärter-Schmiedevorlage&r für Stufe 4."
 		""
 		"&eEchoscherben&r brauchst du gleich für den Portalrahmen, nimm alle mit. Occultism kann sie auch herstellen, aus Grauer Paste und Echostaub."
 		""
@@ -4461,7 +4461,7 @@
 	quest.1C7BD39CB453595A.quest_desc: [
 		"Der &6Bauplantisch&r von Create (Holzstufen und glatter Stein) ist schon offen. Mit &6Bauplan und Feder&r markierst du ein Gebäude, speicherst es als Datei und lädst es am Tisch wieder hoch. So sicherst du heute schon, was du gebaut hast."
 		""
-		"Die &6Bauplankanone&r, die den Plan Block für Block aufbaut, öffnet mit &6Stufe 2&r, sie braucht Messing und ein Präzisionsgetriebe. Alles dazu im Kapitel &6Create: Messing&r."
+		"Die &6Bauplankanone&r, die den Plan Block für Block aufbaut, öffnet mit &6Stufe 2&r. Alles dazu im Kapitel &6Create: Messing&r."
 		""
 		"Ebenfalls Stufe 2: der &6Symmetriestab&r, der jeden gesetzten Block gespiegelt setzt, und der &6Extendo Griff&r für Reichweite beim Bauen."
 	]
@@ -4557,14 +4557,14 @@
 	quest.1CB83D6658D893E5.quest_subtitle: "Der Ölscanner zeigt, was unter dem Chunk liegt."
 	quest.1CB83D6658D893E5.title: "&6Such nach Öl"
 	quest.1CBB52F9CEC18DAE.quest_desc: [
-		"Einen &6Messingbarren&r per Rechtsklick auf &6entrindetes Holz&r anwenden, das gibt ein &6Messinggehäuse&r. Messing macht der Create-Mixer über einem Lohenbrenner."
+		"Einen &6Messingbarren&r per Rechtsklick auf &6entrindetes Holz&r anwenden, das gibt einen &6Messingrahmen&r. Messing macht der Create-Mixer über einem Lohenbrenner."
 		""
 		"{image:create:textures/block/brass_casing.png width:32 height:32 align:center}"
 		""
 		"Du brauchst ein Gehäuse unter dem Perlenbecken, einen Barren im Runenaltar und zwei Gehäuse in der Terraplatte. Ohne eigene Messinglinie: tausch Manastahl oder Feuerrunen bei den Ingenieuren."
 	]
 	quest.1CBB52F9CEC18DAE.quest_subtitle: "Perlen, Runen und Terrastahl brauchen die Technik."
-	quest.1CBB52F9CEC18DAE.title: "&6Hol dir Messinggehäuse"
+	quest.1CBB52F9CEC18DAE.title: "&6Hol dir Messingrahmen"
 	quest.1CC45297F418C1C6.quest_desc: [
 		"&62 Goldnuggets&r, ein &6Tintenbeutel&r und &63 Papier&r ergeben drei &6Rückkehr-Schriftrollen&r. Jede bringt dich einmal zum nächsten aktivierten Wegstein."
 		""
@@ -4782,7 +4782,7 @@
 		""
 		"Das Lohen-Modell kostet &d256 FE/t&r, und eine Vorhersage wird im Fabrikator zu &616 Lohenruten&r. Schon in Stufe 3 ergeben zwei &6Nether-Vorhersagen&r und ein Knochen an der Werkbank eine Rute, ganz ohne Fabrikator."
 		""
-		"&eKronwerke:&r Messing braucht Lohenstaub, und das Messingziel am Obelisken verlangt 2.000 Barren. Ein fertiges Lohen-Modell ist der bequemste Nachschub, den es gibt."
+		"&eKronwerke:&r Messing braucht Lohenstaub, und das Messingziel am Obelisken verlangt bei 30 aktiven Spielern 2.000 Barren. Ein fertiges Lohen-Modell ist der bequemste Nachschub, den es gibt."
 	]
 	quest.1D60F7B9916F92B1.quest_subtitle: "Sechzehn Ruten pro Vorhersage."
 	quest.1D60F7B9916F92B1.title: "&6Lerne die Lohe"
@@ -4796,7 +4796,7 @@
 	quest.1D68228F76A8678F.quest_desc: [
 		"[\"\",{\"text\":\"Drück \"},{\"keybind\":\"key.voice_chat\",\"color\":\"yellow\"},{\"text\":\" für das Menü von \"},{\"text\":\"Simple Voice Chat\",\"color\":\"gold\"},{\"text\":\": Mikrofon wählen, Lautstärke, Push-to-Talk oder Sprachaktivierung. Wer bis \"},{\"text\":\"48 Blöcke\",\"color\":\"yellow\"},{\"text\":\" entfernt ist, hört dich, leiser mit der Entfernung. Flüstern reicht 24 Blöcke.\"}]"
 		""
-		"Im selben Menü legst du eine &6Gruppe&r an oder trittst einer bei. Gruppenmitglieder hören sich überall, auch über Dimensionen hinweg. Ein Symbol am Bildschirmrand zeigt, wer gerade spricht, und Aufnahmen über das Menü sind auf dem Server erlaubt."
+		"Im selben Menü legst du eine &6Gruppe&r an oder trittst einer bei. Gruppenmitglieder hören sich überall, auch über Dimensionen hinweg. Ein Symbol am Bildschirmrand zeigt, wer gerade spricht. Aufnahmen über das Menü sind auf dem Server ausgeschaltet."
 	]
 	quest.1D68228F76A8678F.quest_subtitle: "Simple Voice Chat, nach Entfernung."
 	quest.1D68228F76A8678F.title: "&6Sprich mit deinen Nachbarn"
@@ -4930,7 +4930,7 @@
 	quest.1DDCF058D133D244.quest_subtitle: "Einmal finden, für immer kopieren."
 	quest.1DDCF058D133D244.title: "&7Hol die vier Pressen"
 	quest.1DE73DA24F01B600.quest_desc: [
-		"Eine &6Mechanische Eisenkomponente&r oben, ein &6Einfacher Ingenieursbaustein&r, ein &6Förderband&r unten ergeben den &6Element-Router&r."
+		"Eine &6Mechanische Eisenkomponente&r oben, ein &6Einfacher Ingenieursbaustein&r, ein &6Förderband&r unten ergeben den &6Element Router&r."
 		""
 		"Jede Seite hat eine Farbe und eigene Filterplätze. Was hineinkommt, geht an eine Seite, deren Filter passt, sonst an eine Seite ohne Filter. Passt gar nichts, nimmt er es nicht an."
 		""
@@ -5120,7 +5120,7 @@
 		""
 		"&eKronwerke:&r Der Stein-Pfeiler will &620 000 Bruchstein&r (für 30 Spieler). Mehrere Generatoren an einer Welle füllen die Kisten im Schlaf, zum Obelisken trägst du sie selbst."
 		""
-		"Abgegeben wird nur von Hand: Schleichen und Rechtsklick am Obelisken gibt alles Passende aus dem Inventar ab."
+		"Abgegeben wird nur von Hand am Obelisken: Schleichen und zweimal Rechtsklick mit einem Item in der Hand gibt alles Passende aus den drei Inventarreihen ab. Einen Rucksack leert er nicht."
 	]
 	quest.1E6A70DE20166D82.quest_subtitle: "Stein ohne Ende für den Obelisken."
 	quest.1E6A70DE20166D82.title: "&6Bau einen Bruchsteingenerator"
@@ -5210,7 +5210,7 @@
 	quest.1E9B264981B65A97.quest_subtitle: "Der Rahmen für jede Maschine des Mods."
 	quest.1E9B264981B65A97.title: "&7Bau ein Maschinengehäuse"
 	quest.1EA3C3DBE67D7E81.quest_desc: [
-		"Werkbank: &63 Thermal Springstone Ingots&r oben, &62 Stöcke&r darunter, wie eine Spitzhacke. Das ergibt die &6Thermal Springstone Scythe&r."
+		"Werkbank: &63 Thermal Springstone Ingots&r oben, &62 Stöcke&r darunter in der rechten Spalte, nicht in der Mitte wie bei einer Spitzhacke. Das ergibt die &6Thermal Springstone Scythe&r."
 		""
 		"Sensen sind eine eigene Waffenart neben Schwert und Axt. Zubehör legst du wie in ein Bündel hinein. Geht das Teil kaputt, ist das Zubehör weg."
 	]
@@ -5364,7 +5364,7 @@
 	quest.1F39DA19C699832B.quest_subtitle: "Packband."
 	quest.1F39DA19C699832B.title: "Zieh um, ohne auszuräumen"
 	quest.1F3D0C194EC97397.quest_desc: [
-		"Bau ein &6Ladegerät&r (Eisen rundum, ein &6Kupferbarren&r oben in der Mitte, rechts offen) und leg einen normalen &6Kompass&r hinein. Strom kommt über ein Kabel oder eine &6Holzkurbel&r obendrauf (drei Stöcke, ein Kupferbarren), die du von Hand drehst."
+		"Bau ein &6Ladegerät&r (Eisen links und in den Ecken, je ein &6Kupferbarren&r oben und unten in der Mitte, Mitte und rechts Mitte frei) und leg einen normalen &6Kompass&r hinein. Strom kommt über ein Kabel oder eine &6Holzkurbel&r obendrauf (vier Stöcke, ein Kupferbarren), die du von Hand drehst."
 		""
 		"&bApplied Energistics 2&r speichert Gegenstände als Daten auf &6Speicherzellen&r. Ein Kabelnetz verbindet Zellen, Konsolen und Maschinen, und später baut das Netz Dinge selbst."
 		""
@@ -5403,9 +5403,9 @@
 	quest.1F59313B69E3CBA4.quest_desc: [
 		"Feindliche Mobs spawnen seit 1.18 nur noch bei &eLichtstärke 0&r. Eine Fackel leuchtet mit 14 und verliert pro Block eins. Alle &e12 Blöcke&r eine Fackel in jede Richtung, und auf dem Boden dazwischen spawnt nichts mehr."
 		""
-		"Hübscher als Fackeln: &6Wandfackeln&r und &6Kerzenständer&r aus Supplementaries, &6Laternen&r in 32 Chipped-Varianten, die &6Rahmenlaterne&r aus der Säge. Ab Stufe 2 kommt Glowstone dazu: ein getarnter Rahmenblock mit &6Glowstone-Staub&r leuchtet mit Lichtstärke 15 und sieht aus wie vorher."
+		"Hübscher als Fackeln: &6Wandfackeln&r und &6Kerzenständer&r aus Supplementaries, &6Laternen&r in 18 Chipped-Varianten, die &6Rahmenlaterne&r aus der Säge. Ab Stufe 2 kommt Glowstone dazu: ein getarnter Rahmenblock mit &6Glowstone-Staub&r leuchtet mit Lichtstärke 15 und sieht aus wie vorher."
 		""
-		"&eUnterwegs:&r &6Dynamic Lights&r ist im Pack. Eine Fackel in der Hand oder in der Nebenhand leuchtet beim Laufen, auch in der Mine. Das ist nur Anzeige auf deinem Bildschirm, Mobs hält es nicht ab."
+		"&eUnterwegs:&r Eine Fackel in der Hand leuchtet nicht, Dynamic Lights ist nicht im Pack. Nimm genug Fackeln zum Setzen mit."
 	]
 	quest.1F59313B69E3CBA4.quest_subtitle: "Kein Creeper im Stream-Hintergrund."
 	quest.1F59313B69E3CBA4.title: "&eLeuchte alles aus"
@@ -5532,9 +5532,9 @@
 	quest.1FDDDEC3ACEFDA33.quest_subtitle: "Jedes Bücherregal zählt, aus welchem Mod auch immer."
 	quest.1FDDDEC3ACEFDA33.title: "&6Stell fünfzehn Regale auf"
 	quest.1FDFA0956359CF09.quest_desc: [
-		"Verabredet feste Abende für Kämpfe gegen die &aGaia-Wächterin&r. Jeder Spieler im Kampf bekommt &e6 Gaia-Geister&r, wer den letzten Treffer landet, &e8&r."
+		"Verabredet feste Abende für Kämpfe gegen die &aGaia-Wächterin&r. Jeder Spieler im Kampf bekommt &e6 Gaia-Seelen&r, wer den letzten Treffer landet, &e8&r."
 		""
-		"Die Rechnung: 128 Barren für den Obelisken und 32 für die Fusionen sind 160 Barren, also &e640 Gaia-Geister&r. Mit vier Leuten pro Kampf sind das gut 25 Kämpfe."
+		"Die Rechnung: 128 Barren für den Obelisken (bei 30 aktiven Spielern) und 32 für die Fusionen sind 160 Barren, also &e640 Gaia-Seelen&r. Mit vier Leuten pro Kampf sind das gut 25 Kämpfe."
 		""
 		"Jeder abgegebene Barren zählt 25 Punkte. Die Kämpfe stehen im Kapitel &aBotania: Gaia&r."
 	]
@@ -5575,7 +5575,7 @@
 	quest.1FF3E7840F0F5373.quest_desc: [
 		"&6Zombie&r in einen Z-Logic Regler gibt &6Frank'N'Zombie&r. &6Dorfbewohner&r in einen Smaragd gibt den &6Verlockenden Kristall&r. &6Enderman&r in einen Strahlenden Kristall gibt den &6Enderkristall&r für den Stab des Reisenden."
 		""
-		"Ein &6Kaputter Spawner&r (fällt beim Abbau eines Spawners) nimmt jede Seele und wird Herz des &6Energiebetriebenen Spawners&r."
+		"Ein &6Kaputter Spawner&r (auf Kronwerke: einen mit Behutsamkeit abgebauten Spawner allein ins Handwerksfeld legen, beim Abbau fällt er nicht) nimmt jede Seele und wird Herz des &6Energiebetriebenen Spawners&r."
 		""
 		"&eKronwerke:&r Ein Dubioser Behälter aus Oritech mit der Seele eines Allays, Phantoms oder Plagegeists wird &6Unheilige Intelligenz&r, die Oritech für späte Addons braucht."
 	]
@@ -5643,7 +5643,7 @@
 	quest.200CD0947E173E23.quest_subtitle: "Neo Origins: 50 Mana mehr, ein Herz weniger."
 	quest.200CD0947E173E23.title: "&dWähl die Quellgeborene"
 	quest.20126811246AC3FC.quest_desc: [
-		"Rechtsklick mit Juwelen auf den &eObelisken&r an der Spawn, schleichend gibst du alles Passende ab."
+		"Rechtsklick mit Juwelen auf den &eObelisken&r am Spawn gibt den Stapel in deiner Hand ab. Schleichen und zweimal Rechtsklick gibt alles Passende aus den drei Inventarreihen ab."
 		""
 		"Die Magie-Säule: &e800 Quelljuwelen&r (angepasst an die Spielerzahl) und &e12 Quellschlusssteine&r. Ein Schlussstein zählt so viel wie gut 60 Juwelen: &e4 Quelljuwelblöcke&r, Quellglas, 2 Manadiamanten aus Botania, Andesitlegierung, Gold Leaf aus Nature's Aura. Rezept im Kapitel &6Hier geht's los&r."
 		""
@@ -5675,7 +5675,7 @@
 	quest.20210ADA8839D3DA.quest_desc: [
 		"&e4 Lebestein&r, &e2 Goldbarren&r, &e2 Braustände&r und &e1 Manaperle&r. Unter einem Manabecken lässt er das Becken Dinge umwandeln statt infundieren."
 		""
-		"EMI zeigt alle Rezepte unter dem Katalysator. Eine Funktionsblume ins Becken mit Katalysator geworfen wird für etwas Mana kleiner: gleiche Wirkung, kleinerer Bereich."
+		"EMI zeigt alle Rezepte unter dem Katalysator. Zehn Funktionsblumen haben eine kleine Variante: So eine Blume, ins Becken mit Katalysator geworfen, wird für etwas Mana kleiner, mit gleicher Wirkung und kleinerem Bereich."
 		""
 		"In Stufe 3 wird er zum Zauberkatalysator, siehe &aBotania: Alfheim&r."
 	]
@@ -5853,7 +5853,7 @@
 	quest.208E02F95486BC7D.title: "&eMach leere Upgrades"
 	quest.208EBDB907C592AB.quest_desc: [
 		"{image:kronwerke:textures/quests/shots/list_dimensions_r_plates.png width:224 height:126 align:center}"
-		"&eSo geht es:&r Zwei &6Warpplatten&r, ein &6Ruhender Splitter&r (2 Warppulver, Feuerstein) in die erste Platte gelegt wird eingestellt, den trägst du zur zweiten. Ab dann bringt dich jede Platte zur anderen, sobald du eine Dreiviertelsekunde darauf stehst."
+		"&eSo geht es:&r Zwei &6Warpplatten&r, ein &6Ruhender Splitter&r (2 Warppulver, Feuerstein) in die erste Platte gelegt wird eingestellt, den trägst du zur zweiten. Das ist der Weg zurück zur ersten, für die Gegenrichtung brauchst du einen zweiten Splitter aus der zweiten Platte. Dann bringt dich jede Platte zur anderen, sobald du eine Dreiviertelsekunde darauf stehst."
 		""
 		"&eWarum:&r Warpplatten kosten laut Serverconfig &ekeine Erfahrung&r, auch zwischen Dimensionen nicht. Eine Platte an der Basis, eine am Portal in der Mine oder im Nether, und du sparst dir die 27 Level jedes Mal."
 		""
@@ -5878,14 +5878,14 @@
 		""
 		"Der &6Bauplan&r (vier Rahmenblöcke um ein Papier) kopiert mit Schleichen und Rechtsklick einen fertigen Rahmen samt Tarnung. Danach setzt du mit Rechtsklick Kopien, solange du Rahmen und Tarnblöcke im Inventar hast. Der Tooltip zeigt, was fehlt."
 		""
-		"&eTipp:&r Die &6Rahmenaxt&r (zwei Eisenbarren, zwei Rahmenblöcke) baut Rahmen ab, ohne die Tarnung einzeln fallen zu lassen. Umbauen geht damit ohne Sortierarbeit."
+		"&eTipp:&r Die &6Rahmenaxt&r (drei Eisenbarren, zwei Rahmenblöcke) baut Rahmen ab, ohne die Tarnung einzeln fallen zu lassen. Umbauen geht damit ohne Sortierarbeit."
 	]
 	quest.20AC1121F3B1DE67.quest_subtitle: "Drehen, sperren, kopieren."
 	quest.20AC1121F3B1DE67.title: "&6Nimm das Rahmenwerkzeug"
 	quest.20ACF671564976EB.quest_desc: [
 		"Wirf einen Edelstein, den du nicht brauchst, auf den Boden und lass einen &6Amboss&r darauf fallen. Übrig bleibt &6Gem Dust&r."
 		""
-		"Gem Dust steckt in jedem Tisch und jedem Siegel dieses Kapitels, und das Schleifen von Edelsteinen frisst ihn stapelweise. Ein Cracked-Stein gibt ein bis zwei Staub, ein Flawed-Stein zwei bis vier."
+		"Gem Dust steckt in jedem Tisch und jedem Siegel dieses Kapitels, und das Schleifen von Edelsteinen frisst ihn stapelweise. Am Amboss gibt jeder Edelstein genau einen Staub. Mehr gibt nur der Salvaging Table: ein bis zwei für einen Cracked-Stein, zwei bis vier für einen Flawed-Stein."
 		""
 		"Der Amboss ist nur für den Anfang. Sobald der Salvaging Table steht, zerlegst du Edelsteine dort."
 	]
@@ -5992,7 +5992,7 @@
 	quest.20EF2EB6442B2645.quest_desc: [
 		"Gelbkuchen in den &6Chemischen Oxidierer&r. Ein Stück gibt &e250 mB Uranoxid&r."
 		""
-		"Häng einen Chemikalientank an den Ausgang, das Oxid wartet dort auf die Säure."
+		"Häng einen Chemikalienbehälter an den Ausgang, das Oxid wartet dort auf die Säure."
 	]
 	quest.20EF2EB6442B2645.quest_subtitle: "Schritt 2: Uranoxid."
 	quest.20EF2EB6442B2645.title: "&aOxidier den Gelbkuchen"
@@ -6279,7 +6279,7 @@
 	quest.21BA3E883012520F.quest_desc: [
 		"Fäll &616 Smogstielstämme&r. Das ist das Bauholz des Undergarden."
 		""
-		"&eDie Waldbiome:&r &6Smogstielwald&r, &6Dichter Wald&r, &6Wackelholzwald&r, &6Grongelwucher&r und die &6Smogtürme&r mit ihren rauchenden Schlitzen. Im &6Vergessenen Feld&r stehen die Katakomben."
+		"&eDie Waldbiome:&r &6Smogstielwald&r, &6Dichter Wald&r, &6Wackelholzwald&r, &6Grongelwucher&r und die &6Smogtürme&r mit ihren rauchenden Schlitzen. Katakomben stehen in sechs Biomen, nicht nur im &6Vergessenen Feld&r."
 	]
 	quest.21BA3E883012520F.quest_subtitle: "Smogstiel, Wackelholz und Grongel."
 	quest.21BA3E883012520F.title: "&2Durchquer die Wälder"
@@ -6291,7 +6291,7 @@
 	quest.21BAD57C35D63EE0.quest_subtitle: "Warum gutes Essen mehr kann."
 	quest.21BAD57C35D63EE0.title: "&dVerstehe Gesättigt und Komfort"
 	quest.21C041B791510B65.quest_desc: [
-		"Sammle Stahl und Schaltkreise in Kisten und gib sie von Hand am Obelisken ab, Schleichen und Rechtsklick nimmt alles Passende. Den Stand zeigt &e/kw goals&r."
+		"Sammle Stahl und Schaltkreise in Kisten und gib sie von Hand am Obelisken ab: Schleichen und zweimal Rechtsklick mit einem Item in der Hand gibt alles Passende aus den drei Inventarreihen ab. Den Stand zeigt &e/kw goals&r."
 		""
 		"&eTechnik-Pfeiler von Stufe 3:&r &64 000 Stahlbarren&r, &6250 Fortgeschrittene Schaltkreise&r, &68 Stahlkerne&r. Der Magie-Pfeiler will Elementium, Afrit-Essenz und Elfensterne, und beide müssen voll werden."
 		""
@@ -6332,7 +6332,7 @@
 	quest.21D70A0798C0D3AC.quest_desc: [
 		"&6Zauberprisma&r: Ecken Gold, Seiten Archwood-Planken, Mitte Quarzblock. Lenkt Projektilzauber in seine Blickrichtung."
 		"&6Fortgeschrittenes Prisma&r (Ars Elemental): Prisma mit 4 Quarz und 4 Quelljuwelen, per Dominion-Zauberstab auf einen Block ausgerichtet, mit Linsen."
-		"&6Zauberspiegel&r (Ars Elemental, im Apparat aus Quelljuwelblock, 2 Archwood-Stämmen, 2 Quarz, 2 Gold, ergibt 2): wirft Projektile im Spiegelwinkel zurück."
+		"&6Zauberspiegel&r (Ars Elemental, im Apparat aus Quelledelsteinblock, 2 Archwood-Stämmen, 2 Quarz, 2 Gold, ergibt 2): wirft Projektile im Spiegelwinkel zurück."
 	]
 	quest.21D70A0798C0D3AC.quest_subtitle: "Checkliste: Prisma, Fortgeschrittenes Prisma, Spiegel."
 	quest.21D70A0798C0D3AC.title: "&aLenk Zauber mit Prismen"
@@ -6406,7 +6406,7 @@
 	quest.2204C95C148D2A7B.quest_subtitle: "Das Range-Upgrade."
 	quest.2204C95C148D2A7B.title: "&bGreif weiter"
 	quest.22069EFD07BB1C25.quest_desc: [
-		"Drei &6Behandelte Holzstufen&r oben, &6Behandelte Stöcke&r links und rechts, eine normale &6Werkbank&r in der Mitte ergeben die &6Ingenieurswerkbank&r."
+		"Drei &6Behandelte Holzstufen&r oben, je zwei &6Behandelte Stöcke&r links und rechts darunter, eine normale &6Werkbank&r in der Mitte ergeben die &6Ingenieurswerkbank&r."
 		""
 		"Sie behält die Zutaten im Raster, wenn du sie schließt, und hat eine Schublade. Sie ist außerdem die Zutat für den Ingenieursarbeitstisch."
 	]
@@ -6451,7 +6451,7 @@
 	quest.221FDC201D52BB6D.quest_subtitle: "Der Brennstoff für jeden Stahlbarren."
 	quest.221FDC201D52BB6D.title: "&8Mach Koks auf Vorrat"
 	quest.22221FD1BB9A6413.quest_desc: [
-		"&6Quelljuwelen&r gibt es nur aus der &aImbuement-Kammer&r: Amethyst hinein, ein &6Quellglas&r mit &dSource&r daneben."
+		"&6Quelljuwelen&r macht die &aImbuement-Kammer&r: Amethyst oder Lapislazuli hinein, ein &6Quellglas&r mit &dSource&r daneben. Ab Stufe 2 geht es auch im beheizten Mischer von Create."
 		""
 		"{image:ars_nouveau:textures/item/source_gem.png width:32 height:32 align:center}"
 		""
@@ -6491,7 +6491,7 @@
 	quest.2242B89C69770C2E.quest_subtitle: "Eine Presse aus einer Singularität."
 	quest.2242B89C69770C2E.title: "&eBau Akkumulationsprozessoren"
 	quest.224479AAA0A4414E.quest_desc: [
-		"&e7 Lebeholzbretter&r in U-Form. Was ein Trichter hineinschiebt, fällt direkt darunter auf den Boden."
+		"&e7 Lebeholzbretter&r als Torbogen: oben drei, darunter links und rechts je zwei. Was ein Trichter hineinschiebt, fällt direkt darunter auf den Boden."
 		""
 		"Stell sie zwei Blöcke hoch neben die Endoflammen, Truhe und Trichter darüber."
 	]
@@ -6537,7 +6537,7 @@
 	quest.226A79805651EEA1.title: "&6Näh Fäden der Elemente"
 	quest.226CA070D5BBB183.quest_desc: [
 		"{image:kronwerke:textures/quests/shots/exploration_e_dnt_tavern.png width:224 height:126 align:center}"
-		"Geh in eine &6Taverne&r von Dungeons and Taverns. Ein Dorfbewohner dort tauscht &e14 Smaragde&r und einen &6Kompass&r einmalig gegen eine Karte zu einem Bauwerk."
+		"Geh in eine &6Taverne&r von Dungeons and Taverns. Ein Dorfbewohner dort tauscht &e14 Smaragde&r und einen &6Kompass&r gegen eine Karte zu einem Bauwerk. Er hat zwei solche Angebote."
 		""
 		"Die Karte führt zu Krypten, Ruinen, einer antiken Stadt und anderen Orten der Mod. Tavernen gibt es in elf Stilen, von Eiche bis Mangrove."
 	]
@@ -6664,7 +6664,7 @@
 	quest.22BF723CE4303798.title: "&6&lBronze-Dungeon"
 	quest.22C1332ED7FAEE7F.quest_desc: [
 		"Im Wasserkessel: &e2 schwarzer Farbstoff&r, &e4 Leder&r, &e2 Fäden&r ergeben &e2 Infused Fabric&r."
-		"Hut aus &e5&r, Robe aus &e7&r, Stiefel aus &e4&r Stoff, geformt wie normale Rüstung. Das sind 16 Stoff, also acht Mischungen."
+		"Hut aus &e5&r, Robe aus &e8&r, Stiefel aus &e4&r Stoff, geformt wie normale Rüstung. Das sind 17 Stoff, also neun Mischungen."
 		""
 		"Das ganze Set gibt ein paar Vorteile. Jedes Teil lässt sich färben, benannt wechselt es die Farbe."
 	]
@@ -6880,9 +6880,9 @@
 	quest.23696C7BCABFF6AA.quest_subtitle: "Ein Werkzeug für den Steinamboss."
 	quest.23696C7BCABFF6AA.title: "&7Schnitz ein grobes Messer"
 	quest.2370380F3F646B9D.quest_desc: [
-		"Eine &6Andesitlegierung&r im Steinschneider ergibt eine &6Andesit-Tischdecke&r. Klick damit den Verkäufer am Lagerticker an, stell sie auf, leg die Ware darauf und den Preis darunter."
+		"Eine &6Andesitlegierung&r im Steinschneider ergibt zwei &6Andesit-Tischdecken&r. Klick damit den Verkäufer am Lagerticker an, stell sie auf, leg die Ware darauf und den Preis darunter."
 		""
-		"Käufer nehmen eine &6Einkaufsliste&r und zahlen beim Verkäufer. Dein Netz verschickt die Ware, die Bezahlung landet in deinem Lager."
+		"Käufer nehmen eine &6Einkaufsliste&r und zahlen beim Verkäufer. Dein Netz verschickt die Ware, die Bezahlung landet im Lagerticker."
 	]
 	quest.2370380F3F646B9D.quest_subtitle: "Handel zwischen Spielern ohne Chat."
 	quest.2370380F3F646B9D.title: "&6Eröffne einen Laden"
@@ -6915,7 +6915,7 @@
 		""
 		"&eZielsuche&r (Zielsuchendes Projektil) und &eBogen&r (Arc Projectile) machen das Projektil zielsuchend oder bogenförmig. &eBeschleunigen&r und &eVerlangsamen&r ändern sein Tempo, &eDurchschlag&r gibt ihm Durchschlag gegen Quelle."
 		""
-		"Die &6Chaining Prism Lens&r (Apparat: Quarz, Manipulationsessenz, Quelljuwelblock, Leeres Pergament) wird am Tisch beschrieben und hängt ihre Glyphen an jedes Projektil, das durchfliegt. Das kostet Quelle je nach Zauber."
+		"Die &6Chaining Prism Lens&r (Apparat: Quarz, Manipulationsessenz, Quelledelsteinblock, Leeres Pergament) wird am Tisch beschrieben und hängt ihre Glyphen an jedes Projektil, das durchfliegt. Das kostet Quelle je nach Zauber."
 	]
 	quest.2386BFCEF1D05EEB.quest_subtitle: "Ars Elemental: Prismen, die Zauber umbauen."
 	quest.2386BFCEF1D05EEB.title: "&dSchleif Linsen für das Prisma"
@@ -6983,7 +6983,7 @@
 		"{image:kronwerke:textures/quests/shots/ae2_meteorite.png width:224 height:126 align:center}"
 		"Folg dem Kompass und grab dich in den Krater. Nimm &616 Certusquarzkristalle&r und &616 Himmelsstein&r mit. Im Ofen wird Himmelsstein zum &6Himmelssteinblock&r für den Controller."
 		""
-		"&cAchtung:&r Einen &6Makellosen Certusquarzknospenblock&r nie abbauen. Selbst mit Behutsamkeit wird er unrein, und makellos bekommst du ihn nicht zurück. Lass ihn stehen und ernte die Cluster daran."
+		"&cAchtung:&r Einen &6Makellosen Certusquarzknospenblock&r nie abbauen. Selbst mit Behutsamkeit wird er unrein, und makellos bekommst du ihn erst in Stufe 3 mit dem &6Crystal Fixer&r von Extended AE zurück. Lass ihn stehen und ernte die Cluster daran."
 	]
 	quest.23A9E0041A4918F2.quest_subtitle: "Ein Krater aus Himmelsstein mit Certus drin."
 	quest.23A9E0041A4918F2.title: "&7Finde einen Meteoriten"
@@ -7010,13 +7010,13 @@
 	quest.23C1BF990844FCC7.quest_subtitle: "Der Teil, den du in der Hand hältst."
 	quest.23C1BF990844FCC7.title: "&6Bau vier Stiele"
 	quest.23C2815B15F0590F.quest_desc: [
-		"Im Reiter &eNetzwerkmitglieder&r trägst du einen Spielernamen ein und setzt ihn als &6Benutzer&r oder &6Admin&r. Benutzer dürfen Geräte anschließen und bedienen, Admins auch Einstellungen ändern und Mitglieder verwalten."
+		"Im Reiter &eNetzwerkmitglieder&r trägst du einen Spielernamen ein und setzt ihn als &6Nutzer&r oder &6Admin&r. Nutzer dürfen Geräte anschließen und bedienen, Admins auch Einstellungen ändern und Mitglieder verwalten."
 		""
 		"Nur der &6Besitzer&r kann das Netz löschen oder den Besitz übertragen. Für ein gemeinsames Team-Kraftwerk macht einer das Netz auf und setzt die anderen als Admins. Wer nicht eingetragen ist, gilt als &7Fremder&r."
 		""
 		"Mitglieder zählen auch fürs drahtlose Laden: Nur wer im Netz ist, kann sich daraus laden lassen."
 	]
-	quest.23C2815B15F0590F.quest_subtitle: "Besitzer, Admin, Benutzer."
+	quest.23C2815B15F0590F.quest_subtitle: "Besitzer, Admin, Nutzer."
 	quest.23C2815B15F0590F.title: "&eLade Mitglieder ein"
 	quest.23C500BB8EBF1F7D.quest_desc: [
 		"&6Umhang der Tugend&r (4 weiße Wolle, 4 Glowstonestaub): blockt einen Treffer ganz."
@@ -7040,7 +7040,7 @@
 	quest.23C6FE122EC13A6C.quest_subtitle: "Der Nether liefert, was Messing braucht."
 	quest.23C6FE122EC13A6C.title: "&cHol Netherrack und Quarz"
 	quest.23CF74838C078848.quest_desc: [
-		"Starte das Ritual und gewinne. &eJeder Mitkämpfer bekommt 6&r Gaia-Seelen, &ewer den letzten Treffer setzt, 8&r. Mit 20 Prozent fällt eine Schallplatte dazu."
+		"Starte das Ritual und gewinne. &eJeder, der den Wächter getroffen hat, bekommt 6&r Gaia-Seelen, &ewer den letzten Treffer setzt, 8&r. Mit 20 Prozent fällt eine Schallplatte dazu."
 		""
 		"{image:botania:textures/item/gaia_spirit.png width:32 height:32 align:center}"
 	]
@@ -7052,7 +7052,7 @@
 	quest.23D38E08ECC3516C.quest_subtitle: "Rohstoffe vom Feld."
 	quest.23D38E08ECC3516C.title: "&aÖffne Mystical Agriculture"
 	quest.23D508FC25FC4941.quest_desc: [
-		"Ein &6Rohes Fischfilet&r und &6Seetang&r, siehe EMI."
+		"Ein &6Rohes Fischfilet&r und &6Seegras&r, siehe EMI."
 		""
 		"Schnell gemacht und ein Snack für unterwegs."
 	]
@@ -7073,7 +7073,7 @@
 	quest.23E724AA117F95D3.quest_subtitle: "Ernte ohne Feld."
 	quest.23E724AA117F95D3.title: "&3Bau eine Pflanzstation"
 	quest.23E8A5E844224DC2.quest_desc: [
-		"Bindemittel oben und unten, drei Barren in die Mitte, gibt acht. &eStrom:&r drei Leitfähige. &eGegenstände:&r Leitfähig, Pulsierend, Leitfähig. &eFlüssigkeit:&r Leitfähig, Klares Glas, Leitfähig. &eRedstone:&r drei Redstone-Legierung."
+		"Bindemittel oben und unten, drei Barren in die Mitte, gibt acht. &eStrom:&r drei Leitfähige. &eGegenstände:&r Leitfähig, Pulsierend, Leitfähig. &eFlüssigkeit:&r Leitfähig, Klarglas, Leitfähig. &eRedstone:&r drei Redstone-Legierung."
 		""
 		"Verschiedene Leitungen teilen sich &eeinen Block&r, ohne sich zu mischen. Mit Energetischer oder Strahlender Legierung gibt es schnellere Stufen. Die Werte stehen in der Checkliste &eTransport&r."
 		""
@@ -7206,7 +7206,7 @@
 	quest.244FF387E68B8263.quest_desc: [
 		"Rechtsklick mit einem &6Ambrosium Shard&r auf &6Aether Grass&r macht daraus &6Enchanted Aether Grass&r. Blue Berry Bushes darauf tragen mehr Beeren."
 		""
-		"Pflanz eine Blume auf verzaubertes Gras. In der Nähe wachsen dann keine &6Aechor Plants&r mehr, die dich mit Gift bespucken. So wird deine Insel zum sicheren Garten."
+		"Pflanz eine weiße oder violette Aether-Blume auf verzaubertes Gras. In der Nähe wachsen dann keine &6Aechor Plants&r mehr, die dich mit Gift bespucken. So wird deine Insel zum sicheren Garten."
 	]
 	quest.244FF387E68B8263.quest_subtitle: "Mehr Beeren, keine Aechor Plants."
 	quest.244FF387E68B8263.title: "&aVerzaubere das Gras"
@@ -7240,7 +7240,7 @@
 	quest.24760850DC76289D.quest_desc: [
 		"Gib einem wilden &dFlashjack&r (Archwood-Wälder, hohe Gipfel) eine &6Flashpine&r. Im Apparat: Token, &e2 Luftessenzen&r, &e2 Goldbarren&r."
 		""
-		"Der Flashjack späht in seinem Revier, markiert Gegner und kann Zaubertürme kapern, um auf sie zu schießen. Flashpine wächst am &6Blitzenden Archwood&r: ein beliebiger Archwood-Setzling mit Luftessenz."
+		"Der Flashjack späht in seinem Revier, markiert Gegner und kann Zaubertürme kapern, um auf sie zu schießen. Flashpine wächst am &6Blitzenden Archwood&r: Den Setzling machst du aus allen vier Archwood-Setzlingen und einer Luftessenz."
 	]
 	quest.24760850DC76289D.quest_subtitle: "Ars Elemental: ein Späher für die Basis."
 	quest.24760850DC76289D.title: "&6Ruf einen Flashjack"
@@ -7317,7 +7317,7 @@
 	quest.24AACD73C916E095.quest_desc: [
 		"Das &6SPS&r macht aus &e1 000 mB Polonium&r &e1 mB Antimaterie&r. Der &6Chemische Kristallisator&r macht aus 1 000 mB Antimaterie ein &5Pellet&r."
 		""
-		"Ein Pellet braucht also eine Million mB Polonium. Hundert davon will der Obelisk, jedes zählt 30 Punkte. Das heißt: mehrere Spaltreaktoren und Strom aus allem, was ihr habt."
+		"Ein Pellet braucht also eine Million mB Polonium. Hundert davon will der Obelisk bei 30 aktiven Spielern, jedes zählt 30 Punkte. Das heißt: mehrere Spaltreaktoren und Strom aus allem, was ihr habt."
 		""
 		"Alles dazu im Kapitel &5Mekanism: Antimaterie&r."
 	]
@@ -7503,10 +7503,10 @@
 	quest.2536CF7E953FEE9A.quest_subtitle: "256 Eimer in einem Block."
 	quest.2536CF7E953FEE9A.title: "&9Stell einen Portablen Tank auf"
 	quest.2558B50FF49D1626.quest_desc: [
-		"&eStufe 3:&r Osmium- und Obsidianbiene (Lavabiene mit Water Bee aus dem Fluss) ergeben die Biene für &6Raffiniertes Obsidian&r. Das Ei der Infused-Iron-Biene wird am Opfertisch zur Biene für &6Himmelsbarren&r, das Manastahl-Ei im Elfenportal zum Ei der &6Elementiumbiene&r."
+		"&eStufe 3:&r Osmium- und Obsidianbiene (Lavabiene mit Water Bee aus dem Fluss) ergeben die Biene für &6Raffiniertes Obsidian&r. Das Ei der Infused-Iron-Biene wird am Opfertisch zur Biene für &6Himmelsbarren&r, das Manastahl-Ei im Manabecken auf einem Beschwörungskatalysator (25 000 Mana) zum Ei der &6Elementiumbiene&r."
 		"Nomad und Reed Bee ergeben die &6Siliziumbiene&r für AE2, Crystalline und Neon Cuckoo die &6Menrilbiene&r, und Powah macht aus Eisen- und Goldbienen die Biene für &6Energetisierten Stahl&r."
 		""
-		"&eStufe 4:&r Im End leben die &6Ender Bee&r im Endsteinnest und die &6Draconic Bee&r in Obsidiansäulen. Von der Ender Bee stammen Diamant-, Smaragd-, Erfahrungs- und alle Edelsteinbienen ab, aus der Diamantbiene werden die &6Arkanen Bienen&r von Ars Nouveau und die Netheritbiene. Die Draconic Bee liefert den Drachenstaub für das Produktivitäts-Upgrade, und ein Drachenei wird zur Heißen Zentrifuge."
+		"&eStufe 4:&r Im End leben die &6Ender Bee&r im Endsteinnest und die &6Draconic Bee&r in Obsidiansäulen. Von der Ender Bee stammen Diamant-, Smaragd-, Erfahrungs- und alle Edelsteinbienen ab, aus der Amethystbiene wird die &6Arkane Biene&r von Ars Nouveau, aus der Diamantbiene die Netheritbiene. Die Draconic Bee liefert den Drachenstaub für das Produktivitäts-Upgrade, und ein Drachenei wird zur Heißen Zentrifuge."
 		""
 		"Alles, was du bis dahin züchtest, bleibt. Eine gute Eisen- und Crystalline-Linie ist der Anfang jeder dieser Bienen."
 	]
@@ -8000,7 +8000,7 @@
 	quest.26EE0B03130837E5.quest_subtitle: "Ars Elemental: schweben statt Treppen."
 	quest.26EE0B03130837E5.title: "&bBau einen Windstrom-Aufzug"
 	quest.26F32AEB935BBD8D.quest_desc: [
-		"&6HDPE Verstärkte Elytra:&r oben HDPE, Atomlegierung, HDPE, Mitte HDPE, eine &6Elytra&r aus der Endstadt, HDPE, unten zwei HDPE in die Ecken. Dann das Modul: Verstärkte Legierung um die HDPE-Elytra und das Basismodul, unten Polonium, ein &5Antimaterie-Pellet&r, Polonium."
+		"&6HDPE Verstärkte Elytra:&r oben Atomlegierung, HDPE, Atomlegierung, Mitte HDPE, eine &6Elytra&r aus der Endstadt, HDPE, unten zwei HDPE in die Ecken. Dann das Modul: Verstärkte Legierung um die HDPE-Elytra und das Basismodul, unten Polonium, ein &5Antimaterie-Pellet&r, Polonium."
 		""
 		"Die MekaSuit gleitet dann wie mit Elytra, ohne dass du den Brustplatz hergibst. Laut Config kostet das 12 800 FE pro Sekunde Flug."
 	]
@@ -8084,7 +8084,7 @@
 	quest.272177F2A37920CE.quest_subtitle: "Manastahlklumpen aus Waben."
 	quest.272177F2A37920CE.title: "&bVerwandle ein Ei zur Manastahlbiene"
 	quest.27226D742FCE5053.quest_desc: [
-		"In der &6Treasure Chest&r des Bronze-Dungeons liegt mit Glück der &6Hammer of Kingbdogz&r. Lootr gibt jedem Spieler seine eigene Truhe, ihr könnt also alle euer Glück versuchen."
+		"In der &6Treasure Chest&r des Bronze-Dungeons liegt mit Glück der &6Hammer of Kingbdogz&r. Die Truhe gibt es einmal pro Dungeon, teilt euch die Beute also auf."
 		""
 		"Der Hammer schießt schwere Geschosse auf Gegner. Probier ihn an einem &6Zephyr&r aus, der dich vorher von der Insel geschubst hat."
 	]
@@ -8109,7 +8109,7 @@
 		"{image:kronwerke:textures/quests/shots/start_here_v_claim.png width:224 height:126 align:center}"
 		"Such dir einen Platz, bau was Festes hin und sichere es: &eM&r öffnet die Karte, &eC&r die Claim-Ansicht. Mit gedrückter &elinker Maustaste&r über die Chunks deiner Basis ziehen."
 		""
-		"In deinen Chunks kann niemand außer deinem Team abbauen oder Truhen öffnen. Wie viele Chunks du hast und wie du sie dauerhaft lädst, steht im Kapitel &6Tipps und Tricks&r."
+		"In deinen Chunks können nur dein Team und deine Verbündeten abbauen oder Truhen öffnen. Wie viele Chunks du hast und wie du sie dauerhaft lädst, steht im Kapitel &6Tipps und Tricks&r."
 		""
 		"Nachts ziehen neben Zombies und Skeletten die Kreaturen aus &6Born in Chaos&r herum, und einige sind zäh. Licht und Wände helfen wie immer."
 	]
@@ -8350,7 +8350,7 @@
 	quest.27CB62653A416B09.quest_desc: [
 		"Vier &6Zahnräder&r um einen &6Drehzahlregler&r ergeben ein &6Messing-Getriebe&r. Jede seiner vier Seiten lässt sich mit dem Schraubenschlüssel einzeln auf vorwärts oder rückwärts stellen."
 		""
-		"Das &66-Wege-Getriebe&r (Andesitgehäuse, drei Zahnräder und zwei große Zahnräder, oder ein Getriebe plus zwei große Zahnräder) hat Wellen an allen sechs Seiten, oben und unten mit halber Drehzahl. Der &6Kreuzverbinder&r (vier Wellen um ein Getriebe) führt zwei Wellen unabhängig voneinander durch denselben Block."
+		"Das &66-Wege-Getriebe&r (Andesitgehäuse, vier Zahnräder und zwei große Zahnräder, oder ein Getriebe plus zwei große Zahnräder) hat Wellen an allen sechs Seiten, oben und unten mit halber Drehzahl. Der &6Kreuzverbinder&r (vier Wellen um ein Getriebe) führt zwei Wellen unabhängig voneinander durch denselben Block."
 		""
 		"Dazu kommen das &6Armaturenbrett&r (Anzeigetafel auf Messingrahmen), eine kleine Anzeige mit vier Zeilen, deren Inhalt Spieler auf einem Sitz davor als Einblendung sehen, und der &6Messingschacht&r, der 64 Items auf einmal bewegt."
 	]
@@ -8591,7 +8591,7 @@
 	quest.285C15B0C586A75D.quest_subtitle: "Weiß in jeder Wand."
 	quest.285C15B0C586A75D.title: "&fBau Netherquarz ab"
 	quest.286509E51E65F29D.quest_desc: [
-		"Ein &6Goldbarren&r in die Mitte, links und rechts je ein &6Mundabitur Dust&r, oben und unten je ein &6Arcane Crystal Dust&r, &6Holzkohle&r in die vier Ecken: ein &6Deorum Ingot&r."
+		"Ein &6Goldbarren&r in die Mitte, links und rechts je ein &6Mundabitur Dust&r, oben und unten je ein &6Arcane Crystal Dust&r, &6Holzkohle&r in die vier Ecken: ein &6Deorum Ingot&r. Auf Kronwerke geht es im beheizten Mixer von Create billiger, EMI zeigt die Rezepte."
 		""
 		"{image:forbidden_arcanus:textures/item/deorum_ingot.png width:32 height:32 align:center}"
 		""
@@ -8675,7 +8675,7 @@
 	quest.2896230628F1E72B.title: "&6Pflanz eine Hydroangea"
 	quest.2896DC83DBFDFA42.quest_desc: [
 		"{image:kronwerke:textures/quests/shots/ars_apprentice_brazier.png width:224 height:126 align:center}"
-		"Formlos: &6Arkanes Podest&r, &6Quelljuwelblock&r, &e3 Goldbarren&r."
+		"Formlos: &6Arkanes Podest&r, &6Quelledelsteinblock&r, &e3 Goldbarren&r."
 		""
 		"Jedes Ritual ist eine &6Ritualtafel&r aus einem farbigen Archwood-Stamm und Zutaten. Tafel auf das Becken, Zusätze daraufwerfen, mit leerer Hand starten. Quelle kommt aus Gläsern in der Nähe, Redstone hält es an."
 	]
@@ -8691,7 +8691,7 @@
 	quest.289E809B78ACB014.quest_desc: [
 		"Eisen steckt in den Teilen für Create, den ersten Zauber-Geräten, dem Kochtopf und dem Werkzeug von Silent Gear. Eisennuggets und Andesit ergeben &6Andesitlegierung&r, das Material der Technik-Säule am Obelisken."
 		""
-		"Andesit-Gehäuse, Infundiertes Eisen und ein Quellstein ergeben den &6Grubenrahmen&r, das Tor zur &6Farmwelt&r. Alles dazu im Kapitel &6Erkundung&r."
+		"Andesitrahmen, Infused Iron und ein Quelljuwel ergeben den &6Grubenrahmen&r, das Tor zur &6Farmwelt&r. Alles dazu im Kapitel &6Erkundung&r."
 	]
 	quest.289E809B78ACB014.quest_subtitle: "Das Metall, das in jeder Mod steckt."
 	quest.289E809B78ACB014.title: "&6Schmilz 16 Eisen"
@@ -8701,7 +8701,7 @@
 		""
 		"Jeder abgebaute Stein wächst sofort nach. Mehrere Bohrer an derselben Welle vervielfachen das, ein Bohrer kostet 4 SU pro RPM, ein Wasserrad trägt 256 SU."
 		""
-		"&eKronwerke:&r Der Generator füllt Kisten, während du schläfst, und ein Rucksack voll Bruchstein ist am Obelisken mit einem Schleich-Klick abgegeben. Alle Teile stehen im Kapitel &6Create&r (Bruchsteingenerator)."
+		"&eKronwerke:&r Der Generator füllt Kisten, während du schläfst, und abgegeben wird am Obelisken von Hand, aus dem Inventar: Einen Rucksack leert er nicht. Alle Teile stehen im Kapitel &6Create&r (Bruchsteingenerator)."
 	]
 	quest.28A0D7D640D88988.quest_subtitle: "Stein ohne Ende, auch während du redest."
 	quest.28A0D7D640D88988.title: "&7Bau einen Bruchsteingenerator"
@@ -8736,7 +8736,7 @@
 		"Beide stufst du mit Legierungen hoch wie normale Behälter. Die großen MoreMachine-Maschinen in Stufe 4 brauchen ultimative Max-Tanks."
 	]
 	quest.28BC8AD98F603924.quest_subtitle: "Mehr Gas auf einem Block."
-	quest.28BC8AD98F603924.title: "&3Bau einen Mittleren Chemikalientank"
+	quest.28BC8AD98F603924.title: "&3Bau einen Mittleren Chemikalienbehälter"
 	quest.28CA7B6A7DBC85F5.quest_desc: [
 		"&eRezept auf Kronwerke:&r oben Fortgeschrittener Schaltkreis, &5Draconiumstaub&r, Fortgeschrittener Schaltkreis. Darunter links und rechts je eine &6Verstärkte Legierung&r, Mitte frei."
 		""
@@ -8830,7 +8830,7 @@
 		""
 		"Aus Schwarzstahl craftest du Werkzeug wie aus Eisen: &6Schwarzstahlschwert&r (2 Barren, Stock) und die &6Schwarzstahl-Tartsche&r, ein Schild aus Barren, 4 Nuggets und 4 Brettern. Heb mindestens &e4 Barren&r auf, du brauchst sie für die Waffen aus Cursium."
 		""
-		"Ab Stufe 2 führt dich das &6Fluchauge&r hierher: Enderauge, Gold, Knochen, 2 Phantomhäute, verrottetes Fleisch."
+		"Das &6Fluchauge&r führt dich hierher, schon in Stufe 1: Quelljuwel in der Mitte, 4 Gold, Knochen, 2 Phantomhäute, Enderperle."
 	]
 	quest.29097D6A1803461D.quest_subtitle: "Ein Gefängnis im Schnee voller Draugr."
 	quest.29097D6A1803461D.title: "&bFinde das Frosted Prison"
@@ -8967,9 +8967,9 @@
 	quest.297B5583009AF0A4.quest_desc: [
 		"Mit &6Stufe 2 (Messingwerk)&r öffnen Manastahl, Manaperlen, der Runenaltar mit sechzehn Runen, sechzehn neue Funktionsblumen, fünf neue Manablumen und am Ende Terrastahl."
 		""
-		"Auf Kronwerke hängt das an Create: Manaperlen nur mit Messinggehäuse unter dem Becken, Messing im Runenaltar und in der Terraplatte. Umgekehrt braucht Mekanism deinen Manastahl und Create deine Feuerrunen."
+		"Auf Kronwerke hängt das an Create: Manaperlen nur mit Messingrahmen unter dem Becken, Messing im Runenaltar und in der Terraplatte. Umgekehrt braucht Mekanism deinen Manastahl und Create deine Feuerrunen."
 		""
-		"&eKronwerke:&r Das Obelisk-Ziel will &e600 Manaperlen&r, &e50 Terrastahlbarren&r und &e8 Runenkerne&r, zusammen über &d30 Millionen Mana&r. Das Elfenportal kommt in Stufe 3."
+		"&eKronwerke:&r Das Obelisk-Ziel will bei 30 aktiven Spielern &e600 Manaperlen&r und &e50 Terrastahlbarren&r, dazu immer &e8 Runenkerne&r, zusammen über &d30 Millionen Mana&r. Das Elfenportal kommt in Stufe 3."
 	]
 	quest.297B5583009AF0A4.quest_subtitle: "Stufe 2 ist offen, jetzt zeigt Botania, was es kann."
 	quest.297B5583009AF0A4.title: "&bÖffne das Messingwerk"
@@ -9055,7 +9055,7 @@
 	quest.29C589728E7570CC.quest_subtitle: "Der graue Stein, aus dem fast alles hier entsteht."
 	quest.29C589728E7570CC.title: "&6Bau Andesit ab"
 	quest.29C8E8BCADDFFA65.quest_desc: [
-		"Die &6Mega Torch&r von Torchmaster verhindert, dass im Umkreis von &e32 Blöcken&r Monster spawnen, auch im Dunkeln und unter der Erde. Spawner arbeiten weiter. Die &6Dread Lamp&r macht dasselbe für friedliche Tiere."
+		"Die &6Mega Torch&r von Torchmaster verhindert, dass im Umkreis von &e64 Blöcken&r Monster spawnen, auch im Dunkeln und unter der Erde. Spawner arbeiten weiter. Die &6Dread Lamp&r macht dasselbe für friedliche Tiere."
 		""
 		"Die &6Feral Flare Lantern&r setzt unsichtbare Lichter in ihre Umgebung und leuchtet so eine Höhle aus. Rezepte in EMI."
 	]
@@ -9241,7 +9241,7 @@
 	quest.2A68BAE49AD29E1C.quest_subtitle: "Flüche weg, Verzauberungen ins Buch."
 	quest.2A68BAE49AD29E1C.title: "&4Bau einen Purifier"
 	quest.2A692A4F13D1A05C.quest_desc: [
-		"Zwei &6Ferricore Ingots&r und zwei Stöcke ergeben die &6Ferricore Axe&r. Das &6Tree Feller&r Upgrade sind zwei &6Diamantäxte&r links und rechts von einem Blank Upgrade."
+		"Drei &6Ferricore Ingots&r und zwei Stöcke ergeben die &6Ferricore Axe&r. Das &6Tree Feller&r Upgrade sind zwei &6Diamantäxte&r links und rechts von einem Blank Upgrade."
 		""
 		"Tree Feller ist passiv: Ein Stamm abgebaut, und alle verbundenen Stämme fallen mit, bis zu 64 Blöcke. Der Schlag dauert dafür etwas länger als bei einem einzelnen Block."
 		""
@@ -9302,7 +9302,7 @@
 	quest.2A7B30A610BA1BC7.quest_subtitle: "Archäologie in Ruinen und Tempeln."
 	quest.2A7B30A610BA1BC7.title: "&6Pinsle verdächtigen Sand ab"
 	quest.2A7DACF11F66F62A.quest_desc: [
-		"Eine Kammer zieht nur, solange sie simuliert, aber dann richtig: &d128 FE/t&r für einen Zombie sind sechs Wärmegeneratoren, &d768 FE/t&r für ein Witherskelett ein kleines Kraftwerk. Der Puffer von 2 Millionen FE fängt Spitzen ab, ersetzt aber keine Quelle."
+		"Eine Kammer zieht nur, solange sie simuliert, aber dann richtig: &d128 FE/t&r für einen Zombie sind zwei Wärmegeneratoren mit je 80 FE/t, &d768 FE/t&r für ein Witherskelett ein kleines Kraftwerk. Der Puffer von 2 Millionen FE fängt Spitzen ab, ersetzt aber keine Quelle."
 		""
 		"Leg die Kammern an &eeine Leitung&r. In Stufe 3 öffnet &6Flux Networks&r: ein Flux Plug am Generator, ein Flux Point an jeder Kammer, keine Kabel durch die Halle. Wie das geht, steht im Kapitel &6Flux Networks&r, Stromquellen im Kapitel &6Powah&r."
 		""
@@ -9328,7 +9328,7 @@
 	quest.2A8331C8B4E4F190.title: "&6Setz eine Spitze auf"
 	quest.2A8DFA7B8DC8A51F.quest_desc: [
 		"{image:kronwerke:textures/quests/shots/ars_master_wilden_ritual.png width:224 height:126 align:center}"
-		"Formlos: &5Ärgerlicher Archwood-Stamm&r, &e3 Wilden-Teile&r (Stachel, Horn, Flügel, gemischt), &9Lapisblock&r."
+		"Formlos: &5Ärgerlicher Archwood-Stamm&r, &e3 Wilden-Teile&r (Stachel, Horn, Flügel, gemischt), &9Lapisblock&r. Es gibt auch ein Rezept ohne Wilden-Teile, EMI zeigt beide."
 		""
 		"Ohne Zusätze ruft das Ritual eine Gruppe Wilden. Wirf je einen &eStachel&r, ein &eHorn&r und einen &eFlügel&r auf das Becken, dann kommt die &5Wilden-Chimäre&r. Nur sie gibt den &5Wilden-Tribut&r für das Erzmagier-Buch."
 	]
@@ -9351,7 +9351,7 @@
 	quest.2A9833FC215DAA3D.quest_subtitle: "Tauchermaske und Taucherflasche."
 	quest.2A9833FC215DAA3D.title: "&bTauch mit Sauerstoff"
 	quest.2AA11557F9128EF1.quest_desc: [
-		"Im Apparat: &6Glasflasche&r in die Mitte, &e2 Abschwörungsessenzen&r, &6Quelljuwelblock&r und &6Goldblock&r auf die Podeste."
+		"Im Apparat: &6Glasflasche&r in die Mitte, &e2 Abschwörungsessenzen&r, &6Quelledelsteinblock&r und &6Goldblock&r auf die Podeste."
 		""
 		"Die &6Trankflasche&r hält &d8 Ladungen&r eines Tranks. Gefüllt wird formlos: Flasche und Trank zusammen an die Werkbank. Ab Stufe 2 füllt sie auch ein Trankglas."
 		""
@@ -9672,7 +9672,7 @@
 	quest.2BBB6FFF556F0121.quest_subtitle: "Aus Bruchstein und Lava wird Andesitlegierung, ganz ohne Mine."
 	quest.2BBB6FFF556F0121.title: "&7Bau eine Legierungsstraße"
 	quest.2BBC43A1735E2DFD.quest_desc: [
-		"Zauber selbst zusammensetzen, Quellgläser, Sternbunkel und die &aImbuement-Kammer&r, der einzige Weg zu Quelljuwelen für die Magie-Säule."
+		"Zauber selbst zusammensetzen, Quellgläser, Sternbunkel und die &aImbuement-Kammer&r, der erste Weg zu Quelljuwelen für die Magie-Säule."
 	]
 	quest.2BBC43A1735E2DFD.quest_subtitle: "Zauber aus Glyphen, Quelle, Quelljuwelen."
 	quest.2BBC43A1735E2DFD.title: "&dÖffne Ars Nouveau"
@@ -9776,11 +9776,11 @@
 	quest.2BF6AF79B91BDBE7.quest_desc: [
 		"In der Claim-Ansicht ziehst du mit &eShift und linker Maustaste&r über beanspruchte Chunks, um sie zu laden, mit &eShift und rechter&r lädst du sie wieder aus. Geladene Chunks werden auf der Karte eigens markiert. Bis zu &e25 Chunks&r pro Team."
 		""
-		"Geladen heißt: Maschinen, Farmen und Rohre laufen dort weiter, auch wenn niemand in der Nähe ist. Auf Kronwerke laufen sie auch, wenn &edein ganzes Team offline&r ist. Die Farm arbeitet über Nacht weiter."
+		"Geladen heißt: Maschinen, Farmen und Rohre laufen dort weiter, auch wenn niemand in der Nähe ist. Auf Kronwerke laufen sie auch, wenn &edein ganzes Team offline&r ist. Die Farm arbeitet über Nacht weiter. Erst wenn das ganze Team sieben Tage nicht da war, endet das Laden."
 		""
 		"Mit dem &eMausrad&r über einem geladenen Chunk stellst du ein, wann das Laden von selbst endet. Für einen Nachtlauf des Brass-Mixers genügt das."
 	]
-	quest.2BF6AF79B91BDBE7.quest_subtitle: "Chunkloading, solange einer von euch da ist."
+	quest.2BF6AF79B91BDBE7.quest_subtitle: "Chunkloading, auch wenn ihr offline seid."
 	quest.2BF6AF79B91BDBE7.title: "&6Halt deine Farm am Laufen"
 	quest.2BFA588E704FB320.quest_desc: [
 		"Crucible: &6Kohle&r. Dann &6Ghast Tear&r und &6Death Essence&r, einmal rühren. Dann zwei &6Soul Shards&r und eine Death Essence, einmal rühren. Zum Schluss ein &6Diamant&r."
@@ -9807,7 +9807,7 @@
 	quest.2C05DFCA19817882.title: "&5Wandle Edelstein in Metall"
 	quest.2C0843DE3D831B45.quest_desc: [
 		"{image:kronwerke:textures/quests/shots/ae2_inscriber.png width:224 height:126 align:center}"
-		"&6Eisen&r rundherum, je eine &6Mechanische Presse&r aus Create oben und unten in der Mitte, ein &6Kupferbarren&r links in der Mitte, rechts bleibt frei."
+		"&6Eisen&r rundherum, je eine &6Mechanische Presse&r aus Create oben und unten in der Mitte, ein &6Kupferbarren&r links in der Mitte, rechts in der Mitte Eisen, das Zentrum bleibt frei."
 		""
 		"&eSo liest du das Fenster:&r oben und unten die Pressen, in die Mitte das Material. Ohne Presse mahlt sie: Certus zu Certusquarzstaub, Enderperlen zu Enderstaub, Himmelsstein zu Himmelssteinstaub."
 		""
@@ -9877,7 +9877,7 @@
 		""
 		"{image:create:textures/item/zinc_ingot.png width:32 height:32 align:center}"
 		""
-		"&6Copycats+&r erweitert das: ein Zinkbarren wird im Steinschneider zu einem &6Copycat-Block&r, zwei Stufen, vier Balken oder vier Wellen, dazu Treppen, Zäune, Mauern, Laufstege und Türen. Vier Zahnräder mit einem Zinkbarren ergeben vier Copycat-Zahnräder, die sich tarnen und trotzdem drehen."
+		"&6Copycats+&r erweitert das: ein Zinkbarren wird im Steinschneider zu einem &6Copycat-Block&r, zwei Stufen, vier Balken oder vier Wellen, dazu Treppen, Zäune, Mauern und Türen. Laufstege kommen von Create Connected und erst in Stufe 2. Vier Zahnräder mit einem Zinkbarren ergeben vier Copycat-Zahnräder, die sich tarnen und trotzdem drehen."
 		""
 		"&eWann Rahmen, wann Copycat:&r FramedBlocks hat mehr Formen. Copycats sind dünn, brauchen kein Holz und bewegen sich auf Create-Kontraptionen mit."
 	]
@@ -9962,7 +9962,7 @@
 	quest.2CA230F450C992B9.quest_desc: [
 		"Bring &e512 Bruchstein&r mit. Sneak und Rechtsklick auf den Obelisken, und alles aus deinem Inventar ist drin."
 		""
-		"&eKronwerke:&r Die Stein-Säule der Stufe 1 will &e20 000 Bruchstein&r. Sammel ihn in einer Truhe am Portal und bring ihn gebündelt zum Spawn."
+		"&eKronwerke:&r Die Stein-Säule der Stufe 1 will bei 30 aktiven Spielern &e20 000 Bruchstein&r. Sammel ihn in einer Truhe am Portal und bring ihn gebündelt zum Spawn."
 	]
 	quest.2CA230F450C992B9.quest_subtitle: "Jeder Gang zählt für den ganzen Server."
 	quest.2CA230F450C992B9.title: "&7Grab Stein für den Obelisken"
@@ -10059,7 +10059,7 @@
 	quest.2CCC5DE3D79554CF.title: "&6Sieh, was in der nächsten Stufe kommt"
 	quest.2CCF6BD423383093.quest_desc: [
 		"{image:kronwerke:textures/quests/shots/hostile_networks_sim_chamber.png width:224 height:126 align:center}"
-		"&eRezept auf Kronwerke:&r oben eine &6Glasscheibe&r. Mitte &6Enderperle&r, &6Quelljuwelblock&r aus Ars Nouveau, Enderperle. Unten &6Lapislazuli&r, &6Komparator&r, Lapislazuli. Der Juwelblock ersetzt den Obsidian des Originals."
+		"&eRezept auf Kronwerke:&r oben eine &6Glasscheibe&r. Mitte &6Enderperle&r, &6Quelledelsteinblock&r aus Ars Nouveau, Enderperle. Unten &6Lapislazuli&r, &6Komparator&r, Lapislazuli. Der Juwelblock ersetzt den Obsidian des Originals."
 		""
 		"Die &6Simulation Chamber&r nimmt ein &6Datenmodell&r (mindestens Basic), eine &6Vorhersagematrix&r und &dStrom&r, und spielt den Kampf gegen den Mob nach. Sie speichert bis zu &d2 Millionen FE&r."
 		""
@@ -10308,7 +10308,7 @@
 	quest.2D9E2531E7FB7986.title: "&eBestäube ein Blatt mit Pollen"
 	quest.2D9E4C504163EE17.quest_desc: [
 		"{image:kronwerke:textures/quests/shots/ars_apprentice_relay.png width:224 height:126 align:center}"
-		"&e6 Goldbarren&r an den Seiten, ein &6Quelljuwelblock&r in der Mitte, oben und unten Mitte frei."
+		"&e6 Goldbarren&r an den Seiten, ein &6Quelledelsteinblock&r in der Mitte, oben und unten Mitte frei."
 		""
 		"Dominion-Zauberstab: erst das Glas, dann das Relais, dann das Relais, dann das Ziel (Glas oder nächstes Relais). Reichweite &e30 Blöcke&r. Schleichend klicken löscht, Redstone schaltet ab."
 		""
@@ -10415,9 +10415,9 @@
 	quest.2DD6F78555D4757D.quest_subtitle: "Die Zelle, die nur Strahlendes nimmt."
 	quest.2DD6F78555D4757D.title: "&aLager Atommüll im Netz"
 	quest.2DD74D4CECC05026.quest_desc: [
-		"EMI zeigt dir auch die Rezepte aller späteren Stufen. Der &eTooltip&r eines gesperrten Gegenstands sagt, mit welcher Stufe er öffnet. Du kannst ihn tragen und lagern, aber nicht halten, anlegen, setzen oder herstellen."
+		"EMI zeigt dir auch die Rezepte der &enächsten&r Stufe, mit einem Schleier darüber. Was noch später kommt, blendet EMI aus. Der &eTooltip&r eines gesperrten Gegenstands sagt, mit welcher Stufe er öffnet. Du kannst ihn tragen und lagern, aber nicht halten, anlegen, setzen oder herstellen."
 		""
-		"Nutz das zum Vorausplanen: Zink, Osmium, Lebeholz und Quellsteine kannst du in Stufe 1 schon sammeln, damit dein Messingwerk am ersten Abend von Stufe 2 läuft."
+		"Nutz das zum Vorausplanen: Zink, Osmium, Lebeholz und Quelljuwelen kannst du in Stufe 1 schon sammeln, damit dein Messingwerk am ersten Abend von Stufe 2 läuft."
 		""
 		"&eKronwerke:&r Was eine Stufe öffnet und was der Obelisk dafür will, steht im Kapitel &6Hier geht's los&r bei den Quests zum &eObelisken&r."
 	]
@@ -10510,7 +10510,7 @@
 	quest.2E2324F215DB379A.quest_desc: [
 		"Jeder Cataclysm-Boss hat drei Grenzen: Ein Treffer macht höchstens &e20 bis 22 Schaden&r, pro Sekunde kommen höchstens &e13 bis 15 Schaden&r durch, und wer weiter als &e12 bis 38 Blöcke&r weg steht, macht fast keinen Schaden mehr."
 		""
-		"Das heißt: Ein Schwert mit Schärfe V und Kritischen Treffern ist so gut wie ein verzaubertes Eisenschwert, solange du ständig triffst. Mehrere Spieler zählen aber jeder für sich. Zu fünft fällt ein Boss fünfmal so schnell."
+		"Das heißt: Ein Schwert mit Schärfe V und Kritischen Treffern ist so gut wie ein verzaubertes Eisenschwert, solange du ständig triffst. Mehrere Spieler zählen aber jeder für sich. Zu fünft fällt ein Boss aber nicht fünfmal so schnell: Die großen Bosse bekommen pro weiterem Spieler 60 Prozent mehr Leben, zu fünft sind das 3,4-mal so viele Lebenspunkte."
 		""
 		"Lässt du den Boss allein, heilt er sich mit &e25 Lebenspunkten&r pro Heilung wieder hoch. Also nicht zum Nachladen nach Hause laufen, sondern Vorräte mitbringen."
 	]
@@ -10519,11 +10519,11 @@
 	quest.2E24B9A6AA86BC24.quest_desc: [
 		"Leg das &6Moa Egg&r in den &6Incubator&r und feuere mit Ambrosium Torches, bis das Küken schlüpft."
 		""
-		"Das Küken ist &ehungrig&r: Füttere es mit einem &6Aechor Petal&r, sobald es Hunger zeigt. Nach insgesamt &e4 Blütenblättern&r ist es erwachsen. Nur ein Moa, das du selbst ausgebrütet hast, lässt sich satteln und reiten."
+		"Das Küken ist &ehungrig&r: Füttere es mit einem &6Aechor Petal&r, sobald es Hunger zeigt. Nach insgesamt &e3 Blütenblättern&r ist es erwachsen. Nur ein Moa, das du selbst ausgebrütet hast, lässt sich satteln und reiten."
 		""
 		"Ein &6Nature Staff&r (Zanite Gemstone auf Skyroot Stick) kommandiert deine Moas: Rechtsklick lässt sie sitzen oder wieder aufstehen, Schleichen plus Rechtsklick lässt sie dir folgen."
 	]
-	quest.2E24B9A6AA86BC24.quest_subtitle: "Vier Blütenblätter bis zum Reittier."
+	quest.2E24B9A6AA86BC24.quest_subtitle: "Drei Blütenblätter bis zum Reittier."
 	quest.2E24B9A6AA86BC24.title: "&eBrüte ein Moa aus"
 	quest.2E2CC411937BE96F.quest_desc: [
 		"Die Lexica rät zu verzauberter &dElementiumrüstung&r und einer &aTerraklinge&r, dazu Gebräue und Schmuck."
@@ -10595,7 +10595,7 @@
 		""
 		"{image:evilcraft:textures/item/dark_gem.png width:32 height:32 align:center}"
 		""
-		"&eTipp:&r Nimm &6Glück&r mit. Nur mit Glück fallen zusätzlich &6Crushed Dark Gems&r, und die brauchst du für Ringe, Besen und die Box of Eternal Closure. Es gibt keinen anderen Weg, an das Pulver zu kommen."
+		"&eTipp:&r Nimm &6Glück&r mit. Nur mit Glück fallen zusätzlich &6Crushed Dark Gems&r, und die brauchst du für Ringe, Besen und die Box of Eternal Closure. Später zerkleinern auch der Foliot-Zerkleinerer von Occultism (Stufe 2) und der Squeezer (Stufe 3) Dark Gems zu dem Pulver."
 	]
 	quest.2E6C9B50A5233C93.quest_subtitle: "Das dunkle Erz, mit dem alles anfängt."
 	quest.2E6C9B50A5233C93.title: "&5Grab Dark Gems aus"
@@ -10986,7 +10986,7 @@
 	quest.2FB7345AABF89207.quest_desc: [
 		"An den Sculkglanz-Klumpen sitzt &6Poröser Sculkglanz&r. Mit der &6Schere&r kratzt du &6Glanzgel&r ab, und der Block füllt sich wieder."
 		""
-		"&eWofür:&r Mit Glanzgel &ezähmst&r du Sculk-Schnapper, siehe unten. Ein &6Seltsamer Trank&r plus Glanzgel wird zum &6Trank der Leuchtkraft&r. Neun Gel ergeben einen &6Glanzgelblock&r, der einen Sturz abfängt."
+		"&eWofür:&r Mit Glanzgel &ezähmst&r du Sculk-Schnapper, siehe unten. Ein &6Seltsamer Trank&r plus Glanzgel wird zum &6Trank des Glühens&r. Neun Gel ergeben einen &6Glanzgelblock&r, der einen Sturz abfängt."
 	]
 	quest.2FB7345AABF89207.quest_subtitle: "Schere an den Porösen Sculkglanz."
 	quest.2FB7345AABF89207.title: "&eKratz Glanzgel ab"
@@ -11134,9 +11134,9 @@
 	quest.30749FD4D35B31BC.quest_desc: [
 		"Die großen Bosse von Cataclysm und Mowzie's Mobs, der Wither und der Enderdrache wachsen mit der Zahl der Spieler: Für jeden Spieler nach dem ersten bekommen sie &d60 Prozent&r mehr Leben und &d15 Prozent&r mehr Schaden, bis zu acht Spielern."
 		""
-		"Ab zwei Spielern setzen sie außerdem alle &d12 Sekunden&r einen &eBlitz&r (8 Schaden) und eine &eSchockwelle&r (6 Schaden) ein. Verteilt euch, statt alle auf einem Haufen zu stehen."
+		"Ab zwei Spielern setzen sie außerdem alle &d12 Sekunden&r eine von drei Zusatzattacken ein: einen &eBlitz&r (8 Schaden), eine &eSchockwelle&r (6 Schaden) oder einen &eWutanfall&r, der sie um 5 Prozent heilt und 6 Sekunden lang stärker und schneller macht. Verteilt euch, statt alle auf einem Haufen zu stehen."
 		""
-		"&eUnd mit jeder Stufe:&r Alle feindlichen Mobs werden stärker, in Stufe 2 mit &d30 Prozent&r mehr Leben, in Stufe 3 mit &d70&r, in Stufe 4 mit &d120&r und in Stufe 5 mit &d180 Prozent&r. Was du jetzt schon schaffst, ist später härter."
+		"&eUnd mit jeder Stufe:&r Alle feindlichen Mobs werden stärker, in Stufe 2 mit &d30 Prozent&r mehr Leben, in Stufe 3 mit &d70&r, in Stufe 4 mit &d120&r und in Stufe 5 mit &d180 Prozent&r. Was du jetzt schon schaffst, ist später härter. Die großen Bosse von oben sind davon ausgenommen: Sie wachsen nur mit der Gruppe."
 	]
 	quest.30749FD4D35B31BC.quest_subtitle: "Kronwerke Core macht Bosse für jede Gruppe passend."
 	quest.30749FD4D35B31BC.title: "&eRechne mit der Gruppe"
@@ -11195,7 +11195,7 @@
 	quest.30F980E70ADDF20D.quest_subtitle: "Glück für Laser und Zerstörer."
 	quest.30F980E70ADDF20D.title: "&aHol mehr heraus mit dem Yield Addon"
 	quest.30FC11AB7F872C1E.quest_desc: [
-		"Die &6Akropolis&r schwebt in &eY 200&r über dem &ewarmen Meer&r (Biom Warm Ocean). Von unten siehst du sie bei klarem Himmel. Hinauf kommst du mit Wassereimer und Blöcken, ab Stufe 2 mit dem &6Sturmauge&r (Enderauge, 2 Diamanten, 2 Prismarinscherben, 2 Prismarinkristalle, Blitzableiter, Wassereimer)."
+		"Die &6Akropolis&r schwebt in &eY 200&r über dem &ewarmen Meer&r (Biom Warm Ocean). Von unten siehst du sie bei klarem Himmel. Hinauf kommst du mit Wassereimer und Blöcken, oder schon in Stufe 1 mit dem &6Sturmauge&r (Quelljuwel, Enderperle, 2 Diamanten, 2 Prismarinscherben, 2 Prismarinkristalle, Blitzableiter)."
 		""
 		"Oben leben &cUrchinkin&r (12 Lebenspunkte), &cCindaria&r (60), &cHippocamtus&r (85, Rüstung 15) und Oktopusse, die Ertrunkene steuern. Fast alle lassen &6Lacrima&r fallen. Die &cClawdian&r (225 Lebenspunkte, Rüstung 12, 16 Schaden, gekappt wie ein Boss) geben eine &6Chitinklaue&r und 5 bis 8 Lacrima."
 		""
@@ -11287,7 +11287,7 @@
 	quest.3126CA2EFC0A22FD.quest_subtitle: "Nie wieder Fackeln schleppen."
 	quest.3126CA2EFC0A22FD.title: "&dLern Magielicht beschwören"
 	quest.312C367F7A5E874C.quest_desc: [
-		"&6Magmatic Bee&r und &6Nomad Bee&r (aus Nestern der Ashy Mining Bee). Blume: Magmablock oder Feuer. Wabe gibt mit 30 Prozent &6Lohenstaub&r. Feuerfest, wehrt sich mit Feuer. &eKronwerke:&r Lohenstaub heizt den Messingmixer."
+		"&6Magmatic Bee&r und &6Nomad Bee&r (aus Nestern der Ashy Mining Bee). Blume: Magmablock oder Feuer. Wabe gibt mit 30 Prozent &6Lohenstaub&r. Feuerfest, wehrt sich mit Feuer. &eKronwerke:&r Lohenstaub ist eine Zutat der Messingmischung im beheizten Mixer."
 	]
 	quest.312C367F7A5E874C.quest_subtitle: "Lohenstaub ohne Festung."
 	quest.312C367F7A5E874C.title: "&cZüchte die BlazBee"
@@ -11332,7 +11332,7 @@
 		""
 		"Die Reihen von oben nach unten: &eStein&r, &eHolz&r, &eFelder&r, &eTiere&r, &eMonster&r, &eWasser und Lava&r, &eMagie&r. Jede Reihe steht für sich, fang mit der an, die dir gerade fehlt."
 		""
-		"&eKronwerke:&r Der Obelisk will in Stufe 1 &e20 000 Bruchstein&r, &e1 500 Andesitlegierung&r und &e800 Quelljuwelen&r. Die Farm füllt die Truhe, du trägst sie zum Obelisken: Abgegeben wird von Hand."
+		"&eKronwerke:&r Der Obelisk will in Stufe 1 bei 30 aktiven Spielern &e20 000 Bruchstein&r, &e1 500 Andesitlegierung&r und &e800 Quelljuwelen&r, dazu immer 12 Steinwerk-Getriebe und 12 Quellschlusssteine. Die Farm füllt die Truhe, du trägst sie zum Obelisken: Abgegeben wird von Hand."
 		""
 		"Die Rezepte stehen in den Kapiteln &6Create&r, &aBotania&r, &dArs Nouveau&r, &aMystical Agriculture&r, &6Essen und Landwirtschaft&r und &6Kochen&r. Hier steht nur, wie man sie zu einer Farm zusammensteckt."
 	]
@@ -11792,7 +11792,7 @@
 	quest.3326EEBF732242EE.quest_desc: [
 		"Je ein Block aus &6Cloggrum&r, &6Froststahl&r, &6Utherium&r, &6Regalium&r und &6Rogdorium&r, jeweils aus 9 Barren oder Kristallen."
 		""
-		"&eKronwerke:&r Der Undergarden hat sehr viel &6Kohle&r im Tiefstein. Kohle wird im Koksofen zu Koks, und Koks braucht jeder Hochofen für den Stahl. Für die &e4.000 Stahlbarren&r des Stufenziels \"Der Ofen schläft nie\" ist das ein guter zweiter Bergbauplatz."
+		"&eKronwerke:&r Der Undergarden hat sehr viel &6Kohle&r im Tiefstein. Kohle wird im Koksofen zu Koks, und Koks braucht jeder Hochofen für den Stahl. Für die &e4.000 Stahlbarren&r (bei 30 aktiven Spielern) des Stufenziels \"Der Ofen schläft nie\" ist das ein guter zweiter Bergbauplatz."
 	]
 	quest.3326EEBF732242EE.quest_subtitle: "Von jedem Erz einen Block."
 	quest.3326EEBF732242EE.title: "&2&lSammle die Schätze der Tiefe"
@@ -11918,7 +11918,7 @@
 		"{image:kronwerke:textures/quests/shots/exploration_e_campsite.png width:224 height:126 align:center}"
 		"Finde ein &6Höhlenlager&r von Artifacts und hak ab. Es liegt in Höhlen zwischen &eY -60 und 40&r, mit Licht und einer Truhe."
 		""
-		"In der Truhe liegen oft Artefakte. &cAber:&r Etwa jede dritte Truhe in einem Lager ist ein Mimic (nächste Quest)."
+		"In der Truhe liegen oft Artefakte. &cAber:&r Etwa jede zehnte Truhe in einem Lager ist ein Mimic (nächste Quest)."
 	]
 	quest.33D817EB69C6BA7B.quest_subtitle: "Verlassene Lager tief unter der Erde."
 	quest.33D817EB69C6BA7B.title: "&6Finde ein Höhlenlager"
@@ -12306,7 +12306,7 @@
 	quest.3540D1BBDE1B2C4D.quest_subtitle: "Ars Nouveau: ein Zauber auf jedem Treffer."
 	quest.3540D1BBDE1B2C4D.title: "&dVerzaubere ein Schwert mit Quelle"
 	quest.35475D311AA63A61.quest_desc: [
-		"Sammle &e4 Wärterpanzer&r. Neben dem Wärter selbst liegen sie in den Truhen des Antiken Tempels und in &6Antiken Vasen&r."
+		"Sammle &e4 Wärterpanzer&r. Die beste Quelle sind die Truhen der Antiken Stadt (etwa jede fünfte). Dazu kommen der Wärter selbst, die Truhen des Antiken Tempels und &6Antike Vasen&r."
 		""
 		"Aus Panzer und Phantomhaut werden &6Verstärkte Echoscherben&r. Jedes Teil der Wärterrüstung in Stufe 4 braucht eine, also leg schon jetzt einen Vorrat an."
 	]
@@ -12383,7 +12383,7 @@
 	quest.35B53194DDE03C0E.quest_subtitle: "Schritt 3: Flusssäure."
 	quest.35B53194DDE03C0E.title: "&aLös Fluorit in Schwefelsäure"
 	quest.35C4F06C94471306.quest_desc: [
-		"Die Zahlen gelten für &e30 aktive Spieler&r. Aktiv ist, wer in den letzten 7 Tagen mehr als eine Stunde gespielt hat. Beim Öffnen einer Stufe wird die Menge mit diesem Anteil multipliziert, mindestens 0,4, höchstens 1,5, und bleibt dann fest."
+		"Die Zahlen gelten für &e30 aktive Spieler&r. Aktiv ist, wer in den letzten 7 Tagen mehr als eine Stunde gespielt hat. Beim Öffnen einer Stufe wird die Menge mit diesem Anteil multipliziert, mindestens 0,4, höchstens 1,5, und bleibt dann fest. Nur Stufe 1 startet mit einer vorläufigen Menge und wird nach den ersten 24 Stunden einmal neu berechnet."
 		""
 		"&eAusnahme:&r Die 12 Steinwerk-Getriebe und 12 Quellschlusssteine bleiben immer gleich. Was gerade gilt, zeigen &e/kw goals&r und die Statusseite auf der Website."
 	]
@@ -12397,7 +12397,7 @@
 	quest.35CE7D2ADB46E1E8.quest_subtitle: "Vanilla: an der Wand eines Endschiffs."
 	quest.35CE7D2ADB46E1E8.title: "&5Hol dir Elytren"
 	quest.35D1BC9B4DD69C2B.quest_desc: [
-		"Der &6Hügel der Hunde&r liegt in der Wüste. &cSchreckenshunde&r (17 Lebenspunkte, 5 Schaden) jagen im Rudel, und irgendwo dazwischen läuft der &cAnführer&r mit &e100 Lebenspunkten&r und 10 Schaden."
+		"Der &6Hügel der Hunde&r liegt in der Wüste. &cErst ab Stufe 2:&r Vorher spawnen dort weder die Hunde noch ihr Anführer. &cSchreckenshunde&r (17 Lebenspunkte, 5 Schaden) jagen im Rudel, und irgendwo dazwischen läuft der &cAnführer&r mit &e100 Lebenspunkten&r und 10 Schaden."
 		""
 		"Er lässt &e1 bis 3 Fangzähne&r fallen, dazu 3 bis 6 Monsterhaut und 4 bis 8 Monsterfleisch. Aus 4 Fangzähnen, einer schweren Druckplatte und einem Eisenbarren wird die &6Hundefalle&r, die hält Monster fest."
 		""
@@ -12475,7 +12475,7 @@
 	quest.364BE77E2B54D9C5.quest_subtitle: "Schwefelstaub im Oxidierer."
 	quest.364BE77E2B54D9C5.title: "&fSchwefeldioxid"
 	quest.366C890332CCA08C.quest_desc: [
-		"&bKaskadierender Stamm&r, &6Feder&r, &6Quelljuwelblock&r."
+		"&bKaskadierender Stamm&r, &6Feder&r, &6Quelledelsteinblock&r."
 		""
 		"Ohne Zusatz klares Wetter, mit Schwarzpulver Regen, mit einem Lapisblock Gewitter. Sprecht euch ab, das Wetter gilt für alle."
 	]
@@ -12506,7 +12506,7 @@
 	quest.36874E34FB3D2997.quest_desc: [
 		"&6Create&r, &6Mechanischer Arm&r: greift aus beliebig vielen Eingängen und legt in beliebig viele Ausgänge im Umkreis von &e5 Blöcken&r, Ziele vor dem Setzen anklicken. Filter nur über Messing-Trichter als Ziel. &eStufe 2.&r"
 		""
-		"Messingbleche, Andesitlegierung, Messinggehäuse und ein Präzisionsgetriebe. Verteilt nach Rundlauf, erzwungenem Rundlauf oder dem ersten gewählten Ziel."
+		"Messingbleche, Andesitlegierung, Messingrahmen und ein Präzisionsgetriebe. Verteilt nach Rundlauf, erzwungenem Rundlauf oder dem ersten gewählten Ziel."
 		""
 		"Ein Arm füttert ein Dutzend Mixer aus einem Depot. Siehe Kapitel Create: Messing."
 	]
@@ -12664,7 +12664,7 @@
 		""
 		"Rechtsklick öffnet sein Programm: eine zeitlich geordnete Liste von Signalen, die er abspielt, sobald von hinten ein Signal kommt. Danach wartet er auf das nächste. Ein Signal von der Seite bricht ab, ein Komparator liest den Fortschritt. Damit öffnet ein Knopf erst das Tor, dann die Schranke, dann die Lampe, in genau der Reihenfolge."
 		""
-		"Der &6Funk-Sender&r ist eine umgewandelte Redstone-Verbindung: Rechtsklick auf einen Hebel, Knopf oder analogen Hebel, und dessen Signal wird kabellos bis 128 Blöcke weit an Empfänger derselben Frequenz gefunkt. Honigwabe wachst ihn gegen Fehlklicks, die Axt löst das Wachs wieder."
+		"Der &6Funk-Sender&r ist eine umgewandelte Redstone-Verbindung: Rechtsklick auf einen Hebel, Knopf oder analogen Hebel, und dessen Signal wird kabellos bis 256 Blöcke weit an Empfänger derselben Frequenz gefunkt. Honigwabe wachst ihn gegen Fehlklicks, die Axt löst das Wachs wieder."
 	]
 	quest.3731E360C6DB4730.quest_subtitle: "Sequenzieller Impulsgeber und Funk-Sender."
 	quest.3731E360C6DB4730.title: "&6Programmiere Redstone"
@@ -12863,11 +12863,11 @@
 	quest.3811E59305462553.title: "&6Häng eine Windmühle an den Dynamo"
 	quest.381652550AB417EB.quest_desc: [
 		"{image:kronwerke:textures/quests/shots/create_windmill.png width:224 height:126 align:center}"
-		"&6Windmühlenlager&r: Holzstufe, Stein, Welle. Bau die Segel vor seine Vorderseite, verbinde alles mit &6Sekundenkleber&r und rechtsklicke das Lager."
+		"&6Windmühlenlager&r: Holzstufe, Stein, Welle. Bau die Segel vor seine Vorderseite (Segel halten ohne Sekundenkleber aneinander) und rechtsklicke das Lager."
 		""
 		"Je &e8 Segel&r bringen &d1 RPM&r, und jedes RPM trägt &d512 SU&r. 32 Segel laufen mit 4 RPM und tragen 2 048 SU, so viel wie acht Wasserräder."
 		""
-		"Rund um die Segel darf nichts im Weg stehen. Die Drehrichtung stellst du am Wertefeld des Lagers ein."
+		"Mehr als &d16 RPM&r macht eine Windmühle nie, egal wie viele Segel sie hat. Die Drehrichtung stellst du am Wertefeld des Lagers ein."
 	]
 	quest.381652550AB417EB.quest_subtitle: "Kraft ohne Wasser, nur mit Platz."
 	quest.381652550AB417EB.title: "&6Lass die Windmühle laufen"
@@ -13074,7 +13074,7 @@
 		"{image:kronwerke:textures/quests/shots/enderio_smelter.png width:224 height:126 align:center}"
 		"&eRezept auf Kronwerke:&r Oben Zahnrad, &6Feuerstein&r, Zahnrad. Mitte Eisen, &6Gehäuse der Leere&r, Eisen. Unten Obsidian, ein &6Mahlwerkrad&r von Create, Obsidian. Sie heißt &6SAG Mill&r und mahlt, statt zu sägen."
 		""
-		"Ein Rohes Eisen wird ein &6Pulverisiertes Eisen&r und mit 80 Prozent ein zweites. Kohle wird &6Pulverisierte Kohle&r, Sand mit 50 Prozent &6Silikon&r."
+		"Ein Rohes Eisen wird ein &6Eisenstaub&r (der von Occultism, nicht Pulverisiertes Eisen) und mit 80 Prozent ein zweiter. Kohle wird &6Pulverisierte Kohle&r, Sand mit 50 Prozent &6Silikon&r."
 		""
 		"&eKronwerke:&r Mehr Eisen aus jedem Erz heißt mehr Stahl, und die Kohle geht direkt in die Schmelze."
 	]
@@ -13176,7 +13176,7 @@
 		""
 		"Vier Overworld Predictions um ein Netherrack ergeben eine Nether Prediction, vier Nether Predictions um einen Endstein eine Ender Prediction."
 		""
-		"&eKronwerke:&r Das Stahlziel von Stufe 3 heißt 4.000 Stahlbarren. Ein Zombie-Modell gibt alle 48 Sekunden acht Eisen, egal wie gut es trainiert ist. Mit Self Aware kommen die Zombie-Vorhersagen für den Fabrikator noch obendrauf."
+		"&eKronwerke:&r Das Stahlziel von Stufe 3 heißt bei 30 aktiven Spielern 4.000 Stahlbarren. Ein Zombie-Modell gibt alle 48 Sekunden acht Eisen, egal wie gut es trainiert ist. Mit Self Aware kommen die Zombie-Vorhersagen für den Fabrikator noch obendrauf."
 	]
 	quest.39949DD23D8542B2.quest_subtitle: "Kommt in Stufe 3. Die Werkbank reicht für den Anfang."
 	quest.39949DD23D8542B2.title: "&aVorhersagen ohne Fabrikator"
@@ -13197,7 +13197,7 @@
 	quest.39C563005BCBFAFA.title: "&6Heiz einen Dampfkessel an"
 	quest.39C86A5666F66BCC.quest_desc: [
 		"{image:kronwerke:textures/quests/shots/ars_apprentice_source_motor.png width:224 height:126 align:center}"
-		"Ecken und unten Mitte &6Messingbarren&r, oben Mitte &6Elektronenröhre&r, links und rechts &6Zahnrad&r, Mitte der kalibrierte Mechanismus."
+		"Ecken &6Messingbarren&r, oben Mitte &6Elektronenröhre&r, links, rechts und unten Mitte &6Zahnrad&r, Mitte der kalibrierte Mechanismus."
 		""
 		"Macht aus Quelle aus einem Glas daneben Rotationskraft für Create. Seiten stellen die Drehzahl, die Front das Verhältnis von Last zu Drehzahl. Mehr Kraft kostet mehr Quelle."
 	]
@@ -13277,7 +13277,7 @@
 		""
 		"{image:aether:textures/item/miscellaneous/victory_medal.png width:32 height:32 align:center}"
 		""
-		"Die &6Valkyrie Queen&r redet erst mit dir, wenn du ihr &e10 Medaillen&r zeigst. Ohne Medaillen schickt sie dich weg. Sammle also, bevor du nach oben gehst."
+		"Die &6Valkyrie Queen&r redet erst mit dir, wenn du ihr &e10 Medaillen&r gibst. Sie nimmt sie dir ab. Ohne Medaillen schickt sie dich weg. Sammle also, bevor du nach oben gehst."
 		""
 		"&eTipp:&r Der Dart Shooter trifft fliegende Valkyries besser als jedes Schwert. Kämpfe mit dem Rücken zur Wand, Valkyries werfen dich gern über die Kante."
 	]
@@ -13464,7 +13464,7 @@
 	quest.3B24B0423BFE31CC.quest_subtitle: "Fünfzig Barren, jeder ein halbes Becken."
 	quest.3B24B0423BFE31CC.title: "&aSchmied Terrastahl in Serie"
 	quest.3B268BFFFDB0AD9A.quest_desc: [
-		"Ein &6Quelljuwelblock&r sind vier &6Quelljuwelen&r im Quadrat. Oder du legst einen &6Amethystblock&r in die &aImbuement-Kammer&r, das kostet &d2 000 Source&r und spart dir die vier Juwelen."
+		"Ein &6Quelledelsteinblock&r sind vier &6Quelljuwelen&r im Quadrat. Oder du legst einen &6Amethystblock&r in die &aImbuement-Kammer&r, das kostet &d2 000 Source&r und spart dir die vier Juwelen."
 		""
 		"Das &6Quellglas&r: oben und unten je drei &6Archwood-Platten&r, an den Seiten Glas. Mit Manadiamanten, Andesitlegierung und Gold Leaf hast du dann alles für den &6Quellschlussstein&r."
 	]
@@ -13634,7 +13634,7 @@
 	quest.3B9DC1FA5D32439D.quest_subtitle: "Halte Springen, und du steigst."
 	quest.3B9DC1FA5D32439D.title: "&eFlieg mit dem Jetpack"
 	quest.3BA47BA4F53343F8.quest_desc: [
-		"Im Apparat: ein Robenteil der &eStufe 3&r, &6Mal der Technomantie&r, &6Netheritbarren&r, &e2 Messingbarren&r (beim Helm Messing und Ingenieursbrille), &d7 000 Quelle&r."
+		"Im Apparat: ein Robenteil der &eStufe 3&r, &6Mal der Technomantie&r (ein Mal der Meisterschaft geht auch), &6Netheritbarren&r, &e2 Messingbarren&r (beim Helm Messing und Ingenieursbrille), &d7 000 Quelle&r."
 		""
 		"Aus dem Arkanisten wird der Technomancer, aus dem Kampfmagier der Machinaguard, aus dem Zauberer der Artificer."
 	]
@@ -13781,7 +13781,7 @@
 	quest.3C42B48297417F2D.quest_desc: [
 		"Im Apparat: Warp-Schriftrolle, &e4 Lohenstaub&r, &e2 Enderperlen&r."
 		""
-		"Bleibt nach dem Benutzen erhalten. Eine beschriebene Rolle kopiert der Apparat für &d1 000 Quelle&r, gib Freunden eine mit eurer Gemeinschaftsbasis."
+		"Bleibt nach dem Benutzen erhalten. Kopieren kann der Apparat nur die einfache beschriebene Warp-Schriftrolle (für &d1 000 Quelle&r), nicht die stabilisierte: Mach die Kopien für Freunde, bevor du stabilisierst."
 	]
 	quest.3C42B48297417F2D.quest_subtitle: "Heimweg ohne Verbrauch."
 	quest.3C42B48297417F2D.title: "&6Stabilisier die Schriftrolle"
@@ -13937,7 +13937,7 @@
 	quest.3CC653727697EE2C.quest_desc: [
 		"Sammle &e64 Stahlbarren&r. Roh-Hochofen, Verbesserter Hochofen oder Mekanism, alles zählt."
 		""
-		"&eKronwerke:&r Das Obelisk-Ziel von &6Stufe 3&r will &e4 000 Stahlbarren&r. Zwei, drei Hochöfen, die jetzt schon laufen, machen das später entspannt. Abgegeben wird später von Hand am Obelisken."
+		"&eKronwerke:&r Das Obelisk-Ziel von &6Stufe 3&r will bei 30 aktiven Spielern &e4 000 Stahlbarren&r. Zwei, drei Hochöfen, die jetzt schon laufen, machen das später entspannt. Abgegeben wird später von Hand am Obelisken."
 		""
 		"Damit sitzen die Grundlagen: Multiblöcke, Koks, Kreosot, Legierungen und Stahl."
 	]
@@ -14043,7 +14043,7 @@
 	quest.3D2084057D22EDCE.quest_subtitle: "Drei Klumpen aus einem Erz. Stufe 3."
 	quest.3D2084057D22EDCE.title: "&d&lBau eine Klärkammer"
 	quest.3D30A98E855FD4DF.quest_desc: [
-		"Wer später einsteigt, bekommt die &6Starterpakete&r aller Stufen, die schon offen sind. Mit Stufe 2 sind das 16 Messingbarren, ein Lohenbrenner, ein Quellglas und 8 Manaperlen."
+		"Jede Stufe bringt allen ein &6Starterpaket&r. Wer später einsteigt, bekommt die Pakete aller Stufen, die schon offen sind. Mit Stufe 2 sind das 16 Messingbarren, ein Lohenbrenner, ein Quellglas und 8 Manaperlen."
 		""
 		"So bist du gleich bei den anderen dabei. Wer Hilfe braucht, fragt im Chat oder im Sprachchat."
 	]
@@ -14081,7 +14081,7 @@
 	quest.3D3A8DCEA26335EF.quest_subtitle: "Eine neue Welt jetzt, die Chaosinsel später."
 	quest.3D3A8DCEA26335EF.title: "&dSchau, was noch kommt"
 	quest.3D3FDB0DB9F082C9.quest_desc: [
-		"Die &6Teslaspule&r entsteht in der Mechanischen Werkbank aus Kupferspulen, Andesitlegierung, Kondensatoren, Messinggehäuse, Messingblechen und einer Elektronenröhre. Stell sie über ein Depot oder ein Band."
+		"Die &6Teslaspule&r entsteht in der Mechanischen Werkbank aus Kupferspulen, Andesitlegierung, Kondensatoren, Messingrahmen, Messingblechen und einer Elektronenröhre. Stell sie über ein Depot oder ein Band."
 		""
 		"&eCrafts & Additions, Teslaspule:&r lädt FE-Gegenstände unter sich mit &d5 000 FE/t&r, Rezepte zum Aufladen mit 2 000 FE/t, Puffer &d40 000 FE&r. Sie kann auch Mobs in 3 Blöcken einen Schlag versetzen, jeder kostet 1 000 FE. Offen ab Stufe 2, siehe Kapitel &6Create: Erweiterungen&r."
 	]
@@ -14114,7 +14114,7 @@
 	quest.3D68AEC5831F6D62.quest_subtitle: "Ars Elemental: eine Schule wird stärker."
 	quest.3D68AEC5831F6D62.title: "&6Schleif einen Kleinen Fokus"
 	quest.3D7B3B704740B2A8.quest_desc: [
-		"Ein &6Enderauge&r oben rechts, zwei &6Flux-Staub&r und zwei &6Obsidian&r in einer Diagonale von unten links nach oben rechts ergeben den &6Flux-Konfigurator&r."
+		"Oben in der Mitte &6Flux-Staub&r und rechts ein &6Enderauge&r, in der mittleren Reihe &6Obsidian&r in der Mitte und Flux-Staub rechts, unten links noch ein Obsidian: Das ergibt den &6Flux-Konfigurator&r."
 		""
 		"Rechtsklick in die Luft öffnet dein Netzwerk-Fenster von überall, ohne an einem Gerät zu stehen. &eSchleichen und Rechtsklick&r auf ein Flux-Gerät kopiert dessen Einstellungen (Netz, Priorität, Limit), &eRechtsklick&r auf das nächste Gerät fügt sie ein."
 		""
@@ -14166,7 +14166,7 @@
 	quest.3DB94A49EAC2AF88.quest_desc: [
 		"Ein Raum ohne jedes Licht, mindestens &e24 Blöcke&r von deinem Standplatz, Plattformen mit offenen &6Falltüren&r an den Kanten, dazwischen ein Schacht &e22 Blöcke&r tief. Monster halten offene Falltüren für Boden, treten darauf und fallen."
 		""
-		"Nach 22 Blöcken landen Zombies und Skelette mit einem halben Herz: ein Schlag genügt, und die Erfahrung gehört dir. Ab 23 Blöcken sterben sie von selbst, dann gibt es Beute, aber keine Erfahrung."
+		"Nach 22 Blöcken landen Zombies und Skelette in Stufe 1 mit einem halben Herz (ab Stufe 2 haben sie mehr Leben und überleben den Sturz besser): ein Schlag genügt, und die Erfahrung gehört dir. Ab 23 Blöcken sterben sie von selbst, dann gibt es Beute, aber keine Erfahrung."
 		""
 		"Trichter am Boden sammeln Knochen, Pfeile, Fleisch und Schwarzpulver. Ein &6Ummantelter Lüfter&r schiebt zögernde Monster zum Loch."
 	]
@@ -14273,7 +14273,7 @@
 		""
 		"Der Clibano schmilzt Erze und Roherze wie ein Schmelzofen in 5 Sekunden. Eine &6Soul&r im Seelenslot macht &bSeelenfeuer&r, 1,5 mal so schnell, eine &6Enchanted Soul&r &dverzaubertes Feuer&r, 2,5 mal so schnell."
 		""
-		"&eRückstände:&r Bei jedem dritten Erz bleibt ein Rest der Sorte im Clibano. Neun Reste ergeben einen ganzen Block, Eisenblock, Kupferblock oder Arcane Crystal Block. Das ist die Erzvermehrung der Mod."
+		"&eRückstände:&r Mit einer Chance je nach Erz bleibt ein Rest der Sorte im Clibano: bei Eisen, Kupfer und Kohle etwa jedes dritte Mal, bei Gold jedes fünfte, bei Diamant und Smaragd jedes zehnte, bei Netherit jedes zwanzigste. Neun Reste ergeben einen ganzen Block, Eisenblock, Kupferblock oder Arcane Crystal Block. Das ist die Erzvermehrung der Mod."
 	]
 	quest.3DFBD8D19758869F.quest_subtitle: "Ein Hochofen, der mit Seelen heizt."
 	quest.3DFBD8D19758869F.title: "&6Baue den Clibano"
@@ -14376,7 +14376,7 @@
 		""
 		"&5Epic&r hat drei Attribute, einen Effekt und immer eine &6Fähigkeit&r mit Abklingzeit. &6Mythic&r hat vier Attribute, zwei Effekte und eine Fähigkeit, selten sogar Unzerstörbarkeit."
 		""
-		"&eKronwerke:&r Common, Uncommon und ein wenig Rare gibt es in Stufe 1. &5Epic&r kommt in Stufe 3, &6Mythic&r in Stufe 4, mit den Weltstufen Summit und Pinnacle."
+		"&eKronwerke:&r Common, Uncommon und ein wenig Rare gibt es in Stufe 1. Die höheren Seltenheiten hängen an den Weltstufen von Apotheosis, nicht an unseren Stufen: &5Epic&r gibt es mit der Weltstufe Ascent schon in Stufe 1, &6Mythic&r mit Summit, also nach dem Wither in Stufe 2."
 	]
 	quest.3E6A3398CEDD686B.quest_subtitle: "Die Farbe des Namens sagt, was drinsteckt."
 	quest.3E6A3398CEDD686B.title: "&7Lern die Seltenheiten"
@@ -14470,7 +14470,7 @@
 	quest.3F108701026EFF92.quest_subtitle: "Gepäck für den Besen."
 	quest.3F108701026EFF92.title: "&6Näh eine Small Satchel"
 	quest.3F10F6D7017454EA.quest_desc: [
-		"Aus dem &6Steinschneider&r kommen mit einem Zinkbarren auch die Formen von &6Copycats+&r. Zwei &6Copycat-Stufen&r übereinander ergeben einen &6Copycat-Block&r."
+		"Aus dem &6Steinschneider&r kommen mit einem Zinkbarren auch die Formen von &6Copycats+&r. Zwei &6Copycat-Halbplatten&r (die von Copycats+, nicht die Copycat-Stufe von Create) übereinander ergeben einen &6Copycat-Block&r."
 		""
 		"Tarn ihn wie jede Copycat mit einem Rechtsklick. Copycat-Blöcke auf einer Kontraption bewegen sich mit und behalten ihr Aussehen, ideal für Tore und Zugbrücken mit Create."
 	]
@@ -14526,7 +14526,7 @@
 	quest.3F1CFD46ED53D831.title: "&6Schalt Teile des Netzes ab"
 	quest.3F1EF055276CDA53.quest_desc: [
 		"{image:kronwerke:textures/quests/shots/ars_master_tribute.png width:224 height:126 align:center}"
-		"Bei jedem verlorenen Viertel ihrer &c1 000 Lebenspunkte&r hält sie an, ist kurz unverwundbar und bekommt Flügel, Stacheln oder Hörner, bis sie alles hat."
+		"Bei jedem verlorenen Viertel ihrer Lebenspunkte (&c1 000&r als Basis, mit dem Stufenbonus 1 700 in Stufe 3, 2 200 in Stufe 4 und 2 800 in Stufe 5) hält sie an, ist kurz unverwundbar und bekommt Flügel, Stacheln oder Hörner, bis sie alles hat."
 		""
 		"&eFlügel:&r Sturzflug, der hier Blöcke zerstört. &eStacheln:&r Stachelbeschuss und Einrollen, &ceingerollt nimmt sie keinen Schaden&r und sticht im Nahkampf. &eHörner:&r Anlauf und Rammen."
 		""
@@ -14550,7 +14550,7 @@
 	quest.3F4529F332462362.title: "&4Erobere einen großen Dungeon"
 	quest.3F490F80873FF59F.quest_desc: [
 		"{image:kronwerke:textures/quests/shots/ae2_advanced_matrix.png width:224 height:126 align:center}"
-		"Ein Quader von 3 bis 7 Blöcken pro Kante: Kanten aus &6Assembler Matrix Frame&r, Seiten aus Wall oder Glass, innen die Kerne. Mindestens ein &6Pattern Core&r (36 Werkbankschablonen) und ein &6Craft Core&r (acht Aufträge)."
+		"Ein Quader von 3 bis 6 Blöcken pro Kante: Kanten aus &6Assembler Matrix Frame&r, Seiten aus Wall oder Glass, innen die Kerne. Mindestens ein &6Pattern Core&r (36 Werkbankschablonen) und ein &6Craft Core&r (acht Aufträge)."
 		""
 		"&6Speed Cores&r machen sie schneller, ab fünf ist volle Geschwindigkeit erreicht. Leuchten die Linien am Rahmen blau, ist sie fertig. Spart viele Kanäle."
 	]
@@ -14653,7 +14653,7 @@
 	quest.3FB073F38AAB3E6B.quest_desc: [
 		"&6Handschuh des Zauberers&r (Leder, Diamant, 2 Goldblöcke, 2 Quelljuwelblöcke): baut bis Diamanthärte ab, zaubert mit Rabatt."
 		"&6Angel des Zauberers&r (Angel, 2 Goldblöcke, 2 Quelljuwelblöcke): wirkt den Zauber auf alles am Haken."
-		"&6Spiegel des Zauberers&r (Quelljuwelblock, 2 Glas, 2 Manipulationsessenzen, 2 Archwood-Stämme, 2 Gold): wirkt einen Selbst-Zauber billiger und länger."
+		"&6Spiegel des Zauberers&r (Quelledelsteinblock, 2 Glas, 2 Manipulationsessenzen, 2 Archwood-Stämme, 2 Gold): wirkt einen Selbst-Zauber billiger und länger."
 	]
 	quest.3FB073F38AAB3E6B.quest_subtitle: "Checkliste: drei Werkzeuge mit eingebautem Zauber."
 	quest.3FB073F38AAB3E6B.title: "&6Bau Handschuh, Angel und Spiegel"
@@ -14692,7 +14692,7 @@
 	quest.3FC6B71CB35F1EC8.quest_desc: [
 		"Halte den Bruchstein in der Hand und mach einen &eRechtsklick&r auf den Obelisken. Der ganze Stapel geht hinein und wird dir gutgeschrieben."
 		""
-		"&eSchleichen und Rechtsklick&r gibt alles aus deinem Inventar ab, was das Ziel gerade braucht. Was es nicht braucht, bleibt bei dir. Abgaben ab 64 Stück stehen im Chat."
+		"&eSchleichen und zweimal Rechtsklick&r mit einem Item in der Hand gibt alles aus den drei Reihen deines Inventars ab, was das Ziel gerade braucht. Hotbar, Nebenhand, Rüstung und Rucksäcke bleiben, wie sie sind. Abgaben ab 64 Stück stehen im Chat."
 	]
 	quest.3FC6B71CB35F1EC8.quest_subtitle: "Stapel in die Hand, Rechtsklick auf den Obelisken."
 	quest.3FC6B71CB35F1EC8.title: "&eGib deinen Bruchstein ab"
@@ -14752,7 +14752,7 @@
 	quest.402BB31F7C41F6E7.quest_desc: [
 		"&e4 Manainfundierte Fäden&r im Quadrat ergeben &6Managewebestoff&r."
 		""
-		"Das Tuch ist der Stoff der Magierrobe. Für die volle Robe brauchst du gut zwei Dutzend, also gut hundert Fäden."
+		"Das Tuch ist der Stoff der Magierrobe. Für die volle Robe brauchst du 24 Stück, also 96 Fäden."
 	]
 	quest.402BB31F7C41F6E7.quest_subtitle: "Vier Fäden, ein Tuch."
 	quest.402BB31F7C41F6E7.title: "&6Web Managewebestoff"
@@ -14776,7 +14776,7 @@
 	quest.403CF2A90894462C.quest_subtitle: "Der Ghast weint, wenn er fällt."
 	quest.403CF2A90894462C.title: "&fHol eine Ghastträne"
 	quest.403D94AC159D99FF.quest_desc: [
-		"Gib &e600 Manaperlen&r, &e50 Terrastahlbarren&r und &e8 Runenkerne&r am Obelisken ab. Rechtsklick legt den Stapel ab, Schleich-Rechtsklick alles."
+		"Gib die &eManaperlen&r, die &eTerrastahlbarren&r und &e8 Runenkerne&r am Obelisken ab. Bei 30 aktiven Spielern sind es 600 Perlen und 50 Barren, die echte Menge zeigt &e/kw goals&r. Rechtsklick gibt den Stapel in deiner Hand ab, Schleichen und zweimal Rechtsklick alles Passende aus den drei Inventarreihen."
 		""
 		"Sind Technik und Magie voll, öffnet &6Stufe 3 (Stahlwerk)&r mit einem Event im Stream, und mit ihr das Elfenportal, siehe &aBotania: Alfheim&r."
 		""
@@ -14923,7 +14923,7 @@
 	quest.411976AA6DA1D525.quest_subtitle: "Wo etwas stirbt, wächst Sculk."
 	quest.411976AA6DA1D525.title: "&3Stell einen Sculk-Katalysator auf"
 	quest.411AA013329F1B8F.quest_desc: [
-		"Die &6Ancient Factory&r liegt um &eY minus 30&r unter jedem Biom. Große Höhlen und Schluchten legen ihre Wände frei, sonst hilft ab Stufe 2 das &6Mechanische Auge&r (Enderauge, 4 Eisenbarren, 4 Redstoneblöcke)."
+		"Die &6Ancient Factory&r liegt um &eY minus 30&r unter jedem Biom. Große Höhlen und Schluchten legen ihre Wände frei, sonst hilft schon in Stufe 1 das &6Mechanische Auge&r (Quelljuwel, Enderperle, 3 Eisenbarren, 4 Redstoneblöcke)."
 		""
 		"Drinnen patrouillieren &cWatcher&r (25 Lebenspunkte, 5 Schaden, lassen Eisen und Redstone fallen) und &cProwler&r (160 Lebenspunkte, Rüstung 10, 14 Schaden, Zielsuchraketen für 5 und ein Todeslaser für 5 plus 5 Prozent). Ein Prowler gibt &e5 bis 7 Eisen&r und &e5 bis 9 Redstone&r."
 		""
@@ -15039,7 +15039,7 @@
 	quest.41943EB3EF1ED2C3.quest_desc: [
 		"Ein Setzling jeder Farbe: rot, blau, grün, violett."
 		""
-		"&cFlammend&r (rot) brennt im Vulkanischen Quelllink am besten. Die Ritualtafeln ab Stufe 2 brauchen Stämme in der passenden Farbe: &aBlühend&r (grün) für Natur, &bKaskadierend&r (blau) für Wasser und Wetter, &5Ärgerlich&r (violett) für Bindung und Suche."
+		"&cBrennend&r (rot) brennt im Vulkanischen Quelllink am besten. Die Ritualtafeln ab Stufe 2 brauchen Stämme in der passenden Farbe: &aBlühend&r (grün) für Natur, &bKaskadierend&r (blau) für Wasser und Wetter, &5Ärgerlich&r (violett) für Bindung und Suche."
 		""
 		"Ein kleiner Garten mit allen vier spart dir später viele Wege."
 	]
@@ -15065,7 +15065,7 @@
 	quest.419B17C2D5A36ED1.quest_desc: [
 		"Finde einen &6Plünderer-Außenposten&r und hak ab. Towns and Towers baut ihn in jedem Biom anders, von Tafelberg bis Schneehang."
 		""
-		"Armbrustschützen treffen weit. Geh mit Schild, und lass das Banner des Hauptmanns liegen, wenn du keinen Überfall auf dein Dorf willst."
+		"Armbrustschützen treffen weit. Geh mit Schild, und trink die &6Unheilvolle Flasche&r des Hauptmanns nicht, wenn du keinen Überfall auf dein Dorf willst."
 	]
 	quest.419B17C2D5A36ED1.quest_subtitle: "Außenposten in jedem Biom."
 	quest.419B17C2D5A36ED1.title: "&cRäum einen Plünderer-Außenposten"
@@ -15090,7 +15090,7 @@
 		""
 		"&eRezept auf Kronwerke:&r Der &6Fortgeschrittene Steuerschaltkreis&r von Mekanism ist ein Einfacher Steuerschaltkreis, zwei Infundierte Legierungen und ein &6Gedrucktes Silizium&r an der Werkbank. Einen anderen Weg gibt es nicht."
 		""
-		"&eKronwerke:&r Das Ziel von Stufe 3, &e\"Der Ofen schläft nie\"&r, will &e250 Fortgeschrittene Steuerschaltkreise&r."
+		"&eKronwerke:&r Das Ziel von Stufe 3, &e\"Der Ofen schläft nie\"&r, will bei 30 aktiven Spielern &e250 Fortschrittliche Steuerschaltkreise&r."
 	]
 	quest.419F003B27288373.quest_subtitle: "Das Bauteil, auf das Mekanism wartet."
 	quest.419F003B27288373.title: "&8Druck Silizium"
@@ -15115,9 +15115,9 @@
 	quest.41AEAC6A0D40F6B3.quest_subtitle: "Das Verstellbare Kettengetriebe."
 	quest.41AEAC6A0D40F6B3.title: "&6Schalt die Drehzahl per Redstone"
 	quest.41AEB7D0E5FB1298.quest_desc: [
-		"Mit &6Stufe 2 (Messingwerk)&r geht es im Kapitel &aBotania: Runen&r weiter: Manastahl, Manaperlen (nur mit Messinggehäuse unter dem Becken), Manatafel, Runenaltar (mit Messingbarren) und Terrastahl."
+		"Mit &6Stufe 2 (Messingwerk)&r geht es im Kapitel &aBotania: Runen&r weiter: Manastahl, Manaperlen (nur mit Messingrahmen unter dem Becken), Manatafel, Runenaltar (mit Messingbarren) und Terrastahl."
 		""
-		"Das Obelisk-Ziel von Stufe 2 will &e600 Manaperlen&r, &e50 Terrastahlbarren&r und &e8 Runenkerne&r. Das sind über &d30 Millionen Mana&r. Füllt jetzt schon Becken."
+		"Das Obelisk-Ziel von Stufe 2 will bei 30 aktiven Spielern &e600 Manaperlen&r und &e50 Terrastahlbarren&r, mit mehr Spielern mehr, dazu immer &e8 Runenkerne&r. Das sind über &d30 Millionen Mana&r. Füllt jetzt schon Becken."
 		""
 		"Das Elfenportal folgt mit Stufe 3, der Gaia-Wächter mit Stufe 4."
 	]
@@ -15150,7 +15150,7 @@
 		""
 		"{image:draconicevolution:textures/item/components/wyvern_core.png width:32 height:32 align:center}"
 		""
-		"Jeder Kern kostet einen &5Wither&r. Für den Anfang brauchst du zwei: einen für den Wyvern-Injektor, einen für den Energiekern."
+		"Jeder Kern kostet einen &5Wither&r. Für den Anfang brauchst du sieben: je einen für sechs Wyvern-Injektoren und einen für den Energiekern."
 	]
 	quest.41CD7D49F64CE2C5.quest_subtitle: "Ein Netherstern im Draconium."
 	quest.41CD7D49F64CE2C5.title: "&dBau einen Wyvern-Kern"
@@ -15297,7 +15297,7 @@
 	quest.427B30EC8AC36F66.quest_subtitle: "Eine Werkbank, die du immer dabei hast."
 	quest.427B30EC8AC36F66.title: "Bau ein Werkbank-Upgrade"
 	quest.42848B904B06B075.quest_desc: [
-		"&eRezept auf Kronwerke:&r Bulk-Komponente aus einer &61M-Komponente&r, einer &6Räumlichen Komponente 16³&r, 2 &6Akkumulationsprozessoren&r, &6Himmelssteinstaub&r und einem &5Erwachten Nugget&r. Die Zelle: Vibrierendes Quarzglas, Himmelssteinstaub, 3 Netheritbarren."
+		"&eRezept auf Kronwerke:&r Bulk-Komponente aus einer &61M-Komponente&r, einer &6Räumlichen Komponente 2³&r, 2 &6Akkumulationsprozessoren&r, &6Himmelssteinstaub&r und einem &5Erwachten Nugget&r. Die Zelle: Polarisiertes Quarzglas, Himmelssteinstaub, 3 Netheritbarren."
 		""
 		"Sie speichert eine einzige Sorte, davon fast beliebig viel. Die &6Komprimierungskarte&r rechnet zwischen Barren, Blöcken und Nuggets um."
 	]
@@ -15306,7 +15306,7 @@
 	quest.428F8FE120E20C54.quest_desc: [
 		"&e6 Lebestein&r, &e1 Braustand&r, &e1 Rune des Manas&r, &e1 Manastahlblock&r."
 		""
-		"Leg eine &6Managlasphiole&r hinein (3 Managlas in V-Form ergeben 3), dann die Zutaten, und richte einen Verbreiter darauf. Gebräue haben feste Rezepte und mehrere Schlucke pro Phiole, die Lexica listet alle."
+		"Leg eine &6Managlasampulle&r hinein (3 Managlas in V-Form ergeben 3), dann die Zutaten, und richte einen Verbreiter darauf. Gebräue haben feste Rezepte und mehrere Schlucke pro Phiole, die Lexica listet alle."
 	]
 	quest.428F8FE120E20C54.quest_subtitle: "Tränke mit Mana statt Braustand."
 	quest.428F8FE120E20C54.title: "&6Bau die Botanische Brauerei"
@@ -15398,7 +15398,7 @@
 	quest.4301C49EBE02D2C7.quest_subtitle: "Ein Blech, ein Kabel."
 	quest.4301C49EBE02D2C7.title: "&6Schneid Kupferkabel"
 	quest.4302C8F783572309.quest_desc: [
-		"Der &cNightmare Stalker&r (70 Lebenspunkte, 7 Schaden, schnell und schwer wegzustoßen) sucht sich einen Spieler aus und verfolgt ihn. Kämpf bei Licht und mit dem Rücken zur Wand, er greift von hinten an."
+		"&cErst ab Stufe 3.&r Der &cNightmare Stalker&r (70 Lebenspunkte, 7 Schaden, schnell und schwer wegzustoßen) sucht sich einen Spieler aus und verfolgt ihn. Kämpf bei Licht und mit dem Rücken zur Wand, er greift von hinten an."
 		""
 		"Er lässt eine &6Albtraumklaue&r fallen, dazu Monsterhaut oder Dunkelmetall, und etwa jeder elfte seinen &6Schädel&r. Zwei Klauen, ein Dunkelmetallbarren und ein Knochengriff ergeben die &6Albtraumsense&r: Angriffe heilen dich, verdorren das Ziel und sperren seine Magie."
 		""
@@ -15839,18 +15839,18 @@
 	quest.44E3D7B177AD28B8.quest_subtitle: "Stack-Upgrade Stufe 1 Plus."
 	quest.44E3D7B177AD28B8.title: "Verdreifache ein Fass mit Kupfer"
 	quest.44F6726A010EADF9.quest_desc: [
-		"Bruchstein, Andesitlegierung und Quelljuwelen lassen sich automatisch herstellen. Abgeben musst du selbst: Pack die Ausbeute in einen Rucksack, geh zum Obelisken, und Schleichen mit Rechtsklick gibt alles Passende auf einmal ab."
+		"Bruchstein, Andesitlegierung und Quelljuwelen lassen sich automatisch herstellen. Abgeben musst du selbst: Trag die Ausbeute im Inventar zum Obelisken (einen Rucksack leert er nicht): Schleichen und zweimal Rechtsklick mit einem Item in der Hand gibt alles Passende aus den drei Inventarreihen auf einmal ab."
 		""
 		"Wie man einen Bruchsteingenerator, eine Legierungsstraße oder eine Juwelenanlage baut, zeigt das Kapitel &6Erste Farmen&r."
 	]
 	quest.44F6726A010EADF9.quest_subtitle: "Die Farm füllt die Truhe, du trägst sie hin."
 	quest.44F6726A010EADF9.title: "&6Bau eine Farm fürs Ziel"
 	quest.4520027E5F654845.quest_desc: [
-		"Nachts kommen die Monster aus &6Born in Chaos&r: &cZombie-Schläger&r (60 Lebenspunkte, schleudern dich weg), &cSkelett-Drescher&r (50, Rüstung 10, Hammerschlag für 8 mit viel Rückstoß), &cTürritter&r (30, Rüstung 7), &cKnochenrufer&r, die kleine Skelette rufen, und &cGefallene Chaosritter&r (40 Lebenspunkte, Rüstung 20)."
+		"Nachts kommen die Monster aus &6Born in Chaos&r: &cZombie-Schläger&r (60 Lebenspunkte, schleudern dich weg), &cSkelett-Drescher&r (50, Rüstung 10, Hammerschlag für 8 mit viel Rückstoß), &cTürritter&r (30, Rüstung 7), &cKnochenrufer&r, die kleine Skelette rufen, und ab Stufe 2 &cGefallene Chaosritter&r (40 Lebenspunkte, Rüstung 20)."
 		""
 		"Viele von ihnen lassen &6Dunkelmetallstücke&r fallen, der Chaosritter 4 bis 7 auf einmal. Sammle &e9 Stück&r, mehr dazu im nächsten Quest."
 		""
-		"&cAchtung:&r Ein &cGeist des Chaos&r kann in einen normalen Mob fahren und ihn besessen machen. Siehst du im Chat &c\"Something is chasing you\"&r, jagt dich ein &cNightmare Stalker&r. Zu Hause bleiben hilft nicht, er kommt."
+		"&cAchtung, ab Stufe 3:&r Ein &cGeist des Chaos&r kann in einen normalen Mob fahren und ihn besessen machen. Siehst du im Chat &c\"Something is chasing you\"&r, jagt dich ein &cNightmare Stalker&r. Zu Hause bleiben hilft nicht, er kommt."
 	]
 	quest.4520027E5F654845.quest_subtitle: "Die Nacht gehört Born in Chaos."
 	quest.4520027E5F654845.title: "&8Sammle Dunkelmetall"
@@ -15913,7 +15913,7 @@
 	quest.4554D855273D3F41.quest_subtitle: "Vanilla, Trichterlore: holt von Schienen, was darüber liegt."
 	quest.4554D855273D3F41.title: "Lass eine Lore fahren"
 	quest.456132EC3D9247D3.quest_desc: [
-		"&6Redstone-Relais&r: &e6 Goldbarren&r, oben und unten Mitte &6Redstone&r, ein &6Quelljuwelblock&r in die Mitte. Mit dem Dominion-Zauberstab verbunden schicken Relais ein Signal bis &e30 Blöcke&r weit. Eingang ist eine Seite, ausgegeben wird an allen anderen."
+		"&6Redstone-Relais&r: &e6 Goldbarren&r, oben und unten Mitte &6Redstone&r, ein &6Quelledelsteinblock&r in die Mitte. Mit dem Dominion-Zauberstab verbunden schicken Relais ein Signal bis &e30 Blöcke&r weit. Eingang ist eine Seite, ausgegeben wird an allen anderen."
 		""
 		"&6Schaukasten&r: oben &e3 Glas&r, Mitte Glas, &6Beobachter&r, Glas, unten &e3 Archwood-Planken&r. Binde mit dem Zauberstab eine Truhe daran, klick das Item darauf, das gezählt werden soll. Rechtsklick erhöht die Schwelle, Schlagen senkt sie. Über der Schwelle gibt er ein Signal."
 		""
@@ -15931,7 +15931,7 @@
 	quest.457B6225C03AECEE.quest_desc: [
 		"Rosenquarz aufs Band, ein &6Einsatzgerät&r mit Schmirgelpapier poliert ihn, zwei &6Handwerkseinheiten&r übereinander setzen ihn auf ein Eisenblech."
 		""
-		"Pro Präzisionsgetriebe brauchst du im Schnitt über acht Röhren. Ohne diese Linie steht die Präzisionslinie bald still."
+		"Pro Präzisionsgetriebe brauchst du im Schnitt knapp vier Röhren. Ohne diese Linie steht die Präzisionslinie bald still."
 	]
 	quest.457B6225C03AECEE.quest_subtitle: "Der Engpass, automatisch."
 	quest.457B6225C03AECEE.title: "&6Bau eine Röhrenlinie"
@@ -16094,7 +16094,7 @@
 	quest.4643921A15D7ABC6.quest_desc: [
 		"Leg das &6Spawn-Ei einer Eisenbiene&r auf den &6Gießtisch&r und gieß &e810 mB flüssigen Stahl&r darüber. Das Ei wird zum Spawn-Ei der &6Stahlbiene&r. Das ist auf diesem Server der einzige Weg zu Legierungsbienen, züchten lassen sie sich nicht."
 		""
-		"&eSo geht jede Legierung:&r Ei eines Grundmetalls plus 810 mB (neun Barren) der Legierung. Kupfer- oder Zinnbiene mit &6Bronze&r, Eisen- oder Nickelbiene mit &6Invar&r, Kupfer- oder Nickelbiene mit &6Konstantan&r, Gold- oder Silberbiene mit &6Elektrum&r, Kupfer- oder Zinkbiene mit eingeschmolzenem &6Messing&r."
+		"&eSo geht jede Legierung:&r Ei eines Grundmetalls plus 810 mB (neun Barren) der Legierung. Kupfer- oder Zinnbiene mit &6Bronze&r, Kupfer- oder Nickelbiene mit &6Konstantan&r, Gold- oder Silberbiene mit &6Elektrum&r. Eine Invarbiene gibt es im Pack nicht, und die Wabe der Messingbiene gibt auf Kronwerke nichts: Messing kommt nur aus dem Mixer."
 		""
 		"Legierungsbienen brauchen einen Block ihrer Legierung als Blume und geben pro Wabe sicher &e4 bis 6 Klumpen&r, die Stahlbiene sogar 7 bis 12."
 		""
@@ -16262,7 +16262,7 @@
 		"{image:kronwerke:textures/quests/shots/aether_altar.png width:224 height:126 align:center}"
 		"8 &6Holystone&r um eine &6Ambrosium Torch&r ergeben den &6Incubator&r. Er brennt &6Ambrosium Torches&r, jede hält 25 Sekunden."
 		""
-		"Ein &6Moa Egg&r in den oberen Slot, Fackeln in den unteren, dann warten. Das Brüten dauert eine ganze Weile, leg also einen Stapel Fackeln hinein und bau in der Zeit weiter. Alles zu den Moas im Abschnitt Moas."
+		"Ein &6Moa Egg&r in den oberen Slot, Fackeln in den unteren, dann warten. Das Brüten dauert eine ganze Weile und braucht pro Ei zwei &6Ambrosium Torches&r. Bau in der Zeit weiter. Alles zu den Moas im Abschnitt Moas."
 	]
 	quest.470856D04625D004.quest_subtitle: "Der Brutkasten für Moa-Eier."
 	quest.470856D04625D004.title: "&6Bau einen Incubator"
@@ -16396,7 +16396,7 @@
 		""
 		"{image:aether:textures/item/materials/swet_ball.png width:32 height:32 align:center}"
 		""
-		"&eBeute:&r Blue Swets lassen einen &6Swet Ball&r fallen (gilt als Schleimball für Leinen und Co.) und manchmal eine &6Blue Aercloud&r. Mit einem Swet Ball in der Hand wird aus Erde Gras, aus Gras Podsol und aus Netherrack Nezel. Golden Swets lassen &6Glowstone&r fallen."
+		"&eBeute:&r Blue Swets lassen einen &6Swet Ball&r fallen (gilt als Schleimball für Leinen und Co.) und eine &6Blue Aercloud&r. Mit einem Swet Ball in der Hand wird aus Erde Gras, aus Gras Podsol und aus Netherrack Nezel. Golden Swets lassen &6Glowstone&r fallen."
 		""
 		"Ein &6Swet Cape&r aus dem Bronze-Dungeon macht Swets friedlich, dann kannst du auf ihnen reiten. Ein &6Swet Banner&r vor dem Haus hält sie fern."
 	]
@@ -16442,7 +16442,7 @@
 	quest.47BF234EC21224C7.title: "&cMeld per Redstone, was im Puffer liegt"
 	quest.47C51A9763F1E7C6.quest_desc: [
 		"{image:kronwerke:textures/quests/shots/start_here_m_keystone.png width:224 height:126 align:center}"
-		"Oben: &6Quelljuwelblock&r, &6Quellglas&r, &6Quelljuwelblock&r. Mitte: &bManadiamant&r, &6Andesitlegierung&r, &bManadiamant&r. Unten: &6Quelljuwelblock&r, &6Gold Leaf&r, &6Quelljuwelblock&r."
+		"Oben: &6Quelledelsteinblock&r, &6Quellglas&r, &6Quelledelsteinblock&r. Mitte: &bManadiamant&r, &6Andesitlegierung&r, &bManadiamant&r. Unten: &6Quelledelsteinblock&r, &6Gold Leaf&r, &6Quelledelsteinblock&r."
 		""
 		"{image:kronwerke:textures/item/source_keystone.png width:32 height:32 align:center}"
 		""
@@ -16502,9 +16502,9 @@
 		"{image:kronwerke:textures/quests/shots/ae2_advanced_mega_4m.png width:224 height:126 align:center}"
 		"&eRezept auf Kronwerke:&r Enderstaub in die Ecken, ein Akkumulationsprozessor oben, drei 1M-Komponenten, ein &6Draconiumbarren&r in die Mitte. Dazu 16 Elite-Steuerschaltkreise aus deiner CPU."
 		""
-		"In einer 4M-Zelle stecken Dutzende Prozessoren, mehrere Singularitäten und vier Draconiumbarren. &cStufe 5:&r 16M bis 256M und die Bulk-Zelle brauchen Erwachtes Draconium."
+		"In einer 4M-Zelle stecken Dutzende Prozessoren und 13 Draconiumbarren. &cStufe 5:&r 16M bis 256M und die Bulk-Zelle brauchen Erwachtes Draconium."
 		""
-		"&eKronwerke:&r &e\"Licht des Drachen\"&r will &e150 Elite-Steuerschaltkreise&r und &e1 000 Draconiumbarren&r. Schreib Schablonen für die Elite-Schaltkreise und lass die CPU arbeiten."
+		"&eKronwerke:&r &e\"Licht des Drachen\"&r will bei 30 aktiven Spielern &e150 Elite-Steuerschaltkreise&r und &e1 000 Draconiumbarren&r. Schreib Schablonen für die Elite-Schaltkreise und lass die CPU arbeiten."
 	]
 	quest.47E11756526EFA9D.quest_subtitle: "4M, das Größte vor dem Chaoswerk."
 	quest.47E11756526EFA9D.title: "&6&lFüll das Lager des Sternwerks"
@@ -16581,7 +16581,7 @@
 		""
 		"Ein Exportbus mit Fertigungskarte an einer Kiste hält den Vorrat, bis du ihn zum Obelisken trägst. Wer viel Silizium braucht, baut den &6Circuit Slicer&r von Extended AE weiter unten."
 		""
-		"&eKronwerke:&r &e\"Der Ofen schläft nie\"&r will &e250 Fortgeschrittene Steuerschaltkreise&r, &e4 000 Stahlbarren&r und &e8 Stahlkerne&r. Abgegeben wird von Hand am Obelisken, und es zählt für den, der abgibt."
+		"&eKronwerke:&r &e\"Der Ofen schläft nie\"&r will bei 30 aktiven Spielern &e250 Fortschrittliche Steuerschaltkreise&r und &e4 000 Stahlbarren&r, dazu immer &e8 Stahlkerne&r. Abgegeben wird von Hand am Obelisken, und es zählt für den, der abgibt."
 	]
 	quest.481D143950165232.quest_subtitle: "Der Ofen schläft nie, die Gravurmaschine auch nicht."
 	quest.481D143950165232.title: "&6&lBau die Schaltkreisfabrik"
@@ -16747,7 +16747,7 @@
 	quest.492A386EFBFFB11E.quest_subtitle: "Checkliste: die zwei Essenzen mit Wilden-Teilen."
 	quest.492A386EFBFFB11E.title: "&dMach Luft- und Beschwörungsessenz"
 	quest.492D71E452CD19B1.quest_desc: [
-		"Lass die Kammer am Glas laufen, bis du &e16 Quelljuwelen&r hast. Ein &6Amethystblock&r wird für &d2 000 Quelle&r direkt zum &6Quelljuwelblock&r."
+		"Lass die Kammer am Glas laufen, bis du &e16 Quelljuwelen&r hast. Ein &6Amethystblock&r wird für &d2 000 Quelle&r direkt zum &6Quelledelsteinblock&r."
 		""
 		"Juwelen stecken in Quellstein, Podesten, Apparat, allen Links und jedem Schmuckstück. Was übrig ist, gehört in den &eObelisken&r an der Spawn."
 	]
@@ -17401,7 +17401,7 @@
 		""
 		"So funktioniert &6Infusion&r: Ein Rezept verlangt bestimmte Werte für Eterna, Quanta und Arcana, manchmal mit Obergrenze. Stimmen sie, wird das Item im dritten Slot verwandelt. Die Karotte will Eterna genau 20 und Quanta zwischen 10 und 30, die 15 Prozent des leeren Tischs reichen."
 		""
-		"Alle Infusionsrezepte stehen in EMI unter dem Zaubertisch. Honigflaschen werden ab Eterna 20 zu Erfahrungsflaschen, bei Eterna 60 zu acht Stück."
+		"Alle Infusionsrezepte stehen in EMI unter dem Zaubertisch. Honigflaschen werden ab Eterna 20 mit je 25 Prozent Quanta und Arcana zu Erfahrungsflaschen, bei Eterna 60 zu acht Stück."
 	]
 	quest.4BFFFD5215CE391C.quest_subtitle: "Eine Karotte wird golden."
 	quest.4BFFFD5215CE391C.title: "&eDeine erste Infusion"
@@ -17443,13 +17443,13 @@
 	quest.4C251A5FBF288288.quest_subtitle: "Verarbeitungsschablone an der Gravurmaschine."
 	quest.4C251A5FBF288288.title: "&aLass eine Maschine für dich arbeiten"
 	quest.4C39C948ACC593B6.quest_desc: [
-		"Liefere &6256 Messingbarren&r und &632 Präzisionsgetriebe&r. Abgegeben wird von Hand am Obelisken, Schleichen und Rechtsklick gibt alles Passende ab."
+		"Liefere &6256 Messingbarren&r und &632 Präzisionsgetriebe&r. Abgegeben wird von Hand am Obelisken: Schleichen und zweimal Rechtsklick mit einem Item in der Hand gibt alles Passende aus den drei Inventarreihen ab."
 		""
 		"&eKronwerke:&r Der Technik-Pfeiler will 2 000 Barren, 150 Getriebe und 8 Herzen. Dafür brauchst du mehrere überhitzte Mixer, Kupfer und Zink aus Mahlwerk und Wäsche, eine Röhrenlinie und mindestens eine Präzisionslinie."
 		""
 		"Die Magier brauchen deine Messingrahmen, du ihre Quelljuwelen und Feuerrunen. Bei 98 Prozent hält der Obelisk an, die letzte Ladung geht gemeinsam auf den Streams hinein."
 	]
-	quest.4C39C948ACC593B6.quest_subtitle: "Das Ziel von Stufe 2: Die Messingmaschine."
+	quest.4C39C948ACC593B6.quest_subtitle: "Das Ziel von Stufe 2: Das Messingwerk."
 	quest.4C39C948ACC593B6.title: "&6&lFütter den Obelisken mit Messing"
 	quest.4C409EA09C0F18B8.quest_desc: [
 		"Links und rechts je &e3 Lebeholzstämme&r, oben und unten Mitte &6Leder&r, das &6Horn der Wildnis&r in die Mitte."
@@ -17554,7 +17554,7 @@
 		""
 		"Der Controller ist das Gerät für &edrahtloses Laden&r: Er zieht Strom aus dem Netz und füllt die Gegenstände, die Mitglieder am Körper tragen, überall auf der Welt. Pro Netzwerk ist nur &dein&r Controller erlaubt."
 		""
-		"Der Schaltkreis braucht Gedrucktes Silizium aus dem AE2-Inscriber, siehe Kapitel &5Mekanism: Fortgeschritten&r. Mit Blöcken, Kern und Staub stecken 21 Kerne im Controller, also 48 Staub, 21 Obsidian und sechs Quelljuwelen."
+		"Der Schaltkreis braucht Gedrucktes Silizium aus dem AE2-Inscriber, siehe Kapitel &5Mekanism: Fortgeschritten&r. In ganzen Handwerksgängen gerechnet stecken mit Blöcken, Kern und Staub 51 Staub, 24 Obsidian und sechs Quelljuwelen im Controller."
 	]
 	quest.4C9C97509CF300BC.quest_subtitle: "Lädt alles, was du am Körper trägst."
 	quest.4C9C97509CF300BC.title: "&5&lBau den Flux-Controller"
@@ -17744,7 +17744,7 @@
 		""
 		"Sie löscht alles, was hineinkommt, per Hand, Trichter oder Förderband. Ihr Filter hat &e9 Plätze&r als Whitelist oder Blacklist."
 		""
-		"&cAchtung:&r Bruchstein vorher abgeben, der Obelisk braucht ihn. Schleichen und Rechtsklick am Obelisken gibt alles ab, was das Ziel brauchen kann."
+		"&cAchtung:&r Bruchstein vorher abgeben, der Obelisk braucht ihn. Am Obelisken: Schleichen und zweimal Rechtsklick mit einem Item in der Hand gibt alles Passende aus den drei Inventarreihen ab."
 	]
 	quest.4D9AC8CB35883A98.quest_subtitle: "Was hineinfällt, ist weg."
 	quest.4D9AC8CB35883A98.title: "Bau einen Mülleimer"
@@ -17846,7 +17846,7 @@
 	quest.4DDB29BABEFA3AD6.quest_subtitle: "Das Meer hebt den Tisch auf 45."
 	quest.4DDB29BABEFA3AD6.title: "&3Bau fünf Seashelves"
 	quest.4DDB9EE8673EB902.quest_desc: [
-		"Bete und opfere weiter. Mit genug Gunst bekommst du das &dSoul Sign&r."
+		"Das &dSoul Sign&r bekommst du mit deinem ersten Tieropfer am Altar. Das Blood Sign folgt, wenn deine Gunst Stufe 3 erreicht."
 		""
 		"Damit kennst du &5Touch of Darkness&r (Wicked, Soul, Wicked, Soul). Die Gesänge mit Flame, Winter oder Death stehen im Codex, sobald du die Zeichen hast."
 	]
@@ -17993,11 +17993,11 @@
 	quest.4E5F1DAD153ED58B.quest_subtitle: "Ein Fund, ein ganzer Barren."
 	quest.4E5F1DAD153ED58B.title: "&5Mach Netherit aus Antikem Schrott"
 	quest.4E660E87434B97A1.quest_desc: [
-		"Pro Chimäre: &e3 Teile&r für die Tafel &5Beschwöre Wilden&r (dazu Ärgerlicher Stamm, Lapisblock) und je ein &eStachel&r, &eHorn&r, &eFlügel&r als Zusatz."
+		"Pro Chimäre: je ein &eStachel&r, &eHorn&r und &eFlügel&r als Zusatz im Ritual. Die Tafel &5Beschwöre Wilden&r hat auch ein Rezept ohne Wilden-Teile, EMI zeigt beide."
 		""
 		"&eHörner&r von Jägern, &eFlügel&r von Pirschern, beide nachts um Wilden-Baue im Wald. &eStacheln&r nur von Verteidigern in kalten Biomen. Ein Wegstein im Schnee spart Wege. Die Tafel Struktur finden mit einem Quelljuwel zeigt den nächsten Wilden-Bau."
 	]
-	quest.4E660E87434B97A1.quest_subtitle: "Jeder Kampf frisst sechs Wilden-Teile."
+	quest.4E660E87434B97A1.quest_subtitle: "Jeder Kampf frisst drei Wilden-Teile."
 	quest.4E660E87434B97A1.title: "&5Sammle Teile für sechs Kämpfe"
 	quest.4E6CFFE083CDDAAE.quest_desc: [
 		"Zinn, ein Chemikalienbehälter, ein Feuerzeug, Bronze und ein Fortgeschrittener Schaltkreis. Er verschießt brennenden &bWasserstoff&r."
@@ -18028,7 +18028,7 @@
 		"{image:kronwerke:textures/quests/shots/food_f_market.png width:224 height:126 align:center}"
 		"Bretter und eine &6Rote Wolle&r oben, &6Holzstämme&r als Gestell, siehe EMI."
 		""
-		"Der Markt verkauft Samen, Setzlinge, Blumen und Dünger gegen Smaragde, auch die wilden Pflanzen von Farmer's Delight."
+		"Der Markt verkauft Samen, Setzlinge, Knochenmehl und Baumdünger gegen Smaragde. Blumen, Felddünger und die wilden Pflanzen von Farmer's Delight sind auf Kronwerke nicht im Angebot."
 		""
 		"&eRezept auf Kronwerke:&r Er verkauft auch die Productive-Trees-Hybriden der Generationen 1 bis 3 für 1, 2 und 4 Smaragde, siehe Kapitel Kochen."
 	]
@@ -18222,7 +18222,7 @@
 	quest.4F5873DF949D30FD.quest_subtitle: "Werkzeug auftanken, Upgrades einsetzen."
 	quest.4F5873DF949D30FD.title: "&a&lBau eine Ladestation"
 	quest.4F5D0481442B5919.quest_desc: [
-		"&e32 Gaia-Geistbarren&r sind 128 Gaia-Geister, also viele Kämpfe gegen die Gaia-Wächterin. Genau so viele brauchen die Techniker für alle 16 Fusionen von Erwachtem Draconium."
+		"&e32 Gaia-Geistbarren&r sind 128 Gaia-Seelen, also viele Kämpfe gegen die Gaia-Wächterin. Genau so viele brauchen die Techniker für alle 16 Fusionen von Erwachtem Draconium."
 		""
 		"Wer sie hat, entscheidet gemeinsam, was zuerst geht: in den Fusionskern oder in den Obelisken. Beides zählt für dasselbe Ziel."
 	]
@@ -18344,7 +18344,7 @@
 	quest.4FDB5B94CAF85475.quest_subtitle: "Ernten mit jeder Klinge."
 	quest.4FDB5B94CAF85475.title: "&7Schmiede Seelenstahl-Werkzeug"
 	quest.50025CC2C67A07B2.quest_desc: [
-		"Katalysator: ein &6Draconium-Injektor&r. In acht Injektoren: &61 Wyvern-Kern&r, &62 Draconiumkerne&r, &64 Diamanten&r, &61 Draconiumblock&r. Kostet 32 000 Energie."
+		"Katalysator: ein &6Draconium-Injektor&r, der dabei verbraucht wird. In acht Injektoren: &61 Wyvern-Kern&r, &62 Draconiumkerne&r, &64 Diamanten&r, &61 Draconiumblock&r. Kostet 32 000 Energie."
 		""
 		"Wyvern-Werkzeuge und die Brustplatte brauchen &esechs&r Wyvern-Injektoren, der Kondensator acht. Fehlen welche, meldet der Kern &e\"Not enough wyvern tier injectors\"&r."
 		""
@@ -18504,7 +18504,7 @@
 	quest.506FEA0AE13804CF.title: "&9Mach die Rune des Wassers"
 	quest.508D12A34A8D1EF5.quest_desc: [
 		"&6Wicked Weave&r: &e8 weiße Wolle&r um einen &6Shadow Gem&r, extra ein &6Unholy Symbol&r und &6blauer Farbstoff&r. Das gibt &e8&r Stück."
-		"&6Warlock's Cloak&r: &e7 Wicked Weave&r in Brustplattenform, extra &e2 Soul Shards&r."
+		"&6Warlock's Cloak&r: &e8 Wicked Weave&r in Brustplattenform, extra &e2 Soul Shards&r."
 		""
 		"Der Umhang halbiert Magie- und Witherschaden. Der Hut gibt &d50 Prozent&r mehr Magie- und Witherschaden, die Stiefel machen dich immun gegen Langsamkeit."
 	]
@@ -18515,7 +18515,7 @@
 		""
 		"Ein Eisenbarren im Manabecken bleibt auf Kronwerke einfach liegen. Manastahl kommt ab Stufe 2 nur aus Infused Iron."
 		""
-		"&eTipp:&r Die Eisenbiene aus dem Kapitel &aBienen&r gibt Infused Iron als Wabe."
+		"&eTipp:&r Ab Stufe 2 gibt die Infused-Iron-Biene aus dem Kapitel &aBienen&r Infused Iron als Wabe. Die normale Eisenbiene gibt nur Roheisen."
 	]
 	quest.509FF7E6C4A446D3.quest_subtitle: "Infused Iron, der Rohstoff für Manastahl."
 	quest.509FF7E6C4A446D3.title: "&6Veredle Eisen am Natural Altar"
@@ -18549,12 +18549,12 @@
 	quest.50BB336485F2AB6B.quest_subtitle: "96 RPM und 4 096 SU aus einem Block."
 	quest.50BB336485F2AB6B.title: "&6&lBau einen Dieselmotor"
 	quest.5101AD18AC8C7D6D.quest_desc: [
-		"&6Mekanism&r, &6Einfaches Druckrohr&r: zieht &e750 mB Gas pro Tick&r, Fortgeschritten 2 000 (Stufe 3), Elite 64 000 und Ultimativ 256 000 (Stufe 4). &6Chemikalientank&r: &e64 000 mB&r, dann 256 000, 1 024 000 und 8 192 000 mB. Kein Filter, Seiten mit dem Konfigurator. &eStufe 2.&r"
+		"&6Mekanism&r, &6Einfaches Druckrohr&r: zieht &e750 mB Gas pro Tick&r, Fortgeschritten 2 000 (Stufe 3), Elite 64 000 und Ultimativ 256 000 (Stufe 4). &6Chemikalienbehälter&r: &e64 000 mB&r, dann 256 000, 1 024 000 und 8 192 000 mB. Kein Filter, Seiten mit dem Konfigurator. &eStufe 2.&r"
 		""
 		"Zwei Stahlbarren und ein Glas ergeben acht Rohre. Sauerstoff, Wasserstoff, Chlor und alles andere aus dem Kapitel Mekanism: Fortgeschritten."
 	]
 	quest.5101AD18AC8C7D6D.quest_subtitle: "Mekanism, Druckrohr: 750 mB pro Tick, Tank 64 000 mB."
-	quest.5101AD18AC8C7D6D.title: "Lies: Druckrohre und Chemikalientanks"
+	quest.5101AD18AC8C7D6D.title: "Lies: Druckrohre und Chemikalienbehälters"
 	quest.5101B4DD22875170.quest_desc: [
 		"&6Diamantwerkzeug&r in die Mitte, 2 Inferiumbarren links und rechts, 2 Inferium-Edelsteine oben und unten, an der Werkbank."
 		""
@@ -18655,7 +18655,7 @@
 		""
 		"In der Pyramide gibt es Fallen aus Sandstein: fallende Blöcke, Feuer und Giftpfeile. Geh langsam und nicht als Gruppe durch enge Gänge. Die Kisten unten enthalten &6Altmetall&r, manchmal einen &6Unzerbrechlichen Schädel&r oder ein &6Lebens-Ankh&r."
 		""
-		"Ab Stufe 2 craftest du das &6Wüstenauge&r (Enderauge in der Mitte, Gold, gemeißelter Sandstein, Smaragd, toter Busch, Kaktus, verrottetes Fleisch, Knochen). Es fliegt wie ein Enderauge zur nächsten Pyramide."
+		"Das &6Wüstenauge&r craftest du schon in Stufe 1: &6Quelljuwel&r in der Mitte, dazu Gold, 2 gemeißelter Sandstein, Smaragd, toter Busch, Kaktus, Enderperle und Knochen. Ab Stufe 2 geht auch das Originalrezept mit Enderauge. Es fliegt wie ein Enderauge zur nächsten Pyramide."
 	]
 	quest.516DEFBAEAFDECA8.quest_subtitle: "Eine große Pyramide in der Wüste, bewacht von Koboleton."
 	quest.516DEFBAEAFDECA8.title: "&6Finde die verfluchte Pyramide"
@@ -19295,7 +19295,7 @@
 		"{image:kronwerke:textures/quests/shots/ae2_controller.png width:224 height:126 align:center}"
 		"&eRezept auf Kronwerke:&r &6Himmelssteinblöcke&r in die vier Ecken, ein &6Spirit Attuned Gem&r von Occultism oben in die Mitte, &6Fluixkristalle&r links, rechts und unten in der Mitte, ein &6Konstruktionsprozessor&r ins Zentrum."
 		""
-		"Das Juwel machst du aus Lapis im Geisterfeuer, siehe Kapitel &5Occultism&r. Jede Seite des Controllers gibt &e32 Kanäle&r aus."
+		"Das Juwel machst du aus einem Diamanten im Geisterfeuer, siehe Kapitel &5Occultism&r. Jede Seite des Controllers gibt &e32 Kanäle&r aus."
 		""
 		"&eRegeln:&r ein Controller pro Netz, er darf aus mehreren Blöcken bestehen, alles in 7 x 7 x 7. Er braucht &d6 AE/t&r pro Block. Wird ein Block rot, stimmt die Form nicht."
 	]
@@ -19352,7 +19352,7 @@
 	quest.54DA45AD611870C9.quest_subtitle: "Bei 98 Prozent ist Schluss, bis alle da sind."
 	quest.54DA45AD611870C9.title: "&cWarte auf das Finale"
 	quest.54DFDC3FDB8A5994.quest_desc: [
-		"&eRezept auf Kronwerke:&r oben Messinggehäuse, Lapisblock, Messinggehäuse. Mitte Rune des Wassers, Manaquarzblock, Rune des Feuers. Unten Rune der Erde, Rune des Manas, Rune der Luft."
+		"&eRezept auf Kronwerke:&r oben Messingrahmen, Lapisblock, Messingrahmen. Mitte Rune des Wassers, Manaquarzblock, Rune des Feuers. Unten Rune der Erde, Rune des Manas, Rune der Luft."
 		""
 		"Die Runen werden hier &cverbraucht&r. Plan je eine Elementarrune und eine Rune des Manas nur für die Platte ein."
 	]
@@ -19473,7 +19473,7 @@
 	quest.555DD9CA6B18F83F.quest_desc: [
 		"&e3 Laubblöcke&r, &e1 Spinnenauge&r, Katalysatoren Feuer und Luft. &d8 000 Mana&r."
 		""
-		"Für Tigerauge, Cyazinthe, das Zirrus-Amulett, die Rune der Trägheit und die Terrastahlhose."
+		"Für Tigerauge, Cyazinthe, das Zirrus-Amulett, die Rune der Trägheit und die Terrastahlbeinschutz."
 	]
 	quest.555DD9CA6B18F83F.quest_subtitle: "Feuer und Luft ergeben fallendes Laub."
 	quest.555DD9CA6B18F83F.title: "&6Mach die Rune des Herbstes"
@@ -19489,7 +19489,7 @@
 		""
 		"Ein &6Leeres Pergament&r auf den Kristall gibt eine &6Schriftrolle des Sehers&r mit seinem Ort. Benenn sie am Amboss, dann findest du sie leichter wieder."
 		""
-		"Der &6Seher-Oculus&r (Apparat: Enderauge in die Mitte, Beobachter, Fernrohr, Quelljuwelblock, Diamant) öffnet jeden Kristall, dessen Schriftrolle auf einem Podest daneben liegt. Der Kristall muss dafür geladen sein."
+		"Der &6Seher-Oculus&r (Apparat: Enderauge in die Mitte, Beobachter, Fernrohr, Quelledelsteinblock, Diamant) öffnet jeden Kristall, dessen Schriftrolle auf einem Podest daneben liegt. Der Kristall muss dafür geladen sein."
 	]
 	quest.55644370C550EA15.quest_subtitle: "Eine Kamera für die Basis."
 	quest.55644370C550EA15.title: "&6Späh mit dem Hellseher-Kristall"
@@ -19555,7 +19555,7 @@
 	quest.55A8F6E3D3A4098A.quest_subtitle: "69 Haltbarkeit, Tempo 15."
 	quest.55A8F6E3D3A4098A.title: "&6Schmilz Lohengold"
 	quest.55AEB4AA6B7BC5D6.quest_desc: [
-		"&6Magmatic Bee&r und &6Leafcutter Bee&r (Erdnest). Blume: &6Kohleblock&r. Wabe gibt mit 60 Prozent &6Kohle&r. Mit der Magmatic Bee gepaart wird daraus die Schwefelbiene, mit einer CreeBee die Salpeterbiene."
+		"&6Magmatic Bee&r und &6Leafcutter Bee&r (Erdnest). Blume: &6Kohleblock&r. Wabe gibt mit 60 Prozent &6Kohle&r. Mit der Magmatic Bee gepaart wird daraus die Schwefelbiene."
 	]
 	quest.55AEB4AA6B7BC5D6.quest_subtitle: "Kohle aus Waben."
 	quest.55AEB4AA6B7BC5D6.title: "&8Züchte die Kohlebiene"
@@ -19713,7 +19713,7 @@
 	quest.5691C24AC6851B3A.quest_desc: [
 		"Oben Soularium, ein &6Mobkopf&r, Soularium. Mitte Soularium, &6Versiegeltes Gerüst&r, Soularium. Unten &6Energetisiertes Zahnrad&r, Eisengitter, Energetisiertes Zahnrad. In die Werkzeugslots eine &6Axt&r und eine &6Schere&r."
 		""
-		"&6Z-Logic Regler:&r Soularium, &6Zombiekopf&r, Soularium, unten Silikon, Redstone, Silikon. Zombieköpfe gibt es vom geladenen Creeper oder vom Schwert Der Ender."
+		"&6Z-Logic Regler&r (im Slice'N'Splice, nicht an der Werkbank, 20 000 µI): Soularium, &6Zombiekopf&r, Soularium, unten Silikon, Redstone, Silikon. Zombieköpfe gibt es vom geladenen Creeper oder vom Schwert Der Ender."
 	]
 	quest.5691C24AC6851B3A.quest_subtitle: "Köpfe, Silikon und Soularium."
 	quest.5691C24AC6851B3A.title: "&cBau Schlitz'und'Spleiß"
@@ -19745,7 +19745,7 @@
 	quest.56B6AFF9013FDCC8.quest_subtitle: "Eine Million FE."
 	quest.56B6AFF9013FDCC8.title: "&e&lBau einen MV-Kondensator"
 	quest.56B7D8A29D5AB2C9.quest_desc: [
-		"Allein hat er &e320 Lebenspunkte&r, jeder weitere Spieler bringt ein Viertel dazu: zu zweit 480, zu viert 640."
+		"Botania gibt ihm &e320 Lebenspunkte&r allein, 480 zu zweit, 640 zu viert. Auf Kronwerke kommt der Stufenbonus dazu: In Stufe 4 sind es allein etwa &e704&r."
 		""
 		"Er &eteleportiert&r sich durch die Arena, schießt &dlila Geschosse&r, legt &dlila Fallen&r auf den Boden und ruft &eWellen von Monstern&r. Wer die Arena verlässt, wird zurückgeholt."
 	]
@@ -19763,7 +19763,7 @@
 		"{image:kronwerke:textures/quests/shots/farms_wood_saw.png width:224 height:126 align:center}"
 		"Ein &6Mechanisches Lager&r, davor ein &6Drehgerüst&r mit Schleim, ringsum &6Mechanische Sägen&r nach außen. Dreht sich das Rad durch eine Baumreihe, fällt es ganze Stämme."
 		""
-		"Die Stämme fallen zu Boden, ein Band mit Schleuse darunter sammelt sie ein. Jede Säge kostet 4 SU pro RPM mehr."
+		"Die Stämme fallen zu Boden, ein Band mit Schleuse darunter sammelt sie ein. Auf der Kontraption kosten die Sägen nichts extra: Es zählen nur die 4 SU pro RPM des Lagers."
 	]
 	quest.56C632080F52C99B.quest_subtitle: "Lager, Gerüst und Sägen im Kreis."
 	quest.56C632080F52C99B.title: "&6Fäll Bäume mit einem Sägerad"
@@ -19814,7 +19814,7 @@
 	quest.56DF3EA395E2A223.quest_subtitle: "Wurfwasser gegen Untote."
 	quest.56DF3EA395E2A223.title: "&eFüll Glowing Water ab"
 	quest.56E10362DBD2A68B.quest_desc: [
-		"An der Werkbank: 4 &6Purpur-Eisen&r, 2 Lohenruten, 1 Magmacreme ergeben 1 Barren. In der &6Alloy Forge&r (&eRezept auf Kronwerke:&r Purpur-Stahl, Schwarzstein, Messinggehäuse): ein Block Purpur-Eisen, 2 Lohenruten, Magmacreme ergeben 3."
+		"An der Werkbank: 4 &6Purpur-Eisen&r, 2 Lohenruten, 1 Magmacreme ergeben 1 Barren. In der &6Alloy Forge&r (&eRezept auf Kronwerke:&r Purpur-Stahl, Schwarzstein, Messingrahmen): ein Block Purpur-Eisen, 2 Lohenruten, Magmacreme ergeben 3."
 		""
 		"2 400 Haltbarkeit, Tempo 15, +6 Schaden, Rüstung 22 mit Zähigkeit 10, Flammenwächter (Feuerschutz im ganzen Satz). &6Lohengold&r (Gold und 4 Lohenstaub) hält nur 69, gräbt aber mit Tempo 15 und taugt als Spitze."
 	]
@@ -19830,7 +19830,7 @@
 	quest.56ED1C8245FC7FA8.quest_subtitle: "Roheisen und Obsidian in einem Feuer."
 	quest.56ED1C8245FC7FA8.title: "&8Schmilz Obsidiansteel"
 	quest.56EF2EFA989FDA9F.quest_desc: [
-		"Ein Bahnhof vor dem Spawn, ein Güterzug, der dort hält, und eine Schleuse, die aus der Portablen Lagerschnittstelle in eine Kiste lädt. Von dort trägst du die Ladung die letzten Schritte zum Obelisken und gibst sie von Hand ab."
+		"Ein Bahnhof vor dem Spawn, mindestens 96 Blöcke vom Obelisken entfernt (näher lässt der Spawnschutz niemanden bauen), ein Güterzug, der dort hält, und eine Schleuse, die aus der Portablen Lagerschnittstelle in eine Kiste lädt. Von dort trägst du die Ladung die letzten Schritte zum Obelisken und gibst sie von Hand ab."
 		""
 		"&eKronwerke:&r Messingbarren und Präzisionsgetriebe in dieser Stufe, Stahl in der nächsten: die Ziele wollen große Mengen, und ein Zug bringt sie ohne Laufen."
 		""
@@ -19839,7 +19839,7 @@
 	quest.56EF2EFA989FDA9F.quest_subtitle: "Alle Wege führen zum Spawn."
 	quest.56EF2EFA989FDA9F.title: "&6&lFahr eine Linie zum Obelisken"
 	quest.56F4EE9836D3B386.quest_desc: [
-		"&eRezept:&r oben drei Eichenbretter, in der Mitte &6Honigwabe&r, &6Bienenstock&r (oder Bienennest), Honigwabe, unten &6Lagerfeuer&r, Eichenbrett, &6Schere&r. Honigwaben und Honigflaschen holst du vorher mit einer Schere und Flaschen an einem wilden Bienennest."
+		"&eRezept:&r oben drei Eichenbretter, in der Mitte &6Honigwabe&r, &6Bienenstock&r (ein Bienennest geht nicht), Honigwabe, unten &6Lagerfeuer&r, Eichenbrett, &6Schere&r. Honigwaben und Honigflaschen holst du vorher mit einer Schere und Flaschen an einem wilden Bienennest."
 		""
 		"{image:productivebees:textures/block/advanced_beehive/oak_beehive_front.png width:32 height:32 align:center}"
 		""
@@ -19934,7 +19934,7 @@
 		"{image:kronwerke:textures/quests/shots/eidolon_altar.png width:224 height:126 align:center}"
 		"&6Wooden Altar&r: Holzstufen über Brettern, gibt drei. &6Straw Effigy&r: fünf Weizen im Kreuz. Bildnis oben drauf."
 		""
-		"Kerzen, Schädel von Untoten und seltene Kräuter im Topf auf dem Altar erhöhen &ePower&r und &eCapacity&r. Pro Sorte zählt nur das beste Stück."
+		"Kerzen von Eidolon (normale Kerzen zählen nicht), Schädel von Untoten und seltene Kräuter im Topf auf dem Altar erhöhen &ePower&r und &eCapacity&r. Pro Sorte zählt nur das beste Stück."
 	]
 	quest.5746D276745D966B.quest_subtitle: "Ein Ort, an dem man dich hört."
 	quest.5746D276745D966B.title: "&6Bau einen Altar mit Bildnis"
@@ -19986,7 +19986,7 @@
 		""
 		"&eBeute:&r Sie lässt den &6Silver Dungeon Key&r und ein Goldschwert fallen. Der Key öffnet die Schatzkammer: &6Lightning Sword&r, &6Holy Sword&r, &6Invisibility Cloak&r, &6Regeneration Stone&r, Enchanted und Poison Dart Shooter, Moa-Eier, Enchanted Berries."
 		""
-		"&eStufe 3:&r Das Beste aus der Kammer ist gesperrt, bis das Stahlwerk öffnet: die &6Valkyrie Armor&r (zeitweise fliegen, wenn alle Teile samt Valkyrie Gloves getragen werden), &6Valkyrie Pickaxe, Axe, Shovel und Hoe&r, das &6Valkyrie Cape&r und &6Gravitite&r-Rüstung und -Werkzeug. Heb alles auf, tragen kannst du es jetzt schon."
+		"&eStufe 3:&r Das Beste aus der Kammer ist gesperrt, bis das Stahlwerk öffnet: die &6Valkyrie Armor&r (zeitweise fliegen, wenn alle Teile samt Valkyrie Gloves getragen werden), &6Valkyrie Pickaxe, Axe, Shovel und Hoe&r, das &6Valkyrie Cape&r und &6Gravitite&r-Rüstung und -Werkzeug. Heb alles auf, mitnehmen kannst du es jetzt schon."
 	]
 	quest.5782EFB8EC701E98.quest_subtitle: "Der große Kampf dieser Stufe im Aether."
 	quest.5782EFB8EC701E98.title: "&f&lBesiege die Valkyrie Queen"
@@ -20194,7 +20194,7 @@
 	quest.5867F04FD180EAE5.quest_subtitle: "Mobs aus Flüssigkeit."
 	quest.5867F04FD180EAE5.title: "&6Bau den Mechanical Spawner"
 	quest.586C995B8D2FB38F.quest_desc: [
-		"&6Räucherstäbchen&r: Lebeholzzweig diagonal, in der Mitte &6Lohenstaub&r, oben rechts eine &6Ghast-Träne&r. &6Räucherplatte&r: zwei Lebeholzstufen und ein Lebeholzstamm in einer Reihe."
+		"&6Räucherstäbchen&r: eine Diagonale aus einem Lebeholzzweig unten links, &6Lohenstaub&r in der Mitte und einer &6Ghast-Träne&r oben rechts. &6Räucherplatte&r: zwei Lebeholzstufen und ein Lebeholzstamm in einer Reihe."
 		""
 		"In der Brauerei nimmt das Stäbchen ein Gebräu auf wie eine Phiole, kostet aber etwa zehnmal so viel Mana. Leg es auf die Platte und zünd es mit dem Feuerzeug an."
 		""
@@ -20210,7 +20210,7 @@
 	quest.5871EDE821760ECC.quest_subtitle: "Checkliste Stufe 3: Ars Elemental, Form und Anima."
 	quest.5871EDE821760ECC.title: "&dLern Zielsuche und Lebensband"
 	quest.5871F2C7F6FC9743.quest_desc: [
-		"&6Bogen des Zauberers&r: Bogen mit Quelljuwelblock, Goldblock, Manipulationsessenz. Die Armbrust des Zauberers genauso."
+		"&6Bogen des Zauberers&r: Bogen mit Quelledelsteinblock, Goldblock, Manipulationsessenz. Die Armbrust des Zauberers genauso."
 		""
 		"Reicht dein Mana, wird jeder Pfeil zum Zauberpfeil mit dem eingeschriebenen Zauber. In der Kammer machst du &6Verstärkungspfeile&r (Verstärken, Durchschlag, Teilen) für mehr Wirkung."
 	]
@@ -20350,7 +20350,7 @@
 	quest.58FD8C4C0463E126.quest_desc: [
 		"Ein Netz mit &6Stecker&r am Kraftwerk, einem &6Controller&r, einem &6Speicher&r und mindestens sechzehn &6Punkten&r: Das ist der Stand, mit dem der Rest von Kronwerke läuft. Alles, was ab Stufe 4 kommt, der Fusionsreaktor, Draconic, die großen AE2-Netze, hängt einfach an einem weiteren Punkt."
 		""
-		"&eKronwerke:&r Die Technikseite des Ziels von Stufe 3 will 4.000 Stahl und 250 Fortschrittliche Steuerschaltkreise. Jede Stahlstraße, die du jetzt ohne Kabelsalat irgendwo hinstellst, zahlt darauf ein."
+		"&eKronwerke:&r Die Technikseite des Ziels von Stufe 3 will bei 30 aktiven Spielern 4.000 Stahl und 250 Fortschrittliche Steuerschaltkreise. Jede Stahlstraße, die du jetzt ohne Kabelsalat irgendwo hinstellst, zahlt darauf ein."
 	]
 	quest.58FD8C4C0463E126.quest_subtitle: "Das Netz, das die Basis trägt."
 	quest.58FD8C4C0463E126.title: "&6&lMach Kabel überflüssig"
@@ -20459,7 +20459,7 @@
 	quest.5976A15C80404CE2.quest_subtitle: "Das Holz des Aethers."
 	quest.5976A15C80404CE2.title: "&2Fäll einen Skyroot-Baum"
 	quest.5978B86F57E43FCE.quest_desc: [
-		"&6Zahnrad&r, &6Andesitgehäuse&r und &6Stein&r ergeben den &6Mahlstein&r. Treib ihn von der Seite oder von oben an und wirf Items oben hinein."
+		"&6Zahnrad&r, &6Andesitgehäuse&r und &6Stein&r ergeben den &6Mahlstein&r. Treib ihn mit einer Welle von unten oder mit einem Zahnrad an der Seite an und wirf Items oben hinein."
 		""
 		"&6Weizen&r wird zu &6Weizenmehl&r, &6Bruchstein&r zu &6Kies&r, Kies zu &6Feuerstein&r, Andesit zu Bruchstein, Blumen zu doppelt so viel Farbstoff. Alles Weitere zeigt EMI."
 		""
@@ -21102,7 +21102,7 @@
 	quest.5C3B984CE25BA9B7.quest_desc: [
 		"Wyvern-Stufe. Katalysator: ein &6Wyvern-Injektor&r. In sieben Injektoren: &64 Diamanten&r, &62 Wyvern-Kerne&r, &61 Erwachter Draconiumblock&r. Kostet 256 000 Energie."
 		""
-		"Drakonische Werkzeuge haben acht Zutaten, du brauchst also acht. Ein drakonischer Injektor lädt in 7 Sekunden statt 11."
+		"Die meisten drakonischen Rezepte haben acht Zutaten, manche mehr: Stab und Reaktor-Injektor zehn, der chaotische Kern zwölf. Mit zwölf Injektoren reicht es für alles. Ein drakonischer Injektor lädt in 7 Sekunden statt 11."
 	]
 	quest.5C3B984CE25BA9B7.quest_subtitle: "Die nächste Stufe der Fusion."
 	quest.5C3B984CE25BA9B7.title: "&dFusionier Drakonische Injektoren"
@@ -21123,7 +21123,7 @@
 	quest.5C65CFED73840F41.quest_subtitle: "Rauf und runter, 384 Blöcke tief."
 	quest.5C65CFED73840F41.title: "&6Lass einen Flaschenzug hinab"
 	quest.5C7605B8D9AE7222.quest_desc: [
-		"&6Sculk&r baust du mit einer &6Hacke&r ab, er gibt Erfahrung. &6Sensoren&r, &6Kreischer&r und &6Katalysatoren&r bekommst du nur mit &eBehutsamkeit&r heil heraus."
+		"&6Sculk&r baust du mit einer &6Hacke&r ab, er gibt Erfahrung. Als Block bekommst du ihn, wie &6Sensoren&r, &6Kreischer&r und &6Katalysatoren&r, nur mit &eBehutsamkeit&r heraus."
 		""
 		"&eKatalysatoren&r lassen Sculk wachsen: Stirbt ein Monster in ihrer Nähe, breitet er sich aus und setzt neue Sensoren und Kreischer. Kreischer, die so entstehen, können einen Wärter rufen."
 		""
@@ -21224,7 +21224,7 @@
 	quest.5CD0A072FD54E586.quest_subtitle: "Ein Schmelzofen aus Schamott, befeuert mit Lava."
 	quest.5CD0A072FD54E586.title: "&6&lBau die Gießerei"
 	quest.5CDDC03DD1834D02.quest_desc: [
-		"&6Erzadern-Atlas:&r eine Truhe und ein Amethyst oben, eine Karte und ein Buch und Feder unten. &6Probebohrer:&r im Mechanischen Handwerk aus Messingblechen, einer Elektronenröhre, einem Präzisionsgetriebe, einem Messinggehäuse, Robusten Blechen und einem Mechanischen Bohrer."
+		"&6Erzadern-Atlas:&r eine Truhe und ein Amethyst oben, eine Karte und ein Buch und Feder unten. &6Probebohrer:&r im Mechanischen Handwerk aus Messingblechen, einer Elektronenröhre, einem Präzisionsgetriebe, einem Messingrahmen, Robusten Blechen und einem Mechanischen Bohrer."
 		""
 		"Stell den Probebohrer über eine Ader, setz einen &6Kupfer-Rückentank&r mit Luft obendrauf und klick ihn an. Ist er fertig, klickst du ihn mit dem Atlas an. Ein Klick mit dem Atlas auf eine laufende Bohrmaschine geht auch."
 		""
@@ -21244,7 +21244,7 @@
 	quest.5CE05A7727557306.quest_subtitle: "Der Strom für das ganze Netz."
 	quest.5CE05A7727557306.title: "&3&lBau den Kontrollblock"
 	quest.5CE2422F8345AA82.quest_desc: [
-		"Werkbank: &62 Traumholzstämme&r übereinander ergeben &61 Traumholzzweig&r."
+		"Werkbank: &62 Traumholzstämme&r diagonal ergeben &61 Traumholzzweig&r."
 		""
 		"Zweige stecken in den Elementiumwerkzeugen und im &6Stab des Elfenwaldes&r (3 Zweige, 2 Blütenblätter), der Elfenvariante des Stabs des Waldes."
 	]
@@ -21361,7 +21361,7 @@
 		""
 		"{image:aether:textures/item/food/blue_berry.png width:32 height:32 align:center}"
 		""
-		"Eine Beere füllt nur &eeine Keule&r, sättigt aber schnell. Auf &6Enchanted Aether Grass&r (Rechtsklick mit einem Ambrosium Shard auf Aether-Gras) fallen doppelt so viele Beeren."
+		"Eine Beere füllt nur &eeine Keule&r, sättigt aber schnell. Auf &6Enchanted Aether Grass&r (Rechtsklick mit einem Ambrosium Shard auf Aether-Gras) fällt mit 50 Prozent Chance eine Beere mehr."
 	]
 	quest.5DBCF8A7C80F0249.quest_subtitle: "Das Brot des Aethers, nur dünner."
 	quest.5DBCF8A7C80F0249.title: "&9Pflück Blue Berries"
@@ -21478,7 +21478,7 @@
 	quest.5E51D73471E48A4A.quest_subtitle: "Gegen die Dosis, die du schon hast."
 	quest.5E51D73471E48A4A.title: "&eLeg Medizin bereit"
 	quest.5E5FC305B736FA54.quest_desc: [
-		"&6Wildzwiebeln&r, &6Wildkarotten&r und &6Wildkartoffeln&r wachsen in gemäßigten Biomen. Zwiebeln setzt du direkt wieder ein."
+		"&6Wildzwiebeln&r und &6Wildkarotten&r wachsen in gemäßigten Biomen, &6Wildkartoffeln&r in kalten. Zwiebeln setzt du direkt wieder ein."
 		""
 		"Zwiebeln stecken in gebratenem Reis, Burgern, Eintöpfen und fast jeder großen Mahlzeit."
 	]
@@ -22135,7 +22135,7 @@
 	quest.6122D0CE9C0E01BC.quest_subtitle: "Dünger, der nie ausgeht."
 	quest.6122D0CE9C0E01BC.title: "&6Pflanz eine Agrarnelke"
 	quest.6130845001A9AB9D.quest_desc: [
-		"&6Industriehanfsamen&r fallen beim Abbauen von hohem Gras. Pflanz sie auf Ackerboden, der obere Block gibt beim Ernten &6Industriehanffasern&r."
+		"&6Industriehanfsamen&r fallen beim Abbauen von hohem und kurzem Gras, etwa jedes zehnte Mal und nicht mit der Schere. Pflanz sie auf Ackerboden, der obere Block gibt beim Ernten &6Industriehanffasern&r."
 		""
 		"Acht Fasern um einen Stock ergeben &6Robustes Gewebe&r. Daraus werden Windmühlensegel, Sprungkissen und Ballons. Die Samen sind in Stufe 3 der beste Rohstoff für Pflanzenöl."
 	]
@@ -22146,7 +22146,7 @@
 		""
 		"&eKronwerke:&r Der Technik-Pfeiler will &61 500 Legierungen&r (für 30 Spieler) und &e12 Steinwerk-Getriebe&r: vier Andesitgehäuse, Großes Zahnrad, Presse, Mahlstein, Wasserrad und ein Infused Iron. Jedes zählt so viel wie 125 Legierungen."
 		""
-		"&eSo zahlst du ein:&r Schleichen und Rechtsklick am Obelisken gibt alles Passende ab. Eine Maschine, die für dich abgibt, gibt es nicht. &e/kw goals&r zeigt den Stand."
+		"&eSo zahlst du ein:&r Am Obelisken: Schleichen und zweimal Rechtsklick mit einem Item in der Hand gibt alles Passende aus den drei Inventarreihen ab. Eine Maschine, die für dich abgibt, gibt es nicht. &e/kw goals&r zeigt den Stand."
 	]
 	quest.614A73700EB8ED76.quest_subtitle: "Das Steinwerk läuft von allein."
 	quest.614A73700EB8ED76.title: "&6&lBau die Andesit-Fabrik"
@@ -22248,7 +22248,7 @@
 	quest.61A0E26321BD2D76.quest_desc: [
 		"&6Skyroot Planks&r und &6Skyroot Sticks&r ergeben Werkzeug wie aus Holz: 3 Bretter und 2 Stöcke für die &6Skyroot Pickaxe&r, 3 Bretter und 2 Stöcke für die Axt."
 		""
-		"Skyroot-Werkzeug hat einen Trick: Alles aus dem Aether (Holystone, Ambrosium-Erz, Aerclouds, Beerenbüsche, Skyroot-Stämme) fällt &edoppelt&r. Mit Glück auf einer Skyroot Pickaxe wird Ambrosium zur Massenware."
+		"Skyroot-Werkzeug hat einen Trick: Vieles aus dem Aether (Holystone, Ambrosium-Erz, Aerclouds, Beerenbüsche, Skyroot-Stämme) fällt &edoppelt&r, Zanite-Erz, Icestone und Gravitite aber nicht. Mit Glück auf einer Skyroot Pickaxe wird Ambrosium zur Massenware."
 		""
 		"Zwei Bretter oben und eines darunter ergeben den &6Skyroot Bucket&r, einen Holzeimer für Wasser, Milch und das Gift der Aechor-Pflanzen."
 	]
@@ -22264,7 +22264,7 @@
 	quest.61A1F3538FB158C0.quest_subtitle: "Einsatzgerät und Präzisionssägewerk."
 	quest.61A1F3538FB158C0.title: "&6Stufe 2: Nachpflanzen ohne dich"
 	quest.61B89DC3CE373DEA.quest_desc: [
-		"&6Welle&r, &6Andesitgehäuse&r und ein &6Eisenblock&r untereinander ergeben die &6Mechanische Presse&r. Rotation bekommt sie von oben oder von der Seite."
+		"&6Welle&r, &6Andesitgehäuse&r und ein &6Eisenblock&r untereinander ergeben die &6Mechanische Presse&r. Rotation bekommt sie nur von der Seite, entlang ihrer Welle, nicht von oben."
 		""
 		"Sie kostet &d8 SU pro RPM&r. Plan für eine Presse bei 32 RPM ein ganzes Wasserrad ein, besser zwei."
 	]
@@ -22306,7 +22306,7 @@
 	quest.61D6442CC6B1747B.quest_subtitle: "Der Elektrolyt für jeden Kondensator."
 	quest.61D6442CC6B1747B.title: "&cMisch Redstonesäure"
 	quest.61E13FD902B5954C.quest_desc: [
-		"&eRezept:&r vier &6Terrakotta&r um einen &6Blumentopf&r (oben links und rechts, in der Mitte links und rechts, eine unten). Das ist der &6Pflanztopf&r (Botany Pot)."
+		"&eRezept:&r fünf &6Terrakotta&r um einen &6Blumentopf&r (oben links und rechts, in der Mitte links und rechts, eine unten). Das ist der &6Pflanztopf&r (Botany Pot)."
 		""
 		"Rechtsklick mit &6Erde&r setzt den Boden, Rechtsklick mit &6Samen&r die Pflanze. Sie wächst ohne Wasser, Licht oder Platz, und mit Rechtsklick erntest du, die Pflanze bleibt stehen. Weizen, Karotten, Kartoffeln, Zuckerrohr, Kaktus, Pilze, Blumen, Seegras, Netherwarze, alles geht."
 		""
@@ -22652,7 +22652,7 @@
 	quest.6339F26E1BC04DA9.quest_subtitle: "Monster einsaugen, Essenz sammeln."
 	quest.6339F26E1BC04DA9.title: "&2Bau eine Vacuum Trap"
 	quest.634227EE9AA2F8EC.quest_desc: [
-		"&6Einschienengleis&r entsteht durch sequenzielle Montage: ein &6Metallträger&r aufs Band, ein Einsatzgerät setzt eine &6Metallstrebe&r, eines ein &6Eisenblech&r, eine Presse drückt, sechs Gleise pro Träger. Darauf fährt ein eigenes Monorail-Drehgestell, das du wie gewohnt mit dem Zugrahmen aufs Gleis klickst. Die Schiene kann auch über dem Zug hängen."
+		"&6Einschienengleis&r entsteht durch sequenzielle Montage: ein &6Metallträger&r aufs Band, ein Einsatzgerät setzt eine &6Metallhalterung&r, eines ein &6Eisenblech&r, eine Presse drückt, sechs Gleise pro Träger. Darauf fährt ein eigenes Monorail-Drehgestell, das du wie gewohnt mit dem Zugrahmen aufs Gleis klickst. Die Schiene kann auch über dem Zug hängen."
 		""
 		"&6Phantomgleise&r (Phantomhaut, Eisen, 32 Stück pro Haut) sind unsichtbar, solange du keins in der Hand hast, und passen zu jeder Spurweite. &6Endergleise&r aus Endsteinziegelstufen kommen mit dem End in Stufe 4. &6Gleise ohne Schwellen&r gibt es für Brücken aus Metallträgern."
 		""
@@ -22801,7 +22801,7 @@
 	quest.63BE3A31ADD1CC1F.quest_subtitle: "Wasser und Feuer ergeben Wachstum."
 	quest.63BE3A31ADD1CC1F.title: "&aMach die Rune des Frühlings"
 	quest.63BFED27B04021F4.quest_desc: [
-		"&e2 Lebeholzstämme&r übereinander ergeben einen &6Lebeholzzweig&r."
+		"&e2 Lebeholzstämme&r diagonal ergeben einen &6Lebeholzzweig&r."
 		""
 		"Zweige stecken im Stab des Waldes (3), im Lebeholzbogen (3), in jedem Manastahl-Werkzeug und zwei davon in jedem Ritual für Manastahl."
 	]
@@ -22871,7 +22871,7 @@
 	quest.641773C1B4BF6436.quest_desc: [
 		"Eine Crafting-CPU als Multiblock, auf diesem Server höchstens &e7 mal 7 mal 7&r. Außen &6Quantencomputer-Strukturglas&r, innen &6Kern&r, Einheiten, Speicher, Beschleuniger."
 		""
-		"Jeder Beschleuniger bringt 8 Threads. Ein Multi-Threader vervierfacht sie, ein Datenverschränker den Speicher, je einer pro Computer. Die Teile brauchen Singularitäten aus der Reaktionskammer von Advanced AE."
+		"Jeder Beschleuniger bringt 8 Threads. Ein Multi-Threader vervierfacht sie, ein Datenverschränker den Speicher, je einer pro Computer. Die Teile brauchen Singularitäten aus dem Materiekondensator von AE2. Die Reaktionskammer von Advanced AE macht daraus nur zersplitterte Singularitäten."
 	]
 	quest.641773C1B4BF6436.quest_subtitle: "Advanced AE für riesige Bestellungen."
 	quest.641773C1B4BF6436.title: "&dBau den Quantencomputer"
@@ -23278,7 +23278,7 @@
 	quest.65FDD089F1FF5A18.quest_subtitle: "Afrit-Besessenheit ohne rote Kreide."
 	quest.65FDD089F1FF5A18.title: "&5Zeichne Odus' Open Convocation"
 	quest.661593931F9FC5C9.quest_desc: [
-		"Der &6Obelisk&r steht am Spawn. Halte einen Stapel in der Hand und mach einen &eRechtsklick&r darauf. &eSchleichen&r und Rechtsklick gibt alles aus deinem Inventar ab, was das Ziel gerade braucht."
+		"Der &6Obelisk&r steht am Spawn. Halte einen Stapel in der Hand und mach einen &eRechtsklick&r darauf. &eSchleichen&r und zweimal Rechtsklick mit einem Item in der Hand gibt alles aus den drei Reihen deines Inventars ab, was das Ziel gerade braucht. Hotbar, Nebenhand, Rüstung und Rucksäcke bleiben."
 		""
 		"In Stufe 1 will das Ziel &6Bruchstein&r, &6Andesitlegierung&r und &6Quelljuwelen&r. Bruchstein hat jeder, also wirf ihn nicht weg. Wie weit es ist, siehst du an der &eBossleiste&r oben und mit &e/kw goals&r."
 		""
@@ -23304,7 +23304,7 @@
 		"{image:kronwerke:textures/quests/shots/deeper_darker_stalker.png width:224 height:126 align:center}"
 		"Der &4Beobachter&r (Stalker) ist drei Blöcke hoch, hat &e200 Lebenspunkte&r, Rüstung und schlägt mit &c22 Schaden&r zu. Wenn er dich trifft, lässt er &6Sculk-Egel&r auf dich los. Er kommt aus unechten Vasen im Tempel."
 		""
-		"&eBeute:&r Ein &6Seelenkristall&r, mit Plünderung bis zu drei. Den Kristall brauchst du für den Trank der Sculk-Affinität und für die Seelenelytren aus Stufe 4."
+		"&eBeute:&r Ein &6Seelenkristall&r, mit Plünderung III bis zu vier. Den Kristall brauchst du für den Trank der Sculk-Affinität und für die Seelenelytren aus Stufe 4."
 		""
 		"&eTipps:&r Volle Diamantrüstung, Goldäpfel, und zerschlag die Vasen eine nach der anderen. Zu zweit ist er machbar, zu dritt bequem."
 	]
@@ -23324,7 +23324,7 @@
 		""
 		"Im Tempel steht der &6Altar des Amethysts&r. Lege &6Amethystkrabbenfleisch&r darauf, nach sechs Sekunden ist es gesegnet und macht dich immun gegen Dunkelheit und die Angst der Tiefe. Die &cAmethystkrabbe&r (200 Lebenspunkte) lebt im Amethystnest in den üppigen Höhlen um Y 0 und lässt 4 bis 10 Fleisch fallen."
 		""
-		"Ab Stufe 2 zeigt das &6Abgrundauge&r (Enderauge, 4 Obsidian, 4 weinender Obsidian) den Weg."
+		"Das &6Abgrundauge&r (Quelljuwel, Enderperle, 3 Obsidian, 4 weinender Obsidian) zeigt schon in Stufe 1 den Weg."
 	]
 	quest.665A8E14EE9DBEC2.quest_subtitle: "Ab hier wird Ausrüstung aus Stufe 2 empfohlen."
 	quest.665A8E14EE9DBEC2.title: "&3Finde die versunkene Stadt"
@@ -23456,7 +23456,7 @@
 	quest.6703E9B19D9BFE2E.quest_desc: [
 		"Neun &6Koks&r ergeben einen &6Koksblock&r, und er wird wieder zu neun."
 		""
-		"Der Koksofen macht aus zwei Kohleblöcken direkt einen Koksblock, mit zehnmal so viel Kreosot wie eine Ladung loser Kohle."
+		"Der Koksofen macht aus einem Kohleblock direkt einen Koksblock, mit 5 000 mB Kreosot statt 4 500 mB aus neun losen Kohlen."
 	]
 	quest.6703E9B19D9BFE2E.quest_subtitle: "Neun Koks, ein Block."
 	quest.6703E9B19D9BFE2E.title: "&8Pack Koks in Blöcke"
@@ -23464,9 +23464,9 @@
 		"{image:kronwerke:textures/quests/shots/immersive_coke_oven.png width:224 height:126 align:center}"
 		"Stell die &627 Koksziegel&r als &e3x3x3-Würfel&r auf und schlag mit dem Hammer auf die Mitte einer Seite."
 		""
-		"&eRein:&r bis zu &e16 Kohle&r oder &e8 Stämme&r pro Ladung. &eRaus:&r Koks oder Holzkohle, dazu &bKreosotöl&r im Tank: 500 mB pro Ladung Kohle (5 Minuten), 250 mB pro Ladung Stämme."
+		"&eRein:&r bis zu &e16 Kohle&r oder &e8 Stämme&r pro Ladung. &eRaus:&r Koks oder Holzkohle, dazu &bKreosotöl&r im Tank: 500 mB pro Kohle (je 5 Minuten), 250 mB pro Stamm."
 		""
-		"&eTipp:&r Zwei &6Kohleblöcke&r geben einen Koksblock und gleich &e5 000 mB&r Kreosot. Für Kreosot sind Kohleblöcke also viel besser als lose Kohle."
+		"&eTipp:&r Ein &6Kohleblock&r gibt einen Koksblock und &e5 000 mB&r Kreosot, etwas mehr als neun lose Kohle mit zusammen 4 500 mB. Zwei Blöcke passen auf einmal hinein."
 	]
 	quest.670C72A66EDB786D.quest_subtitle: "3x3x3, 27 Koksziegel, Kohle rein, Koks und Kreosot raus."
 	quest.670C72A66EDB786D.title: "&8&lForm einen Koksofen"
@@ -23499,7 +23499,7 @@
 		"{image:kronwerke:textures/quests/shots/create_brass_blaze_cake.png width:224 height:126 align:center}"
 		"Presse über Becken: &6Aschenmehl&r, &6Zucker&r und ein &6Ei&r ergeben die &6Lohenkuchenbasis&r. Ein &6Ausguss&r füllt &b250 mB Lava&r hinein: fertig ist der &6Lohenkuchen&r."
 		"{image:create:textures/item/blaze_cake.png width:32 height:32 align:center}"
-		"Gib ihn dem Brenner, und er ist eine Weile &cüberhitzt&r. Ein Arm oder eine Schleuse legt nach."
+		"Gib ihn dem Brenner, und er ist eine Weile &cüberhitzt&r. Ein Arm oder ein Einsatzgerät legt nach."
 	]
 	quest.67350EBAE878C500.quest_subtitle: "Überhitzt heißt doppeltes Messing."
 	quest.67350EBAE878C500.title: "&6Back einen Lohenkuchen"
@@ -23535,7 +23535,7 @@
 		""
 		"Der Kollektor saugt aus allen Gläsern in &e5 Blöcken&r, der Einzahler füllt alle Gläser in &e5 Blöcken&r. Kollektor an der Link-Farm, Einzahler in der Werkstatt, fertig."
 		""
-		"Das &6Warper-Relais&r für endlose Strecken braucht Chorusfrüchte und kommt mit Stufe 4."
+		"Das &6Warper-Relais&r für endlose Strecken ist ab Stufe 2 frei, braucht aber geplatzte Chorusfrüchte aus dem End und kommt damit praktisch erst mit Stufe 4."
 	]
 	quest.674EE2E2316CDDAD.quest_subtitle: "Nie wieder jedes Glas einzeln verbinden."
 	quest.674EE2E2316CDDAD.title: "&aBau Kollektor und Einzahler"
@@ -23781,7 +23781,7 @@
 	quest.68722186C6F083CB.quest_subtitle: "Rosinenschnecken aus dem Ausguss."
 	quest.68722186C6F083CB.title: "&6Füll Brot mit Milch"
 	quest.68751490DDDE0237.quest_desc: [
-		"Rechtsklick mit einem &6Chemikalientank&r von Mekanism auf einen platzierten &6ME P2P-Tunnel&r, und er wird zu diesem Typ. Abbauen gibt dir den Tunnel als eigenen Gegenstand."
+		"Rechtsklick mit einem &6Chemikalienbehälter&r von Mekanism auf einen platzierten &6ME P2P-Tunnel&r, und er wird zu diesem Typ. Abbauen gibt dir den Tunnel als eigenen Gegenstand."
 	]
 	quest.68751490DDDE0237.quest_subtitle: "Mekanism-Gase ohne Druckrohr (Applied Mekanistics)."
 	quest.68751490DDDE0237.title: "Bau einen Chemie-Tunnel"
@@ -23872,7 +23872,7 @@
 		""
 		"{image:buildinggadgets2:textures/item/gadget_building.png width:32 height:32 align:center}"
 		""
-		"Alle Gadgets laufen mit Strom, den es ebenfalls erst ab Stufe 2 gibt. Der &6Kopiergadget&r (mit Smaragden) und der &6Vorlagenverwalter&r für gespeicherte Bauten kommen in &6Stufe 3&r. Bis dahin: Hand, Rahmensäge und Meißel."
+		"Alle Gadgets laufen mit Strom, den es ebenfalls erst ab Stufe 2 gibt. Der &6Vorlagenverwalter&r für gespeicherte Bauten kommt schon in Stufe 2, das &6Kopiergadget&r (mit Smaragden) in &6Stufe 3&r. Bis dahin: Hand, Rahmensäge und Meißel."
 		""
 		"&6Mining Gadgets&r (Stufe 3) gehören dazu: ein Laser, der Tunnel in jeder Größe gräbt. Mehr dazu im Kapitel &6Logistik&r."
 	]
@@ -23953,7 +23953,7 @@
 	quest.696E8BE753E8080E.quest_subtitle: "Axtkopf aus drei Material."
 	quest.696E8BE753E8080E.title: "&6Bau eine Axt"
 	quest.696F84A6E32481C2.quest_desc: [
-		"Die Verzauberung &6Capturing&r (bis Stufe III, für Schwerter) lässt Monster mit &e0,5 Prozent je Stufe&r ihr Spawn-Ei fallen. Bosse und manche Monster sind davon ausgenommen."
+		"Die Verzauberung &6Capturing&r (am Tisch bis Stufe VII, aus Beute bis III, für Schwerter) lässt Monster mit &e0,5 Prozent je Stufe&r ihr Spawn-Ei fallen. Bosse und manche Monster sind davon ausgenommen."
 		""
 		"Mit einem Spawn-Ei stellst du einen Spawner auf ein anderes Monster um: Rechtsklick mit dem Ei auf den Spawner, fertig. Zombie-Spawner aus dem Verlies, Skelette drin."
 	]
@@ -24143,7 +24143,7 @@
 	quest.6A0980ECDAC0B03B.quest_subtitle: "Ein Samen, ein Haken."
 	quest.6A0980ECDAC0B03B.title: "Samen: Eis"
 	quest.6A1A68A159905715.quest_desc: [
-		"Ein &6Mahlstein&r hinter dem Bruchsteingenerator macht aus Bruchstein &6Kies&r und aus Kies &6Feuerstein&r, je 250 Ticks pro Stück. Für &6Sand&r legst du 2 &6Feueressenz&r und 2 &6Erdessenz&r schräg ins Raster: 16 Sand. 2 Stein- und 2 Erdessenz ergeben 16 Kies."
+		"Ein &6Mahlstein&r hinter dem Bruchsteingenerator macht aus Bruchstein &6Kies&r und aus Kies &6Feuerstein&r, je 250 Ticks pro Stück. Für &6Sand&r legst du 2 &6Feueressenz&r und 2 &6Erdessenz&r (die Essenzen von Mystical Agriculture, nicht die Erdessenz von Ars Nouveau) schräg ins Raster: 16 Sand. 2 Stein- und 2 Erdessenz ergeben 16 Kies."
 		""
 		"Kies vor einen &6Lüfter&r mit Wasser (Kieswäsche): Feuerstein und Eisenklumpen, also die Klumpen für deine Andesitlegierung. Sandstein im Mahlstein wird wieder zu Sand."
 		""
@@ -24498,7 +24498,7 @@
 		""
 		"{image:aether:textures/item/materials/ambrosium_shard.png width:32 height:32 align:center}"
 		""
-		"&eWofür:&r Ein Shard über einem Skyroot Stick ergibt 4 &6Ambrosium Torches&r, das Licht des Aethers. Ein Shard im &6Altar&r brennt 12,5 Sekunden. Gegessen heilt er ein halbes Herz. Rechtsklick auf Aether-Gras macht &6Enchanted Grass&r für doppelte Beeren."
+		"&eWofür:&r Ein Shard über einem Skyroot Stick ergibt 4 &6Ambrosium Torches&r, das Licht des Aethers. Ein Shard im &6Altar&r brennt 12,5 Sekunden. Gegessen heilt er ein halbes Herz. Rechtsklick auf Aether-Gras macht &6Enchanted Grass&r für mehr Beeren."
 		""
 		"Neun Shards ergeben einen &6Ambrosium Block&r, der im Altar 125 Sekunden brennt."
 	]
@@ -24553,7 +24553,7 @@
 		""
 		"Die &6Bohrmaschine&r (5 x 5 Rezept aus Messing, Robusten Blechen, Präzisionsgetrieben und einem Mechanischen Bohrer) steht auf festem Boden über der Ader, bekommt einen &6Eisenbohrer&r und Rotation und fördert dann Roherz, zum Beispiel alle 30 Sekunden ein Roheisen bei 256 SU. Die Adern sind auf Kronwerke unerschöpflich. Diamant- und Netheritbohrer kommen in Stufe 4."
 		""
-		"&eKronwerke:&r Das Ziel von Stufe 3 will 4 000 Stahlbarren. Eine Bohrmaschine auf einer Eisenader, die Tag und Nacht fördert, ist der ruhigste Weg dorthin."
+		"&eKronwerke:&r Das Ziel von Stufe 3 will bei 30 aktiven Spielern 4 000 Stahlbarren. Eine Bohrmaschine auf einer Eisenader, die Tag und Nacht fördert, ist der ruhigste Weg dorthin."
 	]
 	quest.6C16F7A979EACAB8.quest_subtitle: "Create Ore Excavation kommt in Stufe 3."
 	quest.6C16F7A979EACAB8.title: "&7Erzadern anbohren"
@@ -24579,7 +24579,7 @@
 	quest.6C2B1BD2D8AEBFBA.title: "&dBau einen Elite-Steuerschaltkreis"
 	quest.6C3DE80B81BB4577.quest_desc: [
 		"{image:kronwerke:textures/quests/shots/ars_nouveau_imbuement.png width:224 height:126 align:center}"
-		"&e6 Archwood-Planken&r im Kreis, &e2 Goldbarren&r oben und unten in der Mitte, die Mitte bleibt frei."
+		"&e6 Archwood-Planken&r im Kreis, &e2 Goldbleche&r von Create oben und unten in der Mitte, die Mitte bleibt frei."
 		""
 		"Rechtsklick mit Amethyst legt ihn hinein. Die Kammer sammelt ganz langsam Quelle von allein, oder schnell aus einem &6Quellglas&r, das höchstens &e2 Blöcke&r entfernt steht."
 	]
@@ -24934,7 +24934,7 @@
 	quest.6DEEC20BEA0BEE49.title: "&aVergleich alle Manablumen"
 	quest.6DF888D56AB321F0.quest_desc: [
 		"{image:kronwerke:textures/quests/shots/botania_runes_mana_pearl.png width:224 height:126 align:center}"
-		"&eRezept auf Kronwerke:&r &6Enderperle&r ins Becken, &d6 000 Mana&r, aber nur mit einem &6Messinggehäuse&r direkt &eunter dem Becken&r. Ohne Gehäuse bleibt die Perle liegen."
+		"&eRezept auf Kronwerke:&r &6Enderperle&r ins Becken, &d6 000 Mana&r, aber nur mit einem &6Messingrahmen&r direkt &eunter dem Becken&r. Ohne Gehäuse bleibt die Perle liegen."
 		""
 		"{image:botania:textures/item/mana_pearl.png width:32 height:32 align:center}"
 		""
@@ -25035,7 +25035,7 @@
 		""
 		"Eine 256k-Zelle fasst &e2 080 768&r Stück einer Sorte. Mit einer Einheit wird die Komponente zum 256k-Fertigungsspeicher."
 		""
-		"&eKronwerke:&r Der Obelisk will in Stufe 4 &e1 000 Draconiumbarren&r. Jeder Barren in einer Zelle fehlt dort. Bau so groß, wie du wirklich brauchst."
+		"&eKronwerke:&r Der Obelisk will in Stufe 4 bei 30 aktiven Spielern &e1 000 Draconiumbarren&r. Jeder Barren in einer Zelle fehlt dort. Bau so groß, wie du wirklich brauchst."
 	]
 	quest.6E319C40AA564E5E.quest_subtitle: "Draconium im Lager."
 	quest.6E319C40AA564E5E.title: "&b&lBau eine 256k-Zelle"
@@ -25157,7 +25157,7 @@
 	quest.6EC2F75D909C67D5.quest_subtitle: "Wasserstoff plus Chlor."
 	quest.6EC2F75D909C67D5.title: "&fChlorwasserstoff"
 	quest.6ED69134FFF1E0FB.quest_desc: [
-		"&eFarbstoff&r (400 Mana) oder &eSchwarzpulver&r, &eRedstone&r, &eZucker&r (je 500 Mana) im Becken werden zu &6Manapuder&r."
+		"&eFarbstoff&r (400 Mana) oder &eSchwarzpulver&r, &eRedstone&r, &eGlowstonestaub&r, &eZucker&r (je 500 Mana) im Becken werden zu &6Manapuder&r."
 		""
 		"In Stufe 2 steckt in jeder der vier Elementarrunen ein Puder. Übrige Blütenblätter werden Farbstoff, Farbstoff wird Puder."
 	]
@@ -25401,7 +25401,7 @@
 	quest.702A0AE6AA12A45C.quest_subtitle: "Altes Werkzeug zurück in Material."
 	quest.702A0AE6AA12A45C.title: "&7Bau einen Recycler"
 	quest.702B5491F8F27A8D.quest_desc: [
-		"Sieben &6Flachs&r (oder Weizen, oder Leinwand aus Farmer's Delight) um einen &6Faden&r oben in der Mitte ergeben einen &6Sack&r. Er hat neun Plätze, lässt sich als Block aufstellen und behält seinen Inhalt, wenn du ihn abbaust."
+		"Sieben &6Flachs&r um einen &6Faden&r oben in der Mitte ergeben einen &6Sack&r. Er hat neun Plätze, lässt sich als Block aufstellen und behält seinen Inhalt, wenn du ihn abbaust."
 		""
 		"&cAchtung:&r Säcke sind schwer. Mit mehr als zwei Säcken im Inventar wirst du langsamer, mit mehr als vier noch langsamer. Ein Sack für die Ernte, einer für Baumaterial, mehr nicht."
 	]
@@ -25461,7 +25461,7 @@
 	quest.706D7598F3CB0BAC.quest_subtitle: "Der Kupferrahmen für alles Flüssige."
 	quest.706D7598F3CB0BAC.title: "&6Ummantel Holz mit Kupfer"
 	quest.708941A82D1AB8D8.quest_desc: [
-		"Verleg das Gleis bis in ein &cNetherportal&r hinein. Create setzt die Strecke auf der anderen Seite fort."
+		"&cNoch nicht:&r Der Nether läuft auf Kronwerke auf einem eigenen Server, und Züge kommen noch nicht durch das Portal. Daran wird gebaut. Bis dahin endet die Strecke am &cNetherportal&r: Bahnhof davor, zu Fuß hindurch, Bahnhof dahinter."
 		""
 		"Eine kurze Netherstrecke verbindet weit entfernte Basen. Sichere sie ab, Ghasts halten nichts von Fahrplänen."
 	]
@@ -25616,7 +25616,7 @@
 		""
 		"Leg eine volle &6Box of Eternal Closure&r in den Box-Slot und gib Blut in den Tank (10 Eimer). Der Furnace belebt den Geist im Inneren und kocht ihn sofort: &e25 mB pro Tick&r, 10 Ticks pro Lebenspunkt. Ein Zombie dauert 10 Sekunden und kostet 5 Eimer, die Drops landen im Inventar des Furnace. Die Box bleibt voll und wird nie leer."
 		""
-		"Große Mobs brauchen einen größeren Kasten, bis zu 9 mal 9. Ein Dorfbewohner gibt mit 20 Prozent einen Smaragd. Trichter oder Rohre holen die Drops aus jeder Seite."
+		"Große Mobs brauchen einen größeren Kasten, bis zu 9 mal 9. Ein Dorfbewohner gibt mit 5 Prozent einen Smaragd. Trichter oder Rohre holen die Drops aus jeder Seite."
 	]
 	quest.7145901D24453A3E.quest_subtitle: "Geister wiederbeleben und sofort kochen."
 	quest.7145901D24453A3E.title: "&4&lBau den Spirit Furnace"
@@ -25693,7 +25693,7 @@
 		""
 		"Die &6Fabrication Directive&r speichert, welcher Drop für welches Modell gewählt ist. &eRechtsklick&r auf einen Fabrikator kopiert seine Auswahl, &eShift-Rechtsklick&r auf einen anderen überträgt sie. Für zehn Fabrikatoren oder das Rechenzentrum sparst du dir damit das Durchklicken."
 	]
-	quest.71B5C3CA4158995A.quest_subtitle: "Kommt in Stufe 4. Einstellungen zum Mitnehmen."
+	quest.71B5C3CA4158995A.quest_subtitle: "Kommt in Stufe 3. Einstellungen zum Mitnehmen."
 	quest.71B5C3CA4158995A.title: "&6Die Fabrikationsanweisung"
 	quest.71B708DC9C836285.quest_desc: [
 		"Wie der Vulkanische, aber &6Pilzsuppe&r in der Mitte."
@@ -25780,7 +25780,7 @@
 		""
 		"&eKronwerke:&r Zwei stecken in jedem &6Quellschlussstein&r, dem Magie-Meilenstein von Stufe 1. In Stufe 2 braucht ihn das Manastahl-Ritual, jede Terrastahl-Herstellung und jede Sündenrune gleich zwei."
 		""
-		"&cDenk voraus:&r Stufe 2 will 50 Terrastahl und 8 Runenkerne, das sind rund 60 Manadiamanten. Spar dir Diamanten."
+		"&cDenk voraus:&r Stufe 2 will rund 50 Terrastahl (bei 30 aktiven Spielern) und 8 Runenkerne, das sind rund 60 Manadiamanten. Spar dir Diamanten."
 	]
 	quest.7228D87AF0D862F2.quest_subtitle: "10 000 Mana in einem Stein."
 	quest.7228D87AF0D862F2.title: "&bInfundiere einen Manadiamanten"
@@ -25933,7 +25933,7 @@
 	quest.72912139724F013E.title: "&6Häng eine Herstellungsblaupause auf"
 	quest.729F1279CD6A9918.quest_desc: [
 		"{image:kronwerke:textures/quests/shots/silent_gear_alloy_forge.png width:224 height:126 align:center}"
-		"&eRezept auf Kronwerke:&r Oben &6Purpur-Stahl, Schwarzstein, Purpur-Stahl&r. Mitte zwei &6Purpur-Stahl&r. Unten &6Schwarzstein&r, ein &6Messinggehäuse&r von Create, &6Schwarzstein&r."
+		"&eRezept auf Kronwerke:&r Oben &6Purpur-Stahl, Schwarzstein, Purpur-Stahl&r. Mitte zwei &6Purpur-Stahl&r. Unten &6Schwarzstein&r, ein &6Messingrahmen&r von Create, &6Schwarzstein&r."
 		""
 		"Sie macht Purpur-Stahl, Lohengold, Azur-Elektrum und Tyrann-Stahl. Dazu &6Kohlenstoffstahl&r: ein Eisen und drei Kohle, 420 Haltbarkeit und +4 Schaden."
 	]
@@ -25972,7 +25972,7 @@
 	quest.72ABD48D90A74784.quest_subtitle: "Für seltenere Erze."
 	quest.72ABD48D90A74784.title: "&7Bau eine Amethyst-Wünschelrute"
 	quest.72AC572B1AB63138.quest_desc: [
-		"Ein &6Terrastahlbarren&r in die Mitte, &a4 Gaia-Geister&r oben, unten, links und rechts. Heraus kommt ein &aGaia-Geistbarren&r."
+		"Ein &6Terrastahlbarren&r in die Mitte, &a4 Gaia-Seelen&r oben, unten, links und rechts. Heraus kommt ein &aGaia-Geistbarren&r."
 		""
 		"Das Ziel von Stufe 5 heißt &5Der Chaoswächter&r. Es öffnet keine Stufe mehr, es will die Dinge, die den Endkampf möglich machen:"
 		"&6Technik:&r &e64 Erwachte Draconiumblöcke&r (fest) und &e100 Antimaterie-Pellets&r."
@@ -26022,7 +26022,7 @@
 	quest.72DBEA3925CDE2AE.quest_desc: [
 		"&6Blue Aerclouds&r sind blassblau und seltener als die kalten. Wer darauf tritt, wird hoch in die Luft geschleudert. So kommst du auf Inseln, die über dir hängen."
 		""
-		"Du kannst sie auch herstellen: Eine &6Cold Aercloud&r wird im &6Freezer&r in 20 Sekunden zur Blue Aercloud. &6Blue Swets&r lassen manchmal eine fallen."
+		"Du kannst sie auch herstellen: Eine &6Cold Aercloud&r wird im &6Freezer&r in 20 Sekunden zur Blue Aercloud. &6Blue Swets&r lassen immer eine fallen."
 		""
 		"&eTipp:&r Eine Blue Aercloud unten, eine Cold Aercloud oben als Landeplatz, fertig ist der Aufzug ohne Strom."
 	]
@@ -26632,7 +26632,7 @@
 		""
 		"Unter einem Becken nimmt das Becken immer an und vernichtet, was nicht mehr passt. So laufen Endoflammen weiter, statt Kohle liegen zu lassen."
 		""
-		"&cAchtung:&r In Stufe 2 gehört unter das Perlenbecken ein Messinggehäuse. Nimm für die Leere ein anderes Becken."
+		"&cAchtung:&r In Stufe 2 gehört unter das Perlenbecken ein Messingrahmen. Nimm für die Leere ein anderes Becken."
 	]
 	quest.75D70FBDCB7037BA.quest_subtitle: "Ein Grab für überschüssiges Mana."
 	quest.75D70FBDCB7037BA.title: "&6Bau eine Manaleere"
@@ -26911,7 +26911,7 @@
 		"{image:kronwerke:textures/quests/shots/create_trains_schedule.png width:224 height:126 align:center}"
 		"Ein &6Robustes Blech&r und &6Papier&r ergeben vier &6Zugfahrpläne&r. Leg Einträge an: &eFahre zu Bahnhof&r, darunter die Bedingung, wann es weitergeht."
 		"{image:create:textures/item/schedule.png width:32 height:32 align:center}"
-		"Mit &eWiederholen&r springt der Plan an den Anfang. &eMine*&r passt auf jeden freien Bahnhof, dessen Name mit Mine beginnt. &eÄndere Höchstgeschwindigkeit&r bremst den Zug auf einem Abschnitt."
+		"Mit &eFortlaufend wiederholen&r springt der Plan an den Anfang. &eMine*&r passt auf jeden freien Bahnhof, dessen Name mit Mine beginnt. &eÄndere Höchstgeschwindigkeit&r bremst den Zug auf einem Abschnitt."
 	]
 	quest.7701AFCD425DC02F.quest_subtitle: "Er fährt, während du woanders bist."
 	quest.7701AFCD425DC02F.title: "&6Schreib einen Fahrplan"
@@ -27149,7 +27149,7 @@
 	quest.77CD40382C9E4BEA.quest_subtitle: "Genug für einen Legierungsofen."
 	quest.77CD40382C9E4BEA.title: "&6Brenn 8 Legierungsziegel"
 	quest.77D0A9312611B7B3.quest_desc: [
-		"Der &cLifestealer&r hat &e100 Lebenspunkte&r und Rüstung 16. Er läuft nachts umher und zeigt sein wahres Gesicht erst im Kampf. Sein Griff saugt dir Leben ab, halt ihn mit dem Schild auf Abstand."
+		"&cErst ab Stufe 3.&r Der &cLifestealer&r hat &e100 Lebenspunkte&r und Rüstung 16. Er läuft nachts umher und zeigt sein wahres Gesicht erst im Kampf. Sein Griff saugt dir Leben ab, halt ihn mit dem Schild auf Abstand."
 		""
 		"Er lässt &e3 bis 5 Lifestealer-Knochen&r fallen, 7 bis 10 Dunkelmetallstücke und 3 bis 5 &6Chaossamen&r. Zwei Knochen und ein &6Knochenherz&r (4 Knochen um einen verschmolzenen Knochen) ergeben das &6Dunkle Atrium&r: eine Stunde &eDunkler Schutz&r, der dich einmal vor dem Tod rettet."
 		""
@@ -27178,7 +27178,7 @@
 		"&dPolish&r (Manipulationsessenz, Sandpapier): schleift Items. &dWhirl&r (Manipulationsessenz, 3 Luftessenzen): ein Wirbel wie ein Ventilator, mit Wasser, Fackel, Schmelzen oder Verhexen als Verarbeitung."
 		"&dCarve&r (Manipulationsessenz, Werkbank, Bruchsteintreppe, -stufe, -mauer): sägt Stein und Holz zu Treppen. &dInsert&r (2 Truhen): legt Items in Behälter. &dApply&r (Manipulationsessenz, Messinghand): benutzt dein Zweithand-Item wie ein Einsatzgerät."
 	]
-	quest.77F0D85FF6203B4B.quest_subtitle: "Ars Technica: Checkliste Stufe 2."
+	quest.77F0D85FF6203B4B.quest_subtitle: "Ars Technica: Checkliste."
 	quest.77F0D85FF6203B4B.title: "&dLern die Create-Glyphen"
 	quest.77FEE5209B67A4B4.quest_desc: [
 		"&61k&r: 8 128 Stück einer Sorte. &64k&r: 32 512. &616k&r: 130 048. Alle drei in Stufe 3, dazu Flüssigkeitszellen (8 Eimer pro Byte), Chemiezellen von Applied Mekanistics und FE-Zellen von Applied Flux in denselben Größen."
@@ -27288,7 +27288,7 @@
 	quest.789E312149280497.quest_desc: [
 		"&eRezept:&r &6Andesitlegierung&r oben, &6Dieselmotor&r zwischen zwei &6Messingblechen&r, &6polierte Schwarzsteinstufe&r unten ergeben den &6Modularen Dieselmotor&r."
 		""
-		"Er arbeitet wie der normale Motor, aber du kannst mehrere &eaufeinanderstapeln&r. Jeder Block im Stapel bringt seine Belastbarkeit ein: einer schafft mit Biodiesel &e6 144 SU&r, mit Diesel 8 192 SU, vier Stück entsprechend das Vierfache, alle mit 96 RPM an einer Welle. Jeder frisst seinen eigenen Liter pro Sekunde, also plane die Biodiesel-Linie groß genug."
+		"Er arbeitet wie der normale Motor, aber du kannst mehrere &eaufeinanderstapeln&r. Jeder Block im Stapel bringt seine Belastbarkeit ein: einer schafft mit Biodiesel &e6 144 SU&r, mit Diesel 8 192 SU, vier Stück entsprechend das Vierfache, alle mit 96 RPM an einer Welle. Jeder frisst sein eigenes Millibucket pro Sekunde, also plane die Biodiesel-Linie groß genug."
 		""
 		"&eSo wird es ein Kraftwerk:&r Zuckerrohr- und Weizenfarm, Massenfermenter und Presse für Öl, ein Mixer für Biodiesel, ein Tank, und daran der Motorstapel. Alles ohne Lohenbrenner, ohne Kohle, ohne Wasserrad-Wald."
 		""
@@ -27330,7 +27330,7 @@
 	quest.78DA48D3B9D7F31C.quest_subtitle: "Super-Verzaubern bis Stufe 60, mit Blitzableiter."
 	quest.78DA48D3B9D7F31C.title: "&5Back einen Zauberkuchen"
 	quest.78EBEBF019DB5F26.quest_desc: [
-		"Im Apparat: &6Ring des Potenzials&r in die Mitte, &6Quelljuwelblock&r, &e2 Goldblöcke&r, &5Endkristall&r auf die Podeste."
+		"Im Apparat: &6Ring des Potenzials&r in die Mitte, &6Quelledelsteinblock&r, &e2 Goldblöcke&r, &5Endkristall&r auf die Podeste."
 		""
 		"Der &6Armreif des Verzauberers&r hat eine Chance, deinen Zauberschaden zu erhöhen, unzuverlässig. Auf eine Schule abgestimmt wird er stabil."
 	]
@@ -27559,7 +27559,7 @@
 		"{image:kronwerke:textures/quests/shots/create_brass_blaze_burner.png width:224 height:126 align:center}"
 		"Rechtsklicke eine &6Lohe&r mit dem leeren Brenner in der Hand, auch direkt am Spawner in der Festung. Du hältst einen &6Lohenbrenner&r."
 		""
-		"Unter einem Becken glimmt er nur. Mit Ofenbrennstoff (Kohle, Holz) ist er &cerhitzt&r, mit einem &6Lohenkuchen&r eine Weile &cüberhitzt&r. Eine Schleuse oder ein Arm füttert ihn."
+		"Unter einem Becken glimmt er nur. Mit Ofenbrennstoff (Kohle, Holz) ist er &cerhitzt&r, mit einem &6Lohenkuchen&r eine Weile &cüberhitzt&r. Ein Einsatzgerät oder ein Arm füttert ihn, eine Schleuse kann das nicht."
 	]
 	quest.7A069A8E373778AB.quest_subtitle: "Der Lohenbrenner heizt für dich."
 	quest.7A069A8E373778AB.title: "&6Fang eine Lohe ein"
@@ -27898,7 +27898,7 @@
 	quest.7BB43D4C7CBA97B5.title: "&5Bau einen Ender Staff"
 	quest.7BBA588FE89BA602.quest_desc: [
 		"{image:kronwerke:textures/quests/shots/enderio_smelter.png width:224 height:126 align:center}"
-		"&eRezept auf Kronwerke:&r Oben Zahnrad, &6Ofen&r, Zahnrad. Mitte Ofen, &6Gehäuse der Leere&r, Ofen. Unten Eisenbarren, ein &6Messinggehäuse&r von Create, Eisenbarren. Kondensator in den Slot."
+		"&eRezept auf Kronwerke:&r Oben Zahnrad, &6Ofen&r, Zahnrad. Mitte Ofen, &6Gehäuse der Leere&r, Ofen. Unten Eisenbarren, ein &6Messingrahmen&r von Create, Eisenbarren. Kondensator in den Slot."
 		""
 		"Oben im Fenster wählst du den Modus: Legieren und Schmelzen, nur Legieren, nur Schmelzen. Im Schmelzmodus ist sie ein elektrischer Ofen. Sie zieht &e20 µI/t&r, µI ist dasselbe wie FE."
 	]
@@ -28365,7 +28365,7 @@
 	quest.7DF5DF1A7C262E36.quest_desc: [
 		"Ein &6Zahnrad&r und ein &6Rohr&r ergeben die &6Mechanische Pumpe&r. Setz sie in die Leitung und treib sie an, sie drückt bis zu &e16 Blöcke&r weit."
 		""
-		"Der Pfeil zeigt die Richtung, umgekehrte Drehung pumpt rückwärts. Je mehr RPM, desto mehr Durchfluss, bei &d4 SU pro RPM&r."
+		"Der Pfeil zeigt die Richtung. Die Drehrichtung ändert daran nichts, mit dem Schraubenschlüssel drehst du die Pumpe um. Je mehr RPM, desto mehr Durchfluss, bei &d4 SU pro RPM&r."
 		""
 		"&cHäufiger Fehler:&r Zwei Pumpen, die gegeneinander arbeiten."
 	]
@@ -28604,7 +28604,7 @@
 	quest.7EF5D341251BB592.quest_subtitle: "Der Drachenspeicher braucht Gaia."
 	quest.7EF5D341251BB592.title: "&c&lBau vier Stabilisatoren mit Gaia"
 	quest.7EFFC40035977105.quest_desc: [
-		"Richte ein Gerüst auf einen &6Mimic&r von Artifacts und töte ihn. Mimics tarnen sich als Truhen in Verliesen und Minenschächten und springen dich an, wenn du sie öffnest."
+		"Richte ein Gerüst auf einen &6Mimic&r von Artifacts und töte ihn. Mimics tarnen sich als Truhen in unterirdischen Lagerplätzen (etwa jede zehnte Truhe, zwischen Y minus 60 und 40) und springen dich an, wenn du sie öffnest."
 		""
 		"Der Mimic hat eigene Zahlen: &e30 Kills&r bis Basic, dann je 30 bis Advanced und Superior, &e36&r bis Self Aware, insgesamt 126. Das Modell kostet &d2.560 FE/t&r."
 		""
@@ -28623,7 +28623,7 @@
 	quest.7F0E3492824D8AAD.quest_desc: [
 		"Oben drei &6grüne Farbstoffe&r, Mitte &6Goldnugget, Weizensamen, Goldnugget&r, unten drei &6Weizen&r: vier Dünger."
 		""
-		"Gedüngtes Ackerland mit Grün gibt mehr Ertrag. Beide Dünger zusammen ergeben das beste Feld."
+		"Gedüngtes Ackerland mit Grün gibt mehr Ertrag. Kombinieren lässt sich Grün nur mit Gelb, Rot nur mit Gelb. Rot und Grün zusammen bringen nichts."
 	]
 	quest.7F0E3492824D8AAD.quest_subtitle: "Mehr Ertrag pro Ernte."
 	quest.7F0E3492824D8AAD.title: "&aStreu Grünen Dünger"
@@ -28966,6 +28966,7 @@
 	task.1CFCAFBC06C4CF2C.title: "Eine Feuer- oder Wasserkerze getränkt"
 	task.1D0366C58E9A5ECE.title: "Gelesen"
 	task.1D11B7AD5789FF03.title: "Verstanden, kommt in Stufe 3"
+	task.1D3EE28B66A1F3CE.title: "Wilden: Jäger, Pirscher oder Wächter"
 	task.1D42576F55AF94F6.title: "Abgehakt"
 	task.1D458A62A4F0B0B7.title: "Ab nach draußen"
 	task.1D556FBC3B5583A7.title: "Abgehakt"
@@ -29008,7 +29009,7 @@
 	task.20C14D2E8C3293FA.title: "Eine Industriepresse formen"
 	task.20C7FE76AFC7BE49.title: "Sykomore (Esche + Zuckerahorn, 10 %)"
 	task.20E1AD27199AB5BF.title: "Mandarine (Pomelo + Vogelkirsche, 10 %)"
-	task.20E74B646F6E85B7.title: "Eine Netherbahn gebaut"
+	task.20E74B646F6E85B7.title: "Verstanden"
 	task.20EA966A08E71E62.title: "Gelesen"
 	task.211A1A55850D0507.title: "Papaya (Vogelkirsche + Kakao, 5 %)"
 	task.212761D022E0B5EE.title: "Verstanden"
@@ -29047,6 +29048,7 @@
 	task.2360810164940E00.title: "Gepingt"
 	task.236F8EA5BB95C096.title: "Einen der beiden Riten gestartet"
 	task.23C91F244C995AE3.title: "Magmatic Bee im Stock"
+	task.24250CA2FAB902AC.title: "Zombies, Wüstenzombies oder Zombiedorfbewohner"
 	task.2459E02EC8B97D7D.title: "Goldbiene gezüchtet"
 	task.246CD0D43C2FB70C.title: "Eisenbiene gezüchtet"
 	task.2491797764A445A4.title: "Einen Lichtbogenofen formen"
@@ -29211,6 +29213,7 @@
 	task.31D79DB4F5643702.title: "Mythic-Item getragen"
 	task.31F4368BFB54A243.title: "Kommt in Stufe 2: gelesen"
 	task.31FE050FBB63C78F.title: "Private Frequenz angelegt"
+	task.32272E0B7556673E.title: "Zombies, Wüstenzombies oder Zombiedorfbewohner"
 	task.324E09DBD1DC7866.title: "Ein Höhlenlager gefunden"
 	task.3257E6A923CEA5D8.title: "Turbine speist das Netz"
 	task.3261D800EB0B756B.title: "Eine Bewegungskerze getränkt"
@@ -29296,6 +29299,7 @@
 	task.3D9B08D58724B30B.title: "Drehgestell gesetzt"
 	task.3E1F829D2CA7CCBD.title: "Einen Zerkleinerer formen"
 	task.3E55D4484B7073EE.title: "Ein Robenteil auf Stufe 2 gebracht"
+	task.3E6908C9ED918684.title: "Woodcutter, aus jedem der drei Hölzer"
 	task.3EC34A87DB37147E.title: "Ich bin in der Gruppe"
 	task.3ED76283DF42EA6F.title: "Wyvern-Stück gebaut"
 	task.3EE5908225241D98.title: "Kakao (Tropenbaum + Kirsche, 35 %)"
@@ -29305,15 +29309,18 @@
 	task.3FBA18DCA2841577.title: "Lumber Bee gezüchtet"
 	task.3FFC62FEA82FF307.title: "Mit der Tiara geflogen"
 	task.402994330EB6B3AB.title: "Zauberbuch aufgerüstet"
+	task.405A97F6CAE9CD8C.title: "Zombies, Wüstenzombies oder Zombiedorfbewohner"
 	task.405BE8263CBE6783.title: "Verstanden"
 	task.4073153F731BC9F4.title: "Sternensense gebaut"
 	task.4081F3A36B83BCA8.title: "Gelesen"
 	task.4081F3C4C7ACB3F4.title: "Einen Dieselgenerator formen"
+	task.4097C7D45BEEDBE6.title: "Zombies, Wüstenzombies oder Zombiedorfbewohner"
 	task.40B2E19FCE9C8FB2.title: "Einen Wegstein aktiviert"
 	task.41789200567F9574.title: "Losgezogen"
 	task.4191AB1FAD9197DD.title: "Gelesen"
 	task.4191C443FDD96082.title: "Verstanden"
 	task.41AD6B1B5C6CD270.title: "Legierungsofen gebaut und geformt"
+	task.41AE8BA9B4A96EFD.title: "Skelette, Eiswanderer oder Sumpfskelette"
 	task.41D978D0FD3B6815.title: "Lichtbogenofen"
 	task.427E8C7283DA0907.title: "Gelesen"
 	task.42AD927812DBD002.title: "Favoriten gesetzt"
@@ -29375,6 +29382,7 @@
 	task.4BAEFFF75D4D02EE.title: "Sauerkirsche (Silberweide + Kirsche, 10 %)"
 	task.4BEC34F48CC3CD6F.title: "Eine Antike Stadt finden"
 	task.4C28894945DE24B3.title: "Gelesen"
+	task.4C5974B75E596489.title: "Altar, aus jedem der drei Hölzer"
 	task.4C82349CB0895345.title: "Den Spezialangriff auslösen"
 	task.4CC00B09A5CEB201.title: "Gruppen angeschaut"
 	task.4D234BCB635826C5.title: "Einen Piglin mit Gold ablenken"
@@ -29458,6 +29466,7 @@
 	task.57C8399258A7E13B.title: "Esche (Silberlinde + Fichte, 10 %)"
 	task.57FBC428410FBE3A.title: "Ein Buch aufgeschlagen"
 	task.5806E91077B96B57.title: "Gelesen"
+	task.5821965D051DE226.title: "Courier Depot, aus jedem der drei Hölzer"
 	task.585E6E6171554E5E.title: "Abgehakt"
 	task.58AB57F179958035.title: "Volle Cloggrumrüstung"
 	task.58D2528D796F7254.title: "Gelesen"
@@ -29592,6 +29601,7 @@
 	task.679588F4DE51F6D4.title: "Hainbuche (Esche + Mehlbeere, 10 %)"
 	task.679DD1D61C2E5716.title: "Gelesen"
 	task.67B30D4962C2C2E6.title: "Stachelannone (Zimtapfel + Banane, 10 %)"
+	task.67BF71298FDBBFA7.title: "Spinnen oder Höhlenspinnen"
 	task.67C4540946A7E808.title: "Ritual ausgeführt"
 	task.67D63A3004F93CF0.title: "Verstanden"
 	task.684C6D4DC283BAA9.title: "Verstanden"
@@ -29669,7 +29679,7 @@
 	task.73D196B75A6CF9CB.title: "Gelesen"
 	task.73D82704540EC3FA.title: "Grandidier-Baobab (Balsa + Wenge, 10 %)"
 	task.73F14799DB397A66.title: "Verstanden"
-	task.742EFDD121EA4C8B.title: "Verstanden, kommt in Stufe 4"
+	task.742EFDD121EA4C8B.title: "Verstanden, kommt in Stufe 3"
 	task.744D67993E302DEA.title: "Ritual ausgeführt"
 	task.746258071508A7AC.title: "Rotahorn (Silberlinde + Europäische Lärche, 10 %)"
 	task.7467AD8C5A7D59CA.title: "Erste Maschine läuft über Flux"

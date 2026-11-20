@@ -151,7 +151,7 @@ quests = [
           description=[
               "Ein Setzling jeder Farbe: rot, blau, grün, violett.",
               "",
-              "&cFlammend&r (rot) brennt im Vulkanischen Quelllink am besten. Die Ritualtafeln ab Stufe 2 brauchen Stämme in der passenden Farbe: &aBlühend&r (grün) für Natur, &bKaskadierend&r (blau) für Wasser und Wetter, &5Ärgerlich&r (violett) für Bindung und Suche.",
+              "&cBrennend&r (rot) brennt im Vulkanischen Quelllink am besten. Die Ritualtafeln ab Stufe 2 brauchen Stämme in der passenden Farbe: &aBlühend&r (grün) für Natur, &bKaskadierend&r (blau) für Wasser und Wetter, &5Ärgerlich&r (violett) für Bindung und Suche.",
               "",
               "Ein kleiner Garten mit allen vier spart dir später viele Wege.",
           ],
@@ -163,7 +163,7 @@ quests = [
     quest("imbuement", 5, 5.5, "&a&lBau eine Imbuement-Kammer",
           subtitle="Der einzige Weg zu Quelljuwelen.",
           description=[
-              "&e6 Archwood-Planken&r im Kreis, &e2 Goldbarren&r oben und unten in der Mitte, die Mitte bleibt frei.",
+              "&e6 Archwood-Planken&r im Kreis, &e2 Goldbleche&r von Create oben und unten in der Mitte, die Mitte bleibt frei.",
               "",
               "Rechtsklick mit Amethyst legt ihn hinein. Die Kammer sammelt ganz langsam Quelle von allein, oder schnell aus einem &6Quellglas&r, das höchstens &e2 Blöcke&r entfernt steht.",
           ],
@@ -226,7 +226,7 @@ quests = [
     quest("source_gems", 17.5, 5.5, "&d&lMach 16 Quelljuwelen",
           subtitle="Die Währung der Magie.",
           description=[
-              "Lass die Kammer am Glas laufen, bis du &e16 Quelljuwelen&r hast. Ein &6Amethystblock&r wird für &d2 000 Quelle&r direkt zum &6Quelljuwelblock&r.",
+              "Lass die Kammer am Glas laufen, bis du &e16 Quelljuwelen&r hast. Ein &6Amethystblock&r wird für &d2 000 Quelle&r direkt zum &6Quelledelsteinblock&r.",
               "",
               "Juwelen stecken in Quellstein, Podesten, Apparat, allen Links und jedem Schmuckstück. Was übrig ist, gehört in den &eObelisken&r an der Spawn.",
           ],
@@ -428,7 +428,7 @@ quests = [
     quest("apparatus", 7.5, 16.5, "&a&lBau den Bezaubernden Apparat",
           subtitle="Der Werktisch der Magier.",
           description=[
-              "Ecken &6Goldnuggets&r, oben und unten Mitte &6Quellstein&r, Mitte Goldbarren, &6Diamant&r, Goldbarren. Stell ihn auf den Arkanen Kern.",
+              "Ecken &6Goldnuggets&r, oben und unten Mitte &6Quellstein&r, Mitte Infused Iron, &6Diamant&r, Infused Iron (von Nature's Aura). Stell ihn auf den Arkanen Kern.",
               "",
               "Nebenzutaten auf Podeste im Umkreis von &e3 Blöcken&r, dann mit der Hauptzutat auf den Apparat klicken. Quelle zieht er aus Gläsern in der Nähe.",
               "",
@@ -693,7 +693,7 @@ quests = [
     quest("gear_bow", 5, 30, "&6Verzaubere einen Bogen",
           subtitle="Pfeile, die zaubern.",
           description=[
-              "&6Bogen des Zauberers&r: Bogen mit Quelljuwelblock, Goldblock, Manipulationsessenz. Die Armbrust des Zauberers genauso.",
+              "&6Bogen des Zauberers&r: Bogen mit Quelledelsteinblock, Goldblock, Manipulationsessenz. Die Armbrust des Zauberers genauso.",
               "",
               "Reicht dein Mana, wird jeder Pfeil zum Zauberpfeil mit dem eingeschriebenen Zauber. In der Kammer machst du &6Verstärkungspfeile&r (Verstärken, Durchschlag, Teilen) für mehr Wirkung.",
           ],
@@ -706,7 +706,7 @@ quests = [
           description=[
               "&6Handschuh des Zauberers&r (Leder, Diamant, 2 Goldblöcke, 2 Quelljuwelblöcke): baut bis Diamanthärte ab, zaubert mit Rabatt.",
               "&6Angel des Zauberers&r (Angel, 2 Goldblöcke, 2 Quelljuwelblöcke): wirkt den Zauber auf alles am Haken.",
-              "&6Spiegel des Zauberers&r (Quelljuwelblock, 2 Glas, 2 Manipulationsessenzen, 2 Archwood-Stämme, 2 Gold): wirkt einen Selbst-Zauber billiger und länger.",
+              "&6Spiegel des Zauberers&r (Quelledelsteinblock, 2 Glas, 2 Manipulationsessenzen, 2 Archwood-Stämme, 2 Gold): wirkt einen Selbst-Zauber billiger und länger.",
           ],
           tasks=[task_item("ars_nouveau:enchanters_gauntlet", 1), task_item("ars_nouveau:enchanters_fishing_rod", 1),
                  task_item("ars_nouveau:enchanters_mirror", 1)],
@@ -885,7 +885,7 @@ quests = [
           description=[
               "Gib einem wilden &dFlashjack&r (Archwood-Wälder, hohe Gipfel) eine &6Flashpine&r. Im Apparat: Token, &e2 Luftessenzen&r, &e2 Goldbarren&r.",
               "",
-              "Der Flashjack späht in seinem Revier, markiert Gegner und kann Zaubertürme kapern, um auf sie zu schießen. Flashpine wächst am &6Blitzenden Archwood&r: ein beliebiger Archwood-Setzling mit Luftessenz.",
+              "Der Flashjack späht in seinem Revier, markiert Gegner und kann Zaubertürme kapern, um auf sie zu schießen. Flashpine wächst am &6Blitzenden Archwood&r: Den Setzling machst du aus allen vier Archwood-Setzlingen und einer Luftessenz.",
           ],
           tasks=[task_item("ars_elemental:flashjack_charm", 1)],
           rewards=[reward_item("ars_elemental:yellow_archwood_sapling", 2), reward_xp(5)],
@@ -908,7 +908,7 @@ quests = [
     quest("potion_flask", 5, 20.5, "&6Füll eine Trankflasche",
           subtitle="Acht Schlucke in einer Flasche.",
           description=[
-              "Im Apparat: &6Glasflasche&r in die Mitte, &e2 Abschwörungsessenzen&r, &6Quelljuwelblock&r und &6Goldblock&r auf die Podeste.",
+              "Im Apparat: &6Glasflasche&r in die Mitte, &e2 Abschwörungsessenzen&r, &6Quelledelsteinblock&r und &6Goldblock&r auf die Podeste.",
               "",
               "Die &6Trankflasche&r hält &d8 Ladungen&r eines Tranks. Gefüllt wird formlos: Flasche und Trank zusammen an die Werkbank. Ab Stufe 2 füllt sie auch ein Trankglas.",
               "",
@@ -977,7 +977,7 @@ quests = [
               "",
               "Ein &6Leeres Pergament&r auf den Kristall gibt eine &6Schriftrolle des Sehers&r mit seinem Ort. Benenn sie am Amboss, dann findest du sie leichter wieder.",
               "",
-              "Der &6Seher-Oculus&r (Apparat: Enderauge in die Mitte, Beobachter, Fernrohr, Quelljuwelblock, Diamant) öffnet jeden Kristall, dessen Schriftrolle auf einem Podest daneben liegt. Der Kristall muss dafür geladen sein.",
+              "Der &6Seher-Oculus&r (Apparat: Enderauge in die Mitte, Beobachter, Fernrohr, Quelledelsteinblock, Diamant) öffnet jeden Kristall, dessen Schriftrolle auf einem Podest daneben liegt. Der Kristall muss dafür geladen sein.",
           ],
           tasks=[task_item("ars_nouveau:scryers_crystal", 1), task_item("ars_nouveau:scryers_oculus", 1)],
           rewards=[reward_item("minecraft:ender_pearl", 2), reward_xp(5)],
@@ -1026,7 +1026,7 @@ quests = [
     quest("obelisk", 31, 5.5, "&dBring Juwelen zum Obelisken",
           subtitle="Die magische Hälfte von Stufe 1.",
           description=[
-              "Rechtsklick mit Juwelen auf den &eObelisken&r an der Spawn, schleichend gibst du alles Passende ab.",
+              "Rechtsklick mit Juwelen auf den &eObelisken&r am Spawn gibt den Stapel in deiner Hand ab. Schleichen und zweimal Rechtsklick gibt alles Passende aus den drei Inventarreihen ab.",
               "",
               "Die Magie-Säule: &e800 Quelljuwelen&r (angepasst an die Spielerzahl) und &e12 Quellschlusssteine&r. Ein Schlussstein zählt so viel wie gut 60 Juwelen: &e4 Quelljuwelblöcke&r, Quellglas, 2 Manadiamanten aus Botania, Andesitlegierung, Gold Leaf aus Nature's Aura. Rezept im Kapitel &6Hier geht's los&r.",
               "",

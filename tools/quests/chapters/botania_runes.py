@@ -37,9 +37,9 @@ quests = [
           description=[
               "Mit &6Stufe 2 (Messingwerk)&r öffnen Manastahl, Manaperlen, der Runenaltar mit sechzehn Runen, sechzehn neue Funktionsblumen, fünf neue Manablumen und am Ende Terrastahl.",
               "",
-              "Auf Kronwerke hängt das an Create: Manaperlen nur mit Messinggehäuse unter dem Becken, Messing im Runenaltar und in der Terraplatte. Umgekehrt braucht Mekanism deinen Manastahl und Create deine Feuerrunen.",
+              "Auf Kronwerke hängt das an Create: Manaperlen nur mit Messingrahmen unter dem Becken, Messing im Runenaltar und in der Terraplatte. Umgekehrt braucht Mekanism deinen Manastahl und Create deine Feuerrunen.",
               "",
-              "&eKronwerke:&r Das Obelisk-Ziel will &e600 Manaperlen&r, &e50 Terrastahlbarren&r und &e8 Runenkerne&r, zusammen über &d30 Millionen Mana&r. Das Elfenportal kommt in Stufe 3.",
+              "&eKronwerke:&r Das Obelisk-Ziel will bei 30 aktiven Spielern &e600 Manaperlen&r und &e50 Terrastahlbarren&r, dazu immer &e8 Runenkerne&r, zusammen über &d30 Millionen Mana&r. Das Elfenportal kommt in Stufe 3.",
           ],
           tasks=[task_checkmark("Los geht's")],
           rewards=[reward_item("botania:livingrock", 16), reward_table("s2_common")],
@@ -71,10 +71,10 @@ quests = [
           rewards=[reward_item("minecraft:iron_ingot", 16), reward_table("s2_common")],
           deps=["welcome"], icon="botania:manasteel_ingot", size=1.5, shape="square"),
 
-    quest("brass_casing", 4.8, -1.2, "&6Hol dir Messinggehäuse",
+    quest("brass_casing", 4.8, -1.2, "&6Hol dir Messingrahmen",
           subtitle="Perlen, Runen und Terrastahl brauchen die Technik.",
           description=[
-              "Einen &6Messingbarren&r per Rechtsklick auf &6entrindetes Holz&r anwenden, das gibt ein &6Messinggehäuse&r. Messing macht der Create-Mixer über einem Lohenbrenner.",
+              "Einen &6Messingbarren&r per Rechtsklick auf &6entrindetes Holz&r anwenden, das gibt einen &6Messingrahmen&r. Messing macht der Create-Mixer über einem Lohenbrenner.",
               "",
               img("create:textures/block/brass_casing.png", 32, 32),
               "",
@@ -87,7 +87,7 @@ quests = [
     quest("mana_pearl", 7.2, -1.2, "&bInfundiere Manaperlen",
           subtitle="Eine Enderperle auf Messing gebettet.",
           description=[
-              "&eRezept auf Kronwerke:&r &6Enderperle&r ins Becken, &d6 000 Mana&r, aber nur mit einem &6Messinggehäuse&r direkt &eunter dem Becken&r. Ohne Gehäuse bleibt die Perle liegen.",
+              "&eRezept auf Kronwerke:&r &6Enderperle&r ins Becken, &d6 000 Mana&r, aber nur mit einem &6Messingrahmen&r direkt &eunter dem Becken&r. Ohne Gehäuse bleibt die Perle liegen.",
               "",
               img(item_texture("botania:mana_pearl"), 32, 32),
               "",
@@ -102,7 +102,7 @@ quests = [
           description=[
               "&e4 Lebestein&r, &e2 Goldbarren&r, &e2 Braustände&r und &e1 Manaperle&r. Unter einem Manabecken lässt er das Becken Dinge umwandeln statt infundieren.",
               "",
-              "EMI zeigt alle Rezepte unter dem Katalysator. Eine Funktionsblume ins Becken mit Katalysator geworfen wird für etwas Mana kleiner: gleiche Wirkung, kleinerer Bereich.",
+              "EMI zeigt alle Rezepte unter dem Katalysator. Zehn Funktionsblumen haben eine kleine Variante: So eine Blume, ins Becken mit Katalysator geworfen, wird für etwas Mana kleiner, mit gleicher Wirkung und kleinerem Bereich.",
               "",
               "In Stufe 3 wird er zum Zauberkatalysator, siehe &aBotania: Alfheim&r.",
           ],
@@ -284,7 +284,7 @@ quests = [
           description=[
               "&e3 Laubblöcke&r, &e1 Spinnenauge&r, Katalysatoren Feuer und Luft. &d8 000 Mana&r.",
               "",
-              "Für Tigerauge, Cyazinthe, das Zirrus-Amulett, die Rune der Trägheit und die Terrastahlhose.",
+              "Für Tigerauge, Cyazinthe, das Zirrus-Amulett, die Rune der Trägheit und die Terrastahlbeinschutz.",
           ],
           tasks=[task_item("botania:rune_of_autumn", 1)],
           rewards=[reward_item("minecraft:spider_eye", 4)],
@@ -332,7 +332,7 @@ quests = [
           description=[
               "&e6 Lebestein&r, &e1 Braustand&r, &e1 Rune des Manas&r, &e1 Manastahlblock&r.",
               "",
-              "Leg eine &6Managlasphiole&r hinein (3 Managlas in V-Form ergeben 3), dann die Zutaten, und richte einen Verbreiter darauf. Gebräue haben feste Rezepte und mehrere Schlucke pro Phiole, die Lexica listet alle.",
+              "Leg eine &6Managlasampulle&r hinein (3 Managlas in V-Form ergeben 3), dann die Zutaten, und richte einen Verbreiter darauf. Gebräue haben feste Rezepte und mehrere Schlucke pro Phiole, die Lexica listet alle.",
           ],
           tasks=[task_item("botania:botanical_brewery", 1)],
           rewards=[reward_item("minecraft:nether_wart", 8), reward_xp(5)],
@@ -611,7 +611,7 @@ quests = [
     quest("plate", 17.5, 6.5, "&aBau die Terrestrische Agglomerationsplatte",
           subtitle="Die Schmiede für Terrastahl.",
           description=[
-              "&eRezept auf Kronwerke:&r oben Messinggehäuse, Lapisblock, Messinggehäuse. Mitte Rune des Wassers, Manaquarzblock, Rune des Feuers. Unten Rune der Erde, Rune des Manas, Rune der Luft.",
+              "&eRezept auf Kronwerke:&r oben Messingrahmen, Lapisblock, Messingrahmen. Mitte Rune des Wassers, Manaquarzblock, Rune des Feuers. Unten Rune der Erde, Rune des Manas, Rune der Luft.",
               "",
               "Die Runen werden hier &cverbraucht&r. Plan je eine Elementarrune und eine Rune des Manas nur für die Platte ein.",
           ],
@@ -672,9 +672,9 @@ quests = [
     quest("pearl_factory", 23.5, 6.5, "&bBau eine Perlenfabrik",
           subtitle="Sechshundert Perlen wollen verdient sein.",
           description=[
-              "Endermanfarm, Förderband zu einem Becken mit &6Messinggehäuse&r darunter, Trichtermalve am Beckenrand, Truhe. Fertig.",
+              "Endermanfarm, Förderband zu einem Becken mit &6Messingrahmen&r darunter, Trichtermalve am Beckenrand, Truhe. Fertig.",
               "",
-              "600 Perlen sind &d3,6 Millionen Mana&r und 600 Enderperlen. Abgegeben wird von Hand am Obelisken, ein Rucksack voll auf einmal.",
+              "600 Perlen (die Menge bei 30 aktiven Spielern) sind &d3,6 Millionen Mana&r und 600 Enderperlen. Abgegeben wird von Hand am Obelisken, aus dem Inventar: Einen Rucksack leert er nicht.",
           ],
           tasks=[task_item("botania:mana_pearl", 64)],
           rewards=[reward_item("minecraft:ender_pearl", 16), reward_table("s2_uncommon")],
@@ -709,7 +709,7 @@ quests = [
     quest("obelisk", 26, 9.3, "&d&lBring die Magie zum Obelisken",
           subtitle="Das Messingwerk wartet auf seine Blumen.",
           description=[
-              "Gib &e600 Manaperlen&r, &e50 Terrastahlbarren&r und &e8 Runenkerne&r am Obelisken ab. Rechtsklick legt den Stapel ab, Schleich-Rechtsklick alles.",
+              "Gib die &eManaperlen&r, die &eTerrastahlbarren&r und &e8 Runenkerne&r am Obelisken ab. Bei 30 aktiven Spielern sind es 600 Perlen und 50 Barren, die echte Menge zeigt &e/kw goals&r. Rechtsklick gibt den Stapel in deiner Hand ab, Schleichen und zweimal Rechtsklick alles Passende aus den drei Inventarreihen.",
               "",
               "Sind Technik und Magie voll, öffnet &6Stufe 3 (Stahlwerk)&r mit einem Event im Stream, und mit ihr das Elfenportal, siehe &aBotania: Alfheim&r.",
               "",
@@ -778,7 +778,7 @@ quests = [
     quest("incense", 15, 3.3, "&6Zünde Räucherwerk an",
           subtitle="Ein Gebräu für 30 Blöcke Umkreis.",
           description=[
-              "&6Räucherstäbchen&r: Lebeholzzweig diagonal, in der Mitte &6Lohenstaub&r, oben rechts eine &6Ghast-Träne&r. &6Räucherplatte&r: zwei Lebeholzstufen und ein Lebeholzstamm in einer Reihe.",
+              "&6Räucherstäbchen&r: eine Diagonale aus einem Lebeholzzweig unten links, &6Lohenstaub&r in der Mitte und einer &6Ghast-Träne&r oben rechts. &6Räucherplatte&r: zwei Lebeholzstufen und ein Lebeholzstamm in einer Reihe.",
               "",
               "In der Brauerei nimmt das Stäbchen ein Gebräu auf wie eine Phiole, kostet aber etwa zehnmal so viel Mana. Leg es auf die Platte und zünd es mit dem Feuerzeug an.",
               "",

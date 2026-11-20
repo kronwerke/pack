@@ -32,9 +32,9 @@ quests = [
 
     # ---- Stufe 1 -------------------------------------------------------------------
     quest("d_mining", 4.5, -8, "&6Die Farmwelt",
-          subtitle="Grubenrahmen, ein Quellstein, Stufe 1.",
+          subtitle="Grubenrahmen, ein Quelljuwel, Stufe 1.",
           description=[
-              "&eDas Portal:&r ein Rahmen aus &6Grubenrahmen&r wie ein Netherportal, 4 breit und 5 hoch, ohne Ecken &e10 Blöcke&r. Rechtsklick mit einem &6Quellstein&r auf die Innenseite, und es öffnet sich.",
+              "&eDas Portal:&r ein Rahmen aus &6Grubenrahmen&r wie ein Netherportal, 4 breit und 5 hoch, ohne Ecken &e10 Blöcke&r. Rechtsklick mit einem &6Quelljuwel&r auf die Innenseite, und es öffnet sich.",
               "",
               "&eDrüben:&r eine eigene Welt nur zum Graben, alle drei Tage neu. Alles Weitere im Kapitel &aErkundung&r.",
           ],
@@ -232,7 +232,7 @@ quests = [
           description=[
               "&eSo geht es:&r Teil die Oberwelt-Koordinaten deines Ziels durch 8, geh im Nether genau dorthin und bau dort ein Portal. Die beiden Portale finden sich, wenn sie nah genug beieinander liegen.",
               "",
-              "&eWarum:&r 800 Blöcke Oberwelt sind 100 Blöcke Nether. Ein gemeinsamer Tunnel aus Bruchstein auf etwa &eY 100 bis 120&r verbindet alle Basen des Servers mit dem Spawn, und Create-Gleise dürfen durch das Portal hindurch (Kapitel &6Create: Züge&r).",
+              "&eWarum:&r 800 Blöcke Oberwelt sind 100 Blöcke Nether. Ein gemeinsamer Tunnel aus Bruchstein auf etwa &eY 100 bis 120&r verbindet alle Basen des Servers mit dem Spawn. Create-Züge kommen noch nicht durch das Portal, daran wird gebaut (Kapitel &6Create: Züge&r).",
               "",
               "Sprecht euch im Chat ab, wer wo baut. Der Undergarden macht dasselbe mit 4 zu 1, nur ungemütlicher.",
           ],
@@ -288,7 +288,7 @@ quests = [
               "",
               "&eWas es kostet (Serverconfig):&r &e1 000 Chronon&r für 10 Sekunden Tür, jede weitere Sekunde 10. Das Tempad fasst 6 000, also sechs Türen. Chronon macht das &6Chronometer&r in der Hand (1 je 36 Ticks) oder das &6Metronom&r als Block (1 je 24 Ticks, 6 000 Speicher).",
               "",
-              "Wer Zeitstahl und Warpstaub schon in Stufe 2 sammelt, baut sein Gerät am ersten Abend von Stufe 3. Siehe Kapitel &6Rohre und Router&r.",
+              "Wer Warpstaub schon in Stufe 2 sammelt, baut sein Gerät am ersten Abend von Stufe 3, sobald es Zeitstahl gibt. Siehe Kapitel &6Rohre und Router&r.",
           ],
           tasks=[task_checkmark("Verstanden")],
           rewards=[reward_item("waystones:warp_dust", 2), reward_xp(3)],
@@ -363,7 +363,7 @@ quests = [
     quest("r_horse", 8.5, 12.5, "&6Sattel ein Pferd",
           subtitle="Der älteste Weg, schnell über Land zu kommen.",
           description=[
-              "&eSo geht es:&r Ein wildes &6Pferd&r so oft besteigen, bis es Herzen zeigt, dann einen &6Sattel&r auflegen. Sättel gibt es nicht an der Werkbank, sie liegen in Truhen von Verliesen, Tempeln und Dörfern.",
+              "&eSo geht es:&r Ein wildes &6Pferd&r so oft besteigen, bis es Herzen zeigt, dann einen &6Sattel&r auflegen. Sättel liegen in Truhen von Verliesen, Tempeln und Dörfern. Mit dem Aether gibt es auch ein Rezept an der Werkbank, siehe EMI.",
               "",
               "&eWarum:&r Ein gutes Pferd ist schneller als du zu Fuß, springt über Zäune und kostet weder Level noch Strom. &6Pferdefutter&r aus Farmer's Delight hilft ihm, siehe Kapitel &6Essen und Landwirtschaft&r.",
           ],
@@ -433,7 +433,7 @@ quests = [
           description=[
               "&eRezept:&r ein &6Goldbarren&r und 2 &6Archwood-Planken&r ergeben die &6Wünschelrute&r. Benutz sie, und du siehst eine Weile Amethyst und magische Wesen durch Wände hindurch. Jede Nutzung kostet Haltbarkeit.",
               "",
-              "&eWofür:&r Amethyst steckt im Warppulver, also in fast jedem Reise-Gegenstand von Waystones. Eine Tour durch die Minendimension mit der Rute findet die Geoden, ohne blind zu graben.",
+              "&eWofür:&r Amethyst steckt im Warppulver, also in fast jedem Reise-Gegenstand von Waystones. Eine Tour durch die Oberwelt mit der Rute findet die Geoden, ohne blind zu graben. In der Farmwelt gibt es keine.",
           ],
           tasks=[task_item("ars_nouveau:dowsing_rod", 1)],
           rewards=[reward_item("minecraft:amethyst_shard", 8), reward_xp(3)],

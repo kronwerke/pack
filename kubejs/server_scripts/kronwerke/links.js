@@ -70,4 +70,7 @@ ServerEvents.recipes(event => {
     D: 'forbidden_arcanus:deorum_ingot',
     P: 'create:precision_mechanism'
   }).id('kronwerke:links/artisan_relic')
+  // the dark golden bowl is the golden bowl in otherrock: the same golden sheets (round.js swaps
+  // them for the plain one), not gold ingots
+  swap('occultism:crafting/dark_golden_sacrificial_bowl', '#c:ingots/gold', 'create:golden_sheet')
 })

@@ -22,10 +22,10 @@ def head(name, text, left, y, height=0.9, kind="section", colour="brass"):
 
 quests = [
     # ---- Elite und Ultimativ -----------------------------------------------------------
-    quest("welcome", 0, 1.5, "&5&lBau einen Elite-Schaltkreis",
+    quest("welcome", 0, 1.5, "&5&lBau einen Elitärer Steuerschaltkreis",
           subtitle="Ein Schaltkreis mit Drachenstaub.",
           description=[
-              "&eRezept auf Kronwerke:&r oben Fortgeschrittener Schaltkreis, &5Draconiumstaub&r, Fortgeschrittener Schaltkreis. Darunter links und rechts je eine &6Verstärkte Legierung&r, Mitte frei.",
+              "&eRezept auf Kronwerke:&r oben Fortschrittlicher Steuerschaltkreis, &5Draconiumstaub&r, Fortschrittlicher Steuerschaltkreis. Darunter links und rechts je eine &6Verstärkte Legierung&r, Mitte frei.",
               "",
               img(item_texture("mekanism:elite_control_circuit"), 32, 32),
               "",
@@ -37,25 +37,25 @@ quests = [
           rewards=[reward_item("mekanism:alloy_reinforced", 8), reward_table("s4_common"), reward_xp(10)],
           icon="mekanism:elite_control_circuit", size=2.0, shape="hexagon"),
 
-    quest("elite_stock", 2.75, 0.5, "&aLeg 16 Elite-Schaltkreise auf Vorrat",
+    quest("elite_stock", 2.75, 0.5, "&aLeg 16 Elitäre Steuerschaltkreise auf Vorrat",
           subtitle="Der Obelisk zählt jeden einzelnen.",
           description=[
-              "Pro Stück zwei Fortgeschrittene Schaltkreise, zwei Verstärkte Legierungen, ein Draconiumstaub. Mach &e16&r.",
+              "Pro Stück zwei Fortschrittliche Steuerschaltkreise, zwei Verstärkte Legierungen, ein Draconiumstaub. Mach &e16&r.",
               "",
-              "&eKronwerke:&r Das Ziel von Stufe 4 will &e150 Elite-Schaltkreise&r (20 Punkte pro Stück) und 1 000 Draconiumbarren.",
+              "&eKronwerke:&r Das Ziel von Stufe 4 will &e150 Elitäre Steuerschaltkreise&r (20 Punkte pro Stück) und 1 000 Draconiumbarren, beide Mengen passen sich der Spielerzahl an.",
           ],
           tasks=[task_item("mekanism:elite_control_circuit", 16)],
           rewards=[reward_item("draconicevolution:draconium_dust", 8), reward_item("mekanism:alloy_reinforced", 16)],
           deps=["welcome"]),
 
-    quest("ultimate", 5.25, 1.5, "&d&lBau einen Ultimativen Schaltkreis",
+    quest("ultimate", 5.25, 1.5, "&d&lBau einen Ultimativen Steuerschaltkreis",
           subtitle="Elite in der Mitte, Atom außen.",
           description=[
-              "Eine Reihe: &6Atomlegierung&r, Elite-Schaltkreis, Atomlegierung. Der Weg über die Infusionsanlage ist auf Kronwerke entfernt.",
+              "Eine Reihe: &6Atomlegierung&r, Elitärer Steuerschaltkreis, Atomlegierung. Der Weg über die Infusionsanlage ist auf Kronwerke entfernt.",
               "",
               img(item_texture("mekanism:ultimate_control_circuit"), 32, 32),
               "",
-              "Ultimative Schaltkreise stecken in QIO, Quantenverschränkungsporter, Fusion, MekaSuit und den Maschinen der Erzverfünffachung. Mach gleich mehr.",
+              "Ultimative Steuerschaltkreise stecken in QIO, Quantenverschränkungsporter, Fusion, MekaSuit und den Maschinen der Erzverfünffachung. Mach gleich mehr.",
           ],
           tasks=[task_item("mekanism:ultimate_control_circuit", 4)],
           rewards=[reward_item("mekanism:alloy_atomic", 4), reward_table("s4_common"), reward_xp(10)],
@@ -64,7 +64,7 @@ quests = [
     quest("installers", 7.75, 0.5, "&aStuf eine Fabrik auf Elite",
           subtitle="Sieben Plätze.",
           description=[
-              "&6Elite-Installateur:&r Verstärkte Legierung in die Ecken, Elite-Schaltkreise oben und unten, Gold links und rechts, ein Brett. Rechtsklick auf eine Fortschrittliche Fabrik.",
+              "&6Elite-Installateur:&r Verstärkte Legierung in die Ecken, Elitäre Steuerschaltkreise oben und unten, Gold links und rechts, ein Brett. Rechtsklick auf eine Fortschrittliche Fabrik.",
               "",
               "Eine Elite-Fabrik arbeitet an &esieben&r Gegenständen. Das geht auch für die Fabriken von MoreMachine.",
           ],
@@ -75,7 +75,7 @@ quests = [
     quest("ultimate_installer", 10.25, 0.5, "&dStuf eine Fabrik auf Ultimativ",
           subtitle="Neun Plätze, die letzte Stufe.",
           description=[
-              "&6Ultimativ-Installateur:&r Atomlegierung in die Ecken, Ultimative Schaltkreise oben und unten, Diamanten links und rechts, ein Brett.",
+              "&6Ultimativ-Installateur:&r Atomlegierung in die Ecken, Ultimative Steuerschaltkreise oben und unten, Diamanten links und rechts, ein Brett.",
               "",
               "Eine Ultimative Fabrik hat &eneun&r Plätze. Stell die langsamste Maschine deiner Straße zuerst um, dort staut es.",
           ],
@@ -106,7 +106,7 @@ quests = [
     quest("combiner", 12.75, 1.5, "&7Bau einen Kombinierer",
           subtitle="Rohes Erz wird wieder Erzblock.",
           description=[
-              "Verstärkte Legierung in die Ecken, Elite-Schaltkreise oben und unten, Stein links und rechts, Stahlgehäuse in die Mitte.",
+              "Verstärkte Legierung in die Ecken, Elitäre Steuerschaltkreise oben und unten, Stein links und rechts, Stahlgehäuse in die Mitte.",
               "",
               "Er setzt zwei Gegenstände zu einem zusammen, etwa Rohes Erz und Bruchstein zu einem Erzblock. Mit dem &6Steingenerator-Upgrade&r braucht er keinen Bruchstein.",
           ],
@@ -117,7 +117,7 @@ quests = [
     quest("security_desk", 12.75, 3, "&8Stell ein Sicherheitspult auf",
           subtitle="Alle Maschinen auf einen Schlag sichern.",
           description=[
-              "Oben Stahl, Glas, Stahl, Mitte &6Elite-Schaltkreis&r, &6Stahlgehäuse&r, Elite-Schaltkreis, unten Stahl, &6Netzwerklesegerät&r, Stahl. Das Lesegerät ist Glas, Infundierte Legierung, ein Energietablett und Stahl.",
+              "Oben Stahl, Glas, Stahl, Mitte &6Elitärer Steuerschaltkreis&r, &6Stahlgehäuse&r, Elitärer Steuerschaltkreis, unten Stahl, &6Netzwerklesegerät&r, Stahl. Das Lesegerät ist Glas, Infundierte Legierung, ein Energietablett und Stahl.",
               "",
               "Das Pult ist die Zentrale für alles, was dir gehört: Hier trägst du &evertraute Spieler&r ein und setzt die Sicherheit aller deiner Maschinen auf einmal, statt jede einzeln umzustellen.",
               "",
@@ -142,7 +142,7 @@ quests = [
     quest("induction_casing", 2.5, 6.5, "&9Bau Induktionsgehäuse und Anschluss",
           subtitle="Die Hülle des größten Akkus.",
           description=[
-              "&6Induktionsgehäuse:&r vier Stahl um ein Energietablett, gibt vier. &6Induktionsanschluss:&r vier Gehäuse um einen &6Elite-Schaltkreis&r, gibt zwei.",
+              "&6Induktionsgehäuse:&r vier Stahl um ein Energietablett, gibt vier. &6Induktionsanschluss:&r vier Gehäuse um einen &6Elitären Steuerschaltkreis&r, gibt zwei.",
               "",
               "Die Hülle ist ein hohler Quader aus Gehäuse und Strukturglas, mindestens 3 mal 3 mal 3. Ein Anschluss nimmt Strom an, einen zweiten stellst du mit dem Konfigurator auf Ausgabe.",
           ],
@@ -188,7 +188,7 @@ quests = [
           description=[
               "&6Fortgeschrittene Induktionszelle:&r vier Einfache Zellen und vier Energietabletts im Wechsel um einen &6Fortschrittlichen Energie-Würfel&r. Sie fasst &d25,6 Milliarden FE&r.",
               "",
-              "&6Fortschrittlicher Induktionsanbieter:&r vier Einfache Anbieter und vier Fortgeschrittene Schaltkreise um einen Fortschrittlichen Würfel. Er schafft &d819 200 FE/t&r.",
+              "&6Fortschrittlicher Induktionsanbieter:&r vier Einfache Anbieter und vier Fortschrittliche Steuerschaltkreise um einen Fortschrittlichen Würfel. Er schafft &d819 200 FE/t&r.",
               "",
               "Die Elite-Stufe macht das noch einmal achtmal: 204,8 Milliarden FE pro Zelle, gut 6,5 Millionen FE/t pro Anbieter. Tausch alte Zellen einfach aus, die Hülle bleibt stehen.",
           ],
@@ -200,7 +200,7 @@ quests = [
     quest("entangloporter", 0, 11.5, "&5Bau zwei Quantenverschränkungsporter",
           subtitle="Ohne Kabel ans andere Ende der Welt.",
           description=[
-              "Ein &6Teleportationskern&r in der Mitte, Atomlegierung links und rechts, Ultimative Schaltkreise oben und unten, Raffiniertes Obsidian in die Ecken.",
+              "Ein &6Teleportationskern&r in der Mitte, Atomlegierung links und rechts, Ultimative Steuerschaltkreise oben und unten, Raffiniertes Obsidian in die Ecken.",
               "",
               "Zwei Porter auf derselben &eFrequenz&r teilen einen Puffer: Strom, Gegenstände, Flüssigkeiten, Gase und Wärme, auch zwischen Dimensionen. Mit dem Konfigurator legst du jede Seite fest.",
           ],
@@ -211,7 +211,7 @@ quests = [
     quest("qio", 2.5, 11.5, "&d&lBau ein QIO-Lager",
           subtitle="Mekanisms Lagernetz ohne Kabel.",
           description=[
-              "&6QIO Laufwerk Reihe:&r Teleportationskerne in die Ecken, Glasscheibe oben, Ultimative Schaltkreise links und rechts, Persönliche Truhe in der Mitte, Enderperle unten. &6QIO-Laufwerk:&r Blei in die Ecken, vier Ultimative Schaltkreise, eine Enderperle.",
+              "&6QIO Laufwerk Reihe:&r Teleportationskerne in die Ecken, Glasscheibe oben, Ultimative Steuerschaltkreise links und rechts, Persönliche Truhe in der Mitte, Enderperle unten. &6QIO-Laufwerk:&r Blei in die Ecken, vier Ultimative Steuerschaltkreise, eine Enderperle.",
               "",
               "Ein Laufwerk fasst &e16 000 Gegenstände&r in &e128 Sorten&r. Alle QIO-Blöcke auf derselben Frequenz sind ein Netz. Die großen Laufwerke brauchen Plutonium und Antimaterie aus Stufe 5.",
           ],
@@ -222,7 +222,7 @@ quests = [
     quest("qio_dashboard", 5, 10.75, "&dStell ein QIO-Dashboard auf",
           subtitle="Deine Konsole mit Werkbank.",
           description=[
-              "Blei in die Ecken, Enderperlen an die Seiten, oben eine Glasscheibe, unten ein Teleportationskern.",
+              "Blei in die Ecken, Enderperlen oben, links und rechts, eine Glasscheibe in die Mitte, unten ein Teleportationskern.",
               "",
               "Es zeigt alles im Netz, mit Suchfeld und Werkbankfenstern. Gib ihm dieselbe Frequenz wie der Laufwerk Reihe.",
           ],
@@ -233,7 +233,7 @@ quests = [
     quest("qio_io", 5, 12.25, "&dHäng Importeur und Exporteur an",
           subtitle="Maschinen ans Lager.",
           description=[
-              "Blei, Teleportationskern, Enderperlen, ein Ultimativer Schaltkreis und ein Klebriger Kolben. Der &6Importeur&r zieht aus einem Block ins Netz, der &6Exporteur&r schiebt nach Filter hinein.",
+              "Blei, Teleportationskern, Enderperlen, ein Ultimativer Steuerschaltkreis und ein Klebriger Kolben. Der &6Importeur&r zieht aus einem Block ins Netz, der &6Exporteur&r schiebt nach Filter hinein.",
               "",
               "Ein Exporteur mit Kohle-Filter an der Anreicherungskammer, ein Importeur am Ausgang, und die Kammer läuft aus dem Lager.",
           ],
@@ -244,7 +244,7 @@ quests = [
     quest("qio_redstone", 7.5, 13, "&dLass das Lager Redstone geben",
           subtitle="Der QIO Redstone-Adapter.",
           description=[
-              "Oben Enderperle, Redstonefackel, Enderperle, Mitte Ultimativer Schaltkreis, Redstone, Ultimativer Schaltkreis, unten Enderperle, &6Teleportationskern&r, Enderperle.",
+              "Oben Enderperle, Redstonefackel, Enderperle, Mitte Ultimativer Steuerschaltkreis, Redstone, Ultimativer Steuerschaltkreis, unten Enderperle, &6Teleportationskern&r, Enderperle.",
               "",
               "Er hängt an deiner QIO-Frequenz und überwacht eine Sorte: Gib ihm einen Gegenstand und eine Menge, dann leuchtet sein Signal, sobald so viel davon im Lager liegt.",
               "",
@@ -268,7 +268,7 @@ quests = [
     quest("stabilizer", 10, 11.5, "&7Bau einen Dimensionsstabilisator",
           subtitle="Hält Chunks geladen.",
           description=[
-              "Raffiniertes Obsidian in die Ecken, Ultimative Schaltkreise oben und unten, Atomlegierung links und rechts, ein Diamantblock in die Mitte.",
+              "Raffiniertes Obsidian in die Ecken, Ultimative Steuerschaltkreise oben und unten, Atomlegierung links und rechts, ein Diamantblock in die Mitte.",
               "",
               "Er hält die Chunks um sich herum geladen, welche, wählst du im Fenster. Für ganze Fabrikhallen besser als ein Ankerupgrade pro Maschine.",
           ],
@@ -302,7 +302,7 @@ quests = [
     quest("tritium", 2.5, 17.5, "&bAktivier Tritium",
           subtitle="Lithium unter der Sonne.",
           description=[
-              "&6Solarneutronenaktivator:&r Verstärkte Legierung, HDPE Platte, Elite-Schaltkreise, Stahlgehäuse, Bronze. Bei Sonne macht er aus &e1 mB Lithium 1 mB Tritium&r.",
+              "&6Solarneutronenaktivator:&r Verstärkte Legierung, HDPE Platte, Elitäre Steuerschaltkreise, Stahlgehäuse, Bronze. Bei Sonne macht er aus &e1 mB Lithium 1 mB Tritium&r.",
               "",
               "Er braucht freien Himmel und ruht nachts. Stell mehrere auf, einer allein ist langsam.",
           ],
@@ -324,9 +324,9 @@ quests = [
     quest("focus", 5, 18.5, "&dBau Laser-Fokusmatrizen",
           subtitle="Fusion braucht Magie zum Start.",
           description=[
-              "&eRezept auf Kronwerke:&r oben links ein &dQuellenedelsteinblock&r von Ars Nouveau, Reaktorglas oben, links, rechts und unten in der Mitte, ein Redstoneblock in die Mitte. Gibt &ezwei&r.",
+              "&eRezept auf Kronwerke:&r oben links ein &dQuelledelsteinblock&r von Ars Nouveau, Reaktorglas oben, links, rechts und unten in der Mitte, ein Redstoneblock in die Mitte. Gibt &ezwei&r.",
               "",
-              "&6Reaktorglas:&r vier Angereichertes Eisen in die Ecken, vier Blei an die Seiten, Glas in die Mitte, gibt vier. Den Quellenedelsteinblock hat jeder Magier im Lager.",
+              "&6Reaktorglas:&r vier Angereichertes Eisen in die Ecken, vier Blei an die Seiten, Glas in die Mitte, gibt vier. Den Quelledelsteinblock hat jeder Magier im Lager.",
           ],
           tasks=[task_item("mekanismgenerators:laser_focus_matrix", 1), task_item("mekanismgenerators:reactor_glass", 8)],
           rewards=[reward_item("ars_nouveau:source_gem_block", 1), reward_xp(5)],
@@ -350,7 +350,7 @@ quests = [
           description=[
               "Ein Stahlgehäuse in der Mitte, &6Atomlegierung&r in die Ecken, &6Polonium Pellets&r oben, unten, links und rechts. Gibt vier Rahmen.",
               "",
-              "Vier Rahmen um einen Ultimativen Schaltkreis geben zwei &6Fusionsreaktor-Schnittstellen&r. Rechne mit ein paar Dutzend Rahmen.",
+              "Vier Rahmen um einen Ultimativen Steuerschaltkreis geben zwei &6Fusionsreaktor-Schnittstellen&r. Rechne mit ein paar Dutzend Rahmen.",
           ],
           tasks=[task_item("mekanismgenerators:fusion_reactor_frame", 32), task_item("mekanismgenerators:fusion_reactor_port", 2)],
           rewards=[reward_item("mekanism:alloy_atomic", 4), reward_xp(10)],
@@ -359,7 +359,7 @@ quests = [
     quest("fusion", 7.75, 17.5, "&6&lZünd den Fusionsreaktor",
           subtitle="Eine kleine Sonne im Keller.",
           description=[
-              "&6Steuerung:&r Ultimative Schaltkreise oben links und rechts, Glasscheibe dazwischen, Chemikalienbehälter in der Mitte, Rahmen rundherum. Sie sitzt in der Mitte der Oberseite.",
+              "&6Steuerung:&r Ultimative Steuerschaltkreise oben links und rechts, Glasscheibe dazwischen, Chemikalienbehälter in der Mitte, Rahmen rundherum. Sie sitzt in der Mitte der Oberseite.",
               "",
               "&eForm:&r 5 mal 5 mal 5, jede Seite eine Raute (1, 3, 5, 3, 1 Blöcke). Außen Rahmen, im Plus jeder Seite Rahmen, Reaktorglas, Schnittstellen, Logikadapter oder die Fokusmatrix.",
               "",
@@ -408,7 +408,7 @@ quests = [
     quest("modstation", 2.5, 24, "&bBau eine Modifikationsstation",
           subtitle="Hier kommen die Module rein.",
           description=[
-              "HDPE Platten in die Ecken, eine Truhe oben, Ultimative Schaltkreise links und rechts, Stahlgehäuse in der Mitte, ein Polonium Pellet unten.",
+              "HDPE Platten in die Ecken, eine Truhe oben, Ultimative Steuerschaltkreise links und rechts, Stahlgehäuse in der Mitte, ein Polonium Pellet unten.",
               "",
               "Leg Rüstung oder Werkzeug hinein, dann das Modul. Im Fenster der Station schaltest du jedes Modul ein und aus und stellst es ein.",
           ],
@@ -441,7 +441,7 @@ quests = [
     quest("mekasuit", 5, 25, "&b&lZieh die MekaSuit an",
           subtitle="Netherit, aufgerüstet.",
           description=[
-              "&eJedes Teil:&r oben HDPE, Ultimativer Schaltkreis, HDPE, Mitte HDPE, das &6Netheritteil&r, HDPE, unten Polonium Pellet, Einfache Induktionszelle, Polonium Pellet.",
+              "&eJedes Teil:&r oben HDPE, Ultimativer Steuerschaltkreis, HDPE, Mitte HDPE, das &6Netheritteil&r, HDPE, unten Polonium Pellet, Einfache Induktionszelle, Polonium Pellet.",
               "",
               "Die Rüstung läuft mit Strom statt Haltbarkeit und wächst mit Modulen. Acht Polonium Pellets und vier Induktionszellen für den vollen Satz.",
           ],
@@ -453,7 +453,7 @@ quests = [
     quest("meka_tool", 7.5, 25, "&bBau das Meka-Werkzeug",
           subtitle="Ein Werkzeug für alles.",
           description=[
-              "Oben Ultimativer Schaltkreis, Konfigurator, Ultimativer Schaltkreis, Mitte HDPE, &6Atomic Disassembler&r, HDPE, unten Polonium, Induktionszelle, Polonium.",
+              "Oben Ultimativer Steuerschaltkreis, Konfigurator, Ultimativer Steuerschaltkreis, Mitte HDPE, &6Atomic Disassembler&r, HDPE, unten Polonium, Induktionszelle, Polonium.",
               "",
               "Spitzhacke, Axt, Schaufel, Hacke und Schwert mit Strom. Module für Abbautempo, Behutsamkeit, Glück und Aderabbau. Das Teleportationsmodul braucht Antimaterie aus Stufe 5.",
           ],
@@ -503,7 +503,7 @@ quests = [
           description=[
               "&6Sichtverbesserung:&r oben Verstärkte Legierung, ein &6Smaragd&r, Verstärkte Legierung, Mitte Legierung, Basismodul, Legierung, unten drei Polonium Pellets. Sie hellt die Umgebung auf, mehrere davon wirken stärker.",
               "",
-              "&6Magnetische Anziehung:&r oben Verstärkte Legierung, Eisengitter, Verstärkte Legierung, Mitte Elite-Schaltkreis, Basismodul, Elite-Schaltkreis, unten drei Polonium Pellets. Sie zieht Gegenstände in der Nähe zu dir, mehrere vergrößern die Reichweite.",
+              "&6Magnetische Anziehung:&r oben Verstärkte Legierung, Eisengitter, Verstärkte Legierung, Mitte Elitärer Steuerschaltkreis, Basismodul, Elitärer Steuerschaltkreis, unten drei Polonium Pellets. Sie zieht Gegenstände in der Nähe zu dir, mehrere vergrößern die Reichweite.",
           ],
           tasks=[task_item("mekanism:module_vision_enhancement_unit", 1), task_item("mekanism:module_magnetic_attraction_unit", 1)],
           rewards=[reward_item("minecraft:emerald", 4), reward_xp(10)],
@@ -514,7 +514,7 @@ quests = [
           description=[
               "&6Solar-Ladeeinheit:&r Verstärkte Legierung, ein &6Erweiterter Solargenerator&r, Basismodul und Polonium. Bei Sonne lädt sie die MekaSuit, mehrere laden schneller.",
               "",
-              "&6Geothermische Einheit:&r dasselbe mit einem &6Wärmegenerator&r. Sie lädt aus Hitze, Lava zählt laut Config fünfmal so viel wie Feuer, und mit voller Zahl Einheiten schluckt die Hose bis zu &e80 Prozent&r Schaden von Hitze.",
+              "&6Geothermische Einheit:&r dasselbe mit einem &6Wärmegenerator&r. Sie lädt aus Hitze, Lava lädt am stärksten, Feuer schwächer, und mit voller Zahl Einheiten schluckt die Hose bis zu &e80 Prozent&r Schaden von Hitze.",
               "",
               "Mit beiden kommst du ohne Ladepad durch einen langen Tag im Nether.",
           ],
@@ -526,7 +526,7 @@ quests = [
     quest("presser", 0, 29, "&3Bau einen Presser",
           subtitle="AE2-Prozessoren in einem Schritt.",
           description=[
-              "Die CNC Stamper in die Mitte, Elite-Schaltkreise links und rechts, Kolben oben und unten, Verstärkte Legierung in die Ecken.",
+              "Die CNC Stamper in die Mitte, Elitäre Steuerschaltkreise links und rechts, Kolben oben und unten, Verstärkte Legierung in die Ecken.",
               "",
               "Er presst drei Zutaten zu einem Teil: gedruckte Schaltung, Redstone und Gedrucktes Silizium werden zum fertigen &6AE2-Prozessor&r. Auch für Applied Flux und Advanced AE.",
           ],
@@ -537,7 +537,7 @@ quests = [
     quest("planting", 2.5, 29, "&3Bau eine Pflanzstation",
           subtitle="Ernte ohne Feld.",
           description=[
-              "Stahlgehäuse in der Mitte, Elite-Schaltkreise oben und unten, Bio-Brennstoff links und rechts, Verstärkte Legierung in die Ecken.",
+              "Stahlgehäuse in der Mitte, Elitäre Steuerschaltkreise oben und unten, Bio-Brennstoff links und rechts, Verstärkte Legierung in die Ecken.",
               "",
               "Ein Samen mit &6Nährlösung&r gibt laufend Ernte, Weizen fünf pro Durchgang. Nährlösung macht die Auflösungskammer aus Bio-Brennstoff und Nährstoffpaste (Nährstoffverflüssiger, Stufe 3).",
           ],
@@ -548,7 +548,7 @@ quests = [
     quest("large", 5, 29, "&3Bau eine große Maschine",
           subtitle="Robit in der Mitte, Stahlblöcke drumherum.",
           description=[
-              "Der &6Large C. Infuser&r: Robit in der Mitte, Ultimative Max-Chemikalienbehälters links und rechts, Ultimative Schaltkreise oben und unten, Stahlblöcke in die Ecken.",
+              "Der &6Large C. Infuser&r: Robit in der Mitte, Ultimative Max-Chemikalienbehälters links und rechts, Ultimative Steuerschaltkreise oben und unten, Stahlblöcke in die Ecken.",
               "",
               "Ebenso gibt es den großen Elektrolyseur, Rotationskondensator, Solarneutronenaktivator, Wärme- und Gasgenerator. Schau dir die Rezepte in EMI an. Der große Windgenerator kommt in Stufe 5.",
           ],
@@ -582,9 +582,9 @@ quests = [
     quest("goal", 5.5, 33, "&5&lBring Licht des Drachen zum Obelisken",
           subtitle="Schaltkreise für den Obelisken.",
           description=[
-              "Bring Elite-Schaltkreise und Draconiumbarren zum Obelisken und gib sie von Hand ab. Den Stand zeigt &e/kw goals&r.",
+              "Bring Elitäre Steuerschaltkreise und Draconiumbarren zum Obelisken und gib sie von Hand ab. Den Stand zeigt &e/kw goals&r.",
               "",
-              "&eTechnik-Pfeiler von Stufe 4:&r &6150 Elite-Steuerschaltkreise&r und &61 000 Draconiumbarren&r. Der Magie-Pfeiler will Gaia-Geister und Mystische Stäbe, beide müssen voll werden.",
+              "&eTechnik-Pfeiler von Stufe 4:&r &6150 Elitäre Steuerschaltkreise&r und &61 000 Draconiumbarren&r (passen sich der Spielerzahl an). Der Magie-Pfeiler will Gaia-Seelen und Mystische Stäbe, beide müssen voll werden.",
               "",
               "Draconiumstaub, der nicht in Schaltkreise geht, wird im Ofen zum Barren und zählt dort.",
           ],

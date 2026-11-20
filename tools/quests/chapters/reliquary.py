@@ -61,9 +61,9 @@ quests = [
     quest("mob_charm", 0, 5, "&aBau einen Mob Charm",
           subtitle="Eine Mobart, die dich nicht mehr sieht.",
           description=[
-              "Ein &6Mob Charm&r braucht fünf &6Mob Charm Fragments&r derselben Art, dazu Leder oben und Faden in der Mitte: Fragment, Leder, Fragment in der ersten Reihe, Fragment, Faden, Fragment in der zweiten, Fragment, leer, Fragment in der dritten.",
+              "Ein &6Mob Charm&r braucht sechs &6Mob Charm Fragments&r derselben Art, dazu Leder oben und Faden in der Mitte: Fragment, Leder, Fragment in der ersten Reihe, Fragment, Faden, Fragment in der zweiten, Fragment, leer, Fragment in der dritten.",
               "",
-              "Fragmente fallen mit 1 zu 60 beim Töten, oder du craftest sie aus den Drops: sechs &6Zombie Hearts&r um Fauliges Fleisch, Knochen, Fauliges Fleisch ergeben ein Zombie-Fragment, sechs &6Rib Bones&r um Knochen, Feuerstein, Knochen ein Skelett-Fragment. Jede Art hat so ein Rezept.",
+              "Fragmente fallen mit 1 zu 60 beim Töten, aber nur von Mobs ohne eigenes Rezept. Für Zombies, Skelette, Creeper und Co. craftest du sie aus den Drops: sechs &6Zombie Hearts&r um Fauliges Fleisch, Knochen, Fauliges Fleisch ergeben ein Zombie-Fragment, sechs &6Rib Bones&r um Knochen, Feuerstein, Knochen ein Skelett-Fragment. Jede Art hat so ein Rezept.",
               "",
               "Mit dem Charm im Inventar greift dich diese Mobart nicht mehr an. Jeder Kill der Art kostet 1 von &e80 Haltbarkeit&r. Der &6Charm Belt&r (drei Leder, fünf Fragmente) trägt alle Charms zusammen in einem Slot.",
           ],
@@ -136,9 +136,9 @@ quests = [
     quest("altar", 9.2, 5, "&eBau einen Altar of Light",
           subtitle="Aus Redstone wächst Glowstone.",
           description=[
-              "&6Obsidian&r, &6Redstone-Lampe&r, &6Nebulous Heart&r und &6Catalyzing Gland&r formlos ergeben den &6Altar of Light&r. Stell ihn unter freien Himmel und gib ihm mit Rechtsklick &e3 Redstone&r.",
+              "&6Obsidian&r, auf Kronwerke ein &6Spirit Attuned Gem&r von Occultism statt der Redstone-Lampe, &6Nebulous Heart&r und &6Catalyzing Gland&r formlos ergeben den &6Altar of Light&r. Stell ihn unter freien Himmel und gib ihm mit Rechtsklick &e3 Redstone&r.",
               "",
-              "Nachts arbeitet er, und nach 15 bis 25 Minuten erscheint ein &6Glowstone-Block&r über ihm. Abbauen, neues Redstone hinein, weiter. Solange er arbeitet, leuchtet er selbst mit Lichtstärke 16.",
+              "Er arbeitet am Tag und nur unter freiem Himmel, und nach 20 bis 25 Minuten erscheint ein &6Glowstone-Block&r über ihm. Abbauen, neues Redstone hinein, weiter. Solange er arbeitet, leuchtet er selbst mit Lichtstärke 16.",
               "",
               "&cAusblick:&r Der &6Tome of Alkahestry&r, der Items mit Redstone-Ladung verdoppelt, braucht einen Witherskelettschädel und viele Tropfen und öffnet erst mit &6Stufe 3&r. Der Altar ist sein Einstieg, und Glowstone ist bis dahin auch so wertvoll.",
           ],

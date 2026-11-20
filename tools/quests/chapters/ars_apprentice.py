@@ -671,12 +671,12 @@ quests = [
           rewards=[reward_item("ars_nouveau:source_gem", 8), reward_xp(5)],
           deps=["welcome"], icon="create:empty_blaze_burner", size=1.25),
 
-    quest("calibrated_mechanism", 2.5, 29, "&6Kalibrier einen Präzisionsmechanismus",
+    quest("calibrated_mechanism", 2.5, 29, "&6Kalibrier einen Präzisionsgetriebe",
           subtitle="Ars Technica: Präzision trifft Magie.",
           description=[
-              "Im Apparat: &6Präzisionsmechanismus&r von Create in die Mitte, &e4 Amethystsplitter&r und &e4 Quelljuwelen&r auf die Podeste, &d500 Quelle&r.",
+              "Im Apparat: &6Präzisionsgetriebe&r von Create in die Mitte, &e4 Amethystsplitter&r und &e4 Quelljuwelen&r auf die Podeste, &d500 Quelle&r.",
               "",
-              "Der &6Calibrated Precision Mechanism&r steckt im Source Motor, im Spy Monocle und im Arcane Wrench (Create-Schraubenschlüssel mit Gold und Manipulationsessenz). Präzisionsmechanismen sind auch ein Stufenziel, sprich dich mit den Create-Bauern ab.",
+              "Der &6Calibrated Precision Mechanism&r steckt im Source Motor, im Spy Monocle und im Arcane Wrench (Create-Schraubenschlüssel mit Gold und Manipulationsessenz). Präzisionsgetriebe sind auch ein Stufenziel, sprich dich mit den Create-Bauern ab.",
           ],
           tasks=[task_item("ars_technica:calibrated_precision_mechanism", 1)],
           rewards=[reward_item("minecraft:amethyst_shard", 8), reward_xp(5)],

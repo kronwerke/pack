@@ -226,7 +226,9 @@ RULES = [
         "occultism:book_of_binding_bound_foliot", "occultism:book_of_binding_bound_djinni",
         "occultism:pentacle_summon", "occultism:pentacle_possess", "occultism:pentacle_craft", "occultism:pentacle_misc",
         "occultism:sacrificial_bowl", "occultism:golden_sacrificial_bowl", "occultism:copper_sacrificial_bowl",
-        "occultism:silver_sacrificial_bowl", "re:^occultism:chalk_", "occultism:ritual_satchel_t1",
+        "occultism:silver_sacrificial_bowl", "occultism:dark_sacrificial_bowl", "occultism:dark_golden_sacrificial_bowl",
+        "occultism:dark_copper_sacrificial_bowl", "occultism:dark_silver_sacrificial_bowl",
+        "re:^occultism:chalk_", "occultism:ritual_satchel_t1",
         "@hexerei", "@evilcraft", "@forbidden_arcanus", "@reliquary",
     ]),
     (3, [

@@ -104,7 +104,7 @@ quests = [
     quest("control_rod", 5, 3, "&7Setz Steuerstäbe obendrauf",
           subtitle="Einer pro Säule.",
           description=[
-              "&6Kontrollstabbaugruppe:&r Blei, Stahl und ein &6Elite-Schaltkreis&r. Auf jede Säule kommt oben genau eine.",
+              "&6Kontrollstabbaugruppe:&r Blei, Stahl und ein &6Elitärer Steuerschaltkreis&r. Auf jede Säule kommt oben genau eine.",
               "",
               "Ohne Steuerstab zählt die Säule nicht. Wie gut gekühlt wird, zeigt der Reaktor später als Siedeeffizienz.",
           ],
@@ -115,7 +115,7 @@ quests = [
     quest("ports", 7.5, 3, "&7Bau Reaktor-Schnittstellen",
           subtitle="Rein mit Brennstoff und Wasser, raus mit Dampf und Abfall.",
           description=[
-              "Gehäuse und ein &6Elite-Schaltkreis&r geben zwei &6Kernreaktor-Schnittstellen&r. Du brauchst vier: Brennstoff, Kühlmittel, Dampf und Abfall.",
+              "Gehäuse und ein &6Elitärer Steuerschaltkreis&r geben zwei &6Kernreaktor-Schnittstellen&r. Du brauchst vier: Brennstoff, Kühlmittel, Dampf und Abfall.",
               "",
               "Mit dem &6Konfigurator&r schaltest du den Modus jeder Schnittstelle um.",
           ],
@@ -266,7 +266,7 @@ quests = [
     quest("sps_port", 2.5, 12.5, "&dBau SPS-Ports",
           subtitle="Polonium rein, Antimaterie raus.",
           description=[
-              "4 &6SPS-Gehäuse&r um einen &6Ultimativen Schaltkreis&r ergeben einen &6SPS-Port&r.",
+              "4 &6SPS-Gehäuse&r um einen &6Ultimativen Steuerschaltkreis&r ergeben einen &6SPS-Port&r.",
               "",
               "Ports sitzen in der Hülle. Mit dem Konfigurator schaltest du sie auf Eingang oder Ausgang.",
           ],
@@ -277,7 +277,7 @@ quests = [
     quest("coil", 2.5, 14.5, "&dBau eine Hochaufgeladene Spule",
           subtitle="Hier kommt der Strom hinein.",
           description=[
-              "Oben 3 &6Kupferbarren&r, in der Mitte ein &6Laser&r zwischen 2 &6Ultimativen Schaltkreisen&r, unten 3 &6Polonium-Pellets&r.",
+              "Oben 3 &6Kupferbarren&r, in der Mitte ein &6Laser&r zwischen 2 &6Ultimativen Steuerschaltkreisen&r, unten 3 &6Polonium-Pellets&r.",
               "",
               "Die Spule sitzt direkt an einem SPS-Port, sonst formt sich das SPS nicht. Über sie fließt der Strom hinein.",
           ],
@@ -335,7 +335,7 @@ quests = [
     quest("nucleosynthesizer", 0, 17.5, "&dBau einen Antiprotonischen Kernsynthesizer",
           subtitle="Kohle zu Diamant, Ei zu Drachenei.",
           description=[
-              "Ein &6Stahlgehäuse&r in die Mitte, 2 &6Antimaterie-Pellets&r links und rechts, 2 &6Ultimative Schaltkreise&r oben und unten, 4 &6Atomlegierungen&r in die Ecken.",
+              "Ein &6Stahlgehäuse&r in die Mitte, 2 &6Antimaterie-Pellets&r links und rechts, 2 &6Ultimative Steuerschaltkreise&r oben und unten, 4 &6Atomlegierungen&r in die Ecken.",
               "",
               "Er verwandelt Dinge mit ein paar mB Antimaterie: Kohle zu Diamant (4 mB), Ei zu Drachenei, dazu Eisen, Lapis, Redstone, Quarz, Glowstone, Smaragd, Echoscherben, Herz des Meeres. Die zwei Pellets fehlen dem Obelisken.",
           ],
@@ -401,7 +401,7 @@ quests = [
     quest("replicator", 5, 17.5, "&3Bau einen Replikator",
           subtitle="Mekanism MoreMachine kopiert Dinge.",
           description=[
-              "Eine &6UU-Materie&r, &6Atomlegierung&r, 2 &6Ultimative Schaltkreise&r und ein &6Stahlgehäuse&r. Es gibt ihn für Gegenstände, Flüssigkeiten und Chemikalien.",
+              "Eine &6UU-Materie&r, &6Atomlegierung&r, 2 &6Ultimative Steuerschaltkreise&r und ein &6Stahlgehäuse&r. Es gibt ihn für Gegenstände, Flüssigkeiten und Chemikalien.",
               "",
               "&eRezept auf Kronwerke:&r Der Gegenstands-Replikator kopiert nur &eSteine&r und &eErze&r (je 1 mB), &eStämme&r (4 mB), &eBretter&r (1 mB) und &eEisen-, Kupfer- und Goldbarren&r (je 5 mB). Der Chemikalien-Replikator kopiert nichts.",
               "",

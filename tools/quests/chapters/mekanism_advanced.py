@@ -22,7 +22,7 @@ def head(name, text, left, y, height=0.9, kind="section", colour="brass"):
 
 quests = [
     # ---- Der Schaltkreis ---------------------------------------------------------------
-    quest("welcome", 0, 1.5, "&5&lBau einen Fortgeschrittenen Schaltkreis",
+    quest("welcome", 0, 1.5, "&5&lBau einen Fortschrittlichen Steuerschaltkreis",
           subtitle="Ein Schaltkreis, der Silizium braucht.",
           description=[
               "&eRezept auf Kronwerke:&r oben Infundierte Legierung, Einfacher Steuerschaltkreis, Infundierte Legierung, darunter in der Mitte ein &6Gedrucktes Silizium&r aus dem AE2-Inscriber mit der Silizium-Presse. Andere Wege gibt es nicht.",
@@ -40,9 +40,9 @@ quests = [
     quest("circuits", 2.75, 0.5, "&aLeg 16 Schaltkreise auf Vorrat",
           subtitle="Jede neue Maschine will zwei.",
           description=[
-              "Mach &e16 Fortgeschrittene Steuerschaltkreise&r. Der Engpass ist das Gedruckte Silizium: tausch mit einem AE2-Spieler oder bau die CNC Stamper weiter unten.",
+              "Mach &e16 Fortschrittliche Steuerschaltkreise&r. Der Engpass ist das Gedruckte Silizium: tausch mit einem AE2-Spieler oder bau die CNC Stamper weiter unten.",
               "",
-              "&eKronwerke:&r Der Obelisk will in Stufe 3 &e250 Fortgeschrittene Schaltkreise&r, jeder zählt acht Punkte. Ein Vorrat lohnt sich doppelt.",
+              "&eKronwerke:&r Der Obelisk will in Stufe 3 &e250 Fortschrittliche Steuerschaltkreise&r (Menge passt sich der Spielerzahl an), jeder zählt acht Punkte. Ein Vorrat lohnt sich doppelt.",
           ],
           tasks=[task_item("mekanism:advanced_control_circuit", 16)],
           rewards=[reward_item("mekanism:basic_control_circuit", 8), reward_item("mekanism:alloy_infused", 16)],
@@ -65,7 +65,7 @@ quests = [
           description=[
               "Eine &6Infundierte Legierung&r mit &e20 mB Diamant&r gibt eine &6Verstärkte Legierung&r.",
               "",
-              "Der Meilenstein der Magier, der &6Elfenstern&r, braucht eine. Die Magier können sie nicht selbst machen, bring ihnen welche. In Stufe 4 steckt sie im Elite-Schaltkreis.",
+              "Der Meilenstein der Magier, der &6Elfenstern&r, braucht eine. Die Magier können sie nicht selbst machen, bring ihnen welche. In Stufe 4 steckt sie im Elitärer Steuerschaltkreis.",
           ],
           tasks=[task_item("mekanism:alloy_reinforced", 8)],
           rewards=[reward_item("mekanism:alloy_infused", 8), reward_table("s3_common")],
@@ -74,7 +74,7 @@ quests = [
     quest("compressor", 8, 2.5, "&7Bau einen Osmium-Kompressor",
           subtitle="Presst Staub mit Osmium zu Barren.",
           description=[
-              "Legierung in die Ecken, Fortgeschrittene Schaltkreise oben und unten, Eimer links und rechts, Stahlgehäuse in die Mitte.",
+              "Legierung in die Ecken, Fortschrittliche Steuerschaltkreise oben und unten, Eimer links und rechts, Stahlgehäuse in die Mitte.",
               "",
               "Leg &6Osmiumbarren&r in den Chemikalien-Slot, jeder gibt &e200 mB&r Osmium. Die Maschine verbraucht es, solange sie presst.",
           ],
@@ -156,16 +156,16 @@ quests = [
           rewards=[reward_item("botania:mana_pearl", 8), reward_xp(5)],
           deps=["atomic"], icon="mekanism:teleportation_core"),
 
-    quest("teleporter", 2.5, 6.25, "&d&lStell zwei Teleporter auf",
+    quest("teleporter", 2.5, 6.25, "&d&lStell einen Teleporter auf",
           subtitle="Von Basis zu Basis in einem Schritt.",
           description=[
               "&6Teleporter:&r der Kern in der Mitte, Stahlgehäuse an den Seiten, Schaltkreise in die Ecken. &6Rahmen:&r acht Raffinierte Obsidianbarren um einen Raffinierten Glowstonebarren geben neun.",
               "",
-              "Bau einen Rahmen &e3 breit und 4 hoch&r mit einer Öffnung von 1 mal 2: der Teleporter unten in der Mitte, &e9 Rahmenblöcke&r links, rechts und oben. Gib beiden dieselbe &eFrequenz&r und Strom.",
+              "Bau einen Rahmen &e3 breit und 4 hoch&r mit einer Öffnung von 1 mal 2: der Teleporter unten in der Mitte, &e9 Rahmenblöcke&r links, rechts und oben. Die Quest will ein Portal. Für die Strecke brauchst du ein zweites, zusammen 2 Teleporter und 18 Rahmenblöcke. Gib beiden dieselbe &eFrequenz&r und Strom.",
               "",
               "Jeder Sprung kostet Strom, je weiter, desto mehr, in eine andere Dimension deutlich mehr.",
           ],
-          tasks=[task_item("mekanism:teleporter", 1), task_item("mekanism:teleporter_frame", 13)],
+          tasks=[task_item("mekanism:teleporter", 1), task_item("mekanism:teleporter_frame", 9)],
           rewards=[reward_item("mekanism:ingot_refined_obsidian", 8), reward_item("minecraft:ender_pearl", 4), reward_xp(10)],
           deps=["teleport_core", "refined_glowstone"], icon="mekanism:teleporter", size=1.5, shape="hexagon"),
 
@@ -258,7 +258,7 @@ quests = [
     quest("installer", 10.5, 7, "&a&lStuf eine Fabrik auf Fortschrittlich",
           subtitle="Aus drei Plätzen werden fünf.",
           description=[
-              "&6Fortgeschrittener Stufen Installateur:&r Legierung in die Ecken, Fortgeschrittene Schaltkreise oben und unten, Osmium links und rechts, ein Brett. Rechtsklick auf eine Einfache Fabrik.",
+              "&6Fortgeschrittener Stufen Installateur:&r Legierung in die Ecken, Fortschrittliche Steuerschaltkreise oben und unten, Osmium links und rechts, ein Brett. Rechtsklick auf eine Einfache Fabrik.",
               "",
               "Eine Fortschrittliche Fabrik arbeitet an &efünf&r Gegenständen gleichzeitig. Elite (7) und Ultimativ (9) kommen in Stufe 4.",
           ],
@@ -293,7 +293,7 @@ quests = [
           description=[
               "Der Einfache Würfel in die Mitte, Osmium links und rechts, Energietabletts oben und unten, Legierung in die Ecken. &d6,4 Millionen FE&r, &d6 400 FE/t&r Abgabe.",
               "",
-              "Die Induktionsmatrix für Milliarden FE braucht Elite-Schaltkreise und Lithium und kommt in Stufe 4.",
+              "Die Induktionsmatrix für Milliarden FE braucht Elitäre Steuerschaltkreise und Lithium und kommt in Stufe 4.",
           ],
           tasks=[task_item("mekanism:advanced_energy_cube", 1)],
           rewards=[reward_item("mekanism:energy_tablet", 2)],
@@ -314,7 +314,7 @@ quests = [
     quest("adv_tanks", 15.5, 6.25, "&bStuf Tanks und Tonnen hoch",
           subtitle="Doppelt, vierfach, doppelt so viel.",
           description=[
-              "Jeder einfache Speicher mit Legierung und Osmium drumherum wird fortschrittlich. &6Flüssigkeitstank&r 64 000 mB, &6Chemikalienbehälter&r 256 000 mB, &6Tonne&r 8 192 Stück.",
+              "Jeder einfache Speicher wird an der Werkbank fortschrittlich: der Chemikalienbehälter mit Infundierter Legierung und Osmium drumherum, der Flüssigkeitstank mit Legierung und Eisen, die Tonne mit zwei Legierungen, einem Fortschrittlichen Steuerschaltkreis und Bruchstein. &6Flüssigkeitstank&r 64 000 mB, &6Chemikalienbehälter&r 256 000 mB, &6Tonne&r 8 192 Stück.",
               "",
               "Der Inhalt bleibt beim Hochstufen an der Werkbank erhalten.",
           ],
@@ -328,7 +328,7 @@ quests = [
           description=[
               "Vier Stahl um einen Kupferbarren geben vier &6Wärmeverdampfungsblöcke&r. Für einen kleinen Turm brauchst du rund drei Dutzend.",
               "",
-              "Vier Blöcke um einen Fortgeschrittenen Schaltkreis geben ein &6Ventil&r.",
+              "Vier Blöcke um einen Fortschrittlichen Steuerschaltkreis geben ein &6Ventil&r.",
           ],
           tasks=[task_item("mekanism:thermal_evaporation_block", 32), task_item("mekanism:thermal_evaporation_valve", 2)],
           rewards=[reward_item("minecraft:copper_ingot", 16), reward_xp(5)],
@@ -383,7 +383,7 @@ quests = [
     quest("boiler", 2.5, 14, "&6&lBau einen Thermoelektrischen Dampfkessel",
           subtitle="Wasser rein, Dampf raus.",
           description=[
-              "&6Kesselgehäuse:&r vier Stahl um Eisen, gibt vier. &6Kesselventil:&r vier Gehäuse um einen Fortgeschrittenen Schaltkreis, gibt zwei. Innen &6Überhitzungselemente&r unten, eine Ebene &6Druckventile&r darüber trennt Wasser und Dampf.",
+              "&6Kesselgehäuse:&r vier Stahl um Eisen, gibt vier. &6Kesselventil:&r vier Gehäuse um einen Fortschrittlichen Steuerschaltkreis, gibt zwei. Innen &6Überhitzungselemente&r unten, eine Ebene &6Druckventile&r darüber trennt Wasser und Dampf.",
               "",
               "Wasser durch ein Ventil hinein, Wärme dazu, &bDampf&r aus einem anderen Ventil heraus, das du mit dem Konfigurator auf Ausgabe stellst. Der Dampf treibt die Industrieturbine.",
           ],
@@ -406,7 +406,7 @@ quests = [
     quest("turbine_rotor", 8.5, 12, "&7Bau Rotoren und Blätter",
           subtitle="Das Innere der Turbine.",
           description=[
-              "&6Rotor:&r drei Reihen Stahl, Legierung, Stahl. &6Rotorblatt:&r vier Stahl um Legierung. &6Rotationskomplex:&r Stahl, Legierung und zwei Fortgeschrittene Schaltkreise.",
+              "&6Rotor:&r drei Reihen Stahl, Legierung, Stahl. &6Rotorblatt:&r vier Stahl um Legierung. &6Rotationskomplex:&r Stahl, Legierung und zwei Fortschrittliche Steuerschaltkreise.",
               "",
               "Die Rotoren stehen als Säule in der Mitte, jeder trägt bis zu zwei Blätter (Rechtsklick), der Komplex sitzt oben drauf.",
           ],
@@ -440,7 +440,7 @@ quests = [
     quest("turbine", 16, 12, "&6&lSetz die Industrieturbine zusammen",
           subtitle="Dampf rein, Strom raus.",
           description=[
-              "&6Turbinenventile&r (Gehäuse und Fortgeschrittener Schaltkreis) in die Hülle für Dampf rein und Strom raus. &6Turbinenabzüge&r (Gehäuse und Eisengitter) auf Höhe des Komplexes oder darüber. &6Sammlerkondensatoren&r über den Druckventilen machen Abdampf zu Wasser.",
+              "&6Turbinenventile&r (Gehäuse und Fortschrittlicher Steuerschaltkreis) in die Hülle für Dampf rein und Strom raus. &6Turbinenabzüge&r (Gehäuse und Eisengitter) auf Höhe des Komplexes oder darüber. &6Sammlerkondensatoren&r über den Druckventilen machen Abdampf zu Wasser.",
               "",
               "Dampf kommt aus dem Kessel. Die Leistung hängt von Blättern, Spulen und Dampfmenge ab, die Turbine wächst mit deinem Kraftwerk bis zur Fusion und zum Spaltreaktor.",
           ],
@@ -488,7 +488,7 @@ quests = [
     quest("flamethrower", 5, 17.5, "&cBau einen Flammenwerfer",
           subtitle="Wasserstoff als Waffe.",
           description=[
-              "Zinn, ein Chemikalienbehälter, ein Feuerzeug, Bronze und ein Fortgeschrittener Schaltkreis. Er verschießt brennenden &bWasserstoff&r.",
+              "Zinn, ein Chemikalienbehälter, ein Feuerzeug, Bronze und ein Fortschrittlicher Steuerschaltkreis. Er verschießt brennenden &bWasserstoff&r.",
               "",
               "Füll ihn wie das Jetpack in einem Chemikalienbehälter. Einer seiner Modi schmilzt, was er trifft.",
           ],
@@ -511,7 +511,7 @@ quests = [
     quest("stamping_factory", 11, 16.75, "&3Mach eine Stanzfabrik",
           subtitle="Drei Pressen in einem Block.",
           description=[
-              "Die CNC Stamper in die Mitte des Installateur-Musters (Redstone, Schaltkreise, Eisen) gibt die &6Einfache Stanzfabrik&r. Mit Fortgeschrittenen Schaltkreisen wird sie fortschrittlich.",
+              "Die CNC Stamper in die Mitte des Installateur-Musters (Redstone, Schaltkreise, Eisen) gibt die &6Einfache Stanzfabrik&r. Mit Fortschrittlichen Steuerschaltkreisen wird sie fortschrittlich.",
               "",
               "Jede MoreMachine-Maschine hat eigene Fabriken. Elite und Ultimativ kommen in Stufe 4.",
           ],
@@ -544,7 +544,7 @@ quests = [
     quest("recycler", 13.5, 16.75, "&3Bau einen Recycler",
           subtitle="Stein wird Schrott.",
           description=[
-              "Ein Zerkleinerer in die Mitte, Osmium links und rechts, Fortgeschrittene Schaltkreise oben und unten, Legierung in die Ecken.",
+              "Ein Zerkleinerer in die Mitte, Osmium links und rechts, Fortschrittliche Steuerschaltkreise oben und unten, Legierung in die Ecken.",
               "",
               "Stein und Erde werden zu &e17 Prozent&r &6Schrott&r, Substrat zu 43 Prozent. Schrott ist der Rohstoff für die Replikatoren, die erst in Stufe 5 öffnen. Bis dahin ist er ein Mülleimer mit Bonus.",
           ],
@@ -555,7 +555,7 @@ quests = [
     quest("mid_tank", 16, 17.5, "&3Bau einen Mittleren Chemikalienbehälter",
           subtitle="Mehr Gas auf einem Block.",
           description=[
-              "Fünf Dynamische Tanks um zwei Einfache Chemikalienbehälter geben den &6Basic Mid Chemical Tank&r. Mit fünf weiteren Dynamischen Tanks um ihn wird er zum &6Max&r-Tank.",
+              "Sieben Dynamische Tanks um zwei Einfache Chemikalienbehälter geben den &6Basic Mid Chemical Tank&r. Der &6Max&r-Tank braucht zwei Mid-Tanks und weitere Dynamische Tanks, EMI zeigt das Muster.",
               "",
               "Beide stufst du mit Legierungen hoch wie normale Behälter. Die großen MoreMachine-Maschinen in Stufe 4 brauchen ultimative Max-Tanks.",
           ],
@@ -567,7 +567,7 @@ quests = [
     quest("steel_core", 0, 22, "&6Bau einen Stahlkern",
           subtitle="Der Meilenstein des Stahlwerks.",
           description=[
-              "&eRezept:&r oben Schwerer Technikblock, &6Fortgeschrittener Schaltkreis&r, Schwerer Technikblock. Mitte Technikprozessor, &6Stahlgehäuse&r, Technikprozessor. Unten Schwerer Technikblock, &aElementiumbarren&r, Schwerer Technikblock.",
+              "&eRezept:&r oben Schwerer Ingenieursbaustein, &6Fortschrittlicher Steuerschaltkreis&r, Schwerer Ingenieursbaustein. Mitte Konstruktionsprozessor, &6Stahlgehäuse&r, Konstruktionsprozessor. Unten Schwerer Ingenieursbaustein, &aElementiumbarren&r, Schwerer Ingenieursbaustein.",
               "",
               img("kronwerke:textures/item/steel_core.png", 32, 32),
               "",
@@ -582,7 +582,7 @@ quests = [
           description=[
               "Sammle Stahl und Schaltkreise in Kisten und gib sie von Hand am Obelisken ab: Schleichen und zweimal Rechtsklick mit einem Item in der Hand gibt alles Passende aus den drei Inventarreihen ab. Den Stand zeigt &e/kw goals&r.",
               "",
-              "&eTechnik-Pfeiler von Stufe 3:&r &64 000 Stahlbarren&r, &6250 Fortgeschrittene Schaltkreise&r, &68 Stahlkerne&r. Der Magie-Pfeiler will Elementium, Afrit-Essenz und Elfensterne, und beide müssen voll werden.",
+              "&eTechnik-Pfeiler von Stufe 3:&r &64 000 Stahlbarren&r und &6250 Fortschrittliche Steuerschaltkreise&r (beide passen sich der Spielerzahl an), dazu fest &68 Stahlkerne&r. Der Magie-Pfeiler will Elementium, Afrit-Essenz und Elfensterne, und beide müssen voll werden.",
               "",
               "Die Magier brauchen deine Verstärkte Legierung für die Elfensterne, du ihr Elementium für die Stahlkerne.",
           ],

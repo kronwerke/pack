@@ -47,7 +47,7 @@ quests = [
     quest("welcome", 0, 1, "&5&lGrab Osmium aus",
           subtitle="Das Metall, aus dem Mekanism gebaut ist.",
           description=[
-              "Bau &68 Rohes Osmium&r ab. Die großen Adern sitzen im Gebirge über &eY 72&r, mittlere zwischen Y -32 und Y 56, kleine überall unter Y 64.",
+              "Bau &68 Rohes Osmium&r ab. Die meisten Adern sitzen im Gebirge über &eY 72&r, mittlere zwischen Y -32 und Y 56, kleine überall unter Y 64.",
               "",
               "&5Mekanism&r ist der große Technikmod von Kronwerke: Maschinen mit Strom, Gase in Schläuchen, am Ende Fusion und Antimaterie. Fast jedes Teil davon enthält Osmium.",
               "",
@@ -120,7 +120,7 @@ quests = [
           description=[
               "&6Angereichertes Eisen&r mit &e10 mB Kohlenstoff&r gibt &6Stahlstaub&r. Im Ofen wird er zum &6Stahlbarren&r, im Schmelzofen doppelt so schnell.",
               "",
-              "Stahl steckt in jedem Gehäuse, Kabel und Rohr. &eKronwerke:&r Das Ziel von Stufe 3 will &e4 000 Stahlbarren&r. Stahl aus dem Hochofen von Immersive Engineering zählt genauso.",
+              "Stahl steckt in jedem Gehäuse, Kabel und Rohr. &eKronwerke:&r Das Ziel von Stufe 3 will bei 30 aktiven Spielern &e4 000 Stahlbarren&r. Stahl aus dem Hochofen von Immersive Engineering zählt genauso.",
               "",
               img(item_texture("mekanism:ingot_steel"), 32, 32),
           ],
@@ -142,7 +142,7 @@ quests = [
     quest("tools", 17.5, 0, "&7Schmied dir eine Stahlspitzhacke",
           subtitle="Mekanism Tools: haltbarer als Eisen.",
           description=[
-              "Drei &6Stahlbarren&r und zwei Stöcke, wie jede Spitzhacke. Mekanism Tools hat ganze Sätze aus Osmium, Bronze, Stahl, Glowstone und Obsidian.",
+              "Drei &6Stahlbarren&r und zwei Eisenbarren als Griff: Stahlwerkzeug hat keinen Stock. Mekanism Tools hat ganze Sätze aus Osmium, Bronze, Stahl, Glowstone und Obsidian.",
               "",
               "Praktisch ist die &6Paxel&r: Spitzhacke, Axt und Schaufel in einem, aus den drei Werkzeugen und zwei Barren.",
           ],
@@ -181,7 +181,7 @@ quests = [
               "",
               "Jede Maschine nach der Infusionsanlage braucht welche. Ein Dutzend Vorrat spart viele Wechsel des Infusionsstoffs.",
               "",
-              "&cAusblick:&r Der Fortgeschrittene Schaltkreis kommt in Stufe 3 mit Gedrucktem Silizium aus AE2, der Elite-Schaltkreis in Stufe 4 mit Draconiumstaub.",
+              "&cAusblick:&r Der Fortschrittliche Steuerschaltkreis kommt in Stufe 3 mit Gedrucktem Silizium aus AE2, der Elitäre Steuerschaltkreis in Stufe 4 mit Draconiumstaub.",
           ],
           tasks=[task_item("mekanism:basic_control_circuit", 4)],
           rewards=[reward_item("mekanism:ingot_osmium", 16), reward_item("minecraft:redstone_block", 2)],
@@ -248,7 +248,7 @@ quests = [
           description=[
               "&eRezept auf Kronwerke:&r Stahlgehäuse in die Mitte, links und rechts ein &6Mahlwerkrad&r statt der Lavaeimer, Schaltkreise oben und unten, Redstone in die Ecken.",
               "",
-              "Er macht Barren zu Staub, Bruchstein zu Kies, Obsidian zu vier Obsidianstaub (Stufe 3 braucht den). Pflanzen und Essen werden zu &6Bio-Brennstoff&r, ein Apfel zu zwei.",
+              "Er macht Barren zu Staub, Bruchstein zu Kies, Obsidian zu vier Pulverisiertem Obsidian von Create (Stufe 3 braucht den). Pflanzen und Essen werden zu &6Bio-Brennstoff&r, ein Apfel zu zwei.",
               "",
               "&eNether-Tipp:&r Eine Lohenrute gibt hier vier Lohenstaub statt zwei.",
           ],
@@ -259,7 +259,7 @@ quests = [
     quest("sawmill", 5, 9, "&eBau ein Präzisionssägewerk",
           subtitle="Sechs Bretter pro Stamm.",
           description=[
-              "Stahlgehäuse, Schaltkreise, Eisen und Bretter. Ein Stamm wird zu &esechs Brettern&r statt vier, dazu ab und zu &6Sägemehl&r.",
+              "Stahlgehäuse, Schaltkreise, Eisen und Infundierte Legierung. Ein Stamm wird zu &esechs Brettern&r statt vier, dazu ab und zu &6Sägemehl&r.",
               "",
               "Treppen, Türen und Truhen zerlegt es wieder in Holz. Sägemehl wird zur Kartonschachtel, mit der du Blöcke samt Inhalt umziehst.",
           ],
@@ -733,9 +733,9 @@ quests = [
     quest("outlook", 19, 23.5, "&dSchau auf Stufe 3",
           subtitle="Was hinter dem Stahlziel wartet.",
           description=[
-              "Mit Stufe 3 öffnet das Kapitel &5Mekanism: Fortgeschritten&r: Fortgeschrittener Schaltkreis (mit Gedrucktem Silizium aus AE2), Teleporter, Digitaler Miner, Industrieturbine, Wärmeverdampfung und die fortschrittliche Stufe.",
+              "Mit Stufe 3 öffnet das Kapitel &5Mekanism: Fortgeschritten&r: Fortschrittlicher Steuerschaltkreis (mit Gedrucktem Silizium aus AE2), Teleporter, Digitaler Miner, Industrieturbine, Wärmeverdampfung und die fortschrittliche Stufe.",
               "",
-              "Das Ziel von Stufe 3 will Stahl, Fortgeschrittene Schaltkreise und Stahlkerne. Jede Stahlstraße, die jetzt läuft, bringt den Server hin.",
+              "Das Ziel von Stufe 3 will Stahl, Fortschrittliche Steuerschaltkreise und Stahlkerne. Jede Stahlstraße, die jetzt läuft, bringt den Server hin.",
           ],
           tasks=[task_checkmark("Gelesen")],
           rewards=[reward_xp(10)],

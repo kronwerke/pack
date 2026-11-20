@@ -1,0 +1,28 @@
+{
+  "criteria": {
+    "has": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "functionalstorage:oak_1",
+              "functionalstorage:spruce_1",
+              "functionalstorage:birch_1",
+              "functionalstorage:jungle_1",
+              "functionalstorage:acacia_1",
+              "functionalstorage:dark_oak_1",
+              "functionalstorage:mangrove_1",
+              "functionalstorage:cherry_1",
+              "functionalstorage:crimson_1",
+              "functionalstorage:warped_1"
+            ],
+            "count": {
+              "min": 4
+            }
+          }
+        ]
+      }
+    }
+  }
+}

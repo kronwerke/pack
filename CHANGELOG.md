@@ -619,3 +619,33 @@ Core 0.39.33 (13.11.2026): a right click on the obelisk with a block in the hand
 ## 0.24.54
 
 - Quest book in English: Logistics (145 lines). 5928 of 16453 lines are translated.
+
+## 0.25.0
+
+- The quest book is complete in English: all 74 chapters (16.11.2026).
+
+## 0.25.1
+
+- Kronwerke Core 0.39.40: the website's quest book shows a signed in player what their team has done (20.11.2026).
+
+## 0.25.2
+
+The quest book was read against the pack, chapter by chapter (20.11.2026): every recipe, number and name in the 74 chapters against the mods' own recipes, the server configs and the pack's scripts. About 350 places were wrong or out of date. This release corrects them, in German and English, together with what Samuel decided on the questions the reading raised.
+
+- Decided by Samuel:
+  - Ars Additions: the Ritual of Arcane Permanence is on. Ars Elemental: the glyph that skips invulnerability frames has its recipe again.
+  - Quarry Plus: the Remove Bedrock Module works.
+  - Oritech's two by two crafting recipe for steel is gone, and so are its five recipes that made electrum from gold and redstone without silver. Steel still comes from the foundry and the heated mixer.
+  - Mahou Tsukai: the attuner stays in the grid when it attunes a diamond or an emerald (`kronwerke:tech/attuned_*`). Not seen in game yet.
+  - A task that asked for one variant of a thing takes every variant: any wood for Hexerei's altar, woodcutter and owl depot and for Functional Storage's drawers (hidden advancements `kronwerke:quests/*`, written by the quest build), and Hostile Neural Networks models count the kills of every variant of a mob (entity tags `kronwerke:hnn/*`).
+  - The Cataclysm bosses keep their scaling. The Nether train quest says that trains do not cross to the Nether server yet.
+- Recipes the book described and the pack did not have: the dark golden sacrificial bowl takes golden sheets like the golden one, and the four dark bowls open with stage 2.
+- Kronwerke Core 0.39.41: the Chaos Guardian is in the list of bosses under his real id, so he grows with the group and players hear the hint for his fight; the hint describes the crystal shields the way they work.
+- Names as the game shows them, in every chapter: the Create parts (Andesitschleuse, Schacht, Schlauchrolle, Präzisionsgetriebe, Messingrahmen, Kartonblock), Mekanism's control circuits (Fortschrittlicher, Elitärer, Ultimativer Steuerschaltkreis), Botania's terrasteel tools, Ars Nouveau's source gem and its block, the Gaia spirit and its ingot. Draconium Ingot, Awakened Draconium Block and Afrit Essence, which their mods leave English, are German in the game now, as the obelisk and the book call them.
+- Keys are no longer letters in the text where the game can print the reader's own key (backpack, death history, origins, the drop key).
+- Amounts of the stage goals say whether they follow the number of players or are fixed, as `config/kronwerke/goals.json` has them.
+- What the network of servers does and does not do is stated the same everywhere: power, storage networks, teleporters and waystones cross between the main world, the Nether and the End; trains, pipes, raw fluids, mobs and Occultism's storage do not. The advancement for travelling 7 km through the Nether cannot be earned across servers, its quest is a reading quest now.
+- 25 force loaded chunks are per team, not per member (`docs/SERVER.md` said 9).
+- Three pictures in quest texts pointed at textures that do not exist and showed the missing texture; two are gone, one shows the scroll.
+- For the website: section banners are exported in English too, a kill task can carry a title, and `task_any` carries an icon.
+- Not seen in a client: any of the corrected texts in the game's quest book, the new recipes, the any-variant tasks ticking off, the German item names.

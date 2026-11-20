@@ -407,7 +407,7 @@ quests = [
     quest("mark_technomancy", 2.5, 19, "&6Präg Male der Technomantie",
           subtitle="Ars Technica: ein Tribut, fünf Male für Technik-Roben.",
           description=[
-              "Im Apparat: &5Wilden-Tribut&r in die Mitte, &6Präzisionsmechanismus&r, &6Calibrated Precision Mechanism&r, &6Manipulationsessenz&r, Eisen, Kupfer, Zink, Messing- und Goldblech auf die Podeste, &d10 000 Quelle&r. Ergibt &e5 Male&r.",
+              "Im Apparat: &5Wilden-Tribut&r in die Mitte, &6Präzisionsgetriebe&r, &6Calibrated Precision Mechanism&r, &6Manipulationsessenz&r, Eisen, Kupfer, Zink, Messing- und Goldblech auf die Podeste, &d10 000 Quelle&r. Ergibt &e5 Male&r.",
               "",
               "Mit Mal, Netherit und Messing werden Roben der dritten Stufe zu Technomancer, Machinaguard oder Artificer. Die dritte Stufe gibt es erst mit Stufe 4, sammle die Male jetzt.",
           ],

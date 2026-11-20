@@ -38,7 +38,7 @@ quests = [
           subtitle="Sieh, was in Netherrack steckt.",
           description=[
               "&e8 Glasscheiben&r um einen &bSpirit Attuned Gem&r ergeben &6Lenses&r. In Eziveus' Spectral Compulsion mit &e2 Silber-&r und &e1 Goldbarren&r (Foliot-Buch) werden sie zu &6Infused Lenses&r.",
-              "Linsen unten, &6Lens Frame&r (6 Otherstone, 2 Silber) darüber, &e3 Leder&r dazu: die Brille.",
+              "&6Lens Frame&r (6 Otherstone, 2 Silber) unten, die Linsen in der Mitte, &e3 Leder&r oben und an den Seiten: die Brille.",
               "",
               "Die Brille gibt dauerhaften Third Eye ohne Nebenwirkungen. Du siehst damit Iesnium-Erz im Netherrack. Abbauen kannst du es nur mit einer Infused oder Iesnium Pickaxe.",
           ],
@@ -336,12 +336,12 @@ quests = [
           deps=["odus"], icon="minecraft:blue_ice", optional=True),
 
     quest("reinforced_deepslate", 7.2, 12.2, "&8Mach Verstärkten Tiefenschiefer",
-          subtitle="Zwei Wege zum Rahmen der Otherside.",
+          subtitle="Drei Wege zum Rahmen der Otherside.",
           description=[
               "&eRezept auf Kronwerke:&r &e4 Tiefenschiefer&r, &e4 Stahlbarren&r und ein &6Echosplitter&r ergeben &e2&r Verstärkten Tiefenschiefer.",
               "&5Ritual:&r Osorin's Unbound Calling, Schalen &e4 Eisengitter&r, &e4 Obsidian&r, &e1 Iesniumbarren&r, Start mit &6Tiefenschiefer&r, &cOpfer:&r ein &6Warden&r. Ein Block pro Ritual.",
               "",
-              "Ein besessener Warden aus Posuc's Convocation zählt als Opfer. Das Ritual lohnt sich trotzdem nur, wenn ihr keinen Stahl habt. Der Block rahmt das Portal zur Otherside, siehe Kapitel &5Deeper and Darker&r.",
+              "Ein besessener Warden aus Posuc's Convocation zählt als Opfer. Das Ritual lohnt sich trotzdem nur, wenn ihr keinen Stahl habt. Dritter Weg: Die Atomschmiede von Oritech presst &6Tiefenschiefer&r und &e2 Duratiumbarren&r zu einem Block. Der Block rahmt das Portal zur Otherside, siehe Kapitel &5Deeper and Darker&r.",
           ],
           tasks=[task_item("minecraft:reinforced_deepslate", 4)],
           rewards=[reward_item("minecraft:echo_shard", 2), reward_xp(5)],
@@ -363,7 +363,7 @@ quests = [
     quest("unbound_marid", 14.4, 12.2, "&9&lBesieg einen Unbound Marid",
           subtitle="Der stärkste Geist, den du rufen kannst.",
           description=[
-              "&5Pentakel:&r Tibira's Attraction: Abras' Kreis plus &e8 schwarze&r Zeichen und &e4 Witherskelettschädel&r.",
+              "&5Pentakel:&r Tibira's Attraction: Abras' Kreis, die &e8 grauen&r Zeichen durch &e8 schwarze&r ersetzt, dazu &e4 Witherskelettschädel&r.",
               "&6Schalen:&r &6Aquisitor&r, &6Prismarinkristalle&r, &6Prismarinscherbe&r, &6Ghast-Träne&r. Marid-Buch (&e4 grüner Farbstoff&r).",
               "&cStart:&r bei grauen Partikeln einen &6Dreizack&r auf der goldenen Schale benutzen. 210 Sekunden.",
               "",
@@ -410,7 +410,7 @@ quests = [
               "&6Schalen:&r der Inert Storage Accessor, &e2 Enderperlen&r, ein &6Netherquarz&r.",
               "&cOpfer:&r keins. Start mit dem Djinni-Buch, 150 Sekunden.",
               "",
-              "Schleichend auf den Storage Actuator klicken verbindet ihn. Danach öffnest du dein Lager von überall, auch aus einer anderen Dimension.",
+              "Schleichend auf den Storage Actuator klicken verbindet ihn. Danach öffnest du dein Lager von überall auf demselben Server. Nether und End sind eigene Server, von dort erreichst du es nicht.",
           ],
           tasks=[task_item("occultism:storage_remote", 1)],
           rewards=[reward_item("minecraft:ender_pearl", 4), reward_xp(10)],

@@ -344,7 +344,7 @@ quests = [
           description=[
               "&6Geigerzähler:&r drei Eisen oben, Redstone, Glasscheibe, Redstone, unten Eisen, Kupfer, Eisen. In der Hand klickt er schneller, je stärker die Strahlung, und zeigt Sv/h. &6Dosimeter:&r Eisen oben, Glasscheiben links und rechts, Komparator, Redstone unten. Im Inventar zeigt ein Balken deine Dosis.",
               "",
-              "Ab 1 mSv/h oder 0,5 Sv Gesamtdosis wird dir übel. Ab 10 Sv/h oder 5 Sv nimmst du Schaden. Ab 100 Sv/h stirbst du schnell.",
+              "Vier Stufen, es zählt die höhere aus Strahlung und Gesamtdosis: Ab &e10 mSv/h&r oder &e1 Sv&r wird dir übel, ab 500 mSv/h oder 3 Sv wird es ernst, ab 10 Sv/h oder 6 Sv nimmst du Schaden. Ab 100 Sv/h oder 10 Sv stirbst du schnell.",
           ],
           tasks=[task_item("nuclear_radiation:geiger_counter", 1), task_item("nuclear_radiation:dosimeter", 1)],
           rewards=[reward_item("nuclear_radiation:iodine_pill", 4), reward_xp(5)],

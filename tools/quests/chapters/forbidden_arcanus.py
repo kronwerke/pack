@@ -274,7 +274,7 @@ quests = [
           description=[
               "Die meisten Relikte findet man, nicht craftet man. Sie liegen in den oberen Slots der Schmiede und ändern, was sie kann:",
               "",
-              "&6Artisan Relic&r (Schmiedetruhen in Dörfern, oder vom Wandernden Händler für 18 Smaragde): Rituale kosten nur &e75 Prozent Erfahrung&r. Im Clibano erlaubt es Legierungen wie Obsidiansteel. &eRezept auf Kronwerke:&r vier &6Deorum Ingots&r um einen &6Präzisionsmechanismus&r von Create, oben, unten, links und rechts.",
+              "&6Artisan Relic&r (Schmiedetruhen in Dörfern, oder vom Wandernden Händler für 18 Smaragde): Rituale kosten nur &e75 Prozent Erfahrung&r. Im Clibano erlaubt es Legierungen wie Obsidiansteel. &eRezept auf Kronwerke:&r vier &6Deorum Ingots&r um ein &6Präzisionsgetriebe&r von Create, oben, unten, links und rechts.",
               "&6Crimson Stone&r (Plünderer-Außenposten): Rituale brauchen nur &ehalb so viele Seelen&r.",
               "&6Elementarium&r (Dschungeltempel, Wüstentempel, Ozeanruinen): schaltet die Prismen frei.",
               "&6Maledictus Pact&r (Bastionsschatz) und &6Divine Pact&r: verfluchte und göttliche Gegenstände, erst für die hohen Stufen.",
@@ -317,7 +317,7 @@ quests = [
               "",
               pic("forbidden_arcanus:obsidiansteel_ingot"),
               "",
-              "Obsidiansteel steckt in den Obsidianschädeln, im Corrupti Dust, im Dark Nether Star und in der Draco-Arcanus-Rüstung. Ohne Relikt gibt es kein Obsidiansteel. &eRezept auf Kronwerke:&r Vier &6Deorum Ingots&r um einen &6Präzisionsmechanismus&r ergeben eins, sonst Dorfschmieden plündern oder den Wandernden Händler abpassen.",
+              "Obsidiansteel steckt in den Obsidianschädeln, im Corrupti Dust, im Dark Nether Star und in der Draco-Arcanus-Rüstung. Ohne Relikt gibt es kein Obsidiansteel. &eRezept auf Kronwerke:&r Vier &6Deorum Ingots&r um ein &6Präzisionsgetriebe&r ergeben eins, sonst Dorfschmieden plündern oder den Wandernden Händler abpassen.",
           ],
           tasks=[task_item("forbidden_arcanus:obsidiansteel_ingot", 8)],
           rewards=[reward_item("minecraft:obsidian", 8), reward_item("minecraft:raw_iron", 16), reward_xp(5)],

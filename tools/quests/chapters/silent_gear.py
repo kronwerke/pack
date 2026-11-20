@@ -216,7 +216,7 @@ quests = [
           description=[
               "&eBlaupause:&r ein &6Blaues Papier&r und &6zwei Fäden&r, formlos. Dann Blaupause plus &eein&r Material: die Verbindung.",
               "",
-              "Faden gibt Flexibel I, Flachsstrang Flexibel III und +5 Prozent Tempo, Sehnenfaser Flexibel IV. Ranken geben nur Optik.",
+              "Faden gibt Flexibel I, Flachsstrang Flexibel III und +5 Prozent Tempo, Sehnenfaser Flexibel IV. Ranken geben +3 Prozent Reparatur-Effizienz.",
           ],
           tasks=[task_item("silentgear:binding", 1)],
           rewards=[reward_item("minecraft:string", 16)],
@@ -273,7 +273,7 @@ quests = [
           description=[
               "&6Tag eins:&r Kopf aus drei Bruchstein, Holzstiel. &6Aufsteiger:&r Steinkopf plus Eisenspitze, baut Diamanterz ab.",
               "",
-              "&6Alltag:&r Eisenkopf, Eisenstiel, Sehnen-Verbindung, Ledergriff. Biegsam III und zweimal Flexibel halten lange.",
+              "&6Alltag:&r Eisenkopf, Eisenstiel, Sehnen-Verbindung, Ledergriff. Biegsam III und dreimal Flexibel (Stiel II, Verbindung IV, Griff III) halten lange.",
               "",
               "&6Waffe:&r Schwertklinge aus zwei Feuerstein. Gezackt III erhöht den Schaden, je abgenutzter die Klinge ist.",
           ],
@@ -598,7 +598,7 @@ quests = [
           ["outlook"], "silentgear:salvager"),
     later("grader", 16, 15.5, "&dVeredle ein Material",
           "Noten von E bis SSS.",
-          ["Oben &6Quarz, Eisen, Quarz&r, Mitte &6Eisen, verbesserte Upgrade-Basis, Eisen&r, unten &6drei Lohengold&r.",
+          ["&eRezept auf Kronwerke:&r Oben &6Quelljuwel, Eisen, Quelljuwel&r, Mitte &6Eisen, verbesserte Upgrade-Basis, Eisen&r, unten &6drei Lohengold&r.",
            "",
            "Material plus Katalysator rein, heraus kommt es mit einer Note. Der Mittelwert ist &eC&r.",
            "",
@@ -706,7 +706,7 @@ quests = [
     quest("ring", 7.5, 16, "&eSchmiede einen Ring",
           subtitle="Schmuck mit den Eigenschaften des Metalls.",
           description=[
-              "&eBlaupause:&r vier Blaues Papier und zwei Metallbarren. Mit der Ring-Blaupause und &ezwei&r Metallbarren entsteht ein &6Ring&r.",
+              "&eBlaupause:&r vier Blaues Papier und zwei Metallbarren. Mit der Ring-Blaupause und &ezwei&r Metallbarren entsteht ein Ringkörper (Ring Shank). Der fertige &6Ring&r braucht dazu noch das Juwelierwerkzeug (Jeweler's Tools).",
               "",
               "Er kommt in einen &eRing-Slot&r (Curios) und trägt die Eigenschaften seines Metalls. Was ein Metall mitbringt, steht im &6Material Book&r. Armband und Halskette folgen demselben Prinzip.",
           ],

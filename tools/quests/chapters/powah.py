@@ -194,7 +194,7 @@ quests = [
     quest("dry_ice", 13.5, -1, "&bMach Trockeneis",
           subtitle="Das beste Kühlmittel für den Reaktor.",
           description=[
-              "Zwei &6Blaueis&r ergeben für &e10 000 FE&r ein &6Trockeneis&r. Es liegt auch als Ader im Stein unter &eY 64&r, mit Behutsamkeit abbauen.",
+              "Zwei &6Blaueis&r ergeben für &e10 000 FE&r ein &6Trockeneis&r. Es liegt auch als Ader im Stein unter &eY 64&r, aber nur in kalten und eisigen Biomen. Eine normale Spitzhacke reicht.",
               "",
               "Im Reaktor kühlt Trockeneis mit -32 Grad und 712 Einheiten. Zum Vergleich: Blaueis -17 Grad und 568, normales Eis -5 Grad und 48.",
           ],
@@ -401,7 +401,7 @@ quests = [
     quest("cells", 2.5, 17.5, "&aBau Energiezellen",
           subtitle="Ein Puffer für die ganze Basis.",
           description=[
-              "&6Energy Cell (Basic):&r Eisen in die Ecken, Basic-Kondensatoren an die Seiten, Casing in die Mitte. Höhere Zellen: Material der Stufe, zwei neue Kondensatoren, Casing und die Zelle darunter.",
+              "&6Energy Cell (Basic):&r Eisen in die Ecken, Basic-Kondensatoren an die Seiten, Casing in die Mitte. Höhere Zellen: vier Material der Stufe, zwei neue Kondensatoren, ein Casing und zwei Zellen der Stufe darunter.",
               "",
               "&eSpeicher:&r Starter 1, Basic 4, Hardened 10, Blazing 40, Niotic 100, Spirited 400 Millionen FE.",
           ],

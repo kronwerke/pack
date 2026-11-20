@@ -210,7 +210,7 @@ quests = [
           description=[
               "&6MEGA-Fertigungseinheit:&r vier Einheiten, zwei Logikprozessoren, zwei schlaue Kabel, ein Akkumulationsprozessor. Mit einer 1M- oder 4M-Komponente wird sie zum großen Speicher, mit einem Konstruktionsprozessor zum &6MEGA-Co-Prozessor&r.",
               "",
-              "Damit plant eine CPU viele Elite-Schaltkreise auf einmal, ohne dass die Zwischenprodukte den Speicher sprengen.",
+              "Damit plant eine CPU viele Elitäre Steuerschaltkreise auf einmal, ohne dass die Zwischenprodukte den Speicher sprengen.",
           ],
           tasks=[task_item("megacells:mega_crafting_unit", 1), task_item("megacells:mega_crafting_accelerator", 1)],
           rewards=[reward_item("ae2:crafting_unit", 4), reward_xp(10)],
@@ -219,11 +219,11 @@ quests = [
     quest("mega_4m", 10, 11, "&6&lFüll das Lager des Sternwerks",
           subtitle="4M, das Größte vor dem Chaoswerk.",
           description=[
-              "&eRezept auf Kronwerke:&r Enderstaub in die Ecken, ein Akkumulationsprozessor oben, drei 1M-Komponenten, ein &6Draconiumbarren&r in die Mitte. Dazu 16 Elite-Steuerschaltkreise aus deiner CPU.",
+              "&eRezept auf Kronwerke:&r Enderstaub in die Ecken, ein Akkumulationsprozessor oben, drei 1M-Komponenten, ein &6Draconiumbarren&r in die Mitte. Dazu 16 Elitäre Steuerschaltkreise aus deiner CPU.",
               "",
               "In einer 4M-Zelle stecken Dutzende Prozessoren und 13 Draconiumbarren. &cStufe 5:&r 16M bis 256M und die Bulk-Zelle brauchen Erwachtes Draconium.",
               "",
-              "&eKronwerke:&r &e\"Licht des Drachen\"&r will bei 30 aktiven Spielern &e150 Elite-Steuerschaltkreise&r und &e1 000 Draconiumbarren&r. Schreib Schablonen für die Elite-Schaltkreise und lass die CPU arbeiten.",
+              "&eKronwerke:&r &e\"Licht des Drachen\"&r will bei 30 aktiven Spielern &e150 Elitäre Steuerschaltkreise&r und &e1 000 Draconiumbarren&r. Schreib Schablonen für die Elitären Steuerschaltkreise und lass die CPU arbeiten.",
           ],
           tasks=[task_item("megacells:item_storage_cell_4m", 1), task_item("mekanism:elite_control_circuit", 16)],
           rewards=[reward_table("s4_rare"), reward_item("draconicevolution:draconium_ingot", 8), reward_xp(30)],

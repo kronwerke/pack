@@ -313,7 +313,7 @@ quests = [
               "",
               "Mit acht Seelen pro Kampf sind das &esechzehn Kämpfe&r, alle live. Feste Arena, ein Terrastahl pro Kampf, Seelen danach von Hand in den Obelisken.",
               "",
-              "Sind auch Draconium und Elite-Schaltkreise der Techniker drin, öffnet &6Stufe 5 (Chaoswerk)&r.",
+              "Sind auch Draconium und Elitäre Steuerschaltkreise der Techniker drin, öffnet &6Stufe 5 (Chaoswerk)&r.",
           ],
           tasks=[task_item("botania:gaia_spirit", 64)],
           rewards=[reward_table("s4_rare"), reward_xp(20)],

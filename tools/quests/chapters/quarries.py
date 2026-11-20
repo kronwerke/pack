@@ -35,7 +35,7 @@ quests = [
     quest("shape_card", 2.5, 2, "&7Bau eine Formkarte",
           subtitle="Sag dem Builder, wo.",
           description=[
-              "&6Papier&r in die Ecken, &6Ziegel&r oben und unten, &6Redstone&r links und rechts, &6Eisen&r in die Mitte.",
+              "&6Papier&r in die Ecken, &6Ziegelsteine&r (der Block) oben und unten, &6Redstone&r links und rechts, &6Eisen&r in die Mitte.",
               "",
               "Im Fenster der Karte stellst du Form, Größe und Abstand ein. Schneller: Karte in der Hand, Schleich-Rechtsklick auf den Builder, dann Rechtsklick auf zwei gegenüberliegende Ecken. Bis &e512&r Blöcke pro Seite, bis &e260&r Blöcke vom Builder weg.",
               "",
@@ -240,11 +240,11 @@ quests = [
     quest("destroyer", 12.5, 8, "&6&lBau den Chunk Destroyer",
           subtitle="Ganze Chunks bis zum Grund.",
           description=[
-              "Zwei &6Quarry Plus&r, &6Diamantblöcke&r, &6Smaragdblöcke&r, &6Enderaugen&r, ein &6Netherstern&r und ein &6Drachenkopf&r. Den Kopf findest du auf den Endschiffen.",
+              "Zwei &6Quarry Plus&r, zwei &6Diamantblöcke&r, zwei &6Smaragdblöcke&r, ein &6Enderauge&r, ein &6Netherstern&r und ein &6Drachenkopf&r. Den Kopf findest du auf den Endschiffen.",
               "",
               "Den Bereich steckst du mit Chunk Marker oder Flexible Marker ab, im Fenster startest du ihn. Er ist teuer im Strom, plan eine eigene Leitung.",
               "",
-              "&eKronwerke:&r Draconium gibt es nur im End. Ein Steinbruch auf einer abgelegenen Endinsel bringt Erz in Mengen für die &e1 000 Draconiumbarren&r von Stufe 4. Die Hauptinsel bleibt in Ruhe.",
+              "&eKronwerke:&r Draconium gibt es nur im End. Ein Steinbruch auf einer abgelegenen Endinsel bringt Erz in Mengen für die &e1 000 Draconiumbarren&r von Stufe 4 (Menge passt sich der Spielerzahl an). Die Hauptinsel bleibt in Ruhe.",
           ],
           tasks=[task_item("quarryplus:adv_quarry", 1), task_item("draconicevolution:draconium_ingot", 64)],
           rewards=[reward_table("s4_rare"), reward_item("draconicevolution:draconium_ingot", 8), reward_xp(30)],
@@ -322,7 +322,7 @@ quests = [
     quest("space_chamber", 2.5, 4, "&5Zieh ein Gebäude um",
           subtitle="Raumkammern und die Raumkarte.",
           description=[
-              "&6Raumkammer:&r ein Machine Frame, Glas an den Seiten, blauer Farbstoff in den Ecken. Mit zwei Enderperlen und zwei Redstone-Fackeln wird eine davon zum &6Raumkammer-Controller&r. &6Raumkarte:&r Ziegel oben und unten, Redstone, Eisen, Redstone in der Mitte.",
+              "&6Raumkammer:&r ein Machine Frame, Glas an den Seiten, blauer Farbstoff in den Ecken. Mit zwei Enderperlen und zwei Redstone-Fackeln wird eine davon zum &6Raumkammer-Controller&r. &6Raumkarte:&r Ziegelsteine (der Block) oben und unten, Redstone, Eisen, Redstone in der Mitte.",
               "",
               "Setz die acht Ecken eines Quaders: sieben Raumkammern und einen Controller. Schleich-Rechtsklick mit der Karte auf den Controller merkt sich die Kammer, ein Rechtsklick in die Luft zeigt, was drin steht. Bis &e128&r Blöcke pro Seite.",
               "",
@@ -380,7 +380,7 @@ quests = [
     quest("placer", 12.5, 10, "&7Bau einen Placer Plus",
           subtitle="Setzt Blöcke auf Redstone.",
           description=[
-              "Gold, Spender, Gold oben, &6bemooster Bruchstein&r, Redstone, bemooster Bruchstein in der Mitte, bemooster Bruchstein, Eisen und ein &6Marker&r unten.",
+              "Gold, Werfer, Gold oben, &6bemooster Bruchstein&r, Redstone, bemooster Bruchstein in der Mitte, bemooster Bruchstein, Eisen und ein &6Marker&r unten.",
               "",
               "Er setzt Blöcke aus seinem Inventar vor sich, gesteuert über Redstone. Rechtsklick mit einer &6Redstone-Fackel&r wechselt, wie er auf das Signal reagiert. Zusammen mit einem Steinbruch oder Builder automatisierst du so Bauarbeiten.",
           ],

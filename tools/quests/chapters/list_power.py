@@ -275,7 +275,7 @@ quests = [
               "",
               "&eMekanism, Einfaches Universalkabel:&r &d3 200 FE/t&r. Fortgeschritten 51 200 FE/t (Stufe 3), Elite 409 600 und Ultimativ 3 276 800 FE/t (Stufe 4). Kabel verbinden sich mit jedem FE-Gerät im Pack.",
               "",
-              "&eMekanism, Einfacher Energie-Würfel:&r &d1,6 Millionen FE&r, Abgabe 1 600 FE/t. Fortgeschritten 6,4 Millionen und 6 400 FE/t (Stufe 3), Elite 25,6 Millionen und 25 600, Ultimativ 102,4 Millionen und 102 400 FE/t (Stufe 4). Die &6Induktionsmatrix&r (Gehäuse, Zellen, Anschlüsse) speichert schon mit einfachen Zellen &d3,2 Milliarden FE&r je Zelle, der einfache Anschluss schafft 102 400 FE/t. Kommt erst in Stufe 4: der Anschluss braucht Elite-Schaltkreise, die Zellen Lithiumstaub aus dem Kristallisator, siehe Kapitel &6Mekanism: Elite&r.",
+              "&eMekanism, Einfacher Energie-Würfel:&r &d1,6 Millionen FE&r, Abgabe 1 600 FE/t. Fortgeschritten 6,4 Millionen und 6 400 FE/t (Stufe 3), Elite 25,6 Millionen und 25 600, Ultimativ 102,4 Millionen und 102 400 FE/t (Stufe 4). Die &6Induktionsmatrix&r (Gehäuse, Zellen, Anschlüsse) speichert schon mit einfachen Zellen &d3,2 Milliarden FE&r je Zelle, der einfache Anschluss schafft 102 400 FE/t. Kommt erst in Stufe 4: der Anschluss braucht Elitäre Steuerschaltkreise, die Zellen Lithiumstaub aus dem Kristallisator, siehe Kapitel &6Mekanism: Elite&r.",
           ],
           "minecraft:redstone_block", ["s2_choice"], xp=3),
 
@@ -381,7 +381,7 @@ quests = [
     check("mek_adv", X[4], Y3, "&5Rüste Mekanism auf Fortgeschritten",
           "Mekanism: 120 FE/t Solar, 51 200 FE/t Kabel, 6,4 Millionen FE Würfel.",
           [
-              "Der &6Erweiterte Solargenerator&r: vier Solargeneratoren, Legierung, Schaltkreise und ein Eisenblock, drei Blöcke hoch. Fortgeschrittene Kabel und Würfel entstehen aus den einfachen mit Infundierter Legierung und Fortschrittlichen Schaltkreisen.",
+              "Der &6Erweiterte Solargenerator&r: vier Solargeneratoren, zwei Infundierte Legierungen und drei Eisenbarren, drei Blöcke hoch. Fortgeschrittene Kabel und Würfel entstehen aus den einfachen mit Infundierter Legierung und Fortschrittlichen Steuerschaltkreisen.",
               "",
               "&eMekanism, Erweiterter Solargenerator:&r &d120 FE/t&r bei Tag, sechsmal der kleine. &eFortgeschrittenes Universalkabel:&r &d51 200 FE/t&r. &eFortgeschrittener Energie-Würfel:&r &d6,4 Millionen FE&r, 6 400 FE/t. Fortgeschrittene Induktionszellen speichern 25,6 Milliarden FE je Zelle, der Anschluss schafft 819 200 FE/t. Wie die ganze Matrix erst ab Stufe 4.",
           ],
@@ -399,9 +399,9 @@ quests = [
     check("oritech_gens", X[6], Y3, "&cStell die Oritech-Generatoren",
           "Oritech: 32 FE/t Basis, 64 Bio und Lava, 256 Brennstoff, 32 Solar.",
           [
-              "&eRezept auf Kronwerke:&r Der &6Grundlegende Generator&r ist Nickel oben und an den Seiten, Kupfer in der Mitte, unten Spule, Andesitgehäuse, Spule, dazu Maschinenkerne um ihn herum. Bio-, Lava- und Brennstoffgenerator sind größere Multiblöcke mit Kernen.",
+              "&eRezept auf Kronwerke:&r Der &6Grundlegende Generator&r ist Nickel oben und an den Seiten, Kupfer in der Mitte, unten Spule, Andesitgehäuse, Spule, er steht allein und braucht keine Kerne. Bio-, Lava- und Brennstoffgenerator sind größere Maschinen mit Maschinenkernen.",
               "",
-              "&eOritech, Generatoren:&r Grundlegender Generator &d32 FE/t&r aus allem Brennbaren, Puffer 50 000. &6Biogenerator&r &d64 FE/t&r aus Biomasse, &6Lavagenerator&r &d64 FE/t&r aus Lava, &6Brennstoffgenerator&r &d256 FE/t&r aus Öl-Brennstoff, Puffer 100 000 bis 250 000. Das &6Große Solarmodul&r &d32 FE/t&r bei Tag. Mit dem Dampfkessel-Addon machen die Generatoren statt Strom Dampf, den die &6Dampfmaschine&r eins zu eins zurück in FE wandelt. Offen ab Stufe 3, siehe Kapitel &6Oritech&r.",
+              "&eOritech, Generatoren:&r Grundlegender Generator &d32 FE/t&r aus allem Brennbaren, Puffer 50 000. &6Biogenerator&r &d64 FE/t&r aus Biomasse, &6Lavagenerator&r &d64 FE/t&r aus Lava, &6Brennstoffgenerator&r &d256 FE/t&r aus Öl-Brennstoff, Puffer 100 000 bis 250 000. Das &6Große Solarmodul&r &d32 FE/t&r bei Tag. Mit dem Dampfkessel-Addon machen die Generatoren statt Strom Dampf, den die &6Dampfmaschine&r zurück in FE wandelt. Offen ab Stufe 3, siehe Kapitel &6Oritech&r.",
           ],
           "minecraft:gold_block", ["s3_choice"]),
 
@@ -541,7 +541,7 @@ quests = [
           description=[
               "Stufe 4 bringt Powah Nitro, Mekanism Elite und Ultimativ mit der Fusion, NuclearCraft, Draconic Evolution und die großen Generatoren von Mekanism More Machine.",
               "",
-              "&e1. Nitro-Reaktor von Powah:&r &d500 000 FE/t&r aus Uraninit. Nitro-Kristalle brauchen einen Netherstern und 20 Millionen FE je Kristall in der Kugel, danach läuft er wie der kleine.",
+              "&e1. Nitro-Reaktor von Powah:&r &d500 000 FE/t&r aus Uraninit. Nitro-Kristalle brauchen einen Netherstern und 20 Millionen FE in der Kugel, das ergibt 16 Kristalle, danach läuft er wie der kleine.",
               "&e2. RTGs von NuclearCraft:&r kein Brennstoff, keine Kühlung, nie aus. Uran 112, Plutonium 1 792, Californium &d4 096 FE/t&r, Block für Block.",
               "&e3. Fusionsreaktor von Mekanism:&r D-T-Treibstoff aus Wasser, gezündet mit dem Laser, läuft dann für Tage. Das Kraftwerk für die Antimaterie in Stufe 5.",
               "",
@@ -554,7 +554,7 @@ quests = [
     check("powah_nitro", X[0], Y4, "&bRüste Powah auf Nitro",
           "Powah Nitro: 40 000 FE/t Furnator, 500 000 FE/t Reaktor, 2 Milliarden FE Zelle.",
           [
-              "Ein &6Nitro-Kristall&r entsteht in der Kugel aus Netherstern, zwei Redstoneblöcken und einem Block Blazing-Kristalle für 20 Millionen FE. Daraus Kondensatoren, dann wie gewohnt aufrüsten.",
+              "Ein &6Nitro-Kristall&r entsteht in der Kugel aus Netherstern, zwei Redstoneblöcken und einem Block Blazing-Kristalle für 20 Millionen FE, das ergibt 16 Kristalle. Daraus Kondensatoren, dann wie gewohnt aufrüsten.",
               "",
               "&ePowah, Nitro:&r Furnator und Magmator &d40 000 FE/t&r, Solar und Thermo 2 000 FE/t, Reaktor &d500 000 FE/t&r (Puffer 500 Millionen). Nitro-Kabel 1 Million FE/t, Nitro Energy Cell &d2 Milliarden FE&r mit 2 Millionen FE/t. Offen ab Stufe 4.",
           ],
@@ -572,9 +572,9 @@ quests = [
     check("mek_fusion", X[2], Y4, "&5Zünde den Fusionsreaktor",
           "Mekanism, Fusion: D-T-Treibstoff, Laser, Strom oder Dampf.",
           [
-              "Rauten aus &6Reaktorrahmen&r (Polonium-Pellets im Rezept), Reaktorglas, Anschlüsse, die &6Laser-Fokusmatrix&r (Kronwerke: Quellenedelsteinblock) und der Controller oben. Hohlraum mit D-T-Treibstoff in den Controller, Laserverstärker auf die Matrix, zünden.",
+              "Rauten aus &6Reaktorrahmen&r (Polonium-Pellets im Rezept), Reaktorglas, Anschlüsse, die &6Laser-Fokusmatrix&r (Kronwerke: Quelledelsteinblock) und der Controller oben. Hohlraum mit D-T-Treibstoff in den Controller, Laserverstärker auf die Matrix, zünden.",
               "",
-              "&eMekanism, Fusionsreaktor:&r Brennstoff Deuterium und Tritium aus Wasser (Elektrolyseur, Solar-Neutronenaktivator). Strom direkt über die Anschlüsse, oder mit Wasser Dampf für die Industrieturbine, damit noch mehr. Puffer 400 Millionen FE. Je höher die Einspritzrate, desto mehr Strom, die Zahl hängt von Rate und Kühlung ab. &eRezept auf Kronwerke:&r die Fokusmatrix braucht einen Quellenedelsteinblock. Offen ab Stufe 4, siehe Kapitel &6Mekanism: Elite&r.",
+              "&eMekanism, Fusionsreaktor:&r Brennstoff Deuterium und Tritium aus Wasser (Elektrolyseur, Solar-Neutronenaktivator). Strom direkt über die Anschlüsse, oder mit Wasser Dampf für die Industrieturbine, damit noch mehr. Puffer 400 Millionen FE. Je höher die Einspritzrate, desto mehr Strom, die Zahl hängt von Rate und Kühlung ab. &eRezept auf Kronwerke:&r die Fokusmatrix braucht einen Quelledelsteinblock. Offen ab Stufe 4, siehe Kapitel &6Mekanism: Elite&r.",
           ],
           "minecraft:sea_lantern", ["s4_choice"], xp=3),
 
@@ -583,7 +583,7 @@ quests = [
           [
               "Der &6Große Wärmegenerator&r und der &6Große Windgenerator&r sind die Riesenversionen der Mekanism-Generatoren, der &6Große Gasgenerator&r hat einen Tank von 180 000 mB. Alle drei große Blöcke, der Windgenerator darf keinen zweiten direkt neben sich haben.",
               "",
-              "&eMekanism More Machine, Großer Wärmegenerator:&r &d400 FE/t&r aus Brennstoff, &d140 FE/t je Lavaseite&r, bis 81 Seiten, im Nether 300 FE/t extra, Tank 240 000 mB. &eGroßer Windgenerator:&r &d900 000 FE/t&r unten, &d1 500 000 FE/t&r ganz oben, ohne Brennstoff. Der stärkste Dauerläufer ohne Brennstoff im Pack. Offen ab Stufe 4. Der &6Solar-Wärmegenerator&r (Reflektoren heizen Kühlmittel) ist schon ab Stufe 3 offen.",
+              "&eMekanism More Machine, Großer Wärmegenerator:&r &d400 FE/t&r aus Brennstoff, &d140 FE/t je Lavaseite&r, bis 81 Seiten, im Nether 300 FE/t extra, Tank 240 000 mB. &eGroßer Windgenerator:&r &d900 000 FE/t&r unten, &d1 500 000 FE/t&r ganz oben, ohne Brennstoff. Der stärkste Dauerläufer ohne Brennstoff im Pack. Der Große Wärmegenerator ist offen ab Stufe 4, der Große Windgenerator ab Stufe 5. Der &6Solar-Wärmegenerator&r hat im Pack kein Rezept.",
           ],
           "create:encased_fan", ["s4_choice"], xp=3),
 
@@ -617,9 +617,9 @@ quests = [
     check("draconic_core", X[7], Y4, "&cBau den Energiekern",
           "Draconic Evolution, 45,5 Millionen bis 2,14 Billionen FE, Stufe 8 ohne Grenze.",
           [
-              "&6Energiekern&r: Draconiumbarren oben und unten, zwei Wyvern-Energiekontroller und ein Wyvern-Kern. Tier Up und Build Guide im Fenster zeigen die Hülle aus Draconium- und Redstoneblöcken, vier &6Stabilisatoren&r (Kronwerke: ein Gaia-Geist) rundherum, dann Activate.",
+              "&6Energiekern&r: Draconiumbarren oben und unten, zwei Wyvern-Energiekontroller und ein Wyvern-Kern. Tier Up und Build Guide im Fenster zeigen die Hülle aus Draconium- und Redstoneblöcken, vier &6Stabilisatoren&r (Kronwerke: eine Gaia-Seele) rundherum, dann Activate.",
               "",
-              "&eDraconic Evolution, Energiekern:&r Stufe 1 &d45,5 Millionen FE&r, 2: 273 Millionen, 3: 1,64 Milliarden, 4: 9,88 Milliarden, 5: 59,3 Milliarden, 6: 356 Milliarden, 7: &d2,14 Billionen&r, Stufe 8 ohne Grenze, aber mit Erwachtem Draconium (Stufe 5). &6Energiepylonen&r bringen den Strom hinein und heraus. &eRezept auf Kronwerke:&r der Stabilisator braucht einen Gaia-Geist. Offen ab Stufe 4.",
+              "&eDraconic Evolution, Energiekern:&r Stufe 1 &d45,5 Millionen FE&r, 2: 273 Millionen, 3: 1,64 Milliarden, 4: 9,88 Milliarden, 5: 59,3 Milliarden, 6: 356 Milliarden, 7: &d2,14 Billionen&r, Stufe 8 ohne Grenze, aber mit Erwachtem Draconium (Stufe 5). &6Energiepylonen&r bringen den Strom hinein und heraus. &eRezept auf Kronwerke:&r der Stabilisator braucht eine Gaia-Seele. Offen ab Stufe 4.",
           ],
           "minecraft:redstone_block", ["s4_choice"], xp=3),
 
@@ -627,7 +627,7 @@ quests = [
     quest("s5_choice", 0, Y5, "&e&lStufe 5: Welche Quelle wann",
           subtitle="Alles offen. Der Strom für hundert Pellets.",
           description=[
-              "Stufe 5 öffnet den Spaltreaktor von Mekanism, den Drakonischen Reaktor und den Gargantuan-Speicher von Flux. Das Ziel am Obelisken, 100 Antimaterie-Pellets, braucht eine Billion Joule je Pellet, also 400 Milliarden FE.",
+              "Stufe 5 öffnet den Spaltreaktor von Mekanism, den Drakonischen Reaktor und den Gargantuan-Speicher von Flux. Das Ziel am Obelisken, 100 Antimaterie-Pellets bei 30 aktiven Spielern, braucht eine Billion Joule je Pellet, also 400 Milliarden FE.",
               "",
               "&e1. Spaltreaktor plus Industrieturbine:&r Spaltbrennstoff aus Uran, Wasser rein, Dampf raus, die Turbine aus Stufe 3 macht daraus Strom. Der Atommüll daraus ist zugleich der Rohstoff für Polonium und Plutonium.",
               "&e2. Fusionsreaktor aus Stufe 4&r auf hoher Einspritzrate mit Dampf in eine zweite Turbine, wenn der Spaltreaktor dir zu heiß ist.",
@@ -658,7 +658,7 @@ quests = [
     check("flux_gargantuan", X[2], Y5, "&dStell den Gargantuan Flux Storage",
           "Flux Networks, 128 Millionen FE, 720 000 FE/t.",
           [
-              "Der &6Gargantuan Flux Storage&r ist die größte Flux-Zelle, gebaut aus dem Herculean-Speicher und Fluxblöcken. Er hängt direkt im Netz, ohne Plug und Point.",
+              "Der &6Gargantuan Flux Storage&r ist die größte Flux-Zelle, gebaut aus sechs Herculean-Speichern und zwei Glasscheiben. Er hängt direkt im Netz, ohne Plug und Point.",
               "",
               "&eFlux Networks, Gargantuan:&r &d128 Millionen FE&r, &d720 000 FE/t&r rein und raus, drahtlos über das Netz. Für den Draconic-Energiekern zu klein, als Puffer zwischen Reaktor und Fabrik genau richtig. Offen ab Stufe 5.",
           ],
@@ -671,7 +671,7 @@ quests = [
               "",
               "&eDie Faustregel:&r Stufe 1 Wasserräder, Stufe 2 Wärmegenerator und Dampf, Stufe 3 Powah-Reaktor und Flux, Stufe 4 Nitro, RTGs und Fusion, Stufe 5 Spaltung und Turbine. Wer eine Stufe früher mehr will, baut Ethen.",
               "",
-              "&eKronwerke-Rezepte in diesem Kapitel:&r Flux-Kern (Quellenedelstein) und Flux-Controller (Fortschrittlicher Schaltkreis), Pneumatischer Dynamo und Flux-Kompressor (Einfacher Schaltkreis), die Laser-Fokusmatrix der Fusion (Quellenedelsteinblock) und der Energiekern-Stabilisator (Gaia-Geist). Alles andere ist wie in den Mods.",
+              "&eKronwerke-Rezepte in diesem Kapitel:&r Flux-Kern (Quellenedelstein) und Flux-Controller (Fortschrittlicher Steuerschaltkreis), Pneumatischer Dynamo und Flux-Kompressor (Einfacher Steuerschaltkreis), die Laser-Fokusmatrix der Fusion (Quelledelsteinblock) und der Energiekern-Stabilisator (Gaia-Geist). Alles andere ist wie in den Mods.",
           ],
           tasks=[task_checkmark("Alles gesehen")],
           rewards=[reward_table("s1_rare"), reward_xp(10)],

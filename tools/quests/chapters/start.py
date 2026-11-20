@@ -80,7 +80,7 @@ quests = [
           description=[
               "Eisen steckt in den Teilen für Create, den ersten Zauber-Geräten, dem Kochtopf und dem Werkzeug von Silent Gear. Eisennuggets und Andesit ergeben &6Andesitlegierung&r, das Material der Technik-Säule am Obelisken.",
               "",
-              "Andesitrahmen, Infused Iron und ein Quelljuwel ergeben den &6Grubenrahmen&r, das Tor zur &6Farmwelt&r. Alles dazu im Kapitel &6Erkundung&r.",
+              "Andesitgehäuse, Infused Iron und ein Quelljuwel ergeben den &6Grubenrahmen&r, das Tor zur &6Farmwelt&r. Alles dazu im Kapitel &6Erkundung&r.",
           ],
           tasks=[task_item("minecraft:iron_ingot", 16)],
           rewards=[reward_item("minecraft:coal", 16)],
@@ -113,7 +113,7 @@ quests = [
           description=[
               "Oben Faden, Leder, Faden. In der Mitte Faden, eine &6Truhe&r, Faden. Unten drei Leder. Heraus kommt ein &6Rucksack&r mit &d27&r Feldern, so viel wie eine Truhe.",
               "",
-              "Trag ihn auf dem Rücken oder in der Hand, &eB&r öffnet ihn. Wie du ihn später vergrößerst, steht im Kapitel &6Lager&r.",
+              "Trag ihn auf dem Rücken oder in der Hand, &e{key:key.sophisticatedbackpacks.open_backpack}&r öffnet ihn. Wie du ihn später vergrößerst, steht im Kapitel &6Lager&r.",
           ],
           tasks=[task_item("sophisticatedbackpacks:backpack", 1)],
           rewards=[reward_item("minecraft:leather", 4), reward_xp(3)],
@@ -515,7 +515,7 @@ quests = [
               "",
               "Jede Herkunft hat echte Stärken und eine echte Schwäche. Die Rolle (&6Ingenieur&r, &6Arkanist&r, &6Baumeister&r, &6Entdecker&r, &6Hüter&r, &6Versorger&r, &6Händler&r) gibt kleine Boni passend zu einer Säule. Eine Gruppe mit verschiedenen Rollen kommt schneller voran.",
               "",
-              "Keine Herkunft kann fliegen oder überspringt eine Stufe. &eO&r zeigt dir deine Kräfte, mehr in &6Tipps und Tricks&r.",
+              "Keine Herkunft kann fliegen oder überspringt eine Stufe. &e{key:key.neoorigins.view_info}&r zeigt dir deine Kräfte, mehr in &6Tipps und Tricks&r.",
           ],
           tasks=[task_checkmark("Herkunft und Rolle stehen")],
           rewards=[reward_xp(3)],

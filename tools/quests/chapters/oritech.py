@@ -239,7 +239,7 @@ quests = [
     quest("destroyer", 23, 3.2, "&7Spann einen Rahmen mit Zerstörer",
           subtitle="Ein Arm fährt über die Fläche.",
           description=[
-              "&6Maschinen-Rahmen:&r vier Eisengitter um zwei Nickel, gibt sechzehn. Leg damit ein &eleeres Rechteck&r bis &e64 Blöcke&r Seitenlänge. &6Zerstörer Block&r: Motor, Laser, Motor oben, Motor, Pulverizer, Motor, unten drei Platten.",
+              "&6Maschinen-Rahmen:&r drei Eisengitter in einer Säule, links und rechts der Mitte je ein Nickel, gibt sechzehn. Leg damit ein &eleeres Rechteck&r bis &e64 Blöcke&r Seitenlänge. &6Zerstörer Block&r: Motor, Laser, Motor oben, Motor, Pulverizer, Motor, unten drei Platten. Er braucht &ezwei Kerne&r.",
               "",
               "Setz den Zerstörer an den Rahmen, auch an eine Ecke. Sein Arm baut die Schicht &eunter&r dem Rahmen ab. &6Platzierer&r und &6Dünger Block&r arbeiten auf demselben Rahmen mit.",
               "",
@@ -356,7 +356,7 @@ quests = [
           "oritech:machine_inventory_proxy_addon", [reward_item("minecraft:chest", 4)]),
     addon("addon_steam", 5, 14, "&aKoch Dampf statt Strom", "Steam Boiler Addon.",
           "Fünf &6Flüssigkeitsrohre&r, ein &6Kupferbarren&r in der Mitte, unten Adamant, Platte, Adamant.",
-          "Am Generator verbrennt er Brennstoff mit Wasser zu Dampf. Die &6Steam Engine&r (Generator, Spule, Electrum, Kupfer) macht daraus wieder Strom, eins zu eins.",
+          "Am Generator verbrennt er Brennstoff mit Wasser zu Dampf. Die &6Steam Engine&r (Generator, Spule, Electrum, Kupfer) macht daraus wieder Strom und braucht &edrei Kerne&r.",
           "oritech:steam_boiler_addon", [reward_item("minecraft:water_bucket", 1)]),
     addon("addon_processing", 7.5, 14, "&aRechne doppelt mit der Hilfskammer", "Auxiliary Processing Chamber.",
           "Motor, &6Electrum&r, Motor oben, &6Unheilige Intelligenz&r, Komparator, Unheilige Intelligenz in der Mitte, drei Platten unten.",
@@ -428,7 +428,7 @@ quests = [
           description=[
               "&6Reaktorwände&r (Stahl, Platten, Nickel) als Quader, der &6Controller&r in einer Wand, Rechtsklick baut zusammen. Innen &6Stäbe&r (Plastik über zwei Energite), über jedem Stab ein &6Fuel Port&r im Dach, außen ein &6Energy Port&r.",
               "",
-              "Stäbe machen Hitze. &6Heat Vents&r ziehen sie ab, &6Heat Absorber&r unter einem &6Coolant Port&r mit Eis kühlen alles um sich. Alle Innenlagen müssen gleich aussehen.",
+              "Stäbe machen Hitze. &6Heat Vents&r ziehen sie ab, &6Heat Absorber&r unter einem &6Reactor Coolant Absorber Port&r mit Eis kühlen alles um sich. Alle Innenlagen müssen gleich aussehen.",
               "",
               "&cAchtung:&r Über &e2 000 Hitze&r schmilzt er nach 30 Sekunden, der sichere Modus ist auf dem Server aus. Fang mit einem Stab und vier Vents an.",
               "",
@@ -459,7 +459,7 @@ quests = [
           description=[
               "Fünf &6Electrum&r oben und an den Seiten, eine &6Magnetspule&r in der Mitte, unten Platte, &6Grundlegender Generator&r, Platte ergeben den &6Lava Generator&r.",
               "",
-              "Er verbrennt &6Lava&r zu &e64 RF/t&r, doppelt so viel wie der Grundlegende Generator, Puffer 100 000 RF. Er braucht &ezwei Kerne&r. &6Sheol Fire&r aus der Raffinerie brennt viel länger als Lava.",
+              "Er verbrennt &6Lava&r zu &e64 RF/t&r, doppelt so viel wie der Grundlegende Generator, Puffer 100 000 RF. Er braucht &eeinen Kern&r. &6Sheol Fire&r aus der Raffinerie brennt viel länger als Lava.",
               "",
               "Mit Pumpe und Flüssigkeitsrohr läuft er ohne dich.",
           ],
@@ -470,7 +470,7 @@ quests = [
     quest("bio_gen", 7.5, 5, "&2Stell einen Biogenerator auf",
           subtitle="Strom aus Biomasse.",
           description=[
-              "Fünf &6Biostahl&r oben und an den Seiten, ein &6Flux Gate&r in der Mitte, unten Spule, &6Grundlegender Generator&r, Spule ergeben den &6Biogenerator&r. Er braucht &ezwei Kerne&r.",
+              "Fünf &6Biostahl&r oben und an den Seiten, ein &6Flux Gate&r in der Mitte, unten Spule, &6Grundlegender Generator&r, Spule ergeben den &6Biogenerator&r. Er braucht &eeinen Kern&r.",
               "",
               "Er macht &e64 RF/t&r aus &6Biomasse&r und anderen Pflanzenstoffen, Puffer 100 000 RF. Biomasse macht der Pulverizer aus Pflanzen, Setzlingen und Feldfrüchten, aus einem Packed Wheat gleich 16.",
               "",

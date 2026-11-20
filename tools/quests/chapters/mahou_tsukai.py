@@ -155,7 +155,7 @@ quests = [
     quest("gems", 0, 10.5, "&dStimm einen Diamanten ein",
           subtitle="10 000 Mana für unterwegs.",
           description=[
-              "&6Einstimmer:&r Lapis in die Ecken, Gold an die Seiten, Mitte frei. Formlos mit einem &6Diamanten&r wird er zum &deingestimmten Diamanten&r.",
+              "&6Einstimmer:&r Lapis in die Ecken, auf Kronwerke &6Terrastahlbarren&r an die Seiten, Mitte frei. Formlos mit einem &6Diamanten&r macht er einen &deingestimmten Diamanten&r und bleibt dabei erhalten: Ein Einstimmer reicht für alle Steine.",
               "",
               "Halten und Rechtsklick füllt ihn mit deinem Mana. Zauber ziehen aus allen Edelsteinen im Inventar. Füll ihn vor dem Schlafen.",
           ],
@@ -164,9 +164,9 @@ quests = [
           deps=["blood"], icon="mahoutsukai:attuned_diamond"),
 
     quest("attuned_emerald", 2.5, 9.5, "&dStimm einen Smaragd ein",
-          subtitle="5 000 Mana, billiger.",
+          subtitle="5 000 Mana aus einem Smaragd.",
           description=[
-              "Einstimmer und ein &6Smaragd&r, formlos. Hält &d5 000 Mana&r.",
+              "Einstimmer und ein &6Smaragd&r, formlos, der Einstimmer bleibt. Hält &d5 000 Mana&r, genug für zwei Mystische Stäbe mit je 2 000.",
               "",
               "Zwei davon tragen einen Mystischen Stab mit Rest.",
           ],
@@ -282,7 +282,7 @@ quests = [
           description=[
               "&e2 Goldpulver und 1 Diamantpulver&r auf einem Tuch.",
               "",
-              pic("mahoutsukai:scroll_mystic_staff"),
+              pic("mahoutsukai:spell_scroll"),
               "",
               "Die Rolle ist an dich gebunden. Für jeden Stab gibt also ein Magier sein eigenes Mana.",
           ],

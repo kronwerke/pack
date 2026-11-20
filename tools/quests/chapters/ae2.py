@@ -172,7 +172,7 @@ quests = [
     quest("drive", 0, 10, "&3Bau ein ME-Laufwerk",
           subtitle="Zehn Plätze für Speicherzellen.",
           description=[
-              "&eRezept auf Kronwerke:&r Eisen in die Ecken, &6Konstruktionsprozessoren&r oben und unten, zwei &6Fortgeschrittene Steuerschaltkreise&r von Mekanism links und rechts, die Mitte bleibt frei.",
+              "&eRezept auf Kronwerke:&r Eisen in die Ecken, &6Konstruktionsprozessoren&r oben und unten, zwei &6Fortschrittliche Steuerschaltkreise&r von Mekanism links und rechts, die Mitte bleibt frei.",
               "",
               "Die Schaltkreise ersetzen die Fluix-Glaskabel des Originals: Lagernetze brauchen Mekanism. Das Laufwerk hält bis zu &e10 Zellen&r und braucht einen Kanal.",
           ],
@@ -393,7 +393,7 @@ quests = [
     quest("factory", 15, 17, "&6&lBau die Schaltkreisfabrik",
           subtitle="Der Ofen schläft nie, die Gravurmaschine auch nicht.",
           description=[
-              "Verarbeitungsschablonen für Gedrucktes Silizium (Gravurmaschine), Infundierte Legierung und Einfache Steuerschaltkreise (zwei Infusionsanlagen), eine Fertigungsschablone im Assembler für den &6Fortgeschrittenen Steuerschaltkreis&r. Bestell 64 Stück.",
+              "Verarbeitungsschablonen für Gedrucktes Silizium (Gravurmaschine), Infundierte Legierung und Einfache Steuerschaltkreise (zwei Infusionsanlagen), eine Fertigungsschablone im Assembler für den &6Fortschrittlichen Steuerschaltkreis&r. Bestell 64 Stück.",
               "",
               "Ein Exportbus mit Fertigungskarte an einer Kiste hält den Vorrat, bis du ihn zum Obelisken trägst. Wer viel Silizium braucht, baut den &6Circuit Slicer&r von Extended AE weiter unten.",
               "",

@@ -420,7 +420,7 @@ quests = [
           description=[
               "Bring &e8 Wilden-Tribute&r zusammen und benutz Verweilen oder Wand im Kampf.",
               "",
-              "&eKronwerke:&r In Stufe 4 will der Obelisk auf der Magieseite &e128 Gaia-Geister&r und &e30 Mystische Stäbe&r. Gegen die Diener des Gaia-Wächters hilft ein Verweilen-Feld oder eine Wand.",
+              "&eKronwerke:&r In Stufe 4 will der Obelisk auf der Magieseite &e128 Gaia-Seelen&r und &e30 Mystische Stäbe&r. Gegen die Diener des Gaia-Wächters hilft ein Verweilen-Feld oder eine Wand.",
               "",
               "In &6Stufe 5&r will der Obelisk &e64 Wilden-Tribute&r, eine feste Zahl, jeder ein Chimärenkampf. Wer jetzt übt, schafft das später an wenigen Abenden.",
           ],

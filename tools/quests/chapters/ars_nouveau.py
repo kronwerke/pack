@@ -111,7 +111,7 @@ quests = [
           description=[
               "Oben &e3 Archwood-Stufen&r, Mitte links und rechts je ein &6Goldnugget&r, unten links und rechts je ein &6Archwood-Stamm&r.",
               "",
-              "Klick den Tisch mit dem Zauberbuch an, wähl eine Glyphe, drück &eAuswählen&r und wirf die angezeigten Zutaten mit &eQ&r auf den Tisch. Er zieht sie auch aus Truhen daneben.",
+              "Klick den Tisch mit dem Zauberbuch an, wähl eine Glyphe, drück &eAuswählen&r und wirf die angezeigten Zutaten mit &e{key:key.drop}&r auf den Tisch. Er zieht sie auch aus Truhen daneben.",
               "",
               "Jede Glyphe kostet dazu Erfahrung: Stufe 1 &e27 Punkte&r, Stufe 2 &e55&r, Stufe 3 &e160&r. Die fertige Glyphe fällt als Item heraus, Rechtsklick lernt sie für immer.",
           ],

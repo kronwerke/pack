@@ -50,7 +50,7 @@ quests = [
           deps=["welcome"], icon="pneumaticcraft:reinforced_bricks"),
 
     quest("tube", 2.5, 1, "&bLeg Druckluftrohre",
-          subtitle="Acht Rohre aus zwei Barren und Glas.",
+          subtitle="Acht Rohre aus zwei Barren und einem Flüssigkeitsrohr.",
           description=[
               "Zwei &6Druckeisenbarren&r mit einem &6Flüssigkeitsrohr&r aus Create dazwischen ergeben acht &6Druckluftrohre&r (Pressure Tube). Sie fassen je 1 000 mL Luft und halten &e5 Bar&r aus.",
               "",
@@ -63,7 +63,7 @@ quests = [
     quest("compressor", 5, 0, "&6&lBau einen Luftkompressor",
           subtitle="Kohle rein, Druck raus.",
           description=[
-              "&eRezept:&r sechs &6Verstärkte Ziegel&r außen herum, ein &6Ofen&r unten in der Mitte, ein &6Druckluftrohr&r rechts in der Mitte ergeben den &6Luftkompressor&r (Air Compressor).",
+              "&eRezept:&r sechs &6Verstärkte Ziegel&r außen herum, ein &6Lohenbrenner&r von Create unten in der Mitte (so auf Kronwerke, sonst ein Ofen), ein &6Druckluftrohr&r rechts in der Mitte ergeben den &6Luftkompressor&r (Air Compressor).",
               "",
               "Er verbrennt alles, was ein Ofen verbrennt, und macht daraus &b10 mL Luft pro Tick&r. Ein Stück Kohle brennt 1 600 Ticks, das sind 16 000 mL. Eimer mit Lava nimmt er nicht, dafür gibt es den Flüssigkeitskompressor.",
               "",
@@ -78,7 +78,7 @@ quests = [
     quest("pressure", 7.5, 0, "&bVersteh, was Bar bedeutet",
           subtitle="Druck ist Luft geteilt durch Volumen.",
           description=[
-              "Jede Maschine hat ein &eVolumen&r in mL. Der Druck ist: &bLuft geteilt durch Volumen, minus 1&r. Eine Maschine mit 5 000 mL Volumen und 20 000 mL Luft darin steht bei &e3 Bar&r. 0 Bar ist normale Luft, minus 1 Bar ein Vakuum.",
+              "Jede Maschine hat ein &eVolumen&r in mL. Der Druck ist: &bLuft geteilt durch Volumen&r. Eine Maschine mit 5 000 mL Volumen und 20 000 mL Luft darin steht bei &e4 Bar&r. 0 Bar ist normale Luft, minus 1 Bar ein Vakuum.",
               "",
               "Luft fließt immer von hohem zu niedrigem Druck, bis alles gleich ist. Ein kleines Rohr an einer großen Kammer bekommt deren Druck. Maschinen verbrauchen &eLuft&r, nicht Druck: Die Anzeige fällt, weil weniger Luft im selben Volumen steckt.",
               "",
@@ -122,7 +122,7 @@ quests = [
           description=[
               "Acht &6Verstärkte Ziegel&r im Ring ergeben 16 &6Kammerwände&r (Pressure Chamber Wall). Mit einem &6Glas&r in der Mitte werden es 16 &6Kammergläser&r, die genauso tragen, aber durchsichtig sind.",
               "",
-              "Eine 3x3x3-Kammer braucht 26 Blöcke in der Hülle. Rechne mit 20 Wänden oder Gläsern, der Rest sind Ventil und Schnittstellen aus dem nächsten Schritt.",
+              "Eine 3x3x3-Kammer braucht 26 Blöcke in der Hülle. Rechne mit 23 Wänden oder Gläsern, der Rest sind ein Ventil und zwei Schnittstellen aus dem nächsten Schritt.",
           ],
           tasks=[task_item("pneumaticcraft:pressure_chamber_wall", 16), task_item("pneumaticcraft:pressure_chamber_glass", 4)],
           rewards=[reward_item("pneumaticcraft:reinforced_bricks", 16), reward_xp(3)],
@@ -227,7 +227,7 @@ quests = [
     quest("omni_hopper", 20, 5, "&eBau einen Rundum-Trichter",
           subtitle="Ein Trichter, der in jede Richtung zeigt.",
           description=[
-              "Vier &6Druckeisenbarren&r um eine &6Truhe&r (zwei oben außen, zwei in der Mitte, einer unten) ergeben den &6Rundum-Trichter&r (Omnidirectional Hopper). Er braucht keine Luft.",
+              "Fünf &6Druckeisenbarren&r um eine &6Truhe&r (zwei oben links, je einer links und rechts der Truhe, einer unten links) ergeben den &6Rundum-Trichter&r (Omnidirectional Hopper). Er braucht keine Luft.",
               "",
               "Beim Setzen zeigt der Eingang zu dir, der Ausgang auf den Block, an den du ihn gesetzt hast. &eRechtsklick mit dem Schlüssel&r dreht den Eingang, &eSchleichen und Rechtsklick&r den Ausgang. So zieht er aus einer Truhe oben heraus und schiebt seitlich in die Kammerschnittstelle.",
               "",
@@ -328,7 +328,7 @@ quests = [
     quest("vortex", 15, 9, "&c&lBau ein Wirbelrohr",
           subtitle="Druckluft wird zu heiß und kalt.",
           description=[
-              "Zwei &6Druckluftrohre&r übereinander in der Mitte, zwei &6Kupferbarren&r links und rechts in der mittleren Reihe, der Rest &6Druckeisen&r (sechs Stück) ergeben das &6Wirbelrohr&r (Vortex Tube).",
+              "Zwei &6Druckluftrohre&r übereinander in der Mitte, zwei &6Kupferbarren&r links und rechts in der mittleren Reihe, der Rest &6Druckeisen&r (fünf Stück) ergeben das &6Wirbelrohr&r (Vortex Tube).",
               "",
               "Es teilt die Luft, die hineinströmt, in eine &cheiße&r und eine &bkalte&r Seite. Beim Setzen zeigt die heiße Seite zu dir, ein roter und ein blauer Ring markieren die Enden. Mehr Druck gibt mehr Temperaturunterschied, verbraucht aber auch mehr Luft.",
               "",
@@ -345,7 +345,7 @@ quests = [
           description=[
               "Hitze wandert von Block zu Block, immer vom heißen zum kalten, und nur zwischen Blöcken, die Hitze kennen. &bLava&r neben einer Maschine heizt sie und wird dabei langsam zu &7Obsidian&r. &6Magma&r heizt und wird zu Netherrack. Fackeln und Lagerfeuer heizen nur schwach.",
               "",
-              "&eKronwerke:&r Der &6Lohenbrenner&r von Create ist eine Hitzequelle, die &enicht verbraucht&r wird. Entzündet überträgt er gut, überhitzt (mit Lohenkuchen) noch fünfmal besser. Du hast einen im Startpaket dieser Stufe. Stell ihn direkt an die Raffinerie und spar dir das Wirbelrohr fürs Erste.",
+              "&eKronwerke:&r Der &6Lohenbrenner&r von Create ist eine Hitzequelle, die &enicht verbraucht&r wird. Entzündet überträgt er gut, überhitzt (mit Lohenkuchen) noch zehnmal besser. Der Brenner aus dem Startpaket dieser Stufe steckt schon im Luftkompressor, für die Raffinerie fängst du eine zweite Lohe. Stell den Brenner direkt an die Raffinerie und spar dir das Wirbelrohr fürs Erste.",
               "",
               "&bKälte&r kommt von Eis, Packeis, Blaueis und Schnee, die dabei schmelzen. Ein &6Druckeisenblock&r leitet Hitze fast ohne Widerstand weiter, ein &6Wärmerohr&r (Heat Pipe: Wärmedämmung um Druckeisenblöcke, sechs Stück) genauso, nur ohne Verlust an die Luft.",
               "",
@@ -569,7 +569,7 @@ quests = [
               "",
               "Der &6Fortgeschrittene Luftkompressor&r macht 50 mL pro Tick statt 10, wird dabei heiß und braucht Kühlkörper. Dazu kommen &6Drohnen&r, der &6Programmierer&r mit seinen Puzzleteilen, der Programmierbare Controller, die Sicherheitsstation und der Universalsensor.",
               "",
-              "&eRezept auf Kronwerke:&r Der &6Flux-Kompressor&r und der &6Druckluft-Dynamo&r, die Brücken zu Strom, brauchen statt der Platine einen &6Einfachen Steuerschaltkreis&r von Mekanism, dazu ein fortgeschrittenes Rohr und einen Turbinenrotor. Die &6Drohne&r bekommt unter ihre Platine ein &6Präzisionsgetriebe&r von Create, drei Turbinenrotoren drum herum.",
+              "&eRezept auf Kronwerke:&r Der &6Flux-Kompressor&r und der &6Druckluft-Dynamo&r, die Brücken zu Strom, brauchen statt der Platine einen &6Einfachen Steuerschaltkreis&r von Mekanism, dazu ein fortgeschrittenes Rohr, der Flux-Kompressor außerdem einen Turbinenrotor. Die &6Drohne&r bekommt unter ihre Platine ein &6Präzisionsgetriebe&r von Create, drei Turbinenrotoren drum herum.",
               "",
               "Die &6Druckluftrüstung&r mit Düsenstiefeln und die Minigun warten bis Stufe 4. Alles andere aus diesem Kapitel bleibt die Grundlage: Druck, Hitze, Kunststoff und Platinen brauchst du dort nur in größeren Mengen.",
           ],

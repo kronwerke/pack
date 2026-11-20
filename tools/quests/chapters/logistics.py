@@ -154,7 +154,7 @@ quests = [
               "",
               "Vergleich im Programmer mit einer festen Zahl, ein Redstone Writer schaltet eine Lampe, sobald genug Stahl bereitliegt. Dann lohnt sich der Gang zum Obelisken.",
               "",
-              "&eKronwerke:&r &e\"Der Ofen schläft nie\"&r will &e4 000 Stahlbarren&r, &e250 Fortgeschrittene Steuerschaltkreise&r und &e8 Stahlkerne&r. Abgegeben wird von Hand am Obelisken, und es zählt für den, der abgibt.",
+              "&eKronwerke:&r &e\"Der Ofen schläft nie\"&r will &e4 000 Stahlbarren&r, &e250 Fortschrittliche Steuerschaltkreise&r und &e8 Stahlkerne&r. Abgegeben wird von Hand am Obelisken, und es zählt für den, der abgibt.",
           ],
           tasks=[task_item("integrateddynamics:part_inventory_reader", 1), task_item("mekanism:ingot_steel", 64)],
           rewards=[reward_table("s3_rare"), reward_item("mekanism:ingot_steel", 32), reward_xp(25)],
@@ -317,7 +317,7 @@ quests = [
     quest("laser_node", 3, 10, "&cVerbinde zwei Laser Nodes",
           subtitle="Logistik ohne Kabel.",
           description=[
-              "&6Logic Chip:&r Redstone, Goldnuggets, Ton und ein Quarzblock gibt vier Rohlinge, im Ofen gebrannt. Chip, Glas, Redstone und Eisen ergeben einen &6Laser Connector&r, Connector in Eisen und Glasscheiben einen &6Laser Node&r.",
+              "&6Logic Chip:&r Redstone, Goldnuggets, Ton und ein Quarzblock gibt vier Rohlinge, im Ofen gebrannt. Chip, Glas, Redstone und drei Fluixkristalle (auf Kronwerke statt Eisen) ergeben einen &6Laser Connector&r, Connector in Eisen und Glasscheiben einen &6Laser Node&r.",
               "",
               "Mit dem &6Laser Wrench&r klickst du einen Node an, dann einen zweiten. Höchstens &e8 Blöcke&r Abstand, für weitere Strecken setzt du Laser Connectors dazwischen. Alle verbundenen Nodes bilden ein Netz.",
           ],

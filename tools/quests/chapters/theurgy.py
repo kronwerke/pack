@@ -62,7 +62,7 @@ quests = [
     quest("liquefaction", 10, -2, "&6Löse Sulfur aus Raw Iron",
           subtitle="Hier passiert die Vermehrung.",
           description=[
-              "&6Liquefaction Cauldron&r: Kupfer, Kessel, Kupfer über drei Stein, auf die Feuerschale. Sal Ammoniac hinein, mit &6Raw Iron&r anklicken, heizen.",
+              "&6Liquefaction Cauldron&r: oben drei Kupfer, in der Mitte Kupfer, Kessel, Kupfer, unten drei Stein, auf die Feuerschale. Sal Ammoniac hinein, mit &6Raw Iron&r anklicken, heizen.",
               "",
               "Ein Raw Iron gibt &e3 Iron Sulfur&r, ein Erzblock &e5&r, ein Barren nur einen. Jeder Vorgang kostet 10 mB Sal Ammoniac, ein Eimer reicht für hundert.",
           ],
@@ -86,7 +86,7 @@ quests = [
           description=[
               "&6Distiller&r: ein Kupferblock mit drei Eisenbarren auf drei Stein, auf die Feuerschale. Mit fast allem anklicken.",
               "",
-              "Ein Raw Iron gibt fünf Shards, zehn Bruchstein oder drei Feldfrüchte einen. Du brauchst einen Shard pro Barren. Alle Geräte nehmen auch per Trichter.",
+              "Ein Eisenerz gibt fünf Shards, ein Raw Iron einen, zehn Bruchstein oder drei Feldfrüchte auch einen. Du brauchst einen Shard pro Barren. Alle Geräte nehmen auch per Trichter.",
           ],
           tasks=[task_item("theurgy:distiller", 1), task_item("theurgy:mercury_shard", 16)],
           rewards=[reward_item("minecraft:cobblestone", 64), reward_xp(3)],
@@ -122,7 +122,7 @@ quests = [
               "",
               "Das geht mit fast jedem Erz im Pack: Kupfer, Gold, Osmium, Zinn, Blei, Zink und mehr. EMI zeigt beim Liquefaction Cauldron, welche.",
               "",
-              "&eKronwerke:&r Mit Absicht so stark wie Mekanisms Verdreifachung, nur mit Feuer statt Strom. Das Stufenziel will &e4 000 Stahl&r, und jeder Stahlbarren beginnt als Eisen.",
+              "&eKronwerke:&r Mit Absicht so stark wie Mekanisms Verdreifachung, nur mit Feuer statt Strom. Das Stufenziel will &e4 000 Stahl&r (Menge passt sich der Spielerzahl an), und jeder Stahlbarren beginnt als Eisen.",
           ],
           tasks=[task_checkmark("Barren aus Sulfur, Salt und Mercury gemacht")],
           rewards=[reward_table("s3_uncommon"), reward_item("minecraft:raw_iron", 32), reward_xp(10)],
@@ -132,7 +132,7 @@ quests = [
     quest("strata", 0, 5, "&6Brenn Strata Salt aus Bruchstein",
           subtitle="Salz, ohne Erz zu opfern.",
           description=[
-              "&6Bruchstein&r, Erde, Sand oder Ton in den Calcination Oven: &6Strata Salt&r, eins pro Block.",
+              "&6Bruchstein&r, Erde, Sand oder Ton in den Calcination Oven: &6Strata Salt&r, eins pro Block, aus einem Tonblock vier.",
               "",
               "&eTipp:&r Ein zweiter Ofen, den ein Trichter nur mit Bruchstein füttert, hält den Incubator dauerhaft mit Salz satt.",
           ],
@@ -200,7 +200,7 @@ quests = [
           description=[
               "Wie die Glasrute, mit einem &6Amethystsplitter&r in der Mitte und einem &6Goldnugget&r oben rechts.",
               "",
-              "Findet auch Gold. Die Diamant-Stufe braucht Quarz und Diamant, die beste Blaze-Rute und Netheritschrott. Mit Sulfur gebaute Ruten sind fest auf eine Erzgruppe eingestellt.",
+              "Findet auch Gold. Die Diamant-Stufe braucht Quarz und Diamant, die beste eine Lohenrute und &6Antiken Schrott&r (das Erz, nicht die Platte). Mit Sulfur gebaute Ruten sind fest auf eine Erzgruppe eingestellt.",
           ],
           tasks=[task_item("theurgy:divination_rod_t2", 1)],
           rewards=[reward_item("minecraft:gold_nugget", 9), reward_xp(3)],
@@ -291,7 +291,7 @@ quests = [
     quest("fermentation", 7.5, 11.5, "&6Vergär Sulfur zu Niter",
           subtitle="Sulfur wird formbar.",
           description=[
-              "&6Fermentation Vat&r: Kupfer, Kupferblock, Fass, Sulfur. Mit Sulfur, &6Sal Ammoniac Bucket&r und &6Zucker&r oder einer Feldfrucht anklicken, schleichend mit leerer Hand schließen.",
+              "&6Fermentation Vat&r: Kupfer, Kupferblock, Fass, Sulfur. Mit Sulfur, einem &6Wassereimer&r und &6Zucker&r oder einer Feldfrucht anklicken, schleichend mit leerer Hand schließen.",
               "",
               "Öffnet sie sich wieder, ist sie fertig. Aus Quartz Sulfur wird &6Common Gems Niter&r, das für eine ganze Gruppe steht.",
           ],
@@ -400,7 +400,7 @@ quests = [
               "",
               "Im Mercury Catalyst gibt ein Shard &e800&r Flux, ein Kristall &e3 200&r, beide mit &e20&r Flux pro Tick. Gleich viel Energie, aber ein Viertel des Platzes in Truhen und Trichtern.",
               "",
-              "Zum Rechnen: Eine Reformation kostet &e100 bis 200&r Flux. Ein Kristall reicht also für 16 bis 32 Umwandlungen.",
+              "Zum Rechnen: Eine Reformation kostet &e50 bis 200&r Flux, die meisten 50. Ein Kristall reicht also für 16 bis 64 Umwandlungen.",
           ],
           tasks=[task_item("theurgy:mercury_crystal", 8)],
           rewards=[reward_item("theurgy:mercury_shard", 16), reward_xp(4)],

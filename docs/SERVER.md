@@ -24,7 +24,7 @@ A copy of `config/ftbchunks-world.snbt` in `world/serverconfig/ftbchunks-world.s
 
 | File | Setting | Why |
 | --- | --- | --- |
-| `ftbchunks-world.snbt` | 9 force loaded chunks per team (3 by 3), released after 7 days without a login; claims released after 30 days | Machines of players who stopped keep no chunks ticking for the rest of the season. |
+| `ftbchunks-world.snbt` | 25 force loaded chunks per team (5 by 5), however many members it has, released after 7 days without a login; claims released after 30 days | Machines of players who stopped keep no chunks ticking for the rest of the season. |
 | `ftbchunks-world.snbt` | Fire and fluid protection on | Lava or fire placed next to a claim does not burn into it. |
 | `ftbchunks-world.snbt` | PvP per team, off in claims by default | A claim is safe unless its team turns PvP on. |
 | `quarryplus.toml` | Chunk loader off, bedrock module off | Quarries load no chunks outside FTB Chunks' limits and open no holes to the void. |

@@ -67,7 +67,7 @@ quests = [
           task_item("ars_nouveau:enchanters_sword", 1), "ars_nouveau:enchanters_sword", ["s1"], section="s1"),
 
     entry("irons_wizard", 5, 0, S1, "&5Zieh die Zaubererrobe an", "Iron's Spells: 125 Mana pro Teil.",
-          ["&6Arcane Cloth&r aus Arcane Essence und Wolle, dann Hut, Robe, Hose und Schuhe im Lederrüstungsmuster. Kapitel &5Iron's Spells 'n Spellbooks&r.",
+          ["&6Arcane Cloth&r aus Arcane Essence und Wolle, dann Robe, Hose und Schuhe im Lederrüstungsmuster. Der &6Zaubererhut&r ist ein Spitzhut: zwei Tücher übereinander, darunter eine Reihe aus drei. Das Helmmuster gibt die Kapuze, die für diese Quest nicht zählt. Kapitel &5Iron's Spells 'n Spellbooks&r.",
            "",
            "Jedes Teil +125 Mana und +5 Prozent Zauberkraft, Schutz wie Diamant (3, 8, 6, 3). Mit einer Rune wird daraus Schulrüstung mit +10 Prozent für ihre Schule."],
           task_item("irons_spellbooks:wizard_hat", 1), "irons_spellbooks:wizard_hat", ["s1"], section="s1"),
@@ -97,7 +97,7 @@ quests = [
           task_checkmark("Eine Ader auf einmal abgebaut"), "minecraft:iron_pickaxe", ["s1"], section="s1"),
 
     entry("mining_dim", 2, 1, S1, "&6Bau den Grubenrahmen", "Der Rahmen für das Tor zur Farmwelt.",
-          ["&eRezept:&r 4 Andesit-Gehäuse, 4 Infundiertes Eisen und ein Quellstein in der Mitte ergeben 2 Grubenrahmen. Zehn davon und ein Quellstein öffnen das Portal.",
+          ["&eRezept:&r 4 Andesitgehäuse, 4 Infused Iron und ein Quelljuwel in der Mitte ergeben 2 Grubenrahmen. Zehn davon und ein Quelljuwel öffnen das Portal.",
            "",
            "Dahinter liegt eine eigene Welt nur zum Graben, alle drei Tage neu. Kapitel &6Erkundung&r."],
           task_item("kronwerke:grubenrahmen", 1), "kronwerke:grubenrahmen", ["s1"], section="s1"),
@@ -163,13 +163,13 @@ quests = [
           task_checkmark("Purpur-Stahl-Werkzeug gebaut"), "silentgear:hammer_head", ["s2"]),
 
     entry("mek_paxel", 3, 0, S2, "&7Bau die Stahlpaxel", "Mekanism Tools: drei Werkzeuge, 1 000 Haltbarkeit.",
-          ["Stahlspitzhacke, Stahlaxt und Stahlschaufel mit zwei Stöcken ergeben die &6Stahlpaxel&r. Stahl kommt aus der Infusionsanlage, Kapitel &5Mekanism&r.",
+          ["Stahlspitzhacke, Stahlaxt und Stahlschaufel mit zwei Eisenbarren als Griff ergeben die &6Stahlpaxel&r. Stahl kommt aus der Infusionsanlage, Kapitel &5Mekanism&r.",
            "",
            "1 000 Haltbarkeit, Tempo 8, 8 Schaden. &6Raffiniertes Glowstone&r gräbt mit Tempo 15, hält aber nur 768. Stahlrüstung: 20 Punkte, Zähigkeit 2."],
           task_checkmark("Stahlpaxel gebaut"), "minecraft:iron_axe", ["s2"]),
 
     entry("mek_jetpack", 4, 0, S2, "&bFlieg mit dem Jetpack", "Mekanism: der erste Flug des Packs.",
-          ["Oben Stahl, Einfacher Schaltkreis, Stahl, in der Mitte Zinn, &6Einfacher Chemietank&r, Zinn, unten Zinn. Füllen mit &bWasserstoff&r aus dem Elektrolyseur (Wasser und Strom).",
+          ["Oben Stahl, Einfacher Steuerschaltkreis, Stahl, in der Mitte Zinn, &6Einfacher Chemietank&r, Zinn, unten Zinn. Füllen mit &bWasserstoff&r aus dem Elektrolyseur (Wasser und Strom).",
            "",
            "Fasst 24 000 mB. Taste für den Modus: Normal, Schweben, Aus. Die &6Free Runners&r (2 Schaltkreise, 2 Infundierte Legierungen, 2 Energietabletts) fangen Fallschaden ab und steigen Blöcke hoch."],
           task_checkmark("Mit dem Jetpack geflogen"), "minecraft:feather", ["s2"]),
@@ -192,10 +192,10 @@ quests = [
            "300 Haltbarkeit, Tempo 6,2, Diamant-Abbaustufe. Rüstung 15 wie Eisen, Verzauberbarkeit 18. Alles heilt sich aus einer Manatafel im Inventar."],
           task_checkmark("Manastahl-Werkzeug gebaut"), "botania:mana_diamond", ["s2"]),
 
-    entry("bot_terra", 0, 1, S2, "&aSchmiede Terrastahl", "Botania: Terraklinge und Terra-Zerschmetterer.",
-          ["Terrastahl von der Agglomerationsplatte. &6Terraklinge&r: 2 Barren, ein Lebeholzzweig. &6Terra-Zerschmetterer&r: Spitzhacke aus Terrastahl, die im Becken Mana schluckt.",
+    entry("bot_terra", 0, 1, S2, "&aSchmiede Terrastahl", "Botania: Terraklinge und Terra-Trümmerer.",
+          ["Terrastahl von der Agglomerationsplatte. &6Terraklinge&r: 2 Barren, ein Lebeholzzweig. &6Terra-Trümmerer&r: Spitzhacke aus Terrastahl, die im Becken Mana schluckt.",
            "",
-           "2 300 Haltbarkeit, Tempo 9, +4 Schaden, Netherit-Stufe. Rüstung 20 mit Zähigkeit 3. Die Klinge schießt Strahlen, der Zerschmetterer gräbt ab Rang B Flächen, der &6Terra-Fäller&r ganze Bäume."],
+           "2 300 Haltbarkeit, Tempo 9, +4 Schaden, Netherit-Stufe. Rüstung 20 mit Zähigkeit 3. Die Klinge schießt Strahlen, der Trümmerer gräbt ab Rang B Flächen, der &6Terra-Stutzer&r ganze Bäume."],
           task_checkmark("Terrastahl-Ausrüstung getragen"), "botania:livingwood_bow", ["s2"]),
 
     entry("ma_prudentium", 1, 1, S2, "&aVeredle auf Prudentium", "Mystical Agriculture: 2 800 Haltbarkeit.",
@@ -211,7 +211,7 @@ quests = [
           task_checkmark("Handschuhe getragen"), "minecraft:leather", ["s2"]),
 
     entry("irons_anvil", 3, 1, S2, "&5Setz eine Upgrade-Kugel ein", "Iron's Spells: Arcane Anvil und Pyromancer.",
-          ["Der &6Arcane Anvil&r (Quelljuwelblöcke, Diamant, Amboss) nimmt Rüstung plus &6Upgrade Orb&r: bis zu 3 Upgrades für Mana, Abklingzeit, Schutz oder eine Schule. Kugeln brauchen Mithril und Cinder Essence aus dem Nether.",
+          ["Der &6Arcane Anvil&r (Quelljuwelblöcke, Diamant, Amboss) nimmt Rüstung plus &6Upgrade Orb&r: bis zu 3 Upgrades für Mana, Abklingzeit, Schutz oder eine Schule. Kugeln brauchen Mithril (Oberwelt, Y minus 63 bis minus 38) und Cinder Essence aus dem Nether.",
            "",
            "Die &cPyromancer&r-Rüstung braucht die Fire Rune aus Lohenruten. Epic Ink mit Diamant- und Netheritbuch kommt in Stufe 3, Legendary und Drachenhaut in Stufe 4. Kapitel &5Iron's Spells 'n Spellbooks&r."],
           task_checkmark("Rüstung aufgewertet"), "ars_nouveau:source_gem_block", ["s2"]),
@@ -223,7 +223,7 @@ quests = [
           task_checkmark("Ignitium-Stück getragen"), "minecraft:shield", ["s2"]),
 
     entry("backpack_iron", 5, 1, S2, "&6Rüste den Rucksack auf", "Kupfer und Eisen: 45 und 54 Plätze.",
-          ["Rucksack in die Mitte, Kupferbarren oder Eisenbarren drumherum, an der Werkbank. Der Inhalt bleibt drin.",
+          ["Rucksack in die Mitte, Kupferbarren oder Eisenbleche von Create drumherum, an der Werkbank. Der Inhalt bleibt drin.",
            "",
            "Kupfer: 45 Plätze, 1 Upgrade. Eisen: 54 Plätze, 2 Upgrades. Stufe 3 bringt Gold (81, 3) und Diamant (108, 5) mit Inception und Everlasting Upgrade, Stufe 4 Netherit (120, 7). Kapitel &6Lager&r."],
           task_checkmark("Eisenrucksack getragen"), "sophisticatedbackpacks:backpack", ["s2"]),
@@ -253,7 +253,7 @@ quests = [
           deps=["s2"], icon="minecraft:iron_block", size=1.75, shape="hexagon"),
 
     entry("mek_obsidian", 0, 0, S3, "&5Bau Raffiniertes Obsidian", "Mekanism Tools: 8 192 Haltbarkeit.",
-          ["Obsidianstaub aus dem Zerkleinerer, mit Diamant infundiert, geschmolzen. Werkzeug und Rüstung wie Eisen. Kapitel &5Mekanism: Fortgeschritten&r.",
+          ["Obsidianstaub aus dem Zerkleinerer, mit Diamant infundiert, im Osmiumkompressor mit Osmium zum Barren gepresst. Werkzeug und Rüstung wie Eisen. Kapitel &5Mekanism: Fortgeschritten&r.",
            "",
            "Werkzeug 4 096, Paxel 8 192 Haltbarkeit, Tempo 12, 8 Schaden. Rüstung 31 Punkte (6, 12, 8, 5), Zähigkeit 5. Das stärkste Rüstungsmetall vor der MekaSuit."],
           task_checkmark("Raffiniertes Obsidian getragen"), "minecraft:obsidian", ["s3"]),
@@ -261,7 +261,7 @@ quests = [
     entry("mek_disassembler", 1, 0, S3, "&bBau den Atomic Disassembler", "Mekanism: ein Werkzeug mit Strom.",
           ["Infundierte Legierung, Energietablett, Infundierte Legierung oben, Legierung, &6Atomlegierung&r, Legierung in der Mitte, Raffiniertes Obsidian unten.",
            "",
-           "Spitzhacke, Schaufel, Axt und Schwert in einem, läuft mit Strom statt Haltbarkeit. Modus-Taste: Normal, Langsam, Schnell, Aderabbau. In Stufe 4 wird daraus das Meka-Werkzeug."],
+           "Spitzhacke, Schaufel, Axt und Schwert in einem, läuft mit Strom statt Haltbarkeit. Modus-Taste: Normal, Langsam, Schnell. Der Aderabbau ist auf Kronwerke abgeschaltet. In Stufe 4 wird daraus das Meka-Werkzeug."],
           task_checkmark("Disassembler gebaut"), "minecraft:redstone", ["s3"]),
 
     entry("mek_teleporter", 2, 0, S3, "&dTrag einen Teleporter in der Tasche", "Mekanism: Portable Teleporter.",
@@ -355,19 +355,19 @@ quests = [
           task_checkmark("Elytren getragen"), "minecraft:phantom_membrane", ["s4"]),
 
     entry("create_jetpack", 1, 0, S4, "&6Bau das Create-Jetpack", "Create Jetpack: 450 Sekunden Druckluft.",
-          ["In den Handwerkseinheiten: &6Kupfer-Rückentank&r in der Mitte, &5Elytra&r darunter, 2 Präzisionsgetriebe, Welle, 4 Schächte, 6 Messingbleche. Kapitel &6Create: Erweiterungen&r.",
+          ["In den Handwerkseinheiten: &6Kupfer-Rückentank&r in der Mitte, &5Elytra&r darunter, 2 Präzisionsgetriebe, Welle, 4 Zanite Gemstones aus dem Aether, 6 Messingbleche. Kapitel &6Create: Erweiterungen&r.",
            "",
            "Eine Füllung: 450 Sekunden Flug oder 900 Sekunden Schweben, Laden an jeder Welle. Sprung steigt, Schleichen sinkt, G schaltet, H schwebt. Mit Netherit-Tank wird es das Netherit-Jetpack."],
           task_checkmark("Mit dem Create-Jetpack geflogen"), "create:copper_backtank", ["s4"]),
 
     entry("mekasuit", 2, 0, S4, "&bZieh die MekaSuit an", "Mekanism: Netherit mit Strom und Modulen.",
-          ["Pro Teil: Netheritteil in der Mitte, HDPE-Platten, ein Ultimativer Schaltkreis, 2 Polonium Pellets und eine Induktionszelle. Module in der &6Modifikationsstation&r. Kapitel &5Mekanism: Elite&r.",
+          ["Pro Teil: Netheritteil in der Mitte, HDPE-Platten, ein Ultimativer Steuerschaltkreis, 2 Polonium Pellets und eine Induktionszelle. Module in der &6Modifikationsstation&r. Kapitel &5Mekanism: Elite&r.",
            "",
            "Module: Jetpack, Nachtsicht, Servomotor, Magnet, Strahlenschutz, Energie. Die starken brauchen Polonium. Die Rüstung läuft mit Strom und schützt, solange sie geladen ist."],
           task_checkmark("MekaSuit getragen"), "minecraft:diamond_chestplate", ["s4"]),
 
     entry("meka_tool", 3, 0, S4, "&bBau das Meka-Werkzeug", "Mekanism: ein Werkzeug für alles, mit Modulen.",
-          ["Ultimative Schaltkreise, Konfigurator, HDPE-Platten, der &6Atomic Disassembler&r in der Mitte, unten 2 Polonium Pellets und eine Induktionszelle.",
+          ["Ultimative Steuerschaltkreise, Konfigurator, HDPE-Platten, der &6Atomic Disassembler&r in der Mitte, unten 2 Polonium Pellets und eine Induktionszelle.",
            "",
            "Spitzhacke, Axt, Schaufel, Hacke, Schwert. Module: Abbaubeschleunigung, Behutsamkeit oder Glück, Aderabbau, in Stufe 5 Teleportation mit Antimaterie."],
           task_checkmark("Meka-Werkzeug gebaut"), "minecraft:diamond_axe", ["s4"]),
@@ -415,7 +415,7 @@ quests = [
           task_checkmark("Zaubererrobe getragen"), "ars_nouveau:novice_spell_book", ["s4"]),
 
     entry("apo_mythic", 3, 1, S4, "&6Trag Mythic", "Apotheosis: vier Attribute, zwei Effekte.",
-          ["Der große &6Reforging Table&r (Netheritbarren, 2 Arcane Sands, 3 Netherziegel, Stufe 3) schmiedet Epic für 30 Level und Mythic für 50 Level, 3 Godforged Pearls und 5 Siegel. Der &6Augmenting Table&r (Netherstern, 2 Godforged Pearls) verbessert einen Affix um 25 Prozent.",
+          ["Der große &6Reforging Table&r (ein Simple Reforging Table, Netheritbarren, 2 Arcane Sands, 3 Netherziegel, Stufe 3) schmiedet Epic für 30 Level und Mythic für 50 Level, 3 Godforged Pearls und 5 Siegel. Der &6Augmenting Table&r (Netherstern, 2 Godforged Pearls) verbessert einen Affix um 25 Prozent.",
            "",
            "Mythic: vier Attribute, zwei Effekte, eine Fähigkeit, selten Unzerstörbarkeit. Kapitel &6Apotheosis&r."],
           task_checkmark("Mythic-Item getragen"), "apotheosis:gem", ["s4"]),
@@ -423,7 +423,7 @@ quests = [
     entry("boss_end", 4, 1, S4, "&5Erbeute den Panzerhandschuh", "Cataclysm im End: Wächter und Golem.",
           ["Der &cEnder-Wächter&r lässt den &6Gauntlet of Guard&r fallen, der &cEnder-Golem&r einen &6Void Core&r für die &6Void Forge&r.",
            "",
-           "Im Nether vorher: der &cHarbinger&r braucht einen Netherstern und gibt Witherit für den &6Mechanischen Fusionsamboss&r, der Bosswaffen verschmilzt. Kapitel &cBosse der Oberwelt&r."],
+           "In der Oberwelt vorher: der &cHarbinger&r in der Ancient Factory braucht einen Netherstern und gibt Witherit für den &6Mechanischen Fusionsamboss&r, der Bosswaffen verschmilzt. Kapitel &cBosse der Oberwelt&r."],
           task_checkmark("End-Bosswaffe in der Hand"), "minecraft:ender_pearl", ["s4"]),
 
     entry("starlight", 5, 1, S4, "&bBau eine Sternensense", "Eternal Starlight: Sense und Hammer.",

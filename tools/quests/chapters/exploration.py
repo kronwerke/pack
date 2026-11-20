@@ -199,7 +199,7 @@ quests = [
     quest("e_pickaxe", 4.5, 3, "&6Bau zehn Grubenrahmen",
           subtitle="Der Rahmen für das Tor zur Farmwelt.",
           description=[
-              "&eRezept:&r &64 Andesit-Gehäuse&r, &64 Infundiertes Eisen&r und ein &6Quellstein&r in der Mitte ergeben &e2 Grubenrahmen&r. Für ein Portal brauchst du &e10&r.",
+              "&eRezept:&r &64 Andesitgehäuse&r, &64 Infused Iron&r und ein &6Quelljuwel&r in der Mitte ergeben &e2 Grubenrahmen&r. Für ein Portal brauchst du &e10&r.",
               "",
               "Die &6Farmwelt&r ist eine eigene Welt zum Graben. Dort darfst du Löcher machen, so viel du willst, und die Oberwelt bleibt schön.",
           ],
@@ -212,7 +212,7 @@ quests = [
           description=[
               "Bau einen Rahmen aus &6Grubenrahmen&r, 4 breit und 5 hoch, innen 2 mal 3 frei. Ohne Ecken reichen &e10&r. Größer geht auch, bis 21 mal 21.",
               "",
-              "Dann Rechtsklick mit einem &6Quellstein&r auf die Innenseite, und das Portal leuchtet blau. Bau es in oder neben deiner Basis: wer zurückkommt, steht vor genau diesem Portal.",
+              "Dann Rechtsklick mit einem &6Quelljuwel&r auf die Innenseite, und das Portal leuchtet blau. Bau es in oder neben deiner Basis: wer zurückkommt, steht vor genau diesem Portal.",
           ],
           tasks=[task_item("ars_nouveau:source_gem", 1)],
           rewards=[reward_item("minecraft:torch", 32)],

@@ -354,9 +354,9 @@ quests = [
           description=[
               "Messing macht auf Kronwerke nur der &6Mechanische Mixer&r von Create: zwei Kupfer, ein Zink und ein &6Lohenstaub&r erhitzt ergeben einen Barren, &cüberhitzt&r zwei Barren ohne Staub. Siehe Kapitel &6Create: Messing&r.",
               "",
-              "&eRezept auf Kronwerke:&r Der &6Leichte Ingenieursbaustein&r braucht ein &6Messingblech&r statt eines Kupferbarrens, der &6Schwere Ingenieursbaustein&r einen &6Präzisionsmechanismus&r statt einer Stahlkomponente. Beide öffnen in Stufe 3.",
+              "&eRezept auf Kronwerke:&r Der &6Leichte Ingenieursbaustein&r braucht ein &6Messingblech&r statt eines Kupferbarrens, der &6Schwere Ingenieursbaustein&r ein &6Präzisionsgetriebe&r statt einer Stahlkomponente. Beide öffnen in Stufe 3.",
               "",
-              "Wer jetzt Messingbleche und Präzisionsmechanismen beiseitelegt, baut in Stufe 3 sofort die großen Maschinen. Tausch deinen Koks und Stahl gegen das Messing der Create-Spieler.",
+              "Wer jetzt Messingbleche und Präzisionsgetriebe beiseitelegt, baut in Stufe 3 sofort die großen Maschinen. Tausch deinen Koks und Stahl gegen das Messing der Create-Spieler.",
           ],
           tasks=[task_checkmark("Verstanden")],
           rewards=[reward_item("create:zinc_ingot", 16), reward_item("minecraft:copper_ingot", 16)],

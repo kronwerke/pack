@@ -806,12 +806,13 @@
 			tasks: [
 				{
 					id: "2566BA9085BB40A3"
-					type: "item"
-					item: {
+					type: "advancement"
+					advancement: "kronwerke:quests/drawers_1"
+					criterion: ""
+					icon: {
 						id: "functionalstorage:oak_1"
 						count: 1
 					}
-					count: 4
 				}
 			]
 			rewards: [
@@ -845,12 +846,13 @@
 			tasks: [
 				{
 					id: "3B1F861F28F6EDA5"
-					type: "item"
-					item: {
+					type: "advancement"
+					advancement: "kronwerke:quests/drawers_2"
+					criterion: ""
+					icon: {
 						id: "functionalstorage:oak_2"
 						count: 1
 					}
-					count: 2
 				}
 			]
 			rewards: [
@@ -879,12 +881,13 @@
 			tasks: [
 				{
 					id: "4898DB360E92ACD3"
-					type: "item"
-					item: {
+					type: "advancement"
+					advancement: "kronwerke:quests/drawers_4"
+					criterion: ""
+					icon: {
 						id: "functionalstorage:oak_4"
 						count: 1
 					}
-					count: 4
 				}
 			]
 			rewards: [
@@ -2202,12 +2205,13 @@
 			tasks: [
 				{
 					id: "1BBFB68C89592748"
-					type: "item"
-					item: {
+					type: "advancement"
+					advancement: "kronwerke:quests/drawers_4x8"
+					criterion: ""
+					icon: {
 						id: "functionalstorage:oak_4"
 						count: 1
 					}
-					count: 8
 				}
 				{
 					id: "60F2041ACA7A9B1C"

@@ -6,7 +6,7 @@ drawer storage upgrades and gold chests open in stage 2, gold and diamond backpa
 chests and AE2 in stage 3; the outlook quest names them. Numbers come from the mods' recipes,
 lang files and config/sophisticated*-server.toml. Kronwerke changes none of these recipes.
 Drawer controllers and AE2 storage buses are in ae2.py, the overview in list_transport.py."""
-from ftbq import (chapter, quest, task_item, task_checkmark, reward_item, reward_table, reward_xp,
+from ftbq import (chapter, quest, task_item, task_any, task_checkmark, reward_item, reward_table, reward_xp,
                   banner)
 
 C = "storage"
@@ -26,7 +26,7 @@ quests = [
           description=[
               "&6Holztruhe&r in die Mitte, &6vier Leder&r (eins oben, drei unten), &6vier Fäden&r an die Seiten und oben in die Ecken.",
               "",
-              "Der Lederrucksack hat &e27 Plätze&r und &eeinen Upgrade-Platz&r. Öffnen mit Rechtsklick in der Hand oder mit &eB&r, solange er im Inventar steckt. Schleich-Rechtsklick auf den Boden stellt ihn ab, der Inhalt bleibt drin. Farbstoffe im Handwerksraster färben ihn.",
+              "Der Lederrucksack hat &e27 Plätze&r und &eeinen Upgrade-Platz&r. Öffnen mit Rechtsklick in der Hand oder mit &e{key:key.sophisticatedbackpacks.open_backpack}&r, solange er im Inventar steckt. Schleich-Rechtsklick auf den Boden stellt ihn ab, der Inhalt bleibt drin. Farbstoffe im Handwerksraster färben ihn.",
               "",
               "Dieses Kapitel ist deine erste Woche: Rucksack, Schubladenwand, aufwertbare Fässer, ein Tresor für Create. &cKronwerke:&r Kupfer- und Eisenrucksack öffnen in Stufe 2, Gold und Diamant in Stufe 3, Netherit in Stufe 4. Der Tooltip sagt, welche Stufe fehlt.",
           ],
@@ -126,7 +126,7 @@ quests = [
               "",
               "Was im Filter steht, wird beim Ankommen vernichtet. Gut für Erde, Kies, Diorit.",
               "",
-              "&cAchtung:&r Bruchstein gehört nicht hinein. Der Obelisk braucht für Stufe 1 &e20 000 Bruchstein&r vom ganzen Server. Gib ihn am Obelisken ab.",
+              "&cAchtung:&r Bruchstein gehört nicht hinein. Der Obelisk braucht für Stufe 1 &e20 000 Bruchstein&r vom ganzen Server (Menge passt sich der Spielerzahl an). Gib ihn am Obelisken ab.",
           ],
           tasks=[task_item("sophisticatedbackpacks:void_upgrade", 1)],
           rewards=[reward_xp(3)],
@@ -177,7 +177,7 @@ quests = [
           deps=["crafting"], icon="sophisticatedbackpacks:smelting_upgrade", optional=True),
 
     quest("bp_compacting", 4.5, 3.8, "Pack Kleinkram zusammen",
-          subtitle="Das Kompaktier-Upgrade.",
+          subtitle="Das Presse-Upgrade.",
           description=[
               "Eisen in die oberen Ecken, &6vier Kolben&r um die Upgrade-Basis, Redstone in die unteren Ecken.",
               "",
@@ -275,7 +275,7 @@ quests = [
               "",
               "&cAchtung:&r Jeder Schlag auf die Front holt Items heraus. Zum Abbauen mit der Axt auf die Seite schlagen, der Inhalt bleibt drin.",
           ],
-          tasks=[task_item("functionalstorage:oak_1", 4)],
+          tasks=[task_any("drawers_1", ["functionalstorage:oak_1", "functionalstorage:spruce_1", "functionalstorage:birch_1", "functionalstorage:jungle_1", "functionalstorage:acacia_1", "functionalstorage:dark_oak_1", "functionalstorage:mangrove_1", "functionalstorage:cherry_1", "functionalstorage:crimson_1", "functionalstorage:warped_1"], "4 Schubladen 1x1 aus einem Holz deiner Wahl", count=4)],
           rewards=[reward_item("minecraft:oak_log", 32), reward_table("s1_common")],
           icon="functionalstorage:oak_1", size=1.75, shape="rsquare"),
 
@@ -286,7 +286,7 @@ quests = [
               "",
               "Zwei Fächer übereinander mit je &e16 Stapeln&r. Gut für Paare: Kohle und Holzkohle, Eisen- und Kupferbarren, Samen und Weizen.",
           ],
-          tasks=[task_item("functionalstorage:oak_2", 2)],
+          tasks=[task_any("drawers_2", ["functionalstorage:oak_2", "functionalstorage:spruce_2", "functionalstorage:birch_2", "functionalstorage:jungle_2", "functionalstorage:acacia_2", "functionalstorage:dark_oak_2", "functionalstorage:mangrove_2", "functionalstorage:cherry_2", "functionalstorage:crimson_2", "functionalstorage:warped_2"], "2 Schubladen 1x2 aus einem Holz deiner Wahl", count=2)],
           rewards=[reward_item("minecraft:chest", 2)],
           deps=["drawers"], icon="functionalstorage:oak_2"),
 
@@ -297,7 +297,7 @@ quests = [
               "",
               "Vier Fächer mit je &e8 Stapeln&r, die beste Wahl für viele Sorten: Erze, Barren, Farbstoffe, Mob-Drops. Mit dem Lager-Upgrade im Rucksack räumst du die Wand mit einem Klick pro Schublade ein.",
           ],
-          tasks=[task_item("functionalstorage:oak_4", 4)],
+          tasks=[task_any("drawers_4", ["functionalstorage:oak_4", "functionalstorage:spruce_4", "functionalstorage:birch_4", "functionalstorage:jungle_4", "functionalstorage:acacia_4", "functionalstorage:dark_oak_4", "functionalstorage:mangrove_4", "functionalstorage:cherry_4", "functionalstorage:crimson_4", "functionalstorage:warped_4"], "4 Schubladen 2x2 aus einem Holz deiner Wahl", count=4)],
           rewards=[reward_item("minecraft:chest", 4), reward_xp(3)],
           deps=["drawers_2"], icon="functionalstorage:oak_4"),
 
@@ -350,7 +350,7 @@ quests = [
           description=[
               "Eine &6Holztruhe&r umgeben von &6acht Eisennuggets&r.",
               "",
-              "Zum Verkleiden im Raster: erster Platz der Block für außen, zweiter für innen, dritter die Schublade, ein vierter Block färbt die Leisten. Passt zu Andesit-Gehäusen oder Steinziegeln.",
+              "Zum Verkleiden im Raster: erster Platz der Block für außen, zweiter für innen, dritter die Schublade, ein vierter Block färbt die Leisten. Passt zu Andesitgehäusen oder Steinziegeln.",
           ],
           tasks=[task_item("functionalstorage:framed_1", 1)],
           rewards=[reward_item("minecraft:iron_nugget", 16)],
@@ -437,7 +437,7 @@ quests = [
     quest("iron_tier", 4.5, 14.5, "Werte auf Eisen auf",
           subtitle="54 Plätze und ein zweiter Upgrade-Platz.",
           description=[
-              "&6Copper to Iron Tier Upgrade:&r &6vier Eisenbleche&r aus der Create-Presse um einen &6Hebel&r. Oder direkt im Raster: ein Fass in die Mitte, acht Eisenbarren drumherum.",
+              "&6Copper to Iron Tier Upgrade:&r &6vier Eisenbleche&r aus der Create-Presse um einen &6Hebel&r. Oder direkt im Raster: ein Kupferfass in die Mitte und vier Eisenbarren drumherum. Die Eisenbleche gehören zum Upgrade von Holz direkt auf Eisen.",
               "",
               "&e54 Plätze&r, &ezwei Upgrade-Plätze&r. Eisen ist das Beste in Stufe 1. Gold (81 Plätze, 3 Upgrades) kommt in Stufe 2, Diamant (108, 4) in Stufe 3, Netherit (132, 5) in Stufe 4.",
           ],
@@ -540,7 +540,7 @@ quests = [
           description=[
               "&6Storage I/O:&r Stein in die Ecken, Bretter oben und unten, links ein Repeater, rechts ein Goldbarren, ein Fass der Holzstufe in die Mitte. &6Input&r und &6Output&r sind dasselbe mit Repeater und Gold oben und unten.",
               "",
-              "In den Verbund am Lagerkern gesetzt, nimmt der I/O Items von Rohren an und gibt sie ab. Input nur hinein, Output nur heraus, beide schonen den Server.",
+              "In den Verbund am Lagerkern gesetzt, nimmt der I/O Items von Rohren an und gibt sie ab. Input nur hinein, Output nur heraus. Den Server schont vor allem der Input.",
           ],
           tasks=[task_item("sophisticatedstorage:storage_io", 1)],
           rewards=[reward_item("minecraft:gold_ingot", 4), reward_xp(5)],
@@ -704,7 +704,7 @@ quests = [
               "",
               "Damit hast du alle Säulen eines guten Lagers: einen &6Rucksack&r mit dem Upgrade für deinen Tag, eine &6Schubladenwand&r für Massenware, &6aufgewertete Fässer&r am &6Lagerkern&r für den Rest und einen &6Tresor&r am Ende der Create-Straße. Die Basis ist bereit für das, was Create ausspuckt.",
           ],
-          tasks=[task_item("functionalstorage:oak_4", 8), task_item("sophisticatedstorage:iron_barrel", 2),
+          tasks=[task_any("drawers_4x8", ["functionalstorage:oak_4", "functionalstorage:spruce_4", "functionalstorage:birch_4", "functionalstorage:jungle_4", "functionalstorage:acacia_4", "functionalstorage:dark_oak_4", "functionalstorage:mangrove_4", "functionalstorage:cherry_4", "functionalstorage:crimson_4", "functionalstorage:warped_4"], "8 Schubladen 2x2 aus einem Holz deiner Wahl", count=8), task_item("sophisticatedstorage:iron_barrel", 2),
                  task_item("sophisticatedstorage:controller", 1), task_item("create:item_vault", 1)],
           rewards=[reward_table("s1_rare"), reward_xp(10)],
           deps=["stack_starter", "pusher", "controller", "vault"], icon="sophisticatedstorage:iron_barrel",

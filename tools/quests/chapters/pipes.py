@@ -19,7 +19,7 @@ quests = [
     quest("item_pipe", 0, 0, "&b&lBau Item-Rohre",
           subtitle="Sechzehn Rohre, und die Truhen reden miteinander.",
           description=[
-              "&eRezept:&r oben und unten je drei &6Eisenbarren&r, in der Mitte zwei &6Werfer&r links und rechts von einem &6Redstone&r. Das gibt &616 Item-Rohre&r.",
+              "&eRezept:&r oben und unten je drei &6Eisenbarren&r, in der Mitte zwei &6Spender&r links und rechts von einem &6Redstone&r. Das gibt &616 Item-Rohre&r.",
               "",
               "&6Pipez&r ist das einfachste Rohrsystem im Pack. Rohre verbinden sich von selbst mit Truhen, Maschinen und untereinander. Ein Rohr bewegt Gegenstände nur, wenn eine Seite auf &eZiehen&r steht, wie das geht, zeigt die nächste Quest.",
               "",

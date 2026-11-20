@@ -13,9 +13,9 @@ quests = [
     quest("welcome", 0, 0, "&6Tipps und Tricks",
           subtitle="Alles, was ein Modpack von Vanilla unterscheidet, auf einen Blick.",
           description=[
-              "Noch nie ein Modpack gespielt? Dann ist dieses Kapitel für dich. Es erklärt die Dinge, die alle anderen Kapitel voraussetzen: das &6Questbuch&r, &6JEI&r, die &6Karte&r, &6Claims&r und &6Teams&r, die &6Regeln&r von Kronwerke und was du tust, wenn das Spiel hakt.",
+              "Noch nie ein Modpack gespielt? Dann ist dieses Kapitel für dich. Es erklärt die Dinge, die alle anderen Kapitel voraussetzen: das &6Questbuch&r, &6EMI&r, die &6Karte&r, &6Claims&r und &6Teams&r, die &6Regeln&r von Kronwerke und was du tust, wenn das Spiel hakt.",
               "",
-              "Jede Quest hier ist ein kurzer Text und ein Haken. Lies, was dich interessiert, hak ab, hol dir die Belohnung. Fünf Reihen, von oben nach unten: &eQuestbuch&r, &eJEI und Jade&r, &eKarte und Team&r, &eRegeln&r, &eWenn es hakt&r.",
+              "Jede Quest hier ist ein kurzer Text und ein Haken. Lies, was dich interessiert, hak ab, hol dir die Belohnung. Fünf Reihen, von oben nach unten: &eQuestbuch&r, &eEMI und Jade&r, &eKarte und Team&r, &eRegeln&r, &eWenn es hakt&r.",
               "",
               "Wer Kronwerke schon kennt, überfliegt die Reihe &eRegeln&r und holt sich den Rest nebenbei.",
           ],
@@ -64,13 +64,13 @@ quests = [
           deps=["q_claim"], icon="minecraft:item_frame"),
 
     quest("q_groups", 10.5, -8, "&6Finde dich in den Kapiteln zurecht",
-          subtitle="Fünf Gruppen, ein Kapitel pro Mod.",
+          subtitle="Sechs Gruppen, ein Kapitel pro Mod.",
           description=[
-              "Links im Buch sind die Kapitel in Gruppen sortiert: &6Start&r, &6Technik&r, &dMagie&r, &aWelt und Erkundung&r und &6Lager und Werkzeug&r. Ein Klick auf den Gruppennamen klappt sie ein und aus.",
+              "Links im Buch sind die Kapitel in Gruppen sortiert: &6Start&r, &6Technik&r, &dMagie&r, &aWelt und Erkundung&r, &6Lager und Werkzeug&r und &eChecklisten&r. Ein Klick auf den Gruppennamen klappt sie ein und aus.",
               "",
               "Jedes Kapitel ist ein Mod oder ein Thema und beginnt mit dem einfachsten Schritt. Die Quests hängen über Linien zusammen: Was von einer Quest abhängt, wird erst sichtbar oder machbar, wenn sie erledigt ist.",
               "",
-              "Kapitel späterer Stufen erscheinen, sobald die Stufe offen ist. In Stufe 1 sind es sieben Kapitel, am Ende der Season rund 45.",
+              "Kapitel späterer Stufen erscheinen, sobald die Stufe offen ist. In Stufe 1 sind es 22 Kapitel, am Ende der Season 74.",
           ],
           tasks=[task_checkmark("Gruppen angeschaut")],
           rewards=[reward_xp(3)],
@@ -93,7 +93,7 @@ quests = [
     quest("j_recipe", 4.5, -4, "&6Schau ein Rezept nach",
           subtitle="R für das Rezept, U für die Verwendung.",
           description=[
-              "Die Liste rechts in jedem Inventar ist &6JEI&r. Fahr mit der Maus über einen Gegenstand, egal ob in der Liste oder in deinem Inventar, und drück &eR&r: EMI zeigt dir alle Wege, ihn herzustellen. &eU&r zeigt dir alles, wofür er gebraucht wird.",
+              "Die Liste rechts in jedem Inventar ist &6EMI&r. Fahr mit der Maus über einen Gegenstand, egal ob in der Liste oder in deinem Inventar, und drück &eR&r: EMI zeigt dir alle Wege, ihn herzustellen. &eU&r zeigt dir alles, wofür er gebraucht wird.",
               "",
               "Oben im Rezeptfenster blätterst du durch die Arten: Werkbank, Ofen, Mahlstein, Manabecken und so weiter. Mit der &eRücktaste&r springst du zum vorigen Rezept zurück, &eEsc&r schließt das Fenster.",
               "",
@@ -138,7 +138,7 @@ quests = [
               "",
               "Stufe 3 und alles danach bleibt unsichtbar, bis es an der Reihe ist. So siehst du immer, wie viel kommt, aber die Liste wird nicht von Dingen überschwemmt, die noch Wochen entfernt sind.",
               "",
-              "Herstellen kannst du Verhülltes nicht, die Werkbank sagt dann &7Das kannst du noch nicht herstellen&r.",
+              "Herstellen kannst du Verhülltes nicht, die Werkbank nennt dir dann die Stufe, ab der es geht.",
           ],
           tasks=[task_checkmark("Verstanden")],
           rewards=[reward_xp(3)],
@@ -200,11 +200,11 @@ quests = [
     quest("m_claim", 8.5, 0, "&6Sichere deine Basis",
           subtitle="500 Chunks für dich, 25 davon dauerhaft geladen.",
           description=[
-              "Öffne mit &e{key:key.ftbchunks.map}&r die Karte und drück &eC&r für die Claim-Ansicht. &eLinke Maustaste&r ziehen beansprucht Chunks, &erechte Maustaste&r ziehen gibt sie frei. In deinen Chunks kann niemand außer deinem Team Blöcke abbauen, Truhen öffnen oder Tiere schlagen, und Creeper sprengen nichts.",
+              "Öffne mit &e{key:key.ftbchunks.map}&r die Karte und drück &eC&r für die Claim-Ansicht. &eLinke Maustaste&r ziehen beansprucht Chunks, &erechte Maustaste&r ziehen gibt sie frei. In deinen Chunks können nur dein Team und deine Verbündeten Blöcke abbauen und Truhen öffnen, und Creeper sprengen nichts.",
               "",
               "Du hast &e500 Chunks&r. Das ist viel, aber nicht das ganze Tal: Ein Chunk ist 16 mal 16 Blöcke, 500 reichen für eine große Basis mit Feldern und Fabrik.",
               "",
-              "&eShift&r und linke Maustaste ziehen lädt Chunks &edauerhaft&r: bis zu &e9&r pro Spieler, höchstens &e25&r fürs ganze Team. Maschinen darin laufen weiter, auch wenn du offline bist. Nach &e7 Tagen&r ohne Login gibt der Server sie wieder frei, nach &e30 Tagen&r auch die Claims.",
+              "&eShift&r und linke Maustaste ziehen lädt Chunks &edauerhaft&r: bis zu &e25&r für das ganze Team, egal wie viele ihr seid. Maschinen darin laufen weiter, auch wenn du offline bist. Nach &e7 Tagen&r ohne Login gibt der Server sie wieder frei, nach &e30 Tagen&r auch die Claims.",
           ],
           tasks=[task_advancement("kronwerke:steps/claimed", "Mindestens ein Chunk ist geclaimt")],
           rewards=[reward_table("s1_common"), reward_xp(3)],
@@ -213,7 +213,7 @@ quests = [
     quest("m_team", 10.5, 0, "&6Gründe ein Team",
           subtitle="Geteilte Claims, geteilter Fortschritt.",
           description=[
-              "Im Inventar gibt es links den Knopf &eMein Team&r, oder du nimmst den Befehl &e/ftbteams party create <Name>&r. Mitspieler lädst du mit &e/ftbteams party invite <Spieler>&r ein. Die Teamgröße ist nicht begrenzt.",
+              "Im Inventar gibt es links den Knopf &eMy Team&r (FTB Teams ist englisch), oder du nimmst den Befehl &e/ftbteams party create <Name>&r. Mitspieler lädst du mit &e/ftbteams party invite <Spieler>&r ein. Die Teamgröße ist nicht begrenzt.",
               "",
               "Ein Team teilt sich die &eClaims&r (500 Chunks fürs ganze Team, nicht pro Kopf) und den &eQuestfortschritt&r: Was einer erledigt, ist für alle erledigt. Die Belohnung holt sich trotzdem jeder selbst ab.",
               "",
@@ -304,7 +304,7 @@ quests = [
           deps=["welcome"], icon="minecraft:redstone"),
 
     quest("h_memory", 6.5, 8, "&6Gib dem Spiel genug Speicher",
-          subtitle="230 Mods brauchen mehr als Vanilla.",
+          subtitle="Fast 290 Mods brauchen mehr als Vanilla.",
           description=[
               "Hängt das Spiel beim Laden lange, ruckelt es alle paar Sekunden kurz oder stürzt es mit &7OutOfMemory&r ab, hat Minecraft zu wenig &eArbeitsspeicher&r. In &6Prism Launcher&r stellst du ihn unter &eInstanz bearbeiten, Einstellungen, Java&r ein, in der &6Modrinth App&r in den Optionen der Instanz unter &eJava und Speicher&r.",
               "",
@@ -356,11 +356,11 @@ quests = [
           deps=["h_keys"], icon="minecraft:note_block"),
 
     quest("h_origin", 14.5, 8, "&6Nutze deine Herkunft",
-          subtitle="O zeigt dir, was du kannst.",
+          subtitle="Die Übersicht zeigt dir, was du kannst.",
           description=[
-              "Beim ersten Betreten hast du eine &6Herkunft&r und eine &6Rolle&r gewählt. Mit &eO&r öffnest du jederzeit die Übersicht deiner Kräfte, mit Stärken und Schwäche.",
+              "Beim ersten Betreten hast du eine &6Herkunft&r und eine &6Rolle&r gewählt. Mit &e{key:key.neoorigins.view_info}&r öffnest du jederzeit die Übersicht deiner Kräfte, mit Stärken und Schwäche.",
               "",
-              "Die meisten Kräfte wirken von allein. Aktive brauchen eine Taste: Der &eSternensprung&r des Sternensplitters liegt auf der ersten Fähigkeitentaste (&eZ&r), die &ePacktasche&r des Händlers auf der Rollen-Taste (&eH&r), die Nachtsicht des Tiefgräbers auf &eK&r.",
+              "Die meisten Kräfte wirken von allein. Aktive brauchen eine Taste: Der &eSternensprung&r des Sternensplitters liegt auf der ersten Fähigkeitentaste (&e{key:key.neoorigins.skill_1}&r), die &ePacktasche&r des Händlers auf der Rollen-Taste (&e{key:key.neoorigins.class_skill}&r), die Nachtsicht des Tiefgräbers auf &e{key:key.neoorigins.toggle_night_vision}&r.",
               "",
               "Keine Herkunft kann fliegen oder überspringt eine Stufe. Passt deine Wahl gar nicht, sprich das Team an.",
           ],
@@ -384,7 +384,7 @@ quests = [
     quest("m_allies", 12.5, 0, "&6Nimm Verbündete auf",
           subtitle="Freunde in deine Chunks lassen, ohne ein Team zu teilen.",
           description=[
-              "Nicht jeder will gleich ins selbe Team. Für Nachbarn gibt es &eVerbündete&r: Im Teamfenster (Knopf &eMein Team&r im Inventar) findest du &eVerbündete verwalten&r. Dort trägst du Spieler ein und trägst sie auch wieder aus.",
+              "Nicht jeder will gleich ins selbe Team. Für Nachbarn gibt es &eVerbündete&r: Im Teamfenster (Knopf &eMy Team&r im Inventar) findest du &eManage Allies&r. Dort trägst du Spieler ein und trägst sie auch wieder aus.",
               "",
               "Was Verbündete in deinen Chunks dürfen, stellst du in den Einstellungen deines Teams ein, etwa Blöcke abbauen oder Truhen öffnen. So kann der Nachbar deine Fabrik mit Erz beliefern, ohne dass er deine Quests oder deine 500 Chunks teilt.",
           ],
@@ -462,7 +462,7 @@ quests = [
     quest("k_light", 6.5, 16, "&6Trag eine Fackel in der Hand",
           subtitle="Licht, wo du gerade bist.",
           description=[
-              "Mit &6Dynamic Lights&r leuchtet eine &6Fackel&r schon, wenn du sie in der Hand hältst. In der zweiten Hand stört sie beim Abbauen nicht.",
+              "Eine &6Fackel&r in der Hand leuchtet nicht, Dynamic Lights ist nicht im Pack. Leg Fackeln in die zweite Hand: Rechtsklick setzt sie, ohne dass du das Werkzeug wechselst.",
               "",
               "In Höhlen siehst du so den Weg, ohne gleich alles vollzustellen. Monster spawnen im bewegten Licht trotzdem: Wo du bleibst, setz echte Fackeln.",
           ],
@@ -474,7 +474,7 @@ quests = [
     quest("h_help", 20.5, 0, "&6Frag nach Hilfe",
           subtitle="Hier hilft man sich. Wirklich.",
           description=[
-              "Du kennst jetzt das Buch, EMI, die Karte, die Regeln und die Tasten. Alles andere lernst du beim Spielen, und niemand erwartet, dass du 230 Mods kennst.",
+              "Du kennst jetzt das Buch, EMI, die Karte, die Regeln und die Tasten. Alles andere lernst du beim Spielen, und niemand erwartet, dass du fast 290 Mods kennst.",
               "",
               "Wenn du nicht weiterkommst: Erst &eR&r und &eU&r in EMI, dann das passende &eKapitel&r im Buch, dann der &eChat&r oder der &eSprachchat&r. Dreißig Leute auf dem Server, einer hat die Maschine garantiert schon gebaut. Für alles Technische (Absturz, Installation, Whitelist) ist der &9Discord&r da, auf &ekronwerke.com&r stehen die häufigsten Fragen und der Stand des Obelisken.",
               "",

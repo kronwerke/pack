@@ -37,7 +37,7 @@ quests = [
     quest("programs", 2.5, -0.5, "&eKauf die Assembly Programs",
           subtitle="Drill und Laser, für Smaragde.",
           description=[
-              "Die Programme kann niemand craften. Du kaufst sie beim &6Pressure Mechanic&r, einem Dorfbewohner mit eigenem Haus in Dörfern, oder über das &6Amadron Tablet&r: &eAssembly Program: Drill&r und &eAssembly Program: Laser&r kosten je &68 Smaragde&r, &eDrill & Laser&r kostet 14.",
+              "Drill und Laser kann niemand craften. Du kaufst sie beim &6Pressure Mechanic&r, einem Dorfbewohner mit eigenem Haus in Dörfern, oder über das &6Amadron Tablet&r: &eAssembly Program: Drill&r und &eAssembly Program: Laser&r kosten je &68 Smaragde&r, &eDrill & Laser&r kostet 14, oder du legst Drill und Laser an der Werkbank zusammen.",
               "",
               "Das &6Amadron Tablet&r (7 Plastic Sheets, ein GPS Tool, ein Air Canister, danach aufladen) bindest du per Rechtsklick an eine Kiste. In der Kiste liegen die Smaragde, eine Drohne holt sie ab, eine zweite bringt die Ware. Gleich dort gibt es auch den &6PCB Blueprint&r.",
               "",
@@ -114,8 +114,6 @@ quests = [
           description=[
               "Programm &eLaser&r in den Controller, &620 Pressure Chamber Valves&r in die Eingangskiste, heraus kommen &68 Advanced Pressure Tubes&r. Mit dem Programm &eDrill & Laser&r geht es direkt vom &6Compressed Iron Block&r zu den acht Rohren.",
               "",
-              pic("pneumaticcraft:advanced_pressure_tube"),
-              "",
               "Ein normales Rohr hält 5 bar, ein Reinforced Tube 10. Das Advanced Tube hält &e20 bar&r und fasst 4 000 mL statt 1 000. Jede Maschine dieser Stufe braucht es als Zutat: die großen Kompressoren, der Dynamo, der Pressurized Spawner, das Aerial Interface.",
               "",
               "&eTipp:&r Ein Block wird zu acht Rohren. Mach gleich vier Blöcke durch, 32 Rohre brauchst du schnell.",
@@ -168,7 +166,7 @@ quests = [
           description=[
               "&eRezept auf Kronwerke:&r oben ein &6Advanced Pressure Tube&r, in der Mitte Gear, Compressed Iron, Gear, unten Compressed Iron, &6Einfacher Steuerschaltkreis&r, Compressed Iron.",
               "",
-              "Der Dynamo ist der Flux Compressor rückwärts: aus 100 mL Luft werden &e40 FE&r, bei &e40 FE pro Tick&r im Grundzustand und einem Ausgang von 80 FE pro Tick. Speed Upgrades erhöhen beides. Auch er wird warm und braucht Heat Sinks.",
+              "Der Dynamo ist der Flux Compressor rückwärts: aus 100 mL Luft werden &e40 FE&r, bei &e40 FE pro Tick&r im Grundzustand und einem Ausgang von 80 FE pro Tick. Speed Upgrades erhöhen beides. Er läuft erst ab &e15 bar&r, hängt also an Advanced Pressure Tubes. Auch er wird warm und braucht Heat Sinks.",
               "",
               "Wann lohnt das? Wenn du mit Elektrostatik oder Sonne mehr Luft hast als Maschinen. Ein Dynamo neben einem Energie-Würfel macht aus dem Überschuss Strom für alle anderen Mods.",
           ],
@@ -299,8 +297,6 @@ quests = [
           subtitle="Ein fliegender Roboter mit Präzisionsgetriebe.",
           description=[
               "&eRezept auf Kronwerke:&r drei &6Turbine Rotors&r oben und an den Seiten, ein &6Printed Circuit Board&r in der Mitte, unten ein &6Präzisionsgetriebe&r von Create. Fliegende Maschinen brauchen auf Kronwerke ein Getriebe, wie der Assembler von AE2.",
-              "",
-              pic("pneumaticcraft:drone"),
               "",
               "Das Präzisionsgetriebe entsteht auf dem Depot mit dem Einsatzgerät, siehe Kapitel &6Create: Messing&r. Frag die Create-Spieler, die machen die am laufenden Band.",
               "",
@@ -499,9 +495,9 @@ quests = [
               "",
               "In ihrem Bereich kann kein fremder Spieler Blöcke setzen, abbauen oder Kisten öffnen. Jedes &6Range Upgrade&r vergrößert den Bereich um einen Block, bis 16 in jede Richtung. Freunde trägst du im Reiter &eShared Users&r ein.",
               "",
-              "&eEinrichten:&r Im Netzraster müssen ein &6Diagnostic Subroutine&r, ein &6Network IO Port&r und eine &6Network Registry&r liegen, verbunden durch &6Network Nodes&r (Truhe mit Transistoren und lila Farbstoff, 16 Stück). Die Komponenten sind Plastik oder Transistoren um eine Truhe mit Farbstoff.",
+              "&eEinrichten:&r Im Netzraster müssen ein &6Diagnostic Subroutine&r, ein &6Network IO Port&r und eine &6Network Registry&r liegen, verbunden durch &6Network Nodes&r (Truhe mit Transistoren und lila Farbstoff, 16 Stück). Die Komponenten sind Plastik, Transistoren oder (beim IO Port) Kondensatoren um eine Truhe mit Farbstoff.",
               "",
-              "&cHacken ist auf diesem Server erlaubt:&r Mit einem Pneumatic Helmet und Security Upgrades (Stufe 4) kann jemand deine Station knacken. Größere Stapel Network Nodes und Entity Tracker Upgrades machen das schwerer, Security Upgrades in der Station verlangen vom Hacker mehr Upgrades. Versteck sie gut.",
+              "&aHacken ist auf diesem Server ausgeschaltet:&r Niemand kann deine Station knacken. Sie schützt den Bereich so, wie du ihn einstellst.",
           ],
           tasks=[task_item("pneumaticcraft:security_station", 1)],
           rewards=[reward_item("pneumaticcraft:network_node", 16), reward_item("pneumaticcraft:range_upgrade", 4), reward_xp(10)],
@@ -579,11 +575,11 @@ quests = [
 
     # ---- neue Quests: Druck der zweiten Stufe ------------------------------------
     quest("reinforced_canister", 23, 0, "&3Bau Reinforced Air Canisters",
-          subtitle="Doppelt so viel Luft, bis 20 bar.",
+          subtitle="Achtmal so viel Luft, bis 20 bar.",
           description=[
               "&eRezept:&r ein &6Advanced Pressure Tube&r oben, Compressed Iron, &6Air Canister&r, Compressed Iron in der Mitte, drei Compressed Iron unten.",
               "",
-              "Er fasst &e6 000 mL&r statt 3 000, lädt bis &e20 bar&r und explodiert nie. In einer Kiste mit einem &6Charging Module&r am Rohr davor wird er zum Luftspeicher, den du überallhin tragen kannst.",
+              "Er hat &e12 000 mL&r Volumen statt 3 000, lädt bis &e20 bar&r statt 10 und explodiert nie. Voll trägt er achtmal so viel Luft. In einer Kiste mit einem &6Charging Module&r am Rohr davor wird er zum Luftspeicher, den du überallhin tragen kannst.",
               "",
               "Vier davon im Quadrat ergeben ein &6Reinforced Air Canister Array&r. Das brauchst du im nächsten Schritt.",
           ],

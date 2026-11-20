@@ -65,12 +65,12 @@ def task_item(id, count=1, consume=False, title=None):
     return t
 
 
-def task_any(name, items, title):
+def task_any(name, items, title, count=1):
     """One of several items, for a block that comes in every kind of wood: FTB Quests' item task
     takes exactly one item, so this is an advancement task. build.py writes the hidden advancement
     kronwerke:quests/<name>, which the game grants as soon as one of the items is in the
-    inventory. title is what the task is called in the book."""
-    _any[name] = list(items)
+    inventory (count of them in one stack). title is what the task is called in the book."""
+    _any[name] = (list(items), int(count))  # count: that many in one stack
     return {"type": "advancement", "advancement": f"kronwerke:quests/{name}", "criterion": "", "title": title,
             "icon_item": items[0]}
 

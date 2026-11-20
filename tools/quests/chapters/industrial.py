@@ -141,7 +141,7 @@ quests = [
               "Laserbohrer, Düngemaschine, Hydrokultur-Beet, Fermentationsstation und Fischmaschine sitzen in diesem Gehäuse. Mach gleich zwei.",
           ],
           tasks=[task_item("industrialforegoing:machine_frame_simple", 2)],
-          rewards=[reward_item("minecraft:nether_bricks", 16), reward_table("s3_common"), reward_xp(10)],
+          rewards=[reward_item("minecraft:nether_brick", 16), reward_table("s3_common"), reward_xp(10)],
           deps=["dissolution"], size=1.5, shape="square"),
 
     quest("slaughter", 5, 5.5, "&dFang Pinken Schleim auf",
@@ -195,7 +195,7 @@ quests = [
           description=[
               "Im Auflösungsapparat mit &e1 000 mB Latex&r, je zwei &6Redstone&r, zwei &6Glasscheiben&r, zwei &6Goldzahnräder&r und: zwei &6Zucker&r für Geschwindigkeit, zwei &6Lohenruten&r für Effizienz, &6Ofen&r und &6Werkbank&r für Verarbeitung.",
               "",
-              "Geschwindigkeit: der Fortschritt läuft +1 pro Tick schneller. Verarbeitung: +1 Vorgang je Durchlauf. Stufe 2, mit Diamantzahnrädern statt Gold, gibt +2. &6Reichweite&r (Glas, Redstone und vier Bruchstein, Lapis und so weiter bis Stufe 11) vergrößert den Arbeitsbereich um 1 je Stufe.",
+              "Geschwindigkeit: der Fortschritt läuft +1 pro Tick schneller. Verarbeitung: +1 Vorgang je Durchlauf. Stufe 2, mit Diamantzahnrädern statt Gold, gibt +2. &6Reichweite&r (Glas, Redstone und vier Bruchstein, Lapis und so weiter, zwölf Stufen, im Spiel als 1 bis 12 angezeigt) vergrößert den Arbeitsbereich um 1 je Stufe.",
           ],
           tasks=[task_item("industrialforegoing:speed_addon_tier_1", 1), task_item("industrialforegoing:efficiency_addon_tier_1", 1)],
           rewards=[reward_item("minecraft:sugar", 16), reward_item("minecraft:blaze_rod", 4), reward_xp(10)],

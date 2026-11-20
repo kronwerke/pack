@@ -350,7 +350,7 @@
 		""
 		"You land on an obsidian platform next to the main island. &eYUNG's Better End Island&r rebuilds the island: a new platform, a tower in the middle, its own gateway portals."
 		""
-		"&cBelow the islands there is only the void.&r Whoever falls dies, and their things are gone. On your first trip, only take what you need."
+		"&cBelow the islands there is only the void.&r Whoever falls dies. Your things are not gone: the body (Corpse) stays floating at height 0, but getting there is tricky. On your first trip, only take what you need."
 	]
 	quest.103E0D07B09DD4A1.quest_subtitle: "The portal has been open to everyone since the event."
 	quest.103E0D07B09DD4A1.title: "&5&lEnter the End"
@@ -455,7 +455,7 @@
 		""
 		"Every fruit leaf has &e7 growth stages&r and needs light level 9 or more. On its own, one stage takes just under an hour on average for most trees, bananas and Brazil nuts take two and a half times as long. &6Bone Meal&r on the leaf advances one stage, seven make it ripe."
 		""
-		"Breaking them is not worth it: a ripe leaf that is broken only gives one nut, plus a sapling 5 percent of the time. Raw nuts give 1 hunger, roasted in a furnace or smoker (6 seconds) they fill you three times as well. Nuts and fruit in a Botany Pot are much faster, see further right."
+		"Breaking them is not worth it: a ripe leaf that is broken only gives one nut, plus a sapling 5 percent of the time. Raw nuts give 1 hunger, roasted in a smoker (1 second) or a furnace (6 seconds) they fill you three times as well. Nuts and fruit in a Botany Pot are much faster, see further right."
 	]
 	quest.10861B93B2E7A489.quest_subtitle: "Fruit ripens on the leaf, right click picks it."
 	quest.10861B93B2E7A489.title: "&aPlant the walnut and harvest nuts"
@@ -864,7 +864,7 @@
 	quest.11BAD0579630355B.quest_subtitle: "Biomes, waystones, the mining dimension."
 	quest.11BAD0579630355B.title: "&6Open Exploration"
 	quest.11BDE9774E219B5D.quest_desc: [
-		"With &6Dynamic Lights&r a &6torch&r already glows while you hold it. In your off hand it does not get in the way of mining."
+		"A &6torch&r in your hand does not glow; Dynamic Lights is not in the pack. Put torches in your off hand: right click places them without switching tools."
 		""
 		"That way you see the path in caves without placing torches everywhere straight away. Monsters still spawn in moving light: where you stay, place real torches."
 	]
@@ -945,7 +945,7 @@
 	quest.11F768CC20126B4C.quest_desc: [
 		"At the top &6two iron ingots&r and a &6Refined Soulstone&r. Below a stick and an iron ingot, a stick at the bottom left."
 		""
-		"Only what dies by the scythe drops arcana. It also hits to the sides. Keep it ready in your hotbar."
+		"Only what dies by a scythe, a staff or a Soulstained Steel tool drops arcana. It also hits to the sides. Keep it ready in your hotbar."
 	]
 	quest.11F768CC20126B4C.quest_subtitle: "A blade that hits the soul too."
 	quest.11F768CC20126B4C.title: "&5Forge a Crude Scythe"
@@ -1026,7 +1026,7 @@
 	quest.120E466F21A0C847.quest_desc: [
 		"Bring Elite Control Circuits and draconium ingots to the obelisk and hand them in by hand. &e/kw goals&r shows the status."
 		""
-		"&eTech pillar of stage 4:&r &6150 Elite Control Circuits&r and &61,000 draconium ingots&r. The magic pillar wants Gaia Spirits and Mystic Staffs, both have to fill up."
+		"&eTech pillar of stage 4:&r &6150 Elite Control Circuits&r and &61,000 draconium ingots&r (they follow the number of players). The magic pillar wants Gaia Spirits and Mystic Staffs, both have to fill up."
 		""
 		"Draconium dust that does not go into circuits becomes an ingot in the furnace and counts there."
 	]
@@ -1147,7 +1147,7 @@
 	quest.1258B180FD76A96D.quest_subtitle: "The first of the seven sin runes."
 	quest.1258B180FD76A96D.title: "&5Make the Rune of Gluttony"
 	quest.1268725CEAC4C6AA.quest_desc: [
-		"Put &6Nether quartz&r into a furnace or blast furnace, out comes &6Silicon&r. One quartz, one silicon."
+		"Put &6Nether quartz&r into a furnace, out comes &6Silicon&r. One quartz, one silicon."
 		""
 		"Silicon goes into every processor, the Controller and every 1k Storage Part. A stack is enough to start, two are better."
 		""
@@ -1217,7 +1217,7 @@
 		""
 		"This works with almost every ore in the pack: copper, gold, osmium, tin, lead, zinc and more. EMI shows which at the Liquefaction Cauldron."
 		""
-		"&eKronwerke:&r Deliberately as strong as Mekanism's tripling, only with fire instead of power. The stage goal wants &e4,000 steel&r, and every steel ingot starts as iron."
+		"&eKronwerke:&r Deliberately as strong as Mekanism's tripling, only with fire instead of power. The stage goal wants &e4,000 steel&r (the amount follows the number of players), and every steel ingot starts as iron."
 	]
 	quest.12A0A8C0F29E767D.quest_subtitle: "What the furnace wastes, you get back."
 	quest.12A0A8C0F29E767D.title: "&d&lMake Three Ingots from One Ore"
@@ -1240,7 +1240,7 @@
 	quest.12B08B1025D23D2B.quest_desc: [
 		"&6Waystones&r, &6Waystone&r: activate once, then travel there from any other waystone, with the &6Warp Stone&r or from the inventory. Costs &e1 level per 100 blocks&r, at most 27, between dimensions always 27. &6Scrolls&r and &6warp plates&r travel for free. &eStage 1.&r"
 		""
-		"Return Scroll: two gold nuggets and an ink sac over three paper, takes you to the last activated waystone. Wild waystones stand every 25 chunks and in villages. See the Exploration chapter."
+		"Return Scroll: two gold nuggets and an ink sac over three paper, takes you to the nearest waystone. Wild waystones stand every 25 chunks and in villages. See the Exploration chapter."
 	]
 	quest.12B08B1025D23D2B.quest_subtitle: "Waystones, waystones: one level per 100 blocks, scrolls free."
 	quest.12B08B1025D23D2B.title: "Write a Return Scroll"
@@ -1399,7 +1399,7 @@
 	quest.1318044860D7CA81.quest_subtitle: "Place and break blocks."
 	quest.1318044860D7CA81.title: "&cConstructor and Destructor"
 	quest.132DD0CAAE8EFC95.quest_desc: [
-		"Four &6Compressed Iron Ingots&r around a &6chest&r (two outer on top, two in the middle, one at the bottom) give the &6Omnidirectional Hopper&r. It needs no air."
+		"Five &6Compressed Iron Ingots&r around a &6chest&r (two top left, one each left and right of the chest, one bottom left) give the &6Omnidirectional Hopper&r. It needs no air."
 		""
 		"When placed, the input faces you, the output points at the block you placed it against. &eRight click with the wrench&r turns the input, &esneak and right click&r the output. That way it pulls out of a chest above and pushes sideways into the chamber interface."
 		""
@@ -1591,7 +1591,7 @@
 	quest.13D7DC252C756384.quest_desc: [
 		"The &6Pyromancer Tower&r stands in hills, forests, plains and swamps. The &cPyromancer&r lives at the top and throws fire spells. Take water or a potion of fire resistance along and keep moving."
 		""
-		"&eLoot:&r 0 to 8 &6Arcane Essence&r, a &6scroll&r and 1 to 3 &6inks&r, mostly Common or Uncommon, with luck Rare or Epic. The chests in the tower: essence, paper, ink, scrolls and &6blaze rods&r, which are locked until stage 2. Keep them anyway."
+		"&eLoot:&r 0 to 8 &6Arcane Essence&r, a &6scroll&r and 1 to 3 &6inks&r, mostly Common or Uncommon, with luck Rare or Epic. The chests in the tower: essence, paper, ink, scrolls and &6blaze rods&r, which you can use in stage 1 already."
 		""
 		"&cCareful:&r Looting a chest near a mage makes it angry. First the mage, then the chests."
 	]
@@ -2009,7 +2009,7 @@
 	quest.150B19122018682E.quest_subtitle: "Never search for flowers again."
 	quest.150B19122018682E.title: "&6Plant a Jaded Amaranthus"
 	quest.150E6494E7D3E1C4.quest_desc: [
-		"Every machine has a &evolume&r in mL. The pressure is: &bair divided by volume, minus 1&r. A machine with 5,000 mL volume and 20,000 mL of air in it stands at &e3 bar&r. 0 bar is normal air, minus 1 bar a vacuum."
+		"Every machine has a &evolume&r in mL. The pressure is: &bair divided by volume&r. A machine with 5,000 mL volume and 20,000 mL of air in it stands at &e4 bar&r. 0 bar is normal air, minus 1 bar a vacuum."
 		""
 		"Air always flows from high to low pressure until everything is equal. A small tube on a big chamber gets its pressure. Machines use &eair&r, not pressure: the gauge drops because less air is in the same volume."
 		""
@@ -2110,7 +2110,7 @@
 	quest.157F48D0F5296D8F.quest_desc: [
 		"&6Solar Recharging Unit:&r Reinforced Alloy, an &6Advanced Solar Generator&r, Module Base and polonium. In sunlight it charges the MekaSuit, several charge faster."
 		""
-		"&6Geothermal Generator Unit:&r the same with a &6Heat Generator&r. It charges from heat, per the config lava counts five times as much as fire, and with the full number of units the leggings absorb up to &e80 percent&r of heat damage."
+		"&6Geothermal Generator Unit:&r the same with a &6Heat Generator&r. It charges from heat, lava charges it most, fire less, and with the full number of units the leggings absorb up to &e80 percent&r of heat damage."
 		""
 		"With both you get through a long day in the Nether without a charging pad."
 	]
@@ -2479,7 +2479,7 @@
 		""
 		"Whatever bites comes out as a live fish: &6Searing Cod&r, &6Bonefish&r, &6Glowdine&r, lava pufferfish and more. Some kinds only live in certain biomes, like the &6Soul Sucker&r in the soul sand valley."
 		""
-		"Shears on a &6Fortress Grouper&r give scraps, on an &6Eyeball Fish&r an eye. Eye and blaze powder make an eye of ender, without any ender pearl."
+		"A &6Fortress Grouper&r and shears at the crafting table give four plates, an &6Eyeball Fish&r and shears an eye. Eye and blaze powder make an eye of ender, without any ender pearl."
 	]
 	quest.168C26275A5D318C.quest_subtitle: "Nether Depths Upgrade: fish that live in fire."
 	quest.168C26275A5D318C.title: "&6Fish in the lava"
@@ -2519,7 +2519,7 @@
 	quest.16B19AD46F39E477.title: "&aBuild a Petal Apothecary"
 	quest.16BEAA0377506D18.quest_desc: [
 		"{image:kronwerke:textures/quests/shots/pneumaticcraft_vortex.png width:224 height:126 align:center}"
-		"Two &6Pressure Tubes&r on top of each other in the middle, two &6copper ingots&r left and right in the middle row, the rest &6Compressed Iron&r (six pieces) give the &6Vortex Tube&r."
+		"Two &6Pressure Tubes&r on top of each other in the middle, two &6copper ingots&r left and right in the middle row, the rest &6Compressed Iron&r (five pieces) give the &6Vortex Tube&r."
 		""
 		"It splits the air flowing in into a &chot&r and a &bcold&r side. When placed, the hot side faces you, a red and a blue ring mark the ends. More pressure gives more temperature difference, but also uses more air."
 		""
@@ -2532,7 +2532,7 @@
 	quest.16C0A3D421647E75.quest_desc: [
 		"Each needs two Advanced Control Circuits, two Reinforced Alloys, one draconium dust. Make &e16&r."
 		""
-		"&eKronwerke:&r The stage 4 goal wants &e150 Elite Control Circuits&r (20 points each) and 1,000 draconium ingots."
+		"&eKronwerke:&r The stage 4 goal wants &e150 Elite Control Circuits&r (20 points each) and 1,000 draconium ingots; both amounts follow the number of players."
 	]
 	quest.16C0A3D421647E75.quest_subtitle: "The obelisk counts every single one."
 	quest.16C0A3D421647E75.title: "&aStock Up 16 Elite Control Circuits"
@@ -2878,7 +2878,7 @@
 	quest.17BAC4745A5B11D3.quest_subtitle: "The Logic Adapter saves your base."
 	quest.17BAC4745A5B11D3.title: "&cBuild the Emergency Stop"
 	quest.17BFB9C5252AD792.quest_desc: [
-		"&6Cobblestone&r, dirt, sand or clay into the Calcination Oven: &6Strata Salt&r, one per block."
+		"&6Cobblestone&r, dirt, sand or clay into the Calcination Oven: &6Strata Salt&r, one per block, four from a clay block."
 		""
 		"&eTip:&r A second oven that a hopper feeds with cobblestone only keeps the Incubator supplied with salt for good."
 	]
@@ -2911,8 +2911,6 @@
 	quest.17C91AA3D7D43887.title: "&6Tie a broom brush"
 	quest.17CA3655D2C5898B.quest_desc: [
 		"&eRecipe on Kronwerke:&r three &6Turbine Rotors&r on top and on the sides, a &6Printed Circuit Board&r in the middle, a &6Precision Mechanism&r from Create at the bottom. On Kronwerke flying machines need a mechanism, like AE2's Assembler."
-		""
-		"{image:pneumaticcraft:textures/item/drone.png width:32 height:32 align:center}"
 		""
 		"The Precision Mechanism is made on the depot with the deployer, see the &6Create: Brass&r chapter. Ask the Create players, they make them nonstop."
 		""
@@ -2976,7 +2974,7 @@
 		"{image:mysticalagriculture:textures/item/essence/stone_essence.png width:32 height:32 align:center}"
 		""
 		"&eStone Essence:&r 8 in a ring give 24 cobblestone, 2 Stone and 2 Dirt Essence 16 gravel."
-		"&eDirt Essence:&r 8 in a ring give 24 dirt, 2 Dirt and 2 Water Essence 24 clay."
+		"&eDirt Essence:&r 8 in a ring give 24 dirt, 2 Dirt and 2 Water Essence 24 clay balls."
 		"&eWood Essence:&r 3 in a row give 16 oak logs, other patterns other wood types."
 		"&eIce Essence:&r 8 in a ring give 24 ice, 9 give 20 packed ice."
 		"&eDeepslate Essence:&r 8 in a ring give 24 cobbled deepslate."
@@ -3198,7 +3196,7 @@
 		""
 		"{image:productivetrees:textures/item/fruit/roasted_cashew.png width:32 height:32 align:center}"
 		""
-		"Raw, nuts give 1 hunger and hardly any saturation, roasted in a furnace or smoker in 6 seconds three times the saturation. The &6Beechnuts&r and how to roast them are in the chapter &6Cooking&r."
+		"Raw, nuts give 1 hunger and hardly any saturation, roasted in a smoker in 1 second or a furnace in 6 seconds three times the saturation. The &6Beechnuts&r and how to roast them are in the chapter &6Cooking&r."
 		""
 		"The &6Coffee Bean&r (4 per leaf on the Coffea tree) roasts the same way. Hazel, Almond, Pistachio and coffee only come from breeding: Aspen and Beech give the Hazel, Almond and Cashew the Pistachio."
 	]
@@ -3507,7 +3505,7 @@
 	quest.1966207637FA2283.quest_subtitle: "Crafts & Additions: protection for the farm."
 	quest.1966207637FA2283.title: "&6Put up barbed wire"
 	quest.196C6C2FCAF9CE9A.quest_desc: [
-		"If you die, a &6body&r with all your gear stays behind. Walk back, &eright click&r opens it like a chest. The JourneyMap waypoint leads you there, and with &eU&r you open the &6death history&r with location, time and dimension of every death."
+		"[\"\",{\"text\":\"If you die, a \"},{\"text\":\"body\",\"color\":\"gold\"},{\"text\":\" with all your gear stays behind. Walk back, \"},{\"text\":\"right click\",\"color\":\"yellow\"},{\"text\":\" opens it like a chest. The JourneyMap waypoint leads you there, and with \"},{\"keybind\":\"key.corpse.death_history\",\"color\":\"yellow\"},{\"text\":\" you open the \"},{\"text\":\"death history\",\"color\":\"gold\"},{\"text\":\" with location, time and dimension of every death.\"}]"
 		""
 		"An empty body disappears after 30 seconds, a full one never. After an hour it becomes a skeleton, the contents stay."
 		""
@@ -3517,7 +3515,7 @@
 	quest.196C6C2FCAF9CE9A.title: "&cGet your things back"
 	quest.196F5378B667B85E.quest_desc: [
 		"&e8 glass panes&r around a &bSpirit Attuned Gem&r make &6Lenses&r. In Eziveus' Spectral Compulsion with &e2 silver&r and &e1 gold ingot&r (Foliot book) they become &6Infused Lenses&r."
-		"Lenses at the bottom, &6Lens Frame&r (6 Otherstone, 2 silver) above, &e3 leather&r added: the goggles."
+		"&6Lens Frame&r (6 Otherstone, 2 silver) at the bottom, the lenses in the middle, &e3 leather&r on top and at the sides: the goggles."
 		""
 		"The goggles give permanent Third Eye without side effects. With them you see Iesnium ore in netherrack. You can only mine it with an Infused or Iesnium Pickaxe."
 	]
@@ -3568,7 +3566,7 @@
 	quest.197EC4C400B2FEF2.quest_desc: [
 		"Heat moves from block to block, always from hot to cold, and only between blocks that know heat. &bLava&r next to a machine heats it and slowly turns into &7obsidian&r. &6Magma&r heats and turns into netherrack. Torches and campfires only heat weakly."
 		""
-		"&eKronwerke:&r Create's &6Blaze Burner&r is a heat source that is &enot used up&r. Lit it transfers well, superheated (with blaze cake) five times better still. You have one in this stage's starter kit. Put it directly on the refinery and save yourself the Vortex Tube for now."
+		"&eKronwerke:&r Create's &6Blaze Burner&r is a heat source that is &enot used up&r. Lit it transfers well, superheated (with blaze cake) ten times better still. The burner from this stage's starter kit already went into the Air Compressor, so catch a second blaze for the refinery. Put the burner directly on the refinery and save yourself the Vortex Tube for now."
 		""
 		"&bCold&r comes from ice, packed ice, blue ice and snow, which melt doing so. A &6Compressed Iron Block&r passes heat on with almost no resistance, a &6Heat Pipe&r (Thermal Lagging around Compressed Iron Blocks, six pieces) too, only without loss to the air."
 		""
@@ -4029,7 +4027,7 @@
 	quest.1B0B5B0BDEC1203C.quest_desc: [
 		"Top &e3 archwood slabs&r, middle left and right one &6gold nugget&r each, bottom left and right one &6archwood log&r each."
 		""
-		"Click the table with the spell book, pick a glyph, press &eSelect&r and throw the listed ingredients onto the table with &eQ&r. It also pulls them from chests next to it."
+		"[\"\",{\"text\":\"Click the table with the spell book, pick a glyph, press \"},{\"text\":\"Select\",\"color\":\"yellow\"},{\"text\":\" and throw the listed ingredients onto the table with \"},{\"keybind\":\"key.drop\",\"color\":\"yellow\"},{\"text\":\". It also pulls them from chests next to it.\"}]"
 		""
 		"Each glyph also costs experience: tier 1 &e27 points&r, tier 2 &e55&r, tier 3 &e160&r. The finished glyph drops as an item, right click learns it for good."
 	]
@@ -4119,7 +4117,7 @@
 		"&6Bowls:&r the Inert Storage Accessor, &e2 ender pearls&r, a &6nether quartz&r."
 		"&cSacrifice:&r none. Start with the Djinni book, 150 seconds."
 		""
-		"Sneaking click on the Storage Actuator links it. After that you open your storage from anywhere, even from another dimension."
+		"Sneaking click on the Storage Actuator links it. After that you open your storage from anywhere on the same server. The Nether and the End are servers of their own, you cannot reach it from there."
 	]
 	quest.1B4737AEDBFCC751.quest_subtitle: "Your storage in your pocket."
 	quest.1B4737AEDBFCC751.title: "&6Bind a Storage Accessor"
@@ -4306,7 +4304,7 @@
 	quest.1BE95EF7C01720A4.quest_subtitle: "The ingredient of the replicators."
 	quest.1BE95EF7C01720A4.title: "&3Make UU Matter"
 	quest.1BF157B8422B52AE.quest_desc: [
-		"The big &6Reforging Table&r (netherite ingot, 2 Arcane Sands, 3 nether bricks, stage 3) forges Epic for 30 levels and Mythic for 50 levels, 3 Godforged Pearls and 5 sigils. The &6Augmenting Table&r (Nether Star, 2 Godforged Pearls) improves one affix by 25 percent."
+		"The big &6Reforging Table&r (a Simple Reforging Table, netherite ingot, 2 Arcane Sands, 3 nether bricks, stage 3) forges Epic for 30 levels and Mythic for 50 levels, 3 Godforged Pearls and 5 sigils. The &6Augmenting Table&r (Nether Star, 2 Godforged Pearls) improves one affix by 25 percent."
 		""
 		"Mythic: four attributes, two effects, one ability, rarely unbreakability. Chapter &6Apotheosis&r."
 	]
@@ -4396,7 +4394,7 @@
 	quest.1C58857CA43411EE.title: "&6Build a Flint Knife"
 	quest.1C5DFC4BF6B519DC.quest_desc: [
 		"{image:kronwerke:textures/quests/shots/list_dimensions_d_mining.png width:224 height:126 align:center}"
-		"&eRecipe:&r 4 Andesite Casings, 4 Infused Iron and a source stone in the middle give 2 mine frames. Ten of them and a source stone open the portal."
+		"&eRecipe:&r 4 Andesite Casings, 4 Infused Iron and a Source Gem in the middle give 2 mine frames. Ten of them and a Source Gem open the portal."
 		""
 		"Behind it lies a world of its own just for digging, new every three days. Chapter &6Exploration&r."
 	]
@@ -4499,7 +4497,7 @@
 	quest.1C92CB282D5FECF5.quest_subtitle: "Something waits everywhere."
 	quest.1C92CB282D5FECF5.title: "&6&lExplore structures"
 	quest.1C92E630E7985B10.quest_desc: [
-		"Every basic storage with alloy and osmium around it becomes advanced. &6Fluid Tank&r 64,000 mB, &6Chemical Tank&r 256,000 mB, &6Bin&r 8,192 items."
+		"Every basic storage becomes advanced at the crafting table: the Chemical Tank with Infused Alloy and osmium around it, the Fluid Tank with alloy and iron, the Bin with two alloys, an Advanced Control Circuit and cobblestone. &6Fluid Tank&r 64,000 mB, &6Chemical Tank&r 256,000 mB, &6Bin&r 8,192 items."
 		""
 		"The contents stay when you upgrade at the crafting table."
 	]
@@ -4614,13 +4612,13 @@
 	quest.1CE952977530DD6E.quest_subtitle: "Salt, oxidizer, second separator."
 	quest.1CE952977530DD6E.title: "&aMake chlorine from brine"
 	quest.1CF2818FA37F7E3D.quest_desc: [
-		"On the left of the book the chapters are sorted into groups: &6Start&r, &6Tech&r, &dMagic&r, &aWorld and Exploration&r and &6Storage and Tools&r. Clicking the group name folds it in and out."
+		"On the left of the book the chapters are sorted into groups: &6Start&r, &6Tech&r, &dMagic&r, &aWorld and Exploration&r, &6Storage and Tools&r and &eChecklists&r. Clicking the group name folds it in and out."
 		""
 		"Every chapter is a mod or a topic and starts with the easiest step. Quests are connected by lines: what depends on a quest only becomes visible or doable once it is done."
 		""
-		"Chapters of later stages appear as soon as the stage is open. In stage 1 there are seven chapters, by the end of the season about 45."
+		"Chapters of later stages appear as soon as the stage is open. In stage 1 there are 22 chapters, by the end of the season 74."
 	]
-	quest.1CF2818FA37F7E3D.quest_subtitle: "Five groups, one chapter per mod."
+	quest.1CF2818FA37F7E3D.quest_subtitle: "Six groups, one chapter per mod."
 	quest.1CF2818FA37F7E3D.title: "&6Find your way around the chapters"
 	quest.1CF535A43EB8DF37.quest_desc: [
 		"Eight advanced transmitters around a &6Reinforced Alloy&r give Elite, eight Elite around an &6Atomic Alloy&r give Ultimate."
@@ -4999,7 +4997,7 @@
 		""
 		"A shared cobblestone tunnel at Y 100 to 120 is usually quieter than the plain below. Coordinate with the others, and the server gets small."
 		""
-		"The quest is done when you cover &e7,000 overworld blocks&r in one go this way."
+		"Minecraft's advancement for &e7,000 overworld blocks&r in one go does not exist on Kronwerke: the Nether is a server of its own, and the game does not remember the way across the border."
 	]
 	quest.1E0EDE401E04DF28.quest_subtitle: "One block here is eight blocks up top."
 	quest.1E0EDE401E04DF28.title: "&dTravel through the Nether"
@@ -5096,7 +5094,7 @@
 	quest.1E66081B7C2F3495.quest_subtitle: "Six fruits from trees from the Market."
 	quest.1E66081B7C2F3495.title: "&aFill a fruit basket"
 	quest.1E688BEACAAA3251.quest_desc: [
-		"&eStage 1:&r Crushing Wheels, only for ore blocks mined with Silk Touch (up to 2.25) and for byproducts. Raw ore into the furnace, Fortune III on the pickaxe."
+		"&eStage 1:&r Raw ore into the furnace, Fortune III on the pickaxe. The Crushing Wheels only come with stage 2, then for ore blocks mined with Silk Touch (up to 2.25) and for byproducts."
 		"&eStage 2:&r Foundry for two ingots without power. Enrichment Chamber for two ingots with power and Enriched Carbon on the side, with Fortune about 2.9 per block."
 		"&eStage 3:&r Purification Chamber, three per ore, about 4.4 with Fortune. Fragment Forge about 2.7 per raw ore. IE Crusher two plus nickel."
 		"&eStage 4:&r Chemical Injection Chamber four, Chemical Dissolution Chamber five, with Fortune about 5.9 and 7.3. From here on, power and gas are the limit, not the ore."
@@ -5137,7 +5135,7 @@
 	quest.1E70DD338A79C4E3.quest_desc: [
 		"&eHow it works:&r Divide your destination's Overworld coordinates by 8, go exactly there in the Nether and build a portal there. The two portals find each other if they are close enough together."
 		""
-		"&eWhy:&r 800 blocks of Overworld are 100 blocks of Nether. A shared cobblestone tunnel at about &eY 100 to 120&r connects all bases of the server with spawn, and Create tracks may pass through the portal (chapter &6Create: Trains&r)."
+		"&eWhy:&r 800 blocks of Overworld are 100 blocks of Nether. A shared cobblestone tunnel at about &eY 100 to 120&r connects all bases of the server with spawn. Create trains cannot go through the portal yet; that is being built (chapter &6Create: Trains&r)."
 		""
 		"Agree in chat on who builds where. The Undergarden does the same at 4 to 1, only less cozy."
 	]
@@ -5166,7 +5164,7 @@
 	quest.1E94209EC38D1030.quest_desc: [
 		"Bring together &e64 draconium ingots&r and &e8 Elite Control Circuits&r and hand them in at the obelisk."
 		""
-		"&eKronwerke:&r The tech side of the goal &6Light of the Dragon&r wants &e1,000 draconium ingots&r and &e150 Elite Control Circuits&r, the magic side &e128 Gaia Spirits&r and &e30 Mystic Staffs&r."
+		"&eKronwerke:&r The tech side of the goal &6Light of the Dragon&r wants &e1,000 draconium ingots&r and &e150 Elite Control Circuits&r, the magic side &e128 Gaia Spirits&r and &e30 Mystic Staffs&r. The tech amounts follow the number of players, the magic amounts are fixed."
 		""
 		"A few people with pickaxes in the End, a circuit line at home, and the bar fills up."
 	]
@@ -5467,7 +5465,7 @@
 	quest.1F8C8CC82C55E789.quest_subtitle: "The Potion Brewer."
 	quest.1F8C8CC82C55E789.title: "&dBrew Potions Automatically"
 	quest.1FA36163E8BA2478.quest_desc: [
-		"&eRecipe:&r three &6iron ingots&r each on top and bottom, in the middle two &6dispensers&r left and right of a &6redstone&r. That gives &616 Item Pipes&r."
+		"&eRecipe:&r three &6iron ingots&r each on top and bottom, in the middle two &6droppers&r left and right of a &6redstone&r. That gives &616 Item Pipes&r."
 		""
 		"&6Pipez&r is the simplest pipe system in the pack. Pipes connect by themselves to chests, machines and each other. A pipe only moves items when one side is set to &eextract&r, how that works is in the next quest."
 		""
@@ -5942,7 +5940,7 @@
 	quest.20C83E43A1C35408.quest_subtitle: "Lightning that jumps from monster to monster."
 	quest.20C83E43A1C35408.title: "&eForge the Thundercaller"
 	quest.20CA7AFF5AFFCCF3.quest_desc: [
-		"Bring a &6frog&r into the Nether, easiest in a boat through the portal. When it eats a small &6magma cube&r, a &6froglight&r is left behind."
+		"You cannot get a &6frog&r through the portal: the Nether is a server of its own, and only players cross over. Take a bucket of &6tadpoles&r with you and raise the frog over there. When it eats a small &6magma cube&r, a &6froglight&r is left behind."
 		""
 		"The colour depends on the frog: the orange frog from the swamp makes &6Ochre Froglight&r, the green one from cold biomes green, the white one from warm biomes pearlescent. Froglight is a bright light source that looks good."
 	]
@@ -5981,7 +5979,7 @@
 	quest.20DF4FDBAAA146AF.quest_subtitle: "Backpacks, drawers, chests."
 	quest.20DF4FDBAAA146AF.title: "&6Open Storage"
 	quest.20E04C1C72E49A84.quest_desc: [
-		"Mine &68 raw osmium&r. The big veins sit in the mountains above &eY 72&r, medium ones between Y -32 and Y 56, small ones everywhere below Y 64."
+		"Mine &68 raw osmium&r. Most veins sit in the mountains above &eY 72&r, medium ones between Y -32 and Y 56, small ones everywhere below Y 64."
 		""
 		"&5Mekanism&r is Kronwerke's big tech mod: machines with power, gases in tubes, and in the end fusion and antimatter. Almost every part of it contains osmium."
 		""
@@ -6024,9 +6022,9 @@
 	quest.2104FD313A4700DF.quest_subtitle: "Faster, but hungrier."
 	quest.2104FD313A4700DF.title: "&aPut an Inferium Upgrade into the Machine"
 	quest.210DAD7590BAA085.quest_desc: [
-		"&eRecipe on Kronwerke:&r the &6Basic Generator&r is nickel on top and on the sides, copper in the middle, bottom row coil, andesite casing, coil, plus Machine Cores around it. Bio, Lava and Fuel Generator are larger multiblocks with cores."
+		"&eRecipe on Kronwerke:&r the &6Basic Generator&r is nickel on top and on the sides, copper in the middle, bottom row coil, andesite casing, coil, it stands alone and needs no cores. Bio, Lava and Fuel Generator are larger machines with Machine Cores."
 		""
-		"&eOritech, generators:&r Basic Generator &d32 FE/t&r from anything that burns, buffer 50,000. &6Bio Generator&r &d64 FE/t&r from biomass, &6Lava Generator&r &d64 FE/t&r from lava, &6Fuel Generator&r &d256 FE/t&r from oil fuel, buffer 100,000 to 250,000. The &6Big Solar Panel&r &d32 FE/t&r by day. With the boiler addon the generators make steam instead of power, which the &6Steam Engine&r turns back into FE one to one. Unlocked from stage 3, see the chapter &6Oritech&r."
+		"&eOritech, generators:&r Basic Generator &d32 FE/t&r from anything that burns, buffer 50,000. &6Bio Generator&r &d64 FE/t&r from biomass, &6Lava Generator&r &d64 FE/t&r from lava, &6Fuel Generator&r &d256 FE/t&r from oil fuel, buffer 100,000 to 250,000. The &6Big Solar Panel&r &d32 FE/t&r by day. With the boiler addon the generators make steam instead of power, which the &6Steam Engine&r turns back into FE. Unlocked from stage 3, see the chapter &6Oritech&r."
 	]
 	quest.210DAD7590BAA085.quest_subtitle: "Oritech: 32 FE/t basic, 64 bio and lava, 256 fuel, 32 solar."
 	quest.210DAD7590BAA085.title: "&cSet up the Oritech generators"
@@ -6069,7 +6067,7 @@
 		"&6Additional Augers:&r two steel ingots and an Iron Mechanical Component. Faster and more damage, up to three times."
 		"&6Pressurized Air Tank:&r iron plates, blue dye, a fluid pipe. Drills underwater without slowing down."
 		"&6Large Tank:&r more fuel. &6Advanced Lubrication System:&r a bucket of Plant Oil in the recipe, the head wears out more slowly."
-		"&6Rock Softening Acid:&r a bucket of Redstone Acid in the recipe, works like Fortune on ores."
+		"&6Rock Softening Acid:&r two buckets of Redstone Acid in the recipe, works like Fortune on ores."
 	]
 	quest.2120F756911D7443.quest_subtitle: "Faster, underwater, with more ore."
 	quest.2120F756911D7443.title: "&6Upgrade the Drill"
@@ -6123,7 +6121,7 @@
 		"{image:kronwerke:textures/quests/shots/nuclearcraft_geiger.png width:224 height:126 align:center}"
 		"&6Geiger Counter:&r three iron at the top, redstone, glass pane, redstone, iron, copper, iron at the bottom. In hand it clicks faster the stronger the radiation and shows Sv/h. &6Dosimeter:&r iron at the top, glass panes left and right, comparator, redstone at the bottom. In the inventory a bar shows your dose."
 		""
-		"From 1 mSv/h or 0.5 Sv total dose you get sick. From 10 Sv/h or 5 Sv you take damage. From 100 Sv/h you die quickly."
+		"Four stages, the higher of radiation and total dose counts: from &e10 mSv/h&r or &e1 Sv&r you get sick, from 500 mSv/h or 3 Sv it gets serious, from 10 Sv/h or 6 Sv you take damage. From 100 Sv/h or 10 Sv you die quickly."
 	]
 	quest.214CE55749B67920.quest_subtitle: "Hear what you cannot see."
 	quest.214CE55749B67920.title: "&eBuild a Geiger Counter and Dosimeter"
@@ -6234,13 +6232,13 @@
 	quest.219338E3E3059AC9.quest_subtitle: "Repairs you and improves the others."
 	quest.219338E3E3059AC9.title: "&dSummon a Blacksmith"
 	quest.2198D782FADB864F.quest_desc: [
-		"When you first joined, you picked an &6origin&r and a &6role&r. With &eO&r you open the overview of your powers at any time, with strengths and weakness."
+		"[\"\",{\"text\":\"When you first joined, you picked an \"},{\"text\":\"origin\",\"color\":\"gold\"},{\"text\":\" and a \"},{\"text\":\"role\",\"color\":\"gold\"},{\"text\":\". With \"},{\"keybind\":\"key.neoorigins.view_info\",\"color\":\"yellow\"},{\"text\":\" you open the overview of your powers at any time, with strengths and weakness.\"}]"
 		""
-		"Most powers work on their own. Active ones need a key: the Starshard's &eStar Leap&r is on the first ability key (&eZ&r), the Trader's &epack bag&r on the role key (&eH&r), the Deepdigger's night vision on &eK&r."
+		"[\"\",{\"text\":\"Most powers work on their own. Active ones need a key: the Starshard's \"},{\"text\":\"Star Leap\",\"color\":\"yellow\"},{\"text\":\" is on the first ability key (\"},{\"keybind\":\"key.neoorigins.skill_1\",\"color\":\"yellow\"},{\"text\":\"), the Trader's \"},{\"text\":\"pack bag\",\"color\":\"yellow\"},{\"text\":\" on the role key (\"},{\"keybind\":\"key.neoorigins.class_skill\",\"color\":\"yellow\"},{\"text\":\"), the Deepdigger's night vision on \"},{\"keybind\":\"key.neoorigins.toggle_night_vision\",\"color\":\"yellow\"},{\"text\":\".\"}]"
 		""
 		"No origin can fly or skip a stage. If your choice really doesn't fit, talk to the team."
 	]
-	quest.2198D782FADB864F.quest_subtitle: "O shows you what you can do."
+	quest.2198D782FADB864F.quest_subtitle: "The overview shows you what you can do."
 	quest.2198D782FADB864F.title: "&6Use your origin"
 	quest.21A78DEEAE931C17.quest_desc: [
 		"&6Emerald&r on the brazier. On the hands: &6emerald&r, &6fermented spider eye&r, a &6mushroom&r, two &6Soul Shards&r."
@@ -6293,7 +6291,7 @@
 	quest.21C041B791510B65.quest_desc: [
 		"Collect steel and circuits in chests and hand them in by hand at the obelisk: sneak and right-click twice with an item in hand hands in everything that fits from the three inventory rows. &e/kw goals&r shows the state."
 		""
-		"&eTech pillar of stage 3:&r &64,000 steel ingots&r, &6250 Advanced Control Circuits&r, &68 Steel Cores&r. The magic pillar wants elementium, Afrit Essence and Elven Stars, and both have to fill up."
+		"&eTech pillar of stage 3:&r &64,000 steel ingots&r and &6250 Advanced Control Circuits&r (both follow the number of players), plus a fixed &68 Steel Cores&r. The magic pillar wants elementium, Afrit Essence and Elven Stars, and both have to fill up."
 		""
 		"The mages need your Reinforced Alloy for the Elven Stars, you need their elementium for the Steel Cores."
 	]
@@ -6355,7 +6353,7 @@
 		""
 		"Clicking a block while sneaking sets it: andesite looks for Otherstone, oak wood for Otherworld Logs, oak leaves for Otherworld leaves, netherrack for Iesnium. Then hold right click until the animation is done."
 		""
-		"The find glows through the walls. White crystals mean nothing found; the more purple, the closer. Set to leaves or wood, it leads you to an Otherworld Grove."
+		"The find does not glow through the walls: because Theurgy is in the pack, the rod only shows a particle pointing towards it. White crystals mean nothing found; the more purple, the closer. Set to leaves or wood, it leads you to an Otherworld Grove."
 	]
 	quest.21EB6C3BF0F05359.quest_subtitle: "Finds what the eye doesn't see."
 	quest.21EB6C3BF0F05359.title: "&6Build a Dowsing Rod"
@@ -6518,7 +6516,7 @@
 		""
 		"An open tube end hisses and loses air. Connect every tube to a machine or another tube, or close the side later with the Pneumatic Wrench. Tubes can also be fitted with modules, the safety valve for example."
 	]
-	quest.2263E27B807021B9.quest_subtitle: "Eight tubes from two ingots and glass."
+	quest.2263E27B807021B9.quest_subtitle: "Eight tubes from two ingots and a fluid pipe."
 	quest.2263E27B807021B9.title: "&bLay Pressure Tubes"
 	quest.2264CC5EE2BEAD6A.quest_desc: [
 		"In the apparatus: &6Splash Flask Cannon&r (dispenser with 2 gold, 2 blaze rods, 4 gunpowder), &5dragon's breath&r, &e2 Air Essences&r."
@@ -6587,7 +6585,7 @@
 	quest.227F132D6A4F1186.quest_subtitle: "The Crafts & Additions electric motor."
 	quest.227F132D6A4F1186.title: "&6Make rotation from FE"
 	quest.228646B7F01B74D8.quest_desc: [
-		"Five &6Biosteel&r at the top and sides, a &6Flux Gate&r in the middle, at the bottom coil, &6Basic Generator&r, coil make the &6Bio Generator&r. It needs &etwo cores&r."
+		"Five &6Biosteel&r at the top and sides, a &6Flux Gate&r in the middle, at the bottom coil, &6Basic Generator&r, coil make the &6Bio Generator&r. It needs &eone core&r."
 		""
 		"It makes &e64 RF/t&r from &6Biomass&r and other plant matter, buffer 100,000 RF. The Pulverizer makes biomass from plants, saplings and crops, 16 at once from one Packed Wheat."
 		""
@@ -6696,7 +6694,7 @@
 		""
 		"&eWhat it costs (server config):&r &e1,000 chronons&r for 10 seconds of door, each further second 10. The Tempad holds 6,000, so six doors. Chronons are made by the &6Chronometer&r in hand (1 per 36 ticks) or the &6Metronome&r as a block (1 per 24 ticks, 6,000 storage)."
 		""
-		"Whoever already collects time steel and warp dust in stage 2 builds their device on the first evening of stage 3. See the &6Pipes and Routers&r chapter."
+		"Whoever already collects warp dust in stage 2 builds their device on the first evening of stage 3, as soon as time steel exists. See the &6Pipes and Routers&r chapter."
 	]
 	quest.22D20AE07EF7575D.quest_subtitle: "Tempad: 1,000 chronons per door, between worlds too. Stage 3."
 	quest.22D20AE07EF7575D.title: "&dOpen a Time Door"
@@ -7642,7 +7640,7 @@
 	quest.259B423B20532EB5.quest_subtitle: "The game pieces of the Dandelifeon."
 	quest.259B423B20532EB5.title: "&aCraft Cellular Blocks"
 	quest.259E2E5E439C5298.quest_desc: [
-		"Top &6quartz, iron, quartz&r, middle &6iron, advanced upgrade base, iron&r, bottom &6three Blaze Gold&r."
+		"&eRecipe on Kronwerke:&r Top &6Source Gem, iron, Source Gem&r, middle &6iron, advanced upgrade base, iron&r, bottom &6three Blaze Gold&r."
 		""
 		"Material plus catalyst in, and it comes out with a grade. The average is &eC&r."
 		""
@@ -7787,7 +7785,7 @@
 	quest.2617F7531D087224.quest_subtitle: "Stone out of nothing."
 	quest.2617F7531D087224.title: "&7Build a Stone Generator Upgrade"
 	quest.262F25304F0CF4B2.quest_desc: [
-		"The list on the right of every inventory is &6JEI&r. Hover over an item, whether in the list or in your inventory, and press &eR&r: EMI shows you every way to make it. &eU&r shows you everything it is used for."
+		"The list on the right of every inventory is &6EMI&r. Hover over an item, whether in the list or in your inventory, and press &eR&r: EMI shows you every way to make it. &eU&r shows you everything it is used for."
 		""
 		"At the top of the recipe window you flip through the types: crafting table, furnace, millstone, Mana Pool and so on. &eBackspace&r jumps back to the previous recipe, &eEsc&r closes the window."
 		""
@@ -7919,7 +7917,7 @@
 	quest.26B8179E0B2761F8.quest_desc: [
 		"Mine &e64 netherrack&r. In the furnace it becomes &6Nether bricks&r, every &6Empty Blaze Burner&r holds one block."
 		""
-		"You need Nether bricks for the blast bricks of the Immersive Engineering blast furnace. A Create millstone grinds netherrack into cinder flour."
+		"You need Nether bricks for the blast bricks of the Immersive Engineering blast furnace. Create's Crushing Wheels grind netherrack into cinder flour, the millstone cannot."
 		""
 		"Lit, netherrack burns forever. A good fireplace."
 	]
@@ -7934,7 +7932,7 @@
 	quest.26B862E38D2E66A5.title: "&6Roast nuts with the fan"
 	quest.26C4940747B7A7AC.quest_desc: [
 		"{image:kronwerke:textures/quests/shots/theurgy_liquefaction.png width:224 height:126 align:center}"
-		"&6Liquefaction Cauldron&r: copper, cauldron, copper over three stone, on the brazier. Sal Ammoniac in, click it with &6Raw Iron&r, heat it."
+		"&6Liquefaction Cauldron&r: three copper on top, copper, cauldron, copper in the middle, three stone below, on the brazier. Sal Ammoniac in, click it with &6Raw Iron&r, heat it."
 		""
 		"One Raw Iron gives &e3 Iron Sulfur&r, an ore block &e5&r, an ingot only one. Each operation costs 10 mB of Sal Ammoniac, a bucket lasts for a hundred."
 	]
@@ -8249,7 +8247,7 @@
 	quest.278B3C9DD0AB3709.quest_subtitle: "Blood for the Dark Lord."
 	quest.278B3C9DD0AB3709.title: "&cSacrifice in the Goblet"
 	quest.2791066338D23456.quest_desc: [
-		"Steel pickaxe, steel axe and steel shovel with two sticks give the &6Steel Paxel&r. Steel comes from the Metallurgic Infuser, chapter &5Mekanism&r."
+		"Steel pickaxe, steel axe and steel shovel with two iron ingots as the handle give the &6Steel Paxel&r. Steel comes from the Metallurgic Infuser, chapter &5Mekanism&r."
 		""
 		"1,000 durability, speed 8, 8 damage. &6Refined Glowstone&r digs at speed 15, but only lasts 768. Steel armor: 20 points, toughness 2."
 	]
@@ -8731,7 +8729,7 @@
 	quest.28A9AD8037DF9AE5.quest_subtitle: "Flying without taking off the chestplate."
 	quest.28A9AD8037DF9AE5.title: "&eArmour your jetpack"
 	quest.28BC8AD98F603924.quest_desc: [
-		"Five Dynamic Tanks around two Basic Chemical Tanks give the &6Basic Mid Chemical Tank&r. With five more Dynamic Tanks around it it becomes the &6Max&r tank."
+		"Seven Dynamic Tanks around two Basic Chemical Tanks give the &6Basic Mid Chemical Tank&r. The &6Max&r tank needs two Mid tanks and more Dynamic Tanks; EMI shows the pattern."
 		""
 		"You upgrade both with alloys like normal tanks. The large MoreMachine machines in stage 4 need ultimate Max tanks."
 	]
@@ -8754,7 +8752,7 @@
 	quest.28D36AAE5A2A44F6.quest_subtitle: "The machine runs even when you are away."
 	quest.28D36AAE5A2A44F6.title: "&dBuild an Anchor Upgrade"
 	quest.28D4E4DA10EAEBC7.quest_desc: [
-		"&6Flux Networks&r, the &6Flux Plug&r takes power into the network, the &6Flux Point&r gives it out, anywhere and in any dimension, up to &e800,000 FE/t&r per connection. &6Basic Flux Storage&r stores 2 million FE at 20,000 FE/t. Up to 5 networks per player, chunks stay loaded. &eStage 3.&r"
+		"&6Flux Networks&r, the &6Flux Plug&r takes power into the network, the &6Flux Point&r gives it out, anywhere and in any dimension, up to &e800,000 FE/t&r per connection. &6Basic Flux Storage&r stores 2 million FE at 20,000 FE/t. Up to 5 networks per player. A device only keeps its chunk loaded when you switch that on in its window. &eStage 3.&r"
 		""
 		"&eRecipe on Kronwerke:&r The &6Flux Core&r needs a Source Gem from Ars Nouveau instead of the eye of ender, the &6Flux Controller&r an Advanced Control Circuit. Herculean Storage opens in stage 4, Gargantuan in stage 5."
 	]
@@ -8873,9 +8871,9 @@
 	quest.2928F62C8F098F92.quest_subtitle: "A world of swords."
 	quest.2928F62C8F098F92.title: "&bDraw the Reality Marble"
 	quest.29290BF4968849AA.quest_desc: [
-		"A &6Mob Charm&r needs five &6Mob Charm Fragments&r of the same type, plus leather on top and string in the middle: fragment, leather, fragment in the first row, fragment, string, fragment in the second, fragment, empty, fragment in the third."
+		"A &6Mob Charm&r needs six &6Mob Charm Fragments&r of the same type, plus leather on top and string in the middle: fragment, leather, fragment in the first row, fragment, string, fragment in the second, fragment, empty, fragment in the third."
 		""
-		"Fragments drop at 1 in 60 on a kill, or you craft them from the drops: six &6Zombie Hearts&r around rotten flesh, bone, rotten flesh give a zombie fragment, six &6Rib Bones&r around bone, flint, bone a skeleton fragment. Every type has such a recipe."
+		"Fragments drop at 1 in 60 on a kill, but only from mobs without a recipe of their own. For zombies, skeletons, creepers and the like you craft them from the drops: six &6Zombie Hearts&r around rotten flesh, bone, rotten flesh give a zombie fragment, six &6Rib Bones&r around bone, flint, bone a skeleton fragment. Every type has such a recipe."
 		""
 		"With the charm in your inventory this mob type no longer attacks you. Every kill of that type costs 1 of &e80 durability&r. The &6Charm Belt&r (three leather, five fragments) carries all charms together in one slot."
 	]
@@ -8899,11 +8897,11 @@
 	quest.29374643DC18B3D2.quest_subtitle: "At the bow of an End Ship, a pair for everyone."
 	quest.29374643DC18B3D2.title: "&5&lGet Elytra"
 	quest.29391BFAD0ADC922.quest_desc: [
-		"&6Farm world&r: a portal of &e10 mine frames&r (four wide, five high, corners free), lit with a &6source stone&r. Over there is a world of its own for digging, new every three days. &eStage 1.&r"
+		"&6Farm world&r: a portal of &e10 mine frames&r (four wide, five high, corners free), lit with a &6Source Gem&r. Over there is a world of its own for digging, new every three days. &eStage 1.&r"
 		""
 		"&eWhat travels along:&r inventory, ender chest, backpacks, and everything you throw through the portal. See the Exploration chapter."
 	]
-	quest.29391BFAD0ADC922.quest_subtitle: "Mine frames and a source stone: room for holes, ore without end."
+	quest.29391BFAD0ADC922.quest_subtitle: "Mine frames and a Source Gem: room for holes, ore without end."
 	quest.29391BFAD0ADC922.title: "Travel to the Farm World"
 	quest.294217BC9F51D52D.quest_desc: [
 		"&5Pentacle:&r Aviar's Circle."
@@ -8924,7 +8922,7 @@
 	quest.2943E707A8F30D04.quest_desc: [
 		"&eRecipe on Kronwerke:&r an &6Advanced Pressure Tube&r on top, in the middle gear, Compressed Iron, gear, at the bottom Compressed Iron, &6Basic Control Circuit&r, Compressed Iron."
 		""
-		"The dynamo is the Flux Compressor in reverse: 100 mL of air become &e40 FE&r, at &e40 FE per tick&r in the base state and an output of 80 FE per tick. Speed Upgrades raise both. It also gets warm and needs heat sinks."
+		"The dynamo is the Flux Compressor in reverse: 100 mL of air become &e40 FE&r, at &e40 FE per tick&r in the base state and an output of 80 FE per tick. Speed Upgrades raise both. It only runs from &e15 bar&r up, so it hangs on Advanced Pressure Tubes. It also gets warm and needs heat sinks."
 		""
 		"When does it pay off? When you have more air than machines from electrostatics or sun. A dynamo next to an energy cube turns the surplus into power for all other mods."
 	]
@@ -8960,7 +8958,7 @@
 		""
 		"Every piece gives &e+125 mana&r, &e+10 percent spell power of its school&r and &e+5 percent in general&r, protection like diamond. Whoever plays a school wears four pieces of it."
 		""
-		"In stage 1 Ice, Evocation, Ender, Nature, Lightning, Blood and Holy work. The &cPyromancer&r needs the Fire Rune from blaze rods: stage 2. Every piece costs one rune, so eight foci and a runestone."
+		"In stage 1 Ice, Evocation, Ender, Nature, Lightning, Blood and Holy work. The &cPyromancer&r needs the Fire Rune from blaze rods, which in stage 1 only come from the Pyromancer tower's chests. Every piece costs one rune, so eight foci and a runestone."
 	]
 	quest.2976839E25DB7710.quest_subtitle: "Wizard piece, rune, essence."
 	quest.2976839E25DB7710.title: "&bForge School Armor"
@@ -9150,9 +9148,9 @@
 		""
 		"&eThe numbers:&r raw ore gives &e1 crushed ore&r, no more. An ore block gives 1 plus a second one 75 percent of the time, a deepslate ore block 2 plus a third one 25 percent of the time. Crushed ore becomes one ingot in the furnace, or when washed 9 nuggets plus a redstone 75 percent of the time (for gold, a quartz 50 percent of the time)."
 		""
-		"&eWorth it:&r in stage 1 for ore blocks mined with Silk Touch (up to 2.25 ingots) and for the byproducts, not for raw ore. &eRecipe on Kronwerke:&r the Mekanism Crusher needs two of these wheels, so you need them anyway."
+		"&eWorth it:&r from stage 2 (the Crushing Wheels are locked before that) for ore blocks mined with Silk Touch (up to 2.25 ingots) and for the byproducts, not for raw ore. &eRecipe on Kronwerke:&r the Mekanism Crusher needs two of these wheels, so you need them anyway."
 	]
-	quest.2A14A1FC2568E937.quest_subtitle: "Stage 1: Create crushes, but does not double."
+	quest.2A14A1FC2568E937.quest_subtitle: "Stage 2: Create crushes, but does not double."
 	quest.2A14A1FC2568E937.title: "&6Grind ore with Crushing Wheels"
 	quest.2A237AEF4A42416D.quest_desc: [
 		"Four &6Flux Cores&r and five &6Flux Dust&r in a checkerboard (dust in the corners and the middle, cores on the sides) give a &6Flux Block&r."
@@ -9290,9 +9288,9 @@
 	quest.2A75A6F7DEC25645.quest_desc: [
 		"Mine &e16 soulstone&r. It is a rock of its own from Mystical Agriculture and lies throughout the Nether."
 		""
-		"You also find &6Nether Inferium Ore&r and &6Nether Prosperity Ore&r here, the same shards and essences as in the overworld, just in netherrack. What you do with them is in the &6Mystical Agriculture&r chapter."
+		"Here and there the soulstone holds &6Soulium Ore&r. There is no inferium or prosperity in the Nether, their ores only lie in the overworld. What you do with all of it is in the &6Mystical Agriculture&r chapter."
 	]
-	quest.2A75A6F7DEC25645.quest_subtitle: "Mystical Agriculture has filled the Nether with ore."
+	quest.2A75A6F7DEC25645.quest_subtitle: "A rock of its own from Mystical Agriculture."
 	quest.2A75A6F7DEC25645.title: "&8Dig soulstone"
 	quest.2A7B30A610BA1BC7.quest_desc: [
 		"Build a &6brush&r (feather, copper ingot, stick) and brush &6suspicious sand&r or gravel in a ruin."
@@ -9443,7 +9441,7 @@
 		""
 		"Every origin has real strengths and a real weakness. The role (&6Engineer&r, &6Arcanist&r, &6Builder&r, &6Explorer&r, &6Keeper&r, &6Provider&r, &6Trader&r) gives small bonuses that fit a pillar. A group with different roles gets ahead faster."
 		""
-		"No origin can fly or skip a stage. &eO&r shows your powers, more in &6Tips and Tricks&r."
+		"[\"\",{\"text\":\"No origin can fly or skip a stage. \"},{\"keybind\":\"key.neoorigins.view_info\",\"color\":\"yellow\"},{\"text\":\" shows your powers, more in \"},{\"text\":\"Tips and Tricks\",\"color\":\"gold\"},{\"text\":\".\"}]"
 	]
 	quest.2AEF31B32E2CC63D.quest_subtitle: "Who you are changes how you play."
 	quest.2AEF31B32E2CC63D.title: "&6Choose your origin and role"
@@ -9580,9 +9578,9 @@
 	quest.2B62F934479B6975.quest_subtitle: "Switches that scheduled trains set too."
 	quest.2B62F934479B6975.title: "&6Build a Brass Switch"
 	quest.2B6FCE63DBDC9974.quest_desc: [
-		"Never played a modpack? Then this chapter is for you. It explains what every other chapter assumes: the &6quest book&r, &6JEI&r, the &6map&r, &6claims&r and &6teams&r, the &6rules&r of Kronwerke and what to do when the game gets stuck."
+		"Never played a modpack? Then this chapter is for you. It explains what every other chapter assumes: the &6quest book&r, &6EMI&r, the &6map&r, &6claims&r and &6teams&r, the &6rules&r of Kronwerke and what to do when the game gets stuck."
 		""
-		"Every quest here is a short text and a checkmark. Read what interests you, check it off, take the reward. Five rows, top to bottom: &eQuest book&r, &eJEI and Jade&r, &eMap and team&r, &eRules&r, &eWhen something goes wrong&r."
+		"Every quest here is a short text and a checkmark. Read what interests you, check it off, take the reward. Five rows, top to bottom: &eQuest book&r, &eEMI and Jade&r, &eMap and team&r, &eRules&r, &eWhen something goes wrong&r."
 		""
 		"If you already know Kronwerke, skim the &eRules&r row and pick up the rest along the way."
 	]
@@ -9679,7 +9677,7 @@
 	quest.2BD2F0D498C91812.quest_desc: [
 		"A &6string&r over a &6Tallow&r makes a &6Large Candle&r. Candles from Minecraft or other mods count in pentacles just the same."
 		""
-		"Candles slow down the essence decay of the summoned spirit. Large candles count like bookshelves at the enchanting table and can be dyed in 16 colours."
+		"Candles slow down the essence decay of the summoned spirit. At Apotheosis' enchanting table large candles give Arcana (4), but no bookshelf power, and they can be dyed in 16 colours."
 	]
 	quest.2BD2F0D498C91812.quest_subtitle: "Candles keep the circle stable."
 	quest.2BD2F0D498C91812.title: "&6Pour four Large Candles"
@@ -9726,7 +9724,7 @@
 		""
 		"Without Silk Touch one ore gives &e2 to 4 dust&r, Fortune brings more. With Silk Touch you only get the ore, and that smelts into one ingot. So go for the dust."
 		""
-		"&eKronwerke:&r The ore veins in the Overworld and the Nether are switched off. The goal wants &e1,000 draconium ingots&r."
+		"&eKronwerke:&r The ore veins in the Overworld and the Nether are switched off. The goal wants &e1,000 draconium ingots&r (the amount follows the number of players)."
 	]
 	quest.2BE98D793C03A54D.quest_subtitle: "It only grows in the End now."
 	quest.2BE98D793C03A54D.title: "&5&lMine Draconium"
@@ -10053,7 +10051,7 @@
 		""
 		"Stage 3 and everything after it stays invisible until its turn. That way you always see how much is coming, but the list is not flooded with things that are still weeks away."
 		""
-		"You cannot craft veiled items; the crafting table then says &7You can't craft that yet&r."
+		"You cannot craft veiled items; the crafting table then names the stage from which it works."
 	]
 	quest.2CCC5DE3D79554CF.quest_subtitle: "Veiled, but with its recipe."
 	quest.2CCC5DE3D79554CF.title: "&6See what the next stage brings"
@@ -10392,7 +10390,7 @@
 	quest.2DBFA830E320D2D7.quest_desc: [
 		"&6Day one:&r head from three cobblestone, wooden rod. &6Climber:&r stone head plus iron tip, mines diamond ore."
 		""
-		"&6Everyday:&r iron head, iron rod, sinew binding, leather grip. Malleable III and Flexible twice last a long time."
+		"&6Everyday:&r iron head, iron rod, sinew binding, leather grip. Malleable III and Flexible three times (rod II, binding IV, grip III) last a long time."
 		""
 		"&6Weapon:&r sword blade from two flint. Jagged III raises the damage the more worn the blade is."
 	]
@@ -10443,11 +10441,11 @@
 	quest.2DE5C264C705BA2F.quest_desc: [
 		"&eRecipe:&r an &6Advanced Pressure Tube&r on top, Compressed Iron, &6Air Canister&r, Compressed Iron in the middle, three Compressed Iron at the bottom."
 		""
-		"It holds &e6,000 mL&r instead of 3,000, charges up to &e20 bar&r and never explodes. In a chest with a &6Charging Module&r on the tube in front of it, it becomes an air storage you can carry anywhere."
+		"It has &e12,000 mL&r of volume instead of 3,000, charges up to &e20 bar&r instead of 10 and never explodes. Full, it carries eight times as much air. In a chest with a &6Charging Module&r on the tube in front of it, it becomes an air storage you can carry anywhere."
 		""
 		"Four of them in a square give a &6Reinforced Air Canister Array&r. You need it in the next step."
 	]
-	quest.2DE5C264C705BA2F.quest_subtitle: "Twice as much air, up to 20 bar."
+	quest.2DE5C264C705BA2F.quest_subtitle: "Eight times as much air, up to 20 bar."
 	quest.2DE5C264C705BA2F.title: "&3Build Reinforced Air Canisters"
 	quest.2DE72750DFE6D2F0.quest_desc: [
 		"&64k Crafting Storage:&r a Crafting Unit and a 4k component, shapeless. Larger storages allow orders with more ingredients and steps in between."
@@ -10758,9 +10756,9 @@
 		"&eRecipe on Kronwerke:&r &e4 deepslate&r, &e4 steel ingots&r and an &6echo shard&r make &e2&r Reinforced Deepslate."
 		"&5Ritual:&r Osorin's Unbound Calling, bowls &e4 iron bars&r, &e4 obsidian&r, &e1 Iesnium ingot&r, start with &6deepslate&r, &cSacrifice:&r a &6Warden&r. One block per ritual."
 		""
-		"A possessed Warden from Posuc's Convocation counts as the sacrifice. The ritual is still only worth it if you have no steel. The block frames the portal to the Otherside, see the chapter &5Deeper and Darker&r."
+		"A possessed Warden from Posuc's Convocation counts as the sacrifice. The ritual is still only worth it if you have no steel. Third way: Oritech's Atomic Forge presses &6deepslate&r and &e2 Duratium ingots&r into one block. The block frames the portal to the Otherside, see the chapter &5Deeper and Darker&r."
 	]
-	quest.2F271BA45D1FE663.quest_subtitle: "Two ways to the frame of the Otherside."
+	quest.2F271BA45D1FE663.quest_subtitle: "Three ways to the frame of the Otherside."
 	quest.2F271BA45D1FE663.title: "&8Make Reinforced Deepslate"
 	quest.2F2B75676A4A2FB3.quest_desc: [
 		"A &6copper ingot&r with &e10 mB redstone&r gives an &6Infused Alloy&r."
@@ -10800,11 +10798,11 @@
 	quest.2F32CA00AFD64FD1.title: "&6Fill the Nether charms"
 	quest.2F3AB3A170C9C031.quest_desc: [
 		"{image:kronwerke:textures/quests/shots/quarries_destroyer.png width:224 height:126 align:center}"
-		"Two &6Quarry Plus&r, &6diamond blocks&r, &6emerald blocks&r, &6eyes of ender&r, a &6Nether Star&r and a &6dragon head&r. You find the head on the End Ships."
+		"Two &6Quarry Plus&r, two &6diamond blocks&r, two &6emerald blocks&r, an &6eye of ender&r, a &6Nether Star&r and a &6dragon head&r. You find the head on the End Ships."
 		""
 		"You stake out the area with a Chunk Marker or Flexible Marker, and start it in the window. It is expensive in power, plan a supply line of its own."
 		""
-		"&eKronwerke:&r Draconium only exists in the End. A quarry on a remote End island brings ore in quantity for the &e1,000 draconium ingots&r of stage 4. The main island is left alone."
+		"&eKronwerke:&r Draconium only exists in the End. A quarry on a remote End island brings ore in quantity for the &e1,000 draconium ingots&r of stage 4 (the amount follows the number of players). The main island is left alone."
 	]
 	quest.2F3AB3A170C9C031.quest_subtitle: "Whole chunks down to the bottom."
 	quest.2F3AB3A170C9C031.title: "&6&lBuild the Chunk Destroyer"
@@ -10911,7 +10909,7 @@
 		"{image:kronwerke:textures/quests/shots/industrial_addons.png width:224 height:126 align:center}"
 		"In the Dissolution Chamber with &e1,000 mB of latex&r, two &6redstone&r, two &6glass panes&r, two &6Gold Gears&r each, plus: two &6sugar&r for speed, two &6blaze rods&r for efficiency, &6furnace&r and &6crafting table&r for processing."
 		""
-		"Speed: progress runs +1 per tick faster. Processing: +1 operation per run. Tier 2, with Diamond Gears instead of gold, gives +2. &6Range&r (glass, redstone and four cobblestone, lapis and so on up to tier 11) grows the work area by 1 per tier."
+		"Speed: progress runs +1 per tick faster. Processing: +1 operation per run. Tier 2, with Diamond Gears instead of gold, gives +2. &6Range&r (glass, redstone and four cobblestone, lapis and so on, twelve tiers, shown in game as 1 to 12) grows the work area by 1 per tier."
 	]
 	quest.2F7FC4FE3DA36466.quest_subtitle: "Faster, more efficient, more per operation."
 	quest.2F7FC4FE3DA36466.title: "&9Put Addons in Your Machines"
@@ -11183,7 +11181,7 @@
 	quest.30F93CDFA1068185.quest_desc: [
 		"&eRecipe:&r a &6gold ingot&r and 2 &6Archwood planks&r give the &6Dowsing Rod&r. Use it, and for a while you see amethyst and magical creatures through walls. Every use costs durability."
 		""
-		"&eWhat for:&r Amethyst goes into warp dust, so into almost every travel item from Waystones. A tour through the mining dimension with the rod finds the geodes without digging blindly."
+		"&eWhat for:&r Amethyst goes into warp dust, so into almost every travel item from Waystones. A tour through the Overworld with the rod finds the geodes without digging blindly. The farm world has none."
 	]
 	quest.30F93CDFA1068185.quest_subtitle: "See amethyst and magical creatures through stone."
 	quest.30F93CDFA1068185.title: "&dTake the Dowsing Rod Along"
@@ -11671,7 +11669,7 @@
 		"&6Bowls:&r &e2 dirt&r, &e2 stone&r."
 		"&cSacrifice:&r none, but when grey particles appear you throw an &6egg&r nearby."
 		""
-		"The endermite travels with the Foliot to the End and back. Defeated, it always drops &6end stone&r. The End only opens with stage 4; until then it is your source for purple chalk."
+		"The endermite travels with the Foliot to the End and back. Defeated, it drops &6end stone&r or end stone bricks. The End only opens with stage 4; until then it is your source for purple chalk."
 	]
 	quest.329CE64C2C1B9053.quest_subtitle: "End stone without travelling to the End."
 	quest.329CE64C2C1B9053.title: "&5Summon a Possessed Endermite"
@@ -11724,7 +11722,7 @@
 	quest.32DB942428FAD3DA.quest_subtitle: "The Blaze Enchanter."
 	quest.32DB942428FAD3DA.title: "&5Let a blaze enchant"
 	quest.32DECCB3B2B3BCAE.quest_desc: [
-		"In the crafting units: &6Copper Backtank&r in the middle, &5elytra&r below it, 2 Precision Mechanisms, shaft, 4 chutes, 6 brass sheets. Chapter &6Create: Addons&r."
+		"In the crafting units: &6Copper Backtank&r in the middle, &5elytra&r below it, 2 Precision Mechanisms, shaft, 4 Zanite Gemstones from the Aether, 6 brass sheets. Chapter &6Create: Addons&r."
 		""
 		"One fill: 450 seconds of flight or 900 seconds of hovering, charging at any shaft. Jump rises, sneak sinks, G toggles, H hovers. With a netherite tank it becomes the Netherite Jetpack."
 	]
@@ -12023,7 +12021,7 @@
 	quest.34213EA5B410E502.quest_subtitle: "The way into AE2, two at a time."
 	quest.34213EA5B410E502.title: "&bCharge certus quartz"
 	quest.3422692534C7F491.quest_desc: [
-		"&eStage 1:&r &6Belts with Andesite Funnels&r for machine lines, &6drawers with a Storage Controller and Hopper Upgrade&r for the storage. A tame Starbuncle replaces a lot of pipes in between."
+		"&eStage 1:&r &6Belts with Andesite Funnels&r for machine lines, &6barrels and chests with a Storage Controller and Hopper Upgrade&r for the storage, drawers on their own Storage Controller. A tame Starbuncle replaces a lot of pipes in between."
 		""
 		"&eStage 2:&r &6Pipez pipes&r, because they connect everything and cost nothing, and &6Modular Routers&r as soon as you want to sort. Mekanism transporters only within Mekanism."
 		""
@@ -12354,7 +12352,7 @@
 		"&5Strigeor's Higher Binding&r, 13x13: &e32 purple&r, &e20 lime&r, &e8 white&r and &e8 light grey&r signs, &e8 candles&r, &e8 skeleton skulls&r."
 		"It is started with the Djinni book, 150 seconds per ritual."
 		""
-		"&eWhat it makes:&r Soul Gem, Familiar Ring, Gray Paste, Infused Pickaxe, Ender Satchel, Spirit Grindstone. In stage 3 also: Dimensional Mineshaft, Djinni Miner, Dimensional Matrix, Storage Remote, wormholes."
+		"&eWhat it makes:&r Soul Gem, Familiar Ring, Gray Paste, Ender Satchel, Spirit Grindstone. In stage 3 also: Infused Pickaxe, Dimensional Mineshaft, Djinni Miner, Dimensional Matrix, Storage Remote, wormholes."
 	]
 	quest.358F483542C93133.quest_subtitle: "The pentacle for Djinni items."
 	quest.358F483542C93133.title: "&5Draw Strigeor's Higher Binding"
@@ -12425,7 +12423,7 @@
 		""
 		"To forge them, stage 1 lacks the blaze rod. Fire scrolls from chests still work."
 		""
-		"&cStage 2:&r Magma Bomb, Scorch, Fire Arrow, Fireball, Flaming Barrage. &cStage 4:&r Raise Hell."
+		"&cFrom stage 1&r (with blaze rods from the Pyromancer tower): Magma Bomb, Scorch, Fire Arrow, Fireball, Flaming Barrage. &cStage 4:&r Raise Hell."
 	]
 	quest.35F2FF2D65AB0B16.quest_subtitle: "Firebolt, Fire Breath, Blaze Storm and more."
 	quest.35F2FF2D65AB0B16.title: "&cCast a Fire Spell"
@@ -12497,12 +12495,12 @@
 		"{image:kronwerke:textures/quests/shots/mekanism_advanced_teleporter.png width:224 height:126 align:center}"
 		"&6Teleporter:&r the core in the middle, Steel Casings on the sides, circuits in the corners. &6Frame:&r eight Refined Obsidian Ingots around a Refined Glowstone Ingot give nine."
 		""
-		"Build a frame &e3 wide and 4 high&r with an opening of 1 by 2: the Teleporter at the bottom in the middle, &e9 frame blocks&r left, right and on top. Give both the same &efrequency&r and power."
+		"Build a frame &e3 wide and 4 high&r with an opening of 1 by 2: the Teleporter at the bottom in the middle, &e9 frame blocks&r left, right and on top. The quest wants one portal. For the route you need a second one, 2 Teleporters and 18 frame blocks together. Give both the same &efrequency&r and power."
 		""
 		"Every jump costs power, the further the more, into another dimension a good deal more."
 	]
 	quest.3681668078CC3487.quest_subtitle: "From base to base in one step."
-	quest.3681668078CC3487.title: "&d&lSet up two teleporters"
+	quest.3681668078CC3487.title: "&d&lSet up a teleporter"
 	quest.36874E34FB3D2997.quest_desc: [
 		"&6Create&r, &6Mechanical Arm&r: grabs from any number of inputs and puts into any number of outputs within &e5 blocks&r, click the targets before placing. Filter only via a brass funnel as the target. &eStage 2.&r"
 		""
@@ -12765,7 +12763,7 @@
 		""
 		"The pack needs &eJava 21&r. Both launchers bring it along, you don't have to install anything."
 	]
-	quest.37A293ABE1A8F205.quest_subtitle: "230 mods need more than vanilla."
+	quest.37A293ABE1A8F205.quest_subtitle: "Almost 290 mods need more than vanilla."
 	quest.37A293ABE1A8F205.title: "&6Give the game enough memory"
 	quest.37CC24DE838AEDF0.quest_desc: [
 		"Blood standing in the world dries over time into &6Hardened Blood&r. Smash it with &6flint and steel&r, then &6Hardened Blood Shards&r drop. With a pickaxe or fist it only turns liquid again."
@@ -12983,7 +12981,7 @@
 	quest.38717A01E8CB085A.quest_desc: [
 		"Eight &6Reinforced Bricks&r in a ring give 16 &6Pressure Chamber Walls&r. With a &6glass&r in the middle you get 16 &6Pressure Chamber Glass&r, which bear just as much but are see-through."
 		""
-		"A 3x3x3 chamber needs 26 blocks in the shell. Count on 20 walls or glass, the rest are valve and interfaces from the next step."
+		"A 3x3x3 chamber needs 26 blocks in the shell. Count on 23 walls or glass, the rest are one valve and two interfaces from the next step."
 	]
 	quest.38717A01E8CB085A.quest_subtitle: "Eight bricks, sixteen walls."
 	quest.38717A01E8CB085A.title: "&7Build Chamber Walls"
@@ -13003,7 +13001,7 @@
 	quest.388E238B3070EB61.title: "&6Write a Warp Scroll"
 	quest.38935DC4215FFC4E.quest_desc: [
 		"{image:kronwerke:textures/quests/shots/logistics_laser_node.png width:224 height:126 align:center}"
-		"&6Logic Chip:&r redstone, gold nuggets, clay and a quartz block give four raw chips, fired in a furnace. A chip, glass, redstone and iron give a &6Laser Connector&r, a connector in iron and glass panes a &6Laser Node&r."
+		"&6Logic Chip:&r redstone, gold nuggets, clay and a quartz block give four raw chips, fired in a furnace. A chip, glass, redstone and three Fluix Crystals (on Kronwerke instead of iron) give a &6Laser Connector&r, a connector in iron and glass panes a &6Laser Node&r."
 		""
 		"With the &6Laser Wrench&r you click one node, then a second. At most &e8 blocks&r apart, for longer distances you put Laser Connectors in between. All linked nodes form one network."
 	]
@@ -13117,9 +13115,9 @@
 	quest.3948F3EBDC55383B.quest_subtitle: "The Anvil Upgrade."
 	quest.3948F3EBDC55383B.title: "Take an anvil along"
 	quest.394A88F736179AE2.quest_desc: [
-		"&6Obsidian&r, &6redstone lamp&r, &6Nebulous Heart&r and &6Catalyzing Gland&r shapeless give the &6Altar of Light&r. Place it under open sky and give it &e3 redstone&r with right click."
+		"&6Obsidian&r, on Kronwerke a &6Spirit Attuned Gem&r from Occultism instead of the redstone lamp, &6Nebulous Heart&r and &6Catalyzing Gland&r shapeless give the &6Altar of Light&r. Place it under open sky and give it &e3 redstone&r with right click."
 		""
-		"It works at night, and after 15 to 25 minutes a &6glowstone block&r appears above it. Mine it, new redstone in, keep going. As long as it works, it glows itself with light level 16."
+		"It works by day and only under open sky, and after 20 to 25 minutes a &6glowstone block&r appears above it. Mine it, new redstone in, keep going. As long as it works, it glows itself with light level 16."
 		""
 		"&cOutlook:&r The &6Tome of Alkahestry&r, which doubles items with redstone charge, needs a wither skeleton skull and many drops and only opens with &6stage 3&r. The altar is its entry point, and glowstone is valuable until then anyway."
 	]
@@ -13370,7 +13368,7 @@
 	quest.3A8D4AD0CF5B3CD8.quest_desc: [
 		"Top row string, leather, string. Middle string, a &6chest&r, string. Bottom three leather. Out comes a &6Backpack&r with &d27&r slots, as much as a chest."
 		""
-		"Wear it on your back or carry it in your hand; &eB&r opens it. How to make it bigger later is in the chapter &6Storage&r."
+		"[\"\",{\"text\":\"Wear it on your back or carry it in your hand; \"},{\"keybind\":\"key.sophisticatedbackpacks.open_backpack\",\"color\":\"yellow\"},{\"text\":\" opens it. How to make it bigger later is in the chapter \"},{\"text\":\"Storage\",\"color\":\"gold\"},{\"text\":\".\"}]"
 	]
 	quest.3A8D4AD0CF5B3CD8.quest_subtitle: "More room for your first trip."
 	quest.3A8D4AD0CF5B3CD8.title: "&6Sew yourself a backpack"
@@ -13471,7 +13469,7 @@
 	quest.3B268BFFFDB0AD9A.quest_subtitle: "Four gem blocks and a Source Jar."
 	quest.3B268BFFFDB0AD9A.title: "&dCollect the parts for the keystone"
 	quest.3B26E11DD76DD0D2.quest_desc: [
-		"Stage 5 opens the Mekanism Fission Reactor, the Draconic Reactor and Flux's Gargantuan storage. The goal at the obelisk, 100 antimatter pellets, needs one trillion joules per pellet, so 400 billion FE."
+		"Stage 5 opens the Mekanism Fission Reactor, the Draconic Reactor and Flux's Gargantuan storage. The goal at the obelisk, 100 antimatter pellets at 30 active players, needs one trillion joules per pellet, so 400 billion FE."
 		""
 		"&e1. Fission Reactor plus Industrial Turbine:&r fissile fuel from uranium, water in, steam out, the turbine from stage 3 turns it into power. The nuclear waste it makes is also the raw material for polonium and plutonium."
 		"&e2. Fusion reactor from stage 4&r at a high injection rate with steam into a second turbine, if the Fission Reactor is too hot for you."
@@ -14315,7 +14313,7 @@
 		""
 		"Rods for more Blaze Burners and brewing stands, quartz for electron tubes, glowstone for light and the Aether portal."
 		""
-		"&eKronwerke:&r The goal of the stage wants &e2,000 brass ingots&r, and every mixer with brass needs a Blaze Burner. Whoever catches more blazes than they need passes them on."
+		"&eKronwerke:&r The goal of the stage wants &e2,000 brass ingots&r (the amount follows the number of players), and every mixer with brass needs a Blaze Burner. Whoever catches more blazes than they need passes them on."
 	]
 	quest.3E476F6BD11012E2.quest_subtitle: "Enough for a whole stage."
 	quest.3E476F6BD11012E2.title: "&c&lBuild up a Nether supply"
@@ -14363,7 +14361,7 @@
 		"{image:kronwerke:textures/quests/shots/list_transport_packages.png width:224 height:126 align:center}"
 		"&6Create&r, &6Packager&r: packs the contents of an inventory into &6packages&r that travel on belts, in chutes and on &6Chain Conveyors&r. &6Frogports&r on the chain accept packages with their address. Filter by address. &eStage 1.&r"
 		""
-		"Packager: a cardboard block in the middle, iron ingots on top and on the sides, redstone at the bottom. Chain Conveyor: a large cogwheel in four Andesite Casings gives two, connected with chains."
+		"Packager: a Block of Cardboard in the middle, iron ingots on top, left, right and below, redstone in the bottom corners. Chain Conveyor: a large cogwheel in four Andesite Casings gives two, connected with chains."
 		""
 		"With a &6Stock Link&r and a &6Stock Ticker&r you order from all connected storages, and the packager sends it off. Create 6's postal system, see the Create chapter."
 	]
@@ -14614,7 +14612,7 @@
 		""
 		"The &6Advanced Air Compressor&r makes 50 mL per tick instead of 10, gets hot doing so and needs heat sinks. On top come &6drones&r, the &6Programmer&r with its puzzle pieces, the Programmable Controller, the Security Station and the Universal Sensor."
 		""
-		"&eRecipe on Kronwerke:&r The &6Flux Compressor&r and the &6Pneumatic Dynamo&r, the bridges to power, need a &6Basic Control Circuit&r from Mekanism instead of the board, plus an advanced tube and a turbine rotor. The &6drone&r gets a &6Precision Mechanism&r from Create under its board, three turbine rotors around it."
+		"&eRecipe on Kronwerke:&r The &6Flux Compressor&r and the &6Pneumatic Dynamo&r, the bridges to power, need a &6Basic Control Circuit&r from Mekanism instead of the board, plus an advanced tube, and the Flux Compressor a turbine rotor as well. The &6drone&r gets a &6Precision Mechanism&r from Create under its board, three turbine rotors around it."
 		""
 		"The &6Pneumatic Armor&r with jet boots and the Minigun wait until stage 4. Everything else from this chapter stays the foundation: pressure, heat, plastic and boards are only needed in bigger amounts there."
 	]
@@ -14989,7 +14987,7 @@
 	quest.415C88030B6FDB7C.quest_subtitle: "A curse that grows with you."
 	quest.415C88030B6FDB7C.title: "&6Draw Gandr"
 	quest.415E8B453D8F082E.quest_desc: [
-		"&eRecipe:&r &64 andesite casings&r, &64 Infused Iron&r and a &6sourcestone&r in the middle make &e2 Mine Frames&r. For a portal you need &e10&r."
+		"&eRecipe:&r &64 andesite casings&r, &64 Infused Iron&r and a &6Source Gem&r in the middle make &e2 Mine Frames&r. For a portal you need &e10&r."
 		""
 		"The &6farm world&r is a world of its own for digging. There you may make as many holes as you want, and the overworld stays beautiful."
 	]
@@ -15184,7 +15182,7 @@
 	quest.421EAB45386F53B8.quest_subtitle: "Quiet in the factory hall."
 	quest.421EAB45386F53B8.title: "&7Build a Muffling Upgrade"
 	quest.422BDE42CD38A916.quest_desc: [
-		"The &6Advanced Solar Generator&r: four Solar Generators, alloy, circuits and an iron block, three blocks tall. Advanced cables and cubes are made from the basic ones with Infused Alloy and Advanced Control Circuits."
+		"The &6Advanced Solar Generator&r: four Solar Generators, two Infused Alloy and three iron ingots, three blocks tall. Advanced cables and cubes are made from the basic ones with Infused Alloy and Advanced Control Circuits."
 		""
 		"&eMekanism, Advanced Solar Generator:&r &d120 FE/t&r by day, six times the small one. &eAdvanced Universal Cable:&r &d51,200 FE/t&r. &eAdvanced Energy Cube:&r &d6.4 million FE&r, 6,400 FE/t. Advanced Induction Cells store 25.6 billion FE per cell, the port handles 819,200 FE/t. Like the whole matrix, only from stage 4."
 	]
@@ -15269,7 +15267,7 @@
 	quest.426DAFC0C10CD0AA.quest_desc: [
 		"Break &dchorus plants&r at the bottom and collect &e16 chorus fruit&r. In a furnace &e8&r of them become popped chorus fruit."
 		""
-		"Four popped ones make four &6purpur blocks&r, one with a blaze rod an &6End Rod&r. Eaten, a fruit teleports you randomly, a gamble over the void."
+		"Four popped ones make four &6purpur blocks&r, one with a blaze rod four &6End Rods&r. Eaten, a fruit teleports you randomly, a gamble over the void."
 		""
 		"A &6chorus flower&r only grows on end stone. A few blocks at your base are enough for a farm."
 	]
@@ -16038,7 +16036,7 @@
 	quest.4619DA1F4243B667.quest_desc: [
 		"&eRecipe on Kronwerke:&r Enriched iron in the corners, a &6Precision Mechanism&r from Create in the top middle, two &6Advanced Processors&r left and right, a Machine Casing in the center, a &6Destruction Core&r at the bottom."
 		""
-		"The &6Autocrafter&r holds &e9 patterns&r. It crafts crafting patterns by itself, right in the block. No crafting CPU, no molecular assembler, no accumulation processors as in AE2. It needs 4 FE/t plus 2 per pattern."
+		"The &6Autocrafter&r holds &e9 patterns&r. It crafts crafting patterns by itself, right in the block. No crafting CPU and no molecular assembler as in AE2. It needs 4 FE/t plus 2 per pattern."
 		""
 		"&eProcessing patterns:&r The Autocrafter faces the machine and pushes the ingredients in. The result has to get back into the network, so put an Importer on the machine. More than nine patterns for one machine? Place a second Autocrafter facing the first, then they form a chain."
 		""
@@ -16200,7 +16198,7 @@
 	quest.4699EA2A9F63B8AD.quest_subtitle: "Earthy arcana."
 	quest.4699EA2A9F63B8AD.title: "&6Earthen"
 	quest.469CD8475322E3E0.quest_desc: [
-		"&e16 stone&r on the altar. With &e1 Wicked&r and &e1 Arcane&r: &6Twisted Rock&r. With &e1 Sacred&r and &e1 Arcane&r: &6Tainted Rock&r. 16 pieces each."
+		"&e16 cobblestone&r on the altar (smooth stone does not work, the recipe takes cobblestone and its relatives). With &e1 Wicked&r and &e1 Arcane&r: &6Twisted Rock&r. With &e1 Sacred&r and &e1 Arcane&r: &6Tainted Rock&r. 16 pieces each."
 		""
 		"Together they form the Spirit Crucible."
 	]
@@ -16383,11 +16381,11 @@
 	quest.479BDFDA8EB2572E.quest_subtitle: "Crossing without bees."
 	quest.479BDFDA8EB2572E.title: "&eSift Pollen from Leaves"
 	quest.47A0BA899F7092C0.quest_desc: [
-		"[\"\",{\"text\":\"Open the map with \"},{\"keybind\":\"key.ftbchunks.map\",\"color\":\"yellow\"},{\"text\":\" and press \"},{\"text\":\"C\",\"color\":\"yellow\"},{\"text\":\" for the claim view. Dragging with the \"},{\"text\":\"left mouse button\",\"color\":\"yellow\"},{\"text\":\" claims chunks, dragging with the \"},{\"text\":\"right mouse button\",\"color\":\"yellow\"},{\"text\":\" releases them. In your chunks nobody outside your team can break blocks, open chests or hit animals, and creepers blow up nothing.\"}]"
+		"[\"\",{\"text\":\"Open the map with \"},{\"keybind\":\"key.ftbchunks.map\",\"color\":\"yellow\"},{\"text\":\" and press \"},{\"text\":\"C\",\"color\":\"yellow\"},{\"text\":\" for the claim view. Dragging with the \"},{\"text\":\"left mouse button\",\"color\":\"yellow\"},{\"text\":\" claims chunks, dragging with the \"},{\"text\":\"right mouse button\",\"color\":\"yellow\"},{\"text\":\" releases them. In your chunks only your team and your allies can break blocks and open chests, and creepers blow up nothing.\"}]"
 		""
 		"You have &e500 chunks&r. That is a lot, but not the whole valley: a chunk is 16 by 16 blocks, and 500 are enough for a big base with fields and a factory."
 		""
-		"&eShift&r and dragging with the left mouse button keeps chunks &eloaded&r: up to &e9&r per player, at most &e25&r for the whole team. Machines in them keep running even when you are offline. After &e7 days&r without logging in the server releases them, after &e30 days&r the claims too."
+		"&eShift&r and dragging with the left mouse button keeps chunks &eloaded&r: up to &e25&r for the whole team, however many you are. Machines in them keep running even when you are offline. After &e7 days&r without logging in the server releases them, after &e30 days&r the claims too."
 	]
 	quest.47A0BA899F7092C0.quest_subtitle: "500 chunks for you, 25 of them kept loaded."
 	quest.47A0BA899F7092C0.title: "&6Secure your base"
@@ -16761,7 +16759,7 @@
 	quest.49309AAE0825F254.quest_subtitle: "Hits become mana."
 	quest.49309AAE0825F254.title: "&aDraw Damage Exchange"
 	quest.493BA659596BA22E.quest_desc: [
-		"Obsidian dust from the Crusher, infused with diamond, smelted. Tools and armor like iron. Chapter &5Mekanism: Advanced&r."
+		"Obsidian dust from the Crusher, infused with diamond, pressed into an ingot with osmium in the Osmium Compressor. Tools and armor like iron. Chapter &5Mekanism: Advanced&r."
 		""
 		"Tool 4,096, paxel 8,192 durability, speed 12, 8 damage. Armor 31 points (6, 12, 8, 5), toughness 5. The strongest armor metal before the MekaSuit."
 	]
@@ -17379,7 +17377,7 @@
 	quest.4BF437761846EE2C.quest_subtitle: "Arenas for real bosses. Not alone."
 	quest.4BF437761846EE2C.title: "&cKnow the dangerous places"
 	quest.4BF4498213060C57.quest_desc: [
-		"&6Botania&r, &6Hopperhock&r: a functional flower that picks up items lying around near it and puts them into adjacent inventories. Mana is optional and enlarges the range. Filter via frames on the chests. &eStage 1.&r"
+		"&6Botania&r, &6Hopperhock&r: a functional flower that picks up items lying around near it and puts them into adjacent inventories. Mana is optional and enlarges the range. Filter via frames on the chests. &eStage 2:&r the recipe needs the Rune of Air."
 		""
 		"From the Petal Apothecary, see the Botania chapter. With the Wand of the Forest in function mode you switch the sorting rule."
 		""
@@ -17513,7 +17511,7 @@
 		""
 		"Copper Casing, dried kelp block, copper sheet. Reversing the rotation pulls the hose in."
 		""
-		"&eKronwerke:&r An ocean or a big lava lake in the Nether (stage 2) on the Hose Pulley supplies washers and Heat Generators forever."
+		"&eKronwerke:&r An ocean or a big lava lake in the Nether (stage 2) on the Hose Pulley supplies washers and Heat Generators forever. Lava from the Nether stays over there, though; pipes do not lead through the portal: use it there or carry it over in tanks."
 	]
 	quest.4C83C592231CEA3B.quest_subtitle: "Create, Hose Pulley: infinite from 10,000 blocks."
 	quest.4C83C592231CEA3B.title: "Hang a Hose Pulley over the Lake"
@@ -17690,7 +17688,7 @@
 		""
 		"Without it no Elite machines and no way to the Ultimate Control Circuits (chapter &bMekanism: Elite&r)."
 		""
-		"&eKronwerke:&r The goal wants &e150 Elite Control Circuits&r. Build yourself a line: dust from the End, alloy from the Metallurgic Infuser."
+		"&eKronwerke:&r The goal wants &e150 Elite Control Circuits&r (the amount follows the number of players). Build yourself a line: dust from the End, alloy from the Metallurgic Infuser."
 	]
 	quest.4D37F7EA25BFE552.quest_subtitle: "Mekanism needs the End."
 	quest.4D37F7EA25BFE552.title: "&bBuild Elite Control Circuits"
@@ -17855,7 +17853,7 @@
 	quest.4DF5D057568DD120.quest_desc: [
 		"The double line takes every Mekanism metal. Throw &6Raw Tin&r and &6Raw Lead&r into the input chest, out come ingots, two per ore block."
 		""
-		"You need &etin&r for bronze, the Seismic Vibrator, the Scuba Tank and the Resistive Heater. &eLead&r for Reactor Glass, QIO and the Fission Reactor in stage 5. Neither lies in your way, so collect them now as you go."
+		"You need &etin&r for bronze, the Seismic Vibrator and the Resistive Heater. &eLead&r for Reactor Glass, QIO and the Fission Reactor in stage 5. Neither lies in your way, so collect them now as you go."
 	]
 	quest.4DF5D057568DD120.quest_subtitle: "Same line, other metals."
 	quest.4DF5D057568DD120.title: "&7Send tin and lead after it"
@@ -18251,11 +18249,11 @@
 	quest.4F6FFA3DD9E965B4.quest_subtitle: "Two potions become one."
 	quest.4F6FFA3DD9E965B4.title: "&dMix potions in the Potion Melder"
 	quest.4F737437D2FC07A9.quest_desc: [
-		"Attuner and an &6emerald&r, shapeless. Holds &d5,000 mana&r."
+		"Attuner and an &6emerald&r, shapeless; the attuner is kept. Holds &d5,000 mana&r, enough for two Mystic Staffs at 2,000 each."
 		""
 		"Two of them carry one Mystic Staff with some left over."
 	]
-	quest.4F737437D2FC07A9.quest_subtitle: "5,000 mana, cheaper."
+	quest.4F737437D2FC07A9.quest_subtitle: "5,000 mana from an emerald."
 	quest.4F737437D2FC07A9.title: "&dAttune an Emerald"
 	quest.4F86631B97461E25.quest_desc: [
 		"Give a &6Stranghoul&r a bowl of &6Pungency Stew&r. Then it fights for you for a day."
@@ -18265,14 +18263,14 @@
 	quest.4F86631B97461E25.quest_subtitle: "A bowl of stew, a day of escort."
 	quest.4F86631B97461E25.title: "&2Hire a Stranghoul"
 	quest.4F88EEBC3221D925.quest_desc: [
-		"A &6Nitro Crystal&r is made in the orb from a nether star, two blocks of redstone and a block of Blazing crystals for 20 million FE. Turn that into capacitors, then upgrade as usual."
+		"A &6Nitro Crystal&r is made in the orb from a nether star, two blocks of redstone and a block of Blazing crystals for 20 million FE, which gives 16 crystals. Turn that into capacitors, then upgrade as usual."
 		""
 		"&ePowah, Nitro:&r Furnator and Magmator &d40,000 FE/t&r, Solar and Thermo 2,000 FE/t, reactor &d500,000 FE/t&r (buffer 500 million). Nitro cable 1 million FE/t, Nitro Energy Cell &d2 billion FE&r with 2 million FE/t. Unlocked from stage 4."
 	]
 	quest.4F88EEBC3221D925.quest_subtitle: "Powah Nitro: 40,000 FE/t Furnator, 500,000 FE/t reactor, 2 billion FE cell."
 	quest.4F88EEBC3221D925.title: "&bUpgrade Powah to Nitro"
 	quest.4F9187126774C459.quest_desc: [
-		"You now know the book, EMI, the map, the rules and the keys. Everything else you learn while playing, and nobody expects you to know 230 mods."
+		"You now know the book, EMI, the map, the rules and the keys. Everything else you learn while playing, and nobody expects you to know almost 290 mods."
 		""
 		"If you get stuck: first &eR&r and &eU&r in EMI, then the matching &echapter&r in the book, then &echat&r or &evoice chat&r. Thirty people on the server, one of them has surely built that machine already. For anything technical (crash, installation, whitelist) there is the &9Discord&r, and &ekronwerke.com&r has the most common questions and the state of the obelisk."
 		""
@@ -18522,8 +18520,6 @@
 	quest.50AB5CA48E1320D3.quest_desc: [
 		"&eLaser&r program into the controller, &620 Pressure Chamber Valves&r into the input chest, out come &68 Advanced Pressure Tubes&r. With the &eDrill & Laser&r program it goes straight from the &6Compressed Iron Block&r to the eight tubes."
 		""
-		"{image:pneumaticcraft:textures/item/advanced_pressure_tube.png width:32 height:32 align:center}"
-		""
 		"A normal tube holds 5 bar, a Reinforced Tube 10. The Advanced Tube holds &e20 bar&r and holds 4,000 mL instead of 1,000. Every machine of this stage needs it as an ingredient: the big compressors, the dynamo, the Pressurized Spawner, the Aerial Interface."
 		""
 		"&eTip:&r One block becomes eight tubes. Run four blocks through right away, you quickly need 32 tubes."
@@ -18567,7 +18563,7 @@
 		""
 		"Hoppers or pipes refill iron and Coke Dust from above, a chest at the front takes the steel. The Crusher supplies the Coke Dust."
 		""
-		"&eKronwerke:&r The stage goal wants &e4,000 steel ingots&r. Collect the output in chests and bring it to the obelisk."
+		"&eKronwerke:&r The stage goal wants &e4,000 steel ingots&r at 30 active players. Collect the output in chests and bring it to the obelisk."
 	]
 	quest.5101E57E0AE8D9E1.quest_subtitle: "Twelve slots at once."
 	quest.5101E57E0AE8D9E1.title: "&8&lSmelt 256 Steel in the Arc Furnace"
@@ -18863,7 +18859,7 @@
 		"{image:kronwerke:textures/quests/shots/storage_welcome.png width:224 height:126 align:center}"
 		"&6Wooden chest&r in the middle, &6four leather&r (one on top, three at the bottom), &6four string&r on the sides and in the top corners."
 		""
-		"The leather backpack has &e27 slots&r and &eone upgrade slot&r. Open it with right click in hand or with &eB&r while it is in your inventory. A sneaking right click on the ground sets it down, the contents stay inside. Dyes in the crafting grid colour it."
+		"[\"\",{\"text\":\"The leather backpack has \"},{\"text\":\"27 slots\",\"color\":\"yellow\"},{\"text\":\" and \"},{\"text\":\"one upgrade slot\",\"color\":\"yellow\"},{\"text\":\". Open it with right click in hand or with \"},{\"keybind\":\"key.sophisticatedbackpacks.open_backpack\",\"color\":\"yellow\"},{\"text\":\" while it is in your inventory. A sneaking right click on the ground sets it down, the contents stay inside. Dyes in the crafting grid colour it.\"}]"
 		""
 		"This chapter is your first week: backpack, drawer wall, upgradeable barrels, a vault for Create. &cKronwerke:&r Copper and iron backpacks open in stage 2, gold and diamond in stage 3, netherite in stage 4. The tooltip says which stage is missing."
 	]
@@ -18929,7 +18925,7 @@
 	quest.52E9875B96B119C7.quest_subtitle: "Travel once, free choice of destination."
 	quest.52E9875B96B119C7.title: "&6Write a Warp Scroll"
 	quest.52FA15A0664F4074.quest_desc: [
-		"&eRecipe:&r six &6Reinforced Bricks&r all around, a &6furnace&r bottom middle, a &6Pressure Tube&r middle right give the &6Air Compressor&r."
+		"&eRecipe:&r six &6Reinforced Bricks&r all around, a Create &6Blaze Burner&r bottom middle (that is Kronwerke, elsewhere a furnace), a &6Pressure Tube&r middle right give the &6Air Compressor&r."
 		""
 		"It burns everything a furnace burns and turns it into &b10 mL of air per tick&r. One coal burns 1,600 ticks, that is 16,000 mL. It does not take lava buckets, that is what the Liquid Compressor is for."
 		""
@@ -19109,7 +19105,7 @@
 	quest.53C53080300CB27D.quest_desc: [
 		"The &cEnder Guardian&r drops the &6Gauntlet of Guard&r, the &cEnder Golem&r a &6Void Core&r for the &6Void Forge&r."
 		""
-		"In the Nether before that: the &cHarbinger&r needs a Nether Star and gives Witherite for the &6Mechanical Fusion Anvil&r, which fuses boss weapons. Chapter &cBosses of the Overworld&r."
+		"In the Overworld before that: the &cHarbinger&r in the Ancient Factory needs a Nether Star and gives Witherite for the &6Mechanical Fusion Anvil&r, which fuses boss weapons. Chapter &cBosses of the Overworld&r."
 	]
 	quest.53C53080300CB27D.quest_subtitle: "Cataclysm in the End: Guardian and Golem."
 	quest.53C53080300CB27D.title: "&5Loot the Gauntlet"
@@ -19189,7 +19185,7 @@
 	quest.542DFEB3A370F944.quest_desc: [
 		"Five &6Fluid Pipes&r, one &6copper ingot&r in the middle, at the bottom Adamant, plating, Adamant."
 		""
-		"On the generator it burns fuel with water into steam. The &6Steam Engine&r (generator, coil, Electrum, copper) turns that back into power, one to one."
+		"On the generator it burns fuel with water into steam. The &6Steam Engine&r (generator, coil, Electrum, copper) turns that back into power and needs &ethree cores&r."
 	]
 	quest.542DFEB3A370F944.quest_subtitle: "Steam Boiler Addon."
 	quest.542DFEB3A370F944.title: "&aBoil Steam Instead of Power"
@@ -19305,7 +19301,7 @@
 		"{image:kronwerke:textures/quests/shots/list_power_mekmm_large.png width:224 height:126 align:center}"
 		"The &6Large Heat Generator&r and the &6Large Wind Generator&r are the giant versions of the Mekanism generators, the &6Large Gas-Burning Generator&r has a tank of 180,000 mB. All three are large blocks, the Wind Generator must not have a second one right next to it."
 		""
-		"&eMekanism More Machine, Large Heat Generator:&r &d400 FE/t&r from fuel, &d140 FE/t per lava side&r, up to 81 sides, 300 FE/t extra in the Nether, tank 240,000 mB. &eLarge Wind Generator:&r &d900,000 FE/t&r at the bottom, &d1,500,000 FE/t&r at the very top, no fuel. The strongest fuel free generator that never stops in the pack. Unlocked from stage 4. The &6Solar Heat Generator&r (reflectors heat coolant) is already open from stage 3."
+		"&eMekanism More Machine, Large Heat Generator:&r &d400 FE/t&r from fuel, &d140 FE/t per lava side&r, up to 81 sides, 300 FE/t extra in the Nether, tank 240,000 mB. &eLarge Wind Generator:&r &d900,000 FE/t&r at the bottom, &d1,500,000 FE/t&r at the very top, no fuel. The strongest fuel free generator that never stops in the pack. The Large Heat Generator is unlocked from stage 4, the Large Wind Generator from stage 5. The &6Solar Heat Generator&r has no recipe in the pack."
 	]
 	quest.54B3D1FDD28C9434.quest_subtitle: "Mekanism More Machine: 400 FE/t plus lava, up to 1.5 million FE/t wind."
 	quest.54B3D1FDD28C9434.title: "&5Set up the large generators"
@@ -19539,7 +19535,7 @@
 	quest.5592A2F0D9F96A95.quest_subtitle: "Stone to gravel, gravel to sand."
 	quest.5592A2F0D9F96A95.title: "&dLearn Crush"
 	quest.559D75E71F26822B.quest_desc: [
-		"&6Paper&r in the corners, &6bricks&r at the top and bottom, &6redstone&r left and right, &6iron&r in the middle."
+		"&6Paper&r in the corners, &6bricks&r (the block) at the top and bottom, &6redstone&r left and right, &6iron&r in the middle."
 		""
 		"In the card's window you set shape, size and offset. Faster: card in hand, sneak right click the Builder, then right click two opposite corners. Up to &e512&r blocks per side, up to &e260&r blocks away from the Builder."
 		""
@@ -20127,7 +20123,7 @@
 	quest.5836D48F1334F4B0.quest_desc: [
 		"Infused Alloy, Energy Tablet, Infused Alloy on top, alloy, &6Atomic Alloy&r, alloy in the middle, Refined Obsidian at the bottom."
 		""
-		"Pickaxe, shovel, axe and sword in one, runs on power instead of durability. Mode key: normal, slow, fast, vein mining. In stage 4 it becomes the Meka-Tool."
+		"Pickaxe, shovel, axe and sword in one, runs on power instead of durability. Mode key: normal, slow, fast. Vein mining is switched off on Kronwerke. In stage 4 it becomes the Meka-Tool."
 	]
 	quest.5836D48F1334F4B0.quest_subtitle: "Mekanism: a tool with power."
 	quest.5836D48F1334F4B0.title: "&bBuild the Atomic Disassembler"
@@ -20380,7 +20376,7 @@
 		""
 		"&eKronwerke:&r the trees from &6Productive Trees&r grow nowhere in the world. The Market sells the crosses of the first three generations: &eGeneration 1&r (Beech, Silver Lime, Teak, Cacao, Larch, Red Delicious Apple) for &61 emerald&r, &eGeneration 2&r and the five mutations for &62&r, &eGeneration 3&r for &64&r."
 		""
-		"Everything from generation 4 on, the glowing trees and the finds only come from &ebreeding&r with bees or pollen and from chests. 57 saplings to buy, a good 100 to earn."
+		"Everything from generation 4 on, the glowing trees and the finds only come from &ebreeding&r with bees or pollen and from chests. 56 saplings to buy, a good 100 to earn."
 		""
 		"You get emeralds from villagers, from emerald ore in the mountains and from the crates in this chapter. 163 tree species are waiting, with fruit, nuts, spices, dyes and 163 kinds of wood. EMI shows the parents of every tree under &eTree Pollination&r."
 	]
@@ -20568,7 +20564,7 @@
 	quest.5A04E062C833F78E.quest_subtitle: "The pentacle for the Foliot."
 	quest.5A04E062C833F78E.title: "&5Draw Aviar's Circle"
 	quest.5A072D8F78E05A22.quest_desc: [
-		"Nobody can craft the programs. You buy them from the &6Pressure Mechanic&r, a villager with their own house in villages, or via the &6Amadron Tablet&r: &eAssembly Program: Drill&r and &eAssembly Program: Laser&r cost &68 emeralds&r each, &eDrill & Laser&r costs 14."
+		"Nobody can craft Drill and Laser. You buy them from the &6Pressure Mechanic&r, a villager with their own house in villages, or via the &6Amadron Tablet&r: &eAssembly Program: Drill&r and &eAssembly Program: Laser&r cost &68 emeralds&r each, &eDrill & Laser&r costs 14, or you combine Drill and Laser at the crafting table."
 		""
 		"You bind the &6Amadron Tablet&r (7 Plastic Sheets, a GPS Tool, an Air Canister, then charge it) to a chest with a right click. The emeralds lie in the chest, one drone picks them up, a second one brings the goods. The &6PCB Blueprint&r is available right there too."
 		""
@@ -21283,7 +21279,7 @@
 	quest.5D17215C745178DC.quest_subtitle: "From the Smogstem Forest to the Infected Depths."
 	quest.5D17215C745178DC.title: "&2&lVisit All Twenty Biomes"
 	quest.5D1BAF41EFDB096B.quest_desc: [
-		"&6Immersive Engineering&r, &6Fluid Pipe&r: distributes evenly to all outputs, slow without pressure, fast behind a &6Fluid Pump&r (&e250 RF/t&r for high pressure). &6Wooden&r and &6Metal Barrel&r 12 buckets, the &6Tank&r from sheetmetal &e512 buckets&r. No filter, a &6pipe valve&r closes by redstone. &eStage 2.&r"
+		"&6Immersive Engineering&r, &6Fluid Pipe&r: distributes evenly to all outputs, slow without pressure, fast behind a &6Fluid Pump&r (&e5 RF/t&r for high pressure, plus 250 RF per block it draws in). &6Wooden&r and &6Metal Barrel&r 12 buckets, the &6Tank&r from sheetmetal &e512 buckets&r. No filter, a &6pipe valve&r closes by redstone. &eStage 2.&r"
 		""
 		"The hammer separates and connects pipes, dye colors them, dyed pipes do not connect to new ones. See the Immersive Engineering chapter."
 	]
@@ -21306,7 +21302,7 @@
 	quest.5D39D58490ECDCDF.quest_desc: [
 		"&eRecipe on Kronwerke:&r steel casing in the middle, a &6crushing wheel&r left and right instead of the lava buckets, circuits top and bottom, redstone in the corners."
 		""
-		"It turns ingots into dust, cobblestone into gravel, obsidian into four obsidian dust (stage 3 needs that). Plants and food become &6bio fuel&r, an apple two."
+		"It turns ingots into dust, cobblestone into gravel, obsidian into four of Create's Powdered Obsidian (stage 3 needs that). Plants and food become &6bio fuel&r, an apple two."
 		""
 		"&eNether tip:&r A blaze rod gives four blaze powder here instead of two."
 	]
@@ -21421,7 +21417,7 @@
 		""
 		"Almost every machine of this stage needs something from here: &6blaze rods&r for the Blaze Burner, &6Nether quartz&r for electron tubes, &6glowstone&r for the Aether portal, &6magma&r and Nether bricks for the blast furnace."
 		""
-		"&cRead the next quest before you go through.&r Whoever falls into a lava lake loses everything they carry."
+		"&cRead the next quest before you go through.&r Whoever falls into a lava lake dies quickly. Your things stay safe in your body (Corpse), though, even in lava."
 	]
 	quest.5E17FDE633086052.quest_subtitle: "Since the event, the portal at spawn is open to everyone."
 	quest.5E17FDE633086052.title: "&c&lEnter the Nether"
@@ -21433,7 +21429,7 @@
 	quest.5E29B2C89BF426FE.quest_subtitle: "The raw material for rubber."
 	quest.5E29B2C89BF426FE.title: "&6Fill a Bucket of Latex"
 	quest.5E337253E9C1DBD3.quest_desc: [
-		"Two &6Blue Ice&r give one &6Dry Ice&r for &e10,000 FE&r. It also lies as a vein in stone below &eY 64&r, mine it with Silk Touch."
+		"Two &6Blue Ice&r give one &6Dry Ice&r for &e10,000 FE&r. It also lies as a vein in stone below &eY 64&r, but only in cold and icy biomes. A normal pickaxe is enough."
 		""
 		"In the reactor Dry Ice cools with -32 degrees and 712 units. For comparison: Blue Ice -17 degrees and 568, normal ice -5 degrees and 48."
 	]
@@ -21560,7 +21556,7 @@
 	quest.5E835E59CCD257CB.title: "&d&lGet to Know the Schools"
 	quest.5E9DE4DC5D916B35.quest_desc: [
 		"{image:kronwerke:textures/quests/shots/oritech_destroyer.png width:224 height:126 align:center}"
-		"&6Machine Frame:&r four iron bars around two nickel, gives sixteen. Use it to lay out an &eempty rectangle&r up to &e64 blocks&r per side. &6Destroyer Block&r: Motor, laser, Motor at the top, Motor, Pulverizer, Motor, three plating at the bottom."
+		"&6Machine Frame:&r three iron bars in a column, a nickel left and right of the middle one, gives sixteen. Use it to lay out an &eempty rectangle&r up to &e64 blocks&r per side. &6Destroyer Block&r: Motor, laser, Motor at the top, Motor, Pulverizer, Motor, three plating at the bottom. It needs &etwo cores&r."
 		""
 		"Place the Destroyer against the frame, a corner works too. Its arm mines the layer &ebelow&r the frame. The &6Placer Block&r and &6Fertilizer Block&r work on the same frame too."
 		""
@@ -21627,7 +21623,7 @@
 		""
 		"Everything made of Soulstained Steel hits the soul as well: tools, weapons, the better scythe."
 		""
-		"&eKronwerke:&r Here Ender IO's &6Soul Binder&r needs &e4 Soulstained Steel&r instead of Soularium. Ender IO's soul side comes from Malum."
+		"&eKronwerke:&r Here Ender IO's &6Soul Binder&r needs &e4 Soulstained Steel&r instead of Soularium. Chassis and Z-Logic Controller still need Soularium."
 	]
 	quest.5EFF84C54AFE6D05.quest_subtitle: "A metal in two worlds."
 	quest.5EFF84C54AFE6D05.title: "&5&lForge Soulstained Steel"
@@ -21768,7 +21764,7 @@
 		""
 		"Recipe in EMI. You set the work area in blocks in the window. Without an inventory above it stands still. In stage 1 the Hopper Botany Pot or the Create harvester does that."
 		""
-		"The other three pylons (Infusion, Interdiction, Expulsion) have nothing to do with items."
+		"The other four pylons (Infusion, Interdiction, Expulsion, Protection) have nothing to do with items."
 	]
 	quest.5FB9B5C993CE8435.quest_subtitle: "Pylons, Harvester Pylon: harvests every three seconds into the chest above it. Stage 2."
 	quest.5FB9B5C993CE8435.title: "Remember the Harvester Pylon"
@@ -22011,7 +22007,7 @@
 	quest.60934AC64E99612A.title: "&9Pump with the Router"
 	quest.60A151267BD2B876.quest_desc: [
 		"{image:kronwerke:textures/quests/shots/mekanism_ores_full.png width:224 height:126 align:center}"
-		"Put &e8 Speed Upgrades&r and &e8 Energy Upgrades&r into one machine. For the set you need 16 glass, 16 Infused Alloys, 8 Osmium Dust and 8 Gold Dust."
+		"Put &e8 Speed Upgrades&r and &e8 Energy Upgrades&r into one machine. For the set you need 32 glass, 32 Infused Alloys, 8 Osmium Dust and 8 Gold Dust."
 		""
 		"The machine now works ten times as fast as before and uses just as much power per item as without upgrades. An Enrichment Chamber kitted out like this now draws &d200 FE/t&r instead of 20, the smelter too."
 		""
@@ -22276,9 +22272,9 @@
 		""
 		"In its area no other player can place or break blocks or open chests. Every &6Range Upgrade&r enlarges the area by one block, up to 16 in every direction. You add friends in the &eShared Users&r tab."
 		""
-		"&eSetup:&r In the network grid there must be a &6Diagnostic Subroutine&r, a &6Network IO Port&r and a &6Network Registry&r, connected by &6Network Nodes&r (chest with transistors and purple dye, 16 pieces). The components are plastic or transistors around a chest with dye."
+		"&eSetup:&r In the network grid there must be a &6Diagnostic Subroutine&r, a &6Network IO Port&r and a &6Network Registry&r, connected by &6Network Nodes&r (chest with transistors and purple dye, 16 pieces). The components are plastic, transistors or (for the IO Port) capacitors around a chest with dye."
 		""
-		"&cHacking is allowed on this server:&r With a Pneumatic Helmet and Security Upgrades (stage 4) someone can crack your station. Bigger stacks of Network Nodes and Entity Tracker Upgrades make that harder, Security Upgrades in the station demand more upgrades from the hacker. Hide it well."
+		"&aHacking is turned off on this server:&r nobody can crack your station. It protects the area the way you set it up."
 	]
 	quest.61BDE2340B6537C7.quest_subtitle: "Nobody but you touches your chests."
 	quest.61BDE2340B6537C7.title: "&cBuild a Security Station"
@@ -22320,7 +22316,7 @@
 		""
 		"The rite weaves a &eRite Locus&r, a wandering spark. Furnaces, blast furnaces and smokers it passes over smelt faster. The fuel lasts just as far as usual."
 		""
-		"You get Soulwood with the &eUnchained Rite&r, it transforms Runewood. You make the totem base from Soulwood in spirit infusion."
+		"You get your first Soulwood with the &eUndirected Rite&r: five Arcane runes on a Runewood totem; it transforms Runewood nearby. The Unchained Rite already needs Soulwood itself. You make the totem base from Soulwood in spirit infusion."
 		""
 		"&eKronwerke:&r Put a Quickening totem in your furnace hall. It fits the stage goal \"The Furnace Never Sleeps\"."
 	]
@@ -22976,7 +22972,7 @@
 	quest.64A9D9DF0207F477.quest_desc: [
 		"&6PneumaticCraft&r, &6Logistics Module&r on a pressure tube: fetches and delivers between inventories with &6Logistics Frames&r (provider, requester, storage) and needs air pressure from the tube for it. Filter in every frame. &eStage 2.&r"
 		""
-		"&eStage 3:&r The &6Logistics Drone&r does the same flying in an area of &e31 x 31 x 31&r blocks, the programmable &6Drone&r everything you teach it. &eRecipe on Kronwerke:&r Every drone needs a Precision Mechanism from Create."
+		"&eStage 3:&r The &6Logistics Drone&r does the same flying in an area of &e31 x 31 x 31&r blocks, the programmable &6Drone&r everything you teach it. &eRecipe on Kronwerke:&r Only the programmable Drone needs a Precision Mechanism from Create."
 	]
 	quest.64A9D9DF0207F477.quest_subtitle: "PneumaticCraft, Logistics Module: moves with compressed air, drones fly."
 	quest.64A9D9DF0207F477.title: "Read: Logistics Modules and Drones"
@@ -23004,7 +23000,7 @@
 		""
 		"It has &e8 slots&r and &e+100 mana&r, more than any book you can build in stage 1. In return you take 15 percent more damage from spells."
 		""
-		"&eTip:&r A Rotten Spell Book, a honey bottle, a spore blossom, an amethyst cluster, a glow ink sac and two Arcane Cloth give the &6Druidic Tome&r with 10 slots and 10 percent more nature spell power."
+		"&eTip:&r A Rotten Spell Book, a honey bottle, a spore blossom, an amethyst cluster, a glow ink sac and two Arcane Cloth give, from stage 2, the &6Druidic Tome&r with 10 slots and 10 percent more nature spell power."
 	]
 	quest.64CF6ED701DD6F34.quest_subtitle: "Old, moldy, and better than anything from stage 1."
 	quest.64CF6ED701DD6F34.title: "&2Find a Rotten Spell Book"
@@ -23195,7 +23191,7 @@
 		""
 		"You put upgrades into the four slots on the right of the window of the Importer, Exporter and so on. Speed: faster, 4 FE/t more. Stack: a whole stack per operation instead of one item, 16 FE/t more."
 		""
-		"There is also the &6Regulator Upgrade&r (keeps a fixed amount in the target) and, for the Constructor and Destructor, &6Fortune&r and &6Silk Touch&r from the matching enchanted book."
+		"There is also the &6Regulator Upgrade&r (keeps a fixed amount in the target) and, for the Destructor, &6Fortune&r and &6Silk Touch&r from the matching enchanted book."
 	]
 	quest.65A1592CA61E4C74.quest_subtitle: "Sugar makes things fast."
 	quest.65A1592CA61E4C74.title: "&eBuild Upgrades"
@@ -23371,7 +23367,7 @@
 	quest.669763008F19B86D.quest_desc: [
 		"&eBlueprint:&r one &6Blueprint Paper&r and &6two string&r, shapeless. Then blueprint plus &eone&r material: the binding."
 		""
-		"String gives Flexible I, Flax String Flexible III and +5 percent speed, Sinew Fiber Flexible IV. Vines only give looks."
+		"String gives Flexible I, Flax String Flexible III and +5 percent speed, Sinew Fiber Flexible IV. Vines give +3 percent repair efficiency."
 	]
 	quest.669763008F19B86D.quest_subtitle: "Flexible: the tool often takes no damage."
 	quest.669763008F19B86D.title: "&6Build a binding"
@@ -23904,7 +23900,7 @@
 		""
 		"&eHow it works:&r A processing pattern for Printed Silicon at an AE2 inscriber (Autocrafter in front, Importer behind). A second one for Infused Alloy at a Metallurgic Infuser, a third for Basic Control Circuits from vacuum tubes. A crafting pattern puts it all together. An Exporter with an Autocrafting Upgrade on a chest keeps the stock until you carry it to the obelisk."
 		""
-		"&eKronwerke:&r &e\"The Furnace Never Sleeps\"&r wants &e250 Advanced Control Circuits&r and &e4,000 steel ingots&r. With RS the factory is cheaper than with AE2, because it needs no accumulation processors and no CPU. Hand-in is by hand at the obelisk."
+		"&eKronwerke:&r &e\"The Furnace Never Sleeps\"&r wants &e250 Advanced Control Circuits&r and &e4,000 steel ingots&r (the amounts follow the number of players). With RS the factory is simpler than with AE2, because it needs no crafting CPU. Hand-in is by hand at the obelisk."
 		""
 		"Plus two 16k disks so storage does not fill up first."
 	]
@@ -24441,7 +24437,7 @@
 	quest.6B7068DB0C72C3E9.quest_desc: [
 		"Make &e16 Advanced Control Circuits&r. The bottleneck is Printed Silicon: trade with an AE2 player or build the CNC Stamper further down."
 		""
-		"&eKronwerke:&r In stage 3 the obelisk wants &e250 Advanced Control Circuits&r, each counts eight points. A stock pays off twice."
+		"&eKronwerke:&r In stage 3 the obelisk wants &e250 Advanced Control Circuits&r (the amount follows the number of players), each counts eight points. A stock pays off twice."
 	]
 	quest.6B7068DB0C72C3E9.quest_subtitle: "Every new machine wants two."
 	quest.6B7068DB0C72C3E9.title: "&aStock up on 16 circuits"
@@ -24699,7 +24695,7 @@
 		""
 		"Whatever is in the filter is destroyed on arrival. Good for dirt, gravel, diorite."
 		""
-		"&cCareful:&r Cobblestone does not belong in it. For stage 1 the obelisk needs &e20,000 cobblestone&r from the whole server. Hand it in at the obelisk."
+		"&cCareful:&r Cobblestone does not belong in it. For stage 1 the obelisk needs &e20,000 cobblestone&r from the whole server (the amount follows the number of players). Hand it in at the obelisk."
 	]
 	quest.6CED9FD808309030.quest_subtitle: "Deletes what you don't want."
 	quest.6CED9FD808309030.title: "Build a Void Upgrade"
@@ -24872,7 +24868,7 @@
 	quest.6DC3383E64C3E46E.quest_subtitle: "How deep are you right now?"
 	quest.6DC3383E64C3E46E.title: "&6Build an Altimeter"
 	quest.6DD1B12B8DC43E84.quest_desc: [
-		"&6Energy Cell (Basic):&r iron in the corners, Basic capacitors on the sides, a casing in the middle. Higher cells: the tier's material, two new capacitors, a casing and the cell below."
+		"&6Energy Cell (Basic):&r iron in the corners, Basic capacitors on the sides, a casing in the middle. Higher cells: four of the tier's material, two new capacitors, a casing and two cells of the tier below."
 		""
 		"&eStorage:&r Starter 1, Basic 4, Hardened 10, Blazing 40, Niotic 100, Spirited 400 million FE."
 	]
@@ -25024,7 +25020,7 @@
 	quest.6E25C12926B19AE5.quest_subtitle: "Power from the air."
 	quest.6E25C12926B19AE5.title: "&b&lPut a Windmill on the dynamo"
 	quest.6E3194D31188967A.quest_desc: [
-		"&6Arcane Cloth&r from Arcane Essence and wool, then hat, robe, leggings and boots in the leather armor pattern. Chapter &5Iron's Spells 'n Spellbooks&r."
+		"&6Arcane Cloth&r from Arcane Essence and wool, then robe, leggings and boots in the leather armor pattern. The &6Wizard Hat&r is a pointed hat: two cloth on top of each other, a row of three below. The helmet pattern gives the hood, which does not count for this quest. Chapter &5Iron's Spells 'n Spellbooks&r."
 		""
 		"Every piece +125 mana and +5 percent spell power, protection like diamond (3, 8, 6, 3). With a rune it becomes school armor with +10 percent for its school."
 	]
@@ -25040,7 +25036,7 @@
 	quest.6E319C40AA564E5E.quest_subtitle: "Draconium in storage."
 	quest.6E319C40AA564E5E.title: "&b&lBuild a 256k Cell"
 	quest.6E33B0F26592EC33.quest_desc: [
-		"&eBlueprint:&r four Blueprint Paper and two metal ingots. The ring blueprint and &etwo&r metal ingots make a &6ring&r."
+		"&eBlueprint:&r four Blueprint Paper and two metal ingots. The ring blueprint and &etwo&r metal ingots make a Ring Shank. The finished &6ring&r also needs the Jeweler's Tools."
 		""
 		"It goes into a &ering slot&r (Curios) and carries the traits of its metal. What a metal brings is in the &6Material Book&r. Bracelet and necklace follow the same principle."
 	]
@@ -25513,7 +25509,7 @@
 		""
 		"In the Mercury Catalyst a shard gives &e800&r flux, a crystal &e3,200&r, both at &e20&r flux per tick. The same energy, but a quarter of the space in chests and hoppers."
 		""
-		"For the math: one reformation costs &e100 to 200&r flux. So one crystal lasts for 16 to 32 conversions."
+		"For the math: one reformation costs &e50 to 200&r flux, most of them 50. So one crystal lasts for 16 to 64 conversions."
 	]
 	quest.70C2E8DBDC3922EF.quest_subtitle: "Flux in reserve."
 	quest.70C2E8DBDC3922EF.title: "&bPress Mercury Crystals"
@@ -25652,7 +25648,7 @@
 	quest.7180B9E2F0DEBA48.quest_desc: [
 		"&6Storage I/O:&r stone in the corners, planks top and bottom, a repeater on the left, a gold ingot on the right, a barrel of the wood tier in the middle. &6Input&r and &6Output&r are the same with repeater and gold at the top and bottom."
 		""
-		"Placed into the network at the Storage Controller, the I/O takes items from pipes and hands them out. Input only in, Output only out; both are easy on the server."
+		"Placed into the network at the Storage Controller, the I/O takes items from pipes and hands them out. Input only in, Output only out. The Input above all is easy on the server."
 	]
 	quest.7180B9E2F0DEBA48.quest_subtitle: "Storage Input, Output and I/O."
 	quest.7180B9E2F0DEBA48.title: "Hook pipes up to the network"
@@ -25682,7 +25678,7 @@
 	quest.71B1B80464BB336C.quest_desc: [
 		"&eRecipe:&r Processor Binding, a &6Silicon&r, a &6redstone&r and a metal, shapeless, make a raw processor. &6Iron ingot&r for the Basic Processor, &6gold ingot&r for the Improved, &6diamond&r for the Advanced. Then bake the raw processor in a furnace."
 		""
-		"Unlike AE2 there is no inscriber and no presses. A furnace is enough, and the blast furnace is twice as fast."
+		"Unlike AE2 there is no inscriber and no presses. A furnace is enough. The blast furnace takes neither quartz nor raw processors."
 		""
 		"&eWhat for:&r Basic Processors for cores and 4k Storage Parts. Improved for the Grid, Importer, Exporter and 16k parts. Advanced for the Autocrafter and everything wireless, the Controller and Disk Drive take an Advanced Control Circuit on Kronwerke. A dozen of each kind is a good stock."
 	]
@@ -25822,7 +25818,7 @@
 	quest.724DE8D2EAF33DAA.quest_desc: [
 		"Stage 4 brings Powah Nitro, Mekanism Elite and Ultimate with fusion, NuclearCraft, Draconic Evolution and the large generators of Mekanism More Machine."
 		""
-		"&e1. Nitro reactor from Powah:&r &d500,000 FE/t&r from Uraninite. Nitro crystals need a nether star and 20 million FE per crystal in the orb, after that it runs like the small one."
+		"&e1. Nitro reactor from Powah:&r &d500,000 FE/t&r from Uraninite. Nitro crystals need a nether star and 20 million FE in the orb, which gives 16 crystals, after that it runs like the small one."
 		"&e2. RTGs from NuclearCraft:&r no fuel, no cooling, never off. Uranium 112, plutonium 1,792, californium &d4,096 FE/t&r, block by block."
 		"&e3. Fusion reactor from Mekanism:&r D-T fuel from water, ignited with the laser, then runs for days. The power plant for the antimatter in stage 5."
 		""
@@ -25866,7 +25862,7 @@
 	quest.726485A25C208EA9.quest_subtitle: "Turn a mana burst into a tool."
 	quest.726485A25C208EA9.title: "&6Grind a Mana Lens"
 	quest.726B86F8F6415630.quest_desc: [
-		"The &6Gargantuan Flux Storage&r is the largest Flux cell, built from the Herculean storage and Flux Blocks. It sits directly in the network, without plug and point."
+		"The &6Gargantuan Flux Storage&r is the largest Flux cell, built from six Herculean storages and two glass panes. It sits directly in the network, without plug and point."
 		""
 		"&eFlux Networks, Gargantuan:&r &d128 million FE&r, &d720,000 FE/t&r in and out, wirelessly over the network. Too small for the Draconic Energy Core, just right as a buffer between reactor and factory. Unlocked from stage 5."
 	]
@@ -25890,7 +25886,7 @@
 	quest.727B589420F29226.quest_subtitle: "Harvest souls without a ritual."
 	quest.727B589420F29226.title: "&5Forge the Reaper Scythe"
 	quest.727B7DEB1A173563.quest_desc: [
-		"&eHow it works:&r Mount a wild &6horse&r until it shows hearts, then put a &6saddle&r on it. Saddles do not exist at the crafting table, they lie in chests of dungeons, temples and villages."
+		"&eHow it works:&r Mount a wild &6horse&r until it shows hearts, then put a &6saddle&r on it. Saddles lie in chests of dungeons, temples and villages. The Aether also adds a crafting recipe, see EMI."
 		""
 		"&eWhy:&r A good horse is faster than you on foot, jumps over fences and costs neither levels nor power. &6Horse Feed&r from Farmer's Delight helps it, see the &6Food and Farming&r chapter."
 	]
@@ -25967,7 +25963,7 @@
 	quest.72ABD48D90A74784.quest_desc: [
 		"Like the glass rod, with an &6amethyst shard&r in the middle and a &6gold nugget&r at the top right."
 		""
-		"Finds gold too. The diamond tier needs quartz and diamond, the best one, the blaze rod, netherite scrap. Rods built with Sulfur are fixed to one ore group."
+		"Finds gold too. The diamond tier needs quartz and diamond, the best one a blaze rod and &6Ancient Debris&r (the ore, not the scrap). Rods built with Sulfur are fixed to one ore group."
 	]
 	quest.72ABD48D90A74784.quest_subtitle: "For rarer ores."
 	quest.72ABD48D90A74784.title: "&7Build an Amethyst Divination Rod"
@@ -26505,7 +26501,7 @@
 	quest.754715686E891103.quest_subtitle: "The heart of teleporter and miner."
 	quest.754715686E891103.title: "&dBuild a Teleportation Core"
 	quest.754E7FB09FAA4529.quest_desc: [
-		"The &6Arcane Anvil&r (source gem blocks, diamond, anvil) takes armor plus an &6Upgrade Orb&r: up to 3 upgrades for mana, cooldown, protection or a school. Orbs need mithril and Cinder Essence from the Nether."
+		"The &6Arcane Anvil&r (source gem blocks, diamond, anvil) takes armor plus an &6Upgrade Orb&r: up to 3 upgrades for mana, cooldown, protection or a school. Orbs need mithril (Overworld, Y minus 63 to minus 38) and Cinder Essence from the Nether."
 		""
 		"The &cPyromancer&r armor needs the Fire Rune from blaze rods. Epic Ink with diamond and netherite books comes in stage 3, Legendary and Dragonskin in stage 4. Chapter &5Iron's Spells 'n Spellbooks&r."
 	]
@@ -26655,7 +26651,7 @@
 		""
 		"&6Blood Vial&r for Blood: put a cauldron on a campfire and put an animal inside, it gets boiled into blood. &6Bottle o' Lightning&r for Lightning: right click a &echarged creeper&r with an empty glass bottle."
 		""
-		"&cFire&r needs a &6blaze rod&r from the Nether and comes in stage 2. You can still read fire scrolls from chests. &5Eldritch&r needs echo shards and an assembled manuscript, all its spells are legendary: stage 4."
+		"&cFire&r needs a &6blaze rod&r. It is not locked: with a rod from the Pyromancer tower's chests fire works in stage 1 already; in bulk they only come from the Nether. &5Eldritch&r needs echo shards and an assembled manuscript, all its spells are legendary: stage 4."
 	]
 	quest.75F863DBAD6CF428.quest_subtitle: "One item per school."
 	quest.75F863DBAD6CF428.title: "&aCollect the Foci"
@@ -26692,7 +26688,7 @@
 	quest.7621EE6A605A6664.title: "&6Build a tower clock"
 	quest.7626B4C894018396.quest_desc: [
 		"{image:kronwerke:textures/quests/shots/mekanism_elite_qio_dashboard.png width:224 height:126 align:center}"
-		"Lead in the corners, ender pearls on the sides, a glass pane at the top, a Teleportation Core at the bottom."
+		"Lead in the corners, ender pearls on top, left and right, a glass pane in the middle, a Teleportation Core at the bottom."
 		""
 		"It shows everything in the network, with a search box and crafting windows. Give it the same frequency as the Drive Array."
 	]
@@ -27007,7 +27003,7 @@
 	quest.7748B438A49E28C1.quest_subtitle: "A mob farm that never needs a refill."
 	quest.7748B438A49E28C1.title: "&5&lCook the First Spirit"
 	quest.7748E47A81152158.quest_desc: [
-		"&6Space Chamber:&r a Machine Frame, glass on the sides, blue dye in the corners. With two ender pearls and two redstone torches one of them becomes the &6Space Chamber Controller&r. &6Space Chamber Card:&r bricks at the top and bottom, redstone, iron, redstone in the middle."
+		"&6Space Chamber:&r a Machine Frame, glass on the sides, blue dye in the corners. With two ender pearls and two redstone torches one of them becomes the &6Space Chamber Controller&r. &6Space Chamber Card:&r bricks (the block) at the top and bottom, redstone, iron, redstone in the middle."
 		""
 		"Place the eight corners of a cuboid: seven space chambers and one controller. Sneak right click the controller with the card to remember the chamber, a right click into the air shows what is inside. Up to &e128&r blocks per side."
 		""
@@ -27135,7 +27131,7 @@
 	quest.77C937122806F8F9.quest_desc: [
 		"Five &6Electrum&r at the top and sides, a &6Magnetic Coil&r in the middle, at the bottom plating, &6Basic Generator&r, plating make the &6Lava Generator&r."
 		""
-		"It burns &6lava&r into &e64 RF/t&r, twice as much as the Basic Generator, buffer 100,000 RF. It needs &etwo cores&r. &6Sheol Fire&r from the refinery burns much longer than lava."
+		"It burns &6lava&r into &e64 RF/t&r, twice as much as the Basic Generator, buffer 100,000 RF. It needs &eone core&r. &6Sheol Fire&r from the refinery burns much longer than lava."
 		""
 		"With a Pump and a Fluid Pipe it runs without you."
 	]
@@ -27198,7 +27194,7 @@
 	quest.782143834F309275.quest_desc: [
 		"&6Enriched Iron&r with &e10 mB carbon&r gives &6steel dust&r. In the furnace it becomes a &6steel ingot&r, twice as fast in the Energized Smelter."
 		""
-		"Steel goes into every casing, cable and pipe. &eKronwerke:&r The stage 3 goal wants &e4,000 steel ingots&r. Steel from the Immersive Engineering blast furnace counts just the same."
+		"Steel goes into every casing, cable and pipe. &eKronwerke:&r The stage 3 goal wants &e4,000 steel ingots&r at 30 active players. Steel from the Immersive Engineering blast furnace counts just the same."
 		""
 		"{image:mekanism:textures/item/ingot_steel.png width:32 height:32 align:center}"
 	]
@@ -27297,7 +27293,7 @@
 	quest.789E312149280497.quest_subtitle: "Modular engines, stacked."
 	quest.789E312149280497.title: "&6&lThe Diesel Power Plant"
 	quest.78C129DB3D7AD17D.quest_desc: [
-		"&6Copper to Iron Tier Upgrade:&r &6four iron sheets&r from the Create press around a &6lever&r. Or directly in the grid: a barrel in the middle, eight iron ingots around it."
+		"&6Copper to Iron Tier Upgrade:&r &6four iron sheets&r from the Create press around a &6lever&r. Or directly in the grid: a copper barrel in the middle and four iron ingots around it. The iron sheets belong to the upgrade from wood straight to iron."
 		""
 		"&e54 slots&r, &etwo upgrade slots&r. Iron is the best in stage 1. Gold (81 slots, 3 upgrades) comes in stage 2, diamond (108, 4) in stage 3, netherite (132, 5) in stage 4."
 	]
@@ -27670,7 +27666,7 @@
 	quest.7A40E0852DB36EE6.quest_desc: [
 		"&e2 Powdered Gold and 1 Powdered Diamond&r on a cloth."
 		""
-		"{image:mahoutsukai:textures/item/scroll_mystic_staff.png width:32 height:32 align:center}"
+		"{image:mahoutsukai:textures/item/spell_scroll.png width:32 height:32 align:center}"
 		""
 		"The scroll is bound to you. So for each staff one mage gives their own mana."
 	]
@@ -27745,9 +27741,9 @@
 	quest.7A90A5212D250C6C.quest_desc: [
 		"The &6Watering Can&r in the middle, &e4 Inferium Ingots&r left, right, top and bottom, &e4 Mystical Fertilizer&r in the corners: the &6Inferium Watering Can&r is done."
 		""
-		"It waters &e5 by 5&r tiles with a &e30 percent&r chance per tick instead of 25. And it can water &eautomatically&r: shift and right click into the air toggles it, then it waters as long as you hold it and look at the field."
+		"The Inferium can waters &e3 by 3&r tiles with a &e25 percent&r chance per tick, like the plain one. Only the Prudentium can manages 5 by 5 at 30 percent. And it can water &eautomatically&r: shift and right click into the air toggles it, then it waters as long as you hold it and look at the field."
 		""
-		"&eTip:&r Stand in the middle of a 5 by 5 field with the can and let it run while you are in chat. Together with the accelerators below, the field is ripe in minutes."
+		"&eTip:&r Stand in the middle of your field with the can and let it run while you are in chat. Together with the accelerators below, the field is ripe in minutes."
 	]
 	quest.7A90A5212D250C6C.quest_subtitle: "Five by five, and it waters by itself."
 	quest.7A90A5212D250C6C.title: "&bUpgrade the Watering Can"
@@ -27801,7 +27797,7 @@
 	quest.7AF03DC556D8D94D.quest_subtitle: "A name that burns."
 	quest.7AF03DC556D8D94D.title: "&c&lBind an Afrit name"
 	quest.7AF2762A098D411D.quest_desc: [
-		"Three &6polished deepslate&r on top, a &6crying obsidian&r in the middle left, three more at the bottom (4 in total). You find crying obsidian at ruined portals in the Overworld."
+		"Three &6polished deepslate&r on top, a &6crying obsidian&r in the centre, three more at the bottom (4 in total). You find crying obsidian at ruined portals in the Overworld."
 		""
 		"&eHow it works:&r Right click, then put in &6ink&r, &6paper&r and a &6focus&r. The focus decides the school, the ink the rarity. On the right appear all spells of the school that this ink allows. Click one, confirm, and the scroll has the lowest level of that rarity."
 		""
@@ -27818,7 +27814,7 @@
 	quest.7AF598441903D9C7.title: "&fCollect Cold Aerclouds"
 	quest.7AF997BBC949C119.quest_desc: [
 		"{image:kronwerke:textures/quests/shots/theurgy_fermentation.png width:224 height:126 align:center}"
-		"&6Fermentation Vat&r: copper, copper block, barrel, Sulfur. Click it with Sulfur, &6Sal Ammoniac Bucket&r and &6sugar&r or a crop, close it by sneaking with an empty hand."
+		"&6Fermentation Vat&r: copper, copper block, barrel, Sulfur. Click it with Sulfur, a &6water bucket&r and &6sugar&r or a crop, close it by sneaking with an empty hand."
 		""
 		"When it opens again, it is done. Quartz Sulfur becomes &6Common Gems Niter&r, which stands for a whole group."
 	]
@@ -27996,7 +27992,7 @@
 		"{image:kronwerke:textures/quests/shots/oritech_reactor.png width:224 height:126 align:center}"
 		"&6Reactor Walls&r (steel, plating, nickel) as a cuboid, the &6Controller&r in one wall, right click assembles it. Inside &6rods&r (plastic over two Energite), above each rod a &6Fuel Port&r in the roof, outside an &6Energy Port&r."
 		""
-		"Rods make heat. &6Heat Vents&r draw it off, &6Heat Absorbers&r below a &6Coolant Port&r with ice cool everything around them. All inner layers have to look the same."
+		"Rods make heat. &6Heat Vents&r draw it off, &6Heat Absorbers&r below a &6Reactor Coolant Absorber Port&r with ice cool everything around them. All inner layers have to look the same."
 		""
 		"&cWarning:&r Above &e2,000 heat&r it melts down after 30 seconds, the safe mode is off on the server. Start with one rod and four vents."
 		""
@@ -28147,7 +28143,7 @@
 	quest.7CE5BA05B419B715.quest_desc: [
 		"&6Distiller&r: a copper block with three iron ingots over three stone, on the brazier. Click it with almost anything."
 		""
-		"One Raw Iron gives five shards, ten cobblestone or three crops give one. You need one shard per ingot. All devices also take input by hopper."
+		"One iron ore gives five shards, one Raw Iron gives one, ten cobblestone or three crops give one as well. You need one shard per ingot. All devices also take input by hopper."
 	]
 	quest.7CE5BA05B419B715.quest_subtitle: "Energy, crystallized."
 	quest.7CE5BA05B419B715.title: "&6Distill Mercury Shards"
@@ -28175,7 +28171,7 @@
 	quest.7CEEFBE845E92B4B.quest_subtitle: "Create, 1 RPM per eight sails, 512 SU per RPM."
 	quest.7CEEFBE845E92B4B.title: "&6Put Up a Windmill"
 	quest.7D06DF94043D09D2.quest_desc: [
-		"Backpack in the middle, copper ingots or iron ingots around it, at the crafting table. The contents stay inside."
+		"Backpack in the middle, copper ingots or Create's iron sheets around it, at the crafting table. The contents stay inside."
 		""
 		"Copper: 45 slots, 1 upgrade. Iron: 54 slots, 2 upgrades. Stage 3 brings gold (81, 3) and diamond (108, 5) with Inception and Everlasting Upgrade, stage 4 netherite (120, 7). Chapter &6Storage&r."
 	]
@@ -28331,7 +28327,7 @@
 	quest.7DD047C12EEA827D.quest_subtitle: "Colourful forests that everything is built from."
 	quest.7DD047C12EEA827D.title: "&6Cut down archwood"
 	quest.7DD5A9BCD80E24CF.quest_desc: [
-		"&5Pentacle:&r Tibira's Attraction: Abras' circle plus &e8 black&r signs and &e4 wither skeleton skulls&r."
+		"&5Pentacle:&r Tibira's Attraction: Abras' circle with the &e8 grey&r signs replaced by &e8 black&r ones, plus &e4 wither skeleton skulls&r."
 		"&6Bowls:&r &6Aquisitor&r, &6prismarine crystals&r, &6prismarine shard&r, &6ghast tear&r. Marid book (&e4 green dye&r)."
 		"&cStart:&r when grey particles appear, use a &6trident&r on the golden bowl. 210 seconds."
 		""
@@ -28372,7 +28368,7 @@
 	quest.7DF5DF1A7C262E36.quest_subtitle: "The engine of the pipe network."
 	quest.7DF5DF1A7C262E36.title: "&6Pump water"
 	quest.7DFD41C194A0DF40.quest_desc: [
-		"Three &6steel ingots&r and two sticks, like any pickaxe. Mekanism Tools has whole sets from osmium, bronze, steel, glowstone and obsidian."
+		"Three &6steel ingots&r and two iron ingots as the handle: steel tools have no stick. Mekanism Tools has whole sets from osmium, bronze, steel, glowstone and obsidian."
 		""
 		"The &6paxel&r is handy: pickaxe, axe and shovel in one, from the three tools and two ingots."
 	]
@@ -28441,7 +28437,7 @@
 	quest.7E3468821B08280E.quest_subtitle: "One diamond, three hundred thousand FE."
 	quest.7E3468821B08280E.title: "&bCharge Niotic Crystals"
 	quest.7E3D25709EF50BAE.quest_desc: [
-		"Steel casing, circuits, iron and planks. A log becomes &esix planks&r instead of four, plus some &6sawdust&r now and then."
+		"Steel casing, circuits, iron and Infused Alloy. A log becomes &esix planks&r instead of four, plus some &6sawdust&r now and then."
 		""
 		"It breaks stairs, doors and chests back down into wood. Sawdust becomes the Cardboard Box, with which you move blocks with their contents."
 	]
@@ -28549,14 +28545,14 @@
 	quest.7EB98F0503721016.title: "Seed: Deepslate"
 	quest.7EC2D916843CEF39.quest_desc: [
 		"{image:kronwerke:textures/quests/shots/list_dimensions_d_mining.png width:224 height:126 align:center}"
-		"&eThe portal:&r a frame of &6mine frames&r like a Nether portal, 4 wide and 5 high, without corners &e10 blocks&r. Right click the inside with a &6source stone&r, and it opens."
+		"&eThe portal:&r a frame of &6mine frames&r like a Nether portal, 4 wide and 5 high, without corners &e10 blocks&r. Right click the inside with a &6Source Gem&r, and it opens."
 		""
 		"&eOn the other side:&r a world of its own just for digging, new every three days. Everything else in the &aExploration&r chapter."
 	]
-	quest.7EC2D916843CEF39.quest_subtitle: "Mine frames, a source stone, stage 1."
+	quest.7EC2D916843CEF39.quest_subtitle: "Mine frames, a Source Gem, stage 1."
 	quest.7EC2D916843CEF39.title: "&6The Farm World"
 	quest.7ECA5B60B8219BC7.quest_desc: [
-		"&6Attuner:&r lapis in the corners, gold on the sides, middle empty. Shapeless with a &6diamond&r it becomes an &dAttuned Diamond&r."
+		"&6Attuner:&r lapis in the corners, on Kronwerke &6Terrasteel ingots&r on the sides, middle empty. Shapeless with a &6diamond&r it makes an &dAttuned Diamond&r and is kept: one attuner is enough for every gem."
 		""
 		"Holding it and right clicking fills it with your mana. Spells draw from all gems in your inventory. Fill it before you sleep."
 	]
@@ -28949,6 +28945,7 @@
 	task.1BB0B5C61474DBE5.title: "Lime (Pomelo + Key Lime, 10 %)"
 	task.1BB749685C6EA666.title: "Cast a holy spell"
 	task.1BB9C55F8FD928BB.title: "Osage Orange (Kapok + Old Fustic, 10 %)"
+	task.1BBFB68C89592748.title: "8 drawers 2x2 from a wood of your choice"
 	task.1BCBBEA92B27AC7A.title: "Noted"
 	task.1C1D2DAD0E0CAE2A.title: "Silver Lime (Oak + Birch, 55 %)"
 	task.1C343213D26DA24C.title: "Rite of Healing started"
@@ -29065,6 +29062,7 @@
 	task.255DD7BD1168FECE.title: "Understood, comes in stage 3"
 	task.25614351E4987F93.title: "Read"
 	task.256555174B85FCB8.title: "Modify a spawner with a rune"
+	task.2566BA9085BB40A3.title: "4 drawers 1x1 from a wood of your choice"
 	task.25788EA2F662CA43.title: "Noted"
 	task.2578930943D29FAF.title: "Phoenix Down in the inventory"
 	task.25A69390659C65F1.title: "Beaver summoned"
@@ -29278,6 +29276,7 @@
 	task.3ACC280E6890C2D7.title: "Got it"
 	task.3AFA0E88973ADB7C.title: "Read"
 	task.3B0B0CDAFDD5A7F9.title: "Formed a Lightning Rod"
+	task.3B1F861F28F6EDA5.title: "2 drawers 1x2 from a wood of your choice"
 	task.3B25200E75D3456B.title: "Cast a fire spell"
 	task.3B3AF9B1BE544D34.title: "Arrived at the obelisk"
 	task.3B47BE6E53786356.title: "I'll be there"
@@ -29358,6 +29357,7 @@
 	task.488520903D43A1A8.title: "Understood, comes in stage 4"
 	task.4886E1B59CAADD88.title: "Found a When Dungeons Arise dungeon"
 	task.4888F3A12E886BF3.title: "I have claimed and force loaded the chunk of my quarry"
+	task.4898DB360E92ACD3.title: "4 drawers 2x2 from a wood of your choice"
 	task.48B8AC37AB1D4248.title: "Read"
 	task.48FC04832D0B9F5C.title: "Let's go"
 	task.4906E4CE1A9A804C.title: "Cashew (Teak + Mangrove, 10 %)"
@@ -29459,7 +29459,7 @@
 	task.56E7F4688550A6FE.title: "Got it"
 	task.56F8715FF4461D38.title: "Noted"
 	task.571A21CFFED9210E.title: "Read"
-	task.572FEEE5821F243D.title: "Travelled through the Nether"
+	task.572FEEE5821F243D.title: "Read"
 	task.576D1670785D0E6B.title: "Entered the Depths"
 	task.576F81D87BE6BB85.title: "Elderberry (Aspen + Alder, 10 %)"
 	task.5776A277414C30B7.title: "Slimy Delight (Rippling Willow + Soul Tree, 5 %)"

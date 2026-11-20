@@ -146,7 +146,7 @@ quests = [
           description=[
               "Die Zweifach-Straße nimmt jedes Metall von Mekanism. Wirf &6Rohes Zinn&r und &6Rohes Blei&r in die Eingangskiste, heraus kommen Barren, zwei pro Erzblock.",
               "",
-              "&eZinn&r brauchst du für Bronze, Seismischen Vibrator, Taucherflasche und Widerstandsheizer. &eBlei&r für Reaktorglas, QIO und den Spaltreaktor in Stufe 5. Beides liegt nicht im Weg, also sammle es jetzt mit.",
+              "&eZinn&r brauchst du für Bronze, Seismischen Vibrator und Widerstandsheizer. &eBlei&r für Reaktorglas, QIO und den Spaltreaktor in Stufe 5. Beides liegt nicht im Weg, also sammle es jetzt mit.",
           ],
           tasks=[task_item("mekanism:ingot_tin", 16), task_item("mekanism:ingot_lead", 16)],
           rewards=[reward_item("mekanism:raw_tin", 16), reward_item("mekanism:raw_lead", 16)],
@@ -318,7 +318,7 @@ quests = [
               "",
               "&eKronwerke:&r Für das Ziel von Stufe 3 (4 000 Stahlbarren) ist das die Eisenquelle. Stell die Stahlstraße direkt dahinter.",
               "",
-              "&eNächste Stufe:&r 4x braucht die Chemische Injektionskammer mit Elite-Schaltkreisen aus Stufe 4. Bis dahin ist 3x das Beste, was Mekanism kann.",
+              "&eNächste Stufe:&r 4x braucht die Chemische Injektionskammer mit Elitären Steuerschaltkreisen aus Stufe 4. Bis dahin ist 3x das Beste, was Mekanism kann.",
           ],
           tasks=[task_item("mekanism:clump_osmium", 32), task_item("mekanism:clump_tin", 16)],
           rewards=[reward_item("minecraft:raw_iron", 64), reward_table("s2_uncommon"), reward_xp(15)],
@@ -358,7 +358,7 @@ quests = [
     quest("injection", 5, 15.5, "&d&lBau eine Chemische Injektionskammer",
           subtitle="Vier Splitter aus einem Erz. Stufe 4.",
           description=[
-              "&eRezept:&r die &6Klärkammer&r in die Mitte, Goldbarren links und rechts, &6Elite-Steuerschaltkreise&r oben und unten, &6Verstärkte Legierung&r in die Ecken. Elite-Schaltkreise brauchen Draconiumstaub aus dem End, also &6Stufe 4&r.",
+              "&eRezept:&r die &6Klärkammer&r in die Mitte, Goldbarren links und rechts, &6Elitäre Steuerschaltkreise&r oben und unten, &6Verstärkte Legierung&r in die Ecken. Elitäre Steuerschaltkreise brauchen Draconiumstaub aus dem End, also &6Stufe 4&r.",
               "",
               "&eWas herauskommt:&r Ein Erzblock gibt &e4 Splitter&r, drei Rohe Erze &e8&r, ein Block aus Rohem Erz &e24&r. Sie frisst rund 1 mB Chlorwasserstoff pro Tick und etwa &d160 FE/t&r, doppelt so viel wie die Klärkammer.",
               "",
@@ -417,7 +417,7 @@ quests = [
     quest("dissolution", 5, 19.5, "&d&lBau eine Chemische Auflösungskammer",
           subtitle="Aus Erz wird Schlamm. Stufe 4.",
           description=[
-              "&eRezept:&r Stahlgehäuse in die Mitte, &6Ultimative Steuerschaltkreise&r links und rechts, Einfache Chemikalienbehälter oben und unten, &6Raffiniertes Obsidian&r in die Ecken. Ultimative Schaltkreise sind &6Stufe 4&r (ein Elite-Schaltkreis zwischen zwei Atomlegierungen).",
+              "&eRezept:&r Stahlgehäuse in die Mitte, &6Ultimative Steuerschaltkreise&r links und rechts, Einfache Chemikalienbehälter oben und unten, &6Raffiniertes Obsidian&r in die Ecken. Ultimative Steuerschaltkreise sind &6Stufe 4&r (ein Elitärer Steuerschaltkreis zwischen zwei Atomlegierungen).",
               "",
               "&eWas herauskommt:&r Ein Erzblock gibt &e1 000 mB Schmutzigen Schlamm&r, drei Rohe Erze &e2 000 mB&r, ein Block aus Rohem Erz &e6 000 mB&r. Dabei rund 1 mB Schwefelsäure pro Tick und etwa &d160 FE/t&r.",
               "",
@@ -430,7 +430,7 @@ quests = [
     quest("washer", 7.5, 19.5, "&bBau eine Chemische Waschanlage",
           subtitle="Schmutziger Schlamm wird sauber.",
           description=[
-              "&eRezept:&r Stahlgehäuse in die Mitte, Ultimative Schaltkreise links und rechts, oben ein &6Einfacher Flüssigkeitsbehälter&r, unten ein Einfacher Chemikalienbehälter, Raffiniertes Obsidian in die Ecken.",
+              "&eRezept:&r Stahlgehäuse in die Mitte, Ultimative Steuerschaltkreise links und rechts, oben ein &6Einfacher Flüssigkeitsbehälter&r, unten ein Einfacher Chemikalienbehälter, Raffiniertes Obsidian in die Ecken.",
               "",
               "Sie wäscht &e1 mB Schmutzigen Schlamm&r mit &e5 mB Wasser&r zu &e1 mB Sauberem Schlamm&r. Für die 1 000 mB eines Erzblocks sind das fünf Eimer Wasser. Gib ihr eine eigene Pumpe mit Rohrleitung.",
               "",
@@ -443,7 +443,7 @@ quests = [
     quest("crystallizer", 10, 19.5, "&bBau einen Chemischen Kristallisator",
           subtitle="Fünf Kristalle aus einem Erz.",
           description=[
-              "&eRezept:&r Stahlgehäuse in die Mitte, Ultimative Schaltkreise links und rechts, &6Fluorit&r oben und unten, Raffiniertes Obsidian in die Ecken. Fluorit liegt tief, ein Fluoriterz gibt in der Anreicherungskammer 6 Stück.",
+              "&eRezept:&r Stahlgehäuse in die Mitte, Ultimative Steuerschaltkreise links und rechts, &6Fluorit&r oben und unten, Raffiniertes Obsidian in die Ecken. Fluorit liegt tief, ein Fluoriterz gibt in der Anreicherungskammer 6 Stück.",
               "",
               "Aus &e200 mB Sauberem Schlamm&r wird ein &6Kristall&r. Ein Erzblock (1 000 mB) gibt also &e5 Kristalle&r, drei Rohe Erze 10. Etwa &d160 FE/t&r.",
               "",
@@ -498,7 +498,7 @@ quests = [
     quest("factory_elite", 5, 23.5, "&aStuf auf Elite und Ultimativ hoch",
           subtitle="Sieben, dann neun Plätze. Stufe 4.",
           description=[
-              "&6Elite-Installateur:&r Verstärkte Legierung in die Ecken, &6Elite-Schaltkreise&r oben und unten, Gold links und rechts, ein Brett. &6Ultimativ-Installateur:&r Atomlegierung, &6Ultimative Schaltkreise&r, Diamanten, ein Brett. Beides &6Stufe 4&r.",
+              "&6Elite-Installateur:&r Verstärkte Legierung in die Ecken, &6Elitäre Steuerschaltkreise&r oben und unten, Gold links und rechts, ein Brett. &6Ultimativ-Installateur:&r Atomlegierung, &6Ultimative Steuerschaltkreise&r, Diamanten, ein Brett. Beides &6Stufe 4&r.",
               "",
               "Elite-Fabrik &e7 Plätze&r, Ultimative Fabrik &e9 Plätze&r. Die Leitungen wachsen mit: acht fortschrittliche um eine Verstärkte Legierung ergeben Elite, acht Elite um eine Atomlegierung ergeben Ultimativ. Elite-Transporter 32 pro halbe Sekunde, Ultimativ 64, Elite-Druckschlauch 64 000 mB/t.",
               "",
@@ -550,7 +550,7 @@ quests = [
     quest("full", 7.75, 25.75, "&6&lBestück eine Maschine voll",
           subtitle="Acht Geschwindigkeit, acht Energie.",
           description=[
-              "Steck &e8 Geschwindigkeitsupgrades&r und &e8 Energie-Upgrades&r in eine Maschine. Für den Satz brauchst du 16 Glas, 16 Infundierte Legierungen, 8 Osmiumstaub und 8 Goldstaub.",
+              "Steck &e8 Geschwindigkeitsupgrades&r und &e8 Energie-Upgrades&r in eine Maschine. Für den Satz brauchst du 32 Glas, 32 Infundierte Legierungen, 8 Osmiumstaub und 8 Goldstaub.",
               "",
               "Die Maschine arbeitet jetzt zehnmal so schnell wie vorher und braucht pro Gegenstand genauso viel Strom wie ohne Upgrades. Eine so bestückte Anreicherungskammer zieht statt 20 nun &d200 FE/t&r, der Schmelzer ebenso.",
               "",
@@ -562,13 +562,13 @@ quests = [
 
     # ---- Mehr aus dem Erz -----------------------------------------------------------
     quest("create", 0, 29.5, "&6Mahl Erz mit Mahlwerkrädern",
-          subtitle="Stufe 1: Create zerkleinert, aber verdoppelt nicht.",
+          subtitle="Stufe 2: Create zerkleinert, aber verdoppelt nicht.",
           description=[
               "Zwei &6Mahlwerkräder&r nebeneinander, gegenläufig gedreht, &6Rohes Eisen&r von oben hinein. Heraus fällt &6Zerkleinertes Roheisen&r, dazu zu 75 Prozent ein Erfahrungsnugget.",
               "",
               "&eDie Zahlen:&r Rohes Erz gibt &e1 Zerkleinertes&r, mehr nicht. Ein Erzblock gibt 1 plus zu 75 Prozent ein zweites, ein Tiefenschiefer-Erzblock 2 plus zu 25 Prozent ein drittes. Zerkleinertes wird im Ofen ein Barren, oder beim Waschen 9 Nuggets plus zu 75 Prozent ein Redstone (bei Gold zu 50 Prozent ein Quarz).",
               "",
-              "&eLohnt sich:&r in Stufe 1 für Erzblöcke mit Behutsamkeit (bis 2,25 Barren) und für die Nebenprodukte, für Rohes Erz nicht. &eRezept auf Kronwerke:&r der Zerkleinerer von Mekanism braucht zwei dieser Räder, du brauchst sie also sowieso.",
+              "&eLohnt sich:&r ab Stufe 2 (vorher sind die Mahlwerkräder gesperrt) für Erzblöcke mit Behutsamkeit (bis 2,25 Barren) und für die Nebenprodukte, für Rohes Erz nicht. &eRezept auf Kronwerke:&r der Zerkleinerer von Mekanism braucht zwei dieser Räder, du brauchst sie also sowieso.",
           ],
           tasks=[task_item("create:crushed_raw_iron", 16)],
           rewards=[reward_item("create:andesite_alloy", 16), reward_xp(3)],
@@ -616,12 +616,12 @@ quests = [
     quest("verdict", 10.25, 29.5, "&6&lWähl die richtige Mühle für deine Stufe",
           subtitle="Was sich wann lohnt.",
           description=[
-              "&eStufe 1:&r Mahlwerkräder, nur für Erzblöcke mit Behutsamkeit (bis 2,25) und für Nebenprodukte. Rohes Erz in den Ofen, Glück III an die Spitzhacke.",
+              "&eStufe 1:&r Rohes Erz in den Ofen, Glück III an die Spitzhacke. Die Mahlwerkräder kommen erst mit Stufe 2, dann für Erzblöcke mit Behutsamkeit (bis 2,25) und für Nebenprodukte.",
               "&eStufe 2:&r Gießerei für zwei Barren ohne Strom. Anreicherungskammer für zwei Barren mit Strom und Angereichertem Kohlenstoff nebenbei, mit Glück rund 2,9 pro Block.",
               "&eStufe 3:&r Klärkammer, drei pro Erz, rund 4,4 mit Glück. Fragment Forge etwa 2,7 pro Rohem Erz. IE-Zerkleinerer zwei plus Nickel.",
               "&eStufe 4:&r Injektionskammer vier, Auflösungskammer fünf, mit Glück rund 5,9 und 7,3. Ab hier sind Strom und Gas die Grenze, nicht das Erz.",
               "",
-              "&eRezepte auf Kronwerke, die hier zählen:&r Stahlgehäuse mit Andesitlegierung statt Glas. Zerkleinerer mit zwei Mahlwerkrädern statt Lavaeimern. Einfacher Steuerschaltkreis nur aus Elektronenröhre und 20 mB Redstone. Fortschrittlicher Schaltkreis mit Gedrucktem Silizium (Stufe 3), Elite-Schaltkreis mit Draconiumstaub (Stufe 4).",
+              "&eRezepte auf Kronwerke, die hier zählen:&r Stahlgehäuse mit Andesitlegierung statt Glas. Zerkleinerer mit zwei Mahlwerkrädern statt Lavaeimern. Einfacher Steuerschaltkreis nur aus Elektronenröhre und 20 mB Redstone. Fortschrittlicher Steuerschaltkreis mit Gedrucktem Silizium (Stufe 3), Elitärer Steuerschaltkreis mit Draconiumstaub (Stufe 4).",
           ],
           tasks=[task_checkmark("Gelesen")],
           rewards=[reward_table("s2_uncommon"), reward_xp(10)],

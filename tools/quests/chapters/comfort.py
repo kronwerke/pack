@@ -259,7 +259,7 @@ quests = [
     quest("corpse", 6, 15, "&cHol deine Sachen zurück",
           subtitle="Dein Körper bleibt liegen, der Wegpunkt zeigt hin.",
           description=[
-              "Stirbst du, bleibt ein &6Körper&r mit deiner ganzen Ausrüstung liegen. Lauf zurück, &eRechtsklick&r öffnet ihn wie eine Truhe. Der Wegpunkt von JourneyMap führt dich hin, und mit &eU&r öffnest du den &6Todesverlauf&r mit Ort, Zeit und Dimension jedes Todes.",
+              "Stirbst du, bleibt ein &6Körper&r mit deiner ganzen Ausrüstung liegen. Lauf zurück, &eRechtsklick&r öffnet ihn wie eine Truhe. Der Wegpunkt von JourneyMap führt dich hin, und mit &e{key:key.corpse.death_history}&r öffnest du den &6Todesverlauf&r mit Ort, Zeit und Dimension jedes Todes.",
               "",
               "Ein leerer Körper verschwindet nach 30 Sekunden, ein voller nie. Nach einer Stunde wird er zum Skelett, der Inhalt bleibt.",
               "",

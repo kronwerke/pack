@@ -23,10 +23,13 @@ import json  # noqa: E402
 import shutil  # noqa: E402
 adv = os.path.join(here, "..", "..", "kubejs", "data", "kronwerke", "advancement", "quests")
 shutil.rmtree(adv, ignore_errors=True)
-for name, items in sorted(ftbq._any.items()):
+for name, (items, count) in sorted(ftbq._any.items()):
     os.makedirs(adv, exist_ok=True)
+    want = {"items": items}
+    if count > 1:
+        want["count"] = {"min": count}
     with open(os.path.join(adv, name + ".json"), "w", encoding="utf-8") as f:
-        json.dump({"criteria": {"has": {"trigger": "minecraft:inventory_changed", "conditions": {"items": [{"items": items}]}}}},
+        json.dump({"criteria": {"has": {"trigger": "minecraft:inventory_changed", "conditions": {"items": [want]}}}},
                   f, indent=2)
         f.write("\n")
 

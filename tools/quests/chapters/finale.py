@@ -19,16 +19,16 @@ def head(name, text, left, y, height=0.9, kind="section", colour="end"):
 
 quests = [
     # ---- Das letzte Ziel -----------------------------------------------------------------
-    quest("start", 0, 1.5, "&5&lSchmiede einen Gaia-Geistbarren",
+    quest("start", 0, 1.5, "&5&lSchmiede einen Gaia-Seelenbarren",
           subtitle="Der Barren, den beide Säulen brauchen.",
           description=[
-              "Ein &6Terrastahlbarren&r in die Mitte, &a4 Gaia-Seelen&r oben, unten, links und rechts. Heraus kommt ein &aGaia-Geistbarren&r.",
+              "Ein &6Terrastahlbarren&r in die Mitte, &a4 Gaia-Seelen&r oben, unten, links und rechts. Heraus kommt ein &aGaia-Seelenbarren&r.",
               "",
               "Das Ziel von Stufe 5 heißt &5Der Chaoswächter&r. Es öffnet keine Stufe mehr, es will die Dinge, die den Endkampf möglich machen:",
               "&6Technik:&r &e64 Erwachte Draconiumblöcke&r (fest) und &e100 Antimaterie-Pellets&r.",
-              "&dMagie:&r &e128 Gaia-Geistbarren&r und &e64 Wilden-Tribute&r (fest).",
+              "&dMagie:&r &e128 Gaia-Seelenbarren&r und &e64 Wilden-Tribute&r (fest).",
               "",
-              "Der Gaia-Geistbarren ist das Bindeglied: Die Magier geben ihn ab, die Techniker brauchen ihn für jede Fusion von Erwachtem Draconium.",
+              "Der Gaia-Seelenbarren ist das Bindeglied: Die Magier geben ihn ab, die Techniker brauchen ihn für jede Fusion von Erwachtem Draconium.",
           ],
           tasks=[task_item("botania:gaia_ingot", 1)],
           rewards=[reward_table("s5_common"), reward_xp(10)],
@@ -38,9 +38,9 @@ quests = [
     quest("tech", 2.75, -0.5, "&6Fusioniere Erwachtes Draconium",
           subtitle="Vier Blöcke aus einer Fusion.",
           description=[
-              "&e4 Draconiumblöcke&r in den Fusionskern, in die sieben Wyvern-Injektoren &e4 Draconiumkerne&r, &a2 Gaia-Geistbarren&r und &c1 Drachenherz&r. Ergebnis: &54 Erwachte Draconiumblöcke&r für 50 Millionen OP.",
+              "&e4 Draconiumblöcke&r in den Fusionskern, in die sieben Wyvern-Injektoren &e4 Draconiumkerne&r, &a2 Gaia-Seelenbarren&r und &c1 Drachenherz&r. Ergebnis: &54 Erwachte Draconiumblöcke&r für 50 Millionen OP.",
               "",
-              "Für 64 Blöcke sind das &e16 Fusionen&r, also 16 Drachenherzen und 32 Gaia-Geistbarren. Jeder Block zählt am Obelisken 50 Punkte.",
+              "Für 64 Blöcke sind das &e16 Fusionen&r, also 16 Drachenherzen und 32 Gaia-Seelenbarren. Jeder Block zählt am Obelisken 50 Punkte.",
               "",
               "Alles zur Fusion im Kapitel &5Draconic: Erwacht und Chaos&r.",
           ],
@@ -232,10 +232,10 @@ quests = [
           rewards=[reward_table("s5_common"), reward_xp(25)],
           deps=["t_pellet"], icon="mekanism:pellet_antimatter", size=1.5, shape="diamond"),
 
-    quest("m_ingots", 5.25, 5, "&d&lSchmiede 32 Gaia-Geistbarren",
+    quest("m_ingots", 5.25, 5, "&d&lSchmiede 32 Gaia-Seelenbarren",
           subtitle="Genug für 16 Fusionen.",
           description=[
-              "&e32 Gaia-Geistbarren&r sind 128 Gaia-Seelen, also viele Kämpfe gegen die Gaia-Wächterin. Genau so viele brauchen die Techniker für alle 16 Fusionen von Erwachtem Draconium.",
+              "&e32 Gaia-Seelenbarren&r sind 128 Gaia-Seelen, also viele Kämpfe gegen die Gaia-Wächterin. Genau so viele brauchen die Techniker für alle 16 Fusionen von Erwachtem Draconium.",
               "",
               "Wer sie hat, entscheidet gemeinsam, was zuerst geht: in den Fusionskern oder in den Obelisken. Beides zählt für dasselbe Ziel.",
           ],

@@ -1,0 +1,940 @@
+{
+ "units": {
+  "de": [
+   "Die Haken in diesem Kapitel kosten nichts: Abhaken heißt nur, dass du die Quelle kennst. Nur die fünf Create-Quests von Stufe 1 wollen das Teil im Inventar sehen, und sie nehmen es dir nicht weg.",
+   "Bis Stufe 2 gibt es keinen FE-Strom, du rechnest nur mit RPM und SU, siehe {{create/stress}}. Nether und End laufen auf eigenen Servern: Strom, den du dort erzeugst, kommt weder per Kabel noch per Flux in deine Basis."
+  ],
+  "en": [
+   "The ticks in this chapter cost nothing: ticking one only says you know the source. Only the five Create quests of stage 1 want the part in your inventory, and they do not take it.",
+   "There is no FE until stage 2, until then you only work with RPM and SU, see {{create/stress}}. The Nether and the End run on servers of their own: power you make there never reaches your base, neither by cable nor by Flux."
+  ],
+  "sources": [
+   "tools/quests/chapters/list_power.py (task_checkmark, task_item without consume)",
+   "core: src/main/java/de/kronwerke/core/config/KronwerkeConfig.java (dimensionServers the_nether=nether, the_end=end)"
+  ]
+ },
+ "s1_choice": {
+  "de": [
+   "Mehrere Quellen auf einer Welle addieren ihre SU. Übersetzt du die Drehzahl mit Zahnrädern hoch, bleibt die SU-Summe gleich, aber jede Maschine braucht pro RPM mehr. Was jede Maschine kostet, steht in {{create/cost_press}} und den Quests daneben.",
+   "Das Starbuncle-Rad braucht einen [[ars_nouveau:starbuncle_charm]] aus Ars Nouveau, für alle anderen reichen Holz, Stein und [[create:andesite_alloy]]."
+  ],
+  "en": [
+   "Several sources on one shaft add up their SU. Gearing the speed up keeps the SU total, but every machine then needs more per RPM. What each machine costs is in {{create/cost_press}} and the quests next to it.",
+   "The Starbuncle wheel needs a [[ars_nouveau:starbuncle_charm]] from Ars Nouveau, all the others only need wood, stone and [[create:andesite_alloy]]."
+  ],
+  "sources": [
+   "config create-server.toml (stress capacities)",
+   "ars_creo:starbuncle_wheel"
+  ]
+ },
+ "water_wheel": {
+  "de": [
+   "Für die Quest reicht ein [[create:water_wheel]] im Inventar, gebaut aus acht Brettern um eine [[create:shaft]]. Es ist so billig, dass du gleich mehrere hintereinander an denselben Bach setzen kannst, jedes bringt 32 SU pro RPM.",
+   "Wie du es richtig ins Wasser stellst, zeigt {{create/water_wheel}}."
+  ],
+  "en": [
+   "A [[create:water_wheel]] in your inventory is enough for the quest, made from eight planks around a [[create:shaft]]. It is cheap enough to put several in a row on the same stream, each adds 32 SU per RPM.",
+   "How to place it in the water is shown in {{create/water_wheel}}."
+  ],
+  "sources": [
+   "create:crafting/kinetics/water_wheel",
+   "config create-server.toml (water_wheel = 32.0)"
+  ]
+ },
+ "large_wheel": {
+  "de": [
+   "Das [[create:large_water_wheel]] entsteht aus einem fertigen Wasserrad und acht Brettern, du brauchst also zuerst {{list_power/water_wheel}}. Es bringt 128 SU pro RPM, dreht aber nur halb so schnell, unterm Strich so viel wie zwei kleine Räder.",
+   "Mehr dazu in {{create/large_water_wheel}}."
+  ],
+  "en": [
+   "The [[create:large_water_wheel]] is made from a finished water wheel and eight planks, so build {{list_power/water_wheel}} first. It gives 128 SU per RPM at half the speed, in total as much as two small wheels.",
+   "More in {{create/large_water_wheel}}."
+  ],
+  "sources": [
+   "create:crafting/kinetics/large_water_wheel",
+   "config create-server.toml (large_water_wheel = 128.0)"
+  ]
+ },
+ "windmill": {
+  "de": [
+   "Als Segel zählt schon einfache Wolle. Das [[create:white_sail]] machst du aus einer Wolle, zwei Stöcken und einer Andesitlegierung. Unter 8 Segeln baut sich die Mühle nicht zusammen, und jede weitere Achtergruppe bringt 1 RPM mehr.",
+   "Die Quest will nur das [[create:windmill_bearing]] im Inventar. Den Bau Schritt für Schritt zeigen {{create/sails}} und {{create/windmill}}."
+  ],
+  "en": [
+   "Plain wool already counts as a sail. A [[create:white_sail]] is one wool, two sticks and one andesite alloy. Below 8 sails the mill does not assemble, and every further group of eight adds 1 RPM.",
+   "The quest only wants the [[create:windmill_bearing]] in your inventory. {{create/sails}} and {{create/windmill}} walk you through the build."
+  ],
+  "sources": [
+   "create:crafting/kinetics/windmill_bearing",
+   "create:crafting/kinetics/white_sail",
+   "config create-server.toml (minimumWindmillSails 8, windmillSailsPerRPM 8, windmill_bearing = 512.0)"
+  ]
+ },
+ "hand_crank": {
+  "de": [
+   "Kurbeln kostet Hunger, für Dauerbetrieb taugt die [[create:hand_crank]] also nicht. Sie reicht, bis das erste Wasserrad steht.",
+   "Der [[create:copper_valve_handle]] trägt dieselben 8 SU pro RPM wie die Kurbel. Mehr in {{create/hand_crank}}."
+  ],
+  "en": [
+   "Cranking costs hunger, so the [[create:hand_crank]] is no long term source. It does the job until the first water wheel turns.",
+   "The [[create:copper_valve_handle]] carries the same 8 SU per RPM as the crank. More in {{create/hand_crank}}."
+  ],
+  "sources": [
+   "create:crafting/kinetics/hand_crank",
+   "config create-server.toml (hand_crank = 8.0, copper_valve_handle = 8.0, crankHungerMultiplier)"
+  ]
+ },
+ "starbuncle_wheel": {
+  "de": [
+   "Den [[ars_nouveau:starbuncle_charm]] machst du im Verzauberungsapparat: [[ars_nouveau:starbuncle_shards]] in die Mitte, vier Goldbarren auf die Sockel, ohne Quellkosten. Den Weg dahin zeigt {{ars_nouveau/starbuncle_charm}}.",
+   "Das Rad dreht mit 16 RPM und höchstens 24 RPM, bei 16 SU pro RPM. Es braucht weder Wasser noch Wind, siehe {{ars_nouveau/starbuncle_wheel}}."
+  ],
+  "en": [
+   "The [[ars_nouveau:starbuncle_charm]] comes from the Enchanting Apparatus: [[ars_nouveau:starbuncle_shards]] in the middle, four gold ingots on the pedestals, no source cost. {{ars_nouveau/starbuncle_charm}} shows the way there.",
+   "The wheel turns at 16 RPM, at most 24 RPM, with 16 SU per RPM. It needs neither water nor wind, see {{ars_nouveau/starbuncle_wheel}}."
+  ],
+  "sources": [
+   "ars_nouveau:starbuncle_charm",
+   "ars_creo:starbuncle_wheel",
+   "config ars_creo-common.toml (wheelBaseSpeed 16, wheelMaxSpeed 24, wheelStressCapacity 16)"
+  ]
+ },
+ "s2_choice": {
+  "de": [
+   "Generator von Just Dire Things, Dieselmotor, Wind- und Biogenerator brauchen einen [[mekanism:basic_control_circuit]]. Den machst du aus einer Elektronenröhre und Redstone in der Metallurgischen Infusionsanlage, siehe {{mekanism/circuit}}. Der Wärmegenerator kommt ohne aus und ist darum der schnellste erste Strom.",
+   "Was du im Nether baust, bleibt dort: der Nether ist ein eigener Server, und kein Kabel führt durch das Portal."
+  ],
+  "en": [
+   "The Just Dire Things generator, the diesel engine and the wind and bio generators need a [[mekanism:basic_control_circuit]]. It is made from an electron tube and redstone in the Metallurgic Infuser, see {{mekanism/circuit}}. The Heat Generator needs none, which makes it the quickest first power.",
+   "Whatever you build in the Nether stays there: the Nether is a server of its own, and no cable leads through the portal."
+  ],
+  "sources": [
+   "kronwerke:tech/basic_control_circuit",
+   "kubejs/server_scripts/kronwerke/links.js",
+   "mekanismgenerators:generator/heat",
+   "mekanismgenerators:generator/wind",
+   "mekanismgenerators:generator/bio",
+   "core: KronwerkeConfig.java (dimensionServers)"
+  ]
+ },
+ "steam_engine": {
+  "de": [
+   "Die [[create:steam_engine]] ist ein Goldblech über einer Andesitlegierung über einem Kupferblock. Für die Lohenbrenner musst du erst eine Lohe einfangen, siehe {{create_brass/blaze_burner}}.",
+   "Mehr Brenner, mehr Wasser und ein größerer Tank heben die Kesselstufe. Wie du den Kessel aufbaust, zeigt {{create_brass/boiler}}."
+  ],
+  "en": [
+   "The [[create:steam_engine]] is a gold sheet above an andesite alloy above a copper block. For the blaze burners you first have to catch a blaze, see {{create_brass/blaze_burner}}.",
+   "More burners, more water and a bigger tank raise the boiler level. {{create_brass/boiler}} shows how to build the boiler."
+  ],
+  "sources": [
+   "create:crafting/kinetics/steam_engine",
+   "config create-server.toml (steam_engine = 1024.0)"
+  ]
+ },
+ "diesel_engine": {
+  "de": [
+   "Der [[createdieselgenerators:diesel_engine]] braucht auf Kronwerke einen Einfachen Steuerschaltkreis im Rezept, dazu [[createdieselgenerators:engine_piston]], einen Messingblock, einen Flüssigkeitstank und Polierte Schwarzsteinstufen. Weil Eimer nicht gehen, füllst du ihn mit einer Pumpe oder einem Rohr aus einem Tank.",
+   "Mit Redstone kannst du ihn abschalten. Biodiesel kommt aus {{create_addons/biodiesel}}, Ethanol aus {{create_addons/ethanol}}."
+  ],
+  "en": [
+   "On Kronwerke the [[createdieselgenerators:diesel_engine]] needs a Basic Control Circuit in its recipe, plus [[createdieselgenerators:engine_piston]], a brass block, a fluid tank and polished blackstone slabs. Buckets do not work, so fill it with a pump or a pipe from a tank.",
+   "Redstone switches it off. Biodiesel comes from {{create_addons/biodiesel}}, ethanol from {{create_addons/ethanol}}."
+  ],
+  "sources": [
+   "createdieselgenerators:crafting/diesel_engine",
+   "kubejs/server_scripts/kronwerke/links.js",
+   "config createdieselgenerators-server.toml (Engines filled with a bucket = false, Engines disabled with redstone = true)"
+  ]
+ },
+ "alternator": {
+  "de": [
+   "Der Rezept-Dump zeigt den [[createaddition:alternator]] ohne Steuerschaltkreis: Andesitlegierung, Eisenbleche, eine Eisenstange und [[createaddition:copper_spool]] in der Mechanischen Handwerkseinheit. Prüf das Rezept in EMI, bevor du Schaltkreise einplanst.",
+   "Volle Leistung gibt es erst bei 256 RPM, und dann zieht er **16 384 SU**. Das schafft eine Dampfmaschine, Wasserräder allein reichen nicht. Mehr in {{create_brass/alternator}}."
+  ],
+  "en": [
+   "The recipe dump shows the [[createaddition:alternator]] without a control circuit: andesite alloy, iron sheets, an iron rod and [[createaddition:copper_spool]] in the Mechanical Crafter. Check the recipe in EMI before you plan circuits for it.",
+   "Full output needs 256 RPM, and then it draws **16,384 SU**. A steam engine manages that, water wheels alone do not. More in {{create_brass/alternator}}."
+  ],
+  "sources": [
+   "createaddition:mechanical_crafting/alternator",
+   "kubejs/server_scripts/kronwerke/links.js (swap does not show in the dump)",
+   "config createaddition-common.toml (fe_at_max_rpm 480, max_stress 16384, generator_efficiency 0.75)"
+  ]
+ },
+ "power_grid": {
+  "de": [
+   "Den Generator baust du Schritt für Schritt im Kapitel Create: Messing, von {{create_brass/pg_wire}} bis {{create_brass/pg_generator}}. Der [[powergrid:device_connector]] (im Spiel Adapter) ist ein Zinkblech über zwei Kupferblechen und einer Andesitlegierung.",
+   "Das [[powergrid:solar_panel]] entsteht nicht an der Werkbank, sondern in einer Sequenzmontage."
+  ],
+  "en": [
+   "You build the generator step by step in the Create: Brass chapter, from {{create_brass/pg_wire}} to {{create_brass/pg_generator}}. The [[powergrid:device_connector]] is a zinc sheet above two copper sheets and an andesite alloy.",
+   "The [[powergrid:solar_panel]] is not made at a crafting table but in sequenced assembly."
+  ],
+  "sources": [
+   "powergrid:crafting/device_connector",
+   "powergrid:sequenced_assembly/solar_panel"
+  ]
+ },
+ "mek_heat": {
+  "de": [
+   "Der [[mekanismgenerators:heat_generator]] braucht keinen Schaltkreis, nur Eisen, Bretter, Osmium, Kupfer und einen Ofen. Osmium findest du im Kapitel {{mekanism/osmium}}.",
+   "Lava zählt an allen sechs Seiten und als Lava im Block selbst, daher die sieben. Im Nether gibt es den Bonus, aber der Strom bleibt dort, weil der Nether ein eigener Server ist."
+  ],
+  "en": [
+   "The [[mekanismgenerators:heat_generator]] needs no circuit, only iron, planks, osmium, copper and a furnace. Osmium is covered in {{mekanism/osmium}}.",
+   "Lava counts on all six sides and as lava inside the block itself, hence seven. The Nether bonus is real, but the power stays there, because the Nether is a server of its own."
+  ],
+  "sources": [
+   "mekanismgenerators:generator/heat",
+   "MekanismGenerators jar: TileEntityHeatGenerator (getBoost checks the six neighbours and its own fluid state)",
+   "config Mekanism/generators.toml (heatGeneration 200, heatGenerationLava 30, heatGenerationNether 100 J)"
+  ]
+ },
+ "mek_solar_wind": {
+  "de": [
+   "Der [[mekanismgenerators:wind_generator]] braucht freien Himmel und keine Flüssigkeit vier Blöcke über sich. Unter Y 24 liefert er weiter das Minimum, am meisten ganz oben an der Bauhöhe.",
+   "Der [[mekanismgenerators:solar_generator]] kommt ohne Schaltkreis aus, der Windgenerator braucht einen. Beide gibt es im Kapitel Mekanism: {{mekanism/solar}} und {{mekanism/wind}}."
+  ],
+  "en": [
+   "The [[mekanismgenerators:wind_generator]] needs open sky and no fluid four blocks above it. Below Y 24 it still gives the minimum, the most right at the build limit.",
+   "The [[mekanismgenerators:solar_generator]] needs no circuit, the wind generator needs one. Both are in the Mekanism chapter: {{mekanism/solar}} and {{mekanism/wind}}."
+  ],
+  "sources": [
+   "mekanismgenerators:generator/solar",
+   "mekanismgenerators:generator/wind",
+   "MekanismGenerators jar: TileEntityWindGenerator.getMultiplier (pos.above(4), canSeeSky, Y clamped between minY and build height)",
+   "config Mekanism/generators.toml (wind generationMin 60, generationMax 480 J, minY 24)"
+  ]
+ },
+ "mek_bio": {
+  "de": [
+   "Für den [[mekanismgenerators:bio_generator]] brauchst du schon zwei Stück Biobrennstoff im Rezept, also zuerst einen Zerkleinerer, siehe {{mekanism/crusher}}.",
+   "Den Generator selbst zeigt {{mekanism/bio_gen}}. Der Biobrennstoff ist auch der Grundstoff für Ethen, siehe {{list_power/mek_gas}}."
+  ],
+  "en": [
+   "The [[mekanismgenerators:bio_generator]] already needs two bio fuel in its recipe, so build a crusher first, see {{mekanism/crusher}}.",
+   "The generator itself is in {{mekanism/bio_gen}}. Bio fuel is also the base for ethene, see {{list_power/mek_gas}}."
+  ],
+  "sources": [
+   "mekanismgenerators:generator/bio",
+   "config Mekanism/generators.toml (bioGeneration 350 J, tankCapacity 24000)"
+  ]
+ },
+ "mek_gas": {
+  "de": [
+   "Der [[mekanismgenerators:gas_burning_generator]] braucht einen Elektrolytischen Kern und zwei Stahlgehäuse. Wasserstoff ist der einfache Einstieg, siehe {{mekanism/gas_gen}}.",
+   "Ethen kommt aus der Druckreaktionskammer, siehe {{mekanism/ethene}}. Rechne mit einer ganzen Kette aus Pflanzenfarm, Zerkleinerer, Elektrolyseur und Kammer, bevor der Generator auf volle Leistung kommt."
+  ],
+  "en": [
+   "The [[mekanismgenerators:gas_burning_generator]] needs an Electrolytic Core and two steel casings. Hydrogen is the easy start, see {{mekanism/gas_gen}}.",
+   "Ethene comes from the Pressurized Reaction Chamber, see {{mekanism/ethene}}. Expect a whole chain of plant farm, crusher, electrolytic separator and chamber before the generator runs at full power."
+  ],
+  "sources": [
+   "mekanismgenerators:generator/gas_burning",
+   "config Mekanism/generators.toml (gas_generator tankCapacity 18000)"
+  ]
+ },
+ "ie_dynamo": {
+  "de": [
+   "Der [[immersiveengineering:dynamo]] besteht aus Redstone, einer Mechanischen Eisenkomponente, Eisen und einem Kupferspulenblock. Die IE-Windmühle ist acht Windmühlenblätter um einen Eisenbarren.",
+   "Der Aufbau folgt in {{immersive/dynamo}}, {{immersive/windmill}} und {{immersive/watermill}}. Den Strom holst du mit Draht ab, siehe {{immersive/connectors}}."
+  ],
+  "en": [
+   "The [[immersiveengineering:dynamo]] is redstone, an iron mechanical component, iron and an LV coil block. The IE windmill is eight windmill blades around an iron ingot.",
+   "The build follows in {{immersive/dynamo}}, {{immersive/windmill}} and {{immersive/watermill}}. You take the power off with wire, see {{immersive/connectors}}."
+  ],
+  "sources": [
+   "immersiveengineering:crafting/dynamo",
+   "immersiveengineering:crafting/windmill"
+  ]
+ },
+ "ie_thermo": {
+  "de": [
+   "Den [[immersiveengineering:thermoelectric_generator]] baust du aus Stahl, Constantanblechen und einem Kupferspulenblock, Stahl und Constantan kommen aus dem Kapitel Immersive Engineering. Mehr in {{immersive/thermoelectric}}.",
+   "Den Blitzableiter formst du als Multiblock, siehe {{immersive_heavy/lightning_rod}}."
+  ],
+  "en": [
+   "The [[immersiveengineering:thermoelectric_generator]] is made from steel, constantan sheets and an LV coil block, both metals come from the Immersive Engineering chapter. More in {{immersive/thermoelectric}}.",
+   "The lightning rod is formed as a multiblock, see {{immersive_heavy/lightning_rod}}."
+  ],
+  "sources": [
+   "immersiveengineering:crafting/thermoelectric_generator",
+   "config immersiveengineering-server.toml (lightning_output 16000000)"
+  ]
+ },
+ "ie_wires": {
+  "de": [
+   "Der Draht trägt mehr als die Anschlüsse: ein LV-Anschluss nimmt nur 256 FE/t an. Für mehr Strom brauchst du also MV- oder HV-Anschlüsse, nicht nur dickeren Draht.",
+   "Die Drahtspulen machst du in {{immersive/wirecoil}} und {{immersive/wire_mv}}, HV-Draht in {{immersive_heavy/hv}}."
+  ],
+  "en": [
+   "The wire carries more than its connectors: an LV connector only takes 256 FE/t. For more power you need MV or HV connectors, not just thicker wire.",
+   "The wire coils are made in {{immersive/wirecoil}} and {{immersive/wire_mv}}, HV wire in {{immersive_heavy/hv}}."
+  ],
+  "sources": [
+   "config immersiveengineering-server.toml (wires.copper transferRate 2048, wireConnectorInput 256; electrum 8192/1024; hv 32768/4096)"
+  ]
+ },
+ "jdt_gens": {
+  "de": [
+   "Für den [[justdirethings:generatort1]] brauchst du Ferricore, siehe {{dire_things/ferricore_ingot}}, und einen Einfachen Steuerschaltkreis. [[justdirethings:coal_t1]] entsteht, wenn ein Kohleblock neben dem Goo steht, siehe {{dire_things/primal_coal}}.",
+   "Der Brennstoffgenerator braucht Blazegold statt Ferricore. Den Bau zeigen {{dire_things/generator}} und {{dire_things/fluid_gen}}."
+  ],
+  "en": [
+   "The [[justdirethings:generatort1]] needs ferricore, see {{dire_things/ferricore_ingot}}, and a Basic Control Circuit. [[justdirethings:coal_t1]] forms when a coal block sits next to the goo, see {{dire_things/primal_coal}}.",
+   "The fuel generator takes blazegold instead of ferricore. {{dire_things/generator}} and {{dire_things/fluid_gen}} show the build."
+  ],
+  "sources": [
+   "justdirethings:generatort1",
+   "justdirethings:generatorfluidt1",
+   "config justdirethings-server.toml (generator_t1_fe_per_fuel_tick 15, burn_speed_multiplier 4, fuel_tier2_fe_per_mb 450)"
+  ]
+ },
+ "honey": {
+  "de": [
+   "Der [[productivebees:honey_generator]] braucht nur Eisen, einen Ofen und einen Honigeimer, also nichts aus dem Nether. Den Honig liefern Bienenstöcke, siehe {{bees/honey_generator}}.",
+   "Ein Eimer Honig reicht für 500 Ticks, gut 25 Sekunden. Ohne laufende Honigzufuhr ist er schnell leer."
+  ],
+  "en": [
+   "The [[productivebees:honey_generator]] only needs iron, a furnace and a honey bucket, nothing from the Nether. Hives supply the honey, see {{bees/honey_generator}}.",
+   "A bucket of honey lasts 500 ticks, about 25 seconds. Without a steady honey supply it runs dry fast."
+  ],
+  "sources": [
+   "productivebees:honey_generator",
+   "config productivebees-server.toml (generatorPowerGen 60, generatorHoneyUse 2)"
+  ]
+ },
+ "fluxfield": {
+  "de": [
+   "Das [[botania:mana_fluxfield]] braucht einen [[botania:manasteel_ingot]]. Auf Kronwerke entsteht Manastahl auch aus Durchdrungenem Eisen von Nature's Aura im Manabecken, siehe {{mekanism/manasteel}}.",
+   "Den Bau zeigt {{botania_runes/fluxfield}}. Der Puffer fasst nur 1 280 Mana, also gehört ein Verbreiter dauerhaft davor."
+  ],
+  "en": [
+   "The [[botania:mana_fluxfield]] needs a [[botania:manasteel_ingot]]. On Kronwerke manasteel can also be made from Nature's Aura infused iron in a mana pool, see {{mekanism/manasteel}}.",
+   "{{botania_runes/fluxfield}} shows the build. The buffer only holds 1,280 mana, so a spreader has to feed it all the time."
+  ],
+  "sources": [
+   "botania:mana_fluxfield",
+   "kronwerke:magic/manasteel_from_infused_iron",
+   "Botania jar: PowerGeneratorBlockEntity (MAX_MANA 1280, 10 FE per mana)"
+  ]
+ },
+ "mek_storage": {
+  "de": [
+   "[[mekanism:basic_universal_cable]] braucht Stahl, den du in {{mekanism/steel}} machst. Für den [[mekanism:basic_energy_cube]] brauchst du Energietabletts aus {{mekanism/tablet}} und ein Stahlgehäuse.",
+   "Die Induktionsmatrix baust du später im Kapitel Mekanism: Elite, ab {{mekanism_elite/induction_casing}}."
+  ],
+  "en": [
+   "[[mekanism:basic_universal_cable]] needs steel, which you make in {{mekanism/steel}}. The [[mekanism:basic_energy_cube]] needs energy tablets from {{mekanism/tablet}} and a steel casing.",
+   "You build the induction matrix later in the Mekanism: Elite chapter, starting at {{mekanism_elite/induction_casing}}."
+  ],
+  "sources": [
+   "mekanism:transmitter/universal_cable/basic",
+   "mekanism:energy_cube/basic",
+   "mekanism:induction/port (#c:circuits/elite)",
+   "config Mekanism/tiers.toml"
+  ]
+ },
+ "pipez_pipe": {
+  "de": [
+   "Das [[pipez:energy_pipe]] ist das billigste Stromkabel von Stufe 2: Eisen, Redstone und zwei Redstoneblöcke. Die Verbesserte Modifikation braucht auf Kronwerke einen Messingbarren statt Gold.",
+   "Upgrades und Schraubenschlüssel erklärt das Kapitel Rohre und Router, ab {{pipes/energy_pipe}}."
+  ],
+  "en": [
+   "The [[pipez:energy_pipe]] is the cheapest power cable of stage 2: iron, redstone and two redstone blocks. On Kronwerke the improved upgrade takes a brass ingot instead of gold.",
+   "Upgrades and the wrench are covered in the Pipes and Routers chapter, from {{pipes/energy_pipe}}."
+  ],
+  "sources": [
+   "pipez:energy_pipe",
+   "kubejs/server_scripts/kronwerke/links.js (pipez:improved_upgrade gold to brass)",
+   "config pipez-server.toml (energy_pipe amounts)"
+  ]
+ },
+ "accumulator": {
+  "de": [
+   "Die [[create_connected:kinetic_battery]] braucht ein Präzisionsgetriebe und einen Messingrahmen, beides aus dem Kapitel Create: Messing. Wie sie lädt und entlädt, zeigt {{create_addons/kinetic_battery}}.",
+   "Den Netzanschluss machst du formlos aus einer Kupferstange, einer Andesitlegierung und einem Schleimball."
+  ],
+  "en": [
+   "The [[create_connected:kinetic_battery]] needs a precision mechanism and a brass casing, both from the Create: Brass chapter. {{create_addons/kinetic_battery}} shows how it charges and discharges.",
+   "The small connector is shapeless: a copper rod, an andesite alloy and a slime ball."
+  ],
+  "sources": [
+   "create_connected:crafting/kinetics/kinetic_battery",
+   "createaddition:crafting/connector",
+   "config createaddition-common.toml (wires, accumulator)"
+  ]
+ },
+ "tesla_coil": {
+  "de": [
+   "Die [[createaddition:tesla_coil]] braucht einen Messingrahmen, Messingbleche, eine Elektronenröhre, zwei Kondensatoren und drei Kupferspulen. Sie trifft auch Spieler in 3 Blöcken, also nicht neben einen Laufweg stellen.",
+   "Wie du sie über ein Depot setzt, zeigt {{create_brass/tesla_coil}}."
+  ],
+  "en": [
+   "The [[createaddition:tesla_coil]] needs a brass casing, brass sheets, an electron tube, two capacitors and three copper spools. It also hits players within 3 blocks, so keep it away from walkways.",
+   "{{create_brass/tesla_coil}} shows how to set it over a depot."
+  ],
+  "sources": [
+   "createaddition:mechanical_crafting/tesla_coil",
+   "config createaddition-common.toml (tesla_coil_hurt_range 3, tesla_coil_hurt_player 2)"
+  ],
+  "client": [
+   "whether the tesla coil really hurts players standing within 3 blocks"
+  ]
+ },
+ "source_motor": {
+  "de": [
+   "Der [[ars_technica:source_motor]] besteht aus Messing, Zahnrädern, einer Elektronenröhre und dem Calibrated Precision Mechanism. Er ist also ein Projekt für Spieler, die schon Messing und Ars Nouveau haben.",
+   "Den Bau zeigt {{ars_apprentice/source_motor}}. Das [[ars_nouveau:source_jar]] daneben füllst du mit einem Quelllink."
+  ],
+  "en": [
+   "The [[ars_technica:source_motor]] is brass, cogwheels, an electron tube and the Calibrated Precision Mechanism. So it is a project for players who already have brass and Ars Nouveau.",
+   "{{ars_apprentice/source_motor}} shows the build. Fill the [[ars_nouveau:source_jar]] next to it from a sourcelink."
+  ],
+  "sources": [
+   "ars_technica:source_motor"
+  ]
+ },
+ "pocket_gen": {
+  "de": [
+   "Den [[justdirethings:pocket_generator]] baust du aus Ferricore, Redstoneblöcken, Kohle und einem Ofen, ohne Steuerschaltkreis. Ferricore kommt aus {{dire_things/ferricore_ingot}}.",
+   "Er lädt nur Gegenstände, die FE speichern, und braucht Brennstoff im eigenen Slot. Mehr in {{dire_things/pocket_gen}}."
+  ],
+  "en": [
+   "The [[justdirethings:pocket_generator]] is ferricore, redstone blocks, coal and a furnace, no control circuit. Ferricore comes from {{dire_things/ferricore_ingot}}.",
+   "It only charges items that store FE and needs fuel in its own slot. More in {{dire_things/pocket_gen}}."
+  ],
+  "sources": [
+   "justdirethings:pocket_generator",
+   "config justdirethings-server.toml (pocket_generator)"
+  ]
+ },
+ "s3_choice": {
+  "de": [
+   "Für den Powah-Reaktor brauchst du [[powah:uraninite]] und die Energizing Orb, siehe {{powah/uraninite}} und {{powah/orb}}. Ein Furnator geht ohne Erz und ist der leichtere Einstieg.",
+   "Flux Networks braucht Flux-Staub, den du aus Redstone über Obsidian und Grundgestein bekommst, siehe {{flux_networks/dust}}. Im Nether und im End reicht ein Flux-Netz nicht hin, beide laufen auf eigenen Servern."
+  ],
+  "en": [
+   "The Powah reactor needs [[powah:uraninite]] and the Energizing Orb, see {{powah/uraninite}} and {{powah/orb}}. A furnator needs no ore and is the easier start.",
+   "Flux Networks needs flux dust, made from redstone over obsidian and bedrock, see {{flux_networks/dust}}. A Flux network does not reach the Nether or the End, both run on servers of their own."
+  ],
+  "sources": [
+   "powah:reactor_starter",
+   "fluxnetworks:flux_dust (no recipe in the dump, made in the world)",
+   "core: KronwerkeConfig.java (dimensionServers)"
+  ]
+ },
+ "powah_fuel": {
+  "de": [
+   "Der [[powah:furnator_starter]] braucht Dielectric Paste, Dielectric Casing und Tiny-Kondensatoren aus dem Kapitel Powah, siehe {{powah/capacitors}}. Höhere Stufen entstehen durch Aufrüsten, siehe {{powah/furnator_basic}}.",
+   "Die Brennstoffmenge ist in jeder Stufe gleich, höhere Stufen verbrennen nur schneller. Den Magmator zeigt {{powah/magmator}}."
+  ],
+  "en": [
+   "The [[powah:furnator_starter]] needs dielectric paste, dielectric casing and tiny capacitors from the Powah chapter, see {{powah/capacitors}}. Higher tiers come from upgrading, see {{powah/furnator_basic}}.",
+   "Each fuel item gives the same amount in every tier, higher tiers only burn it faster. The magmator is in {{powah/magmator}}."
+  ],
+  "sources": [
+   "powah:crafting/furnator_starter",
+   "powah:crafting/magmator_starter",
+   "config powah.json5 (energy_per_fuel_tick 30, furnators)"
+  ]
+ },
+ "powah_passive": {
+  "de": [
+   "Beide laufen ohne Brennstoff, darum lohnt es sich, sie in Reihen zu stellen. Bau zuerst {{powah/solar}} und {{powah/thermo}}, höhere Stufen kommen durch Aufrüsten.",
+   "Ab Basic liefern beide 60 FE/t, ab dann bringt jede Stufe deutlich mehr. Die Linse für das Solar Panel ist in diesem Pack eingeschaltet."
+  ],
+  "en": [
+   "Both run without fuel, so they are worth placing in rows. Build {{powah/solar}} and {{powah/thermo}} first, higher tiers come from upgrading.",
+   "From Basic on both give 60 FE/t, and every tier after that gives clearly more. The lens for the solar panel is enabled in this pack."
+  ],
+  "sources": [
+   "config powah.json5 (solar_panels, thermo_generators, lens_of_ender true)"
+  ]
+ },
+ "powah_reactor": {
+  "de": [
+   "[[powah:uraninite]] kommt aus Uraninit-Erz, siehe {{powah/uraninite}}. Zünden und Kühlen erklärt {{powah/reactor_fuel}}, das Aufrüsten {{powah/reactor_upgrade}}.",
+   "Der Reaktor gibt nur das Vierfache seiner Erzeugung pro Tick ab. Für einen Blazing-Reaktor brauchst du also Kabel, die 40 000 FE/t tragen."
+  ],
+  "en": [
+   "[[powah:uraninite]] comes from uraninite ore, see {{powah/uraninite}}. Firing and cooling are in {{powah/reactor_fuel}}, upgrading in {{powah/reactor_upgrade}}.",
+   "The reactor only gives off four times its generation per tick. A Blazing reactor therefore needs cables that carry 40,000 FE/t."
+  ],
+  "sources": [
+   "powah:crafting/reactor_starter",
+   "config powah.json5 (reactors generation_rates, transfer_rates)"
+  ]
+ },
+ "powah_storage": {
+  "de": [
+   "Ein Rezept [[powah:energy_cable_starter]] gibt zwölf Kabel. Die Ender Cells haben je nach Stufe 1 bis 12 Kanäle, eine Starter-Zelle also nur einen.",
+   "Kabel und Zellen zeigen {{powah/cables}} und {{powah/cells}}, das drahtlose Teilen {{powah/ender_cell}}."
+  ],
+  "en": [
+   "One recipe of [[powah:energy_cable_starter]] gives twelve cables. Ender Cells have 1 to 12 channels depending on tier, so a Starter cell only has one.",
+   "Cables and cells are in {{powah/cables}} and {{powah/cells}}, wireless sharing in {{powah/ender_cell}}."
+  ],
+  "sources": [
+   "powah:crafting/cable_starter (count 12)",
+   "powah:crafting/energy_cell_starter",
+   "config powah.json5 (ender_cells channels)"
+  ]
+ },
+ "mek_adv": {
+  "de": [
+   "Der Rezept-Dump zeigt den [[mekanismgenerators:advanced_solar_generator]] aus vier Solargeneratoren, zwei Infundierten Legierungen und drei Eisenbarren, ohne Schaltkreise und ohne Eisenblock.",
+   "Die fortgeschrittenen Kabel und Würfel stufst du in {{mekanism_advanced/adv_transmit}} und {{mekanism_advanced/adv_cube}} auf. Den Solargenerator zeigt {{mekanism_advanced/adv_solar}}."
+  ],
+  "en": [
+   "The recipe dump makes the [[mekanismgenerators:advanced_solar_generator]] from four solar generators, two infused alloys and three iron ingots, with no circuits and no iron block.",
+   "Advanced cables and cubes are upgraded in {{mekanism_advanced/adv_transmit}} and {{mekanism_advanced/adv_cube}}. The solar generator is in {{mekanism_advanced/adv_solar}}."
+  ],
+  "sources": [
+   "mekanismgenerators:generator/advanced_solar",
+   "config Mekanism/generators.toml (advancedSolarGeneration 300 J)"
+  ]
+ },
+ "mek_turbine": {
+  "de": [
+   "Den Aufbau gehst du im Kapitel Mekanism: Fortgeschritten durch, von {{mekanism_advanced/turbine_rotor}} bis {{mekanism_advanced/turbine}}. Auf vier Rotorblätter kommt eine [[mekanismgenerators:electromagnetic_coil]].",
+   "Den ersten Dampf liefert der Thermoelektrische Dampfkessel, siehe {{mekanism_advanced/boiler}}."
+  ],
+  "en": [
+   "You go through the build in the Mekanism: Advanced chapter, from {{mekanism_advanced/turbine_rotor}} to {{mekanism_advanced/turbine}}. Every four turbine blades need one [[mekanismgenerators:electromagnetic_coil]].",
+   "The first steam comes from the Thermoelectric Boiler, see {{mekanism_advanced/boiler}}."
+  ],
+  "sources": [
+   "mekanismgenerators:turbine/casing",
+   "config Mekanism/generators.toml (turbine bladesPerCoil 4, energyCapacityPerVolume 16000000 J)"
+  ]
+ },
+ "oritech_gens": {
+  "de": [
+   "Der [[oritech:basic_generator_block]] ist ein einzelner Block ohne Maschinenkerne. Auf Kronwerke sitzt ein Andesitgehäuse statt des Ofens im Rezept, dazu zwei Magnetspulen aus {{oritech/coils}}.",
+   "Bio- und Lavagenerator sind Multiblöcke und brauchen Maschinenkerne, siehe {{oritech/cores}}, {{oritech/bio_gen}} und {{oritech/lava_gen}}. Das Dampf-Addon zeigt {{oritech/addon_steam}}."
+  ],
+  "en": [
+   "The [[oritech:basic_generator_block]] is a single block, no machine cores. On Kronwerke an andesite casing replaces the furnace in its recipe, plus two magnetic coils from {{oritech/coils}}.",
+   "The bio and lava generators are multiblocks and need machine cores, see {{oritech/cores}}, {{oritech/bio_gen}} and {{oritech/lava_gen}}. The steam addon is in {{oritech/addon_steam}}."
+  ],
+  "sources": [
+   "oritech:crafting/basicgen",
+   "kubejs/server_scripts/kronwerke/links.js (furnace to andesite casing)",
+   "Oritech jar: BasicGeneratorEntity extends UpgradableGeneratorBlockEntity; Bio/Lava/FuelGeneratorEntity extend MultiblockGeneratorBlockEntity",
+   "config oritech-common.toml (generators)"
+  ]
+ },
+ "oritech_reactor": {
+  "de": [
+   "Die Uranstäbe kommen aus {{oritech/uranium}}, den Reaktor selbst zeigt {{oritech/reactor}}. Der Reaktor fasst 50 Millionen FE.",
+   "Weil der sichere Modus aus ist, kühl mehr als nötig und teste zuerst mit wenigen Stäben, weit weg von deiner Basis."
+  ],
+  "en": [
+   "The uranium rods come from {{oritech/uranium}}, the reactor itself is in {{oritech/reactor}}. The reactor holds 50 million FE.",
+   "With safe mode off, cool more than you need and test with a few rods first, far from your base."
+  ],
+  "sources": [
+   "config oritech-common.toml ([reactor] safeMode false, maxSize 64, reactorMaxEnergyStored 50000000, reactorMaxEnergyOutput 25000)",
+   "oritech:reactor_controller"
+  ]
+ },
+ "enderio": {
+  "de": [
+   "Für den [[enderio:stirling_generator]] brauchst du ein Gehäuse der Leere, Eisenzahnräder, Obsidian und Tiefenschiefer. Der Kondensator kommt aus {{enderio/capacitor}}.",
+   "Bessere Kondensatoren bringen mehr aus jedem Brennstoff, siehe {{enderio/cap_double}}. Die Fotovoltaikmodule zeigt {{enderio/solar}}, die Leitungen {{enderio/conduits}}."
+  ],
+  "en": [
+   "The [[enderio:stirling_generator]] needs a void chassis, iron gears, obsidian and deepslate. The capacitor comes from {{enderio/capacitor}}.",
+   "Better capacitors get more out of each piece of fuel, see {{enderio/cap_double}}. The photovoltaic modules are in {{enderio/solar}}, the conduits in {{enderio/conduits}}."
+  ],
+  "sources": [
+   "enderio:stirling_generator",
+   "config enderio/machines-common.toml (stirlingGenerator generation 40, photovoltaicCellRates, capacitorBankCapacity)"
+  ]
+ },
+ "industrial": {
+  "de": [
+   "Das Primitive Maschinengehäuse in der Mitte braucht auf Kronwerke ein Andesitgehäuse statt eines Redstoneblocks. Den Generator zeigt {{industrial/pitiful}}.",
+   "Den Biogenerator von Industrial Foregoing zeigt {{industrial/bio}}, den Biokraftstoff macht der Bioreaktor."
+  ],
+  "en": [
+   "On Kronwerke the Pity Machine Frame in the middle takes an andesite casing instead of a redstone block. {{industrial/pitiful}} shows the generator.",
+   "The Industrial Foregoing biofuel generator is in {{industrial/bio}}, the biofuel comes from the bioreactor."
+  ],
+  "sources": [
+   "industrialforegoing:pitiful_generator",
+   "kubejs/server_scripts/kronwerke/links.js (machine_frame_pity)",
+   "config industrialforegoing/machine-generator.toml (Pitiful powerPerTick 30, Biofuel powerPerTick 160)"
+  ]
+ },
+ "id_coal": {
+  "de": [
+   "Der [[integrateddynamics:coal_generator]] heißt im Spiel nur Generator. Die Energiebatterie im Rezept kannst du mit einer zweiten zusammenlegen, dann fasst sie mehr.",
+   "Für ein Kraftwerk taugt er wenig, für das Kabelnetz aus {{logistics/cables}} reicht er."
+  ],
+  "en": [
+   "The [[integrateddynamics:coal_generator]] is just called Generator in the game. You can combine the energy battery in its recipe with a second one to hold more.",
+   "It is weak as a power plant, but enough for the cable network from {{logistics/cables}}."
+  ],
+  "sources": [
+   "integrateddynamics:crafting/coal_generator",
+   "integrateddynamics:special/combine_batteries"
+  ]
+ },
+ "ie_diesel": {
+  "de": [
+   "Generator- und Kühlerblöcke baust du in {{immersive_heavy/generator_blocks}}, das Formen zeigt {{immersive_heavy/diesel}}. Der Generatorblock ist Stufe 3.",
+   "Biodiesel kommt aus der IE-Raffinerie oder aus PneumaticCraft, siehe {{pneumaticcraft/biodiesel}}. Den HV-Draht zeigt {{immersive_heavy/hv}}."
+  ],
+  "en": [
+   "Generator and radiator blocks are built in {{immersive_heavy/generator_blocks}}, forming is in {{immersive_heavy/diesel}}. The generator block is stage 3.",
+   "Biodiesel comes from the IE refinery or from PneumaticCraft, see {{pneumaticcraft/biodiesel}}. HV wire is in {{immersive_heavy/hv}}."
+  ],
+  "sources": [
+   "immersiveengineering:generator (stage 3)",
+   "config immersiveengineering-server.toml (dieselGen_output 4096)"
+  ]
+ },
+ "huge_diesel": {
+  "de": [
+   "Der [[createdieselgenerators:huge_diesel_engine]] braucht eine Dampfmaschine, Messingbleche, einen Messingblock, Flüssigkeitsrohre und ein Feuerzeug. Der Turbolader verdoppelt die Drehzahl, aber nicht den Verbrauch pro Takt.",
+   "Wie das ganze Dieselkraftwerk zusammenhängt, zeigt {{create_addons/modular_engine}}, Öl findest du mit {{create_addons/oil_scanner}}."
+  ],
+  "en": [
+   "The [[createdieselgenerators:huge_diesel_engine]] needs a steam engine, brass sheets, a brass block, fluid pipes and flint and steel. The turbocharger doubles the speed but not the burn rate.",
+   "{{create_addons/modular_engine}} shows how the whole diesel plant fits together, and {{create_addons/oil_scanner}} finds oil."
+  ],
+  "sources": [
+   "createdieselgenerators:crafting/huge_diesel_engine",
+   "config createdieselgenerators-server.toml (Turbocharged Speed Multiplier 2.0, Burn Rate Multiplier 1.0)"
+  ]
+ },
+ "pnc": {
+  "de": [
+   "Beide Rezepte sind auf Kronwerke ersetzt und brauchen den Einfachen Steuerschaltkreis von Mekanism, dazu Druckeisen und ein Fortgeschrittenes Druckrohr. Der [[pneumaticcraft:pneumatic_dynamo]] ist also ohne Platinenstraße zu haben.",
+   "Wie du die Wärme abführst, zeigt {{pneumaticcraft/heat_sink}}."
+  ],
+  "en": [
+   "Both recipes are replaced on Kronwerke and take Mekanism's Basic Control Circuit, plus compressed iron and an advanced pressure tube. So the [[pneumaticcraft:pneumatic_dynamo]] needs no circuit board line.",
+   "{{pneumaticcraft/heat_sink}} shows how to get rid of the heat."
+  ],
+  "sources": [
+   "kronwerke:added/pneumatic_dynamo",
+   "kronwerke:added/flux_compressor",
+   "kubejs/server_scripts/kronwerke/added.js"
+  ]
+ },
+ "flux": {
+  "de": [
+   "Der [[fluxnetworks:flux_core]] braucht auf Kronwerke einen Quelljuwel aus Ars Nouveau, ein Rezept gibt vier Kerne. Der [[fluxnetworks:flux_controller]] braucht einen Fortschrittlichen Steuerschaltkreis. Den Weg zeigt das Kapitel Flux Networks ab {{flux_networks/dust}}.",
+   "Nether und End laufen auf eigenen Servern. Ein Flux-Punkt dort hängt nicht an deinem Netz in der Oberwelt."
+  ],
+  "en": [
+   "On Kronwerke the [[fluxnetworks:flux_core]] needs a source gem from Ars Nouveau, one recipe gives four cores. The [[fluxnetworks:flux_controller]] needs an Advanced Control Circuit. The Flux Networks chapter shows the way from {{flux_networks/dust}}.",
+   "The Nether and the End run on servers of their own. A Flux point there is not part of your network in the overworld."
+  ],
+  "sources": [
+   "kronwerke:added/flux_core (count 4)",
+   "kronwerke:added/flux_controller",
+   "config fluxnetworks-server.toml (defaultLimit 800000, maximumPerPlayer 5)",
+   "core: KronwerkeConfig.java (dimensionServers)"
+  ]
+ },
+ "aura_rf": {
+  "de": [
+   "Für den [[naturesaura:rf_converter]] brauchst du zwei [[naturesaura:sky_ingot]], einen Token der Furcht, einen Token des Zorns und einen Umwandlungskatalysator. Der Himmelsbarren ist Stufe 3.",
+   "Weil er Aura abzieht, stell ihn nicht dorthin, wo deine Pflanzen und Rituale Aura brauchen."
+  ],
+  "en": [
+   "The [[naturesaura:rf_converter]] needs two [[naturesaura:sky_ingot]], a Token of Fear, a Token of Anger and a Transmutation Catalyst. The Ingot of the Skies is stage 3.",
+   "Since it drains aura, do not place it where your plants and rituals need aura."
+  ],
+  "sources": [
+   "naturesaura:rf_converter",
+   "naturesaura:sky_ingot (stage 3)"
+  ]
+ },
+ "furnace_gen": {
+  "de": [
+   "Das [[ironfurnaces:augment_generator]] kostet nur Stein, Redstone, Papier und einen Verstärker. Ein besserer Ofen gibt mehr Strom aus demselben Augment.",
+   "Den Ofen selbst stufst du mit den Upgrades von Iron Furnaces auf."
+  ],
+  "en": [
+   "The [[ironfurnaces:augment_generator]] only costs stone, redstone, paper and a repeater. A better furnace makes more power from the same augment.",
+   "You upgrade the furnace itself with the Iron Furnaces upgrade kits."
+  ],
+  "sources": [
+   "ironfurnaces:augments/augment_generator",
+   "config ironfurnaces-common.toml (generation per furnace)"
+  ]
+ },
+ "crystal_resonance": {
+  "de": [
+   "Ein [[ae2:crystal_resonance_generator]] liefert 20 AE pro Tick ins Netz. Den Bau zeigt {{ae2/resonance}}.",
+   "Ein großes Netz mit vielen Laufwerken braucht mehr, dann hilft ein Energieakzeptor an deinem FE-Kraftwerk."
+  ],
+  "en": [
+   "One [[ae2:crystal_resonance_generator]] feeds 20 AE per tick into the network. {{ae2/resonance}} shows the build.",
+   "A big network with many drives needs more, then an energy acceptor on your FE power plant helps."
+  ],
+  "sources": [
+   "config ae2-common.toml (crystalResonanceGeneratorRate 20.0)",
+   "ae2:network/crystal_resonance_generator"
+  ]
+ },
+ "appflux": {
+  "de": [
+   "Die FE-Zellen [[appflux:fe_1k_cell]] bis 16k sind Stufe 3, ab 64k Stufe 4. Auch der ME-Importbus zieht hier keinen Strom, Strom kommt nur über den [[appflux:flux_accessor]] hinein.",
+   "Wie die Zellen ins Laufwerk kommen, zeigt {{ae2/flux_cell}}."
+  ],
+  "en": [
+   "The FE cells [[appflux:fe_1k_cell]] up to 16k are stage 3, from 64k on stage 4. The ME Import Bus does not pull power here either, power only goes in through the [[appflux:flux_accessor]].",
+   "{{ae2/flux_cell}} shows how the cells go into a drive."
+  ],
+  "sources": [
+   "config appflux-common.toml ([flux_accessor] enable = false: no charging of the ME network; [misc] enable = false: no energy import by the ME Import Bus)",
+   "appflux:fe_16k_cell (stage 3), appflux:fe_64k_cell (stage 4)"
+  ]
+ },
+ "laserio_energy": {
+  "de": [
+   "Die [[laserio:card_energy]] steckt in einem Laserknoten, den Knoten verbindest du mit dem Laserschlüssel. Den Aufbau zeigen {{logistics/laser_node}} und {{logistics/laser_energy}}.",
+   "Eine Karte gibt höchstens 1 000 000 FE/t weiter."
+  ],
+  "en": [
+   "The [[laserio:card_energy]] goes into a laser node, and you link the nodes with the laser wrench. {{logistics/laser_node}} and {{logistics/laser_energy}} show the setup.",
+   "One card moves at most 1,000,000 FE/t."
+  ],
+  "sources": [
+   "config laserio-common.toml (card.energy_card max_fe_tick 1000000)",
+   "laserio:card_energy"
+  ]
+ },
+ "mycelial": {
+  "de": [
+   "Der [[industrialforegoing:mycelial_reactor]] entsteht im Auflösungsapparat, die Generatoren an der Werkbank. Fang mit {{industrial/myc_furnace}} an, den Reaktor zeigt {{industrial/myc_reactor}}.",
+   "Die Generatoren gehören dem Spieler, der sie setzt. Bau sie alle selbst, wenn sie für deinen Reaktor zählen sollen."
+  ],
+  "en": [
+   "The [[industrialforegoing:mycelial_reactor]] is made in the Dissolution Chamber, the generators at the crafting table. Start with {{industrial/myc_furnace}}, the reactor is in {{industrial/myc_reactor}}.",
+   "The generators belong to the player who places them. Place them all yourself if they are to count for your reactor."
+  ],
+  "sources": [
+   "industrialforegoing:dissolution_chamber/mycelial_reactor",
+   "industrialforegoing:mycelial_furnace"
+  ],
+  "client": [
+   "that the mycelial reactor only counts generators placed by its owner"
+  ]
+ },
+ "s4_choice": {
+  "de": [
+   "Eine Aufladung in der Energizing Orb kostet 20 Millionen FE und gibt **16** [[powah:crystal_nitro]], nicht einen. Den Netherstern brauchst du dafür trotzdem.",
+   "Polonium für die Fusionsrahmen holst du auf Kronwerke aus NuclearCraft, siehe {{mekanism_elite/polonium}}."
+  ],
+  "en": [
+   "One charge in the Energizing Orb costs 20 million FE and gives **16** [[powah:crystal_nitro]], not one. You still need the nether star.",
+   "On Kronwerke the polonium for the fusion frames comes from NuclearCraft, see {{mekanism_elite/polonium}}."
+  ],
+  "sources": [
+   "powah:energizing/nitro_crystal (energy 20000000, count 16)",
+   "nuclearcraft:crystallizer/polonium"
+  ]
+ },
+ "powah_nitro": {
+  "de": [
+   "Eine Aufladung von 20 Millionen FE gibt 16 [[powah:crystal_nitro]]. Dafür brauchst du schon einen laufenden Reaktor oder viele Furnatoren an den Energizing Rods.",
+   "Einen Netherstern bekommst du vom Wither. Das Aufrüsten selbst läuft wie bei {{powah/reactor_upgrade}}."
+  ],
+  "en": [
+   "One charge of 20 million FE gives 16 [[powah:crystal_nitro]]. That needs a running reactor or many furnators on the energizing rods.",
+   "The nether star comes from the Wither. Upgrading works as in {{powah/reactor_upgrade}}."
+  ],
+  "sources": [
+   "powah:energizing/nitro_crystal",
+   "config powah.json5 (nitro values)"
+  ]
+ },
+ "mek_ultimate": {
+  "de": [
+   "Die Elite- und Ultimativ-Schaltkreise machst du im Kapitel Mekanism: Elite, siehe {{mekanism_elite/welcome}} und {{mekanism_elite/ultimate}}. Kabel und Würfel stufst du dort in {{mekanism_elite/transmit}} und {{mekanism_elite/ult_storage}} auf.",
+   "Der Induktionsanschluss braucht einen Elite-Schaltkreis, die Zellen [[mekanism:basic_induction_cell]] Lithiumstaub, siehe {{mekanism_elite/lithium_dust}}."
+  ],
+  "en": [
+   "Elite and Ultimate circuits are made in the Mekanism: Elite chapter, see {{mekanism_elite/welcome}} and {{mekanism_elite/ultimate}}. You upgrade cables and cubes there in {{mekanism_elite/transmit}} and {{mekanism_elite/ult_storage}}.",
+   "The induction port needs an Elite circuit, the cells [[mekanism:basic_induction_cell]] need lithium dust, see {{mekanism_elite/lithium_dust}}."
+  ],
+  "sources": [
+   "mekanism:induction/port",
+   "mekanism:induction/cell/basic",
+   "config Mekanism/tiers.toml"
+  ]
+ },
+ "mek_fusion": {
+  "de": [
+   "Die [[mekanismgenerators:laser_focus_matrix]] braucht auf Kronwerke einen Quelledelsteinblock, ein Rezept gibt zwei. Die Rahmen brauchen Polonium Pellets aus NuclearCraft, siehe {{mekanism_elite/polonium}}.",
+   "Den Ablauf gehst du in Mekanism: Elite durch: {{mekanism_elite/laser}}, {{mekanism_elite/deuterium}}, {{mekanism_elite/tritium}}, {{mekanism_elite/fuel}} und {{mekanism_elite/fusion}}."
+  ],
+  "en": [
+   "On Kronwerke the [[mekanismgenerators:laser_focus_matrix]] needs a source gem block, one recipe gives two. The frames need polonium pellets from NuclearCraft, see {{mekanism_elite/polonium}}.",
+   "You go through it in Mekanism: Elite: {{mekanism_elite/laser}}, {{mekanism_elite/deuterium}}, {{mekanism_elite/tritium}}, {{mekanism_elite/fuel}} and {{mekanism_elite/fusion}}."
+  ],
+  "sources": [
+   "kronwerke:tech/laser_focus_matrix (count 2)",
+   "mekanismgenerators:reactor/frame",
+   "nuclearcraft:crystallizer/polonium",
+   "config Mekanism/generators.toml (fusion energyCapacity 1000000000 J)"
+  ]
+ },
+ "mekmm_large": {
+  "de": [
+   "Der Große Windgenerator steht in den Stufendaten erst in **Stufe 5**, nicht in Stufe 4. Er ist Teil des Antimaterie-Kapitels, siehe {{antimatter/wind}}.",
+   "Großer Wärmegenerator und Großer Gasgenerator sind Stufe 4. Für den Solar-Wärmegenerator findet sich im Rezept-Dump kein Rezept."
+  ],
+  "en": [
+   "In the stage data the Large Wind Generator only opens in **stage 5**, not stage 4. It is part of the Antimatter chapter, see {{antimatter/wind}}.",
+   "The Large Heat Generator and the Large Gas-Burning Generator are stage 4. The recipe dump has no recipe for the Solar Heat Generator."
+  ],
+  "sources": [
+   "kubejs/data/kronwerke/chapters/stages/stage5.json (mekmm:large_wind_generator)",
+   "stage4.json (mekmm:large_heat_generator, mekmm:large_gas_burning_generator)",
+   "recipe dump: nothing makes mekmm:solar_heat_generator",
+   "config MekanismMoreMachine/generators.toml"
+  ]
+ },
+ "nc_passive": {
+  "de": [
+   "Das [[nuclearcraft:uranium_rtg]] ist ein Block Uran-238 zwischen Graphitplatten und Basic Plates. Die Solarzellen fangen mit einem Tageslichtsensor und Kupferspulen an.",
+   "Den Weg zu Uran zeigt {{nuclearcraft/ores}}, die Solarzellen {{nuclearcraft/solar}}. Bau RTGs nicht neben Räume, in denen du dich lange aufhältst."
+  ],
+  "en": [
+   "The [[nuclearcraft:uranium_rtg]] is a block of uranium 238 between graphite plates and basic plates. The solar panels start from a daylight detector and copper coils.",
+   "{{nuclearcraft/ores}} shows the way to uranium, {{nuclearcraft/solar}} the solar panels. Do not build RTGs next to rooms you stay in for long."
+  ],
+  "sources": [
+   "nuclearcraft:uranium_rtg",
+   "nuclearcraft:solar_panel_basic"
+  ],
+  "client": [
+   "that RTGs give off radiation around them"
+  ]
+ },
+ "nc_fission": {
+  "de": [
+   "Den Reaktor baust du im Kapitel NuclearCraft, ab {{nuclearcraft/controller}} über {{nuclearcraft/cells}} und {{nuclearcraft/port}} bis {{nuclearcraft/reactor}}. Die Dampfturbine folgt in {{nuclearcraft/turbine}}.",
+   "Bau den ersten Reaktor fern der Basis, eine Kernschmelze zerstört die Umgebung."
+  ],
+  "en": [
+   "You build the reactor in the NuclearCraft chapter, from {{nuclearcraft/controller}} through {{nuclearcraft/cells}} and {{nuclearcraft/port}} to {{nuclearcraft/reactor}}. The steam turbine follows in {{nuclearcraft/turbine}}.",
+   "Build the first reactor away from your base, a meltdown wrecks the area."
+  ],
+  "sources": [
+   "nuclearcraft:fission_reactor_controller (stage 4)"
+  ]
+ },
+ "draconic_gen": {
+  "de": [
+   "Der [[draconicevolution:generator]] braucht einen [[draconicevolution:draconium_core]] aus Draconium, Tiefsilber und einem Diamanten, siehe {{draconic/core}}.",
+   "Den Generator zeigt {{draconic/generator}}. Als Notstrom neben dem Energiekern reicht er, als Kraftwerk nicht."
+  ],
+  "en": [
+   "The [[draconicevolution:generator]] needs a [[draconicevolution:draconium_core]] made from draconium, deepsilver and a diamond, see {{draconic/core}}.",
+   "{{draconic/generator}} shows the generator. It works as backup power next to the energy core, not as a power plant."
+  ],
+  "sources": [
+   "draconicevolution:machines/generator",
+   "draconicevolution:components/draconium_core"
+  ]
+ },
+ "draconic_core": {
+  "de": [
+   "Der [[draconicevolution:energy_core_stabilizer]] braucht auf Kronwerke eine [[botania:gaia_spirit]], dazu Diamanten und einen Partikelgenerator. Für vier Stabilisatoren brauchst du also vier Gaia-Seelen, siehe {{draconic/stabilizer}}.",
+   "Den Kern und die Pylonen zeigen {{draconic/energy_core}} und {{draconic/pylon}}, die Stufen ab {{draconic/tier2}}."
+  ],
+  "en": [
+   "On Kronwerke the [[draconicevolution:energy_core_stabilizer]] needs a [[botania:gaia_spirit]], plus diamonds and a particle generator. Four stabilizers therefore need four Gaia spirits, see {{draconic/stabilizer}}.",
+   "The core and the pylons are in {{draconic/energy_core}} and {{draconic/pylon}}, the tiers from {{draconic/tier2}}."
+  ],
+  "sources": [
+   "kronwerke:tech/energy_core_stabilizer",
+   "draconicevolution:machines/energy_core",
+   "config brandon3055/DraconicEvolution.cfg (coreCapacity)"
+  ]
+ },
+ "s5_choice": {
+  "de": [
+   "Die 100 Pellets sind der Grundwert: die Menge am Obelisken richtet sich nach der Zahl der aktiven Spieler. Schau am Obelisken nach, wie viel es gerade ist.",
+   "Ein Pellet sind 1 000 mB Antimaterie, jedes mB kostet im SPS 1 000 mB Polonium. Den Weg zeigt das Kapitel Mekanism: Antimaterie, ab {{antimatter/sps}}."
+  ],
+  "en": [
+   "The 100 pellets are the base amount: the amount at the obelisk follows the number of active players. Check the obelisk for the current amount.",
+   "One pellet is 1,000 mB of antimatter, and every mB costs 1,000 mB of polonium in the SPS. The Mekanism: Antimatter chapter shows the way, from {{antimatter/sps}}."
+  ],
+  "sources": [
+   "config/kronwerke/goals.json (stage5 mekanism:pellet_antimatter base 100, not fixed, scale true)",
+   "mekanism:processing/lategame/antimatter_pellet/from_gas (1000 mB)",
+   "config Mekanism/general.toml ([sps] inputPerAntimatter 1000, energyPerInput 1000000)"
+  ]
+ },
+ "mek_fission": {
+  "de": [
+   "Das [[mekanismgenerators:fission_reactor_casing]] ist Stufe 5. Den ganzen Weg vom Uran bis zum Start gehst du im Kapitel Mekanism: Antimaterie, ab {{antimatter/welcome}} bis {{antimatter/reactor}}.",
+   "Bau zuerst den Not-Aus ({{antimatter/logic}}) und den Schutzanzug ({{antimatter/hazmat}}), denn Kernschmelzen sind an."
+  ],
+  "en": [
+   "The [[mekanismgenerators:fission_reactor_casing]] is stage 5. You walk the whole way from uranium to start up in the Mekanism: Antimatter chapter, from {{antimatter/welcome}} to {{antimatter/reactor}}.",
+   "Build the emergency stop ({{antimatter/logic}}) and the hazmat suit ({{antimatter/hazmat}}) first, since meltdowns are on."
+  ],
+  "sources": [
+   "mekanismgenerators:fission_reactor/casing (stage 5)",
+   "config Mekanism/generators.toml ([fission_reactor.meltdowns] enabled true, radius 8, radiationMultiplier 50)"
+  ]
+ },
+ "draconic_reactor": {
+  "de": [
+   "Der [[draconicevolution:reactor_core]] entsteht in der Fusion aus Erwachtem Draconium, Draconium und zwei großen Chaosfragmenten. Die Fragmente bekommst du erst vom Chaoswächter, siehe {{draconic_chaos/guardian}}.",
+   "Den Bau zeigen {{draconic_chaos/reactor_parts}} und {{draconic_chaos/reactor}}. Bau ihn weit weg von allem, was dir oder anderen gehört."
+  ],
+  "en": [
+   "The [[draconicevolution:reactor_core]] is fusion crafted from awakened draconium, draconium and two large chaos fragments. You only get the fragments from the Chaos Guardian, see {{draconic_chaos/guardian}}.",
+   "{{draconic_chaos/reactor_parts}} and {{draconic_chaos/reactor}} show the build. Put it far away from anything that belongs to you or others."
+  ],
+  "sources": [
+   "draconicevolution:machines/reactor_core",
+   "config brandon3055/DraconicEvolution.cfg (disableLargeReactorBoom false)"
+  ]
+ },
+ "flux_gargantuan": {
+  "de": [
+   "Der Rezept-Dump baut den [[fluxnetworks:gargantuan_flux_storage]] aus sechs [[fluxnetworks:herculean_flux_storage]] und zwei Glasscheiben, ohne Fluxblöcke. Der Herkulische entsteht genauso aus sechs Standard-Speichern.",
+   "Siehe {{flux_networks/bigger_storage}}."
+  ],
+  "en": [
+   "The recipe dump makes the [[fluxnetworks:gargantuan_flux_storage]] from six [[fluxnetworks:herculean_flux_storage]] and two glass panes, no flux blocks. The Herculean is made the same way from six basic ones.",
+   "See {{flux_networks/bigger_storage}}."
+  ],
+  "sources": [
+   "fluxnetworks:gargantuan_flux_storage",
+   "fluxnetworks:herculean_flux_storage",
+   "config fluxnetworks-server.toml (gargantuanCapacity 128000000, gargantuanTransfer 720000)"
+  ]
+ },
+ "summary": {
+  "de": [
+   "Die Quest öffnet sich erst, wenn du alle fünf Welche-Quelle-Quests gelesen hast, die einzelnen Generatoren musst du nicht abhaken.",
+   "Außer den hier genannten Rezepten sind auf Kronwerke auch Dieselmotor und Generator von Just Dire Things an den Einfachen Steuerschaltkreis gebunden, und der Grundlegende Generator von Oritech an ein Andesitgehäuse."
+  ],
+  "en": [
+   "The quest opens once you have read all five which source when quests, you do not need to tick the single generators.",
+   "Besides the recipes named here, Kronwerke also ties the diesel engine and the Just Dire Things generator to the Basic Control Circuit, and Oritech's Basic Generator to an andesite casing."
+  ],
+  "sources": [
+   "tools/quests/chapters/list_power.py (summary deps)",
+   "kubejs/server_scripts/kronwerke/links.js",
+   "createdieselgenerators:crafting/diesel_engine",
+   "justdirethings:generatort1",
+   "oritech:crafting/basicgen"
+  ]
+ }
+}

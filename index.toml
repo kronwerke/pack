@@ -506,7 +506,7 @@ hash = "f97884b4d79b627e763ab9d8a2585a10b188ee43135c10ac8ee6e972235e1092"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/industrial.snbt"
-hash = "a1996b4cb15b15685623243ae0203e1e7e59b10e4a325d2e5479d5d9d002c41f"
+hash = "2e6703ef9a17e466d89042ad799dbb5cfc0f59ee1fce2ba567b988fb9ab99f17"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/irons_spells.snbt"
@@ -538,7 +538,7 @@ hash = "f6c77268939ce5b7ce6959b0b003b0b99f1ba585f99dd33a820d02717156dbae"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/malum.snbt"
-hash = "950f06cb4fd0960e1320047a5e8622332829adbe0ea3e5d4cbd31fe300b7c154"
+hash = "39127a5368ce3460beddac1d7ddcbb6275ab5d6590fc172f385ba16ba51af79d"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/mekanism.snbt"
@@ -546,7 +546,7 @@ hash = "bc8c8f17a8be991c06f34eec98ca6ae7bfe97d7a5064dc60f3934de2fbce63a9"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/mekanism_advanced.snbt"
-hash = "39719c068784ec87f33039312da51c43dcd064ea27da7578902b821d9a78c7d5"
+hash = "4eb5ead2946d5ae24d4d28d38f42e90d47c4edc9788f18ded1e37e1a403f3584"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/mekanism_elite.snbt"
@@ -562,7 +562,7 @@ hash = "e4b3be7c19092c4d3846c9a532d5494652b71fa50aa57a0eea36a2e28288ca95"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/nether.snbt"
-hash = "1623b9437d0205cd10712c150d2035a2da67bd2d3c8d5db601ce502a102f26fe"
+hash = "9cbc4c8a1c4c35fa88f5393a929f758f829ffd843d8931750a691bbbc3343e48"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/nuclearcraft.snbt"
@@ -622,7 +622,7 @@ hash = "7664f10ecf3ec902061e96720fc3289d5ba973d92f0042c4dd0c2504fec25b54"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/storage.snbt"
-hash = "b77b6edc6b3b76b743bd5b5c4ea863bf621377e57ee13c524cdfafbc6d4b1089"
+hash = "ee3255d1b27de9d53b978e471c4c8fc0bd8165b441304cb18434fea56115fa3c"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/the_end.snbt"
@@ -646,11 +646,11 @@ hash = "93c982c2e09101877cba15ed69d2eee71ed5be2243ee8dcdcc0734845932c8b6"
 
 [[files]]
 file = "config/ftbquests/quests/lang/de_de.snbt"
-hash = "4bfa6d79da671bfd87b31618dc046442a2544e5c2a9883be84d5d3c977e6d31d"
+hash = "a7ed4681644314b6178dd7e4d769c1cbd92b147e2775d4bcd8a0f641a334137e"
 
 [[files]]
 file = "config/ftbquests/quests/lang/en_us.snbt"
-hash = "a9c0940aa9d12e0f799270ab42a38de3e88a3f03596166dd023e757c35ff9586"
+hash = "f0e545726ad92e27a62743e5f87c4e232a57cb16ed021ca16984947825214517"
 
 [[files]]
 file = "config/ftbquests/quests/reward_tables/s1_common.snbt"
@@ -811,6 +811,10 @@ hash = "e9f2da276feb4deb28d2a7c7be17b8f9a427aaf2be6c48ffe6dce7edfb31a964"
 [[files]]
 file = "kubejs/assets/dnt/lang/en_us.json"
 hash = "1909c9605fdaa57886d3dd2beef8ae21d0a9423635a30dab858c4fd10f0f5cf6"
+
+[[files]]
+file = "kubejs/assets/draconicevolution/lang/de_de.json"
+hash = "eacb6796d3cf8e7c0a72270c06e0fe97ea21398f3328e13a8b686e2312017e26"
 
 [[files]]
 file = "kubejs/assets/evilcraft/lang/en_us.json"
@@ -4825,6 +4829,10 @@ file = "kubejs/assets/netherdepthsupgrade/lang/en_us.json"
 hash = "a994950066b76b254065ee05a374d7dcdfe963f4cabe0e2265fe62ee7ebec023"
 
 [[files]]
+file = "kubejs/assets/occultism/lang/de_de.json"
+hash = "849d0ba937706772385c436b2a627c9bb795e3d8dc059d8f58e3a780c69993fe"
+
+[[files]]
 file = "kubejs/assets/reliquary/lang/en_us.json"
 hash = "7fb4ba6b760aaff27575dcf1f1620f92c429855867f2114145bd8bbe9c77f59a"
 
@@ -5481,6 +5489,22 @@ file = "kubejs/data/ironfurnaces/recipe/upgrades/upgrade_vibranium.json"
 hash = "5179f2cb833123bb0b18b01ca7bbb87bfc407f9b1ce70e364d32d4812c06cb72"
 
 [[files]]
+file = "kubejs/data/kronwerke/advancement/quests/drawers_1.json"
+hash = "453fcbb2b9fb536e53eb8b29420a91adc357b866f2e2be4fe3f698ea384c33d8"
+
+[[files]]
+file = "kubejs/data/kronwerke/advancement/quests/drawers_2.json"
+hash = "31612379af91b37410a30695a1b9b8ab3440ba80e1d51cb2b2459d6c6a63f747"
+
+[[files]]
+file = "kubejs/data/kronwerke/advancement/quests/drawers_4.json"
+hash = "f129f893b53f34b7b0fa2e2c84282af54d46616f7e2215b61d8e862c69bc5e62"
+
+[[files]]
+file = "kubejs/data/kronwerke/advancement/quests/drawers_4x8.json"
+hash = "0acdbae71db76b3ce600e172d1335c4b83c78f8b4ef340bfe71d7a24658b1f63"
+
+[[files]]
 file = "kubejs/data/kronwerke/advancement/quests/hexerei_altar.json"
 hash = "186bf5ff830cc7f5a17824cfa1a1ac84405b7c2d4b1c87fb16e2323a9bc17e60"
 
@@ -5494,7 +5518,7 @@ hash = "7e54387594cdf45ec1d84d0b8e9eded4f7bc251f1fe39b0b2a105f1f22ea2da5"
 
 [[files]]
 file = "kubejs/data/kronwerke/chapters/stages/stage2.json"
-hash = "cca7610a4c303c92a9c634a95bfa1d0c2b5443c5b4ffb8a324aff01b7aa1b0a5"
+hash = "40dacd0686e2ee8785dc9e3755cf30414cfbce5a0da7bfb08bcc66f34b68bc0a"
 
 [[files]]
 file = "kubejs/data/kronwerke/chapters/stages/stage3.json"
@@ -8030,7 +8054,7 @@ hash = "7c1a2e52300cd12462057fd5954d80ff78c47fa49233ed464e14b8d8747798d9"
 
 [[files]]
 file = "kubejs/server_scripts/kronwerke/links.js"
-hash = "b4214918fc72e20417c2539d708c9697241efc2322fab627ba0f6ea6cced0f81"
+hash = "7f4c44f2d21f2ea44283a730baccb0a60843352eda7c5e92bf69ae23539c6243"
 
 [[files]]
 file = "kubejs/server_scripts/kronwerke/magic.js"

@@ -1,0 +1,550 @@
+{
+ "dark_gem": {
+  "de": [
+   "Dark Ore liegt in der ganzen Oberwelt vom Grund bis Y 66, dazu kommt eine zweite Lage ganz unten. Glück hebt beide Drops: Jede Stufe gibt bis zu einen [[evilcraft:dark_gem]] und einen [[evilcraft:dark_gem_crushed]] mehr, ohne Glück fällt kein Pulver, mit Behutsamkeit nur das Erz selbst.",
+   "Später geht es auch ohne Glück: Der Foliot Crusher ({{occultism/foliot_crusher}}) mahlt jeden Dark Gem zu einem Crushed Dark Gem. Witherskelette lassen auf Kronwerke mit 12 Prozent einen Dark Gem fallen, wenn du sie tötest, mit Plünderung öfter."
+  ],
+  "en": [
+   "Dark Ore generates across the whole overworld from the bottom up to Y 66, with a second layer deep down. Fortune raises both drops: every level adds up to one more [[evilcraft:dark_gem]] and one more [[evilcraft:dark_gem_crushed]]; without Fortune no dust drops at all, and Silk Touch gives only the ore block.",
+   "Later you can skip Fortune: the Foliot Crusher ({{occultism/foliot_crusher}}) grinds every Dark Gem into one Crushed Dark Gem. On Kronwerke wither skeletons drop a Dark Gem 12 percent of the time when you kill them, more often with Looting."
+  ],
+  "sources": [
+   "evilcraft jar: data/evilcraft/loot_table/blocks/dark_ore.json",
+   "evilcraft jar: data/evilcraft/worldgen/placed_feature/ore_dark.json, ore_dark_lower.json",
+   "evilcraft jar: data/evilcraft/neoforge/biome_modifier/add_feature_dark_ore.json (#minecraft:is_overworld)",
+   "occultism:crushing/dark_gem_dust_from_gem",
+   "occultism jar: data/c/tags/item/dusts/dark_gem.json (evilcraft:dark_gem_crushed)",
+   "kubejs/data/kronwerke/loot_table/inject/drop_6_dark_gem.json",
+   "kubejs/data/kronwerke/loot_modifiers/drop_6_dark_gem.json"
+  ]
+ },
+ "origins": {
+  "de": [
+   "Der [[evilcraft:darkened_apple]] tötet das Tier nicht sofort, er schadet ihm eine Weile. Die Anomalie bleibt nur, wenn es an diesem Effekt stirbt, also schlag nicht nach.",
+   "Das Buch liegt mit 20 Prozent auch in Verlieskisten, Minenschächten, Dörfern, Netherfestungen, Dschungeltempeln, Iglus und antiken Städten. Von hier geht es zu {{evilcraft/temple}} und {{evilcraft/exalted_crafter}}."
+  ],
+  "en": [
+   "The [[evilcraft:darkened_apple]] does not kill the animal at once, it hurts it for a while. The anomaly only appears if the animal dies from that effect, so do not hit it.",
+   "The book also turns up 20 percent of the time in dungeon chests, mineshafts, villages, nether fortresses, jungle temples, igloos and ancient cities. From here the chapter goes on to {{evilcraft/temple}} and {{evilcraft/exalted_crafter}}."
+  ],
+  "sources": [
+   "evilcraft:crafting/darkened_apple",
+   "evilcraft jar: assets/evilcraft/lang/en_us.json (info_book ... darkened_apple.text)",
+   "evilcraft jar: data/evilcraft/loot_modifiers/inject_origins_of_darkness_chests.json (chance 0.2)"
+  ],
+  "client": [
+   "Feeding the Darkened Apple to an animal and throwing a book into the anomaly"
+  ]
+ },
+ "dark_tank": {
+  "de": [
+   "Pro Tank brauchst du zwei [[born_in_chaos_v1:dark_metal_ingot]]: Neun Dunkelmetallstücke der Nachtmonster aus Born in Chaos ergeben einen Haufen, der im Schmelzofen zum Barren wird ({{bosses/dark_metal}}). Der große Tank aus [[evilcraft:dark_block]] und Eisenblöcken kommt ganz ohne Dunkelmetall aus.",
+   "Legst du einen Tank allein in die Werkbank, wird er geleert. Unter dem lila geschalteten Tank füllt sich jeder Behälter von selbst, etwa der Blood Infuser oder der Purifier."
+  ],
+  "en": [
+   "Each tank takes two [[born_in_chaos_v1:dark_metal_ingot]]: nine Pieces of Dark Metal from the Born in Chaos night monsters make a pile that the blast furnace turns into an ingot ({{bosses/dark_metal}}). The large tank made from [[evilcraft:dark_block]] and iron blocks needs no Dark Metal at all.",
+   "A tank alone in the crafting grid is emptied. Below a tank switched to purple, any container fills by itself, such as the Blood Infuser or the Purifier."
+  ],
+  "sources": [
+   "evilcraft:crafting/dark_tank",
+   "evilcraft:special/dark_tank_large",
+   "evilcraft:special/clear_dark_tank",
+   "born_in_chaos_v1:pileof_dark_metal_d",
+   "born_in_chaos_v1:dark_metalngot_k",
+   "evilcraft jar: assets/evilcraft/lang/en_us.json (info_book dark_tank.text2)"
+  ]
+ },
+ "temple": {
+  "de": [
+   "Du musst nicht auf jedes Wetter warten: Ein Clear-Container mit **2 Wassereimern** in der Werkbank wird zum Rain-Container, ein Rain-Container mit 2 Glowstonestaub zum Lightning-Container. Für die Empowered Inverted Potentia der {{evilcraft/mace}} zählt aber nur, dass beim Wurf auf den Accumulator ein Gewitter tobt.",
+   "Tempel stehen grob alle 40 Chunks in Wäldern, Ebenen, Bergen, Taigas, Wüsten, Savannen und Sümpfen, zwischen Y 64 und 90, mit 15 Prozent mit einer Kiste. Wirfst du später einen [[evilcraft:dark_stick]] auf den Boden, zeigt seine helle Seite zum nächsten Tempel."
+  ],
+  "en": [
+   "You do not have to wait for each weather: a Clear container with **2 water buckets** in the crafting grid becomes a Rain container, a Rain container with 2 glowstone dust a Lightning container. For the Empowered Inverted Potentia of the {{evilcraft/mace}}, though, what counts is a thunderstorm raging while you throw it at the accumulator.",
+   "Temples spawn roughly every 40 chunks in forests, plains, mountains, taigas, deserts, savannas and swamps, between Y 64 and 90, and 15 percent of them have a chest. Once you have a [[evilcraft:dark_stick]], drop it on the ground: its light side points to the nearest temple."
+  ],
+  "sources": [
+   "evilcraft:crafting/weather_container_rain",
+   "evilcraft:crafting/weather_container_lightning",
+   "evilcraft:environmental_accumulator/inverted_potentia_empowered (input_weather LIGHTNING)",
+   "/home/claude/kw/srv/config/evilcraft-common.toml (weather_container shapelessRecipes, darkTempleChestChance 0.15, envir_acc defaultTickCooldown 1200)",
+   "evilcraft jar: data/evilcraft/worldgen/structure/dark_temple.json, structure_set/dark_temples.json, tags/worldgen/biome/has_structure/dark_temple.json",
+   "evilcraft jar: org/cyclops/evilcraft/entity/item/EntityItemDarkStick.class (findNearestMapStructure STRUCTURE_DARK_TEMPLE)"
+  ],
+  "client": [
+   "The dropped Dark Stick turning towards the nearest Dark Temple"
+  ]
+ },
+ "ring": {
+  "de": [
+   "Geister entstehen auf diesem Server auch bei Kills ohne Spieler, also in Mobfarmen und auf Spiked Plates. Von selbst entstehen höchstens 5 in einem Umkreis von 32 Blöcken.",
+   "Für die Basis lohnen sich [[evilcraft:gem_stone_torch]]: Sie halten 15 Blöcke im Umkreis geisterfrei. Der [[evilcraft:burning_gem_stone]] im Inventar hält 64 Treffer aus. Gefangen werden die Geister erst mit {{evilcraft/focus}}."
+  ],
+  "en": [
+   "On this server spirits also appear on kills without a player, so in mob farms and on Spiked Plates. At most 5 appear on their own within 32 blocks.",
+   "For your base, [[evilcraft:gem_stone_torch]] pays off: it keeps 15 blocks around it free of spirits. The [[evilcraft:burning_gem_stone]] in your inventory lasts 64 hits. You catch the spirits only with {{evilcraft/focus}}."
+  ],
+  "sources": [
+   "evilcraft:crafting/vengeance_ring",
+   "/home/claude/kw/srv/config/evilcraft-common.toml (vengeance_spirit spawnOnNonPlayerKills true, spawnLimit 5, spawnLimitArea 32; gem_stone_torch area 15; burning_gem_stone maxDamage 64; vengeance_ring areaOfEffect 10)",
+   "evilcraft:crafting/gem_stone_torch",
+   "evilcraft:smelting/burning_gem_stone"
+  ]
+ },
+ "focus": {
+  "de": [
+   "Der Ring geht im Rezept auf, du brauchst also vier weitere [[evilcraft:dark_gem_crushed]] und vier Eisenbarren obendrauf. Willst du den Ring daneben weiter tragen, bau einen zweiten.",
+   "Fangen lohnt sich nur bei echten Geistern eines Mobs, die bei einem Kill entstehen. Für die Box geht es weiter mit {{evilcraft/box}}."
+  ],
+  "en": [
+   "The ring is used up in the recipe, so you need four more [[evilcraft:dark_gem_crushed]] and four iron ingots on top. If you want to keep wearing a ring as well, make a second one.",
+   "Catching is only worth it for real spirits of a mob, the ones that appear at a kill. The box comes next in {{evilcraft/box}}."
+  ],
+  "sources": [
+   "evilcraft:crafting/vengeance_focus"
+  ]
+ },
+ "box": {
+  "de": [
+   "Den [[minecraft:potion]] der Schwäche braust du ohne Netherwarze: ein fermentiertes Spinnenauge direkt in eine Wasserflasche. Die [[minecraft:ender_chest]] kostet 8 Obsidian und ein Enderauge, also Lohenstaub aus dem Nether.",
+   "Gefundene Boxen liegen mit 17 Prozent in Verliesen, Minenschächten, Festungsbibliotheken, Endstädten und der Bonustruhe. Ihre Geister sind alt und verzerrt; für den {{evilcraft/spirit_furnace}} fängst du dir besser einen frischen."
+  ],
+  "en": [
+   "You brew the [[minecraft:potion]] of Weakness without nether wart: a fermented spider eye straight into a water bottle. The [[minecraft:ender_chest]] costs 8 obsidian and an Eye of Ender, so blaze powder from the Nether.",
+   "Found boxes sit in 17 percent of dungeon, mineshaft, stronghold library, end city and bonus chests. Their spirits are old and degraded; for the {{evilcraft/spirit_furnace}} catch a fresh one."
+  ],
+  "sources": [
+   "evilcraft:special/box_of_eternal_closure (minecraft:weakness potions)",
+   "minecraft:ender_chest",
+   "evilcraft jar: data/evilcraft/loot_modifiers/inject_box_of_eternal_closure_chests.json (chance 0.1665)",
+   "evilcraft jar: assets/evilcraft/lang/en_us.json (info_book catching_spirits.text1)"
+  ]
+ },
+ "extractor": {
+  "de": [
+   "Am meisten Blut gibt der Sturz: Stirbt ein Mob an Fallschaden, bleibt ein Blood Stain mit 20 mB pro Lebenspunkt seiner vollen Gesundheit, bei einem Zombie also 400 mB. Mit dem {{evilcraft/vein_sword}} verdoppelt sich, was der Extractor pro Kill bekommt.",
+   "Ein voller Extractor sind genau die **5 Eimer**, die du für {{evilcraft/power_gem}} in die Welt setzt."
+  ],
+  "en": [
+   "A fall gives the most blood: a mob that dies from fall damage leaves a Blood Stain with 20 mB per hit point of its full health, 400 mB for a zombie. With the {{evilcraft/vein_sword}} the extractor gets twice as much per kill.",
+   "A full extractor holds exactly the **5 buckets** you place in the world for {{evilcraft/power_gem}}."
+  ],
+  "sources": [
+   "evilcraft:crafting/blood_extractor",
+   "/home/claude/kw/srv/config/evilcraft-common.toml (blood_stain bloodMBPerHP 20; blood_extractor containerSize 5000, 5 to 40 per HP; vein_sword extractionBoost 2.0)"
+  ]
+ },
+ "power_gem": {
+  "de": [
+   "Es müssen fünf echte Quellblöcke sein, fließendes Blut zählt nicht. Stehendes Blut wird mit der Zeit hart, außer es regnet darauf oder Wasser ist höchstens 4 Blöcke entfernt, also wirf den [[evilcraft:dark_gem]] bald hinein.",
+   "Was danach im Becken bleibt und trocknet, ist das [[evilcraft:hardened_blood]] für {{evilcraft/shards}}."
+  ],
+  "en": [
+   "It has to be five real source blocks, flowing blood does not count. Standing blood hardens over time unless rain falls on it or water is at most 4 blocks away, so throw the [[evilcraft:dark_gem]] in soon.",
+   "Whatever stays in the pool afterwards and dries is the [[evilcraft:hardened_blood]] for {{evilcraft/shards}}."
+  ],
+  "sources": [
+   "evilcraft jar: org/cyclops/evilcraft/item/ItemDarkGem.class (REQUIRED_BLOOD_BLOCKS 5, FluidState.isSource)",
+   "evilcraft jar: org/cyclops/evilcraft/block/BlockFluidBlood.class (randomTick: hardens unless rain with sky or water in area 4)"
+  ],
+  "client": [
+   "Whether the dark gem uses up the five blood source blocks"
+  ]
+ },
+ "shards": {
+  "de": [
+   "Mit dem Feuerzeug abgebaut gibt ein [[evilcraft:hardened_blood]] 5 bis 9 Shards, im Ofen immer 9. Damit Blut überhaupt hart wird, braucht es Schutz vor Regen und kein Wasser im Umkreis von 4 Blöcken: Ein überdachtes Becken aus den 5 Eimern des Extractors trocknet von selbst.",
+   "Die 8 Shards gehen in {{evilcraft/core}}, weitere später in Purifier und Vengeance Pickaxe."
+  ],
+  "en": [
+   "Broken with flint and steel, a [[evilcraft:hardened_blood]] gives 5 to 9 shards, smelted always 9. For blood to harden at all it needs cover from rain and no water within 4 blocks: a roofed pool from the extractor's 5 buckets dries by itself.",
+   "The 8 shards go into {{evilcraft/core}}, more later into the Purifier and the Vengeance Pickaxe."
+  ],
+  "sources": [
+   "evilcraft jar: data/evilcraft/loot_table/blocks/hardened_blood.json (flint_and_steel 5 to 9, silk touch block)",
+   "evilcraft:smelting/hardened_blood_shard",
+   "evilcraft jar: org/cyclops/evilcraft/block/BlockFluidBlood.class (randomTick)"
+  ]
+ },
+ "core": {
+  "de": [
+   "Der Core steckt in 11 Rezepten der Mod und ist der Engpass des Kapitels: Infuser und Spirit Furnace brauchen je einen, dazu Blood Chest, Purifier, Reanimator, Pendant, Kineticator und Colossal Blood Chest. Die 4 [[evilcraft:dark_power_gem]] der Belohnung reichen für vier weitere Cores.",
+   "Mehr Shards bekommst du am schnellsten, indem du die Becken aus {{evilcraft/power_gem}} trocknen lässt."
+  ],
+  "en": [
+   "The core is part of 11 recipes of the mod and is the bottleneck of the chapter: the Infuser and the Spirit Furnace need one each, and so do the Blood Chest, Purifier, Reanimator, Pendant, Kineticator and Colossal Blood Chest. The 4 [[evilcraft:dark_power_gem]] of the reward are enough for four more cores.",
+   "The fastest way to more shards is to let the pools from {{evilcraft/power_gem}} dry."
+  ],
+  "sources": [
+   "evilcraft:crafting/blood_infusion_core",
+   "helpq.py uses evilcraft:blood_infusion_core (11 recipes)"
+  ]
+ },
+ "infuser": {
+  "de": [
+   "Das [[forbidden_arcanus:darkstone]] liegt ganz unten, zwischen Y -64 und -51 ({{forbidden_arcanus/darkstone}}). Ein Power Gem und ein Undead Sapling brauchen im Infuser je 10 Sekunden, ein Power-Gem-Block 90 Sekunden.",
+   "Ein lila geschalteter Dark Tank direkt darüber oder ein Sanguinary Pedestal daneben hält den Tank voll. Die höheren Rezepte öffnest du mit {{evilcraft/tier1}}."
+  ],
+  "en": [
+   "[[forbidden_arcanus:darkstone]] lies at the very bottom, between Y -64 and -51 ({{forbidden_arcanus/darkstone}}). A Dark Power Gem and an Undead Sapling take 10 seconds each in the infuser, a Dark Power Gem Block 90 seconds.",
+   "A purple Dark Tank right above it or a Sanguinary Pedestal next to it keeps the tank full. The higher recipes open with {{evilcraft/tier1}}."
+  ],
+  "sources": [
+   "evilcraft:crafting/blood_infuser",
+   "evilcraft:blood_infuser/base/dark_power_gem (duration 200)",
+   "evilcraft:blood_infuser/base/undead_sapling (200)",
+   "evilcraft:blood_infuser/base/dark_power_gem_block (1800)",
+   "tools/quests/chapters/forbidden_arcanus.py (darkstone)"
+  ]
+ },
+ "undead_tree": {
+  "de": [
+   "Den [[minecraft:dead_bush]] musst du nicht schneiden: Jeder Tote Busch aus Wüste oder Tafelbergen geht genauso. Entrindete Undead Logs geben in der [[create:mechanical_saw]] 6 Planken statt 4.",
+   "Die Dark Sticks brauchst du für {{evilcraft/vein_sword}}, {{evilcraft/broom}}, {{evilcraft/kineticator}} und die Gemstone Torch."
+  ],
+  "en": [
+   "You do not have to cut the [[minecraft:dead_bush]] yourself: any dead bush from a desert or badlands works the same. Stripped Undead Logs give 6 planks instead of 4 in the [[create:mechanical_saw]].",
+   "You need the Dark Sticks for {{evilcraft/vein_sword}}, {{evilcraft/broom}}, {{evilcraft/kineticator}} and the Gemstone Torch."
+  ],
+  "sources": [
+   "evilcraft:blood_infuser/base/undead_sapling (minecraft:dead_bush)",
+   "create:cutting/runtime_generated/compat/evilcraft/undead_log_stripped_to_undead_planks",
+   "evilcraft:crafting/undead_planks",
+   "evilcraft:crafting/dark_stick"
+  ]
+ },
+ "vein_sword": {
+  "de": [
+   "Am meisten lohnt es sich bei Mobs mit viel Leben: Ein Enderman mit 40 Lebenspunkten gibt mit dem Schwert 400 bis 3 200 mB in den Extractor. Plünderung II wirkt dabei auch auf die normalen Drops."
+  ],
+  "en": [
+   "It pays off most on mobs with a lot of health: an Enderman with 40 hit points gives 400 to 3,200 mB to the extractor with this sword. Looting II also works on the normal drops."
+  ],
+  "sources": [
+   "evilcraft:crafting/vein_sword (looting 2)",
+   "/home/claude/kw/srv/config/evilcraft-common.toml (vein_sword extractionBoost 2.0, durability 32; blood_extractor 5 to 40 per HP)"
+  ]
+ },
+ "broom": {
+  "de": [
+   "Der Besen verbraucht **1 mB pro Tick**, ein Eimer reicht also für 50 Sekunden Flug. In EMI gibt es 40 Rezepte für Teile: Netherrack, Obsidian, Honigblöcke, Smaragde, Heuballen, Knochen, Köpfe und mehr, jedes gibt andere Werte.",
+   "Modifikatoren, die du später daraufcraftest, lassen sich nicht mehr entfernen. Gefundene Besen liegen mit 15 Prozent in Verliesen, Minenschächten, Festungsbibliotheken und Endstädten."
+  ],
+  "en": [
+   "The broom uses **1 mB per tick**, so a bucket lasts 50 seconds of flight. EMI shows 40 recipes for parts: netherrack, obsidian, honey blocks, emeralds, hay bales, bones, heads and more, each giving other stats.",
+   "Modifiers you craft onto it later can never be removed. Found brooms sit in 15 percent of dungeon, mineshaft, stronghold library and end city chests."
+  ],
+  "sources": [
+   "/home/claude/kw/srv/config/evilcraft-common.toml (broom bloodUsage 1)",
+   "helpq.py item evilcraft:broom_part (40 recipes)",
+   "evilcraft jar: assets/evilcraft/lang/en_us.json (info_book broom.modifiers.text.intro)",
+   "evilcraft jar: data/evilcraft/loot_modifiers/inject_broom.json (chance 0.15)"
+  ]
+ },
+ "spiked_plate": {
+  "de": [
+   "4 Schaden sind zwei Herzen: Ein Zombie stirbt nach fünf Treffern. Auch die Kills der Platte lassen Vengeance Spirits entstehen, stell also eine [[evilcraft:gem_stone_torch]] dazu, wenn du keine Geister willst.",
+   "Ihren vollen Wert hat die Platte oben auf {{evilcraft/pedestal}}."
+  ],
+  "en": [
+   "4 damage is two hearts: a zombie dies after five hits. Kills by the plate also spawn Vengeance Spirits, so add a [[evilcraft:gem_stone_torch]] if you do not want spirits.",
+   "The plate is worth most on top of {{evilcraft/pedestal}}."
+  ],
+  "sources": [
+   "evilcraft:crafting/spiked_plate",
+   "/home/claude/kw/srv/config/evilcraft-common.toml (spiked_plate damage 4.0, mobMultiplier 40; vengeance_spirit spawnOnNonPlayerKills true; gem_stone_torch area 15)"
+  ]
+ },
+ "pedestal": {
+  "de": [
+   "Für alle drei Promises zusammen brauchst du 210 Eimer, das sind gut 260 Zombies auf der Platte. Lass Monster aus einem Spawner oder einer dunklen Fläche auf die Platte laufen, statt sie zu jagen.",
+   "Ein Undead Tree daneben hilft: Unter seinem Laub entstehen kleine Blood Stains bis 25 mB, die das Pedestal ebenfalls einsaugt."
+  ],
+  "en": [
+   "The three Promises together need 210 buckets, a good 260 zombies on the plate. Let monsters from a spawner or a dark area walk onto the plate instead of hunting them.",
+   "An Undead Tree next to it helps: small Blood Stains of up to 25 mB form under its leaves, and the pedestal drinks those too."
+  ],
+  "sources": [
+   "evilcraft:crafting/sanguinary_pedestal_0",
+   "evilcraft:crafting/sanguinary_pedestal_1",
+   "/home/claude/kw/srv/config/evilcraft-common.toml (spiked_plate mobMultiplier 40, undead_leaves maxBloodStainAmount 25, sanguinary_pedestal efficiencyBoost 1.5)",
+   "evilcraft:blood_infuser/core/promise_acceptor_iron (10000), promise_acceptor_gold (40000), promise_acceptor_diamond (160000)"
+  ]
+ },
+ "tier1": {
+  "de": [
+   "Die erste Schale füllst du im Infuser ohne Promise: Dusted Bowl plus 5 Eimer, 50 Sekunden. Für den Acceptor muss der Tank mit **10 Eimern** randvoll sein, das dauert 25 Sekunden.",
+   "Velocity und Productivity brauchen eine Schale, die schon im Stufe-1-Infuser gefüllt wurde, und je einen eigenen Iron Promise Acceptor. Zusammen ergeben sie den {{evilcraft/effortless_ring}}."
+  ],
+  "en": [
+   "You fill the first bowl in the infuser without any Promise: Dusted Bowl plus 5 buckets, 50 seconds. For the acceptor the tank has to be completely full with **10 buckets**, which takes 25 seconds.",
+   "Velocity and Productivity need a bowl that was filled in a tier 1 infuser, and an Iron Promise Acceptor each. Together they make the {{evilcraft/effortless_ring}}."
+  ],
+  "sources": [
+   "evilcraft:crafting/bowl_of_promises_empty",
+   "evilcraft:crafting/bowl_of_promises_dusted",
+   "evilcraft:blood_infuser/core/bowl_of_promises_tier0 (5000, 1000 ticks)",
+   "evilcraft:blood_infuser/core/promise_acceptor_iron (10000, 500 ticks)",
+   "evilcraft:crafting/promise_tier_1",
+   "evilcraft:crafting/promise_speed_0",
+   "evilcraft:crafting/promise_efficiency_0"
+  ]
+ },
+ "tier2": {
+  "de": [
+   "Der Gold-Acceptor läuft 100 Sekunden und schluckt 40 Eimer, lass also das Pedestal an den Infuser angeschlossen. Die Schale muss mindestens aus dem Stufe-1-Infuser kommen.",
+   "Mit Stufe 2 öffnen {{evilcraft/bricks}} und {{evilcraft/colossal_chest}}. Ein Zombiekopf wird jetzt für 5 Eimer zum Creeperkopf."
+  ],
+  "en": [
+   "The gold acceptor runs 100 seconds and swallows 40 buckets, so keep the pedestal connected to the infuser. The bowl has to come from at least a tier 1 infuser.",
+   "Tier 2 opens {{evilcraft/bricks}} and {{evilcraft/colossal_chest}}. A zombie head now turns into a creeper head for 5 buckets."
+  ],
+  "sources": [
+   "evilcraft:blood_infuser/core/promise_acceptor_gold (40000, 2000 ticks, tier 1)",
+   "evilcraft:crafting/promise_tier_2",
+   "evilcraft:blood_infuser/convenience/minecraft_creeper_head (tier 2, 5000)"
+  ]
+ },
+ "tier3": {
+  "de": [
+   "Der Diamant-Acceptor braucht 160 Eimer und gut 4 Minuten. Danach lohnt sich vor allem ein Rezept: Ein Creeperkopf wird für 25 Eimer zum [[minecraft:wither_skeleton_skull]], ohne Festung.",
+   "Eine [[evilcraft:ender_tear]] (10 Prozent bei Endermen, die du tötest) wird für 3,5 Eimer zur Ghastträne. Garmonbozia selbst kostet im Infuser 50 Eimer."
+  ],
+  "en": [
+   "The diamond acceptor needs 160 buckets and a good 4 minutes. After that one recipe stands out: a creeper head becomes a [[minecraft:wither_skeleton_skull]] for 25 buckets, no fortress needed.",
+   "An [[evilcraft:ender_tear]] (10 percent from Endermen you kill) becomes a Ghast Tear for 3.5 buckets. Garmonbozia itself costs 50 buckets in the infuser."
+  ],
+  "sources": [
+   "evilcraft:blood_infuser/core/promise_acceptor_diamond (160000, 5000 ticks)",
+   "evilcraft:blood_infuser/convenience/minecraft_wither_skeleton_skull (tier 3, 25000)",
+   "evilcraft:blood_infuser/convenience/minecraft_ghast_tear (tier 3, 3500)",
+   "evilcraft jar: data/evilcraft/loot_modifiers/inject_ender_tear_enderman.json (0.1, killed_by_player)",
+   "evilcraft:blood_infuser/base/garmonbozia (50000)"
+  ]
+ },
+ "purifier": {
+  "de": [
+   "Den [[evilcraft:blook]] infundierst du im Stufe-1-Infuser: ein Buch plus 500 mB, 25 Sekunden. Für einen Fluch reicht 1 Eimer im Becken, Buch und Flasche wollen es voll.",
+   "Am bequemsten füllt ihn ein lila geschalteter Dark Tank direkt darüber. Welche Verzauberung ins Buch wandert, kannst du nicht wählen, also nimm Gegenstände mit nur einer."
+  ],
+  "en": [
+   "You infuse the [[evilcraft:blook]] in a tier 1 infuser: a book plus 500 mB, 25 seconds. One bucket in the basin is enough for a curse; the book and the bottle want it full.",
+   "The easiest way to fill it is a purple Dark Tank right above it. You cannot choose which enchantment moves into the book, so use items with only one."
+  ],
+  "sources": [
+   "evilcraft:crafting/purifier",
+   "evilcraft:blood_infuser/base/blook (tier 1, 500, 500 ticks)",
+   "evilcraft jar: assets/evilcraft/lang/en_us.json (info_book purifier.text1 to text4, dark_tank.text2)"
+  ]
+ },
+ "bricks": {
+  "de": [
+   "Für 33 Bricks craftest du 9 mal: das sind 9 [[evilcraft:dark_block]] (81 Dark Gems) und 36 Steinziegel, dazu 33 Eimer Blut. Jeder Brick braucht im Infuser gut 12 Sekunden.",
+   "Die Quest verlangt 32, die 4 Bricks der Belohnung decken den 33. ab."
+  ],
+  "en": [
+   "For 33 bricks you craft 9 times: 9 [[evilcraft:dark_block]] (81 Dark Gems) and 36 stone bricks, plus 33 buckets of blood. Each brick takes a good 12 seconds in the infuser.",
+   "The quest asks for 32; the 4 bricks of the reward cover the 33rd."
+  ],
+  "sources": [
+   "evilcraft:crafting/dark_brick (4 per craft)",
+   "evilcraft:blood_infuser/base/dark_blood_brick (tier 2, 1000, 250 ticks)"
+  ]
+ },
+ "spirit_furnace": {
+  "de": [
+   "Ein Dorfbewohner gibt nur in **1 von 20** Fällen einen Smaragd, also 5 Prozent. Ein Blaze hat wie ein Zombie 20 Lebenspunkte und passt in denselben Kasten; ein Witherskelett ist 2,4 Blöcke hoch und braucht innen 3 Blöcke Höhe.",
+   "Ein Spielergeist kostet 100 mB pro Tick, ein Boss 250 mB."
+  ],
+  "en": [
+   "A villager gives an emerald only **1 time in 20**, so 5 percent. A blaze has 20 hit points like a zombie and fits into the same box; a wither skeleton is 2.4 blocks tall and needs 3 blocks of inside height.",
+   "A player spirit costs 100 mB per tick, a boss 250 mB."
+  ],
+  "sources": [
+   "evilcraft:crafting/spirit_furnace",
+   "/home/claude/kw/srv/config/evilcraft-common.toml (spirit_furnace villagerDropEmeraldChance 20 as 1/X, mBPerTick 25, requiredTicksPerHp 10, playerMBPerTick 100, bossMBPerTick 250)"
+  ],
+  "client": [
+   "That a blaze spirit works in the 3 by 3 by 4 box and a wither skeleton needs an inside 3 blocks high"
+  ]
+ },
+ "cook": {
+  "de": [
+   "Rechne mit dem Blut: Der Furnace zieht 500 mB pro Sekunde, also **30 Eimer pro Minute**, solange er kocht. Ein Pedestal mit Spiked Plate allein hält da kaum mit, gib ihm mehrere Platten oder einen großen Dark Tank als Puffer.",
+   "Leg die Box nicht in den Spirit Reanimator: Der verbraucht den Geist. Wie die Drops ins Lager kommen, steht in {{list_transport/hopper}}."
+  ],
+  "en": [
+   "Mind the blood: the furnace draws 500 mB per second, so **30 buckets per minute**, while it cooks. One pedestal with a Spiked Plate can hardly keep up; give it several plates or a large Dark Tank as a buffer.",
+   "Do not put the box into the Spirit Reanimator: that uses up the spirit. How the drops get to your storage is in {{list_transport/hopper}}."
+  ],
+  "sources": [
+   "/home/claude/kw/srv/config/evilcraft-common.toml (spirit_furnace mBPerTick 25; spirit_reanimator clearBoxContents true)"
+  ]
+ },
+ "exalted_crafter": {
+  "de": [
+   "Den Blitz musst du nicht abwarten: Wirf den Crafter bei Gewitter auf den Environmental Accumulator eines Dark Temple, dann wird er zum [[evilcraft:exalted_crafter_empowered]]. Mit dem Wooden Exalted Crafter geht das genauso.",
+   "Das Gewitter machst du dir selbst mit einem Lightning-Container ({{evilcraft/temple}})."
+  ],
+  "en": [
+   "You do not have to wait for lightning: throw the crafter at the Environmental Accumulator of a Dark Temple during a thunderstorm and it becomes an [[evilcraft:exalted_crafter_empowered]]. The Wooden Exalted Crafter works the same way.",
+   "You make the thunderstorm yourself with a Lightning container ({{evilcraft/temple}})."
+  ],
+  "sources": [
+   "evilcraft:crafting/exalted_crafter",
+   "evilcraft:environmental_accumulator/exalted_crafter_empowered (input_weather LIGHTNING)",
+   "evilcraft:environmental_accumulator/exalted_crafter_wooden_empowered",
+   "evilcraft jar: assets/evilcraft/lang/en_us.json (info_book weather_container_benefits)"
+  ],
+  "client": [
+   "Throwing a Lightning container starts a thunderstorm"
+  ]
+ },
+ "blood_pearl": {
+  "de": [
+   "Nach dem Sprung bleibt auf diesem Server keine Langsamkeit, du kannst gleich weiterwerfen. Die 4 [[evilcraft:dark_power_gem]] machst du im Infuser für je 250 mB."
+  ],
+  "en": [
+   "On this server no slowness follows the jump, so you can throw again right away. You make the 4 [[evilcraft:dark_power_gem]] in the infuser for 250 mB each."
+  ],
+  "sources": [
+   "evilcraft:crafting/blood_pearl_of_teleportation",
+   "/home/claude/kw/srv/config/evilcraft-common.toml (blood_pearl_of_teleportation slownessDuration 0)",
+   "evilcraft:blood_infuser/base/dark_power_gem"
+  ],
+  "client": [
+   "No slowness after a Blood Pearl teleport"
+  ]
+ },
+ "blood_chest": {
+  "de": [
+   "Die Truhe repariert 10 Punkte pro Sekunde und zieht dabei 50 mB pro Sekunde. Ein Fluch kommt etwa einmal in 10 000 Reparaturschritten, Stöcke repariert sie gar nicht.",
+   "Ohne Flüche und schneller arbeitet die {{evilcraft/colossal_chest}}."
+  ],
+  "en": [
+   "The chest repairs 10 points per second and draws 50 mB per second doing so. A curse comes about once in 10,000 repair steps; sticks are not repaired at all.",
+   "The {{evilcraft/colossal_chest}} works faster and without curses."
+  ],
+  "sources": [
+   "evilcraft:crafting/blood_chest",
+   "/home/claude/kw/srv/config/evilcraft-common.toml (blood_chest ticksPerDamage 2, mBPerDamage 5, randomBadEnchantsChance 10000, itemBlacklist minecraft:stick)"
+  ]
+ },
+ "pendant": {
+  "de": [
+   "Der Anhänger fasst 5 Eimer. Jeder Durchgang kürzt den ersten schlechten Effekt um 30 Sekunden und kostet 100 mB, Feuer löschen kostet 500 mB.",
+   "Gefüllt wird er im linken Platz des Blood Infuser."
+  ],
+  "en": [
+   "The pendant holds 5 buckets. Each pass cuts 30 seconds off the first bad effect and costs 100 mB; putting out fire costs 500 mB.",
+   "You fill it in the left slot of the Blood Infuser."
+  ],
+  "sources": [
+   "evilcraft:crafting/invigorating_pendant",
+   "evilcraft:crafting/golden_string",
+   "/home/claude/kw/srv/config/evilcraft-common.toml (invig_pendant capacity 5000, usage 100, reduceDuration 30, fireUsage 500)"
+  ],
+  "client": [
+   "Filling the pendant in the left slot of the Blood Infuser"
+  ]
+ },
+ "vengeance_pickaxe": {
+  "de": [
+   "Mit Glück V lohnt sie sich vor allem auf Dark Ore: bis zu 10 Dark Gems und bis zu 5 Crushed Dark Gems pro Erz. Von den Geistern, die beim Abbauen entstehen, ist etwa jeder fünfte ein echter, der Rest sind Schwärme."
+  ],
+  "en": [
+   "With Fortune V it pays off most on Dark Ore: up to 10 Dark Gems and up to 5 Crushed Dark Gems per ore. About one in five spirits it spawns while mining is a real one, the rest are swarms."
+  ],
+  "sources": [
+   "evilcraft:crafting/vengeance_pickaxe (fortune 5, vengeance 3)",
+   "evilcraft jar: data/evilcraft/loot_table/blocks/dark_ore.json (4 to 5 plus uniform_bonus_count)",
+   "/home/claude/kw/srv/config/evilcraft-common.toml (vengeance_spirit nonDegradedSpawnChance 5)"
+  ]
+ },
+ "kineticator": {
+  "de": [
+   "Der [[evilcraft:blood_orb_filled]] braucht im Stufe-1-Infuser 10 Eimer und 2,5 Minuten. Er zieht auch Erfahrungskugeln, und solange du schleichst, zieht er nichts."
+  ],
+  "en": [
+   "The [[evilcraft:blood_orb_filled]] needs 10 buckets and 2.5 minutes in a tier 1 infuser. It also pulls experience orbs, and while you sneak it pulls nothing."
+  ],
+  "sources": [
+   "evilcraft:crafting/kineticator",
+   "evilcraft:crafting/blood_orb_empty",
+   "evilcraft:blood_infuser/base/blood_orb_filled (tier 1, 10000, 3000 ticks)",
+   "/home/claude/kw/srv/config/evilcraft-common.toml (kineticator moveXP true)",
+   "evilcraft jar: assets/evilcraft/lang/en_us.json (info_book kineticator.text1)"
+  ]
+ },
+ "mace": {
+  "de": [
+   "Ohne Gewitter am Himmel wird die Potentia nicht verstärkt. Mach dir eins mit einem Lightning-Container: Clear-Container plus 2 Wassereimer, dann plus 2 Glowstonestaub ({{evilcraft/temple}}).",
+   "Der Accumulator braucht nach jedem Wurf 60 Sekunden Pause. Die Empowered Potentia brauchst du auch für den {{evilcraft/necromancer_staff}}."
+  ],
+  "en": [
+   "The Potentia is not empowered without a thunderstorm. Make one with a Lightning container: Clear container plus 2 water buckets, then plus 2 glowstone dust ({{evilcraft/temple}}).",
+   "The accumulator needs 60 seconds of rest after every throw. You also need an Empowered Potentia for the {{evilcraft/necromancer_staff}}."
+  ],
+  "sources": [
+   "evilcraft:environmental_accumulator/inverted_potentia_empowered (input_weather LIGHTNING)",
+   "evilcraft:crafting/weather_container_rain",
+   "evilcraft:crafting/weather_container_lightning",
+   "/home/claude/kw/srv/config/evilcraft-common.toml (envir_acc defaultTickCooldown 1200)"
+  ],
+  "client": [
+   "Throwing a Lightning container starts a thunderstorm"
+  ]
+ },
+ "necromancer_staff": {
+  "de": [
+   "Der Stab fasst 10 Eimer, jeder Ruf kostet 2, also fünf Rufe pro Füllung. Jeder Kopf oder Schädel aus [[minecraft:skeleton_skull]], Zombiekopf, Creeperkopf und Witherskelettschädel geht."
+  ],
+  "en": [
+   "The staff holds 10 buckets and each call costs 2, so five calls per filling. Any head or skull works: [[minecraft:skeleton_skull]], zombie head, creeper head or wither skeleton skull."
+  ],
+  "sources": [
+   "evilcraft:crafting/necromancer_staff (#minecraft:skulls)",
+   "/home/claude/kw/srv/config/evilcraft-common.toml (necromancer_staff capacity 10000, usage 2000)"
+  ]
+ },
+ "effortless_ring": {
+  "de": [
+   "Rechne mit zwei Promises: zwei Schalen aus dem Stufe-1-Infuser (je 3 Dark Power Gems, 2 Crushed Dark Gems, 5 Eimer) und zwei Iron Promise Acceptors (je ein Eisenblock und 10 Eimer). Dazu ein Redstone- und ein Lapisblock."
+  ],
+  "en": [
+   "Plan for two Promises: two bowls from a tier 1 infuser (3 Dark Power Gems, 2 Crushed Dark Gems and 5 buckets each) and two Iron Promise Acceptors (an iron block and 10 buckets each). Add a redstone block and a lapis block."
+  ],
+  "sources": [
+   "evilcraft:crafting/effortless_ring",
+   "evilcraft:crafting/promise_speed_0",
+   "evilcraft:crafting/promise_efficiency_0",
+   "evilcraft:blood_infuser/core/bowl_of_promises_tier1",
+   "evilcraft:blood_infuser/core/promise_acceptor_iron"
+  ]
+ },
+ "colossal_chest": {
+  "de": [
+   "Insgesamt brauchst du 29 [[evilcraft:reinforced_undead_planks]]: 25 für den Würfel, 4 für die Truhe. Das sind 8 Undead Logs und 29 Eimer Blut."
+  ],
+  "en": [
+   "In total you need 29 [[evilcraft:reinforced_undead_planks]]: 25 for the cube, 4 for the chest. That is 8 Undead Logs and 29 buckets of blood."
+  ],
+  "sources": [
+   "evilcraft:crafting/colossal_blood_chest",
+   "evilcraft:blood_infuser/base/reinforced_undead_planks (tier 2, 1000)",
+   "evilcraft:crafting/undead_planks (4 per log)"
+  ]
+ },
+ "reanimator": {
+  "de": [
+   "Ein Ei dauert 25 Sekunden und kostet 2,5 Eimer. Die Box ist danach leer, nimm also nie die Box aus deinem {{evilcraft/spirit_furnace}}, sondern fang dafür einen eigenen Geist."
+  ],
+  "en": [
+   "An egg takes 25 seconds and costs 2.5 buckets. The box is empty afterwards, so never take the box from your {{evilcraft/spirit_furnace}}; catch a separate spirit for this."
+  ],
+  "sources": [
+   "evilcraft:crafting/spirit_reanimator",
+   "/home/claude/kw/srv/config/evilcraft-common.toml (spirit_reanimator requiredTicks 500, mBPerTick 5, clearBoxContents true)"
+  ]
+ }
+}

@@ -1,0 +1,695 @@
+{
+ "welcome": {
+  "de": [
+   "Die Beute ist pro Spieler, weil Lootr jede Truhe, jedes Fass und jede Lore mit Truhe für jeden einzeln füllt, auch innerhalb eines Teams ({{exploration/e_lootr}}). Pack dir vor dem ersten Ausflug ein paar [[waystones:return_scroll]] ein ({{exploration/e_return_scroll}})."
+  ],
+  "en": [
+   "Loot is per player because Lootr fills every chest, barrel and chest minecart separately for everyone, even within a team ({{exploration/e_lootr}}). Pack a few [[waystones:return_scroll]] before your first trip ({{exploration/e_return_scroll}})."
+  ],
+  "sources": [
+   "/home/claude/kw/srv/config/lootr-common.toml (team_loot false, convert_mineshafts true)",
+   "waystones:return_scroll"
+  ]
+ },
+ "e_map": {
+  "de": [
+   "Aktivierte Wegsteine erscheinen von selbst als Wegpunkte in JourneyMap. Auf der Karte von FTB Chunks beanspruchst du auch die Chunks deiner Basis, siehe {{tips/m_claim}}."
+  ],
+  "en": [
+   "Activated waystones show up as waypoints in JourneyMap by themselves. The FTB Chunks map is also where you claim the chunks of your base, see {{tips/m_claim}}."
+  ],
+  "sources": [
+   "/home/claude/kw/srv/config/waystones-common.toml (compatibility journeyMap true)",
+   "docs/SERVER.md"
+  ],
+  "client": [
+   "Waystones shown as JourneyMap waypoints",
+   "Claiming from the FTB Chunks map"
+  ]
+ },
+ "e_biomes": {
+  "de": [
+   "Den Biomnamen zeigt dir auch F3 jederzeit. Ein bestimmtes Biom suchst du am schnellsten mit {{exploration/e_compass}}, etwa den Archwood-Wald für Ars Nouveau ({{exploration/e_archwood}})."
+  ],
+  "en": [
+   "F3 also shows the biome name at any time. The quickest way to a particular biome is {{exploration/e_compass}}, for example the Archwood forest for Ars Nouveau ({{exploration/e_archwood}})."
+  ],
+  "sources": [
+   "mods/travelers-titles.pw.toml (side client)"
+  ]
+ },
+ "e_compass": {
+  "de": [
+   "Jeder Setzling und jeder Stamm zählt, auch aus anderen Mods. Er zeigt dir **nur Biome**; zu Bauwerken führen dich die Karten aus der Taverne ({{exploration/e_dnt_tavern}}).",
+   "Welche Biome sich für welche Mod lohnen, steht in {{list_dimensions/k_natures}}."
+  ],
+  "en": [
+   "Any sapling and any log counts, from other mods too. It shows you **only biomes**; the maps from the tavern lead you to structures ({{exploration/e_dnt_tavern}}).",
+   "Which biomes are worth it for which mod is in {{list_dimensions/k_natures}}."
+  ],
+  "sources": [
+   "naturescompass:natures_compass (#minecraft:saplings, #minecraft:logs)",
+   "/home/claude/kw/srv/config/naturescompass-common.toml (compassDurability 0)"
+  ]
+ },
+ "e_archwood": {
+  "de": [
+   "Am [[farmingforblockheads:market]] gibt es alle vier Setzlinge (blau, grün, lila, rot) für je einen Smaragd, dazu Magebloom-Samen für einen Smaragd. Wie du den Markt baust, steht in {{food/f_market}}."
+  ],
+  "en": [
+   "The [[farmingforblockheads:market]] sells all four saplings (blue, green, purple, red) for one emerald each, plus Magebloom seeds for one emerald. How to build the market is in {{food/f_market}}."
+  ],
+  "sources": [
+   "farmingforblockheads jar: data/farmingforblockheads/recipe/market/ars_nouveau/*_archwood_sapling.json, magebloom_crop.json",
+   "farmingforblockheads jar: data/ars_nouveau/market_presets/saplings.json, seeds.json (1 emerald)"
+  ]
+ },
+ "e_village": {
+  "de": [
+   "Der Wegstein im Dorf ist ein wilder Wegstein: Einmal anklicken, und du reist von jedem anderen Wegstein dorthin ({{exploration/e_waystone_find}}). Dörfer in Biomen ohne Vanilla-Dorf baut Towns and Towers ({{exploration/e_tnt_village}})."
+  ],
+  "en": [
+   "The waystone in a village is a wild waystone: click it once and you can travel there from any other waystone ({{exploration/e_waystone_find}}). Villages in biomes that have none in vanilla come from Towns and Towers ({{exploration/e_tnt_village}})."
+  ],
+  "sources": [
+   "/home/claude/kw/srv/config/waystones-common.toml (spawnInVillages REGULAR)"
+  ]
+ },
+ "e_bounty": {
+  "de": [
+   "Die Tafel würfelt ihre Angebote alle 45 Sekunden neu, ein unpassender Auftrag ist also bald weg. Die eigene [[bountiful:bountyboard]]: Eichenbretter in die Ecken, Eichenstämme oben und unten in die Mitte, Papier links und rechts, der Diamant in die Mitte."
+  ],
+  "en": [
+   "The board rerolls its offers every 45 seconds, so a bounty you do not like is soon gone. Your own [[bountiful:bountyboard]]: oak planks in the corners, oak logs top and bottom centre, paper left and right, the diamond in the middle."
+  ],
+  "sources": [
+   "/home/claude/kw/srv/config/bountiful/bountiful.json (updateFrequencySecs 45, shouldHaveTimersAndExpire true)",
+   "bountiful:bountyboard"
+  ]
+ },
+ "e_waystone_find": {
+  "de": [
+   "**Haustiere reisen nicht mit**, angeleinte Tiere schon. Reisen zu einem globalen Wegstein kosten keine Level.",
+   "Fehlen dir die Level, zeigt der Wegstein, wie viele es braucht. Kostenlos reist du mit Schriftrollen ({{exploration/e_return_scroll}}) und Warpplatten ({{exploration/e_warp_plate}})."
+  ],
+  "en": [
+   "**Pets do not travel along**, leashed animals do. Trips to a global waystone cost no levels.",
+   "If you lack levels, the waystone shows how many it takes. Scrolls ({{exploration/e_return_scroll}}) and warp plates ({{exploration/e_warp_plate}}) travel for free."
+  ],
+  "sources": [
+   "/home/claude/kw/srv/config/waystones-common.toml (transportPets DISABLED, transportLeashed ENABLED, warpRequirements target_is_global multiply_xp_cost(0))",
+   "waystones jar: assets/waystones/lang/en_us.json (tooltip.waystones.not_enough_xp)"
+  ]
+ },
+ "e_warp_dust": {
+  "de": [
+   "Warppulver steckt auch im [[waystones:dormant_shard]] (2 Pulver und ein Feuerstein) und in der Warpplatte (4 Pulver). Für zwei Platten in beide Richtungen ({{exploration/e_warp_plate}}) brauchst du 16 Pulver, also 4 Enderperlen und 4 Amethystscherben."
+  ],
+  "en": [
+   "Warp dust also goes into the [[waystones:dormant_shard]] (2 dust and a flint) and into the warp plate (4 dust). Two plates for both directions ({{exploration/e_warp_plate}}) take 16 dust, so 4 ender pearls and 4 amethyst shards."
+  ],
+  "sources": [
+   "waystones:warp_dust",
+   "waystones:dormant_shard",
+   "waystones:warp_plate"
+  ]
+ },
+ "e_warp_stone": {
+  "de": [
+   "Halt den Rechtsklick gut 1,5 Sekunden. Der Warpstein verliert bei jeder Reise Haltbarkeit, und die Reise kostet Level wie am Wegstein, 1 pro 100 Blöcke, höchstens 27.",
+   "Die [[ars_nouveau:source_gem]] machst du in der Imbuement Chamber von Ars Nouveau."
+  ],
+  "en": [
+   "Hold right click for a good 1.5 seconds. The warp stone loses durability with every trip, and the trip costs levels like at a waystone, 1 per 100 blocks, at most 27.",
+   "You make the [[ars_nouveau:source_gem]] in the Ars Nouveau Imbuement Chamber."
+  ],
+  "sources": [
+   "waystones:warp_stone",
+   "/home/claude/kw/srv/config/waystones-common.toml (warpStoneUseTime 32, enableDurability true, warpRequirements)",
+   "docs/STAGES.md (stage 1: imbuement chamber)"
+  ]
+ },
+ "e_own_waystone": {
+  "de": [
+   "Nur du kannst deinen Wegstein umbenennen und einstellen. Andere sehen ihn in ihrer Liste erst, wenn sie ihn selbst einmal angeklickt haben, also führ deine Freunde einmal hin."
+  ],
+  "en": [
+   "Only you can rename and configure your waystone. Others see it in their list only after they have clicked it once themselves, so bring your friends there once."
+  ],
+  "sources": [
+   "waystones:waystone",
+   "/home/claude/kw/srv/config/waystones-common.toml (restrictedWaystones PLAYER, defaultVisibility ACTIVATION)",
+   "waystones jar: assets/waystones/lang/en_us.json (restrictedWaystones tooltip)"
+  ]
+ },
+ "e_return_scroll": {
+  "de": [
+   "Halt den Rechtsklick gut 1,5 Sekunden, dann wirkt die Rolle. Kostenlos gilt auch für eine Reise aus einer anderen Dimension. Wer immer zum selben Ziel will, nimmt {{exploration/e_bound_scroll}}."
+  ],
+  "en": [
+   "Hold right click for a good 1.5 seconds and the scroll takes effect. Free also applies to a trip from another dimension. If you always want the same destination, use {{exploration/e_bound_scroll}}."
+  ],
+  "sources": [
+   "waystones:return_scroll",
+   "/home/claude/kw/srv/config/waystones-common.toml (scrollUseTime 32, source_is_scroll multiply_xp_cost(0))"
+  ]
+ },
+ "e_warp_scroll": {
+  "de": [
+   "Rezept: oben Goldnugget, Enderperle, Goldnugget, Mitte Goldnugget, Tintenbeutel, Goldnugget, unten 3 Papier. Auch diese Rolle kostet keine Level, selbst in eine andere Dimension nicht."
+  ],
+  "en": [
+   "Recipe: top gold nugget, ender pearl, gold nugget, middle gold nugget, ink sac, gold nugget, bottom 3 paper. This scroll costs no levels either, even into another dimension."
+  ],
+  "sources": [
+   "waystones:warp_scroll",
+   "/home/claude/kw/srv/config/waystones-common.toml (source_is_scroll multiply_xp_cost(0))"
+  ]
+ },
+ "e_sharestone": {
+  "de": [
+   "Oben 3 Steinziegel, in der Mitte Farbstoff, [[waystones:warp_stone]], Farbstoff, unten 3 Obsidian. Eine Reise zwischen Teilsteinen kostet Level wie an einem Wegstein, 1 pro 100 Blöcke.",
+   "Mehr zu Teilsteinen steht in {{list_dimensions/r_sharestone}}."
+  ],
+  "en": [
+   "Top 3 stone bricks, middle dye, [[waystones:warp_stone]], dye, bottom 3 obsidian. A trip between sharestones costs levels like a waystone, 1 per 100 blocks.",
+   "More on sharestones is in {{list_dimensions/r_sharestone}}."
+  ],
+  "sources": [
+   "waystones:orange_sharestone",
+   "/home/claude/kw/srv/config/waystones-common.toml (warpRequirements: no rule for sharestones)"
+  ],
+  "client": [
+   "Level cost of a sharestone trip"
+  ]
+ },
+ "e_warp_plate": {
+  "de": [
+   "Ein eingestellter Splitter führt **nur in eine Richtung**: Die Platte, in der er steckt, bringt dich zu der Platte, in der er eingestellt wurde. Für den Rückweg stellst du in der zweiten Platte einen zweiten Ruhenden Splitter ein und legst ihn in die erste.",
+   "Bleib eine Dreiviertelsekunde auf der Platte stehen. Reisen über Warpplatten kosten keine Level, auch zwischen Dimensionen nicht."
+  ],
+  "en": [
+   "An attuned shard leads **one way only**: the plate it sits in takes you to the plate where it was attuned. For the way back, attune a second Dormant Shard in the second plate and put it into the first.",
+   "Stand on the plate for three quarters of a second. Trips by warp plate cost no levels, not even between dimensions."
+  ],
+  "sources": [
+   "waystones jar: net/blay09/mods/waystones/block/entity/WarpPlateBlockEntity.class (attuneShard binds the shard to its own plate and ejects it; getTargetWaystone reads the shard in the plate)",
+   "waystones jar: assets/waystones/lang/en_us.json (tooltip.waystones.attuned_shard.move_to_other_warp_plate)",
+   "/home/claude/kw/srv/config/waystones-common.toml (warpPlateUseTime 15, source_is_warp_plate multiply_xp_cost(0))",
+   "waystones:warp_plate"
+  ],
+  "client": [
+   "Both directions working with two shards, one direction with one"
+  ]
+ },
+ "e_pickaxe": {
+  "de": [
+   "Für 10 Rahmen craftest du 5 mal: das sind 20 [[create:andesite_casing]], 20 [[naturesaura:infused_iron]] und 5 Quelljuwelen, dazu ein sechstes Juwel zum Anzünden. Infundiertes Eisen machst du am Naturaltar ({{start_here/m_infused}})."
+  ],
+  "en": [
+   "For 10 frames you craft 5 times: that is 20 [[create:andesite_casing]], 20 [[naturesaura:infused_iron]] and 5 Source Gems, plus a sixth gem to light it. You make Infused Iron at the natural altar ({{start_here/m_infused}})."
+  ],
+  "sources": [
+   "kubejs/server_scripts/grubenrahmen.js (kronwerke:grubenrahmen, 2 per craft)"
+  ]
+ },
+ "e_frame": {
+  "de": [
+   "Innen darf das Portal 2 bis 21 Blöcke breit und 3 bis 21 hoch sein, die Ecken dürfen aus irgendetwas sein. Das Quelljuwel kann auf jede Seite eines Rahmenblocks und **wird verbraucht**."
+  ],
+  "en": [
+   "Inside, the portal may be 2 to 21 blocks wide and 3 to 21 high; the corners may be anything. The Source Gem may go on any side of a frame block and **is used up**."
+  ],
+  "sources": [
+   "core: src/main/java/de/kronwerke/core/portal/PortalShape.java (MIN_W 2, MIN_H 3, MAX 21, corners)",
+   "core: src/main/java/de/kronwerke/core/portal/Ignite.java (any side, held.shrink(1))"
+  ]
+ },
+ "e_enter": {
+  "de": [
+   "Mit dir reist dein ganzer Spielstand: Inventar, Enderkiste, Effekte und was andere Mods an dir speichern. **Deine Tiere bleiben hier**, das Portal nimmt nur dich mit."
+  ],
+  "en": [
+   "Your whole player state travels with you: inventory, ender chest, effects and whatever other mods store on you. **Your pets stay behind**, the portal only takes you."
+  ],
+  "sources": [
+   "core: src/main/java/de/kronwerke/core/portal/Travel.java (player file sent as a whole; portal.pets message)"
+  ]
+ },
+ "e_dangers": {
+  "de": [
+   "Ein Bett in der Farmwelt setzt nur dort deinen Spawnpunkt, zuhause bleibt der alte. Drüben spawnen nur 60 Prozent der Monster und Tiere der anderen Welten.",
+   "Alle Regeln der Farmwelt stehen noch einmal in {{list_dimensions/d_mining_rules}}."
+  ],
+  "en": [
+   "A bed in the farm world sets your spawn point only there; at home your old one stays. Over there only 60 percent of the monsters and animals of the other worlds spawn.",
+   "All rules of the farm world are listed again in {{list_dimensions/d_mining_rules}}."
+  ],
+  "sources": [
+   "core: src/main/java/de/kronwerke/core/portal/Travel.java (spawn tags removed: a bed in the mining world is not main's)",
+   "/home/claude/kw/srv/config/kronwerke-common.toml (mobs capScale mining=0.6)",
+   "core: src/main/java/de/kronwerke/core/config/KronwerkeConfig.java (MOB_CAP_SCALE comment)"
+  ]
+ },
+ "e_ores": {
+  "de": [
+   "Ultimine nimmt bis zu 128 Blöcke und zählt Eisenerz und Tiefenschiefer-Eisenerz als eine Sorte, so wie jedes Erz mit seiner Tiefenschiefer-Variante. Jeder Block kostet dabei etwas Hunger, nimm Essen mit."
+  ],
+  "en": [
+   "Ultimine takes up to 128 blocks and counts iron ore and deepslate iron ore as one kind, like every ore with its deepslate variant. Every block costs a little hunger, so bring food."
+  ],
+  "sources": [
+   "config/ftbultimine-server.snbt (max_blocks 128, merge_tags c:ores/*, exhaustion_per_block 20)",
+   "ftb-ultimine jar: dev/ftb/mods/ftbultimine/FTBUltimine.class (exhaustion per block times 0.005)"
+  ]
+ },
+ "e_cobble": {
+  "de": [
+   "Der Schleichklick gibt nur die **27 Felder über der Hotbar** ab, nicht Hotbar, Nebenhand, Rüstung oder Rucksäcke. Du brauchst dabei etwas in der Hand und musst innerhalb von 5 Sekunden ein zweites Mal schleichend klicken ({{start_here/o_deposit}}).",
+   "Für die Quest zählt nur normaler Bruchstein, der Obelisk nimmt auch Bruchtiefenschiefer und bemoosten Bruchstein. Die Menge der Stein-Säule wächst mit der Zahl der aktiven Spieler, die 20 000 sind nur der Grundwert."
+  ],
+  "en": [
+   "The sneak click only hands in the **27 slots above the hotbar**, not the hotbar, offhand, armour or backpacks. You need something in your hand and a second sneak click within 5 seconds ({{start_here/o_deposit}}).",
+   "The quest only counts plain cobblestone; the obelisk also takes cobbled deepslate and mossy cobblestone. The stone pillar's amount grows with the number of active players; 20,000 is only the base value."
+  ],
+  "sources": [
+   "core: src/main/java/de/kronwerke/core/obelisk/Obelisk.java (sneak click asks, second click gives; hotbar and offhand stay)",
+   "core: src/main/java/de/kronwerke/core/goal/GoalManager.java (depositAll: backpack part of the inventory only)",
+   "config/kronwerke/goals.json (stage1 stone #c:cobblestones base 20000, scale true)",
+   "neoforge jar: data/c/tags/item/cobblestones.json (normal, infested, mossy, deepslate)"
+  ]
+ },
+ "e_diamonds": {
+  "de": [
+   "Diamanterz und Tiefenschiefer-Diamanterz zählen für Ultimine als eine Sorte. Bau Diamanten mit Glück ab, nicht mit Behutsamkeit: Mit Glück III fallen bis zu 4 pro Erz."
+  ],
+  "en": [
+   "Diamond ore and deepslate diamond ore count as one kind for Ultimine. Mine diamonds with Fortune, not Silk Touch: Fortune III drops up to 4 per ore."
+  ],
+  "sources": [
+   "config/ftbultimine-server.snbt (merge_tags c:ores/*)"
+  ]
+ },
+ "e_veins": {
+  "de": [
+   "Für Ultimine sind Kupfererz und Tiefenschiefer-Kupfererz eine Sorte, die Rohkupferblöcke der Ader aber nicht, die räumst du extra ab. Ein [[minecraft:raw_copper_block]] sind 9 Rohkupfer, aufbrechen in der Werkbank."
+  ],
+  "en": [
+   "For Ultimine copper ore and deepslate copper ore are one kind, but the raw copper blocks of the vein are not, so mine those separately. A [[minecraft:raw_copper_block]] is 9 raw copper; split it in the crafting grid."
+  ],
+  "sources": [
+   "config/ftbultimine-server.snbt (merge_tags c:ores/*)"
+  ],
+  "client": [
+   "That Ultimine leaves the raw blocks of a vein out when you start on an ore"
+  ]
+ },
+ "e_mine_waystone": {
+  "de": [
+   "Wegsteine, die du in der Farmwelt aktivierst, bleiben in deiner Liste, bis der Reset sie löscht. Was du zuhause hast, verwaltet allein die Hauptwelt, also bleibt es über jeden Reset erhalten."
+  ],
+  "en": [
+   "Waystones you activate in the farm world stay in your list until the reset deletes them. What you have at home is kept by the main world alone, so it survives every reset."
+  ],
+  "sources": [
+   "/home/claude/kw/srv/config/kronwerke-common.toml (network keepOnMain WaystonesData)",
+   "core: src/main/java/de/kronwerke/core/portal/Travel.java (lists joined: waystones found in the mining world stay known there)"
+  ]
+ },
+ "e_structures": {
+  "de": [
+   "Für Bauwerke gibt es keinen Kompass im Pack. Gezielt führen dich die Karten aus der Taverne ({{exploration/e_dnt_tavern}}) und für die Bosse das Kapitel {{bosses/welcome}}."
+  ],
+  "en": [
+   "There is no structure compass in the pack. The maps from the tavern ({{exploration/e_dnt_tavern}}) lead you to particular places, and for bosses see {{bosses/welcome}}."
+  ],
+  "sources": [
+   "/home/claude/kw/srv/mods (NaturesCompass only, no structure compass)"
+  ]
+ },
+ "e_lootr": {
+  "de": [
+   "Auch Mitglieder eines Teams bekommen jeder ihre eigene Beute, ihr müsst also nicht teilen. Minenschacht-Loren werden ebenso umgewandelt wie Rahmen mit Elytren."
+  ],
+  "en": [
+   "Even members of one team each get their own loot, so you do not have to share. Mineshaft minecarts are converted as well as item frames with elytras."
+  ],
+  "sources": [
+   "/home/claude/kw/srv/config/lootr-common.toml (team_loot false, convert_mineshafts true, convert_elytras_to_item_frames true)"
+  ]
+ },
+ "e_brush": {
+  "de": [
+   "Pinsle langsam und brich den Block nicht ab, sonst ist die Beute weg. Verdächtigen Sand findest du in Wüstentempeln, Wüstenbrunnen und warmen Ozeanruinen, verdächtigen Kies in kalten Ozeanruinen und Pfadruinen."
+  ],
+  "en": [
+   "Brush slowly and do not break the block, or the loot is lost. Suspicious sand is in desert pyramids, desert wells and warm ocean ruins, suspicious gravel in cold ocean ruins and trail ruins."
+  ],
+  "sources": [
+   "/home/claude/kw/srv/config/artifacts/general.toml (archaeologyChance 0.0625)",
+   "minecraft:brush"
+  ]
+ },
+ "e_artifacts": {
+  "de": [
+   "Artefakte liegen auch in Truhen von Bauwerken, und jeder Mimic lässt eines fallen ({{exploration/e_mimic}}). Mobs mit Artefakt sind wirklich selten: etwa einer von 700."
+  ],
+  "en": [
+   "Artifacts also turn up in structure chests, and every mimic drops one ({{exploration/e_mimic}}). Mobs wearing an artifact are really rare: about one in 700."
+  ],
+  "sources": [
+   "/home/claude/kw/srv/config/artifacts/general.toml (entityEquipmentChance 0.0015, artifactRarity 1.0)",
+   "artifacts jar: data/artifacts/loot_table/entities/mimic.json"
+  ],
+  "client": [
+   "The inventory button for the Curios slots"
+  ]
+ },
+ "e_campsite": {
+  "de": [
+   "Tatsächlich ist nur **jede zehnte** Truhe eines Lagers ein Mimic. Lager sind häufig: Der Server versucht 40 pro Chunk, also triffst du sie beim Höhlengraben oft."
+  ],
+  "en": [
+   "In fact only **one in ten** campsite chests is a mimic. Campsites are common: the server tries 40 per chunk, so you meet them often while caving."
+  ],
+  "sources": [
+   "config/artifacts/general.toml ([campsite] mimicChance 0.1, campsiteCount 40, minY -60, maxY 40)"
+  ]
+ },
+ "e_mimic": {
+  "de": [
+   "Ein Mimic lässt immer genau ein zufälliges Artefakt fallen. Da nur jede zehnte Lagertruhe einer ist, findest du einen am ehesten, wenn du mehrere Lager absuchst."
+  ],
+  "en": [
+   "A mimic always drops exactly one random artifact. Since only one in ten campsite chests is one, you find one best by checking several campsites."
+  ],
+  "sources": [
+   "artifacts jar: data/artifacts/loot_table/entities/mimic.json",
+   "config/artifacts/general.toml (mimicChance 0.1)"
+  ]
+ },
+ "e_yung_dungeon": {
+  "de": [
+   "Wie du einen Spawner mitnimmst, steht in {{apotheosis/spawner}}, die Farm dazu in {{farms/mobs_spawner}}. Verliestruhen enthalten ab Stufe 2 auch Teile aus EvilCraft, etwa eine Box of Eternal Closure ({{evilcraft/box}})."
+  ],
+  "en": [
+   "How to take a spawner with you is in {{apotheosis/spawner}}, the farm for it in {{farms/mobs_spawner}}. From stage 2 on, dungeon chests also hold EvilCraft items such as a Box of Eternal Closure ({{evilcraft/box}})."
+  ],
+  "sources": [
+   "tools/quests/chapters/apotheosis.py (spawner)",
+   "evilcraft jar: data/evilcraft/loot_modifiers/inject_box_of_eternal_closure_chests.json (minecraft:chests/simple_dungeon)"
+  ]
+ },
+ "e_yung_mineshaft": {
+  "de": [
+   "Minenschacht-Kisten bringen ab Stufe 2 auch EvilCraft-Funde: die Box of Eternal Closure, Besen, Condensed Blood und das Buch Origins of Darkness."
+  ],
+  "en": [
+   "From stage 2 on, mineshaft chests also bring EvilCraft finds: the Box of Eternal Closure, brooms, Condensed Blood and the book Origins of Darkness."
+  ],
+  "sources": [
+   "evilcraft jar: data/evilcraft/loot_modifiers/*.json (minecraft:chests/abandoned_mineshaft)"
+  ]
+ },
+ "e_yung_temples": {
+  "de": [
+   "Suchst du einen gezielt, wähl im {{exploration/e_compass}} eine Wüste, einen Dschungel oder einen Sumpf und such dort. Wüstentempel haben verdächtigen Sand für den Pinsel ({{exploration/e_brush}})."
+  ],
+  "en": [
+   "If you want one in particular, pick a desert, jungle or swamp in the {{exploration/e_compass}} and search there. Desert temples have suspicious sand for the brush ({{exploration/e_brush}})."
+  ],
+  "sources": [],
+  "client": [
+   "Suspicious sand in YUNG's Better Desert Temples"
+  ]
+ },
+ "e_yung_ocean": {
+  "de": [
+   "Das Monument räumst du erst in Ruhe aus, wenn alle drei Großen Wächter tot sind ({{exploration/e_elder_guardian}}). Ein Aquisator aus {{exploration/e_heart_sea}} hilft beim Tauchen enorm."
+  ],
+  "en": [
+   "You can clear the monument in peace only once all three Elder Guardians are dead ({{exploration/e_elder_guardian}}). A conduit from {{exploration/e_heart_sea}} helps a lot with diving."
+  ],
+  "sources": []
+ },
+ "e_yung_stronghold": {
+  "de": [
+   "Lohenstaub gibt es ohne Nether erst mit EvilCraft: Ein Knochen wird im Stufe-3-Infuser zur Lohenrute ({{evilcraft/tier3}}). In Festungsbibliotheken liegen ab Stufe 2 manchmal eine Box of Eternal Closure oder ein Besen."
+  ],
+  "en": [
+   "Without the Nether, blaze powder only comes from EvilCraft: a bone becomes a blaze rod in a tier 3 infuser ({{evilcraft/tier3}}). From stage 2 on, stronghold libraries sometimes hold a Box of Eternal Closure or a broom."
+  ],
+  "sources": [
+   "minecraft:ender_eye",
+   "evilcraft:blood_infuser/convenience/minecraft_blaze_rod (tier 3)",
+   "/home/claude/kw/srv/config/kronwerke-common.toml (dimensions: the_end stage4)",
+   "evilcraft jar: data/evilcraft/loot_modifiers/inject_box_of_eternal_closure_chests.json, inject_broom.json (stronghold_library)"
+  ]
+ },
+ "e_tnt_village": {
+  "de": [
+   "Mit dem {{exploration/e_compass}} suchst du gezielt ein Biom wie Pilzinsel, Tafelberge oder Blumenwald. Jedes neue Dorf bringt eigene Händler, also mehr Smaragde."
+  ],
+  "en": [
+   "Use the {{exploration/e_compass}} to look for a biome like mushroom fields, badlands or flower forest. Every new village brings its own traders, so more emeralds."
+  ],
+  "sources": []
+ },
+ "e_tnt_outpost": {
+  "de": [
+   "In 1.21 kommt der Überfall nicht vom Banner: Der Hauptmann lässt eine **Unheilvolle Flasche** fallen, und erst wer sie trinkt, bekommt das böse Omen. Die Flasche brauchst du auch für den Streitkolben ({{exploration/e_mace}})."
+  ],
+  "en": [
+   "In 1.21 the raid does not come from the banner: the captain drops an **Ominous Bottle**, and only whoever drinks it gets Bad Omen. You also need that bottle for the mace ({{exploration/e_mace}})."
+  ],
+  "sources": [
+   "minecraft:ominous_bottle (vanilla 1.21.1)"
+  ]
+ },
+ "e_dnt_tavern": {
+  "de": [
+   "Der Händler bietet sogar **zwei** Karten an, jede einmal für 14 Smaragde und einen Kompass. Ziele sind antike Stadt, Badlands-Mineraußenposten, Creeping Crypt, Undead Crypt, Wüsten- und Dschungelruine, Illager-Versteck und Illager Manor, Lone Citadel, Stray Fort, Toxic Lair, Dreizack-Denkmal und Hexenvilla."
+  ],
+  "en": [
+   "The trader even offers **two** maps, each once for 14 emeralds and a compass. Destinations are an ancient city, badlands miner outpost, Creeping Crypt, Undead Crypt, desert and jungle ruin, illager hideout and Illager Manor, Lone Citadel, Stray Fort, Toxic Lair, trident trial monument and witch villa."
+  ],
+  "sources": [
+   "dungeons-and-taverns jar: data/nova_structures/function/add_trade.mcfunction, add_trade2.mcfunction (14 emeralds, compass, maxUses 1)",
+   "dungeons-and-taverns jar: data/nova_structures/loot_table/tavern_quest.json (maps)"
+  ]
+ },
+ "e_dnt_crypts": {
+  "de": [
+   "Gezielt findest du sie mit der Karte aus {{exploration/e_dnt_tavern}}. Nimm Rückkehr-Schriftrollen statt Warpstein mit: Sie kosten keine Level ({{exploration/e_return_scroll}})."
+  ],
+  "en": [
+   "You find them on purpose with the map from {{exploration/e_dnt_tavern}}. Bring return scrolls rather than a warp stone: they cost no levels ({{exploration/e_return_scroll}})."
+  ],
+  "sources": [
+   "dungeons-and-taverns jar: data/nova_structures/loot_table/tavern_quest.json",
+   "/home/claude/kw/srv/config/waystones-common.toml (source_is_scroll)"
+  ]
+ },
+ "e_dnt_towers": {
+  "de": [
+   "Oben angekommen, setz dir auf der Karte einen Wegpunkt für alles, was du von dort siehst ({{exploration/e_map}}). Das Fernrohr der Belohnung hilft dabei."
+  ],
+  "en": [
+   "Once at the top, set map waypoints for everything you can see from there ({{exploration/e_map}}). The spyglass from the reward helps with that."
+  ],
+  "sources": []
+ },
+ "e_arise_land": {
+  "de": [
+   "Auf Kronwerke wachsen nur die großen Bosse mit der Gruppe, die Monster in diesen Dungeons nicht: Zu viert wird es hier einfach leichter. Nehmt Rückkehr-Schriftrollen für den Notfall mit."
+  ],
+  "en": [
+   "On Kronwerke only the big bosses grow with the group, the monsters in these dungeons do not: with four of you it simply gets easier. Take return scrolls along for emergencies."
+  ],
+  "sources": [
+   "/home/claude/kw/srv/config/kronwerke-common.toml (bosses scaling list, healthPerPlayer 0.6)"
+  ]
+ },
+ "e_arise_sea": {
+  "de": [
+   "Ein Wegpunkt auf der Karte am Boot hilft, wenn du über Bord gehst. Für den Weg nach Hause von hoher See reicht eine Rückkehr-Schriftrolle."
+  ],
+  "en": [
+   "A map waypoint at your boat helps if you go overboard. A return scroll is enough to get home from the open sea."
+  ],
+  "sources": []
+ },
+ "e_arise_sky": {
+  "de": [
+   "Fällst du doch, rettet dich ein Wassereimer nur, wenn du ihn kurz vor dem Boden setzt. Eine Wolke in einer Flasche aus Artifacts gibt dir einen Doppelsprung beim Aufstieg ({{exploration/e_artifacts}})."
+  ],
+  "en": [
+   "If you do fall, a water bucket only saves you if you place it just before the ground. A Cloud in a Bottle from Artifacts gives you a double jump on the way up ({{exploration/e_artifacts}})."
+  ],
+  "sources": []
+ },
+ "e_formations": {
+  "de": [
+   "Diese Funde sind klein und meist ungefährlich. Gut für den Anfang, bevor du dich an {{exploration/e_dangerous}} wagst."
+  ],
+  "en": [
+   "These finds are small and mostly harmless. Good for the start, before you dare {{exploration/e_dangerous}}."
+  ],
+  "sources": []
+ },
+ "e_dangerous": {
+  "de": [
+   "Diese Bosse wachsen mit der Gruppe: pro weiterem Spieler 60 Prozent mehr Leben und 15 Prozent mehr Schaden, bis zu 8 Spieler. Alles dazu steht in {{bosses/rules}}."
+  ],
+  "en": [
+   "These bosses grow with the group: per extra player 60 percent more health and 15 percent more damage, up to 8 players. Everything about it is in {{bosses/rules}}."
+  ],
+  "sources": [
+   "/home/claude/kw/srv/config/kronwerke-common.toml (bosses healthPerPlayer 0.6, damagePerPlayer 0.15, maxPlayers 8)"
+  ]
+ },
+ "e_bound_scroll": {
+  "de": [
+   "Oben Goldnugget, Feder, Goldnugget, unten 3 Papier ergeben drei [[waystones:blank_scroll]]. Beim Benutzen hältst du den Rechtsklick gut 1,5 Sekunden, wie bei jeder Schriftrolle."
+  ],
+  "en": [
+   "Top gold nugget, feather, gold nugget, bottom 3 paper make three [[waystones:blank_scroll]]. To use it, hold right click for a good 1.5 seconds, like every scroll."
+  ],
+  "sources": [
+   "waystones:blank_scroll",
+   "/home/claude/kw/srv/config/waystones-common.toml (scrollUseTime 32)"
+  ]
+ },
+ "e_altimeter": {
+  "de": [
+   "Die Kupferbarren kommen oben, unten, links und rechts um den Redstone, die Ecken bleiben frei. Mit einer leeren Karte wird er zur {{exploration/e_slice_map}}."
+  ],
+  "en": [
+   "The copper ingots go top, bottom, left and right of the redstone; the corners stay empty. With an empty map it becomes a {{exploration/e_slice_map}}."
+  ],
+  "sources": [
+   "supplementaries:altimeter",
+   "supplementaries:slice_map"
+  ]
+ },
+ "e_slice_map": {
+  "de": [
+   "Leg die Karte formlos aus Höhenmesser und leerer Karte. Für jede Grubenebene brauchst du eine eigene, beschrifte sie am Amboss mit der Höhe."
+  ],
+  "en": [
+   "Combine altimeter and empty map shapelessly. You need a separate one for each mining level; label it with the height at an anvil."
+  ],
+  "sources": [
+   "supplementaries:slice_map",
+   "/home/claude/kw/srv/config/supplementaries-common.toml (slice_map range_multiplier 0.25)"
+  ],
+  "client": [
+   "How much area a slice map covers compared to a normal map"
+  ]
+ },
+ "e_quiver": {
+  "de": [
+   "Köcher-Skelette sind selten, etwa 3 von 100 Skeletten, und auf leichtem Schwierigkeitsgrad gar keine. Aufgesammelte Pfeile wandern nur hinein, wenn diese Sorte schon im Köcher steckt; er wirkt überall im Inventar und bremst dich nicht."
+  ],
+  "en": [
+   "Quiver skeletons are rare, about 3 in 100 skeletons, and none at all on easy. Picked up arrows only go in if that kind is already in the quiver; it works anywhere in your inventory and does not slow you down."
+  ],
+  "sources": [
+   "/home/claude/kw/srv/config/supplementaries-common.toml (quiver slots 6, quiver_skeleton_spawn_chance 0.03, depends on difficulty, quiver_pickup, only_works_in_curio false, use_without_slow true)"
+  ]
+ },
+ "e_trial_chamber": {
+  "de": [
+   "Mit einer Unheilvollen Flasche vom Hauptmann einer Plündererpatrouille ({{exploration/e_tnt_outpost}}) werden die Spawner härter und geben die Schlüssel für {{exploration/e_mace}}. Zu mehreren lohnt sich die Kammer doppelt, weil jeder Tresor jedem einzeln öffnet."
+  ],
+  "en": [
+   "With an Ominous Bottle from the captain of a pillager patrol ({{exploration/e_tnt_outpost}}) the spawners get harder and give the keys for {{exploration/e_mace}}. A group gets twice the value, because every vault opens for each player separately."
+  ],
+  "sources": [
+   "minecraft:trial_key (vanilla 1.21.1)"
+  ]
+ },
+ "e_breeze": {
+  "de": [
+   "Die [[minecraft:breeze_rod]] brauchst du für den {{exploration/e_mace}}, heb also mindestens eine auf. Eine Rute gibt 4 [[minecraft:wind_charge]]."
+  ],
+  "en": [
+   "You need a [[minecraft:breeze_rod]] for the {{exploration/e_mace}}, so keep at least one. One rod gives 4 [[minecraft:wind_charge]]."
+  ],
+  "sources": [
+   "minecraft:mace",
+   "minecraft:wind_charge"
+  ]
+ },
+ "e_mace": {
+  "de": [
+   "Die Unheilvolle Flasche bekommst du vom Hauptmann einer Plündererpatrouille oder eines Außenpostens ({{exploration/e_tnt_outpost}}). Ein [[minecraft:heavy_core]] liegt nur selten in einem Unheilvollen Tresor, rechne mit mehreren Schlüsseln."
+  ],
+  "en": [
+   "You get the Ominous Bottle from the captain of a pillager patrol or outpost ({{exploration/e_tnt_outpost}}). A [[minecraft:heavy_core]] is only rarely in an Ominous Vault, so plan on several keys."
+  ],
+  "sources": [
+   "minecraft:mace (heavy core over breeze rod)"
+  ]
+ },
+ "e_evoker": {
+  "de": [
+   "Ein Totem reicht für einen Tod, danach ist es weg; für Bosskämpfe lohnt es sich, ein paar zu sammeln. Den Überfall startest du, wenn du eine Unheilvolle Flasche trinkst und ein Dorf betrittst ({{exploration/e_tnt_outpost}})."
+  ],
+  "en": [
+   "A totem saves you once and is then gone; for boss fights it pays to collect a few. You start a raid by drinking an Ominous Bottle and entering a village ({{exploration/e_tnt_outpost}})."
+  ],
+  "sources": []
+ },
+ "e_elder_guardian": {
+  "de": [
+   "Milch hebt die Abbaulähmung auf, aber nur bis der nächste Wächter sie erneuert. Den Nassen Schwamm trocknest du im Ofen."
+  ],
+  "en": [
+   "Milk removes Mining Fatigue, but only until the next guardian renews it. Dry the wet sponge in a furnace."
+  ],
+  "sources": []
+ },
+ "e_heart_sea": {
+  "de": [
+   "Der Rahmen des Aquisators braucht mindestens 16 Prismarinblöcke um ihn herum, damit er anspringt. Prismarin und Prismarinscherben holst du dir aus {{exploration/e_yung_ocean}}."
+  ],
+  "en": [
+   "The conduit frame needs at least 16 prismarine blocks around it to activate. Get prismarine and shards from {{exploration/e_yung_ocean}}."
+  ],
+  "sources": []
+ },
+ "a_affix": {
+  "de": [
+   "Was die Farben im Einzelnen bedeuten, zeigt {{apotheosis/rarities}}. Beute mit Affixen kannst du dort auch zerlegen, statt sie wegzuwerfen ({{apotheosis/salvaging}})."
+  ],
+  "en": [
+   "What each colour means is shown in {{apotheosis/rarities}}. Affix loot can be salvaged there instead of thrown away ({{apotheosis/salvaging}})."
+  ],
+  "sources": []
+ },
+ "e_dimensions": {
+  "de": [
+   "Ein gesperrtes Portal lässt dich vor seiner Stufe nicht durch. Dazu kommt in Stufe 4 noch die Reality Marble aus Mahou Tsukai. Die Übersicht mit allen Wegen steht in {{list_dimensions/welcome}}."
+  ],
+  "en": [
+   "A locked portal does not let you through before its stage. Stage 4 also adds the Reality Marble from Mahou Tsukai. The overview with every route is in {{list_dimensions/welcome}}."
+  ],
+  "sources": [
+   "/home/claude/kw/srv/config/kronwerke-common.toml (dimensions locked)",
+   "docs/STAGES.md"
+  ]
+ },
+ "e_explorer": {
+  "de": [
+   "Wie der Abend mit dem Nether abläuft, steht in {{list_dimensions/d_nether_event}}. Bis dahin lohnt ein Vorrat an Bruchstein für den Obelisken, denn die Stufe öffnet erst, wenn er voll ist."
+  ],
+  "en": [
+   "How the evening of the Nether opening goes is in {{list_dimensions/d_nether_event}}. Until then a stock of cobblestone for the obelisk pays off, because the stage only opens once it is full."
+  ],
+  "sources": [
+   "docs/STAGES.md (stage 2 opens with the event: Nether portal at spawn lit on stream)",
+   "config/kronwerke/goals.json (stage1)"
+  ]
+ }
+}

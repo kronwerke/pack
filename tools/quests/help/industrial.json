@@ -1,0 +1,641 @@
+{
+ "welcome": {
+  "de": [
+   "Das [[create:andesite_casing]] machst du wie in {{create/casing}}: Andesitlegierung auf entrindetes Holz. Fast jede Grundmaschine des Mods braucht ein Primitives Gehäuse, die Laserbohrer und Myzel-Generatoren eines der höheren.",
+   "Plan gleich mehrere ein: zwei Extraktoren, die Latexverarbeitung, der Auflösungsapparat und der Heizgenerator wollen je eines."
+  ],
+  "en": [
+   "Make the [[create:andesite_casing]] as in {{create/casing}}: andesite alloy on stripped wood. Almost every basic machine of the mod takes a Pity Machine Frame, laser drills and mycelial generators one of the higher ones.",
+   "Plan several: two extractors, the latex unit, the Dissolution Chamber and the Pitiful Generator take one each."
+  ],
+  "sources": [
+   "industrialforegoing:machine_frame_pity",
+   "kubejs/server_scripts/kronwerke/links.js (swap redstone block to andesite casing)"
+  ]
+ },
+ "extractor": {
+  "de": [
+   "Jeder Vorgang hat 1 Prozent Chance, den Stamm zu entrinden. Ein entrindeter Stamm gibt nur noch 1 mB und verschwindet dann, also brauchst du Nachschub, etwa vom {{industrial/gatherer}}.",
+   "Für den Primitiven Heizgenerator und alle weiteren Maschinen brauchst du mehr Primitive Gehäuse, als du denkst."
+  ],
+  "en": [
+   "Each operation has a 1 percent chance to strip the log. A stripped log only gives 1 mB and then disappears, so you need fresh logs, for example from the {{industrial/gatherer}}.",
+   "You will need more Pity Machine Frames for the following machines than you think."
+  ],
+  "sources": [
+   "industrialforegoing:fluid_extractor/acacia",
+   "industrialforegoing:fluid_extractor/default (breakChance 0.01, result air)",
+   "config/industrialforegoing/machine-core.toml (FluidExtractorConfig)"
+  ]
+ },
+ "latex": {
+  "de": [
+   "Rechne mit diesen Mengen: 750 mB pro Gummiklumpen, 250 mB pro Einfaches Gehäuse und pro Laserlinse, 1 000 mB pro Addon. Bei 1 bis 4 mB pro Vorgang lohnen sich viele Extraktoren an Akazie oder Mangrove."
+  ],
+  "en": [
+   "Budget with these amounts: 750 mB per dry rubber, 250 mB per Simple Machine Frame and per laser lens, 1,000 mB per addon. At 1 to 4 mB per operation many extractors on acacia or mangrove pay off."
+  ],
+  "sources": [
+   "industrialforegoing:dissolution_chamber/simple_machine_frame",
+   "industrialforegoing:dissolution_chamber/brown_laser_lens",
+   "industrialforegoing:dissolution_chamber/speed_addon_tier_1",
+   "IF jar: LatexProcessingUnitTile (750, 500)"
+  ]
+ },
+ "latex_unit": {
+  "de": [
+   "Beide Tanks fassen 16 000 mB, sie puffern also gut. Für das Wasser passt ein [[industrialforegoing:water_condensator]] daneben, der kostet 1 000 FE pro Vorgang.",
+   "Oben in die Mitte gehört ein ganzer [[minecraft:redstone_block]], nicht ein einzelner Redstone."
+  ],
+  "en": [
+   "Both tanks hold 16,000 mB, so they buffer well. A [[industrialforegoing:water_condensator]] next to it supplies the water for 1,000 FE per operation.",
+   "The top centre takes a [[minecraft:redstone_block]], not a single redstone dust."
+  ],
+  "sources": [
+   "industrialforegoing:latex_processing_unit",
+   "config/industrialforegoing/machine-core.toml (LatexProcessingUnitConfig)",
+   "config/industrialforegoing/machine-resource-production.toml (WaterCondensatorConfig)"
+  ]
+ },
+ "dryrubber": {
+  "de": [
+   "16 Klumpen sind 12 000 mB Latex. Akazie und Mangrove geben doppelt so viel wie Eiche, pflanz also die richtigen Bäume für dein Baumfeld."
+  ],
+  "en": [
+   "16 dry rubber are 12,000 mB latex. Acacia and mangrove give twice as much as oak, so plant the right trees for your tree farm."
+  ],
+  "sources": [
+   "IF jar: LatexProcessingUnitTile (750)",
+   "industrialforegoing:fluid_extractor/acacia",
+   "industrialforegoing:fluid_extractor/oak"
+  ]
+ },
+ "plastic": {
+  "de": [
+   "Statt im Ofen schmilzt auch die Legierungsschmelze von Ender IO Gummi zu Kunststoff, für 1 500 FE. Rezepte mit Kunststoff nehmen alles mit dem Tag Kunststoff, und das ist im Pack außer [[industrialforegoing:plastic]] nur die [[oritech:plastic_sheet]].",
+   "Für das Kapitel brauchst du grob: zwei pro Grundmaschine, sechs pro sechs Förderbänder, vier ums Mobfanggerät."
+  ],
+  "en": [
+   "Instead of a furnace, Ender IO's Alloy Smelter also turns rubber into plastic for 1,500 FE. Recipes with plastic take anything tagged plastic, which in this pack is only [[industrialforegoing:plastic]] and the [[oritech:plastic_sheet]].",
+   "Rough budget for the chapter: two per basic machine, six per six conveyors, four around the Mob Imprisonment Tool."
+  ],
+  "sources": [
+   "industrialforegoing:plastic",
+   "enderio:smelting/industrialforegoing/plastic",
+   "c:plastics (industrialforegoing jar, oritech jar)",
+   "industrialforegoing:conveyor",
+   "industrialforegoing:mob_imprisonment_tool"
+  ]
+ },
+ "pitiful": {
+  "de": [
+   "Er erzeugt nur 30 FE/t, kann aber bis zu 1 000 FE/t aus seinem Puffer abgeben. Ein voller Puffer reicht also für kurze Spitzen einer größeren Maschine.",
+   "Für mehr Strom baust du später den {{industrial/bio}} oder den {{industrial/myc_furnace}}."
+  ],
+  "en": [
+   "It only makes 30 FE/t but can hand out up to 1,000 FE/t from its buffer. A full buffer therefore covers short peaks of a bigger machine.",
+   "For more power you later build the {{industrial/bio}} or the {{industrial/myc_furnace}}."
+  ],
+  "sources": [
+   "config/industrialforegoing/machine-generator.toml (PitifulGeneratorConfig)",
+   "industrialforegoing:pitiful_generator"
+  ]
+ },
+ "gears": {
+  "de": [
+   "Das [[enderio:iron_gear]] ist auf Kronwerke dasselbe Item wie das von Ender IO. Eisen- und Goldzahnräder presst auch die Metallpresse mit der Zahnradform aus vier Barren ({{immersive_heavy/molds}}).",
+   "Diamantzahnräder lassen sich nicht pressen und kosten vier Diamanten. Allein Auflösungsapparat, Laserbohrer und Erz-Laserbasis wollen zusammen vier Stück."
+  ],
+  "en": [
+   "The [[enderio:iron_gear]] is the same item as Ender IO's on Kronwerke. The Metal Press with the gear mold also presses iron and gold gears from four ingots ({{immersive_heavy/molds}}).",
+   "Diamond gears cannot be pressed and cost four diamonds. The Dissolution Chamber, laser drill and Ore Laser Base alone take four of them."
+  ],
+  "sources": [
+   "industrialforegoing:iron_gear",
+   "immersiveengineering:metalpress/gear_iron",
+   "immersiveengineering:metalpress/gear_gold",
+   "industrialforegoing:diamond_gear",
+   "industrialforegoing:dissolution_chamber",
+   "industrialforegoing:laser_drill",
+   "industrialforegoing:ore_laser_base"
+  ]
+ },
+ "dissolution": {
+  "de": [
+   "**Auf Kronwerke** sitzen links und rechts zwei [[create:fluid_tank]] von Create statt Eimern, siehe {{create/tank}}. Der Eingangstank fasst 8 000 mB, der Ausgangstank 16 000 mB.",
+   "Fast alles Weitere in diesem Kapitel entsteht hier: alle Gehäuse ab Stufe 2, Addons, Laserlinsen, Pinke Schleimbarren und die Mechanische Erde."
+  ],
+  "en": [
+   "**On Kronwerke** the left and right slots take two Create [[create:fluid_tank]] instead of buckets, see {{create/tank}}. The input tank holds 8,000 mB, the output tank 16,000 mB.",
+   "Almost everything else in this chapter is made here: every frame from tier 2 up, addons, laser lenses, pink slime ingots and Mechanical Dirt."
+  ],
+  "sources": [
+   "industrialforegoing:dissolution_chamber",
+   "kubejs/server_scripts/kronwerke/round.js (bucket to create:fluid_tank)",
+   "config/industrialforegoing/machine-core.toml (DissolutionChamberConfig)"
+  ]
+ },
+ "frame_simple": {
+  "de": [
+   "Gebraucht wird der einzelne [[minecraft:nether_brick]] aus dem Ofen, nicht der Block. Netherrack im Ofen gibt ihn.",
+   "Der Vorgang dauert 300 Ticks. Danach baust du die {{industrial/laser_drill}} und den {{industrial/myc_furnace}}."
+  ],
+  "en": [
+   "It takes the single [[minecraft:nether_brick]] from the furnace, not the block. Smelt netherrack to get it.",
+   "The process takes 300 ticks. Next build the {{industrial/laser_drill}} and the {{industrial/myc_furnace}}."
+  ],
+  "sources": [
+   "industrialforegoing:dissolution_chamber/simple_machine_frame"
+  ]
+ },
+ "slaughter": {
+  "de": [
+   "Er kostet 400 FE pro Vorgang und hat je einen Tank für 8 000 mB Flüssigfleisch und Pinken Schleim. Ein [[industrialforegoing:animal_feeder]] daneben hält die Herde voll, er hört bei 35 Tieren im Bereich auf.",
+   "Pinker Schleim geht in {{industrial/frame_adv}}, Flüssigfleisch in die {{industrial/washing}} und die {{industrial/mechanical_dirt}}."
+  ],
+  "en": [
+   "It costs 400 FE per operation and has an 8,000 mB tank each for liquid meat and pink slime. An [[industrialforegoing:animal_feeder]] next to it keeps the herd full and stops at 35 animals in its area.",
+   "Pink slime goes into the {{industrial/frame_adv}}, liquid meat into the {{industrial/washing}} and {{industrial/mechanical_dirt}}."
+  ],
+  "sources": [
+   "config/industrialforegoing/machine-agriculture-husbandry.toml (SlaughterFactoryConfig, AnimalFeederConfig)",
+   "industrialforegoing:mob_slaughter_factory"
+  ]
+ },
+ "frame_adv": {
+  "de": [
+   "[[minecraft:netherite_scrap]] schmilzt du aus Antikem Schutt ({{nether/debris}}), für ein Gehäuse brauchst du zwei. Der Vorgang dauert 300 Ticks.",
+   "Dieses Gehäuse öffnet die Erz-Laserbasis, die Waschfabrik und die Mobmaschinen. Mit Brauner Linse bohrt die Laserbasis im Nether später sogar Antiken Schutt."
+  ],
+  "en": [
+   "Smelt [[minecraft:netherite_scrap]] from ancient debris ({{nether/debris}}); a frame takes two. The process takes 300 ticks.",
+   "This frame opens the Ore Laser Base, the Washing Factory and the mob machines. With a brown lens the laser base later even drills ancient debris in the Nether."
+  ],
+  "sources": [
+   "industrialforegoing:dissolution_chamber/advanced_machine_frame",
+   "industrialforegoing:laser_drill_ore/ancient_debris"
+  ]
+ },
+ "fluid_laser": {
+  "de": [
+   "Der Laserbohrer muss **einen Block Abstand** zur Basis haben. Lava gibt es nur im Nether zwischen Tiefe 5 und 20, 100 mB pro Vorgang; Öl 50 mB über Ozean oder Wüste zwischen Tiefe 20 und 60.",
+   "Der Wither ist auf Kronwerke ein Boss: Jeder weitere Spieler in der Nähe gibt ihm 60 Prozent mehr Leben, und ab zwei Spielern greift er zusätzlich an. Fang ihn also allein in der [[industrialforegoing:stasis_chamber]], die 1 000 FE pro Vorgang braucht ({{nether/f_wither}})."
+  ],
+  "en": [
+   "The laser drill needs **one block of space** to the base. Lava only comes in the Nether between depth 5 and 20, 100 mB per operation; oil 50 mB over ocean or desert between depth 20 and 60.",
+   "On Kronwerke the Wither is a boss: every extra player nearby gives it 60 percent more health, and with two or more players it attacks extra. So trap it alone in the [[industrialforegoing:stasis_chamber]], which takes 1,000 FE per operation ({{nether/f_wither}})."
+  ],
+  "sources": [
+   "industrialforegoing:laser_drill_fluid/ether",
+   "industrialforegoing:laser_drill_fluid/lava",
+   "industrialforegoing:laser_drill_fluid/oil",
+   "IF lang text.industrialforegoing.book.laser_drill",
+   "core: boss/BossScaling.java, config/KronwerkeConfig.java (healthPerPlayer 0.6, minecraft:wither)",
+   "config/industrialforegoing/machine-misc.toml (StasisChamberConfig)"
+  ]
+ },
+ "frame_supreme": {
+  "de": [
+   "Der [[industrialforegoing:wither_builder]] selbst braucht einen [[minecraft:nether_star]], zwei Witherskelettschädel und drei Seelensand. Den ersten Wither erlegst du also von Hand.",
+   "Mit Überlegenen Gehäusen baust du auch den {{industrial/myc_reactor}}, der dazu 500 mB Ethergas will."
+  ],
+  "en": [
+   "The [[industrialforegoing:wither_builder]] itself takes a [[minecraft:nether_star]], two wither skeleton skulls and three soul sand. So you kill the first Wither by hand.",
+   "Supreme frames also go into the {{industrial/myc_reactor}}, which wants 500 mB ether gas on top."
+  ],
+  "sources": [
+   "industrialforegoing:wither_builder",
+   "industrialforegoing:dissolution_chamber/supreme_machine_frame",
+   "industrialforegoing:dissolution_chamber/mycelial_reactor"
+  ]
+ },
+ "addons": {
+  "de": [
+   "Effizienz senkt den Stromverbrauch auf 90 Prozent. Die Reichweite hat **12 Stufen**, alle mit Redstone, Glasscheiben und vier Stück eines Materials: Bruchstein, Lapis, Knochenmehl, Eisenklumpen, Kupfer, Goldklumpen, Eisen, Gold, Quarz, Diamant, Geplatzte Chorusfrucht, Smaragd.",
+   "Jede Stufe vergrößert den Bereich um einen Block mehr als die vorige. Das Addon Stufe 12 ist eine Zutat für den {{industrial/infinity_drill}}."
+  ],
+  "en": [
+   "Efficiency lowers power use to 90 percent. Range has **12 tiers**, all with redstone, glass panes and four of one material: cobblestone, lapis, bone meal, iron nuggets, copper, gold nuggets, iron, gold, quartz, diamond, popped chorus fruit, emerald.",
+   "Each tier adds one block more than the one before. The tier 12 addon goes into the {{industrial/infinity_drill}}."
+  ],
+  "sources": [
+   "industrialforegoing:dissolution_chamber/efficiency_addon_tier_1",
+   "industrialforegoing:dissolution_chamber/range_addon_tier_0 to _tier_11",
+   "IF jar: item/addon/RangeAddonItem (name and range are tier + 1)"
+  ]
+ },
+ "sower": {
+  "de": [
+   "Die [[minecraft:flower_pot]] oben und die Eisenzahnräder unten sind die Zutaten, die du leicht vergisst. Ein Vorgang kostet 1 000 FE.",
+   "Mit der {{industrial/gatherer}} daneben wird daraus ein Feld, das sich selbst erntet."
+  ],
+  "en": [
+   "The [[minecraft:flower_pot]] on top and the iron gears below are the parts people forget. One operation costs 1,000 FE.",
+   "With the {{industrial/gatherer}} next to it the field harvests itself."
+  ],
+  "sources": [
+   "industrialforegoing:plant_sower",
+   "config/industrialforegoing/machine-agriculture-husbandry.toml (PlantSowerConfig)"
+  ]
+ },
+ "gatherer": {
+  "de": [
+   "Ihr Schlammtank fasst 8 000 mB. Ist er voll, macht die [[industrialforegoing:sludge_refiner]] für 40 FE/t etwas Brauchbares daraus.",
+   "Der Ethertank fasst nur 1 000 mB, dafür reicht ein Eimer aus der {{industrial/fluid_laser}}."
+  ],
+  "en": [
+   "Its sludge tank holds 8,000 mB. When it fills up, the [[industrialforegoing:sludge_refiner]] turns it into something useful for 40 FE/t.",
+   "The ether tank only holds 1,000 mB, so one bucket from the {{industrial/fluid_laser}} goes a long way."
+  ],
+  "sources": [
+   "config/industrialforegoing/machine-agriculture-husbandry.toml (PlantGathererConfig)",
+   "config/industrialforegoing/machine-resource-production.toml (SludgeRefinerConfig)"
+  ]
+ },
+ "sewer": {
+  "de": [
+   "Laut Handbuch sammelt der Güllesammler von den Tieren, die über ihm stehen. Er kostet nur 10 FE pro Vorgang; Gülle und Essenz haben je einen Tank für 8 000 mB.",
+   "Für den Güllekomposter brauchst du einen Ofen, zwei Kolben, Ziegel und ein Eisenzahnrad. Der Dünger geht in [[industrialforegoing:plant_fertilizer]] und [[industrialforegoing:hydroponic_bed]]."
+  ],
+  "en": [
+   "The manual says the Sewer collects from the animals standing on top of it. It costs only 10 FE per operation; sewage and essence each have an 8,000 mB tank.",
+   "The Sewage Composter takes a furnace, two pistons, bricks and an iron gear. The fertilizer goes into the [[industrialforegoing:plant_fertilizer]] and the [[industrialforegoing:hydroponic_bed]]."
+  ],
+  "sources": [
+   "IF lang text.industrialforegoing.book.sewer",
+   "config/industrialforegoing/machine-agriculture-husbandry.toml (SewerConfig)",
+   "industrialforegoing:sewage_composter"
+  ]
+ },
+ "bio": {
+  "de": [
+   "Jede weitere Sorte hebt den Ertrag aller Zutaten um 10 mB; mit neun verschiedenen Sorten gibt der Reaktor 1 440 mB pro Durchgang. Ein Eimer [[industrialforegoing:biofuel_bucket]] hält den Generator 4 000 Ticks und gibt 640 000 FE.",
+   "Laut Handbuch versorgt ein Bioreaktor etwa 28 Generatoren. Ein Vorgang des Reaktors kostet 400 FE."
+  ],
+  "en": [
+   "Each extra kind raises the yield of all ingredients by 10 mB; with nine different kinds the reactor makes 1,440 mB per batch. A [[industrialforegoing:biofuel_bucket]] runs the generator for 4,000 ticks and gives 640,000 FE.",
+   "The manual says one Bioreactor feeds about 28 generators. One reactor operation costs 400 FE."
+  ],
+  "sources": [
+   "IF lang text.industrialforegoing.book.bioreactor, book.biofuel_generator",
+   "config/industrialforegoing/machine-generator.toml"
+  ]
+ },
+ "mit": {
+  "de": [
+   "Gefangene Mobs dienen auch als Filter: Erkennen-, Abwerfen- und Hochschleudern-Upgrades der {{industrial/conveyor}} reagieren damit nur auf diese Mobart.",
+   "Gezähmte Tiere darf jeder einfangen, nicht nur ihr Besitzer; so ist das Pack eingestellt."
+  ],
+  "en": [
+   "Captured mobs also work as filters: the detection, dropping and bouncing upgrades of the {{industrial/conveyor}} then react only to that mob type.",
+   "Anyone can capture tamed animals, not only their owner; that is how the pack is set up."
+  ],
+  "sources": [
+   "IF lang text.industrialforegoing.book.conveyor_upgrade_detection",
+   "config/industrialforegoing/item-core.toml (onlyOwnerCanCapture false)"
+  ]
+ },
+ "crusher": {
+  "de": [
+   "Sein Essenztank fasst 32 000 mB. Für 250 mB Essenz gibt der Auflösungsapparat eine [[minecraft:experience_bottle]], ganz ohne leere Flasche.",
+   "Mobs auf der Sperrliste trifft er mit 75 Schaden statt sofort. Mit dem {{industrial/duplicator}} oder der {{industrial/mechanical_dirt}} wird daraus eine Farm."
+  ],
+  "en": [
+   "Its essence tank holds 32,000 mB. For 250 mB essence the Dissolution Chamber makes an [[minecraft:experience_bottle]], no empty bottle needed.",
+   "Mobs on the blacklist are hit for 75 damage instead of killed outright. With the {{industrial/duplicator}} or {{industrial/mechanical_dirt}} it becomes a farm."
+  ],
+  "sources": [
+   "config/industrialforegoing/machine-agriculture-husbandry.toml (MobCrusherConfig)",
+   "industrialforegoing:dissolution_chamber/xp_bottles"
+  ]
+ },
+ "duplicator": {
+  "de": [
+   "Jede Kopie kostet Essenz: die Lebenspunkte des Mobs mal 12 mB. Die Kopien sind keine genauen Abbilder, Ausrüstung und Besonderheiten des Originals kommen nicht mit.",
+   "Essenz liefert der {{industrial/crusher}} daneben, also schließt sich der Kreis."
+  ],
+  "en": [
+   "Every copy costs essence: the mob's health times 12 mB. The copies are not exact, gear and special traits of the original do not come along.",
+   "The {{industrial/crusher}} next to it supplies the essence, so the loop closes."
+  ],
+  "sources": [
+   "config/industrialforegoing/machine-agriculture-husbandry.toml (MobDuplicatorConfig exactCopy false, essenceNeeded 12)"
+  ],
+  "client": [
+   "what exactly a non exact copy leaves out"
+  ]
+ },
+ "laser_drill": {
+  "de": [
+   "Stell den Bohrer **einen Block** von der Basis entfernt auf; steht er falsch, zeigt ein Namensschild über ihm das an. Jeder Bohrer hat 10 000 FE Puffer und braucht 1 000 FE pro Ladestoß.",
+   "Die Bohrer sitzen im Einfachen Gehäuse, die Basen im Fortschrittlichen: {{industrial/laser}} und {{industrial/fluid_laser}}."
+  ],
+  "en": [
+   "Place the drill **one block** away from the base; if it is wrong, a name tag above it tells you. Each drill buffers 10,000 FE and uses 1,000 FE per charge.",
+   "The drills sit in the Simple Machine Frame, the bases in the Advanced one: {{industrial/laser}} and {{industrial/fluid_laser}}."
+  ],
+  "sources": [
+   "IF lang text.industrialforegoing.book.laser_drill",
+   "config/industrialforegoing/machine-resource-production.toml (LaserDrillConfig)"
+  ],
+  "client": [
+   "the name tag shown above a wrongly placed laser drill"
+  ]
+ },
+ "laser": {
+  "de": [
+   "Die Laserbasis gibt Rohes Eisen, kein Erz. Am Ende macht der {{immersive_heavy/arc}} daraus 1 Barren plus halbe Chance, oder du schickst es durch die Erzverarbeitung von Mekanism ({{mekanism_ores/welcome}}).",
+   "Mit Brauner Linse kommen neben Eisen auch Rohes Aluminium und Rohes Nickel heraus. Den Wert jeder Tiefe zeigt EMI."
+  ],
+  "en": [
+   "The laser base gives raw iron, not ore. The {{immersive_heavy/arc}} turns it into 1 ingot plus a half chance, or you run it through Mekanism's ore processing ({{mekanism_ores/welcome}}).",
+   "With a brown lens it also yields raw aluminium and raw nickel besides iron. EMI shows the weight for every depth."
+  ],
+  "sources": [
+   "industrialforegoing:laser_drill_ore/raw_materials/iron",
+   "industrialforegoing:laser_drill_ore/raw_materials/aluminum",
+   "industrialforegoing:laser_drill_ore/raw_materials/nickel",
+   "immersiveengineering:arcfurnace/raw_ore_iron"
+  ]
+ },
+ "lens": {
+  "de": [
+   "Weitere Farben: Grau Silber, Lila Blei, Rot Redstone, Blau Lapis, Hellblau Diamant und Platin, Weiß Netherquarz, Gelb im Nether Glowstone. Hellgrau zieht auch Zinn und Fluorit, Hellgrün auch Smaragd.",
+   "Eine Linse lässt sich in der Werkbank mit einem Farbstoff umfärben, du musst sie nicht neu gießen."
+  ],
+  "en": [
+   "More colours: gray silver, purple lead, red redstone, blue lapis, light blue diamond and platinum, white nether quartz, yellow glowstone in the Nether. Light gray also pulls tin and fluorite, lime also emerald.",
+   "A lens can be recoloured with a dye in the crafting table, you do not have to cast a new one."
+  ],
+  "sources": [
+   "industrialforegoing:laser_drill_ore/* (catalyst per recipe)",
+   "industrialforegoing:laser_lens_brown_recolor"
+  ]
+ },
+ "washing": {
+  "de": [
+   "Den [[industrialforegoing:meat_feeder]] baust du vorher in der Werkbank, und für die zwei [[industrialforegoing:pink_slime_ingot]] brauchst du 2 000 mB Pinken Schleim vom {{industrial/slaughter}}.",
+   "Die Kette läuft Waschfabrik, {{industrial/fermentation}}, {{industrial/sieving}}. Alle drei brauchen Strom und Flüssigkeit, aber keine Hand."
+  ],
+  "en": [
+   "Build the [[industrialforegoing:meat_feeder]] in the crafting table first, and the two [[industrialforegoing:pink_slime_ingot]] take 2,000 mB pink slime from the {{industrial/slaughter}}.",
+   "The chain runs Washing Factory, {{industrial/fermentation}}, {{industrial/sieving}}. All three need power and fluid, but no hands."
+  ],
+  "sources": [
+   "industrialforegoing:washing_factory",
+   "industrialforegoing:dissolution_chamber/pink_slime_ingot"
+  ]
+ },
+ "fermentation": {
+  "de": [
+   "Lass es lieber die vollen fünf Minuten gären: Dann bekommst du das Fünffache statt des Doppelten nach 5 Sekunden. Mehrere Stationen nebeneinander gleichen die Wartezeit aus."
+  ],
+  "en": [
+   "Let it ferment the full five minutes: you then get five times as much instead of double after 5 seconds. Several stations side by side make up for the wait."
+  ],
+  "sources": [
+   "config/industrialforegoing/machine-resource-production.toml (FermentationStationConfig ticksFor5XProduction 6000)"
+  ]
+ },
+ "sieving": {
+  "de": [
+   "Beim Gießen des [[industrialforegoing:pink_slime]] gibt der Auflösungsapparat 150 mB Wasser zurück. Der Tank der Siebmaschine fasst 8 000 mB.",
+   "Den Staub kannst du auch im {{immersive_heavy/arc}} zu Barren schmelzen."
+  ],
+  "en": [
+   "Casting the [[industrialforegoing:pink_slime]] gives 150 mB water back from the Dissolution Chamber. The sieving machine's tank holds 8,000 mB.",
+   "You can also melt the dust into ingots in the {{immersive_heavy/arc}}."
+  ],
+  "sources": [
+   "industrialforegoing:dissolution_chamber/pink_slime_ball",
+   "config/industrialforegoing/machine-resource-production.toml (FluidSievingMachineConfig)",
+   "immersiveengineering:arcfurnace/dust_iron"
+  ]
+ },
+ "conveyor": {
+  "de": [
+   "Rechtsklick mit [[minecraft:glowstone_dust]] macht ein Band schneller, Rechtsklick mit Kunststoff verhindert, dass Spieler die Gegenstände aufheben. Die Upgrades sitzen am weiter entfernten Ende des Bands.",
+   "Die zwei wichtigsten Upgrades baust du in {{industrial/conveyor_upgrades}}."
+  ],
+  "en": [
+   "Right click with [[minecraft:glowstone_dust]] speeds a belt up, right click with plastic stops players from picking up the items. Upgrades sit at the far end of the belt.",
+   "The two most useful upgrades are in {{industrial/conveyor_upgrades}}."
+  ],
+  "sources": [
+   "IF lang text.industrialforegoing.book.conveyors",
+   "industrialforegoing:conveyor"
+  ],
+  "client": [
+   "that upgrades attach at the far end of the conveyor"
+  ]
+ },
+ "transporters": {
+  "de": [
+   "Der [[industrialforegoing:world_transporter_type]] braucht Trichter statt Gold und einen [[minecraft:dropper]] statt Kolben, nicht einen Spender. Jedes Rezept gibt zwei Transporter.",
+   "Für längere Strecken taugen die Förderbänder des Mods."
+  ],
+  "en": [
+   "The [[industrialforegoing:world_transporter_type]] takes hoppers instead of gold and a [[minecraft:dropper]] instead of the piston, not a dispenser. Each recipe gives two transporters.",
+   "For longer distances use the mod's conveyors."
+  ],
+  "sources": [
+   "industrialforegoing:item_transporter_type",
+   "industrialforegoing:fluid_transporter_type",
+   "industrialforegoing:world_transporter_type"
+  ]
+ },
+ "list_core": {
+  "de": [
+   "Die Material-StoneWork-Fabrik verbraucht für Bruchstein weder Wasser noch Lava, sie braucht nur je 1 000 mB im Tank. Granit, Andesit, Diorit und Netherrack kosten dagegen etwas.",
+   "Der Farbmischer und die Schlammraffinerie sind die beiden, die du hier wohl erst für den Haken baust."
+  ],
+  "en": [
+   "The Material StoneWork Factory uses neither water nor lava for cobblestone, it only needs 1,000 mB of each in its tanks. Granite, andesite, diorite and netherrack do consume some.",
+   "The Dye Mixer and the Sludge Refiner are the two you will probably build only for the tick."
+  ],
+  "sources": [
+   "industrialforegoing:stonework_generate/cobblestone",
+   "industrialforegoing:stonework_generate/granite",
+   "config/industrialforegoing/machine-resource-production.toml"
+  ]
+ },
+ "list_farm": {
+  "de": [
+   "Der Tierfütterer hört auf, sobald 35 Tiere in seinem Bereich stehen. Die Fischmaschine ist mit 5 000 FE pro Vorgang die teuerste der Liste."
+  ],
+  "en": [
+   "The Animal Feeder stops once 35 animals are in its area. The Marine Fisher, at 5,000 FE per operation, is the most expensive on the list."
+  ],
+  "sources": [
+   "config/industrialforegoing/machine-agriculture-husbandry.toml (AnimalFeederConfig)",
+   "config/industrialforegoing/machine-resource-production.toml (MarineFisherConfig)"
+  ]
+ },
+ "list_mobs": {
+  "de": [
+   "Der Verzauberungsapplikator darf auf diesem Server über die normale Höchststufe einer Verzauberung hinaus gehen. In der Stasiskammer zeigen eingefrorene Bosse keine Bossleiste.",
+   "Für den Witherfabrikator brauchst du einen Netherstern, siehe {{industrial/frame_supreme}}."
+  ],
+  "en": [
+   "The Enchantment Applicator may go beyond an enchantment's normal maximum level on this server. Bosses frozen in the Stasis Chamber show no boss bar.",
+   "The Wither Builder needs a nether star, see {{industrial/frame_supreme}}."
+  ],
+  "sources": [
+   "config/industrialforegoing/machine-misc.toml (EnchantmentApplicatorConfig ignoreEnchantMaxLevels true, StasisChamberConfig disableBossBars true)",
+   "industrialforegoing:wither_builder"
+  ],
+  "client": [
+   "that the applicator actually combines books above the vanilla maximum level"
+  ]
+ },
+ "list_resources": {
+  "de": [
+   "Die Basen haben keinen eigenen Stromspeicher, sie laufen nur mit Laserbohrern daneben. Der Wassergenerator ist der einfachste Weg, Wasser für Latexverarbeitung und Bioreaktor zu liefern.",
+   "Die Erz-Laserbasis braucht Eisenerz im Rezept, die Flüssigkeits-Laserbasis Eimer."
+  ],
+  "en": [
+   "The bases store no power of their own, they only run with laser drills next to them. The Water Condensator is the easiest way to supply water to the latex unit and Bioreactor.",
+   "The Ore Laser Base takes iron ore in its recipe, the Fluid Laser Base buckets."
+  ],
+  "sources": [
+   "config/industrialforegoing/machine-resource-production.toml (OreLaserBaseConfig, WaterCondensatorConfig)",
+   "industrialforegoing:ore_laser_base",
+   "industrialforegoing:fluid_laser_base"
+  ]
+ },
+ "infinity_drill": {
+  "de": [
+   "Gebraucht wird das Reichweiten-Addon mit Smaragden, im Spiel Stufe 12. Der Vorgang dauert 400 Ticks und braucht 2 000 mB Pinken Schleim.",
+   "Laut Handbuch nutzt er Biokraftstoff sparsamer als Strom. Schleichend Rechtsklick stellt die Abbaufläche ein."
+  ],
+  "en": [
+   "It takes the emerald Range addon, tier 12 in game. The process takes 400 ticks and 2,000 mB pink slime.",
+   "The manual says it uses biofuel more efficiently than power. Sneak right click sets the mining area."
+  ],
+  "sources": [
+   "industrialforegoing:dissolution_chamber/infinity_drill (range_addon_tier_11)",
+   "IF jar: RangeAddonItem (tier + 1)",
+   "IF lang text.industrialforegoing.book.infinity_drill",
+   "industrialforegoing:infinity_charger"
+  ]
+ },
+ "mechanical_dirt": {
+  "de": [
+   "Jeder Block kostet 1 000 mB Flüssigfleisch im Auflösungsapparat, vier Blöcke also 4 000 mB. Sein eigener Tank fasst 4 000 mB.",
+   "Über der Fläche sammelt der {{industrial/crusher}} Beute und Essenz ein."
+  ],
+  "en": [
+   "Each block costs 1,000 mB liquid meat in the Dissolution Chamber, so four blocks take 4,000 mB. Its own tank holds 4,000 mB.",
+   "Above the floor the {{industrial/crusher}} collects loot and essence."
+  ],
+  "sources": [
+   "industrialforegoing:dissolution_chamber/mechanical_dirt",
+   "config/industrialforegoing/machine-resource-production.toml (MechanicalDirtConfig)"
+  ]
+ },
+ "myc_furnace": {
+  "de": [
+   "Er sitzt im Einfachen Gehäuse und braucht fünf [[minecraft:coal_block]]. Zur Familie gehören 16 Sorten, drei davon im Überlegenen Gehäuse.",
+   "Weiter geht es mit {{industrial/myc_culinary}}, {{industrial/myc_slimey}} und {{industrial/myc_magma}}."
+  ],
+  "en": [
+   "It sits in the Simple Machine Frame and takes five [[minecraft:coal_block]]. The family has 16 kinds, three of them in the Supreme frame.",
+   "Next come {{industrial/myc_culinary}}, {{industrial/myc_slimey}} and {{industrial/myc_magma}}."
+  ],
+  "sources": [
+   "industrialforegoing:mycelial_furnace",
+   "industrialforegoing:mycelial_* crafting recipes (frames)"
+  ]
+ },
+ "myc_culinary": {
+  "de": [
+   "Die fünf Feldfrüchte dürfen gemischt sein, jede Frucht mit dem Tag Feldfrucht zählt. Er sitzt im Einfachen Gehäuse, ist also früh baubar."
+  ],
+  "en": [
+   "The five crops may be mixed, any crop with the crops tag counts. It sits in the Simple Machine Frame, so you can build it early."
+  ],
+  "sources": [
+   "industrialforegoing:mycelial_culinary (c:crops)"
+  ]
+ },
+ "myc_slimey": {
+  "de": [
+   "Milch liefert der [[industrialforegoing:animal_rancher]] mit 400 FE pro Vorgang. Die fünf [[minecraft:slime_block]] im Rezept sind 45 Schleimbälle."
+  ],
+  "en": [
+   "The [[industrialforegoing:animal_rancher]] supplies milk for 400 FE per operation. The five [[minecraft:slime_block]] in the recipe are 45 slime balls."
+  ],
+  "sources": [
+   "industrialforegoing:mycelial_slimey",
+   "config/industrialforegoing/machine-agriculture-husbandry.toml (AnimalRancherConfig)"
+  ]
+ },
+ "myc_magma": {
+  "de": [
+   "Die fünf Redstoneblöcke im Rezept sind 45 Redstone. Lava liefert dir die Flüssigkeits-Laserbasis mit Oranger Linse im Nether, 100 mB pro Vorgang ({{industrial/fluid_laser}})."
+  ],
+  "en": [
+   "The five redstone blocks in the recipe are 45 redstone. The Fluid Laser Base with an orange lens in the Nether supplies lava, 100 mB per operation ({{industrial/fluid_laser}})."
+  ],
+  "sources": [
+   "industrialforegoing:mycelial_magma",
+   "industrialforegoing:laser_drill_fluid/lava"
+  ]
+ },
+ "myc_reactor": {
+  "de": [
+   "Der Vorgang im Auflösungsapparat dauert 600 Ticks. Drei der Generatoren, die der Reaktor will, sitzen selbst im Überlegenen Gehäuse: [[industrialforegoing:mycelial_netherstar]], [[industrialforegoing:mycelial_meatallurgic]] und [[industrialforegoing:mycelial_halitosis]], plan also mehrere Überlegene Gehäuse ein.",
+   "Der Netherstern im Rezept bedeutet einen weiteren Wither; mit dem [[industrialforegoing:wither_builder]] geht das ohne Kampf."
+  ],
+  "en": [
+   "The Dissolution Chamber takes 600 ticks for it. Three of the generators the reactor wants sit in the Supreme frame themselves: [[industrialforegoing:mycelial_netherstar]], [[industrialforegoing:mycelial_meatallurgic]] and [[industrialforegoing:mycelial_halitosis]], so plan several Supreme frames.",
+   "The nether star in the recipe means another Wither; with the [[industrialforegoing:wither_builder]] that takes no fight."
+  ],
+  "sources": [
+   "industrialforegoing:dissolution_chamber/mycelial_reactor",
+   "industrialforegoing:mycelial_netherstar",
+   "industrialforegoing:mycelial_meatallurgic",
+   "industrialforegoing:mycelial_halitosis"
+  ]
+ },
+ "conveyor_upgrades": {
+  "de": [
+   "Das Herausziehen lässt sich mit [[minecraft:glowstone_dust]] beschleunigen. Es hört auf, wenn zu viele Gegenstände auf dem Band liegen, die niemand abnimmt.",
+   "Beim Einfügen stellst du im Fenster die Reichweite ein, dann nimmt es alle Gegenstände auf dem Band statt nur der direkt davor."
+  ],
+  "en": [
+   "Extraction can be sped up with [[minecraft:glowstone_dust]]. It stops when too many items pile up on the belt that nothing picks up.",
+   "For insertion you set the range in the window, it then takes every item on the belt instead of only those touching it."
+  ],
+  "sources": [
+   "IF lang text.industrialforegoing.book.conveyor_upgrade_extraction, conveyor_upgrade_insertion",
+   "industrialforegoing:conveyor_extraction_upgrade",
+   "industrialforegoing:conveyor_insertion_upgrade"
+  ]
+ },
+ "settings_copier": {
+  "de": [
+   "Das Rezept braucht nur vier Kunststoff, vier Papier und zwei Redstone, bau ihn also früh. Er ist praktisch für viele gleiche Maschinen aus {{industrial/list_farm}}."
+  ],
+  "en": [
+   "The recipe takes only four plastic, four paper and two redstone, so build it early. It pays off for many identical machines from {{industrial/list_farm}}."
+  ],
+  "sources": [
+   "industrialforegoing:machine_settings_copier"
+  ],
+  "client": [
+   "which settings the copier transfers"
+  ]
+ },
+ "potion_brewer": {
+  "de": [
+   "Die Braumaschine sitzt im Fortschrittlichen Gehäuse und braucht drei Goldzahnräder und zwei [[minecraft:repeater]]. [[minecraft:nether_wart]] für die Grundtränke baust du im Nether an ({{nether/wart}})."
+  ],
+  "en": [
+   "The Potion Brewer sits in the Advanced Machine Frame and takes three gold gears and two [[minecraft:repeater]]. Grow [[minecraft:nether_wart]] for the base potions in the Nether ({{nether/wart}})."
+  ],
+  "sources": [
+   "industrialforegoing:potion_brewer"
+  ]
+ }
+}

@@ -1,0 +1,729 @@
+{
+ "light": {
+  "de": [
+   "Für 16 Bausteine brauchst du vier Durchgänge: 16 [[immersiveengineering:sheetmetal_iron]], 16 [[immersiveengineering:component_iron]] und 4 [[create:brass_sheet]]. Das Messingblech presst die Mechanische Presse aus einem Messingbarren ({{create_brass/brass_sheet}}), die Eisenkomponenten kennst du aus {{immersive/component}}.",
+   "Vier Eisenbleche im Kreuz ergeben vier Eisenblechblöcke. Gleich danach brauchst du {{immersive_heavy/steel_component}}, {{immersive_heavy/parts}} und {{immersive_heavy/scaffold}}."
+  ],
+  "en": [
+   "For 16 blocks you need four crafts: 16 [[immersiveengineering:sheetmetal_iron]], 16 [[immersiveengineering:component_iron]] and 4 [[create:brass_sheet]]. The Mechanical Press makes the brass sheet from a brass ingot ({{create_brass/brass_sheet}}); the iron components are covered in {{immersive/component}}.",
+   "Four iron plates in a cross make four iron sheetmetal. Right after this you need {{immersive_heavy/steel_component}}, {{immersive_heavy/parts}} and {{immersive_heavy/scaffold}}."
+  ],
+  "sources": [
+   "kronwerke:tech/light_engineering",
+   "kubejs/server_scripts/kronwerke/tech.js",
+   "immersiveengineering:crafting/sheetmetal_iron",
+   "create:pressing/brass_ingot"
+  ]
+ },
+ "steel_component": {
+  "de": [
+   "Die [[immersiveengineering:blueprint]] Komponenten baust du aus Kupfer-, Blei- und Eisenbarren über drei blauen Farbstoffen und drei Papier. Mit ihr kostet eine Komponente **zwei** Stahlbleche; das Rezept in der normalen Werkbank will vier Bleche und einen Kupferbarren.",
+   "Stahlbleche presst die Mechanische Presse von Create aus Stahlbarren, oder du schlägst sie mit dem Ingenieurshammer. Drei Komponenten gehen in jeden Satz {{immersive_heavy/heavy}}."
+  ],
+  "en": [
+   "The Components [[immersiveengineering:blueprint]] takes a copper, lead and iron ingot over three blue dye and three paper. With it a component costs **two** steel plates; the plain crafting table recipe wants four plates and a copper ingot.",
+   "Create's Mechanical Press makes steel plates from steel ingots, or you hammer them with the Engineer's Hammer. Three components go into every set of {{immersive_heavy/heavy}}."
+  ],
+  "sources": [
+   "immersiveengineering:blueprint/component_steel",
+   "immersiveengineering:crafting/component_steel",
+   "immersiveengineering:crafting/blueprint_components",
+   "create:pressing/compat/immersiveengineering/plate_steel",
+   "immersiveengineering:crafting/plate_steel_hammering"
+  ]
+ },
+ "heavy": {
+  "de": [
+   "Für 8 Bausteine brauchst du zwei Durchgänge: 8 [[immersiveengineering:sheetmetal_steel]], 2 [[create:precision_mechanism]], 6 [[immersiveengineering:component_steel]] und 2 [[immersiveengineering:ingot_electrum]]. Das Präzisionsgetriebe kommt aus der Sequenziellen Montage von Create ({{create_brass/precision}}), drei Durchläufe mit 80 Prozent Erfolg.",
+   "Elektrum legierst du wie in {{immersive/electrum}}. Für die acht [[kronwerke:steel_core]] des Stufenziels allein sind 32 Bausteine fällig, siehe {{mekanism_advanced/steel_core}}."
+  ],
+  "en": [
+   "For 8 blocks you need two crafts: 8 [[immersiveengineering:sheetmetal_steel]], 2 [[create:precision_mechanism]], 6 [[immersiveengineering:component_steel]] and 2 [[immersiveengineering:ingot_electrum]]. The precision mechanism comes from Create's sequenced assembly ({{create_brass/precision}}), three loops at 80 percent success.",
+   "Alloy electrum as in {{immersive/electrum}}. The eight [[kronwerke:steel_core]] of the stage goal alone take 32 blocks, see {{mekanism_advanced/steel_core}}."
+  ],
+  "sources": [
+   "kronwerke:tech/heavy_engineering",
+   "kronwerke:milestones/steel_core",
+   "kubejs/server_scripts/kronwerke/milestones.js"
+  ]
+ },
+ "parts": {
+  "de": [
+   "Die Mitte ist ein Kupferbarren, die Ränder Redstonestaub und Eisenblechblöcke; das Muster darf gedreht werden. Fast jede Maschine hier braucht einen, der Monteur zwei und der Funkturm elf, vier reichen also nur für den Anfang.",
+   "Mit dem [[immersiveengineering:screwdriver]] am Redstone-Baustein kehrst du die Steuerung um: Dann läuft die Maschine nur mit Signal."
+  ],
+  "en": [
+   "The centre is a copper ingot, the edges redstone dust and iron sheetmetal; the pattern may be rotated. Almost every machine here needs one, the Assembler two and the Radio Tower eleven, so four only get you started.",
+   "Use the [[immersiveengineering:screwdriver]] on the redstone block to invert the control: the machine then runs only with a signal."
+  ],
+  "sources": [
+   "immersiveengineering:crafting/rs_engineering",
+   "data/immersiveengineering/structure/multiblocks/assembler.nbt",
+   "data/immersiveengineering/structure/multiblocks/radio_tower.nbt",
+   "IE manual en_us/crusher.txt"
+  ]
+ },
+ "scaffold": {
+  "de": [
+   "32 Gerüste und 8 Zäune kosten zusammen rund **42 Stahlbarren**: 18 Barren und 18 Stäbe für die Gerüste, 12 Barren und 6 Stäbe für die Zäune, und die 24 Stäbe noch einmal 12 Barren. Ab der {{immersive_heavy/press}} gibt die Stabform zwei Stäbe pro Barren, genauso viel wie von Hand.",
+   "Stahl kommt in Stufe 3 noch aus dem Hochofen ({{immersive/steel}}) oder von Mekanism, bis der {{immersive_heavy/arc}} steht."
+  ],
+  "en": [
+   "32 scaffolds and 8 fences cost about **42 steel ingots** in total: 18 ingots and 18 rods for the scaffolds, 12 ingots and 6 rods for the fences, and the 24 rods another 12 ingots. From the {{immersive_heavy/press}} on the rod mold gives two rods per ingot, the same as by hand.",
+   "Until the {{immersive_heavy/arc}} runs, steel still comes from the blast furnace ({{immersive/steel}}) or from Mekanism."
+  ],
+  "sources": [
+   "immersiveengineering:crafting/steel_scaffolding_standard",
+   "immersiveengineering:crafting/steel_fence",
+   "immersiveengineering:crafting/stick_steel",
+   "immersiveengineering:metalpress/rod_steel"
+  ]
+ },
+ "sheetmetal": {
+  "de": [
+   "16 Blöcke sind 16 [[immersiveengineering:plate_steel]], also 16 Stahlbarren. Die Bleche presst die Mechanische Presse von Create schon jetzt, du musst nicht auf die Metallpresse warten.",
+   "Der Lichtbogenofen braucht 8 Blöcke und 14 Stufen. Die Stufen kosten drei Durchgänge zu je drei Blöcken, zusammen also 17 Blöcke."
+  ],
+  "en": [
+   "16 blocks are 16 [[immersiveengineering:plate_steel]], so 16 steel ingots. Create's Mechanical Press already makes the plates, you do not have to wait for the Metal Press.",
+   "The Arc Furnace needs 8 blocks and 14 slabs. The slabs take three crafts of three blocks each, 17 blocks in all."
+  ],
+  "sources": [
+   "immersiveengineering:crafting/sheetmetal_steel",
+   "immersiveengineering:crafting/sheetmetal_steel_to_slab",
+   "create:pressing/compat/immersiveengineering/plate_steel",
+   "data/immersiveengineering/structure/multiblocks/arcfurnace.nbt"
+  ]
+ },
+ "crusher": {
+  "de": [
+   "Ein Eisenerzblock gibt 2 Eisenstaub für 6 000 FE, Rohes Eisen 1 Staub plus ein Drittel Chance auf einen zweiten. Für Rohes Erz ist der {{immersive_heavy/arc}} besser: Er gibt 1 Barren plus halbe Chance.",
+   "Die Geschwindigkeit hängt am Strom, den du hineinschickst, der Verbrauch pro Vorgang bleibt gleich. Als Nächstes mahlst du Koks für {{immersive_heavy/coke_dust}}."
+  ],
+  "en": [
+   "An iron ore block gives 2 iron dust for 6,000 FE, raw iron 1 dust plus a one in three chance of a second. For raw ore the {{immersive_heavy/arc}} does better: 1 ingot plus a half chance.",
+   "Its speed depends on the power you feed it, the cost per operation stays the same. Next you grind coke for {{immersive_heavy/coke_dust}}."
+  ],
+  "sources": [
+   "immersiveengineering:crusher/ore_iron",
+   "immersiveengineering:crusher/raw_ore_iron",
+   "immersiveengineering:arcfurnace/raw_ore_iron",
+   "IE manual en_us/crusher.txt",
+   "data/immersiveengineering/structure/multiblocks/crusher.nbt"
+  ]
+ },
+ "coke_dust": {
+  "de": [
+   "Mahl lieber [[immersiveengineering:coke]]: Ein Koksblock gibt **9 Koksstaub für 4 800 FE**, einzeln kostet jeder Staub 2 400 FE. Koks und Koksblöcke kommen aus {{immersive/coal_coke}} und {{immersive/coke_block}}.",
+   "Rechne grob: 8 Staub pro HOP-Graphit, 1 Staub pro Stahlbarren im Lichtbogenofen."
+  ],
+  "en": [
+   "Grind [[immersiveengineering:coke]] instead: one block gives **9 coke dust for 4,800 FE**, while single coke costs 2,400 FE per dust. Coke and coke blocks come from {{immersive/coal_coke}} and {{immersive/coke_block}}.",
+   "Rough budget: 8 dust per HOP graphite, 1 dust per steel ingot in the Arc Furnace."
+  ],
+  "sources": [
+   "immersiveengineering:crusher/coke_block",
+   "immersiveengineering:crusher/coke",
+   "immersiveengineering:squeezer/graphite_dust",
+   "immersiveengineering:arcfurnace/steel"
+  ]
+ },
+ "squeezer": {
+  "de": [
+   "Jeder Samen kostet 6 400 FE. [[immersiveengineering:seed]] geben am meisten, Rote-Bete- und Tomatensamen 60 mB; Hanf baust du an wie in {{immersive/hemp}}.",
+   "Dieselbe Presse macht aus 8 Koksstaub einen HOP-Graphitstaub. Pflanzenöl brauchst du für Biodiesel in der {{immersive_heavy/refinery}} und für das Erweiterte Schmiersystem der Bohrmaschine."
+  ],
+  "en": [
+   "Every seed costs 6,400 FE. [[immersiveengineering:seed]] give the most, beetroot and tomato seeds 60 mB; grow hemp as in {{immersive/hemp}}.",
+   "The same machine turns 8 coke dust into one HOP graphite dust. Plant oil goes into biodiesel in the {{immersive_heavy/refinery}} and into the drill's Advanced Lubrication System."
+  ],
+  "sources": [
+   "immersiveengineering:squeezer/hemp_seeds",
+   "immersiveengineering:squeezer/wheat_seeds",
+   "immersiveengineering:squeezer/beetroot_seeds",
+   "farmersdelight:integration/immersiveengineering/squeezer/tomato_seeds",
+   "immersiveengineering:crafting/toolupgrade_drill_lube"
+  ]
+ },
+ "hop_graphite": {
+  "de": [
+   "Die 12 Staub reichen für drei Elektroden. Für die vier [[immersiveengineering:capacitor_hv]] des Blitzableiters brauchst du vier weitere: In der Abfüllanlage ergeben Pressform Platte, 1 Staub und 250 mB Kreosotöl eine [[immersiveengineering:plate_hop_graphite]].",
+   "Auf Kronwerke presst auch die Mechanische Presse von Create einen [[immersiveengineering:ingot_hop_graphite]] zur Platte, den Barren gibt es aber nur aus Mystical Agriculture."
+  ],
+  "en": [
+   "The 12 dust cover three electrodes. The four [[immersiveengineering:capacitor_hv]] of the Lightning Rod need four more: in the Bottling Machine a plate mold, 1 dust and 250 mB creosote make a [[immersiveengineering:plate_hop_graphite]].",
+   "On Kronwerke Create's Mechanical Press also presses a [[immersiveengineering:ingot_hop_graphite]] into a plate, but that ingot only comes from Mystical Agriculture."
+  ],
+  "sources": [
+   "immersiveengineering:squeezer/graphite_dust",
+   "immersiveengineering:bottling/plate_hop_graphite",
+   "kronwerke:round/press_hop_graphite",
+   "mysticalagriculture:essence/immersiveengineering/hop_graphite_ingot"
+  ]
+ },
+ "press": {
+  "de": [
+   "Die [[immersiveengineering:blueprint]] Formen legst du in den Ingenieursarbeitstisch ({{immersive/bench}}). Jede Form kostet drei Stahlbleche und den Kabelschneider; die ersten Bleche dafür presst die Mechanische Presse von Create.",
+   "Jeder Pressvorgang braucht 2 400 FE. Die Stabform gibt zwei [[immersiveengineering:stick_steel]] pro Barren, weitere Formen zeigt {{immersive_heavy/molds}}."
+  ],
+  "en": [
+   "Put the Molds [[immersiveengineering:blueprint]] into the Engineer's Workbench ({{immersive/bench}}). Each mold costs three steel plates and the wire cutters; Create's Mechanical Press makes the first plates for it.",
+   "Every pressing costs 2,400 FE. The rod mold gives two [[immersiveengineering:stick_steel]] per ingot, more molds are in {{immersive_heavy/molds}}."
+  ],
+  "sources": [
+   "immersiveengineering:blueprint/mold_plate",
+   "immersiveengineering:crafting/blueprint_molds",
+   "immersiveengineering:metalpress/plate_steel",
+   "immersiveengineering:metalpress/rod_steel",
+   "data/immersiveengineering/structure/multiblocks/metal_press.nbt"
+  ]
+ },
+ "bottling": {
+  "de": [
+   "IE gibt für die Abfüllanlage keinen Fortschritt aus, darum hakst du sie selbst ab. Die zwei Eimer [[immersiveengineering:creosote_bucket]] füllst du aus dem Koksofen ({{immersive/creosote}}) oder hier am Band.",
+   "Mit Pressform Platte macht sie außer Graphitplatten und Duroplast auch Kunstleder: Hanfgewebe und 125 mB Pflanzenöl. Als Nächstes gießt du {{immersive_heavy/electrode}}."
+  ],
+  "en": [
+   "IE grants no advancement for the Bottling Machine, so you tick it off yourself. Fill the two [[immersiveengineering:creosote_bucket]] at the coke oven ({{immersive/creosote}}) or here on the belt.",
+   "With the plate mold it makes graphite plates, duroplast and also ersatz leather: hemp fabric and 125 mB plant oil. Next you cast {{immersive_heavy/electrode}}."
+  ],
+  "sources": [
+   "data/immersiveengineering/advancement/multiblocks/ (no bottling advancement)",
+   "immersiveengineering:bottling/ersatz_leather",
+   "immersiveengineering:bottling/graphite_electrode",
+   "data/immersiveengineering/structure/multiblocks/bottling_machine.nbt"
+  ]
+ },
+ "electrode": {
+  "de": [
+   "Eine Elektrode hält 96 000 Ticks Ofenbetrieb, das sind 80 Minuten, und nutzt sich nur ab, solange der Ofen arbeitet. Laut Handbuch kann keine Automatik sie nachlegen, die drei Plätze oben füllst du also von Hand.",
+   "Jede Elektrode kostet 4 HOP-Graphitstaub, also 32 Koksstaub, und 1 000 mB Kreosotöl. Die [[immersiveengineering:mold_rod]] kommt jedes Mal zurück."
+  ],
+  "en": [
+   "An electrode lasts 96,000 ticks of furnace work, which is 80 minutes, and only wears while the furnace runs. The manual says no automation can replace it, so you fill the three top slots by hand.",
+   "Each electrode costs 4 HOP graphite dust, so 32 coke dust, and 1,000 mB creosote. The [[immersiveengineering:mold_rod]] comes back every time."
+  ],
+  "sources": [
+   "config immersiveengineering-server.toml (electrodeDamage 96000)",
+   "IE manual en_us/arc_furnace.txt",
+   "immersiveengineering:bottling/graphite_electrode"
+  ]
+ },
+ "arc": {
+  "de": [
+   "Die 27 [[immersiveengineering:blastbrick_reinforced]] kennst du aus {{immersive/improved}}, die 6 Stahlblöcke kosten 54 Barren. Eingaben und Zusätze gehen oben durch die zwei Luken, links Eingaben, rechts Zusätze; Barren und Schlacke schiebt der Ofen selbst in angeschlossene Behälter.",
+   "Ein Erzblock kostet 102 400 FE, Rohes Erz 25 600 FE. Legierungen schmilzt er aus Barren: Gold mit Silber gibt 2 Elektrum, Kupfer mit Nickel 2 Constantan, 3 Kupfer mit Zinn 4 Bronze. Ein Redstone-Signal am Pult vorne schaltet ihn aus."
+  ],
+  "en": [
+   "You know the 27 [[immersiveengineering:blastbrick_reinforced]] from {{immersive/improved}}, the 6 steel blocks cost 54 ingots. Inputs and additives go in through the two hatches on top, inputs left and additives right; the furnace pushes ingots and slag into connected containers by itself.",
+   "An ore block costs 102,400 FE, raw ore 25,600 FE. It alloys from ingots: gold with silver gives 2 electrum, copper with nickel 2 constantan, 3 copper with tin 4 bronze. A redstone signal on the front panel turns it off."
+  ],
+  "sources": [
+   "IE manual en_us/arc_furnace.txt",
+   "immersiveengineering:arcfurnace/ore_iron",
+   "immersiveengineering:arcfurnace/raw_ore_iron",
+   "immersiveengineering:arcfurnace/alloy_electrum",
+   "immersiveengineering:arcfurnace/alloy_constantan",
+   "immersiveengineering:arcfurnace/alloy_bronze",
+   "data/immersiveengineering/structure/multiblocks/arcfurnace.nbt"
+  ]
+ },
+ "arc_steel": {
+  "de": [
+   "256 Stahl brauchen 256 Eisen, 256 [[immersiveengineering:dust_coke]] und gut 52 Millionen FE. Ein Dieselgenerator liefert genug für etwa acht volle Plätze.",
+   "Fürs Stufenziel zählt jeder Stahlbarren mit dem Tag Stahl, auch der aus Mekanism; die Menge richtet sich nach der Zahl aktiver Spieler. Beim Abgeben per Schleichklick nimmt der Obelisk nur die Gegenstände aus den Inventarreihen, nicht aus Schnellleiste oder Rucksack ({{start_here/o_handin}})."
+  ],
+  "en": [
+   "256 steel take 256 iron, 256 [[immersiveengineering:dust_coke]] and a bit over 52 million FE. One Diesel Generator powers about eight busy slots.",
+   "Any ingot tagged as steel counts for the stage goal, Mekanism's too; the amount depends on the number of active players. When you hand in with a sneak click the obelisk only takes items from your inventory rows, not from the hotbar or a backpack ({{start_here/o_handin}})."
+  ],
+  "sources": [
+   "immersiveengineering:arcfurnace/steel",
+   "config/kronwerke/goals.json (stage3, #c:ingots/steel, scale)",
+   "config immersiveengineering-server.toml (dieselGen_output 4096)"
+  ]
+ },
+ "fermenter": {
+  "de": [
+   "Jeder Vorgang kostet 6 400 FE. Kartoffel, Zuckerrohr, Apfel und Tomate geben 80 mB, Leuchtbeeren 100, Süßbeeren 50, Rote Bete 40, eine Melonenscheibe 20, eine [[minecraft:honey_bottle]] 250 mB und die leere Flasche zurück.",
+   "Ethanol geht in Biodiesel ({{immersive_heavy/refinery}}) und in Acetaldehyd für Kunststoff ({{immersive_heavy/acetaldehyde}})."
+  ],
+  "en": [
+   "Each operation costs 6,400 FE. Potato, sugar cane, apple and tomato give 80 mB, glow berries 100, sweet berries 50, beetroot 40, a melon slice 20, a [[minecraft:honey_bottle]] 250 mB and the empty bottle back.",
+   "Ethanol goes into biodiesel ({{immersive_heavy/refinery}}) and into acetaldehyde for plastic ({{immersive_heavy/acetaldehyde}})."
+  ],
+  "sources": [
+   "immersiveengineering:fermenter/potato",
+   "immersiveengineering:fermenter/honey",
+   "immersiveengineering:fermenter/glow_berries",
+   "immersiveengineering:fermenter/sweet_berries",
+   "immersiveengineering:fermenter/beetroot",
+   "immersiveengineering:fermenter/melon_slice",
+   "farmersdelight:integration/immersiveengineering/fermenter/tomato"
+  ]
+ },
+ "refinery": {
+  "de": [
+   "Der Katalysator kann und muss nicht automatisch hinein, er bleibt einfach liegen. Statt Rohren gehen auch Eimer direkt an die Tanks.",
+   "[[immersiveengineering:dust_saltpeter]] mahlst du im {{immersive_heavy/crusher}} aus Sandstein: 2 Sand und 50 Prozent Chance auf Nitratstaub. Biodiesel treibt den {{immersive_heavy/diesel}} und die {{immersive_heavy/drill}} an."
+  ],
+  "en": [
+   "The catalyst cannot and need not be inserted automatically, it just stays in. Instead of pipes you can also use buckets on the tanks.",
+   "Grind [[immersiveengineering:dust_saltpeter]] in the {{immersive_heavy/crusher}} from sandstone: 2 sand and a 50 percent chance of nitrate dust. Biodiesel runs the {{immersive_heavy/diesel}} and the {{immersive_heavy/drill}}."
+  ],
+  "sources": [
+   "IE manual en_us/refinery.txt",
+   "immersiveengineering:refinery/biodiesel",
+   "immersiveengineering:crusher/sandstone"
+  ]
+ },
+ "generator_blocks": {
+  "de": [
+   "Die [[immersiveengineering:coil_mv]] und das Constantan kennst du aus Stufe 2 ({{immersive/constantan}}). Ein Generatorblock braucht vier Elektrumspulenblöcke, für vier Stück also nur ein Durchgang.",
+   "Kühlerblöcke brauchst du dreimal: 12 Stück sind 3 Durchgänge mit je 4 Constantanblechen, 4 Stahlblechblöcken und einem Wassereimer."
+  ],
+  "en": [
+   "You know the [[immersiveengineering:coil_mv]] and constantan from stage 2 ({{immersive/constantan}}). One craft of four Electrum Coil Blocks gives the four generator blocks.",
+   "Radiators take three crafts: 12 blocks are 3 crafts of 4 constantan plates, 4 steel sheetmetal and a water bucket each."
+  ],
+  "sources": [
+   "immersiveengineering:crafting/generator",
+   "immersiveengineering:crafting/radiator",
+   "data/immersiveengineering/structure/multiblocks/diesel_generator.nbt",
+   "data/immersiveengineering/structure/multiblocks/excavator.nbt"
+  ],
+  "client": [
+   "whether the radiator recipe gives the empty bucket back"
+  ]
+ },
+ "diesel": {
+  "de": [
+   "Ein Eimer Biodiesel reicht 250 Ticks. Dauerbetrieb frisst also **288 Eimer pro Stunde**, das sind je 144 000 mB Pflanzenöl und Ethanol aus etwa 1 200 Hanfsamen und 1 800 Kartoffeln.",
+   "Die 4 096 FE/t teilen sich auf alle angeschlossenen Anschlüsse auf. Ein Redstone-Signal am kleinen Pult an der Seite schaltet ihn ab. Weiter geht es mit {{immersive_heavy/hv}} und dem {{immersive_heavy/excavator}}."
+  ],
+  "en": [
+   "A bucket of biodiesel lasts 250 ticks. Running nonstop eats **288 buckets an hour**, which is 144,000 mB each of plant oil and ethanol from about 1,200 hemp seeds and 1,800 potatoes.",
+   "The 4,096 FE/t are split between all connected plugs. A redstone signal on the small side terminal shuts it off. Next come {{immersive_heavy/hv}} and the {{immersive_heavy/excavator}}."
+  ],
+  "sources": [
+   "immersiveengineering:generator_fuel/biodiesel",
+   "config immersiveengineering-server.toml (dieselGen_output 4096)",
+   "IE manual en_us/diesel_generator.txt",
+   "immersiveengineering:refinery/biodiesel",
+   "immersiveengineering:squeezer/hemp_seeds",
+   "immersiveengineering:fermenter/potato"
+  ]
+ },
+ "hv": {
+  "de": [
+   "Kabel schneidet die Mechanische Säge von Create besonders günstig: Aus einem Blech werden **zwei** Kabel, mit dem Kabelschneider nur eins. Aluminium ist Bauxit aus Y 32 bis 112 ({{immersive/ores}}).",
+   "Ein HV-Draht ist höchstens 32 Blöcke lang. Für den [[immersiveengineering:transformer_hv]] brauchst du einen MV- und einen HV-Anschluss, eine Elektronikkomponente und einen Hochspannungsspulenblock. Unter Strom stehende Drähte verletzen dich bei Berührung."
+  ],
+  "en": [
+   "Create's Mechanical Saw cuts wire cheaply: one plate gives **two** wires, the wire cutters only one. Aluminium is bauxite from Y 32 to 112 ({{immersive/ores}}).",
+   "An HV wire spans at most 32 blocks. The [[immersiveengineering:transformer_hv]] takes an MV and an HV connector, an Electronic Component and a High-Voltage Coil Block. Live wires hurt you when you touch them."
+  ],
+  "sources": [
+   "create:cutting/compat/immersiveengineering/wire_steel",
+   "create:cutting/compat/immersiveengineering/wire_aluminum",
+   "immersiveengineering:crafting/wire_steel",
+   "immersiveengineering:crafting/transformer_hv",
+   "config immersiveengineering-server.toml (wires.hv maxLength 32, enableWireDamage true, ores.bauxite)"
+  ]
+ },
+ "acetaldehyde": {
+  "de": [
+   "Ein Vorgang kostet 120 FE. Das [[immersiveengineering:plate_silver]] hämmerst oder presst du aus Silber, das du in Y -48 bis 32 findest ({{immersive/ores}}).",
+   "Für 8 Duroplastplatten brauchst du am Ende 3 000 mB Acetaldehyd, also genauso viel Ethanol aus dem {{immersive_heavy/fermenter}}."
+  ],
+  "en": [
+   "One operation costs 120 FE. Hammer or press the [[immersiveengineering:plate_silver]] from silver, found from Y -48 to 32 ({{immersive/ores}}).",
+   "8 duroplast sheets take 3,000 mB acetaldehyde in the end, so just as much ethanol from the {{immersive_heavy/fermenter}}."
+  ],
+  "sources": [
+   "immersiveengineering:refinery/acetaldehyde",
+   "immersiveengineering:refinery/resin",
+   "immersiveengineering:bottling/duroplast_plate",
+   "config immersiveengineering-server.toml (ores.silver)"
+  ]
+ },
+ "resin": {
+  "de": [
+   "Ein Vorgang kostet 240 FE. Die 2 000 mB Harz für {{immersive_heavy/duroplast}} brauchen 3 000 mB Acetaldehyd und 2 000 mB Kreosotöl.",
+   "Das Kreosotöl kommt aus dem Koksofen ({{immersive/creosote}})."
+  ],
+  "en": [
+   "One operation costs 240 FE. The 2,000 mB resin for {{immersive_heavy/duroplast}} take 3,000 mB acetaldehyde and 2,000 mB creosote.",
+   "The creosote comes from the coke oven ({{immersive/creosote}})."
+  ],
+  "sources": [
+   "immersiveengineering:refinery/resin",
+   "immersiveengineering:bottling/duroplast_plate"
+  ]
+ },
+ "duroplast": {
+  "de": [
+   "8 Platten sind 2 000 mB Phenolharz. Mit der Form Verpackung 2x2 gießt die Abfüllanlage aus 4 000 mB Harz vier [[immersiveengineering:duroplast]] auf einmal.",
+   "[[immersiveengineering:plate_duroplast]] zählen als Kunststoffplatte, genau wie die Plastik Platte von Oritech. Beide gehen in die {{immersive_heavy/electronics}}."
+  ],
+  "en": [
+   "8 sheets are 2,000 mB phenolic resin. With the Packing 2x2 mold the Bottling Machine casts four [[immersiveengineering:duroplast]] at once from 4,000 mB resin.",
+   "[[immersiveengineering:plate_duroplast]] counts as a plastic plate, just like Oritech's Plastic Sheet. Both go into {{immersive_heavy/electronics}}."
+  ],
+  "sources": [
+   "immersiveengineering:bottling/duroplast_plate",
+   "immersiveengineering:bottling/duroplast_block",
+   "c:plates/plastic (ImmersiveEngineering jar, oritech jar)"
+  ]
+ },
+ "electronics": {
+  "de": [
+   "Die Kunststoffplatte darf auch eine Plastik Platte von Oritech sein. Die [[immersiveengineering:electron_tube]] macht dieselbe Blaupause, drei Stück aus Glas, Nickelblech, Kupferkabel und Redstone ({{immersive/electron_tube}}).",
+   "Vier Komponenten stecken in jedem Satz Resonanz-Ingenieursbausteine für den {{immersive_heavy/resonanz}}, eine in der {{immersive_heavy/railgun}}."
+  ],
+  "en": [
+   "The plastic plate may also be Oritech's Plastic Sheet. The same blueprint makes the [[immersiveengineering:electron_tube]], three from glass, a nickel plate, copper wire and redstone ({{immersive/electron_tube}}).",
+   "Four components go into every set of Resonanz Engineering Blocks for the {{immersive_heavy/resonanz}}, one into the {{immersive_heavy/railgun}}."
+  ],
+  "sources": [
+   "immersiveengineering:blueprint/component_electronic_adv",
+   "immersiveengineering:blueprint/electron_tube",
+   "immersiveengineering:crafting/resonanz_engineering",
+   "immersiveengineering:crafting/railgun"
+  ]
+ },
+ "mixer": {
+  "de": [
+   "Flüssigbeton kostet 3 200 FE pro Vorgang, Redstonesäure 1 600 FE. Einen Eimer [[immersiveengineering:redstone_acid_bucket]] brauchst du für jeden HV-Kondensator und für die Gesteinserweichende Säure der Bohrmaschine.",
+   "Danach öffnen sich {{immersive_heavy/assembler}} und {{immersive_heavy/concrete}}."
+  ],
+  "en": [
+   "Liquid concrete costs 3,200 FE per operation, redstone acid 1,600 FE. You need a bucket of [[immersiveengineering:redstone_acid_bucket]] for every HV Accumulator and for the drill's Rock Softening Acid.",
+   "After this come {{immersive_heavy/assembler}} and {{immersive_heavy/concrete}}."
+  ],
+  "sources": [
+   "immersiveengineering:mixer/concrete",
+   "immersiveengineering:mixer/redstone_acid",
+   "immersiveengineering:crafting/capacitor_hv",
+   "immersiveengineering:crafting/toolupgrade_drill_fortune"
+  ]
+ },
+ "assembler": {
+  "de": [
+   "IE gibt für den Monteur keinen Fortschritt aus, darum hakst du ihn selbst ab. Jedes gefertigte Teil kostet 80 FE.",
+   "Er braucht als einzige Maschine dieses Kapitels zwei Redstone-Ingenieursbausteine und neun Eisenblechblöcke, plan das beim Bau ein."
+  ],
+  "en": [
+   "IE grants no advancement for the Assembler, so you tick it off yourself. Each crafted item costs 80 FE.",
+   "It is the one machine of this chapter that takes two Redstone Engineering Blocks, plus nine iron sheetmetal; plan for that."
+  ],
+  "sources": [
+   "config immersiveengineering-server.toml (assembler_consumption 80)",
+   "data/immersiveengineering/advancement/multiblocks/",
+   "data/immersiveengineering/structure/multiblocks/assembler.nbt"
+  ]
+ },
+ "sawmill": {
+  "de": [
+   "Das [[immersiveengineering:sawblade]] verliert 5 Haltbarkeit pro Vorgang. Ein Eichenstamm kostet 1 600 FE und gibt 6 Bretter, Sägemehl fällt beim Entrinden und beim Sägen an.",
+   "IE gibt für das Sägewerk keinen Fortschritt aus, darum hakst du es selbst ab. Bretter zu Stufen schneidet es für 800 FE."
+  ],
+  "en": [
+   "The [[immersiveengineering:sawblade]] loses 5 durability per operation. An oak log costs 1,600 FE and gives 6 planks, with sawdust from both stripping and sawing.",
+   "IE grants no advancement for the Sawmill, so you tick it off yourself. It cuts planks into slabs for 800 FE."
+  ],
+  "sources": [
+   "config immersiveengineering-server.toml (sawmill_bladeDamage 5)",
+   "immersiveengineering:sawmill/oak_log",
+   "immersiveengineering:sawmill/oak_slab",
+   "immersiveengineering:crafting/sawblade"
+  ]
+ },
+ "auto_workbench": {
+  "de": [
+   "IE gibt für den Automatisierten Arbeitstisch keinen Fortschritt aus, darum hakst du ihn selbst ab. Er arbeitet mit denselben Blaupausen wie der Ingenieursarbeitstisch ({{immersive/bench}}).",
+   "Gut aufgehoben sind hier die Blaupause Komponenten für [[immersiveengineering:component_steel]] und [[immersiveengineering:electron_tube]], und die Blaupause Patronen für den {{immersive_heavy/revolver}}."
+  ],
+  "en": [
+   "IE grants no advancement for the Automated Engineer's Workbench, so you tick it off yourself. It uses the same blueprints as the Engineer's Workbench ({{immersive/bench}}).",
+   "Good uses are the Components blueprint for [[immersiveengineering:component_steel]] and [[immersiveengineering:electron_tube]], and the Bullets blueprint for the {{immersive_heavy/revolver}}."
+  ],
+  "sources": [
+   "data/immersiveengineering/advancement/multiblocks/",
+   "data/immersiveengineering/structure/multiblocks/auto_workbench.nbt",
+   "immersiveengineering:blueprint/component_steel",
+   "immersiveengineering:blueprint/bullet_casull"
+  ]
+ },
+ "survey": {
+  "de": [
+   "**Der Ingenieurshammer geht beim Bau der Vermessungswerkzeuge verloren**, das Rezept gibt ihn nicht zurück. Der [[immersiveengineering:sample_drill]] braucht 4 Stahlgerüste, 3 Stahlzäune und 2 Leichte Ingenieursbausteine.",
+   "Eine Kernprobe dauert 200 Ticks bei 40 FE/t, also 8 000 FE. Adern sind selten, eine frische ist bis zu 20 Prozent angebraucht. Mit Ader geht es weiter zum {{immersive_heavy/excavator}}."
+  ],
+  "en": [
+   "**The Engineer's Hammer is used up when you craft the survey tools**, the recipe does not return it. The [[immersiveengineering:sample_drill]] takes 4 steel scaffolding, 3 steel fences and 2 Light Engineering Blocks.",
+   "A core sample takes 200 ticks at 40 FE/t, so 8,000 FE. Veins are rare, and a fresh one can start up to 20 percent depleted. With a vein found, go on to the {{immersive_heavy/excavator}}."
+  ],
+  "sources": [
+   "immersiveengineering:crafting/survey_tools (type no_container_item)",
+   "immersiveengineering:crafting/sample_drill",
+   "config immersiveengineering-server.toml (machines.coredrill, machines.excavator chance 0.9, initial_depletion 0.2)",
+   "IE jar: common/crafting/INoContainersRecipe.getRemainingItems returns all EMPTY"
+  ]
+ },
+ "excavator": {
+  "de": [
+   "Das Schaufelrad lässt sich auch allein formen, mit dem Hammer auf den mittleren Stahlblock. Gegraben wird an der Unterkante des Rads, der Redstone-Baustein sitzt hinten.",
+   "Die 38 400 Erze sind das Höchste pro Ader, und mit jedem Erz sinkt der Ertrag. Die 9 Stahlblöcke kosten 81 Barren, die 26 Stahlgerüste weitere 23."
+  ],
+  "en": [
+   "The bucket wheel can also be formed alone, with the hammer on the central steel block. Digging happens at the bottom of the wheel, the redstone block sits at the back.",
+   "38,400 ores is the maximum per vein, and the yield drops as the vein empties. The 9 steel blocks cost 81 ingots, the 26 steel scaffolds another 23."
+  ],
+  "sources": [
+   "IE manual en_us/excavator.txt",
+   "config immersiveengineering-server.toml (excavator yield 38400)",
+   "data/immersiveengineering/structure/multiblocks/excavator_full.nbt",
+   "immersiveengineering:crafting/steel_scaffolding_standard"
+  ]
+ },
+ "lightning_rod": {
+  "de": [
+   "Ein Blitz bringt 16 000 000 FE, sie sammeln sich im Fuß und fließen dann langsam an die Anschlüsse an den Seiten ab. Jeder [[immersiveengineering:capacitor_hv]] fasst 4 Millionen FE und gibt 4 096 FE/t ab.",
+   "Der Kondensator braucht einen Einfachen Ingenieursbaustein ({{immersive/basic_engineering}}) und einen Eimer Redstonesäure aus dem {{immersive_heavy/mixer}}. IE gibt keinen Fortschritt fürs Formen, den Haken setzt du selbst."
+  ],
+  "en": [
+   "A strike brings 16,000,000 FE, collected in the base and then slowly passed to the connectors at the sides. Each [[immersiveengineering:capacitor_hv]] holds 4 million FE and outputs 4,096 FE/t.",
+   "The accumulator takes a Basic Engineering Block ({{immersive/basic_engineering}}) and a bucket of redstone acid from the {{immersive_heavy/mixer}}. IE grants no advancement for forming, you tick it off yourself."
+  ],
+  "sources": [
+   "config immersiveengineering-server.toml (lightning_output 16000000, capacitors.hv)",
+   "IE manual en_us/lightning_rod.txt",
+   "immersiveengineering:crafting/capacitor_hv"
+  ]
+ },
+ "radio_tower": {
+  "de": [
+   "Der rechte Anschluss wählt per farbigem Signal eine von 16 gespeicherten Frequenzen. Signale gehen über einen [[immersiveengineering:connector_bundled]] an den mittleren Anschluss.",
+   "Plan das Aluminium früh: 76 Blechblöcke und 9 weitere für die 16 Stufen sind 85 Aluminiumbleche, dazu die Zäune. Den Beton mischt der {{immersive_heavy/concrete}}."
+  ],
+  "en": [
+   "The right port picks one of 16 saved frequencies with a coloured signal. Signals go through a [[immersiveengineering:connector_bundled]] on the central port.",
+   "Plan the aluminium early: 76 sheetmetal plus 9 more for the 16 slabs are 85 aluminium plates, plus the fences. Mix the concrete as in {{immersive_heavy/concrete}}."
+  ],
+  "sources": [
+   "IE manual en_us/radio_tower.txt",
+   "data/immersiveengineering/structure/multiblocks/radio_tower.nbt",
+   "immersiveengineering:crafting/alu_fence"
+  ]
+ },
+ "resonanz": {
+  "de": [
+   "Ein Blatt Papier hält 60 Sekunden, eine Stunde Betrieb kostet also **60 Papier**. Das Fenster listet alle Blöcke, die er gerade aktiv hält.",
+   "Ein Satz Resonanz-Bausteine braucht vier Fortgeschrittene Elektronikkomponenten, vier Bleiblechblöcke und einen [[minecraft:echo_shard]]. IE gibt keinen Fortschritt fürs Formen, den Haken setzt du selbst."
+  ],
+  "en": [
+   "A sheet of paper lasts 60 seconds, so an hour of running costs **60 paper**. Its window lists every block it keeps active.",
+   "A set of Resonanz blocks takes four Advanced Electronic Components, four lead sheetmetal and an [[minecraft:echo_shard]]. IE grants no advancement for forming, you tick it off yourself."
+  ],
+  "sources": [
+   "config immersiveengineering-server.toml (resonanz_observer_*)",
+   "IE manual en_us/resonanz_observer.txt",
+   "immersiveengineering:crafting/resonanz_engineering"
+  ]
+ },
+ "list_process": {
+  "de": [
+   "Die Abfüllanlage, das Sägewerk und der Monteur haben keinen Fortschritt in IE, diese drei Haken setzt du selbst. Die anderen fünf hakt das Buch ab, sobald du die Maschine mit dem Hammer formst.",
+   "Am billigsten ist die Metallpresse mit 7 Blöcken, am teuersten der Zerkleinerer mit 38."
+  ],
+  "en": [
+   "The Bottling Machine, the Sawmill and the Assembler have no IE advancement, you tick those three off yourself. The book ticks the other five as soon as you form the machine with the hammer.",
+   "The cheapest is the Metal Press with 7 blocks, the most expensive the Crusher with 38."
+  ],
+  "sources": [
+   "data/immersiveengineering/advancement/multiblocks/",
+   "data/immersiveengineering/structure/multiblocks/*.nbt (block counts)"
+  ]
+ },
+ "list_big": {
+  "de": [
+   "Raffinerie, Lichtbogenofen, Dieselgenerator und Bagger hakt das Buch beim Formen ab. Für den Automatisierten Arbeitstisch, den Blitzableiter, den Funkturm und den Resonanz-Beobachter gibt es in IE keinen Fortschritt, diese Haken setzt du selbst.",
+   "Die teuersten sind der Funkturm mit 207 Blöcken und der Lichtbogenofen mit 77."
+  ],
+  "en": [
+   "The book ticks the Refinery, Arc Furnace, Diesel Generator and Excavator when you form them. The Automated Engineer's Workbench, Lightning Rod, Radio Tower and Resonanz Observer have no IE advancement, you tick those off yourself.",
+   "The most expensive are the Radio Tower with 207 blocks and the Arc Furnace with 77."
+  ],
+  "sources": [
+   "data/immersiveengineering/advancement/multiblocks/",
+   "data/immersiveengineering/structure/multiblocks/radio_tower.nbt",
+   "data/immersiveengineering/structure/multiblocks/arcfurnace.nbt"
+  ]
+ },
+ "final": {
+  "de": [
+   "1 024 Stahl im {{immersive_heavy/arc}} kosten rund 210 Millionen FE und 1 024 Koksstaub. Die 32 Schweren Bausteine sind genau die für die acht [[kronwerke:steel_core]]; daneben braucht jeder Kern einen [[mekanism:advanced_control_circuit]] ({{mekanism_advanced/circuits}}) und zwei [[ae2:engineering_processor]] ({{ae2/processors}}).",
+   "Die Stahlmenge des Stufenziels hängt von der Zahl aktiver Spieler ab, die acht Stahlkerne nicht. Was das Ziel gerade braucht, zeigt dir der Obelisk."
+  ],
+  "en": [
+   "1,024 steel in the {{immersive_heavy/arc}} cost about 210 million FE and 1,024 coke dust. The 32 heavy blocks are exactly those for the eight [[kronwerke:steel_core]]; each core also needs an [[mekanism:advanced_control_circuit]] ({{mekanism_advanced/circuits}}) and two [[ae2:engineering_processor]] ({{ae2/processors}}).",
+   "The steel amount of the stage goal depends on the number of active players, the eight steel cores do not. The obelisk shows what the goal still needs."
+  ],
+  "sources": [
+   "immersiveengineering:arcfurnace/steel",
+   "kronwerke:milestones/steel_core",
+   "config/kronwerke/goals.json (stage3: steel scaled, steel_core fixed)"
+  ]
+ },
+ "molds": {
+  "de": [
+   "Jede Form kostet drei Stahlbleche am Ingenieursarbeitstisch. Die Zahnradform presst auch die Zahnräder für Industrial Foregoing: vier Eisen ergeben ein [[enderio:iron_gear]], vier Gold ein [[industrialforegoing:gold_gear]].",
+   "Die Drahtform gibt zwei Kabel pro Barren, genauso viel wie die Mechanische Säge von Create aus einem Blech."
+  ],
+  "en": [
+   "Each mold costs three steel plates at the Engineer's Workbench. The gear mold also presses the gears for Industrial Foregoing: four iron make an [[enderio:iron_gear]], four gold an [[industrialforegoing:gold_gear]].",
+   "The wire mold gives two wires per ingot, as many as Create's Mechanical Saw cuts from one plate."
+  ],
+  "sources": [
+   "immersiveengineering:blueprint/mold_gear",
+   "immersiveengineering:metalpress/gear_iron",
+   "immersiveengineering:metalpress/gear_gold",
+   "immersiveengineering:metalpress/wire_steel",
+   "create:cutting/compat/immersiveengineering/wire_steel"
+  ]
+ },
+ "concrete": {
+  "de": [
+   "Das Rezept in der Werkbank darf gedreht werden und gibt 8 [[immersiveengineering:concrete]] pro Wassereimer. Für 32 Beton brauchst du also vier Durchgänge mit je 4 Sand, 2 Ton, 2 Kies.",
+   "Bleibeton geht formlos in der Werkbank oder mit dem [[create:deployer]] von Create, das ein Bleiblech auf den Beton setzt."
+  ],
+  "en": [
+   "The crafting recipe can be rotated and gives 8 [[immersiveengineering:concrete]] per water bucket. 32 concrete are four crafts of 4 sand, 2 clay and 2 gravel each.",
+   "Leaded concrete is shapeless in the crafting table, or a Create [[create:deployer]] applies a lead plate onto the concrete."
+  ],
+  "sources": [
+   "immersiveengineering:crafting/concrete",
+   "immersiveengineering:crafting/concrete_leaded",
+   "createaddition:compat/immersiveengineering/item_application/leaded_concrete"
+  ]
+ },
+ "drill": {
+  "de": [
+   "Der [[immersiveengineering:drillhead_steel]] braucht einen Stahlblock und vier Stahlbarren. Holzgriffe baust du aus Behandelten Stöcken ({{immersive/sticks}}) und einem Kupferklumpen.",
+   "Danach lohnen sich {{immersive_heavy/drill_upgrades}} und ein {{immersive_heavy/jerrycan}} für unterwegs."
+  ],
+  "en": [
+   "The [[immersiveengineering:drillhead_steel]] takes one steel block and four steel ingots. Build wooden grips from treated sticks ({{immersive/sticks}}) and a copper nugget.",
+   "After that, {{immersive_heavy/drill_upgrades}} and a {{immersive_heavy/jerrycan}} for the road are worth it."
+  ],
+  "sources": [
+   "immersiveengineering:crafting/drill",
+   "immersiveengineering:crafting/drillhead_steel",
+   "immersiveengineering:crafting/wooden_grip"
+  ]
+ },
+ "drill_upgrades": {
+  "de": [
+   "[[immersiveengineering:toolupgrade_drill_damage]] sind zwei Stahlbarren und eine Eisenkomponente. Der [[immersiveengineering:toolupgrade_drill_capacity]] braucht Stahlbleche, rote Farbstoffe und ein Flüssigkeitsrohr, die Säure dazu Stahlbleche, Rohre und eine Stahlkomponente.",
+   "Den [[immersiveengineering:toolupgrade_drill_waterproof]] brauchst du auch für den {{immersive_heavy/chemthrower}}, den Großen Panzer für dessen Multitank."
+  ],
+  "en": [
+   "[[immersiveengineering:toolupgrade_drill_damage]] are two steel ingots and an iron component. The [[immersiveengineering:toolupgrade_drill_capacity]] takes steel plates, red dye and a fluid pipe, the acid steel plates, pipes and a steel component.",
+   "You also need a [[immersiveengineering:toolupgrade_drill_waterproof]] for the {{immersive_heavy/chemthrower}}, and the Large Tank for its Multitank."
+  ],
+  "sources": [
+   "immersiveengineering:crafting/toolupgrade_drill_damage",
+   "immersiveengineering:crafting/toolupgrade_drill_capacity",
+   "immersiveengineering:crafting/toolupgrade_drill_fortune",
+   "immersiveengineering:crafting/chemthrower",
+   "immersiveengineering:crafting/toolupgrade_chemthrower_multitank"
+  ]
+ },
+ "jerrycan": {
+  "de": [
+   "Die Eisenbleche hämmerst oder presst du aus Eisenbarren. Am besten füllst du ihn direkt an der {{immersive_heavy/refinery}} oder an einem Fass voll Biodiesel."
+  ],
+  "en": [
+   "Hammer or press the iron plates from iron ingots. Fill it straight at the {{immersive_heavy/refinery}} or at a barrel of biodiesel."
+  ],
+  "sources": [
+   "immersiveengineering:crafting/jerrycan"
+  ]
+ },
+ "buzzsaw": {
+  "de": [
+   "Das [[immersiveengineering:rockcutter]] ist das Steinsägeblatt. Der [[immersiveengineering:toolupgrade_buzzsaw_spareblades]] besteht aus Eisenstäben, Hanffasern und Behandeltem Holz.",
+   "Ersatz für das [[immersiveengineering:sawblade]] baust du aus vier Stahlbarren und vier Stahlblechen, wie fürs {{immersive_heavy/sawmill}}."
+  ],
+  "en": [
+   "The [[immersiveengineering:rockcutter]] is the stone blade. The [[immersiveengineering:toolupgrade_buzzsaw_spareblades]] is made of iron rods, hemp fiber and treated wood.",
+   "Build spare [[immersiveengineering:sawblade]]s from four steel ingots and four steel plates, as for the {{immersive_heavy/sawmill}}."
+  ],
+  "sources": [
+   "immersiveengineering:crafting/buzzsaw",
+   "immersiveengineering:crafting/toolupgrade_buzzsaw_spareblades",
+   "immersiveengineering:crafting/sawblade"
+  ]
+ },
+ "revolver": {
+  "de": [
+   "Mit der Metallpresse und der Form Patronenhülse kostet ein Kupferbarren zwei [[immersiveengineering:empty_casing]], von Hand sind es fünf Kupferbleche für fünf Hülsen. Eine Casull-Patrone macht 10 Schaden.",
+   "Die Patronen-Blaupause passt auch in den {{immersive_heavy/auto_workbench}}, dann gibt es Munition ohne dich."
+  ],
+  "en": [
+   "With the Metal Press and the casing mold a copper ingot gives two [[immersiveengineering:empty_casing]]; by hand five copper plates make five casings. A Casull cartridge deals 10 damage.",
+   "The Bullets blueprint also fits the {{immersive_heavy/auto_workbench}}, so ammunition runs without you."
+  ],
+  "sources": [
+   "immersiveengineering:metalpress/bullet_casing",
+   "immersiveengineering:crafting/empty_casing",
+   "config immersiveengineering-server.toml (tools.bullet_damage casull 10)",
+   "immersiveengineering:blueprint/bullet_casull"
+  ]
+ },
+ "powerpack": {
+  "de": [
+   "Die Isolierten LV-Drahtspulen kennst du aus {{immersive/wire_insulated}}, den Kondensator aus {{immersive/capacitor}}.",
+   "Die [[immersiveengineering:toolupgrade_powerpack_antenna]] baust du aus Aluminiumkabeln, einem Aluminiumstab und einem LV-Anschluss."
+  ],
+  "en": [
+   "You know insulated LV wire coils from {{immersive/wire_insulated}} and the accumulator from {{immersive/capacitor}}.",
+   "Build the [[immersiveengineering:toolupgrade_powerpack_antenna]] from aluminium wire, an aluminium rod and an LV connector."
+  ],
+  "sources": [
+   "immersiveengineering:crafting/powerpack",
+   "immersiveengineering:crafting/toolupgrade_powerpack_antenna"
+  ]
+ },
+ "chemthrower": {
+  "de": [
+   "Der [[immersiveengineering:toolupgrade_chemthrower_focus]] braucht Flüssigkeitsrohre, Stahlbleche und eine Eisenkomponente, der [[immersiveengineering:toolupgrade_chemthrower_multitank]] zwei Große Panzer.",
+   "Schleichend mit dem Mausrad wechselst du beim Multitank zwischen den Tanks. Er verbraucht 10 mB pro Tick, solange du sprühst."
+  ],
+  "en": [
+   "The [[immersiveengineering:toolupgrade_chemthrower_focus]] takes fluid pipes, steel plates and an iron component, the [[immersiveengineering:toolupgrade_chemthrower_multitank]] two Large Tanks.",
+   "With the Multitank, sneak and scroll to switch tanks. It uses 10 mB per tick while you spray."
+  ],
+  "sources": [
+   "immersiveengineering:crafting/toolupgrade_chemthrower_focus",
+   "immersiveengineering:crafting/toolupgrade_chemthrower_multitank",
+   "config immersiveengineering-server.toml (tools.chemthrower consumption 10, scroll true)"
+  ]
+ },
+ "railgun": {
+  "de": [
+   "Jeder Schuss kostet 800 FE. Der [[immersiveengineering:capacitor_hv]] braucht Redstonesäure und eine HOP-Graphitplatte, siehe {{immersive_heavy/lightning_rod}}.",
+   "Graphitelektroden als Munition sind teuer, besser sind [[immersiveengineering:stick_steel]] aus der Metallpresse."
+  ],
+  "en": [
+   "Each shot costs 800 FE. The [[immersiveengineering:capacitor_hv]] needs redstone acid and an HOP graphite plate, see {{immersive_heavy/lightning_rod}}.",
+   "Graphite electrodes are expensive ammunition, [[immersiveengineering:stick_steel]] from the Metal Press are better."
+  ],
+  "sources": [
+   "immersiveengineering:crafting/railgun",
+   "config immersiveengineering-server.toml (tools.railgun consumption 800)",
+   "immersiveengineering:crafting/capacitor_hv"
+  ]
+ }
+}

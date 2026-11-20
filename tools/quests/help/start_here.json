@@ -1,0 +1,894 @@
+{
+ "welcome": {
+  "de": [
+   "Beim ersten Betreten legt dir der Server einen [[waystones:waystone]] und 4 [[waystones:warp_dust]] ins Inventar. Stell den Wegstein an deine Basis: Sobald du auch den am Spawn aktiviert hast ({{start_here/d_waystone}}), reist du mit einem Klick zwischen beiden hin und her.",
+   "Die Reihe oben endet bei {{start_here/d_done}}. Darunter erklärt das Kapitel den Obelisken, die zwei Meilensteine von Stufe 1 und die fünf Stufen."
+  ],
+  "en": [
+   "On your first join the server puts a [[waystones:waystone]] and 4 [[waystones:warp_dust]] in your inventory. Place the waystone at your base: once you have also activated the one at spawn ({{start_here/d_waystone}}), one click takes you back and forth.",
+   "The top row ends at {{start_here/d_done}}. Below it the chapter explains the obelisk, the two stage 1 milestones and the five stages."
+  ],
+  "sources": [
+   "config/kronwerke-common.toml (join.kit)",
+   "core: src/main/java/de/kronwerke/core/goal/GoalManager.java (giveKits)"
+  ]
+ },
+ "v_claim": {
+  "de": [
+   "In deinen Claims dürfen nur dein Team und eure Verbündeten bauen. Feuer und Flüssigkeiten von außen dringen nicht ein, und PvP ist dort aus, solange dein Team es nicht einschaltet.",
+   "Spielst du mit Freunden, gründet ein Team ({{tips/m_team}}). Claims verfallen, wenn 30 Tage lang niemand aus dem Team online war."
+  ],
+  "en": [
+   "In your claims only your team and your allies can build. Fire and fluids from outside do not spread in, and PvP is off there unless your team turns it on.",
+   "If you play with friends, form a team ({{tips/m_team}}). Claims are released after 30 days without anyone of the team online."
+  ],
+  "sources": [
+   "config/ftbchunks-world.snbt (def_block_edit allies, fire/fluid protection, pvp per team, max_idle_days_before_unclaim 30)",
+   "docs/SERVER.md"
+  ]
+ },
+ "d_stone": {
+  "de": [
+   "Ultimine nimmt bis zu **128 Blöcke** auf einmal mit, und Stein, Tiefenschiefer, Andesit, Granit, Diorit und Tuff zählen dabei als eine Sorte. Bau ohne Behutsamkeit ab: Mit ihr bekommst du Stein statt Bruchstein, und Stein nimmt der Obelisk nicht.",
+   "Für diese Quest zählt nur normaler [[minecraft:cobblestone]]. Mit der Rolle Baumeister baust du Stein 30 Prozent schneller ab."
+  ],
+  "en": [
+   "Ultimine takes up to **128 blocks** at once, and stone, deepslate, andesite, granite, diorite and tuff count as one kind for it. Mine without Silk Touch: with it you get stone instead of cobblestone, and the obelisk does not take stone.",
+   "This quest only counts plain [[minecraft:cobblestone]]. With the Builder role you mine stone 30 percent faster."
+  ],
+  "sources": [
+   "config/ftbultimine-server.snbt (max_blocks 128, merge_tags base_stone_overworld)",
+   "config/kronwerke/goals.json (#c:cobblestones)",
+   "kubejs/data/kronwerke/origins/powers/rolle_baumeister_steinbrecher.json (lang)"
+  ]
+ },
+ "o_find": {
+  "de": [
+   "Die Quest hakt sich ab, sobald du höchstens 16 Blöcke vom Obelisken entfernt stehst, und nur auf dem Hauptserver, nicht in der Farmwelt.",
+   "Aus je 2 [[waystones:warp_dust]] und einem Feuerstein wird ein [[waystones:dormant_shard]], der Grundstoff für Warpplatten ({{exploration/e_warp_plate}})."
+  ],
+  "en": [
+   "The quest ticks once you stand within 16 blocks of the obelisk, and only on the main server, not in the farm world.",
+   "2 [[waystones:warp_dust]] and a flint make a [[waystones:dormant_shard]], the base of warp plates ({{exploration/e_warp_plate}})."
+  ],
+  "sources": [
+   "core: src/main/java/de/kronwerke/core/steps/FirstSteps.java (distSqr <= 16*16, Role.main())",
+   "waystones:dormant_shard"
+  ]
+ },
+ "o_handin": {
+  "de": [
+   "Der Obelisk nimmt nur so viel, wie dem Ziel noch fehlt, der Rest bleibt in deiner Hand. Hinter der Meldung im Chat steht **[Rückgängig]**: Ein Klick darauf oder /kw undo gibt dir zurück, was du in den letzten zehn Sekunden abgegeben hast.",
+   "Beim Schleich-Klick bleiben Hotbar, Nebenhand und Rüstung liegen, abgegeben wird nur aus den 27 Feldern darüber."
+  ],
+  "en": [
+   "The obelisk takes only what the goal still lacks; the rest stays in your hand. The chat message has an **[Undo]** link: clicking it or typing /kw undo gives back what you handed in during the last ten seconds.",
+   "A sneak click leaves your hotbar, offhand and armour alone; it only takes from the 27 slots above the hotbar."
+  ],
+  "sources": [
+   "core: src/main/java/de/kronwerke/core/obelisk/Obelisk.java (undoLink)",
+   "core: src/main/java/de/kronwerke/core/goal/GoalManager.java (deposit, depositAll slots 9 to 35, undo 10 s)"
+  ]
+ },
+ "d_iron": {
+  "de": [
+   "Plane gut 10 Eisen für das {{start_here/m_gearbox}} ein: Die [[create:mechanical_press]] darin kostet einen ganzen Eisenblock, das [[naturesaura:infused_iron]] einen weiteren Barren.",
+   "Der [[kronwerke:grubenrahmen]] braucht ein [[ars_nouveau:source_gem]], keinen Quellstein: 4 Andesitgehäuse, 4 Infused Iron und 1 Quelljuwel ergeben 2 Rahmen. Für die 10 Rahmen des Minenportals ({{exploration/e_pickaxe}}) sind das 20 Infused Iron, also 20 Eisen."
+  ],
+  "en": [
+   "Set aside a good 10 iron for the {{start_here/m_gearbox}}: its [[create:mechanical_press]] costs a whole block of iron, the [[naturesaura:infused_iron]] one more ingot.",
+   "The [[kronwerke:grubenrahmen]] takes a [[ars_nouveau:source_gem]], not Sourcestone: 4 Andesite Casings, 4 Infused Iron and 1 Source Gem make 2 frames. The 10 frames of the Mine Portal ({{exploration/e_pickaxe}}) need 20 Infused Iron, so 20 iron."
+  ],
+  "sources": [
+   "kronwerke:grubenrahmen",
+   "create:crafting/kinetics/mechanical_press",
+   "kronwerke:milestones/stone_gearbox",
+   "naturesaura:altar/infused_iron"
+  ]
+ },
+ "d_done": {
+  "de": [
+   "Als Nächstes lohnt {{start_here/o_obelisk}}: Dort steht, was der Obelisk in Stufe 1 genau will und welche zwei Meilensteine der Server bauen muss."
+  ],
+  "en": [
+   "Next, read {{start_here/o_obelisk}}: it says what exactly the obelisk wants in stage 1 and which two milestones the server has to build."
+  ],
+  "sources": [
+   "config/kronwerke/goals.json"
+  ]
+ },
+ "d_waystone": {
+  "de": [
+   "Den Wegstein aus deinem Startpaket stellst du an deine Basis, dann pendelst du zwischen Basis und Spawn. Weitere Wegsteine baust du aus einem [[waystones:warp_stone]] (4 Quelljuwelen, 4 Enderperlen, 1 Smaragd), 3 Steinziegeln und 3 Obsidian, siehe {{exploration/e_own_waystone}}."
+  ],
+  "en": [
+   "Place the waystone from your join kit at your base, then you can travel between base and spawn. More waystones take a [[waystones:warp_stone]] (4 Source Gems, 4 Ender Pearls, 1 Emerald), 3 Stone Bricks and 3 Obsidian, see {{exploration/e_own_waystone}}."
+  ],
+  "sources": [
+   "config/kronwerke-common.toml (join.kit)",
+   "waystones:warp_stone",
+   "waystones:waystone"
+  ]
+ },
+ "d_backpack": {
+  "de": [
+   "Du brauchst 4 Faden, 4 Leder und eine Truhe. Wichtig für den Obelisken: Der Schleich-Klick nimmt nur aus deinem Inventar, **nicht aus dem Rucksack**. Lade den Inhalt vor dem Obelisken erst ins Inventar um.",
+   "Größere Rucksäcke und Upgrades wie den Magneten zeigt {{storage/welcome}}; Kupfer- und Eisenrucksäcke kommen mit Stufe 2."
+  ],
+  "en": [
+   "You need 4 String, 4 Leather and a chest. Important at the obelisk: the sneak click takes only from your inventory, **not from the backpack**. Move the contents into your inventory before you hand in.",
+   "Bigger backpacks and upgrades like the magnet are in {{storage/welcome}}; copper and iron backpacks come with stage 2."
+  ],
+  "sources": [
+   "sophisticatedbackpacks:backpack",
+   "core: src/main/java/de/kronwerke/core/goal/GoalManager.java (depositAll: inventory slots 9 to 35 only)",
+   "docs/STAGES.md"
+  ]
+ },
+ "o_obelisk": {
+  "de": [
+   "Der Balken zählt Punkte: Bruchstein 1, Andesitlegierung 2, Quelljuwel 4, jeder Meilenstein 250. Jedes Ding hat aber seine eigene Zielmenge, und die Stufe öffnet erst, wenn **jede einzelne** erreicht ist.",
+   "Mehr Bruchstein ersetzt also keine fehlenden [[kronwerke:stone_gearbox]] oder [[kronwerke:source_keystone]]. Bei 98 Prozent aller Punkte hält der Obelisk an ({{start_here/o_event}})."
+  ],
+  "en": [
+   "The bar counts points: cobblestone 1, Andesite Alloy 2, Source Gem 4, each milestone 250. But every item has its own target, and the stage only opens when **each one** is met.",
+   "Extra cobblestone does not replace missing [[kronwerke:stone_gearbox]] or [[kronwerke:source_keystone]]. At 98 percent of all points the obelisk holds ({{start_here/o_event}})."
+  ],
+  "sources": [
+   "config/kronwerke/goals.json",
+   "core: src/main/java/de/kronwerke/core/goal/GoalManager.java (done: min(progress, target) * points; take <= remaining)",
+   "core: src/main/java/de/kronwerke/core/goal/GoalMath.java"
+  ]
+ },
+ "o_commands": {
+  "de": [
+   "/kw bar blendet die Bossleiste aus und holt sie wieder. Schleichen mit **leerer Hand** am Obelisken zeigt dir deine eigenen Gaben, Säule für Säule, und deinen Platz.",
+   "Die Liste, die der Obelisk bei falschen Sachen zeigt, kommt höchstens alle 30 Sekunden, dazwischen sagt er nur kurz Nein."
+  ],
+  "en": [
+   "/kw bar hides the boss bar and brings it back. Sneaking with an **empty hand** at the obelisk shows your own contributions, pillar by pillar, and your rank.",
+   "The list the obelisk shows for wrong items comes at most every 30 seconds; in between it just says no."
+  ],
+  "sources": [
+   "core: src/main/java/de/kronwerke/core/command/KwCommand.java (bar, undo, goals, top)",
+   "core: src/main/java/de/kronwerke/core/obelisk/Obelisk.java (ledger, listShown 30 s)"
+  ]
+ },
+ "o_deposit": {
+  "de": [
+   "Der zweite Klick muss innerhalb von 5 Sekunden kommen, sonst fragt der Obelisk erneut. Abgegeben werden nur die 27 Felder über der Hotbar; was in einem Rucksack steckt, bleibt drin.",
+   "Ein volles Inventar Bruchstein sind 1 728 Stück pro Gang. Auch Maschinen wie das Einsatzgerät werden am Obelisken abgewiesen."
+  ],
+  "en": [
+   "The second click has to come within 5 seconds, or the obelisk asks again. Only the 27 slots above the hotbar are handed in; whatever sits in a backpack stays there.",
+   "A full inventory of cobblestone is 1,728 per trip. Machines like the Deployer are turned away at the obelisk too."
+  ],
+  "sources": [
+   "core: src/main/java/de/kronwerke/core/obelisk/Obelisk.java (allArmed 5000 ms, FakePlayer check)",
+   "core: src/main/java/de/kronwerke/core/goal/GoalManager.java (depositAll slots 9 to 35)"
+  ]
+ },
+ "o_farm": {
+  "de": [
+   "Für den Anfang reichen drei Anlagen: {{farms/cobble_drill}} für die Stein-Säule, {{farms/alloy_line}} für Andesitlegierung aus Bruchstein und Lava und {{farms/gem_plant}} für Quelljuwelen.",
+   "Der Schleich-Klick leert **keinen Rucksack**, er nimmt nur aus den 27 Inventarfeldern. Nutz den Rucksack als Zwischenlager und lade am Obelisken erst ins Inventar um."
+  ],
+  "en": [
+   "Three builds are enough to start: {{farms/cobble_drill}} for the stone pillar, {{farms/alloy_line}} for Andesite Alloy from cobblestone and lava, and {{farms/gem_plant}} for Source Gems.",
+   "The sneak click does **not empty a backpack**; it only takes from the 27 inventory slots. Use the backpack as a buffer and move things into your inventory at the obelisk."
+  ],
+  "sources": [
+   "core: src/main/java/de/kronwerke/core/goal/GoalManager.java (depositAll slots 9 to 35)",
+   "tools/quests: farms chapter"
+  ]
+ },
+ "o_stone": {
+  "de": [
+   "Neben normalem Bruchstein zählen auch bemooster Bruchstein und Bruchtiefenschiefer. Stein, Andesit oder Bruchsteinstufen nimmt der Obelisk nicht.",
+   "Ohne Lava geht es mit {{farms/stone_seeds}}: 8 Steinessenz ergeben 24 Bruchstein. Mit der Rolle Baumeister baust du Stein 30 Prozent schneller ab."
+  ],
+  "en": [
+   "Besides plain cobblestone, mossy cobblestone and cobbled deepslate count too. Stone, andesite or cobblestone slabs are not taken.",
+   "Without lava, use {{farms/stone_seeds}}: 8 Stone Essence make 24 cobblestone. With the Builder role you mine stone 30 percent faster."
+  ],
+  "sources": [
+   "config/kronwerke/goals.json (#c:cobblestones)",
+   "farms/stone_seeds",
+   "kubejs/data/kronwerke/origins/powers/rolle_baumeister_steinbrecher.json"
+  ]
+ },
+ "o_tech": {
+  "de": [
+   "Der Mixer braucht ein [[create:basin]] darunter und keinen Lohenbrenner. Nuggets bekommst du aus Barren (1 Barren, 9 Nuggets) oder aus der Kieswäsche in {{farms/alloy_line}}.",
+   "Die 12 [[kronwerke:stone_gearbox]] sind Pflicht: Die Legierung allein füllt die Säule nicht, auch wenn der Balken fast voll aussieht."
+  ],
+  "en": [
+   "The mixer needs a [[create:basin]] below it and no Blaze Burner. Nuggets come from ingots (1 ingot, 9 nuggets) or from washing gravel in {{farms/alloy_line}}.",
+   "The 12 [[kronwerke:stone_gearbox]] are required: alloy alone does not fill the pillar, even when the bar looks almost full."
+  ],
+  "sources": [
+   "kronwerke:create/andesite_alloy_mixing",
+   "kronwerke:create/andesite_alloy_mixing_from_zinc",
+   "config/kronwerke/goals.json"
+  ]
+ },
+ "o_magic": {
+  "de": [
+   "Statt Amethystsplittern nimmt die Kammer auch **Lapislazuli**, jedes Juwel kostet 500 Source. Die [[ars_nouveau:imbuement_chamber]] selbst braucht 6 Archwood-Planken und 2 [[create:golden_sheet]], und Goldbleche macht in Stufe 1 nur die Mechanische Presse von Create.",
+   "Wie mehrere Kammern an einem Glas laufen, zeigt {{farms/gem_plant}}. Die 12 [[kronwerke:source_keystone]] sind Pflicht, Juwelen allein füllen die Säule nicht."
+  ],
+  "en": [
+   "The chamber also takes **Lapis Lazuli** instead of Amethyst Shards; every gem costs 500 Source. The [[ars_nouveau:imbuement_chamber]] itself needs 6 Archwood Planks and 2 [[create:golden_sheet]], and in stage 1 only Create's Mechanical Press makes Golden Sheets.",
+   "{{farms/gem_plant}} shows several chambers on one jar. The 12 [[kronwerke:source_keystone]] are required; gems alone do not fill the pillar."
+  ],
+  "sources": [
+   "ars_nouveau:imbuement_lapis",
+   "ars_nouveau:imbuement_amethyst",
+   "ars_nouveau:imbuement_chamber",
+   "create:pressing/gold_ingot",
+   "immersiveengineering:hammer (stage 2)",
+   "config/kronwerke/goals.json"
+  ]
+ },
+ "o_scale": {
+  "de": [
+   "Ein Beispiel: Bei 45 oder mehr Aktiven gilt das 1,5-Fache, also 30 000 Bruchstein, 2 250 Andesitlegierungen und 1 200 Quelljuwelen. Bei 12 oder weniger bleibt es beim 0,4-Fachen: 8 000, 600 und 320.",
+   "Stufe 1 ist ein Sonderfall: Zum Start ist noch niemand aktiv, deshalb werden ihre Mengen einmal neu berechnet, sobald die Season einen Tag läuft."
+  ],
+  "en": [
+   "An example: with 45 or more active players the factor is 1.5, so 30,000 cobblestone, 2,250 Andesite Alloy and 1,200 Source Gems. With 12 or fewer it stays at 0.4: 8,000, 600 and 320.",
+   "Stage 1 is a special case: nobody is active at the start, so its amounts are worked out once more after the season has run for a day."
+  ],
+  "sources": [
+   "config/kronwerke/goals.json",
+   "config/kronwerke-common.toml (scaling)",
+   "core: src/main/java/de/kronwerke/core/goal/GoalManager.java (currentFactor, rescaleProvisional)"
+  ]
+ },
+ "o_event": {
+  "de": [
+   "Die 98 Prozent gelten für alle Punkte des Ziels zusammen, nicht für eine einzelne Säule. Ab dann nimmt der Obelisk nichts mehr, und /kw undo gibt auch nichts mehr zurück.",
+   "Heb dir für das Finale einen Stapel auf, und erst am Event geht das letzte Stück hinein, das das Ziel füllt."
+  ],
+  "en": [
+   "The 98 percent are of all the goal's points together, not of one pillar. From then on the obelisk takes nothing, and /kw undo gives nothing back either.",
+   "Keep a stack for the finale; only at the event does the last piece that fills the goal go in."
+  ],
+  "sources": [
+   "config/kronwerke/goals.json (holdAt 0.98)",
+   "core: src/main/java/de/kronwerke/core/goal/GoalMath.java",
+   "core: src/main/java/de/kronwerke/core/goal/GoalManager.java (undo)"
+  ]
+ },
+ "m_fiber": {
+  "de": [
+   "Laub darf jede Sorte sein, als Gras zählt das kurze [[minecraft:short_grass]], nicht der Grasblock. Mach gleich mehr [[naturesaura:gold_fiber]]: Der Altar braucht 8 [[naturesaura:gold_brick]], je aus einem Steinziegel und einer Faser.",
+   "Das Buch stellst du formlos aus 2 Papier, 1 Leder und einem beliebigen Setzling her."
+  ],
+  "en": [
+   "Any leaves work, and the grass is [[minecraft:short_grass]], not a grass block. Make extra [[naturesaura:gold_fiber]] right away: the altar needs 8 [[naturesaura:gold_brick]], each from one Stone Bricks and one fiber.",
+   "The book is shapeless: 2 Paper, 1 Leather and any sapling."
+  ],
+  "sources": [
+   "naturesaura:gold_fiber",
+   "naturesaura:gold_brick",
+   "NaturesAura-41.10.jar data/naturesaura/recipe/book.json",
+   "NaturesAura-41.10.jar Multiblocks.class (altar: 8 x M = gold brick)"
+  ]
+ },
+ "m_goldleaf": {
+  "de": [
+   "Nur ganz goldenes Laub in der letzten Stufe lässt [[naturesaura:gold_leaf]] fallen, früher abgebaut gibt es nichts. Plane den Bedarf: 8 Blätter für die 16 Gold Powder des Rituals, 6 für die Ständer, je 1 für Token of Joy und Altar, dazu 1 für jeden der 12 Quellschlusssteine.",
+   "Das sind rund 30 Gold Leaf, also lohnen sich zwei oder drei goldene Bäume."
+  ],
+  "en": [
+   "Only fully golden leaves at the last stage drop [[naturesaura:gold_leaf]]; broken earlier, they give nothing. Plan ahead: 8 leaves for the ritual's 16 Gold Powder, 6 for the stands, one each for the Token of Joy and the altar, plus one for each of the 12 Source Keystones.",
+   "That is about 30 Gold Leaf, so two or three golden trees pay off."
+  ],
+  "sources": [
+   "NaturesAura-41.10.jar data/naturesaura/loot_table/blocks/golden_leaves.json (stage 3, chance 0.75)",
+   "naturesaura:gold_powder",
+   "naturesaura:wood_stand",
+   "naturesaura:tree_ritual/token_joy",
+   "kronwerke:round/naturesaura_tree_ritual_nature_altar",
+   "kronwerke:milestones/source_keystone"
+  ],
+  "client": [
+   "How the golden leaves spread over the tree and how long it takes"
+  ]
+ },
+ "m_ritual": {
+  "de": [
+   "Das Ritual braucht eine freie, ebene Fläche von 9 mal 9 Blöcken, der Setzling steht in der Mitte. Ständer brauchst du nur so viele, wie das Rezept Zutaten hat: Token of Joy und Natural Altar haben je 6, deshalb fragt die Quest nach 6.",
+   "Zusammen kostet das 14 Gold Leaf: 8 für das Pulver, 6 für die Ständer."
+  ],
+  "en": [
+   "The ritual needs a clear, flat area of 9 by 9 blocks with the sapling in the middle. You only need as many stands as the recipe has ingredients: Token of Joy and Natural Altar have 6 each, which is why the quest asks for 6.",
+   "Altogether that is 14 Gold Leaf: 8 for the powder, 6 for the stands."
+  ],
+  "sources": [
+   "NaturesAura-41.10.jar Multiblocks.class (tree_ritual 9x9: 16 G, 8 W)",
+   "naturesaura:wood_stand",
+   "naturesaura:gold_powder",
+   "naturesaura:tree_ritual/token_joy",
+   "kronwerke:round/naturesaura_tree_ritual_nature_altar"
+  ]
+ },
+ "m_token": {
+  "de": [
+   "Bottled Sunlight gibt es nur in der Oberwelt, nur diese Sorte nimmt das Ritual. Die Blume darf jede kleine Blume sein.",
+   "Das Ritual lässt 2 [[naturesaura:token_joy]] liegen. Den zweiten heb auf, er steckt in weiteren Rezepten von Nature's Aura."
+  ],
+  "en": [
+   "Bottled Sunlight only comes from the Overworld, and only that kind is taken by the ritual. Any small flower works.",
+   "The ritual drops 2 [[naturesaura:token_joy]]. Keep the second one, other Nature's Aura recipes use it."
+  ],
+  "sources": [
+   "naturesaura:tree_ritual/token_joy (aura_type naturesaura:overworld, #minecraft:small_flowers, count 2)",
+   "naturesaura:bottle_two_the_rebottling",
+   "NaturesAura book practices/aura_bottle.json"
+  ]
+ },
+ "m_altar": {
+  "de": [
+   "Für das Bauwerk brauchst du 16 Steinziegel, 20 Bretter, 4 gemeißelte Steinziegel und 8 [[naturesaura:gold_brick]] auf einer Fläche von 9 mal 9 Blöcken. Die Bretter dürfen jede Holzart sein.",
+   "Auf Kronwerke kostet der Altar 3 [[botania:livingrock]] statt 3 Stein wie im Original ({{start_here/m_livingrock}}). Zeigt das Buch von Nature's Aura noch Stein, gilt EMI."
+  ],
+  "en": [
+   "The structure takes 16 Stone Bricks, 20 planks, 4 Chiseled Stone Bricks and 8 [[naturesaura:gold_brick]] on a 9 by 9 area. Any wood type works for the planks.",
+   "On Kronwerke the altar costs 3 [[botania:livingrock]] instead of the original 3 stone ({{start_here/m_livingrock}}). If the Nature's Aura book still shows stone, EMI is right."
+  ],
+  "sources": [
+   "NaturesAura-41.10.jar Multiblocks.class (altar layers)",
+   "NaturesAura-41.10.jar data/naturesaura/tags/block/altar_*.json",
+   "kronwerke:round/naturesaura_tree_ritual_nature_altar",
+   "NaturesAura-41.10.jar data/naturesaura/recipe/tree_ritual/nature_altar.json"
+  ],
+  "client": [
+   "Which altar recipe the Nature's Aura book page shows (original with stone, or none)"
+  ]
+ },
+ "m_infused": {
+  "de": [
+   "Ein Eisenblock braucht 135 000 Aura und wird zum [[naturesaura:infused_iron_block]], aus dem du 9 Barren zurückgewinnst. Du brauchst 1 Infused Iron pro Steinwerk-Getriebe und 20 für die 10 Grubenrahmen des Minenportals.",
+   "Ab Stufe 2 macht ein beheizter Mixer aus 2 Eisen und 1 Quelljuwel 2 Infused Iron, ganz ohne Aura."
+  ],
+  "en": [
+   "A block of iron needs 135,000 Aura and becomes an [[naturesaura:infused_iron_block]], which you craft back into 9 ingots. You need 1 Infused Iron per Stoneworks Gearbox and 20 for the 10 Mine Frames of the Mine Portal.",
+   "From stage 2 on, a heated mixer turns 2 iron and 1 Source Gem into 2 Infused Iron, no Aura needed."
+  ],
+  "sources": [
+   "naturesaura:altar/infused_iron (aura 15000)",
+   "naturesaura:altar/infused_iron_block (aura 135000)",
+   "naturesaura:infused_iron (from block)",
+   "kronwerke:round/infused_iron_mixing (heated)",
+   "kronwerke:grubenrahmen"
+  ]
+ },
+ "m_gearbox": {
+  "de": [
+   "Für alle zwölf braucht der Server 72 [[create:andesite_casing]] (48 direkt, dazu je eins in Presse und Mahlstein), 12 Eisenblöcke für die Pressen und 12 [[naturesaura:infused_iron]].",
+   "Teilt die Arbeit: Wer Create spielt, baut die Teile ({{start_here/m_gearparts}}), wer Nature's Aura spielt, liefert das Infused Iron."
+  ],
+  "en": [
+   "For all twelve the server needs 72 [[create:andesite_casing]] (48 directly, plus one each in the press and the millstone), 12 blocks of iron for the presses and 12 [[naturesaura:infused_iron]].",
+   "Split the work: whoever plays Create builds the parts ({{start_here/m_gearparts}}), whoever plays Nature's Aura brings the Infused Iron."
+  ],
+  "sources": [
+   "kronwerke:milestones/stone_gearbox",
+   "create:crafting/kinetics/mechanical_press",
+   "create:crafting/kinetics/millstone",
+   "config/kronwerke/goals.json"
+  ]
+ },
+ "m_keystone": {
+  "de": [
+   "Für alle zwölf braucht der Server 48 Quelljuwelblöcke (192 Quelljuwelen), 24 [[botania:mana_diamond]] mit zusammen 240 000 Mana, 12 Quellgläser und 12 Gold Leaf.",
+   "Das lohnt sich: 16 Juwelen zählen einzeln 64 Punkte, im Schlussstein verbaut 250. Die Zutaten sammelt {{start_here/m_keyparts}}."
+  ],
+  "en": [
+   "For all twelve the server needs 48 Source Gem Blocks (192 Source Gems), 24 [[botania:mana_diamond]] with 240,000 mana in total, 12 Source Jars and 12 Gold Leaf.",
+   "It pays off: 16 gems count 64 points on their own, built into a keystone 250. {{start_here/m_keyparts}} gathers the ingredients."
+  ],
+  "sources": [
+   "kronwerke:milestones/source_keystone",
+   "botania:mana_infusion/mana_diamond (10000)",
+   "ars_nouveau:source_gem_block",
+   "config/kronwerke/goals.json"
+  ]
+ },
+ "m_gearparts": {
+  "de": [
+   "Ein [[create:andesite_casing]] entsteht, wenn du mit [[create:andesite_alloy]] in der Hand auf einen entrindeten Stamm oder entrindetes Holz klickst. Insgesamt kostet ein Getriebe 6 Gehäuse, denn Presse und Mahlstein enthalten je eins.",
+   "Die Presse braucht dazu einen **Eisenblock** und eine Welle, der Mahlstein ein Zahnrad und Stein. Das Große Zahnrad: ein Zahnrad und ein Brett, formlos."
+  ],
+  "en": [
+   "An [[create:andesite_casing]] is made by clicking a stripped log or stripped wood with [[create:andesite_alloy]] in hand. One gearbox costs 6 casings in total, since the press and the millstone hold one each.",
+   "The press also needs a **block of iron** and a shaft, the millstone a cogwheel and stone. The Large Cogwheel: one cogwheel and one plank, shapeless."
+  ],
+  "sources": [
+   "create:item_application/andesite_casing_from_log",
+   "create:item_application/andesite_casing_from_wood",
+   "create:crafting/kinetics/mechanical_press",
+   "create:crafting/kinetics/millstone",
+   "create:crafting/kinetics/large_cogwheel_from_little"
+  ]
+ },
+ "m_livingrock": {
+  "de": [
+   "Es muss echter [[minecraft:stone]] sein, Bruchstein verwandelt die Blume nicht; schmilz ihn vorher im Ofen. Das [[botania:pure_daisy]] stellst du in der Blütenapotheke aus 4 weißen Blütenblättern und Samen her ({{botania/pure_daisy}}).",
+   "Rechne gleich mehr ein: Das [[botania:mana_pool]] für die Manadiamanten kostet noch einmal 5 Lebestein."
+  ],
+  "en": [
+   "It has to be real [[minecraft:stone]]; the flower does not turn cobblestone. Smelt it in a furnace first. You make the [[botania:pure_daisy]] in the Petal Apothecary from 4 white petals and seeds ({{botania/pure_daisy}}).",
+   "Make extra: the [[botania:mana_pool]] for the Mana Diamonds costs another 5 Livingrock."
+  ],
+  "sources": [
+   "botania:pure_daisy/livingrock (input minecraft:stone)",
+   "botania:petal_apothecary/pure_daisy",
+   "botania:mana_pool"
+  ]
+ },
+ "m_manadiamond": {
+  "de": [
+   "Zwei Diamanten kosten zusammen 20 000 Mana. Das [[botania:mana_pool]] baust du aus 5 Lebestein, gefüllt wird es über einen [[botania:mana_spreader]] von erzeugenden Blumen wie der Endoflamme ({{botania/endoflame}}).",
+   "Für alle zwölf Schlusssteine braucht der Server 24 Manadiamanten, also 240 000 Mana."
+  ],
+  "en": [
+   "Two diamonds cost 20,000 mana together. You build the [[botania:mana_pool]] from 5 Livingrock and fill it with a [[botania:mana_spreader]] fed by generating flowers like the Endoflame ({{botania/endoflame}}).",
+   "All twelve keystones need 24 Mana Diamonds, so 240,000 mana."
+  ],
+  "sources": [
+   "botania:mana_infusion/mana_diamond (mana 10000)",
+   "botania:mana_pool",
+   "kronwerke:milestones/source_keystone"
+  ]
+ },
+ "m_keyparts": {
+  "de": [
+   "Der Amethystblock spart kein Material: 4 Splitter und 2 000 Source, genauso viel wie vier einzelne Juwelen, aber in einem Durchgang.",
+   "Für das [[ars_nouveau:source_jar]] brauchst du 6 [[ars_nouveau:archwood_slab]] und 2 Glas. Archwood wächst in Archwood-Wäldern ({{exploration/e_archwood}})."
+  ],
+  "en": [
+   "The Block of Amethyst saves no material: 4 shards and 2,000 Source, just like four single gems, but in one pass.",
+   "The [[ars_nouveau:source_jar]] takes 6 [[ars_nouveau:archwood_slab]] and 2 glass. Archwood grows in archwood forests ({{exploration/e_archwood}})."
+  ],
+  "sources": [
+   "ars_nouveau:imbuement_amethyst_block (source 2000)",
+   "ars_nouveau:imbuement_amethyst (source 500)",
+   "ars_nouveau:source_jar"
+  ]
+ },
+ "s_stages": {
+  "de": [
+   "Auch die Dimensionen der Mods sind gesperrt: der Aether bis Stufe 2, Undergarden und Otherside bis Stufe 3, Eternal Starlight bis Stufe 4.",
+   "Bau- und Deko-Mods sind nie gesperrt. Was jede Stufe bringt und was ihr Ziel will, steht in den fünf Quests rechts."
+  ],
+  "en": [
+   "The mods' dimensions are locked too: the Aether until stage 2, the Undergarden and the Otherside until stage 3, Eternal Starlight until stage 4.",
+   "Building and decoration mods are never locked. What each stage brings and what its goal wants is in the five quests to the right."
+  ],
+  "sources": [
+   "config/kronwerke-common.toml (dimensions.locked)",
+   "docs/STAGES.md (rule 6)"
+  ]
+ },
+ "s_1": {
+  "de": [
+   "Das Ziel will 20 000 Bruchstein, 1 500 Andesitlegierungen und 12 [[kronwerke:stone_gearbox]], dazu 800 Quelljuwelen und 12 [[kronwerke:source_keystone]], gerechnet für 30 aktive Spieler.",
+   "Mit Grubenrahmen kommst du in Stufe 1 schon in die Farmwelt ({{exploration/e_frame}}), dort liegen fast alle Erze des Packs."
+  ],
+  "en": [
+   "The goal wants 20,000 cobblestone, 1,500 Andesite Alloy and 12 [[kronwerke:stone_gearbox]], plus 800 Source Gems and 12 [[kronwerke:source_keystone]], counted for 30 active players.",
+   "With Mine Frames you reach the farm world already in stage 1 ({{exploration/e_frame}}); nearly every ore of the pack is there."
+  ],
+  "sources": [
+   "config/kronwerke/goals.json",
+   "kubejs/data/kronwerke/worldgen/biome/mine.json"
+  ]
+ },
+ "s_2": {
+  "de": [
+   "Das Ziel will 2 000 [[create:brass_ingot]], 150 [[create:precision_mechanism]] und 8 [[kronwerke:brass_heart]], dazu 600 [[botania:mana_pearl]], 50 [[botania:terrasteel_ingot]] und 8 [[kronwerke:rune_core]].",
+   "Messing entsteht im beheizten Mixer aus 2 Kupfer, 1 Zink und 1 Lohenpulver, im überhitzten ohne Pulver und doppelt. Beim Öffnen bekommt jeder 16 Messingbarren, einen Lohenbrenner, ein Quellglas und 8 Manaperlen."
+  ],
+  "en": [
+   "The goal wants 2,000 [[create:brass_ingot]], 150 [[create:precision_mechanism]] and 8 [[kronwerke:brass_heart]], plus 600 [[botania:mana_pearl]], 50 [[botania:terrasteel_ingot]] and 8 [[kronwerke:rune_core]].",
+   "Brass comes from a heated mixer with 2 copper, 1 zinc and 1 Blaze Powder, or from a superheated one without powder and doubled. When it opens everyone gets 16 Brass Ingots, a Blaze Burner, a Source Jar and 8 Mana Pearls."
+  ],
+  "sources": [
+   "config/kronwerke/goals.json",
+   "kronwerke:create/brass_ingot_heated",
+   "kronwerke:create/brass_ingot_superheated"
+  ]
+ },
+ "s_3": {
+  "de": [
+   "Das Ziel Der Ofen schläft nie will 4 000 Stahlbarren, 250 [[mekanism:advanced_control_circuit]] und 8 [[kronwerke:steel_core]], dazu 400 [[botania:elementium_ingot]], 150 [[occultism:afrit_essence]] und 8 [[kronwerke:elven_star]].",
+   "Beim Öffnen gibt es 32 Stahlbarren, 16 Basis-Universalkabel, 8 geladene Certus-Quarzkristalle und 4 Elementiumbarren."
+  ],
+  "en": [
+   "The goal The Furnace Never Sleeps wants 4,000 Steel Ingots, 250 [[mekanism:advanced_control_circuit]] and 8 [[kronwerke:steel_core]], plus 400 [[botania:elementium_ingot]], 150 [[occultism:afrit_essence]] and 8 [[kronwerke:elven_star]].",
+   "When it opens you get 32 Steel Ingots, 16 Basic Universal Cables, 8 Charged Certus Quartz Crystals and 4 Elementium Ingots."
+  ],
+  "sources": [
+   "config/kronwerke/goals.json"
+  ]
+ },
+ "s_4": {
+  "de": [
+   "Das Ziel Das Licht des Drachen hat keinen Meilenstein: 150 [[mekanism:elite_control_circuit]] und 1 000 [[draconicevolution:draconium_ingot]], dazu 128 [[botania:gaia_spirit]] und 30 [[mahoutsukai:mystic_staff]]. Die beiden Magie-Mengen wachsen nicht mit der Spielerzahl.",
+   "Beim Öffnen gibt es 16 Draconiumbarren, eine Gaia-Seele und 64 Enderperlen."
+  ],
+  "en": [
+   "The goal Light of the Dragon has no milestone: 150 [[mekanism:elite_control_circuit]] and 1,000 [[draconicevolution:draconium_ingot]], plus 128 [[botania:gaia_spirit]] and 30 [[mahoutsukai:mystic_staff]]. The two magic amounts do not scale with the player count.",
+   "When it opens you get 16 Draconium Ingots, a Gaia Spirit and 64 Ender Pearls."
+  ],
+  "sources": [
+   "config/kronwerke/goals.json"
+  ]
+ },
+ "s_5": {
+  "de": [
+   "Das letzte Ziel will 64 [[draconicevolution:awakened_draconium_block]] und 100 [[mekanism:pellet_antimatter]], dazu 128 [[botania:gaia_ingot]] und 64 [[ars_nouveau:wilden_tribute]]. Es öffnet keine Stufe und gibt kein Starterpaket.",
+   "Den Wilden-Tribut sperrt keine Stufe, du darfst ihn also schon früher sammeln und bis dahin aufheben."
+  ],
+  "en": [
+   "The last goal wants 64 [[draconicevolution:awakened_draconium_block]] and 100 [[mekanism:pellet_antimatter]], plus 128 [[botania:gaia_ingot]] and 64 [[ars_nouveau:wilden_tribute]]. It opens no stage and gives no starter kit.",
+   "No stage locks the Wilden Tribute, so you may collect it early and keep it until then."
+  ],
+  "sources": [
+   "config/kronwerke/goals.json",
+   "helpq item ars_nouveau:wilden_tribute (stage 1)"
+  ]
+ },
+ "s_locked": {
+  "de": [
+   "Die Sperre gilt auch für Maschinen: Kein Mixer, Ritual oder Autocrafter stellt etwas her, dessen Ergebnis zu einer geschlossenen Stufe gehört, und wer es versucht, erfährt die nötige Stufe.",
+   "Öffnet eine Stufe, lädt der Server die Rezepte neu, das ruckelt ein paar Sekunden. Was du vorher in Kisten oder Beute findest, darfst du behalten ({{tips/q_locked}})."
+  ],
+  "en": [
+   "The lock covers machines too: no mixer, ritual or autocrafter makes anything whose result belongs to a stage that is not open, and whoever tries is told which stage it needs.",
+   "When a stage opens, the server reloads its recipes, which lags for a few seconds. What you find in chests or loot before that you may keep ({{tips/q_locked}})."
+  ],
+  "sources": [
+   "docs/STAGES.md (How a stage is locked)",
+   "core lang kronwerke.locked.*"
+  ]
+ },
+ "s_latejoin": {
+  "de": [
+   "Du musst nichts tun: Das Paket landet beim Öffnen der Stufe oder beim nächsten Einloggen von selbst im Inventar, bei vollem Inventar auf dem Boden. Das gilt für alle, nicht nur für Nachzügler, und jedes Paket gibt es pro Spieler einmal."
+  ],
+  "en": [
+   "You do not have to do anything: the kit lands in your inventory when the stage opens or at your next login, on the ground if your inventory is full. Everyone gets it, not only late joiners, and each kit once per player."
+  ],
+  "sources": [
+   "core: src/main/java/de/kronwerke/core/goal/GoalManager.java (giveKits, markKit)",
+   "config/kronwerke/goals.json (starterKit)"
+  ]
+ },
+ "s_ties": {
+  "de": [
+   "Schon in Stufe 1 braucht die [[ars_nouveau:imbuement_chamber]] 2 Goldbleche aus der Mechanischen Presse, und der Grubenrahmen Infused Iron und ein Quelljuwel.",
+   "Genau genommen steckt das Quelljuwel-Paar im [[create:empty_blaze_burner]], neben Eisenblechen und Netherrack. Ab Stufe 2 braucht außerdem die Terra-Platte für Terrastahl 2 Messinggehäuse."
+  ],
+  "en": [
+   "Already in stage 1 the [[ars_nouveau:imbuement_chamber]] needs 2 Golden Sheets from the Mechanical Press, and the Mine Frame needs Infused Iron and a Source Gem.",
+   "Strictly, the two Source Gems go into the [[create:empty_blaze_burner]], together with iron sheets and netherrack. From stage 2 on the Terrestrial Agglomeration Plate also needs 2 Brass Casings."
+  ],
+  "sources": [
+   "kubejs/server_scripts/tech_and_magic.js",
+   "ars_nouveau:imbuement_chamber",
+   "kronwerke:grubenrahmen",
+   "kronwerke:magic/runic_altar",
+   "kronwerke:magic/mana_pearl",
+   "kronwerke:metallurgic_infuser"
+  ]
+ },
+ "s_zinc": {
+  "de": [
+   "[[create:zinc_ore]] liegt auch in der Farmwelt, außerdem lassen Zombies mit 10 Prozent Chance einen Zinknugget fallen. Für die 2 000 Messingbarren des Ziels braucht der Server 1 000 bis 2 000 Zink und doppelt so viel Kupfer, je nachdem, ob der Mixer beheizt oder überhitzt ist.",
+   "Behalte das Rohzink, bis die Quest abgehakt ist. Zinknuggets in der Andesitlegierung essen deinen Vorrat auf."
+  ],
+  "en": [
+   "[[create:zinc_ore]] is in the farm world too, and zombies drop a Zinc Nugget with a 10 percent chance. The goal's 2,000 Brass Ingots need 1,000 to 2,000 zinc and twice as much copper, depending on whether the mixer is heated or superheated.",
+   "Keep the Raw Zinc until the quest is ticked. Zinc nuggets in Andesite Alloy eat into your stock."
+  ],
+  "sources": [
+   "kubejs/data/kronwerke/worldgen/biome/mine.json (mine_zinc)",
+   "kubejs/data/kronwerke/loot_table/inject/drop_2_zinc_nugget.json",
+   "kronwerke:create/brass_ingot_heated",
+   "kronwerke:create/brass_ingot_superheated",
+   "config/kronwerke/goals.json"
+  ]
+ },
+ "v_discord": {
+  "de": [
+   "Bleib im Discord: Plätze vergibt der Discord-Bot, und er prüft dabei die Mitgliedschaft."
+  ],
+  "en": [
+   "Stay in the Discord: places are given by the Discord bot, which checks the membership."
+  ],
+  "sources": [
+   "docs/SERVER.md (streamersManageOwnSlots = false)"
+  ]
+ },
+ "v_website": {
+  "de": [
+   "Die Statusseite zeigt die Mengen, die gerade wirklich gelten, also schon mit der Spielerzahl verrechnet ({{start_here/o_scale}})."
+  ],
+  "en": [
+   "The status page shows the amounts that really apply right now, already scaled by the player count ({{start_here/o_scale}})."
+  ],
+  "sources": [
+   "core: src/main/java/de/kronwerke/core/command/BotCommand.java (goals json)"
+  ]
+ },
+ "v_origin": {
+  "de": [
+   "Zur Wahl stehen neun Herkünfte und sieben Rollen. Für die Säulen passen etwa der Baumeister (Stein 30 Prozent schneller), der Ingenieur (ein Zahnrad extra beim Herstellen von Hand, startet mit Schraubenschlüssel) und der Arkanist (schnelleres Mana für Ars Nouveau, startet mit Zauberbuch).",
+   "Umentscheiden geht nur mit einer [[neoorigins:orb_of_origin]] oder [[neoorigins:orb_of_class]], und beide brauchen Netherit."
+  ],
+  "en": [
+   "There are nine origins and seven roles. For the pillars, the Builder (mines stone 30 percent faster), the Engineer (one extra cogwheel when crafting by hand, starts with a wrench) and the Arcanist (faster Ars Nouveau mana, starts with a spell book) fit well.",
+   "Changing later takes an [[neoorigins:orb_of_origin]] or [[neoorigins:orb_of_class]], and both need netherite."
+  ],
+  "sources": [
+   "kubejs/data/neoorigins/origins/origin_layers/*.json",
+   "kubejs/data/kronwerke/origins/origins/rolle_*.json (lang)",
+   "neoorigins:orb_of_origin",
+   "neoorigins:orb_of_class"
+  ]
+ },
+ "v_tips": {
+  "de": [
+   "Lies vor dem ersten Ausflug {{tips/h_death}}, damit du weißt, wie du nach einem Tod an deine Sachen kommst, und {{tips/h_keys}}, falls eine Taste nicht reagiert."
+  ],
+  "en": [
+   "Before your first trip, read {{tips/h_death}} so you know how to get your things back after dying, and {{tips/h_keys}} in case a key does nothing."
+  ],
+  "sources": [
+   "tips chapter"
+  ]
+ },
+ "v_farms": {
+  "de": [
+   "Fang mit {{farms/cobble_drill}} an: Ein Bohrer an einem Wasserrad füllt die Stein-Säule nebenher. Danach lohnt {{farms/alloy_line}}, die aus Bruchstein und Lava Andesitlegierung macht."
+  ],
+  "en": [
+   "Start with {{farms/cobble_drill}}: one drill on a water wheel fills the stone pillar on the side. Then {{farms/alloy_line}} is worth it, turning cobblestone and lava into Andesite Alloy."
+  ],
+  "sources": [
+   "farms chapter"
+  ]
+ },
+ "v_ultimine": {
+  "de": [
+   "Bis zu 128 Blöcke gehen auf einmal mit, ein Werkzeug brauchst du dafür nicht. Mit gedrückter Taste und Rechtsklick erntet Ultimine auch ganze Felder, macht mit der Hacke Ackerland und entrindet mit der Axt mehrere Stämme."
+  ],
+  "en": [
+   "Up to 128 blocks go at once, and you do not need a tool for it. Holding the key and right clicking also harvests whole fields, tills farmland with a hoe and strips several logs with an axe."
+  ],
+  "sources": [
+   "config/ftbultimine-server.snbt (max_blocks 128, require_tool false, right_click_*)"
+  ]
+ },
+ "v_sleep": {
+  "de": [
+   "Für den Schlafsack legst du 3 Wolle einer Farbe senkrecht untereinander. Der [[comforts:hammock_white]] ist nur der Stoff: Aufhängen kannst du ihn erst zwischen zwei [[comforts:rope_and_nail]], Faden und ein Eisenbarren ergeben 2 davon."
+  ],
+  "en": [
+   "For the sleeping bag, put 3 wool of one colour in a vertical line. The [[comforts:hammock_white]] is only the cloth: you can hang it only between two [[comforts:rope_and_nail]]; String and an Iron Ingot make 2 of them."
+  ],
+  "sources": [
+   "comforts:sleeping_bag_white",
+   "comforts:hammock_white",
+   "comforts:rope_and_nail",
+   "comforts lang block.comforts.hammock.no_rope"
+  ],
+  "client": [
+   "How Rope and Nail and the hammock are placed (distance, facing)"
+  ]
+ },
+ "p_hub": {
+  "de": [
+   "Weißt du nicht, wo du anfangen sollst: /kw goals zeigt, welche Säule am weitesten zurückliegt, und genau dort fehlen Leute."
+  ],
+  "en": [
+   "Not sure where to start: /kw goals shows which pillar lags furthest behind, and that is where people are missing."
+  ],
+  "sources": [
+   "core: src/main/java/de/kronwerke/core/command/KwCommand.java (goals)"
+  ]
+ },
+ "p_create": {
+  "de": [
+   "Bau früh eine [[create:mechanical_press]]: Sie macht die Goldbleche für die Imbuement-Kammer der Magier und steckt im {{start_here/m_gearbox}}. Der Einstieg ist {{create/andesite_alloy}}."
+  ],
+  "en": [
+   "Build a [[create:mechanical_press]] early: it makes the Golden Sheets for the mages' Imbuement Chamber and goes into the {{start_here/m_gearbox}}. Start with {{create/andesite_alloy}}."
+  ],
+  "sources": [
+   "create:pressing/gold_ingot",
+   "ars_nouveau:imbuement_chamber",
+   "kronwerke:milestones/stone_gearbox"
+  ]
+ },
+ "p_ars": {
+  "de": [
+   "Der Einstieg ist das [[ars_nouveau:worn_notebook]] aus einem Buch und einem Lapislazuli. Für die Imbuement-Kammer brauchst du 2 Goldbleche aus der Presse von Create, such dir also früh jemanden, der Create spielt."
+  ],
+  "en": [
+   "You start with the [[ars_nouveau:worn_notebook]] from a book and a Lapis Lazuli. The Imbuement Chamber needs 2 Golden Sheets from Create's press, so find someone who plays Create early."
+  ],
+  "sources": [
+   "ars_nouveau:worn_notebook",
+   "ars_nouveau:imbuement_chamber"
+  ]
+ },
+ "p_botania": {
+  "de": [
+   "Für Stufe 1 brauchst du aus Botania vor allem Lebestein vom Reinen Gänseblümchen (für Altar und Becken), ein gefülltes [[botania:mana_pool]] und daraus 2 Manadiamanten pro Quellschlussstein."
+  ],
+  "en": [
+   "For stage 1 you mainly need Livingrock from the Pure Daisy (for the altar and the pool), a filled [[botania:mana_pool]] and from it 2 Mana Diamonds per Source Keystone."
+  ],
+  "sources": [
+   "botania:mana_pool",
+   "kronwerke:round/naturesaura_tree_ritual_nature_altar",
+   "kronwerke:milestones/source_keystone"
+  ]
+ },
+ "p_mystical": {
+  "de": [
+   "Inferiumerz liegt in der Farmwelt. 8 Steinessenz ergeben 24 Bruchstein, siehe {{farms/stone_seeds}}."
+  ],
+  "en": [
+   "Inferium Ore is in the farm world. 8 Stone Essence make 24 cobblestone, see {{farms/stone_seeds}}."
+  ],
+  "sources": [
+   "kubejs/data/kronwerke/worldgen/biome/mine.json (mine_inferium)",
+   "farms/stone_seeds"
+  ]
+ },
+ "p_food": {
+  "de": [
+   "Den [[farmingforblockheads:market]] baust du aus roter Wolle, Brettern und Stämmen. Er verkauft Samen und Setzlinge gegen Smaragde, auch die Bäume von Productive Trees."
+  ],
+  "en": [
+   "You build the [[farmingforblockheads:market]] from red wool, planks and logs. It sells seeds and saplings for emeralds, including the Productive Trees saplings."
+  ],
+  "sources": [
+   "farmingforblockheads:market",
+   "kubejs/data/kronwerke/market_presets/productivetrees_saplings_*.json"
+  ]
+ },
+ "p_cooking": {
+  "de": [
+   "Der Einstieg ist {{cooking/book}}. Mit zwei Werkbänken und zwei Diamanten wird aus Band I der Band II, Cooking for Blockheads II."
+  ],
+  "en": [
+   "Start with {{cooking/book}}. Two crafting tables and two diamonds turn volume I into Cooking for Blockheads II."
+  ],
+  "sources": [
+   "cookingforblockheads:crafting_book"
+  ]
+ },
+ "p_trees": {
+  "de": [
+   "Die Bäume wachsen nirgends wild, du kaufst jede Art am Markt: Generation 1 für 1 Smaragd, Generation 2 für 2, Generation 3 für 4. Los geht es mit {{productive_trees/market}}."
+  ],
+  "en": [
+   "These trees grow nowhere in the wild; you buy every kind at the market: generation 1 for 1 emerald, generation 2 for 2, generation 3 for 4. Start with {{productive_trees/market}}."
+  ],
+  "sources": [
+   "kubejs/data/kronwerke/market_presets/productivetrees_saplings_1.json",
+   "kubejs/data/kronwerke/market_presets/productivetrees_saplings_2.json",
+   "kubejs/data/kronwerke/market_presets/productivetrees_saplings_3.json"
+  ]
+ },
+ "p_irons": {
+  "de": [
+   "Den [[irons_spellbooks:inscription_table]] baust du aus Archwood-Platten, Holzzäunen und einem Buch. In Stufe 1 gibt es nur gewöhnliche Zauber, ungewöhnliche und seltene kommen mit Stufe 2."
+  ],
+  "en": [
+   "You build the [[irons_spellbooks:inscription_table]] from Archwood Slabs, wooden fences and a book. Stage 1 has only common spells; uncommon and rare come with stage 2."
+  ],
+  "sources": [
+   "irons_spellbooks:inscription_table",
+   "docs/STAGES.md"
+  ]
+ },
+ "p_bosses": {
+  "de": [
+   "Die Bauwerke von Cataclysm und Born in Chaos in der Oberwelt sind schon in Stufe 1 offen."
+  ],
+  "en": [
+   "The Cataclysm and Born in Chaos structures in the Overworld are open from stage 1."
+  ],
+  "sources": [
+   "docs/STAGES.md"
+  ]
+ },
+ "p_storage": {
+  "de": [
+   "In Stufe 1 gibt es Holzschubladen, Truhen und Fässer von Sophisticated Storage bis Eisen und den Lederrucksack. Kupfer- und Eisenrucksäcke, Goldtruhen und Verdichtungsschubladen kommen mit Stufe 2."
+  ],
+  "en": [
+   "Stage 1 has wooden drawers, Sophisticated Storage chests and barrels up to iron, and the leather backpack. Copper and iron backpacks, gold chests and compacting drawers come with stage 2."
+  ],
+  "sources": [
+   "docs/STAGES.md"
+  ]
+ },
+ "p_silent": {
+  "de": [
+   "In Stufe 1 reicht Silent Gear bis Eisen, Stahl kommt mit Stufe 2. Für die Baupläne ergeben 4 Papier und ein blauer Farbstoff 4 [[silentgear:blueprint_paper]]."
+  ],
+  "en": [
+   "In stage 1 Silent Gear goes up to iron; steel comes with stage 2. For blueprints, 4 Paper and a blue dye make 4 [[silentgear:blueprint_paper]]."
+  ],
+  "sources": [
+   "docs/STAGES.md",
+   "silentgear:blueprint_paper"
+  ]
+ },
+ "p_apotheosis": {
+  "de": [
+   "Mythische Beute öffnet erst in Stufe 4."
+  ],
+  "en": [
+   "Mythic loot opens only in stage 4."
+  ],
+  "sources": [
+   "docs/STAGES.md"
+  ]
+ },
+ "p_comfort": {
+  "de": [
+   "Bau- und Deko-Mods sind auf Kronwerke nie gesperrt, Chipped, Rahmenblöcke und Supplementaries kannst du von Anfang an voll nutzen."
+  ],
+  "en": [
+   "Building and decoration mods are never locked on Kronwerke; Chipped, framed blocks and Supplementaries are fully usable from the start."
+  ],
+  "sources": [
+   "docs/STAGES.md (rule 6)"
+  ]
+ },
+ "p_lists": {
+  "de": [
+   "Zum Planen hilft vor allem {{list_gear/s1}}: Werkzeug und Rüstung, die du in Stufe 1 bauen kannst."
+  ],
+  "en": [
+   "For planning, {{list_gear/s1}} helps most: the tools and armour you can build in stage 1."
+  ],
+  "sources": [
+   "list_gear chapter"
+  ]
+ },
+ "p_ready": {
+  "de": [
+   "Die beiden Meilensteine von Stufe 1 baust du hier im Kapitel: {{start_here/m_gearbox}} und {{start_here/m_keystone}}. Ohne die zwölf von jedem öffnet Stufe 2 nicht, egal wie voll der Rest ist."
+  ],
+  "en": [
+   "You build the two stage 1 milestones in this chapter: {{start_here/m_gearbox}} and {{start_here/m_keystone}}. Without twelve of each, stage 2 does not open, however full the rest is."
+  ],
+  "sources": [
+   "config/kronwerke/goals.json",
+   "core: src/main/java/de/kronwerke/core/goal/GoalManager.java (complete when every target is met)"
+  ]
+ },
+ "p_explore": {
+  "de": [
+   "Die Farmwelt ist ein eigener Server, der alle drei Tage zurückgesetzt wird: Bau dort nichts, was bleiben soll. Hinein kommst du durch das Minenportal aus 10 [[kronwerke:grubenrahmen]] ({{exploration/e_pickaxe}})."
+  ],
+  "en": [
+   "The farm world is a server of its own that resets every three days, so build nothing there that should last. You get in through the Mine Portal made of 10 [[kronwerke:grubenrahmen]] ({{exploration/e_pickaxe}})."
+  ],
+  "sources": [
+   "docs/STAGES.md (stage 1: the mining world)",
+   "kronwerke:grubenrahmen"
+  ]
+ }
+}

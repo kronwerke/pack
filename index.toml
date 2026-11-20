@@ -13,6 +13,14 @@ file = "config/almostunified/unification/materials.json"
 hash = "0eb65d6352a1b57e74d2d03ae692268a8ec3007d3456e070889ba658773bc085"
 
 [[files]]
+file = "config/ars_additions-common.toml"
+hash = "b7403a96baf5bb081a7f056c44938b068d2f694fe118ad911f72e2b8cc790b18"
+
+[[files]]
+file = "config/ars_elemental-common.toml"
+hash = "86d1ff2d41b4656e3a8bc410b39251d58c6f14d6c27a25daee2de8ab7d4bcc89"
+
+[[files]]
 file = "config/artifacts/general.toml"
 hash = "6b65a3abce6f82cc9d5ebae89b850528170e629bb0db6e31abda2e27f5cad0e3"
 
@@ -434,7 +442,7 @@ hash = "f25c4ae4de34623dc55222d84d9c54a3bfe1d33cb72fb8abba83717a554e95f1"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/draconic_chaos.snbt"
-hash = "fd3720cd83b08cb8656dd8b742051c0c8a00e9d9e990384fc1265e70d44ed914"
+hash = "ed124a53900387d4e3b53aac3edb725989015faca292137d87a50c4abf1c313d"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/eidolon.snbt"
@@ -482,11 +490,11 @@ hash = "44ba2a41fbbdb2abdfe4d3fe3bef602001bda59438c3dbb48470027ff4667b85"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/hexerei.snbt"
-hash = "a1000842eb80858d709b1415a654412d6e655552444358452592eed7937fbeab"
+hash = "6a147310ae061695c572887c8807377c8703e503b2398b07f6bd3b6cf03ceb26"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/hostile_networks.snbt"
-hash = "4f87ec03ec788c30ef22a598b2e716dd4c8fbbec1d29e9a0c73db3085a565dfd"
+hash = "6795506e97744f89d6eda478ac93594a24fcf59886c40bb26d1e4a283d5bc9e4"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/immersive.snbt"
@@ -638,11 +646,11 @@ hash = "93c982c2e09101877cba15ed69d2eee71ed5be2243ee8dcdcc0734845932c8b6"
 
 [[files]]
 file = "config/ftbquests/quests/lang/de_de.snbt"
-hash = "6d5a41d4ed2e29d9be1b7ba431e6ba33c48e1058180497fc7931e44afce5c572"
+hash = "4bfa6d79da671bfd87b31618dc046442a2544e5c2a9883be84d5d3c977e6d31d"
 
 [[files]]
 file = "config/ftbquests/quests/lang/en_us.snbt"
-hash = "db4c9ffe6ea7f1bc2326406961d104d0a141b51e0154d2815f83fca61d1f6913"
+hash = "a9c0940aa9d12e0f799270ab42a38de3e88a3f03596166dd023e757c35ff9586"
 
 [[files]]
 file = "config/ftbquests/quests/reward_tables/s1_common.snbt"
@@ -742,7 +750,7 @@ hash = "a291580fbc93f9c9c6049e34e413d3cf86b8c457746ce11e20f8dfb8c94bf0bb"
 
 [[files]]
 file = "config/quarryplus.toml"
-hash = "5dede3cd0f83ab7427a9220d0bd6fe55cac2d35e5d620c89a0934770c466a061"
+hash = "9dbc5f3f96c9ba1b4c02d577ffa4d70ec0bba8604821efd3a46b446d9548b9ca"
 
 [[files]]
 file = "config/servercore/config.yml"
@@ -5473,6 +5481,18 @@ file = "kubejs/data/ironfurnaces/recipe/upgrades/upgrade_vibranium.json"
 hash = "5179f2cb833123bb0b18b01ca7bbb87bfc407f9b1ce70e364d32d4812c06cb72"
 
 [[files]]
+file = "kubejs/data/kronwerke/advancement/quests/hexerei_altar.json"
+hash = "186bf5ff830cc7f5a17824cfa1a1ac84405b7c2d4b1c87fb16e2323a9bc17e60"
+
+[[files]]
+file = "kubejs/data/kronwerke/advancement/quests/hexerei_depot.json"
+hash = "d42d91e284f6bad5b592020467a9e907184ae1dc0135e5186c4aefa0d19ab17e"
+
+[[files]]
+file = "kubejs/data/kronwerke/advancement/quests/hexerei_woodcutter.json"
+hash = "7e54387594cdf45ec1d84d0b8e9eded4f7bc251f1fe39b0b2a105f1f22ea2da5"
+
+[[files]]
 file = "kubejs/data/kronwerke/chapters/stages/stage2.json"
 hash = "cca7610a4c303c92a9c634a95bfa1d0c2b5443c5b4ffb8a324aff01b7aa1b0a5"
 
@@ -6143,6 +6163,22 @@ hash = "8e6f2dd9d5f00b4aa3b11a06874f64ff545093017c5756520a54a0ebc467a6f4"
 [[files]]
 file = "kubejs/data/kronwerke/tags/block/deepslate_instamine.json"
 hash = "1fadd904d2ef41b6140575a93677140cfb294e692ccc0ea0f857191a419eddb3"
+
+[[files]]
+file = "kubejs/data/kronwerke/tags/entity_type/hnn/skeleton.json"
+hash = "c3b6b4ac9c89a191c0803f02dafbb1a48ee58dcd922894021b874ca38be07398"
+
+[[files]]
+file = "kubejs/data/kronwerke/tags/entity_type/hnn/spider.json"
+hash = "919e3c83a9d522b3d57e6a9a2092b299246301978c3b088c7bd907551c9afa23"
+
+[[files]]
+file = "kubejs/data/kronwerke/tags/entity_type/hnn/wilden.json"
+hash = "be2bdf7f6cbf5b63291fe40fab7d3913e1ec5a5737c1ea4239d1f9d94de54061"
+
+[[files]]
+file = "kubejs/data/kronwerke/tags/entity_type/hnn/zombie.json"
+hash = "e73953dc43189b7de6f3399fdd6bbc601ad045e74a3a400fccd5e4b04dcb3733"
 
 [[files]]
 file = "kubejs/data/kronwerke/worldgen/biome/mine.json"
@@ -8010,7 +8046,7 @@ hash = "d36b117b309846875ae827fce74e7e00447946c7b72fb69704369a62408705e9"
 
 [[files]]
 file = "kubejs/server_scripts/kronwerke/tech.js"
-hash = "8a3f99766d2c94acea6a0d29efbe79807b72d3281c0d488da27943407da74678"
+hash = "54665c9b74acac6d28d07e17572cb141b8d256cc9ee8142ab8dab8ebe971c6e4"
 
 [[files]]
 file = "kubejs/server_scripts/tech_and_magic.js"

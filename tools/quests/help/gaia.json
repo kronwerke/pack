@@ -1,0 +1,510 @@
+{
+ "pylon": {
+  "de": [
+   "Ein [[botania:mana_pylon]] kostet 2 Goldbarren, 2 Manastahlbarren und einen Manadiamanten. Für vier Gaiapylonen brauchst du also 4 Manapylonen, 8 [[botania:elementium_ingot]] und 8 [[botania:pixie_dust]]; beides tauschen dir die Elfen ({{alfheim/elementium}}, {{alfheim/pixie}}).",
+   "Sobald Stufe 4 offen ist, legt dir der Server beim nächsten Einloggen einmal ein Startpaket ins Inventar, darin eine [[botania:gaia_spirit]]."
+  ],
+  "en": [
+   "A [[botania:mana_pylon]] takes 2 gold ingots, 2 manasteel ingots and a mana diamond. Four Gaia pylons therefore need 4 mana pylons, 8 [[botania:elementium_ingot]] and 8 [[botania:pixie_dust]]; the elves trade you both ({{alfheim/elementium}}, {{alfheim/pixie}}).",
+   "Once stage 4 is open, the server gives you a starter kit once on your next login, with one [[botania:gaia_spirit]] in it."
+  ],
+  "sources": [
+   "botania:gaia_pylon ( D /EPE/ D )",
+   "botania:mana_pylon ( G /MDM/ G )",
+   "config/kronwerke/goals.json (stage3 starterKit: 16 draconium, 1 gaia_spirit, 64 ender pearls)",
+   "core: GoalManager.java (starterKit given once per player when the goal is complete)"
+  ]
+ },
+ "beacon": {
+  "de": [
+   "Der [[minecraft:beacon]] braucht 5 Glas, 3 Obsidian und einen [[minecraft:nether_star]] ({{nether/f_wither}}). Der Wither wächst auf Kronwerke mit der Gruppe: 60 Prozent mehr Leben für jeden weiteren Spieler.",
+   "Bau die 3x3-Pyramide bündig in den Boden, denn um den Beacon muss die Fläche eben bleiben ({{gaia/arena}}). Auch über dem Beacon muss es bis 5 Blöcke hoch frei sein."
+  ],
+  "en": [
+   "The [[minecraft:beacon]] takes 5 glass, 3 obsidian and a [[minecraft:nether_star]] ({{nether/f_wither}}). On Kronwerke the Wither grows with the group: 60 percent more health for every extra player.",
+   "Sink the 3x3 pyramid flush into the floor, since the ground around the beacon has to stay level ({{gaia/arena}}). Above the beacon everything must be clear up to 5 blocks too."
+  ],
+  "sources": [
+   "minecraft:beacon (GGG/GSG/OOO)",
+   "config/kronwerke-common.toml [bosses] (minecraft:wither in scaling, healthPerPlayer 0.6)",
+   "botania: GaiaGuardianEntity.checkArena (beacon levels > 0, no collision from beacon height up to +5)"
+  ]
+ },
+ "terrasteel": {
+  "de": [
+   "Ein Barren entsteht auf der Terrestrischen Agglomerationsplatte aus Manastahlbarren, Manaperle und Manadiamant und kostet 500 000 Mana ({{botania_runes/terrasteel}}). Mit Funken an mehreren Becken geht es schneller ({{botania_runes/terra_line}}).",
+   "Der Barren verschwindet beim Start des Rituals, auch wenn du den Kampf verlierst. Neun Barren lassen sich zu einem [[botania:terrasteel_block]] pressen und wieder zerlegen."
+  ],
+  "en": [
+   "An ingot is made on the Terrestrial Agglomeration Plate from a manasteel ingot, a mana pearl and a mana diamond and costs 500,000 mana ({{botania_runes/terrasteel}}). Sparks on several pools make it faster ({{botania_runes/terra_line}}).",
+   "The ingot is gone as soon as the ritual starts, even if you lose the fight. Nine ingots press into a [[botania:terrasteel_block]] and back."
+  ],
+  "sources": [
+   "botania:terrestrial_agglomeration_plate/terrasteel_ingot (mana 500000)",
+   "botania:terrasteel_ingot_from_terrasteel_block",
+   "botania lang: botania.page.gaiaRitual0"
+  ],
+  "client": [
+   "that the ingot is consumed on start and not refunded on a lost fight"
+  ]
+ },
+ "arena": {
+  "de": [
+   "Geprüft wird ein Kreis mit 12 Blöcken Radius um den Beacon: Die zwei Schichten unter der Beacon-Höhe müssen überall fest sein, und von der Beacon-Höhe bis 5 Blöcke darüber darf außer Beacon und Pylonen nichts stehen. Die Pylonen sitzen bei 4 Blöcken in beide Richtungen, also auf den vier Diagonalen.",
+   "Fehlt etwas, sagt der Beacon nur, die Ritualstätte sei ungeeignet. Auf friedlich lässt sich das Ritual nicht starten, und den Barren muss ein Spieler selbst anlegen, kein Einsatzgerät."
+  ],
+  "en": [
+   "The check covers a circle of 12 blocks radius around the beacon: the two layers below beacon height must be solid everywhere, and from beacon height up to 5 blocks above nothing may stand except the beacon and the pylons. The pylons sit 4 blocks out on both axes, on the four diagonals.",
+   "If anything is off, the beacon only says the ritual grounds might be improper. The ritual cannot start on peaceful, and a player has to offer the ingot himself, not a deployer."
+  ],
+  "sources": [
+   "botania: GaiaGuardianEntity.checkArena (distSqr2D <= 144, y -2..5, solid below 0, no collision from 0 up)",
+   "botania: GaiaGuardianEntity.PYLON_OFFSETS (±4, 1, ±4)",
+   "botania lang: botaniamisc.badArena, botaniamisc.peacefulNoob"
+  ]
+ },
+ "gear": {
+  "de": [
+   "Die [[botania:terra_blade]] kommt aus {{botania_runes/terra_gear}}, die Elementiumrüstung aus {{alfheim/elementium_armor}}; ihre Feen helfen gegen die Diener. Da der Wächter jeden Treffer bei 32 abschneidet, bringt ein schnelles Schwert mehr als ein einzelner harter Schlag.",
+   "Der Beacon-Effekt fällt im Kampf weg, nimm Tränke oder Gebräue aus der {{botania_runes/brewery}} mit."
+  ],
+  "en": [
+   "The [[botania:terra_blade]] comes from {{botania_runes/terra_gear}}, the elementium armour from {{alfheim/elementium_armor}}; its pixies help against the minions. Since the Guardian cuts every hit at 32, a fast sword does more than one heavy blow.",
+   "The beacon effect is off during the fight, so bring potions or brews from the {{botania_runes/brewery}}."
+  ],
+  "sources": [
+   "botania: GaiaGuardianEntity.DAMAGE_CAP = 32",
+   "botania lang: botania.page.gaiaRitual4"
+  ]
+ },
+ "behaviour": {
+  "de": [
+   "Auf Kronwerke ist der Wächter stärker als in der Lexica: Er zählt als Monster und bekommt in Stufe 4 wie alle Monster **120 Prozent mehr Leben** und 7 Rüstungspunkte dazu. Allein hat er damit etwa 704 statt 320 Leben, zu zweit etwa 1 056.",
+   "Botanias eigene Gruppenformel: ab zwei Spielern ein Viertel mehr pro Spieler in der Arena, also mal 1,5 zu zweit und mal 2 zu viert. Schaden nimmt er nur von Spielern direkt, Geschütze und Diener zählen nicht."
+  ],
+  "en": [
+   "On Kronwerke the Guardian is tougher than the Lexica says: he counts as a monster and in stage 4 gets, like every monster, **120 percent more health** and 7 armour points. Alone that is about 704 instead of 320 health, with two players about 1,056.",
+   "Botania's own group formula: from two players on, a quarter more per player in the arena, so times 1.5 for two and times 2 for four. He only takes damage from players directly; turrets and minions do not count."
+  ],
+  "sources": [
+   "core: MobStages.onJoin (hostile = Enemy or MobCategory.MONSTER, not in [bosses] scaling list)",
+   "config/kronwerke-common.toml [mobs] health [0,0.3,0.7,1.2,1.8], armor [0,2,4,7,10]",
+   "botania: BotaniaEntities (GAIA_GUARDIAN MobCategory.MONSTER)",
+   "botania: GaiaGuardianEntity.spawn (1 + players*0.25 if players > 1, MAX_HP 320)",
+   "botania: GaiaGuardianEntity.hurt (isTruePlayer)"
+  ],
+  "client": [
+   "the Guardian's health bar shows about 704 when fighting alone in stage 4"
+  ]
+ },
+ "fight": {
+  "de": [
+   "Seelen bekommt nur, wer den Wächter **mindestens einmal selbst getroffen** hat: 6 für jeden, 8 für den letzten Treffer. Die Schallplatte fällt zu 20 Prozent und nur, wenn ein Spieler tötet.",
+   "Nach dem Kampf geht es mit Ausrüstung aus Seelen weiter ({{gaia/spirits}}) und zum Obelisken ({{gaia/goal}})."
+  ],
+  "en": [
+   "Only those who **hit the Guardian at least once** get spirits: 6 each, 8 for the killing blow. The music disc drops 20 percent of the time and only on a player kill.",
+   "After the fight the chapter goes on with what spirits make ({{gaia/spirits}}) and the obelisk ({{gaia/goal}})."
+  ],
+  "sources": [
+   "botania: loot_table/gaia_guardian/reward.json (set_count 6, true_guardian_killer 8, disc random_chance 0.2, killed_by_player)",
+   "botania: GaiaGuardianEntity.die (loot per player in playersWhoAttacked)"
+  ]
+ },
+ "no_armor": {
+  "de": [
+   "Der Fortschritt zählt nur, wenn **niemand** im Kampf zu irgendeinem Zeitpunkt Rüstung trägt, auch kein Mitkämpfer. Schmuck in den Trinket-Plätzen ist keine Rüstung, Umhänge und Ringe darfst du anlegen.",
+   "Ohne Rüstung treffen dich die gestärkten Diener aus Stufe 4 voll, Heiltränke und der {{gaia/trinkets}}-Umhang der Tugend helfen."
+  ],
+  "en": [
+   "The advancement only counts if **nobody** wears armour at any point of the fight, fellow fighters included. Trinkets are not armour, so cloaks and rings are fine.",
+   "Without armour the stage 4 minions hit you in full; healing potions and the Cloak of Virtue from {{gaia/trinkets}} help."
+  ],
+  "sources": [
+   "botania: GaiaGuardianEntity.anyWithArmor, GaiaGuardianNoArmorTrigger",
+   "botania lang: advancement.botania:gaiaGuardianNoArmor.desc"
+  ],
+  "client": [
+   "that trinket slots do not count as armour and that fellow fighters' armour also breaks the challenge"
+  ]
+ },
+ "together": {
+  "de": [
+   "Gezählt werden die Spieler, die beim Start in der Arena stehen. Nur wer trifft, bekommt Seelen, also sollte jeder mindestens einmal zuschlagen.",
+   "Mit dem Stufenbonus von Kronwerke hat er zu viert etwa 1 400 Leben ({{gaia/behaviour}}). Für die 128 Seelen des Obelisken lohnen sich volle Gruppen am meisten ({{gaia/goal}})."
+  ],
+  "en": [
+   "The players standing in the arena at the start are counted. Only those who hit get spirits, so everybody should strike at least once.",
+   "With Kronwerke's stage bonus he has about 1,400 health with four players ({{gaia/behaviour}}). For the obelisk's 128 spirits full groups pay off most ({{gaia/goal}})."
+  ],
+  "sources": [
+   "botania: GaiaGuardianEntity.spawn (getPlayersAround, setInitialPlayerCount)",
+   "botania: GaiaGuardianEntity.die (playersWhoAttacked)",
+   "core: MobStages (stage 4 health +1.2)"
+  ]
+ },
+ "head": {
+  "de": [
+   "Die [[botania:elementium_axe]] machst du aus Elementium ({{alfheim/elementium_gear}}). Nur der letzte Treffer zählt, also verabrede in der Gruppe, wer mit der Axt abschließt.",
+   "Der Kopf lässt sich auf den Boden oder an eine Wand setzen."
+  ],
+  "en": [
+   "The [[botania:elementium_axe]] is made from elementium ({{alfheim/elementium_gear}}). Only the killing blow counts, so agree in the group who finishes with the axe.",
+   "The head can be placed on the floor or on a wall."
+  ],
+  "sources": [
+   "botania:elementium_axe",
+   "botania: loot_table/blocks/gaia_head.json, gaia_wall_head.json"
+  ]
+ },
+ "spirits": {
+  "de": [
+   "Allein sind das vier Kämpfe, mit Gruppe weniger ({{gaia/together}}). Außer vom Wächter bekommst du eine Seele einmal im Startpaket von Stufe 4.",
+   "Plan sie gut: Tiara 4, Astrolab 2, Lebensaggregator 4, Laputa 3, je eine für Verbreiter, Umhänge, Schmuck und jeden Stabilisator ({{draconic/stabilizer}})."
+  ],
+  "en": [
+   "Alone that is four fights, fewer in a group ({{gaia/together}}). Besides the Guardian, the stage 4 starter kit gives you one spirit once.",
+   "Plan them: tiara 4, astrolabe 2, life aggregator 4, Laputa 3, one each for the spreader, the cloaks, the trinkets and every stabilizer ({{draconic/stabilizer}})."
+  ],
+  "sources": [
+   "helpq uses botania:gaia_spirit (19 recipes)",
+   "botania:flugel_tiara (LLL/ILI/FEF)",
+   "botania:worldshapers_astrolabe",
+   "botania:life_aggregator",
+   "botania:shard_of_laputa",
+   "kronwerke:tech/energy_core_stabilizer",
+   "config/kronwerke/goals.json (stage3 starterKit)"
+  ]
+ },
+ "spreader": {
+  "de": [
+   "Den [[botania:elven_mana_spreader]] baust du in {{alfheim/spreader}}, den [[botania:dragonstone]] tauschen dir die Elfen ({{alfheim/dragonstone}}). Er feuert größere Ladungen und deshalb seltener, für ein Becken neben einer schwachen Blume lohnt er sich kaum."
+  ],
+  "en": [
+   "You build the [[botania:elven_mana_spreader]] in {{alfheim/spreader}}; the elves trade the [[botania:dragonstone]] ({{alfheim/dragonstone}}). It fires larger payloads and therefore less often, so next to a weak flower it hardly pays off."
+  ],
+  "sources": [
+   "botania:gaia_mana_spreader (shapeless)",
+   "botania lang: botania.page.dreamwoodSpreader2"
+  ]
+ },
+ "tiara": {
+  "de": [
+   "Die Tiara kostet **4 Gaia-Seelen**, dazu 2 Elementium, 2 Federn und eine [[botania:pure_ender_essence]] ({{alfheim/pure_essence}}). Sie sitzt im Kopf-Trinketplatz und zieht Mana aus deinem Inventar, also trag eine Manatafel oder ein Manaband mit.",
+   "Die Flugleiste füllt sich am Boden wieder; Gleiten geht auch bei leerer Leiste, bremst aber das Auffüllen."
+  ],
+  "en": [
+   "The tiara costs **4 Gaia spirits** plus 2 elementium, 2 feathers and one [[botania:pure_ender_essence]] ({{alfheim/pure_essence}}). It goes in the head trinket slot and draws mana from your inventory, so carry a mana tablet or a band of mana.",
+   "The flight bar refills; gliding works on an empty bar too but slows the refill."
+  ],
+  "sources": [
+   "botania:flugel_tiara (LLL/ILI/FEF)",
+   "botania lang: botania.page.flightTiara0, flightTiara4, flightTiara6"
+  ],
+  "client": [
+   "that the flight bar refills on the ground"
+  ]
+ },
+ "tiara_wings": {
+  "de": [
+   "Acht Quarzsorten geben acht Flügel, ohne Quarz kehrst du zur Grundform zurück. Der Quarz wird verbraucht, die Tiara bleibt mit ihren Werten erhalten.",
+   "[[botania:elven_quartz]] tauschst du in Alfheim gegen Netherquarz ({{alfheim/elven_quartz}})."
+  ],
+  "en": [
+   "Eight kinds of quartz give eight wings; without quartz you go back to the base look. The quartz is used up, the tiara keeps everything else.",
+   "You trade [[botania:elven_quartz]] for nether quartz in Alfheim ({{alfheim/elven_quartz}})."
+  ],
+  "sources": [
+   "botania:flugel_tiara_0 to flugel_tiara_8 (botania:crafting_special_tiara_wings)",
+   "botania:elven_trade/elven_quartz"
+  ],
+  "client": [
+   "that crafting the tiara alone resets the wings (flugel_tiara_0 without quartz)"
+  ]
+ },
+ "dandelifeon": {
+  "de": [
+   "Die [[botania:redstone_root]] machst du aus Redstone, Farn und Gras ({{botania/redstone_root}}), die Runen kommen vom Runenaltar ({{botania_runes/rune_water}} und folgende). Zellen mit Alter null geben kein Mana, ein Startmuster muss also erst ein paar Schritte laufen.",
+   "Sobald Zellen im 3x3 um die Blume verschwinden, sterben alle anderen auf dem Feld, und du legst das Muster neu. Mit Abstand gesetzte Lebenzähne können sich Zellen über die Grenze weitergeben."
+  ],
+  "en": [
+   "You make the [[botania:redstone_root]] from redstone, a fern and grass ({{botania/redstone_root}}); the runes come from the runic altar ({{botania_runes/rune_water}} and onward). Cells of age zero give no mana, so a starting pattern has to run a few steps first.",
+   "As soon as cells vanish into the 3x3 around the flower, all other cells on the board die and you lay the pattern again. Well spaced Dandelifeons can pass cells across their border."
+  ],
+  "sources": [
+   "botania:petal_apothecary/dandelifeon",
+   "botania:redstone_root",
+   "botania lang: botania.page.dandelifeon5, dandelifeon6, dandelifeon10"
+  ]
+ },
+ "cells": {
+  "de": [
+   "Ein Rezept gibt 3 [[botania:cellular_block]], für 32 Stück also elf Mal craften. Auf Felder, die nicht leer sind, setzt der Lebenzahn keine neuen Zellen, halt das 25x25 also frei."
+  ],
+  "en": [
+   "One recipe gives 3 [[botania:cellular_block]], so 32 take eleven crafts. The Dandelifeon puts no new cells on fields that are not air, so keep the 25x25 clear."
+  ],
+  "sources": [
+   "botania:cellular_block (shapeless, count 3)",
+   "botania lang: botania.page.dandelifeon7"
+  ]
+ },
+ "shulk": {
+  "de": [
+   "Shulker gibt es in Endsiedlungen ({{the_end/end_city}}). Weil Mob und Shulker sterben und Beute verloren geht, braucht ein Dauerbetrieb eine eigene Shulker-Zucht ({{the_end/t_shulker_hunt}}).",
+   "Der Puffer muss leer sein, bevor der nächste Treffer zählt, also leite das Mana schnell ab, am besten mit einem [[botania:gaia_mana_spreader]]."
+  ],
+  "en": [
+   "Shulkers live in End cities ({{the_end/end_city}}). Since the mob and the shulker both die and the loot is lost, running it for good needs your own shulker breeding ({{the_end/t_shulker_hunt}}).",
+   "The buffer must be empty before the next hit counts, so move the mana out quickly, ideally with a [[botania:gaia_mana_spreader]]."
+  ],
+  "sources": [
+   "botania:petal_apothecary/shulk_me_not",
+   "botania lang: botania.page.shulk_me_not0, shulk_me_not1"
+  ]
+ },
+ "trinkets": {
+  "de": [
+   "Alle drei Umhänge gehen in den Körper-Trinketplatz, du trägst also immer nur einen. Für den Wächter ist der Umhang der Tugend am stärksten, für Monsterfarmen der Umhang der Sünde.",
+   "Jeder kostet eine Gaia-Seele; die Wolle muss die richtige Farbe haben (weiß, schwarz, hellgrau)."
+  ],
+  "en": [
+   "All three cloaks go in the body trinket slot, so you wear only one at a time. Against the Guardian the Cloak of Virtue is strongest, for mob farms the Cloak of Sin.",
+   "Each costs one Gaia spirit; the wool has to be the right colour (white, black, light grey)."
+  ],
+  "sources": [
+   "botania:cloak_of_virtue (WWW/GWG/GSG)",
+   "botania:cloak_of_sin",
+   "botania:cloak_of_balance",
+   "botania lang: botania.page.judgementCloaks0, judgementCloaks1"
+  ]
+ },
+ "gaia_pendants": {
+  "de": [
+   "Die Grundstücke kommen aus {{botania_runes/baubles_amulets}} und {{botania_runes/baubles_belts}}, die [[botania:rune_of_pride]] aus {{botania_runes/rune_pride}}. Der [[botania:tiny_planet]] für den Zauber der Diva ist ein Talisman aus {{botania_runes/baubles_charms}}.",
+   "Mit dem Karmesin-Anhänger bist du ganz immun gegen Feuer und Lava, praktisch im Nether und bei Lava-Kesseln."
+  ],
+  "en": [
+   "The base pieces come from {{botania_runes/baubles_amulets}} and {{botania_runes/baubles_belts}}, the [[botania:rune_of_pride]] from {{botania_runes/rune_pride}}. The [[botania:tiny_planet]] for the Charm of the Diva is a trinket from {{botania_runes/baubles_charms}}.",
+   "The Crimson Pendant makes you fully immune to fire and lava, handy in the Nether and near lava cauldrons."
+  ],
+  "sources": [
+   "botania:crimson_pendant (BBB/BPB/NGN)",
+   "botania:nimbus_amulet (BEB/BPB/NGN)",
+   "botania:globetrotters_sash",
+   "botania:charm_of_the_diva (LGP/ HG/ GL)",
+   "botania lang: botania.page.superLavaPendant0"
+  ]
+ },
+ "elven_rings": {
+  "de": [
+   "Beide Ringe kosten keine Gaia-Seele, nur Elementium und Feenstaub oder die Rune des Hochmuts. Der Feenring wirkt auch ohne Elementiumrüstung, am stärksten aber zusammen mit ihr ({{alfheim/fairy_ring}})."
+  ],
+  "en": [
+   "Neither ring costs a Gaia spirit, only elementium and pixie dust or the Rune of Pride. The fairy ring works without elementium armour too, but best together with it ({{alfheim/fairy_ring}})."
+  ],
+  "sources": [
+   "botania:great_fairy_ring (DE /E E/ E )",
+   "botania:ring_of_far_reach (RE /E E/ E )",
+   "botania lang: botania.page.pixieRing0, reachRing0"
+  ]
+ },
+ "black_hole": {
+  "de": [
+   "Leg den Talisman ins Crafting-Feld, dann gibt er seinen Inhalt stapelweise heraus. Schleich-Rechtsklick auf eine Truhe kippt bis zu einen Stapel hinein.",
+   "Zusammen mit dem {{gaia/astrolabe}} baust du große Flächen direkt aus dem Talisman."
+  ],
+  "en": [
+   "Put the talisman in a crafting grid and it gives its blocks back a stack at a time. Sneak right click on a chest dumps up to a stack into it.",
+   "Together with the {{gaia/astrolabe}} you build large surfaces straight from the talisman."
+  ],
+  "sources": [
+   "botania:black_hole_talisman ( G /EAE/ E )",
+   "botania lang: botania.page.blackHoleTalisman1, blackHoleTalisman2"
+  ]
+ },
+ "astrolabe": {
+  "de": [
+   "Das Astrolab braucht Mana aus deinem Inventar, trag also eine Manatafel mit. Den [[botania:dreamwood_log]] tauschen dir die Elfen gegen Lebeholz ({{alfheim/dreamwood}}).",
+   "Die gewählte Größe steht als Kantenlänge im Tooltip."
+  ],
+  "en": [
+   "The astrolabe draws mana from your inventory, so carry a mana tablet. The elves trade you the [[botania:dreamwood_log]] for livingwood ({{alfheim/dreamwood}}).",
+   "The chosen size shows as an edge length in the tooltip."
+  ],
+  "sources": [
+   "botania:worldshapers_astrolabe ( EG/EEE/GED)",
+   "botania lang: botania.page.astrolabe0, astrolabe1, botaniamisc.astrolabe.size"
+  ],
+  "client": [
+   "that the size appears in the tooltip"
+  ]
+ },
+ "starcaller": {
+  "de": [
+   "Der Sternrufer kostet keine Gaia-Seele, nur eine [[botania:terra_blade]] und zwei [[botania:pure_ender_essence]]. Er trifft auf Entfernung, also gut gegen Gegner, die du nicht erreichst; für den Nahkampf bleibt die Terraklinge."
+  ],
+  "en": [
+   "The Starcaller costs no Gaia spirit, only a [[botania:terra_blade]] and two [[botania:pure_ender_essence]]. It hits at range, good against foes out of reach; for close combat keep the Terra Blade."
+  ],
+  "sources": [
+   "botania:starcaller (  I/ AD/TA )",
+   "botania lang: botania.page.starSword0"
+  ]
+ },
+ "thundercaller": {
+  "de": [
+   "Auch der Donnerrufer braucht eine neue [[botania:terra_blade]], die Verzauberungen der alten gehen verloren. Er verzichtet auf die Reichweite und trifft dafür mehrere Ziele, ideal gegen die Diener des Wächters."
+  ],
+  "en": [
+   "The Thundercaller also takes a fresh [[botania:terra_blade]], and the old blade's enchantments are lost. It gives up range for hitting several targets, ideal against the Guardian's minions."
+  ],
+  "sources": [
+   "botania:thundercaller (  I/ AD/TA )",
+   "botania lang: botania.page.thunderSword0"
+  ]
+ },
+ "goal": {
+  "de": [
+   "Die 128 Seelen und 30 Mystischen Stäbe sind **feste Zahlen**, sie wachsen nicht mit der Spielerzahl. Die Technik-Seite mit Elite-Schaltkreisen und Draconiumbarren richtet sich dagegen nach den aktiven Spielern.",
+   "Die Seelen müssen im Hauptinventar liegen: Der Schleich-Klick am Obelisken nimmt nur die drei Reihen, nicht die Hotbar, und will einen zweiten Schleich-Klick innerhalb von 5 Sekunden. Die Stäbe kommen aus {{mahou_tsukai/staff}}."
+  ],
+  "en": [
+   "The 128 spirits and 30 mystic staffs are **fixed numbers**; they do not grow with the player count. The tech side with elite circuits and draconium ingots scales with the active players.",
+   "The spirits must be in your main inventory: the sneak click at the obelisk only takes the three rows, not the hotbar, and needs a second sneak click within 5 seconds. The staffs come from {{mahou_tsukai/staff}}."
+  ],
+  "sources": [
+   "config/kronwerke/goals.json (stage4: gaia_spirit 128 fixed, mystic_staff 30 fixed, elite_control_circuit 150, draconium_ingot 1000)",
+   "docs/STAGES.md (Stage 4 goal)",
+   "core: obelisk hand in (main inventory rows, second sneak click within 5 s)"
+  ]
+ },
+ "outlook": {
+  "de": [
+   "Ein [[botania:gaia_ingot]] kostet 4 Gaia-Seelen und einen Terrastahlbarren. 128 Barren für Stufe 5 sind also 512 Seelen, die meisten davon aus dem stärkeren Wächter von Gaia II.",
+   "Der Fortschritt dafür heißt At the Mercy of a Dream."
+  ],
+  "en": [
+   "A [[botania:gaia_ingot]] costs 4 Gaia spirits and a terrasteel ingot. 128 ingots for stage 5 are therefore 512 spirits, most of them from the stronger Guardian of Gaia II.",
+   "Its advancement is called At the Mercy of a Dream."
+  ],
+  "sources": [
+   "botania:gaia_ingot ( S /SIS/ S )",
+   "config/kronwerke/goals.json (stage5 magic: gaia_ingot 128)",
+   "botania lang: advancement.botania:gaiaGuardianHardmode"
+  ]
+ },
+ "chakrams": {
+  "de": [
+   "Für die Quest brauchst du 2 Terrastahlbarren: Jeder gibt 2 Dornenchakrams, und zwei davon werden zu 2 Loderchakrams. Den [[minecraft:blaze_powder]] gibt es von Lohen in Netherfestungen ({{nether/blaze}}).",
+   "Bis zu 6 Chakrams stapeln sich, du kannst sie also schnell hintereinander werfen."
+  ],
+  "en": [
+   "The quest takes 2 terrasteel ingots: each gives 2 Thorn Chakrams, and two of them become 2 Flare Chakrams. [[minecraft:blaze_powder]] comes from blazes in Nether fortresses ({{nether/blaze}}).",
+   "Up to 6 chakrams stack, so you can throw them quickly one after another."
+  ],
+  "sources": [
+   "botania:thorn_chakram (VVV/VTV/VVV, count 2)",
+   "botania:flare_chakram (BBB/CPC/BBB, count 2)",
+   "botania lang: botania.page.thornChakram0"
+  ]
+ },
+ "five_fights": {
+  "de": [
+   "Gezählt wird der Kill, also der letzte Treffer, nicht jede Teilnahme. Spielt ihr nicht im selben Quest-Team, wechselt euch beim letzten Treffer ab, dann kommen alle schneller auf fünf.",
+   "Jeder Kampf kostet einen Terrastahlbarren ({{gaia/terrasteel_stock}})."
+  ],
+  "en": [
+   "What counts is the kill, the killing blow, not each fight you join. If you are not in the same quest team, take turns on the killing blow and everyone reaches five faster.",
+   "Every fight costs a terrasteel ingot ({{gaia/terrasteel_stock}})."
+  ],
+  "sources": [
+   "quest task: kill botania:gaia_guardian x5 (FTB Quests kill task counts the killer)"
+  ],
+  "client": [
+   "that the kill task counts only the killing blow (shared within an FTB team)"
+  ]
+ },
+ "reservoir": {
+  "de": [
+   "Die [[botania:dreamwood_twig]] schnitzt du aus Traumholz ({{alfheim/wand_elven}}). Den [[botania:livingwood_avatar]] baust du in {{botania/avatar}}; mit der Rute in der Hand und Mana aus einem Verbreiter wird er zur Wache."
+  ],
+  "en": [
+   "You carve the [[botania:dreamwood_twig]] from dreamwood ({{alfheim/wand_elven}}). The [[botania:livingwood_avatar]] is built in {{botania/avatar}}; with the rod in its hand and mana from a spreader it becomes a guard."
+  ],
+  "sources": [
+   "botania:rod_of_the_unstable_reservior (GDD/ TD/ TG)",
+   "botania lang: botania.page.missileRod0, missileRod2"
+  ]
+ },
+ "life": {
+  "de": [
+   "Der Lebensaggregator nimmt Monster- und Prüfungsspawner auf und zerbricht nach einem Mal. Den Lebensfüller stellst du auf den Spawner und gibst ihm Mana per Verbreiter, dann spawnt der Spawner auch ohne Spieler in der Nähe ({{farms/mobs_spawner}}).",
+   "Für den Lebensfüller reicht auch verdünnte Ender-Essenz, er kostet keine Gaia-Seele."
+  ],
+  "en": [
+   "The Life Aggregator picks up monster and trial spawners and breaks after one use. Put the Life Imbuer on the spawner and feed it mana from a spreader; then the spawner works without a player nearby ({{farms/mobs_spawner}}).",
+   "Diluted ender essence is enough for the Life Imbuer, and it costs no Gaia spirit."
+  ],
+  "sources": [
+   "botania:life_aggregator (EIE/ADA/EIE)",
+   "botania:life_imbuer (BSB/PMP/PEP, E = #botania:ender_essences)",
+   "botania lang: botania.page.spawnerMover0, spawnerClaw1"
+  ]
+ },
+ "laputa": {
+  "de": [
+   "Die Schwebende Blume darf jede Farbe haben, die Runen kommen vom Runenaltar ({{botania_runes/rune_air}}, {{botania_runes/rune_earth}}). Jede weitere Gaia-Seele vergrößert den Radius um einen Block, von 14 bis 33; die größte Scherbe kostet also 19 Seelen mehr."
+  ],
+  "en": [
+   "Any colour of floating flower works, and the runes come from the runic altar ({{botania_runes/rune_air}}, {{botania_runes/rune_earth}}). Each extra Gaia spirit adds one block of radius, from 14 up to 33, so the largest shard costs 19 more spirits."
+  ],
+  "sources": [
+   "botania:shard_of_laputa (SFS/PDP/ASE, F = #botania:mundane_floating_flowers)",
+   "botania lang: botania.page.laputaShard2, tag.block.botania.laputa_immobile"
+  ],
+  "client": [
+   "how the upgrade with extra Gaia spirits is crafted (botania:dynamic/shard_of_laputa_upgrade)"
+  ]
+ },
+ "manastorm": {
+  "de": [
+   "Gezündet wird mit einem Manastoß aus einem Verbreiter, stell den also weit genug weg. In geclaimten Chunks sind Explosionen auf dem Server standardmäßig aus, dort richtet die Ladung keinen Schaden an Blöcken an.",
+   "Bau nur in der Wildnis oder in der Farmwelt damit ab."
+  ],
+  "en": [
+   "It goes off from a mana burst out of a spreader, so place that far enough away. Explosions are off by default in claimed chunks on the server, so there the charge does no block damage.",
+   "Only use it in the wild or in the farm world."
+  ],
+  "sources": [
+   "botania:manastorm_charge (LTL/TGT/LTL)",
+   "config/ftbchunks-world.snbt (def_allow_explosions false, protect_unknown_explosions true)"
+  ],
+  "client": [
+   "that FTB Chunks blocks the manastorm explosions in claims"
+  ]
+ },
+ "draconic_tie": {
+  "de": [
+   "Das Rezept ist auf Kronwerke geändert: 4 Diamanten, die Gaia-Seele und ein Partikelgenerator ({{draconic/particle}}). Gebaut wird der Kern in {{draconic/energy_core}} und {{draconic/stabilizer}}."
+  ],
+  "en": [
+   "The recipe is changed on Kronwerke: 4 diamonds, the Gaia spirit and a particle generator ({{draconic/particle}}). The core itself is built in {{draconic/energy_core}} and {{draconic/stabilizer}}."
+  ],
+  "sources": [
+   "kubejs/server_scripts/kronwerke/tech.js (kronwerke:tech/energy_core_stabilizer, ASA/ B /A A)"
+  ]
+ },
+ "terrasteel_stock": {
+  "de": [
+   "Acht Barren sind 4 Millionen Mana auf der Platte. Lager sie als [[botania:terrasteel_block]], dann passt ein ganzer Abend in einen Platz."
+  ],
+  "en": [
+   "Eight ingots are 4 million mana on the plate. Store them as a [[botania:terrasteel_block]] and a whole evening fits in one slot."
+  ],
+  "sources": [
+   "botania:terrestrial_agglomeration_plate/terrasteel_ingot (mana 500000)",
+   "botania:terrasteel_ingot_from_terrasteel_block"
+  ]
+ }
+}

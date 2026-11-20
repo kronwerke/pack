@@ -1,0 +1,786 @@
+{
+ "welcome": {
+  "de": [
+   "Ein [[hexerei:sage_seed]] fällt mit 10 Prozent Chance aus Gras und hohem Gras, aber nicht mit Schere oder Behutsamkeit. Als Schmelzbares zählen Animal Fat, Honigwabe und jede normale Kerze aus Minecraft.",
+   "Blättern lässt sich das Buch nur auf einem Altar ({{hexerei/altar}}); in der Hand zeigt es nur die offene Seite. Vor Stufe 2 kannst du Hexerei-Items tragen und lagern, aber nicht in die Hand nehmen."
+  ],
+  "en": [
+   "A [[hexerei:sage_seed]] drops 10 percent of the time from grass and tall grass, but not with shears or Silk Touch. Animal Fat, honeycomb and any plain Minecraft candle count as the meltable item.",
+   "The book only turns its pages on an altar ({{hexerei/altar}}); in your hand it only shows the open page. Before stage 2 you can carry and store Hexerei items, but not hold them."
+  ],
+  "sources": [
+   "hexerei:book_of_shadows ( L /ABS/ L )",
+   "hexerei: data/hexerei/loot_modifiers/sage_seed_drops.json (chance 0.1, not shears or silk touch)",
+   "hexerei: tags/item/tallow_meltable.json",
+   "hexerei book: intro_page_5"
+  ]
+ },
+ "animal_fat": {
+  "de": [
+   "Jede Kuh, jedes Schwein und jedes Schaf lässt mit **45 Prozent** Chance ein [[hexerei:animal_fat]] fallen. Für eine Ladung Talg brauchst du 8 Stück, also etwa 18 Tiere ohne Plünderung.",
+   "Hexerei-Kerzen schmelzen nicht wieder ein, nur Animal Fat, Honigwaben und die normalen Kerzen aus Minecraft."
+  ],
+  "en": [
+   "Every cow, pig and sheep drops an [[hexerei:animal_fat]] **45 percent** of the time. One batch of tallow takes 8, so about 18 animals without Looting.",
+   "Hexerei candles do not melt back down, only Animal Fat, honeycomb and plain Minecraft candles."
+  ],
+  "sources": [
+   "hexerei: data/hexerei/loot_modifiers/animal_fat_drops.json (cow, pig, sheep, chance 0.45, base_count 1)",
+   "hexerei:tallow_from_mixing_cauldron (8x #hexerei:tallow_meltable)",
+   "hexerei: tags/item/tallow_meltable.json"
+  ]
+ },
+ "altar": {
+  "de": [
+   "Für die Quest zählt nur der **Altar aus Mahagoni** ([[hexerei:book_of_shadows_altar]]): 3 Mahagonistufen oben, je 2 Mahagoniplanken als Beine. Weide und Zaubernuss geben eigene Altäre, die hier nicht zählen.",
+   "Schleich-Rechtsklick nimmt das Buch wieder vom Altar."
+  ],
+  "en": [
+   "Only the **mahogany altar** ([[hexerei:book_of_shadows_altar]]) counts for this quest: 3 mahogany slabs on top, 2 mahogany planks per leg. Willow and witch hazel make altars of their own that do not count here.",
+   "Sneak right click takes the book back off the altar."
+  ],
+  "sources": [
+   "hexerei:book_of_shadows_altar (@@@/# #/# #, mahogany)",
+   "hexerei:willow_altar, hexerei:witch_hazel_altar (separate items)",
+   "hexerei book: intro_page_5, items_altar_1"
+  ]
+ },
+ "dowsing": {
+  "de": [
+   "Im Sumpf findest du Weiden, die vier Hexenkräuter und unter der Erde Selenit, im Dschungel und Bambusdschungel das Mahagoni. Hexerei bringt einen eigenen Weidensumpf als Biom mit.",
+   "Für die Zaubernuss hilft die Rute nicht, die wächst nur im normalen Birkenwald ({{hexerei/woods}})."
+  ],
+  "en": [
+   "Swamps hold willows, the four witch herbs and selenite underground; jungles and bamboo jungles hold mahogany. Hexerei adds a willow swamp biome of its own.",
+   "The rod does not find witch hazel, which only grows in the plain birch forest ({{hexerei/woods}})."
+  ],
+  "sources": [
+   "hexerei: neoforge/biome_modifier (add_willow_tree, add_swamp_flowers, add_selenite_geode: #c:is_swamp; add_mahogany_tree: jungle, bamboo_jungle; add_witch_hazel_tree: birch_forest)",
+   "config/Hexerei-common.toml (willow_swamp_rarity 2)",
+   "hexerei book: items_dowsing_rod_1"
+  ]
+ },
+ "selenite": {
+  "de": [
+   "Die Geoden liegen unter Sumpfbiomen. Mit einer Spitzhacke gibt ein Cluster 4 [[hexerei:selenite_shard]], Glück erhöht das; mit anderem Werkzeug sind es nur 2, mit Behutsamkeit bekommst du den Cluster selbst.",
+   "Eine Scherbe mit einer Kerze verbunden gibt ihr einen Selenitsockel, eine weitere steckt in der Netherit-Spitze ({{hexerei/broom_tips}})."
+  ],
+  "en": [
+   "The geodes sit under swamp biomes. With a pickaxe a cluster gives 4 [[hexerei:selenite_shard]], more with Fortune; any other tool gives only 2, and Silk Touch gives the cluster itself.",
+   "A shard crafted with a candle gives it a selenite base, and another goes into the netherite tip ({{hexerei/broom_tips}})."
+  ],
+  "sources": [
+   "hexerei: neoforge/biome_modifier/add_selenite_geode.json (#c:is_swamp)",
+   "hexerei: loot_table/blocks/selenite_cluster.json (4 with apply_bonus, else 2)",
+   "hexerei:candles/add_selenite_base_to_candle",
+   "hexerei:broom_netherite_tip_from_mixing_cauldron"
+  ],
+  "client": [
+   "that the 4 shard drop needs a pickaxe (cluster_max_harvestables like amethyst)"
+  ]
+ },
+ "herbs": {
+  "de": [
+   "Die Kräuter wachsen wild als Blumen in Sumpfbiomen. Abgebaut lässt jede Pflanze sich selbst fallen, du kannst sie also ohne Samen umsetzen.",
+   "Knochenmehl aus der Belohnung lässt den Garten schneller wachsen. Getrocknet werden die Ernten auf dem {{hexerei/drying_rack}}."
+  ],
+  "en": [
+   "The herbs grow wild as flowers in swamp biomes. Broken, every plant drops itself, so you can move it without seeds.",
+   "The bone meal from the reward makes the garden grow faster. The harvest is dried on the {{hexerei/drying_rack}}."
+  ],
+  "sources": [
+   "hexerei: neoforge/biome_modifier/add_swamp_flowers.json (#c:is_swamp)",
+   "hexerei: loot_table/blocks/mandrake_plant.json (drops hexerei:mandrake_plant)",
+   "hexerei book: items_mandrake_plant_1"
+  ],
+  "client": [
+   "that bone meal speeds up the Hexerei herbs"
+  ]
+ },
+ "herb_mandrake": {
+  "de": [
+   "Die [[hexerei:mandrake_root]] ist das meistgebrauchte Kraut: 2 pro Besenbürste, 1 pro Besen, 2 für die Enhanced und 2 für die Moon Dust Brush. Auf Kronwerke steckt sie außerdem statt grünem Farbstoff in der Fertile Essence von Reliquary.",
+   "Getrocknete Blüten gehören in die {{hexerei/replacer_satchel}}."
+  ],
+  "en": [
+   "The [[hexerei:mandrake_root]] is the most used herb: 2 per broom brush, 1 per broom, 2 for the Enhanced and 2 for the Moon Dust Brush. On Kronwerke it also replaces the green dye in Reliquary's Fertile Essence.",
+   "Dried flowers go into the {{hexerei/replacer_satchel}}."
+  ],
+  "sources": [
+   "hexerei:wet_broom_brush_from_mixing_cauldron",
+   "hexerei:willow_broom_from_mixing_cauldron",
+   "hexerei:wet_herb_enhanced_broom_brush_from_mixing_cauldron",
+   "hexerei:wet_moon_dust_brush_from_mixing_cauldron",
+   "kubejs/server_scripts/kronwerke/round.js (reliquary:fertile_essence: #c:dyes/green to hexerei:mandrake_root)"
+  ]
+ },
+ "herb_belladonna": {
+  "de": [
+   "Die Beeren brauchst du für das Book of Colors, die Enhanced Brush, die Mindful Trance Blend und schwarzen Farbstoff für das {{hexerei/witch_armor}}. Getrocknete Blüten stecken nur in der {{hexerei/replacer_satchel}}."
+  ],
+  "en": [
+   "You need the berries for the Book of Colors, the Enhanced Brush, the Mindful Trance Blend and black dye for the {{hexerei/witch_armor}}. Dried flowers only go into the {{hexerei/replacer_satchel}}."
+  ],
+  "sources": [
+   "hexerei:book_of_colors",
+   "hexerei:wet_herb_enhanced_broom_brush_from_mixing_cauldron",
+   "hexerei:mindful_trance_blend_from_pestle_and_mortar",
+   "hexerei:black_dye_from_pestle_and_mortar",
+   "hexerei:replacer_satchel_from_mixing_cauldron"
+  ]
+ },
+ "herb_mugwort": {
+  "de": [
+   "Pro Besenbürste brauchst du ein Blatt, für die Enhanced Brush eine Blüte. Getrocknete Blüten gehen ins Crow Ankh Amulet und in die Replacer Satchel, getrocknete Blätter nur ins Ankh."
+  ],
+  "en": [
+   "Each broom brush takes one leaf, the Enhanced Brush one flower. Dried flowers go into the Crow Ankh Amulet and the Replacer Satchel, dried leaves only into the ankh."
+  ],
+  "sources": [
+   "hexerei:wet_broom_brush_from_mixing_cauldron",
+   "hexerei:crow_ankh_amulet_from_mixing_cauldron",
+   "hexerei:replacer_satchel_from_mixing_cauldron"
+  ]
+ },
+ "herb_yellow_dock": {
+  "de": [
+   "Genau wie beim Mugwort: ein Blatt pro Besenbürste, eine Blüte pro Enhanced Brush. In die Replacer Satchel kommen nur die getrockneten **Blüten**, ins Crow Ankh Amulet getrocknete Blätter und Blüten."
+  ],
+  "en": [
+   "Just like mugwort: one leaf per broom brush, one flower per Enhanced Brush. Only the dried **flowers** go into the Replacer Satchel; the Crow Ankh Amulet takes dried leaves and flowers."
+  ],
+  "sources": [
+   "hexerei:wet_broom_brush_from_mixing_cauldron",
+   "hexerei:replacer_satchel_from_mixing_cauldron (dried_yellow_dock_flowers only)",
+   "hexerei:crow_ankh_amulet_from_mixing_cauldron"
+  ]
+ },
+ "woods": {
+  "de": [
+   "Weiden wachsen in jedem Sumpfbiom, Mahagoni nur im Dschungel und Bambusdschungel, Zaubernuss nur im normalen Birkenwald. [[hexerei:willow_vines]] bekommst du auf Kronwerke nur mit der Schere.",
+   "Setzlinge wachsen auch in Botany Pots ({{farms/wood_pots}}), dann musst du nicht wieder in den Dschungel."
+  ],
+  "en": [
+   "Willows grow in every swamp biome, mahogany only in jungles and bamboo jungles, witch hazel only in the plain birch forest. On Kronwerke [[hexerei:willow_vines]] only drop with shears.",
+   "Saplings also grow in Botany Pots ({{farms/wood_pots}}), so you do not have to go back to the jungle."
+  ],
+  "sources": [
+   "hexerei: neoforge/biome_modifier (add_willow_tree, add_mahogany_tree, add_witch_hazel_tree)",
+   "kubejs/data/hexerei/loot_table/blocks/willow_vines.json (shears_dig only)",
+   "botanytrees:hexerei/witch_hazel (botanypots crop)"
+  ]
+ },
+ "cauldron": {
+  "de": [
+   "Auf Kronwerke kostet der Kessel [[naturesaura:infused_iron]] statt Eisen ({{start_here/m_infused}}). Er nimmt Flüssigkeiten auch aus Rohren und Pumpen anderer Mods.",
+   "Der Mixing Cauldron steckt außerdem im Apothecary Cauldron von Reliquary, wieder eine Änderung von Kronwerke."
+  ],
+  "en": [
+   "On Kronwerke the cauldron takes [[naturesaura:infused_iron]] instead of iron ({{start_here/m_infused}}). It also accepts fluids from other mods' pipes and pumps.",
+   "The Mixing Cauldron is also part of Reliquary's Apothecary Cauldron, another Kronwerke change."
+  ],
+  "sources": [
+   "kubejs/server_scripts/kronwerke/round.js (hexerei:mixing_cauldron iron to infused_iron; reliquary:apothecary_cauldron cauldron to mixing_cauldron)",
+   "hexerei:mixing_cauldron (T T/#C#/###)",
+   "hexerei book: items_mixing_cauldron_5"
+  ]
+ },
+ "tallow": {
+  "de": [
+   "Das Rezept braucht 250 mB Wasser und Hitze von unten. Eine volle [[hexerei:tallow_bottle]] lässt sich in einem anderen Kessel wieder ausgießen, so füllst du Talg zwischen zwei Kesseln um."
+  ],
+  "en": [
+   "The recipe takes 250 mB of water and heat from below. A full [[hexerei:tallow_bottle]] pours back into another cauldron, so you can move tallow between two cauldrons."
+  ],
+  "sources": [
+   "hexerei:tallow_from_mixing_cauldron (8x #hexerei:tallow_meltable, water 250, heated)",
+   "hexerei:cauldron_filling/tallow_bottle, hexerei:cauldron_emptying/tallow_to_bottle (250 mB)"
+  ]
+ },
+ "dipper": {
+  "de": [
+   "Für den Dipper reicht Lava ohne Feuer darunter, 250 mB genügen. Er taucht nicht nur Kerzen: Jedes Item mit einem Dipper-Rezept wird in der passenden Flüssigkeit fertig, so auch die Trankkerzen ({{hexerei/potion_brew}})."
+  ],
+  "en": [
+   "Lava without heat below is enough for the dipper, 250 mB will do. It dips more than candles: any item with a dipper recipe is finished in the matching fluid, the potion candles too ({{hexerei/potion_brew}})."
+  ],
+  "sources": [
+   "hexerei:candle_dipper_from_mixing_cauldron (5 iron, 3 nuggets, lava 250, no heatRequirement)",
+   "hexerei book: items_candle_dipper_3"
+  ]
+ },
+ "candles": {
+  "de": [
+   "Für acht Kerzen brauchst du 400 mB Talg, also gut anderthalb Flaschen ({{hexerei/tallow}}). Jede Kerze wird dreimal eingetaucht und trocknet zwischendurch.",
+   "Kerzen lassen sich färben. Neben einem Altar schweben brennende Kerzen um ihn herum ({{hexerei/altar}})."
+  ],
+  "en": [
+   "Eight candles take 400 mB of tallow, a good one and a half bottles ({{hexerei/tallow}}). Each candle is dipped three times and dries in between.",
+   "Candles can be dyed. Next to an altar lit candles float around it ({{hexerei/altar}})."
+  ],
+  "sources": [
+   "hexerei:candle_from_dipper (string, tallow 50 mB, numberOfDips 3, dippingTime 200, dryingTime 200)",
+   "hexerei book: items_candle_1, items_candle_3"
+  ]
+ },
+ "candelabra": {
+  "de": [
+   "Der Kessel muss nur etwas Wasser enthalten, das Rezept verbraucht fast nichts davon. Vier Kerzen aus {{hexerei/candles}} gehen dabei auf, sie dürfen jede Farbe haben."
+  ],
+  "en": [
+   "The cauldron only needs a little water; the recipe uses almost none of it. Four candles from {{hexerei/candles}} go into it, in any colour."
+  ],
+  "sources": [
+   "hexerei:candelabra_from_mixing_cauldron (chain, 4x #hexerei:candles, 3 iron, water 1 mB)"
+  ]
+ },
+ "potion_brew": {
+  "de": [
+   "Zum Brauen füllst du Wasser ein, heizt von unten und gibst pro Schritt **zwei** der üblichen Zutat hinein, für Seltsame Tränke also 2 Netherwarzen. So entstehen bis zu 2 Eimer Trank auf einmal.",
+   "Für eine Kerze will der Dipper 100 mB vom passenden Trank. Kerzentränke gibt es für Stärke, Regeneration, Heilung, Tempo, Sprungkraft II, Sanften Fall, Feuerresistenz, Wasseratmung, Glück, Gift, Langsamkeit, Schaden und den Dickflüssigen Trank."
+  ],
+  "en": [
+   "To brew, fill in water, heat from below and add **two** of the usual ingredient per step, so 2 nether wart for awkward potions. That makes up to 2 buckets of potion at once.",
+   "For one candle the dipper wants 100 mB of the right potion. Candle potions exist for strength, regeneration, healing, swiftness, leaping II, slow falling, fire resistance, water breathing, luck, poison, slowness, harming and the thick potion."
+  ],
+  "sources": [
+   "hexerei book: items_mixing_cauldron_7",
+   "hexerei:candles/effects/apply_*_to_candle_from_dipper (13 recipes, potion 100 mB, numberOfDips 3)"
+  ]
+ },
+ "blood": {
+  "de": [
+   "Das Sigil braucht 500 mB Lava und Hitze von unten. Drei Sprünge geben eine Flasche (250 mB) Blut; der Weidenbesen braucht eine, Zaubernuss- und Mahagonibesen je zwei.",
+   "Eine [[hexerei:blood_bottle]] kannst du auch trinken, sie gibt Absorption. Iss vorher, damit du dich schneller heilst."
+  ],
+  "en": [
+   "The sigil takes 500 mB of lava and heat from below. Three jumps give one bottle (250 mB) of blood; the willow broom needs one, the witch hazel and mahogany brooms two each.",
+   "You can also drink a [[hexerei:blood_bottle]]; it gives Absorption. Eat first so you heal faster."
+  ],
+  "sources": [
+   "hexerei:blood_sigil_from_mixing_cauldron (lava 500, heated)",
+   "hexerei:cauldron_emptying/blood_to_bottle (250)",
+   "hexerei:willow_broom_from_mixing_cauldron, witch_hazel_broom, mahogany_broom",
+   "hexerei book: items_blood_bottle_1"
+  ]
+ },
+ "herb_jar": {
+  "de": [
+   "Als Kraut zählt alles im Tag hexerei:herbs: die vier Kräuter mit Blüten, Blättern, Wurzeln und Beeren, getrocknet oder frisch, dazu Salbei, Sage Seeds und Seed Mixture. Linksklick vorn nimmt ein Stück heraus, schleichend einen Stapel.",
+   "Gläser lassen sich färben wie Lederrüstung."
+  ],
+  "en": [
+   "Anything in the hexerei:herbs tag counts as a herb: the four herbs with flowers, leaves, roots and berries, dried or fresh, plus sage, sage seeds and seed mixture. Left click on the front takes one out, sneaking a stack.",
+   "Jars can be dyed like leather armour."
+  ],
+  "sources": [
+   "config/Hexerei-common.toml (jars_only_hold_herbs = true)",
+   "hexerei: tags/item/herbs.json",
+   "hexerei:herb_jar_from_mixing_cauldron (8 sand, lava 250, heated)",
+   "hexerei book: items_herb_jar_2, items_herb_jar_4"
+  ]
+ },
+ "coffer": {
+  "de": [
+   "Shulkerkisten, Coffers und Entangled Coffers kommen nicht hinein (Config). Sitzt eine Krähe mit ihrem Schlafplatz auf der Coffer, sammelt sie jedes Item der Umgebung ein, nicht nur passende ({{hexerei/crow}})."
+  ],
+  "en": [
+   "Shulker boxes, coffers and entangled coffers cannot go inside (config). If a crow has its perch on the coffer, it gathers every item around, not only matching ones ({{hexerei/crow}})."
+  ],
+  "sources": [
+   "config/Hexerei-common.toml (coffer_blacklist)",
+   "hexerei:coffer_from_mixing_cauldron (5 mahogany planks, 3 gold, water 1000)",
+   "hexerei book: items_coffer_5"
+  ]
+ },
+ "satchel": {
+  "de": [
+   "Jede Tasche braucht 500 mB Wasser. Der Besen hat nur einen Satchel-Platz, der Besensitz und die Spezialtaschen teilen ihn sich ({{hexerei/broom_seat}}, {{hexerei/ender_satchel}}).",
+   "Die Small Satchel geht später in Medium und Large auf, bau also lieber gleich zwei ({{hexerei/large_satchel}})."
+  ],
+  "en": [
+   "Every satchel takes 500 mB of water. The broom has a single satchel slot, shared with the broom seat and the special satchels ({{hexerei/broom_seat}}, {{hexerei/ender_satchel}}).",
+   "The Small Satchel later goes into the Medium and Large ones, so better build two right away ({{hexerei/large_satchel}})."
+  ],
+  "sources": [
+   "hexerei:small_satchel_from_mixing_cauldron, medium_satchel, large_satchel (water 500)",
+   "hexerei book: entities_broom_page_7"
+  ]
+ },
+ "witch_armor": {
+  "de": [
+   "Die Robe braucht **8** Stoff, nicht 7: Hut 5, Robe 8, Stiefel 4 sind 17 [[hexerei:infused_fabric]], also 9 Mischungen. Dafür brauchst du 18 schwarzen Farbstoff, 36 Leder und 18 Fäden.",
+   "Schwarzen Farbstoff machst du im Mörser aus Belladonna-Beeren, 5 Beeren geben 4 Farbstoff ({{hexerei/mortar}})."
+  ],
+  "en": [
+   "The robe takes **8** fabric, not 7: hat 5, robe 8, boots 4 make 17 [[hexerei:infused_fabric]], so 9 mixes. That takes 18 black dye, 36 leather and 18 string.",
+   "Make the black dye in the mortar from belladonna berries, 5 berries give 4 dye ({{hexerei/mortar}})."
+  ],
+  "sources": [
+   "hexerei:witch_hat (###/# #, 5)",
+   "hexerei:witch_chestplate (###/###/# #, 8)",
+   "hexerei:witch_boots (# #/# #, 4)",
+   "hexerei:infused_fabric_from_mixing_cauldron (2 black dye, 4 leather, 2 string, gives 2)",
+   "hexerei:black_dye_from_pestle_and_mortar"
+  ]
+ },
+ "crystal_ball": {
+  "de": [
+   "Das Rezept braucht 250 mB Lava und Hitze. Die Kugel zeigt dir, wann Vollmond ist; dann ist der Besen mit der {{hexerei/moon_brush}} am schnellsten."
+  ],
+  "en": [
+   "The recipe takes 250 mB of lava and heat. The ball shows you when the full moon is up; that is when a broom with the {{hexerei/moon_brush}} is fastest."
+  ],
+  "sources": [
+   "hexerei:crystal_ball_from_mixing_cauldron (diamond, 6 glass, stone, lava 250, heated)",
+   "hexerei book: items_crystal_ball_1, items_moon_dust_brush_1"
+  ]
+ },
+ "drying_rack": {
+  "de": [
+   "Schleich-Rechtsklick mit beiden Händen leer holt alles herunter, auch Unfertiges. Verrottetes Fleisch braucht 100 Sekunden bis zum Leder, ein nasser Schwamm 50.",
+   "Eine Hopper-Reihe darüber und darunter macht aus dem Rack eine kleine Lederfarm."
+  ],
+  "en": [
+   "Sneak right click with both hands empty takes everything down, unfinished items too. Rotten flesh takes 100 seconds to become leather, a wet sponge 50.",
+   "A row of hoppers above and below turns the rack into a small leather farm."
+  ],
+  "sources": [
+   "hexerei:herb_drying_rack ( # /$@$)",
+   "hexerei:leather_from_drying_rack (dryingTime 2000)",
+   "hexerei:sponge_from_drying_rack (dryingTime 1000)",
+   "hexerei book: items_drying_rack_3, items_drying_rack_4"
+  ]
+ },
+ "dried_herbs": {
+  "de": [
+   "Alle Blüten und Blätter brauchen gleich lang, 2000 Ticks. Getrocknete Belladonna-Blüten nutzt nur die {{hexerei/replacer_satchel}}, das Crow Ankh Amulet will getrocknete Mugwort- und Yellow-Dock-Teile ({{hexerei/crow_ankh}})."
+  ],
+  "en": [
+   "All flowers and leaves take the same 2000 ticks. Dried belladonna flowers are only used by the {{hexerei/replacer_satchel}}; the Crow Ankh Amulet wants dried mugwort and yellow dock parts ({{hexerei/crow_ankh}})."
+  ],
+  "sources": [
+   "hexerei:dried_*_from_drying_rack (dryingTime 2000)",
+   "hexerei:replacer_satchel_from_mixing_cauldron",
+   "hexerei:crow_ankh_amulet_from_mixing_cauldron"
+  ]
+ },
+ "mortar": {
+  "de": [
+   "Das Rezept braucht 250 mB Lava und Hitze. Schleich-Rechtsklick holt Zutaten wieder heraus, solange das Rezept noch nicht vollständig ist.",
+   "Farbstoff und Blend dauern 15 Sekunden, die Seed Mixture 5 ({{hexerei/seed_mixture}})."
+  ],
+  "en": [
+   "The recipe takes 250 mB of lava and heat. Sneak right click takes ingredients back out as long as the recipe is not complete.",
+   "Dye and blend take 15 seconds, the seed mixture 5 ({{hexerei/seed_mixture}})."
+  ],
+  "sources": [
+   "hexerei:pestle_and_mortar_from_mixing_cauldron (lava 250, heated)",
+   "hexerei:black_dye_from_pestle_and_mortar (grindingTime 300)",
+   "hexerei:seed_mixture_from_pestle_and_mortar (grindingTime 100)",
+   "hexerei book: items_pestle_and_mortar_3"
+  ]
+ },
+ "mindful_blend": {
+  "de": [
+   "Für die Blend brauchst du [[hexerei:sage]] aus {{hexerei/sage}}. Die Wachstumskerze stellst du mitten in ein Feld oder eine Baumfarm."
+  ],
+  "en": [
+   "The blend needs [[hexerei:sage]] from {{hexerei/sage}}. Put the growth candle in the middle of a field or a tree farm."
+  ],
+  "sources": [
+   "hexerei:mindful_trance_blend_from_pestle_and_mortar",
+   "hexerei:candles/add_mindful_blend_to_candle (effect hexerei:growth_effect)"
+  ],
+  "client": [
+   "how far the growth candle reaches"
+  ]
+ },
+ "sage": {
+  "de": [
+   "Die ersten Samen kommen aus Gras ({{hexerei/welcome}}). Glück auf dem Werkzeug erhöht die Ernte an Salbei und Samen.",
+   "Für ein Salbeibündel brauchst du 8 Salbei, für das ganze Hexenhaus mit 4 Bündeln also 32 ({{hexerei/witch_house}})."
+  ],
+  "en": [
+   "The first seeds come from grass ({{hexerei/welcome}}). Fortune on the tool raises the sage and seed harvest.",
+   "One sage bundle takes 8 sage, so the whole witch house with 4 bundles takes 32 ({{hexerei/witch_house}})."
+  ],
+  "sources": [
+   "hexerei: loot_table/blocks/sage_crop.json (apply_bonus on sage and seeds)",
+   "hexerei:sage_bundle (SSS/S#S/SSS)"
+  ]
+ },
+ "sage_bundle": {
+  "de": [
+   "Ein getrocknetes Bündel brennt auf der Platte **eine Stunde Echtzeit**, solange der Chunk geladen ist. Das Rack trocknet bis zu drei Bündel pro Platz gleichzeitig."
+  ],
+  "en": [
+   "A dried bundle burns on the plate for **one hour of real time** while the chunk is loaded. The rack dries up to three bundles per slot at once."
+  ],
+  "sources": [
+   "config/Hexerei-common.toml (sage_bundle_durability 3600)",
+   "hexerei: SageBurningPlateTile.tick (one damage every 20 ticks)",
+   "hexerei:dried_sage_bundle_from_drying_rack (dryingTime 4000)"
+  ]
+ },
+ "sage_plate": {
+  "de": [
+   "Die Platte kostet 8 Goldbarren in 250 mB Lava mit Hitze. Ein Bündel brennt eine Stunde, danach ist es weg und die Platte muss neu bestückt werden ({{hexerei/sage_bundle}}).",
+   "Der Radius von 48 Blöcken ist auf dem Server so eingestellt (Config)."
+  ],
+  "en": [
+   "The plate takes 8 gold ingots in 250 mB of lava with heat. A bundle burns for an hour and is then gone, so refill the plate ({{hexerei/sage_bundle}}).",
+   "The 48 block radius is the server setting (config)."
+  ],
+  "sources": [
+   "hexerei:sage_burning_plate_from_mixing_cauldron (8 gold, lava 250, heated)",
+   "config/Hexerei-common.toml (spawn_disable_range 48, sage_bundle_durability 3600)",
+   "hexerei: SageBurningPlateTile.tick"
+  ]
+ },
+ "seed_mixture": {
+  "de": [
+   "Ein Mahlgang dauert 5 Sekunden und gibt eine Seed Mixture. Weizen-, Kürbis-, Melonen- und Rote-Bete-Samen bekommst du aus Gras und aus Früchten, die Sage Seeds aus {{hexerei/sage}}."
+  ],
+  "en": [
+   "One grind takes 5 seconds and gives one seed mixture. Wheat, pumpkin, melon and beetroot seeds come from grass and from the crops, the sage seeds from {{hexerei/sage}}."
+  ],
+  "sources": [
+   "hexerei:seed_mixture_from_pestle_and_mortar (grindingTime 100, count 1)"
+  ]
+ },
+ "candle_combat": {
+  "de": [
+   "Jede Kerze braucht 100 mB vom Trank, das ist weniger als eine Flasche. Heilung und Regeneration helfen der ganzen Gruppe, Stärke auch jedem in der Nähe, der kämpft."
+  ],
+  "en": [
+   "Each candle takes 100 mB of the potion, less than one bottle. Healing and regeneration help the whole group, and strength helps anyone fighting nearby."
+  ],
+  "sources": [
+   "hexerei:candles/effects/apply_strength_to_candle_from_dipper, apply_regeneration, apply_instant_health (potion 100 mB)"
+  ]
+ },
+ "candle_move": {
+  "de": [
+   "Die Sprungkerze will den **verstärkten** Sprungtrank (Stufe II), der normale geht nicht; Glowstone macht ihn stärker. Tempo und Sanfter Fall gehen mit den normalen Tränken."
+  ],
+  "en": [
+   "The leaping candle wants the **strong** leaping potion (level II); the normal one does not work. Glowstone makes it strong. Swiftness and slow falling use the normal potions."
+  ],
+  "sources": [
+   "hexerei:candles/effects/apply_leaping_to_candle_from_dipper (minecraft:strong_leaping)",
+   "hexerei:candles/effects/apply_speed_to_candle_from_dipper, apply_slow_falling"
+  ]
+ },
+ "candle_senses": {
+  "de": [
+   "Beide Kerzen brauchen den normalen Trank, 100 mB pro Kerze. Für Feuerresistenz reicht Magmacreme im Seltsamen Trank, für Wasseratmung ein Kugelfisch."
+  ],
+  "en": [
+   "Both candles take the normal potion, 100 mB per candle. Magma cream in an awkward potion makes fire resistance, a pufferfish makes water breathing."
+  ],
+  "sources": [
+   "hexerei:candles/effects/apply_fire_resist_to_candle_from_dipper",
+   "hexerei:candles/effects/apply_water_breathing_to_candle_from_dipper",
+   "hexerei:candles/effects/apply_night_vision_to_candle_from_dipper (also water_breathing)"
+  ]
+ },
+ "candle_luck": {
+  "de": [
+   "In Minecraft selbst hat der Dickflüssige Trank keinen Nutzen, Hexerei braucht ihn hier und in der {{hexerei/replacer_satchel}} wird er gebraucht. Glowstonestaub gibt es im Nether ({{nether/glowstone}})."
+  ],
+  "en": [
+   "In Minecraft itself the thick potion has no use; Hexerei needs it here and in the {{hexerei/replacer_satchel}}. Glowstone dust comes from the Nether ({{nether/glowstone}})."
+  ],
+  "sources": [
+   "hexerei:candles/effects/apply_sunshine_effect_to_candle_from_dipper (minecraft:thick, hexerei:sunshine_effect)",
+   "hexerei:replacer_satchel_from_mixing_cauldron (thick 1000 mB)"
+  ]
+ },
+ "candle_harm": {
+  "de": [
+   "Alle drei Kerzen brauchen den normalen Trank, verstärkte oder verlängerte Formen zählen nicht. Gift allein tötet nicht, es lässt immer ein halbes Herz übrig; zum Töten brauchst du die Schadenskerze."
+  ],
+  "en": [
+   "All three candles take the normal potion; strong or long versions do not count. Poison alone does not kill, it always leaves half a heart; to kill you need the harming candle."
+  ],
+  "sources": [
+   "hexerei:candles/effects/apply_poison_to_candle_from_dipper (minecraft:poison), apply_slowness (minecraft:slowness), apply_instant_damage (minecraft:harming)"
+  ]
+ },
+ "broom_brush": {
+  "de": [
+   "Die nasse Bürste braucht 500 mB Wasser. Eine Bürste fliegt 100 Haltbarkeitspunkte lang, danach fällt der Besen; nimm Ersatz in der Satchel mit oder bau die {{hexerei/replacer_satchel}}."
+  ],
+  "en": [
+   "The wet brush takes 500 mB of water. A brush flies for 100 durability points, then the broom drops; carry spares in the satchel or build the {{hexerei/replacer_satchel}}."
+  ],
+  "sources": [
+   "hexerei:wet_broom_brush_from_mixing_cauldron (water 500)",
+   "hexerei:broom_brush_from_drying_rack (dryingTime 1000)",
+   "config/Hexerei-common.toml (broom_brush_durability 100)",
+   "hexerei book: items_broom_brush_1"
+  ]
+ },
+ "willow_broom": {
+  "de": [
+   "Der Besen braucht 1 000 mB Wasser im Kessel. Fliegen: Hoch, runter und absteigen liegen auf eigenen Tasten von Hexerei, sonst lenkst du wie ein Boot.",
+   "Die zwei Goldblöcke sind der teuerste Teil, für den {{hexerei/witch_hazel_broom}} brauchst du stattdessen einen Diamanten."
+  ],
+  "en": [
+   "The broom takes 1,000 mB of water in the cauldron. Flying: up, down and dismount have their own Hexerei keys, otherwise you steer like a boat.",
+   "The two gold blocks are the expensive part; the {{hexerei/witch_hazel_broom}} takes a diamond instead."
+  ],
+  "sources": [
+   "hexerei:willow_broom_from_mixing_cauldron (water 1000)",
+   "hexerei book: entities_broom_page_4, entities_broom_page_5"
+  ],
+  "client": [
+   "the default keys for broom up, down and dismount"
+  ]
+ },
+ "enhanced_brush": {
+  "de": [
+   "Statt einer trockenen Bürste geht auch die nasse direkt in den Kessel, dann sparst du einen Trockengang. Im Kessel brauchst du 1 500 mB Wasser, auf dem Rack 120 Sekunden."
+  ],
+  "en": [
+   "Instead of a dry brush the wet one goes straight into the cauldron too, which saves one drying step. The cauldron needs 1,500 mB of water, the rack 120 seconds."
+  ],
+  "sources": [
+   "hexerei:wet_herb_enhanced_broom_brush_from_mixing_cauldron_wet (from wet_broom_brush)",
+   "hexerei:herb_enhanced_broom_brush_from_drying_rack (dryingTime 2400)",
+   "config/Hexerei-common.toml (herb_enhanced_brush_durability 200)"
+  ]
+ },
+ "moon_brush": {
+  "de": [
+   "Auch hier geht die nasse Enhanced Brush direkt hinein, ohne vorher zu trocknen. Der Kessel braucht 1 000 mB Wasser, eine Mischung Mondstaub reicht genau für eine Bürste.",
+   "Wann Vollmond ist, zeigt die {{hexerei/crystal_ball}}."
+  ],
+  "en": [
+   "Here too the wet Enhanced Brush goes straight in without drying first. The cauldron needs 1,000 mB of water, and one batch of moon dust is exactly one brush.",
+   "The {{hexerei/crystal_ball}} shows when the moon is full."
+  ],
+  "sources": [
+   "hexerei:wet_moon_dust_brush_from_mixing_cauldron_wet",
+   "hexerei:moon_dust_from_mixing_cauldron (gives 4)",
+   "hexerei:moon_brush_from_drying_rack (dryingTime 1200)",
+   "config/Hexerei-common.toml (moon_dust_brush_durability 200)"
+  ]
+ },
+ "witch_hazel_broom": {
+  "de": [
+   "Zaubernuss wächst nur im normalen Birkenwald ({{hexerei/woods}}). Du brauchst zwei Flaschen Blut, also sechs Sprünge in den Kessel ({{hexerei/blood}})."
+  ],
+  "en": [
+   "Witch hazel only grows in the plain birch forest ({{hexerei/woods}}). You need two bottles of blood, so six jumps into the cauldron ({{hexerei/blood}})."
+  ],
+  "sources": [
+   "hexerei:witch_hazel_broom_from_mixing_cauldron (diamond, 2 logs, 2 blood bottles, water 1000)",
+   "hexerei: neoforge/biome_modifier/add_witch_hazel_tree.json (birch_forest)"
+  ]
+ },
+ "mahogany_broom": {
+  "de": [
+   "Den Netheritbarren schmiedest du in {{nether/netherite}}; mit der Netherit-Spitze kommen noch drei dazu ({{hexerei/broom_tips}}). Zwei Flaschen Blut heißen sechs Sprünge in den Kessel."
+  ],
+  "en": [
+   "You forge the netherite ingot in {{nether/netherite}}; the netherite tip adds three more ({{hexerei/broom_tips}}). Two bottles of blood mean six jumps into the cauldron."
+  ],
+  "sources": [
+   "hexerei:mahogany_broom_from_mixing_cauldron (netherite ingot, 2 logs, 2 blood bottles, water 1000)",
+   "hexerei:broom_netherite_tip_from_mixing_cauldron (3 netherite ingots)"
+  ]
+ },
+ "broom_tips": {
+  "de": [
+   "Der Zubehörplatz nimmt nur ein Teil, Spitze, Besenkette oder Goldringe schließen sich also aus. Die Netherit-Spitze braucht **2 000 mB Lava** und Hitze, die wasserdichte Spitze einen [[minecraft:conduit]] in 1 000 mB Wasser."
+  ],
+  "en": [
+   "The misc slot holds one item, so a tip, the broom chain and the gold rings exclude each other. The netherite tip takes **2,000 mB of lava** and heat, the waterproof tip a [[minecraft:conduit]] in 1,000 mB of water."
+  ],
+  "sources": [
+   "hexerei:broom_netherite_tip_from_mixing_cauldron (lava 2000, heated)",
+   "hexerei:broom_waterproof_tip_from_mixing_cauldron (conduit, water 1000)",
+   "config/Hexerei-common.toml (netherite tip 200, waterproof tip 800)",
+   "hexerei book: entities_broom_page_6"
+  ]
+ },
+ "crow": {
+  "de": [
+   "Krähen spawnen in Wäldern in Gruppen von 2 bis 5. Gezähmt öffnet Schleich-Rechtsklick ihr Menü mit drei Plätzen: Item in der Kralle (auch eine Waffe), Hut und ein freier Platz.",
+   "Taschendiebstahl geht bei jedem Dorfbewohner mit Beruf, auch ohne Stufe; Bibliothekare geben dabei auch verzauberte Bücher. Mit einem Farbstoff bekommt die Krähe ein Halstuch."
+  ],
+  "en": [
+   "Crows spawn in forests in groups of 2 to 5. Once tamed, sneak right click opens their menu with three slots: the item in the claws (a weapon too), a hat and a free slot.",
+   "Pickpocketing works on any villager with a job, even unlevelled; librarians can give enchanted books. A dye gives the crow a bandanna."
+  ],
+  "sources": [
+   "hexerei: neoforge/biome_modifier/add_crow_spawn.json (#minecraft:is_forest, 2 to 5)",
+   "config/Hexerei-common.toml (crow_pickpocket_cooldown 1800)",
+   "hexerei:crow_flute_dye",
+   "hexerei book: entities_crow_page_4, entities_crow_page_12, entities_crow_page_19"
+  ]
+ },
+ "crow_amulet": {
+  "de": [
+   "Das Rezept braucht 250 mB Lava und Hitze. Allein ist das Amulett Schmuck, seine Wirkung bekommt es erst als Crow Ankh Amulet ({{hexerei/crow_ankh}})."
+  ],
+  "en": [
+   "The recipe takes 250 mB of lava and heat. On its own the amulet is decoration; it only gains its effect as the Crow Ankh Amulet ({{hexerei/crow_ankh}})."
+  ],
+  "sources": [
+   "hexerei:crow_blank_amulet_from_mixing_cauldron (lava 250, heated)",
+   "hexerei:crow_amulet_apply"
+  ],
+  "client": [
+   "that the blank amulet has no effect of its own"
+  ]
+ },
+ "owl": {
+  "de": [
+   "Für die Quest zählt nur das **Weiden-Depot** ([[hexerei:willow_courier_depot]]): 3 Weidenplanken und ein Eisenbarren. Das Mahagoni-Depot will einen Goldbarren statt Eisen.",
+   "Eulen spawnen nur im Dunklen Eichenwald, in Gruppen von 2 bis 5. Ein versiegeltes Paket öffnet der Empfänger mit Rechtsklick, wenn er es abstellt."
+  ],
+  "en": [
+   "Only the **willow depot** ([[hexerei:willow_courier_depot]]) counts for this quest: 3 willow planks and an iron ingot. The mahogany depot wants a gold ingot instead of iron.",
+   "Owls only spawn in dark forests, in groups of 2 to 5. A sealed package is opened by placing it and right clicking it."
+  ],
+  "sources": [
+   "hexerei:willow_courier_depot (MGM/M, iron)",
+   "hexerei:mahogany_courier_depot (gold)",
+   "hexerei: neoforge/biome_modifier/add_owl_spawn.json (dark_forest)",
+   "hexerei book: items_courier_package_2"
+  ]
+ },
+ "witch_house": {
+  "de": [
+   "16 Kerzen sind 800 mB Talg, 4 Bündel sind 32 Salbei und vier Stunden Brennzeit auf der Platte."
+  ],
+  "en": [
+   "16 candles are 800 mB of tallow, 4 bundles are 32 sage and four hours of burn time on the plate."
+  ],
+  "sources": [
+   "hexerei:candle_from_dipper (50 mB)",
+   "hexerei:sage_bundle (8 sage)",
+   "config/Hexerei-common.toml (sage_bundle_durability 3600)"
+  ]
+ },
+ "woodcutter": {
+  "de": [
+   "Für die Quest zählt nur der **Weiden-Woodcutter** ([[hexerei:willow_woodcutter]]), die Varianten aus Mahagoni und Zaubernuss sind eigene Items. Die Verbundplanken (Connected, Layered, Pillar) gibt es nur hier; mit Wax Blend aus dem Mörser gewachst verbinden sie sich nur noch mit anderen gewachsten Blöcken."
+  ],
+  "en": [
+   "Only the **willow woodcutter** ([[hexerei:willow_woodcutter]]) counts for this quest; the mahogany and witch hazel ones are separate items. The connected planks (Connected, Layered, Pillar) only come from here; waxed with Wax Blend from the mortar they only connect to other waxed blocks."
+  ],
+  "sources": [
+   "hexerei:willow_woodcutter ( I /#A#)",
+   "hexerei:mahogany_woodcutter, hexerei:witch_hazel_woodcutter",
+   "hexerei book: items_mahogany_connected_1, items_wax_blend_1"
+  ]
+ },
+ "book_of_colors": {
+  "de": [
+   "Für die Canvas brauchst du getrockneten Salbei: Salbei 100 Sekunden aufs Drying Rack ({{hexerei/sage}}, {{hexerei/drying_rack}}). Die Farbstoffe in den Ecken dürfen beliebige Farben sein."
+  ],
+  "en": [
+   "The canvas needs dried sage: 100 seconds of sage on the drying rack ({{hexerei/sage}}, {{hexerei/drying_rack}}). The corner dyes can be any colour."
+  ],
+  "sources": [
+   "hexerei:book_of_colors (DLD/VBA/DLD, #c:dyes)",
+   "hexerei:book_canvas ( S /SPS/ S )",
+   "hexerei:dried_sage_from_drying_rack (dryingTime 2000)"
+  ]
+ },
+ "large_satchel": {
+  "de": [
+   "Ab null gerechnet kostet die Large Satchel zwei Small Satchels: eine geht direkt hinein, eine steckt in der Medium. Zusammen sind das 20 Leder, 7 Fäden und 2 Goldnuggets."
+  ],
+  "en": [
+   "Counted from scratch, the Large Satchel takes two Small Satchels: one goes in directly, one sits inside the Medium. Altogether that is 20 leather, 7 string and 2 gold nuggets."
+  ],
+  "sources": [
+   "hexerei:small_satchel_from_mixing_cauldron (6 leather, string, nugget)",
+   "hexerei:medium_satchel_from_mixing_cauldron (small, 6 leather, string)",
+   "hexerei:large_satchel_from_mixing_cauldron (small, medium, 2 leather, 4 string)"
+  ]
+ },
+ "replacer_satchel": {
+  "de": [
+   "1 000 mB Dickflüssiger Trank sind vier Flaschen; der Kessel muss nicht beheizt sein. Die [[hexerei:broom_brush]] im Rezept geht auf, leg also danach neue Bürsten in die Tasche."
+  ],
+  "en": [
+   "1,000 mB of thick potion are four bottles; the cauldron does not need heat. The [[hexerei:broom_brush]] in the recipe is used up, so put fresh brushes into the satchel afterwards."
+  ],
+  "sources": [
+   "hexerei:replacer_satchel_from_mixing_cauldron (minecraft:thick 1000 mB, no heatRequirement)",
+   "hexerei book: items_replacer_satchel_1"
+  ]
+ },
+ "ender_satchel": {
+  "de": [
+   "Das Rezept braucht 500 mB Lava und Hitze. Die Tasche hat selbst keine Plätze, sie öffnet die Endertruhe des Reiters; dafür nimmt sie den Satchel-Platz ein, eine zweite Tasche passt nicht."
+  ],
+  "en": [
+   "The recipe takes 500 mB of lava and heat. The satchel has no slots of its own, it opens the rider's ender chest; it takes the satchel slot, so no second satchel fits."
+  ],
+  "sources": [
+   "hexerei:ender_satchel_from_mixing_cauldron (lava 500, heated)",
+   "hexerei book: items_ender_satchel_1"
+  ]
+ },
+ "broom_whistle": {
+  "de": [
+   "Gebunden wird über ein eigenes Crafting-Rezept, Pfeife und Besen kommen danach beide wieder heraus. Lass den Besen also nicht in einer Kiste liegen, er muss in der Welt stehen und in Reichweite sein."
+  ],
+  "en": [
+   "Binding is its own crafting recipe, and both whistle and broom come back out. So do not leave the broom in a chest; it has to be placed in the world and within range."
+  ],
+  "sources": [
+   "hexerei:broom_whistle ( SM/ MM/B  )",
+   "hexerei:whistle_bind",
+   "hexerei book: items_broom_whistle_1"
+  ],
+  "client": [
+   "that the broom item comes back from the bind recipe",
+   "the whistle's range"
+  ]
+ },
+ "broom_seat": {
+  "de": [
+   "Aus einer Infused Fabric werden acht Stoffblöcke, die Wolle darf jede Farbe haben. Der Sitz nimmt den Satchel-Platz, also fliegt ihr zu zweit ohne Gepäck."
+  ],
+  "en": [
+   "One infused fabric makes eight fabric blocks, and the wool can be any colour. The seat takes the satchel slot, so two riders fly without luggage."
+  ],
+  "sources": [
+   "hexerei:infused_fabric/infused_fabric_block_from_mixing_cauldron (fabric, 7 #minecraft:wool, water 250, gives 8)",
+   "hexerei:broom_seat_from_mixing_cauldron (water 500)"
+  ]
+ },
+ "entangled_coffer": {
+  "de": [
+   "1 000 mB Trank der Schnelligkeit sind vier Flaschen, der Kessel muss beheizt sein. Die [[minecraft:echo_shard]] findest du in Antiken Städten ({{deeper_darker/ancient_city}}).",
+   "Eine Entangled Coffer lässt sich nicht in eine andere Coffer legen."
+  ],
+  "en": [
+   "1,000 mB of swiftness potion are four bottles, and the cauldron must be heated. The [[minecraft:echo_shard]] is found in ancient cities ({{deeper_darker/ancient_city}}).",
+   "An entangled coffer cannot be put into another coffer."
+  ],
+  "sources": [
+   "hexerei:entangled_coffer_from_mixing_cauldron (minecraft:swiftness 1000 mB, heated, gives 2)",
+   "config/Hexerei-common.toml (coffer_blacklist)"
+  ]
+ },
+ "crow_ankh": {
+  "de": [
+   "250 mB Regenerationstrank sind genau eine Flasche, Hitze braucht es nicht. Das [[minecraft:totem_of_undying]] lassen Magier in Waldanwesen und Überfällen fallen."
+  ],
+  "en": [
+   "250 mB of regeneration potion are exactly one bottle, no heat needed. Evokers in woodland mansions and raids drop the [[minecraft:totem_of_undying]]."
+  ],
+  "sources": [
+   "hexerei:crow_ankh_amulet_from_mixing_cauldron (minecraft:regeneration 250 mB, no heatRequirement)"
+  ]
+ }
+}

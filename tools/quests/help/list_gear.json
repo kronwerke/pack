@@ -1,0 +1,1093 @@
+{
+ "s1": {
+  "de": [
+   "Drei [[minecraft:iron_ingot]] über zwei Stöcken reichen für die Aufgabe. Alle Einträge dieses Abschnitts hängen nur an dieser Quest, du kannst sie in beliebiger Reihenfolge angehen.",
+   "Gesperrte Ausrüstung kannst du tragen und einlagern, aber nicht in die Hand nehmen oder anziehen, und kein Rezept stellt sie her, bevor ihre Stufe offen ist."
+  ],
+  "en": [
+   "Three [[minecraft:iron_ingot]] over two sticks are enough for this quest. Every entry of this section depends only on this one, so do them in any order.",
+   "Locked gear can be carried and stored, but not held or worn, and no recipe makes it before its stage is open."
+  ],
+  "sources": [
+   "minecraft:iron_pickaxe",
+   "docs/STAGES.md (How a stage is locked)"
+  ]
+ },
+ "v_diamond": {
+  "de": [
+   "Diamanterz braucht mindestens eine Eisenspitzhacke. Die [[minecraft:diamond_pickaxe]] brauchst du später noch: Sie ist die Basis für die {{list_gear/ma_inferium}} und der Katalysator der Wyvern-Spitzhacke.",
+   "Hast du eine Affix-Spitzhacke aus Gold, macht die Diamant-Upgrade-Vorlage von Apotheosis sie am Schmiedetisch mit 4 Diamanten zur Diamantspitzhacke ({{list_gear/apo_template}})."
+  ],
+  "en": [
+   "Diamond ore needs at least an iron pickaxe. Keep the [[minecraft:diamond_pickaxe]] in mind: it is the base of the {{list_gear/ma_inferium}} and the catalyst of the Wyvern Pickaxe.",
+   "If you have an affixed golden pickaxe, the Apotheosis diamond upgrade template turns it into a diamond pickaxe at the smithing table with 4 diamonds ({{list_gear/apo_template}})."
+  ],
+  "sources": [
+   "minecraft:diamond_pickaxe",
+   "mysticalagriculture:gear/inferium_pickaxe",
+   "draconicevolution:tools/wyvern_pickaxe",
+   "apotheosis:smithing/upgrade_golden_pickaxe_to_diamond_pickaxe"
+  ]
+ },
+ "sg_pick": {
+  "de": [
+   "Erst [[silentgear:blueprint_paper]]: 4 Papier und ein blauer Farbstoff ergeben 4 Stück. Die Spitzhacke-Blaupause sind 3 Blaues Papier über 2 Stöcken.",
+   "Es geht auch ohne Zwischenschritt: Blaupause, 3 Eisenbarren und ein [[silentgear:rod]] zusammen ins Handwerksraster ergeben die Spitzhacke direkt. Die Spitze-Blaupause ist formlos aus 2 Blaues Papier, Papier und Stein, die Spitze selbst daraus plus ein Diamant ({{silent_gear/tip}})."
+  ],
+  "en": [
+   "Start with [[silentgear:blueprint_paper]]: 4 paper and a blue dye make 4. The pickaxe blueprint is 3 blueprint paper over 2 sticks.",
+   "You can skip the head step: blueprint, 3 iron ingots and a [[silentgear:rod]] together in the crafting grid make the pickaxe directly. The tip blueprint is shapeless from 2 blueprint paper, paper and stone, the tip itself is that plus one diamond ({{silent_gear/tip}})."
+  ],
+  "sources": [
+   "silentgear:blueprint_paper",
+   "silentgear:pickaxe_blueprint",
+   "silentgear:gear/pickaxe_quick",
+   "silentgear:tip_blueprint",
+   "silentgear:part/tip",
+   "silent-gear jar: data/silentgear/silentgear_materials/iron.json, diamond.json"
+  ]
+ },
+ "sg_hammer": {
+  "de": [
+   "Der Kopf braucht 6 Eisenbarren, also doppelt so viel wie eine Spitzhacke. Mit Blaupause, 6 Barren und einem Stiel im Raster bekommst du den Hammer in einem Schritt.",
+   "Verbindung und Griff gehören zu den Teilen, die den Verschleiß senken: Sehnen ergeben Flexibel IV, Leder als Griff Flexibel III ({{silent_gear/sinew}}, {{silent_gear/grip}})."
+  ],
+  "en": [
+   "The head takes 6 iron ingots, twice as many as a pickaxe. Blueprint, 6 ingots and a rod in the grid give you the hammer in one step.",
+   "Binding and grip are the parts that cut wear: sinew gives Flexible IV, leather as a grip Flexible III ({{silent_gear/sinew}}, {{silent_gear/grip}})."
+  ],
+  "sources": [
+   "silentgear:hammer_blueprint",
+   "silentgear:gear/hammer_head",
+   "silentgear:gear/hammer_quick",
+   "silent-gear jar: silentgear_materials/sinew.json (binding flexible 4), leather.json (grip flexible 3)"
+  ]
+ },
+ "ma_inferium": {
+  "de": [
+   "[[mysticalagriculture:inferium_ingot]] und [[mysticalagriculture:inferium_gemstone]] machst du formlos: Prosperiumbarren oder Prosperium-Edelstein plus 2 Inferiumessenz. Für eine Spitzhacke sind das 4 Prosperiumteile und 8 Essenz.",
+   "Das Rezept übernimmt Verzauberungen und Abnutzung der Diamantspitzhacke. Weiter geht es in Stufe 2 mit {{list_gear/ma_prudentium}}."
+  ],
+  "en": [
+   "You craft [[mysticalagriculture:inferium_ingot]] and [[mysticalagriculture:inferium_gemstone]] shapeless: a prosperity ingot or gemstone plus 2 inferium essence. One pickaxe takes 4 prosperity pieces and 8 essence.",
+   "The recipe keeps the enchantments and the wear of the diamond pickaxe. It continues in stage 2 with {{list_gear/ma_prudentium}}."
+  ],
+  "sources": [
+   "mysticalagriculture:gear/inferium_pickaxe (cucumber:shaped_transfer_damage, transfer_components)",
+   "mysticalagriculture:inferium_ingot",
+   "mysticalagriculture:inferium_gemstone",
+   "MysticalAgriculture jar: lib/ModItemTier (INFERIUM 2000, 9.0, 4.0)"
+  ]
+ },
+ "ars_sword": {
+  "de": [
+   "Beide Rezepte kosten im Apparat keine Quelle, nur die Podest-Zutaten. Verzauberungen deines Diamantschwerts bleiben erhalten.",
+   "Ein [[ars_nouveau:source_gem_block]] sind 4 Quelljuwelen, oder die Imbuement-Kammer macht ihn für 2 000 Quelle aus einem Amethystblock. Wie der Apparat steht, zeigt {{ars_nouveau/apparatus}}, den Zauber legst du am Tisch des Schreibers fest ({{ars_nouveau/scribes_table}})."
+  ],
+  "en": [
+   "Neither recipe costs source in the apparatus, only the pedestal items. The enchantments of your diamond sword stay on it.",
+   "A [[ars_nouveau:source_gem_block]] is 4 source gems, or the imbuement chamber makes one from an amethyst block for 2 000 source. {{ars_nouveau/apparatus}} shows how to set up the apparatus, and you pick the spell at the scribe's table ({{ars_nouveau/scribes_table}})."
+  ],
+  "sources": [
+   "ars_nouveau:enchanters_sword (sourceCost 0, keepNbtOfReagent)",
+   "ars_nouveau:enchanters_shield",
+   "ars_nouveau:source_gem_block",
+   "ars_nouveau:imbuement_amethyst_block"
+  ]
+ },
+ "irons_wizard": {
+  "de": [
+   "[[irons_spellbooks:arcane_essence]] kommt auf Kronwerke aus der Imbuement-Kammer: ein Buch, Lapislazuli und Glowstonestaub auf den Podesten, 300 Quelle, ergibt 3 Essenz. 8 Essenz um 1 Wolle ergeben 1 [[irons_spellbooks:magic_cloth]].",
+   "Für den Satz brauchst du 24 Stoff: Robe 8, Hose 7, Hut 5, Schuhe 4. **Nimm den Hut** (Spitze oben, unten 3 Stoff): Die Kapuze im Helmmuster ist ein anderes Teil und zählt für diese Quest nicht."
+  ],
+  "en": [
+   "On Kronwerke [[irons_spellbooks:arcane_essence]] comes from the imbuement chamber: a book, with lapis lazuli and glowstone dust on the pedestals, 300 source, gives 3 essence. 8 essence around 1 wool make 1 [[irons_spellbooks:magic_cloth]].",
+   "The full set takes 24 cloth: robes 8, leggings 7, hat 5, boots 4. **Make the hat** (point on top, 3 cloth at the bottom): the hood in the helmet shape is a different item and does not count for this quest."
+  ],
+  "sources": [
+   "kronwerke:round/arcane_essence",
+   "irons_spellbooks:magic_cloth",
+   "irons_spellbooks:wizard_helmet_hat",
+   "irons_spellbooks:wizard_helmet_hood",
+   "irons_spellbooks:wizard_chestplate",
+   "irons_spellbooks:wizard_leggings",
+   "irons_spellbooks:wizard_boots",
+   "irons_spellbooks jar: item/armor/WizardArmorItem (125 mana, 0.05 spell power)"
+  ]
+ },
+ "apo_rare": {
+  "de": [
+   "Für die Weltstufe Frontier reicht ein Affix-Gegenstand jeder Seltenheit, auch Common, in jedem der fünf Plätze: Kopf, Brust, Beine, Füße und die Hand. Den Rare-Haken setzt du, sobald du ein blaues Stück trägst.",
+   "Ein Rare hat zu den zwei Attributen und dem Effekt mit 35 Prozent Chance einen zweiten Effekt. Was du nicht brauchst, zerlegt der Bergungstisch in Material für {{list_gear/apo_template}} ({{apotheosis/salvaging}})."
+  ],
+  "en": [
+   "For the Frontier world tier any affix item counts, common included, in each of the five slots: head, chest, legs, feet and hand. Tick the Rare box once you wear a blue piece.",
+   "Besides the two attributes and the effect, a Rare has a 35 percent chance of a second effect. Whatever you do not need, the salvaging table breaks into material for {{list_gear/apo_template}} ({{apotheosis/salvaging}})."
+  ],
+  "sources": [
+   "Apotheosis jar: data/apotheosis/advancement/progression/frontier.json",
+   "Apotheosis jar: data/apotheosis/rarities/rare.json"
+  ],
+  "client": [
+   "how the world tier is chosen after Frontier unlocks"
+  ]
+ },
+ "boss_overworld": {
+  "de": [
+   "Der Ancient Remnant lässt einen [[cataclysm:ancient_metal_block]] fallen, also 9 Barren: genug für zwei Alte Speere. Altmetallbarren gibt es auch von Kobolediator, Koboleton und Wadjet.",
+   "Für den Soul Render kommt [[cataclysm:cursium_ingot]] nur von Maledictus, [[cataclysm:black_steel_ingot]] von Draugr und aus den Truhen des Frosted Prison. Bosse bekommen für jeden weiteren Spieler 60 Prozent mehr Leben, zu zweit wird der Kampf also nicht einfach halb so lang ({{bosses/remnant_kill}}, {{bosses/maledictus_kill}}, {{bosses/leviathan_kill}})."
+  ],
+  "en": [
+   "The Ancient Remnant drops a [[cataclysm:ancient_metal_block]], which is 9 ingots: enough for two Ancient Spears. Ancient metal ingots also drop from the Kobolediator, Koboleton and Wadjet.",
+   "For the Soul Render, [[cataclysm:cursium_ingot]] only comes from Maledictus, [[cataclysm:black_steel_ingot]] from Draugr and the chests of the Frosted Prison. Bosses get 60 percent more health per extra player, so a pair does not simply halve the fight ({{bosses/remnant_kill}}, {{bosses/maledictus_kill}}, {{bosses/leviathan_kill}})."
+  ],
+  "sources": [
+   "cataclysm:ancient_spear",
+   "cataclysm:soul_render",
+   "cataclysm jar: loot_table/entities/ancient_remnant.json, kobolediator.json, koboleton.json, wadjet.json, maledictus.json, the_leviathan.json, draugr.json, chests/frosted_prison_treasure.json",
+   "config/kronwerke-common.toml (boss health per player)"
+  ]
+ },
+ "backpack": {
+  "de": [
+   "Der Rucksack braucht 4 Leder, 4 Faden und eine Truhe, die [[sophisticatedbackpacks:upgrade_base]] 4 Faden, 4 Eisenbarren und 1 Leder. Das erste Upgrade ist meist das [[sophisticatedbackpacks:pickup_upgrade]]: Upgrade-Basis, klebriger Kolben, 2 Faden, 3 Redstone ({{storage/pickup}}).",
+   "Der Lederrucksack hat nur einen Upgrade-Platz, also überleg, was hinein soll. Mehr Platz bringt {{list_gear/backpack_iron}}."
+  ],
+  "en": [
+   "The backpack takes 4 leather, 4 string and a chest, the [[sophisticatedbackpacks:upgrade_base]] 4 string, 4 iron ingots and 1 leather. The usual first upgrade is the [[sophisticatedbackpacks:pickup_upgrade]]: upgrade base, sticky piston, 2 string, 3 redstone ({{storage/pickup}}).",
+   "The leather backpack has only one upgrade slot, so choose what goes in. {{list_gear/backpack_iron}} brings more room."
+  ],
+  "sources": [
+   "sophisticatedbackpacks:backpack",
+   "sophisticatedbackpacks:upgrade_base",
+   "sophisticatedbackpacks:pickup_upgrade",
+   "srv/config/sophisticatedbackpacks-server.toml (leatherBackpack upgradeSlotCount 1)"
+  ]
+ },
+ "ultimine": {
+  "de": [
+   "Hak die Quest selbst ab, sobald du eine Ader auf einmal abgebaut hast. Mehr als 128 Blöcke nimmt Ultimine nicht mit, und jeder Block kostet 20-mal den normalen Hunger.",
+   "Die Kronwerke-Verzauberung **Unermüdlich** gibt es am Zaubertisch für Abbauwerkzeuge: Mit ihr kostet Ultimine gar keinen Hunger. Mehr Tricks zeigt {{comfort/ultimine}}."
+  ],
+  "en": [
+   "Tick the quest yourself once you have mined a vein at once. Ultimine takes no more than 128 blocks, and every block costs 20 times the normal hunger.",
+   "The Kronwerke enchantment **Tireless** comes from the enchanting table for mining tools: with it Ultimine costs no hunger at all. {{comfort/ultimine}} shows more tricks."
+  ],
+  "sources": [
+   "config/ftbultimine-server.snbt (max_blocks 128, exhaustion_per_block 20)",
+   "kubejs/data/kronwerke/enchantment/tireless.json",
+   "kubejs/data/minecraft/tags/enchantment/in_enchanting_table.json",
+   "kubejs/assets/kronwerke/lang/de_de.json"
+  ]
+ },
+ "mining_dim": {
+  "de": [
+   "[[naturesaura:infused_iron]] kommt vom Natürlichen Altar, [[create:andesite_casing]] aus Andesitlegierung auf entrindetem Holz. Das Tor baust du wie ein Netherportal: innen 2 bis 21 breit und 3 bis 21 hoch, die Ecken sind egal, also reichen **10 Grubenrahmen**.",
+   "Rechtsklick mit einem [[ars_nouveau:source_gem]] auf einen Rahmen zündet es, das Juwel ist dann weg. Die Farmwelt ist ein eigener Server und wird alle drei Tage neu erzeugt, lass dort nichts liegen ({{list_dimensions/d_mining}})."
+  ],
+  "en": [
+   "[[naturesaura:infused_iron]] comes from the natural altar, [[create:andesite_casing]] from andesite alloy on stripped wood. Build the gate like a Nether portal: inside 2 to 21 wide and 3 to 21 high, corners do not matter, so **10 Mine Frames** are enough.",
+   "Right-click a frame with a [[ars_nouveau:source_gem]] to light it; the gem is used up. The farm world is a server of its own and is made anew every three days, so leave nothing there ({{list_dimensions/d_mining}})."
+  ],
+  "sources": [
+   "kronwerke:grubenrahmen",
+   "naturesaura:altar/infused_iron",
+   "create:item_application/andesite_casing_from_log",
+   "core: portal/PortalShape.java (2..21 wide, 3..21 high, corners free)",
+   "core: portal/Ignite.java (source gem used up)",
+   "docs/STAGES.md (mining world reset every three days)"
+  ]
+ },
+ "irons_ring": {
+  "de": [
+   "Als Kern des [[irons_spellbooks:arcane_ingot]] geht jeder Eisen-, Kupfer- oder Goldbarren, nimm also Kupfer. Für den Ring brauchst du 4 Barren, also 32 [[irons_spellbooks:arcane_essence]] aus der Imbuement-Kammer.",
+   "Die gleichen Barren brauchst du für den Frosted Helve von {{list_gear/irons_ice_staff}} und später für Upgrade-Kugeln. Siehe {{irons_spells/arcane_ingot}} und {{irons_spells/mana_ring}}."
+  ],
+  "en": [
+   "Any iron, copper or gold ingot works as the core of an [[irons_spellbooks:arcane_ingot]], so use copper. The ring takes 4 ingots, that is 32 [[irons_spellbooks:arcane_essence]] from the imbuement chamber.",
+   "You need the same ingots for the Frosted Helve of {{list_gear/irons_ice_staff}} and later for upgrade orbs. See {{irons_spells/arcane_ingot}} and {{irons_spells/mana_ring}}."
+  ],
+  "sources": [
+   "irons_spellbooks:arcane_ingot",
+   "irons_spellbooks jar: tags/item/arcane_ingot_base.json",
+   "irons_spellbooks:mana_ring",
+   "kronwerke:round/arcane_essence"
+  ]
+ },
+ "irons_ice_staff": {
+  "de": [
+   "Der [[irons_spellbooks:permafrost_shard]] hat kein Rezept, er liegt nur in der Beutetruhe der Kapitänskajüte. Den Helve legst du aus 4 [[irons_spellbooks:frozen_bone]] und 3 Arcane Ingots diagonal.",
+   "Such das Schiff gezielt, bevor du Barren für den Helve verbrauchst ({{irons_spells/icebreaker}}, {{irons_spells/ice_staff}})."
+  ],
+  "en": [
+   "The [[irons_spellbooks:permafrost_shard]] has no recipe; it is only in the loot chest of the captain's quarters. The helve is 4 [[irons_spellbooks:frozen_bone]] and 3 arcane ingots laid out diagonally.",
+   "Find the ship first, before you spend ingots on the helve ({{irons_spells/icebreaker}}, {{irons_spells/ice_staff}})."
+  ],
+  "sources": [
+   "irons_spellbooks:ice_staff",
+   "irons_spellbooks:frosted_helve",
+   "irons_spellbooks jar: loot_table/chests/impaled_icebreaker/captain_quarters.json"
+  ]
+ },
+ "sg_katana": {
+  "de": [
+   "Die Katana-Blaupause sind 3 Blaues Papier und 1 Stock. Blaupause, 3 Material und ein Stiel im Raster ergeben das Katana in einem Schritt.",
+   "Die Klinge mischt bis zu drei Materialien, die Schwertklinge nur zwei, die Dolchklinge eins. Wie gemischte Materialien wirken, zeigt {{silent_gear/mix}}."
+  ],
+  "en": [
+   "The katana blueprint is 3 blueprint paper and 1 stick. Blueprint, 3 material and a rod in the grid make the katana in one step.",
+   "The blade mixes up to three materials, the sword blade only two, the dagger blade one. {{silent_gear/mix}} shows how mixed materials work."
+  ],
+  "sources": [
+   "silentgear:katana_blueprint",
+   "silentgear:gear/katana_head",
+   "silentgear:gear/katana_quick",
+   "silentgear:gear/sword_head",
+   "silentgear:gear/dagger_head"
+  ]
+ },
+ "apo_template": {
+  "de": [
+   "Die drei Bergungsmaterialien bekommst du, wenn du Affix-Ausrüstung am Bergungstisch zerlegst: Common gibt Mysterious Scrap Metal, Uncommon Timeworn Fabric, Rare Luminous Crystal Shard. [[apotheosis:gem_fused_slate]] sind 8 Tiefenschiefer um Edelsteinstaub, das ergibt 8.",
+   "Eine Vorlage braucht 1 Material oben, 2 Schiefer und 4 Stein. Die Stufen gehen Stein, Eisen, Gold, Diamant, jeweils mit 4 Stück des neuen Materials ({{apotheosis/iron_template}}, {{apotheosis/diamond_template}})."
+  ],
+  "en": [
+   "You get the three salvage materials by breaking affix gear at the salvaging table: common gives Mysterious Scrap Metal, uncommon Timeworn Fabric, rare Luminous Crystal Shard. [[apotheosis:gem_fused_slate]] is 8 deepslate around gem dust and makes 8.",
+   "A template takes 1 material on top, 2 slate and 4 stone. The steps go stone, iron, gold, diamond, each with 4 of the new material ({{apotheosis/iron_template}}, {{apotheosis/diamond_template}})."
+  ],
+  "sources": [
+   "apotheosis:iron_upgrade_smithing_template",
+   "apotheosis:gold_upgrade_smithing_template",
+   "apotheosis:diamond_upgrade_smithing_template",
+   "apotheosis:gem_fused_slate",
+   "apotheosis:smithing/upgrade_stone_pickaxe_to_iron_pickaxe",
+   "Apotheosis jar: data/apotheosis/rarities/*.json (material)"
+  ]
+ },
+ "sg_shield": {
+  "de": [
+   "Blaupause, 2 Material und ein Stiel im Raster ergeben den Schild direkt. Weil die Platte nur zwei Materialien braucht, ist ein Diamantschild billig.",
+   "Reparaturkits und wie sie funktionieren erklärt {{silent_gear/repair_kit}}."
+  ],
+  "en": [
+   "Blueprint, 2 material and a rod in the grid make the shield directly. Since the plate takes only two materials, a diamond shield is cheap.",
+   "{{silent_gear/repair_kit}} explains repair kits and how they work."
+  ],
+  "sources": [
+   "silentgear:shield_blueprint",
+   "silentgear:gear/shield_plate",
+   "silentgear:gear/shield_quick"
+  ]
+ },
+ "s2": {
+  "de": [
+   "Hak die Quest ab, sobald Stufe 2 offen ist. Der Nether läuft auf einem eigenen Server: Züge und Kontraptionen kommen nicht durch das Portal, nimm deine Ausrüstung also selbst mit.",
+   "Netherit, Purpur-Eisen und Lohengold holst du dort, die Werkbänke dafür können in der Oberwelt stehen."
+  ],
+  "en": [
+   "Tick this off once stage 2 is open. The Nether runs on a server of its own: trains and contraptions do not pass its portal, so carry your gear yourself.",
+   "Netherite, crimson iron and blaze gold come from there; the benches for them can stay in the overworld."
+  ],
+  "sources": [
+   "docs/STAGES.md (Stage 2)",
+   "docs/SERVER.md"
+  ]
+ },
+ "v_netherite": {
+  "de": [
+   "Die Netherit-Vorlage kopierst du wie in Vanilla mit 7 Diamanten und Netherrack. Für Silent Gear machst du daraus die [[silentgear:coating_smithing_template]]: Netherit-Vorlage, Blaues Papier und ein Bort formlos.",
+   "Mit ihr legst du am Schmiedetisch einen Netheritbarren als Beschichtung auf ein Silent-Gear-Werkzeug: Es wird feuerfest und gewinnt rund 30 Prozent Haltbarkeit ({{nether/netherite}})."
+  ],
+  "en": [
+   "You copy the netherite template the vanilla way with 7 diamonds and netherrack. For Silent Gear turn it into the [[silentgear:coating_smithing_template]]: netherite template, blueprint paper and a bort, shapeless.",
+   "With it the smithing table puts a netherite ingot on a Silent Gear tool as a coating: it becomes fireproof and gains about 30 percent durability ({{nether/netherite}})."
+  ],
+  "sources": [
+   "silentgear:coating_smithing_template",
+   "silentgear:smithing/coating/pickaxe",
+   "silent-gear jar: silentgear_materials/netherite.json (coating: durability x1.3 +2, fireproof)"
+  ]
+ },
+ "sg_crimson": {
+  "de": [
+   "Purpur-Eisenerz steckt im ganzen Nether von 10 Blöcken über dem Boden bis 10 unter der Decke, als Netherrack- und als Schwarzstein-Erz. Ein Barren kommt aus [[silentgear:raw_crimson_iron]] im Ofen oder schneller im Schmelzofen.",
+   "Hart steigert das Abbautempo, je mehr das Werkzeug abgenutzt ist. Purpur-Eisen ist auch die Zutat für {{list_gear/sg_crimson_steel}}."
+  ],
+  "en": [
+   "Crimson iron ore is spread through the whole Nether from 10 blocks above the floor to 10 below the ceiling, as netherrack and as blackstone ore. An ingot comes from [[silentgear:raw_crimson_iron]] in a furnace, faster in a blast furnace.",
+   "Hard raises mining speed the more worn the tool is. Crimson iron is also the base of {{list_gear/sg_crimson_steel}}."
+  ],
+  "sources": [
+   "silent-gear jar: worldgen/placed_feature/crimson_iron_ore.json, configured_feature/crimson_iron_ore.json",
+   "silentgear:crimson_iron_raw_ore_blasting",
+   "silent-gear jar: silentgear_materials/crimson_iron.json"
+  ]
+ },
+ "sg_crimson_steel": {
+  "de": [
+   "An der Werkbank kostet ein Barren 4 Purpur-Eisen und 2 Lohenruten. Die Alloy Forge (4 Purpur-Stahl, 3 Schwarzstein, 1 Messinggehäuse) macht aus einem Block, also 9 Barren, und 2 Lohenruten gleich 3: Ab dem ersten Werkzeug lohnt sie sich ({{silent_gear/alloy_forge}}).",
+   "In der Forge kostet [[silentgear:blaze_gold_ingot]] nur 2 Lohenstaub statt 4. Flammenwächter wirkt nur, wenn du den ganzen Satz trägst."
+  ],
+  "en": [
+   "At the crafting table one ingot costs 4 crimson iron and 2 blaze rods. The alloy forge (4 crimson steel, 3 blackstone, 1 brass casing) turns a block, that is 9 ingots, and 2 blaze rods into 3: it pays off from the first tool ({{silent_gear/alloy_forge}}).",
+   "In the forge a [[silentgear:blaze_gold_ingot]] costs only 2 blaze powder instead of 4. Flame Ward only works when you wear the whole set."
+  ],
+  "sources": [
+   "silentgear:crimson_steel_ingot",
+   "silentgear:alloying/metal/crimson_steel_ingot",
+   "silentgear:alloy_forge",
+   "silentgear:alloying/metal/blaze_gold_ingot",
+   "silentgear:blaze_gold_ingot",
+   "lang trait.silentgear.flame_ward.desc"
+  ]
+ },
+ "mek_paxel": {
+  "de": [
+   "**Achtung:** Unten kommen keine Stöcke hin, sondern 2 [[minecraft:iron_ingot]]. Das gilt für alle Stahlwerkzeuge von Mekanism Tools, auch die Spitzhacke, Axt und Schaufel, die du für die Paxel brauchst.",
+   "Für die drei Werkzeuge sind das 7 Stahl und 6 Eisen, dazu 2 Eisen für die Paxel. Stahl machst du in der Infusionsanlage ({{mekanism/steel}}, {{mekanism/paxel}})."
+  ],
+  "en": [
+   "**Careful:** the bottom takes no sticks but 2 [[minecraft:iron_ingot]]. That goes for every Mekanism Tools steel tool, including the pickaxe, axe and shovel you need for the paxel.",
+   "The three tools take 7 steel and 6 iron, plus 2 iron for the paxel. Steel comes from the metallurgic infuser ({{mekanism/steel}}, {{mekanism/paxel}})."
+  ],
+  "sources": [
+   "mekanismtools:steel/tools/paxel",
+   "mekanismtools:steel/tools/pickaxe",
+   "srv/config/Mekanism/tools-materials-startup.toml (steel)"
+  ]
+ },
+ "mek_jetpack": {
+  "de": [
+   "Der [[mekanism:basic_chemical_tank]] sind 4 Grundlegierungen und 4 Osmiumbarren. Den Wasserstoff macht der [[mekanism:electrolytic_separator]] aus Wasser; der Jetpack nimmt höchstens 16 mB pro Tick auf, eine volle Füllung von 24 000 mB dauert also 75 Sekunden.",
+   "Hak die Quest ab, wenn du geflogen bist. Siehe {{mekanism/jetpack}} und {{mekanism/gas_hydrogen}}."
+  ],
+  "en": [
+   "The [[mekanism:basic_chemical_tank]] is 4 basic alloys and 4 osmium ingots. The [[mekanism:electrolytic_separator]] makes the hydrogen from water; the jetpack takes at most 16 mB per tick, so a full 24 000 mB fill takes 75 seconds.",
+   "Tick the quest once you have flown. See {{mekanism/jetpack}} and {{mekanism/gas_hydrogen}}."
+  ],
+  "sources": [
+   "mekanism:jetpack",
+   "mekanism:chemical_tank/basic",
+   "mekanism:electrolytic_separator",
+   "srv/config/Mekanism/gear.toml [jetpack] capacity 24000, fillRate 16"
+  ],
+  "client": [
+   "where exactly the jetpack is filled (tank slot or separator slot)"
+  ]
+ },
+ "jdt_ferricore": {
+  "de": [
+   "Es braucht einen ganzen [[minecraft:iron_block]] neben [[justdirethings:gooblock_tier1]]: Nach etwa 2 Minuten wird er zu Rohem Ferricore-Erz, das du abbaust und im Ofen schmilzt ({{dire_things/goo}}, {{dire_things/ferricore_raw}}).",
+   "Das Erzadern-Upgrade ist ein Blank Upgrade zwischen zwei Eisenspitzhacken ({{dire_things/oreminer}}). Upgrades bleiben drin, wenn du später auf Blazegold aufwertest."
+  ],
+  "en": [
+   "It takes a whole [[minecraft:iron_block]] next to [[justdirethings:gooblock_tier1]]: after about 2 minutes it becomes raw ferricore ore, which you mine and smelt ({{dire_things/goo}}, {{dire_things/ferricore_raw}}).",
+   "The ore miner upgrade is a blank upgrade between two iron pickaxes ({{dire_things/oreminer}}). Upgrades stay when you later move up to Blazegold."
+  ],
+  "sources": [
+   "justdirethings:raw_ferricore_ore-goospread (iron_block, tier 1, 2400 ticks)",
+   "justdirethings:ferricore_ingot_smelted",
+   "justdirethings:upgrade_oreminer",
+   "justdirethings jar: tools/utils/GooTier (FERRICORE 500, 7.0, 2.5)"
+  ]
+ },
+ "jdt_blazegold": {
+  "de": [
+   "Blazegold entsteht wie Ferricore, nur aus einem [[minecraft:gold_block]] neben [[justdirethings:gooblock_tier2]]. Eine Vorlage kopierst du mit 2 Blazegold zu zweien, das spart je 3 Barren.",
+   "Die [[justdirethings:portalgun]] sind 5 Blazegold und ein Enderauge ({{dire_things/template}}, {{dire_things/portal_gun}})."
+  ],
+  "en": [
+   "Blazegold forms like ferricore, from a [[minecraft:gold_block]] next to [[justdirethings:gooblock_tier2]]. You copy a template with 2 blazegold into two, which saves 3 ingots each.",
+   "The [[justdirethings:portalgun]] is 5 blazegold and an eye of ender ({{dire_things/template}}, {{dire_things/portal_gun}})."
+  ],
+  "sources": [
+   "justdirethings:raw_blazegold_ore-goospread (gold_block, tier 2)",
+   "justdirethings:template_blazegold",
+   "justdirethings:template_blazegold-duplicate",
+   "justdirethings:portalgun"
+  ]
+ },
+ "bot_manasteel": {
+  "de": [
+   "Auf Kronwerke wird Manastahl aus [[naturesaura:infused_iron]] gemacht, nicht aus Eisen: im Manapool für 3 000 Mana, oder im Ritual des Waldes (4 Infundiertes Eisen, 2 [[botania:livingwood_twig]], Manadiamant, Goldblatt um einen Eichensetzling) gleich 4 Barren.",
+   "Die [[botania:mana_tablet]] (8 Lebendstein um ein Manajuwel) füllst du im Pool, sie repariert die Ausrüstung dann aus dem Inventar ({{botania_runes/manasteel_gear}})."
+  ],
+  "en": [
+   "On Kronwerke manasteel is made from [[naturesaura:infused_iron]], not iron: in the mana pool for 3 000 mana, or in the ritual of the forest (4 infused iron, 2 [[botania:livingwood_twig]], mana diamond, gold leaf around an oak sapling) as 4 ingots at once.",
+   "Fill the [[botania:mana_tablet]] (8 livingrock around a mana gem) in the pool; it then repairs the gear from your inventory ({{botania_runes/manasteel_gear}})."
+  ],
+  "sources": [
+   "kronwerke:magic/manasteel_from_infused_iron",
+   "kronwerke:magic/manasteel_ritual",
+   "botania:manasteel_pickaxe",
+   "botania:mana_tablet",
+   "botania jar: common/item/BotaniaItemTiers, BotaniaArmorMaterials"
+  ]
+ },
+ "bot_terra": {
+  "de": [
+   "Ein [[botania:terrasteel_ingot]] braucht auf der Agglomerationsplatte Manastahl, Manaperle und Manadiamant und 500 000 Mana. Die [[botania:terra_blade]] sind 2 Barren und ein Zweig, der [[botania:terra_shatterer]] 4 Barren, eine Manatafel und 2 Zweige.",
+   "Der [[botania:terra_truncator]] ist 4 Barren, Glowstone und 2 Zweige. Die Rüstung wertet Manastahlteile mit Runen auf ({{botania_runes/terrasteel}}, {{botania_runes/terra_armor}}, {{botania_runes/terra_tools}})."
+  ],
+  "en": [
+   "A [[botania:terrasteel_ingot]] takes manasteel, a mana pearl and a mana diamond on the agglomeration plate, plus 500 000 mana. The [[botania:terra_blade]] is 2 ingots and a twig, the [[botania:terra_shatterer]] 4 ingots, a mana tablet and 2 twigs.",
+   "The [[botania:terra_truncator]] is 4 ingots, glowstone and 2 twigs. The armour upgrades manasteel pieces with runes ({{botania_runes/terrasteel}}, {{botania_runes/terra_armor}}, {{botania_runes/terra_tools}})."
+  ],
+  "sources": [
+   "botania:terrestrial_agglomeration_plate/terrasteel_ingot",
+   "botania:terra_blade",
+   "botania:terra_shatterer",
+   "botania:terra_truncator",
+   "botania:terrasteel_helmet"
+  ]
+ },
+ "ma_prudentium": {
+  "de": [
+   "Das Muster ist dasselbe wie bei Inferium, mit dem Inferiumwerkzeug in der Mitte, und Abnutzung und Verzauberungen wandern mit. Den [[mysticalagriculture:tinkering_table]] baust du aus 7 Stein und 2 [[mysticalagriculture:soulium_dust]].",
+   "Tertium öffnet in Stufe 3, Imperium in Stufe 4, Supremium in Stufe 5 ({{list_gear/ma_supremium}})."
+  ],
+  "en": [
+   "The pattern is the same as for inferium, with the inferium tool in the middle, and wear and enchantments carry over. Build the [[mysticalagriculture:tinkering_table]] from 7 stone and 2 [[mysticalagriculture:soulium_dust]].",
+   "Tertium opens in stage 3, imperium in stage 4, supremium in stage 5 ({{list_gear/ma_supremium}})."
+  ],
+  "sources": [
+   "mysticalagriculture:gear/prudentium_pickaxe",
+   "mysticalagriculture:tinkering_table",
+   "MysticalAgriculture jar: lib/ModItemTier",
+   "kubejs/data/kronwerke/chapters/stages/stage3.json, stage4.json, stage5.json"
+  ]
+ },
+ "aether_gloves": {
+  "de": [
+   "Handschuhe sind nur 2 Stück Material nebeneinander, zum Beispiel 2 Eisenbarren oder 2 [[aether:zanite_gemstone]]. Sie sitzen im Schmuckslot, du brauchst also keine Rüstung dafür abzulegen.",
+   "Abgenutzte Handschuhe reparierst du am Altar des Aether ({{aether/gloves}}, {{aether/zanite}})."
+  ],
+  "en": [
+   "Gloves are just 2 pieces of material side by side, for example 2 iron ingots or 2 [[aether:zanite_gemstone]]. They sit in an accessory slot, so you take off no armour for them.",
+   "Repair worn gloves at the Aether altar ({{aether/gloves}}, {{aether/zanite}})."
+  ],
+  "sources": [
+   "aether:iron_gloves",
+   "aether:zanite_gloves",
+   "aether:iron_gloves_repairing",
+   "kubejs/data/kronwerke/chapters/stages/stage2.json (aether:the_aether)"
+  ]
+ },
+ "irons_anvil": {
+  "de": [
+   "Auf Kronwerke braucht der [[irons_spellbooks:arcane_anvil]] 3 Quelljuwelenblöcke, einen Diamanten, einen Amboss und 2 polierten Tiefenschiefer. Die leere [[irons_spellbooks:upgrade_orb]] sind 4 Arcane Ingots, 4 [[irons_spellbooks:cinder_essence]] und 1 Mithril.",
+   "Mithrilerz liegt in der Oberwelt zwischen Y -63 und -38, Roherz im Schmelzofen gibt Mithril-Schrott, 4 Schrott einen Barren. Eine Schulkugel sind 8 Runen um die leere Kugel, die Feuerrune 8 Lohenruten um eine leere Rune ({{irons_spells/anvil}}, {{irons_spells/runes}})."
+  ],
+  "en": [
+   "On Kronwerke the [[irons_spellbooks:arcane_anvil]] takes 3 source gem blocks, a diamond, an anvil and 2 polished deepslate. The empty [[irons_spellbooks:upgrade_orb]] is 4 arcane ingots, 4 [[irons_spellbooks:cinder_essence]] and 1 mithril.",
+   "Mithril ore is in the overworld between Y -63 and -38; raw ore in a blast furnace gives mithril scrap, 4 scrap an ingot. A school orb is 8 runes around the empty orb, the fire rune 8 blaze rods around a blank rune ({{irons_spells/anvil}}, {{irons_spells/runes}})."
+  ],
+  "sources": [
+   "irons_spellbooks:arcane_anvil",
+   "irons_spellbooks:upgrade_orb",
+   "irons_spellbooks:fire_upgrade_orb",
+   "irons_spellbooks:fire_rune",
+   "irons_spellbooks:mithril_scrap_from_ore",
+   "irons_spellbooks:mithril_ingot_from_scrap",
+   "irons_spellbooks jar: worldgen/placed_feature/ore_mithril_placement.json, tags/item/fire_focus.json"
+  ]
+ },
+ "boss_nether": {
+  "de": [
+   "Für einen ganzen Ignitium-Satz brauchst du 4 Vorlagen, 4 Barren und 4 Netheritteile; eine Vorlage sind 4 Lohenstaub, 4 Netherziegelblöcke und eine Netherit-Vorlage. Der Incinerator kostet zusätzlich ein Netheritschwert.",
+   "Die Infernal Forge ist später die Basis der Void Forge ({{list_gear/boss_end}}). Bosse bekommen 60 Prozent mehr Leben pro weiterem Spieler ({{nether/ig_kill}}, {{nether/ig_gear}}, {{nether/nm_kill}})."
+  ],
+  "en": [
+   "A full Ignitium set takes 4 templates, 4 ingots and 4 netherite pieces; one template is 4 blaze powder, 4 nether brick blocks and a netherite template. The Incinerator also costs a netherite sword.",
+   "The Infernal Forge is later the base of the Void Forge ({{list_gear/boss_end}}). Bosses get 60 percent more health per extra player ({{nether/ig_kill}}, {{nether/ig_gear}}, {{nether/nm_kill}})."
+  ],
+  "sources": [
+   "cataclysm:ignitium_upgrade_smithing_template",
+   "cataclysm:smithing/ignitium_helmet",
+   "cataclysm:the_incinerator",
+   "cataclysm:bulwark_of_the_flame",
+   "cataclysm jar: loot_table/entities/ignis.json, netherite_monstrosity.json",
+   "cataclysm:weapon_infusion/void_forge"
+  ]
+ },
+ "backpack_iron": {
+  "de": [
+   "Kupfer: 8 Kupferbarren um den Lederrucksack. **Eisen geht auf Kronwerke mit [[create:iron_sheet]], nicht mit Barren:** 8 Eisenbleche um den Lederrucksack oder 4 um den Kupferrucksack.",
+   "Inhalt und Upgrades bleiben beim Aufwerten erhalten. Der eiserne Rucksack hat 2 Upgrade-Plätze."
+  ],
+  "en": [
+   "Copper: 8 copper ingots around the leather backpack. **On Kronwerke iron takes [[create:iron_sheet]], not ingots:** 8 iron sheets around the leather backpack or 4 around the copper backpack.",
+   "Contents and upgrades stay when you upgrade. The iron backpack has 2 upgrade slots."
+  ],
+  "sources": [
+   "sophisticatedbackpacks:copper_backpack",
+   "kronwerke:round/sophisticatedbackpacks_iron_backpack",
+   "kronwerke:round/sophisticatedbackpacks_iron_backpack_from_copper",
+   "srv/config/sophisticatedbackpacks-server.toml"
+  ]
+ },
+ "rel_phoenix": {
+  "de": [
+   "Die [[reliquary:angelic_feather]] ist formlos aus Feder, Nebulous Heart, Bat Wing und Fertile Essence. Eine [[reliquary:angelheart_vial]] braucht einen Milcheimer, eine Infernal Claw, 2 Fertile Essence und 5 Glasscheiben, für drei Fläschchen also 3 Milcheimer.",
+   "Wo die Mob-Zutaten herkommen, zeigt {{reliquary/angelic_feather}}, den Rest {{reliquary/phoenix_down}}."
+  ],
+  "en": [
+   "The [[reliquary:angelic_feather]] is shapeless from a feather, a Nebulous Heart, a Bat Wing and a Fertile Essence. An [[reliquary:angelheart_vial]] takes a milk bucket, an Infernal Claw, 2 Fertile Essence and 5 glass panes, so three vials need 3 milk buckets.",
+   "{{reliquary/angelic_feather}} shows where the mob ingredients come from, {{reliquary/phoenix_down}} the rest."
+  ],
+  "sources": [
+   "reliquary:phoenix_down",
+   "reliquary:angelic_feather",
+   "reliquary:angelheart_vial"
+  ]
+ },
+ "bee_helmet": {
+  "de": [
+   "Ein Bienennest bekommst du nur mit Behutsamkeit, sonst fällt nichts. Der Helm braucht einen Diamanthelm, Eisen reicht nicht ({{bees/bee_helmet}})."
+  ],
+  "en": [
+   "You only get a bee nest with Silk Touch; otherwise it drops nothing. The helmet needs a diamond helmet, iron will not do ({{bees/bee_helmet}})."
+  ],
+  "sources": [
+   "productivebees:bee_nest_helmet"
+  ]
+ },
+ "s3": {
+  "de": [
+   "Hak die Quest ab, sobald Stufe 3 offen ist. Die drei Abbaumaschinen findest du hier als {{list_gear/mining_gadget}}, {{list_gear/drilling}} und unter {{mekanism_advanced/miner}}."
+  ],
+  "en": [
+   "Tick this off once stage 3 is open. The three mining machines are here as {{list_gear/mining_gadget}} and {{list_gear/drilling}}, and under {{mekanism_advanced/miner}}."
+  ],
+  "sources": [
+   "docs/STAGES.md (Stage 3)"
+  ]
+ },
+ "mek_obsidian": {
+  "de": [
+   "Der Zerkleinerer macht aus einem Obsidian 4 [[create:powdered_obsidian]]. Die Metallurgische Infusionsanlage macht daraus mit 10 mB Diamant [[mekanism:dust_refined_obsidian]], und der Osmium Kompressor presst den Staub mit Osmium zum Barren, **nicht der Ofen**.",
+   "Werkzeuge brauchen Stöcke, die Rüstung hat zusätzlich 20 Prozent Rückstoßwiderstand ({{mekanism_advanced/refined_obsidian}}, {{mekanism_advanced/ro_armor}})."
+  ],
+  "en": [
+   "The crusher turns one obsidian into 4 [[create:powdered_obsidian]]. The metallurgic infuser makes [[mekanism:dust_refined_obsidian]] from that with 10 mB of diamond, and the osmium compressor presses the dust with osmium into an ingot, **not the furnace**.",
+   "The tools take sticks; the armour also has 20 percent knockback resistance ({{mekanism_advanced/refined_obsidian}}, {{mekanism_advanced/ro_armor}})."
+  ],
+  "sources": [
+   "mekanism:crushing/obsidian_to_dust",
+   "mekanism:processing/refined_obsidian/dust/from_obsidian_dust",
+   "mekanism:processing/refined_obsidian/ingot/from_dust",
+   "mekanismtools:refined_obsidian/tools/pickaxe",
+   "srv/config/Mekanism/tools-materials-startup.toml (refined_obsidian)"
+  ]
+ },
+ "mek_disassembler": {
+  "de": [
+   "Er fasst 1 000 000 FE, lädt mit 5 000 FE pro Tick und schlägt je nach Ladung für 4 bis 20 Schaden. **Den Aderabbau-Modus gibt es auf diesem Server nicht**, er ist in der Mekanism-Konfiguration aus; für Adern nimm Ultimine.",
+   "Behalte ihn: Er ist die Mitte des {{list_gear/meka_tool}} ({{mekanism_advanced/disassembler}})."
+  ],
+  "en": [
+   "It holds 1 000 000 FE, charges at 5 000 FE per tick and hits for 4 to 20 damage depending on charge. **The vein mining mode does not exist on this server**; it is off in the Mekanism config, so use Ultimine for veins.",
+   "Keep it: it is the centre of the {{list_gear/meka_tool}} ({{mekanism_advanced/disassembler}})."
+  ],
+  "sources": [
+   "mekanism:atomic_disassembler",
+   "srv/config/Mekanism/gear.toml [atomic_disassembler] maxEnergy, chargeRate, minDamage 4, maxDamage 20, veinMining false",
+   "mekanism:meka_tool"
+  ]
+ },
+ "mek_teleporter": {
+  "de": [
+   "Der [[mekanism:teleportation_core]] braucht auf Kronwerke 4 [[botania:mana_pearl]], dazu 2 Atomlegierungen, 2 Goldbarren und einen Diamanten; Manaperlen macht der Manapool aus Enderperlen über einem Messinggehäuse. Am Ziel muss ein fertiger Teleporter mit Rahmen auf derselben Frequenz stehen.",
+   "Nether und Farmwelt sind eigene Server, dorthin kommst du damit nicht ({{mekanism_advanced/teleporter}}, {{mekanism_advanced/portable_teleporter}})."
+  ],
+  "en": [
+   "On Kronwerke the [[mekanism:teleportation_core]] takes 4 [[botania:mana_pearl]], plus 2 atomic alloys, 2 gold ingots and a diamond; the mana pool makes mana pearls from ender pearls over a brass casing. The destination needs a finished teleporter with its frame on the same frequency.",
+   "The Nether and the farm world are servers of their own, so it cannot take you there ({{mekanism_advanced/teleporter}}, {{mekanism_advanced/portable_teleporter}})."
+  ],
+  "sources": [
+   "mekanism:portable_teleporter",
+   "mekanism:teleportation_core",
+   "kronwerke:magic/mana_pearl",
+   "docs/SERVER.md"
+  ],
+  "client": [
+   "that a portable teleporter cannot reach a teleporter on another server"
+  ]
+ },
+ "jdt_celestigem": {
+  "de": [
+   "Ein [[minecraft:diamond_block]] neben [[justdirethings:gooblock_tier3]] wird nach etwa 4 Minuten zu Rohem Celestigem-Erz. Die Vorlage sind wieder 5 Celestigem um ein Blank Upgrade und lässt sich mit 2 Celestigem kopieren.",
+   "Der [[justdirethings:voidshift_wand]] braucht einen Blazejet Wand, ein Celestigem und ein Blazegold ({{dire_things/template}})."
+  ],
+  "en": [
+   "A [[minecraft:diamond_block]] next to [[justdirethings:gooblock_tier3]] turns into raw celestigem ore after about 4 minutes. The template is again 5 celestigem around a blank upgrade and can be copied with 2 celestigem.",
+   "The [[justdirethings:voidshift_wand]] takes a Blazejet Wand, a celestigem and a blazegold ({{dire_things/template}})."
+  ],
+  "sources": [
+   "justdirethings:raw_celestigem_ore-goospread (diamond_block, tier 3, 4800 ticks)",
+   "justdirethings:template_celestigem",
+   "justdirethings:template_celestigem-duplicate",
+   "justdirethings:voidshift_wand",
+   "justdirethings jar: GooTier (CELESTIGEM 1561, 10.0, 4.0)"
+  ]
+ },
+ "bot_elementium": {
+  "de": [
+   "Im Elfenportal geben 2 Manastahlbarren 1 [[botania:elementium_ingot]], und 1 Barren plus 1 Block geben 5, das ist dasselbe Verhältnis. Werkzeuge nehmen [[botania:dreamwood_twig]] statt Lebeholzzweige.",
+   "Die Rüstung hat dieselben Werte wie Manastahl ({{alfheim/elementium}}, {{alfheim/elementium_gear}}, {{alfheim/elementium_armor}})."
+  ],
+  "en": [
+   "In the elven portal 2 manasteel ingots give 1 [[botania:elementium_ingot]], and 1 ingot plus 1 block give 5, which is the same ratio. Tools use [[botania:dreamwood_twig]] instead of livingwood twigs.",
+   "The armour has the same values as manasteel ({{alfheim/elementium}}, {{alfheim/elementium_gear}}, {{alfheim/elementium_armor}})."
+  ],
+  "sources": [
+   "botania:elven_trade/elementium_ingot",
+   "botania:elven_trade/elementium_ingot_from_mixed_input",
+   "botania:elementium_pickaxe",
+   "botania jar: BotaniaArmorMaterials"
+  ]
+ },
+ "malum": {
+  "de": [
+   "Die Sense setzt du aus einer Groben Sense, 4 Seelenstahl, 2 Hex Ash und 4 [[malum:refined_soulstone]] mit 16 Earthen, 8 Wicked und 8 Arcane Spirits auf dem Altar zusammen.",
+   "Jedes Rüstungsteil ist ein Eisenteil mit 6 Seelenstahlplatten, 4 Refined Soulstone und 8 Twisted Rock, dazu dieselben Geister. Siehe {{malum/soul_steel}} und {{malum/soul_scythe}}."
+  ],
+  "en": [
+   "You make the scythe on the altar from a crude scythe, 4 soulstained steel, 2 hex ash and 4 [[malum:refined_soulstone]], with 16 earthen, 8 wicked and 8 arcane spirits.",
+   "Every armour piece is an iron piece with 6 soulstained steel plating, 4 refined soulstone and 8 twisted rock, plus the same spirits. See {{malum/soul_steel}} and {{malum/soul_scythe}}."
+  ],
+  "sources": [
+   "malum:spirit_infusion/soul_stained_steel_ingot",
+   "malum:spirit_infusion/soul_stained_steel_scythe",
+   "malum:spirit_infusion/soul_stained_steel_helmet"
+  ]
+ },
+ "aether_gravitite": {
+  "de": [
+   "Gravitit-Erz wird am Altar in 750 Ticks zu Verzaubertem Gravitit, erst damit baust du. Werkzeuge brauchen [[aether:skyroot_stick]] statt normaler Stöcke.",
+   "Abgenutzte Teile reparierst du am selben Altar ({{aether/altar}}, {{aether/silver}}, {{aether/gold}})."
+  ],
+  "en": [
+   "Gravitite ore becomes enchanted gravitite at the altar in 750 ticks; only that can be crafted. Tools take [[aether:skyroot_stick]] instead of normal sticks.",
+   "Repair worn pieces at the same altar ({{aether/altar}}, {{aether/silver}}, {{aether/gold}})."
+  ],
+  "sources": [
+   "aether:enchanted_gravitite_enchanting",
+   "aether:gravitite_pickaxe",
+   "aether:gravitite_pickaxe_repairing"
+  ]
+ },
+ "undergarden": {
+  "de": [
+   "Die Vorlage kopierst du mit 7 Diamanten und Tiefenfels zu zweien, behalte also eine. Jedes Vergessene Teil braucht einen [[undergarden:forgotten_ingot]] und das passende Cloggrumwerkzeug.",
+   "Siehe {{undergarden/guardian}}, {{undergarden/forgotten_ingot}} und {{undergarden/forgotten}}."
+  ],
+  "en": [
+   "You copy the template into two with 7 diamonds and depthrock, so keep one. Every forgotten piece takes a [[undergarden:forgotten_ingot]] and the matching cloggrum tool.",
+   "See {{undergarden/guardian}}, {{undergarden/forgotten_ingot}} and {{undergarden/forgotten}}."
+  ],
+  "sources": [
+   "undergarden:forgotten_pickaxe_smithing",
+   "undergarden:forgotten_upgrade_smithing_template"
+  ]
+ },
+ "ars_robes": {
+  "de": [
+   "Jedes Teil kostet im Apparat nur die 4 [[ars_nouveau:magebloom_fiber]] und keine Quelle, Verzauberungen der Eisen- oder Diamantrüstung bleiben. Die zweite Aufwertung kostet 2 Enderperlen, eine Chorusfrucht und 5 000 Quelle pro Teil.",
+   "Welche Fäden sich lohnen, zeigen {{ars_master/threads_fight}} und {{ars_master/threads_travel}}, die Aufwertung {{ars_master/armor_upgrade}}."
+  ],
+  "en": [
+   "Each piece costs only the 4 [[ars_nouveau:magebloom_fiber]] in the apparatus and no source, and enchantments of the iron or diamond armour stay. The second upgrade costs 2 ender pearls, a chorus fruit and 5 000 source per piece.",
+   "{{ars_master/threads_fight}} and {{ars_master/threads_travel}} show which threads pay off, {{ars_master/armor_upgrade}} the upgrade."
+  ],
+  "sources": [
+   "ars_nouveau:arcanist_robes",
+   "ars_nouveau:battlemage_robes",
+   "ars_nouveau:first_armor_upgrade",
+   "ars_nouveau:second_armor_upgrade"
+  ]
+ },
+ "ars_flight": {
+  "de": [
+   "Billiger geht die Tafel über Ars Elemental: [[ars_elemental:yellow_archwood_log]], nur 1 [[ars_nouveau:wilden_wing]], 2 Diamanten und eine Feder. Die Wilden-Flügel kommen vom Wilden-Jäger.",
+   "Hak die Quest ab, wenn du geflogen bist ({{ars_master/ritual_flight}})."
+  ],
+  "en": [
+   "The tablet is cheaper through Ars Elemental: a [[ars_elemental:yellow_archwood_log]], just 1 [[ars_nouveau:wilden_wing]], 2 diamonds and a feather. Wilden wings come from the Wilden Hunter.",
+   "Tick the quest once you have flown ({{ars_master/ritual_flight}})."
+  ],
+  "sources": [
+   "ars_nouveau:ritual_flight",
+   "ars_elemental:flight_alt"
+  ],
+  "client": [
+   "Wilden Wing drops from the Wilden Hunter"
+  ]
+ },
+ "rending_gale": {
+  "de": [
+   "Das Rezept: Eye of the Storm, eine [[reliquary:void_tear]], 2 Bat Wings, 2 Goldbarren und ein Stock. Die Void Tear baust du vorher ({{reliquary/void_tear}}).",
+   "Hak die Quest ab, wenn du geflogen bist."
+  ],
+  "en": [
+   "The recipe: Eye of the Storm, a [[reliquary:void_tear]], 2 Bat Wings, 2 gold ingots and a stick. Build the void tear first ({{reliquary/void_tear}}).",
+   "Tick the quest once you have flown."
+  ],
+  "sources": [
+   "reliquary:rending_gale"
+  ]
+ },
+ "oritech": {
+  "de": [
+   "Der [[oritech:jetpack]] ist Leder, 3 Stahl, 2 Schießpulver und eine Fortschrittliche Batterie; statt Batterie und Pulver gehen auch ein Redstoneblock und 2 Lohenstaub. Die Exo-Schuhe sind 2 Plattierungen und 2 Silizium.",
+   "Siehe {{oritech/jetpack}} und {{oritech/exo}}."
+  ],
+  "en": [
+   "The [[oritech:jetpack]] is leather, 3 steel, 2 gunpowder and an advanced battery; a redstone block and 2 blaze powder can replace battery and gunpowder. The Exo Boots are 2 plating and 2 silicon.",
+   "See {{oritech/jetpack}} and {{oritech/exo}}."
+  ],
+  "sources": [
+   "oritech:crafting/basicjetpack",
+   "oritech:crafting/basicjetpackalt",
+   "oritech:crafting/exoboots"
+  ]
+ },
+ "mining_gadget": {
+  "de": [
+   "Auf Kronwerke steckt im Gadget ein Einfacher Steuerschaltkreis von Mekanism, dazu 3 Diamanten, 2 Eisen, 2 Gold und ein leeres Upgrade. Der [[mininggadgets:modificationtable]] sind 6 Eisen, 2 Redstone und ein leeres Upgrade.",
+   "Upgrades kosten zusätzlich Strom pro Block, Behutsamkeit zum Beispiel 100 FE und Glück III ebenso viel. Mit 200 FE pro Block reicht die Grundladung für 5 000 Blöcke."
+  ],
+  "en": [
+   "On Kronwerke the gadget takes a Mekanism basic control circuit, plus 3 diamonds, 2 iron, 2 gold and an empty upgrade. The [[mininggadgets:modificationtable]] is 6 iron, 2 redstone and an empty upgrade.",
+   "Upgrades add power per block, Silk Touch for example 100 FE and Fortune III just as much. At 200 FE per block the base charge lasts 5 000 blocks."
+  ],
+  "sources": [
+   "mininggadgets:mininggadget",
+   "mininggadgets:modificationtable",
+   "srv/config/mininggadgets-common.toml (maxPower 1000000, baseCost 200, upgradeSilkCost 100, upgradeFortune3 100)"
+  ]
+ },
+ "drilling": {
+  "de": [
+   "Die [[createoreexcavation:drilling_machine]] ist ein 5x5-Rezept für die Mechanischen Handwerkseinheiten: 9 Messingbleche, 4 Messingblöcke, 3 Robuste Bleche, 2 Präzisionsgetriebe, 2 Elektronenröhren, Mechanischer Bohrer, Messing- und Kupfergehäuse, Messingtunnel und Ausguss.",
+   "Der [[createoreexcavation:drill]] sind 2 Eisenblöcke und 5 Eisenbarren, der [[createoreexcavation:vein_finder]] Enderauge, Amethyst, Redstoneerz und 2 Stöcke ({{create_addons/ore_excavation}})."
+  ],
+  "en": [
+   "The [[createoreexcavation:drilling_machine]] is a 5x5 recipe for the mechanical crafters: 9 brass sheets, 4 brass blocks, 3 sturdy sheets, 2 precision mechanisms, 2 electron tubes, a mechanical drill, a brass and a copper casing, a brass tunnel and a spout.",
+   "The [[createoreexcavation:drill]] is 2 iron blocks and 5 iron ingots, the [[createoreexcavation:vein_finder]] an eye of ender, amethyst, redstone ore and 2 sticks ({{create_addons/ore_excavation}})."
+  ],
+  "sources": [
+   "createoreexcavation:drilling_machine",
+   "createoreexcavation:drill",
+   "createoreexcavation:vein_finder",
+   "srv/config/createoreexcavation-server.toml (defaultInfinite true)"
+  ]
+ },
+ "s4": {
+  "de": [
+   "Hak die Quest ab, sobald Stufe 4 offen ist. Hol im End gleich mehrere Elytren, viele Flugrezepte dieser Stufe verbrauchen eine ({{list_gear/v_elytra}})."
+  ],
+  "en": [
+   "Tick this off once stage 4 is open. Get several elytra in the End right away; many flight recipes of this stage use one up ({{list_gear/v_elytra}})."
+  ],
+  "sources": [
+   "docs/STAGES.md (Stage 4)",
+   "create_jetpack:jetpack",
+   "mekanism:hdpe_elytra",
+   "deeperdarker:soul_elytra",
+   "ars_nouveau:thread_gliding"
+  ]
+ },
+ "v_elytra": {
+  "de": [
+   "Sicher verbraucht wird eine [[minecraft:elytra]] vom Create-Jetpack, der HDPE Verstärkten Elytra, den Seelenelytren und dem Faden des Gleitens. Hak die Quest ab, wenn du sie getragen hast ({{the_end/elytra}}, {{the_end/end_city}})."
+  ],
+  "en": [
+   "An [[minecraft:elytra]] is used up by the Create Jetpack, the HDPE Reinforced Elytra, the Soul Elytra and the Thread of Gliding. Tick the quest once you have worn one ({{the_end/elytra}}, {{the_end/end_city}})."
+  ],
+  "sources": [
+   "create_jetpack:jetpack",
+   "mekanism:hdpe_elytra",
+   "deeperdarker:soul_elytra",
+   "ars_nouveau:thread_gliding"
+  ]
+ },
+ "create_jetpack": {
+  "de": [
+   "**Auf Kronwerke kommen statt der Schächte 4 [[aether:zanite_gemstone]] ins Rezept:** 6 Messingbleche, Welle, 2 Präzisionsgetriebe, Kupferner Rückentank, Elytra und die 4 Zanit. Zanit gibt es im Aether.",
+   "Das Netheritjetpack machst du am Schmiedetisch: Netherit-Vorlage, Jetpack und ein Netheritbarren ({{create_addons/jetpack}})."
+  ],
+  "en": [
+   "**On Kronwerke the recipe takes 4 [[aether:zanite_gemstone]] instead of the chutes:** 6 brass sheets, a shaft, 2 precision mechanisms, the copper backtank, an elytra and the 4 zanite. Zanite comes from the Aether.",
+   "Make the netherite jetpack at the smithing table: netherite template, jetpack and a netherite ingot ({{create_addons/jetpack}})."
+  ],
+  "sources": [
+   "kronwerke:round/create_jetpack_jetpack",
+   "create_jetpack:netherite_jetpack_upgrade",
+   "srv/config/create_jetpack-common.toml (seconds_per_tank 450, hover 900)"
+  ]
+ },
+ "mekasuit": {
+  "de": [
+   "Jedes Teil sind ein Netheritteil, 4 [[mekanism:hdpe_sheet]], ein Ultimativer Schaltkreis, 2 [[mekanism:pellet_polonium]] und eine Einfache Induktionszelle. Die [[mekanism:modification_station]] braucht 4 HDPE, eine Truhe, 2 Ultimative Schaltkreise, ein Stahlgehäuse und noch ein Polonium.",
+   "Das Jetpack-Modul baut einen Mekanism-Jetpack ein, dazu 4 Elite-Legierungen, Modulbasis und 3 Polonium ({{mekanism_elite/mekasuit}}, {{mekanism_elite/modstation}}, {{mekanism_elite/modules}})."
+  ],
+  "en": [
+   "Each piece is a netherite piece, 4 [[mekanism:hdpe_sheet]], an ultimate circuit, 2 [[mekanism:pellet_polonium]] and a basic induction cell. The [[mekanism:modification_station]] takes 4 HDPE, a chest, 2 ultimate circuits, a steel casing and one more polonium.",
+   "The jetpack module takes a Mekanism jetpack, plus 4 elite alloys, a module base and 3 polonium ({{mekanism_elite/mekasuit}}, {{mekanism_elite/modstation}}, {{mekanism_elite/modules}})."
+  ],
+  "sources": [
+   "mekanism:mekasuit_helmet",
+   "mekanism:modification_station",
+   "mekanism:module_jetpack_unit"
+  ]
+ },
+ "meka_tool": {
+  "de": [
+   "Neben dem Disassembler brauchst du 2 Ultimative Schaltkreise, einen [[mekanism:configurator]], 2 HDPE Platten, 2 Polonium Pellets und eine Einfache Induktionszelle.",
+   "Die Module setzt du in der Modifikationsstation ein ({{mekanism_elite/meka_tool}}, {{mekanism_elite/mod_tools}})."
+  ],
+  "en": [
+   "Besides the disassembler you need 2 ultimate circuits, a [[mekanism:configurator]], 2 HDPE sheets, 2 polonium pellets and a basic induction cell.",
+   "You fit the modules in the modification station ({{mekanism_elite/meka_tool}}, {{mekanism_elite/mod_tools}})."
+  ],
+  "sources": [
+   "mekanism:meka_tool"
+  ]
+ },
+ "jdt_eclipse": {
+  "de": [
+   "Ein [[minecraft:netherite_block]] neben [[justdirethings:gooblock_tier4]] wird nach etwa 4 Minuten zu Rohem Eclipse-Erz. Das sind 9 Netheritbarren pro Block, plan das ein.",
+   "Die [[justdirethings:portalgun_v2]] braucht 3 Blazegold, ein Celestigem, einen Portal Fluid Catalyst und einen Fluid Canister ({{dire_things/template}})."
+  ],
+  "en": [
+   "A [[minecraft:netherite_block]] next to [[justdirethings:gooblock_tier4]] turns into raw eclipse ore after about 4 minutes. That is 9 netherite ingots per block, so plan for it.",
+   "The [[justdirethings:portalgun_v2]] takes 3 blazegold, a celestigem, a portal fluid catalyst and a fluid canister ({{dire_things/template}})."
+  ],
+  "sources": [
+   "justdirethings:raw_eclipsealloy_ore-goospread (netherite_block, tier 4, 4800 ticks)",
+   "justdirethings:eclipsealloy_pickaxe-templateupgrade",
+   "justdirethings:portalgun_v2",
+   "justdirethings jar: GooTier (ECLIPSEALLOY 2561, 16.0, 5.0)"
+  ]
+ },
+ "wyvern": {
+  "de": [
+   "Das Diamantwerkzeug oder Diamantrüstungsteil kommt in den Fusionskern, die 6 Zutaten in Wyvern-Injektoren; einfache Injektoren reichen nicht. Für die Brustplatte ist der Katalysator eine Diamantbrustplatte.",
+   "Siehe {{draconic/w_injector}}, {{draconic/tools}} und {{draconic/armor}}."
+  ],
+  "en": [
+   "The diamond tool or diamond armour piece goes into the fusion core, the 6 ingredients into wyvern injectors; basic injectors are not enough. For the chestpiece the catalyst is a diamond chestplate.",
+   "See {{draconic/w_injector}}, {{draconic/tools}} and {{draconic/armor}}."
+  ],
+  "sources": [
+   "draconicevolution:tools/wyvern_pickaxe (techLevel wyvern, 8000000)",
+   "draconicevolution:tools/wyvern_chestpiece"
+  ]
+ },
+ "tiara": {
+  "de": [
+   "Die 4 [[botania:gaia_spirit]] kommen vom Gaia-Wächter. Zusammen mit einer Quarzsorte bekommt die Tiara andere Flügel, an der Flugzeit ändert das nichts ({{gaia/fight}}, {{gaia/tiara}}, {{gaia/tiara_wings}})."
+  ],
+  "en": [
+   "The 4 [[botania:gaia_spirit]] come from the Guardian of Gaia. Combined with a kind of quartz the tiara gets other wings; that does not change flight time ({{gaia/fight}}, {{gaia/tiara}}, {{gaia/tiara_wings}})."
+  ],
+  "sources": [
+   "botania:flugel_tiara",
+   "botania:flugel_tiara_1 (crafting_special_tiara_wings)"
+  ]
+ },
+ "sg_end": {
+  "de": [
+   "An der Werkbank kostet ein Azur-Elektrumbarren 4 Azur-Silber, 2 Gold und eine Enderperle, in der Alloy Forge gibt ein Block Azur-Silber mit 2 Gold und einer Perle gleich 3. Tyrann-Stahl gibt es nur aus der Forge.",
+   "Leerenwächter rettet dich, wenn du aus der Welt fällst, nützlich auf den End-Inseln ({{the_end/t_azure_electrum}}, {{silent_gear/azure}}, {{silent_gear/tyrian}})."
+  ],
+  "en": [
+   "At the crafting table an azure electrum ingot costs 4 azure silver, 2 gold and an ender pearl; in the alloy forge a block of azure silver with 2 gold and a pearl gives 3. Tyrian steel only comes from the forge.",
+   "Void Ward saves you when you fall out of the world, handy on the End islands ({{the_end/t_azure_electrum}}, {{silent_gear/azure}}, {{silent_gear/tyrian}})."
+  ],
+  "sources": [
+   "silentgear:azure_electrum_ingot",
+   "silentgear:alloying/metal/azure_electrum_ingot",
+   "silentgear:alloying/metal/tyrian_steel_ingot",
+   "silent-gear jar: worldgen/placed_feature/azure_silver_ore.json",
+   "lang trait.silentgear.void_ward.desc"
+  ]
+ },
+ "pnc_armor": {
+  "de": [
+   "Jedes Pneumatikteil ist das passende Teil aus Komprimiertem Eisen mit [[pneumaticcraft:air_canister]] und einer Gedruckten Leiterplatte, beim Helm 7 Kanister. Das Teil aus Komprimiertem Eisen ist Lederrüstung mit Komprimiertem Eisen drumherum.",
+   "Luft füllst du an der Ladestation nach ({{pneumaticcraft/charging}}, {{pneumaticcraft/upgrades}})."
+  ],
+  "en": [
+   "Each pneumatic piece is the matching compressed iron piece with [[pneumaticcraft:air_canister]] and a printed circuit board, 7 canisters for the helmet. The compressed iron piece is leather armour surrounded by compressed iron.",
+   "Refill the air at the charging station ({{pneumaticcraft/charging}}, {{pneumaticcraft/upgrades}})."
+  ],
+  "sources": [
+   "pneumaticcraft:pneumatic_helmet",
+   "pneumaticcraft:pneumatic_boots",
+   "pneumaticcraft:compressed_iron_helmet"
+  ]
+ },
+ "warden": {
+  "de": [
+   "Jedes Teil braucht eine [[deeperdarker:reinforced_echo_shard]], also 4 [[deeperdarker:warden_carapace]] pro Teil und 16 für den Satz. Den Sonorous Staff baust du aus dem Herz der Tiefe, 2 Seelenkristallen und 2 Sculk-Knochen.",
+   "Für Resonarium-Platten: 4 Resonarium und 4 Panzer formlos ({{deeper_darker/warden}}, {{deeper_darker/dd_carapace}}, {{deeper_darker/resonarium}})."
+  ],
+  "en": [
+   "Every piece takes a [[deeperdarker:reinforced_echo_shard]], that is 4 [[deeperdarker:warden_carapace]] per piece and 16 for the set. The Sonorous Staff is the heart of the deep, 2 soul crystals and 2 sculk bones.",
+   "For resonarium plates: 4 resonarium and 4 scutes, shapeless ({{deeper_darker/warden}}, {{deeper_darker/dd_carapace}}, {{deeper_darker/resonarium}})."
+  ],
+  "sources": [
+   "deeperdarker:reinforced_echo_shard",
+   "deeperdarker:warden_helmet_smithing",
+   "deeperdarker:sonorous_staff",
+   "deeperdarker:resonarium_plate"
+  ]
+ },
+ "ars_sorcerer": {
+  "de": [
+   "Wie die anderen Roben kostet die Goldrüstung im Apparat nur die Fasern und keine Quelle. Der Faden des Gleitens verbraucht eine ganze Elytra, nimm dafür eine übrige ({{ars_epic/sorcerer}}, {{ars_epic/upgrade}}, {{ars_epic/thread}})."
+  ],
+  "en": [
+   "Like the other robes, the gold armour costs only the fibres in the apparatus and no source. The Thread of Gliding uses up a whole elytra, so take a spare one ({{ars_epic/sorcerer}}, {{ars_epic/upgrade}}, {{ars_epic/thread}})."
+  ],
+  "sources": [
+   "ars_nouveau:sorcerer_robes",
+   "ars_nouveau:second_armor_upgrade",
+   "ars_nouveau:thread_gliding"
+  ]
+ },
+ "apo_mythic": {
+  "de": [
+   "Der Reforging Table wird aus dem Simple Reforging Table gebaut: der kommt in die Mitte, dazu Netheritbarren, 2 Arcane Sands und 3 Netherziegel. Den einfachen Tisch machst du aus Quelljuwel, 2 Edelsteinstaub, Zaubertisch und 3 glattem Stein.",
+   "Ein Mythic hat dazu 1 bis 3 Sockel, selten 4, und mit 1 Prozent Chance ist er unzerstörbar. Die Godforged Pearls kommen aus Mythic-Beute am Bergungstisch ({{apotheosis/reforge_table}})."
+  ],
+  "en": [
+   "The Reforging Table is built from the Simple Reforging Table: it goes in the middle, with a netherite ingot, 2 arcane sands and 3 nether bricks. Make the simple table from a source gem, 2 gem dust, an enchanting table and 3 smooth stone.",
+   "A Mythic also has 1 to 3 sockets, rarely 4, and a 1 percent chance to be unbreakable. Godforged Pearls come from salvaging mythic loot ({{apotheosis/reforge_table}})."
+  ],
+  "sources": [
+   "apotheosis:reforging_table",
+   "apotheosis:simple_reforging_table",
+   "apotheosis:augmenting_table",
+   "Apotheosis jar: recipe/reforging/mythic.json, epic.json, rarities/mythic.json"
+  ]
+ },
+ "boss_end": {
+  "de": [
+   "Der Harbinger steht in der Ancient Factory **in der Oberwelt** um Y -30, nur der Netherstern zum Wecken kommt aus dem Nether. Er gibt einen Witheritblock, also 9 Barren, und der Fusionsamboss braucht 6 davon mit 2 Redstoneblöcken und einem Amboss.",
+   "Am Amboss wird aus Infernal Forge und Void Core die Void Forge ({{bosses/harbinger_kill}}, {{the_end/cg_golem}}, {{the_end/cg_kill}}, {{the_end/cg_gear}})."
+  ],
+  "en": [
+   "The Harbinger stands in the Ancient Factory **in the overworld** around Y -30; only the nether star that wakes it comes from the Nether. It drops a witherite block, so 9 ingots, and the fusion anvil takes 6 of them with 2 redstone blocks and an anvil.",
+   "On the anvil the Infernal Forge and the Void Core become the Void Forge ({{bosses/harbinger_kill}}, {{the_end/cg_golem}}, {{the_end/cg_kill}}, {{the_end/cg_gear}})."
+  ],
+  "sources": [
+   "cataclysm:mechanical_fusion_anvil",
+   "cataclysm:weapon_infusion/void_forge",
+   "cataclysm jar: loot_table/entities/the_harbinger.json, ender_guardian.json, ender_golem.json",
+   "bosses/factory_find (quest book)"
+  ]
+ },
+ "starlight": {
+  "de": [
+   "Eine Sense sind 3 Barren oder Edelsteine und 2 Stöcke, ein Hammer 5 Barren und 2 Stöcke. Glacite und Thermal Springstone findest du in Eternal Starlight ({{eternal_starlight/weapons}}, {{eternal_starlight/glacite_scythe}}, {{eternal_starlight/hammer}}).",
+   "Den Netheritrucksack (120 Plätze, 7 Upgrades) machst du am Schmiedetisch: Netherit-Vorlage, Diamantrucksack, Netheritbarren."
+  ],
+  "en": [
+   "A scythe is 3 ingots or gems and 2 sticks, a hammer 5 ingots and 2 sticks. Glacite and thermal springstone are found in Eternal Starlight ({{eternal_starlight/weapons}}, {{eternal_starlight/glacite_scythe}}, {{eternal_starlight/hammer}}).",
+   "Make the netherite backpack (120 slots, 7 upgrades) at the smithing table: netherite template, diamond backpack, netherite ingot."
+  ],
+  "sources": [
+   "eternal_starlight:glacite_scythe",
+   "eternal_starlight:thermal_springstone_scythe",
+   "eternal_starlight:thermal_springstone_hammer",
+   "sophisticatedbackpacks:netherite_backpack",
+   "srv/config/sophisticatedbackpacks-server.toml (netheriteBackpack)"
+  ]
+ },
+ "caliburn": {
+  "de": [
+   "Der See wächst Schritt für Schritt bis zu 12 Blöcke Radius und kostet jeden Schritt 30 Mana. Erst wenn er groß genug ist, verwandelt er ein Schwert; das kostet dann die 5 000 Mana.",
+   "Caliburn hat 1 000 Haltbarkeit, Untote im Umkreis von 15 Blöcken fliehen ({{mahou_tsukai/caliburn}})."
+  ],
+  "en": [
+   "The lake grows step by step up to a radius of 12 blocks, each step costing 30 mana. Only once it is large enough does it change a sword; that is when the 5 000 mana are paid.",
+   "Caliburn has 1 000 durability, and undead within 15 blocks flee ({{mahou_tsukai/caliburn}})."
+  ],
+  "sources": [
+   "config/mahoutsukai-server.toml (POWER_CONSOLIDATION_SWORD_MANA_COST 5000, LAKE_MANA_COST 30, LAKE_RADIUS 12, LAKE_THRESHHOLD 150, DURABILITY 1000, FEAR_RADIUS 15)"
+  ]
+ },
+ "s5": {
+  "de": [
+   "Hak die Quest ab, sobald Stufe 5 offen ist. Das Ziel von Stufe 5 will 64 [[draconicevolution:awakened_draconium_block]], fest und unabhängig von der Spielerzahl, also gehen die Erwachten Barren zuerst an den Obelisken.",
+   "Was du für den Kampf wirklich brauchst, listet {{finale/gear}}."
+  ],
+  "en": [
+   "Tick this off once stage 5 is open. The stage 5 goal wants 64 [[draconicevolution:awakened_draconium_block]], fixed and independent of the player count, so the awakened ingots go to the obelisk first.",
+   "{{finale/gear}} lists what you really need for the fight."
+  ],
+  "sources": [
+   "config/kronwerke/goals.json (stage5 tech: awakened_draconium_block base 64, fixed)",
+   "docs/STAGES.md (milestones do not scale)"
+  ]
+ },
+ "draconic": {
+  "de": [
+   "Der Katalysator ist das Wyvern-Stück, die 8 Zutaten müssen in Drakonischen Injektoren liegen. Für den [[draconicevolution:draconic_bow]] ist der Katalysator der Wyvern-Bogen.",
+   "Siehe {{draconic_chaos/tools}}, {{draconic_chaos/chestpiece}} und {{draconic_chaos/bow}}."
+  ],
+  "en": [
+   "The catalyst is the Wyvern piece, and the 8 ingredients must sit in draconic injectors. For the [[draconicevolution:draconic_bow]] the catalyst is the Wyvern Bow.",
+   "See {{draconic_chaos/tools}}, {{draconic_chaos/chestpiece}} and {{draconic_chaos/bow}}."
+  ],
+  "sources": [
+   "draconicevolution:tools/draconic_pickaxe (techLevel draconic, 32000000)",
+   "draconicevolution:tools/draconic_bow",
+   "draconicevolution:tools/draconic_chestpiece"
+  ]
+ },
+ "chaotic": {
+  "de": [
+   "Die 8 Zutaten brauchen Chaotische Injektoren. Der [[draconicevolution:chaotic_core]] braucht Große Chaosfragmente, und die gibt es nur aus den Chaosscherben des Kristalls, den du nach dem Sieg über einen Chaoswächter abbaust: Das erste Chaotische Stück kommt also erst nach dem ersten Kampf ({{draconic_chaos/guardian}}, {{draconic_chaos/chaotic_injector}}, {{draconic_chaos/chaotic_gear}})."
+  ],
+  "en": [
+   "The 8 ingredients need chaotic injectors. The [[draconicevolution:chaotic_core]] takes large chaos fragments, which only come from the chaos shards of the crystal you mine after beating a Chaos Guardian: so the first chaotic piece only comes after the first fight ({{draconic_chaos/guardian}}, {{draconic_chaos/chaotic_injector}}, {{draconic_chaos/chaotic_gear}})."
+  ],
+  "sources": [
+   "draconicevolution:tools/chaotic_pickaxe (techLevel chaotic, 128000000)",
+   "draconicevolution:components/chaotic_core",
+   "draconicevolution:decompress/large_chaos_frag",
+   "draconic_chaos/chaos_shard (quest book)"
+  ]
+ },
+ "ma_supremium": {
+  "de": [
+   "Erwecktes Supremium macht der Erweckungsaltar (2 Gold, orange Wolle, 4 Seelenstein): das Supremiumwerkzeug in die Mitte, dazu Erweckte Supremiumbarren und Edelsteine und je 40 Luft-, Erd-, Wasser- und Feueressenz.",
+   "Das Rezept übernimmt Verzauberungen wie alle Stufen davor."
+  ],
+  "en": [
+   "Awakened supremium comes from the awakening altar (2 gold, orange wool, 4 soulstone): the supremium tool in the middle, with awakened supremium ingots and gemstones and 40 each of air, earth, water and fire essence.",
+   "The recipe keeps enchantments like every tier before it."
+  ],
+  "sources": [
+   "mysticalagriculture:gear/supremium_pickaxe",
+   "mysticalagriculture:gear/awakened_supremium_pickaxe",
+   "mysticalagriculture:awakening_altar",
+   "MysticalAgriculture jar: lib/ModItemTier (SUPREMIUM 0, AWAKENED_SUPREMIUM 0)"
+  ]
+ },
+ "done": {
+  "de": [
+   "Die Quest öffnet, wenn {{list_gear/draconic}}, {{list_gear/chaotic}} und {{list_gear/ma_supremium}} abgehakt sind. Den Kampf selbst bereitet das Kapitel Finale vor ({{finale/gear}})."
+  ],
+  "en": [
+   "The quest opens once {{list_gear/draconic}}, {{list_gear/chaotic}} and {{list_gear/ma_supremium}} are ticked. The finale chapter prepares the fight itself ({{finale/gear}})."
+  ],
+  "sources": [
+   "tools/quests/chapters/list_gear.py (deps)"
+  ]
+ }
+}

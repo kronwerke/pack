@@ -1,0 +1,616 @@
+{
+ "orb": {
+  "de": [
+   "Die Ruinen gibt es in fünf Varianten (kalt, gewöhnlich, Wüste, Wald, Dschungel). Der Gatekeeper ist ein Monster: In Stufe 4 hat er wie alle Feinde **120 Prozent** mehr Leben, 75 Prozent mehr Schaden und 7 Rüstungspunkte dazu. Mit der Gruppe wächst er nicht.",
+   "Neben der [[eternal_starlight:orb_of_prophecy]] lässt er Glistering Sword, Greatsword, Morning Star oder Bow, eine Schallplatte, Seeking Eyes sowie Kohle, Gold und Eisen fallen."
+  ],
+  "en": [
+   "The ruins come in five variants (cold, common, desert, forest, jungle). The Gatekeeper is a monster: in stage 4 he has **120 percent** more health, 75 percent more damage and 7 extra armor points like every enemy. He does not grow with the group.",
+   "Besides the [[eternal_starlight:orb_of_prophecy]] he drops a Glistering Sword, Greatsword, Morning Star or Bow, a music disc, Seeking Eyes and coal, gold and iron."
+  ],
+  "sources": [
+   "eternalstarlight-0.9.1+1.21.1+neoforge.jar data/eternal_starlight/loot_table/bosses/the_gatekeeper.json",
+   "eternalstarlight jar data/eternal_starlight/worldgen/structure/portal_ruins_*.json",
+   "srv/config/kronwerke-common.toml ([mobs] health, damage, armor; [bosses] scaling list)",
+   "core: mobs/MobStages.java (onJoin)",
+   "ESBoss.class extends Monster"
+  ]
+ },
+ "portal": {
+  "de": [
+   "Ohne Stufe 4 lässt dich der Server nicht hinein, auch wenn das Portal brennt. Die Splitter für eine neue Kugel holst du in {{eternal_starlight/desert}}.",
+   "Hast du dich drüben unter Tage verlaufen, bringt dich ein Etheric Eye aus {{eternal_starlight/es_etheric_eye}} an die Oberfläche. Gegen Spawns rund um deinen Raum helfen die Kerzen aus {{eternal_starlight/amaramber_light}}."
+  ],
+  "en": [
+   "Without stage 4 the server does not let you in, even if the portal is lit. You get the shards for a new orb in {{eternal_starlight/desert}}.",
+   "If you get lost underground over there, an Etheric Eye from {{eternal_starlight/es_etheric_eye}} takes you to the surface. The candles from {{eternal_starlight/amaramber_light}} stop spawns around your room."
+  ],
+  "sources": [
+   "core: lock/LockedDimensions.java",
+   "srv/config/kronwerke-common.toml (dimensions locked eternal_starlight:starlight=kronwerke:stage4)",
+   "eternal_starlight:orb_of_prophecy",
+   "eternal_starlight lang tooltip.eternal_starlight.etheric_eye"
+  ]
+ },
+ "seeking_eye": {
+  "de": [
+   "Eine Enderperle gibt 16 Augen, das ist der billigste Weg. Augen fallen auch vom Gatekeeper, aus den Bossen und beim Tauschen mit Stranghouls.",
+   "Mit Augen findest du die Golemschmiede für {{eternal_starlight/forge}} und den Cursed Garden für {{eternal_starlight/garden}}. Ein Auge mit vier Thioquartz Shards ergibt vier Etheric Eyes ({{eternal_starlight/es_etheric_eye}})."
+  ],
+  "en": [
+   "One ender pearl gives 16 eyes, the cheapest way. Eyes also drop from the Gatekeeper, from the bosses and when trading with Stranghouls.",
+   "Eyes lead you to the Golem Forge for {{eternal_starlight/forge}} and the Cursed Garden for {{eternal_starlight/garden}}. One eye with four Thioquartz Shards makes four Etheric Eyes ({{eternal_starlight/es_etheric_eye}})."
+  ],
+  "sources": [
+   "eternal_starlight:seeking_eye",
+   "eternalstarlight-0.9.1+1.21.1+neoforge.jar data/eternal_starlight/loot_table/bosses/the_gatekeeper.json",
+   "eternalstarlight-0.9.1+1.21.1+neoforge.jar data/eternal_starlight/loot_table/bosses/boss_common.json",
+   "eternalstarlight-0.9.1+1.21.1+neoforge.jar data/eternal_starlight/loot_table/gameplay/stranghoul_bartering.json",
+   "eternal_starlight:etheric_eye"
+  ]
+ },
+ "forests": {
+  "de": [
+   "In den großen Lunar-Bäumen sitzen die Nester für {{eternal_starlight/starfire}}. Halt in den Waldbiomen die Augen offen: Golemschmiede und Cursed Garden stehen in Starlight Forest, Dense Forest, Umbral Plains, Glimmer Scrubland, Starlight Taiga und Scarlet Forest.",
+   "Die Golemschmiede kommt außerdem in den beiden Permafrost-Biomen vor."
+  ],
+  "en": [
+   "The big Lunar trees hold the nests for {{eternal_starlight/starfire}}. Keep your eyes open in the forest biomes: Golem Forge and Cursed Garden stand in Starlight Forest, Dense Forest, Umbral Plains, Glimmer Scrubland, Starlight Taiga and Scarlet Forest.",
+   "The Golem Forge also appears in the two permafrost biomes."
+  ],
+  "sources": [
+   "eternalstarlight jar worldgen/placed_feature/lunar_colored_huge_starfire_birds_tree_checked.json",
+   "eternalstarlight jar tags/worldgen/biome/has_golem_forge.json",
+   "eternalstarlight jar tags/worldgen/biome/has_cursed_garden.json"
+  ]
+ },
+ "starfire": {
+  "de": [
+   "Als Dank geben die Vögel Federn, [[eternal_starlight:starfire]] oder Deepsilver Nuggets, du brauchst also mehrere Runden Samen.",
+   "Starfire wertet mit der Starfire-Vorlage Sense, Hammer und Hacke aus Thermal Springstone auf ({{eternal_starlight/starfire_scythe}}). Drei Starfire zwischen sechs Brettern ergeben ein Starfire Bird Aviary."
+  ],
+  "en": [
+   "As thanks the birds give feathers, [[eternal_starlight:starfire]] or Deepsilver Nuggets, so plan several rounds of seeds.",
+   "With the Starfire template, starfire upgrades the Thermal Springstone scythe, hammer and hoe ({{eternal_starlight/starfire_scythe}}). Three starfire between six planks make a Starfire Bird Aviary."
+  ],
+  "sources": [
+   "eternalstarlight-0.9.1+1.21.1+neoforge.jar data/eternal_starlight/loot_table/gameplay/starfire_bird_gift.json",
+   "eternal_starlight:starfire_scythe_smithing",
+   "eternal_starlight:starfire_hammer_smithing",
+   "eternal_starlight:starfire_hoe_smithing",
+   "eternal_starlight:oak_starfire_bird_aviary"
+  ]
+ },
+ "torreya": {
+  "de": [
+   "Raw Amaramber brauchst du für die Kerzen aus {{eternal_starlight/amaramber_light}}, je eine pro Kerze.",
+   "Damit wachst du außerdem Golem-Steel-Blöcke und den Alloy Furnace: Ein Stück mit dem Block in der Werkbank ergibt die gewachste Variante. Neun Stück werden ein Block."
+  ],
+  "en": [
+   "You need Raw Amaramber for the candles from {{eternal_starlight/amaramber_light}}, one per candle.",
+   "It also waxes golem steel blocks and the Alloy Furnace: one piece with the block in the crafting grid gives the waxed version. Nine pieces make a block."
+  ],
+  "sources": [
+   "eternal_starlight:amaramber_candle",
+   "eternal_starlight:shapeless/waxed_alloy_furnace_from_raw_amaramber",
+   "eternal_starlight:shapeless/waxed_golem_steel_grate_from_raw_amaramber",
+   "eternal_starlight:raw_amaramber_block"
+  ]
+ },
+ "amaramber_light": {
+  "de": [
+   "Für acht Kerzen brauchst du acht Raw Amaramber und acht Faden, die Belohnung gibt dir vier Amaramber zurück.",
+   "Stell die Kerzen gleich rund um deinen Raum am Portal ({{eternal_starlight/portal}}), bevor du weiter losziehst."
+  ],
+  "en": [
+   "Eight candles take eight Raw Amaramber and eight string, the reward gives you four amaramber back.",
+   "Place the candles around your room at the portal ({{eternal_starlight/portal}}) before you head out further."
+  ],
+  "sources": [
+   "eternal_starlight:amaramber_candle"
+  ]
+ },
+ "desert": {
+  "de": [
+   "Fünf Splitter und vier Glas ergeben eine neue [[eternal_starlight:orb_of_prophecy]]. Auch Crystallized Moths lassen blaue und rote Splitter fallen, dazu Shivering Gel.",
+   "Aus Shivering Gel mit vier Deepsilver Nuggets werden zwölf [[eternal_starlight:sonar_bomb]], die du in {{eternal_starlight/garden}} gut brauchen kannst. Rote und blaue Splitter stecken im Crystal Greatsword aus Golem Steel."
+  ],
+  "en": [
+   "Five shards and four glass make a new [[eternal_starlight:orb_of_prophecy]]. Crystallized Moths also drop blue and red shards, plus Shivering Gel.",
+   "Shivering Gel with four Deepsilver Nuggets makes twelve [[eternal_starlight:sonar_bomb]], very useful in {{eternal_starlight/garden}}. Red and blue shards go into the Crystal Greatsword made of golem steel."
+  ],
+  "sources": [
+   "eternal_starlight:orb_of_prophecy",
+   "eternalstarlight-0.9.1+1.21.1+neoforge.jar data/eternal_starlight/loot_table/entities/crystallized_moth.json",
+   "eternal_starlight:sonar_bomb",
+   "eternal_starlight:crystal_greatsword"
+  ]
+ },
+ "dagger": {
+  "de": [
+   "Die zwei Zähne kommen übereinander auf den Stock, wie bei einem Schwert. Thirst Walker lassen beim Tod außer dem Zahn auch Seeking Eyes fallen.",
+   "Die Belohnung gibt dir gleich zwei Zähne für einen zweiten Dolch."
+  ],
+  "en": [
+   "The two teeth go on top of each other above the stick, like a sword. Besides the tooth, Thirst Walkers also drop Seeking Eyes when killed.",
+   "The reward gives you two teeth for a second dagger."
+  ],
+  "sources": [
+   "eternal_starlight:dagger_of_hunger",
+   "eternalstarlight-0.9.1+1.21.1+neoforge.jar data/eternal_starlight/loot_table/entities/thirst_walker.json"
+  ]
+ },
+ "swamp": {
+  "de": [
+   "Unter Y 0 liegt Malarit dichter als darüber. Es ist die Währung der Stranghouls ({{eternal_starlight/stranghoul}}) und steckt im Unrealium aus dem Alloy Furnace.",
+   "Für den Eintopf zum Anheuern brauchst du eine [[eternal_starlight:pungency_fruit]], ein Verrottetes Fleisch und eine Schüssel."
+  ],
+  "en": [
+   "Below Y 0 malarite is denser than above. It is the Stranghouls' currency ({{eternal_starlight/stranghoul}}) and goes into the Unrealium from the Alloy Furnace.",
+   "The stew for hiring takes a [[eternal_starlight:pungency_fruit]], a rotten flesh and a bowl."
+  ],
+  "sources": [
+   "eternalstarlight jar worldgen/placed_feature/lower_malarite_ore.json (count 15) and upper_malarite_ore.json (count 12)",
+   "eternalstarlight jar tags/item/stranghoul_currencies.json",
+   "eternal_starlight:alloy/unrealium",
+   "eternal_starlight:shapeless/pungency_stew"
+  ]
+ },
+ "stranghoul": {
+  "de": [
+   "Die Höhlen der Stranghouls gibt es nur im Dark Swamp. Gegen Malarit tauschen sie unter anderem Seeking Eyes, Thioquartz Shards, Saltpeter, Deepsilver Nuggets, Malarit-Pfeile und die **Pungency Fruit Upgrade**-Vorlage für Malarit-Axt und Speer.",
+   "Mit \"Silberwaffen\" sind die Deepsilver-Werkzeuge gemeint: Schwert, Spitzhacke, Axt und Sichel aus {{eternal_starlight/deepsilver}}."
+  ],
+  "en": [
+   "Stranghoul dens only exist in the Dark Swamp. For malarite they trade among other things Seeking Eyes, Thioquartz Shards, saltpeter, Deepsilver Nuggets, malarite arrows and the **Pungency Fruit Upgrade** template for the malarite axe and spear.",
+   "\"Silver weapons\" means the deepsilver tools: sword, pickaxe, axe and sickle from {{eternal_starlight/deepsilver}}."
+  ],
+  "sources": [
+   "eternalstarlight jar tags/worldgen/biome/has_stranghoul_den.json",
+   "eternalstarlight-0.9.1+1.21.1+neoforge.jar data/eternal_starlight/loot_table/gameplay/stranghoul_bartering.json",
+   "eternalstarlight jar tags/item/stranghoul_vulnerable_to.json",
+   "eternalstarlight jar tags/item/stranghoul_hiring_food.json",
+   "eternal_starlight lang smithing_template.pungency_fruit_upgrade"
+  ]
+ },
+ "permafrost_forest": {
+  "de": [
+   "Der Hochofen schmilzt Glacite doppelt so schnell. Aus den Shards werden die Glacite-Sense ({{eternal_starlight/glacite_scythe}}), der Schild und vier Pfeile je Shard mit Stock und Feder.",
+   "Für zwölf [[eternal_starlight:frozen_bomb]] legst du vier Shards, einen Starcore und einen Ashen Snowball zusammen."
+  ],
+  "en": [
+   "The blast furnace smelts glacite twice as fast. The shards make the glacite scythe ({{eternal_starlight/glacite_scythe}}), the shield and four arrows per shard with a stick and a feather.",
+   "For twelve [[eternal_starlight:frozen_bomb]] combine four shards, a starcore and an Ashen Snowball."
+  ],
+  "sources": [
+   "eternal_starlight:glacite_shard_blasting_from_glacite",
+   "eternal_starlight:glacite_shield",
+   "eternal_starlight:glacite_arrow",
+   "eternal_starlight:frozen_bomb"
+  ]
+ },
+ "meteor": {
+  "de": [
+   "Raw Aethersent bekommst du auch von Creteors und kleinen Creteors, und mit etwas Glück als Schatz beim Angeln in der Dimension.",
+   "Neun Barren ergeben den Block für {{eternal_starlight/es_aethersent_golem}}."
+  ],
+  "en": [
+   "You also get Raw Aethersent from Creteors and tiny Creteors, and with some luck as treasure when fishing in the dimension.",
+   "Nine ingots make the block for {{eternal_starlight/es_aethersent_golem}}."
+  ],
+  "sources": [
+   "eternalstarlight-0.9.1+1.21.1+neoforge.jar data/eternal_starlight/loot_table/entities/creteor.json",
+   "eternalstarlight-0.9.1+1.21.1+neoforge.jar data/eternal_starlight/loot_table/entities/tiny_creteor.json",
+   "eternalstarlight-0.9.1+1.21.1+neoforge.jar data/eternal_starlight/loot_table/gameplay/fishing/treasure.json",
+   "eternal_starlight:aethersent_block"
+  ]
+ },
+ "deepsilver": {
+  "de": [
+   "Den Alloy Furnace kannst du **nicht bauen**: Er fällt oxidiert vom Starlight Golem ({{eternal_starlight/golem}}). Bis dahin nimmst du Ofen oder Hochofen, Lonestar Skeletons liefern Deepsilver Nuggets dazu.",
+   "Auf Kronwerke braucht der [[quarryplus:quarry]] aus {{quarries/quarry}} vier Deepsilver statt Eisen, der Draconiumkern aus {{draconic/core}} vier statt Gold."
+  ],
+  "en": [
+   "You **cannot craft** the Alloy Furnace: it drops oxidized from the Starlight Golem ({{eternal_starlight/golem}}). Until then use a furnace or blast furnace, and Lonestar Skeletons add Deepsilver Nuggets.",
+   "On Kronwerke the [[quarryplus:quarry]] from {{quarries/quarry}} takes four deepsilver instead of iron, the draconium core from {{draconic/core}} four instead of gold."
+  ],
+  "sources": [
+   "eternal_starlight:alloy/deepsilver_from_raw_materials",
+   "eternal_starlight:alloy_furnace (no recipe)",
+   "eternalstarlight-0.9.1+1.21.1+neoforge.jar data/eternal_starlight/loot_table/bosses/starlight_golem.json",
+   "eternalstarlight-0.9.1+1.21.1+neoforge.jar data/eternal_starlight/loot_table/entities/lonestar_skeleton.json",
+   "kubejs/server_scripts/kronwerke/round.js (quarryplus:quarry, draconicevolution:components/draconium_core)"
+  ]
+ },
+ "starlit_diamond": {
+  "de": [
+   "Starlit Diamond Ore liegt in der ganzen Dimension, unter Y 0 dichter als darüber.",
+   "Nach der Spitzhacke kommt {{eternal_starlight/springstone}}, das an den heißen Quellen wartet."
+  ],
+  "en": [
+   "Starlit Diamond Ore is found all over the dimension, denser below Y 0 than above.",
+   "After the pickaxe comes {{eternal_starlight/springstone}}, waiting at the hot springs."
+  ],
+  "sources": [
+   "eternal_starlight:starlit_diamond_pickaxe",
+   "eternalstarlight jar worldgen/placed_feature/lower_starlit_diamond_ore.json (count 7), upper_starlit_diamond_ore.json (count 5)"
+  ]
+ },
+ "springstone": {
+  "de": [
+   "Der Hochofen schmilzt Springstone doppelt so schnell wie der Ofen. Plan reichlich Barren ein: Sense 3, Hammer 5, die volle Rüstung aus {{eternal_starlight/es_springstone_armor}} 24, und jede Kopie der Starfire-Vorlage 7."
+  ],
+  "en": [
+   "The blast furnace smelts springstone twice as fast as the furnace. Plan plenty of ingots: scythe 3, hammer 5, the full armor from {{eternal_starlight/es_springstone_armor}} 24, and each copy of the Starfire template 7."
+  ],
+  "sources": [
+   "eternal_starlight:thermal_springstone_ingot_blasting_from_thermal_springstone",
+   "eternal_starlight:thermal_springstone_scythe",
+   "eternal_starlight:thermal_springstone_hammer",
+   "eternal_starlight:starfire_upgrade_smithing_template"
+  ]
+ },
+ "ore_list": {
+  "de": [
+   "[[eternal_starlight:saltpeter_powder]] brauchst du für die Legierung von Deepsilver und für die [[eternal_starlight:saltpeter_matchbox]]: eine Reihe Saltpeter zwischen zwei Reihen Faden. Die Streichholzschachtel ist dein Feuer gegen {{eternal_starlight/monstrosity}}.",
+   "Neun Starcore werden ein Block, den du für jede Kopie der Starfire-Vorlage brauchst."
+  ],
+  "en": [
+   "You need [[eternal_starlight:saltpeter_powder]] for the deepsilver alloy and for the [[eternal_starlight:saltpeter_matchbox]]: a row of saltpeter between two rows of string. The matchbox is your fire against {{eternal_starlight/monstrosity}}.",
+   "Nine starcore make a block, which you need for every copy of the Starfire template."
+  ],
+  "sources": [
+   "eternal_starlight:alloy/deepsilver_from_raw_materials",
+   "eternal_starlight:saltpeter_matchbox",
+   "eternal_starlight:starcore_block",
+   "eternal_starlight:starfire_upgrade_smithing_template"
+  ],
+  "client": [
+   "The saltpeter matchbox sets mobs on fire"
+  ]
+ },
+ "weapons": {
+  "de": [
+   "**Nicht wie eine Spitzhacke:** Die zwei Stöcke kommen unter den rechten (oder linken) Barren, nicht in die Mitte. EMI zeigt das Muster.",
+   "Die Sense ist auch die Basis für {{eternal_starlight/starfire_scythe}}."
+  ],
+  "en": [
+   "**Not like a pickaxe:** the two sticks go under the right (or left) ingot, not in the middle. EMI shows the pattern.",
+   "The scythe is also the base for {{eternal_starlight/starfire_scythe}}."
+  ],
+  "sources": [
+   "eternal_starlight:thermal_springstone_scythe (pattern ###, __H, __H)"
+  ]
+ },
+ "glacite_scythe": {
+  "de": [
+   "Wie die Springstone-Sense: Die Stöcke kommen unter den rechten (oder linken) Shard, nicht in die Mitte.",
+   "Mit der Flowglaze-Vorlage wird daraus die Flowglaze-Sense ({{eternal_starlight/flowglaze_scythe}})."
+  ],
+  "en": [
+   "Like the springstone scythe: the sticks go under the right (or left) shard, not in the middle.",
+   "The Flowglaze template turns it into the flowglaze scythe ({{eternal_starlight/flowglaze_scythe}})."
+  ],
+  "sources": [
+   "eternal_starlight:glacite_scythe (pattern ###, __H, __H)",
+   "eternal_starlight:flowglaze_scythe_smithing"
+  ]
+ },
+ "starfire_scythe": {
+  "de": [
+   "Mit derselben Vorlage werten auch Hammer und Hacke aus Thermal Springstone auf. Kopier die Vorlage, bevor du sie verbrauchst: Für den Starcore-Block brauchst du neun Starcore.",
+   "Truhen in Golemschmiede und Cursed Garden geben auch Starfire-Vorlage und Flowglaze-Vorlage, schau in jede."
+  ],
+  "en": [
+   "The same template also upgrades the Thermal Springstone hammer and hoe. Copy the template before you use it up: the starcore block takes nine starcore.",
+   "Chests in the Golem Forge and the Cursed Garden give both the Starfire and the Flowglaze template, check every one."
+  ],
+  "sources": [
+   "eternal_starlight:starfire_upgrade_smithing_template",
+   "eternal_starlight:starfire_hammer_smithing",
+   "eternal_starlight:starfire_hoe_smithing",
+   "eternalstarlight-0.9.1+1.21.1+neoforge.jar data/eternal_starlight/loot_table/chests/golem_forge.json",
+   "eternalstarlight-0.9.1+1.21.1+neoforge.jar data/eternal_starlight/loot_table/chests/cursed_garden.json"
+  ]
+ },
+ "flowglaze_scythe": {
+  "de": [
+   "Dieselbe Vorlage macht aus dem Glacite Shield den Flowglaze Shield ({{eternal_starlight/es_flowglaze_shield}}). Kopier sie also zuerst, damit dir für Sense und Schild je eine bleibt.",
+   "Raw Flowglaze schmilzt auch im Hochofen."
+  ],
+  "en": [
+   "The same template turns the Glacite Shield into the Flowglaze Shield ({{eternal_starlight/es_flowglaze_shield}}). Copy it first so you have one each for scythe and shield.",
+   "Raw Flowglaze also smelts in the blast furnace."
+  ],
+  "sources": [
+   "eternal_starlight:flowglaze_shield_smithing",
+   "eternal_starlight:flowglaze_upgrade_smithing_template",
+   "eternal_starlight:flowglaze_blasting_from_raw_flowglaze"
+  ]
+ },
+ "hammer": {
+  "de": [
+   "Drei Barren oben, je einer links und rechts in der Mitte, die Stöcke in der Mitte darunter. Die Starfire-Vorlage macht daraus den Starfire Hammer ({{eternal_starlight/starfire_scythe}}).",
+   "Für den Spezialangriff muss der Schlag voll aufgeladen sein: warten, bis die Anzeige voll ist, springen und im Fallen zuschlagen."
+  ],
+  "en": [
+   "Three ingots on top, one each left and right in the middle, the sticks in the middle below. The Starfire template turns it into the Starfire Hammer ({{eternal_starlight/starfire_scythe}}).",
+   "For the special attack the swing must be fully charged: wait until the indicator is full, jump and hit while falling."
+  ],
+  "sources": [
+   "eternal_starlight:thermal_springstone_hammer",
+   "eternal_starlight:starfire_hammer_smithing",
+   "eternal_starlight lang advancements.eternal_starlight.hammer_critical_hit.description"
+  ]
+ },
+ "mobs_hostile": {
+  "de": [
+   "Die Beute der Tangled, [[eternal_starlight:soul_dew]], brauchst du für Unrealium und das Moonring Greatsword. Freezes findest du sicher in der Golemschmiede ({{eternal_starlight/freezes}}).",
+   "Alle Feinde haben in Stufe 4 120 Prozent mehr Leben, 75 Prozent mehr Schaden und 7 Rüstungspunkte dazu."
+  ],
+  "en": [
+   "The Tangled's loot, [[eternal_starlight:soul_dew]], is needed for Unrealium and the Moonring Greatsword. You find Freezes for sure in the Golem Forge ({{eternal_starlight/freezes}}).",
+   "In stage 4 every enemy has 120 percent more health, 75 percent more damage and 7 extra armor points."
+  ],
+  "sources": [
+   "eternalstarlight-0.9.1+1.21.1+neoforge.jar data/eternal_starlight/loot_table/entities/ (tangled, freeze, seeker, creteor)",
+   "eternal_starlight:alloy/unrealium",
+   "eternal_starlight:moonring_greatsword",
+   "srv/config/kronwerke-common.toml ([mobs])"
+  ]
+ },
+ "mobs_animals": {
+  "de": [
+   "Rookfish, Rookfish Air Sac, Luminofish und Luminaris holst du am leichtesten mit der Angel in der Dimension.",
+   "Shivering Gel von der Crystallized Moth brauchst du für Sonar Bombs und das Crystal Greatsword."
+  ],
+  "en": [
+   "Rookfish, Rookfish Air Sac, Luminofish and Luminaris are easiest to get with a fishing rod in the dimension.",
+   "Shivering Gel from the Crystallized Moth is needed for Sonar Bombs and the Crystal Greatsword."
+  ],
+  "sources": [
+   "eternalstarlight-0.9.1+1.21.1+neoforge.jar data/eternal_starlight/loot_table/gameplay/fishing/fish.json",
+   "eternalstarlight-0.9.1+1.21.1+neoforge.jar data/eternal_starlight/loot_table/entities/crystallized_moth.json",
+   "eternal_starlight:sonar_bomb",
+   "eternal_starlight:crystal_greatsword"
+  ]
+ },
+ "forge": {
+  "de": [
+   "Durchsuch die Truhen: Sie geben Frozen Tubes, Oxidized Golem Steel Ingots, beide Upgrade-Vorlagen, Glacite-Pfeile, Saltpeter und goldene Äpfel.",
+   "Bevor du zum Golem gehst, sollte deine Rüstung aus {{eternal_starlight/es_deepsilver_armor}} stehen."
+  ],
+  "en": [
+   "Search the chests: they give Frozen Tubes, Oxidized Golem Steel Ingots, both upgrade templates, glacite arrows, saltpeter and golden apples.",
+   "Before you face the golem, have your armor from {{eternal_starlight/es_deepsilver_armor}} ready."
+  ],
+  "sources": [
+   "eternalstarlight-0.9.1+1.21.1+neoforge.jar data/eternal_starlight/loot_table/chests/golem_forge.json"
+  ]
+ },
+ "golem": {
+  "de": [
+   "Er lässt den einzigen [[eternal_starlight:oxidized_alloy_furnace]] fallen, den du bekommst, dazu Oxidized Golem Steel Ingots, das Energy Sword, die Forge-Rüstungsverzierung und eine Schallplatte.",
+   "Der Golem wächst nicht mit der Gruppe, hat aber wie alle Monster die Aufschläge von Stufe 4."
+  ],
+  "en": [
+   "He drops the only [[eternal_starlight:oxidized_alloy_furnace]] you can get, plus Oxidized Golem Steel Ingots, the Energy Sword, the Forge armor trim and a music disc.",
+   "The golem does not grow with the group, but like every monster it has the stage 4 bonuses."
+  ],
+  "sources": [
+   "eternalstarlight-0.9.1+1.21.1+neoforge.jar data/eternal_starlight/loot_table/bosses/starlight_golem.json",
+   "eternal_starlight:alloy_furnace (no recipe)",
+   "srv/config/kronwerke-common.toml ([bosses] scaling list, [mobs])"
+  ]
+ },
+ "golem_steel": {
+  "de": [
+   "Ein normaler Ofen geht auch, nur halb so schnell. Oxidized Golem Steel Ingots findest du außerdem in den Truhen der Golemschmiede.",
+   "Fünf Barren ergeben den [[eternal_starlight:energy_boomerang]]. Den Alloy Furnace kannst du mit Raw Amaramber wachsen ({{eternal_starlight/torreya}})."
+  ],
+  "en": [
+   "A normal furnace works too, just half as fast. You also find Oxidized Golem Steel Ingots in the chests of the Golem Forge.",
+   "Five ingots make the [[eternal_starlight:energy_boomerang]]. You can wax the Alloy Furnace with Raw Amaramber ({{eternal_starlight/torreya}})."
+  ],
+  "sources": [
+   "eternal_starlight:golem_steel_ingot_smelting_from_oxidized_golem_steel_ingot",
+   "eternal_starlight:golem_steel_ingot_blasting_from_oxidized_golem_steel_ingot",
+   "eternal_starlight:alloy/golem_steel",
+   "eternalstarlight-0.9.1+1.21.1+neoforge.jar data/eternal_starlight/loot_table/chests/golem_forge.json",
+   "eternal_starlight:energy_boomerang",
+   "eternal_starlight:shapeless/waxed_alloy_furnace_from_raw_amaramber"
+  ]
+ },
+ "freezes": {
+  "de": [
+   "Freezes lassen Frozen Tubes und Oxidized Golem Steel Nuggets fallen. Die Springstone-Rüstung aus {{eternal_starlight/es_springstone_armor}} setzt sie beim Zuschlagen in Brand."
+  ],
+  "en": [
+   "Freezes drop Frozen Tubes and Oxidized Golem Steel Nuggets. The springstone armor from {{eternal_starlight/es_springstone_armor}} sets them on fire when they hit you."
+  ],
+  "sources": [
+   "eternalstarlight-0.9.1+1.21.1+neoforge.jar data/eternal_starlight/loot_table/entities/freeze.json"
+  ]
+ },
+ "permafrost": {
+  "de": [
+   "Außer Coldsnap, Frozen Tubes und Nuggets gibt es ein Gemälde und die allgemeine Bossbeute: Deepsilver, Springstone, Glacite und Aethersent, Seeking Eyes, Pfeile.",
+   "Auch der Permafrost wächst nicht mit der Gruppe. Danach geht es in {{eternal_starlight/garden}}."
+  ],
+  "en": [
+   "Besides Coldsnap, Frozen Tubes and nuggets there is a painting and the common boss loot: deepsilver, springstone, glacite and aethersent, Seeking Eyes, arrows.",
+   "The Permafrost does not grow with the group either. Next is {{eternal_starlight/garden}}."
+  ],
+  "sources": [
+   "eternalstarlight-0.9.1+1.21.1+neoforge.jar data/eternal_starlight/loot_table/bosses/permafrost.json",
+   "eternalstarlight-0.9.1+1.21.1+neoforge.jar data/eternal_starlight/loot_table/bosses/boss_common.json",
+   "srv/config/kronwerke-common.toml ([bosses] scaling list)"
+  ]
+ },
+ "garden": {
+  "de": [
+   "Statt Feuerzeug geht auch die [[eternal_starlight:saltpeter_matchbox]] aus Saltpeter und Faden. Die Truhen im Garten haben außerdem beide Upgrade-Vorlagen, Streichholzschachteln und goldene Äpfel.",
+   "Sonar Bombs baust du aus vier Deepsilver Nuggets um ein Shivering Gel, zwölf auf einmal."
+  ],
+  "en": [
+   "Instead of flint and steel the [[eternal_starlight:saltpeter_matchbox]] made of saltpeter and string also works. The garden's chests also hold both upgrade templates, matchboxes and golden apples.",
+   "You build Sonar Bombs from four Deepsilver Nuggets around a Shivering Gel, twelve at once."
+  ],
+  "sources": [
+   "eternal_starlight:saltpeter_matchbox",
+   "eternalstarlight-0.9.1+1.21.1+neoforge.jar data/eternal_starlight/loot_table/chests/cursed_garden.json",
+   "eternal_starlight:sonar_bomb"
+  ],
+  "client": [
+   "The saltpeter matchbox ignites the Lunar Monstrosity"
+  ]
+ },
+ "monstrosity": {
+  "de": [
+   "Die Springstone-Rüstung aus {{eternal_starlight/es_springstone_armor}} zündet sie an, wenn sie dich trifft. Zur Beute gehören auch die Twining-Rüstungsverzierung und zwei Schallplatten.",
+   "Aus Tenacious Petals und Vines baust du {{eternal_starlight/petal_scythe}}."
+  ],
+  "en": [
+   "The springstone armor from {{eternal_starlight/es_springstone_armor}} ignites her when she hits you. The loot also includes the Twining armor trim and two music discs.",
+   "Tenacious Petals and Vines make {{eternal_starlight/petal_scythe}}."
+  ],
+  "sources": [
+   "eternalstarlight-0.9.1+1.21.1+neoforge.jar data/eternal_starlight/loot_table/bosses/lunar_monstrosity.json"
+  ]
+ },
+ "petal_scythe": {
+  "de": [
+   "Vier Petals laufen oben quer und rechts herunter, die zwei Vines schräg nach links unten. Für das [[eternal_starlight:moonring_greatsword]] brauchst du zwei Petals, zwei Vines und ein Soul Dew von den Tangled."
+  ],
+  "en": [
+   "Four petals run across the top and down the right, the two vines diagonally down to the left. The [[eternal_starlight:moonring_greatsword]] takes two petals, two vines and a Soul Dew from the Tangled."
+  ],
+  "sources": [
+   "eternal_starlight:petal_scythe",
+   "eternal_starlight:moonring_greatsword"
+  ]
+ },
+ "explorer": {
+  "de": [
+   "Golem Steel und Deepsilver lohnen sich weiter: Deepsilver steckt auf Kronwerke im Quarry Plus und im Draconiumkern, Golem Steel und Deepsilver zusammen mit Malarit und Soul Dew im [[eternal_starlight:unrealium_ingot]].",
+   "Wie du dich für den Gaia-Wächter rüstest, steht in {{gaia/gear}}."
+  ],
+  "en": [
+   "Golem steel and deepsilver stay useful: on Kronwerke deepsilver goes into the Quarry Plus and the draconium core, golem steel and deepsilver together with malarite and Soul Dew into the [[eternal_starlight:unrealium_ingot]].",
+   "How to gear up for the Gaia Guardian is in {{gaia/gear}}."
+  ],
+  "sources": [
+   "kubejs/server_scripts/kronwerke/round.js",
+   "eternal_starlight:alloy/unrealium"
+  ]
+ },
+ "es_etheric_eye": {
+  "de": [
+   "Thioquartz Shards bekommst du auch beim Tauschen mit Stranghouls gegen Malarit. Ein Seeking Eye und vier Shards ergeben vier Etheric Eyes.",
+   "Pack immer ein paar ein, wenn du unter Tage nach Erz gräbst."
+  ],
+  "en": [
+   "You also get Thioquartz Shards by trading malarite with Stranghouls. One Seeking Eye and four shards make four Etheric Eyes.",
+   "Always carry a few when you dig for ore underground."
+  ],
+  "sources": [
+   "eternal_starlight:etheric_eye",
+   "eternalstarlight-0.9.1+1.21.1+neoforge.jar data/eternal_starlight/loot_table/gameplay/stranghoul_bartering.json",
+   "eternalstarlight jar worldgen/placed_feature/thioquartz_geode.json"
+  ]
+ },
+ "es_all_biomes": {
+  "de": [
+   "Leicht zu übersehen sind die kleinen: Grim Shore, Warm Shore, Shimmer River, Lucent Mycelium Isle, Lush Shallow Sea, Spiral Kelp Forest, Icy Sea und Starlit Sea.",
+   "Wie der Kompass der Natur funktioniert, steht in {{list_dimensions/k_natures}}."
+  ],
+  "en": [
+   "The small ones are easy to miss: Grim Shore, Warm Shore, Shimmer River, Lucent Mycelium Isle, Lush Shallow Sea, Spiral Kelp Forest, Icy Sea and Starlit Sea.",
+   "How the Nature's Compass works is in {{list_dimensions/k_natures}}."
+  ],
+  "sources": [
+   "eternalstarlight jar advancement all_starlight_biomes.json (22 criteria)"
+  ]
+ },
+ "es_deepsilver_armor": {
+  "de": [
+   "Die volle Rüstung kostet 24 Deepsilver Ingots, mit dem Alloy Furnace kommst du mit Saltpeter günstiger dran ({{eternal_starlight/deepsilver}}).",
+   "Stranghouls fürchten Deepsilver-Waffen, nicht die Rüstung."
+  ],
+  "en": [
+   "The full armor costs 24 Deepsilver Ingots, with the Alloy Furnace and saltpeter you get them cheaper ({{eternal_starlight/deepsilver}}).",
+   "Stranghouls fear deepsilver weapons, not the armor."
+  ],
+  "sources": [
+   "eternal_starlight:deepsilver_helmet",
+   "eternal_starlight:alloy/deepsilver_from_raw_materials",
+   "eternalstarlight jar tags/item/stranghoul_vulnerable_to.json"
+  ]
+ },
+ "es_glacite_armor": {
+  "de": [
+   "Die volle Rüstung kostet 24 Glacite Shards, der Schild einen weiteren.",
+   "Mit dem Schild geht es weiter zu {{eternal_starlight/es_flowglaze_shield}}."
+  ],
+  "en": [
+   "The full armor costs 24 Glacite Shards, the shield one more.",
+   "The shield leads on to {{eternal_starlight/es_flowglaze_shield}}."
+  ],
+  "sources": [
+   "eternal_starlight:glacite_helmet",
+   "eternal_starlight:glacite_shield"
+  ]
+ },
+ "es_springstone_armor": {
+  "de": [
+   "Die volle Rüstung kostet 24 Thermal Springstone Ingots. Trag sie in {{eternal_starlight/garden}} und gegen {{eternal_starlight/monstrosity}}."
+  ],
+  "en": [
+   "The full armor costs 24 Thermal Springstone Ingots. Wear it in {{eternal_starlight/garden}} and against {{eternal_starlight/monstrosity}}."
+  ],
+  "sources": [
+   "eternal_starlight:thermal_springstone_helmet"
+  ]
+ },
+ "es_flowglaze_shield": {
+  "de": [
+   "Kopier die Flowglaze-Vorlage vorher: Vorlage, sieben Glacite Shards und ein Eternal Ice ergeben zwei. Den Glacite Shield baust du in {{eternal_starlight/es_glacite_armor}}."
+  ],
+  "en": [
+   "Copy the Flowglaze template first: template, seven Glacite Shards and one Eternal Ice make two. You build the Glacite Shield in {{eternal_starlight/es_glacite_armor}}."
+  ],
+  "sources": [
+   "eternal_starlight:flowglaze_shield_smithing",
+   "eternal_starlight:flowglaze_upgrade_smithing_template"
+  ]
+ },
+ "es_aethersent_golem": {
+  "de": [
+   "Für den Block brauchst du neun Aethersent Ingots, also mehr als die vier aus {{eternal_starlight/meteor}}. Erschlägst du den Golem, gibt er Aethersent zurück."
+  ],
+  "en": [
+   "The block takes nine Aethersent Ingots, so more than the four from {{eternal_starlight/meteor}}. If you kill the golem, it gives aethersent back."
+  ],
+  "sources": [
+   "eternal_starlight:aethersent_block",
+   "eternalstarlight-0.9.1+1.21.1+neoforge.jar data/eternal_starlight/loot_table/entities/aethersent_golem.json"
+  ],
+  "client": [
+   "How to carve a Lunaris Cactus Fruit (no crafting recipe in the dump)"
+  ]
+ },
+ "es_moth": {
+  "de": [
+   "Wilde Moths lassen blaue und rote Starlight Crystal Shards und Shivering Gel fallen. Behalte also ein paar übrig, bevor du eine zähmst."
+  ],
+  "en": [
+   "Wild moths drop blue and red Starlight Crystal Shards and Shivering Gel. So keep a few around before you tame one."
+  ],
+  "sources": [
+   "eternalstarlight-0.9.1+1.21.1+neoforge.jar data/eternal_starlight/loot_table/entities/crystallized_moth.json"
+  ],
+  "client": [
+   "Taming the moth with meat"
+  ]
+ }
+}

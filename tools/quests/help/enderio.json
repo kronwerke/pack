@@ -1,0 +1,696 @@
+{
+ "grains": {
+  "de": [
+   "Ein Feuer legt nur Körner ab, wenn es mindestens **260 Ticks** (13 Sekunden) gebrannt hat, und nur in der Oberwelt. Grundgestein liegt ganz unten bei Y -64: Leg dir dort eine Reihe Feuerstellen an und zünde sie mit dem Feuerzeug aus der Belohnung immer wieder an.",
+   "Plan gleich mehr ein: vier Kondensatoren, vier Zahnräder und zwei Gehäuse brauchen zusammen 20 Körner. Der [[enderio:suspicious_seed]] kommt mit 30 Prozent dazu, du brauchst ihn für {{enderio/xp_obelisk}}."
+  ],
+  "en": [
+   "A fire only leaves grains once it has burned for at least **260 ticks** (13 seconds), and only in the Overworld. Bedrock is at the very bottom, Y -64: set up a row of fire spots there and relight them again and again with the flint and steel from the reward.",
+   "Plan for more right away: four capacitors, four gears and two chassis need 20 grains together. The [[enderio:suspicious_seed]] comes along with a 30 percent chance, you need it for {{enderio/xp_obelisk}}."
+  ],
+  "sources": [
+   "enderio:fire_crafting/bedrock_infinity",
+   "enderio:fire_crafting/deepslate_infinity",
+   "config/enderio/base-common.toml (grainsOfInfinity.fireMinAge 260)",
+   "enderio:basic_capacitor",
+   "enderio:void_chassis",
+   "enderio:iron_gear",
+   "enderio:experience_rod"
+  ]
+ },
+ "capacitor": {
+  "de": [
+   "Für einen Kondensator brauchst du 2 [[enderio:grains_of_infinity]], 1 Kupferbarren und 4 Goldnuggets, für die vier der Quest also 8 Körner.",
+   "Der Einfache Kondensator steckt auch in der [[enderio:basic_capacitor_bank]], im [[enderio:double_layer_capacitor]] und im Fotovoltaikmodul. Leg dir einen kleinen Vorrat an."
+  ],
+  "en": [
+   "One capacitor takes 2 [[enderio:grains_of_infinity]], 1 copper ingot and 4 gold nuggets, so the four for this quest need 8 grains.",
+   "The Basic Capacitor also goes into the [[enderio:basic_capacitor_bank]], the [[enderio:double_layer_capacitor]] and the photovoltaic module. Keep a small stock."
+  ],
+  "sources": [
+   "enderio:basic_capacitor",
+   "enderio:basic_capacitor_bank",
+   "enderio:double_layer_capacitor",
+   "enderio:energetic_photovoltaic_module"
+  ]
+ },
+ "gear": {
+  "de": [
+   "Das Zahnrad geht auch **ohne Körner**: Vier Eisenbarren als Kreuz um eine freie Mitte ergeben dasselbe [[enderio:iron_gear]] (Rezept von Industrial Foregoing), die Metallpresse von Immersive Engineering presst es aus einem Barren.",
+   "Die Maschinen nehmen jedes Zahnrad mit dem Tag Eisenzahnrad. Zwei brauchen auch Lackiergerät und Fertiger, eins steckt in jedem [[enderio:energized_gear]]."
+  ],
+  "en": [
+   "The gear also works **without grains**: four iron ingots in a plus around an empty middle make the same [[enderio:iron_gear]] (an Industrial Foregoing recipe), and the Immersive Engineering metal press makes it from one ingot.",
+   "The machines take any gear with the iron gear tag. The painting machine and the crafter need two as well, and every [[enderio:energized_gear]] holds one."
+  ],
+  "sources": [
+   "industrialforegoing:iron_gear",
+   "immersiveengineering:metalpress/gear_iron",
+   "enderio:alloy_smelter (#c:gears/iron)",
+   "enderio:painting_machine",
+   "enderio:crafter",
+   "enderio:energized_gear"
+  ]
+ },
+ "chassis": {
+  "de": [
+   "Jedes Gehäuse kostet 4 Körner und 4 Eisen. Es steckt in zwölf Rezepten, unter anderem in Legierungsschmelze, Stirling Generator, Sägemühle, Lackiergerät, Fertiger, beide Ladegeräte und der [[enderio:drain]].",
+   "Für die Seelenmaschinen brauchst du später das [[enderio:ensouled_chassis]] aus {{enderio/ens_chassis}}."
+  ],
+  "en": [
+   "Each chassis costs 4 grains and 4 iron. It goes into twelve recipes, among them the alloy smelter, Stirling generator, SAG mill, painting machine, crafter, both chargers and the [[enderio:drain]].",
+   "For the soul machines you later need the [[enderio:ensouled_chassis]] from {{enderio/ens_chassis}}."
+  ],
+  "sources": [
+   "enderio:void_chassis (used in 12 recipes)",
+   "enderio:sag_mill",
+   "enderio:wired_charger",
+   "enderio:drain",
+   "enderio:ensouled_chassis"
+  ]
+ },
+ "smelter": {
+  "de": [
+   "Das Gehäuse von Create heißt im deutschen Spiel [[create:brass_casing]] (Messingrahmen), du machst es aus Stufe 2 mit Messing auf Holz. Die Belohnung legt dir gleich 8 für die nächsten Maschinen hin.",
+   "Die Schmelze puffert 64 000 µI. Ein normales Schmelzrezept kostet 1 500 µI, die Legierungen 3 200 bis 6 400 µI. Ohne Strom tut sie nichts: Stell gleich den {{enderio/stirling}} daneben."
+  ],
+  "en": [
+   "The Create part is the [[create:brass_casing]], made in stage 2 from brass on wood. The reward gives you 8 for the next machines.",
+   "The smelter buffers 64,000 µI. A plain smelting recipe costs 1,500 µI, the alloys 3,200 to 6,400 µI. Without power it does nothing: put the {{enderio/stirling}} right next to it."
+  ],
+  "sources": [
+   "enderio:alloy_smelter (kronwerke recipe with create:brass_casing)",
+   "config/enderio/machines-common.toml (alloySmelter capacity 64000, usage 20, vanillaItemEnergy 1500)",
+   "enderio:alloy_smelting/conductive_alloy_ingot",
+   "enderio:alloy_smelting/fused_quartz"
+  ]
+ },
+ "stirling": {
+  "de": [
+   "Unten in die Mitte gehört normaler [[minecraft:deepslate]], kein Bruchtiefenschiefer. Den bekommst du nur, wenn du Tiefenschiefer mit Behutsamkeit abbaust.",
+   "Die acht Kohleblöcke aus der Belohnung sind sein erster Brennstoff. Seine 40 µI/t reichen genau für Legierungsschmelze und Sägemühle zusammen, die je 20 µI/t ziehen."
+  ],
+  "en": [
+   "The bottom middle takes plain [[minecraft:deepslate]], not cobbled deepslate. You only get it by mining deepslate with Silk Touch.",
+   "The eight coal blocks from the reward are its first fuel. Its 40 µI/t cover exactly the alloy smelter and the SAG mill together, which draw 20 µI/t each."
+  ],
+  "sources": [
+   "enderio:stirling_generator (minecraft:deepslate)",
+   "config/enderio/machines-common.toml (stirlingGenerator generation 40; alloySmelter and sagMill usage 20)"
+  ]
+ },
+ "cap_bank": {
+  "de": [
+   "Lade die Bank tagsüber mit {{enderio/solar}} oder dauernd mit dem Stirling Generator, dann laufen deine Maschinen auch, wenn der Brennstoff kurz fehlt.",
+   "Die [[enderio:advanced_capacitor_bank]] baust du aus Leitfähiger Legierung, Doppelschichtkondensatoren und einem Redstoneblock oder rüstest die alte Bank mit Energetischer Legierung und einem Doppelschichtkondensator auf. Die [[enderio:vibrant_capacitor_bank]] braucht Oktadische Kondensatoren und einen Strahlenden Kristall."
+  ],
+  "en": [
+   "Charge the bank by day with {{enderio/solar}} or all the time with the Stirling generator, so your machines keep running when fuel runs out for a moment.",
+   "You build the [[enderio:advanced_capacitor_bank]] from conductive alloy, double layer capacitors and a block of redstone, or upgrade the old bank with energetic alloy and a double layer capacitor. The [[enderio:vibrant_capacitor_bank]] needs octadic capacitors and a vibrant crystal."
+  ],
+  "sources": [
+   "enderio:basic_capacitor_bank",
+   "enderio:advanced_capacitor_bank",
+   "enderio:advanced_capacitor_bank_upgrade",
+   "enderio:vibrant_capacitor_bank",
+   "enderio:vibrant_capacitor_bank_upgrade",
+   "config/enderio/machines-common.toml (capacitorBankCapacity)"
+  ]
+ },
+ "cap_double": {
+  "de": [
+   "Den [[enderio:powdered_coal]] mahlt dir die {{enderio/sag_mill}} aus Kohle, jeder andere Kohlestaub aus dem Pack geht auch.",
+   "Pro Kondensator brauchst du 2 Einfache Kondensatoren und 2 Energetische Barren. Zwei davon stecken in der Pulsierenden Fotovoltaik, vier in der Fortgeschrittenen Kondensatorbank."
+  ],
+  "en": [
+   "The SAG mill from {{enderio/sag_mill}} grinds the [[enderio:powdered_coal]] from coal, any other coal dust in the pack works too.",
+   "Each capacitor takes 2 basic capacitors and 2 energetic ingots. Two go into the pulsating photovoltaic module, four into the advanced capacitor bank."
+  ],
+  "sources": [
+   "enderio:double_layer_capacitor (#c:dusts/coal)",
+   "enderio:sag_milling/coal",
+   "enderio:pulsating_photovoltaic_module",
+   "enderio:advanced_capacitor_bank"
+  ]
+ },
+ "cap_octadic": {
+  "de": [
+   "Ein Oktadischer kostet 2 Doppelschichtkondensatoren, also 4 Einfache, dazu 2 Strahlende Barren und einen Glowsteinblock.",
+   "Der [[enderio:loot_capacitor]] liegt in den Truhen von Minenschächten, Wüsten- und Dschungeltempeln, Verliesen, Festungen, Schiffswracks, Außenposten, Waldanwesen und Endsiedlungen. Gebraucht wird der Oktadische in der Strahlenden Kondensatorbank und im Strahlenden Fotovoltaikmodul."
+  ],
+  "en": [
+   "One octadic costs 2 double layer capacitors, so 4 basic ones, plus 2 vibrant ingots and a glowstone block.",
+   "The [[enderio:loot_capacitor]] turns up in chests of mineshafts, desert and jungle temples, dungeons, strongholds, shipwrecks, outposts, woodland mansions and end cities. The octadic goes into the vibrant capacitor bank and the vibrant photovoltaic module."
+  ],
+  "sources": [
+   "enderio:octadic_capacitor",
+   "enderio-8.2.12-beta.jar data/enderio/loot_modifiers/common_loot.json",
+   "enderio:vibrant_capacitor_bank",
+   "enderio:vibrant_photovoltaic_module"
+  ]
+ },
+ "conductive": {
+  "de": [
+   "In der Schmelze kostet ein Paar 3 200 µI. Die Gießerei von Oritech macht aus Eisen und Kupfer nur einen Barren, die Schmelze zwei.",
+   "Gebraucht wird sie überall: acht im [[enderio:wired_charger]], fünf für 24 Mahlkugeln ({{enderio/grinding_ball}}), je zwei in Strom-, Gegenstands- und Flüssigkeitsleitungen."
+  ],
+  "en": [
+   "In the smelter one pair costs 3,200 µI. The Oritech foundry makes only one ingot from iron and copper, the smelter makes two.",
+   "It is needed everywhere: eight in the [[enderio:wired_charger]], five for 24 grinding balls ({{enderio/grinding_ball}}), two each in energy, item and fluid conduits."
+  ],
+  "sources": [
+   "enderio:alloy_smelting/conductive_alloy_ingot",
+   "oritech:foundry/alloy/compat/enderio/conductivealloy",
+   "enderio:wired_charger",
+   "enderio:conductive_alloy_grinding_ball",
+   "enderio:energy_conduit"
+  ]
+ },
+ "redstone_alloy": {
+  "de": [
+   "Ein Barren kostet 3 200 µI. Drei Barren und sechs [[enderio:conduit_binder]] ergeben acht Redstone-Leitungen.",
+   "Für das Lackiergerät aus {{enderio/painting}} brauchst du einen Barren."
+  ],
+  "en": [
+   "One ingot costs 3,200 µI. Three ingots and six [[enderio:conduit_binder]] make eight redstone conduits.",
+   "The painting machine from {{enderio/painting}} needs one ingot."
+  ],
+  "sources": [
+   "enderio:alloy_smelting/redstone_alloy_ingot",
+   "enderio:redstone_conduit",
+   "enderio:painting_machine"
+  ]
+ },
+ "energetic": {
+  "de": [
+   "Zwei Barren kosten 4 800 µI. Das [[enderio:energized_gear]] sind vier Energetische Barren und vier Energetische Nuggets um ein Unendlichkeitszahnrad.",
+   "Du brauchst sie für {{enderio/slicer}}, den Seelenbinder, {{enderio/aversion}} und die Zombieelektrode des Seelenmotors. Die Gießerei von Oritech macht einen Barren aus Elektrum und Leitfähiger Legierung."
+  ],
+  "en": [
+   "Two ingots cost 4,800 µI. The [[enderio:energized_gear]] is four energetic ingots and four energetic nuggets around an infinity gear.",
+   "You need them for {{enderio/slicer}}, the soul binder, {{enderio/aversion}} and the soul engine's zombie electrode. The Oritech foundry makes one ingot from electrum and conductive alloy."
+  ],
+  "sources": [
+   "enderio:alloy_smelting/energetic_alloy_ingot",
+   "enderio:energized_gear",
+   "enderio:slicing/zombie_electrode",
+   "enderio:aversion_obelisk",
+   "oritech:foundry/alloy/compat/enderio/energeticalloy"
+  ]
+ },
+ "vibrant": {
+  "de": [
+   "Zwei Barren kosten 5 600 µI. Den [[enderio:vibrant_crystal]] brauchst du für {{enderio/powered_spawner}} und im Seelenbinder für den Enderkristall ({{enderio/travel}}).",
+   "Strahlende Barren stecken außerdem im Erfahrungsstab ({{enderio/xp_obelisk}}) und im Enderresonator des Drahtlosen Ladegeräts."
+  ],
+  "en": [
+   "Two ingots cost 5,600 µI. You need the [[enderio:vibrant_crystal]] for {{enderio/powered_spawner}} and in the soul binder for the ender crystal ({{enderio/travel}}).",
+   "Vibrant ingots also go into the experience rod ({{enderio/xp_obelisk}}) and the ender resonator of the wireless charger."
+  ],
+  "sources": [
+   "enderio:alloy_smelting/vibrant_alloy_ingot",
+   "enderio:vibrant_crystal",
+   "enderio:soulbinding/ender_crystal",
+   "enderio:experience_rod",
+   "enderio:slicing/ender_resonator"
+  ]
+ },
+ "pulsating": {
+  "de": [
+   "Zwei Barren kosten 4 800 µI. Die Gießerei von Oritech gibt aus Eisen und Enderperle ebenfalls zwei.",
+   "Für den [[enderio:pulsating_crystal]] brauchst du acht Nuggets, also einen Barren in der Werkbank zerlegen. Er steckt in {{enderio/vacuum_chest}} und je einer in jedem Reiseanker."
+  ],
+  "en": [
+   "Two ingots cost 4,800 µI. The Oritech foundry also gives two from iron and an ender pearl.",
+   "The [[enderio:pulsating_crystal]] takes eight nuggets, so break one ingot down in the crafting grid. It goes into {{enderio/vacuum_chest}} and one into every travel anchor."
+  ],
+  "sources": [
+   "enderio:alloy_smelting/pulsating_alloy_ingot",
+   "oritech:foundry/alloy/compat/enderio/pulsatingalloy",
+   "enderio:pulsating_crystal",
+   "enderio:travel_anchor"
+  ]
+ },
+ "dark_steel": {
+  "de": [
+   "Ein Obsidian gibt zwei Barren für 3 200 µI. Die Gießerei von Oritech macht einen Barren aus Stahl und Obsidian.",
+   "Mit zwei Barren und einem Stock baust du [[enderio:dark_steel_sword]]. Er nimmt mit **7 Prozent** den Kopf: vom Zombie den Zombiekopf für den Z-Logic Regler, vom Enderman den [[enderio:enderman_head]] für {{enderio/aversion}}."
+  ],
+  "en": [
+   "One obsidian gives two ingots for 3,200 µI. The Oritech foundry makes one ingot from steel and obsidian.",
+   "Two ingots and a stick make [[enderio:dark_steel_sword]]. It takes the head with a **7 percent** chance: the zombie head from zombies for the Z-Logic controller, the [[enderio:enderman_head]] from endermen for {{enderio/aversion}}."
+  ],
+  "sources": [
+   "enderio:alloy_smelting/dark_steel_ingot",
+   "enderio:dark_steel_ingot_with_coal",
+   "oritech:foundry/alloy/compat/enderio/darksteel",
+   "enderio:dark_steel_sword",
+   "enderio-8.2.12-beta.jar com/enderio/enderio/content/armory/DarkSteelSwordItem.class (0.07, ENDERMAN_HEAD, ZOMBIE_HEAD)"
+  ]
+ },
+ "steel_alloy": {
+  "de": [
+   "Stahl geht auch ganz ohne Strom: **Zwei Eisenbarren über zwei Kohle** in der Werkbank ergeben einen [[mekanism:ingot_steel]] (Rezept von Oritech). Das Eisen pro Barren ist dasselbe wie in der Schmelze.",
+   "Am Obelisken gibst du per Schleichklick ab: Item in die Hand, Schleichklick, innerhalb von 5 Sekunden noch einmal. Abgegeben wird nur, was in den drei Hauptreihen liegt, nicht die Hotbar."
+  ],
+  "en": [
+   "Steel also works without power: **two iron ingots above two coal** in the crafting grid make one [[mekanism:ingot_steel]] (an Oritech recipe). The iron per ingot is the same as in the smelter.",
+   "At the obelisk you hand in with a sneak click: item in hand, sneak click, and again within 5 seconds. Only what is in the three main inventory rows goes in, not the hotbar."
+  ],
+  "sources": [
+   "oritech:crafting/alloy/steel",
+   "oritech:compat/enderio/alloy/steel",
+   "config/kronwerke/goals.json (stage3 tech #c:ingots/steel base 4000, scale)"
+  ]
+ },
+ "fused_quartz": {
+  "de": [
+   "Quarzglas kostet 6 400 µI, Klarglas 3 200 µI. Den Netherquarz holst du im Nether.",
+   "Mit Glowstein gibt es [[enderio:fused_quartz_e]] für {{enderio/solar_pulsating}}, mit einem Amethystblock [[enderio:fused_quartz_d]], das das Strahlende Fotovoltaikmodul braucht. Drei Quarzglas stecken in jeder Seelenampulle ({{enderio/vial}})."
+  ],
+  "en": [
+   "Fused quartz costs 6,400 µI, clear glass 3,200 µI. Get the nether quartz in the Nether.",
+   "With glowstone you get [[enderio:fused_quartz_e]] for {{enderio/solar_pulsating}}, with a block of amethyst [[enderio:fused_quartz_d]], which the vibrant photovoltaic module needs. Every soul vial ({{enderio/vial}}) takes three fused quartz."
+  ],
+  "sources": [
+   "enderio:alloy_smelting/fused_quartz",
+   "enderio:alloy_smelting/fused_quartz_alt",
+   "enderio:alloy_smelting/clear_glass",
+   "enderio:alloy_smelting/fused_quartz_e_from_main_alt",
+   "enderio:alloy_smelting/fused_quartz_d_from_main_alt",
+   "enderio:vibrant_photovoltaic_module",
+   "enderio:soul_vial"
+  ]
+ },
+ "sag_mill": {
+  "de": [
+   "Das [[create:crushing_wheel]] baust du mit Create aus Stufe 2. Jeder Mahlvorgang kostet 2 400 µI.",
+   "Rohes Eisen wird Eisenstaub von Occultism (mit 5 Prozent etwas Zinnstaub), Kohle wird [[enderio:powdered_coal]], Lapis wird Lapisstaub für {{enderio/solar}}, Netherquarz wird [[enderio:powdered_quartz]] für die Seelenkette. Bruchstein wird Kies, praktisch für {{enderio/binder}}."
+  ],
+  "en": [
+   "You build the [[create:crushing_wheel]] with Create from stage 2. Each grinding costs 2,400 µI.",
+   "Raw iron becomes Occultism iron dust (with a 5 percent chance of some tin dust), coal becomes [[enderio:powdered_coal]], lapis becomes lapis dust for {{enderio/solar}}, nether quartz becomes [[enderio:powdered_quartz]] for the soul chain. Cobblestone becomes gravel, handy for {{enderio/binder}}."
+  ],
+  "sources": [
+   "enderio:sag_mill",
+   "enderio:sag_milling/raw_iron",
+   "enderio:sag_milling/coal",
+   "enderio:sag_milling/lapis",
+   "enderio:sag_milling/quartz",
+   "enderio:sag_milling/cobblestone",
+   "enderio:sag_milling/sand"
+  ]
+ },
+ "grinding_ball": {
+  "de": [
+   "Die Leitfähige Kugel macht die Hauptausgabe 1,35 mal so groß, Bonus und Verbrauch bleiben gleich. Die [[enderio:dark_steel_grinding_ball]] hält am längsten, verdoppelt den Bonus und spart 30 Prozent Strom.",
+   "Die Redstone-Kugel ist die Sparkugel: nur 35 Prozent Verbrauch, sonst keine Änderung. Selbst ein Feuerstein geht als Kugel."
+  ],
+  "en": [
+   "The conductive ball makes the main output 1.35 times as large, bonus and power stay the same. The [[enderio:dark_steel_grinding_ball]] lasts longest, doubles the bonus and saves 30 percent power.",
+   "The redstone ball is the saver: only 35 percent power use, nothing else changes. Even a piece of flint works as a ball."
+  ],
+  "sources": [
+   "enderio:conductive_alloy_grinding_ball",
+   "enderio-8.2.12-beta.jar data/enderio/data_maps/item/grinding_ball.json"
+  ]
+ },
+ "binder": {
+  "de": [
+   "Den Verbundstoff schmilzt du im Ofen, im Hochofen doppelt so schnell oder in der Legierungsschmelze. Für 32 Bindemittel brauchst du 16 Verbundstoff, also zwei Rezepte.",
+   "Kies macht dir die Sägemühle aus Bruchstein. Bindemittel brauchst du auch für Reiseanker und die [[enderio:conduit_facade]]."
+  ],
+  "en": [
+   "Smelt the composite in a furnace, twice as fast in a blast furnace, or in the alloy smelter. 32 binders take 16 composite, so two recipes.",
+   "The SAG mill makes gravel from cobblestone. You also need binder for travel anchors and the [[enderio:conduit_facade]]."
+  ],
+  "sources": [
+   "enderio:conduit_binder_composite",
+   "enderio:conduit_binder_from_smelting",
+   "enderio:conduit_binder_from_blasting",
+   "enderio:sag_milling/cobblestone",
+   "enderio:travel_anchor",
+   "enderio:conduit_facade"
+  ]
+ },
+ "conduits": {
+  "de": [
+   "Auch fremde Leitungen passen in den Block: Drei AE2-Kabel, Refined-Storage-Kabel oder Mekanism-Röhren mit sechs Bindemitteln ergeben drei Ender-IO-Leitungen derselben Art.",
+   "Zum Aufrüsten legst du eine alte Leitung statt des mittleren Barrens ein. Mehr zum Vergleich mit anderen Rohren steht in {{list_transport/enderio_item}}."
+  ],
+  "en": [
+   "Other mods' lines fit into the block too: three AE2 cables, Refined Storage cables or Mekanism tubes with six binders make three Ender IO conduits of the same kind.",
+   "To upgrade, put an old conduit in place of the middle ingot. More on how they compare to other pipes is in {{list_transport/enderio_item}}."
+  ],
+  "sources": [
+   "enderio:ae_glass_cable",
+   "enderio:rs_conduit",
+   "enderio:mek_basic_pressurized_tube",
+   "enderio:enhanced_energy_conduit_upgrade",
+   "enderio:energetic_item_conduit_upgrade"
+  ]
+ },
+ "filter": {
+  "de": [
+   "Der [[enderio:yeta_wrench]] braucht drei Kupferbarren und ein Korn, der [[enderio:basic_item_filter]] vier Papier um einen Trichter.",
+   "Leitungen gleicher Art mit demselben Kanal tauschen untereinander aus, verschiedene Kanäle bleiben getrennt. So führst du mehrere Gegenstandsleitungen durch einen Block."
+  ],
+  "en": [
+   "The [[enderio:yeta_wrench]] takes three copper ingots and a grain, the [[enderio:basic_item_filter]] four paper around a hopper.",
+   "Conduits of one kind on the same channel exchange with each other, different channels stay apart. That way several item lines run through one block."
+  ],
+  "sources": [
+   "enderio:yeta_wrench",
+   "enderio:basic_item_filter"
+  ],
+  "client": [
+   "Channels keep conduits of one kind apart in the connection screen"
+  ]
+ },
+ "fluids": {
+  "de": [
+   "Der Behälter kann mehr als Eimer: Betonpulver mit 1 000 mB Wasser wird Beton, ein Schwamm wird nass, eine Glasflasche mit 250 mB flüssiger Erfahrung wird eine Erfahrungsflasche.",
+   "Der [[enderio:drain]] braucht Leitfähige Legierung, Klarglas, einen Eimer, ein Gehäuse der Leere und zwei Zahnräder."
+  ],
+  "en": [
+   "The tank does more than buckets: concrete powder with 1,000 mB of water becomes concrete, a sponge gets wet, a glass bottle with 250 mB of liquid experience becomes a bottle o' enchanting.",
+   "The [[enderio:drain]] needs conductive alloy, clear glass, a bucket, a void chassis and two gears."
+  ],
+  "sources": [
+   "enderio:tank_fill/white_concrete",
+   "enderio:tank_fill/wet_sponge",
+   "enderio:tank_fill/experience_bottle",
+   "enderio:drain"
+  ]
+ },
+ "soularium": {
+  "de": [
+   "Ein Barren kostet 5 600 µI. Seelensand und Seelenerde findest du im Seelensandtal des Nethers.",
+   "Die Seelenkette braucht zusätzlich Soularium-Nuggets, die Ampulle der Leere einen Barren. Rechne für die ganze Seelenreihe mit weit mehr als den 16 der Quest."
+  ],
+  "en": [
+   "One ingot costs 5,600 µI. Soul sand and soul soil are in the Nether's soul sand valley.",
+   "The soul chain also needs soularium nuggets, the vial of the void one ingot. For the whole soul line count on far more than the 16 of this quest."
+  ],
+  "sources": [
+   "enderio:alloy_smelting/soularium_ingot",
+   "enderio:soul_chain",
+   "enderio:void_vial"
+  ]
+ },
+ "vial": {
+  "de": [
+   "Eine volle Ampulle setzt du in den Seelenbinder. Ins Rezept des Seelenbinders selbst gehört eine **leere** Ampulle, auch der [[enderio:basic_soul_filter]] braucht eine.",
+   "Einen Spawner in der Welt kannst du mit der Ampulle nicht umstellen, das ist auf dem Server abgeschaltet. Für einen eigenen Spawner baust du {{enderio/powered_spawner}}."
+  ],
+  "en": [
+   "A full vial goes into the soul binder. The soul binder's own recipe takes an **empty** vial, and the [[enderio:basic_soul_filter]] needs one too.",
+   "You cannot change a spawner in the world with a vial, the server has that turned off. For a spawner of your own build {{enderio/powered_spawner}}."
+  ],
+  "sources": [
+   "enderio:soul_vial",
+   "kronwerke:tech/soul_binder (enderio:empty_soul_storage)",
+   "enderio:basic_soul_filter",
+   "config/enderio/base-common.toml (soulVials.allowSpawners false)"
+  ]
+ },
+ "ens_chassis": {
+  "de": [
+   "Den Quarzstaub für die [[enderio:soul_chain]] mahlt die Sägemühle aus Netherquarz. Ein Gerüst braucht vier Ketten, also zwei Kettenrezepte.",
+   "Zwei Gerüste reichen nur für den Anfang: Seelenbinder, Schlitz'und'Spleiß, Energiebetriebener Spawner, Abweisender Obelisk, EP-Obelisk und Seelenmotor wollen je eins."
+  ],
+  "en": [
+   "The SAG mill grinds the quartz dust for the [[enderio:soul_chain]] from nether quartz. One chassis needs four chains, so two chain recipes.",
+   "Two chassis only get you started: soul binder, Slice'N'Splice, powered spawner, aversion obelisk, XP obelisk and soul engine want one each."
+  ],
+  "sources": [
+   "enderio:ensouled_chassis",
+   "enderio:soul_chain",
+   "enderio:sag_milling/quartz",
+   "enderio:powered_spawner",
+   "enderio:soul_engine"
+  ]
+ },
+ "slicer": {
+  "de": [
+   "Der [[enderio:z_logic_controller]] ist kein Werkbankrezept: Du legst die sechs Teile in **Schlitz'und'Spleiß** selbst, er kostet 20 000 µI. Oben im Rezept der Maschine geht jeder Mobkopf.",
+   "Einen Zombiekopf bekommst du auch ohne Glück: acht Verrottetes Fleisch um ein Grim Talc von Malum, oder ein Skelettschädel mit Blut im Blutinfuser von EvilCraft."
+  ],
+  "en": [
+   "The [[enderio:z_logic_controller]] is no crafting recipe: you put the six parts into the **Slice'N'Splice** itself, it costs 20,000 µI. The top of the machine's own recipe takes any mob head.",
+   "A zombie head also comes without luck: eight rotten flesh around a grim talc from Malum, or a skeleton skull with blood in the EvilCraft blood infuser."
+  ],
+  "sources": [
+   "enderio:slicing/z_logic_controller",
+   "enderio:slice_and_splice (#minecraft:skulls)",
+   "malum:zombie_head_from_grim_talc",
+   "evilcraft:blood_infuser/convenience/minecraft_zombie_head"
+  ]
+ },
+ "malum": {
+  "de": [
+   "Der Weg in Malum: {{malum/soulstone}} für Refined Soulstone, Seelen mit der Sense ernten ({{malum/spirits}}), dann der Spirit Altar aus {{malum/altar}}. Das Soulstained Steel selbst ist {{malum/soul_steel}}.",
+   "Pro Barren brauchst du einen Eisenbarren, 4 Refined Soulstone und die Geister 3 Wicked, 1 Earthen, 1 Arcane."
+  ],
+  "en": [
+   "The way through Malum: {{malum/soulstone}} for refined soulstone, harvest spirits with the scythe ({{malum/spirits}}), then the spirit altar from {{malum/altar}}. Soulstained steel itself is {{malum/soul_steel}}.",
+   "Each ingot takes one iron ingot, 4 refined soulstone and the spirits 3 wicked, 1 earthen, 1 arcane."
+  ],
+  "sources": [
+   "malum:spirit_infusion/soul_stained_steel_ingot",
+   "kronwerke:tech/soul_binder"
+  ]
+ },
+ "soul_binder": {
+  "de": [
+   "Er zieht 60 µI/t und puffert 128 000 µI. Ein Frank'N'Zombie kostet 51 200 µI, der Enderkristall 76 800 µI, ein Energiebetriebener Spawner 288 000 µI.",
+   "Für den [[enderio:soul_engine]] brauchst du eine Zombieelektrode aus Schlitz'und'Spleiß. Außer der Lohe mit Lava nimmt er Zombie, Wüstenzombie und Zombiedorfbewohner mit Nährdestillat, Enderman mit Tau der Leere und Creeper mit Raketentreibstoff."
+  ],
+  "en": [
+   "It draws 60 µI/t and buffers 128,000 µI. A Frank'N'Zombie costs 51,200 µI, the ender crystal 76,800 µI, a powered spawner 288,000 µI.",
+   "The [[enderio:soul_engine]] needs a zombie electrode from the Slice'N'Splice. Besides the blaze with lava it takes zombie, husk and zombie villager with nutrient distillation, enderman with dew of the void and creeper with rocket fuel."
+  ],
+  "sources": [
+   "config/enderio/machines-common.toml (soulBinder usage 60, capacity 128000)",
+   "enderio:soulbinding/frank_n_zombie",
+   "enderio:soulbinding/ender_crystal",
+   "enderio:soulbinding/powered_spawner",
+   "enderio:soul_engine",
+   "enderio:slicing/zombie_electrode",
+   "enderio-8.2.12-beta.jar data/enderio/eio_soul/engine/"
+  ]
+ },
+ "soul_binding": {
+  "de": [
+   "Den [[enderio:broken_spawner]] lässt ein Spawner auf diesem Server **nicht** fallen. So kommst du dran: Bau den Spawner mit Behutsamkeit ab (Apothic Spawners, kostet 100 Haltbarkeit) und leg ihn allein in die Werkbank. Mehr dazu in {{apotheosis/spawner}}.",
+   "Der Frank'N'Zombie wird in keinem Rezept des Packs gebraucht, er ist nur der Test. Der Enderkristall ist das Ziel, das sich lohnt: Er führt zu {{enderio/travel}}."
+  ],
+  "en": [
+   "A spawner does **not** drop the [[enderio:broken_spawner]] on this server. This is how you get one: mine the spawner with Silk Touch (Apothic Spawners, costs 100 durability) and put it alone in the crafting grid. More in {{apotheosis/spawner}}.",
+   "No recipe in the pack uses the Frank'N'Zombie, it is just the test. The ender crystal is the target worth having: it leads to {{enderio/travel}}."
+  ],
+  "sources": [
+   "config/enderio/base-common.toml (brokenSpawner.dropChance 0.0)",
+   "kronwerke:tech/broken_spawner",
+   "kubejs/server_scripts/kronwerke/tech.js",
+   "srv/config/apothic_spawners.cfg (Spawner Silk Level 1, Spawner Silk Damage 100)",
+   "enderio:soulbinding/frank_n_zombie (no uses)"
+  ]
+ },
+ "enchanter": {
+  "de": [
+   "Ein paar Rezepte, die sich lohnen: ein Schleimball gibt Behutsamkeit, ein Skelettschädel Plünderung, die [[enderio:void_vial]] **Reparatur**. Die Ampulle der Leere baust du aus Soularium, Quarzglas, einem Verdächtigen Samen und zwei Körnern.",
+   "Alle 36 Verzauberungen und ihre Zutaten zeigt EMI unter dem Verzauberer."
+  ],
+  "en": [
+   "A few recipes worth knowing: a slimeball gives Silk Touch, a skeleton skull Looting, the [[enderio:void_vial]] **Mending**. You build the vial of the void from soularium, fused quartz, a suspicious seed and two grains.",
+   "EMI shows all 36 enchantments and their ingredients under the enchanter."
+  ],
+  "sources": [
+   "enderio:enchanting/silk_touch",
+   "enderio:enchanting/looting",
+   "enderio:enchanting/mending",
+   "enderio:void_vial"
+  ]
+ },
+ "vacuum_chest": {
+  "de": [
+   "Für Erfahrung gibt es die [[enderio:xp_vacuum]]: sieben Eisen, ein Pulsierender Kristall und eine Ampulle der Leere in der Mitte.",
+   "Unter einer Farm aus {{enderio/powered_spawner}} sammelt die Kiste die Beute ein."
+  ],
+  "en": [
+   "For experience there is the [[enderio:xp_vacuum]]: seven iron, a pulsating crystal and a vial of the void in the middle.",
+   "Under a farm from {{enderio/powered_spawner}} the chest collects the loot."
+  ],
+  "sources": [
+   "enderio:vacuum_chest",
+   "enderio:xp_vacuum"
+  ]
+ },
+ "farming": {
+  "de": [
+   "Die Station hängt an einem Feature-Schalter von Ender IO, und das Datenpaket dafür ist in der Welt abgeschaltet. Darum taucht das Rezept zwar auf, der Block lässt sich aber nicht nutzen.",
+   "Für Felder nimm {{industrial/sower}} und {{industrial/gatherer}} von Industrial Foregoing oder den Zerstörer aus {{oritech/destroyer}}."
+  ],
+  "en": [
+   "The station sits behind an Ender IO feature switch, and its datapack is turned off in the world. So the recipe shows up, but the block cannot be used.",
+   "For fields use {{industrial/sower}} and {{industrial/gatherer}} from Industrial Foregoing or the destroyer from {{oritech/destroyer}}."
+  ],
+  "sources": [
+   "enderio-8.2.12-beta.jar data/enderio/datapacks/farming_station/pack.mcmeta (features enderio:farming_station)",
+   "srv/world/level.dat (DataPacks Disabled: mod/enderio:data/enderio/datapacks/farming_station)"
+  ],
+  "client": [
+   "Whether EMI lists the farming station"
+  ]
+ },
+ "solar": {
+  "de": [
+   "Den Lapisstaub mahlt die Sägemühle aus Lapislazuli, jeder Lapisstaub des Packs geht. Eine Fotovoltaikplatte kostet 5 600 µI in der Schmelze, ein Modul braucht drei.",
+   "Für die zwei Module der Quest brauchst du also 6 Platten aus 12 Verbundstoff. Danach geht es zu {{enderio/solar_pulsating}}."
+  ],
+  "en": [
+   "The SAG mill grinds the lapis dust from lapis lazuli, any lapis dust in the pack works. One photovoltaic plate costs 5,600 µI in the smelter, a module needs three.",
+   "So the two modules of this quest need 6 plates from 12 composite. Next comes {{enderio/solar_pulsating}}."
+  ],
+  "sources": [
+   "enderio:photovoltaic_composite (#c:dusts/lapis)",
+   "enderio:sag_milling/lapis",
+   "enderio:alloy_smelting/photovoltaic_plate",
+   "enderio:energetic_photovoltaic_module",
+   "config/enderio/machines-common.toml (photovoltaicCellRates)"
+  ]
+ },
+ "solar_pulsating": {
+  "de": [
+   "Das Strahlende Modul ([[enderio:vibrant_photovoltaic_module]]) baust du genauso, nur mit Strahlender Legierung, [[enderio:fused_quartz_d]], zwei Oktadischen Kondensatoren, einem Glowsteinblock und dem Pulsierenden Modul in der Mitte unten.",
+   "Jede Stufe frisst die vorige, du verlierst also kein Modul."
+  ],
+  "en": [
+   "You build the vibrant module ([[enderio:vibrant_photovoltaic_module]]) the same way, just with vibrant alloy, [[enderio:fused_quartz_d]], two octadic capacitors, a glowstone block and the pulsating module in the bottom middle.",
+   "Each tier consumes the one before, so no module goes to waste."
+  ],
+  "sources": [
+   "enderio:pulsating_photovoltaic_module",
+   "enderio:vibrant_photovoltaic_module",
+   "config/enderio/machines-common.toml (photovoltaicCellRates pulsating 16, vibrant 64)"
+  ]
+ },
+ "painting": {
+  "de": [
+   "Außer der Fassade lackiert das Gerät Holztreppen, Holzstufen, Zäune, Zauntore, Mauern, Falltüren, Druckplatten, die Werkbank, Redstoneblock, Glowstein, Sand und den Reiseanker.",
+   "Die [[enderio:hardened_conduit_facade]] (vier Obsidianstaub um eine Fassade) hält Explosionen aus, die [[enderio:transparent_conduit_facade]] aus Bindemittel und Klarglas lässt die Leitung durchscheinen."
+  ],
+  "en": [
+   "Besides the facade the machine paints wooden stairs, wooden slabs, fences, fence gates, walls, trapdoors, pressure plates, the crafting table, redstone block, glowstone, sand and the travel anchor.",
+   "The [[enderio:hardened_conduit_facade]] (four obsidian dust around a facade) withstands explosions, the [[enderio:transparent_conduit_facade]] from binder and clear glass lets the conduit show through."
+  ],
+  "sources": [
+   "enderio:painting_machine",
+   "config/enderio/machines-common.toml (paintingMachine usage 30, energyCost 2400)",
+   "enderio:painting/* (28 painting recipes, inputs)",
+   "enderio:hardened_conduit_facade",
+   "enderio:transparent_conduit_facade"
+  ],
+  "client": [
+   "Hardened facade is explosion resistant, transparent facade shows the conduit"
+  ]
+ },
+ "xp_obelisk": {
+  "de": [
+   "Zwei Verdächtige Samen pro Stab: Sammel sie beim Körnerbrennen aus {{enderio/grains}}, jedes Feuer auf Grundgestein gibt mit 30 Prozent einen.",
+   "Den EP-Saft kannst du im Flüssigkeitsbehälter in Erfahrungsflaschen füllen, 250 mB pro Flasche."
+  ],
+  "en": [
+   "Two suspicious seeds per rod: collect them while burning grains in {{enderio/grains}}, every fire on bedrock gives one with a 30 percent chance.",
+   "You can fill the liquid experience into bottles o' enchanting in the fluid tank, 250 mB per bottle."
+  ],
+  "sources": [
+   "enderio:experience_rod",
+   "enderio:xp_obelisk",
+   "enderio:fire_crafting/bedrock_infinity",
+   "enderio:tank_fill/experience_bottle"
+  ]
+ },
+ "powered_spawner": {
+  "de": [
+   "Den [[enderio:broken_spawner]] bekommst du nur über Behutsamkeit: Spawner abbauen und allein in die Werkbank legen ({{enderio/soul_binding}}).",
+   "Er zieht 20 µI/t und puffert 100 000 µI. Ein [[industrialforegoing:mob_crusher]] aus {{industrial/crusher}} daneben macht die Farm fertig."
+  ],
+  "en": [
+   "You only get the [[enderio:broken_spawner]] through Silk Touch: mine the spawner and put it alone in the crafting grid ({{enderio/soul_binding}}).",
+   "It draws 20 µI/t and buffers 100,000 µI. An [[industrialforegoing:mob_crusher]] from {{industrial/crusher}} next to it completes the farm."
+  ],
+  "sources": [
+   "enderio:powered_spawner",
+   "kronwerke:tech/broken_spawner",
+   "config/enderio/machines-common.toml (poweredSpawner usage 20, spawnAmount 4, maxEntities 2, maxSpawners 10)"
+  ]
+ },
+ "aversion": {
+  "de": [
+   "Gebraucht wird der [[enderio:enderman_head]] von Ender IO, kein anderer Kopf. Ihn gibt es nur vom Enderman, den du mit Der Ender tötest, mit 7 Prozent.",
+   "16 Blöcke Umkreis reichen für eine kleine Basis, für mehr stellst du mehrere Obelisken auf. Der Seelenfilter kostet eine Seelenampulle."
+  ],
+  "en": [
+   "It needs the Ender IO [[enderio:enderman_head]], no other head. You only get it from endermen killed with The Ender, with a 7 percent chance.",
+   "A 16 block radius covers a small base, for more place several obelisks. The soul filter costs one soul vial."
+  ],
+  "sources": [
+   "enderio:aversion_obelisk (enderio:enderman_head)",
+   "DarkSteelSwordItem.class (0.07)",
+   "config/enderio/machines-common.toml (obelisks.aversionRange 16)",
+   "enderio:basic_soul_filter"
+  ]
+ },
+ "travel": {
+  "de": [
+   "Ein Anker ist billig: vier Eisen, vier Bindemittel und ein Pulsierender Kristall.",
+   "Lackiert im Lackiergerät ({{enderio/painting}}) wird daraus ein [[enderio:painted_travel_anchor]], der im Boden verschwindet. Weitere Wege zu reisen stehen in {{list_dimensions/r_enderio}}."
+  ],
+  "en": [
+   "An anchor is cheap: four iron, four binders and a pulsating crystal.",
+   "Painted in the painting machine ({{enderio/painting}}) it becomes a [[enderio:painted_travel_anchor]] that vanishes into the floor. Other ways to travel are in {{list_dimensions/r_enderio}}."
+  ],
+  "sources": [
+   "config/enderio/base-common.toml (items.travelling: blinkRange 24, disabledTime 5, energyUse 1000, maxEnergy 100000, itemToBlockRange 192, blockToBlockRange 96)",
+   "enderio:travel_anchor",
+   "enderio:staff_of_travelling",
+   "enderio:painting/painted_travel_anchor"
+  ]
+ },
+ "charger": {
+  "de": [
+   "Das Kabelgebundene Ladegerät zieht 60 µI/t und puffert 128 000 µI. Was du hineinlegst, sind vor allem der Stab des Reisenden aus {{enderio/travel}} und andere Gegenstände mit µI-Speicher.",
+   "Das Drahtlose lädt mit 60 µI/t und braucht 2 µI/t für sich selbst."
+  ],
+  "en": [
+   "The wired charger draws 60 µI/t and buffers 128,000 µI. What goes in is mainly the staff of travelling from {{enderio/travel}} and other items that store µI.",
+   "The wireless one charges at 60 µI/t and uses 2 µI/t for itself."
+  ],
+  "sources": [
+   "config/enderio/machines-common.toml (wiredCharger usage 60, capacity 128000; wirelessCharger chargeRate 60, energyUpkeep 2)",
+   "config/enderio/base-common.toml (travelling maxEnergy 100000)",
+   "enderio:wired_charger",
+   "enderio:wireless_charger"
+  ]
+ },
+ "crafter": {
+  "de": [
+   "Der Fertiger braucht viel Strom: **3 200 µI** pro Herstellung, er puffert 64 000 µI. Ein Stirling Generator allein reicht für Dauerbetrieb nicht, häng eine Kondensatorbank davor.",
+   "Silikon mahlt dir die Sägemühle aus Sand, mit 50 Prozent pro Sand."
+  ],
+  "en": [
+   "The crafter is hungry: **3,200 µI** per craft, and it buffers 64,000 µI. One Stirling generator alone does not keep it running, put a capacitor bank in front of it.",
+   "The SAG mill grinds silicon from sand, with a 50 percent chance per sand."
+  ],
+  "sources": [
+   "config/enderio/machines-common.toml (crafter usage 3200, capacity 64000)",
+   "enderio:crafter",
+   "enderio:sag_milling/sand"
+  ],
+  "client": [
+   "The crafter's usage 3200 is per craft, not per tick"
+  ]
+ }
+}

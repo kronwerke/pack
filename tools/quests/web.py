@@ -263,9 +263,25 @@ def main():
             im.save(dst, lossless=True, method=6)
     shutil.rmtree(tmp, ignore_errors=True)
 
+    # help files that do not load (one being written right now) are left out, not copied broken
     help_dir = os.path.join(here, "help")
+    helped = 0
     if os.path.isdir(help_dir):
-        shutil.copytree(help_dir, os.path.join(out, "help"))
+        os.makedirs(os.path.join(out, "help"))
+        for f in sorted(os.listdir(help_dir)):
+            if not f.endswith(".json"):
+                continue
+            try:
+                with open(os.path.join(help_dir, f), encoding="utf-8") as fh:
+                    h = json.load(fh)
+            except ValueError:
+                print("help: skipped", f, "(not valid JSON)")
+                continue
+            h = {k: {"de": v.get("de", []), "en": v.get("en", [])} for k, v in h.items() if isinstance(v, dict)}
+            helped += len(h)
+            with open(os.path.join(out, "help", f), "w", encoding="utf-8") as fh:
+                json.dump(h, fh, ensure_ascii=False, separators=(",", ":"))
+    print(f"help for {helped} quests")
 
     n = sum(c["quests"] for c in book)
     print(f"{len(book)} chapters, {n} quests, {len(names)} items, {len(textures) - len(missing)} pictures"

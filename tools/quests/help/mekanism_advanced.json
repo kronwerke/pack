@@ -1,0 +1,748 @@
+{
+ "welcome": {
+  "de": [
+   "Der Schaltkreis hat auf Kronwerke ein eigenes Rezept: [[mekanism:alloy_infused]], [[mekanism:basic_control_circuit]], Infundierte Legierung in der oberen Reihe, darunter in der Mitte ein [[ae2:printed_silicon]]. Das Gedruckte Silizium presst der AE2-Inscriber mit dem [[ae2:silicon_press]] aus Silizium ({{ae2/inscriber}}).",
+   "Fast alles in diesem Kapitel will Fortschrittliche Steuerschaltkreise, leg darum gleich einen Vorrat an ({{mekanism_advanced/circuits}})."
+  ],
+  "en": [
+   "Kronwerke has its own recipe: [[mekanism:alloy_infused]], [[mekanism:basic_control_circuit]], Infused Alloy in the top row, with one [[ae2:printed_silicon]] below the middle. The AE2 Inscriber presses Printed Silicon from silicon with the [[ae2:silicon_press]] ({{ae2/inscriber}}).",
+   "Almost everything in this chapter needs Advanced Control Circuits, so start a stock right away ({{mekanism_advanced/circuits}})."
+  ],
+  "sources": [
+   "kronwerke:tech/advanced_control_circuit (ACA / P )",
+   "kubejs/server_scripts/kronwerke/tech.js (all other circuit recipes removed)",
+   "ae2:inscriber/silicon_print"
+  ]
+ },
+ "circuits": {
+  "de": [
+   "Die Quest prüft nur dein Inventar und nimmt die 16 nicht weg. Gedrucktes Silizium in Menge machen die [[mekmm:cnc_stamper]] ({{mekanism_advanced/cnc_stamper}}) oder der Circuit Slicer von ExtendedAE, der aus einem Siliziumblock neun Stück schneidet.",
+   "Am Obelisken sind 250 Schaltkreise das Grundziel für 30 aktive Spieler. Beim Öffnen von Stufe 3 wird die Zahl einmal mit 0,4 bis 1,5 verrechnet."
+  ],
+  "en": [
+   "The quest only checks your inventory and does not take the 16. For Printed Silicon in bulk use the [[mekmm:cnc_stamper]] ({{mekanism_advanced/cnc_stamper}}) or ExtendedAE's Circuit Slicer, which cuts a silicon block into nine.",
+   "At the obelisk, 250 circuits is the base goal for 30 active players. When stage 3 opens, the number is scaled once by 0.4 to 1.5."
+  ],
+  "sources": [
+   "config/ftbquests/quests/data.snbt (default_consume_items false)",
+   "extendedae:cutter/silicon_print (9)",
+   "config/kronwerke/goals.json (stage3 advanced_control_circuit base 250, scale)",
+   "docs/STAGES.md (rule 4)"
+  ]
+ },
+ "diamond": {
+  "de": [
+   "Die [[mekanism:enrichment_chamber]] macht aus einem Diamanten einen [[mekanism:enriched_diamond]]. In der Metallurgischen Infusionsanlage gibt er 80 mB Diamant, ein [[mekanism:dust_diamond]] nur 10 mB.",
+   "Eine Verstärkte Legierung braucht 20 mB, ein Raffinierter Obsidianstaub 10 mB. Steck den Diamanten also nie als Staub hinein."
+  ],
+  "en": [
+   "The [[mekanism:enrichment_chamber]] turns a diamond into an [[mekanism:enriched_diamond]]. In the Metallurgic Infuser it gives 80 mB of diamond, a [[mekanism:dust_diamond]] only 10 mB.",
+   "A Reinforced Alloy takes 20 mB, a Refined Obsidian Dust 10 mB. So never feed the diamond in as dust."
+  ],
+  "sources": [
+   "mekanism:enriching/enriched/diamond",
+   "Mekanism jar: data/mekanism/recipe/chemical_conversion/diamond/from_enriched.json (80), from_dust.json (10)",
+   "mekanism:metallurgic_infusing/alloy/reinforced (20)"
+  ]
+ },
+ "reinforced": {
+  "de": [
+   "In der Metallurgischen Infusionsanlage wird eine [[mekanism:alloy_infused]] mit 20 mB Diamant zur [[mekanism:alloy_reinforced]]. Ein Angereicherter Diamant reicht für vier Stück.",
+   "Sie steckt im [[kronwerke:elven_star]], dem Magie-Meilenstein ({{alfheim/elven_star}}), in der {{mekanism_advanced/atomic}} und in Stufe 4 im Elite-Schaltkreis."
+  ],
+  "en": [
+   "In the Metallurgic Infuser an [[mekanism:alloy_infused]] with 20 mB of diamond becomes a [[mekanism:alloy_reinforced]]. One Enriched Diamond covers four.",
+   "It goes into the [[kronwerke:elven_star]], the magic milestone ({{alfheim/elven_star}}), into {{mekanism_advanced/atomic}} and in stage 4 into the Elite Control Circuit."
+  ],
+  "sources": [
+   "mekanism:metallurgic_infusing/alloy/reinforced",
+   "kronwerke:milestones/elven_star (R = alloy_reinforced)",
+   "kronwerke:tech/elite_control_circuit"
+  ]
+ },
+ "compressor": {
+  "de": [
+   "Rezept: [[mekanism:alloy_infused]] in den Ecken, Fortschrittliche Steuerschaltkreise oben und unten, Eimer links und rechts, ein [[mekanism:steel_casing]] in der Mitte.",
+   "Ein Osmiumbarren im Chemikalien-Slot wird zu 200 mB Osmium. Die Maschine zieht davon laufend, solange sie arbeitet, nicht eine feste Menge pro Stück. Damit presst sie Raffiniertes Obsidian und Raffiniertes Glowstone."
+  ],
+  "en": [
+   "Recipe: [[mekanism:alloy_infused]] in the corners, Advanced Control Circuits top and bottom, buckets left and right, a [[mekanism:steel_casing]] in the middle.",
+   "An osmium ingot in the chemical slot becomes 200 mB of osmium. The machine draws from it continuously while it works, not a fixed amount per item. It presses Refined Obsidian and Refined Glowstone."
+  ],
+  "sources": [
+   "mekanism:osmium_compressor (ACA / BXB / ACA)",
+   "Mekanism jar: chemical_conversion/osmium_from_ingot.json (200)",
+   "mekanism:processing/refined_obsidian/ingot/from_dust (per_tick_usage true)"
+  ]
+ },
+ "refined_obsidian": {
+  "de": [
+   "Der [[mekanism:crusher]] macht aus einem Obsidian vier [[create:powdered_obsidian]], so heißt der Obsidianstaub in diesem Pack. Den Staub mit 10 mB Diamant in die Infusionsanlage gibt [[mekanism:dust_refined_obsidian]], der im {{mekanism_advanced/compressor}} zum [[mekanism:ingot_refined_obsidian]] wird.",
+   "Für die Atomlegierung brauchst du keine Barren: Dort gehört der Staub über die Anreicherungskammer hinein ({{mekanism_advanced/atomic}})."
+  ],
+  "en": [
+   "The [[mekanism:crusher]] turns one obsidian into four [[create:powdered_obsidian]], which is this pack's obsidian dust. That dust with 10 mB of diamond in the infuser gives [[mekanism:dust_refined_obsidian]], which the {{mekanism_advanced/compressor}} turns into a [[mekanism:ingot_refined_obsidian]].",
+   "Atomic Alloy needs no ingots: there the dust goes in through the Enrichment Chamber ({{mekanism_advanced/atomic}})."
+  ],
+  "sources": [
+   "mekanism:crushing/obsidian_to_dust (create:powdered_obsidian x4)",
+   "mekanism:processing/refined_obsidian/dust/from_obsidian_dust (diamond 10)",
+   "mekanism:processing/refined_obsidian/ingot/from_dust"
+  ]
+ },
+ "refined_glowstone": {
+  "de": [
+   "Ein [[minecraft:glowstone_dust]] wird im {{mekanism_advanced/compressor}} zu einem [[mekanism:ingot_refined_glowstone]]. Acht Raffinierte Obsidianbarren um einen davon geben neun [[mekanism:teleporter_frame]].",
+   "Glowstone wächst im Nether, der auf einem eigenen Server läuft. Bring dir einen Vorrat Staub mit."
+  ],
+  "en": [
+   "One [[minecraft:glowstone_dust]] becomes one [[mekanism:ingot_refined_glowstone]] in the {{mekanism_advanced/compressor}}. Eight Refined Obsidian Ingots around one of them give nine [[mekanism:teleporter_frame]].",
+   "Glowstone grows in the Nether, which runs on its own server. Bring a stock of dust back with you."
+  ],
+  "sources": [
+   "mekanism:processing/refined_glowstone/ingot/from_dust",
+   "mekanism:teleporter_frame (III / IGI / III, 9)"
+  ]
+ },
+ "atomic": {
+  "de": [
+   "Eine [[mekanism:alloy_reinforced]] mit 40 mB Raffiniertem Obsidian gibt eine [[mekanism:alloy_atomic]]. Schick den [[mekanism:dust_refined_obsidian]] erst durch die Anreicherungskammer: Als [[mekanism:enriched_refined_obsidian]] gibt er 80 mB statt 10 mB, genug für zwei Legierungen.",
+   "Atomlegierung brauchst du für Teleportationskern, Robit und Atomic Disassembler, in Stufe 4 für den Ultimativen Steuerschaltkreis."
+  ],
+  "en": [
+   "A [[mekanism:alloy_reinforced]] with 40 mB of refined obsidian gives an [[mekanism:alloy_atomic]]. Run the [[mekanism:dust_refined_obsidian]] through the Enrichment Chamber first: as [[mekanism:enriched_refined_obsidian]] it gives 80 mB instead of 10 mB, enough for two alloys.",
+   "You need Atomic Alloy for the Teleportation Core, the Robit and the Atomic Disassembler, and in stage 4 for the Ultimate Control Circuit."
+  ],
+  "sources": [
+   "mekanism:metallurgic_infusing/alloy/atomic (40)",
+   "mekanism:enriching/enriched/refined_obsidian",
+   "Mekanism jar: chemical_conversion/refined_obsidian/from_enriched.json (80), from_dust.json (10)",
+   "mekanism:control_circuit/ultimate"
+  ]
+ },
+ "ro_paxel": {
+  "de": [
+   "Das [[mekanismtools:refined_obsidian_paxel]] ist kein Werkbankrezept aus Barren: Du brauchst fertige Obsidianaxt, Obsidianspitzhacke und Obsidianschaufel nebeneinander oben, darunter zwei Stöcke in der Mitte. Rechne also mit 7 Barren und 4 Stöcken.",
+   "Laut Config hat es Abbautempo 12, 8 192 Haltbarkeit und Verzauberbarkeit 18, das Netherit-Paxel 9, 4 062 und 15."
+  ],
+  "en": [
+   "The [[mekanismtools:refined_obsidian_paxel]] is not made from ingots directly: you need a finished Refined Obsidian Axe, Pickaxe and Shovel side by side on top, with two sticks below in the middle. Count on 7 ingots and 4 sticks.",
+   "By config it has mining speed 12, 8,192 durability and enchantability 18; the Netherite Paxel has 9, 4,062 and 15."
+  ],
+  "sources": [
+   "mekanismtools:refined_obsidian/tools/paxel (APS /  R /  R )",
+   "srv/config/Mekanism/tools-materials-startup.toml (refined_obsidianPaxel*, netheritePaxel*)"
+  ]
+ },
+ "ro_armor": {
+  "de": [
+   "Helm 5, Brustpanzer 8, Hose 7 und Stiefel 4 Barren, zusammen 24 [[mekanism:ingot_refined_obsidian]]. Laut Config gibt der Satz 31 Rüstung (6, 12, 8, 5), dazu 5 Härte und 20 Prozent Rückstoßschutz pro Teil.",
+   "Die Teile lassen sich wie jede Rüstung verzaubern. Für die Barren brauchst du die Straße aus {{mekanism_advanced/refined_obsidian}}."
+  ],
+  "en": [
+   "Helmet 5, chestplate 8, leggings 7 and boots 4 ingots, 24 [[mekanism:ingot_refined_obsidian]] in all. By config the set gives 31 armor (6, 12, 8, 5), plus 5 toughness and 20 percent knockback resistance per piece.",
+   "The pieces take enchantments like any armor. The ingots come from the line in {{mekanism_advanced/refined_obsidian}}."
+  ],
+  "sources": [
+   "mekanismtools:refined_obsidian/armor/*",
+   "srv/config/Mekanism/tools-materials-startup.toml (refined_obsidian*Armor, Toughness 5.0, KnockbackResistance 0.2)"
+  ]
+ },
+ "teleport_core": {
+  "de": [
+   "Auf Kronwerke ersetzen [[botania:mana_pearl]] die Enderperlen in den vier Ecken. Eine Manaperle ist eine Enderperle, die im Manapool 6 000 Mana aufnimmt, frag einen Botaniker oder bau dir einen Pool.",
+   "Dazu kommen 2 [[mekanism:alloy_atomic]], 2 Goldbarren und ein Diamant. Für Teleporter und Tragbaren Teleportierer brauchst du je einen Kern, für das Digitale Abbaugerät zwei."
+  ],
+  "en": [
+   "On Kronwerke [[botania:mana_pearl]] replace the ender pearls in the four corners. A Mana Pearl is an ender pearl that soaked up 6,000 mana in a mana pool; ask a Botania player or build a pool yourself.",
+   "Add 2 [[mekanism:alloy_atomic]], 2 gold ingots and a diamond. The Teleporter and the Portable Teleporter take one core each, the Digital Miner two."
+  ],
+  "sources": [
+   "mekanism:teleportation_core (#A# / IDI / #A#)",
+   "kubejs/server_scripts/kronwerke/links.js (ender_pearls to botania:mana_pearl)",
+   "kronwerke:magic/mana_pearl (6000 mana)",
+   "mekanism:digital_miner (TXT)"
+  ]
+ },
+ "teleporter": {
+  "de": [
+   "Der [[mekanism:teleporter]] ist ein Teleportationskern mit vier [[mekanism:steel_casing]] im Kreuz und vier Einfachen Steuerschaltkreisen in den Ecken. Ein Portal braucht 9 [[mekanism:teleporter_frame]], für zwei Teleporter also zwei Teleporter und 18 Rahmen, mehr als die Quest prüft.",
+   "Jeder Sprung kostet laut Config 400 FE plus 4 FE pro Block Entfernung, in eine andere Dimension 4 000 FE mehr. Der Teleporter puffert 2 000 000 FE, hängt ihn an ein Kabel."
+  ],
+  "en": [
+   "The [[mekanism:teleporter]] is a Teleportation Core with four [[mekanism:steel_casing]] in a cross and four Basic Control Circuits in the corners. One portal needs 9 [[mekanism:teleporter_frame]], so two teleporters take two Teleporters and 18 frames, more than the quest checks.",
+   "By config each jump costs 400 FE plus 4 FE per block of distance, and 4,000 FE more into another dimension. The teleporter buffers 2,000,000 FE; put it on a cable."
+  ],
+  "sources": [
+   "mekanism:teleporter (CXC / XTX / CXC)",
+   "mekanism:teleporter_frame (9)",
+   "srv/config/Mekanism/machine-usage.toml (teleporter base 1000, distance 10, dimensionPenalty 10000 J)",
+   "srv/config/Mekanism/machine-storage.toml (teleporter 5000000 J)",
+   "general.toml feConversionRate 2.5"
+  ],
+  "client": [
+   "Frame shape 3 wide, 4 high with the teleporter at the bottom middle (from the quest text, not checked)"
+  ]
+ },
+ "portable_teleporter": {
+  "de": [
+   "Rezept: [[mekanism:teleportation_core]] in der Mitte, zwei [[mekanism:energy_tablet]] oben und unten, zwei Einfache Steuerschaltkreise links und rechts. Er speichert laut Config 400 000 FE und kostet pro Sprung so viel wie ein stehender Teleporter.",
+   "Lade ihn am [[mekanism:chargepad]] oder im Ladeslot eines Energie-Würfels. Laut Kronwerke Core findet er auch Teleporter derselben Frequenz auf anderen Servern des Netzes und bringt dich dorthin."
+  ],
+  "en": [
+   "Recipe: [[mekanism:teleportation_core]] in the middle, two [[mekanism:energy_tablet]] top and bottom, two Basic Control Circuits left and right. By config it stores 400,000 FE and each jump costs as much as with a placed teleporter.",
+   "Charge it on a [[mekanism:chargepad]] or in an energy cube's charge slot. According to Kronwerke Core it also finds teleporters of the same frequency on other servers of the network and takes you there."
+  ],
+  "sources": [
+   "mekanism:portable_teleporter ( E  / CTC /  E )",
+   "srv/config/Mekanism/gear.toml (portable_teleporter maxEnergy 1000000 J)",
+   "core: share/mek/FrequencyLayer.java, mixin/MekPortableTeleporterRemoteMixin.java"
+  ],
+  "client": [
+   "Jump to a teleporter on another server of the network (Core FrequencyLayer, needs the shared network on)"
+  ]
+ },
+ "robit": {
+  "de": [
+   "Rezept: ein Stahlbarren oben in der Mitte, darunter [[mekanism:energy_tablet]], [[mekanism:alloy_atomic]], Energietablett, unten Raffinierter Obsidianbarren, [[mekanism:personal_chest]] oder Persönliches Fass, Raffinierter Obsidianbarren.",
+   "Du setzt ihn mit Rechtsklick auf ein [[mekanism:chargepad]], dort lädt er sich auch. Ein Robit steckt im Digitalen Abbaugerät ({{mekanism_advanced/miner}}) und zwei in der CNC Lathe ({{mekanism_advanced/lathe}})."
+  ],
+  "en": [
+   "Recipe: one steel ingot top middle, then [[mekanism:energy_tablet]], [[mekanism:alloy_atomic]], Energy Tablet, and at the bottom Refined Obsidian Ingot, [[mekanism:personal_chest]] or Personal Barrel, Refined Obsidian Ingot.",
+   "You place it with a right click on a [[mekanism:chargepad]], where it also charges. One Robit goes into the Digital Miner ({{mekanism_advanced/miner}}) and two into the CNC Lathe ({{mekanism_advanced/lathe}})."
+  ],
+  "sources": [
+   "mekanism:robit ( S  / EAE / IPI, P = #mekanism:personal_storage)",
+   "mekmm:cnc_lathe (#X#, # = robit)"
+  ],
+  "client": [
+   "Robit can only be placed on a chargepad"
+  ]
+ },
+ "miner": {
+  "de": [
+   "Rezept: oben Atomlegierung, Einfacher Steuerschaltkreis, Atomlegierung, Mitte [[mekanism:logistical_sorter]], [[mekanism:robit]], Sortierer, unten [[mekanism:teleportation_core]], [[mekanism:steel_casing]], Teleportationskern.",
+   "Laut Config zieht er 400 FE/t, braucht 80 Ticks pro Block und reicht bis 32 Blöcke weit. **Ohne Filter baut er nichts ab**, das richtest du in {{mekanism_advanced/miner_setup}} ein. Ein [[mekanism:upgrade_anchor]] hält seinen Chunk geladen."
+  ],
+  "en": [
+   "Recipe: top Atomic Alloy, Basic Control Circuit, Atomic Alloy; middle [[mekanism:logistical_sorter]], [[mekanism:robit]], sorter; bottom [[mekanism:teleportation_core]], [[mekanism:steel_casing]], Teleportation Core.",
+   "By config it draws 400 FE/t, takes 80 ticks per block and reaches up to 32 blocks. **Without a filter it mines nothing**; set that up in {{mekanism_advanced/miner_setup}}. An [[mekanism:upgrade_anchor]] keeps its chunk loaded."
+  ],
+  "sources": [
+   "mekanism:digital_miner (ACA / SRS / TXT)",
+   "srv/config/Mekanism/machine-usage.toml (digitalMiner 1000 J)",
+   "srv/config/Mekanism/general.toml (digital_miner maxRadius 32, ticksPerMine 80, silkMultiplier 12)"
+  ]
+ },
+ "disassembler": {
+  "de": [
+   "Rezept: oben Infundierte Legierung, [[mekanism:energy_tablet]], Infundierte Legierung, Mitte Infundierte Legierung, [[mekanism:alloy_atomic]], Infundierte Legierung, unten in der Mitte ein Raffinierter Obsidianbarren.",
+   "Auf Kronwerke ist sein Aderabbau-Modus laut Config **aus**. Für ganze Adern gibt es in Stufe 4 das Meka-Werkzeug mit dem Ader-Abbau-Modul ({{mekanism_elite/mod_tools}})."
+  ],
+  "en": [
+   "Recipe: top Infused Alloy, [[mekanism:energy_tablet]], Infused Alloy; middle Infused Alloy, [[mekanism:alloy_atomic]], Infused Alloy; one Refined Obsidian Ingot bottom middle.",
+   "On Kronwerke its vein mining mode is **off** by config. For whole veins, stage 4 brings the Meka-Tool with the Vein Mining Unit ({{mekanism_elite/mod_tools}})."
+  ],
+  "sources": [
+   "mekanism:atomic_disassembler (AEA / A#A /  I )",
+   "srv/config/Mekanism/gear.toml (atomic_disassembler veinMining false)",
+   "mekanism:meka_tool (# = atomic_disassembler)"
+  ]
+ },
+ "robit_use": {
+  "de": [
+   "Der Robit gehört zu dem [[mekanism:chargepad]], auf das du ihn gesetzt hast: Dort lädt er sich, und dorthin schickt ihn der Knopf Nach Hause. Für eine Mine weit weg setz ihn dort auf ein eigenes Ladepad.",
+   "Seine Werkbank und sein Amboss sparen Wege, sein Ofen nimmt dir das Schmelzen unterwegs ab."
+  ],
+  "en": [
+   "The Robit belongs to the [[mekanism:chargepad]] you placed it on: it charges there, and the Home button sends it back there. For a mine far away, place it on a chargepad of its own there.",
+   "Its crafting table and anvil save trips, its furnace does the smelting on the way."
+  ],
+  "sources": [
+   "mekanism:robit",
+   "mekanism:chargepad"
+  ],
+  "client": [
+   "Robit GUI tabs and buttons",
+   "Robit charges only on its chargepad and Home returns it there",
+   "What the robit's furnace burns"
+  ]
+ },
+ "miner_setup": {
+  "de": [
+   "Leg die Ersatzblöcke, zum Beispiel Bruchstein, in das Inventar des Abbaugeräts, sonst bleiben trotz Ersatz-Einstellung Löcher. Behutsamkeit kostet laut Config das Zwölffache an Strom.",
+   "Ziehen aus EMI in den Filter ist auf diesem Server aus. Für einen Gegenstandsfilter musst du den Block also wirklich im Inventar haben, oder du nimmst gleich einen Tag-Filter wie c:ores."
+  ],
+  "en": [
+   "Put the replacement blocks, for example cobblestone, into the miner's inventory, or holes stay despite the replace setting. Silk Touch costs twelve times the power by config.",
+   "Dragging from EMI into a filter is off on this server. For an item filter you need the actual block in your inventory, or use a tag filter such as c:ores right away."
+  ],
+  "sources": [
+   "srv/config/Mekanism/general.toml (digital_miner silkMultiplier 12, easyMinerFilters false)"
+  ],
+  "client": [
+   "Replace block taken from the miner's inventory"
+  ]
+ },
+ "security": {
+  "de": [
+   "Der Schutz von Maschinen ist auf dem Server an, und auch Operatoren kommen an private Maschinen nicht heran. Die Sicherheitsstufe gilt für den Block, die Frequenz hat ihre eigene Einstellung: Stell beide auf privat.",
+   "Für viele Maschinen auf einmal gibt es in Stufe 4 das Sicherheitspult ({{mekanism_elite/security_desk}})."
+  ],
+  "en": [
+   "Machine protection is on on this server, and even operators cannot open private machines. The security level applies to the block, the frequency has its own setting: set both to private.",
+   "For many machines at once, stage 4 brings the Security Desk ({{mekanism_elite/security_desk}})."
+  ],
+  "sources": [
+   "srv/config/Mekanism/general.toml (security allowProtection true, opsBypassRestrictions false; does not affect frequencies)"
+  ]
+ },
+ "installer": {
+  "de": [
+   "Rezept: [[mekanism:alloy_infused]] in den Ecken, Fortschrittliche Steuerschaltkreise oben und unten, Osmiumbarren links und rechts, ein beliebiges Brett in der Mitte. Rechtsklick auf eine Einfache Fabrik, und sie wird fortschrittlich.",
+   "Der Installateur wirkt auch auf Fabriken von MoreMachine, zum Beispiel auf die Stanzfabrik ({{mekanism_advanced/stamping_factory}})."
+  ],
+  "en": [
+   "Recipe: [[mekanism:alloy_infused]] in the corners, Advanced Control Circuits top and bottom, osmium ingots left and right, any plank in the middle. Right click a basic factory and it becomes advanced.",
+   "The installer also works on MoreMachine factories, for example the stamping factory ({{mekanism_advanced/stamping_factory}})."
+  ],
+  "sources": [
+   "mekanism:tier_installer/advanced (ACA / IPI / ACA)",
+   "mekmm:factory/advanced/stamping"
+  ],
+  "client": [
+   "Tier installer on a placed MoreMachine factory"
+  ]
+ },
+ "adv_factory": {
+  "de": [
+   "An der Werkbank: [[mekanism:basic_purifying_factory]] in die Mitte, Infundierte Legierung in die Ecken, Fortschrittliche Steuerschaltkreise oben und unten, Osmium links und rechts. Die Einfache Fabrik selbst ist eine [[mekanism:purification_chamber]] mit dem Einfachen Installateur.",
+   "Wie die Klärkammer braucht sie Sauerstoff im Chemikalien-Slot. Wie die ganze Verdreifachung läuft, steht in {{mekanism_ores/tripling}}."
+  ],
+  "en": [
+   "At the crafting table: [[mekanism:basic_purifying_factory]] in the middle, Infused Alloy in the corners, Advanced Control Circuits top and bottom, osmium left and right. The basic factory itself is a [[mekanism:purification_chamber]] with the Basic Tier Installer.",
+   "Like the Purification Chamber it needs oxygen in its chemical slot. The whole tripling line is in {{mekanism_ores/tripling}}."
+  ],
+  "sources": [
+   "mekanism:factory/advanced/purifying (ACA / IPI / ACA)",
+   "mekanism:basic_purifying_factory (stage 3)"
+  ]
+ },
+ "adv_transmit": {
+  "de": [
+   "Laut Config schafft das Fortschrittliche Universalkabel 51 200 FE/t, das Einfache nur 3 200 FE/t. Der Fortschrittliche Logistiktransporter zieht 16 Stück auf einmal bei doppeltem Tempo.",
+   "Die Fortschrittlichen Rohre ziehen 1 000 mB, die Druckschläuche 2 000 mB pro Zug. Für Schläuche und Rohre gilt dasselbe Rezept: acht einfache um eine [[mekanism:alloy_infused]]."
+  ],
+  "en": [
+   "By config the Advanced Universal Cable carries 51,200 FE/t, the basic one only 3,200 FE/t. The Advanced Logistical Transporter pulls 16 items at once at twice the speed.",
+   "Advanced pipes pull 1,000 mB, advanced pressurized tubes 2,000 mB at a time. Tubes and pipes use the same recipe: eight basic ones around an [[mekanism:alloy_infused]]."
+  ],
+  "sources": [
+   "mekanism:transmitter/universal_cable/advanced (8)",
+   "srv/config/Mekanism/tiers.toml (energy basic 8000, advanced 128000 J; items advancedPullAmount 16, speed 10 vs 5; fluid advancedPullAmount 1000; chemical advancedPullAmount 2000)"
+  ],
+  "client": [
+   "Right clicking a placed transmitter with an alloy upgrades it"
+  ]
+ },
+ "adv_cube": {
+  "de": [
+   "Rezept: [[mekanism:basic_energy_cube]] in der Mitte, zwei Osmiumbarren links und rechts, zwei [[mekanism:energy_tablet]] oben und unten, Infundierte Legierung in den Ecken. Laut Config fasst er 6 400 000 FE und gibt 6 400 FE/t ab, viermal so viel wie der Einfache.",
+   "Für mehr Speicher führt der Weg in Stufe 4 zur Induktionsmatrix ({{mekanism_elite/induction_matrix}})."
+  ],
+  "en": [
+   "Recipe: [[mekanism:basic_energy_cube]] in the middle, two osmium ingots left and right, two [[mekanism:energy_tablet]] top and bottom, Infused Alloy in the corners. By config it holds 6,400,000 FE and outputs 6,400 FE/t, four times the basic cube.",
+   "For more storage, stage 4 leads to the Induction Matrix ({{mekanism_elite/induction_matrix}})."
+  ],
+  "sources": [
+   "mekanism:energy_cube/advanced (AEA / IPI / AEA)",
+   "srv/config/Mekanism/tiers.toml (advancedCapacity 16000000, advancedOutput 16000 J)"
+  ]
+ },
+ "adv_line": {
+  "de": [
+   "Jede der drei Fabriken entsteht an der Werkbank wie die Reinigungsfabrik: die Einfache Fabrik in der Mitte, Infundierte Legierung, Fortschrittliche Steuerschaltkreise und Osmium drumherum. Oder du nimmst einen [[mekanism:advanced_tier_installer]] pro Fabrik.",
+   "Für die drei Stück brauchst du so 6 Fortschrittliche Steuerschaltkreise. Die Straße dahinter erklärt {{mekanism_ores/factory_adv}}."
+  ],
+  "en": [
+   "Each of the three factories is crafted like the purifying factory: the basic factory in the middle with Infused Alloy, Advanced Control Circuits and osmium around it. Or use one [[mekanism:advanced_tier_installer]] per factory.",
+   "That way the three cost 6 Advanced Control Circuits. The line behind them is explained in {{mekanism_ores/factory_adv}}."
+  ],
+  "sources": [
+   "mekanism:factory/advanced/crushing, enriching, smelting (ACA / IPI / ACA)"
+  ]
+ },
+ "adv_tanks": {
+  "de": [
+   "**Die Rezepte sind nicht gleich.** Der [[mekanism:advanced_chemical_tank]] will Infundierte Legierung in den Ecken und Osmium an den Seiten, der [[mekanism:advanced_fluid_tank]] Infundierte Legierung und **Eisen**. Die [[mekanism:advanced_bin]] braucht Infundierte Legierung, einen Fortschrittlichen Steuerschaltkreis und Stein.",
+   "Laut Config fassen sie 64 000 mB Flüssigkeit, 256 000 mB Chemikalien und 8 192 Gegenstände."
+  ],
+  "en": [
+   "**The recipes differ.** The [[mekanism:advanced_chemical_tank]] takes Infused Alloy in the corners and osmium on the sides, the [[mekanism:advanced_fluid_tank]] Infused Alloy and **iron**. The [[mekanism:advanced_bin]] needs Infused Alloy, an Advanced Control Circuit and stone.",
+   "By config they hold 64,000 mB of fluid, 256,000 mB of chemicals and 8,192 items."
+  ],
+  "sources": [
+   "mekanism:chemical_tank/advanced (AOA / OPO / AOA)",
+   "mekanism:fluid_tank/advanced (AIA / IPI / AIA, I = c:ingots/iron)",
+   "mekanism:bin/advanced (_C_ / APA / ___)",
+   "srv/config/Mekanism/tiers.toml"
+  ],
+  "client": [
+   "Contents kept when upgrading at the crafting table"
+  ]
+ },
+ "evap_blocks": {
+  "de": [
+   "Vier Stahlbarren im Kreuz um einen Kupferbarren geben vier [[mekanism:thermal_evaporation_block]]. Vier davon im Kreuz um einen Fortschrittlichen Steuerschaltkreis geben ein [[mekanism:thermal_evaporation_valve]].",
+   "Ein Turm mit 4 mal 4 Grundfläche ist innen hohl, jede Ebene braucht also 12 Wandblöcke. Weiter geht es mit {{mekanism_advanced/evap}}."
+  ],
+  "en": [
+   "Four steel ingots in a cross around a copper ingot give four [[mekanism:thermal_evaporation_block]]. Four of those in a cross around an Advanced Control Circuit give one [[mekanism:thermal_evaporation_valve]].",
+   "A tower with a 4 by 4 base is hollow inside, so every layer needs 12 wall blocks. Next is {{mekanism_advanced/evap}}."
+  ],
+  "sources": [
+   "mekanism:thermal_evaporation/block ( S  / SIS /  S , 4)",
+   "mekanism:thermal_evaporation/valve"
+  ]
+ },
+ "evap": {
+  "de": [
+   "Der [[mekanism:thermal_evaporation_controller]] ist oben Fortschrittlicher Steuerschaltkreis, Glasscheibe, Schaltkreis, Mitte Block, Eimer, Block, unten drei Wärmeverdampfungsblöcke. Laut Rezept wird aus 10 mB Wasser 1 mB Sole und aus 10 mB Sole 1 mB Lithium.",
+   "Den [[mekanism:brine_bucket]] kann man nicht craften. Füll ihn aus der Sole, die aus einem Ventil in einen Flüssigkeitstank läuft. Wärme dazu bringt ein Widerstandsheizer ({{mekanism_advanced/heater}}) oder Solargeneratoren oben auf dem Turm."
+  ],
+  "en": [
+   "The [[mekanism:thermal_evaporation_controller]] is top Advanced Control Circuit, glass pane, circuit; middle block, bucket, block; bottom three Thermal Evaporation Blocks. By recipe 10 mB of water become 1 mB of brine and 10 mB of brine 1 mB of lithium.",
+   "The [[mekanism:brine_bucket]] cannot be crafted. Fill it from the brine that a valve sends into a fluid tank. Extra heat comes from a Resistive Heater ({{mekanism_advanced/heater}}) or solar generators on top of the tower."
+  ],
+  "sources": [
+   "mekanism:thermal_evaporation/controller (CGC / #B# / ###)",
+   "Mekanism jar: data/mekanism/recipe/evaporating/brine.json, lithium.json",
+   "srv/config/Mekanism/general.toml (thermal_evaporation solarMultiplier)"
+  ],
+  "client": [
+   "Filling the brine bucket from a fluid tank",
+   "Solar panels on the tower add heat"
+  ]
+ },
+ "gas_lithium": {
+  "de": [
+   "Aus der Anlage kommt flüssiges Lithium. Der [[mekanism:rotary_condensentrator]] macht es zum Gas, und der [[mekanism:chemical_crystallizer]] macht in Stufe 4 aus 100 mB einen [[mekanism:dust_lithium]] ({{mekanism_elite/lithium_dust}}).",
+   "Der Solarneutronenaktivator macht in Stufe 4 aus 1 mB Lithium 1 mB Tritium für die Fusion ({{mekanism_elite/tritium}}). Ein Vorrat in einem Chemikalienbehälter lohnt sich jetzt schon."
+  ],
+  "en": [
+   "The plant puts out liquid lithium. The [[mekanism:rotary_condensentrator]] turns it into gas, and in stage 4 the [[mekanism:chemical_crystallizer]] makes one [[mekanism:dust_lithium]] from 100 mB ({{mekanism_elite/lithium_dust}}).",
+   "In stage 4 the Solar Neutron Activator turns 1 mB of lithium into 1 mB of tritium for fusion ({{mekanism_elite/tritium}}). A stock in a chemical tank pays off already."
+  ],
+  "sources": [
+   "mekanism:rotary/lithium",
+   "Mekanism jar: crystallizing/lithium.json (100)",
+   "mekanismgenerators:activating/tritium (1 to 1)",
+   "mekanism:chemical_crystallizer (stage 4)"
+  ]
+ },
+ "heater": {
+  "de": [
+   "Rezept: Zinn in den Ecken, Redstone an den Seiten, ein [[mekanism:steel_casing]] in der Mitte und unten in der Mitte ein [[mekanism:energy_tablet]]. Laut Config wird aus einem Joule Strom 0,6 Einheiten Wärme.",
+   "Acht [[mekanism:basic_thermodynamic_conductor]] kommen aus zwei Stahl und einem Kupfer in einer Reihe. Sie leiten die Wärme in Dampfkessel oder Wärmeverdampfung."
+  ],
+  "en": [
+   "Recipe: tin in the corners, redstone on the sides, a [[mekanism:steel_casing]] in the middle and an [[mekanism:energy_tablet]] bottom middle. By config one joule of power becomes 0.6 units of heat.",
+   "Eight [[mekanism:basic_thermodynamic_conductor]] come from two steel and one copper in a row. They carry the heat into a boiler or an evaporation plant."
+  ],
+  "sources": [
+   "mekanism:resistive_heater (IRI / RXR / IEI)",
+   "srv/config/Mekanism/general.toml (heater resistiveEfficiency 0.6)",
+   "mekanism:transmitter/thermodynamic_conductor/basic (S#S, 8)"
+  ]
+ },
+ "fuelwood": {
+  "de": [
+   "Laut Config gibt jeder Brenntick 400 Einheiten Wärme. Eine Kohle brennt 1 600 Ticks, ein Kohleblock zehnmal so lange.",
+   "Er ist eine Wärmequelle ohne Strom, gut zum Anlaufen von Kessel oder Wärmeverdampfung. Für einen großen Kessel reicht er allein nicht, dafür sind die Widerstandsheizer da ({{mekanism_advanced/heater}})."
+  ],
+  "en": [
+   "By config every burn tick gives 400 units of heat. One coal burns 1,600 ticks, a coal block ten times as long.",
+   "It is a heat source without power, good for starting a boiler or an evaporation plant. For a big boiler it is not enough on its own; that is what Resistive Heaters are for ({{mekanism_advanced/heater}})."
+  ],
+  "sources": [
+   "mekanism:fuelwood_heater (SCS / #X# / SSS, stage 2)",
+   "srv/config/Mekanism/general.toml (heater heatPerFuelTick 400, fuelwoodTickMultiplier 1)",
+   "vanilla burn times (coal 1600, coal block 16000)"
+  ]
+ },
+ "boiler": {
+  "de": [
+   "Das [[mekanism:superheating_element]] ist ein [[mekanism:steel_casing]] mit Kupfer im Kreuz und Redstone in den Ecken. Laut Config gibt jedes Element bis zu 16 000 000 Wärme pro Tick ans Wasser weiter, mehr Elemente machen also mehr Dampf, solange genug Wärme ankommt.",
+   "Jeder Block des Wasserteils fasst 16 000 mB Wasser, jeder Block des Dampfteils 160 000 mB Dampf. Stell ein Ventil mit dem [[mekanism:configurator]] auf Ausgabe, sonst staut sich der Dampf."
+  ],
+  "en": [
+   "The [[mekanism:superheating_element]] is a [[mekanism:steel_casing]] with copper in a cross and redstone in the corners. By config each element passes up to 16,000,000 heat per tick to the water, so more elements make more steam as long as enough heat arrives.",
+   "Every block of the water part holds 16,000 mB of water, every block of the steam part 160,000 mB of steam. Set one valve to output with the [[mekanism:configurator]], or the steam backs up."
+  ],
+  "sources": [
+   "mekanism:superheating_element (AIA / IXI / AIA)",
+   "srv/config/Mekanism/general.toml (boiler waterPerTank 16000, steamPerTank 160000, superheatingHeatTransfer 1.6E7)"
+  ],
+  "client": [
+   "Superheating elements are fed by heat from resistive heaters through the casing/valves"
+  ]
+ },
+ "gas_steam": {
+  "de": [
+   "Dampf ist auch eine Flüssigkeit: Der [[mekanism:rotary_condensentrator]] wandelt Mekanism-Dampf zwischen Gas und Flüssigkeit um, so passt er in Tanks und Rohre anderer Mods.",
+   "Die Turbine braucht viel Dampf: Jedes [[mekanism:pressure_disperser]] lässt laut Config höchstens 1 280 mB pro Tick durch. Wie die Turbine gebaut wird, steht in {{mekanism_advanced/turbine}}."
+  ],
+  "en": [
+   "Steam is a fluid too: the [[mekanism:rotary_condensentrator]] turns Mekanism steam between gas and fluid, so it fits into tanks and pipes of other mods.",
+   "The turbine needs a lot of steam: by config each [[mekanism:pressure_disperser]] lets at most 1,280 mB per tick through. How the turbine is built is in {{mekanism_advanced/turbine}}."
+  ],
+  "sources": [
+   "mekanism:rotary/steam",
+   "srv/config/Mekanism/generators.toml (turbine disperserChemicalFlow 1280)"
+  ]
+ },
+ "turbine_rotor": {
+  "de": [
+   "Alle drei Teile sind aus Stahl und [[mekanism:alloy_infused]]: Rotor drei Reihen Stahl, Legierung, Stahl; Rotorblatt vier Stahl im Kreuz um eine Legierung; Rotationskomplex dazu zwei Fortschrittliche Steuerschaltkreise in der Mitte links und rechts.",
+   "Laut Config braucht es eine Elektromagnetische Spule für je vier Blätter ({{mekanism_advanced/turbine_coils}}). Mehr Rotoren und Blätter heißen mehr Leistung, aber auch mehr Spulen."
+  ],
+  "en": [
+   "All three parts are steel and [[mekanism:alloy_infused]]: rotor three rows of steel, alloy, steel; blade four steel in a cross around an alloy; rotational complex with two Advanced Control Circuits in the middle left and right as well.",
+   "By config it takes one Electromagnetic Coil for every four blades ({{mekanism_advanced/turbine_coils}}). More rotors and blades mean more output, but also more coils."
+  ],
+  "sources": [
+   "mekanismgenerators:turbine/rotor (SAS x3)",
+   "mekanismgenerators:turbine/blade",
+   "mekanismgenerators:rotational_complex (SAS / CAC / SAS)",
+   "srv/config/Mekanism/generators.toml (turbine bladesPerCoil 4)"
+  ]
+ },
+ "turbine_shell": {
+  "de": [
+   "Vier Stahlbarren im Kreuz um einen Osmiumbarren geben vier [[mekanismgenerators:turbine_casing]]. [[mekanism:structural_glass]] sind vier Stahl um ein Glas, ebenfalls vier Stück.",
+   "Laut Config bringt jeder Block Volumen 6 400 000 FE Puffer, und jeder Block des Dampfraums fasst 64 000 mB Dampf. Eine größere Hülle speichert also auch mehr."
+  ],
+  "en": [
+   "Four steel ingots in a cross around an osmium ingot give four [[mekanismgenerators:turbine_casing]]. [[mekanism:structural_glass]] is four steel around a glass block, also four at a time.",
+   "By config every block of volume adds 6,400,000 FE of buffer, and every block of the steam cavity holds 64,000 mB of steam. A bigger shell also stores more."
+  ],
+  "sources": [
+   "mekanismgenerators:turbine/casing ( S  / SOS /  S , 4)",
+   "mekanism:structural_glass (4)",
+   "srv/config/Mekanism/generators.toml (turbine energyCapacityPerVolume 16000000 J, chemicalPerTank 64000)"
+  ]
+ },
+ "turbine_coils": {
+  "de": [
+   "Das [[mekanism:pressure_disperser]] lässt laut Config 1 280 mB Dampf pro Tick durch, die Zahl der Druckventile begrenzt also, wie viel Dampf die Turbine nutzt. Die [[mekanismgenerators:electromagnetic_coil]] ist ein [[mekanism:energy_tablet]] mit Gold im Kreuz und Stahl in den Ecken.",
+   "Eine Spule reicht für vier Rotorblätter. Mit zwei Rotoren und vier Blättern wie in {{mekanism_advanced/turbine_rotor}} genügt eine."
+  ],
+  "en": [
+   "By config the [[mekanism:pressure_disperser]] lets 1,280 mB of steam per tick through, so the number of dispersers limits how much steam the turbine uses. The [[mekanismgenerators:electromagnetic_coil]] is an [[mekanism:energy_tablet]] with gold in a cross and steel in the corners.",
+   "One coil covers four blades. With two rotors and four blades as in {{mekanism_advanced/turbine_rotor}}, one is enough."
+  ],
+  "sources": [
+   "mekanism:pressure_disperser (S#S / #A# / S#S)",
+   "mekanismgenerators:electromagnetic_coil (SIS / IEI / SIS)",
+   "srv/config/Mekanism/generators.toml (disperserChemicalFlow 1280, bladesPerCoil 4)"
+  ]
+ },
+ "turbine": {
+  "de": [
+   "[[mekanismgenerators:turbine_valve]] und [[mekanismgenerators:turbine_vent]] sind je vier Turbinengehäuse im Kreuz um einen Fortschrittlichen Steuerschaltkreis oder ein Eisengitter, sie geben zwei Stück. Der [[mekanismgenerators:saturating_condenser]] ist ein Eimer mit Zinn im Kreuz und Stahl in den Ecken.",
+   "Laut Config lässt jeder Abzug 32 000 mB pro Tick hinaus und jeder Kondensator macht bis zu 64 000 mB Wasser pro Tick. Führ das Wasser aus einem Ventil zurück in den Kessel ({{mekanism_advanced/boiler}})."
+  ],
+  "en": [
+   "[[mekanismgenerators:turbine_valve]] and [[mekanismgenerators:turbine_vent]] are four Turbine Casings in a cross around an Advanced Control Circuit or an iron bar, two at a time. The [[mekanismgenerators:saturating_condenser]] is a bucket with tin in a cross and steel in the corners.",
+   "By config every vent lets out 32,000 mB per tick and every condenser makes up to 64,000 mB of water per tick. Pipe that water from a valve back into the boiler ({{mekanism_advanced/boiler}})."
+  ],
+  "sources": [
+   "mekanismgenerators:turbine/valve, turbine/vent (2)",
+   "mekanismgenerators:saturating_condenser (SIS / IBI / SIS)",
+   "srv/config/Mekanism/generators.toml (ventChemicalFlow 32000, condenserRate 64000)"
+  ]
+ },
+ "adv_solar": {
+  "de": [
+   "Rezept: oben und Mitte je Solargenerator, [[mekanism:alloy_infused]], Solargenerator, unten drei Eisenbarren. Laut Config liefert er 120 FE/t, ein [[mekanismgenerators:solar_generator]] 20 FE/t.",
+   "Vier kleine geben 80 FE/t, der große also 50 Prozent mehr aus denselben Solargeneratoren. In Stufe 4 steckt er in der Solar Aufladeeinheit der MekaSuit ({{mekanism_elite/mod_power}})."
+  ],
+  "en": [
+   "Recipe: top and middle row Solar Generator, [[mekanism:alloy_infused]], Solar Generator, bottom three iron ingots. By config it gives 120 FE/t, a [[mekanismgenerators:solar_generator]] 20 FE/t.",
+   "Four small ones give 80 FE/t, so the big one gets 50 percent more out of the same panels. In stage 4 it goes into the MekaSuit's Solar Recharging Unit ({{mekanism_elite/mod_power}})."
+  ],
+  "sources": [
+   "mekanismgenerators:generator/advanced_solar (PAP / PAP / III)",
+   "srv/config/Mekanism/generators.toml (solarGeneration 50, advancedSolarGeneration 300 J)",
+   "mekanismgenerators:module_solar_recharging_unit"
+  ]
+ },
+ "liquifier": {
+  "de": [
+   "Rezept des [[mekanism:nutritional_liquifier]]: Redstone in den Ecken, Einfache Steuerschaltkreise oben und unten, Schüsseln links und rechts, ein Stahlgehäuse in der Mitte. Laut Config entsprechen 50 mB Paste einem Hungerpunkt, die [[mekanism:canteen]] fasst 64 000 mB.",
+   "Die Paste ist auch der Rohstoff der Nährlösung für die Pflanzstation ({{mekanism_elite/planting}}) und füllt die Nährstoff-Injektions-Einheit der MekaSuit ({{mekanism_elite/mod_life}})."
+  ],
+  "en": [
+   "Recipe of the [[mekanism:nutritional_liquifier]]: redstone in the corners, Basic Control Circuits top and bottom, bowls left and right, a Steel Casing in the middle. By config 50 mB of paste equal one hunger point, and the [[mekanism:canteen]] holds 64,000 mB.",
+   "The paste is also the base of the nutrient solution for the Planting Station ({{mekanism_elite/planting}}) and fills the MekaSuit's Nutritional Injection Unit ({{mekanism_elite/mod_life}})."
+  ],
+  "sources": [
+   "mekanism:nutritional_liquifier (RCR / #X# / RCR)",
+   "srv/config/Mekanism/general.toml (nutritional_paste mbPerFood 50)",
+   "srv/config/Mekanism/gear.toml (canteen maxStorage 64000)",
+   "mekmm:dissolution/nutrient_solution/from_bio"
+  ]
+ },
+ "chem_cell": {
+  "de": [
+   "Das ME Chemical Cell Housing hat oben [[ae2:quartz_glass]], Redstone, Quarzglas, in der Mitte Redstone links und rechts, unten drei Osmiumbarren. Mit einer [[ae2:cell_component_1k]] wird es formlos zur [[appmek:chemical_storage_cell_1k]].",
+   "Die Zelle steckt im ME-Laufwerk wie jede andere ({{ae2/drive}}). Für einen Bus oder ein Interface mit Chemikalien brauchst du sonst nichts Zusätzliches."
+  ],
+  "en": [
+   "The ME Chemical Cell Housing is top [[ae2:quartz_glass]], redstone, Quartz Glass; middle redstone left and right; bottom three osmium ingots. With a [[ae2:cell_component_1k]] it becomes a [[appmek:chemical_storage_cell_1k]] in a shapeless recipe.",
+   "The cell goes into an ME Drive like any other ({{ae2/drive}}). Buses and interfaces need nothing extra to handle chemicals."
+  ],
+  "sources": [
+   "appmek:chemical_cell_housing (QRQ / R R / OOO)",
+   "appmek:chemical_storage_cell_1k (shapeless)"
+  ],
+  "client": [
+   "AE2 buses and interfaces handle chemicals without extra parts"
+  ]
+ },
+ "flamethrower": {
+  "de": [
+   "Rezept: oben drei Zinn, Mitte Zinn, [[mekanism:basic_chemical_tank]], Feuerzeug, unten Bronze, Fortschrittlicher Steuerschaltkreis, Bronze. Laut Config fasst er 24 000 mB Wasserstoff.",
+   "Auf Kronwerke vernichtet die Flamme Gegenstände am Boden, die sie nicht schmelzen kann. Zieh sie nicht über deine eigenen Drops."
+  ],
+  "en": [
+   "Recipe: top three tin; middle tin, [[mekanism:basic_chemical_tank]], flint and steel; bottom bronze, Advanced Control Circuit, bronze. By config it holds 24,000 mB of hydrogen.",
+   "On Kronwerke the flame destroys items on the ground that it cannot smelt. Do not sweep it over your own drops."
+  ],
+  "sources": [
+   "mekanism:flamethrower (III / ITS / #C#)",
+   "srv/config/Mekanism/gear.toml (flamethrower capacity 24000, destroyItems true)"
+  ]
+ },
+ "cnc_stamper": {
+  "de": [
+   "Rezept: Redstone in den Ecken, Einfache Steuerschaltkreise oben und unten, ein Kolben oder Klebriger Kolben links und rechts, ein [[mekanism:steel_casing]] in der Mitte.",
+   "Mit dem [[ae2:silicon_press]] im Formslot macht sie aus einem Silizium ein [[ae2:printed_silicon]], genau wie der Inscriber. Die Pressen selbst bekommst du aus Meteoriten ({{ae2/presses}})."
+  ],
+  "en": [
+   "Recipe: redstone in the corners, Basic Control Circuits top and bottom, a piston or sticky piston left and right, a [[mekanism:steel_casing]] in the middle.",
+   "With the [[ae2:silicon_press]] in the mold slot it turns one silicon into one [[ae2:printed_silicon]], just like the Inscriber. The presses themselves come from meteorites ({{ae2/presses}})."
+  ],
+  "sources": [
+   "mekmm:cnc_stamper (ACA / #X# / ACA, # = piston or sticky_piston, A = #mekanism:alloys/basic)",
+   "mekmm:compat/ae2/stamper/printed_silicon",
+   "mekmm:compat/immersiveengineering/stamper/*"
+  ]
+ },
+ "stamping_factory": {
+  "de": [
+   "Rezept: [[mekmm:cnc_stamper]] in der Mitte, Redstone in den Ecken, Einfache Steuerschaltkreise oben und unten, Eisenbarren links und rechts. Die Einfache Fabrik presst drei Stück gleichzeitig.",
+   "Die Fortschrittliche Stanzfabrik baust du wie die Fabriken von Mekanism: die Einfache in der Mitte, Infundierte Legierung, Fortschrittliche Steuerschaltkreise und Osmium drumherum."
+  ],
+  "en": [
+   "Recipe: [[mekmm:cnc_stamper]] in the middle, redstone in the corners, Basic Control Circuits top and bottom, iron ingots left and right. The basic factory presses three at a time.",
+   "The Advanced Stamping Factory is made like Mekanism's factories: the basic one in the middle with Infused Alloy, Advanced Control Circuits and osmium around it."
+  ],
+  "sources": [
+   "mekmm:factory/basic/stamping (ACA / IPI / ACA)",
+   "mekmm:factory/advanced/stamping (ACA / IPI / ACA)"
+  ]
+ },
+ "rolling_mill": {
+  "de": [
+   "Rezept: Redstone in den Ecken, Einfache Steuerschaltkreise oben und unten, Stahlbarren links und rechts, ein [[mekanism:steel_casing]] in der Mitte.",
+   "Ein Kupfer-, Stahl- oder Aluminiumbarren gibt zwei Drähte von Immersive Engineering. Weiter unten im Kapitel nutzt die CNC Lathe dieselbe Idee für Stangen ({{mekanism_advanced/lathe}})."
+  ],
+  "en": [
+   "Recipe: redstone in the corners, Basic Control Circuits top and bottom, steel ingots left and right, a [[mekanism:steel_casing]] in the middle.",
+   "One copper, steel or aluminum ingot gives two Immersive Engineering wires. The CNC Lathe further down does the same for rods ({{mekanism_advanced/lathe}})."
+  ],
+  "sources": [
+   "mekmm:cnc_rolling_mill (ACA / SXS / ACA)",
+   "mekmm:compat/immersiveengineering/rolling_mill/copper_wire, steel_wire, aluminum_wire (2)"
+  ]
+ },
+ "lathe": {
+  "de": [
+   "Rezept: Redstone in den Ecken, Einfache Steuerschaltkreise oben und unten, zwei [[mekanism:robit]] links und rechts, ein [[mekanism:steel_casing]] in der Mitte. Zwei Robits kosten zwei Atomlegierungen, die Lathe ist also teuer.",
+   "Ein Barren gibt zwei Stangen: Stahl und Aluminium für Immersive Engineering, Kupfer und Elektrum für Create Crafts & Additions."
+  ],
+  "en": [
+   "Recipe: redstone in the corners, Basic Control Circuits top and bottom, two [[mekanism:robit]] left and right, a [[mekanism:steel_casing]] in the middle. Two Robits cost two Atomic Alloys, so the lathe is expensive.",
+   "One ingot gives two rods: steel and aluminum for Immersive Engineering, copper and electrum for Create Crafts & Additions."
+  ],
+  "sources": [
+   "mekmm:cnc_lathe (ACA / #X# / ACA, # = robit)",
+   "mekmm:compat/immersiveengineering/lathe/steel_stick, aluminum_stick (2)",
+   "mekmm:compat/createaddition/lathe/copper_rod, electrum_rod (2)"
+  ]
+ },
+ "recycler": {
+  "de": [
+   "Rezept: [[mekanism:crusher]] in der Mitte, Infundierte Legierung in den Ecken, Fortschrittliche Steuerschaltkreise oben und unten, Osmium links und rechts. Laut Rezept gibt Stein, Erde oder Grasblock mit 17 Prozent Wahrscheinlichkeit einen Scrap, [[mekanism:substrate]] mit 43 Prozent.",
+   "64 Scrap presst der Osmium-Kompressor zu einer Scrap Box. Gebraucht wird Scrap erst für die Replikatoren in Stufe 5."
+  ],
+  "en": [
+   "Recipe: [[mekanism:crusher]] in the middle, Infused Alloy in the corners, Advanced Control Circuits top and bottom, osmium left and right. By recipe stone, dirt or grass block give a Scrap with a 17 percent chance, [[mekanism:substrate]] with 43 percent.",
+   "The Osmium Compressor presses 64 Scrap into a Scrap Box. Scrap is only needed for the replicators in stage 5."
+  ],
+  "sources": [
+   "mekmm:recycler (ACA / O#O / ACA)",
+   "mekmm:recycler/from_stone, from_dirt (0.17), from_substrate (0.43)",
+   "mekmm:compressing/scrap_box (64)",
+   "mekmm:replicator (stage 5)"
+  ]
+ },
+ "mid_tank": {
+  "de": [
+   "**Das Rezept braucht sieben [[mekanism:dynamic_tank]]**, nicht fünf: drei oben, darunter je einer links und rechts neben zwei [[mekanism:basic_chemical_tank]], die übereinander in der Mitte stehen. Der Basic Max Chemical Tank ist genauso gebaut, mit zwei Mid-Tanks in der Mitte und wieder sieben Dynamischen Tanks.",
+   "Hochgestuft werden Mid- und Max-Tank wie Chemikalienbehälter: Legierung in die Ecken, Osmium an die Seiten. Der Large C. Infuser in Stufe 4 will zwei Ultimate Max Chemical Tanks ({{mekanism_elite/large}})."
+  ],
+  "en": [
+   "**The recipe takes seven [[mekanism:dynamic_tank]]**, not five: three on top, then one left and one right of two [[mekanism:basic_chemical_tank]] stacked in the middle. The Basic Max Chemical Tank is built the same way, with two Mid tanks in the middle and again seven Dynamic Tanks.",
+   "Mid and Max tanks are upgraded like chemical tanks: alloy in the corners, osmium on the sides. The Large C. Infuser in stage 4 needs two Ultimate Max Chemical Tanks ({{mekanism_elite/large}})."
+  ],
+  "sources": [
+   "mekmm:mid_chemical_tank/use_tank/basic (AAA / ACA / ACA)",
+   "mekmm:max_chemical_tank/use_tank/basic (AAA / ACA / ACA, C = basic_mid_chemical_tank)",
+   "mekmm:max_chemical_tank/advanced, elite, ultimate (AOA / OPO / AOA)",
+   "mekmm:large_chemical_infuser (TRT)"
+  ]
+ },
+ "steel_core": {
+  "de": [
+   "Oben [[immersiveengineering:heavy_engineering]], [[mekanism:advanced_control_circuit]], Schwerer Ingenieursbaustein, Mitte [[ae2:engineering_processor]], [[mekanism:steel_casing]], Konstruktionsprozessor, unten Schwerer Ingenieursbaustein, [[botania:elementium_ingot]], Schwerer Ingenieursbaustein. Ein Rezept für den Baustein gibt vier Stück, genau einen Kern.",
+   "Der Baustein will auf Kronwerke ein [[create:precision_mechanism]] ({{immersive_heavy/heavy}}). Am Obelisken sind es fest 8 Stahlkerne, unabhängig von der Spielerzahl."
+  ],
+  "en": [
+   "Top [[immersiveengineering:heavy_engineering]], [[mekanism:advanced_control_circuit]], Heavy Engineering Block; middle [[ae2:engineering_processor]], [[mekanism:steel_casing]], Engineering Processor; bottom Heavy Engineering Block, [[botania:elementium_ingot]], Heavy Engineering Block. One recipe of the block gives four, exactly one core.",
+   "On Kronwerke the block needs a [[create:precision_mechanism]] ({{immersive_heavy/heavy}}). The obelisk wants a fixed 8 Steel Cores, whatever the player count."
+  ],
+  "sources": [
+   "kronwerke:milestones/steel_core (HCH / PSP / HEH)",
+   "kronwerke:tech/heavy_engineering (4, precision_mechanism)",
+   "config/kronwerke/goals.json (stage3 steel_core base 8, fixed)"
+  ]
+ },
+ "goal": {
+  "de": [
+   "Die Mengen am Obelisken sind Grundziele für 30 aktive Spieler: 4 000 Stahlbarren und 250 Fortschrittliche Steuerschaltkreise, beim Öffnen von Stufe 3 einmal mal 0,4 bis 1,5 gerechnet. Fest sind nur die 8 Stahlkerne, und für Stahl zählt jeder Barren mit dem Tag c:ingots/steel.",
+   "Beim Schleich-Rechtsklick gibt der Obelisk nur die Hauptreihen deines Inventars ab, nicht die Schnellleiste, und will einen Gegenstand in der Hand und einen zweiten Schleich-Klick innerhalb von 5 Sekunden. Die Quest selbst prüft nur und nimmt nichts."
+  ],
+  "en": [
+   "The obelisk amounts are base goals for 30 active players: 4,000 steel ingots and 250 Advanced Control Circuits, scaled once by 0.4 to 1.5 when stage 3 opens. Only the 8 Steel Cores are fixed, and for steel any ingot with the tag c:ingots/steel counts.",
+   "With a sneak right click the obelisk takes only the main rows of your inventory, not the hotbar, and needs an item in hand and a second sneak click within 5 seconds. The quest itself only checks and takes nothing."
+  ],
+  "sources": [
+   "config/kronwerke/goals.json (stage3: #c:ingots/steel 4000, advanced_control_circuit 250, steel_core 8 fixed, scale true)",
+   "docs/STAGES.md (rule 4)",
+   "core: obelisk/Obelisk.java (sneak hand-in)",
+   "config/ftbquests/quests/data.snbt (default_consume_items false)"
+  ]
+ }
+}

@@ -1,0 +1,774 @@
+{
+ "welcome": {
+  "de": [
+   "Draconium-Erz liegt im End, das auf einem eigenen Server läuft, drei Adern pro Chunk zwischen Y 0 und 70. Jedes Erz gibt 2 bis 4 [[draconicevolution:draconium_dust]], Glück erhöht das. Truhen in Endsiedlungen und Endburgen haben auf Kronwerke zusätzlich Staub ({{draconic/dust}}).",
+   "Zum Start von Stufe 4 bekommt jeder ein Startpaket mit 16 Draconiumbarren. Barren lassen sich nicht zurück zu Staub machen, heb dir den Staub für Schaltkreise auf."
+  ],
+  "en": [
+   "Draconium ore is in the End, which runs on its own server: three veins per chunk between Y 0 and 70. Each ore gives 2 to 4 [[draconicevolution:draconium_dust]], more with Fortune. On Kronwerke chests in End settlements and End cities also hold dust ({{draconic/dust}}).",
+   "When stage 4 opens everyone gets a starter kit with 16 draconium ingots. Ingots cannot be turned back into dust, so keep the dust for circuits."
+  ],
+  "sources": [
+   "Draconic-Evolution jar: data/draconicevolution/worldgen/placed_feature/end_draconium_ore.json, loot_table/blocks/end_draconium_ore.json (2 to 4, fortune)",
+   "kubejs/data/draconicevolution/neoforge/biome_modifier/*_draconium_ore.json (none)",
+   "config/kronwerke/goals.json (stage3 starterKit)",
+   "kronwerke:tech/elite_control_circuit (CDC / R R)"
+  ],
+  "client": [
+   "No recipe turns draconium ingots back into dust (none found in the dump)"
+  ]
+ },
+ "elite_stock": {
+  "de": [
+   "Für 16 Schaltkreise brauchst du 32 Fortschrittliche Steuerschaltkreise, 32 [[mekanism:alloy_reinforced]] und 16 Draconiumstaub, also auch 32 Gedrucktes Silizium. Die Quest prüft nur und nimmt nichts.",
+   "Am Obelisken sind 150 Elite-Schaltkreise und 1 000 Draconiumbarren das Grundziel für 30 aktive Spieler. Beim Öffnen von Stufe 4 wurde das einmal mit 0,4 bis 1,5 verrechnet."
+  ],
+  "en": [
+   "16 circuits take 32 Advanced Control Circuits, 32 [[mekanism:alloy_reinforced]] and 16 draconium dust, and with that 32 Printed Silicon. The quest only checks and takes nothing.",
+   "At the obelisk, 150 Elite Control Circuits and 1,000 draconium ingots are the base goal for 30 active players. When stage 4 opened, that was scaled once by 0.4 to 1.5."
+  ],
+  "sources": [
+   "kronwerke:tech/elite_control_circuit",
+   "config/kronwerke/goals.json (stage4 base 150 and 1000, scale)",
+   "docs/STAGES.md (rule 4)",
+   "config/ftbquests/quests/data.snbt (default_consume_items false)"
+  ]
+ },
+ "ultimate": {
+  "de": [
+   "Eine Reihe an der Werkbank: [[mekanism:alloy_atomic]], [[mekanism:elite_control_circuit]], Atomlegierung. Kronwerke hat das Rezept aus der Infusionsanlage entfernt, es bleibt nur dieses.",
+   "Jeder Ultimative Schaltkreis kostet also zwei Atomlegierungen, und jede davon 40 mB Raffiniertes Obsidian. Lass die Straße aus {{mekanism_advanced/atomic}} weiterlaufen."
+  ],
+  "en": [
+   "One row at the crafting table: [[mekanism:alloy_atomic]], [[mekanism:elite_control_circuit]], Atomic Alloy. Kronwerke removed the infuser recipe, so this is the only one.",
+   "So every Ultimate Control Circuit costs two Atomic Alloys, each 40 mB of refined obsidian. Keep the line from {{mekanism_advanced/atomic}} running."
+  ],
+  "sources": [
+   "mekanism:control_circuit/ultimate (ACA)",
+   "kubejs/server_scripts/kronwerke/tech.js (remove mekanism:control_circuit/infused_ultimate)"
+  ]
+ },
+ "installers": {
+  "de": [
+   "Rezept des [[mekanism:elite_tier_installer]]: Verstärkte Legierung in den Ecken, Elite-Schaltkreise oben und unten, Goldbarren links und rechts, ein Brett in der Mitte.",
+   "Er wirkt nur auf eine Fortschrittliche Fabrik. Eine Einfache musst du erst mit dem Fortgeschrittenen Installateur hochstufen ({{mekanism_advanced/installer}})."
+  ],
+  "en": [
+   "Recipe of the [[mekanism:elite_tier_installer]]: Reinforced Alloy in the corners, Elite Control Circuits top and bottom, gold ingots left and right, a plank in the middle.",
+   "It only works on an advanced factory. A basic one needs the Advanced Tier Installer first ({{mekanism_advanced/installer}})."
+  ],
+  "sources": [
+   "mekanism:tier_installer/elite (ACA / IPI / ACA)"
+  ],
+  "client": [
+   "Installer works only on the tier directly below"
+  ]
+ },
+ "ultimate_installer": {
+  "de": [
+   "Der [[mekanism:ultimate_tier_installer]] kostet zwei Ultimative Steuerschaltkreise und vier Atomlegierungen, also zusammen acht Atomlegierungen. Dazu kommen zwei Diamanten und ein Brett.",
+   "Er wirkt auf eine Elite-Fabrik. Wie die Erzstraße mit Elite-Fabriken aussieht, steht in {{mekanism_ores/factory_elite}}."
+  ],
+  "en": [
+   "The [[mekanism:ultimate_tier_installer]] costs two Ultimate Control Circuits and four Atomic Alloys, eight Atomic Alloys in all. Add two diamonds and a plank.",
+   "It works on an elite factory. The ore line with elite factories is in {{mekanism_ores/factory_elite}}."
+  ],
+  "sources": [
+   "mekanism:tier_installer/ultimate (ACA / IPI / ACA)",
+   "mekanism:control_circuit/ultimate"
+  ]
+ },
+ "transmit": {
+  "de": [
+   "Laut Config schafft das [[mekanism:ultimate_universal_cable]] 3 276 800 FE/t und der [[mekanism:ultimate_logistical_transporter]] zieht 64 Stück, mit Tempo 50 statt 10 beim Fortschrittlichen. Ultimative Rohre ziehen 32 000 mB, Druckschläuche 256 000 mB.",
+   "Für 16 Ultimative brauchst du 16 Elite und dafür 16 Fortschrittliche, jede Stufe mit einer Legierung pro acht."
+  ],
+  "en": [
+   "By config the [[mekanism:ultimate_universal_cable]] carries 3,276,800 FE/t and the [[mekanism:ultimate_logistical_transporter]] pulls 64 items at speed 50, against 10 for advanced. Ultimate pipes pull 32,000 mB, pressurized tubes 256,000 mB.",
+   "16 ultimate ones take 16 elite and those 16 advanced ones, each tier with one alloy per eight."
+  ],
+  "sources": [
+   "mekanism:transmitter/universal_cable/ultimate (8)",
+   "srv/config/Mekanism/tiers.toml (energy ultimateCapacity 8192000 J; items ultimatePullAmount 64, ultimateSpeed 50; fluid ultimatePullAmount 32000; chemical ultimatePullAmount 256000)"
+  ]
+ },
+ "ult_storage": {
+  "de": [
+   "Der [[mekanism:ultimate_energy_cube]] ist ein Elitärer Energiekubus in der Mitte, zwei Diamanten links und rechts, zwei Energietabletts oben und unten, Atomlegierung in den Ecken. Laut Config fasst er 102 400 000 FE und gibt 102 400 FE/t ab.",
+   "Der Ultimative Flüssigkeitstank fasst 256 000 mB, der Ultimative Chemikalienbehälter 8 192 000 mB, die Ultimative Tonne 262 144 Stück. Für mehr Strom pro Block baust du die Induktionsmatrix ({{mekanism_elite/induction_matrix}})."
+  ],
+  "en": [
+   "The [[mekanism:ultimate_energy_cube]] is an Elite Energy Cube in the middle, two diamonds left and right, two Energy Tablets top and bottom, Atomic Alloy in the corners. By config it holds 102,400,000 FE and outputs 102,400 FE/t.",
+   "The Ultimate Fluid Tank holds 256,000 mB, the Ultimate Chemical Tank 8,192,000 mB, the Ultimate Bin 262,144 items. For more power per block build the Induction Matrix ({{mekanism_elite/induction_matrix}})."
+  ],
+  "sources": [
+   "mekanism:energy_cube/ultimate (AEA / IPI / AEA)",
+   "srv/config/Mekanism/tiers.toml (energy_cubes ultimate 256000000 / 256000 J; fluid 256000; chemical 8192000; bins 262144)"
+  ]
+ },
+ "combiner": {
+  "de": [
+   "Laut Rezept nimmt der [[mekanism:combiner]] **acht Rohe Erze** und einen Bruchstein (oder Tiefenschiefer-Bruchstein) für einen Erzblock. Für die Erzstraße ist das ein Verlust: Acht Rohe Erze geben in der Chemischen Auflösungskammer schon über 5 000 mB Schlamm, ein Erzblock nur 1 000 mB.",
+   "Mit einer [[mekanism:upgrade_stone_generator]] im Upgrade-Slot macht er den Bruchstein selbst ({{mekanism/up_stone}})."
+  ],
+  "en": [
+   "By recipe the [[mekanism:combiner]] takes **eight raw ores** and one cobblestone (or cobbled deepslate) for one ore block. For the ore line that is a loss: eight raw ores already give over 5,000 mB of slurry in the Chemical Dissolution Chamber, one ore block only 1,000 mB.",
+   "With a [[mekanism:upgrade_stone_generator]] in its upgrade slot it makes the cobblestone itself ({{mekanism/up_stone}})."
+  ],
+  "sources": [
+   "mekanism:combiner (ACA / _X_ / ACA)",
+   "mekanism:processing/gold/ore/deepslate_from_raw (8 raw, 1 cobbled deepslate)",
+   "mekanism:processing/iron/slurry/dirty/from_raw_ore (3 raw 2000), from_ore (1000)"
+  ]
+ },
+ "security_desk": {
+  "de": [
+   "Das [[mekanism:network_reader]] ist ein Glasblock oben, Infundierte Legierung links und rechts von einem [[mekanism:energy_tablet]], ein Stahlbarren unten. Für das Pult brauchst du außerdem zwei Elite-Schaltkreise und ein Stahlgehäuse.",
+   "Der Schutz gilt laut Config auch gegen Operatoren. Frequenzen deckt er nicht ab, die stellst du im Teleporter oder QIO selbst auf privat ({{mekanism_advanced/security}})."
+  ],
+  "en": [
+   "The [[mekanism:network_reader]] is a glass block on top, Infused Alloy left and right of an [[mekanism:energy_tablet]], a steel ingot below. The desk also needs two Elite Control Circuits and a Steel Casing.",
+   "By config the protection holds against operators too. It does not cover frequencies; set those to private in the teleporter or QIO itself ({{mekanism_advanced/security}})."
+  ],
+  "sources": [
+   "mekanism:security_desk (SGS / CXC / S#S)",
+   "mekanism:network_reader ( G  / AEA /  S )",
+   "srv/config/Mekanism/general.toml (security allowProtection true, opsBypassRestrictions false, does not affect frequencies)"
+  ]
+ },
+ "lithium_dust": {
+  "de": [
+   "Der [[mekanism:chemical_crystallizer]] nimmt Lithium als Gas. Das flüssige Lithium aus der Wärmeverdampfung muss erst durch den [[mekanism:rotary_condensentrator]] ({{mekanism_advanced/gas_lithium}}).",
+   "100 mB werden ein [[mekanism:dust_lithium]], und 10 mB Sole werden 1 mB Lithium. Ein Staub kostet also 1 000 mB Sole oder 10 000 mB Wasser."
+  ],
+  "en": [
+   "The [[mekanism:chemical_crystallizer]] takes lithium as a gas. The liquid lithium from thermal evaporation has to go through the [[mekanism:rotary_condensentrator]] first ({{mekanism_advanced/gas_lithium}}).",
+   "100 mB become one [[mekanism:dust_lithium]], and 10 mB of brine give 1 mB of lithium. So one dust costs 1,000 mB of brine or 10,000 mB of water."
+  ],
+  "sources": [
+   "Mekanism jar: crystallizing/lithium.json (chemical lithium 100)",
+   "mekanism:rotary/lithium",
+   "Mekanism jar: evaporating/brine.json, lithium.json (10 to 1)"
+  ]
+ },
+ "induction_casing": {
+  "de": [
+   "Vier Stahlbarren im Kreuz um ein [[mekanism:energy_tablet]] geben vier [[mekanism:induction_casing]]. Vier Gehäuse im Kreuz um einen [[mekanism:elite_control_circuit]] geben zwei [[mekanism:induction_port]].",
+   "Für die kleinste Matrix (3 mal 3 mal 3) brauchst du 26 Hüllblöcke, davon mindestens zwei Anschlüsse. Den Ausgang stellst du mit dem [[mekanism:configurator]] um."
+  ],
+  "en": [
+   "Four steel ingots in a cross around an [[mekanism:energy_tablet]] give four [[mekanism:induction_casing]]. Four casings in a cross around an [[mekanism:elite_control_circuit]] give two [[mekanism:induction_port]].",
+   "The smallest matrix (3 by 3 by 3) needs 26 shell blocks, at least two of them ports. Switch the output with the [[mekanism:configurator]]."
+  ],
+  "sources": [
+   "mekanism:induction/casing ( S  / SES /  S , 4)",
+   "mekanism:induction/port ( #  / #C# /  # , 2)"
+  ],
+  "client": [
+   "Port mode switched with the configurator"
+  ]
+ },
+ "induction_cell": {
+  "de": [
+   "Rezept: vier [[mekanism:dust_lithium]] in den Ecken, vier [[mekanism:energy_tablet]] an den Seiten, ein [[mekanism:basic_energy_cube]] in der Mitte. Laut Config fasst die Zelle 3 200 000 000 FE.",
+   "In einer 3 mal 3 mal 3 Matrix ist innen genau ein Platz, für Zelle oder Anbieter. Plan darum gleich eine größere Hülle, wenn du beides willst."
+  ],
+  "en": [
+   "Recipe: four [[mekanism:dust_lithium]] in the corners, four [[mekanism:energy_tablet]] on the sides, a [[mekanism:basic_energy_cube]] in the middle. By config the cell holds 3,200,000,000 FE.",
+   "A 3 by 3 by 3 matrix has exactly one inner space, for either a cell or a provider. So plan a bigger shell right away if you want both."
+  ],
+  "sources": [
+   "mekanism:induction/cell/basic (LEL / E#E / LEL)",
+   "srv/config/Mekanism/tiers.toml (induction basicCapacity 8000000000 J)"
+  ]
+ },
+ "induction_provider": {
+  "de": [
+   "Rezept: vier [[mekanism:dust_lithium]] in den Ecken, vier **Einfache** Steuerschaltkreise an den Seiten, ein [[mekanism:basic_energy_cube]] in der Mitte. Laut Config schafft er 102 400 FE/t.",
+   "Ein Einfacher Anbieter liegt damit unter einem Ultimativen Energie-Würfel. Für Fabrikhallen mit vielen Maschinen lohnen sich die höheren Stufen ({{mekanism_elite/adv_induction}})."
+  ],
+  "en": [
+   "Recipe: four [[mekanism:dust_lithium]] in the corners, four **Basic** Control Circuits on the sides, a [[mekanism:basic_energy_cube]] in the middle. By config it handles 102,400 FE/t.",
+   "So a basic provider is below an Ultimate Energy Cube. For halls full of machines the higher tiers pay off ({{mekanism_elite/adv_induction}})."
+  ],
+  "sources": [
+   "mekanism:induction/provider/basic (LCL / C#C / LCL, C = c:circuits/basic)",
+   "srv/config/Mekanism/tiers.toml (induction basicOutput 256000 J)",
+   "tiers.toml (energy_cubes ultimateOutput 256000 J)"
+  ]
+ },
+ "induction_matrix": {
+  "de": [
+   "Die Matrix ist ein Quader aus [[mekanism:induction_casing]], Strukturglas und Anschlüssen, von 3 mal 3 mal 3 bis 18 mal 18 mal 18. Innen ist alles mit Zellen und Anbietern gefüllt, Luft darf drin bleiben.",
+   "Speicher und Durchsatz zählen über alle Zellen und Anbieter zusammen. Kabel an Ein- und Ausgang müssen den Durchsatz mitmachen, nimm ultimative ({{mekanism_elite/transmit}})."
+  ],
+  "en": [
+   "The matrix is a box of [[mekanism:induction_casing]], structural glass and ports, from 3 by 3 by 3 up to 18 by 18 by 18. Inside you fill in cells and providers; air may stay.",
+   "Storage and throughput add up over all cells and providers. The cables on input and output must keep up, so use ultimate ones ({{mekanism_elite/transmit}})."
+  ],
+  "sources": [
+   "mekanism:induction/casing",
+   "mekanism:structural_glass"
+  ],
+  "client": [
+   "Size limits 3 to 18",
+   "Empty inner spaces allowed"
+  ]
+ },
+ "adv_induction": {
+  "de": [
+   "Laut Config fasst die [[mekanism:advanced_induction_cell]] 25 600 000 000 FE und der [[mekanism:advanced_induction_provider]] schafft 819 200 FE/t. Beide brauchen einen [[mekanism:advanced_energy_cube]] in der Mitte und vier Einfache Zellen oder Anbieter.",
+   "Die Elite-Stufe fasst 204 800 000 000 FE pro Zelle und schafft 6 553 600 FE/t pro Anbieter."
+  ],
+  "en": [
+   "By config the [[mekanism:advanced_induction_cell]] holds 25,600,000,000 FE and the [[mekanism:advanced_induction_provider]] handles 819,200 FE/t. Both need an [[mekanism:advanced_energy_cube]] in the middle and four basic cells or providers.",
+   "The elite tier holds 204,800,000,000 FE per cell and handles 6,553,600 FE/t per provider."
+  ],
+  "sources": [
+   "mekanism:induction/cell/advanced (EPE / P#P / EPE)",
+   "mekanism:induction/provider/advanced (CPC / P#P / CPC)",
+   "srv/config/Mekanism/tiers.toml (induction advanced 64000000000 / 2048000, elite 512000000000 / 16384000 J)"
+  ]
+ },
+ "entangloporter": {
+  "de": [
+   "Rezept: [[mekanism:teleportation_core]] in der Mitte, Atomlegierung links und rechts, Ultimative Steuerschaltkreise oben und unten, Raffinierte Obsidianbarren in den Ecken. Zwei Porter kosten also vier Ultimative Schaltkreise und zwei Kerne.",
+   "Laut Kronwerke Core verbinden Porter derselben Frequenz auch zwei Server des Netzes, etwa die Basis mit einer Anlage im End: Gegenstände, Flüssigkeiten, Chemikalien, Strom und Wärme fließen dann zwischen beiden."
+  ],
+  "en": [
+   "Recipe: [[mekanism:teleportation_core]] in the middle, Atomic Alloy left and right, Ultimate Control Circuits top and bottom, Refined Obsidian Ingots in the corners. Two porters cost four Ultimate Control Circuits and two cores.",
+   "According to Kronwerke Core, porters of the same frequency also link two servers of the network, for example your base and a plant in the End: items, fluids, chemicals, power and heat then flow between them."
+  ],
+  "sources": [
+   "mekanism:quantum_entangloporter (ICI / ATA / ICI)",
+   "core: share/mek/QuantumLayer.java, share/mek/FrequencyLayer.java"
+  ],
+  "client": [
+   "Entangloporter across servers (Core QuantumLayer; needs the shared network on, both sides loaded)"
+  ]
+ },
+ "qio": {
+  "de": [
+   "Die [[mekanism:qio_drive_array]] hat Teleportationskerne in allen vier Ecken, das [[mekanism:qio_drive_base]] vier Ultimative Steuerschaltkreise. Zusammen kostet die Quest also 4 Kerne und 10 Ultimative Schaltkreise.",
+   "Ein Laufwerk fasst laut Mod 16 000 Gegenstände in 128 Sorten, eine Reihe nimmt mehrere Laufwerke. Laut Kronwerke Core ist eine QIO-Frequenz auf allen Servern des Netzes dasselbe Lager."
+  ],
+  "en": [
+   "The [[mekanism:qio_drive_array]] has Teleportation Cores in all four corners, the [[mekanism:qio_drive_base]] four Ultimate Control Circuits. So the quest costs 4 cores and 10 Ultimate Control Circuits in all.",
+   "By the mod one drive holds 16,000 items of 128 kinds, and an array takes several drives. According to Kronwerke Core a QIO frequency is the same storage on every server of the network."
+  ],
+  "sources": [
+   "mekanism:qio_drive_array (TGT / C#C / TIT)",
+   "mekanism:qio_drive_base (ICI / C#C / ICI)",
+   "Mekanism jar: mekanism/common/tier/QIODriveTier (BASE 16000, 128)",
+   "core: share/mek/QioLayer.java, QioDrives.java"
+  ],
+  "client": [
+   "QIO across servers (Core QioLayer; items from another server arrive a moment later)",
+   "Number of drive slots in an array"
+  ]
+ },
+ "qio_dashboard": {
+  "de": [
+   "**Das Rezept stimmt im Buch nicht ganz:** Blei in den Ecken, Enderperlen oben, links und rechts, die Glasscheibe in der **Mitte**, der [[mekanism:teleportation_core]] unten.",
+   "Das [[mekanism:qio_dashboard]] braucht keinen Strom und keine Kabel zur Laufwerk-Reihe, nur dieselbe Frequenz. Für unterwegs gibt es die tragbare Version ({{mekanism_elite/portable_qio}})."
+  ],
+  "en": [
+   "**The book's recipe is slightly off:** lead in the corners, ender pearls top, left and right, the glass pane in the **middle**, the [[mekanism:teleportation_core]] at the bottom.",
+   "The [[mekanism:qio_dashboard]] needs no power and no cable to the drive array, only the same frequency. For the road there is the portable version ({{mekanism_elite/portable_qio}})."
+  ],
+  "sources": [
+   "mekanism:qio_dashboard (IAI / AGA / ITI, G = c:glass_panes)"
+  ],
+  "client": [
+   "Dashboard needs no power"
+  ]
+ },
+ "qio_io": {
+  "de": [
+   "Beide haben dasselbe Rezept: oben Blei, [[mekanism:teleportation_core]], Blei, Mitte Enderperle, Ultimativer Steuerschaltkreis, Enderperle, unten ein Klebriger Kolben beim [[mekanism:qio_importer]] oder ein normaler Kolben beim [[mekanism:qio_exporter]].",
+   "Jedes Stück kostet einen Teleportationskern, plan die Kerne also mit ein."
+  ],
+  "en": [
+   "Both share one recipe: top lead, [[mekanism:teleportation_core]], lead; middle ender pearl, Ultimate Control Circuit, ender pearl; bottom a sticky piston for the [[mekanism:qio_importer]] or a plain piston for the [[mekanism:qio_exporter]].",
+   "Each one costs a Teleportation Core, so plan the cores in."
+  ],
+  "sources": [
+   "mekanism:qio_importer (ITI / ACA /  # , # = sticky_piston)",
+   "mekanism:qio_exporter (# = piston)"
+  ]
+ },
+ "qio_redstone": {
+  "de": [
+   "Der [[mekanism:qio_redstone_adapter]] kostet zwei Ultimative Steuerschaltkreise und einen Teleportationskern. Das Signal geht an die Blöcke rundherum.",
+   "Mit einer Lampe daneben siehst du sofort, ob ein Vorrat aufgebraucht ist. Zum Abschalten einer Maschine leg das Signal an deren Redstone-Steuerung."
+  ],
+  "en": [
+   "The [[mekanism:qio_redstone_adapter]] costs two Ultimate Control Circuits and a Teleportation Core. The signal goes to the blocks around it.",
+   "With a lamp next to it you see at once when a stock runs out. To switch a machine off, feed the signal into its redstone control."
+  ],
+  "sources": [
+   "mekanism:qio_redstone_adapter (IWI / CRC / ITI)"
+  ],
+  "client": [
+   "Signal output to adjacent blocks, invert option"
+  ]
+ },
+ "portable_qio": {
+  "de": [
+   "Sieben [[mekanism:pellet_polonium]] um das [[mekanism:qio_dashboard]] in der Mitte, ein [[mekanism:teleportation_core]] unten in der Mitte. Jedes Pellet sind 1 000 mB geschmolzenes Polonium aus NuclearCraft, das Dashboard kostet dich also gut 77 Poloniumstaub.",
+   "Wie du an Polonium kommst, steht in {{mekanism_elite/polonium}}."
+  ],
+  "en": [
+   "Seven [[mekanism:pellet_polonium]] around the [[mekanism:qio_dashboard]] in the middle, a [[mekanism:teleportation_core]] bottom middle. Each pellet is 1,000 mB of molten polonium from NuclearCraft, so the dashboard costs you about 77 polonium dust.",
+   "How to get polonium is in {{mekanism_elite/polonium}}."
+  ],
+  "sources": [
+   "mekanism:portable_qio_dashboard (AAA / A#A / ATA)",
+   "nuclearcraft:crystallizer/polonium (1000)",
+   "nuclearcraft:melter/polonium_dust (90)"
+  ]
+ },
+ "stabilizer": {
+  "de": [
+   "Rezept: Raffinierte Obsidianbarren in den Ecken, Ultimative Steuerschaltkreise oben und unten, Atomlegierung links und rechts, ein Diamantblock in der Mitte. Laut Mod lädt er höchstens 5 mal 5 Chunks um sich, also 2 Chunks in jede Richtung.",
+   "Jeder geladene Chunk kostet laut Config laufend 2 000 FE/t. Wähl im Fenster nur die Chunks, in denen wirklich Maschinen stehen."
+  ],
+  "en": [
+   "Recipe: Refined Obsidian Ingots in the corners, Ultimate Control Circuits top and bottom, Atomic Alloy left and right, a diamond block in the middle. By the mod it loads at most 5 by 5 chunks around itself, 2 chunks in each direction.",
+   "By config every loaded chunk costs 2,000 FE/t all the time. Pick only the chunks that really hold machines in its window."
+  ],
+  "sources": [
+   "mekanism:dimensional_stabilizer (ICI / ADA / ICI)",
+   "Mekanism jar: TileEntityDimensionalStabilizer (MAX_LOAD_RADIUS 2, MAX_LOAD_DIAMETER 5)",
+   "srv/config/Mekanism/machine-usage.toml (dimensionalStabilizer 5000 J per chunk per tick)"
+  ]
+ },
+ "laser": {
+  "de": [
+   "Laut Config zieht der [[mekanism:laser]] 4 000 FE/t, reicht 64 Blöcke weit und bricht Blöcke abhängig von ihrer Härte. Ein [[mekanism:laser_amplifier]] speichert bis zu 2 000 000 000 FE und gibt sie gebündelt ab.",
+   "Für die Zündung des Fusionsreaktors richtest du Laser auf den Verstärker und den Verstärker auf die Laser-Fokusmatrix ({{mekanism_elite/focus}}). Lass den Weg frei, der Strahl schadet auch Spielern."
+  ],
+  "en": [
+   "By config the [[mekanism:laser]] draws 4,000 FE/t, reaches 64 blocks and breaks blocks depending on their hardness. A [[mekanism:laser_amplifier]] stores up to 2,000,000,000 FE and releases it in one beam.",
+   "To ignite the fusion reactor, aim lasers at the amplifier and the amplifier at the Laser Focus Matrix ({{mekanism_elite/focus}}). Keep the path clear: the beam hurts players too."
+  ],
+  "sources": [
+   "mekanism:laser (AE  / AX# / AE )",
+   "mekanism:laser_amplifier (SSS / SE# / SSS)",
+   "srv/config/Mekanism/machine-usage.toml (laser 10000 J)",
+   "srv/config/Mekanism/general.toml (laser range 64, energyPerHardness, energyPerDamage)",
+   "srv/config/Mekanism/machine-storage.toml (laserAmplifier 5000000000 J)"
+  ]
+ },
+ "deuterium": {
+  "de": [
+   "Laut Config holt die [[mekanism:electric_pump]] mit [[mekanism:upgrade_filter]] 10 mB Schweres Wasser pro Wasserblock, Quellen bleiben dabei erhalten. Der [[mekanism:electrolytic_separator]] macht aus 2 mB Schwerem Wasser 2 mB Deuterium und 1 mB Sauerstoff.",
+   "Für den Eimer leitest du das Deuterium-Gas in den [[mekanism:rotary_condensentrator]], stellst ihn auf Kondensieren und legst einen leeren Eimer in seinen Flüssigkeitsslot."
+  ],
+  "en": [
+   "By config the [[mekanism:electric_pump]] with a [[mekanism:upgrade_filter]] pulls 10 mB of heavy water per water block, and the sources stay. The [[mekanism:electrolytic_separator]] turns 2 mB of heavy water into 2 mB of deuterium and 1 mB of oxygen.",
+   "For the bucket, pipe the deuterium gas into the [[mekanism:rotary_condensentrator]], set it to condensing and put an empty bucket into its fluid slot."
+  ],
+  "sources": [
+   "srv/config/Mekanism/general.toml (pump heavyWaterAmount 10, pumpInfiniteFluidSources false)",
+   "mekanismgenerators:separator/heavy_water (2 to 2 + 1)",
+   "mekanismgenerators:rotary/deuterium"
+  ],
+  "client": [
+   "Bucket in the rotary condensentrator's fluid slot fills with liquid deuterium",
+   "Water sources not removed by the pump"
+  ]
+ },
+ "tritium": {
+  "de": [
+   "Rezept des [[mekanism:solar_neutron_activator]]: oben Verstärkte Legierung, [[mekanism:hdpe_sheet]], Verstärkte Legierung, Mitte Elite-Schaltkreis, Stahlgehäuse, Elite-Schaltkreis, unten drei Bronzebarren. HDPE machst du in {{mekanism_elite/hdpe}}.",
+   "Er braucht Lithium als Gas ({{mekanism_elite/lithium_dust}}). Den [[mekanismgenerators:tritium_bucket]] füllst du wie beim Deuterium im Rotationskondensator."
+  ],
+  "en": [
+   "Recipe of the [[mekanism:solar_neutron_activator]]: top Reinforced Alloy, [[mekanism:hdpe_sheet]], Reinforced Alloy; middle Elite Control Circuit, Steel Casing, Elite Control Circuit; bottom three bronze ingots. HDPE is made in {{mekanism_elite/hdpe}}.",
+   "It needs lithium as a gas ({{mekanism_elite/lithium_dust}}). Fill the [[mekanismgenerators:tritium_bucket]] in the Rotary Condensentrator, as with deuterium."
+  ],
+  "sources": [
+   "mekanism:solar_neutron_activator (A#A / CXC / III)",
+   "mekanismgenerators:activating/tritium",
+   "mekanismgenerators:rotary/tritium"
+  ],
+  "client": [
+   "Activator stops at night and in rain"
+  ]
+ },
+ "fuel": {
+  "de": [
+   "Den D-T-Treibstoff mischt der [[mekanism:chemical_infuser]] (Chemischer Injektor) aus je 1 mB Deuterium und Tritium zu 2 mB. Der [[mekanismgenerators:hohlraum]] entsteht in der Metallurgischen Infusionsanlage aus vier Goldstaub und 10 mB Kohlenstoff.",
+   "Laut Config fasst der Hohlraum 10 mB und füllt sich mit 1 mB pro Tick. Nach dem Zünden läuft der Reaktor mit dem Treibstoff, der über die Schnittstellen kommt."
+  ],
+  "en": [
+   "The [[mekanism:chemical_infuser]] mixes D-T fuel from 1 mB each of deuterium and tritium into 2 mB. The [[mekanismgenerators:hohlraum]] is made in the Metallurgic Infuser from four gold dust and 10 mB of carbon.",
+   "By config the hohlraum holds 10 mB and fills at 1 mB per tick. After ignition the reactor runs on the fuel that comes in through the ports."
+  ],
+  "sources": [
+   "mekanismgenerators:chemical_infusing/fusion_fuel",
+   "mekanismgenerators:hohlraum (4 c:dusts/gold, carbon 10)",
+   "srv/config/Mekanism/generators.toml (hohlraum capacity 10, fillRate 1)"
+  ]
+ },
+ "focus": {
+  "de": [
+   "Rezept auf Kronwerke: oben links ein [[ars_nouveau:source_gem_block]], [[mekanismgenerators:reactor_glass]] oben in der Mitte, links, rechts und unten in der Mitte, ein Redstoneblock in der Mitte. Es gibt zwei Matrizen.",
+   "Das Reaktorglas: vier [[mekanism:enriched_iron]] in den Ecken, vier Bleibarren an den Seiten, ein Glas in der Mitte, gibt vier. Für die Matrix brauchst du also vier Reaktorglas."
+  ],
+  "en": [
+   "Kronwerke recipe: a [[ars_nouveau:source_gem_block]] top left, [[mekanismgenerators:reactor_glass]] top middle, left, right and bottom middle, a redstone block in the middle. It gives two matrices.",
+   "Reactor Glass: four [[mekanism:enriched_iron]] in the corners, four lead ingots on the sides, a glass block in the middle, four at a time. So the matrix takes four Reactor Glass."
+  ],
+  "sources": [
+   "kronwerke:tech/laser_focus_matrix (SG  / GRG /  G , 2)",
+   "mekanismgenerators:reactor/glass (SIS / IGI / SIS, 4)"
+  ]
+ },
+ "polonium": {
+  "de": [
+   "Der Weg im Rezeptbuch: Irradiator macht aus Thoriumstaub TBP-Staub und daraus Protactinium-233, der Decay Hastener macht daraus Uran-233 und aus Uran-233 [[nuclearcraft:bismuth_dust]]. Der Irradiator macht aus Bismut [[nuclearcraft:polonium_dust]], der Melter 90 mB pro Staub, der Crystallizer aus 1 000 mB ein [[mekanism:pellet_polonium]].",
+   "Der Irradiator sitzt in der Wand eines NuclearCraft-Spaltreaktors ({{nuclearcraft/irradiation}}). **Nicht** Polonium in den Decay Hastener legen, dort zerfällt es zu Bleistaub."
+  ],
+  "en": [
+   "The path in the recipe book: the Irradiator turns thorium dust into TBP dust and that into protactinium-233, the Decay Hastener turns that into uranium-233 and uranium-233 into [[nuclearcraft:bismuth_dust]]. The Irradiator turns bismuth into [[nuclearcraft:polonium_dust]], the Melter makes 90 mB per dust and the Crystallizer one [[mekanism:pellet_polonium]] from 1,000 mB.",
+   "The Irradiator sits in the wall of a NuclearCraft fission reactor ({{nuclearcraft/irradiation}}). Do **not** put polonium into the Decay Hastener; it decays to lead dust there."
+  ],
+  "sources": [
+   "nuclearcraft:irradiator/thorium_to_tbp, tbp_to_protactinium_233, bismuth_to_polonium",
+   "nuclearcraft:decay_hastener/protactinium_233, uranium_233, polonium (lead_dust)",
+   "nuclearcraft:melter/polonium_dust (90)",
+   "nuclearcraft:crystallizer/polonium (1000)",
+   "NuclearCraft jar: lang processor.description.irradiator (placed in the reactor wall)"
+  ]
+ },
+ "fusion_frame": {
+  "de": [
+   "Der [[mekanismgenerators:fusion_reactor_frame]] kostet pro Rezept vier Polonium Pellets und vier Atomlegierungen für vier Rahmen. 32 Rahmen sind also 32 Pellets, plan dein Polonium entsprechend.",
+   "Die [[mekanismgenerators:fusion_reactor_port]] ist ein Ultimativer Steuerschaltkreis mit vier Rahmen im Kreuz und gibt zwei Stück. Auch Steuerung und Logikadapter werden aus Rahmen gebaut."
+  ],
+  "en": [
+   "The [[mekanismgenerators:fusion_reactor_frame]] costs four Polonium Pellets and four Atomic Alloys per recipe for four frames. So 32 frames are 32 pellets; plan your polonium for that.",
+   "The [[mekanismgenerators:fusion_reactor_port]] is an Ultimate Control Circuit with four frames in a cross and gives two. The controller and the logic adapter are built from frames too."
+  ],
+  "sources": [
+   "mekanismgenerators:reactor/frame (A#A / #X# / A#A, 4)",
+   "mekanismgenerators:reactor/port ( F  / FCF /  F , 2)",
+   "mekanismgenerators:reactor/controller, reactor/logic_adapter"
+  ]
+ },
+ "fusion": {
+  "de": [
+   "Die [[mekanismgenerators:fusion_reactor_controller]] braucht fünf Rahmen, zwei Ultimative Steuerschaltkreise, eine Glasscheibe und einen Einfachen Chemikalienbehälter. Der Reaktor ist 5 mal 5 mal 5 Blöcke groß.",
+   "Laut Config fasst er 1 000 mB Treibstoff und 400 000 000 FE. Beim Aufheizen von Wasser macht er Dampf für deine Turbine ({{mekanism_advanced/turbine}}), ohne Wasser gibt er Strom direkt ab."
+  ],
+  "en": [
+   "The [[mekanismgenerators:fusion_reactor_controller]] takes five frames, two Ultimate Control Circuits, a glass pane and a Basic Chemical Tank. The reactor is 5 by 5 by 5 blocks.",
+   "By config it holds 1,000 mB of fuel and 400,000,000 FE. Heating water it makes steam for your turbine ({{mekanism_advanced/turbine}}); without water it puts out power directly."
+  ],
+  "sources": [
+   "mekanismgenerators:reactor/controller (CGC / FTF / FFF)",
+   "MekanismGenerators jar: FusionReactorValidator (VoxelCuboid 5, 5, 5)",
+   "srv/config/Mekanism/generators.toml (fusion_reactor fuelCapacity 1000, energyCapacity 1000000000 J)"
+  ],
+  "client": [
+   "Exact shape of each face (book says a diamond 1, 3, 5, 3, 1)",
+   "Ignition by laser amplifier into the focus matrix with a filled hohlraum"
+  ]
+ },
+ "fusion_logic": {
+  "de": [
+   "Rezept: ein [[mekanismgenerators:fusion_reactor_frame]] mit vier Redstone im Kreuz, ein Adapter pro Rezept.",
+   "Den Adapter stellst du im Fenster auf das, was du überwachen willst. Ein Signal an den Laser-Verstärker zündet den Reaktor erst, wenn er bereit ist."
+  ],
+  "en": [
+   "Recipe: a [[mekanismgenerators:fusion_reactor_frame]] with four redstone in a cross, one adapter per recipe.",
+   "Set the adapter in its window to what you want to watch. A signal to the Laser Amplifier fires only once the reactor is ready."
+  ],
+  "sources": [
+   "mekanismgenerators:reactor/logic_adapter ( R  / RFR /  R )"
+  ],
+  "client": [
+   "Logic adapter modes and redstone output",
+   "Laser amplifier fires on redstone signal"
+  ]
+ },
+ "laser_tractor": {
+  "de": [
+   "Rezept: eine [[mekanism:personal_chest]] oder ein Persönliches Fass über einem [[mekanism:laser_amplifier]]. Er speichert wie der Verstärker laut Config bis zu 2 000 000 000 FE.",
+   "Laut Config kostet jeder Block Strom nach seiner Härte, harte Blöcke wie Obsidian brauchen also deutlich mehr. Leer sein Inventar mit einem Trichter oder Transporter."
+  ],
+  "en": [
+   "Recipe: a [[mekanism:personal_chest]] or a Personal Barrel on top of a [[mekanism:laser_amplifier]]. Like the amplifier it stores up to 2,000,000,000 FE by config.",
+   "By config every block costs power by its hardness, so hard blocks like obsidian need much more. Empty its inventory with a hopper or transporter."
+  ],
+  "sources": [
+   "mekanism:laser_tractor_beam (P / #)",
+   "srv/config/Mekanism/machine-storage.toml (laserTractorBeam 5000000000 J)",
+   "srv/config/Mekanism/general.toml (laser energyPerHardness 100000)"
+  ],
+  "client": [
+   "Inventory can be emptied by hopper or transporter"
+  ]
+ },
+ "hdpe": {
+  "de": [
+   "Laut Rezept braucht ein [[mekanism:hdpe_pellet]] in der [[mekanism:pressurized_reaction_chamber]] ein [[mekanism:substrate]], 50 mB flüssiges Ethen und 10 mB Sauerstoff, und drei Pellets geben in der Anreicherungskammer eine [[mekanism:hdpe_sheet]].",
+   "Eine Platte kostet also drei Substrat. Substrat vermehrst du in derselben Kammer: eins mit 200 mB Wasser und 100 mB Ethen gibt acht. Ethen kommt aus {{mekanism/ethene}}."
+  ],
+  "en": [
+   "By recipe one [[mekanism:hdpe_pellet]] in the [[mekanism:pressurized_reaction_chamber]] takes one [[mekanism:substrate]], 50 mB of liquid ethene and 10 mB of oxygen, and three pellets give one [[mekanism:hdpe_sheet]] in the Enrichment Chamber.",
+   "So one sheet costs three substrate. Multiply substrate in the same chamber: one with 200 mB of water and 100 mB of ethene gives eight. Ethene comes from {{mekanism/ethene}}."
+  ],
+  "sources": [
+   "mekanism:reaction/substrate/ethene_oxygen",
+   "mekanism:enriching/hdpe_sheet (3 pellets)",
+   "mekanism:reaction/substrate/water_ethene (8)"
+  ]
+ },
+ "modstation": {
+  "de": [
+   "Rezept der [[mekanism:modification_station]]: HDPE Platten in den Ecken, eine Holztruhe oben, Ultimative Steuerschaltkreise links und rechts, ein Stahlgehäuse in der Mitte, ein [[mekanism:pellet_polonium]] unten.",
+   "Module baust du hier ein, ausgebaute Module bekommst du zurück. Ein- und ausschalten kannst du sie danach auch ohne Station."
+  ],
+  "en": [
+   "Recipe of the [[mekanism:modification_station]]: HDPE Sheets in the corners, a wooden chest on top, Ultimate Control Circuits left and right, a Steel Casing in the middle, one [[mekanism:pellet_polonium]] at the bottom.",
+   "Modules are installed here, and removed modules come back to you. You can switch them on and off later without the station too."
+  ],
+  "sources": [
+   "mekanism:modification_station (PWP / CXC / PAP)"
+  ],
+  "client": [
+   "Removed modules returned",
+   "Module settings changeable without the station (module tweaker key)"
+  ]
+ },
+ "module_base": {
+  "de": [
+   "Rezept: Bronzenuggets in den Ecken, Zinnbarren an den Seiten, eine [[mekanism:hdpe_sheet]] in der Mitte, gibt zwei [[mekanism:module_base]].",
+   "Jedes Modul braucht genau ein Basismodul in der Mitte. Bronzenuggets bekommst du aus einem Bronzebarren an der Werkbank."
+  ],
+  "en": [
+   "Recipe: bronze nuggets in the corners, tin ingots on the sides, an [[mekanism:hdpe_sheet]] in the middle, two [[mekanism:module_base]] at a time.",
+   "Every module takes exactly one Module Base in the middle. Bronze nuggets come from a bronze ingot at the crafting table."
+  ],
+  "sources": [
+   "mekanism:module_base (NIN / I#I / NIN, 2)",
+   "all module recipes (P = module_base)"
+  ]
+ },
+ "modules": {
+  "de": [
+   "Alle Module haben dasselbe Muster: oben Legierung, das besondere Teil, Legierung, Mitte Legierung, Basismodul, Legierung, unten drei HDPE Platten oder drei [[mekanism:pellet_polonium]]. Die Energie-Einheit nimmt eine Einfache Induktionszelle oben, die Jetpack-Einheit ein Jetpack oder ein Gepanzertes Jetpack ({{mekanism/jetpack}}).",
+   "HDPE unten haben Energie, Geiger, Strahlenschutz, Ausgrabung und Atmung, Polonium unten die übrigen Module dieses Kapitels."
+  ],
+  "en": [
+   "All modules share one pattern: top alloy, the special part, alloy; middle alloy, Module Base, alloy; bottom three HDPE Sheets or three [[mekanism:pellet_polonium]]. The Energy Unit takes a Basic Induction Cell on top, the Jetpack Unit a Jetpack or an Armored Jetpack ({{mekanism/jetpack}}).",
+   "Energy, Geiger, Radiation Shielding, Excavation Escalation and Electrolytic Breathing have HDPE at the bottom, the other modules of this chapter polonium."
+  ],
+  "sources": [
+   "mekanism:module_energy_unit (A#A / APA / HHH, H = hdpe_sheet)",
+   "mekanism:module_jetpack_unit (# = jetpack or jetpack_armored, H = polonium)",
+   "Mekanism jar: recipe/module_geiger_unit, module_radiation_shielding_unit (HDPE), module_motorized_servo_unit (polonium)"
+  ]
+ },
+ "mekasuit": {
+  "de": [
+   "Alle vier Teile haben dasselbe Muster: oben HDPE Platte, Ultimativer Steuerschaltkreis, HDPE Platte, Mitte HDPE, das Netheritteil, HDPE, unten Polonium Pellet, [[mekanism:basic_induction_cell]], Polonium Pellet. Für den Satz sind das 20 HDPE Platten, 4 Ultimative Schaltkreise, 8 Pellets, 4 Zellen und eine volle Netheritrüstung.",
+   "Module baust du in der {{mekanism_elite/modstation}} ein."
+  ],
+  "en": [
+   "All four pieces share one pattern: top HDPE Sheet, Ultimate Control Circuit, HDPE Sheet; middle HDPE, the netherite piece, HDPE; bottom Polonium Pellet, [[mekanism:basic_induction_cell]], Polonium Pellet. For the set that is 20 HDPE Sheets, 4 Ultimate Control Circuits, 8 pellets, 4 cells and a full netherite armor set.",
+   "Install modules in the {{mekanism_elite/modstation}}."
+  ],
+  "sources": [
+   "mekanism:mekasuit_helmet, bodyarmor, pants, boots (PCP / P#P / AEA)"
+  ]
+ },
+ "meka_tool": {
+  "de": [
+   "Rezept: oben Ultimativer Steuerschaltkreis, [[mekanism:configurator]], Ultimativer Steuerschaltkreis, Mitte HDPE, [[mekanism:atomic_disassembler]], HDPE, unten Polonium Pellet, Einfache Induktionszelle, Polonium Pellet.",
+   "Laut Config fasst es ohne Energie-Einheit 6 400 000 FE. Die Teleportations-Einheit braucht Antimaterie-Pellets und kommt erst in Stufe 5."
+  ],
+  "en": [
+   "Recipe: top Ultimate Control Circuit, [[mekanism:configurator]], Ultimate Control Circuit; middle HDPE, [[mekanism:atomic_disassembler]], HDPE; bottom Polonium Pellet, Basic Induction Cell, Polonium Pellet.",
+   "By config it holds 6,400,000 FE without an Energy Unit. The Teleportation Unit needs antimatter pellets and only comes in stage 5."
+  ],
+  "sources": [
+   "mekanism:meka_tool (CoC / P#P / AEA)",
+   "srv/config/Mekanism/gear.toml (mekatool baseEnergyCapacity 16000000 J)",
+   "Mekanism jar: recipe/module_teleportation_unit (c:pellets/antimatter)",
+   "mekanism:module_teleportation_unit (stage 5)"
+  ]
+ },
+ "mod_tools": {
+  "de": [
+   "Die Ausgrabungs-Erweiterungs-Einheit hat unten drei HDPE Platten, die Ader-Abbau-Einheit drei Polonium Pellets. Laut Config ist der erweiterte Aderabbau an: Er nimmt alle zusammenhängenden Blöcke derselben Sorte, nicht nur Erze und Stämme.",
+   "Die Raffinierungseinheit (Glück) und die Behutsamkeits-Einheit brauchen je einen Block Raffiniertes Glowstone und Polonium."
+  ],
+  "en": [
+   "The Excavation Escalation Unit has three HDPE Sheets at the bottom, the Vein Mining Unit three Polonium Pellets. By config extended vein mining is on: it takes all connected blocks of the same kind, not just ores and logs.",
+   "The Ore Refinement Unit (Fortune) and the Silk Touch Unit each need a Refined Glowstone block and polonium."
+  ],
+  "sources": [
+   "mekanism:module_excavation_escalation_unit (H = hdpe_sheet)",
+   "mekanism:module_vein_mining_unit (H = polonium)",
+   "srv/config/Mekanism/gear.toml (mekatool extendedMining true)",
+   "Mekanism jar: recipe/module_fortune_unit, module_silk_touch_unit (c:storage_blocks/refined_glowstone)"
+  ]
+ },
+ "mod_move": {
+  "de": [
+   "Die Hydraulische-Beschleunigungs-Einheit nimmt [[mekanism:free_runners]] oder Gepanzerte Freiläufer oben, die Bewegungs-Beschleunigungs-Einheit eine Diamanthose. Beide haben in der Mitte zwei Energietabletts neben dem Basismodul und unten drei Polonium Pellets.",
+   "Die Freiläufer kommen aus {{mekanism/free_runners}}."
+  ],
+  "en": [
+   "The Hydraulic Propulsion Unit takes [[mekanism:free_runners]] or Armored Free Runners on top, the Locomotive Boosting Unit diamond leggings. Both have two Energy Tablets beside the Module Base and three Polonium Pellets at the bottom.",
+   "Free Runners come from {{mekanism/free_runners}}."
+  ],
+  "sources": [
+   "mekanism:module_hydraulic_propulsion_unit (A#A / EPE / HHH, # = free_runners or free_runners_armored)",
+   "mekanism:module_locomotive_boosting_unit (# = diamond_leggings)"
+  ]
+ },
+ "mod_life": {
+  "de": [
+   "Die Elektolytische-Atmungs-Einheit braucht einen [[mekanism:electrolytic_core]], Infundierte Legierung und unten HDPE, die Nährstoff-Injektions-Einheit eine [[mekanism:canteen]], Verstärkte Legierung und unten Polonium.",
+   "Die Paste aus dem Nährstoffverflüssiger füllst du in den Anzug wie in die Feldflasche ({{mekanism_advanced/liquifier}})."
+  ],
+  "en": [
+   "The Electrolytic Breathing Unit takes an [[mekanism:electrolytic_core]], Infused Alloy and HDPE at the bottom, the Nutritional Injection Unit a [[mekanism:canteen]], Reinforced Alloy and polonium at the bottom.",
+   "Fill paste from the Nutritional Liquifier into the suit like into the canteen ({{mekanism_advanced/liquifier}})."
+  ],
+  "sources": [
+   "mekanism:module_electrolytic_breathing_unit (A = c:alloys/advanced, H = hdpe_sheet)",
+   "mekanism:module_nutritional_injection_unit (A = c:alloys/elite, H = polonium)"
+  ],
+  "client": [
+   "Filling the MekaSuit with nutritional paste"
+  ]
+ },
+ "mod_sight": {
+  "de": [
+   "Die Sicht-Verbesserungs-Einheit hat einen Smaragd oben, die Magnetische-Anziehungs-Einheit ein Eisengitter oben und zwei [[mekanism:elite_control_circuit]] neben dem Basismodul. Beide brauchen Verstärkte Legierung und unten drei [[mekanism:pellet_polonium]].",
+   "Für beide Module zusammen sind das sechs Pellets."
+  ],
+  "en": [
+   "The Vision Enhancement Unit has an emerald on top, the Magnetic Attraction Unit iron bars on top and two [[mekanism:elite_control_circuit]] beside the Module Base. Both need Reinforced Alloy and three [[mekanism:pellet_polonium]] at the bottom.",
+   "Both modules together take six pellets."
+  ],
+  "sources": [
+   "mekanism:module_vision_enhancement_unit (A#A / APA / HHH, # = c:gems/emerald)",
+   "mekanism:module_magnetic_attraction_unit (A#A / CPC / HHH)"
+  ]
+ },
+ "mod_power": {
+  "de": [
+   "Beide Einheiten haben dasselbe Muster mit Verstärkter Legierung und unten drei Polonium Pellets: oben ein [[mekanismgenerators:advanced_solar_generator]] für die Solar Aufladeeinheit, ein [[mekanismgenerators:heat_generator]] für die Geothermische Generatoreinheit.",
+   "Laut Config fängt die Geothermische Generatoreinheit bis zu 80 Prozent des Feuerschadens ab. Beide laden nur, wenn die MekaSuit noch Platz im Akku hat, eine Energie-Einheit vergrößert ihn ({{mekanism_elite/modules}})."
+  ],
+  "en": [
+   "Both units share one pattern with Reinforced Alloy and three Polonium Pellets at the bottom: an [[mekanismgenerators:advanced_solar_generator]] on top for the Solar Recharging Unit, a [[mekanismgenerators:heat_generator]] for the Geothermal Generator Unit.",
+   "By config the Geothermal Generator Unit absorbs up to 80 percent of fire damage. Both only charge while the MekaSuit has room in its battery; an Energy Unit makes that bigger ({{mekanism_elite/modules}})."
+  ],
+  "sources": [
+   "mekanismgenerators:module_solar_recharging_unit, module_geothermal_generator_unit (A#A / APA / HHH)",
+   "srv/config/Mekanism/generators-gear.toml (geothermalChargingRate 10, heatDamageReductionRatio 0.8)",
+   "MekanismGenerators jar: ModuleGeothermalGeneratorUnit (absorb by installed count)"
+  ],
+  "client": [
+   "Heat damage reduction reaches 80 percent only with all units installed"
+  ]
+ },
+ "presser": {
+  "de": [
+   "Rezept des [[mekmm:presser]]: [[mekmm:cnc_stamper]] in der Mitte, Elite-Schaltkreise links und rechts, Kolben oder Klebrige Kolben oben und unten, Verstärkte Legierung in den Ecken.",
+   "Laut Rezept nimmt er einen Gedruckten Schaltkreis, ein Redstone und ein [[ae2:printed_silicon]] und macht daraus den fertigen Prozessor, auch den Concurrent Processor von ExtendedAE. Das ersetzt den letzten Schritt am Inscriber ({{ae2/processors}})."
+  ],
+  "en": [
+   "Recipe of the [[mekmm:presser]]: [[mekmm:cnc_stamper]] in the middle, Elite Control Circuits left and right, pistons or sticky pistons top and bottom, Reinforced Alloy in the corners.",
+   "By recipe it takes a printed circuit, a redstone and a [[ae2:printed_silicon]] and makes the finished processor, also ExtendedAE's Concurrent Processor. That replaces the last Inscriber step ({{ae2/processors}})."
+  ],
+  "sources": [
+   "mekmm:presser (A#A / CMC / A#A)",
+   "mekmm:compat/ae2/presser/logic_processor, calculation_processor",
+   "mekmm:compat/extendedae/presser/concurrent_processor"
+  ]
+ },
+ "planting": {
+  "de": [
+   "Die Nährlösung macht die [[mekanism:chemical_dissolution_chamber]] aus zwei [[mekanism:bio_fuel]] und Nährstoffpaste als Gas. Die Paste aus dem Nährstoffverflüssiger ist flüssig, schick sie erst durch den [[mekanism:rotary_condensentrator]].",
+   "Laut Rezept gibt ein Weizensamen fünf Weizen und mit 80 Prozent einen Samen zurück. Auch Samen von Mystical Agriculture und Ars Nouveau wachsen darin."
+  ],
+  "en": [
+   "The [[mekanism:chemical_dissolution_chamber]] makes the nutrient solution from two [[mekanism:bio_fuel]] and nutritional paste as a gas. The paste from the Nutritional Liquifier is a fluid, so run it through the [[mekanism:rotary_condensentrator]] first.",
+   "By recipe one wheat seed gives five wheat and an 80 percent chance of a seed back. Mystical Agriculture and Ars Nouveau seeds grow in it too."
+  ],
+  "sources": [
+   "mekmm:planting_station (ACA / #X# / ACA)",
+   "mekmm:dissolution/nutrient_solution/from_bio",
+   "mekmm:rotary/nutritional_paste",
+   "mekmm:planting/wheat_from_wheat_seeds (5, seed 0.8)",
+   "mekmm:compat/mysticalagriculture/*, mekmm:compat/ars_nouveau/planting/*"
+  ]
+ },
+ "large": {
+  "de": [
+   "Rezept: [[mekanism:robit]] in der Mitte, zwei [[mekmm:ultimate_max_chemical_tank]] links und rechts, Ultimative Steuerschaltkreise oben und unten, Stahlblöcke in den Ecken. Die Max-Tanks baust du wie in {{mekanism_advanced/mid_tank}} und stufst sie dreimal hoch.",
+   "Ein Robit steckt in allen großen Maschinen. Der Large Antiprotonic Nucleosynthesizer braucht Antimaterie und kommt wie der große Windgenerator erst in Stufe 5."
+  ],
+  "en": [
+   "Recipe: [[mekanism:robit]] in the middle, two [[mekmm:ultimate_max_chemical_tank]] left and right, Ultimate Control Circuits top and bottom, steel blocks in the corners. Build the Max tanks as in {{mekanism_advanced/mid_tank}} and upgrade them three times.",
+   "A Robit goes into every large machine. The Large Antiprotonic Nucleosynthesizer needs antimatter and, like the large wind generator, only comes in stage 5."
+  ],
+  "sources": [
+   "mekmm:large_chemical_infuser (BCB / TRT / BCB)",
+   "mekmm:max_chemical_tank/advanced, elite, ultimate",
+   "mekmm:large_* (R = robit)",
+   "mekmm:large_antiprotonic_nucleosynthesizer (c:pellets/antimatter)",
+   "mekmm:large_wind_generator (stage 5)"
+  ]
+ },
+ "gas_stage5": {
+  "de": [
+   "Die Kette beginnt mit Uran: Gelber Kuchen wird Uranoxid, mit Flusssäure Uranhexafluorid und daraus Spaltbrennstoff ({{antimatter/oxide}}). Der Atommüll des Spaltreaktors wird zu Polonium und Plutonium, Polonium im SPS zu Antimaterie ({{antimatter/sps}})."
+  ],
+  "en": [
+   "The chain starts with uranium: yellowcake becomes uranium oxide, with hydrofluoric acid uranium hexafluoride and from that fission fuel ({{antimatter/oxide}}). The fission reactor's nuclear waste becomes polonium and plutonium, polonium becomes antimatter in the SPS ({{antimatter/sps}})."
+  ],
+  "sources": [
+   "antimatter chapter (yellowcake, oxide, hf, uf6, fuel, polonium, plutonium, sps)"
+  ]
+ },
+ "outlook": {
+  "de": [
+   "Die 100 Antimaterie-Pellets sind ein Grundziel für 30 aktive Spieler und werden beim Öffnen von Stufe 5 einmal mit 0,4 bis 1,5 verrechnet. Fest ist dort nur der Draconium-Teil.",
+   "Das SPS will laut Config 1 000 000 J pro mB Polonium, ein Pellet also eine Billion J. Bau die Induktionsmatrix groß genug ({{mekanism_elite/adv_induction}})."
+  ],
+  "en": [
+   "The 100 antimatter pellets are a base goal for 30 active players, scaled once by 0.4 to 1.5 when stage 5 opens. Only the draconium part is fixed there.",
+   "By config the SPS wants 1,000,000 J per mB of polonium, so one pellet is a trillion J. Build the Induction Matrix big enough ({{mekanism_elite/adv_induction}})."
+  ],
+  "sources": [
+   "config/kronwerke/goals.json (stage5 pellet_antimatter base 100 scale, awakened_draconium_block fixed)",
+   "srv/config/Mekanism/general.toml (sps energyPerInput 1000000, inputPerAntimatter 1000)"
+  ]
+ },
+ "goal": {
+  "de": [
+   "Am Obelisken sind 150 Elite-Schaltkreise und 1 000 Draconiumbarren Grundziele für 30 aktive Spieler, beim Öffnen von Stufe 4 einmal mal 0,4 bis 1,5 gerechnet. Fest sind die 128 [[botania:gaia_spirit]] und die 30 Mystischen Stäbe der Magie-Säule.",
+   "Draconiumstaub schmilzt im Ofen zum Barren. Beim Schleich-Klick gibt der Obelisk nur die Hauptreihen ab, nicht die Schnellleiste, und will einen zweiten Schleich-Klick innerhalb von 5 Sekunden. Die Quest prüft nur und nimmt nichts."
+  ],
+  "en": [
+   "At the obelisk, 150 Elite Control Circuits and 1,000 draconium ingots are base goals for 30 active players, scaled once by 0.4 to 1.5 when stage 4 opens. The 128 [[botania:gaia_spirit]] and 30 Mystic Staffs of the magic pillar are fixed.",
+   "Draconium dust smelts into ingots in a furnace. With a sneak click the obelisk takes only the main rows, not the hotbar, and wants a second sneak click within 5 seconds. The quest only checks and takes nothing."
+  ],
+  "sources": [
+   "config/kronwerke/goals.json (stage4)",
+   "draconicevolution:components/draconium_ingot_from_dust (smelting)",
+   "core: obelisk/Obelisk.java",
+   "config/ftbquests/quests/data.snbt (default_consume_items false)"
+  ]
+ }
+}

@@ -1,0 +1,1046 @@
+{
+ "welcome": {
+  "de": [
+   "Die meisten Osmiumadern liegen im Gebirge zwischen Y 72 und der Bergspitze, also lohnt sich ein Berg mehr als ein Höhlensystem. Bau ohne Behutsamkeit ab: Nur [[mekanism:raw_osmium]] zählt, Erzblöcke und Rohosmiumblöcke nimmt die Quest nicht.",
+   "Mit Glück fällt mehr Rohes Osmium, siehe {{mekanism_ores/fortune}}. Weiter geht es mit {{mekanism/osmium}} und {{mekanism/manasteel}}, beides brauchst du für die erste Maschine."
+  ],
+  "en": [
+   "Most osmium veins sit in the mountains between Y 72 and the peaks, so a mountain pays off more than a cave system. Mine without Silk Touch: only [[mekanism:raw_osmium]] counts, ore blocks and raw osmium blocks do not.",
+   "Fortune drops more raw osmium, see {{mekanism_ores/fortune}}. Next are {{mekanism/osmium}} and {{mekanism/manasteel}}, both go into the first machine."
+  ],
+  "sources": [
+   "srv/config/Mekanism/world.toml (osmium.upper Y 72 to top-24, 65 per chunk; middle -32 to 56; small up to 64)",
+   "mekanism:raw_osmium"
+  ]
+ },
+ "osmium": {
+  "de": [
+   "Rohes Osmium schmilzt im Ofen in 10 Sekunden, im Schmelzofen in 5 zu einem [[mekanism:ingot_osmium]]. Von den 32 Barren gehen einer in die Infusionsanlage, einer in den Wärmegenerator und einer in jedes Stahlgehäuse.",
+   "Später zahlt sich die Erzstraße aus: {{mekanism_ores/welcome}} macht aus einem Rohen Erz zwei Barren und mehr."
+  ],
+  "en": [
+   "Raw osmium smelts into an [[mekanism:ingot_osmium]] in 10 seconds in a furnace, 5 in a blast furnace. Of the 32 ingots one goes into the infuser, one into the heat generator and one into each steel casing.",
+   "Later the ore line pays off: {{mekanism_ores/welcome}} turns one raw ore into two ingots and more."
+  ],
+  "sources": [
+   "mekanism:processing/osmium/ingot/from_raw_smelting (200 ticks)",
+   "mekanism:processing/osmium/ingot/from_ore_blasting (100 ticks)",
+   "kronwerke:metallurgic_infuser",
+   "mekanismgenerators:generator/heat",
+   "kronwerke:tech/steel_casing"
+  ]
+ },
+ "manasteel": {
+  "de": [
+   "Auf Kronwerke wird **nur Infused Iron** im Manabecken zu Manastahl, normales Eisen nimmt das Becken nicht. [[naturesaura:infused_iron]] kommt aus Nature's Aura.",
+   "Der erste Weg ist {{botania_runes/ritual}}: Das Ritual gibt vier Barren auf einmal. Danach reicht {{botania_runes/infused_pool}} mit 3 000 Mana pro Barren."
+  ],
+  "en": [
+   "On Kronwerke the mana pool turns **only Infused Iron** into manasteel, plain iron does not work. [[naturesaura:infused_iron]] comes from Nature's Aura.",
+   "The first way is {{botania_runes/ritual}}: the ritual gives four ingots at once. After that {{botania_runes/infused_pool}} does it for 3,000 mana per ingot."
+  ],
+  "sources": [
+   "kronwerke:magic/manasteel_from_infused_iron (mana 3000)",
+   "kronwerke:magic/manasteel_ritual (4 ingots)",
+   "botania:manasteel_ingot (no plain iron infusion in the dump)"
+  ]
+ },
+ "infuser": {
+  "de": [
+   "Für die beiden Barren unten zählt jeder Manastahl (Tag), für die Mitte jeder Osmiumbarren. Die Anlage braucht 20 FE/t, ein [[mekanismgenerators:heat_generator]] mit 80 FE/t reicht also für sie und noch drei weitere Grundmaschinen.",
+   "Ab hier läuft fast alles über sie: Stahl ({{mekanism/enriched_iron}}), Schaltkreise ({{mekanism/circuit}}) und Legierungen ({{mekanism/alloy}})."
+  ],
+  "en": [
+   "Any manasteel ingot (tag) works for the two bottom slots, any osmium ingot for the middle. It needs 20 FE/t, so one [[mekanismgenerators:heat_generator]] at 80 FE/t runs it and three more basic machines.",
+   "Nearly everything goes through it from here: steel ({{mekanism/enriched_iron}}), circuits ({{mekanism/circuit}}) and alloys ({{mekanism/alloy}})."
+  ],
+  "sources": [
+   "kronwerke:metallurgic_infuser (pattern I#I ROR M#M)",
+   "srv/config/Mekanism/machine-usage.toml (metallurgicInfuser 50 J = 20 FE)",
+   "srv/config/Mekanism/generators.toml (heatGeneration 200 J = 80 FE)",
+   "general.toml feConversionRate 2.5"
+  ]
+ },
+ "infusion": {
+  "de": [
+   "Kohle und Holzkohle zählen beide als Kohlenstoff, Holzkohle bringt sogar das Doppelte. Mit einer Baumfarm und einem Ofen hast du also endlos Kohlenstoff.",
+   "Noch besser ist [[mekanism:enriched_carbon]] aus der Anreicherungskammer ({{mekanism/enriched_carbon}}): 80 mB statt 10 aus derselben Kohle."
+  ],
+  "en": [
+   "Coal and charcoal both count as carbon, and charcoal even gives twice as much. A tree farm and a furnace give you endless carbon.",
+   "Better still is [[mekanism:enriched_carbon]] from the enrichment chamber ({{mekanism/enriched_carbon}}): 80 mB instead of 10 from the same coal."
+  ],
+  "sources": [
+   "mekanism:chemical_conversion/carbon/from_coal (10)",
+   "mekanism:chemical_conversion/carbon/from_charcoal (20)",
+   "mekanism:chemical_conversion/carbon/from_enriched (80)"
+  ]
+ },
+ "enriched_iron": {
+  "de": [
+   "Barren oder [[mekanism:dust_iron]] gehen beide, es kommt je ein [[mekanism:enriched_iron]] heraus. Lass den Kohlenstoff gleich im Tank: Der nächste Schritt zum Stahlstaub braucht wieder 10 mB Kohlenstoff, du musst nicht wechseln."
+  ],
+  "en": [
+   "Ingots or [[mekanism:dust_iron]] both work, each gives one [[mekanism:enriched_iron]]. Leave the carbon in the tank: the next step to steel dust needs 10 mB carbon again, no switching needed."
+  ],
+  "sources": [
+   "mekanism:processing/iron/enriched",
+   "mekanism:processing/iron/enriched_dust",
+   "mekanism:processing/steel/enriched_iron_to_dust"
+  ]
+ },
+ "steel": {
+  "de": [
+   "Ein Eisenbarren wird über zwei Infusionen mit je 10 mB Kohlenstoff zu einem [[mekanism:dust_steel]]. Für die 16 Barren gibt es auch Abkürzungen: An der Werkbank geben 2 Eisenbarren über 2 Kohle einen [[mekanism:ingot_steel]] (Oritech-Rezept), und der Hochofen von Immersive Engineering macht aus Eisen direkt Mekanism-Stahl. Die Infusion braucht aber nur ein Eisen pro Barren.",
+   "Fürs Ziel von Stufe 3 zählt jeder Barren mit dem Tag Stahl, die Menge hängt von der Zahl der aktiven Spieler ab. Abgeben kannst du erst, wenn Stufe 3 offen ist, also heb den Stahl auf."
+  ],
+  "en": [
+   "One iron ingot becomes [[mekanism:dust_steel]] through two infusions of 10 mB carbon each. There are shortcuts for the 16 ingots: at the crafting table 2 iron ingots over 2 coal give one [[mekanism:ingot_steel]] (an Oritech recipe), and the Immersive Engineering blast furnace turns iron straight into Mekanism steel. The infuser only needs one iron per ingot, though.",
+   "The stage 3 goal takes any ingot with the steel tag, and its amount depends on the number of active players. You can only hand in once stage 3 is open, so keep the steel."
+  ],
+  "sources": [
+   "mekanism:processing/steel/enriched_iron_to_dust",
+   "oritech:crafting/alloy/steel (aa/bb, 1 ingot)",
+   "immersiveengineering:blastfurnace/steel (result mekanism:ingot_steel)",
+   "nuclearcraft:smelting/steel_dust, nuclearcraft:blasting/steel_dust",
+   "config/kronwerke/goals.json (stage3 #c:ingots/steel base 4000, scale true)",
+   "core: GoalManager.isActive (next goal opens with the reveal)"
+  ]
+ },
+ "casing": {
+  "de": [
+   "Ein [[mekanism:steel_casing]] kostet 4 Stahl, 4 [[create:andesite_alloy]] und 1 Osmium, für vier Stück also 16 Stahl. Die Legierung geht im Create-Mixer billiger: Andesit und ein Eisen- oder Zinknugget geben zwei, mit überhitztem Lohenbrenner geben zwei Andesit und ein Nugget sogar vier.",
+   "Mit den Gehäusen öffnen sich {{mekanism/enrichment}}, {{mekanism/pipes}} und {{mekanism/configurator}}."
+  ],
+  "en": [
+   "One [[mekanism:steel_casing]] costs 4 steel, 4 [[create:andesite_alloy]] and 1 osmium, so four take 16 steel. The alloy is cheaper in the Create mixer: andesite and an iron or zinc nugget make two, and with a superheated blaze burner two andesite and one nugget make four.",
+   "The casings open {{mekanism/enrichment}}, {{mekanism/pipes}} and {{mekanism/configurator}}."
+  ],
+  "sources": [
+   "kronwerke:tech/steel_casing (SAS AOA SAS)",
+   "kronwerke:create/andesite_alloy_mixing",
+   "kronwerke:create/andesite_alloy_mixing_from_zinc",
+   "kronwerke:round/andesite_alloy_superheated"
+  ]
+ },
+ "tools": {
+  "de": [
+   "**Der Stiel ist aus Eisen:** Die [[mekanismtools:steel_pickaxe]] braucht oben drei Stahlbarren und darunter zwei Eisenbarren, keine Stöcke. Dasselbe gilt für Axt und Schaufel aus Stahl.",
+   "Alle drei zusammen ergeben in {{mekanism/paxel}} die Stahlpaxel."
+  ],
+  "en": [
+   "**The handle is iron:** the [[mekanismtools:steel_pickaxe]] takes three steel ingots on top and two iron ingots below, no sticks. The same goes for the steel axe and shovel.",
+   "All three together make the steel paxel in {{mekanism/paxel}}."
+  ],
+  "sources": [
+   "mekanismtools:steel/tools/pickaxe (III / R / R, R = #c:ingots/iron)"
+  ]
+ },
+ "paxel": {
+  "de": [
+   "Die [[mekanismtools:steel_paxel]] frisst die drei Werkzeuge, also bau dir Axt und Schaufel extra und nimm nicht die Spitzhacke aus der letzten Quest, wenn du sie behalten willst. Die Stiele sind wie bei den Werkzeugen Eisenbarren."
+  ],
+  "en": [
+   "The [[mekanismtools:steel_paxel]] uses up the three tools, so make an extra axe and shovel and keep a spare pickaxe if you want one. The handles are iron ingots, as with the tools."
+  ],
+  "sources": [
+   "mekanismtools:steel/tools/paxel (APS / R / R, R = #c:ingots/iron)"
+  ]
+ },
+ "tube": {
+  "de": [
+   "Nur die [[create:electron_tube]] von Create zählt. Den Rosenquarz kann auch die Infusionsanlage machen: Netherquarz mit 80 mB Redstone gibt einen [[create:rose_quartz]], und die Anreicherungskammer poliert ihn ohne Schmirgelpapier.",
+   "Das [[create:iron_sheet]] kommt aus der Mechanischen Presse. Der Weg mit Create steht in {{create_brass/rose_quartz}} bis {{create_brass/electron_tube}}."
+  ],
+  "en": [
+   "Only Create's [[create:electron_tube]] counts. The infuser can make the rose quartz too: nether quartz with 80 mB redstone gives one [[create:rose_quartz]], and the enrichment chamber polishes it without sandpaper.",
+   "The [[create:iron_sheet]] comes from the mechanical press. The Create way is {{create_brass/rose_quartz}} to {{create_brass/electron_tube}}."
+  ],
+  "sources": [
+   "create:crafting/materials/electron_tube",
+   "createaddition:compat/mekanism/rose_quartz_metallurgic_infusing (80 mB redstone)",
+   "createaddition:compat/mekanism/rose_quartz_enriching"
+  ]
+ },
+ "circuit": {
+  "de": [
+   "Ein [[mekanism:basic_control_circuit]] kostet eine Röhre und 20 mB Redstone, also zwei Redstonestaub. Mit [[mekanism:enriched_redstone]] (80 mB) aus der Anreicherungskammer reicht ein Stück für vier Schaltkreise.",
+   "Der Fortschrittliche Steuerschaltkreis wird in Stufe 3 aus zwei Infundierten Legierungen, diesem Schaltkreis und [[ae2:printed_silicon]] gebaut, siehe {{mekanism_advanced/welcome}}."
+  ],
+  "en": [
+   "A [[mekanism:basic_control_circuit]] costs one tube and 20 mB redstone, so two redstone dust. One [[mekanism:enriched_redstone]] (80 mB) from the enrichment chamber covers four circuits.",
+   "In stage 3 the advanced control circuit is made from two infused alloys, this circuit and [[ae2:printed_silicon]], see {{mekanism_advanced/welcome}}."
+  ],
+  "sources": [
+   "kronwerke:tech/basic_control_circuit (20 mB mekanism:redstone)",
+   "mekanism:chemical_conversion/redstone/from_enriched (80)",
+   "kronwerke:tech/advanced_control_circuit"
+  ]
+ },
+ "alloy": {
+  "de": [
+   "Jeder Kupferbarren gibt mit 10 mB Redstone eine [[mekanism:alloy_infused]]. Mach sie direkt nach den Schaltkreisen, dann bleibt Redstone im Tank und du sparst einen Wechsel.",
+   "Gleich danach brauchst du sie für {{mekanism/tablet}}, {{mekanism/upgrades}} und {{mekanism/tin_bronze}}."
+  ],
+  "en": [
+   "Each copper ingot plus 10 mB redstone gives one [[mekanism:alloy_infused]]. Make them right after the circuits, so the redstone stays in the tank and you skip a switch.",
+   "You need them right away for {{mekanism/tablet}}, {{mekanism/upgrades}} and {{mekanism/tin_bronze}}."
+  ],
+  "sources": [
+   "mekanism:metallurgic_infusing/alloy/infused"
+  ]
+ },
+ "tin_bronze": {
+  "de": [
+   "Ein einziger [[mekanism:dust_tin]] (10 mB) macht aus drei Kupfer vier [[mekanism:ingot_bronze]], für acht Bronze reichen also zwei Zinnstaub und sechs Kupfer. Den Staub machst du im Zerkleinerer aus Zinnbarren oder in der Anreicherungskammer aus Rohem Zinn.",
+   "Zinnerz liegt zwischen Y -32 und Y 94. Leer den Redstone vorher aus dem Tank, Zinn ist ein anderer Infusionsstoff."
+  ],
+  "en": [
+   "A single [[mekanism:dust_tin]] (10 mB) turns three copper into four [[mekanism:ingot_bronze]], so eight bronze take two tin dust and six copper. Make the dust from tin ingots in the crusher or from raw tin in the enrichment chamber.",
+   "Tin ore lies between Y -32 and Y 94. Empty the redstone from the tank first, tin is a different infuse type."
+  ],
+  "sources": [
+   "mekanism:processing/bronze/ingot/from_infusing (3 copper, 10 mB tin, 4 bronze)",
+   "mekanism:chemical_conversion/tin/from_dust (10)",
+   "srv/config/Mekanism/world.toml (tin -32 to 94)"
+  ]
+ },
+ "other_ores": {
+  "de": [
+   "Blei aus Mekanism und aus Immersive Engineering schmilzt beide zu demselben [[mekanism:ingot_lead]]. Salz liegt in kleinen Flecken unter Wasser wie Ton; die Anreicherungskammer macht aus einem [[mekanism:block_salt]] vier [[mekanism:salt]].",
+   "Salz brauchst du für Sole ({{mekanism/gas_brine}}), Uran sammelst du in {{mekanism_ores/uranium}}."
+  ],
+  "en": [
+   "Lead from Mekanism and from Immersive Engineering both smelt into the same [[mekanism:ingot_lead]]. Salt lies in small patches under water like clay; the enrichment chamber turns one [[mekanism:block_salt]] into four [[mekanism:salt]].",
+   "You need salt for brine ({{mekanism/gas_brine}}), uranium is collected in {{mekanism_ores/uranium}}."
+  ],
+  "sources": [
+   "immersiveengineering:smelting/ingot_lead2 (result mekanism:ingot_lead)",
+   "mekanism:enriching/salt (4 salt)",
+   "srv/config/Mekanism/world.toml (salt disks)"
+  ]
+ },
+ "enrichment": {
+  "de": [
+   "Die Ecken sind Redstonestaub, oben und unten je ein [[mekanism:basic_control_circuit]], links und rechts Eisen. Die Kammer braucht 20 FE/t.",
+   "Drei Dinge für Infusionsstoff: Kohle (auch Holzkohle) wird zu [[mekanism:enriched_carbon]], Redstonestaub zu [[mekanism:enriched_redstone]], ein Diamant zu Angereichertem Diamant für Stufe 3. Jedes gibt 80 mB statt 10."
+  ],
+  "en": [
+   "The corners are redstone dust, a [[mekanism:basic_control_circuit]] goes top and bottom, iron left and right. The chamber needs 20 FE/t.",
+   "Three things for infuse types: coal (charcoal too) becomes [[mekanism:enriched_carbon]], redstone dust becomes [[mekanism:enriched_redstone]], a diamond becomes enriched diamond for stage 3. Each gives 80 mB instead of 10."
+  ],
+  "sources": [
+   "mekanism:enrichment_chamber (ACA IXI ACA, A = #mekanism:alloys/basic = redstone)",
+   "machine-usage.toml enrichmentChamber 50 J",
+   "mekanism:enriching/enriched/carbon (#minecraft:coals)",
+   "mekanism:enriching/enriched/redstone",
+   "mekanism:enriching/enriched/diamond"
+  ]
+ },
+ "enriched_carbon": {
+  "de": [
+   "Die Kammer nimmt alles mit dem Tag Kohle, also auch Holzkohle aus deiner Baumfarm. Da Stahl zwei Infusionen mit je 10 mB braucht, macht ein [[mekanism:enriched_carbon]] vier Stahlbarren.",
+   "In {{mekanism/ore_line}} stellst du sie vor die Infusionsfabriken."
+  ],
+  "en": [
+   "The chamber takes anything with the coals tag, so charcoal from your tree farm works too. Steel needs two infusions of 10 mB each, so one [[mekanism:enriched_carbon]] makes four steel ingots.",
+   "In {{mekanism/ore_line}} it goes in front of the infusing factories."
+  ],
+  "sources": [
+   "mekanism:enriching/enriched/carbon (#minecraft:coals)",
+   "mekanism:chemical_conversion/carbon/from_enriched (80)",
+   "mekanism:processing/iron/enriched, mekanism:processing/steel/enriched_iron_to_dust (10 each)"
+  ]
+ },
+ "crusher": {
+  "de": [
+   "Für die zwei [[create:crushing_wheel]] brauchst du Create, siehe {{create_brass/crushing_wheel}}. Aus Obsidian macht er vier [[create:powdered_obsidian]], das zählt als Obsidianstaub.",
+   "Für [[mekanism:bio_fuel]] lohnen Kürbis und Melone am meisten: sechs Stück pro Frucht, Weizen, Kartoffel und Karotte geben zwei."
+  ],
+  "en": [
+   "The two [[create:crushing_wheel]] need Create, see {{create_brass/crushing_wheel}}. From obsidian it makes four [[create:powdered_obsidian]], which counts as obsidian dust.",
+   "For [[mekanism:bio_fuel]] pumpkins and melons pay best: six per fruit, wheat, potatoes and carrots give two."
+  ],
+  "sources": [
+   "kronwerke:tech/crusher (RCR WXW RCR)",
+   "mekanism:crushing/obsidian_to_dust (4 create:powdered_obsidian)",
+   "mekanism:crushing/biofuel/pumpkin, melon (6)",
+   "mekanism:crushing/biofuel/crops_tags (2)",
+   "mekanism:crushing/blaze_rod (4)"
+  ]
+ },
+ "sawmill": {
+  "de": [
+   "**Bretter brauchst du nicht:** Das [[mekanism:precision_sawmill]] ist ein Stahlgehäuse mit Eisen in den Ecken, Schaltkreisen oben und unten und je einer [[mekanism:alloy_infused]] links und rechts.",
+   "Jeder Stamm gibt sechs Bretter und mit 25 Prozent Chance [[mekanism:sawdust]]. Auch Bretter zu Stöcken geben Sägespäne, falls dir die Stämme ausgehen."
+  ],
+  "en": [
+   "**No planks needed:** the [[mekanism:precision_sawmill]] is a steel casing with iron in the corners, circuits top and bottom and one [[mekanism:alloy_infused]] left and right.",
+   "Each log gives six planks and a 25 percent chance of [[mekanism:sawdust]]. Planks to sticks also give sawdust if you run out of logs."
+  ],
+  "sources": [
+   "mekanism:precision_sawmill (ICI AXA ICI, A = #mekanism:alloys/infused)",
+   "mekanism:sawing/log/oak (6 planks, sawdust 0.25)",
+   "mekanism:sawing/planks (sawdust 0.25)"
+  ]
+ },
+ "cardboard": {
+  "de": [
+   "Sägespäne fällt nur bei jedem vierten Sägevorgang, für zwei [[mekanism:cardboard_box]] mit je vier Sägespänen sägst du also im Schnitt 32 Stämme oder Bretter.",
+   "Außer Betten, Türen, Prüfungsspawnern und Tresoren sperrt Mekanism auch alles mit dem Tag relocation_not_supported."
+  ],
+  "en": [
+   "Sawdust only drops on every fourth cut, so two [[mekanism:cardboard_box]] with four sawdust each take about 32 logs or planks.",
+   "Besides beds, doors, trial spawners and vaults, Mekanism also refuses everything tagged relocation_not_supported."
+  ],
+  "sources": [
+   "mekanism:cardboard_box (## ##, #c:dusts/wood)",
+   "mekanism:sawing/log/oak (secondary_chance 0.25)",
+   "Mekanism jar data/mekanism/tags/block/cardboard_blacklist.json"
+  ],
+  "client": [
+   "packing a block with the box (sneak right click)"
+  ]
+ },
+ "seismic": {
+  "de": [
+   "Der [[mekanism:seismic_vibrator]] braucht 20 FE/t, das [[mekanism:seismic_reader]] lädt wie jedes Werkzeug im Energieslot oder auf dem Ladepad. Zinn dafür kommt aus {{mekanism/tin_bronze}}.",
+   "Stell den Vibrator in deiner Basis auf, nicht in der Farmwelt: Die wird alle drei Tage neu erzeugt."
+  ],
+  "en": [
+   "The [[mekanism:seismic_vibrator]] needs 20 FE/t, the [[mekanism:seismic_reader]] charges like any tool in an energy slot or on the chargepad. The tin comes from {{mekanism/tin_bronze}}.",
+   "Set the vibrator up in your base, not in the farm world: that one is regenerated every three days."
+  ],
+  "sources": [
+   "mekanism:seismic_vibrator (I#I CXC III)",
+   "mekanism:seismic_reader",
+   "machine-usage.toml seismicVibrator 50 J",
+   "docs/STAGES.md (mining world reset every three days)"
+  ],
+  "client": [
+   "reading the column with the seismic reader"
+  ]
+ },
+ "heat_gen": {
+  "de": [
+   "**Strom gibt er nur über die Vorderseite ab.** Dreh die Front zur Maschine oder zum Kabel, sonst kommt nichts an.",
+   "Ohne Brennstoff liefert er mit Lava rundherum: 12 FE/t je angrenzende Lavaquelle, im Nether 40 FE/t dazu. Im Tank verbrennt er auch Lava aus Eimern oder Rohren."
+  ],
+  "en": [
+   "**It only outputs power from its front.** Turn the front towards the machine or the cable, otherwise nothing arrives.",
+   "Without fuel it runs on lava around it: 12 FE/t per adjacent lava source, plus 40 FE/t in the Nether. It also burns lava from buckets or pipes in its tank."
+  ],
+  "sources": [
+   "mekanismgenerators:generator/heat (III WOW CFC)",
+   "MekanismGenerators jar: TileEntityGenerator.ENERGY_SIDES = FRONT",
+   "srv/config/Mekanism/generators.toml (heatGeneration 200, heatGenerationLava 30, heatGenerationNether 100, tankCapacity 24000)"
+  ],
+  "client": [
+   "burning lava from the internal tank"
+  ]
+ },
+ "cables": {
+  "de": [
+   "Ein [[mekanism:basic_universal_cable]] trägt 3 200 FE/t, mehr als jede Maschine von Stufe 2 braucht. Acht Stück kosten nur zwei Stahl und ein Redstone.",
+   "Kabel verbinden sich auch mit Maschinen anderer Mods, Mekanism rechnet dabei 2,5 J pro FE."
+  ],
+  "en": [
+   "A [[mekanism:basic_universal_cable]] carries 3,200 FE/t, more than any stage 2 machine needs. Eight cost only two steel and one redstone.",
+   "Cables also connect to machines of other mods; Mekanism counts 2.5 J per FE."
+  ],
+  "sources": [
+   "mekanism:transmitter/universal_cable/basic (S#S, 8)",
+   "srv/config/Mekanism/tiers.toml (transmitters.energy basicCapacity 8000 J)",
+   "general.toml feConversionRate 2.5"
+  ]
+ },
+ "tablet": {
+  "de": [
+   "Ein [[mekanism:energy_tablet]] kostet drei Gold, vier Redstone und zwei [[mekanism:alloy_infused]]. Zwei brauchst du allein für den Energie-Würfel, zwei weitere für den Windgenerator.",
+   "Voll fasst es 1 000 000 J, das sind 400 000 FE."
+  ],
+  "en": [
+   "An [[mekanism:energy_tablet]] costs three gold, four redstone and two [[mekanism:alloy_infused]]. The energy cube alone takes two, the wind generator two more.",
+   "Full, it holds 1,000,000 J, which is 400,000 FE."
+  ],
+  "sources": [
+   "mekanism:energy_tablet (RIR AIA RIR)",
+   "srv/config/Mekanism/gear.toml (energy_tablet maxEnergy 1000000)",
+   "mekanism:energy_cube/basic",
+   "mekanismgenerators:generator/wind"
+  ]
+ },
+ "cube": {
+  "de": [
+   "Ein Würfel zwischen Generatoren und Maschinen fängt Spitzen ab: Der Wärmegenerator läuft weiter, auch wenn gerade nichts arbeitet, und der Strom geht nicht verloren.",
+   "Später wird er mit {{mekanism_advanced/adv_cube}} viermal so groß."
+  ],
+  "en": [
+   "A cube between generators and machines evens out the flow: the heat generator keeps running while nothing works, and the power is not lost.",
+   "Later {{mekanism_advanced/adv_cube}} makes it four times as big."
+  ],
+  "sources": [
+   "mekanism:energy_cube/basic (AEA IPI AEA)",
+   "srv/config/Mekanism/tiers.toml (basicCapacity 4000000 J, advancedCapacity 16000000 J)"
+  ]
+ },
+ "wind": {
+  "de": [
+   "Ab Y 24 steigt die Leistung mit der Höhe, ein Berggipfel lohnt sich also. Er gibt Strom nach vorn und nach unten ab, ein Kabel unter dem Fuß reicht also.",
+   "Im Nether ist die nutzbare Höhe auf 128 begrenzt, bau ihn lieber in der Oberwelt."
+  ],
+  "en": [
+   "From Y 24 up the output grows with height, so a mountain top pays off. It outputs to the front and downwards, so a cable under its base is enough.",
+   "In the Nether the height is capped at 128, so build it in the Overworld."
+  ],
+  "sources": [
+   "mekanismgenerators:generator/wind",
+   "srv/config/Mekanism/generators.toml (generationMin 60, generationMax 480, minY 24, maxY clamped at logical height)",
+   "MekanismGenerators jar: TileEntityWindGenerator.ENERGY_SIDES = FRONT, BOTTOM"
+  ],
+  "client": [
+   "exact output at a given height"
+  ]
+ },
+ "solar": {
+  "de": [
+   "Ein [[mekanismgenerators:solar_panel]] ist drei Glasscheiben über Redstone, Legierung, Redstone, unten drei Osmium. Der [[mekanismgenerators:solar_generator]] gibt **nur nach unten** Strom ab, das Kabel gehört also darunter.",
+   "In {{mekanism_advanced/adv_solar}} werden vier davon mit zwei Legierungen und drei Eisen zum Erweiterten Solargenerator."
+  ],
+  "en": [
+   "A [[mekanismgenerators:solar_panel]] is three glass panes over redstone, alloy, redstone, with three osmium below. The [[mekanismgenerators:solar_generator]] outputs **only downwards**, so the cable goes underneath.",
+   "In {{mekanism_advanced/adv_solar}} four of them with two alloys and three iron become the advanced solar generator."
+  ],
+  "sources": [
+   "mekanismgenerators:solar_panel (GGG RAR OOO)",
+   "MekanismGenerators jar: TileEntitySolarGenerator.ENERGY_SIDES = BOTTOM",
+   "mekanismgenerators:generator/advanced_solar (PAP PAP III)",
+   "generators.toml solarGeneration 50 J, advancedSolarGeneration 300 J"
+  ]
+ },
+ "bio_gen": {
+  "de": [
+   "Der Generator braucht schon zwei [[mekanism:bio_fuel]] im Rezept, dazu kommen die 32 für die Quest. Kürbisse und Melonen geben im Zerkleinerer sechs Stück, Weizen und Kartoffeln zwei.",
+   "Wie der Wärmegenerator gibt er Strom nur über die Vorderseite ab."
+  ],
+  "en": [
+   "The generator itself takes two [[mekanism:bio_fuel]], on top of the 32 for the quest. Pumpkins and melons give six in the crusher, wheat and potatoes two.",
+   "Like the heat generator it only outputs from its front."
+  ],
+  "sources": [
+   "mekanismgenerators:generator/bio (RAR BCB IAI)",
+   "mekanism:crushing/biofuel/pumpkin, melon, crops_tags",
+   "generators.toml bioGeneration 350 J",
+   "MekanismGenerators jar: TileEntityGenerator.ENERGY_SIDES = FRONT"
+  ]
+ },
+ "gas_gen": {
+  "de": [
+   "Der [[mekanism:electrolytic_core]] braucht fünf Infundierte Legierungen, zwei Osmiumstaub, einen Eisen- und einen Goldstaub; den Staub machst du im Zerkleinerer aus Barren. Derselbe Kern steckt im Elektrolyseur ({{mekanism_ores/separator}}).",
+   "Der Generator nimmt Gas über einen Druckschlauch und gibt Strom nur über die Vorderseite ab."
+  ],
+  "en": [
+   "The [[mekanism:electrolytic_core]] takes five infused alloys, two osmium dust, one iron and one gold dust; make the dust from ingots in the crusher. The same core goes into the electrolytic separator ({{mekanism_ores/separator}}).",
+   "The generator takes gas through a pressurized tube and only outputs power from its front."
+  ],
+  "sources": [
+   "mekanismgenerators:generator/gas_burning (OAO XCX OAO)",
+   "mekanism:electrolytic_core (AOA IA# AOA)",
+   "mekanism:electrolytic_separator",
+   "MekanismGenerators jar: TileEntityGenerator.ENERGY_SIDES = FRONT"
+  ]
+ },
+ "chargepad": {
+  "de": [
+   "Das Ladepad nimmt Strom über Kabel, am besten direkt vom Energie-Würfel. Lege es auf deinen täglichen Weg, dann sind Lesegerät, Freiläufer und Tabletts immer voll."
+  ],
+  "en": [
+   "The chargepad takes power by cable, best straight from the energy cube. Put it on your daily path, and the reader, free runners and tablets stay full."
+  ],
+  "sources": [
+   "mekanism:chargepad (### SES)"
+  ],
+  "client": [
+   "which items in inventory and armor slots get charged"
+  ]
+ },
+ "free_runners": {
+  "de": [
+   "Volle 64 000 J reichen für 1 280 halbe Herzen Fallschaden, du kannst also aus großer Höhe springen. Sie laden höchstens 320 J pro Tick, auf dem Ladepad ({{mekanism/chargepad}}) sind sie in zehn Sekunden voll.",
+   "Für die [[mekanism:free_runners_armored]] brauchst du einen [[mekanism:block_steel]] (neun Stahlbarren) und zwei Diamantstaub aus dem Zerkleinerer."
+  ],
+  "en": [
+   "A full 64,000 J covers 1,280 half hearts of fall damage, so you can jump from great heights. They charge at most 320 J per tick, so the chargepad ({{mekanism/chargepad}}) fills them in about ten seconds.",
+   "The [[mekanism:free_runners_armored]] need a [[mekanism:block_steel]] (nine steel ingots) and two diamond dust from the crusher."
+  ],
+  "sources": [
+   "mekanism:free_runners (C C / A A / E E)",
+   "mekanism:free_runners_armored",
+   "srv/config/Mekanism/gear.toml (free_runner maxEnergy 64000, chargeRate 320, fallEnergyCost 50)",
+   "srv/config/Mekanism/startup.toml (armored_free_runner armor 3)"
+  ]
+ },
+ "ethene": {
+  "de": [
+   "Für die Kammer brauchst du einen Dynamischen Tank und zwei Chemikalienbehälter ({{mekanism/dynamic_tank}}, {{mekanism/chem_tank}}). Den Wasserstoff liefert der Elektrolyseur, das Wasser die Pumpe ({{mekanism_ores/pump}}).",
+   "Jeder Vorgang gibt ein [[mekanism:substrate]], für die vier der Quest also viermal 2 Bio-Brennstoff, 10 mB Wasser und 100 mB Wasserstoff. Substrat mit Ethen und Sauerstoff wird später zu [[mekanism:hdpe_pellet]]."
+  ],
+  "en": [
+   "The chamber needs a dynamic tank and two chemical tanks ({{mekanism/dynamic_tank}}, {{mekanism/chem_tank}}). The electrolytic separator gives the hydrogen, the pump the water ({{mekanism_ores/pump}}).",
+   "Each run gives one [[mekanism:substrate]], so the four for the quest take four times 2 bio fuel, 10 mB water and 100 mB hydrogen. Substrate with ethene and oxygen later becomes [[mekanism:hdpe_pellet]]."
+  ],
+  "sources": [
+   "mekanism:pressurized_reaction_chamber (SAS CPC T#T)",
+   "mekanism:reaction/substrate/water_hydrogen",
+   "mekanism:reaction/substrate/ethene_oxygen"
+  ]
+ },
+ "pipes": {
+  "de": [
+   "Eine Rohrleitung zieht 250 mB pro Tick aus einem Tank oder einer Maschine. Der [[mekanism:basic_fluid_tank]] gibt höchstens 1 000 mB pro Tick ab.",
+   "Lava aus Eimern oder Rohren verbrennt der Wärmegenerator in seinem eigenen Tank."
+  ],
+  "en": [
+   "A pipe pulls 250 mB per tick from a tank or machine. The [[mekanism:basic_fluid_tank]] outputs at most 1,000 mB per tick.",
+   "The heat generator burns lava from buckets or pipes in its own tank."
+  ],
+  "sources": [
+   "mekanism:transmitter/mechanical_pipe/basic (S#S, 8)",
+   "srv/config/Mekanism/tiers.toml (fluid basicPullAmount 250, fluid_tanks basicCapacity 32000, basicOutput 1000)"
+  ]
+ },
+ "chem_tank": {
+  "de": [
+   "Für den Druckschlauch reicht billiges Glas aller Art. Ein Schlauch zieht 750 mB Gas pro Tick, der Behälter gibt bis zu 1 000 mB pro Tick ab.",
+   "Du brauchst Behälter für die Druckreaktionskammer ({{mekanism/ethene}}), den Rotationskondensator ({{mekanism/rotary}}), das Jetpack und die Taucherflasche."
+  ],
+  "en": [
+   "Any cheap glass works for the pressurized tube. A tube pulls 750 mB of gas per tick, the tank outputs up to 1,000 mB per tick.",
+   "Tanks go into the pressurized reaction chamber ({{mekanism/ethene}}), the rotary condensentrator ({{mekanism/rotary}}), the jetpack and the scuba tank."
+  ],
+  "sources": [
+   "mekanism:chemical_tank/basic (AOA O O AOA)",
+   "mekanism:transmitter/pressurized_tube/basic (#c:glass_blocks/cheap)",
+   "srv/config/Mekanism/tiers.toml (chemical basicPullAmount 750, chemical_tanks basicOutput 1000)"
+  ]
+ },
+ "rotary": {
+  "de": [
+   "Wasserdampf für die Schwefelsäure ({{mekanism/gas_vapor}}) kommt nur von hier: Wasser rein, Modus Dekondensieren, Dampf in einen Chemikalienbehälter. Die Maschine braucht 20 FE/t."
+  ],
+  "en": [
+   "Water vapor for sulfuric acid ({{mekanism/gas_vapor}}) only comes from here: water in, decondensing mode, vapor into a chemical tank. The machine needs 20 FE/t."
+  ],
+  "sources": [
+   "mekanism:rotary_condensentrator (GCG TE# GCG)",
+   "mekanism:rotary/water_vapor",
+   "machine-usage.toml rotaryCondensentrator 50 J"
+  ],
+  "client": [
+   "mode switch in the GUI"
+  ]
+ },
+ "dynamic_tank": {
+  "de": [
+   "24 Tanks und 2 Ventile sind genau die Hülle eines 3 mal 3 mal 3 Würfels, die Mitte bleibt leer. Gezählt wird das ganze Volumen samt Wänden: 27 Blöcke mal 350 000 mB sind **9,45 Millionen mB**.",
+   "Für Gas sind es 16 Millionen mB pro Block. Ein Dynamischer Tank steckt auch in der Druckreaktionskammer ({{mekanism/ethene}})."
+  ],
+  "en": [
+   "24 tanks and 2 valves are exactly the shell of a 3 by 3 by 3 cube, the middle stays empty. The whole volume counts, walls included: 27 blocks times 350,000 mB is **9.45 million mB**.",
+   "For gas it is 16 million mB per block. A dynamic tank also goes into the pressurized reaction chamber ({{mekanism/ethene}})."
+  ],
+  "sources": [
+   "mekanism:dynamic_tank (4)",
+   "mekanism:dynamic_valve (2)",
+   "srv/config/Mekanism/general.toml (fluidPerTank 350000, chemicalPerTank 16000000)",
+   "Mekanism jar: MultiblockData volume = bounds length x width x height"
+  ]
+ },
+ "jetpack": {
+  "de": [
+   "Das Füllen geht mit 16 mB pro Tick, ein leeres [[mekanism:jetpack]] ist nach gut einer Minute voll. Den Wasserstoff macht der Elektrolyseur aus Wasser ({{mekanism_ores/separator}}).",
+   "Weil es im Brustplatz sitzt, ersetzt es die Brustplatte; das behebt {{mekanism/jetpack_armored}}."
+  ],
+  "en": [
+   "It fills at 16 mB per tick, so an empty [[mekanism:jetpack]] is full after a bit over a minute. The electrolytic separator makes the hydrogen from water ({{mekanism_ores/separator}}).",
+   "It sits in the chest slot and replaces the chestplate; {{mekanism/jetpack_armored}} fixes that."
+  ],
+  "sources": [
+   "mekanism:jetpack (SCS ITI  I )",
+   "srv/config/Mekanism/gear.toml (jetpack capacity 24000, fillRate 16)"
+  ]
+ },
+ "jetpack_armored": {
+  "de": [
+   "Der [[mekanism:block_steel]] kostet neun Stahlbarren, den [[mekanism:dust_diamond]] macht der Zerkleinerer aus je einem Diamanten. Du brauchst zwei Diamantstaub."
+  ],
+  "en": [
+   "The [[mekanism:block_steel]] costs nine steel ingots, the crusher makes [[mekanism:dust_diamond]] from one diamond each. You need two."
+  ],
+  "sources": [
+   "mekanism:jetpack_armored (# # / ISI /  P )",
+   "mekanism:processing/diamond/to_dust",
+   "srv/config/Mekanism/startup.toml (armored_jetpack armor 8, toughness 2.0)"
+  ]
+ },
+ "scuba": {
+  "de": [
+   "Den Sauerstoff macht der Elektrolyseur nebenbei zum Wasserstoff ({{mekanism_ores/separator}}). Schneller zum Ausprobieren: Feuerstein im Itemslot eines Chemikalienbehälters gibt je 10 mB Sauerstoff.",
+   "Die Flasche füllt mit 16 mB pro Tick und fasst 24 000 mB."
+  ],
+  "en": [
+   "The electrolytic separator makes oxygen next to hydrogen ({{mekanism_ores/separator}}). Quicker for a first try: flint in the item slot of a chemical tank gives 10 mB oxygen each.",
+   "The tank fills at 16 mB per tick and holds 24,000 mB."
+  ],
+  "sources": [
+   "mekanism:scuba_mask",
+   "mekanism:scuba_tank",
+   "mekanism:separator/water",
+   "mekanism:chemical_conversion/flint_to_oxygen",
+   "srv/config/Mekanism/gear.toml (scuba_tank capacity 24000, fillRate 16)"
+  ],
+  "client": [
+   "flint in a chemical tank item slot"
+  ]
+ },
+ "gas_hydrogen": {
+  "de": [
+   "Der Elektrolyseur steht im Kapitel Erz Schritt für Schritt: {{mekanism_ores/separator}}, das Wasser dafür liefert {{mekanism_ores/pump}}. Die Druckreaktionskammer braucht für den Weg über Kohle schon Sauerstoff, sie ist eher eine Quelle für [[mekanism:dust_sulfur]]."
+  ],
+  "en": [
+   "The electrolytic separator is in the ore chapter: {{mekanism_ores/separator}}, the water comes from {{mekanism_ores/pump}}. The coal route in the pressurized reaction chamber already needs oxygen, it is more a source of [[mekanism:dust_sulfur]]."
+  ],
+  "sources": [
+   "mekanism:separator/water",
+   "mekanism:reaction/coal_gasification/coals (100 mB water, 100 mB oxygen, 100 mB hydrogen, 1 sulfur dust)"
+  ]
+ },
+ "gas_oxygen": {
+  "de": [
+   "Der Elektrolyseur gibt Wasserstoff und Sauerstoff an zwei verschiedenen Seiten aus, jede braucht einen eigenen Druckschlauch. Was du nicht brauchst, kann der Elektrolyseur auch ablassen."
+  ],
+  "en": [
+   "The electrolytic separator outputs hydrogen and oxygen on two different sides, each needs its own pressurized tube. What you do not need, the separator can dump."
+  ],
+  "sources": [
+   "mekanism:separator/water"
+  ],
+  "client": [
+   "separator output sides and dump buttons"
+  ]
+ },
+ "gas_brine": {
+  "de": [
+   "Der Chemische Oxidierer gibt aus einem [[mekanism:salt]] 15 mB Sole, ein [[mekanism:block_salt]] wird in der Anreicherungskammer zu vier Salz. Für den Oxidierer brauchst du eine Persönliche Truhe ({{mekanism/personal_chest}})."
+  ],
+  "en": [
+   "The chemical oxidizer makes 15 mB brine from one [[mekanism:salt]], and the enrichment chamber turns a [[mekanism:block_salt]] into four salt. The oxidizer needs a personal chest ({{mekanism/personal_chest}})."
+  ],
+  "sources": [
+   "mekanism:oxidizing/brine (15)",
+   "mekanism:enriching/salt",
+   "mekanism:chemical_oxidizer (#mekanism:personal_storage)",
+   "mekanism:evaporating/brine (10 water to 1)"
+  ]
+ },
+ "gas_chlorine": {
+  "de": [
+   "Es läuft im selben Elektrolyseur wie Wasser, nur mit Sole statt Wasser im Tank. Den Ablauf zeigt {{mekanism_ores/chlorine}}."
+  ],
+  "en": [
+   "It runs in the same electrolytic separator as water, just with brine instead of water in the tank. {{mekanism_ores/chlorine}} shows the steps."
+  ],
+  "sources": [
+   "mekanism:separator/brine (10 brine to 1 sodium, 1 chlorine)"
+  ]
+ },
+ "gas_sodium": {
+  "de": [
+   "Natrium kommt an der zweiten Ausgangsseite des Elektrolyseurs heraus. Lass es dort nicht stehen, sonst stockt die Chlorproduktion, sobald der Natriumtank voll ist."
+  ],
+  "en": [
+   "Sodium comes out of the separator's second output. Do not let it back up, or chlorine production stops as soon as the sodium tank is full."
+  ],
+  "sources": [
+   "mekanism:separator/brine"
+  ],
+  "client": [
+   "separator stops when one output is full"
+  ]
+ },
+ "gas_hcl": {
+  "de": [
+   "Der Chemische Injektor ist schon in Stufe 2 baubar, siehe {{mekanism_ores/infuser}}. Die Chemische Injektionskammer, die das Gas verbraucht, öffnet aber erst mit Stufe 4."
+  ],
+  "en": [
+   "The chemical infuser can already be built in stage 2, see {{mekanism_ores/infuser}}. The chemical injection chamber that uses the gas only opens with stage 4."
+  ],
+  "sources": [
+   "mekanism:chemical_infusing/hydrogen_chloride",
+   "mekanism:chemical_conversion/salt_to_hydrogen_chloride (2)",
+   "kubejs/data/kronwerke/chapters/stages/stage2.json (chemical_infuser)",
+   "helpq item mekanism:chemical_injection_chamber (stage 4)"
+  ]
+ },
+ "gas_so2": {
+  "de": [
+   "[[mekanism:dust_sulfur]] fällt in der Druckreaktionskammer aus Kohle, Wasser und Sauerstoff an. Ein Kohleblock gibt dort gleich neun Schwefelstaub auf einmal."
+  ],
+  "en": [
+   "[[mekanism:dust_sulfur]] comes from coal, water and oxygen in the pressurized reaction chamber. A coal block gives nine sulfur dust at once there."
+  ],
+  "sources": [
+   "mekanism:oxidizing/sulfur_dioxide (100)",
+   "mekanism:reaction/coal_gasification/coals",
+   "mekanism:reaction/coal_gasification/blocks_coals (9 sulfur dust)"
+  ]
+ },
+ "gas_so3": {
+  "de": [
+   "Im Chemischen Injektor kommt Schwefeldioxid auf eine Seite, Sauerstoff auf die andere. Den Ablauf zeigt {{mekanism_ores/oxidizer}}."
+  ],
+  "en": [
+   "In the chemical infuser sulfur dioxide goes in on one side and oxygen on the other. {{mekanism_ores/oxidizer}} shows the steps."
+  ],
+  "sources": [
+   "mekanism:chemical_infusing/sulfur_trioxide"
+  ]
+ },
+ "gas_vapor": {
+  "de": [
+   "Wasserdampf kommt aus {{mekanism/rotary}}. Ab Stufe 4 macht die Injektionskammer damit auch aus Terrakotta wieder Ton und aus Betonpulver Beton."
+  ],
+  "en": [
+   "Water vapor comes from {{mekanism/rotary}}. From stage 4 the injection chamber also uses it to turn terracotta back into clay and concrete powder into concrete."
+  ],
+  "sources": [
+   "mekanism:rotary/water_vapor",
+   "mekanism:injecting/terracotta_to_clay",
+   "mekanism:injecting/concrete/white"
+  ]
+ },
+ "gas_acid": {
+  "de": [
+   "Für den Gasweg brauchst du nacheinander Schwefeldioxid, Schwefeltrioxid und Wasserdampf. Die Säure brauchst du erst in Stufe 4, siehe {{mekanism_ores/acid}} und {{mekanism_ores/dissolution}}."
+  ],
+  "en": [
+   "The gas route needs sulfur dioxide, then sulfur trioxide, then water vapor. You only need the acid in stage 4, see {{mekanism_ores/acid}} and {{mekanism_ores/dissolution}}."
+  ],
+  "sources": [
+   "mekanism:chemical_infusing/sulfuric_acid",
+   "mekanism:chemical_conversion/sulfur_to_sulfuric_acid (2)",
+   "helpq item mekanism:chemical_dissolution_chamber (stage 4)"
+  ]
+ },
+ "gas_ethene": {
+  "de": [
+   "Jede Ladung aus 2 Bio-Brennstoff, 10 mB Wasser und 100 mB Wasserstoff gibt 100 mB Ethen und ein [[mekanism:substrate]]. Wie die Kammer gebaut wird, steht in {{mekanism/ethene}}."
+  ],
+  "en": [
+   "Each batch of 2 bio fuel, 10 mB water and 100 mB hydrogen gives 100 mB ethene and one [[mekanism:substrate]]. {{mekanism/ethene}} shows how to build the chamber."
+  ],
+  "sources": [
+   "mekanism:reaction/substrate/water_hydrogen"
+  ]
+ },
+ "upgrades": {
+  "de": [
+   "Der [[mekanism:dust_osmium]] kommt aus dem Zerkleinerer oder aus Rohem Osmium in der Anreicherungskammer. Geschwindigkeit kostet mehr Strom, gleich es mit {{mekanism/up_energy}} aus."
+  ],
+  "en": [
+   "The [[mekanism:dust_osmium]] comes from the crusher or from raw osmium in the enrichment chamber. Speed costs more power, balance it with {{mekanism/up_energy}}."
+  ],
+  "sources": [
+   "mekanism:upgrade/speed ( G  / A#A /  G )",
+   "srv/config/Mekanism/general.toml (maxUpgradeMultiplier 10)"
+  ]
+ },
+ "up_energy": {
+  "de": [
+   "Den [[mekanism:dust_gold]] macht der Zerkleinerer aus einem Goldbarren. Das Rezept ist dasselbe Kreuz wie beim Geschwindigkeitsupgrade: Glas oben und unten, Legierung links und rechts."
+  ],
+  "en": [
+   "The crusher makes [[mekanism:dust_gold]] from a gold ingot. The recipe is the same cross as the speed upgrade: glass top and bottom, alloy left and right."
+  ],
+  "sources": [
+   "mekanism:upgrade/energy"
+  ]
+ },
+ "up_chemical": {
+  "de": [
+   "Den [[mekanism:dust_iron]] macht der Zerkleinerer aus einem Eisenbarren. Die drei Kammern, in die das Upgrade gehört, öffnen erst in Stufe 3 und 4; bau es dir auf Vorrat."
+  ],
+  "en": [
+   "The crusher makes [[mekanism:dust_iron]] from an iron ingot. The three chambers the upgrade is for only open in stages 3 and 4, so build it ahead."
+  ],
+  "sources": [
+   "mekanism:upgrade/chemical",
+   "helpq item mekanism:purification_chamber (stage 3), chemical_injection_chamber and chemical_dissolution_chamber (stage 4)"
+  ]
+ },
+ "up_filter": {
+  "de": [
+   "Die [[mekanism:electric_pump]] ist schon in Stufe 2 baubar, siehe {{mekanism_ores/pump}}. Mit dem Upgrade fördert sie Schweres Wasser statt Wasser, also stell für normales Wasser eine zweite Pumpe auf."
+  ],
+  "en": [
+   "The [[mekanism:electric_pump]] can be built in stage 2, see {{mekanism_ores/pump}}. With the upgrade it pumps heavy water instead of water, so set up a second pump for plain water."
+  ],
+  "sources": [
+   "mekanism:upgrade/filter",
+   "srv/config/Mekanism/general.toml (pump heavyWaterAmount 10)",
+   "kubejs/data/kronwerke/chapters/stages/stage2.json (electric_pump)"
+  ],
+  "client": [
+   "pump output with filter upgrade replaces water"
+  ]
+ },
+ "up_muffling": {
+  "de": [
+   "In die Mitte passen Ziegel, Eisen, Gold, Kupfer, Osmium, Zinn, Blei oder Fluorit. Beliebige Wolle geht, auch gefärbte."
+  ],
+  "en": [
+   "The middle takes a brick, iron, gold, copper, osmium, tin, lead or fluorite. Any wool works, dyed too."
+  ],
+  "sources": [
+   "mekanism:upgrade/muffling",
+   "Mekanism jar data/mekanism/tags/item/muffling_center.json"
+  ]
+ },
+ "up_anchor": {
+  "de": [
+   "Mekanism erlaubt auf dem Server das Laden von Chunks. Den [[mekanism:dust_diamond]] macht der Zerkleinerer aus einem Diamanten.",
+   "Für deine übrigen Maschinen gibt es zusätzlich die neun Chunks pro Team, die FTB Chunks dauerhaft geladen hält."
+  ],
+  "en": [
+   "Mekanism allows chunk loading on the server. The crusher makes [[mekanism:dust_diamond]] from a diamond.",
+   "For your other machines there are also the nine chunks per team that FTB Chunks keeps loaded."
+  ],
+  "sources": [
+   "mekanism:upgrade/anchor",
+   "srv/config/Mekanism/general.toml (allowChunkloading true)",
+   "docs/SERVER.md (9 force loaded chunks per team)"
+  ]
+ },
+ "up_stone": {
+  "de": [
+   "Verbraucht werden nur Wasser und Lava, die leeren Eimer bleiben im Raster zurück. Die Belohnung ersetzt dir den Lavaeimer."
+  ],
+  "en": [
+   "Only the water and lava are used up, the empty buckets stay in the grid. The reward replaces the lava bucket."
+  ],
+  "sources": [
+   "mekanism:upgrade/stone_generator ( G  / #AB /  G )"
+  ],
+  "client": [
+   "empty buckets left in the crafting grid"
+  ]
+ },
+ "configurator": {
+  "de": [
+   "Der [[mekanism:configurator]] ist zwei Eisen oben, darunter rechts Osmium und darunter Stahl. Ohne ihn baust du keine Straße, denn erst die Seitenkonfiguration und der Auto-Auswurf lassen Maschinen sich selbst weiterreichen.",
+   "Gleich danach kommen {{mekanism/transporter}} und {{mekanism/config_card}}."
+  ],
+  "en": [
+   "The [[mekanism:configurator]] is two iron on top, osmium below on the right and steel below that. Without it no line works, since side configuration and auto eject let machines pass items on by themselves.",
+   "Next come {{mekanism/transporter}} and {{mekanism/config_card}}."
+  ],
+  "sources": [
+   "mekanism:configurator (II /  A /  S)"
+  ]
+ },
+ "transporter": {
+  "de": [
+   "Ein Einfacher Logistiktransporter zieht ein Stück auf einmal, für schnelle Straßen stufst du ihn in Stufe 3 hoch ({{mekanism_advanced/adv_transmit}}). Von Maschine zu Maschine reicht meist der Auto-Auswurf."
+  ],
+  "en": [
+   "A basic logistical transporter pulls one item at a time; for faster lines upgrade it in stage 3 ({{mekanism_advanced/adv_transmit}}). From machine to machine auto eject usually does the job."
+  ],
+  "sources": [
+   "mekanism:transmitter/logistical_transporter/basic (S#S, 8)",
+   "srv/config/Mekanism/tiers.toml (items basicPullAmount 1)"
+  ]
+ },
+ "config_card": {
+  "de": [
+   "Die Karte kostet nur vier [[mekanism:alloy_infused]] und einen Schaltkreis und spart dir bei {{mekanism/ore_line}} das Einstellen jeder einzelnen Fabrik."
+  ],
+  "en": [
+   "The card costs only four [[mekanism:alloy_infused]] and a circuit, and in {{mekanism/ore_line}} it saves setting up each factory by hand."
+  ],
+  "sources": [
+   "mekanism:configuration_card ( A  / ACA /  A )"
+  ],
+  "client": [
+   "copying settings between machines"
+  ]
+ },
+ "personal_chest": {
+  "de": [
+   "Statt der Truhe geht für Oxidierer und Robit auch das [[mekanism:personal_barrel]], beide zählen als persönlicher Speicher. Ohne einen davon baust du keinen Chemischen Oxidierer für Sole ({{mekanism/gas_brine}})."
+  ],
+  "en": [
+   "The oxidizer and the Robit also accept the [[mekanism:personal_barrel]] instead, both count as personal storage. Without one of them there is no chemical oxidizer for brine ({{mekanism/gas_brine}})."
+  ],
+  "sources": [
+   "mekanism:personal_chest (SGS PCP SSS)",
+   "mekanism:chemical_oxidizer (#mekanism:personal_storage)",
+   "mekanism:robit (#mekanism:personal_storage)"
+  ],
+  "client": [
+   "security tab and opening from the inventory"
+  ]
+ },
+ "sorter": {
+  "de": [
+   "Der Sortierer zieht wie ein Trichter aus der Kiste hinter sich, du brauchst also keinen Auto-Auswurf. So holst du in {{mekanism_ores/sorter}} jede Barrensorte aus einer gemischten Kiste."
+  ],
+  "en": [
+   "The sorter pulls from the chest behind it like a hopper, so no auto eject is needed. That is how {{mekanism_ores/sorter}} pulls each kind of ingot out of a mixed chest."
+  ],
+  "sources": [
+   "mekanism:logistical_sorter (I#I ICI III)",
+   "mekanism:digital_miner (2 logistical sorters)"
+  ],
+  "client": [
+   "sorter filter GUI"
+  ]
+ },
+ "bin": {
+  "de": [
+   "Oben Bruchstein, Schaltkreis, Bruchstein, in der Mitte Redstone links und rechts, unten drei Bruchstein. Statt Bruchstein gehen auch Schwarzstein und Bruchtiefenschiefer, normaler Stein nicht. Die größeren Tonnen kommen in {{mekanism_advanced/adv_tanks}}."
+  ],
+  "en": [
+   "Top cobblestone, circuit, cobblestone, redstone left and right in the middle, three cobblestone at the bottom. Blackstone and cobbled deepslate work instead of cobblestone, plain stone does not. The bigger bins come in {{mekanism_advanced/adv_tanks}}."
+  ],
+  "sources": [
+   "mekanism:bin/basic (_C_ / A A / ___)",
+   "Mekanism jar data/mekanism/tags/item/stone_crafting_materials.json",
+   "srv/config/Mekanism/tiers.toml (bins 4096, 8192, 32768, 262144)"
+  ]
+ },
+ "factory": {
+  "de": [
+   "Beim Aufrüsten mit dem [[mekanism:basic_tier_installer]] bleiben Inhalt, Upgrades und Seiteneinstellungen der Maschine erhalten. Welche Fabriken du damit baust, zeigen die vier Quests darunter, am wichtigsten ist {{mekanism/f_infusing}}."
+  ],
+  "en": [
+   "Upgrading with the [[mekanism:basic_tier_installer]] keeps the machine's contents, upgrades and side settings. The four quests below show the factories you can make, the most important is {{mekanism/f_infusing}}."
+  ],
+  "sources": [
+   "mekanism:tier_installer/basic (ACA IPI ACA)",
+   "mekanism:factory/basic/smelting, crushing, infusing, sawing"
+  ],
+  "client": [
+   "contents and settings kept after installing"
+  ]
+ },
+ "f_smelting": {
+  "de": [
+   "Den [[mekanism:energized_smelter]] baust du aus einem Stahlgehäuse mit zwei Glas, zwei Schaltkreisen und vier Redstone. Die Fabrik ist das Ende der Stahlstraße in {{mekanism/ore_line}}."
+  ],
+  "en": [
+   "The [[mekanism:energized_smelter]] is a steel casing with two glass, two circuits and four redstone. The factory is the last step of {{mekanism/ore_line}}."
+  ],
+  "sources": [
+   "mekanism:energized_smelter (ACA GXG ACA)",
+   "mekanism:factory/basic/smelting"
+  ]
+ },
+ "f_crushing": {
+  "de": [
+   "In der Werkbank kommt der Zerkleinerer in die Mitte des Installateur-Musters: Redstone in die Ecken, Schaltkreise oben und unten, Eisen links und rechts."
+  ],
+  "en": [
+   "At the crafting table the crusher goes in the middle of the installer pattern: redstone in the corners, circuits top and bottom, iron left and right."
+  ],
+  "sources": [
+   "mekanism:factory/basic/crushing (ACA IPI ACA)"
+  ]
+ },
+ "f_infusing": {
+  "de": [
+   "Zwei davon braucht {{mekanism/ore_line}}. Beide Schritte zum Stahl laufen mit Kohlenstoff, deshalb behalten beide Fabriken denselben Infusionsstoff."
+  ],
+  "en": [
+   "{{mekanism/ore_line}} needs two of these. Both steps to steel use carbon, so both factories keep the same infuse type."
+  ],
+  "sources": [
+   "mekanism:factory/basic/infusing",
+   "mekanism:processing/iron/enriched, mekanism:processing/steel/enriched_iron_to_dust"
+  ]
+ },
+ "f_sawing": {
+  "de": [
+   "Wie beim Sägewerk gibt jeder Stamm sechs Bretter, und jeder Platz würfelt seine eigenen 25 Prozent Sägespäne."
+  ],
+  "en": [
+   "As with the sawmill each log gives six planks, and each slot rolls its own 25 percent chance of sawdust."
+  ],
+  "sources": [
+   "mekanism:factory/basic/sawing",
+   "mekanism:sawing/log/oak (secondary_chance 0.25)"
+  ]
+ },
+ "oredict": {
+  "de": [
+   "Stahl ist auf Kronwerke schon eine Sorte: Auch der Hochofen von Immersive Engineering macht Mekanism-Stahl. Nützlich ist das Gerät für Metalle, die mehrere Mods als eigene Barren liefern.",
+   "Erlaubt sind nur Tags, die mit c:dusts, c:ingots, c:nuggets, c:ores, c:raw_materials oder c:storage_blocks beginnen."
+  ],
+  "en": [
+   "Steel is already one item on Kronwerke: the Immersive Engineering blast furnace makes Mekanism steel too. The device is useful for metals that several mods supply as their own ingots.",
+   "Only tags starting with c:dusts, c:ingots, c:nuggets, c:ores, c:raw_materials or c:storage_blocks are allowed."
+  ],
+  "sources": [
+   "mekanism:oredictionificator (SGS CPC S#S)",
+   "mekanism:dictionary",
+   "immersiveengineering:blastfurnace/steel (result mekanism:ingot_steel)",
+   "srv/config/Mekanism/general.toml (oredictionificator validItemFilters)"
+  ]
+ },
+ "assemblicator": {
+  "de": [
+   "Für den Fabrikator brauchst du einen [[minecraft:crafter]] aus Vanilla. Er verbraucht 40 FE/t; die Zutaten schiebst du per Transporter oder Auto-Auswurf in seinen Vorrat.",
+   "Die [[mekanism:crafting_formula]] ist formlos: Papier und ein Schaltkreis."
+  ],
+  "en": [
+   "The assemblicator needs a vanilla [[minecraft:crafter]]. It uses 40 FE/t; feed the ingredients into its storage with a transporter or auto eject.",
+   "The [[mekanism:crafting_formula]] is shapeless: paper and a circuit."
+  ],
+  "sources": [
+   "mekanism:formulaic_assemblicator (SPS CXC S#S)",
+   "mekanism:crafting_formula",
+   "machine-usage.toml formulaicAssemblicator 100 J"
+  ],
+  "client": [
+   "encoding the formula in the GUI"
+  ]
+ },
+ "ore_line": {
+  "de": [
+   "Die zwei Infusionsfabriken bleiben beide auf Kohlenstoff: Die erste macht Angereichertes Eisen, die zweite Stahlstaub. Mit [[mekanism:enriched_carbon]] macht ein Stück Kohle vier Barren, und die {{mekanism/config_card}} spart das Einstellen.",
+   "Die Menge Stahl, die das Ziel von Stufe 3 will, hängt von der Zahl der aktiven Spieler ab. **Abgeben geht erst, wenn Stufe 3 offen ist**, sammle bis dahin in der Kiste."
+  ],
+  "en": [
+   "The two infusing factories both stay on carbon: the first makes enriched iron, the second steel dust. With [[mekanism:enriched_carbon]] one coal makes four ingots, and the {{mekanism/config_card}} saves the setup.",
+   "How much steel the stage 3 goal wants depends on the number of active players. **You can only hand in once stage 3 is open**, so collect in the chest until then."
+  ],
+  "sources": [
+   "mekanism:factory/basic/infusing",
+   "mekanism:processing/iron/enriched, mekanism:processing/steel/enriched_iron_to_dust",
+   "config/kronwerke/goals.json (stage3 #c:ingots/steel, scale true)",
+   "core: GoalManager.isActive"
+  ]
+ },
+ "outlook": {
+  "de": [
+   "Stufe 3 öffnet, wenn das Ziel von Stufe 2 voll ist (Messing, Präzisionsgetriebe, Messingherzen, Manaperlen, Terrastahl, Runenkerne). Dann legt dir der Server 32 Stahlbarren und 16 Kabel ins Starterpaket.",
+   "Weiter geht es mit {{mekanism_advanced/welcome}}; den Stahlkern zeigt {{mekanism_advanced/steel_core}}."
+  ],
+  "en": [
+   "Stage 3 opens when the stage 2 goal is full (brass, precision mechanisms, brass hearts, mana pearls, terrasteel, rune cores). The starter kit then gives you 32 steel ingots and 16 cables.",
+   "Continue with {{mekanism_advanced/welcome}}; {{mekanism_advanced/steel_core}} shows the steel core."
+  ],
+  "sources": [
+   "config/kronwerke/goals.json (stage2 pillars and starterKit, stage3 pillars)"
+  ]
+ }
+}

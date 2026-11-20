@@ -203,6 +203,15 @@ def main():
         ns, path = tex.split(":", 1)
         banners.write(os.path.join(tmp, ns, path), text, kind, colour)
 
+    # items the help names with [[ns:item]] need a name and an icon too
+    for f in glob.glob(os.path.join(here, "help", "*.json")):
+        try:
+            with open(f, encoding="utf-8") as fh:
+                text = fh.read()
+        except OSError:
+            continue
+        items.update(re.findall(r"\[\[([a-z0-9_.-]+:[a-z0-9_./-]+)\]\]", text))
+
     jars = Jars(sorted(glob.glob(os.path.join(mods, "*.jar"))) + extra)
     names = {}
     for iid in sorted(items):

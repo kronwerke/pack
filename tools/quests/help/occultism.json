@@ -1,0 +1,1175 @@
+{
+ "welcome": {
+  "de": [
+   "[[occultism:datura_seeds]] fallen mit 2 Prozent Chance aus Gras und hohem Gras, aber nicht, wenn du mit einer Schere abbaust. Für das Dictionary reicht ein beliebiges Buch dazu.",
+   "Die [[occultism:sacrificial_bowl]] braucht 5 Otherstone, und den machst du schon in Stufe 1 aus Andesit im Spiritfire ({{occultism/spirit_fire}}). Die Schale selbst ist bis **Stufe 2** gesperrt. Occultism hat keine deutsche Übersetzung, darum heißen alle seine Items auch im deutschen Spiel englisch."
+  ],
+  "en": [
+   "[[occultism:datura_seeds]] drop 2 percent of the time from grass and tall grass, but not when you break it with shears. Any book works for the Dictionary.",
+   "The [[occultism:sacrificial_bowl]] takes 5 Otherstone, which you already make in stage 1 from andesite in spiritfire ({{occultism/spirit_fire}}). The bowl itself is locked until **stage 2**. Occultism has no German translation, so its items keep their English names in every language."
+  ],
+  "sources": [
+   "occultism:crafting/dictionary_of_spirits",
+   "occultism:crafting/sacrificial_bowl (o o / ooo)",
+   "occultism jar: data/occultism/loot_modifiers/datura_seed_from_grass.json, datura_seed_from_tall_grass.json (chance 0.02, not with #c:tools/shear)",
+   "kubejs/data/kronwerke/chapters/stages/stage2.json (occultism:sacrificial_bowl)",
+   "occultism jar: assets/occultism/lang (no de_de)"
+  ]
+ },
+ "datura": {
+  "de": [
+   "Knochenmehl aus der Belohnung lässt die Pflanzen schneller reifen. Gehen dir die Samen aus, macht ein Foliot Crusher später aus jeder Frucht zwei Samen.",
+   "Die Frucht brauchst du für Spiritfire, das Spirit Campfire, die Demon's Dream Essence ({{occultism/third_eye}}) und als Zutat für den Foliot Farmer ({{occultism/foliot_farmer}})."
+  ],
+  "en": [
+   "Bone meal from the reward makes the plants grow faster. If you run out of seeds, a Foliot Crusher later turns each fruit into two seeds.",
+   "You need the fruit for spiritfire, the Spirit Campfire, Demon's Dream Essence ({{occultism/third_eye}}) and as an ingredient for the Foliot Farmer ({{occultism/foliot_farmer}})."
+  ],
+  "sources": [
+   "occultism:crushing/datura (#c:crops/datura to 2 #c:seeds/datura)",
+   "occultism:ritual/summon_foliot_farmer",
+   "occultism:crafting/spirit_campfire",
+   "occultism:crafting/demons_dream_essence_from_fruit_or_seed"
+  ]
+ },
+ "third_eye": {
+  "de": [
+   "Die Quest ist optional. Ohne Third Eye sieht ein Otherworld-Baum aus wie eine Eiche und gibt nur Eichenholz, für {{occultism/otherworld_tree}} musst du ihn also beim Fällen haben.",
+   "Otherstone brauchst du dafür nicht abzubauen: Spiritfire macht ihn aus Andesit. Behalte lieber ein paar Essenzen für [[occultism:otherworld_essence]] ({{occultism/otherworld_essence}})."
+  ],
+  "en": [
+   "This quest is optional. Without the Third Eye an Otherworld tree looks like an oak and drops only oak logs, so you need it active while felling for {{occultism/otherworld_tree}}.",
+   "You do not have to mine Otherstone for it: spiritfire makes it from andesite. Better keep a few essences for [[occultism:otherworld_essence]] ({{occultism/otherworld_essence}})."
+  ],
+  "sources": [
+   "occultism:crafting/demons_dream_essence_from_fruit_or_seed (ppp x3, fruit or seeds)",
+   "occultism:spirit_fire/otherworld_essence",
+   "occultism lang: book...divination_rod.otherworld_trees.text, demons_dream.note_on_spirit_fire.text"
+  ]
+ },
+ "spirit_fire": {
+  "de": [
+   "Jedes [[minecraft:andesite]] wird zu einem [[occultism:otherstone]], für die Quest also 16 Andesit. Spiritfire verbrennt nichts, du kannst also ruhig ganze Ladungen hineinwerfen.",
+   "Dasselbe Feuer macht aus einem Diamanten den Spirit Attuned Gem ({{occultism/spirit_gem}}) und reinigt später jede unreine Kreide. Otherrock aus Diorit taugt für Schalen und zum Bauen, aber nicht für Kreide. Dauerhaftes Spiritfire gibt dir das {{occultism/spirit_campfire}}."
+  ],
+  "en": [
+   "Each [[minecraft:andesite]] becomes one [[occultism:otherstone]], so the quest takes 16 andesite. Spiritfire burns nothing, so you can throw in whole loads.",
+   "The same fire turns a diamond into the Spirit Attuned Gem ({{occultism/spirit_gem}}) and later purifies every impure chalk. Otherrock from diorite works for bowls and building, but not for chalk. For spiritfire that lasts, build the {{occultism/spirit_campfire}}."
+  ],
+  "sources": [
+   "occultism:spirit_fire/otherstone",
+   "occultism:spirit_fire/otherrock",
+   "occultism:spirit_fire/spirit_attuned_gem",
+   "occultism lang: book...spirit_fire.spotlight.text, otherrock_recipe.text"
+  ],
+  "client": [
+   "Whether a whole thrown stack converts at once, and how long plain spiritfire burns"
+  ]
+ },
+ "spirit_campfire": {
+  "de": [
+   "Rezept: oben ein Stock, in der Mitte Stock, [[occultism:datura]], Stock, unten 3 beliebige Stämme. Jede Holzsorte geht.",
+   "Damit musst du nicht für jede Ladung Otherstone, Asche oder Kreide eine neue Frucht anzünden."
+  ],
+  "en": [
+   "Recipe: one stick on top, stick, [[occultism:datura]], stick in the middle, 3 logs of any kind at the bottom. Any wood works.",
+   "This saves you lighting a new fruit for every load of Otherstone, ashes or chalk."
+  ],
+  "sources": [
+   "occultism:crafting/spirit_campfire ( S / S#S / LLL, #minecraft:logs, #c:rods/wooden, #c:crops/datura)"
+  ],
+  "client": [
+   "Spirit Campfire burns permanently and converts items like spiritfire",
+   "Sacrificial bowl on top converts items placed into it"
+  ]
+ },
+ "otherworld_tree": {
+  "de": [
+   "Der Baum aus dem [[occultism:otherworld_sapling_natural]] sieht aus wie eine Eiche. Fäll ihn, solange der Third Eye wirkt ({{occultism/third_eye}}), dann gibt er [[occultism:otherworld_log]]. Brich die Blätter von Hand ab, nur dann fallen neue Otherworld-Setzlinge.",
+   "Groves findest du mit der Wünschelrute ({{occultism/divination_rod}}), eingestellt auf Eichenholz oder Eichenlaub: Otherworld-Bäume wachsen nur dort. In der Oberwelt liegen sie tief unten."
+  ],
+  "en": [
+   "The tree from the [[occultism:otherworld_sapling_natural]] looks like an oak. Fell it while the Third Eye is active ({{occultism/third_eye}}) to get [[occultism:otherworld_log]]. Break the leaves by hand, only then do new Otherworld saplings drop.",
+   "Find groves with the divination rod ({{occultism/divination_rod}}) attuned to oak wood or oak leaves: Otherworld trees grow only there. In the Overworld, look deep down."
+  ],
+  "sources": [
+   "occultism:spirit_fire/otherworld_sapling_natural",
+   "occultism lang: book...divination_rod.otherworld_trees.text, otherworld_groves.text, otherworld_groves_2.text, otherworld_sapling_natural_recipe.text"
+  ]
+ },
+ "ashes": {
+  "de": [
+   "Jeder Stamm aus dem Tag #occultism:otherworld_logs gibt eine [[occultism:otherworld_ashes]]. Eine unreine Kreide braucht 3 Asche, rechne also mit 3 Stämmen pro Kreide.",
+   "Die Otherworldly Tablet für {{occultism/knowledge_tablet}} will noch einmal 4 Asche."
+  ],
+  "en": [
+   "Each log from the tag #occultism:otherworld_logs gives one [[occultism:otherworld_ashes]]. One impure chalk takes 3 ashes, so count on 3 logs per chalk.",
+   "The Otherworldly Tablet for {{occultism/knowledge_tablet}} takes another 4 ashes."
+  ],
+  "sources": [
+   "occultism:spirit_fire/otherworld_ashes",
+   "occultism:crafting/chalk_white_impure (xy x3)",
+   "occultism:crafting/otherstone_tablet (aga / gsg / aga)"
+  ]
+ },
+ "burnt_otherstone": {
+  "de": [
+   "Beide Schritte sind normale Ofenrezepte mit je 10 Sekunden. Den ersten Schritt schafft auch Create mit Sandpapier: Es poliert Otherstone direkt zu [[occultism:polished_otherstone]].",
+   "Jede unreine Kreide braucht 3 [[occultism:burnt_otherstone]]."
+  ],
+  "en": [
+   "Both steps are plain furnace recipes of 10 seconds each. Create sandpaper also does the first step: it polishes Otherstone straight into [[occultism:polished_otherstone]].",
+   "Every impure chalk takes 3 [[occultism:burnt_otherstone]]."
+  ],
+  "sources": [
+   "occultism:smelting/polished_otherstone (200 ticks)",
+   "occultism:smelting/burnt_otherstone (200 ticks)",
+   "create_dragons_plus:sandpaper_polishing/occultism/otherstone"
+  ]
+ },
+ "spirit_gem": {
+  "de": [
+   "Jeder Diamant aus #c:gems/diamond wird im Spiritfire zu einem [[occultism:spirit_attuned_gem]]. Der Gem ist bis **Stufe 2** gesperrt.",
+   "Auf Kronwerke steckt er außer in Occultism auch im [[ae2:controller]] ({{ae2/controller}}, ein Gem oben in der Mitte) und im Alkahestry Altar von Reliquary. Später gibt auch der Glücksspieler ({{occultism/djinni_extras}}) manchmal Gems für andere Edelsteine."
+  ],
+  "en": [
+   "Any diamond from #c:gems/diamond turns into a [[occultism:spirit_attuned_gem]] in spiritfire. The gem is locked until **stage 2**.",
+   "On Kronwerke it goes beyond Occultism into the [[ae2:controller]] ({{ae2/controller}}, one gem top middle) and Reliquary's Alkahestry Altar. Later the Gambler ({{occultism/djinni_extras}}) sometimes pays out gems for other gemstones too."
+  ],
+  "sources": [
+   "occultism:spirit_fire/spirit_attuned_gem",
+   "kronwerke:ae2/controller (SGS / FEF / SFS)",
+   "kubejs/server_scripts/kronwerke/round.js:40 (reliquary:alkahestry_altar)",
+   "kubejs/server_scripts/kronwerke/magic.js:48 (ars_ocultas:spirit_attuned_gem removed)",
+   "occultism:spirit_trade/gambler_spirit (weight 8)",
+   "kubejs/data/kronwerke/chapters/stages/stage2.json"
+  ]
+ },
+ "divination_rod": {
+  "de": [
+   "Das Rezept stimmt: Gold oben und unten, Glas links und rechts, der Gem in der Mitte. Netherrack sucht Iesnium, das erst ab Stufe 3 nutzbar ist.",
+   "**Theurgy ist im Pack**, darum umrandet die Rute den Fund nicht: Occultism schickt stattdessen einen Partikel in Richtung des Ziels. Folge ihm und such erneut, bis die Kristalle ganz violett sind. Ein Rechtsklick ohne Halten zeigt das letzte Ziel noch einmal."
+  ],
+  "en": [
+   "The recipe is right: gold top and bottom, glass left and right, the gem in the middle. Netherrack searches for iesnium, which is usable only from stage 3.",
+   "**Theurgy is in the pack**, so the rod does not outline the find: Occultism sends a particle towards the target instead. Follow it and search again until the crystals are fully purple. A right click without holding shows the last target again."
+  ],
+  "sources": [
+   "occultism:crafting/divination_rod ( g / xyx / g )",
+   "occultism jar: DivinationRodItem.class (TheurgyIntegration.isLoaded then spawnDivinationResultParticle, else SelectedBlockRenderer)",
+   "srv/mods/theurgy-1.21.1-neoforge-1.76.1.jar",
+   "occultism lang: book...divination_rod.how_to_use.text, how_to_use3.text",
+   "kubejs/data/kronwerke/chapters/stages/stage3.json (occultism:iesnium_ore)"
+  ],
+  "client": [
+   "How the Theurgy particle looks and how far it points"
+  ]
+ },
+ "impure_chalk": {
+  "de": [
+   "Die Spalten dürfen auch getauscht sein, beide Rezepte gelten. Für die Quest brauchst du also 6 Burnt Otherstone und 6 Otherworld Ashes.",
+   "Für Farbkreide kommt die [[occultism:chalk_white_impure]] formlos mit den Zusätzen zusammen und erst dann ins Spiritfire. Die unreinen Kreiden öffnen wie die fertigen mit Stufe 2."
+  ],
+  "en": [
+   "The columns may also be swapped, both recipes work. So the quest takes 6 Burnt Otherstone and 6 Otherworld Ashes.",
+   "For coloured chalk the [[occultism:chalk_white_impure]] is combined shapeless with the additives, and only then goes into spiritfire. Impure chalks open with stage 2 like the finished ones."
+  ],
+  "sources": [
+   "occultism:crafting/chalk_white_impure",
+   "occultism:crafting/chalk_white_impure2",
+   "kubejs/data/kronwerke/chapters/stages/stage2.json"
+  ]
+ },
+ "white_chalk": {
+  "de": [
+   "Wo das Pentakel Weiß verlangt, nimmt es auch Hellgrau, Grau, Schwarz, Regenbogen und Void. Der karierte Boden in der Vorschau ist nur Deko, darunter darf jeder Block liegen.",
+   "Eine abgenutzte Kreide reparierst du später mit {{occultism/repair_chalk}}."
+  ],
+  "en": [
+   "Where a pentacle asks for white, it also takes light gray, gray, black, rainbow and void. The checkered floor in the preview is decoration only, any block may lie underneath.",
+   "You repair a worn chalk later with {{occultism/repair_chalk}}."
+  ],
+  "sources": [
+   "occultism:spirit_fire/chalk_white",
+   "occultism jar: data/occultism/tags/block/foundation_glyphs_any.json",
+   "occultism jar: data/occultism/modonomicon/multiblocks/summon_foliot.json (* and + are modonomicon:display)",
+   "modonomicon jar: DisplayOnlyMatcher.class (matches every block)"
+  ]
+ },
+ "tallow": {
+  "de": [
+   "Das Messer muss in der Haupthand sein. Eine Kuh gibt 4 [[occultism:tallow]], Schwein, Schaf und Ziege je 2, Pferd, Esel, Maultier, Lama und Panda je 3, ein Hoglin 4.",
+   "Mit 2 Kühen hast du die 8 Talg der Quest. Talg brauchst du für die Kerzen ({{occultism/candles}})."
+  ],
+  "en": [
+   "The knife has to be in your main hand. A cow gives 4 [[occultism:tallow]], pig, sheep and goat 2 each, horse, donkey, mule, llama and panda 3 each, a hoglin 4.",
+   "Two cows cover the 8 tallow of the quest. You need tallow for candles ({{occultism/candles}})."
+  ],
+  "sources": [
+   "occultism:crafting/butcher_knife ( is / is / s )",
+   "occultism jar: data/occultism/loot_modifiers/tallow_from_*.json (mainhand #occultism:tools/knife)"
+  ]
+ },
+ "candles": {
+  "de": [
+   "Aviar's Circle und Hedyrin's Lure brauchen je 4 Kerzen, Eziveus, Ophyx, Strigeor und Ihagan je 8. Jede der 17 Large Candles zählt, gefärbt oder nicht.",
+   "Am Zaubertisch geben Large Candles in diesem Pack mit Apothic Enchanting **4 Arkana**, aber keine Eterna. Als Ersatz für Bücherregale taugen sie also nicht."
+  ],
+  "en": [
+   "Aviar's Circle and Hedyrin's Lure take 4 candles each, Eziveus, Ophyx, Strigeor and Ihagan 8 each. All 17 Large Candles count, dyed or not.",
+   "At the enchanting table Large Candles give **4 Arcana** with Apothic Enchanting in this pack, but no Eterna. So they do not replace bookshelves."
+  ],
+  "sources": [
+   "occultism:crafting/large_candle",
+   "occultism jar: data/occultism/tags/block/candles.json, data/minecraft/tags/block/candles.json",
+   "occultism jar: data/occultism/modonomicon/multiblocks/*.json (candle counts)",
+   "kubejs/data/apothic_enchanting/enchanting_stats/large_candles.json (arcana 4, eterna 0)"
+  ]
+ },
+ "bowls": {
+  "de": [
+   "Die Schalen müssen waagerecht höchstens 8 Blöcke von der Mitte entfernt stehen. Das Ritual nimmt die Zutaten nach und nach heraus, solange es läuft.",
+   "Acht reichen nicht ganz: Nature Paste ({{occultism/nature_paste}}) hat **9 Zutaten**. Eine Kupfer- oder Silberschale (formlos mit einem Barren) funktioniert genauso."
+  ],
+  "en": [
+   "The bowls have to stand within 8 blocks of the centre horizontally. The ritual takes the ingredients out one by one while it runs.",
+   "Eight is not quite enough: Nature Paste ({{occultism/nature_paste}}) has **9 ingredients**. A copper or silver bowl (shapeless with an ingot) works the same."
+  ],
+  "sources": [
+   "occultism jar: Ritual.class (SACRIFICIAL_BOWL_RANGE = 8)",
+   "occultism lang: book...ritual_prep_bowl.sacrificial_bowl.text, first_ritual.ritual_text.text",
+   "occultism:ritual/craft_nature_paste (9 ingredients)",
+   "occultism:crafting/copper_sacrificial_bowl"
+  ]
+ },
+ "golden_bowl": {
+  "de": [
+   "Auf Kronwerke braucht die [[occultism:golden_sacrificial_bowl]] **8 [[create:golden_sheet]]** statt Goldbarren. Bleche machst du mit der Create-Presse ({{create/sheets}}) oder dem Ingenieurshammer von Immersive Engineering.",
+   "Die Zutaten kommen in die normalen Schalen, nie in die goldene. Sie ist bis Stufe 2 gesperrt."
+  ],
+  "en": [
+   "On Kronwerke the [[occultism:golden_sacrificial_bowl]] takes **8 [[create:golden_sheet]]** instead of gold ingots. Make the sheets with the Create press ({{create/sheets}}) or the Immersive Engineering hammer.",
+   "Ingredients go into the plain bowls, never into the golden one. It is locked until stage 2."
+  ],
+  "sources": [
+   "occultism:crafting/golden_sacrificial_bowl (ggg / gbg / ggg, g = create:golden_sheet)",
+   "kubejs/server_scripts/kronwerke/round.js:17",
+   "immersiveengineering:crafting/plate_gold_hammering",
+   "occultism lang: book...first_ritual.ritual_text.text",
+   "kubejs/data/kronwerke/chapters/stages/stage2.json"
+  ],
+  "client": [
+   "Redstone signal levels of the golden bowl",
+   "Upside down bowl catching the result"
+  ]
+ },
+ "book_parts": {
+  "de": [
+   "Jede Feder, jeder schwarze Farbstoff und jedes normale Buch gehen. Schwarzen Farbstoff gibt es auch aus Holzkohle in der Create-Mühle, und Hexerei macht aus 5 Belladonna Berries im Pestle and Mortar 4 Stück ({{hexerei/mortar}}).",
+   "Feder, Tinte und Taboo Book formlos ergeben ein [[occultism:book_of_binding_empty]]. Mit 4 Farbstoff drumherum wird daraus das Bindungsbuch des Rangs."
+  ],
+  "en": [
+   "Any feather, any black dye and any plain book work. Black dye also comes from charcoal in the Create millstone, and Hexerei makes 4 from 5 Belladonna Berries in the Pestle and Mortar ({{hexerei/mortar}}).",
+   "Feather, ink and Taboo Book shapeless make a [[occultism:book_of_binding_empty]]. With 4 dyes around it, it becomes the book of binding of that rank."
+  ],
+  "sources": [
+   "occultism:spirit_fire/awakened_feather",
+   "occultism:spirit_fire/purified_ink",
+   "occultism:spirit_fire/taboo_book",
+   "occultism:crafting/book_of_binding_empty",
+   "occultism:crafting/book_of_binding_foliot_from_empty",
+   "create:milling/charcoal",
+   "hexerei:black_dye_from_pestle_and_mortar (5 berries to 4 black dye)"
+  ]
+ },
+ "book_foliot": {
+  "de": [
+   "Im Raster: Purified Ink oben links, Awakened Feather oben rechts, Taboo Book in der Mitte, die 4 blauen Farbstoffe auf die übrigen Kreuzfelder. Oder ein leeres Bindungsbuch mit 4 blauen Farbstoffen im Kreuz.",
+   "Leere Bindungsbücher im Gemeißelten Bücherregal kannst du auch direkt binden: halte dazu 4 Farbstoffe pro Buch in der Nebenhand. Eine Opferschale mit dem Dictionary über dem Regal bindet bei Redstone-Signal von selbst."
+  ],
+  "en": [
+   "In the grid: Purified Ink top left, Awakened Feather top right, Taboo Book in the middle, the 4 blue dyes on the remaining cross slots. Or an empty book of binding with 4 blue dyes in a cross.",
+   "Empty books of binding in a chiseled bookshelf can also be bound directly: hold 4 dyes per book in your off hand. A sacrificial bowl holding the Dictionary above the shelf binds on a redstone signal by itself."
+  ],
+  "sources": [
+   "occultism:crafting/book_of_binding_foliot (cwf / wbw / w )",
+   "occultism:crafting/book_of_binding_foliot_from_empty",
+   "occultism:crafting/bound_book_of_binding (crafting_special_book_binding)",
+   "occultism lang: book...getting_started.bookshelf_binding.more.text, automation.text"
+  ],
+  "client": [
+   "Bookshelf binding with dyes in the off hand and the bowl automation"
+  ]
+ },
+ "silver": {
+  "de": [
+   "Silbererz liegt in der Oberwelt und in der Farmwelt, dort fünf Adern pro Chunk über die ganze Höhe. Rohsilber, Silberstaub und zerkleinertes Rohsilber von Create schmelzen alle zu [[occultism:silver_ingot]].",
+   "Das erste Ritual ({{occultism/foliot_crusher}}) will einen Barren. Danach verdoppelt der Crusher selbst dein Silber."
+  ],
+  "en": [
+   "Silver ore lies in the Overworld and in the farm world, there five veins per chunk over the full height. Raw silver, silver dust and Create's crushed raw silver all smelt into [[occultism:silver_ingot]].",
+   "The first ritual ({{occultism/foliot_crusher}}) wants one ingot. After that the crusher itself doubles your silver."
+  ],
+  "sources": [
+   "occultism jar: data/occultism/neoforge/biome_modifier/add_ore_silver*.json",
+   "kubejs/data/kronwerke/worldgen/placed_feature/mine_occultism_silver.json (count 5, -60 to 432)",
+   "immersiveengineering:smelting/ingot_silver3",
+   "eidolon_repraised:smelt_silver_dust_create",
+   "config/almostunified/unification/materials.json (c:ingots/silver: occultism)"
+  ]
+ },
+ "aviar": {
+  "de": [
+   "Die Zeichen müssen nur weiß sein (oder Hellgrau, Grau, Schwarz), die Symbole sind egal. Unter dem Pentakel darf jeder Block liegen.",
+   "Leg die Zutaten in die normalen Schalen, dann Rechtsklick mit dem gebundenen Foliot-Buch auf die goldene Schale. Gefallen muss ein Opfer höchstens 8 Blöcke von der Mitte, ein benutztes Item zählt bis 16 Blöcke."
+  ],
+  "en": [
+   "The glyphs only have to be white (or light gray, gray, black), the symbols do not matter. Any block may lie under the pentacle.",
+   "Put the ingredients in the plain bowls, then right click the golden bowl with the bound Foliot book. A sacrifice has to die within 8 blocks of the centre, an item use counts within 16 blocks."
+  ],
+  "sources": [
+   "occultism jar: data/occultism/modonomicon/multiblocks/summon_foliot.json (24 W, 4 candles, 9x9)",
+   "occultism jar: data/occultism/tags/block/foundation_glyphs_any.json",
+   "occultism jar: Ritual.class (SACRIFICE_DETECTION_RANGE 8, ITEM_USE_DETECTION_RANGE 16)",
+   "occultism lang: book...rituals.item_use.intro.text"
+  ]
+ },
+ "foliot_crusher": {
+  "de": [
+   "Erz und Rohes Erz geben beim Foliot je 2 Staub, er braucht aber doppelt so lange wie ein Djinni. Edelsteinerz lohnt sich auch: Ein Diamanterz gibt 3 Diamantstaub, den der Crystallizer ({{occultism/foliot_crystallizer}}) wieder zu Diamanten macht.",
+   "Den Staub legt er neben sich ab. Ein Janitor ({{occultism/foliot_janitor}}) sammelt ihn ein."
+  ],
+  "en": [
+   "Ore and raw ore give 2 dust each with the Foliot, but he takes twice as long as a Djinni. Gem ore pays too: one diamond ore gives 3 diamond dust, which the Crystallizer ({{occultism/foliot_crystallizer}}) turns back into diamonds.",
+   "He drops the dust next to himself. A Janitor ({{occultism/foliot_janitor}}) collects it."
+  ],
+  "sources": [
+   "occultism:ritual/summon_foliot_crusher (iron, gold, copper, silver ingot, 60 s)",
+   "occultism:crushing/iron_dust_from_ore, iron_dust_from_raw (count 2)",
+   "occultism:crushing/diamond_dust_from_ore (3)",
+   "occultism:crystallize/diamond_from_dust",
+   "srv/config/occultism-server.toml [spirit_job.crusher_tier1] timeMultiplier 2.0, outputMultiplier 1.0"
+  ],
+  "client": [
+   "Crusher drops results on the ground next to it"
+  ]
+ },
+ "foliot_smelter": {
+  "de": [
+   "Jedes Feuerzeug, jede Kohlesorte aus #minecraft:coals und jeder Ofen gehen. Er arbeitet so schnell wie ein normaler Ofen, der Djinni ({{occultism/djinni_smelter}}) doppelt so schnell.",
+   "Neben dem Crusher gestellt, macht er aus dem Staub gleich Barren."
+  ],
+  "en": [
+   "Any coal from #minecraft:coals works. He works as fast as a normal furnace, the Djinni ({{occultism/djinni_smelter}}) twice as fast.",
+   "Placed next to the crusher, he turns the dust straight into ingots."
+  ],
+  "sources": [
+   "occultism:ritual/summon_foliot_smelter (#minecraft:coals, furnace, campfire)",
+   "srv/config/occultism-server.toml [spirit_job.smelter_tier1] timeMultiplier 1.0, smelter_tier2 0.5"
+  ]
+ },
+ "foliot_crystallizer": {
+  "de": [
+   "Den [[occultism:spirit_attuned_crystal]] craftest du aus 4 Gems im Quadrat. Die drei Stäube macht dein Crusher aus je einem Amethyst, Lapis und Smaragd.",
+   "Ein Diamant- oder Smaragderz gibt beim Foliot 2 Edelsteine, ein Lapiserz 6. Staub wird 1 zu 1 wieder zum Edelstein."
+  ],
+  "en": [
+   "Craft the [[occultism:spirit_attuned_crystal]] from 4 gems in a square. Your crusher makes the three dusts from one amethyst, lapis and emerald each.",
+   "With the Foliot one diamond or emerald ore gives 2 gems, one lapis ore 6. Dust turns back into gems 1 to 1."
+  ],
+  "sources": [
+   "occultism:ritual/summon_foliot_crystallizer",
+   "occultism:crafting/spirit_attuned_crystal (gg / gg)",
+   "occultism:crushing/amethyst_dust_from_gem, lapis_dust_from_gem, emerald_dust_from_gem",
+   "occultism:crystallize/diamond_from_ore (2), emerald_from_ore (2), lapis_from_ore (6), diamond_from_dust (1)"
+  ]
+ },
+ "foliot_transporter": {
+  "de": [
+   "Jede Truhe aus #c:chests geht als Zutat. Das [[occultism:book_of_calling_foliot_transport_items]] behältst du: Damit gibst du ihm später neue Quelle und neues Ziel.",
+   "Er ist das Band zwischen deinen Geistern: Truhe zum Crusher, Crusher zum Smelter."
+  ],
+  "en": [
+   "Any chest from #c:chests works as an ingredient. Keep the [[occultism:book_of_calling_foliot_transport_items]]: it lets you give him a new source and target later.",
+   "He is the belt between your spirits: chest to crusher, crusher to smelter."
+  ],
+  "sources": [
+   "occultism:ritual/summon_foliot_transport_items (minecart, #c:chests, dispenser, hopper)"
+  ],
+  "client": [
+   "Whitelist as default filter and how to edit it",
+   "Sneak click with the book on chests sets source and target",
+   "Delivery into spirits"
+  ]
+ },
+ "foliot_janitor": {
+  "de": [
+   "Der [[occultism:brush]]: oben 3 Bretter, unten 2 Wolle und ein Faden. Das [[occultism:book_of_calling_foliot_cleaner]] legt die Zieltruhe fest.",
+   "Mit Transporter und Janitor läuft deine erste Erzstraße ohne dich: Erz rein, Staub raus."
+  ],
+  "en": [
+   "The [[occultism:brush]]: 3 planks on top, 2 wool and a string below. The [[occultism:book_of_calling_foliot_cleaner]] sets the target chest.",
+   "With Transporter and Janitor your first ore line runs without you: ore in, dust out."
+  ],
+  "sources": [
+   "occultism:crafting/brush (ppp / wws)",
+   "occultism:ritual/summon_foliot_cleaner (brush, #c:chests, dispenser, hopper)"
+  ],
+  "client": [
+   "Janitor starts on whitelist and how to set it"
+  ]
+ },
+ "foliot_farmer": {
+  "de": [
+   "Jede Hacke geht. Die [[occultism:datura]] für die Schale nimmst du von deinem Feld ({{occultism/datura}}).",
+   "Mit dem [[occultism:book_of_calling_foliot_farmer]] legst du Bereich und Abgabetruhe fest. Ein Farmer auf dem Demon's-Dream-Feld spart dir viel Ernten für Essenzen."
+  ],
+  "en": [
+   "Any hoe works. Take the [[occultism:datura]] for the bowl from your field ({{occultism/datura}}).",
+   "The [[occultism:book_of_calling_foliot_farmer]] sets the work area and the drop chest. A farmer on the Demon's Dream field saves you a lot of harvesting for essences."
+  ],
+  "sources": [
+   "occultism:ritual/summon_foliot_farmer (datura, wheat, carrot, potato, #minecraft:hoes)"
+  ],
+  "client": [
+   "Work area setup with the book of calling",
+   "Pause after an empty field"
+  ]
+ },
+ "ars_ocultas": {
+  "de": [
+   "Der Altar prüft nur die goldene Schale **direkt über sich**. Etwa alle 15 Sekunden sucht er ein Eindämmungsglas mit einem passenden Opfer im Umkreis von 10 Blöcken und nimmt dafür **5 000 Quelle** aus Quellgläsern in 10 Blöcken.",
+   "Ein Item, das ein Ritual benutzt haben will (Ei, Erfahrungsfläschchen, Windkugel), kann auch im Inventar des Altars liegen, dann zahlt er ebenfalls 5 000 Quelle. Tiere bringst du mit einem Soul Gem ({{occultism/soul_gem}}) ins Glas und wieder heraus."
+  ],
+  "en": [
+   "The altar only checks the golden bowl **directly above it**. About every 15 seconds it looks for a containment jar with a fitting sacrifice within 10 blocks and takes **5,000 source** for it from source jars within 10 blocks.",
+   "An item a ritual wants used (egg, Bottle o' Enchanting, wind charge) can also sit in the altar's inventory, then it pays 5,000 source as well. Move animals into and out of the jar with a Soul Gem ({{occultism/soul_gem}})."
+  ],
+  "sources": [
+   "ars_ocultas:altar (enchanting apparatus, sourceCost 5000)",
+   "ars_ocultas jar: AltarBlockEntity.class (pos.above, gameTime 300, withinManhattan 10/6/10, SourceUtil 10/5000, getItemToUse)",
+   "ars_ocultas jar: EventHandler.class (crusher, smelter, crystallizer, trader jobs in MobJarTile)",
+   "srv/config/ars_ocultas/base-server.toml (containment_jar.soul_gem pickup/place true)"
+  ],
+  "client": [
+   "Altar inventory GUI",
+   "Spirits keep working in a containment jar fed by hopper"
+  ]
+ },
+ "sapling_trader": {
+  "de": [
+   "Er tauscht jeden instabilen Setzling 1 zu 1 gegen einen [[occultism:otherworld_sapling]]. Nach **genau einer Stunde** (3 600 Sekunden) verschwindet er, auch wenn du nicht in der Nähe bist.",
+   "Heb ein paar stabile Setzlinge auf: Der Lumberjack ({{occultism/foliot_lumberjack}}) braucht einen als Zutat."
+  ],
+  "en": [
+   "He swaps each unstable sapling 1 to 1 for an [[occultism:otherworld_sapling]]. After **exactly one hour** (3,600 seconds) he vanishes, even if you are not nearby.",
+   "Keep a few stable saplings: the Lumberjack ({{occultism/foliot_lumberjack}}) needs one as an ingredient."
+  ],
+  "sources": [
+   "occultism:ritual/summon_foliot_sapling_trader (spirit_max_age 3600)",
+   "occultism:spirit_trade/otherworld_sapling"
+  ],
+  "client": [
+   "Whether the trader also decays while its chunk is unloaded"
+  ]
+ },
+ "foliot_lumberjack": {
+  "de": [
+   "Die Zutat ist genau der stabile [[occultism:otherworld_sapling]] vom Setzlingshändler, der instabile geht nicht. Jede Axt geht.",
+   "Mit dem [[occultism:book_of_calling_foliot_lumberjack]] legst du Bereich und Abgabetruhe fest."
+  ],
+  "en": [
+   "The ingredient is exactly the stable [[occultism:otherworld_sapling]] from the sapling trader, the unstable one does not work. Any axe works.",
+   "The [[occultism:book_of_calling_foliot_lumberjack]] sets the work area and the drop chest."
+  ],
+  "sources": [
+   "occultism:ritual/summon_foliot_lumberjack (otherworld_sapling, oak, birch, spruce sapling, #minecraft:axes)"
+  ],
+  "client": [
+   "Work area setup with the book of calling"
+  ]
+ },
+ "otherstone_trader": {
+  "de": [
+   "Jeder Stein aus #c:stones gibt **2 Otherstone**, Spiritfire nur einen aus Andesit. Er tauscht 4 auf einmal und verschwindet nach einer Stunde (3 600 Sekunden).",
+   "Wirf ihm gleich einen ganzen Stapel Stein hin, dann hast du Otherstone für Schalen, Kreide und Bauten auf Vorrat."
+  ],
+  "en": [
+   "Any stone from #c:stones gives **2 Otherstone**, while spiritfire gives one from andesite. He trades 4 at a time and vanishes after one hour (3,600 seconds).",
+   "Throw him a whole stack of stone at once and you have Otherstone in stock for bowls, chalk and building."
+  ],
+  "sources": [
+   "occultism:ritual/summon_foliot_otherstone_trader (spirit_max_age 3600)",
+   "occultism:spirit_trade/stone_to_otherstone (count 2)",
+   "srv/config/occultism-server.toml [spirit_job.trader_otherstone] operationCount 4"
+  ]
+ },
+ "otherrock_trader": {
+  "de": [
+   "Er tauscht jeden Stein aus #c:stones gegen 2 [[occultism:otherrock]], 4 auf einmal, und verschwindet nach einer Stunde.",
+   "Otherrock taugt nicht für Kreide und nicht für den Dimensionsspeicher aus Stufe 3. Er ist für Bauten und dunkle Varianten der Occultism-Blöcke."
+  ],
+  "en": [
+   "He swaps any stone from #c:stones for 2 [[occultism:otherrock]], 4 at a time, and vanishes after one hour.",
+   "Otherrock does not work for chalk or the stage 3 dimensional storage. It is for building and the dark variants of Occultism blocks."
+  ],
+  "sources": [
+   "occultism:ritual/summon_foliot_otherrock_trader (spirit_max_age 3600)",
+   "occultism:spirit_trade/stone_to_otherrock (count 2)",
+   "srv/config/occultism-server.toml [spirit_job.trader_otherrock] operationCount 4",
+   "occultism lang: book...spirit_fire.otherrock_recipe.text"
+  ]
+ },
+ "yellow_chalk": {
+  "de": [
+   "Im Spiel heißt das Item **Yellow Chalk**, die unreine Stufe Impure Yellow Chalk. Den Goldstaub macht der Crusher aus Golderz oder Rohgold, 2 Stück pro Erz.",
+   "Glowstone holst du im Nether, der auf einem eigenen Server läuft. Hedyrin's Lure ({{occultism/hedyrin}}) braucht 4 gelbe Zeichen, Ihagan's Enthrallment 12."
+  ],
+  "en": [
+   "In game the item is called **Yellow Chalk**, the impure step Impure Yellow Chalk. The crusher makes the gold dust from gold ore or raw gold, 2 per ore.",
+   "Get glowstone in the Nether, which runs on its own server. Hedyrin's Lure ({{occultism/hedyrin}}) takes 4 yellow glyphs, Ihagan's Enthrallment 12."
+  ],
+  "sources": [
+   "occultism:crafting/chalk_yellow_impure",
+   "occultism:spirit_fire/chalk_gold",
+   "occultism lang: item.occultism.chalk_gold = Yellow Chalk",
+   "occultism:crushing/gold_dust_from_ore (2)",
+   "occultism jar: modonomicon/multiblocks/possess_foliot.json, possess_djinni.json"
+  ]
+ },
+ "hedyrin": {
+  "de": [
+   "Besessenheits-Rituale dauern 15 Sekunden, Vertraute 45. Die meisten wollen ein Opfer oder ein benutztes Item, achte auf die grauen Partikel.",
+   "Gefallen muss das Opfer höchstens 8 Blöcke von der goldenen Schale. Die gerufenen Monster zählen als feindlich und bekommen den Stufenbonus des Servers, in Stufe 2 also 30 Prozent mehr Leben."
+  ],
+  "en": [
+   "Possession rituals take 15 seconds, familiars 45. Most want a sacrifice or an item use, watch for the grey particles.",
+   "The sacrifice has to die within 8 blocks of the golden bowl. The summoned monsters count as hostile and get the server's stage bonus, so 30 percent more health in stage 2."
+  ],
+  "sources": [
+   "occultism jar: modonomicon/multiblocks/possess_foliot.json (12 W, 4 Y, 4 candles)",
+   "occultism:ritual/possess_skeleton (15 s)",
+   "occultism:ritual/familiar_greedy (45 s)",
+   "occultism jar: Ritual.class (SACRIFICE_DETECTION_RANGE 8)",
+   "srv/config/kronwerke-common.toml [mobs] health"
+  ]
+ },
+ "endermite": {
+  "de": [
+   "Jede Erde und jeder Stein aus den Tags geht. Das Ei musst du nach dem Start im Umkreis von 16 Blöcken benutzen, also werfen.",
+   "Er lässt 1 bis 2 [[minecraft:end_stone]] **oder** Endsteinziegel fallen. Nur Endstein zerkleinert der Crusher zu Endsteinstaub für {{occultism/purple_chalk}}. Für die Quest zählen nur Kills des besessenen Endermites selbst."
+  ],
+  "en": [
+   "Any dirt and stone from the tags works. After starting, use the egg within 16 blocks, so throw it.",
+   "He drops 1 to 2 [[minecraft:end_stone]] **or** end stone bricks. The crusher turns only end stone into end stone dust for {{occultism/purple_chalk}}. The quest counts only kills of the possessed endermite itself."
+  ],
+  "sources": [
+   "occultism:ritual/possess_endermite (item_to_use minecraft:egg)",
+   "occultism jar: loot_table/entities/possessed_endermite.json (end_stone or end_stone_bricks, 1 to 2)",
+   "occultism:crushing/end_stone_dust (#c:end_stones)",
+   "occultism jar: Ritual.class (ITEM_USE_DETECTION_RANGE 16)"
+  ]
+ },
+ "skeleton": {
+  "de": [
+   "Er lässt **immer genau einen** [[minecraft:skeleton_skull]] fallen. Für Ophyx (4), Strigeor (8) und Ihagan (4) brauchst du zusammen 16 Schädel.",
+   "Das Huhn muss in 8 Blöcken um die goldene Schale sterben. Ein Pentakel will genau den Skelettschädel, ein Witherskelettschädel zählt nicht."
+  ],
+  "en": [
+   "He **always drops exactly one** [[minecraft:skeleton_skull]]. Ophyx (4), Strigeor (8) and Ihagan (4) need 16 skulls together.",
+   "The chicken has to die within 8 blocks of the golden bowl. A pentacle wants exactly the skeleton skull, a wither skeleton skull does not count."
+  ],
+  "sources": [
+   "occultism:ritual/possess_skeleton (4 #c:bones, sacrifice c:chickens)",
+   "occultism jar: loot_table/entities/possessed_skeleton.json (skeleton_skull 1)",
+   "occultism jar: modonomicon/multiblocks/summon_djinni.json, craft_djinni.json, possess_djinni.json (minecraft:skeleton_skull block)"
+  ]
+ },
+ "possess_more": {
+  "de": [
+   "Die Hexe gibt genau eins davon: Erfahrungsfläschchen, Honigflasche, Unheilvolle Flasche oder einen Trank. Das Phantom lässt 1 bis 4 [[minecraft:phantom_membrane]] fallen, manchmal auch eine Windkugel.",
+   "Als fliegendes Opfer für das Phantom zählen Fledermaus, Papagei, Biene und Hilfsgeist. Eine Biene aus dem Bienenstock ist meist am leichtesten zu bekommen."
+  ],
+  "en": [
+   "The witch gives exactly one of these: Bottle o' Enchanting, honey bottle, ominous bottle or a potion. The phantom drops 1 to 4 [[minecraft:phantom_membrane]], sometimes a wind charge too.",
+   "Bat, parrot, bee and allay count as the flying sacrifice for the phantom. A bee from a hive is usually the easiest to get."
+  ],
+  "sources": [
+   "occultism:ritual/possess_witch",
+   "occultism:ritual/possess_phantom (sacrifice occultism:flying_passive)",
+   "occultism jar: data/occultism/tags/entity_type/flying_passive.json",
+   "occultism jar: loot_table/entities/possessed_witch.json, possessed_phantom.json"
+  ]
+ },
+ "familiars": {
+  "de": [
+   "Jede Truhe und jeder Eisenblock aus den Tags geht. Als Opfer zählt jeder Zombie aus #minecraft:zombies.",
+   "Der Greedy sucht 32 Blöcke weit zur Seite und 16 nach oben und unten. Verbessert ihn ein Blacksmith ({{occultism/fam_blacksmith}}), sucht er auch Blöcke, die du ihm zeigst."
+  ],
+  "en": [
+   "Any chest and iron block from the tags works. Any zombie from #minecraft:zombies counts as the sacrifice.",
+   "The Greedy searches 32 blocks sideways and 16 up and down. Once a Blacksmith ({{occultism/fam_blacksmith}}) upgrades him, he also finds blocks you show him."
+  ],
+  "sources": [
+   "occultism:ritual/familiar_greedy (#c:chests, #c:storage_blocks/iron, dispenser, hopper, sacrifice minecraft:zombies)",
+   "srv/config/occultism-server.toml [familiar] greedySearchRange 32, greedyVerticalSearchRange 16",
+   "occultism lang: book...familiar_greedy.description.text"
+  ]
+ },
+ "fam_beaver": {
+  "de": [
+   "Jede Stammsorte geht. Verbessert gibt er dir bei Rechtsklick mit leerer Hand ab und zu einen Snack.",
+   "Er fällt nur kleine Bäume, die neben ihm aus Setzlingen wachsen."
+  ],
+  "en": [
+   "Any kind of log works. Upgraded, he gives you a snack now and then when you right click him with an empty hand.",
+   "He only fells small trees that grow from saplings next to him."
+  ],
+  "sources": [
+   "occultism:ritual/familiar_beaver (4 #minecraft:logs, sacrifice c:pigs, 45 s)",
+   "occultism lang: book...familiar_beaver.description.text"
+  ]
+ },
+ "fam_deer": {
+  "de": [
+   "Verbessert durch einen Blacksmith hilft er noch mehr beim Hochsteigen und greift Feinde in der Nähe mit einem Hammer an.",
+   "Im Familiar Ring ({{occultism/familiar_ring}}) wirkt er, ohne dir hinterherzulaufen."
+  ],
+  "en": [
+   "Upgraded by a Blacksmith he helps even more with stepping up and attacks nearby enemies with a hammer.",
+   "In a Familiar Ring ({{occultism/familiar_ring}}) he works without following you around."
+  ],
+  "sources": [
+   "occultism:ritual/familiar_deer (4 #c:rods/wooden, 2 #c:strings, sacrifice c:cows)",
+   "occultism lang: book...familiar_deer.description.text, entity.text"
+  ]
+ },
+ "fam_blacksmith": {
+  "de": [
+   "Gib ihm Eisenbarren oder Eisenblöcke mit Rechtsklick. Nach einer Verbesserung wartet er 20 Sekunden bis zur nächsten.",
+   "Den Papagei kann er nicht verbessern, und sich selbst auch nicht. Die Belohnung deckt genau eine Verbesserung."
+  ],
+  "en": [
+   "Give him iron ingots or iron blocks with a right click. After an upgrade he waits 20 seconds before the next.",
+   "He cannot upgrade the parrot, nor himself. The reward covers exactly one upgrade."
+  ],
+  "sources": [
+   "occultism:ritual/familiar_blacksmith",
+   "srv/config/occultism-server.toml [familiar] blacksmithFamiliarRepairChance 0.33, UpgradeCost 18, UpgradeCooldown 400",
+   "occultism lang: book...familiar_blacksmith.description2.text, familiar_parrot.description2.text"
+  ]
+ },
+ "purple_chalk": {
+  "de": [
+   "Der Crusher macht aus einem Endstein einen Endsteinstaub und aus einem Obsidian einen [[create:powdered_obsidian]], der als Obsidianstaub zählt. Pro Kreide also 1 Endstein und 2 Obsidian.",
+   "Endstein liefert dir der Possessed Endermite ({{occultism/endermite}}). Eziveus braucht 12 violette Zeichen, Strigeor 32."
+  ],
+  "en": [
+   "The crusher turns one end stone into one end stone dust and one obsidian into one [[create:powdered_obsidian]], which counts as obsidian dust. So each chalk takes 1 end stone and 2 obsidian.",
+   "The Possessed Endermite ({{occultism/endermite}}) supplies the end stone. Eziveus needs 12 purple glyphs, Strigeor 32."
+  ],
+  "sources": [
+   "occultism:crafting/chalk_purple_impure",
+   "occultism:crushing/end_stone_dust (1)",
+   "occultism:crushing/obsidian_dust (create:powdered_obsidian, 1)",
+   "occultism jar: modonomicon/multiblocks/craft_foliot.json, craft_djinni.json"
+  ]
+ },
+ "eziveus": {
+  "de": [
+   "Die Rituale dieses Pentakels dauern 60 Sekunden und brauchen kein Opfer. Hellgrau, Grau und Schwarz dürfen auch hier statt Weiß stehen.",
+   "Fang mit {{occultism/research_dust}} an, darauf bauen Limettenkreide, die Tafel und die Linsen auf."
+  ],
+  "en": [
+   "The rituals of this pentacle take 60 seconds and need no sacrifice. Light gray, gray and black may stand in for white here too.",
+   "Start with {{occultism/research_dust}}: lime chalk, the tablet and the lenses build on it."
+  ],
+  "sources": [
+   "occultism jar: modonomicon/multiblocks/craft_foliot.json (16 W, 12 purple, 8 candles)",
+   "occultism:ritual/craft_research_fragment_dust (60 s)"
+  ]
+ },
+ "research_dust": {
+  "de": [
+   "Den [[occultism:emerald_dust]] macht der Crusher aus einem Smaragd. Ein Ritual gibt einen Staub, für die Quest also zwei Durchgänge mit 2 Smaragden und 4 Erfahrungsfläschchen.",
+   "Für jede Limettenkreide brauchst du einen Staub und noch einen Smaragdstaub dazu."
+  ],
+  "en": [
+   "The crusher makes the [[occultism:emerald_dust]] from one emerald. One ritual gives one dust, so the quest takes two runs with 2 emeralds and 4 Bottles o' Enchanting.",
+   "Each lime chalk needs one dust plus another emerald dust."
+  ],
+  "sources": [
+   "occultism:ritual/craft_research_fragment_dust",
+   "occultism:crushing/emerald_dust_from_gem (1)",
+   "occultism:crafting/chalk_lime_impure"
+  ]
+ },
+ "satchel": {
+  "de": [
+   "Jede Wolle und jedes Leder aus den Tags geht. Die Tasche ist bis Stufe 2 gesperrt.",
+   "Die Artisanal Satchel aus Stufe 3 machst du aus dieser Tasche, der Inhalt bleibt dabei drin."
+  ],
+  "en": [
+   "Any wool and leather from the tags works. The satchel is locked until stage 2.",
+   "The stage 3 Artisanal Satchel is made from this one, and its contents stay inside."
+  ],
+  "sources": [
+   "occultism:ritual/craft_ritual_satchel_t1",
+   "kubejs/data/kronwerke/chapters/stages/stage2.json (ritual_satchel_t1)",
+   "occultism lang: book...artisanal_ritual_satchel.upgrade.text"
+  ],
+  "client": [
+   "Placing pentacle parts with the satchel from the preview"
+  ]
+ },
+ "substantial_satchel": {
+  "de": [
+   "Jede Holztruhe aus #c:chests/wooden geht. Brauchst du stattdessen Zugriff auf deine Endertruhe, nimm die Ender Satchel ({{occultism/ender_satchel}})."
+  ],
+  "en": [
+   "Any wooden chest from #c:chests/wooden works. If you would rather reach your ender chest, take the Ender Satchel ({{occultism/ender_satchel}})."
+  ],
+  "sources": [
+   "occultism:ritual/craft_satchel (#c:chests/wooden, 2 leather, string, silver ingot)"
+  ],
+  "client": [
+   "Number of slots of the satchel"
+  ]
+ },
+ "foliot_trinkets": {
+  "de": [
+   "Der [[occultism:fragile_soul_gem]] ist Zutat für den echten Soul Gem ({{occultism/soul_gem}}). Bosse fängt keiner von beiden.",
+   "Mit dem Fragile Soul Gem trägst du auch ein Opfertier oder einen Zombie bequem zur goldenen Schale."
+  ],
+  "en": [
+   "The [[occultism:fragile_soul_gem]] is an ingredient of the real Soul Gem ({{occultism/soul_gem}}). Neither catches bosses.",
+   "The Fragile Soul Gem also lets you carry a sacrifice animal or a zombie to the golden bowl."
+  ],
+  "sources": [
+   "occultism:ritual/craft_fragile_soul_gem",
+   "occultism:ritual/craft_vitality_compass",
+   "occultism:ritual/craft_soul_gem",
+   "occultism lang: book...fragile_soul_gem.use.text"
+  ]
+ },
+ "nature_paste": {
+  "de": [
+   "Das Ritual hat **9 Zutaten**, du brauchst also neun Opferschalen. Jede Blätter-, Setzling- und Samensorte geht.",
+   "Die grüne Kreide ist bis Stufe 2 gesperrt wie alle Kreiden, gebraucht wird sie aber erst in Stufe 3."
+  ],
+  "en": [
+   "The ritual has **9 ingredients**, so you need nine sacrificial bowls. Any leaves, sapling and seeds work.",
+   "Green chalk is locked until stage 2 like all chalks, but you only need it in stage 3."
+  ],
+  "sources": [
+   "occultism:ritual/craft_nature_paste (3 #minecraft:leaves, 3 #minecraft:saplings, 3 #c:seeds)",
+   "occultism:crafting/chalk_green_impure",
+   "kubejs/data/kronwerke/chapters/stages/stage2.json (chalk_green)"
+  ]
+ },
+ "lime_chalk": {
+  "de": [
+   "Ophyx braucht 36 Limettenzeichen, Strigeor 20, Ihagan 12. Abgenutzte Limettenkreide lohnt die Reparatur ({{occultism/repair_chalk}}).",
+   "Pro Kreide gehen 2 Smaragde drauf: einer im Research Fragment Dust, einer als Staub direkt."
+  ],
+  "en": [
+   "Ophyx needs 36 lime glyphs, Strigeor 20, Ihagan 12. Worn lime chalk is worth repairing ({{occultism/repair_chalk}}).",
+   "Each chalk uses 2 emeralds: one in the Research Fragment Dust, one as dust directly."
+  ],
+  "sources": [
+   "occultism:crafting/chalk_lime_impure",
+   "occultism:spirit_fire/chalk_lime",
+   "occultism jar: modonomicon/multiblocks/summon_djinni.json, craft_djinni.json, possess_djinni.json"
+  ]
+ },
+ "light_gray_chalk": {
+  "de": [
+   "Den Kalzitstaub macht der Crusher aus einem Kalzit, Silber- und Eisenstaub aus Erz. Hellgrau kommt in jedes Djinni-Pentakel, je 8 Zeichen.",
+   "Auf Hellgrau-Felder passen auch Grau und Schwarz, nur Weiß nicht."
+  ],
+  "en": [
+   "The crusher makes the calcite dust from one calcite, silver and iron dust from ore. Light gray goes into every Djinni pentacle, 8 glyphs each.",
+   "Light gray spots also take gray and black, only white does not."
+  ],
+  "sources": [
+   "occultism:crafting/chalk_light_gray_impure",
+   "occultism:crushing/calcite_dust",
+   "occultism jar: data/occultism/tags/block/foundation_glyphs_no_white.json",
+   "occultism jar: modonomicon/multiblocks/summon_djinni.json (8 S)"
+  ]
+ },
+ "book_djinni": {
+  "de": [
+   "Aufbau wie beim Foliot-Buch, nur mit 4 violetten Farbstoffen. Oder ein leeres Bindungsbuch mit 4 violetten Farbstoffen im Kreuz.",
+   "Halte gleich mehr bereit: Jedes Djinni-Ritual verbraucht ein gebundenes Buch, und {{occultism/summoner}} will 4 auf Vorrat."
+  ],
+  "en": [
+   "Same layout as the Foliot book, just with 4 purple dyes. Or an empty book of binding with 4 purple dyes in a cross.",
+   "Keep more ready: every Djinni ritual uses up a bound book, and {{occultism/summoner}} wants 4 in stock."
+  ],
+  "sources": [
+   "occultism:crafting/book_of_binding_djinni (cgf / gbg / g )",
+   "occultism:crafting/book_of_binding_djinni_from_empty"
+  ]
+ },
+ "ophyx": {
+  "de": [
+   "Die Schädel sind gesetzte Blöcke, nur der normale Skelettschädel zählt. Djinni-Rufe dauern 120 Sekunden, Zeit und Wetter 60.",
+   "Auf die 8 Hellgrau-Felder darf kein Weiß, auf die 16 weißen Felder aber Hellgrau."
+  ],
+  "en": [
+   "The skulls are placed blocks, only the plain skeleton skull counts. Djinni summons take 120 seconds, time and weather 60.",
+   "The 8 light gray spots take no white, but the 16 white spots do take light gray."
+  ],
+  "sources": [
+   "occultism jar: modonomicon/multiblocks/summon_djinni.json (13x13, 36 L, 16 W, 8 S, 8 candles, 4 minecraft:skeleton_skull)",
+   "occultism:ritual/summon_djinni_crusher (120 s)",
+   "occultism:ritual/summon_djinni_day_time (60 s)"
+  ]
+ },
+ "djinni_crusher": {
+  "de": [
+   "Die vier Stäube macht dein Foliot Crusher. Ein Erz gibt beim Djinni 3 Staub statt 2, Antiker Schrott 3 statt 2 ({{occultism/netherite_dust}}).",
+   "Eis, Packeis und Blaueis zerkleinert erst der Djinni, der Foliot kann es nicht."
+  ],
+  "en": [
+   "Your Foliot Crusher makes the four dusts. With the Djinni one ore gives 3 dust instead of 2, ancient debris 3 instead of 2 ({{occultism/netherite_dust}}).",
+   "Only the Djinni crushes ice, packed ice and blue ice, the Foliot cannot."
+  ],
+  "sources": [
+   "occultism:ritual/summon_djinni_crusher",
+   "srv/config/occultism-server.toml [spirit_job.crusher_tier2] outputMultiplier 1.5, timeMultiplier 1.0",
+   "occultism:crushing/ice_dust, packed_ice_dust, blue_ice_dust (min_tier 2)"
+  ]
+ },
+ "djinni_smelter": {
+  "de": [
+   "Als Feuerzeug geht alles aus #c:tools/igniter, also auch ein normales Feuerzeug. Er braucht nur die halbe Ofenzeit."
+  ],
+  "en": [
+   "Anything from #c:tools/igniter works as the igniter, a plain flint and steel included. He needs only half the furnace time."
+  ],
+  "sources": [
+   "occultism:ritual/summon_djinni_smelter (fire_charge, blast_furnace, smoker, #c:tools/igniter)",
+   "srv/config/occultism-server.toml [spirit_job.smelter_tier2] timeMultiplier 0.5"
+  ]
+ },
+ "djinni_time": {
+  "de": [
+   "Der Geist wirkt etwa 5 Sekunden nach dem Erscheinen und ist dann weg. Das gebundene Djinni-Buch ist bei jedem Ruf verbraucht.",
+   "Jede Setzlingsart geht für den Tag. Das Wetter ändert sich nur auf dem Server, auf dem du das Ritual machst."
+  ],
+  "en": [
+   "The spirit casts about 5 seconds after appearing and is then gone. Each summon uses up a bound Djinni book.",
+   "Any sapling works for day. Weather changes only on the server where you hold the ritual."
+  ],
+  "sources": [
+   "occultism:ritual/summon_djinni_day_time, night_time, clear_weather (60 s)",
+   "srv/config/occultism-server.toml [spirit_job] dayTimeToCast 100, nightTimeToCast 100, clearWeatherTimeToCast 100",
+   "docs/SERVER.md (Nether and End on own servers)"
+  ],
+  "client": [
+   "Weather and time change only on the server where the ritual runs"
+  ]
+ },
+ "djinni_extras": {
+  "de": [
+   "Der Glücksspieler bleibt 30 Minuten und tauscht 16 auf einmal. Heb seine Ausbeute schnell auf, er setzt liegende Edelsteine sonst gleich wieder ein. Manchmal zahlt er auch Spirit Attuned Gems.",
+   "Der Partner kostet ein Huhn als Opfer, die anderen nichts. Er passt nicht in einen Familiar Ring, wohl aber in einen Soul Gem."
+  ],
+  "en": [
+   "The Gambler stays 30 minutes and trades 16 at a time. Pick up his payout quickly, otherwise he bets the gems lying around again. Sometimes he pays out Spirit Attuned Gems too.",
+   "The partner costs a chicken as sacrifice, the others nothing. He does not fit into a Familiar Ring, but he does into a Soul Gem."
+  ],
+  "sources": [
+   "occultism:ritual/summon_djinni_gambler (spirit_max_age 1800)",
+   "srv/config/occultism-server.toml [spirit_job.trader_gem] operationCount 16",
+   "occultism:spirit_trade/gambler_spirit",
+   "occultism:ritual/summon_demonic_wife, summon_demonic_husband (sacrifice c:chickens)",
+   "occultism lang: book...summon_gambler.intro.text, demonic_partner.familiar.text"
+  ]
+ },
+ "strigeor": {
+  "de": [
+   "Das größte Pentakel des Kapitels mit 8 Skelettschädeln. **Die Infused Pickaxe ist bis Stufe 3 gesperrt**, genau wie Mineshaft, Djinni Miner, Matrix und Storage Remote.",
+   "In Stufe 2 nutzbar sind Soul Gem, Familiar Ring, Gray Paste, Ender Satchel, Spirit Grindstone und die Kreidereparatur."
+  ],
+  "en": [
+   "The largest pentacle of the chapter, with 8 skeleton skulls. **The Infused Pickaxe is locked until stage 3**, just like the mineshaft, Djinni Miner, matrix and Storage Remote.",
+   "Usable in stage 2: Soul Gem, Familiar Ring, Gray Paste, Ender Satchel, Spirit Grindstone and chalk repair."
+  ],
+  "sources": [
+   "occultism jar: modonomicon/multiblocks/craft_djinni.json (13x13, 32 X, 20 L, 8 W, 8 S, 8 candles, 8 skulls)",
+   "kubejs/data/kronwerke/chapters/stages/stage3.json (infused_pickaxe, dimensional_mineshaft, miner_djinni_ores, dimensional_matrix, storage_remote)",
+   "occultism:ritual/craft_* (craft_djinni, 150 s)"
+  ]
+ },
+ "soul_gem": {
+  "de": [
+   "Die drei Seelenblöcke dürfen Seelensand oder Seelenerde sein, gemischt. Bosse, der Iesnium Golem und Wesen, die das Fangen nicht unterstützen, passen nicht hinein.",
+   "Mit Ars Ocultas setzt du gefangene Tiere direkt in ein Eindämmungsglas für den Opferaltar ({{occultism/ars_ocultas}})."
+  ],
+  "en": [
+   "The three soul blocks may be soul sand or soul soil, mixed. Bosses, the Iesnium Golem and creatures that do not support capturing do not fit.",
+   "With Ars Ocultas you can put caught animals straight into a containment jar for the sacrificial altar ({{occultism/ars_ocultas}})."
+  ],
+  "sources": [
+   "occultism:ritual/craft_soul_gem (3 #minecraft:soul_fire_base_blocks)",
+   "occultism jar: data/occultism/tags/entity_type/soul_gem_deny_list.json",
+   "srv/config/ars_ocultas/base-server.toml (containment_jar.soul_gem place true)"
+  ]
+ },
+ "familiar_ring": {
+  "de": [
+   "Fangen kannst du nur einen gerufenen, gezähmten Vertrauten. Den dämonischen Partner nimmt der Ring nicht.",
+   "Der Greedy im Ring vergrößert deinen Aufsammelradius, statt selbst herumzulaufen."
+  ],
+  "en": [
+   "You can only capture a summoned, tamed familiar. The ring does not take the demonic partner.",
+   "The Greedy in a ring increases your pickup range instead of running around himself."
+  ],
+  "sources": [
+   "occultism:ritual/craft_familiar_ring",
+   "occultism lang: book...craft_familiar_ring.usage.text, demonic_partner.familiar.text, familiar_greedy.description.text"
+  ]
+ },
+ "gray_paste": {
+  "de": [
+   "Die Phantomhaut holst du vom Possessed Phantom ({{occultism/possess_more}}). Graue Kreide (unreine weiße Kreide mit Gray Paste) brauchst du erst in Stufe 3.",
+   "Paste plus Staub gibt den Block zurück, zum Beispiel Otherstone oder Otherrock aus ihrem Staub. Ein Stück Paste steckt auch im Djinni Crystallizer ({{occultism/djinni_crystallizer}})."
+  ],
+  "en": [
+   "Get the phantom membrane from the Possessed Phantom ({{occultism/possess_more}}). Gray chalk (impure white chalk plus Gray Paste) is only needed in stage 3.",
+   "Paste plus dust gives the block back, Otherstone or Otherrock from their dust for example. One paste also goes into the Djinni Crystallizer ({{occultism/djinni_crystallizer}})."
+  ],
+  "sources": [
+   "occultism:ritual/craft_gray_paste (150 s)",
+   "occultism:crafting/chalk_gray_impure",
+   "occultism:crafting/gray_paste/otherstone",
+   "occultism:crafting/gray_paste/otherrock",
+   "occultism:ritual/summon_djinni_crystallizer"
+  ]
+ },
+ "djinni_crystallizer": {
+  "de": [
+   "Beim Djinni gibt ein Diamanterz 3 Diamanten statt 2, ein Lapiserz 9 statt 6. Erst der Djinni zerlegt Amethyst- und Quarzblöcke in je 4 Scherben oder Quarz.",
+   "Das Ritual dauert 120 Sekunden auf Ophyx' Calling, nicht auf Strigeor."
+  ],
+  "en": [
+   "With the Djinni one diamond ore gives 3 diamonds instead of 2, one lapis ore 9 instead of 6. Only the Djinni splits amethyst and quartz blocks into 4 shards or quartz each.",
+   "The ritual takes 120 seconds on Ophyx' Calling, not on Strigeor."
+  ],
+  "sources": [
+   "occultism:ritual/summon_djinni_crystallizer (summon_djinni, 120 s)",
+   "srv/config/occultism-server.toml [spirit_job.crystal_tier2] outputMultiplier 1.5, timeMultiplier 0.5",
+   "occultism:crystallize/amethyst_from_block, quartz_from_block (min_tier 2)"
+  ]
+ },
+ "ihagan": {
+  "de": [
+   "Gelbe Kreide brauchst du hier 12 Zeichen, also mehr als für Hedyrin. Die Besessenheiten dauern 60 Sekunden, die Vertrauten 90.",
+   "Einige Rituale wollen statt eines Opfers ein benutztes Item: Erfahrungsfläschchen für Dorfbewohner und Reittiere, eine Windkugel für die seltenen Tiere."
+  ],
+  "en": [
+   "You need 12 yellow glyphs here, more than for Hedyrin. Possessions take 60 seconds, familiars 90.",
+   "Some rituals want an item use instead of a sacrifice: Bottle o' Enchanting for villagers and mounts, a wind charge for the rare animals."
+  ],
+  "sources": [
+   "occultism jar: modonomicon/multiblocks/possess_djinni.json (13x13, 12 L, 12 Y, 8 S, 4 W, 8 candles, 4 skulls)",
+   "occultism:ritual/possess_enderman (60 s)",
+   "occultism:ritual/familiar_bat (90 s)",
+   "occultism:ritual/possess_villager, possess_random_animal_rideable (item_to_use experience_bottle)",
+   "occultism:ritual/possess_random_animal_special (item_to_use wind_charge)"
+  ]
+ },
+ "djinni_possess": {
+  "de": [
+   "Der Ghast lässt 1 bis 3 [[minecraft:ghast_tear]] und Schwarzpulver fallen, der Enderman 1 bis 3 Enderperlen. Die Lohe gibt immer eine Lohenrute und Lohenstaub, dazu Netherpflanzen und Netherblöcke.",
+   "Ruf den Ghast in einem großen, geschlossenen Raum: Er fliegt und hat in Stufe 2 30 Prozent mehr Leben. Für Magma und Seelensand musst du vorher in den Nether."
+  ],
+  "en": [
+   "The ghast drops 1 to 3 [[minecraft:ghast_tear]] and gunpowder, the enderman 1 to 3 ender pearls. The blaze always gives a blaze rod and blaze powder, plus Nether plants and Nether blocks.",
+   "Summon the ghast in a large, closed room: it flies and has 30 percent more health in stage 2. You need a Nether trip first for magma and soul sand."
+  ],
+  "sources": [
+   "occultism:ritual/possess_ghast, possess_enderman, possess_blaze",
+   "occultism jar: loot_table/entities/possessed_ghast.json, possessed_enderman.json, possessed_blaze.json",
+   "srv/config/kronwerke-common.toml [mobs] health"
+  ],
+  "client": [
+   "Possessed ghast behaviour (flying, attacking) after summoning"
+  ]
+ },
+ "djinni_familiars": {
+  "de": [
+   "Chimäre: Leder, Faden, Feder, Wolle, Knochen und je ein rohes Hammel, Schwein, Rind und Huhn, Opfer Schaf. Drache: Lavaeimer, Feuerzeug, Kohle, Quarzblock, Goldblock, Schwarzpulver, 2 Obsidian, Opfer Pferd. Mumie: 2 Schleimbälle, 2 Papier, 4 Wolle, Opfer Lama.",
+   "Cthulhu: 8 Fische, Opfer Tintenfisch. Kopfloser: 2 Weizen, Heuballen, 2 Stöcke, geschnitzter Kürbis, Opfer Schneegolem. Drikwing: 2 Federn, Ei, Laub, Faden, Opfer Papagei."
+  ],
+  "en": [
+   "Chimera: leather, string, feather, wool, bone and one raw mutton, porkchop, beef and chicken each, sacrifice sheep. Dragon: lava bucket, flint and steel, coal, quartz block, gold block, gunpowder, 2 obsidian, sacrifice horse. Mummy: 2 slime balls, 2 paper, 4 wool, sacrifice llama.",
+   "Cthulhu: 8 fish, sacrifice squid. Headless: 2 wheat, hay bale, 2 sticks, carved pumpkin, sacrifice snow golem. Drikwing: 2 feathers, egg, leaves, string, sacrifice parrot."
+  ],
+  "sources": [
+   "occultism:ritual/familiar_chimera, familiar_dragon, familiar_mummy, familiar_cthulhu, familiar_headless, familiar_otherworld_bird",
+   "occultism lang: book...familiar_chimera.description.text"
+  ]
+ },
+ "susje": {
+  "de": [
+   "Der Kreis hat nur weiße Zeichen und keine Kerzen. Für das Allay muss ein Vex in 8 Blöcken sterben, den bekommst du von Magiern aus Waldanwesen und Überfällen.",
+   "Jede Wiederbelebung kostet 4 Otherworld Essence ({{occultism/otherworld_essence}})."
+  ],
+  "en": [
+   "The circle has only white glyphs and no candles. For the allay a vex has to die within 8 blocks, and you get one from evokers in mansions and raids.",
+   "Each resurrection costs 4 Otherworld Essence ({{occultism/otherworld_essence}})."
+  ],
+  "sources": [
+   "occultism jar: modonomicon/multiblocks/resurrect_spirit.json (11x11, 16 W)",
+   "occultism:ritual/resurrect_familiar (soul_shard, 4 otherworld_essence, 15 s)",
+   "occultism:ritual/resurrect_allay (sugar, sacrifice c:vex)"
+  ]
+ },
+ "summoner": {
+  "de": [
+   "Die Zahl der Afrit-Essenzen im Magieziel ist ein Grundwert: Sie wächst und schrumpft mit der Zahl der aktiven Spieler, nur die Elfensterne sind fest. Jeder [[kronwerke:elven_star]] verbaut 2 [[occultism:afrit_essence]].",
+   "Mit Stufe 3 geht es weiter bei {{occultism_afrit/afrit_book}}."
+  ],
+  "en": [
+   "The number of afrit essences in the magic goal is a base value: it grows and shrinks with the number of active players, only the elven stars are fixed. Every [[kronwerke:elven_star]] uses 2 [[occultism:afrit_essence]].",
+   "With stage 3 it continues at {{occultism_afrit/afrit_book}}."
+  ],
+  "sources": [
+   "config/kronwerke/goals.json (stage3 magic: occultism:afrit_essence base 150, scale true; elven_star base 8 fixed)",
+   "kronwerke:milestones/elven_star (DXD / ARA / DXD)",
+   "kubejs/data/kronwerke/chapters/stages/stage3.json (afrit_essence, book_of_binding_afrit)"
+  ]
+ },
+ "otherworld_essence": {
+  "de": [
+   "Eine Essenz kostet 9 Früchte oder Samen. Für vier Stück brauchst du also 36, ein Feld mit Foliot Farmer ({{occultism/foliot_farmer}}) lohnt sich.",
+   "In Stufe 3 reparieren Afrit mit je 3 Essenzen und einem Spirit Attuned Gem Werkzeuge, Rüstung und Miner."
+  ],
+  "en": [
+   "One essence costs 9 fruits or seeds. Four of them take 36, so a field with a Foliot Farmer ({{occultism/foliot_farmer}}) pays off.",
+   "In stage 3 Afrit repair tools, armour and miners with 3 essences and a Spirit Attuned Gem each."
+  ],
+  "sources": [
+   "occultism:spirit_fire/otherworld_essence",
+   "occultism:crafting/demons_dream_essence_from_fruit_or_seed",
+   "occultism:ritual/repair_tools, repair_armors, repair_miners"
+  ]
+ },
+ "netherite_dust": {
+  "de": [
+   "Der [[occultism:netherite_scrap_dust]] schmilzt im Ofen in 10 Sekunden, im Hochofen in 5 zu [[minecraft:netherite_scrap]]. 4 Staub mit 4 Goldstaub ergeben formlos einen Netherite Dust, der zum Barren schmilzt.",
+   "Antiken Schrott findest du im Nether, der auf einem eigenen Server läuft."
+  ],
+  "en": [
+   "[[occultism:netherite_scrap_dust]] smelts into [[minecraft:netherite_scrap]] in 10 seconds in a furnace, 5 in a blast furnace. 4 dust with 4 gold dust make a Netherite Dust shapeless, which smelts into an ingot.",
+   "Ancient debris is found in the Nether, which runs on its own server."
+  ],
+  "sources": [
+   "occultism:crushing/netherite_scrap_dust_from_ore (2)",
+   "occultism:smelting/netherite_scrap_from_dust (200)",
+   "occultism:blasting/netherite_scrap_from_dust (100)",
+   "occultism:crafting/netherite_dust"
+  ],
+  "client": [
+   "Netherite Dust smelts into a netherite ingot"
+  ]
+ },
+ "knowledge_tablet": {
+  "de": [
+   "Statt Otherstone darf in der Mitte der Otherworldly Tablet auch Otherrock sitzen. Die Erfahrungsfläschchen aus der Belohnung reichen für vier weitere Research Fragment Dust."
+  ],
+  "en": [
+   "Otherrock may sit in the middle of the Otherworldly Tablet instead of Otherstone. The Bottles o' Enchanting from the reward cover four more Research Fragment Dust."
+  ],
+  "sources": [
+   "occultism:crafting/otherstone_tablet, otherstone_tablet2",
+   "occultism:ritual/craft_knowledge_tablet",
+   "occultism:ritual/craft_research_fragment_dust (2 experience_bottle)"
+  ]
+ },
+ "infused_lenses": {
+  "de": [
+   "Jede Glasscheibe aus #c:glass_panes geht. Die Goggles baust du im nächsten Kapitel ({{occultism_afrit/goggles}})."
+  ],
+  "en": [
+   "Any glass pane from #c:glass_panes works. You build the goggles in the next chapter ({{occultism_afrit/goggles}})."
+  ],
+  "sources": [
+   "occultism:crafting/lenses (ppp / pgp / ppp)",
+   "occultism:ritual/craft_infused_lenses"
+  ]
+ },
+ "ender_satchel": {
+  "de": [
+   "Eine Endertruhe brauchst du nur als Zutat, sie wird verbraucht. Das ist die Ender Satchel von Occultism, nicht die gleichnamige Tasche von Hexerei."
+  ],
+  "en": [
+   "You need an ender chest only as an ingredient, it is used up. This is Occultism's Ender Satchel, not Hexerei's bag of the same name."
+  ],
+  "sources": [
+   "occultism:ritual/craft_ender_satchel (#c:chests/ender, 2 #c:leathers, #c:strings, silver, gold)",
+   "qbook/chapters/hexerei.json (ender_satchel quest)"
+  ]
+ },
+ "spirit_grindstone": {
+  "de": [
+   "Prismarinkristalle bekommst du von Wächtern an Ozeanmonumenten. Beim normalen Schleifstein gibt es für Flüche nur einen Teil der Erfahrung zurück, hier alles.",
+   "Bei der Reparatur gibt der normale Schleifstein 5 Prozent der Haltbarkeit als Bonus, dieser 20 Prozent auf die Summe."
+  ],
+  "en": [
+   "Prismarine crystals come from guardians at ocean monuments. A plain grindstone returns only part of the experience for curses, this one all of it.",
+   "When repairing, a plain grindstone gives a bonus of 5 percent durability, this one 20 percent on top of the sum."
+  ],
+  "sources": [
+   "occultism:ritual/craft_spirit_grindstone (#c:gems/prismarine)",
+   "occultism lang: book...spirit_grindstone.spotlight.text"
+  ]
+ },
+ "repair_chalk": {
+  "de": [
+   "Jede Kreide aus #occultism:tools/chalk geht als Start, auch Weiß. Das Ritual dauert nur 5 Sekunden.",
+   "Pro Reparatur gehen 3 Otherworld Essence und ein Spirit Attuned Gem drauf, also 27 Früchte und ein Diamant."
+  ],
+  "en": [
+   "Any chalk from #occultism:tools/chalk works as the start, white too. The ritual takes only 5 seconds.",
+   "Each repair costs 3 Otherworld Essence and a Spirit Attuned Gem, so 27 fruits and a diamond."
+  ],
+  "sources": [
+   "occultism:ritual/repair_chalks (activation #occultism:tools/chalk, duration 5)"
+  ]
+ },
+ "special_animal": {
+  "de": [
+   "Statt eines Opfers will das Ritual eine **Windkugel**, die du nach dem Start in 16 Blöcken benutzt. Windkugeln lassen Breezes in Prüfungskammern fallen.",
+   "Die Reittiere wollen stattdessen ein Erfahrungsfläschchen. Unter ihnen sind auch Schwein, Maultier und Skelett- oder Zombiepferd."
+  ],
+  "en": [
+   "Instead of a sacrifice the ritual wants a **wind charge**, used within 16 blocks after the start. Breezes in trial chambers drop wind charges.",
+   "The mounts want a Bottle o' Enchanting instead. They include pig, mule and skeleton or zombie horse too."
+  ],
+  "sources": [
+   "occultism:ritual/possess_random_animal_special (item_to_use minecraft:wind_charge)",
+   "occultism:ritual/possess_random_animal_rideable (item_to_use minecraft:experience_bottle)",
+   "occultism jar: data/occultism/tags/entity_type/random_animals_special.json, random_animals_rideable.json",
+   "occultism jar: Ritual.class (ITEM_USE_DETECTION_RANGE 16)"
+  ]
+ },
+ "villager": {
+  "de": [
+   "Statt eines Opfers musst du nach dem Start ein **Erfahrungsfläschchen** in 16 Blöcken werfen. Jedes Bett geht.",
+   "Heraus kommt ein Dorfbewohner, ein Fahrender Händler oder der Wondering Trader von Occultism."
+  ],
+  "en": [
+   "Instead of a sacrifice you have to throw a **Bottle o' Enchanting** within 16 blocks after the start. Any bed works.",
+   "Out comes a villager, a wandering trader or Occultism's Wondering Trader."
+  ],
+  "sources": [
+   "occultism:ritual/possess_villager (#minecraft:beds, campfire, #c:foods/pie, item_to_use experience_bottle, entity tag c:villagers)",
+   "occultism jar: data/c/tags/entity_type/villagers.json"
+  ]
+ }
+}

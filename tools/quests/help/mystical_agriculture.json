@@ -1,0 +1,609 @@
+{
+ "welcome": {
+  "de": [
+   "[[mysticalagriculture:inferium_ore]] liegt auch in der Farmwelt, dort in jeder Höhe ({{exploration/e_enter}}). Mit Behutsamkeit abgebaut gibt ein Erz in der Gießerei aus Stufe 2 genau 360 mB, das sind 4 Essenz.",
+   "Auf Dauer bringt ein Feld mehr als der Bergbau, es beginnt mit {{mystical_agriculture/inferium_seeds}}."
+  ],
+  "en": [
+   "[[mysticalagriculture:inferium_ore]] also lies in the farm world, at every height there ({{exploration/e_enter}}). Mined with Silk Touch, one ore gives exactly 360 mB in the stage 2 foundry, which is 4 essence.",
+   "In the long run a field yields more than mining, it starts with {{mystical_agriculture/inferium_seeds}}."
+  ],
+  "sources": [
+   "kubejs/data/kronwerke/worldgen/biome/mine.json, placed_feature/mine_*.json (Y -60 to 432)",
+   "productivemetalworks:melting/ma/inferium_ores (360)",
+   "productivemetalworks:casting/ma/inferium_essence (90)",
+   "srv/config/mysticalagriculture-common.toml (inferiumDropChance 0.2)"
+  ]
+ },
+ "inferium_seeds": {
+  "de": [
+   "Pflanz die Samen gleich auf [[mysticalagriculture:inferium_farmland]] ({{mystical_agriculture/farmland}}): Dort gibt jede Ernte mit 20 Prozent Chance einen zweiten Samen, auf normalem Ackerland nie.",
+   "Ab Stufe 2 kannst du Inferiumsamen auch gießen: 720 mB flüssiges Inferium, also 8 Essenz, über einen [[minecraft:wheat_seeds]] auf dem Gießtisch."
+  ],
+  "en": [
+   "Plant the seeds on [[mysticalagriculture:inferium_farmland]] right away ({{mystical_agriculture/farmland}}): there every harvest has a 20 percent chance of a second seed, on plain farmland never.",
+   "From stage 2 on you can also cast inferium seeds: 720 mB of molten inferium, which is 8 essence, over a [[minecraft:wheat_seeds]] on the casting table."
+  ],
+  "sources": [
+   "MysticalAgriculture jar: block.MysticalCropBlock.getDrops, api.crop.Crop.getSecondaryChance (0.1 essence farmland + 0.1 effective farmland)",
+   "productivemetalworks:casting/ma/inferium_seeds (720)"
+  ]
+ },
+ "farmland": {
+  "de": [
+   "Bei Rohstoffpflanzen wie Stein würfelt Inferium-Ackerland zweimal mit 20 Prozent: einmal um eine zweite Essenz, einmal um einen zweiten Samen. Nur die Inferiumpflanze selbst gibt dort immer genau eine Essenz, mehr bringt ihr erst Ackerland ab Prudentium."
+  ],
+  "en": [
+   "For resource crops like stone, inferium farmland rolls twice at 20 percent: once for a second essence, once for a second seed. Only the inferium crop itself always gives exactly one essence there, more only comes with farmland from prudentium up."
+  ],
+  "sources": [
+   "MysticalAgriculture jar: block.MysticalCropBlock.getDrops, api.crop.Crop.getSecondaryChance (0.1 essence farmland + 0.1 effective farmland)",
+   "MysticalAgriculture jar: block.InferiumCropBlock.getDrops (essence = int(0.5 * farmland tier + 0.5))",
+   "srv/config/mysticalagriculture-common.toml (secondarySeedDrops true, essenceFarmlandConversion true)"
+  ]
+ },
+ "fertilizer": {
+  "de": [
+   "Diamanten für den Dünger findest du auch in der Farmwelt, in jeder Höhe. [[mysticalagriculture:fertilized_essence]] lassen nur Rohstoffpflanzen und Elementpflanzen fallen, nie Inferium; die einfachste Quelle ist Stein ({{mystical_agriculture/fertilized_essence}})."
+  ],
+  "en": [
+   "You also find diamonds for the fertilizer in the farm world, at every height. Only resource and elemental crops drop [[mysticalagriculture:fertilized_essence]], inferium never does; the easiest source is stone ({{mystical_agriculture/fertilized_essence}})."
+  ],
+  "sources": [
+   "mysticalagriculture:mystical_fertilizer",
+   "mysticalagriculture:mystical_fertilizer_better",
+   "MysticalAgriculture jar: block.InferiumCropBlock.getDrops (essence = int(0.5 * farmland tier + 0.5))",
+   "kubejs/data/kronwerke/worldgen/biome/mine.json, placed_feature/mine_*.json (Y -60 to 432)"
+  ]
+ },
+ "watering_can": {
+  "de": [
+   "Laut Mod-Code gießt die Kanne 3 mal 3 Felder mit 25 Prozent Chance. Die [[mysticalagriculture:inferium_watering_can]] hat **dieselbe Fläche und Chance**, sie kann nur zusätzlich von allein gießen.",
+   "5 mal 5 mit 30 Prozent schafft erst die Prudentium-Gießkanne in Stufe 2."
+  ],
+  "en": [
+   "Per the mod code the can waters 3 by 3 fields with a 25 percent chance. The [[mysticalagriculture:inferium_watering_can]] has **the same area and chance**, it only adds watering on its own.",
+   "5 by 5 at 30 percent only comes with the prudentium watering can in stage 2."
+  ],
+  "sources": [
+   "MysticalAgriculture jar: init.ModItems (watering_can 3/0.25, inferium 3/0.25, prudentium 5/0.3), cucumber BaseWateringCanItem.doWater",
+   "kubejs/data/kronwerke/chapters/stages/stage2.json (prudentium_watering_can)"
+  ]
+ },
+ "prosperity": {
+  "de": [
+   "[[mysticalagriculture:prosperity_ore]] liegt in der Farmwelt in jeder Höhe, in der Oberwelt zwischen Y -60 und 24. Für die neun Altarsamen der Checkliste gehen allein 36 Splitter in die Samenbasen."
+  ],
+  "en": [
+   "[[mysticalagriculture:prosperity_ore]] lies in the farm world at every height, in the overworld between Y -60 and 24. The nine altar seeds of the checklist alone take 36 shards for their seed bases."
+  ],
+  "sources": [
+   "kubejs/data/kronwerke/worldgen/biome/mine.json, placed_feature/mine_*.json (Y -60 to 432)",
+   "MysticalAgriculture jar: worldgen/placed_feature/prosperity_ore.json",
+   "mysticalagriculture:prosperity_seed_base"
+  ]
+ },
+ "prosperity_ingot": {
+  "de": [
+   "Direkt gebraucht wird der [[mysticalagriculture:prosperity_ingot]] im Ofen des Mods (2 Stück) und in der Maschinen-Upgrade-Basis (4 Stück). Alles andere läuft über den [[mysticalagriculture:inferium_ingot]] ({{mystical_agriculture/inferium_ingot}})."
+  ],
+  "en": [
+   "The [[mysticalagriculture:prosperity_ingot]] is used directly in the mod's furnace (2) and in the machine upgrade base (4). Everything else goes through the [[mysticalagriculture:inferium_ingot]] ({{mystical_agriculture/inferium_ingot}})."
+  ],
+  "sources": [
+   "mysticalagriculture:furnace",
+   "mysticalagriculture:upgrade_base"
+  ]
+ },
+ "inferium_ingot": {
+  "de": [
+   "Ab Stufe 2 gibt es Inferiumbarren auch aus der Gießerei: 180 mB flüssiges Inferium (2 Essenz) über einen [[mysticalagriculture:prosperity_ingot]] auf dem Gießtisch. Laut Rezept wird der Prosperiumbarren dabei nicht verbraucht.",
+   "Gebraucht werden sie in Werkzeug und Rüstung (je 2), in der Inferium-Gießkanne und im Maschinen-Upgrade (je 4)."
+  ],
+  "en": [
+   "From stage 2 on the foundry makes inferium ingots too: 180 mB of molten inferium (2 essence) over a [[mysticalagriculture:prosperity_ingot]] on the casting table. Per the recipe the prosperity ingot is not used up.",
+   "They go into tools and armour (2 each), the inferium watering can and the machine upgrade (4 each)."
+  ],
+  "sources": [
+   "productivemetalworks:casting/ma/inferium_ingot (consume_cast false)",
+   "mysticalagriculture:gear/inferium_pickaxe",
+   "mysticalagriculture:gear/inferium_watering_can",
+   "mysticalagriculture:inferium_upgrade"
+  ],
+  "client": [
+   "Prosperity ingot stays on the casting table after casting an inferium ingot"
+  ]
+ },
+ "inferium_gemstone": {
+  "de": [
+   "Jeder Edelstein kostet einen [[minecraft:diamond]]. Eine Inferiumspitzhacke kostet damit fünf Diamanten: drei in der Diamantspitzhacke, zwei in den Edelsteinen."
+  ],
+  "en": [
+   "Every gemstone costs one [[minecraft:diamond]]. An inferium pickaxe thus costs five diamonds: three in the diamond pickaxe, two in the gemstones."
+  ],
+  "sources": [
+   "mysticalagriculture:prosperity_gemstone",
+   "mysticalagriculture:gear/inferium_pickaxe"
+  ]
+ },
+ "accelerator": {
+  "de": [
+   "Laut Mod-Code wirkt ein Beschleuniger auf die erste Pflanze 2 bis 11 Blöcke über sich. Unter ein Feld passen also bis zu **zehn Inferium-Beschleuniger** übereinander, jeder weitere darunter liegt außer Reichweite.",
+   "Das Rezept ist auf Kronwerke geändert: [[create:andesite_alloy]] statt Stein."
+  ],
+  "en": [
+   "Per the mod code an accelerator works on the first plant 2 to 11 blocks above it. So up to **ten inferium accelerators** fit stacked under one field, any further one below is out of range.",
+   "The recipe is changed on Kronwerke: [[create:andesite_alloy]] instead of stone."
+  ],
+  "sources": [
+   "MysticalAgriculture jar: block.GrowthAcceleratorBlock (above(2) to range+2), init.ModBlocks (inferium range 9)",
+   "srv/config/mysticalagriculture-common.toml (growthAcceleratorCooldown 10)",
+   "kubejs/server_scripts/kronwerke/links.js"
+  ]
+ },
+ "inferium_watering_can": {
+  "de": [
+   "Laut Mod-Code gießt auch die Inferium-Gießkanne nur **3 mal 3 Felder mit 25 Prozent**, genau wie die einfache Kanne. Ihr Vorteil ist das Gießen von allein, das du mit Shift und Rechtsklick in die Luft umschaltest.",
+   "5 mal 5 mit 30 Prozent kann erst die Prudentium-Gießkanne in Stufe 2."
+  ],
+  "en": [
+   "Per the mod code the inferium watering can also waters only **3 by 3 fields at 25 percent**, just like the plain can. Its advantage is watering on its own, which you toggle with shift and right click into the air.",
+   "5 by 5 at 30 percent only comes with the prudentium watering can in stage 2."
+  ],
+  "sources": [
+   "MysticalAgriculture jar: init.ModItems (watering_can 3/0.25, inferium 3/0.25, prudentium 5/0.3), cucumber BaseWateringCanItem.doWater",
+   "MysticalAgriculture jar: item.EssenceWateringCanItem.use (isCrouching, setActive)"
+  ]
+ },
+ "altar": {
+  "de": [
+   "Das Rezept ist auf Kronwerke geändert: zwei [[ars_nouveau:source_gem]] statt Gold ({{ars_nouveau/first_gem}}). Die Sockel brauchen statt Gold [[create:golden_sheet]] aus der Presse ({{create/sheets}})."
+  ],
+  "en": [
+   "The recipe is changed on Kronwerke: two [[ars_nouveau:source_gem]] instead of gold ({{ars_nouveau/first_gem}}). The pedestals need [[create:golden_sheet]] from the press instead of gold ({{create/sheets}})."
+  ],
+  "sources": [
+   "kubejs/server_scripts/kronwerke/round.js",
+   "mysticalagriculture:infusion_altar",
+   "mysticalagriculture:infusion_pedestal"
+  ]
+ },
+ "pedestals": {
+  "de": [
+   "Die Goldbleche presst du in der Mechanischen Presse ({{create/press}}), ein [[minecraft:gold_ingot]] gibt ein Blech. Für acht Sockel sind das 16 Goldbarren; die Belohnungen von {{mystical_agriculture/altar}} und dieser Quest geben dir zusammen 16."
+  ],
+  "en": [
+   "You press the gold sheets in the Mechanical Press ({{create/press}}), one [[minecraft:gold_ingot]] makes one sheet. Eight pedestals take 16 gold ingots; the rewards of {{mystical_agriculture/altar}} and this quest give you 16 together."
+  ],
+  "sources": [
+   "mysticalagriculture:infusion_pedestal",
+   "create:pressing/gold_ingot"
+  ]
+ },
+ "wand": {
+  "de": [
+   "Statt Stein nimmt das Rezept jeden Block aus dem Tag c:stones, also auch Andesit, Granit, Diorit, Tiefenschiefer oder Tuff. Wer lieber einen Knopf drückt, findet das in {{mystical_agriculture/redstone_altar}}."
+  ],
+  "en": [
+   "Instead of stone the recipe takes any block of the tag c:stones, so andesite, granite, diorite, deepslate or tuff too. If you would rather press a button, see {{mystical_agriculture/redstone_altar}}."
+  ],
+  "sources": [
+   "mysticalagriculture:wand",
+   "neoforge: data/c/tags/item/stones.json"
+  ]
+ },
+ "seed_base": {
+  "de": [
+   "Samen an der Werkbank gibt es auf Kronwerke nicht (seedCraftingRecipes = false), jeder Rohstoffsamen kommt aus dem Altar. Für die neun Altarsamen der Checkliste brauchst du 9 Basen, also 36 [[mysticalagriculture:prosperity_shard]] und 9 [[minecraft:wheat_seeds]]."
+  ],
+  "en": [
+   "There are no seed recipes at the crafting table on Kronwerke (seedCraftingRecipes = false), every resource seed comes from the altar. The nine altar seeds of the checklist need 9 bases, so 36 [[mysticalagriculture:prosperity_shard]] and 9 [[minecraft:wheat_seeds]]."
+  ],
+  "sources": [
+   "srv/config/mysticalagriculture-common.toml (seedCraftingRecipes false)",
+   "mysticalagriculture:prosperity_seed_base"
+  ]
+ },
+ "first_seed": {
+  "de": [
+   "Das Steinziel des Obelisken nimmt alles aus dem Tag #c:cobblestones, also auch [[minecraft:cobbled_deepslate]] aus {{mystical_agriculture/seed_deepslate}}. Die Menge wächst mit der Zahl aktiver Spieler, die echte Zahl zeigt dir {{start_here/o_scale}}.",
+   "Wie du das Feld anlegst, steht in {{farms/stone_seeds}}."
+  ],
+  "en": [
+   "The obelisk's stone goal takes anything of the tag #c:cobblestones, so also [[minecraft:cobbled_deepslate]] from {{mystical_agriculture/seed_deepslate}}. The amount grows with the number of active players, {{start_here/o_scale}} shows you the real number.",
+   "How to lay out the field is in {{farms/stone_seeds}}."
+  ],
+  "sources": [
+   "config/kronwerke/goals.json (stage1 stone #c:cobblestones base 20000, scale true)",
+   "neoforge: data/c/tags/item/cobblestones.json",
+   "mysticalagriculture:essence/minecraft/cobbled_deepslate"
+  ]
+ },
+ "infusion_crystal": {
+  "de": [
+   "Die 1 000 Ladungen kommen aus der Server-Config (infusionCrystalUses). Bau den Kristall ruhig jetzt: In Stufe 2 machst du damit aus 4 [[mysticalagriculture:inferium_essence]] eine [[mysticalagriculture:prudentium_essence]], das Rezept steht in EMI."
+  ],
+  "en": [
+   "The 1,000 charges come from the server config (infusionCrystalUses). Build the crystal now: in stage 2 it turns 4 [[mysticalagriculture:inferium_essence]] into one [[mysticalagriculture:prudentium_essence]], EMI shows the recipe."
+  ],
+  "sources": [
+   "srv/config/mysticalagriculture-common.toml (infusionCrystalUses 1000)",
+   "mysticalagriculture:prudentium_essence"
+  ]
+ },
+ "agglomeratio": {
+  "de": [
+   "Für das [[mysticalagriculture:earth_agglomeratio]] brauchst du [[minecraft:short_grass]], die Pflanze, nicht den Grasblock; du schneidest sie mit einer Schere. Wasser und Lavaeimer bekommst du nach dem Craften leer zurück."
+  ],
+  "en": [
+   "The [[mysticalagriculture:earth_agglomeratio]] needs [[minecraft:short_grass]], the plant, not the grass block; you cut it with shears. Water and lava buckets come back empty after crafting."
+  ],
+  "sources": [
+   "mysticalagriculture:earth_agglomeratio",
+   "mysticalagriculture:water_agglomeratio",
+   "mysticalagriculture:fire_agglomeratio",
+   "mysticalagriculture:air_agglomeratio"
+  ]
+ },
+ "essence_crafting": {
+  "de": [
+   "Achte bei Erde auf die Item-ID: Erde, Kies, Ton und Sand kommen aus [[mysticalagriculture:dirt_essence]] (mysticalagriculture:dirt_essence) der Erdsamen, nicht aus der Elementessenz [[mysticalagriculture:earth_essence]] (mysticalagriculture:earth_essence). Im Deutschen heißen beide Erde Essenz.",
+   "2 Erd und 2 Wasseressenz ergeben 24 [[minecraft:clay_ball]], keine Tonblöcke. Wie du Lava vom Feld holst, steht in {{farms/lava_seeds}}."
+  ],
+  "en": [
+   "Mind the item id for dirt: dirt, gravel, clay and sand come from [[mysticalagriculture:dirt_essence]] (mysticalagriculture:dirt_essence) of the dirt seeds, not from the elemental [[mysticalagriculture:earth_essence]] (mysticalagriculture:earth_essence). In German both are called Erde Essenz.",
+   "2 dirt and 2 water essence make 24 [[minecraft:clay_ball]], not clay blocks. How to get lava from the field is in {{farms/lava_seeds}}."
+  ],
+  "sources": [
+   "mysticalagriculture:essence/minecraft/clay_ball",
+   "mysticalagriculture:essence/minecraft/gravel",
+   "mysticalagriculture:essence/minecraft/sand",
+   "mysticalagriculture:essence/minecraft/dirt",
+   "MysticalAgriculture jar: lang de_de (crop dirt and earth both Erde)"
+  ]
+ },
+ "essence_tool": {
+  "de": [
+   "Beim Veredeln übernimmt das Inferiumwerkzeug Haltbarkeitsschaden und Verzauberungen des Diamantwerkzeugs, verzaubern kannst du also vorher. Die Aufgabe will genau die [[mysticalagriculture:inferium_pickaxe]]."
+  ],
+  "en": [
+   "When upgraded, the inferium tool keeps the damage and the enchantments of the diamond tool, so you can enchant before. The task wants exactly the [[mysticalagriculture:inferium_pickaxe]]."
+  ],
+  "sources": [
+   "mysticalagriculture:gear/inferium_pickaxe (cucumber:shaped_transfer_damage, transfer_components true)",
+   "MysticalAgriculture jar: lib.ModItemTier (INFERIUM 2000, 9.0, 4.0)"
+  ]
+ },
+ "essence_armor": {
+  "de": [
+   "Die [[mysticalagriculture:inferium_chestplate]] kostet zehn Diamanten: acht in der Diamantbrustplatte, zwei in den Edelsteinen. Auch hier bleiben Schaden und Verzauberungen der Diamantbrustplatte erhalten."
+  ],
+  "en": [
+   "The [[mysticalagriculture:inferium_chestplate]] costs ten diamonds: eight in the diamond chestplate, two in the gemstones. Here too the damage and enchantments of the diamond chestplate are kept."
+  ],
+  "sources": [
+   "mysticalagriculture:gear/inferium_chestplate (cucumber:shaped_transfer_damage, transfer_components true)"
+  ]
+ },
+ "inferium_scythe": {
+  "de": [
+   "Laut Mod-Code erntet schon die [[mysticalagriculture:diamond_scythe]] 7 mal 7 Felder, genauso weit wie die Inferiumsense. Die Inferiumsense hält länger und schlägt härter; mehr Fläche bringt erst die Prudentiumsense in Stufe 2.",
+   "Die Aufgabe will genau die [[mysticalagriculture:inferium_scythe]]."
+  ],
+  "en": [
+   "Per the mod code the [[mysticalagriculture:diamond_scythe]] already harvests 7 by 7 fields, as far as the inferium scythe. The inferium scythe lasts longer and hits harder; more area only comes with the prudentium scythe in stage 2.",
+   "The task wants exactly the [[mysticalagriculture:inferium_scythe]]."
+  ],
+  "sources": [
+   "MysticalAgriculture jar: init.ModItems (diamond_scythe range 3, inferium 3, prudentium 4)",
+   "cucumber jar: item.tool.BaseScytheItem.useOn (-range to range)",
+   "mysticalagriculture:diamond_scythe"
+  ]
+ },
+ "paxel": {
+  "de": [
+   "Das Paxel-Rezept ist ein normales Werkbankrezept: **Verzauberungen der drei Werkzeuge gehen verloren**. Verzauber erst die fertige Paxel.",
+   "Mit den Diamantwerkzeugen darin kostet sie 13 Diamanten."
+  ],
+  "en": [
+   "The paxel recipe is a plain crafting recipe: **the enchantments of the three tools are lost**. Enchant the finished paxel instead.",
+   "Counting the diamond tools inside, it costs 13 diamonds."
+  ],
+  "sources": [
+   "mysticalagradditions:inferium_paxel (minecraft:crafting_shaped)",
+   "mysticalagriculture:gear/inferium_pickaxe"
+  ]
+ },
+ "inferium_coal": {
+  "de": [
+   "[[mysticalagradditions:inferium_coal]] brennt 2 400 Ticks, Kohle 1 600. Zwei Essenz bringen dir also 40 Sekunden mehr Brennzeit pro Stück; dauerhaft billiger heizt Lava vom Feld ({{farms/lava_seeds}})."
+  ],
+  "en": [
+   "[[mysticalagradditions:inferium_coal]] burns for 2,400 ticks, coal for 1,600. Two essence thus buy 40 seconds more burn time per piece; lava from the field heats cheaper in the long run ({{farms/lava_seeds}})."
+  ],
+  "sources": [
+   "mysticalagradditions:inferium_coal",
+   "MysticalAgradditions jar: init.ModItems (EssenceCoalItem 2400)"
+  ]
+ },
+ "inferium_apple": {
+  "de": [
+   "Die Gießerei kann den Apfel auch gießen, verlangt dafür aber 720 mB flüssiges Inferium, also 8 Essenz. An der Werkbank kostet er nur 4."
+  ],
+  "en": [
+   "The foundry can cast the apple too, but wants 720 mB of molten inferium for it, which is 8 essence. At the crafting table it costs only 4."
+  ],
+  "sources": [
+   "mysticalagradditions:inferium_apple",
+   "productivemetalworks:casting/ma/inferium_apple (720)",
+   "MysticalAgradditions jar: util.EssenceAppleTier (INFERIUM 6, absorption)"
+  ]
+ },
+ "farm": {
+  "de": [
+   "Wie das Feld im Bild gebaut ist, zeigt {{farms/crops_essence}}. Unter jedes Feld passen bis zu zehn Inferium-Beschleuniger, die Aufgabe will 16 davon und 256 [[mysticalagriculture:inferium_essence]] im Inventar.",
+   "Die Erntemaschine aus {{farms/crops_harvester}} kann die Sense ersetzen."
+  ],
+  "en": [
+   "{{farms/crops_essence}} shows how the field in the picture is built. Up to ten inferium accelerators fit under each field, the task wants 16 of them and 256 [[mysticalagriculture:inferium_essence]] in your inventory.",
+   "The harvester from {{farms/crops_harvester}} can replace the scythe."
+  ],
+  "sources": [
+   "MysticalAgriculture jar: block.GrowthAcceleratorBlock",
+   "farms/crops_essence"
+  ],
+  "client": [
+   "Create harvester harvests and replants Mystical Agriculture crops"
+  ]
+ },
+ "outlook": {
+  "de": [
+   "Seelenurne und Samenrecycler stehen nicht auf der Sperrliste, brauchen aber [[mysticalagriculture:soulium_ingot]], und der ist Stufe 2. Was du jetzt anbaust, kannst du später im Recycler zurück in Essenz verwandeln."
+  ],
+  "en": [
+   "The soul jar and the seed reprocessor are not on the lock list, but they need [[mysticalagriculture:soulium_ingot]], which is stage 2. What you grow now can later be turned back into essence in the reprocessor."
+  ],
+  "sources": [
+   "mysticalagriculture:soul_jar",
+   "mysticalagriculture:seed_reprocessor",
+   "kubejs/data/kronwerke/chapters/stages/stage2.json (soulium_ingot)"
+  ]
+ },
+ "all_seeds": {
+  "de": [
+   "Jede Samenquest rechts hakt ab, sobald der Samen einmal in deinem Inventar war. Für alle neun Altarsamen brauchst du 36 [[mysticalagriculture:inferium_essence]], 9 Samenbasen und je 4 Stück Material."
+  ],
+  "en": [
+   "Each seed quest on the right ticks once the seed has been in your inventory. All nine altar seeds take 36 [[mysticalagriculture:inferium_essence]], 9 seed bases and 4 of each material."
+  ],
+  "sources": [
+   "mysticalagriculture:seed/infusion/stone",
+   "mysticalagriculture:prosperity_seed_base"
+  ]
+ },
+ "machine_frame": {
+  "de": [
+   "In die Mitte passt jeder Block aus dem Tag c:stones, also auch Andesit, Granit, Diorit, Tiefenschiefer oder Tuff."
+  ],
+  "en": [
+   "Any block of the tag c:stones fits in the middle, so andesite, granite, diorite, deepslate or tuff too."
+  ],
+  "sources": [
+   "mysticalagriculture:machine_frame",
+   "neoforge: data/c/tags/item/stones.json"
+  ]
+ },
+ "essence_furnace": {
+  "de": [
+   "Im Spiel heißt der Block nur Ofen, in EMI findest du ihn über die ID [[mysticalagriculture:furnace]]. Die Aufgabe will genau diesen, ein normaler Ofen zählt nicht."
+  ],
+  "en": [
+   "In game the block is just called Furnace, in EMI you find it by the id [[mysticalagriculture:furnace]]. The task wants exactly this one, a vanilla furnace does not count."
+  ],
+  "sources": [
+   "mysticalagriculture:furnace"
+  ]
+ },
+ "machine_upgrade": {
+  "de": [
+   "Laut Mod-Code verdoppelt das Inferium-Upgrade Brennstoffverbrauch und Brennstoffspeicher, die genauen Faktoren zeigt der Tooltip. Für eines brauchst du einen [[minecraft:diamond]], 4 [[mysticalagriculture:prosperity_ingot]] und 4 [[mysticalagriculture:inferium_ingot]]."
+  ],
+  "en": [
+   "Per the mod code the inferium upgrade doubles fuel use and fuel capacity, the tooltip shows the exact factors. One takes a [[minecraft:diamond]], 4 [[mysticalagriculture:prosperity_ingot]] and 4 [[mysticalagriculture:inferium_ingot]]."
+  ],
+  "sources": [
+   "MysticalAgriculture jar: api.machine.MachineUpgradeTier (INFERIUM 0.833, 2.0, 2.0, 1)",
+   "mysticalagriculture:upgrade_base",
+   "mysticalagriculture:inferium_upgrade"
+  ]
+ },
+ "redstone_altar": {
+  "de": [
+   "Der Altar prüft laut Mod-Code bei jedem Tick, ob er ein Redstone-Signal bekommt. Ein Knopf reicht, ein Hebel, der an bleibt, startet jede neue Ladung, sobald sie vollständig auf den Sockeln liegt.",
+   "Die Quest hakst du selbst ab."
+  ],
+  "en": [
+   "Per the mod code the altar checks every tick for a redstone signal. A button is enough; a lever left on starts every new batch as soon as it lies complete on the pedestals.",
+   "You tick this quest off yourself."
+  ],
+  "sources": [
+   "MysticalAgriculture jar: tileentity.InfusionAltarTileEntity (hasNeighborSignal)"
+  ],
+  "client": [
+   "A lever left on restarts the altar for every new complete recipe"
+  ]
+ },
+ "fertilized_essence": {
+  "de": [
+   "Die Chance von 10 Prozent gilt pro reifer Ernte (fertilizedEssenceChance 0.1), auch bei Elementpflanzen. Mit der Sense ({{mystical_agriculture/inferium_scythe}}) erntest du 49 Felder auf einmal."
+  ],
+  "en": [
+   "The 10 percent chance applies per ripe harvest (fertilizedEssenceChance 0.1), elemental crops included. With the scythe ({{mystical_agriculture/inferium_scythe}}) you harvest 49 fields at once."
+  ],
+  "sources": [
+   "srv/config/mysticalagriculture-common.toml (fertilizedEssenceChance 0.1)",
+   "MysticalAgriculture jar: block.MysticalCropBlock.getDrops, api.crop.Crop.getSecondaryChance (0.1 essence farmland + 0.1 effective farmland)"
+  ]
+ },
+ "elemental_stock": {
+  "de": [
+   "Die [[mysticalagriculture:essence_vessel]] hält laut Mod-Code bis zu 40 Stück. Die Elementessenzen braucht der Erweckungsaltar vor allem für Erweckte Supremium-Ausrüstung in Stufe 5.",
+   "Auf Inferium-Ackerland geben Elementpflanzen mit 20 Prozent eine zweite Essenz."
+  ],
+  "en": [
+   "Per the mod code the [[mysticalagriculture:essence_vessel]] holds up to 40. The awakening altar needs the elemental essences mainly for awakened supremium gear in stage 5.",
+   "On inferium farmland elemental crops give a second essence with 20 percent."
+  ],
+  "sources": [
+   "MysticalAgriculture jar: tileentity.EssenceVesselTileEntity (40)",
+   "mysticalagriculture:gear/awakened_supremium_boots",
+   "MysticalAgriculture jar: lib.ModCorePlugin (ELEMENTAL farmland inferium)",
+   "MysticalAgriculture jar: block.MysticalCropBlock.getDrops, api.crop.Crop.getSecondaryChance (0.1 essence farmland + 0.1 effective farmland)"
+  ]
+ },
+ "inferium_sickle": {
+  "de": [
+   "Laut Mod-Code haben Diamantsichel und [[mysticalagriculture:inferium_sickle]] **dieselbe Reichweite**, die Inferiumsichel hält nur länger. Mehr Reichweite bringt erst die Prudentiumsichel in Stufe 2."
+  ],
+  "en": [
+   "Per the mod code the diamond sickle and the [[mysticalagriculture:inferium_sickle]] have **the same range**, the inferium sickle only lasts longer. More range only comes with the prudentium sickle in stage 2."
+  ],
+  "sources": [
+   "MysticalAgriculture jar: init.ModItems (diamond_sickle range 3, inferium 3, prudentium 4)",
+   "mysticalagriculture:gear/inferium_sickle"
+  ]
+ },
+ "luck_augment": {
+  "de": [
+   "Das [[mysticalagriculture:unattuned_augment]] ist die Basis jedes Augments und kostet 3 [[minecraft:iron_ingot]] und 6 [[mysticalagriculture:prosperity_shard]]. Bau ruhig ein paar auf Vorrat, bis der Basteltisch in Stufe 2 kommt."
+  ],
+  "en": [
+   "The [[mysticalagriculture:unattuned_augment]] is the base of every augment and costs 3 [[minecraft:iron_ingot]] and 6 [[mysticalagriculture:prosperity_shard]]. Build a few in advance until the tinkering table arrives in stage 2."
+  ],
+  "sources": [
+   "mysticalagriculture:unattuned_augment",
+   "mysticalagriculture:augment/luck_i",
+   "kubejs/data/kronwerke/chapters/stages/stage2.json (tinkering_table)"
+  ]
+ },
+ "seed_stone": {
+  "de": [
+   "[[minecraft:stone]] bekommst du, wenn du Bruchstein im Ofen schmilzt. 8 Stein Essenz ergeben 24 [[minecraft:cobblestone]] für das Steinziel."
+  ],
+  "en": [
+   "You get [[minecraft:stone]] by smelting cobblestone in a furnace. 8 stone essence make 24 [[minecraft:cobblestone]] for the stone goal."
+  ],
+  "sources": [
+   "MysticalAgriculture jar: lib.ModCrops (stone material minecraft:stone)",
+   "mysticalagriculture:essence/minecraft/cobblestone"
+  ]
+ },
+ "seed_deepslate": {
+  "de": [
+   "Gebraucht wird geschmolzener [[minecraft:deepslate]], kein Bruchtiefenschiefer. 8 Essenz ergeben 24 [[minecraft:cobbled_deepslate]], und der zählt am Obelisken ebenfalls als Bruchstein (#c:cobblestones)."
+  ],
+  "en": [
+   "It needs smelted [[minecraft:deepslate]], not cobbled deepslate. 8 essence make 24 [[minecraft:cobbled_deepslate]], which the obelisk also counts as cobblestone (#c:cobblestones)."
+  ],
+  "sources": [
+   "MysticalAgriculture jar: lib.ModCrops (deepslate material minecraft:deepslate)",
+   "mysticalagriculture:essence/minecraft/cobbled_deepslate",
+   "neoforge: data/c/tags/item/cobblestones.json"
+  ]
+ },
+ "seed_dirt": {
+  "de": [
+   "Das sind die [[mysticalagriculture:dirt_seeds]] (mysticalagriculture:dirt_seeds). Die Elementsamen [[mysticalagriculture:earth_seeds]] heißen im Deutschen ebenfalls Erde, brauchen aber Erd-Agglomerat ({{mystical_agriculture/seed_earth}})."
+  ],
+  "en": [
+   "These are the [[mysticalagriculture:dirt_seeds]] (mysticalagriculture:dirt_seeds). The elemental [[mysticalagriculture:earth_seeds]] are also called Erde in German, but need earth agglomeratio ({{mystical_agriculture/seed_earth}})."
+  ],
+  "sources": [
+   "MysticalAgriculture jar: lang de_de (crop dirt and earth both Erde)"
+  ]
+ },
+ "seed_earth": {
+  "de": [
+   "Das sind die Elementsamen [[mysticalagriculture:earth_seeds]] (mysticalagriculture:earth_seeds), nicht die Erdsamen aus {{mystical_agriculture/seed_dirt}}. Für das Agglomerat brauchst du [[minecraft:short_grass]], die Pflanze, nicht den Grasblock."
+  ],
+  "en": [
+   "These are the elemental [[mysticalagriculture:earth_seeds]] (mysticalagriculture:earth_seeds), not the dirt seeds from {{mystical_agriculture/seed_dirt}}. The agglomeratio needs [[minecraft:short_grass]], the plant, not the grass block."
+  ],
+  "sources": [
+   "mysticalagriculture:earth_agglomeratio"
+  ]
+ },
+ "seed_wood": {
+  "de": [
+   "Jeder Stamm aus dem Tag minecraft:logs zählt, auch entrindete Stämme. Die Holzessenz gibt je nach Muster 16 Stämme einer Holzart, EMI zeigt alle Muster."
+  ],
+  "en": [
+   "Any log of the tag minecraft:logs counts, stripped logs too. Depending on the pattern the wood essence gives 16 logs of one kind, EMI shows all patterns."
+  ],
+  "sources": [
+   "MysticalAgriculture jar: lib.ModCrops (wood material #minecraft:logs)",
+   "mysticalagriculture:essence/minecraft/oak_log"
+  ]
+ },
+ "seed_fire": {
+  "de": [
+   "Die vier Lavaeimer bekommst du leer zurück. Vier Feueressenz um einen Eimer ergeben danach jederzeit einen [[minecraft:lava_bucket]], siehe {{farms/lava_seeds}}."
+  ],
+  "en": [
+   "You get the four lava buckets back empty. Afterwards four fire essence around a bucket make a [[minecraft:lava_bucket]] any time, see {{farms/lava_seeds}}."
+  ],
+  "sources": [
+   "mysticalagriculture:fire_agglomeratio",
+   "mysticalagriculture:essence/minecraft/lava_bucket"
+  ]
+ },
+ "seed_ice": {
+  "de": [
+   "Es muss normales [[minecraft:ice]] sein, Packeis zählt nicht. Ohne Behutsamkeit zerbricht Eis zu Wasser, und in der Farmwelt gibt es keine kalten Biome, du suchst es also in der Oberwelt."
+  ],
+  "en": [
+   "It has to be plain [[minecraft:ice]], packed ice does not count. Without Silk Touch ice breaks into water, and the farm world has no cold biomes, so look for it in the overworld."
+  ],
+  "sources": [
+   "MysticalAgriculture jar: lib.ModCrops (ice material minecraft:ice)",
+   "kubejs/data/kronwerke/worldgen/biome/mine.json"
+  ]
+ },
+ "seed_water": {
+  "de": [
+   "Die vier Wassereimer bekommst du leer zurück. Danach ergeben vier Wasseressenz um einen Eimer einen [[minecraft:water_bucket]], und eine Essenz in acht Betonpulver macht daraus acht Beton."
+  ],
+  "en": [
+   "You get the four water buckets back empty. Afterwards four water essence around a bucket make a [[minecraft:water_bucket]], and one essence in eight concrete powder turns them into eight concrete."
+  ],
+  "sources": [
+   "mysticalagriculture:water_agglomeratio",
+   "mysticalagriculture:essence/minecraft/water_bucket",
+   "mysticalagriculture:essence/minecraft/white_concrete"
+  ]
+ },
+ "seed_inferium": {
+  "de": [
+   "Der einzige Samen ohne Altar. Ab Stufe 2 geht er auch in der Gießerei: 720 mB flüssiges Inferium über einen Weizenkorn auf dem Gießtisch."
+  ],
+  "en": [
+   "The only seed without the altar. From stage 2 on the foundry makes it too: 720 mB of molten inferium over a wheat seed on the casting table."
+  ],
+  "sources": [
+   "mysticalagriculture:inferium_seeds",
+   "productivemetalworks:casting/ma/inferium_seeds"
+  ]
+ },
+ "seed_air": {
+  "de": [
+   "Die Glasflasche geht beim Agglomerat verloren, anders als die Eimer. Luftessenz hat in Stufe 1 noch keine Verwendung, sie wartet auf den Erweckungsaltar ({{mystical_agriculture/elemental_stock}})."
+  ],
+  "en": [
+   "Unlike the buckets the glass bottle is used up in the agglomeratio. Air essence has no use yet in stage 1, it waits for the awakening altar ({{mystical_agriculture/elemental_stock}})."
+  ],
+  "sources": [
+   "mysticalagriculture:air_agglomeratio",
+   "helpq uses mysticalagriculture:air_essence (only awakening recipes)"
+  ]
+ }
+}

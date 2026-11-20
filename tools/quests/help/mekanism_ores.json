@@ -1,0 +1,690 @@
+{
+ "welcome": {
+  "de": [
+   "Das Gehäuse ist ein eigenes Kronwerke-Rezept, EMI zeigt es so. [[mekanism:ingot_steel]] kommt aus {{mekanism/steel}}, [[mekanism:ingot_osmium]] aus {{mekanism/osmium}}.",
+   "Die Erze für das ganze Kapitel holst du am schnellsten in der Farmwelt ({{exploration/e_enter}}): Dort liegen Eisen, Kupfer, Gold, Osmium, Zinn, Blei, Uran und Fluorit in jeder Höhe ab Y -60."
+  ],
+  "en": [
+   "The casing is a Kronwerke recipe of its own, EMI shows it that way. [[mekanism:ingot_steel]] comes from {{mekanism/steel}}, [[mekanism:ingot_osmium]] from {{mekanism/osmium}}.",
+   "The quickest source of ore for the whole chapter is the farm world ({{exploration/e_enter}}): iron, copper, gold, osmium, tin, lead, uranium and fluorite lie there at every height from Y -60 up."
+  ],
+  "sources": [
+   "kronwerke:tech/steel_casing",
+   "kubejs/server_scripts/kronwerke/tech.js",
+   "kubejs/data/kronwerke/worldgen/biome/mine.json, placed_feature/mine_*.json (Y -60 to 432)"
+  ]
+ },
+ "furnace": {
+  "de": [
+   "Für die Aufgabe zählen 32 [[minecraft:iron_ingot]], egal aus welchem Ofen. Rohes Eisen schmilzt auch im Hochofen, doppelt so schnell.",
+   "Ab {{mekanism_ores/enrichment}} lohnt es sich, Rohes Eisen aufzuheben statt es zu schmelzen: Dort werden drei Stück zu vier Staub."
+  ],
+  "en": [
+   "The task counts 32 [[minecraft:iron_ingot]] from any furnace. Raw iron also smelts in a blast furnace, twice as fast.",
+   "From {{mekanism_ores/enrichment}} on it pays to keep raw iron instead of smelting it: there three of them become four dust."
+  ],
+  "sources": [
+   "minecraft:iron_ingot",
+   "mekanism:processing/iron/dust/from_raw_ore"
+  ]
+ },
+ "fortune": {
+  "de": [
+   "Die Werte gelten pro abgebautem Erzblock: Glück III gibt im Schnitt 2,2 Rohe Erze, und die Maschinen rechnen danach pro Rohem Erz.",
+   "Behutsamkeit lohnt sich nur bei Erzen ohne Rohform, vor allem bei Redstone ({{mekanism_ores/gem_ores}}). Den Digitalen Miner baust du in {{mekanism_advanced/miner}}, laut Server-Config kostet ihn Behutsamkeit das Zwölffache an Strom."
+  ],
+  "en": [
+   "The numbers are per ore block mined: Fortune III gives 2.2 raw ores on average, and the machines then work per raw ore.",
+   "Silk Touch only pays for ores without a raw form, above all redstone ({{mekanism_ores/gem_ores}}). You build the Digital Miner in {{mekanism_advanced/miner}}; per the server config Silk Touch costs it twelve times the power."
+  ],
+  "sources": [
+   "mekanism:processing/iron/clump/from_raw_ore",
+   "mekanism:processing/iron/shard/from_raw_ore",
+   "srv/config/Mekanism/general.toml (silkMultiplier 12)"
+  ]
+ },
+ "ore_map": {
+  "de": [
+   "Diese Höhen gelten in der Oberwelt des Hauptservers. In der Farmwelt liegen Zinn, Blei, Uran, Fluorit und Osmium gleichmäßig in jeder Höhe ab Y -60, dort brauchst du keinen bestimmten Gang.",
+   "Salz gibt es in der Farmwelt nicht, nur in den Tonflecken unter Wasser in der Oberwelt. Die Farmwelt wird alle drei Tage neu erzeugt, bau dort also nichts, was bleiben soll."
+  ],
+  "en": [
+   "These heights apply to the overworld of the main server. In the farm world tin, lead, uranium, fluorite and osmium lie evenly at every height from Y -60, so no particular tunnel is needed there.",
+   "There is no salt in the farm world, only in the clay patches under water in the overworld. The farm world is generated anew every three days, so build nothing there that should last."
+  ],
+  "sources": [
+   "srv/config/Mekanism/world.toml",
+   "kubejs/data/kronwerke/worldgen/biome/mine.json, placed_feature/mine_*.json (Y -60 to 432)",
+   "docs/STAGES.md (mining world reset every three days)"
+  ]
+ },
+ "enrichment": {
+  "de": [
+   "In die Ecken kommt [[minecraft:redstone]], an die Seiten [[minecraft:iron_ingot]]. Den Schaltkreis machst du in {{mekanism/circuit}}, den [[mekanismgenerators:heat_generator]] in {{mekanism/heat_gen}}.",
+   "Der Wärmegenerator gibt 200 J/t, also 80 FE/t, und jeder Lavablock direkt daneben noch 12 FE/t dazu. Hast du schon eine Kammer aus {{mekanism/enrichment}}, nimm sie für die Aufgabe kurz ins Inventar."
+  ],
+  "en": [
+   "[[minecraft:redstone]] goes in the corners, [[minecraft:iron_ingot]] on the sides. You make the circuit in {{mekanism/circuit}}, the [[mekanismgenerators:heat_generator]] in {{mekanism/heat_gen}}.",
+   "The heat generator makes 200 J/t, which is 80 FE/t, and every lava block right next to it adds 12 FE/t. If you already have a chamber from {{mekanism/enrichment}}, pick it up into your inventory for the task."
+  ],
+  "sources": [
+   "mekanism:enrichment_chamber",
+   "mekanism:alloys/basic tag (minecraft:redstone)",
+   "srv/config/Mekanism/generators.toml (heatGeneration 200, heatGenerationLava 30)",
+   "srv/config/Mekanism/machine-usage.toml"
+  ]
+ },
+ "dust": {
+  "de": [
+   "Die Aufgabe will genau [[occultism:iron_dust]] und [[occultism:copper_dust]], die Staubsorten, die die Kammer ausgibt. Jeder solche Staub zählt, auch der aus dem Zerkleinerer ({{mekanism/crusher}}), der aus einem Barren einen Staub macht.",
+   "[[mekanism:enriched_carbon]] brauchst du für Stahl, siehe {{mekanism/enriched_carbon}}."
+  ],
+  "en": [
+   "The task wants exactly [[occultism:iron_dust]] and [[occultism:copper_dust]], the dusts the chamber puts out. Any such dust counts, also from the crusher ({{mekanism/crusher}}), which turns one ingot into one dust.",
+   "You need [[mekanism:enriched_carbon]] for steel, see {{mekanism/enriched_carbon}}."
+  ],
+  "sources": [
+   "mekanism:processing/iron/dust/from_raw_ore",
+   "mekanism:processing/copper/dust/from_raw_ore",
+   "mekanism:processing/iron/dust/from_ingot",
+   "mekanism:enriching/enriched/carbon"
+  ]
+ },
+ "smelter": {
+  "de": [
+   "Der Schmelzer nimmt jedes Ofenrezept, also auch Rohes Erz direkt, dann aber nur mit einem Barren pro Erz. Kammer und Schmelzer ziehen laut Server-Config je 50 J/t, das sind 20 FE/t.",
+   "Welche Seite der Kammer ausgibt, stellst du im Seitenreiter ihres Fensters oder mit dem [[mekanism:configurator]] ein ({{mekanism/configurator}})."
+  ],
+  "en": [
+   "The smelter takes every furnace recipe, raw ore too, but then gives only one ingot per ore. Per the server config the chamber and the smelter draw 50 J/t each, which is 20 FE/t.",
+   "Which side of the chamber outputs is set in the side tab of its window or with the [[mekanism:configurator]] ({{mekanism/configurator}})."
+  ],
+  "sources": [
+   "mekanism:energized_smelter",
+   "srv/config/Mekanism/machine-usage.toml (energizedSmelter 50, enrichmentChamber 50)"
+  ],
+  "client": [
+   "Side configuration tab and auto eject button in the machine window"
+  ]
+ },
+ "line2": {
+  "de": [
+   "Die 16 Transporter müssen im Inventar liegen, verlegte zählen nicht. Das sind zwei Rezepte, also 4 [[mekanism:ingot_steel]] und 2 [[mekanism:basic_control_circuit]].",
+   "Den Osmiumstaub macht die Kammer aus [[mekanism:raw_osmium]], drei Stück geben vier Staub. Mehr zu Transportern steht in {{mekanism/transporter}}."
+  ],
+  "en": [
+   "The 16 transporters must be in your inventory, laid ones do not count. That is two recipes, so 4 [[mekanism:ingot_steel]] and 2 [[mekanism:basic_control_circuit]].",
+   "The chamber makes the osmium dust from [[mekanism:raw_osmium]], three give four dust. More on transporters in {{mekanism/transporter}}."
+  ],
+  "sources": [
+   "mekanism:transmitter/logistical_transporter/basic (8 per craft)",
+   "mekanism:processing/osmium/dust/from_raw_ore"
+  ]
+ },
+ "tin_lead": {
+  "de": [
+   "Beide liegen in der Farmwelt in jeder Höhe; in der Oberwelt findest du Zinn zwischen Y -32 und 94, Blei vor allem tief. Aus Rohem Erz macht die Straße vier Barren aus drei Erzen.",
+   "Zinn steckt in Bronze ({{mekanism/tin_bronze}}), im [[mekanism:seismic_vibrator]] und im [[mekanism:resistive_heater]]. Blei braucht das [[mekanismgenerators:reactor_glass]], die QIO-Laufwerksbasis und das Gehäuse des Spaltreaktors."
+  ],
+  "en": [
+   "Both lie in the farm world at every height; in the overworld tin is between Y -32 and 94, lead mostly deep down. From raw ore the line makes four ingots out of three ores.",
+   "Tin goes into bronze ({{mekanism/tin_bronze}}), the [[mekanism:seismic_vibrator]] and the [[mekanism:resistive_heater]]. Lead is needed for [[mekanismgenerators:reactor_glass]], the QIO drive base and the fission reactor casing."
+  ],
+  "sources": [
+   "srv/config/Mekanism/world.toml",
+   "kubejs/data/kronwerke/worldgen/biome/mine.json, placed_feature/mine_*.json (Y -60 to 432)",
+   "mekanism:seismic_vibrator",
+   "mekanism:resistive_heater",
+   "mekanismgenerators:reactor/glass",
+   "mekanism:qio_drive_base",
+   "mekanismgenerators:fission_reactor/casing"
+  ]
+ },
+ "sorter": {
+  "de": [
+   "Der Sortierer braucht eine Kiste hinter sich und einen Transporter vor sich. Die Farbe der Transporter stellst du mit dem [[mekanism:configurator]] ein, siehe {{mekanism/sorter}}.",
+   "Er zieht nur, wenn du ihn auf Automatik stellst oder ihm ein Redstone-Signal gibst."
+  ],
+  "en": [
+   "The sorter needs a chest behind it and a transporter in front. You colour the transporters with the [[mekanism:configurator]], see {{mekanism/sorter}}.",
+   "It only pulls when you set it to auto mode or give it a redstone signal."
+  ],
+  "sources": [
+   "mekanism:logistical_sorter"
+  ],
+  "client": [
+   "Sorter pulls only in auto mode or on a redstone signal (GUI button)"
+  ]
+ },
+ "raw_blocks": {
+  "de": [
+   "Vier [[minecraft:raw_iron_block]] sind 36 Rohes Eisen. Auch die späteren Kammern nehmen ganze Blöcke: 18 Klumpen, 24 Splitter oder 6 000 mB Schlamm pro Block, jeweils in einem Gang.",
+   "Mahlwerkräder von Create machen aus einem Block 9 [[create:crushed_raw_iron]], also nicht mehr als aus neun einzelnen Erzen."
+  ],
+  "en": [
+   "Four [[minecraft:raw_iron_block]] are 36 raw iron. The later chambers take whole blocks too: 18 clumps, 24 shards or 6,000 mB of slurry per block, each in one pass.",
+   "Create's crushing wheels turn a block into 9 [[create:crushed_raw_iron]], no more than from nine single ores."
+  ],
+  "sources": [
+   "mekanism:processing/iron/clump/from_raw_block",
+   "mekanism:processing/iron/shard/from_raw_block",
+   "mekanism:processing/iron/slurry/dirty/from_raw_block",
+   "create:crushing/raw_iron_block"
+  ]
+ },
+ "uranium": {
+  "de": [
+   "[[mekanism:raw_uranium]] liegt in der Farmwelt in jeder Höhe, in der Oberwelt nur tief. Die Energizing Orb baust du in {{powah/orb}}.",
+   "Für den Powah-Reaktor gibt es eine bessere Quelle: Ein Erz aus Powahs eigenem Uraninit gibt in der Orb 5 [[powah:uraninite]], ein Uranbarren nur eines ({{powah/uraninite}})."
+  ],
+  "en": [
+   "[[mekanism:raw_uranium]] lies in the farm world at every height, in the overworld only deep down. You build the Energizing Orb in {{powah/orb}}.",
+   "For the Powah reactor there is a better source: one ore of Powah's own uraninite gives 5 [[powah:uraninite]] in the orb, a uranium ingot only one ({{powah/uraninite}})."
+  ],
+  "sources": [
+   "powah:energizing/uraninite_from_uranium (30000 FE)",
+   "powah:energizing/uraninite_from_ore (5)",
+   "kubejs/data/kronwerke/worldgen/biome/mine.json, placed_feature/mine_*.json (Y -60 to 432)"
+  ]
+ },
+ "gem_ores": {
+  "de": [
+   "Die Quest hakst du selbst ab. Redstone-Erz gibt mit Glück III im Schnitt nur 6 [[minecraft:redstone]], als Block in der Kammer 12.",
+   "Redstone brauchst du in Massen: für jeden Einfachen Steuerschaltkreis ({{mekanism/circuit}}), für Kabel und als Ecken fast jeder Maschine."
+  ],
+  "en": [
+   "You tick this quest off yourself. Redstone ore gives only 6 [[minecraft:redstone]] on average with Fortune III, as a block in the chamber 12.",
+   "You need redstone in bulk: for every Basic Control Circuit ({{mekanism/circuit}}), for cables and as the corners of almost every machine."
+  ],
+  "sources": [
+   "mekanism:processing/redstone/from_ore",
+   "kronwerke:tech/basic_control_circuit"
+  ]
+ },
+ "fluorite": {
+  "de": [
+   "In der Farmwelt liegt [[mekanism:fluorite_ore]] in jeder Höhe, in der Oberwelt nur unter Y 23. Der Zerkleinerer von Immersive Engineering macht aus einem Fluoriterz ebenfalls 6 [[mekanism:fluorite_gem]].",
+   "Den ersten festen Bedarf hast du in Stufe 4: zwei Stück im {{mekanism_ores/crystallizer}}."
+  ],
+  "en": [
+   "In the farm world [[mekanism:fluorite_ore]] lies at every height, in the overworld only below Y 23. The Immersive Engineering crusher also makes 6 [[mekanism:fluorite_gem]] from one fluorite ore.",
+   "Your first fixed need comes in stage 4: two in the {{mekanism_ores/crystallizer}}."
+  ],
+  "sources": [
+   "mekanism:processing/fluorite/from_ore",
+   "immersiveengineering:crusher/ore_fluorite",
+   "mekanism:chemical_crystallizer",
+   "kubejs/data/kronwerke/worldgen/biome/mine.json, placed_feature/mine_*.json (Y -60 to 432)"
+  ]
+ },
+ "netherite": {
+  "de": [
+   "[[minecraft:ancient_debris]] gibt es nur im Nether ({{nether/debris}}), der auf einem eigenen Server läuft und mit Stufe 2 offen ist. Für die Aufgabe reicht ein Antiker Schrott im Zerkleinerer.",
+   "Ohne Zerkleinerer macht schon die Anreicherungskammer aus einem Antiken Schrott 2 [[minecraft:netherite_scrap]]. Die MekaSuit braucht später vier Teile Netheritrüstung."
+  ],
+  "en": [
+   "[[minecraft:ancient_debris]] only exists in the Nether ({{nether/debris}}), which runs on its own server and opens with stage 2. One ancient debris in the crusher is enough for the task.",
+   "Without a crusher the enrichment chamber alone already makes 2 [[minecraft:netherite_scrap]] from one ancient debris. The MekaSuit later needs four pieces of netherite armour."
+  ],
+  "sources": [
+   "mekanism:processing/netherite/ancient_debris_to_dirty_scrap",
+   "mekanism:processing/netherite/ancient_debris_to_scrap",
+   "mekanism:mekasuit_helmet",
+   "kubejs/data/kronwerke/chapters/stages/stage2.json (minecraft:the_nether)"
+  ]
+ },
+ "separator": {
+  "de": [
+   "Für den [[mekanism:electrolytic_core]] brauchst du Osmium, Eisen und Goldstaub, alle aus der Kammer. [[mekanism:alloy_infused]] machst du in der Infusionsanlage ({{mekanism/infuser}}).",
+   "Welche Seite Wasserstoff und welche Sauerstoff ausgibt, stellst du im Fenster ein. Mehr zu den Gasen steht in {{mekanism/gas_oxygen}} und {{mekanism/gas_hydrogen}}."
+  ],
+  "en": [
+   "For the [[mekanism:electrolytic_core]] you need osmium, iron and gold dust, all from the chamber. You make [[mekanism:alloy_infused]] in the infuser ({{mekanism/infuser}}).",
+   "Which side puts out hydrogen and which oxygen is set in the window. More on the gases in {{mekanism/gas_oxygen}} and {{mekanism/gas_hydrogen}}."
+  ],
+  "sources": [
+   "mekanism:electrolytic_core",
+   "mekanism:separator/water"
+  ],
+  "client": [
+   "Gas output side configuration in the separator window"
+  ]
+ },
+ "pump": {
+  "de": [
+   "Auf Kronwerke entfernt die Pumpe keine Wasserquellen (pumpInfiniteFluidSources = false), ein kleines Becken reicht also auf Dauer. Sie sucht bis zu 80 Blöcke weit.",
+   "Wasser ohne Ende für andere Mods findest du in {{farms/water}}."
+  ],
+  "en": [
+   "On Kronwerke the pump does not remove water sources (pumpInfiniteFluidSources = false), so a small pool lasts forever. It searches up to 80 blocks away.",
+   "Endless water for other mods is in {{farms/water}}."
+  ],
+  "sources": [
+   "mekanism:electric_pump",
+   "srv/config/Mekanism/general.toml ([pump] range 80, pumpInfiniteFluidSources false)",
+   "srv/config/Mekanism/machine-usage.toml (electricPump 100 J/t)"
+  ],
+  "client": [
+   "Pump keeps a single water source block from disappearing"
+  ]
+ },
+ "purification": {
+  "de": [
+   "Ein Gang dauert 200 Ticks und verbraucht dabei rund 200 mB Sauerstoff. Mit [[minecraft:flint]] im Chemikalien-Slot sind das 20 Stück pro Gang, für die 16 Klumpen aus Rohem Eisen also 160.",
+   "Die Kammer ist Stufe 3: Der Fortschrittliche Steuerschaltkreis braucht [[ae2:printed_silicon]] ({{ae2/silicon}}). Gesperrte Teile kannst du lagern, aber nicht in die Hand nehmen und damit auch nicht aufstellen."
+  ],
+  "en": [
+   "One pass takes 200 ticks and uses about 200 mB of oxygen. With [[minecraft:flint]] in the chemical slot that is 20 per pass, so 160 for the 16 clumps from raw iron.",
+   "The chamber is stage 3: the Advanced Control Circuit needs [[ae2:printed_silicon]] ({{ae2/silicon}}). Locked parts can be stored but not held, so you cannot place them either."
+  ],
+  "sources": [
+   "mekanism:processing/iron/clump/from_raw_ore (oxygen 1 per tick)",
+   "mekanism: TileEntityPurificationChamber (200 ticks)",
+   "mekanism:chemical_conversion/flint_to_oxygen (10 mB)",
+   "kronwerke:tech/advanced_control_circuit"
+  ]
+ },
+ "crush": {
+  "de": [
+   "Die [[create:crushing_wheel]] baust du in {{create_brass/crushing_wheel}}, sie sind Stufe 2. Den Zerkleinerer selbst gibt es in {{mekanism/crusher}}.",
+   "Für die 16 [[mekanism:dirty_dust_iron]] reichen 8 Rohes Eisen: Die Klärkammer macht daraus 16 Klumpen, der Zerkleinerer jeden zu einem Staub."
+  ],
+  "en": [
+   "You build the [[create:crushing_wheel]] in {{create_brass/crushing_wheel}}, they are stage 2. The crusher itself is in {{mekanism/crusher}}.",
+   "8 raw iron are enough for the 16 [[mekanism:dirty_dust_iron]]: the purification chamber makes 16 clumps from them, the crusher turns each into one dust."
+  ],
+  "sources": [
+   "kronwerke:tech/crusher",
+   "mekanism:processing/iron/dirty_dust/from_clump",
+   "mekanism:processing/iron/clump/from_raw_ore",
+   "kubejs/data/kronwerke/chapters/stages/stage2.json (create:crushing_wheel)"
+  ]
+ },
+ "clean": {
+  "de": [
+   "Die Aufgabe zählt jeden [[occultism:iron_dust]], auch Staub aus Rohem Eisen in der Kammer. Der Titel ist nur der gedachte Weg.",
+   "Hängt der Klärkammer der Sauerstoff, landet Rohes Erz schnell wieder in der Anreicherungskammer. Ein Logistischer Sortierer ({{mekanism_ores/sorter}}) mit Filter auf Rohes Erz hält beide Wege getrennt."
+  ],
+  "en": [
+   "The task counts any [[occultism:iron_dust]], dust from raw iron in the chamber too. The title is only the intended route.",
+   "When the purification chamber runs short of oxygen, raw ore easily ends up in the enrichment chamber again. A Logistical Sorter ({{mekanism_ores/sorter}}) filtering raw ore keeps both routes apart."
+  ],
+  "sources": [
+   "mekanism:processing/iron/dust/from_dirty_dust",
+   "mekanism:processing/iron/dust/from_raw_ore"
+  ]
+ },
+ "layout": {
+  "de": [
+   "Druckschlauch und Universalkabel brauchen je zwei [[mekanism:ingot_steel]] pro acht Stück, mit [[minecraft:glass]] oder [[minecraft:redstone]] in der Mitte. Für die Aufgabe also 4 Rezepte, 8 Stahl.",
+   "Ein Gang der Klärkammer frisst 200 mB Sauerstoff, ein einfacher Druckschlauch schafft 750 mB pro Tick. Der Schlauch ist nie der Engpass, der Elektrolyseur schon eher."
+  ],
+  "en": [
+   "Pressurized tube and universal cable take two [[mekanism:ingot_steel]] per eight, with [[minecraft:glass]] or [[minecraft:redstone]] in the middle. So 4 crafts and 8 steel for the task.",
+   "One pass of the purification chamber eats 200 mB of oxygen, a basic tube moves 750 mB per tick. The tube is never the bottleneck, the separator more likely is."
+  ],
+  "sources": [
+   "mekanism:transmitter/pressurized_tube/basic",
+   "mekanism:transmitter/universal_cable/basic",
+   "srv/config/Mekanism/tiers.toml (basic tube 750)"
+  ]
+ },
+ "tripling": {
+  "de": [
+   "Für das Ziel von Stufe 3 zählt jeder Stahlbarren aus dem Tag c:ingots/steel. Die Menge wächst mit der Zahl aktiver Spieler, die echte Zahl zeigt dir der Obelisk ({{start_here/o_scale}}).",
+   "Die Stahlstraße hinter dem Schmelzer baust du in {{mekanism/ore_line}}. Einen Puffer für den Strom gibt der [[mekanism:basic_energy_cube]] ({{mekanism/cube}})."
+  ],
+  "en": [
+   "For the stage 3 goal every steel ingot of the tag c:ingots/steel counts. The amount grows with the number of active players, the obelisk shows the real number ({{start_here/o_scale}}).",
+   "You build the steel line behind the smelter in {{mekanism/ore_line}}. The [[mekanism:basic_energy_cube]] buffers the power ({{mekanism/cube}})."
+  ],
+  "sources": [
+   "config/kronwerke/goals.json (stage3 tech #c:ingots/steel base 4000, scale true)",
+   "mekanism:processing/osmium/clump/from_raw_ore"
+  ]
+ },
+ "infuser": {
+  "de": [
+   "Der [[mekanism:basic_chemical_tank]] braucht vier [[mekanism:ingot_osmium]], für den Injektor zwei davon, also 8 Osmium. Mehr zum Behälter in {{mekanism/chem_tank}}.",
+   "Der Injektor ist Stufe 2, die Injektionskammer, die das Gas braucht, erst Stufe 4. Bau ihn ruhig früher und füll Chlorwasserstoff in einen Behälter auf Vorrat ({{mekanism/gas_hcl}})."
+  ],
+  "en": [
+   "The [[mekanism:basic_chemical_tank]] takes four [[mekanism:ingot_osmium]], the infuser needs two of them, so 8 osmium. More on the tank in {{mekanism/chem_tank}}.",
+   "The infuser is stage 2, the injection chamber that needs its gas only stage 4. Build it early and store hydrogen chloride in a tank ({{mekanism/gas_hcl}})."
+  ],
+  "sources": [
+   "mekanism:chemical_infuser",
+   "mekanism:chemical_tank/basic",
+   "mekanism:chemical_infusing/hydrogen_chloride",
+   "mekanism:chemical_injection_chamber (stage 4)"
+  ]
+ },
+ "chlorine": {
+  "de": [
+   "[[mekanism:salt]] kommt aus [[mekanism:block_salt]], den Blöcken in den Tonflecken unter Wasser in der Oberwelt, nicht in der Farmwelt. Die Wärmeverdampfungsanlage ist erst Stufe 3 ({{mekanism_advanced/evap}}).",
+   "Die Abkürzung über den Slot ist teuer: Ein Gang der Injektionskammer dauert 200 Ticks bei 1 mB pro Tick, das sind 100 Salz pro Gang."
+  ],
+  "en": [
+   "[[mekanism:salt]] comes from [[mekanism:block_salt]], the blocks in the clay patches under water in the overworld, not in the farm world. The thermal evaporation plant is only stage 3 ({{mekanism_advanced/evap}}).",
+   "The slot shortcut is costly: one pass of the injection chamber takes 200 ticks at 1 mB per tick, which is 100 salt per pass."
+  ],
+  "sources": [
+   "mekanism:enriching/salt",
+   "mekanism:oxidizing/brine (15 mB)",
+   "mekanism:chemical_conversion/salt_to_hydrogen_chloride (2 mB)",
+   "mekanism: TileEntityChemicalInjectionChamber (200 ticks)",
+   "mekanism:thermal_evaporation_controller (stage 3)",
+   "kubejs/data/kronwerke/worldgen/biome/mine.json, placed_feature/mine_*.json (Y -60 to 432)"
+  ]
+ },
+ "injection": {
+  "de": [
+   "Für die Elite-Schaltkreise brauchst du Draconiumstaub. Draconiumerz liegt auf Kronwerke nur im End, das mit Stufe 4 öffnet ({{the_end/draconium}}, {{the_end/elite_circuit}}).",
+   "[[mekanism:alloy_reinforced]] machst du in {{mekanism_advanced/reinforced}}. Bis Stufe 4 kannst du gesperrte Teile lagern, aber nicht aufstellen."
+  ],
+  "en": [
+   "The elite circuits need draconium dust. On Kronwerke draconium ore only exists in the End, which opens with stage 4 ({{the_end/draconium}}, {{the_end/elite_circuit}}).",
+   "You make [[mekanism:alloy_reinforced]] in {{mekanism_advanced/reinforced}}. Until stage 4 you can store locked parts but not place them."
+  ],
+  "sources": [
+   "kronwerke:tech/elite_control_circuit",
+   "docs/RECIPES.md (draconium ore only in the End)",
+   "mekanism:chemical_injection_chamber"
+  ]
+ },
+ "shards": {
+  "de": [
+   "Ein Gang der Injektionskammer braucht 200 mB Chlorwasserstoff. Mit einem einfachen Injektor als einziger Quelle wird das Gas schnell knapp, ein Behälter als Puffer hilft.",
+   "Den Schwefel aus Schießpulver brauchst du für {{mekanism_ores/oxidizer}}."
+  ],
+  "en": [
+   "One pass of the injection chamber needs 200 mB of hydrogen chloride. With a single infuser as the only source the gas runs short quickly, a tank as buffer helps.",
+   "You need the sulfur from gunpowder for {{mekanism_ores/oxidizer}}."
+  ],
+  "sources": [
+   "mekanism:processing/iron/shard/from_ore (hydrogen chloride 1 per tick)",
+   "mekanism: TileEntityChemicalInjectionChamber (200 ticks)",
+   "mekanism:injecting/gunpowder_to_sulfur"
+  ]
+ },
+ "oxidizer": {
+  "de": [
+   "Die Aufgabe will genau [[mekanism:dust_sulfur]]. Das liefert die Injektionskammer aus Schießpulver und der IE-Zerkleinerer bei Kohleerz; Schwefelessenz ergibt nur einen Staub aus dem Tag, prüf also, welcher bei dir herauskommt.",
+   "Eine weitere Quelle ist der Tiegel von Eidolon (Stufe 3): Kohle und Verzauberte Asche geben 2 Schwefelstaub."
+  ],
+  "en": [
+   "The task wants exactly [[mekanism:dust_sulfur]]. The injection chamber makes it from gunpowder and the IE crusher from coal ore; sulfur essence only gives a dust from the tag, so check which one you get.",
+   "Another source is Eidolon's crucible (stage 3): coal and enchanted ash give 2 sulfur dust."
+  ],
+  "sources": [
+   "mekanism:injecting/gunpowder_to_sulfur",
+   "immersiveengineering:crusher/ore_coal (15 %)",
+   "mysticalagriculture:essence/common/sulfur (tag c:dusts/sulfur)",
+   "eidolon_repraised:sulfur",
+   "mekanism:oxidizing/sulfur_dioxide"
+  ],
+  "client": [
+   "Which item the sulfur essence recipe gives for the tag c:dusts/sulfur"
+  ]
+ },
+ "acid": {
+  "de": [
+   "Für die Aufgabe brauchst du zwei weitere [[mekanism:chemical_infuser]]: einen für Schwefeltrioxid, einen für Säure. Den Rotationskondensator stellst du im Fenster auf Verdampfen ({{mekanism/rotary}}).",
+   "Die Abkürzung über den Slot kostet viel: Ein Gang der Auflösungskammer dauert 100 Ticks bei 1 mB pro Tick, das sind 50 Schwefelstaub pro Gang."
+  ],
+  "en": [
+   "The task needs two more [[mekanism:chemical_infuser]]: one for sulfur trioxide, one for the acid. Set the rotary condensentrator to evaporate in its window ({{mekanism/rotary}}).",
+   "The slot shortcut is costly: one pass of the dissolution chamber takes 100 ticks at 1 mB per tick, which is 50 sulfur dust per pass."
+  ],
+  "sources": [
+   "mekanism:chemical_infusing/sulfur_trioxide",
+   "mekanism:chemical_infusing/sulfuric_acid",
+   "mekanism:rotary/water_vapor",
+   "mekanism:chemical_conversion/sulfur_to_sulfuric_acid (2 mB)",
+   "mekanism: TileEntityChemicalDissolutionChamber (100 ticks)"
+  ],
+  "client": [
+   "Mode switch of the rotary condensentrator"
+  ]
+ },
+ "dissolution": {
+  "de": [
+   "[[mekanism:ingot_refined_obsidian]] kommt aus {{mekanism_advanced/refined_obsidian}}, [[mekanism:alloy_atomic]] aus {{mekanism_advanced/atomic}}. Für zwei [[mekanism:ultimate_control_circuit]] brauchst du zwei Elite-Schaltkreise und vier Atomlegierungen.",
+   "Ein Block aus Rohem Erz frisst 2 mB Säure pro Tick statt 1, gibt aber auch 6 000 mB Schlamm."
+  ],
+  "en": [
+   "[[mekanism:ingot_refined_obsidian]] comes from {{mekanism_advanced/refined_obsidian}}, [[mekanism:alloy_atomic]] from {{mekanism_advanced/atomic}}. Two [[mekanism:ultimate_control_circuit]] take two elite circuits and four atomic alloys.",
+   "A raw ore block eats 2 mB of acid per tick instead of 1, but also gives 6,000 mB of slurry."
+  ],
+  "sources": [
+   "mekanism:chemical_dissolution_chamber",
+   "mekanism:control_circuit/ultimate",
+   "mekanism:processing/iron/slurry/dirty/from_raw_block"
+  ]
+ },
+ "washer": {
+  "de": [
+   "Die Waschanlage braucht laut Server-Config 200 J/t, also 80 FE/t. Wasser holst du wie in {{mekanism_ores/pump}}, die Pumpe lässt die Quellen stehen.",
+   "Gesperrt sind im Rezept nur die Ultimativen Schaltkreise (Stufe 4) und das Raffinierte Obsidian (Stufe 3), Gehäuse und Behälter sind Stufe 2."
+  ],
+  "en": [
+   "Per the server config the washer needs 200 J/t, which is 80 FE/t. You get water as in {{mekanism_ores/pump}}, the pump leaves the sources in place.",
+   "Of the recipe only the ultimate circuits (stage 4) and the refined obsidian (stage 3) are locked, casing and tanks are stage 2."
+  ],
+  "sources": [
+   "mekanism:chemical_washer",
+   "mekanism:processing/iron/slurry/clean (5 mB water)",
+   "srv/config/Mekanism/machine-usage.toml (chemicalWasher 200)"
+  ]
+ },
+ "crystallizer": {
+  "de": [
+   "Ein Kristall dauert 200 Ticks bei 160 FE/t. Ein Erzblock mit seinen 5 Kristallen braucht ohne Upgrades also 50 Sekunden.",
+   "Das Fluorit für das Rezept holst du dir in {{mekanism_ores/fluorite}}."
+  ],
+  "en": [
+   "One crystal takes 200 ticks at 160 FE/t. An ore block with its 5 crystals thus needs 50 seconds without upgrades.",
+   "Get the fluorite for the recipe in {{mekanism_ores/fluorite}}."
+  ],
+  "sources": [
+   "mekanism:chemical_crystallizer",
+   "mekanism:processing/iron/crystal/from_slurry (200 mB)",
+   "mekanism: TileEntityChemicalCrystallizer (200 ticks)",
+   "srv/config/Mekanism/machine-usage.toml (chemicalCrystallizer 400)"
+  ]
+ },
+ "quintupling": {
+  "de": [
+   "Die 700 FE/t ergeben sich aus der Server-Config: Auflösungskammer, Kristallisator und Injektionskammer je 160, Waschanlage und Klärkammer je 80, die drei kleinen Maschinen je 20.",
+   "Die Industrieturbine baust du in {{mekanism_advanced/turbine}}."
+  ],
+  "en": [
+   "The 700 FE/t follow from the server config: dissolution chamber, crystallizer and injection chamber 160 each, washer and purification chamber 80 each, the three small machines 20 each.",
+   "You build the industrial turbine in {{mekanism_advanced/turbine}}."
+  ],
+  "sources": [
+   "srv/config/Mekanism/machine-usage.toml"
+  ]
+ },
+ "factory": {
+  "de": [
+   "Mit dem Installateur behält die Maschine ihren Inhalt, an der Werkbank baust du die Maschine ab und setzt sie ins Rezept. Mehr zu Fabriken in {{mekanism/factory}}.",
+   "Die Aufgabe will genau die [[mekanism:basic_enriching_factory]], eine Schmelzfabrik zählt nicht."
+  ],
+  "en": [
+   "With the installer the machine keeps its contents, at the crafting table you pick the machine up and put it into the recipe. More on factories in {{mekanism/factory}}.",
+   "The task wants exactly the [[mekanism:basic_enriching_factory]], a smelting factory does not count."
+  ],
+  "sources": [
+   "mekanism:tier_installer/basic",
+   "mekanism:factory/basic/enriching"
+  ]
+ },
+ "factory_adv": {
+  "de": [
+   "Der [[mekanism:advanced_tier_installer]] braucht zwei [[mekanism:advanced_control_circuit]], beide Stufe 3. Die fortschrittlichen Leitungen machst du aus acht einfachen um eine [[mekanism:alloy_infused]].",
+   "Die Quest hakst du selbst ab, sobald die Fabrik steht."
+  ],
+  "en": [
+   "The [[mekanism:advanced_tier_installer]] takes two [[mekanism:advanced_control_circuit]], both stage 3. You make the advanced transmitters from eight basic ones around one [[mekanism:alloy_infused]].",
+   "You tick the quest off yourself once the factory stands."
+  ],
+  "sources": [
+   "mekanism:tier_installer/advanced",
+   "mekanism:transmitter/logistical_transporter/advanced",
+   "srv/config/Mekanism/tiers.toml"
+  ]
+ },
+ "factory_elite": {
+  "de": [
+   "Elite und Ultimativ hängen an Draconium aus dem End ({{the_end/elite_circuit}}). [[mekanism:alloy_reinforced]] und [[mekanism:alloy_atomic]] machst du in {{mekanism_advanced/reinforced}} und {{mekanism_advanced/atomic}}.",
+   "Elite-Rohrleitungen schaffen 8 000 mB pro Tick, ultimative 32 000."
+  ],
+  "en": [
+   "Elite and ultimate depend on draconium from the End ({{the_end/elite_circuit}}). You make [[mekanism:alloy_reinforced]] and [[mekanism:alloy_atomic]] in {{mekanism_advanced/reinforced}} and {{mekanism_advanced/atomic}}.",
+   "Elite mechanical pipes move 8,000 mB per tick, ultimate ones 32,000."
+  ],
+  "sources": [
+   "mekanism:tier_installer/elite",
+   "mekanism:tier_installer/ultimate",
+   "srv/config/Mekanism/tiers.toml"
+  ],
+  "client": [
+   "Right click with an alloy upgrades a placed transmitter"
+  ]
+ },
+ "speed": {
+  "de": [
+   "Für vier Upgrades brauchst du 8 Glas, 8 [[mekanism:alloy_infused]] und 4 [[mekanism:dust_osmium]]. Mehr dazu in {{mekanism/upgrades}}.",
+   "Rechne den Strom vorher: Schon vier Upgrades verzehnfachen den Verbrauch pro Tick."
+  ],
+  "en": [
+   "Four upgrades take 8 glass, 8 [[mekanism:alloy_infused]] and 4 [[mekanism:dust_osmium]]. More in {{mekanism/upgrades}}.",
+   "Plan the power first: four upgrades alone multiply the draw per tick by ten."
+  ],
+  "sources": [
+   "mekanism:upgrade/speed",
+   "mekanism: MekanismUtils.getEnergyPerTick (10^(2*speed/8 - energy/8))",
+   "srv/config/Mekanism/general.toml (maxUpgradeMultiplier 10)"
+  ]
+ },
+ "energy": {
+  "de": [
+   "Für vier Upgrades brauchst du 8 Glas, 8 [[mekanism:alloy_infused]] und 4 Goldstaub, den Staub macht die Kammer aus Rohem Gold. Mehr dazu in {{mekanism/up_energy}}."
+  ],
+  "en": [
+   "Four upgrades take 8 glass, 8 [[mekanism:alloy_infused]] and 4 gold dust; the chamber makes the dust from raw gold. More in {{mekanism/up_energy}}."
+  ],
+  "sources": [
+   "mekanism:upgrade/energy"
+  ]
+ },
+ "chemical": {
+  "de": [
+   "Laut Mod-Code steigt der Gasverbrauch pro Tick mit 10 hoch (2 mal Geschwindigkeit minus Chemie, jeweils in Achteln). Acht Geschwindigkeit allein heißt also hundertmal so viel Gas pro Tick, mit acht Chemie dazu nur noch zehnmal.",
+   "Mehr dazu in {{mekanism/up_chemical}}."
+  ],
+  "en": [
+   "Per the mod code the gas draw per tick is 10 to the power of (2 times speed minus chemical, each in eighths). Eight speed alone means a hundred times the gas per tick, with eight chemical on top only ten times.",
+   "More in {{mekanism/up_chemical}}."
+  ],
+  "sources": [
+   "mekanism:upgrade/chemical",
+   "mekanism: MekanismUtils.getGasPerTickMeanMultiplier"
+  ]
+ },
+ "full": {
+  "de": [
+   "Pro Upgrade gehören **zwei Glas und zwei Infundierte Legierungen** ins Rezept. Für 8 und 8 brauchst du also 32 Glas, 32 [[mekanism:alloy_infused]], 8 [[mekanism:dust_osmium]] und 8 Goldstaub.",
+   "Die Belohnung gibt dir zwei Geschwindigkeitsupgrades zurück, den Anfang für die nächste Maschine."
+  ],
+  "en": [
+   "Each upgrade takes **two glass and two infused alloys**. For 8 and 8 you need 32 glass, 32 [[mekanism:alloy_infused]], 8 [[mekanism:dust_osmium]] and 8 gold dust.",
+   "The reward gives you two speed upgrades back, a start for the next machine."
+  ],
+  "sources": [
+   "mekanism:upgrade/speed (pattern \" G \", \"A#A\", \" G \")",
+   "mekanism:upgrade/energy"
+  ]
+ },
+ "create": {
+  "de": [
+   "Mahlwerkräder sind auf Kronwerke **Stufe 2**, du baust sie in {{create_brass/crushing_wheel}}. Der Mahlstein aus Stufe 1 verarbeitet kein Erz.",
+   "Erz aus Deeper and Darker lohnt sich: Ein Sculkgestein-Eisenerz gibt 3 [[create:crushed_raw_iron]] und mit 25 Prozent ein viertes. Das Waschen steht in {{create_brass/ore_processing}}."
+  ],
+  "en": [
+   "On Kronwerke crushing wheels are **stage 2**, you build them in {{create_brass/crushing_wheel}}. The stage 1 millstone does not process ore.",
+   "Ore from Deeper and Darker pays off: one sculk stone iron ore gives 3 [[create:crushed_raw_iron]] and a fourth with 25 percent. Washing is in {{create_brass/ore_processing}}."
+  ],
+  "sources": [
+   "kubejs/data/kronwerke/chapters/stages/stage2.json (create:crushing_wheel)",
+   "create:crushing/raw_iron",
+   "create:crushing/iron_ore",
+   "deeperdarker:compatibility/create/crushing/sculk_stone_iron_ore",
+   "create:splashing/crushed_raw_iron",
+   "no create:milling recipe for ores in the dump"
+  ]
+ },
+ "foundry": {
+  "de": [
+   "Bau und Guss stehen in {{bees/foundry}} und {{bees/casting}}. Auch hier schlägt Glück III die Behutsamkeit: 2,2 Rohe Erze zu je 180 mB sind rund 4,4 Barren pro Erzblock, der Block selbst nur 3.",
+   "Die [[productivemetalworks:ingot_cast]] gießt du auf dem Gießtisch aus 360 mB flüssigem Stahl über einen beliebigen Barren oder einen Ziegel, der dabei verbraucht wird."
+  ],
+  "en": [
+   "Building and casting are in {{bees/foundry}} and {{bees/casting}}. Here too Fortune III beats Silk Touch: 2.2 raw ores at 180 mB each are about 4.4 ingots per ore block, the block itself only 3.",
+   "You cast the [[productivemetalworks:ingot_cast]] on the casting table from 360 mB of molten steel over any ingot or a brick, which is used up."
+  ],
+  "sources": [
+   "productivemetalworks:melting/ores/iron (270)",
+   "productivemetalworks:melting/raw_materials/iron (180)",
+   "productivemetalworks:casting/cast/ingot",
+   "productivemetalworks:casting/cast/ingot_brick",
+   "kubejs/data/kronwerke/chapters/stages/stage2.json (productivemetalworks:casting_table)"
+  ]
+ },
+ "ie": {
+  "de": [
+   "Den Zerkleinerer baust du in {{immersive_heavy/crusher}}. Der Nickelstaub fällt nur bei Erzblöcken, nicht bei Rohem Erz.",
+   "Ein Block aus Rohem Erz kostet 54 000 FE, also so viel wie neun einzelne Rohe Erze, gibt aber sicher 12 Staub statt im Schnitt 12."
+  ],
+  "en": [
+   "You build the crusher in {{immersive_heavy/crusher}}. The nickel dust only drops from ore blocks, not from raw ore.",
+   "A raw ore block costs 54,000 FE, as much as nine single raw ores, but gives a sure 12 dust instead of 12 on average."
+  ],
+  "sources": [
+   "immersiveengineering:crusher/ore_iron",
+   "immersiveengineering:crusher/raw_ore_iron",
+   "immersiveengineering:crusher/raw_block_iron"
+  ]
+ },
+ "oritech": {
+  "de": [
+   "Den Pulverizer baust du in {{oritech/pulverizer}}, die Fragment Forge in {{oritech/fragment_forge}}. Beide sind Stufe 3.",
+   "Der Pulverizer nimmt Erzblöcke über den Tag minecraft:iron_ores, also auch Tiefenschiefer-Erz."
+  ],
+  "en": [
+   "You build the Pulverizer in {{oritech/pulverizer}}, the Fragment Forge in {{oritech/fragment_forge}}. Both are stage 3.",
+   "The Pulverizer takes ore blocks through the tag minecraft:iron_ores, deepslate ore included."
+  ],
+  "sources": [
+   "oritech:pulverizer/ore/iron",
+   "oritech:pulverizer/raw/iron",
+   "oritech:pulverizer_block (stage 3)",
+   "oritech:fragment_forge_block (stage 3)"
+  ]
+ },
+ "verdict": {
+  "de": [
+   "**Mahlwerkräder sind auf Kronwerke Stufe 2**, die Zeile für Stufe 1 gilt also erst ab dem Messingwerk. Danach richtet sich die Wahl vor allem nach Strom und Gas.",
+   "Die Gießerei ({{bees/foundry}}) ist der einfachste Weg zu zwei Barren ohne Strom, die Dreifach-Straße ({{mekanism_ores/tripling}}) der Standard ab Stufe 3."
+  ],
+  "en": [
+   "**Crushing wheels are stage 2 on Kronwerke**, so the stage 1 line only applies from Brass Works on. After that the choice is mostly about power and gas.",
+   "The foundry ({{bees/foundry}}) is the easiest way to two ingots without power, the tripling line ({{mekanism_ores/tripling}}) the standard from stage 3."
+  ],
+  "sources": [
+   "kubejs/data/kronwerke/chapters/stages/stage2.json (create:crushing_wheel)",
+   "productivemetalworks:melting/raw_materials/iron"
+  ]
+ }
+}

@@ -1,0 +1,538 @@
+{
+ "arrival": {
+  "de": [
+   "Das End läuft auf einem eigenen Server. Bis dein Spiel dort fertig geladen hat, bekommst du keinen Schaden und kein Mob nimmt dich ins Visier, nur die Leere tötet trotzdem.",
+   "Stirbst du im End, wachst du auf dem Hauptserver an deinem Bett oder am Spawn auf. Dein Körper bleibt im End, und fällt er in die Leere, sinkt er nur bis zur Weltuntergrenze (Y 0) und hängt dort ({{tips/h_death}}). Deine Sachen sind also nicht weg, aber schwer zu erreichen."
+  ],
+  "en": [
+   "The End runs on a server of its own. Until your game has finished loading there, you take no damage and no mob targets you; only the void still kills.",
+   "If you die in the End, you wake up on the main server at your bed or at spawn. Your body stays in the End, and if it falls into the void it only sinks to the bottom of the world (Y 0) and floats there ({{tips/h_death}}). So your things are not gone, just hard to reach."
+  ],
+  "sources": [
+   "srv/config/kronwerke-common.toml (network.dimensionServers minecraft:the_end=end)",
+   "core: src/main/java/de/kronwerke/core/spawn/ArrivalGrace.java",
+   "core: src/main/java/de/kronwerke/core/portal/Crossing.java (respawn)",
+   "srv/config/corpse-server.toml (fall_into_void false)",
+   "corpse jar: de/maxhenkel/corpse/entities/CorpseEntity (teleport to getMinBuildHeight)"
+  ],
+  "client": [
+   "a body that fell into the End void floats at Y 0 and can be opened there"
+  ]
+ },
+ "prepare": {
+  "de": [
+   "Lass Wertsachen zu Hause: Wer im End stirbt, landet auf dem Hauptserver, der Körper mit allem bleibt drüben. Rüstung lohnt sich trotzdem, denn die Monster sind in Stufe 4 viel stärker ({{the_end/t_scaling}}).",
+   "Die Belohnung legt 64 Pfeile für {{the_end/crystals}} dazu."
+  ],
+  "en": [
+   "Leave valuables at home: whoever dies in the End lands on the main server while the body with everything stays over there. Armour still pays off, since monsters are much stronger in stage 4 ({{the_end/t_scaling}}).",
+   "The reward adds 64 arrows for {{the_end/crystals}}."
+  ],
+  "sources": [
+   "core: src/main/java/de/kronwerke/core/portal/Crossing.java (respawn)",
+   "srv/config/corpse-server.toml"
+  ]
+ },
+ "own_portal": {
+  "de": [
+   "Meist reicht ein Wegstein statt eines Portals: Ein aktivierter Wegstein im End erscheint auch in der Liste auf dem Hauptserver, ein Klick bringt dich direkt hinüber, und zurück geht es genauso. Die Wegsteine der Farmwelt reisen nicht mit.",
+   "Die Festung findest du auch über {{exploration/e_yung_stronghold}}."
+  ],
+  "en": [
+   "A waystone is usually enough instead of a portal: an activated waystone in the End also shows in the list on the main server, one click takes you across, and back works the same way. The farm world's waystones do not travel.",
+   "For finding the stronghold see also {{exploration/e_yung_stronghold}}."
+  ],
+  "sources": [
+   "core: src/main/java/de/kronwerke/core/share/ws/WaystoneLayer.java (main, Nether and End send their waystones to each other, not the mining world)"
+  ],
+  "client": [
+   "an End waystone listed on main moves the player to the End server"
+  ]
+ },
+ "a_endermen": {
+  "de": [
+   "Für die Kill-Aufgabe zählen nur normale Endermen. In Stufe 4 haben sie 120 Prozent mehr Leben und 7 Rüstungspunkte, Plünderung bringt mehr Perlen pro Enderman.",
+   "Ein Wassereimer auf dem Boden hält sie fern, sie meiden Wasser."
+  ],
+  "en": [
+   "Only plain endermen count for the kill task. In stage 4 they have 120 percent more health and 7 armour points; Looting gives more pearls per enderman.",
+   "A water bucket emptied on the ground keeps them away, they avoid water."
+  ],
+  "sources": [
+   "srv/config/kronwerke-common.toml ([mobs] health 1.2, armor 7.0 at stage 4)",
+   "tools/quests/chapters/the_end.py (kill minecraft:enderman)"
+  ]
+ },
+ "t_scaling": {
+  "de": [
+   "Zur Gruppe eines Bosses zählt jeder Spieler, der höchstens 48 Blöcke entfernt steht oder ihn in den letzten 30 Sekunden getroffen hat. Neben Blitz und Schockwelle kommt eine dritte Zusatzattacke: Raserei, die den Boss heilt und ein paar Sekunden härter zuschlagen lässt.",
+   "Bosse auf der Liste, darunter Drache, Ender Golem und Ender Guardian, bekommen den Stufenbonus der normalen Monster nicht. Endermapteras dagegen schon."
+  ],
+  "en": [
+   "A boss's group is every player within 48 blocks or who hit it in the last 30 seconds. Besides lightning and shockwave there is a third extra attack: a rage that heals the boss and makes it hit harder for a few seconds.",
+   "Bosses on the list, among them the dragon, the Ender Golem and the Ender Guardian, do not get the stage bonus of normal monsters. Endermapteras do."
+  ],
+  "sources": [
+   "core: src/main/java/de/kronwerke/core/boss/BossScaling.java (RANGE 48, HIT_MEMORY 30 s, lightning, shockwave, rage)",
+   "core: src/main/java/de/kronwerke/core/mobs/MobStages.java (bosses skipped)",
+   "srv/config/kronwerke-common.toml ([bosses] scaling, healthPerPlayer 0.6, damagePerPlayer 0.15, maxPlayers 8, attackInterval 240; [mobs])"
+  ]
+ },
+ "crystals": {
+  "de": [
+   "Jedes Geschoss zerstört einen Kristall, auch Schneebälle, die sich zu 16 stapeln und nichts kosten. Für die Käfige nimm Blöcke zum Hochbauen und eine Spitzhacke mit.",
+   "Danach geht es zu {{the_end/dragon}}."
+  ],
+  "en": [
+   "Any projectile breaks a crystal, snowballs too, which stack to 16 and cost nothing. For the cages bring blocks to tower up and a pickaxe.",
+   "Then go on to {{the_end/dragon}}."
+  ],
+  "sources": [
+   "vanilla End crystal behaviour"
+  ],
+  "client": [
+   "snowballs destroy End crystals"
+  ]
+ },
+ "dragon": {
+  "de": [
+   "Der Drache wächst mit der Gruppe: Jeder weitere Spieler gibt ihm 60 Prozent mehr Leben und 15 Prozent mehr Schaden, bis acht Spieler, also hat er dann gut das Fünffache an Leben. Ab zwei Spielern setzt er alle 12 Sekunden Blitz, Schockwelle oder Raserei ein.",
+   "Nach dem Sieg warten {{the_end/heart}}, {{the_end/egg}}, {{the_end/d_scales}} und {{the_end/breath}}."
+  ],
+  "en": [
+   "The dragon grows with the group: every further player gives it 60 percent more health and 15 percent more damage, up to eight players, so it then has a good five times its health. From two players on it uses lightning, shockwave or rage every 12 seconds.",
+   "After the win {{the_end/heart}}, {{the_end/egg}}, {{the_end/d_scales}} and {{the_end/breath}} are waiting."
+  ],
+  "sources": [
+   "srv/config/kronwerke-common.toml ([bosses] minecraft:ender_dragon, healthPerPlayer 0.6, damagePerPlayer 0.15, maxPlayers 8, attackInterval 240)",
+   "core: src/main/java/de/kronwerke/core/boss/BossScaling.java (RANGE 48, HIT_MEMORY 30 s, lightning, shockwave, rage)"
+  ]
+ },
+ "breath": {
+  "de": [
+   "Drachenatem wird später erneuerbar: Mit Nature's Aura wird eine im End gefüllte Aura-Flasche am [[naturesaura:nature_altar]] mit dem [[naturesaura:conversion_catalyst]] zu Drachenatem.",
+   "Eine Flasche ergibt am Zaubertisch drei Infundierte Drachenatem für {{the_end/t_endshelf}}."
+  ],
+  "en": [
+   "Dragon's breath becomes renewable later: with Nature's Aura an aura bottle filled in the End turns into dragon's breath on the [[naturesaura:nature_altar]] with the [[naturesaura:conversion_catalyst]].",
+   "One bottle gives three Infused Dragon's Breath at the enchanting table for {{the_end/t_endshelf}}."
+  ],
+  "sources": [
+   "naturesaura:altar/breath (aura_bottle with aura_type naturesaura:end, catalyst conversion_catalyst)",
+   "apothic_enchanting:infusion/infused_breath (count 3)"
+  ],
+  "client": [
+   "filling an aura bottle in the End"
+  ]
+ },
+ "heart": {
+  "de": [
+   "Ein Herz ergibt im Fusionsrezept gleich **4** [[draconicevolution:awakened_draconium_block]]: 4 Draconiumblöcke als Katalysator, auf den Injektoren 4 [[draconicevolution:draconium_core]], 2 [[botania:gaia_ingot]] und das Herz, Wyvern-Stufe.",
+   "Heb Herzen für die Gruppe auf, das Finale braucht erwecktes Draconium ({{finale/tech}})."
+  ],
+  "en": [
+   "One heart gives **4** [[draconicevolution:awakened_draconium_block]] in the fusion recipe: 4 draconium blocks as catalyst, and on the injectors 4 [[draconicevolution:draconium_core]], 2 [[botania:gaia_ingot]] and the heart, wyvern tier.",
+   "Keep hearts for the group; the finale needs awakened draconium ({{finale/tech}})."
+  ],
+  "sources": [
+   "kronwerke:tech/awakened_draconium_block",
+   "kubejs/server_scripts/kronwerke/tech.js",
+   "draconicevolution:modules/item_wyvern_shield_control"
+  ]
+ },
+ "egg": {
+  "de": [
+   "Dass nach jedem Sieg ein Ei erscheint, stellt Draconic Evolution ein. Das Ei steckt in Rezepten wie dem [[draconicevolution:celestial_manipulator]], dem [[forbidden_arcanus:arcane_dragon_egg]] und dem [[productivebees:dragon_egg_hive]]."
+  ],
+  "en": [
+   "That an egg appears after every win is a Draconic Evolution setting. The egg goes into recipes like the [[draconicevolution:celestial_manipulator]], the [[forbidden_arcanus:arcane_dragon_egg]] and the [[productivebees:dragon_egg_hive]]."
+  ],
+  "sources": [
+   "srv/config/brandon3055/DraconicEvolution.cfg (dragonEggSpawnOverride true)",
+   "draconicevolution:celestial_manipulator",
+   "forbidden_arcanus:arcane_dragon_egg",
+   "productivebees:nests/dragon_egg_hive"
+  ]
+ },
+ "d_scales": {
+  "de": [
+   "Eine [[mysticalagradditions:dragon_egg_crux]] braucht 4 Schuppen, 4 Insanium-Essenzen und einen Diamantblock. Die 8 Schuppen eines Drachen reichen also für zwei."
+  ],
+  "en": [
+   "A [[mysticalagradditions:dragon_egg_crux]] takes 4 scales, 4 Insanium Essence and a diamond block. The 8 scales of one dragon are enough for two."
+  ],
+  "sources": [
+   "srv/config/mysticalagradditions-common.toml (dragonScalesAmount 8)",
+   "mysticalagradditions:dragon_egg_crux (stage 5)"
+  ]
+ },
+ "respawn": {
+  "de": [
+   "Die Kill-Aufgabe zählt nur für den Spieler mit dem letzten Treffer und sein Team. Wer sie noch braucht, sollte den Abschluss machen.",
+   "Ghasttränen kommen aus dem Nether ({{nether/m_ghast}}). Jeder neue Drache wächst wieder mit der Gruppe, die gerade kämpft."
+  ],
+  "en": [
+   "The kill task only counts for the player with the last hit and their team. Whoever still needs it should land the finishing blow.",
+   "Ghast tears come from the Nether ({{nether/m_ghast}}). Each new dragon again grows with the group that is fighting."
+  ],
+  "sources": [
+   "minecraft:end_crystal",
+   "srv/config/brandon3055/DraconicEvolution.cfg (dragonDustLootModifier 64)",
+   "core: src/main/java/de/kronwerke/core/boss/BossScaling.java (RANGE 48, HIT_MEMORY 30 s, lightning, shockwave, rage)"
+  ],
+  "client": [
+   "FTB Quests kill task credits only the killer's team"
+  ]
+ },
+ "gateway": {
+  "de": [
+   "Stell auf den äußeren Inseln einen Wegstein auf, wilde gibt es im End ebenfalls. Er steht danach auch in der Liste auf dem Hauptserver, so sparst du dir beim nächsten Mal Portal und Transitportal."
+  ],
+  "en": [
+   "Put up a waystone on the outer islands; wild ones generate in the End too. It then also shows in the list on the main server, so next time you skip both portal and gateway."
+  ],
+  "sources": [
+   "srv/config/waystones-common.toml (wildWaystonesDimensionAllowList incl. minecraft:the_end)",
+   "core: src/main/java/de/kronwerke/core/share/ws/WaystoneLayer.java"
+  ]
+ },
+ "end_city": {
+  "de": [
+   "In den Schatztruhen der Endsiedlungen legt Kronwerke 1 bis 2 Extras dazu: [[draconicevolution:draconium_dust]], [[mekanism:ingot_refined_obsidian]], [[botania:pixie_dust]], [[ae2:singularity]] oder [[justdirethings:celestigem]].",
+   "Von hier geht es zu {{the_end/shulker}} und {{the_end/elytra}}."
+  ],
+  "en": [
+   "Kronwerke adds 1 to 2 extras to the treasure chests of End cities: [[draconicevolution:draconium_dust]], [[mekanism:ingot_refined_obsidian]], [[botania:pixie_dust]], [[ae2:singularity]] or [[justdirethings:celestigem]].",
+   "From here go on to {{the_end/shulker}} and {{the_end/elytra}}."
+  ],
+  "sources": [
+   "kubejs/data/kronwerke/loot_modifiers/chests_end.json (minecraft:chests/end_city_treasure)",
+   "kubejs/data/kronwerke/loot_table/inject/end.json",
+   "srv/config/lootr-common.toml"
+  ]
+ },
+ "shulker": {
+  "de": [
+   "Die Quest will die ungefärbte [[minecraft:shulker_box]], gefärbte sind andere Items. Färb sie erst nach dem Abhaken.",
+   "Für das Ritual opferst du einen Schleim oder Magmawürfel, und der Besessene Shulker lässt immer mindestens eine Schale fallen. Mit zwei Schalen wird auch eine Sophisticated-Truhe zur aufwertbaren Shulker-Kiste ({{storage/chest}})."
+  ],
+  "en": [
+   "The quest wants the undyed [[minecraft:shulker_box]]; dyed ones are other items. Dye it only after ticking the quest off.",
+   "For the ritual you sacrifice a slime or magma cube, and the Possessed Shulker always drops at least one shell. Two shells also turn a Sophisticated chest into an upgradeable shulker box ({{storage/chest}})."
+  ],
+  "sources": [
+   "tools/quests/chapters/the_end.py (item minecraft:shulker_box)",
+   "occultism:ritual/possess_shulker (entity_to_sacrifice #occultism:cubemob)",
+   "occultism jar: data/occultism/tags/entity_type/cubemob.json, loot_table/entities/possessed_shulker.json",
+   "sophisticatedstorage:shulker_from_chest"
+  ]
+ },
+ "elytra": {
+  "de": [
+   "Phantomhaut ist auf Kronwerke knapp, weil Phantome nachts nicht kommen. Verlässlich spawnen sie in der Voliere ({{the_end/st_aviary}}).",
+   "Neben dem [[draconicevolution:item_wyvern_flight]] stecken Elytren auch in Jetpacks von Oritech und Create Jetpack."
+  ],
+  "en": [
+   "Phantom membrane is scarce on Kronwerke, as phantoms do not come at night. They spawn reliably in the Aviary ({{the_end/st_aviary}}).",
+   "Besides the [[draconicevolution:item_wyvern_flight]], elytra also go into the jetpacks of Oritech and Create Jetpack."
+  ],
+  "sources": [
+   "srv/config/kronwerke-common.toml ([rules] phantoms false)",
+   "dungeons_arise jar: worldgen/structure/aviary.json (spawn_overrides minecraft:phantom)",
+   "draconicevolution:modules/item_wyvern_flight",
+   "oritech:crafting/boostedelytra",
+   "create_jetpack:netherite_jetpack"
+  ]
+ },
+ "chorus": {
+  "de": [
+   "Ein Endstab braucht eine Geplatzte Chorusfrucht und eine Lohenrute und ergibt **4** Stäbe, nicht einen.",
+   "Der Anbau zuhause folgt in {{the_end/t_chorus_garden}}."
+  ],
+  "en": [
+   "An end rod takes one popped chorus fruit and a blaze rod and gives **4** rods, not one.",
+   "Growing it at home follows in {{the_end/t_chorus_garden}}."
+  ],
+  "sources": [
+   "minecraft:end_rod (count 4)",
+   "minecraft:purpur_block"
+  ]
+ },
+ "i_biomes": {
+  "de": [
+   "Die drei Biome liegen nur auf den äußeren Inseln, also hinter einem Transitportal ({{the_end/gateway}}). Sie sind auf dem Server alle eingeschaltet."
+  ],
+  "en": [
+   "The three biomes are only on the outer islands, behind a gateway ({{the_end/gateway}}). All of them are switched on on the server."
+  ],
+  "sources": [
+   "srv/config/biomesoplenty/biome_toggles.json (end_corruption, end_reef, end_wilds enabled)",
+   "lang biome.biomesoplenty.end_*"
+  ]
+ },
+ "t_shulker_hunt": {
+  "de": [
+   "Für die Aufgabe zählen nur normale Shulker, die Besessenen Shulker von Occultism sind ein anderer Mob. Sie dagegen lassen immer mindestens eine Schale fallen ({{the_end/shulker}})."
+  ],
+  "en": [
+   "Only normal shulkers count for the task; the Possessed Shulkers of Occultism are a different mob. They on the other hand always drop at least one shell ({{the_end/shulker}})."
+  ],
+  "sources": [
+   "tools/quests/chapters/the_end.py (kill minecraft:shulker)",
+   "occultism jar: loot_table/entities/possessed_shulker.json"
+  ]
+ },
+ "t_levitate": {
+  "de": [
+   "Milch hebt die Schwebewirkung sofort auf. Trink sie erst, wenn du wieder über festem Boden bist, oder lande mit dem Wassereimer."
+  ],
+  "en": [
+   "Milk removes levitation at once. Drink it only once you are back over solid ground, or land with a water bucket."
+  ],
+  "sources": [
+   "vanilla behaviour"
+  ]
+ },
+ "t_dragon_head": {
+  "de": [
+   "Der Kopf steckt nicht nur im Drachenregal ({{the_end/t_draconic_endshelf}}), sondern auch im [[quarryplus:adv_quarry]] und in den Mega-Bauteilen von Cable Tiers für Refined Storage. Ein Kopf pro Endschiff, also teilt sie auf."
+  ],
+  "en": [
+   "The head goes not only into the Draconic Endshelf ({{the_end/t_draconic_endshelf}}) but also into the [[quarryplus:adv_quarry]] and the mega parts of Cable Tiers for Refined Storage. One head per End ship, so share them out."
+  ],
+  "sources": [
+   "quarryplus:adv_quarry",
+   "cabletiers:mega_importer",
+   "apothic_enchanting:draconic_endshelf"
+  ]
+ },
+ "t_chorus_garden": {
+  "de": [
+   "Endstäbe stecken auch im [[apothic_enchanting:pearl_endshelf]]: ein Endregal mit 4 Endstäben und 2 Enderperlen. Es gibt 10 Eterna, 7,5 Quanta und 7,5 Arcana, doppelt so viel Eterna wie das Endregal."
+  ],
+  "en": [
+   "End rods also go into the [[apothic_enchanting:pearl_endshelf]]: an Endshelf with 4 end rods and 2 ender pearls. It gives 10 Eterna, 7.5 Quanta and 7.5 Arcana, twice the Eterna of the Endshelf."
+  ],
+  "sources": [
+   "apothic_enchanting:pearl_endshelf",
+   "apothic_enchanting jar: enchanting_stats/pearl_endshelf.json, endshelf.json"
+  ]
+ },
+ "structures": {
+  "de": [
+   "Auch in den Truhen der Endburg und des End-Leuchtturms von Dungeons and Taverns legt Kronwerke 1 bis 2 Extras dazu, etwa Draconiumstaub oder eine [[ae2:singularity]].",
+   "Weiter geht es zu {{the_end/st_aviary}}."
+  ],
+  "en": [
+   "Kronwerke also adds 1 to 2 extras to the chests of the End castle and End lighthouse of Dungeons and Taverns, such as draconium dust or a [[ae2:singularity]].",
+   "Next is {{the_end/st_aviary}}."
+  ],
+  "sources": [
+   "kubejs/data/kronwerke/loot_modifiers/chests_end.json (nova_structures end_castle, end_lighthouse)",
+   "kubejs/data/kronwerke/loot_table/inject/end.json"
+  ]
+ },
+ "st_aviary": {
+  "de": [
+   "In der Voliere spawnen Phantome. Da sie auf Kronwerke sonst nicht kommen, ist sie die beste Quelle für [[minecraft:phantom_membrane]] zum Reparieren der Elytren ({{the_end/elytra}})."
+  ],
+  "en": [
+   "Phantoms spawn in the Aviary. Since they do not come otherwise on Kronwerke, it is the best source of [[minecraft:phantom_membrane]] for repairing elytra ({{the_end/elytra}})."
+  ],
+  "sources": [
+   "dungeons_arise jar: worldgen/structure/aviary.json (spawn_overrides phantom), tags/worldgen/biome/has_structure/aviary_biomes.json",
+   "srv/config/kronwerke-common.toml ([rules] phantoms false)"
+  ]
+ },
+ "cg_find": {
+  "de": [
+   "Die Zitadelle liegt nie dicht an einer Endsiedlung (mindestens 10 Chunks Abstand) und ist selten, höchstens eine pro 50 mal 50 Chunks. Für das Auge brauchst du 2 Shulkerschalen, also erst {{the_end/shulker}}.",
+   "Eine Übersicht der Augen von Cataclysm steht in {{list_dimensions/k_eyes}}."
+  ],
+  "en": [
+   "The citadel never sits close to an End city (at least 10 chunks apart) and is rare, at most one per 50 by 50 chunks. The eye needs 2 shulker shells, so do {{the_end/shulker}} first.",
+   "An overview of the Cataclysm eyes is in {{list_dimensions/k_eyes}}."
+  ],
+  "sources": [
+   "cataclysm jar: worldgen/structure_set/ruined_citadel.json (spacing 50, exclusion_zone end_city 10)",
+   "cataclysm:void_eye"
+  ]
+ },
+ "cg_golem": {
+  "de": [
+   "Jeder Ender Golem lässt genau einen [[cataclysm:void_core]] fallen. Für Leerenschmiede und Leeren-Schulterwaffe brauchst du zwei, also zwei Golems.",
+   "Der Golem steht auf der Boss-Liste und wächst mit der Gruppe."
+  ],
+  "en": [
+   "Every Ender Golem drops exactly one [[cataclysm:void_core]]. Void Forge and Void Assault Shoulder Weapon need two, so two golems.",
+   "The golem is on the boss list and grows with the group."
+  ],
+  "sources": [
+   "cataclysm jar: loot_table/entities/ender_golem.json",
+   "srv/config/cataclysm-common.toml (ender_golem void_rune_damage 7.0)",
+   "srv/config/kronwerke-common.toml ([bosses] cataclysm:ender_golem)"
+  ]
+ },
+ "cg_endermaptera": {
+  "de": [
+   "In der Zitadelle spawnen sie immer wieder nach, du musst also nicht suchen. Die Kieferträger lassen 1 bis 2 [[cataclysm:void_jaw]] fallen."
+  ],
+  "en": [
+   "They keep respawning inside the citadel, so you do not need to search. The jawed ones drop 1 to 2 [[cataclysm:void_jaw]]."
+  ],
+  "sources": [
+   "cataclysm jar: worldgen/structure/ruined_citadel.json (spawn_overrides endermaptera)",
+   "cataclysm jar: loot_table/entities/endermaptera_has_jaws.json",
+   "cataclysm:void_scatter_arrow"
+  ]
+ },
+ "cg_kill": {
+  "de": [
+   "Der Guardian zerstört Blöcke auch dort, wo Mob-Griefing aus ist. Er wächst mit der Gruppe und setzt ab zwei Spielern die Zusatzattacken ein ({{the_end/t_scaling}}).",
+   "Die Schallplatte fällt mit 10 Prozent, Plünderung ändert daran nichts."
+  ],
+  "en": [
+   "The Guardian breaks blocks even where mob griefing is off. It grows with the group and uses the extra attacks from two players on ({{the_end/t_scaling}}).",
+   "The music disc drops with 10 percent, Looting does not change that."
+  ],
+  "sources": [
+   "srv/config/cataclysm-common.toml (ender_guardian ignore_mobgriefing true, cap_config)",
+   "cataclysm jar: loot_table/entities/ender_guardian.json",
+   "srv/config/kronwerke-common.toml ([bosses] cataclysm:ender_guardian)"
+  ]
+ },
+ "cg_gear": {
+  "de": [
+   "Die [[cataclysm:void_forge]] bleibt eine Spitzhacke; Rechtsklick auf einen Block ruft Leerenrunen im Fächer. Witherit kommt vom Harbinger ({{bosses/harbinger_kill}}), die Höllenschmiede von der Netherite Monstrosity ({{nether/nm_kill}}), das Bollwerk der Flamme aus Ignitium von Ignis ({{nether/ig_kill}})."
+  ],
+  "en": [
+   "The [[cataclysm:void_forge]] stays a pickaxe; right clicking a block summons void runes in a fan. Witherite comes from the Harbinger ({{bosses/harbinger_kill}}), the Infernal Forge from the Netherite Monstrosity ({{nether/nm_kill}}), the Bulwark of the Flame from Ignis's ignitium ({{nether/ig_kill}})."
+  ],
+  "sources": [
+   "cataclysm:weapon_infusion/void_forge",
+   "cataclysm:mechanical_fusion_anvil",
+   "cataclysm:bulwark_of_the_flame",
+   "cataclysm lang (item.cataclysm.void_forge.desc)"
+  ]
+ },
+ "draconium": {
+  "de": [
+   "Mit Glück III gibt ein Erz bis zu 7 Staub. Das Ziel der Stufe 4 verlangt im Grundwert 1 000 Draconiumbarren, die echte Zahl hängt von der Zahl aktiver Spieler ab.",
+   "Etwas Staub liegt auch in den Truhen der Endsiedlungen ({{the_end/end_city}}). Weiter geht es im Kapitel Draconic Evolution ({{draconic/dust}})."
+  ],
+  "en": [
+   "With Fortune III one ore gives up to 7 dust. The stage 4 goal asks for a base of 1,000 draconium ingots; the real number depends on how many players are active.",
+   "Some dust also lies in End city chests ({{the_end/end_city}}). The chapter Draconic Evolution continues from here ({{draconic/dust}})."
+  ],
+  "sources": [
+   "draconicevolution jar: loot_table/blocks/end_draconium_ore.json (2 to 4, uniform_bonus_count 1)",
+   "draconicevolution jar: worldgen/placed_feature/end_draconium_ore.json",
+   "config/kronwerke/goals.json (stage4) (draconium_ingot base 1000, scale true)"
+  ]
+ },
+ "elite_circuit": {
+  "de": [
+   "Das Rezept nimmt den Staub direkt, schmelzen musst du ihn nicht. Die Verstärkte Legierung entsteht im Metallurgischen Infusionierer aus [[mekanism:alloy_infused]] mit Diamant-Infusion.",
+   "Im Ziel sind 150 Schaltkreise der Grundwert, angepasst an die Zahl aktiver Spieler. Weiter im Kapitel {{mekanism_elite/welcome}}."
+  ],
+  "en": [
+   "The recipe takes the dust directly, you do not have to smelt it. Reinforced alloy comes from the Metallurgic Infuser: [[mekanism:alloy_infused]] with diamond infusion.",
+   "150 circuits is the goal's base, scaled to the number of active players. The chapter continues at {{mekanism_elite/welcome}}."
+  ],
+  "sources": [
+   "kronwerke:tech/elite_control_circuit (#c:dusts/draconium)",
+   "mekanism:metallurgic_infusing/alloy/reinforced",
+   "config/kronwerke/goals.json (stage4) (elite_control_circuit base 150, scale true)"
+  ]
+ },
+ "cells": {
+  "de": [
+   "Die 64k-Komponente darunter braucht einen [[naturesaura:sky_ingot]]. Für 1M und 4M kommt je ein weiterer Draconiumbarren und ein [[megacells:accumulation_processor]] dazu.",
+   "Weiter geht es in {{ae2_advanced/cell_256k}} und {{ae2_advanced/mega_1m}}."
+  ],
+  "en": [
+   "The 64k component below it needs an [[naturesaura:sky_ingot]]. 1M and 4M each add another draconium ingot and an [[megacells:accumulation_processor]].",
+   "It continues in {{ae2_advanced/cell_256k}} and {{ae2_advanced/mega_1m}}."
+  ],
+  "sources": [
+   "kronwerke:ae2/cell_component_256k",
+   "kronwerke:ae2/cell_component_64k",
+   "kronwerke:ae2/cell_component_1m",
+   "kubejs/server_scripts/kronwerke/ae2.js"
+  ]
+ },
+ "r_ores": {
+  "de": [
+   "Azursilbererz liegt im Endstein zwischen Y 16 und 92, bis zu acht Adern pro Chunk, also höher als Draconium. Aus den Barren wird {{the_end/t_azure_electrum}}."
+  ],
+  "en": [
+   "Azure silver ore sits in end stone between Y 16 and 92, up to eight veins per chunk, so higher than draconium. The ingots lead to {{the_end/t_azure_electrum}}."
+  ],
+  "sources": [
+   "silentgear jar: worldgen/placed_feature/azure_silver_ore.json (count 8, Y 16 to 92), configured_feature (c:end_stones)"
+  ]
+ },
+ "t_azure_electrum": {
+  "de": [
+   "Ohne Legierungsschmiede geht es an der Werkbank: 4 Azursilberbarren, 2 Goldbarren und eine Enderperle geben einen Barren. Die [[silentgear:alloy_forge]] (ab Stufe 2) ist sparsamer: drei Barren aus einem Block, also aus 9 statt 12 Barren Azursilber."
+  ],
+  "en": [
+   "Without the alloy forge it works at the crafting table: 4 azure silver ingots, 2 gold ingots and an ender pearl give one ingot. The [[silentgear:alloy_forge]] (from stage 2) is cheaper: three ingots from one block, so from 9 instead of 12 azure silver ingots."
+  ],
+  "sources": [
+   "silentgear:azure_electrum_ingot (shaped)",
+   "silentgear:alloying/metal/azure_electrum_ingot (count 3)",
+   "silentgear:alloy_forge (stage 2)"
+  ]
+ },
+ "t_endshelf": {
+  "de": [
+   "Eine Flasche Drachenatem gibt drei Infundierte, die 4 Flaschen der Quest reichen also für 12 Endregale. Mit 4 Endstäben und 2 Enderperlen wird ein Endregal zum [[apothic_enchanting:pearl_endshelf]] mit doppelter Eterna ({{the_end/t_chorus_garden}}).",
+   "Den Rest erklärt das Kapitel {{apotheosis/ench_table}}."
+  ],
+  "en": [
+   "One dragon's breath gives three infused ones, so the 4 bottles of the quest make 12 Endshelves. With 4 end rods and 2 ender pearls an Endshelf becomes a [[apothic_enchanting:pearl_endshelf]] with twice the Eterna ({{the_end/t_chorus_garden}}).",
+   "The chapter {{apotheosis/ench_table}} explains the rest."
+  ],
+  "sources": [
+   "apothic_enchanting:infusion/infused_breath (requirements eterna 80, quanta 15 to 30, arcana 60, count 3)",
+   "apothic_enchanting:pearl_endshelf"
+  ]
+ },
+ "t_draconic_endshelf": {
+  "de": [
+   "Fünf Drachenregale bringen allein 100 Eterna. Jedes braucht einen Drachenkopf, und den gibt es nur einmal pro Endschiff ({{the_end/t_dragon_head}})."
+  ],
+  "en": [
+   "Five Draconic Endshelves alone give 100 Eterna. Each needs a dragon head, and there is only one per End ship ({{the_end/t_dragon_head}})."
+  ],
+  "sources": [
+   "apothic_enchanting jar: enchanting_stats/draconic_endshelf.json (eterna 20, maxEterna 100)"
+  ]
+ },
+ "supply": {
+  "de": [
+   "Die Zahlen der Technik-Seite sind Grundwerte: Draconiumbarren und Elite-Schaltkreise wachsen mit der Zahl aktiver Spieler, nur Gaia-Geister und Mystic Staffs bleiben fest. Die echte Menge zeigt {{start_here/o_scale}}.",
+   "Abgeben geht nur am Obelisken auf dem Hauptserver: Item in die Hand, zweimal Schleich-Rechtsklick binnen 5 Sekunden gibt alles aus den Inventarreihen ab."
+  ],
+  "en": [
+   "The tech numbers are base values: draconium ingots and elite circuits scale with the number of active players, only Gaia Spirits and Mystic Staffs stay fixed. The real amount is in {{start_here/o_scale}}.",
+   "You can only hand in at the obelisk on the main server: item in hand, two sneak right clicks within 5 seconds hand in everything from your inventory rows."
+  ],
+  "sources": [
+   "config/kronwerke/goals.json (stage4) (elite_control_circuit 150, draconium_ingot 1000 scaled; gaia_spirit 128, mystic_staff 30 fixed)",
+   "core: src/main/java/de/kronwerke/core/obelisk/Obelisk.java"
+  ]
+ },
+ "outlook": {
+  "de": [
+   "Der Chaos Guardian auf der Chaosinsel steht ebenfalls auf der Boss-Liste und wächst mit der Gruppe. Das Portal nach Eternal Starlight öffnest du in {{eternal_starlight/portal}}."
+  ],
+  "en": [
+   "The Chaos Guardian on the Chaos Island is on the boss list too and grows with the group. You open the portal to Eternal Starlight in {{eternal_starlight/portal}}."
+  ],
+  "sources": [
+   "srv/config/kronwerke-common.toml ([bosses] draconicevolution:chaos_guardian)"
+  ]
+ }
+}

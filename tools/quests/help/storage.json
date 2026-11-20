@@ -1,0 +1,840 @@
+{
+ "welcome": {
+  "de": [
+   "Als Nächstes kommt die [[sophisticatedbackpacks:upgrade_base]] ({{storage/upgrade_base}}), auf der jedes Rucksack-Upgrade dieses Kapitels aufbaut. Mehrere Rucksäcke im Inventar machen dich auf diesem Server nicht langsamer, die Strafe dafür ist abgeschaltet.",
+   "Die größeren Rucksäcke aus späteren Stufen darfst du schon tragen und einlagern, nur nicht in die Hand nehmen oder anziehen. Der [[sophisticatedbackpacks:iron_backpack]] aus Stufe 2 entsteht auf Kronwerke aus acht [[create:iron_sheet]] um den Rucksack."
+  ],
+  "en": [
+   "Next comes the [[sophisticatedbackpacks:upgrade_base]] ({{storage/upgrade_base}}), the base of every backpack upgrade in this chapter. Several backpacks in your inventory do not slow you down on this server, that penalty is switched off.",
+   "You may already carry and store the bigger backpacks of later stages, you just cannot hold or wear them. On Kronwerke the [[sophisticatedbackpacks:iron_backpack]] of stage 2 takes eight [[create:iron_sheet]] around the backpack."
+  ],
+  "sources": [
+   "config/sophisticatedbackpacks-server.toml (nerfs.tooManyBackpacksSlowness false)",
+   "kronwerke:round/sophisticatedbackpacks_iron_backpack",
+   "kubejs/data/kronwerke/chapters/stages/stage2.json"
+  ]
+ },
+ "upgrade_base": {
+  "de": [
+   "Du brauchst zwei, weil hier zwei Zweige beginnen: {{storage/pickup}} zum Einsammeln und {{storage/crafting}} für Werkbank, Ofen und Amboss.",
+   "Die meisten fertigen Upgrades lassen sich umbauen: Ein Upgrade für Truhen wird mit 1 Leder und 4 Fäden zum Rucksack-Upgrade, ein Rucksack-Upgrade mit 5 Brettern zum Upgrade für Truhen. So baust du teure Upgrades nicht doppelt."
+  ],
+  "en": [
+   "You need two because two branches start here: {{storage/pickup}} for collecting and {{storage/crafting}} for crafting table, furnace and anvil.",
+   "Most finished upgrades convert: a chest upgrade plus 1 leather and 4 string becomes the backpack version, a backpack upgrade plus 5 planks becomes the chest version. That way you never build an expensive upgrade twice."
+  ],
+  "sources": [
+   "sophisticatedstorage:backpack_pickup_upgrade_from_storage_pickup_upgrade",
+   "sophisticatedstorage:storage_magnet_upgrade_from_backpack_magnet_upgrade"
+  ]
+ },
+ "pickup": {
+  "de": [
+   "Pass beim Bruchstein auf: Zwei Schleich-Rechtsklicks am Obelisken binnen 5 Sekunden, mit einem Item in der Hand, geben alles aus den Inventarreihen ab, Schnellleiste und Nebenhand bleiben. Was das Upgrade in den Rucksack steckt, nimmt dieser Klick **nicht** mit.",
+   "Aus dem Pickup-Upgrade wird später das [[sophisticatedbackpacks:magnet_upgrade]] ({{storage/magnet}}). Die erweiterte Version mit 16 Filterplätzen öffnet in Stufe 2."
+  ],
+  "en": [
+   "Watch your cobblestone: two sneak right clicks at the obelisk within 5 seconds, with an item in hand, hand in everything from your inventory rows, hotbar and offhand stay. What the upgrade puts into the backpack is **not** taken by that click.",
+   "The Pickup Upgrade later becomes the [[sophisticatedbackpacks:magnet_upgrade]] ({{storage/magnet}}). The advanced version with 16 filter slots opens in stage 2."
+  ],
+  "sources": [
+   "core: src/main/java/de/kronwerke/core/obelisk/Obelisk.java (sneak click, 5000 ms, hotbar and offhand stay)",
+   "config/sophisticatedbackpacks-server.toml (pickupUpgrade, advancedPickupUpgrade filterSlots)",
+   "sophisticatedbackpacks:advanced_pickup_upgrade (stage 2)"
+  ]
+ },
+ "magnet": {
+  "de": [
+   "Der Magnet wirkt in jedem Rucksack im Inventar, nicht nur im angezogenen. Das [[sophisticatedbackpacks:advanced_magnet_upgrade]] zieht aus 5 Blöcken und hat 16 statt 9 Filterplätze, es öffnet in Stufe 2.",
+   "Von hier gehen {{storage/deposit}}, {{storage/feeding}} und {{storage/mob_catcher}} weiter."
+  ],
+  "en": [
+   "The magnet works in every backpack in your inventory, not only the one you wear. The [[sophisticatedbackpacks:advanced_magnet_upgrade]] pulls from 5 blocks and has 16 instead of 9 filter slots; it opens in stage 2.",
+   "From here {{storage/deposit}}, {{storage/feeding}} and {{storage/mob_catcher}} continue."
+  ],
+  "sources": [
+   "config/sophisticatedbackpacks-server.toml (magnetUpgrade magnetRange 3, advancedMagnetUpgrade magnetRange 5, nerfs.onlyWornBackpackTriggersUpgrades false)",
+   "sophisticatedbackpacks:advanced_magnet_upgrade (stage 2)"
+  ]
+ },
+ "deposit": {
+  "de": [
+   "Der Filter hat 9 Plätze, die erweiterte Version aus Stufe 2 hat 16. Am meisten bringt das Upgrade vor der Schubladenwand aus {{storage/drawers_4}}: Jede Schublade nimmt nur ihre Sorte, ein Klick pro Front räumt den Rucksack sortiert aus.",
+   "Mit einem Klebrigen Kolben statt des Kolbens entsteht das Gegenstück {{storage/restock}}."
+  ],
+  "en": [
+   "The filter has 9 slots, the advanced version of stage 2 has 16. It pays off most in front of the drawer wall from {{storage/drawers_4}}: each drawer only takes its own kind, so one click per front empties the backpack sorted.",
+   "With a sticky piston instead of the piston you get the counterpart, {{storage/restock}}."
+  ],
+  "sources": [
+   "config/sophisticatedbackpacks-server.toml (depositUpgrade, advancedDepositUpgrade filterSlots)",
+   "sophisticatedbackpacks:restock_upgrade"
+  ],
+  "client": [
+   "Deposit Upgrade inserts into Functional Storage drawers on sneak right click"
+  ]
+ },
+ "stack_starter": {
+  "de": [
+   "Ein Rucksack nimmt höchstens **drei** Stack-Upgrades. Das Starter-Upgrade ist kein Wegwerfteil: Mit 4 Eisenblöcken im Kreuz darum wird es zum [[sophisticatedbackpacks:stack_upgrade_tier_1]] ({{storage/bp_stack_1}}), mit 5 Brettern zu drei [[sophisticatedstorage:stack_upgrade_tier_1_plus]] für Fässer.",
+   "Shulker-Kisten und Bündel stapeln sich auch mit Upgrade nicht."
+  ],
+  "en": [
+   "A backpack takes at most **three** stack upgrades. The starter tier is not wasted later: with 4 iron blocks in a cross around it, it becomes the [[sophisticatedbackpacks:stack_upgrade_tier_1]] ({{storage/bp_stack_1}}), with 5 planks it turns into three [[sophisticatedstorage:stack_upgrade_tier_1_plus]] for barrels.",
+   "Shulker boxes and bundles do not stack even with the upgrade."
+  ],
+  "sources": [
+   "config/sophisticatedbackpacks-server.toml (maxUpgradesPerStorage stack_upgrades|3, stackUpgrade.nonStackableItems)",
+   "sophisticatedbackpacks:stack_upgrade_tier_1_from_starter",
+   "sophisticatedstorage:storage_stack_upgrade_tier_1_plus_from_backpack_stack_upgrade_starter_tier"
+  ]
+ },
+ "bp_stack_1": {
+  "de": [
+   "Hast du das Starter-Upgrade schon, sparst du die Hälfte: Leg es in die Mitte und 4 [[minecraft:iron_block]] oben, unten und an die Seiten, statt acht Blöcke um eine neue Upgrade-Basis.",
+   "Im Lederrucksack ersetzt es das Starter-Upgrade, denn beide wollen den einzigen Platz. Der Eisenrucksack aus Stufe 2 hat zwei Plätze, dann passt ein Arbeits-Upgrade daneben."
+  ],
+  "en": [
+   "If you already have the starter tier, you save half: put it in the middle and 4 [[minecraft:iron_block]] above, below and to the sides, instead of eight blocks around a new upgrade base.",
+   "In the leather backpack it replaces the starter tier, since both want the only slot. The iron backpack of stage 2 has two slots, so a working upgrade fits next to it."
+  ],
+  "sources": [
+   "sophisticatedbackpacks:stack_upgrade_tier_1_from_starter",
+   "config/sophisticatedbackpacks-server.toml (ironBackpack upgradeSlotCount 2)"
+  ]
+ },
+ "crafting": {
+  "de": [
+   "Aus diesem Zweig kommen {{storage/bp_smelting}} und {{storage/bp_anvil}}. Schon in Stufe 1 gibt es außerdem das [[sophisticatedbackpacks:stonecutter_upgrade]] und das [[sophisticatedbackpacks:smithing_upgrade]].",
+   "Im Lederrucksack belegt jedes davon den einzigen Upgrade-Platz, also tausch je nach Arbeit: Werkbank beim Bauen, Stack-Upgrade beim Abbauen."
+  ],
+  "en": [
+   "This branch leads to {{storage/bp_smelting}} and {{storage/bp_anvil}}. Stage 1 also has the [[sophisticatedbackpacks:stonecutter_upgrade]] and the [[sophisticatedbackpacks:smithing_upgrade]].",
+   "In the leather backpack each of them takes the only upgrade slot, so swap by task: crafting while building, stack upgrade while mining."
+  ],
+  "sources": [
+   "sophisticatedbackpacks:stonecutter_upgrade (stage 1)",
+   "sophisticatedbackpacks:smithing_upgrade (stage 1)",
+   "config/sophisticatedbackpacks-server.toml (leatherBackpack upgradeSlotCount 1)"
+  ]
+ },
+ "void": {
+  "de": [
+   "Die Bruchsteinmenge des Ziels ist nicht fest: 20 000 sind der Grundwert, der Server rechnet ihn mit der Zahl aktiver Spieler auf das 0,4 bis 1,5 Fache um. Die echte Zahl zeigt {{start_here/o_scale}}.",
+   "Der Filter hat 9 Plätze, das erweiterte Leere-Upgrade mit 16 öffnet in Stufe 2. Von hier geht es zu {{storage/bp_compacting}}."
+  ],
+  "en": [
+   "The cobblestone amount of the goal is not fixed: 20,000 is the base, and the server scales it by the number of active players to 0.4 to 1.5 times that. The real number is in {{start_here/o_scale}}.",
+   "The filter has 9 slots; the advanced Void Upgrade with 16 opens in stage 2. From here you go on to {{storage/bp_compacting}}."
+  ],
+  "sources": [
+   "config/kronwerke/goals.json (stage1 stone #c:cobblestones base 20000, scale true)",
+   "srv/config/kronwerke-common.toml (minFactor 0.4, maxFactor 1.5)",
+   "config/sophisticatedbackpacks-server.toml (voidUpgrade filterSlots 9)"
+  ]
+ },
+ "feeding": {
+  "de": [
+   "Der Filter mit 9 Plätzen legt fest, was das Upgrade essen darf, die erweiterte Version mit 16 Plätzen kommt in Stufe 2. Wie alle aktiven Upgrades arbeitet es in jedem Rucksack im Inventar.",
+   "Weiter geht es mit {{storage/bp_tank}}."
+  ],
+  "en": [
+   "The 9 slot filter sets what the upgrade may eat; the advanced version with 16 slots comes in stage 2. Like every active upgrade it works in any backpack in your inventory.",
+   "Next is {{storage/bp_tank}}."
+  ],
+  "sources": [
+   "config/sophisticatedbackpacks-server.toml (feedingUpgrade filterSlots 9, advancedFeedingUpgrade 16, nerfs.onlyWornBackpackTriggersUpgrades false)",
+   "sophisticatedbackpacks:advanced_feeding_upgrade (stage 2)"
+  ]
+ },
+ "restock": {
+  "de": [
+   "Der Filter hat 9 Plätze, die erweiterte Version aus Stufe 2 hat 16. Zusammen mit {{storage/refill}} läuft der Vorrat von der Kiste über den Rucksack bis in die Hotbar.",
+   "Danach liest du in {{storage/bp_list}}, welche Upgrades es sonst noch gibt."
+  ],
+  "en": [
+   "The filter has 9 slots, the advanced version of stage 2 has 16. Together with {{storage/refill}} your supplies flow from the chest through the backpack into the hotbar.",
+   "After that {{storage/bp_list}} shows which other upgrades exist."
+  ],
+  "sources": [
+   "config/sophisticatedbackpacks-server.toml (restockUpgrade, advancedRestockUpgrade filterSlots)"
+  ]
+ },
+ "tool_swapper": {
+  "de": [
+   "Die vier Holzwerkzeuge im Rezept werden verbraucht, nimm also keine guten. Die erweiterte Version öffnet in Stufe 2.",
+   "Im Lederrucksack schließen sich Werkzeugtausch und Stack-Upgrade aus, weil es nur einen Upgrade-Platz gibt."
+  ],
+  "en": [
+   "The four wooden tools in the recipe are consumed, so do not use good ones. The advanced version opens in stage 2.",
+   "In the leather backpack the tool swapper and a stack upgrade exclude each other, as there is only one upgrade slot."
+  ],
+  "sources": [
+   "sophisticatedbackpacks:tool_swapper_upgrade",
+   "sophisticatedbackpacks:advanced_tool_swapper_upgrade (stage 2)",
+   "config/sophisticatedbackpacks-server.toml (leatherBackpack upgradeSlotCount 1)"
+  ]
+ },
+ "bp_smelting": {
+  "de": [
+   "Pro Rucksack geht nur **ein** Ofen-Upgrade: Ofen, Räucherofen, Schmelzofen und ihre Auto-Versionen zählen zusammen. Brennstoffverbrauch und Tempo sind auf dem Server genau wie beim normalen Ofen.",
+   "Weiter mit {{storage/bp_auto_smelting}}, das Erz selbst aus dem Rucksack holt."
+  ],
+  "en": [
+   "Only **one** furnace upgrade fits per backpack: furnace, smoker, blast furnace and their auto versions count together. Fuel use and speed are the same as a normal furnace on this server.",
+   "Continue with {{storage/bp_auto_smelting}}, which takes the ore from the backpack by itself."
+  ],
+  "sources": [
+   "config/sophisticatedbackpacks-server.toml (maxUpgradesPerStorage furnace_upgrades|1, smeltingUpgrade smeltingSpeedMultiplier 1.0, fuelEfficiencyMultiplier 1.0)"
+  ],
+  "client": [
+   "smoking, blasting and auto upgrades are in the furnace_upgrades group"
+  ]
+ },
+ "bp_compacting": {
+  "de": [
+   "Im Spiel heißt es [[sophisticatedbackpacks:compacting_upgrade]], sein Filter hat 9 Plätze. Für Fässer und Truhen ist das Erweiterte Presse-Upgrade schon in Stufe 1 offen ({{storage/st_compacting}}), nur die Rucksack-Version wartet auf Stufe 2."
+  ],
+  "en": [
+   "In game it is the [[sophisticatedbackpacks:compacting_upgrade]], its filter has 9 slots. For barrels and chests the Advanced Compacting Upgrade is already open in stage 1 ({{storage/st_compacting}}); only the backpack version waits for stage 2."
+  ],
+  "sources": [
+   "config/sophisticatedbackpacks-server.toml (compactingUpgrade filterSlots 9)",
+   "sophisticatedstorage:advanced_compacting_upgrade (stage 1)",
+   "sophisticatedbackpacks:advanced_compacting_upgrade (stage 2)"
+  ]
+ },
+ "bp_tank": {
+  "de": [
+   "Der Tank fasst 4 000 mB pro Reihe Rucksackplätze, Stack-Upgrades vergrößern ihn mit. Das [[sophisticatedbackpacks:pump_upgrade]] braucht einen eigenen Upgrade-Platz.",
+   "Im Lederrucksack passt also nur eins von beiden. Tank und Pumpe zusammen gehen erst im Eisenrucksack aus Stufe 2 mit zwei Plätzen."
+  ],
+  "en": [
+   "The tank holds 4,000 mB per row of backpack slots, and stack upgrades enlarge it too. The [[sophisticatedbackpacks:pump_upgrade]] needs an upgrade slot of its own.",
+   "So only one of the two fits in the leather backpack. Tank and pump together need the iron backpack of stage 2 with two slots."
+  ],
+  "sources": [
+   "config/sophisticatedbackpacks-server.toml (tankUpgrade capacityPerSlotRow 4000, stackMultiplierRatio 1.0; leatherBackpack upgradeSlotCount 1; ironBackpack 2)",
+   "sophisticatedbackpacks:pump_upgrade"
+  ]
+ },
+ "bp_list": {
+  "de": [
+   "Pro Rucksack gelten Grenzen: höchstens ein Ofen-Upgrade, eine Jukebox und drei Stack-Upgrades.",
+   "Das [[sophisticatedbackpacks:battery_upgrade]] gibt es schon in Stufe 1, die XP-Pumpe erst in Stufe 2, zusammen mit allen erweiterten Upgrades."
+  ],
+  "en": [
+   "Each backpack has limits: at most one furnace upgrade, one jukebox and three stack upgrades.",
+   "The [[sophisticatedbackpacks:battery_upgrade]] is already there in stage 1, the experience pump only in stage 2, together with all advanced upgrades."
+  ],
+  "sources": [
+   "config/sophisticatedbackpacks-server.toml (maxUpgradesPerStorage furnace_upgrades|1, jukebox_upgrades|1, stack_upgrades|3)",
+   "sophisticatedbackpacks:battery_upgrade (stage 1)",
+   "sophisticatedbackpacks:xp_pump_upgrade (stage 2)"
+  ]
+ },
+ "refill": {
+  "de": [
+   "Der Filter hat 6 Plätze, die erweiterte Version aus Stufe 2 hat 12. Mit {{storage/restock}} holst du den Vorrat aus der Kiste in den Rucksack, das Nachfüll-Upgrade verteilt ihn dann in die Hotbar."
+  ],
+  "en": [
+   "The filter has 6 slots, the advanced version of stage 2 has 12. With {{storage/restock}} you pull supplies from the chest into the backpack, and the Refill Upgrade then hands them to your hotbar."
+  ],
+  "sources": [
+   "config/sophisticatedbackpacks-server.toml (refillUpgrade filterSlots 6, advancedRefillUpgrade 12)"
+  ]
+ },
+ "mob_catcher": {
+  "de": [
+   "Ein gefangener Mob belegt Rucksackplätze, je größer, desto mehr. Das einfache Upgrade nimmt Mobs bis zu einem Platzbedarf von 18, feindliche zählen doppelt.",
+   "Leinen für das Rezept machst du aus Fäden und einem Schleimball."
+  ],
+  "en": [
+   "A captured mob takes up backpack slots, the bigger the more. The basic upgrade takes mobs up to a slot cost of 18, and hostile mobs count double.",
+   "The leads for the recipe come from string and a slime ball."
+  ],
+  "sources": [
+   "config/sophisticatedbackpacks-server.toml (mobCatcherUpgrade basicMaxSlotCost 18, hostileMultiplier 2.0)",
+   "minecraft:lead"
+  ],
+  "client": [
+   "how many slots a sheep or cow takes"
+  ]
+ },
+ "bp_anvil": {
+  "de": [
+   "Zwei [[minecraft:anvil]] stecken im Rezept, mit den Barren daneben sind das rund 64 Eisenbarren und ein Diamant. Im Lederrucksack musst du dafür das Stack-Upgrade herausnehmen, erst der Eisenrucksack aus Stufe 2 hat zwei Plätze."
+  ],
+  "en": [
+   "The recipe holds two [[minecraft:anvil]]s; with the ingots beside them that is about 64 iron ingots and a diamond. In the leather backpack you have to take the stack upgrade out for it; only the iron backpack of stage 2 has two slots."
+  ],
+  "sources": [
+   "sophisticatedbackpacks:anvil_upgrade",
+   "minecraft:anvil",
+   "config/sophisticatedbackpacks-server.toml (upgradeSlotCount)"
+  ]
+ },
+ "bp_auto_smelting": {
+  "de": [
+   "Es gilt dieselbe Grenze wie beim Ofen: ein Ofen-Upgrade pro Rucksack, das einfache kommt also heraus. Für Erz gibt es ebenso schon in Stufe 1 das [[sophisticatedbackpacks:auto_blasting_upgrade]]."
+  ],
+  "en": [
+   "The same limit as for the furnace applies: one furnace upgrade per backpack, so the plain one comes out. For ore the [[sophisticatedbackpacks:auto_blasting_upgrade]] is also open in stage 1."
+  ],
+  "sources": [
+   "config/sophisticatedbackpacks-server.toml (maxUpgradesPerStorage furnace_upgrades|1)",
+   "sophisticatedbackpacks:auto_blasting_upgrade (stage 1)"
+  ]
+ },
+ "bp_jukebox": {
+  "de": [
+   "Ein Jukebox-Upgrade pro Rucksack. Die erweiterte Jukebox aus Stufe 2 hat mehrere Plattenplätze und spielt sie nacheinander."
+  ],
+  "en": [
+   "One jukebox upgrade per backpack. The advanced jukebox of stage 2 has several disc slots and plays them one after another."
+  ],
+  "sources": [
+   "config/sophisticatedbackpacks-server.toml (maxUpgradesPerStorage jukebox_upgrades|1, advancedJukeboxUpgrade)",
+   "sophisticatedbackpacks:advanced_jukebox_upgrade (stage 2)"
+  ],
+  "client": [
+   "advanced jukebox plays the discs in sequence"
+  ]
+ },
+ "drawers": {
+  "de": [
+   "Für die Quest zählt nur die **Eichenschublade**. Sie entsteht aus Eichenbrettern oder aus Brettern von Mod-Hölzern; Fichte, Birke und die anderen Vanilla-Hölzer geben eigene Schubladen, die hier nicht zählen.",
+   "Über einen Storage Bus hängst du die Schubladen später an AE2 ({{ae2/storage_bus}})."
+  ],
+  "en": [
+   "The quest only counts the **oak drawer**. It is made from oak planks or from planks of modded woods; spruce, birch and the other vanilla woods give drawers of their own that do not count here.",
+   "Later a storage bus hooks the drawers into AE2 ({{ae2/storage_bus}})."
+  ],
+  "sources": [
+   "functionalstorage:oak_1 (P = functionalstorage:woodless)",
+   "functionalstorage jar: com/buuz135/functionalstorage/recipe/DrawerlessWoodIngredient (planks outside namespace minecraft, plus oak planks)",
+   "functionalstorage:spruce_1"
+  ]
+ },
+ "drawers_2": {
+  "de": [
+   "Auch hier zählen nur Eichenschubladen, also Eichenbretter oder Mod-Bretter. In Stufe 2 vergrößert das [[functionalstorage:copper_upgrade]] jedes Fach auf das 8 Fache, das [[functionalstorage:gold_upgrade]] auf das 16 Fache.",
+   "Von hier zweigt {{storage/framed}} ab."
+  ],
+  "en": [
+   "Again only oak drawers count, so oak or modded planks. In stage 2 the [[functionalstorage:copper_upgrade]] makes every compartment 8 times bigger, the [[functionalstorage:gold_upgrade]] 16 times.",
+   "{{storage/framed}} branches off here."
+  ],
+  "sources": [
+   "functionalstorage:oak_2",
+   "config/functionalstorage/functionalstorage-common.toml (COPPER_MULTIPLIER 8, GOLD_MULTIPLIER 16)",
+   "functionalstorage:copper_upgrade (stage 2)"
+  ]
+ },
+ "drawers_4": {
+  "de": [
+   "Nur Eichenschubladen zählen. Für {{storage/organised}} brauchst du später acht davon, ein Rezept gibt vier.",
+   "Eine leere, ungesperrte Schublade nimmt die erste Sorte an, die ankommt. Wer sie per Trichter füllt, sperrt sie vorher mit {{storage/config_tool}}."
+  ],
+  "en": [
+   "Only oak drawers count. {{storage/organised}} later wants eight of them, and one recipe gives four.",
+   "An empty, unlocked drawer takes the first kind that arrives. If hoppers fill it, lock it first with {{storage/config_tool}}."
+  ],
+  "sources": [
+   "functionalstorage:oak_4 (count 4)",
+   "tools/quests/chapters/storage.py (organised: 8x functionalstorage:oak_4)"
+  ]
+ },
+ "config_tool": {
+  "de": [
+   "Das Werkzeug verbraucht eine Schublade im Rezept. Hier beginnen drei Upgrade-Zweige: {{storage/puller}}, {{storage/drawer_void}} und darüber {{storage/collector}}.",
+   "Gesperrte Schubladen sind Pflicht, sobald Trichter, Upgrades oder Create-Trichter sie befüllen, sonst landet die falsche Sorte im Fach."
+  ],
+  "en": [
+   "The tool uses up one drawer in its recipe. Three upgrade branches start here: {{storage/puller}}, {{storage/drawer_void}} and after that {{storage/collector}}.",
+   "Lock every drawer that hoppers, upgrades or Create funnels fill, or the wrong kind ends up in it."
+  ],
+  "sources": [
+   "functionalstorage:configuration_tool"
+  ]
+ },
+ "puller": {
+  "de": [
+   "Das Upgrade arbeitet auch in Flüssigkeitsschubladen und zieht dort 500 mB pro Takt. Der Takt sind 4 Ticks.",
+   "Als Nächstes kommt {{storage/pusher}} für die Gegenrichtung."
+  ],
+  "en": [
+   "The upgrade also works in fluid drawers and pulls 500 mB per cycle there. A cycle is 4 ticks.",
+   "Next is {{storage/pusher}} for the other direction."
+  ],
+  "sources": [
+   "config/functionalstorage/functionalstorage-common.toml (UPGRADE_TICK 4, UPGRADE_PULL_ITEMS 4, UPGRADE_PULL_FLUID 500)"
+  ]
+ },
+ "pusher": {
+  "de": [
+   "Auch der Pusher bewegt in Flüssigkeitsschubladen 500 mB alle 4 Ticks. Eine Flüssigkeitsschublade mit Pusher füllt so ein Create-Rohr oder einen Tank ohne Pumpe.",
+   "Mit {{storage/redstone_upgrade}} meldet die Schublade dann ihren Füllstand."
+  ],
+  "en": [
+   "The pusher also moves 500 mB every 4 ticks in fluid drawers. A fluid drawer with a pusher fills a Create pipe or tank without a pump.",
+   "With {{storage/redstone_upgrade}} the drawer then reports its fill level."
+  ],
+  "sources": [
+   "config/functionalstorage/functionalstorage-common.toml (UPGRADE_PUSH_FLUID 500, UPGRADE_TICK 4)"
+  ],
+  "client": [
+   "pusher pushes fluid into a Create fluid pipe"
+  ]
+ },
+ "redstone_upgrade": {
+  "de": [
+   "Auf der Create-Seite schaltet eine Kupplung oder ein Getriebeschalter die Welle ab, sobald das Signal kommt ({{create/clutch_gearshift}}). So stoppt eine Anlage von selbst, wenn das Lager voll ist."
+  ],
+  "en": [
+   "On the Create side a clutch or gearshift stops the shaft when the signal arrives ({{create/clutch_gearshift}}). That way a machine stops by itself once storage is full."
+  ],
+  "sources": [
+   "functionalstorage:redstone_upgrade",
+   "create/clutch_gearshift"
+  ]
+ },
+ "framed": {
+  "de": [
+   "Die Rahmen gibt es auch für Flüssigkeit: [[functionalstorage:framed_fluid_1]]. Verkleidete Schubladen zählen nicht für die Eichenschublade-Quests, denn sie sind ein eigenes Item."
+  ],
+  "en": [
+   "Framing also exists for fluid: [[functionalstorage:framed_fluid_1]]. Framed drawers do not count for the oak drawer quests, as they are an item of their own."
+  ],
+  "sources": [
+   "functionalstorage:framed_1",
+   "functionalstorage:framed_fluid_1"
+  ],
+  "client": [
+   "framing a drawer in the crafting grid with outside, inside and trim blocks"
+  ]
+ },
+ "fluid": {
+  "de": [
+   "Puller und Pusher bewegen in Flüssigkeitsschubladen 500 mB alle 4 Ticks. Eine Übersicht, was du wann für Flüssigkeiten nimmst, steht in {{list_transport/fluid_drawer}}.",
+   "Weiter geht es mit {{storage/water_gen}}."
+  ],
+  "en": [
+   "Pullers and pushers move 500 mB every 4 ticks in fluid drawers. An overview of what to use for fluids when is in {{list_transport/fluid_drawer}}.",
+   "Next is {{storage/water_gen}}."
+  ],
+  "sources": [
+   "config/functionalstorage/functionalstorage-common.toml (UPGRADE_PULL_FLUID, UPGRADE_PUSH_FLUID 500)",
+   "functionalstorage:fluid_1"
+  ]
+ },
+ "water_gen": {
+  "de": [
+   "Leg das Upgrade nicht vorschnell ein: Für den Obsidian-Generator aus {{storage/drawer_dripping}} wird es zusammen mit vier Dripping Upgrades verbraucht. Wer Wasser und Obsidian will, baut zwei.",
+   "Die Wassereimer im Rezept kommen leer zurück."
+  ],
+  "en": [
+   "Do not install it too soon: the obsidian generator from {{storage/drawer_dripping}} consumes it together with four Dripping Upgrades. If you want water and obsidian, build two.",
+   "The water buckets in the recipe come back empty."
+  ],
+  "sources": [
+   "functionalstorage:water_generator_upgrade",
+   "functionalstorage:obsidian_upgrade (shapeless: 4x dripping_upgrade, water_generator_upgrade)"
+  ]
+ },
+ "drawer_void": {
+  "de": [
+   "Eine Schublade mit Void Upgrade wirkt nie voll, du siehst also nicht, wie viel schon verloren ging. Setz es in eine gesperrte Schublade ({{storage/config_tool}}), damit nur die gewollte Sorte hineinläuft."
+  ],
+  "en": [
+   "A drawer with a Void Upgrade never looks full, so you do not see how much was already lost. Put it into a locked drawer ({{storage/config_tool}}) so only the kind you want runs in."
+  ],
+  "sources": [
+   "functionalstorage:void_upgrade"
+  ]
+ },
+ "collector": {
+  "de": [
+   "Es sammelt 4 Items pro Takt von 4 Ticks. Zusammen mit {{storage/water_gen}} führt es zu {{storage/drawer_dripping}}."
+  ],
+  "en": [
+   "It collects 4 items per cycle of 4 ticks. Together with {{storage/water_gen}} it leads to {{storage/drawer_dripping}}."
+  ],
+  "sources": [
+   "config/functionalstorage/functionalstorage-common.toml (UPGRADE_COLLECTOR_ITEMS 4, UPGRADE_TICK 4)"
+  ]
+ },
+ "drawer_dripping": {
+  "de": [
+   "Der [[functionalstorage:obsidian_upgrade]] braucht vier Dripping Upgrades und damit vier Lavaeimer, die Eimer bekommst du leer zurück. Spitzen Tropfstein findest du in Tropfsteinhöhlen."
+  ],
+  "en": [
+   "The [[functionalstorage:obsidian_upgrade]] needs four Dripping Upgrades and so four lava buckets; you get the buckets back empty. Pointed dripstone comes from dripstone caves."
+  ],
+  "sources": [
+   "functionalstorage:dripping_upgrade",
+   "functionalstorage:obsidian_upgrade"
+  ]
+ },
+ "barrel": {
+  "de": [
+   "Für die Quest zählt jede Holzsorte, denn alle Fässer sind dasselbe Item. Schneller geht es formlos: ein Vanilla-Fass und ein Hebel.",
+   "Von hier gehen die Aufwertungen ({{storage/copper_tier}}), die Truhen ({{storage/chest}}) und der Tresor ({{storage/vault}}) weiter."
+  ],
+  "en": [
+   "Every wood counts for the quest, as all barrels are the same item. Faster, shapeless: a vanilla barrel and a lever.",
+   "From here the tier upgrades ({{storage/copper_tier}}), the chests ({{storage/chest}}) and the vault ({{storage/vault}}) continue."
+  ],
+  "sources": [
+   "sophisticatedstorage:oak_barrel (wood_type component)",
+   "sophisticatedstorage:spruce_barrel_from_vanilla_barrel"
+  ]
+ },
+ "copper_tier": {
+  "de": [
+   "Du kannst Kupfer auch überspringen: Das [[sophisticatedstorage:basic_to_iron_tier_upgrade]] aus 8 [[create:iron_sheet]] um einen Hebel macht aus dem Holzfass direkt ein Eisenfass.",
+   "Die Quest will aber das Kupfer-Upgrade, und der Weg über Kupfer kostet weniger Eisen."
+  ],
+  "en": [
+   "You can also skip copper: the [[sophisticatedstorage:basic_to_iron_tier_upgrade]] made of 8 [[create:iron_sheet]] around a lever turns a wooden barrel straight into an iron one.",
+   "The quest wants the copper upgrade though, and the copper route costs less iron."
+  ],
+  "sources": [
+   "sophisticatedstorage:basic_to_iron_tier_upgrade",
+   "kubejs/server_scripts/kronwerke/round.js (basic_to_iron_tier_upgrade iron ingots to create:iron_sheet)"
+  ]
+ },
+ "iron_tier": {
+  "de": [
+   "Das Copper to Iron Tier Upgrade braucht **4 Eisenbarren** um einen Hebel, keine Bleche. Eisenbleche will nur das Upgrade von Holz direkt auf Eisen (siehe {{storage/copper_tier}}).",
+   "Ein Kupferfass im Raster mit 4 Eisenbarren im Kreuz geht ebenfalls. Zwei Eisenfässer brauchst du für {{storage/organised}}."
+  ],
+  "en": [
+   "The Copper to Iron Tier Upgrade takes **4 iron ingots** around a lever, not sheets. Iron sheets are only for the upgrade from wood straight to iron (see {{storage/copper_tier}}).",
+   "A copper barrel in the grid with 4 iron ingots in a cross works too. {{storage/organised}} wants two iron barrels."
+  ],
+  "sources": [
+   "sophisticatedstorage:copper_to_iron_tier_upgrade (#c:ingots/iron)",
+   "sophisticatedstorage:iron_barrel_from_copper_barrel",
+   "sophisticatedstorage:basic_to_iron_tier_upgrade (create:iron_sheet)"
+  ]
+ },
+ "storage_upgrade_base": {
+  "de": [
+   "Bei den Truhen-Upgrades sind auch die erweiterten Versionen wie [[sophisticatedstorage:advanced_magnet_upgrade]], [[sophisticatedstorage:advanced_hopper_upgrade]] und [[sophisticatedstorage:advanced_compacting_upgrade]] schon in Stufe 1 offen, die Rucksack-Versionen erst in Stufe 2.",
+   "Hier zweigen {{storage/storage_stack}}, {{storage/st_magnet}} und {{storage/st_compacting}} ab."
+  ],
+  "en": [
+   "Among the chest upgrades even the advanced versions like the [[sophisticatedstorage:advanced_magnet_upgrade]], the [[sophisticatedstorage:advanced_hopper_upgrade]] and the [[sophisticatedstorage:advanced_compacting_upgrade]] are open in stage 1, the backpack versions only in stage 2.",
+   "{{storage/storage_stack}}, {{storage/st_magnet}} and {{storage/st_compacting}} branch off here."
+  ],
+  "sources": [
+   "sophisticatedstorage:advanced_magnet_upgrade, advanced_hopper_upgrade, advanced_compacting_upgrade (stage 1)",
+   "sophisticatedbackpacks:advanced_magnet_upgrade (stage 2)"
+  ]
+ },
+ "storage_stack": {
+  "de": [
+   "Stämme jeder Sorte gehen. Höchstens zwei Stack-Upgrades passen in eine Truhe oder ein Fass, das [[sophisticatedstorage:stack_upgrade_tier_2]] (vierfach) öffnet in Stufe 2.",
+   "Von hier gehen {{storage/hopper}}, {{storage/limited_barrel}} und {{storage/stack_plus}} weiter."
+  ],
+  "en": [
+   "Logs of any kind work. At most two stack upgrades fit into one chest or barrel; the [[sophisticatedstorage:stack_upgrade_tier_2]] (four times) opens in stage 2.",
+   "From here {{storage/hopper}}, {{storage/limited_barrel}} and {{storage/stack_plus}} continue."
+  ],
+  "sources": [
+   "sophisticatedstorage:stack_upgrade_tier_1 (#minecraft:logs)",
+   "config/sophisticatedstorage-server.toml (maxUpgradesPerStorage barrel|stack_upgrades|2, chest|stack_upgrades|2)"
+  ]
+ },
+ "hopper": {
+  "de": [
+   "Das einfache Upgrade bewegt 1 Item alle 8 Ticks, mit 2 Filterplätzen je Richtung. Das [[sophisticatedstorage:advanced_hopper_upgrade]] ist schon in Stufe 1 offen: 4 Items alle 2 Ticks, 4 Filterplätze je Richtung."
+  ],
+  "en": [
+   "The basic upgrade moves 1 item every 8 ticks, with 2 filter slots per direction. The [[sophisticatedstorage:advanced_hopper_upgrade]] is already open in stage 1: 4 items every 2 ticks, 4 filter slots per direction."
+  ],
+  "sources": [
+   "config/sophisticatedstorage-server.toml (hopperUpgrade transferSpeedTicks 8, maxTransferStackSize 1, filter slots 2; advancedHopperUpgrade 2 ticks, 4 items, 4 slots)"
+  ]
+ },
+ "controller": {
+  "de": [
+   "Der Lagerkern verbindet Truhen und Fässer bis 15 Blöcke weit. Weiter weg hilft die Lagerverbindung ({{storage/storage_link}}), Rohre hängst du über {{storage/storage_io}} an.",
+   "Für {{storage/organised}} brauchst du einen Lagerkern."
+  ],
+  "en": [
+   "The storage controller links chests and barrels up to 15 blocks away. For anything further use a storage link ({{storage/storage_link}}); pipes connect through {{storage/storage_io}}.",
+   "{{storage/organised}} wants one storage controller."
+  ],
+  "sources": [
+   "config/sophisticatedstorage-server.toml (controllerRange 15)",
+   "sophisticatedstorage:controller"
+  ]
+ },
+ "chest": {
+  "de": [
+   "Mit 2 [[minecraft:shulker_shell]] oben und unten wird die Truhe zur [[sophisticatedstorage:shulker_box]], die sich wie die Truhe aufwerten lässt. Die Schalen gibt es erst im End ({{the_end/shulker}}).",
+   "Hier zweigen {{storage/packing_tape}} und {{storage/decoration}} ab."
+  ],
+  "en": [
+   "With 2 [[minecraft:shulker_shell]]s above and below, the chest becomes a [[sophisticatedstorage:shulker_box]] that upgrades like the chest. The shells only come from the End ({{the_end/shulker}}).",
+   "{{storage/packing_tape}} and {{storage/decoration}} branch off here."
+  ],
+  "sources": [
+   "sophisticatedstorage:shulker_from_chest",
+   "sophisticatedstorage:oak_chest_from_vanilla_chest"
+  ]
+ },
+ "basic_tier": {
+  "de": [
+   "Im Spiel heißt es [[sophisticatedstorage:basic_tier_upgrade]]. Danach nimmt die umgewandelte Truhe Upgrades und lässt sich wie in {{storage/copper_tier}} weiter aufwerten."
+  ],
+  "en": [
+   "In game it is the [[sophisticatedstorage:basic_tier_upgrade]]. After that the converted chest takes upgrades and can be tiered up further as in {{storage/copper_tier}}."
+  ],
+  "sources": [
+   "sophisticatedstorage:basic_tier_upgrade"
+  ]
+ },
+ "limited_barrel": {
+  "de": [
+   "Jede Variante gibt es in Holz, Kupfer, Eisen und höher, mit denselben Upgrade-Plätzen wie das normale Fass. Die Zahl auf der Front lässt sich färben."
+  ],
+  "en": [
+   "Every variant exists in wood, copper, iron and higher, with the same upgrade slots as the normal barrel. The count on the front can be dyed."
+  ],
+  "sources": [
+   "config/sophisticatedstorage-server.toml (LimitedBarrelI to IV baseSlotLimitMultiplier 32, 16, 10, 8; upgradeSlotCount; limitedBarrelCountDyeingEnabled true)"
+  ]
+ },
+ "stack_plus": {
+  "de": [
+   "Billiger geht es über den Rucksack: Ein [[sophisticatedbackpacks:stack_upgrade_starter_tier]] mit 5 Brettern ergibt gleich **drei** Stack Upgrade Tier 1 Plus. Das kostet gleich viel Kupfer, aber nur eine Upgrade-Basis und keine Holz-Upgrades.",
+   "Höchstens zwei Stack-Upgrades passen in ein Fass."
+  ],
+  "en": [
+   "The backpack route is cheaper: a [[sophisticatedbackpacks:stack_upgrade_starter_tier]] with 5 planks gives **three** Stack Upgrade Tier 1 Plus at once. That costs the same copper, but only one upgrade base and no wood upgrades.",
+   "At most two stack upgrades fit into one barrel."
+  ],
+  "sources": [
+   "sophisticatedstorage:storage_stack_upgrade_tier_1_plus_from_backpack_stack_upgrade_starter_tier (count 3)",
+   "sophisticatedstorage:stack_upgrade_tier_1_plus",
+   "config/sophisticatedstorage-server.toml (barrel|stack_upgrades|2)"
+  ]
+ },
+ "storage_io": {
+  "de": [
+   "I/O, Input und Output wandelst du formlos ineinander um. Laut Tooltip ist nur der Storage Input auf wenig Serverlast ausgelegt, für reine Zufuhr nimm also ihn."
+  ],
+  "en": [
+   "I/O, input and output convert into each other shapeless. According to its tooltip only the Storage Input is built for low server load, so use it for plain intake."
+  ],
+  "sources": [
+   "minecraft:storage_input_from_io",
+   "minecraft:storage_io_from_output",
+   "sophisticatedstorage lang (block.sophisticatedstorage.storage_input.tooltip)"
+  ]
+ },
+ "storage_link": {
+  "de": [
+   "Das [[sophisticatedstorage:storage_tool]] wechselt seinen Modus mit Schleichen und Mausrad: Verbinden, Sperren, und das Ein- und Ausblenden von Anzahl, Stufe, Upgrades und Füllstand.",
+   "Die formlose Variante aus Lagerkern und Enderperle gibt drei Verbindungen auf einmal."
+  ],
+  "en": [
+   "The [[sophisticatedstorage:storage_tool]] changes mode with sneak and mouse wheel: linking, locking, and showing or hiding counts, tiers, upgrades and fill levels.",
+   "The shapeless recipe from a storage controller and an ender pearl gives three links at once."
+  ],
+  "sources": [
+   "sophisticatedstorage lang (item.sophisticatedstorage.storage_tool.*)",
+   "sophisticatedstorage:storage_link_from_controller (count 3)"
+  ]
+ },
+ "packing_tape": {
+  "de": [
+   "Ohne Band verweigert eine Truhe das Abbauen, wenn mehr als 200 Item-Stapel herausfallen würden. Mit Schleichen geht es trotzdem, dann liegt alles auf dem Boden."
+  ],
+  "en": [
+   "Without tape a chest refuses to break if more than 200 item stacks would drop out. Sneaking still breaks it, and then everything lies on the floor."
+  ],
+  "sources": [
+   "config/sophisticatedstorage-server.toml (tooManyItemEntityDrops 200)"
+  ]
+ },
+ "tiers": {
+  "de": [
+   "Pro Truhe oder Fass gelten höchstens zwei Stack-Upgrades und je ein Ofen- und Jukebox-Upgrade, im Rucksack drei Stack-Upgrades. Die Shulker-Kisten von Sophisticated Storage haben dieselben Stufen wie die Truhen."
+  ],
+  "en": [
+   "Each chest or barrel takes at most two stack upgrades plus one furnace and one jukebox upgrade; a backpack takes three stack upgrades. Sophisticated Storage shulker boxes have the same tiers as the chests."
+  ],
+  "sources": [
+   "config/sophisticatedstorage-server.toml (maxUpgradesPerStorage, ShulkerBox tiers 27 to 132)",
+   "config/sophisticatedbackpacks-server.toml (stack_upgrades|3)"
+  ]
+ },
+ "st_magnet": {
+  "de": [
+   "Das Erweiterte Magnet-Upgrade für Truhen ist schon in Stufe 1 offen, beim Rucksack erst in Stufe 2. Hast du einen Rucksack-Magneten übrig, macht er mit 5 Brettern das Truhen-Upgrade ohne neue Basis."
+  ],
+  "en": [
+   "The Advanced Magnet Upgrade for chests is open in stage 1 already, for backpacks only in stage 2. If you have a spare backpack magnet, it becomes the chest version with 5 planks, no new base needed."
+  ],
+  "sources": [
+   "sophisticatedstorage:advanced_magnet_upgrade (stage 1)",
+   "sophisticatedstorage:storage_magnet_upgrade_from_backpack_magnet_upgrade",
+   "config/sophisticatedstorage-server.toml (magnetUpgrade magnetRange 3, advancedMagnetUpgrade 5)"
+  ]
+ },
+ "st_compacting": {
+  "de": [
+   "Das [[sophisticatedstorage:advanced_compacting_upgrade]] für 3x3-Rezepte ist für Truhen und Fässer schon in Stufe 1 offen. Der Filter des einfachen hat 9 Plätze, des erweiterten 16.",
+   "Als Nächstes kommt {{storage/compression}}."
+  ],
+  "en": [
+   "The [[sophisticatedstorage:advanced_compacting_upgrade]] for 3x3 recipes is already open for chests and barrels in stage 1. The basic one has 9 filter slots, the advanced one 16.",
+   "Next comes {{storage/compression}}."
+  ],
+  "sources": [
+   "sophisticatedstorage:advanced_compacting_upgrade (stage 1)",
+   "config/sophisticatedstorage-server.toml (compactingUpgrade filterSlots 9, advancedCompactingUpgrade 16)"
+  ]
+ },
+ "compression": {
+  "de": [
+   "Der Server gibt ihm auch Blöcke frei, die sich per Rezept nicht zerlegen lassen: Glowstone, Quarzblock, Ton, Schneeblock, Ziegel, Netherziegel, Netherwarzenblock, Melone, Packeis und Blaueis."
+  ],
+  "en": [
+   "The server also lets it split blocks that have no uncrafting recipe: glowstone, quartz block, clay, snow block, bricks, nether bricks, nether wart block, melon, packed ice and blue ice."
+  ],
+  "sources": [
+   "config/sophisticatedstorage-server.toml (compressionUpgrade maxNumberOfSlots 5, additionalDecompressibleItems)"
+  ]
+ },
+ "decoration": {
+  "de": [
+   "Der Pinsel verbraucht beim Streichen die eingestellten Materialien aus deinem Inventar. Fehlt etwas, zeigt er an, was."
+  ],
+  "en": [
+   "The paintbrush uses up the set materials from your inventory when painting. If something is missing, it shows what."
+  ],
+  "sources": [
+   "sophisticatedstorage lang (item.sophisticatedstorage.paintbrush.overlay.missing_items)"
+  ],
+  "client": [
+   "paintbrush consumes materials from the inventory"
+  ]
+ },
+ "vault": {
+  "de": [
+   "Von Hand geht es doch: Die [[create:item_hatch]] ({{create/item_hatch}}) am Tresor legt per Schleich-Rechtsklick alles außerhalb der Hotbar hinein. Herausholen bleibt Sache von Trichtern und Armen.",
+   "Größer wird er in {{storage/vault_big}}."
+  ],
+  "en": [
+   "By hand it does work: an [[create:item_hatch]] ({{create/item_hatch}}) on the vault puts in everything outside your hotbar on sneak right click. Taking out stays a job for funnels and arms.",
+   "It grows in {{storage/vault_big}}."
+  ],
+  "sources": [
+   "create:crafting/kinetics/item_vault",
+   "config/create-server.toml (vaultCapacity 20)",
+   "create:crafting/logistics/item_hatch"
+  ]
+ },
+ "vault_big": {
+  "de": [
+   "Die Quest zählt neun Tresore im Inventar, nicht verbaute. Hak sie ab, bevor du sie aufstellst.",
+   "Ein Tresor fasst 20 Stapel pro Block. Neun Blöcke als 3 x 3 x 1 sind 180 Stapel, die volle Größe erreichst du erst mit mehr Tresoren."
+  ],
+  "en": [
+   "The quest counts nine vaults in your inventory, not placed ones. Tick it off before you set them up.",
+   "A vault holds 20 stacks per block. Nine blocks as 3 x 3 x 1 make 180 stacks; the full size needs more vaults."
+  ],
+  "sources": [
+   "config/create-server.toml (vaultCapacity 20)",
+   "tools/quests/chapters/storage.py (vault_big: item task create:item_vault x9)"
+  ]
+ },
+ "trash": {
+  "de": [
+   "Am Obelisken gibst du so ab: Item in die Hand, zweimal Schleich-Rechtsklick binnen 5 Sekunden. Das nimmt nur die Inventarreihen, Schnellleiste und Nebenhand bleiben ({{start_here/o_deposit}}).",
+   "Ein Fehlgriff ist nicht verloren: Die letzten gelöschten Items holst du im Fenster der Tonne zurück."
+  ],
+  "en": [
+   "This is how you hand in at the obelisk: item in hand, two sneak right clicks within 5 seconds. It only takes your inventory rows; hotbar and offhand stay ({{start_here/o_deposit}}).",
+   "A slip is not lost: you can take the last deleted items back out in the trash can's screen."
+  ],
+  "sources": [
+   "core: src/main/java/de/kronwerke/core/obelisk/Obelisk.java (sneak click, 5000 ms, hotbar and offhand stay)",
+   "config/trashcans-common.toml (retrieveDeletedItems true)"
+  ],
+  "client": [
+   "where the retrieve list shows in the trash can screen"
+  ]
+ },
+ "liquid_trash": {
+  "de": [
+   "Sie löscht auch Gase von Mekanism. Radioaktiven Abfall nimmt sie auf diesem Server nicht an, den musst du lagern."
+  ],
+  "en": [
+   "It also voids Mekanism gases. On this server it refuses radioactive waste, which you have to store."
+  ],
+  "sources": [
+   "trashcans lang (trashcans.liquid_trash_can.info)",
+   "config/trashcans-common.toml (allowVoidingNuclearWaste false)"
+  ]
+ },
+ "ultimate_trash": {
+  "de": [
+   "Die Energy Trash Can hat ein einstellbares Limit in FE/t, sie muss also nicht alles schlucken. Die Ultimate Trash Can hat getrennte Filter für Items und Flüssigkeiten."
+  ],
+  "en": [
+   "The Energy Trash Can has an adjustable limit in FE/t, so it does not have to swallow everything. The Ultimate Trash Can has separate filters for items and fluids."
+  ],
+  "sources": [
+   "trashcans:ultimate_trash_can",
+   "trashcans lang (trashcans.gui.energy_trash_can.limit, ultimate_trash_can.item_filter, liquid_filter)"
+  ]
+ },
+ "sack": {
+  "de": [
+   "Statt Flachs gehen auch 7 [[farmersdelight:canvas]] im selben Muster. Mehr als zwei Säcke im Inventar machen dich langsamer, jedes weitere Paar verstärkt den Effekt."
+  ],
+  "en": [
+   "Instead of flax, 7 [[farmersdelight:canvas]] in the same pattern work too. More than two sacks in your inventory slow you down, and each further pair makes it stronger."
+  ],
+  "sources": [
+   "supplementaries:sack_3",
+   "config/supplementaries-common.toml (sack slots 9, sack_penalty true, sack_increment 2)"
+  ]
+ },
+ "organised": {
+  "de": [
+   "Bei den acht 2x2-Schubladen zählen nur **Eichenschubladen**. Die Quest prüft dein Inventar, verbaute Blöcke zählen nicht; nimm alles zum Abhaken einmal mit.",
+   "Danach liest du in {{storage/outlook}}, was in Stufe 2 und 3 dazukommt."
+  ],
+  "en": [
+   "Only **oak drawers** count for the eight 2x2 drawers. The quest checks your inventory, placed blocks do not count; carry everything once to tick it off.",
+   "Then {{storage/outlook}} shows what stages 2 and 3 add."
+  ],
+  "sources": [
+   "tools/quests/chapters/storage.py (organised item tasks)",
+   "functionalstorage:oak_4"
+  ]
+ },
+ "outlook": {
+  "de": [
+   "Auf Kronwerke brauchen die Compacting Drawer zwei Mechanische Pressen von Create statt Kolben, der Storage Controller ein Andesitgehäuse und einen Quarzblock.",
+   "Die Ender Drawer aus Stufe 3 arbeiten über alle Server: Dieselbe Frequenz ist im Haupt-, Nether-, End- und Farmwelt-Server dieselbe Schublade, der Inhalt liegt auf dem Hauptserver."
+  ],
+  "en": [
+   "On Kronwerke the compacting drawer takes two Create mechanical presses instead of pistons, and the storage controller an andesite casing and a quartz block.",
+   "The ender drawers of stage 3 work across all servers: the same frequency is the same drawer on the main, Nether, End and farm world server, with the contents kept on main."
+  ],
+  "sources": [
+   "functionalstorage:compacting_drawer",
+   "functionalstorage:storage_controller",
+   "kubejs/server_scripts/kronwerke/round.js",
+   "core/README.md (The network, Functional Storage)"
+  ]
+ }
+}

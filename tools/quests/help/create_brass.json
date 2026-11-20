@@ -1,0 +1,1137 @@
+{
+ "welcome": {
+  "de": [
+   "Sobald Stufe 2 offen ist, bekommt jeder Spieler ein Startpaket mit 16 [[create:brass_ingot]], einem [[create:blaze_burner]], einem [[ars_nouveau:source_jar]] und 8 Manaperlen. Wer erst später dazukommt, bekommt es beim nächsten Einloggen. Damit ist diese Quest sofort erledigt, und der Brenner zählt später für {{create_brass/blaze_burner}}.",
+   "Die Mengen des Obelisken gelten für 30 aktive Spieler und werden mit dem 0,4 bis 1,5-Fachen umgerechnet: 800 bis 3 000 Messingbarren und 60 bis 225 Präzisionsgetriebe. Die 8 Messingherzen bleiben fest. Wie das geht, steht in {{start_here/o_scale}}."
+  ],
+  "en": [
+   "Once stage 2 opens, every player gets a starter kit with 16 [[create:brass_ingot]], one [[create:blaze_burner]], one [[ars_nouveau:source_jar]] and 8 mana pearls. Whoever joins later gets it at their next login. That completes this quest right away, and the burner counts later for {{create_brass/blaze_burner}}.",
+   "The obelisk amounts are for 30 active players and get scaled by 0.4 to 1.5: 800 to 3,000 brass ingots and 60 to 225 precision mechanisms. The 8 brass hearts stay fixed. {{start_here/o_scale}} explains how."
+  ],
+  "sources": [
+   "config/kronwerke/goals.json (stage1 starterKit, stage2 pillars)",
+   "core: src/main/java/de/kronwerke/core/goal/GoalManager.java (reveal, kits on login)",
+   "config/kronwerke-common.toml (basePlayers 30, minFactor 0.4, maxFactor 1.5)"
+  ]
+ },
+ "zinc": {
+  "de": [
+   "[[create:zinc_ore]] liegt auch in der Farmwelt, siehe {{start_here/s_zinc}}. Rohzink zu zerkleinern bringt kaum etwas: ein [[create:crushed_raw_zinc]] gibt gewaschen 9 Zinkklumpen, also wieder genau einen Barren, dazu etwas Erfahrung und mit 25 Prozent Schießpulver.",
+   "Mehr Zink holst du aus Erzblöcken, die du mit Behutsamkeit abbaust und zwischen Mahlwerkrädern zerkleinerst ({{create_brass/ore_processing}})."
+  ],
+  "en": [
+   "[[create:zinc_ore]] also generates in the farm world, see {{start_here/s_zinc}}. Crushing raw zinc gains you little: one [[create:crushed_raw_zinc]] washes into 9 zinc nuggets, so again exactly one ingot, plus some experience and a 25 percent chance of gunpowder.",
+   "You get more zinc from ore blocks mined with Silk Touch and crushed between crushing wheels ({{create_brass/ore_processing}})."
+  ],
+  "sources": [
+   "create:crushing/raw_zinc",
+   "create:splashing/crushed_raw_zinc",
+   "create:crushing/zinc_ore"
+  ]
+ },
+ "source_gems": {
+  "de": [
+   "In der [[ars_nouveau:imbuement_chamber]] wird ein [[minecraft:amethyst_shard]] oder ein Lapislazuli für 500 Quelle zu einem [[ars_nouveau:source_gem]]. Die Kammer zieht die Quelle aus Quellgläsern in ihrer Nähe.",
+   "Jeder [[create:empty_blaze_burner]] kostet zwei Juwelen, und für Mixer, Kessel und Messingherzen brauchst du bald mehrere Brenner. Lohnt sich also, einen Vorrat anzulegen oder mit einem Magier zu tauschen."
+  ],
+  "en": [
+   "In the [[ars_nouveau:imbuement_chamber]] an [[minecraft:amethyst_shard]] or a lapis lazuli turns into a [[ars_nouveau:source_gem]] for 500 source. The chamber draws the source from source jars nearby.",
+   "Every [[create:empty_blaze_burner]] costs two gems, and mixers, boilers and brass hearts soon need several burners. Worth keeping a stock or trading with a mage."
+  ],
+  "sources": [
+   "ars_nouveau:imbuement_amethyst",
+   "ars_nouveau:imbuement_lapis",
+   "kronwerke:empty_blaze_burner"
+  ],
+  "client": [
+   "Imbuement Chamber pulls source from source jars nearby"
+  ]
+ },
+ "nether": {
+  "de": [
+   "Beides baust du einfach im Nether ab. Netherrack brauchst du später viel öfter als hier: einen Block pro Lohenbrenner und als [[create:cinder_flour]] für jeden Lohenkuchen ({{create_brass/cinder_flour}}).",
+   "Den Weg zu Festung und Lohen beschreiben {{nether/fortress}} und {{nether/blaze}}."
+  ],
+  "en": [
+   "You simply mine both in the Nether. You will need netherrack far more often later: one block per blaze burner and as [[create:cinder_flour]] for every blaze cake ({{create_brass/cinder_flour}}).",
+   "{{nether/fortress}} and {{nether/blaze}} cover the way to fortresses and blazes."
+  ],
+  "sources": [
+   "kronwerke:empty_blaze_burner",
+   "create:crushing/netherrack"
+  ]
+ },
+ "empty_burner": {
+  "de": [
+   "Das Rezept steht so in tech_and_magic.js und gilt nur auf Kronwerke. [[create:iron_sheet]] presst die Mechanische Presse aus Eisenbarren, zwei [[ars_nouveau:source_gem]] kommen aus {{create_brass/source_gems}}.",
+   "Den ersten Lohenbrenner hast du schon aus dem Startpaket. Jeder weitere beginnt hier, gefüllt wird er in {{create_brass/blaze_burner}}."
+  ],
+  "en": [
+   "This recipe comes from tech_and_magic.js and is a Kronwerke change. The mechanical press makes [[create:iron_sheet]] from iron ingots, the two [[ars_nouveau:source_gem]] come from {{create_brass/source_gems}}.",
+   "Your first blaze burner already came in the starter kit. Every further one starts here and gets its blaze in {{create_brass/blaze_burner}}."
+  ],
+  "sources": [
+   "kronwerke:empty_blaze_burner",
+   "kubejs/server_scripts/tech_and_magic.js",
+   "config/kronwerke/goals.json (stage1 starterKit)"
+  ]
+ },
+ "blaze_burner": {
+  "de": [
+   "Der Lohenbrenner aus dem Startpaket zählt, sobald diese Quest offen ist. Weitere Brenner gibt es nur so: Rechtsklick mit dem [[create:empty_blaze_burner]] auf eine Lohe oder einen Lohenspawner, eine Herstellung gibt es nicht.",
+   "Laut Ponder fütterst du ihn automatisch mit einem Einsatzgerät oder einem Mechanischen Arm. Ohne Festung in der Nähe liefert Lohen-Spawnflüssigkeit neue Lohen ({{create_addons/blaze_fluid}})."
+  ],
+  "en": [
+   "The blaze burner from the starter kit counts as soon as this quest is open. Further burners only come this way: right click a blaze or a blaze spawner with the [[create:empty_blaze_burner]]; there is no crafting recipe.",
+   "According to the Ponder scene you feed it automatically with a deployer or a mechanical arm. Without a fortress nearby, blaze spawn fluid gives you new blazes ({{create_addons/blaze_fluid}})."
+  ],
+  "sources": [
+   "create: ponder lang empty_blaze_burner, blaze_burner (text_4: Deployers or Mechanical Arms)",
+   "recipe dump: no recipe makes create:blaze_burner",
+   "create: BlazeBurnerBlockEntity registers no item capability"
+  ],
+  "client": [
+   "whether a funnel can insert fuel into a blaze burner (the quest text says so; the class has no item handler)"
+  ]
+ },
+ "blaze_powder": {
+  "de": [
+   "Zwischen Mahlwerkrädern gibt eine [[minecraft:blaze_rod]] im Schnitt 3,75 Staub statt 2. Für die 16 Staub reichen dort also gut vier Ruten, an der Werkbank brauchst du acht.",
+   "Im erhitzten Mixer kostet jeder Messingbarren einen [[minecraft:blaze_powder]]. Überhitzt fällt der Staub weg ({{create_brass/brass_superheated}})."
+  ],
+  "en": [
+   "Between crushing wheels one [[minecraft:blaze_rod]] gives 3.75 powder on average instead of 2. So a little over four rods cover the 16 powder there; at the crafting table you need eight.",
+   "In a heated mixer every brass ingot costs one [[minecraft:blaze_powder]]. Superheated, the powder is not needed ({{create_brass/brass_superheated}})."
+  ],
+  "sources": [
+   "create:crushing/blaze_rod",
+   "kronwerke:create/brass_ingot_heated"
+  ]
+ },
+ "brass_mixing": {
+  "de": [
+   "Für 64 Barren brauchst du 128 [[minecraft:copper_ingot]], 64 [[create:zinc_ingot]] und 64 [[minecraft:blaze_powder]]. Der Mixer braucht Rotation und mindestens einen **erhitzten** Brenner; ein nur glimmender reicht nicht.",
+   "Das Rezept nimmt jeden Kupfer und Zinkbarren aus den Tags c:ingots/copper und c:ingots/zinc. Mit Lohenkuchen wird es doppelt so ergiebig ({{create_brass/brass_superheated}})."
+  ],
+  "en": [
+   "64 ingots take 128 [[minecraft:copper_ingot]], 64 [[create:zinc_ingot]] and 64 [[minecraft:blaze_powder]]. The mixer needs rotation and at least one **heated** burner; a smouldering one is not enough.",
+   "Any copper and zinc ingot in the same tags works, the recipe asks for c:ingots/copper and c:ingots/zinc. With blaze cakes you get twice as much ({{create_brass/brass_superheated}})."
+  ],
+  "sources": [
+   "kronwerke:create/brass_ingot_heated",
+   "kubejs/server_scripts/kronwerke/create.js"
+  ]
+ },
+ "brass_casing": {
+  "de": [
+   "Das klappt mit jedem entrindeten Stamm und jedem entrindeten Holz, und ein [[create:deployer]] mit Messingbarren erledigt es am Band. Jeder [[create:brass_casing]] kostet einen Barren.",
+   "Rahmen stecken in Handwerkseinheiten, Arm, Anzeige-Link, Schlauem Beobachter und im Messingherz. Für die Botaniker liegt einer unter dem Manapool ({{botania_runes/mana_pearl}}), zwei gehören in die {{botania_runes/plate}}."
+  ],
+  "en": [
+   "It works with any stripped log and any stripped wood, and a [[create:deployer]] holding brass ingots does it on a belt. Each [[create:brass_casing]] costs one ingot.",
+   "Casings go into mechanical crafters, the arm, the display link, the smart observer and the brass heart. For the botanists one sits under the mana pool ({{botania_runes/mana_pearl}}) and two go into the {{botania_runes/plate}}."
+  ],
+  "sources": [
+   "create:item_application/brass_casing_from_log",
+   "create:item_application/brass_casing_from_wood",
+   "kronwerke:magic/mana_pearl",
+   "kronwerke:terrestrial_agglomeration_plate"
+  ]
+ },
+ "brass_sheet": {
+  "de": [
+   "Die Mechanische Presse arbeitet über einem Depot oder einem Band, ein Barren gibt ein [[create:brass_sheet]]. Jedes Präzisionsgetriebe kostet im Schnitt 1,25 Bleche, dazu brauchen Messing Hand, Arm, Schlauer Schacht und viele Addon-Teile welche."
+  ],
+  "en": [
+   "The mechanical press works over a depot or a belt, one ingot gives one [[create:brass_sheet]]. Every precision mechanism costs 1.25 sheets on average, and the brass hand, the arm, the smart chute and many add-on parts need them too."
+  ],
+  "sources": [
+   "create:pressing/brass_ingot",
+   "kronwerke:create/precision_mechanism"
+  ]
+ },
+ "rose_quartz": {
+  "de": [
+   "Für die 8 [[create:rose_quartz]] sind das 64 [[minecraft:redstone]] und 8 [[minecraft:quartz]]. Mekanisms Metallurgische Infusionsanlage macht ihn auch aus Quarz mit Redstone als Infusion.",
+   "Rosenquarz ist der erste Schritt zur Elektronenröhre ({{create_brass/electron_tube}}), und die wird schnell knapp."
+  ],
+  "en": [
+   "The 8 [[create:rose_quartz]] take 64 [[minecraft:redstone]] and 8 [[minecraft:quartz]]. Mekanism's Metallurgic Infuser also makes it from quartz with redstone as infusion.",
+   "Rose quartz is the first step to the electron tube ({{create_brass/electron_tube}}), and tubes run short fast."
+  ],
+  "sources": [
+   "create:crafting/materials/rose_quartz",
+   "createaddition:compat/mekanism/rose_quartz_metallurgic_infusing"
+  ]
+ },
+ "polish": {
+  "de": [
+   "[[create:sand_paper]] nutzt sich ab, nimm ein paar mehr mit. Am Band hält ein [[create:deployer]] das Papier über dem Rosenquarz.",
+   "Der [[create_enchantment_industry:mechanical_grindstone]] kann laut Ponder alles, was Schmirgelpapier kann ({{create_brass/grindstone}}). Mekanisms Anreicherungskammer macht aus einem [[create:rose_quartz]] ebenfalls einen polierten."
+  ],
+  "en": [
+   "[[create:sand_paper]] wears out, so take a few. On a belt a [[create:deployer]] holds the paper over the rose quartz.",
+   "According to its Ponder scene the [[create_enchantment_industry:mechanical_grindstone]] does everything sand paper does ({{create_brass/grindstone}}). Mekanism's Enrichment Chamber also turns a [[create:rose_quartz]] into a polished one."
+  ],
+  "sources": [
+   "create:sandpaper_polishing/rose_quartz",
+   "createaddition:compat/mekanism/rose_quartz_enriching",
+   "create-enchantment-industry: lang ponder.mechanical_grindstone.extra"
+  ]
+ },
+ "electron_tube": {
+  "de": [
+   "Ein Rezept gibt eine Röhre, und das Präzisionsgetriebe frisst im Schnitt 3,75 davon. Für 16 Röhren brauchst du also 16 [[create:polished_rose_quartz]] und 16 [[create:iron_sheet]].",
+   "In Mekanisms Metallurgischer Infusionsanlage wird aus einer [[create:electron_tube]] und Redstone der Einfache Steuerschaltkreis ({{mekanism/circuit}}). Plan früh die {{create_brass/tube_line}}."
+  ],
+  "en": [
+   "One recipe gives one tube, and the precision mechanism eats 3.75 of them on average. So 16 tubes take 16 [[create:polished_rose_quartz]] and 16 [[create:iron_sheet]].",
+   "In Mekanism's Metallurgic Infuser an [[create:electron_tube]] and redstone become the Basic Control Circuit ({{mekanism/circuit}}). Plan the {{create_brass/tube_line}} early."
+  ],
+  "sources": [
+   "create:crafting/materials/electron_tube",
+   "kronwerke:create/precision_mechanism",
+   "kronwerke:tech/basic_control_circuit"
+  ]
+ },
+ "brass_hand": {
+  "de": [
+   "Drei Hände kosten 12 [[create:brass_sheet]] und 3 [[create:andesite_alloy]]. Du brauchst sie für die drei Einsatzgeräte in {{create_brass/deployer}}, später auch für den Extendo Griff."
+  ],
+  "en": [
+   "Three hands cost 12 [[create:brass_sheet]] and 3 [[create:andesite_alloy]]. You need them for the three deployers in {{create_brass/deployer}}, later also for the extendo grip."
+  ],
+  "sources": [
+   "create:crafting/kinetics/brass_hand",
+   "create:mechanical_crafting/extendo_grip"
+  ]
+ },
+ "deployer": {
+  "de": [
+   "Das Einsatzgerät macht auch Item-Anwendungen: Messing auf entrindeten Stamm gibt einen Messingrahmen, Zink auf Andesitgehäuse das Leitfähige Gehäuse ({{create_brass/pg_casing}}), eine Welle mit Brettern ein [[create:cogwheel]].",
+   "Am Obelisken kann es nicht für dich abgeben: Maschinen weist er ab, auch wenn sie wie ein Spieler klicken."
+  ],
+  "en": [
+   "The deployer also does item application: brass on a stripped log gives a brass casing, zinc on an andesite casing the conductive casing ({{create_brass/pg_casing}}), planks on a shaft a [[create:cogwheel]].",
+   "It cannot hand in at the obelisk for you: the obelisk turns machines and their fake players away."
+  ],
+  "sources": [
+   "create:item_application/brass_casing_from_log",
+   "powergrid:item_application/conductive_casing",
+   "create:deploying/cogwheel",
+   "core: src/main/java/de/kronwerke/core/obelisk/Obelisk.java (fake players turned away)"
+  ]
+ },
+ "incomplete": {
+  "de": [
+   "Die Reihenfolge ist fest: [[create:cogwheel]], [[create:electron_tube]], ein Eisenklumpen, dann die Presse. Schon nach dem ersten Schritt ist das Blech ein [[create:incomplete_precision_mechanism]], damit ist diese Quest erledigt.",
+   "Jeder Eisenklumpen im Tag c:nuggets/iron geht. Die Messingschleuse mit Filter ({{create_brass/brass_funnel}}) sorgt dafür, dass jedes Einsatzgerät nur sein eigenes Teil bekommt."
+  ],
+  "en": [
+   "The order is fixed: [[create:cogwheel]], [[create:electron_tube]], an iron nugget, then the press. After the very first step the sheet is an [[create:incomplete_precision_mechanism]], which completes this quest.",
+   "Any iron nugget in the tag c:nuggets/iron works. A brass funnel with a filter ({{create_brass/brass_funnel}}) makes sure every deployer gets only its own part."
+  ],
+  "sources": [
+   "kronwerke:create/precision_mechanism",
+   "kubejs/server_scripts/kronwerke/create.js"
+  ]
+ },
+ "precision": {
+  "de": [
+   "Eine Runde sind vier Schritte, drei Runden also zwölf Arbeitsschritte an denselben vier Stationen. Fällt ein unfertiges Teil vom Band, leg es einfach wieder auf: es merkt sich, wie weit es ist.",
+   "Den Schrott nimmst du wieder mit: neun [[create:brass_nugget]] ergeben einen Barren, das [[create:cogwheel]] geht zurück an Einsatzgerät 1."
+  ],
+  "en": [
+   "One loop is four steps, so three loops are twelve steps at the same four stations. If an incomplete part drops off the belt, just put it back: it remembers how far it got.",
+   "Keep the scrap: nine [[create:brass_nugget]] make an ingot, and the [[create:cogwheel]] goes back to deployer 1."
+  ],
+  "sources": [
+   "kronwerke:create/precision_mechanism",
+   "create:crafting/materials/brass_ingot_from_compacting"
+  ],
+  "client": [
+   "incomplete precision mechanism keeps its progress when taken off and put back on the belt"
+  ]
+ },
+ "precision_line": {
+  "de": [
+   "Für 64 Getriebe rechnest du im Schnitt mit 80 [[create:brass_sheet]] und je 240 Zahnrädern, Röhren und Eisenklumpen. Eisenklumpen liefert die Erzwäsche: ein [[create:crushed_raw_iron]] gibt gewaschen 9 Klumpen und mit 75 Prozent Redstone.",
+   "Die Quest nimmt nichts weg. Ans Ziel kommen die Getriebe erst, wenn du sie selbst am Obelisken abgibst ({{create_brass/brass_engine}})."
+  ],
+  "en": [
+   "For 64 mechanisms count on 80 [[create:brass_sheet]] and 240 each of cogwheels, tubes and iron nuggets on average. Ore washing supplies the nuggets: one [[create:crushed_raw_iron]] washes into 9 nuggets plus redstone at 75 percent.",
+   "The quest takes nothing away. The mechanisms only count for the goal once you hand them in at the obelisk yourself ({{create_brass/brass_engine}})."
+  ],
+  "sources": [
+   "kronwerke:create/precision_mechanism",
+   "create:splashing/crushed_raw_iron",
+   "tools/quests/ftbq.py (task_item consume False)"
+  ]
+ },
+ "crafter": {
+  "de": [
+   "Auf Kronwerke kostet das Rezept ein [[create:precision_mechanism]] statt einer Elektronenröhre, gibt dafür drei Einheiten. Die neun Einheiten der Quest sind also drei Getriebe, drei Messingrahmen und drei Werkbänke.",
+   "EMI zeigt alle Rezepte, die nur hier gehen, als Mechanisches Handwerk: Mahlwerkrad, Kartoffelkanone, Rotor, Kollektor, Elektromotor und Alternator. Mit einer Fabrikanzeige stellen sie auch Werkbank-Rezepte her ({{create_brass/factory_gauge}})."
+  ],
+  "en": [
+   "On Kronwerke the recipe takes a [[create:precision_mechanism]] instead of an electron tube and gives three crafters. The nine of this quest are three mechanisms, three brass casings and three crafting tables.",
+   "EMI lists every recipe that only works here as Mechanical Crafting: crushing wheel, potato cannon, rotor, commutator, electric motor and alternator. With a factory gauge they also make crafting table recipes ({{create_brass/factory_gauge}})."
+  ],
+  "sources": [
+   "kronwerke:create/mechanical_crafter",
+   "kubejs/server_scripts/kronwerke/create.js",
+   "create: ponder lang factory_gauge_crafting"
+  ]
+ },
+ "tube_line": {
+  "de": [
+   "Rechne mit **3,75 Röhren** pro Präzisionsgetriebe: das Rezept auf Kronwerke hat drei Runden mit 80 Prozent. Für 150 Getriebe (Ziel bei 30 Spielern) sind das gut 560 Röhren, also ebenso viele polierte Rosenquarze und Eisenbleche.",
+   "Den Rosenquarz kann auch Mekanisms Metallurgische Infusionsanlage herstellen, polieren der Mechanische Schleifstein oder die Anreicherungskammer."
+  ],
+  "en": [
+   "Count on **3.75 tubes** per precision mechanism: the Kronwerke recipe has three loops at 80 percent. For 150 mechanisms (the goal at 30 players) that is a little over 560 tubes, so as many polished rose quartz and iron sheets.",
+   "Mekanism's Metallurgic Infuser can make the rose quartz too; the mechanical grindstone or the Enrichment Chamber can polish it."
+  ],
+  "sources": [
+   "kronwerke:create/precision_mechanism",
+   "config/kronwerke/goals.json (precision_mechanism base 150)",
+   "createaddition:compat/mekanism/rose_quartz_metallurgic_infusing",
+   "createaddition:compat/mekanism/rose_quartz_enriching"
+  ]
+ },
+ "crushing_wheel": {
+  "de": [
+   "Im 5 x 5 Raster bleiben die vier Ecken frei. Vier Bretter bilden ein Kreuz um den Stein in der Mitte, die 16 [[create:andesite_alloy]] füllen den Rest.",
+   "Mahlwerkräder geben bei Erz mehr als der Mahlstein und mahlen Lohenruten und Netherrack, die er nicht nimmt. Mekanisms Zerkleinerer braucht ein [[create:crushing_wheel]] ({{mekanism/crusher}})."
+  ],
+  "en": [
+   "In the 5 x 5 grid the four corners stay empty. Four planks form a cross around the stone in the middle, the 16 [[create:andesite_alloy]] fill the rest.",
+   "Crushing wheels give more from ore than the millstone and grind blaze rods and netherrack, which it does not take. Mekanism's Crusher needs a [[create:crushing_wheel]] ({{mekanism/crusher}})."
+  ],
+  "sources": [
+   "create:mechanical_crafting/crushing_wheel",
+   "create:crushing/blaze_rod",
+   "create:crushing/netherrack",
+   "kronwerke:tech/crusher",
+   "srv/config/create-server.toml (crushing_wheel 8.0)"
+  ]
+ },
+ "ore_processing": {
+  "de": [
+   "Am meisten bringt Erz, das du mit Behutsamkeit abbaust: [[create:zinc_ore]] gibt 1,75 Zerkleinertes Rohzink, Tiefenschiefer-Zinkerz sogar 2,25. Rohzink selbst gibt nur eins.",
+   "Gewaschen wird mit einem Lüfter, der durch Wasser bläst ({{create/washing}}), oder mit einem Waschenden Lüfter Katalysator ({{create_brass/fan_catalyst}}). Zerkleinertes Erz kannst du auch schmelzen, das gibt einen Barren statt 9 Klumpen."
+  ],
+  "en": [
+   "Silk Touched ore gives the most: [[create:zinc_ore]] makes 1.75 crushed raw zinc, deepslate zinc ore even 2.25. Raw zinc itself gives only one.",
+   "Washing works with a fan blowing through water ({{create/washing}}) or with a Fan Washing Catalyst ({{create_brass/fan_catalyst}}). You can also smelt crushed ore, which gives one ingot instead of 9 nuggets."
+  ],
+  "sources": [
+   "create:crushing/zinc_ore",
+   "create:crushing/deepslate_zinc_ore",
+   "create:crushing/raw_zinc",
+   "create:splashing/crushed_raw_zinc",
+   "create:smelting/zinc_ingot_from_crushed"
+  ]
+ },
+ "cinder_flour": {
+  "de": [
+   "Im Schnitt gibt ein Block 1,5 [[create:cinder_flour]]. Jeder Lohenkuchen braucht ein Mehl, die 64 Netherrack aus der Belohnung reichen also für rund 96 Kuchen."
+  ],
+  "en": [
+   "On average one block gives 1.5 [[create:cinder_flour]]. Every blaze cake takes one flour, so the 64 netherrack of the reward are enough for about 96 cakes."
+  ],
+  "sources": [
+   "create:crushing/netherrack",
+   "create:compacting/blaze_cake"
+  ]
+ },
+ "blaze_cake": {
+  "de": [
+   "Die [[create:blaze_cake_base]] entsteht durch Kompaktieren ohne Hitze, jedes Ei aus dem Tag c:eggs geht. Danach füllt der [[create:spout]] 250 mB Lava ein, die eine Mechanische Pumpe aus einem Lavasee holt.",
+   "Laut Ponder legt ein Einsatzgerät oder ein Mechanischer Arm den Kuchen automatisch in den Brenner. Für eine Dauerlinie brauchst du laufend Eier, Zucker und Aschenmehl."
+  ],
+  "en": [
+   "The [[create:blaze_cake_base]] comes from compacting without heat, and any egg in the tag c:eggs works. Then the [[create:spout]] fills in 250 mB of lava, which a mechanical pump draws from a lava lake.",
+   "According to the Ponder scene a deployer or a mechanical arm puts the cake into the burner automatically. A permanent line needs a steady supply of eggs, sugar and cinder flour."
+  ],
+  "sources": [
+   "create:compacting/blaze_cake",
+   "create:filling/blaze_cake",
+   "create: ponder lang blaze_burner"
+  ],
+  "client": [
+   "whether a funnel can insert blaze cakes into a blaze burner (the quest text says so)"
+  ]
+ },
+ "brass_superheated": {
+  "de": [
+   "Für 256 Barren brauchst du überhitzt 256 Kupfer und 128 Zink statt 512 und 256, und keinen Lohenstaub. Das Rezept kronwerke:create/brass_ingot_superheated läuft nur, solange der Brenner wirklich **überhitzt** ist.",
+   "Statt Kuchen schafft auch die Kesselheizung von Power Grid mit genug Strom die höchste Hitzestufe ({{create_brass/pg_basin_heater}})."
+  ],
+  "en": [
+   "Superheated, 256 ingots take 256 copper and 128 zinc instead of 512 and 256, and no blaze powder. The recipe kronwerke:create/brass_ingot_superheated only runs while the burner is really **superheated**.",
+   "Instead of cakes, Power Grid's basin heater with enough power also reaches the highest heat level ({{create_brass/pg_basin_heater}})."
+  ],
+  "sources": [
+   "kronwerke:create/brass_ingot_superheated",
+   "kronwerke:create/brass_ingot_heated",
+   "powergrid: lang ponder.basin_heater"
+  ]
+ },
+ "brass_funnel": {
+  "de": [
+   "Ein Rezept gibt zwei [[create:brass_funnel]], für vier reichen also zwei Röhren. Anders als die Andesitschleuse zieht sie bis zu einem ganzen Stapel auf einmal.",
+   "Mit Filter und Stückzahl fütterst du die Einsatzgeräte der {{create_brass/incomplete}} gezielt mit je einem Teil."
+  ],
+  "en": [
+   "One recipe gives two [[create:brass_funnel]], so two tubes cover four. Unlike the andesite funnel it pulls up to a full stack at once.",
+   "With filter and count you feed each deployer of {{create_brass/incomplete}} exactly its own part."
+  ],
+  "sources": [
+   "create:crafting/logistics/brass_funnel",
+   "create: ponder lang brass_funnel"
+  ]
+ },
+ "brass_tunnel": {
+  "de": [
+   "Jede offene Seite des Tunnels hat ein eigenes Filterfeld. Messingtunnel auf parallelen Bändern bilden eine Gruppe und verteilen gemeinsam.",
+   "Synchron lässt ein Item erst durch, wenn jeder Tunnel der Gruppe eins wartend hat. So bekommen mehrere Mixer Kupfer und Zink im gleichen Takt."
+  ],
+  "en": [
+   "Every open side of the tunnel has its own filter slot. Brass tunnels on parallel belts form a group and distribute together.",
+   "Synchronize only lets items pass when every tunnel in the group has one waiting. That way several mixers get copper and zinc at the same rate."
+  ],
+  "sources": [
+   "create:crafting/logistics/brass_tunnel",
+   "create: ponder lang brass_tunnel, brass_tunnel_modes"
+  ]
+ },
+ "smart_chute": {
+  "de": [
+   "Der [[create:smart_chute]] kostet ein [[create:brass_sheet]] und eine Röhre. Er ist der kompakte Weg, aus einem gemischten Lager senkrecht nur ein Item weiterzugeben, etwa nur Zink für den Mixer."
+  ],
+  "en": [
+   "The [[create:smart_chute]] costs one [[create:brass_sheet]] and one tube. It is the compact way to pass only one item straight down out of a mixed store, say only zinc for the mixer."
+  ],
+  "sources": [
+   "create:crafting/kinetics/smart_chute"
+  ],
+  "client": [
+   "smart chute pulling filtered items out of an inventory above it"
+  ]
+ },
+ "arm": {
+  "de": [
+   "Der Arm kostet ein [[create:precision_mechanism]], spar ihn für Stellen, wo Schleusen nicht hinkommen. Laut Ponder füllt er auch Lohenbrenner mit Kuchen.",
+   "Seine Ziele müssen in 5 Blöcken liegen. Er bedient auch den Lohen-Verzauberer ({{create_brass/blaze_enchanter}})."
+  ],
+  "en": [
+   "The arm costs a [[create:precision_mechanism]], so save it for spots funnels cannot reach. According to the Ponder scene it feeds blaze burners with cakes.",
+   "Its targets must be within 5 blocks. It also serves the blaze enchanter ({{create_brass/blaze_enchanter}})."
+  ],
+  "sources": [
+   "create:crafting/kinetics/mechanical_arm",
+   "srv/config/create-server.toml (mechanicalArmRange 5)",
+   "create: ponder lang blaze_burner",
+   "create-enchantment-industry: lang ponder.blaze_enchanter.automate"
+  ],
+  "client": [
+   "funnels cannot insert into blaze burners"
+  ]
+ },
+ "observer": {
+  "de": [
+   "Der [[create:content_observer]] erkennt Items und Flüssigkeiten in Behältern, überwacht Bänder, Schächte und Rohre und gibt einen Impuls, wenn ein Item durch eine Schleuse geht.",
+   "Den [[create:stockpile_switch]] setzt du direkt an Kiste, Tresor oder Tank. Beide kosten einen Messingrahmen und eine Röhre."
+  ],
+  "en": [
+   "The [[create:content_observer]] detects items and fluids in containers, watches belts, chutes and pipes, and pulses when an item passes a funnel.",
+   "Put the [[create:stockpile_switch]] right against a chest, vault or tank. Both cost a brass casing and a tube."
+  ],
+  "sources": [
+   "create:crafting/logistics/content_observer",
+   "create:crafting/logistics/stockpile_switch",
+   "create: ponder lang smart_observer"
+  ],
+  "client": [
+   "threshold switch reads fluid tanks"
+  ]
+ },
+ "display": {
+  "de": [
+   "Der Anzeige-Link liest nicht jeden Block, und jede Quelle liefert eigene Werte; was er sendet, wählst du in seinem Menü. Ein Redstone-Signal am Link hält die Anzeige an.",
+   "Der Link funktioniert auch mit Schildern und Nixieröhren. Für Abfahrtszeiten von Zügen siehe {{create_trains/display}}."
+  ],
+  "en": [
+   "The display link cannot read every block, and each source sends its own values; you choose what it sends in its menu. A redstone signal on the link pauses the updates.",
+   "The link also works with signs and nixie tubes. For train departure times see {{create_trains/display}}."
+  ],
+  "sources": [
+   "create:crafting/logistics/display_link",
+   "srv/config/create-server.toml (displayLinkRange 64)",
+   "create: ponder lang display_link, display_link_redstone"
+  ],
+  "client": [
+   "display link writes to signs and nixie tubes"
+  ]
+ },
+ "factory_gauge": {
+  "de": [
+   "Die [[create:stock_link]] stellst du aus Gegenstandstresor und Sender her, das Lagernetz kommt aus {{create/stock}}. Rechtsklick mit der Lagerverbindung vor dem Setzen verbindet die Anzeige mit dem Netz.",
+   "Den Zielvorrat stellst du ein, indem du die rechte Maustaste auf der Anzeige gedrückt hältst. Mit neun Handwerkseinheiten im 3 x 3 Raster, mit dem Schraubenschlüssel verbunden, ordnet sie Werkbank-Rezepte selbst an."
+  ],
+  "en": [
+   "You make the [[create:stock_link]] from an item vault and a transmitter; the stock network comes from {{create/stock}}. Right click the stock link with the gauge before placing to connect it.",
+   "Set the target amount by holding right click on the gauge. With nine mechanical crafters in a 3 x 3 grid, connected with the wrench, it arranges crafting table recipes by itself."
+  ],
+  "sources": [
+   "create:crafting/logistics/factory_gauge",
+   "create:crafting/logistics/stock_link",
+   "create: ponder lang factory_gauge_restocker, factory_gauge_crafting"
+  ]
+ },
+ "brass_heart": {
+  "de": [
+   "Ein [[kronwerke:brass_heart]] kostet 4 Messingrahmen, ein Präzisionsgetriebe, zwei Röhren, eine [[botania:rune_of_fire]] und einen Lohenbrenner, also auch zwei Quelljuwelen und eine Lohe. Für alle 8 sind das 32 Rahmen und 8 Lohen.",
+   "Der Runenaltar macht zwei Feuerrunen auf einmal, für 5 200 Mana ({{botania_runes/rune_fire}}). Abgegeben wird das Herz wie alles von Hand am Obelisken ({{create_brass/brass_engine}})."
+  ],
+  "en": [
+   "A [[kronwerke:brass_heart]] costs 4 brass casings, one precision mechanism, two tubes, one [[botania:rune_of_fire]] and a blaze burner, so also two source gems and a blaze. All 8 take 32 casings and 8 blazes.",
+   "The runic altar makes two fire runes at once for 5,200 mana ({{botania_runes/rune_fire}}). Like everything, the heart is handed in by hand at the obelisk ({{create_brass/brass_engine}})."
+  ],
+  "sources": [
+   "kronwerke:milestones/brass_heart",
+   "botania:runic_altar/rune_of_fire",
+   "config/kronwerke/goals.json (brass_heart base 8 fixed, weight 300)"
+  ]
+ },
+ "brass_engine": {
+  "de": [
+   "Rechtsklick mit einem Stapel in der Hand gibt diesen Stapel ab. Schleichklick mit einem Item in der Hand fragt nach, ein zweiter innerhalb von 5 Sekunden gibt alles Passende aus den 27 Feldern über der Hotbar ab; Hotbar, Nebenhand, Rüstung und Rucksack bleiben ({{start_here/o_deposit}}).",
+   "Die Quest selbst nimmt nichts weg, du gibst danach ab. Die Mengen des Ziels hängen von der Zahl aktiver Spieler ab, **/kw goals** zeigt die echten."
+  ],
+  "en": [
+   "Right click with a stack in your hand hands in that stack. A sneak click with an item in hand asks first, a second one within 5 seconds hands in everything that fits from the 27 slots above the hotbar; hotbar, offhand, armour and backpack stay ({{start_here/o_deposit}}).",
+   "The quest itself takes nothing; you hand in afterwards. The goal amounts depend on the number of active players, **/kw goals** shows the real ones."
+  ],
+  "sources": [
+   "core: src/main/java/de/kronwerke/core/obelisk/Obelisk.java",
+   "core: src/main/java/de/kronwerke/core/goal/GoalManager.java (depositAll)",
+   "config/kronwerke/goals.json (stage2, holdAt 0.98)",
+   "tools/quests/ftbq.py (task_item consume False)"
+  ]
+ },
+ "steam_engine": {
+  "de": [
+   "Ein Kessel aus 4 Tanks reicht laut Ponder für Stufe 1, also eine voll laufende Maschine. Für zwei brauchst du Stufe 2: 8 Tanks, zwei erhitzte Brenner oder einen überhitzten, und genug Wasser von einer Mechanischen Pumpe.",
+   "Ein [[create:fluid_tank]] ist ein Kupferblech zwischen zwei Fässern. Das [[create:golden_sheet]] presst die Presse aus Goldbarren."
+  ],
+  "en": [
+   "According to the Ponder scene a boiler of 4 tanks is enough for level 1, so one engine at full power. Two need level 2: 8 tanks, two heated burners or one superheated, and enough water from a mechanical pump.",
+   "A [[create:fluid_tank]] is a copper sheet between two barrels. The press makes the [[create:golden_sheet]] from gold ingots."
+  ],
+  "sources": [
+   "create: BoilerData (size level = tanks / 4, capped at 18)",
+   "create: ponder lang steam_engine",
+   "create:crafting/kinetics/fluid_tank",
+   "srv/config/create-server.toml (steam_engine 1024, water_wheel 32)"
+  ]
+ },
+ "boiler": {
+  "de": [
+   "Für Stufe 4 braucht der Kessel 16 Tanks, etwa 2 x 2 Blöcke und 4 hoch. Mehr als Stufe 18 geht nicht.",
+   "Mit der Ingenieursbrille siehst du am Kessel, welcher der drei Werte fehlt. Überhitzte Brenner zählen doppelt, zwei mit Lohenkuchen ersetzen also vier mit Kohle."
+  ],
+  "en": [
+   "Level 4 needs a boiler of 16 tanks, for example 2 x 2 blocks and 4 high. Level 18 is the maximum.",
+   "With the engineer's goggles you see on the boiler which of the three values is missing. Superheated burners count double, so two on blaze cakes replace four on coal."
+  ],
+  "sources": [
+   "create: BoilerData (getMaxHeatLevelForBoilerSize, 18 cap)",
+   "create: ponder lang steam_engine (Lvl 4, 4 engines)"
+  ]
+ },
+ "whistle": {
+  "de": [
+   "Für eine Pfeife reichen ein [[create:golden_sheet]] und ein Kupferbarren. Die Pfeife gehört wie die Dampfmaschine direkt an einen Kessel aus Flüssigkeitstanks."
+  ],
+  "en": [
+   "One whistle takes a single [[create:golden_sheet]] and a copper ingot. Like the steam engine, it goes directly onto a boiler of fluid tanks."
+  ],
+  "sources": [
+   "create:crafting/kinetics/steam_whistle"
+  ]
+ },
+ "speed_controller": {
+  "de": [
+   "Der Regler selbst kostet 0 SU, aber was er schneller dreht, zieht entsprechend mehr. Mehr als 256 RPM erlaubt der Server nicht.",
+   "Mit ihm holst du aus einer langsamen Welle die volle Drehzahl, die der Alternator für seine Höchstleistung braucht ({{create_brass/alternator}})."
+  ],
+  "en": [
+   "The controller itself costs 0 SU, but whatever it speeds up draws correspondingly more. The server allows no more than 256 RPM.",
+   "Use it to get the full speed out of a slow shaft that the alternator needs for its best output ({{create_brass/alternator}})."
+  ],
+  "sources": [
+   "create:crafting/kinetics/rotation_speed_controller",
+   "srv/config/create-server.toml (rotation_speed_controller 0.0, maxRotationSpeed 256)",
+   "srv/config/createaddition-common.toml"
+  ]
+ },
+ "sequenced_gearshift": {
+  "de": [
+   "Rechtsklick öffnet das Befehlsmenü. Nach dem letzten Befehl wartet die Gangschaltung auf das nächste Redstone-Signal und beginnt von vorn.",
+   "Ein Komparator liest ab, wie weit die Folge gerade ist. Sie selbst kostet keine Belastbarkeit."
+  ],
+  "en": [
+   "Right click opens the instruction menu. After the last instruction the gearshift waits for the next redstone signal and starts over.",
+   "A comparator reads how far the sequence has got. The gearshift itself costs no stress."
+  ],
+  "sources": [
+   "create:crafting/kinetics/sequenced_gearshift",
+   "create: ponder lang sequenced_gearshift",
+   "srv/config/create-server.toml (sequenced_gearshift 0.0)"
+  ]
+ },
+ "schematics": {
+  "de": [
+   "Der Server hält von jedem Spieler höchstens 10 hochgeladene Baupläne, ältere werden überschrieben, und eine Datei darf höchstens 256 KB groß sein. Die Kanone baut Block für Block aus angeschlossenen Kisten und braucht Schießpulver.",
+   "Für die [[create:schematicannon]] brauchst du zwei Eisenblöcke; sie ist ein Werkzeug für große Bauten, keine Abkürzung im Bergwerk."
+  ],
+  "en": [
+   "The server keeps at most 10 uploaded schematics per player, older ones get overwritten, and a file may be at most 256 KB. The cannon builds block by block from attached chests and needs gunpowder.",
+   "The [[create:schematicannon]] takes two iron blocks; it is a tool for big builds."
+  ],
+  "sources": [
+   "srv/config/create-server.toml (maxSchematics 10, maxTotalSchematicSize 256, schematicannonShotsPerGunpowder 400)",
+   "create:crafting/schematics/schematicannon"
+  ]
+ },
+ "contraption_controls": {
+  "de": [
+   "Laut Ponder sind Werkzeuge auf einer Kontraption sonst immer an. Den Filter der Steuerung stellst du ein, solange die Kontraption abgebaut ist; bekommt sie beim Zusammenbau ein Redstone-Signal, starten die Werkzeuge ausgeschaltet.",
+   "Die [[create:linked_controller]] braucht eine Redstone-Verbindung; Gegenstücke am Ziel sind ebenfalls Redstone-Verbindungen mit denselben Frequenz-Items."
+  ],
+  "en": [
+   "According to the Ponder scene tools on a contraption are always on otherwise. You set the controls' filter while the contraption is disassembled; if it gets a redstone signal during assembly, the tools start switched off.",
+   "The [[create:linked_controller]] needs a redstone link; the receivers are redstone links with the same frequency items."
+  ],
+  "sources": [
+   "create:crafting/kinetics/contraption_controls",
+   "create:crafting/appliances/linked_controller",
+   "create: ponder lang contraption_controls"
+  ]
+ },
+ "elevator": {
+  "de": [
+   "Laut Ponder baust du zuerst die Kabine und setzt zwei [[create:redstone_contact]] einander gegenüber, einen an die Kabine geklebt. Beim Zusammenbau wird der feste Kontakt zum Aufzugskontakt, ebenso jeder weitere Redstone-Kontakt in derselben Spalte.",
+   "Ein Redstone-Impuls an einem Kontakt ruft den Aufzug, und während die Kabine auf seinem Stockwerk steht, gibt er ein Signal ab. Schiebetüren an der Kabine öffnen und schließen von selbst."
+  ],
+  "en": [
+   "According to the Ponder scene you build the cabin first and place two [[create:redstone_contact]] facing each other, one glued to the cabin. On assembly the fixed contact becomes an elevator contact, and so does every other redstone contact in the same column.",
+   "A redstone pulse at a contact calls the elevator, and while the cabin is at its floor it emits a signal. Sliding doors on the cabin open and close by themselves."
+  ],
+  "sources": [
+   "create:crafting/kinetics/elevator_pulley",
+   "create: ponder lang elevator_pulley",
+   "srv/config/create-server.toml (elevator_pulley 4.0)"
+  ]
+ },
+ "cart_assembler": {
+  "de": [
+   "Für die Steuerungsschiene brauchst du sechs Goldbarren, einen Stock und eine Röhre; ein Rezept gibt die sechs der Quest. Der [[create:cart_assembler]] selbst ist billig: zwei Andesitlegierungen, Redstone, zwei Stämme."
+  ],
+  "en": [
+   "The controller rail takes six gold ingots, a stick and a tube; one recipe gives the six of this quest. The [[create:cart_assembler]] itself is cheap: two andesite alloys, redstone, two logs."
+  ],
+  "sources": [
+   "create:crafting/kinetics/controller_rail",
+   "create:crafting/kinetics/cart_assembler"
+  ]
+ },
+ "roller": {
+  "de": [
+   "Ohne Material im Filter räumt die Walze nur den Weg frei wie ein Bohrer. Das Pflastermaterial kommt aus Kisten oder Fässern auf der Kontraption, und manche Blöcke, die sie zerstört, geben keinen Drop.",
+   "Jede [[create:mechanical_roller]] kostet ein Mahlwerkrad, für zwei brauchst du also ein ganzes Paar aus {{create_brass/crushing_wheel}}. Neben Pflastern kann sie auch nur auffüllen, gerade oder schräg."
+  ],
+  "en": [
+   "Without material in its filter the roller only clears the way like a drill. Paving material comes from chests or barrels on the contraption, and some blocks it breaks drop nothing.",
+   "Every [[create:mechanical_roller]] costs a crushing wheel, so two take a whole pair from {{create_brass/crushing_wheel}}. Besides paving it can also just fill, straight or sloped."
+  ],
+  "sources": [
+   "create:crafting/kinetics/mechanical_roller",
+   "create: ponder lang mechanical_roller_pave, mechanical_roller_fill",
+   "srv/config/create-server.toml (rollerFillDepth 12)"
+  ]
+ },
+ "potato_cannon": {
+  "de": [
+   "Die Kanone ist ein Rezept für die Mechanischen Handwerkseinheiten und belegt sieben Felder in zwei Reihen. Der [[create:extendo_grip]] und der [[create:wand_of_symmetry]] kosten ebenfalls je ein Präzisionsgetriebe."
+  ],
+  "en": [
+   "The cannon is a mechanical crafter recipe and fills seven slots in two rows. The [[create:extendo_grip]] and the [[create:wand_of_symmetry]] also cost one precision mechanism each."
+  ],
+  "sources": [
+   "create:mechanical_crafting/potato_cannon",
+   "create:mechanical_crafting/extendo_grip",
+   "create:mechanical_crafting/wand_of_symmetry"
+  ]
+ },
+ "addons": {
+  "de": [
+   "Die Addons hier bauen aufeinander auf: Power Grid beginnt mit {{create_brass/pg_wire}}, Crafts & Additions mit {{create_brass/rolling_mill}}, Enchantment Industry mit {{create_brass/grindstone}}. Wer Mekanism mit Strom versorgen will, nimmt den {{create_brass/alternator}}."
+  ],
+  "en": [
+   "The add-ons here build on each other: Power Grid starts with {{create_brass/pg_wire}}, Crafts & Additions with {{create_brass/rolling_mill}}, Enchantment Industry with {{create_brass/grindstone}}. To power Mekanism, go for the {{create_brass/alternator}}."
+  ],
+  "sources": [
+   "tools/quests/chapters/create_brass.py"
+  ]
+ },
+ "grindstone": {
+  "de": [
+   "Den [[create:item_drain]] klickst du mit dem Schleifstein an, der zweite Schleifstein kommt oben auf den Schleifsteinabfluss. Ein [[create:experience_nugget]] gibt 3 mB Flüssige Erfahrung, ein Erfahrungsblock 27 mB.",
+   "Erfahrungsklumpen fallen beim Zerkleinern von Erz an ({{create_brass/ore_processing}}). Die Erfahrung brauchst du für {{create_brass/blaze_enchanter}} und {{create_brass/printer}}."
+  ],
+  "en": [
+   "Right click an [[create:item_drain]] with the grindstone, then put the second grindstone on top of the grindstone drain. One [[create:experience_nugget]] gives 3 mB of liquid experience, a block of experience 27 mB.",
+   "Experience nuggets drop from crushing ore ({{create_brass/ore_processing}}). You need the experience for {{create_brass/blaze_enchanter}} and {{create_brass/printer}}."
+  ],
+  "sources": [
+   "create_enchantment_industry:crafting/mechanical_grindstone",
+   "create_enchantment_industry:grinding/experience_nugget",
+   "create_enchantment_industry:grinding/experience_block",
+   "create-enchantment-industry: lang ponder.mechanical_grindstone"
+  ]
+ },
+ "blaze_enchanter": {
+  "de": [
+   "Die [[create_dragons_plus:blaze_upgrade_smithing_template]] liegt in Kisten von Netherfestungen und Bastionen. Kopier sie, bevor du sie verbrauchst: Vorlage, Netherrack und sieben Lohenruten ergeben zwei ({{create_addons/blaze_template}}).",
+   "Die Verzauberungsstufe stellst du am Wertefeld ein. Legst du ein Item ins Filterfeld, verzaubert er nur, was zu diesem Item passt, etwa nur Brustpanzer-Verzauberungen."
+  ],
+  "en": [
+   "The [[create_dragons_plus:blaze_upgrade_smithing_template]] is in fortress and bastion chests. Copy it before you use it up: template, netherrack and seven blaze rods make two ({{create_addons/blaze_template}}).",
+   "You set the enchanting level on the value panel. Put an item into the filter slot and it only rolls enchantments that fit that item, such as chestplate enchantments only."
+  ],
+  "sources": [
+   "create_enchantment_industry:smithing/blaze_enchanter",
+   "create_dragons_plus:crafting/blaze_upgrade_smithing_template",
+   "create-dragons-plus: CDPLoots$TableInjections (bastion and nether_bridge chests)",
+   "create-enchantment-industry: lang ponder.blaze_enchanter.intro"
+  ]
+ },
+ "printer": {
+  "de": [
+   "Das Item, das gedruckt werden soll, legst du ins Filterfeld, dann pumpst du die passende Flüssigkeit hinein. Laut Ponder kann der Drucker auch Items benennen, Zugfahrpläne und Klemmbretter kopieren und Paketadressen ändern.",
+   "Manche Verzauberungen lassen sich nicht kopieren, das meldet der Drucker dann. EMI zeigt alle Druck-Rezepte."
+  ],
+  "en": [
+   "Put the item to print into the filter slot, then pump in the matching fluid. According to the Ponder scene the printer can also name items, copy train schedules and clipboards and change package addresses.",
+   "Some enchantments cannot be copied; the printer tells you. EMI lists all printing recipes."
+  ],
+  "sources": [
+   "create_enchantment_industry:crafting/printer",
+   "create-enchantment-industry: lang ponder.printer.intro, gui.printer"
+  ]
+ },
+ "pg_wire": {
+  "de": [
+   "Ein [[create:copper_sheet]] gibt in der Mechanischen Säge 4 [[powergrid:wire]], die 16 der Quest sind also vier Bleche. Ein [[powergrid:wire_connector]] ist eine Legierung mit drei Kupferklumpen.",
+   "Kupferdraht von Power Grid und Kupferkabel aus dem Walzwerk stehen im selben Tag c:wires/copper, beide gehen in Kupferspule und Kupfersuple."
+  ],
+  "en": [
+   "A [[create:copper_sheet]] gives 4 [[powergrid:wire]] in the mechanical saw, so the 16 of this quest are four sheets. A [[powergrid:wire_connector]] is one alloy with three copper nuggets.",
+   "Power Grid's copper wire and the copper wire from the rolling mill share the tag c:wires/copper, so both work in the copper coil and the copper spool."
+  ],
+  "sources": [
+   "powergrid:cutting/copper_wire_cutting",
+   "powergrid:crafting/wire_connector",
+   "createaddition:rolling/copper_plate",
+   "tag c:wires/copper (immersiveengineering, createaddition, powergrid jars)"
+  ]
+ },
+ "pg_coil": {
+  "de": [
+   "Für 8 Spulen brauchst du 32 Draht, also acht Kupferbleche, dazu 16 [[create:cardboard]] und 8 Stöcke. Karton presst die Presse aus [[create:pulp]], den der Mixer mischt; EMI zeigt die Zutaten."
+  ],
+  "en": [
+   "8 coils take 32 wire, so eight copper sheets, plus 16 [[create:cardboard]] and 8 sticks. The press makes cardboard from [[create:pulp]], which the mixer mixes; EMI shows the ingredients."
+  ],
+  "sources": [
+   "powergrid:crafting/copper_coil",
+   "powergrid:cutting/copper_wire_cutting",
+   "create:pressing/cardboard"
+  ]
+ },
+ "pg_casing": {
+  "de": [
+   "Das [[powergrid:conductive_casing]] kostet nur ein Andesitgehäuse und einen [[create:zinc_ingot]]. Ein Einsatzgerät mit Zink über einem Band macht beliebig viele."
+  ],
+  "en": [
+   "The [[powergrid:conductive_casing]] only costs one andesite casing and one [[create:zinc_ingot]]. A deployer with zinc over a belt makes as many as you like."
+  ],
+  "sources": [
+   "powergrid:item_application/conductive_casing"
+  ]
+ },
+ "pg_adapter": {
+  "de": [
+   "Laut Ponder speist der [[powergrid:device_connector]] auch Maschinen mit Forge Energy aus deinem Netz. Er ist außerdem der Weg, einem Generator von außen den Erregerstrom zu geben ({{create_brass/pg_generator}})."
+  ],
+  "en": [
+   "According to the Ponder scene the [[powergrid:device_connector]] also powers Forge Energy machines from your network. It is also how a generator gets its excitation current from outside ({{create_brass/pg_generator}})."
+  ],
+  "sources": [
+   "powergrid:crafting/device_connector",
+   "powergrid: lang ponder.device_connector, ponder.generator_1"
+  ]
+ },
+ "pg_clutch": {
+  "de": [
+   "Die [[powergrid:generator_clutch]] ist eine Create-[[create:clutch]] mit einer Andesitlegierung, formlos gelegt. An ihr beginnt die Kette Kupplung, Rotor, Kollektor."
+  ],
+  "en": [
+   "The [[powergrid:generator_clutch]] is a Create [[create:clutch]] plus one andesite alloy, shapeless. The chain clutch, rotor, commutator starts at it."
+  ],
+  "sources": [
+   "powergrid:crafting/generator_clutch",
+   "srv/config/powergrid-server.toml (generator_clutch 32.0)"
+  ]
+ },
+ "pg_rotor": {
+  "de": [
+   "Das Rezept ist 3 x 3, braucht aber Mechanische Handwerkseinheiten: Legierung in den Ecken, Spulen an den Seiten, die Welle in der Mitte. Mit 8 Rotorteilen pro Generator kostet allein der Rotor 256 SU pro RPM, plan die Antriebskraft entsprechend."
+  ],
+  "en": [
+   "The recipe is 3 x 3 but needs mechanical crafters: alloy in the corners, coils on the sides, the shaft in the middle. With 8 rotor parts per generator the rotor alone costs 256 SU per RPM, so plan your drive power."
+  ],
+  "sources": [
+   "powergrid:mechanical_crafting/generator_induction_rotor",
+   "srv/config/powergrid-server.toml (generator_induction_rotor 32.0, rotorAssemblyMaxSize 8)"
+  ]
+ },
+ "pg_winding": {
+  "de": [
+   "Die Wicklungen bilden laut Ponder den Ständer, der das Magnetfeld erzeugt, der Rotor ist der Teil, in dem der Strom entsteht. Mit Generatorgehäusen sparst du dir Drähte um den Rotor herum.",
+   "Ein [[powergrid:generator_housing]] kostet zwei Eisenbleche, ein Kupferblech und ein Leitfähiges Gehäuse."
+  ],
+  "en": [
+   "According to the Ponder scene the windings form the stator that makes the magnetic field; the rotor is where the current is made. Generator housings save you wires around the rotor.",
+   "A [[powergrid:generator_housing]] costs two iron sheets, one copper sheet and one conductive casing."
+  ],
+  "sources": [
+   "powergrid:crafting/generator_housing",
+   "powergrid: lang ponder.generator_1, generator_winding, generator_housing"
+  ]
+ },
+ "pg_generator": {
+  "de": [
+   "Die [[powergrid:pins]] sind zwei Kupferklumpen, formlos. Der Rotor darf aus bis zu 8 Teilen bestehen.",
+   "Unter Last sinkt die Spannung des Generators. Hast du noch keine andere Stromquelle, geht es weiter mit {{create_brass/pg_rheostat}}."
+  ],
+  "en": [
+   "The [[powergrid:pins]] are two copper nuggets, shapeless. The rotor can have up to 8 parts.",
+   "Generator voltage drops under load. If you have no other power source yet, carry on with {{create_brass/pg_rheostat}}."
+  ],
+  "sources": [
+   "powergrid:mechanical_crafting/generator_commutator",
+   "powergrid:crafting/pins",
+   "srv/config/powergrid-server.toml (generator_commutator 8.0, rotorAssemblyMaxSize 8)",
+   "powergrid: lang ponder.generator_3"
+  ]
+ },
+ "pg_rheostat": {
+  "de": [
+   "Eine [[powergrid:resistive_coil]] sind vier Eisendraht und ein Stock; Eisendraht macht die Mechanische Säge, vier pro Eisenblech. Fünf Spulen kosten also fünf Eisenbleche.",
+   "Läuft der Generator in der falschen Richtung, musst du laut Ponder die Ständer-Verdrahtung umdrehen."
+  ],
+  "en": [
+   "A [[powergrid:resistive_coil]] is four iron wire and a stick; the mechanical saw makes iron wire, four per iron sheet. So five coils cost five iron sheets.",
+   "If the generator spins the wrong way, the Ponder scene says to flip the stator wiring."
+  ],
+  "sources": [
+   "powergrid:crafting/rheostat",
+   "powergrid:crafting/resistive_coil",
+   "powergrid:cutting/iron_wire_cutting",
+   "powergrid: lang ponder.generator_2"
+  ]
+ },
+ "pg_magnet": {
+  "de": [
+   "Laut Ponder hält der [[powergrid:electromagnet]] Items auf einem Band selbst fest und verarbeitet sie. Für den Motor brauchst du zwei [[powergrid:magnet]], also zwei Durchgänge mit [[create:andesite_alloy]]."
+  ],
+  "en": [
+   "According to the Ponder scene the [[powergrid:electromagnet]] holds items on a belt by itself and processes them. The motor needs two [[powergrid:magnet]], so two passes of [[create:andesite_alloy]]."
+  ],
+  "sources": [
+   "powergrid:crafting/electromagnet",
+   "powergrid:magnetization/andesite_alloy",
+   "powergrid: lang ponder.electromagnet"
+  ]
+ },
+ "pg_motor": {
+  "de": [
+   "Der [[powergrid:electric_motor]] braucht ein Raster aus Mechanischen Handwerkseinheiten, 5 breit und 4 hoch. Der [[powergrid:constant_speed_motor]] entsteht formlos aus Motor und Präzisionsgetriebe und trägt ebenfalls 64 SU pro RPM."
+  ],
+  "en": [
+   "The [[powergrid:electric_motor]] needs a mechanical crafter grid 5 wide and 4 high. The [[powergrid:constant_speed_motor]] is the motor plus a precision mechanism, shapeless, and also carries 64 SU per RPM."
+  ],
+  "sources": [
+   "powergrid:mechanical_crafting/electric_motor",
+   "powergrid:crafting/constant_speed_motor",
+   "srv/config/powergrid-server.toml (electric_motor 64.0, constant_speed_motor 64.0)"
+  ]
+ },
+ "pg_measure": {
+  "de": [
+   "Der [[powergrid:voltage_gauge]] und der [[powergrid:current_gauge]] lassen sich in der Werkbank beliebig ineinander umwandeln. Beide zusammen ergeben den [[powergrid:power_gauge]], den {{create_brass/pg_basin_heater}} empfiehlt."
+  ],
+  "en": [
+   "The [[powergrid:voltage_gauge]] and the [[powergrid:current_gauge]] convert into each other in the crafting grid. Both together make the [[powergrid:power_gauge]] that {{create_brass/pg_basin_heater}} suggests."
+  ],
+  "sources": [
+   "powergrid:crafting/voltage_gauge",
+   "powergrid:crafting/current_gauge_from_conversion",
+   "powergrid:crafting/voltage_gauge_from_conversion",
+   "powergrid:crafting/power_gauge"
+  ]
+ },
+ "rolling_mill": {
+  "de": [
+   "Das Kupferkabel heißt im Spiel [[immersiveengineering:wire_copper]] und kommt aus dem Walzwerk; die Spule heißt im Deutschen Kupfersuple. Ein Eisenbarren gibt im Walzwerk zwei [[silentgear:iron_rod]] für die [[createaddition:spool]].",
+   "Kupferkabel und der Kupferdraht von Power Grid teilen sich das Tag c:wires/copper, für die Spule geht beides."
+  ],
+  "en": [
+   "The copper wire from the rolling mill is [[immersiveengineering:wire_copper]] in game, and the spool is the [[createaddition:copper_spool]]. An iron ingot gives two [[silentgear:iron_rod]] in the rolling mill for the [[createaddition:spool]].",
+   "This copper wire and Power Grid's copper wire share the tag c:wires/copper, so either works for the spool."
+  ],
+  "sources": [
+   "createaddition:crafting/rolling_mill",
+   "createaddition:rolling/copper_plate",
+   "createaddition:rolling/iron_ingot",
+   "createaddition:crafting/spool",
+   "createaddition:crafting/copper_spool",
+   "srv/config/createaddition-common.toml (rolling_mill_stress 8)"
+  ]
+ },
+ "alternator": {
+  "de": [
+   "Der Alternator braucht vier [[createaddition:copper_spool]], sechs Eisenbleche und zwei Andesitlegierungen; EMI zeigt das gültige Teil in der Mitte. 360 FE pro Tick sind 480 FE mal der Wirkungsgrad 0,75.",
+   "Der Netzanschluss gibt drei pro Rezept. Ein [[mekanism:basic_energy_cube]] ist ab Stufe 2 offen und puffert den Strom ({{mekanism/cube}})."
+  ],
+  "en": [
+   "The alternator needs four [[createaddition:copper_spool]], six iron sheets and two andesite alloys; EMI shows the valid part in the middle. 360 FE per tick is 480 FE times the efficiency of 0.75.",
+   "The connector comes three per recipe. A [[mekanism:basic_energy_cube]] is open from stage 2 and buffers the power ({{mekanism/cube}})."
+  ],
+  "sources": [
+   "createaddition:mechanical_crafting/alternator (recipe dump: iron rod in the middle)",
+   "kubejs/server_scripts/kronwerke/links.js (swap #c:rods/iron to mekanism:basic_control_circuit)",
+   "srv/config/createaddition-common.toml (fe_at_max_rpm 480, generator_efficiency 0.75, max_stress 16384)",
+   "createaddition:crafting/connector"
+  ],
+  "client": [
+   "middle ingredient of the alternator in EMI: the recipe dump shows an iron rod although links.js swaps it for a Basic Control Circuit"
+  ]
+ },
+ "electric_motor": {
+  "de": [
+   "Der [[createaddition:capacitor]] ist ein Zinkblech und ein Kupferblech über einer Redstonefackel. Auch fast ohne Last zieht der Motor mindestens 8 FE pro Tick."
+  ],
+  "en": [
+   "The [[createaddition:capacitor]] is a zinc sheet and a copper sheet over a redstone torch. Even with almost no load the motor takes at least 8 FE per tick."
+  ],
+  "sources": [
+   "createaddition:mechanical_crafting/electric_motor",
+   "createaddition:crafting/capacitor_1",
+   "srv/config/createaddition-common.toml (fe_at_max_rpm 480, max_stress 16384, motor_min_consumption 8, motor_max_input 5000)"
+  ]
+ },
+ "tesla_coil": {
+  "de": [
+   "Das Ergebnis ist der [[immersiveengineering:ingot_electrum]]. Aus einem Goldblech wird mit 36 000 FE ein Electrumblech, aus einem Goldklumpen mit 4 000 FE ein Electrumklumpen.",
+   "Der [[createaddition:straw]] entsteht im Walzwerk aus Papier oder Bambus."
+  ],
+  "en": [
+   "The result is the [[immersiveengineering:ingot_electrum]]. A gold sheet becomes an electrum plate for 36,000 FE, a gold nugget an electrum nugget for 4,000 FE.",
+   "The rolling mill makes the [[createaddition:straw]] from paper or bamboo."
+  ],
+  "sources": [
+   "createaddition:charging/electrify_gold_ingot",
+   "createaddition:charging/electrify_gold_sheet",
+   "createaddition:charging/electrify_gold_nugget",
+   "create:rolling/paper",
+   "create:rolling/bamboo"
+  ]
+ },
+ "fan_catalyst": {
+  "de": [
+   "Der leere Katalysator sind vier Messingbarren und vier Eisengitter um ein freies Feld. Netherrack macht ihn räuchernd, Sand schleifend, ein Pulverschneeeimer gefrierend.",
+   "Ein Ausguss füllt ihn auch mit 1 000 mB Wasser oder Lava. Zurück zum leeren Katalysator geht es in der Werkbank."
+  ],
+  "en": [
+   "The empty catalyst is four brass ingots and four iron bars around an empty slot. Netherrack makes it smoking, sand sanding, a powder snow bucket freezing.",
+   "A spout can also fill it with 1,000 mB of water or lava. The crafting grid turns any catalyst back into an empty one."
+  ],
+  "sources": [
+   "create_connected:crafting/kinetics/empty_fan_catalyst",
+   "create_connected:item_application/smoking_catalyst_from_empty",
+   "create_connected:item_application/sanding_catalyst_from_empty",
+   "create_connected:item_application/freezing_catalyst_from_empty",
+   "create_connected:filling/fan_splashing_catalyst",
+   "create_connected:filling/fan_blasting_catalyst",
+   "create_connected:crafting/kinetics/empty_fan_catalyst_from_splashing"
+  ]
+ },
+ "connected_parts": {
+  "de": [
+   "Das [[create_connected:crank_wheel]] ist eine Handkurbel und ein Zahnrad, formlos. Kinetische Batterie, Kupplungen und Silo haben eigene Quests in {{create_addons/kinetic_battery}}, {{create_addons/clutches}} und {{create_addons/silo}}."
+  ],
+  "en": [
+   "The [[create_connected:crank_wheel]] is a hand crank and a cogwheel, shapeless. The kinetic battery, the clutches and the silo have their own quests in {{create_addons/kinetic_battery}}, {{create_addons/clutches}} and {{create_addons/silo}}."
+  ],
+  "sources": [
+   "create_connected:crafting/kinetics/crank_wheel"
+  ]
+ },
+ "spawner": {
+  "de": [
+   "Das Rezept braucht 10 Messingbarren, 5 Messingbleche, 8 Eisengitter, einen Smaragd und eine Welle, gebaut im 5 x 5 Raster der Handwerkseinheiten. Pro Mob verbraucht er 100 mB Spawnflüssigkeit.",
+   "Die Grundflüssigkeit mischst du im erhitzten Mixer aus Lohenrute, Enderperle und 250 mB Wasser ({{create_addons/spawn_fluid}})."
+  ],
+  "en": [
+   "The recipe takes 10 brass ingots, 5 brass sheets, 8 iron bars, an emerald and a shaft, built in the 5 x 5 crafter grid. Each mob uses 100 mB of spawn fluid.",
+   "Mix the base fluid in a heated mixer from a blaze rod, an ender pearl and 250 mB of water ({{create_addons/spawn_fluid}})."
+  ],
+  "sources": [
+   "create_mechanical_spawner:mechanical_spawner",
+   "create_mechanical_spawner:spawner/zombie",
+   "create_mechanical_spawner:mixing/spawn_fluid_random_legacy"
+  ]
+ },
+ "haunting": {
+  "de": [
+   "Die [[create:peculiar_bell]] ist ein Messingblock über einem Messingblech. Heimsuchen macht auch Sand zu Seelensand, Bruchstein zu Schwarzstein und Pilze zu Nether-Pilzen.",
+   "Ohne offenes Seelenfeuer geht es mit dem Spukenden Lüfter Katalysator: Seelensand auf den leeren Katalysator ({{create_brass/fan_catalyst}})."
+  ],
+  "en": [
+   "The [[create:peculiar_bell]] is a brass block over a brass sheet. Haunting also turns sand into soul sand, cobblestone into blackstone and mushrooms into nether fungi.",
+   "Without open soul fire, use the Fan Haunting Catalyst: soul sand on the empty catalyst ({{create_brass/fan_catalyst}})."
+  ],
+  "sources": [
+   "create:crafting/curiosities/peculiar_bell",
+   "create:haunting/haunted_bell",
+   "create:haunting/soul_sand",
+   "create:haunting/blackstone",
+   "create:haunting/crimson_fungus",
+   "create:haunting/warped_fungus",
+   "create_connected:item_application/haunting_catalyst_from_empty"
+  ]
+ },
+ "builders_tea": {
+  "de": [
+   "Jedes Laub geht, das Rezept fragt nach dem Tag minecraft:leaves, und Milch nach dem Tag c:milk. 500 mB Tee füllen zwei Flaschen.",
+   "Die Abfüllmaschine von Productive Bees füllt Tee ebenfalls in Glasflaschen."
+  ],
+  "en": [
+   "Any leaves work, the recipe asks for the tag minecraft:leaves, and milk for the tag c:milk. 500 mB of tea fill two bottles.",
+   "Productive Bees' bottler also fills tea into glass bottles."
+  ],
+  "sources": [
+   "create:mixing/tea",
+   "create:filling/builders_tea",
+   "productivebees:bottler/builders_tea",
+   "create:mixing/chocolate",
+   "create:compacting/chocolate"
+  ]
+ },
+ "smart_pipe": {
+  "de": [
+   "Das [[create:smart_fluid_pipe]] hat keine eigene Pumpe; der Fluss kommt weiter von einer Mechanischen Pumpe. Praktisch für Kessel und Mixer, die aus einem gemischten Tank nur Wasser bekommen sollen."
+  ],
+  "en": [
+   "The [[create:smart_fluid_pipe]] has no pump of its own; the flow still comes from a mechanical pump. Handy for boilers and mixers that should get only water from a mixed tank."
+  ],
+  "sources": [
+   "create:crafting/kinetics/smart_fluid_pipe",
+   "create: ponder lang smart_pipe"
+  ]
+ },
+ "pulse_timer": {
+  "de": [
+   "Laut Ponder kehrt ein Rechtsklick auf die Grundplatte das Signal des Puls-Timers um. Der Pulsverlängerer braucht eine zweite Redstonefackel im Rezept."
+  ],
+  "en": [
+   "According to the Ponder scene a right click on the base inverts the pulse timer's output. The pulse extender takes a second redstone torch in its recipe."
+  ],
+  "sources": [
+   "create:crafting/logistics/pulse_timer",
+   "create:crafting/logistics/pulse_repeater",
+   "create:crafting/logistics/pulse_extender",
+   "create: ponder lang pulse_timer"
+  ]
+ },
+ "chain_gearshift": {
+  "de": [
+   "Das Getriebe selbst kostet 0 SU, aber was mit doppelter Drehzahl läuft, zieht auch doppelt so viel Last. Der [[create:encased_chain_drive]] ist ein Andesitgehäuse mit drei Eisenklumpen."
+  ],
+  "en": [
+   "The gearshift itself costs 0 SU, but whatever runs at double speed also draws double the stress. The [[create:encased_chain_drive]] is an andesite casing with three iron nuggets."
+  ],
+  "sources": [
+   "create:crafting/kinetics/adjustable_chain_gearshift",
+   "create:crafting/kinetics/encased_chain_drive",
+   "srv/config/create-server.toml (adjustable_chain_gearshift 0.0)"
+  ]
+ },
+ "clockwork": {
+  "de": [
+   "Das [[create:clockwork_bearing]] kostet 4 SU pro RPM. Die Zeiger klebst du mit Superkleber an, aber Stunden und Minutenzeiger dürfen nicht miteinander verklebt sein."
+  ],
+  "en": [
+   "The [[create:clockwork_bearing]] costs 4 SU per RPM. You glue the hands with super glue, but the hour and minute hands must not be glued to each other."
+  ],
+  "sources": [
+   "create:crafting/kinetics/clockwork_bearing",
+   "srv/config/create-server.toml (clockwork_bearing 4.0)",
+   "create: ponder lang clockwork_bearing"
+  ]
+ },
+ "pg_basin_heater": {
+  "de": [
+   "Die fünf Widerstandsspulen kosten fünf Eisenbleche in der Säge, dazu vier Kupferbleche und ein Leitfähiges Gehäuse. Die [[powergrid:basin_heater]] ersetzt unter dem Mixer den Lohenbrenner samt Kuchen-Nachschub ({{create_brass/brass_superheated}})."
+  ],
+  "en": [
+   "The five resistive coils cost five iron sheets in the saw, plus four copper sheets and one conductive casing. The [[powergrid:basin_heater]] replaces the blaze burner and its cake supply under the mixer ({{create_brass/brass_superheated}})."
+  ],
+  "sources": [
+   "powergrid:mechanical_crafting/basin_heater",
+   "powergrid:crafting/resistive_coil",
+   "powergrid: lang ponder.basin_heater"
+  ]
+ },
+ "pg_heating_coil": {
+  "de": [
+   "Die [[powergrid:heating_coil]] braucht zwei Widerstandsspulen, vier Eisenbleche und [[powergrid:pins]]. Ohne Strom schmilzt auch ein Schmelzender Lüfter Katalysator mit Lava ({{create_brass/fan_catalyst}})."
+  ],
+  "en": [
+   "The [[powergrid:heating_coil]] takes two resistive coils, four iron sheets and [[powergrid:pins]]. Without power, a Fan Blasting Catalyst with lava also smelts ({{create_brass/fan_catalyst}})."
+  ],
+  "sources": [
+   "powergrid:crafting/heating_coil",
+   "create_connected:item_application/blasting_catalyst_from_empty"
+  ]
+ },
+ "barbed_wire": {
+  "de": [
+   "Jeder Eisendraht im Tag c:wires/iron geht, auch der von Power Grid aus der Mechanischen Säge: der gibt vier pro Eisenblech statt zwei. [[createaddition:barbed_wire]] macht auf diesem Server 2 Schaden."
+  ],
+  "en": [
+   "Any iron wire in the tag c:wires/iron works, including Power Grid's from the mechanical saw, which gives four per iron sheet instead of two. [[createaddition:barbed_wire]] deals 2 damage on this server."
+  ],
+  "sources": [
+   "createaddition:crafting/barbed_wire",
+   "createaddition:rolling/iron_plate",
+   "powergrid:cutting/iron_wire_cutting",
+   "srv/config/createaddition-common.toml (barbed_wire_damage 2.0)"
+  ]
+ }
+}

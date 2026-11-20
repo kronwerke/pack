@@ -1,0 +1,509 @@
+{
+ "item_pipe": {
+  "de": [
+   "Im Rezept stecken zwei [[minecraft:dropper]], also Spender und keine Werfer, dazu sechs Eisenbarren und ein Redstone. Ein Spender kostet nur sieben Bruchstein und ein Redstone, 16 Rohre kosten dich also vor allem das Eisen.",
+   "Pipez ist ab Stufe 2 offen. Ohne Modifikation schiebt ein ziehendes Ende 4 Gegenstände alle 20 Ticks, immer zuerst ins nächste Ziel mit Platz. Als Nächstes brauchst du {{pipes/wrench}}."
+  ],
+  "en": [
+   "The recipe takes two [[minecraft:dropper]]s, not dispensers, plus six iron ingots and one redstone. A dropper costs only seven cobblestone and one redstone, so 16 pipes mostly cost you the iron.",
+   "Pipez opens in stage 2. Without an upgrade an extracting end moves 4 items every 20 ticks, always to the nearest target with room first. Next you need {{pipes/wrench}}."
+  ],
+  "sources": [
+   "pipez:item_pipe (crafting_shaped, minecraft:dropper)",
+   "minecraft:dropper",
+   "config/pipez-server.toml (srv/config)",
+   "kubejs/data/kronwerke/chapters/stages/stage2.json"
+  ]
+ },
+ "wrench": {
+  "de": [
+   "Zwei [[minecraft:flint]] und zwei Stöcke, mehr kostet der [[pipez:wrench]] nicht. Feuerstein fällt beim Abbauen von Kies.",
+   "Mit dem Schlüssel stellst du jedes Rohrende einzeln ein. Ohne ein ziehendes Ende bewegt kein Rohr etwas, das kommt in {{pipes/extract}}."
+  ],
+  "en": [
+   "Two [[minecraft:flint]] and two sticks are all the [[pipez:wrench]] costs. Flint drops when you mine gravel.",
+   "With the wrench you set every pipe end on its own. No pipe moves anything without an extracting end, which comes in {{pipes/extract}}."
+  ],
+  "sources": [
+   "pipez:wrench (crafting_shaped)",
+   "pipez lang de_de (tooltip.pipez.wrench)"
+  ],
+  "client": [
+   "Klickfolge am Rohrende: verbunden, ziehend, getrennt (quest text)"
+  ]
+ },
+ "extract": {
+  "de": [
+   "Ohne Modifikation liefert ein Item-Rohr immer zuerst an das nächste Ziel. Erst die Verbesserte Modifikation ({{pipes/improved_upgrade}}) stellt auf Rundlauf, Weiteste zuerst oder Zufällig um.",
+   "Rohre führen nicht über die Servergrenze: Im Nether und im End baust du ein eigenes Rohrnetz."
+  ],
+  "en": [
+   "Without an upgrade an item pipe always delivers to the nearest target first. Only the Improved Pipe Upgrade ({{pipes/improved_upgrade}}) switches to Round Robin, Furthest First or Random.",
+   "Pipes do not cross the server border: in the Nether and the End you build a separate pipe network."
+  ],
+  "sources": [
+   "config/pipez-server.toml (srv/config)",
+   "pipez lang de_de (tooltip.pipez.distribution.*)",
+   "pipez ItemPipeType (Distribution.NEAREST)"
+  ]
+ },
+ "fluid_pipe": {
+  "de": [
+   "Statt der Spender kommen zwei leere [[minecraft:bucket]] ins Rezept. Mit Modifikation schafft das Rohr 100 mB (Normal), 500 mB (Verbessert) und ab Stufe 3 2 000 mB pro Tick.",
+   "Ein [[mekanismgenerators:heat_generator]] ({{mekanism/heat_gen}}) ist der erste gute Verbraucher. Rohre führen nicht auf den Nether-Server hinüber, stell den Generator also neben die Lava im Nether oder zapf einen Lavasee in der Oberwelt an ({{farms/lava}}). Ab Stufe 3 bringen Flux Networks den Strom aus dem Nether nach Hause."
+  ],
+  "en": [
+   "Two empty [[minecraft:bucket]]s replace the droppers in the recipe. With upgrades the pipe moves 100 mB (basic), 500 mB (improved) and from stage 3 2,000 mB per tick.",
+   "A [[mekanismgenerators:heat_generator]] ({{mekanism/heat_gen}}) is the first good consumer. Pipes do not cross to the Nether server, so put the generator next to the lava in the Nether, or tap a lava lake in the overworld ({{farms/lava}}). From stage 3 Flux Networks carry the power from the Nether home."
+  ],
+  "sources": [
+   "pipez:fluid_pipe (crafting_shaped)",
+   "config/pipez-server.toml (srv/config)",
+   "core/README.md (The network)",
+   "fluxnetworks:flux_plug (stage 3)"
+  ]
+ },
+ "energy_pipe": {
+  "de": [
+   "Die zwei [[minecraft:redstone_block]] im Rezept sind 18 Redstone. Mit Modifikation steigt der Durchsatz auf 1 024 FE (Normal), 8 192 FE (Verbessert) und ab Stufe 3 auf 32 768 FE pro Tick.",
+   "Ein Stromrohr verteilt schon ohne Modifikation reihum, du musst also nichts umstellen, damit alle Maschinen Strom bekommen."
+  ],
+  "en": [
+   "The two [[minecraft:redstone_block]]s in the recipe are 18 redstone. With upgrades the throughput rises to 1,024 FE (basic), 8,192 FE (improved) and from stage 3 to 32,768 FE per tick.",
+   "An energy pipe already uses round robin without an upgrade, so you do not need to change anything for every machine to get power."
+  ],
+  "sources": [
+   "pipez:energy_pipe (crafting_shaped)",
+   "config/pipez-server.toml (srv/config)",
+   "pipez EnergyPipeType (Distribution.ROUND_ROBIN)"
+  ]
+ },
+ "gas_pipe": {
+  "de": [
+   "Die [[mekanism:alloy_infused]] machst du im Metallurgischen Infuser aus Kupfer und Redstone ({{mekanism/alloy}}). Zwei davon reichen für 16 Rohre.",
+   "Mit Modifikation bewegt ein Gasrohr 400 mB (Normal), 2 000 mB (Verbessert) und ab Stufe 3 8 000 mB pro Tick."
+  ],
+  "en": [
+   "You make the [[mekanism:alloy_infused]] in the Metallurgic Infuser from copper and redstone ({{mekanism/alloy}}). Two of them make 16 pipes.",
+   "With upgrades a gas pipe moves 400 mB (basic), 2,000 mB (improved) and from stage 3 8,000 mB per tick."
+  ],
+  "sources": [
+   "pipez:gas_pipe (crafting_shaped, mekanism:alloy_infused)",
+   "config/pipez-server.toml (srv/config)",
+   "quest mekanism/alloy"
+  ]
+ },
+ "basic_upgrade": {
+  "de": [
+   "Für die vier [[minecraft:iron_nugget]] reicht ein Eisenbarren, zerlegt an der Werkbank. Eine Modifikation passt in jede Rohrsorte und merkt sich ihre Einstellungen für Items, Flüssigkeit, Strom und Gas getrennt.",
+   "8 Gegenstände alle 15 Ticks sind gut 30 pro Minute mehr als ohne Modifikation, aber noch keine Verteilung: Die kommt mit {{pipes/improved_upgrade}}."
+  ],
+  "en": [
+   "One iron ingot split at the crafting table gives the four [[minecraft:iron_nugget]]s. An upgrade fits every pipe kind and keeps its settings for items, fluids, energy and gas apart.",
+   "8 items every 15 ticks is a good 30 per minute more than without an upgrade, but still no distribution mode: that comes with {{pipes/improved_upgrade}}."
+  ],
+  "sources": [
+   "pipez:basic_upgrade (crafting_shaped)",
+   "config/pipez-server.toml (srv/config)",
+   "pipez lang (tooltip.pipez.upgrade.configured.*)"
+  ]
+ },
+ "improved_upgrade": {
+  "de": [
+   "Auf Kronwerke ersetzt [[create:brass_ingot]] das Gold im Rezept. Messing mischst du erhitzt im Mixer, 16 Barren lagen schon im Startpaket von Stufe 2.",
+   "Die Verteilung stellst du im Fenster des ziehenden Endes ein. Die Fortgeschrittene Modifikation (Diamanten und Redstone-Blöcke um diese) öffnet erst mit Stufe 3, siehe {{pipes/outlook}}."
+  ],
+  "en": [
+   "On Kronwerke a [[create:brass_ingot]] replaces the gold in the recipe. You mix brass heated in the mixer, and the stage 2 starter kit already held 16 ingots.",
+   "You choose the distribution mode in the window of the extracting end. The Advanced Pipe Upgrade (diamonds and redstone blocks around this one) only opens in stage 3, see {{pipes/outlook}}."
+  ],
+  "sources": [
+   "kubejs/server_scripts/kronwerke/links.js (swap pipez:improved_upgrade gold to brass)",
+   "pipez:improved_upgrade",
+   "config/kronwerke/goals.json (stage1 starterKit)",
+   "pipez:advanced_upgrade (stage 3)"
+  ]
+ },
+ "outlook": {
+  "de": [
+   "Das [[pipez:filter_destination_tool]] kostet fünf Eisenbarren, zwei Redstone, eine Glasscheibe und einen Knopf. Das [[pipez:universal_pipe]] trägt Items, Flüssigkeiten, Strom und Gas, sein Rezept gibt sechs Stück.",
+   "Die Fortgeschrittene Modifikation und das Universalrohr öffnen mit Stufe 3, die Ultimative Modifikation (Netherit) mit Stufe 4 und die Unendliche erst mit Stufe 5."
+  ],
+  "en": [
+   "The [[pipez:filter_destination_tool]] costs five iron ingots, two redstone, a glass pane and a button. The [[pipez:universal_pipe]] carries items, fluids, energy and gas, and its recipe gives six.",
+   "The Advanced Pipe Upgrade and the universal pipe open in stage 3, the Ultimate Pipe Upgrade (netherite) in stage 4 and the Infinity upgrade only in stage 5."
+  ],
+  "sources": [
+   "pipez:filter_destination_tool",
+   "pipez:universal_pipe",
+   "pipez UniversalPipeTileEntity (Item, Fluid, Energy, Gas types)",
+   "kubejs/data/kronwerke/chapters/stages/stage3.json, stage4.json, stage5.json"
+  ]
+ },
+ "blank_module": {
+  "de": [
+   "Modular Routers hat keine deutsche Übersetzung: Im Spiel und in EMI heißen alle Teile englisch, das leere Modul ist das [[modularrouters:blank_module]].",
+   "Die drei Goldklumpen sind ein Drittel Goldbarren. Ein Rezept gibt sechs Module, und ein Router braucht nur eins davon, denn {{pipes/router}} gibt vier Router auf einmal."
+  ],
+  "en": [
+   "The [[modularrouters:blank_module]] is the base of almost every module: one craft gives six.",
+   "The three gold nuggets are a third of a gold ingot. A router needs only one module, since {{pipes/router}} gives four routers at once."
+  ],
+  "sources": [
+   "modularrouters:blank_module (crafting_shaped, 6x)",
+   "modular-routers-13.2.7 jar (assets/modularrouters/lang: no de_de)",
+   "modularrouters:modular_router (4x)"
+  ]
+ },
+ "router": {
+  "de": [
+   "Auf Kronwerke kommen [[create:andesite_alloy]] statt Eisenbarren in die Ecken. Ein Rezept gibt vier [[modularrouters:modular_router]].",
+   "Der Takt ist 20 Ticks. Im Öko-Modus schaltet der Router nach 100 Ticks ohne Arbeit auf einen Durchlauf alle 100 Ticks, das schont den Server bei Routern, die selten etwas zu tun haben."
+  ],
+  "en": [
+   "On Kronwerke [[create:andesite_alloy]] replaces the iron ingots in the corners. One craft gives four [[modularrouters:modular_router]]s.",
+   "The base tick rate is 20 ticks. In eco mode the router drops to one run every 100 ticks after 100 idle ticks, which spares the server for routers that rarely have work."
+  ],
+  "sources": [
+   "kubejs/server_scripts/kronwerke/links.js (swap modular_router iron to andesite_alloy)",
+   "modularrouters:modular_router",
+   "config/modularrouters-common.toml (srv/config) (baseTickRate, ecoTimeout, lowPowerTickRate)"
+  ]
+ },
+ "puller": {
+  "de": [
+   "Den [[minecraft:sticky_piston]] machst du aus einem Kolben und einem Schleimball. Mk1 zieht nur aus dem Block direkt am Router.",
+   "Mehr Gegenstände pro Durchlauf bringen Stapel-Upgrades ({{pipes/upgrades}}). Mit einer Enderperle wird er zum Puller Mk2 ({{pipes/mk2}}), der 12 Blöcke weit zieht."
+  ],
+  "en": [
+   "You make the [[minecraft:sticky_piston]] from a piston and a slimeball. The Mk1 only pulls from the block right next to the router.",
+   "Stack upgrades ({{pipes/upgrades}}) give more items per run. With an ender pearl it becomes the Puller Module Mk2 ({{pipes/mk2}}), which reaches 12 blocks."
+  ],
+  "sources": [
+   "modularrouters:puller_module_1",
+   "modularrouters:puller_module_2",
+   "config/modularrouters-common.toml (srv/config) (puller2BaseRange 12)"
+  ]
+ },
+ "sender": {
+  "de": [
+   "Mit Reichweiten-Augments kommt der Mk1 von 8 auf höchstens 16 Blöcke ({{pipes/augments}}). Statt des Kolbens geht auch ein Bogen mit einem Pfeil.",
+   "Für alles, was nicht auf einer geraden Linie liegt, nimm gleich den Mk2 aus {{pipes/mk2}}."
+  ],
+  "en": [
+   "With range augments the Mk1 goes from 8 to at most 16 blocks ({{pipes/augments}}). A bow and an arrow work instead of the piston.",
+   "For anything not on a straight line, go straight to the Mk2 from {{pipes/mk2}}."
+  ],
+  "sources": [
+   "modularrouters:sender_module_1, sender_module_1_alt",
+   "config/modularrouters-common.toml (srv/config) (sender1BaseRange 8, sender1MaxRange 16)"
+  ]
+ },
+ "mk2": {
+  "de": [
+   "Nimm das Rezept mit vier Mk1 und einer [[minecraft:ender_pearl]]: Es gibt vier Mk2 für eine Perle. Für die Sortieranlage brauchst du ohnehin vier Sender Mk2.",
+   "Der Sender Mk3 ([[modularrouters:sender_module_3]]) braucht Endstein und eine Endertruhe. Nether und End laufen auf eigenen Servern, dorthin sendet auch der Mk3 nicht."
+  ],
+  "en": [
+   "Use the recipe with four Mk1 and one [[minecraft:ender_pearl]]: it gives four Mk2 for one pearl. The sorting setup needs four Sender Mk2 anyway.",
+   "The Sender Module Mk3 ([[modularrouters:sender_module_3]]) needs end stone and an ender chest. The Nether and the End run on their own servers, so even the Mk3 cannot send there."
+  ],
+  "sources": [
+   "modularrouters:sender_module_2_x4, puller_module_2_x4",
+   "modularrouters:sender_module_3",
+   "config/modularrouters-common.toml (srv/config) (sender2BaseRange 24, sender2MaxRange 48, puller2 12/24)"
+  ],
+  "client": [
+   "Sender Mk3 erreicht Nether und End nicht (eigene Server)"
+  ]
+ },
+ "vacuum": {
+  "de": [
+   "Das [[minecraft:ender_eye]] machst du aus einer Enderperle und Lohenstaub. Die Reichweite ist 6 Blöcke in jede Richtung, mit Reichweiten-Augments bis 12.",
+   "Leg einen Sender dahinter, sonst ist der Puffer nach einem Stapel voll und das Vakuum hört auf."
+  ],
+  "en": [
+   "You make the [[minecraft:ender_eye]] from an ender pearl and blaze powder. The range is 6 blocks in every direction, up to 12 with range augments.",
+   "Put a sender behind it, or the buffer is full after one stack and the vacuum stops."
+  ],
+  "sources": [
+   "modularrouters:vacuum_module",
+   "config/modularrouters-common.toml (srv/config) (vacuumBaseRange 6, vacuumMaxRange 12)"
+  ]
+ },
+ "void": {
+  "de": [
+   "Am sichersten steht das [[modularrouters:void_module]] ganz rechts, hinter allen Sendern, und dazu mit Whitelist. Dann vernichtet es nur, was kein Sender losgeworden ist.",
+   "Es kostet keinen Strom, aber jede Fehleinstellung kostet Gegenstände: Teste die Whitelist erst mit Bruchstein."
+  ],
+  "en": [
+   "The [[modularrouters:void_module]] is safest at the far right, behind all senders, and with a whitelist. Then it only destroys what no sender could get rid of.",
+   "It needs no power, but every wrong setting costs items: test the whitelist with cobblestone first."
+  ],
+  "sources": [
+   "modularrouters:void_module (crafting_shapeless)",
+   "config/modularrouters-common.toml (srv/config) (voidModuleEnergyCost 0)"
+  ]
+ },
+ "breaker": {
+  "de": [
+   "Das Breaker-Modul hat ein eigenes Rezept, in das jede Spitzhacke passt. Die Abbaustufe der Spitzhacke gilt wirklich, für Obsidian brauchst du also Diamant oder besser.",
+   "Abgebaute Erze lassen ihre Erfahrung fallen. Das Placer-Modul braucht einen [[minecraft:dispenser]] (Werfer) und Erde. Als Nächstes kommen {{pipes/activator}} und {{pipes/extruder}}."
+  ],
+  "en": [
+   "The Breaker Module has its own recipe that takes any pickaxe. The pickaxe's harvest level really applies, so obsidian needs diamond or better.",
+   "Mined ores drop their experience. The Placer Module takes a [[minecraft:dispenser]] and dirt. Next come {{pipes/activator}} and {{pipes/extruder}}."
+  ],
+  "sources": [
+   "modularrouters:breaker_module (type modularrouters:breaker_module)",
+   "modularrouters:placer_module",
+   "config/modularrouters-common.toml (srv/config) (breakerHarvestLevelLimit true, blockBreakXPDrops true)"
+  ]
+ },
+ "fluid_module": {
+  "de": [
+   "Der Router bewegt 50 mB pro Tick, das Modul arbeitet aber nur einmal pro Takt und schiebt dann die Menge des ganzen Takts. Jedes Flüssigkeits-Upgrade gibt 10 mB pro Tick dazu, für die Grenze von 400 mB brauchst du 35 Stück.",
+   "Mit einem Prismarinsplitter wird daraus das Flüssigkeits-Modul Mk2, das wie der Sender Mk2 auf ein Ziel bis 12 Blöcke weit gebunden wird."
+  ],
+  "en": [
+   "The router moves 50 mB per tick, but the module only works once per router tick and then moves the amount for the whole interval. Each Fluid Transfer Upgrade adds 10 mB per tick, so the 400 mB cap takes 35 of them.",
+   "A prismarine shard turns it into the Fluid Module Mk2, which binds to a target up to 12 blocks away like the Sender Mk2."
+  ],
+  "sources": [
+   "modularrouters:fluid_module",
+   "modularrouters:fluid_upgrade",
+   "modularrouters:fluid_module_2 (prismarine_shard)",
+   "config/modularrouters-common.toml (srv/config) (fluidBaseTransferRate 50, fluidMaxTransferRate 400, mBperFluidUpgade 10, fluid2BaseRange 12)"
+  ]
+ },
+ "upgrades": {
+  "de": [
+   "Die [[minecraft:blaze_rod]] für das Geschwindigkeits-Upgrade bekommst du von Lohen in der Netherfestung ({{nether/blaze}}). Mehr als neun Geschwindigkeits-Upgrades bringen nichts, schneller als alle 2 Ticks läuft kein Router.",
+   "Das Stapel-Upgrade braucht Steinziegel und einen Ziegelstein. Dämpfer-Upgrades (Wolle) gibt es vier pro Rezept, Sync-Upgrades sogar 16."
+  ],
+  "en": [
+   "You get the [[minecraft:blaze_rod]] for the Speed Upgrade from blazes in a Nether fortress ({{nether/blaze}}). More than nine speed upgrades do nothing, no router runs faster than every 2 ticks.",
+   "The Stack Upgrade needs stone bricks and a brick. Muffler Upgrades (wool) come four per craft, Sync Upgrades even 16."
+  ],
+  "sources": [
+   "modularrouters:speed_upgrade",
+   "modularrouters:stack_upgrade",
+   "modularrouters:muffler_upgrade (4x)",
+   "modularrouters:sync_upgrade (16x)",
+   "config/modularrouters-common.toml (srv/config) (baseTickRate 20, ticksPerUpgrade 2, hardMinTickRate 2)"
+  ]
+ },
+ "augments": {
+  "de": [
+   "Ein Augment-Kern-Rezept gibt vier Kerne, ein Reichweiten-Rezept vier [[modularrouters:range_up_augment]]. Reichweite hoch und runter lassen sich einzeln an der Werkbank ineinander umwandeln.",
+   "Wofür sich Augments lohnen, zeigen {{pipes/regulator}} und {{pipes/xp_vacuum}}."
+  ],
+  "en": [
+   "One Augment Core craft gives four cores, one range craft four [[modularrouters:range_up_augment]]s. Range Up and Range Down turn into each other one by one at the crafting table.",
+   "{{pipes/regulator}} and {{pipes/xp_vacuum}} show what augments are good for."
+  ],
+  "sources": [
+   "modularrouters:augment_core (4x)",
+   "modularrouters:range_up_augment (4x)",
+   "modularrouters:range_up_from_down"
+  ]
+ },
+ "filters": {
+  "de": [
+   "Der [[modularrouters:bulk_item_filter]] kostet einen Diamanten, vier Eisen, zwei Glas und zwei leere Module. Für die Sortieranlage ({{pipes/sorting}}) brauchst du vier davon.",
+   "Die anderen Filter entstehen aus dem Massenfilter und kosten den Diamanten also auch. Nimm den Tag-Filter, wenn eine Kiste alle Erze oder alle Barren einer Sorte aufnehmen soll."
+  ],
+  "en": [
+   "The [[modularrouters:bulk_item_filter]] costs a diamond, four iron, two glass and two blank modules. The sorting setup ({{pipes/sorting}}) needs four of them.",
+   "The other filters are made from the bulk filter, so they cost the diamond too. Use the Tag Filter when one chest should take every ore or every ingot of a kind."
+  ],
+  "sources": [
+   "modularrouters:bulk_item_filter",
+   "modularrouters:mod_filter, tag_filter, regex_filter, inspection_filter (all from bulk_item_filter)"
+  ]
+ },
+ "distributor": {
+  "de": [
+   "Ein Verteiler kostet drei Sender Mk2. Mit dem Viererrezept aus {{pipes/mk2}} sind das weniger als eine Enderperle pro Verteiler.",
+   "Das Energie-Verteiler-Modul ist formlos aus Energie-Ausgangs-Modul und Verteiler, das Energie-Upgrade dafür kommt aus {{pipes/energy}}."
+  ],
+  "en": [
+   "A distributor costs three Sender Mk2. With the four-at-once recipe from {{pipes/mk2}} that is less than one ender pearl per distributor.",
+   "The Energy Distributor Module is shapeless from an Energy Output Module and a distributor; the Energy Upgrade it needs comes from {{pipes/energy}}."
+  ],
+  "sources": [
+   "modularrouters:distributor_module",
+   "modularrouters:sender_module_2_x4",
+   "modularrouters:energy_distributor_module"
+  ]
+ },
+ "sorting": {
+  "de": [
+   "Für die Aufgabe brauchst du zwei Router (ein Rezept gibt vier), vier Sender Mk2 (ein Viererrezept, eine Enderperle) und vier Massenfilter, also vier Diamanten. Mit sechs Stapel-Upgrades zieht der Puller 64 Gegenstände pro Durchlauf.",
+   "Am Obelisken zählt Messing und Manaperle für das Ziel von Stufe 2. Die Mengen wachsen mit der Zahl aktiver Spieler, und der Schleichklick gibt nur die Hauptreihen deines Inventars ab."
+  ],
+  "en": [
+   "The task needs two routers (one craft gives four), four Sender Mk2 (one four-at-once craft, one ender pearl) and four bulk filters, so four diamonds. With six stack upgrades the puller takes 64 items per run.",
+   "At the obelisk brass and mana pearls count for the stage 2 goal. The amounts grow with the number of active players, and the sneak click only hands in the main rows of your inventory."
+  ],
+  "sources": [
+   "modularrouters:modular_router (4x)",
+   "modularrouters:sender_module_2_x4",
+   "modularrouters:bulk_item_filter",
+   "config/kronwerke/goals.json (stage2: create:brass_ingot, botania:mana_pearl, scale)"
+  ]
+ },
+ "activator": {
+  "de": [
+   "Rechtsklicks kosten keinen Strom, nur der Angriff braucht 150 FE pro Schlag. Dafür braucht der Router ein Energie-Upgrade und eine Stromzufuhr ({{pipes/energy}}).",
+   "Das Quarz kommt aus dem Nether. Auf dem Server gehört ein Sicherheits-Upgrade dazu ({{pipes/security}}), sonst handelt das Modul nicht als du."
+  ],
+  "en": [
+   "Right clicks cost no power, only attacking needs 150 FE per hit. For that the router needs an Energy Upgrade and a power supply ({{pipes/energy}}).",
+   "The quartz comes from the Nether. On the server add a Security Upgrade ({{pipes/security}}), or the module does not act as you."
+  ],
+  "sources": [
+   "modularrouters:activator_module",
+   "config/modularrouters-common.toml (srv/config) (activatorModuleEnergyCost 0, activatorModuleEnergyCostAttack 150)"
+  ],
+  "client": [
+   "Modul handelt ohne Sicherheits-Upgrade nicht als der Besitzer (quest text)"
+  ]
+ },
+ "extruder": {
+  "de": [
+   "Das Extruder-Modul Mk1 hat ein eigenes Rezept und übernimmt die Spitzhacke des Breakers samt Abbaustufe. Die Reichweite ist 16 Blöcke, mit Augments 32.",
+   "Für ein Tor aus Steinziegeln reicht ein Breaker mit Eisenspitzhacke. Der Mk2 (leeres Modul und Truhe) reicht 32 Blöcke, mit Augments 64."
+  ],
+  "en": [
+   "The Extruder Module Mk1 has its own recipe and inherits the breaker's pickaxe and harvest level. Its range is 16 blocks, 32 with augments.",
+   "For a gate of stone bricks a breaker with an iron pickaxe is enough. The Mk2 (blank module and chest) reaches 32 blocks, 64 with augments."
+  ],
+  "sources": [
+   "modularrouters:extruder_module_1 (type modularrouters:extruder_module_1)",
+   "modularrouters:extruder_module_2",
+   "config/modularrouters-common.toml (srv/config) (extruder1 16/32, extruder2 32/64, breakerHarvestLevelLimit)"
+  ]
+ },
+ "flinger": {
+  "de": [
+   "Das Dropper-Modul braucht einen [[minecraft:dropper]] (Spender), das Flinger-Modul ist dann Dropper-Modul plus Schwarzpulver. Beide kosten keinen Strom.",
+   "Schwarzpulver lassen Creeper fallen. Zusammen mit {{pipes/vacuum}} am Ziel wird daraus ein Transport ganz ohne Rohre."
+  ],
+  "en": [
+   "The Dropper Module takes a [[minecraft:dropper]], and the Flinger Module is a Dropper Module plus gunpowder. Neither needs power.",
+   "Creepers drop gunpowder. With a {{pipes/vacuum}} router at the target it becomes transport without any pipes."
+  ],
+  "sources": [
+   "modularrouters:dropper_module",
+   "modularrouters:flinger_module",
+   "config/modularrouters-common.toml (srv/config) (dropper/flinger EnergyCost 0)"
+  ]
+ },
+ "xp_vacuum": {
+  "de": [
+   "[[minecraft:soul_sand]] findest du im Nether, vor allem im Seelensandtal. Das Augment kommt in einen der Augment-Plätze des Vakuum-Moduls aus {{pipes/vacuum}}.",
+   "Ein Augment-Kern-Rezept gibt vier Kerne, die übrigen drei passen in {{pipes/augments}} und {{pipes/regulator}}."
+  ],
+  "en": [
+   "You find [[minecraft:soul_sand]] in the Nether, mostly in the soul sand valley. The augment goes into an augment slot of the vacuum module from {{pipes/vacuum}}.",
+   "One Augment Core craft gives four cores; the other three fit {{pipes/augments}} and {{pipes/regulator}}."
+  ],
+  "sources": [
+   "modularrouters:xp_vacuum_augment",
+   "modularrouters:augment_core (4x)"
+  ]
+ },
+ "detector": {
+  "de": [
+   "Den [[minecraft:comparator]] baust du aus Nether-Quarz, drei Stein und drei Redstone-Fackeln. Das Modul kostet keinen Strom.",
+   "Weil es nichts bewegt, kannst du es an jede Stelle der Modulreihe setzen."
+  ],
+  "en": [
+   "You build the [[minecraft:comparator]] from nether quartz, three stone and three redstone torches. The module needs no power.",
+   "Since it moves nothing, you can put it anywhere in the module row."
+  ],
+  "sources": [
+   "modularrouters:detector_module",
+   "config/modularrouters-common.toml (srv/config) (detectorModuleEnergyCost 0)"
+  ]
+ },
+ "security": {
+  "de": [
+   "Das Rezept kostet ein Quarz, zwei Goldklumpen, ein Redstone und ein leeres Upgrade. Pack es in jeden Router, der in deinem Claim abbaut, setzt oder klickt."
+  ],
+  "en": [
+   "The recipe costs one quartz, two gold nuggets, one redstone and a blank upgrade. Put it in every router that breaks, places or clicks in your claim."
+  ],
+  "sources": [
+   "modularrouters:security_upgrade",
+   "modularrouters:camouflage_upgrade"
+  ],
+  "client": [
+   "Router mit Sicherheits-Upgrade arbeitet in Claims als Besitzer (quest text)"
+  ]
+ },
+ "energy": {
+  "de": [
+   "Das Energie-Ausgangs-Modul gibt pro Durchlauf bis zu 1 000 FE je Energie-Upgrade ab, ohne Geschwindigkeits-Upgrade also nur einmal pro Sekunde. Geschwindigkeits-Upgrades erhöhen damit auch den Stromdurchsatz.",
+   "Ein aufladbares Item im Puffer lädt der Router dagegen jeden Tick. Strom bekommt der Router zum Beispiel über ein Stromrohr ({{pipes/energy_pipe}})."
+  ],
+  "en": [
+   "The Energy Output Module hands out up to 1,000 FE per Energy Upgrade per run, so without speed upgrades only once per second. Speed upgrades therefore raise the power throughput too.",
+   "A chargeable item in the buffer, on the other hand, gets charged every tick. The router gets its power from an energy pipe, for example ({{pipes/energy_pipe}})."
+  ],
+  "sources": [
+   "modularrouters:energy_upgrade",
+   "modularrouters:energy_output_module",
+   "config/modularrouters-common.toml (srv/config) (fePerEnergyUpgrade 50000, feXferPerEnergyUpgrade 1000)",
+   "modularrouters ModularRouterBlockEntity.serverTick/maybeDoEnergyTransfer, CompiledEnergyOutputModule (javap)"
+  ]
+ },
+ "regulator": {
+  "de": [
+   "Das Augment kostet vier Nether-Quarz, zwei direkt und je eines in den beiden Komparatoren. Ein [[modularrouters:regulator_augment]] gilt nur für das Modul, in dem es steckt.",
+   "Für mehrere Öfen mit je 16 Kohle brauchst du also pro Sender ein eigenes Augment."
+  ],
+  "en": [
+   "The augment costs four nether quartz, two directly and one in each of the two comparators. A [[modularrouters:regulator_augment]] only applies to the module it sits in.",
+   "For several furnaces with 16 coal each you need one augment per sender."
+  ],
+  "sources": [
+   "modularrouters:regulator_augment"
+  ]
+ },
+ "pump": {
+  "de": [
+   "Auf Kronwerke steckt eine [[create:mechanical_pump]] statt des Diamantblocks in der Mitte. Strom kostet nur das Abpumpen: 100 FE pro Block, das Weiterrücken ist frei.",
+   "Der Nether ist ein eigener Server, und Rohre führen nicht hinüber. Pumpst du dort einen Lavasee leer, stehen die Wärmegeneratoren mit im Nether, und ab Stufe 3 bringen Flux Networks ihren Strom in die Oberwelt. Ohne Umweg geht es mit einem Lavasee in der Oberwelt ({{farms/lava}})."
+  ],
+  "en": [
+   "On Kronwerke a [[create:mechanical_pump]] replaces the diamond block in the middle. Only draining costs power: 100 FE per block, moving on is free.",
+   "The Nether is a server of its own, and pipes do not cross. If you drain a lava lake there, the heat generators stand in the Nether too, and from stage 3 Flux Networks carry their power to the overworld. Without the detour, use a lava lake in the overworld ({{farms/lava}})."
+  ],
+  "sources": [
+   "core/README.md (The network: Flux Networks; pipes do not cross)",
+   "fluxnetworks:flux_plug (stage 3)",
+   "kubejs/server_scripts/kronwerke/links.js (swap rangedpumps:pump diamond_block to mechanical_pump)",
+   "rangedpumps:pump",
+   "config/rangedpumps-server.toml (srv/config: range 64, speed 8, tankCapacity 32000, energyUsagePerDrain 100, energyUsagePerMove 0, replaceLiquidWithBlock stone)"
+  ]
+ },
+ "tempad": {
+  "de": [
+   "Alles von Tempad, auch [[tempad:time_steel]] und das Chronometer, ist bis Stufe 3 gesperrt. Eine Tür bleibt 200 Ticks offen und erscheint 3 Blöcke vor dir.",
+   "Nether und End laufen auf eigenen Servern, dorthin öffnet das Tempad keine Tür. Für den Weg dorthin bleiben die Portale."
+  ],
+  "en": [
+   "Everything from Tempad, including [[tempad:time_steel]] and the chronometer, is locked until stage 3. A door stays open for 200 ticks and appears 3 blocks in front of you.",
+   "The Nether and the End run on their own servers, so the Tempad opens no door there. The portals remain the way in."
+  ],
+  "sources": [
+   "kubejs/data/kronwerke/chapters/stages/stage3.json (tempad:*)",
+   "config/tempad.jsonc (srv/config: cost_per_door 1000, cost_to_persist 10, time_in_world 200, placement_distance 3, tempad capacity 6000, chronometer generation_rate 36)"
+  ],
+  "client": [
+   "Tempad-Tür in Nether und End geht nicht (eigene Server)"
+  ]
+ }
+}

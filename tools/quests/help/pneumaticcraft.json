@@ -1,0 +1,777 @@
+{
+ "welcome": {
+  "de": [
+   "Beim Sprengen geht jeder Barren mit 20 Prozent Wahrscheinlichkeit verloren, bei einem [[minecraft:iron_block]] ebenso der ganze Block. Sprenge also lieber viele einzelne Barren als wenige Blöcke.",
+   "PneumaticCraft hat keine deutsche Übersetzung: Im Spiel und in EMI heißen alle Teile englisch, das Druckeisen ist der [[pneumaticcraft:ingot_iron_compressed]]. Das Druckluftrohr braucht auf Kronwerke Druckeisen und ein Create-Flüssigkeitsrohr ({{pneumaticcraft/tube}})."
+  ],
+  "en": [
+   "When you blow it up, every ingot has a 20 percent chance to be lost, and an [[minecraft:iron_block]] risks the whole block the same way. So blow up many single ingots rather than a few blocks.",
+   "The [[pneumaticcraft:ingot_iron_compressed]] is in almost every recipe of the mod. On Kronwerke the pressure tube takes compressed iron and a Create fluid pipe ({{pneumaticcraft/tube}})."
+  ],
+  "sources": [
+   "pneumaticcraft:explosion_crafting/compressed_iron_ingot (loss_rate 20)",
+   "pneumaticcraft:explosion_crafting/compressed_iron_block (loss_rate 20)",
+   "pneumaticcraft jar assets/pneumaticcraft/lang (no de_de)"
+  ]
+ },
+ "reinforced_stone": {
+  "de": [
+   "Das Rezept will echten [[minecraft:stone]], keinen Bruchstein: Brenn Bruchstein vorher im Ofen. Am Steinmetz wird Verstärkter Stein eins zu eins zu Ziegeln, Mauern oder Stufen, aus einem Stein werden dort zwei Stufen.",
+   "Die Steinstufen brauchst du für Ladestation, Gaslift, Raffinerie und Anlage, die Ziegelmauern für Kanonenrohr und Ätzbecken."
+  ],
+  "en": [
+   "The recipe wants real [[minecraft:stone]], not cobblestone: smelt the cobblestone first. At the stonecutter reinforced stone turns one to one into bricks, walls or slabs, and one stone gives two slabs there.",
+   "You need the stone slabs for the charging station, gas lift, refinery and plant, the brick walls for the cannon barrel and etching tank."
+  ],
+  "sources": [
+   "pneumaticcraft:reinforced_stone (minecraft:stone, 8x)",
+   "pneumaticcraft:reinforced_bricks_from_stone_stonecutting",
+   "pneumaticcraft:reinforced_stone_slab_from_stone_stonecutting",
+   "pneumaticcraft:reinforced_stone_slab (6x)"
+  ]
+ },
+ "tube": {
+  "de": [
+   "Auf Kronwerke steckt ein [[create:fluid_pipe]] statt Glas zwischen den Barren, der Untertitel mit Glas stimmt nicht mehr. Das Rezept gibt acht Rohre.",
+   "Die Gefahrengrenze liegt bei 5 Bar, der Höchstwert bei 7 Bar. Schließ deshalb früh ein Sicherheitsventil an ({{pneumaticcraft/safety}})."
+  ],
+  "en": [
+   "On Kronwerke a [[create:fluid_pipe]] replaces the glass between the ingots, so the subtitle with glass is out of date. The recipe gives eight tubes.",
+   "The danger limit is 5 bar, the maximum 7 bar. So add a safety valve early ({{pneumaticcraft/safety}})."
+  ],
+  "sources": [
+   "kubejs/server_scripts/kronwerke/round.js (pressure_tube: glass to create:fluid_pipe)",
+   "pneumaticcraft:pressure_tube (8x)",
+   "pneumaticcraft jar: me/desht/pneumaticcraft/lib/PneumaticValues (javap -constants) (VOLUME_PRESSURE_TUBE 1000, DANGER/MAX_PRESSURE_TIER_ONE 5/7)"
+  ]
+ },
+ "compressor": {
+  "de": [
+   "Auf Kronwerke kommt ein [[create:blaze_burner]] statt des Ofens unten in die Mitte. Den einen aus dem Startpaket von Stufe 2 kannst du dafür nehmen, für weitere fängst du Lohen ({{create_brass/blaze_burner}}).",
+   "Der Kompressor fasst 5 000 mL. Der [[pneumaticcraft:manual_compressor]] ist schon ab Stufe 1 offen: 1 000 mL pro Pumpzyklus für etwas Hunger."
+  ],
+  "en": [
+   "On Kronwerke a [[create:blaze_burner]] replaces the furnace at the bottom middle. You can use the one from the stage 2 starter kit; for more, catch blazes ({{create_brass/blaze_burner}}).",
+   "The compressor holds 5,000 mL. The [[pneumaticcraft:manual_compressor]] is already open in stage 1: 1,000 mL per pump cycle for a little hunger."
+  ],
+  "sources": [
+   "kubejs/server_scripts/kronwerke/round.js (air_compressor: furnace to create:blaze_burner)",
+   "pneumaticcraft:air_compressor",
+   "config/kronwerke/goals.json (stage1 starterKit blaze_burner)",
+   "pneumaticcraft jar: me/desht/pneumaticcraft/lib/PneumaticValues (javap -constants) (PRODUCTION_COMPRESSOR 10, VOLUME_AIR_COMPRESSOR 5000)",
+   "config/pneumaticcraft-common.toml (srv/config) (manual_compressor_air_per_cycle 1000)",
+   "pneumaticcraft:manual_compressor (stage 1)"
+  ]
+ },
+ "pressure": {
+  "de": [
+   "**Druck ist Luft geteilt durch Volumen, ohne minus 1**: 20 000 mL Luft in 5 000 mL Volumen sind 4 Bar, nicht 3. Ein voller Kompressor (5 000 mL) bei 5 Bar enthält also 25 000 mL.",
+   "Die Gefahrengrenze ist 5 Bar, bei 7 Bar ist für alles in diesem Kapitel Schluss."
+  ],
+  "en": [
+   "**Pressure is air divided by volume, without minus 1**: 20,000 mL of air in 5,000 mL of volume is 4 bar, not 3. So a compressor (5,000 mL) at 5 bar holds 25,000 mL.",
+   "The danger limit is 5 bar, and 7 bar is the end for everything in this chapter."
+  ],
+  "sources": [
+   "pneumaticcraft jar: common/capabilities/BasicAirHandler.getPressure (airAmount / volume, javap)",
+   "pneumaticcraft jar: me/desht/pneumaticcraft/lib/PneumaticValues (javap -constants) (DANGER_PRESSURE_TIER_ONE 5, MAX_PRESSURE_TIER_ONE 7, VOLUME_AIR_COMPRESSOR 5000)"
+  ]
+ },
+ "gauge": {
+  "de": [
+   "Den [[pneumaticcraft:pressure_gauge]] brauchst du für Sicherheitsventil, Druckanzeige-Modul und Manometer je einmal, für die Vakuumpumpe zweimal.",
+   "Vier Stück reichen also genau für {{pneumaticcraft/safety}} und das Manometer aus {{pneumaticcraft/canister}}, mit einem übrig."
+  ],
+  "en": [
+   "You need one [[pneumaticcraft:pressure_gauge]] each for the safety valve, the pressure gauge module and the manometer, and two for the vacuum pump.",
+   "Four are enough for {{pneumaticcraft/safety}} and the manometer from {{pneumaticcraft/canister}}, with one to spare."
+  ],
+  "sources": [
+   "pneumaticcraft:pressure_gauge",
+   "pneumaticcraft:safety_tube_module",
+   "pneumaticcraft:pressure_gauge_module",
+   "pneumaticcraft:manometer",
+   "pneumaticcraft:vacuum_pump"
+  ]
+ },
+ "safety": {
+  "de": [
+   "Zwei Sicherheitsventile um ein Druckluftrohr ergeben das Regler-Modul, das du für verstärkte Rohre brauchst ({{pneumaticcraft/reinforced_tube}}). Mach also gleich ein paar mehr.",
+   "Das Sicherheits-Upgrade ({{pneumaticcraft/upgrades}}) baut ein Ventil direkt in eine Maschine ein."
+  ],
+  "en": [
+   "Two safety tube modules around a pressure tube make the Regulator Tube Module, which you need for reinforced tubes ({{pneumaticcraft/reinforced_tube}}). So make a few extra.",
+   "The Security Upgrade ({{pneumaticcraft/upgrades}}) puts a valve right into a machine."
+  ],
+  "sources": [
+   "pneumaticcraft:safety_tube_module",
+   "pneumaticcraft:pressure_gauge_module",
+   "pneumaticcraft:regulator_tube_module",
+   "pneumaticcraft:security_upgrade"
+  ]
+ },
+ "walls": {
+  "de": [
+   "Eine 3x3x3-Kammer hat 26 Hüllblöcke. Mit einem Ventil und zwei Schnittstellen sind das 23 Wände oder Gläser, also zwei Rezepte Wände.",
+   "Wände lassen sich formlos mit Glas zu Kammerglas machen, eins oder vier auf einmal. Du musst dich beim Craften also noch nicht festlegen."
+  ],
+  "en": [
+   "A 3x3x3 chamber has 26 shell blocks. With one valve and two interfaces that is 23 walls or glass, so two crafts of walls.",
+   "Walls turn into chamber glass shapeless with glass, one or four at a time. So you do not have to decide while crafting."
+  ],
+  "sources": [
+   "pneumaticcraft:pressure_chamber_wall (16x)",
+   "pneumaticcraft:pressure_chamber_glass (16x)",
+   "pneumaticcraft:pressure_chamber_glass_x1, _x4"
+  ]
+ },
+ "valve_interface": {
+  "de": [
+   "Acht Druckeisen um ein Rohr geben sogar 16 Ventile. Eine Kammer braucht nur eins, mehr lohnen sich erst für größere Kammern.",
+   "Zum Befüllen der I-Schnittstelle eignet sich der Rundum-Trichter aus {{pneumaticcraft/omni_hopper}}."
+  ],
+  "en": [
+   "Eight compressed iron around a tube even give 16 valves. A chamber needs only one; more only pay off for bigger chambers.",
+   "The omnidirectional hopper from {{pneumaticcraft/omni_hopper}} is a good way to fill the input interface."
+  ],
+  "sources": [
+   "pneumaticcraft:pressure_chamber_valve (16x)",
+   "pneumaticcraft:pressure_chamber_valve_x4",
+   "pneumaticcraft:pressure_chamber_interface (2x)",
+   "pneumaticcraft jar: me/desht/pneumaticcraft/lib/PneumaticValues (javap -constants) (USAGE_CHAMBER_INTERFACE 1000)"
+  ]
+ },
+ "chamber": {
+  "de": [
+   "Das Volumen ist 16 000 mL pro freiem Innenblock: 16 000 bei 3x3x3, 128 000 bei 4x4x4 und 432 000 bei 5x5x5. Für die ersten Rezepte reicht die kleine Kammer, sie steht am schnellsten unter Druck.",
+   "Die Aufgabe ist der Fortschritt beim Zusammensetzen, die Kammer muss also nur einmal vollständig stehen. Danach geht es mit {{pneumaticcraft/chamber_iron}} und {{pneumaticcraft/chamber_recipes}} weiter."
+  ],
+  "en": [
+   "The volume is 16,000 mL per empty inner block: 16,000 at 3x3x3, 128,000 at 4x4x4 and 432,000 at 5x5x5. The small chamber is enough for the first recipes and reaches pressure fastest.",
+   "The task is the advancement for assembling it, so the chamber only has to be complete once. Then go on with {{pneumaticcraft/chamber_iron}} and {{pneumaticcraft/chamber_recipes}}."
+  ],
+  "sources": [
+   "pneumaticcraft jar: me/desht/pneumaticcraft/lib/PneumaticValues (javap -constants) (VOLUME_PRESSURE_CHAMBER_PER_EMPTY 16000, DANGER_PRESSURE_PRESSURE_CHAMBER 5)",
+   "advancement pneumaticcraft:pressure_chamber"
+  ]
+ },
+ "chamber_iron": {
+  "de": [
+   "Bei 2 Bar steckt in der kleinen Kammer 32 000 mL Luft, jeder Gegenstand durch die Schnittstelle kostet 1 000 mL. Ein [[minecraft:iron_block]] braucht genauso 2 Bar wie ein Barren.",
+   "Neun [[pneumaticcraft:ingot_iron_compressed]] ergeben einen Druckeisenblock und umgekehrt."
+  ],
+  "en": [
+   "At 2 bar the small chamber holds 32,000 mL of air, and every item through the interface costs 1,000 mL. An [[minecraft:iron_block]] needs the same 2 bar as an ingot.",
+   "Nine [[pneumaticcraft:ingot_iron_compressed]] make a block of compressed iron and back."
+  ],
+  "sources": [
+   "pneumaticcraft:pressure_chamber/compressed_iron_ingot (2.0)",
+   "pneumaticcraft:pressure_chamber/compressed_iron_block (2.0)",
+   "pneumaticcraft:compressed_iron_block_from_ingot",
+   "pneumaticcraft jar: me/desht/pneumaticcraft/lib/PneumaticValues (javap -constants)"
+  ]
+ },
+ "chamber_recipes": {
+  "de": [
+   "Für Druckstein nimmt die Kammer alles aus #c:stones bei 1 Bar. Das [[pneumaticcraft:turbine_blade]] gibt es nur hier, du brauchst es für Turbinenrotor, Durchflussmesser und Vakuumpumpe.",
+   "Die Kammer kann außerdem Bücher mit Verzauberungen beladen, mehr dazu in {{pneumaticcraft/vacuum_pump}}."
+  ],
+  "en": [
+   "For compressed stone the chamber takes anything in #c:stones at 1 bar. The [[pneumaticcraft:turbine_blade]] only comes from here; you need it for the turbine rotor, flow detector and vacuum pump.",
+   "The chamber can also move enchantments onto books, see {{pneumaticcraft/vacuum_pump}}."
+  ],
+  "sources": [
+   "pneumaticcraft:pressure_chamber/compressed_stone, turbine_blade, milk_to_slime_balls, wheat_flour, ice, packed_ice, blue_ice, coal_to_diamond",
+   "pneumaticcraft:turbine_rotor",
+   "pneumaticcraft:flow_detector_module",
+   "pneumaticcraft:pressure_chamber/pressure_chamber_disenchanting"
+  ]
+ },
+ "canister": {
+  "de": [
+   "Der [[pneumaticcraft:air_canister]] fasst 3 000 mL Volumen und bis zu 30 000 mL Luft, das sind die 10 Bar. Jede Messung mit dem Manometer kostet 30 mL aus dessen Luft.",
+   "Lade Kanister in der Ladestation ({{pneumaticcraft/charging}}), sie stecken in Schlüssel, Amadron-Tablet und Volumen-Upgrade."
+  ],
+  "en": [
+   "The [[pneumaticcraft:air_canister]] has 3,000 mL of volume and holds up to 30,000 mL of air, which is the 10 bar. Every reading with the manometer costs 30 mL of its air.",
+   "Charge canisters in the charging station ({{pneumaticcraft/charging}}); they go into the wrench, the Amadron tablet and the volume upgrade."
+  ],
+  "sources": [
+   "pneumaticcraft jar: me/desht/pneumaticcraft/lib/PneumaticValues (javap -constants) (AIR_CANISTER_VOLUME 3000, AIR_CANISTER_MAX_AIR 30000, USAGE_ITEM_MANOMETER 30)",
+   "pneumaticcraft:air_canister",
+   "pneumaticcraft:manometer"
+  ]
+ },
+ "charging": {
+  "de": [
+   "Die drei [[minecraft:brick]] brennst du aus Ton im Ofen. Die Station selbst fasst nur 1 000 mL, sie hängt also ganz am Rohrnetz.",
+   "Ab hier baust du den Druckluftschlüssel ({{pneumaticcraft/wrench}}), der ohne Ladung nichts kann."
+  ],
+  "en": [
+   "You smelt the three [[minecraft:brick]]s from clay in a furnace. The station itself holds only 1,000 mL, so it depends entirely on the tube network.",
+   "From here you build the pneumatic wrench ({{pneumaticcraft/wrench}}), which does nothing without a charge."
+  ],
+  "sources": [
+   "pneumaticcraft:charging_station (minecraft:brick)",
+   "pneumaticcraft jar: me/desht/pneumaticcraft/lib/PneumaticValues (javap -constants) (VOLUME_CHARGING_STATION 1000)"
+  ]
+ },
+ "wrench": {
+  "de": [
+   "Jeder Einsatz kostet 50 mL, ein voller Schlüssel (30 000 mL) hält also 600 Klicks.",
+   "Abbauen mit dem Schlüssel ist bei Maschinen mit Upgrades und Luft der sichere Weg, gerade beim Umbauen der Druckkammer."
+  ],
+  "en": [
+   "Every use costs 50 mL, so a full wrench (30,000 mL) lasts 600 clicks.",
+   "Breaking machines with the wrench is the safe way when they hold upgrades and air, especially when you rebuild the pressure chamber."
+  ],
+  "sources": [
+   "pneumaticcraft jar: me/desht/pneumaticcraft/lib/PneumaticValues (javap -constants) (USAGE_PNEUMATIC_WRENCH 50, PNEUMATIC_WRENCH_MAX_AIR 30000)",
+   "pneumaticcraft:pneumatic_wrench"
+  ],
+  "client": [
+   "Mindestens 3 Bar nötig (quest text)"
+  ]
+ },
+ "omni_hopper": {
+  "de": [
+   "Das Rezept braucht **fünf** Druckeisen, nicht vier: zwei oben außen, zwei in der Mitte neben der Truhe, einen unten.",
+   "Der Flüssigkeitstrichter braucht einen leeren Kleinen Tank, ein gefüllter passt nicht ins Rezept."
+  ],
+  "en": [
+   "The recipe needs **five** compressed iron, not four: two at the top corners, two beside the chest, one at the bottom.",
+   "The liquid hopper needs an empty small tank; a filled one does not fit the recipe."
+  ],
+  "sources": [
+   "pneumaticcraft:omnidirectional_hopper (pattern I I / ICI / ' I ')",
+   "pneumaticcraft:liquid_hopper (small_tank with strict components)",
+   "config/pneumaticcraft-common.toml (srv/config) (omni_hopper_dispenser, liquid_hopper_dispenser true)"
+  ]
+ },
+ "liquid_compressor": {
+  "de": [
+   "Der Kleine Tank muss leer sein, sonst nimmt die Werkbank ihn nicht an. Lava zählt als Brennstoff, weil heiße Flüssigkeiten ab 100 Grad automatisch brennen.",
+   "Mit Rohöl allein bekommst du nur 200 000 mL pro Eimer, erst {{pneumaticcraft/refinery}} macht daraus gute Brennstoffe."
+  ],
+  "en": [
+   "The small tank has to be empty, or the crafting table will not take it. Lava counts as fuel, since hot fluids from 100 degrees burn automatically.",
+   "Crude oil alone gives only 200,000 mL per bucket; {{pneumaticcraft/refinery}} turns it into good fuels."
+  ],
+  "sources": [
+   "pneumaticcraft:liquid_compressor (small_tank strict components)",
+   "pneumaticcraft:small_tank",
+   "pneumaticcraft FluidTankBlock$Size (SMALL 32000)",
+   "config/pneumaticcraft-common.toml (srv/config) (min_fluid_fuel_temperature 373)",
+   "pneumaticcraft:pneumaticcraft_fuels/crude_oil (200000)"
+  ]
+ },
+ "find_oil": {
+  "de": [
+   "Innerhalb von Bauwerken entstehen keine Ölseen. Unterirdische Seen liegen mindestens 5 Blöcke unter dem Boden, deshalb siehst du sie von oben nicht.",
+   "Findest du keins, verkauft Amadron einen Eimer Öl für einen Smaragd ({{pneumaticcraft/blueprint}})."
+  ],
+  "en": [
+   "No oil lakes generate inside structures. Underground lakes lie at least 5 blocks below the surface, so you cannot see them from above.",
+   "If you find none, Amadron sells a bucket of oil for one emerald ({{pneumaticcraft/blueprint}})."
+  ],
+  "sources": [
+   "pneumaticcraft jar data/pneumaticcraft/worldgen/placed_feature/oil_lake_underground.json (rarity 6), oil_lake_surface.json (rarity 25)",
+   "config/pneumaticcraft-common.toml (srv/config) (no_oil_lakes_in_structures true)",
+   "pneumaticcraft:amadron/emerald_to_oil"
+  ]
+ },
+ "pump_oil": {
+  "de": [
+   "Auch hier muss der Kleine Tank leer sein. Drei Druckluftrohre ergeben drei Bohrrohre, für einen tiefen See brauchst du also mehrere Stapel Rohre.",
+   "Öl, das du nicht brauchst, kauft Amadron: 5 000 mB für einen Smaragd."
+  ],
+  "en": [
+   "Here too the small tank must be empty. Three pressure tubes make three drill pipes, so a deep lake takes several stacks of tubes.",
+   "Amadron buys oil you do not need: 5,000 mB for one emerald."
+  ],
+  "sources": [
+   "pneumaticcraft:gas_lift (small_tank strict components)",
+   "pneumaticcraft:drill_pipe (3x)",
+   "pneumaticcraft:amadron/oil_to_emerald",
+   "pneumaticcraft:pneumaticcraft_fuels/crude_oil"
+  ]
+ },
+ "refinery": {
+  "de": [
+   "Für Steuerblock und zwei Ausgänge brauchst du einen leeren Kleinen Tank, zwei Diamanten und 18 Verstärkte Steinstufen. Die Ausbeute hängt nur von der Zahl der Ausgänge ab, mehr Hitze macht es nur schneller.",
+   "Für Kunststoff zählt LPG, und das liefern schon zwei Ausgänge. Weiter geht es mit {{pneumaticcraft/fuels}}."
+  ],
+  "en": [
+   "Controller and two outputs need one empty small tank, two diamonds and 18 reinforced stone slabs. The yield depends only on the number of outputs; more heat only makes it faster.",
+   "For plastic LPG is what counts, and two outputs already make it. Go on with {{pneumaticcraft/fuels}}."
+  ],
+  "sources": [
+   "pneumaticcraft:refinery",
+   "pneumaticcraft:refinery_output",
+   "pneumaticcraft:refinery/oil_2, oil_3, oil_4 (temperature min 373)"
+  ]
+ },
+ "fuels": {
+  "de": [
+   "Raffinerie-Diesel trägt den Tag #c:diesel und läuft deshalb im [[createdieselgenerators:diesel_engine]] ({{create_addons/diesel_engine}}). Die Kerosinlampe brennt auf Kronwerke jeden Brennstoff, nicht nur Kerosin.",
+   "Amadron kauft Brennstoff gegen Smaragde: 1 000 mB LPG, 2 000 mB Benzin, 3 000 mB Kerosin oder 4 000 mB Diesel je einen."
+  ],
+  "en": [
+   "Refinery diesel carries the #c:diesel tag and so runs in the [[createdieselgenerators:diesel_engine]] ({{create_addons/diesel_engine}}). On Kronwerke the kerosene lamp burns any fuel, not only kerosene.",
+   "Amadron buys fuel for emeralds: 1,000 mB LPG, 2,000 mB gasoline, 3,000 mB kerosene or 4,000 mB diesel each."
+  ],
+  "sources": [
+   "pneumaticcraft:pneumaticcraft_fuels/* (air_per_bucket, burn_rate)",
+   "pneumaticcraft jar data/c/tags/fluid/diesel.json",
+   "createdieselgenerators jar fuel_type/diesel.json (normal 96 / 6144)",
+   "config/pneumaticcraft-common.toml (srv/config) (kerosene_lamp_can_use_any_fuel true, fuel_bucket_efficiency 0.05)",
+   "pneumaticcraft:amadron/lpg_to_emerald, gasoline_to_emerald, kerosene_to_emerald, diesel_to_emerald",
+   "pneumaticcraft:thermo_plant/kerosene, gasoline, lpg"
+  ]
+ },
+ "tpp": {
+  "de": [
+   "Beide Kleinen Tanks im Rezept müssen leer sein. Die Upgrade-Matrizen brauchen 2 Bar und eine Anlage über 0 Grad, Hitze ist dafür nicht nötig.",
+   "Für Kunststoff ({{pneumaticcraft/plastic}}) und Schmiermittel ({{pneumaticcraft/lubricant}}) muss sie mindestens 100 Grad heiß sein, für das Cracken 300 Grad und 2 Bar."
+  ],
+  "en": [
+   "Both small tanks in the recipe must be empty. Upgrade matrices need 2 bar and a plant above 0 degrees; no heat is needed for them.",
+   "For plastic ({{pneumaticcraft/plastic}}) and lubricant ({{pneumaticcraft/lubricant}}) it must be at least 100 degrees, for cracking 300 degrees and 2 bar."
+  ],
+  "sources": [
+   "pneumaticcraft:thermopneumatic_processing_plant (small_tank strict)",
+   "pneumaticcraft:thermo_plant/upgrade_matrix (pressure 2, min 273)",
+   "pneumaticcraft:thermo_plant/plastic_from_lpg, lubricant_from_diesel (min 373)",
+   "pneumaticcraft:thermo_plant/kerosene (min 573, 2 bar)"
+  ]
+ },
+ "vortex": {
+  "de": [
+   "Das Rezept braucht **fünf** Druckeisen, nicht sechs: zwei oben neben dem ersten Rohr, drei in der unteren Reihe.",
+   "Bis du das Wirbelrohr hast, heizt ein brennender Lohenbrenner die Raffinerie ({{pneumaticcraft/heat_sources}})."
+  ],
+  "en": [
+   "The recipe needs **five** compressed iron, not six: two at the top beside the first tube, three in the bottom row.",
+   "Until you have the vortex tube, a fuelled blaze burner heats the refinery ({{pneumaticcraft/heat_sources}})."
+  ],
+  "sources": [
+   "pneumaticcraft:vortex_tube (pattern ITI / GTG / III)"
+  ]
+ },
+ "heat_sources": {
+  "de": [
+   "Der [[create:blaze_burner]] heizt nur, solange er Brennstoff hat: Ohne Brennstoff hat er Wärmewiderstand 100 000, entzündet 500, mit Lohenkuchen 50. Überhitzt überträgt er also zehnmal besser, nicht fünfmal.",
+   "Den Lohenbrenner aus dem Startpaket hat vielleicht schon dein Luftkompressor geschluckt, denn auf Kronwerke steckt einer in dessen Rezept ({{pneumaticcraft/compressor}})."
+  ],
+  "en": [
+   "The [[create:blaze_burner]] only heats while it has fuel: unfuelled it has a thermal resistance of 100,000, kindled 500, with blaze cake 50. So superheated it transfers ten times better, not five.",
+   "Your air compressor may already have eaten the starter kit's blaze burner, since on Kronwerke one is in its recipe ({{pneumaticcraft/compressor}})."
+  ],
+  "sources": [
+   "pneumaticcraft jar data/pneumaticcraft/recipe/block_heat_properties/create/blaze_burner_*.json (thermalResistance 100000/500/50, temperature 1700)",
+   "block_heat_properties/minecraft/magma.json",
+   "kubejs/server_scripts/kronwerke/round.js (air_compressor blaze_burner)"
+  ]
+ },
+ "heat_sink": {
+  "de": [
+   "Das Luftgitter-Modul sind vier Eisengitter um ein Druckluftrohr.",
+   "Zwischen mehrere Kühlkörper passt ein Wärmerohr: sechs Stück aus drei Wärmedämmungen oben, drei Kupfer- oder Druckeisenblöcken in der Mitte und drei Wärmedämmungen unten."
+  ],
+  "en": [
+   "The Air Grate Tube Module is four iron bars around a pressure tube.",
+   "A heat pipe fits between several heat sinks: six from three thermal lagging on top, three copper or compressed iron blocks in the middle and three thermal lagging below."
+  ],
+  "sources": [
+   "pneumaticcraft:heat_sink",
+   "pneumaticcraft:air_grate_module",
+   "pneumaticcraft:heat_pipe (6x, #pneumaticcraft:heat_pipe_conductors: copper and compressed iron blocks)"
+  ]
+ },
+ "heat_frame": {
+  "de": [
+   "Unter 0 Grad friert der Rahmen Wasser zu Eis, Lava zu Obsidian (bis 50 Prozent Bonus) und flüssigen Kunststoff zu Platten (bis 75 Prozent Bonus). Je kälter, desto höher der Bonus.",
+   "Kälte bekommt er von der kalten Seite des Wirbelrohrs ({{pneumaticcraft/vortex}})."
+  ],
+  "en": [
+   "Below 0 degrees the frame freezes water to ice, lava to obsidian (up to 50 percent bonus) and molten plastic to sheets (up to 75 percent bonus). The colder, the higher the bonus.",
+   "It gets its cold from the cold side of the vortex tube ({{pneumaticcraft/vortex}})."
+  ],
+  "sources": [
+   "pneumaticcraft:heat_frame",
+   "pneumaticcraft:heat_frame_cooling/ice, obsidian (bonusLimit 0.5), plastic (bonusLimit 0.75), temperature 273"
+  ]
+ },
+ "plastic": {
+  "de": [
+   "Ein dritter Weg: Gieß 1 000 mB Kunststoff in einen Barrenguss von Productive Metalworks. Statt LPG und Kohle geht in der Anlage auch Biodiesel mit Holzkohle ({{pneumaticcraft/biodiesel}}).",
+   "Kunststoff bleibt dein Engpass, denn Zylinder, Platinen und Amadron fressen viel davon."
+  ],
+  "en": [
+   "A third way: pour 1,000 mB of plastic into a Productive Metalworks ingot cast. Instead of LPG and coal the plant also takes biodiesel with charcoal ({{pneumaticcraft/biodiesel}}).",
+   "Plastic stays your bottleneck, since cylinders, circuit boards and Amadron eat a lot of it."
+  ],
+  "sources": [
+   "productivemetalworks:casting/pnc/plastic",
+   "pneumaticcraft:thermo_plant/plastic_from_lpg, plastic_from_biodiesel",
+   "config/pneumaticcraft-common.toml (srv/config) (in_world_plastic_solidification true)"
+  ]
+ },
+ "reinforced_tube": {
+  "de": [
+   "Das verstärkte Rohr hat die Gefahrengrenze 10 Bar und platzt spätestens bei 12 Bar. Das Regler-Modul ist zugleich die Belohnung dieser Quest.",
+   "Ein Rezept nimmt nur 50 mB Kunststoff, aus einem Eimer werden also 20 Rohre."
+  ],
+  "en": [
+   "The reinforced tube has a danger limit of 10 bar and bursts at 12 bar at the latest. The regulator module is also this quest's reward.",
+   "One craft takes only 50 mB of plastic, so a bucket makes 20 tubes."
+  ],
+  "sources": [
+   "pneumaticcraft:thermo_plant/reinforced_pressure_tube",
+   "pneumaticcraft jar api/pressure/PressureTier$2 (10.0, 12.0)",
+   "pneumaticcraft:regulator_tube_module"
+  ]
+ },
+ "cylinder": {
+  "de": [
+   "Für vier Zylinder brauchst du zwei Rezepte: zwölf Kunststoffplatten, vier Druckeisen und zwei Kanonenrohre, also zwölf Verstärkte Ziegelmauern.",
+   "Die Mauern macht der Steinmetz eins zu eins aus Verstärkten Ziegeln."
+  ],
+  "en": [
+   "Four cylinders take two crafts: twelve plastic sheets, four compressed iron and two cannon barrels, so twelve reinforced brick walls.",
+   "The stonecutter makes the walls one to one from reinforced bricks."
+  ],
+  "sources": [
+   "pneumaticcraft:pneumatic_cylinder (2x)",
+   "pneumaticcraft:cannon_barrel",
+   "pneumaticcraft:reinforced_brick_wall_from_bricks_stonecutting"
+  ]
+ },
+ "elevator": {
+  "de": [
+   "Der Aufzug fährt erst ab 3 Bar und fasst 10 000 mL, er braucht also einen gut versorgten Rohranschluss.",
+   "Sechs Druckeisen geben vier Rahmen. Für zwölf Blöcke Höhe brauchst du zwei Basen und zwölf Rahmen."
+  ],
+  "en": [
+   "The elevator only moves from 3 bar and holds 10,000 mL, so it needs a well supplied tube.",
+   "Six compressed iron give four frames. Twelve blocks of height take two bases and twelve frames."
+  ],
+  "sources": [
+   "pneumaticcraft jar: me/desht/pneumaticcraft/lib/PneumaticValues (javap -constants) (MIN_PRESSURE_ELEVATOR 3, VOLUME_ELEVATOR 10000)",
+   "config/pneumaticcraft-common.toml (srv/config) (elevator_base_blocks_per_base 6)",
+   "pneumaticcraft:elevator_frame (4x)"
+  ]
+ },
+ "door": {
+  "de": [
+   "Der Türantrieb arbeitet ab 2 Bar und fasst 2 000 mL. Ein Rohr mit Ventil am Netz reicht ihm also gut.",
+   "Das Reichweiten-Upgrade (Bogen und Pfeile) ist die Belohnung dieser Quest."
+  ],
+  "en": [
+   "The door base works from 2 bar and holds 2,000 mL, so a tube from a network with a valve serves it well.",
+   "The Range Upgrade (bow and arrows) is this quest's reward."
+  ],
+  "sources": [
+   "pneumaticcraft jar: me/desht/pneumaticcraft/lib/PneumaticValues (javap -constants) (MIN_PRESSURE_PNEUMATIC_DOOR 2, VOLUME_PNEUMATIC_DOOR 2000)",
+   "pneumaticcraft:pneumatic_door_base",
+   "pneumaticcraft:range_upgrade"
+  ]
+ },
+ "air_cannon": {
+  "de": [
+   "Die Luftkanone feuert ab 2 Bar und fasst 2 000 mL. Das GPS-Werkzeug kostet einen Diamanten und vier Kunststoffplatten.",
+   "Ein zweites GPS-Werkzeug steckt später im Amadron-Tablet ({{pneumaticcraft/blueprint}})."
+  ],
+  "en": [
+   "The air cannon fires from 2 bar and holds 2,000 mL. The GPS tool costs a diamond and four plastic sheets.",
+   "A second GPS tool later goes into the Amadron tablet ({{pneumaticcraft/blueprint}})."
+  ],
+  "sources": [
+   "pneumaticcraft jar: me/desht/pneumaticcraft/lib/PneumaticValues (javap -constants) (MIN_PRESSURE_AIR_CANNON 2, VOLUME_AIR_CANNON 2000)",
+   "pneumaticcraft:air_cannon",
+   "pneumaticcraft:gps_tool",
+   "pneumaticcraft:amadron_tablet"
+  ]
+ },
+ "lubricant": {
+  "de": [
+   "Biodiesel aus Create Diesel Generators zählt mit, weil er denselben Tag #c:biodiesel trägt. Ohne Öl und ohne Biodiesel verkauft Amadron 1 000 mB Schmiermittel für fünf Smaragde.",
+   "Ein Rezept für das Geschwindigkeits-Upgrade braucht einen vollen Eimer, also 1 000 mB."
+  ],
+  "en": [
+   "Biodiesel from Create Diesel Generators counts too, since it carries the same #c:biodiesel tag. Without oil and biodiesel Amadron sells 1,000 mB of lubricant for five emeralds.",
+   "One speed upgrade craft takes a full bucket, so 1,000 mB."
+  ],
+  "sources": [
+   "pneumaticcraft:thermo_plant/lubricant_from_diesel, lubricant_from_biodiesel",
+   "createdieselgenerators jar data/c/tags/fluid/biodiesel.json",
+   "pneumaticcraft:amadron/emerald_to_lubricant",
+   "pneumaticcraft:speed_upgrade (lubricant 1000)"
+  ]
+ },
+ "upgrades": {
+  "de": [
+   "Upgrades wirken hoch gerechnet: Zwei Geschwindigkeits-Upgrades machen 1,5 mal 1,5, also 2,25-mal so schnell. Ein Glycerintropfen statt Zucker gibt zwei Upgrades ({{pneumaticcraft/biodiesel}}).",
+   "Statt der Lapis passen in jedem Upgrade-Rezept auch Upgrade-Matrizen aus {{pneumaticcraft/tpp}}."
+  ],
+  "en": [
+   "Upgrades multiply: two speed upgrades make 1.5 times 1.5, so 2.25 times as fast. A drop of glycerol instead of sugar gives two upgrades ({{pneumaticcraft/biodiesel}}).",
+   "Every upgrade recipe also takes upgrade matrices from {{pneumaticcraft/tpp}} instead of lapis."
+  ],
+  "sources": [
+   "config/pneumaticcraft-common.toml (srv/config) (speed_upgrade_speed_multiplier 1.5, usage 1.65, exponent per upgrade)",
+   "pneumaticcraft:speed_upgrade_from_glycerol (2x)",
+   "pneumaticcraft jar tags/item/upgrade_components (lapis, upgrade_matrix)"
+  ]
+ },
+ "blueprint": {
+  "de": [
+   "Das Amadron-Tablet kostet sieben Kunststoffplatten, ein GPS-Werkzeug und einen Luftkanister. Der Druckmechaniker bietet auf Kronwerke alle seine Tauschwaren an, nicht nur die Vorlage.",
+   "Mit der Vorlage baust du {{pneumaticcraft/uv_box}}."
+  ],
+  "en": [
+   "The Amadron tablet costs seven plastic sheets, a GPS tool and an air canister. On Kronwerke the Pressure Mechanic offers all his trades, not only the blueprint.",
+   "With the blueprint you build {{pneumaticcraft/uv_box}}."
+  ],
+  "sources": [
+   "pneumaticcraft:amadron/pcb_blueprint (8 emeralds)",
+   "pneumaticcraft:amadron_tablet",
+   "config/pneumaticcraft-common.toml (srv/config) (mechanic_trades ALL, add_mechanic_house 8)"
+  ]
+ },
+ "empty_pcb": {
+  "de": [
+   "Als Kabel zählen Gold- und Kupferklumpen. [[create:copper_nugget]] bekommst du neun aus einem Kupferbarren, oder beim Waschen von zerkleinertem Kupfererz mit Create.",
+   "Fehlplatinen werden im Schmelzofen wieder zu leeren Platinen, du verlierst beim Ätzen also nur die Zeit."
+  ],
+  "en": [
+   "Gold and copper nuggets both count as wiring. You get nine [[create:copper_nugget]]s from one copper ingot, or from washing crushed copper ore with Create.",
+   "Failed PCBs turn back into empty PCBs in a blast furnace, so etching only costs you time."
+  ],
+  "sources": [
+   "pneumaticcraft:pressure_chamber/empty_pcb (1.5)",
+   "pneumaticcraft jar tags/item/wiring.json",
+   "pneumaticcraft:copper_nugget (gives create:copper_nugget 9x)",
+   "create:splashing/crushed_raw_copper",
+   "pneumaticcraft:empty_pcb_from_failed_pcb (blasting)"
+  ]
+ },
+ "uv_box": {
+  "de": [
+   "Der Lichtkasten arbeitet ab 1 Bar, verbraucht 2 mL pro Tick und fasst 2 000 mL. Die Platinen-Vorlage wird im Rezept verbaut, für einen zweiten Kasten brauchst du eine zweite.",
+   "Die drei Redstone-Lampen der Belohnung reichen für einen zweiten Kasten."
+  ],
+  "en": [
+   "The light box works from 1 bar, uses 2 mL per tick and holds 2,000 mL. The PCB blueprint is used up in the recipe, so a second box needs a second blueprint.",
+   "The three redstone lamps in the reward are enough for a second box."
+  ],
+  "sources": [
+   "pneumaticcraft jar: me/desht/pneumaticcraft/lib/PneumaticValues (javap -constants) (MIN_PRESSURE_UV_LIGHTBOX 1, USAGE_UV_LIGHTBOX 2, VOLUME_UV_LIGHTBOX 2000)",
+   "pneumaticcraft:uv_light_box (pcb_blueprint ingredient)"
+  ],
+  "client": [
+   "Vorlage wird beim Craften verbraucht"
+  ]
+ },
+ "etching": {
+  "de": [
+   "Für die Säure brauchst du einen Eimer flüssigen Kunststoff aus {{pneumaticcraft/plastic}}. Der Kleine Tank im Becken muss leer sein.",
+   "Verrottetes Fleisch, Spinnenaugen und Schwarzpulver bekommst du von Zombies, Spinnen und Creepern."
+  ],
+  "en": [
+   "The acid needs a bucket of molten plastic from {{pneumaticcraft/plastic}}. The small tank in the etching tank must be empty.",
+   "Zombies, spiders and creepers drop the rotten flesh, spider eyes and gunpowder."
+  ],
+  "sources": [
+   "pneumaticcraft:pressure_chamber/etching_acid (1.0)",
+   "pneumaticcraft:etching_tank (small_tank strict)"
+  ]
+ },
+ "pcb": {
+  "de": [
+   "Eine Platine braucht zwei Transistoren und zwei Kondensatoren, also zehn Klumpen, zwei Redstone, zwei Schleimbälle und vier Kunststoffplatten. Schleimbälle macht die Kammer aus Milch und grünem Farbstoff ({{pneumaticcraft/chamber_recipes}}).",
+   "Die vier Modul-Erweiterungskarten der Belohnung sparen dir eine Platine."
+  ],
+  "en": [
+   "One circuit board takes two transistors and two capacitors, so ten nuggets, two redstone, two slimeballs and four plastic sheets. The chamber makes slimeballs from milk and green dye ({{pneumaticcraft/chamber_recipes}}).",
+   "The four module expansion cards in the reward save you a board."
+  ],
+  "sources": [
+   "pneumaticcraft:pressure_chamber/transistor, capacitor (1.0)",
+   "pneumaticcraft:printed_circuit_board",
+   "pneumaticcraft:module_expansion_card (4x)",
+   "pneumaticcraft:pressure_chamber/milk_to_slime_balls"
+  ]
+ },
+ "outlook": {
+  "de": [
+   "Genau genommen braucht der Druckluft-Dynamo keinen Turbinenrotor: Er ist ein fortgeschrittenes Rohr, zwei Druckeisenzahnräder, drei Druckeisen und ein Einfacher Steuerschaltkreis. Der Flux-Kompressor braucht zwei Steuerschaltkreise, einen Turbinenrotor und einen Hochofen.",
+   "Weiter geht es im Kapitel PneumaticCraft für Fortgeschrittene, etwa mit {{pneumaticcraft_advanced/controller}} und {{pneumaticcraft_advanced/drone}}."
+  ],
+  "en": [
+   "Strictly, the pneumatic dynamo needs no turbine rotor: it is an advanced tube, two compressed iron gears, three compressed iron and a basic control circuit. The flux compressor needs two control circuits, a turbine rotor and a blast furnace.",
+   "It goes on in the advanced PneumaticCraft chapter, for example with {{pneumaticcraft_advanced/controller}} and {{pneumaticcraft_advanced/drone}}."
+  ],
+  "sources": [
+   "kubejs/server_scripts/kronwerke/added.js (flux_compressor, pneumatic_dynamo, drone)",
+   "kronwerke:added/flux_compressor",
+   "kronwerke:added/pneumatic_dynamo",
+   "kronwerke:added/drone",
+   "pneumaticcraft jar: me/desht/pneumaticcraft/lib/PneumaticValues (javap -constants) (PRODUCTION_ADVANCED_COMPRESSOR 50)"
+  ]
+ },
+ "modules": {
+  "de": [
+   "Das Redstone-Modul ist ein Redstone über Rohr, Verstärker und Rohr. Die vier Turbinenblätter für den Durchflussmesser presst die Kammer aus Gold und Redstone ({{pneumaticcraft/chamber_recipes}}).",
+   "Farbstoff wird beim Einfärben des Redstone-Moduls auf Kronwerke nicht verbraucht."
+  ],
+  "en": [
+   "The redstone module is a redstone above tube, repeater and tube. The chamber presses the four turbine blades for the flow detector from gold and redstone ({{pneumaticcraft/chamber_recipes}}).",
+   "On Kronwerke dyeing the redstone module does not use up the dye."
+  ],
+  "sources": [
+   "pneumaticcraft:redstone_module",
+   "pneumaticcraft:flow_detector_module",
+   "pneumaticcraft:pressure_chamber/turbine_blade",
+   "config/pneumaticcraft-common.toml (srv/config) (use_up_dyes_when_coloring false)"
+  ]
+ },
+ "vacuum_pump": {
+  "de": [
+   "Die Pumpe braucht an der Plusseite mindestens 2 Bar und fasst 2 000 mL. Die drei Turbinenblätter für jeden Rotor kommen aus der Druckkammer.",
+   "Für zwei Rotoren und die Messer brauchst du also sechs Turbinenblätter und zwei Druckmesser ({{pneumaticcraft/gauge}})."
+  ],
+  "en": [
+   "The pump needs at least 2 bar on the plus side and holds 2,000 mL. The three turbine blades for each rotor come from the pressure chamber.",
+   "So two rotors and the gauges take six turbine blades and two pressure gauges ({{pneumaticcraft/gauge}})."
+  ],
+  "sources": [
+   "pneumaticcraft jar: me/desht/pneumaticcraft/lib/PneumaticValues (javap -constants) (MIN_PRESSURE_VACUUM_PUMP 2, VOLUME_VACUUM_PUMP 2000)",
+   "pneumaticcraft:vacuum_pump",
+   "pneumaticcraft:turbine_rotor",
+   "pneumaticcraft:pressure_chamber/pressure_chamber_disenchanting"
+  ]
+ },
+ "chests": {
+  "de": [
+   "Ein Goldklumpen, vier Druckeisen, zwei Verstärkte Ziegelmauern, eine Truhe und ein Obsidian, das ist alles.",
+   "Die Intelligente Truhe braucht eine Platine, die baust du in {{pneumaticcraft/pcb}}."
+  ],
+  "en": [
+   "One gold nugget, four compressed iron, two reinforced brick walls, a chest and an obsidian, that is all.",
+   "The Smart Chest needs a circuit board, which you build in {{pneumaticcraft/pcb}}."
+  ],
+  "sources": [
+   "pneumaticcraft:reinforced_chest",
+   "pneumaticcraft:smart_chest"
+  ]
+ },
+ "memory_stick": {
+  "de": [
+   "Der [[minecraft:soul_sand]] kommt aus dem Nether. Der Stick kostet zwei Diamanten, einen Smaragd und zwei Goldbarren.",
+   "Die Gedächtnis-Essenz lässt sich in Tanks lagern und per Rohr bewegen."
+  ],
+  "en": [
+   "The [[minecraft:soul_sand]] comes from the Nether. The stick costs two diamonds, an emerald and two gold ingots.",
+   "Memory essence can be stored in tanks and moved through pipes."
+  ],
+  "sources": [
+   "pneumaticcraft:memory_stick",
+   "pneumaticcraft:memory_essence_bucket (stage 2)"
+  ]
+ },
+ "jackhammer": {
+  "de": [
+   "Der Presslufthammer fasst 12 000 mL. Der Eisenbohrkopf braucht nur 3 Bar und keine Hitze, er ist also gleich nach {{pneumaticcraft/lubricant}} machbar.",
+   "Diamant- und Netheritbohrkopf öffnen erst mit Stufe 3."
+  ],
+  "en": [
+   "The jackhammer holds 12,000 mL. The iron drill bit needs only 3 bar and no heat, so you can make it right after {{pneumaticcraft/lubricant}}.",
+   "The diamond and netherite drill bits only open in stage 3."
+  ],
+  "sources": [
+   "pneumaticcraft jar: me/desht/pneumaticcraft/lib/PneumaticValues (javap -constants) (VOLUME_JACKHAMMER 12000, USAGE_JACKHAMMER 50)",
+   "pneumaticcraft:thermo_plant/iron_drill_bit, compressed_iron_drill_bit",
+   "kubejs/data/kronwerke/chapters/stages/stage3.json (drill_bit_diamond, drill_bit_netherite)"
+  ]
+ },
+ "yeast": {
+  "de": [
+   "Jeder Pilz aus #c:mushrooms geht. Das Rezept ist sehr langsam, die Teichmethode mit Zucker lohnt sich daher fast immer.",
+   "Hefe brauchst du für {{pneumaticcraft/ethanol}} und {{pneumaticcraft/sourdough}}."
+  ],
+  "en": [
+   "Any mushroom from #c:mushrooms works. The recipe is very slow, so the pond method with sugar almost always pays off.",
+   "You need yeast for {{pneumaticcraft/ethanol}} and {{pneumaticcraft/sourdough}}."
+  ],
+  "sources": [
+   "pneumaticcraft:thermo_plant/yeast_culture (speed 0.1, 303 to 333 K)",
+   "config/pneumaticcraft-common.toml (srv/config) (in_world_yeast_crafting true)"
+  ]
+ },
+ "ethanol": {
+  "de": [
+   "Eine Giftkartoffel gibt so viel wie Zucker, 50 mB, Süßbeeren 20 mB und eine Melonenscheibe 10 mB. Ethanol aus der Gärung von Create Diesel Generators ({{create_addons/ethanol}}) trägt denselben Tag und geht im Fluid Mixer genauso.",
+   "Weiter geht es mit {{pneumaticcraft/biodiesel}}."
+  ],
+  "en": [
+   "A poisonous potato gives as much as sugar, 50 mB, sweet berries 20 mB and a melon slice 10 mB. Ethanol from Create Diesel Generators fermentation ({{create_addons/ethanol}}) carries the same tag and works in the fluid mixer too.",
+   "Next is {{pneumaticcraft/biodiesel}}."
+  ],
+  "sources": [
+   "pneumaticcraft:thermo_plant/ethanol_from_*",
+   "createdieselgenerators jar data/c/tags/fluid/ethanol.json",
+   "pneumaticcraft:fluid_mixer/biodiesel (tag c:ethanol)",
+   "pneumaticcraft:pneumaticcraft_fuels/ethanol (400000)"
+  ]
+ },
+ "fluid_mixer": {
+  "de": [
+   "Der Turbinenrotor im Rezept kostet drei Turbinenblätter aus der Kammer. Der Mixer fasst 3 000 mL Luft.",
+   "Er macht nebenbei bei 0,5 Bar aus Wasser und Lava je einen Eimer Obsidian."
+  ],
+  "en": [
+   "The turbine rotor in the recipe costs three turbine blades from the chamber. The mixer holds 3,000 mL of air.",
+   "On the side it turns a bucket each of water and lava into obsidian at 0.5 bar."
+  ],
+  "sources": [
+   "pneumaticcraft:fluid_mixer",
+   "pneumaticcraft:thermo_plant/vegetable_oil_from_seeds, vegetable_oil_from_crops",
+   "pneumaticcraft:fluid_mixer/mix_obsidian",
+   "pneumaticcraft jar: me/desht/pneumaticcraft/lib/PneumaticValues (javap -constants) (VOLUME_FLUID_MIXER 3000)"
+  ]
+ },
+ "biodiesel": {
+  "de": [
+   "Ein Ansatz dauert 300 Ticks. Biodiesel brennt im Flüssigkeitskompressor genauso langsam wie Diesel und läuft als #c:biodiesel auch im Dieselmotor von Create Diesel Generators ({{create_addons/biodiesel}}).",
+   "Der Verband braucht 40 Ticks zum Anlegen und hat danach 160 Ticks Abklingzeit."
+  ],
+  "en": [
+   "One batch takes 300 ticks. Biodiesel burns as slowly as diesel in the liquid compressor and, as #c:biodiesel, also runs in the Create Diesel Generators engine ({{create_addons/biodiesel}}).",
+   "The bandage takes 40 ticks to apply and then has a 160 tick cooldown."
+  ],
+  "sources": [
+   "pneumaticcraft:fluid_mixer/biodiesel (time 300, pressure 2)",
+   "pneumaticcraft:pneumaticcraft_fuels/biodiesel (1000000, burn_rate 0.8)",
+   "createdieselgenerators jar fuel_type/biodiesel.json",
+   "config/pneumaticcraft-common.toml (srv/config) (bandage_use_time 40, bandage_cooldown 160, bandage_health_restored 6)",
+   "pneumaticcraft:speed_upgrade_from_glycerol"
+  ]
+ },
+ "sourdough": {
+  "de": [
+   "Die Hefekultur muss als voller Eimer (1 000 mB) in die Mitte. Mehl gibt es auch per Explosion, dann geht aber die Hälfte verloren.",
+   "Ein Rezept gibt acht Sauerteig, also genau die acht Brote der Aufgabe."
+  ],
+  "en": [
+   "The yeast culture goes in the middle as a full bucket (1,000 mB). You can also get flour by explosion, but then half is lost.",
+   "One craft gives eight sourdough, exactly the eight loaves of the task."
+  ],
+  "sources": [
+   "pneumaticcraft:sourdough (yeast_culture 1000 fluid_container, 8x)",
+   "pneumaticcraft:sourdough_bread (smelting)",
+   "pneumaticcraft:explosion_crafting/wheat_flour (loss_rate 50)",
+   "pneumaticcraft:pressure_chamber/wheat_flour"
+  ]
+ }
+}

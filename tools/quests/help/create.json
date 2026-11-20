@@ -1,0 +1,1169 @@
+{
+ "welcome": {
+  "de": [
+   "Die Mengen am Obelisken gelten für 30 aktive Spieler. Beim Öffnen der Stufe rechnet der Server sie mit dem Faktor 0,4 bis 1,5 um, nur die 12 [[kronwerke:stone_gearbox]] bleiben fest.",
+   "Mit der Rolle Ingenieur startest du mit einem [[create:wrench]], bekommst beim Zahnradbau von Hand ein Zahnrad extra und nimmst von Sägen, Bohrern und Lüftern nur halben Schaden. Das Ziel des Kapitels ist {{create/factory}}."
+  ],
+  "en": [
+   "The obelisk amounts assume 30 active players. When the stage opens the server scales them by 0.4 to 1.5, only the 12 [[kronwerke:stone_gearbox]] stay fixed.",
+   "With the Engineer role you start with a [[create:wrench]], get one extra cogwheel per hand craft and take only half damage from saws, drills and fans. The chapter builds up to {{create/factory}}."
+  ],
+  "sources": [
+   "config/kronwerke/goals.json (stage1 tech pillar, scale, fixed)",
+   "docs/STAGES.md (base * clamp(active / 30, 0.4, 1.5))",
+   "kubejs/data/kronwerke/origins/origins/rolle_ingenieur.json and powers rolle_ingenieur_*"
+  ],
+  "client": [
+   "Ponder key default (W) and that it opens from EMI"
+  ]
+ },
+ "andesite": {
+  "de": [
+   "64 Andesit reichen von Hand für 32 [[create:andesite_alloy]], im Mixer für 128. Ultimine behandelt Stein, Andesit, Granit, Diorit und Tuff als eine Sorte: Du bekommst den Bruchstein für den Obelisken gleich mit.",
+   "Wenn die Adern in deiner Nähe leer sind, presst du neuen Andesit aus Feuerstein, Kies und Lava ({{create/compacting}})."
+  ],
+  "en": [
+   "64 andesite make 32 [[create:andesite_alloy]] by hand, or 128 in the mixer. Ultimine treats stone, andesite, granite, diorite and tuff as one kind, so you get cobblestone for the obelisk along the way.",
+   "Once the veins nearby are gone, press new andesite from flint, gravel and lava ({{create/compacting}})."
+  ],
+  "sources": [
+   "create:crafting/materials/andesite_alloy",
+   "kronwerke:create/andesite_alloy_mixing",
+   "config/ftbultimine-server.snbt (merge_tags base_stone_overworld)"
+  ]
+ },
+ "zinc": {
+  "de": [
+   "[[create:zinc_ore]] liegt in der Oberwelt zwischen Höhe -63 und 70. In der Farmwelt gibt es mehr als doppelt so viele Zinkadern pro Chunk (20 statt 8). Zombies lassen mit 10 Prozent, Wüstenzombies mit 12 Prozent einen [[create:zinc_nugget]] fallen.",
+   "Zink in der Legierung schont dein Eisen, frisst aber den Vorrat für Messing. Für Stufe 2 lohnt es sich, Rohzink zu horten ({{start_here/s_zinc}})."
+  ],
+  "en": [
+   "[[create:zinc_ore]] spawns in the overworld between y -63 and 70. The farm world has more than twice as many zinc veins per chunk (20 instead of 8). Zombies drop a [[create:zinc_nugget]] 10 percent of the time, husks 12 percent.",
+   "Zinc in the alloy saves your iron but eats the stock you need for brass. Hoarding raw zinc pays off in stage 2 ({{start_here/s_zinc}})."
+  ],
+  "sources": [
+   "create jar: data/create/worldgen/placed_feature/zinc_ore.json (count 8, y -63..70)",
+   "kubejs/data/kronwerke/worldgen/placed_feature/mine_zinc.json (count 20), biome/mine.json",
+   "kubejs/data/kronwerke/loot_table/inject/drop_2_zinc_nugget.json (0.1), drop_3_zinc_nugget.json (0.12)"
+  ]
+ },
+ "andesite_alloy": {
+  "de": [
+   "Für die 32 Legierungen dieser Quest brauchst du von Hand 64 [[minecraft:andesite]] und 64 Klumpen, das sind gut sieben Eisenbarren. Der Mixer braucht für dieselbe Menge nur ein Viertel davon.",
+   "Bau den Mixer deshalb früh ({{create/mixer}}). Der Obelisk will später 1 500 Legierungen, von Hand wären das 3 000 Andesit und 3 000 Klumpen."
+  ],
+  "en": [
+   "The 32 alloys of this quest cost 64 [[minecraft:andesite]] and 64 nuggets by hand, a little over seven iron ingots. The mixer needs only a quarter of that for the same amount.",
+   "So build the mixer early ({{create/mixer}}). The obelisk later wants 1 500 alloys, which by hand would be 3 000 andesite and 3 000 nuggets."
+  ],
+  "sources": [
+   "create:crafting/materials/andesite_alloy (pattern BA/AB, 1 out)",
+   "kronwerke:create/andesite_alloy_mixing (1 + 1 -> 2)",
+   "config/kronwerke/goals.json"
+  ]
+ },
+ "casing": {
+  "de": [
+   "Statt mit der Axt entrindet auch die [[create:mechanical_saw]] Stämme, nebenbei gibt sie Baumrinde.",
+   "Plan genug ein: Ein [[kronwerke:stone_gearbox]] schluckt sechs Gehäuse, vier direkt und je eins in Presse und Mahlstein."
+  ],
+  "en": [
+   "Instead of an axe the [[create:mechanical_saw]] strips logs too, giving tree bark on the side.",
+   "Plan for plenty: one [[kronwerke:stone_gearbox]] eats six casings, four directly and one each in the press and the millstone."
+  ],
+  "sources": [
+   "create:item_application/andesite_casing_from_log",
+   "create:cutting/runtime_generated/compat/minecraft/oak_log_to_stripped_oak_log",
+   "kronwerke:milestones/stone_gearbox"
+  ]
+ },
+ "shaft": {
+  "de": [
+   "Wellen, Zahnräder und Getriebe haben keinen eigenen Verbrauch, du kannst sie beliebig lang verlegen. Ummantelst du eine Welle mit einem [[create:andesite_casing]], ist sie nur noch Optik; der Schraubenschlüssel nimmt das Gehäuse wieder ab.",
+   "Aus Welle und Brett entsteht das Zahnrad ({{create/cogwheel}}), aus Welle und acht Brettern das Wasserrad ({{create/water_wheel}})."
+  ],
+  "en": [
+   "Shafts, cogwheels and gearboxes have no stress impact of their own, so lay them as long as you like. Encasing a shaft with an [[create:andesite_casing]] is purely cosmetic; the wrench takes the casing off again.",
+   "A shaft and a plank make a cogwheel ({{create/cogwheel}}), a shaft and eight planks a water wheel ({{create/water_wheel}})."
+  ],
+  "sources": [
+   "srv config/create-server.toml (stressValues impact shaft 0, cogwheel 0, gearbox 0)",
+   "create jar ponder shaft_casing, belt_casing",
+   "create:crafting/kinetics/cogwheel",
+   "create:crafting/kinetics/water_wheel"
+  ],
+  "client": [
+   "wrench removes the casing from an encased shaft"
+  ]
+ },
+ "cogwheel": {
+  "de": [
+   "Ein Wasserrad dreht nur mit 8 RPM. Zweimal groß auf klein bringt dich auf 32 RPM, die übliche Drehzahl für Presse und Mahlstein; die SU des Rads bleiben dabei 256.",
+   "Große Zahnräder greifen auch im rechten Winkel ineinander und tragen die Drehung so auf eine andere Achse. Mit der Rolle Ingenieur bekommst du pro Rezept ein [[create:cogwheel]] extra."
+  ],
+  "en": [
+   "A water wheel turns at only 8 RPM. Two steps of large onto small take you to 32 RPM, the usual speed for press and millstone; the wheel still provides 256 SU.",
+   "Large cogwheels also mesh at right angles, which moves rotation onto another axis. With the Engineer role every craft gives one extra [[create:cogwheel]]."
+  ],
+  "sources": [
+   "create jar ponder cog_speedup, large_cogwheel",
+   "srv config/create-server.toml (water_wheel capacity 32)",
+   "kubejs/data/kronwerke/origins/powers/rolle_ingenieur_zahnradmacher.json"
+  ]
+ },
+ "gearbox": {
+  "de": [
+   "Ein Getriebe ändert nur die Richtung, nie die Drehzahl; dafür brauchst du große und kleine Zahnräder ({{create/cogwheel}}). Das [[create:vertical_gearbox]] hat auch ein eigenes Rezept: Gehäuse in der Mitte, die vier Zahnräder an den Ecken.",
+   "Läuft eine Maschine falsch herum, setz vor ihr eine Gangschaltung ein ({{create/gearshift}})."
+  ],
+  "en": [
+   "A gearbox only changes direction, never speed; for speed you need large and small cogwheels ({{create/cogwheel}}). The [[create:vertical_gearbox]] has its own recipe too: casing in the centre, the four cogwheels in the corners.",
+   "If a machine runs the wrong way, put a gearshift in front of it ({{create/gearshift}})."
+  ],
+  "sources": [
+   "create:crafting/kinetics/vertical_gearbox (C C / B / C C)",
+   "create jar ponder gearbox (straight connections reversed)"
+  ]
+ },
+ "hand_crank": {
+  "de": [
+   "Rechtsklick halten dreht gegen den Uhrzeigersinn, mit Schleichen dreht sie andersherum. Die Kurbel trägt 8 SU pro RPM, also 256 SU bei 32 RPM: genug für eine Presse oder zwei Mahlsteine, aber nur solange du hältst.",
+   "Für Dauerbetrieb nimm {{create/water_wheel}}."
+  ],
+  "en": [
+   "Holding right click turns it counter clockwise, sneaking turns it clockwise. The crank carries 8 SU per RPM, so 256 SU at 32 RPM: enough for a press or two millstones, but only while you hold it.",
+   "For steady power use {{create/water_wheel}}."
+  ],
+  "sources": [
+   "srv config/create-server.toml (hand_crank capacity 8, crankHungerMultiplier)",
+   "create jar HandCrankBlock.getRotationSpeed (32)",
+   "create jar ponder hand_crank"
+  ]
+ },
+ "water_wheel": {
+  "de": [
+   "Mehr Wasser auf weiteren Seiten bringt nichts, ein fließender Strom an einer Seite reicht. Mit einem Brett in der Hand änderst du das Aussehen eines gesetzten Rads.",
+   "Für 32 RPM übersetzt du die 8 RPM zweimal mit groß auf klein ({{create/cogwheel}}). Mit der Herkunft Mühlenkind baust du unter Wasser so schnell ab wie an Land, praktisch für Räder im Fluss."
+  ],
+  "en": [
+   "More water on further sides adds nothing, one flowing current on one side is enough. Right click a placed wheel with a plank to change its look.",
+   "For 32 RPM step the 8 RPM up twice with large onto small ({{create/cogwheel}}). With the Millchild origin you mine underwater as fast as on land, handy for wheels in a river."
+  ],
+  "sources": [
+   "create jar ponder water_wheel (text_2, text_3)",
+   "srv config/create-server.toml (water_wheel 32 SU per RPM)",
+   "kubejs/assets/kronwerke/lang/de_de.json (muehlenkind_nasse_haende)"
+  ]
+ },
+ "large_water_wheel": {
+  "de": [
+   "Ein großes Rad liefert so viel wie zwei kleine, braucht aber 3 x 3 Blöcke Platz. Wegen der 4 RPM brauchst du drei Übersetzungen groß auf klein bis 32 RPM.",
+   "Auch hier reicht fließendes Wasser an einer Seite, und ein Brett in der Hand ändert die Holzoptik."
+  ],
+  "en": [
+   "One large wheel gives as much as two small ones but takes 3 x 3 blocks of room. At 4 RPM you need three steps of large onto small to reach 32 RPM.",
+   "Flowing water on one side is enough here too, and a plank in hand changes its wood."
+  ],
+  "sources": [
+   "srv config/create-server.toml (large_water_wheel capacity 128)",
+   "create jar ponder large_water_wheel",
+   "create:crafting/kinetics/large_water_wheel"
+  ]
+ },
+ "sails": {
+  "de": [
+   "Jede Wolle geht, nicht nur weiße. Segel halten an Blöcken und aneinander ohne Kleber; Rechtsklick mit Farbstoff färbt sie, mit der Schere werden sie wieder zum Rahmen.",
+   "Die Mühle bekommt je 8 Segel 1 RPM, höchstens 16 RPM bei 128 Segeln ({{create/windmill}})."
+  ],
+  "en": [
+   "Any wool works, not just white. Sails stick to blocks and to each other without glue; right click with dye to colour them, with shears to turn them back into frames.",
+   "The mill gets 1 RPM per 8 sails, up to 16 RPM at 128 sails ({{create/windmill}})."
+  ],
+  "sources": [
+   "create:crafting/kinetics/white_sail (#minecraft:wool)",
+   "create jar ponder sail",
+   "create jar WindmillBearingBlockEntity.getGeneratedSpeed (clamp 1..16)",
+   "srv config/create-server.toml (windmillSailsPerRPM 8)"
+  ]
+ },
+ "windmill": {
+  "de": [
+   "Die Drehzahl hängt nur an der Zahl der Segel: Segel durch 8, höchstens 16 RPM. Höhe und Platz spielen dafür keine Rolle. Kleber brauchst du nur für Blöcke, die keine Segel sind, Segel halten von selbst.",
+   "128 Segel tragen bei 16 RPM 8 192 SU. Rechtsklick auf das Lager hält die Mühle an, dann kannst du sie umbauen."
+  ],
+  "en": [
+   "Speed depends only on the number of sails: sails divided by 8, up to 16 RPM. Height and free space do not change it. You only need glue for blocks that are not sails; sails hold on by themselves.",
+   "128 sails at 16 RPM carry 8 192 SU. Right click the bearing to stop the mill and rebuild it."
+  ],
+  "sources": [
+   "create jar WindmillBearingBlockEntity.getGeneratedSpeed (sails / windmillSailsPerRPM, clamp 1..16)",
+   "srv config/create-server.toml (windmill_bearing capacity 512, minimumWindmillSails 8)",
+   "create jar ponder sail, windmill_source"
+  ]
+ },
+ "stress": {
+  "de": [
+   "Rechne so: Kapazität aller Quellen gegen den Verbrauch aller Maschinen, jeweils bei deren Drehzahl. Übersetzen ändert die Kapazität einer Quelle nicht, aber eine schnellere Maschine verbraucht mehr.",
+   "Mit der [[create:goggles]] ({{create/goggles}}) siehst du Verbrauch und Kapazität direkt am Block. Für ein ganzes Netz hilft der Stressmesser ({{create/speedometer}})."
+  ],
+  "en": [
+   "Count it like this: the capacity of all sources against the use of all machines, each at its own speed. Gearing does not change a source's capacity, but a faster machine uses more.",
+   "With [[create:goggles]] ({{create/goggles}}) you see use and capacity right on the block. For a whole network the stressometer helps ({{create/speedometer}})."
+  ],
+  "sources": [
+   "srv config/create-server.toml (kinetics.stats, stressValues.v2)",
+   "create jar item.create.goggles.tooltip"
+  ]
+ },
+ "speedometer": {
+  "de": [
+   "Der Stressmesser hat kein eigenes Rezept, er entsteht nur aus dem Tachometer. Mit Brille zeigen beide mehr Einzelheiten.",
+   "Ein Komparator daneben gibt ein Signal, das mit der Messung steigt. Damit schaltest du per {{create/clutch_gearshift}} einen Teil des Netzes ab, bevor alles stehen bleibt."
+  ],
+  "en": [
+   "The stressometer has no recipe of its own, it only comes from the speedometer. With goggles both show more detail.",
+   "A comparator next to it puts out a signal that rises with the reading. Use it to cut off part of the network with a {{create/clutch_gearshift}} before everything stalls."
+  ],
+  "sources": [
+   "create:crafting/kinetics/stressometer_from_conversion",
+   "create jar ponder speedometer, stressometer"
+  ]
+ },
+ "clutch_gearshift": {
+  "de": [
+   "Kupplung und Kettenriemen kosten keine SU. Was hinter einer getrennten Kupplung hängt, verbraucht auch nichts mehr, so schaffst du Platz im Netz für andere Maschinen.",
+   "Über die Entfernung schaltest du sie mit {{create/redstone_link}}."
+  ],
+  "en": [
+   "Clutch and chain drive have no stress impact. Whatever sits behind an open clutch stops using SU too, which frees capacity for other machines.",
+   "To switch it from afar use {{create/redstone_link}}."
+  ],
+  "sources": [
+   "srv config/create-server.toml (clutch 0, encased_chain_drive 0)",
+   "create jar ponder clutch",
+   "create:crafting/kinetics/encased_chain_drive"
+  ]
+ },
+ "gearshift": {
+  "de": [
+   "Die Gangschaltung kostet keine SU. Sie ist der Rückwärtsgang für {{create/piston}}, {{create/rope_pulley}} und {{create/gantry}}: Ein Hebel daran, und die Kontraption fährt zurück.",
+   "Für Pumpen hilft sie nicht, deren Richtung kehrt nur der Schraubenschlüssel um."
+  ],
+  "en": [
+   "The gearshift has no stress impact. It is the reverse gear for {{create/piston}}, {{create/rope_pulley}} and {{create/gantry}}: put a lever on it and the contraption moves back.",
+   "It does not help with pumps; only the wrench reverses those."
+  ],
+  "sources": [
+   "srv config/create-server.toml (gearshift 0)",
+   "create jar ponder gearshift",
+   "create jar ponder mechanical_pump_flow (text_5, text_6)"
+  ]
+ },
+ "cost_press": {
+  "de": [
+   "Die SU zählen, solange die Presse dreht, auch wenn gerade nichts unter ihr liegt. Ein Wasserrad mit zweimal Übersetzen trägt genau eine Presse bei 32 RPM."
+  ],
+  "en": [
+   "The SU count as long as the press turns, even with nothing beneath it. One water wheel geared up twice carries exactly one press at 32 RPM."
+  ],
+  "sources": [
+   "srv config/create-server.toml (mechanical_press 8.0, water_wheel 32)"
+  ]
+ },
+ "cost_millstone": {
+  "de": [
+   "Je höher die Drehzahl, desto schneller mahlt er und desto mehr SU zieht er. Für Kies und Feuerstein reichen zwei Mahlsteine bei 32 RPM an einem Wasserrad."
+  ],
+  "en": [
+   "The higher the speed, the faster it grinds and the more SU it draws. For gravel and flint two millstones at 32 RPM run off one water wheel."
+  ],
+  "sources": [
+   "srv config/create-server.toml (millstone 4.0)"
+  ],
+  "client": [
+   "milling speed scales with RPM"
+  ]
+ },
+ "cost_mixer": {
+  "de": [
+   "Bei 32 RPM braucht der Mixer nur 128 SU, mischt aber langsamer. Ein [[create:large_water_wheel]] mit 512 SU trägt zwei Mixer bei 64 RPM."
+  ],
+  "en": [
+   "At 32 RPM the mixer needs only 128 SU but mixes more slowly. A [[create:large_water_wheel]] with 512 SU carries two mixers at 64 RPM."
+  ],
+  "sources": [
+   "srv config/create-server.toml (mechanical_mixer 4.0, large_water_wheel 128)"
+  ],
+  "client": [
+   "mixing speed scales with RPM"
+  ]
+ },
+ "cost_saw": {
+  "de": [
+   "Das gilt für die fest stehende Säge. An einer Kontraption zählt nur der Antrieb, also Lager oder Kolben; die Sägen daran kosten nichts extra."
+  ],
+  "en": [
+   "This is for a stationary saw. On a contraption only the drive counts, the bearing or piston; the saws on it cost nothing extra."
+  ],
+  "sources": [
+   "srv config/create-server.toml (mechanical_saw 4.0)",
+   "create jar: only KineticBlockEntity.calculateStressApplied, no override for contraptions"
+  ]
+ },
+ "cost_drill": {
+  "de": [
+   "Ein fester Bohrer baut umso schneller ab, je höher die Drehzahl. An einer Kontraption kostet nur ihr Antrieb SU, egal wie viele Bohrer daran hängen."
+  ],
+  "en": [
+   "A stationary drill mines faster the higher its speed. On a contraption only the drive costs SU, no matter how many drills hang on it."
+  ],
+  "sources": [
+   "srv config/create-server.toml (mechanical_drill 4.0)",
+   "create jar ponder mechanical_drill (text_2)",
+   "create jar KineticBlockEntity.calculateStressApplied"
+  ]
+ },
+ "cost_pump": {
+  "de": [
+   "Die Drehzahl ändert den Durchfluss, die Reichweite bleibt 16 Blöcke. Für lange Leitungen setz weitere Pumpen ein, alle in dieselbe Richtung."
+  ],
+  "en": [
+   "Speed changes the flow rate, the range stays 16 blocks. For long lines add more pumps, all facing the same way."
+  ],
+  "sources": [
+   "srv config/create-server.toml (mechanical_pump 4.0, mechanicalPumpRange 16)",
+   "create jar ponder mechanical_pump_speed"
+  ]
+ },
+ "cost_fan": {
+  "de": [
+   "Beim Waschen, Schmelzen und Räuchern ändert die Drehzahl nur die Reichweite, nicht das Tempo. Ein Lüfter bei 32 RPM kostet 64 SU und verarbeitet genauso schnell."
+  ],
+  "en": [
+   "For washing, smelting and smoking the speed only changes the range, not the processing rate. A fan at 32 RPM costs 64 SU and processes just as fast."
+  ],
+  "sources": [
+   "srv config/create-server.toml (encased_fan 2.0)",
+   "create jar ponder fan_processing (text_7)"
+  ]
+ },
+ "cost_contraption": {
+  "de": [
+   "Wie groß die Kontraption ist und was an ihr hängt, ändert den Verbrauch nicht: Ein Lager mit Sägerad kostet so viel wie ein leeres. Die Kuckucksuhr kostet 1 SU pro RPM, Wellen, Getriebe und Bänder nichts."
+  ],
+  "en": [
+   "The size of a contraption and what hangs on it do not change its cost: a bearing with a saw wheel costs as much as an empty one. The cuckoo clock costs 1 SU per RPM, shafts, gearboxes and belts nothing."
+  ],
+  "sources": [
+   "srv config/create-server.toml (mechanical_bearing, mechanical_piston, rope_pulley, turntable 4.0; chain_conveyor 1.0; weighted_ejector 2.0; cuckoo_clock 1.0)",
+   "create jar KineticBlockEntity.calculateStressApplied"
+  ]
+ },
+ "millstone": {
+  "de": [
+   "Der Mahlstein ist selbst ein Zahnrad: Zahnräder daneben treiben ihn an, eine Welle nur von **unten**, nicht von oben. Oben wirfst du die Items hinein.",
+   "Kies wird hier sicher zu Feuerstein, in der Kieswäsche nur zu 25 Prozent. Weizen gibt ein Mehl, mit 25 Prozent zwei weitere und Samen."
+  ],
+  "en": [
+   "The millstone is a cogwheel itself: cogwheels beside it drive it, a shaft only from **below**, not from above. Items go in at the top.",
+   "Here gravel always becomes flint, in the washing only 25 percent of the time. Wheat gives one flour, with 25 percent two more and seeds."
+  ],
+  "sources": [
+   "create jar MillstoneBlock.hasShaftTowards (DOWN), implements ICogWheel",
+   "create:milling/gravel",
+   "create:milling/wheat",
+   "create:splashing/gravel"
+  ]
+ },
+ "press": {
+  "de": [
+   "Die Welle läuft **waagerecht** durch die Presse: Antrieb nur von den zwei Seiten in Wellenrichtung, von oben greift nichts. Für 32 RPM aus einem Wasserrad übersetzt du zweimal groß auf klein.",
+   "Der Eisenblock kostet neun Eisenbarren. Unter die Presse kommt ein Depot ({{create/depot}}) oder ein Becken ({{create/compacting}})."
+  ],
+  "en": [
+   "The shaft runs **horizontally** through the press: power only from the two sides along its axis, nothing connects from above. For 32 RPM from a water wheel, step up twice with large onto small.",
+   "The iron block costs nine iron ingots. Under the press goes a depot ({{create/depot}}) or a basin ({{create/compacting}})."
+  ],
+  "sources": [
+   "create jar MechanicalPressBlock.hasShaftTowards (axis of HORIZONTAL_FACING)",
+   "create:crafting/kinetics/mechanical_press"
+  ]
+ },
+ "depot": {
+  "de": [
+   "Ein Depot braucht keine Rotation. Ein Stapel darauf wird Stück für Stück gepresst, nicht auf einmal.",
+   "Eine Andesitschleuse an der Seite holt die fertigen Teile ab ({{create/funnel}}). Lüfter und Ausguss arbeiten genauso auf einem Depot."
+  ],
+  "en": [
+   "A depot needs no rotation. A stack on it is pressed one item at a time, not all at once.",
+   "An andesite funnel on its side takes the finished items off ({{create/funnel}}). Fans and spouts work on a depot the same way."
+  ],
+  "sources": [
+   "srv config/create-server.toml (bulkPressing false)",
+   "create jar ponder depot, funnel_compat, fan_processing (text_8), spout_filling"
+  ]
+ },
+ "sheets": {
+  "de": [
+   "Bleche brauchst du auch außerhalb von Create: [[create:iron_sheet]] für den [[ironfurnaces:iron_furnace]], [[create:copper_sheet]] für den [[ironfurnaces:copper_furnace]] und den [[botania:mana_spreader]], [[create:golden_sheet]] für die [[ars_nouveau:imbuement_chamber]] und den [[mysticalagriculture:infusion_pedestal]].",
+   "Ein Barren gibt genau ein Blech, egal ob mit Presse oder anders."
+  ],
+  "en": [
+   "Sheets are needed outside Create too: [[create:iron_sheet]] for the [[ironfurnaces:iron_furnace]], [[create:copper_sheet]] for the [[ironfurnaces:copper_furnace]] and the [[botania:mana_spreader]], [[create:golden_sheet]] for the [[ars_nouveau:imbuement_chamber]] and the [[mysticalagriculture:infusion_pedestal]].",
+   "One ingot always gives one sheet, with the press or any other way."
+  ],
+  "sources": [
+   "kubejs/server_scripts/kronwerke/round.js (replaceInput iron_furnace, copper_furnace, mana_spreader, imbuement_chamber, infusion_pedestal)",
+   "create:pressing/iron_ingot",
+   "create:pressing/copper_ingot",
+   "create:pressing/gold_ingot"
+  ]
+ },
+ "whisk": {
+  "de": [
+   "Die fünf Bleche sind fünf Eisenbarren durch die Presse. Der Rührstab hat nur einen Zweck: Er steckt im [[create:mechanical_mixer]] ({{create/mixer}}), dazu brauchst du noch ein Becken ({{create/basin}})."
+  ],
+  "en": [
+   "The five sheets are five iron ingots through the press. The whisk has one job: it goes into the [[create:mechanical_mixer]] ({{create/mixer}}), which also needs a basin ({{create/basin}})."
+  ],
+  "sources": [
+   "create:crafting/kinetics/whisk",
+   "create:crafting/kinetics/mechanical_mixer"
+  ]
+ },
+ "basin": {
+  "de": [
+   "Steht schräg unter dem Becken ein Depot, ein Band oder eine Kiste, zeigt es einen Auslauf und gibt die Ergebnisse dorthin ab. Ohne Auslauf bleibt alles drin, bis du es herausholst.",
+   "Flüssigkeiten wie Wasser oder Lava bringst du per Rohr hinein ({{create/pipes}})."
+  ],
+  "en": [
+   "With a depot, belt or chest diagonally below, the basin shows a spout and puts its results there. Without one, everything stays inside until you take it out.",
+   "Fluids such as water or lava come in by pipe ({{create/pipes}})."
+  ],
+  "sources": [
+   "create jar ponder basin (text_2 to text_8)",
+   "create:crafting/kinetics/basin"
+  ],
+  "client": [
+   "output faucet appears with a depot, belt or chest below to the side"
+  ]
+ },
+ "mixer": {
+  "de": [
+   "Der Mixer hat keine Welle, er ist ein Zahnrad: Treib ihn mit Zahnrädern daneben an. Er mischt auch jedes formlose Werkbankrezept, bei Streit zwischen zwei Rezepten hilft ein Filter im Filterfeld.",
+   "Teig braucht 1 000 mB Wasser pro Mehl, Zellstoff 250 mB. Wichtigstes Rezept auf Kronwerke: {{create/alloy_mixing}}."
+  ],
+  "en": [
+   "The mixer has no shaft, it is a cogwheel: drive it with cogwheels beside it. It also mixes every shapeless crafting recipe; when two recipes clash, put a filter in its filter slot.",
+   "Dough takes 1 000 mB of water per flour, pulp 250 mB. The key recipe on Kronwerke: {{create/alloy_mixing}}."
+  ],
+  "sources": [
+   "create jar MechanicalMixerBlock (ICogWheel, hasShaftTowards false)",
+   "create jar ponder mechanical_mixer",
+   "create:mixing/dough_by_mixing",
+   "create:mixing/cardboard_pulp",
+   "srv config/create-server.toml (allowShapelessInMixer true)"
+  ]
+ },
+ "alloy_mixing": {
+  "de": [
+   "256 Legierungen kosten 128 [[minecraft:andesite]] und 128 Klumpen, also gut 14 Eisenbarren. Die Eisenklumpen liefert auf Dauer die Kieswäsche ({{create/washing}}).",
+   "Stell die Schleuse an der Beckenseite auf Herausziehen, sonst stockt die Anlage. Mit Brille siehst du, was im Becken liegt."
+  ],
+  "en": [
+   "256 alloys cost 128 [[minecraft:andesite]] and 128 nuggets, a little over 14 iron ingots. In the long run gravel washing supplies the nuggets ({{create/washing}}).",
+   "Set the funnel on the basin side to pull out, or the line stalls. Goggles show you what sits in the basin."
+  ],
+  "sources": [
+   "kronwerke:create/andesite_alloy_mixing",
+   "kronwerke:create/andesite_alloy_mixing_from_zinc",
+   "create jar item.create.goggles.tooltip"
+  ]
+ },
+ "wrench": {
+  "de": [
+   "Schleichend abgebaute Blöcke landen sofort im Inventar, auch Gehäuse auf Wellen und Bändern nimmt er ab. Mit der Rolle Ingenieur hast du schon zu Beginn einen.",
+   "Auch Pumpen drehst du nur mit dem Schraubenschlüssel um ({{create/pump}})."
+  ],
+  "en": [
+   "Blocks taken apart while sneaking go straight to your inventory, and it removes casings from shafts and belts too. The Engineer role starts you with one.",
+   "Pumps are reversed only with the wrench as well ({{create/pump}})."
+  ],
+  "sources": [
+   "create jar item.create.wrench.tooltip",
+   "create jar ponder belt_casing (text_2)",
+   "create jar ponder mechanical_pump_flow (text_6)",
+   "kubejs/data/kronwerke/origins/powers/rolle_ingenieur_werkzeugkiste.json"
+  ]
+ },
+ "goggles": {
+  "de": [
+   "Am Stressmesser zeigt die Brille die Zahlen des ganzen Netzes, an Tanks, Becken und Kisten den Inhalt. Leg sie mit einem Helm, auch Taucher- oder Kartonhelm, ins Raster, dann musst du dich nicht zwischen Brille und Helm entscheiden."
+  ],
+  "en": [
+   "On a stressometer the goggles show the numbers of the whole network, on tanks, basins and chests their contents. Put them in the grid with a helmet, diving and cardboard helmets included, and you no longer have to choose between goggles and helmet."
+  ],
+  "sources": [
+   "create jar item.create.goggles.tooltip",
+   "creategoggles:goggle_iron_helmet (pattern hg)",
+   "helpq find goggle (creategoggles:goggle_diving_helmet, goggle_cardboard_helmet)"
+  ]
+ },
+ "compacting": {
+  "de": [
+   "128 Andesit kosten 256 [[minecraft:flint]], 128 Kies und 12,8 Eimer Lava. Am bequemsten holt eine [[create:hose_pulley]] die Lava: In einem See über 10 000 Blöcken nimmt sie unbegrenzt, ohne ihn zu leeren.",
+   "Den Feuerstein mahlt der Mahlstein aus Kies, sicher und ohne Zufall ({{create/millstone}})."
+  ],
+  "en": [
+   "128 andesite cost 256 [[minecraft:flint]], 128 gravel and 12.8 buckets of lava. A [[create:hose_pulley]] is the easy lava source: in a lake of over 10 000 blocks it draws without end and never empties it.",
+   "The millstone grinds the flint from gravel, every time ({{create/millstone}})."
+  ],
+  "sources": [
+   "create:compacting/andesite_from_flint",
+   "srv config/create-server.toml (hosePulleyBlockThreshold 10000, bottomlessFluidMode ALLOW_BY_TAG)",
+   "create jar data/create/tags/fluid/bottomless/allow.json (water, lava)",
+   "create:milling/gravel"
+  ]
+ },
+ "saw": {
+  "de": [
+   "Ein Stamm wird erst entrindet (plus Baumrinde), dann zu 6 Brettern statt 4 in der Werkbank. Das Item läuft dabei gegen die Drehrichtung über die Säge.",
+   "Ohne Filter wechselt sie bei mehreren Ergebnissen reihum durch alle. Waagerecht gesetzt fällt sie Bäume vor sich ({{create/tree_farm}})."
+  ],
+  "en": [
+   "A log is stripped first (plus tree bark), then cut into 6 planks instead of 4 in the crafting table. The item moves across the saw against its rotation.",
+   "Without a filter it cycles through all results when there are several. Placed sideways it fells trees in front of it ({{create/tree_farm}})."
+  ],
+  "sources": [
+   "create:cutting/runtime_generated/compat/minecraft/oak_log_to_stripped_oak_log",
+   "create:cutting/runtime_generated/compat/minecraft/stripped_oak_log_to_oak_planks",
+   "create jar ponder mechanical_saw_processing, mechanical_saw_breaker"
+  ]
+ },
+ "fan": {
+  "de": [
+   "Die Richtung hängt an der Drehrichtung: andersherum gedreht saugt er. Feuer vor dem Lüfter räuchert, damit backst du Teig zu Brot und trocknest Seetang für Förderbänder.",
+   "Essen nie durch Lava schicken, dort verbrennt es. Weiter geht es mit {{create/washing}} und {{create/fan_smelting}}."
+  ],
+  "en": [
+   "The direction follows the rotation: turned the other way it sucks. Fire in front of the fan smokes, which bakes dough into bread and dries kelp for belts.",
+   "Never send food through lava, it burns up there. Next come {{create/washing}} and {{create/fan_smelting}}."
+  ],
+  "sources": [
+   "create jar ponder fan_direction, fan_processing (text_3, text_4)",
+   "create:smoking/bread",
+   "minecraft:dried_kelp_from_smoking",
+   "srv config/create-server.toml (fanPushDistance 20)"
+  ]
+ },
+ "washing": {
+  "de": [
+   "Im Schnitt bringen 512 Kies die 64 Eisenklumpen dieser Quest, dazu rund 128 Feuerstein. Der Kies kommt aus dem Mahlstein, der Bruchstein dafür aus dem Generator ({{create/cobble_gen}}).",
+   "Roter Sand gibt mit 12,5 Prozent drei Goldklumpen, Sand mit 25 Prozent Ton."
+  ],
+  "en": [
+   "On average 512 gravel give the 64 iron nuggets of this quest, plus about 128 flint. The gravel comes from the millstone, the cobblestone for it from the generator ({{create/cobble_gen}}).",
+   "Red sand gives three gold nuggets 12.5 percent of the time, sand gives clay 25 percent of the time."
+  ],
+  "sources": [
+   "create:splashing/gravel (flint 0.25, iron_nugget 0.125)",
+   "create:splashing/red_sand",
+   "create:splashing/sand",
+   "create:milling/cobblestone"
+  ]
+ },
+ "fan_smelting": {
+  "de": [
+   "Rohzink, Rohkupfer und Roheisen schmilzt der Lüfter ohne Brennstoff zu Barren. Die Drehzahl ändert nur die Reichweite, nicht das Tempo.",
+   "Alles Essbare verbrennt in der Lava; dafür nimmst du Feuer ({{create/fan}})."
+  ],
+  "en": [
+   "The fan smelts raw zinc, copper and iron into ingots without fuel. Speed only changes the range, not the rate.",
+   "Anything edible burns up in lava; use fire for food ({{create/fan}})."
+  ],
+  "sources": [
+   "create jar ponder fan_processing (text_1 to text_7)"
+  ],
+  "client": [
+   "raw ores smelt via blasting/smelting recipe in the lava fan"
+  ]
+ },
+ "belt": {
+  "de": [
+   "[[minecraft:dried_kelp]] bekommst du im Räucherofen, am Lagerfeuer oder mit einem Lüfter vor Feuer. Mit Rechtsklick und Schleichen brichst du eine falsche Auswahl ab.",
+   "Weitere Wellen lassen sich später ins Band einsetzen, der Schraubenschlüssel nimmt sie wieder heraus. Alle Wellen am Band drehen gleich schnell und in dieselbe Richtung."
+  ],
+  "en": [
+   "You get [[minecraft:dried_kelp]] from a smoker, a campfire or a fan blowing through fire. Sneak and right click to cancel a wrong selection.",
+   "More shafts can be added to the belt later, and the wrench takes them out again. All shafts on a belt turn at the same speed and in the same direction."
+  ],
+  "sources": [
+   "create:crafting/kinetics/belt_connector",
+   "minecraft:dried_kelp_from_smoking",
+   "create jar ponder belt_connector",
+   "srv config/create-server.toml (maxBeltLength 20)"
+  ]
+ },
+ "chute": {
+  "de": [
+   "Schächte, die auf die Seite eines anderen zeigen, laufen schräg. Mit dem Schraubenschlüssel setzt du ein Fenster ein.",
+   "Die Brille zeigt, in welche Richtung ein Schacht mit Lüfter fördert. Waagerecht zwischen zwei Kisten nimmst du ein Band, senkrecht den Schacht."
+  ],
+  "en": [
+   "Chutes pointed at the side of another run diagonally. The wrench adds a window.",
+   "Goggles show which way a fan driven chute moves items. Between two chests side by side use a belt; the chute is for vertical runs."
+  ],
+  "sources": [
+   "create jar ponder chute, chute_upward, funnel_transfer",
+   "create:crafting/kinetics/chute"
+  ]
+ },
+ "funnel": {
+  "de": [
+   "Normal gesetzt zieht die Schleuse aus dem Lager, beim Setzen mit Schleichen legt sie hinein. Am Band entscheidet die Laufrichtung des Bands.",
+   "Zwischen zwei Lagern direkt geht nichts, immer ist ein Band, Schacht oder Depot dazwischen. Nach der Schleuse kommen {{create/andesite_tunnel}} und {{create/vault}}."
+  ],
+  "en": [
+   "Placed normally the funnel pulls from the inventory; placed while sneaking it puts in. On a belt the belt's direction decides.",
+   "It never moves items straight between two inventories; a belt, chute or depot always goes between. After the funnel come {{create/andesite_tunnel}} and {{create/vault}}."
+  ],
+  "sources": [
+   "create jar ponder funnel_direction, funnel_transfer, funnel_redstone",
+   "create:crafting/logistics/andesite_funnel"
+  ]
+ },
+ "andesite_tunnel": {
+  "de": [
+   "Der Tunnel zweigt genau ein Item von jedem vorbeifahrenden Stapel ab, der Rest fährt weiter. So verteilst du Andesit gleichmäßig auf mehrere Mixer.",
+   "Er deckt das Band außerdem ab. Feste Mengen oder Filter kann erst der Messingtunnel ({{create_brass/brass_tunnel}})."
+  ],
+  "en": [
+   "The tunnel splits exactly one item off every passing stack, the rest rides on. That spreads andesite evenly over several mixers.",
+   "It also covers the belt. Fixed amounts or filters need the brass tunnel ({{create_brass/brass_tunnel}})."
+  ],
+  "sources": [
+   "create jar ponder andesite_tunnel",
+   "create:crafting/logistics/andesite_tunnel"
+  ]
+ },
+ "vault": {
+  "de": [
+   "Ein Tresor wird bis 3 Blöcke breit und bis dreimal so lang wie breit. Ein 3 x 3 x 9 Tresor fasst also 81 Blöcke mal 20 Stapel.",
+   "Von Hand legst du mit der Gegenstandsluke hinein ({{create/item_hatch}}). Ein Tresor ist auch Zutat für Lagerverbindung und Frosch-Anschluss ({{create/stock}})."
+  ],
+  "en": [
+   "A vault grows up to 3 blocks wide and up to three times as long as it is wide. A 3 x 3 x 9 vault therefore holds 81 blocks times 20 stacks.",
+   "To put things in by hand use the item hatch ({{create/item_hatch}}). A vault is also an ingredient of the stock link and the frogport ({{create/stock}})."
+  ],
+  "sources": [
+   "create jar ponder item_vault_sizes",
+   "srv config/create-server.toml (vaultCapacity 20)",
+   "create:crafting/logistics/stock_link",
+   "create:crafting/logistics/package_frogport"
+  ]
+ },
+ "packager": {
+  "de": [
+   "Die 8 Karton der Quest sind 8 Zellstoff, also 32 [[minecraft:sugar_cane]], Bambus oder Setzlinge und 2 Eimer Wasser. Pakete, die er nicht ganz auspacken kann, nimmt der Verpacker nicht an.",
+   "Eine Säge packt Pakete direkt auf ein Band aus. Wie Pakete reisen, zeigt {{create/frogport}}."
+  ],
+  "en": [
+   "The quest's 8 cardboard are 8 pulp, so 32 [[minecraft:sugar_cane]], bamboo or saplings and 2 buckets of water. The packager refuses packages it cannot unpack completely.",
+   "A saw unpacks packages straight onto a belt. How packages travel is shown in {{create/frogport}}."
+  ],
+  "sources": [
+   "create:mixing/cardboard_pulp (4 pulpifiable + 250 mB water)",
+   "create jar data/create/tags/item/pulpifiable.json",
+   "create:pressing/cardboard",
+   "create jar ponder packager, packager_address (text_10)"
+  ]
+ },
+ "frogport": {
+  "de": [
+   "Kettenförderer verbinden sich mit Wellen ober oder unter sich und geben die Rotation entlang der Kette weiter. Gib dem Frosch im Menü eine Adresse; Pakete ohne passendes Ziel kreisen auf der Kette.",
+   "Mit dem Schraubenschlüssel in der Hand kannst du selbst an der Kette entlangfahren. Ein Frosch über einem Verpacker verschickt dessen Pakete direkt."
+  ],
+  "en": [
+   "Chain conveyors connect to shafts above or below them and pass rotation along the chain. Give the frog an address in its menu; packages without a matching target spin on the chain.",
+   "With a wrench in hand you can ride along the chain yourself. A frog on top of a packager ships its packages directly."
+  ],
+  "sources": [
+   "create jar ponder chain_conveyor, package_frogport",
+   "srv config/create-server.toml (maxChainConveyorLength 32, maxChainConveyorConnections 4, packagePortRange 5)"
+  ]
+ },
+ "stock": {
+  "de": [
+   "Das Signal einer Lagerverbindung reicht unbegrenzt weit, die Pakete selbst müssen aber transportiert werden ({{create/frogport}}). Volles Redstone-Signal schaltet eine Verbindung stumm, schwaches senkt nur ihren Vorrang.",
+   "Der [[create:transmitter]] braucht drei Kupferbleche und einen Blitzableiter. Bestellt wird am {{create/stock_ticker}}."
+  ],
+  "en": [
+   "A stock link's signal has unlimited range, but the packages still have to be carried ({{create/frogport}}). Full redstone power silences a link, weaker power only lowers its priority.",
+   "The [[create:transmitter]] takes three copper sheets and a lightning rod. Orders are placed at the {{create/stock_ticker}}."
+  ],
+  "sources": [
+   "create jar ponder stock_link",
+   "create:crafting/materials/transmitter"
+  ]
+ },
+ "stock_ticker": {
+  "de": [
+   "Klick vor dem Setzen eine Lagerverbindung des Netzes an, sonst gehört der Ticker zu keinem Netz. Als Verkäufer taugt jeder Mob auf einem [[create:white_seat]], ab Stufe 2 auch ein Lohenbrenner.",
+   "Rechtsklick auf den Ticker selbst öffnet die Kategorien, die du mit Filtern anlegst."
+  ],
+  "en": [
+   "Right click a stock link of the network before placing it, or the ticker belongs to no network. Any mob on a [[create:white_seat]] can be the stock keeper, from stage 2 a blaze burner too.",
+   "Right click the ticker itself to open the categories, which you set up with filters."
+  ],
+  "sources": [
+   "create jar ponder stock_ticker",
+   "create:crafting/kinetics/white_seat"
+  ]
+ },
+ "shop": {
+  "de": [
+   "Ein Steinschneider-Durchgang gibt zwei Tischdecken. Die Bezahlung bleibt im Lagerticker liegen, hol sie dort ab.",
+   "Gekaufte Ware packt das Netz in ein Paket, das ein Band oder ein Frosch zum Ladentisch bringt ({{create/frogport}})."
+  ],
+  "en": [
+   "One stonecutter pass gives two table covers. Payments stay inside the stock ticker, collect them there.",
+   "Bought items are packed by the network and carried to the shop front by belt or frog ({{create/frogport}})."
+  ],
+  "sources": [
+   "create:andesite_table_cloth_from_andesite_alloy_stonecutting (count 2)",
+   "create jar ponder table_cloth (text_10 to text_12)"
+  ]
+ },
+ "redstone_link": {
+  "de": [
+   "Ein Rechtsklick mit dem Schraubenschlüssel schaltet ebenfalls zwischen Senden und Empfangen um. Empfänger nehmen Sender bis 256 Blöcke weit auf.",
+   "Die Frequenz besteht aus zwei Items; nimm seltene, damit deine Signale nicht mit denen der Nachbarn kreuzen."
+  ],
+  "en": [
+   "A right click with the wrench also toggles between sending and receiving. Receivers pick up transmitters up to 256 blocks away.",
+   "The frequency is a pair of items; pick rare ones so your signals do not cross your neighbours'."
+  ],
+  "sources": [
+   "create jar ponder redstone_link",
+   "srv config/create-server.toml (linkRange 256)"
+  ],
+  "client": [
+   "whether links of other players with the same frequency interfere"
+  ]
+ },
+ "copper_casing": {
+  "de": [
+   "Wie beim Andesitgehäuse geht auch entrindetes Holz. Der [[create:copper_casing]] steckt in {{create/spout}} und in der Schlauchrolle ({{create/tank}})."
+  ],
+  "en": [
+   "Stripped wood works too, like for andesite casing. [[create:copper_casing]] goes into {{create/spout}} and into the hose pulley ({{create/tank}})."
+  ],
+  "sources": [
+   "create:item_application/copper_casing_from_wood",
+   "create:crafting/kinetics/spout",
+   "create:crafting/kinetics/item_drain",
+   "create:crafting/kinetics/hose_pulley"
+  ]
+ },
+ "pipes": {
+  "de": [
+   "Die Rohre stecken auch senkrecht im Raster (Blech, Barren, Blech untereinander) und geben ebenfalls vier. Ein offenes Rohrende setzt Flüssigkeit als Block in die Welt, wenn die Pumpe hineindrückt.",
+   "Der Antrieb kommt mit {{create/pump}}."
+  ],
+  "en": [
+   "Pipes also craft vertically (sheet, ingot, sheet in a column) for four as well. An open pipe end places fluid as a block in the world when a pump pushes into it.",
+   "The drive comes with {{create/pump}}."
+  ],
+  "sources": [
+   "create:crafting/kinetics/fluid_pipe_vertical",
+   "srv config/create-server.toml (pipesPlaceFluidSourceBlocks true)"
+  ]
+ },
+ "pump": {
+  "de": [
+   "Die Förderrichtung hängt **nicht** an der Drehrichtung: Umkehren kannst du sie nur mit dem Schraubenschlüssel. Mehrere Pumpen im selben Netz addieren ihren Durchfluss, wenn alle in dieselbe Richtung zeigen.",
+   "Eine Pumpe wirkt auf Rohre bis 16 Blöcke weit, egal wie schnell sie dreht."
+  ],
+  "en": [
+   "The pumping direction does **not** follow the rotation: only the wrench reverses it. Several pumps in one network add up their flow if they all face the same way.",
+   "A pump acts on pipes up to 16 blocks away, no matter how fast it turns."
+  ],
+  "sources": [
+   "create jar ponder mechanical_pump_flow (text_5, text_6), mechanical_pump_speed",
+   "srv config/create-server.toml (mechanicalPumpRange 16)"
+  ]
+ },
+ "tank": {
+  "de": [
+   "Von Hand kannst du einen Tank im Überlebensmodus nicht füllen oder leeren, nur über Rohre, Abfluss oder Ausguss. Der Schraubenschlüssel schaltet das Fenster um, ein Komparator misst den Füllstand.",
+   "Aus einem See holt die Schlauchrolle Wasser oder Lava; über 10 000 Blöcken bleibt der See voll."
+  ],
+  "en": [
+   "In survival you cannot fill or empty a tank by hand, only through pipes, item drain or spout. The wrench toggles its window, a comparator reads its level.",
+   "The hose pulley draws water or lava from a lake; above 10 000 blocks the lake stays full."
+  ],
+  "sources": [
+   "create jar ponder fluid_tank_storage, fluid_tank_sizes, hose_pulley_infinite",
+   "srv config/create-server.toml (fluidTankCapacity 8, fluidTankMaxHeight 32, hosePulleyBlockThreshold 10000)"
+  ]
+ },
+ "spout": {
+  "de": [
+   "Den Ausguss füllst du nur per Rohr, nicht von Hand. In den Abfluss kippst du dagegen per Rechtsklick einen Eimer, ein Rohr holt die Flüssigkeit dann weiter.",
+   "Eine fertige Kette zum Ausprobieren ist {{create/sweet_roll}}."
+  ],
+  "en": [
+   "The spout is filled only by pipe, never by hand. Into the item drain you can pour a bucket with a right click, and a pipe takes the fluid on from there.",
+   "A complete chain to try it on is {{create/sweet_roll}}."
+  ],
+  "sources": [
+   "create jar ponder spout_filling (text_2, text_3), item_drain (text_2, text_5)"
+  ]
+ },
+ "diving": {
+  "de": [
+   "Der Rückentank füllt sich nur gesetzt und angetrieben, je schneller, desto schneller. Der Helm gibt Wasseratmung und zieht dabei Luft aus dem Tank.",
+   "Mit den Stiefeln gehst und springst du unter Wasser, und Förderbänder schieben dich nicht mehr."
+  ],
+  "en": [
+   "The backtank fills only while placed and powered, faster at higher speed. The helmet grants water breathing and drains air from the tank.",
+   "With the boots you walk and jump underwater, and belts no longer move you."
+  ],
+  "sources": [
+   "create jar item.create.copper_backtank.tooltip, copper_diving_helmet.tooltip, copper_diving_boots.tooltip",
+   "srv config/create-server.toml (airInBacktank 900, copper_backtank 4.0)"
+  ]
+ },
+ "bearing": {
+  "de": [
+   "Das Lager nimmt den Block direkt vor sich und alles, was daran klebt ({{create/glue}}) oder über ein Gerüst hängt ({{create/chassis}}). Es kostet immer 4 SU pro RPM, egal wie groß das Bauwerk ist.",
+   "Für Windmühlen gibt es ein eigenes Lager ({{create/windmill}})."
+  ],
+  "en": [
+   "The bearing takes the block right in front of it and everything glued to it ({{create/glue}}) or held by a chassis ({{create/chassis}}). It always costs 4 SU per RPM, however big the structure.",
+   "Windmills use their own bearing ({{create/windmill}})."
+  ],
+  "sources": [
+   "create jar ponder mechanical_bearing",
+   "srv config/create-server.toml (mechanical_bearing 4.0, maxBlocksMoved 2048)"
+  ]
+ },
+ "glue": {
+  "de": [
+   "Ein Schlag mit dem Kleber in der Hand löscht einen Kleberahmen wieder. Blöcke, die an anderen hängen, etwa Fackeln, brauchen meist keinen Kleber.",
+   "Sich überlappende Rahmen bewegen sich gemeinsam. Segel halten ganz ohne Kleber ({{create/sails}})."
+  ],
+  "en": [
+   "Punching a glued area with the glue in hand removes it. Blocks hanging on others, such as torches, usually need no glue.",
+   "Overlapping glue areas move together. Sails hold without any glue ({{create/sails}})."
+  ],
+  "sources": [
+   "create jar ponder super_glue",
+   "create jar ponder sail (text_2)"
+  ]
+ },
+ "piston": {
+  "de": [
+   "Die Stangen setzt du hinter den Kolben, in einer Linie. Bis zu 64 Stangen geht der Hub.",
+   "Im Wertefeld legst du fest, ob das Bauwerk nach dem Halt wieder zu Blöcken wird. Ohne Klebrigen Kolben bleibt das Bauwerk beim Zurückfahren stehen."
+  ],
+  "en": [
+   "The poles go behind the piston, in one line. The stroke reaches up to 64 poles.",
+   "Its value panel sets whether the structure turns back into blocks when it stops. Without the sticky version the structure stays put when the piston retracts."
+  ],
+  "sources": [
+   "srv config/create-server.toml (maxPistonPoles 64)",
+   "create jar ponder mechanical_piston, mechanical_piston_modes"
+  ],
+  "client": [
+   "position of the poles behind the piston"
+  ]
+ },
+ "rope_pulley": {
+  "de": [
+   "Drehrichtung und Drehzahl bestimmen, ob und wie schnell es auf- oder abgeht; mit {{create/gearshift}} schaltest du um. Weitere Flaschenzüge auf derselben Höhe hängen sich mit an, brauchen aber keinen Antrieb.",
+   "Den Aufzug mit Stockwerken baust du in {{create_brass/elevator}}."
+  ],
+  "en": [
+   "Direction and speed of rotation decide whether and how fast it goes up or down; switch with {{create/gearshift}}. Other pulleys on the same layer join in but need no drive.",
+   "The elevator with floors comes in {{create_brass/elevator}}."
+  ],
+  "sources": [
+   "create jar ponder rope_pulley, rope_pulley_multi_rope",
+   "srv config/create-server.toml (maxRopeLength 384)"
+  ]
+ },
+ "gantry": {
+  "de": [
+   "Portalkranachsen haften ohne Kleber am Wagen, so baust du Kräne über mehrere Achsen. Ein Redstone-Signal an der Achse hält den Wagen an und gibt die Rotation an seine Ausgangswelle weiter.",
+   "Die Fahrtrichtung hängt an der Ausrichtung der Achse und der Drehrichtung."
+  ],
+  "en": [
+   "Gantry shafts attach to a carriage without glue, so you can build cranes on several axes. A redstone signal on the shaft stops the carriage and passes rotation to its output shaft instead.",
+   "The direction of travel depends on the shaft's orientation and the rotation."
+  ],
+  "sources": [
+   "create jar ponder gantry_cascaded, gantry_redstone, gantry_direction"
+  ]
+ },
+ "chassis": {
+  "de": [
+   "Ein zweiter Klick mit Schleim macht auch die Gegenseite klebrig, Schleichen und Rechtsklick mit leerer Hand nimmt ihn ab. Mit dem Schraubenschlüssel stellst du die Reichweite genau ein.",
+   "Gleiche Gerüste nebeneinander ziehen sich gegenseitig mit, andere Sorten oder Richtungen nicht. Für die Baumfarm brauchst du das Drehgerüst ({{create/tree_farm}})."
+  ],
+  "en": [
+   "A second click with slime makes the opposite side sticky too; sneak and right click with an empty hand removes it. The wrench sets the exact range.",
+   "Identical chassis next to each other drag one another along, other kinds or facings do not. The tree farm uses the radial chassis ({{create/tree_farm}})."
+  ],
+  "sources": [
+   "create jar ponder linear_chassis_attachment, linear_chassis_group, radial_chassis",
+   "srv config/create-server.toml (maxChassisRange 16)"
+  ]
+ },
+ "tree_farm": {
+  "de": [
+   "Das ganze Rad kostet nur die 4 SU pro RPM des Lagers, die Sägen daran zählen nicht extra. Damit die Bäume eng in einer Reihe stehen, hilft {{create/tree_fertilizer}}.",
+   "Die Quest zählt nur [[minecraft:oak_log]], pflanz also Eichen."
+  ],
+  "en": [
+   "The whole wheel costs only the bearing's 4 SU per RPM, the saws on it add nothing. To grow the trees tight in a row, use {{create/tree_fertilizer}}.",
+   "The quest counts only [[minecraft:oak_log]], so plant oaks."
+  ],
+  "sources": [
+   "create jar KineticBlockEntity.calculateStressApplied (no contraption override)",
+   "srv config/create-server.toml (mechanical_bearing 4.0)",
+   "create jar ponder mechanical_saw_contraption"
+  ]
+ },
+ "drill": {
+  "de": [
+   "Je schneller der Bohrer dreht, desto schneller baut er ab. Bewegt an einer Kontraption bricht er alles, worauf sie trifft.",
+   "Die Bohrer an einer Kontraption kosten keine SU, nur der Antrieb. Der nächste Schritt ist {{create/cobble_gen}}."
+  ],
+  "en": [
+   "The faster the drill turns, the faster it mines. Moved on a contraption it breaks whatever the contraption runs into.",
+   "Drills on a contraption cost no SU, only the drive does. The next step is {{create/cobble_gen}}."
+  ],
+  "sources": [
+   "create jar ponder mechanical_drill, mechanical_drill_contraption",
+   "create jar KineticBlockEntity.calculateStressApplied"
+  ]
+ },
+ "cobble_gen": {
+  "de": [
+   "Dein Bruchstein geht so in den Obelisken: Stapel in die Hand und Rechtsklick, oder Schleichen und Rechtsklick. Der Schleich-Klick nimmt **nur die 27 Felder über der Hotbar**, nicht Hotbar, Nebenhand oder Rucksack.",
+   "Lava und Wasser verbrauchen sich nicht, und mehrere Bohrer an einer Welle kosten je 4 SU pro RPM. Mit Mahlstein dahinter wird der Bruchstein zu Kies für {{create/washing}}."
+  ],
+  "en": [
+   "Hand in your cobblestone like this: stack in hand and right click, or sneak and right click. The sneak click takes **only the 27 slots above the hotbar**, not hotbar, offhand or backpack.",
+   "Lava and water are not used up, and several drills on one shaft cost 4 SU per RPM each. A millstone behind it turns the cobblestone into gravel for {{create/washing}}."
+  ],
+  "sources": [
+   "core: src/main/java/de/kronwerke/core/goal/GoalManager.java (slots 9 to 35 on sneak click)",
+   "config/kronwerke/goals.json (#c:cobblestones 20000)",
+   "srv config/create-server.toml (mechanical_drill 4.0)",
+   "create:milling/cobblestone"
+  ]
+ },
+ "harvester": {
+  "de": [
+   "Die Erntemaschine nimmt nur reife Pflanzen und setzt sie neu. Der Pflug bricht dabei Blöcke ohne Kollision wie Gras und schubst Lebewesen weg, ohne sie zu verletzen.",
+   "Kisten oder Fässer auf der Kontraption fangen die Ernte auf. Mit {{create/psi}} entlädst du sie im Vorbeifahren."
+  ],
+  "en": [
+   "The harvester only takes ripe crops and replants them. The plough breaks blocks without collision such as grass and pushes creatures aside without hurting them.",
+   "Chests or barrels on the contraption catch the harvest. Unload them on the move with {{create/psi}}."
+  ],
+  "sources": [
+   "srv config/create-server.toml (harvestPartiallyGrown false, harvesterReplants true, moveItemsToStorage true)",
+   "create jar ponder mechanical_harvester, mechanical_plough"
+  ]
+ },
+ "psi": {
+  "de": [
+   "Solange die beiden verbunden sind, steht die feste Schnittstelle für **alle** Lager auf der Kontraption. Werden eine Weile keine Items mehr getauscht, fährt sie weiter.",
+   "Mit Redstone-Signal verbindet sich die feste Schnittstelle nicht."
+  ],
+  "en": [
+   "While the two are engaged, the stationary interface stands for **all** inventories on the contraption. When no items move for a while, the contraption carries on.",
+   "With a redstone signal the stationary interface does not engage."
+  ],
+  "sources": [
+   "create jar ponder portable_storage_interface, portable_storage_interface_redstone",
+   "srv config/create-server.toml (psiTimeout 60)"
+  ]
+ },
+ "factory": {
+  "de": [
+   "1 500 Legierungen brauchen im Mixer 750 Andesit und 750 Klumpen: gut 83 Eisenbarren oder im Schnitt 6 000 gewaschener Kies. Ein [[kronwerke:stone_gearbox]] zählt auf dem Balken so viel wie 125 Legierungen ({{start_here/m_gearbox}}).",
+   "Abgeben: Stapel in die Hand und Rechtsklick, oder Schleichen und Rechtsklick für die 27 Felder über der Hotbar."
+  ],
+  "en": [
+   "1 500 alloys in the mixer take 750 andesite and 750 nuggets: a little over 83 iron ingots, or on average 6 000 washed gravel. One [[kronwerke:stone_gearbox]] counts as much as 125 alloys on the bar ({{start_here/m_gearbox}}).",
+   "To hand in: stack in hand and right click, or sneak and right click for the 27 slots above the hotbar."
+  ],
+  "sources": [
+   "config/kronwerke/goals.json (alloy weight 2, stone_gearbox weight 250)",
+   "kronwerke:create/andesite_alloy_mixing",
+   "create:splashing/gravel",
+   "core: src/main/java/de/kronwerke/core/goal/GoalManager.java (slots 9 to 35 on sneak click)"
+  ]
+ },
+ "outlook": {
+  "de": [
+   "Wenn Stufe 2 öffnet, bekommt jeder Spieler 16 [[create:brass_ingot]] und einen [[create:blaze_burner]] als Startpaket. Für den Leeren Lohenbrenner brauchst du dann noch Netherrack aus dem Nether ({{create_brass/empty_burner}}).",
+   "Überhitzt macht der Mixer aus zwei Andesit und einem Klumpen vier Legierungen statt zwei."
+  ],
+  "en": [
+   "When stage 2 opens every player gets 16 [[create:brass_ingot]] and a [[create:blaze_burner]] as a starter kit. The empty blaze burner then also needs netherrack from the Nether ({{create_brass/empty_burner}}).",
+   "Superheated, the mixer turns two andesite and one nugget into four alloys instead of two."
+  ],
+  "sources": [
+   "config/kronwerke/goals.json (stage1 starterKit)",
+   "kronwerke:empty_blaze_burner",
+   "kronwerke:round/andesite_alloy_superheated",
+   "kronwerke:create/brass_ingot_heated"
+  ]
+ },
+ "blueprint": {
+  "de": [
+   "Jedes Feld der Blaupause speichert ein eigenes Rezept, eine Blaupause hält also mehrere Rezepte nebeneinander. Die Zutaten nimmt sie aus deinem Inventar, nicht aus Kisten daneben."
+  ],
+  "en": [
+   "Every slot of the blueprint stores its own recipe, so one blueprint holds several recipes side by side. It takes the ingredients from your inventory, not from chests next to it."
+  ],
+  "sources": [
+   "create jar item.create.crafting_blueprint.tooltip",
+   "create:crafting/appliances/crafting_blueprint"
+  ],
+  "client": [
+   "takes ingredients only from the player inventory"
+  ]
+ },
+ "cuckoo_clock": {
+  "de": [
+   "Die Uhr kostet 1 SU pro RPM und läuft an jeder Welle mit. Die Melodie am Abend kommt, sobald man schlafen kann: Zeit, nach Hause zu gehen."
+  ],
+  "en": [
+   "The clock costs 1 SU per RPM and runs on any shaft. The evening tune plays as soon as you can sleep: time to head home."
+  ],
+  "sources": [
+   "create jar block.create.cuckoo_clock.tooltip",
+   "srv config/create-server.toml (cuckoo_clock 1.0)"
+  ]
+ },
+ "nozzle": {
+  "de": [
+   "Die Düse kostet vier Legierungen und eine Wolle beliebiger Farbe. Sie sitzt vorn auf dem Lüfter und verteilt seine Wirkung auf Lebewesen; zum Waschen oder Schmelzen von Items nimmst du den Lüfter ohne Düse ({{create/washing}})."
+  ],
+  "en": [
+   "The nozzle costs four alloys and one wool of any colour. It sits on the front of the fan and spreads its effect over living things; for washing or smelting items use the fan without a nozzle ({{create/washing}})."
+  ],
+  "sources": [
+   "create jar block.create.nozzle.tooltip",
+   "create:crafting/kinetics/nozzle"
+  ],
+  "client": [
+   "whether item processing still works through a nozzle"
+  ]
+ },
+ "ejector": {
+  "de": [
+   "Ohne gewähltes Ziel wirft er auf den Block direkt vor sich. Ein Beobachter erkennt jeden Wurf, damit schaltest du Folgeanlagen.",
+   "Mit einem Messingtunnel teilt er Stapel in feste Mengen auf ({{create_brass/brass_tunnel}})."
+  ],
+  "en": [
+   "Without a chosen target it throws onto the block right in front of it. An observer notices every throw, which can trigger the next machine.",
+   "With a brass tunnel it splits stacks into fixed amounts ({{create_brass/brass_tunnel}})."
+  ],
+  "sources": [
+   "create jar ponder weighted_ejector, weighted_ejector_redstone, weighted_ejector_tunnel",
+   "srv config/create-server.toml (maxEjectorDistance 32, weighted_ejector 2.0)"
+  ]
+ },
+ "item_hatch": {
+  "de": [
+   "Die Luke legt nur hinein, sie holt nichts heraus. Werkzeug und Waffen in der Hotbar bleiben beim Schleich-Klick bei dir.",
+   "Zum Herausholen brauchst du Schleuse, Schacht oder Lagerticker ({{create/stock_ticker}})."
+  ],
+  "en": [
+   "The hatch only puts items in, it takes nothing out. Tools and weapons in your hotbar stay with you on a sneak click.",
+   "To take things out you need a funnel, a chute or a stock ticker ({{create/stock_ticker}})."
+  ],
+  "sources": [
+   "create jar block.create.item_hatch.tooltip",
+   "create jar ponder item_vault_storage"
+  ]
+ },
+ "cardboard_armor": {
+  "de": [
+   "Helm 5, Brustplatte 8, Beinschutz 7 und Stiefel 4 Karton. Das sind 96 [[minecraft:sugar_cane]] oder Bambus für den Zellstoff ({{create/packager}})."
+  ],
+  "en": [
+   "Helmet 5, chestplate 8, leggings 7 and boots 4 cardboard. That is 96 [[minecraft:sugar_cane]] or bamboo for the pulp ({{create/packager}})."
+  ],
+  "sources": [
+   "create:crafting/appliances/cardboard_helmet, cardboard_chestplate, cardboard_leggings, cardboard_boots",
+   "create:mixing/cardboard_pulp"
+  ],
+  "client": [
+   "disguise as a package while sneaking"
+  ]
+ },
+ "repackager": {
+  "de": [
+   "Der Umpacker sitzt an einem Lager, in das die Teilpakete einer Bestellung laufen. Ohne Redstone-Signal tut er nichts.",
+   "Wichtig für Bestellungen, die eine Maschine in genau dieser Zusammenstellung braucht, etwa ein Rezept mit mehreren Zutaten."
+  ],
+  "en": [
+   "The re-packager sits on an inventory that collects the fragments of an order. Without a redstone signal it does nothing.",
+   "It matters for orders a machine needs in exactly that set, such as a recipe with several ingredients."
+  ],
+  "sources": [
+   "create jar ponder repackager",
+   "create:crafting/logistics/repackager_from_conversion"
+  ]
+ },
+ "sweet_roll": {
+  "de": [
+   "Die ganze Kette läuft in Stufe 1: Weizen im Mahlstein zu Mehl, Mehl im Waschlüfter zu Teig, Teig im Lüfter vor Feuer zu Brot, dann 250 mB Milch aus dem Ausguss.",
+   "Milch kommt per Eimer in den Abfluss. Die Quest zählt 16 Schnecken, also 4 Eimer Milch."
+  ],
+  "en": [
+   "The whole chain works in stage 1: wheat in the millstone to flour, flour through a washing fan to dough, dough through a fan with fire to bread, then 250 mB of milk from the spout.",
+   "Milk goes into the item drain by bucket. The quest counts 16 rolls, so 4 buckets of milk."
+  ],
+  "sources": [
+   "create:milling/wheat",
+   "create:splashing/wheat_flour",
+   "create:smoking/bread",
+   "create:filling/sweet_roll (c:milk 250)"
+  ]
+ },
+ "sticker": {
+  "de": [
+   "Der Ankleber selbst muss Teil der Kontraption sein, etwa am Kolben angeklebt. Er schaltet bei jedem Signal um, ein Puls genügt."
+  ],
+  "en": [
+   "The sticker itself has to be part of the contraption, for example glued to the piston. It toggles on every signal, so a pulse is enough."
+  ],
+  "sources": [
+   "create jar ponder sticker"
+  ],
+  "client": [
+   "sticker must be part of the moving contraption"
+  ]
+ },
+ "tree_fertilizer": {
+  "de": [
+   "Eine beliebige der fünf Korallen genügt, keine Korallenblöcke. Korallen wachsen in warmen Ozeanen. Am Markt von Farming for Blockheads kannst du Baumdünger auch kaufen."
+  ],
+  "en": [
+   "Any one of the five corals works, not coral blocks. Corals grow in warm oceans. The Farming for Blockheads market sells tree fertilizer too."
+  ],
+  "sources": [
+   "create:crafting/appliances/tree_fertilizer",
+   "farmingforblockheads:market/create/tree_fertilizer"
+  ]
+ }
+}

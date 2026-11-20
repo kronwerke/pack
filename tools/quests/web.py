@@ -175,7 +175,7 @@ def main():
                  "tasks": tasks, "rewards": rewards, "deps": q["deps"], "icon": q["icon"],
                  "size": q["size"], "shape": q["shape"], "optional": q["optional"], "hide": q["hide"]}
             collect_items([tasks, rewards, q["icon"]], items)
-            quests.append({k: v for k, v in d.items() if v not in (None, False, [], "")})
+            quests.append({k: v for k, v in d.items() if not (v is None or v is False or v == [] or v == "")})
         images = []
         for im in ch["images"]:
             textures.add(im["image"])

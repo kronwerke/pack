@@ -1,0 +1,504 @@
+{
+ "dust": {
+  "de": [
+   "Die Chance, dass der Obsidian heil bleibt, ist 0,9 hoch (Redstone geteilt durch 8): bei 64 Redstone noch 43 Prozent, bei 512 nur etwa 0,1 Prozent. Das Redstone muss als Gegenstand genau im Luftblock zwischen Grundgestein und Obsidian liegen.",
+   "Mehr als 512 nimmt ein Schlag nicht, der Rest bleibt für den nächsten liegen. Aus dem Staub werden als Nächstes {{flux_networks/core}}."
+  ],
+  "en": [
+   "The chance that the obsidian survives is 0.9 to the power of (redstone divided by 8): 43 percent at 64 redstone, only about 0.1 percent at 512. The redstone has to lie as an item exactly in the air block between bedrock and obsidian.",
+   "One hit takes at most 512, the rest stays for the next hit. The dust goes on into {{flux_networks/core}}."
+  ],
+  "sources": [
+   "FluxNetworks jar: register/EventHandler (LeftClickBlock) (sipush 512, 0.9 pow count>>3, bedrock or flux_block below)"
+  ]
+ },
+ "core": {
+  "de": [
+   "Das Originalrezept mit Enderauge gibt es auf Kronwerke nicht, nur dieses mit [[ars_nouveau:source_gem]]. Die acht Kerne der Quest sind zwei Rezepte: 8 Staub, 8 Obsidian und 2 Quelljuwelen.",
+   "Im Spiel heißt das Teil [[fluxnetworks:flux_core]], der Staub nur Flux."
+  ],
+  "en": [
+   "The original recipe with an Eye of Ender does not exist on Kronwerke, only this one with a [[ars_nouveau:source_gem]]. The quest's eight cores are two crafts: 8 dust, 8 obsidian and 2 source gems.",
+   "In game the part is the [[fluxnetworks:flux_core]]."
+  ],
+  "sources": [
+   "kronwerke:added/flux_core (pattern fof oso fof, 4 cores)"
+  ]
+ },
+ "block": {
+  "de": [
+   "Ein [[fluxnetworks:flux_block]] steckt 4 Kerne und 5 Staub, alles zusammen 9 Staub, 4 Obsidian und 1 Quelljuwel. Für die zwei Blöcke der Quest sind das 18 Staub, 8 Obsidian und 2 Juwelen.",
+   "Mit einem Flux-Block statt Grundgestein machst du den Staub zu Hause ({{flux_networks/dust_stack}})."
+  ],
+  "en": [
+   "A [[fluxnetworks:flux_block]] holds 4 cores and 5 dust, 9 dust, 4 obsidian and 1 source gem in total. The two blocks of this quest take 18 dust, 8 obsidian and 2 gems.",
+   "With a flux block instead of bedrock you make the dust at home ({{flux_networks/dust_stack}})."
+  ],
+  "sources": [
+   "fluxnetworks:flux_block (pattern fcf cfc fcf)",
+   "kronwerke:added/flux_core",
+   "FluxNetworks jar: register/EventHandler (LeftClickBlock) (FLUX_BLOCK accepted below)"
+  ]
+ },
+ "dust_stack": {
+  "de": [
+   "Bei 512 Redstone überlebt der Obsidian nur mit etwa 0,1 Prozent, rechne also mit einem neuen Obsidian pro Schlag. Wirfst du mehr als acht Stapel hinein, bleibt der Rest für den nächsten Schlag liegen.",
+   "{{flux_networks/whole_base}} und {{flux_networks/final}} brauchen zusammen 176 Staub, ein Schlag mit 512 reicht also für beide. Knapp werden eher Obsidian und Quelljuwelen: ein Juwel und 4 Obsidian je 4 Kerne."
+  ],
+  "en": [
+   "At 512 redstone the obsidian survives only about 0.1 percent of the time, so plan one new obsidian per hit. Throw in more than eight stacks and the rest waits for the next hit.",
+   "{{flux_networks/whole_base}} and {{flux_networks/final}} need 176 dust together, so one hit with 512 covers both. Obsidian and source gems run short first: one gem and 4 obsidian per 4 cores."
+  ],
+  "sources": [
+   "FluxNetworks jar: register/EventHandler (LeftClickBlock)",
+   "kronwerke:added/flux_core"
+  ]
+ },
+ "configurator": {
+  "de": [
+   "Das Rezept genau: [[minecraft:ender_eye]] oben rechts, Flux-Staub oben in der Mitte und rechts in der Mitte, [[minecraft:obsidian]] in der Mitte und unten links. **Auf der Diagonale liegt nur Obsidian**, der Staub sitzt neben dem Enderauge.",
+   "Kopieren und Einfügen bestätigt das Spiel mit **Konfiguration kopiert** und **Konfiguration eingefügt**."
+  ],
+  "en": [
+   "The exact recipe: [[minecraft:ender_eye]] top right, flux dust top middle and middle right, [[minecraft:obsidian]] in the centre and bottom left. **Only obsidian sits on the diagonal**; the dust flanks the eye.",
+   "The game confirms with **Copied Configuration** and **Pasted Configuration**."
+  ],
+  "sources": [
+   "fluxnetworks:flux_configurator (pattern ' fe', ' of', 'o  ')",
+   "FluxNetworks jar: assets/fluxnetworks/lang/de_de.json, en_us.json (config_copied, config_pasted)"
+  ]
+ },
+ "network": {
+  "de": [
+   "Der Server lässt jedem Spieler 5 eigene Netze. Beim sechsten meldet das Menü, dass du die maximale Anzahl erreicht hast.",
+   "Ein neues Netz ist zuerst leer. Strom fließt erst, wenn Stecker und Punkte verbunden sind ({{flux_networks/first_link}}). Die Energieanzeige stellst du in den Netzwerkeinstellungen unter Energie Variante um."
+  ],
+  "en": [
+   "The server allows every player 5 networks of their own. On the sixth the menu tells you that you have reached the maximum.",
+   "A new network starts empty. Power only flows once plugs and points are connected ({{flux_networks/first_link}}). The energy display is switched under Energy Type in the network settings."
+  ],
+  "sources": [
+   "srv config fluxnetworks-server.toml [networks] maximumPerPlayer 5",
+   "FluxNetworks jar: assets/fluxnetworks/lang/de_de.json, en_us.json (response.nospace, network.energy)"
+  ]
+ },
+ "security": {
+  "de": [
+   "Das Passwort gibst du beim Verbinden im Reiter Netzwerkauswahl ein, ein falsches meldet **Das Passwort ist ungültig**. Ändern kannst du die Sicherheit später in den Netzwerkeinstellungen.",
+   "Super-Admin werden kann auf diesem Server, wer mindestens Berechtigungsstufe 1 hat."
+  ],
+  "en": [
+   "The password is entered when connecting in the Network Selection tab; a wrong one shows **The password is invalid**. You can change security later in the network settings.",
+   "On this server anyone with at least permission level 1 can become super admin."
+  ],
+  "sources": [
+   "srv config fluxnetworks-server.toml [networks] enableSuperAdmin true, superAdminRequiredPermission 1",
+   "FluxNetworks jar: assets/fluxnetworks/lang/de_de.json, en_us.json (security.*, response.invalidpassword)"
+  ]
+ },
+ "members": {
+  "de": [
+   "Im deutschen Menü heißen die Knöpfe **Als Nutzer festlegen** und **Als Admin festlegen**, ein Fremder steht dort als **blockiert**. Den Besitz gibst du mit Eigentumrolle Übertragen ab.",
+   "Für drahtloses Laden muss jedes Mitglied den Controller seines Netzes selbst einrichten ({{flux_networks/wireless}})."
+  ],
+  "en": [
+   "The buttons are **Set as User** and **Set as Admin**, and a stranger is listed as **Stranger**. Ownership is handed over with Transfer Ownership.",
+   "For wireless charging every member sets up the controller of their network themselves ({{flux_networks/wireless}})."
+  ],
+  "sources": [
+   "FluxNetworks jar: assets/fluxnetworks/lang/de_de.json, en_us.json (label.setuser, label.setadmin, access.blocked, label.transferownership)"
+  ]
+ },
+ "foreign": {
+  "de": [
+   "Darfst du nicht ans Netz, zeigt das Gerät **Zugriff verweigert: Keine Berechtigung**. Auf Kronwerke laufen der Nether und das End auf eigenen Servern, ein Netz aus der Oberwelt ist dort nicht zu sehen.",
+   "Wie viel ein fremdes Netz hergibt, siehst du in {{flux_networks/stats}}."
+  ],
+  "en": [
+   "If you may not join, the device shows **Access denied: No permission**. On Kronwerke the Nether and the End run on servers of their own, so a network from the overworld does not show up there.",
+   "How much a shared network can spare is shown in {{flux_networks/stats}}."
+  ],
+  "sources": [
+   "FluxNetworks jar: assets/fluxnetworks/lang/de_de.json, en_us.json (denied_access)",
+   "config/kronwerke-common.toml [network] dimensionServers (the_nether=nether, the_end=end)"
+  ],
+  "client": [
+   "Flux networks of the main server are not visible on the Nether and End servers"
+  ]
+ },
+ "second_net": {
+  "de": [
+   "Ein Gerät ziehst du in ein anderes Netz um, indem du es öffnest und im Reiter Netzwerkauswahl das neue anklickst. Viele Punkte auf einmal verschiebst du mit dem Konfigurator ({{flux_networks/devices_move}})."
+  ],
+  "en": [
+   "Move a device to another network by opening it and picking the new one in the Network Selection tab. Many points at once are moved with the configurator ({{flux_networks/devices_move}})."
+  ],
+  "sources": [
+   "srv config fluxnetworks-server.toml [networks] maximumPerPlayer 5",
+   "FluxNetworks jar: assets/fluxnetworks/lang/de_de.json, en_us.json"
+  ]
+ },
+ "plug": {
+  "de": [
+   "Im Spiel heißt er [[fluxnetworks:flux_plug]]. Die 800 000 FE/t sind der Standard der Server-Config für jedes Gerät.",
+   "Bei Maschinen mit Seitenkonfiguration stellst du die Seite zum Stecker auf Ausgabe, sonst kommt nichts an. Den Gegenpart baust du in {{flux_networks/point}}."
+  ],
+  "en": [
+   "In game it is the [[fluxnetworks:flux_plug]]. The 800,000 FE/t are the server config default for every device.",
+   "On machines with side configuration set the side facing the plug to output, or nothing arrives. Its counterpart is built in {{flux_networks/point}}."
+  ],
+  "sources": [
+   "fluxnetworks:flux_plug (pattern ' c ', 'cbc', ' c ')",
+   "srv config fluxnetworks-server.toml [energy] defaultLimit 800000",
+   "FluxNetworks jar: assets/fluxnetworks/lang/de_de.json, en_us.json (tooltip.flux_plug)"
+  ]
+ },
+ "point": {
+  "de": [
+   "Ein [[fluxnetworks:flux_point]] kostet nur einen Kern-Satz und einen Redstoneblock. Die 16 Punkte für {{flux_networks/final}} sind also 64 Staub, 64 Obsidian, 16 Quelljuwelen und 16 Redstoneblöcke, fang früh mit dem Staub an."
+  ],
+  "en": [
+   "A [[fluxnetworks:flux_point]] costs only one set of cores and a block of redstone. The 16 points for {{flux_networks/final}} are 64 dust, 64 obsidian, 16 source gems and 16 blocks of redstone, so start on the dust early."
+  ],
+  "sources": [
+   "fluxnetworks:flux_point (pattern ' c ', 'cbc', ' c ')",
+   "kronwerke:added/flux_core"
+  ]
+ },
+ "first_link": {
+  "de": [
+   "Steht am Gerät **Kein Netzwerk ausgewählt**, hast du noch nicht auf Verbinden geklickt. The One Probe zeigt auf diesem Server Netz und Durchfluss, beim Schleichen auch Limit und Priorität.",
+   "Danach folgen {{flux_networks/priority}}, {{flux_networks/storage}} und {{flux_networks/controller}}."
+  ],
+  "en": [
+   "If the device shows **No network selected**, you have not clicked Connect yet. On this server The One Probe shows network and flow, and when sneaking also limit and priority.",
+   "Next come {{flux_networks/priority}}, {{flux_networks/storage}} and {{flux_networks/controller}}."
+  ],
+  "sources": [
+   "FluxNetworks jar: assets/fluxnetworks/lang/de_de.json, en_us.json (error.noselected)",
+   "srv config fluxnetworks-common.toml [OneProbe] (basic, advanced, sneaking true)"
+  ]
+ },
+ "sides": {
+  "de": [
+   "Auf Kronwerke verbindet sich kein Flux-Gerät mit dem Phantom-Energieanschluss von Actually Additions, der steht auf der Sperrliste. Alles andere, das FE annimmt oder abgibt, zählt als Nachbar."
+  ],
+  "en": [
+   "On Kronwerke no flux device connects to the Actually Additions Phantom Energyface; it is on the blacklist. Everything else that takes or gives FE counts as a neighbour."
+  ],
+  "sources": [
+   "srv config fluxnetworks-server.toml [blacklist] blockBlacklistStrings (actuallyadditions:block_phantom_energyface)"
+  ]
+ },
+ "priority": {
+  "de": [
+   "Priorität und Limit gelten pro Gerät, nicht pro Netz. Mit The One Probe siehst du beide beim Schleichen direkt am Block, ohne ihn zu öffnen.",
+   "Wer immer zuerst dran sein muss, bekommt statt einer hohen Zahl {{flux_networks/surge}}."
+  ],
+  "en": [
+   "Priority and limit belong to each device, not to the network. With The One Probe you see both while sneaking, right at the block, without opening it.",
+   "Whatever must always come first gets {{flux_networks/surge}} instead of a high number."
+  ],
+  "sources": [
+   "srv config fluxnetworks-common.toml [OneProbe] enableOneProbeSneaking true"
+  ]
+ },
+ "limit": {
+  "de": [
+   "Die 800 000 FE/t kommen aus der Server-Config (defaultLimit). Mit **Limit umgehen** steht am Gerät Unbegrenzt.",
+   "Für Speicher gilt eine eigene, feste Rate: 20 000 FE/t beim einfachen Speicher ({{flux_networks/storage}})."
+  ],
+  "en": [
+   "The 800,000 FE/t come from the server config (defaultLimit). With **Bypass Limit** the device shows Unlimited.",
+   "Storages have their own fixed rate: 20,000 FE/t for the basic storage ({{flux_networks/storage}})."
+  ],
+  "sources": [
+   "srv config fluxnetworks-server.toml [energy] defaultLimit 800000, basicTransfer 20000",
+   "FluxNetworks jar: assets/fluxnetworks/lang/de_de.json, en_us.json (flux.disablelimit, flux.unlimited)"
+  ]
+ },
+ "surge": {
+  "de": [
+   "Mit Überspannung zeigt das Gerät als Priorität **Sehr hoch** statt einer Zahl. Intern zählt es mit 100 000, weit über den 9 999, die du von Hand einstellen kannst."
+  ],
+  "en": [
+   "With Power Surge the device shows **Very High** as its priority instead of a number. Internally it counts as 100,000, far above the 9,999 you can set by hand."
+  ],
+  "sources": [
+   "FluxNetworks jar: common/connection/TransferHandler (getPriority 100000 when surge, PRI_USER_MAX 9999)",
+   "FluxNetworks jar: assets/fluxnetworks/lang/de_de.json, en_us.json (flux.surge)"
+  ]
+ },
+ "devices_move": {
+  "de": [
+   "Das Rezept zum Zurücksetzen gibt es für Stecker, Punkt, Controller und alle drei Speicher. Ein Gerät allein in die Werkbank gelegt kommt ohne Netz und Einstellungen wieder heraus."
+  ],
+  "en": [
+   "The reset recipe exists for plug, point, controller and all three storages. A device placed alone in the crafting grid comes out without network and settings."
+  ],
+  "sources": [
+   "fluxnetworks:wipe_flux_plug, wipe_flux_point, wipe_flux_controller, wipe_basic_flux_storage, wipe_herculean_flux_storage, wipe_gargantuan_flux_storage"
+  ]
+ },
+ "other_dim": {
+  "de": [
+   "**Auf Kronwerke laufen der Nether und das End auf eigenen Servern.** Ein Punkt dort sieht dein Netz aus der Oberwelt nicht, auch die Farmwelt ist ein eigener Server. Über Dimensionen hinweg klappt es mit allem, was auf dem Hauptserver liegt, etwa dem Aether oder dem Undergarden.",
+   "Für den Haken der Quest reicht ein Punkt in einer dieser Dimensionen."
+  ],
+  "en": [
+   "**On Kronwerke the Nether and the End run on servers of their own.** A point there does not see your overworld network, and the farm world is a separate server too. Across dimensions it works for everything on the main server, such as the Aether or the Undergarden.",
+   "A point in one of those dimensions is enough for this quest."
+  ],
+  "sources": [
+   "config/kronwerke-common.toml [network] dimensionServers (the_nether=nether, the_end=end)",
+   "core: portal/Dimensions.java (Nether and End on own servers, mining world separate)"
+  ],
+  "client": [
+   "Flux point in the Nether or End cannot join a main server network",
+   "Flux point in the Aether or Undergarden works with an overworld plug"
+  ]
+ },
+ "controller": {
+  "de": [
+   "Rechnet man ganze Rezepte, kostet der [[fluxnetworks:flux_controller]] 6 Kern-Rezepte: **51 Staub, 24 Obsidian und 6 Quelljuwelen**, 3 Kerne bleiben übrig. Versucht ein Netz einen zweiten Controller, meldet das Menü, dass es schon einen hat.",
+   "Den Schaltkreis baust du in {{mekanism_advanced/circuits}}."
+  ],
+  "en": [
+   "Counting whole crafts, the [[fluxnetworks:flux_controller]] takes 6 core crafts: **51 dust, 24 obsidian and 6 source gems**, with 3 cores left over. A second controller on one network is refused with a message that it already has one.",
+   "The circuit is made in {{mekanism_advanced/circuits}}."
+  ],
+  "sources": [
+   "kronwerke:added/flux_controller (pattern bcb fAf bbb)",
+   "kronwerke:added/flux_core (4 per craft)",
+   "fluxnetworks:flux_block",
+   "FluxNetworks jar: assets/fluxnetworks/lang/de_de.json, en_us.json (response.hascontroller)"
+  ]
+ },
+ "wireless": {
+  "de": [
+   "Im Menü heißt der Haken **Drahtlos aktivieren**. Das Hauptinventar steht dort als deaktiviert und lässt sich nicht einschalten.",
+   "**Im Nether und im End lädt nichts**, denn die laufen auf Kronwerke auf eigenen Servern. In der Oberwelt, der Farmwelt ausgenommen, und in den Dimensionen des Hauptservers ist die Entfernung egal."
+  ],
+  "en": [
+   "The tick box is called **Enable Wireless**. The main inventory is listed as disabled and cannot be turned on.",
+   "**Nothing charges in the Nether or the End**, since on Kronwerke they run on servers of their own. In the overworld and the other dimensions of the main server (not the farm world) distance does not matter."
+  ],
+  "sources": [
+   "FluxNetworks jar: assets/fluxnetworks/lang/de_de.json, en_us.json (flux.wireless, slot.main)",
+   "config/kronwerke-common.toml [network] dimensionServers (the_nether=nether, the_end=end)"
+  ],
+  "client": [
+   "Wireless charging stops on the Nether, End and farm world servers"
+  ]
+ },
+ "charge_items": {
+  "de": [
+   "[[mekanism:energy_tablet]], [[mekanism:free_runners]] und der Mekanism-Jetpack gehören schon zu Stufe 2, der [[mekanism:atomic_disassembler]] und die [[ae2:wireless_terminal]] zu Stufe 3.",
+   "Im Nether und im End lädt nichts, dort bist du auf einem anderen Server."
+  ],
+  "en": [
+   "The [[mekanism:energy_tablet]], [[mekanism:free_runners]] and the Mekanism jetpack are stage 2 already, the [[mekanism:atomic_disassembler]] and the [[ae2:wireless_terminal]] stage 3.",
+   "Nothing charges in the Nether or the End, since you are on another server there."
+  ],
+  "sources": [
+   "kubejs/data/kronwerke/chapters/stages (energy_tablet 2, free_runners 2, jetpack 2, atomic_disassembler 3, wireless_terminal 3)",
+   "config/kronwerke-common.toml [network] dimensionServers (the_nether=nether, the_end=end)"
+  ],
+  "client": [
+   "AE2 wireless terminal accepts FE from the flux controller"
+  ]
+ },
+ "storage": {
+  "de": [
+   "Im Spiel heißt er [[fluxnetworks:basic_flux_storage]]. Ein Speicher ist ein Flux-Gerät wie jedes andere: Du verbindest ihn über Netzwerkauswahl mit deinem Netz.",
+   "Kapazität und Rate stammen aus der Server-Config. Größere Speicher stehen in {{flux_networks/bigger_storage}}."
+  ],
+  "en": [
+   "In game it is the [[fluxnetworks:basic_flux_storage]]. A storage is a flux device like any other: you connect it to your network in Network Selection.",
+   "Capacity and rate come from the server config. Bigger storages are in {{flux_networks/bigger_storage}}."
+  ],
+  "sources": [
+   "fluxnetworks:basic_flux_storage (pattern bbb, g g, bbb)",
+   "srv config fluxnetworks-server.toml [energy] basicCapacity 2000000, basicTransfer 20000"
+  ]
+ },
+ "stats": {
+  "de": [
+   "Im deutschen Menü heißt Average Tick **Tick durchschnitt**, Eingang und Ausgang stehen als Eingang und Ausgang, die Änderung als Unterschied.",
+   "Fällt der gespeicherte Strom dauerhaft, hilft ein weiterer Generator am Stecker, siehe {{flux_networks/setup_reactor}}."
+  ],
+  "en": [
+   "Average Tick, Input, Output and Change are listed in the statistics tab.",
+   "If stored energy keeps falling, add another generator at a plug, see {{flux_networks/setup_reactor}}."
+  ],
+  "sources": [
+   "FluxNetworks jar: assets/fluxnetworks/lang/de_de.json, en_us.json (flux.averagetick, flux.input, flux.output, flux.change)"
+  ]
+ },
+ "chunks": {
+  "de": [
+   "Chunkladung über Flux ist auf diesem Server eingeschaltet, im Menü heißt der Schalter **Chunk laden**. Alternativ lädt euer Team über die FTB-Karte bis zu 25 Chunks dauerhaft, auch ohne Flux-Gerät.",
+   "Ein entladenes Gerät steht in der Verbindungsliste als Chunk Entladet."
+  ],
+  "en": [
+   "Flux chunk loading is enabled on this server; the switch is called **Chunk Loading**. Alternatively your team can keep up to 25 chunks loaded through the FTB map, without any flux device.",
+   "An unloaded device shows as Chunk Unloaded in the connection list."
+  ],
+  "sources": [
+   "srv config fluxnetworks-common.toml [general] enableChunkLoading true",
+   "config/ftbchunks-world.snbt (max_force_loaded_chunks 25)",
+   "FluxNetworks jar: assets/fluxnetworks/lang/de_de.json, en_us.json (flux.chunkloading, flux.chunkunloaded)"
+  ]
+ },
+ "bigger_storage": {
+  "de": [
+   "Im Spiel heißen sie [[fluxnetworks:herculean_flux_storage]] und [[fluxnetworks:gargantuan_flux_storage]]. Das Rezept: 6 Speicher der Stufe darunter oben und unten, 2 Glasscheiben links und rechts."
+  ],
+  "en": [
+   "In game they are the [[fluxnetworks:herculean_flux_storage]] and the [[fluxnetworks:gargantuan_flux_storage]]. The recipe: 6 storages of the tier below top and bottom, 2 glass panes left and right."
+  ],
+  "sources": [
+   "fluxnetworks:herculean_flux_storage (stage 4)",
+   "fluxnetworks:gargantuan_flux_storage (stage 5)",
+   "srv config fluxnetworks-server.toml [energy] herculean 16000000/120000, gargantuan 128000000/720000"
+  ]
+ },
+ "storage_more": {
+  "de": [
+   "Drei Speicher kosten zusammen 162 Staub, 72 Obsidian, 18 Quelljuwelen und 6 Glasscheiben, wenn du alles selbst baust. Für einen Herkulischen Speicher in Stufe 4 brauchst du sechs davon."
+  ],
+  "en": [
+   "Three storages cost 162 dust, 72 obsidian, 18 source gems and 6 glass panes when you build everything yourself. A Herculean storage in stage 4 needs six of them."
+  ],
+  "sources": [
+   "fluxnetworks:basic_flux_storage",
+   "kronwerke:added/flux_core",
+   "fluxnetworks:herculean_flux_storage"
+  ]
+ },
+ "whole_base": {
+  "de": [
+   "Die 8 Punkte und 2 Stecker der Quest kosten zusammen 58 Staub, 48 Obsidian, 12 Quelljuwelen und 8 Redstoneblöcke.",
+   "Richte einen Punkt fertig ein und kopiere ihn mit dem Konfigurator auf alle anderen ({{flux_networks/configurator}}). Ab hier zweigen die Anschlussquests ab, etwa {{flux_networks/setup_mek}} und {{flux_networks/ae2_power}}."
+  ],
+  "en": [
+   "The 8 points and 2 plugs of this quest cost 58 dust, 48 obsidian, 12 source gems and 8 blocks of redstone in total.",
+   "Set up one point, then copy it onto all others with the configurator ({{flux_networks/configurator}}). The hookup quests branch off here, such as {{flux_networks/setup_mek}} and {{flux_networks/ae2_power}}."
+  ],
+  "sources": [
+   "fluxnetworks:flux_point",
+   "fluxnetworks:flux_plug",
+   "kronwerke:added/flux_core"
+  ]
+ },
+ "setup_mek": {
+  "de": [
+   "Bei fünf Fabriken in einer Reihe sind das vier Punkte. Die Zahlen stimmen mit der Config: Anreicherungskammer 50 J pro Tick, Klärkammer 200 J, bei 2,5 J pro FE also 20 und 80 FE/t."
+  ],
+  "en": [
+   "Five factories in a row need four points. The numbers match the config: enrichment chamber 50 J per tick, purification chamber 200 J, so 20 and 80 FE/t at 2.5 J per FE."
+  ],
+  "sources": [
+   "srv config Mekanism/machine-usage.toml (enrichmentChamber 50, purificationChamber 200)",
+   "srv config Mekanism/general.toml (feConversionRate 2.5)"
+  ]
+ },
+ "setup_reactor": {
+  "de": [
+   "Der Nitro-Reaktor macht bis zu 500 000 FE/t, das passt durch einen Stecker. Seine Abgaberate von 2 000 000 FE/t schöpft ein einzelner Stecker aber nicht aus, für schnelles Entladen setzt du einen zweiten an.",
+   "Bau und Kühlung stehen in {{powah/reactor}}."
+  ],
+  "en": [
+   "The Nitro reactor makes up to 500,000 FE/t, which fits through one plug. Its output rate of 2,000,000 FE/t is more than one plug takes, so add a second for fast draining.",
+   "Building and cooling are in {{powah/reactor}}."
+  ],
+  "sources": [
+   "srv config powah.json5 reactors (generation_rates spirited 100000, nitro 500000; transfer_rates spirited 400000, nitro 2000000)",
+   "srv config fluxnetworks-server.toml [energy] defaultLimit 800000"
+  ]
+ },
+ "setup_jetpack": {
+  "de": [
+   "Der [[oritech:jetpack]] fliegt mit Strom oder mit Turbofuel, mit Turbofuel ist er schneller. Sein Tank fasst 4 000 mB, der Flux-Controller füllt aber nur den Strom nach.",
+   "Der [[oritech:exo_jetpack]] verbraucht 256 FE/t unter Schub, lädt mit 10 000 FE/t und gehört schon zu Stufe 3."
+  ],
+  "en": [
+   "The [[oritech:jetpack]] flies on power or on turbofuel, and faster on turbofuel. Its tank holds 4,000 mB, but the flux controller only refills the power.",
+   "The [[oritech:exo_jetpack]] uses 256 FE/t under thrust, charges at 10,000 FE/t and is already stage 3."
+  ],
+  "sources": [
+   "srv config oritech-startup.toml [basicJetpack] (energyCapacity 100000, fuelCapacity 4000, energyUsage 128, chargeSpeed 1024), [exoJetpack] (5000000, energyUsage 256, chargeSpeed 10000)",
+   "oritech lang (tooltip.oritech.jetpack_usage, jetpack_usage2)"
+  ]
+ },
+ "setup_turbine": {
+  "de": [
+   "Das [[mekanismgenerators:turbine_valve]] gehört zu Stufe 3. Mit dem Stecker am Ventil brauchst du keinen Energiewürfel direkt an der Turbine, den Puffer übernimmt ein Flux-Speicher im Netz.",
+   "Den Bau zeigt {{mekanism_advanced/turbine}}."
+  ],
+  "en": [
+   "The [[mekanismgenerators:turbine_valve]] is stage 3. With the plug at the valve you need no energy cube right at the turbine; a flux storage in the network does the buffering.",
+   "Construction is shown in {{mekanism_advanced/turbine}}."
+  ],
+  "sources": [
+   "kubejs/data/kronwerke/chapters/stages (mekanismgenerators:turbine_valve stage 3)",
+   "srv config Mekanism/general.toml (feConversionRate 2.5)"
+  ]
+ },
+ "ae2_power": {
+  "de": [
+   "Den [[ae2:energy_acceptor]] baust du aus Eisen, Kupfer und Quarzglas. Es gibt ihn auch als Kabelteil, beide Formen lassen sich in der Werkbank ineinander umwandeln."
+  ],
+  "en": [
+   "The [[ae2:energy_acceptor]] is made from iron, copper and quartz glass. It also exists as a cable part, and the two forms convert into each other in the crafting grid."
+  ],
+  "sources": [
+   "ae2:network/blocks/energy_energy_acceptor",
+   "ae2:network/blocks/energy_energy_acceptor_alt (ae2:cable_energy_acceptor)"
+  ]
+ },
+ "create_motor": {
+  "de": [
+   "Der [[createaddition:electric_motor]] gehört schon zu Stufe 2. Er nimmt höchstens 5 000 FE/t auf und hat einen Speicher von 5 000 FE, ein Flux-Punkt mit 800 000 FE/t ist also mehr als genug."
+  ],
+  "en": [
+   "The [[createaddition:electric_motor]] is stage 2 already. It takes at most 5,000 FE/t and stores 5,000 FE, so a flux point with 800,000 FE/t is more than enough."
+  ],
+  "sources": [
+   "createaddition:mechanical_crafting/electric_motor",
+   "srv config createaddition-common.toml [electric_motor] (motor_rpm_range 256, motor_max_input 5000, motor_capacity 5000)"
+  ]
+ },
+ "powah_rods": {
+  "de": [
+   "Die Stäbe nehmen laut Config höchstens 40 000 FE/t (Spirited) und 200 000 FE/t (Nitro) auf, ein Punkt schafft beides locker. Die Kugel reicht 4 Blöcke weit zu ihren Stäben.",
+   "Mehr zu Kugel und Stäben in {{powah/rods}}."
+  ],
+  "en": [
+   "By config the rods take at most 40,000 FE/t (Spirited) and 200,000 FE/t (Nitro), which one point easily covers. The orb reaches its rods within 4 blocks.",
+   "More on orb and rods in {{powah/rods}}."
+  ],
+  "sources": [
+   "srv config powah.json5 (energizing_rods transfer_rates, energizing_range 4)"
+  ],
+  "client": [
+   "Energizing rods accept power from a flux point placed below them"
+  ]
+ },
+ "final": {
+  "de": [
+   "16 Punkte und ein Speicher kosten zusammen 118 Staub, 88 Obsidian, 22 Quelljuwelen und 16 Redstoneblöcke.",
+   "Die 4 000 Stahl und 250 Schaltkreise im Questtext sind Grundwerte für 30 aktive Spieler, die echte Zahl steht am Obelisken. Fest sind dort nur die 8 Stahlkerne."
+  ],
+  "en": [
+   "16 points and one storage cost 118 dust, 88 obsidian, 22 source gems and 16 blocks of redstone together.",
+   "The 4,000 steel and 250 circuits in the quest text are base values for 30 active players; the real number is shown at the obelisk. Only the 8 steel cores there are fixed."
+  ],
+  "sources": [
+   "fluxnetworks:flux_point",
+   "fluxnetworks:basic_flux_storage",
+   "kronwerke:added/flux_core",
+   "config/kronwerke/goals.json (stage3: #c:ingots/steel 4000, advanced_control_circuit 250, steel_core 8 fixed)"
+  ]
+ }
+}

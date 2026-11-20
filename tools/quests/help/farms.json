@@ -1,0 +1,624 @@
+{
+ "welcome": {
+  "de": [
+   "Die Mengen am Obelisken gelten für 30 aktive Spieler und werden beim Öffnen der Stufe mit dem Faktor 0,4 bis 1,5 umgerechnet. Fest sind nur die Meilensteine: 12 [[kronwerke:stone_gearbox]] und 12 [[kronwerke:source_keystone]].",
+   "Abgegeben wird mit einem Schleich-Klick, einem Gegenstand in der Hand und einem zweiten Schleich-Klick innerhalb von 5 Sekunden. Der Obelisk nimmt dabei **nur die Reihen des Hauptinventars**, nicht Schnellzugriff, Rüstung oder den Inhalt eines Rucksacks."
+  ],
+  "en": [
+   "The obelisk amounts assume 30 active players and are scaled by a factor of 0.4 to 1.5 when the stage opens. Only the milestones are fixed: 12 [[kronwerke:stone_gearbox]] and 12 [[kronwerke:source_keystone]].",
+   "You hand in with a sneak click while holding an item, then a second sneak click within 5 seconds. The obelisk takes **only the main inventory rows**, not the hotbar, armour or the contents of a backpack."
+  ],
+  "sources": [
+   "config/kronwerke/goals.json (stage1: scale, fixed milestones)",
+   "docs/STAGES.md (base * clamp(active / 30, 0.4, 1.5))"
+  ]
+ },
+ "cobble_drill": {
+  "de": [
+   "Ein [[create:water_wheel]] dreht mit 8 RPM und trägt 32 SU pro RPM, zusammen 256 SU. Ein [[create:mechanical_drill]] kostet 4 SU pro RPM, an einem Wasserrad laufen also bis zu acht Bohrer, wenn sonst nichts an der Welle hängt.",
+   "Den Rucksack musst du vor dem Obelisken ausleeren: **Rucksackinhalt zählt beim Abgeben nicht**, nur die Reihen des Hauptinventars. Der Bruchstein geht danach in den Mahlstein ({{farms/gravel_sand}})."
+  ],
+  "en": [
+   "A [[create:water_wheel]] turns at 8 RPM with 32 SU per RPM, 256 SU in total. A [[create:mechanical_drill]] costs 4 SU per RPM, so one wheel runs up to eight drills if nothing else hangs on the shaft.",
+   "Empty your backpack before you go to the obelisk: **backpack contents do not count** when handing in, only the main inventory rows. The cobblestone then feeds the millstone ({{farms/gravel_sand}})."
+  ],
+  "sources": [
+   "config create-server.toml (water_wheel 32.0, mechanical_drill 4.0)",
+   "create jar: WaterWheelBlockEntity.getGeneratedSpeed (8)",
+   "kronwerke core: obelisk hand-in (main inventory rows only)"
+  ]
+ },
+ "stone_seeds": {
+  "de": [
+   "Der [[mysticalagriculture:infusion_altar]] braucht 8 [[mysticalagriculture:infusion_pedestal]] um sich herum und startet mit einem Zauberstab oder einem Redstone-Signal. Die Steinzutat ist echter [[minecraft:stone]], also im Ofen geschmolzener Bruchstein, kein Bruchstein.",
+   "Steinsamen gehören zur Stufe 1 und passen auf [[mysticalagriculture:inferium_farmland]]. Ein [[mysticalagriculture:inferium_growth_accelerator]] wirkt bis 9 Blöcke über sich, mehrere übereinander addieren sich, solange die Pflanze in ihrer Reichweite steht."
+  ],
+  "en": [
+   "The [[mysticalagriculture:infusion_altar]] needs 8 [[mysticalagriculture:infusion_pedestal]] around it and is started with a wand or a redstone signal. The stone ingredient is real [[minecraft:stone]], cobblestone smelted in a furnace, not cobblestone.",
+   "Stone seeds are tier 1 and belong on [[mysticalagriculture:inferium_farmland]]. An [[mysticalagriculture:inferium_growth_accelerator]] reaches up to 9 blocks above it, and several stacked ones add up as long as the crop is within their range."
+  ],
+  "sources": [
+   "mysticalagriculture:seed/infusion/stone",
+   "MysticalAgriculture jar: ModCrops (stone, tier ONE, material minecraft:stone), ModBlocks (inferium accelerator range 9)",
+   "MysticalAgriculture lang de_de (book entry infusion_altar, growth_accelerators)"
+  ]
+ },
+ "gravel_sand": {
+  "de": [
+   "Der [[create:millstone]] kostet 4 SU pro RPM, ein Wasserrad schafft also Bohrer und Mahlstein zusammen. In Stufe 1 kommt Sand ohne Mahlwerkräder nur aus Essenz.",
+   "Mit **Erdessenz** ist [[mysticalagriculture:dirt_essence]] gemeint, die Essenz der Pflanze aus Erdblöcken, nicht die elementare Erde aus dem Erd-Agglomerat. Die Kieswäsche gibt 25 Prozent Feuerstein und 12,5 Prozent Eisenklumpen, siehe {{create/washing}}."
+  ],
+  "en": [
+   "The [[create:millstone]] costs 4 SU per RPM, so one water wheel runs both drill and millstone. In stage 1, without crushing wheels, sand only comes from essence.",
+   "The **dirt essence** in the recipe is [[mysticalagriculture:dirt_essence]], from the crop made with dirt blocks, not the elemental earth essence from Earth Agglomeratio. Washing gravel gives 25 percent flint and 12.5 percent iron nuggets, see {{create/washing}}."
+  ],
+  "sources": [
+   "create:milling/cobblestone",
+   "mysticalagriculture:essence/minecraft/sand",
+   "mysticalagriculture:essence/minecraft/gravel",
+   "create:splashing/gravel",
+   "config create-server.toml (millstone 4.0)"
+  ]
+ },
+ "alloy_line": {
+  "de": [
+   "Die Rechnung geht auf: 9 Kies ergeben in der Wäsche im Schnitt 2 Feuerstein und 1 Eisenklumpen. 2 Feuerstein, 1 Kies und 100 mB Lava werden zu einem Andesit, und mit dem Klumpen macht der Mixer daraus 2 [[create:andesite_alloy]].",
+   "Ein Lavaeimer reicht also für 10 Andesit oder 20 Legierungen. Der Mixer braucht keine Hitze, und mit Zinkklumpen statt Eisen geht dasselbe Rezept. Lava ohne See kommt von {{farms/lava_seeds}}."
+  ],
+  "en": [
+   "The numbers work out: 9 gravel give 2 flint and 1 iron nugget on average when washed. 2 flint, 1 gravel and 100 mB lava press into one andesite, and with the nugget the mixer turns it into 2 [[create:andesite_alloy]].",
+   "One lava bucket covers 10 andesite or 20 alloy. The mixer needs no heat, and zinc nuggets work in place of iron. For lava without a lake see {{farms/lava_seeds}}."
+  ],
+  "sources": [
+   "create:splashing/gravel",
+   "create:compacting/andesite_from_flint",
+   "kronwerke:create/andesite_alloy_mixing",
+   "kronwerke:create/andesite_alloy_mixing_from_zinc"
+  ]
+ },
+ "wood_pots": {
+  "de": [
+   "Den [[botanypots:terracotta_hopper_botany_pot]] baust du aus Topf und Trichter oder direkt aus Terrakotta, Blumentopf und Trichter. Eine Eiche braucht 2 400 Ticks und gibt 1 bis 4 Stämme, dazu mit je 5 Prozent einen Setzling und einen Apfel.",
+   "[[farmersdelight:rich_soil]] statt Erde lässt den Baum 10 Prozent schneller wachsen. Weiter geht es mit {{farms/wood_sawmill}} und {{farms/wood_charcoal}}."
+  ],
+  "en": [
+   "Build the [[botanypots:terracotta_hopper_botany_pot]] from a pot and a hopper, or straight from terracotta, a flower pot and a hopper. An oak takes 2,400 ticks and gives 1 to 4 logs, plus a 5 percent chance each for a sapling and an apple.",
+   "[[farmersdelight:rich_soil]] instead of dirt makes the tree grow 10 percent faster. Next come {{farms/wood_sawmill}} and {{farms/wood_charcoal}}."
+  ],
+  "sources": [
+   "botanypots:botanypots/crafting/terracotta_hopper_botany_pot",
+   "botanypots:botanypots/crafting/terracotta_hopper_botany_pot_quick",
+   "botanytrees:minecraft/oak (grow_time 2400)",
+   "botanytrees jar: loot_table tree_drops/minecraft/oak",
+   "botanypots jar: soil rich_soil (growth_modifier 0.10)"
+  ]
+ },
+ "wood_sawmill": {
+  "de": [
+   "Das [[productivetrees:sawmill]] im Raster: oben Brett, Steinschneider, Brett, in der Mitte 3 [[create:andesite_alloy]], unten 3 Bretter. Es braucht weder Strom noch Rotation.",
+   "Jeder Stamm gibt 6 Bretter und 2 [[productivetrees:sawdust]], für die 16 Sägemehl der Quest reichen also 8 Stämme. Das Sägemehl wird zu Papier, auch die Variante mit Wasserflasche statt Eimer funktioniert."
+  ],
+  "en": [
+   "The [[productivetrees:sawmill]] in the grid: plank, stonecutter, plank on top, 3 [[create:andesite_alloy]] in the middle, 3 planks below. It needs neither power nor rotation.",
+   "Every log gives 6 planks and 2 [[productivetrees:sawdust]], so 8 logs cover the 16 sawdust of this quest. Sawdust turns into paper, and the variant with a water bottle instead of a bucket works too."
+  ],
+  "sources": [
+   "productivetrees:sawmill (crafting)",
+   "productivetrees:sawmill/oak_planks_from_log (6 planks, secondary 2 sawdust)",
+   "productivetrees:sawdust_to_paper",
+   "productivetrees:sawdust_to_paper_water_bottle"
+  ]
+ },
+ "wood_saw": {
+  "de": [
+   "Jede [[create:mechanical_saw]] kostet 4 SU pro RPM, das [[create:mechanical_bearing]] ebenfalls 4. Bei den 8 RPM eines Wasserrads sind das 96 SU für zwei Sägen und das Lager, das Rad trägt 256.",
+   "Ohne [[create:super_glue]] dreht sich nur das Lager selbst, die Blöcke des Arms müssen also verklebt sein. Den Nachschub an Setzlingen übernimmt in Stufe 2 das Einsatzgerät ({{farms/s2_wood}})."
+  ],
+  "en": [
+   "Every [[create:mechanical_saw]] costs 4 SU per RPM, and so does the [[create:mechanical_bearing]]. At the 8 RPM of a water wheel that is 96 SU for two saws and the bearing, and the wheel carries 256.",
+   "Without [[create:super_glue]] the arm blocks do not move with the bearing, so glue them together. In stage 2 the deployer replants the saplings ({{farms/s2_wood}})."
+  ],
+  "sources": [
+   "config create-server.toml (mechanical_saw 4.0, mechanical_bearing 4.0, water_wheel 32.0)"
+  ],
+  "client": [
+   "Whether the arm needs glue on every block or picks up attached blocks on its own (Create contraption rules)"
+  ]
+ },
+ "wood_charcoal": {
+  "de": [
+   "Der [[create:encased_fan]] kostet nur 2 SU pro RPM und nimmt jedes Ofenrezept, also auch Erz zu Barren. Leg die Stämme auf ein Band oder ein Depot vor dem Luftstrom, dann wartet die Holzkohle dort, bis ein Trichter oder eine Schleuse sie abholt.",
+   "Für {{farms/mana_endoflame}} brauchst du viel davon: Acht Endoflammen fressen für ein volles Manabecken rund 420 Holzkohle."
+  ],
+  "en": [
+   "The [[create:encased_fan]] costs only 2 SU per RPM and runs every furnace recipe, ore to ingots included. Put the logs on a belt or a depot in the air stream, and the charcoal waits there until a hopper or a funnel takes it.",
+   "{{farms/mana_endoflame}} needs a lot of it: eight endoflames eat about 420 charcoal to fill one mana pool."
+  ],
+  "sources": [
+   "config create-server.toml (encased_fan 2.0)",
+   "minecraft smelting: logs to charcoal"
+  ],
+  "client": [
+   "Items on a depot stay there after fan processing until taken"
+  ]
+ },
+ "crops_pots": {
+  "de": [
+   "Ein Hopper-Topf gibt die Ernte in den Block darunter weiter, eine Truhe oder Schublade genügt. Auf [[farmersdelight:rich_soil_farmland]] wächst es sogar 15 Prozent schneller als auf normaler Erde, auf [[farmersdelight:rich_soil]] 10 Prozent.",
+   "Den Weizen brauchst du gleich mehrfach: im Futtertrog ({{farms/animals_trough}}), für Brot und für {{farms/running}}, die 64 auf einmal will."
+  ],
+  "en": [
+   "A hopper pot passes the harvest into the block below, a chest or a drawer is enough. On [[farmersdelight:rich_soil_farmland]] crops grow even 15 percent faster than on plain dirt, on [[farmersdelight:rich_soil]] 10 percent.",
+   "You need the wheat in several places: in the feeding trough ({{farms/animals_trough}}), for bread and for {{farms/running}}, which wants 64 at once."
+  ],
+  "sources": [
+   "botanypots jar: soil rich_soil_farmland (0.15), rich_soil (0.10)",
+   "botanypots jar: crop minecraft wheat"
+  ]
+ },
+ "crops_harvester": {
+  "de": [
+   "Zwei [[create:mechanical_harvester]] genügen für die Quest. Für den Portalkran brauchst du einen [[create:gantry_carriage]] auf einer Portalwelle, beides geht schon in Stufe 1.",
+   "Die Erntemaschine nimmt nur reife Pflanzen und lässt die Samen in der Erde, die überzähligen Samen in der Truhe gehen in den Komposter ({{farms/crops_compost}})."
+  ],
+  "en": [
+   "Two [[create:mechanical_harvester]] are enough for this quest. For the gantry version you need a [[create:gantry_carriage]] on a gantry shaft, both available in stage 1.",
+   "The harvester only takes ripe crops and leaves the plant in the ground; the spare seeds in the chest go into the composter ({{farms/crops_compost}})."
+  ],
+  "sources": [
+   "kubejs/data/kronwerke/chapters/stages (create:mechanical_harvester, create:gantry_carriage stage 1)"
+  ],
+  "client": [
+   "Mechanical harvester replanting behaviour on mystical agriculture crops"
+  ]
+ },
+ "crops_essence": {
+  "de": [
+   "Auf jedem Essenz-Ackerland fällt mit 10 Prozent ein zweiter Samen, auf Ackerland der eigenen Stufe noch einmal 10 Prozent dazu. Inferium-, Stein-, Erde- und Feuersamen kommen auf [[mysticalagriculture:inferium_farmland]] also auf 20 Prozent.",
+   "Inferiumsamen werfen auf höherem Ackerland mehr Essenz ab, darum lohnt später Prudentium-Ackerland ({{farms/s2_crops}}). Knochenmehl wirkt auf keine Essenzpflanze."
+  ],
+  "en": [
+   "Every essence farmland gives a 10 percent chance of a second seed, and farmland of the crop's own tier adds another 10 percent. Inferium, stone, dirt and fire seeds on [[mysticalagriculture:inferium_farmland]] get 20 percent.",
+   "Inferium seeds drop more essence on higher farmland, so prudentium farmland pays off later ({{farms/s2_crops}}). Bone meal does nothing on essence crops."
+  ],
+  "sources": [
+   "MysticalAgriculture lang (book essence_farmland page 2)",
+   "MysticalAgriculture jar: ModCorePlugin (tier ONE and ELEMENTAL use inferium farmland)",
+   "MysticalAgriculture jar: MysticalCropBlock.isBonemealSuccess (false)",
+   "srv config mysticalagriculture-common.toml (secondarySeedDrops true)"
+  ]
+ },
+ "crops_compost": {
+  "de": [
+   "Samen, Blätter und Setzlinge füllen eine Schicht nur mit 30 Prozent Chance, für ein Knochenmehl brauchst du im Schnitt gut 23 davon. Weizen schafft 65 Prozent.",
+   "Schneller geht es mit Knochen: Einer gibt 3 [[minecraft:bone_meal]], und Knochen kommen in Mengen aus dem dunklen Raum ({{farms/mobs_dark}})."
+  ],
+  "en": [
+   "Seeds, leaves and saplings fill a layer with only a 30 percent chance, so one bone meal takes about 23 of them on average. Wheat manages 65 percent.",
+   "Bones are faster: one gives 3 [[minecraft:bone_meal]], and the dark room delivers bones by the stack ({{farms/mobs_dark}})."
+  ],
+  "sources": [
+   "minecraft: composter chances (vanilla)",
+   "minecraft:bone_meal (from bone, 3)"
+  ]
+ },
+ "animals_trough": {
+  "de": [
+   "Der [[farmingforblockheads:feeding_trough]] füttert Tiere in 8 Blöcken Umkreis und hört auf, sobald 24 Tiere einer Art in der Nähe sind. Die Herde wächst also nicht endlos, und der Server bleibt flüssig.",
+   "Das Futter muss zur Art passen: Weizen für Kühe und Schafe, Karotten oder Kartoffeln für Schweine, Samen für Hühner. Als Nächstes erntet {{farms/animals_thorn}} die Herde ab."
+  ],
+  "en": [
+   "The [[farmingforblockheads:feeding_trough]] feeds animals within 8 blocks and stops once 24 animals of one kind are nearby. The herd never grows without limit, and the server stays smooth.",
+   "The food has to match: wheat for cows and sheep, carrots or potatoes for pigs, seeds for chickens. Next, {{farms/animals_thorn}} harvests the herd."
+  ],
+  "sources": [
+   "farmingforblockheads:feeding_trough",
+   "srv config farmingforblockheads-common.toml (feedingTroughRange 8, feedingTroughMaxAnimals 24)"
+  ]
+ },
+ "animals_thorn": {
+  "de": [
+   "Als Funktionsblume zieht der [[botania:dreadthorne]] sein Mana aus einem [[botania:mana_pool]] in der Nähe. Das Becken muss also gefüllt werden, etwa von den Endoflammen aus {{farms/mana_endoflame}}.",
+   "Zusammen mit dem Futtertrog, der bei 24 Tieren aufhört, hält sich die Herde von selbst: Der Trog züchtet nach, der Dorn erntet die Großen ab."
+  ],
+  "en": [
+   "As a functional flower the [[botania:dreadthorne]] draws its mana from a nearby [[botania:mana_pool]]. That pool needs filling, for example by the endoflames from {{farms/mana_endoflame}}.",
+   "Together with the feeding trough, which stops at 24 animals, the herd keeps itself level: the trough breeds, the thorn harvests the grown ones."
+  ],
+  "sources": [
+   "botania:petal_apothecary/dreadthorne",
+   "srv config farmingforblockheads-common.toml (feedingTroughMaxAnimals 24)"
+  ]
+ },
+ "animals_nest": {
+  "de": [
+   "Das [[farmingforblockheads:chicken_nest]] sammelt Eier in 8 Blöcken Umkreis ein. Für die [[cookingforblockheads:cow_jar]] stellst du zuerst ein [[cookingforblockheads:milk_jar]] auf, siehe {{cooking/cow}}.",
+   "1 mB pro Tick sind ein Eimer alle 50 Sekunden, also 72 Eimer in der Stunde, solange der Chunk geladen ist."
+  ],
+  "en": [
+   "The [[farmingforblockheads:chicken_nest]] collects eggs within 8 blocks. For the [[cookingforblockheads:cow_jar]] you first place a [[cookingforblockheads:milk_jar]], see {{cooking/cow}}.",
+   "1 mB per tick is one bucket every 50 seconds, or 72 buckets an hour, as long as the chunk is loaded."
+  ],
+  "sources": [
+   "farmingforblockheads:chicken_nest",
+   "srv config farmingforblockheads-common.toml (chickenNestRange 8)",
+   "srv config cookingforblockheads-common.toml (cowJarMilkPerTick 1, cowJarEnabled true)"
+  ]
+ },
+ "animals_wool": {
+  "de": [
+   "Ein geschorenes Schaf bekommt seine Wolle erst zurück, wenn es Gras gefressen hat, also braucht das Gehege Grasblöcke statt Erde. Färbst du ein Schaf, bleibt es gefärbt und gibt ab dann farbige Wolle.",
+   "Jede Schur kostet die [[minecraft:shears]] im Werfer Haltbarkeit, leg also Ersatz dazu. In Stufe 2 schert das Einsatzgerät ({{farms/s2_animals}})."
+  ],
+  "en": [
+   "A sheared sheep only regrows its wool after eating grass, so the pen needs grass blocks rather than dirt. A dyed sheep stays dyed and gives coloured wool from then on.",
+   "Every cut costs the [[minecraft:shears]] in the dispenser durability, so add spares. In stage 2 the deployer does the shearing ({{farms/s2_animals}})."
+  ],
+  "sources": [
+   "minecraft: dispenser shearing and sheep regrowth (vanilla)"
+  ]
+ },
+ "animals_vitalic": {
+  "de": [
+   "Den [[ars_nouveau:vitalic_sourcelink]] baust du aus 2 [[ars_nouveau:source_gem]], 2 Goldbarren und einer Glitzernden Melonenscheibe in der Mitte. Die Quelle, die er sammelt, wandert in ein [[ars_nouveau:source_jar]].",
+   "Aus dem Glas holt sich die Imbuement-Kammer ihre Quelle ({{farms/gem_plant}}). Mehr zum Link unter {{ars_nouveau/vitalic}}."
+  ],
+  "en": [
+   "Build the [[ars_nouveau:vitalic_sourcelink]] from 2 [[ars_nouveau:source_gem]], 2 gold ingots and a Glistering Melon Slice in the middle. The source it gathers goes into a [[ars_nouveau:source_jar]].",
+   "The imbuement chamber draws its source from that jar ({{farms/gem_plant}}). More on the link in {{ars_nouveau/vitalic}}."
+  ],
+  "sources": [
+   "ars_nouveau:vitalic_sourcelink"
+  ]
+ },
+ "mobs_dark": {
+  "de": [
+   "Die 22 Blöcke stimmen nur in Stufe 1. Ab Stufe 2 haben Monster auf Kronwerke **mehr Leben**: plus 30 Prozent, in Stufe 3 plus 70, in Stufe 5 plus 180 Prozent. Dann landen sie mit mehr als einem halben Herz und brauchen mehr Schläge.",
+   "Für den reinen Beutebetrieb machst du den Schacht dann tiefer oder lässt am Boden {{farms/mobs_killer}} die Arbeit machen."
+  ],
+  "en": [
+   "The 22 blocks only hold in stage 1. From stage 2 on, monsters on Kronwerke have **more health**: plus 30 percent, plus 70 in stage 3, plus 180 percent in stage 5. They land with more than half a heart and take more hits.",
+   "If you only want loot, make the shaft deeper then, or let {{farms/mobs_killer}} do the work at the bottom."
+  ],
+  "sources": [
+   "config/kronwerke-common.toml [mobs] health = [0.0, 0.3, 0.7, 1.2, 1.8]",
+   "core: GoalManager.at (index = open stage)"
+  ]
+ },
+ "mobs_spawner": {
+  "de": [
+   "Schon **Behutsamkeit I** reicht, und der Spawner behält beim Abbauen sein Monster. Die Spitzhacke verliert dabei 100 Haltbarkeit.",
+   "Die Monster aus dem Spawner bekommen denselben Lebensbonus pro Stufe wie alle anderen. Runen und Upgrades stehen unter {{apotheosis/rune}} und {{apotheosis/frontier_rune}}."
+  ],
+  "en": [
+   "**Silk Touch I** is enough, and the spawner keeps its monster when mined. The pickaxe loses 100 durability doing it.",
+   "Monsters from the spawner get the same per stage health bonus as all others. Runes and upgrades are in {{apotheosis/rune}} and {{apotheosis/frontier_rune}}."
+  ],
+  "sources": [
+   "srv config apothic_spawners.cfg (Spawner Silk Level 1, Spawner Silk Damage 100, Spawners Drop Empty false)",
+   "apotheosis:frontier_spawner_upgrade_rune",
+   "config/kronwerke-common.toml [mobs]"
+  ]
+ },
+ "mobs_killer": {
+  "de": [
+   "Der [[botania:bellethorne]] ist eine Funktionsblume und braucht ein gefülltes [[botania:mana_pool]] in der Nähe, nicht einen Verbreiter. Ein Redstone-Signal schaltet ihn ab, etwa wenn jemand mit Haustier vorbeikommt.",
+   "Weil Monster ab Stufe 2 mehr Leben haben, brauchen Dorn und Lüfter dann länger pro Monster. Mehr Tempo bringt Stufe 2 mit {{farms/s2_mobs}}."
+  ],
+  "en": [
+   "The [[botania:bellethorne]] is a functional flower and needs a filled [[botania:mana_pool]] nearby, not a spreader. A redstone signal turns it off, for example when someone walks by with a pet.",
+   "Since monsters have more health from stage 2 on, thorn and fan take longer per monster then. Stage 2 speeds things up with {{farms/s2_mobs}}."
+  ],
+  "sources": [
+   "botania:petal_apothecary/bellethorne",
+   "config/kronwerke-common.toml [mobs] health"
+  ],
+  "client": [
+   "Bellethorne is disabled by a redstone signal"
+  ]
+ },
+ "mobs_golem": {
+  "de": [
+   "Für 64 Eisenbarren brauchst du 13 bis 22 Golems. Ein Barren gibt 9 Eisenklumpen, und jeder Klumpen macht im Mixer mit einem Andesit 2 [[create:andesite_alloy]]: Ein Barren sind also 18 Legierungen für den Obelisken.",
+   "Die Dorfbewohner brauchen eigene Betten in der Nähe. Die Klumpen gehen direkt in die Straße von {{farms/alloy_line}}."
+  ],
+  "en": [
+   "64 iron ingots take 13 to 22 golems. One ingot gives 9 iron nuggets, and each nugget plus one andesite makes 2 [[create:andesite_alloy]] in the mixer: one ingot is 18 alloy for the obelisk.",
+   "The villagers need beds of their own nearby. The nuggets go straight into the line from {{farms/alloy_line}}."
+  ],
+  "sources": [
+   "minecraft:iron_nugget (from ingot, 9)",
+   "kronwerke:create/andesite_alloy_mixing",
+   "minecraft: iron golem drops 3 to 5 ingots (vanilla)"
+  ],
+  "client": [
+   "Golem spawning with panicking villagers in this pack"
+  ]
+ },
+ "water": {
+  "de": [
+   "Die [[create:mechanical_pump]] fördert in Pfeilrichtung, drehst du die Welle andersherum, kehrt sich das um. Übereinander gestellte [[create:fluid_tank]] verbinden sich zu einem großen Tank.",
+   "Wasser brauchst du bald überall: für die Kieswäsche vor dem Lüfter ({{farms/alloy_line}}), am Bruchsteingenerator und für die Lava daneben ({{farms/lava}})."
+  ],
+  "en": [
+   "The [[create:mechanical_pump]] pushes in the direction of its arrow, and reversing the shaft reverses it. Stacked [[create:fluid_tank]] blocks join into one big tank.",
+   "You will need water everywhere soon: for washing gravel in front of the fan ({{farms/alloy_line}}), at the cobblestone generator and next to the lava ({{farms/lava}})."
+  ],
+  "sources": [
+   "config create-server.toml (mechanicalPumpRange 16, fluidTankCapacity 8, hosePulleyRange 128)"
+  ],
+  "client": [
+   "Pump direction follows shaft rotation"
+  ]
+ },
+ "lava": {
+  "de": [
+   "Lava rechnet sich in Andesit: Die Presse nimmt 100 mB pro Andesit, ein Eimer reicht also für 10 Andesit und damit 20 [[create:andesite_alloy]].",
+   "Für einen See, der nicht unendlich ist, nimmst du die [[create:hose_pulley]] von oben, sie reicht 128 Blöcke tief. Ein Bruchsteingenerator verbraucht seine Lava nicht, den brauchst du also nur einmal zu füllen."
+  ],
+  "en": [
+   "Lava converts into andesite: the press takes 100 mB per andesite, so one bucket covers 10 andesite and thus 20 [[create:andesite_alloy]].",
+   "For a lake that is not infinite, use the [[create:hose_pulley]] from above, it reaches 128 blocks deep. A cobblestone generator never uses up its lava, so you only fill it once."
+  ],
+  "sources": [
+   "create:compacting/andesite_from_flint (100 mB lava)",
+   "kronwerke:create/andesite_alloy_mixing",
+   "config create-server.toml (hosePulleyRange 128)"
+  ]
+ },
+ "lava_seeds": {
+  "de": [
+   "Feuersamen gehören zur Elementar-Stufe, nutzen aber Inferiumessenz und [[mysticalagriculture:inferium_farmland]] wie Stufe 1. Das [[mysticalagriculture:fire_agglomeratio]] entsteht im 2 mal 2 Raster, der Eimer bleibt dabei übrig.",
+   "4 [[mysticalagriculture:fire_essence]] sind 1 000 mB Lava, genug für 10 Andesit in der Presse. Ab Stufe 2 gibt es Lava auch mit Mekanism ({{farms/s2_fluids}})."
+  ],
+  "en": [
+   "Fire seeds are elemental tier, but they use inferium essence and [[mysticalagriculture:inferium_farmland]] like tier 1. The [[mysticalagriculture:fire_agglomeratio]] is made in a 2 by 2 grid, and you keep the bucket.",
+   "4 [[mysticalagriculture:fire_essence]] are 1,000 mB of lava, enough for 10 andesite in the press. From stage 2 on Mekanism adds more lava options ({{farms/s2_fluids}})."
+  ],
+  "sources": [
+   "mysticalagriculture:seed/infusion/fire",
+   "mysticalagriculture:fire_agglomeratio",
+   "mysticalagriculture:essence/minecraft/lava_bucket",
+   "MysticalAgriculture jar: ModCrops (fire ELEMENTAL), ModCorePlugin (ELEMENTAL: inferium farmland and essence)"
+  ]
+ },
+ "lava_dripstone": {
+  "de": [
+   "Ein Lavakessel ist mit einem einzigen Tropfen voll und enthält dann genau einen Eimer. Leere ihn gleich ab, sonst tropft der Stein ins Leere.",
+   "[[minecraft:pointed_dripstone]] lässt sich nicht herstellen, du musst ihn in Tropfsteinhöhlen abbauen. Stein- und Wasseressenz ergeben nur 12 Tropfsteinblöcke, keine Spitzen."
+  ],
+  "en": [
+   "A lava cauldron is full after a single drip and then holds exactly one bucket. Empty it right away, or the dripstone drips for nothing.",
+   "[[minecraft:pointed_dripstone]] cannot be crafted, you have to mine it in dripstone caves. Stone and water essence only make 12 dripstone blocks, not the pointed kind."
+  ],
+  "sources": [
+   "mysticalagriculture:essence/minecraft/dripstone (12 dripstone_block)",
+   "minecraft: lava cauldron (vanilla)"
+  ]
+ },
+ "source_berries": {
+  "de": [
+   "Der [[ars_nouveau:agronomic_sourcelink]]: Quelljuwel oben und unten, Goldbarren links und rechts, Weizen in der Mitte. Er wertet das Wachstum der Pflanzen um ihn herum aus, ein Feld mit Wachstumsbeschleunigern darunter wächst öfter und gibt damit mehr.",
+   "Mehr zu Beeren und Link unter {{ars_nouveau/sourceberry}} und {{ars_nouveau/agronomic}}. Die Quelle geht weiter in die Kammern von {{farms/gem_plant}}."
+  ],
+  "en": [
+   "The [[ars_nouveau:agronomic_sourcelink]]: source gem top and bottom, gold ingots left and right, wheat in the middle. It counts the growth of crops around it, so a field with growth accelerators below grows more often and yields more.",
+   "More on berries and the link in {{ars_nouveau/sourceberry}} and {{ars_nouveau/agronomic}}. The source moves on to the chambers of {{farms/gem_plant}}."
+  ],
+  "sources": [
+   "ars_nouveau:agronomic_sourcelink"
+  ],
+  "client": [
+   "Agronomic sourcelink counts growth ticks from mystical agriculture accelerators"
+  ]
+ },
+ "mana_endoflame": {
+  "de": [
+   "Die [[botania:endoflame]] mischst du aus 2 braunen, 1 roten und 1 hellgrauen Blütenblatt, die [[botania:open_crate]] aus 7 Lebeholzbrettern. Der Verbreiter muss an die Flammen gebunden sein, das Becken an den Verbreiter.",
+   "Die Holzkohle kommt aus dem Lüfter ({{farms/wood_charcoal}}). Wie die Fütterung im Detail läuft, steht unter {{botania/endo_auto}}."
+  ],
+  "en": [
+   "Craft the [[botania:endoflame]] from 2 brown, 1 red and 1 light grey petal, the [[botania:open_crate]] from 7 livingwood planks. The flames have to be bound to the spreader, and the spreader aims at the pool.",
+   "The charcoal comes from the fan ({{farms/wood_charcoal}}). The feeding setup in detail is in {{botania/endo_auto}}."
+  ],
+  "sources": [
+   "botania:petal_apothecary/endoflame",
+   "botania:open_crate"
+  ],
+  "client": [
+   "Binding endoflames to a spreader with the wand"
+  ]
+ },
+ "gem_plant": {
+  "de": [
+   "Eine [[ars_nouveau:imbuement_chamber]] kostet auf Kronwerke 6 Archwood-Planken und 2 [[create:golden_sheet]], vier Kammern also 24 Planken und 8 Goldbleche. Amethyst und Lapislazuli werden beide für 500 Quelle zum Juwel.",
+   "64 Juwelen sind 32 000 Quelle. Ein einzelnes Glas reicht dafür kaum, stell mehrere Gläser dazu und häng alle Quelllinks an ({{farms/source_berries}}, {{farms/animals_vitalic}})."
+  ],
+  "en": [
+   "An [[ars_nouveau:imbuement_chamber]] on Kronwerke costs 6 archwood planks and 2 [[create:golden_sheet]], so four chambers take 24 planks and 8 golden sheets. Amethyst and lapis both turn into a gem for 500 source.",
+   "64 gems are 32,000 source. One jar will hardly keep up, so add more jars and connect every sourcelink ({{farms/source_berries}}, {{farms/animals_vitalic}})."
+  ],
+  "sources": [
+   "ars_nouveau:imbuement_chamber (archwood planks, create:golden_sheet)",
+   "ars_nouveau:imbuement_lapis (source 500)",
+   "ars_nouveau:imbuement_amethyst",
+   "config/kronwerke/goals.json (source_gem weight 4)"
+  ]
+ },
+ "s2_sand": {
+  "de": [
+   "[[create:crushing_wheel]] und [[mekanism:crusher]] öffnen mit Stufe 2 (Messingwerk). Ein Mahlwerkrad kostet 8 SU pro RPM, ein Paar also 16, deutlich mehr als ein Mahlstein.",
+   "Der Zerkleinerer braucht 50 J pro Tick, das sind 20 FE/t. Die Räder selbst stehen unter {{create_brass/crushing_wheel}}."
+  ],
+  "en": [
+   "[[create:crushing_wheel]] and [[mekanism:crusher]] open with stage 2 (Brass Works). A crushing wheel costs 8 SU per RPM, 16 for a pair, much more than a millstone.",
+   "The crusher needs 50 J per tick, which is 20 FE/t. The wheels themselves are in {{create_brass/crushing_wheel}}."
+  ],
+  "sources": [
+   "create:crushing/gravel",
+   "mekanism:crushing/gravel_to_sand",
+   "config create-server.toml (crushing_wheel 8.0)",
+   "srv config Mekanism/machine-usage.toml (crusher 50)",
+   "kubejs/data/kronwerke/chapters/stages/stage2.json"
+  ]
+ },
+ "s2_wood": {
+  "de": [
+   "[[create:deployer]] und [[mekanism:precision_sawmill]] gehören zu Stufe 2. Das Präzisionssägewerk braucht 50 J pro Tick (20 FE/t).",
+   "Das Sägewerk von Productive Trees aus {{farms/wood_sawmill}} macht ebenfalls 6 Bretter pro Stamm, ganz ohne Strom. Das Einsatzgerät lohnt sich vor allem fürs Nachpflanzen. Mehr unter {{create_brass/deployer}}."
+  ],
+  "en": [
+   "[[create:deployer]] and [[mekanism:precision_sawmill]] belong to stage 2. The precision sawmill needs 50 J per tick (20 FE/t).",
+   "The Productive Trees sawmill from {{farms/wood_sawmill}} also makes 6 planks per log, without any power. The deployer is mainly worth it for replanting. More in {{create_brass/deployer}}."
+  ],
+  "sources": [
+   "kubejs/data/kronwerke/chapters/stages/stage2.json",
+   "srv config Mekanism/machine-usage.toml (precisionSawmill 50)",
+   "productivetrees:sawmill/oak_planks_from_log"
+  ]
+ },
+ "s2_crops": {
+  "de": [
+   "Der [[mysticalagriculture:infusion_crystal]] ist schon in Stufe 1 machbar (Prosperiumsplitter, Inferiumessenz, Diamant) und hält 1 000 Anwendungen. Der [[mysticalagriculture:harvester]] braucht Stufe 2.",
+   "Beim Ernter: Eisen in die Ecken, Seelenbarren oben und unten, Diamantsensen links und rechts, Maschinengehäuse in die Mitte. Er pflanzt selbst nach und legt die Ernte in sein Inventar, ist es voll, fällt sie auf die Pflanze."
+  ],
+  "en": [
+   "The [[mysticalagriculture:infusion_crystal]] can already be made in stage 1 (prosperity shard, inferium essence, diamond) and lasts 1,000 uses. The [[mysticalagriculture:harvester]] needs stage 2.",
+   "Harvester layout: iron in the corners, soulium ingots top and bottom, diamond scythes left and right, machine frame in the middle. It replants on its own and stores the harvest; when full, items drop onto the crop."
+  ],
+  "sources": [
+   "mysticalagriculture:infusion_crystal",
+   "mysticalagriculture:harvester",
+   "srv config mysticalagriculture-common.toml (infusionCrystalUses 1000)",
+   "MysticalAgriculture lang (book harvester)"
+  ]
+ },
+ "s2_pylon": {
+  "de": [
+   "Auf Kronwerke braucht der [[pylons:harvester_pylon]] keinen Strom, aber eine Hacke. **Die Hacke lässt sich nicht automatisch nachfüllen**, eine kaputte tauschst du von Hand.",
+   "Eine Hacke mit Haltbarkeit oder Reparatur hält deshalb viel länger, nur unzerstörbare Werkzeuge laufen ewig."
+  ],
+  "en": [
+   "On Kronwerke the [[pylons:harvester_pylon]] needs no power, but it needs a hoe. **The hoe cannot be piped in**, so you replace a broken one by hand.",
+   "A hoe with Unbreaking or Mending lasts much longer; only unbreakable tools run forever."
+  ],
+  "sources": [
+   "pylons:harvester_pylon",
+   "srv config pylons-server.toml (harvesterWorkDelay 60, harvesterRequiresTool true, harvesterCanBeAutomated false, harvesterRequiresPower false)"
+  ]
+ },
+ "s2_animals": {
+  "de": [
+   "Das Pedestal von Reliquary braucht Stufe 2. Erst baust du ein [[reliquary:pedestals/passive/white_passive_pedestal]] aus Teppich, Goldklumpen, Quarzblock und Quarzstufen, dann setzt du es zwischen 4 Diamanten: Das ergibt das [[reliquary:pedestals/white_pedestal]].",
+   "Das Einsatzgerät findest du unter {{create_brass/deployer}}."
+  ],
+  "en": [
+   "The Reliquary pedestal needs stage 2. First build a [[reliquary:pedestals/passive/white_passive_pedestal]] from carpet, gold nuggets, a quartz block and quartz slabs, then put it between 4 diamonds: that gives the [[reliquary:pedestals/white_pedestal]].",
+   "The deployer is in {{create_brass/deployer}}."
+  ],
+  "sources": [
+   "reliquary:pedestals/passive/white_passive_pedestal",
+   "reliquary:pedestals/white_pedestal",
+   "kubejs/data/kronwerke/chapters/stages/stage2.json"
+  ]
+ },
+ "s2_bees": {
+  "de": [
+   "Bienenstock und Zentrifuge öffnen mit Stufe 2, vorher kannst du schon Vanilla-Bienen aus Nestern sammeln. Der Einstieg steht unter {{bees/hive}}, die Metallbienen ab {{bees/c_iron}}."
+  ],
+  "en": [
+   "Hive and centrifuge open with stage 2; before that you can already collect vanilla bees from nests. The start is in {{bees/hive}}, the metal bees from {{bees/c_iron}} on."
+  ],
+  "sources": [
+   "kubejs/data/kronwerke/chapters/stages/stage2.json (productivebees:advanced_oak_beehive, productivebees:centrifuge)"
+  ]
+ },
+ "s2_mobs": {
+  "de": [
+   "Der Mechanical Spawner läuft erst ab 100 RPM und kostet 16 SU pro RPM, bei 100 RPM also 1 600 SU. Sein Tank fasst 1 000 mB, das sind 10 Mobs.",
+   "Den Beutesammler brauchst du auf Kronwerke nicht zwingend, ohne ihn erscheinen die Mobs ganz normal. Spawnflüssigkeit und Mixer stehen in Create: Erweiterungen."
+  ],
+  "en": [
+   "The Mechanical Spawner only runs from 100 RPM and costs 16 SU per RPM, which is 1,600 SU at 100 RPM. Its tank holds 1,000 mB, or 10 mobs.",
+   "On Kronwerke the loot collector is optional; without it the mobs simply spawn. Spawn fluid and the mixer are in Create: Add-ons."
+  ],
+  "sources": [
+   "srv config create_mechanical_spawner-server.toml (minimumSpeed 100, liquidCapacity 1000, lootCollectorRequired false, mechanical_spawner 16.0)"
+  ]
+ },
+ "s2_xp": {
+  "de": [
+   "Der [[create_enchantment_industry:mechanical_grindstone]] öffnet mit Stufe 2. Jeder [[create:experience_nugget]] wird zu 3 mB flüssige Erfahrung.",
+   "Die [[create_enchantment_industry:experience_hatch]] entsteht, wenn du Gehärtete Erfahrung auf eine Fluid Hatch anwendest. Ein Block Gehärtete Erfahrung zerfällt in der Werkbank wieder in 9 Klumpen."
+  ],
+  "en": [
+   "The [[create_enchantment_industry:mechanical_grindstone]] opens with stage 2. Every [[create:experience_nugget]] becomes 3 mB of liquid experience.",
+   "The [[create_enchantment_industry:experience_hatch]] is made by applying a Block of Experience to a Fluid Hatch. A Block of Experience breaks back into 9 nuggets in the crafting grid."
+  ],
+  "sources": [
+   "create_enchantment_industry:crafting/mechanical_grindstone",
+   "create_enchantment_industry:grinding/experience_nugget (3 mB)",
+   "create_enchantment_industry:item_application/experience_hatch",
+   "create:crafting/materials/experience_nugget_from_block"
+  ]
+ },
+ "s2_fluids": {
+  "de": [
+   "Die [[mekanism:electric_pump]] lässt Wasserquellen auf Kronwerke stehen, der See wird also nie leer. Der [[mekanismgenerators:heat_generator]] bekommt passiv 30 J (12 FE/t) für jede angrenzende Lava, bis zu 7 Seiten, im Nether noch 100 J dazu.",
+   "Beides gehört zu Stufe 2. Rohre und Tanks stehen im Kapitel Mekanism."
+  ],
+  "en": [
+   "The [[mekanism:electric_pump]] leaves water sources in place on Kronwerke, so the lake never runs dry. The [[mekanismgenerators:heat_generator]] passively gets 30 J (12 FE/t) for every adjacent lava block, up to 7 sides, plus 100 J in the Nether.",
+   "Both belong to stage 2. Pipes and tanks are in the Mekanism chapter."
+  ],
+  "sources": [
+   "srv config Mekanism/general.toml [pump] (range 80, pumpInfiniteFluidSources false)",
+   "srv config Mekanism/generators.toml [heat_generator] (heatGenerationLava 30, heatGenerationNether 100)",
+   "srv config Mekanism/general.toml (feConversionRate 2.5)"
+  ]
+ },
+ "s2_mana": {
+  "de": [
+   "Die Blumen selbst sind Stufe 1, aber ihre Runen brauchen den [[botania:runic_altar]] aus Stufe 2. Die [[botania:thermalily]] will Rune der Erde und Rune des Feuers, die [[botania:hopperhock]] eine Rune der Luft und eine Redstone-Wurzel.",
+   "Alle Runen stehen unter {{botania_runes/welcome}}."
+  ],
+  "en": [
+   "The flowers themselves are stage 1, but their runes need the [[botania:runic_altar]] from stage 2. The [[botania:thermalily]] wants a Rune of Earth and a Rune of Fire, the [[botania:hopperhock]] a Rune of Air and a redstone root.",
+   "All runes are in {{botania_runes/welcome}}."
+  ],
+  "sources": [
+   "botania:petal_apothecary/thermalily",
+   "botania:petal_apothecary/hopperhock",
+   "kubejs/data/kronwerke/chapters/stages (runic_altar stage 2, kekimurus stage 3)"
+  ]
+ },
+ "running": {
+  "de": [
+   "Bis zu **25 Chunks** pro Team bleiben dauerhaft geladen, auch wenn niemand von euch online ist. Wählt sie mit Bedacht: den Generator, die Legierungsstraße, das Beet mit den Endoflammen.",
+   "Ein Claim verfällt, wenn 30 Tage lang niemand aus dem Team online war, und mit ihm die Chunkladung. Was als Nächstes kommt, steht in {{farms/outlook}}."
+  ],
+  "en": [
+   "Up to **25 chunks** per team stay loaded permanently, even when nobody of you is online. Choose them carefully: the generator, the alloy line, the endoflame bed.",
+   "A claim is released after 30 days without anyone of the team online, and its chunk loading with it. What comes next is in {{farms/outlook}}."
+  ],
+  "sources": [
+   "config/ftbchunks-world.snbt (max_force_loaded_chunks 25, force_load_mode always, max_idle_days_before_unclaim 30)"
+  ],
+  "client": [
+   "Shift plus left click on the FTB Chunks map force-loads a chunk"
+  ]
+ },
+ "outlook": {
+  "de": [
+   "Die Stufen stimmen mit den Stufendateien überein: Industrial Foregoing, Digitales Abbaugerät, Ender IO, AE2 und die Erchidee öffnen in Stufe 3, RFTools Builder, Quarry Plus, Elitärer Steuerschaltkreis und der [[mysticalagriculture:awakening_altar]] in Stufe 4.",
+   "Bis dahin bauen die Farmen aus diesem Kapitel weiter Vorrat auf, den die späteren Ziele brauchen."
+  ],
+  "en": [
+   "The stages match the stage files: Industrial Foregoing, the Digital Miner, Ender IO, AE2 and the Orechid open in stage 3, the RFTools Builder, Quarry Plus, the Elite Control Circuit and the [[mysticalagriculture:awakening_altar]] in stage 4.",
+   "Until then the farms from this chapter keep building the stock that later goals need."
+  ],
+  "sources": [
+   "kubejs/data/kronwerke/chapters/stages (industrialforegoing:plant_gatherer 3, mekanism:digital_miner 3, botania:orechid 3, rftoolsbuilder:builder 4, quarryplus:quarry 4, mysticalagriculture:awakening_altar 4)"
+  ]
+ }
+}

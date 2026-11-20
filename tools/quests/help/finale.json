@@ -1,0 +1,308 @@
+{
+ "start": {
+  "de": [
+   "Fest sind nur die 64 [[draconicevolution:awakened_draconium_block]] und die 64 [[ars_nouveau:wilden_tribute]]. Die 100 Pellets und 128 Barren sind Grundwerte für 30 aktive Spieler, der Server rechnet sie beim Öffnen der Stufe mit dem Faktor 0,4 bis 1,5 um.",
+   "Im Spiel heißt der Barren [[botania:gaia_ingot]], die Zutat [[botania:gaia_spirit]]. Jede Fusion in {{finale/tech}} verbraucht 2 Barren, die dann am Obelisken fehlen."
+  ],
+  "en": [
+   "Only the 64 [[draconicevolution:awakened_draconium_block]] and the 64 [[ars_nouveau:wilden_tribute]] are fixed. The 100 pellets and 128 ingots are base values for 30 active players, scaled by 0.4 to 1.5 when the stage opens.",
+   "In game the ingot is the [[botania:gaia_ingot]], made from [[botania:gaia_spirit]]. Every fusion in {{finale/tech}} uses 2 ingots that the obelisk then does not get."
+  ],
+  "sources": [
+   "config/kronwerke/goals.json (stage5)",
+   "docs/STAGES.md (scaling)",
+   "botania:gaia_ingot",
+   "kronwerke:tech/awakened_draconium_block"
+  ]
+ },
+ "tech": {
+  "de": [
+   "Die Fusion braucht mindestens Wyvern-Injektoren, Draconium-Injektoren reichen nicht. In den Kern kommen 4 [[draconicevolution:draconium_block]], an die sieben Injektoren 4 [[draconicevolution:draconium_core]], 2 Gaia-Seelenbarren und 1 [[draconicevolution:dragon_heart]].",
+   "Ein Drachenherz fällt beim Sieg über den Enderdrachen, für 16 Fusionen müsst ihr ihn also 16 mal besiegen. Der Drache hat auf Kronwerke für jeden weiteren Spieler im Kampf 60 Prozent mehr Leben. Mehr dazu in {{draconic_chaos/awakened}}."
+  ],
+  "en": [
+   "The fusion needs at least Wyvern injectors; Draconium injectors are not enough. The core takes 4 [[draconicevolution:draconium_block]], the seven injectors take 4 [[draconicevolution:draconium_core]], 2 Gaia Spirit Ingots and 1 [[draconicevolution:dragon_heart]].",
+   "A dragon heart drops when the Ender Dragon dies, so 16 fusions mean 16 dragon kills. On Kronwerke the dragon has 60 percent more health for every extra player in the fight. More in {{draconic_chaos/awakened}}."
+  ],
+  "sources": [
+   "kronwerke:tech/awakened_draconium_block (techLevel wyvern, totalEnergy 50000000, catalyst 4 draconium_block)",
+   "Draconic Evolution jar: LootEventHandler (EnderDragon death spawns DRAGON_HEART)",
+   "config/kronwerke-common.toml [bosses] (minecraft:ender_dragon, healthPerPlayer 0.6)"
+  ],
+  "client": [
+   "A dragon heart drops on every Ender Dragon kill, also after respawning the dragon"
+  ]
+ },
+ "t_pellet": {
+  "de": [
+   "Das SPS braucht für jeden mB Polonium 1 000 000 J. Ein Pellet kostet also neben einer Million mB Polonium auch eine Billion J, das sind 400 Milliarden FE.",
+   "Der Ausgangstank des SPS fasst genau 1 000 mB Antimaterie, also ein Pellet. Lass den [[mekanism:chemical_crystallizer]] ständig abziehen, sonst steht das SPS still. Die 100 Pellets am Obelisken sind ein Grundwert und skalieren mit der Spielerzahl."
+  ],
+  "en": [
+   "The SPS needs 1,000,000 J for every mB of polonium. One pellet costs a million mB of polonium plus one trillion J, which is 400 billion FE.",
+   "The SPS output tank holds exactly 1,000 mB of antimatter, one pellet. Let the [[mekanism:chemical_crystallizer]] pull from it all the time, or the SPS stops. The 100 pellets at the obelisk are a base value that scales with the player count."
+  ],
+  "sources": [
+   "srv config Mekanism/general.toml [sps] (inputPerAntimatter 1000, outputTankCapacity 1000, energyPerInput 1000000, feConversionRate 2.5)",
+   "mekanism:processing/lategame/antimatter_pellet/from_gas",
+   "config/kronwerke/goals.json (stage5)"
+  ]
+ },
+ "magic": {
+  "de": [
+   "Mit einem Gaia-Seelenbarren statt Terrastahl am Leuchtfeuer beschwört ihr die stärkere Wächterin. Sie gibt jedem 10 Seelen und dem letzten Treffer 16: Zu viert sind das 46 Seelen für einen Barren Einsatz, gegen 26 Seelen bei der ersten Wächterin.",
+   "Die 128 Barren der Rechnung gelten für 30 aktive Spieler, die echte Zahl steht am Obelisken. Die Kämpfe selbst beschreibt {{gaia/fight}}."
+  ],
+  "en": [
+   "Sacrifice a Gaia Spirit Ingot instead of terrasteel at the beacon to summon the stronger guardian. She gives everyone 10 spirits and the last hit 16: with four players that is 46 spirits for one ingot, against 26 spirits from the first guardian.",
+   "The 128 ingots in the quest assume 30 active players; the real number is shown at the obelisk. The fights are in {{gaia/fight}}."
+  ],
+  "sources": [
+   "botania jar: loot_table gaia_guardian/reward.json (6, true killer 8), reward_hard.json (10, true killer 16)",
+   "botania lang (botania.page.gaiaRitualHardmode1)",
+   "config/kronwerke/goals.json (stage5)"
+  ]
+ },
+ "m_tribute": {
+  "de": [
+   "Erst mit [[ars_nouveau:wilden_spike]], [[ars_nouveau:wilden_horn]] und [[ars_nouveau:wilden_wing]] als Zusatz ruft das Ritual die Chimäre, ohne sie kommen nur gewöhnliche Wilden. Für 64 Tribute braucht ihr also 64 Sätze davon.",
+   "**Das Ritual zerstört Blöcke um das Kohlenbecken**, wenn es die Chimäre ruft. Stell das [[ars_nouveau:ritual_brazier]] weit weg von allem, was ihr behalten wollt. Mehr in {{ars_epic/chimera_kill}}."
+  ],
+  "en": [
+   "Only with a [[ars_nouveau:wilden_spike]], a [[ars_nouveau:wilden_horn]] and a [[ars_nouveau:wilden_wing]] as augments does the ritual summon the Chimera; without them it only calls ordinary Wilden. 64 tributes therefore need 64 such sets.",
+   "**The ritual destroys blocks around the brazier** when it summons the Chimera. Put the [[ars_nouveau:ritual_brazier]] far away from anything you want to keep. More in {{ars_epic/chimera_kill}}."
+  ],
+  "sources": [
+   "ars_nouveau lang (ars_nouveau.ritual_desc.ritual_wilden_summon)",
+   "ars_nouveau:ritual_wilden_summon (stage 3)",
+   "config/kronwerke/goals.json (stage5)"
+  ],
+  "client": [
+   "The augments are used up by each ritual"
+  ]
+ },
+ "hold": {
+  "de": [
+   "Bei 98 Prozent färbt sich die Leiste oben lila und zeigt **wartet auf das Event**. Die Abgabe, die die Grenze überschreitet, geht noch ganz hinein, danach nimmt das Ziel nichts mehr, bis das Team es freigibt.",
+   "Nutzt die Zeit für {{finale/gear}}, {{finale/supplies}} und {{finale/fight_info}}."
+  ],
+  "en": [
+   "At 98 percent the bar at the top turns purple and **shows that it waits for the event**. The hand-in that crosses the line still goes in whole; after that the goal takes nothing until the team releases it.",
+   "Use the time for {{finale/gear}}, {{finale/supplies}} and {{finale/fight_info}}."
+  ],
+  "sources": [
+   "config/kronwerke/goals.json (stage5 holdAt 0.98)",
+   "core: GoalManager.isHeld, takeFor, refreshBossBar (bar.held)"
+  ]
+ },
+ "gear": {
+  "de": [
+   "Die vier Haken prüft das Spiel nicht, sie sind deine Checkliste. Den Bogen baust du in {{finale/r_bow}}, die Brustplatte mit Untod-Modul in {{finale/r_chest}}. Ohne Draconic-Rüstung decken die Totems aus {{finale/supplies}} das zweite Leben ab.",
+   "Chaotische Waffen könnten die Kristallschilde direkt brechen, aber die entstehen erst aus den Chaosscherben nach diesem Kampf."
+  ],
+  "en": [
+   "The game does not check the four ticks, they are your checklist. Build the bow in {{finale/r_bow}} and the chestpiece with an undying module in {{finale/r_chest}}. Without Draconic armour the totems from {{finale/supplies}} cover the second life.",
+   "Chaotic weapons could break the crystal shields directly, but they are only made from the chaos shards after this fight."
+  ],
+  "sources": [
+   "srv config brandon3055/DraconicEvolution.cfg (chaoticBypassCrystalShield true)"
+  ]
+ },
+ "supplies": {
+  "de": [
+   "Den [[draconicevolution:advanced_dislocator]] fusionierst du mit Wyvern-Injektoren aus einem Dislokator, einem Wyvern-Kern, 4 Draconiumbarren und 3 Enderperlen. Chaosinseln liegen auf einem Raster von 10 000 Blöcken.",
+   "Das End läuft auf Kronwerke auf einem eigenen Server. Ein Teleport dorthin bringt dich automatisch hinüber, ein Tod im End schickt dich zu deinem Spawnpunkt zurück."
+  ],
+  "en": [
+   "You fuse the [[draconicevolution:advanced_dislocator]] with Wyvern injectors from a dislocator, a wyvern core, 4 draconium ingots and 3 ender pearls. Chaos islands sit on a grid of 10,000 blocks.",
+   "On Kronwerke the End runs on a server of its own. A teleport there moves you over automatically, and dying in the End sends you back to your spawn point."
+  ],
+  "sources": [
+   "draconicevolution:tools/advanced_dislocator (techLevel wyvern)",
+   "srv config brandon3055/DraconicEvolution.cfg (chaosIslandSeparation 10000)",
+   "config/kronwerke-common.toml [network] dimensionServers (minecraft:the_end=end)",
+   "core: KronwerkeConfig DIMENSION_SERVERS comment"
+  ],
+  "client": [
+   "Dislocator teleport to a saved End location moves the player to the End server",
+   "Dying on the End server returns the player to the spawn point on main"
+  ]
+ },
+ "g_voice": {
+  "de": [
+   "Flüsterst du, hören dich ohne Gruppe nur Spieler in 24 Blöcken, normal sind es 48. In der Gruppe zählt die Entfernung nicht.",
+   "Tritt der Gruppe schon am Treffpunkt bei, nicht erst über der Insel. Aufgenommen wird der Sprachchat auf Kronwerke nicht."
+  ],
+  "en": [
+   "When you whisper, without a group only players within 24 blocks hear you, normally 48. In a group distance does not matter.",
+   "Join the group at the meeting point, not above the island. Kronwerke does not record the voice chat."
+  ],
+  "sources": [
+   "srv config voicechat/voicechat-server.properties (max_voice_distance 48, whisper_distance 24)",
+   "docs/SERVER.md (voicechat recording off)"
+  ]
+ },
+ "fight_info": {
+  "de": [
+   "Auf Kronwerke gelten die Grundwerte von Draconic Evolution: Kristallschild 512, nach einem Treffer des Wächters 200 Ticks (10 Sekunden) offen, Wächterschild 16 000, Leben 1 000.",
+   "Wie die Kristalle stehen und wie der Wächter fliegt, zeigen {{draconic_chaos/crystals}} und {{draconic_chaos/guardian}}."
+  ],
+  "en": [
+   "Kronwerke uses Draconic Evolution's defaults: crystal shield 512, open for 200 ticks (10 seconds) after a hit by the guardian, guardian shield 16,000, health 1,000.",
+   "How the crystals stand and how the guardian flies is shown in {{draconic_chaos/crystals}} and {{draconic_chaos/guardian}}."
+  ],
+  "sources": [
+   "srv config brandon3055/DraconicEvolution.cfg (Guardian Fight values -99 = default)",
+   "Draconic Evolution jar: DEConfig (defaults 512, 200, 1000, 16000)"
+  ]
+ },
+ "trip": {
+  "de": [
+   "Die Quest hakt sich ab, sobald du das End betrittst, egal wo. Die Insel selbst findest du mit {{draconic_chaos/find_island}}.",
+   "Das End läuft auf einem eigenen Server: Wer vor dem Abflug noch etwas aus der Basis braucht, holt es vorher."
+  ],
+  "en": [
+   "The quest ticks off as soon as you enter the End, anywhere. To find the island itself see {{draconic_chaos/find_island}}.",
+   "The End runs on a server of its own: whatever you still need from the base, fetch it before you leave."
+  ],
+  "sources": [
+   "srv config brandon3055/DraconicEvolution.cfg (chaosIslandSize 160, chaosIslandYPosition 80)",
+   "config/kronwerke-common.toml [network] dimensionServers"
+  ]
+ },
+ "f_crystals": {
+  "de": [
+   "Eure Pfeile prallen am Kristallschild ab, bis ein Angriff des Wächters selbst den Kristall trifft. Ab da habt ihr 200 Ticks.",
+   "Die Quest prüft nichts, jeder hakt sie selbst ab, wenn der letzte Kristall gefallen ist. Weiter geht es mit {{finale/fight}}."
+  ],
+  "en": [
+   "Your arrows bounce off a crystal's shield until an attack of the guardian itself hits it. From then you have 200 ticks.",
+   "The quest checks nothing; everyone ticks it off once the last crystal is gone. Next is {{finale/fight}}."
+  ],
+  "sources": [
+   "srv config brandon3055/DraconicEvolution.cfg (guardianCrystalUnstableWindow default 200)"
+  ]
+ },
+ "fight": {
+  "de": [
+   "Wer stirbt, wacht am eigenen Spawnpunkt auf und kommt mit dem Dislokator zurück, wenn die Insel gespeichert ist. Den tödlichen Treffer zählt zusätzlich {{finale/last_hit}}.",
+   "Nach dem Sieg gehören die Chaosscherben in {{finale/f_shards}}, und {{finale/end}} schließt die Season."
+  ],
+  "en": [
+   "Whoever dies wakes at their own spawn point and returns with the dislocator if the island is saved. {{finale/last_hit}} also counts the killing blow.",
+   "After the win the chaos shards belong to {{finale/f_shards}}, and {{finale/end}} closes the season."
+  ],
+  "sources": [
+   "finale quest deps (fight -> f_shards, end)"
+  ]
+ },
+ "last_hit": {
+  "de": [
+   "Die Quest zählt den Tod des Chaoswächters nur für den Spieler, der den tödlichen Treffer landet. Ein Bogen mit hohem Schaden ist dafür die beste Wahl, siehe {{finale/r_bow}}."
+  ],
+  "en": [
+   "The quest counts the Chaos Guardian's death only for the player who lands the killing blow. A high damage bow is the best tool for it, see {{finale/r_bow}}."
+  ],
+  "sources": [
+   "finale quest task (kill draconicevolution:draconic_guardian)",
+   "Draconic Evolution lang (entity.draconicevolution.draconic_guardian = Chaos Guardian)"
+  ]
+ },
+ "f_shards": {
+  "de": [
+   "Laut Config gibt der Kristall genau 5 [[draconicevolution:chaos_shard]], und das nur einmal pro Insel. Einigt euch vor dem Kampf, wer sie bekommt.",
+   "Was daraus wird, steht in {{draconic_chaos/chaos_shard}}."
+  ],
+  "en": [
+   "By config the crystal gives exactly 5 [[draconicevolution:chaos_shard]], once per island. Agree before the fight who gets them.",
+   "What they become is in {{draconic_chaos/chaos_shard}}."
+  ],
+  "sources": [
+   "srv config brandon3055/DraconicEvolution.cfg (chaosDropCount 5)"
+  ],
+  "client": [
+   "What happens to the island when the chaos crystal is mined"
+  ]
+ },
+ "end": {
+  "de": [
+   "Die Quest hängt nur an {{finale/fight}}, nicht an den Chaosscherben. Hak sie ab, wenn der Wächter tot ist."
+  ],
+  "en": [
+   "The quest only depends on {{finale/fight}}, not on the chaos shards. Tick it off once the guardian is dead."
+  ],
+  "sources": [
+   "finale quest deps (end <- fight)"
+  ]
+ },
+ "t_pellets": {
+  "de": [
+   "Zehn Pellets sind zehn Millionen mB Polonium und dazu zehn Billionen J im SPS, also vier Billionen FE.",
+   "Weil der Ausgangstank des SPS nur ein Pellet fasst, muss der Kristallisator die ganze Zeit mitlaufen. Wie viele am Obelisken nötig sind, hängt von der Spielerzahl ab."
+  ],
+  "en": [
+   "Ten pellets are ten million mB of polonium plus ten trillion J in the SPS, four trillion FE.",
+   "Since the SPS output tank holds only one pellet, the crystallizer has to keep running the whole time. How many the obelisk needs depends on the player count."
+  ],
+  "sources": [
+   "srv config Mekanism/general.toml [sps] (energyPerInput 1000000, outputTankCapacity 1000, feConversionRate 2.5)",
+   "config/kronwerke/goals.json (stage5)"
+  ]
+ },
+ "m_ingots": {
+  "de": [
+   "Jeder Barren kostet 4 Gaia-Seelen und einen [[botania:terrasteel_ingot]], 32 Barren also auch 32 Terrastahl. Zu viert sind 128 Seelen etwa 5 Kämpfe gegen die erste Wächterin oder gut 3 gegen die zweite.",
+   "Die zweite Wächterin rufst du mit einem Gaia-Seelenbarren, siehe {{finale/magic}}."
+  ],
+  "en": [
+   "Every ingot costs 4 Gaia Spirits and one [[botania:terrasteel_ingot]], so 32 ingots also take 32 terrasteel. With four players 128 spirits are about 5 fights against the first guardian or a little over 3 against the second.",
+   "You summon the second guardian with a Gaia Spirit Ingot, see {{finale/magic}}."
+  ],
+  "sources": [
+   "botania:gaia_ingot",
+   "botania jar: loot_table gaia_guardian/reward.json, reward_hard.json"
+  ]
+ },
+ "m_tributes": {
+  "de": [
+   "Vier Chimären sind vier Rituale mit je einem Wilden-Stachel, einem Horn und einem Flügel. Diese Teile fallen von gewöhnlichen Wilden, die dasselbe Ritual ohne Zusätze ruft."
+  ],
+  "en": [
+   "Four Chimeras are four rituals, each with a Wilden spike, a horn and a wing. Those parts drop from ordinary Wilden, which the same ritual calls without augments."
+  ],
+  "sources": [
+   "ars_nouveau lang (ritual_desc.ritual_wilden_summon)",
+   "ars_nouveau:ritual_wilden_summon (#ars_nouveau:wilden_drop)"
+  ],
+  "client": [
+   "Spike, horn and wing drop from the Wilden summoned without augments"
+  ]
+ },
+ "r_bow": {
+  "de": [
+   "Die Fusion: der [[draconicevolution:wyvern_bow]] in den Kern, an die Injektoren 4 Netheritbarren, ein Wyvern-Kern, 2 Erwachte Draconiumbarren und ein [[draconicevolution:draconic_energy_core]], 32 Millionen OP. Die Injektoren müssen Draconic-Stufe haben.",
+   "Die 2 Erwachten Barren fehlen dann bei den 64 Blöcken für den Obelisken, sprecht das mit den Technikern ab."
+  ],
+  "en": [
+   "The fusion: the [[draconicevolution:wyvern_bow]] in the core, 4 netherite ingots, a wyvern core, 2 awakened draconium ingots and a [[draconicevolution:draconic_energy_core]] on the injectors, 32 million OP. The injectors must be Draconic tier.",
+   "Those 2 awakened ingots are missing from the 64 blocks for the obelisk, so agree on it with the tech players."
+  ],
+  "sources": [
+   "draconicevolution:tools/draconic_bow (techLevel draconic, totalEnergy 32000000)"
+  ]
+ },
+ "r_chest": {
+  "de": [
+   "Die Brustplatte fusionierst du wie den Bogen, nur mit der Wyvern-Brustplatte im Kern. Das [[draconicevolution:item_draconic_undying]]: 4 Erwachte Draconiumbarren in den Ecken, oben ein Trank der Heilung II, links und rechts je ein Wyvern-Kern, in der Mitte ein Wyvern-Untod-Modul und unten ein Draconic-Schildkapazitätsmodul.",
+   "Mehr in {{draconic_chaos/chestpiece}}."
+  ],
+  "en": [
+   "You fuse the chestpiece like the bow, with the wyvern chestpiece in the core. The [[draconicevolution:item_draconic_undying]]: 4 awakened draconium ingots in the corners, a Potion of Healing II on top, a wyvern core left and right, a wyvern undying module in the middle and a draconic shield capacity module below.",
+   "More in {{draconic_chaos/chestpiece}}."
+  ],
+  "sources": [
+   "draconicevolution:tools/draconic_chestpiece (techLevel draconic, totalEnergy 32000000)",
+   "draconicevolution:modules/item_draconic_undying (pattern #C# ABA #D#, C strong_healing potion)"
+  ]
+ }
+}

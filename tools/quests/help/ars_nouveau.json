@@ -1,0 +1,1249 @@
+{
+ "welcome": {
+  "de": [
+   "Zwei Rezepte der Mod sind auf dem Server geändert: Die [[ars_nouveau:imbuement_chamber]] braucht [[create:golden_sheet]] statt Goldbarren, der [[ars_nouveau:enchanting_apparatus]] [[naturesaura:infused_iron]]. Plan deshalb früh eine Mechanische Presse ({{create/press}}) und den Natural Altar ({{start_here/m_altar}}) ein.",
+   "Alle Rezepte mit den Änderungen des Servers zeigt EMI. Das Notizbuch erklärt dir dazu, wie die Blöcke arbeiten."
+  ],
+  "en": [
+   "Two of the mod's recipes are changed on the server: the [[ars_nouveau:imbuement_chamber]] needs [[create:golden_sheet]] instead of gold ingots, the [[ars_nouveau:enchanting_apparatus]] needs [[naturesaura:infused_iron]]. So plan a Mechanical Press ({{create/press}}) and the Natural Altar ({{start_here/m_altar}}) early.",
+   "EMI shows every recipe with the server's changes. The notebook explains how the blocks work."
+  ],
+  "sources": [
+   "ars_nouveau:worn_notebook",
+   "kubejs/server_scripts/kronwerke/round.js (imbuement_chamber, enchanting_apparatus)"
+  ]
+ },
+ "book": {
+  "de": [
+   "Die vier Werkzeuge kosten zusammen 9 Eisenbarren und ein paar Stöcke. Rüstest du später auf das [[ars_nouveau:apprentice_spell_book]] auf, wandern alle gespeicherten Zauber ins neue Buch; das öffnet mit Stufe 2 ({{ars_apprentice/welcome}}).",
+   "Mit einem Farbstoff an der Werkbank färbst du das Buch ein."
+  ],
+  "en": [
+   "The four tools cost 9 iron ingots and a few sticks in total. When you later upgrade to the [[ars_nouveau:apprentice_spell_book]], all saved spells move into the new book; it opens with stage 2 ({{ars_apprentice/welcome}}).",
+   "Craft the book with a dye to colour it."
+  ],
+  "sources": [
+   "ars_nouveau:novice_spell_book",
+   "ars_nouveau:novice_spellbook_alt",
+   "ars_nouveau:dye_novice_spell_book",
+   "ars_nouveau-1.21.1-5.13.2.jar: assets/ars_nouveau/lang/en_us.json (page1.spell_books)",
+   "kubejs/data/kronwerke/chapters/stages/stage2.json (apprentice_spell_book)"
+  ]
+ },
+ "first_spell": {
+  "de": [
+   "Projektil und Brechen kosten je 10 Mana, der Zauber also 20; Projektil, Schaden kostet 25. Mit dem Grundwert von 100 Mana wirkst du ihn mindestens fünfmal hintereinander.",
+   "Brechen mit **Empfindlich** dahinter baut wie eine Schere ab, gut für Laub und Spinnweben ({{ars_nouveau/glyphs_simple}})."
+  ],
+  "en": [
+   "Projectile and Break cost 10 mana each, so the spell costs 20; Projectile, Harm costs 25. With the base of 100 mana you cast it at least five times in a row.",
+   "Break with **Sensitive** after it breaks like shears, good for leaves and cobwebs ({{ars_nouveau/glyphs_simple}})."
+  ],
+  "sources": [
+   "srv/config/ars_nouveau/glyph_projectile.toml, glyph_break.toml, glyph_harm.toml (cost)",
+   "srv/config/ars_nouveau-server.toml (baseMax 100)",
+   "ars_nouveau-1.21.1-5.13.2.jar: assets/ars_nouveau/lang/en_us.json (glyph_desc.glyph_break)"
+  ]
+ },
+ "mana": {
+  "de": [
+   "Die Zahlen stehen so in der Serverkonfiguration. Mehr Maximum geben das {{ars_nouveau/amulet}}, der {{ars_nouveau/ring_discount}} und die Herkunft Quellgeborene ({{ars_nouveau/origin}}). Schneller lädt es mit der Rolle Arkanist (+1 pro Sekunde) und mit Quellbeer-Essen ({{ars_nouveau/berry_food}})."
+  ],
+  "en": [
+   "These numbers are the server's config. More maximum comes from the {{ars_nouveau/amulet}}, the {{ars_nouveau/ring_discount}} and the Quellgeborene origin ({{ars_nouveau/origin}}). It refills faster with the Arcanist role (+1 per second) and with sourceberry food ({{ars_nouveau/berry_food}})."
+  ],
+  "sources": [
+   "srv/config/ars_nouveau-server.toml ([mana])",
+   "kubejs/data/kronwerke/origins/powers/rolle_arkanist_quellschueler.json",
+   "ars_nouveau-1.21.1-5.13.2.jar: assets/ars_nouveau/lang/en_us.json (page.ring_of_lesser_discount, page1.sourceberry_bush)"
+  ]
+ },
+ "origin": {
+  "de": [
+   "Gesperrt sind nur Helm, Brustpanzer, Hose und Stiefel aus Eisen, Gold, Diamant und Netherit. **Kettenrüstung** darfst du tragen, bis zu den Roben ist sie deine beste Wahl.",
+   "Die Roben des Arkanisten und das Wams des Kampfmagiers öffnen mit Stufe 3, das Wickeltuch des Zauberers mit Stufe 4. Die Herkunft wechselst du später mit einer [[neoorigins:orb_of_origin]]: 4 Goldblöcke, 4 Diamantblöcke und ein Netheritbarren, also frühestens mit dem Nether in Stufe 2."
+  ],
+  "en": [
+   "Only iron, gold, diamond and netherite helmets, chestplates, leggings and boots are blocked. You may wear **chainmail**, which is your best choice until the robes.",
+   "The Arcanist's Robes and the Battlemage's Gambeson open with stage 3, the Sorceror's Wrap with stage 4. You change your origin later with an [[neoorigins:orb_of_origin]]: 4 gold blocks, 4 diamond blocks and a netherite ingot, so with the Nether in stage 2 at the earliest."
+  ],
+  "sources": [
+   "kubejs/data/kronwerke/origins/origins/quellgeborene.json and powers/quellgeborene_*.json",
+   "neoorigins-2.2.29+1.21.1.jar: data/neoorigins/tags/item/heavy_armor.json",
+   "kubejs/data/kronwerke/chapters/stages/stage3.json, stage4.json (arcanist, battlemage, sorcerer)",
+   "neoorigins:orb_of_origin"
+  ]
+ },
+ "spell_theory": {
+  "de": [
+   "Projektil, Brechen, Artikelabholung kostet 30 Mana, mit einem Verstärken hinter Brechen 50. Ein Zauber hat höchstens zehn Glyphen; darüber hinaus kommst du nur mit dem {{ars_nouveau/wand}}.",
+   "Mit **Zurücksetzen** trifft der Rest des Zaubers wieder das erste Ziel, wenn ein Effekt davor das Ziel geändert hat ({{ars_nouveau/glyphs_simple}})."
+  ],
+  "en": [
+   "Projectile, Break, Item Pickup costs 30 mana, with one Amplify after Break 50. A spell holds at most ten glyphs; only the {{ars_nouveau/wand}} gets you past that.",
+   "With **Reset** the rest of the spell hits the first target again when an earlier effect changed the target ({{ars_nouveau/glyphs_simple}})."
+  ],
+  "sources": [
+   "srv/config/ars_nouveau/glyph_*.toml (cost)",
+   "ars_nouveau-1.21.1-5.13.2.jar: assets/ars_nouveau/lang/en_us.json (page.wand, glyph_desc.reset)"
+  ]
+ },
+ "scribes_table": {
+  "de": [
+   "Für die drei Platten oben zersägst du Archwood-Planken zu [[ars_nouveau:archwood_slab]]; die Stämme unten dürfen jede Archwood-Farbe haben. Stell eine Truhe mit den Zutaten daneben, dann nimmt sich der Tisch, was er braucht. Klickst du ihn mit dem Dominion-Zauberstab an, schaltet das ab.",
+   "Hier beschreibst du auch Pergamente ({{ars_nouveau/parchment}}) und Filterrollen ({{ars_nouveau/filter_scrolls}})."
+  ],
+  "en": [
+   "For the three slabs on top cut archwood planks into [[ars_nouveau:archwood_slab]]; the logs below can be any archwood colour. Put a chest with the ingredients next to it and the table takes what it needs. Clicking it with the Dominion Wand turns that off.",
+   "The table also inscribes parchments ({{ars_nouveau/parchment}}) and filter scrolls ({{ars_nouveau/filter_scrolls}})."
+  ],
+  "sources": [
+   "ars_nouveau:scribes_table",
+   "ars_nouveau-1.21.1-5.13.2.jar: assets/ars_nouveau/lang/en_us.json (page1.scribes_table, page2.scribes_table)"
+  ]
+ },
+ "amethyst": {
+  "de": [
+   "Hast du mehr Splitter, als du sofort brauchst, mach Amethystblöcke daraus: Die Kammer macht aus einem Block für 2 000 Quelle gleich einen [[ars_nouveau:source_gem_block]], das sind 4 Juwelen. Die {{ars_nouveau/dowsing}} zeigt dir Knospenden Amethyst durch den Stein.",
+   "Ab Stufe 2 macht ein beheizter Mixer von Create aus 2 Splittern und 1 Glowstonestaub 3 Quelljuwelen, ganz ohne Quelle."
+  ],
+  "en": [
+   "When you have more shards than you need right away, make amethyst blocks: the chamber turns a block into a [[ars_nouveau:source_gem_block]] for 2,000 source, that is 4 gems. The {{ars_nouveau/dowsing}} shows budding amethyst through stone.",
+   "From stage 2 on a heated Create mixer turns 2 shards and 1 glowstone dust into 3 source gems, with no source at all."
+  ],
+  "sources": [
+   "ars_nouveau:imbuement_amethyst_block",
+   "ars_nouveau:source_gem_block_2",
+   "kronwerke:round/source_gem_mixing"
+  ]
+ },
+ "archwood": {
+  "de": [
+   "Archwood-Bäume wachsen mit kleiner Chance in jedem Biom, ganze Archwood-Wälder sind selten. Eine Mechanische Säge von Create macht aus einem entrindeten Stamm 6 statt 4 Planken.",
+   "Mach nicht alles zu Planken: Der Tisch des Schreibers, der Zauberstab und der Spiegel brauchen Archwood-Stämme."
+  ],
+  "en": [
+   "Archwood trees grow with a small chance in every biome, whole Archwood Forests are rare. A Create Mechanical Saw turns a stripped log into 6 planks instead of 4.",
+   "Do not turn everything into planks: the Scribe's Table, the wand and the mirror need archwood logs."
+  ],
+  "sources": [
+   "ars_nouveau-1.21.1-5.13.2.jar: assets/ars_nouveau/lang/en_us.json (page1.archwood)",
+   "ars_nouveau:archwood_planks",
+   "create:cutting/compat/ars_nouveau/stripped_red_archwood_log"
+  ]
+ },
+ "archwood_colors": {
+  "de": [
+   "Fehlt dir eine Farbe, verwandelst du einen Setzling formlos mit [[ars_nouveau:manipulation_essence]]: violett wird rot, rot wird blau, blau wird grün, grün wird violett. Mit einem Setzling und drei Essenzen hast du also alle vier ({{ars_nouveau/manipulation_essence}}).",
+   "Alle vier Setzlinge zusammen mit einer Luftessenz ergeben den Blitzenden Archwood-Setzling von Ars Elemental, den du für den {{ars_nouveau/flashjack}} brauchst."
+  ],
+  "en": [
+   "If a colour is missing, craft a sapling with [[ars_nouveau:manipulation_essence]]: purple becomes red, red becomes blue, blue becomes green, green becomes purple. One sapling and three essences give you all four ({{ars_nouveau/manipulation_essence}}).",
+   "All four saplings together with an Air Essence make Ars Elemental's Flashing Archwood Sapling, which you need for the {{ars_nouveau/flashjack}}."
+  ],
+  "sources": [
+   "ars_nouveau:manipulation_essence_to_blazin_sapling",
+   "ars_nouveau:manipulation_essence_to_cascading_sapling",
+   "ars_nouveau:manipulation_essence_to_flourishing_sapling",
+   "ars_nouveau:manipulation_essence_to_vexing_sapling",
+   "ars_elemental:flashing_sapling"
+  ]
+ },
+ "imbuement": {
+  "de": [
+   "**Auf dem Server nimmt die Kammer 2 [[create:golden_sheet]] statt der Goldbarren**, dazu 6 Archwood-Planken. Goldblech presst die Mechanische Presse von Create aus je einem Goldbarren ({{create/sheets}}).",
+   "Ein Juwel kostet 500 Quelle, ein volles Quellglas reicht also für 20 Stück."
+  ],
+  "en": [
+   "**On the server the chamber takes 2 [[create:golden_sheet]] instead of the gold ingots**, plus 6 archwood planks. The Create Mechanical Press makes a golden sheet from one gold ingot ({{create/sheets}}).",
+   "A gem costs 500 source, so a full source jar is enough for 20."
+  ],
+  "sources": [
+   "ars_nouveau:imbuement_chamber",
+   "kubejs/server_scripts/kronwerke/round.js (replaceInput #c:ingots/gold to create:golden_sheet)",
+   "create:pressing/gold_ingot",
+   "ars_nouveau:imbuement_amethyst",
+   "SourceJarTile.class (10000)"
+  ]
+ },
+ "first_gem": {
+  "de": [
+   "Lapislazuli kostet genauso 500 Quelle wie Amethyst und liegt oft schon in deiner Truhe. Ohne Glas sammelt die Kammer die Quelle selbst, nur langsam; bau die Zeit über das {{ars_nouveau/source_jar}}."
+  ],
+  "en": [
+   "Lapis lazuli costs the same 500 source as amethyst and is often already in your chest. Without a jar the chamber gathers the source itself, only slowly; build the {{ars_nouveau/source_jar}} in the meantime."
+  ],
+  "sources": [
+   "ars_nouveau:imbuement_lapis",
+   "ars_nouveau:imbuement_amethyst",
+   "ars_nouveau-1.21.1-5.13.2.jar: assets/ars_nouveau/lang/en_us.json (page1.imbuement_chamber)"
+  ]
+ },
+ "source_jar": {
+  "de": [
+   "Oben und unten sitzen [[ars_nouveau:archwood_slab]], keine Planken. 10 000 Quelle reichen für 20 Quelljuwelen oder 5 Essenzen.",
+   "Ein abgebautes Glas behält seine Quelle, so trägst du sie in Stufe 1 von Ort zu Ort; über weite Strecken übernimmt das ab Stufe 2 das Quellrelais ({{ars_apprentice/relay}})."
+  ],
+  "en": [
+   "Top and bottom are [[ars_nouveau:archwood_slab]], not planks. 10,000 source is enough for 20 source gems or 5 essences.",
+   "A broken jar keeps its source, so in stage 1 you carry source around that way; from stage 2 on the Source Relay moves it over long distances ({{ars_apprentice/relay}})."
+  ],
+  "sources": [
+   "ars_nouveau:source_jar",
+   "SourceJarTile.class (10000)",
+   "ars_nouveau-1.21.1-5.13.2.jar: assets/ars_nouveau/lang/en_us.json (page.source_jar)"
+  ]
+ },
+ "volcanic": {
+  "de": [
+   "Er nimmt Brennbares vom Boden in der Nähe und von Arkanen Podesten neben sich; [[ars_nouveau:red_archwood_log]] bringt am meisten. Die Quelle geht zuerst ins nächste Glas.",
+   "Baust du ihn neben Stein, wird der mit der Zeit zu Magma und dann zu Lava. Nimm um den Link herum lieber Holz, Erde oder Glas."
+  ],
+  "en": [
+   "It takes burnable items from the ground nearby and from Arcane Pedestals next to it; [[ars_nouveau:red_archwood_log]] gives the most. The source goes into the nearest jar first.",
+   "Built next to stone, the stone turns into magma and then lava over time. Use wood, dirt or glass around the link instead."
+  ],
+  "sources": [
+   "ars_nouveau:volcanic_sourcelink",
+   "ars_nouveau-1.21.1-5.13.2.jar: assets/ars_nouveau/lang/en_us.json (page1.volcanic_sourcelink, page2.volcanic_sourcelink)"
+  ]
+ },
+ "fill_jar": {
+  "de": [
+   "Den Haken setzt du selbst, sobald das Glas steigt. Kohle und normales Holz brennen auch, Archwood-Stämme geben aber Extra-Quelle.",
+   "Reicht ein Link nicht, stell weitere dazu: Jeder füllt die Gläser im Umkreis von 5 Blöcken, das nächste zuerst. Der {{ars_nouveau/agronomic}} läuft daneben ohne Brennstoff."
+  ],
+  "en": [
+   "You tick the checkmark yourself once the jar rises. Coal and plain wood burn too, but archwood logs give extra source.",
+   "If one link is not enough, add more: each fills the jars within 5 blocks, the nearest first. The {{ars_nouveau/agronomic}} runs next to it with no fuel."
+  ],
+  "sources": [
+   "ars_nouveau-1.21.1-5.13.2.jar: assets/ars_nouveau/lang/en_us.json (page1.volcanic_sourcelink, page.agronomic_sourcelink)"
+  ]
+ },
+ "source_gems": {
+  "de": [
+   "Vier Juwelen ergeben an der Werkbank einen [[ars_nouveau:source_gem_block]] und wieder zurück; für den {{start_here/m_keystone}} brauchst du vier solcher Blöcke. Am Obelisken zählen aber nur einzelne Juwelen, keine Blöcke.",
+   "Ab Stufe 2 macht ein beheizter Mixer von Create aus 2 Amethystsplittern und 1 Glowstonestaub 3 Juwelen ohne Quelle."
+  ],
+  "en": [
+   "Four gems make a [[ars_nouveau:source_gem_block]] at the crafting table and back; the {{start_here/m_keystone}} needs four such blocks. The obelisk only counts single gems, not blocks.",
+   "From stage 2 on a heated Create mixer turns 2 amethyst shards and 1 glowstone dust into 3 gems with no source."
+  ],
+  "sources": [
+   "ars_nouveau:source_gem_block",
+   "ars_nouveau:source_gem_block_2",
+   "kronwerke:milestones/source_keystone",
+   "config/kronwerke/goals.json (ars_nouveau:source_gem)",
+   "kronwerke:round/source_gem_mixing"
+  ]
+ },
+ "chamber_auto": {
+  "de": [
+   "Jede Kammer darf höchstens 2 Blöcke vom Glas entfernt stehen, also passen mehrere eng um ein Glas. Eine Kammer kostet 6 Archwood-Planken und 2 [[create:golden_sheet]].",
+   "Statt einer Trichterreihe trägt ein Sternbunkel später Juwelen aus allen Kammern in eine Truhe ({{ars_nouveau/starbuncle_work}})."
+  ],
+  "en": [
+   "Each chamber may be at most 2 blocks from the jar, so several fit closely around one jar. A chamber costs 6 archwood planks and 2 [[create:golden_sheet]].",
+   "Instead of rows of hoppers, a Starbuncle later carries the gems from every chamber into one chest ({{ars_nouveau/starbuncle_work}})."
+  ],
+  "sources": [
+   "ars_nouveau:imbuement_chamber",
+   "ars_nouveau-1.21.1-5.13.2.jar: assets/ars_nouveau/lang/en_us.json (page1.imbuement_chamber)"
+  ],
+  "client": [
+   "Hopper on top inserts into the chamber, hopper below extracts the finished gem"
+  ]
+ },
+ "dowsing": {
+  "de": [
+   "Sie kostet nur einen Goldbarren und zwei Archwood-Planken, nimm also ein paar mit. Wo sie Knospenden Amethyst zeigt, liegt eine Geode, die immer wieder nachwächst.",
+   "Das Leuchten magischer Wesen hilft auch bei der Suche nach wilden Helfern wie dem {{ars_nouveau/starbuncle_token}}."
+  ],
+  "en": [
+   "It costs only one gold ingot and two archwood planks, so carry a few. Where it shows budding amethyst there is a geode that keeps regrowing.",
+   "The glow on magical creatures also helps you find wild helpers, as in {{ars_nouveau/starbuncle_token}}."
+  ],
+  "sources": [
+   "ars_nouveau:dowsing_rod",
+   "ars_nouveau-1.21.1-5.13.2.jar: assets/ars_nouveau/lang/en_us.json (page.dowsing_rod)"
+  ],
+  "client": [
+   "Which creatures count as magical for Magic Find (Starbuncle, Drygmy, Whirlisprig)"
+  ]
+ },
+ "sourceberry": {
+  "de": [
+   "Quellbeersträucher in der Nähe zählen am {{ars_nouveau/agronomic}} extra, ein Beet neben dem Link bringt also doppelt. Neun Beeren packst du formlos in einen [[ars_nouveau:sourceberry_sack]] und zurück."
+  ],
+  "en": [
+   "Sourceberry bushes nearby count extra at the {{ars_nouveau/agronomic}}, so a bed next to the link pays twice. Nine berries pack into a [[ars_nouveau:sourceberry_sack]] and back."
+  ],
+  "sources": [
+   "ars_nouveau-1.21.1-5.13.2.jar: assets/ars_nouveau/lang/en_us.json (page1.sourceberry_bush, page.agronomic_sourcelink)",
+   "ars_nouveau:sourceberry_sack",
+   "ars_nouveau:sourceberry_sack_to_bush"
+  ]
+ },
+ "agronomic": {
+  "de": [
+   "Am meisten bringt, was von selbst wächst und viel: Mageblooms, Quellbeeren und Archwood-Setzlinge geben extra. Eine Archwood-Baumfarm im Umkreis von 15 Blöcken füttert so den Agronomischen Link beim Wachsen und mit den Stämmen den {{ars_nouveau/volcanic}}.",
+   "Die Quelle geht an Gläser bis 5 Blöcke entfernt."
+  ],
+  "en": [
+   "What grows by itself, and a lot of it, pays most: mageblooms, sourceberries and archwood saplings give extra. An archwood tree farm within 15 blocks feeds the Agronomic link while growing and the {{ars_nouveau/volcanic}} with its logs.",
+   "The source goes to jars up to 5 blocks away."
+  ],
+  "sources": [
+   "ars_nouveau:agronomic_sourcelink",
+   "ars_nouveau-1.21.1-5.13.2.jar: assets/ars_nouveau/lang/en_us.json (page.agronomic_sourcelink)"
+  ]
+ },
+ "mycelial": {
+  "de": [
+   "Ein Vorrat [[ars_nouveau:source_berry_roll]] (3 Weizen, 1 Quellbeere) auf Podesten daneben hält ihn lange am Laufen, denn Quellbeer-Essen ist viel mehr wert als normales ({{ars_nouveau/berry_food}}).",
+   "Stell ihn auf Gras oder Erde, wenn du die Pilze willst, sonst auf einen anderen Block."
+  ],
+  "en": [
+   "A supply of [[ars_nouveau:source_berry_roll]] (3 wheat, 1 sourceberry) on pedestals next to it keeps it running for long, since sourceberry food is worth far more than plain food ({{ars_nouveau/berry_food}}).",
+   "Put it on grass or dirt if you want the mushrooms, otherwise on another block."
+  ],
+  "sources": [
+   "ars_nouveau:mycelial_sourcelink",
+   "ars_nouveau:source_berry_roll",
+   "ars_nouveau-1.21.1-5.13.2.jar: assets/ars_nouveau/lang/en_us.json (page.mycelial_sourcelink)"
+  ]
+ },
+ "vitalic": {
+  "de": [
+   "Stell ihn neben eine Tierzucht oder eine Mobfalle: Jedes gezüchtete Tier und jedes Wesen, das in der Nähe stirbt, bringt Quelle. Die [[minecraft:glistering_melon_slice]] machst du aus einer Melonenscheibe und 8 Goldnuggets."
+  ],
+  "en": [
+   "Put it next to an animal breeder or a mob farm: every animal bred and every creature that dies nearby gives source. The [[minecraft:glistering_melon_slice]] is a melon slice in 8 gold nuggets."
+  ],
+  "sources": [
+   "ars_nouveau:vitalic_sourcelink",
+   "ars_nouveau-1.21.1-5.13.2.jar: assets/ars_nouveau/lang/en_us.json (page.vitalic_sourcelink)"
+  ]
+ },
+ "glyph_light": {
+  "de": [
+   "Projektil, Magielicht kostet 35 Mana. Verstärken macht das Licht heller, mit Zeit verlängern (Stufe 2) wird es stattdessen ein Licht auf Zeit.",
+   "Auf ein anderes Wesen gewirkt, bekommt es Nachtsicht und leuchtet."
+  ],
+  "en": [
+   "Projectile, Conjure Magelight costs 35 mana. Amplify makes the light brighter; with Extend Time (stage 2) it becomes a temporary light instead.",
+   "Cast on another creature, it gets Night Vision and Glowing."
+  ],
+  "sources": [
+   "ars_nouveau:glyph_light",
+   "srv/config/ars_nouveau/glyph_light.toml (cost 25)",
+   "ars_nouveau-1.21.1-5.13.2.jar: assets/ars_nouveau/lang/en_us.json (glyph_desc.glyph_light, augment_desc.glyph_light_*)"
+  ]
+ },
+ "glyph_amplify": {
+  "de": [
+   "Die [[minecraft:diamond_pickaxe]] wird dabei verbraucht, das sind 3 Diamanten. Jedes Verstärken kostet 20 Mana, Projektil, Brechen, Verstärken also 40.",
+   "Verstärken wirkt auch hinter Fällen, Magielicht und vielen anderen Effekten."
+  ],
+  "en": [
+   "The [[minecraft:diamond_pickaxe]] is used up, that is 3 diamonds. Each Amplify costs 20 mana, so Projectile, Break, Amplify costs 40.",
+   "Amplify also works after Fell, Conjure Magelight and many other effects."
+  ],
+  "sources": [
+   "ars_nouveau:glyph_amplify",
+   "srv/config/ars_nouveau/glyph_amplify.toml (cost 20)",
+   "ars_nouveau-1.21.1-5.13.2.jar: assets/ars_nouveau/lang/en_us.json (augment_desc.*_glyph_amplify)"
+  ]
+ },
+ "glyph_pickup": {
+  "de": [
+   "Die zwei Trichter kosten zusammen 10 Eisenbarren und 2 Truhen. Die Glyphe kostet 10 Mana und sammelt alles in einem mittleren Radius um den Zielort ein, also auch Beute nach einem Kampf."
+  ],
+  "en": [
+   "The two hoppers cost 10 iron ingots and 2 chests. The glyph costs 10 mana and gathers everything in a medium radius around the target, loot after a fight too."
+  ],
+  "sources": [
+   "ars_nouveau:glyph_pickup",
+   "srv/config/ars_nouveau/glyph_pickup.toml (cost 10)",
+   "ars_nouveau-1.21.1-5.13.2.jar: assets/ars_nouveau/lang/en_us.json (glyph_desc.glyph_pickup)"
+  ]
+ },
+ "glyph_phantom_block": {
+  "de": [
+   "Mit 5 Mana ist Magieblock eine der billigsten Glyphen, Projektil, Magieblock kostet 15. Auf ein Wesen gewirkt, wachsen die Blöcke um es herum nach oben, das hält Gegner kurz fest.",
+   "Pantomime braucht ebenfalls 8 Glas, mach also gleich 16 ({{ars_nouveau/glyphs_simple}})."
+  ],
+  "en": [
+   "At 5 mana Conjure Mageblock is one of the cheapest glyphs, Projectile, Conjure Mageblock costs 15. Cast on a creature, the blocks grow upwards around it, which holds enemies for a moment.",
+   "Pantomime also needs 8 glass, so make 16 at once ({{ars_nouveau/glyphs_simple}})."
+  ],
+  "sources": [
+   "ars_nouveau:glyph_phantom_block",
+   "ars_nouveau:glyph_pantomime",
+   "srv/config/ars_nouveau/glyph_phantom_block.toml (cost 5)",
+   "ars_nouveau-1.21.1-5.13.2.jar: assets/ars_nouveau/lang/en_us.json (glyph_desc.glyph_phantom_block)"
+  ]
+ },
+ "beginner_spells": {
+  "de": [
+   "Zum Vergleich die Kosten: Bergbau 50 Mana, Nahkampf 60, Fernkampf 45, Licht 35, Brücke und Feld je 15. Die Ernte-Glyphe kommt erst mit der Erdessenz ({{ars_nouveau/glyph_harvest}}), fünf der sechs reichen für den Haken."
+  ],
+  "en": [
+   "For comparison, the costs: mining 50 mana, melee 60, ranged 45, light 35, bridge and field 15 each. The Harvest glyph only comes with Earth Essence ({{ars_nouveau/glyph_harvest}}); five of the six are enough for the checkmark."
+  ],
+  "sources": [
+   "srv/config/ars_nouveau/glyph_*.toml (cost)",
+   "ars_nouveau:glyph_harvest"
+  ]
+ },
+ "glyphs_simple": {
+  "de": [
+   "Für die Zielscheibe brauchst du einen Heuballen und 4 Redstone, für das Gerüst Bambus und Faden. Werkbank, Angel, Eisenstiefel, Mohn und Wassereimer werden ebenfalls verbraucht.",
+   "Handwerk kostet 50 Mana, spart dir aber die Werkbank im Gepäck."
+  ],
+  "en": [
+   "The target block needs a hay bale and 4 redstone, the scaffolding bamboo and string. The crafting table, fishing rod, iron boots, poppy and water bucket are used up as well.",
+   "Craft costs 50 mana but saves carrying a crafting table."
+  ],
+  "sources": [
+   "ars_nouveau:glyph_craft",
+   "ars_nouveau:glyph_pull",
+   "ars_nouveau:glyph_sensitive",
+   "ars_nouveau:glyph_underfoot",
+   "ars_nouveau:glyph_pantomime",
+   "ars_nouveau:reset",
+   "srv/config/ars_nouveau/glyph_craft.toml (cost 50)"
+  ]
+ },
+ "glyphs_wild": {
+  "de": [
+   "Ross beschwören gibt dir Beschwörungskrankheit: Solange sie wirkt, geht keine weitere Beschwörung. Mit AOE (Stufe 2) kommen mehr Pferde, mit Zeit verlängern bleiben sie länger.",
+   "Statt Kohle gehen für Entzünden auch 3 Holzkohle."
+  ],
+  "en": [
+   "Summon Steed gives you Summoning Sickness: while it lasts, no other summon works. With AOE (stage 2) more horses come, with Extend Time they stay longer.",
+   "For Ignite, 3 charcoal work instead of coal."
+  ],
+  "sources": [
+   "ars_nouveau:glyph_ignite (#minecraft:coals)",
+   "ars_nouveau:glyph_summon_steed",
+   "ars_nouveau:glyph_randomize",
+   "ars_nouveau-1.21.1-5.13.2.jar: assets/ars_nouveau/lang/en_us.json (glyph_desc.glyph_summon_steed)"
+  ]
+ },
+ "sourcestone": {
+  "de": [
+   "Erlaubt sind Stein, Granit, Diorit, Andesit, Tiefenschiefer und Tuff, aber **kein Bruchstein**: Brenn ihn erst im Ofen zu Stein. Plan gleich 24 Quellstein ein, denn 4 Podeste (16), der Arkane Kern (6) und der Apparat (2) brauchen so viel."
+  ],
+  "en": [
+   "Stone, granite, diorite, andesite, deepslate and tuff work, but **not cobblestone**: smelt it into stone first. Plan 24 sourcestone right away, because 4 pedestals (16), the Arcane Core (6) and the apparatus (2) need that much."
+  ],
+  "sources": [
+   "ars_nouveau:sourcestone (#c:stones)",
+   "neoforge-21.1.252-universal.jar: data/c/tags/item/stones.json",
+   "ars_nouveau:arcane_pedestal",
+   "ars_nouveau:arcane_core",
+   "ars_nouveau:enchanting_apparatus"
+  ]
+ },
+ "pedestals": {
+  "de": [
+   "Ein Podest kostet 4 Quellstein, 4 Goldnuggets und 1 Quelljuwel. Podeste neben einem Vulkanischen oder Myzel-Quelllink füttern auch den Link."
+  ],
+  "en": [
+   "A pedestal costs 4 sourcestone, 4 gold nuggets and 1 source gem. Pedestals next to a Volcanic or Mycelial Sourcelink feed the link too."
+  ],
+  "sources": [
+   "ars_nouveau:arcane_pedestal",
+   "ars_nouveau-1.21.1-5.13.2.jar: assets/ars_nouveau/lang/en_us.json (page2.volcanic_sourcelink, page.mycelial_sourcelink)"
+  ]
+ },
+ "arcane_core": {
+  "de": [
+   "Der Apparat arbeitet nur mit einem Arkanen Kern direkt darunter. Such dir einen Platz, an dem rund um den Apparat bis 3 Blöcke weit Podeste stehen können."
+  ],
+  "en": [
+   "The apparatus only works with an Arcane Core right below it. Pick a spot where pedestals fit around the apparatus up to 3 blocks away."
+  ],
+  "sources": [
+   "ars_nouveau:arcane_core",
+   "ars_nouveau-1.21.1-5.13.2.jar: assets/ars_nouveau/lang/en_us.json (page1.enchanting_apparatus)"
+  ]
+ },
+ "apparatus": {
+  "de": [
+   "**Auf dem Server sitzen links und rechts vom Diamanten 2 [[naturesaura:infused_iron]] statt Goldbarren.** Infused Iron machst du im Natural Altar von Nature's Aura aus Eisenbarren ({{start_here/m_infused}}).",
+   "Die Rezepte dieses Kapitels im Apparat brauchen keine Quelle, nur die Zutaten."
+  ],
+  "en": [
+   "**On the server the two slots beside the diamond take 2 [[naturesaura:infused_iron]] instead of gold ingots.** You make infused iron from iron ingots in Nature's Aura's Natural Altar ({{start_here/m_infused}}).",
+   "The apparatus recipes of this chapter need no source, only the ingredients."
+  ],
+  "sources": [
+   "ars_nouveau:enchanting_apparatus",
+   "kubejs/server_scripts/kronwerke/round.js (replaceInput #c:ingots/gold to naturesaura:infused_iron)",
+   "naturesaura:altar/infused_iron",
+   "ars_nouveau:enchanting_apparatus recipes (sourceCost 0)"
+  ]
+ },
+ "magebloom": {
+  "de": [
+   "Mageblütensamen kauft dir auch der Markt von Farming for Blockheads ({{food/f_market}}), das spart die 4 Juwelen. Pflanz gleich ein ganzes Beet neben den {{ars_nouveau/agronomic}}, wachsende Mageblooms geben dort extra Quelle.",
+   "Ein Leeres Pergament braucht 8 Fasern, also 2 Blüten."
+  ],
+  "en": [
+   "Farming for Blockheads' Market also sells Magebloom Seeds ({{food/f_market}}), which saves the 4 gems. Plant a whole bed next to the {{ars_nouveau/agronomic}}; growing mageblooms give extra source there.",
+   "A Blank Parchment needs 8 fibers, that is 2 blooms."
+  ],
+  "sources": [
+   "ars_nouveau:magebloom_crop",
+   "farmingforblockheads:market/ars_nouveau/magebloom_crop",
+   "ars_nouveau:magebloom_fiber",
+   "ars_nouveau:blank_parchment",
+   "ars_nouveau-1.21.1-5.13.2.jar: assets/ars_nouveau/lang/en_us.json (page.magebloom_crop)"
+  ],
+  "client": [
+   "Market price of the magebloom seed"
+  ]
+ },
+ "parchment": {
+  "de": [
+   "Ein beschriebenes [[ars_nouveau:spell_parchment]] wird formlos an der Werkbank wieder leer. Mit Pergamenten lädst du ab Stufe 2 Zaubertürme ({{ars_apprentice/turret}}) und die Runen aus Runenkreide.",
+   "Leg Manipulationsessenz mit auf den Tisch, dann ist der eingeschriebene Zauber dauerhaft verborgen."
+  ],
+  "en": [
+   "A written [[ars_nouveau:spell_parchment]] goes back to blank at the crafting table. From stage 2 on parchments load spell turrets ({{ars_apprentice/turret}}), and they charge runes drawn with Runic Chalk.",
+   "Using Manipulation Essence at the table hides the inscribed spell for good."
+  ],
+  "sources": [
+   "ars_nouveau:wipe_spell_parchment",
+   "ars_nouveau:blank_parchment",
+   "ars_nouveau-1.21.1-5.13.2.jar: assets/ars_nouveau/lang/en_us.json (page2.scribes_table, page.runic_chalk)"
+  ],
+  "client": [
+   "How exactly Manipulation Essence is applied at the Scribe's Table to hide a spell"
+  ]
+ },
+ "trinkets": {
+  "de": [
+   "Die 16 Eisennuggets der Belohnung reichen für Ring (8) und Langweiliges Schmuckstück (4) zusammen. Aus dem Ring wird im Apparat der {{ars_nouveau/ring_discount}} oder der Ring des Springens ({{ars_nouveau/gear_belts}}), aus dem Schmuckstück ein {{ars_nouveau/amulet}}."
+  ],
+  "en": [
+   "The 16 iron nuggets of the reward cover the ring (8) and the Dull Trinket (4) together. In the apparatus the ring becomes the {{ars_nouveau/ring_discount}} or the Ring of Jumping ({{ars_nouveau/gear_belts}}), the trinket an {{ars_nouveau/amulet}}."
+  ],
+  "sources": [
+   "ars_nouveau:ring_of_potential",
+   "ars_nouveau:dull_trinket",
+   "ars_nouveau:ring_of_lesser_discount",
+   "ars_nouveau:jump_ring"
+  ]
+ },
+ "amulet": {
+  "de": [
+   "Beide Amulette bauen auf dem [[ars_nouveau:dull_trinket]] auf (4 Eisennuggets um ein Quelljuwel). Die Quest will das Amulett des Mana-Boosts, das Amulett der Manaregeneration ist die Alternative für viele kleine Zauber."
+  ],
+  "en": [
+   "Both amulets start from the [[ars_nouveau:dull_trinket]] (4 iron nuggets around a source gem). The quest wants the Amulet of Mana Boost; the Amulet of Mana Regen is the alternative for many small spells."
+  ],
+  "sources": [
+   "ars_nouveau:amulet_of_mana_boost",
+   "ars_nouveau:amulet_of_mana_regen",
+   "ars_nouveau:dull_trinket"
+  ]
+ },
+ "earth_essence": {
+  "de": [
+   "Weil die Podest-Items liegen bleiben, lohnt sich eine feste Erdessenz-Kammer, in die du nur Juwelen nachlegst. 2 000 Quelle sind ein Fünftel eines vollen Glases.",
+   "Erdessenz brauchst du für Ernte, Fällen, Schlinge, Gelände beschwören und den {{ars_nouveau/lesser_focus}}."
+  ],
+  "en": [
+   "Since the pedestal items stay, a fixed earth essence chamber pays off; you only add gems. 2,000 source is a fifth of a full jar.",
+   "Earth Essence goes into Harvest, Fell, Snare, Conjure Terrain and the {{ars_nouveau/lesser_focus}}."
+  ],
+  "sources": [
+   "ars_nouveau:imbuement_earth_essence",
+   "ars_nouveau-1.21.1-5.13.2.jar: assets/ars_nouveau/lang/en_us.json (page1.imbuement_chamber)",
+   "ars_nouveau:glyph_harvest",
+   "ars_nouveau:glyph_fell",
+   "ars_nouveau:glyph_snare",
+   "ars_elemental:glyph_conjure_terrain",
+   "ars_elemental:lesser_earth_focus"
+  ]
+ },
+ "manipulation_essence": {
+  "de": [
+   "Die [[minecraft:clock]] kostet 4 Goldbarren und 1 Redstone, bleibt aber wie Knopf und Redstone auf dem Podest liegen. Mit der Essenz färbst du auch Archwood-Setzlinge um ({{ars_nouveau/archwood_colors}}); Zauberstab, Spiegel und Bogen brauchen sie ebenfalls."
+  ],
+  "en": [
+   "The [[minecraft:clock]] costs 4 gold ingots and 1 redstone, but like the button and the redstone it stays on its pedestal. The essence also changes archwood sapling colours ({{ars_nouveau/archwood_colors}}); the wand, mirror and bow need it too."
+  ],
+  "sources": [
+   "ars_nouveau:imbuement_manipulation_essence",
+   "ars_nouveau:manipulation_essence_to_cascading_sapling",
+   "ars_nouveau:wand",
+   "ars_nouveau:enchanters_mirror",
+   "ars_nouveau:spell_bow"
+  ]
+ },
+ "essences_more": {
+  "de": [
+   "Die Podest-Items bleiben liegen, ein Wassereimer und ein Feuerzeug reichen also für beliebig viele Essenzen. Jede kostet nur ein Quelljuwel und 2 000 Quelle.",
+   "Abschwörung brauchst du für Zerstreuen, Prallen, Wololo und die {{ars_nouveau/potion_flask}}."
+  ],
+  "en": [
+   "The pedestal items stay, so one water bucket and one flint and steel are enough for any number of essences. Each costs just a source gem and 2,000 source.",
+   "Abjuration goes into Dispel, Bounce, Wololo and the {{ars_nouveau/potion_flask}}."
+  ],
+  "sources": [
+   "ars_nouveau:imbuement_water_essence",
+   "ars_nouveau:imbuement_fire_essence",
+   "ars_nouveau:imbuement_abjuration_essence",
+   "ars_nouveau-1.21.1-5.13.2.jar: assets/ars_nouveau/lang/en_us.json (page1.imbuement_chamber)"
+  ]
+ },
+ "wilden": {
+  "de": [
+   "Jäger und Pirscher stammen aus Bauten in jedem Waldbiom, Verteidiger nur aus kalten Biomen. Der Jäger ruft verbündete Wölfe, der Pirscher greift auch aus der Luft an, der Verteidiger ist langsam, schlägt hart zu und schießt aus der Ferne.",
+   "Die Stacheln brauchst du erst in Stufe 2 für Durchschlag und Teilen."
+  ],
+  "en": [
+   "Hunters and Stalkers come from dens in any forest biome, Defenders only from cold biomes. The Hunter calls allied wolves, the Stalker also attacks from the air, the Defender is slow, hits hard and has a ranged attack.",
+   "You only need the spikes in stage 2, for Pierce and Split."
+  ],
+  "sources": [
+   "ars_nouveau jar: data/ars_nouveau/loot_table/entities/wilden_hunter.json, wilden_stalker.json, wilden_guardian.json",
+   "ars_nouveau-1.21.1-5.13.2.jar: assets/ars_nouveau/lang/en_us.json (page1.wilden, page3.wilden, page4.wilden, page5.wilden)",
+   "ars_nouveau:glyph_pierce",
+   "ars_nouveau:glyph_split"
+  ]
+ },
+ "essences_wild": {
+  "de": [
+   "Auch hier bleiben Horn, Flügel und Sternbunkel-Scherben auf den Podesten liegen. Halt trotzdem eine zweite Scherbe für den {{ars_nouveau/starbuncle_charm}} bereit, dort wird sie verbraucht.",
+   "Die Anima-Essenz kostet einen Witherskelettschädel, einen Goldenen Apfel, Knochenmehl und 3 000 Quelle ({{ars_apprentice/el_anima}})."
+  ],
+  "en": [
+   "Here too the horn, wing and Starbuncle Token stay on the pedestals. Still keep a second token for the {{ars_nouveau/starbuncle_charm}}, where it is used up.",
+   "Anima Essence costs a wither skeleton skull, a golden apple, bone meal and 3,000 source ({{ars_apprentice/el_anima}})."
+  ],
+  "sources": [
+   "ars_nouveau:imbuement_air_essence",
+   "ars_nouveau:imbuement_conjuration_essence",
+   "ars_nouveau:starbuncle_charm",
+   "ars_elemental:imbuement_anima_essence"
+  ]
+ },
+ "glyph_harvest": {
+  "de": [
+   "Berühren, Ernte kostet nur 15 Mana. Die [[minecraft:iron_hoe]] wird verbraucht, die Erdessenz ebenfalls.",
+   "Hängst du Artikelabholung an, landet die Ernte gleich im Inventar: Berühren, Ernte, Artikelabholung kostet 25 Mana."
+  ],
+  "en": [
+   "Touch, Harvest costs just 15 mana. The [[minecraft:iron_hoe]] is used up, and so is the Earth Essence.",
+   "Add Item Pickup and the crops go straight into your inventory: Touch, Harvest, Item Pickup costs 25 mana."
+  ],
+  "sources": [
+   "ars_nouveau:glyph_harvest",
+   "srv/config/ars_nouveau/glyph_harvest.toml (cost 10)",
+   "glyph_touch.toml (cost 5)"
+  ]
+ },
+ "glyphs_earth": {
+  "de": [
+   "Fällen mit Verstärken schafft härtere Blöcke, mit AOE (Stufe 2) mehr Blöcke auf einmal. Blase hält Wesen in der Luft; triffst du sie darin, platzt die Blase und macht Extraschaden.",
+   "Spinnweben bekommst du mit einer Schere oder mit Brechen und Empfindlich, Schnee mit einer Schaufel."
+  ],
+  "en": [
+   "Fell with Amplify handles harder material, with AOE (stage 2) more blocks at once. Bubble holds creatures in the air; hit them inside and the bubble pops for bonus damage.",
+   "Get cobwebs with shears or with Break and Sensitive, snow with a shovel."
+  ],
+  "sources": [
+   "ars_nouveau:glyph_fell",
+   "ars_nouveau:glyph_snare",
+   "ars_nouveau:glyph_freeze",
+   "ars_nouveau:glyph_bubble",
+   "ars_nouveau-1.21.1-5.13.2.jar: assets/ars_nouveau/lang/en_us.json (glyph_desc.glyph_fell, glyph_bubble, glyph_break)"
+  ]
+ },
+ "glyphs_manip": {
+  "de": [
+   "Werfen legt in der Grundform 64 Items ab, Verstärken verdoppelt, Dämpfen halbiert die Menge. Für die Uhr bei Verzögerung brauchst du nochmal 4 Goldbarren und 1 Redstone."
+  ],
+  "en": [
+   "Toss puts down 64 items by default; Amplify doubles, Dampen halves the amount. The clock for Delay costs another 4 gold ingots and 1 redstone."
+  ],
+  "sources": [
+   "ars_nouveau:glyph_place_block",
+   "ars_nouveau:glyph_toss",
+   "ars_nouveau:glyph_interact",
+   "ars_nouveau:glyph_rotate",
+   "ars_nouveau:glyph_delay",
+   "ars_nouveau-1.21.1-5.13.2.jar: assets/ars_nouveau/lang/en_us.json (glyph_desc.glyph_toss)"
+  ]
+ },
+ "glyphs_manip2": {
+  "de": [
+   "Die drei [[minecraft:sponge]] sind der schwere Teil: Schwämme gibt es nur in Ozeanmonumenten, als Block in den Räumen oder vom Großen Wächter, und zwar nass: Trockne sie im Ofen. Schneiden mit Verstärken wirkt wie eine Axt statt einer Schere.",
+   "Eine Rune mit Artikelabholung legt die Beute in Inventare daneben."
+  ],
+  "en": [
+   "The three [[minecraft:sponge]] are the hard part: sponges only come from ocean monuments, as blocks in the rooms or from the Elder Guardian, and wet: dry them in a furnace. Cut with Amplify acts like an axe instead of shears.",
+   "A rune with Item Pickup puts the loot into adjacent inventories."
+  ],
+  "sources": [
+   "ars_nouveau:glyph_cut",
+   "ars_nouveau:glyph_evaporate",
+   "ars_nouveau:glyph_redstone_signal",
+   "ars_nouveau:glyph_rune",
+   "ars_nouveau:runic_chalk",
+   "ars_nouveau-1.21.1-5.13.2.jar: assets/ars_nouveau/lang/en_us.json (glyph_desc.glyph_cut, glyph_desc.glyph_rune)"
+  ]
+ },
+ "glyph_pack": {
+  "de": [
+   "Mit Verstärken packt sie im 3x3-Raster, so werden Nuggets zu Barren oder Barren zu Blöcken. AOE (Stufe 2) vergrößert den Bereich, aus dem sie Items einsammelt."
+  ],
+  "en": [
+   "With Amplify it packs in a 3x3 grid, so nuggets become ingots or ingots become blocks. AOE (stage 2) widens the area it collects items from."
+  ],
+  "sources": [
+   "ars_technica:glyph_pack",
+   "ars_technica-1.21.1-2.7.6.jar: lang en_us (glyph_desc.glyph_pack, augment_desc.glyph_pack_*)"
+  ]
+ },
+ "glyph_dispel": {
+  "de": [
+   "Zerstreuen holt auch deine eigenen Helfer zurück: Sternbunkel, Drygmy und Wirbelzweig werden wieder zum Charme. Die [[ars_nouveau:wixie_shards]] brauchst du für den Wixie in Stufe 2 ({{ars_apprentice/wixie}})."
+  ],
+  "en": [
+   "Dispel also brings your own helpers back: Starbuncle, Drygmy and Whirlisprig turn back into their charm. You need the [[ars_nouveau:wixie_shards]] for the Wixie in stage 2 ({{ars_apprentice/wixie}})."
+  ],
+  "sources": [
+   "ars_nouveau:glyph_dispel",
+   "ars_nouveau-1.21.1-5.13.2.jar: assets/ars_nouveau/lang/en_us.json (glyph_desc.glyph_dispel, page3.starbuncle_charm, page3.drygmy_charm, page3.whirlisprig_charm)",
+   "ars_nouveau:wixie_charm"
+  ]
+ },
+ "glyph_leap": {
+  "de": [
+   "Selbst, Sprung kostet 35 Mana. Gegen den Fallschaden hilft der Charm of Featherlight ({{ars_nouveau/charm_water}}) oder ein Magieblock unter dir."
+  ],
+  "en": [
+   "Self, Leap costs 35 mana. Against fall damage the Charm of Featherlight ({{ars_nouveau/charm_water}}) helps, or a mageblock under you."
+  ],
+  "sources": [
+   "ars_nouveau:glyph_leap",
+   "srv/config/ars_nouveau/glyph_leap.toml (cost 25)",
+   "ars_additions:apparatus/fall_prevention_charm"
+  ]
+ },
+ "glyphs_air": {
+  "de": [
+   "[[minecraft:wind_charge]] lassen nur Breezes fallen, die du in Prüfungskammern findest. Hasenfell kommt von Kaninchen, Schleimbälle von Schleimen.",
+   "Alle fünf Glyphen verbrauchen ihre Essenz, plan also 3 Luftessenzen und 2 Abschwörungsessenzen ein."
+  ],
+  "en": [
+   "Only Breezes drop [[minecraft:wind_charge]], and you find them in trial chambers. Rabbit hide comes from rabbits, slime balls from slimes.",
+   "All five glyphs use up their essence, so plan 3 Air Essences and 2 Abjuration Essences."
+  ],
+  "sources": [
+   "ars_nouveau:glyph_gust",
+   "ars_nouveau:glyph_launch",
+   "ars_nouveau:glyph_wind_burst",
+   "ars_nouveau:glyph_bounce",
+   "ars_nouveau:wololo"
+  ]
+ },
+ "glyphs_conj": {
+  "de": [
+   "Wölfe beschwören kostet 100 Mana, plan dafür das Amulett des Mana-Boosts ein. Zeit verlängern hält die Wölfe länger. Taschenspielerei ist mit Verstärken dauerhaft, die Partikel stellst du im Zauberbuch unter dem Zauberstil ein."
+  ],
+  "en": [
+   "Summon Wolves costs 100 mana, so plan the Amulet of Mana Boost for it. Extend Time keeps the wolves longer. Prestidigitation becomes permanent with Amplify; you set the particles in the spell book's spell style menu."
+  ],
+  "sources": [
+   "ars_nouveau:glyph_summon_wolves",
+   "ars_nouveau:glyph_prestidigitation",
+   "srv/config/ars_nouveau/glyph_summon_wolves.toml (cost 100)",
+   "ars_nouveau-1.21.1-5.13.2.jar: assets/ars_nouveau/lang/en_us.json (glyph_desc.glyph_summon_wolves, glyph_desc.glyph_prestidigitation)"
+  ]
+ },
+ "glyphs_elemental": {
+  "de": [
+   "Gelände beschwören setzt mit einem Verstärken Bruchstein, mit zwei Bruchtiefenschiefer; mit AOE und Durchschlag (Stufe 2) gleich ganze Flächen. Funke macht mehr Schaden an nassen Zielen, kombinier ihn mit Wasser.",
+   "Ein Filter kommt hinter die Form und entscheidet, bei welchen Wesen der Rest des Zaubers wirkt. Den Filter für Feuerwesen machst du mit Lohenstaub, also erst mit dem Nether."
+  ],
+  "en": [
+   "Conjure Terrain places cobblestone with one Amplify, cobbled deepslate with two; with AOE and Pierce (stage 2) whole areas. Spark deals more damage to wet targets, so combine it with water.",
+   "A filter goes after the form and decides on which creatures the rest of the spell works. The filter for fiery creatures needs blaze powder, so only with the Nether."
+  ],
+  "sources": [
+   "ars_elemental:glyph_conjure_terrain",
+   "ars_elemental:glyph_spark",
+   "ars_elemental:glyph_fiery_filter",
+   "ars_elemental-1.21.1-0.7.10.3.jar: lang en_us (glyph_desc.glyph_conjure_terrain, augment_desc.glyph_conjure_terrain_*, glyph_desc.glyph_spark)"
+  ],
+  "client": [
+   "Whether a filter lets the spell through on the named creatures or on all others"
+  ]
+ },
+ "wand": {
+  "de": [
+   "Willst du einen Stab, der abbaut, schreib nur Brechen hinein: Er wirkt dann Projektil, Beschleunigen, Brechen. Eingeschrieben wird am {{ars_nouveau/scribes_table}} wie beim Pergament.",
+   "Der Stab ist auch die Vorstufe für Schwert, Bogen und die anderen Werkzeuge dieses Kapitels."
+  ],
+  "en": [
+   "For a wand that mines, inscribe just Break: it then casts Projectile, Accelerate, Break. You inscribe at the {{ars_nouveau/scribes_table}} as with a parchment.",
+   "The wand is also the step before the sword, bow and other tools of this chapter."
+  ],
+  "sources": [
+   "ars_nouveau:wand",
+   "ars_nouveau-1.21.1-5.13.2.jar: assets/ars_nouveau/lang/en_us.json (page.wand, page2.scribes_table)"
+  ]
+ },
+ "gear_sword": {
+  "de": [
+   "Beide zusammen kosten 4 Goldblöcke und 4 Quelljuwelblöcke, also 36 Goldbarren und 16 Quelljuwelen, dazu einen Diamanten. Alle Zauber des Schwerts bekommen zusätzlich Zauberschaden."
+  ],
+  "en": [
+   "Together they cost 4 gold blocks and 4 source gem blocks, that is 36 gold ingots and 16 source gems, plus a diamond. All of the sword's spells also gain Spell Damage."
+  ],
+  "sources": [
+   "ars_nouveau:enchanters_sword",
+   "ars_nouveau:enchanters_shield",
+   "ars_nouveau-1.21.1-5.13.2.jar: assets/ars_nouveau/lang/en_us.json (page.enchanters_sword, page.enchanters_shield)"
+  ]
+ },
+ "gear_bow": {
+  "de": [
+   "Ohne Pfeile im Inventar schießt der Bogen einen Zauberpfeil ohne Schaden, der nur den Zauber trägt. Reicht das Mana nicht, fliegen normale Pfeile.",
+   "Ein Verstärkungspfeil: Verstärken kostet in der Kammer einen Pfeil, auf den Podesten Quelljuwel, Luftessenz und Diamant, und 100 Quelle."
+  ],
+  "en": [
+   "With no arrows in your inventory the bow fires a damageless spell arrow that only carries the spell. Without enough mana, plain arrows fly.",
+   "An Augment Arrow: Amplify costs an arrow in the chamber, a source gem, Air Essence and a diamond on the pedestals, and 100 source."
+  ],
+  "sources": [
+   "ars_nouveau:spell_bow",
+   "ars_nouveau:spell_crossbow",
+   "ars_nouveau:imbuement_amplify_arrow",
+   "ars_nouveau-1.21.1-5.13.2.jar: assets/ars_nouveau/lang/en_us.json (page1.spell_bow)"
+  ]
+ },
+ "gear_tools": {
+  "de": [
+   "Handschuh und Angel wirken immer Berühren vor ihrem Zauber, schreib ihnen also einen Zauber ohne Form ein. Der Spiegel nimmt ebenfalls einen Zauber ohne Form, etwa Sprung mit Verstärken."
+  ],
+  "en": [
+   "Gauntlet and rod always cast Touch before their spell, so inscribe a spell without a form. The mirror also takes a spell without a form, Leap with Amplify for example."
+  ],
+  "sources": [
+   "ars_nouveau:enchanters_gauntlet",
+   "ars_nouveau:enchanters_fishing_rod",
+   "ars_nouveau:enchanters_mirror",
+   "ars_nouveau-1.21.1-5.13.2.jar: assets/ars_nouveau/lang/en_us.json (page1.enchanters_gauntlet, page1.enchanters_fishing_rod, page.enchanters_mirror)"
+  ]
+ },
+ "gear_belts": {
+  "de": [
+   "Der Gürtel der Levitation mildert außerdem ein wenig Fallschaden. Die Krone wird als Schmuckstück getragen, nicht als Helm: Als Quellgeborene darfst du sie tragen, obwohl ein Goldhelm drinsteckt."
+  ],
+  "en": [
+   "The Belt of Levitation also softens fall damage a little. The crown is worn as a trinket, not as a helmet: as a Quellgeborene you may wear it even though a golden helmet went into it."
+  ],
+  "sources": [
+   "ars_nouveau:belt_of_levitation",
+   "ars_nouveau:alchemists_crown",
+   "ars_nouveau:mundane_belt",
+   "ars_nouveau-1.21.1-5.13.2.jar: assets/ars_nouveau/lang/en_us.json (page.belt_of_levitation)",
+   "neoorigins jar: data/neoorigins/tags/item/heavy_armor.json"
+  ],
+  "client": [
+   "Alchemist's Crown goes into a curio slot, not the helmet slot"
+  ]
+ },
+ "dominion_wand": {
+  "de": [
+   "Schleichend auf ein Quellrelais angewendet, löscht der Stab dessen Verbindungen. Im Auswahlrad schaltest du den strengen Modus ein, dann wählst du auch die Seite des Blocks.",
+   "Den Stab brauchst du für Sternbunkel, Alakarkinos, ab Stufe 2 für Relais und als Zutat für den {{ars_nouveau/advanced_wand}}."
+  ],
+  "en": [
+   "Used sneaking on a source relay, the wand clears its links. In the radial menu you switch to strict mode, which lets you pick the block's side.",
+   "You need the wand for Starbuncles, the Alakarkinos, relays from stage 2 on and as an ingredient of the {{ars_nouveau/advanced_wand}}."
+  ],
+  "sources": [
+   "ars_nouveau:dominion_wand",
+   "ars_nouveau-1.21.1-5.13.2.jar: assets/ars_nouveau/lang/en_us.json (page.dominion_wand)",
+   "ars_additions:apparatus/advanced_dominion_wand"
+  ]
+ },
+ "starbuncle_token": {
+  "de": [
+   "Nimm ein paar Goldnuggets mehr mit: Eine Scherbe steckt im {{ars_nouveau/starbuncle_charm}}, eine liegt für die Beschwörungsessenz auf dem Podest ({{ars_nouveau/essences_wild}}). Die {{ars_nouveau/dowsing}} lässt Sternbunkel im Umkreis leuchten."
+  ],
+  "en": [
+   "Bring a few extra gold nuggets: one token goes into the {{ars_nouveau/starbuncle_charm}}, one sits on the pedestal for Conjuration Essence ({{ars_nouveau/essences_wild}}). The {{ars_nouveau/dowsing}} makes nearby Starbuncles glow."
+  ],
+  "sources": [
+   "ars_nouveau-1.21.1-5.13.2.jar: assets/ars_nouveau/lang/en_us.json (page1.starbuncle_charm)",
+   "ars_nouveau:starbuncle_charm",
+   "ars_nouveau:imbuement_conjuration_essence"
+  ],
+  "client": [
+   "Dowsing Rod Magic Find highlights Starbuncles"
+  ]
+ },
+ "starbuncle_charm": {
+  "de": [
+   "Stirbt dein Sternbunkel oder triffst du ihn mit Zerstreuen, bekommst du den Charme zurück. Mit dem Dominion-Zauberstab bindest du ihn an ein Magebloom-Bett, dort ruht er, wenn er nichts zu tun hat.",
+   "Mit einem Farbstoff färbst du ihn ein."
+  ],
+  "en": [
+   "If your Starbuncle dies or you hit it with Dispel, you get the charm back. With the Dominion Wand you bind it to a Magebloom Bed, where it rests when there is nothing to do.",
+   "A dye colours it."
+  ],
+  "sources": [
+   "ars_nouveau:starbuncle_charm",
+   "ars_nouveau-1.21.1-5.13.2.jar: assets/ars_nouveau/lang/en_us.json (page3.starbuncle_charm, page7.starbuncle_charm)"
+  ]
+ },
+ "starbuncle_work": {
+  "de": [
+   "Schleichend mit dem Dominion-Zauberstab auf den Sternbunkel setzt alle Verbindungen zurück. Ein Redstone-Signal am Magebloom-Bett schickt ihn zum Schlafen und schaltet ihn ab.",
+   "Klickst du ihn mit einem Block an, bevorzugt er diesen Block als Weg, von selbst nimmt er gern Trampelpfade."
+  ],
+  "en": [
+   "Using the Dominion Wand on the Starbuncle while sneaking resets all its links. A redstone signal at its Magebloom Bed sends it to bed and switches it off.",
+   "Use a block on it and it prefers that block as its path; on its own it likes dirt paths."
+  ],
+  "sources": [
+   "ars_nouveau-1.21.1-5.13.2.jar: assets/ars_nouveau/lang/en_us.json (page4.starbuncle_charm, page6.starbuncle_charm, page7.starbuncle_charm)"
+  ]
+ },
+ "drygmy": {
+  "de": [
+   "[[minecraft:mossy_cobblestone]] machst du formlos aus Bruchstein und Ranke oder Moos. Stell Truhe und Quellglas direkt an den Henge; neben Tieren zählen auch Mob-Gläser in der Nähe als Wesen.",
+   "Je mehr verschiedene Arten im Umkreis leben, desto glücklicher ist er und desto mehr gibt er. Neben der Beute legt er [[ars_nouveau:experience_gem]] in die Truhe."
+  ],
+  "en": [
+   "Craft [[minecraft:mossy_cobblestone]] from cobblestone with a vine or moss. Put the chest and source jar right next to the henge; besides animals, Containment Jars nearby count as creatures too.",
+   "The more different kinds live in range, the happier it is and the more it gives. Besides the loot it also puts [[ars_nouveau:experience_gem]] into the chest."
+  ],
+  "sources": [
+   "ars_nouveau:drygmy_charm",
+   "ars_nouveau-1.21.1-5.13.2.jar: assets/ars_nouveau/lang/en_us.json (page1.drygmy_charm, page2.drygmy_charm, page3.drygmy_charm, page4.drygmy_charm, page5.drygmy_charm)"
+  ]
+ },
+ "whirlisprig": {
+  "de": [
+   "Klickst du ihn mit einem Block an, sagt er dir, ob er den in seinem Zuhause mag; mit leerer Hand zeigt er seine Laune. Zu viel von einem Block zählt nicht mehr, und bis sich die Laune ändert, können ein paar Minuten vergehen.",
+   "Mehr Bäume bringen mehr Holz, mehr Felder mehr Saat und Ernte."
+  ],
+  "en": [
+   "Use a block on it and it tells you whether it likes that block in its home; with an empty hand it shows its mood. Too much of one block stops counting, and the mood can take a few minutes to update.",
+   "More trees give more logs, more fields more seeds and crops."
+  ],
+  "sources": [
+   "ars_nouveau:whirlisprig_charm",
+   "ars_nouveau-1.21.1-5.13.2.jar: assets/ars_nouveau/lang/en_us.json (page3.whirlisprig_charm, page4.whirlisprig_charm, page5.whirlisprig_charm, page6.whirlisprig_charm)"
+  ]
+ },
+ "alakarkinos": {
+  "de": [
+   "Du brauchst vier Töpferscherben: eine als Geschenk, drei fürs Rezept. Sie liegen in verdächtigem Sand und Kies, den du mit dem [[minecraft:brush]] abpinselst, etwa an Wüstenbrunnen, Wüstentempeln und Ozeanruinen.",
+   "Den Sand oder Kies legst du bis 3 Blöcke waagrecht und 1 Block senkrecht um die Truhe herum."
+  ],
+  "en": [
+   "You need four pottery sherds: one as a gift, three for the recipe. They are in suspicious sand and gravel that you brush with the [[minecraft:brush]], at desert wells, desert pyramids and ocean ruins for example.",
+   "Place the sand or gravel within 3 blocks horizontally and 1 block vertically around the chest."
+  ],
+  "sources": [
+   "ars_nouveau:alakarkinos_charm",
+   "ars_nouveau-1.21.1-5.13.2.jar: assets/ars_nouveau/lang/en_us.json (page1.alakarkinos_charm, page4.alakarkinos_charm)"
+  ]
+ },
+ "starbuncle_wheel": {
+  "de": [
+   "Das Rad dreht mit 16 RPM, ein **Goldblock vor dem Rad** hebt es auf 24 RPM. Der Charme wird dabei verbraucht, plan also einen zweiten Sternbunkel für die Logistik ein."
+  ],
+  "en": [
+   "The wheel turns at 16 RPM; a **gold block in front of the wheel** raises it to 24 RPM. The charm is used up, so plan a second Starbuncle for logistics."
+  ],
+  "sources": [
+   "ars_creo:starbuncle_wheel",
+   "srv/config/ars_creo-common.toml (wheelBaseSpeed 16, wheelMaxSpeed 24)",
+   "ars_creo-1.21.1-5.4.0.jar: lang en_us (page1.starbuncle_wheel)"
+  ]
+ },
+ "advanced_wand": {
+  "de": [
+   "Im Auswahlrad stellst du außerdem ein, ob der erste oder der zweite Klick die Quelle ist. Im Mehrfach-Modus verbindet er alle zusammenhängenden Blöcke derselben Sorte, also stell die Kammern dafür lückenlos nebeneinander."
+  ],
+  "en": [
+   "In the radial menu you also set whether the first or the second click is the source. In multi mode it links all connected blocks of the same kind, so place the chambers side by side without gaps."
+  ],
+  "sources": [
+   "ars_additions:apparatus/advanced_dominion_wand",
+   "ars_additions jar: lang en_us (page.advanced_dominion_wand)"
+  ]
+ },
+ "curio_bag": {
+  "de": [
+   "Die Taste zum Öffnen stellst du in der Steuerung unter Ars Elemental ein. Für die größere, färbbare Spellcaster Bag ({{ars_apprentice/caster_bag}}) kommen im Apparat 2 Manipulationsessenzen, 2 Lohenstaub und 2 Goldblöcke dazu."
+  ],
+  "en": [
+   "You set the key to open it in the controls under Ars Elemental. For the bigger, dyeable Spellcaster Bag ({{ars_apprentice/caster_bag}}) the apparatus adds 2 Manipulation Essences, 2 blaze powder and 2 gold blocks."
+  ],
+  "sources": [
+   "ars_elemental:curio_bag",
+   "ars_elemental:caster_bag",
+   "ars_elemental jar: lang en_us (page.curio_bag)"
+  ],
+  "client": [
+   "Default key and the controls category name for opening the pouch"
+  ]
+ },
+ "lesser_focus": {
+  "de": [
+   "Die anderen drei Kleinen Fokusse gehen genauso, nur mit Feuer-, Wasser- oder Luftessenz. 5 000 Quelle sind ein halbes Glas, stell also ein volles daneben.",
+   "Der Quest reicht der Kleine Fokus der Erde."
+  ],
+  "en": [
+   "The other three lesser foci work the same way, with Fire, Water or Air Essence. 5,000 source is half a jar, so put a full one next to it.",
+   "The quest only needs the Lesser Focus of Earth."
+  ],
+  "sources": [
+   "ars_elemental:lesser_earth_focus",
+   "ars_elemental:lesser_fire_focus",
+   "ars_elemental:lesser_water_focus",
+   "ars_elemental:lesser_air_focus"
+  ]
+ },
+ "charm_water": {
+  "de": [
+   "Die Rezepte im Apparat brauchen keine Quelle. Leere Charms legst du in die Imbuement-Kammer, das Aufladen kostet 5 Quelle pro fehlendem Haltbarkeitspunkt.",
+   "Der Charm of Featherlight greift erst ab 3 Blöcken Fall, die Atmung unter Wasser erst, wenn deine Luftblasen leer sind."
+  ],
+  "en": [
+   "The apparatus recipes need no source. Put empty charms into the Imbuement Chamber; recharging costs 5 source per missing durability point.",
+   "The Charm of Featherlight only kicks in after 3 blocks of falling, the breathing charm only once your air bubbles are gone."
+  ],
+  "sources": [
+   "ars_additions:apparatus/water_breathing_charm",
+   "ars_additions:apparatus/fall_prevention_charm",
+   "ars_additions:apparatus/night_vision_charm",
+   "ars_additions:imbuement_charging/water_breathing_charm (costPerDamage 5)",
+   "ars_additions jar: lang en_us (page.ars_additions.*_charm.desc)"
+  ]
+ },
+ "siren": {
+  "de": [
+   "Sirenen springen gern bei Korallen aus dem Wasser oder folgen Booten. Bau den Schrein in einen Teich oder ein Aquarium, viele verschiedene Wassertiere und Pflanzen machen mehr und bessere Beute.",
+   "Nach jedem Durchgang will der Schrein Quelle, stell also ein Glas daneben."
+  ],
+  "en": [
+   "Sirens like to jump out of the water near coral or follow boats. Build the shrine into a pond or aquarium; many different water animals and plants give more and better loot.",
+   "After each cycle the shrine asks for source, so put a jar next to it."
+  ],
+  "sources": [
+   "ars_elemental:siren_charm",
+   "ars_elemental jar: lang en_us (page1.siren_charm, page2.siren_charm)"
+  ]
+ },
+ "flashjack": {
+  "de": [
+   "Den Blitzenden Archwood-Setzling machst du formlos aus **allen vier** Archwood-Setzlingen und einer Luftessenz ({{ars_nouveau/archwood_colors}}). An dem Baum wachsen die Flashpines.",
+   "Mit dem Dominion-Zauberstab nimmst du Wesen aus seiner Zielwahl heraus."
+  ],
+  "en": [
+   "You craft the Flashing Archwood Sapling from **all four** archwood saplings and one Air Essence ({{ars_nouveau/archwood_colors}}). The flashpines grow on that tree.",
+   "With the Dominion Wand you exclude creature types from its targets."
+  ],
+  "sources": [
+   "ars_elemental:flashing_sapling",
+   "ars_elemental:flashjack_charm",
+   "ars_elemental jar: lang en_us (page1.flashjack_charm, page2.flashjack_charm)"
+  ],
+  "client": [
+   "Flashpines grow on the Flashing Archwood tree"
+  ]
+ },
+ "berry_food": {
+  "de": [
+   "Die Quellbeeren für den Kuchen sind dieselben, die du als Strauch pflanzt; ein Kuchen braucht 3, ein Brötchen 1. Am {{ars_nouveau/mycelial}} lohnt sich Quellbeer-Essen am meisten."
+  ],
+  "en": [
+   "The sourceberries for the pie are the same you plant as a bush; a pie needs 3, a roll 1. Sourceberry food is worth the most at the {{ars_nouveau/mycelial}}."
+  ],
+  "sources": [
+   "ars_nouveau:source_berry_pie",
+   "ars_nouveau:source_berry_roll",
+   "ars_nouveau-1.21.1-5.13.2.jar: assets/ars_nouveau/lang/en_us.json (page1.sourceberry_bush, page.mycelial_sourcelink)"
+  ]
+ },
+ "potion_flask": {
+  "de": [
+   "Schleichend an einem Trankglas leerst du die Flasche wieder. Das Rezept im Apparat kostet keine Quelle.",
+   "Mit der Rolle Arkanist wirken die Tränke daraus noch 25 Prozent länger, zusammen mit der Krone des Alchemisten trinkst du sie ohne Pause aus dem Inventar ({{ars_nouveau/gear_belts}})."
+  ],
+  "en": [
+   "Using the flask on a potion jar while sneaking empties it again. The apparatus recipe costs no source.",
+   "With the Arcanist role its potions last 25 percent longer, and with the Alchemist's Crown you drink them instantly from your inventory ({{ars_nouveau/gear_belts}})."
+  ],
+  "sources": [
+   "ars_nouveau:potion_flask",
+   "ars_nouveau:potion_flask_amplify",
+   "ars_nouveau:potion_flask_extend_time",
+   "ars_nouveau-1.21.1-5.13.2.jar: assets/ars_nouveau/lang/en_us.json (page1.potion_flask)",
+   "kubejs/data/kronwerke/origins/powers/rolle_arkanist_trankkunde.json",
+   "ars_nouveau:alchemists_crown"
+  ]
+ },
+ "void_jar": {
+  "de": [
+   "Das Glas muss in der **Hotbar** liegen, im Rucksack oder Inventar tut es nichts. Für das Rezept brauchst du eine [[ars_nouveau:allow_scroll]] (Leeres Pergament und Truhe), Lava- und leerer Eimer werden verbraucht.",
+   "Statt Mana gibt das {{ars_nouveau/xp_jar}} Erfahrung."
+  ],
+  "en": [
+   "The jar must be in your **hotbar**; in a backpack or the main inventory it does nothing. The recipe needs an [[ars_nouveau:allow_scroll]] (Blank Parchment and a chest); the lava bucket and the empty bucket are used up.",
+   "The {{ars_nouveau/xp_jar}} gives experience instead of mana."
+  ],
+  "sources": [
+   "ars_nouveau:void_jar",
+   "ars_nouveau:allow_scroll",
+   "ars_nouveau-1.21.1-5.13.2.jar: assets/ars_nouveau/lang/en_us.json (page.void_jar)"
+  ]
+ },
+ "xp_jar": {
+  "de": [
+   "Bruchstein fürs Obelisk-Ziel landet so nicht mehr im Inventar, schreib also nur auf die Liste, was du wirklich nicht brauchst. Schleichend benutzt schaltest du das Glas an und aus, das ist praktisch, wenn du Bruchstein sammelst."
+  ],
+  "en": [
+   "Cobblestone for the obelisk goal no longer reaches your inventory this way, so only list what you really do not need. Use it while sneaking to switch it on and off, handy when you are collecting cobblestone."
+  ],
+  "sources": [
+   "ars_additions:apparatus/xp_jar",
+   "ars_additions jar: lang en_us (page.xp_jar)",
+   "config/kronwerke/goals.json (#c:cobblestones)"
+  ]
+ },
+ "codex": {
+  "de": [
+   "Das Aufschreiben kostet auf dem Server 10 Erfahrungspunkte pro Glyphe, bei 30 Glyphen also 300 Punkte. Lohnt sich vor allem für teure Glyphen wie Verstärken oder Fällen, die sonst jeder selbst bezahlen müsste."
+  ],
+  "en": [
+   "Writing it costs 10 experience points per glyph on the server, so 300 points for 30 glyphs. It pays most for expensive glyphs like Amplify or Fell that everyone would otherwise pay for themselves."
+  ],
+  "sources": [
+   "ars_nouveau:annotated_codex",
+   "srv/config/ars_nouveau-server.toml (codexCost 10)",
+   "AnnotatedCodex.class (CODEX_COST_PER_GLYPH, getLevelsFromExp)"
+  ]
+ },
+ "ring_discount": {
+  "de": [
+   "Der Ring geht in einen Ring-Platz, du kannst also zwei Ringe gleichzeitig tragen. Für den Ring des größeren Rabatts kommen 4 Diamanten, 2 Lohenruten und 2 Quelljuwelen dazu, Lohenruten gibt es erst im Nether in Stufe 2."
+  ],
+  "en": [
+   "The ring goes into a ring slot, so you can wear two rings at once. The Ring of Greater Discount adds 4 diamonds, 2 blaze rods and 2 source gems; blaze rods only come from the Nether in stage 2."
+  ],
+  "sources": [
+   "ars_nouveau:ring_of_lesser_discount",
+   "ars_nouveau:ring_of_greater_discount"
+  ],
+  "client": [
+   "Two ring curio slots"
+  ]
+ },
+ "scrying": {
+  "de": [
+   "Der Oculus öffnet nur Kristalle in geladenen Chunks; ein Kristall in einer fernen Basis braucht also einen Chunkloader. Eine [[ars_nouveau:scryer_scroll]] wird formlos an der Werkbank wieder zum Leeren Pergament.",
+   "Das Rezept im Apparat kostet keine Quelle."
+  ],
+  "en": [
+   "The oculus only opens crystals in loaded chunks, so a crystal at a distant base needs a chunk loader. Craft a [[ars_nouveau:scryer_scroll]] to turn it back into a blank parchment.",
+   "The apparatus recipe costs no source."
+  ],
+  "sources": [
+   "ars_nouveau:scryers_crystal",
+   "ars_nouveau:scryers_oculus",
+   "ars_nouveau:scry_to_blank_parchment",
+   "ars_nouveau-1.21.1-5.13.2.jar: assets/ars_nouveau/lang/en_us.json (page.scryers_oculus, page.scryer_scroll)"
+  ]
+ },
+ "shapers_focus": {
+  "de": [
+   "Der Schaden fliegender Blöcke steigt mit Zauberschaden, Härte und Tempo des Blocks. Das Handbuch zeigt weitere Ideen, etwa Eis werfen: Wasser beschwören, Einfrieren, Start, Verzögerung, Rückschlag (Wasser beschwören kommt mit Stufe 2).",
+   "Mit AOE (Stufe 2) wirkt der Rest auf jeden betroffenen Block."
+  ],
+  "en": [
+   "The damage of flying blocks grows with Spell Damage, the block's hardness and its speed. The handbook shows more ideas, such as throwing ice: Conjure Water, Freeze, Launch, Delay, Knockback (Conjure Water comes with stage 2).",
+   "With AOE (stage 2) the rest applies to every block affected."
+  ],
+  "sources": [
+   "ars_nouveau:shapers_focus",
+   "ars_nouveau-1.21.1-5.13.2.jar: assets/ars_nouveau/lang/en_us.json (page1.shapers_focus, page2.shapers_focus, page4.shapers_focus)"
+  ]
+ },
+ "filter_scrolls": {
+  "de": [
+   "Statt einer Rolle kannst du auch ein einzelnes Item in den Rahmen an der Truhe setzen, dann nimmt sie nur dieses. Leer machst du eine beschriebene Rolle formlos an der Werkbank."
+  ],
+  "en": [
+   "Instead of a scroll you can put a single item into the frame on the chest, then it only takes that item. Craft a written scroll on its own to clear it."
+  ],
+  "sources": [
+   "ars_nouveau:deny_scroll",
+   "ars_nouveau:mimic_scroll",
+   "ars_nouveau:clear_deny",
+   "ars_nouveau:clear_allow",
+   "ars_nouveau-1.21.1-5.13.2.jar: assets/ars_nouveau/lang/en_us.json (page5.starbuncle_charm, page1.mimic_scroll)"
+  ]
+ },
+ "snowstride": {
+  "de": [
+   "Den [[minecraft:powder_snow_bucket]] füllst du mit einem leeren Eimer aus Pulverschnee in verschneiten Hängen und Hainen. Die Lederstiefel werden verbraucht. Aufladen in der Kammer kostet 5 Quelle pro Haltbarkeitspunkt."
+  ],
+  "en": [
+   "Fill the [[minecraft:powder_snow_bucket]] with an empty bucket from powder snow on snowy slopes and in groves. The leather boots are used up. Recharging in the chamber costs 5 source per durability point."
+  ],
+  "sources": [
+   "ars_additions:apparatus/powdered_snow_walk_charm",
+   "ars_additions:imbuement_charging/powdered_snow_walk_charm (costPerDamage 5)"
+  ]
+ },
+ "obelisk": {
+  "de": [
+   "Schleichend gibst du nur ab, was in den **drei Reihen des Hauptinventars** liegt; Hotbar, Nebenhand, Rüstung und Rucksäcke bleiben ({{start_here/o_deposit}}). Die 800 sind der Grundwert für 30 Spieler, je nach Spielerzahl werden es zwischen 320 und 1 200 ({{start_here/o_scale}}).",
+   "Ein Juwel zählt 4 Punkte, ein Quellschlussstein 250. Teile dafür sammelst du in {{start_here/m_keyparts}}."
+  ],
+  "en": [
+   "Sneaking hands in only what is in the **three rows of the main inventory**; hotbar, offhand, armour and backpacks stay ({{start_here/o_deposit}}). The 800 is the base for 30 players; depending on the player count it becomes 320 to 1,200 ({{start_here/o_scale}}).",
+   "A gem counts 4 points, a Source Keystone 250. You collect its parts in {{start_here/m_keyparts}}."
+  ],
+  "sources": [
+   "config/kronwerke/goals.json (stage1 magic: source_gem base 800 weight 4, source_keystone weight 250)",
+   "docs/STAGES.md (scaling clamp 0.4 to 1.5)",
+   "kronwerke:milestones/source_keystone"
+  ]
+ },
+ "mage": {
+  "de": [
+   "8 Quelljuwelblöcke sind 32 Juwelen; der Vorrat gehört dir, die Quest nimmt ihn nicht. Mit Stufe 2 brauchst du Juwelen für den Leeren Lohenbrenner ({{ars_apprentice/blaze_burner}}) und Quelljuwelblöcke für das Ritual-Kohlenbecken.",
+   "Weiter geht es mit {{ars_apprentice/welcome}}."
+  ],
+  "en": [
+   "8 source gem blocks are 32 gems; the supply stays yours, the quest does not take it. With stage 2 you need gems for the Empty Blaze Burner ({{ars_apprentice/blaze_burner}}) and source gem blocks for the Ritual Brazier.",
+   "It continues with {{ars_apprentice/welcome}}."
+  ],
+  "sources": [
+   "ars_nouveau:source_gem_block",
+   "kubejs/server_scripts/tech_and_magic.js (empty blaze burner, 2 source gems)",
+   "ars_nouveau:ritual_brazier"
+  ],
+  "client": [
+   "Item task does not consume the items"
+  ]
+ }
+}

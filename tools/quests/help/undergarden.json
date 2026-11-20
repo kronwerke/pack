@@ -1,0 +1,624 @@
+{
+ "catalyst": {
+  "de": [
+   "Auf Kronwerke stehen **Stahlbarren** in den Ecken, wo das Original Kupfer hat. Stahl gibt es erst ab Stufe 3, zum Beispiel aus dem Hochofen von Immersive Engineering.",
+   "Der Undergarden ist bis Stufe 3 gesperrt: Ohne die Stufe kommst du nicht hinein, selbst mit fertigem Portal. Weiter geht es mit {{undergarden/arrival}}."
+  ],
+  "en": [
+   "On Kronwerke **steel ingots** sit in the corners, where the original has copper. Steel only comes in stage 3, for example from the Immersive Engineering blast furnace.",
+   "The Undergarden is locked until stage 3: without the stage you cannot enter, even with a finished portal. Next is {{undergarden/arrival}}."
+  ],
+  "sources": [
+   "undergarden:catalyst (dump)",
+   "kubejs/server_scripts/kronwerke/links.js (swap #c:ingots/copper to #c:ingots/steel)",
+   "srv/config/kronwerke-common.toml ([dimensions] undergarden:undergarden=kronwerke:stage3)",
+   "immersiveengineering:blastfurnace/steel"
+  ]
+ },
+ "arrival": {
+  "de": [
+   "Für den Rahmen gehen außerdem Polierter Tiefenschiefer, rissige Tiefenschieferziegel und -fliesen, Verstärkter Tiefenschiefer und die Ziegel aus Tiefstein, Schlotterstein und Furchtfels.",
+   "Monster spawnen nur bei Blocklicht 0, schon eine Fackel hält eine Stelle frei. Ein Seelenanker funktioniert hier nicht, ein Bett schon."
+  ],
+  "en": [
+   "The frame also takes polished deepslate, cracked deepslate bricks and tiles, reinforced deepslate and the bricks of depthrock, shiverstone and dreadrock.",
+   "Monsters only spawn at block light 0, so a single torch keeps a spot clear. A respawn anchor does not work here, a bed does."
+  ],
+  "sources": [
+   "/home/claude/kw/srv/mods/The_Undergarden-1.21.1-0.9.6.jar data/undergarden/tags/block/portal_frame_blocks.json",
+   "/home/claude/kw/srv/mods/The_Undergarden-1.21.1-0.9.6.jar data/undergarden/dimension_type (bed_works, respawn_anchor_works false, monster_spawn_block_light_limit 0, coordinate_scale 4)"
+  ]
+ },
+ "food": {
+  "de": [
+   "Unterbohnenbüsche wachsen in den Wäldern und im Vergessenen Feld, Blasenbeerbüsche nur in den Smogtürmen. Die Blasenbeerbüsche stechen, wenn du hineinläufst.",
+   "Unterbohnen garen auch im Räucherofen und am Lagerfeuer. Zwei Unterbohnen, zwei [[undergarden:mogmoss]] und eine Schüssel ergeben einen [[undergarden:slop_bowl]]."
+  ],
+  "en": [
+   "Underbean bushes grow in the forests and the Forgotten Field, blisterberry bushes only in the Smog Spires. Blisterberry bushes hurt when you walk into them.",
+   "Underbeans also cook in a smoker and on a campfire. Two underbeans, two [[undergarden:mogmoss]] and a bowl make a [[undergarden:slop_bowl]]."
+  ],
+  "sources": [
+   "/home/claude/kw/srv/mods/The_Undergarden-1.21.1-0.9.6.jar worldgen/biome/*.json (underbean_bush_patch, blisterberry_bush_patch)",
+   "/home/claude/kw/srv/mods/The_Undergarden-1.21.1-0.9.6.jar lang death.attack.blisterberry_bush",
+   "undergarden:smoke_underbeans, campfire_underbeans, slop_bowl"
+  ]
+ },
+ "gourd": {
+  "de": [
+   "Düsterkürbisse wachsen in den Wäldern, den Mooren und im Vergessenen Feld. Den Geschnitzten Düsterkürbis bekommst du nicht an der Werkbank, er wird wie ein Kürbis mit der Schere geschnitzt.",
+   "Mit Fackel wird er zur [[undergarden:gloom_o_lantern]], mit [[undergarden:shard_torch]] zur [[undergarden:shard_o_lantern]]. Kürbis, ein Pilz und [[undergarden:glitterkelp]] ergeben einen Kuchen."
+  ],
+  "en": [
+   "Gloomgourds grow in the forests, the bogs and the Forgotten Field. The Carved Gloomgourd is not crafted; you carve it with shears like a pumpkin.",
+   "With a torch it becomes a [[undergarden:gloom_o_lantern]], with a [[undergarden:shard_torch]] a [[undergarden:shard_o_lantern]]. A gourd, a mushroom and [[undergarden:glitterkelp]] make a pie."
+  ],
+  "sources": [
+   "/home/claude/kw/srv/mods/The_Undergarden-1.21.1-0.9.6.jar worldgen/biome/*.json (gloomgourd_patch)",
+   "undergarden:gloom_o_lantern, shard_o_lantern, gloomgourd_pie",
+   "undergarden:carved_gloomgourd (no recipe in dump)"
+  ],
+  "client": [
+   "Carving a gloomgourd with shears"
+  ]
+ },
+ "meat": {
+  "de": [
+   "Bewohner leben in den Wäldern, im Vergessenen Feld und in den Smogtürmen, der Große Bewohner unten in den Tiefen und gibt 4 bis 8 Fleisch. Stirbt ein Bewohner im Feuer, fällt das Fleisch schon gebraten.",
+   "Die [[undergarden:underbean_on_a_stick]] baust du aus Stock und Unterbohnen."
+  ],
+  "en": [
+   "Dwellers live in the forests, the Forgotten Field and the Smog Spires, the Greater Dweller down in the Depths, which drops 4 to 8 meat. If a dweller dies in fire, the meat drops cooked.",
+   "You make the [[undergarden:underbean_on_a_stick]] from a stick and underbeans."
+  ],
+  "sources": [
+   "/home/claude/kw/srv/mods/The_Undergarden-1.21.1-0.9.6.jar worldgen/biome/*.json (spawners)",
+   "/home/claude/kw/srv/mods/The_Undergarden-1.21.1-0.9.6.jar loot_table/entities/dweller.json, greater_dweller.json (furnace_smelt)",
+   "undergarden:underbean_on_a_stick"
+  ],
+  "client": [
+   "Riding and steering a saddled dweller"
+  ]
+ },
+ "slingshot": {
+  "de": [
+   "Die Schleuder braucht 6 Stöcke und einen [[undergarden:twistytwig]]. Aus dem Laub fällt der Zweig nur selten, **einfacher sind 2 Wackelholzbretter** diagonal an der Werkbank, die geben 4 Zweige.",
+   "Tiefkieselsteine machst du im Steinsäger, 9 aus einem Tiefstein. Mogs, Splugies und Steingeborene lassen je 3 bis 6 fallen."
+  ],
+  "en": [
+   "The slingshot takes 6 sticks and one [[undergarden:twistytwig]]. Leaves drop the twig only rarely; **2 wigglewood planks** placed diagonally on the crafting table are easier and give 4 twigs.",
+   "Make depthrock pebbles in a stonecutter, 9 from one depthrock. Mogs, sploogies and stoneborn drop 3 to 6 each."
+  ],
+  "sources": [
+   "undergarden:slingshot (pattern STS SSS _S_)",
+   "undergarden:twistytwig (2 wigglewood planks, 4 twigs)",
+   "/home/claude/kw/srv/mods/The_Undergarden-1.21.1-0.9.6.jar loot_table/blocks/wigglewood_leaves.json",
+   "undergarden:depthrock_pebble_stonecutting",
+   "/home/claude/kw/srv/mods/The_Undergarden-1.21.1-0.9.6.jar loot_table/entities/mog.json, sploogie.json, stoneborn.json"
+  ]
+ },
+ "rotspawn": {
+  "de": [
+   "**Scherben fallen nur, wenn du selbst tötest**: ein Moderling 0 bis 2, ein Moderläufer 1 bis 4, ein Moderspeier 1 bis 6, ein Moderbiest 2 bis 8. Für die Quest zählen nur Moderlinge.",
+   "Ein Treffer vom Moderbiest steckt dreimal so stark an wie einer vom Moderling. In Stufe 3 haben Monster außerdem 70 Prozent mehr Leben."
+  ],
+  "en": [
+   "**Shards only drop when you make the kill**: a rotling 0 to 2, a rotwalker 1 to 4, a rotbelcher 1 to 6, a rotbeast 2 to 8. Only rotlings count for the quest.",
+   "A rotbeast hit infects three times as much as a rotling hit. In stage 3 monsters also have 70 percent more health."
+  ],
+  "sources": [
+   "/home/claude/kw/srv/mods/The_Undergarden-1.21.1-0.9.6.jar loot_table/entities/rotling.json, rotwalker.json, rotbelcher.json, rotbeast.json (killed_by_player)",
+   "/home/claude/kw/srv/mods/The_Undergarden-1.21.1-0.9.6.jar data_maps/entity_type/entity_lethality.json",
+   "srv/config/kronwerke-common.toml ([mobs] health)"
+  ]
+ },
+ "shard_torch": {
+  "de": [
+   "Ein Rezept gibt nur **eine** Fackel pro Scherbe. Die Scherben kommen von {{undergarden/rotspawn}}, also von Moderwesen, die du selbst erlegst.",
+   "Mit einem Geschnitzten Düsterkürbis wird die Fackel zur Scherbenlaterne."
+  ],
+  "en": [
+   "One recipe gives only **one** torch per shard. The shards come from {{undergarden/rotspawn}}, that is from rotspawn you kill yourself.",
+   "With a Carved Gloomgourd the torch becomes a Shard o'Lantern."
+  ],
+  "sources": [
+   "undergarden:shard_torch (count 1)",
+   "undergarden:shard_o_lantern",
+   "/home/claude/kw/srv/mods/The_Undergarden-1.21.1-0.9.6.jar lang advancement.undergarden.shard_torch.desc"
+  ]
+ },
+ "b_forest": {
+  "de": [
+   "Katakomben stehen nicht nur im Vergessenen Feld, sondern auch im Dichten Wald, Smogstielwald, Wackelholzwald, Grongelwucher und am Alten See ({{undergarden/catacombs}}).",
+   "In den Wäldern leben Bewohner, Mogs, Rohlinge und Steingeborene. Aus [[undergarden:wigglewood_planks]] machst du die Verdrehten Zweige für die Schleuder."
+  ],
+  "en": [
+   "Catacombs are not only in the Forgotten Field but also in the Dense Forest, Smogstem Forest, Wigglewood Forest, Gronglegrowth and the Ancient Sea ({{undergarden/catacombs}}).",
+   "Dwellers, mogs, brutes and stoneborn live in the forests. [[undergarden:wigglewood_planks]] give the twistytwigs for the slingshot."
+  ],
+  "sources": [
+   "/home/claude/kw/srv/mods/The_Undergarden-1.21.1-0.9.6.jar data/undergarden/tags/worldgen/biome/has_structure/catacombs.json",
+   "/home/claude/kw/srv/mods/The_Undergarden-1.21.1-0.9.6.jar worldgen/biome/*.json (spawners)",
+   "undergarden:twistytwig"
+  ]
+ },
+ "b_bogs": {
+  "de": [
+   "In den Mooren gibt es weder Bewohner noch Steingeborene, dafür Gloomper und Skintlinge. Die Pilze brauchst du für den Düsterkürbiskuchen.",
+   "Der Puffpilzwald liegt unten bei den Tiefen und treibt die Utherische Infektion hoch wie die Tiefen selbst."
+  ],
+  "en": [
+   "The bogs have no dwellers or stoneborn but gloompers and scintlings. You need the mushrooms for the gloomgourd pie.",
+   "The Puff Mushroom Forest lies down with the Depths and raises the Utheric infection like the Depths themselves."
+  ],
+  "sources": [
+   "/home/claude/kw/srv/mods/The_Undergarden-1.21.1-0.9.6.jar worldgen/biome/*_mushroom_bog.json (spawners)",
+   "undergarden:gloomgourd_pie (#undergarden:mushrooms)",
+   "/home/claude/kw/srv/mods/The_Undergarden-1.21.1-0.9.6.jar data_maps/worldgen/biome/biome_lethality.json (puff_mushroom_forest 0.01)"
+  ]
+ },
+ "b_cold": {
+  "de": [
+   "Schlotterstein liegt auch in anderen Biomen als Einschluss im Tiefstein, aber **Froststahlerz** gibt es nur in den drei kalten Biomen. Dort leben auch Rohlinge.",
+   "Weiter geht es mit {{undergarden/froststeel}}."
+  ],
+  "en": [
+   "Shiverstone also occurs as patches in the depthrock of other biomes, but **froststeel ore** only generates in the three cold biomes. Brutes live there too.",
+   "Next is {{undergarden/froststeel}}."
+  ],
+  "sources": [
+   "/home/claude/kw/srv/mods/The_Undergarden-1.21.1-0.9.6.jar worldgen/biome/*.json (shiverstone_ore, froststeel_ore features, spawners)"
+  ]
+ },
+ "b_seas": {
+  "de": [
+   "**Gwibblinge und Glitzerseetang gibt es nur im Alten See und im Eisigen See**, nicht im Toten See. Dort schwimmen auch die großen Gwibbs.",
+   "Rohen Gwibbling lässt der Fisch nur fallen, wenn du ihn selbst tötest, mit 5 Prozent Chance kommt Knochenmehl dazu."
+  ],
+  "en": [
+   "**Gwiblings and glitterkelp only occur in the Ancient Sea and the Icy Sea**, not in the Dead Sea. The big gwibs swim there too.",
+   "The fish only drops raw gwibling when you kill it yourself, with a 5 percent chance of bone meal on top."
+  ],
+  "sources": [
+   "/home/claude/kw/srv/mods/The_Undergarden-1.21.1-0.9.6.jar worldgen/biome/ancient_sea.json, icy_sea.json, dead_sea.json (water_ambient gwibling, glitterkelp_patch)",
+   "/home/claude/kw/srv/mods/The_Undergarden-1.21.1-0.9.6.jar loot_table/entities/gwibling.json"
+  ]
+ },
+ "cloggrum": {
+  "de": [
+   "Cloggrum ist häufig: 20 Adern pro Chunk, im Tiefstein und im Schlotterstein. Erz und Rohcloggrum schmelzen auch im Hochofen.",
+   "Laternen baust du aus Cloggrumklumpen, den Eimer aus Barren. Weiter geht es mit {{undergarden/cloggrum_gear}}."
+  ],
+  "en": [
+   "Cloggrum is common: 20 veins per chunk, in depthrock and shiverstone. Ore and raw cloggrum also smelt in a blast furnace.",
+   "Lanterns are made from cloggrum nuggets, the bucket from ingots. Next is {{undergarden/cloggrum_gear}}."
+  ],
+  "sources": [
+   "/home/claude/kw/srv/mods/The_Undergarden-1.21.1-0.9.6.jar worldgen/placed_feature/cloggrum_ore.json",
+   "undergarden:blast_depthrock_cloggrum_ore",
+   "undergarden:cloggrum_lantern, cloggrum_bucket"
+  ]
+ },
+ "cloggrum_gear": {
+  "de": [
+   "Der Harnisch kostet 8 Barren, die volle Rüstung 24. Die Schmiedevorlage für die Vergessene Spitzhacke findest du in den Truhen der Katakomben ({{undergarden/catacombs}}).",
+   "**Furchtfels und alles darin**, auch das Rogdorium- und Utheriumerz der Tiefen, baut nur Vergessenes Werkzeug ab."
+  ],
+  "en": [
+   "The chestplate costs 8 ingots, the full armor 24. The smithing template for the Forgotten Pickaxe is in catacomb chests ({{undergarden/catacombs}}).",
+   "**Dreadrock and everything in it**, including the rogdorium and utherium ore of the Depths, only yields to a Forgotten tool."
+  ],
+  "sources": [
+   "undergarden:cloggrum_chestplate, helmet, leggings, boots (dump)",
+   "/home/claude/kw/srv/mods/The_Undergarden-1.21.1-0.9.6.jar loot_table/chests/catacombs.json",
+   "/home/claude/kw/srv/mods/The_Undergarden-1.21.1-0.9.6.jar data/undergarden/tags/block/needs_forgotten_tool.json"
+  ]
+ },
+ "froststeel": {
+  "de": [
+   "In den kalten Biomen liegen 15 Adern pro Chunk. Mampfer lassen außerdem 1 bis 3 Froststahlklumpen fallen.",
+   "Auf Kronwerke brauchen der Basis-Thermogenerator von Powah ({{powah/thermo}}) und der Kühler von Oritech Froststahl statt Eisen oder Eis."
+  ],
+  "en": [
+   "The cold biomes hold 15 veins per chunk. Munchers also drop 1 to 3 froststeel nuggets.",
+   "On Kronwerke Powah's basic thermo generator ({{powah/thermo}}) and Oritech's cooler need froststeel instead of iron or ice."
+  ],
+  "sources": [
+   "/home/claude/kw/srv/mods/The_Undergarden-1.21.1-0.9.6.jar worldgen/placed_feature/froststeel_ore.json",
+   "/home/claude/kw/srv/mods/The_Undergarden-1.21.1-0.9.6.jar loot_table/entities/muncher.json",
+   "kubejs/server_scripts/kronwerke/round.js (powah:crafting/thermo_generator_basic, oritech:crafting/cooler)"
+  ]
+ },
+ "froststeel_gear": {
+  "de": [
+   "Alte Froststahlteile schmelzen im Ofen oder Hochofen wieder zu Barren. Heb dir Barren für den Thermogenerator von Powah auf, auf Kronwerke steckt Froststahl darin."
+  ],
+  "en": [
+   "Old froststeel gear smelts back into ingots in a furnace or blast furnace. Keep some ingots for Powah's thermo generator, which uses froststeel on Kronwerke."
+  ],
+  "sources": [
+   "undergarden:smelt_froststeel_item, blast_froststeel_item",
+   "kubejs/server_scripts/kronwerke/round.js"
+  ]
+ },
+ "utherium": {
+  "de": [
+   "Utheriumerz ist selten, nur 3 Adern pro Chunk, aber es liegt in jedem Gestein, auch im Furchtfels der Tiefen. Die Scherben für den Haufen kommen von Moderwesen ({{undergarden/rotspawn}}).",
+   "Den Infusionstisch baust du in {{undergarden/infuser}}."
+  ],
+  "en": [
+   "Utherium ore is rare, only 3 veins per chunk, but it sits in every stone, including the dreadrock of the Depths. The shards for the cluster come from rotspawn ({{undergarden/rotspawn}}).",
+   "You build the infuser in {{undergarden/infuser}}."
+  ],
+  "sources": [
+   "/home/claude/kw/srv/mods/The_Undergarden-1.21.1-0.9.6.jar worldgen/configured_feature/utherium_ore.json, placed_feature/utherium_ore.json",
+   "undergarden:utheric_cluster (9 shards)"
+  ]
+ },
+ "regalium": {
+  "de": [
+   "Mehr Regalium gibt es in den Truhen der Katakomben, dort bis zu 4 Kristalle pro Fund. Das Erz schmilzt auch, falls du es mit Behutsamkeit abgebaut hast."
+  ],
+  "en": [
+   "More regalium sits in catacomb chests, up to 4 crystals per find. The ore also smelts if you mined it with Silk Touch."
+  ],
+  "sources": [
+   "/home/claude/kw/srv/mods/The_Undergarden-1.21.1-0.9.6.jar loot_table/chests/catacombs.json",
+   "undergarden:smelt_shiverstone_regalium_ore, blast_depthrock_regalium_ore",
+   "/home/claude/kw/srv/mods/The_Undergarden-1.21.1-0.9.6.jar worldgen/placed_feature/regalium_ore.json"
+  ]
+ },
+ "stoneborn": {
+  "de": [
+   "Steingeborene leben in den Wäldern und im Vergessenen Feld. Gehandelt werden gegen Regalium unter anderem Musikplatten, Blasenbomben, Scherbenfackeln, Düsterkürbiskerne, Eisen, Gold, Diamanten und ein Utheriumblock."
+  ],
+  "en": [
+   "Stoneborn live in the forests and the Forgotten Field. Trades against regalium include music discs, blisterbombs, shard torches, gloomgourd seeds, iron, gold, diamonds and a block of utherium."
+  ],
+  "sources": [
+   "/home/claude/kw/srv/mods/The_Undergarden-1.21.1-0.9.6.jar worldgen/biome/*.json (stoneborn spawners)",
+   "/home/claude/kw/srv/mods/The_Undergarden-1.21.1-0.9.6.jar quek/undergarden/entity/monster/stoneborn/trading/StonebornTrades.class"
+  ],
+  "client": [
+   "Which of these items the stoneborn sell and which they buy, and the prices"
+  ]
+ },
+ "ore_list": {
+  "de": [
+   "**Für Kohle zählt das Erz selbst**, abgebaut mit Behutsamkeit, nicht die Kohle. Die anderen Haken wollen das, was das Erz fallen lässt.",
+   "Rogdorium baust du nur mit Vergessenem Werkzeug ab ({{undergarden/forgotten}})."
+  ],
+  "en": [
+   "**For coal the quest wants the ore block itself**, mined with Silk Touch, not the coal. The other checks want what the ore drops.",
+   "Rogdorium can only be mined with a Forgotten tool ({{undergarden/forgotten}})."
+  ],
+  "sources": [
+   "/home/claude/kw/srv/mods/The_Undergarden-1.21.1-0.9.6.jar loot_table/blocks/depthrock_coal_ore.json",
+   "/home/claude/kw/srv/mods/The_Undergarden-1.21.1-0.9.6.jar data/undergarden/tags/block/needs_forgotten_tool.json",
+   "/home/claude/kw/srv/mods/The_Undergarden-1.21.1-0.9.6.jar worldgen/placed_feature/*_ore.json"
+  ]
+ },
+ "mobs_rot": {
+  "de": [
+   "Moderbiester spawnen nur im Öden Abgrund, Toten See, in den Smogtürmen und unten in den Tiefen. Die anderen drei gibt es fast überall.",
+   "Mit einem [[undergarden:utherium_sword]] machst du gegen alle vier das 1,5fache an Schaden."
+  ],
+  "en": [
+   "Rotbeasts only spawn in the Barren Abyss, the Dead Sea, the Smog Spires and down in the Depths. The other three are almost everywhere.",
+   "A [[undergarden:utherium_sword]] deals 1.5 times the damage against all four."
+  ],
+  "sources": [
+   "/home/claude/kw/srv/mods/The_Undergarden-1.21.1-0.9.6.jar worldgen/biome/*.json (spawners)",
+   "/home/claude/kw/srv/mods/The_Undergarden-1.21.1-0.9.6.jar lang tooltip.undergarden.utherium_weapon"
+  ]
+ },
+ "mobs_animals": {
+  "de": [
+   "Der S'Mog lebt nur im Öden Abgrund und in den Smogtürmen, der Mog in den Wäldern und im Vergessenen Feld. Der Mampfer ist ein Monster und lässt Cloggrum- und Froststahlklumpen fallen, für den Haken reicht ein Froststahlklumpen.",
+   "Rohen Gwibbling gibt es nur, wenn du den Fisch selbst tötest, und nur im Alten und im Eisigen See."
+  ],
+  "en": [
+   "The smog mog only lives in the Barren Abyss and the Smog Spires, the mog in the forests and the Forgotten Field. The muncher is a monster and drops cloggrum and froststeel nuggets; one froststeel nugget ticks its box.",
+   "Raw gwibling only drops when you kill the fish yourself, and only in the Ancient and the Icy Sea."
+  ],
+  "sources": [
+   "/home/claude/kw/srv/mods/The_Undergarden-1.21.1-0.9.6.jar worldgen/biome/*.json (spawners)",
+   "/home/claude/kw/srv/mods/The_Undergarden-1.21.1-0.9.6.jar loot_table/entities/muncher.json, gwibling.json"
+  ]
+ },
+ "mobs_other": {
+  "de": [
+   "**Verschollene spawnen nur in den Katakomben**, je 1 bis 4. Rohlinge findest du in den Wäldern und den kalten Biomen, Splugies und Nargoyles fast überall, Gwibbs im Alten und im Eisigen See.",
+   "Einwohner leben in den Tiefen und im Puffpilzwald."
+  ],
+  "en": [
+   "**The Forgotten only spawn in catacombs**, 1 to 4 at a time. Brutes are in the forests and the cold biomes, sploogies and nargoyles almost everywhere, gwibs in the Ancient and the Icy Sea.",
+   "Denizens live in the Depths and the Puff Mushroom Forest."
+  ],
+  "sources": [
+   "/home/claude/kw/srv/mods/The_Undergarden-1.21.1-0.9.6.jar worldgen/structure/catacombs.json (spawn_overrides forgotten 1 to 4)",
+   "/home/claude/kw/srv/mods/The_Undergarden-1.21.1-0.9.6.jar worldgen/biome/*.json (spawners)"
+  ]
+ },
+ "catacombs": {
+  "de": [
+   "Katakomben gibt es im Vergessenen Feld, Dichten Wald, Smogstielwald, Wackelholzwald, Grongelwucher und am Alten See. Etwa jede vierte Truhe hat eine Schmiedevorlage.",
+   "Fast jede Truhe hat außerdem ein Cloggrumschwert oder eine Cloggrumaxt. Kopieren kannst du die Vorlage später mit 7 Diamanten und einem Tiefstein."
+  ],
+  "en": [
+   "Catacombs generate in the Forgotten Field, Dense Forest, Smogstem Forest, Wigglewood Forest, Gronglegrowth and the Ancient Sea. About one chest in four holds a smithing template.",
+   "Almost every chest also holds a cloggrum sword or axe. You can copy the template later with 7 diamonds and a depthrock."
+  ],
+  "sources": [
+   "/home/claude/kw/srv/mods/The_Undergarden-1.21.1-0.9.6.jar data/undergarden/tags/worldgen/biome/has_structure/catacombs.json",
+   "/home/claude/kw/srv/mods/The_Undergarden-1.21.1-0.9.6.jar loot_table/chests/catacombs.json (template weight 3 of 12)",
+   "undergarden:forgotten_upgrade_smithing_template (copy recipe)"
+  ]
+ },
+ "guardian": {
+  "de": [
+   "4 bis 16 Klumpen reichen nicht immer für einen Barren, der braucht 9. Rechne mit mehr als einem Wächter, wenn du alle sechs Werkzeuge willst."
+  ],
+  "en": [
+   "4 to 16 nuggets do not always make an ingot, which takes 9. Expect more than one guardian if you want all six tools."
+  ],
+  "sources": [
+   "/home/claude/kw/srv/mods/The_Undergarden-1.21.1-0.9.6.jar loot_table/entities/forgotten_guardian.json (killed_by_player)",
+   "undergarden:forgotten_nugget_to_ingot"
+  ]
+ },
+ "forgotten_ingot": {
+  "de": [
+   "Für alles Vergessene brauchst du viele Barren: sechs für die Werkzeuge und Waffen, neun für den Block des Vergessenen Dieners. Die Belohnung gibt dir 9 Klumpen, also einen zweiten Barren."
+  ],
+  "en": [
+   "Everything Forgotten takes a lot of ingots: six for the tools and weapons, nine for the Forgotten Minion's block. The reward gives you 9 nuggets, a second ingot."
+  ],
+  "sources": [
+   "undergarden:forgotten_*_smithing (dump)",
+   "undergarden:forgotten_block (9 ingots)"
+  ]
+ },
+ "forgotten": {
+  "de": [
+   "Die Vorlage wird beim Schmieden verbraucht. Kopier sie gleich, bevor du sie benutzt: 7 Diamanten, 1 Tiefstein und die Vorlage ergeben zwei.",
+   "Mit der Spitzhacke geht es in {{undergarden/depths}} weiter."
+  ],
+  "en": [
+   "The template is used up by the upgrade. Copy it right away before you use it: 7 diamonds, 1 depthrock and the template make two.",
+   "With the pickaxe, carry on to {{undergarden/depths}}."
+  ],
+  "sources": [
+   "undergarden:forgotten_pickaxe_smithing",
+   "undergarden:forgotten_upgrade_smithing_template",
+   "/home/claude/kw/srv/mods/The_Undergarden-1.21.1-0.9.6.jar data/undergarden/tags/block/needs_forgotten_tool.json"
+  ]
+ },
+ "forgotten_arms": {
+  "de": [
+   "Jede Aufwertung kostet eine Vorlage und einen Vergessenen Barren. Die Cloggrumkampfaxt bekommst du in {{undergarden/u_battleaxe}}."
+  ],
+  "en": [
+   "Every upgrade costs a template and a Forgotten Ingot. You get the cloggrum battleaxe in {{undergarden/u_battleaxe}}."
+  ],
+  "sources": [
+   "undergarden:forgotten_sword_smithing, forgotten_battleaxe_smithing",
+   "/home/claude/kw/srv/mods/The_Undergarden-1.21.1-0.9.6.jar lang tooltip.undergarden.forgotten_weapon"
+  ]
+ },
+ "minion": {
+  "de": [
+   "Der Block kostet 9 Vergessene Barren, also 81 Klumpen. Den Geschnitzten Düsterkürbis schnitzt du mit der Schere aus einem Düsterkürbis ({{undergarden/gourd}})."
+  ],
+  "en": [
+   "The block costs 9 Forgotten Ingots, which is 81 nuggets. Carve the Carved Gloomgourd from a gloomgourd with shears ({{undergarden/gourd}})."
+  ],
+  "sources": [
+   "undergarden:forgotten_block",
+   "/home/claude/kw/srv/mods/The_Undergarden-1.21.1-0.9.6.jar advancement/undergarden/summon_minion.json"
+  ],
+  "client": [
+   "Carving a gloomgourd with shears",
+   "How the minion defends its position"
+  ]
+ },
+ "depths": {
+  "de": [
+   "Zu den Tiefen gehören vier Biome: Tiefen, Infizierte Tiefen, Puffpilzwald und Rogdoriumhain. Die Infizierten Tiefen stecken zweieinhalbmal so schnell an wie Tiefen und Puffpilzwald, der Rogdoriumhain gar nicht.",
+   "Nimm [[undergarden:rogdorium_nugget]] mit, die drängen die Infektion zurück ({{undergarden/cure}})."
+  ],
+  "en": [
+   "The Depths consist of four biomes: Depths, Infected Depths, Puff Mushroom Forest and Rogdorium Grove. The Infected Depths infect two and a half times as fast as the Depths and the Puff Mushroom Forest; the Rogdorium Grove does not infect at all.",
+   "Take [[undergarden:rogdorium_nugget]] along; they push the infection back ({{undergarden/cure}})."
+  ],
+  "sources": [
+   "/home/claude/kw/srv/mods/The_Undergarden-1.21.1-0.9.6.jar data_maps/worldgen/biome/biome_lethality.json",
+   "/home/claude/kw/srv/mods/The_Undergarden-1.21.1-0.9.6.jar worldgen/placed_feature/rogdorium_ore.json, rogdorium_ore_extra.json",
+   "/home/claude/kw/srv/mods/The_Undergarden-1.21.1-0.9.6.jar advancement/undergarden/enter_depths.json"
+  ]
+ },
+ "cure": {
+  "de": [
+   "Für die Quest reicht es, ein Rogdorium oder einen Klumpen zu essen. Iss lieber Klumpen: Aus einem Rogdorium werden neun."
+  ],
+  "en": [
+   "For the quest it is enough to eat one rogdorium or one nugget. Prefer nuggets: one rogdorium makes nine."
+  ],
+  "sources": [
+   "/home/claude/kw/srv/mods/The_Undergarden-1.21.1-0.9.6.jar advancement/undergarden/cure_utheric_infection.json",
+   "undergarden:rogdorium_to_nugget",
+   "/home/claude/kw/srv/mods/The_Undergarden-1.21.1-0.9.6.jar lang effect.undergarden.purity.description"
+  ],
+  "client": [
+   "How long Purity lasts after eating rogdorium or a nugget"
+  ]
+ },
+ "infuser": {
+  "de": [
+   "Im Infusionstisch wird aus einer Uralten Wurzel außerdem ein Geheimnisvoller Totem, je 10 Sekunden. Für die 8 Kristalle der Quest brauchst du 8 Haufen.",
+   "Auch [[undergarden:gronglet]] lassen sich darin mit Rogdorium oder Utherium umwandeln."
+  ],
+  "en": [
+   "The infuser also turns an Ancient Root into a Mysterious Totem, 10 seconds each. For the quest's 8 crystals you need 8 clusters.",
+   "[[undergarden:gronglet]] can also be converted in it with rogdorium or utherium."
+  ],
+  "sources": [
+   "undergarden:infuser (pattern UDR D_D D_D)",
+   "undergarden:utheric_cluster_to_utherium_crystal_infusing, denizen_totem_infusing (infusing_time 200)",
+   "undergarden:rogdoric_gronglet, utheric_gronglet"
+  ],
+  "client": [
+   "Which item fuels the infuser and how much it lasts",
+   "What armor infusing does"
+  ]
+ },
+ "utherium_gear": {
+  "de": [
+   "Das Schwert wirkt nur gegen Moderwesen besonders stark. Gegen die anderen Undergarden-Mobs schlägt das Vergessene Schwert ({{undergarden/forgotten_arms}}) mit dem 1,5fachen zu."
+  ],
+  "en": [
+   "The sword is only extra strong against rotspawn. Against the other Undergarden mobs the Forgotten Sword ({{undergarden/forgotten_arms}}) hits for 1.5 times."
+  ],
+  "sources": [
+   "/home/claude/kw/srv/mods/The_Undergarden-1.21.1-0.9.6.jar lang tooltip.undergarden.utherium_weapon, forgotten_weapon"
+  ]
+ },
+ "denizen": {
+  "de": [
+   "Einwohnercamps gibt es nur im Biom Tiefen, nicht in den Infizierten Tiefen. In den Truhen liegen auch Fleisch, Leder, Knochen und Uralte Wurzeln."
+  ],
+  "en": [
+   "Denizen camps only generate in the Depths biome, not in the Infected Depths. Their chests also hold meat, leather, bones and Ancient Roots."
+  ],
+  "sources": [
+   "/home/claude/kw/srv/mods/The_Undergarden-1.21.1-0.9.6.jar data/undergarden/tags/worldgen/biome/has_structure/denizen_camp.json",
+   "/home/claude/kw/srv/mods/The_Undergarden-1.21.1-0.9.6.jar loot_table/chests/denizen_camp.json"
+  ]
+ },
+ "u_blisterbomb": {
+  "de": [
+   "Blasenbeerbüsche wachsen nur in den Smogtürmen. Verrottete Blasenbeeren kannst du auch direkt mit der Schleuder verschießen."
+  ],
+  "en": [
+   "Blisterberry bushes only grow in the Smog Spires. You can also fire rotten blisterberries straight from the slingshot."
+  ],
+  "sources": [
+   "/home/claude/kw/srv/mods/The_Undergarden-1.21.1-0.9.6.jar worldgen/biome/smog_spires.json",
+   "/home/claude/kw/srv/mods/The_Undergarden-1.21.1-0.9.6.jar loot_table/blocks/blisterberry_bush.json",
+   "/home/claude/kw/srv/mods/The_Undergarden-1.21.1-0.9.6.jar advancement/undergarden/shoot_slingshot_rotten_blisterberry.json"
+  ]
+ },
+ "u_ditchbulb": {
+  "de": [
+   "Grabenknollen wachsen in den meisten Biomen, sogar im Biom Tiefen. Keine gibt es in den kalten Biomen, im Indigopilzmoor, in den Infizierten Tiefen, im Puffpilzwald und im Rogdoriumhain."
+  ],
+  "en": [
+   "Ditchbulbs grow in most biomes, even in the Depths biome. There are none in the cold biomes, the Indigo Mushroom Bog, the Infected Depths, the Puff Mushroom Forest and the Rogdorium Grove."
+  ],
+  "sources": [
+   "/home/claude/kw/srv/mods/The_Undergarden-1.21.1-0.9.6.jar worldgen/biome/*.json (ditchbulb_patch)",
+   "undergarden:torch_ditchbulb_paste"
+  ]
+ },
+ "u_sniper": {
+  "de": [
+   "Es zählt nur ein Tiefkieselstein als Geschoss, kein Schleimball und keine Beere. 20 Schaden sind 10 Herzen in einem Treffer."
+  ],
+  "en": [
+   "Only a depthrock pebble counts as the projectile, no goo ball or berry. 20 damage is 10 hearts in one hit."
+  ],
+  "sources": [
+   "/home/claude/kw/srv/mods/The_Undergarden-1.21.1-0.9.6.jar advancement/undergarden/slingshot_20_damage.json (direct_entity depthrock_pebble, dealt min 20)"
+  ],
+  "client": [
+   "What raises slingshot pebble damage"
+  ]
+ },
+ "u_cloggrum_armor": {
+  "de": [
+   "Für den Fortschritt reicht es, alle vier Teile im Inventar zu haben. Rüstung und Schild kosten zusammen 30 Barren.",
+   "Mit jeder Stufe wird es mehr: In Stufe 4 haben feindliche Mobs schon 120 Prozent mehr Leben."
+  ],
+  "en": [
+   "For the advancement it is enough to have all four pieces in your inventory. Armor and shield cost 30 ingots together.",
+   "It grows with every stage: in stage 4 hostile mobs already have 120 percent more health."
+  ],
+  "sources": [
+   "/home/claude/kw/srv/mods/The_Undergarden-1.21.1-0.9.6.jar advancement/undergarden/cloggrum_armor.json (inventory_changed)",
+   "undergarden:cloggrum_helmet, chestplate, leggings, boots, shield (dump)",
+   "srv/config/kronwerke-common.toml ([mobs])"
+  ]
+ },
+ "u_all_biomes": {
+  "de": [
+   "Die drei Seen sind Alter, Toter und Eisiger See. Vier Biome liegen unter dem Furchtfels: Tiefen, Infizierte Tiefen, Puffpilzwald und Rogdoriumhain, und drei davon treiben die Infektion hoch.",
+   "Den Kompass der Natur bekommst du in {{exploration/e_compass}}."
+  ],
+  "en": [
+   "The three seas are the Ancient, Dead and Icy Sea. Four biomes lie below the dreadrock: Depths, Infected Depths, Puff Mushroom Forest and Rogdorium Grove, and three of them raise the infection.",
+   "You get the Nature's Compass in {{exploration/e_compass}}."
+  ],
+  "sources": [
+   "/home/claude/kw/srv/mods/The_Undergarden-1.21.1-0.9.6.jar worldgen/biome (20 files)",
+   "/home/claude/kw/srv/mods/The_Undergarden-1.21.1-0.9.6.jar data_maps/worldgen/biome/biome_lethality.json"
+  ],
+  "client": [
+   "Nature's Compass searching Undergarden biomes"
+  ]
+ },
+ "u_battleaxe": {
+  "de": [
+   "Verschollene spawnen nur in den Katakomben ({{undergarden/catacombs}}). Sie haben keine eigene Beute, nur was sie tragen."
+  ],
+  "en": [
+   "The Forgotten only spawn in catacombs ({{undergarden/catacombs}}). They have no loot of their own, only what they carry."
+  ],
+  "sources": [
+   "/home/claude/kw/srv/mods/The_Undergarden-1.21.1-0.9.6.jar worldgen/structure/catacombs.json (spawn_overrides)",
+   "/home/claude/kw/srv/mods/The_Undergarden-1.21.1-0.9.6.jar loot_table/entities/forgotten.json (empty)",
+   "/home/claude/kw/srv/mods/The_Undergarden-1.21.1-0.9.6.jar lang advancement.undergarden.cloggrum_battleaxe.desc"
+  ],
+  "client": [
+   "How often a Forgotten carries and drops a battleaxe"
+  ]
+ },
+ "u_forgotten_all": {
+  "de": [
+   "Alle sechs müssen **gleichzeitig im Inventar** sein. Das sind sechs Vorlagen und sechs Vergessene Barren; kopier die Vorlage mit 7 Diamanten und einem Tiefstein."
+  ],
+  "en": [
+   "All six must be **in your inventory at the same time**. That is six templates and six Forgotten Ingots; copy the template with 7 diamonds and a depthrock."
+  ],
+  "sources": [
+   "/home/claude/kw/srv/mods/The_Undergarden-1.21.1-0.9.6.jar advancement/undergarden/forgotten_tools.json",
+   "undergarden:forgotten_upgrade_smithing_template"
+  ]
+ },
+ "u_denizen_mask": {
+  "de": [
+   "Die Maske fällt nur, wenn du den Einwohner selbst tötest. In den Truhen der Camps liegt sie etwa in jeder vierten bis fünften."
+  ],
+  "en": [
+   "The mask only drops when you kill the denizen yourself. It is in about one camp chest in four or five."
+  ],
+  "sources": [
+   "/home/claude/kw/srv/mods/The_Undergarden-1.21.1-0.9.6.jar loot_table/entities/denizen.json (killed_by_player, 0.05 with enchanted bonus)",
+   "/home/claude/kw/srv/mods/The_Undergarden-1.21.1-0.9.6.jar loot_table/chests/denizen_camp.json (mask weight 3 of 13)"
+  ]
+ },
+ "collection": {
+  "de": [
+   "Kohle gibt es hier in 30 Adern pro Chunk von Y 0 bis zur Decke. Das Stahlziel wächst wie jedes Obeliskenziel mit der Zahl der aktiven Spieler.",
+   "Den Rogdoriumblock machst du aus 9 Rogdorium, das nur in den Tiefen liegt."
+  ],
+  "en": [
+   "Coal comes in 30 veins per chunk here, from Y 0 to the ceiling. Like every obelisk goal, the steel goal grows with the number of active players.",
+   "The block of rogdorium takes 9 rogdorium, which only occurs in the Depths."
+  ],
+  "sources": [
+   "/home/claude/kw/srv/mods/The_Undergarden-1.21.1-0.9.6.jar worldgen/placed_feature/coal_ore.json",
+   "config/kronwerke/goals.json (stage3 #c:ingots/steel, scale)",
+   "undergarden:rogdorium_block"
+  ]
+ }
+}

@@ -1,0 +1,636 @@
+{
+ "deep_learner": {
+  "de": [
+   "Die [[create:electron_tube]] baust du aus Poliertem Rosenquarz und einem Eisenblech ({{create_brass/electron_tube}}). Auf Kronwerke ersetzt sie die Glasscheibe des Originalrezepts.",
+   "Der Learner zählt deine Kills, solange er in den Inventarreihen samt Hotbar, in der Nebenhand oder im Curio-Slot steckt. In einem Rucksack zählt er nicht. Trägst du mehrere Learner, lernen die Modelle in allen gleichzeitig."
+  ],
+  "en": [
+   "The [[create:electron_tube]] is made from Polished Rose Quartz and an iron sheet ({{create_brass/electron_tube}}). On Kronwerke it replaces the glass pane of the original recipe.",
+   "The learner counts your kills while it sits in your inventory rows including the hotbar, in the offhand or in its curio slot. Inside a backpack it does not count. If you carry several learners, the models in all of them learn at once."
+  ],
+  "sources": [
+   "hostilenetworks:deep_learner (dump)",
+   "kubejs/server_scripts/kronwerke/links.js (swap glass pane to create:electron_tube)",
+   "create:crafting/materials/electron_tube",
+   "/home/claude/kw/srv/mods/HostileNeuralNetworks-1.21.1-6.5.1.jar HostileEvents.forEachLearner (inventory items, offhand, CuriosCompat)"
+  ]
+ },
+ "framework": {
+  "de": [
+   "Ein Rezept gibt genau ein [[hostilenetworks:blank_data_model]]. Beim Ausrichten auf einen Mob wird das Gerüst zum Datenmodell, also brauchst du für jede Mobart ein eigenes.",
+   "[[minecraft:smooth_stone]] bekommst du, wenn du normalen Stein ein zweites Mal im Ofen schmilzt. Für {{hostile_networks/models_more}} brauchst du später vier Gerüste auf einmal."
+  ],
+  "en": [
+   "One recipe gives exactly one [[hostilenetworks:blank_data_model]]. Attuning it to a mob turns the framework into the data model, so every mob type needs its own.",
+   "You get [[minecraft:smooth_stone]] by smelting plain stone a second time. For {{hostile_networks/models_more}} you will need four frameworks at once."
+  ],
+  "sources": [
+   "hostilenetworks:framework (dump)",
+   "/home/claude/kw/srv/mods/HostileNeuralNetworks-1.21.1-6.5.1.jar HostileEvents.completeAttunement"
+  ]
+ },
+ "learner_gui": {
+  "de": [
+   "Gezählt wird der Spieler, dem das Spiel den Kill zuschreibt. Ein Mob, den du kurz vorher getroffen hast, zählt also auch, wenn ihn danach Lava oder ein Sturz erledigt.",
+   "Das HUD sitzt laut Konfiguration oben links und lässt sich in der Client-Konfiguration verschieben. Für den Learner im Curio-Slot gibt es in der Steuerung eine eigene Taste, Open Deep Learner Curio."
+  ],
+  "en": [
+   "What counts is the player the game credits with the kill. A mob you hit shortly before therefore also counts if lava or a fall finishes it off.",
+   "By config the HUD sits in the top left; the client config can move it. For the learner in the curio slot the controls have a key of its own, Open Deep Learner Curio."
+  ],
+  "sources": [
+   "/home/claude/kw/srv/mods/HostileNeuralNetworks-1.21.1-6.5.1.jar HostileEvents.kill (LivingEntity.getKillCredit)",
+   "srv/config/hostilenetworks.cfg (Deep Learner HUD Anchor Point top_left)",
+   "/home/claude/kw/srv/mods/HostileNeuralNetworks-1.21.1-6.5.1.jar assets/hostilenetworks/lang/en_us.json (key.hostilenetworks.open_deep_learner)"
+  ],
+  "client": [
+   "Kill credit after lava or fall damage shortly after a player hit",
+   "Default binding of the Open Deep Learner Curio key"
+  ]
+ },
+ "attune": {
+  "de": [
+   "Viele Modelle fassen mehrere Mobs zusammen: Piglins füllen das Modell des Zombifizierten Piglins, Zoglins das Hoglin-Modell und Höhlenspinnen das Spinnen-Modell. Mit Shift zeigt der Tooltip des Modells alle Varianten.",
+   "Ein leichter Einstieg ist ein friedlicher Mob, aber Kuh und Schaf sind mit 64 FE/t später nur wenig wert. Welche Modelle sich lohnen, steht in {{hostile_networks/models_overview}}."
+  ],
+  "en": [
+   "Many models group several mobs: piglins fill the Zombified Piglin model, zoglins the Hoglin model and cave spiders the Spider model. Holding Shift, the model's tooltip lists every variant.",
+   "A peaceful mob is an easy start, but cow and sheep at 64 FE/t are worth little later on. Which models pay off is in {{hostile_networks/models_overview}}."
+  ],
+  "sources": [
+   "/home/claude/kw/srv/mods/HostileNeuralNetworks-1.21.1-6.5.1.jar data/hostilenetworks/data_models (zombified_piglin, hoglin, spider variants)",
+   "/home/claude/kw/srv/mods/HostileNeuralNetworks-1.21.1-6.5.1.jar lang hostilenetworks.info.subtypes"
+  ]
+ },
+ "tier_basic": {
+  "de": [
+   "**Die Quest zählt nur normale Zombies.** Wüstenzombies und Dorfbewohnerzombies füllen zwar das Modell, aber nicht diese Quest. Umgekehrt zählt die Quest auch Kills ohne Learner, das Modell nicht.",
+   "Eigene Datenzahlen haben drei Modelle: Enderdrache, Mimic und der Große Wächter."
+  ],
+  "en": [
+   "**The quest only counts plain zombies.** Husks and zombie villagers fill the model but not this quest. The other way round, the quest also counts kills without the learner, the model does not.",
+   "Three models have their own data numbers: the Ender Dragon, the Mimic and the Elder Guardian."
+  ],
+  "sources": [
+   "ftb-quests KillTask.match (exact entity id)",
+   "/home/claude/kw/srv/mods/HostileNeuralNetworks-1.21.1-6.5.1.jar data/hostilenetworks/data_models/zombie.json (variants)",
+   "/home/claude/kw/srv/mods/HostileNeuralNetworks-1.21.1-6.5.1.jar data_models/ender_dragon.json, elder_guardian.json, artifacts/mimic.json (data_gained)",
+   "/home/claude/kw/srv/mods/HostileNeuralNetworks-1.21.1-6.5.1.jar data/hostilenetworks/model_tiers/faulty.json, basic.json"
+  ]
+ },
+ "tier_advanced": {
+  "de": [
+   "Ab Basic nimmt die Kammer das Modell schon an, aber im normalen Betrieb lernt es dort nichts mehr dazu. Lass es deshalb im Learner, bis es Self Aware ist.",
+   "Die Quest zählt nur normale Zombies. Hast du das Modell vorher mit Wüstenzombies gefüttert, ist es schon weiter, als die Quest anzeigt."
+  ],
+  "en": [
+   "From Basic on the chamber accepts the model, but in normal operation it learns nothing more there. So keep it in the learner until it is Self Aware.",
+   "The quest only counts plain zombies. If you fed the model husks before, it is further along than the quest shows."
+  ],
+  "sources": [
+   "/home/claude/kw/srv/mods/HostileNeuralNetworks-1.21.1-6.5.1.jar data/hostilenetworks/model_tiers/advanced.json",
+   "/home/claude/kw/srv/mods/HostileNeuralNetworks-1.21.1-6.5.1.jar lang hostilenetworks.gui.mode.inference.desc2",
+   "ftb-quests KillTask.match"
+  ]
+ },
+ "tier_superior": {
+  "de": [
+   "Die Monsterspawner in Verliesen spawnen Zombies, Skelette oder Spinnen. Die Spawner in den Minen von YUNG's Better Mineshafts spawnen dagegen nur Höhlenspinnen, die gehören ins Spinnen-Modell.",
+   "Plünderung bringt dem Modell keine Daten mehr, nur dir mehr Beute."
+  ],
+  "en": [
+   "Monster spawners in dungeons spawn zombies, skeletons or spiders. The spawners in YUNG's Better Mineshafts only spawn cave spiders, which belong to the Spider model.",
+   "Looting gives the model no extra data, only you more loot."
+  ],
+  "sources": [
+   "YungsBetterMineshafts-1.21.1-NeoForge-5.1.1.jar SideRoomDungeon (EntityType.CAVE_SPIDER)",
+   "/home/claude/kw/srv/mods/HostileNeuralNetworks-1.21.1-6.5.1.jar data/hostilenetworks/model_tiers/superior.json"
+  ]
+ },
+ "tier_self_aware": {
+  "de": [
+   "Ein Self-Aware-Modell lernt nichts mehr dazu. Nimm es aus dem Learner und leg eines der zwei [[hostilenetworks:blank_data_model]] aus der Belohnung auf die nächste Mobart ein.",
+   "Insgesamt sind es 98 Kills, für den Mimic 126 und für den Enderdrachen 36."
+  ],
+  "en": [
+   "A Self Aware model learns nothing more. Take it out of the learner and attune one of the two reward [[hostilenetworks:blank_data_model]] to the next mob type.",
+   "That is 98 kills in total, 126 for the Mimic and 36 for the Ender Dragon."
+  ],
+  "sources": [
+   "/home/claude/kw/srv/mods/HostileNeuralNetworks-1.21.1-6.5.1.jar data/hostilenetworks/model_tiers/self_aware.json",
+   "/home/claude/kw/srv/mods/HostileNeuralNetworks-1.21.1-6.5.1.jar data_models/artifacts/mimic.json, ender_dragon.json",
+   "/home/claude/kw/srv/mods/HostileNeuralNetworks-1.21.1-6.5.1.jar lang hostilenetworks.gui.max_tier"
+  ]
+ },
+ "accuracy": {
+  "de": [
+   "Die Genauigkeit gilt nur für die Mob-Vorhersage. Die Generalisierte Vorhersage aus dem ersten Ausgang kommt bei jeder Simulation, egal wie gut das Modell ist.",
+   "Weil die Genauigkeit stufenlos steigt, liegt ein Modell auf halbem Weg von Advanced zu Superior bei etwa 44 Prozent."
+  ],
+  "en": [
+   "Accuracy only applies to the mob prediction. The generalized prediction from the first output comes with every simulation, however good the model is.",
+   "Because accuracy rises continuously, a model halfway from Advanced to Superior sits at about 44 percent."
+  ],
+  "sources": [
+   "/home/claude/kw/srv/mods/HostileNeuralNetworks-1.21.1-6.5.1.jar SimChamberTileEntity.serverTick (base drop always, rollPredictions)",
+   "/home/claude/kw/srv/mods/HostileNeuralNetworks-1.21.1-6.5.1.jar DataModelInstance.getAccuracy",
+   "srv/config/hostilenetworks.cfg (Continuous Accuracy true)"
+  ]
+ },
+ "models_overview": {
+  "de": [
+   "Was die Liste weglässt: Kaninchen, Eisbär, Pilzkuh und Schneegolem kosten 64 FE/t, Tintenfisch, Leuchttintenfisch und Kabeljau nur 32 FE/t. Die Fledermaus (64 FE/t) gibt Fledermausflügel von Reliquary.",
+   "Der Große Wächter hat wie der Drache eigene Datenzahlen und braucht nur 36 Kills bis Self Aware. Die Modelle für Thermal und den Twilight Forest sind im Mod enthalten, aber ohne diese Mods im Pack nicht aktiv."
+  ],
+  "en": [
+   "What the list leaves out: rabbit, polar bear, mooshroom and snow golem cost 64 FE/t, squid, glow squid and cod only 32 FE/t. The bat (64 FE/t) gives Reliquary bat wings.",
+   "Like the dragon, the Elder Guardian has its own data numbers and needs only 36 kills to Self Aware. The models for Thermal and the Twilight Forest ship with the mod but are inactive without those mods in the pack."
+  ],
+  "sources": [
+   "/home/claude/kw/srv/mods/HostileNeuralNetworks-1.21.1-6.5.1.jar data/hostilenetworks/data_models/*.json (sim_cost)",
+   "/home/claude/kw/srv/mods/HostileNeuralNetworks-1.21.1-6.5.1.jar data_models/elder_guardian.json (data_gained)",
+   "/home/claude/kw/srv/mods/HostileNeuralNetworks-1.21.1-6.5.1.jar data_models/thermal, twilightforest (mod_loaded conditions)",
+   "srv/mods (no thermal, no twilightforest)"
+  ]
+ },
+ "wither_skeleton": {
+  "de": [
+   "Die 18 Kills bringen ein frisches Modell genau auf Advanced. Die Grundvorhersage ist die [[hostilenetworks:nether_prediction]], die in Stufe 3 an der Werkbank Gold und Lohenruten gibt ({{hostile_networks/generalized}}).",
+   "Im Fabrikator stehen auch 2 Verwitterte Rippen von Reliquary zur Wahl. Die Festung findest du über {{nether/fortress}}, die Schädel brauchst du für {{nether/f_wither}}."
+  ],
+  "en": [
+   "The 18 kills bring a fresh model exactly to Advanced. Its base prediction is the [[hostilenetworks:nether_prediction]], which gives gold and blaze rods at the crafting table in stage 3 ({{hostile_networks/generalized}}).",
+   "The fabricator also offers 2 Reliquary withered ribs. Find the fortress via {{nether/fortress}}; you need the skulls for {{nether/f_wither}}."
+  ],
+  "sources": [
+   "/home/claude/kw/srv/mods/HostileNeuralNetworks-1.21.1-6.5.1.jar data_models/wither_skeleton.json",
+   "hostilenetworks:living_matter/hellish/blaze_rod, gold_ingot"
+  ]
+ },
+ "blaze": {
+  "de": [
+   "Lohenstaub brauchst du für Messing im beheizten Mixer: 2 Kupfer, 1 Zink und 1 [[minecraft:blaze_powder]] ergeben einen Barren. Überhitzt geht es ohne Staub und gibt 2 Barren ({{create_brass/brass_mixing}}).",
+   "Das Messingziel am Obelisken wächst mit der Zahl der aktiven Spieler. In Stufe 3 gibt eine Nether-Vorhersage mit Schwarzpulver außerdem 2 Lohenstaub. Im Fabrikator sind auch 2 Geschmolzene Kerne von Reliquary wählbar."
+  ],
+  "en": [
+   "You need blaze powder for brass in the heated mixer: 2 copper, 1 zinc and 1 [[minecraft:blaze_powder]] make one ingot. Superheated it works without powder and gives 2 ingots ({{create_brass/brass_mixing}}).",
+   "The brass goal at the obelisk grows with the number of active players. In stage 3 a nether prediction with gunpowder also gives 2 blaze powder. The fabricator also offers 2 Reliquary molten cores."
+  ],
+  "sources": [
+   "kronwerke:create/brass_ingot_heated, kronwerke:create/brass_ingot_superheated",
+   "config/kronwerke/goals.json (stage2 create:brass_ingot, scale)",
+   "hostilenetworks:living_matter/hellish/blaze_powder",
+   "/home/claude/kw/srv/mods/HostileNeuralNetworks-1.21.1-6.5.1.jar data_models/blaze.json"
+  ]
+ },
+ "enderman": {
+  "de": [
+   "Die 18 Kills bringen das Modell auf Advanced. Im Fabrikator gibt es neben Perlen und dem Endkristall auch 4 Endertränen von EvilCraft oder 2 Nebelherzen von Reliquary.",
+   "Die [[hostilenetworks:end_prediction]] ist bis Stufe 4 gesperrt. Ein gesperrtes Item darfst du tragen und lagern, nur nicht in der Hand halten, also sammle die Vorhersagen ruhig schon."
+  ],
+  "en": [
+   "The 18 kills bring the model to Advanced. Besides pearls and the end crystal the fabricator also offers 4 EvilCraft ender tears or 2 Reliquary nebulous hearts.",
+   "The [[hostilenetworks:end_prediction]] is locked until stage 4. You may carry and store a locked item, just not hold it, so collect the predictions anyway."
+  ],
+  "sources": [
+   "/home/claude/kw/srv/mods/HostileNeuralNetworks-1.21.1-6.5.1.jar data_models/enderman.json",
+   "kubejs/data/kronwerke/chapters/stages/stage4.json (hostilenetworks:end_prediction)"
+  ],
+  "client": [
+   "Whether a locked end prediction can sit in the chamber's output slot and be piped out"
+  ]
+ },
+ "ghast": {
+  "de": [
+   "Schon in Stufe 3 ergeben 2 [[hostilenetworks:nether_prediction]] mit einem Spinnenauge und Zucker an der Werkbank 3 Ghast-Tränen, ganz ohne Fabrikator.",
+   "Die Grundvorhersage ist die Nether-Vorhersage, nicht die der Oberwelt."
+  ],
+  "en": [
+   "Already in stage 3, 2 [[hostilenetworks:nether_prediction]] with a spider eye and sugar make 3 ghast tears at the crafting table, no fabricator needed.",
+   "Its base prediction is the nether prediction, not the overworld one."
+  ],
+  "sources": [
+   "hostilenetworks:living_matter/hellish/ghast_tear",
+   "/home/claude/kw/srv/mods/HostileNeuralNetworks-1.21.1-6.5.1.jar data_models/ghast.json"
+  ]
+ },
+ "witch": {
+  "de": [
+   "Zwölf Kills bringen das Modell auf Basic und ein Stück weiter, Advanced braucht 18. Im Fabrikator ist auch ein Hexenhut von Reliquary wählbar, 2 Stück pro Vorhersage.",
+   "Die Grundvorhersage ist die [[hostilenetworks:overworld_prediction]]."
+  ],
+  "en": [
+   "Twelve kills take the model to Basic and a bit beyond; Advanced needs 18. The fabricator also offers Reliquary witch hats, 2 per prediction.",
+   "Its base prediction is the [[hostilenetworks:overworld_prediction]]."
+  ],
+  "sources": [
+   "/home/claude/kw/srv/mods/HostileNeuralNetworks-1.21.1-6.5.1.jar data_models/witch.json",
+   "/home/claude/kw/srv/mods/HostileNeuralNetworks-1.21.1-6.5.1.jar model_tiers/basic.json"
+  ]
+ },
+ "wilden": {
+  "de": [
+   "**Die Quest zählt nur den Wilden Jäger.** Pirscher und Verteidiger füllen das Modell, aber nicht diese Quest.",
+   "Die Grundvorhersage ist die [[hostilenetworks:overworld_prediction]]."
+  ],
+  "en": [
+   "**The quest only counts the Wilden Hunter.** Stalkers and defenders fill the model but not this quest.",
+   "Its base prediction is the [[hostilenetworks:overworld_prediction]]."
+  ],
+  "sources": [
+   "ftb-quests KillTask.match",
+   "/home/claude/kw/srv/mods/HostileNeuralNetworks-1.21.1-6.5.1.jar data_models/ars_nouveau/wilden_mobs.json (entity wilden_hunter, variants stalker, guardian)"
+  ]
+ },
+ "mimic": {
+  "de": [
+   "Mimics stehen nicht in Verliesen, sondern in den Höhlenlagern von Artifacts unter Tage, zwischen Y -60 und Y 40. Etwa jedes zehnte Lager hat statt einer Truhe einen Mimic ({{exploration/e_campsite}}).",
+   "Die Quest will nur einen Kill. Für das volle Modell brauchst du 126 Mimics, also viele Lager. Die Grundvorhersage ist die Ender-Vorhersage, gesperrt bis Stufe 4."
+  ],
+  "en": [
+   "Mimics are not found in dungeons but in Artifacts' underground campsites, between Y -60 and Y 40. About one campsite in ten has a mimic instead of a chest ({{exploration/e_campsite}}).",
+   "The quest wants only one kill. A full model needs 126 mimics, so a lot of campsites. Its base prediction is the ender prediction, locked until stage 4."
+  ],
+  "sources": [
+   "srv/config/artifacts/general.toml ([campsite] mimicChance 0.1, minY -60, maxY 40)",
+   "artifacts-neoforge-13.2.5.jar data/artifacts/neoforge/biome_modifier (underground_campsite)",
+   "/home/claude/kw/srv/mods/HostileNeuralNetworks-1.21.1-6.5.1.jar data_models/artifacts/mimic.json"
+  ],
+  "client": [
+   "Whether right clicking a dormant mimic with a framework attunes it"
+  ]
+ },
+ "bosses": {
+  "de": [
+   "Beim Warden stehen im Fabrikator 2 Echo-Scherben, 4 Sculk-Katalysatoren, ein Herz der Tiefe, ein Wärterpanzer oder eine Warden-Ranke von Apothic Enchanting zur Wahl. Alle drei Bosse geben die Ender-Vorhersage.",
+   "Wither und Enderdrache haben auf Kronwerke 60 Prozent mehr Leben pro zusätzlichem Spieler in der Nähe, der Warden nicht. Für die Modelle zählt nur der Spieler, dem der Kill zugeschrieben wird. Die Kämpfe stehen in {{nether/f_wither}}, {{deeper_darker/warden}} und {{the_end/dragon}}."
+  ],
+  "en": [
+   "For the Warden the fabricator offers 2 echo shards, 4 sculk catalysts, a Heart of the Deep, a warden carapace or an Apothic Enchanting warden tendril. All three bosses give the ender prediction.",
+   "On Kronwerke the Wither and the Ender Dragon get 60 percent more health per extra player nearby, the Warden does not. For the models only the player credited with the kill counts. The fights are in {{nether/f_wither}}, {{deeper_darker/warden}} and {{the_end/dragon}}."
+  ],
+  "sources": [
+   "/home/claude/kw/srv/mods/HostileNeuralNetworks-1.21.1-6.5.1.jar data_models/warden.json, wither.json, ender_dragon.json",
+   "srv/config/kronwerke-common.toml ([bosses] scaling list, healthPerPlayer 0.6)",
+   "core: src/main/java/de/kronwerke/core/boss/BossScaling.java"
+  ]
+ },
+ "skeleton": {
+  "de": [
+   "Eiswanderer und Sumpfskelette füllen das Modell, **die Quest zählt aber nur normale Skelette**.",
+   "In Stufe 3 gibt eine [[hostilenetworks:overworld_prediction]] mit Knochenmehl an der Werkbank 22 Knochen, mit Stock und Feuerstein 12 Pfeile."
+  ],
+  "en": [
+   "Strays and bogged fill the model, **but the quest only counts plain skeletons**.",
+   "In stage 3 an [[hostilenetworks:overworld_prediction]] with bone meal gives 22 bones at the crafting table, with a stick and flint 12 arrows."
+  ],
+  "sources": [
+   "/home/claude/kw/srv/mods/HostileNeuralNetworks-1.21.1-6.5.1.jar data_models/skeleton.json (variants stray, bogged)",
+   "ftb-quests KillTask.match",
+   "hostilenetworks:living_matter/overworldian/bone, arrow"
+  ]
+ },
+ "creeper": {
+  "de": [
+   "Schon in Stufe 3 gibt eine [[hostilenetworks:overworld_prediction]] mit einem Stück Kohle an der Werkbank 16 Schwarzpulver, ganz ohne Fabrikator. Jede Creeper-Simulation liefert diese Vorhersage, auch ohne Glück bei der Genauigkeit."
+  ],
+  "en": [
+   "Already in stage 3 an [[hostilenetworks:overworld_prediction]] with a piece of coal gives 16 gunpowder at the crafting table, no fabricator needed. Every creeper simulation yields that prediction, whatever the accuracy roll."
+  ],
+  "sources": [
+   "/home/claude/kw/srv/mods/HostileNeuralNetworks-1.21.1-6.5.1.jar data_models/creeper.json (base_drop overworld_prediction)",
+   "hostilenetworks:living_matter/overworldian/gunpowder"
+  ]
+ },
+ "spider": {
+  "de": [
+   "**Die Quest zählt nur normale Spinnen**, Höhlenspinnen bringen nur dem Modell Daten. Die Spawner in den Minen von YUNG's Better Mineshafts spawnen Höhlenspinnen und sind damit eine gute Datenquelle.",
+   "In Stufe 3 ergeben 2 [[hostilenetworks:overworld_prediction]] mit Faden und Schleimball 4 Spinnweben."
+  ],
+  "en": [
+   "**The quest only counts plain spiders**; cave spiders only give the model data. The spawners in YUNG's Better Mineshafts spawn cave spiders and are a good data source.",
+   "In stage 3, 2 [[hostilenetworks:overworld_prediction]] with string and a slimeball make 4 cobwebs."
+  ],
+  "sources": [
+   "ftb-quests KillTask.match",
+   "/home/claude/kw/srv/mods/HostileNeuralNetworks-1.21.1-6.5.1.jar data_models/spider.json (variants cave_spider)",
+   "YungsBetterMineshafts SideRoomDungeon (CAVE_SPIDER)",
+   "hostilenetworks:living_matter/overworldian/cobweb"
+  ]
+ },
+ "slime": {
+  "de": [
+   "Jeder kleine Schleim aus einem geteilten Schleim ist ein eigener Kill, für das Modell und für die Quest. Ein großer Schleim bringt dir so mehrere Kills.",
+   "Magmawürfel haben ein eigenes Modell ({{hostile_networks/magma_cube}})."
+  ],
+  "en": [
+   "Every small slime from a split slime is a kill of its own, for the model and for the quest. One big slime thus gives you several kills.",
+   "Magma cubes have a model of their own ({{hostile_networks/magma_cube}})."
+  ],
+  "sources": [
+   "/home/claude/kw/srv/mods/HostileNeuralNetworks-1.21.1-6.5.1.jar data_models/slime.json",
+   "ftb-quests KillTask.match (minecraft:slime)"
+  ]
+ },
+ "drowned": {
+  "de": [
+   "Ertrunkene spawnen nachts in Flüssen und Ozeanen. Die Grundvorhersage ist die [[hostilenetworks:overworld_prediction]], vier davon mit Verrottetem Fleisch geben in Stufe 3 schon 8 Eisen."
+  ],
+  "en": [
+   "Drowned spawn at night in rivers and oceans. Its base prediction is the [[hostilenetworks:overworld_prediction]]; in stage 3 four of them with rotten flesh already give 8 iron."
+  ],
+  "sources": [
+   "/home/claude/kw/srv/mods/HostileNeuralNetworks-1.21.1-6.5.1.jar data_models/drowned.json",
+   "hostilenetworks:living_matter/overworldian/iron_ingot"
+  ]
+ },
+ "guardian": {
+  "de": [
+   "Das Modell des Großen Wächters kostet 1.024 FE/t und hat eigene Datenzahlen: 36 Kills bis Self Aware statt 98. Ein Monument hat aber nur wenige davon ({{exploration/e_yung_ocean}}).",
+   "In Stufe 3 gibt eine [[hostilenetworks:overworld_prediction]] mit Netherquarz 2 Prismarinscherben."
+  ],
+  "en": [
+   "The Elder Guardian model costs 1,024 FE/t and has its own data numbers: 36 kills to Self Aware instead of 98. A monument only has a few of them, though ({{exploration/e_yung_ocean}}).",
+   "In stage 3 an [[hostilenetworks:overworld_prediction]] with nether quartz gives 2 prismarine shards."
+  ],
+  "sources": [
+   "/home/claude/kw/srv/mods/HostileNeuralNetworks-1.21.1-6.5.1.jar data_models/elder_guardian.json, guardian.json",
+   "hostilenetworks:living_matter/overworldian/prismarine"
+  ]
+ },
+ "magma_cube": {
+  "de": [
+   "Wie beim Schleim zählt jeder kleine Würfel, der beim Teilen entsteht, als eigener Kill, auch für die Quest.",
+   "Die [[hostilenetworks:nether_prediction]] gibt in Stufe 3 mit Glowstonestaub und Eisen 6 Goldbarren."
+  ],
+  "en": [
+   "As with slimes, every small cube from a split counts as a kill of its own, for the quest too.",
+   "In stage 3 the [[hostilenetworks:nether_prediction]] with glowstone dust and iron gives 6 gold ingots."
+  ],
+  "sources": [
+   "/home/claude/kw/srv/mods/HostileNeuralNetworks-1.21.1-6.5.1.jar data_models/magma_cube.json",
+   "hostilenetworks:living_matter/hellish/gold_ingot"
+  ]
+ },
+ "breeze": {
+  "de": [
+   "Die Grundvorhersage ist die [[hostilenetworks:overworld_prediction]]. Böenruten gibt es sonst nur aus den Prüfungskammern, das Modell macht dich davon unabhängig."
+  ],
+  "en": [
+   "Its base prediction is the [[hostilenetworks:overworld_prediction]]. Otherwise breeze rods only come from trial chambers; the model makes you independent of them."
+  ],
+  "sources": [
+   "/home/claude/kw/srv/mods/HostileNeuralNetworks-1.21.1-6.5.1.jar data_models/breeze.json"
+  ]
+ },
+ "phantom": {
+  "de": [
+   "Die Membran steckt im Bergbau-Stabilisierungsmodul (Wyvern) von Draconic Evolution und in der Elytren-Vorlage von Silent Gear. Die Grundvorhersage ist die [[hostilenetworks:overworld_prediction]]."
+  ],
+  "en": [
+   "The membrane goes into Draconic Evolution's wyvern mining stability module and Silent Gear's elytra blueprint. Its base prediction is the [[hostilenetworks:overworld_prediction]]."
+  ],
+  "sources": [
+   "draconicevolution:modules/item_wyvern_mining_stability",
+   "silentgear:elytra_blueprint",
+   "/home/claude/kw/srv/mods/HostileNeuralNetworks-1.21.1-6.5.1.jar data_models/phantom.json"
+  ]
+ },
+ "evoker": {
+  "de": [
+   "Das Totem steckt im Wyvern-Untod-Modul von Draconic Evolution. Der Diener (Vindicator) hat ein eigenes Modell für 512 FE/t mit 8 Smaragden oder einer Eisenaxt pro Vorhersage.",
+   "Die Grundvorhersage ist die [[hostilenetworks:overworld_prediction]]."
+  ],
+  "en": [
+   "The totem goes into Draconic Evolution's wyvern undying module. The Vindicator has its own model at 512 FE/t with 8 emeralds or an iron axe per prediction.",
+   "Its base prediction is the [[hostilenetworks:overworld_prediction]]."
+  ],
+  "sources": [
+   "draconicevolution:modules/item_wyvern_undying",
+   "/home/claude/kw/srv/mods/HostileNeuralNetworks-1.21.1-6.5.1.jar data_models/evoker.json, vindicator.json"
+  ]
+ },
+ "sim_chamber": {
+  "de": [
+   "Den [[ars_nouveau:source_gem_block]] machst du aus 9 Quelljuwelen. Die Kammer ist ab Stufe 3 offen.",
+   "Mit einem Faulty-Modell startet sie nicht, sie meldet dann zu wenig Daten. Im normalen Betrieb lernt das Modell in der Kammer nichts dazu, trainier es vorher fertig."
+  ],
+  "en": [
+   "You make the [[ars_nouveau:source_gem_block]] from 9 source gems. The chamber opens in stage 3.",
+   "With a Faulty model it will not start and reports insufficient data. In normal operation the model learns nothing in the chamber, so finish training it first."
+  ],
+  "sources": [
+   "kronwerke:added/sim_chamber",
+   "kubejs/data/kronwerke/chapters/stages/stage3.json",
+   "/home/claude/kw/srv/mods/HostileNeuralNetworks-1.21.1-6.5.1.jar lang hostilenetworks.fail.faulty, gui.mode.inference.desc2",
+   "srv/config/hostilenetworks.cfg (Sim Chamber Power Cap 2000000)"
+  ]
+ },
+ "matrix": {
+  "de": [
+   "Die [[hostilenetworks:prediction_matrix]] ist wie die Kammer ab Stufe 3 offen. Meldet die Kammer Output buffers are occupied, musst du erst die Ausgänge leeren.",
+   "Leg die Matrizen stapelweise ein: Jede Simulation nimmt eine, und ohne Matrix steht die Kammer mit Missing input."
+  ],
+  "en": [
+   "The [[hostilenetworks:prediction_matrix]] opens in stage 3, like the chamber. If the chamber reports Output buffers are occupied, empty the outputs first.",
+   "Load matrices by the stack: every simulation takes one, and without a matrix the chamber stops with Missing input."
+  ],
+  "sources": [
+   "hostilenetworks:prediction_matrix (dump, 16 per craft)",
+   "kubejs/data/kronwerke/chapters/stages/stage3.json",
+   "/home/claude/kw/srv/mods/HostileNeuralNetworks-1.21.1-6.5.1.jar lang hostilenetworks.fail.output, fail.input"
+  ],
+  "client": [
+   "Which sides of the chamber accept pipes and hoppers"
+  ]
+ },
+ "clay": {
+  "de": [
+   "Noch zwei Wege zu Ton: Ein Mahlwerk von Create macht aus einem Tropfsteinblock einen Tonklumpen, und Botanias Manainfusion zerlegt einen Tonblock in 4 Klumpen.",
+   "Die Rechnung für das Rechenzentrum steht in {{hostile_networks/throughput}}."
+  ],
+  "en": [
+   "Two more ways to clay: a Create millstone turns a dripstone block into a clay ball, and Botania's mana infusion breaks a clay block into 4 balls.",
+   "The numbers for the data center are in {{hostile_networks/throughput}}."
+  ],
+  "sources": [
+   "create:splashing/sand",
+   "mekanism:enriching/conversion/mud/to_clay",
+   "mekanism:enriching/clay_ball",
+   "create:milling/dripstone_block",
+   "botania:mana_infusion/alchemy/clay_deconstruct"
+  ]
+ },
+ "simulation": {
+  "de": [
+   "Ein Zombie-Lauf kostet genau 30.720 FE (128 FE/t mal 240 Ticks). Die Generalisierte Vorhersage kommt bei jedem Lauf, auch wenn die Mob-Vorhersage ausbleibt.",
+   "Die Redstone-Einstellung hat drei Stufen: ignorieren, aus bei Signal, an bei Signal. Fehlt mitten im Lauf Strom, pausiert die Kammer und macht später weiter."
+  ],
+  "en": [
+   "A zombie run costs exactly 30,720 FE (128 FE/t times 240 ticks). The generalized prediction comes with every run, even when the mob prediction fails.",
+   "The redstone setting has three modes: ignored, off when powered, on when powered. If power runs out mid run, the chamber pauses and resumes later."
+  ],
+  "sources": [
+   "/home/claude/kw/srv/mods/HostileNeuralNetworks-1.21.1-6.5.1.jar SimChamberTileEntity$SimMode (300 ticks / 1.25 speed = 240)",
+   "/home/claude/kw/srv/mods/HostileNeuralNetworks-1.21.1-6.5.1.jar SimChamberTileEntity.serverTick",
+   "/home/claude/kw/srv/mods/HostileNeuralNetworks-1.21.1-6.5.1.jar lang hostilenetworks.gui.redstone.*, fail.energy_mid_cycle"
+  ]
+ },
+ "training": {
+  "de": [
+   "Auch das Training nimmt **kein Faulty-Modell** an. Ein Self-Aware-Modell kann nicht weiter trainiert werden, die Kammer meldet dann Model can no longer be trained.",
+   "Ein Zombie im Training zieht rund 154 FE/t, ein Witherskelett rund 922 FE/t."
+  ],
+  "en": [
+   "Training also **refuses a Faulty model**. A Self Aware model cannot be trained further; the chamber then reports Model can no longer be trained.",
+   "A zombie in training draws about 154 FE/t, a wither skeleton about 922 FE/t."
+  ],
+  "sources": [
+   "/home/claude/kw/srv/mods/HostileNeuralNetworks-1.21.1-6.5.1.jar SimChamberTileEntity.serverTick (canSim check before mode)",
+   "/home/claude/kw/srv/mods/HostileNeuralNetworks-1.21.1-6.5.1.jar SimChamberTileEntity$SimMode (TRAINING speed 1, cost 1.2)",
+   "srv/config/hostilenetworks.cfg (Sim Chamber Upgrades Model 1)",
+   "/home/claude/kw/srv/mods/HostileNeuralNetworks-1.21.1-6.5.1.jar lang hostilenetworks.fail.cannot_train"
+  ]
+ },
+ "generalized": {
+  "de": [
+   "Weitere Werkbankrezepte: Overworld Prediction mit Kohle gibt 16 Schwarzpulver, mit Rohem Schweinefleisch 16 Verrottetes Fleisch, mit Netherquarz 2 Prismarinscherben. Nether Prediction mit Schwarzpulver gibt 2 Lohenstaub, mit Sand 4 Seelensand, mit einem Roten Pilz 4 Netherwarzen.",
+   "Overworld und Nether Prediction sind ab Stufe 3 offen, die Ender Prediction erst ab Stufe 4. Das Stahlziel wächst wie jedes Obeliskenziel mit der Zahl der aktiven Spieler."
+  ],
+  "en": [
+   "More crafting table recipes: an overworld prediction with coal gives 16 gunpowder, with a raw porkchop 16 rotten flesh, with nether quartz 2 prismarine shards. A nether prediction with gunpowder gives 2 blaze powder, with sand 4 soul sand, with a red mushroom 4 nether wart.",
+   "Overworld and nether predictions open in stage 3, the ender prediction only in stage 4. Like every obelisk goal, the steel goal grows with the number of active players."
+  ],
+  "sources": [
+   "hostilenetworks:living_matter/* (dump)",
+   "kubejs/data/kronwerke/chapters/stages/stage3.json, stage4.json",
+   "config/kronwerke/goals.json (stage3 #c:ingots/steel, scale)"
+  ]
+ },
+ "power": {
+  "de": [
+   "Ein Wärmegenerator von Mekanism macht beim Verbrennen 200 J/t, das sind 80 FE/t. Zwei davon reichen also für eine Zombie-Kammer.",
+   "Für Flux Networks brauchst du einen {{flux_networks/plug}} am Generator und einen {{flux_networks/point}} an jeder Kammer."
+  ],
+  "en": [
+   "A Mekanism heat generator makes 200 J/t while burning fuel, which is 80 FE/t. So two of them cover one zombie chamber.",
+   "For Flux Networks you need a {{flux_networks/plug}} at the generator and a {{flux_networks/point}} at every chamber."
+  ],
+  "sources": [
+   "srv/config/Mekanism/generators.toml (heatGeneration 200)",
+   "srv/config/Mekanism/general.toml (feConversionRate 2.5)",
+   "fluxnetworks:flux_plug, flux_point (stage 3)"
+  ]
+ },
+ "scaling": {
+  "de": [
+   "Jede Kammer fasst genau ein Modell, und Modelle stapeln sich nicht. Zehn Kammern heißen zehn Modelle und damit zehnmal die Kills.",
+   "Der Puffer von 2 Millionen FE reicht einer Zombie-Kammer für etwa 65 Läufe, also gut 13 Minuten ohne Nachschub."
+  ],
+  "en": [
+   "Every chamber holds exactly one model, and models do not stack. Ten chambers mean ten models and ten times the kills.",
+   "The 2 million FE buffer lasts a zombie chamber about 65 runs, a good 13 minutes without supply."
+  ],
+  "sources": [
+   "/home/claude/kw/srv/mods/HostileNeuralNetworks-1.21.1-6.5.1.jar SimChamberTileEntity$SimItemHandler (slot 0 model)",
+   "srv/config/hostilenetworks.cfg (Sim Chamber Power Cap 2000000)"
+  ]
+ },
+ "loot_fab": {
+  "de": [
+   "Den [[ae2:engineering_processor]] presst der Inscriber von AE2 aus einem Gedruckten Konstruktionsschaltkreis (aus einem Diamanten), Redstone und Gedrucktem Silizium. Ein Stapel Drops kostet 15.360 FE.",
+   "Mob-Vorhersagen sind nicht gesperrt. Sammle sie in Stufe 3 aus der Kammer, dann hat der Fabrikator in Stufe 4 sofort Arbeit."
+  ],
+  "en": [
+   "The AE2 inscriber makes the [[ae2:engineering_processor]] from a printed engineering circuit (from a diamond), redstone and printed silicon. One stack of drops costs 15,360 FE.",
+   "Mob predictions are not locked. Collect them from the chamber in stage 3, and the fabricator has work the moment stage 4 opens."
+  ],
+  "sources": [
+   "kronwerke:added/loot_fabricator",
+   "ae2:inscriber/engineering_processor",
+   "srv/config/hostilenetworks.cfg (Loot Fab Power Cost 256)",
+   "/home/claude/kw/srv/mods/HostileNeuralNetworks-1.21.1-6.5.1.jar LootFabTileEntity (60 ticks)",
+   "kubejs/data/kronwerke/chapters/stages/stage2.json (hostilenetworks:prediction)"
+  ]
+ },
+ "drops": {
+  "de": [
+   "Dazu kommen einige Teile, die der Text nicht nennt: Zombie 2 Zombieherzen, Skelett 2 Rippenknochen, Lohe 2 Geschmolzene Kerne, Enderman 4 Endertränen oder 2 Nebelherzen. Das Wither-Skelett gibt wahlweise auch 2 Verwitterte Rippen.",
+   "Die Drops sind fest pro Modell, Plünderung oder die Genauigkeit ändern die Menge nicht."
+  ],
+  "en": [
+   "Some parts the text does not name: zombie 2 zombie hearts, skeleton 2 rib bones, blaze 2 molten cores, enderman 4 ender tears or 2 nebulous hearts. The wither skeleton also offers 2 withered ribs.",
+   "The drops are fixed per model; looting or accuracy do not change the amount."
+  ],
+  "sources": [
+   "/home/claude/kw/srv/mods/HostileNeuralNetworks-1.21.1-6.5.1.jar data_models/*.json (fabricator_drops)"
+  ]
+ },
+ "directive": {
+  "de": [
+   "Die [[hostilenetworks:fab_directive]] lässt sich schon in Stufe 3 bauen, nützt aber erst mit Fabrikator oder Rechenzentrum. Im Tooltip steht, wie viele Auswahlen sie gespeichert hat."
+  ],
+  "en": [
+   "The [[hostilenetworks:fab_directive]] can be crafted in stage 3 already but is only useful with a fabricator or data center. Its tooltip shows how many selections it holds."
+  ],
+  "sources": [
+   "hostilenetworks:fab_directive (dump)",
+   "kubejs/data/kronwerke/chapters/stages/stage3.json",
+   "/home/claude/kw/srv/mods/HostileNeuralNetworks-1.21.1-6.5.1.jar lang text.hostilenetworks.stored_selection"
+  ]
+ },
+ "data_center": {
+  "de": [
+   "Innen muss die Hülle **komplett leer** sein, sonst meldet der Controller Interior obstructed. Fehlt ein Block, nennt er die Position.",
+   "Nur Self-Aware-Modelle laufen darin. Den Netherstern bekommst du vom Wither, die Echo-Scherben aus Antiken Städten. Die Drops sammeln sich in 16 Ausgabefeldern."
+  ],
+  "en": [
+   "The inside of the shell must be **completely empty**, otherwise the controller reports Interior obstructed. If a block is missing, it names the position.",
+   "Only Self Aware models run in it. You get the nether star from the Wither, the echo shards from ancient cities. Drops collect in 16 output slots."
+  ],
+  "sources": [
+   "hostilenetworks:data_center (dump)",
+   "/home/claude/kw/srv/mods/HostileNeuralNetworks-1.21.1-6.5.1.jar lang hostilenetworks.jei.data_center.*, gui.data_center.shell_invalid.*, fail.not_self_aware",
+   "/home/claude/kw/srv/mods/HostileNeuralNetworks-1.21.1-6.5.1.jar DataCenterTileEntity (OUTPUT_SLOTS 16, RUNTIME_TICKS 300)",
+   "/home/claude/kw/srv/mods/HostileNeuralNetworks-1.21.1-6.5.1.jar data/hostilenetworks/tags/block/data_center_floor.json, data_center_wall.json"
+  ]
+ },
+ "io_port": {
+  "de": [
+   "Der Port zählt als Teil der Glaswand, der Controller erkennt ihn von selbst. Den aktuellen Modus zeigt Jade an, wenn du auf den Port schaust."
+  ],
+  "en": [
+   "The port counts as part of the glass wall; the controller detects it on its own. Jade shows the current mode when you look at the port."
+  ],
+  "sources": [
+   "/home/claude/kw/srv/mods/HostileNeuralNetworks-1.21.1-6.5.1.jar data/hostilenetworks/tags/block/data_center_wall.json",
+   "/home/claude/kw/srv/mods/HostileNeuralNetworks-1.21.1-6.5.1.jar lang hostilenetworks.jei.io_port.intro, config.jade.plugin_hostilenetworks.io_port_mode"
+  ]
+ },
+ "throughput": {
+  "de": [
+   "Ein Matrix-Rezept gibt 16 Stück, für 100 pro Minute brauchst du also rund sieben Rezepte. Sechs Glas werden zu 16 Glasscheiben, das sind etwa 10 Glas pro Minute.",
+   "Die Zahlen gelten nur für Self-Aware-Modelle, andere nimmt das Rechenzentrum nicht."
+  ],
+  "en": [
+   "One matrix recipe gives 16, so 100 per minute take about seven recipes. Six glass make 16 glass panes, which is about 10 glass per minute.",
+   "The numbers only hold for Self Aware models; the data center takes no others."
+  ],
+  "sources": [
+   "hostilenetworks:prediction_matrix (dump)",
+   "/home/claude/kw/srv/mods/HostileNeuralNetworks-1.21.1-6.5.1.jar DataCenterTileEntity (RUNTIME_TICKS 300, MODEL_SLOTS 25)",
+   "/home/claude/kw/srv/mods/HostileNeuralNetworks-1.21.1-6.5.1.jar lang hostilenetworks.fail.not_self_aware"
+  ]
+ },
+ "models_more": {
+  "de": [
+   "Die Belohnung ist ein zweiter [[hostilenetworks:deep_learner]]. Mit beiden im Inventar trainierst du acht Modelle gleichzeitig, denn jeder Learner bei dir zählt mit."
+  ],
+  "en": [
+   "The reward is a second [[hostilenetworks:deep_learner]]. With both in your inventory you train eight models at once, since every learner on you counts."
+  ],
+  "sources": [
+   "/home/claude/kw/srv/mods/HostileNeuralNetworks-1.21.1-6.5.1.jar HostileEvents.forEachLearner"
+  ]
+ }
+}

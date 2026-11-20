@@ -1,0 +1,524 @@
+{
+ "welcome": {
+  "de": [
+   "Jeder Kill würfelt **zweimal**: einmal mit Plünderung (2 Prozent ohne, 11 Prozent mit Plünderung III) und einmal mit Severing (32 Prozent bei Severing III, 52 Prozent bei Severing V). Blazes, Ghasts, Höhlenspinnen und Zombifizierte Piglins starten bei 3 Prozent.",
+   "Severing gibt es nur auf Schwertern und am Zaubertisch, bis Stufe V. Es zählen nur Kills durch dich, nicht durch Fallen oder Maschinen."
+  ],
+  "en": [
+   "Every kill rolls **twice**: once with Looting (2 percent without, 11 percent with Looting III) and once with Severing (32 percent at Severing III, 52 percent at Severing V). Blazes, ghasts, cave spiders and zombified piglins start at 3 percent.",
+   "Severing goes only on swords and comes from the enchanting table, up to level V. Only kills by you count, not by traps or machines."
+  ],
+  "sources": [
+   "reliquary-1.21.1-2.0.80.1570.jar: data/reliquary/loot_table/inject/entities/zombie.json (two pools, killed_by_player)",
+   "reliquary-1.21.1-2.0.80.1570.jar: data/reliquary/loot_table/inject/entities/blaze.json",
+   "reliquary-1.21.1-2.0.80.1570.jar: data/reliquary/loot_table/inject/entities/ghast.json",
+   "reliquary jar: data/reliquary/enchantment/severing.json",
+   "reliquary jar: data/minecraft/tags/enchantment/non_treasure.json"
+  ]
+ },
+ "rib_bone": {
+  "de": [
+   "Skelette und Streuner lassen es fallen. Sechs [[reliquary:rib_bone]] um Knochen, Feuerstein und Knochen ergeben das Skelett-Fragment für einen Mob Charm ({{reliquary/mob_charm}}).",
+   "Die [[reliquary:fertile_essence]] nimmt auf Kronwerke eine [[hexerei:mandrake_root]] statt grünem Farbstoff ({{hexerei/herb_mandrake}})."
+  ],
+  "en": [
+   "Skeletons and strays drop it. Six [[reliquary:rib_bone]] around bone, flint and bone make the skeleton fragment for a mob charm ({{reliquary/mob_charm}}).",
+   "On Kronwerke the [[reliquary:fertile_essence]] takes a [[hexerei:mandrake_root]] instead of green dye ({{hexerei/herb_mandrake}})."
+  ],
+  "sources": [
+   "reliquary-1.21.1-2.0.80.1570.jar: data/reliquary/loot_table/inject/entities/skeleton.json",
+   "reliquary-1.21.1-2.0.80.1570.jar: data/reliquary/loot_table/inject/entities/stray.json",
+   "reliquary:mob_charm_fragments/skeleton",
+   "reliquary:fertile_essence",
+   "kubejs/server_scripts/kronwerke/round.js"
+  ]
+ },
+ "slime_pearl": {
+  "de": [
+   "Nur normale Schleime lassen die [[reliquary:slime_pearl]] fallen, Magmawürfel geben stattdessen einen Molten Core. Kleine Schleime zählen auch, also lohnt eine Schleimfarm.",
+   "Du brauchst viele: Void Tear, Lantern, Coin, Fertile Essence, Infernal Claw, Kraken Shell Fragment und der Handgun nehmen je eine."
+  ],
+  "en": [
+   "Only plain slimes drop the [[reliquary:slime_pearl]]; magma cubes give a molten core instead. Small slimes count too, so a slime farm pays off.",
+   "You need many: void tear, lantern, coin, fertile essence, infernal claw, kraken shell fragment and the handgun take one each."
+  ],
+  "sources": [
+   "reliquary-1.21.1-2.0.80.1570.jar: data/reliquary/loot_table/inject/entities/slime.json",
+   "reliquary-1.21.1-2.0.80.1570.jar: data/reliquary/loot_table/inject/entities/magma_cube.json",
+   "recipes.json (uses of reliquary:slime_pearl)"
+  ],
+  "client": [
+   "that small slimes drop the pearl too"
+  ]
+ },
+ "catalyzing_gland": {
+  "de": [
+   "Creeper geben die Drüse mit 2 Prozent, Ghasts im Nether mit 3 Prozent. Ein Creeper, der vom Blitz geladen wurde, kann zusätzlich ein [[reliquary:eye_of_the_storm]] fallen lassen.",
+   "Das Eye of the Storm brauchst du in Stufe 3 für die Rending Gale und den Tome of Alkahestry, heb es auf."
+  ],
+  "en": [
+   "Creepers drop the gland at 2 percent, ghasts in the Nether at 3 percent. A creeper charged by lightning can also drop an [[reliquary:eye_of_the_storm]].",
+   "You need the Eye of the Storm in Steel Works for the Rending Gale and the Tome of Alkahestry, so keep it."
+  ],
+  "sources": [
+   "reliquary-1.21.1-2.0.80.1570.jar: data/reliquary/loot_table/inject/entities/creeper.json",
+   "reliquary-1.21.1-2.0.80.1570.jar: data/reliquary/loot_table/inject/entities/ghast.json",
+   "reliquary:rending_gale",
+   "reliquary:alkahestry_tome",
+   "kubejs/data/kronwerke/chapters/stages/stage3.json"
+  ]
+ },
+ "bat_wing": {
+  "de": [
+   "Der Flügel fällt mit 2 Prozent, nur wenn du die Fledermaus selbst triffst. Ein Schwert mit Severing in einer Höhle voller Fledermäuse geht am schnellsten.",
+   "Neben Coin, Ender Staff und Feather braucht ihn auch die Interdiction Torch, und die Rending Gale aus Stufe 3 will zwei."
+  ],
+  "en": [
+   "The wing drops at 2 percent, only when you hit the bat yourself. A sword with Severing in a cave full of bats is the quickest way.",
+   "Besides the coin, the ender staff and the feather, the interdiction torch needs one, and the Rending Gale of Steel Works wants two."
+  ],
+  "sources": [
+   "reliquary-1.21.1-2.0.80.1570.jar: data/reliquary/loot_table/inject/entities/bat.json",
+   "reliquary:interdiction_torch",
+   "reliquary:rending_gale"
+  ]
+ },
+ "molten_core": {
+  "de": [
+   "Blazes geben ihn mit 3 Prozent, Magmawürfel mit 2 Prozent, beide findest du im Nether ({{nether/welcome}}). Große Magmawürfel zerfallen in kleinere, jeder davon würfelt neu.",
+   "Er steckt auch in Interdiction Torch, Infernal Tear, Destruction Catalyst und dem Hunter's Handgun."
+  ],
+  "en": [
+   "Blazes drop it at 3 percent, magma cubes at 2 percent; both live in the Nether ({{nether/welcome}}). Big magma cubes split into smaller ones, each rolling again.",
+   "It also goes into the interdiction torch, infernal tear, destruction catalyst and the hunter's handgun."
+  ],
+  "sources": [
+   "reliquary-1.21.1-2.0.80.1570.jar: data/reliquary/loot_table/inject/entities/blaze.json",
+   "reliquary-1.21.1-2.0.80.1570.jar: data/reliquary/loot_table/inject/entities/magma_cube.json",
+   "reliquary:uncrafting/blaze_rod",
+   "recipes.json (uses of reliquary:molten_core)"
+  ],
+  "client": [
+   "that the small magma cubes roll the drop again"
+  ]
+ },
+ "nebulous_heart": {
+  "de": [
+   "Endermen lassen es mit 2 Prozent fallen. Sie erscheinen nachts in der Oberwelt, das End ist erst Stufe 4.",
+   "Plan mehr ein, als du denkst: Der Twilight Cloak allein braucht sechs, denn jedes seiner drei Crimson Cloth nimmt zwei."
+  ],
+  "en": [
+   "Endermen drop it at 2 percent. They spawn at night in the overworld; the End only opens in Star Works.",
+   "Plan for more than you think: the twilight cloak alone needs six, since each of its three crimson cloths takes two."
+  ],
+  "sources": [
+   "reliquary-1.21.1-2.0.80.1570.jar: data/reliquary/loot_table/inject/entities/enderman.json",
+   "reliquary:twilight_cloak",
+   "reliquary:crimson_cloth",
+   "docs/STAGES.md"
+  ]
+ },
+ "mob_charm": {
+  "de": [
+   "Das Rezept braucht **sechs** Fragmente derselben Art, nicht fünf. Für 14 Mobarten gibt es ein Fragmentrezept aus meist sechs ihrer Drops: Zombie, Skelett, Wither Skelett, Creeper, Spinne, Höhlenspinne, Enderman, Ghast, Blaze, Magmawürfel, Schleim, Hexe, Wächter und Zombifizierter Piglin.",
+   "Diese Arten lassen selbst keine Fragmente fallen, ebenso wenig Wüstenzombie, Ertrunkener, Zombiedorfbewohner und Streuner. Nur andere Monster, etwa aus anderen Mods, geben ein Fragment mit 1 zu 60, mit jeder Stufe Plünderung etwas öfter. Für Enderdrache und Wither gibt es keinen Charm."
+  ],
+  "en": [
+   "The recipe needs **six** fragments of one kind, not five. 14 mob kinds have a fragment recipe from usually six of their drops: zombie, skeleton, wither skeleton, creeper, spider, cave spider, enderman, ghast, blaze, magma cube, slime, witch, guardian and zombified piglin.",
+   "These kinds do not drop fragments themselves, and neither do husks, drowned, zombie villagers and strays. Only other monsters, for example from other mods, drop one at 1 in 60, a little more often with each level of Looting. There is no charm for the ender dragon and the wither."
+  ],
+  "sources": [
+   "reliquary:mob_charm (pattern FLF, FSF, F F)",
+   "reliquary jar: data/reliquary/recipe/mob_charm_fragments/",
+   "reliquary jar: reliquary/item/MobCharmRegistry.class (handleAddingFragmentDrops only for DYNAMICALLY_REGISTERED; static definitions incl. husk, drowned, zombie_villager, stray)",
+   "srv/config/reliquary-common.toml (mobCharmFragment, mobCharm.entityBlockList)"
+  ]
+ },
+ "pedestal": {
+  "de": [
+   "Ein Pedestal arbeitet erst, wenn es **eingeschaltet** ist: Rechtsklick mit leerer Hand auf den Schalter, ein Redstone-Signal oder Redstone in einem anderen Pedestal in bis zu 10 Blöcken.",
+   "Reichweiten: Charm 21, Schwert 5, Eimer und Schere je 4, Harvest Rod 4 Blöcke. Die Angel fängt in 80 Prozent der Würfe etwas, sammelt aber nichts ein, und ein Coin of Fortune im Pedestal legt eingesammelte Items in Kisten daneben."
+  ],
+  "en": [
+   "A pedestal only works once it is **switched on**: right click the switch with an empty hand, a redstone signal, or redstone in another pedestal within 10 blocks.",
+   "Ranges: charm 21, sword 5, bucket and shears 4 each, harvest rod 4 blocks. The fishing rod catches something on 80 percent of casts but picks nothing up, and a coin of fortune in a pedestal puts what it collects into containers beside it."
+  ],
+  "sources": [
+   "reliquary:pedestals/white_pedestal",
+   "reliquary:pedestals/passive/white_passive_pedestal",
+   "reliquary jar: assets/reliquary/lang/en_us.json (jei.reliquary.description.pedestal)",
+   "srv/config/reliquary-common.toml (blocks.pedestal, mobCharm.pedestalRange, harvestRod.pedestalRange)"
+  ]
+ },
+ "witherless_rose": {
+  "de": [
+   "Die vier Nethersterne kommen vom Wither, also lohnt sich die Rose vor allem für eine Gruppe, die ihn ohnehin bekämpft. Die [[hexerei:mandrake_root]] für die Fertile Essence erntest du in {{hexerei/herb_mandrake}}.",
+   "Für das Lilypad of Fertility gilt: Je näher die Pflanze am Blatt, desto öfter wächst sie, und mehrere Blätter nebeneinander verstärken sich."
+  ],
+  "en": [
+   "The four nether stars come from the wither, so the rose pays off mostly for a group that fights it anyway. Harvest the [[hexerei:mandrake_root]] for the fertile essence in {{hexerei/herb_mandrake}}.",
+   "For the lilypad of fertility: the closer a plant is to the pad, the more often it grows, and several pads next to each other add up."
+  ],
+  "sources": [
+   "reliquary:witherless_rose",
+   "reliquary:fertile_essence",
+   "kubejs/server_scripts/kronwerke/round.js",
+   "srv/config/reliquary-common.toml (blocks.fertileLilypad)",
+   "reliquary jar: assets/reliquary/lang/en_us.json (jei.reliquary.description.fertile_lily_pad)"
+  ]
+ },
+ "lantern": {
+  "de": [
+   "Die Laterne setzt nur normale [[minecraft:torch]], keine Seelenfackeln. Sie setzt sie nur dort, wo das Licht ganz auf 0 fällt, also genau an den Stellen, an denen Monster erscheinen können.",
+   "Trägst du einen Sojourner's Staff ({{reliquary/sojourner}}), nimmt sie die Fackeln zuerst aus dessen Vorrat."
+  ],
+  "en": [
+   "The lantern places only plain [[minecraft:torch]], no soul torches. It places them only where the light drops to 0, exactly where monsters can spawn.",
+   "If you carry a sojourner's staff ({{reliquary/sojourner}}), it takes the torches from its stock first."
+  ],
+  "sources": [
+   "reliquary:lantern_of_paranoia",
+   "srv/config/reliquary-common.toml (lanternOfParanoia: torches, minLightLevel 1, placementScanRadius 6)",
+   "reliquary jar: assets/reliquary/lang/en_us.json (jei.reliquary.description.lantern_of_paranoia)"
+  ]
+ },
+ "fortune_coin": {
+  "de": [
+   "In einem Pedestal ({{reliquary/pedestal}}) legt der eingeschaltete Coin alles in Kisten neben dem Pedestal.",
+   "Ausgeschaltet im Pedestal verhindert er dagegen, dass Spieler und andere Pedestals in seiner Reichweite Items aufheben. Er steckt auch im Hero's Medallion ({{reliquary/hero_medallion}})."
+  ],
+  "en": [
+   "In a pedestal ({{reliquary/pedestal}}) an active coin puts everything into containers beside the pedestal.",
+   "Switched off in a pedestal, it stops players and other pedestals in its range from picking items up. It also goes into the hero's medallion ({{reliquary/hero_medallion}})."
+  ],
+  "sources": [
+   "reliquary:fortune_coin",
+   "srv/config/reliquary-common.toml (fortuneCoin)",
+   "reliquary jar: assets/reliquary/lang/en_us.json (jei.reliquary.description.fortune_coin, pedestal)"
+  ]
+ },
+ "void_tear": {
+  "de": [
+   "Eine Träne hält bis zu zwei Milliarden Stück ihrer Sorte. Die [[minecraft:ghast_tear]] kommt von Ghasts im Nether.",
+   "Rechtsklick in die Luft legt fest, welche Sorte sie nimmt: die, von der du am meisten trägst. Mit Shift und Rechtsklick saugt sie danach alles Passende von selbst ein."
+  ],
+  "en": [
+   "One tear holds up to two billion items of its kind. The [[minecraft:ghast_tear]] comes from ghasts in the Nether.",
+   "A right click into the air sets which kind it takes: the one you carry most of. Shift and right click then makes it absorb all matching items by itself."
+  ],
+  "sources": [
+   "reliquary:void_tear",
+   "srv/config/reliquary-common.toml (voidTear.itemLimit 2000000000)",
+   "reliquary jar: assets/reliquary/lang/en_us.json (jei.reliquary.description.void_tear)"
+  ]
+ },
+ "altar": {
+  "de": [
+   "Auf Kronwerke nimmt der Altar einen [[occultism:spirit_attuned_gem]] statt der Redstone-Lampe ({{occultism/spirit_gem}}). Er arbeitet **nur tagsüber** und nur mit freiem Himmel über sich, nachts ruht er.",
+   "Mit 3 Redstone gestartet dauert ein Glowstone-Block 20 bis 25 Minuten."
+  ],
+  "en": [
+   "On Kronwerke the altar takes a [[occultism:spirit_attuned_gem]] instead of the redstone lamp ({{occultism/spirit_gem}}). It works **only during the day** and only with open sky above it; at night it rests.",
+   "Started with 3 redstone, one glowstone block takes 20 to 25 minutes."
+  ],
+  "sources": [
+   "reliquary:alkahestry_altar",
+   "kubejs/server_scripts/kronwerke/round.js",
+   "reliquary jar: reliquary/block/tile/AlkahestryAltarBlockEntity.class (serverTick returns if isNight or not canSeeSky)",
+   "srv/config/reliquary-common.toml (blocks.altar: redstoneCost 3, timeInMinutes 20, maximumTimeVarianceInMinutes 5)"
+  ]
+ },
+ "hero_medallion": {
+  "de": [
+   "Den [[reliquary:witch_hat]] lassen Hexen mit 2 Prozent fallen, für das Medaillon brauchst du zwei: einen direkt und einen in der Infernal Tear.",
+   "In einem Pedestal repariert das eingeschaltete Medaillon Gegenstände mit Reparatur in Pedestals im Umkreis von 5 Blöcken mit seiner gespeicherten Erfahrung."
+  ],
+  "en": [
+   "Witches drop the [[reliquary:witch_hat]] at 2 percent, and the medallion needs two: one directly and one in the infernal tear.",
+   "In a pedestal the active medallion repairs Mending items in pedestals within 5 blocks with its stored experience."
+  ],
+  "sources": [
+   "reliquary-1.21.1-2.0.80.1570.jar: data/reliquary/loot_table/inject/entities/witch.json",
+   "reliquary:hero_medallion",
+   "reliquary:infernal_tear",
+   "srv/config/reliquary-common.toml (heroMedallion.pedestalRange 5)",
+   "reliquary jar: assets/reliquary/lang/en_us.json (jei.reliquary.description.pedestal)"
+  ]
+ },
+ "sojourner": {
+  "de": [
+   "Der Stab nimmt Fackeln, Seelenfackeln, Laternen, Seelenlaternen, Kürbislaternen, Seelaternen, Pilzlichter, Glowstone und Endstäbe. Eine Fackel in 30 Blöcken Entfernung kostet also sechs Stück.",
+   "Zusammen mit der Lantern of Paranoia ({{reliquary/lantern}}) speist er deren automatische Fackeln."
+  ],
+  "en": [
+   "The staff takes torches, soul torches, lanterns, soul lanterns, jack o'lanterns, sea lanterns, shroomlights, glowstone and end rods. A torch 30 blocks away thus costs six.",
+   "Together with the lantern of paranoia ({{reliquary/lantern}}) it feeds the lantern's automatic torches."
+  ],
+  "sources": [
+   "reliquary:sojourner_staff",
+   "srv/config/reliquary-common.toml (sojournerStaff: torches, maxCapacityPerItemType 1500, maxRange 30, tilePerCostMultiplier 6)",
+   "reliquary jar: assets/reliquary/lang/en_us.json (jei.reliquary.description.sojourner_staff)"
+  ]
+ },
+ "ender_staff": {
+  "de": [
+   "Gebunden wird mit Rechtsklick des Stabs auf die gesetzte [[reliquary:wraith_node]]. Die Node wirkt **nicht über Dimensionen** hinweg, und Nether und End laufen auf Kronwerke ohnehin auf eigenen Servern.",
+   "Im Modus Cast wirft der Stab eine Perle, die dir anders als eine normale Enderperle keinen Schaden macht."
+  ],
+  "en": [
+   "You bind it by right clicking the placed [[reliquary:wraith_node]] with the staff. The node does **not work across dimensions**, and on Kronwerke the Nether and the End run on their own servers anyway.",
+   "In Cast mode the staff throws a pearl that, unlike a normal ender pearl, does not hurt you."
+  ],
+  "sources": [
+   "reliquary:ender_staff",
+   "reliquary:wraith_node",
+   "srv/config/reliquary-common.toml (enderStaff: enderPearlLimit 250, nodeWarpCastTime 60, enderPearlNodeWarpCost 1)",
+   "reliquary jar: assets/reliquary/lang/en_us.json (jei.reliquary.description.ender_staff, wraith_node)"
+  ]
+ },
+ "outlook": {
+  "de": [
+   "Der [[reliquary:alkahestry_tome]] braucht als einziges keine Void Tear, dafür einen Witch Hat, ein Eye of the Storm, Chelicerae von Spinnen und einen [[minecraft:wither_skeleton_skull]]. Er fasst bis zu 1 000 Ladung.",
+   "Die Drops dafür kannst du jetzt schon sammeln und lagern, nur die Rezepte bleiben bis Stufe 3 gesperrt."
+  ],
+  "en": [
+   "The [[reliquary:alkahestry_tome]] is the only one that needs no void tear; it takes a witch hat, an eye of the storm, chelicerae from spiders and a [[minecraft:wither_skeleton_skull]]. It holds up to 1,000 charge.",
+   "You can collect and store the drops now; only the recipes stay locked until Steel Works."
+  ],
+  "sources": [
+   "reliquary:alkahestry_tome",
+   "reliquary:rending_gale",
+   "reliquary:emperor_chalice",
+   "reliquary:midas_touchstone",
+   "srv/config/reliquary-common.toml (alkahestryTome.chargeLimit)",
+   "kubejs/data/kronwerke/chapters/stages/stage3.json"
+  ]
+ },
+ "angelic_feather": {
+  "de": [
+   "Pro Schadenspunkt, den die Feder abfängt, kostet sie dich die Hälfte eines Hungerpunkts. Mit leerem Magen schützt sie also nicht mehr.",
+   "Weiter geht es mit dem Phoenix Down ({{reliquary/phoenix_down}}), das die Feder in sich trägt."
+  ],
+  "en": [
+   "For every point of damage the feather absorbs, it costs you half a hunger point. With an empty stomach it no longer protects you.",
+   "Next comes the phoenix down ({{reliquary/phoenix_down}}), which carries the feather inside."
+  ],
+  "sources": [
+   "reliquary:angelic_feather",
+   "srv/config/reliquary-common.toml (angelicFeather.hungerCostPercent 50, leapingPotency 1)"
+  ],
+  "client": [
+   "that the feather stops protecting when hunger is empty"
+  ]
+ },
+ "phoenix_down": {
+  "de": [
+   "Für drei Angelheart Vials brauchst du drei Infernal Claws und sechs Fertile Essences, also auch sechs Mandrake Roots.",
+   "Tötet dich Feuer, bekommst du zusätzlich Feuerresistenz, beim Ertrinken Wasseratmung. Als Feder kostet das Phoenix Down nur 25 Prozent Hunger pro Schadenspunkt statt 50."
+  ],
+  "en": [
+   "Three angelheart vials need three infernal claws and six fertile essences, so six mandrake roots too.",
+   "If fire kills you, you also get fire resistance; when drowning, water breathing. As a feather the phoenix down costs only 25 percent hunger per damage point instead of 50."
+  ],
+  "sources": [
+   "reliquary:angelheart_vial",
+   "reliquary:phoenix_down",
+   "srv/config/reliquary-common.toml (PhoenixDown, angelheartVial)"
+  ]
+ },
+ "kraken_shell": {
+  "de": [
+   "Der [[reliquary:squid_beak]] fällt nur von normalen Tintenfischen mit 2 Prozent, Leuchttintenfische haben keinen. Für die Shell brauchst du neun Schnäbel, drei Slime Pearls und ein Nebulous Heart.",
+   "Pro abgefangenem Schadenspunkt kostet sie ein Viertel Hungerpunkt."
+  ],
+  "en": [
+   "The [[reliquary:squid_beak]] drops only from normal squid at 2 percent, glow squid have none. The shell needs nine beaks, three slime pearls and a nebulous heart.",
+   "Each absorbed point of damage costs a quarter hunger point."
+  ],
+  "sources": [
+   "reliquary-1.21.1-2.0.80.1570.jar: data/reliquary/loot_table/inject/entities/squid.json",
+   "reliquary:kraken_shell_fragment",
+   "reliquary:kraken_shell",
+   "srv/config/reliquary-common.toml (krakenShell.hungerCostPercent 25)"
+  ]
+ },
+ "infernal_claws": {
+  "de": [
+   "Für die Claws brauchst du drei Infernal Claws, also drei Molten Cores, drei Rib Bones und vier Slime Pearls. Pro abgefangenem Feuerschaden kostet es nur 5 Prozent eines Hungerpunkts.",
+   "Für den Pyromancer's Staff kommen eine Infernal Tear und ein Salamander's Eye dazu (Enderauge, Molten Core, Frozen Core, Nebulous Heart)."
+  ],
+  "en": [
+   "The claws need three infernal claws, so three molten cores, three rib bones and four slime pearls. Each absorbed point of fire damage costs only 5 percent of a hunger point.",
+   "The pyromancer's staff adds an infernal tear and a salamander's eye (eye of ender, molten core, frozen core, nebulous heart)."
+  ],
+  "sources": [
+   "reliquary:infernal_claw",
+   "reliquary:infernal_claws",
+   "reliquary:pyromancer_staff",
+   "reliquary:salamander_eye",
+   "srv/config/reliquary-common.toml (infernalClaws.hungerCostPercent 5)"
+  ]
+ },
+ "twilight_cloak": {
+  "de": [
+   "Der Umhang braucht drei Crimson Cloth und damit **sechs Nebulous Hearts**. Er wirkt aus dem Inventar, du musst ihn nicht tragen.",
+   "Eine Fackel oder ein Leuchtblock in der Nähe hebt das Licht über 4, dann sehen dich Monster wieder."
+  ],
+  "en": [
+   "The cloak takes three crimson cloths and so **six nebulous hearts**. It works from your inventory; you do not need to wear it.",
+   "A torch or light block nearby raises the light above 4, and monsters see you again."
+  ],
+  "sources": [
+   "reliquary:twilight_cloak",
+   "reliquary:crimson_cloth",
+   "srv/config/reliquary-common.toml (twilightCloak.maxLightLevel 4)",
+   "reliquary jar: assets/reliquary/lang/en_us.json (jei.reliquary.description.twilight_cloak)"
+  ]
+ },
+ "interdiction_torch": {
+  "de": [
+   "Die Fackel lässt sich an Boden und Wand setzen. Sie schiebt Mobs weg, aber keine Geschosse, denn das ist in diesem Pack abgeschaltet.",
+   "Molten Core, Lohenrute und Nebulous Heart machen sie teuer, setz sie also an Türen und enge Stellen."
+  ],
+  "en": [
+   "The torch goes on floors and walls. It pushes mobs away but no projectiles, which are turned off in this pack.",
+   "Molten core, blaze rod and nebulous heart make it expensive, so use it at doors and narrow spots."
+  ],
+  "sources": [
+   "reliquary:interdiction_torch",
+   "reliquary jar: data/reliquary/loot_table/blocks/wall_interdiction_torch.json",
+   "srv/config/reliquary-common.toml (blocks.interdictionTorch: pushRadius 5, canPushProjectiles false)"
+  ]
+ },
+ "harvest_rod": {
+  "de": [
+   "Die Fläche um dich ist auf diesem Server 2 Blöcke im Umkreis. Beim Düngen gibt es zwei Extrawürfe mit je 33 Prozent Chance auf eine Gratisportion Knochenmehl.",
+   "Im Pedestal arbeitet der Stab alle 5 Ticks, das Pedestal muss dafür eingeschaltet sein ({{reliquary/pedestal}})."
+  ],
+  "en": [
+   "The area around you is 2 blocks in radius on this server. When fertilising, two extra rolls give a 33 percent chance each of a free bone meal use.",
+   "In a pedestal the rod works every 5 ticks; the pedestal has to be switched on ({{reliquary/pedestal}})."
+  ],
+  "sources": [
+   "reliquary:harvest_rod",
+   "srv/config/reliquary-common.toml (harvestRod: aoeRadius 2, boneMealLuckPercentChance 33, boneMealLuckRolls 2, pedestalCooldown 5)"
+  ]
+ },
+ "destruction_catalyst": {
+  "de": [
+   "Der Katalysator sprengt einen sauberen Würfel mit Radius 1, also 3 mal 3 mal 3 Blöcke, und zwar hinter der angeklickten Fläche statt um sie herum. Welche Blöcke als gewöhnlich gelten, steht in der Konfiguration: Erde, Kies, Bruchstein, Stein und ähnliche.",
+   "Die [[reliquary:witch_hat]] für die Infernal Tear kommt von Hexen."
+  ],
+  "en": [
+   "The catalyst blasts a clean cube of radius 1, so 3 by 3 by 3 blocks, behind the clicked face rather than around it. The config lists which blocks count as mundane: dirt, gravel, cobblestone, stone and the like.",
+   "The [[reliquary:witch_hat]] for the infernal tear comes from witches."
+  ],
+  "sources": [
+   "reliquary:destruction_catalyst",
+   "srv/config/reliquary-common.toml (destructionCatalyst: explosionRadius 1, perfectCube true, centeredExplosion false, mundaneBlocks)"
+  ],
+  "client": [
+   "that the cube lies behind the clicked face"
+  ]
+ },
+ "mortar": {
+  "de": [
+   "Der [[reliquary:apothecary_cauldron]] braucht auf Kronwerke einen [[hexerei:mixing_cauldron]] ({{hexerei/cauldron}}), dazu zwei Catalyzing Glands, zwei Infernal Claws, drei Nebulous Hearts und einen Molten Core.",
+   "Eine Essenz entsteht aus zwei oder drei Zutaten, und eine davon darf selbst schon eine Essenz sein. So sammelst du mehrere Wirkungen in einem Trank."
+  ],
+  "en": [
+   "On Kronwerke the [[reliquary:apothecary_cauldron]] needs a [[hexerei:mixing_cauldron]] ({{hexerei/cauldron}}), plus two catalyzing glands, two infernal claws, three nebulous hearts and a molten core.",
+   "An essence is made from two or three ingredients, and one of them may already be an essence. That way you stack several effects in one potion."
+  ],
+  "sources": [
+   "reliquary:apothecary_mortar",
+   "reliquary:apothecary_cauldron",
+   "kubejs/server_scripts/kronwerke/round.js",
+   "reliquary jar: assets/reliquary/lang/en_us.json (jei.reliquary.description.potion_essence)"
+  ]
+ },
+ "glowing_water": {
+  "de": [
+   "Es gibt zwei Rezepte: formlos mit einer fertigen Condensed Potion Vial oder geformt mit fünf Glasscheiben direkt um Eimer und Zutaten.",
+   "Die [[reliquary:holy_hand_grenade]] schadet nur Gegnern: Sie zerstört keine Blöcke und trifft nicht dich."
+  ],
+  "en": [
+   "There are two recipes: shapeless with a finished condensed potion vial, or shaped with five glass panes directly around the bucket and ingredients.",
+   "The [[reliquary:holy_hand_grenade]] only hurts enemies: it breaks no blocks and does not hit you."
+  ],
+  "sources": [
+   "reliquary:glowing_water",
+   "reliquary:glowing_water_from_potion_vial",
+   "reliquary:holy_hand_grenade",
+   "reliquary jar: assets/reliquary/lang/en_us.json (jei.reliquary.description.holy_hand_grenade)"
+  ]
+ },
+ "handgun": {
+  "de": [
+   "Für den Handgun brauchst du zwei Nebulous Hearts, zwei Magmacremes, einen Molten Core und viel Eisen. Mit jedem Erfahrungslevel bis 20 lädt er schneller nach und schießt schneller.",
+   "Vier leere Hülsen ergeben einen Goldklumpen zurück."
+  ],
+  "en": [
+   "The handgun takes two nebulous hearts, two magma creams, a molten core and a lot of iron. With every experience level up to 20 it reloads and fires faster.",
+   "Four empty casings make one gold nugget back."
+  ],
+  "sources": [
+   "reliquary:handgun",
+   "reliquary:barrel_assembly",
+   "reliquary:hammer_assembly",
+   "reliquary:grip_assembly",
+   "reliquary:gold_nugget",
+   "srv/config/reliquary-common.toml (handgun.maxSkillLevel 20)"
+  ]
+ },
+ "seeker_magazine": {
+  "de": [
+   "Acht Seeker Shots und ein Nebulous Heart ergeben acht **Ender Shots**: Sie suchen ihr Ziel wie Seeker Shots und durchschlagen dabei mehrere Gegner.",
+   "Vier leere Hülsen ergeben einen Goldklumpen."
+  ],
+  "en": [
+   "Eight seeker shots and a nebulous heart make eight **ender shots**: they seek like seeker shots and pierce several enemies on the way.",
+   "Four empty casings make one gold nugget."
+  ],
+  "sources": [
+   "reliquary:bullets/seeker_bullet",
+   "reliquary:bullets/ender_bullet",
+   "reliquary:gold_nugget",
+   "reliquary jar: assets/reliquary/lang/en_us.json (jei.reliquary.description.bullets.ender_bullet)"
+  ]
+ },
+ "ice_magus_rod": {
+  "de": [
+   "Der [[reliquary:frozen_core]] fällt mit 2 Prozent, und nur wenn **du** den Schneegolem tötest. Bau dir also mehrere nebeneinander und schlag sie mit Severing.",
+   "Der Stab ist die Vorstufe zum Glacial Staff ({{reliquary/glacial_staff}})."
+  ],
+  "en": [
+   "The [[reliquary:frozen_core]] drops at 2 percent, and only when **you** kill the snow golem. Build several side by side and hit them with Severing.",
+   "The rod leads to the glacial staff ({{reliquary/glacial_staff}})."
+  ],
+  "sources": [
+   "reliquary-1.21.1-2.0.80.1570.jar: data/reliquary/loot_table/inject/entities/snow_golem.json",
+   "reliquary:ice_magus_rod",
+   "srv/config/reliquary-common.toml (iceMagusRod)"
+  ]
+ },
+ "glacial_staff": {
+  "de": [
+   "Für den Stab brauchst du zwei weitere Frozen Cores, einen in den Shears of Winter und einen direkt, und eine zweite Void Tear.",
+   "Er hält wie der Ice Magus Rod bis zu 250 Schneebälle, die du mit Shift und Rechtsklick auflädst."
+  ],
+  "en": [
+   "The staff needs two more frozen cores, one in the shears of winter and one directly, and a second void tear.",
+   "Like the ice magus rod it holds up to 250 snowballs, which you load with Shift and right click."
+  ],
+  "sources": [
+   "reliquary:glacial_staff",
+   "reliquary:shears_of_winter",
+   "srv/config/reliquary-common.toml (glacialStaff.snowballLimit 250)",
+   "reliquary jar: assets/reliquary/lang/en_us.json (jei.reliquary.description.ice_magus_rod)"
+  ],
+  "client": [
+   "that the glacial staff loads snowballs with Shift and right click like the ice magus rod"
+  ]
+ }
+}

@@ -1,0 +1,566 @@
+{
+ "welcome": {
+  "de": [
+   "[[minecraft:quartz]] baust du im Nether ab ({{nether/quartz}}). Auf Kronwerke ist RS keine Abkürzung um AE2 herum: Der [[refinedstorage:controller]] und das [[refinedstorage:disk_drive]] brauchen je einen [[mekanism:advanced_control_circuit]], der [[refinedstorage:autocrafter]] ein [[create:precision_mechanism]].",
+   "Alles bis zur 16k-Zelle und die Elite- und Ultra-Geräte von Cable Tiers sind Stufe 3, die 64k-Teile und die Mega-Geräte Stufe 4."
+  ],
+  "en": [
+   "You mine [[minecraft:quartz]] in the Nether ({{nether/quartz}}). On Kronwerke RS is no shortcut around AE2: the [[refinedstorage:controller]] and the [[refinedstorage:disk_drive]] each take an [[mekanism:advanced_control_circuit]], the [[refinedstorage:autocrafter]] a [[create:precision_mechanism]].",
+   "Everything up to the 16k disk and the Elite and Ultra devices of Cable Tiers are Steel Works (stage 3); the 64k parts and the Mega devices are Star Works (stage 4)."
+  ],
+  "sources": [
+   "refinedstorage:quartz_enriched_iron",
+   "kubejs/server_scripts/kronwerke/links.js",
+   "kubejs/data/kronwerke/chapters/stages/stage3.json",
+   "kubejs/data/kronwerke/chapters/stages/stage4.json"
+  ]
+ },
+ "silicon": {
+  "de": [
+   "Silizium gibt es nur im normalen **Ofen** (10 Sekunden pro Stück). Ein Schmelzofen nimmt Netherquarz nicht an, denn es gibt kein Schmelzofenrezept dafür.",
+   "Beide Silizium-Sorten tragen den Tag c:silicon. Dein RS-Silizium geht deshalb auch in die AE2-[[ae2:inscriber]] für [[ae2:printed_silicon]], das du für jeden [[mekanism:advanced_control_circuit]] brauchst."
+  ],
+  "en": [
+   "Silicon only comes from a plain **furnace** (10 seconds each). A blast furnace does not take nether quartz, there is no blasting recipe for it.",
+   "Both kinds of silicon carry the tag c:silicon, so your RS silicon also goes into the AE2 [[ae2:inscriber]] for [[ae2:printed_silicon]], which every [[mekanism:advanced_control_circuit]] needs."
+  ],
+  "sources": [
+   "refinedstorage:silicon (minecraft:smelting, cookingtime 200)",
+   "no minecraft:blasting recipe for c:gems/quartz in recipes.json",
+   "ae2:inscriber/silicon_print (middle #c:silicon)",
+   "refinedstorage jar data/c/tags/item/silicon.json",
+   "appliedenergistics2 jar data/c/tags/item/silicon.json"
+  ]
+ },
+ "binding": {
+  "de": [
+   "Das Rezept nimmt jeden Faden und jeden Schleimball mit Tag, also auch die aus anderen Mods. Die drei Teile müssen in einer waagerechten Reihe liegen, egal in welcher.",
+   "Jeder Rohprozessor braucht ein Rohmaterial, daraus werden in {{refined_storage/processors}} die drei Prozessoren."
+  ],
+  "en": [
+   "The recipe takes any string and any slime ball by tag, also those of other mods. The three parts have to lie in one horizontal row, any row.",
+   "Every raw processor takes one binding; {{refined_storage/processors}} turns them into the three processors."
+  ],
+  "sources": [
+   "refinedstorage:processor_binding (c:strings, c:slime_balls, 8 out)"
+  ]
+ },
+ "processors": {
+  "de": [
+   "Die drei Rohprozessoren werden formlos gecraftet und dann im **normalen Ofen** gebacken, je 10 Sekunden. Einen Schmelzofen-Weg gibt es nicht.",
+   "Den Fortschrittlichen Prozessor brauchst du vor allem für Autohersteller, Funksender, Drahtlose Konsole, Relais und die Cable Tiers. Kontrollblock und Laufwerk nehmen auf Kronwerke stattdessen einen [[mekanism:advanced_control_circuit]] ({{mekanism_advanced/welcome}})."
+  ],
+  "en": [
+   "The three raw processors are crafted shapeless and then baked in a **plain furnace**, 10 seconds each. There is no blast furnace route.",
+   "You need the Advanced Processor mostly for autocrafters, wireless transmitters, wireless grids, relays and Cable Tiers. On Kronwerke the controller and the disk drive take an [[mekanism:advanced_control_circuit]] instead ({{mekanism_advanced/welcome}})."
+  ],
+  "sources": [
+   "refinedstorage:raw_basic_processor",
+   "refinedstorage:raw_improved_processor",
+   "refinedstorage:raw_advanced_processor",
+   "refinedstorage:basic_processor (minecraft:smelting)",
+   "kubejs/server_scripts/kronwerke/links.js"
+  ]
+ },
+ "casing": {
+  "de": [
+   "In die Mitte passt jeder Block aus dem Tag c:stones: Stein, Granit, Diorit, Andesit, Tiefenschiefer oder Tuff. **Bruchstein** zählt nicht.",
+   "Für ein Startnetz brauchst du Gehäuse für Kontrollblock, Konsole und Laufwerk, das vierte geht in einen Speicherblock oder den Funksender."
+  ],
+  "en": [
+   "The centre takes any block of the tag c:stones: stone, granite, diorite, andesite, deepslate or tuff. **Cobblestone** does not count.",
+   "A first network needs casings for the controller, the grid and the disk drive; the fourth goes into a storage block or the wireless transmitter."
+  ],
+  "sources": [
+   "refinedstorage:machine_casing (S = #c:stones)",
+   "neoforge-21.1.252-universal.jar data/c/tags/item/stones.json"
+  ]
+ },
+ "cores": {
+  "de": [
+   "Den [[refinedstorage:construction_core]] brauchen Konsole, Exporteur, Konstruktor, Externer Speicher, Festplatten-Schnittstelle, Netzwerksender und Empfänger und das Autoherstellung Upgrade.",
+   "Den [[refinedstorage:destruction_core]] brauchen Konsole, Importeur, Destruktor, Externer Speicher, Festplatten-Schnittstelle, Netzwerksender und Empfänger und der Autohersteller. Ein Basisprozessor pro Kern, also back genug davon."
+  ],
+  "en": [
+   "The [[refinedstorage:construction_core]] goes into the grid, exporter, constructor, external storage, disk interface, network transmitter and receiver and the autocrafting upgrade.",
+   "The [[refinedstorage:destruction_core]] goes into the grid, importer, destructor, external storage, disk interface, network transmitter and receiver and the autocrafter. Each core costs one basic processor, so bake plenty."
+  ],
+  "sources": [
+   "refinedstorage:construction_core",
+   "refinedstorage:destruction_core",
+   "recipes.json (uses)"
+  ]
+ },
+ "controller": {
+  "de": [
+   "Ohne Strom läuft nichts: RS ist so eingestellt, dass jedes Gerät Energie braucht. Der Kontrollblock fasst nur **1 000 FE**, häng ihn also dauerhaft an eine Stromquelle und nicht nur an einen Akku zum Aufladen.",
+   "Den [[mekanism:advanced_control_circuit]] baust du in {{mekanism_advanced/welcome}}. Mehrere Kontrollblöcke in einem Netz sind erlaubt."
+  ],
+  "en": [
+   "Nothing runs without power: RS is set so that every device needs energy. The controller holds only **1,000 FE**, so keep it on a steady power source rather than charging it once.",
+   "You build the [[mekanism:advanced_control_circuit]] in {{mekanism_advanced/welcome}}. Several controllers in one network are allowed."
+  ],
+  "sources": [
+   "refinedstorage:controller",
+   "kubejs/server_scripts/kronwerke/links.js",
+   "srv/config/refinedstorage-common.toml (requireEnergy true, controller.energyCapacity 1000)",
+   "refinedstorage-neoforge-2.0.9.jar: assets/refinedstorage/lang/en_us.json (item.refinedstorage.controller.help)"
+  ]
+ },
+ "cable": {
+  "de": [
+   "Für das [[refinedstorage:quartz_enriched_copper]] brauchst du drei Kupferbarren und einen Netherquarz, das ergibt vier. Ein Kabelrezept nimmt sechs davon, also reichen zwei Quarze für zwölf Kabel.",
+   "Kabel verbrauchen keinen Strom. Ein gefärbtes Kabel verbindet sich nur mit derselben Farbe oder mit dem grauen Standardkabel, volle Blöcke dagegen mit jeder Farbe."
+  ],
+  "en": [
+   "[[refinedstorage:quartz_enriched_copper]] is three copper ingots and one nether quartz for four. One cable recipe takes six of them, so two quartz make twelve cables.",
+   "Cables use no power. A dyed cable connects only to the same colour or to the default grey cable, full blocks connect to any colour."
+  ],
+  "sources": [
+   "refinedstorage:quartz_enriched_copper",
+   "refinedstorage:cable",
+   "srv/config/refinedstorage-common.toml (cable.energyUsage 0)",
+   "refinedstorage-neoforge-2.0.9.jar: assets/refinedstorage/lang/en_us.json (item.refinedstorage.cable.help)"
+  ]
+ },
+ "grid": {
+  "de": [
+   "Die Konsole braucht 10 FE/t. Im Suchfeld filtert **@** nach Mod, **#** nach Tag und **$** nach Tooltip, sortiert wird von Haus aus nach Menge.",
+   "Als Nächstes kommt das Laufwerk ({{refined_storage/drive}}), ohne Zellen hat das Netz noch keinen Platz."
+  ],
+  "en": [
+   "The grid uses 10 FE/t. In the search box **@** filters by mod, **#** by tag and **$** by tooltip; the default sort is by quantity.",
+   "Next comes the disk drive ({{refined_storage/drive}}): without disks the network has no space yet."
+  ],
+  "sources": [
+   "refinedstorage:grid",
+   "srv/config/refinedstorage-common.toml (grid.energyUsage 10, sortingType QUANTITY)",
+   "refinedstorage-neoforge-2.0.9.jar: assets/refinedstorage/lang/en_us.json (gui.refinedstorage.grid.search_help.*)"
+  ]
+ },
+ "drive": {
+  "de": [
+   "Das Laufwerk kostet auf Kronwerke einen [[mekanism:advanced_control_circuit]] statt des Fortschrittlichen Prozessors. Es braucht 10 FE/t und 4 FE/t mehr für jede Zelle.",
+   "Bei der Priorität lagert das Netz in den Speicher mit der höchsten Zahl zuerst ein und holt dort auch zuerst heraus. Strg-Klick stellt nur die Einlager-, Alt-Klick nur die Auslager-Priorität ein."
+  ],
+  "en": [
+   "On Kronwerke the disk drive takes an [[mekanism:advanced_control_circuit]] instead of the Advanced Processor. It uses 10 FE/t plus 4 FE/t per disk.",
+   "With priority, the network inserts into and extracts from the storage with the highest number first. Ctrl click sets only the insert priority, Alt click only the extract priority."
+  ],
+  "sources": [
+   "refinedstorage:disk_drive",
+   "kubejs/server_scripts/kronwerke/links.js",
+   "srv/config/refinedstorage-common.toml (diskDrive)",
+   "refinedstorage-neoforge-2.0.9.jar: assets/refinedstorage/lang/en_us.json (gui.refinedstorage.priority.storage_help*)"
+  ]
+ },
+ "disk_1k": {
+  "de": [
+   "Zwei Wege zur Zelle: das Formrezept mit dem Kern in der Mitte oder [[refinedstorage:storage_housing]] und [[refinedstorage:1k_storage_part]] formlos. Eine leere Zelle gibt den Kern zurück, wenn du sie in der Hand benutzt.",
+   "Auf Kronwerke reist der Inhalt mit, wenn du eine Zelle in die Farmwelt oder auf einen anderen Server trägst: im Inventar, in der Endertruhe, in Curios, im Rucksack oder in einem Laufwerk mit Carry On."
+  ],
+  "en": [
+   "Two ways to a disk: the shaped recipe with the part in the middle, or [[refinedstorage:storage_housing]] and [[refinedstorage:1k_storage_part]] shapeless. Using an empty disk in your hand gives the part back.",
+   "On Kronwerke the contents travel with you when you carry a disk to the farm world or another server: in your inventory, ender chest, Curios, a backpack or a disk drive carried with Carry On."
+  ],
+  "sources": [
+   "refinedstorage:1k_storage_disk",
+   "refinedstorage:1k_storage_disk_from_storage_housing",
+   "refinedstorage-neoforge-2.0.9.jar: assets/refinedstorage/lang/en_us.json (item.refinedstorage.storage_disk.help)",
+   "core: src/main/java/de/kronwerke/core/share/rs/RsDisks.java"
+  ]
+ },
+ "disk_16k": {
+  "de": [
+   "Rechne vorher: Ein 16k-Kern sind drei 4k-Kerne, also neun 1k-Kerne. Zusammen sind das 4 Verbesserte und 12 Basisprozessoren, 36 Silizium und 27 Glas.",
+   "Zum Aufrüsten legst du die Zelle mit dem größeren Kern formlos in die Werkbank, auch eine 1k-Zelle direkt auf 16k. Der Inhalt bleibt erhalten."
+  ],
+  "en": [
+   "Count first: a 16k part is three 4k parts, so nine 1k parts. Together that is 4 improved and 12 basic processors, 36 silicon and 27 glass.",
+   "To upgrade, put the disk and the bigger part shapeless into a crafting grid, a 1k disk straight to 16k works too. The contents stay."
+  ],
+  "sources": [
+   "refinedstorage:4k_storage_part",
+   "refinedstorage:16k_storage_part",
+   "refinedstorage:1k_storage_part",
+   "refinedstorage:16k_storage_disk_upgrade",
+   "refinedstorage-neoforge-2.0.9.jar: assets/refinedstorage/lang/en_us.json (item.refinedstorage.storage_disk.help)"
+  ],
+  "client": [
+   "whether the smaller part comes back when upgrading a disk"
+  ]
+ },
+ "crafting_grid": {
+  "de": [
+   "Die Herstellungskonsole braucht 14 FE/t, 4 mehr als die normale Konsole. Als Werkbank zählt alles mit dem Tag c:player_workstations/crafting_tables.",
+   "Sie ist auch die Vorstufe für die Rezeptkonsole ({{refined_storage/pattern}}) und den Funkzugriff ({{refined_storage/wireless}})."
+  ],
+  "en": [
+   "The crafting grid uses 14 FE/t, 4 more than the plain grid. Any block tagged c:player_workstations/crafting_tables counts as the crafting table.",
+   "It also leads to the pattern grid ({{refined_storage/pattern}}) and wireless access ({{refined_storage/wireless}})."
+  ],
+  "sources": [
+   "refinedstorage:crafting_grid",
+   "srv/config/refinedstorage-common.toml (craftingGrid.energyUsage 14)"
+  ]
+ },
+ "fluids": {
+  "de": [
+   "Jede Kernstufe kostet einen leeren Eimer, der verbraucht wird. 256B nimmt drei 64B-Kerne mit Basisprozessoren, 1024B drei 256B-Kerne mit Verbesserten und 4096B drei 1024B-Kerne mit Fortschrittlichen Prozessoren.",
+   "Alle Flüssigkeitsstufen bis 4096B sind schon in Stufe 3 offen. Auch hier gibt es Flüssigkeitsspeicherblöcke ohne Laufwerk ({{refined_storage/storage_block}})."
+  ],
+  "en": [
+   "Every part tier costs an empty bucket, which is used up. 256B takes three 64B parts with basic processors, 1024B three 256B parts with improved ones and 4096B three 1024B parts with advanced processors.",
+   "All fluid tiers up to 4096B are open in Steel Works already. There are fluid storage blocks without a drive as well ({{refined_storage/storage_block}})."
+  ],
+  "sources": [
+   "refinedstorage:64b_fluid_storage_part",
+   "refinedstorage:256b_fluid_storage_part",
+   "refinedstorage:1024b_fluid_storage_part",
+   "refinedstorage:4096b_fluid_storage_part",
+   "kubejs/data/kronwerke/chapters/stages/stage3.json"
+  ]
+ },
+ "importer": {
+  "de": [
+   "Der Importeur nimmt Geschwindigkeits-, Stapel- und Regulationsupgrades ({{refined_storage/upgrades}}). Je Upgrade steigt sein Verbrauch über die 2 FE/t hinaus.",
+   "Mit Shift und Benutzen baut der [[refinedstorage:wrench]] RS-Blöcke ab, ohne Shift dreht er sie."
+  ],
+  "en": [
+   "The importer takes speed, stack and regulator upgrades ({{refined_storage/upgrades}}). Each upgrade adds to its 2 FE/t.",
+   "Shift and use with the [[refinedstorage:wrench]] dismantles RS blocks, without Shift it rotates them."
+  ],
+  "sources": [
+   "refinedstorage:importer",
+   "refinedstorage:wrench",
+   "refinedstorage-neoforge-2.0.9.jar: AbstractModInitializer.registerUpgradeMappings (UpgradeDestinations)",
+   "srv/config/refinedstorage-common.toml (importer, upgrade)",
+   "refinedstorage-neoforge-2.0.9.jar: assets/refinedstorage/lang/en_us.json (item.refinedstorage.wrench.help)"
+  ]
+ },
+ "exporter": {
+  "de": [
+   "Der Exporteur nimmt Geschwindigkeits-, Stapel-, Regulations- und **Autoherstellung Upgrades**. Mit dem letzten bestellt er, was ihm fehlt, beim Autocrafting nach ({{refined_storage/monitor}}).",
+   "Pro Filterplatz kannst du einstellen, ob er sie der Reihe nach, abwechselnd oder zufällig bedient."
+  ],
+  "en": [
+   "The exporter takes speed, stack, regulator and **autocrafting upgrades**. With the last one it orders whatever it is missing from autocrafting ({{refined_storage/monitor}}).",
+   "You can set whether it serves its filter slots in order, in turn (round robin) or at random."
+  ],
+  "sources": [
+   "refinedstorage:exporter",
+   "refinedstorage-neoforge-2.0.9.jar: AbstractModInitializer.registerUpgradeMappings (UpgradeDestinations)",
+   "refinedstorage-neoforge-2.0.9.jar: assets/refinedstorage/lang/en_us.json (gui.refinedstorage.scheduling_mode.*)"
+  ],
+  "client": [
+   "that the exporter screen has the scheduling mode button"
+  ]
+ },
+ "upgrades": {
+  "de": [
+   "Welche Geräte was nehmen: Importeur und Exporteur Geschwindigkeit und Stapel, Konstruktor ebenso, die Festplatten-Schnittstelle auch, der Autohersteller nur Geschwindigkeit. **Glück und Behutsamkeit passen nur in den Destruktor**, nicht in den Konstruktor.",
+   "Jedes Geschwindigkeitsupgrade kostet 4 FE/t, jedes Stapelupgrade 16 FE/t zusätzlich."
+  ],
+  "en": [
+   "Which device takes what: importer and exporter take speed and stack, so does the constructor and the disk interface, the autocrafter only speed. **Fortune and Silk Touch fit only the destructor**, not the constructor.",
+   "Every speed upgrade adds 4 FE/t, every stack upgrade 16 FE/t."
+  ],
+  "sources": [
+   "refinedstorage:upgrade",
+   "refinedstorage:speed_upgrade",
+   "refinedstorage:stack_upgrade",
+   "refinedstorage-neoforge-2.0.9.jar: AbstractModInitializer.registerUpgradeMappings (UpgradeDestinations)",
+   "srv/config/refinedstorage-common.toml (upgrade)"
+  ]
+ },
+ "external": {
+  "de": [
+   "Der Externe Speicher braucht 6 FE/t und nimmt jede Truhe mit dem Tag c:chests im Rezept. Schubladen findest du in {{storage/drawers_4}}.",
+   "Im Fenster stellst du außerdem ein, ob das Netz dort nur einlagert, nur entnimmt oder beides, und mit Filtern, was hinein darf."
+  ],
+  "en": [
+   "External storage uses 6 FE/t and takes any chest tagged c:chests in its recipe. Drawers are in {{storage/drawers_4}}.",
+   "In its screen you also set whether the network only inserts there, only extracts or both, and with filters what may go in."
+  ],
+  "sources": [
+   "refinedstorage:external_storage",
+   "srv/config/refinedstorage-common.toml (externalStorage.energyUsage 6)",
+   "refinedstorage-neoforge-2.0.9.jar: assets/refinedstorage/lang/en_us.json (gui.refinedstorage.access_mode.*)"
+  ]
+ },
+ "interface": {
+  "de": [
+   "Die Schnittstelle schiebt und zieht nicht selbst: Was hinein oder heraus soll, müssen Trichter, Rohre oder Förderbänder erledigen. Als einziges Upgrade nimmt sie das **Autoherstellung Upgrade**.",
+   "Für Maschinen, die selbst ausgeben, ist das oft einfacher als Importeur und Exporteur getrennt."
+  ],
+  "en": [
+   "The interface does not push or pull by itself: hoppers, pipes or belts have to move things in and out. The only upgrade it takes is the **autocrafting upgrade**.",
+   "For machines that output on their own this is often simpler than a separate importer and exporter."
+  ],
+  "sources": [
+   "refinedstorage:interface",
+   "refinedstorage-neoforge-2.0.9.jar: AbstractModInitializer.registerUpgradeMappings (UpgradeDestinations)",
+   "refinedstorage-neoforge-2.0.9.jar: assets/refinedstorage/lang/en_us.json (item.refinedstorage.interface.help)",
+   "srv/config/refinedstorage-common.toml (interface.energyUsage 4)"
+  ]
+ },
+ "wireless": {
+  "de": [
+   "Jedes [[refinedstorage:range_upgrade]] bringt 8 Blöcke mehr, kostet den Sender aber auch 8 FE/t mehr. Mehrere Sender im selben Gebiet sind erlaubt.",
+   "Die [[refinedstorage:portable_grid]] braucht einen ganzen Kontrollblock im Rezept, also auch einen [[mekanism:advanced_control_circuit]]. Sie speichert 1 000 FE und kostet 5 FE pro Öffnen, Einlagern und Entnehmen."
+  ],
+  "en": [
+   "Every [[refinedstorage:range_upgrade]] adds 8 blocks but also 8 FE/t to the transmitter. Several transmitters in one area are allowed.",
+   "The [[refinedstorage:portable_grid]] needs a whole controller in its recipe, so an [[mekanism:advanced_control_circuit]] as well. It holds 1,000 FE and uses 5 FE per opening, insert and extract."
+  ],
+  "sources": [
+   "refinedstorage:wireless_transmitter",
+   "refinedstorage:range_upgrade",
+   "refinedstorage:portable_grid",
+   "srv/config/refinedstorage-common.toml (wirelessTransmitter, upgrade.rangeUpgrade*, portableGrid)",
+   "refinedstorage-neoforge-2.0.9.jar: assets/refinedstorage/lang/en_us.json (item.refinedstorage.wireless_transmitter.help)"
+  ]
+ },
+ "builders": {
+  "de": [
+   "Beide kosten je zwei Diamanten. Der Konstruktor hat einen Modus, der Gegenstände fallen lässt statt Blöcke zu setzen, der Destruktor einen, der herumliegende Gegenstände aufsammelt statt abzubauen.",
+   "In den Destruktor passen Geschwindigkeit, Glück I bis III und Behutsamkeit, in den Konstruktor Geschwindigkeit, Stapel und das Autoherstellung Upgrade."
+  ],
+  "en": [
+   "Each costs two diamonds. The constructor has a mode that drops items instead of placing blocks, the destructor one that picks up items lying around instead of breaking blocks.",
+   "The destructor takes speed, Fortune I to III and Silk Touch, the constructor speed, stack and the autocrafting upgrade."
+  ],
+  "sources": [
+   "refinedstorage:constructor",
+   "refinedstorage:destructor",
+   "refinedstorage-neoforge-2.0.9.jar: AbstractModInitializer.registerUpgradeMappings (UpgradeDestinations)",
+   "refinedstorage-neoforge-2.0.9.jar: assets/refinedstorage/lang/en_us.json (gui.refinedstorage.constructor.drop_items, destructor.pickup_items)"
+  ]
+ },
+ "storage_monitor": {
+  "de": [
+   "Der Monitor zeigt immer genau einen Gegenstand. Er ist günstig, die beiden Prozessoren im Rezept sind Basisprozessoren.",
+   "Für ein Redstone-Signal statt einer Anzeige nimm den Detektor ({{refined_storage/detector}})."
+  ],
+  "en": [
+   "The monitor always shows exactly one item. It is cheap: the two processors in its recipe are basic ones.",
+   "For a redstone signal instead of a display, use the detector ({{refined_storage/detector}})."
+  ],
+  "sources": [
+   "refinedstorage:storage_monitor",
+   "refinedstorage-neoforge-2.0.9.jar: assets/refinedstorage/lang/en_us.json (item.refinedstorage.storage_monitor.help)"
+  ]
+ },
+ "detector": {
+  "de": [
+   "Im Fenster legst du den Gegenstand in den Filterplatz, stellst die Menge ein und wählst den Modus: unter, gleich oder über der Menge.",
+   "Ein Signal nur bei Mangel eignet sich gut, um eine Maschine oder einen Generator per Redstone an und aus zu schalten."
+  ],
+  "en": [
+   "In its screen you put the item into the filter slot, set the amount and choose the mode: under, equal or above the amount.",
+   "A signal only when stock runs low is a good way to switch a machine or generator on and off with redstone."
+  ],
+  "sources": [
+   "refinedstorage:detector",
+   "refinedstorage-neoforge-2.0.9.jar: assets/refinedstorage/lang/en_us.json (gui.refinedstorage.detector.mode.*)",
+   "srv/config/refinedstorage-common.toml (detector.energyUsage 2)"
+  ]
+ },
+ "regulator": {
+  "de": [
+   "Das Upgrade passt nur in Importeur und Exporteur und kostet dort 16 FE/t zusätzlich. Den Gegenstand und die Menge stellst du ein, indem du das Upgrade in der Hand benutzt.",
+   "Zusammen mit {{refined_storage/exporter}} hält es Öfen, Maschinen oder eine Ausgabekiste immer auf demselben Stand."
+  ],
+  "en": [
+   "The upgrade fits only importers and exporters and adds 16 FE/t there. You set the item and amount by using the upgrade in your hand.",
+   "Together with {{refined_storage/exporter}} it keeps furnaces, machines or an output chest at the same level."
+  ],
+  "sources": [
+   "refinedstorage:regulator_upgrade",
+   "refinedstorage-neoforge-2.0.9.jar: AbstractModInitializer.registerUpgradeMappings (UpgradeDestinations)",
+   "srv/config/refinedstorage-common.toml (upgrade.regulatorUpgradeEnergyUsage 16)",
+   "refinedstorage-neoforge-2.0.9.jar: assets/refinedstorage/lang/en_us.json (item.refinedstorage.regulator_upgrade.help)"
+  ]
+ },
+ "config_card": {
+  "de": [
+   "Schleichend auf ein Gerät benutzt, kopiert die Karte dessen Einstellungen **und seine Upgrades**. Schleichend auf das Zielgerät benutzt, überträgt sie beides, schleichend in die Luft benutzt, wird sie wieder leer.",
+   "Prüf vorher, ob du die Upgrades für das Zielgerät im Netz hast."
+  ],
+  "en": [
+   "Used on a device while sneaking, the card copies its settings **and its upgrades**. Used on the target device while sneaking, it transfers both; used into the air while sneaking, it is cleared.",
+   "Check first that you have the upgrades for the target in your network."
+  ],
+  "sources": [
+   "refinedstorage:configuration_card",
+   "refinedstorage-neoforge-2.0.9.jar: assets/refinedstorage/lang/en_us.json (item.refinedstorage.configuration_card.*)"
+  ],
+  "client": [
+   "whether the upgrades are taken from the network or copied for free"
+  ]
+ },
+ "relay": {
+  "de": [
+   "Im Durchleitungsmodus gibt das Relais das ganze Eingangsnetz weiter und kostet nur auf der Eingangsseite 8 FE/t. Schaltest du die Durchleitung ab, wählst du einzeln Strom, Lager, Sicherheit und Rezepte aus, dann zahlt auch die Ausgangsseite 8 FE/t.",
+   "Mit dem Redstone-Modus legst du fest, ob es mit oder ohne Signal aktiv ist."
+  ],
+  "en": [
+   "In pass through mode the relay passes the whole input network and uses 8 FE/t only on the input side. If you turn pass through off and pick energy, storage, security and patterns one by one, the output side pays 8 FE/t as well.",
+   "The redstone mode decides whether it is active with or without a signal."
+  ],
+  "sources": [
+   "refinedstorage:relay",
+   "srv/config/refinedstorage-common.toml (relay)",
+   "refinedstorage-neoforge-2.0.9.jar: assets/refinedstorage/lang/en_us.json (gui.refinedstorage.relay.*, redstone_mode.*)"
+  ]
+ },
+ "disk_interface": {
+  "de": [
+   "Der Modus heißt **Ins Netz einlagern** (Zellen leeren) oder **Aus dem Netz entnehmen** (Zellen füllen). Filter bestimmen, was dabei übertragen wird.",
+   "Geschwindigkeits- und Stapelupgrades machen sie schneller. Gefüllte Zellen tragen ihren Inhalt auf Kronwerke auch auf andere Server mit."
+  ],
+  "en": [
+   "The mode is **insert into network** (empty the disks) or **extract from network** (fill the disks). Filters decide what is moved.",
+   "Speed and stack upgrades make it faster. On Kronwerke a filled disk takes its contents along to other servers too."
+  ],
+  "sources": [
+   "refinedstorage:disk_interface",
+   "refinedstorage-neoforge-2.0.9.jar: AbstractModInitializer.registerUpgradeMappings (UpgradeDestinations)",
+   "refinedstorage-neoforge-2.0.9.jar: assets/refinedstorage/lang/en_us.json (gui.refinedstorage.disk_interface.*)",
+   "core: src/main/java/de/kronwerke/core/share/rs/RsDisks.java"
+  ]
+ },
+ "storage_block": {
+  "de": [
+   "Speicherblöcke kosten 2, 4 oder 6 FE/t für 1k, 4k und 16k. Abgebaut behalten sie ihren Inhalt, du kannst sie also volle umsetzen.",
+   "Für Flüssigkeiten gibt es dieselben Blöcke mit Flüssigspeicherkernen von 64B bis 4096B."
+  ],
+  "en": [
+   "Storage blocks use 2, 4 or 6 FE/t for 1k, 4k and 16k. Broken, they keep their contents, so you can move them full.",
+   "For fluids there are the same blocks with fluid storage parts from 64B to 4096B."
+  ],
+  "sources": [
+   "refinedstorage:1k_storage_block",
+   "refinedstorage:4k_storage_block_upgrade",
+   "refinedstorage:64b_fluid_storage_block",
+   "srv/config/refinedstorage-common.toml (storageBlock, fluidStorageBlock)",
+   "core: src/main/java/de/kronwerke/core/share/rs/RsDisks.java (storage block taken down)"
+  ]
+ },
+ "network_bridge": {
+  "de": [
+   "Sender und Empfänger kosten je einen [[minecraft:netherite_ingot]], zusammen also zwei. Die Karte bindest du schleichend am Empfänger, schleichend in die Luft benutzt löst du die Bindung.",
+   "Zwischen den Servern sieht das Netz am Sender dein Hauptnetz als einen Speicher, aus dem es nimmt und in den es einlagert. Der Empfänger steht in der **Hauptwelt** in einem geladenen Chunk, und Autocrafting bleibt auf jeder Seite für sich."
+  ],
+  "en": [
+   "Transmitter and receiver each cost a [[minecraft:netherite_ingot]], two in total. Bind the card to the receiver while sneaking; using it into the air while sneaking clears it.",
+   "Between servers the network at the transmitter sees your main network as one storage it takes from and inserts into. The receiver stands in the **main world** in a loaded chunk, and autocrafting stays on each side."
+  ],
+  "sources": [
+   "refinedstorage:network_transmitter",
+   "refinedstorage:network_receiver",
+   "refinedstorage-neoforge-2.0.9.jar: assets/refinedstorage/lang/en_us.json (item.refinedstorage.network_card.*)",
+   "core: src/main/java/de/kronwerke/core/share/rs/RsBridgeLayer.java",
+   "core: src/main/java/de/kronwerke/core/mixin/RsCardMixin.java"
+  ]
+ },
+ "security": {
+  "de": [
+   "Eine [[refinedstorage:security_card]] bindest du mit Rechtsklick an dich selbst und stellst sie dabei ein. Gib dir selbst eine Karte mit allen Rechten, bevor du den Manager einschaltest.",
+   "Jede Sicherheitskarte braucht zwei Netzwerkkarten und damit drei Fortschrittliche Prozessoren. Mit dem Redstone-Modus kannst du den Schutz an und aus schalten."
+  ],
+  "en": [
+   "You bind a [[refinedstorage:security_card]] to yourself with a right click and configure it there. Make yourself a card with all permissions before you switch the manager on.",
+   "Every security card needs two network cards, so three advanced processors. The redstone mode switches the protection on and off."
+  ],
+  "sources": [
+   "refinedstorage:security_card",
+   "refinedstorage:security_manager",
+   "refinedstorage-neoforge-2.0.9.jar: assets/refinedstorage/lang/en_us.json (block.refinedstorage.security_manager.help, item.refinedstorage.security_card.*)"
+  ],
+  "client": [
+   "whether the owner who placed the manager is locked out without a card"
+  ]
+ },
+ "pattern": {
+  "de": [
+   "Ein beschriebenes Rezept löschst du, indem du es schleichend benutzt, dann kannst du es neu beschreiben. Die Rezeptkonsole braucht 14 FE/t.",
+   "Bei Verarbeitungsrezepten trägst du unten ein, was zurückkommen muss, damit der Auftrag als fertig gilt. Mit Rezepten geht es weiter zum {{refined_storage/autocrafter}}."
+  ],
+  "en": [
+   "Use a written pattern while sneaking to clear it, then you can write it again. The pattern grid uses 14 FE/t.",
+   "For processing patterns you enter what has to come back for the task to count as done. With patterns you move on to the {{refined_storage/autocrafter}}."
+  ],
+  "sources": [
+   "refinedstorage:pattern",
+   "refinedstorage:pattern_grid",
+   "refinedstorage-neoforge-2.0.9.jar: assets/refinedstorage/lang/en_us.json (item.refinedstorage.pattern.help, pattern_grid.processing.*)",
+   "srv/config/refinedstorage-common.toml (patternGrid.energyUsage 14)"
+  ]
+ },
+ "autocrafter": {
+  "de": [
+   "Das Rezept auf Kronwerke braucht ein [[create:precision_mechanism]] von Create statt des Konstruktionskerns ({{create_brass/precision}}). Er braucht 4 FE/t plus 2 FE/t pro Rezept.",
+   "Gibt es für einen Gegenstand mehrere Rezepte, nimmt das Netz das aus dem Autohersteller mit der höchsten Priorität. Geschwindigkeitsupgrades machen ihn schneller."
+  ],
+  "en": [
+   "On Kronwerke the recipe takes a [[create:precision_mechanism]] from Create instead of the construction core ({{create_brass/precision}}). It uses 4 FE/t plus 2 FE/t per pattern.",
+   "If an item has several patterns, the network uses the one in the autocrafter with the highest priority. Speed upgrades make it faster."
+  ],
+  "sources": [
+   "refinedstorage:autocrafter",
+   "kubejs/server_scripts/kronwerke/links.js",
+   "srv/config/refinedstorage-common.toml (autocrafter)",
+   "refinedstorage-neoforge-2.0.9.jar: AbstractModInitializer.registerUpgradeMappings (UpgradeDestinations)",
+   "refinedstorage-neoforge-2.0.9.jar: assets/refinedstorage/lang/en_us.json (gui.refinedstorage.priority.autocrafter_help)"
+  ]
+ },
+ "monitor": {
+  "de": [
+   "Monitor und Autohersteller-Manager kosten je 16 FE/t. Das [[refinedstorage:autocrafting_upgrade]] passt in Exporteur, Konstruktor und Schnittstelle und kostet dort 8 FE/t.",
+   "Der Drahtlose Autocrafting Monitor speichert 1 000 FE, jedes Öffnen und Abbrechen kostet 5 FE."
+  ],
+  "en": [
+   "The monitor and the autocrafter manager use 16 FE/t each. The [[refinedstorage:autocrafting_upgrade]] fits exporters, constructors and interfaces and adds 8 FE/t.",
+   "The wireless autocrafting monitor holds 1,000 FE; every opening and cancelling costs 5 FE."
+  ],
+  "sources": [
+   "refinedstorage:autocrafting_monitor",
+   "refinedstorage:autocrafting_upgrade",
+   "refinedstorage-neoforge-2.0.9.jar: AbstractModInitializer.registerUpgradeMappings (UpgradeDestinations)",
+   "srv/config/refinedstorage-common.toml (autocraftingMonitor, autocrafterManager, wirelessAutocraftingMonitor, upgrade.autocraftingUpgradeUsage)"
+  ]
+ },
+ "cabletiers": {
+  "de": [
+   "Laut Konfiguration arbeitet Elite doppelt und Ultra fünfmal so schnell wie das normale Gerät. Importer und Exporter kosten 4 FE/t (Elite) und 8 FE/t (Ultra), bei Ultra ist das Stapelupgrade schon eingebaut.",
+   "Ein Ultra-Gerät braucht vier Elite-Geräte, also sechzehn normale, dazu vier [[minecraft:diamond_block]]."
+  ],
+  "en": [
+   "By the config Elite works twice and Ultra five times as fast as the plain device. Importer and exporter use 4 FE/t (Elite) and 8 FE/t (Ultra); Ultra has the stack upgrade built in.",
+   "An Ultra device takes four Elite devices, so sixteen plain ones, plus four [[minecraft:diamond_block]]."
+  ],
+  "sources": [
+   "cabletiers:elite_importer",
+   "cabletiers:ultra_importer",
+   "srv/config/cabletiers-common.toml (tieredImporters, tieredExporters)",
+   "cabletiers:mega_importer (minecraft:dragon_head)"
+  ]
+ },
+ "factory": {
+  "de": [
+   "Ein [[mekanism:advanced_control_circuit]] sind zwei [[mekanism:alloy_infused]], ein [[mekanism:basic_control_circuit]] und ein [[ae2:printed_silicon]]. Der Einfache Steuerschaltkreis entsteht aus einer [[create:electron_tube]] und 20 Redstone in der [[mekanism:metallurgic_infuser]], das Gedruckte Silizium in der [[ae2:inscriber]] mit einem [[ae2:silicon_press]], der dabei liegen bleibt.",
+   "Wie viele Schaltkreise und Stahlbarren der Obelisk will, hängt von der Zahl aktiver Spieler ab, die echte Zahl zeigt /kw goals. Abgeben geht nur von Hand am Obelisken ({{start_here/o_deposit}})."
+  ],
+  "en": [
+   "An [[mekanism:advanced_control_circuit]] is two [[mekanism:alloy_infused]], one [[mekanism:basic_control_circuit]] and one [[ae2:printed_silicon]]. The basic circuit comes from an [[create:electron_tube]] and 20 redstone in the [[mekanism:metallurgic_infuser]], the printed silicon from the [[ae2:inscriber]] with an [[ae2:silicon_press]], which stays in place.",
+   "How many circuits and steel ingots the obelisk wants depends on the number of active players; /kw goals shows the real amount. Handing in works only by hand at the obelisk ({{start_here/o_deposit}})."
+  ],
+  "sources": [
+   "kronwerke:tech/advanced_control_circuit",
+   "kronwerke:tech/basic_control_circuit",
+   "ae2:inscriber/silicon_print",
+   "config/kronwerke/goals.json (stage3, scale true)"
+  ]
+ }
+}

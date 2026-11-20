@@ -1,0 +1,529 @@
+{
+ "welcome": {
+  "de": [
+   "Der [[rftoolsbase:machine_frame]] ist Stufe 3: vier [[mekanism:ingot_steel]], zwei blaue Farbstoffe und zwei Goldnuggets. In die Ecken des Builders gehören [[minecraft:bricks]], also der Block, nicht einzelne Ziegel.",
+   "Als Nächstes brauchst du eine Formkarte ({{quarries/shape_card}}) und daraus die Steinbruchkarte. Strom nimmt der Builder über jedes FE-Kabel an."
+  ],
+  "en": [
+   "The [[rftoolsbase:machine_frame]] is stage 3: four [[mekanism:ingot_steel]], two blue dye and two gold nuggets. The corners of the Builder take [[minecraft:bricks]], the block, not single bricks.",
+   "Next you need a shape card ({{quarries/shape_card}}) and from it the quarry card. The Builder takes power from any FE cable."
+  ],
+  "sources": [
+   "rftoolsbuilder:builder (pattern BoB/rFr/BrB, B = minecraft:bricks)",
+   "rftoolsbase:machine_frame",
+   "kubejs/data/kronwerke/chapters/stages/stage3.json, stage4.json"
+  ]
+ },
+ "shape_card": {
+  "de": [
+   "Oben und unten kommen [[minecraft:bricks]] hinein, der Block. Einzelne [[minecraft:brick]] passen nicht. Die Quest will zwei Karten: Jede Spezialkarte (Steinbruch, Pumpe, Flüssigkeit, Leere) verbraucht eine leere Formkarte.",
+   "Die Karte gibt auch den Rahmen für {{quarries/composer}} und {{quarries/space_chamber}} vor."
+  ],
+  "en": [
+   "The top and bottom slots take [[minecraft:bricks]], the block. Single [[minecraft:brick]] items do not fit. The quest wants two cards: every special card (quarry, pump, liquid, void) uses up one plain shape card.",
+   "The card is also the starting point for {{quarries/composer}} and {{quarries/space_chamber}}."
+  ],
+  "sources": [
+   "rftoolsbuilder:shape_card_def (pattern pBp/rir/pBp, B = minecraft:bricks)",
+   "rftoolsbuilder:shape_card_quarry, shape_card_pump, shape_card_liquid, shape_card_void",
+   "config/rftoolsbuilder-server.toml (maxBuilderDimension 512, maxBuilderOffset 260)"
+  ]
+ },
+ "quarry_card": {
+  "de": [
+   "Spitzhacke und Schaufel gehen beim Bauen verloren, verzauber sie also nicht vorher. Der Füllblock ist laut Konfiguration [[minecraft:dirt]].",
+   "Aus dieser Karte entstehen alle anderen Steinbruchkarten: räumend ({{quarries/clearing}}), mit Glück ({{quarries/fortune}}) und mit Behutsamkeit ({{quarries/silk}})."
+  ],
+  "en": [
+   "The pickaxe and shovel are used up in the recipe, so do not enchant them first. The config sets the fill block to [[minecraft:dirt]].",
+   "Every other quarry card grows from this one: clearing ({{quarries/clearing}}), fortune ({{quarries/fortune}}) and silk touch ({{quarries/silk}})."
+  ],
+  "sources": [
+   "rftoolsbuilder:shape_card_quarry (pattern rPr/iMi/rSr)",
+   "config/rftoolsbuilder-server.toml (quarryReplace minecraft:dirt)"
+  ]
+ },
+ "first_dig": {
+  "de": [
+   "Strom ist die Grenze: Jeder Block kostet ab 300 RF, und der Builder nimmt höchstens 20 000 RF pro Tick an. Bei 8 Blöcken pro Tick sind das mindestens 2 400 RF pro Tick, bei harten Blöcken mehr.",
+   "Den Chunk, in dem er gerade gräbt, lädt er selbst. Seinen eigenen Chunk lädst du zwangsweise ({{quarries/chunkload}}). In der Farmwelt lohnt er sich kaum, die wird alle drei Tage zurückgesetzt."
+  ],
+  "en": [
+   "Power is the limit: every block costs 300 RF or more, and the Builder takes at most 20,000 RF per tick. At 8 blocks per tick that is at least 2,400 RF per tick, more for hard blocks.",
+   "It loads the chunk it is digging in by itself. Force load its own chunk ({{quarries/chunkload}}). In the farm world it hardly pays off, that world is reset every three days."
+  ],
+  "sources": [
+   "config/rftoolsbuilder-server.toml (builderRfPerQuarry 300, builderRFPerTick 20000, quarryBaseSpeed 8, quarryChunkloads true, quarryTileEntities true)",
+   "docs/STAGES.md (mining world reset every three days)"
+  ],
+  "client": [
+   "the Builder puts the mined items into the inventory next to it"
+  ]
+ },
+ "clearing": {
+  "de": [
+   "Dasselbe gibt es für die anderen Karten: Acht Glasblöcke um die Glücks- oder die Behutsamkeitskarte machen sie räumend, acht Erde um die räumende Pumpkarte machen sie wieder normal.",
+   "Jedes farblose oder gefärbte Glas zählt, das Rezept fragt nach dem Tag für Glasblöcke."
+  ],
+  "en": [
+   "The same works for the other cards: eight glass blocks around the fortune or silk card make it clearing, eight dirt around the clearing pump card turn it back.",
+   "Any glass block counts, the recipe asks for the glass blocks tag."
+  ],
+  "sources": [
+   "rftoolsbuilder:shape_card_quarry_clear (#c:glass_blocks)",
+   "rftoolsbuilder:shape_card_quarry_clear_fortune",
+   "rftoolsbuilder:shape_card_quarry_clear_silk",
+   "rftoolsbuilder:shape_card_quarry_dirt",
+   "rftoolsbuilder:shape_card_pump_dirt"
+  ]
+ },
+ "void": {
+  "de": [
+   "Im Rezept steckt eine leere Formkarte, keine Steinbruchkarte: vier [[minecraft:obsidian]] an den Seiten und vier schwarze Farbstoffe in den Ecken.",
+   "Was die Karte entfernt, ist weg, nichts landet in der Truhe. Der Stromfaktor 0,5 gilt auf den Grundpreis von 300 RF pro Block."
+  ],
+  "en": [
+   "The recipe takes a plain shape card, not a quarry card: four [[minecraft:obsidian]] on the sides and four black dye in the corners.",
+   "What the card removes is gone, nothing goes into the chest. The power factor 0.5 applies to the base price of 300 RF per block."
+  ],
+  "sources": [
+   "rftoolsbuilder:shape_card_void (pattern xOx/OMO/xOx)",
+   "config/rftoolsbuilder-server.toml (voidShapeCardFactor 0.5)"
+  ]
+ },
+ "fortune": {
+  "de": [
+   "Rezept: vier [[rftoolsbase:dimensionalshard]] in den Ecken, oben eine [[minecraft:ghast_tear]], links [[minecraft:emerald]], rechts [[minecraft:diamond]], unten Redstone. Das Erz der Scherben liegt in der Oberwelt zwischen Y -15 und 40, im Nether und im End. Eine Scherbe lässt sich auch aus neun verschiedenen Zutaten herstellen, darunter Diamant, Smaragd und Prismarinsplitter.",
+   "Acht Glas drumherum macht daraus die räumende Glückskarte ({{quarries/clearing}})."
+  ],
+  "en": [
+   "Recipe: four [[rftoolsbase:dimensionalshard]] in the corners, a [[minecraft:ghast_tear]] at the top, [[minecraft:emerald]] left, [[minecraft:diamond]] right, redstone at the bottom. Shard ore lies in the Overworld between Y -15 and 40, in the Nether and in the End. A shard can also be crafted from nine different ingredients, among them diamond, emerald and prismarine shard.",
+   "Eight glass around it make the clearing fortune card ({{quarries/clearing}})."
+  ],
+  "sources": [
+   "rftoolsbuilder:shape_card_quarry_fortune (pattern sns/eMd/srs)",
+   "rftoolsbase:dimensionalshard (crafting)",
+   "rftoolsbase jar: data/rftoolsbase/worldgen/placed_feature/dimshard_*.json",
+   "config/rftoolsbuilder-server.toml (fortunequarryShapeCardFactor 2.0)"
+  ]
+ },
+ "silk": {
+  "de": [
+   "Genau: vier [[rftoolsbase:dimensionalshard]] in den Ecken, oben ein [[minecraft:nether_star]], links, rechts und unten je ein Diamant, die Steinbruchkarte in der Mitte.",
+   "Bei 900 RF pro Block für einfachen Stein lohnt die Karte nur in Erzschichten. Für ganze Berge bleib bei der normalen Karte."
+  ],
+  "en": [
+   "Exactly: four [[rftoolsbase:dimensionalshard]] in the corners, a [[minecraft:nether_star]] at the top, one diamond each left, right and bottom, the quarry card in the middle.",
+   "At 900 RF per block for plain stone the card only pays off in ore layers. For whole mountains stay with the normal card."
+  ],
+  "sources": [
+   "rftoolsbuilder:shape_card_quarry_silk (pattern sns/dMd/sds)",
+   "config/rftoolsbuilder-server.toml (builderRfPerQuarry 300, silkquarryShapeCardFactor 3.0)"
+  ]
+ },
+ "pump": {
+  "de": [
+   "Die Karte braucht eine leere Formkarte, nicht die Steinbruchkarte. Die Pumpe sammelt die Flüssigkeit in einem Tank am Builder, stell also einen Tank daneben.",
+   "Lava aus der Pumpkarte kann einen Lavagenerator oder die Bohrmaschine von {{quarries/coe_netherite}} füttern. Mit acht Glas drumherum wird sie räumend, mit acht Erde wieder normal."
+  ],
+  "en": [
+   "The card takes a plain shape card, not the quarry card. The pump collects the fluid into a tank on the Builder, so put a tank next to it.",
+   "Lava from the pump card can feed a lava generator or the drilling machine of {{quarries/coe_netherite}}. Eight glass around it make it clearing, eight dirt turn it back."
+  ],
+  "sources": [
+   "rftoolsbuilder:shape_card_pump (pattern rWr/bMb/rLr)",
+   "rftoolsbuilder:shape_card_pump_dirt",
+   "config/rftoolsbuilder-server.toml (builderRfPerLiquid 300)"
+  ],
+  "client": [
+   "the pumped fluid goes into a tank next to the Builder"
+  ]
+ },
+ "infuser": {
+  "de": [
+   "Rezept des Infusers: der [[rftoolsbase:machine_frame]] in der Mitte, vier [[rftoolsbase:dimensionalshard]] in den Ecken, Redstone oben und unten, Diamanten links und rechts. Er speichert nur 60 000 RF, ein Akku daneben hält ihn am Laufen.",
+   "Voll infundiert gräbt der Builder 28 statt 8 Blöcke pro Tick. Die 64 Scherben der Quest sind ein Viertel davon."
+  ],
+  "en": [
+   "Infuser recipe: the [[rftoolsbase:machine_frame]] in the middle, four [[rftoolsbase:dimensionalshard]] in the corners, redstone top and bottom, diamonds left and right. It stores only 60,000 RF, a battery next to it keeps it running.",
+   "Fully infused, the Builder digs 28 instead of 8 blocks per tick. The 64 shards of the quest are a quarter of that."
+  ],
+  "sources": [
+   "rftoolsbase:machine_infuser (pattern srs/dMd/srs)",
+   "config/rftoolsbase-server.toml (maxInfuse 256, usePerTick 600, infuserMaxRF 60000)",
+   "config/rftoolsbuilder-server.toml (quarryBaseSpeed 8, quarryInfusionSpeedFactor 20)"
+  ]
+ },
+ "markers": {
+  "de": [
+   "Rezept: Glowstonestaub und Lapis um eine [[minecraft:redstone_torch]], unten rechts bleibt ein Feld frei. Die Marker dürfen bis zu 256 Blöcke auseinander stehen.",
+   "Mit den Markern baust du auch {{quarries/chunk_marker}} und {{quarries/flexible_marker}}, und fast jedes Modul von Quarry Plus braucht einen."
+  ],
+  "en": [
+   "Recipe: glowstone dust and lapis around a [[minecraft:redstone_torch]], the bottom right slot stays empty. Markers may stand up to 256 blocks apart.",
+   "From markers you also make {{quarries/chunk_marker}} and {{quarries/flexible_marker}}, and nearly every Quarry Plus module needs one."
+  ],
+  "sources": [
+   "quarryplus:marker (pattern glg/lrl/gl )",
+   "config/quarryplus.toml (markerPlusRange 256)"
+  ]
+ },
+ "chunk_marker": {
+  "de": [
+   "Ein [[quarryplus:flexible_marker]] lässt sich mit drei Redstone wieder in einen Chunk Marker zurückbauen, und umgekehrt mit drei grünen Farbstoffen. Du verlierst also nichts, wenn du dich umentscheidest.",
+   "Für den {{quarries/destroyer}} ist einer der beiden Pflicht."
+  ],
+  "en": [
+   "A [[quarryplus:flexible_marker]] turns back into a Chunk Marker with three redstone, and the other way round with three green dye. Nothing is lost if you change your mind.",
+   "The {{quarries/destroyer}} needs one of the two."
+  ],
+  "sources": [
+   "quarryplus:chunk_marker (pattern rrr/mmm)",
+   "quarryplus:chunk_marker_from_flexible_marker",
+   "quarryplus:flexible_marker_from_chunk_marker"
+  ]
+ },
+ "quarry": {
+  "de": [
+   "Auf Kronwerke ersetzt [[eternal_starlight:deepsilver_ingot]] das Eisen im Rezept, drei Barren aus der Sternenlicht-Welt ({{eternal_starlight/deepsilver}}). Der Block in der Mitte ist ein [[minecraft:dropper]] (Spender), dazu ein Redstone-Block.",
+   "Quarry Plus lädt auf Kronwerke **keine Chunks selbst**. Ohne zwangsgeladenen Chunk ({{quarries/chunkload}}) steht er still, sobald du weggehst."
+  ],
+  "en": [
+   "On Kronwerke [[eternal_starlight:deepsilver_ingot]] replaces the iron in the recipe, three ingots from the Starlight world ({{eternal_starlight/deepsilver}}). The block in the middle is a [[minecraft:dropper]], plus a block of redstone.",
+   "On Kronwerke Quarry Plus **loads no chunks by itself**. Without a force loaded chunk ({{quarries/chunkload}}) it stops as soon as you walk away."
+  ],
+  "sources": [
+   "quarryplus:quarry (pattern ioi/gDg/iRm, D = minecraft:dropper)",
+   "kubejs/server_scripts/kronwerke/round.js (iron becomes deepsilver)",
+   "config/quarryplus.toml (enableChunkLoader false)",
+   "docs/SERVER.md"
+  ]
+ },
+ "y_setter": {
+  "de": [
+   "Beide sind Werkzeuge, die du an der Maschine benutzt. In der Farmwelt liegen Diamanten anders verteilt als in Vanilla: Ihr Erz kommt dort auf jeder Höhe von Y -60 bis 432 vor, da bringt Tiefe allein nichts.",
+   "In der Oberwelt der Hauptwelt gilt die Regel der Quest."
+  ],
+  "en": [
+   "Both are tools you use on the machine. In the farm world diamonds are spread differently from vanilla: their ore appears at every height from Y -60 to 432, so depth alone gains nothing there.",
+   "In the main Overworld the rule of the quest holds."
+  ],
+  "sources": [
+   "quarryplus:y_setter (pattern ggg/imi)",
+   "quarryplus:status_checker",
+   "kubejs/data/kronwerke/worldgen/placed_feature/mine_diamond.json"
+  ],
+  "client": [
+   "how the Y Setter and the StatusChecker are used on the machine"
+  ]
+ },
+ "mover": {
+  "de": [
+   "Rezept: oben links ein Marker und ein Diamant, in der Mitte Eisen, Gold, Eisen, unten Amboss, Obsidian, Amboss. Glück macht jeden Block teurer, mit jeder Stufe um gut die Hälfte, Behutsamkeit vervierfacht den Strom pro Block.",
+   "Für Roherz in {{quarries/ore_stock}} nimm Glück, Behutsamkeit liefert Erzblöcke."
+  ],
+  "en": [
+   "Recipe: a marker and a diamond top left, iron, gold, iron in the middle, anvil, obsidian, anvil at the bottom. Fortune makes every block dearer, by about half with each level, Silk Touch multiplies the power per block by four.",
+   "For raw ore in {{quarries/ore_stock}} take Fortune, Silk Touch gives ore blocks."
+  ],
+  "sources": [
+   "quarryplus:mover (pattern md /igi/aoa)",
+   "config/quarryplus.toml (powerMap.quarry: breakFortuneCoefficient 1.587, breakSilktouchCoefficient 4.0, efficiencyCoefficient 1.585)"
+  ],
+  "client": [
+   "the Mover transfers enchantments from the pickaxe to the machine"
+  ]
+ },
+ "modules": {
+  "de": [
+   "Jedes Buch zählt: normale, verzauberte, Buch und Feder oder beschriebene Bücher. Das Modul kommt in die Modulplätze der Maschine.",
+   "Der Chunk Destroyer ({{quarries/destroyer}}) wirft gewöhnliche Blöcke auf Kronwerke ohnehin weg, das Modul brauchst du vor allem am normalen Quarry Plus."
+  ],
+  "en": [
+   "Any book counts: plain, enchanted, book and quill or written. The module goes into the module slots of the machine.",
+   "On Kronwerke the Chunk Destroyer ({{quarries/destroyer}}) throws away common blocks anyway, so you need the module mainly on the normal Quarry Plus."
+  ],
+  "sources": [
+   "quarryplus:filter_module (shapeless: 2 books, ender pearl, marker)",
+   "config/quarryplus.toml (removeCommonMaterialsByChunkDestroyer true)",
+   "quarryplus lang: item.quarryplus.filter_module = Void Module"
+  ],
+  "client": [
+   "the module is put into module slots of the machine"
+  ]
+ },
+ "exp": {
+  "de": [
+   "Als Trank zählt jede Flasche aus dem Braustand, auch eine [[minecraft:potion]] mit Wasser. Es gibt ein zweites Rezept mit zwei leeren [[minecraft:glass_bottle]], dann steht unten rechts ein Diamantblock statt eines Goldblocks.",
+   "Das Sammeln kostet pro Punkt Erfahrung etwas Strom."
+  ],
+  "en": [
+   "Any bottle from the brewing stand counts as the potion, a water bottle ([[minecraft:potion]]) too. A second recipe uses two empty [[minecraft:glass_bottle]], then a block of diamond sits bottom right instead of a block of gold.",
+   "Collecting costs a little power per point of experience."
+  ],
+  "sources": [
+   "quarryplus:exp_module (pattern epe/mhp/GhG, p = minecraft:potion)",
+   "quarryplus:exp_module_from_empty_bottle",
+   "config/quarryplus.toml (expCollect 2.5)"
+  ]
+ },
+ "repeat": {
+  "de": [
+   "Genau: drei [[minecraft:amethyst_shard]], vier [[minecraft:prismarine_shard]], der [[minecraft:dragon_breath]] in der Mitte und der Marker unten rechts.",
+   "Den Drachen triffst du im End, das ist Stufe 4 und läuft auf einem eigenen Server ({{the_end/dragon}}). Nimm gleich mehrere leere Flaschen mit, die Belohnung gibt dir zwei Atem zurück."
+  ],
+  "en": [
+   "Exactly: three [[minecraft:amethyst_shard]], four [[minecraft:prismarine_shard]], the [[minecraft:dragon_breath]] in the middle and the marker bottom right.",
+   "You meet the dragon in the End, which is stage 4 and runs on a server of its own ({{the_end/dragon}}). Take several empty bottles, the reward gives you two breaths back."
+  ],
+  "sources": [
+   "quarryplus:repeat_tick_module (pattern apa/pwp/apm)",
+   "core: config KronwerkeConfig dimensionServers (the_end=end)"
+  ]
+ },
+ "bedrock": {
+  "de": [
+   "**Auf Kronwerke ist das Modul abgeschaltet.** Du kannst es bauen, aber die Maschine ignoriert es, und der Tooltip sagt, dass es deaktiviert ist. Das Grundgestein bleibt also stehen.",
+   "Für die Quest reicht es, das Modul herzustellen. Weiter geht es mit {{quarries/repeat}} und {{quarries/destroyer}}."
+  ],
+  "en": [
+   "**On Kronwerke this module is switched off.** You can craft it, but the machine ignores it and its tooltip says it is disabled. Bedrock stays where it is.",
+   "Crafting the module is enough for the quest. Go on with {{quarries/repeat}} and {{quarries/destroyer}}."
+  ],
+  "sources": [
+   "config/quarryplus.toml (enableMap remove_bedrock_module = false)",
+   "quarryplus jar: com/yogpc/qp/machine/module/ModuleInventory.itemValidation (skips disabled QpItem), QpItem.appendHoverText (disable_item_message)",
+   "docs/SERVER.md (bedrock module off)"
+  ]
+ },
+ "destroyer": {
+  "de": [
+   "Rezept: zwei [[quarryplus:quarry]], zwei Diamantblöcke, zwei Smaragdblöcke, ein [[minecraft:dragon_head]] oben, ein [[minecraft:nether_star]] in der Mitte und ein einziges [[minecraft:ender_eye]] unten. Den Drachenkopf holst du dir im End ({{the_end/t_dragon_head}}).",
+   "Gewöhnliche Blöcke wie Stein und Erde wirft der Chunk Destroyer auf Kronwerke von selbst weg. Draconium zählt im Obelisken mit, wie viel genau gebraucht wird, hängt von der Zahl aktiver Spieler ab."
+  ],
+  "en": [
+   "Recipe: two [[quarryplus:quarry]], two blocks of diamond, two blocks of emerald, a [[minecraft:dragon_head]] at the top, a [[minecraft:nether_star]] in the middle and a single [[minecraft:ender_eye]] at the bottom. You get the dragon head in the End ({{the_end/t_dragon_head}}).",
+   "On Kronwerke the Chunk Destroyer throws away common blocks like stone and dirt by itself. Draconium counts at the obelisk; how much is needed depends on the number of active players."
+  ],
+  "sources": [
+   "quarryplus:adv_quarry (pattern dhd/qsq/eie)",
+   "config/quarryplus.toml (removeCommonMaterialsByChunkDestroyer true)",
+   "config/kronwerke/goals.json (stage4 draconium_ingot base 1000, scale true)"
+  ]
+ },
+ "miner": {
+  "de": [
+   "Den [[mekanism:digital_miner]] gibt es schon ab Stufe 3, Aufbau und Filter stehen in {{mekanism_advanced/miner}} und {{mekanism_advanced/miner_setup}}.",
+   "Er ist der richtige Weg, wenn du nur ein bestimmtes Erz willst und die Landschaft behalten möchtest."
+  ],
+  "en": [
+   "The [[mekanism:digital_miner]] is available from stage 3, setup and filters are in {{mekanism_advanced/miner}} and {{mekanism_advanced/miner_setup}}.",
+   "It is the right choice when you want one particular ore and want to keep the landscape."
+  ],
+  "sources": [
+   "helpq item mekanism:digital_miner (stage 3)",
+   "qbook chapters/mekanism_advanced.json"
+  ]
+ },
+ "coe": {
+  "de": [
+   "Aufbau und Bohrer findest du bei {{create_addons/ore_excavation}}. Die Bohrmaschine und der Eisenbohrer sind Stufe 3, Diamant- und Netheritbohrer Stufe 4.",
+   "Die meisten Adern liegen in der Oberwelt, Quarz, Glowstone, Nethergold und Netherit im Nether. Ein Drill fördert eine Ader nie leer."
+  ],
+  "en": [
+   "Setup and drills are in {{create_addons/ore_excavation}}. The drilling machine and the iron drill are stage 3, the diamond and netherite drills stage 4.",
+   "Most veins lie in the Overworld; quartz, glowstone, nether gold and netherite are in the Nether. A drill never empties a vein."
+  ],
+  "sources": [
+   "config/createoreexcavation-server.toml (defaultInfinite true)",
+   "createoreexcavation:ore_vein_type/* (biomeWhitelist)",
+   "kubejs/data/kronwerke/chapters/stages/stage3.json, stage4.json"
+  ]
+ },
+ "coe_netherite": {
+  "de": [
+   "Am Schmiedetisch brauchst du außer dem Netheritbarren eine [[minecraft:netherite_upgrade_smithing_template]]. Der Diamantbohrer selbst: ein Diamantblock oben links, ein [[createoreexcavation:drill]] in der Mitte, Diamanten drumherum.",
+   "Netheritadern gibt es nur in Netherbiomen, also auf dem Netherserver. Neben Antikem Schutt bringen sie oft Goldnuggets, Netherrack und Magmablöcke. Gehärtete Diamantadern liegen in der Oberwelt und sind selten."
+  ],
+  "en": [
+   "Besides the netherite ingot the smithing table needs a [[minecraft:netherite_upgrade_smithing_template]]. The diamond drill itself: a block of diamond top left, a [[createoreexcavation:drill]] in the middle, diamonds around it.",
+   "Netherite veins only exist in Nether biomes, so on the Nether server. Besides ancient debris they often give gold nuggets, netherrack and magma blocks. Hardened diamond veins lie in the Overworld and are rare."
+  ],
+  "sources": [
+   "createoreexcavation:diamond_drill (pattern bi /idi/ ii)",
+   "minecraft:netherite_drill_smithing",
+   "createoreexcavation:drilling/netherite",
+   "createoreexcavation:drilling/hardened_diamond",
+   "createoreexcavation:ore_vein_type/netherite, hardened_diamond (spacing 512)"
+  ]
+ },
+ "oritech": {
+  "de": [
+   "Rahmen und Zerstörer baust du in {{oritech/destroyer}}. Der Rahmen darf höchstens 64 Blöcke lang sein.",
+   "Je härter ein Block, desto länger braucht der Zerstörer dafür."
+  ],
+  "en": [
+   "You build the frame and the destroyer in {{oritech/destroyer}}. The frame may be at most 64 blocks long.",
+   "The harder a block, the longer the destroyer takes for it."
+  ],
+  "sources": [
+   "config/oritech-common.toml (machineFrameMaxLength 64, blockBreakHardnessExponentialFactor)"
+  ]
+ },
+ "chunkload": {
+  "de": [
+   "Quarry Plus lädt auf Kronwerke keine Chunks, der Builder nur den, in dem er gerade gräbt. Der Chunk der Maschine selbst muss also zwangsgeladen sein, sonst steht alles still, wenn niemand in der Nähe ist.",
+   "Die 25 Chunks teilt sich das ganze Team, plan Basis, Farmen und Steinbruch zusammen."
+  ],
+  "en": [
+   "On Kronwerke Quarry Plus loads no chunks, the Builder only the one it is digging in. The machine's own chunk must be force loaded, or everything stops when nobody is near.",
+   "The whole team shares the 25 chunks, so plan base, farms and quarry together."
+  ],
+  "sources": [
+   "config/quarryplus.toml (enableChunkLoader false)",
+   "config/rftoolsbuilder-server.toml (quarryChunkloads true)",
+   "docs/SERVER.md"
+  ],
+  "client": [
+   "the key and the click on the FTB Chunks map that force load a chunk"
+  ]
+ },
+ "power": {
+  "de": [
+   "Ein Elite-Universalkabel entsteht aus acht Fortgeschrittenen Universalkabeln um eine [[mekanism:alloy_reinforced]]. Der Energie-P2P-Tunnel behält 2,5 Prozent der Energie ein.",
+   "Steht der Steinbruch auf einem anderen Server, etwa in der Farmwelt oder im Nether, bringen Flux Networks, Powah-Ender-Zellen oder Mekanism-Quantenverschränkungsporter den Strom aus der Basis hinüber."
+  ],
+  "en": [
+   "An elite universal cable is made of eight advanced universal cables around a [[mekanism:alloy_reinforced]]. The energy P2P tunnel keeps 2.5 percent of the energy.",
+   "If the quarry stands on another server, such as the farm world or the Nether, Flux Networks, Powah ender cells or Mekanism quantum entangloporters bring the power over from your base."
+  ],
+  "sources": [
+   "mekanism:transmitter/universal_cable/elite",
+   "config/ae2-common.toml (p2pTunnelEnergyTax 0.025)",
+   "core/README.md (The network)"
+  ]
+ },
+ "space_chamber": {
+  "de": [
+   "Raumkarte genau: [[minecraft:bricks]] oben und unten (der Block), in der Mitte Redstone, Eisen, Redstone. Die sieben Kammern und der Controller verbrauchen acht Machine Frames, also 32 Stahlbarren.",
+   "Truhen nimmt der Builder mit, ihr Inhalt wandert laut Konfiguration aber nicht mit. Räum sie vor dem Umzug leer."
+  ],
+  "en": [
+   "Space chamber card exactly: [[minecraft:bricks]] top and bottom (the block), redstone, iron, redstone in the middle. The seven chambers and the controller use eight Machine Frames, that is 32 steel ingots.",
+   "The Builder moves chests, but by config their contents do not travel along. Empty them before the move."
+  ],
+  "sources": [
+   "rftoolsbuilder:space_chamber_card (pattern  B /rir/ B )",
+   "rftoolsbuilder:space_chamber, space_chamber_controller",
+   "rftoolsbase:machine_frame",
+   "config/rftoolsbuilder-server.toml (maxSpaceChamberDimension 128, tileEntityMode MOVE_BLACKLIST, blackWhiteListedNBTBlocks minecraft:chest=false)"
+  ],
+  "client": [
+   "a chest moved by the Builder arrives empty"
+  ]
+ },
+ "composer": {
+  "de": [
+   "Hier sind es einzelne [[minecraft:brick]], nicht Ziegelsteinblöcke, vier Stück an den Seiten. Die Formkarten, die du zusammensetzt, legst du in den Composer.",
+   "Die Form darf bis zu 512 Blöcke pro Seite groß sein."
+  ],
+  "en": [
+   "Here it is single [[minecraft:brick]] items, not brick blocks, four of them on the sides. You put the shape cards you combine into the Composer.",
+   "The shape may be up to 512 blocks per side."
+  ],
+  "sources": [
+   "rftoolsbuilder:composer (pattern PQP/QFQ/PQP, Q = minecraft:brick)",
+   "config/rftoolsbuilder-server.toml (maxBuilderDimension 512)"
+  ],
+  "client": [
+   "how the shape cards go into the Composer"
+  ]
+ },
+ "liquid_card": {
+  "de": [
+   "Wie die Pumpkarte braucht sie eine leere Formkarte, nur mit Eisen statt leerer Eimer an den Seiten. Die Eimer im Rezept sind Wasser und Lava, nicht leer.",
+   "Lava für die Form kann aus der Pumpkarte kommen ({{quarries/pump}})."
+  ],
+  "en": [
+   "Like the pump card it takes a plain shape card, with iron instead of empty buckets on the sides. The buckets in the recipe are water and lava, not empty.",
+   "Lava for the shape can come from the pump card ({{quarries/pump}})."
+  ],
+  "sources": [
+   "rftoolsbuilder:shape_card_liquid (pattern rWr/iMi/rLr)"
+  ],
+  "client": [
+   "the liquid card takes its fluid from a tank next to the Builder"
+  ]
+ },
+ "adv_pump": {
+  "de": [
+   "Das lohnt sich: Ein Flüssigkeitsblock kostet den Quarry Plus fünfmal so viel Strom wie ein normaler Block. Pump das Loch also leer, bevor der Kopf hineinfährt.",
+   "Die Pumpe braucht wie alle Maschinen von Quarry Plus eigenen FE-Strom."
+  ],
+  "en": [
+   "It pays off: a fluid block costs the Quarry Plus five times the power of a normal block. Pump the hole empty before the head goes in.",
+   "Like every Quarry Plus machine the pump needs FE power of its own."
+  ],
+  "sources": [
+   "quarryplus:adv_pump (pattern ibi/rdr/imi)",
+   "config/quarryplus.toml (powerMap.quarry breakBlockBase 25, breakBlockFluid 125)"
+  ]
+ },
+ "flexible_marker": {
+  "de": [
+   "Mit drei Redstone über dem Flexible Marker baust du ihn zurück in einen Chunk Marker. Er zählt wie alle Marker für die Rezepte von Quarry Plus.",
+   "Als Nächstes {{quarries/destroyer}}."
+  ],
+  "en": [
+   "Three redstone over the Flexible Marker turn it back into a Chunk Marker. Like every marker it counts for the Quarry Plus recipes.",
+   "Next: {{quarries/destroyer}}."
+  ],
+  "sources": [
+   "quarryplus:flexible_marker_from_chunk_marker",
+   "quarryplus:chunk_marker_from_flexible_marker",
+   "config/quarryplus.toml (flexibleMarkerRange 256)"
+  ]
+ },
+ "placer": {
+  "de": [
+   "Oben in der Mitte gehört ein [[minecraft:dispenser]] (Werfer) hinein, kein Spender. Der Rest: zwei Goldbarren oben, drei [[minecraft:mossy_cobblestone]], ein Redstone, ein Eisenbarren und ein Marker.",
+   "Die Belohnung gibt dir zwei Werfer für den nächsten Placer zurück."
+  ],
+  "en": [
+   "The top middle slot takes a [[minecraft:dispenser]], not a dropper. The rest: two gold ingots on top, three [[minecraft:mossy_cobblestone]], one redstone, an iron ingot and a marker.",
+   "The reward gives you two dispensers back for the next Placer."
+  ],
+  "sources": [
+   "quarryplus:placer_plus (pattern GDG/MRM/MIm, D = minecraft:dispenser)"
+  ]
+ },
+ "ore_stock": {
+  "de": [
+   "Die Quest zählt nur [[minecraft:raw_iron]], [[minecraft:raw_copper]] und [[minecraft:raw_gold]], keine Erzblöcke. Mit der Behutsamkeitskarte oder Behutsamkeit am Quarry Plus bekommst du Erzblöcke, die hier nicht zählen.",
+   "Von einem anderen Server holst du die Ausbeute mit einem Quantenverschränkungsporter, einer QIO-Frequenz oder einer Ender-Schublade nach Hause."
+  ],
+  "en": [
+   "The quest counts only [[minecraft:raw_iron]], [[minecraft:raw_copper]] and [[minecraft:raw_gold]], not ore blocks. The silk card or Silk Touch on the Quarry Plus give ore blocks, which do not count here.",
+   "From another server you bring the haul home with a quantum entangloporter, a QIO frequency or an ender drawer."
+  ],
+  "sources": [
+   "quest tasks (exact item ids)",
+   "core/README.md (The network)"
+  ]
+ },
+ "sample_drill": {
+  "de": [
+   "Der Probebohrer entsteht im Mechanischen Handwerk: Messingbleche, eine Elektronenröhre, ein [[create:precision_mechanism]], ein [[create:brass_casing]] (Messingrahmen), zwei Robuste Bleche und ein [[create:mechanical_drill]].",
+   "Der Atlas: oben eine Truhe und ein Amethystsplitter, unten eine Karte und ein Buch und Feder. Beide sind schon Stufe 3."
+  ],
+  "en": [
+   "The sample drill is made in mechanical crafting: brass sheets, an electron tube, a [[create:precision_mechanism]], a [[create:brass_casing]], two sturdy sheets and a [[create:mechanical_drill]].",
+   "The atlas: a chest and an amethyst shard on top, a map and a book and quill below. Both are already stage 3."
+  ],
+  "sources": [
+   "createoreexcavation:sample_drill (create:mechanical_crafting beb/mCb/sDs)",
+   "createoreexcavation:vein_atlas (pattern ca/mb)",
+   "kubejs/data/kronwerke/chapters/stages/stage3.json"
+  ]
+ }
+}

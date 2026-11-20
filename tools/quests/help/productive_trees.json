@@ -1,0 +1,783 @@
+{
+ "market": {
+  "de": [
+   "Den [[farmingforblockheads:market]] baust du aus Brettern, roter Wolle und fünf Stämmen ({{food/f_market}}). Er führt genau 56 Setzlinge von Productive Trees: 6 für 1 Smaragd, 23 für 2 und 27 für 4.",
+   "Die Belohnung gibt dir 4 Smaragde zurück, genug für zwei weitere Setzlinge aus Generation 2."
+  ],
+  "en": [
+   "You build the [[farmingforblockheads:market]] from planks, red wool and five logs ({{food/f_market}}). It sells exactly 56 Productive Trees saplings: 6 for 1 emerald, 23 for 2 and 27 for 4.",
+   "The reward gives you 4 emeralds back, enough for two more generation 2 saplings."
+  ],
+  "sources": [
+   "farmingforblockheads:market (pattern PCP/W W/WWW)",
+   "kubejs/data/kronwerke/recipe/market/productivetrees/ + market_presets/productivetrees_saplings_1..3.json"
+  ]
+ },
+ "first_tree": {
+  "de": [
+   "Vier reife Blätter reichen für die 12 Walnüsse. Rösten geht im [[minecraft:smoker]] am schnellsten: **1 Sekunde** pro Nuss, im Ofen sind es 6.",
+   "Weiter geht es mit {{productive_trees/crates}} und dem Pflanztopf in {{productive_trees/pots}}."
+  ],
+  "en": [
+   "Four ripe leaves are enough for the 12 walnuts. Roasting is fastest in the [[minecraft:smoker]]: **1 second** per nut, the furnace takes 6.",
+   "Next come {{productive_trees/crates}} and the botany pot in {{productive_trees/pots}}."
+  ],
+  "sources": [
+   "productivetrees:roasting/roasted_walnut_smoking (cookingtime 20)",
+   "productivetrees:roasting/roasted_walnut_smelting (cookingtime 120)"
+  ]
+ },
+ "crates": {
+  "de": [
+   "Im [[minecraft:smoker]] röstet eine ganze Kiste in 9 Sekunden statt 54 im Ofen. Eine geröstete Kiste packst du formlos wieder in neun geröstete Walnüsse aus.",
+   "Für die Sammelquests zählen nur die einzelnen Nüsse, keine Kisten ({{productive_trees/fan_roast}}, {{productive_trees/nut_list}})."
+  ],
+  "en": [
+   "In the [[minecraft:smoker]] a whole crate roasts in 9 seconds instead of 54 in the furnace. A roasted crate unpacks shapeless into nine roasted walnuts again.",
+   "The collecting quests only count single nuts, not crates ({{productive_trees/fan_roast}}, {{productive_trees/nut_list}})."
+  ],
+  "sources": [
+   "productivetrees:roasting/roasted_walnut_crate_smoking (cookingtime 180)",
+   "productivetrees:roasting/roasted_walnut_crate_smelting (cookingtime 1080)",
+   "productivetrees:crates/roasted_walnut_crate_unpack"
+  ]
+ },
+ "mega": {
+  "de": [
+   "Pekannuss kostet 2 Smaragde, das Quadrat also 8. Im Pflanztopf reicht ein einziger Pekannuss-Setzling, dort gibt es keine Riesenform.",
+   "Der Pflanztopf liefert 3 Pekannüsse pro Ernte, dazu zwei Stämme."
+  ],
+  "en": [
+   "Pecan costs 2 emeralds, so the square costs 8. In a botany pot a single pecan sapling is enough, there is no giant form there.",
+   "The pot gives 3 pecans per harvest, plus two logs."
+  ],
+  "sources": [
+   "kubejs/data/kronwerke/recipe/market/productivetrees/ + market_presets/productivetrees_saplings_1..3.json",
+   "productivetrees:botanypots/pecan",
+   "productivetrees jar: worldgen/configured_feature/pecan_mega.json (no single form)"
+  ]
+ },
+ "pots": {
+  "de": [
+   "Den [[botanypots:terracotta_botany_pot]] töpferst du in {{cooking/pot}}, zum Trichtertopf wird er formlos mit einem Trichter ({{cooking/hopper_pot}}). Die 2 Minuten gelten für den Setzling, die Erde im Topf kann das Tempo ändern.",
+   "Eine Reihe Töpfe für Holz steht in {{farms/wood_pots}}."
+  ],
+  "en": [
+   "You make the [[botanypots:terracotta_botany_pot]] in {{cooking/pot}}, a hopper turns it shapeless into the hopper pot ({{cooking/hopper_pot}}). The 2 minutes are the sapling's time; the soil in the pot can change the speed.",
+   "A row of pots for wood is in {{farms/wood_pots}}."
+  ],
+  "sources": [
+   "productivetrees:botanypots/walnut (grow_time 2400)",
+   "botanypots:botanypots/crafting/terracotta_hopper_botany_pot"
+  ],
+  "client": [
+   "growth speed depends on the soil in the pot"
+  ]
+ },
+ "fan_roast": {
+  "de": [
+   "Die Quest zählt nur einzelne [[productivetrees:roasted_walnut]]. Geröstete Kisten musst du formlos auspacken, sieben Kisten ergeben 63 Nüsse.",
+   "Der [[create:encased_fan]] braucht Rotation, und das Lagerfeuer muss direkt vor dem Lüfter im Luftstrom stehen."
+  ],
+  "en": [
+   "The quest only counts single [[productivetrees:roasted_walnut]]. Unpack roasted crates shapeless; seven crates give 63 nuts.",
+   "The [[create:encased_fan]] needs rotation, and the campfire must sit right in front of the fan in its air stream."
+  ],
+  "sources": [
+   "productivetrees:roasting/roasted_walnut_smoking",
+   "productivetrees:crates/roasted_walnut_crate_unpack"
+  ],
+  "client": [
+   "the campfire sits in the fan's air stream"
+  ]
+ },
+ "nut_list": {
+  "de": [
+   "Die Zuchtwege: Hasel aus Espe und Buche, Ginkgo aus Wenge und Silberlinde, Kerzennuss aus Ginkgo und Hasel, Mandel aus Pflaume und Walnuss, Pistazie aus Mandel und Cashew. Die Pistazie ist mit Generation 7 die tiefste.",
+   "Jede geröstete Nuss braucht im Räucherofen nur 1 Sekunde."
+  ],
+  "en": [
+   "The breeding routes: hazel from aspen and beech, ginkgo from wenge and silver lime, candlenut from ginkgo and hazel, almond from plum and walnut, pistachio from almond and cashew. Pistachio is the deepest at generation 7.",
+   "Each roasted nut takes only 1 second in the smoker."
+  ],
+  "sources": [
+   "productivetrees:pollination/* (recipe dump)",
+   "productivetrees:roasting/*_smoking"
+  ]
+ },
+ "fruit_basket": {
+  "de": [
+   "Die sechs Setzlinge kosten zusammen 18 Smaragde. Im Pflanztopf gibt es pro Ernte nur einen Apfel oder eine Birne, aber drei Bananen und je zwei Vogelkirschen und Oliven.",
+   "Für vier Äpfel brauchst du also vier Ernten, etwa acht Minuten pro Topf."
+  ],
+  "en": [
+   "The six saplings cost 18 emeralds together. In a botany pot each harvest gives only one apple or pear, but three bananas and two each of wild cherries and olives.",
+   "So four apples take four harvests, about eight minutes per pot."
+  ],
+  "sources": [
+   "kubejs/data/kronwerke/recipe/market/productivetrees/ + market_presets/productivetrees_saplings_1..3.json",
+   "productivetrees:botanypots/granny_smith_apple, sand_pear, golden_delicious_apple, banana, wild_cherry, olive",
+   "cookingforblockheads:fruit_basket (pattern SPS)"
+  ]
+ },
+ "compost": {
+  "de": [
+   "Ein Blatt füllt den Komposter nur mit 30 Prozent Chance, für ein Knochenmehl brauchst du im Schnitt gut 20 Blätter. Früchte und Nüsse gehen mit 65 Prozent, Setzlinge mit 30.",
+   "Die Quest zählt jedes [[minecraft:bone_meal]], auch das aus Knochen von Skeletten."
+  ],
+  "en": [
+   "A leaf fills the composter with only a 30 percent chance, so one bone meal takes a bit over 20 leaves on average. Fruits and nuts go in at 65 percent, saplings at 30.",
+   "The quest counts any [[minecraft:bone_meal]], also the bone meal from skeleton bones."
+  ],
+  "sources": [
+   "productivetrees jar: data/neoforge/data_maps/item/compostables.json"
+  ]
+ },
+ "sawmill_run": {
+  "de": [
+   "Das [[productivetrees:sawmill]] hat auf Kronwerke drei [[create:andesite_alloy]] statt Eisen im Rezept ({{cooking/sawmill}}). Für Papier gibt es ein besseres Rezept: **drei Sägemehl in einer Reihe ergeben 6 Papier**, weil Sägemehl als Holzstaub zählt.",
+   "Die 32 Sägemehl der Quest sind 16 Stämme."
+  ],
+  "en": [
+   "On Kronwerke the [[productivetrees:sawmill]] takes three [[create:andesite_alloy]] instead of iron ({{cooking/sawmill}}). There is a better paper recipe: **three sawdust in a row give 6 paper**, because sawdust counts as wood dust.",
+   "The 32 sawdust of the quest are 16 logs."
+  ],
+  "sources": [
+   "kubejs/server_scripts/kronwerke/links.js (sawmill iron becomes andesite alloy)",
+   "productivetrees:sawmill (dump)",
+   "mekanism:paper (#c:dusts/wood x3, 6 paper)",
+   "productivetrees jar: data/c/tags/item/dusts/wood.json",
+   "productivetrees:sawmill/oak_planks_from_log"
+  ]
+ },
+ "stripper": {
+  "de": [
+   "Die Belohnung, eine [[minecraft:iron_axe]], reicht für 250 Stämme, eine Diamantaxt hält über 1 500. Den Rindenslot brauchst du für {{productive_trees/strip_drops}} und den Zimt in {{productive_trees/spices}}.",
+   "Weiter geht es mit {{productive_trees/upgrades}}."
+  ],
+  "en": [
+   "The reward, an [[minecraft:iron_axe]], lasts for 250 logs, a diamond axe for over 1,500. You need the bark slot for {{productive_trees/strip_drops}} and the cinnamon in {{productive_trees/spices}}.",
+   "Next: {{productive_trees/upgrades}}."
+  ],
+  "sources": [
+   "productivetrees:stripper (pattern #L#/III/###)",
+   "productivetrees jar: StripperBlockEntity (hurtAndBreak 1 per block)"
+  ]
+ },
+ "wood_set": {
+  "de": [
+   "Bretter holst du am besten aus dem Sägewerk, 6 statt 4 pro Stamm. Die Bücherregale stehen im Block-Tag für Zauberkraft, sie wirken also am Zaubertisch.",
+   "Jede Holzsorte hat eigene Rezepte in EMI, gleich aufgebaut wie bei Eiche."
+  ],
+  "en": [
+   "Planks are best taken from the sawmill, 6 instead of 4 per log. The bookshelves are in the block tag for enchanting power, so they work at the enchanting table.",
+   "Every wood has its own recipes in EMI, laid out as for oak."
+  ],
+  "sources": [
+   "productivetrees:sawmill/* (6 planks)",
+   "productivetrees jar: data/minecraft/tags/block/enchantment_power_provider.json",
+   "productivetrees:bookshelves/*",
+   "supplementaries:way_sign_cork_oak/productivetrees/cork_oak"
+  ]
+ },
+ "create_saw": {
+  "de": [
+   "Rezept der [[create:mechanical_saw]]: drei Eisenbleche, ein Eisenbarren und ein [[create:andesite_casing]]. Sie schneidet auch Bretter in Treppen, Stufen, Zäune, Türen und Schilder jeder Productive-Trees-Art.",
+   "Für Sägemehl und Farbstoffe aus Blauholz oder Gelbholz bleib beim Sägewerk, die Säge gibt nur Bretter."
+  ],
+  "en": [
+   "[[create:mechanical_saw]] recipe: three iron sheets, an iron ingot and an [[create:andesite_casing]]. It also cuts planks into stairs, slabs, fences, doors and signs of every Productive Trees wood.",
+   "For sawdust and the dyes from logwood or old fustic stay with the sawmill, the saw only gives planks."
+  ],
+  "sources": [
+   "create:crafting/kinetics/mechanical_saw",
+   "create:cutting/runtime_generated/compat/productivetrees/*"
+  ]
+ },
+ "wood_palette": {
+  "de": [
+   "Kosten: Teak 1 Smaragd, Balsa, Ipe, Rotahorn und Eibe je 2. Im Sägewerk sind 16 Bretter drei Stämme, an der Werkbank vier.",
+   "Die Eibe braucht vier Setzlinge im Quadrat, also 8 Smaragde, oder einen im Pflanztopf."
+  ],
+  "en": [
+   "Prices: teak 1 emerald, balsa, ipe, red maple and yew 2 each. In the sawmill 16 planks are three logs, at the crafting table four.",
+   "Yew needs four saplings in a square, so 8 emeralds, or one in a botany pot."
+  ],
+  "sources": [
+   "kubejs/data/kronwerke/recipe/market/productivetrees/ + market_presets/productivetrees_saplings_1..3.json",
+   "productivetrees:sawmill/* (6 planks)",
+   "productivetrees jar: worldgen/configured_feature/yew_mega.json",
+   "productivetrees:botanypots/yew"
+  ]
+ },
+ "upgrades": {
+  "de": [
+   "Die Upgrade-Basis: vier Stöcke, drei Smaragde, ein Diamant und ein [[productivebees:honey_treat]] ({{bees/treat}}). Für Upgrade: Speedier kommen zwei Nethersterne, zwei Herzen des Meeres und vier Speed-Upgrades um eine weitere Basis.",
+   "Mehr zu den Upgrades steht in {{bees/upgrades}} und {{bees/time_upgrade}}."
+  ],
+  "en": [
+   "The upgrade base: four sticks, three emeralds, a diamond and a [[productivebees:honey_treat]] ({{bees/treat}}). Upgrade: Speedier takes two nether stars, two hearts of the sea and four speed upgrades around another base.",
+   "More about the upgrades is in {{bees/upgrades}} and {{bees/time_upgrade}}."
+  ],
+  "sources": [
+   "productivelib:upgrades/base_pb (pattern SES/ETE/SDS)",
+   "productivelib:upgrades/time",
+   "productivelib:upgrades/time_2_bees (pattern UHU/SBS/UHU)",
+   "helpq item productivebees:honey_treat (stage 2)"
+  ]
+ },
+ "fruit_trees": {
+  "de": [
+   "Der Granny-Smith-Apfel kostet 2 Smaragde, der Red-Delicious-Apfel 1. Im Pflanztopf gibt der Red Delicious zwei Vanilla-[[minecraft:apple]] pro Ernte, das ist die einfachste Apfelfarm.",
+   "Ein [[minecraft:golden_apple]] braucht acht Goldbarren um einen Apfel."
+  ],
+  "en": [
+   "The Granny Smith apple costs 2 emeralds, the Red Delicious 1. In a botany pot the Red Delicious gives two vanilla [[minecraft:apple]] per harvest, the easiest apple farm.",
+   "A [[minecraft:golden_apple]] takes eight gold ingots around an apple."
+  ],
+  "sources": [
+   "kubejs/data/kronwerke/recipe/market/productivetrees/ + market_presets/productivetrees_saplings_1..3.json",
+   "productivetrees:botanypots/red_delicious_apple",
+   "minecraft:golden_apple"
+  ]
+ },
+ "citrus": {
+  "de": [
+   "Die Eltern kosten 1 (Silberlinde) und 4 Smaragde (Sauerkirsche). Bei 5 Prozent lohnt sich Pollen ({{productive_trees/pollen}}): Pollen der Silberlinde auf ein Blatt der Sauerkirsche bestäubt sofort.",
+   "Danach stehen Pomelo und Key-Lime in {{productive_trees/gen5b}}."
+  ],
+  "en": [
+   "The parents cost 1 (silver lime) and 4 emeralds (sour cherry). At 5 percent pollen pays off ({{productive_trees/pollen}}): silver lime pollen on a sour cherry leaf pollinates at once.",
+   "Pomelo and key lime come next in {{productive_trees/gen5b}}."
+  ],
+  "sources": [
+   "kubejs/data/kronwerke/recipe/market/productivetrees/ + market_presets/productivetrees_saplings_1..3.json",
+   "productivetrees:pollination/citron (chance 0.05)"
+  ],
+  "client": [
+   "pollen of one parent on a leaf of the other works in this direction"
+  ]
+ },
+ "tropical": {
+  "de": [
+   "Die Banane kostet 4 Smaragde. Im Pflanztopf gibt sie 3 Bananen pro Ernte, ohne das langsame Reifen am Baum. Kokospalme und Mango geben dort je eine Frucht pro Ernte.",
+   "**Kakao im Pflanztopf gibt keine Kakaobohnen**, nur Stämme und Blätter. Für die Bohnen brauchst du den Baum in der Welt."
+  ],
+  "en": [
+   "The banana costs 4 emeralds. In a botany pot it gives 3 bananas per harvest, without the slow ripening on the tree. Coconut and mango give one fruit each per harvest there.",
+   "**Cacao in a botany pot gives no cocoa beans**, only logs and leaves. For the beans you need the tree in the world."
+  ],
+  "sources": [
+   "kubejs/data/kronwerke/recipe/market/productivetrees/ + market_presets/productivetrees_saplings_1..3.json",
+   "productivetrees:botanypots/banana, coconut, mango, cacao"
+  ]
+ },
+ "berries": {
+  "de": [
+   "Espe kostet 4 Smaragde, Erle 2. Aus demselben Paar entstehen Holunder und Eberesche, die Biene würfelt jedes Mal, welches Rezept sie versucht.",
+   "Den Holunder brauchst du später für den Wacholder (Holunder und Weißtanne)."
+  ],
+  "en": [
+   "Aspen costs 4 emeralds, alder 2. The same pair gives elderberry and rowan, and the bee rolls each time which recipe it tries.",
+   "You need the elderberry later for the juniper (elderberry and silver fir)."
+  ],
+  "sources": [
+   "kubejs/data/kronwerke/recipe/market/productivetrees/ + market_presets/productivetrees_saplings_1..3.json",
+   "productivetrees:pollination/elderberry, rowan, juniper"
+  ]
+ },
+ "nuts": {
+  "de": [
+   "Im [[minecraft:smoker]] röstet eine Nuss in **1 Sekunde**, im Ofen in 6. Die Kaffeepflanze kreuzt du aus Schwarzkirsche und Kakao.",
+   "Alle zwölf Nüsse sammelst du in {{productive_trees/nut_list}}."
+  ],
+  "en": [
+   "In the [[minecraft:smoker]] a nut roasts in **1 second**, in the furnace in 6. You cross the coffee tree from black cherry and cacao.",
+   "All twelve nuts are collected in {{productive_trees/nut_list}}."
+  ],
+  "sources": [
+   "productivetrees:roasting/roasted_cashew_smoking (cookingtime 20)",
+   "productivetrees:roasting/roasted_cashew_smelting (cookingtime 120)",
+   "productivetrees:pollination/coffea"
+  ]
+ },
+ "spices": {
+  "de": [
+   "Der Weg zum Zimt: Gelbes Meranti und Kapok ergeben Mahagoni, Mahagoni und Teak den Palisander, Palisander und Teak den Zimt. Ein Zimtsetzling im Pflanztopf gibt keinen Zimt, nur Stämme für den Entrinder.",
+   "Kein Rezept im Pack verwendet Zimt, Nelke, Muskat, Sternanis oder Piment, nur ihre Kisten."
+  ],
+  "en": [
+   "The route to cinnamon: yellow meranti and kapok give mahogany, mahogany and teak the rosewood, rosewood and teak the cinnamon. A cinnamon sapling in a botany pot gives no cinnamon, only logs for the stripper.",
+   "No recipe in the pack uses cinnamon, clove, nutmeg, star anise or allspice, only their crates."
+  ],
+  "sources": [
+   "productivetrees:pollination/* (recipe dump)",
+   "productivetrees:botanypots/cinnamon",
+   "helpq uses #c:cinnamon, #c:nutmeg, #c:clove, #c:star_anise, productivetrees:allspice"
+  ]
+ },
+ "dyes": {
+  "de": [
+   "[[productivetrees:haematoxylin]] steht außerdem im Tag für roten Farbstoff, gilt also auch dort, wo ein Rezept roten Farbstoff per Tag verlangt. Jeder Stamm Blauholz oder Brasilholz gibt genau ein Hämatoxylin, die Quest braucht also zwei Stämme.",
+   "Brasilholz kreuzt du aus Teak und Mahagoni ({{productive_trees/hardwood}})."
+  ],
+  "en": [
+   "[[productivetrees:haematoxylin]] is also in the red dye tag, so it works where a recipe asks for red dye by tag. Each logwood or brazilwood log gives exactly one haematoxylin, so the quest takes two logs.",
+   "You cross brazilwood from teak and mahogany ({{productive_trees/hardwood}})."
+  ],
+  "sources": [
+   "productivetrees jar: data/c/tags/item/dyes/red.json, dyes/yellow.json",
+   "productivetrees:sawmill/logwood_planks_from_log, brazilwood_planks_from_log",
+   "productivetrees:blue_dye_from_haematoxylin, purple_dye_from_haematoxylin"
+  ]
+ },
+ "hardwood": {
+  "de": [
+   "Ceylon-Ebenholz kannst du auch selbst kreuzen: Kapok und Schwarzeiche, 10 Prozent. Kapok kostet 2 Smaragde, die Schwarzeiche ist Vanilla.",
+   "Mahagoni ist der Schlüssel zu Brasilholz ({{productive_trees/dyes}}) und Palisander ({{productive_trees/spices}})."
+  ],
+  "en": [
+   "You can also cross Ceylon ebony yourself: kapok and dark oak, 10 percent. Kapok costs 2 emeralds, dark oak is vanilla.",
+   "Mahogany is the key to brazilwood ({{productive_trees/dyes}}) and rosewood ({{productive_trees/spices}})."
+  ],
+  "sources": [
+   "kubejs/data/kronwerke/recipe/market/productivetrees/ + market_presets/productivetrees_saplings_1..3.json",
+   "productivetrees:pollination/ceylon_ebony, mahogany, brazilwood, rosewood"
+  ]
+ },
+ "conifers": {
+  "de": [
+   "Die Lawson-Zypresse brauchst du als Elternteil der Korkeiche ({{productive_trees/strip_drops}}). Die Gelbkiefer kostet 2 Smaragde, die Fichte ist Vanilla, du kannst sie also auch selbst kreuzen.",
+   "Mammutbaum und Gelbkiefer stehen beide im Markt."
+  ],
+  "en": [
+   "You need the Lawson cypress as a parent of the cork oak ({{productive_trees/strip_drops}}). Bull pine costs 2 emeralds and spruce is vanilla, so you can also cross it yourself.",
+   "Sequoia and bull pine are both in the market."
+  ],
+  "sources": [
+   "kubejs/data/kronwerke/recipe/market/productivetrees/ + market_presets/productivetrees_saplings_1..3.json",
+   "productivetrees:pollination/lawson_cypress, cork_oak"
+  ]
+ },
+ "strip_drops": {
+  "de": [
+   "Vier Kork sind vier Stämme der Korkeiche. Kork verwendet kein Rezept im Pack, nur die Kiste.",
+   "Die Lawson-Zypresse kostet 4 Smaragde, die Eiche ist Vanilla."
+  ],
+  "en": [
+   "Four cork are four cork oak logs. No recipe in the pack uses cork, only its crate.",
+   "The Lawson cypress costs 4 emeralds, oak is vanilla."
+  ],
+  "sources": [
+   "productivetrees:pollination/cork_oak",
+   "helpq uses productivetrees:cork, #c:cork",
+   "kubejs/data/kronwerke/recipe/market/productivetrees/ + market_presets/productivetrees_saplings_1..3.json"
+  ]
+ },
+ "tap": {
+  "de": [
+   "In EMI stehen trotzdem Rezepte für Vulkanisierten Gummi (Ofen, Legierungsofen von Ender IO) und Ahornsirup. Sie beginnen aber bei [[productivetrees:rubber]] und Ahornsaft, und beides stellt nichts im Pack her.",
+   "Für Gummi in Technikrezepten brauchst du also andere Quellen als diese Bäume."
+  ],
+  "en": [
+   "EMI still shows recipes for cured rubber (furnace, Ender IO alloy smelter) and maple syrup. They start from [[productivetrees:rubber]] and maple sap, though, and nothing in the pack makes either.",
+   "For rubber in tech recipes you need other sources than these trees."
+  ],
+  "sources": [
+   "productivetrees:cured_rubber",
+   "enderio:smelting/productivetrees/cured_rubber",
+   "productivetrees:maple_syrup",
+   "helpq item productivetrees:rubber, maple_sap_bucket, sandalwood_oil (0 recipes make them)",
+   "srv/mods (no Tree Tap jar)"
+  ]
+ },
+ "mutations": {
+  "de": [
+   "Ein Ipe-Setzling kostet 2 Smaragde. Mutationen gibt es nur beim Wachsen in der Welt, ein Setzling im Pflanztopf gibt nur seine eigene Art.",
+   "Die Quest gibt dir vier Ipe-Setzlinge für den nächsten Versuch zurück."
+  ],
+  "en": [
+   "An ipe sapling costs 2 emeralds. Mutations only happen when a tree grows in the world; a sapling in a botany pot only gives its own kind.",
+   "The quest gives you four ipe saplings back for the next try."
+  ],
+  "sources": [
+   "kubejs/data/kronwerke/recipe/market/productivetrees/ + market_presets/productivetrees_saplings_1..3.json",
+   "productivetrees:botanypots/ipe"
+  ],
+  "client": [
+   "mutation only on growth in the world"
+  ]
+ },
+ "loot_saplings": {
+  "de": [
+   "Black Ember liegt außer in Bastionsschätzen auch in den Truhen der Hoglinställe. Die Chance gilt pro geöffneter Truhe, eine noch nicht geplünderte Truhe ist also wichtig.",
+   "Der Nether und das End laufen auf eigenen Servern. Mit Blue Yonder geht es weiter zu {{productive_trees/planet_peach}} und {{productive_trees/glow_hybrids}}."
+  ],
+  "en": [
+   "Besides the bastion treasure, Black Ember also lies in the chests of the hoglin stables. The chance is per opened chest, so a chest nobody has looted matters.",
+   "The Nether and the End run on servers of their own. Blue Yonder leads on to {{productive_trees/planet_peach}} and {{productive_trees/glow_hybrids}}."
+  ],
+  "sources": [
+   "productivetrees jar: data/productivetrees/loot_modifiers/*.json",
+   "core: KronwerkeConfig dimensionServers"
+  ]
+ },
+ "planet_peach": {
+  "de": [
+   "Im Pflanztopf gibt der Blue Yonder einen Planetenpfirsich pro Ernte, vier Pfirsiche dauern also etwa acht Minuten.",
+   "Mehrere Töpfe nebeneinander teilen sich die Arbeit, jeder neue Setzling fällt mit 5 Prozent aus der Ernte."
+  ],
+  "en": [
+   "In a botany pot the Blue Yonder gives one planet peach per harvest, so four peaches take about eight minutes.",
+   "Several pots side by side share the work, and each harvest drops a new sapling with 5 percent."
+  ],
+  "sources": [
+   "productivetrees:botanypots/blue_yonder (grow_time 2400)"
+  ]
+ },
+ "amber": {
+  "de": [
+   "Den [[minecraft:brush]] baust du aus einer Feder, einem Kupferbarren und einem Stock. Kalte Ozeanruinen findest du in kalten und gefrorenen Ozeanen.",
+   "Die Chance von 10 Prozent gilt pro gepinseltem Block verdächtigen Kieses."
+  ],
+  "en": [
+   "You make the [[minecraft:brush]] from a feather, a copper ingot and a stick. Cold ocean ruins lie in cold and frozen oceans.",
+   "The 10 percent chance is per brushed block of suspicious gravel."
+  ],
+  "sources": [
+   "productivetrees jar: loot_modifiers/brown_amber_sapling.json (archaeology/ocean_ruin_cold, chance 0.1)"
+  ]
+ },
+ "glow_hybrids": {
+  "de": [
+   "Für Purple Spiral brauchst du Blue Yonder aus einem Schiffswrack und Firecracker aus einer Antiken Stadt. Bei 5 Prozent sind Pollen ({{productive_trees/pollen}}) der schnellere Weg.",
+   "Die Fundstücke wachsen auch im Pflanztopf, dort bekommst du Blätter für den Pollensieber und weitere Setzlinge."
+  ],
+  "en": [
+   "For Purple Spiral you need Blue Yonder from a shipwreck and Firecracker from an ancient city. At 5 percent pollen ({{productive_trees/pollen}}) is the quicker way.",
+   "The loot saplings also grow in botany pots, which give you leaves for the pollen sifter and more saplings."
+  ],
+  "sources": [
+   "productivetrees:pollination/purple_spiral (chance 0.05)",
+   "productivetrees:botanypots/blue_yonder, firecracker"
+  ]
+ },
+ "time_traveller": {
+  "de": [
+   "Sechs Bretter sind im Sägewerk ein Stamm, an der Werkbank zwei. Vorher brauchst du Rippling Willow aus Blue Yonder und Flickering Sun.",
+   "Das Glas muss farbloses Glas sein, gefärbtes passt nicht."
+  ],
+  "en": [
+   "Six planks are one log in the sawmill, two at the crafting table. First you need Rippling Willow from Blue Yonder and Flickering Sun.",
+   "The glass has to be colourless glass, stained glass does not fit."
+  ],
+  "sources": [
+   "productivetrees:time_traveller_display (#c:glass_blocks/colorless)",
+   "productivetrees:pollination/time_traveller, rippling_willow"
+  ]
+ },
+ "station": {
+  "de": [
+   "Ein [[minecraft:beehive]] sind sechs Bretter und drei Honigwaben, ein [[minecraft:spyglass]] zwei Kupferbarren und ein Amethystsplitter. Bienen findest du in Bienennestern an Birken und Eichen in Blumenwäldern, Wiesen und Ebenen.",
+   "Die sechs Waben der Belohnung reichen für zwei weitere Stöcke. Weiter geht es mit {{productive_trees/pollinated}} und {{productive_trees/pairs}}."
+  ],
+  "en": [
+   "A [[minecraft:beehive]] is six planks and three honeycombs, a [[minecraft:spyglass]] two copper ingots and an amethyst shard. You find bees in bee nests on birches and oaks in flower forests, meadows and plains.",
+   "The six combs of the reward make two more hives. Next come {{productive_trees/pollinated}} and {{productive_trees/pairs}}."
+  ],
+  "sources": [
+   "minecraft:beehive (pattern PPP/HHH/PPP)",
+   "minecraft:spyglass"
+  ]
+ },
+ "honey": {
+  "de": [
+   "Halt die Glasflasche oder Schere erst an den Stock, wenn er außen tropft. Ohne Lagerfeuer darunter greifen dich die Bienen an.",
+   "Die acht Glasflaschen der Belohnung sind für die nächsten Ernten."
+  ],
+  "en": [
+   "Use the glass bottle or shears only once the hive drips on the outside. Without a campfire below, the bees attack you.",
+   "The eight glass bottles of the reward are for the next harvests."
+  ],
+  "sources": [
+   "vanilla beehive behaviour"
+  ]
+ },
+ "sapling_bank": {
+  "de": [
+   "Die [[functionalstorage:oak_4]] hat vier Fächer, zwei davon fassen also acht Arten. Rezept: vier Truhen in den Ecken und fünf Bretter.",
+   "Ein Trichtertopf pro Art ({{productive_trees/pots}}) füllt die Bank mit der Zeit von selbst, mit 5 Prozent Setzling pro Ernte."
+  ],
+  "en": [
+   "The [[functionalstorage:oak_4]] has four compartments, so two of them hold eight kinds. Recipe: four chests in the corners and five planks.",
+   "A hopper pot per kind ({{productive_trees/pots}}) fills the bank by itself over time, with a 5 percent sapling per harvest."
+  ],
+  "sources": [
+   "functionalstorage:oak_4 (pattern CPC/PPP/CPC)",
+   "productivetrees:botanypots/* (sapling chance 0.05)"
+  ]
+ },
+ "pairs": {
+  "de": [
+   "Die Zahlen der Quest stimmen mit den 148 Rezepten im Pack überein. Bei 10 Prozent brauchst du im Schnitt zehn Versuche, bei 5 Prozent zwanzig, dort lohnt Pollen ({{productive_trees/pollen}}).",
+   "Die Checklisten beginnen mit {{productive_trees/gen1}}."
+  ],
+  "en": [
+   "The numbers in the quest match the 148 recipes in the pack. At 10 percent you need ten tries on average, at 5 percent twenty, where pollen pays off ({{productive_trees/pollen}}).",
+   "The checklists start with {{productive_trees/gen1}}."
+  ],
+  "sources": [
+   "productivetrees:pollination/* (recipe dump): 148 recipes, 116 at 0.1, 27 at 0.05"
+  ]
+ },
+ "pollinated": {
+  "de": [
+   "Espe kostet 4 Smaragde, Buche 1. Gib der Biene nur diese zwei Bäume in Reichweite, sonst verteilen sich die Versuche auf andere Paare.",
+   "Mit der Hasel geht es zu {{productive_trees/nut_list}} und zur Kerzennuss."
+  ],
+  "en": [
+   "Aspen costs 4 emeralds, beech 1. Keep only these two trees in the bee's range, or its tries spread over other pairs.",
+   "The hazel leads to {{productive_trees/nut_list}} and the candlenut."
+  ],
+  "sources": [
+   "kubejs/data/kronwerke/recipe/market/productivetrees/ + market_presets/productivetrees_saplings_1..3.json",
+   "productivetrees:pollination/hazel (chance 0.1)"
+  ]
+ },
+ "pollen": {
+  "de": [
+   "Den [[productivetrees:pollen_sifter]] gibt es auf Kronwerke mit eigenem Rezept: Bretter, [[minecraft:sticky_piston]], Bretter, darunter Eisen, Pinsel, Eisen und unten drei Bretter ({{cooking/sifter}}). Laub von Bäumen im Pflanztopf ist der bequemste Nachschub.",
+   "Die Belohnung, eine Schere, ist für Laub direkt vom Baum."
+  ],
+  "en": [
+   "On Kronwerke the [[productivetrees:pollen_sifter]] has its own recipe: planks, [[minecraft:sticky_piston]], planks, then iron, brush, iron and three planks at the bottom ({{cooking/sifter}}). Leaves from trees in botany pots are the easiest supply.",
+   "The reward, shears, is for leaves straight from the tree."
+  ],
+  "sources": [
+   "kronwerke:added/pollen_sifter (kubejs/server_scripts/kronwerke/added.js)",
+   "productivetrees jar: PollenSifterBlockEntity (600 ticks, nextInt(100) <= 10)",
+   "productivetrees:botanypots/* (leaves)"
+  ]
+ },
+ "star_fruit": {
+  "de": [
+   "Die Kette für den Sternanis: Schwarzkirsche und Kakao ergeben Kaffee, Kaffee und Teak die Nelke, Teak und Nelke den Piment, Nelke und Piment den Sternanis. Für die Mango brauchst du die Orange aus Mandarine und Pomelo.",
+   "Im Pflanztopf gibt die Sternfrucht eine Frucht pro Ernte, acht Stück dauern etwa 16 Minuten."
+  ],
+  "en": [
+   "The chain to star anise: black cherry and cacao give coffee, coffee and teak the clove, teak and clove the allspice, clove and allspice the star anise. For the mango you need the orange from mandarin and pomelo.",
+   "In a botany pot the star fruit gives one fruit per harvest, eight take about 16 minutes."
+  ],
+  "sources": [
+   "productivetrees:pollination/* (recipe dump)",
+   "productivetrees:botanypots/star_fruit"
+  ]
+ },
+ "gen1": {
+  "de": [
+   "Silberlinde und Buche kommen aus demselben Paar Eiche und Birke, die erste Kreuzung steht in {{cooking/bees}}. Die sechs Vanilla-Kreuzungen kaufst du auch für je 1 Smaragd.",
+   "Die Haken setzt du selbst, sobald du die Art gezüchtet hast."
+  ],
+  "en": [
+   "Silver lime and beech come from the same pair, oak and birch; the first crossing is in {{cooking/bees}}. You can also buy the six vanilla crossings for 1 emerald each.",
+   "You tick the boxes yourself once you have bred the kind."
+  ],
+  "sources": [
+   "productivetrees:pollination/* (recipe dump)",
+   "kubejs/data/kronwerke/recipe/market/productivetrees/ + market_presets/productivetrees_saplings_1..3.json"
+  ]
+ },
+ "gen2a": {
+  "de": [
+   "Erle und Pekannuss kommen aus demselben Paar Buche und Birke. Alle zwölf Eltern gibt es für 1 Smaragd im Markt oder als Vanilla-Baum.",
+   "Teak ist Elternteil von vier Bäumen dieser Liste, ein Teak im Pflanztopf liefert dir Laub für Pollen."
+  ],
+  "en": [
+   "Alder and pecan come from the same pair, beech and birch. All twelve parents are 1 emerald in the market or vanilla trees.",
+   "Teak is a parent of four trees on this list, a teak in a botany pot gives you leaves for pollen."
+  ],
+  "sources": [
+   "productivetrees:pollination/* (recipe dump)",
+   "kubejs/data/kronwerke/recipe/market/productivetrees/ + market_presets/productivetrees_saplings_1..3.json"
+  ]
+ },
+ "gen2b": {
+  "de": [
+   "Walnuss, Vogelkirsche und Hartriegel kommen alle aus Silberlinde und Kirsche, Eibe teilt sich ihr Paar mit der Gelbkiefer. Bei 5 Prozent und drei möglichen Kindern lohnt beim Hartriegel Pollen.",
+   "Die leuchtenden Kreuzungen brauchst du nicht zu kaufen, sie stehen nicht im Markt."
+  ],
+  "en": [
+   "Walnut, wild cherry and dogwood all come from silver lime and cherry; yew shares its pair with the bull pine. At 5 percent and three possible children, pollen pays off for the dogwood.",
+   "The glowing crossings cannot be bought, they are not in the market."
+  ],
+  "sources": [
+   "productivetrees:pollination/* (recipe dump)",
+   "kubejs/data/kronwerke/recipe/market/productivetrees/ + market_presets/productivetrees_saplings_1..3.json"
+  ]
+ },
+ "gen3a": {
+  "de": [
+   "Espe und Holunder hängen zusammen: Die Espe aus Buche und Erle ist Elternteil von Hasel, Holunder und Eberesche. Balsa steckt in vier Kreuzungen dieser Liste.",
+   "Alle zehn gibt es auch für 4 Smaragde im Markt."
+  ],
+  "en": [
+   "Aspen matters: the aspen from beech and alder is a parent of hazel, elderberry and rowan. Balsa is in four crossings of this list.",
+   "All ten are also 4 emeralds in the market."
+  ],
+  "sources": [
+   "productivetrees:pollination/* (recipe dump)",
+   "kubejs/data/kronwerke/recipe/market/productivetrees/ + market_presets/productivetrees_saplings_1..3.json"
+  ]
+ },
+ "gen3b": {
+  "de": [
+   "Lawson-Zypresse und Weihrauchkiefer kommen beide aus Gelbkiefer und Fichte. Die Edelkastanie darf neben der Walnuss die Vogelkirsche oder die Silberlinde haben.",
+   "Alle elf gibt es für 4 Smaragde im Markt."
+  ],
+  "en": [
+   "Lawson cypress and loblolly pine both come from bull pine and spruce. The sweet chestnut takes wild cherry or silver lime next to the walnut.",
+   "All eleven are 4 emeralds in the market."
+  ],
+  "sources": [
+   "productivetrees:pollination/* (recipe dump)",
+   "kubejs/data/kronwerke/recipe/market/productivetrees/ + market_presets/productivetrees_saplings_1..3.json"
+  ]
+ },
+ "gen3c": {
+  "de": [
+   "Alle sechs stehen bei 5 Prozent, Pollen spart hier viel Zeit. Kaufen ist der kurze Weg: je 4 Smaragde.",
+   "Der Zuckerahorn ist Elternteil von Amberbaum, Sykomore und Süßem Holzapfel in {{productive_trees/gen4b}}."
+  ],
+  "en": [
+   "All six are at 5 percent, so pollen saves a lot of time here. Buying is the short way: 4 emeralds each.",
+   "Sugar maple is a parent of sweetgum, sycamore fig and sweet crabapple in {{productive_trees/gen4b}}."
+  ],
+  "sources": [
+   "productivetrees:pollination/* (recipe dump)",
+   "kubejs/data/kronwerke/recipe/market/productivetrees/ + market_presets/productivetrees_saplings_1..3.json"
+  ]
+ },
+ "gen4a": {
+  "de": [
+   "Holunder und Eberesche kommen beide aus Espe und Erle. Die Eltern dieser Liste gibt es alle im Markt, du kannst also sofort anfangen.",
+   "Hasel und Korkeiche haben eigene Quests: {{productive_trees/pollinated}} und {{productive_trees/strip_drops}}."
+  ],
+  "en": [
+   "Elderberry and rowan both come from aspen and alder. All parents on this list are in the market, so you can start at once.",
+   "Hazel and cork oak have quests of their own: {{productive_trees/pollinated}} and {{productive_trees/strip_drops}}."
+  ],
+  "sources": [
+   "productivetrees:pollination/* (recipe dump)",
+   "kubejs/data/kronwerke/recipe/market/productivetrees/ + market_presets/productivetrees_saplings_1..3.json"
+  ]
+ },
+ "gen4b": {
+  "de": [
+   "Alle Eltern dieser Liste stehen im Markt oder sind Vanilla. Die vier Kreuzungen mit 5 Prozent stehen unten, dort lohnt Pollen.",
+   "Die Zitronatzitrone hat eine eigene Quest: {{productive_trees/citrus}}."
+  ],
+  "en": [
+   "All parents on this list are in the market or vanilla. The four 5 percent crossings are at the bottom, pollen pays off there.",
+   "The citron has a quest of its own: {{productive_trees/citrus}}."
+  ],
+  "sources": [
+   "productivetrees:pollination/* (recipe dump)",
+   "kubejs/data/kronwerke/recipe/market/productivetrees/ + market_presets/productivetrees_saplings_1..3.json"
+  ]
+ },
+ "gen5a": {
+  "de": [
+   "Die Weißtanne aus {{productive_trees/gen4b}} ist Elternteil von drei Bäumen dieser Liste. Kaffee aus Schwarzkirsche und Kakao führt zur Nelke und weiter zur Sternfrucht.",
+   "Die Westliche Hemlocktanne gelingt bei jedem Bestäubungsversuch."
+  ],
+  "en": [
+   "The silver fir from {{productive_trees/gen4b}} is a parent of three trees on this list. Coffee from black cherry and cacao leads to clove and on to the star fruit.",
+   "Western hemlock succeeds at every pollination attempt."
+  ],
+  "sources": [
+   "productivetrees:pollination/* (recipe dump) (western_hemlock chance 3.0)"
+  ]
+ },
+ "gen5b": {
+  "de": [
+   "Key-Lime, Pomelo und Pflaume kommen alle aus Zitronatzitrone und Vogelkirsche, die Pflaume nur mit 5 Prozent. Mahagoni aus Gelbem Meranti und Kapok öffnet die Edelhölzer.",
+   "Den Gummibaum kannst du wegen des fehlenden Zapfhahns nur als Holz nutzen ({{productive_trees/tap}})."
+  ],
+  "en": [
+   "Key lime, pomelo and plum all come from citron and wild cherry, the plum only at 5 percent. Mahogany from yellow meranti and kapok opens the hardwoods.",
+   "The rubber tree is only useful as wood, since the tap is missing ({{productive_trees/tap}})."
+  ],
+  "sources": [
+   "productivetrees:pollination/* (recipe dump)"
+  ]
+ },
+ "gen6a": {
+  "de": [
+   "Die Pflaume aus {{productive_trees/gen5b}} ist Elternteil von Mandel, Schlehe und Kirschpflaume. Brasilholz gibt im Sägewerk Hämatoxylin ({{productive_trees/dyes}}).",
+   "Gewürznelke aus Kaffee und Teak ist der Anfang der Gewürze."
+  ],
+  "en": [
+   "The plum from {{productive_trees/gen5b}} is a parent of almond, blackthorn and cherry plum. Brazilwood gives haematoxylin in the sawmill ({{productive_trees/dyes}}).",
+   "Clove from coffee and teak starts the spices."
+  ],
+  "sources": [
+   "productivetrees:pollination/* (recipe dump)",
+   "productivetrees:sawmill/brazilwood_planks_from_log"
+  ]
+ },
+ "gen6b": {
+  "de": [
+   "Drei Zitrusfrüchte kommen aus der Pomelo. Palisander aus Mahagoni und Teak führt zu Zimt und Blauholz in {{productive_trees/gen7a}}.",
+   "Gelbholz gibt im Sägewerk Fustik, das als gelber Farbstoff zählt."
+  ],
+  "en": [
+   "Three citrus fruits come from the pomelo. Rosewood from mahogany and teak leads to cinnamon and logwood in {{productive_trees/gen7a}}.",
+   "Old fustic gives fustic in the sawmill, which counts as yellow dye."
+  ],
+  "sources": [
+   "productivetrees:pollination/* (recipe dump)",
+   "productivetrees:sawmill/old_fustic_planks_from_log",
+   "productivetrees jar: data/c/tags/item/dyes/yellow.json"
+  ]
+ },
+ "gen7a": {
+  "de": [
+   "Piment und Muskat ({{productive_trees/gen7b}}) haben dasselbe Paar Teak und Gewürznelke. Blauholz aus Kapok und Palisander gibt im Sägewerk Hämatoxylin.",
+   "Kumquat führt zu Satsuma und Tangerine in {{productive_trees/gen89}}."
+  ],
+  "en": [
+   "Allspice and nutmeg ({{productive_trees/gen7b}}) share the pair teak and clove. Logwood from kapok and rosewood gives haematoxylin in the sawmill.",
+   "Kumquat leads to satsuma and tangerine in {{productive_trees/gen89}}."
+  ],
+  "sources": [
+   "productivetrees:pollination/* (recipe dump)",
+   "productivetrees:sawmill/logwood_planks_from_log"
+  ]
+ },
+ "gen7b": {
+  "de": [
+   "Nektarine und Aprikose kommen beide aus Pflaume und Pfirsich. Brasilholz ist Elternteil von Pink Ivory, Purpleheart und Sandelholz.",
+   "Die Orange brauchst du für Mango und Grapefruit in {{productive_trees/gen89}}."
+  ],
+  "en": [
+   "Nectarine and apricot both come from plum and peach. Brazilwood is a parent of pink ivory, purpleheart and sandalwood.",
+   "You need the orange for mango and grapefruit in {{productive_trees/gen89}}."
+  ],
+  "sources": [
+   "productivetrees:pollination/* (recipe dump)"
+  ]
+ },
+ "gen89": {
+  "de": [
+   "Satsuma und Tangerine kommen aus demselben Paar Mandarine und Kumquat. Für die Mango reicht neben der Orange eine Vanilla-Mangrove.",
+   "Die Sternfrucht schließt auch {{productive_trees/star_fruit}} ab."
+  ],
+  "en": [
+   "Satsuma and tangerine come from the same pair, mandarin and kumquat. For the mango a vanilla mangrove is enough next to the orange.",
+   "The star fruit also completes {{productive_trees/star_fruit}}."
+  ],
+  "sources": [
+   "productivetrees:pollination/* (recipe dump)"
+  ]
+ }
+}

@@ -1,0 +1,656 @@
+{
+ "welcome": {
+  "de": [
+   "Die 8 [[malum:raw_soulstone]] aus der Belohnung geben im Ofen 16 [[malum:refined_soulstone]], denn jedes rohe Stück schmilzt zu **zwei**. Damit hast du schon das Material für die Sense und einen Teil von {{malum/soulstone}}.",
+   "Alle Infusionen und Crucible-Rezepte des Kapitels findest du in EMI, mit den Arcana-Mengen. Daneben brauchst du früh Runewood ({{malum/runewood}})."
+  ],
+  "en": [
+   "The 8 [[malum:raw_soulstone]] from the reward smelt into 16 [[malum:refined_soulstone]], since every raw piece gives **two**. That already covers the scythe and part of {{malum/soulstone}}.",
+   "Every infusion and crucible recipe of this chapter is in EMI, with the arcana amounts. You also need Runewood early on ({{malum/runewood}})."
+  ],
+  "sources": [
+   "minecraft:crafting_shapeless malum:encyclopedia_arcana",
+   "malum:soulstone_from_raw_smelting (count 2)",
+   "malum jar com/sammy/malum/compat/jei/JEIHandler"
+  ],
+  "client": [
+   "EMI shows the malum:spirit_infusion and malum:spirit_focusing categories with spirit counts"
+  ]
+ },
+ "soulstone": {
+  "de": [
+   "Soulstone-Erz liegt zwischen Höhe -64 und 100, im Tiefenschiefer als eigene Variante, und gibt [[malum:raw_soulstone]]. Glück wirkt. Ein rohes Stück gibt im Ofen oder doppelt so schnell im Hochofen 2 [[malum:refined_soulstone]], für die 32 reichen also 16.",
+   "Mit Create holst du mehr heraus: Erz mit Behutsamkeit abbauen und in der Brechmühle zerkleinern gibt im Schnitt 1,75 [[malum:crushed_soulstone]], jedes davon wieder 2 Refined Soulstone. Beim Waschen fällt zu 25 Prozent noch [[malum:hex_ash]] mit ab."
+  ],
+  "en": [
+   "Soulstone ore sits between Y -64 and 100, with its own deepslate variant, and drops [[malum:raw_soulstone]]. Fortune works. One raw piece gives 2 [[malum:refined_soulstone]] in a furnace, or twice as fast in a blast furnace, so 16 cover the 32.",
+   "Create gets more out of it: mine the ore with Silk Touch and crush it, which gives 1.75 [[malum:crushed_soulstone]] on average, each again worth 2 Refined Soulstone. Washing it also has a 25 percent chance of [[malum:hex_ash]]."
+  ],
+  "sources": [
+   "malum jar data/malum/worldgen/placed_feature/ore_soulstone.json (trapezoid -64..100)",
+   "malum jar data/malum/loot_table/blocks/soulstone_ore.json (fortune ore_drops)",
+   "malum:soulstone_from_raw_smelting, malum:soulstone_from_raw_blasting",
+   "malum:create/crushing/ore/crush_soulstone_ore (1 + 0.75)",
+   "malum:create/washing/crushed_soulstone (2 + 0.25 hex ash)"
+  ]
+ },
+ "runewood": {
+  "de": [
+   "Nur der normale [[malum:runewood_log]] zählt. Stämme mit Harzstelle droppen als [[malum:exposed_runewood_log]] und werden von der Quest nicht mitgezählt, zu Brettern und Arcane Charcoal verarbeitest du sie trotzdem.",
+   "Du brauchst viel Holz: Altar, Item Stands, Obelisken und vor allem {{malum/totem_base}} mit 4 Stämmen und 6 Brettern pro Ladung. Entrindete Stämme gibt die Mechanische Säge von Create zu 6 Brettern statt 4."
+  ],
+  "en": [
+   "Only the plain [[malum:runewood_log]] counts. Logs with a sap spot drop as [[malum:exposed_runewood_log]] and are not counted by the quest, but they still make planks and Arcane Charcoal.",
+   "You need a lot of wood: altar, item stands, obelisks and above all {{malum/totem_base}} with 4 logs and 6 planks per batch. Stripped logs give 6 planks in a Create Mechanical Saw instead of 4."
+  ],
+  "sources": [
+   "malum jar data/malum/worldgen/configured_feature/runewood_tree.json (sapFilledLog exposed_runewood_log)",
+   "malum jar data/malum/loot_table/blocks/exposed_runewood_log.json",
+   "malum jar data/malum/tags/item/runewood_logs.json",
+   "malum:runewood_planks (4)",
+   "malum:create/cutting/cutting_runewood_to_planks (6)"
+  ]
+ },
+ "scythe": {
+  "de": [
+   "Arcana fallen nur, wenn eine Seelenwaffe den Mob tötet. Bis {{malum/soul_tools}} ist das allein die [[malum:crude_scythe]], danach zählen auch alle Seelenstahl-Werkzeuge.",
+   "Die Sense nimmt eigene Verzauberungen an, darunter Spirit Plunder für mehr Arcana pro Kill, das aber zusätzlich an der Haltbarkeit zehrt. Später infundierst du sie zur besseren Sense ({{malum/soul_scythe}}), die Verzauberungen bleiben dabei."
+  ],
+  "en": [
+   "Arcana only drop when a soul weapon kills the mob. Until {{malum/soul_tools}} that is only the [[malum:crude_scythe]]; after that all soulstained steel tools count too.",
+   "The scythe takes its own enchantments, among them Spirit Plunder for more arcana per kill, which costs extra durability. Later you infuse it into the better scythe ({{malum/soul_scythe}}) and the enchantments stay."
+  ],
+  "sources": [
+   "minecraft:crafting_shaped malum:crude_scythe",
+   "malum jar data/malum/tags/item/soul_shatter_capable_weapon.json",
+   "malum jar assets/malum/lang/en_us.json (scythes.enchanting.spirit_plunder.1)",
+   "malum:spirit_infusion/soul_stained_steel_scythe (carryOverComponentData)"
+  ],
+  "client": [
+   "the killing blow must come from the soul weapon (not just any earlier hit)"
+  ]
+ },
+ "spirits": {
+  "de": [
+   "Was jeder Mob gibt: Schwein 1 Sacred, Huhn 1 Sacred und 1 Aerial, Zombie 1 Wicked und 1 Earthen, Skelett 2 Arcane und 1 Wicked, Hexe je 2 Wicked und Arcane. Eine Hexe deckt also zwei Aufgaben auf einmal ab.",
+   "Mit Hex Ash ({{malum/hex_ash}}), Hallowed Gold und Seelenstahl gehen diese drei Sorten schnell weg, also ernte ruhig mehr als 8."
+  ],
+  "en": [
+   "What each mob gives: pig 1 Sacred, chicken 1 Sacred and 1 Aerial, zombie 1 Wicked and 1 Earthen, skeleton 2 Arcane and 1 Wicked, witch 2 Wicked and 2 Arcane. One witch covers two tasks at once.",
+   "Hex Ash ({{malum/hex_ash}}), Hallowed Gold and soul steel use these three up fast, so harvest more than 8."
+  ],
+  "sources": [
+   "malum jar data/malum/spirit_data/entity/pig.json, chicken.json, zombie.json, skeleton.json, witch.json"
+  ]
+ },
+ "sp_earthen": {
+  "de": [
+   "Die beste Quelle ist der Eisengolem mit 5 Earthen und 3 Sacred. Kühe und Schafe geben je 1 Earthen und 1 Sacred, Zombies 1 Earthen und 1 Wicked, Pferde 1 Earthen.",
+   "Earthen geht in großen Mengen weg: 16 für {{malum/soul_scythe}}, je 8 pro Rüstungsteil und 32 für den {{malum/prospector}}."
+  ],
+  "en": [
+   "The best source is the iron golem with 5 Earthen and 3 Sacred. Cows and sheep give 1 Earthen and 1 Sacred each, zombies 1 Earthen and 1 Wicked, horses 1 Earthen.",
+   "Earthen goes fast: 16 for {{malum/soul_scythe}}, 8 per armor piece and 32 for the {{malum/prospector}}."
+  ],
+  "sources": [
+   "malum jar data/malum/spirit_data/entity/iron_golem.json, cow.json, sheep.json, zombie.json, horse.json",
+   "malum:spirit_infusion/soul_stained_steel_scythe, soul_hunter_cloak, belt_of_the_prospector"
+  ]
+ },
+ "sp_infernal": {
+  "de": [
+   "In der Oberwelt sind Creeper mit 3 Infernal die beste Quelle, Wüstenzombies geben 1. Blazes, Piglins, Zombie-Piglins, Magmawürfel und Strider leben im Nether, und der ist auf Kronwerke ein eigener Server.",
+   "Creeper lassen außerdem Schwarzpulver für {{malum/hex_ash}} fallen. Größter Verbraucher ist der {{malum/prospector}} mit 32 Infernal."
+  ],
+  "en": [
+   "In the overworld creepers are the best source with 3 Infernal, husks give 1. Blazes, piglins, zombified piglins, magma cubes and striders live in the Nether, which is a separate server on Kronwerke.",
+   "Creepers also drop gunpowder for {{malum/hex_ash}}. The biggest consumer is the {{malum/prospector}} with 32 Infernal."
+  ],
+  "sources": [
+   "malum jar data/malum/spirit_data/entity/creeper.json, husk.json, blaze.json, piglin.json, zombified_piglin.json, magma_cube.json, strider.json",
+   "docs/SERVER.md (Nether separate server)"
+  ]
+ },
+ "sp_aerial": {
+  "de": [
+   "Am meisten bringen Phantome mit je 3 Aerial, Wicked und Arcane. Spinnen, Fledermäuse, Kaninchen und Pferde geben je 2 Aerial, Hühner und Höhlenspinnen 1.",
+   "Für zwei Obelisken ({{malum/obelisk}}) brauchst du allein 32 Aerial, plan also eine längere Jagd ein."
+  ],
+  "en": [
+   "Phantoms give the most with 3 Aerial, 3 Wicked and 3 Arcane each. Spiders, bats, rabbits and horses give 2 Aerial each, chickens and cave spiders 1.",
+   "Two obelisks ({{malum/obelisk}}) alone need 32 Aerial, so plan a longer hunt."
+  ],
+  "sources": [
+   "malum jar data/malum/spirit_data/entity/phantom.json, spider.json, bat.json, rabbit.json, horse.json, chicken.json, cave_spider.json",
+   "malum:spirit_infusion/runewood_obelisk (16 aerial)"
+  ]
+ },
+ "sp_aqueous": {
+  "de": [
+   "Am Ozeanmonument lohnt es sich: Wächter geben je 3 Aqueous, Sacred und Wicked, ein Großer Wächter 5 Aqueous und 3 Eldritch. Ertrunkene, Tintenfische und Leuchttintenfische geben 2, Kabeljau, Lachs und Tropenfische 1.",
+   "Aqueous brauchst du für {{malum/calx}}, den {{malum/crucible}} und später je 16 für den {{malum/repair_pylon}}."
+  ],
+  "en": [
+   "An ocean monument pays off: guardians give 3 Aqueous, 3 Sacred and 3 Wicked each, an elder guardian 5 Aqueous and 3 Eldritch. Drowned, squids and glow squids give 2, cod, salmon and tropical fish 1.",
+   "You need Aqueous for {{malum/calx}}, the {{malum/crucible}} and later 16 for the {{malum/repair_pylon}}."
+  ],
+  "sources": [
+   "malum jar data/malum/spirit_data/entity/guardian.json, elder_guardian.json, drowned.json, squid.json, glow_squid.json, cod.json, salmon.json, tropical_fish.json"
+  ]
+ },
+ "sp_eldritch": {
+  "de": [
+   "Endermen geben je 3 Eldritch und 1 Arcane und sind die verlässlichste Quelle in der Oberwelt. Bei Überfällen bringt ein Verwüster 4 und ein Magier 2, ein Großer Wächter am Ozeanmonument 3.",
+   "Eldritch steckt in jeder Totembasis, in allen großen Riten und im {{malum/esoteric_spoils}}, der dir danach eine Seele mehr pro Kill gibt."
+  ],
+  "en": [
+   "Endermen give 3 Eldritch and 1 Arcane each and are the most reliable source in the overworld. In raids a ravager gives 4 and an evoker 2, an elder guardian at an ocean monument 3.",
+   "Eldritch goes into every totem base, every major rite and the {{malum/esoteric_spoils}}, which then gives you one extra spirit per kill."
+  ],
+  "sources": [
+   "malum jar data/malum/spirit_data/entity/enderman.json, ravager.json, evoker.json, elder_guardian.json",
+   "malum jar com/sammy/malum/core/systems/rite/SpiritRiteTypeBuilder (majorTotemRite: eldritch, arcane, x, x)"
+  ]
+ },
+ "altar": {
+  "de": [
+   "Das [[eidolon_repraised:arcane_gold_ingot]] ist eine Kronwerke-Änderung, sonst steckt hier normales Gold. Du kochst es im Eidolon-Crucible aus 2 Redstone und einem Soul Shard, danach 2 Goldbarren ({{eidolon/alchemy}}); das gibt genau die 2 Barren für den Altar.",
+   "Für die 4 [[malum:runewood_item_stand]] craftest du das Rezept zweimal. Danach geht es mit {{malum/hex_ash}} los, der Grundzutat fast aller Infusionen."
+  ],
+  "en": [
+   "The [[eidolon_repraised:arcane_gold_ingot]] is a Kronwerke change; normally plain gold goes here. You cook it in the Eidolon crucible from 2 redstone and a soul shard, then 2 gold ingots ({{eidolon/alchemy}}), which gives exactly the 2 ingots for the altar.",
+   "For the 4 [[malum:runewood_item_stand]] craft the recipe twice. Then start with {{malum/hex_ash}}, the base of almost every infusion."
+  ],
+  "sources": [
+   "kubejs/server_scripts/kronwerke/round.js (replaceInput malum:spirit_altar gold -> arcane_gold_ingot)",
+   "minecraft:crafting_shaped malum:spirit_altar",
+   "eidolon_repraised:arcane_gold_ingot_alchemy (count 2)",
+   "minecraft:crafting_shaped malum:runewood_item_stand (count 2)"
+  ]
+ },
+ "hex_ash": {
+  "de": [
+   "Ein [[minecraft:gunpowder]] und 1 Arcane geben genau eine [[malum:hex_ash]]. Leg gleich 16 Schwarzpulver mit 16 Arcane auf, der Altar arbeitet den Stapel Stück für Stück ab.",
+   "Schwarzpulver gibt es später ohne Creeper: Der {{malum/impetus}} macht im Crucible aus 1 Earthen 8 Schwarzpulver."
+  ],
+  "en": [
+   "One [[minecraft:gunpowder]] and 1 Arcane give exactly one [[malum:hex_ash]]. Put 16 gunpowder and 16 Arcane on the altar at once; it works through the stack piece by piece.",
+   "Later you get gunpowder without creepers: the {{malum/impetus}} turns 1 Earthen into 8 gunpowder in the crucible."
+  ],
+  "sources": [
+   "malum:spirit_infusion/hex_ash",
+   "minecraft:spirit_crucible/gunpowder",
+   "malum jar assets/malum/lang/en_us.json (altar_acceleration.runewood_obelisk.1: a stack of hex ash)"
+  ],
+  "client": [
+   "the altar processes a whole stack of the input item with enough spirits on it"
+  ]
+ },
+ "hallowed_gold": {
+  "de": [
+   "Statt Netherquarz geht auch [[malum:natural_quartz]]: Das Erz liegt in der Oberwelt unter Höhe 10, und beide zählen als Quarz. So sparst du dir den Nether, der auf Kronwerke ein eigener Server ist.",
+   "Später macht der {{malum/impetus}} im Crucible aus 2 Earthen und 2 Arcane 4 Quarz. Für {{malum/soulsmith}} brauchst du 8 Barren, plan sie gleich mit ein."
+  ],
+  "en": [
+   "Instead of nether quartz you can use [[malum:natural_quartz]]: its ore lies below Y 10 in the overworld, and both count as quartz. That saves you the Nether, which is a separate server on Kronwerke.",
+   "Later the {{malum/impetus}} makes 4 quartz from 2 Earthen and 2 Arcane in the crucible. {{malum/soulsmith}} wants 8 ingots, so plan for them now."
+  ],
+  "sources": [
+   "malum:spirit_infusion/hallowed_gold_ingot (#c:gems/quartz x4)",
+   "malum jar data/c/tags/item/gems/quartz.json (malum:natural_quartz)",
+   "malum jar data/malum/worldgen/placed_feature/ore_natural_quartz.json (-64..10)",
+   "minecraft:spirit_crucible/quartz"
+  ]
+ },
+ "spirit_jar": {
+  "de": [
+   "Für alle acht Sorten brauchst du acht [[malum:hallowed_gold_ingot]], einen pro Glas. Die Quest ist optional, aber volle Gläser neben dem Altar sparen dir viele Inventarplätze, bis du den {{malum/pouch}} hast."
+  ],
+  "en": [
+   "For all eight kinds you need eight [[malum:hallowed_gold_ingot]], one per jar. The quest is optional, but filled jars next to the altar save a lot of inventory space until you have the {{malum/pouch}}."
+  ],
+  "sources": [
+   "minecraft:crafting_shaped malum:spirit_jar"
+  ]
+ },
+ "obelisk": {
+  "de": [
+   "Jeder [[malum:runewood_obelisk]] macht den Altar um ein Viertel schneller, mit vier ist er doppelt so schnell. Ein Obelisk kostet 2 Hallowed Gold, die zwei für die Quest also 4 Barren.",
+   "Mit Brilliance statt Hallowed Gold wird daraus der Brilliant Obelisk für den Zaubertisch ({{malum/brilliance}})."
+  ],
+  "en": [
+   "Each [[malum:runewood_obelisk]] makes the altar a quarter faster; with four it runs twice as fast. One obelisk costs 2 Hallowed Gold, so the two for the quest take 4 ingots.",
+   "With brilliance instead of Hallowed Gold it becomes the Brilliant Obelisk for the enchanting table ({{malum/brilliance}})."
+  ],
+  "sources": [
+   "malum:spirit_infusion/runewood_obelisk",
+   "malum jar assets/malum/lang/en_us.json (altar_acceleration.runewood_obelisk.1: up to four, one fourth each)"
+  ]
+ },
+ "charcoal": {
+  "de": [
+   "Es geht auch ohne Altar: Ein Runewood-Stamm im Ofen gibt direkt ein [[malum:arcane_charcoal]]. Arcane Charcoal brennt **3200 Ticks**, doppelt so lange wie Kohle, also 16 Items statt 8.",
+   "Die Quest ist optional. Als Brennstoff passt es auch in den {{malum/catalyzer}}, der jeden Ofenbrennstoff nimmt."
+  ],
+  "en": [
+   "It works without the altar too: a runewood log in a furnace gives an [[malum:arcane_charcoal]] directly. Arcane Charcoal burns **3200 ticks**, twice as long as coal, so 16 items instead of 8.",
+   "The quest is optional. It also fuels the {{malum/catalyzer}}, which takes any furnace fuel."
+  ],
+  "sources": [
+   "malum:spirit_infusion/arcane_charcoal (#minecraft:coals x4 -> 4)",
+   "malum:arcane_charcoal_from_runewood",
+   "malum jar com/sammy/malum/registry/common/item/MalumItems (LodestoneFuelItem 3200)",
+   "malum jar com/sammy/malum/common/block/curiosities/spirit_catalyzer/SpiritCatalyzerCoreBlockEntity (ItemStack.getBurnTime)"
+  ]
+ },
+ "soul_steel": {
+  "de": [
+   "Für die 8 Barren rechnest du mit 32 [[malum:refined_soulstone]], 24 Wicked, 8 Earthen und 8 Arcane. Jeder Barren braucht eigene 4 Refined Soulstone auf den Stands.",
+   "Danach geht es weiter mit {{malum/soul_scythe}}, {{malum/soul_tools}} und für Ender IO mit {{malum/soul_binder}}."
+  ],
+  "en": [
+   "For the 8 ingots count on 32 [[malum:refined_soulstone]], 24 Wicked, 8 Earthen and 8 Arcane. Each iron ingot needs its own 4 Refined Soulstone on the stands.",
+   "Next come {{malum/soul_scythe}}, {{malum/soul_tools}} and, for Ender IO, {{malum/soul_binder}}."
+  ],
+  "sources": [
+   "malum:spirit_infusion/soul_stained_steel_ingot",
+   "kubejs/server_scripts/kronwerke/tech.js (soul binder)"
+  ],
+  "client": [
+   "whether the altar repeats an infusion with a stack of iron if the stands are refilled, or needs one ingot at a time"
+  ]
+ },
+ "soul_tools": {
+  "de": [
+   "Für die Quest zählt nur das [[malum:soul_stained_steel_sword]]. Malum führt alle Seelenstahl-Werkzeuge als Seelenwaffen, auch Spitzhacke, Axt, Schaufel, Hacke und Messer: Was du damit tötest, lässt Arcana fallen.",
+   "Die Quest ist optional, der Weg zur besseren Sense ({{malum/soul_scythe}}) hängt nicht daran."
+  ],
+  "en": [
+   "Only the [[malum:soul_stained_steel_sword]] counts for the quest. Malum lists all soulstained steel tools as soul weapons, including pickaxe, axe, shovel, hoe and knife: whatever you kill with them drops arcana.",
+   "The quest is optional; the better scythe ({{malum/soul_scythe}}) does not depend on it."
+  ],
+  "sources": [
+   "minecraft:crafting_shaped malum:soul_stained_steel_sword",
+   "malum jar data/malum/tags/item/soul_shatter_capable_weapon.json"
+  ]
+ },
+ "soul_scythe": {
+  "de": [
+   "Die Infusion übernimmt die Daten der [[malum:crude_scythe]], Verzauberungen und Name bleiben erhalten. Insgesamt stecken 20 Refined Soulstone darin: 4 direkt und 16 in den 4 Seelenstahlbarren."
+  ],
+  "en": [
+   "The infusion carries the data of the [[malum:crude_scythe]] over, so enchantments and name stay. In total it takes 20 Refined Soulstone: 4 directly and 16 in the 4 soul steel ingots."
+  ],
+  "sources": [
+   "malum:spirit_infusion/soul_stained_steel_scythe (carryOverComponentData true)",
+   "malum:spirit_infusion/soul_stained_steel_ingot"
+  ],
+  "client": [
+   "whether damage on the crude scythe is carried over as well"
+  ]
+ },
+ "soul_binder": {
+  "de": [
+   "Auf Kronwerke ersetzen die 4 Seelenstahl im Rezept das Soularium (kubejs tech.js), die [[enderio:soul_vial]] muss leer sein. Soularium brauchst du trotzdem: 4 Barren im [[enderio:ensouled_chassis]] ({{enderio/ens_chassis}}) und 2 im [[enderio:z_logic_controller]], den Schlitz'und'Spleiß aus Soularium, Silizium, Redstone und einem Zombiekopf schneidet ({{enderio/slicer}}).",
+   "In Ender IO geht es mit {{enderio/soul_binder}} weiter."
+  ],
+  "en": [
+   "On Kronwerke the 4 soul steel replace the soularium in the recipe (kubejs tech.js); the [[enderio:soul_vial]] must be empty. You still need soularium: 4 ingots in the [[enderio:ensouled_chassis]] ({{enderio/ens_chassis}}) and 2 in the [[enderio:z_logic_controller]], which the Slice'N'Splice cuts from soularium, silicon, redstone and a zombie head ({{enderio/slicer}}).",
+   "Ender IO continues with {{enderio/soul_binder}}."
+  ],
+  "sources": [
+   "kronwerke:tech/soul_binder",
+   "kubejs/server_scripts/kronwerke/tech.js",
+   "minecraft:crafting_shaped enderio:ensouled_chassis",
+   "enderio:slicing/z_logic_controller"
+  ]
+ },
+ "silk": {
+  "de": [
+   "Jede Wollfarbe geht, und eine Infusion gibt 4 [[malum:soulwoven_silk]], also genau die Quest. Ein Seelenjäger-Teil braucht 4 Seide, das ganze Set 16, dazu eine für den {{malum/pouch}}."
+  ],
+  "en": [
+   "Any wool colour works, and one infusion gives 4 [[malum:soulwoven_silk]], exactly the quest. One soul hunter piece takes 4 silk, the full set 16, plus one for the {{malum/pouch}}."
+  ],
+  "sources": [
+   "malum:spirit_infusion/soulwoven_silk (#minecraft:wool x2 -> 4)",
+   "malum:spirit_infusion/soul_hunter_cloak",
+   "minecraft:crafting_shaped malum:soulwoven_pouch"
+  ]
+ },
+ "soul_hunter": {
+  "de": [
+   "Grundlage sind normale Lederteile: [[minecraft:leather_helmet]] für den Umhang, dazu [[minecraft:leather_chestplate]], [[minecraft:leather_leggings]] und [[minecraft:leather_boots]]. Ihre Verzauberungen bleiben bei der Infusion erhalten.",
+   "Für die Quest zählt nur der Umhang. Das ganze Set kostet 16 Seide, 16 Refined Soulstone, 8 Leder und je 32 Aerial und Earthen."
+  ],
+  "en": [
+   "The base is plain leather gear: [[minecraft:leather_helmet]] for the cloak, plus [[minecraft:leather_chestplate]], [[minecraft:leather_leggings]] and [[minecraft:leather_boots]]. Their enchantments stay through the infusion.",
+   "Only the cloak counts for the quest. The full set costs 16 silk, 16 Refined Soulstone, 8 leather and 32 each of Aerial and Earthen."
+  ],
+  "sources": [
+   "malum:spirit_infusion/soul_hunter_cloak, soul_hunter_robe, soul_hunter_leggings, soul_hunter_boots (carryOverComponentData true)"
+  ]
+ },
+ "rocks": {
+  "de": [
+   "**Normaler Stein geht nicht.** Der Altar nimmt 16 Blöcke aus dem Tag minecraft:stone_tool_materials: [[minecraft:cobblestone]], [[minecraft:cobbled_deepslate]] oder [[minecraft:blackstone]], im Pack dazu Andesit, Granit, Diorit und Tuff.",
+   "Plan mehr als die 16 ein: Crucible, Repair Pylon und Catalyzer brauchen zusammen je 21 Stück. Aus den Steinen schneidest du in der Steinsäge auch die Pedestale für {{malum/repair_pylon}} und {{malum/catalyzer}}."
+  ],
+  "en": [
+   "**Plain stone does not work.** The altar takes 16 blocks of the tag minecraft:stone_tool_materials: [[minecraft:cobblestone]], [[minecraft:cobbled_deepslate]] or [[minecraft:blackstone]], and in this pack also andesite, granite, diorite and tuff.",
+   "Plan for more than 16: crucible, Repair Pylon and catalyzer take 21 of each together. In the stonecutter the rocks also become the pedestals for {{malum/repair_pylon}} and {{malum/catalyzer}}."
+  ],
+  "sources": [
+   "malum:spirit_infusion/twisted_rock, malum:spirit_infusion/tainted_rock (input #minecraft:stone_tool_materials x16)",
+   "minecraft server jar data/minecraft/tags/item/stone_tool_materials.json",
+   "Terralith_1.21.x_v2.5.8.jar data/minecraft/tags/item/stone_tool_materials.json",
+   "malum:tainted_rock_item_pedestal_stonecutting_from_tainted_rock"
+  ]
+ },
+ "crucible": {
+  "de": [
+   "Den [[minecraft:furnace]] und je 8 Steine aus {{malum/rocks}} verbraucht die Infusion. Allein tut er nichts: Er braucht einen Impetus als Katalysator ({{malum/impetus}}) und die passenden Arcana.",
+   "Ein Spirit Catalyzer daneben beschleunigt ihn ({{malum/catalyzer}}), ein Repair Pylon flickt den verbrauchten Impetus ({{malum/repair_pylon}})."
+  ],
+  "en": [
+   "The infusion uses up the [[minecraft:furnace]] and 8 of each rock from {{malum/rocks}}. On its own it does nothing: it needs an impetus as catalyst ({{malum/impetus}}) and the right arcana.",
+   "A Spirit Catalyzer next to it speeds it up ({{malum/catalyzer}}), a Repair Pylon mends the worn impetus ({{malum/repair_pylon}})."
+  ],
+  "sources": [
+   "malum:spirit_infusion/spirit_crucible",
+   "malum jar assets/malum/lang/en_us.json (spirit_focusing, crucible_acceleration)"
+  ]
+ },
+ "calx": {
+  "de": [
+   "Tonklumpen bekommst du aus Tonblöcken in Flüssen, Seen und Sümpfen, ein Block gibt 4. Eine Infusion reicht für den Impetus, der {{malum/ring}} braucht noch einmal 4 Calx, und jede Reparatur eines Impetus am Pylon 2."
+  ],
+  "en": [
+   "Clay balls come from clay blocks in rivers, lakes and swamps; one block gives 4. One infusion covers the impetus; the {{malum/ring}} needs another 4 calx, and each repair of an impetus at the pylon 2."
+  ],
+  "sources": [
+   "malum:spirit_infusion/alchemical_calx",
+   "malum:spirit_infusion/alchemical_impetus",
+   "malum:spirit_infusion/ring_of_curative_talent",
+   "malum:spirit_repair/alchemical_impetus_restoration"
+  ]
+ },
+ "impetus": {
+  "de": [
+   "Was der [[malum:alchemical_impetus]] im Crucible macht, hängt an den Arcana: 1 Earthen gibt 8 Schwarzpulver, 1 Arcane 8 Redstone, 1 Infernal 8 Glowstonestaub, 2 Earthen und 2 Arcane 4 Quarz, 2 Infernal und 2 Arcane 4 [[malum:blazing_quartz]]. Jeder Durchgang kostet 1 Haltbarkeit.",
+   "Ist er verbraucht, bleibt ein [[malum:fractured_alchemical_impetus]] übrig. Den macht der {{malum/repair_pylon}} mit 2 Calx, 4 Arcane und 4 Earthen wieder ganz."
+  ],
+  "en": [
+   "What the [[malum:alchemical_impetus]] makes in the crucible depends on the arcana: 1 Earthen gives 8 gunpowder, 1 Arcane 8 redstone, 1 Infernal 8 glowstone dust, 2 Earthen and 2 Arcane 4 quartz, 2 Infernal and 2 Arcane 4 [[malum:blazing_quartz]]. Each cycle costs 1 durability.",
+   "When it is used up, a [[malum:fractured_alchemical_impetus]] remains. The {{malum/repair_pylon}} restores it with 2 calx, 4 Arcane and 4 Earthen."
+  ],
+  "sources": [
+   "minecraft:spirit_crucible/gunpowder, redstone, glowstone_dust, quartz",
+   "malum:spirit_crucible/blazing_quartz",
+   "malum:spirit_repair/alchemical_impetus_restoration"
+  ]
+ },
+ "nodes": {
+  "de": [
+   "Ein [[malum:iron_node]] schmilzt im Ofen zu 6 Eisennuggets, beim Waschen mit Create zu 6 Nuggets und zu 75 Prozent Redstone. Ein Durchgang bringt also 18 Nuggets, zwei Barren, für 2 Earthen und 2 Infernal.",
+   "Für den Iron Impetus brauchst du [[malum:cthonic_gold]]: Das Erz liegt zwischen Höhe -48 und 0 im Tiefenschiefer neben Golderz und gibt 3 bis 4 Fragmente, 8 Fragmente sind ein Stück. Den abgenutzten Iron Impetus repariert der Pylon mit 2 Fragmenten."
+  ],
+  "en": [
+   "An [[malum:iron_node]] smelts into 6 iron nuggets, or 6 nuggets plus a 75 percent chance of redstone when washed with Create. One cycle gives 18 nuggets, two ingots, for 2 Earthen and 2 Infernal.",
+   "The Iron Impetus needs [[malum:cthonic_gold]]: its ore lies between Y -48 and 0 in deepslate next to gold ore and drops 3 to 4 fragments; 8 fragments make one piece. The pylon repairs a worn Iron Impetus with 2 fragments."
+  ],
+  "sources": [
+   "malum:spirit_infusion/iron_impetus",
+   "malum:spirit_crucible/node_focusing_iron",
+   "malum:iron_from_node_smelting",
+   "malum:create/washing/iron_node",
+   "malum jar data/malum/worldgen/placed_feature/cthonic_gold_ore.json",
+   "malum jar data/malum/loot_table/blocks/cthonic_gold_ore.json",
+   "malum:cthonic_gold_from_fragment",
+   "malum:spirit_repair/fractured_iron_impetus_restoration"
+  ]
+ },
+ "ring": {
+  "de": [
+   "Eine Infusion [[malum:living_flesh]] gibt 2 Stück, für den Ring brauchst du also zwei. Die [[minecraft:ghast_tear]] kommt von Ghasts im Nether, und der ist auf Kronwerke ein eigener Server: frag notfalls im Chat.",
+   "Die Quest ist optional, die Totems hängen nicht daran."
+  ],
+  "en": [
+   "One infusion of [[malum:living_flesh]] gives 2, so the ring takes two. The [[minecraft:ghast_tear]] comes from ghasts in the Nether, which is a separate server on Kronwerke: ask in chat if needed.",
+   "The quest is optional; the totems do not depend on it."
+  ],
+  "sources": [
+   "malum:spirit_infusion/living_flesh (count 2)",
+   "malum:spirit_infusion/ring_of_curative_talent",
+   "minecraft:crafting_shaped malum:gilded_ring",
+   "docs/SERVER.md (Nether separate server)"
+  ]
+ },
+ "totem_base": {
+  "de": [
+   "Eine Ladung gibt 4 [[malum:runewood_totem_base]], genug für mehrere Totems. Über die Basis kommen senkrecht [[malum:runewood_log]] als Pfahl: drei Runen für einen kleinen Ritus, vier für einen großen.",
+   "Kleine Riten brauchen Arcane und zweimal ihre Sorte, große vorne zusätzlich ein Eldritch."
+  ],
+  "en": [
+   "One batch gives 4 [[malum:runewood_totem_base]], enough for several totems. On top of the base go [[malum:runewood_log]] stacked upright as a pole: three runes for a minor rite, four for a major one.",
+   "Minor rites need Arcane and twice their own kind, major ones an extra Eldritch in front."
+  ],
+  "sources": [
+   "malum:spirit_infusion/runewood_totem_base (count 4)",
+   "malum jar com/sammy/malum/core/systems/rite/SpiritRiteTypeBuilder (minorTotemRite arcane,x,x; majorTotemRite eldritch,arcane,x,x)",
+   "malum jar assets/malum/lang/en_us.json (totem_magic.2)"
+  ]
+ },
+ "healing_rite": {
+  "de": [
+   "Der Rite of Healing heilt alle Lebewesen in der Nähe bei jedem Puls um zwei Herzen. Die Runen kommen in der Reihenfolge Arcane, Sacred, Sacred auf den Pfahl.",
+   "Für die Quest brauchst du den [[malum:totemic_staff]] und hakst den gestarteten Ritus selbst ab. Danach öffnen sich die anderen Riten des Kapitels."
+  ],
+  "en": [
+   "The Rite of Healing heals every creature nearby by two hearts per pulse. The runes go onto the pole in the order Arcane, Sacred, Sacred.",
+   "For the quest you need the [[malum:totemic_staff]] and tick off the started rite yourself. After that the other rites of the chapter open."
+  ],
+  "sources": [
+   "malum jar assets/malum/lang/en_us.json (malum.gui.rite.rite_of_healing.effect)",
+   "malum jar com/sammy/malum/registry/common/magic/rite/MalumSpiritRiteTypes (HEALING minorTotemRite sacred)",
+   "minecraft:crafting_shaped malum:totemic_staff"
+  ],
+  "client": [
+   "whether the rune order is counted from the base upward"
+  ]
+ },
+ "quickening": {
+  "de": [
+   "Das erste Soulwood kommt **nicht** vom Unchained Rite, denn der läuft nur auf einem Soulwood-Totem. Fünf Arcane-Runen auf einem Runewood-Totem starten zuerst den Undirected Rite: Er verwandelt den Totem in Soulwood und verseucht die Umgebung mit Blight, bau ihn also abseits.",
+   "Fünf Arcane auf dem Soulwood-Totem geben dann den Unchained Rite, der Runewood auf Blight in Soulwood umwandelt, auch eine [[malum:runewood_totem_base]] in eine [[malum:soulwood_totem_base]]. Für Quickening kommen Eldritch, Arcane, Infernal, Infernal auf den Soulwood-Totem."
+  ],
+  "en": [
+   "The first soulwood does **not** come from the Unchained Rite, because that one only runs on a soulwood totem. Five Arcane runes on a runewood totem first start the Undirected Rite: it turns the totem into soulwood and spreads blight around it, so build it away from your base.",
+   "Five Arcane on the soulwood totem then give the Unchained Rite, which turns runewood standing on blight into soulwood, a [[malum:runewood_totem_base]] into a [[malum:soulwood_totem_base]] too. For Quickening, Eldritch, Arcane, Infernal, Infernal go onto the soulwood totem."
+  ],
+  "sources": [
+   "malum jar com/sammy/malum/registry/common/magic/rite/MalumSpiritRiteTypes (UNDIRECTED specialTotemRite arcane; UNCHAINED specialTotemRite arcane setCorrupted; QUICKENING majorTotemRite infernal setCorrupted)",
+   "malum jar com/sammy/malum/core/systems/rite/SpiritRiteTypeBuilder (specialTotemRite 5x)",
+   "malum jar com/sammy/malum/common/spiritrite/effect/arcane/UndirectedRiteEffect (UnchainedTotemConversionWorldEvent, ActiveBlightWorldEvent)",
+   "malum jar assets/malum/lang/en_us.json (undirected_rite, unchained_rite)",
+   "malum:spirit_transmutation/soulwood/soulwood_totem_base_soulwood_transmutation"
+  ],
+  "client": [
+   "which blocks the Undirected Rite converts (base and poles) and whether the carved runes survive it",
+   "how far the blight spreads and how to contain it"
+  ]
+ },
+ "soulsmith": {
+  "de": [
+   "Rechne mit 64 Refined Soulstone für die 16 Seelenstahlbarren und 32 Quarz für die 8 Hallowed Gold. Seelenstahl ist auf Kronwerke das Tauschgut für Ender IO: {{enderio/malum}} und der {{malum/soul_binder}} wollen je 4 Barren."
+  ],
+  "en": [
+   "Count on 64 Refined Soulstone for the 16 soul steel ingots and 32 quartz for the 8 Hallowed Gold. On Kronwerke soul steel is the trade good for Ender IO: {{enderio/malum}} and the {{malum/soul_binder}} want 4 ingots each."
+  ],
+  "sources": [
+   "malum:spirit_infusion/soul_stained_steel_ingot",
+   "malum:spirit_infusion/hallowed_gold_ingot",
+   "kronwerke:tech/soul_binder"
+  ]
+ },
+ "pouch": {
+  "de": [
+   "Der Beutel sammelt jedes Arcana automatisch ein. Platzsparend passen außerdem alle Malum-Materialien, Mineralien, Seelenwaffen, Rüstungen, Ringe, Ketten, Gürtel und Runen sowie die Encyclopedia hinein."
+  ],
+  "en": [
+   "The pouch picks up every arcana automatically. Besides that, all Malum materials, minerals, soul weapons, armor, rings, necklaces, belts and runes as well as the Encyclopedia fit in it in less space."
+  ],
+  "sources": [
+   "minecraft:crafting_shaped malum:soulwoven_pouch",
+   "malum jar data/malum/tags/item/soulwoven_pouch_autocollect.json",
+   "malum jar data/malum/tags/item/soulwoven_pouch_efficient.json"
+  ]
+ },
+ "brilliance": {
+  "de": [
+   "Brilliant Stone liegt zwischen Höhe -64 und 40 in Adern von bis zu 4 Blöcken. Mit Behutsamkeit bekommst du nur den Stein selbst, also bau mit Glück ab: Das erhöht die Ausbeute an [[malum:raw_brilliance]].",
+   "Für einen [[malum:brilliant_obelisk]] reichen 2 Raw Brilliance."
+  ],
+  "en": [
+   "Brilliant Stone lies between Y -64 and 40 in veins of up to 4 blocks. Silk Touch only gives you the stone itself, so mine it with Fortune: that raises the yield of [[malum:raw_brilliance]].",
+   "A [[malum:brilliant_obelisk]] takes only 2 Raw Brilliance."
+  ],
+  "sources": [
+   "malum jar data/malum/worldgen/placed_feature/ore_brilliant.json",
+   "malum jar data/malum/worldgen/configured_feature/brilliant_ore.json (size 4)",
+   "malum jar data/malum/loot_table/blocks/brilliant_stone.json",
+   "malum:spirit_infusion/brilliant_obelisk"
+  ],
+  "client": [
+   "how the brilliant obelisk counts with Apothic Enchanting (eterna and max eterna)"
+  ]
+ },
+ "esoteric_spoils": {
+  "de": [
+   "Der Ring kostet 8 Eldritch und gibt dir danach bei jedem Kill mit einer Seelenwaffe eine Seele mehr. Je früher du ihn trägst, desto schneller kommt das Eldritch für Totembasen und große Riten wieder herein."
+  ],
+  "en": [
+   "The ring costs 8 Eldritch and then gives you one extra spirit on every soul weapon kill. The sooner you wear it, the faster the Eldritch for totem bases and major rites comes back in."
+  ],
+  "sources": [
+   "malum:spirit_infusion/ring_of_esoteric_spoils",
+   "minecraft:crafting_shaped malum:ornate_ring",
+   "malum jar assets/malum/lang/en_us.json (ring_of_esoteric_spoils.1)"
+  ],
+  "client": [
+   "which kind of spirit the extra one is"
+  ]
+ },
+ "prospector": {
+  "de": [
+   "Das [[malum:cthonic_gold]] holst du wie bei {{malum/nodes}} aus Cthonic-Gold-Erz tief im Tiefenschiefer. Am meisten bringt der Gürtel mit Sprengstoff: Glück III gilt für jede Explosion, die du auslöst, auch wenn deine Spitzhacke kein Glück hat.",
+   "Bei 32 Earthen und 32 Infernal lohnt es sich, vorher den {{malum/esoteric_spoils}} zu tragen."
+  ],
+  "en": [
+   "Get the [[malum:cthonic_gold]] from Cthonic Gold ore deep in deepslate, as in {{malum/nodes}}. The belt pays off most with explosives: Fortune III applies to every explosion you set off, even when your pickaxe has no Fortune.",
+   "At 32 Earthen and 32 Infernal it pays to wear the {{malum/esoteric_spoils}} first."
+  ],
+  "sources": [
+   "malum:spirit_infusion/belt_of_the_prospector",
+   "minecraft:crafting_shaped malum:gilded_belt",
+   "malum jar assets/malum/lang/en_us.json (belt_of_the_prospector.2, avarice.1)"
+  ]
+ },
+ "repair_pylon": {
+  "de": [
+   "Den [[malum:tainted_rock_item_pedestal]] schneidest du in der Steinsäge aus einem einzigen [[malum:tainted_rock]]. Einen verbrauchten Impetus reparierst du nur hier: Der Alchemical Impetus braucht 2 Calx, 4 Arcane und 4 Earthen, der Iron Impetus 2 Cthonic-Gold-Fragmente, 8 Aqueous und 8 Infernal.",
+   "Das zu reparierende Item liegt auf einer Ablage in der Nähe, Material und Arcana kommen in den Pylon."
+  ],
+  "en": [
+   "You cut the [[malum:tainted_rock_item_pedestal]] from a single [[malum:tainted_rock]] in the stonecutter. A used up impetus can only be repaired here: the Alchemical Impetus takes 2 calx, 4 Arcane and 4 Earthen, the Iron Impetus 2 cthonic gold fragments, 8 Aqueous and 8 Infernal.",
+   "The item to repair sits on a holder nearby; material and arcana go into the pylon."
+  ],
+  "sources": [
+   "malum:spirit_infusion/repair_pylon",
+   "malum:tainted_rock_item_pedestal_stonecutting_from_tainted_rock",
+   "malum:spirit_repair/alchemical_impetus_restoration",
+   "malum:spirit_repair/fractured_iron_impetus_restoration",
+   "malum jar assets/malum/lang/en_us.json (info.spirit_repair)"
+  ]
+ },
+ "catalyzer": {
+  "de": [
+   "Für das [[malum:blazing_quartz]] musst du nicht in den Nether: Der Alchemical Impetus macht im Crucible aus 2 Infernal und 2 Arcane 4 Stück. Den [[malum:twisted_rock_item_pedestal]] schneidest du in der Steinsäge aus einem [[malum:twisted_rock]].",
+   "Der Catalyzer arbeitet nur mit Brennstoff, jeder Ofenbrennstoff geht, zum Beispiel [[malum:arcane_charcoal]]. Bis zu acht Catalyzer wirken auf einen Crucible."
+  ],
+  "en": [
+   "You do not need the Nether for the [[malum:blazing_quartz]]: the Alchemical Impetus makes 4 from 2 Infernal and 2 Arcane in the crucible. You cut the [[malum:twisted_rock_item_pedestal]] from one [[malum:twisted_rock]] in the stonecutter.",
+   "The catalyzer only works with fuel; any furnace fuel will do, for example [[malum:arcane_charcoal]]. Up to eight catalyzers work on one crucible."
+  ],
+  "sources": [
+   "malum:spirit_infusion/ether",
+   "malum:spirit_infusion/spirit_catalyzer",
+   "malum:spirit_crucible/blazing_quartz",
+   "malum:twisted_rock_item_pedestal_stonecutting_from_twisted_rock",
+   "malum jar com/sammy/malum/common/block/curiosities/spirit_catalyzer/SpiritCatalyzerCoreBlockEntity (getBurnTime)",
+   "malum jar assets/malum/lang/en_us.json (crucible_acceleration.3)"
+  ]
+ },
+ "rite_combat": {
+  "de": [
+   "Die Runen kommen in der Reihenfolge Arcane, dann zweimal die Sorte. Nimm **Runewood**: Auf Soulwood werden aus denselben Runen der Rite of the Oaken Might und der Rite of the Fiery Embrace.",
+   "Beide Effekte gibt es auch als tragbare Rune, dann mit halber Stärke."
+  ],
+  "en": [
+   "The runes go in the order Arcane, then twice the kind. Use **runewood**: on soulwood the same runes give the Rite of the Oaken Might and the Rite of the Fiery Embrace instead.",
+   "Both effects also exist as wearable runes, at half strength."
+  ],
+  "sources": [
+   "malum jar com/sammy/malum/registry/common/magic/rite/MalumSpiritRiteTypes (STONE_WARD/BURNING_FERVOR minor; OAKEN_MIGHT/FIERY_EMBRACE minor setCorrupted)",
+   "malum jar assets/malum/lang/en_us.json (rune_of_stone_ward.1, rune_of_burning_fervor.1)"
+  ],
+  "client": [
+   "whether the aura also buffs hostile mobs nearby ('nearby creatures')"
+  ]
+ },
+ "rite_motion": {
+  "de": [
+   "Auch hier gilt: Runewood nehmen. Auf Soulwood geben dieselben Runen den Rite of the Sky Tether (höhere Sprünge, weniger Schwerkraft) und den Rite of the Good Tides.",
+   "Howling Gale und Flowing Grasp gibt es auch als tragbare Rune mit halber Stärke."
+  ],
+  "en": [
+   "Again, use runewood. On soulwood the same runes give the Rite of the Sky Tether (higher jumps, less gravity) and the Rite of the Good Tides.",
+   "Howling Gale and Flowing Grasp also exist as wearable runes at half strength."
+  ],
+  "sources": [
+   "malum jar com/sammy/malum/registry/common/magic/rite/MalumSpiritRiteTypes (HOWLING_GALE/FLOWING_GRASP minor; SKY_TETHER/GOOD_TIDES minor setCorrupted)",
+   "malum jar assets/malum/lang/en_us.json (rite_of_the_sky_tether, rune_of_howling_gale.1, rune_of_flowing_grasp.1)"
+  ]
+ },
+ "rite_nurturing": {
+  "de": [
+   "Großer Ritus: Basis plus vier Runen in der Reihenfolge Eldritch, Arcane, Sacred, Sacred. Auf Soulwood wird daraus der Rite of Lust, also Runewood nehmen.",
+   "Neben Jungtieren, Hühnern, Schafen und Bienen vervielfältigen sich auch Hilfsgeister schneller."
+  ],
+  "en": [
+   "Major rite: a base plus four runes in the order Eldritch, Arcane, Sacred, Sacred. On soulwood it becomes the Rite of Lust, so use runewood.",
+   "Besides young animals, chickens, sheep and bees, allays also duplicate faster."
+  ],
+  "sources": [
+   "malum jar com/sammy/malum/registry/common/magic/rite/MalumSpiritRiteTypes (NURTURING majorTotemRite sacred; LUST setCorrupted)",
+   "malum jar assets/malum/lang/en_us.json (malum.gui.rite.rite_of_nurturing.effect)"
+  ]
+ },
+ "rite_soaking": {
+  "de": [
+   "Großer Ritus: Eldritch, Arcane, Aqueous, Aqueous auf einem Runewood-Totem. Auf Soulwood geben dieselben Runen den Rite of Sapping.",
+   "Der Funke wandert umher, statt alles auf einmal zu treffen. Ein Totem mitten im Feld wirkt also nach und nach auf die Pflanzen in seiner Reichweite."
+  ],
+  "en": [
+   "Major rite: Eldritch, Arcane, Aqueous, Aqueous on a runewood totem. On soulwood the same runes give the Rite of Sapping.",
+   "The locus wanders around instead of hitting everything at once, so a totem in the middle of a field works through the plants in its range bit by bit."
+  ],
+  "sources": [
+   "malum jar com/sammy/malum/registry/common/magic/rite/MalumSpiritRiteTypes (SOAKING majorTotemRite aqueous; SAPPING setCorrupted)",
+   "malum jar assets/malum/lang/en_us.json (malum.gui.rite.rite_of_soaking.effect)"
+  ],
+  "client": [
+   "the range of the rite and how the locus moves"
+  ]
+ }
+}

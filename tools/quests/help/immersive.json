@@ -1,0 +1,1054 @@
+{
+ "welcome": {
+  "de": [
+   "Das [[immersiveengineering:manual]] gehört schon zu Stufe 1, du kannst es also vorher bauen und lesen. Alles andere in diesem Kapitel öffnet mit Stufe 2.",
+   "Der Weg führt über {{immersive/hammer}} und {{immersive/coke_oven}}: Koks ist der Brennstoff für den Stahl, und das Kreosot daraus macht Behandeltes Holz, aus dem Windmühle, Werkbank und Pfosten bestehen."
+  ],
+  "en": [
+   "The [[immersiveengineering:manual]] already belongs to stage 1, so you can build and read it early. Everything else in this chapter opens with stage 2.",
+   "The path runs through {{immersive/hammer}} and {{immersive/coke_oven}}: coke is the fuel for steel, and its creosote turns into treated wood, which the windmill, workbench and posts are made of."
+  ],
+  "sources": [
+   "immersiveengineering:crafting/manual",
+   "helpq item immersiveengineering:manual (stage 1)",
+   "docs/STAGES.md (stage 2: Immersive Engineering up to the coke oven, blast furnace and windmill)"
+  ]
+ },
+ "hammer": {
+  "de": [
+   "Jeder Faden aus dem Tag #c:strings geht, die Stöcke sind normale Holzstöcke. Der Hammer hält **100 Anwendungen**, und jedes Blech aus der Werkbank kostet eine davon.",
+   "Mit dem Hammer kannst du gleich die drei Ziegelsorten für die ersten Multiblöcke angehen: {{immersive/cokebrick}}, {{immersive/kilnbrick}} und später {{immersive/blastbrick}}."
+  ],
+  "en": [
+   "Any string from the #c:strings tag works, the sticks are plain wooden sticks. The hammer has **100 uses**, and every plate you make in the crafting grid costs one of them.",
+   "With the hammer you can start on the three bricks for the first multiblocks: {{immersive/cokebrick}}, {{immersive/kilnbrick}} and later {{immersive/blastbrick}}."
+  ],
+  "sources": [
+   "immersiveengineering:crafting/hammer",
+   "srv/config/immersiveengineering-server.toml (tools.hammer_durability 100)"
+  ]
+ },
+ "plates": {
+  "de": [
+   "Der Hammer macht Bleche aus Eisen, Kupfer, Gold, Blei, Nickel, Silber, Aluminium, Constantan, Elektrum, Stahl und Uran. Aus Eisen und Kupfer kommen dabei direkt die Bleche von Create heraus, [[create:iron_sheet]] und [[create:copper_sheet]].",
+   "Für größere Mengen nimm die [[create:mechanical_press]] aus Stufe 1: Sie presst Eisen, Kupfer, Blei, Nickel, Constantan, Elektrum und Stahl zu Blechen und verbraucht keinen Hammer."
+  ],
+  "en": [
+   "The hammer makes plates from iron, copper, gold, lead, nickel, silver, aluminium, constantan, electrum, steel and uranium. For iron and copper it gives Create's sheets directly, [[create:iron_sheet]] and [[create:copper_sheet]].",
+   "For larger amounts use the [[create:mechanical_press]] from stage 1: it presses iron, copper, lead, nickel, constantan, electrum and steel into plates and uses up no hammer."
+  ],
+  "sources": [
+   "immersiveengineering:crafting/plate_*_hammering (13 uses of the hammer)",
+   "create:pressing/iron_ingot, create:pressing/copper_ingot",
+   "create:pressing/compat/immersiveengineering/plate_lead, plate_nickel, plate_constantan, plate_steel",
+   "createaddition:pressing/electrum_ingot"
+  ]
+ },
+ "wirecutter": {
+  "de": [
+   "Der Kabelschneider hält **250 Schnitte**, jedes Kabel aus der Werkbank kostet einen. Er macht aus einer Isolierten LV-Drahtspule auch wieder eine blanke.",
+   "Mehr Kabel pro Blech gibt die [[create:mechanical_saw]] aus Stufe 1: Sie schneidet ein Kupfer- oder Elektrumblech zu **zwei** Kabeln, ohne Haltbarkeit. Weiter geht es mit {{immersive/wire}}."
+  ],
+  "en": [
+   "The wire cutters last **250 cuts**, every wire from the crafting grid costs one. They also strip an Insulated LV Wire Coil back to a bare one.",
+   "More wire per plate comes from the [[create:mechanical_saw]] from stage 1: it cuts a copper or electrum plate into **two** wires, without any durability. Next comes {{immersive/wire}}."
+  ],
+  "sources": [
+   "immersiveengineering:crafting/wirecutter",
+   "srv/config/immersiveengineering-server.toml (tools.cutter_durability 250)",
+   "immersiveengineering:crafting/strip_lv",
+   "create:cutting/compat/immersiveengineering/wire_copper, wire_electrum"
+  ]
+ },
+ "hemp": {
+  "de": [
+   "Samen fallen mit 10 Prozent Chance aus kurzem und hohem Gras, aber nicht, wenn du es mit der Schere schneidest. Hanf wächst zwei Blöcke hoch: Jeder abgebaute Block gibt einen Samen zurück, ausgewachsen gibt es Fasern, und Glück bringt mehr Fasern.",
+   "Acht [[immersiveengineering:hemp_fiber]] um einen Stock ergeben ein [[immersiveengineering:hemp_fabric]]. Von dem brauchst du viel: allein acht Windmühlensegel kosten 48 Gewebe, also 384 Fasern ({{immersive/sails}})."
+  ],
+  "en": [
+   "Seeds drop with a 10 percent chance from short and tall grass, but not when you cut it with shears. Hemp grows two blocks tall: every block you break gives a seed back, a grown plant gives fiber, and Fortune adds more fiber.",
+   "Eight [[immersiveengineering:hemp_fiber]] around a stick make one [[immersiveengineering:hemp_fabric]]. You need lots of it: eight windmill sails alone cost 48 fabric, that is 384 fiber ({{immersive/sails}})."
+  ],
+  "sources": [
+   "IE jar: data/immersiveengineering/loot_modifiers/hemp_from_grass.json, hemp_from_tall_grass.json (chance 0.1, not with #c:tools/shear)",
+   "IE jar: data/immersiveengineering/loot_table/blocks/hemp.json (seed always, fiber at age 4 and upper half, fortune bonus)",
+   "immersiveengineering:crafting/hemp_fabric",
+   "immersiveengineering:crafting/windmill_sail"
+  ]
+ },
+ "ores": {
+  "de": [
+   "In der Farmwelt liegen Blei-, Silber- und Nickelerz in jeder Höhe, dazu Zinn und Bauxit. Jedes Roherz der drei Metalle wird im Ofen zu dem Barren, den die Quest zählt, egal aus welchem Mod das Erz stammt ({{exploration/e_enter}}).",
+   "Blei brauchst du früher als gedacht: Die Blaupause Komponenten am Arbeitstisch kostet einen Bleibarren, jeder LV-Kondensator zwei Bleibleche."
+  ],
+  "en": [
+   "In the farm world lead, silver and nickel ore lie at every height, along with tin and bauxite. Every raw ore of the three metals smelts into the ingot this quest counts, whichever mod the ore comes from ({{exploration/e_enter}}).",
+   "You need lead sooner than you might think: the Components blueprint at the workbench costs one lead ingot, every LV accumulator two lead plates."
+  ],
+  "sources": [
+   "kubejs/data/kronwerke/worldgen/biome/mine.json (mine_lead, mine_silver, mine_nickel, mine_oritech_nickel, mine_tin, mine_aluminum)",
+   "kubejs/data/kronwerke/worldgen/placed_feature/mine_lead.json (height -60 to 432)",
+   "eidolon_repraised:smelt_raw_lead, immersiveengineering:smelting/ingot_silver3, oritech:nickel_ingot_from_smelting_raw_nickel",
+   "immersiveengineering:crafting/blueprint_components",
+   "immersiveengineering:crafting/capacitor_lv"
+  ]
+ },
+ "cokebrick": {
+  "de": [
+   "In die Ecken kommt [[minecraft:clay_ball]], kein Tonblock. Ein abgebauter Tonblock gibt vier davon, für 36 Stück reichen also 9 Tonblöcke.",
+   "Die Ziegel an den Seiten sind [[minecraft:brick]] aus dem Ofen, in die Mitte passt jeder Sandstein. Zwei Koksziegelstufen übereinander werden wieder zu einem Koksziegel."
+  ],
+  "en": [
+   "The corners take [[minecraft:clay_ball]], not clay blocks. A mined clay block drops four of them, so 9 clay blocks are enough for 36.",
+   "The bricks on the sides are [[minecraft:brick]] from the furnace, the centre takes any sandstone. Two coke brick slabs on top of each other turn back into one coke brick."
+  ],
+  "sources": [
+   "immersiveengineering:crafting/cokebrick (c:clay, c:bricks, c:sandstone/blocks)",
+   "IE jar: data/c/tags/item/clay.json (minecraft:clay_ball)",
+   "immersiveengineering:crafting/cokebrick_from_slab"
+  ]
+ },
+ "coke_oven": {
+  "de": [
+   "Der Ofen rechnet **pro Stück**: Jede Kohle gibt einen Koks und 500 mB Kreosot, bis zu 16 Kohle in einem Durchgang von 5 Minuten. Ein voller Durchgang macht also 16 Koks und 8 000 mB.",
+   "Ein [[minecraft:coal_block]] gibt einen [[immersiveengineering:coke]] und 5 000 mB, zwei pro Durchgang. Stämme brauchen 2,5 Minuten, bis zu 8 gleichzeitig, mit 250 mB je Stamm. Der Tank fasst 12 000 mB; passt das Kreosot nicht mehr hinein, verarbeitet der Ofen nichts mehr."
+  ],
+  "en": [
+   "The oven counts **per item**: every coal gives one coke and 500 mB of creosote, up to 16 coal in one 5 minute run. A full run makes 16 coke and 8,000 mB.",
+   "A [[minecraft:coal_block]] gives one [[immersiveengineering:coke]] and 5,000 mB, two per run. Logs take 2.5 minutes, up to 8 at once, with 250 mB per log. The tank holds 12,000 mB; once the creosote no longer fits, the oven processes nothing."
+  ],
+  "sources": [
+   "immersiveengineering:cokeoven/coke (count 16, time 6000, creosote 500)",
+   "immersiveengineering:cokeoven/coke_block (count 2, time 6000, creosote 5000)",
+   "immersiveengineering:cokeoven/charcoal (count 8, time 3000, creosote 250)",
+   "IE jar: CokeOvenLogic (output and creosote multiplied by the items taken), CokeOvenLogic$State (FluidTank 12000)"
+  ]
+ },
+ "coal_coke": {
+  "de": [
+   "Im Hochofen brennt ein Koks 1 200 Ticks, so lange wie ein Stahlbarren braucht. Ein [[immersiveengineering:coke]] brennt 12 000 Ticks und reicht damit für 10 Barren statt 9, pack also für den Hochofen gleich in Blöcke ({{immersive/coke_block}}).",
+   "Kohle bekommst du am schnellsten in der Farmwelt. Holzkohle brennt im Hochofen nur 300 Ticks, ein Viertel davon."
+  ],
+  "en": [
+   "In the blast furnace one coke burns 1,200 ticks, exactly as long as one steel ingot takes. A [[immersiveengineering:coke]] burns 12,000 ticks and so lasts for 10 ingots instead of 9, so pack coke into blocks for the furnace ({{immersive/coke_block}}).",
+   "Coal is quickest to get in the farm world. Charcoal burns only 300 ticks in the blast furnace, a quarter of that."
+  ],
+  "sources": [
+   "IE jar: data/immersiveengineering/recipe/blastfurnace/ (fuel coal_coke 1200, storage_blocks/coal_coke 12000, charcoal 300)",
+   "immersiveengineering:blastfurnace steel from c:ingots/iron (time 1200)",
+   "kubejs/data/kronwerke/worldgen/biome/mine.json (mine_coal)"
+  ]
+ },
+ "coke_block": {
+  "de": [
+   "Ein Koksblock brennt im Hochofen 12 000 Ticks, neun lose Koks zusammen nur 10 800. Für Stahl lohnt sich der Block also.",
+   "Kohleblöcke im Koksofen geben pro Block 5 000 mB Kreosot statt 4 500 mB für neun lose Kohle, also nur gut 10 Prozent mehr. Dafür passen 18 Kohle als zwei Blöcke in einen Durchgang statt 16 lose."
+  ],
+  "en": [
+   "A block of coal coke burns 12,000 ticks in the blast furnace, nine loose coke together only 10,800. For steel the block pays off.",
+   "Coal blocks in the coke oven give 5,000 mB of creosote per block instead of 4,500 mB for nine loose coal, only about 10 percent more. In exchange 18 coal fit into one run as two blocks instead of 16 loose ones."
+  ],
+  "sources": [
+   "immersiveengineering:crafting/coal_coke_to_coke, coke_to_coal_coke",
+   "immersiveengineering:cokeoven/coke_block (count 2, creosote 5000)",
+   "immersiveengineering:cokeoven/coke (count 16, creosote 500)",
+   "IE jar: data/immersiveengineering/recipe/blastfurnace/ (coal_coke 1200, storage_blocks/coal_coke 12000)"
+  ]
+ },
+ "creosote": {
+  "de": [
+   "Ein Eimer sind 1 000 mB, das reicht für 8 Behandelte Holzbretter. Kreosot macht außerdem Fackeln: Wolle, ein Kreosotöleimer und drei Stöcke ergeben 12 Stück.",
+   "Mit Create Crafts & Additions brennt Kreosot auch im [[create:blaze_burner]], 1 000 mB für 4 800 Ticks. Der Tank des Koksofens fasst 12 Eimer."
+  ],
+  "en": [
+   "One bucket is 1,000 mB, enough for 8 treated wood planks. Creosote also makes torches: wool, a creosote bucket and three sticks give 12.",
+   "With Create Crafts & Additions creosote also burns in the [[create:blaze_burner]], 1,000 mB for 4,800 ticks. The coke oven's tank holds 12 buckets."
+  ],
+  "sources": [
+   "immersiveengineering:crafting/treated_wood_horizontal (1000 mB)",
+   "immersiveengineering:crafting/torch (12 torches)",
+   "createaddition:liquid_burning/creosote (1000 mB, burn_time 4800)",
+   "IE jar: CokeOvenLogic$State (FluidTank 12000)"
+  ],
+  "client": [
+   "the bucket slot in the coke oven window"
+  ]
+ },
+ "pump": {
+  "de": [
+   "Damit läuft Behandeltes Holz von selbst: Leite das Kreosot in einen [[create:spout]] von Create, der füllt jedes Holzbrett mit 125 mB, genau so viel wie das Werkbankrezept pro Brett braucht.",
+   "Für die Pumpe brauchst du 3 Eisenbleche, eine [[immersiveengineering:component_iron]] und 3 Rohre. Rechne 6 Bleche für die acht Rohre der Quest dazu."
+  ],
+  "en": [
+   "This makes treated wood run on its own: pipe the creosote into a Create [[create:spout]], which fills any plank with 125 mB, exactly as much as the crafting recipe uses per plank.",
+   "The pump takes 3 iron plates, one [[immersiveengineering:component_iron]] and 3 pipes. Add 6 plates for the eight pipes of this quest."
+  ],
+  "sources": [
+   "immersiveengineering:crafting/fluid_pump",
+   "immersiveengineering:crafting/fluid_pipe (6 plates, 8 pipes)",
+   "create:filling/compat/immersiveengineering/treated_wood_in_spout (125 mB)"
+  ],
+  "client": [
+   "the pump pulls creosote out of the coke oven",
+   "hammer sets the pump sides"
+  ]
+ },
+ "treated_wood": {
+  "de": [
+   "Jede Holzsorte geht. Die 32 Bretter der Quest kosten vier Eimer, das ist das Kreosot von acht Kohle im Koksofen.",
+   "Kreosot im Tank kannst du auch per [[create:spout]] auf einzelne Bretter geben, 125 mB pro Brett ({{immersive/pump}}). Drei Bretter in einer Reihe ergeben sechs Behandelte Holzstufen für {{immersive/workbench}}."
+  ],
+  "en": [
+   "Any kind of plank works. The 32 planks of this quest cost four buckets, that is the creosote of eight coal in the coke oven.",
+   "Creosote in a tank can also go onto single planks with a [[create:spout]], 125 mB per plank ({{immersive/pump}}). Three planks in a row give six treated wood slabs for {{immersive/workbench}}."
+  ],
+  "sources": [
+   "immersiveengineering:crafting/treated_wood_horizontal (#minecraft:planks, 1000 mB, 8 planks)",
+   "immersiveengineering:cokeoven/coke (creosote 500)",
+   "create:filling/compat/immersiveengineering/treated_wood_in_spout",
+   "immersiveengineering:crafting/treated_wood_horizontal_to_slab"
+  ]
+ },
+ "sticks": {
+  "de": [
+   "Was du an Holz brauchst: Ein Windmühlenblatt sind 3 Bretter und 4 Stöcke, ein Wasserradsegment 3 Bretter und 4 Stöcke, drei Behandelte Holzzäune 4 Bretter und 2 Stöcke.",
+   "Die ganze [[immersiveengineering:windmill]] kostet 24 Bretter und 32 Stöcke, zusammen also 40 Bretter oder fünf Eimer Kreosot."
+  ],
+  "en": [
+   "What the wood goes into: a windmill blade is 3 planks and 4 sticks, a waterwheel segment 3 planks and 4 sticks, three treated wood fences 4 planks and 2 sticks.",
+   "The whole [[immersiveengineering:windmill]] costs 24 planks and 32 sticks, 40 planks altogether or five buckets of creosote."
+  ],
+  "sources": [
+   "immersiveengineering:crafting/stick_treated (2 planks, 4 sticks)",
+   "immersiveengineering:crafting/windmill_blade",
+   "immersiveengineering:crafting/waterwheel_segment",
+   "immersiveengineering:crafting/treated_fence",
+   "immersiveengineering:crafting/windmill"
+  ]
+ },
+ "workbench": {
+  "de": [
+   "Genau sind es **vier** Behandelte Stöcke: zwei neben der Werkbank und zwei in den unteren Ecken, die Mitte unten bleibt frei. Die drei Stufen oben kommen aus einem Behandelten Holzbrett, das gibt sechs.",
+   "Behalte sie nicht lange: Sie ist die Zutat für {{immersive/bench}}."
+  ],
+  "en": [
+   "It takes **four** treated sticks: two beside the crafting table and two in the bottom corners, with the bottom middle left empty. The three slabs on top come from one treated wood plank, which gives six.",
+   "Do not keep it long: it is the ingredient for {{immersive/bench}}."
+  ],
+  "sources": [
+   "immersiveengineering:crafting/craftingtable (pattern sss, rcr, r r)",
+   "immersiveengineering:crafting/treated_wood_horizontal_to_slab (6 slabs)",
+   "immersiveengineering:crafting/workbench"
+  ]
+ },
+ "basic_engineering": {
+  "de": [
+   "Im deutschen Spiel heißt der Block noch **Basic Engineering Block**, so findest du ihn auch in EMI.",
+   "Er steckt in elf Rezepten, unter anderem im LV- und MV-Kondensator, in der Gartenglocke, im Element Router, im Flüssigkeitsrouter und im Extrahierenden Förderband. Vier pro Rezept reichen eine Weile."
+  ],
+  "en": [
+   "Make four at a time: one craft gives four **Basic Engineering Blocks** for 4 iron ingots and 4 treated wood planks.",
+   "It goes into eleven recipes, among them the LV and MV accumulators, the garden cloche, the item router, the fluid router and the extracting conveyor. Four per craft last a while."
+  ],
+  "sources": [
+   "helpq lang basic_engineering (de: none)",
+   "immersiveengineering:crafting/basic_engineering",
+   "helpq uses immersiveengineering:basic_engineering (11 recipes)"
+  ]
+ },
+ "blastbrick": {
+  "de": [
+   "In die Ecken kommen [[minecraft:nether_brick]], also die einzelnen Ziegel, die du im Ofen aus Netherrack brennst, nicht der Block. Die Seiten sind normale [[minecraft:brick]].",
+   "Der Nether ist in Stufe 2 offen. Magmablöcke findest du dort leicht ({{nether/magma}}), Netherziegel auch fertig in Netherfestungen ({{nether/fortress}})."
+  ],
+  "en": [
+   "The corners take [[minecraft:nether_brick]], the single bricks you smelt from netherrack, not the block. The sides are plain [[minecraft:brick]].",
+   "The Nether is open in stage 2. Magma blocks are easy to find there ({{nether/magma}}), and fortresses are made of nether bricks ({{nether/fortress}})."
+  ],
+  "sources": [
+   "immersiveengineering:crafting/blastbrick (c:bricks/nether corners, c:bricks sides, magma block centre)",
+   "docs/STAGES.md (stage 2: the Nether)"
+  ]
+ },
+ "blast_furnace": {
+  "de": [
+   "Ein [[minecraft:iron_block]] wird in 9 Minuten zu einem [[immersiveengineering:storage_steel]] mit 9 Schlacke, das ist eine Minute schneller als neun einzelne Barren. Mit Eisenblöcken und Koksblöcken musst du viel seltener nachfüllen.",
+   "Für Stahl ohne Handarbeit kommt danach {{immersive/improved}}."
+  ],
+  "en": [
+   "An [[minecraft:iron_block]] turns into a [[immersiveengineering:storage_steel]] with 9 slag in 9 minutes, one minute faster than nine single ingots. With iron blocks and coke blocks you refill far less often.",
+   "For steel without handwork, {{immersive/improved}} comes next."
+  ],
+  "sources": [
+   "IE jar: data/immersiveengineering/recipe/blastfurnace/ (c:storage_blocks/iron time 10800, slag 9; c:ingots/iron time 1200)",
+   "IE jar: blastfurnace fuel storage_blocks/coal_coke 12000"
+  ]
+ },
+ "steel": {
+  "de": [
+   "Alle Wege führen zum selben [[mekanism:ingot_steel]]: Hochofen, Mekanism ({{mekanism/steel}}) und ein 2x2-Rezept in der Werkbank aus 2 Eisenbarren und 2 Kohle.",
+   "Die Werkbank kostet aber pro Barren doppelt so viel Eisen und Kohle wie der Hochofen, der nur einen Barren und einen Koks braucht. Für die 64 aus {{immersive/engineer}} lohnt sich der Hochofen."
+  ],
+  "en": [
+   "Every route ends in the same [[mekanism:ingot_steel]]: the blast furnace, Mekanism ({{mekanism/steel}}) and a 2x2 crafting recipe from 2 iron ingots and 2 coal.",
+   "The crafting recipe costs twice the iron and coal per ingot, though, while the blast furnace needs only one ingot and one coke. For the 64 of {{immersive/engineer}} the blast furnace pays off."
+  ],
+  "sources": [
+   "oritech:crafting/alloy/steel (pattern aa, bb: c:ingots/iron, minecraft:coals)",
+   "immersiveengineering:blastfurnace (c:ingots/iron, result c:ingots/steel)",
+   "helpq item mekanism:ingot_steel"
+  ]
+ },
+ "slag": {
+  "de": [
+   "Schlacke ist in der {{immersive/cloche}} ein Dünger, so gut wie Knochenmehl (Wachstum mal 1,3). Im Ofen wird sie zu [[immersiveengineering:slag_glass]], vier Schlacke ergeben vier Schlackeziegel.",
+   "Das [[create:crushing_wheel]] mahlt sie zu Schlacke Kies, und der Industriedünger braucht sie ebenfalls."
+  ],
+  "en": [
+   "Slag is a fertilizer in the {{immersive/cloche}}, as good as bone meal (growth times 1.3). In the furnace it becomes [[immersiveengineering:slag_glass]], four slag make four slag bricks.",
+   "The [[create:crushing_wheel]] grinds it into slag gravel, and industrial fertilizer needs it too."
+  ],
+  "sources": [
+   "immersiveengineering:fertilizer/slag (growthModifier 1.3), fertilizer/bonemeal (1.3)",
+   "immersiveengineering:smelting/slag_glass",
+   "immersiveengineering:crafting/slag_brick",
+   "create:crushing/compat/immersiveengineering/slag",
+   "immersiveengineering:crafting/fertilizer"
+  ]
+ },
+ "improved": {
+  "de": [
+   "Die [[create:mechanical_press]] presst die 27 Stahlbleche ohne Hammer. Mit einem [[create:deployer]] kannst du das Blech auch direkt auf den Sprengziegel setzen.",
+   "Die Sprengziegel deines Roh-Hochofens kannst du dafür wiederverwenden, für den neuen Ofen brauchst du keine 27 zusätzlichen."
+  ],
+  "en": [
+   "The [[create:mechanical_press]] makes the 27 steel plates without a hammer. With a [[create:deployer]] you can also apply the plate straight onto the blast brick.",
+   "You can reuse the blast bricks of your crude blast furnace, the new furnace does not need 27 extra ones."
+  ],
+  "sources": [
+   "immersiveengineering:crafting/blastbrick_reinforced (shapeless)",
+   "createaddition:compat/immersiveengineering/item_application/reinforced_blast_brick",
+   "create:pressing/compat/immersiveengineering/plate_steel"
+  ],
+  "client": [
+   "breaking a formed crude blast furnace returns its 27 blast bricks"
+  ]
+ },
+ "improved_form": {
+  "de": [
+   "Der Trichter sitzt als vierte Ebene genau über der Mitte und muss **nach unten** zeigen, die anderen acht Felder dieser Ebene bleiben Luft. Setz ihn von oben auf den mittleren Ziegel, dann zeigt er nach unten.",
+   "Danach kannst du den Ofen mit {{immersive/conveyor}} beschicken und mit {{immersive/preheater}} beschleunigen."
+  ],
+  "en": [
+   "The hopper sits as the fourth layer right above the centre and must point **down**; the other eight spots of that layer stay air. Place it onto the top of the centre brick and it points down.",
+   "After that you can feed the furnace with {{immersive/conveyor}} and speed it up with {{immersive/preheater}}."
+  ],
+  "sources": [
+   "IE jar: data/immersiveengineering/structure/multiblocks/improved_blast_furnace.nbt (size 3x4x3, 27 blastbrick_reinforced, 8 air, hopper facing down)"
+  ],
+  "client": [
+   "which block the hammer must hit",
+   "input and output sides"
+  ]
+ },
+ "preheater": {
+  "de": [
+   "Jeder Vorwärmer braucht einen [[immersiveengineering:furnace_heater]] ({{immersive/external_heater}}), ein Flüssigkeitsrohr und vier [[immersiveengineering:sheetmetal_iron]]. Strom bekommt er über einen LV-Anschluss ({{immersive/connectors}}).",
+   "Zwei Vorwärmer ziehen zusammen 64 FE/t, ein Viertel dessen, was ein LV-Anschluss weitergibt."
+  ],
+  "en": [
+   "Each preheater needs an [[immersiveengineering:furnace_heater]] ({{immersive/external_heater}}), a fluid pipe and four [[immersiveengineering:sheetmetal_iron]]. It gets power through an LV connector ({{immersive/connectors}}).",
+   "Two preheaters draw 64 FE/t together, a quarter of what one LV connector passes on."
+  ],
+  "sources": [
+   "immersiveengineering:crafting/blastfurnace_preheater",
+   "srv/config/immersiveengineering-server.toml (machines.preheater_consumption 32)"
+  ]
+ },
+ "engineer": {
+  "de": [
+   "Das Technik-Ziel von Stufe 3 nimmt jeden Barren mit dem Tag #c:ingots/steel. Wie viele es sind, hängt von der Zahl der aktiven Spieler ab, die 4 000 aus dem Questtext sind nur der Grundwert.",
+   "Mit Schleich-Klick am Obelisken gibst du alles aus den 27 Feldern über der Hotbar ab: etwas in der Hand halten und innerhalb von 5 Sekunden ein zweites Mal klicken ({{start_here/o_handin}}). Für den Meilenstein [[kronwerke:steel_core]] brauchst du dazu je vier Schwere Ingenieursbausteine ({{immersive_heavy/heavy}})."
+  ],
+  "en": [
+   "The stage 3 tech goal takes any ingot with the #c:ingots/steel tag. How many depends on the number of active players; the 4,000 in the quest text is only the base value.",
+   "A sneak click at the obelisk hands in everything from the 27 slots above the hotbar: hold an item and click a second time within 5 seconds ({{start_here/o_handin}}). The [[kronwerke:steel_core]] milestone also needs four heavy engineering blocks each ({{immersive_heavy/heavy}})."
+  ],
+  "sources": [
+   "config/kronwerke/goals.json (stage3 tech: #c:ingots/steel base 4000, scale true)",
+   "kubejs/server_scripts/kronwerke/milestones.js (kronwerke:milestones/steel_core)",
+   "core: src/main/java/de/kronwerke/core/goal/GoalManager.java (depositAll slots 9 to 35)"
+  ]
+ },
+ "steel_tools": {
+  "de": [
+   "Die Spitzhacke kostet 3 Stahlbarren und 2 [[immersiveengineering:stick_treated]]. Für den [[immersiveengineering:shield]] legst du 6 Stahlbleche und 2 Behandelte Holzbretter um einen normalen Schild.",
+   "Wer gleich die Rüstung will, macht weiter mit {{immersive/steel_armor}}."
+  ],
+  "en": [
+   "The pickaxe costs 3 steel ingots and 2 [[immersiveengineering:stick_treated]]. For the [[immersiveengineering:shield]] put 6 steel plates and 2 treated wood planks around a normal shield.",
+   "If you want the armour as well, continue with {{immersive/steel_armor}}."
+  ],
+  "sources": [
+   "immersiveengineering:crafting/pickaxe_steel",
+   "immersiveengineering:crafting/shield (pattern sws, scs, sws)"
+  ]
+ },
+ "kilnbrick": {
+  "de": [
+   "Für 8 Legierungsziegel reichen vier Rezepte: 8 Sandstein und 8 [[minecraft:brick]]. Zwei Legierungsziegelstufen übereinander werden wieder zu einem Ziegel.",
+   "Hat jemand schon einen [[create:deployer]], setzt der einen Ziegel auf Sandstein und macht daraus einen Legierungsziegel."
+  ],
+  "en": [
+   "Four crafts give the 8 kiln bricks: 8 sandstone and 8 [[minecraft:brick]]. Two kiln brick slabs on top of each other turn back into one brick.",
+   "If someone already has a [[create:deployer]], it applies a brick onto sandstone and makes one kiln brick."
+  ],
+  "sources": [
+   "immersiveengineering:crafting/alloybrick (2 sandstone, 2 bricks, 2 kiln bricks)",
+   "immersiveengineering:crafting/alloybrick_from_slab",
+   "createaddition:compat/immersiveengineering/item_application/kiln_brick"
+  ]
+ },
+ "kiln": {
+  "de": [
+   "Die Rezepte im Legierungsofen: Gold und Silber geben 2 Elektrum, Kupfer und Nickel 2 Constantan, 3 Kupfer und ein Zinn 4 Bronze, 2 Glas und ein [[immersiveengineering:dust_iron]] 2 Isolierglas.",
+   "Dazu kommt ein Notweg für Elektrum ohne Silber: ein Goldbarren und ein Redstone geben **einen** Elektrumbarren."
+  ],
+  "en": [
+   "The kiln's recipes: gold and silver give 2 electrum, copper and nickel 2 constantan, 3 copper and one tin 4 bronze, 2 glass and one [[immersiveengineering:dust_iron]] 2 insulating glass.",
+   "There is also a fallback for electrum without silver: one gold ingot and one redstone give **one** electrum ingot."
+  ],
+  "sources": [
+   "IE jar: data/immersiveengineering/structure/multiblocks/alloy_smelter.nbt (2x2x2, 8 alloybrick)",
+   "immersiveengineering:alloysmelter/electrum, constantan, bronze, insulating_glass",
+   "oritech:compat/immersiveengineering/alloying/electrum (gold + redstone)"
+  ],
+  "client": [
+   "fuel slot of the kiln"
+  ]
+ },
+ "brass": {
+  "de": [
+   "Im Spiel heißt das Teil **Präzisionsgetriebe**, nicht Präzisionsmechanismus. Der Leichte Ingenieursbaustein braucht 4 Eisenblechblöcke, 4 Mechanische Eisenkomponenten und ein [[create:brass_sheet]] für vier Stück.",
+   "Der Schwere braucht 4 Stahlblechblöcke, 3 Mechanische Stahlkomponenten, einen Elektrumbarren und ein [[create:precision_mechanism]] für vier. Messing machst du in {{create_brass/brass_mixing}}, das Getriebe in {{create_brass/precision}}."
+  ],
+  "en": [
+   "On Kronwerke the light engineering block takes 4 iron sheetmetal, 4 iron mechanical components and one [[create:brass_sheet]] for four.",
+   "The heavy one takes 4 steel sheetmetal, 3 steel mechanical components, one electrum ingot and one [[create:precision_mechanism]] for four. Brass is made in {{create_brass/brass_mixing}}, the mechanism in {{create_brass/precision}}."
+  ],
+  "sources": [
+   "kubejs/server_scripts/kronwerke/tech.js (kronwerke:tech/light_engineering, kronwerke:tech/heavy_engineering)",
+   "kronwerke:create/brass_ingot_heated, brass_ingot_superheated",
+   "helpq item create:precision_mechanism (de Präzisionsgetriebe)"
+  ]
+ },
+ "bronze": {
+  "de": [
+   "Zinnerz liegt in der Farmwelt. Mit dem Legierungsofen sparst du gegenüber vielen anderen Wegen: Aus 3 Kupfer und einem Zinn werden 4 Barren, du bekommst also einen dazu.",
+   "Mehr zu Zinn und Bronze steht in {{mekanism/tin_bronze}}."
+  ],
+  "en": [
+   "Tin ore lies in the farm world. The kiln is a good deal: 3 copper and one tin give 4 ingots, so you get one extra.",
+   "More on tin and bronze is in {{mekanism/tin_bronze}}."
+  ],
+  "sources": [
+   "immersiveengineering:alloysmelter/bronze (3 copper + 1 tin = 4)",
+   "kubejs/data/kronwerke/worldgen/biome/mine.json (mine_tin: mekanism tin ore)"
+  ]
+ },
+ "electrum": {
+  "de": [
+   "Ohne Silber geht es auch: Ein Goldbarren und ein Redstone geben im Legierungsofen einen Elektrumbarren, also nur halb so viel. Der [[create:mechanical_mixer]] macht aus Gold und Silber über einem Lohenbrenner ebenfalls 2 Elektrum.",
+   "Elektrumblech und Kabelschneider ergeben Elektrumkabel für {{immersive/wire_mv}} und die Elektronikkomponente im Trafo."
+  ],
+  "en": [
+   "Without silver it still works: one gold ingot and one redstone give one electrum ingot in the kiln, only half as much. The [[create:mechanical_mixer]] over a blaze burner also turns gold and silver into 2 electrum.",
+   "Electrum plate and wire cutters give electrum wire for {{immersive/wire_mv}} and for the electronic component in the transformer."
+  ],
+  "sources": [
+   "immersiveengineering:alloysmelter/electrum",
+   "oritech:compat/immersiveengineering/alloying/electrum",
+   "createaddition:mixing/electrum (heated)",
+   "immersiveengineering:crafting/wire_electrum",
+   "immersiveengineering:blueprint/component_electronic"
+  ]
+ },
+ "constantan": {
+  "de": [
+   "Constantan kann sogar der [[create:mechanical_mixer]] aus Stufe 1 machen, ganz ohne Hitze: ein Nickel und ein Kupfer ergeben 2 Barren.",
+   "Ein {{immersive/thermoelectric}} braucht fünf Constantanbleche, also fünf Barren."
+  ],
+  "en": [
+   "Even the stage 1 [[create:mechanical_mixer]] can make constantan, without any heat: one nickel and one copper give 2 ingots.",
+   "A {{immersive/thermoelectric}} needs five constantan plates, so five ingots."
+  ],
+  "sources": [
+   "createaddition:compat/immersiveengineering/constantan (create:mixing, no heat requirement)",
+   "immersiveengineering:alloysmelter/constantan",
+   "immersiveengineering:crafting/thermoelectric_generator (5 c:plates/constantan)"
+  ]
+ },
+ "bench": {
+  "de": [
+   "Am Arbeitstisch ist die [[immersiveengineering:component_iron]] billiger: 2 Eisenbleche und ein Kupferbarren statt 4 Bleche in der Werkbank. Die Blaupause Komponenten macht auch [[immersiveengineering:electron_tube]], Glühbirnen und die Elektronikkomponente.",
+   "Weitere Blaupausen: Formen (ein Eisenblech oben) für die Metallpresse aus Stufe 3 und Patronen für den Revolver aus Stufe 3. Alle haben unten drei blaue Farbstoffe und drei Papier."
+  ],
+  "en": [
+   "At the workbench the [[immersiveengineering:component_iron]] is cheaper: 2 iron plates and one copper ingot instead of 4 plates in the crafting grid. The Components blueprint also makes [[immersiveengineering:electron_tube]], light bulbs and the electronic component.",
+   "More blueprints: Molds (an iron plate on top) for the stage 3 metal press and bullets for the stage 3 revolver. All of them have three blue dyes and three paper below."
+  ],
+  "sources": [
+   "immersiveengineering:blueprint/component_iron (2 plates, 1 copper)",
+   "immersiveengineering:crafting/component_iron (4 plates)",
+   "immersiveengineering:crafting/blueprint_components, blueprint_molds, blueprint_bullets",
+   "immersiveengineering:crafting/workbench"
+  ],
+  "client": [
+   "the blueprint stays in its slot and is not used up"
+  ]
+ },
+ "electron_tube": {
+  "de": [
+   "Pro drei Röhren brauchst du ein [[immersiveengineering:plate_nickel]] und ein Kupferkabel aus {{immersive/wire}}. Glas geht jedes aus dem Tag #c:glass_blocks.",
+   "Die [[immersiveengineering:charging_station]] braucht gleich drei, also ein ganzes Rezept ({{immersive/charging_station}})."
+  ],
+  "en": [
+   "For every three tubes you need one [[immersiveengineering:plate_nickel]] and one copper wire from {{immersive/wire}}. Any glass from the #c:glass_blocks tag works.",
+   "The [[immersiveengineering:charging_station]] takes three, a whole craft ({{immersive/charging_station}})."
+  ],
+  "sources": [
+   "immersiveengineering:blueprint/electron_tube",
+   "immersiveengineering:crafting/charging_station (ttt)"
+  ]
+ },
+ "cloche": {
+  "de": [
+   "Die Glühbirnen macht die Blaupause Komponenten: Glas, drei Papier **oder** drei Bambus und ein Kupferbarren geben drei. Eine Hanfpflanze braucht in der Glocke 800 Ticks und gibt Fasern, mit halber Chance einen Samen dazu.",
+   "Als Dünger nimmt sie Knochenmehl oder [[immersiveengineering:slag]] (Wachstum mal 1,3), Industriedünger sogar mal 1,6. Welche Pflanzen und Böden gehen, zeigt EMI unter der Gartenglocke."
+  ],
+  "en": [
+   "The light bulbs come from the Components blueprint: glass, three paper **or** three bamboo and one copper ingot give three. A hemp plant takes 800 ticks in the cloche and gives fiber, plus a seed half of the time.",
+   "As fertilizer it takes bone meal or [[immersiveengineering:slag]] (growth times 1.3), industrial fertilizer even 1.6. EMI shows which plants and soils work under the garden cloche."
+  ],
+  "sources": [
+   "immersiveengineering:blueprint/light_bulb (paper or bamboo, count 3)",
+   "immersiveengineering:cloche/hemp (time 800, seed chance 0.5)",
+   "immersiveengineering:fertilizer/bonemeal, slag (1.3), fertilizer (1.6)",
+   "srv/config/immersiveengineering-server.toml (garden_cloche consumption 8)"
+  ]
+ },
+ "component": {
+  "de": [
+   "Am Ingenieursarbeitstisch kostet eine Komponente nur **2 Eisenbleche** und einen Kupferbarren statt vier Bleche ({{immersive/bench}}). Wer viele braucht, baut den Tisch zuerst.",
+   "Für Stufe 3 brauchst du viele: Jedes Rezept für Leichte Ingenieursbausteine nimmt vier davon."
+  ],
+  "en": [
+   "At the engineer's workbench a component costs only **2 iron plates** and one copper ingot instead of four plates ({{immersive/bench}}). If you need many, build the workbench first.",
+   "Stage 3 needs plenty: every light engineering block craft takes four."
+  ],
+  "sources": [
+   "immersiveengineering:blueprint/component_iron",
+   "immersiveengineering:crafting/component_iron",
+   "kubejs/server_scripts/kronwerke/tech.js (kronwerke:tech/light_engineering)"
+  ]
+ },
+ "wire": {
+  "de": [
+   "Die [[create:mechanical_saw]] aus Stufe 1 schneidet ein Kupferblech zu **zwei** Kabeln, das [[createaddition:rolling_mill]] aus Stufe 2 ebenso. Mit dem Kabelschneider gibt es nur eins und kostet einen Schnitt.",
+   "Ein Kabel wird zu einer LV-Drahtspule, der Kupferspulenblock für den Dynamo frisst also schon acht Kabel."
+  ],
+  "en": [
+   "The stage 1 [[create:mechanical_saw]] cuts a copper plate into **two** wires, and so does the stage 2 [[createaddition:rolling_mill]]. The wire cutters give only one and cost a cut.",
+   "One wire becomes one LV wire coil, so the copper coil block for the dynamo already eats eight wires."
+  ],
+  "sources": [
+   "immersiveengineering:crafting/wire_copper",
+   "create:cutting/compat/immersiveengineering/wire_copper (2)",
+   "createaddition:rolling/copper_plate (2)",
+   "immersiveengineering:crafting/wirecoil_copper (4 wires, 4 coils)",
+   "immersiveengineering:crafting/coil_lv (8 coils)"
+  ]
+ },
+ "wirecoil": {
+  "de": [
+   "Eine Spule reicht für ein Stück Draht bis 16 Blöcke. Unisolierter Draht unter Strom verletzt, also häng ihn hoch ({{immersive/post}}) oder isolier ihn ({{immersive/wire_insulated}}).",
+   "Die Isolierung kannst du mit dem Kabelschneider in der Werkbank wieder abziehen."
+  ],
+  "en": [
+   "One coil covers one stretch of wire up to 16 blocks. Bare live wire hurts, so hang it up high ({{immersive/post}}) or insulate it ({{immersive/wire_insulated}}).",
+   "You can strip the insulation off again with the wire cutters in the crafting grid."
+  ],
+  "sources": [
+   "srv/config/immersiveengineering-server.toml (wires.copper maxLength 16, enableWireDamage true)",
+   "immersiveengineering:crafting/strip_lv"
+  ]
+ },
+ "coil_lv": {
+  "de": [
+   "Ein Block kostet 8 LV-Drahtspulen, das sind 8 Kupferkabel aus 8 Kupferblechen. Nimm die Säge von Create, dann sind es nur 4 Bleche ({{immersive/wire}}).",
+   "Du brauchst mindestens zwei: einen für {{immersive/dynamo}} und einen für {{immersive/charging_station}} oder {{immersive/thermoelectric}}."
+  ],
+  "en": [
+   "One block costs 8 LV wire coils, that is 8 copper wires from 8 copper plates. With Create's saw it is only 4 plates ({{immersive/wire}}).",
+   "You need at least two: one for {{immersive/dynamo}} and one for {{immersive/charging_station}} or {{immersive/thermoelectric}}."
+  ],
+  "sources": [
+   "immersiveengineering:crafting/coil_lv",
+   "immersiveengineering:crafting/wirecoil_copper",
+   "create:cutting/compat/immersiveengineering/wire_copper"
+  ]
+ },
+ "dynamo": {
+  "de": [
+   "Für den Dynamo kommt alles aus diesem Kapitel zusammen: {{immersive/component}}, {{immersive/coil_lv}}, 2 Eisenbarren und 2 Redstone.",
+   "Den Strom holst du mit einem [[immersiveengineering:connector_lv]] ab ({{immersive/connectors}}). Welche Stromquellen es in Stufe 2 sonst gibt, zeigt {{list_power/s2_choice}}."
+  ],
+  "en": [
+   "The dynamo brings this chapter together: {{immersive/component}}, {{immersive/coil_lv}}, 2 iron ingots and 2 redstone.",
+   "Take the power off with an [[immersiveengineering:connector_lv]] ({{immersive/connectors}}). The other power sources of stage 2 are in {{list_power/s2_choice}}."
+  ],
+  "sources": [
+   "immersiveengineering:crafting/dynamo"
+  ],
+  "client": [
+   "placing a connector on the dynamo"
+  ]
+ },
+ "windmill": {
+  "de": [
+   "Die Windmühle kostet 8 Blätter und einen Eisenbarren, insgesamt 24 Behandelte Holzbretter und 32 Behandelte Stöcke. In einem Ozeanbiom dreht sie 15 Prozent schneller.",
+   "Sie dreht sich in einem großen Kreis, bau sie hoch und weit weg von anderen Blöcken. Mehr Strom geben {{immersive/sails}}."
+  ],
+  "en": [
+   "The windmill costs 8 blades and one iron ingot, 24 treated wood planks and 32 treated sticks altogether. In an ocean biome it turns 15 percent faster.",
+   "It sweeps a large circle, so build it high up and well away from other blocks. {{immersive/sails}} give more power."
+  ],
+  "sources": [
+   "immersiveengineering:crafting/windmill",
+   "immersiveengineering:crafting/windmill_blade",
+   "IE jar: data/immersiveengineering/recipe/windmill/ocean.json (minecraft:is_ocean, 1.15)"
+  ],
+  "client": [
+   "the size of the free area the windmill needs"
+  ]
+ },
+ "sails": {
+  "de": [
+   "Ein Segel sind 6 [[immersiveengineering:hemp_fabric]], acht Segel also 48 Gewebe oder 384 Hanffasern. Leg früh ein großes Hanffeld an ({{immersive/hemp}}) oder lass Gartenglocken Fasern ziehen ({{immersive/cloche}}).",
+   "Das Gewebe brauchst du auch für {{immersive/glider}} und {{immersive/wire_insulated}}."
+  ],
+  "en": [
+   "One sail is 6 [[immersiveengineering:hemp_fabric]], eight sails 48 fabric or 384 hemp fiber. Plant a big hemp field early ({{immersive/hemp}}) or let garden cloches grow fiber ({{immersive/cloche}}).",
+   "You also need fabric for {{immersive/glider}} and {{immersive/wire_insulated}}."
+  ],
+  "sources": [
+   "immersiveengineering:crafting/windmill_sail (6 c:fabric_hemp)",
+   "immersiveengineering:crafting/hemp_fabric (8 fiber)"
+  ],
+  "client": [
+   "right click with a sail puts it on a blade"
+  ]
+ },
+ "watermill": {
+  "de": [
+   "Ein Wasserradsegment sind 3 Behandelte Holzbretter und 4 Behandelte Stöcke. Das ganze Rad kostet 12 Bretter, 16 Stöcke und einen Stahlbarren.",
+   "Mit Stahl aus {{immersive/steel}} ist das Rad die Wahl für Basen an Flüssen, die Windmühle für Hügel und Küsten."
+  ],
+  "en": [
+   "A waterwheel segment is 3 treated wood planks and 4 treated sticks. The whole wheel costs 12 planks, 16 sticks and one steel ingot.",
+   "With steel from {{immersive/steel}}, the wheel suits bases on rivers, the windmill hills and coasts."
+  ],
+  "sources": [
+   "immersiveengineering:crafting/watermill",
+   "immersiveengineering:crafting/waterwheel_segment"
+  ],
+  "client": [
+   "how flowing water drives the wheel"
+  ]
+ },
+ "connectors": {
+  "de": [
+   "Statt normaler Terrakotta geht jede gefärbte, das Rezept nimmt den ganzen Tag. Für den Fortschritt musst du einen Draht wirklich zwischen zwei Anschlüssen spannen.",
+   "Ein Anschluss gibt höchstens 256 FE/t weiter. Für mehr Durchsatz geht es mit {{immersive/wire_mv}} weiter, für Leitungen über Wege mit {{immersive/post}}."
+  ],
+  "en": [
+   "Any dyed terracotta works instead of plain terracotta, the recipe takes the whole tag. For the advancement you have to actually string a wire between two connectors.",
+   "One connector passes on at most 256 FE/t. For more throughput move on to {{immersive/wire_mv}}, for lines across paths to {{immersive/post}}."
+  ],
+  "sources": [
+   "immersiveengineering:crafting/connector_lv, connector_lv_relay",
+   "IE jar: data/immersiveengineering/tags/item/connector_insulator.json (#minecraft:terracotta, duroplast)",
+   "srv/config/immersiveengineering-server.toml (wires.copper wireConnectorInput 256, transferRate 2048)"
+  ]
+ },
+ "redstone_acid": {
+  "de": [
+   "Der Wassereimer geht in der Säure auf, einen leeren Eimer bekommst du nicht zurück. Im Kondensatorrezept zählt die Säure als 1 000 mB, dort kommt der Eimer leer zurück.",
+   "Für den LV- und den MV-Kondensator brauchst du je einen Eimer, also 4 Redstone pro Kondensator."
+  ],
+  "en": [
+   "The water bucket turns into the acid, you get no empty bucket back. In the accumulator recipe the acid counts as 1,000 mB, and there the bucket comes back empty.",
+   "The LV and the MV accumulator need one bucket each, so 4 redstone per accumulator."
+  ],
+  "sources": [
+   "immersiveengineering:crafting/redstone_acid (immersiveengineering:no_container_item)",
+   "immersiveengineering:crafting/capacitor_lv (c:redstone_acid 1000 mB fluid_stack)",
+   "immersiveengineering:crafting/capacitor_mv"
+  ]
+ },
+ "capacitor": {
+  "de": [
+   "Dafür brauchst du 2 Kupferbarren, 2 [[immersiveengineering:plate_lead]], einen Einfachen Ingenieursbaustein und einen Eimer Redstonesäure. Er nimmt und gibt je Seite 256 FE/t, so viel wie ein LV-Anschluss.",
+   "Mehr Speicher gibt {{immersive/capacitor_mv}} mit zehnmal so viel FE."
+  ],
+  "en": [
+   "It takes 2 copper ingots, 2 [[immersiveengineering:plate_lead]], one basic engineering block and a bucket of redstone acid. It takes in and puts out 256 FE/t per side, as much as one LV connector.",
+   "More storage comes with {{immersive/capacitor_mv}}, ten times as much FE."
+  ],
+  "sources": [
+   "immersiveengineering:crafting/capacitor_lv",
+   "srv/config/immersiveengineering-server.toml (capacitors.lv 100000, 256/256; capacitors.mv 1000000)"
+  ],
+  "client": [
+   "hammer colours and side setting"
+  ]
+ },
+ "voltmeter": {
+  "de": [
+   "Ein Kompass, ein Kupferbarren und zwei Stöcke, mehr braucht es nicht.",
+   "Praktisch, um zu prüfen, ob dein Kondensator voll läuft. Ein leerer LV-Kondensator ist bei vollen 256 FE/t nach etwa 20 Sekunden voll; dauert es viel länger, liefert deine Quelle weniger."
+  ],
+  "en": [
+   "A compass, a copper ingot and two sticks, nothing more.",
+   "Handy for checking whether your accumulator fills up. An empty LV accumulator is full after about 20 seconds at the full 256 FE/t; if it takes much longer, your source delivers less."
+  ],
+  "sources": [
+   "immersiveengineering:crafting/voltmeter",
+   "srv/config/immersiveengineering-server.toml (capacitors.lv storage 100000, input 256)"
+  ],
+  "client": [
+   "what the multimeter shows on storage and on wires"
+  ]
+ },
+ "thermoelectric": {
+  "de": [
+   "Die Temperaturen der Blöcke: [[minecraft:magma_block]] 1 300 K, Uranblock 2 000 K gegen [[minecraft:blue_ice]] 200 K, [[minecraft:packed_ice]] 240 K, Eis 260 K, Schnee 273 K. Je größer der Abstand, desto mehr Strom.",
+   "Das Packeis aus der Belohnung ist also schon ein brauchbares kaltes Gegenstück zum Magmablock."
+  ],
+  "en": [
+   "The block temperatures: [[minecraft:magma_block]] 1,300 K, uranium block 2,000 K against [[minecraft:blue_ice]] 200 K, [[minecraft:packed_ice]] 240 K, ice 260 K, snow 273 K. The bigger the gap, the more power.",
+   "So the packed ice from the reward is already a usable cold partner for the magma block."
+  ],
+  "sources": [
+   "IE jar: data/immersiveengineering/recipe/thermoelectric/ (magma 1300, uranium 2000, blue_ice 200, packed_ice 240, ice 260, snow 273)",
+   "immersiveengineering:crafting/thermoelectric_generator"
+  ],
+  "client": [
+   "power output for a given temperature gap"
+  ]
+ },
+ "external_heater": {
+  "de": [
+   "Du brauchst 4 Kupferbleche, 2 LV-Drahtspulen, einen [[immersiveengineering:sheetmetal_iron]] und ein Redstone. Den Blechblock machen 4 Eisenbleche, die gleich vier Blöcke ergeben.",
+   "Zwei Heizer stecken in den beiden {{immersive/preheater}} für den Verbesserten Hochofen."
+  ],
+  "en": [
+   "It takes 4 copper plates, 2 LV wire coils, one [[immersiveengineering:sheetmetal_iron]] and one redstone. The sheetmetal comes from 4 iron plates, which make four blocks at once.",
+   "Two heaters go into the two {{immersive/preheater}} of the improved blast furnace."
+  ],
+  "sources": [
+   "immersiveengineering:crafting/furnace_heater (pattern pwp, wsw, prp)",
+   "immersiveengineering:crafting/sheetmetal_iron (4 plates, 4 blocks)",
+   "srv/config/immersiveengineering-server.toml (external_heater consumption 8)"
+  ]
+ },
+ "wire_mv": {
+  "de": [
+   "Auch hier schneidet die [[create:mechanical_saw]] ein Elektrumblech zu zwei Kabeln. MV-Draht darf wie Kupfer 16 Blöcke lang sein, verliert auf der Strecke aber nur ein Viertel so viel.",
+   "LV- und MV-Draht passen nicht an dieselben Anschlüsse, dazwischen sitzt der {{immersive/transformer}}."
+  ],
+  "en": [
+   "Here too the [[create:mechanical_saw]] cuts an electrum plate into two wires. MV wire may be 16 blocks long like copper, but loses only a quarter as much on the way.",
+   "LV and MV wire do not fit the same connectors, the {{immersive/transformer}} sits between them."
+  ],
+  "sources": [
+   "create:cutting/compat/immersiveengineering/wire_electrum (2)",
+   "immersiveengineering:crafting/wirecoil_electrum, connector_mv",
+   "srv/config/immersiveengineering-server.toml (wires.electrum maxLength 16, distanceLoss 0.003; copper 0.0125)"
+  ]
+ },
+ "transformer": {
+  "de": [
+   "Die [[immersiveengineering:component_electronic]] macht der Arbeitstisch mit der Blaupause Komponenten. Den Quarz dafür holst du im Nether ({{nether/quartz}}).",
+   "Der [[immersiveengineering:coil_mv]] sind 8 MV-Drahtspulen um einen Eisenbarren, wie beim Kupferspulenblock."
+  ],
+  "en": [
+   "The [[immersiveengineering:component_electronic]] comes from the workbench with the Components blueprint. Get the quartz for it in the Nether ({{nether/quartz}}).",
+   "The [[immersiveengineering:coil_mv]] is 8 MV wire coils around an iron ingot, like the copper coil block."
+  ],
+  "sources": [
+   "immersiveengineering:crafting/transformer",
+   "immersiveengineering:blueprint/component_electronic",
+   "immersiveengineering:crafting/coil_mv"
+  ],
+  "client": [
+   "transformer on a wooden post"
+  ]
+ },
+ "capacitor_mv": {
+  "de": [
+   "Unten links kommt ein [[immersiveengineering:plate_nickel]], unten rechts ein Eisenblech, dazwischen ein Einfacher Ingenieursbaustein. Oben zwei Elektrumbarren und ein Eimer Redstonesäure, der Eimer kommt leer zurück.",
+   "Mit 1 024 FE/t je Seite passt er genau zu einem MV-Anschluss."
+  ],
+  "en": [
+   "Bottom left takes a [[immersiveengineering:plate_nickel]], bottom right an iron plate, a basic engineering block in between. On top two electrum ingots and a bucket of redstone acid; the bucket comes back empty.",
+   "With 1,024 FE/t per side it matches one MV connector exactly."
+  ],
+  "sources": [
+   "immersiveengineering:crafting/capacitor_mv (pattern ere, awc)",
+   "srv/config/immersiveengineering-server.toml (capacitors.mv input/output 1024, wires.electrum wireConnectorInput 1024)"
+  ]
+ },
+ "conveyor": {
+  "de": [
+   "Für den Fortschritt musst du ein Förderband auch hinstellen. Ein Stahlgerüst über einem Förderband in der Werkbank gibt ein überdachtes Band.",
+   "Was die Bänder von Immersive Engineering gegen andere Transportwege können, steht in {{list_transport/ie_conveyor}}. Spezialbänder folgen in {{immersive/conveyor_special}}."
+  ],
+  "en": [
+   "For the advancement you also have to place a conveyor. A steel scaffolding over a conveyor in the crafting grid gives a covered belt.",
+   "How Immersive Engineering's belts compare with other transport is in {{list_transport/ie_conveyor}}. Special belts follow in {{immersive/conveyor_special}}."
+  ],
+  "sources": [
+   "immersiveengineering:crafting/conveyor_basic",
+   "immersiveengineering:crafting/conveyor_basic_covered"
+  ]
+ },
+ "tank": {
+  "de": [
+   "34 Eisenblechblöcke sind 34 Eisenbleche, denn 4 Bleche geben 4 Blöcke. Die 4 Behandelten Holzzäune machst du aus 4 Brettern und 2 Stöcken, das gibt sogar 3 pro Rezept.",
+   "Nach dem Tank kommt {{immersive/silo}} aus denselben Blöcken, kleinere Mengen passen in {{immersive/barrel}}."
+  ],
+  "en": [
+   "34 iron sheetmetal blocks are 34 iron plates, because 4 plates give 4 blocks. The 4 treated wood fences come from 4 planks and 2 sticks, 3 per craft.",
+   "After the tank comes {{immersive/silo}} from the same blocks; smaller amounts fit in {{immersive/barrel}}."
+  ],
+  "sources": [
+   "IE jar: data/immersiveengineering/structure/multiblocks/sheetmetal_tank.nbt (3x5x3, 34 sheetmetal_iron, 4 treated_fence)",
+   "immersiveengineering:crafting/sheetmetal_iron",
+   "immersiveengineering:crafting/treated_fence"
+  ]
+ },
+ "silo": {
+  "de": [
+   "Du brauchst 50 Eisenblechblöcke, also 50 Eisenbleche, und dieselben 4 Zäune wie beim Tank. Die [[create:mechanical_press]] spart dir dabei 50 Hammerschläge.",
+   "Das Silo nimmt nur eine Sorte, also ist es der Platz für Massenware wie Bruchstein, Samen oder Schlacke."
+  ],
+  "en": [
+   "You need 50 iron sheetmetal blocks, so 50 iron plates, and the same 4 fences as for the tank. The [[create:mechanical_press]] saves you 50 hammer uses.",
+   "The silo holds a single kind, so it is the place for bulk goods such as cobblestone for the obelisk."
+  ],
+  "sources": [
+   "IE jar: data/immersiveengineering/structure/multiblocks/silo.nbt (3x7x3, 50 sheetmetal_iron, 4 treated_fence)",
+   "create:pressing/iron_ingot"
+  ]
+ },
+ "shelf": {
+  "de": [
+   "Die [[immersiveengineering:stick_steel]] macht ein Rezept aus 2 Stahlbarren, das 4 Stäbe gibt. 24 Laufstege sind 4 Rezepte, also 20 Stahlstäbe und 12 Stahlgerüststufen; die 4 [[immersiveengineering:steel_fence]] brauchen dazu 4 Stahlbarren und 2 Stäbe pro 3 Zäune.",
+   "Im deutschen Spiel heißt der Multiblock noch Crate Storage Shelf, Kisten legst du per Rechtsklick hinein."
+  ],
+  "en": [
+   "The [[immersiveengineering:stick_steel]] comes from 2 steel ingots, which give 4 rods. 24 catwalks are 4 crafts, so 20 steel rods and 12 steel scaffolding slabs; the 4 [[immersiveengineering:steel_fence]] need 4 steel ingots and 2 rods per 3 fences.",
+   "In the game the multiblock is called Crate Storage Shelf; you put crates in with a right click."
+  ],
+  "sources": [
+   "IE jar: data/immersiveengineering/structure/multiblocks/shelf.nbt (4x4x2, 24 steel_catwalk, 4 steel_fence)",
+   "immersiveengineering:crafting/steel_catwalk (6)",
+   "immersiveengineering:crafting/stick_steel (4)",
+   "immersiveengineering:crafting/steel_fence (3)",
+   "helpq lang block.immersiveengineering.shelf (de: none)"
+  ]
+ },
+ "list_mb": {
+  "de": [
+   "Legierungsofen und Kistenregal hakst du selbst ab, weil Immersive Engineering für sie keinen Fortschritt kennt. Die anderen fünf zählen erst, wenn du sie mit dem Hammer geformt hast.",
+   "Danach geht es weiter mit {{immersive_heavy/light}} in Stufe 3."
+  ],
+  "en": [
+   "The kiln and the crate shelf you tick yourself, because Immersive Engineering has no advancement for them. The other five only count once you have formed them with the hammer.",
+   "After that it continues with {{immersive_heavy/light}} in stage 3."
+  ],
+  "sources": [
+   "IE jar: data/immersiveengineering/advancement/main/ and multiblocks/ (mb_cokeoven, mb_blastfurnace, mb_improvedblastfurnace, mb_tank, mb_silo; none for the kiln or shelf)"
+  ]
+ },
+ "steel_armor": {
+  "de": [
+   "Helm 5, Harnisch 8, Beinschutz 7, Stiefel 4: Das sind die 24 [[immersiveengineering:plate_steel]]. Die [[create:mechanical_press]] presst sie ohne Hammer.",
+   "Sie ist ein Schritt für die ersten Netherreisen, wenn Eisen nicht mehr reicht."
+  ],
+  "en": [
+   "Helmet 5, chestplate 8, leggings 7, boots 4: that makes the 24 [[immersiveengineering:plate_steel]]. The [[create:mechanical_press]] presses them without a hammer.",
+   "It is a step up for the first trips to the Nether, when iron no longer cuts it."
+  ],
+  "sources": [
+   "immersiveengineering:crafting/armor_steel_helmet (pattern xxx, x x)",
+   "create:pressing/compat/immersiveengineering/plate_steel"
+  ]
+ },
+ "charging_station": {
+  "de": [
+   "Dafür brauchst du drei [[immersiveengineering:electron_tube]] (ein Rezept am Arbeitstisch), einen Kupferspulenblock, ein Eisenblech, 2 Glas und 2 Behandelte Holzbretter.",
+   "Mit 256 FE/t braucht sie so viel, wie ein LV-Anschluss liefert. Häng sie also an einen eigenen Anschluss."
+  ],
+  "en": [
+   "It takes three [[immersiveengineering:electron_tube]] (one workbench craft), one copper coil block, one iron plate, 2 glass and 2 treated wood planks.",
+   "At 256 FE/t it draws as much as one LV connector delivers, so give it a connector of its own."
+  ],
+  "sources": [
+   "immersiveengineering:crafting/charging_station (pattern gig, ttt, wlw)",
+   "srv/config/immersiveengineering-server.toml (machines.charger_consumption 256, wires.copper wireConnectorInput 256)"
+  ]
+ },
+ "wire_insulated": {
+  "de": [
+   "Fünf Gewebe pro vier Spulen sind 40 Hanffasern, also früh Hanf anbauen ({{immersive/hemp}}). Mit dem Kabelschneider in der Werkbank wird eine isolierte Spule wieder blank.",
+   "Für MV gibt es ebenso [[immersiveengineering:wirecoil_electrum_ins]]."
+  ],
+  "en": [
+   "Five fabric per four coils is 40 hemp fiber, so plant hemp early ({{immersive/hemp}}). With the wire cutters in the crafting grid an insulated coil becomes bare again.",
+   "For MV there is the same [[immersiveengineering:wirecoil_electrum_ins]]."
+  ],
+  "sources": [
+   "immersiveengineering:crafting/wirecoil_copper_ins (5 c:fabric_hemp, 4 coils)",
+   "immersiveengineering:crafting/strip_lv",
+   "srv/config/immersiveengineering-server.toml (wires.insulated_copper maxLength 16)"
+  ]
+ },
+ "post": {
+  "de": [
+   "Unten kommt [[minecraft:stone_bricks]], darüber zwei Behandelte Holzzäune. Vier Pfosten kosten also 8 Zäune, die du aus 12 Brettern und 6 Stöcken bekommst (drei Zäune pro Rezept, dann bleibt einer übrig).",
+   "Ein Pfosten alle 16 Blöcke reicht für Kupferdraht."
+  ],
+  "en": [
+   "The bottom takes [[minecraft:stone_bricks]], two treated wood fences go on top. Four posts cost 8 fences, which you get from 12 planks and 6 sticks (three fences per craft, one is left over).",
+   "One post every 16 blocks is enough for copper wire."
+  ],
+  "sources": [
+   "immersiveengineering:crafting/treated_post (f, f, s)",
+   "immersiveengineering:crafting/treated_fence (3)",
+   "srv/config/immersiveengineering-server.toml (wires.copper maxLength 16)"
+  ],
+  "client": [
+   "the post is 4 blocks tall and the hammer adds an arm"
+  ]
+ },
+ "electric_lantern": {
+  "de": [
+   "Glühbirnen: Glas, drei Papier oder drei Bambus und ein Kupferbarren geben am Arbeitstisch drei. Für vier Laternen brauchst du also zwei Rezepte.",
+   "Mit 1 FE/t läuft eine Laterne sogar an einer kleinen Windmühle. Der Spawnschutz ist auf dem Server eingeschaltet."
+  ],
+  "en": [
+   "Light bulbs: glass, three paper or three bamboo and one copper ingot give three at the workbench. Four lanterns need two crafts.",
+   "At 1 FE/t a lantern runs even on a small windmill. Spawn prevention is switched on on the server."
+  ],
+  "sources": [
+   "immersiveengineering:blueprint/light_bulb",
+   "immersiveengineering:crafting/electric_lantern",
+   "srv/config/immersiveengineering-server.toml (machines.lantern spawnPrevent true, energyDraw 1)"
+  ],
+  "client": [
+   "the 32 block radius of the spawn prevention"
+  ]
+ },
+ "skyhook": {
+  "de": [
+   "Für die zwei [[immersiveengineering:wooden_grip]] brauchst du 10 Behandelte Stöcke und 2 Kupfernuggets. Ein Hanfseil darf 32 Blöcke lang sein, doppelt so lang wie Kupferdraht.",
+   "Hanfseile tragen keinen Strom, damit ist die Seilbahn auch sicher."
+  ],
+  "en": [
+   "For the two [[immersiveengineering:wooden_grip]] you need 10 treated sticks and 2 copper nuggets. A hemp rope may be 32 blocks long, twice as long as copper wire.",
+   "Hemp ropes carry no power, so the cable car is safe too."
+  ],
+  "sources": [
+   "immersiveengineering:crafting/skyhook",
+   "immersiveengineering:crafting/wooden_grip (5 sticks, 1 c:nuggets/copper)",
+   "srv/config/immersiveengineering-server.toml (wires.rope maxLength 32)"
+  ],
+  "client": [
+   "riding the skyhook, steering at junctions",
+   "hemp rope carries no power"
+  ]
+ },
+ "glider": {
+  "de": [
+   "[[immersiveengineering:ore_aluminum]] liegt in der Farmwelt. Zwei Aluminiumbarren übereinander geben vier [[immersiveengineering:stick_aluminum]], die drei für den Gleiter reichen also.",
+   "Dazu kommen drei Robuste Gewebe und eine Lederjacke."
+  ],
+  "en": [
+   "[[immersiveengineering:ore_aluminum]] lies in the farm world. Two aluminium ingots stacked give four [[immersiveengineering:stick_aluminum]], more than the three the glider needs.",
+   "Add three tough fabric and a leather tunic."
+  ],
+  "sources": [
+   "kubejs/data/kronwerke/worldgen/biome/mine.json (mine_aluminum: immersiveengineering:ore_aluminum)",
+   "immersiveengineering:crafting/stick_aluminum (4)",
+   "immersiveengineering:crafting/glider (pattern f, rcr, frf)"
+  ],
+  "client": [
+   "flight, durability and repair"
+  ]
+ },
+ "conveyor_special": {
+  "de": [
+   "Das Dropper-Förderband nimmt auch ein Stahlblech statt Eisen. Den [[immersiveengineering:strip_curtain]] machen 3 Metallstäbe und 6 Robuste Gewebe, das gibt 3 Vorhänge.",
+   "Alle drei Bänder bekommen mit einem Stahlgerüst darüber in der Werkbank ein Dach."
+  ],
+  "en": [
+   "The dropping conveyor also takes a steel plate instead of iron. The [[immersiveengineering:strip_curtain]] is 3 metal rods and 6 tough fabric, which gives 3 curtains.",
+   "All three belts get a roof with steel scaffolding above them in the crafting grid."
+  ],
+  "sources": [
+   "immersiveengineering:crafting/conveyor_dropper (c:plates/iron or c:plates/steel)",
+   "immersiveengineering:crafting/strip_curtain (3)",
+   "immersiveengineering:crafting/conveyor_splitter_covered, conveyor_dropper_covered, conveyor_extract_covered",
+   "immersiveengineering:crafting/conveyor_extract"
+  ],
+  "client": [
+   "the extracting conveyor's speed setting with the screwdriver"
+  ]
+ },
+ "sorter": {
+  "de": [
+   "Im deutschen Spiel heißt er **Element Router**, ohne Bindestrich, so findest du ihn in EMI. Die drei Teile kommen von oben nach unten in eine Spalte: Komponente, Baustein, Förderband.",
+   "Der [[immersiveengineering:fluid_sorter]] ist genauso gebaut, nur mit einem Flüssigkeitsrohr unten."
+  ],
+  "en": [
+   "EMI finds it as **Item Router**. The three parts go into one column, top to bottom: component, engineering block, conveyor.",
+   "The [[immersiveengineering:fluid_sorter]] is built the same way, with a fluid pipe at the bottom."
+  ],
+  "sources": [
+   "immersiveengineering:crafting/sorter (c, w, b)",
+   "immersiveengineering:crafting/fluid_sorter",
+   "helpq item immersiveengineering:sorter (de Element Router)"
+  ],
+  "client": [
+   "filter behaviour and buttons"
+  ]
+ },
+ "barrel": {
+  "de": [
+   "Beide Fässer fassen 12 000 mB. Für das Metallfass brauchst du drei [[immersiveengineering:slab_sheetmetal_iron]]; drei Eisenblechblöcke in einer Reihe geben sechs Stufen.",
+   "Ein Fass fasst damit genau so viel wie der Tank des Koksofens."
+  ],
+  "en": [
+   "Both barrels hold 12,000 mB. The metal barrel needs three [[immersiveengineering:slab_sheetmetal_iron]]; three sheetmetal blocks in a row give six slabs.",
+   "So one barrel holds exactly as much as the coke oven's tank."
+  ],
+  "sources": [
+   "immersiveengineering:crafting/wooden_barrel, metal_barrel",
+   "immersiveengineering:crafting/sheetmetal_iron_to_slab (sss, 6)",
+   "IE jar: WoodenBarrelBlockEntity (12000 mB)",
+   "IE jar: CokeOvenLogic$State (FluidTank 12000)"
+  ]
+ }
+}

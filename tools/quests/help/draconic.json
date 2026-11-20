@@ -1,0 +1,687 @@
+{
+ "dust": {
+  "de": [
+   "Das End hat pro Chunk drei Adern [[draconicevolution:end_draconium_ore]]. Truhen in Endsiedlungen und den Endburgen haben auf Kronwerke zusätzlich 2 bis 6 [[draconicevolution:draconium_dust]].",
+   "Zum Start von Stufe 4 bekommt jeder Spieler ein Startpaket mit 16 Draconiumbarren, einer Gaia-Seele und 64 Enderperlen. Für große Mengen lohnt sich ein Steinbruch im End ({{quarries/welcome}})."
+  ],
+  "en": [
+   "The End has three veins of [[draconicevolution:end_draconium_ore]] per chunk. On Kronwerke, chests in End cities and End castles also hold 2 to 6 [[draconicevolution:draconium_dust]].",
+   "When stage 4 opens, every player gets a starter kit with 16 draconium ingots, one Gaia spirit and 64 ender pearls. For large amounts a quarry in the End pays off ({{quarries/welcome}})."
+  ],
+  "sources": [
+   "Draconic-Evolution-1.21.1-3.1.4.633.jar: data/draconicevolution/worldgen/placed_feature/end_draconium_ore.json (count 3, y 0 to 70)",
+   "kubejs/data/draconicevolution/neoforge/biome_modifier/overworld_draconium_ore.json, nether_draconium_ore.json (neoforge:none)",
+   "kubejs/data/kronwerke/loot_modifiers/chests_end.json, kubejs/data/kronwerke/loot_table/inject/end.json",
+   "config/kronwerke/goals.json (stage3 starterKit)",
+   "docs/STAGES.md"
+  ]
+ },
+ "ingot": {
+  "de": [
+   "Der Staub hat nur ein Ofenrezept, **kein Schmelzofen-Rezept**: Ein Schmelzofen nimmt ihn nicht an. Ein Ofen braucht 200 Ticks pro Barren, auch der Energiegeladene Schmelzer von Mekanism nimmt den Staub.",
+   "Der Obelisk will in Stufe 4 als Grundziel 1 000 Barren, je nach Spielerzahl mehr oder weniger ({{draconic/goal}})."
+  ],
+  "en": [
+   "The dust only has a furnace recipe, **no blast furnace recipe**: a blast furnace will not take it. A furnace needs 200 ticks per ingot; Mekanism's energized smelter takes the dust too.",
+   "The obelisk's stage 4 base goal is 1 000 ingots, more or less depending on the number of players ({{draconic/goal}})."
+  ],
+  "sources": [
+   "draconicevolution:components/draconium_ingot_from_dust (minecraft:smelting, 200)",
+   "config/kronwerke/goals.json (stage4 draconium_ingot base 1000, scale)"
+  ]
+ },
+ "elite": {
+  "de": [
+   "Oben liegen zwei [[mekanism:advanced_control_circuit]] links und rechts vom Draconiumstaub, unten die zwei [[mekanism:alloy_reinforced]] in den Ecken. Die Verstärkte Legierung machst du im Metallurgischen Infuser aus Infundierter Legierung und Diamant.",
+   "Die Quest will 4 Stück und nimmt sie nicht weg. Für den Obelisken brauchst du als Grundziel 150, je nach Spielerzahl mehr oder weniger."
+  ],
+  "en": [
+   "On top go two [[mekanism:advanced_control_circuit]] left and right of the draconium dust, below the two [[mekanism:alloy_reinforced]] in the corners. Make the reinforced alloy in the metallurgic infuser from infused alloy and diamond.",
+   "The quest wants 4 and does not take them. The obelisk's base goal is 150, more or less depending on the number of players."
+  ],
+  "sources": [
+   "kronwerke:tech/elite_control_circuit (pattern CDC / R R)",
+   "kubejs/server_scripts/kronwerke/tech.js",
+   "mekanism:metallurgic_infusing/alloy/reinforced",
+   "config/kronwerke/goals.json (stage4 elite_control_circuit base 150)"
+  ]
+ },
+ "block": {
+  "de": [
+   "Rechne für den Energiekern: Stufe 2 braucht 6 Blöcke, Stufe 3 26 und Stufe 4 schon 54. Ab Stufe 4 wird der innere Würfel aus Redstoneblöcken, die 26 Draconiumblöcke von Stufe 3 bekommst du also für die Hülle zurück.",
+   "Der Obelisk nimmt **nur Barren**, keine Blöcke. Zerleg Blöcke vorher wieder in je 9 Barren."
+  ],
+  "en": [
+   "Plan for the energy core: tier 2 takes 6 blocks, tier 3 takes 26 and tier 4 already 54. From tier 4 the inner cube is redstone blocks, so the 26 draconium blocks of tier 3 come back for the shell.",
+   "The obelisk takes **only ingots**, no blocks. Split blocks back into 9 ingots first."
+  ],
+  "sources": [
+   "Draconic-Evolution-1.21.1-3.1.4.633.jar: data/draconicevolution/multiblocks/energy_core_2 to 4.json",
+   "core: src/main/java/de/kronwerke/core/goal/Goal.java (PillarItem.matches, exact id)",
+   "draconicevolution:decompress/draconium_ingot"
+  ]
+ },
+ "core": {
+  "de": [
+   "Ein Kern kostet 4 Draconiumbarren, 4 [[eternal_starlight:deepsilver_ingot]] und einen Diamanten. Deepsilver schmilzt du aus Erz in Eternal Starlight ({{eternal_starlight/deepsilver}}), auf Kronwerke ersetzt es das Gold im Rezept.",
+   "Draconiumkerne stecken in 61 Rezepten. Allein die vier Partikelgeneratoren, die zwei Wyvern-Energiekontroller und der Fusionskern brauchen je einen."
+  ],
+  "en": [
+   "A core costs 4 draconium ingots, 4 [[eternal_starlight:deepsilver_ingot]] and a diamond. You smelt deepsilver from ore in Eternal Starlight ({{eternal_starlight/deepsilver}}); on Kronwerke it replaces the gold in the recipe.",
+   "Draconium cores go into 61 recipes. The four particle generators, the two wyvern energy controllers and the fusion crafting core alone need one each."
+  ],
+  "sources": [
+   "draconicevolution:components/draconium_core (pattern ABA/BCB/ABA)",
+   "kubejs/server_scripts/kronwerke/round.js (gold to deepsilver_ingot)"
+  ]
+ },
+ "dislocator": {
+  "de": [
+   "Die [[deeperdarker:reinforced_echo_shard]] kommt aus Deeper and Darker: vier Echoscherben, vier Phantomhäute und ein Wärterpanzer ({{deeper_darker/echo_shard}}). Auf Kronwerke ersetzt sie das Enderauge im Rezept.",
+   "Der Dislocator ist die Zutat für {{draconic/magnet}}, {{draconic/player_dislocator}} und {{draconic/adv_dislocator}}."
+  ],
+  "en": [
+   "The [[deeperdarker:reinforced_echo_shard]] comes from Deeper and Darker: four echo shards, four phantom membranes and a warden carapace ({{deeper_darker/echo_shard}}). On Kronwerke it replaces the eye of ender in the recipe.",
+   "The dislocator goes into {{draconic/magnet}}, {{draconic/player_dislocator}} and {{draconic/adv_dislocator}}."
+  ],
+  "sources": [
+   "draconicevolution:tools/dislocator",
+   "kubejs/server_scripts/kronwerke/round.js (ender_eye to reinforced_echo_shard)",
+   "deeperdarker:reinforced_echo_shard (pattern PCP/CEC/PCP)"
+  ]
+ },
+ "magnet": {
+  "de": [
+   "Der Dislocator wird dabei verbaut. Bau dir für Sprünge also einen zweiten.",
+   "In Stufe 5 wird daraus der Erwachte Item-Magnet ({{draconic_chaos/awakened_magnet}})."
+  ],
+  "en": [
+   "The dislocator is used up. Build a second one for teleporting.",
+   "In stage 5 it becomes the awakened item magnet ({{draconic_chaos/awakened_magnet}})."
+  ],
+  "sources": [
+   "draconicevolution:tools/magnet (pattern 'A A', 'B B', 'CDC')"
+  ],
+  "client": [
+   "the toggle key of the magnet"
+  ]
+ },
+ "generator": {
+  "de": [
+   "Das Rezept kostet 4 Netherziegel, 3 Eisenbarren, einen Ofen und einen [[draconicevolution:draconium_core]].",
+   "Für die erste Fusion, den Wyvern-Injektor, reichen 32 000 Energie. Die kann jeder Generator liefern, auch Mekanism oder Just Dire Things."
+  ],
+  "en": [
+   "The recipe costs 4 nether bricks, 3 iron ingots, a furnace and a [[draconicevolution:draconium_core]].",
+   "The first fusion, the wyvern injector, needs only 32 000 energy. Any generator can supply that, Mekanism or Just Dire Things too."
+  ],
+  "sources": [
+   "draconicevolution:machines/generator (pattern ABA/BCB/ADA)",
+   "draconicevolution:machines/wyvern_crafting_injector (totalEnergy 32000)"
+  ],
+  "client": [
+   "that the fusion injectors accept FE from other mods' cables"
+  ]
+ },
+ "grinder": {
+  "de": [
+   "Für den Kopf zählt jeder Schädel oder Kopf, etwa ein Zombiekopf oder ein Witherskelettschädel. Der Wyvern-Energiekontroller in der Mitte kommt aus {{draconic/w_energy}}.",
+   "Laut Konfiguration kostet jedes Herz eines Monsters 80 Energie. Spieler greift er nicht an, und Rüstungsständer und Vengeance Spirits stehen auf seiner Sperrliste."
+  ],
+  "en": [
+   "Any skull or head works for the head slot, a zombie head or a wither skeleton skull for example. The wyvern energy controller in the middle comes from {{draconic/w_energy}}.",
+   "Per the config every heart of a monster costs 80 energy. It does not hit players, and armor stands and vengeance spirits are on its block list."
+  ],
+  "sources": [
+   "draconicevolution:machines/grinder (#minecraft:skulls)",
+   "srv/config/brandon3055/DraconicEvolution.cfg (grinderEnergyPerHeart 80, allowGrindingPlayers false, grinderBlackList)"
+  ]
+ },
+ "adv_dislocator": {
+  "de": [
+   "Das ist eine Wyvern-Fusion mit acht Zutaten, du brauchst also **acht Wyvern-Injektoren**, sechs reichen nicht. Dazu kommt 1 Million Energie.",
+   "Laut Konfiguration fasst er bis zu 1 024 Ladungen und springt kurz bis 32 Blöcke weit, 4 Sprünge pro Enderperle."
+  ],
+  "en": [
+   "This is a wyvern fusion with eight ingredients, so you need **eight wyvern injectors**; six are not enough. Add 1 million energy.",
+   "Per the config it holds up to 1 024 charges and blinks up to 32 blocks, 4 blinks per ender pearl."
+  ],
+  "sources": [
+   "draconicevolution:tools/advanced_dislocator (techLevel wyvern, 8 ingredients, totalEnergy 1000000)",
+   "srv/config/brandon3055/DraconicEvolution.cfg (dislocatorMaxFuel 1024, dislocatorBlinkRange 32, dislocatorBlinksPerPearl 4)"
+  ]
+ },
+ "crafting_core": {
+  "de": [
+   "Ein [[ars_nouveau:source_gem_block]] sind vier Quelljuwelen im Quadrat, für den Kern brauchst du also 16 ({{ars_nouveau/source_gems}}). Auf Kronwerke ersetzen sie die Lapisblöcke im Rezept.",
+   "Als Nächstes kommen die Injektoren ({{draconic/injectors}})."
+  ],
+  "en": [
+   "A [[ars_nouveau:source_gem_block]] is four source gems in a square, so the core takes 16 ({{ars_nouveau/source_gems}}). On Kronwerke they replace the lapis blocks in the recipe.",
+   "The injectors come next ({{draconic/injectors}})."
+  ],
+  "sources": [
+   "draconicevolution:machines/crafting_core",
+   "kubejs/server_scripts/kronwerke/links.js (lapis block to source_gem_block)",
+   "ars_nouveau:source_gem_block (pattern xx/xx)"
+  ]
+ },
+ "injectors": {
+  "de": [
+   "Acht Injektoren kosten 8 Draconiumkerne, 8 Eisenblöcke, 16 Diamanten und 40 Stein. Für den Stein zählt jeder Stein mit dem Tag c:stones.",
+   "Laut Konfiguration dürfen sie 2 bis 16 Blöcke vom Kern entfernt stehen. Laden und Craften dauern auf dieser Stufe je 300 Ticks."
+  ],
+  "en": [
+   "Eight injectors cost 8 draconium cores, 8 iron blocks, 16 diamonds and 40 stone. Any stone with the tag c:stones counts.",
+   "Per the config they may stand 2 to 16 blocks from the core. Charging and crafting take 300 ticks each at this tier."
+  ],
+  "sources": [
+   "draconicevolution:machines/basic_crafting_injector (pattern ABA/CDC/CCC)",
+   "srv/config/brandon3055/DraconicEvolution.cfg (fusionInjectorMinDist 2, fusionInjectorRange 16, fusionChargeTime/fusionCraftTime 300)"
+  ]
+ },
+ "w_core": {
+  "de": [
+   "Der [[minecraft:nether_star]] kommt vom Wither ({{nether/f_wither}}). Ein Wyvern-Kern kostet außerdem 4 Draconiumkerne und 4 Barren.",
+   "Wyvern-Kerne brauchst du für den Wyvern-Injektor, den Energiekern, den Kondensator, den Fortgeschrittenen Dislocator, den Himmelsmanipulator und das Wyvern-AOE-Modul."
+  ],
+  "en": [
+   "The [[minecraft:nether_star]] comes from the Wither ({{nether/f_wither}}). A wyvern core also costs 4 draconium cores and 4 ingots.",
+   "You need wyvern cores for the wyvern injector, the energy core, the capacitor, the advanced dislocator, the celestial manipulator and the wyvern AOE module."
+  ],
+  "sources": [
+   "draconicevolution:components/wyvern_core (pattern ABA/BCB/ABA)",
+   "draconicevolution:machines/wyvern_crafting_injector, machines/energy_core, tools/wyvern_capacitor, tools/advanced_dislocator, celestial_manipulator, modules/item_wyvern_aoe"
+  ]
+ },
+ "w_injector": {
+  "de": [
+   "Die Fusion selbst ist noch Draconium-Stufe, sie läuft also mit deinen acht Draconium-Injektoren. Jeder Wyvern-Injektor **verbraucht einen Draconium-Injektor** als Katalysator. Sechs Stück kosten also 6 weitere Draconium-Injektoren und 6 Wyvern-Kerne (**6 Wither**), dazu 12 Draconiumkerne, 24 Diamanten und 6 Draconiumblöcke.",
+   "Laut Konfiguration dauern Laden und Craften auf Wyvern-Stufe je 220 Ticks statt 300. Kondensator und Fortgeschrittener Dislocator brauchen acht."
+  ],
+  "en": [
+   "The fusion itself is still draconium tier, so it runs with your eight draconium injectors. Each wyvern injector **uses up a draconium injector** as catalyst. Six of them cost 6 more draconium injectors and 6 wyvern cores (**6 Withers**), plus 12 draconium cores, 24 diamonds and 6 draconium blocks.",
+   "Per the config charging and crafting take 220 ticks each at wyvern tier instead of 300. The capacitor and the advanced dislocator need eight."
+  ],
+  "sources": [
+   "draconicevolution:machines/wyvern_crafting_injector (techLevel draconium, 8 ingredients, catalyst basic_crafting_injector)",
+   "srv/config/brandon3055/DraconicEvolution.cfg (fusionChargeTime, fusionCraftTime)",
+   "draconicevolution:tools/wyvern_capacitor, tools/advanced_dislocator (8 ingredients)"
+  ]
+ },
+ "w_capacitor": {
+  "de": [
+   "Acht Zutaten heißt acht Wyvern-Injektoren. Die vier [[draconicevolution:wyvern_energy_core]] kosten je einen Draconiumkern und 4 Redstoneblöcke.",
+   "Plan dafür 8 Millionen Energie ein: Hängt der Energiekern ({{draconic/energy_core}}) schon an den Injektoren, geht das schnell."
+  ],
+  "en": [
+   "Eight ingredients means eight wyvern injectors. The four [[draconicevolution:wyvern_energy_core]] cost one draconium core and 4 redstone blocks each.",
+   "Plan for 8 million energy: if the energy core ({{draconic/energy_core}}) already feeds the injectors, that goes fast."
+  ],
+  "sources": [
+   "draconicevolution:tools/wyvern_capacitor (techLevel wyvern, totalEnergy 8000000, 8 ingredients)",
+   "draconicevolution:components/wyvern_energy_core"
+  ]
+ },
+ "w_energy": {
+  "de": [
+   "Ein Kontroller kostet 4 Draconiumbarren, 4 Redstoneblöcke und einen Draconiumkern. Die Quest will zwei, genau so viele braucht der Energiekern.",
+   "Weitere stecken im Kondensator (vier), im Mob-Grinder, in jedem Wyvern-Werkzeug und in den Relaiskristallen ({{draconic/relay}})."
+  ],
+  "en": [
+   "A controller costs 4 draconium ingots, 4 redstone blocks and a draconium core. The quest wants two, exactly what the energy core needs.",
+   "More go into the capacitor (four), the mob grinder, every wyvern tool and the relay crystals ({{draconic/relay}})."
+  ],
+  "sources": [
+   "draconicevolution:components/wyvern_energy_core",
+   "draconicevolution:machines/energy_core (pattern AAA/BCB/AAA)",
+   "draconicevolution:tools/wyvern_capacitor"
+  ]
+ },
+ "energy_core": {
+  "de": [
+   "Das Rezept kostet 6 Draconiumbarren, 2 Wyvern-Energiekontroller und einen Wyvern-Kern. Stell den Kern so, dass um ihn herum später Platz ist: Stufe 7 ist ein großer Würfel aus Draconium und Redstone.",
+   "Danach folgen {{draconic/particle}} und {{draconic/stabilizer}}."
+  ],
+  "en": [
+   "The recipe costs 6 draconium ingots, 2 wyvern energy controllers and a wyvern core. Leave room around the core: tier 7 is a big cube of draconium and redstone.",
+   "{{draconic/particle}} and {{draconic/stabilizer}} come next."
+  ],
+  "sources": [
+   "draconicevolution:machines/energy_core",
+   "Draconic-Evolution-1.21.1-3.1.4.633.jar: data/draconicevolution/multiblocks/energy_core_7.json",
+   "srv/config/brandon3055/DraconicEvolution.cfg (coreCapacity)"
+  ]
+ },
+ "particle": {
+  "de": [
+   "Vier Generatoren kosten 4 Draconiumkerne, 16 Redstoneblöcke und 16 Lohenruten.",
+   "Ein weiterer Partikelgenerator steckt im Drahtlosen Energiekristall aus {{draconic/crystals}}."
+  ],
+  "en": [
+   "Four generators cost 4 draconium cores, 16 redstone blocks and 16 blaze rods.",
+   "One more particle generator goes into the wireless energy crystal from {{draconic/crystals}}."
+  ],
+  "sources": [
+   "draconicevolution:machines/particle_generator (pattern ABA/BCB/ABA)",
+   "draconicevolution:machines/basic_wireless_crystal"
+  ]
+ },
+ "stabilizer": {
+  "de": [
+   "Die [[botania:gaia_spirit]] gibt es vom Wächter von Gaia ({{gaia/fight}}). Das Startpaket von Stufe 4 enthält eine.",
+   "**Spar Gaia-Seelen für später:** Ab Kernstufe 5 ist jeder fortgeschrittene Stabilisator ein 3x3-Feld aus neun Stabilisatoren, für vier Seiten also 36 Stück und 36 Seelen. Der Obelisk will außerdem 128 Seelen im Magie-Pfeiler."
+  ],
+  "en": [
+   "The [[botania:gaia_spirit]] comes from the Guardian of Gaia ({{gaia/fight}}). The stage 4 starter kit holds one.",
+   "**Save Gaia spirits for later:** from core tier 5 each advanced stabilizer is a 3x3 field of nine stabilizers, so 36 for four sides and 36 spirits. The obelisk also wants 128 spirits in the magic pillar."
+  ],
+  "sources": [
+   "kronwerke:tech/energy_core_stabilizer (pattern ASA, ' B ', 'A A')",
+   "kubejs/server_scripts/kronwerke/tech.js",
+   "Draconic-Evolution-1.21.1-3.1.4.633.jar: com/brandon3055/draconicevolution/blocks/tileentity/TileEnergyCoreStabilizer.class (getAroundAxis)",
+   "BrandonsCore-1.21.1-3.2.1.309.jar: com/brandon3055/brandonscore/utils/FacingUtils.class (AROUND_X, 8 offsets)",
+   "config/kronwerke/goals.json (stage4 botania:gaia_spirit 128 fixed, stage3 starterKit)"
+  ],
+  "client": [
+   "the exact placement of the advanced stabilizer field relative to the core"
+  ]
+ },
+ "pylon": {
+  "de": [
+   "Ein Rezept gibt zwei Pylonen, das reicht für einen Eingang und einen Ausgang. Es kostet 4 Draconiumbarren, 2 Smaragde, ein Enderauge, einen Draconiumkern und einen Diamanten.",
+   "Mit Pylon und E/A-Kristall verteilst du den Strom danach ohne Kabel ({{draconic/crystals}})."
+  ],
+  "en": [
+   "One recipe makes two pylons, enough for one input and one output. It costs 4 draconium ingots, 2 emeralds, an eye of ender, a draconium core and a diamond.",
+   "With a pylon and an I/O crystal you can then spread the power without cables ({{draconic/crystals}})."
+  ],
+  "sources": [
+   "draconicevolution:machines/energy_pylon (count 2)"
+  ]
+ },
+ "tier2": {
+  "de": [
+   "Sechs Draconiumblöcke sind 54 Barren. Die Quest zählt die Blöcke in deinem Inventar und nimmt sie nicht, du kannst sie danach direkt setzen.",
+   "Mit Stufe 2 speichert der Kern sechsmal so viel wie Stufe 1."
+  ],
+  "en": [
+   "Six draconium blocks are 54 ingots. The quest counts the blocks in your inventory and does not take them, so you can place them right after.",
+   "Tier 2 stores six times as much as tier 1."
+  ],
+  "sources": [
+   "Draconic-Evolution-1.21.1-3.1.4.633.jar: data/draconicevolution/multiblocks/energy_core_2.json",
+   "srv/config/brandon3055/DraconicEvolution.cfg (coreCapacity)",
+   "config/ftbquests/quests/data.snbt (default_consume_items false)"
+  ]
+ },
+ "tiers": {
+  "de": [
+   "Stufe 3 ist ein voller 3x3x3-Würfel: zu den 6 Blöcken von Stufe 2 kommen 20 dazu. 26 Blöcke sind 234 Barren.",
+   "Ab Stufe 4 wird der Würfel innen zu Redstone, die 26 Draconiumblöcke wandern dann in die äußere Hülle."
+  ],
+  "en": [
+   "Tier 3 is a full 3x3x3 cube: 20 more blocks on top of the 6 from tier 2. 26 blocks are 234 ingots.",
+   "From tier 4 the inside turns into redstone, and the 26 draconium blocks move to the outer shell."
+  ],
+  "sources": [
+   "Draconic-Evolution-1.21.1-3.1.4.633.jar: data/draconicevolution/multiblocks/energy_core_3.json",
+   "srv/config/brandon3055/DraconicEvolution.cfg (coreCapacity)"
+  ]
+ },
+ "tier4": {
+  "de": [
+   "Die 26 Draconiumblöcke aus Stufe 3 kannst du für die Hülle wiederverwenden, es fehlen also noch 28 Blöcke und 26 Redstoneblöcke. Insgesamt stecken 486 Barren im Kern.",
+   "Bis einschließlich Stufe 4 reichen die vier einfachen Stabilisatoren."
+  ],
+  "en": [
+   "You can reuse the 26 draconium blocks from tier 3 for the shell, so 28 more blocks and 26 redstone blocks are missing. In total 486 ingots sit in the core.",
+   "Up to and including tier 4 the four simple stabilizers are enough."
+  ],
+  "sources": [
+   "Draconic-Evolution-1.21.1-3.1.4.633.jar: data/draconicevolution/multiblocks/energy_core_4.json",
+   "srv/config/brandon3055/DraconicEvolution.cfg (coreCapacity)"
+  ]
+ },
+ "tier5": {
+  "de": [
+   "Gegenüber Stufe 4 kommen 36 Draconiumblöcke und 54 Redstoneblöcke dazu, insgesamt sind es 810 Barren.",
+   "**Teuer wird es bei den Stabilisatoren:** Jeder fortgeschrittene ist ein 3x3-Feld aus neun, also 36 Stabilisatoren mit 36 Gaia-Seelen ({{draconic/stabilizer}})."
+  ],
+  "en": [
+   "Compared to tier 4 you add 36 draconium blocks and 54 redstone blocks, 810 ingots in total.",
+   "**The stabilizers are the expensive part:** each advanced one is a 3x3 field of nine, so 36 stabilizers with 36 Gaia spirits ({{draconic/stabilizer}})."
+  ],
+  "sources": [
+   "Draconic-Evolution-1.21.1-3.1.4.633.jar: data/draconicevolution/multiblocks/energy_core_5.json",
+   "srv/config/brandon3055/DraconicEvolution.cfg (coreCapacity)",
+   "Draconic-Evolution-1.21.1-3.1.4.633.jar: com/brandon3055/draconicevolution/blocks/tileentity/TileEnergyCoreStabilizer.class",
+   "BrandonsCore-1.21.1-3.2.1.309.jar: com/brandon3055/brandonscore/utils/FacingUtils.class"
+  ],
+  "client": [
+   "the exact placement of the advanced stabilizer fields"
+  ]
+ },
+ "tier6": {
+  "de": [
+   "150 Draconiumblöcke sind 1 350 Barren, mehr als das ganze Obeliskziel von Stufe 4. Gegenüber Stufe 5 kommen 60 Draconium- und 98 Redstoneblöcke dazu.",
+   "Draconium im Kern zählt nicht für den Obelisken, sprecht euch also ab."
+  ],
+  "en": [
+   "150 draconium blocks are 1 350 ingots, more than the whole stage 4 obelisk goal. Compared to tier 5 you add 60 draconium and 98 redstone blocks.",
+   "Draconium in the core does not count for the obelisk, so agree on it as a team."
+  ],
+  "sources": [
+   "Draconic-Evolution-1.21.1-3.1.4.633.jar: data/draconicevolution/multiblocks/energy_core_6.json",
+   "srv/config/brandon3055/DraconicEvolution.cfg (coreCapacity)",
+   "config/kronwerke/goals.json (stage4 draconium_ingot base 1000)"
+  ]
+ },
+ "tier7": {
+  "de": [
+   "210 Draconiumblöcke sind 1 890 Barren, gegenüber Stufe 6 kommen 60 Draconium- und 150 Redstoneblöcke dazu.",
+   "Stufe 8 braucht Erwachtes Draconium aus Stufe 5 ({{draconic_chaos/awakened}})."
+  ],
+  "en": [
+   "210 draconium blocks are 1 890 ingots; compared to tier 6 you add 60 draconium and 150 redstone blocks.",
+   "Tier 8 needs awakened draconium from stage 5 ({{draconic_chaos/awakened}})."
+  ],
+  "sources": [
+   "Draconic-Evolution-1.21.1-3.1.4.633.jar: data/draconicevolution/multiblocks/energy_core_7.json",
+   "srv/config/brandon3055/DraconicEvolution.cfg (coreCapacity)",
+   "Draconic-Evolution-1.21.1-3.1.4.633.jar: data/draconicevolution/multiblocks/energy_core_8.json"
+  ]
+ },
+ "relay": {
+  "de": [
+   "Ein Rezept aus 4 Diamanten und einem Wyvern-Energiekontroller gibt vier Kristalle, genug für zwei Wyvern-Werkzeuge.",
+   "Für Spitzhacke, Schwert, Bogen, Axt und Brustplatte brauchst du zusammen 10, also drei Rezepte. Zwei E/A-Kristalle lassen sich auch wieder zu einem Relaiskristall zusammenlegen."
+  ],
+  "en": [
+   "One recipe from 4 diamonds and a wyvern energy controller makes four crystals, enough for two wyvern tools.",
+   "Pickaxe, sword, bow, axe and chestpiece need 10 together, so three recipes. Two I/O crystals can also be combined back into one relay crystal."
+  ],
+  "sources": [
+   "draconicevolution:machines/basic_relay_crystal (count 4)",
+   "draconicevolution:machines/basic_relay_crystal_combine",
+   "draconicevolution:tools/wyvern_pickaxe, wyvern_sword, wyvern_bow, wyvern_axe, wyvern_chestpiece (2 relay crystals each)"
+  ]
+ },
+ "tools": {
+  "de": [
+   "Sechs Zutaten heißen sechs Wyvern-Injektoren, Draconium-Injektoren reichen für Wyvern-Rezepte nicht. Jedes Wyvern-Werkzeug kostet 8 Millionen Energie.",
+   "Die Module baust du ab {{draconic/modules}}, zuerst ein Energiemodul ({{draconic/mod_energy}})."
+  ],
+  "en": [
+   "Six ingredients mean six wyvern injectors; draconium injectors do not run wyvern recipes. Each wyvern tool costs 8 million energy.",
+   "You build the modules from {{draconic/modules}}, an energy module first ({{draconic/mod_energy}})."
+  ],
+  "sources": [
+   "draconicevolution:tools/wyvern_pickaxe (techLevel wyvern, totalEnergy 8000000, 6 ingredients)"
+  ]
+ },
+ "sword": {
+  "de": [
+   "Wieder 8 Millionen Energie, zwei Relaiskristalle und ein Wyvern-Energiekontroller. Für Schadensmodule brauchst du Modulkerne aus {{draconic/modules}}.",
+   "Verzauberungen am Diamantschwert rettest du vorher mit dem Entzauberer ({{draconic/disenchanter}})."
+  ],
+  "en": [
+   "Again 8 million energy, two relay crystals and a wyvern energy controller. Damage modules need module cores from {{draconic/modules}}.",
+   "Save the enchantments of the diamond sword first with the disenchanter ({{draconic/disenchanter}})."
+  ],
+  "sources": [
+   "draconicevolution:tools/wyvern_sword (catalyst diamond_sword)",
+   "draconicevolution:item_wyvern_damage (stage 4)"
+  ]
+ },
+ "bow": {
+  "de": [
+   "Der Bogen ist eine Fusion wie die anderen: sechs Wyvern-Injektoren, 8 Millionen Energie. Die Projektil-Module (Schaden, Tempo, Genauigkeit, Durchschlag) sind schon in Stufe 4 offen.",
+   "Den Drakonischen Bogen baust du in Stufe 5 ({{draconic_chaos/welcome}})."
+  ],
+  "en": [
+   "The bow is a fusion like the others: six wyvern injectors, 8 million energy. The projectile modules (damage, velocity, accuracy, penetration) are already open in stage 4.",
+   "You build the draconic bow in stage 5 ({{draconic_chaos/welcome}})."
+  ],
+  "sources": [
+   "draconicevolution:tools/wyvern_bow (catalyst minecraft:bow)",
+   "kubejs/data/kronwerke/chapters/stages/stage4.json (item_wyvern_proj_damage, proj_velocity, proj_accuracy, proj_penetration)"
+  ]
+ },
+ "armor": {
+  "de": [
+   "Katalysator ist eine [[minecraft:diamond_chestplate]], in sechs Wyvern-Injektoren kommen dieselben Zutaten wie bei den Werkzeugen.",
+   "Ohne Module schützt sie kaum: Für den Schild brauchst du {{draconic/shield_mod}}, für Strom {{draconic/mod_energy}}."
+  ],
+  "en": [
+   "The catalyst is a [[minecraft:diamond_chestplate]]; the six wyvern injectors take the same ingredients as for the tools.",
+   "Without modules it barely protects: the shield needs {{draconic/shield_mod}}, the power {{draconic/mod_energy}}."
+  ],
+  "sources": [
+   "draconicevolution:tools/wyvern_chestpiece (catalyst diamond_chestplate)"
+  ]
+ },
+ "modules": {
+  "de": [
+   "Ein Modulkern kostet 4 Eisen, 2 Redstone, 2 Gold und einen Draconiumbarren. Mach gleich mehr als vier: Schild, Flug, Verbrennung, Baumfäller und Untod brauchen je einen, das Wyvern-Energie- und das Wyvern-AOE-Modul sogar zwei.",
+   "Wyvern-Module passen nur in Wyvern-Ausrüstung und besser."
+  ],
+  "en": [
+   "A module core costs 4 iron, 2 redstone, 2 gold and a draconium ingot. Make more than four: shield, flight, incineration, tree harvest and undying need one each, the wyvern energy and wyvern AOE modules even two.",
+   "Wyvern modules only fit wyvern gear and above."
+  ],
+  "sources": [
+   "draconicevolution:modules/module_core (pattern IRI/GDG/IRI)",
+   "draconicevolution:modules/item_wyvern_* recipes",
+   "draconicevolution:modules/item_draconium_energy, item_draconium_aoe"
+  ]
+ },
+ "shield_mod": {
+  "de": [
+   "Die zwei [[minecraft:netherite_scrap]] kommen aus Antikem Schutt im Nether. Für das große Modul legst du fünf kleine mit vier Draconiumkernen zusammen.",
+   "Ein Schildmodul brauchst du auch für {{draconic/mod_undying}}."
+  ],
+  "en": [
+   "The two [[minecraft:netherite_scrap]] come from ancient debris in the Nether. For the large module, combine five small ones with four draconium cores.",
+   "You also need a shield module for {{draconic/mod_undying}}."
+  ],
+  "sources": [
+   "draconicevolution:modules/item_wyvern_shield_capacity",
+   "draconicevolution:modules/item_wyvern_large_shield_capacity (pattern #A#/A#A/#A#)",
+   "draconicevolution:modules/item_wyvern_shield_capacity_uncraft (5)"
+  ]
+ },
+ "flight": {
+  "de": [
+   "Die [[minecraft:elytra]] liegen in Endschiffen ({{the_end/elytra}}). Dazu kommen zwei Draconiumkerne und eine Feuerwerksrakete.",
+   "Flug mit Elytra und kreativer Flug sind in der Konfiguration beide erlaubt."
+  ],
+  "en": [
+   "The [[minecraft:elytra]] lie in End ships ({{the_end/elytra}}). Add two draconium cores and a firework rocket.",
+   "Elytra flight and creative flight are both allowed in the config."
+  ],
+  "sources": [
+   "draconicevolution:modules/item_wyvern_flight (pattern #C#/ABA/#D#)",
+   "srv/config/brandon3055/DraconicEvolution.cfg (enableElytraFlight, enableCreativeFlight)"
+  ]
+ },
+ "goal": {
+  "de": [
+   "Die Mengen sind Grundziele: 1 000 Barren und 150 Elite-Steuerschaltkreise, je nach Spielerzahl mal 0,4 bis 1,5. Gaia-Seelen (128) und Mystische Stäbe (30) sind fest.",
+   "Der Obelisk nimmt nur Barren, keine Blöcke. Beim Schleich-Klick gibt er nur die Hauptreihen deines Inventars ab, nicht die Schnellleiste. Die Quest selbst zählt 256 Barren und 16 Schaltkreise und nimmt sie nicht."
+  ],
+  "en": [
+   "The amounts are base goals: 1 000 ingots and 150 elite control circuits, times 0.4 to 1.5 depending on the number of players. Gaia spirits (128) and mystic staffs (30) are fixed.",
+   "The obelisk takes only ingots, no blocks. The sneak click hands in only the main rows of your inventory, not the hotbar. The quest itself counts 256 ingots and 16 circuits and does not take them."
+  ],
+  "sources": [
+   "config/kronwerke/goals.json (stage4, scale, fixed)",
+   "core: src/main/java/de/kronwerke/core/goal/Goal.java (matches exact id)",
+   "core: src/main/java/de/kronwerke/core/obelisk/Obelisk.java",
+   "config/ftbquests/quests/data.snbt (default_consume_items false)"
+  ]
+ },
+ "outlook": {
+  "de": [
+   "Die Fusion für Erwachtes Draconium ist auf Kronwerke eine Wyvern-Fusion mit 50 Millionen Energie und gibt **4 Blöcke**. Katalysator sind 4 Draconiumblöcke, in sieben Injektoren kommen 4 Draconiumkerne, 2 [[botania:gaia_ingot]] und ein [[draconicevolution:dragon_heart]].",
+   "Das Drachenherz bekommst du vom Enderdrachen ({{the_end/heart}}), die Gaia-Seelenbarren gibt es ab Stufe 5 ({{draconic_chaos/welcome}})."
+  ],
+  "en": [
+   "On Kronwerke the awakened draconium fusion is a wyvern fusion with 50 million energy and gives **4 blocks**. The catalyst is 4 draconium blocks; seven injectors take 4 draconium cores, 2 [[botania:gaia_ingot]] and a [[draconicevolution:dragon_heart]].",
+   "The dragon heart comes from the Ender Dragon ({{the_end/heart}}); Gaia spirit ingots open in stage 5 ({{draconic_chaos/welcome}})."
+  ],
+  "sources": [
+   "kronwerke:tech/awakened_draconium_block (techLevel wyvern, totalEnergy 50000000, catalyst 4 draconium_block, count 4)",
+   "kubejs/server_scripts/kronwerke/tech.js",
+   "botania:gaia_ingot (stage 5)"
+  ]
+ },
+ "player_dislocator": {
+  "de": [
+   "Die [[minecraft:ghast_tear]] lassen Ghasts im Nether fallen. Der Dislocator wird verbaut, für eigene Sprünge brauchst du also einen zweiten.",
+   "Die Punkt-zu-Punkt-Version kostet zwei Dislocatoren, einen Draconiumkern und eine Ghast-Träne."
+  ],
+  "en": [
+   "Ghasts in the Nether drop the [[minecraft:ghast_tear]]. The dislocator is used up, so keep a second one for your own jumps.",
+   "The point to point version costs two dislocators, a draconium core and a ghast tear."
+  ],
+  "sources": [
+   "draconicevolution:tools/player_dislocator_unbound (shapeless)",
+   "draconicevolution:tools/p2p_dislocator_unbound"
+  ],
+  "client": [
+   "binding to a player and the jump to them (quest text)"
+  ]
+ },
+ "disenchanter": {
+  "de": [
+   "Das Rezept kostet 2 Smaragde, einen Draconiumkern, 2 Verzauberte Bücher, einen Zaubertisch und 3 Bücherregale. Die Verzauberten Bücher dürfen jede Verzauberung tragen.",
+   "Nützlich vor jeder Fusion, denn der Katalysator, zum Beispiel ein Diamantschwert, verliert seine Verzauberungen."
+  ],
+  "en": [
+   "The recipe costs 2 emeralds, a draconium core, 2 enchanted books, an enchanting table and 3 bookshelves. The enchanted books can carry any enchantment.",
+   "Useful before every fusion, since the catalyst, a diamond sword for example, loses its enchantments."
+  ],
+  "sources": [
+   "draconicevolution:disenchanter (pattern ABA/CDC/EEE, minecraft:enchanted_book)"
+  ],
+  "client": [
+   "that a fused tool does not keep the catalyst's enchantments"
+  ]
+ },
+ "celestial": {
+  "de": [
+   "Das [[minecraft:dragon_egg]] bekommst du vom Enderdrachen ({{the_end/egg}}). Laut Konfiguration legt jeder besiegte Drache ein neues Ei, nicht nur der erste.",
+   "Der Wyvern-Kern im Rezept kostet einen Netherstern, also einen Wither ({{draconic/w_core}})."
+  ],
+  "en": [
+   "The [[minecraft:dragon_egg]] comes from the Ender Dragon ({{the_end/egg}}). Per the config every defeated dragon leaves a new egg, not just the first.",
+   "The wyvern core in the recipe costs a nether star, so one Wither ({{draconic/w_core}})."
+  ],
+  "sources": [
+   "draconicevolution:celestial_manipulator (minecraft:dragon_egg)",
+   "srv/config/brandon3055/DraconicEvolution.cfg (dragonEggSpawnOverride true)"
+  ]
+ },
+ "chest": {
+  "de": [
+   "Zehn Zutaten heißen **zehn Injektoren**, du brauchst also zwei mehr als die acht aus {{draconic/injectors}}. Die Fusion ist Draconium-Stufe und kostet 2 Millionen Energie.",
+   "Laut Sperrliste der Konfiguration gehören keine Draconiumtruhen, Shulkerkisten, Beutel oder Taschen hinein."
+  ],
+  "en": [
+   "Ten ingredients mean **ten injectors**, so two more than the eight from {{draconic/injectors}}. The fusion is draconium tier and costs 2 million energy.",
+   "Per the config's block list, draconium chests, shulker boxes, pouches and bags do not go inside."
+  ],
+  "sources": [
+   "draconicevolution:machines/draconium_chest (techLevel draconium, 10 ingredients, totalEnergy 2000000)",
+   "srv/config/brandon3055/DraconicEvolution.cfg (chestBlacklist draconium_chest)"
+  ],
+  "client": [
+   "that chestBlacklist lists items refused inside the draconium chest"
+  ]
+ },
+ "crystals": {
+  "de": [
+   "Ein Relaiskristall formlos gibt zwei [[draconicevolution:basic_io_crystal]], die Quest will genau einmal das. Der [[draconicevolution:crystal_binder]] braucht einen Draconiumkern, zwei Barren, eine Lohenrute und einen Diamanten.",
+   "Der Drahtlose Energiekristall kostet einen Partikelgenerator, einen Relaiskristall, 2 Enderaugen und 4 Enderperlen."
+  ],
+  "en": [
+   "One relay crystal crafted alone gives two [[draconicevolution:basic_io_crystal]], exactly what the quest wants. The [[draconicevolution:crystal_binder]] takes a draconium core, two ingots, a blaze rod and a diamond.",
+   "The wireless energy crystal costs a particle generator, a relay crystal, 2 eyes of ender and 4 ender pearls."
+  ],
+  "sources": [
+   "draconicevolution:machines/basic_io_crystal (count 2)",
+   "draconicevolution:tools/crystal_binder",
+   "draconicevolution:machines/basic_wireless_crystal (pattern ABA/CDC/ABA)"
+  ]
+ },
+ "mod_energy": {
+  "de": [
+   "Für das Wyvern-Modul brauchst du zwei einfache Energiemodule, also 12 Redstoneblöcke und 2 Modulkerne, dazu 6 Draconiumbarren und einen Draconiumkern.",
+   "Danach gehen {{draconic/mod_aoe}}, {{draconic/mod_junk}}, {{draconic/mod_tree}} und {{draconic/mod_undying}} weiter."
+  ],
+  "en": [
+   "The wyvern module takes two basic energy modules, so 12 redstone blocks and 2 module cores, plus 6 draconium ingots and a draconium core.",
+   "{{draconic/mod_aoe}}, {{draconic/mod_junk}}, {{draconic/mod_tree}} and {{draconic/mod_undying}} go on from here."
+  ],
+  "sources": [
+   "draconicevolution:modules/item_draconium_energy (pattern ###/ABA/###)",
+   "draconicevolution:modules/item_wyvern_energy"
+  ]
+ },
+ "mod_aoe": {
+  "de": [
+   "Zwei einfache AOE-Module kosten 8 Kolben, 4 Draconiumbarren, 4 Draconiumkerne und 2 Modulkerne. Das Wyvern-Modul braucht dazu einen Wyvern-Kern, also einen Wither.",
+   "Die Netherit-Bruchstücke kommen aus Antikem Schutt im Nether."
+  ],
+  "en": [
+   "Two basic AOE modules cost 8 pistons, 4 draconium ingots, 4 draconium cores and 2 module cores. The wyvern module adds a wyvern core, so one Wither.",
+   "The netherite scrap comes from ancient debris in the Nether."
+  ],
+  "sources": [
+   "draconicevolution:modules/item_draconium_aoe (pattern #I#/ABA/#I#)",
+   "draconicevolution:modules/item_wyvern_aoe"
+  ]
+ },
+ "mod_junk": {
+  "de": [
+   "Die Quest will nur das Verbrennungsmodul. Das Ender-Sammelmodul ist eine Alternative: Statt zu verbrennen, landet alles in deiner [[minecraft:ender_chest]].",
+   "Beide kosten zwei Draconiumkerne und einen Modulkern."
+  ],
+  "en": [
+   "The quest only wants the incineration module. The ender collection module is the alternative: instead of burning, everything goes into your [[minecraft:ender_chest]].",
+   "Both cost two draconium cores and a module core."
+  ],
+  "sources": [
+   "draconicevolution:modules/item_wyvern_junk_filter",
+   "draconicevolution:modules/item_wyvern_ender_collection"
+  ]
+ },
+ "mod_tree": {
+  "de": [
+   "Für das Modul brauchst du zwei [[minecraft:diamond_axe]], die Wyvern-Axt nimmt eine dritte als Katalysator. Die Axt ist eine Fusion mit sechs Wyvern-Injektoren und 8 Millionen Energie.",
+   "Zusammen kostet die Quest also 9 Diamanten nur für die Äxte."
+  ],
+  "en": [
+   "The module takes two [[minecraft:diamond_axe]], and the wyvern axe takes a third as catalyst. The axe is a fusion with six wyvern injectors and 8 million energy.",
+   "So the quest costs 9 diamonds for the axes alone."
+  ],
+  "sources": [
+   "draconicevolution:modules/item_wyvern_tree_harvest (pattern #A#/CMC/#A#)",
+   "draconicevolution:tools/wyvern_axe (catalyst diamond_axe)"
+  ]
+ },
+ "mod_undying": {
+  "de": [
+   "Das [[minecraft:totem_of_undying]] lassen Magier in Plünderer-Überfällen und Waldanwesen fallen. Unten kommt ein ganzes Wyvern-Schildmodul hinein, bau dir also ein zweites ({{draconic/shield_mod}}).",
+   "Steck das Modul in die Brustplatte zusammen mit einem Energiemodul."
+  ],
+  "en": [
+   "Evokers in raids and woodland mansions drop the [[minecraft:totem_of_undying]]. A whole wyvern shield module goes in at the bottom, so build a second one ({{draconic/shield_mod}}).",
+   "Put the module in the chestpiece together with an energy module."
+  ],
+  "sources": [
+   "draconicevolution:modules/item_wyvern_undying (D = item_wyvern_shield_capacity)"
+  ]
+ }
+}

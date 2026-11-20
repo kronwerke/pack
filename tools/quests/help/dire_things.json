@@ -1,0 +1,592 @@
+{
+ "goo": {
+  "de": [
+   "Die [[mysticalagriculture:inferium_essence]] für die Mitte kommt von Inferiumpflanzen aus Mystical Agriculture ({{mystical_agriculture/welcome}}), die vier Tonklumpen aus Ton an Flussufern. Das Rezept ergibt genau einen Block.",
+   "Das Goo verwandelt nur Blöcke, die direkt an einer seiner sechs Seiten liegen, und nur, solange es wach ist. Primogel schafft Eisenblöcke und Kohleblöcke; für Gold und Primal Coal Blöcke brauchst du später {{dire_things/goo2}}."
+  ],
+  "en": [
+   "The [[mysticalagriculture:inferium_essence]] for the centre comes from Mystical Agriculture's inferium crops ({{mystical_agriculture/welcome}}), the four clay balls from clay at riverbanks. The recipe makes exactly one block.",
+   "The goo only converts blocks touching one of its six faces directly, and only while it is awake. Primogel handles iron blocks and coal blocks; gold and Primal Coal Blocks need {{dire_things/goo2}} later."
+  ],
+  "sources": [
+   "justdirethings:gooblock_tier1 (pattern csc/fdf/csc)",
+   "justdirethings-1.5.7.jar: data/justdirethings/recipe/*-goospread.json (tierRequirement)",
+   "justdirethings-1.5.7.jar: data/justdirethings/tags/item/goo_revive_tier_1.json"
+  ]
+ },
+ "ferricore_raw": {
+  "de": [
+   "Ein Eisenblock kostet 9 Eisenbarren und wird nach 2400 Ticks (2 Minuten) zu 3 bis 4 [[justdirethings:raw_ferricore]]. Für die 8 Stück brauchst du also zwei bis drei Eisenblöcke.",
+   "Bau den fertigen Block **ohne Behutsamkeit** ab: Mit ihr bekommst du nur den Raw Ferricore Ore Block, und für den gibt es kein Rezept. Wacht das Goo nicht mehr, weck es mit Zucker oder Verrottetem Fleisch, nichts anderes geht bei Primogel."
+  ],
+  "en": [
+   "An iron block costs 9 iron ingots and turns into 3 to 4 [[justdirethings:raw_ferricore]] after 2400 ticks (2 minutes). The 8 pieces take two or three iron blocks.",
+   "Mine the finished block **without Silk Touch**: with it you only get the Raw Ferricore Ore block, and no recipe uses that. If the goo has gone grey, wake it with sugar or rotten flesh; Primogel takes nothing else."
+  ],
+  "sources": [
+   "justdirethings-1.5.7.jar: data/justdirethings/recipe/raw_ferricore_ore-goospread.json (craftingDuration 2400, tierRequirement 1)",
+   "justdirethings-1.5.7.jar: data/justdirethings/loot_table/blocks/raw_ferricore_ore.json (silk touch, uniform 3 to 4)",
+   "justdirethings:raw_ferricore_ore (no recipe uses it)",
+   "srv/config/justdirethings-server.toml (goo_death_chance 0.1)",
+   "justdirethings-1.5.7.jar: data/justdirethings/tags/item/goo_revive_tier_1.json"
+  ]
+ },
+ "ferricore_ingot": {
+  "de": [
+   "Nimm den Schmelzofen: 100 Ticks statt 200 im Ofen. Auch die Legierungsschmelze von Ender IO schmilzt Raw Ferricore.",
+   "Mit den Barren geht es in drei Richtungen weiter: Werkzeug ab {{dire_things/pickaxe}}, Strom ab {{dire_things/generator}} und die Maschinen ab {{dire_things/breaker}}."
+  ],
+  "en": [
+   "Use the blast furnace: 100 ticks instead of 200 in a furnace. Ender IO's alloy smelter also smelts Raw Ferricore.",
+   "The ingots lead three ways: tools from {{dire_things/pickaxe}}, power from {{dire_things/generator}} and the machines from {{dire_things/breaker}}."
+  ],
+  "sources": [
+   "justdirethings:ferricore_ingot_blasted (cookingtime 100)",
+   "justdirethings:ferricore_ingot_smelted (cookingtime 200)",
+   "enderio:smelting/justdirethings/ferricore_ingot_smelted"
+  ]
+ },
+ "primal_coal": {
+  "de": [
+   "Das schafft schon Primogel Goo: Ein [[minecraft:coal_block]] wird nach 2 Minuten zum Raw Primal Coal Block, der 3 bis 4 [[justdirethings:coal_t1]] abwirft.",
+   "Aus 9 Primal Coal wird ein Block, und den braucht {{dire_things/blaze_ember}}. Dein erster [[justdirethings:machinesettingscopier]] braucht ebenfalls ein Stück."
+  ],
+  "en": [
+   "Primogel Goo can already do this: a [[minecraft:coal_block]] becomes a Raw Primal Coal block after 2 minutes, which drops 3 to 4 [[justdirethings:coal_t1]].",
+   "9 Primal Coal make a block, which {{dire_things/blaze_ember}} needs. The [[justdirethings:machinesettingscopier]] takes one piece too."
+  ],
+  "sources": [
+   "justdirethings-1.5.7.jar: data/justdirethings/recipe/raw_coal_t1_ore-goospread.json (coal_block, 2400, tier 1)",
+   "justdirethings-1.5.7.jar: data/justdirethings/loot_table/blocks/raw_coal_t1_ore.json",
+   "justdirethings:coalblock_t1_9x9",
+   "justdirethings:machinesettingscopier"
+  ]
+ },
+ "goo2": {
+  "de": [
+   "Für das Rezept brauchst du den Nether: Lohenstaub aus Lohenruten und Netherwarzen ({{nether/welcome}}). Das Primogel Goo wird dabei verbraucht, bau dir für Eisen also ein neues.",
+   "Blazebloom ist Stufe 2 des Goos: Erst damit werden Goldblöcke, Primal Coal Blöcke und der unfertige Brennstoff des {{dire_things/fluid_gen}} umgewandelt. Wecken geht nur mit Netherwarze oder Lohenstaub."
+  ],
+  "en": [
+   "The recipe needs the Nether: blaze powder from blaze rods, and nether wart ({{nether/welcome}}). The Primogel Goo is used up, so make a new one for iron.",
+   "Blazebloom is goo tier 2: only it converts gold blocks, Primal Coal Blocks and the unrefined fuel of the {{dire_things/fluid_gen}}. It only wakes up with nether wart or blaze powder."
+  ],
+  "sources": [
+   "justdirethings:gooblock_tier2 (pattern brb/wgw/brb)",
+   "justdirethings-1.5.7.jar: data/justdirethings/recipe/raw_blazegold_ore-goospread.json, raw_coal_t2_ore-goospread.json, refined_t2_fluid_block-goospread.json (tierRequirement 2)",
+   "justdirethings-1.5.7.jar: data/justdirethings/tags/item/goo_revive_tier_2.json"
+  ]
+ },
+ "blazegold": {
+  "de": [
+   "Ein Goldblock (9 Goldbarren) gibt 3 bis 4 [[justdirethings:raw_blazegold]], für 8 Barren also zwei bis drei Goldblöcke. Im Schmelzofen dauert ein Barren 100 Ticks.",
+   "Blazegold steckt in 39 Rezepten, darunter {{dire_things/template}}, {{dire_things/fluid_gen}}, {{dire_things/portal_gun}} und {{dire_things/swapper}}. Wer Productive Bees nutzt: Eine Goldbiene wird mit Blazebloom Goo zur Blazegold-Biene ({{bees/c_gold}})."
+  ],
+  "en": [
+   "A gold block (9 gold ingots) gives 3 to 4 [[justdirethings:raw_blazegold]], so 8 ingots take two or three gold blocks. In a blast furnace one ingot takes 100 ticks.",
+   "Blazegold goes into 39 recipes, among them {{dire_things/template}}, {{dire_things/fluid_gen}}, {{dire_things/portal_gun}} and {{dire_things/swapper}}. With Productive Bees, a gold bee turns into a blazegold bee with Blazebloom Goo ({{bees/c_gold}})."
+  ],
+  "sources": [
+   "justdirethings-1.5.7.jar: data/justdirethings/recipe/raw_blazegold_ore-goospread.json",
+   "justdirethings-1.5.7.jar: data/justdirethings/loot_table/blocks/raw_blazegold_ore.json",
+   "justdirethings:blazegold_ingot_blasted (cookingtime 100)",
+   "productivebees:bee_conversion/justdirethings/blazegold_bee"
+  ],
+  "client": [
+   "how a Productive Bees conversion is triggered (giving the goo to the bee)"
+  ]
+ },
+ "blaze_ember": {
+  "de": [
+   "Die Kette: ein Kohleblock wird zu 3 bis 4 Primal Coal, neun davon zum [[justdirethings:coalblock_t1]], und der wird neben Blazebloom Goo zu 3 bis 4 [[justdirethings:coal_t2]]. Für 4 Blaze Ember reicht ein Durchgang, wenn du Glück hast, sonst zwei.",
+   "Der Block allein brennt 48 000 Ticks, Blaze Ember 14 400. Heb dir ein paar auf: Jedes Stück wird später zu einem Eimer Brennstoff ({{dire_things/fluid_gen}})."
+  ],
+  "en": [
+   "The chain: a coal block becomes 3 to 4 Primal Coal, nine of those make a [[justdirethings:coalblock_t1]], and next to Blazebloom Goo that becomes 3 to 4 [[justdirethings:coal_t2]]. One run may give the 4 Blaze Ember; if not, a second does.",
+   "The block alone burns 48 000 ticks, a Blaze Ember 14 400. Keep a few: each one later turns into a bucket of fuel ({{dire_things/fluid_gen}})."
+  ],
+  "sources": [
+   "justdirethings-1.5.7.jar: data/justdirethings/recipe/raw_coal_t2_ore-goospread.json (coalblock_t1, tier 2)",
+   "justdirethings-1.5.7.jar: data/justdirethings/loot_table/blocks/raw_coal_t2_ore.json",
+   "justdirethings-1.5.7.jar: data/neoforge/data_maps/item/furnace_fuels.json"
+  ]
+ },
+ "pickaxe": {
+  "de": [
+   "In die Ferricore-Spitzhacke passen nur zwei Upgrades: {{dire_things/oreminer}} und {{dire_things/orescanner}}. Hammer und Auto Smelter brauchen die Blazegold-Spitzhacke ({{dire_things/template}}).",
+   "Heb die Spitzhacke auf, auch wenn du schon eine bessere hast: Die Blazegold-Spitzhacke entsteht aus genau dieser, mit allen eingebauten Upgrades."
+  ],
+  "en": [
+   "The ferricore pickaxe takes only two upgrades: {{dire_things/oreminer}} and {{dire_things/orescanner}}. Hammer and Auto Smelter need the blazegold pickaxe ({{dire_things/template}}).",
+   "Keep this pickaxe even if you have a better one: the blazegold pickaxe is made from exactly this one, with every upgrade inside."
+  ],
+  "sources": [
+   "justdirethings:ferricore_pickaxe-oreminer, justdirethings:ferricore_pickaxe-orescanner (justdirethings:ability)",
+   "justdirethings:blazegold_pickaxe-templateupgrade"
+  ]
+ },
+ "upgrade_blank": {
+  "de": [
+   "Vier Rohlinge kosten 16 Ferricore-Barren. Welches Upgrade in welches Werkzeug passt, zeigt EMI: Such das Werkzeug, die Upgrades stehen dort als Schmiedetisch-Rezepte.",
+   "Der Rohling steckt in 47 Rezepten, auch in den Vorlagen für Blazegold ({{dire_things/template}})."
+  ],
+  "en": [
+   "Four blanks cost 16 ferricore ingots. EMI shows which upgrade fits which tool: look up the tool, the upgrades are listed as smithing table recipes.",
+   "The blank goes into 47 recipes, the blazegold template ({{dire_things/template}}) among them."
+  ],
+  "sources": [
+   "justdirethings:upgrade_blank (pattern ' f ', 'f f', ' f ')",
+   "justdirethings ability recipes (type justdirethings:ability)"
+  ]
+ },
+ "oreminer": {
+  "de": [
+   "Die zwei [[minecraft:iron_pickaxe]] kosten zusammen 6 Eisenbarren und 4 Stöcke. Der Ore Miner passt in die Ferricore- und die Blazegold-Spitzhacke.",
+   "Die Grenze steht in der Serverkonfiguration: höchstens 64 Blöcke pro Ader mit Ferricore, 128 mit Blazegold. Mit {{dire_things/smelter}} kommt die Ader später gleich als Barren heraus."
+  ],
+  "en": [
+   "The two [[minecraft:iron_pickaxe]] cost 6 iron ingots and 4 sticks. Ore Miner fits the ferricore and the blazegold pickaxe.",
+   "The limit is set in the server config: at most 64 blocks per vein with ferricore, 128 with blazegold. With {{dire_things/smelter}} the vein later drops as ingots."
+  ],
+  "sources": [
+   "justdirethings:upgrade_oreminer",
+   "srv/config/justdirethings-server.toml (tool_max_break_ferricore 64, tool_max_break_blazegold 128)",
+   "justdirethings:blazegold_pickaxe-oreminer"
+  ]
+ },
+ "orescanner": {
+  "de": [
+   "Amethystscherben findest du in Amethystgeoden, das sind die lila Kugeln tief unter der Erde. Der Ore Scanner passt in die Ferricore- und die Blazegold-Spitzhacke.",
+   "Er ist eine aktive Fähigkeit, also musst du ihn auslösen. Wie, steht in {{dire_things/keys}}."
+  ],
+  "en": [
+   "Amethyst shards come from amethyst geodes, the purple balls deep underground. Ore Scanner fits the ferricore and the blazegold pickaxe.",
+   "It is an active ability, so you have to trigger it. How is in {{dire_things/keys}}."
+  ],
+  "sources": [
+   "justdirethings:upgrade_orescanner (e redstone top and bottom, f amethyst left and right)",
+   "justdirethings:ferricore_pickaxe-orescanner, justdirethings:blazegold_pickaxe-orescanner"
+  ]
+ },
+ "keys": {
+  "de": [
+   "Die Quest ist nur ein Häkchen. Probier es gleich an der Spitzhacke mit Ore Scanner aus: Leg ihn auf eine eigene Taste, dann blockiert er weder Rechts- noch Linksklick.",
+   "Alle Fähigkeiten lassen sich in der Serverkonfiguration einzeln abschalten; auf Kronwerke sind alle an."
+  ],
+  "en": [
+   "The quest is just a checkmark. Try it right away on the pickaxe with Ore Scanner: put it on its own key, then it blocks neither right nor left click.",
+   "Every ability can be switched off one by one in the server config; on Kronwerke all of them are on."
+  ],
+  "sources": [
+   "srv/config/justdirethings-server.toml ([abilities], all true)"
+  ],
+  "client": [
+   "Tool Settings screen, Set Binding and the default key V from the quest text"
+  ]
+ },
+ "axe": {
+  "de": [
+   "Die [[justdirethings:ferricore_axe]] braucht **drei** Ferricore-Barren und zwei Stöcke, wie jede Axt. Das [[justdirethings:upgrade_treefeller]] kostet zwei Diamantäxte, also 6 Diamanten.",
+   "Für das [[justdirethings:upgrade_leafbreaker]] nimmt jede Sorte Laub. Tree Feller passt auch in die Blazegold-Axt und schafft dort bis zu 128 Blöcke."
+  ],
+  "en": [
+   "The [[justdirethings:ferricore_axe]] takes **three** ferricore ingots and two sticks, like any axe. The [[justdirethings:upgrade_treefeller]] costs two diamond axes, so 6 diamonds.",
+   "The [[justdirethings:upgrade_leafbreaker]] takes any kind of leaves. Tree Feller also fits the blazegold axe and reaches up to 128 blocks there."
+  ],
+  "sources": [
+   "justdirethings:ferricore_axe (pattern 'ff ', 'fs ', ' s ')",
+   "justdirethings:upgrade_treefeller",
+   "justdirethings:upgrade_leafbreaker (#minecraft:leaves)",
+   "justdirethings:blazegold_axe-treefeller",
+   "srv/config/justdirethings-server.toml (tool_max_break_blazegold 128)"
+  ]
+ },
+ "shovel": {
+  "de": [
+   "Sky Sweeper und Lawn Mower passen beide in die [[justdirethings:ferricore_shovel]]. Für den Lawn Mower brauchst du zwei Kurzes Gras, das bekommst du mit einer Schere.",
+   "Die Hacke aus der Quest kostet zwei Barren und zwei Stöcke. Den Hammer aus {{dire_things/hammer}} nehmen später auch die Blazegold-Schaufel und die Blazegold-Hacke."
+  ],
+  "en": [
+   "Sky Sweeper and Lawn Mower both fit the [[justdirethings:ferricore_shovel]]. The Lawn Mower takes two short grass, which you get with shears.",
+   "The hoe from the quest costs two ingots and two sticks. The hammer from {{dire_things/hammer}} later fits the blazegold shovel and hoe as well."
+  ],
+  "sources": [
+   "justdirethings:ferricore_shovel-skysweeper, justdirethings:ferricore_shovel-lawnmower",
+   "justdirethings:upgrade_lawnmower (minecraft:short_grass)",
+   "justdirethings:ferricore_hoe",
+   "justdirethings:blazegold_shovel-hammer, justdirethings:blazegold_hoe-hammer"
+  ]
+ },
+ "sword_bow": {
+  "de": [
+   "Spinnenaugen lassen Spinnen und Hexen fallen, Amethystscherben kommen aus Geoden. Der Mob Scanner passt nur in Schwerter, das Ferricore- und das Blazegold-Schwert.",
+   "Der Bogen heißt im Spiel [[justdirethings:bow_ferricore]]. Den [[justdirethings:potion_canister]] und den Bogen musst du nicht für diese Quest bauen, sie will nur Schwert und Mob Scanner."
+  ],
+  "en": [
+   "Spider eyes drop from spiders and witches, amethyst shards come from geodes. Mob Scanner only fits swords, the ferricore and the blazegold one.",
+   "In game the bow is the [[justdirethings:bow_ferricore]]. You do not need the [[justdirethings:potion_canister]] or the bow for this quest, it only asks for the sword and the Mob Scanner."
+  ],
+  "sources": [
+   "justdirethings:upgrade_mobscanner",
+   "justdirethings:ferricore_sword-mobscanner, justdirethings:blazegold_sword-mobscanner",
+   "justdirethings:bow_ferricore (pattern 'sf ', 's f', 'sf ')",
+   "justdirethings:bow_ferricore-potionarrow"
+  ]
+ },
+ "armor": {
+  "de": [
+   "Die ganze Rüstung kostet 24 Ferricore-Barren. Die Quest will nur die Stiefel und das Step Assist Upgrade aus vier Leitern.",
+   "Jedes Upgrade passt nur in sein Teil: Stiefel nehmen Step Assist und Jump Boost, die Hose Walk und Run Speed, die Brust Invulnerability, der Helm Mind Fog. Für Invulnerability brauchst du zwei [[minecraft:diamond_chestplate]], also 16 Diamanten."
+  ],
+  "en": [
+   "The full set costs 24 ferricore ingots. The quest only asks for the boots and the Step Assist upgrade made from four ladders.",
+   "Each upgrade fits only its own piece: boots take Step Assist and Jump Boost, leggings Walk and Run Speed, the chestplate Invulnerability, the helmet Mind Fog. Invulnerability needs two [[minecraft:diamond_chestplate]], so 16 diamonds."
+  ],
+  "sources": [
+   "justdirethings:ferricore_helmet/chestplate/leggings/boots (5, 8, 7, 4)",
+   "justdirethings:upgrade_stepheight (4 ladders)",
+   "justdirethings ability recipes per armor piece",
+   "justdirethings:upgrade_invulnerability"
+  ]
+ },
+ "template": {
+  "de": [
+   "**Vervielfältige die Vorlage, bevor du sie benutzt:** Eine Vorlage und zwei Blazegold-Barren ergeben zwei. Das ist viel billiger als jedes Mal fünf Blazegold und ein neuer Rohling.",
+   "Die Blazegold-Spitzhacke kannst du auch direkt aus drei Barren und zwei Stöcken craften, dann aber ohne Upgrades. Mit der Vorlage kostet das Aufrüsten nur einen Barren und behält alles, was eingebaut ist."
+  ],
+  "en": [
+   "**Copy the template before you use it:** one template and two blazegold ingots make two. That is far cheaper than five blazegold and a new blank every time.",
+   "You can also craft the blazegold pickaxe directly from three ingots and two sticks, but then without upgrades. With the template the upgrade costs one ingot and keeps everything inside."
+  ],
+  "sources": [
+   "justdirethings:template_blazegold, justdirethings:template_blazegold-duplicate",
+   "justdirethings:blazegold_pickaxe (crafting), justdirethings:blazegold_pickaxe-templateupgrade (smithing_transform)"
+  ]
+ },
+ "generator": {
+  "de": [
+   "Den [[mekanism:basic_control_circuit]] bekommst du aus dem Metallurgischen Infuser von Mekanism ({{mekanism/circuit}}). Ohne ihn gibt es auf Kronwerke keinen Generator.",
+   "Die Zahlen stehen so in der Serverkonfiguration: 15 FE pro Brenntick, vierfaches Brenntempo, 1 Million FE Speicher und bis zu 1 000 FE/t Abgabe. Der Generator ist auch die Vorstufe zu {{dire_things/pocket_gen}} und {{dire_things/fluid_gen}}."
+  ],
+  "en": [
+   "You get the [[mekanism:basic_control_circuit]] from Mekanism's metallurgic infuser ({{mekanism/circuit}}). Without it there is no generator on Kronwerke.",
+   "The server config sets the numbers: 15 FE per burn tick, four times the burn speed, 1 million FE storage and up to 1 000 FE/t output. The generator also leads to {{dire_things/pocket_gen}} and {{dire_things/fluid_gen}}."
+  ],
+  "sources": [
+   "justdirethings:generatort1 (pattern iri/cfc/iri, f = mekanism:basic_control_circuit)",
+   "srv/config/justdirethings-server.toml ([generator_t1])"
+  ]
+ },
+ "pocket_gen": {
+  "de": [
+   "Die zwei Redstoneblöcke kosten 18 Redstone. Der Taschengenerator nimmt dieselben Brennstoffe wie der große und rechnet genauso, 15 FE pro Brenntick.",
+   "Mit 5 000 FE/t ist eine leere Portalkanone ({{dire_things/portal_gun}}, 100 000 FE) in 20 Ticks voll, vorausgesetzt er hat selbst genug gespeichert."
+  ],
+  "en": [
+   "The two redstone blocks cost 18 redstone. The pocket generator takes the same fuels as the big one and counts the same way, 15 FE per burn tick.",
+   "At 5 000 FE/t an empty portal gun ({{dire_things/portal_gun}}, 100 000 FE) is full in 20 ticks, as long as the generator has that much stored."
+  ],
+  "sources": [
+   "justdirethings:pocket_generator (r = minecraft:redstone_block)",
+   "srv/config/justdirethings-server.toml ([pocket_generator], [portal_gun])"
+  ]
+ },
+ "breaker": {
+  "de": [
+   "Der Brecher kostet neben den Barren einen [[minecraft:observer]] und einen Diamanten. Ohne Werkzeug im Slot bricht er nichts ab.",
+   "Von hier geht es zum {{dire_things/placer}} und zum {{dire_things/settings_copier}}. Die Maschinen dieser Reihe zusammen ergeben {{dire_things/factory}}."
+  ],
+  "en": [
+   "Besides the ingots the breaker costs an [[minecraft:observer]] and a diamond. Without a tool in its slot it breaks nothing.",
+   "From here the line goes on to the {{dire_things/placer}} and the {{dire_things/settings_copier}}. The machines of this row together make {{dire_things/factory}}."
+  ],
+  "sources": [
+   "justdirethings:blockbreakert1 (pattern fdf/lol/frf)"
+  ]
+ },
+ "placer": {
+  "de": [
+   "Das Rezept braucht wie der Brecher einen Diamanten oben, nur in der Mitte einen [[minecraft:dispenser]]. Der Setzer ist die Vorstufe zum {{dire_things/dropper}} und zum {{dire_things/fluid_placer}}.",
+   "Für die Goo-Straße stellst du ihn so auf, dass er in den Platz direkt neben dem Goo setzt."
+  ],
+  "en": [
+   "Like the breaker the recipe needs a diamond on top, only with a [[minecraft:dispenser]] in the middle. The placer leads to the {{dire_things/dropper}} and the {{dire_things/fluid_placer}}.",
+   "For the goo line, set it so it places into the spot right next to the goo."
+  ],
+  "sources": [
+   "justdirethings:blockplacert1 (d = #c:gems/diamond, o = minecraft:dispenser)"
+  ]
+ },
+ "dropper": {
+  "de": [
+   "Hier sitzt in der Mitte ein normaler [[minecraft:dropper]], und statt des Diamanten oben kommt Redstone hinein.",
+   "Für die Manaperlen ({{botania_runes/mana_pearl}}) sind 600 Stück das Grundziel im Magie-Pfeiler von Stufe 2, je nach Spielerzahl mehr oder weniger. Ein Spender, der Enderperlen ins Manabecken wirft, spart dir viel Klickerei."
+  ],
+  "en": [
+   "Here a plain [[minecraft:dropper]] sits in the middle, and redstone replaces the diamond on top.",
+   "For mana pearls ({{botania_runes/mana_pearl}}) the base goal in the stage 2 magic pillar is 600, more or less depending on the number of players. A dropper throwing ender pearls into the mana pool saves a lot of clicking."
+  ],
+  "sources": [
+   "justdirethings:droppert1 (2x redstone, minecraft:dropper)",
+   "config/kronwerke/goals.json (stage2 magic botania:mana_pearl base 600, scale)"
+  ]
+ },
+ "sensor": {
+  "de": [
+   "Das [[minecraft:ender_eye]] im Rezept craftest du aus einer Enderperle und Lohenstaub. Klicker und Tauscher brauchen auch je eines, nimm gleich drei Enderperlen mit.",
+   "Von hier gehen {{dire_things/clicker}} und {{dire_things/swapper}} ab."
+  ],
+  "en": [
+   "The [[minecraft:ender_eye]] in the recipe is an ender pearl plus blaze powder. The clicker and the swapper need one each too, so bring three ender pearls.",
+   "{{dire_things/clicker}} and {{dire_things/swapper}} branch off from here."
+  ],
+  "sources": [
+   "justdirethings:sensort1",
+   "justdirethings:clickert1",
+   "justdirethings:blockswappert1"
+  ]
+ },
+ "clicker": {
+  "de": [
+   "Das Rezept ist das des Sensors mit einem [[minecraft:dispenser]] statt des Beobachters.",
+   "Weckt der Klicker Blazebloom Goo, muss **Netherwarze oder Lohenstaub** in den Slot, Zucker wirkt dort nicht."
+  ],
+  "en": [
+   "The recipe is the sensor's with a [[minecraft:dispenser]] instead of the observer.",
+   "If the clicker wakes Blazebloom Goo, put **nether wart or blaze powder** in its slot; sugar does nothing there."
+  ],
+  "sources": [
+   "justdirethings:clickert1 (o = minecraft:dispenser)",
+   "justdirethings-1.5.7.jar: data/justdirethings/tags/item/goo_revive_tier_2.json"
+  ]
+ },
+ "collector": {
+  "de": [
+   "Das Rezept braucht einen Diamanten, eine Enderperle, zwei Trichter und drei Ferricore-Barren.",
+   "Danach ist alles für {{dire_things/factory}} da. Häng den Collector an eine Truhe, er legt alles in das Inventar, an dem er sitzt."
+  ],
+  "en": [
+   "The recipe takes a diamond, an ender pearl, two hoppers and three ferricore ingots.",
+   "After this you have everything for {{dire_things/factory}}. Attach the collector to a chest, it puts everything into the inventory it sits on."
+  ],
+  "sources": [
+   "justdirethings:itemcollector (pattern ' d ', 'heh', 'fff')"
+  ]
+ },
+ "fluid_gen": {
+  "de": [
+   "Ein Blazegold und eine Netherwarze ergeben 4 [[justdirethings:polymorphic_catalyst]], genug für vier Wasserquellen. Der letzte Schritt braucht **Blazebloom Goo**, Primogel verwandelt den unfertigen Brennstoff nicht.",
+   "Laut Serverkonfiguration gibt ein Millieimer dieses Brennstoffs 450 FE. Die Brennstoffe der späteren Stufen bringen 1 300 und 4 000 FE pro Millieimer, dafür brauchst du dann die höheren Goos."
+  ],
+  "en": [
+   "One blazegold and one nether wart make 4 [[justdirethings:polymorphic_catalyst]], enough for four water sources. The last step needs **Blazebloom Goo**; Primogel does not refine the fuel.",
+   "Per the server config one millibucket of this fuel gives 450 FE. The fuels of later tiers give 1 300 and 4 000 FE per millibucket and need the higher goos."
+  ],
+  "sources": [
+   "justdirethings:polymorphic_catalyst (4)",
+   "justdirethings-1.5.7.jar: data/justdirethings/recipe/refined_t2_fluid_block-goospread.json (tierRequirement 2)",
+   "srv/config/justdirethings-server.toml ([generator_fluid_t1] fuel_tier2/3/4_fe_per_mb)",
+   "justdirethings:generatorfluidt1"
+  ],
+  "client": [
+   "throwing the catalyst and the blaze ember into the fluid (behaviour from the quest text)"
+  ]
+ },
+ "portal_gun": {
+  "de": [
+   "Mit vollem Speicher hast du **100 Schüsse**: 100 000 FE, 1 000 FE pro Portal. Aufladen geht im {{dire_things/pocket_gen}}.",
+   "Für den [[justdirethings:blazejet_wand]] brauchst du nur einen Blazegold und zwei Ferricore-Barren."
+  ],
+  "en": [
+   "A full charge gives **100 shots**: 100 000 FE, 1 000 FE per portal. Charge it in the {{dire_things/pocket_gen}}.",
+   "The [[justdirethings:blazejet_wand]] takes just one blazegold and two ferricore ingots."
+  ],
+  "sources": [
+   "srv/config/justdirethings-server.toml (portal_gun_v1_rf_capacity 100000, portal_gun_v1_rf_cost 1000)",
+   "justdirethings:portalgun",
+   "justdirethings:blazejet_wand"
+  ]
+ },
+ "swapper": {
+  "de": [
+   "Für ein verbundenes Paar brauchst du zwei Tauscher, also 8 Blazegold, und einen Schraubenschlüssel aus 4 Ferricore. Die Quest zählt aber schon einen Tauscher und den Schlüssel.",
+   "Das Rezept ist das des Sensors, nur mit Blazegold statt Ferricore in den Ecken."
+  ],
+  "en": [
+   "A linked pair takes two swappers, so 8 blazegold, and a wrench from 4 ferricore. The quest already counts one swapper and the wrench.",
+   "The recipe is the sensor's with blazegold instead of ferricore in the corners."
+  ],
+  "sources": [
+   "justdirethings:blockswappert1",
+   "justdirethings:ferricore_wrench"
+  ]
+ },
+ "factory": {
+  "de": [
+   "Rechne mit 16 bis 22 Eisenblöcken für 64 Ferricore und 8 bis 11 Goldblöcken für 32 Blazegold, denn jeder Block gibt 3 bis 4. Die Quest prüft nur, ob du die Barren hast, und nimmt sie nicht.",
+   "Zwei Goos laufen nebeneinander am besten: Primogel mit Eisen, Blazebloom mit Gold. Der Klicker am Blazebloom braucht Netherwarze statt Zucker."
+  ],
+  "en": [
+   "Count on 16 to 22 iron blocks for 64 ferricore and 8 to 11 gold blocks for 32 blazegold, since each block gives 3 to 4. The quest only checks that you have the ingots and does not take them.",
+   "Two goos side by side work best: Primogel with iron, Blazebloom with gold. The clicker at the Blazebloom needs nether wart instead of sugar."
+  ],
+  "sources": [
+   "justdirethings-1.5.7.jar: data/justdirethings/loot_table/blocks/raw_ferricore_ore.json, raw_blazegold_ore.json (3 to 4)",
+   "config/ftbquests/quests/data.snbt (default_consume_items false)",
+   "justdirethings-1.5.7.jar: data/justdirethings/tags/item/goo_revive_tier_2.json"
+  ]
+ },
+ "outlook": {
+  "de": [
+   "Für das [[justdirethings:gooblock_tier3]] brauchst du ein Blazebloom Goo, Enderperlen, Endstein und Drachenatem ({{the_end/breath}}).",
+   "Celestigem braucht Diamantblöcke und 4 800 Ticks, also 4 Minuten statt 2."
+  ],
+  "en": [
+   "The [[justdirethings:gooblock_tier3]] takes a Blazebloom Goo, ender pearls, end stone and dragon's breath ({{the_end/breath}}).",
+   "Celestigem needs diamond blocks and 4 800 ticks, so 4 minutes instead of 2."
+  ],
+  "sources": [
+   "justdirethings:gooblock_tier3",
+   "justdirethings-1.5.7.jar: data/justdirethings/recipe/raw_celestigem_ore-goospread.json (4800, tier 3)"
+  ]
+ },
+ "hammer": {
+  "de": [
+   "Die zwei [[minecraft:diamond_pickaxe]] kosten 6 Diamanten. Der Hammer passt in die Blazegold-Spitzhacke, -Schaufel und -Hacke, nicht in Ferricore.",
+   "Zusammen mit {{dire_things/smelter}} baust du 3x3 ab und bekommst gleich die Barren."
+  ],
+  "en": [
+   "The two [[minecraft:diamond_pickaxe]] cost 6 diamonds. The hammer fits the blazegold pickaxe, shovel and hoe, not ferricore.",
+   "Together with {{dire_things/smelter}} you mine 3x3 and get the ingots right away."
+  ],
+  "sources": [
+   "justdirethings:upgrade_hammer",
+   "justdirethings:blazegold_pickaxe-hammer, blazegold_shovel-hammer, blazegold_hoe-hammer"
+  ]
+ },
+ "smelter": {
+  "de": [
+   "Die zwei [[minecraft:blast_furnace]] sind normale Schmelzöfen, dazu kommen zwei Lohenruten aus dem Nether.",
+   "Der Auto Smelter passt in die Blazegold-Spitzhacke, -Axt und -Schaufel, nicht in Ferricore-Werkzeug."
+  ],
+  "en": [
+   "The two [[minecraft:blast_furnace]] are plain blast furnaces, plus two blaze rods from the Nether.",
+   "The Auto Smelter fits the blazegold pickaxe, axe and shovel, not ferricore tools."
+  ],
+  "sources": [
+   "justdirethings:upgrade_smelter",
+   "justdirethings:blazegold_pickaxe-smelter, blazegold_axe-smelter, blazegold_shovel-smelter"
+  ]
+ },
+ "cauterize": {
+  "de": [
+   "Mach zuerst eine zweite Vorlage aus der ersten ({{dire_things/template}}), sonst brauchst du für das Schwert eine ganz neue. Die zwei [[minecraft:golden_apple]] sind normale Goldene Äpfel, nicht die verzauberten.",
+   "Cauterize Wounds passt in jedes Schwert ab Blazegold."
+  ],
+  "en": [
+   "Copy the template first ({{dire_things/template}}), or the sword needs a whole new one. The two [[minecraft:golden_apple]] are plain golden apples, not enchanted ones.",
+   "Cauterize Wounds fits every sword from blazegold up."
+  ],
+  "sources": [
+   "justdirethings:blazegold_sword-templateupgrade",
+   "justdirethings:template_blazegold-duplicate",
+   "justdirethings:upgrade_cauterizewounds",
+   "justdirethings:blazegold_sword-cauterizewounds"
+  ]
+ },
+ "totem": {
+  "de": [
+   "Das Rezept kostet 4 Blazegold, 2 Diamanten, 2 Lapis und eine Enderperle. Bau dir gleich zwei, denn es verbraucht sich.",
+   "Es hilft nur, wenn du es beim Sterben im Inventar hast."
+  ],
+  "en": [
+   "The recipe costs 4 blazegold, 2 diamonds, 2 lapis and an ender pearl. Make two, since it is used up.",
+   "It only helps if it is in your inventory when you die."
+  ],
+  "sources": [
+   "justdirethings:totem_of_death_recall (pattern bdb/lel/bdb)"
+  ],
+  "client": [
+   "the hold right click teleport and that the totem is consumed (quest text)"
+  ]
+ },
+ "creature_catcher": {
+  "de": [
+   "Das Rezept kostet 4 Blazegold und eine Enderperle.",
+   "Die Quest will nur einen leeren Catcher, du musst nichts einfangen."
+  ],
+  "en": [
+   "The recipe costs 4 blazegold and an ender pearl.",
+   "The quest only wants an empty catcher, you do not need to catch anything."
+  ],
+  "sources": [
+   "justdirethings:creaturecatcher"
+  ],
+  "client": [
+   "catching and releasing mobs, and filled catchers in machine filters (quest text)"
+  ]
+ },
+ "xp_holder": {
+  "de": [
+   "Das Rezept kostet 3 Blazegold, 2 Bücher, einen Smaragd und eine Enderperle.",
+   "Stell ihn neben deinen Zaubertisch, dann holst du dir vor jeder Verzauberung genau die Level, die du brauchst."
+  ],
+  "en": [
+   "The recipe costs 3 blazegold, 2 books, an emerald and an ender pearl.",
+   "Put it next to your enchanting table, then you take exactly the levels you need before each enchantment."
+  ],
+  "sources": [
+   "justdirethings:experienceholder (pattern ' d ', 'heh', 'fff')"
+  ],
+  "client": [
+   "the + and - buttons, the level hold and the XP fluid rate (quest text)"
+  ]
+ },
+ "settings_copier": {
+  "de": [
+   "Du brauchst ein [[justdirethings:coal_t1]], also erst {{dire_things/primal_coal}}. Dazu ein Ferricore-Barren und ein Papier.",
+   "Am meisten spart er bei {{dire_things/factory}}, wo mehrere Brecher, Setzer und Sensoren gleich eingestellt werden."
+  ],
+  "en": [
+   "It needs one [[justdirethings:coal_t1]], so do {{dire_things/primal_coal}} first. Add a ferricore ingot and a paper.",
+   "It saves the most at {{dire_things/factory}}, where several breakers, placers and sensors get the same settings."
+  ],
+  "sources": [
+   "justdirethings:machinesettingscopier (pattern '  c', ' p ', 'f  ')"
+  ],
+  "client": [
+   "sneak right click to copy, right click to paste, click in the air for the selection (quest text)"
+  ]
+ },
+ "fluid_placer": {
+  "de": [
+   "Im Rezept sitzt ein normaler [[minecraft:dropper]] in der Mitte, nicht der Werfer. Der [[justdirethings:fluid_canister]] fasst 8 000 mB, also acht Blöcke Flüssigkeit.",
+   "Zusammen mit dem Fluid Collector aus {{dire_things/fluid_gen}} läuft die Brennstoffkette ohne Eimer."
+  ],
+  "en": [
+   "The recipe has a plain [[minecraft:dropper]] in the middle, not the dispenser. The [[justdirethings:fluid_canister]] holds 8 000 mB, eight blocks of fluid.",
+   "Together with the fluid collector from {{dire_things/fluid_gen}} the fuel chain runs without buckets."
+  ],
+  "sources": [
+   "justdirethings:fluidplacert1 (o = minecraft:dropper)",
+   "justdirethings-1.5.7.jar: com/direwolf20/justdirethings/common/items/FluidCanister.class (sipush 8000)"
+  ]
+ },
+ "polymorph": {
+  "de": [
+   "Der Stab fasst laut Serverkonfiguration 2 000 mB Polymorphic Fluid und braucht 100 mB pro Verwandlung, voll reicht er also für **20 Mobs**.",
+   "Das Fluid machst du wie im ersten Schritt von {{dire_things/fluid_gen}}: ein Polymorphic Catalyst in eine Wasserquelle."
+  ],
+  "en": [
+   "Per the server config the wand holds 2 000 mB of Polymorphic Fluid and uses 100 mB per change, so a full wand does **20 mobs**.",
+   "Make the fluid as in the first step of {{dire_things/fluid_gen}}: a Polymorphic Catalyst into a water source."
+  ],
+  "sources": [
+   "srv/config/justdirethings-server.toml (polymorphic_wand_max_fluid 2000, polymorphic_wand_fluid_cost 100)",
+   "justdirethings:polymorphic_wand"
+  ],
+  "client": [
+   "how the wand is refilled with Polymorphic Fluid"
+  ]
+ }
+}

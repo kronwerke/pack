@@ -168,7 +168,7 @@ def main():
                     r["title"] = {"de": tbl.get("title", r["table"]), "en": tr(tbl.get("title", r["table"]))}
                     r["icon"] = tbl.get("icon")
                 rewards.append(r)
-            d = {"name": q["name"], "x": q["x"], "y": q["y"],
+            d = {"name": q["name"], "id": ftbq.qid("quest", ch["name"], q["name"]), "x": q["x"], "y": q["y"],
                  "title": {"de": q["title"], "en": tr(q["title"])},
                  "subtitle": {"de": q["subtitle"], "en": tr(q["subtitle"])} if q["subtitle"] else None,
                  "description": {"de": desc, "en": tr(desc)},

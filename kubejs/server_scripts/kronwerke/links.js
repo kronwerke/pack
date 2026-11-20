@@ -14,7 +14,21 @@ ServerEvents.recipes(event => {
   // Stage 2: generators and engines take the one circuit route of the pack.
   swap('justdirethings:generatort1', 'minecraft:blast_furnace', 'mekanism:basic_control_circuit')
   swap('createdieselgenerators:crafting/diesel_engine', 'minecraft:flint_and_steel', 'mekanism:basic_control_circuit')
-  swap('createaddition:mechanical_crafting/alternator', '#c:rods/iron', 'mekanism:basic_control_circuit')
+  // replaceInput does not reach Create's mechanical crafting, so the alternator is rebuilt
+  event.remove({ id: 'createaddition:mechanical_crafting/alternator' })
+  event.custom({
+    type: 'create:mechanical_crafting',
+    accept_mirrored: true,
+    category: 'misc',
+    key: {
+      A: { item: 'create:andesite_alloy' },
+      I: { tag: 'c:plates/iron' },
+      R: { item: 'mekanism:basic_control_circuit' },
+      S: { item: 'createaddition:copper_spool' }
+    },
+    pattern: ['  A  ', ' ISI ', 'ISRSI', ' ISI ', '  A  '],
+    result: { count: 1, id: 'createaddition:alternator' }
+  }).id('kronwerke:links/alternator')
   swap('hostilenetworks:deep_learner', '#c:glass_panes', 'create:electron_tube')
   // Stage 2: Create parts where the machine already is one.
   swap('productivebees:centrifuge', 'minecraft:grindstone', 'create:millstone')

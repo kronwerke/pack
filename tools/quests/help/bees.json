@@ -1,0 +1,665 @@
+{
+ "hive": {
+  "de": [
+   "Für die Mitte des Rezepts brauchst du einen gebauten [[minecraft:beehive]] (sechs Bretter, drei Honigwaben). Ein wildes Bienennest passt nicht: Der Platz nimmt nur Bienenstöcke an.",
+   "Ressourcenwaben bringen erst in der Zentrifuge etwas ({{bees/centrifuge}}). Mit einer Erweiterungsbox ({{bees/expansion}}) wohnen fünf statt drei Bienen im Stock."
+  ],
+  "en": [
+   "The middle of the recipe needs a crafted [[minecraft:beehive]] (six planks, three honeycombs). A wild bee nest does not fit: the slot only takes beehives.",
+   "Resource combs are only worth something in the centrifuge ({{bees/centrifuge}}). An expansion box ({{bees/expansion}}) raises the hive from three to five bees."
+  ],
+  "sources": [
+   "productivebees:hives/advanced_oak_beehive (#c:hives)",
+   "/home/claude/kw/srv/mods/productivebees-1.21.1-13.14.0.jar data/c/tags/item/hives.json (only beehives, no bee_nest)",
+   "minecraft:beehive"
+  ]
+ },
+ "cage": {
+  "de": [
+   "In größerer Menge ist das zweite Rezept billiger: zwei Stämme mit einem [[minecraft:honey_block]] dazwischen ergeben **16 Käfige**.",
+   "Bienen im Käfig legst du später auch in die Zuchtkammer ({{bees/breeding_chamber}}) und den Inkubator, und der Fänger ({{bees/catcher}}) füllt leere Käfige von selbst."
+  ],
+  "en": [
+   "For larger amounts the second recipe is cheaper: two logs with a [[minecraft:honey_block]] between them make **16 cages**.",
+   "Caged bees also go into the breeding chamber ({{bees/breeding_chamber}}) and the incubator later, and the catcher ({{bees/catcher}}) fills empty cages on its own."
+  ],
+  "sources": [
+   "productivebees:bee_cage_block",
+   "productivebees:bee_cage"
+  ]
+ },
+ "nests": {
+  "de": [
+   "Für {{bees/breeding}} brauchst du eine Yellow und eine Green Carpenter Bee. In Eichen-, Birken- und Schwarzeichennester ziehen beide ein, ins Fichtennest nur die gelbe, ins Dschungelnest nur die grüne.",
+   "Holznester locken ihre Biene nur in der Oberwelt an. Welche Biene in welches Nest zieht und womit du sie lockst, zeigt EMI am Nest. Gesucht wird mit dem Nestfinder ({{bees/nest_locator}})."
+  ],
+  "en": [
+   "For {{bees/breeding}} you need a Yellow and a Green Carpenter Bee. Oak, birch and dark oak nests attract both, a spruce nest only the yellow one, a jungle nest only the green one.",
+   "Wood nests only attract their bee in the Overworld. EMI shows on the nest which bee moves in and what lures it. The nest locator ({{bees/nest_locator}}) finds wild ones."
+  ],
+  "sources": [
+   "productivebees:bee_spawning/green_carpenter_*_wood_nest",
+   "productivebees:bee_spawning/yellow_black_carpenter_*_wood_nest (biomes #c:is_overworld)",
+   "srv/config/productivebees-server.toml (nestSpawnCooldown 24000)"
+  ]
+ },
+ "treat": {
+  "de": [
+   "Später machst du Treats ohne Werkbank: Der Abfüller ({{bees/bottler}}) füllt 250 mB Honig in eine Honigwabe und gibt einen [[productivebees:honey_treat]].",
+   "Treats brauchst du ständig: für neue Bienen im Nest, die Upgrade-Basis, den Treat on a Stick ({{bees/bumble}}) und als Träger für Gene ({{bees/gene_treat}})."
+  ],
+  "en": [
+   "Later you make treats without a crafting table: the bottler ({{bees/bottler}}) fills 250 mB of honey into a honeycomb and gives a [[productivebees:honey_treat]].",
+   "You need treats all the time: for new bees in nests, the upgrade base, the treat on a stick ({{bees/bumble}}) and as the carrier for genes ({{bees/gene_treat}})."
+  ],
+  "sources": [
+   "productivebees:bottler/honey_treat",
+   "productivebees:honey_treat_from_block",
+   "productivelib:upgrades/base_pb",
+   "productivebees:treat_on_a_stick"
+  ]
+ },
+ "expansion": {
+  "de": [
+   "Upgrades setzt du mit Schleich-Rechtsklick auf den Stock ein oder legst sie in seinem Fenster in die Plätze. Was ein Upgrade genau macht, zeigt sein Tooltip, wenn du Umschalt gedrückt hältst.",
+   "Weiter geht es mit {{bees/upgrades}}."
+  ],
+  "en": [
+   "Install upgrades by sneak right clicking the hive or by putting them into the slots in its screen. Hold Shift over an upgrade to see exactly what it does.",
+   "Next up is {{bees/upgrades}}."
+  ],
+  "sources": [
+   "productivebees:expansion_boxes/expansion_box_oak",
+   "/home/claude/kw/srv/mods/productivebees-1.21.1-13.14.0.jar META-INF/jarjar/productivelib-1.21.1-0.2.0.jar assets/productivelib/lang/en_us.json (install_help, extend)"
+  ]
+ },
+ "upgrades": {
+  "de": [
+   "In EMI heißen die Upgrades englisch: Upgrade: Speed ist das Zeit-Upgrade, dazu Upgrade: Filter, Upgrade: Range, Upgrade: BaBee und Upgrade: Simulator. Für die Basis brauchst du einen [[minecraft:diamond]] und drei [[minecraft:emerald]].",
+   "Das Zeit-Upgrade hat ein zweites Rezept von Productive Metalworks: vier Uhren und vier Schamottsteine in den Ecken statt der Honigwabenblöcke ({{bees/foundry}})."
+  ],
+  "en": [
+   "EMI lists the upgrades as Upgrade: Speed (the time upgrade), Upgrade: Filter, Upgrade: Range, Upgrade: BaBee and Upgrade: Simulator. The base needs a [[minecraft:diamond]] and three [[minecraft:emerald]].",
+   "The time upgrade has a second recipe from Productive Metalworks: four clocks with four fire bricks in the corners instead of honeycomb blocks ({{bees/foundry}})."
+  ],
+  "sources": [
+   "productivelib:upgrades/base_pb",
+   "productivemetalworks:crafting/upgrade_time",
+   "productivelib:upgrades/time",
+   "productivelib lang en_us.json (upgrade names)"
+  ]
+ },
+ "nether_bees": {
+  "de": [
+   "Der Nether öffnet in Stufe 2. Netherziegelnester findest du an Netherfestungen ({{nether/fortress}}), Quarznester ortet der Nestfinder ({{bees/nest_locator}}).",
+   "Ein Quarznest geht auch aus Eisenschwert und Quarz in Netherrack. Gebaute Nester locken ihre Biene nur im Nether an, in der Oberwelt passiert mit Netherquarz nichts."
+  ],
+  "en": [
+   "The Nether opens in stage 2. Nether brick nests sit at Nether fortresses ({{nether/fortress}}), the nest locator ({{bees/nest_locator}}) finds quartz nests.",
+   "A quartz nest can also be crafted from an iron sword and quartz in netherrack. Crafted nests only attract their bee in the Nether; in the Overworld nether quartz does nothing."
+  ],
+  "sources": [
+   "productivebees:nests/nether_quartz_nest_quartz_netherrack",
+   "productivebees:bee_spawning/crystalline_nether_quartz_nest (biomes #minecraft:is_nether)",
+   "productivebees:bee_spawning/magmatic_nether_brick_nest",
+   "docs/STAGES.md (stage 2: the Nether)"
+  ]
+ },
+ "centrifuge": {
+  "de": [
+   "Es gibt ein zweites, billigeres Rezept: ein [[minecraft:grindstone]] über einem [[minecraft:cauldron]], ganz ohne Mahlstein und Eisen.",
+   "Ressourcenwaben geben ihren Rohstoff nur mit einer Chance, Eisenwaben zum Beispiel mit 40 Prozent ein Roheisen. Für Tempo kommt die {{bees/powered}}, für den Honig der {{bees/bottler}}."
+  ],
+  "en": [
+   "There is a second, cheaper recipe: a [[minecraft:grindstone]] on top of a [[minecraft:cauldron]], no millstone and no iron needed.",
+   "Resource combs only give their material with a chance, iron combs for example one raw iron at 40 percent. For speed build the {{bees/powered}}, for the honey the {{bees/bottler}}."
+  ],
+  "sources": [
+   "productivebees:centrifuge_cauldron",
+   "productivebees:centrifuge (kubejs/server_scripts/kronwerke/links.js: millstone)",
+   "productivebees:centrifuge/raw_materials/honeycomb_iron",
+   "srv/config/productivebees-server.toml (centrifugeProcessingTime 300, centrifugeHopperMode)"
+  ]
+ },
+ "powered": {
+  "de": [
+   "Den [[mekanism:basic_control_circuit]] machst du in der Metallurgischen Infusionsanlage ({{mekanism/circuit}}).",
+   "Bei 10 FE/t betreibt ein Honiggenerator ({{bees/honey_generator}}) mit 60 FE/t bis zu sechs Stromzentrifugen."
+  ],
+  "en": [
+   "The [[mekanism:basic_control_circuit]] comes from the Metallurgic Infuser ({{mekanism/circuit}}).",
+   "At 10 FE/t one honey generator ({{bees/honey_generator}}) with its 60 FE/t runs up to six powered centrifuges."
+  ],
+  "sources": [
+   "productivebees:powered_centrifuge/mekanism",
+   "srv/config/productivebees-server.toml (centrifugePowerUse 10, centrifugePoweredProcessingTime 100, generatorPowerGen 60)"
+  ]
+ },
+ "bottler": {
+  "de": [
+   "Der Abfüller füllt nicht nur Honig: Je 250 mB machen aus einer Glasflasche auch eine Wasser- oder Milchflasche und aus flüssiger Erfahrung eine [[minecraft:experience_bottle]].",
+   "Du brauchst ihn außerdem, um Gene zu gewinnen ({{bees/genes}}), und Honigeimer für den Honiggenerator ({{bees/honey_generator}})."
+  ],
+  "en": [
+   "The bottler fills more than honey: 250 mB each turn a glass bottle into a water or milk bottle, and liquid experience into a [[minecraft:experience_bottle]].",
+   "You also need it to get genes ({{bees/genes}}), and honey buckets for the honey generator ({{bees/honey_generator}})."
+  ],
+  "sources": [
+   "productivebees:bottler/honey_bottle",
+   "productivebees:bottler/water_bottle",
+   "productivebees:bottler/milk_bottle",
+   "productivebees:bottler/experience_bottle",
+   "productivebees:honey_bucket"
+  ]
+ },
+ "genes": {
+  "de": [
+   "Nimm zum Quetschen eine Biene, von der du Ersatz hast, sie ist danach weg. Das Typ-Gen hat hier im Schnitt 33 Prozent Reinheit.",
+   "Das Typ-Gen brauchst du für den Inkubator ({{bees/incubator}}), die Eigenschaftsgene für {{bees/gene_treat}}."
+  ],
+  "en": [
+   "Squash a bee you have a spare of, it is gone afterwards. The type gene comes out at 33 percent purity on average.",
+   "The type gene goes into the incubator ({{bees/incubator}}), the trait genes into {{bees/gene_treat}}."
+  ],
+  "sources": [
+   "srv/config/productivebees-server.toml (typeGenePurity 33, geneExtractChance 1.0, samplerChance 0.05)",
+   "productivelib:upgrades/gene_sampler"
+  ],
+  "client": [
+   "Bottler with piston above squashes a bee into Squashed Bee Material; the centrifuge turns it into gene samples (hard coded, not in the recipe dump)"
+  ]
+ },
+ "gene_treat": {
+  "de": [
+   "Den Haken setzt du selbst, sobald eine Biene ein Gen übernommen hat. Der {{bees/gene_indexer}} nimmt dir das Zusammenlegen gleicher Proben ab.",
+   "Eigenschaften lohnen sich bei Bienen, die lange im Stock bleiben, etwa der Stahlbiene ({{bees/c_steel}}). Für den Inkubator zählt dagegen nur das Typ-Gen."
+  ],
+  "en": [
+   "You tick the box yourself once a bee has taken a gene. The {{bees/gene_indexer}} merges matching samples for you.",
+   "Traits pay off on bees that stay in a hive for a long time, such as the steel bee ({{bees/c_steel}}). For the incubator only the type gene counts."
+  ],
+  "sources": [
+   "productivebees:honey_treat_gene",
+   "productivebees:gene_gene",
+   "srv/config/productivebees-server.toml (toleranceChance 0.1, behaviorChance 0.1)"
+  ],
+  "client": [
+   "Treat purity shown in the tooltip and the chance a bee takes the trait"
+  ]
+ },
+ "incubator": {
+  "de": [
+   "Am meisten lohnt sich das Typ-Gen der Eisenbiene: Ihr Ei ist der Anfang von {{bees/c_manasteel}}, {{bees/c_infused_iron}} und {{bees/c_steel}}. Dazu brauchst du ein normales [[minecraft:egg]] von Hühnern.",
+   "Der Inkubator braucht 10 FE/t, die Leistung eines Honiggenerators ({{bees/honey_generator}}) reicht dafür locker."
+  ],
+  "en": [
+   "The iron bee's type gene is worth the most: its egg starts {{bees/c_manasteel}}, {{bees/c_infused_iron}} and {{bees/c_steel}}. You also need a plain [[minecraft:egg]] from chickens.",
+   "The incubator draws 10 FE/t, the output of one honey generator ({{bees/honey_generator}}) covers that easily."
+  ],
+  "sources": [
+   "productivebees:incubator",
+   "srv/config/productivebees-server.toml (incubatorProcessingTime 3600, incubatorPowerUse 10, incubatorTreatUse 20)",
+   "productivebees:botania/manasteel_bee",
+   "productivebees:naturesaura/altar/infused_iron_bee",
+   "productivemetalworks:casting/pbees/steel_bee_from_iron"
+  ]
+ },
+ "breeding": {
+  "de": [
+   "Die Eltern überleben jede Zucht. Ein Paar kann aber mehrere Kinder haben: Aus Crystalline Bee und Ashy Mining Bee wird eine Eisen-, Kupfer-, Zinn- oder Aluminiumbiene, aus Eisenbiene und Sweat Bee eine Zink- oder Nickelbiene.",
+   "EMI zeigt unter Bee Breeding alle Kinder eines Paars. Rechne bei solchen Paaren mit mehreren Versuchen."
+  ],
+  "en": [
+   "Parents survive every breeding. One pair can have several offspring though: Crystalline Bee and Ashy Mining Bee give an iron, copper, tin or aluminum bee, iron bee and Sweat Bee a zinc or nickel bee.",
+   "EMI shows every child of a pair under Bee Breeding. Expect several tries for such pairs."
+  ],
+  "sources": [
+   "productivebees:bee_breeding/lumber_bee",
+   "productivebees:bee_breeding/raw_materials/iron_bee, copper_bee, tin_bee, aluminium_bee",
+   "productivebees:bee_breeding/raw_materials/zinc_bee, nickel_bee",
+   "parentDeathChance 0.0 in all bee_breeding recipes"
+  ],
+  "client": [
+   "Which child is picked when one pair has several bee_breeding recipes (assumed random)"
+  ]
+ },
+ "feeder": {
+  "de": [
+   "Als Blume zählt für eine Biene alles aus ihrer Blumenliste: Die Eisenbiene nimmt zum Beispiel auch einen Kessel, einen Amboss oder eine Eisentür, die Kupferbiene einen Blitzableiter. EMI zeigt die Liste bei jeder Biene.",
+   "So stellst du vor einem Simulator-Stock ({{bees/simulator}}) mit einer Platte drei Metallbienen gleichzeitig zufrieden."
+  ],
+  "en": [
+   "For a bee, anything in its flower list counts: the iron bee also takes a cauldron, an anvil or an iron door, the copper bee a lightning rod. EMI shows the list for every bee.",
+   "That way one slab in front of a simulator hive ({{bees/simulator}}) keeps three metal bees happy."
+  ],
+  "sources": [
+   "productivebees:feeder",
+   "/home/claude/kw/srv/mods/productivebees-1.21.1-13.14.0.jar data/productivebees/tags/block/flowers/ferric.json, cupric.json"
+  ]
+ },
+ "breeding_chamber": {
+  "de": [
+   "Den [[minecraft:rose_bush]] oben findest du wild in Wäldern, Knochenmehl auf einem Rosenstrauch gibt einen zweiten. Das BaBee-Upgrade in der Mitte ist die Upgrade-Basis mit vier Blumen und vier Honigwabenblöcken.",
+   "Mit 50 FE/t ist die Kammer der größte Verbraucher im Bienenhaus, die Leistung eines Honiggenerators ({{bees/honey_generator}}) reicht trotzdem."
+  ],
+  "en": [
+   "The [[minecraft:rose_bush]] on top grows wild in forests, bone meal on a rose bush gives you another. The BaBee upgrade in the middle is the upgrade base with four flowers and four honeycomb blocks.",
+   "At 50 FE/t the chamber is the biggest consumer of the apiary, but the output of one honey generator ({{bees/honey_generator}}) still covers it."
+  ],
+  "sources": [
+   "productivebees:breeding_chamber",
+   "productivelib:upgrades/child",
+   "srv/config/productivebees-server.toml (breedingChamberProcessingTime 6000, breedingChamberPowerUse 50)"
+  ]
+ },
+ "c_crystalline": {
+  "de": [
+   "Halte zwei oder drei davon: Die Crystalline Bee ist Elternteil von Eisen-, Kupfer-, Gold-, Zinn- und Aluminiumbiene, mit der Eisenbiene von Quarz-angereichertem Eisen und mit der Neon Cuckoo Bee von der Menrilbiene.",
+   "Den Haken setzt du selbst, sobald sie im Stock wohnt."
+  ],
+  "en": [
+   "Keep two or three: the Crystalline Bee is a parent of the iron, copper, gold, tin and aluminum bees, with the iron bee of quartz enriched iron and with the Neon Cuckoo Bee of the menril bee.",
+   "You tick the box yourself once it lives in a hive."
+  ],
+  "sources": [
+   "productivebees:bee_breeding/raw_materials/*",
+   "productivebees:bee_breeding/refinedstorage/quartz_enriched_iron_bee",
+   "productivebees:bee_breeding/integrateddynamics/menril_bee",
+   "productivebees:centrifuge/gems/honeycomb_quartz"
+  ]
+ },
+ "c_iron": {
+  "de": [
+   "Dasselbe Paar gibt auch Kupfer-, Zinn- und Aluminiumbienen, plan mehrere Versuche ein. Als Blume nimmt die Eisenbiene auch einen Kessel, einen Amboss, eine Eisentür oder einen Rohen Eisenblock.",
+   "Weitere Partner: Sweat Bee (Zink, Nickel), Neon Cuckoo Bee (Osmium), Blue Banded Bee (Blei), Mason Bee (Silber). Ihr Ei brauchst du für {{bees/c_steel}} und die Magiebienen."
+  ],
+  "en": [
+   "The same pair also gives copper, tin and aluminum bees, plan for several tries. As a flower the iron bee also takes a cauldron, an anvil, an iron door or a block of raw iron.",
+   "Other partners: Sweat Bee (zinc, nickel), Neon Cuckoo Bee (osmium), Blue Banded Bee (lead), Mason Bee (silver). Its egg is needed for {{bees/c_steel}} and the magic bees."
+  ],
+  "sources": [
+   "productivebees:bee_breeding/raw_materials/iron_bee",
+   "productivebees:bee_breeding/raw_materials/lead_bee, silver_bee, zinc_bee, nickel_bee, osmium_bee",
+   "/home/claude/kw/srv/mods/productivebees-1.21.1-13.14.0.jar data/productivebees/tags/block/flowers/ferric.json"
+  ]
+ },
+ "c_copper": {
+  "de": [
+   "Das Ei der Kupferbiene brauchst du in der Gießerei: Mit flüssiger Bronze wird es zur Bronzebiene, mit Konstantan zur Konstantanbiene ({{bees/alloy_bees}}). Als Blume zählt auch ein Blitzableiter."
+  ],
+  "en": [
+   "The copper bee's egg is used in the foundry: with molten bronze it turns into a bronze bee, with constantan into a constantan bee ({{bees/alloy_bees}}). A lightning rod also counts as its flower."
+  ],
+  "sources": [
+   "productivemetalworks:casting/pbees/bronze_bee_from_copper",
+   "productivemetalworks:casting/pbees/constantan_bee_from_copper",
+   "/home/claude/kw/srv/mods/productivebees-1.21.1-13.14.0.jar data/productivebees/tags/block/flowers/cupric.json"
+  ]
+ },
+ "c_gold": {
+  "de": [
+   "Das Ei der Goldbiene wird am Natural Altar für 3 000 Aura zur Tainted-Gold-Biene und in der Gießerei mit Elektrum zur Elektrumbiene ({{bees/alloy_bees}}).",
+   "Als Blume zählt auch eine leichte Wägeplatte aus Gold."
+  ],
+  "en": [
+   "The gold bee's egg turns into a tainted gold bee on the Natural Altar for 3,000 aura, and into an electrum bee with molten electrum in the foundry ({{bees/alloy_bees}}).",
+   "A light weighted pressure plate also counts as its flower."
+  ],
+  "sources": [
+   "productivebees:bee_breeding/raw_materials/gold_bee",
+   "productivebees:bee_spawning/gold_nether_gold_nest",
+   "productivebees:naturesaura/altar/tainted_gold_bee",
+   "productivemetalworks:casting/pbees/electrum_bee_from_gold",
+   "/home/claude/kw/srv/mods/productivebees-1.21.1-13.14.0.jar data/productivebees/tags/block/flowers/gilded.json"
+  ]
+ },
+ "c_zinc": {
+  "de": [
+   "Rohzink lohnt sich auf Kronwerke besonders: Messing ist das Massenziel von Stufe 2. Zwei Kupfer, ein Zink und ein Lohenstaub ergeben im beheizten Mixer einen [[create:brass_ingot]] ({{create_brass/brass_mixing}}).",
+   "Dasselbe Paar gibt auch die Nickelbiene. Als Blume nimmt die Zinkbiene nur einen [[create:zinc_block]]."
+  ],
+  "en": [
+   "Raw zinc is especially useful on Kronwerke: brass is the bulk goal of stage 2. Two copper, one zinc and one blaze powder make a [[create:brass_ingot]] in a heated mixer ({{create_brass/brass_mixing}}).",
+   "The same pair also gives the nickel bee. As a flower the zinc bee only takes a [[create:zinc_block]]."
+  ],
+  "sources": [
+   "productivebees:bee_breeding/raw_materials/zinc_bee",
+   "config/kronwerke/goals.json (stage2 create:brass_ingot 2000)",
+   "kubejs/server_scripts/kronwerke/create.js (kronwerke:create/brass_ingot_heated)",
+   "/home/claude/kw/srv/mods/productivebees-1.21.1-13.14.0.jar data/productivebees/productivebees/raw_materials/zinc.json"
+  ]
+ },
+ "c_osmium": {
+  "de": [
+   "Die Neon Cuckoo Bee findest du nur in Nestern der Blue Banded Bee, also in Akazie, Kirsche und Schwarzeiche. Osmium brauchst du in Mekanism für fast jede Maschine.",
+   "Mit der Obsidianbiene wird die Osmiumbiene später zur Biene für Raffiniertes Obsidian ({{bees/outlook}})."
+  ],
+  "en": [
+   "The Neon Cuckoo Bee only turns up in nests of the Blue Banded Bee, so in acacia, cherry and dark oak. Mekanism needs osmium for almost every machine.",
+   "Paired with the obsidian bee, the osmium bee later gives the refined obsidian bee ({{bees/outlook}})."
+  ],
+  "sources": [
+   "productivebees:bee_breeding/raw_materials/osmium_bee",
+   "productivebees:bee_breeding/mekanism/refined_obsidian_bee",
+   "productivebees:bee_breeding/mekanism/refined_glowstone_bee"
+  ]
+ },
+ "c_steel": {
+  "de": [
+   "Die 810 mB Stahl legierst du in der Gießerei: 90 mB Eisen und 100 mB Kohlenstoff werden zu 90 mB Stahl. Neun Eisenbarren und neun Kohle reichen also für eine Stahlbiene.",
+   "Neun [[mekanism:nugget_steel]] sind ein Barren. Stahl zählt in Stufe 3 für das Ziel am Obelisken, dort sind 4 000 Barren gefragt."
+  ],
+  "en": [
+   "Alloy the 810 mB of steel in the foundry: 90 mB of iron and 100 mB of carbon make 90 mB of steel. Nine iron ingots and nine coal are enough for one steel bee.",
+   "Nine [[mekanism:nugget_steel]] make an ingot. Steel counts for the obelisk goal in stage 3, which asks for 4,000 ingots."
+  ],
+  "sources": [
+   "productivemetalworks:casting/pbees/steel_bee_from_iron",
+   "productivemetalworks:casting/pbees/steel_bee_from_coal",
+   "productivemetalworks:alloying/molten_steel",
+   "productivemetalworks:melting/coals",
+   "productivebees:centrifuge/alloys/honeycomb_steel",
+   "config/kronwerke/goals.json (stage3 #c:ingots/steel 4000)"
+  ]
+ },
+ "c_glowing": {
+  "de": [
+   "Die Glowing Bee ist Elternteil der Redstonebiene ({{bees/c_redstone}}) und, zusammen mit der Osmiumbiene, der Biene für Raffiniertes Glowstone. Wer ihr zu nah kommt, wird kurz geblendet."
+  ],
+  "en": [
+   "The Glowing Bee is a parent of the redstone bee ({{bees/c_redstone}}) and, together with the osmium bee, of the refined glowstone bee. Getting too close blinds you briefly."
+  ],
+  "sources": [
+   "productivebees:bee_spawning/glowing_glowstone_nest",
+   "productivebees:bee_breeding/dusts/redstone_bee",
+   "productivebees:bee_breeding/mekanism/refined_glowstone_bee",
+   "/home/claude/kw/srv/mods/productivebees-1.21.1-13.14.0.jar data/productivebees/productivebees/dusts/glowing.json (blinding)"
+  ]
+ },
+ "c_redstone": {
+  "de": [
+   "Die Chocolate Mining Bee wohnt in Nestern aus Grober Erde, Kies oder Sand. Die Redstonebiene führt weiter zur {{bees/c_lapis}}."
+  ],
+  "en": [
+   "The Chocolate Mining Bee lives in coarse dirt, gravel or sand nests. The redstone bee leads on to the {{bees/c_lapis}}."
+  ],
+  "sources": [
+   "productivebees:bee_breeding/dusts/redstone_bee",
+   "productivebees:bee_breeding/gems/lapis_bee",
+   "productivebees:centrifuge/dusts/honeycomb_redstone"
+  ]
+ },
+ "c_lapis": {
+  "de": [
+   "Heb dir eine Lapisbiene auf: Zusammen mit der Ender Bee aus dem End wird daraus in Stufe 4 die Diamantbiene ({{bees/outlook}})."
+  ],
+  "en": [
+   "Keep a lapis bee around: together with the Ender Bee from the End it gives the diamond bee in stage 4 ({{bees/outlook}})."
+  ],
+  "sources": [
+   "productivebees:bee_breeding/gems/lapis_bee",
+   "productivebees:bee_breeding/dye_bee",
+   "productivebees:bee_breeding/gems/diamond_bee"
+  ]
+ },
+ "c_magmatic": {
+  "de": [
+   "Wichtiger als ihre Waben ist die Magmatic Bee als Elternteil: mit der Leafcutter Bee die Kohlebiene ({{bees/c_coal}}), mit der Nomad Bee die BlazBee ({{bees/c_blazing}}), mit der Kohlebiene die Schwefelbiene.",
+   "Sie ist feuerfest und antwortet auf Angriffe mit Lava."
+  ],
+  "en": [
+   "The Magmatic Bee matters more as a parent than for its combs: with the Leafcutter Bee it gives the coal bee ({{bees/c_coal}}), with the Nomad Bee the BlazBee ({{bees/c_blazing}}), with the coal bee the sulfur bee.",
+   "It is fireproof and answers attacks with lava."
+  ],
+  "sources": [
+   "productivebees:bee_breeding/coal_bee",
+   "productivebees:bee_breeding/dusts/blazing_bee",
+   "productivebees:bee_breeding/dusts/sulfur_bee",
+   "productivebees:bee_conversion/fluids/lava_bee",
+   "/home/claude/kw/srv/mods/productivebees-1.21.1-13.14.0.jar data/productivebees/productivebees/magmatic.json (fireproof, attackResponse lava)"
+  ]
+ },
+ "c_coal": {
+  "de": [
+   "Das Ei der Kohlebiene geht wie das der Eisenbiene in den Gießtisch für die Stahlbiene ({{bees/c_steel}}). Ihre Kohle gibt in der Gießerei den Kohlenstoff für flüssigen Stahl, 100 mB pro Stück."
+  ],
+  "en": [
+   "Like the iron bee's egg, the coal bee's egg goes onto the casting table for the steel bee ({{bees/c_steel}}). Its coal gives the foundry the carbon for molten steel, 100 mB each."
+  ],
+  "sources": [
+   "productivebees:bee_breeding/coal_bee",
+   "productivemetalworks:casting/pbees/steel_bee_from_coal",
+   "productivemetalworks:melting/coals",
+   "productivebees:centrifuge/honeycomb_fossilised"
+  ]
+ },
+ "c_blazing": {
+  "de": [
+   "Presst du vier BlazBee-Waben zu einem Wabenblock, gibt der in der Zentrifuge mit 50 Prozent eine ganze [[minecraft:blaze_rod]].",
+   "Lohenstaub ist auf Kronwerke eine Zutat im Messingrezept: zwei Kupfer, ein Zink und ein Lohenstaub ergeben im beheizten Mixer einen Messingbarren."
+  ],
+  "en": [
+   "Pressed into a comb block, BlazBee combs give a whole [[minecraft:blaze_rod]] at 50 percent in the centrifuge.",
+   "On Kronwerke blaze powder is an ingredient of the brass recipe: two copper, one zinc and one blaze powder make one brass ingot in a heated mixer."
+  ],
+  "sources": [
+   "productivebees:bee_breeding/dusts/blazing_bee",
+   "productivebees:centrifuge/dusts/comb_blazing",
+   "productivebees:centrifuge/dusts/honeycomb_blazing",
+   "kubejs/server_scripts/kronwerke/create.js (kronwerke:create/brass_ingot_heated)"
+  ]
+ },
+ "c_manasteel": {
+  "de": [
+   "Weil Manastahlbienen sich nicht vermehren, brauchst du für jede ein eigenes Eisenbienen-Ei aus dem Inkubator ({{bees/incubator}}). Das Manabecken baust du in {{botania/pool}}.",
+   "Auf einem Zauberkatalysator wird ihr Ei im Becken für 25 000 Mana zur Elementiumbiene, das ist Stufe 3."
+  ],
+  "en": [
+   "Manasteel bees do not breed among themselves, so every one needs its own iron bee egg from the incubator ({{bees/incubator}}). The mana pool is built in {{botania/pool}}.",
+   "On a conjuration catalyst its egg turns into an elementium bee in the pool for 25,000 mana, which is stage 3."
+  ],
+  "sources": [
+   "productivebees:botania/manasteel_bee",
+   "productivebees:botania/elementium_bee (catalyst botania:conjuration_catalyst)",
+   "/home/claude/kw/srv/mods/productivebees-1.21.1-13.14.0.jar data/productivebees/productivebees/botania/manasteel.json (selfbreed false)",
+   "botania:conjuration_catalyst (stage 3)"
+  ]
+ },
+ "c_infused_iron": {
+  "de": [
+   "Den Natural Altar kennst du aus {{start_here/m_altar}}. Das Ei braucht dort 15 000 Aura, stell den Altar also in eine Gegend mit viel Aura.",
+   "Infused Iron brauchst du unter anderem für den Rahmen des Portals zur Farmwelt."
+  ],
+  "en": [
+   "You know the Natural Altar from {{start_here/m_altar}}. The egg needs 15,000 aura there, so place the altar where there is plenty of aura.",
+   "Infused iron is needed among other things for the frame of the farm world portal."
+  ],
+  "sources": [
+   "productivebees:naturesaura/altar/infused_iron_bee",
+   "productivebees:centrifuge/naturesaura/honeycomb_infused_iron",
+   "docs/STAGES.md (mining world portal: 4 infused iron)"
+  ]
+ },
+ "foundry": {
+  "de": [
+   "Schamott brennst du im Ofen oder schneller im [[minecraft:blast_furnace]]. Statt Schamottsteinblöcken gehen für die Wände auch Fenster aus Glas und Schamott.",
+   "Die Gießerei verdoppelt Erz ohne Strom: Ein Rohes Erz gibt 180 mB, zwei Barren ({{mekanism_ores/foundry}}). Gegossen wird in {{bees/casting}}."
+  ],
+  "en": [
+   "Fire clay bakes in a furnace or faster in a [[minecraft:blast_furnace]]. Instead of fire brick blocks the walls can also use windows made of glass and fire bricks.",
+   "The foundry doubles ore without power: one raw ore gives 180 mB, two ingots ({{mekanism_ores/foundry}}). Casting is in {{bees/casting}}."
+  ],
+  "sources": [
+   "productivemetalworks:smelting/fire_brick",
+   "productivemetalworks:blasting/fire_brick",
+   "productivemetalworks:crafting/black_foundry_window",
+   "productivemetalworks:melting/raw_materials/iron"
+  ]
+ },
+ "casting": {
+  "de": [
+   "Für die Barrenform brauchst du schon 360 mB flüssigen Stahl. Leg dafür einen Barren oder einen normalen [[minecraft:brick]] auf den Gießtisch.",
+   "Die Form bleibt beim Gießen liegen und hält ewig. Das Gießbecken gießt ohne Form ganze Blöcke."
+  ],
+  "en": [
+   "The ingot cast already needs 360 mB of molten steel. Put an ingot or a plain [[minecraft:brick]] on the casting table for it.",
+   "The cast stays on the table and lasts forever. The casting basin casts whole blocks without a cast."
+  ],
+  "sources": [
+   "productivemetalworks:casting/cast/ingot",
+   "productivemetalworks:casting/cast/ingot_brick",
+   "productivemetalworks:crafting/casting_table",
+   "productivemetalworks:crafting/foundry_tap",
+   "consume_cast false in metal casting recipes"
+  ]
+ },
+ "alloy_bees": {
+  "de": [
+   "Nicht jede Legierungsbiene aus der Quest lohnt sich hier. **Die Messingbiene gibt in der Zentrifuge nichts**, und eine Invarbiene gibt es im Pack nicht.",
+   "Bronze (Kupfer- oder Zinnbiene), Konstantan (Kupfer- oder Nickelbiene) und Elektrum (Gold- oder Silberbiene) funktionieren, je 4 bis 6 Klumpen pro Wabe. Das Ei wird beim Guss verbraucht."
+  ],
+  "en": [
+   "Not every alloy bee from the quest is worth it here. **The brass bee gives nothing in the centrifuge**, and there is no invar bee in the pack.",
+   "Bronze (copper or tin bee), constantan (copper or nickel bee) and electrum (gold or silver bee) work, 4 to 6 nuggets per comb. The egg is used up by the casting."
+  ],
+  "sources": [
+   "kubejs/server_scripts/kronwerke/added.js (removes productivebees:centrifuge/alloys/honeycomb_brass)",
+   "no productivemetalworks:casting/pbees/invar_* and no productivebees:centrifuge/alloys/honeycomb_invar in the recipe dump",
+   "productivebees:centrifuge/alloys/honeycomb_bronze, honeycomb_constantan, honeycomb_electrum",
+   "productivemetalworks:casting/pbees/* (consume_cast true)"
+  ]
+ },
+ "outlook": {
+  "de": [
+   "Zwei Korrekturen zum Questtext: Die Elementiumbiene entsteht nicht im Elfenportal, sondern im Manabecken auf einem Zauberkatalysator (25 000 Mana). Die Arkane Biene kommt von der Amethystbiene, aus ihrem Ei auf dem Verzauberungsapparat mit acht Quelljuwelen.",
+   "Die Diamantbiene ist Ender Bee und Lapisbiene ({{bees/c_lapis}})."
+  ],
+  "en": [
+   "Two corrections to the quest text: the elementium bee is not made in the Alfheim portal but in a mana pool on a conjuration catalyst (25,000 mana). The arcane bee comes from the amethyst bee, from its egg on the enchanting apparatus with eight source gems.",
+   "The diamond bee is Ender Bee plus lapis bee ({{bees/c_lapis}})."
+  ],
+  "sources": [
+   "productivebees:botania/elementium_bee (botania:mana_infusion, catalyst conjuration_catalyst)",
+   "productivebees:ars_nouveau/arcane_bee (reagent amethyst bee egg)",
+   "productivebees:bee_breeding/gems/diamond_bee"
+  ]
+ },
+ "nest_locator": {
+  "de": [
+   "Für Quarznester stimmst du den Finder mit Schleich-Rechtsklick auf einen Netherquarzerz-Block ein. Er sucht bis zu 100 Blöcke weit."
+  ],
+  "en": [
+   "For quartz nests, tune the locator with a sneak right click on a nether quartz ore block. It searches up to 100 blocks away."
+  ],
+  "sources": [
+   "productivebees:nest_locator",
+   "srv/config/productivebees-server.toml (nestLocatorDistance 100)"
+  ],
+  "client": [
+   "Tuning by sneak right click on a nest material block"
+  ]
+ },
+ "bee_helmet": {
+  "de": [
+   "Den [[minecraft:bee_nest]] für das Rezept musst du mit Behutsamkeit abbauen, sonst bleibt nichts übrig. Der Diamanthelm wird dabei verbraucht."
+  ],
+  "en": [
+   "Mine the [[minecraft:bee_nest]] for the recipe with Silk Touch, otherwise nothing drops. The diamond helmet is used up."
+  ],
+  "sources": [
+   "productivebees:bee_nest_helmet",
+   "srv/config/productivebees-server.toml (kamikazBeeChance 0.3)"
+  ]
+ },
+ "bumble": {
+  "de": [
+   "Ein Bumble-Bee-Nest baust du aus einem Holzschwert und einem Grasblock. Mit einem Honey Treat gelockt zieht die Bumble Bee aber nur in einem Ebenen-Biom ein.",
+   "Den Sattel bekommst du als Belohnung dieser Quest."
+  ],
+  "en": [
+   "A bumble bee nest is crafted from a wooden sword and a grass block. Lured with a honey treat, the Bumble Bee only moves in within a plains biome.",
+   "The saddle is this quest's reward."
+  ],
+  "sources": [
+   "productivebees:nests/bumble_bee_nest",
+   "productivebees:bee_spawning/bumble_bee_bumble_bee_nest (biomes #c:is_plains)",
+   "productivebees:treat_on_a_stick_renew"
+  ]
+ },
+ "time_upgrade": {
+  "de": [
+   "Das zweite Rezept spart Honigwabenblöcke: vier Uhren und vier Schamottsteine aus der Gießerei ({{bees/foundry}}). Jedes Upgrade kürzt den Aufenthalt um 15 Prozent.",
+   "In EMI heißt es Upgrade: Speed. Das stärkere Upgrade: Speedier braucht vier davon, zwei Nethersterne und zwei Herzen des Meeres."
+  ],
+  "en": [
+   "The second recipe saves honeycomb blocks: four clocks and four fire bricks from the foundry ({{bees/foundry}}). Each upgrade cuts the stay by 15 percent.",
+   "EMI calls it Upgrade: Speed. The stronger Upgrade: Speedier takes four of them, two nether stars and two hearts of the sea."
+  ],
+  "sources": [
+   "productivemetalworks:crafting/upgrade_time",
+   "productivelib:upgrades/time",
+   "productivelib:upgrades/time_2_bees",
+   "srv/config/productivebees-server.toml (timeBonus 0.15)"
+  ]
+ },
+ "simulator": {
+  "de": [
+   "Für beide Upgrades zusammen brauchst du fünf [[minecraft:ender_pearl]] und drei [[minecraft:blaze_rod]], dazu eine Upgrade-Basis. Lohenruten gibt es erst mit dem Nether in Stufe 2.",
+   "Die Blumen stellst du am einfachsten als Futterplatte ({{bees/feeder}}) unter den Eingang."
+  ],
+  "en": [
+   "Both upgrades together take five [[minecraft:ender_pearl]] and three [[minecraft:blaze_rod]], plus one upgrade base. Blaze rods only come with the Nether in stage 2.",
+   "The easiest flower is a feeding slab ({{bees/feeder}}) under the entrance."
+  ],
+  "sources": [
+   "productivelib:upgrades/anti_teleport",
+   "productivelib:upgrades/simulator",
+   "srv/config/productivebees-server.toml (allowBeeSimulation true)"
+  ]
+ },
+ "honey_generator": {
+  "de": [
+   "Ein Eimer Honig reicht für 30 000 FE, also rund 25 Sekunden Volllast. Eine Wabe gibt in der Zentrifuge 100 mB Honig, unter Volllast frisst der Generator also alle 2,5 Sekunden eine Wabe.",
+   "Für Dauerbetrieb brauchst du deshalb viele Stöcke. Den Honig holt er sich selbst aus dem Tank einer Zentrifuge direkt daneben."
+  ],
+  "en": [
+   "One bucket of honey is 30,000 FE, about 25 seconds at full load. A comb gives 100 mB of honey in the centrifuge, so at full load the generator eats one comb every 2.5 seconds.",
+   "Running it all the time therefore takes many hives. It draws honey by itself from the tank of a centrifuge right next to it."
+  ],
+  "sources": [
+   "productivebees:honey_generator",
+   "srv/config/productivebees-server.toml (generatorPowerGen 60, generatorHoneyUse 2, centrifugeFluidSharing true)",
+   "productivebees:centrifuge/raw_materials/honeycomb_iron (honey 100)"
+  ],
+  "client": [
+   "Honey flows from the centrifuge tank into an adjacent honey generator"
+  ]
+ },
+ "gene_indexer": {
+  "de": [
+   "Den Indexer stellst du am besten neben die Zentrifuge, in die du die Genflaschen wirfst, und lässt die Proben per Trichter hineinlaufen. Mehr zu Genen in {{bees/gene_treat}}."
+  ],
+  "en": [
+   "Put the indexer next to the centrifuge that takes your gene bottles and let the samples run in through a hopper. More on genes in {{bees/gene_treat}}."
+  ],
+  "sources": [
+   "productivebees:gene_indexer"
+  ],
+  "client": [
+   "Gene indexer accepts samples from a hopper and merges them on a redstone signal"
+  ]
+ },
+ "catcher": {
+  "de": [
+   "Upgrade: AdultBee machst du aus einem Upgrade: BaBee in der Werkbank und wieder zurück, du brauchst also nur eins von beiden zu bauen."
+  ],
+  "en": [
+   "Upgrade: AdultBee is crafted from an Upgrade: BaBee in the crafting grid and back again, so you only need to build one of them."
+  ],
+  "sources": [
+   "productivebees:catcher",
+   "productivelib:upgrades/adult",
+   "productivelib:upgrades/adult_to_child"
+  ]
+ }
+}

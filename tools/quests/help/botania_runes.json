@@ -1,0 +1,1019 @@
+{
+ "welcome": {
+  "de": [
+   "Sobald Stufe 2 offen ist, bekommt jeder Spieler einmal das Startpaket: 16 [[create:brass_ingot]], einen [[create:blaze_burner]], ein [[ars_nouveau:source_jar]] und 8 [[botania:mana_pearl]]. Wer erst später einloggt, bekommt es beim nächsten Login.",
+   "Die 600 Perlen und 50 Terrastahlbarren des Ziels sind Grundwerte für 30 aktive Spieler und werden beim Öffnen der Stufe skaliert, nur die 8 Runenkerne bleiben fest ({{start_here/o_scale}})."
+  ],
+  "en": [
+   "As soon as stage 2 is open, every player gets the starter kit once: 16 [[create:brass_ingot]], a [[create:blaze_burner]], a [[ars_nouveau:source_jar]] and 8 [[botania:mana_pearl]]. Whoever logs in later gets it on the next login.",
+   "The goal's 600 pearls and 50 terrasteel ingots are base values for 30 active players and are scaled when the stage opens; only the 8 rune cores stay fixed ({{start_here/o_scale}})."
+  ],
+  "sources": [
+   "config/kronwerke/goals.json (stage1 starterKit, stage2 pillars, scale, fixed)",
+   "core: src/main/java/de/kronwerke/core/goal/GoalManager.java (reveal, onPlayerJoin, giveKits)"
+  ]
+ },
+ "ritual": {
+  "de": [
+   "Jede Zutat liegt einzeln auf einem [[naturesaura:wood_stand]], das ist ein [[naturesaura:gold_leaf]] auf einem beliebigen Stamm. Das [[naturesaura:infused_iron]] kommt vom Natural Altar ({{start_here/m_infused}}), den [[botania:mana_diamond]] infundierst du für 10 000 Mana aus einem Diamanten ({{botania/mana_diamond}}).",
+   "Billiger ist das Becken: Dort kostet ein Barren nur ein Infused Iron und 3 000 Mana ({{botania_runes/infused_pool}}). Das Ritual lohnt sich nur, solange dein Becken noch kein Mana hat."
+  ],
+  "en": [
+   "Each ingredient sits on its own [[naturesaura:wood_stand]], which is a [[naturesaura:gold_leaf]] on top of any log. The [[naturesaura:infused_iron]] comes from the Natural Altar ({{start_here/m_infused}}); the [[botania:mana_diamond]] is a diamond infused with 10,000 mana ({{botania/mana_diamond}}).",
+   "The pool is cheaper: there one ingot costs just one infused iron and 3,000 mana ({{botania_runes/infused_pool}}). The ritual is only worth it while your pool has no mana yet."
+  ],
+  "sources": [
+   "kronwerke:magic/manasteel_ritual",
+   "kronwerke:magic/manasteel_from_infused_iron",
+   "naturesaura:wood_stand",
+   "botania:mana_infusion/mana_diamond",
+   "naturesaura:gold_powder"
+  ]
+ },
+ "infused_pool": {
+  "de": [
+   "Wirf das [[naturesaura:infused_iron]] auf ein gefülltes Becken. Schneller als der Altar ist der erhitzte Create-Mixer: 2 Eisenbarren und ein [[ars_nouveau:source_gem]] ergeben 2 Infused Iron, ganz ohne Aura.",
+   "Manastahl steckt in dieser Stufe in fast allem: Runen, Manatafel, Linsen, Werkzeug, Schmuck und die {{mekanism/infuser}}. Ein Mixer vor dem Becken lohnt sich früh."
+  ],
+  "en": [
+   "Throw the [[naturesaura:infused_iron]] onto a filled pool. Faster than the altar is the heated Create mixer: 2 iron ingots and a [[ars_nouveau:source_gem]] make 2 infused iron, with no aura at all.",
+   "In this stage manasteel goes into almost everything: runes, the mana tablet, lenses, tools, baubles and the {{mekanism/infuser}}. A mixer in front of the pool pays off early."
+  ],
+  "sources": [
+   "kronwerke:magic/manasteel_from_infused_iron",
+   "kronwerke:round/infused_iron_mixing",
+   "naturesaura:altar/infused_iron (aura 15000)",
+   "kubejs/server_scripts/kronwerke/magic.js (botania:mana_infusion/manasteel_ingot removed)"
+  ]
+ },
+ "brass_casing": {
+  "de": [
+   "Das Startpaket bringt dir schon 16 [[create:brass_ingot]]. Neues Messing mischt der Mixer im erhitzten Becken aus 2 Kupfer, 1 Zink und einem Lohenstaub, überhitzt ohne Lohenstaub und mit 2 Barren pro Ladung ({{create_brass/brass_mixing}}).",
+   "Statt eines entrindeten Stamms geht auch entrindetes Holz. Insgesamt brauchst du ein [[create:brass_casing]] pro Perlenbecken, zwei für die Platte und für 8 Runenkerne 16 Messingbleche ({{create_brass/brass_sheet}})."
+  ],
+  "en": [
+   "The starter kit already brings 16 [[create:brass_ingot]]. New brass comes from the mixer over a heated basin: 2 copper, 1 zinc and a blaze powder; superheated it needs no blaze powder and gives 2 ingots per batch ({{create_brass/brass_mixing}}).",
+   "Stripped wood works as well as a stripped log. In total you need one [[create:brass_casing]] per pearl pool, two for the plate and 16 brass sheets for 8 rune cores ({{create_brass/brass_sheet}})."
+  ],
+  "sources": [
+   "create:item_application/brass_casing_from_log",
+   "create:item_application/brass_casing_from_wood",
+   "kronwerke:create/brass_ingot_heated",
+   "kronwerke:create/brass_ingot_superheated",
+   "kronwerke:milestones/rune_core",
+   "config/kronwerke/goals.json (stage1 starterKit)"
+  ]
+ },
+ "mana_pearl": {
+  "de": [
+   "Die 8 Perlen aus dem Startpaket zählen schon für diese Quest. Unter einem Becken kann nur ein Block stehen: Ein Becken mit [[create:brass_casing]] macht Perlen, aber keine Alchemie, dafür brauchst du ein zweites Becken.",
+   "Gebraucht werden Perlen für Tafel, Runenaltar, Rune des Manas, Terrastahl, zwei pro Runenkern und 600 für den Obelisken. Fehlen Enderperlen, macht der Alchemiekatalysator aus einer Ghast-Träne eine, für 28 000 Mana."
+  ],
+  "en": [
+   "The 8 pearls from the starter kit already count for this quest. Only one block fits under a pool: a pool with a [[create:brass_casing]] makes pearls but no alchemy, so that needs a second pool.",
+   "You need pearls for the tablet, the runic altar, the Rune of Mana, terrasteel, two per rune core and 600 for the obelisk. Short of ender pearls, the alchemy catalyst turns a ghast tear into one for 28,000 mana."
+  ],
+  "sources": [
+   "kronwerke:magic/mana_pearl (catalyst create:brass_casing, 6000 mana)",
+   "botania:mana_infusion/alchemy/ender_pearl",
+   "kronwerke:milestones/rune_core",
+   "config/kronwerke/goals.json"
+  ]
+ },
+ "alchemy": {
+  "de": [
+   "Die Mitte des Rezepts ist genau eine [[botania:mana_pearl]], ein Manadiamant geht hier nicht. Stell ihn unter ein eigenes Becken, denn das Messinggehäuse für Perlen braucht denselben Platz.",
+   "In dieser Stufe nützlich: Ghast-Träne zu Enderperle (28 000 Mana) und das Verkleinern von Helitonie, Trichtermalve, Rannawurzel, Wirrbeere, Freihut und Agrarnelke für je 2 500 Mana. Danach geht es mit {{alfheim/conjuration}} weiter."
+  ],
+  "en": [
+   "The centre of the recipe is exactly one [[botania:mana_pearl]]; a mana diamond does not work here. Put it under a pool of its own, as the brass casing for pearls needs the same spot.",
+   "Useful in this stage: ghast tear to ender pearl (28,000 mana) and shrinking Clayconia, Hopperhock, Rannuncarpus, Tangleberrie, Jiyuulia and Agricarnation for 2,500 mana each. The next step is {{alfheim/conjuration}}."
+  ],
+  "sources": [
+   "botania:alchemy_catalyst",
+   "botania:mana_infusion/alchemy/ender_pearl",
+   "botania:mana_infusion/alchemy/clayconia_petite",
+   "botania jar: data/botania/recipe/mana_infusion/alchemy/*_petite.json"
+  ]
+ },
+ "mana_quartz": {
+  "de": [
+   "[[minecraft:quartz]] baust du im Nether als Netherquarzerz ab. Vier [[botania:mana_quartz]] ergeben im 2x2 einen Block, für Platte und alle sieben Sündenrunen brauchst du also mindestens 11.",
+   "Mit dem Alchemiekatalysator wird ein Block für 100 Mana wieder zu nur 3 Manaquarz, Blöcke also erst craften, wenn du sie wirklich brauchst."
+  ],
+  "en": [
+   "Mine [[minecraft:quartz]] in the Nether as nether quartz ore. Four [[botania:mana_quartz]] in a 2x2 make a block, so the plate and all seven sin runes need at least 11.",
+   "With the alchemy catalyst a block turns back into only 3 mana quartz for 100 mana, so only craft blocks when you really need them."
+  ],
+  "sources": [
+   "botania:mana_infusion/mana_quartz",
+   "botania:mana_quartz_block",
+   "botania:mana_infusion/alchemy/mana_quartz_block_deconstruct",
+   "kronwerke:terrestrial_agglomeration_plate"
+  ]
+ },
+ "mana_tablet": {
+  "de": [
+   "Ein [[botania:mana_diamond]] kostet einen Diamanten und 10 000 Mana, eine [[botania:mana_pearl]] eine Enderperle und 6 000 Mana. Nimm, was du gerade übrig hast.",
+   "Die Tafel ist auch Zutat: im Manaband ({{botania_runes/band_of_mana}}) und im Terra-Trümmerer ({{botania_runes/terra_tools}})."
+  ],
+  "en": [
+   "A [[botania:mana_diamond]] costs a diamond and 10,000 mana, a [[botania:mana_pearl]] an ender pearl and 6,000 mana. Use whichever you have spare.",
+   "The tablet is also an ingredient: in the Band of Mana ({{botania_runes/band_of_mana}}) and in the Terra Shatterer ({{botania_runes/terra_tools}})."
+  ],
+  "sources": [
+   "botania:mana_tablet (#botania:mana_gems)",
+   "botania jar: ManaTabletItem (DEFAULT_MAX_MANA 500000)",
+   "botania:band_of_mana",
+   "botania:terra_shatterer"
+  ]
+ },
+ "band_of_mana": {
+  "de": [
+   "Die Tafel liegt oben links, die 4 Manastahlbarren bilden den Ring. Das Manaband fasst 500 000 Mana wie die Tafel, das Größere Manaband 2 000 000.",
+   "Das Rezept ist ein Mana-Upgrade, das Mana in der Tafel geht beim Craften also nicht verloren."
+  ],
+  "en": [
+   "The tablet goes top left, the 4 manasteel ingots form the ring. The Band of Mana holds 500,000 mana like the tablet, the Greater Band of Mana 2,000,000.",
+   "The recipe is a mana upgrade, so the mana in the tablet is not lost when crafting."
+  ],
+  "sources": [
+   "botania:band_of_mana (botania:crafting_shaped_mana_upgrade)",
+   "botania jar: BandOfManaItem (500000, 2000000)"
+  ]
+ },
+ "manasteel_gear": {
+  "de": [
+   "Die Spitzhacke braucht 3 Manastahlbarren und 2 [[botania:livingwood_twig]] ({{botania/twig}}). Heb die Rüstung auf: Jedes Teil der Terrastahlrüstung wird aus dem passenden Manastahlteil gecraftet ({{botania_runes/terra_armor}})."
+  ],
+  "en": [
+   "The pickaxe takes 3 manasteel ingots and 2 [[botania:livingwood_twig]] ({{botania/twig}}). Keep the armour: every piece of terrasteel armour is crafted from the matching manasteel piece ({{botania_runes/terra_armor}})."
+  ],
+  "sources": [
+   "botania:manasteel_pickaxe",
+   "botania:terrasteel_helmet (botania:crafting_shaped_armor_upgrade)"
+  ]
+ },
+ "mekanism_tie": {
+  "de": [
+   "Für eine Infusionsanlage reichen 2 Manastahlbarren, die Quest {{mekanism/manasteel}} fragt genau danach. Sie ist die erste Mekanism-Maschine, ohne sie gibt es keinen Stahl.",
+   "In Stufe 3 verlangt auch der Teleportationskern von Mekanism Manaperlen statt Enderperlen."
+  ],
+  "en": [
+   "A metallurgic infuser needs just 2 manasteel ingots, which is what {{mekanism/manasteel}} asks for. It is the first Mekanism machine; without it there is no steel.",
+   "In stage 3 Mekanism's teleportation core also takes mana pearls in place of ender pearls."
+  ],
+  "sources": [
+   "kronwerke:metallurgic_infuser",
+   "kubejs/server_scripts/tech_and_magic.js",
+   "kubejs/server_scripts/kronwerke/links.js (mekanism:teleportation_core)"
+  ]
+ },
+ "mana_lens": {
+  "de": [
+   "Statt eines Glasblocks geht auch eine farblose Glasscheibe. Jede Speziallinse frisst eine [[botania:mana_lens]]: vier für {{botania_runes/lenses_power}}, drei für {{botania_runes/lenses_tool}}.",
+   "Zwei Linsen verbindet ein Schleimball oder eine Honigflasche an der Werkbank."
+  ],
+  "en": [
+   "A colourless glass pane works as well as a glass block. Every special lens uses up one [[botania:mana_lens]]: four for {{botania_runes/lenses_power}}, three for {{botania_runes/lenses_tool}}.",
+   "A slimeball or a honey bottle joins two lenses at the crafting table."
+  ],
+  "sources": [
+   "botania:mana_lens",
+   "botania:mana_lens_pane",
+   "botania jar: data/botania/tags/item/lens_glue.json",
+   "botania:dynamic/composite_lens"
+  ]
+ },
+ "runic_altar": {
+  "de": [
+   "Der Altar hat nur zwei Reihen: oben Lebestein, [[create:brass_ingot]], Lebestein, unten Lebestein, Manadiamant oder Manaperle, Lebestein.",
+   "Jedes Runenrezept will zum Schluss einen [[botania:livingrock]], der verbraucht wird. Elementrunen kosten 5 200 Mana, die Rune des Manas und die Jahreszeiten 8 000, die Sündenrunen 12 000."
+  ],
+  "en": [
+   "The altar has only two rows: top livingrock, [[create:brass_ingot]], livingrock; bottom livingrock, mana diamond or mana pearl, livingrock.",
+   "Every rune recipe wants a [[botania:livingrock]] at the end, which is used up. Element runes cost 5,200 mana, the Rune of Mana and the seasons 8,000, the sin runes 12,000."
+  ],
+  "sources": [
+   "kronwerke:magic/runic_altar",
+   "botania:runic_altar/rune_of_water (reagent livingrock)",
+   "botania:runic_altar/rune_of_spring",
+   "botania:runic_altar/rune_of_gluttony"
+  ]
+ },
+ "rune_water": {
+  "de": [
+   "[[botania:mana_powder]] machst du im Becken aus beliebigem Farbstoff für 400 Mana ({{botania/mana_powder}}). Jede Angel zählt.",
+   "Für die Platte und 8 Runenkerne brauchst du mindestens 9 von jeder Elementrune, also 5 Altarladungen. Die Wasserrune ist außerdem Katalysator für Frühling, Winter, Gier und Neid und kommt dort zurück."
+  ],
+  "en": [
+   "[[botania:mana_powder]] is any dye infused in a pool for 400 mana ({{botania/mana_powder}}). Any fishing rod counts.",
+   "The plate and 8 rune cores need at least 9 of every element rune, so 5 altar runs. The Rune of Water is also a catalyst for spring, winter, greed and envy and comes back there."
+  ],
+  "sources": [
+   "botania:runic_altar/rune_of_water",
+   "botania:mana_infusion/mana_powder_from_dye",
+   "kronwerke:terrestrial_agglomeration_plate",
+   "kronwerke:milestones/rune_core"
+  ]
+ },
+ "rune_fire": {
+  "de": [
+   "Gemeint ist der Netherziegel als Item, den du aus Netherrack im Ofen brennst, nicht der Block. Kohle oder Holzkohle gehen beide.",
+   "Für die Platte und 8 Runenkerne brauchst du mindestens 9 von jeder Elementrune, also 5 Altarladungen. Wer Messingherzen für die Technik-Säule baut, braucht dazu je eine Feuerrune ({{create_brass/brass_heart}})."
+  ],
+  "en": [
+   "This means the nether brick item, smelted from netherrack, not the block. Coal or charcoal both work.",
+   "The plate and 8 rune cores need at least 9 of every element rune, so 5 altar runs. Anyone building brass hearts for the tech pillar needs one fire rune each ({{create_brass/brass_heart}})."
+  ],
+  "sources": [
+   "botania:runic_altar/rune_of_fire (#c:bricks/nether)",
+   "kronwerke:milestones/brass_heart",
+   "kronwerke:terrestrial_agglomeration_plate",
+   "kronwerke:milestones/rune_core"
+  ]
+ },
+ "rune_earth": {
+  "de": [
+   "Stein heißt glatter [[minecraft:stone]], kein Bruchstein: Bruchstein im Ofen brennen oder mit Behutsamkeit abbauen. Ein brauner oder ein roter Pilz reicht.",
+   "Für die Platte und 8 Runenkerne brauchst du mindestens 9 von jeder Elementrune, also 5 Altarladungen."
+  ],
+  "en": [
+   "Stone means smooth [[minecraft:stone]], not cobblestone: smelt cobblestone or mine with Silk Touch. One brown or one red mushroom is enough.",
+   "The plate and 8 rune cores need at least 9 of every element rune, so 5 altar runs."
+  ],
+  "sources": [
+   "botania:runic_altar/rune_of_earth",
+   "kronwerke:terrestrial_agglomeration_plate",
+   "kronwerke:milestones/rune_core"
+  ]
+ },
+ "rune_air": {
+  "de": [
+   "Jeder Wollteppich zählt, egal welche Farbe. Federn lassen Hühner fallen, Faden Spinnen.",
+   "Für die Platte und 8 Runenkerne brauchst du mindestens 9 von jeder Elementrune, also 5 Altarladungen. Die Luftrune ist dazu Katalysator für Sommer, Herbst, Wollust und Trägheit."
+  ],
+  "en": [
+   "Any wool carpet counts, whatever the colour. Chickens drop feathers, spiders drop string.",
+   "The plate and 8 rune cores need at least 9 of every element rune, so 5 altar runs. The Rune of Air is also the catalyst for summer, autumn, lust and sloth."
+  ],
+  "sources": [
+   "botania:runic_altar/rune_of_air (#minecraft:wool_carpets)",
+   "botania:runic_altar/rune_of_summer",
+   "botania:runic_altar/rune_of_autumn",
+   "botania:runic_altar/rune_of_lust",
+   "botania:runic_altar/rune_of_sloth",
+   "kronwerke:terrestrial_agglomeration_plate",
+   "kronwerke:milestones/rune_core"
+  ]
+ },
+ "rune_mana": {
+  "de": [
+   "Eine Ladung gibt nur eine Rune, und jede wird verbraucht: in der Platte, der Botanischen Brauerei, der Rosa Arcana, dem Auraband und dem Mana-Blaster. Die 5 Manastahlbarren sind der teure Teil, plan also vorher, wie viele du brauchst."
+  ],
+  "en": [
+   "One run gives just one rune, and each is used up: in the plate, the Botanical Brewery, the Rosa Arcana, the Band of Aura and the Mana Blaster. The 5 manasteel ingots are the expensive part, so plan how many you need."
+  ],
+  "sources": [
+   "botania:runic_altar/rune_of_mana",
+   "botania:botanical_brewery",
+   "botania:band_of_aura",
+   "botania:petal_apothecary/rosa_arcana",
+   "botania:mana_blaster",
+   "kronwerke:terrestrial_agglomeration_plate"
+  ]
+ },
+ "rune_spring": {
+  "de": [
+   "Jeder Setzling zählt, auch gemischt. Die beiden Elementrunen sind Katalysatoren und liegen nach dem Craften wieder auf dem Altar, nur die anderen Zutaten und 8 000 Mana gehen weg.",
+   "Die Frühlingsrune ist außerdem Katalysator für die Rune der Gier."
+  ],
+  "en": [
+   "Any sapling counts, mixed is fine. The two element runes are catalysts and are back on the altar after crafting; only the other ingredients and 8,000 mana are used.",
+   "The Rune of Spring is also the catalyst for the Rune of Greed."
+  ],
+  "sources": [
+   "botania:runic_altar/rune_of_spring (#minecraft:saplings)",
+   "botania:runic_altar/rune_of_greed"
+  ]
+ },
+ "rune_summer": {
+  "de": [
+   "Jeder Sand zählt, auch roter Sand. Die beiden Elementrunen sind Katalysatoren und liegen nach dem Craften wieder auf dem Altar, nur die anderen Zutaten und 8 000 Mana gehen weg.",
+   "Die Sommerrune ist außerdem Katalysator für Wollust und Hochmut."
+  ],
+  "en": [
+   "Any sand counts, red sand too. The two element runes are catalysts and are back on the altar after crafting; only the other ingredients and 8,000 mana are used.",
+   "The Rune of Summer is also the catalyst for lust and pride."
+  ],
+  "sources": [
+   "botania:runic_altar/rune_of_summer (#minecraft:sand)",
+   "botania:runic_altar/rune_of_lust",
+   "botania:runic_altar/rune_of_pride"
+  ]
+ },
+ "rune_autumn": {
+  "de": [
+   "Jede Sorte Laub zählt, auch gemischt. Laub bekommst du als Block nur mit Schere oder Behutsamkeit. Die beiden Elementrunen sind Katalysatoren und liegen nach dem Craften wieder auf dem Altar, nur die anderen Zutaten und 8 000 Mana gehen weg."
+  ],
+  "en": [
+   "Any kind of leaves counts, mixed is fine. You only get leaves as blocks with shears or Silk Touch. The two element runes are catalysts and are back on the altar after crafting; only the other ingredients and 8,000 mana are used."
+  ],
+  "sources": [
+   "botania:runic_altar/rune_of_autumn (#minecraft:leaves)",
+   "botania:runic_altar/rune_of_sloth"
+  ]
+ },
+ "rune_winter": {
+  "de": [
+   "Wolle in jeder Farbe zählt, ein Schneeblock sind 4 Schneebälle. Die beiden Elementrunen sind Katalysatoren und liegen nach dem Craften wieder auf dem Altar, nur die anderen Zutaten und 8 000 Mana gehen weg.",
+   "Die Winterrune ist Katalysator für Völlerei, Zorn und Neid, eine reicht also für alle drei."
+  ],
+  "en": [
+   "Wool of any colour counts; a snow block is 4 snowballs. The two element runes are catalysts and are back on the altar after crafting; only the other ingredients and 8,000 mana are used.",
+   "The Rune of Winter is the catalyst for gluttony, wrath and envy, so one is enough for all three."
+  ],
+  "sources": [
+   "botania:runic_altar/rune_of_winter (#minecraft:wool)",
+   "botania:runic_altar/rune_of_gluttony",
+   "botania:runic_altar/rune_of_wrath",
+   "botania:runic_altar/rune_of_envy"
+  ]
+ },
+ "sin_runes": {
+  "de": [
+   "Jeder [[botania:mana_diamond]] kostet einen Diamanten und 10 000 Mana, eine Sündenrune also 2 Diamanten und 32 000 Mana. Die Runen des Winters und des Feuers bleiben als Katalysatoren erhalten.",
+   "Die Beutanie braucht neben Völlerei noch Trägheit und Neid und kommt erst mit Feenstaub in Stufe 3."
+  ],
+  "en": [
+   "Each [[botania:mana_diamond]] costs a diamond and 10,000 mana, so a sin rune is 2 diamonds and 32,000 mana. The Runes of Winter and Fire stay as catalysts.",
+   "Besides gluttony the Loonium also needs sloth and envy, and it only comes with pixie dust in stage 3."
+  ],
+  "sources": [
+   "botania:runic_altar/rune_of_gluttony",
+   "botania:mana_infusion/mana_diamond",
+   "botania:petal_apothecary/munchdew",
+   "botania:petal_apothecary/loonium",
+   "botania:petal_apothecary/kekimurus"
+  ]
+ },
+ "rune_lust": {
+  "de": [
+   "Beide Blumen, für die du sie brauchst, sind in diesem Kapitel: die Pollidisie in {{botania_runes/func_move}} und der Vinculotos in {{botania_runes/func_mobs}}. Plan also zwei ein, wenn du beide willst."
+  ],
+  "en": [
+   "Both flowers that need it are in this chapter: the Pollidisiac in {{botania_runes/func_move}} and the Vinculotus in {{botania_runes/func_mobs}}. Plan two if you want both."
+  ],
+  "sources": [
+   "botania:runic_altar/rune_of_lust",
+   "botania:mana_infusion/mana_diamond",
+   "botania:petal_apothecary/pollidisiac",
+   "botania:petal_apothecary/vinculotus"
+  ]
+ },
+ "rune_greed": {
+  "de": [
+   "Die Gier steckt nur in der Erchidee und der Flammenden Erchidee, beide Stufe 3. Bau sie erst, wenn das Elfenportal offen ist, sonst liegen zwei Manadiamanten nutzlos herum."
+  ],
+  "en": [
+   "Greed only goes into the Orechid and the Orechid Ignem, both stage 3. Build it once the elven gateway is open, or two mana diamonds sit around unused."
+  ],
+  "sources": [
+   "botania:runic_altar/rune_of_greed",
+   "botania:mana_infusion/mana_diamond",
+   "botania:petal_apothecary/orechid",
+   "botania:petal_apothecary/orechid_ignem"
+  ]
+ },
+ "rune_sloth": {
+  "de": [
+   "Außer für Vinculotos und Beutanie brauchst du die Trägheit für die [[botania:rod_of_the_shifting_crust]], die Blöcke im Umkreis gegen andere tauscht: Rune, Stein und Lebeholzzweig."
+  ],
+  "en": [
+   "Besides the Vinculotus and the Loonium, sloth goes into the [[botania:rod_of_the_shifting_crust]], which swaps blocks around you: the rune, stone and a livingwood twig."
+  ],
+  "sources": [
+   "botania:runic_altar/rune_of_sloth",
+   "botania:mana_infusion/mana_diamond",
+   "botania:rod_of_the_shifting_crust"
+  ],
+  "client": [
+   "Rod of the Shifting Crust swaps blocks (behaviour)"
+  ]
+ },
+ "rune_wrath": {
+  "de": [
+   "Schon in Stufe 2 nutzbar ist die [[botania:damaging_lens]]: Manalinse und Zornrune, der Stoß verletzt Mobs. Friedenstraum braucht Feenstaub, Shulk Mein Nicht eine Gaia-Seele."
+  ],
+  "en": [
+   "Already usable in stage 2 is the [[botania:damaging_lens]]: a mana lens and the rune of wrath; the burst hurts mobs. Heisei Dream needs pixie dust, Shulk Me Not a Gaia Spirit."
+  ],
+  "sources": [
+   "botania:runic_altar/rune_of_wrath",
+   "botania:mana_infusion/mana_diamond",
+   "botania:damaging_lens",
+   "botania:petal_apothecary/heisei_dream",
+   "botania:petal_apothecary/shulk_me_not"
+  ],
+  "client": [
+   "Damaging Lens burst damages mobs"
+  ]
+ },
+ "rune_envy": {
+  "de": [
+   "Gleich nutzbar ist die [[botania:entropic_lens]] aus Manalinse und Neidrune. Die Spektrantheme braucht Ender-Essenz, die du erst mit Elfenglasflaschen aus Stufe 3 abfüllst ({{alfheim/ender_essence}}), die Beutanie Feenstaub."
+  ],
+  "en": [
+   "Usable right away is the [[botania:entropic_lens]], a mana lens plus the rune of envy. The Spectranthemum needs ender essence, which you can only bottle with stage 3 alfglass flasks ({{alfheim/ender_essence}}), the Loonium pixie dust."
+  ],
+  "sources": [
+   "botania:runic_altar/rune_of_envy",
+   "botania:mana_infusion/mana_diamond",
+   "botania:entropic_lens",
+   "botania:petal_apothecary/spectranthemum (#botania:ender_essences)",
+   "alfheim/ender_essence",
+   "botania:petal_apothecary/loonium"
+  ]
+ },
+ "rune_pride": {
+  "de": [
+   "Für alles mit Hochmut fehlt in Stufe 2 noch etwas: Erchidee und Rafflorsie wollen Feenstaub, der Ring der großen Reichweite Elementium, der Zauber der Diva eine Gaia-Seele. Bau diese Rune also auf Vorrat erst, wenn dir Diamanten übrig sind."
+  ],
+  "en": [
+   "Everything with pride still lacks something in stage 2: the Orechid and the Rafflowsia want pixie dust, the Ring of Far Reach elementium, the Charm of the Diva a Gaia Spirit. Only build this rune ahead when you have diamonds to spare."
+  ],
+  "sources": [
+   "botania:runic_altar/rune_of_pride",
+   "botania:mana_infusion/mana_diamond",
+   "botania:ring_of_far_reach",
+   "botania:charm_of_the_diva",
+   "botania:petal_apothecary/orechid",
+   "botania:petal_apothecary/rafflowsia"
+  ]
+ },
+ "brewery": {
+  "de": [
+   "Im Raster: Lebestein rundherum, oben in der Mitte der Braustand, in der Mitte die Rune des Manas, unten der [[botania:manasteel_block]] aus 9 Barren.",
+   "Die Phiole heißt im Spiel [[botania:managlass_vial]], und das [[botania:managlass]] dafür ist Glas im Manabecken ({{botania/managlass}}). Für das Räucherwerk ({{botania_runes/incense}}) brauchst du die Brauerei auch."
+  ],
+  "en": [
+   "In the grid: livingrock all around, the brewing stand top centre, the Rune of Mana in the middle, the [[botania:manasteel_block]] of 9 ingots at the bottom.",
+   "The vial is the [[botania:managlass_vial]], and its [[botania:managlass]] is glass infused in a mana pool ({{botania/managlass}}). You also need the brewery for incense ({{botania_runes/incense}})."
+  ],
+  "sources": [
+   "botania:botanical_brewery",
+   "botania:managlass_vial (3 managlass, count 3)",
+   "botania:mana_infusion/managlass"
+  ]
+ },
+ "gen_table": {
+  "de": [
+   "Jede erzeugende Blume braucht einen gebundenen Manaverbreiter in der Nähe ({{botania/spreader}}). Gourmaryllis und Rosa Arcana arbeiten nur mit Dingen direkt neben sich, die Narglibbe in 2 Blöcken, der Mampftau in 8 Blöcken waagerecht.",
+   "Die Thermalilie fasst selbst nur 750 Mana, der Verbreiter muss also laufend abnehmen. Shulk Mein Nicht und Lebenzahn kommen in Stufe 4."
+  ],
+  "en": [
+   "Every generating flower needs a bound mana spreader nearby ({{botania/spreader}}). The Gourmaryllis and the Rosa Arcana only work with things right next to them, the Narslimmus within 2 blocks, the Munchdew within 8 blocks sideways.",
+   "The Thermalily itself holds only 750 mana, so the spreader has to keep taking it. Shulk Me Not and Dandelifeon come in stage 4."
+  ],
+  "sources": [
+   "botania jar: GourmaryllisBlockEntity (RANGE 1), RosaArcanaBlockEntity (RANGE 1), NarslimmusBlockEntity (RANGE 2), MunchdewBlockEntity (RANGE 8, RANGE_Y 16), ThermalilyBlockEntity (MANA_CAPACITY 750)",
+   "botania:petal_apothecary/shulk_me_not and dandelifeon (botania:gaia_spirit stage 4)"
+  ]
+ },
+ "thermalily": {
+  "de": [
+   "Lava ohne Ende holt ein Create-Schlauchflaschenzug aus einem See mit mindestens 10 000 Blöcken, und ein offenes Rohrende darf hier Quellblöcke setzen ({{farms/lava}}).",
+   "Die Blume fasst nur **750 Mana**, binde sie also an einen Verbreiter direkt daneben. Die Rechnung stimmt: 45 Mana pro Tick für 600 Ticks, dann 6 000 Ticks Pause."
+  ],
+  "en": [
+   "A Create hose pulley draws endless lava from a lake of at least 10,000 blocks, and an open pipe end may place source blocks on this server ({{farms/lava}}).",
+   "The flower only holds **750 mana**, so bind it to a spreader right next to it. The numbers hold: 45 mana per tick for 600 ticks, then a 6,000 tick break."
+  ],
+  "sources": [
+   "botania:petal_apothecary/thermalily",
+   "botania jar: ThermalilyBlockEntity (MANA_PER_TICK 45, BURN_TIME_TICKS 600, COOLDOWN 6000, MANA_CAPACITY 750)",
+   "srv/config/create-server.toml (hosePulleyBlockThreshold 10000, bottomlessFluidMode ALLOW_BY_TAG, pipesPlaceFluidSourceBlocks true)",
+   "create jar: data/create/tags/fluid/bottomless/allow.json (lava)"
+  ]
+ },
+ "gourmaryllis": {
+  "de": [
+   "Das Essen muss im Umkreis von einem Block liegen. Nährwert zählt höchstens bis 12, mehr bringt nichts: Das Maximum pro Bissen ist 12 mal 12 mal 70, also 10 080 Mana.",
+   "Die Pause nach dem Essen ist der Nährwert mal 10 Ticks. Abwechslung zählt mehr als einzelne große Mahlzeiten ({{cooking/m_noodles}} und die anderen Gerichte im Kapitel Kochen)."
+  ],
+  "en": [
+   "The food has to lie within one block. Nutrition only counts up to 12: the most per bite is 12 times 12 times 70, so 10,080 mana.",
+   "The pause after eating is the nutrition times 10 ticks. Variety matters more than single big meals ({{cooking/m_noodles}} and the other dishes in the cooking chapter)."
+  ],
+  "sources": [
+   "botania:petal_apothecary/gourmaryllis",
+   "botania jar: GourmaryllisBlockEntity (RANGE 1, MAX_FOOD_VALUE 12, FOOD_COOLDOWN_FACTOR 10, FOOD_MANA_FACTOR 70, STREAK_MULTIPLIERS up to 1.8)"
+  ]
+ },
+ "munchdew": {
+  "de": [
+   "Der Mampftau braucht die [[botania:rune_of_gluttony]] aus {{botania_runes/sin_runes}}. Er frisst 8 Blöcke weit zur Seite und 16 Blöcke in der Höhe, eine hohe Baumreihe lohnt sich also.",
+   "Die 80 Sekunden Pause starten erst, wenn kein Laub mehr da ist. Pflanz also so dicht, dass immer etwas nachwächst."
+  ],
+  "en": [
+   "The Munchdew needs the [[botania:rune_of_gluttony]] from {{botania_runes/sin_runes}}. It eats 8 blocks to the side and 16 blocks up and down, so a tall row of trees pays off.",
+   "The 80 second break only starts once no leaves are left. Plant so densely that something always grows back."
+  ],
+  "sources": [
+   "botania:petal_apothecary/munchdew",
+   "botania jar: MunchdewBlockEntity (RANGE 8, RANGE_Y 16, MANA_PER_LEAF 160, COOLDOWN_TICKS 1600)"
+  ]
+ },
+ "rosa_arcana": {
+  "de": [
+   "Die Blume wirkt nur einen Block weit: Erfahrungskugeln und Gegenstände müssen direkt neben ihr landen, und du musst direkt daneben stehen.",
+   "Die [[botania:rune_of_mana]] dafür wird verbraucht. Ein Trichter oder Förderband vor der Blume bringt verzauberte Beute aus einer Mob-Farm hin."
+  ],
+  "en": [
+   "The flower only reaches one block: experience orbs and items have to land right next to it, and you have to stand right beside it.",
+   "The [[botania:rune_of_mana]] it needs is used up. A funnel or belt in front of the flower brings enchanted loot from a mob farm."
+  ],
+  "sources": [
+   "botania:petal_apothecary/rosa_arcana",
+   "botania jar: RosaArcanaBlockEntity (RANGE 1, MANA_PER_XP 50)"
+  ]
+ },
+ "narslimmus": {
+  "de": [
+   "Die Narglibbe fängt Schleime in 2 Blöcken Umkreis, die Halle muss also eng um die Blume gebaut sein. Ab Größe 4 steigt das Mana nicht weiter.",
+   "Schleime aus Spawnern oder Spawneiern zählen nicht, nur natürlich gespawnte."
+  ],
+  "en": [
+   "The Narslimmus catches slimes within 2 blocks, so the hall has to be built tight around the flower. From size 4 up the mana does not rise further.",
+   "Slimes from spawners or spawn eggs do not count, only naturally spawned ones."
+  ],
+  "sources": [
+   "botania:petal_apothecary/narslimmus",
+   "botania jar: NarslimmusBlockEntity (RANGE 2, MANA_BASE 1200, manaForSize: 1200 * 2^min(size,4))"
+  ],
+  "client": [
+   "only naturally spawned slimes count (spawner/egg slimes ignored)"
+  ]
+ },
+ "wards": {
+  "de": [
+   "Beide Blumen lassen sich im Becken mit Alchemiekatalysator für 2 500 Mana zur zierlichen Form verkleinern, mit kleinerem Bereich ({{botania_runes/alchemy}}).",
+   "Für beide zusammen brauchst du zwei Luftrunen, eine Erd- und eine Wasserrune."
+  ],
+  "en": [
+   "Both flowers can be shrunk to their petite form in a pool with an alchemy catalyst for 2,500 mana, with a smaller area ({{botania_runes/alchemy}}).",
+   "Together they need two Runes of Air, one of Earth and one of Water."
+  ],
+  "sources": [
+   "botania:petal_apothecary/tangleberrie",
+   "botania:petal_apothecary/jiyuulia",
+   "botania:mana_infusion/alchemy/tangleberrie_petite",
+   "botania jar: mana_infusion/alchemy/jiyuulia_petite.json"
+  ]
+ },
+ "jaded_amaranthus": {
+  "de": [
+   "Die [[botania:redstone_root]] kommt aus {{botania/redstone_root}}. Mit einer Trichtermalve daneben ({{botania_runes/hopperhock}}) landen die Blumen in einer Truhe, und aus ihnen werden Blütenblätter für jede weitere Blume."
+  ],
+  "en": [
+   "The [[botania:redstone_root]] comes from {{botania/redstone_root}}. With a Hopperhock next to it ({{botania_runes/hopperhock}}) the flowers end up in a chest and become petals for every further flower."
+  ],
+  "sources": [
+   "botania:petal_apothecary/jaded_amaranthus"
+  ],
+  "client": [
+   "Jaded Amaranthus spawns mystical flowers on nearby soil"
+  ]
+ },
+ "agricarnation": {
+  "de": [
+   "Die Agrarnelke braucht dieselbe [[botania:redstone_root]] und Frühlingsrune wie der Jaded-Amarant. Im Becken mit Alchemiekatalysator wird sie für 2 500 Mana zur zierlichen Form mit kleinerem Bereich."
+  ],
+  "en": [
+   "The Agricarnation needs the same [[botania:redstone_root]] and Rune of Spring as the Jaded Amaranthus. In a pool with an alchemy catalyst it becomes the petite form with a smaller area for 2,500 mana."
+  ],
+  "sources": [
+   "botania:petal_apothecary/agricarnation",
+   "botania jar: mana_infusion/alchemy/agricarnation_petite.json"
+  ]
+ },
+ "hopperhock": {
+  "de": [
+   "Die Trichtermalve kostet nur eine Luftrune und eine [[botania:redstone_root]]. Mit Alchemiekatalysator wird sie für 2 500 Mana zur Zierlichen Trichtermalve mit kleinerem Bereich, praktisch neben einem Perlenbecken ({{botania_runes/pearl_factory}})."
+  ],
+  "en": [
+   "The Hopperhock costs just a Rune of Air and a [[botania:redstone_root]]. With an alchemy catalyst it becomes the Hopperhock Petite with a smaller area for 2,500 mana, handy next to a pearl pool ({{botania_runes/pearl_factory}})."
+  ],
+  "sources": [
+   "botania:petal_apothecary/hopperhock",
+   "botania:mana_infusion/alchemy/hopperhock_petite"
+  ]
+ },
+ "rannuncarpus": {
+  "de": [
+   "Auf diesem Server nimmt die Rannawurzel keine Items aus Storage Drawers, so steht es in der Botania-Config. Mit Alchemiekatalysator gibt es sie auch als zierliche Form für 2 500 Mana."
+  ],
+  "en": [
+   "On this server the Rannuncarpus ignores items from Storage Drawers, as the Botania config says. With an alchemy catalyst there is also a petite form for 2,500 mana."
+  ],
+  "sources": [
+   "botania:petal_apothecary/rannuncarpus",
+   "srv/config/botania-common.toml ([rannuncarpus] excludedMods storagedrawers)",
+   "botania jar: mana_infusion/alchemy/rannuncarpus_petite.json"
+  ]
+ },
+ "clayconia": {
+  "de": [
+   "Sand ohne Graben liefern Mahlwerkräder aus Kies oder der Zerkleinerer von Mekanism ({{farms/s2_sand}}). Die Zierliche Helitonie aus dem Alchemiebecken (2 500 Mana) arbeitet auf kleinerer Fläche."
+  ],
+  "en": [
+   "Crushing wheels turn gravel into sand without digging, and so does Mekanism's crusher ({{farms/s2_sand}}). The Clayconia Petite from the alchemy pool (2,500 mana) works on a smaller area."
+  ],
+  "sources": [
+   "botania:petal_apothecary/clayconia",
+   "botania:mana_infusion/alchemy/clayconia_petite"
+  ]
+ },
+ "exoflame": {
+  "de": [
+   "Die Exoflamme braucht Mana von einem Verbreiter, sie erzeugt selbst keins. Feuer- und Sommerrune werden beim Pflanzen der Blume in der Apotheke verbraucht."
+  ],
+  "en": [
+   "The Exoflame needs mana from a spreader; it makes none itself. The Runes of Fire and Summer are used up in the apothecary."
+  ],
+  "sources": [
+   "botania:petal_apothecary/exoflame"
+  ]
+ },
+ "func_protect": {
+  "de": [
+   "Die drei Blumen kosten zusammen eine Herbst-, eine Frühlings- und eine Erdrune und eine [[botania:redstone_root]] für die Medumone. Alle laufen mit Mana von einem Verbreiter."
+  ],
+  "en": [
+   "Together the three flowers cost one Rune of Autumn, one of Spring, one of Earth and a [[botania:redstone_root]] for the Medumone. All run on mana from a spreader."
+  ],
+  "sources": [
+   "botania:petal_apothecary/tigerseye",
+   "botania:petal_apothecary/fallen_kanade",
+   "botania:petal_apothecary/medumone"
+  ]
+ },
+ "func_move": {
+  "de": [
+   "Die Pollidisie braucht die [[botania:rune_of_lust]] ({{botania_runes/rune_lust}}), für sie brauchst du also zuerst Sommer und Luft und zwei Manadiamanten. Die Ostermühle kostet nur eine Luftrune und eine Redstone-Wurzel."
+  ],
+  "en": [
+   "The Pollidisiac needs the [[botania:rune_of_lust]] ({{botania_runes/rune_lust}}), so first you need summer, air and two mana diamonds. The Daffomill costs just a Rune of Air and a redstone root."
+  ],
+  "sources": [
+   "botania:petal_apothecary/daffomill",
+   "botania:petal_apothecary/pollidisiac",
+   "botania:runic_altar/rune_of_lust"
+  ]
+ },
+ "func_mobs": {
+  "de": [
+   "Der Vinculotos ist die teuerste Blume der Stufe: Wasser, Trägheit und Wollust, also vier Manadiamanten in den Sündenrunen. Tagemorphes und Cyazinthe kommen mit Elementrunen und der Herbstrune aus."
+  ],
+  "en": [
+   "The Vinculotus is the most expensive flower of the stage: water, sloth and lust, so four mana diamonds in the sin runes. The Marimorphosis and the Hyacidus make do with element runes and the Rune of Autumn."
+  ],
+  "sources": [
+   "botania:petal_apothecary/marimorphosis",
+   "botania:petal_apothecary/hyacidus",
+   "botania:petal_apothecary/vinculotus"
+  ]
+ },
+ "baubles_rings": {
+  "de": [
+   "Die [[botania:magnetizing_lens]] für den Magnetring ist Manalinse, Eisen und Gold ({{botania_runes/lenses_tool}}), das [[minecraft:heart_of_the_sea]] für den Ring der Ozeane kommt aus vergrabenen Schätzen. Der Magnetring zieht in 6 Blöcken Umkreis."
+  ],
+  "en": [
+   "The [[botania:magnetizing_lens]] for the magnet ring is a mana lens, iron and gold ({{botania_runes/lenses_tool}}); the [[minecraft:heart_of_the_sea]] for the Ring of Chordata comes from buried treasure. The Ring of Magnetization pulls within 6 blocks."
+  ],
+  "sources": [
+   "botania:band_of_aura",
+   "botania:ring_of_magnetization",
+   "botania:ring_of_dexterous_motion",
+   "botania:ring_of_the_mantle",
+   "botania:ring_of_correction",
+   "botania:ring_of_chordata",
+   "botania:magnetizing_lens",
+   "botania jar: RingOfMagnetizationItem (DEFAULT_RANGE 6)"
+  ]
+ },
+ "baubles_greater": {
+  "de": [
+   "Alle drei sind formlos: Ring und ein Terrastahlbarren. Das Größere Manaband fasst 2 000 000 Mana statt 500 000, der Größere Ring der Magnetisierung zieht 16 Blöcke weit statt 6.",
+   "Beim Manaband bleibt das gespeicherte Mana erhalten, es ist ein Mana-Upgrade."
+  ],
+  "en": [
+   "All three are shapeless: the ring plus one terrasteel ingot. The Greater Band of Mana holds 2,000,000 mana instead of 500,000, the Greater Ring of Magnetization pulls 16 blocks instead of 6.",
+   "The Band of Mana keeps its stored mana, as it is a mana upgrade recipe."
+  ],
+  "sources": [
+   "botania:greater_band_of_mana (crafting_shapeless_mana_upgrade)",
+   "botania:greater_band_of_aura",
+   "botania:greater_ring_of_magnetization",
+   "botania jar: BandOfManaItem (500000, 2000000), RingOfMagnetizationItem (6, 16)"
+  ]
+ },
+ "baubles_amulets": {
+  "de": [
+   "Den [[botania:mana_string]] infundierst du aus normalem Faden im Becken ({{botania/mana_string}}), 12 Stück für die drei Anhänger mit Runen. Den Verdorbenes-Blut-Anhänger füllst du mit einem Gebräu aus der {{botania_runes/brewery}}."
+  ],
+  "en": [
+   "You infuse [[botania:mana_string]] from plain string in a pool ({{botania/mana_string}}); the three rune pendants take 12. You fill the Tainted Blood Pendant with a brew from the {{botania_runes/brewery}}."
+  ],
+  "sources": [
+   "botania:cirrus_amulet",
+   "botania:snowflake_pendant",
+   "botania:pyroclast_pendant",
+   "botania:tainted_blood_pendant",
+   "botania:mana_infusion/mana_string"
+  ]
+ },
+ "baubles_belts": {
+  "de": [
+   "Die [[botania:pasture_seeds]] für die Schärpe des Ebenenläufers kommen aus {{botania/pasture_seeds}}. Die Schärpe des Reisenden wird dabei verbraucht, du brauchst also zwei, wenn du beide behalten willst."
+  ],
+  "en": [
+   "The [[botania:pasture_seeds]] for the Planestrider's Sash come from {{botania/pasture_seeds}}. The Sojourner's Sash is used up, so make two if you want to keep both."
+  ],
+  "sources": [
+   "botania:sojournors_sash",
+   "botania:planestriders_sash",
+   "botania:tectonic_girdle"
+  ]
+ },
+ "baubles_charms": {
+  "de": [
+   "Monokel und Unsichtbarkeitsmantel brauchen [[botania:managlass]] ({{botania/managlass}}), der Mantel dazu weiße Wolle, keine gefärbte. Der Zauber der Gütigen Göttin will 2 rosa Blütenblätter, Wasser, Frühling und einen Manadiamanten."
+  ],
+  "en": [
+   "The monocle and the Invisibility Cloak need [[botania:managlass]] ({{botania/managlass}}); the cloak also wants white wool, not dyed. The Benevolent Goddess' Charm takes 2 pink petals, water, spring and a mana diamond."
+  ],
+  "sources": [
+   "botania:manaseer_monocle",
+   "botania:tiny_planet",
+   "botania:benevolent_goddess_charm",
+   "botania:the_spectator",
+   "botania:third_eye",
+   "botania:invisibility_cloak (minecraft:white_wool)"
+  ]
+ },
+ "plate": {
+  "de": [
+   "Vor dem Craften brauchst du: zwei [[create:brass_casing]], einen Lapisblock, einen [[botania:mana_quartz_block]] (4 Manaquarz), eine Rune des Manas und je eine Elementrune. Die Platte selbst ist nur der Block, dazu gehört das Fundament ({{botania_runes/plate_base}})."
+  ],
+  "en": [
+   "Before crafting you need two [[create:brass_casing]], a lapis block, a [[botania:mana_quartz_block]] (4 mana quartz), a Rune of Mana and one of each element rune. The plate is only the block; it also needs its base ({{botania_runes/plate_base}})."
+  ],
+  "sources": [
+   "kronwerke:terrestrial_agglomeration_plate",
+   "kubejs/server_scripts/tech_and_magic.js"
+  ]
+ },
+ "plate_base": {
+  "de": [
+   "Mit der Platte sind das 4 Lapisblöcke und 5 Lebesteine, die Quest zählt sie nur im Inventar. Das Mana kommt per Verbreiter oder per Funken ({{botania_runes/mana_spark}}) auf die Platte."
+  ],
+  "en": [
+   "Together with the plate that is 4 lapis blocks and 5 livingrock; the quest only counts them in your inventory. Mana reaches the plate from a spreader or through sparks ({{botania_runes/mana_spark}})."
+  ],
+  "sources": [
+   "botania:terrestrial_agglomeration_plate/terrasteel_ingot"
+  ]
+ },
+ "mana_spark": {
+  "de": [
+   "Ein Rezept gibt einen Funken: 2 beliebige Blütenblätter, 2 Lohenstaub und ein Goldklumpen. Lohenstaub kommt von Lohenruten aus dem Nether."
+  ],
+  "en": [
+   "One recipe makes one spark: 2 petals of any colour, 2 blaze powder and a gold nugget. Blaze powder comes from blaze rods out of the Nether."
+  ],
+  "sources": [
+   "botania:mana_spark (#botania:petals, count 1)"
+  ]
+ },
+ "terrasteel": {
+  "de": [
+   "Ein Barren kostet 500 000 Mana. Lad mehrere Becken vorher voll und verbinde sie mit Funken mit der Platte, dann geht es schneller.",
+   "Der [[botania:mana_diamond]] (10 000 Mana) und die [[botania:mana_pearl]] (6 000 Mana) kommen noch dazu. Die zwei Barren hier sind schon Teil der 50 für den Obelisken, wenn du sie nicht verbaust."
+  ],
+  "en": [
+   "One ingot costs 500,000 mana. Fill several pools beforehand and connect them to the plate with sparks to speed it up.",
+   "The [[botania:mana_diamond]] (10,000 mana) and the [[botania:mana_pearl]] (6,000 mana) come on top. The two ingots here already count towards the obelisk's 50 if you do not use them."
+  ],
+  "sources": [
+   "botania:terrestrial_agglomeration_plate/terrasteel_ingot (mana 500000)",
+   "botania:mana_infusion/mana_diamond",
+   "kronwerke:magic/mana_pearl",
+   "config/kronwerke/goals.json"
+  ]
+ },
+ "terra_gear": {
+  "de": [
+   "Rezept senkrecht: zwei Terrastahlbarren über einem [[botania:livingwood_twig]]. Die Klinge kostet 2 Barren, die ganze Rüstung 12, das sind zusammen 14, die dem Obelisken fehlen."
+  ],
+  "en": [
+   "Recipe in a column: two terrasteel ingots above a [[botania:livingwood_twig]]. The blade costs 2 ingots, the full armour 12, together 14 that the obelisk does not get."
+  ],
+  "sources": [
+   "botania:terra_blade",
+   "botania:terrasteel_helmet (and the other three pieces)"
+  ]
+ },
+ "pearl_factory": {
+  "de": [
+   "Enderperlen ohne Jagd liefert der Mechanical Spawner: Im erhitzten Mixer werden eine Enderperle und 100 mB zufällige Spawnflüssigkeit zu 250 mB Enderman-Spawnflüssigkeit, das reicht für zweieinhalb Endermen ({{create_addons/mob_fluids}}).",
+   "Am Obelisken gibt Schleich-Rechtsklick **nur die Reihen des Hauptinventars** ab, nicht Hotbar, Nebenhand oder den Inhalt eines Rucksacks. Leer den Rucksack vorher ins Inventar."
+  ],
+  "en": [
+   "The Mechanical Spawner supplies ender pearls without hunting: in a heated mixer one ender pearl and 100 mB of random spawn fluid make 250 mB of enderman spawn fluid, enough for two and a half endermen ({{create_addons/mob_fluids}}).",
+   "At the obelisk, sneak and right click hands in **only the main inventory rows**, not the hotbar, offhand or the contents of a backpack. Empty the backpack into your inventory first."
+  ],
+  "sources": [
+   "create_mechanical_spawner:mixing/spawn_fluid_enderman",
+   "create_mechanical_spawner:spawner/enderman (100 mB)",
+   "core: src/main/java/de/kronwerke/core/goal/GoalManager.java (depositAll, slots 9 to 35)",
+   "core: src/main/java/de/kronwerke/core/obelisk/Obelisk.java (obelisk.all_ask)"
+  ]
+ },
+ "terra_line": {
+  "de": [
+   "Die 50 sind ein Grundwert für 30 aktive Spieler, die echte Zahl siehst du mit /kw goals ({{start_here/o_scale}}). Jeder Barren zählt am Obelisken 20 Punkte, eine Manaperle 2.",
+   "Für 50 Barren brauchst du 50 Diamanten für die Manadiamanten. Sammle sie in der Farmwelt, bevor du die Mana-Straße baust."
+  ],
+  "en": [
+   "The 50 is a base value for 30 active players; /kw goals shows the real number ({{start_here/o_scale}}). Each ingot is worth 20 points at the obelisk, a mana pearl 2.",
+   "50 ingots need 50 diamonds for the mana diamonds. Collect them in the farm world before you build the mana line."
+  ],
+  "sources": [
+   "config/kronwerke/goals.json (stage2 magic: terrasteel base 50 weight 20, mana_pearl weight 2)",
+   "botania:terrestrial_agglomeration_plate/terrasteel_ingot"
+  ]
+ },
+ "rune_core": {
+  "de": [
+   "Acht Runenkerne verbrauchen 8 Terrastahlbarren, 16 Manaperlen, 16 Messingbleche und je 8 Wasser-, Luft-, Feuer- und Erdrunen. Die Bleche presst die Mechanische Presse ({{create_brass/brass_sheet}}).",
+   "Jeder Kern bringt 300 Punkte auf die Magie-Säule, so viel wie 15 Terrastahlbarren."
+  ],
+  "en": [
+   "Eight rune cores use up 8 terrasteel ingots, 16 mana pearls, 16 brass sheets and 8 each of the Runes of Water, Air, Fire and Earth. The mechanical press makes the sheets ({{create_brass/brass_sheet}}).",
+   "Each core puts 300 points on the magic pillar, as much as 15 terrasteel ingots."
+  ],
+  "sources": [
+   "kronwerke:milestones/rune_core",
+   "config/kronwerke/goals.json (rune_core weight 300, fixed)"
+  ]
+ },
+ "obelisk": {
+  "de": [
+   "Für Schleich-Rechtsklick brauchst du einen Gegenstand in der Hand, und du klickst zweimal innerhalb von 5 Sekunden. Abgegeben werden nur die Reihen des Hauptinventars, Hotbar und Nebenhand bleiben. Schleichen mit leerer Hand zeigt deine Gaben, [Rückgängig] im Chat holt die letzte Abgabe 10 Sekunden lang zurück.",
+   "Bei 98 Prozent nimmt der Obelisk nichts mehr an, bis das Event stattfindet ({{start_here/o_event}}). Danach geht es weiter mit {{alfheim/core}}."
+  ],
+  "en": [
+   "To sneak and right click you need an item in your hand, and you click twice within 5 seconds. Only the main inventory rows are handed in; hotbar and offhand stay. Sneaking with an empty hand shows your contributions, and [Undo] in chat takes the last deposit back for 10 seconds.",
+   "At 98 percent the obelisk takes nothing more until the event ({{start_here/o_event}}). After that it goes on with {{alfheim/core}}."
+  ],
+  "sources": [
+   "core: src/main/java/de/kronwerke/core/obelisk/Obelisk.java (allArmed 5000 ms, ledger on empty hand, undoLink)",
+   "core: src/main/java/de/kronwerke/core/goal/GoalManager.java (depositAll)",
+   "config/kronwerke/goals.json (holdAt 0.98)"
+  ],
+  "client": [
+   "English text of the chat link [Rückgängig] in an English client"
+  ]
+ },
+ "lenses_power": {
+  "de": [
+   "Jede Linse kostet eine eigene Manalinse und eine Elementrune, zusammen also 4 Manalinsen und je eine Elementrune. Plan die Runen mit ein, denn auch Platte und Runenkerne brauchen sie."
+  ],
+  "en": [
+   "Each lens costs its own mana lens and one element rune, so 4 mana lenses and one of each element rune in total. Count these runes in, as the plate and the rune cores need them too."
+  ],
+  "sources": [
+   "botania:velocity_lens",
+   "botania:potency_lens",
+   "botania:resistance_lens",
+   "botania:efficiency_lens"
+  ]
+ },
+ "lenses_tool": {
+  "de": [
+   "Den [[botania:pulse_mana_spreader]] baust du in {{botania/pulse_spreader}}. Die Magnetisierungslinse ist zugleich Zutat für den Ring der Magnetisierung ({{botania_runes/baubles_rings}})."
+  ],
+  "en": [
+   "You build the [[botania:pulse_mana_spreader]] in {{botania/pulse_spreader}}. The magnetizing lens is also the ingredient of the Ring of Magnetization ({{botania_runes/baubles_rings}})."
+  ],
+  "sources": [
+   "botania:bore_lens",
+   "botania:magnetizing_lens",
+   "botania:kindle_lens",
+   "botania:ring_of_magnetization"
+  ]
+ },
+ "mana_blaster": {
+  "de": [
+   "Den [[botania:pulse_mana_spreader]] dafür gibt es in {{botania/pulse_spreader}}. Statt eines Lebeholzstamms geht jedes Lebeholz aus dem Tag, auch entrindet."
+  ],
+  "en": [
+   "The [[botania:pulse_mana_spreader]] for it comes from {{botania/pulse_spreader}}. Any livingwood log from the tag works in place of the plain log, stripped too."
+  ],
+  "sources": [
+   "botania:mana_blaster (#botania:livingwood_logs)",
+   "botania jar: data/botania/tags/item/livingwood_logs.json"
+  ]
+ },
+ "rods": {
+  "de": [
+   "Beide Ruten brauchen nur eine Elementrune und einen [[botania:livingwood_twig]] ({{botania/twig}}), sie sind also günstige erste Runen-Werkzeuge. Mana ziehen sie aus Tafel oder Manaband im Inventar."
+  ],
+  "en": [
+   "Both rods need just one element rune and a [[botania:livingwood_twig]] ({{botania/twig}}), so they are cheap first rune tools. They draw mana from a tablet or Band of Mana in your inventory."
+  ],
+  "sources": [
+   "botania:rod_of_the_lands",
+   "botania:rod_of_the_skies"
+  ]
+ },
+ "incense": {
+  "de": [
+   "Das Stäbchen hat **nur einen Zweig**: unten links der [[botania:livingwood_twig]], in der Mitte Lohenstaub, oben rechts die Ghast-Träne. Ghast-Tränen lassen Ghasts im Nether fallen.",
+   "Gefüllt wird es in der {{botania_runes/brewery}} wie eine Ampulle."
+  ],
+  "en": [
+   "The stick has **only one twig**: the [[botania:livingwood_twig]] bottom left, blaze powder in the middle, the ghast tear top right. Ghasts in the Nether drop ghast tears.",
+   "You fill it in the {{botania_runes/brewery}} like a vial."
+  ],
+  "sources": [
+   "botania:incense_stick (pattern '  G', ' B ', 'T  ')",
+   "botania:incense_plate"
+  ]
+ },
+ "enchanter": {
+  "de": [
+   "Ein [[botania:mana_pylon]] kostet 2 Gold, 2 Manastahl und einen [[botania:mana_diamond]], sechs Stück also sechs Diamanten. Der Manaverzauberer ist in der Botania-Config dieses Servers eingeschaltet.",
+   "Auch jeder Naturapylon für das Elfenportal wird aus einem Manapylon gebaut ({{alfheim/frame}})."
+  ],
+  "en": [
+   "A [[botania:mana_pylon]] costs 2 gold, 2 manasteel and a [[botania:mana_diamond]], so six of them cost six diamonds. The Mana Enchanter is switched on in this server's Botania config.",
+   "Each natura pylon for the elven gateway is also built from a mana pylon ({{alfheim/frame}})."
+  ],
+  "sources": [
+   "botania:mana_pylon",
+   "srv/config/botania-common.toml (manaEnchanter = true)",
+   "botania:natura_pylon (mana_pylon)"
+  ]
+ },
+ "fluxfield": {
+  "de": [
+   "Das Flussfeld braucht keine Rune, nur Lebestein, Redstoneblöcke und einen Manastahlbarren. Es ist der einfachste Weg, Mana aus Endoflammen in Strom für Mekanism zu verwandeln."
+  ],
+  "en": [
+   "The fluxfield needs no rune, just livingrock, redstone blocks and one manasteel ingot. It is the simplest way to turn mana from Endoflames into power for Mekanism."
+  ],
+  "sources": [
+   "botania:mana_fluxfield"
+  ]
+ },
+ "halo": {
+  "de": [
+   "Der [[botania:manufactory_halo]] ist formlos: Montage-Halo und ein [[botania:mana_diamond]]. Die Werkbank im Rezept darf jede aus dem Werkbank-Tag sein."
+  ],
+  "en": [
+   "The [[botania:manufactory_halo]] is shapeless: the Assembly Halo plus a [[botania:mana_diamond]]. The crafting table in the recipe can be any from the crafting table tag."
+  ],
+  "sources": [
+   "botania:assembly_halo (#c:player_workstations/crafting_tables)",
+   "botania:manufactory_halo"
+  ]
+ },
+ "terra_armor": {
+  "de": [
+   "Du brauchst die vier Manastahlteile ({{botania_runes/manasteel_gear}}) und je eine Jahreszeitenrune ({{botania_runes/rune_spring}} bis {{botania_runes/rune_winter}}), die verbraucht wird. Zu den 12 Barren kommen 8 Lebeholzzweige."
+  ],
+  "en": [
+   "You need the four manasteel pieces ({{botania_runes/manasteel_gear}}) and one season rune each ({{botania_runes/rune_spring}} to {{botania_runes/rune_winter}}), which is used up. On top of the 12 ingots come 8 livingwood twigs."
+  ],
+  "sources": [
+   "botania:terrasteel_helmet",
+   "botania:terrasteel_chestplate",
+   "botania:terrasteel_leggings",
+   "botania:terrasteel_boots"
+  ]
+ },
+ "terra_tools": {
+  "de": [
+   "Der Trümmerer kostet 4 Terrastahlbarren und eine [[botania:mana_tablet]], der Stutzer 4 Barren und Glowstone. Das sind 8 Barren, die dem Obelisken fehlen. Die Tafel im Trümmerer behält ihr Mana, das Rezept ist ein Mana-Upgrade."
+  ],
+  "en": [
+   "The Shatterer costs 4 terrasteel ingots and a [[botania:mana_tablet]], the Truncator 4 ingots and glowstone. That is 8 ingots the obelisk does not get. The tablet keeps its mana in the Shatterer, as the recipe is a mana upgrade."
+  ],
+  "sources": [
+   "botania:terra_shatterer (crafting_shaped_mana_upgrade)",
+   "botania:terra_truncator"
+  ]
+ }
+}

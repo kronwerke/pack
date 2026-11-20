@@ -1,0 +1,700 @@
+{
+ "portal": {
+  "de": [
+   "Die Ecken darfst du weglassen: Ein Rahmen von 4 mal 5 Blöcken braucht dann genau 10 [[minecraft:glowstone]]. Glowstone baust du an der Decke des Nethers ab ({{nether/glowstone}}).",
+   "Ein Feuerzeug zündet dieses Portal nicht, nur Wasser. Das Wasser muss als Quelle in den Rahmen, also mit dem Eimer direkt auf die Innenseite des unteren Rahmens klicken."
+  ],
+  "en": [
+   "You can leave out the corners: a 4 by 5 frame then takes exactly 10 [[minecraft:glowstone]]. Glowstone grows on the Nether ceiling ({{nether/glowstone}}).",
+   "Flint and steel does not light this portal, only water. Pour it as a source block inside the frame by clicking the bucket on the inner face of the bottom row."
+  ],
+  "sources": [
+   "aether:aether_portal (water ignites a glowstone frame)",
+   "srv/config/aether-server.toml (Disables Aether Portal creation = false)"
+  ],
+  "client": [
+   "the portal lights from water poured into the frame"
+  ]
+ },
+ "arrive": {
+  "de": [
+   "Das Begrüßungsgeschenk gibt es einmal pro Spieler: [[aether:golden_parachute]] und [[aether:book_of_lore]]. Fällst du von einer Insel, landest du in der Oberwelt über dem Punkt, an dem du gefallen bist.",
+   "Im Aether brennen **keine Fackeln, Laternen und kein Feuer**, Feuerzeug und Feuerkugel gehen nicht. Nimm Ambrosium-Fackeln ({{aether/ambrosium}}). Ausgegossene Lava wird sofort zu Aerogel."
+  ],
+  "en": [
+   "The welcome gift comes once per player: a [[aether:golden_parachute]] and a [[aether:book_of_lore]]. If you fall off an island you end up in the Overworld above the spot where you fell.",
+   "In the Aether **torches, lanterns and fire do not work**, flint and steel and fire charges are blocked. Use Ambrosium Torches ({{aether/ambrosium}}). Poured lava turns into Aerogel at once."
+  ],
+  "sources": [
+   "aether:loot_table/advancements/enter_aether.json",
+   "srv/config/aether-common.toml (Gives starting loot on entry = true)",
+   "aether:torch_block_ban, aether:lantern_block_ban, aether:fire_block_ban, aether:flint_and_steel_item_ban (biome #aether:ultracold = all Aether biomes)",
+   "srv/config/aether-server.toml"
+  ],
+  "client": [
+   "you land in the Overworld above the point where you fell"
+  ]
+ },
+ "parachute": {
+  "de": [
+   "Der Fallschirm muss nur irgendwo im Inventar liegen. Neu bauen: 4 [[aether:golden_aercloud]] im Quadrat ergeben einen Golden Parachute ({{aether/cold_parachute}}).",
+   "Für den Notfall reicht auch eine Lage [[aether:cold_aercloud]] unter deiner Baustelle, auf ihr nimmst du keinen Fallschaden."
+  ],
+  "en": [
+   "The parachute only has to be somewhere in your inventory. To make a new one, 4 [[aether:golden_aercloud]] in a square give a Golden Parachute ({{aether/cold_parachute}}).",
+   "For safety a layer of [[aether:cold_aercloud]] under your building site also helps: you take no fall damage on it."
+  ],
+  "sources": [
+   "aether:golden_parachute (pattern ##/##)",
+   "aether:tags/item/deployable_parachutes"
+  ],
+  "client": [
+   "the parachute opens on its own from anywhere in the inventory"
+  ]
+ },
+ "cold_aercloud": {
+  "de": [
+   "Cold Aerclouds wachsen zwischen Y 32 und Y 96, Golden Aerclouds erst darüber bis Y 128. Mit [[aether:skyroot_pickaxe]] oder anderem Skyroot-Werkzeug fallen zwei Wolken pro Block.",
+   "Brauchst du viele, nimm sie aus dem Freezer: Dort wird aus einer Cold Aercloud eine Blue Aercloud, im Altar eine Golden Aercloud."
+  ],
+  "en": [
+   "Cold Aerclouds generate between Y 32 and Y 96, Golden Aerclouds only above that up to Y 128. With a [[aether:skyroot_pickaxe]] or another skyroot tool each block drops two clouds.",
+   "Cold Aerclouds are also the raw material for the others: the Freezer turns one into a Blue Aercloud, the Altar into a Golden Aercloud."
+  ],
+  "sources": [
+   "aether:worldgen/placed_feature/cold_aercloud.json, golden_aercloud.json",
+   "aether:loot_table/blocks/cold_aercloud.json (aether:double_drops)",
+   "aether:blue_aercloud_freezing",
+   "aether:golden_aercloud_enchanting"
+  ]
+ },
+ "blue_aercloud": {
+  "de": [
+   "Am einfachsten kommst du über Blue Swets an [[aether:blue_aercloud]]: Laut Beutetabelle lässt jeder getötete Blue Swet immer einen Swet Ball und eine Blue Aercloud fallen. Im Freezer braucht eine Cold Aercloud 20 Sekunden.",
+   "Die Quest hakt sich ab, sobald du in den Block hineinläufst oder darauf springst."
+  ],
+  "en": [
+   "The easiest source are Blue Swets: by their loot table every one drops a Swet Ball and a [[aether:blue_aercloud]]. In the Freezer a Cold Aercloud takes 20 seconds.",
+   "The quest ticks as soon as you step into or bounce on the block."
+  ],
+  "sources": [
+   "aether:loot_table/entities/blue_swet.json (two pools, no chance condition)",
+   "aether:blue_aercloud_freezing (cookingtime 400)",
+   "aether:advancement/blue_aercloud.json (minecraft:enter_block)"
+  ]
+ },
+ "cold_parachute": {
+  "de": [
+   "Der Cold Parachute ist billig, also trag zwei oder drei mit. Die Golden Aercloud aus dem [[aether:altar]] kostet 4 Ambrosium Shards (je 12,5 Sekunden Brennzeit, 50 Sekunden pro Wolke). 4 davon ergeben einen [[aether:golden_parachute]] mit 20 Stürzen.",
+   "Die Belohnung dieser Quest sind schon 4 Golden Aerclouds, also genau ein Golden Parachute."
+  ],
+  "en": [
+   "The Cold Parachute is cheap, so carry two or three. A Golden Aercloud from the [[aether:altar]] costs 4 Ambrosium Shards (12.5 seconds of fuel each, 50 seconds per cloud). 4 of them make a [[aether:golden_parachute]] with 20 uses.",
+   "This quest already rewards 4 Golden Aerclouds, exactly one Golden Parachute."
+  ],
+  "sources": [
+   "aether:cold_parachute, aether:golden_parachute (pattern ##/##)",
+   "aether:golden_aercloud_enchanting (cookingtime 1000)",
+   "aether:data_maps/item/altar_fuel.json (shard 250)"
+  ]
+ },
+ "blue_berry": {
+  "de": [
+   "Ein Busch gibt 1 bis 3 [[aether:blue_berry]], mit Skyroot-Werkzeug doppelt so viele. Steht er auf Enchanted Aether Grass, kommt mit 50 Prozent Chance **eine** Beere dazu, nicht das Doppelte ({{aether/ae_enchanted_grass}}).",
+   "Mit Behutsamkeit bekommst du den ganzen Busch und kannst dir einen Garten anlegen. Die Beeren veredelst du im Altar ({{aether/enchanted_berry}})."
+  ],
+  "en": [
+   "A bush drops 1 to 3 [[aether:blue_berry]], twice that with a skyroot tool. On Enchanted Aether Grass there is a 50 percent chance of **one** extra berry, not double ({{aether/ae_enchanted_grass}}).",
+   "With Silk Touch you get the whole bush and can plant a garden. The Altar turns the berries into Enchanted Berries ({{aether/enchanted_berry}})."
+  ],
+  "sources": [
+   "aether:loot_table/blocks/berry_bush.json (1 to 3, aether:double_drops, silk touch drops the bush)",
+   "aether jar: com/aetherteam/aether/loot/modifiers/EnchantedGrassModifier (nextBoolean, adds 1)",
+   "aether:loot_modifiers/enchanted_grass_berry_bush.json"
+  ]
+ },
+ "enchanted_berry": {
+  "de": [
+   "Im [[aether:altar]] braucht eine Beere 250 Ticks, genau die Brennzeit eines [[aether:ambrosium_shard]]. Ein [[aether:ambrosium_block]] brennt zehnmal so lang und reicht für 10 Beeren.",
+   "Gummy Swets füllen auf diesem Server nur Hunger auf, keine Herzen. Zum Heilen nimm Healing Stones (25 Sekunden im Altar) oder rohe Shards."
+  ],
+  "en": [
+   "In the [[aether:altar]] one berry takes 250 ticks, exactly the burn time of one [[aether:ambrosium_shard]]. An [[aether:ambrosium_block]] burns ten times as long and does 10 berries.",
+   "On this server Gummy Swets only restore hunger, not health. For healing use Healing Stones (25 seconds in the Altar) or raw shards."
+  ],
+  "sources": [
+   "aether:enchanted_berry_enchanting (cookingtime 250)",
+   "aether:data_maps/item/altar_fuel.json (shard 250, block 2500)",
+   "srv/config/aether-server.toml (Gummy Swets restore health = false, Ambrosium Shards are edible = true)",
+   "aether:healing_stone_enchanting (500)"
+  ]
+ },
+ "skyroot": {
+  "de": [
+   "Aus den Stämmen der Golden Oaks werden ebenfalls Skyroot Planks. Fällst du eine Golden Oak ohne Zanite Axe, bekommst du nur [[aether:skyroot_log]], der Golden Amber geht verloren.",
+   "Das langsamere Abbauen mit Werkzeug aus der Oberwelt ist auf dem Server eingeschaltet. Bau also zuerst {{aether/skyroot_tools}}."
+  ],
+  "en": [
+   "Golden Oak logs also make Skyroot Planks. If you fell a Golden Oak without a Zanite Axe you only get [[aether:skyroot_log]] and lose the Golden Amber.",
+   "The mining penalty for Overworld tools is turned on on the server, so make {{aether/skyroot_tools}} first."
+  ],
+  "sources": [
+   "aether:tags/item/crafts_skyroot_planks.json",
+   "aether:loot_table/blocks/golden_oak_log.json",
+   "srv/config/aether-server.toml (Debuff non-Aether tools = true)"
+  ]
+ },
+ "skyroot_tools": {
+  "de": [
+   "Das Doppeln gilt für Holystone, Ambrosium Ore, Aerclouds, Beerenbüsche, Skyroot- und Golden-Oak-Stämme, Laub und Aether-Erde. **Zanite Ore und Icestone doppelt es nicht**, dafür brauchst du Glück.",
+   "Der [[aether:skyroot_bucket]] (2 Bretter oben links und rechts, eines in der Mitte darunter) ersetzt im Aether den Eisen-Eimer."
+  ],
+  "en": [
+   "Doubling works on Holystone, Ambrosium Ore, Aerclouds, berry bushes, Skyroot and Golden Oak logs, leaves and Aether dirt. **It does not double Zanite Ore or Icestone**; use Fortune for those.",
+   "The [[aether:skyroot_bucket]] (planks top left and top right, one in the middle below) replaces the iron bucket in the Aether."
+  ],
+  "sources": [
+   "aether:loot_table/blocks/*.json (aether:double_drops on holystone, ambrosium_ore, aerclouds, berry_bush, skyroot_log, golden_oak_log, leaves, aether_dirt; not on zanite_ore, icestone)",
+   "aether:skyroot_bucket (pattern # #/ # )"
+  ]
+ },
+ "holystone": {
+  "de": [
+   "Mit der Skyroot Pickaxe gibt jeder Block zwei [[aether:holystone]], 64 Stück sind also 32 Blöcke Arbeit. Ultimine hilft auch hier.",
+   "Für Altar, Incubator und Freezer zusammen brauchst du 21 Holystone. Mit Holystone Bricks und Mossy Holystone baust du schöner, der Steinschneider macht daraus Treppen, Stufen und Mauern."
+  ],
+  "en": [
+   "With the Skyroot Pickaxe every block drops two [[aether:holystone]], so 64 is 32 blocks of work. Ultimine helps here too.",
+   "Altar, Incubator and Freezer together take 21 Holystone. Holystone Bricks and Mossy Holystone look better, and the stonecutter makes stairs, slabs and walls from them."
+  ],
+  "sources": [
+   "aether:loot_table/blocks/holystone.json (aether:double_drops)",
+   "aether:altar, aether:incubator (8 each), aether:freezer (5)"
+  ]
+ },
+ "holystone_tools": {
+  "de": [
+   "Die Chance auf den zusätzlichen [[aether:ambrosium_shard]] liegt bei 1 zu 50 pro Block, für den das Werkzeug passt. Eine Holystone Axe im Wald bringt also nebenbei Brennstoff.",
+   "Danach geht es zu {{aether/zanite}} und {{aether/ambrosium}}."
+  ],
+  "en": [
+   "The chance of the extra [[aether:ambrosium_shard]] is 1 in 50 for every block the tool is right for, so a Holystone Axe in the forest also earns fuel.",
+   "Next come {{aether/zanite}} and {{aether/ambrosium}}."
+  ],
+  "sources": [
+   "aether jar: com/aetherteam/aether/item/tools/abilities/HolystoneTool (nextInt(50), isCorrectToolForDrops)",
+   "aether:holystone_pickaxe"
+  ]
+ },
+ "ambrosium": {
+  "de": [
+   "Ambrosium Ore liegt auf jeder Höhe bis Y 128 und ist das häufigste Erz. Skyroot Pickaxe und Glück stapeln sich, beides zusammen lohnt sich am meisten.",
+   "Ein Shard und ein [[aether:skyroot_stick]] ergeben 4 [[aether:ambrosium_torch]]. Sie sind die einzigen Fackeln, die im Aether brennen, und zugleich der Brennstoff des Incubators."
+  ],
+  "en": [
+   "Ambrosium Ore sits at every height up to Y 128 and is the most common ore. Skyroot Pickaxe and Fortune stack, so use both.",
+   "One shard over a [[aether:skyroot_stick]] gives 4 [[aether:ambrosium_torch]]. They are the only torches that burn in the Aether and also fuel the Incubator."
+  ],
+  "sources": [
+   "aether:worldgen/placed_feature/ambrosium_ore.json",
+   "aether:loot_table/blocks/ambrosium_ore.json (double_drops, fortune)",
+   "aether:ambrosium_torch (4)",
+   "aether:torch_block_ban",
+   "aether:data_maps/item/incubator_fuel.json"
+  ]
+ },
+ "zanite": {
+  "de": [
+   "Zanite Ore steckt zwischen Y 0 und Y 75 im Holystone. Hier verdoppelt die Skyroot Pickaxe nichts, nimm eine Spitzhacke mit Glück, sobald du eine hast.",
+   "Für das Nötigste rechne mit: 1 für den Altar, 5 für Zanite Pickaxe und Sword, 24 für die Rüstung, 2 für die Gloves."
+  ],
+  "en": [
+   "Zanite Ore sits in Holystone between Y 0 and Y 75. The Skyroot Pickaxe does not double it, so use a Fortune pickaxe once you have one.",
+   "Plan for 1 for the Altar, 5 for Zanite Pickaxe and Sword, 24 for the armour and 2 for the Gloves."
+  ],
+  "sources": [
+   "aether:worldgen/placed_feature/zanite_ore.json (above_bottom 0 to 75, dimension min_y 0)",
+   "aether:loot_table/blocks/zanite_ore.json (fortune, no double_drops)",
+   "aether:altar, aether:zanite_pickaxe, aether:zanite_sword"
+  ]
+ },
+ "zanite_gear": {
+  "de": [
+   "Die Zanite Pickaxe baut alles ab, was Eisen abbaut. Reparieren im Altar dauert pro Teil 37,5 Sekunden, also 3 Ambrosium Shards.",
+   "Die [[aether:zanite_axe]] brauchst du für {{aether/golden_amber}}. Danach kommen {{aether/gloves}} und {{aether/ae_zanite_armor}}."
+  ],
+  "en": [
+   "The Zanite Pickaxe mines everything iron mines. Repairing in the Altar takes 37.5 seconds per piece, which is 3 Ambrosium Shards.",
+   "You need the [[aether:zanite_axe]] for {{aether/golden_amber}}. Next come {{aether/gloves}} and {{aether/ae_zanite_armor}}."
+  ],
+  "sources": [
+   "aether:zanite_pickaxe_repairing (repairTime 750)",
+   "aether:data_maps/item/altar_fuel.json (shard 250)",
+   "aether:tags/item/golden_amber_harvesters.json",
+   "lore.item.aether.zanite_pickaxe"
+  ]
+ },
+ "golden_amber": {
+  "de": [
+   "Nur [[aether:zanite_axe]], Gravitite Axe und Valkyrie Axe holen [[aether:golden_amber]] aus den Stämmen, mit Glück mehr. Mit Behutsamkeit fällt der Stamm selbst, ohne Amber.",
+   "Aus dem Laub fallen Golden Oak Saplings (5 Prozent) und selten ein Goldener Apfel. Für 16 Golden Darts brauchst du 4 Amber, für den Dart Shooter einen weiteren ({{aether/dart_shooter}})."
+  ],
+  "en": [
+   "Only the [[aether:zanite_axe]], Gravitite Axe and Valkyrie Axe get [[aether:golden_amber]] from the logs, more with Fortune. Silk Touch drops the log itself and no amber.",
+   "The leaves drop Golden Oak Saplings (5 percent) and rarely a golden apple. 16 Golden Darts take 4 amber, the Dart Shooter one more ({{aether/dart_shooter}})."
+  ],
+  "sources": [
+   "aether:loot_table/blocks/golden_oak_log.json",
+   "aether:tags/item/golden_amber_harvesters.json",
+   "aether:loot_table/blocks/golden_oak_leaves.json",
+   "aether:golden_dart (4), aether:golden_dart_shooter"
+  ]
+ },
+ "altar": {
+  "de": [
+   "Brennstoff: ein [[aether:ambrosium_shard]] hält 12,5 Sekunden, ein [[aether:ambrosium_block]] 125 Sekunden. Rechne die Shards aus der Zeit: Golden Aercloud 4, Healing Stone 2, Enchanted Berry 1.",
+   "Reparieren kostet nach Material: Skyroot 1 Shard, Holystone 2, Eisen und Zanite 3, Diamant 6. Gravitite Ore lässt sich erst mit {{aether/gold}} in Stufe 3 verzaubern, weil das Ergebnis dort gesperrt ist."
+  ],
+  "en": [
+   "Fuel: one [[aether:ambrosium_shard]] lasts 12.5 seconds, an [[aether:ambrosium_block]] 125 seconds. Count the shards from the time: Golden Aercloud 4, Healing Stone 2, Enchanted Berry 1.",
+   "Repairs cost by material: skyroot 1 shard, holystone 2, iron and zanite 3, diamond 6. Gravitite Ore can only be enchanted in stage 3 (Steel Works), because the result is locked until then ({{aether/gold}})."
+  ],
+  "sources": [
+   "aether:data_maps/item/altar_fuel.json",
+   "aether:*_enchanting (cookingtime)",
+   "aether:*_repairing (repairTime 250/500/750/1500)",
+   "kubejs/data/kronwerke/chapters/stages/stage3.json (aether:enchanted_gravitite)",
+   "docs/STAGES.md (machine locks since Core 0.26.0)"
+  ]
+ },
+ "incubator": {
+  "de": [
+   "Ein Moa Egg braucht 1000 Ticks, also **2 [[aether:ambrosium_torch]]**. Ein Stapel ist nicht nötig.",
+   "Die Torch für das Rezept machst du aus einem Ambrosium Shard und einem Skyroot Stick. Weiter geht es mit {{aether/moa_egg}}."
+  ],
+  "en": [
+   "A Moa Egg takes 1000 ticks, so **2 [[aether:ambrosium_torch]]**. You do not need a full stack.",
+   "The torch for the recipe comes from an Ambrosium Shard over a Skyroot Stick. Next is {{aether/moa_egg}}."
+  ],
+  "sources": [
+   "aether:blue_moa_incubation (incubationtime 1000)",
+   "aether:data_maps/item/incubator_fuel.json (torch 500)",
+   "aether:incubator (HHH/HTH/HHH)"
+  ]
+ },
+ "freezer": {
+  "de": [
+   "[[aether:icestone]] liegt bis Y 128 und fällt nicht doppelt. Ein Block hält 20 Sekunden: genug für 2 Eis aus Wassereimern oder eine Blue Aercloud.",
+   "Der Ice Ring und das Ice Pendant aus Eisen oder Gold brauchen je 40 Sekunden, also 2 Icestone ({{aether/pendant_ring}}). Gesetztes Icestone friert Wasser und Lava daneben ein, auch ohne Freezer."
+  ],
+  "en": [
+   "[[aether:icestone]] generates up to Y 128 and is not doubled. One block lasts 20 seconds: enough for 2 ice from water buckets or one Blue Aercloud.",
+   "Ice Ring and Ice Pendant from iron or gold take 40 seconds each, so 2 Icestone ({{aether/pendant_ring}}). Placed Icestone freezes water and lava next to it even without a Freezer."
+  ],
+  "sources": [
+   "aether:worldgen/placed_feature/icestone_ore.json",
+   "aether:data_maps/item/freezer_fuel.json (icestone 400)",
+   "aether:*_freezing (cookingtime)",
+   "aether:icestone_freeze_water, aether:icestone_freeze_lava",
+   "aether:freezer (HHH/HIH/PPP)"
+  ]
+ },
+ "moa_egg": {
+  "de": [
+   "Wild laufen Blue Moas am häufigsten, White Moas halb so oft, Black Moas ein Viertel so oft. Die Silber-Dungeons enthalten weiße und blaue Eier, nie schwarze.",
+   "Die Quest hakt sich bei jedem Moa Egg im Inventar ab. Brüte es im Incubator aus ({{aether/hatch}})."
+  ],
+  "en": [
+   "Blue Moas spawn most often, White Moas half as often and Black Moas a quarter as often. Silver dungeon chests hold white and blue eggs, never black ones.",
+   "The quest ticks with any Moa Egg in your inventory. Hatch it in the Incubator ({{aether/hatch}})."
+  ],
+  "sources": [
+   "aether:aether/moa_type/blue.json, white.json, black.json (spawn_chance 100/50/25)",
+   "aether:loot_table/chests/dungeon/silver/silver_dungeon_loot.json",
+   "aether:advancement/obtain_egg.json (#aether:moa_eggs)"
+  ]
+ },
+ "aechor": {
+  "de": [
+   "Jede Aechor Plant lässt genau ein [[aether:aechor_petal]] fallen, mit Plünderung bis zu zwei. Für ein Küken brauchst du 3 Blätter.",
+   "Ihre Nadeln vergiften dich, also halt einen [[aether:white_apple]] oder einen Remedy Bucket bereit ({{aether/ae_remedy}}). Nur eine [[aether:white_flower]] oder [[aether:purple_flower]] auf Enchanted Aether Grass hält sie fern, keine Blumen aus der Oberwelt."
+  ],
+  "en": [
+   "Every Aechor Plant drops exactly one [[aether:aechor_petal]], up to two with Looting. A chick needs 3 petals.",
+   "Their needles poison you, so keep a [[aether:white_apple]] or a Remedy Bucket ready ({{aether/ae_remedy}}). Only a [[aether:white_flower]] or [[aether:purple_flower]] on Enchanted Aether Grass keeps them away, Overworld flowers do not."
+  ],
+  "sources": [
+   "aether:loot_table/entities/aechor_plant.json",
+   "aether:tags/block/aechor_plant_spawnable_deterrent.json",
+   "aether jar: com/aetherteam/aether/entity/passive/Moa (mobInteract, amountFed)"
+  ]
+ },
+ "hatch": {
+  "de": [
+   "Das Küken frisst nur, wenn es Hunger hat, und nach **3** [[aether:aechor_petal]] ist es erwachsen: das erste Blatt macht es älter, das zweite noch älter, das dritte erwachsen. Ein viertes nimmt es nicht mehr.",
+   "Mit dem [[aether:nature_staff]] (Zanite Gemstone über Skyroot Stick) lässt du nur selbst gezogene Moas sitzen oder folgen. Der Stab nutzt sich dabei ab. Weiter mit {{aether/ride}}."
+  ],
+  "en": [
+   "The chick only eats when hungry, and after **3** [[aether:aechor_petal]] it is grown: the first and second petal age it, the third makes it an adult. It does not take a fourth.",
+   "The [[aether:nature_staff]] (Zanite Gemstone over a Skyroot Stick) makes only Moas you raised yourself sit or follow. It loses durability with each use. Next is {{aether/ride}}."
+  ],
+  "sources": [
+   "aether jar: com/aetherteam/aether/entity/passive/Moa.mobInteract (amountFed < 3, fed 3 sets setBaby(false), nature staff hurtAndBreak)",
+   "aether:nature_staff (Z over /)",
+   "aether:advancement/incubate_moa.json"
+  ],
+  "client": [
+   "the chick shows when it is hungry"
+  ]
+ },
+ "ride": {
+  "de": [
+   "Black Moa 8, White Moa 4, Blue Moa 3 Sprünge in der Luft. Alle drei laufen gleich schnell, die Farbe entscheidet nur die Sprünge.",
+   "Den [[minecraft:saddle]] gibt dir {{aether/hatch}}. Wilde Moas lassen sich nicht satteln. Die Quest hakst du selbst ab."
+  ],
+  "en": [
+   "Black Moa 8, White Moa 4, Blue Moa 3 mid air jumps. All three run at the same speed; the colour only decides the jumps.",
+   "{{aether/hatch}} gives you the [[minecraft:saddle]]. Wild Moas cannot be saddled. You tick this quest off yourself."
+  ],
+  "sources": [
+   "aether:aether/moa_type/*.json (max_jumps 8/4/3, speed 0.155)",
+   "aether jar: Moa.isSaddleable (player grown)"
+  ],
+  "client": [
+   "jump counter display above the hunger bar",
+   "wild Moas cannot be saddled"
+  ]
+ },
+ "swet": {
+  "de": [
+   "Jeder Blue Swet lässt einen [[aether:swet_ball]] und eine [[aether:blue_aercloud]] fallen, Golden Swets einen Glowstone-Block. Mit Plünderung je einer mehr.",
+   "Der Swet Ball düngt Aether-Erde und Erde zu Gras. Podsol und Nezel entstehen nur in passenden Biomen. Mit Faden ergibt er eine Leine."
+  ],
+  "en": [
+   "Every Blue Swet drops a [[aether:swet_ball]] and a [[aether:blue_aercloud]], Golden Swets a block of glowstone. Looting adds one each.",
+   "The Swet Ball turns Aether dirt and dirt into grass. Podzol and nylium only work in fitting biomes. With string it makes a lead."
+  ],
+  "sources": [
+   "aether:loot_table/entities/blue_swet.json, golden_swet.json",
+   "aether:swet_ball_* recipes (biome conditions)",
+   "aether:swet_lead"
+  ]
+ },
+ "cockatrice": {
+  "de": [
+   "Jeder lässt 2 bis 3 Federn fallen, mit Plünderung mehr. Federn brauchst du für Golden Darts ({{aether/dart_shooter}}).",
+   "Trag einen [[aether:white_apple]] oder einen [[aether:skyroot_remedy_bucket]] bei dir: Beide heilen das Gift des Aether, Milch nicht."
+  ],
+  "en": [
+   "Each one drops 2 to 3 feathers, more with Looting. Feathers go into Golden Darts ({{aether/dart_shooter}}).",
+   "Carry a [[aether:white_apple]] or a [[aether:skyroot_remedy_bucket]]: both cure the Aether's poison, milk does not."
+  ],
+  "sources": [
+   "aether:loot_table/entities/cockatrice.json",
+   "lore.item.aether.white_apple, lore.item.aether.skyroot_remedy_bucket"
+  ],
+  "client": [
+   "where Cockatrices spawn",
+   "milk does not cure inebriation"
+  ]
+ },
+ "zephyr": {
+  "de": [
+   "Zephyre lassen 0 bis 2 [[aether:cold_aercloud]] fallen, Aerwhales und Whirlwinds gar nichts.",
+   "Ein Golden Dart Shooter ({{aether/dart_shooter}}) trifft schnurgerade und holt Zephyre auf Distanz herunter, bevor sie dich wegpusten."
+  ],
+  "en": [
+   "Zephyrs drop 0 to 2 [[aether:cold_aercloud]], Aerwhales and Whirlwinds nothing at all.",
+   "A Golden Dart Shooter ({{aether/dart_shooter}}) fires in a straight line and brings Zephyrs down at range before they push you off."
+  ],
+  "sources": [
+   "aether:loot_table/entities/zephyr.json, aerwhale.json, whirlwind.json"
+  ]
+ },
+ "gloves": {
+  "de": [
+   "Die beiden Zanite Gemstones liegen mit **einem Feld Abstand** nebeneinander (# #), genauso bei Leder, Eisen, Gold und Diamant. Das Accessoire-Menü ist das eigene Menü des Aether, nicht das Standardmenü von Accessories.",
+   "Set-Fähigkeiten brauchen auf diesem Server die passenden Handschuhe. Gesperrte Accessoires legt der Server zurück ins Inventar."
+  ],
+  "en": [
+   "The two Zanite Gemstones go in one row **with a gap** between them (# #), the same for leather, iron, gold and diamond. The accessory menu is the Aether's own one, not the default Accessories menu.",
+   "On this server set abilities need the matching gloves. Locked accessories are put back into your inventory by the server."
+  ],
+  "sources": [
+   "aether:zanite_gloves (pattern '# #')",
+   "srv/config/aether-common.toml (Use default Accessories' menu = false)",
+   "srv/config/aether-server.toml (Require gloves for set abilities = true)",
+   "core: src/main/java/de/kronwerke/core/lock/LockedAccessories.java"
+  ],
+  "client": [
+   "the accessory menu button in the inventory",
+   "slot counts of the Aether accessory menu"
+  ]
+ },
+ "pendant_ring": {
+  "de": [
+   "Ring: 4 Gemstones in Rautenform um eine leere Mitte. Pendant: 5 Fäden als Bogen, der Gemstone unten in der Mitte. Zanite Ring und Pendant reparierst du im Altar (25 Sekunden, 2 Shards).",
+   "Für Ice Ring und Ice Pendant reichen Iron oder Golden Ring und Pendant, 40 Sekunden im Freezer. Sie frieren nur Quellblöcke ein, fließendes Wasser bleibt."
+  ],
+  "en": [
+   "Ring: 4 gemstones in a diamond shape around an empty middle. Pendant: 5 string in an arch with the gemstone bottom centre. Zanite Ring and Pendant are repaired in the Altar (25 seconds, 2 shards).",
+   "Ice Ring and Ice Pendant come from an Iron or Golden Ring or Pendant, 40 seconds in the Freezer. They freeze only source blocks, not flowing water."
+  ],
+  "sources": [
+   "aether:zanite_ring ( # /# #/ # ), aether:zanite_pendant (SSS/S S/ # )",
+   "aether:zanite_ring_repairing, aether:zanite_pendant_repairing (500)",
+   "aether:ice_ring_from_freezing (800)",
+   "aether:accessory_freeze_water, aether:accessory_freeze_lava (level 0)"
+  ]
+ },
+ "capes": {
+  "de": [
+   "Das Blue Cape geht aus blauer, hellblauer oder türkiser Wolle. Swet Cape gibt es in den normalen Truhen des Bronze-Dungeons, das Agility Cape in der Schatztruhe des Sliders, den Invisibility Cloak in der Schatztruhe der Valkyrie Queen.",
+   "Das Valkyrie Cape ist bis {{aether/gold}} in Stufe 3 gesperrt."
+  ],
+  "en": [
+   "The Blue Cape takes blue, light blue or cyan wool. The Swet Cape is in the normal bronze dungeon chests, the Agility Cape in the Slider's treasure chest, the Invisibility Cloak in the Valkyrie Queen's treasure chest.",
+   "The Valkyrie Cape stays locked until stage 3 (Steel Works)."
+  ],
+  "sources": [
+   "aether:blue_cape_cyan_wool, aether:blue_cape_light_blue_wool, aether:blue_cape_blue_wool",
+   "aether:loot_table/chests/dungeon/bronze/bronze_dungeon_loot.json, bronze_dungeon_reward.json, silver_dungeon_treasure.json",
+   "kubejs/data/kronwerke/chapters/stages/stage3.json (aether:valkyrie_cape)"
+  ]
+ },
+ "dart_shooter": {
+  "de": [
+   "16 [[aether:golden_dart]] kosten 4 Federn, 4 Skyroot Sticks und 4 [[aether:golden_amber]]. Federn bekommst du von Cockatrices und Moas ({{aether/cockatrice}}).",
+   "Der Skyroot Poison Bucket ist ein [[aether:skyroot_bucket]], den du an einer lebenden Aechor Plant füllst. Der Enchanted Dart Shooter braucht 37,5 Sekunden im Altar, also 3 Ambrosium Shards."
+  ],
+  "en": [
+   "16 [[aether:golden_dart]] cost 4 feathers, 4 Skyroot Sticks and 4 [[aether:golden_amber]]. Feathers drop from Cockatrices and Moas ({{aether/cockatrice}}).",
+   "The Skyroot Poison Bucket is a [[aether:skyroot_bucket]] filled at a living Aechor Plant. The Enchanted Dart Shooter takes 37.5 seconds in the Altar, so 3 Ambrosium Shards."
+  ],
+  "sources": [
+   "aether:golden_dart (F / G, 4)",
+   "aether:golden_dart_shooter",
+   "aether:enchanted_dart_shooter_enchanting (750)",
+   "aether:loot_table/entities/moa.json, cockatrice.json"
+  ]
+ },
+ "bronze": {
+  "de": [
+   "Die Sentries lassen [[aether:carved_stone]] und Sentry Stone fallen, das ist der schnellste Weg zu den 16 Blöcken. Der Slider selbst lässt nach dem Kampf 7 bis 9 fallen.",
+   "In den normalen Truhen findest du unter anderem Swet Cape, Ice Pendant, Iron und Golden Ring und Zanite-Werkzeug. Danach: {{aether/slider}}."
+  ],
+  "en": [
+   "Sentries drop [[aether:carved_stone]] and Sentry Stone, the fastest way to the 16 blocks. The Slider itself drops 7 to 9 after the fight.",
+   "The normal chests hold among others the Swet Cape, Ice Pendant, Iron and Golden Ring and zanite tools. Next: {{aether/slider}}."
+  ],
+  "sources": [
+   "aether:loot_table/entities/sentry.json, slider.json",
+   "aether:loot_table/chests/dungeon/bronze/bronze_dungeon_loot.json"
+  ]
+ },
+ "slider": {
+  "de": [
+   "Jede Spitzhacke zählt, auch aus der Oberwelt, aber Zanite ist schneller. Der [[aether:bronze_dungeon_key]] öffnet die Treasure Chest.",
+   "**Die Treasure Chest ist eine einzige Truhe pro Dungeon**, sie gehört nicht zu Lootr. Teilt die Beute untereinander auf. Neptune Armor, Phoenix Bow und Valkyrie Lance kannst du mitnehmen und lagern, aber erst in Stufe 3 halten oder tragen."
+  ],
+  "en": [
+   "Any pickaxe counts, Overworld ones too, but zanite is faster. The [[aether:bronze_dungeon_key]] opens the Treasure Chest.",
+   "**The Treasure Chest is one chest per dungeon** and not a Lootr chest, so share the loot. Neptune Armor, Phoenix Bow and Valkyrie Lance can be carried and stored, but only held or worn in stage 3 (Steel Works)."
+  ],
+  "sources": [
+   "aether:tags/item/slider_damaging_items.json (#minecraft:pickaxes)",
+   "aether:loot_table/entities/slider.json",
+   "aether jar: com/aetherteam/aether/blockentity/TreasureChestBlockEntity (one locked container)",
+   "lootr jar: data/lootr/tags/block/convert/chests.json (minecraft:chest, #c:chests/wooden)",
+   "docs/STAGES.md (locked items)"
+  ],
+  "client": [
+   "Treasure Chest is shared and not per player"
+  ]
+ },
+ "silver": {
+  "de": [
+   "Die Wände aus Angelic Stone kannst du erst nach dem Sieg über die Königin abbauen. Schneller geht es mit den Truhen: In ihnen liegt oft schon ein [[aether:angelic_stone]].",
+   "In den Truhen liegen unter anderem weiße und blaue Moa-Eier, alle drei Dart Shooter und ein Remedy Bucket."
+  ],
+  "en": [
+   "The Angelic Stone walls can only be mined after the Queen is beaten. The chests are quicker: they often already hold an [[aether:angelic_stone]].",
+   "The chests hold among others white and blue Moa Eggs, all three dart shooters and a Remedy Bucket."
+  ],
+  "sources": [
+   "lore.block.aether.angelic_stone (unbreakable until the boss is defeated)",
+   "aether:loot_table/chests/dungeon/silver/silver_dungeon_loot.json, silver_dungeon_trash.json (aether:angelic_stone)"
+  ]
+ },
+ "valkyrie": {
+  "de": [
+   "Jede Valkyrie lässt genau eine [[aether:victory_medal]] fallen. **Die Königin nimmt dir die 10 Medaillen ab**, wenn du sie herausforderst, also hak diese Quest vorher ab.",
+   "Danach geht es zu {{aether/queen}}."
+  ],
+  "en": [
+   "Each Valkyrie drops exactly one [[aether:victory_medal]]. **The Queen takes the 10 medals** when you challenge her, so tick this quest before that.",
+   "Next: {{aether/queen}}."
+  ],
+  "sources": [
+   "aether:loot_table/entities/valkyrie.json",
+   "aether jar: com/aetherteam/aether/entity/monster/dungeon/boss/ValkyrieQueen (countItem >= 10, shrink)"
+  ]
+ },
+ "queen": {
+  "de": [
+   "Sie lässt den [[aether:silver_dungeon_key]] und ein Goldschwert fallen. Den [[aether:regeneration_stone]] aus der Schatzkammer bekommst du auch als Belohnung dieser Quest.",
+   "Valkyrie-Rüstung und -Werkzeug, Valkyrie Cape und Gravitite-Teile kannst du schon mitnehmen und einlagern, **halten oder tragen geht erst in Stufe 3**. Wie beim Slider gibt es eine Schatztruhe pro Dungeon."
+  ],
+  "en": [
+   "She drops the [[aether:silver_dungeon_key]] and a golden sword. The [[aether:regeneration_stone]] from the treasure room is also this quest's reward.",
+   "Valkyrie armour and tools, the Valkyrie Cape and gravitite gear can be carried and stored already, **but only held or worn in stage 3 (Steel Works)**. As with the Slider there is one treasure chest per dungeon."
+  ],
+  "sources": [
+   "aether:loot_table/entities/valkyrie_queen.json",
+   "aether:loot_table/chests/dungeon/silver/silver_dungeon_treasure.json, silver_dungeon_valkyrie.json",
+   "kubejs/data/kronwerke/chapters/stages/stage3.json",
+   "docs/STAGES.md (a locked item can be carried and stored but not held, worn, placed or crafted)"
+  ]
+ },
+ "gold": {
+  "de": [
+   "Der Sun Spirit lässt den Gold Dungeon Key und den Sun Altar fallen. Die Schatzkammer enthält die Phoenix Armor und Life Shards, auf diesem Server bis zu 10 Stück pro Spieler.",
+   "Nur Sun Altar, Phoenix-, Obsidian- und Gravitite-Teile sind gesperrt. Life Shards, Iron Bubble, Vampire Blade und Pig Slayer kannst du schon in Stufe 2 nutzen, wenn du den Kampf früher wagst."
+  ],
+  "en": [
+   "The Sun Spirit drops the Gold Dungeon Key and the Sun Altar. The treasure room holds the Phoenix Armor and Life Shards, up to 10 per player on this server.",
+   "Only the Sun Altar and the phoenix, obsidian and gravitite gear are locked. Life Shards, Iron Bubble, Vampire Blade and Pig Slayer work in stage 2 already if you take the fight early."
+  ],
+  "sources": [
+   "aether:loot_table/entities/sun_spirit.json",
+   "aether:loot_table/chests/dungeon/gold/gold_dungeon_treasure.json, gold_dungeon_reward.json",
+   "srv/config/aether-server.toml (Maximum consumable Life Shards = 10)",
+   "kubejs/data/kronwerke/chapters/stages/stage3.json (sun_altar, phoenix, obsidian, gravitite; life_shard, iron_bubble, vampire_blade, pig_slayer are stage 2)"
+  ]
+ },
+ "ae_enchanted_grass": {
+  "de": [
+   "Es zählen nur die Blumen des Aether: [[aether:white_flower]] und [[aether:purple_flower]]. Löwenzahn und andere Blumen der Oberwelt wirken nicht.",
+   "Beerenbüsche auf verzaubertem Gras geben mit 50 Prozent Chance eine Beere mehr. Die Quest hakt sich auch ab, wenn du einen Shard auf Gras unter einer schon stehenden Aether-Blume benutzt."
+  ],
+  "en": [
+   "Only the Aether's own flowers count: [[aether:white_flower]] and [[aether:purple_flower]]. Dandelions and other Overworld flowers do nothing.",
+   "Berry bushes on enchanted grass have a 50 percent chance of one extra berry. The quest also ticks if you use a shard on the grass under an Aether flower that already stands there."
+  ],
+  "sources": [
+   "aether:tags/block/aechor_plant_spawnable_deterrent.json",
+   "aether:advancement/prevent_aechor_petal_spawning.json (enchant_grass, place_flower)",
+   "aether jar: EnchantedGrassModifier"
+  ]
+ },
+ "ae_aerogel": {
+  "de": [
+   "Jedes Biom des Aether zählt, es klappt also überall dort oben. Aerogel ergibt Treppen, Stufen (6 aus 3) und Mauern (6 aus 6).",
+   "Lava bekommst du am leichtesten im Nether oder aus einem Vorrat in der Oberwelt."
+  ],
+  "en": [
+   "Every Aether biome counts, so it works anywhere up there. Aerogel makes stairs, slabs (6 from 3) and walls (6 from 6).",
+   "Lava is easiest to get in the Nether or from a store in the Overworld."
+  ],
+  "sources": [
+   "aether:aerogel_conversion (biome #aether:ultracold)",
+   "aether:tags/worldgen/biome/ultracold.json (#aether:is_aether)",
+   "aether:aerogel_slab, aether:aerogel_wall, aether:aerogel_stairs"
+  ]
+ },
+ "ae_zanite_armor": {
+  "de": [
+   "Helm 5, Harnisch 8, Beinschutz 7, Stiefel 4 [[aether:zanite_gemstone]]. Jedes Teil braucht im Altar 37,5 Sekunden zum Reparieren, also 3 Shards.",
+   "Die Set-Fähigkeit wirkt erst mit den Zanite Gloves ({{aether/gloves}})."
+  ],
+  "en": [
+   "Helmet 5, chestplate 8, leggings 7, boots 4 [[aether:zanite_gemstone]]. Each piece takes 37.5 seconds in the Altar to repair, so 3 shards.",
+   "The set ability only works with the Zanite Gloves ({{aether/gloves}})."
+  ],
+  "sources": [
+   "aether:zanite_helmet, zanite_chestplate, zanite_leggings, zanite_boots",
+   "aether:zanite_*_repairing (750)",
+   "srv/config/aether-server.toml (Require gloves for set abilities = true)"
+  ]
+ },
+ "ae_remedy": {
+  "de": [
+   "Im Altar braucht der Poison Bucket 25 Sekunden, also 2 Ambrosium Shards. Ein Remedy Bucket liegt auch manchmal in den Truhen der Silber-Dungeons.",
+   "Eine billigere Heilung ist der [[aether:white_apple]] von Crystal Trees. Crystal Leaves machst du auch im Freezer aus Skyroot Leaves."
+  ],
+  "en": [
+   "In the Altar the Poison Bucket takes 25 seconds, so 2 Ambrosium Shards. A Remedy Bucket also turns up in silver dungeon chests.",
+   "A cheaper cure is the [[aether:white_apple]] from Crystal Trees. The Freezer also makes Crystal Leaves from Skyroot Leaves."
+  ],
+  "sources": [
+   "aether:remedy_bucket_enchanting (500)",
+   "aether:loot_table/chests/dungeon/silver/silver_dungeon_loot.json",
+   "aether:crystal_leaves_freezing"
+  ]
+ },
+ "ae_swet_banner": {
+  "de": [
+   "Das Rezept ist formlos: irgendein Banner und ein [[aether:swet_cape]]. Heraus kommt ein schwarzes Banner mit Swet-Muster.",
+   "Die Quest hakt sich ab, sobald du das Banner setzt. Das Swet Cape findest du in den normalen Truhen der Bronze-Dungeons ({{aether/bronze}})."
+  ],
+  "en": [
+   "The recipe is shapeless: any banner and a [[aether:swet_cape]]. The result is a black banner with the Swet pattern.",
+   "The quest ticks when you place the banner. The Swet Cape is in the normal bronze dungeon chests ({{aether/bronze}})."
+  ],
+  "sources": [
+   "aether:swet_banner (crafting_shapeless, #minecraft:banners + aether:swet_cape)",
+   "aether:advancement/prevent_swet_spawning.json",
+   "aether:loot_table/chests/dungeon/bronze/bronze_dungeon_loot.json"
+  ]
+ },
+ "ae_black_moa": {
+  "de": [
+   "Unter den wilden Moas ist etwa jedes siebte schwarz. Ein Moa, das du gerade reitest, legt keine Eier.",
+   "Das [[aether:black_moa_egg]] brütet genauso lange wie die anderen, 2 Ambrosium Torches. Danach 3 Aechor Petals füttern und satteln, wie bei {{aether/hatch}}."
+  ],
+  "en": [
+   "About one in seven wild Moas is black. A Moa you are riding lays no eggs.",
+   "The [[aether:black_moa_egg]] hatches as fast as the others, 2 Ambrosium Torches. Then feed 3 Aechor Petals and saddle it, as in {{aether/hatch}}."
+  ],
+  "sources": [
+   "aether:aether/moa_type/*.json (spawn_chance 100/50/25)",
+   "aether:black_moa_incubation (1000)",
+   "aether:advancement/black_moa.json"
+  ],
+  "client": [
+   "Moas do not lay eggs while ridden"
+  ]
+ },
+ "ae_phyg": {
+  "de": [
+   "Phygs brauchen nicht ausgebrütet zu werden: Sattel drauf und aufsteigen reicht. Die Belohnung ist ein zweiter [[minecraft:saddle]].",
+   "Phygs lassen beim Tod Schweinefleisch und manchmal eine Feder fallen."
+  ],
+  "en": [
+   "Phygs need no hatching: put on a saddle and climb on. The reward is a second [[minecraft:saddle]].",
+   "Phygs drop porkchops and sometimes a feather."
+  ],
+  "sources": [
+   "aether:advancement/mount_phyg.json",
+   "aether:loot_table/entities/phyg.json"
+  ]
+ },
+ "ae_hammer": {
+  "de": [
+   "Der Hammer liegt nur in der Treasure Chest des Sliders, nicht in den normalen Truhen. Jeder Bronze-Dungeon hat eine einzige Treasure Chest, wer zuerst öffnet, nimmt sie leer.",
+   "Nach jedem Schuss wartet der Hammer 2,5 Sekunden."
+  ],
+  "en": [
+   "The hammer is only in the Slider's Treasure Chest, not in the normal chests. Each bronze dungeon has a single Treasure Chest, and whoever opens it first can empty it.",
+   "After each shot the hammer waits 2.5 seconds."
+  ],
+  "sources": [
+   "aether:loot_table/chests/dungeon/bronze/bronze_dungeon_treasure.json, bronze_dungeon_reward.json",
+   "aether jar: TreasureChestBlockEntity",
+   "srv/config/aether-server.toml (Cooldown for the Hammer of Kingbdogz projectile = 50)"
+  ],
+  "client": [
+   "Treasure Chest is shared and not per player"
+  ]
+ }
+}

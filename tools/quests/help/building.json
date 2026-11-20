@@ -1,0 +1,525 @@
+{
+ "cube": {
+  "de": [
+   "Ein Rezept kostet 6 Bretter (4 Bretter und 4 Stöcke) und gibt 4 [[framedblocks:framed_cube]]. Für die 16 Stück brauchst du also 24 Bretter oder 6 Stämme, und die 16 Eichenstämme der Belohnung reichen für gut 40 weitere.",
+   "Fast alles in diesem Abschnitt baut auf Rahmenblöcken auf: der Hammer in {{building/camo}}, die {{building/saw}} und die Werkzeuge in {{building/tools}}."
+  ],
+  "en": [
+   "One craft costs 6 planks (4 planks and 4 sticks) and gives 4 [[framedblocks:framed_cube]]. The 16 need 24 planks or 6 logs, and the 16 oak logs of the reward make about 40 more.",
+   "Almost everything in this part builds on framed cubes: the hammer in {{building/camo}}, the {{building/saw}} and the tools in {{building/tools}}."
+  ],
+  "sources": [
+   "framedblocks:framed_cube (crafting_shaped PSP/S S/PSP, 4)"
+  ]
+ },
+ "camo": {
+  "de": [
+   "Der [[framedblocks:framed_hammer]] braucht 2 Rahmenblöcke und 2 Stöcke. Der Server verbraucht den Tarnblock beim Einsetzen und lehnt Blöcke mit Blockentität ab, also auch Maschinen und Fässer, nicht nur Truhen und Öfen.",
+   "Für das Leuchten musst du nicht auf den Nether warten: [[minecraft:glowstone_dust]] lassen auch Hexen in der Oberwelt fallen."
+  ],
+  "en": [
+   "The [[framedblocks:framed_hammer]] takes 2 framed cubes and 2 sticks. The server uses up the camo block when you apply it and refuses blocks with a block entity, so machines and barrels too, not only chests and furnaces.",
+   "You need not wait for the Nether to make frames glow: witches in the overworld drop [[minecraft:glowstone_dust]] as well."
+  ],
+  "sources": [
+   "framedblocks:framed_hammer",
+   "srv/config/framedblocks-server.toml (consumeCamoItem true, allowBlockEntities false, glowstoneLightLevel 15)",
+   "minecraft server jar: data/minecraft/loot_table/entities/witch.json"
+  ]
+ },
+ "saw": {
+  "de": [
+   "Auf Kronwerke ersetzt die [[create:andesite_alloy]] den Eisenbarren im Rezept, sie kommt aus {{create/andesite_alloy}}. Die größte Ersparnis bringt die Säge bei Falltüren: An der Werkbank kostet eine 6 Rahmenstufen, also 3 Rahmenblöcke, in der Säge nur einen Viertelblock.",
+   "Teurer ist dagegen die Rahmentruhe mit 4 Rahmenblöcken. Die [[framedblocks:powered_framing_saw]] (Eisen, 2 Redstone, 3 Rahmenblöcke) hat einen Speicher von 5 000 FE und nimmt bis 250 FE/t auf."
+  ],
+  "en": [
+   "On Kronwerke the [[create:andesite_alloy]] replaces the iron ingot in the recipe; it comes from {{create/andesite_alloy}}. The saw saves the most on trapdoors: at the crafting table one costs 6 framed slabs, that is 3 framed cubes, in the saw only a quarter block.",
+   "The framed chest is the expensive one at 4 framed cubes. The [[framedblocks:powered_framing_saw]] (iron, 2 redstone, 3 framed cubes) stores 5,000 FE and takes up to 250 FE/t."
+  ],
+  "sources": [
+   "kubejs/server_scripts/kronwerke/links.js (swap framing_saw iron to andesite_alloy)",
+   "framedblocks:framed_trapdoor (crafting FFF/FFF from framed_slab)",
+   "FramedBlocks-10.6.1.jar data/framedblocks/recipe/framing_saw/*.json (trapdoor 1536, chest 24576, slab 3072, cube 6144)",
+   "framedblocks:powered_framing_saw",
+   "srv/config/framedblocks-server.toml [powered_framing_saw]"
+  ]
+ },
+ "shapes": {
+  "de": [
+   "In der Säge kosten die 16 Schrägen 8 Rahmenblöcke, an der Werkbank 16. Für die Dachecken nimmst du die [[framedblocks:framed_corner_slope]] (ein Viertelblock) und die [[framedblocks:framed_inner_corner_slope]] (drei Viertel).",
+   "Die 16 Rahmenblöcke der Belohnung ergeben in der Säge gleich die nächsten 32 Schrägen."
+  ],
+  "en": [
+   "In the saw the 16 slopes cost 8 framed cubes, at the crafting table 16. For the roof corners use the [[framedblocks:framed_corner_slope]] (a quarter block) and the [[framedblocks:framed_inner_corner_slope]] (three quarters).",
+   "The 16 framed cubes of the reward make the next 32 slopes in the saw."
+  ],
+  "sources": [
+   "framedblocks:framed_slope (crafting F /FF, 3)",
+   "FramedBlocks-10.6.1.jar data/framedblocks/recipe/framing_saw/framed_slope.json (3072), framed_corner_slope.json (1536), framed_inner_corner_slope.json (4608)"
+  ]
+ },
+ "tools": {
+  "de": [
+   "Die Rezepte: [[framedblocks:framed_wrench]] aus 2 Rahmenblöcken und 2 Stöcken, [[framedblocks:framed_blueprint]] aus 4 Rahmenblöcken und Papier, [[framedblocks:framed_screwdriver]] aus einem Rahmenblock und einem Stock, [[framedblocks:framed_key]] aus einem Rahmenblock, 2 Stöcken und 2 Eisenklumpen.",
+   "Die [[framedblocks:framed_axe]] kostet **3 Eisenbarren** und 2 Rahmenblöcke, nicht 2 Barren. Mit dem Schraubenschlüssel stellst du außerdem die durchsichtige Seite des Einwegfensters ein ({{building/specials}})."
+  ],
+  "en": [
+   "The recipes: [[framedblocks:framed_wrench]] from 2 framed cubes and 2 sticks, [[framedblocks:framed_blueprint]] from 4 framed cubes and paper, [[framedblocks:framed_screwdriver]] from a framed cube and a stick, [[framedblocks:framed_key]] from a framed cube, 2 sticks and 2 iron nuggets.",
+   "The [[framedblocks:framed_axe]] costs **3 iron ingots** and 2 framed cubes, not 2 ingots. The wrench also sets the see-through side of the one-way window ({{building/specials}})."
+  ],
+  "sources": [
+   "framedblocks:framed_wrench",
+   "framedblocks:framed_blueprint",
+   "framedblocks:framed_screwdriver",
+   "framedblocks:framed_key",
+   "framedblocks:framed_axe (crafting II/IC/ C)",
+   "FramedBlocks-10.6.1.jar assets/framedblocks/lang/en_us.json (tooltip.framedblocks.one_way_window.set_face)"
+  ]
+ },
+ "specials": {
+  "de": [
+   "Eine Lage Rahmenverstärkung kostet 4 Obsidian für 16 Stück, die 4 Obsidian der Belohnung reichen also für die nächste. Das [[framedblocks:framed_one_way_window]] braucht [[minecraft:tinted_glass]] aus Amethystscherben: an der Werkbank 4 Rahmenblöcke und 4 getöntes Glas für 4 Fenster.",
+   "Die Seite des Einwegfensters stellst du mit dem [[framedblocks:framed_wrench]] ({{building/tools}}) ein, und auf diesem Server kann das nur, wer es gesetzt hat."
+  ],
+  "en": [
+   "One batch of framed reinforcement costs 4 obsidian for 16, so the 4 obsidian of the reward cover the next one. The [[framedblocks:framed_one_way_window]] needs [[minecraft:tinted_glass]] from amethyst shards: at the crafting table 4 framed cubes and 4 tinted glass make 4 windows.",
+   "You set the window's side with the [[framedblocks:framed_wrench]] ({{building/tools}}), and on this server only the player who placed it can."
+  ],
+  "sources": [
+   "framedblocks:framed_reinforcement (OSO/SFS/OSO, 16)",
+   "framedblocks:framed_one_way_window (GFG/F F/GFG, 4)",
+   "srv/config/framedblocks-server.toml (oneWayWindowOwnable true)",
+   "FramedBlocks-10.6.1.jar lang (one_way_window.set_face)"
+  ]
+ },
+ "doors": {
+  "de": [
+   "Die [[framedblocks:framed_trapdoor]] machst du besser in der Säge: Dort kostet sie einen Viertelblock, an der Werkbank 6 Rahmenstufen. Die Tür kostet in der Säge einen halben Block, an der Werkbank 2 (6 Rahmenblöcke für 3 Türen).",
+   "Die [[framedblocks:framed_iron_door]] und die [[framedblocks:framed_iron_trapdoor]] brauchen in der Säge zusätzlich einen Eisenbarren."
+  ],
+  "en": [
+   "Make the [[framedblocks:framed_trapdoor]] in the saw: there it costs a quarter block, at the crafting table 6 framed slabs. The door costs half a block in the saw and 2 at the crafting table (6 framed cubes for 3 doors).",
+   "The [[framedblocks:framed_iron_door]] and the [[framedblocks:framed_iron_trapdoor]] need an iron ingot on top in the saw."
+  ],
+  "sources": [
+   "framedblocks:framed_door",
+   "framedblocks:framed_trapdoor",
+   "framedblocks:framing_saw/framed_iron_door (additive iron ingot)",
+   "FramedBlocks-10.6.1.jar data/framedblocks/recipe/framing_saw/framed_door.json (3072), framed_trapdoor.json (1536)"
+  ]
+ },
+ "pillars": {
+  "de": [
+   "Für die 4 Säulen reichen 2 Rahmenblöcke: übereinander zu 4 [[framedblocks:framed_corner_pillar]], dann jede einzeln in die Werkbank. Das geht auch zurück, eine Säule allein wird wieder zur Ecksäule.",
+   "In der Säge kosten beide Formen ebenfalls einen Viertelblock, die Werkbank ist hier also genauso gut."
+  ],
+  "en": [
+   "2 framed cubes are enough for the 4 pillars: stacked they make 4 [[framedblocks:framed_corner_pillar]], then put each one alone in the crafting grid. It works backwards too, a pillar alone turns back into a corner pillar.",
+   "In the saw both shapes cost a quarter block as well, so the crafting table is just as good here."
+  ],
+  "sources": [
+   "framedblocks:framed_corner_pillar (F/F, 4; framed_corner_pillar_from_pillar)",
+   "framedblocks:framed_pillar (shapeless from corner pillar)",
+   "FramedBlocks-10.6.1.jar data/framedblocks/recipe/framing_saw/framed_pillar.json, framed_corner_pillar.json (1536)"
+  ]
+ },
+ "mason": {
+  "de": [
+   "Die drei [[minecraft:brick]] oben sind Ziegel aus gebranntem Ton, keine Ziegelsteinblöcke. **Achtung beim Obelisken:** Er nimmt nur, was im Tag #c:cobblestones steht, also Bruchstein, bemoosten Bruchstein, Bruchtiefenschiefer und befallenen Bruchstein. Chipped-Varianten zählen nicht, wandle sie am Tisch zurück, bevor du sie abgibst.",
+   "Mit dem Tisch und einem Eisenbarren baust du den Meißel ({{building/chisel}})."
+  ],
+  "en": [
+   "The three [[minecraft:brick]] on top are bricks from fired clay, not brick blocks. **Mind the obelisk:** it only takes what is in the #c:cobblestones tag, that is cobblestone, mossy cobblestone, cobbled deepslate and infested cobblestone. Chipped variants do not count, so turn them back at the table before you hand them in.",
+   "The table and an iron ingot make the chisel ({{building/chisel}})."
+  ],
+  "sources": [
+   "minecraft:workbench/mason_table (BBB/I#I/LLL)",
+   "config/kronwerke/goals.json (stage1 stone #c:cobblestones)",
+   "core: src/main/java/de/kronwerke/core/goal/Goal.java (PillarItem.matches: stack.is(tag))",
+   "neoforge-21.1.252-universal.jar data/c/tags/item/cobblestones*.json",
+   "chipped-neoforge-1.21.1-4.0.2.jar data/chipped/tags/item/cobblestone.json"
+  ]
+ },
+ "carpenter": {
+  "de": [
+   "Die [[minecraft:iron_axe]] geht beim Bauen verloren, der Tisch kostet also 4 Eisen. Neben Holz nimmt er auch Fackeln und entrindete Stämme an.",
+   "Aus Tisch und Eisenbarren wird die tragbare [[chipped:saw]] ({{building/chisel}})."
+  ],
+  "en": [
+   "The [[minecraft:iron_axe]] is used up, so the table costs 4 iron in total. Besides wood it also takes torches and stripped logs.",
+   "The table and an iron ingot make the portable [[chipped:saw]] ({{building/chisel}})."
+  ],
+  "sources": [
+   "minecraft:workbench/carpenters_table (A I/P#P/PPP)",
+   "chipped-neoforge-1.21.1-4.0.2.jar data/chipped/recipe/carpenters_table.json (chipped:torch, stripped logs)",
+   "chipped:saw"
+  ]
+ },
+ "benches": {
+  "de": [
+   "Für den [[chipped:glassblower]] brauchst du einen Schmelzofen (5 Eisen, ein Ofen, 3 glatter Stein), dazu 2 Eisen, ein Glas und 5 Ziegelsteinblöcke. Der Webstuhltisch heißt in EMI Loom Table, der Bastlertisch Tinkering Table.",
+   "Der Alchemietisch braucht einen Braustand, und dessen Lohenrute kommt aus dem Nether. Rechne mit ihm also erst in Stufe 2."
+  ],
+  "en": [
+   "The [[chipped:glassblower]] needs a blast furnace (5 iron, a furnace, 3 smooth stone), plus 2 iron, a glass and 5 brick blocks. The loom table is Loom Table in EMI, the tinkering table Tinkering Table.",
+   "The alchemy bench needs a brewing stand, and its blaze rod comes from the Nether. Count on it in stage 2."
+  ],
+  "sources": [
+   "minecraft:workbench/glassblower (IGI/B#B/BFB)",
+   "minecraft:workbench/loom_table",
+   "minecraft:workbench/tinkering_table",
+   "minecraft:workbench/botanist_workbench",
+   "minecraft:workbench/alchemy_bench ( B /S#S/SES)",
+   "kubejs/data/kronwerke/chapters/stages/stage2.json (minecraft:the_nether)"
+  ]
+ },
+ "chisel": {
+  "de": [
+   "Jedes Werkzeug entsteht formlos aus dem ganzen Tisch, der Tisch ist danach weg. Bau dir also einen zweiten, wenn du ihn in der Basis behalten willst.",
+   "Die 8 Eisenbarren der Belohnung decken den nächsten Steinmetztisch und den Zimmermannstisch samt Axt."
+  ],
+  "en": [
+   "Each tool is made shapeless from the whole table, and the table is gone afterwards. Build a second one if you want to keep a table at the base.",
+   "The 8 iron ingots of the reward cover the next mason table and the carpenters table with its axe."
+  ],
+  "sources": [
+   "chipped:chisel (mason_table + iron)",
+   "chipped:saw",
+   "chipped:needles",
+   "chipped:multimeter (tinkering_table + redstone)",
+   "chipped:watering_can",
+   "chipped:alchemy_book"
+  ]
+ },
+ "sconce": {
+  "de": [
+   "Ein Rezept gibt eine [[supplementaries:sconce]] und kostet 3 Eisenklumpen, die 8 Stück also 24 Klumpen, knapp 3 Eisenbarren. Für den Abschluss {{building/showcase}} brauchst du 16.",
+   "Die Seelen-Wandfackel geht genauso mit einer Seelenfackel."
+  ],
+  "en": [
+   "One craft gives one [[supplementaries:sconce]] and costs 3 iron nuggets, so the 8 cost 24 nuggets, just under 3 iron ingots. The finale {{building/showcase}} wants 16.",
+   "The soul sconce works the same way with a soul torch."
+  ],
+  "sources": [
+   "supplementaries:sconce (212/ 2 , 1)",
+   "supplementaries:sconce_soul"
+  ]
+ },
+ "timber": {
+  "de": [
+   "Setzt du [[supplementaries:daub]] in einen gesetzten Fachwerkrahmen, wird daraus gleich der fertige Fachwerkblock. Mit der Axt nimmst du den Rahmen wieder ab, der Block darin bleibt stehen.",
+   "Für den Lehmputz zählen Flachs, Weizen und Stroh von Farmer's Delight, die 16 Lehmklumpen der Belohnung ergeben 32 Stück."
+  ],
+  "en": [
+   "Put [[supplementaries:daub]] into a placed timber frame and it turns into the finished wattle and daub block. An axe takes the frame off again and leaves the block inside standing.",
+   "Daub takes flax, wheat or Farmer's Delight straw, and the 16 clay balls of the reward make 32."
+  ],
+  "sources": [
+   "supplementaries:timber_frame",
+   "supplementaries:daub (2)",
+   "supplementaries:daub_frame",
+   "supplementaries jar data/supplementaries/tags/item/straw.json",
+   "srv/config/supplementaries-common.toml (replace_daub true, axes_strip true)"
+  ]
+ },
+ "rope": {
+  "de": [
+   "Seile gibt es nur aus [[supplementaries:flax]], **Fäden gehen nicht**: 3 Flachs untereinander ergeben 3 Seile, die 16 Stück brauchen also 18 Flachs. Die 8 Fäden der Belohnung sind für etwas anderes da.",
+   "Am Seil rutschst du so schnell wie im freien Fall nach unten, nimmst aber keinen Fallschaden."
+  ],
+  "en": [
+   "Rope only comes from [[supplementaries:flax]], **string does not work**: 3 flax in a column make 3 rope, so the 16 need 18 flax. The 8 string of the reward are for something else.",
+   "Sliding down a rope is as fast as falling, but you take no fall damage."
+  ],
+  "sources": [
+   "supplementaries:rope (only recipe: #c:crops/flax 1/1/1, 3)",
+   "supplementaries jar data/c/tags/item/crops/flax.json",
+   "srv/config/supplementaries-common.toml (slide_on_fall true, horizontal_ropes true, wild_flax true)"
+  ]
+ },
+ "shelves": {
+  "de": [
+   "Für 4 Regale reichen 6 Holzstufen. Das Schwarze Brett nimmt auf diesem Server nur Bücher und Karten an.",
+   "Die [[supplementaries:blackboard]] braucht **3 Holzstufen, 3 Schwarzstein** und einen weißen Farbstoff oder Quarz für 2 Tafeln. Gemalt wird nur in Schwarz und Weiß."
+  ],
+  "en": [
+   "6 wooden slabs are enough for 4 shelves. On this server the notice board only takes books and maps.",
+   "The [[supplementaries:blackboard]] needs **3 wooden slabs, 3 blackstone** and a white dye or quartz for 2 blackboards. You can only draw in black and white."
+  ],
+  "sources": [
+   "supplementaries:item_shelf (2)",
+   "supplementaries:notice_board",
+   "supplementaries:blackboard (12 /120/12 , 2)",
+   "srv/config/supplementaries-common.toml (allow_any_item false, colored_blackboard false)"
+  ]
+ },
+ "sack": {
+  "de": [
+   "Für den [[supplementaries:sack]] zählt nur [[supplementaries:flax]] oder Leinwand von Farmer's Delight, **Weizen geht nicht**: Das Rezept will den Tag #c:crops/flax, und darin steht nur Flachs.",
+   "Der Server bremst dich ab mehr als 2 Säcken im Inventar, jedes weitere Paar macht die Langsamkeit stärker. Das Lager-Kapitel hat dieselbe Quest ({{storage/sack}})."
+  ],
+  "en": [
+   "The [[supplementaries:sack]] takes only [[supplementaries:flax]] or Farmer's Delight canvas, **wheat does not work**: the recipe wants the #c:crops/flax tag, and that holds only flax.",
+   "The server slows you down with more than 2 sacks in the inventory, and each further pair makes it stronger. The storage chapter has the same quest ({{storage/sack}})."
+  ],
+  "sources": [
+   "supplementaries:sack (121/1 1/111)",
+   "supplementaries:sack_3 (farmersdelight:canvas)",
+   "supplementaries jar data/c/tags/item/crops/flax.json",
+   "srv/config/supplementaries-common.toml (sack_increment 2, slots 9)"
+  ]
+ },
+ "signs": {
+  "de": [
+   "Ein [[minecraft:oak_sign]] ergibt 2 Wegweiser, mit den 4 Schildern der Belohnung hast du also 8 für die nächste Kreuzung.",
+   "Eine Fahne an einem senkrechten Stock ziehst du mit Rechts- und Linksklick auf den Stock hoch und runter, der Mast darf bis 16 Blöcke hoch sein."
+  ],
+  "en": [
+   "An [[minecraft:oak_sign]] makes 2 way signs, so the 4 signs of the reward give 8 for the next crossing.",
+   "A flag on an upright stick is raised and lowered by right and left clicking the stick, and the pole may be up to 16 blocks tall."
+  ],
+  "sources": [
+   "supplementaries:way_sign_oak (shapeless from oak_sign, 2)",
+   "srv/config/supplementaries-common.toml (stick_pole true, pole_length 16)"
+  ],
+  "client": [
+   "Fahne am Stock hochziehen (Rechts/Linksklick)"
+  ]
+ },
+ "lock": {
+  "de": [
+   "Benenn Schlossblock und Schlüssel am Amboss gleich. Mit Easy Anvils kostet das Umbenennen auf diesem Server nichts.",
+   "Innerhalb deines Claims kann ohnehin niemand außer Team und Verbündeten deine Türen öffnen ({{comfort/claims}}). Das Schloss lohnt sich also vor allem für Türen außerhalb oder innerhalb des Teams."
+  ],
+  "en": [
+   "Name the lock block and the key the same at an anvil. With Easy Anvils renaming costs nothing on this server.",
+   "Inside your claim nobody but your team and allies can open your doors anyway ({{comfort/claims}}). The lock is mostly worth it for doors outside a claim or within the team."
+  ],
+  "sources": [
+   "supplementaries:lock_block (101/020/101)",
+   "supplementaries:key",
+   "srv/config/easyanvils-server.toml (free_renames ALL_ITEMS)",
+   "config/ftbchunks-world.snbt (def_block_interact allies)"
+  ]
+ },
+ "flower_box": {
+  "de": [
+   "Für 2 Kästen brauchst du 5 Holzstufen und einen Erdblock. Hohe Pflanzen passen auch hinein, auf diesem Server aber nur eine pro Kasten.",
+   "Die Blumen der Belohnung reichen für den ersten Kasten."
+  ],
+  "en": [
+   "2 boxes take 5 wooden slabs and a dirt block. Tall plants fit too, but on this server only one per box.",
+   "The flowers of the reward fill the first box."
+  ],
+  "sources": [
+   "supplementaries:flower_box (   /101/111, 2)",
+   "srv/config/supplementaries-common.toml (flower_box simple_mode true)"
+  ],
+  "client": [
+   "Hohe Pflanze im Blumenkasten (simple_mode)"
+  ]
+ },
+ "candles": {
+  "de": [
+   "Jeder [[supplementaries:candle_holder]] kostet einen Eisenbarren und eine Kerze, die 4 Kerzen der Belohnung geben also 4 weitere. Kerzen machst du aus Faden und Honigwabe.",
+   "Kerzenständer lassen sich stapeln, mehrere auf einem Block geben mehr Licht."
+  ],
+  "en": [
+   "Each [[supplementaries:candle_holder]] costs an iron ingot and a candle, so the 4 candles of the reward make 4 more. Candles come from string and honeycomb.",
+   "Candle holders stack, and several on one block give more light."
+  ],
+  "sources": [
+   "supplementaries:candle_holders/candle_holder ( C / N , N = #c:ingots/iron)",
+   "supplementaries lang (message.supplementaries.candle_holder Stackable)"
+  ],
+  "client": [
+   "Mehr Licht beim Stapeln von Kerzenständern"
+  ]
+ },
+ "awning": {
+  "de": [
+   "Schräge Markisen federn dich ab wie ein kleines Trampolin. Wer darauf schleicht, fällt durch die Markise hindurch.",
+   "Mit den 4 Flachssamen der Belohnung legst du ein Flachsfeld an, Flachs brauchst du auch für Seile und Säcke."
+  ],
+  "en": [
+   "Slanted awnings bounce you off like a small trampoline. Sneak on one and you fall through it.",
+   "Plant the 4 flax seeds of the reward: flax also makes rope and sacks."
+  ],
+  "sources": [
+   "supplementaries:awnings/awning (000/1 1, 2)",
+   "srv/config/supplementaries-common.toml (awning slant true, shift_through true)"
+  ],
+  "client": [
+   "Abprallen von der schrägen Markise"
+  ]
+ },
+ "iron_gate": {
+  "de": [
+   "Das [[supplementaries:iron_gate]] öffnest du auf diesem Server mit der Hand wie ein Holztor, Redstone brauchst du nicht. Zwei Tore übereinander gehen zusammen auf.",
+   "Ein Rezept aus 2 Barren und 4 Klumpen gibt 2 Tore."
+  ],
+  "en": [
+   "On this server you open the [[supplementaries:iron_gate]] by hand like a wooden gate, no redstone needed. Two gates on top of each other open together.",
+   "One craft of 2 ingots and 4 nuggets gives 2 gates."
+  ],
+  "sources": [
+   "supplementaries:iron_gate (101/101, 2)",
+   "srv/config/supplementaries-common.toml (door-like_gates false, double_opening true)"
+  ]
+ },
+ "copycats": {
+  "de": [
+   "Ein [[create:zinc_ingot]] gibt im Steinschneider 4 Copycat-Platten, für die 8 Stück reichen also 2 Barren. Zinkerz findest du in der Oberwelt und in der Farmwelt ({{start_here/s_zinc}}).",
+   "Laufstege, Kästen und weitere Copycats von Create Connected öffnen erst mit Stufe 2. Die Formen von Copycats+ stehen dir jetzt schon offen."
+  ],
+  "en": [
+   "A [[create:zinc_ingot]] gives 4 copycat panels in the stonecutter, so 2 ingots cover the 8. Zinc ore is in the overworld and the farm world ({{start_here/s_zinc}}).",
+   "Catwalks, boxes and the other Create Connected copycats open with stage 2. The Copycats+ shapes are open now."
+  ],
+  "sources": [
+   "create:copycat_panel_from_ingots_zinc_stonecutting (4)",
+   "kubejs/data/kronwerke/chapters/stages/stage2.json (create_connected:copycat_*)",
+   "copycats:stonecutting/* (stage 1)"
+  ]
+ },
+ "alloy_decor": {
+  "de": [
+   "8 [[create:metal_girder]] kosten 3 Andesitlegierungen und 3 [[create:iron_sheet]], die Bleche kommen aus der Presse ({{create/sheets}}). Für die 4 Eichenfenster reichen 6 Eichenbretter und 2 Glas.",
+   "Die Mixer-Linie für billige Legierung steht in {{create/alloy_mixing}}."
+  ],
+  "en": [
+   "8 [[create:metal_girder]] cost 3 andesite alloy and 3 [[create:iron_sheet]]; the sheets come from the press ({{create/sheets}}). 6 oak planks and 2 glass are enough for the 4 oak windows.",
+   "The mixer line for cheap alloy is in {{create/alloy_mixing}}."
+  ],
+  "sources": [
+   "create:crafting/kinetics/metal_girder (PPP/CCC, 8)",
+   "create:oak_window ( # /#X#, 2)",
+   "kronwerke:create/andesite_alloy_mixing (2)"
+  ]
+ },
+ "copycat_plus": {
+  "de": [
+   "Gemeint ist die [[copycats:copycat_slab]] von Copycats+ (2 pro Zinkbarren), nicht die Copycat-Stufe von Create. Ein Zinkbarren im Steinschneider gibt den [[copycats:copycat_block]] auch direkt, beide Wege kosten einen Barren pro Block.",
+   "Die 4 Blöcke kosten also 4 Zink, so viel wie die Belohnung zurückgibt."
+  ],
+  "en": [
+   "The recipe wants the Copycats+ [[copycats:copycat_slab]] (2 per zinc ingot), not Create's copycat step. A zinc ingot in the stonecutter also gives the [[copycats:copycat_block]] directly; both ways cost one ingot per block.",
+   "So the 4 blocks cost 4 zinc, as much as the reward gives back."
+  ],
+  "sources": [
+   "copycats:crafting/copycat_block_from_slabs (#copycats:copycat_slab)",
+   "copycats:stonecutting/copycat_slab (2)",
+   "copycats:stonecutting/copycat_block (1)"
+  ]
+ },
+ "roofing": {
+  "de": [
+   "Die 16 Schindeln kosten 8 [[minecraft:copper_ingot]], die Belohnung gibt dir das Doppelte zurück. Ab Stufe 2 kratzt ein [[create:deployer]] mit einer Axt das Wachs auch maschinell ab.",
+   "Die 4 Honigwaben der Belohnung reichen für 4 Schindeln."
+  ],
+  "en": [
+   "The 16 shingles cost 8 [[minecraft:copper_ingot]], and the reward gives back twice that. From stage 2 a [[create:deployer]] holding an axe scrapes the wax off automatically.",
+   "The 4 honeycombs of the reward wax 4 shingles."
+  ],
+  "sources": [
+   "create:copper_shingles_from_ingots_copper_stonecutting (2)",
+   "create:deploying/copper_shingles_from_removing_wax",
+   "kubejs/data/kronwerke/chapters/stages/stage2.json (create:deployer)"
+  ]
+ },
+ "claims": {
+  "de": [
+   "Geladene Chunks bleiben auf Kronwerke auch geladen, wenn niemand online ist. Erst wenn 7 Tage lang keiner aus dem Team online war, endet das Laden, und nach 30 Tagen verfallen die Claims.",
+   "Schritt für Schritt steht das im Komfort-Kapitel: {{comfort/claims}} und {{comfort/chunkload}}."
+  ],
+  "en": [
+   "Loaded chunks stay loaded on Kronwerke even with nobody online. Only after 7 days without anyone of the team online does the loading stop, and after 30 days the claims are released.",
+   "The comfort chapter walks you through it: {{comfort/claims}} and {{comfort/chunkload}}."
+  ],
+  "sources": [
+   "config/ftbchunks-world.snbt (max_claimed_chunks 500, max_force_loaded_chunks 25, force_load_mode always, max_idle_days_before_unforce 7, max_idle_days_before_unclaim 30)"
+  ]
+ },
+ "lighting": {
+  "de": [
+   "**Dynamic Lights ist nicht im Pack**, eine Fackel in der Hand leuchtet nicht. Für die Mine nimm Fackeln, die [[torchmaster:feral_flare_lantern]] oder Nachtsicht.",
+   "Statt alles auszuleuchten, hält eine [[torchmaster:megatorch]] in **64 Blöcken** Umkreis natürliche Monsterspawns fern ({{comfort/qol_torch}}). Glowstone-Staub lassen schon in Stufe 1 Hexen fallen."
+  ],
+  "en": [
+   "**Dynamic Lights is not in the pack**, a torch in your hand does not light anything. In the mine use torches, the [[torchmaster:feral_flare_lantern]] or night vision.",
+   "Instead of lighting everything, a [[torchmaster:megatorch]] keeps natural monster spawns away within **64 blocks** ({{comfort/qol_torch}}). Witches drop glowstone dust already in stage 1."
+  ],
+  "sources": [
+   "pack/mods (no dynamic lights mod; only dynamic-fps.pw.toml)",
+   "srv/config/torchmaster.toml (megaTorchRadius 64, blockOnlyNaturalSpawns true)",
+   "minecraft server jar: data/minecraft/loot_table/entities/witch.json"
+  ]
+ },
+ "flag": {
+  "de": [
+   "Die 12 weiße Wolle der Belohnung reichen für 2 weitere Flaggen, gefärbte Wolle gibt farbige. Steht die Flagge an einem senkrechten Stock, ziehst du sie mit Rechts- und Linksklick auf den Stock hoch und runter, bis 16 Blöcke hoch.",
+   "Eine Flagge sagt nichts über den Claim: Wer wo bauen darf, regelt FTB Chunks ({{comfort/claims}})."
+  ],
+  "en": [
+   "The 12 white wool of the reward make 2 more flags, and dyed wool gives coloured ones. On an upright stick you raise and lower the flag by right and left clicking the stick, up to 16 blocks high.",
+   "A flag says nothing about the claim: who may build where is FTB Chunks' job ({{comfort/claims}})."
+  ],
+  "sources": [
+   "supplementaries:flags/flag_white (111/111/2  )",
+   "srv/config/supplementaries-common.toml (stick_pole true, pole_length 16)"
+  ],
+  "client": [
+   "Fahne am Stock hochziehen (Rechts/Linksklick)"
+  ]
+ },
+ "gadgets": {
+  "de": [
+   "Der [[buildinggadgets2:gadget_building]] kostet 4 Eisen, 2 Redstone, 2 Diamanten und einen Lapislazuli, der Tauschgadget dasselbe. Der Abrissgadget nimmt 2 Enderperlen statt der Diamanten.",
+   "Der [[buildinggadgets2:template_manager]] öffnet schon mit **Stufe 2**, nicht erst mit Stufe 3. Nur der Kopiergadget und der Ausschneidegadget warten auf Stufe 3, genau wie die Mining Gadgets ({{logistics/mg_gadget}})."
+  ],
+  "en": [
+   "The [[buildinggadgets2:gadget_building]] costs 4 iron, 2 redstone, 2 diamonds and a lapis lazuli, the exchanging gadget the same. The destruction gadget takes 2 ender pearls instead of the diamonds.",
+   "The [[buildinggadgets2:template_manager]] opens with **stage 2**, not stage 3. Only the copy paste and cut paste gadgets wait for stage 3, like the Mining Gadgets ({{logistics/mg_gadget}})."
+  ],
+  "sources": [
+   "buildinggadgets2:gadget_building (iri/drd/ili)",
+   "buildinggadgets2:gadget_destruction (iri/ere/ili)",
+   "buildinggadgets2:gadget_exchanging",
+   "kubejs/data/kronwerke/chapters/stages/stage2.json (buildinggadgets2:template_manager)",
+   "kubejs/data/kronwerke/chapters/stages/stage3.json (gadget_copy_paste, gadget_cut_paste, mininggadgets:*)"
+  ]
+ },
+ "schematics": {
+  "de": [
+   "Für einen Plan brauchst du einen [[create:empty_schematic]] (Papier und hellblauer Farbstoff) und eine Feder, das ergibt [[create:schematic_and_quill]]. Der Tisch selbst kostet 3 Holzstufen und 2 glatten Stein.",
+   "Die [[create:schematicannon]] braucht **kein Messing**: Sie besteht aus 2 Eisenblöcken, 2 Stämmen, 2 glattem Stein und einem Werfer und ist nur gesperrt, bis Stufe 2 öffnet. Mehr dazu in {{create_brass/schematics}}."
+  ],
+  "en": [
+   "A plan needs an [[create:empty_schematic]] (paper and light blue dye) and a feather, which make [[create:schematic_and_quill]]. The table itself costs 3 wooden slabs and 2 smooth stone.",
+   "The [[create:schematicannon]] needs **no brass**: it is 2 iron blocks, 2 logs, 2 smooth stone and a dispenser, and is only locked until stage 2 opens. More in {{create_brass/schematics}}."
+  ],
+  "sources": [
+   "create:crafting/schematics/empty_schematic",
+   "create:crafting/schematics/schematic_and_quill",
+   "create:crafting/schematics/schematic_table",
+   "create:crafting/schematics/schematicannon ( I /LIL/SDS)",
+   "kubejs/data/kronwerke/chapters/stages/stage2.json (create:schematicannon)"
+  ]
+ },
+ "showcase": {
+  "de": [
+   "Zusammen kostet das etwa 24 Stämme für die 64 Rahmenblöcke, 4 Zinkbarren für die 16 Copycat-Platten und 48 Eisenklumpen mit 16 Fackeln für die Wandfackeln. Die 64 Rahmenblöcke der Belohnung bekommst du zurück.",
+   "Beim Abgeben zählen nur Bruchstein, bemooster Bruchstein und Bruchtiefenschiefer, keine Chipped-Varianten ({{building/mason}})."
+  ],
+  "en": [
+   "All together that is about 24 logs for the 64 framed cubes, 4 zinc ingots for the 16 copycat panels and 48 iron nuggets with 16 torches for the sconces. The reward gives the 64 framed cubes back.",
+   "At the obelisk only cobblestone, mossy cobblestone and cobbled deepslate count, no Chipped variants ({{building/mason}})."
+  ],
+  "sources": [
+   "framedblocks:framed_cube (4)",
+   "create:copycat_panel_from_ingots_zinc_stonecutting (4)",
+   "supplementaries:sconce (1)",
+   "config/kronwerke/goals.json (#c:cobblestones)"
+  ]
+ }
+}

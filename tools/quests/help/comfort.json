@@ -1,0 +1,519 @@
+{
+ "welcome": {
+  "de": [
+   "Gesperrt sind in diesem Kapitel nur der Fortgeschrittene Sammler und die fünf Pylonen, beide bis Stufe 2. Der Abschluss {{comfort/done}} will Magnet, Sammler und Mülltonne im Inventar und setzt die Quests zu Sammler, Mülltonne und Chunkloading voraus."
+  ],
+  "en": [
+   "The only locked things in this chapter are the advanced collector and the five pylons, both until stage 2. The finale {{comfort/done}} wants a magnet, a collector and a trash can in your inventory and needs the collector, trash can and chunk loading quests first."
+  ],
+  "sources": [
+   "kubejs/data/kronwerke/chapters/stages/stage2.json (itemcollectors:advanced_collector, pylons:*)",
+   "tools/quests/chapters/comfort.py (done deps)"
+  ]
+ },
+ "magnet": {
+  "de": [
+   "Die 2 Enderperlen der Belohnung reichen für den Sammler ({{comfort/collector}}), der eine braucht. Enderperlen lassen Endermen fallen.",
+   "Willst du den Magneten nicht im Inventar tragen, steckst du ihn in den Schmuckplatz ({{comfort/magnet_charm}}). Der Rucksack kann dasselbe mit einem Upgrade ({{storage/magnet}})."
+  ],
+  "en": [
+   "The 2 ender pearls of the reward cover the collector ({{comfort/collector}}), which needs one. Endermen drop ender pearls.",
+   "If you do not want the magnet in your inventory, put it in the accessory slot ({{comfort/magnet_charm}}). A backpack can do the same with an upgrade ({{storage/magnet}})."
+  ],
+  "sources": [
+   "simplemagnets:basicmagnet (AAB/AC /AAD)",
+   "itemcollectors:basic_collector",
+   "srv/config/simplemagnets-common.toml (basicMagnetRange 5)"
+  ]
+ },
+ "magnet_adv": {
+  "de": [
+   "Der einfache Magnet geht im Rezept auf, du brauchst also keinen zweiten. Dazu kommen ein [[minecraft:ender_eye]] und ein [[minecraft:diamond]]; das Enderauge braucht Lohenstaub aus einer Lohenrute.",
+   "Bis Stufe 2 hilft gegen den Bruchstein aus Ultimine eine Entmagnetisierungsspule oder das Ausschalten."
+  ],
+  "en": [
+   "The basic magnet goes into the recipe, so you need no second one. Add an [[minecraft:ender_eye]] and a [[minecraft:diamond]]; the eye needs blaze powder from a blaze rod.",
+   "Until stage 2, a demagnetization coil or switching the magnet off keeps Ultimine cobblestone out of your bag."
+  ],
+  "sources": [
+   "simplemagnets:advancedmagnet (AAB/CDE/AAF)",
+   "srv/config/simplemagnets-common.toml (advancedMagnetRange 8, 3 to 11)"
+  ]
+ },
+ "coil": {
+  "de": [
+   "Die einfache Spule hat **keinen Filter**, sie hält jeden Magneten von allem ab. Den Filter hat erst die fortgeschrittene.",
+   "Gut zusammen mit {{comfort/collector}}: Die Spule hält fremde Magnete fern, der Sammler hebt den Ertrag auf."
+  ],
+  "en": [
+   "The basic coil has **no filter**; it keeps every magnet off everything. Only the advanced one has a filter.",
+   "Pairs well with {{comfort/collector}}: the coil keeps other players' magnets away, the collector picks up the yield."
+  ],
+  "sources": [
+   "simplemagnets:basic_demagnetization_coil ( A /BCB/CCC)",
+   "simplemagnets:advanced_demagnetization_coil",
+   "srv/config/simplemagnets-common.toml (basicCoilFilter false, advancedCoilFilter true, ranges)"
+  ]
+ },
+ "collector": {
+  "de": [
+   "Du brauchst 4 [[minecraft:obsidian]], und dafür eine Diamantspitzhacke; die 4 Obsidian der Belohnung reichen für den nächsten Sammler. Der einfache Sammler hat keinen Filter, er nimmt alles im Bereich.",
+   "Farmideen dafür stehen im Kapitel {{farms/welcome}}."
+  ],
+  "en": [
+   "It takes 4 [[minecraft:obsidian]], so a diamond pickaxe; the 4 obsidian of the reward make the next collector. The basic collector has no filter and takes everything in its area.",
+   "Farm ideas for it are in {{farms/welcome}}."
+  ],
+  "sources": [
+   "itemcollectors:basic_collector ( A / B /BBB)",
+   "srv/config/itemcollectors-common.toml (basicCollectorMaxRange 5, basicCollectorFilter false, advancedCollectorMaxRange 7)",
+   "kubejs/data/kronwerke/chapters/stages/stage2.json (itemcollectors:advanced_collector)"
+  ]
+ },
+ "magnet_charm": {
+  "de": [
+   "Den Platz Anhänger bringt Simple Magnets selbst mit, einen pro Spieler, und beide Magnete passen hinein. Später wechselst du dort einfach auf den {{comfort/magnet_adv}}."
+  ],
+  "en": [
+   "Simple Magnets adds the charm slot itself, one per player, and both magnets fit. Later you simply swap in the {{comfort/magnet_adv}}."
+  ],
+  "sources": [
+   "simplemagnets jar data/curios/tags/item/charm.json (basicmagnet, advancedmagnet)",
+   "simplemagnets jar data/simplemagnets/curios/slots/charm.json (size 1), curios/entities/player_charm_slot.json"
+  ]
+ },
+ "harvester": {
+  "de": [
+   "Der Pylon erntet in einem Bereich von 3x3 bis 9x9 Blöcken, ohne Strom. Er sitzt im Wasserblock oder auf Höhe der Pflanzen, die Truhe direkt darüber.",
+   "Auf diesem Server lässt sich die Hacke nicht automatisch nachfüllen. Wie du ihn in Stufe 2 aufstellst, zeigt {{farms/s2_pylon}}, bis dahin hilft {{farms/crops_harvester}}."
+  ],
+  "en": [
+   "The pylon harvests an area from 3x3 to 9x9 blocks and needs no power. It sits in the water block or level with the crops, the chest right above it.",
+   "On this server the hoe cannot be refilled automatically. {{farms/s2_pylon}} shows the stage 2 setup; until then use {{farms/crops_harvester}}."
+  ],
+  "sources": [
+   "pylons:harvester_pylon (qqq/idi/bbb, stage 2)",
+   "srv/config/pylons-server.toml (harvesterWorkDelay 60, harvesterRequiresTool true, harvesterCanBeAutomated false, harvesterRequiresPower false)",
+   "pylons jar lang (pylons.int.jei.category.harvester_pylon)"
+  ]
+ },
+ "pylons": {
+  "de": [
+   "Der Infusionspylon lädt seinen Chunk, solange sein Besitzer online ist. Ein Effekt muss mindestens 60 Sekunden laufen, damit der Filter ihn annimmt.",
+   "Interdiktions- und Vertreibungspylon wirken auf 1x1 bis 5x5 Chunks. Dein Team zählt beim Vertreibungspylon nicht als fremd, andere Spieler lässt du mit einem Spielerfilter zu."
+  ],
+  "en": [
+   "The infusion pylon keeps its chunk loaded while its owner is online. An effect must have at least 60 seconds left for the filter to take it.",
+   "The interdiction and expulsion pylons work on 1x1 to 5x5 chunks. Your team does not count as strangers for the expulsion pylon, and a player filter lets others in."
+  ],
+  "sources": [
+   "srv/config/pylons-server.toml (teamSupportEnabled true, infusionChunkloads true, infusionMinimumDuration 60, infusionRequiredDuration 3600, infusionMaximumPotency 3, expulsionPylonMaxRadius 2)",
+   "pylons jar lang (pylons.int.jei.category.*)"
+  ],
+  "client": [
+   "Mindestdauer 60 Sekunden beim Aufladen des Trankfilters"
+  ]
+ },
+ "claims": {
+  "de": [
+   "**PvP ist in deinen Claims aus**, solange dein Team es nicht in den Team-Einstellungen einschaltet. Außerhalb der Claims gilt es wie sonst.",
+   "Fake-Spieler sind in neuen Claims verboten. Claims verfallen, wenn 30 Tage lang niemand aus dem Team online war."
+  ],
+  "en": [
+   "**PvP is off in your claims** unless your team turns it on in the team settings. Outside claims it works as usual.",
+   "Fake players are refused in new claims. Claims are released after 30 days without anyone of the team online."
+  ],
+  "sources": [
+   "config/ftbchunks-world.snbt (pvp_mode per_team, def_pvp false, def_allow_explosions false, def_mob_griefing false, def_fake_players false, max_idle_days_before_unclaim 30)"
+  ]
+ },
+ "chunkload": {
+  "de": [
+   "Auf Kronwerke laufen geladene Chunks auch, wenn **niemand** aus deinem Team online ist. Erst nach 7 Tagen ohne jemanden aus dem Team endet das Laden von selbst.",
+   "Die 25 Chunks gelten für das ganze Team, nicht pro Spieler. Lad die Chunks mit Maschinen, nicht die ganze Basis."
+  ],
+  "en": [
+   "On Kronwerke loaded chunks keep running even with **nobody** of your team online. Only after 7 days without anyone of the team does the loading stop by itself.",
+   "The 25 chunks are for the whole team, not per player. Load the chunks with machines, not the whole base."
+  ],
+  "sources": [
+   "config/ftbchunks-world.snbt (force_load_mode always, max_force_loaded_chunks 25, hard_team_force_limit 25, max_idle_days_before_unforce 7)"
+  ],
+  "client": [
+   "Ablaufzeit mit dem Mausrad einstellen"
+  ]
+ },
+ "journeymap": {
+  "de": [
+   "Der Server erlaubt die Minikarte und Todespunkte von JourneyMap. Bei FTB Chunks ist das Teilen von Wegpunkten mit dem Team, mit einzelnen Spielern und mit dem ganzen Server eingeschaltet.",
+   "Nach einem Tod führt dich der Wegpunkt zum Körper ({{comfort/corpse}})."
+  ],
+  "en": [
+   "The server allows JourneyMap's minimap and death points. In FTB Chunks sharing waypoints with the team, with single players and with the whole server is turned on.",
+   "After a death the waypoint leads you to your body ({{comfort/corpse}})."
+  ],
+  "sources": [
+   "journeymap/server/6.0/journeymap.server.global.config (allowDeathPoints true, minimapEnabled true)",
+   "config/ftbchunks-world.snbt (waypoint_sharing_party, _players, _server true)"
+  ]
+ },
+ "ping": {
+  "de": [
+   "Der Server lässt bis zu 5 Pings kurz hintereinander zu, danach kommt jede Sekunde einer nach. Zielst du auf einen Spieler, folgt der Ping ihm.",
+   "Für Absprachen über größere Entfernungen gibt es zusätzlich den Sprachchat ({{comfort/voice}})."
+  ],
+  "en": [
+   "The server allows up to 5 pings in quick succession, then one more per second. Aim at a player and the ping follows them.",
+   "For talking over longer distances there is also the voice chat ({{comfort/voice}})."
+  ],
+  "sources": [
+   "srv/config/pingwheel.server.json (rateLimit 5, msToRegenerate 1000, playerTrackingEnabled true, defaultChannelMode AUTO)"
+  ],
+  "client": [
+   "Ratenlimit 5 Pings, einer pro Sekunde nach",
+   "Ping folgt einem Spieler"
+  ]
+ },
+ "jei_lookup": {
+  "de": [
+   "EMI zeigt die Rezepte des Servers, also auch alles, was Kronwerke ändert, etwa die Rahmensäge aus Andesitlegierung. Mehr zur Suche steht in {{tips/j_search}}."
+  ],
+  "en": [
+   "EMI shows the server's recipes, so also everything Kronwerke changes, such as the framing saw made with andesite alloy. More about searching is in {{tips/j_search}}."
+  ],
+  "sources": [
+   "kubejs/server_scripts/kronwerke/links.js",
+   "core: src/main/java/de/kronwerke/core/mixin/RecipesForClientsMixin.java (clients get every recipe)"
+  ]
+ },
+ "jei_bookmarks": {
+  "de": [
+   "Favoriten speichert EMI auf deinem Rechner, sie bleiben also auch nach einem Wechsel zwischen Hauptserver und Farmwelt erhalten."
+  ],
+  "en": [
+   "EMI keeps favorites on your computer, so they stay when you move between the main server and the farm world."
+  ],
+  "sources": [
+   "core: src/main/java/de/kronwerke/core/client/EmiKeep.java (EMI stays up between the servers)"
+  ],
+  "client": [
+   "Favoriten bleiben nach Serverwechsel"
+  ]
+ },
+ "jei_stages": {
+  "de": [
+   "Ganz so offen ist EMI nicht: In der Liste bleiben nur die Gegenstände der **nächsten** Stufe, verhüllt mit einem Fragezeichen. Was erst in einer späteren Stufe öffnet, und gesperrte Flüssigkeiten nimmt Kronwerke ganz aus der Liste.",
+   "Gesperrte Rezepte macht auch keine Maschine: Ein Mixer oder Autocrafter findet sie nicht, und wer es versucht, bekommt die nötige Stufe genannt."
+  ],
+  "en": [
+   "EMI is not quite that open: its list keeps only the items of the **next** stage, veiled with a question mark. Items of later stages and locked fluids are taken out of the list.",
+   "No machine makes locked recipes either: a mixer or autocrafter does not find them, and whoever tries is told which stage it needs."
+  ],
+  "sources": [
+   "core: src/main/java/de/kronwerke/core/compat/EmiLocks.java (next stage veiled, later stages and locked fluids hidden)",
+   "core: src/main/java/de/kronwerke/core/lock/LockedDecorator.java",
+   "core: src/main/java/de/kronwerke/core/lock/MachineLocks.java",
+   "docs/STAGES.md (How a stage is locked)"
+  ]
+ },
+ "jade": {
+  "de": [
+   "Ein Gegenstand, dessen Stufe noch nicht offen ist, erscheint in Truhen, im Inventar und in EMI dunkel mit einem Fragezeichen ({{comfort/jei_stages}}). Mehr über Jade und seine Einstellungen steht in {{tips/j_jade}}."
+  ],
+  "en": [
+   "An item whose stage is not open yet is drawn dark with a question mark in chests, in your inventory and in EMI ({{comfort/jei_stages}}). More about Jade and its settings is in {{tips/j_jade}}."
+  ],
+  "sources": [
+   "core: src/main/java/de/kronwerke/core/lock/LockedDecorator.java",
+   "tips/j_jade"
+  ]
+ },
+ "ultimine": {
+  "de": [
+   "Alle Erze einer Sorte zählen als eine, Eisenerz und Tiefenschiefer-Eisenerz gehen also zusammen mit. In den Formen mit fester Gestalt (Tunnel, Quadrat) baut Ultimine jeden Block ab, nicht nur eine Sorte.",
+   "Die Verzauberung **Unermüdlich** auf einem Abbauwerkzeug streicht den Hungerverbrauch ganz ({{comfort/qol_small}})."
+  ],
+  "en": [
+   "All ores of one kind count as one, so iron ore and deepslate iron ore go together. In the shaped modes (tunnels, square) Ultimine mines every block, not only one kind.",
+   "The enchantment **Tireless** on a mining tool removes the hunger cost completely ({{comfort/qol_small}})."
+  ],
+  "sources": [
+   "config/ftbultimine-server.snbt (merge_tags c:ores/*, merge_tags_shaped *, exhaustion_per_block 20, max_blocks 128)",
+   "kubejs/data/kronwerke/enchantment/tireless.json (#minecraft:enchantable/mining, ftbultimine:exhaustion_modifier -1000)"
+  ]
+ },
+ "voice": {
+  "de": [
+   "**Aufnahmen sind auf diesem Server abgeschaltet**, anders als die Quest sagt. Die Gruppe ist der Weg, um mit deinem Team über jede Entfernung zu reden.",
+   "Mehr Einstellungen erklärt {{tips/h_voice}}."
+  ],
+  "en": [
+   "**Recording is turned off on this server**, unlike the quest says. Groups are the way to talk with your team over any distance.",
+   "{{tips/h_voice}} covers the other settings."
+  ],
+  "sources": [
+   "config/voicechat/voicechat-server.properties (allow_recording=false, max_voice_distance 48, whisper_distance 24, enable_groups true)"
+  ]
+ },
+ "corpse": {
+  "de": [
+   "Der Körper verbrennt nicht in Lava. **Die Farmwelt wird alle drei Tage neu erzeugt**, ein Körper dort ist danach mit allem darin weg.",
+   "Ein leerer Körper verschwindet nach 30 Sekunden, ein voller bleibt, bis du ihn leerst. Die Todeshistorie erklärt auch {{tips/h_death}}."
+  ],
+  "en": [
+   "Your body does not burn in lava. **The farm world is generated anew every three days**, and a body there is gone with everything in it.",
+   "An empty body vanishes after 30 seconds, a full one stays until you empty it. {{tips/h_death}} explains the death history too."
+  ],
+  "sources": [
+   "srv/config/corpse-server.toml (only_owner false, despawn time 600, force_time -1, skeleton_time 72000, lava_damage false)",
+   "docs/STAGES.md (mining world reset every three days)"
+  ]
+ },
+ "trash": {
+  "de": [
+   "Für die Mülltonne zählt jeder Stein und jeder Bruchstein, auch Bruchtiefenschiefer. Die Flüssigkeits- und Energietonne kosten dasselbe, nur mit Eimer oder Redstone statt der Truhe.",
+   "Atommüll lässt sich auf diesem Server nicht in die Tonne werfen. Lagerlösungen mit eigener Tonne stehen im Lager-Kapitel ({{storage/trash}})."
+  ],
+  "en": [
+   "Any stone and cobblestone counts for the trash can, cobbled deepslate too. The liquid and energy cans cost the same, with a bucket or redstone instead of the chest.",
+   "Nuclear waste cannot be voided on this server. Storage options with their own trash are in the storage chapter ({{storage/trash}})."
+  ],
+  "sources": [
+   "trashcans:item_trash_can (AAA/BCB/BBB, #c:stones, #c:cobblestones)",
+   "trashcans:liquid_trash_can",
+   "trashcans:energy_trash_can",
+   "trashcans:ultimate_trash_can",
+   "srv/config/trashcans-common.toml (retrieveDeletedItems true, allowVoidingNuclearWaste false)"
+  ]
+ },
+ "sort": {
+  "de": [
+   "Inventory Tweak sortiert auf diesem Server nach Art. Ein Werkzeug, das du aufbrauchst, ersetzt Stack Refill aus deinem Inventar durch ein gleiches, genauso wie Blöcke und Essen ({{comfort/qol_small}})."
+  ],
+  "en": [
+   "Inventory Tweak sorts by type on this server. When a tool breaks, Stack Refill replaces it with an identical one from your inventory, just like blocks and food ({{comfort/qol_small}})."
+  ],
+  "sources": [
+   "srv/config/inventorytweak/inventorytweak.toml (sortType TYPE, percentageDurabilityWarning 10)",
+   "srv/config/serilum/stackrefill.json (refillToolsAndWeapons true)"
+  ]
+ },
+ "compress": {
+  "de": [
+   "Die 9 Eisenbarren der Belohnung kannst du gleich zu einem Eisenblock pressen. Den brauchst du für den Amboss oder um einen beschädigten Amboss zu reparieren ({{comfort/qol_anvil}})."
+  ],
+  "en": [
+   "The 9 iron ingots of the reward press into one iron block right away. You need that for an anvil or to repair a damaged one ({{comfort/qol_anvil}})."
+  ],
+  "sources": [
+   "srv/config/easyanvils-server.toml (anvil_repairing true)"
+  ]
+ },
+ "wrench": {
+  "de": [
+   "Steckt der [[supplementaries:wrench]] in der Haupthand, dreht ein Rechtsklick den Block, statt ihn zu öffnen. So drehst du auch Truhen und Trichter, ohne in ihr Fenster zu fallen.",
+   "Die 8 Kupferbarren der Belohnung reichen für 2 Schraubenschlüssel."
+  ],
+  "en": [
+   "With the [[supplementaries:wrench]] in your main hand, a right click turns the block instead of opening it. That way you also turn chests and hoppers without landing in their window.",
+   "The 8 copper ingots of the reward make 2 wrenches."
+  ],
+  "sources": [
+   "supplementaries:wrench (1 1/ 1 / 1 )",
+   "srv/config/supplementaries-common.toml (wrench bypass_when_on MAIN_HAND)"
+  ]
+ },
+ "cage": {
+  "de": [
+   "Jungtiere nimmt der Käfig auf diesem Server nicht pauschal, nur die Arten auf seiner Liste. Verletzt oder gesund spielt keine Rolle.",
+   "Für Dorfbewohner gibt es einen eigenen Weg: {{comfort/qol_villagers}}."
+  ],
+  "en": [
+   "On this server the cage does not take every baby, only the kinds on its list. Whether the animal is hurt does not matter.",
+   "Villagers have their own way: {{comfort/qol_villagers}}."
+  ],
+  "sources": [
+   "supplementaries:cage (111/2 2/000)",
+   "srv/config/supplementaries-common.toml (cage require_taming true, cage_allow_all_babies false, cage_auto_detect false, allow_all_mobs false, health_threshold 100)"
+  ]
+ },
+ "jar": {
+  "de": [
+   "Trinken oder essen kannst du aus dem Gefäß auf diesem Server nicht, weder abgestellt noch in der Hand. Es ist Lager und Deko, kein Proviant.",
+   "Die 8 Glas der Belohnung reichen für eins und ein bisschen mehr: ein Gefäß braucht 7 Glas."
+  ],
+  "en": [
+   "You cannot drink or eat from a jar on this server, neither placed nor in your hand. It is storage and decoration, not food.",
+   "The 8 glass of the reward make one jar with one left over: a jar takes 7 glass."
+  ],
+  "sources": [
+   "supplementaries:jar (212/2 2/222)",
+   "srv/config/supplementaries-common.toml (drink_from_jar false, drink_from_jar_item false, jar_capture true, jar_cookies true)"
+  ]
+ },
+ "carry": {
+  "de": [
+   "Vieles bleibt auf diesem Server stehen: alles von Create und seinen Erweiterungen, FramedBlocks, Chipped und Copycats, dazu Sophisticated Storage und Functional Storage. Kisten aus Holz, Fässer und Öfen gehen.",
+   "Feindliche Mobs und Jungtiere trägst du nicht."
+  ],
+  "en": [
+   "Much stays put on this server: everything from Create and its add-ons, FramedBlocks, Chipped and Copycats, plus Sophisticated Storage and Functional Storage. Wooden chests, barrels and furnaces work.",
+   "You cannot carry hostile mobs or babies."
+  ],
+  "sources": [
+   "config/carryon-common.toml (forbiddenTiles: kronwerke:*, waystones:*, create:*, create*:*, framedblocks:*, chipped:*, copycats:*, sophisticatedstorage:*, functionalstorage:*, botania:*, immersiveengineering:*; pickupHostileMobs false, allowBabies false)"
+  ]
+ },
+ "qol_trees": {
+  "de": [
+   "Das klappt bis 100 Stämme, größere Bäume fällt FallingTree nicht auf einmal. Blätter verschwinden mit Leaves Be Gone innerhalb einer Sekunde.",
+   "Jeder Stamm kostet die Axt einen Punkt Haltbarkeit. Für Baumfarmen siehe {{farms/wood_saw}}."
+  ],
+  "en": [
+   "It works up to 100 logs; FallingTree does not fell bigger trees at once. With Leaves Be Gone the leaves vanish within a second.",
+   "Each log costs the axe one point of durability. For tree farms see {{farms/wood_saw}}."
+  ],
+  "sources": [
+   "srv/config/fallingtree.json (maxSize 100, maxSizeAction ABORT, sneakMode SNEAK_DISABLE, durabilityMode NORMAL)",
+   "srv/config/leavesbegone-server.toml (maximum_decay_ticks 20)"
+  ]
+ },
+ "qol_villagers": {
+  "de": [
+   "Der [[easy_villagers:trader]] kostet 5 Glasscheiben, ein Redstone und 3 Eisenbarren. Händler im Block füllen ihre Angebote alle 1 bis 3 Minuten wieder auf.",
+   "Die [[easy_villagers:iron_farm]] (Scheiben, Lavaeimer, Eisen, Stein) gibt etwa alle 4 Minuten einen Eisengolem-Ertrag, der Breeder braucht für Nachwuchs eine Minute."
+  ],
+  "en": [
+   "The [[easy_villagers:trader]] costs 5 glass panes, a redstone and 3 iron ingots. Traders in a block restock every 1 to 3 minutes.",
+   "The [[easy_villagers:iron_farm]] (panes, lava bucket, iron, stone) gives an iron golem's drop about every 4 minutes, and the breeder takes a minute for a baby."
+  ],
+  "sources": [
+   "easy_villagers:trader (GGG/GRG/III)",
+   "easy_villagers:iron_farm (GGG/GLG/ISI)",
+   "srv/config/easy_villagers-server.toml (trader restock 1200 to 3600, iron_farm spawn_time 4800, breeding_time 1200, trade_cycling true)"
+  ]
+ },
+ "qol_elytra": {
+  "de": [
+   "Der eigene Platz für die Elytra ist der Schmuckplatz Rücken. Was sonst dorthin will, etwa ein Umhang, konkurriert mit den Flügeln."
+  ],
+  "en": [
+   "The elytra's own slot is the back accessory slot. Anything else that wants that slot, a cape for example, competes with the wings."
+  ],
+  "sources": [
+   "elytraslot-neoforge-9.0.2+1.21.1.jar data/elytraslot/curios/entities/elytraslot.json (slots back)"
+  ],
+  "client": [
+   "Schmuckplatz der Create-Brille"
+  ]
+ },
+ "qol_torch": {
+  "de": [
+   "Die [[torchmaster:megatorch]] reicht auf diesem Server **64 Blöcke** weit, nicht 32, und hält nur natürliche Spawns ab. Sie kostet 3 Fackeln, 2 Diamanten, 2 Stämme und 2 Goldblöcke.",
+   "Die Dread Lamp reicht ebenfalls 64 Blöcke, die [[torchmaster:feral_flare_lantern]] setzt ihre Lichter in 16 Blöcken Umkreis."
+  ],
+  "en": [
+   "The [[torchmaster:megatorch]] reaches **64 blocks** on this server, not 32, and only stops natural spawns. It costs 3 torches, 2 diamonds, 2 logs and 2 gold blocks.",
+   "The Dread Lamp also reaches 64 blocks, and the [[torchmaster:feral_flare_lantern]] places its lights within 16 blocks."
+  ],
+  "sources": [
+   "srv/config/torchmaster.toml (megaTorchRadius 64, dreadLampRadius 64, feralFlareRadius 16, blockOnlyNaturalSpawns true)",
+   "torchmaster:megatorch (TTT/DLD/GLG)"
+  ]
+ },
+ "qol_anvil": {
+  "de": [
+   "Beim Reparieren und Verzaubern kann der Amboss weiter Schaden nehmen, seltener als in Vanilla. Wie oft du einen Gegenstand schon bearbeitet hast, verteuert ihn nur noch begrenzt.",
+   "Namensschilder lassen Mobs auf diesem Server nicht fallen."
+  ],
+  "en": [
+   "Repairing and enchanting can still damage the anvil, less often than in vanilla. How often an item was worked on only raises its cost up to a limit.",
+   "Mobs do not drop name tags on this server."
+  ],
+  "sources": [
+   "srv/config/easyanvils-server.toml (anvil_break_chance 0.05, risk_free_anvil_renaming true, prior_work_penalty LIMITED, maximum_prior_work_penalty_increase 4, name_tags_drop_from_mobs false)"
+  ]
+ },
+ "qol_small": {
+  "de": [
+   "Doppeltüren gehen nur bei Türen zusammen auf, nicht bei Zauntoren und Falltüren. Stack Refill ersetzt auch ein zerbrochenes Werkzeug durch ein gleiches aus dem Inventar.",
+   "[[crafting_on_a_stick:crafting_table]] ist eine Werkbank mit einem Stock. **Unermüdlich** geht auf alle Abbauwerkzeuge und erscheint am Zaubertisch ab 15 Erfahrungsstufen."
+  ],
+  "en": [
+   "Double Doors only opens doors together, not fence gates or trapdoors. Stack Refill also replaces a broken tool with an identical one from your inventory.",
+   "The [[crafting_on_a_stick:crafting_table]] is a crafting table and a stick. **Tireless** goes on every mining tool and shows up at the enchanting table from 15 levels."
+  ],
+  "sources": [
+   "srv/config/serilum/doubledoors.json (enableFenceGates false, enableTrapdoors false)",
+   "srv/config/serilum/stackrefill.json (refillToolsAndWeapons true)",
+   "crafting_on_a_stick:crafting_table",
+   "kubejs/data/kronwerke/enchantment/tireless.json (min_cost 15, max_cost 65)",
+   "kubejs/data/minecraft/tags/enchantment/in_enchanting_table.json, tradeable.json, on_random_loot.json"
+  ]
+ },
+ "done": {
+  "de": [
+   "Die drei Gegenstände bleiben bei dir, die Quest prüft sie nur. Als Nächstes lohnen sich {{create/welcome}} und {{storage/welcome}}."
+  ],
+  "en": [
+   "The three items stay with you; the quest only checks them. Good next steps are {{create/welcome}} and {{storage/welcome}}."
+  ],
+  "sources": [
+   "tools/quests/chapters/comfort.py (done tasks)",
+   "tools/quests/ftbq.py (default_consume_items False)"
+  ]
+ },
+ "sleeping_bag": {
+  "de": [
+   "Auf diesem Server geht der Schlafsack beim Benutzen nie kaputt, du kannst ihn also jede Nacht wieder mitnehmen. Für den Tag gibt es die Hängematte ({{comfort/hammock}})."
+  ],
+  "en": [
+   "On this server the sleeping bag never breaks when used, so you can take it along every night. For the day there is the hammock ({{comfort/hammock}})."
+  ],
+  "sources": [
+   "comforts:sleeping_bag_white ( # / # / # )",
+   "srv/config/comforts-server.toml (sleepingBagUse NIGHT, sleepingBagBreakChance 0, autoUse true, sleepingBagsStopPhantoms true)"
+  ]
+ },
+ "hammock": {
+  "de": [
+   "Seil und Nägel gehen auch ohne Flachs: 4 Fäden und ein Eisenbarren ergeben ebenfalls 2. Die 8 Fäden der Belohnung reichen für 2 solche Rezepte.",
+   "Auch die Hängematte hält Phantome fern."
+  ],
+  "en": [
+   "Rope and nail works without flax too: 4 string and an iron ingot also make 2. The 8 string of the reward cover 2 such crafts.",
+   "The hammock keeps phantoms away as well."
+  ],
+  "sources": [
+   "comforts:hammock_white ( X /S#S/ X )",
+   "comforts:rope_and_nail (AA /AX /  A, 2)",
+   "comforts:shapeless_rope_and_nail",
+   "srv/config/comforts-server.toml (hammockUse DAY, hammocksStopPhantoms true)"
+  ]
+ },
+ "campfire": {
+  "de": [
+   "Das Feuer muss brennen, Rauchzeichen braucht es nicht. Die Partikel der Regeneration sind ausgeblendet, du siehst den Effekt nur in der Effektleiste.",
+   "Auch das normale Lagerfeuer heilt Tiere in der Nähe, nicht nur das Seelenlagerfeuer."
+  ],
+  "en": [
+   "The fire must be lit, no signal smoke needed. The regeneration particles are hidden; you only see the effect in the effect bar.",
+   "The normal campfire heals nearby animals too, not only the soul campfire."
+  ],
+  "sources": [
+   "srv/config/serilum/healingcampfire.json (healingRadius 16, effectDurationSeconds 60, campfireMustBeLit true, campfireMustBeSignalling false, healPassiveMobs true, hideEffectParticles true)"
+  ]
+ },
+ "lunch_basket": {
+  "de": [
+   "Für den Korb brauchst du 6 [[minecraft:bamboo]] und einen beliebigen Teppich, die 16 Bambus der Belohnung reichen für 2 weitere."
+  ],
+  "en": [
+   "The basket takes 6 [[minecraft:bamboo]] and any carpet, so the 16 bamboo of the reward make 2 more."
+  ],
+  "sources": [
+   "supplementaries:lunch_basket ( 0 /010/000)",
+   "srv/config/supplementaries-common.toml (lunch_basket slots 6, placeable true)"
+  ]
+ }
+}

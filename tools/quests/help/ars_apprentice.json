@@ -1,0 +1,1017 @@
+{
+ "welcome": {
+  "de": [
+   "Das Upgrade ist ein formloses Rezept im Crafting-Feld, dein [[ars_nouveau:novice_spell_book]] kommt einfach mit hinein. Die [[minecraft:quartz_block]] machst du aus Netherquarz ({{nether/quartz}}), die [[minecraft:blaze_rod]] holst du von Lohen in Netherfestungen ({{nether/blaze}}).",
+   "Neben dem Buchbonus gibt jede gelernte Glyphe **+15 maximales Mana**, jede neue Glyphe macht dich also auch stärker. Das nächste Buch kommt in Stufe 3 ({{ars_master/archmage_book}})."
+  ],
+  "en": [
+   "The upgrade is a shapeless recipe in the crafting grid; your [[ars_nouveau:novice_spell_book]] simply goes in with the rest. Make the [[minecraft:quartz_block]] from nether quartz ({{nether/quartz}}) and take the [[minecraft:blaze_rod]] from blazes in nether fortresses ({{nether/blaze}}).",
+   "On top of the book bonus every glyph you have learned adds **+15 max mana**, so each new glyph also makes you stronger. The next book comes in stage 3 ({{ars_master/archmage_book}})."
+  ],
+  "sources": [
+   "ars_nouveau:apprentice_book_upgrade",
+   "srv/config/ars_nouveau-server.toml (tierMax 50, tierRegen 1, glyphmax 15)"
+  ]
+ },
+ "tier2": {
+  "de": [
+   "Der Tisch zieht Erfahrungs**punkte** ab, keine Level: Auf hohem Level kosten 55 Punkte viel weniger als 5 Level. Lern Glyphen also lieber, wenn du gerade viel Erfahrung hast.",
+   "Nicht alles aus Ars Technica ist Stufe 2: Fuse, Carve, Insert und Apply sind Glyphen der Stufe 1, Carve, Insert und Apply kosten nur 27 Punkte."
+  ],
+  "en": [
+   "The table takes experience **points**, not levels: at a high level 55 points are far less than 5 levels. So learn glyphs while you have plenty of experience.",
+   "Not everything from Ars Technica is tier 2: Fuse, Carve, Insert and Apply are tier 1 glyphs, and Carve, Insert and Apply cost only 27 points."
+  ],
+  "sources": [
+   "ars_nouveau:glyph_aoe (exp 55)",
+   "ars_technica:glyph_carve, glyph_insert, glyph_apply (exp 27)",
+   "srv/config/ars_technica/glyph_*.toml (glyph_tier)",
+   "ars_nouveau ScribesTile (Player.giveExperiencePoints)"
+  ]
+ },
+ "glyph_aoe": {
+  "de": [
+   "Einen [[minecraft:firework_star]] machst du aus Schwarzpulver und Farbstoff im Crafting-Feld. AOE wirkt auf viele Effekte, nicht nur auf Brechen: Wachsen, Ernte, Schmelzen und Explosion werden damit größer.",
+   "Ab hier lohnt sich {{ars_apprentice/glyph_fortune}} und später {{ars_apprentice/spells2}}."
+  ],
+  "en": [
+   "You craft a [[minecraft:firework_star]] from gunpowder and a dye. AOE works on many effects, not only Break: Grow, Harvest, Smelt and Explosion all get bigger with it.",
+   "From here {{ars_apprentice/glyph_fortune}} and later {{ars_apprentice/spells2}} are worth it."
+  ],
+  "sources": [
+   "ars_nouveau:glyph_aoe",
+   "ars_nouveau lang glyph_desc (smelt, explosion)"
+  ]
+ },
+ "glyph_pierce": {
+  "de": [
+   "Den [[ars_nouveau:wilden_spike]] lässt nur der Wilden-Verteidiger fallen, der stachelige Wilde aus dem ersten Ars-Kapitel ({{ars_nouveau/wilden}}). Bei Arc Projectile von Ars Elemental lässt jedes Durchschlag die Kugel einmal vom Boden abprallen ({{ars_apprentice/arc_projectile}})."
+  ],
+  "en": [
+   "Only the Wilden Guardian, the spiky Wilden from the first Ars chapter ({{ars_nouveau/wilden}}), drops the [[ars_nouveau:wilden_spike]]. With Ars Elemental's Arc Projectile every Pierce makes the shot bounce off the ground once ({{ars_apprentice/arc_projectile}})."
+  ],
+  "sources": [
+   "ars_nouveau:glyph_pierce",
+   "ars_nouveau: loot_table/entities/wilden_guardian.json",
+   "ars_elemental lang glyph_desc.glyph_arc_projectile"
+  ]
+ },
+ "glyph_extend_time": {
+  "de": [
+   "Für Zeit verlängern brauchst du einen [[minecraft:redstone_block]], die Uhr aus Gold und Redstone ist für beide Glyphen gleich. Mit Wasser beschwören hält Zeit verlängern Wesen länger nass, das braucht später Kälteeinbruch ({{ars_apprentice/t2_fight}}).",
+   "Zeit verlängern führt weiter zu {{ars_apprentice/glyph_heal}} und {{ars_apprentice/t2_motion}}."
+  ],
+  "en": [
+   "Extend Time needs a [[minecraft:redstone_block]]; the clock from gold and redstone is the same for both glyphs. With Conjure Water, Extend Time keeps targets wet for longer, which Cold Snap uses later ({{ars_apprentice/t2_fight}}).",
+   "This quest leads on to {{ars_apprentice/glyph_heal}} and {{ars_apprentice/t2_motion}}."
+  ],
+  "sources": [
+   "ars_nouveau:glyph_extend_time",
+   "ars_nouveau:glyph_duration_down",
+   "ars_nouveau lang glyph_desc.glyph_conjure_water"
+  ]
+ },
+ "glyph_fortune": {
+  "de": [
+   "Hasenpfoten lassen Kaninchen manchmal fallen, Smaragde bekommst du beim Dorfhandel oder aus Erz. Hinter Brechen darf Glück höchstens **4 Mal** stehen, mehr nimmt das Buch nicht an.",
+   "Extrakt hält Explosion außerdem davon ab, Blöcke mit Drops zu zerstören. Weiter geht es mit {{ars_apprentice/glyph_smelt}}."
+  ],
+  "en": [
+   "Rabbits sometimes drop a rabbit's foot; emeralds come from villager trades or ore. Fortune can follow Break at most **4 times**, the book will not take more.",
+   "Extract also keeps Explosion from destroying blocks that drop. Next is {{ars_apprentice/glyph_smelt}}."
+  ],
+  "sources": [
+   "ars_nouveau:glyph_fortune",
+   "ars_nouveau:glyph_extract",
+   "srv/config/ars_nouveau/glyph_break.toml (augment_limits glyph_fortune=4)",
+   "ars_nouveau lang glyph_desc.glyph_extract"
+  ]
+ },
+ "glyph_dampen": {
+  "de": [
+   "Den [[minecraft:nether_brick]] brennst du aus Netherrack im Ofen, also erst nach dem Weg in den Nether. Die Quest ist optional, Dämpfen schaltet aber {{ars_apprentice/glyph_grow}} mit frei."
+  ],
+  "en": [
+   "You smelt the [[minecraft:nether_brick]] from netherrack in a furnace, so only after your first trip to the Nether. The quest is optional, but Dampen also unlocks {{ars_apprentice/glyph_grow}}."
+  ],
+  "sources": [
+   "ars_nouveau:glyph_dampen",
+   "ars_nouveau lang glyph_desc.glyph_smelt (Dampen uses smoking recipes)"
+  ]
+ },
+ "glyph_heal": {
+  "de": [
+   "[[minecraft:glistering_melon_slice]] machst du aus einer Melonenscheibe und 8 Goldnuggets, die [[ars_nouveau:abjuration_essence]] in der Imbuement-Kammer ({{ars_nouveau/essences_more}}). Weil Heilen deinen Hunger aufzehrt, nimm für lange Kämpfe genug Essen mit.",
+   "Untote nimmt der Zauber als Magieschaden, gegen Zombies und Skelette ist Heilen also auch eine Waffe."
+  ],
+  "en": [
+   "You make [[minecraft:glistering_melon_slice]] from a melon slice and 8 gold nuggets, the [[ars_nouveau:abjuration_essence]] in the imbuement chamber ({{ars_nouveau/essences_more}}). Since Heal eats your hunger, bring enough food for long fights.",
+   "Undead take it as magic damage, so against zombies and skeletons Heal is a weapon too."
+  ],
+  "sources": [
+   "ars_nouveau:glyph_heal",
+   "ars_nouveau:imbuement_abjuration_essence",
+   "ars_nouveau lang glyph_desc.glyph_heal"
+  ]
+ },
+ "glyph_smelt": {
+  "de": [
+   "Für die [[ars_nouveau:fire_essence]] legst du in der Imbuement-Kammer Feuerzeug, Fackel und Schwarzpulver auf die Podeste. Mit Empfindlich schmilzt der Zauber nur Items und keine Blöcke, so kannst du Erzbrocken auf dem Boden verarbeiten, ohne die Umgebung zu verbrennen.",
+   "Mit Dämpfen nimmt Schmelzen die Räucherofen-Rezepte, also Essen."
+  ],
+  "en": [
+   "For the [[ars_nouveau:fire_essence]] put flint and steel, a torch and gunpowder on the pedestals of the imbuement chamber. With Sensitive the spell only smelts items, not blocks, so you can cook raw ore on the ground without melting your surroundings.",
+   "With Dampen, Smelt uses smoker recipes, so it cooks food."
+  ],
+  "sources": [
+   "ars_nouveau:glyph_smelt",
+   "ars_nouveau:imbuement_fire_essence",
+   "ars_nouveau lang glyph_desc.glyph_smelt",
+   "srv/config/ars_nouveau/glyph_smelt.toml (glyph_sensitive=1)"
+  ]
+ },
+ "glyph_grow": {
+  "de": [
+   "Die [[ars_nouveau:earth_essence]] kommt aus der Kammer mit Eisenbarren, Samen und Erde ({{ars_nouveau/earth_essence}}). Wachsen wirkt wie Knochenmehl, aber du zahlst mit Mana statt mit Knochen.",
+   "Für ein Feld, das sich ohne dich erntet, ist das Ritual Ernte stärker ({{ars_apprentice/ritual_harvest}})."
+  ],
+  "en": [
+   "The [[ars_nouveau:earth_essence]] comes from the chamber with an iron ingot, seeds and dirt ({{ars_nouveau/earth_essence}}). Grow works like bone meal, but you pay with mana instead of bones.",
+   "For a field that harvests itself without you, the Harvest ritual is stronger ({{ars_apprentice/ritual_harvest}})."
+  ],
+  "sources": [
+   "ars_nouveau:glyph_grow",
+   "ars_nouveau:imbuement_earth_essence",
+   "ars_nouveau lang glyph_desc.glyph_grow"
+  ]
+ },
+ "glyph_crush": {
+  "de": [
+   "Ohne Empfindlich zerkleinert der Zauber nur Blöcke, Items auf dem Boden bleiben liegen. Welche Items er verarbeitet, zeigt EMI unter dem Rezepttyp der Glyphe.",
+   "Zerkleinern führt zu {{ars_apprentice/glyph_flare}}."
+  ],
+  "en": [
+   "Without Sensitive the spell only crushes blocks; items on the ground stay as they are. EMI lists which items it processes under the glyph's recipe type.",
+   "Crush leads on to {{ars_apprentice/glyph_flare}}."
+  ],
+  "sources": [
+   "ars_nouveau:glyph_crush",
+   "ars_nouveau lang glyph_desc.glyph_crush (Need Sensitive to work on items, see JEI)"
+  ],
+  "client": [
+   "EMI shows the Crush glyph recipes as their own category"
+  ]
+ },
+ "glyph_slowfall": {
+  "de": [
+   "Den [[ars_nouveau:wilden_wing]] lässt nur der Wilden Stalker fallen, die [[minecraft:nether_wart]] wächst in Netherfestungen. Langsamer Fall wirkt auf jedes Ziel, du rettest damit also auch Freunde vor einem tiefen Sturz."
+  ],
+  "en": [
+   "Only the Wilden Stalker drops the [[ars_nouveau:wilden_wing]]; [[minecraft:nether_wart]] grows in nether fortresses. Slow Fall can be cast on any target, so it also saves a friend from a long drop."
+  ],
+  "sources": [
+   "ars_nouveau:glyph_slowfall",
+   "ars_nouveau: loot_table/entities/wilden_stalker.json"
+  ]
+ },
+ "glyph_conjure_water": {
+  "de": [
+   "Die [[ars_nouveau:water_essence]] kommt aus der Kammer mit Wassereimer, Schneeblock und Seetang. Mit Zeit verlängern bleiben Wesen länger nass, das brauchen Kälteeinbruch und Ars Elemental-Zauber gegen nasse Ziele ({{ars_apprentice/t2_fight}})."
+  ],
+  "en": [
+   "The [[ars_nouveau:water_essence]] comes from the chamber with a water bucket, a snow block and kelp. With Extend Time targets stay wet for longer, which Cold Snap needs against wet targets ({{ars_apprentice/t2_fight}})."
+  ],
+  "sources": [
+   "ars_nouveau:glyph_conjure_water",
+   "ars_nouveau:imbuement_water_essence",
+   "ars_nouveau lang glyph_desc.glyph_conjure_water, glyph_cold_snap"
+  ]
+ },
+ "glyph_flare": {
+  "de": [
+   "Fackel wirkt auch auf Ziele mit dem Effekt Sprengung: Die explodieren dann sofort und stärker. Das Magierfeuer, das Fackel legt, breitet sich nicht auf Blöcke aus und erlischt schnell, in der Basis ist es also ungefährlich."
+  ],
+  "en": [
+   "Flare also triggers on targets with Blasting: they explode at once and harder. The Mage Fire it leaves does not spread to blocks and dies out fast, so it is safe inside your base."
+  ],
+  "sources": [
+   "ars_nouveau:glyph_flare",
+   "ars_nouveau lang glyph_desc.glyph_flare"
+  ]
+ },
+ "arc_projectile": {
+  "de": [
+   "Die Glyphe kommt von Ars Elemental und ist eine Form, sie steht also am Anfang des Zaubers wie Projektil. Mit Arc weitergeben ({{ars_apprentice/el_anima}}) schießt ein Zauber nach dem Treffer einen zweiten Bogenschuss ab.",
+   "Arc Projectile öffnet die Ars-Elemental-Glyphen ab {{ars_apprentice/el_water}}."
+  ],
+  "en": [
+   "The glyph comes from Ars Elemental and is a form, so it starts the spell like Projectile. With Propagate Arc ({{ars_apprentice/el_anima}}) a spell fires a second arcing shot from where it lands.",
+   "Arc Projectile opens the Ars Elemental glyphs starting with {{ars_apprentice/el_water}}."
+  ],
+  "sources": [
+   "ars_elemental:glyph_arc_projectile",
+   "ars_elemental lang glyph_desc (arc_projectile, propagator_arc)",
+   "srv/config/ars_elemental/glyph_arc_projectile.toml (glyph_tier 2)"
+  ]
+ },
+ "spells2": {
+  "de": [
+   "Glück und Extrakt schließen sich aus, darum braucht der Erz-Zauber Glück und kein Extrakt. Für den Tunnel kostet jedes Verstärken und jedes AOE zusätzlich Mana, mit dem Buch des Magiers hast du dafür 50 Mana mehr.",
+   "Wenn der Platz im Buch nicht reicht, schreib einen Zauber auf ein Zauberpergament ({{ars_nouveau/parchment}}) oder leg ihn in einen Zauberturm ({{ars_apprentice/turret}})."
+  ],
+  "en": [
+   "Fortune and Extract exclude each other, so the ore spell uses Fortune and no Extract. In the tunnel spell every Amplify and AOE adds mana cost; the Mage's Spell Book gives you 50 more mana for it.",
+   "If the book runs out of room, write a spell on spell parchment ({{ars_nouveau/parchment}}) or put it into a spell turret ({{ars_apprentice/turret}})."
+  ],
+  "sources": [
+   "ars_nouveau lang glyph_desc.glyph_fortune (Cannot be combined with Extract)",
+   "srv/config/ars_nouveau-server.toml (tierMax 50, spell_length)"
+  ]
+ },
+ "t2_motion": {
+  "de": [
+   "Austausch braucht Verstärken für härtere Blöcke und wirkt mit AOE auf mehrere, die Blöcke kommen wie mit Behutsamkeit abgebaut in deine Hotbar. Auf ein Wesen gewirkt tauscht es deinen Platz mit seinem.",
+   "Den [[minecraft:powered_rail]] machst du aus Gold, Stock und Redstone, den [[minecraft:cobweb]] findest du in Minen und Höhlen."
+  ],
+  "en": [
+   "Exchange needs Amplify for harder blocks and works on several with AOE; the blocks go to your hotbar as if mined with Silk Touch. Cast on a mob it swaps your place with its place.",
+   "You craft the [[minecraft:powered_rail]] from gold, a stick and redstone; [[minecraft:cobweb]] is found in mineshafts and caves."
+  ],
+  "sources": [
+   "ars_nouveau:glyph_accelerate",
+   "ars_nouveau:glyph_decelerate",
+   "ars_nouveau:glyph_gravity",
+   "ars_nouveau:glyph_exchange",
+   "ars_nouveau lang glyph_desc.glyph_exchange"
+  ]
+ },
+ "t2_fight": {
+  "de": [
+   "Explosion zerstört Blöcke, nimm Extrakt dazu, dann bleiben Blöcke mit Drops stehen. Bei Feuerwerk machen Verstärken mehr Sterne und Zeit verlängern längeren Flug, eine Rakete im Inventar gibt die Form vor.",
+   "Kälteeinbruch zündet am besten nach Wasser beschwören oder Verlangsamen: nasse oder verlangsamte Ziele bekommen den Schadensstoß."
+  ],
+  "en": [
+   "Explosion destroys blocks; add Extract and blocks that drop stay in place. For Firework, Amplify adds stars and Extend Time adds flight time, and a rocket in your inventory sets the shape.",
+   "Cold Snap hits hardest after Conjure Water or a slowing effect: wet or slowed targets take the burst."
+  ],
+  "sources": [
+   "ars_nouveau:glyph_explosion",
+   "ars_nouveau:glyph_firework",
+   "ars_nouveau:glyph_wind_shear",
+   "ars_nouveau:glyph_cold_snap",
+   "ars_nouveau lang glyph_desc (extract, firework, cold_snap)"
+  ]
+ },
+ "t2_util": {
+  "de": [
+   "Die [[ars_nouveau:conjuration_essence]] für Block animieren braucht ein Wilden-Horn, Sternbunkel-Scherben und ein Buch ({{ars_nouveau/essences_wild}}). Einflößen nimmt mit AOE einen Wurftrank und mit Zeit verlängern einen Verweiltrank.",
+   "Block animieren kostet viel Mana, gibt aber keine Beschwörungsschwäche, du kannst also zusätzlich andere Wesen beschwören."
+  ],
+  "en": [
+   "The [[ars_nouveau:conjuration_essence]] for Animate Block needs a wilden horn, starbuncle shards and a book ({{ars_nouveau/essences_wild}}). Infuse makes a splash potion with AOE and a lingering one with Extend Time.",
+   "Animate Block costs a lot of mana but gives no Summoning Sickness, so you can summon other creatures on top."
+  ],
+  "sources": [
+   "ars_nouveau:imbuement_conjuration_essence",
+   "ars_nouveau lang glyph_desc (infuse, animate_block)",
+   "ars_nouveau:glyph_sense_magic"
+  ]
+ },
+ "el_water": {
+  "de": [
+   "Die [[ars_nouveau:bastion_pod]] für die Manablase wächst an Ärgerlichen (lila) Archwood-Bäumen. Die [[minecraft:wind_charge]] für den Geysir bekommst du aus Böenruten, die Böen in Prüfungskammern fallen lassen.",
+   "Entladung trifft nur Ziele, die schon geschockt oder statisch aufgeladen sind, kombinier sie mit einem Blitz."
+  ],
+  "en": [
+   "The [[ars_nouveau:bastion_pod]] for Bubble Shield grows on Vexing (purple) archwood trees. The [[minecraft:wind_charge]] for Geyser comes from breeze rods, which breezes drop in trial chambers.",
+   "Discharge only hits targets that are already shocked or carry static charge, so combine it with lightning."
+  ],
+  "sources": [
+   "ars_elemental:glyph_bubble_shield",
+   "ars_elemental:glyph_geyser",
+   "ars_nouveau: worldgen/configured_feature/vexing_tree.json (bastion_pod)",
+   "minecraft:wind_charge",
+   "ars_elemental lang glyph_desc.glyph_discharge"
+  ]
+ },
+ "el_earth": {
+  "de": [
+   "Für Stachel brauchst du einen [[minecraft:netherite_ingot]], die teuerste Zutat im Kapitel ({{nether/debris}}). Vergiften macht aus Gift auf einem schon vergifteten Ziel ein tödlicheres Gift, Giftsporen schaden nur Zielen mit Gift oder Hunger: Wirk erst Vergiften, dann Giftsporen.",
+   "Beide Beschwörungen geben dir Beschwörungsschwäche, du kannst also nicht beide gleichzeitig rufen."
+  ],
+  "en": [
+   "Spike needs a [[minecraft:netherite_ingot]], the most expensive ingredient of the chapter ({{nether/debris}}). Envenom turns poison on an already poisoned target into a deadlier venom, and Poison Spores only hurt targets with poison or hunger: cast Envenom first, then Poison Spores.",
+   "Both summons give you Summoning Sickness, so you cannot call both at once."
+  ],
+  "sources": [
+   "ars_elemental:glyph_spike",
+   "ars_elemental:glyph_envenom",
+   "ars_elemental lang glyph_desc (envenom, poison_spores, summon_bee, summon_slime)"
+  ]
+ },
+ "el_anima": {
+  "de": [
+   "Den [[minecraft:wither_skeleton_skull]] lassen nur Witherskelette in Netherfestungen fallen ({{nether/wither_skull}}). 3 000 Quelle sind viel für eine Kammer, häng sie an ein Relais ({{ars_apprentice/relay}}).",
+   "Zähmen gelingt sicherer mit Verstärken und nach etwas Schaden, starke Monster widerstehen länger."
+  ],
+  "en": [
+   "Only wither skeletons in nether fortresses drop the [[minecraft:wither_skeleton_skull]] ({{nether/wither_skull}}). 3,000 source is a lot for one chamber, so feed it with a relay ({{ars_apprentice/relay}}).",
+   "Charm works more reliably with Amplify and after some damage; strong monsters resist longer."
+  ],
+  "sources": [
+   "ars_elemental:imbuement_anima_essence (source 3000)",
+   "ars_elemental:glyph_charm",
+   "ars_elemental lang glyph_desc.glyph_charm"
+  ]
+ },
+ "relay": {
+  "de": [
+   "Den [[ars_nouveau:source_gem_block]] machst du aus 4 Quelljuwelen. Zum Verbinden brauchst du den [[ars_nouveau:dominion_wand]] ({{ars_nouveau/dominion_wand}}).",
+   "Splitter, Kollektor und Einzahler baust du im Apparat aus einem fertigen Relais, bau also gleich ein paar mehr."
+  ],
+  "en": [
+   "You make the [[ars_nouveau:source_gem_block]] from 4 source gems. To link anything you need the [[ars_nouveau:dominion_wand]] ({{ars_nouveau/dominion_wand}}).",
+   "Splitter, collector and depositor are made from a finished relay in the apparatus, so build a few extra."
+  ],
+  "sources": [
+   "ars_nouveau:relay",
+   "ars_nouveau:source_gem_block",
+   "ars_nouveau lang page.relay (30 blocks, sneak clears, redstone disables)"
+  ]
+ },
+ "splitter": {
+  "de": [
+   "Verbunden wird der Splitter wie ein Relais mit dem Dominion-Zauberstab, er nimmt aber mehrere Gläser als Quelle und mehrere Ziele an und teilt seinen Durchsatz unter ihnen auf. Lapislazuli und Quarz kommen auf die Podeste, das Relais in die Mitte des Apparats.",
+   "Mit {{ars_apprentice/el_relays}} wird er zum Flow Splitter Relay."
+  ],
+  "en": [
+   "You link the splitter with the dominion wand like a relay, but it takes several jars as sources and several targets and splits its throughput among them. Lapis and quartz go on the pedestals, the relay in the middle of the apparatus.",
+   "With {{ars_apprentice/el_relays}} it becomes the Flow Splitter Relay."
+  ],
+  "sources": [
+   "ars_nouveau:relay_splitter",
+   "ars_nouveau lang page.relay_splitter"
+  ]
+ },
+ "collector": {
+  "de": [
+   "Beide arbeiten nur mit Gläsern, mit denen sie **nicht** verbunden sind, und brauchen sonst die gleichen Verbindungen wie ein Relais: Der Kollektor schickt an ein Relais oder Glas, der Einzahler bekommt von einem Relais.",
+   "Das Warper-Relais braucht [[minecraft:popped_chorus_fruit]], und Chorusfrüchte wachsen erst im End."
+  ],
+  "en": [
+   "Both only work on jars they are **not** linked to and otherwise need the same links as a relay: the collector sends to a relay or jar, the depositor receives from a relay.",
+   "The Warper relay needs [[minecraft:popped_chorus_fruit]], and chorus fruit only grows in the End."
+  ],
+  "sources": [
+   "ars_nouveau:relay_collector",
+   "ars_nouveau:relay_deposit",
+   "ars_nouveau:relay_warp",
+   "ars_nouveau lang page.relay_collector, page.relay_deposit (within 5 blocks)"
+  ]
+ },
+ "el_relays": {
+  "de": [
+   "Jedes Element gehört zu genau einem Relais: Feuer zum Kollektor, Wasser zum Splitter, Erde zum Einzahler. Die Diamanten und Essenzen werden verbraucht, das alte Relais musst du danach neu verbinden."
+  ],
+  "en": [
+   "Each element fits exactly one relay: fire the collector, water the splitter, earth the depositor. The diamonds and essences are used up, and you have to link the new relay again afterwards."
+  ],
+  "sources": [
+   "ars_elemental:fire_relay",
+   "ars_elemental:water_relay",
+   "ars_elemental:earth_relay"
+  ]
+ },
+ "brazier": {
+  "de": [
+   "Das [[ars_nouveau:arcane_pedestal]] kennst du vom Apparat ({{ars_nouveau/pedestals}}). Die vier Stammfarben kommen von den vier Archwood-Bäumen ({{ars_nouveau/archwood_colors}}): Blühend grün, Ärgerlich lila, Kaskadierend blau, Flammend rot, dazu der gelbe Blitzende von Ars Elemental.",
+   "Eine Ritualtafel wird beim Start verbraucht. Mit {{ars_apprentice/brazier_relay}} wirkt das Ritual an einem anderen Ort."
+  ],
+  "en": [
+   "You know the [[ars_nouveau:arcane_pedestal]] from the apparatus ({{ars_nouveau/pedestals}}). The four log colours come from the four archwood trees ({{ars_nouveau/archwood_colors}}): Flourishing green, Vexing purple, Cascading blue, Blazing red, plus the yellow Flashing one from Ars Elemental.",
+   "A ritual tablet is used up when it starts. With {{ars_apprentice/brazier_relay}} the ritual works somewhere else."
+  ],
+  "sources": [
+   "ars_nouveau:ritual_brazier",
+   "ars_nouveau lang page.ritual_brazier (redstone disables)",
+   "ars_nouveau:ritual_* recipes (log colours)"
+  ],
+  "client": [
+   "the tablet is consumed when the ritual starts"
+  ]
+ },
+ "ritual_harvest": {
+  "de": [
+   "Der Stamm ist ein [[ars_nouveau:green_archwood_log]]. Jede Runde, in der etwas geerntet wird, kostet Quelle aus Gläsern in der Nähe. Mit {{ars_apprentice/brazier_relay}} steht das Becken samt Truhe am Rand, und geerntet wird mitten im Feld."
+  ],
+  "en": [
+   "The log is a [[ars_nouveau:green_archwood_log]]. Each round that harvests something costs source from nearby jars. With {{ars_apprentice/brazier_relay}} the brazier and its chest stand at the edge while the harvest happens in the middle of the field."
+  ],
+  "sources": [
+   "ars_nouveau:ritual_harvest",
+   "RitualHarvest (lang description)",
+   "ars_nouveau lang page.brazier_relay"
+  ]
+ },
+ "ritual_scrying": {
+  "de": [
+   "Der Stamm ist ein [[ars_nouveau:purple_archwood_log]]. Der geworfene Block legt die Sorte fest, so findest du etwa Zinkerz, ohne lange zu graben."
+  ],
+  "en": [
+   "The log is a [[ars_nouveau:purple_archwood_log]]. The block you throw in sets the kind you will see, so you find zinc ore, for example, without long digging."
+  ],
+  "sources": [
+   "ars_nouveau:ritual_scrying",
+   "RitualScrying (lang description)"
+  ]
+ },
+ "ritual_fertility": {
+  "de": [
+   "Der [[minecraft:blaze_powder]] kommt aus Lohenruten. Das Ritual lässt nur Tiere vermehren, die das auch normal können, Babys werden also erst wieder fruchtbar, wenn sie groß sind.",
+   "Mit Überwucherung und einem Knochenblock als Zusatz wachsen die Babys schneller ({{ars_apprentice/ritual_flowering}})."
+  ],
+  "en": [
+   "The [[minecraft:blaze_powder]] comes from blaze rods. The ritual only breeds animals that could breed anyway, so babies only join in once grown.",
+   "Overgrowth with a bone block added makes the babies grow faster ({{ars_apprentice/ritual_flowering}})."
+  ],
+  "sources": [
+   "ars_nouveau:ritual_fertility",
+   "RitualBreed (lang description: if possible, twenty or more)",
+   "RitualOvergrowth (lang description)"
+  ]
+ },
+ "ritual_sanctuary": {
+  "de": [
+   "Der Stamm ist ein [[ars_nouveau:blue_archwood_log]], die [[minecraft:sea_lantern]] machst du aus Prismarinsplittern und Prismarinkristallen. Das Ritual verhindert nur natürliches Spawnen: Spawner und Monster, die schon da sind, bleiben."
+  ],
+  "en": [
+   "The log is a [[ars_nouveau:blue_archwood_log]]; craft the [[minecraft:sea_lantern]] from prismarine shards and crystals. The ritual only stops natural spawns: spawners and monsters already there stay."
+  ],
+  "sources": [
+   "ars_nouveau:ritual_sanctuary",
+   "DenySpawnRitual (lang description)"
+  ]
+ },
+ "ritual_restoration": {
+  "de": [
+   "Das Ritual braucht laufend Quelle, solange es heilt. Für Rabatt bei geheilten Zombiedorfbewohnern musst du beim Heilen in der Nähe sein, also stell dich neben das Becken."
+  ],
+  "en": [
+   "The ritual needs source the whole time it heals. For the discount from cured zombie villagers you have to be nearby when it happens, so stay next to the brazier."
+  ],
+  "sources": [
+   "ars_nouveau:ritual_restoration",
+   "RitualHealing (lang description)"
+  ]
+ },
+ "ritual_forestation": {
+  "de": [
+   "Die [[ars_nouveau:mendosteen_pod]] wächst an Blühenden (grünen) Archwood-Bäumen. Mehr Radius kostet je ein Quelljuwel, plan die Fläche vorher frei.",
+   "Mit Ars Elemental wird daraus die Archwood-Aufforstung ({{ars_apprentice/el_archwood}})."
+  ],
+  "en": [
+   "The [[ars_nouveau:mendosteen_pod]] grows on Flourishing (green) archwood trees. Each extra block of radius costs one source gem, so clear the area first.",
+   "Ars Elemental turns it into Archwood Forestation ({{ars_apprentice/el_archwood}})."
+  ],
+  "sources": [
+   "ars_nouveau:ritual_forestation",
+   "ars_nouveau: worldgen/configured_feature/flourishing_tree.json (mendosteen_pod)",
+   "ForestationRitual (lang description)",
+   "ars_elemental:ritual_archwood_forestation"
+  ]
+ },
+ "ritual_binding": {
+  "de": [
+   "Das [[ars_nouveau:blank_parchment]] machst du aus Papier und Magieblütenfaser ({{ars_nouveau/magebloom}}). Das Wesen muss nah am Becken stehen. Die Elementar-Wesen von Ars Elemental bindest du genauso ({{ars_apprentice/el_familiars}})."
+  ],
+  "en": [
+   "You make the [[ars_nouveau:blank_parchment]] from paper and magebloom fiber ({{ars_nouveau/magebloom}}). The creature has to be close to the brazier. You bind the Ars Elemental creatures the same way ({{ars_apprentice/el_familiars}})."
+  ],
+  "sources": [
+   "ars_nouveau:ritual_binding",
+   "ars_nouveau:blank_parchment",
+   "ars_elemental lang familiar_desc (Ritual of Binding near a Siren/Flashjack/Flarecannon)"
+  ]
+ },
+ "familiar": {
+  "de": [
+   "Den Sternbunkel bekommst du aus einem [[ars_nouveau:starbuncle_charm]] ({{ars_nouveau/starbuncle_charm}}). Er verschwindet beim Binden in das Skript, nimm also keinen, der gerade für dich Items trägt."
+  ],
+  "en": [
+   "You get the Starbuncle from a [[ars_nouveau:starbuncle_charm]] ({{ars_nouveau/starbuncle_charm}}). It turns into the script when bound, so do not use one that is carrying items for you."
+  ],
+  "sources": [
+   "ars_nouveau lang familiar_desc.familiar_starbuncle",
+   "RitualBinding (lang description)",
+   "ars_nouveau:starbuncle_charm"
+  ]
+ },
+ "familiar_more": {
+  "de": [
+   "Drygmy und Wirbelzweig kommen aus ihren Charmes ({{ars_nouveau/drygmy}}, {{ars_nouveau/whirlisprig}}), den Wixie aus {{ars_apprentice/wixie}}. Als Vertrauter nimmt der Wixie außerdem einfache Trankzutaten an und gibt dir dafür den Trank der ersten Stufe."
+  ],
+  "en": [
+   "Drygmy and Whirlisprig come from their charms ({{ars_nouveau/drygmy}}, {{ars_nouveau/whirlisprig}}), the Wixie from {{ars_apprentice/wixie}}. As a familiar the Wixie also takes basic potion ingredients and applies the first tier potion to you."
+  ],
+  "sources": [
+   "ars_nouveau lang familiar_desc (whirlisprig, drygmy, wixie)"
+  ]
+ },
+ "el_familiars": {
+  "de": [
+   "Die Sirene ({{ars_nouveau/siren}}) findest du in warmen Meeren: Gib ihr eine Seegurke, dann lässt sie Siren Shards für den [[ars_elemental:siren_charm]] fallen. Den Flashjack in Archwood-Wäldern und auf hohen Bergen befreundest du mit einer [[ars_elemental:flashpine_pod]] ({{ars_nouveau/flashjack}}).",
+   "Dem Flarecannon-Vertrauten gibst du Magmacreme für kurze Feuerresistenz."
+  ],
+  "en": [
+   "Sirens ({{ars_nouveau/siren}}) live in warm seas: give one a sea pickle and it leaves Siren Shards for the [[ars_elemental:siren_charm]]. The Flashjack lives in archwood forests and on high peaks; befriend it with a [[ars_elemental:flashpine_pod]] ({{ars_nouveau/flashjack}}).",
+   "Feed the Flarecannon familiar magma cream for a short fire resistance."
+  ],
+  "sources": [
+   "ars_elemental lang page1.siren_charm, page1.flashjack_charm, familiar_desc.firenando_familiar",
+   "ars_elemental:firenando_charm",
+   "ars_elemental:siren_charm"
+  ]
+ },
+ "ritual_containment": {
+  "de": [
+   "Gläser und Wesen müssen beide in 3 Blöcken um das Becken stehen. Nach dem ersten Fang kostet jeder weitere Quelle. Zum Freilassen wirkst du Zerstreuen auf das Glas, das Wesen erscheint darüber.",
+   "Viele Wesen arbeiten im Glas weiter: Hühner legen Eier, Kühe lassen sich melken, Schafe scheren."
+  ],
+  "en": [
+   "Jars and mobs both have to be within 3 blocks of the brazier. After the first capture each one costs source. To release a mob cast Dispel on the jar and it appears on top.",
+   "Many mobs keep working in the jar: chickens lay eggs, cows can be milked, sheep sheared."
+  ],
+  "sources": [
+   "ars_nouveau:ritual_containment",
+   "ars_nouveau:mob_jar",
+   "RitualMobCapture (lang description)",
+   "ars_nouveau lang page1.mob_jar, page2.mob_jar"
+  ]
+ },
+ "ritual_cloudshaping": {
+  "de": [
+   "Der Stamm ist ein [[ars_nouveau:blue_archwood_log]]. Gewitter mit einem [[minecraft:lapis_block]] als Zusatz lassen Blitze einschlagen, das brauchst du etwa für geladene Creeper."
+  ],
+  "en": [
+   "The log is a [[ars_nouveau:blue_archwood_log]]. A thunderstorm, made with a [[minecraft:lapis_block]], brings lightning strikes, which you need for charged creepers, for example."
+  ],
+  "sources": [
+   "ars_nouveau:ritual_cloudshaping",
+   "RitualCloudshaper (lang description)"
+  ]
+ },
+ "ritual_time": {
+  "de": [
+   "Die kurzen Rezepte sind billiger: Sonnenaufgang mit [[ars_nouveau:red_archwood_log]] und [[minecraft:sunflower]], Mondfall mit [[ars_nouveau:blue_archwood_log]] und einem [[ars_nouveau:wilden_wing]]. Die Zeit gilt für alle auf dem Server, sprecht euch ab."
+  ],
+  "en": [
+   "The short recipes are cheaper: Sunrise from a [[ars_nouveau:red_archwood_log]] and a [[minecraft:sunflower]], Moonfall from a [[ars_nouveau:blue_archwood_log]] and a [[ars_nouveau:wilden_wing]]. The time changes for everyone on the server, so agree on it first."
+  ],
+  "sources": [
+   "ars_nouveau:sunrise_2",
+   "ars_nouveau:moonfall_2",
+   "RitualSunrise, RitualMoonfall (lang description)"
+  ]
+ },
+ "ritual_locate": {
+  "de": [
+   "Mehr Ziele, als die Quest nennt: Eis für Iglus, Terrakotta für Pfadruinen, Fisch für Ozeanmonumente, eine Ominöse Flasche für Prüfungskammern, Braun- und Rotpilz für Waldanwesen. Dein [[ars_nouveau:apprentice_spell_book]] als Zusatz sucht die Arkane Bibliothek von Ars Additions.",
+   "Der [[ars_additions:wayfinder]] wird dabei zum gebundenen Wayfinder und zeigt die Entfernung an."
+  ],
+  "en": [
+   "More targets than the quest lists: ice for igloos, terracotta for trail ruins, a fish for ocean monuments, an ominous bottle for trial chambers, a brown and a red mushroom for woodland mansions. Your [[ars_nouveau:apprentice_spell_book]] as augment finds Ars Additions' Arcane Library.",
+   "The [[ars_additions:wayfinder]] becomes a Bound Wayfinder and shows the distance."
+  ],
+  "sources": [
+   "ars_additions:locate_structure/* (augments)",
+   "ars_additions:ritual/ritual_locate_structure",
+   "ars_additions lang item.bound_wayfinder, tooltip.wayfinder.distance"
+  ],
+  "client": [
+   "whether the augment item is consumed when the ritual starts"
+  ]
+ },
+ "ritual_flowering": {
+  "de": [
+   "Die [[ars_nouveau:magebloom]] ziehst du selbst ({{ars_nouveau/magebloom}}). Mit Sand als Zusatz setzt Blüte Kakteen und tote Büsche statt Blumen. Überwucherung braucht laufend Quelle."
+  ],
+  "en": [
+   "Grow the [[ars_nouveau:magebloom]] yourself ({{ars_nouveau/magebloom}}). With sand as augment Flowering places cacti and dead bushes instead of flowers. Overgrowth needs source the whole time."
+  ],
+  "sources": [
+   "ars_nouveau:ritual_flowering",
+   "ars_nouveau:ritual_overgrowth",
+   "FloweringRitual, RitualOvergrowth (lang description)"
+  ]
+ },
+ "ritual_small": {
+  "de": [
+   "Herausforderung geht auch billiger mit [[ars_nouveau:purple_archwood_log]], [[ars_nouveau:wilden_horn]] und Smaragd. Ein Smaragd als Zusatz macht den Überfall so schwer wie möglich, dann gibt es auch auf leichteren Stufen Totems der Unsterblichkeit.",
+   "Graben lässt die abgebauten Blöcke fallen, sammle sie danach selbst ein."
+  ],
+  "en": [
+   "Challenge is cheaper with a [[ars_nouveau:purple_archwood_log]], a [[ars_nouveau:wilden_horn]] and an emerald. An emerald as augment raises the raid to the highest difficulty, which brings Totems of Undying even on easier difficulties.",
+   "Burrowing drops the mined blocks, so collect them yourself."
+  ],
+  "sources": [
+   "ars_nouveau:challenge_2",
+   "RitualPillagerRaid, RitualDig (lang description)",
+   "ars_nouveau:ritual_animal_summon",
+   "ars_nouveau:ritual_gravity"
+  ]
+ },
+ "ritual_squirrels": {
+  "de": [
+   "Der Stamm ist ein [[ars_elemental:yellow_archwood_log]], aus dem Setzling der Quest ziehst du einen gelben Baum. Den Setzling gibt es auch im Markt von Farming for Blockheads.",
+   "Schnellere Sternbunkel tragen Items schneller, das lohnt sich bei vielen Sternbunkeln auf engem Raum."
+  ],
+  "en": [
+   "The log is a [[ars_elemental:yellow_archwood_log]]; grow a yellow tree from the sapling in the quest. The sapling is also sold in the Farming for Blockheads market.",
+   "Faster Starbuncles carry items faster, which pays off where many of them work close together."
+  ],
+  "sources": [
+   "ars_elemental:ritual_squirrels",
+   "ars_elemental:flashing_sapling",
+   "farmingforblockheads:market/ars_elemental/yellow_archwood_sapling",
+   "ars_elemental lang ritual_desc.ritual_squirrels"
+  ]
+ },
+ "el_rituals": {
+  "de": [
+   "Zapping wirkt in einem Würfel von 11 mal 7 mal 11 Blöcken um das Becken und trifft Spieler nur, wenn du Luftessenz als Zusatz gibst. Anziehung und Abstoßung wirken nicht auf Spieler und Bosse, Anziehung wird mit Erdessenz größer."
+  ],
+  "en": [
+   "Zapping covers an 11 by 7 by 11 cube around the brazier and only targets players if you add air essence. Attraction and Repulsion do not affect players or bosses; Attraction grows with earth essence."
+  ],
+  "sources": [
+   "ars_elemental lang ritual_desc (tesla_coil, attraction, repulsion, detection)",
+   "ars_elemental:ritual_attraction",
+   "ars_elemental:ritual_repulsion",
+   "ars_elemental:ritual_detection",
+   "ars_elemental:ritual_tesla_coil"
+  ]
+ },
+ "el_archwood": {
+  "de": [
+   "Für die Archwood-Aufforstung legst du die fertige Tafel Aufforstung mit in das Rezept ({{ars_apprentice/ritual_forestation}}). Die Insel braucht Quelle in der Nähe, während sie wächst, und jedes Quelljuwel als Zusatz gibt einen Block Radius mehr.",
+   "Bestäubung beschleunigt nur das Nektarsammeln, nicht den Honig im Bienenstock."
+  ],
+  "en": [
+   "Archwood Forestation takes the finished Forestation tablet as an ingredient ({{ars_apprentice/ritual_forestation}}). The island needs source nearby while it grows, and each source gem as augment adds one block of radius.",
+   "Pollination only speeds up nectar gathering, not the honey inside the hive."
+  ],
+  "sources": [
+   "ars_elemental:ritual_archwood_forestation",
+   "ars_elemental lang ritual_desc (archwood_forest, pollination)"
+  ]
+ },
+ "turret": {
+  "de": [
+   "Den Zauber schreibst du am Tisch des Schreibers auf ein [[ars_nouveau:spell_parchment]] und klickst damit auf den Turm ({{ars_nouveau/parchment}}). Die Quelle zieht er aus verbundenen oder nahen Gläsern.",
+   "Der Verzauberte Turm ({{ars_apprentice/spell_turret}}) kostet nur die Hälfte, bau den einfachen also vor allem als Zwischenschritt."
+  ],
+  "en": [
+   "Write the spell on [[ars_nouveau:spell_parchment]] at the scribe's table and use it on the turret ({{ars_nouveau/parchment}}). It draws source from linked or nearby jars.",
+   "The enchanted turret ({{ars_apprentice/spell_turret}}) costs only half, so the basic one is mostly a step on the way."
+  ],
+  "sources": [
+   "ars_nouveau:basic_spell_turret",
+   "ars_nouveau lang page1.basic_spell_turret, page2.basic_spell_turret"
+  ],
+  "client": [
+   "using the parchment on the turret sets the spell"
+  ]
+ },
+ "spell_turret": {
+  "de": [
+   "Der Einfache Zauberturm kommt in die Mitte des Apparats, der Zauber darin geht dabei verloren, schreib ihn danach neu. Timer- und Verstellbarer Turm kommen in Stufe 3 ({{ars_master/turrets}})."
+  ],
+  "en": [
+   "The basic turret goes in the middle of the apparatus; its spell is not kept, so set it again afterwards. The timer and adjustable turrets come in stage 3 ({{ars_master/turrets}})."
+  ],
+  "sources": [
+   "ars_nouveau:spell_turret (keepNbtOfReagent false)",
+   "ars_nouveau lang page2.basic_spell_turret"
+  ]
+ },
+ "prisms": {
+  "de": [
+   "Das Zauberprisma gibt nahen Beobachtern ein Signal, wenn es einen Zauber umlenkt. So baust du Schalter, die auf Treffer reagieren.",
+   "Linsen für das Fortgeschrittene Prisma kommen in Stufe 3 ({{ars_master/prism_lenses}})."
+  ],
+  "en": [
+   "The spell prism sends a signal to nearby observers whenever it redirects a spell, so you can build switches that react to hits.",
+   "Lenses for the advanced prism come in stage 3 ({{ars_master/prism_lenses}})."
+  ],
+  "sources": [
+   "ars_nouveau:spell_prism",
+   "ars_elemental:advanced_prism",
+   "ars_elemental:spell_mirror",
+   "ars_nouveau lang page.spell_prism"
+  ]
+ },
+ "warp_scroll": {
+  "de": [
+   "Die Rolle bringt nur dich selbst, nicht deine Freunde. Hältst du eine beschriebene Rolle in der Zweithand und wirkst Blinzeln auf ein Wesen, schickst du stattdessen das Wesen an den Ort.",
+   "Formlos allein ins Crafting-Feld gelegt wird eine beschriebene Rolle wieder leer."
+  ],
+  "en": [
+   "The scroll only takes you, not your friends. With an inscribed scroll in your offhand, casting Blink on a mob sends that mob to the spot instead.",
+   "Put an inscribed scroll alone into the crafting grid to wipe it."
+  ],
+  "sources": [
+   "ars_nouveau:warp_scroll",
+   "ars_nouveau:reset_warp_scroll",
+   "ars_nouveau lang page.warp_scroll",
+   "WarpScroll (isShiftKeyDown records)"
+  ]
+ },
+ "stable_warp": {
+  "de": [
+   "Auf einen Block benutzt öffnet die stabilisierte Rolle ein kurzes Warp-Portal, durch das auch andere gehen, und sie reist anders als die normale Rolle auch zwischen Dimensionen. Ein Portal über Dimensionen hinweg verbraucht sie aber.",
+   "Kopieren geht nur mit der normalen Warp-Schriftrolle: die beschriebene in die Mitte, eine zweite auf ein Podest, für 1 000 Quelle bekommst du zwei."
+  ],
+  "en": [
+   "Used on a block the stabilized scroll opens a short warp portal others can walk through, and unlike the plain scroll it travels between dimensions. A portal to another dimension uses it up, though.",
+   "Copying only works with the plain warp scroll: the inscribed one in the middle, a second one on a pedestal, and for 1,000 source you get two."
+  ],
+  "sources": [
+   "ars_nouveau:stable_warp_scroll",
+   "ars_nouveau:warp_scroll_copy (sourceCost 1000, count 2)",
+   "ars_nouveau lang page.stable_warp_scroll"
+  ],
+  "client": [
+   "portal behaviour of the stabilized scroll"
+  ]
+ },
+ "wixie": {
+  "de": [
+   "Zerstreuen lernst du im ersten Ars-Kapitel ({{ars_nouveau/glyph_dispel}}), Hexen findest du in Sumpfhütten und nachts im Freien. Bring sie erst unter halbe Gesundheit, dann wirk Zerstreuen.",
+   "Mit dem Dominion-Zauberstab kannst du dem Kessel bestimmte Truhen zuweisen, dann nimmt er nur noch aus diesen. Ein Redstone-Signal am Kessel hält ihn an."
+  ],
+  "en": [
+   "You learn Dispel in the first Ars chapter ({{ars_nouveau/glyph_dispel}}); witches live in swamp huts and spawn outside at night. Bring one below half health first, then cast Dispel.",
+   "With the dominion wand you can assign chests to the cauldron, and it will only take from those. A redstone signal on the cauldron stops it."
+  ],
+  "sources": [
+   "ars_nouveau:wixie_charm",
+   "ars_nouveau lang page1.wixie_charm, page3.wixie_charm, page7.wixie_charm"
+  ]
+ },
+ "potions": {
+  "de": [
+   "Ein Trankglas fasst bis zu 100 Tränke und lässt sich mit einem Komparator auslesen. Mit mehreren Wixies sperrst du ein Glas mit schleichendem Dominion-Zauberstab auf einen Trank, dann bekommt es nur noch diesen.",
+   "Gemischte Tränke aus dem {{ars_apprentice/potion_melder}} geben im Alchemistischen Quelllink am meisten Quelle."
+  ],
+  "en": [
+   "A potion jar holds up to 100 potions and works with a comparator. With several Wixies, lock a jar to one potion by using the dominion wand on it while sneaking, and it will only receive that potion.",
+   "Melded potions from the {{ars_apprentice/potion_melder}} give the most source in the Alchemical Sourcelink."
+  ],
+  "sources": [
+   "ars_nouveau:potion_jar",
+   "ars_nouveau:alchemical_sourcelink",
+   "ars_nouveau lang page.potion_jar, page.alchemical_sourcelink, page5.wixie_charm"
+  ]
+ },
+ "charms2": {
+  "de": [
+   "Jeder Charm hat eine begrenzte Zahl Ladungen. Ist er leer, lädst du ihn in der Imbuement-Kammer wieder auf, Quelle in der Nähe macht das schneller.",
+   "Den [[minecraft:gilded_blackstone]] findest du in Bastionen ({{nether/bastion}}) oder machst ihn im Metallurgischen Infuser von Mekanism aus Schwarzstein und Gold."
+  ],
+  "en": [
+   "Each charm has a limited number of charges. When it is empty, recharge it in the imbuement chamber; source nearby makes that faster.",
+   "Find [[minecraft:gilded_blackstone]] in bastions ({{nether/bastion}}) or make it from blackstone and gold in Mekanism's Metallurgic Infuser."
+  ],
+  "sources": [
+   "ars_additions lang page1.charms, chat.charm.charging_started",
+   "mekanism:metallurgic_infusing/blackstone_to_gilded_blackstone",
+   "ars_additions:apparatus/golden_charm"
+  ]
+ },
+ "caster_bag": {
+  "de": [
+   "Den [[ars_elemental:curio_bag]] nähst du aus einer Truhe und 8 Magieblütenfasern ({{ars_nouveau/curio_bag}}), sein Inhalt bleibt beim Upgrade erhalten. Für den Magma-Aufzug brauchst du statt Prismarin 4 [[minecraft:magma_block]] und Feueressenz."
+  ],
+  "en": [
+   "You sew the [[ars_elemental:curio_bag]] from a chest and 8 magebloom fiber ({{ars_nouveau/curio_bag}}); its contents are kept by the upgrade. The Magmatic Current Elevator takes 4 [[minecraft:magma_block]] and fire essence instead of prismarine."
+  ],
+  "sources": [
+   "ars_elemental:caster_bag (keepNbtOfReagent true)",
+   "ars_elemental:curio_bag",
+   "ars_elemental:magma_upstream"
+  ]
+ },
+ "blaze_burner": {
+  "de": [
+   "Auf Kronwerke gibt es nur dieses Rezept, das normale von Create ist entfernt. Leer heizt der Brenner nicht: Klick damit eine Lohe in der Netherfestung an oder sammle sie direkt am Spawner ein ({{create_brass/blaze_burner}}).",
+   "Zum Start von Stufe 2 liegt ein fertiger Lohenbrenner im Kit, jeder weitere kostet 2 Quelljuwelen."
+  ],
+  "en": [
+   "On Kronwerke this is the only recipe; Create's own one is removed. Empty, the burner gives no heat: use it on a blaze in a nether fortress or collect one straight from a spawner ({{create_brass/blaze_burner}}).",
+   "The stage 2 kit contains one finished blaze burner; each further one costs 2 source gems."
+  ],
+  "sources": [
+   "kronwerke:empty_blaze_burner",
+   "kubejs/server_scripts/tech_and_magic.js (remove create:crafting/kinetics/empty_blaze_burner)",
+   "create lang ponder.empty_blaze_burner",
+   "docs/STAGES.md (stage 2 starter kit)"
+  ]
+ },
+ "calibrated_mechanism": {
+  "de": [
+   "Den [[create:precision_mechanism]] baut ihr am Fließband mit Sequenzierter Montage ({{create_brass/precision}}). Der Apparat braucht 500 Quelle, häng ihn an ein Glas.",
+   "Der Arcane Wrench ist ein normaler Create-Schraubenschlüssel mit Zusatzfunktion: Er stellt Relais und Runen genauer ein und nimmt Podeste, Türme und Eindämmungsgläser mit Schleichen und Rechtsklick auf."
+  ],
+  "en": [
+   "The [[create:precision_mechanism]] comes from a sequenced assembly line ({{create_brass/precision}}). The apparatus needs 500 source, so connect it to a jar.",
+   "The Arcane Wrench is a normal Create wrench with extras: it tunes relays and runes and picks up pedestals, turrets and containment jars with sneak and right click."
+  ],
+  "sources": [
+   "ars_technica:calibrated_precision_mechanism (sourceCost 500)",
+   "ars_technica:runic_spanner",
+   "ars_technica lang page1.arcane_wrench, page2.arcane_wrench"
+  ]
+ },
+ "source_motor": {
+  "de": [
+   "Das Rezept: Messing in den vier Ecken, oben Mitte die [[create:electron_tube]], links, rechts und **unten Mitte** je ein [[create:cogwheel]], in der Mitte der kalibrierte Mechanismus.",
+   "Der Motor braucht ein Quellglas in der Nähe. Je mehr Kraft pro Drehzahl du einstellst, desto mehr Quelle frisst er, plan dafür eine Quellfarm mit Relais ({{ars_apprentice/relay}})."
+  ],
+  "en": [
+   "The recipe: brass in the four corners, the [[create:electron_tube]] top middle, a [[create:cogwheel]] left, right and **bottom middle**, and the calibrated mechanism in the centre.",
+   "The motor needs a source jar nearby. The more stress per RPM you set, the more source it eats, so plan a source farm with relays ({{ars_apprentice/relay}})."
+  ],
+  "sources": [
+   "ars_technica:source_motor (pattern BEB, CSC, BCB)",
+   "ars_technica lang ponder.source_motor",
+   "srv/config/ars_technica-common.toml (sourceMotorSpeedToSourceMultiplier 4.0)"
+  ]
+ },
+ "glyph_press": {
+  "de": [
+   "Press, Polish und Whirl wirken auch auf einen Create-Depot: Wirk sie darauf, dann verarbeiten sie den Inhalt. Mit Empfindlich packt Press gleiche Items 2x2 oder 3x3 zusammen statt zu pressen."
+  ],
+  "en": [
+   "Press, Polish and Whirl also work on a Create depot: cast them on it and they process what lies there. With Sensitive, Press packs identical items 2x2 or 3x3 instead of pressing."
+  ],
+  "sources": [
+   "ars_technica:glyph_press",
+   "ars_technica lang page.create_processing.depot, augment_desc.glyph_press_glyph_sensitive, glyph_press_glyph_extract"
+  ]
+ },
+ "tech_glyphs": {
+  "de": [
+   "**Fuse mit Schmelzen mischt beheizt**, also auch Messing aus 2 Kupfer, 1 Zink und Lohenstaub wie im beheizten Mixer. Whirl verarbeitet mit Wasser beschwören wie Waschen, mit Fackel wie Räuchern, mit Schmelzen wie Schmelzen und mit Verhexen wie Spuken.",
+   "Carve macht mit Verstärken Mauern und mit Dämpfen Stufen. Apply nimmt bei Türmen statt der Zweithand Items aus einem Inventar daneben."
+  ],
+  "en": [
+   "**Fuse with Smelt does heated mixing**, so it also makes brass from 2 copper, 1 zinc and blaze powder like a heated mixer. Whirl processes like washing with Conjure Water, smoking with Flare, smelting with Smelt and haunting with Hex.",
+   "Carve makes walls with Amplify and slabs with Dampen. In turrets, Apply takes items from an adjacent inventory instead of the offhand."
+  ],
+  "sources": [
+   "ars_technica lang effect_augment_desc (fuse_smelt, whirl_*), augment_desc.glyph_carve_*, glyph_desc.glyph_apply",
+   "kronwerke:create/brass_ingot_heated"
+  ],
+  "client": [
+   "Fuse with Smelt uses the Kronwerke heated brass mixing recipe"
+  ]
+ },
+ "transmutation_focus": {
+  "de": [
+   "Der Fokus kommt in den Fokus-Platz der Curios, nicht in die Hand. Mit der Glück-Wirkung pro Glyphe lohnt er sich auch beim Abbauen: Ein Brechen-Zauber mit Fokus wirkt, als hätte er mehr Glück."
+  ],
+  "en": [
+   "The focus goes into the Curios focus slot, not your hand. Because it adds Luck for every glyph it also pays off for mining: a Break spell with the focus acts as if it had more Fortune."
+  ],
+  "sources": [
+   "ars_technica:transmutation_focus",
+   "ars_technica lang page1.transmutation, tooltip.transmutation_focus_shift_info_*"
+  ]
+ },
+ "transmutation_turret": {
+  "de": [
+   "Der Turm kostet **doppelt so viel Quelle** pro Schuss wie ein Verzauberter Zauberturm. Mit Press oder Polish auf einem Depot davor wird er zur Presse, die keine Rotation braucht."
+  ],
+  "en": [
+   "The turret costs **twice the source** per shot of an enchanted spell turret. With Press or Polish aimed at a depot in front of it, it becomes a press that needs no rotation."
+  ],
+  "sources": [
+   "ars_technica:transmutation_turret",
+   "srv/config/ars_technica-common.toml (transmutationTurretSourceCostMultiplier 2.0)",
+   "ars_technica lang page.create_processing.depot"
+  ],
+  "client": [
+   "turret casting Press onto a depot"
+  ]
+ },
+ "telefeast": {
+  "de": [
+   "Mit Durchschlag schickt Telefeast das Essen in einer Blase weiter. So isst du aus einer Truhe, die du nicht erreichst."
+  ],
+  "en": [
+   "With Pierce, Telefeast sends the food along in a magic bubble, so you can eat from a chest out of reach."
+  ],
+  "sources": [
+   "ars_technica:glyph_telefeast",
+   "ars_technica lang augment_desc.glyph_telefeast_glyph_pierce, glyph_telefeast_glyph_sensitive"
+  ],
+  "client": [
+   "Pierce bubble behaviour"
+  ]
+ },
+ "brazier_relay": {
+  "de": [
+   "Das Ritual-Kohlenbecken in der Mitte wird verbraucht, du brauchst also ein zweites Becken, das am alten Ort bleibt. Die Quelle zahlt weiter das ursprüngliche Becken."
+  ],
+  "en": [
+   "The ritual brazier in the middle is used up, so you need a second brazier that stays at the original spot. Source is still paid at the original brazier."
+  ],
+  "sources": [
+   "ars_nouveau:brazier_relay",
+   "ars_nouveau lang page.brazier_relay"
+  ]
+ },
+ "redstone_magic": {
+  "de": [
+   "Der Schaukasten zählt mit einer Filterschriftrolle alle Items, die zum Filter passen ({{ars_nouveau/filter_scrolls}}). Ein Redstone-Relais ist ideal, um Zaubertürme ({{ars_apprentice/turret}}) aus der Ferne auszulösen."
+  ],
+  "en": [
+   "Given a filter scroll, the display case counts every item that matches the filter ({{ars_nouveau/filter_scrolls}}). A redstone relay is ideal for firing spell turrets ({{ars_apprentice/turret}}) from afar."
+  ],
+  "sources": [
+   "ars_nouveau:redstone_relay",
+   "ars_nouveau:item_detector",
+   "ars_nouveau lang page2.item_detector, page.redstone_relay"
+  ]
+ },
+ "enchanters_eye": {
+  "de": [
+   "Den [[ars_nouveau:scryers_crystal]] machst du formlos aus einem Enderauge und einem Quelljuwel ({{ars_nouveau/scrying}}). Die gebundene Schriftrolle des Sehers bekommst du, wenn du mit Leerem Pergament auf den gesetzten Kristall klickst."
+  ],
+  "en": [
+   "You make the [[ars_nouveau:scryers_crystal]] shapeless from an eye of ender and a source gem ({{ars_nouveau/scrying}}). Use blank parchment on the placed crystal to get a bound Scryer's Scroll."
+  ],
+  "sources": [
+   "ars_nouveau:enchanters_eye",
+   "ars_nouveau:scryers_crystal",
+   "ars_nouveau lang page.scryers_crystal, page.enchanters_eye"
+  ]
+ },
+ "potion_melder": {
+  "de": [
+   "Lass die Eingangsgläser von Wixies füllen ({{ars_apprentice/potions}}), dann mischt der Melder ohne dich weiter. Tränke mit mehreren Effekten geben im Alchemistischen Quelllink deutlich mehr Quelle als einfache."
+  ],
+  "en": [
+   "Let Wixies fill the input jars ({{ars_apprentice/potions}}) and the melder keeps mixing without you. Potions with several effects give far more source in the Alchemical Sourcelink than simple ones."
+  ],
+  "sources": [
+   "ars_nouveau:potion_melder",
+   "ars_nouveau lang page.potion_melder, page.alchemical_sourcelink"
+  ]
+ },
+ "potion_diffuser": {
+  "de": [
+   "Ein Trank reicht 10 Minuten für alle in der Nähe, ein volles Trankglas mit 100 Tränken also lange. Zusammen mit einem Wixie, der das Glas füllt, läuft der Effekt dauerhaft."
+  ],
+  "en": [
+   "One potion lasts 10 minutes for everyone nearby, so a full jar of 100 potions lasts a long time. With a Wixie refilling the jar the effect runs for good."
+  ],
+  "sources": [
+   "ars_nouveau:potion_diffuser",
+   "ars_nouveau lang page.potion_diffuser, page.potion_jar"
+  ],
+  "client": [
+   "radius of the diffuser"
+  ]
+ },
+ "flask_cannon": {
+  "de": [
+   "Die Trankflaschen von Ars ({{ars_nouveau/potion_flask}}) halten mehrere Dosen, damit verschießt die Kanone viele Tränke aus einer Flasche. Fülle sie an einem Trankglas mit Wixie-Tränken ({{ars_apprentice/potions}})."
+  ],
+  "en": [
+   "Ars potion flasks ({{ars_nouveau/potion_flask}}) hold several doses, so the cannon fires many potions from one flask. Refill them at a potion jar stocked with Wixie potions ({{ars_apprentice/potions}})."
+  ],
+  "sources": [
+   "ars_nouveau:splash_flask_cannon",
+   "ars_nouveau lang page.potion_jar (removed with potion flask)"
+  ],
+  "client": [
+   "the cannon takes potions from flasks in the inventory"
+  ]
+ },
+ "mage": {
+  "de": [
+   "16 Blöcke sind 64 Quelljuwelen. Auf Kronwerke gibt es dafür ein eigenes Rezept im beheizten Mixer: 2 Amethystscherben und 1 Glowstonestaub ergeben 3 Quelljuwelen. Ein Amethystblock wird in der Imbuement-Kammer für 2 000 Quelle direkt zum Block.",
+   "In Stufe 3 geht es weiter mit {{ars_master/archmage_book}}, dafür brauchst du unter anderem einen Netherstern, ein Totem der Unsterblichkeit und einen Wilden-Tribut."
+  ],
+  "en": [
+   "16 blocks are 64 source gems. Kronwerke adds a recipe for this in the heated mixer: 2 amethyst shards and 1 glowstone dust give 3 source gems. An amethyst block turns straight into a block in the imbuement chamber for 2,000 source.",
+   "Stage 3 continues with {{ars_master/archmage_book}}, which needs a nether star, a totem of undying and a wilden tribute among other things."
+  ],
+  "sources": [
+   "kronwerke:round/source_gem_mixing",
+   "ars_nouveau:imbuement_amethyst_block (source 2000)",
+   "ars_nouveau:archmage_book_upgrade"
+  ]
+ }
+}

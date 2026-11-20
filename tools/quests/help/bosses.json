@@ -1,0 +1,509 @@
+{
+ "welcome": {
+  "de": [
+   "Auf Kronwerke findest du alle fünf Bauwerke schon in Stufe 1: Jedes Auge von Cataclysm hat ein zweites Rezept mit einem [[ars_nouveau:source_gem]] statt des Enderauges und einer [[minecraft:ender_pearl]]. Nur der Harbinger braucht zum Wecken einen Netherstern aus Stufe 2.",
+   "Die Kisten der Bauwerke füllt Lootr für jeden Spieler einzeln. Lies vor dem ersten Kampf {{bosses/b_group_scaling}}."
+  ],
+  "en": [
+   "On Kronwerke all five structures can be found in stage 1: every Cataclysm eye has a second recipe with a [[ars_nouveau:source_gem]] instead of the eye of ender and an [[minecraft:ender_pearl]]. Only the Harbinger needs a nether star from stage 2 to wake up.",
+   "Lootr fills the structure chests for each player separately. Read {{bosses/b_group_scaling}} before your first fight."
+  ],
+  "sources": [
+   "kubejs/server_scripts/kronwerke/added.js (kronwerke:added/cataclysm_*_eye)",
+   "docs/RECIPES.md",
+   "docs/LOOT.md (Lootr)"
+  ]
+ },
+ "rules": {
+  "de": [
+   "Weil jeder Treffer gekappt wird, zählt Schlagtempo mehr als hoher Schaden pro Schlag.",
+   "Zu fünft geht es schneller, aber **nicht fünfmal so schnell**: Kronwerke gibt jedem Boss pro weiterem Spieler 60 Prozent mehr Leben, zu fünft hat er also das 3,4fache ({{bosses/b_group_scaling}})."
+  ],
+  "en": [
+   "Since every hit is capped, attack speed matters more than high damage per hit.",
+   "Five players are faster, but **not five times as fast**: Kronwerke gives every boss 60 percent more health per extra player, so with five it has 3.4 times its health ({{bosses/b_group_scaling}})."
+  ],
+  "sources": [
+   "srv/config/cataclysm-common.toml (cap_config, nature_heal 25)",
+   "core: src/main/java/de/kronwerke/core/boss/BossScaling.java (apply)",
+   "srv/config/kronwerke-common.toml (healthPerPlayer 0.6)"
+  ]
+ },
+ "gear": {
+  "de": [
+   "Die Bauwerke suchst du am schnellsten mit dem [[naturescompass:naturescompass]]: Wüste, Schneeebene, Tiefsee und warmes Meer.",
+   "Geh nicht zum Auffüllen weg: Cataclysm-Bosse heilen sich, wenn niemand kämpft, und die von Mowzie's Mobs ebenso."
+  ],
+  "en": [
+   "The fastest way to the structures is the [[naturescompass:naturescompass]]: desert, snowy plains, deep ocean and warm ocean.",
+   "Do not leave to restock: Cataclysm bosses heal when nobody fights them, and so do the ones from Mowzie's Mobs."
+  ],
+  "sources": [
+   "srv/config/cataclysm-common.toml (nature_heal)",
+   "srv/config/mowziesmobs-common.toml (heals_out_of_battle true)"
+  ]
+ },
+ "desert_find": {
+  "de": [
+   "Das Wüstenauge [[cataclysm:desert_eye]] geht auf Kronwerke schon in Stufe 1: Quelljuwel in der Mitte, dazu Goldbarren, zwei gemeißelte Sandsteine, Smaragd, toter Busch, Kaktus, Enderperle und Knochen.",
+   "Sammle in der Pyramide gleich Koboleton-Knochen und Altmetall für {{bosses/b_bone_reptile}}."
+  ],
+  "en": [
+   "On Kronwerke the [[cataclysm:desert_eye]] already works in stage 1: a source gem in the middle, plus a gold ingot, two chiseled sandstone, an emerald, a dead bush, a cactus, an ender pearl and a bone.",
+   "Collect koboleton bones and ancient metal in the pyramid right away for {{bosses/b_bone_reptile}}."
+  ],
+  "sources": [
+   "kronwerke:added/cataclysm_desert_eye",
+   "cataclysm:desert_eye"
+  ]
+ },
+ "desert_minibosses": {
+  "de": [
+   "Wadjet zählt auf Kronwerke als Gruppenboss und wächst mit jedem Spieler, der Kobolediator nicht.",
+   "Mit seinem [[cataclysm:kobolediator_skull]] baust du den Helm aus {{bosses/b_bone_reptile}}."
+  ],
+  "en": [
+   "On Kronwerke Wadjet counts as a group boss and grows with every player, the Kobolediator does not.",
+   "His [[cataclysm:kobolediator_skull]] makes the helmet in {{bosses/b_bone_reptile}}."
+  ],
+  "sources": [
+   "srv/config/kronwerke-common.toml ([bosses] scaling list)",
+   "cataclysm:bone_reptile_helmet",
+   "L_Ender's Cataclysm 1.21.1-3.33.jar data/cataclysm/loot_table/entities/kobolediator.json"
+  ]
+ },
+ "remnant_prep": {
+  "de": [
+   "Den Pinsel brauchst du auch für {{exploration/e_brush}}. Die Kette steckt in verdächtigem Sand der Pyramide mit einer eigenen Beutetabelle, bürste also mehrere Blöcke ab, falls der erste nur andere Funde hat."
+  ],
+  "en": [
+   "You also need the brush for {{exploration/e_brush}}. The necklace sits in suspicious sand of the pyramid with its own loot table, so brush several blocks if the first one only gives other finds."
+  ],
+  "sources": [
+   "L_Ender's Cataclysm 1.21.1-3.33.jar data/cataclysm/loot_table/archaeology/cursed_pyramid_necklace.json, cursed_pyramid.json"
+  ],
+  "client": [
+   "Which suspicious sand in the pyramid uses the necklace table"
+  ]
+ },
+ "remnant_kill": {
+  "de": [
+   "Ab zwei Spielern setzt der Remnant alle 12 Sekunden einen Zusatzangriff von Kronwerke ein: einen Blitz auf jemanden, den er sieht (8), eine Schockwelle gegen alle bis 10 Blöcke (6) oder Raserei, die ihn heilt und kurz stärker macht.",
+   "Der [[cataclysm:ancient_metal_block]] gibt 9 Barren, genug für die Knochenreptil-Rüstung ({{bosses/b_bone_reptile}})."
+  ],
+  "en": [
+   "With two or more players the Remnant uses a Kronwerke extra attack every 12 seconds: lightning on someone it can see (8), a shockwave against everyone within 10 blocks (6), or a rage that heals it and makes it stronger for a moment.",
+   "The [[cataclysm:ancient_metal_block]] gives 9 ingots, enough for the bone reptile armour ({{bosses/b_bone_reptile}})."
+  ],
+  "sources": [
+   "core: src/main/java/de/kronwerke/core/boss/BossScaling.java (extraAttack)",
+   "srv/config/kronwerke-common.toml (attackInterval 240, lightningDamage 8, shockwaveDamage 6)",
+   "L_Ender's Cataclysm 1.21.1-3.33.jar data/cataclysm/loot_table/entities/ancient_remnant.json",
+   "cataclysm:ancient_metal_ingot"
+  ]
+ },
+ "prison_find": {
+  "de": [
+   "Das Fluchauge [[cataclysm:cursed_eye]] geht auf Kronwerke schon in Stufe 1: Quelljuwel in der Mitte, vier Goldbarren, ein Knochen, zwei Phantomhäute und eine Enderperle.",
+   "Draugr wachsen als normale Monster mit jeder Stufe, räum das Gefängnis also lieber früh. Weiter geht es mit {{bosses/aptrgangr}} und {{bosses/b_draugr}}."
+  ],
+  "en": [
+   "On Kronwerke the [[cataclysm:cursed_eye]] already works in stage 1: a source gem in the middle, four gold ingots, a bone, two phantom membranes and an ender pearl.",
+   "Draugr grow with every stage like normal monsters, so clear the prison early. Continue with {{bosses/aptrgangr}} and {{bosses/b_draugr}}."
+  ],
+  "sources": [
+   "kronwerke:added/cataclysm_cursed_eye",
+   "core: src/main/java/de/kronwerke/core/mobs/MobStages.java (onJoin)",
+   "srv/config/kronwerke-common.toml ([mobs] health)"
+  ]
+ },
+ "aptrgangr": {
+  "de": [
+   "Der [[cataclysm:strange_key]] fällt bei jedem Aptrgangr sicher. Er ist kein Gruppenboss, wird also nicht mit der Zahl der Spieler zäher, wohl aber mit jeder Stufe."
+  ],
+  "en": [
+   "Every Aptrgangr drops the [[cataclysm:strange_key]] for sure. He is not a group boss, so he does not get tougher with more players, only with every stage."
+  ],
+  "sources": [
+   "L_Ender's Cataclysm 1.21.1-3.33.jar data/cataclysm/loot_table/entities/aptrgangr.json",
+   "srv/config/kronwerke-common.toml ([bosses] scaling list)",
+   "core: src/main/java/de/kronwerke/core/mobs/MobStages.java"
+  ]
+ },
+ "maledictus_kill": {
+  "de": [
+   "Maledictus wächst mit der Gruppe, und ab zwei Spielern kommen Kronwerkes Zusatzangriffe dazu. Der Blitz trifft nur, wen er sieht, die Schockwelle nur bis 10 Blöcke.",
+   "Den Schwarzstahl für die Cursium-Waffen holst du bei {{bosses/b_draugr}}."
+  ],
+  "en": [
+   "Maledictus grows with the group, and with two or more players Kronwerke's extra attacks join in. The lightning only hits someone he can see, the shockwave only reaches 10 blocks.",
+   "The black steel for the cursium weapons comes from {{bosses/b_draugr}}."
+  ],
+  "sources": [
+   "core: src/main/java/de/kronwerke/core/boss/BossScaling.java",
+   "srv/config/kronwerke-common.toml ([bosses])",
+   "L_Ender's Cataclysm 1.21.1-3.33.jar data/cataclysm/loot_table/entities/maledictus.json"
+  ]
+ },
+ "city_find": {
+  "de": [
+   "Das Abgrundauge [[cataclysm:abyss_eye]] geht auf Kronwerke schon in Stufe 1: Quelljuwel in der Mitte, drei Obsidian, vier weinende Obsidian in den Ecken und eine Enderperle oben. Weinenden Obsidian findest du an Portalruinen.",
+   "Ein [[artifacts:snorkel]] ersetzt den Trank der Wasseratmung."
+  ],
+  "en": [
+   "On Kronwerke the [[cataclysm:abyss_eye]] already works in stage 1: a source gem in the middle, three obsidian, four crying obsidian in the corners and an ender pearl on top. Crying obsidian is found at ruined portals.",
+   "A [[artifacts:snorkel]] replaces the potion of water breathing."
+  ],
+  "sources": [
+   "kronwerke:added/cataclysm_abyss_eye"
+  ],
+  "client": [
+   "Snorkel gives water breathing while worn"
+  ]
+ },
+ "sacrifice": {
+  "de": [
+   "Diamant-, Smaragd-, Eisen- und Goldblock sind zusammen 36 Edelsteine und Barren, leg sie früh zur Seite. Statt der [[cataclysm:crystallized_coral]] geht auch ein Korallenbrocken.",
+   "Altar und Wiederbeleber von Cataclysm kann auf Kronwerke keine Explosion zerstören."
+  ],
+  "en": [
+   "The diamond, emerald, iron and gold blocks add up to 36 gems and ingots, put them aside early. A coral chunk works instead of the [[cataclysm:crystallized_coral]].",
+   "On Kronwerke no explosion can destroy Cataclysm's altars and boss respawners."
+  ],
+  "sources": [
+   "cataclysm:abyssal_sacrifice",
+   "cataclysm:abyssal_sacrifice2",
+   "srv/config/kronwerke-common.toml (spawn.blastProof cataclysm:altar_of_*, cataclysm:boss_respawner)"
+  ]
+ },
+ "leviathan_kill": {
+  "de": [
+   "Der Leviathan wächst mit der Gruppe. Bleibt ab zwei Spielern nicht dicht zusammen: Kronwerkes Schockwelle trifft alle bis 10 Blöcke um den Boss und wirft sie zurück.",
+   "Danach geht es zur {{bosses/acropolis_find}}."
+  ],
+  "en": [
+   "The Leviathan grows with the group. With two or more players do not huddle: Kronwerke's shockwave hits everyone within 10 blocks of the boss and throws them back.",
+   "After this, head for {{bosses/acropolis_find}}."
+  ],
+  "sources": [
+   "core: src/main/java/de/kronwerke/core/boss/BossScaling.java (extraAttack shockwave)",
+   "L_Ender's Cataclysm 1.21.1-3.33.jar data/cataclysm/loot_table/entities/the_leviathan.json"
+  ]
+ },
+ "factory_find": {
+  "de": [
+   "Das Mechanische Auge [[cataclysm:mech_eye]] geht auf Kronwerke schon in Stufe 1: Quelljuwel in der Mitte, vier Redstoneblöcke, drei Eisenbarren und eine Enderperle.",
+   "Achtung: Auch die Watcher stehen auf Kronwerkes Bossliste. Kämpft ihr zu zweit, setzen sie Blitz und Schockwelle ein wie ein Boss."
+  ],
+  "en": [
+   "On Kronwerke the [[cataclysm:mech_eye]] already works in stage 1: a source gem in the middle, four redstone blocks, three iron ingots and an ender pearl.",
+   "Careful: the Watchers are on Kronwerke's boss list too. With two of you they use lightning and shockwave like a boss."
+  ],
+  "sources": [
+   "kronwerke:added/cataclysm_mech_eye",
+   "srv/config/kronwerke-common.toml ([bosses] scaling includes cataclysm:the_watcher)",
+   "core: src/main/java/de/kronwerke/core/boss/BossScaling.java"
+  ]
+ },
+ "harbinger_kill": {
+  "de": [
+   "Den [[minecraft:nether_star]] bekommst du vom Wither ({{nether/f_wither}}). Der Harbinger wächst mit der Gruppe, und seine Raketen und Laser zählen dabei mit.",
+   "Aus dem [[cataclysm:witherite_block]] werden 9 Witheritbarren, der Fusionsamboss allein braucht davon sechs."
+  ],
+  "en": [
+   "The [[minecraft:nether_star]] comes from the Wither ({{nether/f_wither}}). The Harbinger grows with the group, and his missiles and lasers scale too.",
+   "The [[cataclysm:witherite_block]] gives 9 witherite ingots, and the fusion anvil alone takes six of them."
+  ],
+  "sources": [
+   "L_Ender's Cataclysm 1.21.1-3.33.jar (The_Harbinger_Entity: nether star in mobInteract)",
+   "core: src/main/java/de/kronwerke/core/boss/BossScaling.java (onDamage scales projectiles)",
+   "cataclysm:mechanical_fusion_anvil",
+   "L_Ender's Cataclysm 1.21.1-3.33.jar data/cataclysm/loot_table/entities/the_harbinger.json"
+  ]
+ },
+ "acropolis_find": {
+  "de": [
+   "Das Sturmauge [[cataclysm:storm_eye]] geht auf Kronwerke schon in Stufe 1: Quelljuwel in der Mitte, Blitzableiter, zwei Prismarinscherben, zwei Diamanten, zwei Prismarinkristalle und eine Enderperle, ohne Wassereimer."
+  ],
+  "en": [
+   "On Kronwerke the [[cataclysm:storm_eye]] already works in stage 1: a source gem in the middle, a lightning rod, two prismarine shards, two diamonds, two prismarine crystals and an ender pearl, no water bucket."
+  ],
+  "sources": [
+   "kronwerke:added/cataclysm_storm_eye",
+   "cataclysm:storm_eye"
+  ]
+ },
+ "scylla_kill": {
+  "de": [
+   "Scylla wächst mit der Gruppe. Bei ihrer kurzen Reichweitengrenze von 12 Blöcken steht ihr zwangsläufig nah beieinander, achtet also auf Kronwerkes Schockwelle (alle bis 10 Blöcke).",
+   "Mit dem Sieg fehlt dir für {{bosses/cataclysmfarer}} höchstens noch der Harbinger."
+  ],
+  "en": [
+   "Scylla grows with the group. With her short 12 block range limit you end up standing close together, so watch for Kronwerke's shockwave (everyone within 10 blocks).",
+   "After this win, at most the Harbinger is left for {{bosses/cataclysmfarer}}."
+  ],
+  "sources": [
+   "srv/config/cataclysm-common.toml",
+   "core: src/main/java/de/kronwerke/core/boss/BossScaling.java",
+   "L_Ender's Cataclysm 1.21.1-3.33.jar data/cataclysm/loot_table/entities/scylla.json"
+  ]
+ },
+ "cataclysmfarer": {
+  "de": [
+   "Ignitium lohnt sich auf Kronwerke doppelt: Vier [[cataclysm:ignitium_ingot]], vier Magmacreme und ein Obsidianofen ergeben den Netheritofen von Iron Furnaces, ganz ohne Netherit.",
+   "Die Bosse im Nether: {{nether/ig_kill}} und {{nether/nm_find}}, im End {{the_end/cg_kill}}."
+  ],
+  "en": [
+   "Ignitium pays twice on Kronwerke: four [[cataclysm:ignitium_ingot]], four magma cream and an obsidian furnace make the Iron Furnaces netherite furnace without any netherite.",
+   "The bosses in the Nether: {{nether/ig_kill}} and {{nether/nm_find}}, in the End {{the_end/cg_kill}}."
+  ],
+  "sources": [
+   "kubejs/server_scripts/kronwerke/round.js (kronwerke:round/netherite_furnace_ignitium)"
+  ]
+ },
+ "bic_night": {
+  "de": [
+   "Auf Kronwerke kommen nicht alle Born-in-Chaos-Monster gleich: Gefallene Chaosritter erscheinen erst ab Stufe 2, Geister des Chaos und Nightmare Stalker ab Stufe 3. Insgesamt spawnt der Mod nur zu 55 Prozent.",
+   "In Stufe 1 holst du Dunkelmetall von Knochenrufern, Türrittern, Zombie-Schlägern, Fasszombies und Skelett-Dreschern, oder du baust die Dunkelmetall-Ablagerungen im dunklen Turm ab ({{bosses/dark_tower}})."
+  ],
+  "en": [
+   "On Kronwerke not every Born in Chaos monster comes at once: Fallen Chaos Knights only spawn from stage 2, Spirits of Chaos and Nightmare Stalkers from stage 3. Overall the mod only spawns at 55 percent.",
+   "In stage 1 you get dark metal from Bonescallers, Door Knights, Zombie Bruisers, Barrel Zombies and Skeleton Thrashers, or by mining the dark metal deposits in the dark tower ({{bosses/dark_tower}})."
+  ],
+  "sources": [
+   "srv/config/kronwerke-common.toml (mobs.minStage, mobs.spawnChance born_in_chaos_v1:*=0.55)",
+   "core: src/main/java/de/kronwerke/core/mobs/MobStages.java (onSpawn)",
+   "born_in_chaos_[Neoforge]_1.21.1_1.7.6.jar data/born_in_chaos_v1/loot_table/entities/*.json, blocks/dark_metal_deposit.json"
+  ]
+ },
+ "dark_metal": {
+  "de": [
+   "Für zwei Barren brauchst du **18 Stücke**, die 9 aus {{bosses/bic_night}} reichen nur für einen. Die Belohnung dieser Quest gibt dir die nächsten 9.",
+   "Der [[born_in_chaos_v1:pileof_dark_metal]] geht nur in den [[minecraft:blast_furnace]], nicht in den normalen Ofen."
+  ],
+  "en": [
+   "Two ingots take **18 pieces**, the 9 from {{bosses/bic_night}} only make one. This quest's reward gives you the next 9.",
+   "The [[born_in_chaos_v1:pileof_dark_metal]] only goes into a [[minecraft:blast_furnace]], not a regular furnace."
+  ],
+  "sources": [
+   "born_in_chaos_v1:pileof_dark_metal_d",
+   "born_in_chaos_v1:dark_metalngot_k (minecraft:blasting)",
+   "born_in_chaos_v1:dark_metal_nugget_craft_4",
+   "born_in_chaos_v1:dark_metal_nugget_craft_2"
+  ]
+ },
+ "dark_tower": {
+  "de": [
+   "Der Oberste Knochenrufer im Turm gehört zum Bauwerk und erscheint schon in Stufe 1. Frei in der Welt spawnt er auf Kronwerke erst ab Stufe 3.",
+   "Im Turm stehen auch Dunkelmetall-Ablagerungen: Ohne Behutsamkeit abgebaut geben sie Dunkelmetallstücke für {{bosses/dark_metal}}."
+  ],
+  "en": [
+   "The Supreme Bonescaller in the tower is part of the structure and already appears in stage 1. Out in the world he only spawns from stage 3 on Kronwerke.",
+   "The tower also has dark metal deposits: mined without Silk Touch they give pieces of dark metal for {{bosses/dark_metal}}."
+  ],
+  "client": [
+   "The advancement dismantledto_bones (trigger minecraft:impossible, granted by the mod) fires for the tower's supreme_bonescaller_not_despawn"
+  ],
+  "sources": [
+   "born_in_chaos_[Neoforge]_1.21.1_1.7.6.jar data/born_in_chaos_v1/structure/dark_tower.nbt (supreme_bonescaller_not_despawn, dark_metal_deposit)",
+   "srv/config/kronwerke-common.toml (minStage supreme_bonescaller=3)",
+   "born_in_chaos_[Neoforge]_1.21.1_1.7.6.jar loot_table/blocks/dark_metal_deposit.json"
+  ]
+ },
+ "hounds": {
+  "de": [
+   "**Diese Quest geht erst ab Stufe 2.** Der Anführer spawnt auf Kronwerke nur frei in der Welt und erst ab Stufe 2. Der Hügel der Hunde hat nur einen Spawner für normale Schreckenshunde."
+  ],
+  "en": [
+   "**This quest only works from stage 2.** On Kronwerke the leader only spawns freely in the world and only from stage 2. The mound of hounds only has a spawner for normal Dread Hounds."
+  ],
+  "client": [
+   "No other spawn path for the Dire Hound Leader (procedure or structure) in stage 1"
+  ],
+  "sources": [
+   "srv/config/kronwerke-common.toml (minStage dire_hound_leader=2, dread_hound=2)",
+   "core: src/main/java/de/kronwerke/core/mobs/MobStages.java (onSpawn: natural spawns only)",
+   "born_in_chaos_[Neoforge]_1.21.1_1.7.6.jar data/born_in_chaos_v1/structure/mound_of_hounds.nbt (dread_hound spawner only)",
+   "born_in_chaos_[Neoforge]_1.21.1_1.7.6.jar neoforge/biome_modifier/dire_hound_leader_biome_modifier.json"
+  ]
+ },
+ "nightmare": {
+  "de": [
+   "**Diese Quest geht erst ab Stufe 3.** Der Nightmare Stalker spawnt nur frei in der Welt, und Kronwerke lässt ihn erst ab Stufe 3 zu.",
+   "Die Warnung im Chat lautet auf Englisch: \"You feel like something is chasing you...\""
+  ],
+  "en": [
+   "**This quest only works from stage 3.** The Nightmare Stalker only spawns freely in the world, and Kronwerke only allows it from stage 3.",
+   "The warning in chat reads: \"You feel like something is chasing you...\""
+  ],
+  "client": [
+   "No spawn path for the Nightmare Stalker besides its natural spawn"
+  ],
+  "sources": [
+   "srv/config/kronwerke-common.toml (minStage nightmare_stalker=3)",
+   "core: src/main/java/de/kronwerke/core/mobs/MobStages.java (onSpawn)",
+   "born_in_chaos_[Neoforge]_1.21.1_1.7.6.jar neoforge/biome_modifier/nightmare_stalker_biome_modifier.json",
+   "born_in_chaos_[Neoforge]_1.21.1_1.7.6.jar assets/born_in_chaos_v1/lang/en_us.json (entity.born_in_chaos_v1.stalkerwarning)"
+  ]
+ },
+ "lifestealer": {
+  "de": [
+   "**Diese Quest geht erst ab Stufe 3.** Der Lifestealer spawnt nur frei in der Welt, und Kronwerke lässt ihn erst ab Stufe 3 zu. Bis dahin sind alle Monster mit den Stufen deutlich stärker geworden, nimm also gute Rüstung mit."
+  ],
+  "en": [
+   "**This quest only works from stage 3.** The Lifestealer only spawns freely in the world, and Kronwerke only allows it from stage 3. By then every normal monster has grown with the stages, so bring good armour."
+  ],
+  "client": [
+   "No spawn path for the Lifestealer besides its natural spawn"
+  ],
+  "sources": [
+   "srv/config/kronwerke-common.toml (minStage lifestealer=3, mobs.health)",
+   "core: src/main/java/de/kronwerke/core/mobs/MobStages.java",
+   "born_in_chaos_[Neoforge]_1.21.1_1.7.6.jar neoforge/biome_modifier/lifestealer_biome_modifier.json"
+  ]
+ },
+ "wroughtnaut": {
+  "de": [
+   "Seine Kammer liegt zwischen Y 20 und Y 50 unter jedem Biom außer dem Ozean. Der Wroughtnaut wächst mit der Gruppe und heilt sich, wenn niemand kämpft.",
+   "Zu mehreren lockt einer die Axt auf sich, die anderen stehen hinter ihm."
+  ],
+  "en": [
+   "His chamber lies between Y 20 and Y 50 under any biome except the ocean. The Wroughtnaut grows with the group and heals when nobody fights him.",
+   "With more players one draws the axe while the others stand behind him."
+  ],
+  "sources": [
+   "srv/config/mowziesmobs-common.toml (ferrous_wroughtnaut generation height 20 to 50, biome !c:is_ocean, heals_out_of_battle)",
+   "srv/config/kronwerke-common.toml ([bosses] mowziesmobs:wroughtnaut)"
+  ]
+ },
+ "frostmaw": {
+  "de": [
+   "Such ihn in Schneeebenen ohne Bäume, nicht an Küsten, Flüssen oder im Ozean. Der Frostmaw wächst mit der Gruppe und heilt sich ohne Kampf wieder auf.",
+   "Den [[mowziesmobs:ice_crystal]] kannst du ihm hier im Schlaf stehlen."
+  ],
+  "en": [
+   "Look for him in snowy plains without trees, not on coasts, rivers or the ocean. The Frostmaw grows with the group and heals back up when not fighting.",
+   "On this server you can steal the [[mowziesmobs:ice_crystal]] while he sleeps."
+  ],
+  "sources": [
+   "srv/config/mowziesmobs-common.toml (frostmaw biome_tags, stealable_ice_crystal true, heals_out_of_battle)",
+   "srv/config/kronwerke-common.toml ([bosses] mowziesmobs:frostmaw)"
+  ]
+ },
+ "b_group_scaling": {
+  "de": [
+   "Als Spieler im Kampf zählt jeder bis 48 Blöcke um den Boss oder wer ihn in den letzten 30 Sekunden getroffen hat. Alle 12 Sekunden setzt der Boss **einen** von drei Zusatzangriffen ein: Blitz auf einen Spieler, den er sieht, Schockwelle bis 10 Blöcke oder Raserei, die ihn um 5 Prozent heilt und 6 Sekunden lang stärker und schneller macht.",
+   "Die Bosse der Liste, darunter auch Wadjet und die Watcher, bekommen dafür keine Stufenboni. Normale Monster erhalten pro Stufe außerdem mehr Schaden (bis 110 Prozent) und Rüstung (bis 10 Punkte)."
+  ],
+  "en": [
+   "Everyone within 48 blocks of the boss counts as in the fight, as does anyone who hit it in the last 30 seconds. Every 12 seconds the boss uses **one** of three extra attacks: lightning on a player it can see, a shockwave within 10 blocks, or a rage that heals 5 percent and makes it stronger and faster for 6 seconds.",
+   "In return the listed bosses, Wadjet and the Watchers among them, get no stage bonuses. Normal monsters also gain damage (up to 110 percent) and armour (up to 10 points) per stage."
+  ],
+  "sources": [
+   "core: src/main/java/de/kronwerke/core/boss/BossScaling.java (playersNear RANGE 48, HIT_MEMORY, extraAttack)",
+   "core: src/main/java/de/kronwerke/core/mobs/MobStages.java (onJoin skips boss types)",
+   "srv/config/kronwerke-common.toml ([bosses], [mobs] damage, armor)"
+  ]
+ },
+ "b_bone_reptile": {
+  "de": [
+   "Für beide Teile brauchst du je 6 Knochen und 6 Altmetallbarren. Koboletons geben ohne Plünderung nur 0 bis 2 Knochen und höchstens ein Altmetallnugget, ganze Barren selten und nur, wenn du sie selbst tötest.",
+   "Am schnellsten kommt das Altmetall aus dem Block des Ancient Remnant ({{bosses/remnant_kill}}), neun Nuggets sind ebenfalls ein Barren."
+  ],
+  "en": [
+   "Both pieces together take 6 bones and 6 ancient metal ingots. Without Looting, Koboletons only drop 0 to 2 bones and at most one ancient metal nugget, whole ingots rarely and only when you kill them yourself.",
+   "The quickest metal is the Ancient Remnant's block ({{bosses/remnant_kill}}), and nine nuggets make an ingot too."
+  ],
+  "sources": [
+   "cataclysm:bone_reptile_helmet",
+   "cataclysm:bone_reptile_chestplate",
+   "L_Ender's Cataclysm 1.21.1-3.33.jar data/cataclysm/loot_table/entities/koboleton.json",
+   "cataclysm:ancient_metal_ingot_from_nuggets"
+  ]
+ },
+ "b_draugr": {
+  "de": [
+   "Ein Draugr lässt ohne Plünderung höchstens ein [[cataclysm:black_steel_nugget]] fallen, für die Tartsche brauchst du 13 Nuggets (ein Barren und vier). Der Aptrgangr ({{bosses/aptrgangr}}) gibt auf einen Schlag 2 bis 4."
+  ],
+  "en": [
+   "Without Looting a Draugr drops at most one [[cataclysm:black_steel_nugget]], and the targe takes 13 nuggets' worth (one ingot plus four). The Aptrgangr ({{bosses/aptrgangr}}) gives 2 to 4 at once."
+  ],
+  "sources": [
+   "L_Ender's Cataclysm 1.21.1-3.33.jar data/cataclysm/loot_table/entities/draugr.json, aptrgangr.json",
+   "cataclysm:black_steel_targe",
+   "cataclysm:black_steel_ingot_from_nuggets"
+  ]
+ },
+ "b_prowler": {
+  "de": [
+   "Der Prowler ist kein Gruppenboss: Er wird nicht pro Spieler zäher, aber wie jedes Monster mit jeder Stufe. Erledige ihn also lieber in Stufe 1."
+  ],
+  "en": [
+   "The Prowler is no group boss: he does not get tougher per player, but like every monster with every stage. So better take him down in stage 1."
+  ],
+  "sources": [
+   "srv/config/kronwerke-common.toml ([bosses] scaling list, [mobs] health)",
+   "core: src/main/java/de/kronwerke/core/mobs/MobStages.java"
+  ]
+ },
+ "b_thrasher": {
+  "de": [
+   "Sicher triffst du Skelett-Drescher im dunklen Turm ({{bosses/dark_tower}}), dort gehören sie zum Bauwerk. Frei in der Welt kommen Born-in-Chaos-Monster auf Kronwerke seltener."
+  ],
+  "en": [
+   "You are sure to meet Skeleton Thrashers in the dark tower ({{bosses/dark_tower}}), where they belong to the structure. Out in the world Born in Chaos monsters are rarer on Kronwerke."
+  ],
+  "sources": [
+   "born_in_chaos_[Neoforge]_1.21.1_1.7.6.jar data/born_in_chaos_v1/structure/dark_tower.nbt (skeleton_thrasher_not_despawn)",
+   "srv/config/kronwerke-common.toml (spawnChance born_in_chaos_v1:*=0.55)"
+  ]
+ },
+ "b_umvuthi": {
+  "de": [
+   "Den Hain findest du in Savannen, der [[naturescompass:naturescompass]] zeigt dir das nächste Savannenbiom. Umvuthi wächst mit der Gruppe und heilt sich ohne Kampf wieder auf."
+  ],
+  "en": [
+   "The grove is in savannas, and the [[naturescompass:naturescompass]] points you to the nearest savanna biome. Umvuthi grows with the group and heals back up when not fighting."
+  ],
+  "sources": [
+   "srv/config/mowziesmobs-common.toml (umvuthi biome_tags c:is_savanna, heals_out_of_battle)",
+   "srv/config/kronwerke-common.toml ([bosses] mowziesmobs:umvuthi)"
+  ]
+ },
+ "b_sculptor": {
+  "de": [
+   "Das Kloster steht auf Berggipfeln zwischen Y 120 und Y 200. Die Prüfung ist auf diesem Server 60 Blöcke hoch.",
+   "Wählst du doch den Kampf: Der Bildhauer steht auf Kronwerkes Bossliste und wächst mit der Gruppe."
+  ],
+  "en": [
+   "The monastery sits on mountain peaks between Y 120 and Y 200. On this server the trial is 60 blocks high.",
+   "If you choose to fight after all: the Sculptor is on Kronwerke's boss list and grows with the group."
+  ],
+  "sources": [
+   "srv/config/mowziesmobs-common.toml (sculptor test_height 60, biome c:is_mountain/peak, height 120 to 200)",
+   "srv/config/kronwerke-common.toml ([bosses] mowziesmobs:sculptor)"
+  ]
+ },
+ "b_foliaath": {
+  "de": [
+   "Foliaathe spawnen nur in Dschungelbiomen, auf Laub, Stämmen und Gras. Schau vorsichtig in dichtes Laub, bevor du durchläufst."
+  ],
+  "en": [
+   "Foliaaths only spawn in jungle biomes, on leaves, logs and grass. Look carefully into thick foliage before walking through."
+  ],
+  "sources": [
+   "srv/config/mowziesmobs-common.toml (foliaath biome_tags c:is_jungle, allowed_block_tags)"
+  ]
+ },
+ "b_grottol": {
+  "de": [
+   "Grottols spawnen nur im Dunkeln auf Stein, Tiefenschiefer und ähnlichem Gestein, ohne Blick zum Himmel. Lass einen Gang unbeleuchtet, wenn du einen suchst."
+  ],
+  "en": [
+   "Grottols only spawn in the dark on stone, deepslate and similar rock, without sight of the sky. Leave a tunnel unlit when you are looking for one."
+  ],
+  "sources": [
+   "srv/config/mowziesmobs-common.toml (grottol spawn_config: needs_darkness, base_stone_overworld, height_max 16, needs_cant_see_sky)"
+  ]
+ }
+}

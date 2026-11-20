@@ -1,0 +1,601 @@
+{
+ "core": {
+  "de": [
+   "Ein Terrastahlbarren ({{botania_runes/terrasteel}}) ergibt 9 [[botania:terrasteel_nugget]]: 3 kommen ins Herzstück, 6 in die beiden Naturapylonen von {{alfheim/frame}}.",
+   "Das Herzstück lässt sich erst craften, wenn Stufe 3 (Stahlwerk) offen ist."
+  ],
+  "en": [
+   "You get [[botania:terrasteel_nugget]] from one Terrasteel Ingot (9 nuggets, {{botania_runes/terrasteel}}): 3 go into the core, 6 into the two Natura Pylons of {{alfheim/frame}}.",
+   "The core can only be crafted once stage 3 (Steel Works) is open."
+  ],
+  "sources": [
+   "botania:elven_gateway_core (WTW x3)",
+   "botania:terrasteel_nugget (9)",
+   "kubejs/data/kronwerke/chapters/stages/stage3.json"
+  ]
+ },
+ "frame": {
+  "de": [
+   "Der Rahmen ist 5 breit und 5 hoch: oben Stamm, Schimmernder Stamm, Stamm; an jeder Seite Stamm, Schimmernder Stamm, Stamm; unten links und rechts vom Herzstück je ein Stamm. Die Stämme oben und unten liegen, die an den Seiten stehen.",
+   "Die zwei [[botania:natura_pylon]] stehen auf je einem Manabecken, höchstens 5 Blöcke vom Herzstück entfernt. Der Naturapylon ist schon in Stufe 2 craftbar."
+  ],
+  "en": [
+   "The frame is 5 wide and 5 high: on top log, glimmering log, log; on each side log, glimmering log, log; at the bottom one log left and right of the core. The top and bottom logs lie sideways, the side logs stand upright.",
+   "The two [[botania:natura_pylon]] each sit on a mana pool within 5 blocks of the core. The Natura Pylon can already be crafted in stage 2."
+  ],
+  "sources": [
+   "botania jar: vazkii/botania/common/block/block_entity/AlfheimPortalBlockEntity (MANA_COST 500, MANA_COST_OPENING 200000, MIN_REQUIRED_PYLONS 2, PYLON_SEARCH_RANGE 5) (MULTIBLOCK: livingwood logs on axis X at top and bottom, axis Y at the sides, glimmering logs)",
+   "botania:natura_pylon",
+   "kubejs/data/kronwerke/chapters/stages/stage2.json"
+  ],
+  "client": [
+   "log orientation is enforced by the multiblock check"
+  ]
+ },
+ "open": {
+  "de": [
+   "Die 200 000 Mana zieht das Portal aus den Becken unter den Pylonen. Halt sie mit Verbreitern voll, sonst schließt es sich beim nächsten Tausch.",
+   "Alles, was die Elfen nicht tauschen, behalten sie als Geschenk. Wirf also nur, was einen Tausch hat, EMI zeigt alle Tausche."
+  ],
+  "en": [
+   "The portal draws its 200,000 mana from the pools under the pylons. Keep them filled with spreaders, or it closes on the next trade.",
+   "Anything the elves do not trade for they keep as a gift, so only throw in what has a trade; EMI lists every trade."
+  ],
+  "sources": [
+   "botania jar: vazkii/botania/common/block/block_entity/AlfheimPortalBlockEntity (MANA_COST 500, MANA_COST_OPENING 200000, MIN_REQUIRED_PYLONS 2, PYLON_SEARCH_RANGE 5)",
+   "botania lang: botania.page.elfMessage6"
+  ]
+ },
+ "lexicon": {
+  "de": [
+   "Die Lexica muss als Gegenstand ins offene Portal fliegen. Der Tausch kostet wie jeder andere 500 Mana.",
+   "Erst danach zeigt die Lexica die Einträge zu Elementium, Corporea, den neuen Blumen und der Ender-Essenz ({{alfheim/ender_essence}})."
+  ],
+  "en": [
+   "The Lexica has to fly into the open portal as an item. Like every trade it costs 500 mana.",
+   "Only then does it show the entries for elementium, Corporea, the new flowers and ender essence ({{alfheim/ender_essence}})."
+  ],
+  "sources": [
+   "botania:elven_trade/lexica_botania_upgrade",
+   "botania jar: vazkii/botania/common/block/block_entity/AlfheimPortalBlockEntity (MANA_COST 500, MANA_COST_OPENING 200000, MIN_REQUIRED_PYLONS 2, PYLON_SEARCH_RANGE 5)"
+  ]
+ },
+ "dreamwood": {
+  "de": [
+   "Es geht Stamm gegen Stamm ([[botania:dreamwood_log]]) und Lebeholz gegen Traumholz. Jeder Stamm ist ein eigener Tausch für 500 Mana, ein Stapel von 64 kostet also 32 000 Mana.",
+   "Traumholz brauchst du für {{alfheim/wand_elven}}, {{alfheim/spreader}} und {{alfheim/crafty_crate}}."
+  ],
+  "en": [
+   "It is log for log ([[botania:dreamwood_log]]) and livingwood for dreamwood. Each log is a trade of its own at 500 mana, so a stack of 64 costs 32,000 mana.",
+   "Dreamwood goes into {{alfheim/wand_elven}}, {{alfheim/spreader}} and {{alfheim/crafty_crate}}."
+  ],
+  "sources": [
+   "botania:elven_trade/dreamwood_log, botania:elven_trade/dreamwood",
+   "botania jar: vazkii/botania/common/block/block_entity/AlfheimPortalBlockEntity (MANA_COST 500, MANA_COST_OPENING 200000, MIN_REQUIRED_PYLONS 2, PYLON_SEARCH_RANGE 5) (resolveRecipes: one recipe per 500 mana, portalStacks)"
+  ]
+ },
+ "wand_elven": {
+  "de": [
+   "Die zwei Traumholzstämme liegen **schräg** nebeneinander (einer oben rechts, einer darunter links), nicht übereinander. Ein Rezept ergibt einen [[botania:dreamwood_twig]].",
+   "Der [[botania:wand_of_the_elven_forest]] braucht 3 Zweige in einer Diagonale und 2 Blütenblätter daneben. Er kann alles, was der Stab des Waldes kann."
+  ],
+  "en": [
+   "The two dreamwood logs go **diagonally** (one top right, one below on the left), not on top of each other. One craft gives one [[botania:dreamwood_twig]].",
+   "The [[botania:wand_of_the_elven_forest]] takes 3 twigs on a diagonal and 2 petals beside them. It does everything the Wand of the Forest does."
+  ],
+  "sources": [
+   "botania:dreamwood_twig (pattern [' W','W '])",
+   "botania:wand_of_the_elven_forest (pattern [' PS',' SP','S  '])"
+  ]
+ },
+ "elven_quartz": {
+  "de": [
+   "Ein Netherquarz wird ein [[botania:elven_quartz]], jedes Stück ist ein eigener Tausch für 500 Mana. Das Portal sammelt eingeworfene Stapel und arbeitet sie Stück für Stück ab.",
+   "Die Bauformen craftest du wie bei normalem Quarz. Netherquarz findest du im Nether ({{nether/quartz}})."
+  ],
+  "en": [
+   "One Nether Quartz becomes one [[botania:elven_quartz]], and each piece is a trade of its own at 500 mana. The portal stores thrown stacks and works through them one by one.",
+   "The building blocks are crafted like normal quartz. Nether Quartz comes from the Nether ({{nether/quartz}})."
+  ],
+  "sources": [
+   "botania:elven_trade/elven_quartz",
+   "botania jar: vazkii/botania/common/block/block_entity/AlfheimPortalBlockEntity (MANA_COST 500, MANA_COST_OPENING 200000, MIN_REQUIRED_PYLONS 2, PYLON_SEARCH_RANGE 5) (resolveRecipes: one recipe per 500 mana, portalStacks)"
+  ]
+ },
+ "alfglass": {
+  "de": [
+   "Managlas machst du im Manabecken aus Glas ({{botania/managlass}}). Ein Block Managlas wird ein [[botania:alfglass]].",
+   "3 Elfenglas ergeben 3 Elfenglasflaschen ({{alfheim/flask}}), 1 Elfenglas steckt im Schleim in einer Flasche ({{alfheim/slime_bottle}})."
+  ],
+  "en": [
+   "Managlass comes from glass in a mana pool ({{botania/managlass}}). One block of Managlass becomes one [[botania:alfglass]].",
+   "3 Alfglass make 3 Alfglass Flasks ({{alfheim/flask}}), and 1 Alfglass goes into the Slime in a Bottle ({{alfheim/slime_bottle}})."
+  ],
+  "sources": [
+   "botania:elven_trade/alfglass",
+   "botania:alfglass_flask (3)",
+   "botania:slime_in_a_bottle"
+  ]
+ },
+ "elementium": {
+  "de": [
+   "Das Portal tauscht nur, wenn **beide Barren** gleichzeitig drin sind. Ein einzelner Barren wartet im Portal, bis der zweite kommt.",
+   "Manastahl bekommst du am schnellsten aus Infundiertem Eisen im Manabecken (3000 Mana pro Barren) oder aus dem Ritual mit 4 Barren auf einmal ({{botania_runes/ritual}}). Mehr Mana sparst du mit {{alfheim/elementium_block}}."
+  ],
+  "en": [
+   "The portal only trades when **both ingots** are inside at the same time, so throw even amounts.",
+   "Manasteel comes fastest from Infused Iron in a mana pool (3000 mana per ingot) or from the ritual with 4 ingots at once ({{botania_runes/ritual}}). Save mana with {{alfheim/elementium_block}}."
+  ],
+  "sources": [
+   "botania:elven_trade/elementium_ingot (2x #c:ingots/manasteel)",
+   "kronwerke:magic/manasteel_from_infused_iron (3000)",
+   "kronwerke:magic/manasteel_ritual (4)"
+  ],
+  "client": [
+   "a single ingot stays in the portal until a second one arrives"
+  ]
+ },
+ "elementium_block": {
+  "de": [
+   "18 Manastahl als 2 Blöcke kosten 500 Mana statt 4500 für 9 einzelne Tausche. Ein [[botania:elementium_block]] zerlegst du formlos in 9 Barren.",
+   "Für das Ziel von {{alfheim/elementium_line}} rechnet sich das schnell: 400 Barren sind etwa 45 Blocktausche."
+  ],
+  "en": [
+   "18 manasteel as 2 blocks cost 500 mana instead of 4,500 for 9 single trades. An [[botania:elementium_block]] breaks back into 9 ingots without a pattern.",
+   "For the goal in {{alfheim/elementium_line}} that adds up fast: 400 ingots are about 45 block trades."
+  ],
+  "sources": [
+   "botania:elven_trade/elementium_block",
+   "botania:elven_trade/elementium_ingot_from_mixed_input (5)",
+   "botania:elementium_ingot_from_elementium_block",
+   "botania jar: vazkii/botania/common/block/block_entity/AlfheimPortalBlockEntity (MANA_COST 500, MANA_COST_OPENING 200000, MIN_REQUIRED_PYLONS 2, PYLON_SEARCH_RANGE 5)"
+  ]
+ },
+ "pixie": {
+  "de": [
+   "Eine [[botania:mana_pearl]] kostet 6000 Mana und entsteht nur mit Messinggehäuse unter dem Becken ({{botania_runes/pearl_factory}}). Für einen Elfenstern brauchst du 2 Feenstaub, also 2 Perlen.",
+   "Feenstaub kommt nur aus diesem Tausch, es gibt kein Rezept."
+  ],
+  "en": [
+   "A [[botania:mana_pearl]] costs 6,000 mana and only forms with a brass casing under the pool ({{botania_runes/pearl_factory}}). An Elven Star takes 2 Pixie Dust, so 2 pearls.",
+   "Pixie Dust only comes from this trade; there is no recipe."
+  ],
+  "sources": [
+   "botania:elven_trade/pixie_dust",
+   "kronwerke:magic/mana_pearl (6000, catalyst create:brass_casing)",
+   "kronwerke:milestones/elven_star"
+  ]
+ },
+ "dragonstone": {
+  "de": [
+   "Ein [[botania:mana_diamond]] kostet im Manabecken einen Diamanten. Ein Manadiamantblock wird im Tausch zum Drachensteinblock, das spart Mana.",
+   "Ein Elfenstern braucht 4 [[botania:dragonstone]], der Corporea-Hauptfunke 1, der Index 2, der Kristallbogen 2, Weltsamen 1."
+  ],
+  "en": [
+   "A [[botania:mana_diamond]] costs one diamond in a mana pool. A block of mana diamond trades for a block of dragonstone, which saves mana.",
+   "An Elven Star needs 4 [[botania:dragonstone]], the Master Corporea Spark 1, the Index 2, the Crystal Bow 2, World Seeds 1."
+  ],
+  "sources": [
+   "botania:mana_infusion/mana_diamond",
+   "botania:elven_trade/dragonstone, dragonstone_block",
+   "kronwerke:milestones/elven_star",
+   "botania:master_corporea_spark, botania:corporea_index, botania:crystal_bow, botania:world_seed"
+  ]
+ },
+ "orechid": {
+  "de": [
+   "Die Runen des Hochmuts und der Gier kommen vom Runenaltar ({{botania_runes/rune_pride}}, {{botania_runes/rune_greed}}). Die Erze sind zufällig, seltene Erze entstehen seltener.",
+   "Die Erchidee braucht viel Mana. Für die Nether-Erze gibt es die Flammende Erchidee ({{alfheim/orechid_ignem}})."
+  ],
+  "en": [
+   "The runes of pride and greed come from the runic altar ({{botania_runes/rune_pride}}, {{botania_runes/rune_greed}}). The ores are random, and rare ores appear less often.",
+   "The Orechid needs a lot of mana. For Nether ores there is the Orechid Ignem ({{alfheim/orechid_ignem}})."
+  ],
+  "sources": [
+   "botania:petal_apothecary/orechid",
+   "botania lang: botania.page.orechid0"
+  ]
+ },
+ "kekimurus": {
+  "de": [
+   "Der Kekimurus frisst gesetzte Kuchen in seiner Nähe, nicht Kuchen als Gegenstand. Ein Einsatzgerät von Create kann die Kuchen nachsetzen.",
+   "Die Rune der Völlerei kommt vom Runenaltar ({{botania_runes/sin_runes}})."
+  ],
+  "en": [
+   "The Kekimurus eats placed cakes near it, not cake items. A Create deployer can place new cakes.",
+   "The Rune of Gluttony comes from the runic altar ({{botania_runes/sin_runes}})."
+  ],
+  "sources": [
+   "botania:petal_apothecary/kekimurus",
+   "botania lang: botania.page.kekimurus0"
+  ]
+ },
+ "rafflowsia": {
+  "de": [
+   "Sie frisst nur Blumen aus der Apotheke, also Funktions- und Erzeugerblumen, die gesetzt neben ihr stehen. Dieselbe Blume mehrmals hintereinander bringt immer weniger.",
+   "Eine Reihe verschiedener billiger Blumen, nacheinander gesetzt, lohnt sich am meisten."
+  ],
+  "en": [
+   "It only eats Apothecary flowers (functional and generating flowers) placed next to it. The same flower several times in a row gives less and less.",
+   "A row of different cheap flowers, placed one after another, pays best."
+  ],
+  "sources": [
+   "botania:petal_apothecary/rafflowsia",
+   "botania lang: botania.page.rafflowsia0"
+  ]
+ },
+ "spectrolus": {
+  "de": [
+   "Wolle muss als Gegenstand neben die Spektrole fallen. Falsche Farben frisst sie auch, macht daraus aber kein Mana.",
+   "Welche Farbe sie gerade will, siehst du mit dem Stab des Waldes in der Hand. Schafe in allen 16 Farben und ein Scherer machen daraus eine Farm."
+  ],
+  "en": [
+   "Wool has to land next to the Spectrolus as an item. It eats wrong colours too but makes no mana from them.",
+   "Hover over it with a Wand of the Forest to see which colour it wants. Sheep in all 16 colours and a shearer turn it into a farm."
+  ],
+  "sources": [
+   "botania:petal_apothecary/spectrolus",
+   "botania lang: botania.page.spectrolus0, spectrolus1"
+  ]
+ },
+ "spreader": {
+  "de": [
+   "Den [[botania:elven_mana_spreader]] gibt es nicht als Impuls-Verbreiter. 4 Stück kosten 24 Traumholzstämme und 4 Elementium.",
+   "Die nächste Stufe, der Gaia-Manaverbreiter, kommt erst in Stufe 4 ({{gaia/spreader}})."
+  ],
+  "en": [
+   "There is no pulse version of the [[botania:elven_mana_spreader]]. 4 of them cost 24 dreamwood logs and 4 elementium.",
+   "The next tier, the Gaia Spreader, only comes in stage 4 (Star Works) ({{gaia/spreader}})."
+  ],
+  "sources": [
+   "botania:elven_mana_spreader (WWW/EP /WWW)",
+   "botania lang: botania.page.dreamwoodSpreader0, dreamwoodSpreader2"
+  ]
+ },
+ "conjuration": {
+  "de": [
+   "Der [[botania:conjuration_catalyst]] kommt unter das Becken. Je zwei Stück kosten: Redstone und Glowstonestaub 5000 Mana, Quarz 2500, Kohle 2100, Netherrack und Schneebälle nur 200.",
+   "Der Alchemiekatalysator kommt aus {{botania_runes/alchemy}}."
+  ],
+  "en": [
+   "The [[botania:conjuration_catalyst]] goes under the pool. A pair costs redstone and glowstone dust 5,000 mana, quartz 2,500, coal 2,100, netherrack and snowballs only 200.",
+   "The Alchemy Catalyst comes from {{botania_runes/alchemy}}."
+  ],
+  "sources": [
+   "botania:conjuration_catalyst (SBS/GPG/SGS)",
+   "botania:mana_infusion/conjuration/* (mana, count 2)"
+  ]
+ },
+ "elementium_gear": {
+  "de": [
+   "Beim Abbauen **im Schleichen** vernichtet die [[botania:elementium_pickaxe]] die halb nützlichen Blöcke nicht, nur den reinen Schutt. Kombinierst du sie mit dem Terratrümmerer, übernimmt der diese Fähigkeit.",
+   "Die Axt nimmt Plünderung an, das erhöht die Chance auf Köpfe."
+  ],
+  "en": [
+   "**While sneaking** the [[botania:elementium_pickaxe]] keeps the semi-disposable blocks and only voids plain rubble. Combined with the Terra Shatterer it gives it this ability.",
+   "The axe accepts Looting, which raises the head drop chance."
+  ],
+  "sources": [
+   "botania:elementium_pickaxe (SSS/ T / T )",
+   "botania lang: botania.page.elfGear2, elfGear6"
+  ]
+ },
+ "elementium_armor": {
+  "de": [
+   "Helm 5, Harnisch 8, Hose 7, Stiefel 4 Elementiumbarren. Das Elementiumschwert in der Hand erhöht die Feen-Chance zusätzlich und macht die Feen stärker.",
+   "Für mehr Feen gibt es {{alfheim/fairy_ring}}."
+  ],
+  "en": [
+   "Helmet 5, chestplate 8, leggings 7, boots 4 elementium ingots. Holding the Elementium Sword raises the pixie chance further and makes the pixies stronger.",
+   "For more pixies see {{alfheim/fairy_ring}}."
+  ],
+  "sources": [
+   "botania:elementium_helmet (SSS/S S) and the other pieces",
+   "botania lang: botania.page.elfGear0, elfGear1, elfGear10"
+  ]
+ },
+ "fairy_ring": {
+  "de": [
+   "Muster: Feenstaub oben links, die 4 Elementiumbarren als Ring daneben und darunter. Der [[botania:great_fairy_ring]] kommt in einen Ring-Platz von Curios.",
+   "Gesperrte Schmuckstücke legt der Server zurück ins Inventar, der Ring selbst ist aber nicht gesperrt."
+  ],
+  "en": [
+   "Pattern: Pixie Dust top left, the 4 elementium ingots as a ring next to and below it. The [[botania:great_fairy_ring]] goes into a Curios ring slot.",
+   "The server moves locked accessories back into the inventory, but the ring itself is not locked."
+  ],
+  "sources": [
+   "botania:great_fairy_ring (DE /E E/ E )",
+   "core: src/main/java/de/kronwerke/core/lock/LockedAccessories.java"
+  ],
+  "client": [
+   "ring slot is the Curios ring slot"
+  ]
+ },
+ "crystal_bow": {
+  "de": [
+   "Muster: Drachensteine oben und unten in der Mitte, die 3 Manainfundierten Fäden rechts als Sehne, der Lebeholzzweig links in der Mitte. Er schießt härter als ein Holzbogen.",
+   "Mana zum Schießen und Reparieren nimmt er aus Manatafeln oder einem Manaband im Inventar ({{botania_runes/mana_tablet}})."
+  ],
+  "en": [
+   "Pattern: dragonstones top and bottom middle, the 3 Mana-Infused String on the right as the string, the livingwood twig in the middle left. It shoots harder than a wooden bow.",
+   "It takes mana for arrows and repairs from Mana Tablets or a Band of Mana in your inventory ({{botania_runes/mana_tablet}})."
+  ],
+  "sources": [
+   "botania:crystal_bow ( DS/T S/ DS)",
+   "botania lang: botania.page.crystalBow0"
+  ],
+  "client": [
+   "mana is drawn from tablets or a Band of Mana in the inventory"
+  ]
+ },
+ "flask": {
+  "de": [
+   "Die Wolke verfliegt schnell, also halt die leere [[botania:alfglass_flask]] schon in der Hand. Ein Werfer mit Flaschen, der auf die Stelle zielt, sammelt die Wolken von selbst ein.",
+   "Die Flaschen fassen auch Tränke aus der Botanischen Brauerei: 6 Schlucke statt 4, für doppeltes Mana."
+  ],
+  "en": [
+   "The cloud fades fast, so hold the empty [[botania:alfglass_flask]] ready. A dispenser with flasks aimed at the spot collects the clouds by itself.",
+   "The flasks also hold Botanical Brewery brews: 6 doses instead of 4, for double the mana."
+  ],
+  "sources": [
+   "botania:alfglass_flask (G G/ G , 3)",
+   "botania lang: botania.page.enderEssenceCapture, flasks0, flasks1"
+  ]
+ },
+ "ender_essence": {
+  "de": [
+   "Der [[botania:soulscribe]] ist die Waffe, mit der du den Enderman triffst. Im End gäbe es reine Essenz, außerhalb nur [[botania:diluted_ender_essence]].",
+   "Verdünnte Essenz zählt für Corporea-Funken und den Corporea-Trichter. Rotfaden, Efeu und der Index brauchen die reine ({{alfheim/pure_essence}})."
+  ],
+  "en": [
+   "The [[botania:soulscribe]] is the weapon you hit the Enderman with. In the End it would give pure essence, elsewhere only [[botania:diluted_ender_essence]].",
+   "Diluted essence works for Corporea Sparks and the Corporea Funnel. Red String, Resolute Ivy and the Index need pure essence ({{alfheim/pure_essence}})."
+  ],
+  "sources": [
+   "botania:soulscribe (P/S/T)",
+   "botania lang: botania.page.enderEssenceFromEndermen",
+   "botania:corporea_spark, botania:corporea_funnel (#botania:ender_essences)",
+   "botania:red_string, botania:resolute_ivy, botania:corporea_index (botania:pure_ender_essence)"
+  ]
+ },
+ "pure_essence": {
+  "de": [
+   "Jeder Endstein wird beim Reinigen zu Bruchtiefschiefer und gibt eine Wolke [[botania:pure_ender_essence]] ab ({{botania/pure_daisy}}). Possessed Endermites kommen aus dem ersten Beschwörungsritual von Occultism und lassen 1 bis 2 Endstein fallen.",
+   "Für den Kreislauf: Eine Flasche Reine Essenz auf Stein werfen oder per Werfer zerschlagen macht wieder Endstein."
+  ],
+  "en": [
+   "Every End Stone turns into cobbled deepslate when purified and releases a cloud of [[botania:pure_ender_essence]] ({{botania/pure_daisy}}). Possessed Endermites come from Occultism's first summoning ritual and drop 1 to 2 End Stone.",
+   "To close the loop, throw a flask of pure essence at stone or break it there with a dispenser: it turns back into End Stone."
+  ],
+  "sources": [
+   "botania:pure_daisy/cobbled_deepslate",
+   "occultism:ritual/possess_endermite (pentacle occultism:possess_foliot)",
+   "occultism:loot_table/entities/possessed_endermite.json",
+   "botania lang: botania.page.enderEssenceStoneConversion"
+  ]
+ },
+ "corporea_spark": {
+  "de": [
+   "Ein Rezept gibt 4 [[botania:corporea_spark]]. Der Funke sieht die Truhe unter sich, holt Items aber nur von ihrer Oberseite.",
+   "Rechtsklick auf einen Funken verbindet das Netz neu, wenn du etwas umgebaut hast. Wie es weitergeht: {{alfheim/corporea_funnel}} und {{alfheim/corporea_index}}."
+  ],
+  "en": [
+   "One craft gives 4 [[botania:corporea_spark]]. A spark sees the inventory below it but only takes items from its top side.",
+   "Right click a spark to reconnect the network after you rebuilt something. Next: {{alfheim/corporea_funnel}} and {{alfheim/corporea_index}}."
+  ],
+  "sources": [
+   "botania:corporea_spark (4)",
+   "botania:master_corporea_spark",
+   "botania lang: botania.page.corporea1, corporea2, corporea3"
+  ]
+ },
+ "corporea_funnel": {
+  "de": [
+   "Die Mengen je Drehung des Rahmens: 1, 2, 4, 8, 16, 32, 48, 64. Steht kein Inventar ein oder zwei Blöcke darunter, wirft der Trichter die Items oben aus.",
+   "Der Trichter braucht selbst einen Corporea-Funken auf sich."
+  ],
+  "en": [
+   "Amounts per frame rotation: 1, 2, 4, 8, 16, 32, 48, 64. Without an inventory one or two blocks below, the funnel drops the items on top.",
+   "The funnel needs a Corporea Spark on itself."
+  ],
+  "sources": [
+   "botania:corporea_funnel (CCC/CEC/CRC)",
+   "botania lang: botania.page.corporeaFunnel0, corporeaFunnel1"
+  ]
+ },
+ "corporea_index": {
+  "de": [
+   "Der Index versteht auch Mengen wie \"a stack of\", das Wort \"all\" und Platzhalter wie \"iron...\" (alles mit iron im Namen). \"this\" steht für den Gegenstand in deiner Hand.",
+   "Mit \"count\" oder \"show\" zählt er nur, ohne etwas herauszugeben. Die Taste dafür heißt in der Steuerung Corporea-Anfrage."
+  ],
+  "en": [
+   "The Index also understands amounts like \"a stack of\", the word \"all\" and wildcards like \"iron...\" (anything with iron in its name). \"this\" means the item in your hand.",
+   "With \"count\" or \"show\" it only counts and hands out nothing. The inventory key is called Corporea Request in the controls."
+  ],
+  "sources": [
+   "botania:corporea_index (AOA/OCO/DOD)",
+   "botania lang: botania.page.corporeaIndex2 to corporeaIndex7, key.botania_corporea_request"
+  ]
+ },
+ "elementium_line": {
+  "de": [
+   "Für das Ziel zählen nur [[botania:elementium_ingot]]. Die Elementiumblöcke aus dem Tausch zerlegst du formlos in 9 Barren, zum Beispiel mit einer Mechanischen Handwerkseinheit. Die 400 sind der Grundwert, mit mehr Spielern steigt er.",
+   "Den Tausch lassen ein Werfer oder ein Trichter vor dem Portal laufen, die Barren holt eine Trichtermalve ({{botania_runes/hopperhock}})."
+  ],
+  "en": [
+   "Only [[botania:elementium_ingot]] count for the goal. Break the elementium blocks from the trade into 9 ingots without a pattern, for example with a mechanical crafter. 400 is the base amount; it grows with more players.",
+   "A dropper in front of the portal keeps the trade running and a Hopperhock collects the ingots ({{botania_runes/hopperhock}})."
+  ],
+  "sources": [
+   "config/kronwerke/goals.json (stage3 magic: botania:elementium_ingot base 400, weight 8, not fixed)",
+   "botania:elementium_ingot_from_elementium_block",
+   "docs/STAGES.md"
+  ]
+ },
+ "elven_star": {
+  "de": [
+   "Die Zutaten kommen aus drei Kapiteln: [[occultism:afrit_essence]] aus {{occultism_afrit/unbound_afrit}}, [[mekanism:alloy_reinforced]] aus der Metallurgischen Infusionsanlage (Infundierte Legierung und Diamant, {{mekanism/infuser}}), Drachenstein und Feenstaub von hier.",
+   "Der [[kronwerke:elven_star]] zählt am Obelisken 400 Punkte, die 8 Stück sind fest und wachsen nicht mit der Spielerzahl."
+  ],
+  "en": [
+   "The parts come from three places: [[occultism:afrit_essence]] from {{occultism_afrit/unbound_afrit}}, [[mekanism:alloy_reinforced]] from the Metallurgic Infuser (Infused Alloy and a diamond, {{mekanism/infuser}}), and dragonstone and pixie dust from here.",
+   "At the obelisk each [[kronwerke:elven_star]] is worth 400 points; the 8 are fixed and do not grow with the player count."
+  ],
+  "sources": [
+   "kronwerke:milestones/elven_star (DXD/ARA/DXD)",
+   "occultism:ritual/summon_unbound_afrit",
+   "mekanism:metallurgic_infusing/alloy/reinforced",
+   "config/kronwerke/goals.json (kronwerke:elven_star base 8, fixed, weight 400)"
+  ]
+ },
+ "crafty_crate": {
+  "de": [
+   "Füttere die [[botania:crafty_crate]] mit einem Trichter oder einer Trichtermalve in der Reihenfolge des Rezepts, leere Felder mit [[botania:crafting_placeholder]]. 32 Platzhalter reichen lange.",
+   "Mit einem Muster auf der Kiste musst du keine Platzhalter mehr einfüllen, die gesperrten Felder bleiben frei."
+  ],
+  "en": [
+   "Feed the [[botania:crafty_crate]] with a hopper or a Hopperhock in recipe order and fill empty slots with [[botania:crafting_placeholder]]. 32 placeholders last a long time.",
+   "With a pattern on the crate you no longer need placeholders: the locked slots stay empty."
+  ],
+  "sources": [
+   "botania:crafty_crate (WCW/W W/W W)",
+   "botania:crafting_placeholder (32)"
+  ],
+  "client": [
+   "patterns lock slots so placeholders are not needed"
+  ]
+ },
+ "red_string": {
+  "de": [
+   "Rotfaden-Blöcke lassen sich nicht hintereinander ketten. Jeder bindet sich an den nächsten passenden Block in der Richtung, in die er zeigt.",
+   "Der Rahmen ist bei allen gleich: 7 Lebestein, das Funktionsteil in der Mitte, der Rotfaden rechts. Der Spoofer nimmt einen Manaverbreiter, der Abfänger einen Steinknopf."
+  ],
+  "en": [
+   "Red Stringed blocks cannot be chained. Each binds to the nearest fitting block in the direction it faces.",
+   "All of them share the frame: 7 livingrock, the working part in the middle, the red string on the right. The Spoofer takes a mana spreader, the Interceptor a stone button."
+  ],
+  "sources": [
+   "botania:red_string",
+   "botania:red_stringed_container, red_stringed_spoofer, red_stringed_interceptor (RRR/RMS/RRR)",
+   "botania lang: botania.page.redString1, redString15"
+  ]
+ },
+ "resolute_ivy": {
+  "de": [
+   "Ein Efeu schützt einen Gegenstand für **einen** Tod, danach brauchst du einen neuen. Die Quest will 2, mach dir also gleich zwei.",
+   "Wenn du doch stirbst ohne Efeu: Deine Sachen liegen in deinem Körper ({{tips/h_death}})."
+  ],
+  "en": [
+   "One ivy protects one item for **one** death; after that you need a new one. The quest wants 2, so make two right away.",
+   "If you die without ivy, your things are in your body ({{tips/h_death}})."
+  ],
+  "sources": [
+   "botania:resolute_ivy",
+   "botania:dynamic/resolute_ivy",
+   "botania lang: botania.page.keepIvy0"
+  ]
+ },
+ "slime_bottle": {
+  "de": [
+   "Du brauchst 6 Elementiumbarren. Trag die Flasche bei dir und lauf herum: Nur in einem Schleimchunk bewegt sich der Schleim darin.",
+   "Die Narglibbe braucht Schleime, die in einem Schleimchunk spawnen ({{botania_runes/narslimmus}})."
+  ],
+  "en": [
+   "It takes 6 elementium ingots. Carry it and walk around: the slime inside only moves in a slime chunk.",
+   "The Narslimmus needs slimes spawning in a slime chunk ({{botania_runes/narslimmus}})."
+  ],
+  "sources": [
+   "botania:slime_in_a_bottle (EGE/ESE/ E )",
+   "botania lang: botania.page.slimeBottle0"
+  ],
+  "client": [
+   "the slime animates in a slime chunk"
+  ]
+ },
+ "orechid_ignem": {
+  "de": [
+   "Sie macht Netherquarz- und Nethergolderz aus Netherrack und Vergoldeten Schwarzstein aus Schwarzstein.",
+   "Stell Becken und Erzeugerblumen gleich mit in den Nether, oder leg Mana per Funken dorthin. Ein Wegstein in der Nähe spart Wege ({{nether/waystone}})."
+  ],
+  "en": [
+   "It turns netherrack into nether quartz and nether gold ore and blackstone into gilded blackstone.",
+   "Put a pool and generating flowers in the Nether with it. A waystone nearby saves trips ({{nether/waystone}})."
+  ],
+  "sources": [
+   "botania:orechid_ignem/nether_quartz_ore, nether_gold_ore, gilded_blackstone",
+   "botania lang: botania.page.orechidIgnem0"
+  ]
+ },
+ "entropinnyum": {
+  "de": [
+   "Duplizierte TNT erkennt sie: Aus TNT von Duplikations-Maschinen macht sie kaum Mana. Gezündetes TNT muss auf festem Boden liegen, nicht im Wasser.",
+   "Wichtig für die Basis: Ist ihr Speicher voll, explodiert das TNT ganz normal. Bau sie mit Abstand zu allem, was du behalten willst."
+  ],
+  "en": [
+   "It recognises duplicated TNT and makes very little mana from it. Lit TNT must be on dry ground, not in water.",
+   "If its buffer is full, the TNT explodes as usual, so build it away from anything you want to keep."
+  ],
+  "sources": [
+   "botania:petal_apothecary/entropinnyum",
+   "botania lang: botania.page.entropinnyum0, entropinnyum2"
+  ]
+ },
+ "loonium": {
+  "de": [
+   "Das Loonium nimmt nicht jeden Gegenstand der Bauwerk-Beute, manche fallen nie. Die Monster sind stärker als normal, also gut gerüstet danebenstehen.",
+   "Die Runen der Trägheit, Völlerei und des Neides kommen vom Runenaltar ({{botania_runes/sin_runes}})."
+  ],
+  "en": [
+   "The Loonium does not pick every item of a structure's loot; some never drop. The monsters are stronger than usual, so stand next to it well geared.",
+   "The runes of sloth, gluttony and envy come from the runic altar ({{botania_runes/sin_runes}})."
+  ],
+  "sources": [
+   "botania:petal_apothecary/loonium",
+   "botania lang: botania.page.loonium0, looniumStructures"
+  ]
+ },
+ "elven_lenses": {
+  "de": [
+   "Bei der Kombination mit der Bohrlinse muss die Bohrlinse zuerst in die Werkbank. Dann zerstört der Stoß auch keine Kraftrelais oder Kolben.",
+   "Die Auslöserlinse ist eine Steuerlinse: Der Verbreiter schießt ohne Ziel gar nicht. Mana aus einem Stoß durch die Verzerrungslinse geht verloren, er kommt nicht in einem Becken an."
+  ],
+  "en": [
+   "When combining with the Bore Lens, the Bore Lens goes into the grid first. The burst then also spares Force Relays and pistons.",
+   "The Tripwire Lens is a control lens: without a target the spreader does not fire. Mana in a warped burst is lost and never reaches a pool."
+  ],
+  "sources": [
+   "botania:warp_lens, botania:tripwire_lens",
+   "botania lang: botania.page.elvenLenses3, elvenLenses11"
+  ]
+ },
+ "spark_augments": {
+  "de": [
+   "Typischer Aufbau: Ein Becken mit dominantem Funken an deinem Verbrauch zieht aus allen normalen Becken in Reichweite. Ein rezessiver Funke an der Blumenfarm schiebt alles weg.",
+   "Den Funken-Bastler brauchst du nur, wenn die Anpassung per Redstone wechseln soll."
+  ],
+  "en": [
+   "A common setup: a pool with a Dominant spark at your consumers pulls from all plain pools in range, and a Recessive spark at the flower farm pushes everything out.",
+   "You only need the Spark Tinkerer if the augment should switch by redstone."
+  ],
+  "sources": [
+   "botania:spark_augment_* (pixie dust, manasteel, rune)",
+   "botania:spark_tinkerer (ESE/SRS)",
+   "botania lang: botania.page.sparkUpgrades2, sparkUpgrades3, sparkChanger1"
+  ]
+ },
+ "world_seed": {
+  "de": [
+   "Ein Drachenstein ergibt 4 Samen, das sind 4 Heimwege. Der Samen bringt dich zum Spawnpunkt der Welt, nicht zu deinem Bett.",
+   "Weltsamen sind nicht gesperrt: Sobald du Drachenstein hast ({{alfheim/dragonstone}}), kannst du sie craften."
+  ],
+  "en": [
+   "One dragonstone makes 4 seeds, which is 4 trips home. The seed takes you to the world spawn, not your bed.",
+   "World Seeds are not locked: as soon as you have dragonstone ({{alfheim/dragonstone}}) you can craft them."
+  ],
+  "sources": [
+   "botania:world_seed (G/S/D, 4)",
+   "botania lang: botania.page.worldSeed0",
+   "helpq: botania:world_seed stage=1"
+  ]
+ }
+}

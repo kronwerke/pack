@@ -1,0 +1,842 @@
+{
+ "welcome": {
+  "de": [
+   "Der Weg durch das Kapitel: Blütenblätter, {{botania/apothecary}}, {{botania/pure_daisy}} für Lebeholz und Lebestein, dann Verbreiter, Becken und Endoflammen. EMI zeigt alle Rezepte von Botania, auch die der Apotheke, des Reinen Gänseblümchens und der Manainfusion.",
+   "Botania zahlt in den Magie-Meilenstein von Stufe 1 ein: Jeder [[kronwerke:source_keystone]] braucht 2 [[botania:mana_diamond]], siehe {{start_here/m_keystone}}."
+  ],
+  "en": [
+   "The path through the chapter: petals, {{botania/apothecary}}, {{botania/pure_daisy}} for livingwood and livingrock, then spreaders, pools and Endoflames. EMI shows every Botania recipe, including those of the apothecary, the Pure Daisy and mana infusion.",
+   "Botania feeds the stage 1 magic milestone: every [[kronwerke:source_keystone]] needs 2 [[botania:mana_diamond]], see {{start_here/m_keystone}}."
+  ],
+  "sources": [
+   "botania:lexica_botania (book + #minecraft:saplings)",
+   "kronwerke:milestones/source_keystone (pattern SJS/DAD/SGS)",
+   "botania jar: vazkii/botania/client/integration/emi (PureDaisyEmiRecipe)"
+  ]
+ },
+ "petals": {
+  "de": [
+   "Eine Mystische Blume gibt 2 Blütenblätter, eine hohe 4, und 9 gleiche Blätter packst du zu einem Blütenblock zusammen (und wieder zurück). Für den Start brauchst du 4 weiße für das {{botania/pure_daisy}} und für die {{botania/endoflame}} 2 braune, 1 rotes und 1 hellgraues.",
+   "Übrige Blätter werden an der Werkbank 1 zu 1 zu Farbstoff, im Create-Mahlstein genauso. Fehlt dir eine Farbe, vergrab ein Blatt dieser Farbe und gib Knochenmehl darauf."
+  ],
+  "en": [
+   "A mystical flower gives 2 petals, a tall one 4, and 9 petals of one colour pack into a petal block (and back). To start you need 4 white ones for the {{botania/pure_daisy}} and 2 brown, 1 red and 1 light gray for the {{botania/endoflame}}.",
+   "Spare petals turn into dye 1 to 1 at the crafting table, and the same in the Create millstone. If you lack a colour, bury a petal of it and use bone meal on it."
+  ],
+  "sources": [
+   "botania:white_mystical_petal_from_white_mystical_flower (2), ..._from_white_tall_mystical_flower (4), botania:white_petal_block",
+   "botania:dye_white, create:milling/compat/botania/white_petal",
+   "botania lang: botania.page.flowers2, botania.page.flowers18"
+  ]
+ },
+ "fertilizer": {
+  "de": [
+   "Ein Rezept gibt genau einen [[botania:floral_fertilizer]], für die 4 Stück brauchst du also 4 Knochenmehl und 16 Farbstoffe. Den Farbstoff machst du am besten aus Blütenblättern, die du übrig hast, so werden Reste zu Blumen in allen Farben.",
+   "Je nach Boden lässt der Dünger laut Lexica neben oder statt Blumen auch Schillernde Pilze wachsen. Nackte Erde machst du vorher mit {{botania/pasture_seeds}} zu Gras."
+  ],
+  "en": [
+   "One craft gives exactly one [[botania:floral_fertilizer]], so the 4 need 4 bone meal and 16 dyes. Make the dye from spare petals, that way leftovers become flowers of every colour.",
+   "Depending on the soil, the Lexica says the fertilizer also grows Shimmering Mushrooms next to or instead of flowers. Turn bare dirt into grass first with {{botania/pasture_seeds}}."
+  ],
+  "sources": [
+   "botania:floral_fertilizer (1x bone meal + 4x #c:dyes, count 1)",
+   "botania:dye_white",
+   "botania lang: botania.page.flowers6"
+  ]
+ },
+ "pouch": {
+  "de": [
+   "Jede Wolle und jedes Blütenblatt geht. Der [[botania:flower_pouch]] nimmt auch hohe Mystische Blumen auf, je Farbe einen Stapel.",
+   "Er speichert ganze Blumen. Willst du gleich Blätter, nimm den {{botania/petal_pouch}}, der braucht zusätzlich ein Manapuder aus dem Becken."
+  ],
+  "en": [
+   "Any wool and any petal works. The [[botania:flower_pouch]] also takes tall mystical flowers, one stack per colour.",
+   "It stores whole flowers. If you want petals right away, take the {{botania/petal_pouch}}, which also needs a mana powder from the pool."
+  ],
+  "sources": [
+   "botania:flower_pouch (WPW/W W/ W , #minecraft:wool, #botania:petals)",
+   "botania lang: botania.page.flowerBag0"
+  ]
+ },
+ "mushrooms": {
+  "de": [
+   "Der [[botania:white_shimmering_mushroom]] entsteht **an der Werkbank**: ein roter oder brauner Pilz und ein Farbstoff, formlos. Für jede Farbe gibt es so ein Rezept.",
+   "Normale Pilze findest du in Sümpfen, dunklen Wäldern und Höhlen. Schillernde Pilze wachsen außerdem selten wild tief unter der Erde, und der {{botania/fertilizer}} lässt sie je nach Boden sprießen."
+  ],
+  "en": [
+   "The [[botania:white_shimmering_mushroom]] is made **at the crafting table**: a red or brown mushroom and a dye, shapeless. There is one such recipe per colour.",
+   "Plain mushrooms grow in swamps, dark forests and caves. Shimmering Mushrooms also grow wild in rare patches deep underground, and {{botania/fertilizer}} can sprout them depending on the soil."
+  ],
+  "sources": [
+   "botania:white_shimmering_mushroom (shapeless: [red_mushroom | brown_mushroom] + white_dye)",
+   "botania jar: data/botania/worldgen/configured_feature/shimmering_mushrooms.json",
+   "botania lang: botania.page.mushrooms0, botania.page.flowers6"
+  ],
+  "client": [
+   "Whether right-clicking a mushroom with dye does anything (the quest text says so; no such handler found in the Botania jar, the only recipe is shapeless crafting)"
+  ]
+ },
+ "apothecary": {
+  "de": [
+   "Als Samen zählt alles aus dem Tag c:seeds und Netherwarze. Die 16 [[minecraft:wheat_seeds]] der Belohnung reichen also für 16 Blumen.",
+   "Wasser bekommt sie per Rechtsklick mit dem Eimer oder indem du einen Wassereimer hineinwirfst, so kann auch ein Werfer nachfüllen. Ein Komparator liest den Füllstand. Wer keine Eimer schleppen will, baut die {{botania/urn}}."
+  ],
+  "en": [
+   "Anything in the c:seeds tag counts as the seed, and so does nether wart. The 16 [[minecraft:wheat_seeds]] of the reward are enough for 16 flowers.",
+   "It takes water by right-clicking with a bucket or by throwing a water bucket in, so a dispenser can refill it too. A comparator reads how full it is. If you do not want to carry buckets, build the {{botania/urn}}."
+  ],
+  "sources": [
+   "botania:petal_apothecary (CPC/ C /CCC)",
+   "botania jar: data/botania/tags/item/seed_apothecary_reagent.json (nether_wart, #c:seeds)",
+   "botania lang: botania.page.apothecary2, botania.page.apothecary7"
+  ]
+ },
+ "pure_daisy": {
+  "de": [
+   "Nur echter [[minecraft:stone]] wird zu [[botania:livingrock]]. Andesit, Granit, Diorit, Tiefenschiefer und Bruchstein bleiben, wie sie sind. Stein bekommst du aus dem Ofen oder mit Behutsamkeit.",
+   "Als Holz geht jeder Stamm aus dem Tag minecraft:logs, auch aus anderen Mods. Das Gänseblümchen braucht kein Mana, du kannst es überall hinstellen. Lebestein brauchst du auch für den Natural Altar ({{start_here/m_livingrock}})."
+  ],
+  "en": [
+   "Only real [[minecraft:stone]] becomes [[botania:livingrock]]. Andesite, granite, diorite, deepslate and cobblestone stay as they are. Get stone from a furnace or with Silk Touch.",
+   "For wood any log in the minecraft:logs tag works, also from other mods. The daisy needs no mana, so you can place it anywhere. You also need livingrock for the Natural Altar ({{start_here/m_livingrock}})."
+  ],
+  "sources": [
+   "botania:petal_apothecary/pure_daisy (4x #botania:petals/white + seed)",
+   "botania:pure_daisy/livingrock (minecraft:stone), botania:pure_daisy/livingwood_log (#minecraft:logs)"
+  ]
+ },
+ "daisy_more": {
+  "de": [
+   "[[minecraft:dripstone_block]] findest du in Tropfsteinhöhlen, oder du craftest ihn aus 4 Spitzen Tropfsteinen im Quadrat.",
+   "Außer den Rezepten im Questtext macht das Gänseblümchen aus Endstein Bruchtiefenschiefer. Das wird erst mit dem End in Stufe 4 interessant."
+  ],
+  "en": [
+   "You find [[minecraft:dripstone_block]] in dripstone caves, or craft it from 4 pointed dripstone in a square.",
+   "Besides the recipes in the quest text, the daisy turns end stone into cobbled deepslate. That only matters once the End opens in stage 4."
+  ],
+  "sources": [
+   "botania:pure_daisy/calcite (dripstone_block), botania:pure_daisy/cobbled_deepslate (end_stone)",
+   "docs/STAGES.md (the End in stage 4)"
+  ]
+ },
+ "livingwood": {
+  "de": [
+   "Ein [[botania:livingwood_log]] gibt an der Werkbank 4 [[botania:livingwood_planks]]. Entrindet in der Create-Säge gibt er 6, das lohnt sich für die 7 Bretter der {{botania/open_crate}}.",
+   "Stämme stecken außerdem in der Verbreiter-Drehscheibe (8), dem Lebeholz-Avatar (5), dem Horn der Wildnis (5) und der Trommel der Wildnis (6)."
+  ],
+  "en": [
+   "A [[botania:livingwood_log]] gives 4 [[botania:livingwood_planks]] at the crafting table. Stripped and cut in the Create saw it gives 6, worth it for the 7 planks of the {{botania/open_crate}}.",
+   "Logs also go into the Spreader Turntable (8), the Livingwood Avatar (5), the Horn of the Wild (5) and the Drum of the Wild (6)."
+  ],
+  "sources": [
+   "botania:livingwood_planks (4), create:cutting/runtime_generated/compat/botania/stripped_livingwood_log_to_livingwood_planks (6)",
+   "botania:spreader_turntable, botania:livingwood_avatar, botania:horn_of_the_wild, botania:drum_of_the_wild"
+  ]
+ },
+ "livingrock": {
+  "de": [
+   "Rechne in Stufe 1 mit 5 pro {{botania/pool}}, 6 für die Manaleere, 4 für den Manasensor und 3 für das Ritual des Natural Altar ({{start_here/m_altar}}).",
+   "Den Stein liefert ein Ofen mit Bruchstein. Ein Bruchsteingenerator ({{create/cobble_gen}}) plus Ofen hält mehrere Gänseblümchen am Laufen."
+  ],
+  "en": [
+   "In stage 1 count on 5 per {{botania/pool}}, 6 for the Mana Void, 4 for the Mana Detector and 3 for the Natural Altar ritual ({{start_here/m_altar}}).",
+   "A furnace with cobblestone supplies the stone. A cobblestone generator ({{create/cobble_gen}}) plus a furnace keeps several daisies busy."
+  ],
+  "sources": [
+   "botania:mana_pool, botania:mana_void, botania:mana_detector",
+   "kronwerke:round/naturesaura_tree_ritual_nature_altar (3x livingrock)",
+   "kronwerke:magic/runic_altar, botania:mana_tablet"
+  ]
+ },
+ "twig": {
+  "de": [
+   "Die zwei [[botania:livingwood_log]] liegen **schräg**: einer oben rechts, einer unten links, nicht übereinander. Ein Rezept gibt nur einen [[botania:livingwood_twig]].",
+   "Du brauchst 3 für den {{botania/wand}}, 3 für den {{botania/livingwood_bow}}, 4 für die Rute des üppigen Mantels und 2 für das Manastahl-Ritual ({{botania/manasteel_prep}})."
+  ],
+  "en": [
+   "The two [[botania:livingwood_log]] go **diagonally**: one top right, one bottom left, not stacked. One craft gives a single [[botania:livingwood_twig]].",
+   "You need 3 for the {{botania/wand}}, 3 for the {{botania/livingwood_bow}}, 4 for the Rod of the Plentiful Mantle and 2 for the manasteel ritual ({{botania/manasteel_prep}})."
+  ],
+  "sources": [
+   "botania:livingwood_twig (pattern \" W\",\"W \", count 1)",
+   "botania:wand_of_the_forest, botania:livingwood_bow, botania:rod_of_the_plentiful_mantle, kronwerke:magic/manasteel_ritual"
+  ]
+ },
+ "wand": {
+  "de": [
+   "Erzeugende Blumen binden sich beim Pflanzen von selbst an den nächsten Verbreiter in 6 Blöcken, Funktionsblumen an das nächste Becken in 10 Blöcken.",
+   "Hängt eine Blume am falschen Ziel, bindest du sie im Bindemodus neu: Schleich-Rechtsklick auf die Blume, dann auf den Verbreiter oder das Becken."
+  ],
+  "en": [
+   "Generating flowers bind themselves to the nearest spreader within 6 blocks when planted, functional flowers to the nearest pool within 10 blocks.",
+   "If a flower is bound to the wrong target, rebind it in Bind Mode: sneak right-click the flower, then the spreader or pool."
+  ],
+  "sources": [
+   "botania:wand_of_the_forest (pattern \" PS\",\" SP\",\"S  \")",
+   "botania jar: GeneratingFlowerBlockEntity.LINK_RANGE = 6, FunctionalFlowerBlockEntity.LINK_RANGE = 10, BindableSpecialFlowerBlockEntity implements WandBindable",
+   "botania lang: botania.page.wand1"
+  ]
+ },
+ "deco": {
+  "de": [
+   "Am schnellsten geht es im Steinschneider: 1 Lebestein gibt 1 [[botania:livingrock_bricks]]. An der Werkbank brauchst du den Umweg über 4 Lebestein zu 4 [[botania:polished_livingrock]], dann 4 davon zu 4 Ziegeln.",
+   "Ziegel und eine Ranke oder ein Moosblock ergeben [[botania:mossy_livingrock_bricks]]."
+  ],
+  "en": [
+   "The stonecutter is fastest: 1 livingrock gives 1 [[botania:livingrock_bricks]]. At the crafting table you go via 4 livingrock to 4 [[botania:polished_livingrock]], then 4 of those to 4 bricks.",
+   "Bricks plus a vine or a moss block give [[botania:mossy_livingrock_bricks]]."
+  ],
+  "sources": [
+   "botania:stonecutting/livingrock_to_livingrock_bricks, botania:polished_livingrock, botania:livingrock_bricks",
+   "botania:mossy_livingrock_bricks_vine, botania:mossy_livingrock_bricks"
+  ]
+ },
+ "gen_intro": {
+  "de": [
+   "Eine erzeugende Blume bindet sich nur an einen Verbreiter in höchstens 6 Blöcken. Steht keiner in Reichweite, bleibt ihr Mana in der Blume.",
+   "Für Dauerbetrieb nimm die {{botania/endoflame}}, die {{botania/hydroangeas}} verwelkt nach einer Stunde. Alle Blumen mit ihren Werten vergleicht {{botania_runes/gen_table}}."
+  ],
+  "en": [
+   "A generating flower only binds to a spreader within 6 blocks. With none in range, its mana stays in the flower.",
+   "For steady output use the {{botania/endoflame}}, the {{botania/hydroangeas}} withers after an hour. {{botania_runes/gen_table}} compares all flowers and their numbers."
+  ],
+  "sources": [
+   "botania jar: GeneratingFlowerBlockEntity.LINK_RANGE = 6, HydroangeasBlockEntity.DECAY_TIME = 72000"
+  ]
+ },
+ "endoflame": {
+  "de": [
+   "Sie nimmt jedes brennbare Item, das in 3 Blöcken Umkreis auf dem Boden liegt, auch Setzlinge und Stöcke aus einer Baumfarm daneben. Ist ihr Puffer von 300 Mana voll, nimmt sie nichts mehr: Ohne Verbreiter, der in ein Becken mit Platz schießt, steht sie still.",
+   "Welcher Brennstoff wie viel bringt, steht in {{botania/endo_fuel}}. Im Kapitel Farmen gibt es dazu {{farms/mana_endoflame}}."
+  ],
+  "en": [
+   "It takes any burnable item lying on the ground within 3 blocks, including saplings and sticks from a tree farm next to it. Once its 300 mana buffer is full it takes nothing more: without a spreader firing into a pool with room, it stands still.",
+   "Which fuel gives how much is in {{botania/endo_fuel}}. The Farms chapter has {{farms/mana_endoflame}} for it."
+  ],
+  "sources": [
+   "botania:petal_apothecary/endoflame",
+   "botania jar: EndoflameBlockEntity (RANGE 3, FUEL_CAP 32000, COOLDOWN_TIME 40, getMaxMana 300)"
+  ]
+ },
+ "endo_fuel": {
+  "de": [
+   "[[minecraft:charcoal]] machst du im Ofen aus Stämmen oder am Band mit dem Create-Lüfter ({{farms/wood_charcoal}}). Ein Stück brennt 40 Sekunden plus 2 Sekunden Pause, eine Endoflamme schluckt also rund 86 Holzkohle pro Stunde.",
+   "Ein Kohleblock ist das Maximum: Mehr als 32 000 Ticks Ofenbrennzeit pro Stück verfallen. Lavaeimer nimmt sie nicht, weil ein Eimer übrig bliebe."
+  ],
+  "en": [
+   "Make [[minecraft:charcoal]] from logs in a furnace or on a belt with the Create fan ({{farms/wood_charcoal}}). One piece burns 40 seconds plus a 2 second pause, so one Endoflame eats about 86 charcoal per hour.",
+   "A coal block is the limit: furnace burn time above 32,000 ticks per item is lost. It refuses lava buckets because a bucket would be left over."
+  ],
+  "sources": [
+   "minecraft:charcoal (smelting #minecraft:logs_that_burn)",
+   "botania jar: EndoflameBlockEntity (FUEL_CAP 32000, COOLDOWN_TIME 40)",
+   "botania lang: botania.page.endoflame0, botania.page.endoflame1"
+  ]
+ },
+ "hydroangeas": {
+  "de": [
+   "Sie trinkt nur stilles Wasser in dem 3 mal 3 Feld um sich, auf ihrer Höhe. Nach 72 000 Ticks ist sie weg, dann pflanzt du eine neue (2 blaue, 2 türkise Blätter, 1 Samen).",
+   "Der tote Busch, der übrig bleibt, ist der Rohstoff für {{botania/boreal_seeds}}. Für Mana ohne Aufsicht ist die {{botania/endoflame}} mit Holzkohle die bessere Wahl."
+  ],
+  "en": [
+   "It only drinks still water in the 3 by 3 area around it, at its own height. After 72,000 ticks it is gone, so plant a new one (2 blue, 2 cyan petals, 1 seed).",
+   "The dead bush left behind is the input for {{botania/boreal_seeds}}. For mana without supervision, the {{botania/endoflame}} with charcoal is the better choice."
+  ],
+  "sources": [
+   "botania:petal_apothecary/hydroangeas",
+   "botania jar: HydroangeasBlockEntity.DECAY_TIME = 72000",
+   "botania lang: botania.page.hydroangeas0",
+   "botania:mana_infusion/boreal_seeds (dead_bush)"
+  ]
+ },
+ "spreader": {
+  "de": [
+   "Auf Kronwerke braucht der Verbreiter ein [[create:copper_sheet]] statt eines Kupferbarrens. Das Blech presst die Mechanische Presse ({{create/sheets}}).",
+   "Blumen binden sich an den nächsten Verbreiter in 6 Blöcken. Mehrere Verbreiter dürfen in dasselbe Becken schießen. Stell einen Verbreiter direkt neben ein Becken, saugt er sich daraus voll."
+  ],
+  "en": [
+   "On Kronwerke the spreader needs a [[create:copper_sheet]] instead of a copper ingot. Make the sheet with the Mechanical Press ({{create/sheets}}).",
+   "Flowers bind to the nearest spreader within 6 blocks. Several spreaders may fire into the same pool. A spreader placed right next to a pool fills itself from it."
+  ],
+  "sources": [
+   "kubejs/server_scripts/kronwerke/round.js (botania:mana_spreader: #c:ingots/copper -> create:copper_sheet)",
+   "botania:mana_spreader (WWW/CP /WWW)",
+   "create:copper_sheet (createdieselgenerators:hammering/copper_sheet)",
+   "botania lang: botania.page.pool0"
+  ]
+ },
+ "open_crate": {
+  "de": [
+   "Das Muster ist ein **umgedrehtes U**: oben drei [[botania:livingwood_planks]], darunter links und rechts je zwei. Ein Lebeholzstamm gibt 4 Bretter, du brauchst also 2 Stämme.",
+   "Bekommt die Kiste ein Redstone-Signal, ignorieren Trichtermalve, Rannawurzel und Pollidisie die abgeworfenen Items rund zehn Sekunden länger. Für den Aufbau mit Endoflammen siehe {{botania/endo_auto}}."
+  ],
+  "en": [
+   "The pattern is an **upside-down U**: three [[botania:livingwood_planks]] on top, two on the left and two on the right below. A livingwood log gives 4 planks, so you need 2 logs.",
+   "With a redstone signal on the crate, Hopperhock, Rannuncarpus and Pollidisiac ignore the dropped items about ten seconds longer. For the Endoflame setup see {{botania/endo_auto}}."
+  ],
+  "sources": [
+   "botania:open_crate (WWW/W W/W W)",
+   "botania:livingwood_planks (4)",
+   "botania lang: botania.page.openCrate1"
+  ]
+ },
+ "endo_auto": {
+  "de": [
+   "Der Haken ist eine Selbstbestätigung. Wichtig ist: Die Abwurfstelle muss höchstens 3 Blöcke von jeder Endoflamme entfernt sein, die sie füttern soll.",
+   "Jede Endoflamme nimmt nur ein Stück auf einmal, bei Kohle etwa eins alle 42 Sekunden. Ein Trichter ohne Bremse wirft viel schneller, deshalb die Druckplatte oder ein Taktgeber, wie die Lexica rät."
+  ],
+  "en": [
+   "The tick is self-confirmed. What matters: the drop point must be at most 3 blocks from every Endoflame it is meant to feed.",
+   "Each Endoflame takes one item at a time, about one every 42 seconds for coal. An unbraked hopper drops much faster, hence the pressure plate or a timer, as the Lexica suggests."
+  ],
+  "sources": [
+   "botania jar: EndoflameBlockEntity (RANGE 3, COOLDOWN_TIME 40)",
+   "botania lang: botania.page.endoflame3"
+  ]
+ },
+ "pool": {
+  "de": [
+   "Das {{botania/farm}} zählt genau dieses große Becken. Die ersten Infusionen sind [[botania:managlass]] (150 Mana), Faden (1 250) und Diamant (10 000).",
+   "Die Farbe wäschst du auch in einem Wasserkessel ab. In Stufe 2 macht ein Becken auf einem Messinggehäuse Manaperlen ({{botania_runes/mana_pearl}})."
+  ],
+  "en": [
+   "The {{botania/farm}} counts exactly this big pool. The first infusions are [[botania:managlass]] (150 mana), string (1,250) and diamond (10,000).",
+   "You can also wash the colour off in a water cauldron. In stage 2 a pool on a brass casing makes mana pearls ({{botania_runes/mana_pearl}})."
+  ],
+  "sources": [
+   "botania:mana_pool (R R/RRR)",
+   "botania:mana_infusion/managlass, botania:mana_infusion/mana_string, botania:mana_infusion/mana_diamond",
+   "kubejs/server_scripts/kronwerke/magic.js (kronwerke:magic/mana_pearl, catalyst create:brass_casing)",
+   "botania lang: botania.page.pool8"
+  ]
+ },
+ "diluted_pool": {
+  "de": [
+   "Die Stufen machst du am besten im Steinschneider: 1 Lebestein gibt 2 [[botania:livingrock_slab]], das Becken kostet also nur 3 Lebestein. An der Werkbank geben 3 Lebestein 6 Stufen.",
+   "Es zählt nicht für {{botania/farm}}, dort muss es das große {{botania/pool}} sein."
+  ],
+  "en": [
+   "Make the slabs in the stonecutter: 1 livingrock gives 2 [[botania:livingrock_slab]], so the pool costs just 3 livingrock. At the crafting table 3 livingrock give 6 slabs.",
+   "It does not count for {{botania/farm}}, which needs the big {{botania/pool}}."
+  ],
+  "sources": [
+   "botania:diluted_mana_pool (R R/RRR of livingrock_slab)",
+   "botania:stonecutting/livingrock_to_livingrock_slab (2), botania:livingrock_slab (6)"
+  ]
+ },
+ "manastar": {
+  "de": [
+   "Der [[botania:manastar]] ist eine der drei Vorbedingungen für {{botania/farm}}.",
+   "Zeigt er Rot, obwohl die Blumen laufen, prüf mit dem Stab, ob alle Verbreiter auf das Becken zielen."
+  ],
+  "en": [
+   "The [[botania:manastar]] is one of the three prerequisites of {{botania/farm}}.",
+   "If it shows red while the flowers run, check with the wand that every spreader aims at the pool."
+  ],
+  "sources": [
+   "botania:petal_apothecary/manastar",
+   "tools/quests/chapters/botania.py (farm deps: pool, manastar, endo_auto)"
+  ]
+ },
+ "pulse_spreader": {
+  "de": [
+   "Formlos: ein fertiger [[botania:mana_spreader]] und ein Redstone. Du brauchst ihn für die {{botania/drum}}, die selbst kein Mana speichert.",
+   "In Stufe 2 bekommt er Linsen: {{botania_runes/mana_lens}} und {{botania_runes/lenses_tool}}."
+  ],
+  "en": [
+   "Shapeless: a finished [[botania:mana_spreader]] and one redstone. You need it for the {{botania/drum}}, which stores no mana itself.",
+   "In stage 2 it takes lenses: {{botania_runes/mana_lens}} and {{botania_runes/lenses_tool}}."
+  ],
+  "sources": [
+   "botania:pulse_mana_spreader (mana_spreader + #c:dusts/redstone)",
+   "botania lang: botania.page.forestDrum1"
+  ]
+ },
+ "turntable": {
+  "de": [
+   "Den Klebrigen Kolben craftest du aus einem Kolben und einem Schleimball. Die [[botania:spreader_turntable]] kostet 8 Lebeholzstämme, das ist mehr als der Verbreiter selbst.",
+   "Ein Werfer mit dem Stab des Waldes an der Seite ändert das Tempo, einer von unten die Richtung."
+  ],
+  "en": [
+   "Craft the sticky piston from a piston and a slimeball. The [[botania:spreader_turntable]] costs 8 livingwood logs, more than the spreader itself.",
+   "A dispenser holding a Wand of the Forest on its side changes the speed, one from below changes the direction."
+  ],
+  "sources": [
+   "botania:spreader_turntable (WWW/WPW/WWW)",
+   "botania lang: botania.page.turntable2"
+  ]
+ },
+ "detector": {
+  "de": [
+   "Die [[minecraft:target]] craftest du aus einem Heuballen und 4 Redstone. Für den Sensor brauchst du also insgesamt 8 Redstone.",
+   "Häng den Sensor zwischen Verbreiter und Becken, die Stöße fliegen ungestört hindurch."
+  ],
+  "en": [
+   "Craft the [[minecraft:target]] from a hay bale and 4 redstone, so the detector takes 8 redstone in total.",
+   "Put the detector between spreader and pool, the bursts fly through it unhindered."
+  ],
+  "sources": [
+   "botania:mana_detector (RSR/STS/RSR)",
+   "botania lang: botania.page.manaDetector0"
+  ]
+ },
+ "mana_void": {
+  "de": [
+   "Obsidian bekommst du mit Diamant- oder Netherit-Spitzhacke aus Lava und Wasser. Die [[botania:mana_void]] kommt direkt unter das Becken.",
+   "Sinnvoll ist das bei einer Farm, die mehr erzeugt, als du brauchst: Ohne Leere stoppen die Endoflammen bei vollem Becken, mit Leere verbrennen sie weiter."
+  ],
+  "en": [
+   "Mine obsidian from lava and water with a diamond or netherite pickaxe. The [[botania:mana_void]] goes directly under the pool.",
+   "It makes sense for a farm that produces more than you use: without a void the Endoflames stop at a full pool, with one they keep burning."
+  ],
+  "sources": [
+   "botania:mana_void (SSS/O O/SSS)",
+   "botania lang: botania.page.manaVoid0",
+   "botania jar: ManaPoolBlockEntity.isFull (checks BotaniaBlocks.MANA_VOID)"
+  ]
+ },
+ "managlass": {
+  "de": [
+   "Es zählt nur farbloses Glas (Tag c:glass_blocks/colorless), gefärbtes Glas bleibt liegen. Glas schmilzt du aus Sand.",
+   "Aus [[botania:managlass]] werden Managlasscheiben (16 pro Rezept), die Managlasphiolen der Brauerei und das Manaseher-Monokel. In Stufe 3 tauschst du es in Alfheim gegen Elfenglas ({{alfheim/alfglass}})."
+  ],
+  "en": [
+   "Only colourless glass counts (tag c:glass_blocks/colorless), stained glass stays in the pool. Smelt glass from sand.",
+   "[[botania:managlass]] makes managlass panes (16 per craft), the managlass vials of the brewery and the Manaseer Monocle. In stage 3 you trade it for alfglass in Alfheim ({{alfheim/alfglass}})."
+  ],
+  "sources": [
+   "botania:mana_infusion/managlass (#c:glass_blocks/colorless, 150)",
+   "botania:managlass_pane, botania:managlass_vial, botania:manaseer_monocle, botania:elven_trade/alfglass"
+  ]
+ },
+ "mana_powder": {
+  "de": [
+   "Neben Farbstoff (400 Mana) gehen Schwarzpulver, Redstone, Zucker und auch Glowstonestaub für je 500 Mana. Am billigsten sind Blütenblätter: Werkbank macht Farbstoff, das Becken Puder.",
+   "Den Zucker der Belohnung bekommst du aus dem Zuckerrohr. Ein Puder steckt im {{botania/petal_pouch}}."
+  ],
+  "en": [
+   "Besides dye (400 mana), gunpowder, redstone, sugar and glowstone dust work for 500 mana each. Petals are cheapest: the crafting table makes dye, the pool makes powder.",
+   "The reward's sugar cane gives the sugar. One powder goes into the {{botania/petal_pouch}}."
+  ],
+  "sources": [
+   "botania:mana_infusion/mana_powder_from_dye (400), botania:mana_infusion/mana_powder_from_dust (500)",
+   "botania jar: data/botania/tags/item/mana_powder_source_dusts.json (gunpowder, redstone, glowstone_dust, sugar)",
+   "botania:petal_pouch (WPW/WDW/ W , #c:dusts/mana)"
+  ]
+ },
+ "petal_pouch": {
+  "de": [
+   "Das Muster ist das des Blumenbeutels, nur mit [[botania:mana_powder]] im Loch in der Mitte. Er hält Blütenblätter und Schillernde Pilze.",
+   "Das Puder kostet dich einen Farbstoff und 400 Mana im Becken ({{botania/mana_powder}})."
+  ],
+  "en": [
+   "The pattern is the flower pouch with [[botania:mana_powder]] in the hole in the middle. It holds petals and shimmering mushrooms.",
+   "The powder costs one dye and 400 mana in the pool ({{botania/mana_powder}})."
+  ],
+  "sources": [
+   "botania:petal_pouch (WPW/WDW/ W )",
+   "botania lang: botania.page.petalPouch0"
+  ]
+ },
+ "mana_string": {
+  "de": [
+   "Die 8 Fäden kosten zusammen 10 000 Mana, wirf sie also erst in ein gut gefülltes Becken.",
+   "Ein [[botania:mana_string]] steckt in Managewebestoff (4 pro Tuch) und im {{botania/livingwood_bow}} (3). Faden bekommst du von Spinnen oder aus Spinnweben."
+  ],
+  "en": [
+   "The 8 strings cost 10,000 mana together, so throw them into a well filled pool.",
+   "[[botania:mana_string]] goes into manaweave cloth (4 per cloth) and the {{botania/livingwood_bow}} (3). Get string from spiders or cobwebs."
+  ],
+  "sources": [
+   "botania:mana_infusion/mana_string (1250)",
+   "botania:manaweave_cloth (SS/SS), botania:livingwood_bow"
+  ]
+ },
+ "manaweave": {
+  "de": [
+   "Für die ganze Magierrobe brauchst du 24 [[botania:manaweave_cloth]]: Kapuze 5, Oberteil 8, Unterteil 7, Stiefel 4. Das sind 96 Fäden und 120 000 Mana.",
+   "Zwei Tücher mehr kostet der {{botania/teru_teru}}."
+  ],
+  "en": [
+   "The full manaweave set needs 24 [[botania:manaweave_cloth]]: cowl 5, robe top 8, robe bottom 7, boots 4. That is 96 strings and 120,000 mana.",
+   "The {{botania/teru_teru}} takes two more cloths."
+  ],
+  "sources": [
+   "botania:manaweave_cloth (SS/SS)",
+   "botania:manaweave_helmet, botania:manaweave_chestplate, botania:manaweave_leggings, botania:manaweave_boots",
+   "botania:teru_teru_bozu"
+  ]
+ },
+ "manaweave_robe": {
+  "de": [
+   "Das [[botania:manaweave_chestplate]] ist mit 8 Tüchern das teuerste Teil, die anderen drei folgen in {{botania/manaweave_set}}.",
+   "Die Manatafel für die Reparatur gibt es in {{botania_runes/mana_tablet}}."
+  ],
+  "en": [
+   "The [[botania:manaweave_chestplate]] is the most expensive piece at 8 cloths, the other three follow in {{botania/manaweave_set}}.",
+   "The mana tablet for repairs comes in {{botania_runes/mana_tablet}}."
+  ],
+  "sources": [
+   "botania:manaweave_chestplate (S S/SSS/SSS)"
+  ]
+ },
+ "livingwood_bow": {
+  "de": [
+   "Die drei [[botania:livingwood_twig]] bilden die linke Bogenseite, die drei [[botania:mana_string]] die Sehne rechts, wie beim normalen Bogen.",
+   "Zusammen kostet der Bogen 3 750 Mana für die Fäden und 6 Lebeholzstämme für die Zweige."
+  ],
+  "en": [
+   "The three [[botania:livingwood_twig]] form the left side of the bow and the three [[botania:mana_string]] the string on the right, as with a normal bow.",
+   "Altogether the bow costs 3,750 mana for the strings and 6 livingwood logs for the twigs."
+  ],
+  "sources": [
+   "botania:livingwood_bow (\" TS\",\"T S\",\" TS\")",
+   "botania:mana_infusion/mana_string (1250), botania:livingwood_twig"
+  ]
+ },
+ "mana_diamond": {
+  "de": [
+   "Ein Diamantblock im Becken spart Mana: 90 000 statt 9 mal 10 000, und der [[botania:mana_diamond_block]] zerfällt an der Werkbank wieder in 9 Manadiamanten.",
+   "Der Server braucht 12 Quellschlusssteine, also 24 Manadiamanten, siehe {{start_here/m_manadiamond}}. In Stufe 2 kostet jeder Terrastahlbarren einen und jede der sieben Sündenrunen zwei."
+  ],
+  "en": [
+   "A diamond block saves mana: 90,000 instead of 9 times 10,000, and the [[botania:mana_diamond_block]] splits back into 9 mana diamonds at the crafting table.",
+   "The server needs 12 Source Keystones, so 24 mana diamonds, see {{start_here/m_manadiamond}}. In stage 2 every terrasteel ingot costs one and each of the seven sin runes two."
+  ],
+  "sources": [
+   "botania:mana_infusion/mana_diamond (10000), botania:mana_infusion/mana_diamond_block (90000), botania:mana_diamond_from_mana_diamond_block",
+   "config/kronwerke/goals.json (kronwerke:source_keystone base 12, fixed)",
+   "kronwerke:milestones/source_keystone (2x mana_diamond)",
+   "botania:terrestrial_agglomeration_plate/terrasteel_ingot, botania:runic_altar/rune_of_pride and the other sin runes"
+  ]
+ },
+ "tiny_potato": {
+  "de": [
+   "Ganz nutzlos ist sie nicht: Mit Lexica, Papier und einem Terrastahlbarren wird sie zu einer Botania-Bannervorlage (die Lexica bekommst du zurück).",
+   "Acht von ihnen um einen Manainfundierten Faden ergeben die kosmetische Nachdenk-Hand."
+  ],
+  "en": [
+   "It is not entirely useless: with the Lexica, paper and a terrasteel ingot it makes the Botania banner pattern (you get the Lexica back).",
+   "Eight of them around a mana infused string make the cosmetic Thinking Hand."
+  ],
+  "sources": [
+   "botania:botania_banner_pattern (crafting_shapeless_lexicon_return)",
+   "botania:cosmetic_thinking_hand (PPP/PSP/PPP)"
+  ]
+ },
+ "pasture_seeds": {
+  "de": [
+   "[[minecraft:short_grass]] wächst, wenn du Knochenmehl auf Grasblöcke streust. Ernten musst du es mit der Schere, sonst gibt es höchstens Weizensamen.",
+   "Ein Weidesamen steckt im {{botania/horn}}."
+  ],
+  "en": [
+   "[[minecraft:short_grass]] grows when you use bone meal on grass blocks. Harvest it with shears, otherwise you get wheat seeds at most.",
+   "One pasture seed goes into the {{botania/horn}}."
+  ],
+  "sources": [
+   "botania:mana_infusion/pasture_seeds (short_grass, 2500)",
+   "botania:horn_of_the_wild"
+  ]
+ },
+ "boreal_seeds": {
+  "de": [
+   "[[minecraft:dead_bush]] gibt es in Wüsten und Tafelbergen, abgebaut aber nur mit der Schere, sonst fallen Stöcke. Bequemer: Jede verwelkte {{botania/hydroangeas}} hinterlässt einen.",
+   "Die [[botania:infestation_spores]] nehmen jeden Pilz aus dem Tag c:mushrooms."
+  ],
+  "en": [
+   "[[minecraft:dead_bush]] grows in deserts and badlands, but drops itself only with shears, otherwise sticks. Easier: every withered {{botania/hydroangeas}} leaves one.",
+   "The [[botania:infestation_spores]] take any mushroom in the c:mushrooms tag."
+  ],
+  "sources": [
+   "botania:mana_infusion/boreal_seeds (dead_bush, 2500)",
+   "botania:mana_infusion/infestation_spores (#c:mushrooms, 6500)"
+  ]
+ },
+ "func_intro": {
+  "de": [
+   "Eine Funktionsblume bindet sich beim Pflanzen an das nächste Becken in 10 Blöcken, umbinden geht mit dem Stab ({{botania/wand}}). Als kleiner Speicher neben einer einzelnen Blume reicht das {{botania/diluted_pool}}.",
+   "Bergamute und Spulegnolie brauchen gar kein Mana. Die nächsten Funktionsblumen folgen in Stufe 2 in {{botania_runes/jaded_amaranthus}} und den Quests danach."
+  ],
+  "en": [
+   "A functional flower binds to the nearest pool within 10 blocks when planted, you rebind it with the wand ({{botania/wand}}). A {{botania/diluted_pool}} is enough as a small store next to a single flower.",
+   "Bergamute and Solegnolia need no mana at all. The next functional flowers follow in stage 2 in {{botania_runes/jaded_amaranthus}} and the quests after it."
+  ],
+  "sources": [
+   "botania jar: FunctionalFlowerBlockEntity.LINK_RANGE = 10",
+   "botania lang: botania.page.solegnolia0, botania.page.pool14"
+  ]
+ },
+ "redstone_root": {
+  "de": [
+   "[[minecraft:short_grass]] und Farn erntest du mit der Schere, Knochenmehl auf Gras liefert Nachschub. Farn wächst vor allem in Taiga und Dschungel.",
+   "Mit 4 [[botania:redstone_root]] hast du genau genug für Tolldorn, Schreckdorn, Bergamute und Spulegnolie in diesem Kapitel."
+  ],
+  "en": [
+   "Harvest [[minecraft:short_grass]] and ferns with shears, bone meal on grass gives more. Ferns grow mainly in taiga and jungle.",
+   "With 4 [[botania:redstone_root]] you have exactly enough for the Bellethorne, Dreadthorne, Bergamute and Solegnolia in this chapter."
+  ],
+  "sources": [
+   "botania:redstone_root (#c:dusts/redstone + [fern | short_grass])",
+   "botania:petal_apothecary/bellethorne, dreadthorne, bergamute, solegnolia"
+  ]
+ },
+ "bellethorne": {
+  "de": [
+   "Er trifft alles in einem 13 mal 13 Feld (6 Blöcke in jede Richtung), jeder Treffer macht 4 Schaden (2 Herzen) und kostet 24 Mana. Hexen bekommen 20 Schaden.",
+   "Er braucht ein Becken in 10 Blöcken. Unter einem Spawner ersetzt er die Waffe, Ideen dazu stehen in {{farms/mobs_killer}}."
+  ],
+  "en": [
+   "It hits everything in a 13 by 13 area (6 blocks in each direction), each hit deals 4 damage (2 hearts) and costs 24 mana. Witches take 20 damage.",
+   "It needs a pool within 10 blocks. Under a spawner it replaces the weapon, see {{farms/mobs_killer}} for ideas."
+  ],
+  "sources": [
+   "botania:petal_apothecary/bellethorne",
+   "botania jar: BellethornBlockEntity (RANGE 6, getManaCost 24, damage 4, Witch 20, getMaxMana 1000)"
+  ]
+ },
+ "dreadthorne": {
+  "de": [
+   "Er arbeitet wie der Tolldorn (6 Blöcke Reichweite), kostet aber 30 Mana pro Treffer. Halte die Herde mit Jungtieren nachgezüchtet, sonst ist das Gehege bald leer.",
+   "Den Aufbau einer ganzen Tierfarm zeigt {{farms/animals_thorn}}."
+  ],
+  "en": [
+   "It works like the Bellethorne (6 block range) but costs 30 mana per hit. Keep breeding young animals, or the pen soon runs empty.",
+   "{{farms/animals_thorn}} shows how to build a full animal farm with it."
+  ],
+  "sources": [
+   "botania:petal_apothecary/dreadthorne",
+   "botania jar: DreadthornBlockEntity (getManaCost 30), BellethornBlockEntity (RANGE 6)",
+   "botania lang: botania.page.dreadthorne0"
+  ]
+ },
+ "bergamute": {
+  "de": [
+   "Sie wirkt in 4 Blöcken Umkreis. **Pass auf bei Horn und Trommel:** In ihrer Reichweite reißen Horn der Wildnis und Trommel der Wildnis nichts aus.",
+   "Stell sie also nicht neben ein Feld, das du mit {{botania/horn}} oder {{botania/drum}} erntest."
+  ],
+  "en": [
+   "It works within 4 blocks. **Watch out with horns and drums:** inside its range the Horn of the Wild and the Drum of the Wild break nothing.",
+   "So do not plant it next to a field you harvest with the {{botania/horn}} or {{botania/drum}}."
+  ],
+  "sources": [
+   "botania:petal_apothecary/bergamute",
+   "botania jar: BergamuteBlockEntity (RANGE 4)",
+   "botania lang: botania.page.bergamute1"
+  ]
+ },
+ "solegnolia": {
+  "de": [
+   "Sie wirkt in 5 Blöcken Umkreis und in beide Richtungen: Items darin fliegen nicht zum Ring, und wer mit Ring darin steht, zieht nichts an.",
+   "Den Ring der Magnetisierung baust du in Stufe 2 ({{botania_runes/baubles_rings}})."
+  ],
+  "en": [
+   "It works within 5 blocks and both ways: items inside are not pulled to a ring, and a ring wearer standing inside pulls nothing.",
+   "You build the Ring of Magnetization in stage 2 ({{botania_runes/baubles_rings}})."
+  ],
+  "sources": [
+   "botania:petal_apothecary/solegnolia",
+   "botania jar: SolegnoliaBlockEntity (RANGE 5.0)",
+   "botania lang: botania.page.solegnolia0"
+  ]
+ },
+ "func_outlook": {
+  "de": [
+   "Fast alle diese Blumen brauchen eine [[botania:redstone_root]] und eine Rune, sammle also jetzt schon Redstone und Farne.",
+   "Der Einstieg in Stufe 2 ist {{botania_runes/runic_altar}}, die Blumen selbst stehen ab {{botania_runes/jaded_amaranthus}}."
+  ],
+  "en": [
+   "Almost all of these flowers need a [[botania:redstone_root]] and a rune, so start collecting redstone and ferns now.",
+   "The way in for stage 2 is {{botania_runes/runic_altar}}, the flowers themselves start at {{botania_runes/jaded_amaranthus}}."
+  ],
+  "sources": [
+   "helpq.py uses botania:redstone_root (agricarnation, hopperhock, jaded_amaranthus, rannuncarpus, medumone, vinculotus and more)"
+  ]
+ },
+ "farm": {
+  "de": [
+   "Die Quest prüft nur, ob du 4 Endoflammen, 2 Verbreiter und ein Becken im Inventar hast. Damit die Farm wirklich läuft, muss jede Endoflamme höchstens 6 Blöcke von einem Verbreiter stehen und die Abwurfstelle höchstens 3 Blöcke von jeder Flamme.",
+   "Holzkohle ohne Mine liefert {{farms/wood_charcoal}}. Wenn die Farm mehr macht, als du brauchst, hält eine {{botania/mana_void}} unter dem Becken sie am Brennen."
+  ],
+  "en": [
+   "The quest only checks that you carry 4 Endoflames, 2 spreaders and a pool. For the farm to really run, every Endoflame must be within 6 blocks of a spreader and the drop point within 3 blocks of every flame.",
+   "{{farms/wood_charcoal}} supplies charcoal without a mine. If the farm makes more than you need, a {{botania/mana_void}} under the pool keeps it burning."
+  ],
+  "sources": [
+   "tools/quests/chapters/botania.py (farm: three item tasks)",
+   "botania jar: GeneratingFlowerBlockEntity.LINK_RANGE = 6, EndoflameBlockEntity.RANGE = 3"
+  ]
+ },
+ "infused_iron": {
+  "de": [
+   "Den [[naturesaura:nature_altar]] machst du mit dem Ritual des Waldes, und er arbeitet nur in seinem Bauwerk: {{start_here/m_altar}} und {{start_here/m_infused}}. Jeder Barren zieht 15 000 Aura aus der Umgebung, wird der Altar langsam, ist die Gegend leer.",
+   "Ab Stufe 2 geht es schneller: Der beheizte Create-Mixer macht aus 2 Eisenbarren und einem [[ars_nouveau:source_gem]] 2 [[naturesaura:infused_iron]]. Aus Waben kommt Infused Iron von der Infused-Iron-Biene, nicht von der Eisenbiene ({{bees/c_infused_iron}})."
+  ],
+  "en": [
+   "You make the [[naturesaura:nature_altar]] with the Ritual of the Forest, and it only works inside its structure: {{start_here/m_altar}} and {{start_here/m_infused}}. Each ingot draws 15,000 aura from the area; if the altar gets slow, the area is drained.",
+   "From stage 2 it is faster: the heated Create mixer turns 2 iron ingots and a [[ars_nouveau:source_gem]] into 2 [[naturesaura:infused_iron]]. From combs, Infused Iron comes from the Infused Iron Bee, not the Iron Bee ({{bees/c_infused_iron}})."
+  ],
+  "sources": [
+   "naturesaura:altar/infused_iron (aura 15000), naturesaura:altar/infused_iron_block (aura 135000)",
+   "kronwerke:round/infused_iron_mixing (heated, kubejs/server_scripts/kronwerke/round.js)",
+   "kronwerke:round/naturesaura_tree_ritual_nature_altar",
+   "docs/STAGES.md (blaze burner and Productive Bees in stage 2)",
+   "qbook bees.json: c_iron (raw iron comb), c_infused_iron"
+  ]
+ },
+ "manasteel_prep": {
+  "de": [
+   "[[naturesaura:gold_leaf]] erntest du von einem Baum mit Brilliant Fiber ({{start_here/m_goldleaf}}). Ein Blatt gibt an der Werkbank 2 [[naturesaura:gold_powder]], ein Blatt auf einem Stamm wird zum [[naturesaura:wood_stand]]. Leg also mehr Gold Leaf bereit als die eine Zutat.",
+   "Der Setzling muss eine Eiche sein. Das Ritual selbst ist {{botania_runes/ritual}}, die Massenroute über das Becken {{botania_runes/infused_pool}}."
+  ],
+  "en": [
+   "Harvest [[naturesaura:gold_leaf]] from a tree with Brilliant Fiber ({{start_here/m_goldleaf}}). One leaf makes 2 [[naturesaura:gold_powder]] at the crafting table, and a leaf on a log makes a [[naturesaura:wood_stand]]. So keep more Gold Leaf ready than the one ingredient.",
+   "The sapling must be oak. The ritual itself is {{botania_runes/ritual}}, the bulk route through the pool is {{botania_runes/infused_pool}}."
+  ],
+  "sources": [
+   "kronwerke:magic/manasteel_ritual (oak_sapling, 4x infused_iron, 2x livingwood_twig, mana_diamond, gold_leaf -> 4 manasteel)",
+   "kronwerke:magic/manasteel_from_infused_iron (3000)",
+   "naturesaura:gold_powder (2 per leaf), naturesaura:wood_stand (L/W)"
+  ]
+ },
+ "outlook": {
+  "de": [
+   "Die Mengen im Questtext sind Grundwerte für 30 aktive Spieler: Beim Öffnen der Stufe werden Manaperlen und Terrastahl mit der Spielerzahl skaliert (Faktor 0,4 bis 1,5), nur die 8 Runenkerne stehen fest. Die echten Zahlen zeigt dir {{start_here/o_scale}}.",
+   "Jede [[botania:mana_pearl]] kostet 6 000 Mana, jeder [[botania:terrasteel_ingot]] 500 000 auf der Terraplatte. Ein Becken voller Mana ist also gerade zwei Terrastahlbarren wert."
+  ],
+  "en": [
+   "The amounts in the quest text are base values for 30 active players: when the stage opens, mana pearls and terrasteel are scaled by the player count (factor 0.4 to 1.5), only the 8 rune cores are fixed. {{start_here/o_scale}} shows the real numbers.",
+   "Each [[botania:mana_pearl]] costs 6,000 mana, each [[botania:terrasteel_ingot]] 500,000 on the terra plate. So a full pool is worth just two terrasteel ingots."
+  ],
+  "sources": [
+   "config/kronwerke/goals.json (stage2 magic: mana_pearl 600, terrasteel_ingot 50, rune_core 8 fixed; scale true)",
+   "docs/STAGES.md (goals scale with base * clamp(active / 30, 0.4, 1.5))",
+   "kronwerke:magic/mana_pearl (6000), botania:terrestrial_agglomeration_plate/terrasteel_ingot (500000)"
+  ]
+ },
+ "urn": {
+  "de": [
+   "Das Quelljuwel machst du in der Imbuement-Kammer, die [[ars_nouveau:water_essence]] dort aus Quelljuwel, Wassereimer, Schneeblock und Seetang ({{ars_nouveau/essences_more}}).",
+   "Den Apparat baust du in {{ars_nouveau/apparatus}}, den [[ars_nouveau:dominion_wand]] in {{ars_nouveau/dominion_wand}}."
+  ],
+  "en": [
+   "Make the source gem in the imbuement chamber, and the [[ars_nouveau:water_essence]] there from a source gem, water bucket, snow block and kelp ({{ars_nouveau/essences_more}}).",
+   "You build the apparatus in {{ars_nouveau/apparatus}} and the [[ars_nouveau:dominion_wand]] in {{ars_nouveau/dominion_wand}}."
+  ],
+  "sources": [
+   "ars_elemental:everfull_urn (enchanting_apparatus: #c:gems/source, 2x water_essence, 2x prismarine_shard, flower_pot)",
+   "ars_nouveau:imbuement_water_essence (source 2000)"
+  ]
+ },
+ "fel_pumpkin": {
+  "de": [
+   "Die Lohe aus dem [[botania:fel_pumpkin]] lässt 10 [[minecraft:blaze_powder]] fallen, wenn du sie selbst tötest (mit Plünderung bis zu 6 mehr), sonst 6.",
+   "Mit Enderaugen baust du den {{botania/ender_overseer}}. Die Zutaten Knochen, Fleisch und Schwarzpulver liefern Skelette, Zombies und Creeper."
+  ],
+  "en": [
+   "The blaze from the [[botania:fel_pumpkin]] drops 10 [[minecraft:blaze_powder]] if you kill it yourself (up to 6 more with Looting), otherwise 6.",
+   "Eyes of ender build the {{botania/ender_overseer}}. Skeletons, zombies and creepers supply the bone, flesh and gunpowder."
+  ],
+  "sources": [
+   "botania:fel_pumpkin (\" S \",\"BPF\",\" G \")",
+   "botania jar: data/botania/loot_table/entities/fel_blaze.json (6, or 10 + looting 0..6 when killed by player)",
+   "botania jar: data/botania/tags/block/fel_blaze_base.json (iron_bars)"
+  ]
+ },
+ "vine_ball": {
+  "de": [
+   "Ein [[botania:vine_ball]] kostet 9 Ranken, die erntest du mit der Schere in Dschungeln und Sümpfen.",
+   "Ranken stecken auch in den Bemoosten Lebesteinziegeln ({{botania/deco}})."
+  ],
+  "en": [
+   "A [[botania:vine_ball]] costs 9 vines, harvest them with shears in jungles and swamps.",
+   "Vines also go into mossy livingrock bricks ({{botania/deco}})."
+  ],
+  "sources": [
+   "botania:vine_ball (VVV/VVV/VVV)",
+   "botania:mossy_livingrock_bricks_vine"
+  ]
+ },
+ "horn": {
+  "de": [
+   "Das Horn der Baumkronen entsteht aus dem [[botania:horn_of_the_wild]] selbst, du brauchst für diese Quest also **zwei** Hörner der Wildnis. Mit einem Schneeball wird ein Horn zum [[botania:horn_of_the_covering]].",
+   "In der Nähe einer {{botania/bergamute}} reißt kein Horn etwas aus."
+  ],
+  "en": [
+   "The Horn of the Canopy is made from the [[botania:horn_of_the_wild]] itself, so this quest needs **two** Horns of the Wild. With a snowball a horn becomes the [[botania:horn_of_the_covering]].",
+   "Near a {{botania/bergamute}} no horn breaks anything."
+  ],
+  "sources": [
+   "botania:horn_of_the_wild (\" W \",\"WSW\",\"WW \"), botania:horn_of_the_canopy (horn + #minecraft:leaves), botania:horn_of_the_covering (horn + snowball)",
+   "botania lang: botania.page.bergamute1"
+  ]
+ },
+ "drum": {
+  "de": [
+   "Die [[botania:drum_of_the_wild]] verbraucht ein Horn der Wildnis und 6 Lebeholzstämme. Statt eines Impuls-Verbreiters geht laut Lexica auch ein Mana-Blaster aus Stufe 2.",
+   "Wie das Horn reißt sie in der Nähe einer {{botania/bergamute}} nichts aus. Die Trichtermalve zum Einsammeln kommt in {{botania_runes/hopperhock}}."
+  ],
+  "en": [
+   "The [[botania:drum_of_the_wild]] uses up a Horn of the Wild and 6 livingwood logs. Instead of a pulse spreader, the Lexica says a stage 2 Mana Blaster works too.",
+   "Like the horn it breaks nothing near a {{botania/bergamute}}. The Hopperhock to collect the drops comes in {{botania_runes/hopperhock}}."
+  ],
+  "sources": [
+   "botania:drum_of_the_wild (WLW/WHW/WLW)",
+   "botania lang: botania.page.forestDrum1, botania.page.bergamute1"
+  ]
+ },
+ "avatar": {
+  "de": [
+   "Beide Teile brauchen einen [[botania:mana_diamond]], zusammen also 2 Diamanten und 20 000 Mana.",
+   "Ohne Verbreiter, der auf den Avatar zielt, wirkt die Rute nicht. Die Ruten der Lüfte und der Höllen kommen in {{botania_runes/rods}}."
+  ],
+  "en": [
+   "Both parts need a [[botania:mana_diamond]], so 2 diamonds and 20,000 mana together.",
+   "Without a spreader aimed at the avatar the rod does nothing. The Rods of the Skies and of the Hells come in {{botania_runes/rods}}."
+  ],
+  "sources": [
+   "botania:livingwood_avatar (\" W \",\"WDW\",\"W W\"), botania:rod_of_the_plentiful_mantle (\" TD\",\" TT\",\"T  \")",
+   "botania lang: botania.page.avatar0, botania.page.avatar1"
+  ]
+ },
+ "teru_teru": {
+  "de": [
+   "Sonnenblumen wachsen in Sonnenblumenebenen, die 4 aus der Belohnung reichen für die nächsten Regentage. Der [[botania:teru_teru_bozu]] kostet 2 Managewebestoff, also 8 Manainfundierte Fäden und 10 000 Mana."
+  ],
+  "en": [
+   "Sunflowers grow in sunflower plains, the 4 from the reward cover the next rainy days. The [[botania:teru_teru_bozu]] costs 2 manaweave cloth, so 8 mana infused strings and 10,000 mana."
+  ],
+  "sources": [
+   "botania:teru_teru_bozu (C/C/S)",
+   "botania lang: botania.page.teruTeruBozu0"
+  ]
+ },
+ "manaweave_set": {
+  "de": [
+   "Die drei Teile kosten zusammen 16 [[botania:manaweave_cloth]]: Kapuze 5, Unterteil 7, Stiefel 4. Das sind 64 Fäden und 80 000 Mana.",
+   "Für die Reparatur mit Mana brauchst du ab Stufe 2 eine Manatafel ({{botania_runes/mana_tablet}})."
+  ],
+  "en": [
+   "The three pieces cost 16 [[botania:manaweave_cloth]] together: cowl 5, robe bottom 7, boots 4. That is 64 strings and 80,000 mana.",
+   "For repairs with mana you need a mana tablet from stage 2 ({{botania_runes/mana_tablet}})."
+  ],
+  "sources": [
+   "botania:manaweave_helmet (SSS/S S), botania:manaweave_leggings (SSS/S S/S S), botania:manaweave_boots (S S/S S)",
+   "botania:mana_infusion/mana_string (1250)"
+  ]
+ },
+ "ender_overseer": {
+  "de": [
+   "Die 4 [[minecraft:ender_eye]] kosten 4 Enderperlen und 4 Lohenstaub. Den Staub gibt es in Stufe 1 ohne Nether vom {{botania/fel_pumpkin}}.",
+   "Der [[botania:ender_overseer]] reagiert auf jeden Spieler, der ihn ansieht, nicht nur auf dich. Eine Tür daran öffnet sich also auch für Fremde."
+  ],
+  "en": [
+   "The 4 [[minecraft:ender_eye]] cost 4 ender pearls and 4 blaze powder. In stage 1 you get the powder without the Nether from the {{botania/fel_pumpkin}}.",
+   "The [[botania:ender_overseer]] reacts to any player who looks at it, not just you. A door on it opens for strangers too."
+  ],
+  "sources": [
+   "botania:ender_overseer (RER/EOE/RER)",
+   "botania jar: EnderOverseerBlockEntity (RANGE 64)",
+   "botania lang: botania.page.enderEyeBlock0"
+  ]
+ }
+}

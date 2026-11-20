@@ -1,0 +1,851 @@
+{
+ "welcome": {
+  "de": [
+   "Die Grundausrüstung entsteht in drei Quests: {{food/f_knife}}, {{food/f_stove}} und {{food/f_pot}}. Was gute Gerichte zusätzlich können, erklärt {{food/f_effects}}, und das Kapitel endet bei {{food/f_pantry}}.",
+   "Küchenmöbel, Pflanztöpfe und die großen Gerichte stehen im Kapitel Kochen, angefangen bei {{cooking/book}}."
+  ],
+  "en": [
+   "The basic kit takes three quests: {{food/f_knife}}, {{food/f_stove}} and {{food/f_pot}}. {{food/f_effects}} explains what good meals do on top, and the chapter ends at {{food/f_pantry}}.",
+   "Kitchen furniture, planting pots and the big meals are in the Cooking chapter, starting at {{cooking/book}}."
+  ],
+  "sources": [
+   "tools/quests/chapters/food.py",
+   "tools/quests/chapters/cooking.py"
+  ]
+ },
+ "f_knife": {
+  "de": [
+   "Mit einem Messer in der Hand gibt reifer Weizen **immer** [[farmersdelight:straw]], kurzes Gras nur mit 20 Prozent Chance. Ein Schwein, das du mit dem Messer erlegst, lässt mit 50 Prozent Chance [[farmersdelight:ham]] fallen, mit Plünderung öfter; brennt es dabei, ist es gleich Räucherschinken.",
+   "Gold, Eisen und Diamant geben bessere Messer ({{food/f_iron_knife}}), der Feuerstein reicht aber für alles am Schneidebrett."
+  ],
+  "en": [
+   "With a knife in hand, ripe wheat **always** drops [[farmersdelight:straw]], short grass only with a 20 percent chance. A pig you kill with the knife drops [[farmersdelight:ham]] with a 50 percent chance, more often with Looting; if it burns, you get smoked ham right away.",
+   "Gold, iron and diamond make better knives ({{food/f_iron_knife}}), but flint does everything the cutting board needs."
+  ],
+  "sources": [
+   "FarmersDelight-1.21.1-1.3.4.jar data/farmersdelight/loot_modifiers/straw_from_mature_wheat.json, straw_from_grass.json (chance 0.2)",
+   "FarmersDelight-1.21.1-1.3.4.jar loot_modifiers/scavenging_ham_from_pig.json (0.5, looting), scavenging_smoked_ham_from_pig.json (is_on_fire)",
+   "farmersdelight:flint_knife"
+  ]
+ },
+ "f_iron_knife": {
+  "de": [
+   "Alle Messer machen am Schneidebrett dasselbe, denn die Rezepte fragen nur nach dem Tag Messer. Ein besseres Messer hält einfach länger.",
+   "Ein Diamantmesser wird am Schmiedetisch mit einer Netherit-Aufwertung und einem Netheritbarren zum [[farmersdelight:netherite_knife]]. Abgenutzte Goldmesser schmelzen genauso zu einem Goldnugget."
+  ],
+  "en": [
+   "Every knife does the same at the cutting board, the recipes only ask for the knife tag. A better knife simply lasts longer.",
+   "A diamond knife becomes a [[farmersdelight:netherite_knife]] at the smithing table with a Netherite Upgrade and a netherite ingot. Worn gold knives smelt down to a gold nugget the same way."
+  ],
+  "sources": [
+   "farmersdelight:iron_knife (#c:ingots/iron)",
+   "farmersdelight:cutting/* (tool #c:tools/knife)",
+   "farmersdelight:netherite_knife_smithing",
+   "farmersdelight:iron_nugget_from_smelting_knife",
+   "farmersdelight:gold_nugget_from_smelting_knife"
+  ]
+ },
+ "f_straw": {
+  "de": [
+   "Am schnellsten kommt Stroh bei der Weizenernte: Reifer Weizen gibt mit dem Messer in der Hand jedes Mal eins, kurzes Gras nur jedes fünfte Mal.",
+   "Neun Stroh ergeben ein [[farmersdelight:straw_bale]] (im Spiel heißt es Strohbündel), vier Stroh einen [[farmersdelight:canvas]]. Für den Kompost in {{food/f_compost}} brauchst du je zwei."
+  ],
+  "en": [
+   "The fastest straw comes with the wheat harvest: ripe wheat broken with a knife in hand drops one every time, short grass only one time in five.",
+   "Nine straw make a [[farmersdelight:straw_bale]], four make a [[farmersdelight:canvas]]. The compost in {{food/f_compost}} takes two each."
+  ],
+  "sources": [
+   "FarmersDelight-1.21.1-1.3.4.jar loot_modifiers/straw_from_mature_wheat.json (no chance), straw_from_grass.json (0.2)",
+   "farmersdelight:straw_bale",
+   "farmersdelight:canvas",
+   "farmersdelight:organic_compost_from_tree_bark"
+  ]
+ },
+ "f_cutting_board": {
+  "de": [
+   "Mit dem Messer wird ein Kohl zu zwei Kohlblättern, rohes Rindfleisch zu zwei [[farmersdelight:minced_beef]], eine [[farmersdelight:rice_panicle]] zu Reis und Stroh, ein Teigball zu Rohen Nudeln.",
+   "Mit der Axt entrindest du Stämme und bekommst Baumrinde ({{food/f_bark}}). Ein Werfer vor dem Brett schneidet für dich ({{food/f_board_dispenser}})."
+  ],
+  "en": [
+   "With a knife a cabbage becomes two cabbage leaves, raw beef two [[farmersdelight:minced_beef]], a [[farmersdelight:rice_panicle]] rice and straw, a wheat dough raw pasta.",
+   "With an axe you strip logs and get tree bark ({{food/f_bark}}). A dispenser in front of the board cuts for you ({{food/f_board_dispenser}})."
+  ],
+  "sources": [
+   "farmersdelight:cutting_board",
+   "farmersdelight:cutting/cabbage",
+   "farmersdelight:cutting/beef",
+   "farmersdelight:cutting/rice_panicle",
+   "farmersdelight:cutting/tag_dough",
+   "farmersdelight:cutting/oak_log"
+  ]
+ },
+ "f_wild": {
+  "de": [
+   "Tomatensträucher wachsen nur in heißen, trockenen Biomen: Savanne, Wüste und Tafelberge. Im Dschungel gibt es keine, er zählt als feucht.",
+   "Pflanz die [[farmersdelight:tomato_seeds]] auf Ackerboden und häng ein Strohseil darüber ({{food/f_rope}}), dann rankt die Rebe nach oben. Samen verkauft auch der Markt für einen Smaragd ({{food/f_market}})."
+  ],
+  "en": [
+   "Tomato shrubs only grow in hot, dry biomes: savanna, desert and badlands. Jungles have none, they count as wet.",
+   "Plant the [[farmersdelight:tomato_seeds]] on farmland and hang a rope above them ({{food/f_rope}}) so the vine climbs up. The market also sells the seeds for one emerald ({{food/f_market}})."
+  ],
+  "sources": [
+   "FarmersDelight-1.21.1-1.3.4.jar data/farmersdelight/neoforge/biome_modifier/wild_tomatoes.json (#c:is_hot/overworld, not #c:is_wet)",
+   "neoforge universal jar data/c/tags/worldgen/biome/is_hot/overworld.json",
+   "farmingforblockheads:market/farmersdelight/tomato_seeds (preset farmersdelight:seeds, enabled)"
+  ]
+ },
+ "f_wild_cabbage": {
+  "de": [
+   "Wildweißkohl und Wildrüben wachsen nur in Strandbiomen. Die Wildrüben geben Rote Bete und Samen, die du für die Gemüsesuppe brauchst ({{food/f_soup}}).",
+   "Ein [[farmersdelight:cabbage_leaf]] zählt in Rezepten genauso als Blattgemüse wie ein ganzer Kohl. Aus einem Kohl werden am Brett zwei Blätter, so reicht er für zwei Suppen."
+  ],
+  "en": [
+   "Wild cabbage and sea beet only grow in beach biomes. Sea beet drops beetroot and seeds, which the vegetable soup needs ({{food/f_soup}}).",
+   "A [[farmersdelight:cabbage_leaf]] counts as a leafy green in recipes just like a whole cabbage. The board turns one cabbage into two leaves, so it covers two soups."
+  ],
+  "sources": [
+   "FarmersDelight-1.21.1-1.3.4.jar neoforge/biome_modifier/wild_cabbages.json, wild_beetroots.json (#minecraft:is_beach)",
+   "FarmersDelight-1.21.1-1.3.4.jar loot_table/blocks/wild_beetroots.json",
+   "#c:foods/leafy_green (#c:foods/cabbage: cabbage, cabbage_leaf)",
+   "farmersdelight:cutting/cabbage"
+  ]
+ },
+ "f_wild_onion": {
+  "de": [
+   "Wildzwiebeln und Wildkarotten wachsen in gemäßigten Biomen wie Ebene und Wald. **Wildkartoffeln** findest du dagegen in kühlen Biomen wie der Taiga.",
+   "Zombies und Wüstenzombies lassen manchmal eine Zwiebel fallen. Mit Zwiebeln, Reis und dem Topf geht es weiter zu {{food/f_rice}} und {{food/f_rice_cooked}}."
+  ],
+  "en": [
+   "Wild onions and wild carrots grow in temperate biomes such as plains and forests. **Wild potatoes** grow in cool biomes such as the taiga instead.",
+   "Zombies and husks sometimes drop an onion. Onions, rice and the pot lead on to {{food/f_rice}} and {{food/f_rice_cooked}}."
+  ],
+  "sources": [
+   "FarmersDelight-1.21.1-1.3.4.jar neoforge/biome_modifier/wild_onions.json, wild_carrots.json (temperature 0.4 to 0.9), wild_potatoes.json (0.1 to 0.3)",
+   "FarmersDelight-1.21.1-1.3.4.jar loot_modifiers/add_onion_to_zombies.json"
+  ]
+ },
+ "f_rice": {
+  "de": [
+   "Wildreis wächst in Sümpfen, Mangrovensümpfen, Dschungeln und an Stränden. Die Rispe oben erntest du erst, wenn sie reif ist.",
+   "Neun [[farmersdelight:rice_panicle]] ergeben einen [[farmersdelight:rice_bale]], den das Pferdefutter statt eines Heuballens nimmt ({{food/f_horse_feed}})."
+  ],
+  "en": [
+   "Wild rice grows in swamps, mangrove swamps, jungles and on beaches. Harvest the panicle on top once it is ripe.",
+   "Nine [[farmersdelight:rice_panicle]] make a [[farmersdelight:rice_bale]], which horse feed takes instead of a hay bale ({{food/f_horse_feed}})."
+  ],
+  "sources": [
+   "FarmersDelight-1.21.1-1.3.4.jar neoforge/biome_modifier/wild_rice.json (#c:is_wet/overworld)",
+   "neoforge universal jar data/c/tags/worldgen/biome/is_wet/overworld.json",
+   "farmersdelight:rice_bale",
+   "farmersdelight:horse_feed"
+  ],
+  "client": [
+   "the panicle only drops when ripe"
+  ]
+ },
+ "f_rope": {
+  "de": [
+   "Schleichen und Rechtsklick mit leerer Hand auf ein hängendes Seil zieht es von unten nach oben wieder ein. So holst du ein langes Seil aus einem Schacht zurück.",
+   "Eine Tomatenrebe rankt an jedem Strohseil darüber weiter. Das [[farmersdelight:safety_net]] aus vier Seilen lässt sich wieder in vier Seile zerlegen."
+  ],
+  "en": [
+   "Sneak and right click a hanging rope with an empty hand to reel it back in, bottom to top. That is how you get a long rope back out of a shaft.",
+   "A tomato vine keeps climbing any rope above it. The [[farmersdelight:safety_net]] made of four ropes crafts back into four ropes."
+  ],
+  "sources": [
+   "srv config/farmersdelight-common.toml (enableRopeReeling true, enableTomatoVineClimbingTaggedRopes true)",
+   "farmersdelight:safety_net",
+   "farmersdelight:rope_from_safety_net"
+  ],
+  "client": [
+   "rope reeling with an empty hand while sneaking"
+  ]
+ },
+ "f_cuts": {
+  "de": [
+   "Rohes Hähnchen gibt zwei [[farmersdelight:chicken_cuts]] und ein Knochenmehl, roher Hammel zwei [[farmersdelight:mutton_chops]], rohes Rindfleisch zwei Hackfleisch.",
+   "Den Speck brätst du wie Fleisch im Ofen oder auf der Pfanne. Mit Hackfleisch geht es weiter zum Hamburger ({{food/f_burger}})."
+  ],
+  "en": [
+   "Raw chicken gives two [[farmersdelight:chicken_cuts]] and a bone meal, raw mutton two [[farmersdelight:mutton_chops]], raw beef two minced beef.",
+   "Cook the bacon like meat in a furnace or on the skillet. Minced beef leads on to the hamburger ({{food/f_burger}})."
+  ],
+  "sources": [
+   "farmersdelight:cutting/porkchop",
+   "farmersdelight:cutting/chicken",
+   "farmersdelight:cutting/mutton",
+   "farmersdelight:cutting/beef",
+   "srv config/farmersdelight-common.toml (cuttingBoardFortuneBonus 0.1)"
+  ]
+ },
+ "f_board_dispenser": {
+  "de": [
+   "Der Werfer muss mit der Öffnung auf das Brett zeigen. Er benutzt, was in ihm liegt, als Werkzeug: Messer für Essen, Axt für Stämme.",
+   "Mit einem Knopf oder Taktgeber daneben schneidet er auf Signal, das Messer verschleißt dabei wie in deiner Hand."
+  ],
+  "en": [
+   "The dispenser has to face the board. It uses what it holds as the tool: a knife for food, an axe for logs.",
+   "With a button or a clock next to it, it cuts on every signal; the knife wears down just as in your hand."
+  ],
+  "sources": [
+   "srv config/farmersdelight-common.toml (enableCuttingBoardDispenserBehavior true)",
+   "minecraft:dispenser"
+  ],
+  "client": [
+   "whether the dispenser places the next item on the board by itself or the board has to be refilled each time"
+  ]
+ },
+ "f_stove": {
+  "de": [
+   "Topf und Pfanne brauchen die Hitze **direkt darunter**: Herd, Magmablock, Lavakessel, Lagerfeuer, Feuer oder Lava. Ein Trichter oder ein Create-Schacht zwischen Hitzequelle und Topf leitet die Hitze weiter.",
+   "Auf dem Herd selbst gart alles, was auch auf einem Lagerfeuer gart. Als Nächstes kommen {{food/f_pot}} und {{food/f_skillet}}."
+  ],
+  "en": [
+   "The pot and the skillet need the heat **right below** them: a stove, magma block, lava cauldron, campfire, fire or lava. A hopper or a Create chute between the heat and the pot passes the heat on.",
+   "On the stove itself you cook everything a campfire cooks. Next come {{food/f_pot}} and {{food/f_skillet}}."
+  ],
+  "sources": [
+   "farmersdelight:stove",
+   "FarmersDelight-1.21.1-1.3.4.jar data/farmersdelight/tags/block/heat_sources.json, tray_heat_sources.json, heat_conductors.json",
+   "FarmersDelight-1.21.1-1.3.4.jar StoveBlockEntity (RecipeType.CAMPFIRE_COOKING)"
+  ]
+ },
+ "f_pot": {
+  "de": [
+   "Rechtsklick mit dem passenden Behälter, meist einer Schüssel, auf den Topf holt eine fertige Portion heraus, ohne das Fenster zu öffnen.",
+   "Der Topf kocht nur mit Hitze direkt darunter ({{food/f_stove}}). Die ersten Rezepte: {{food/f_soup}}, {{food/f_sauce}} und {{food/f_cocoa}}."
+  ],
+  "en": [
+   "Right click the pot with the matching container, usually a bowl, to take out a finished serving without opening the window.",
+   "The pot only cooks with heat right below it ({{food/f_stove}}). First recipes: {{food/f_soup}}, {{food/f_sauce}} and {{food/f_cocoa}}."
+  ],
+  "sources": [
+   "farmersdelight:cooking_pot",
+   "FarmersDelight-1.21.1-1.3.4.jar CookingPotBlockEntity.useHeldItemOnMeal",
+   "FarmersDelight-1.21.1-1.3.4.jar tags/block/heat_sources.json"
+  ]
+ },
+ "f_skillet": {
+  "de": [
+   "Zum Braten in der Hand halt das rohe Essen in der Zweithand und stell dich neben eine Hitzequelle. Schleichen und Rechtsklick stellt die Pfanne als Block hin.",
+   "Auf dem Herd oder einem Lagerfeuer brät die Pfanne eine Portion nach der anderen."
+  ],
+  "en": [
+   "To cook in hand, hold the raw food in your offhand and stand next to a heat source. Sneak and right click to place the skillet as a block.",
+   "On a stove or campfire the skillet cooks one serving after another."
+  ],
+  "sources": [
+   "farmersdelight:skillet",
+   "FarmersDelight-1.21.1-1.3.4.jar assets lang advancements.farmersdelight.use_skillet, place_skillet"
+  ],
+  "client": [
+   "cooking in hand with the food in the offhand"
+  ]
+ },
+ "f_soup": {
+  "de": [
+   "[[minecraft:beetroot]] bekommst du von den Wildrüben am Strand ({{food/f_wild_cabbage}}), Karotten und Kartoffeln aus {{food/f_wild_onion}}. Statt eines ganzen Kohls reicht ein Kohlblatt.",
+   "Die Suppe gibt den Effekt Komfort ({{food/f_effects}}). Acht davon brauchst du später für {{food/f_pantry}}."
+  ],
+  "en": [
+   "[[minecraft:beetroot]] comes from the sea beets on beaches ({{food/f_wild_cabbage}}), carrots and potatoes from {{food/f_wild_onion}}. A cabbage leaf works instead of a whole cabbage.",
+   "The soup gives the Comfort effect ({{food/f_effects}}). You need eight of them later for {{food/f_pantry}}."
+  ],
+  "sources": [
+   "farmersdelight:cooking/vegetable_soup (#c:foods/leafy_green)",
+   "FarmersDelight-1.21.1-1.3.4.jar loot_table/blocks/wild_beetroots.json"
+  ],
+  "client": [
+   "vegetable soup effect is Comfort (tooltip)"
+  ]
+ },
+ "f_sauce": {
+  "de": [
+   "Mit Stufe 1 kochst du die Sauce im Topf. Ein Create-Mixer mischt sie auch: zwei Tomaten und eine Schüssel ins Becken, ohne Hitze.",
+   "Tomaten wachsen am schnellsten an Strohseilen ({{food/f_rope}}). Mit der Sauce geht es weiter zu {{food/f_dough}} und {{food/f_rice_cooked}}."
+  ],
+  "en": [
+   "In stage 1 you cook the sauce in the pot. A Create mixer can make it too: two tomatoes and a bowl in the basin, no heat needed.",
+   "Tomatoes grow fastest on ropes ({{food/f_rope}}). The sauce leads on to {{food/f_dough}} and {{food/f_rice_cooked}}."
+  ],
+  "sources": [
+   "farmersdelight:cooking/tomato_sauce",
+   "farmersdelight:integration/create/mixing/tomato_sauce_from_mixing"
+  ]
+ },
+ "f_stew": {
+  "de": [
+   "Jedes rohe Rindfleisch zählt, auch aus anderen Mods (Tag rohes Rindfleisch). Kühe züchtest du am einfachsten mit dem Futtertrog ({{food/f_trough}}).",
+   "Acht Eintöpfe gehören in {{food/f_pantry}}."
+  ],
+  "en": [
+   "Any raw beef counts, also from other mods (raw beef tag). Breed cows the easy way with the feeding trough ({{food/f_trough}}).",
+   "Eight stews go into {{food/f_pantry}}."
+  ],
+  "sources": [
+   "farmersdelight:cooking/beef_stew (#c:foods/raw_beef)"
+  ]
+ },
+ "f_rice_cooked": {
+  "de": [
+   "Für [[farmersdelight:fried_rice]] kommen roher Reis, ein Ei, eine Karotte und eine Zwiebel zusammen in den Topf, nicht der gekochte Reis.",
+   "Gekochten Reis brauchst du für {{food/f_steak}} und den Honigglasierten Schinken ({{cooking/m_ham}}). Eier sammelt das Hühnernest ({{food/f_nest}})."
+  ],
+  "en": [
+   "[[farmersdelight:fried_rice]] takes raw rice, an egg, a carrot and an onion in the pot, not the cooked rice.",
+   "Cooked rice goes into {{food/f_steak}} and the honey glazed ham ({{cooking/m_ham}}). The chicken nest collects eggs ({{food/f_nest}})."
+  ],
+  "sources": [
+   "farmersdelight:cooking/cooked_rice",
+   "farmersdelight:cooking/fried_rice (#c:crops/rice, #c:eggs, carrot, onion)",
+   "farmersdelight:honey_glazed_ham_block"
+  ]
+ },
+ "f_steak": {
+  "de": [
+   "Das gebratene Rindfleisch und die Ofenkartoffel kommen aus Ofen, Räucherofen oder Lagerfeuer, der gekochte Reis aus dem Topf ({{food/f_rice_cooked}}).",
+   "Ein Topfdurchgang Reis gibt genau eine Portion gekochten Reis, also eine Mahlzeit."
+  ],
+  "en": [
+   "The cooked beef and the baked potato come from a furnace, smoker or campfire, the cooked rice from the pot ({{food/f_rice_cooked}}).",
+   "One pot run of rice gives exactly one serving of cooked rice, so one meal."
+  ],
+  "sources": [
+   "farmersdelight:steak_and_potatoes",
+   "farmersdelight:cooking/cooked_rice (count 1)"
+  ]
+ },
+ "f_effects": {
+  "de": [
+   "Die Zahl im Tooltip sagt, wie lange der Effekt hält. Mit Farmer's Delight geben auch Pilzsuppe, Rote-Bete-Suppe und Kaninchenragout aus Vanilla den Effekt Gesättigt ({{food/f_soups}}).",
+   "Gesättigt hält die Hungerleiste, solange du nicht heilst: Für lange Grabetouren ist es der wertvollere Effekt."
+  ],
+  "en": [
+   "The tooltip shows how long the effect lasts. With Farmer's Delight the vanilla mushroom stew, beetroot soup and rabbit stew give Nourishment as well ({{food/f_soups}}).",
+   "Nourishment keeps the food bar full as long as you are not healing: on long mining trips it is the more valuable effect."
+  ],
+  "sources": [
+   "srv config/farmersdelight-common.toml (enableVanillaSoupExtraEffects true)",
+   "FarmersDelight-1.21.1-1.3.4.jar FoodValues.VANILLA_SOUP_EFFECTS (nourishment)",
+   "FarmersDelight-1.21.1-1.3.4.jar assets lang effect.farmersdelight.nourishment.description, comfort.description"
+  ]
+ },
+ "f_soups": {
+  "de": [
+   "Pilzsuppe und Rote-Bete-Suppe geben 3 Minuten Gesättigt, das Kaninchenragout 5 Minuten. Das Ragout füllt mit 14 Hunger deutlich mehr als in Vanilla.",
+   "Pilze bekommst du ohne Pilzbiom aus der Pilzkolonie ({{food/f_colony}})."
+  ],
+  "en": [
+   "Mushroom stew and beetroot soup give 3 minutes of Nourishment, rabbit stew 5 minutes. Rabbit stew fills 14 hunger, much more than in vanilla.",
+   "You get mushrooms without a mushroom biome from the mushroom colony ({{food/f_colony}})."
+  ],
+  "sources": [
+   "srv config/farmersdelight-common.toml ([overrides.stack_size] soupItemList, enableRabbitStewBuff true)",
+   "FarmersDelight-1.21.1-1.3.4.jar FoodValues.VANILLA_SOUP_EFFECTS (3600, 3600, 6000 ticks), RABBIT_STEW_BUFF (nutrition 14)"
+  ]
+ },
+ "f_cocoa": {
+  "de": [
+   "[[minecraft:cocoa_beans]] wachsen an Dschungelstämmen. Vier [[farmersdelight:milk_bottle]] füllst du aus einem Milcheimer und vier Glasflaschen ab.",
+   "Der [[farmersdelight:melon_juice]] entsteht ohne Topf: vier Melonenscheiben, Zucker und eine Glasflasche an der Werkbank."
+  ],
+  "en": [
+   "[[minecraft:cocoa_beans]] grow on jungle logs. Four [[farmersdelight:milk_bottle]] come from a milk bucket and four glass bottles.",
+   "[[farmersdelight:melon_juice]] needs no pot: four melon slices, sugar and a glass bottle at the crafting table."
+  ],
+  "sources": [
+   "farmersdelight:cooking/hot_cocoa",
+   "farmersdelight:milk_bottle",
+   "farmersdelight:melon_juice"
+  ]
+ },
+ "f_dough": {
+  "de": [
+   "Für das Wasserrezept zeigt EMI die genaue Menge Weizen. Am Schneidebrett schneidet das Messer aus einem Teigball [[farmersdelight:raw_pasta]].",
+   "Teig brauchst du für {{food/f_dumplings}} und die Nudelgerichte im Kapitel Kochen ({{cooking/m_noodles}})."
+  ],
+  "en": [
+   "EMI shows the exact amount of wheat for the water recipe. At the cutting board the knife turns a wheat dough into [[farmersdelight:raw_pasta]].",
+   "Dough goes into {{food/f_dumplings}} and the pasta dishes in the Cooking chapter ({{cooking/m_noodles}})."
+  ],
+  "sources": [
+   "farmersdelight:wheat_dough_from_egg",
+   "farmersdelight:wheat_dough_from_water (farmersdelight:dough)",
+   "farmersdelight:cutting/tag_dough"
+  ],
+  "client": [
+   "wheat_dough_from_water shape and amounts (special recipe type farmersdelight:dough)"
+  ]
+ },
+ "f_dumplings": {
+  "de": [
+   "Ein Topfdurchgang gibt zwei Teigtaschen, das macht sie zu einem günstigen Essen für unterwegs.",
+   "Kohl findest du an Stränden ({{food/f_wild_cabbage}}), Zwiebeln in gemäßigten Biomen ({{food/f_wild_onion}})."
+  ],
+  "en": [
+   "One pot run makes two dumplings, which makes them cheap food for the road.",
+   "Cabbage grows on beaches ({{food/f_wild_cabbage}}), onions in temperate biomes ({{food/f_wild_onion}})."
+  ],
+  "sources": [
+   "farmersdelight:cooking/dumplings (count 2)"
+  ]
+ },
+ "f_burger": {
+  "de": [
+   "Die [[farmersdelight:beef_patty]] brätst du aus Hackfleisch im Ofen, im Räucherofen geht es doppelt so schnell. Ein Kohlblatt reicht als Salat.",
+   "Hackfleisch kommt vom Schneidebrett: ein rohes Rindfleisch gibt zwei."
+  ],
+  "en": [
+   "Cook the [[farmersdelight:beef_patty]] from minced beef in a furnace; a smoker is twice as fast. A cabbage leaf is enough for the greens.",
+   "Minced beef comes from the cutting board: one raw beef gives two."
+  ],
+  "sources": [
+   "farmersdelight:hamburger",
+   "farmersdelight:beef_patty (smelting 200), farmersdelight:beef_patty_from_smoking (100)",
+   "farmersdelight:cutting/beef"
+  ]
+ },
+ "f_feast": {
+  "de": [
+   "Gebratenes Hähnchen und die zwei Ofenkartoffeln kommen aus dem Ofen. Eier sammelt dir das Hühnernest ({{food/f_nest}}).",
+   "Den Hirtenkuchen und den Honigglasierten Schinken findest du im Kapitel Kochen ({{cooking/m_shepherd}}, {{cooking/m_ham}})."
+  ],
+  "en": [
+   "Cooked chicken and the two baked potatoes come from the furnace. The chicken nest collects the eggs for you ({{food/f_nest}}).",
+   "The shepherd's pie and the honey glazed ham are in the Cooking chapter ({{cooking/m_shepherd}}, {{cooking/m_ham}})."
+  ],
+  "sources": [
+   "farmersdelight:roast_chicken_block",
+   "farmersdelight:shepherds_pie_block",
+   "farmersdelight:honey_glazed_ham_block"
+  ]
+ },
+ "f_pie": {
+  "de": [
+   "Der Apfelkuchen genau: oben drei Weizen, in der Mitte drei Äpfel, unten Zucker, [[farmersdelight:pie_crust]], Zucker.",
+   "Am Boden schneidet das Messer Stücke ab, und vier Stücke im Quadrat ergeben wieder einen ganzen Kuchen."
+  ],
+  "en": [
+   "The apple pie exactly: three wheat on top, three apples in the middle, sugar, [[farmersdelight:pie_crust]], sugar at the bottom.",
+   "Placed down, the knife cuts slices off, and four slices in a square make a whole pie again."
+  ],
+  "sources": [
+   "farmersdelight:apple_pie",
+   "farmersdelight:pie_crust",
+   "farmersdelight:apple_pie_from_slices"
+  ]
+ },
+ "f_chocolate_pie": {
+  "de": [
+   "Drei Milchflaschen sind ein knapper Milcheimer: Aus einem Eimer und vier Glasflaschen werden vier Flaschen ({{food/f_cocoa}}).",
+   "Mit Create in Stufe 2 füllt ein Befüller die Kruste auch mit flüssiger Schokolade."
+  ],
+  "en": [
+   "Three milk bottles are most of a milk bucket: one bucket and four glass bottles make four bottles ({{food/f_cocoa}}).",
+   "With Create in stage 2 a spout can also fill the crust with liquid chocolate."
+  ],
+  "sources": [
+   "farmersdelight:chocolate_pie",
+   "farmersdelight:milk_bottle",
+   "farmersdelight:integration/create/filling/chocolate_pie"
+  ]
+ },
+ "f_bark": {
+  "de": [
+   "Jede Holzsorte gibt am Brett einen entrindeten Stamm und eine [[farmersdelight:tree_bark]]. Einen Werfer mit Axt kannst du das machen lassen ({{food/f_board_dispenser}}).",
+   "Drei Rinden ergeben auch ein Papier, falls dir das Zuckerrohr ausgeht."
+  ],
+  "en": [
+   "Every log type gives a stripped log and one [[farmersdelight:tree_bark]] at the board. A dispenser with an axe can do it for you ({{food/f_board_dispenser}}).",
+   "Three pieces of bark also make a paper, in case you run out of sugar cane."
+  ],
+  "sources": [
+   "farmersdelight:cutting/oak_log (axe_strip)",
+   "farmersdelight:paper_from_tree_bark"
+  ]
+ },
+ "f_compost": {
+  "de": [
+   "Der Kompost zersetzt sich schneller mit Licht von oben (Himmelslicht über 12), mit Wasser daneben und mit Pilzen, Podsol, Myzel, weiterem Kompost oder Reichhaltiger Erde in den Blöcken rundherum.",
+   "Ein großes Feld aus Kompost beschleunigt sich also selbst."
+  ],
+  "en": [
+   "Compost decays faster with light from above (sky light over 12), with water next to it and with mushrooms, podzol, mycelium, more compost or rich soil in the blocks around it.",
+   "A big field of compost speeds itself up."
+  ],
+  "sources": [
+   "farmersdelight:organic_compost_from_tree_bark",
+   "farmersdelight:organic_compost_from_rotten_flesh",
+   "FarmersDelight-1.21.1-1.3.4.jar OrganicCompostBlock.randomTick",
+   "FarmersDelight-1.21.1-1.3.4.jar tags/block/compost_activators.json"
+  ]
+ },
+ "f_rich_soil": {
+  "de": [
+   "Auf Reichhaltiger Erde bekommt eine Pflanze bei jedem zufälligen Wachstumsschritt mit 20 Prozent Chance einen Knochenmehl-Schub. Frisch gepflügt ist sie [[farmersdelight:rich_soil_farmland]].",
+   "Pilze auf Reichhaltiger Erde werden zu Kolonien ({{food/f_colony}}). Kompost und Reichhaltige Erde gibt es am Markt nicht."
+  ],
+  "en": [
+   "On rich soil a plant gets a bone meal boost with a 20 percent chance on each random growth tick. Tilled, it becomes [[farmersdelight:rich_soil_farmland]].",
+   "Mushrooms on rich soil turn into colonies ({{food/f_colony}}). The market does not sell compost or rich soil."
+  ],
+  "sources": [
+   "srv config/farmersdelight-common.toml (richSoilBoostChance 0.2)",
+   "FarmersDelight-1.21.1-1.3.4.jar RichSoilBlock",
+   "farmingforblockheads-neoforge-1.21.1-21.1.14.jar data/farmersdelight/market_presets/soil.json (enabled false), srv config/farmingforblockheads-common.toml (enabledOptionalPresets [])"
+  ]
+ },
+ "f_colony": {
+  "de": [
+   "Die Quest will die Kolonie als Gegenstand: Den bekommst du nur, wenn du eine **ausgewachsene** Kolonie mit der Schere abbaust. Rechtsklick mit der Schere erntet dagegen einen Pilz und setzt sie eine Stufe zurück.",
+   "Am Schneidebrett gibt eine Kolonie fünf Pilze. Im Pilzbiom wachsen Kolonien auch wild."
+  ],
+  "en": [
+   "The quest wants the colony as an item: you only get it by breaking a **fully grown** colony with shears. Right clicking with shears harvests one mushroom and sets it back one stage instead.",
+   "At the cutting board a colony gives five mushrooms. In mushroom fields colonies also grow wild."
+  ],
+  "sources": [
+   "FarmersDelight-1.21.1-1.3.4.jar loot_table/blocks/brown_mushroom_colony.json (shears_harvest, age 3)",
+   "FarmersDelight-1.21.1-1.3.4.jar MushroomColonyBlock.useItemOn",
+   "farmersdelight:cutting/brown_mushroom_colony",
+   "FarmersDelight-1.21.1-1.3.4.jar neoforge/biome_modifier/brown_mushroom_colony.json"
+  ]
+ },
+ "f_fertilizer": {
+  "de": [
+   "Roter Dünger macht [[farmingforblockheads:fertilized_farmland_healthy]]: Pflanzen darauf bekommen bei jedem Wachstumsschritt einen Extraschritt. Das Ackerland bleibt gedüngt, es fällt auf diesem Server nie zurück.",
+   "Der Markt verkauft hier nur Create-Baumdünger, die drei Ackerdünger stellst du selbst her."
+  ],
+  "en": [
+   "Red fertilizer makes [[farmingforblockheads:fertilized_farmland_healthy]]: plants on it get an extra growth step every time they grow. The farmland stays fertilized, on this server it never turns back.",
+   "The market here only sells Create tree fertilizer; you craft the three farmland fertilizers yourself."
+  ],
+  "sources": [
+   "farmingforblockheads:red_fertilizer",
+   "srv config/farmingforblockheads-common.toml (fertilizerBonusGrowthChance 1.0, fertilizerRegressionChance 0.0)",
+   "farmingforblockheads-neoforge-1.21.1-21.1.14.jar data/farmingforblockheads/market_presets/fertilizer.json (enabled false)",
+   "farmingforblockheads-neoforge-1.21.1-21.1.14.jar FertilizerItem$FertilizerType (HEALTHY = red)"
+  ]
+ },
+ "f_fert_green": {
+  "de": [
+   "Grüner Dünger gibt bei jeder Ernte eine Extrafrucht. **Rot und Grün lassen sich nicht kombinieren:** Auf rotem Ackerland wirkt grüner Dünger nicht und umgekehrt.",
+   "Gelber Dünger passt zu beiden, also ist Rot plus Gelb oder Grün plus Gelb das Beste, was ein Feld werden kann ({{food/f_fert_yellow}})."
+  ],
+  "en": [
+   "Green fertilizer adds an extra crop to every harvest. **Red and green do not combine:** green fertilizer does nothing on red farmland and the other way round.",
+   "Yellow goes with either, so red plus yellow or green plus yellow is the best a field can get ({{food/f_fert_yellow}})."
+  ],
+  "sources": [
+   "farmingforblockheads:green_fertilizer",
+   "srv config/farmingforblockheads-common.toml (fertilizerBonusCropChance 1.0)",
+   "farmingforblockheads-neoforge-1.21.1-21.1.14.jar FertilizerItem$FertilizerType.getBlockForTraits (no block for HEALTHY+RICH)",
+   "farmingforblockheads-neoforge-1.21.1-21.1.14.jar assets/farmingforblockheads/blockstates (fertilized_farmland_healthy_stable, fertilized_farmland_rich_stable)"
+  ]
+ },
+ "f_fert_yellow": {
+  "de": [
+   "Gelber Dünger auf rotem oder grünem Ackerland ergibt die stabile Version, die ihre Wirkung behält und nicht mehr zertrampelt wird.",
+   "Für ein Feld, auf dem Tiere oder Spieler laufen, lohnt sich Gelb immer."
+  ],
+  "en": [
+   "Yellow fertilizer on red or green farmland makes the stable version, which keeps its effect and can no longer be trampled.",
+   "For a field that animals or players walk across, yellow is always worth it."
+  ],
+  "sources": [
+   "farmingforblockheads:yellow_fertilizer",
+   "farmingforblockheads-neoforge-1.21.1-21.1.14.jar FertilizerItem$FertilizerType.getBlockForTraits (STABLE+HEALTHY, STABLE+RICH)"
+  ]
+ },
+ "f_crates": {
+  "de": [
+   "Kisten gibt es für Tomaten, Zwiebeln, Kohl, Karotten, Kartoffeln und Rote Bete. Reis kommt in einen [[farmersdelight:rice_bag]], Reisrispen in einen Reisballen, Stroh in ein Strohbündel.",
+   "Ein Block ersetzt neun Gegenstände, das schont Truhen und Rucksack."
+  ],
+  "en": [
+   "There are crates for tomatoes, onions, cabbage, carrots, potatoes and beetroot. Rice goes into a [[farmersdelight:rice_bag]], rice panicles into a rice bale, straw into a straw bale.",
+   "One block holds nine items, which saves space in chests and backpacks."
+  ],
+  "sources": [
+   "farmersdelight:tomato_crate",
+   "farmersdelight:carrot_crate",
+   "srv config/farmersdelight-common.toml (enableVanillaCropCrates true)",
+   "farmersdelight:rice_bag",
+   "farmersdelight:rice_bale"
+  ]
+ },
+ "f_trough": {
+  "de": [
+   "Der Trog füttert Tiere im Umkreis von 8 Blöcken, die sich paaren können, und hört bei 24 Tieren einer Art auf. Leg das Futter hinein, das die Tierart frisst.",
+   "So füllt sich die Weide nicht endlos und der Server bleibt flüssig."
+  ],
+  "en": [
+   "The trough feeds animals within 8 blocks that are ready to breed and stops at 24 animals of one kind. Put in the food that kind of animal eats.",
+   "That way the pen does not fill up forever and the server stays smooth."
+  ],
+  "sources": [
+   "farmingforblockheads:feeding_trough",
+   "srv config/farmingforblockheads-common.toml (feedingTroughRange 8, feedingTroughMaxAnimals 24)"
+  ]
+ },
+ "f_nest": {
+  "de": [
+   "Das Nest sammelt die Eier aller Hühner im Umkreis von 8 Blöcken. Ein Trichter darunter zieht sie heraus.",
+   "Mit dem Futtertrog zusammen ({{food/f_trough}}) läuft eine Eierfarm ganz ohne dich."
+  ],
+  "en": [
+   "The nest collects the eggs of every chicken within 8 blocks. A hopper below pulls them out.",
+   "Together with the feeding trough ({{food/f_trough}}) an egg farm runs without you."
+  ],
+  "sources": [
+   "farmingforblockheads:chicken_nest",
+   "srv config/farmingforblockheads-common.toml (chickenNestRange 8)"
+  ],
+  "client": [
+   "hopper extraction from the chicken nest"
+  ]
+ },
+ "f_market": {
+  "de": [
+   "Auf diesem Server verkauft der Markt: Weizen-, Melonen-, Kürbis- und Rote-Bete-Samen, Tomaten- und Weißkohlsamen, Vanilla- und Biomes-O'-Plenty-Setzlinge, Knochenmehl und Baumdünger, alles für einen Smaragd.",
+   "**Keine** Blumen, keinen Dünger und keine wilden Pflanzen von Farmer's Delight: Diese Angebote sind in der Mod optional und hier nicht eingeschaltet. Dazu kommen die Productive-Trees-Setzlinge für 1, 2 oder 4 Smaragde ({{cooking/hybrids}})."
+  ],
+  "en": [
+   "On this server the market sells wheat, melon, pumpkin and beetroot seeds, tomato and cabbage seeds, vanilla and Biomes O' Plenty saplings, bone meal and tree fertilizer, all for one emerald.",
+   "**No** flowers, no fertilizer and no Farmer's Delight wild plants: those offers are optional in the mod and not turned on here. On top come the Productive Trees saplings for 1, 2 or 4 emeralds ({{cooking/hybrids}})."
+  ],
+  "sources": [
+   "farmingforblockheads:market",
+   "farmingforblockheads-neoforge-1.21.1-21.1.14.jar data/*/market_presets (minecraft:flowers, farmingforblockheads:fertilizer, farmersdelight:wildplants enabled false)",
+   "srv config/farmingforblockheads-common.toml (enabledOptionalPresets [])",
+   "farmingforblockheads-neoforge-1.21.1-21.1.14.jar MarketPresetRegistry.isRecipeEnabled",
+   "kubejs/data/kronwerke/market_presets/productivetrees_saplings_1..3.json"
+  ]
+ },
+ "f_ham": {
+  "de": [
+   "Die Chance liegt bei 50 Prozent pro Schwein, mit Plünderung I bei 60 und mit jeder weiteren Stufe 10 Prozent höher. Ein brennendes Schwein lässt gleich [[farmersdelight:smoked_ham]] fallen.",
+   "Den Räucherschinken brauchst du für den Honigglasierten Schinken ({{cooking/m_ham}})."
+  ],
+  "en": [
+   "The chance is 50 percent per pig, 60 with Looting I and 10 percent more per extra level. A burning pig drops [[farmersdelight:smoked_ham]] right away.",
+   "Smoked ham goes into the honey glazed ham ({{cooking/m_ham}})."
+  ],
+  "sources": [
+   "FarmersDelight-1.21.1-1.3.4.jar loot_modifiers/scavenging_ham_from_pig.json, scavenging_smoked_ham_from_pig.json",
+   "farmersdelight:smoked_ham (smoking)"
+  ]
+ },
+ "f_dog_food": {
+  "de": [
+   "Jedes rohe Fleisch zählt, auch Hähnchen oder Hammel. Verrottetes Fleisch hast du von Zombies, Reis aus {{food/f_rice}}.",
+   "Füttern geht mit Rechtsklick auf den gezähmten Wolf."
+  ],
+  "en": [
+   "Any raw meat counts, chicken or mutton too. Rotten flesh comes from zombies, rice from {{food/f_rice}}.",
+   "Feed it with a right click on the tamed wolf."
+  ],
+  "sources": [
+   "farmersdelight:cooking/dog_food (#c:foods/raw_meat)"
+  ],
+  "client": [
+   "feeding by right click on the tamed wolf"
+  ]
+ },
+ "f_horse_feed": {
+  "de": [
+   "Statt des Heuballens geht auch ein [[farmersdelight:rice_bale]] aus neun Reisrispen. Die Goldene Karotte kostet acht Goldnuggets und eine Karotte.",
+   "Gefüttert wird mit Rechtsklick auf das gezähmte Reittier."
+  ],
+  "en": [
+   "A [[farmersdelight:rice_bale]] made of nine rice panicles works instead of the hay bale. The golden carrot costs eight gold nuggets and a carrot.",
+   "Feed it with a right click on the tamed mount."
+  ],
+  "sources": [
+   "farmersdelight:horse_feed",
+   "farmersdelight:rice_bale"
+  ],
+  "client": [
+   "feeding by right click on the tamed mount"
+  ]
+ },
+ "f_rod": {
+  "de": [
+   "Die [[create:iron_sheet]] presst die Mechanische Presse aus Eisenbarren ({{create/sheets}}). Bessere Ruten: Gold und Diamant, und die Neptunium-Angelrute ({{food/f_neptunium}}), bei der Fische öfter anbeißen.",
+   "In die Rute gehören ein Haken ({{food/f_hook}}), Köder ({{food/f_worm_farm}}), eine [[aquaculture:fishing_line]] aus vier Fäden und einem Eisenbarren und ein [[aquaculture:bobber]] aus zwei Ton und einer Nautilusschale."
+  ],
+  "en": [
+   "The mechanical press makes the [[create:iron_sheet]] from iron ingots ({{create/sheets}}). Better rods: gold, diamond and the neptunium rod ({{food/f_neptunium}}), on which fish bite more often.",
+   "The rod takes a hook ({{food/f_hook}}), bait ({{food/f_worm_farm}}), a [[aquaculture:fishing_line]] made of four string and an iron ingot, and a [[aquaculture:bobber]] made of two clay and a nautilus shell."
+  ],
+  "sources": [
+   "aquaculture:iron_fishing_rod (create:iron_sheet)",
+   "aquaculture:fishing_line",
+   "aquaculture:bobber",
+   "Aquaculture-1.21.1-2.7.21.jar assets lang aquaculture.neptunium_fishing_rod.tooltip.desc"
+  ]
+ },
+ "f_hook": {
+  "de": [
+   "Der Eisenhaken braucht vier Eisennuggets und schont die Rute: 20 Prozent Chance, dass ein Wurf keine Haltbarkeit kostet. Die anderen Haken baust du aus ihm mit vier Zutaten im Kreuz drumherum.",
+   "Gold bringt mehr Glück, Federn werfen weiter, Eisennuggets kürzer, Redstone gibt dir mehr Zeit zum Einholen."
+  ],
+  "en": [
+   "The iron hook takes four iron nuggets and saves the rod: a 20 percent chance that a cast costs no durability. The other hooks are built from it with four items around it in a cross.",
+   "Gold adds luck, feathers cast further, iron nuggets shorter, redstone gives you more time to reel in."
+  ],
+  "sources": [
+   "aquaculture:iron_hook",
+   "aquaculture:gold_hook",
+   "aquaculture:light_hook",
+   "aquaculture:heavy_hook",
+   "aquaculture:redstone_hook",
+   "Aquaculture-1.21.1-2.7.21.jar assets/aquaculture/lang/en_us.json (hook tooltips)"
+  ]
+ },
+ "f_worm_farm": {
+  "de": [
+   "Die Wurmfarm funktioniert wie ein Komposter: Alles, was in einen Komposter passt, füllt sie, und wenn sie voll ist, holst du einen [[aquaculture:worm]] heraus.",
+   "Ein Trichter darunter sammelt die Würmer ein, wenn du die Farm automatisch fütterst."
+  ],
+  "en": [
+   "The worm farm works like a composter: anything that fits into a composter fills it, and when it is full you take out a [[aquaculture:worm]].",
+   "A hopper below collects the worms if you feed the farm automatically."
+  ],
+  "sources": [
+   "aquaculture:worm_farm",
+   "Aquaculture-1.21.1-2.7.21.jar WormFarmBlock extends ComposterBlock (NeoForgeDataMaps.COMPOSTABLES)"
+  ],
+  "client": [
+   "hopper extraction from the worm farm"
+  ]
+ },
+ "f_fillet": {
+  "de": [
+   "Wie viele Filets ein Fisch gibt, hängt von seinem Gewicht ab. Das Messer bleibt in der Werkbank liegen und verliert pro Fisch Haltbarkeit.",
+   "Aus [[aquaculture:fish_bones]] werden drei Knochenmehl. Rohe Filets brätst du zu Gekochtem Fischfilet oder rollst sie zu Sushi ({{food/f_sushi}})."
+  ],
+  "en": [
+   "How many fillets a fish gives depends on its weight. The knife stays in the grid and loses durability per fish.",
+   "[[aquaculture:fish_bones]] make three bone meal. Cook raw fillets into cooked fish fillet or roll them into sushi ({{food/f_sushi}})."
+  ],
+  "sources": [
+   "aquaculture:iron_fillet_knife",
+   "aquaculture:fish_fillet (crafting_special_fish_fillet)",
+   "aquaculture:bonemeal_from_fish_bones (3)",
+   "aquaculture:cooked_fish_fillet",
+   "Aquaculture-1.21.1-2.7.21.jar FishFilletRecipe (FISH_WEIGHT, getRemainingItems hurtAndBreak)"
+  ],
+  "client": [
+   "which fish can be filleted (Aquaculture FISH_DATA)"
+  ]
+ },
+ "f_tackle": {
+  "de": [
+   "Das Muster: oben grüner Farbstoff, Eisenbarren, grüner Farbstoff (Seetang oder Algen gehen auch), in der Mitte Eisen, Truhe, Eisen, unten Eisen, Eisenblock, Eisen.",
+   "Darin rüstest du die Rute mit Haken, Köder, Leine und Schwimmer aus ({{food/f_hook}}, {{food/f_rod}})."
+  ],
+  "en": [
+   "The pattern: green dye, iron ingot, green dye on top (kelp or algae work too), iron, chest, iron in the middle, iron, iron block, iron at the bottom.",
+   "Inside it you fit the rod with hook, bait, line and bobber ({{food/f_hook}}, {{food/f_rod}})."
+  ],
+  "sources": [
+   "aquaculture:tackle_box",
+   "Aquaculture-1.21.1-2.7.21.jar data/aquaculture/tags/item/tackle_box_green.json",
+   "Aquaculture-1.21.1-2.7.21.jar loot_table/blocks/tackle_box.json"
+  ],
+  "client": [
+   "rod equipment slots inside the tackle box"
+  ]
+ },
+ "f_sushi": {
+  "de": [
+   "Achtung: Das Rezept will [[minecraft:seagrass]], nicht Seetang. Seegras bekommst du mit der Schere vom Meeresboden.",
+   "Zusammen mit einem [[aquaculture:fish_fillet_raw]] aus {{food/f_fillet}} ist das schon das ganze Rezept."
+  ],
+  "en": [
+   "Watch out: the recipe wants [[minecraft:seagrass]], not kelp. You get seagrass with shears from the sea floor.",
+   "Together with a [[aquaculture:fish_fillet_raw]] from {{food/f_fillet}} that is the whole recipe."
+  ],
+  "sources": [
+   "aquaculture:sushi (aquaculture:fish_fillet_raw, minecraft:seagrass)"
+  ]
+ },
+ "f_neptunium": {
+  "de": [
+   "Der Neptunium-Fang hat Gewicht 1 neben 85 für Fische und 10 für Müll, also etwa ein Fang von hundert. Davon ist je ein Drittel ein Nugget, normale Schatzbeute oder ein [[aquaculture:neptunes_bounty]].",
+   "Neptune's Bounty enthält 1 bis 4 Neptuniumbarren oder gleich ein Werkzeug oder Rüstungsteil aus Neptunium. Neun [[aquaculture:neptunium_nugget]] ergeben einen Barren."
+  ],
+  "en": [
+   "The neptunium catch has weight 1 next to 85 for fish and 10 for junk, so about one catch in a hundred. A third of those is a nugget, a third normal treasure, a third a [[aquaculture:neptunes_bounty]].",
+   "Neptune's Bounty holds 1 to 4 neptunium ingots or a ready neptunium tool or armour piece. Nine [[aquaculture:neptunium_nugget]] make an ingot."
+  ],
+  "sources": [
+   "srv config/aquaculture-common.toml (Neptunium loot table weight 1, fish 85, junk 10)",
+   "Aquaculture-1.21.1-2.7.21.jar loot_table/gameplay/fishing/neptunium.json",
+   "Aquaculture-1.21.1-2.7.21.jar loot_table/box/neptunes_bounty.json",
+   "aquaculture:neptunium_ingot_from_nuggets"
+  ]
+ },
+ "f_neptunium_hoe": {
+  "de": [
+   "Auch eine fertige Neptunium-Hacke kann direkt in Neptune's Bounty liegen ({{food/f_neptunium}}). Pflügen musst du jedes Feld mit dieser Hacke, sonst trocknet es wie normal aus.",
+   "Für ein Feld in der Höhle brauchst du trotzdem Licht zum Wachsen."
+  ],
+  "en": [
+   "A ready neptunium hoe can also come in Neptune's Bounty ({{food/f_neptunium}}). Every block has to be tilled with this hoe, otherwise it dries out as usual.",
+   "A cave field still needs light for the crops to grow."
+  ],
+  "sources": [
+   "aquaculture:neptunium_hoe",
+   "Aquaculture-1.21.1-2.7.21.jar FarmlandMoistBlock",
+   "Aquaculture-1.21.1-2.7.21.jar loot_table/box/neptunes_bounty.json"
+  ]
+ },
+ "f_neptunium_armor": {
+  "de": [
+   "Die volle Rüstung kostet 24 Neptuniumbarren (Helm 5, Brustplatte 8, Beinlinge 7, Schuhe 4). Spar dir Barren: Neptune's Bounty enthält oft schon ein fertiges Teil ({{food/f_neptunium}}).",
+   "Die Brustplatte allein reicht für die Quest und ist das wichtigste Teil, weil du damit unter Wasser atmest."
+  ],
+  "en": [
+   "The full set costs 24 neptunium ingots (helmet 5, chestplate 8, leggings 7, boots 4). Save ingots: Neptune's Bounty often holds a finished piece ({{food/f_neptunium}}).",
+   "The chestplate alone is enough for the quest and is the most important piece, since it lets you breathe underwater."
+  ],
+  "sources": [
+   "aquaculture:neptunium_chestplate (S S/SSS/SSS)",
+   "Aquaculture-1.21.1-2.7.21.jar NeptuniumArmor.inventoryTick (WATER_BREATHING on chest)",
+   "Aquaculture-1.21.1-2.7.21.jar loot_table/box/neptunes_bounty.json"
+  ]
+ },
+ "f_treasure": {
+  "de": [
+   "Die [[aquaculture:treasure_chest]] enthält genau einen Gegenstand: Eisen, Gold, Diamant oder Smaragd. Eine [[aquaculture:tin_can]] schmilzt im Ofen zu sieben Eisennuggets.",
+   "Aus [[aquaculture:driftwood]] werden vier Eichenbretter, aus Gräten drei Knochenmehl."
+  ],
+  "en": [
+   "The [[aquaculture:treasure_chest]] holds exactly one item: iron, gold, diamond or emerald. A [[aquaculture:tin_can]] smelts into seven iron nuggets.",
+   "[[aquaculture:driftwood]] makes four oak planks, fish bones three bone meal."
+  ],
+  "sources": [
+   "Aquaculture-1.21.1-2.7.21.jar loot_table/box/treasure_chest.json",
+   "aquaculture:tin_can_to_iron_nugget (7)",
+   "aquaculture:planks_from_driftwood (4)",
+   "aquaculture:bonemeal_from_fish_bones (3)"
+  ]
+ },
+ "f_pantry": {
+  "de": [
+   "Für 24 Portionen brauchst du 24 Schüsseln, alles kommt aus dem Topf. Der Gebratene Reis nimmt rohen Reis, Ei, Karotte und Zwiebel ({{food/f_rice_cooked}}).",
+   "Die Mengen hier sind feste Questmengen, nichts davon geht an den Obelisken. Danach weiter im Kapitel Kochen ({{cooking/table}})."
+  ],
+  "en": [
+   "24 servings take 24 bowls, all of it comes out of the pot. Fried rice takes raw rice, an egg, a carrot and an onion ({{food/f_rice_cooked}}).",
+   "These are fixed quest amounts, none of it goes to the obelisk. Then carry on in the Cooking chapter ({{cooking/table}})."
+  ],
+  "sources": [
+   "farmersdelight:cooking/vegetable_soup",
+   "farmersdelight:cooking/beef_stew",
+   "farmersdelight:cooking/fried_rice"
+  ]
+ }
+}

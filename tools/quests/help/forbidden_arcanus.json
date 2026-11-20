@@ -1,0 +1,570 @@
+{
+ "crystals": {
+  "de": [
+   "Arcane Crystal Ore gibt es auch in der Farmwelt, dort mit fünf Adern pro Chunk über die ganze Höhe. Darkstone, Runic Stone und Stella Arcanum liegen dagegen nur in der normalen Oberwelt.",
+   "Die ersten Schritte: {{forbidden_arcanus/dust}} und {{forbidden_arcanus/darkstone}}, beide gleich danach."
+  ],
+  "en": [
+   "Arcane Crystal Ore also generates in the farm world, five veins per chunk over the whole height. Darkstone, Runic Stone and Stella Arcanum are only in the normal overworld.",
+   "The first steps are {{forbidden_arcanus/dust}} and {{forbidden_arcanus/darkstone}}, both right after this."
+  ],
+  "sources": [
+   "kubejs/data/kronwerke/worldgen/placed_feature/mine_arcane_crystal.json (count 5, Y -60 to 432)",
+   "kubejs/data/kronwerke/worldgen/biome/mine.json",
+   "forbidden_arcanus-2.6.1.jar data/forbidden_arcanus/neoforge/biome_modifier (#minecraft:is_overworld)",
+   "kubejs/data/kronwerke/chapters/stages/stage2.json"
+  ]
+ },
+ "dust": {
+  "de": [
+   "Im Clibano dauert es nur 4 Sekunden, und manchmal bleibt ein Kristallrest übrig ({{forbidden_arcanus/clibano}}). Neun [[forbidden_arcanus:arcane_crystal_dust_speck]] ergeben ebenfalls einen Staub.",
+   "Den meisten Staub frisst Deorum: Mit dem Mixer-Rezept von Kronwerke sind es zwei pro Barren, überhitzt einer für zwei Barren ({{forbidden_arcanus/deorum}})."
+  ],
+  "en": [
+   "In the Clibano it takes only 4 seconds, and sometimes a crystal residue is left over ({{forbidden_arcanus/clibano}}). Nine [[forbidden_arcanus:arcane_crystal_dust_speck]] also make one dust.",
+   "Deorum eats most of the dust: with Kronwerke's mixer recipe it is two per ingot, superheated one for two ingots ({{forbidden_arcanus/deorum}})."
+  ],
+  "sources": [
+   "forbidden_arcanus:smelting/arcane_crystal_dust_from_smelting (150)",
+   "forbidden_arcanus:blasting/arcane_crystal_dust_from_blasting (75)",
+   "forbidden_arcanus:clibano_combustion/arcane_crystal_dust_from_clibano_combustion (80, residue 0.1)",
+   "forbidden_arcanus:arcane_crystal_dust (speck)",
+   "kronwerke:round/deorum_heated",
+   "kronwerke:round/deorum_superheated"
+  ]
+ },
+ "darkstone": {
+  "de": [
+   "Den meisten Darkstone kostet der Boden der Schmiede: 57 Polished Darkstone, davon 9 für die gemeißelten Blöcke ({{forbidden_arcanus/base}}). Der Clibano braucht dann noch 8 Polished Darkstone und 17 [[forbidden_arcanus:polished_darkstone_bricks]] ({{forbidden_arcanus/clibano}}).",
+   "Vier Polished Darkstone im Quadrat ergeben vier Bricks. Runic Stone sitzt oft mitten im Darkstone als Runic Darkstone ({{forbidden_arcanus/runes}})."
+  ],
+  "en": [
+   "The forge floor takes most of the darkstone: 57 polished darkstone, 9 of them for the chiseled blocks ({{forbidden_arcanus/base}}). The Clibano then needs 8 more polished darkstone and 17 [[forbidden_arcanus:polished_darkstone_bricks]] ({{forbidden_arcanus/clibano}}).",
+   "Four polished darkstone in a square make four bricks. Runic stone often sits inside darkstone as runic darkstone ({{forbidden_arcanus/runes}})."
+  ],
+  "sources": [
+   "forbidden_arcanus-2.6.1.jar ModBlockPatterns (BASE_HEPHAESTUS_PATTERN, CLIBANO_COMBUSTION_BASE)",
+   "forbidden_arcanus:polished_darkstone",
+   "forbidden_arcanus:polished_darkstone_bricks",
+   "forbidden_arcanus:chiseled_polished_darkstone",
+   "forbidden_arcanus-2.6.1.jar worldgen/configured_feature/ore_rune.json (runic_darkstone in darkstone)"
+  ]
+ },
+ "mundabitur": {
+  "de": [
+   "Ein Rezept gibt vier Staub. Du brauchst je einen zum Erwecken von Schmiede, Clibano und jedem Obelisken und einen pro [[forbidden_arcanus:quantum_core]]. Für Deorum brauchst du ihn mit dem Kronwerke-Mixer nicht ({{forbidden_arcanus/deorum}}).",
+   "Den aufgeladenen Creeper kannst du nutzen: Seine Explosion lässt Skelette ihren Schädel fallen, den du für {{forbidden_arcanus/skull}} brauchst."
+  ],
+  "en": [
+   "One recipe makes four dust. You need one each to awaken the forge, the Clibano and every obelisk, and one per [[forbidden_arcanus:quantum_core]]. With the Kronwerke mixer, deorum needs none ({{forbidden_arcanus/deorum}}).",
+   "The charged creeper is useful: its explosion makes skeletons drop their skull, which {{forbidden_arcanus/skull}} needs."
+  ],
+  "sources": [
+   "forbidden_arcanus:mundabitur_dust (count 4)",
+   "forbidden_arcanus-2.6.1.jar common/item/mundabitur (CreateForgeInteraction, CreateClibanoInteraction, CreateObeliskInteraction, ChargeCreeperInteraction)",
+   "forbidden_arcanus:quantum_core",
+   "kronwerke:round/deorum_heated"
+  ],
+  "client": [
+   "skeleton skull drop from a charged creeper explosion"
+  ]
+ },
+ "deorum": {
+  "de": [
+   "Kronwerke hat ein zweites Rezept im Create-Mixer: ein Goldbarren und zwei Arcane Crystal Dust über einem beheizten [[create:blaze_burner]] ergeben einen Barren, **überhitzt mit einem [[create:blaze_cake]] geben ein Goldbarren und ein Staub sogar zwei Barren**. Mundabitur Dust und Holzkohle brauchst du dann nicht.",
+   "Ein Barren macht acht Arcane Polished Darkstone, und neun Deorum Nuggets aus einem Barren vergolden die neun Blöcke für {{forbidden_arcanus/base}}."
+  ],
+  "en": [
+   "Kronwerke adds a second recipe in the Create mixer: a gold ingot and two arcane crystal dust over a heated [[create:blaze_burner]] make one ingot, **superheated with a [[create:blaze_cake]] one gold ingot and one dust make two ingots**. No mundabitur dust and no charcoal needed.",
+   "One ingot makes eight arcane polished darkstone, and the nine deorum nuggets from one ingot gild the nine blocks for {{forbidden_arcanus/base}}."
+  ],
+  "sources": [
+   "kronwerke:round/deorum_heated",
+   "kronwerke:round/deorum_superheated",
+   "kubejs/server_scripts/kronwerke/round.js",
+   "docs/RECIPES.md",
+   "forbidden_arcanus:arcane_polished_darkstone",
+   "forbidden_arcanus:gilded_chiseled_polished_darkstone"
+  ]
+ },
+ "runes": {
+  "de": [
+   "Im Hochofen brennt Runic Stone in der halben Zeit zur Rune, im Clibano bleibt dabei manchmal ein Runenrest. Neun Runen ergeben einen Runenblock.",
+   "Später brauchst du mehr: Forge-Stufe 4 will vier Runen auf den Podesten. Sammle beim Darkstone-Abbau einfach mit."
+  ],
+  "en": [
+   "In a blast furnace runic stone turns into a rune in half the time, and in the Clibano a rune residue is sometimes left. Nine runes make a rune block.",
+   "Later you need more: forge tier 4 wants four runes on the pedestals. Just collect them while mining darkstone."
+  ],
+  "sources": [
+   "forbidden_arcanus:smelting/rune_from_smelting (200)",
+   "forbidden_arcanus:blasting/rune_from_blasting (100)",
+   "forbidden_arcanus:clibano_combustion/rune_from_clibano_combustion (residue 0.1)",
+   "forbidden_arcanus:rune_from_rune_block",
+   "forbidden_arcanus-2.6.1.jar data/forbidden_arcanus/forbidden_arcanus/hephaestus_forge/ritual/upgrade_tier_4.json"
+  ]
+ },
+ "stellarite": {
+  "de": [
+   "Für alles zusammen brauchst du 17 Stellarite Pieces: 4 für Forge-Stufe 4, 1 für die Eternal Stella, 3 für den Boss Catcher und einen ganzen [[forbidden_arcanus:stellarite_block]] aus 9 Pieces für Forge-Stufe 5.",
+   "Stella Arcanum gibt es nur in der normalen Oberwelt, nicht in der Farmwelt."
+  ],
+  "en": [
+   "For everything together you need 17 stellarite pieces: 4 for forge tier 4, 1 for the Eternal Stella, 3 for the Boss Catcher and a whole [[forbidden_arcanus:stellarite_block]] of 9 pieces for forge tier 5.",
+   "Stella Arcanum only generates in the normal overworld, not in the farm world."
+  ],
+  "sources": [
+   "forbidden_arcanus-2.6.1.jar data/forbidden_arcanus/forbidden_arcanus/hephaestus_forge/ritual/upgrade_tier_4.json, eternal_stella.json, boss_catcher.json, upgrade_tier_5.json",
+   "forbidden_arcanus:stellarite_block_from_stellarite_piece",
+   "kubejs/data/kronwerke/worldgen/biome/mine.json"
+  ]
+ },
+ "base": {
+  "de": [
+   "Die Materialliste: 57 Polished Darkstone (48 als Boden, 9 werden über Platten zu Chiseled Polished Darkstone), 9 [[forbidden_arcanus:deorum_nugget]] und 4 [[forbidden_arcanus:arcane_polished_darkstone]] für die vier arkanen Blöcke.",
+   "Aus drei Blöcken werden sechs Platten, also kostet jeder gemeißelte Block genau einen Block. Danach geht es zu {{forbidden_arcanus/awaken}}."
+  ],
+  "en": [
+   "The material list: 57 polished darkstone (48 as floor, 9 become chiseled polished darkstone via slabs), 9 [[forbidden_arcanus:deorum_nugget]] and 4 [[forbidden_arcanus:arcane_polished_darkstone]] for the four arcane blocks.",
+   "Three blocks make six slabs, so every chiseled block costs exactly one block. Then go on to {{forbidden_arcanus/awaken}}."
+  ],
+  "sources": [
+   "forbidden_arcanus-2.6.1.jar ModBlockPatterns.BASE_HEPHAESTUS_PATTERN (48 P, 9 A gilded, 4 C chiseled arcane)",
+   "forbidden_arcanus:chiseled_polished_darkstone",
+   "forbidden_arcanus:gilded_chiseled_polished_darkstone",
+   "forbidden_arcanus:chiseled_arcane_polished_darkstone"
+  ]
+ },
+ "awaken": {
+  "de": [
+   "Stell Podeste und Obelisken **erst nach** dem Erwecken auf, vorher muss die Ebene über dem Boden an den markierten Stellen frei sein. Danach prüft die Schmiede nur noch den Boden selbst.",
+   "Die nächsten Schritte: {{forbidden_arcanus/pedestals}}, {{forbidden_arcanus/obelisks}} und {{forbidden_arcanus/gavel}}."
+  ],
+  "en": [
+   "Put up pedestals and obelisks **only after** awakening; before that the layer above the floor has to be clear at the marked spots. After that the forge only checks the floor itself.",
+   "The next steps: {{forbidden_arcanus/pedestals}}, {{forbidden_arcanus/obelisks}} and {{forbidden_arcanus/gavel}}."
+  ],
+  "sources": [
+   "forbidden_arcanus-2.6.1.jar ModBlockPatterns (HEPHAESTUS_PATTERN two layers, BASE_HEPHAESTUS_PATTERN floor only)",
+   "forbidden_arcanus-2.6.1.jar HephaestusForgeLevel.ONE (1000, 10, 10000, 900)"
+  ],
+  "client": [
+   "which blocks the upper layer tolerates at awakening"
+  ]
+ },
+ "pedestals": {
+  "de": [
+   "Podeste müssen **nicht** auf die vergoldeten Blöcke: Die Schmiede nimmt jedes Podest im Umkreis von 4 Blöcken. Lass die acht äußeren vergoldeten Plätze für die Obelisken frei, denn nur dort geben sie Aureal ({{forbidden_arcanus/obelisks}}).",
+   "Ein Podest kostet dreieinhalb Arcane Polished Darkstone (drei Platten und eine Säule aus zwei Blöcken) und drei Polished Darkstone."
+  ],
+  "en": [
+   "Pedestals do **not** have to stand on the gilded blocks: the forge takes every pedestal within 4 blocks. Keep the eight outer gilded spots for the obelisks, since only there do they give aureal ({{forbidden_arcanus/obelisks}}).",
+   "One pedestal costs three and a half arcane polished darkstone (three slabs and a pillar of two blocks) and three polished darkstone."
+  ],
+  "sources": [
+   "forbidden_arcanus-2.6.1.jar pedestal/effect/UpdateForgeIngredientsEffect (PoiManager.getInRange radius 4)",
+   "forbidden_arcanus-2.6.1.jar ArcaneCrystalObeliskBlock.shouldActivate (gilded below)",
+   "forbidden_arcanus:darkstone_pedestal",
+   "forbidden_arcanus:arcane_polished_darkstone_pillar"
+  ],
+  "client": [
+   "ritual reads pedestals placed on plain polished darkstone within 4 blocks"
+  ]
+ },
+ "obelisks": {
+  "de": [
+   "Jeder Obelisk kostet 18 Arcane Crystals, ein Arcane Polished Darkstone und einen Mundabitur Dust. Die Quest zählt die vier Kristallblöcke, die du vor dem Erwecken in der Tasche hast.",
+   "Steht er auf einem anderen Block, bleibt er aus. Setzt du ihn später auf einen vergoldeten Block, geht er wieder an."
+  ],
+  "en": [
+   "Each obelisk costs 18 arcane crystals, one arcane polished darkstone and one mundabitur dust. The quest counts the four crystal blocks you carry before awakening them.",
+   "On any other block it stays off. Put it on a gilded block later and it switches on again."
+  ],
+  "sources": [
+   "forbidden_arcanus-2.6.1.jar ModBlockPatterns.ARCANE_CRYSTAL_OBELISK_PATTERN",
+   "forbidden_arcanus-2.6.1.jar ArcaneCrystalObeliskBlock.neighborChanged/shouldActivate",
+   "forbidden_arcanus-2.6.1.jar ArcaneCrystalObeliskBlockEntity.serverTick (100 ticks, radius 4, 1 aureal)",
+   "forbidden_arcanus:arcane_crystal_block_from_arcane_crystal"
+  ]
+ },
+ "gavel": {
+  "de": [
+   "Der Kopf braucht **sechs** Tonklumpen, nicht fünf: drei oben, je einer links und rechts in der Mitte, einer unten in der Mitte.",
+   "Neben Eisen und Diamant gibt es Gavels aus Holz, Stein, Gold, Reinforced Deorum und Netherit, jedes kostet 50 Haltbarkeit pro Ritual. Den Diamanthammer baust du in {{forbidden_arcanus/diamond_gavel}}."
+  ],
+  "en": [
+   "The head takes **six** clay balls, not five: three on top, one left and one right in the middle row, one in the bottom middle.",
+   "Besides iron and diamond there are wooden, stone, gold, reinforced deorum and netherite gavels; each loses 50 durability per ritual. The diamond one is {{forbidden_arcanus/diamond_gavel}}."
+  ],
+  "sources": [
+   "forbidden_arcanus:blacksmith_gavel_head (pattern ###/# #/ # )",
+   "forbidden_arcanus:iron_blacksmith_gavel",
+   "forbidden_arcanus-2.6.1.jar RitualStarter.BLACKSMITH_GAVEL (50)",
+   "kubejs/data/kronwerke/chapters/stages/stage2.json (wooden/stone/golden/reinforced_deorum/netherite gavel)"
+  ]
+ },
+ "blood": {
+  "de": [
+   "Das [[forbidden_arcanus:test_tube]] kostet eine Glasflasche und eine Rune ({{forbidden_arcanus/runes}}). Blut ist der größte Posten der ersten Rituale: Das Upgrade auf Stufe 2 will 6 000 auf einmal.",
+   "Für Erfahrung sind verzauberte Bücher aus Verliesen und Angelbeute bequem, Xpetrified Orbs geben je 91 ({{forbidden_arcanus/xpetrified}})."
+  ],
+  "en": [
+   "The [[forbidden_arcanus:test_tube]] costs a glass bottle and a rune ({{forbidden_arcanus/runes}}). Blood is the biggest cost of the first rituals: the tier 2 upgrade wants 6 000 at once.",
+   "For experience, enchanted books from dungeons and fishing loot are handy, and Xpetrified Orbs give 91 each ({{forbidden_arcanus/xpetrified}})."
+  ],
+  "sources": [
+   "forbidden_arcanus:test_tube",
+   "forbidden_arcanus-2.6.1.jar data/forbidden_arcanus/forbidden_arcanus/hephaestus_forge/ritual/upgrade_tier_2.json (blood 6000)"
+  ]
+ },
+ "souls": {
+  "de": [
+   "Lost Souls spawnen in der normalen Oberwelt in Gruppen von 1 bis 3, **nicht in der Farmwelt**. Das [[forbidden_arcanus:utrem_jar]] sind übrigens nur sieben Glas, mit dem Edelwood Plank oben in der Mitte ({{forbidden_arcanus/soul_extractor}}).",
+   "Stufe 1 der Schmiede fasst nur 10 Seelen, das Upgrade auf Stufe 2 braucht genau diese 10."
+  ],
+  "en": [
+   "Lost souls spawn in the normal overworld in groups of 1 to 3, **not in the farm world**. The [[forbidden_arcanus:utrem_jar]] is only seven glass, with the edelwood plank top centre ({{forbidden_arcanus/soul_extractor}}).",
+   "Forge tier 1 holds only 10 souls, and the tier 2 upgrade needs exactly those 10."
+  ],
+  "sources": [
+   "forbidden_arcanus-2.6.1.jar neoforge/biome_modifier/add_lost_soul_overworld.json (#minecraft:is_overworld, 1 to 3)",
+   "forbidden_arcanus:utrem_jar (#X#/# #/###)",
+   "forbidden_arcanus-2.6.1.jar HephaestusForgeLevel.ONE (souls 10)",
+   "forbidden_arcanus-2.6.1.jar data/forbidden_arcanus/forbidden_arcanus/hephaestus_forge/ritual/upgrade_tier_2.json"
+  ]
+ },
+ "aureal": {
+  "de": [
+   "Für den Trank der Regeneration II brauchst du eine Ghastträne und Glowstone, also einen Ausflug in den Nether. Aureal Bottles liegen auch in Verliestruhen, dort mit 20 Prozent Chance ein bis zwei.",
+   "Eine Flasche auf eine Lost Soul macht daraus eine Enchanted Lost Soul ({{forbidden_arcanus/enchanted_soul}})."
+  ],
+  "en": [
+   "The Potion of Regeneration II needs a ghast tear and glowstone, so a trip to the Nether. Aureal bottles are also in dungeon chests, one or two with a 20 percent chance.",
+   "A bottle used on a lost soul turns it into an enchanted lost soul ({{forbidden_arcanus/enchanted_soul}})."
+  ],
+  "sources": [
+   "forbidden_arcanus:aureal_bottle (minecraft:strong_regeneration)",
+   "forbidden_arcanus-2.6.1.jar loot_modifiers/simple_dungeon_additions.json",
+   "forbidden_arcanus-2.6.1.jar loot_table/chests/additions/aureal_bottle_addition.json (0.2, 1 to 2)"
+  ]
+ },
+ "quantum": {
+  "de": [
+   "Die 155 Erfahrung kommen aus Erfahrungsflaschen oder verzauberten Büchern ({{forbidden_arcanus/blood}}). Mit einem Artisan Relic im Verstärker-Slot sind es nur 75 Prozent ({{forbidden_arcanus/enhancers}}).",
+   "Spawner findest du in Verliesen, verlassenen Minen und Netherfestungen. Mit Behutsamkeit abgebaut gibt ein Spawner kein Scrap."
+  ],
+  "en": [
+   "The 155 experience come from bottles o' enchanting or enchanted books ({{forbidden_arcanus/blood}}). With an Artisan Relic in the enhancer slot it is only 75 percent ({{forbidden_arcanus/enhancers}}).",
+   "Spawners are in dungeons, abandoned mineshafts and Nether fortresses. Mined with Silk Touch a spawner gives no scrap."
+  ],
+  "sources": [
+   "forbidden_arcanus-2.6.1.jar data/forbidden_arcanus/forbidden_arcanus/hephaestus_forge/ritual/quantum_catcher.json",
+   "forbidden_arcanus-2.6.1.jar forbidden_arcanus/enhancer/definition/artisan_relic.json (experience 0.75)",
+   "forbidden_arcanus-2.6.1.jar loot_modifiers/spawner_additions.json (not silk_touch)"
+  ]
+ },
+ "tier2": {
+  "de": [
+   "Der Edelwood Plank ist der lange Teil: Du brauchst vorher {{forbidden_arcanus/clibano}}, {{forbidden_arcanus/obsidiansteel}} und {{forbidden_arcanus/edelwood}}. Acht Zutaten heißt acht Podeste.",
+   "Die 10 Seelen füllen Stufe 1 bis zum Rand. Mit einem Crimson Stone im Verstärker-Slot reichen 5 ({{forbidden_arcanus/enhancers}})."
+  ],
+  "en": [
+   "The edelwood plank is the long part: you need {{forbidden_arcanus/clibano}}, {{forbidden_arcanus/obsidiansteel}} and {{forbidden_arcanus/edelwood}} first. Eight ingredients means eight pedestals.",
+   "The 10 souls fill tier 1 to the brim. With a Crimson Stone in the enhancer slot 5 are enough ({{forbidden_arcanus/enhancers}})."
+  ],
+  "sources": [
+   "forbidden_arcanus-2.6.1.jar data/forbidden_arcanus/forbidden_arcanus/hephaestus_forge/ritual/upgrade_tier_2.json",
+   "forbidden_arcanus-2.6.1.jar HephaestusForgeLevel.TWO (3000, 50, 15000, 1350)",
+   "forbidden_arcanus-2.6.1.jar enhancer/definition/crimson_stone.json (souls 0.5)",
+   "kubejs/data/kronwerke/chapters/stages/stage3.json (hephaestus_forge_tier_3)"
+  ]
+ },
+ "terrastomp": {
+  "de": [
+   "Das [[forbidden_arcanus:apply_modifier_smithing_template]] baust du aus acht Darkstone um eine Netherit-Aufwertung. Die Aufwertung findest du in Bastionen im Nether oder kopierst sie mit sieben Diamanten und Netherrack.",
+   "Elementarium findest du in Dschungeltempeln, Wüstentempeln und Ozeanruinen ({{forbidden_arcanus/enhancers}})."
+  ],
+  "en": [
+   "The [[forbidden_arcanus:apply_modifier_smithing_template]] is eight darkstone around a Netherite Upgrade. You find that template in Nether bastions or copy it with seven diamonds and netherrack.",
+   "Elementarium comes from jungle temples, desert temples and ocean ruins ({{forbidden_arcanus/enhancers}})."
+  ],
+  "sources": [
+   "forbidden_arcanus-2.6.1.jar data/forbidden_arcanus/forbidden_arcanus/hephaestus_forge/ritual/terrastomp_prism.json (forge_tier 2, elementarium)",
+   "forbidden_arcanus:apply_modifier_smithing_template",
+   "forbidden_arcanus:smithing/apply_demolishing_modifier",
+   "forbidden_arcanus-2.6.1.jar loot_modifiers/elementarium_addition.json"
+  ]
+ },
+ "enhancers": {
+  "de": [
+   "Die Chancen pro Truhe: Artisan Relic 28 Prozent (Rüstungs-, Werkzeug- und Waffenschmied im Dorf), Elementarium 21 Prozent (Dschungel- und Wüstentempel, kleine und große Ozeanruinen), Crimson Stone 18 Prozent (Plünderer-Außenposten), Maledictus Pact 18 Prozent (Bastionsschatz).",
+   "Ein Soul Crimson Stone erlässt einem Ritual alle Essenzen, der Crescent Moon spart je nach Tageszeit Aureal. Das Kronwerke-Rezept für das Artisan Relic nimmt einen [[create:precision_mechanism]] (im Spiel Präzisionsgetriebe)."
+  ],
+  "en": [
+   "Chance per chest: Artisan Relic 28 percent (village armorer, toolsmith and weaponsmith), Elementarium 21 percent (jungle and desert temples, small and big ocean ruins), Crimson Stone 18 percent (pillager outposts), Maledictus Pact 18 percent (bastion treasure).",
+   "A Soul Crimson Stone waives every essence for one ritual, the Crescent Moon saves aureal depending on the time of day. The Kronwerke recipe for the Artisan Relic takes a [[create:precision_mechanism]]."
+  ],
+  "sources": [
+   "forbidden_arcanus-2.6.1.jar loot_modifiers/*_addition.json, loot_table/chests/additions (0.28, 0.21, 0.18, 0.18)",
+   "forbidden_arcanus-2.6.1.jar forbidden_arcanus/enhancer/definition/soul_crimson_stone.json, crescent_moon.json",
+   "kronwerke:links/artisan_relic",
+   "forbidden_arcanus-2.6.1.jar FAVillagerTrades (artisan relic 18 emeralds)"
+  ]
+ },
+ "outlook": {
+  "de": [
+   "Die Draco-Arcanus-Rituale brauchen nur Forge-Stufe 2, die Teile sind aber bis Stufe 4 gesperrt. Die Tyr-Rüstung verlangt Forge-Stufe 4.",
+   "Forge-Stufe 5 auf einen Blick: ein Stellarite Block in der Mitte, auf den Podesten 4 Sculk-Katalysatoren, 2 Dark Nether Stars und 2 Dragon Scales, dazu 5 000 Aureal, 20 000 Blut und 500 Seelen."
+  ],
+  "en": [
+   "The Draco Arcanus rituals only need forge tier 2, but the pieces are locked until stage 4. The Tyr armour needs forge tier 4.",
+   "Forge tier 5 at a glance: a stellarite block in the middle, 4 sculk catalysts, 2 Dark Nether Stars and 2 Dragon Scales on the pedestals, plus 5 000 aureal, 20 000 blood and 500 souls."
+  ],
+  "sources": [
+   "forbidden_arcanus-2.6.1.jar data/forbidden_arcanus/forbidden_arcanus/hephaestus_forge/ritual/draco_arcanus_*.json (forge_tier 2)",
+   "forbidden_arcanus-2.6.1.jar data/forbidden_arcanus/forbidden_arcanus/hephaestus_forge/ritual/tyr_*.json (forge_tier 4)",
+   "forbidden_arcanus-2.6.1.jar data/forbidden_arcanus/forbidden_arcanus/hephaestus_forge/ritual/upgrade_tier_5.json",
+   "kubejs/data/kronwerke/chapters/stages/stage4.json"
+  ]
+ },
+ "clibano": {
+  "de": [
+   "Für den Würfel brauchst du 17 Polished Darkstone Bricks und 8 Polished Darkstone. Der [[create:blaze_burner]] im Kern ist eine Kronwerke-Änderung statt des Hochofens.",
+   "Der Rest ist nicht bei jedem Erz gleich: Eisen, Kupfer und Kohle lassen in 33 Prozent der Fälle einen Rest, Gold in 20, Diamant und Smaragd in 10, Netherit in 5 Prozent. Bei Eisen sind das etwa 1,33 Barren pro Erz."
+  ],
+  "en": [
+   "The cube takes 17 polished darkstone bricks and 8 polished darkstone. The [[create:blaze_burner]] in the core is a Kronwerke change, replacing the blast furnace.",
+   "The residue chance depends on the ore: iron, copper and coal leave a residue 33 percent of the time, gold 20, diamond and emerald 10, netherite 5 percent. For iron that is about 1.33 ingots per ore."
+  ],
+  "sources": [
+   "forbidden_arcanus-2.6.1.jar ModBlockPatterns.CLIBANO_COMBUSTION_BASE",
+   "forbidden_arcanus:clibano_core",
+   "kubejs/server_scripts/kronwerke/round.js (blast_furnace to blaze_burner)",
+   "forbidden_arcanus:clibano_combustion/* (residue chances)",
+   "forbidden_arcanus-2.6.1.jar forbidden_arcanus/residue_type/iron.json (9 to iron block)"
+  ]
+ },
+ "obsidiansteel": {
+  "de": [
+   "Das [[forbidden_arcanus:artisan_relic]] bekommst du auf drei Wegen: Kronwerke-Rezept aus vier Deorum Ingots um ein Präzisionsgetriebe, mit 28 Prozent aus Schmiedetruhen im Dorf, oder vom Wandernden Händler für 18 Smaragde.",
+   "Acht Barren brauchst du für den Schädel ({{forbidden_arcanus/skull}}), je einen pro vier Corrupti Dust ({{forbidden_arcanus/edelwood}}) und vier pro Dark Nether Star."
+  ],
+  "en": [
+   "You get the [[forbidden_arcanus:artisan_relic]] three ways: the Kronwerke recipe of four deorum ingots around a precision mechanism, a 28 percent chance in village smith chests, or from the wandering trader for 18 emeralds.",
+   "You need eight ingots for the skull ({{forbidden_arcanus/skull}}), one per four corrupti dust ({{forbidden_arcanus/edelwood}}) and four per Dark Nether Star."
+  ],
+  "sources": [
+   "kronwerke:links/artisan_relic",
+   "forbidden_arcanus-2.6.1.jar loot_table/chests/additions/artisan_relic_addition.json (0.28)",
+   "forbidden_arcanus-2.6.1.jar FAVillagerTrades (18)",
+   "forbidden_arcanus:clibano_combustion/obsidiansteel_ingot_from_clibano_combustion",
+   "forbidden_arcanus:corrupti_dust",
+   "forbidden_arcanus:dark_nether_star"
+  ]
+ },
+ "skull": {
+  "de": [
+   "Einen [[minecraft:skeleton_skull]] lassen Skelette nur fallen, wenn ein aufgeladener Creeper sie sprengt. Mundabitur Dust auf einen Creeper lädt ihn auf ({{forbidden_arcanus/mundabitur}}).",
+   "Repariere den Schädel rechtzeitig, jede Stufe kostet zwei Obsidiansteel."
+  ],
+  "en": [
+   "Skeletons only drop a [[minecraft:skeleton_skull]] when a charged creeper blows them up. Mundabitur dust on a creeper charges it ({{forbidden_arcanus/mundabitur}}).",
+   "Repair the skull in time; each stage costs two obsidiansteel."
+  ],
+  "sources": [
+   "forbidden_arcanus:obsidian_skull",
+   "forbidden_arcanus:obsidian_skull_from_cracked_obsidian_skull",
+   "forbidden_arcanus-2.6.1.jar mundabitur/ChargeCreeperInteraction"
+  ],
+  "client": [
+   "skeleton skull drop from a charged creeper explosion"
+  ]
+ },
+ "edelwood": {
+  "de": [
+   "Das [[forbidden_arcanus:ender_pearl_fragment]] machst du aus einer Enderperle (gibt vier), oder Endermen lassen bis zu zwei fallen. Ein Edelwood Log gibt von Hand nur 2 Planks, **im Create-Sägewerk 6**.",
+   "Edelholz wächst nicht wild in der Welt, der Wandernde Händler oder die Corrupt Soul sind der einzige Weg."
+  ],
+  "en": [
+   "You craft the [[forbidden_arcanus:ender_pearl_fragment]] from an ender pearl (makes four), or endermen drop up to two. An edelwood log gives only 2 planks by hand, **6 in a Create saw**.",
+   "Edelwood does not grow wild in the world; the wandering trader or the corrupt soul are the only ways."
+  ],
+  "sources": [
+   "forbidden_arcanus:ender_pearl_fragment (count 4)",
+   "forbidden_arcanus-2.6.1.jar loot_table/entities/additions/ender_pearl_fragment_addition.json (0 to 2)",
+   "forbidden_arcanus:edelwood_planks (2)",
+   "create:cutting/runtime_generated/compat/create/tag_runtime_generated/compat/forbidden_arcanus/edelwood_to_edelwood_planks (6)",
+   "forbidden_arcanus-2.6.1.jar neoforge/biome_modifier (no edelwood trees)",
+   "forbidden_arcanus-2.6.1.jar FAVillagerTrades (growing_edelwood 6)"
+  ]
+ },
+ "dark_matter": {
+  "de": [
+   "Jeder Stamm, den du zu Dark Matter brennst, fehlt dir als 6 Planks im Sägewerk. Ein oder zwei Stämme reichen für den Anfang.",
+   "Wofür das Schwarze Loch gut ist, steht in {{forbidden_arcanus/xpetrified}}."
+  ],
+  "en": [
+   "Every log you burn into dark matter costs you 6 planks from the saw. One or two logs are enough to start.",
+   "What the black hole is good for is in {{forbidden_arcanus/xpetrified}}."
+  ],
+  "sources": [
+   "forbidden_arcanus:smelting/dark_matter (400)",
+   "create:cutting/runtime_generated/compat/create/tag_runtime_generated/compat/forbidden_arcanus/edelwood_to_edelwood_planks (6)"
+  ]
+ },
+ "dark_star": {
+  "de": [
+   "Den [[minecraft:nether_star]] lässt der Wither fallen ({{nether/f_wither}}). Vier Obsidiansteel kosten im Clibano vier Roheisen und vier Obsidian.",
+   "Forge-Stufe 5 braucht zwei Sterne, das Spectral Eye Amulet einen weiteren Netherstern."
+  ],
+  "en": [
+   "The Wither drops the [[minecraft:nether_star]] ({{nether/f_wither}}). Four obsidiansteel cost four raw iron and four obsidian in the Clibano.",
+   "Forge tier 5 needs two stars, the Spectral Eye Amulet another nether star."
+  ],
+  "sources": [
+   "forbidden_arcanus:dark_nether_star",
+   "forbidden_arcanus:spectral_eye_amulet",
+   "forbidden_arcanus-2.6.1.jar data/forbidden_arcanus/forbidden_arcanus/hephaestus_forge/ritual/upgrade_tier_5.json",
+   "forbidden_arcanus:clibano_combustion/obsidiansteel_ingot_from_clibano_combustion"
+  ]
+ },
+ "magic_farmland": {
+  "de": [
+   "Ein Arcane Crystal Dust reicht also für vier Felder. Die Verdopplung wirkt beim Abbauen, egal ob du erntest oder eine Maschine.",
+   "Am meisten bringt sie bei Pflanzen, die du oft erntest, etwa Weizen, Karotten oder Kartoffeln."
+  ],
+  "en": [
+   "So one arcane crystal dust covers four fields. The doubling happens when the crop is broken, whether you harvest or a machine does.",
+   "It pays off most on crops you harvest often, like wheat, carrots or potatoes."
+  ],
+  "sources": [
+   "forbidden_arcanus:arcane_bone_meal (count 4)",
+   "forbidden_arcanus-2.6.1.jar loot_modifiers/magical_farmland_crop_doubling.json"
+  ],
+  "client": [
+   "doubling also applies when a machine (Create harvester) breaks the crop"
+  ]
+ },
+ "diamond_gavel": {
+  "de": [
+   "Am Schmiedetisch wird der Diamanthammer mit einer Netherit-Aufwertung und einem Netheritbarren zum Netherite Blacksmith Gavel.",
+   "Wie der Eisenhammer verdoppelt auch er beim Erzabbau mit 30 Prozent Chance die Drops."
+  ],
+  "en": [
+   "At the smithing table the diamond gavel becomes a Netherite Blacksmith Gavel with a Netherite Upgrade and a netherite ingot.",
+   "Like the iron one, it doubles ore drops with a 30 percent chance."
+  ],
+  "sources": [
+   "forbidden_arcanus:diamond_blacksmith_gavel",
+   "forbidden_arcanus:smithing/netherite_blacksmith_gavel",
+   "forbidden_arcanus-2.6.1.jar loot_modifiers/blacksmith_gavel_ore_doubling.json (0.3)"
+  ]
+ },
+ "enchanted_soul": {
+  "de": [
+   "Eine Aureal Bottle wird so zu zehn Seelen. Für Rituale mit vielen Seelen, etwa Forge-Stufe 3 mit 50, sind das nur fünf verzauberte Seelen.",
+   "Stufe 1 der Schmiede fasst allerdings nur 10 Seelen, eine Enchanted Soul füllt sie also komplett."
+  ],
+  "en": [
+   "One aureal bottle becomes ten souls this way. For rituals with many souls, like forge tier 3 with 50, that is only five enchanted souls.",
+   "Forge tier 1 holds only 10 souls, though, so one enchanted soul fills it completely."
+  ],
+  "sources": [
+   "forbidden_arcanus-2.6.1.jar data/forbidden_arcanus/forbidden_arcanus/hephaestus_forge/ritual/upgrade_tier_3.json (souls 50)",
+   "forbidden_arcanus-2.6.1.jar HephaestusForgeLevel.ONE (souls 10)",
+   "forbidden_arcanus:aureal_bottle"
+  ]
+ },
+ "ferrognetic": {
+  "de": [
+   "Die Honigflasche für das [[forbidden_arcanus:wax]] füllst du an einem vollen Bienenstock, Schleimbälle lassen Schleime fallen. Ein Rezept Wax gibt zwei, genug für das Ritual.",
+   "Für den Werkzeug-Modifikator brauchst du das Smithing Template aus {{forbidden_arcanus/terrastomp}}."
+  ],
+  "en": [
+   "Fill the honey bottle for the [[forbidden_arcanus:wax]] at a full beehive; slimes drop slime balls. One wax recipe makes two, enough for the ritual.",
+   "The tool modifier needs the Smithing Template from {{forbidden_arcanus/terrastomp}}."
+  ],
+  "sources": [
+   "forbidden_arcanus-2.6.1.jar data/forbidden_arcanus/forbidden_arcanus/hephaestus_forge/ritual/ferrognetic_mixture.json",
+   "forbidden_arcanus:wax (count 2)",
+   "forbidden_arcanus:smithing/apply_magnetized_modifier"
+  ]
+ },
+ "smelter_prism": {
+  "de": [
+   "Der Arcane Crystal Block kostet neun Kristalle. Das Elementarium kommt mit 21 Prozent aus Dschungeltempeln, Wüstentempeln und Ozeanruinen ({{forbidden_arcanus/enhancers}}).",
+   "Das Template für den Schmiedetisch baust du wie in {{forbidden_arcanus/terrastomp}} beschrieben."
+  ],
+  "en": [
+   "The arcane crystal block costs nine crystals. Elementarium comes with a 21 percent chance from jungle temples, desert temples and ocean ruins ({{forbidden_arcanus/enhancers}}).",
+   "Build the smithing template as described in {{forbidden_arcanus/terrastomp}}."
+  ],
+  "sources": [
+   "forbidden_arcanus-2.6.1.jar data/forbidden_arcanus/forbidden_arcanus/hephaestus_forge/ritual/smelter_prism.json",
+   "forbidden_arcanus:smithing/apply_fiery_modifier",
+   "forbidden_arcanus-2.6.1.jar loot_table/chests/additions/elementarium_addition.json (0.21)"
+  ]
+ },
+ "magic_wand": {
+  "de": [
+   "Den [[forbidden_arcanus:edelwood_stick]] gibt es an der Werkbank nicht, er kommt von den Ästen eines Edelholzstamms ({{forbidden_arcanus/edelwood}}).",
+   "Dein eigener Vorrat fasst 100 Aureal, das sind 20 Schüsse. Eine Aureal Bottle getrunken gibt 35 zurück ({{forbidden_arcanus/aureal}})."
+  ],
+  "en": [
+   "There is no crafting recipe for the [[forbidden_arcanus:edelwood_stick]]; it comes from the branches of an edelwood trunk ({{forbidden_arcanus/edelwood}}).",
+   "Your own pool holds 100 aureal, that is 20 shots. Drinking an aureal bottle gives back 35 ({{forbidden_arcanus/aureal}})."
+  ],
+  "sources": [
+   "forbidden_arcanus:magic_wand",
+   "forbidden_arcanus:edelwood_stick (no recipe)"
+  ],
+  "client": [
+   "edelwood stick drops from edelwood branches"
+  ]
+ },
+ "soul_extractor": {
+  "de": [
+   "Seelensand liegt im Nether, der mit Stufe 2 öffnet, vor allem im Seelensandtal. Den Edelwood Plank für das Utrem Jar bekommst du erst aus {{forbidden_arcanus/edelwood}}.",
+   "Der Soulless Sand, der übrig bleibt, lässt sich zu Soulless Sandstone verarbeiten."
+  ],
+  "en": [
+   "Soul sand is in the Nether, which opens with stage 2, mostly in soul sand valleys. The edelwood plank for the Utrem Jar only comes from {{forbidden_arcanus/edelwood}}.",
+   "The leftover soulless sand can be made into soulless sandstone."
+  ],
+  "sources": [
+   "forbidden_arcanus:soul_extractor",
+   "forbidden_arcanus:utrem_jar",
+   "config/kronwerke-common.toml (the_nether=kronwerke:stage2)",
+   "forbidden_arcanus:soulless_sandstone"
+  ]
+ },
+ "edelwood_bucket": {
+  "de": [
+   "Fünf Planks sind von Hand zweieinhalb Edelwood Logs, im Create-Sägewerk reicht knapp ein Stamm (6 Planks).",
+   "Ein Eimer, der vier normale ersetzt, spart vor allem beim Wasser für Felder und bei Milch für die Küche Platz."
+  ],
+  "en": [
+   "Five planks are two and a half edelwood logs by hand; in a Create saw one log (6 planks) is almost enough.",
+   "A bucket that replaces four normal ones saves space mostly with water for fields and milk for the kitchen."
+  ],
+  "sources": [
+   "forbidden_arcanus:edelwood_bucket",
+   "forbidden_arcanus:edelwood_planks (2)",
+   "create:cutting/runtime_generated/compat/create/tag_runtime_generated/compat/forbidden_arcanus/edelwood_to_edelwood_planks (6)"
+  ]
+ },
+ "xpetrified": {
+  "de": [
+   "Aus 60 Punkten werden 91, also gut 50 Prozent mehr. In der Schmiede ersetzt ein Orb sechs Erfahrungsflaschen (je 15).",
+   "Das Schwarze Loch entsteht aus Dark Matter und Corrupti Dust ({{forbidden_arcanus/dark_matter}})."
+  ],
+  "en": [
+   "60 points turn into 91, a gain of just over 50 percent. In the forge one orb replaces six bottles o' enchanting (15 each).",
+   "The black hole comes from dark matter and corrupti dust ({{forbidden_arcanus/dark_matter}})."
+  ],
+  "sources": [
+   "tools/quests/chapters/forbidden_arcanus.py (numbers from the 2.6.1 jar)",
+   "forbidden_arcanus-2.6.1.jar data/forbidden_arcanus/forbidden_arcanus/hephaestus_forge/ritual/eternal_stella.json"
+  ]
+ }
+}

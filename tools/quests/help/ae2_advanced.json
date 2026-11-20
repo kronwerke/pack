@@ -148,29 +148,37 @@
  "bridge": {
   "de": [
    "Die Brücke trägt 32 Kanäle, egal an wie viele Seiten du Kabel legst; sie wirkt wie ein dichtes Kabel ohne Länge. Die Kammer selbst verbindet sich mit keinem Kabel, ihr Platz für die Singularität ist aber von Rohren erreichbar.",
-   "Zum Laden reicht auch der Chunkloader von FTB Chunks (neun Chunks pro Team), am anderen Ende in einer anderen Dimension sonst der {{ae2_advanced/anchor}}."
+   "Zum Laden reicht auch der Chunkloader von FTB Chunks (neun Chunks pro Team), am anderen Ende in einer anderen Dimension sonst der {{ae2_advanced/anchor}}.",
+   "Auf Kronwerke laufen Nether, End und Farmwelt auf eigenen Servern. Steht ein Ring auf dem Hauptserver und der andere dort, sieht das Netz drüben dein ME-Lager von zu Hause als Laufwerk und kann daraus nehmen und hineinlegen. **Kanäle und Autocrafting gehen nicht hinüber**, die bleiben auf jeder Seite."
   ],
   "en": [
    "The bridge carries 32 channels however many sides you cable; it acts like a dense cable without length. The chamber itself connects to no cable, but its singularity slot can be reached by pipes.",
-   "For loading, FTB Chunks' chunk loading (nine chunks per team) works too; otherwise use the {{ae2_advanced/anchor}} at the far end."
+   "For loading, FTB Chunks' chunk loading (nine chunks per team) works too; otherwise use the {{ae2_advanced/anchor}} at the far end.",
+   "On Kronwerke the Nether, the End and the farm world run on servers of their own. With one ring on the main server and the other there, the network over there sees your ME storage at home as a drive and can take from it and put into it. **Channels and autocrafting do not cross**, they stay on each side."
   ],
   "sources": [
    "srv/mods/appliedenergistics2-19.2.18.jar: assets/ae2/ae2guide/items-blocks-machines/quantum_bridge.md",
-   "docs/SERVER.md (9 force loaded chunks per team)"
+   "docs/SERVER.md (9 force loaded chunks per team)",
+   "core: share/ae2/BridgeLayer.java (main's storage as a drive on the other server; channels and autocrafting stay)"
   ]
  },
  "quantum_card": {
   "de": [
    "Steck die Karte und **eine Hälfte** eines verschränkten Paares ({{ae2_advanced/entangled}}) in die drahtlose Konsole, die andere Hälfte in eine Quantenbrücke an deinem Netz. Dann reicht die Konsole überall hin, auch in andere Dimensionen, und lädt sich aus dem Netz auf.",
-   "Der Chunk mit deinem Netz muss geladen sein, sonst findet die Konsole nichts."
+   "Der Chunk mit deinem Netz muss geladen sein, sonst findet die Konsole nichts. Auf Kronwerke reicht sie nur auf dem Server, auf dem dein Netz steht: Im Nether, im End und in der Farmwelt findet sie es nicht."
   ],
   "en": [
    "Put the card and **one half** of an entangled pair ({{ae2_advanced/entangled}}) into the wireless terminal, the other half into a quantum bridge on your network. The terminal then reaches everywhere, other dimensions included, and recharges from the network.",
-   "The chunk with your network has to be loaded, or the terminal finds nothing."
+   "The chunk with your network has to be loaded, or the terminal finds nothing. On Kronwerke it only reaches across the server your network is on: in the Nether, the End and the farm world it does not find it."
   ],
   "sources": [
    "ae2wtlib:quantum_bridge_card",
-   "srv/mods/ae2wtlib-19.5.1.jar: assets/ae2wtlib/ae2guide/ae2wtlib/quantum_bridge_card.md"
+   "srv/mods/ae2wtlib-19.5.1.jar: assets/ae2wtlib/ae2guide/ae2wtlib/quantum_bridge_card.md",
+   "core: share/ae2/BridgeLayer.java (only quantum rings are linked between servers)",
+   "core: portal/Dimensions.java"
+  ],
+  "client": [
+   "that the quantum bridge card finds no network on another server"
   ]
  },
  "sky_steel": {

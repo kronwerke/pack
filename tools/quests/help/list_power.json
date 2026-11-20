@@ -2,15 +2,18 @@
  "units": {
   "de": [
    "Die Haken in diesem Kapitel kosten nichts: Abhaken heißt nur, dass du die Quelle kennst. Nur die fünf Create-Quests von Stufe 1 wollen das Teil im Inventar sehen, und sie nehmen es dir nicht weg.",
-   "Bis Stufe 2 gibt es keinen FE-Strom, du rechnest nur mit RPM und SU, siehe {{create/stress}}. Nether und End laufen auf eigenen Servern: Strom, den du dort erzeugst, kommt weder per Kabel noch per Flux in deine Basis."
+   "Bis Stufe 2 gibt es keinen FE-Strom, du rechnest nur mit RPM und SU, siehe {{create/stress}}. Nether und End laufen auf eigenen Servern: Kein Kabel führt durchs Portal, aber Flux Networks ({{flux_networks/other_dim}}), Powahs Ender Cells ({{powah/ender_cell}}) und der [[mekanism:quantum_entangloporter]] bringen Strom von dort in deine Basis."
   ],
   "en": [
    "The ticks in this chapter cost nothing: ticking one only says you know the source. Only the five Create quests of stage 1 want the part in your inventory, and they do not take it.",
-   "There is no FE until stage 2, until then you only work with RPM and SU, see {{create/stress}}. The Nether and the End run on servers of their own: power you make there never reaches your base, neither by cable nor by Flux."
+   "There is no FE until stage 2, until then you only work with RPM and SU, see {{create/stress}}. The Nether and the End run on servers of their own: no cable crosses the portal, but Flux Networks ({{flux_networks/other_dim}}), Powah's Ender Cells ({{powah/ender_cell}}) and the [[mekanism:quantum_entangloporter]] bring power from there to your base."
   ],
   "sources": [
    "tools/quests/chapters/list_power.py (task_checkmark, task_item without consume)",
-   "core: src/main/java/de/kronwerke/core/config/KronwerkeConfig.java (dimensionServers the_nether=nether, the_end=end)"
+   "core: src/main/java/de/kronwerke/core/config/KronwerkeConfig.java (dimensionServers the_nether=nether, the_end=end)",
+   "core: share/flux/FluxLayer.java",
+   "core: share/powah/EnderLayer.java",
+   "core: share/mek/QuantumLayer.java"
   ]
  },
  "s1_choice": {
@@ -412,16 +415,16 @@
  "s3_choice": {
   "de": [
    "Für den Powah-Reaktor brauchst du [[powah:uraninite]] und die Energizing Orb, siehe {{powah/uraninite}} und {{powah/orb}}. Ein Furnator geht ohne Erz und ist der leichtere Einstieg.",
-   "Flux Networks braucht Flux-Staub, den du aus Redstone über Obsidian und Grundgestein bekommst, siehe {{flux_networks/dust}}. Im Nether und im End reicht ein Flux-Netz nicht hin, beide laufen auf eigenen Servern."
+   "Flux Networks braucht Flux-Staub, den du aus Redstone über Obsidian und Grundgestein bekommst, siehe {{flux_networks/dust}}. Ein Flux-Netz reicht auf Kronwerke auch in den Nether, ins End und in die Farmwelt, obwohl die auf eigenen Servern laufen ({{flux_networks/other_dim}})."
   ],
   "en": [
    "The Powah reactor needs [[powah:uraninite]] and the Energizing Orb, see {{powah/uraninite}} and {{powah/orb}}. A furnator needs no ore and is the easier start.",
-   "Flux Networks needs flux dust, made from redstone over obsidian and bedrock, see {{flux_networks/dust}}. A Flux network does not reach the Nether or the End, both run on servers of their own."
+   "Flux Networks needs flux dust, made from redstone over obsidian and bedrock, see {{flux_networks/dust}}. On Kronwerke a Flux network also reaches the Nether, the End and the farm world, although they run on servers of their own ({{flux_networks/other_dim}})."
   ],
   "sources": [
    "powah:reactor_starter",
    "fluxnetworks:flux_dust (no recipe in the dump, made in the world)",
-   "core: KronwerkeConfig.java (dimensionServers)"
+   "core: share/flux/FluxLayer.java"
   ]
  },
  "powah_fuel": {
@@ -628,17 +631,17 @@
  "flux": {
   "de": [
    "Der [[fluxnetworks:flux_core]] braucht auf Kronwerke einen Quelljuwel aus Ars Nouveau, ein Rezept gibt vier Kerne. Der [[fluxnetworks:flux_controller]] braucht einen Fortschrittlichen Steuerschaltkreis. Den Weg zeigt das Kapitel Flux Networks ab {{flux_networks/dust}}.",
-   "Nether und End laufen auf eigenen Servern. Ein Flux-Punkt dort hängt nicht an deinem Netz in der Oberwelt."
+   "Nether, End und Farmwelt laufen auf eigenen Servern, dein Netz gibt es dort trotzdem: Ein Flux-Punkt dort bekommt Strom von deinen Steckern in der Oberwelt ({{flux_networks/other_dim}})."
   ],
   "en": [
    "On Kronwerke the [[fluxnetworks:flux_core]] needs a source gem from Ars Nouveau, one recipe gives four cores. The [[fluxnetworks:flux_controller]] needs an Advanced Control Circuit. The Flux Networks chapter shows the way from {{flux_networks/dust}}.",
-   "The Nether and the End run on servers of their own. A Flux point there is not part of your network in the overworld."
+   "The Nether, the End and the farm world run on servers of their own, but your network exists there too: a Flux point there gets power from your plugs in the overworld ({{flux_networks/other_dim}})."
   ],
   "sources": [
    "kronwerke:added/flux_core (count 4)",
    "kronwerke:added/flux_controller",
    "config fluxnetworks-server.toml (defaultLimit 800000, maximumPerPlayer 5)",
-   "core: KronwerkeConfig.java (dimensionServers)"
+   "core: share/flux/FluxLayer.java"
   ]
  },
  "aura_rf": {

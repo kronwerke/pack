@@ -630,15 +630,16 @@
  },
  "power_when": {
   "de": [
-   "Strom von Flux Networks reicht nicht in den Nether, denn der läuft auf einem eigenen Server. Das gilt auch für das End.",
+   "Kein Kabel führt durchs Portal in den Nether oder ins End, beide laufen auf eigenen Servern. Flux Networks reicht dagegen hinüber, auch in die Farmwelt: Dein Netz gibt es dort mit derselben Nummer, und Stecker zu Hause versorgen Punkte drüben ({{flux_networks/other_dim}}).",
    "In Stufe 2 hängst du Generatoren an das Universalkabel, siehe {{mekanism/cables}}."
   ],
   "en": [
-   "Flux Networks power does not reach into the Nether, which runs on a server of its own. The same holds for the End.",
+   "No cable crosses the portal to the Nether or the End, both run on servers of their own. Flux Networks does reach across, the farm world included: your network exists there with the same number, and plugs at home feed points over there ({{flux_networks/other_dim}}).",
    "In stage 2 the generators go on universal cables, see {{mekanism/cables}}."
   ],
   "sources": [
-   "core: portal/Dimensions.java (the Nether and the End run on servers of their own)"
+   "core: portal/Dimensions.java (the Nether and the End run on servers of their own)",
+   "core: share/flux/FluxLayer.java"
   ]
  },
  "shafts": {
@@ -970,19 +971,23 @@
  },
  "tempad": {
   "de": [
-   "Zeittüren und Teleporter wirken nur auf demselben Server: Der Nether und das End laufen auf eigenen Servern, dorthin geht es nur durch das Portal.",
+   "Der Nether und das End laufen auf eigenen Servern. Ein [[mekanism:teleporter]] erreicht laut Kronwerke Core auch Teleporter derselben Frequenz auf einem anderen Server und schickt dich hinüber. Eine Zeittür in eine Dimension auf einem anderen Server bringt dich ebenfalls dorthin, denn Core schickt jeden Spieler, der so die Dimension wechselt, auf den passenden Server. Tiere und Gegenstände bleiben dabei zurück.",
    "Mehr in {{pipes/tempad}} und {{list_dimensions/r_tempad}}."
   ],
   "en": [
-   "Time doors and teleporters only work within the same server: the Nether and the End run on servers of their own, and the only way there is the portal.",
+   "The Nether and the End run on servers of their own. According to Kronwerke Core a [[mekanism:teleporter]] also reaches teleporters of the same frequency on another server and sends you across. A time door into a dimension on another server takes you there as well, since Core moves every player who changes dimension that way to the right server. Animals and items stay behind.",
    "More in {{pipes/tempad}} and {{list_dimensions/r_tempad}}."
   ],
   "sources": [
    "srv/config/tempad.jsonc (cost_per_door 1000, tempad capacity 6000)",
-   "core: portal/Dimensions.java"
+   "core: portal/Dimensions.java",
+   "core: share/mek/FrequencyLayer.java",
+   "core: mixin/MekTeleporterRemoteMixin.java",
+   "core: mixin/PlayerCrossingMixin.java (a mod's teleport into a dimension on another server moves the player there)",
+   "core: mixin/EntityCrossingMixin.java (other entities stay)"
   ],
   "client": [
-   "Tempad and Mekanism teleporter cannot target the Nether or End server"
+   "that a Tempad time door to a saved Nether or End location moves the player to that server (Tempad's own teleport path not checked)"
   ]
  },
  "done": {

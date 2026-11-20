@@ -233,28 +233,25 @@
  "entangloporter": {
   "de": [
    "Rezept: [[mekanism:teleportation_core]] in der Mitte, Atomlegierung links und rechts, Ultimative Steuerschaltkreise oben und unten, Raffinierte Obsidianbarren in den Ecken. Zwei Porter kosten also vier Ultimative Schaltkreise und zwei Kerne.",
-   "Laut Kronwerke Core verbinden Porter derselben Frequenz auch zwei Server des Netzes, etwa die Basis mit einer Anlage im End: Gegenstände, Flüssigkeiten, Chemikalien, Strom und Wärme fließen dann zwischen beiden."
+   "Laut Kronwerke Core verbinden Porter derselben Frequenz (Name, Besitzer, Sicherheit) auch zwei Server des Netzes, etwa die Basis mit einer Anlage im End: Gegenstände, Flüssigkeiten, Chemikalien und Strom fließen zu der Seite, die ihren Puffer leert, Wärme gleicht sich aus. Beide Porter müssen dafür geladen sein."
   ],
   "en": [
    "Recipe: [[mekanism:teleportation_core]] in the middle, Atomic Alloy left and right, Ultimate Control Circuits top and bottom, Refined Obsidian Ingots in the corners. Two porters cost four Ultimate Control Circuits and two cores.",
-   "According to Kronwerke Core, porters of the same frequency also link two servers of the network, for example your base and a plant in the End: items, fluids, chemicals, power and heat then flow between them."
+   "According to Kronwerke Core, porters of the same frequency (name, owner, security) also link two servers of the network, for example your base and a plant in the End: items, fluids, chemicals and power flow to the side that empties its buffer, and heat evens out. Both porters have to be loaded for that."
   ],
   "sources": [
    "mekanism:quantum_entangloporter (ICI / ATA / ICI)",
    "core: share/mek/QuantumLayer.java, share/mek/FrequencyLayer.java"
-  ],
-  "client": [
-   "Entangloporter across servers (Core QuantumLayer; needs the shared network on, both sides loaded)"
   ]
  },
  "qio": {
   "de": [
    "Die [[mekanism:qio_drive_array]] hat Teleportationskerne in allen vier Ecken, das [[mekanism:qio_drive_base]] vier Ultimative Steuerschaltkreise. Zusammen kostet die Quest also 4 Kerne und 10 Ultimative Schaltkreise.",
-   "Ein Laufwerk fasst laut Mod 16 000 Gegenstände in 128 Sorten, eine Reihe nimmt mehrere Laufwerke. Laut Kronwerke Core ist eine QIO-Frequenz auf allen Servern des Netzes dasselbe Lager."
+   "Ein Laufwerk fasst laut Mod 16 000 Gegenstände in 128 Sorten, eine Reihe nimmt mehrere Laufwerke. Laut Kronwerke Core ist eine QIO-Frequenz auf allen Servern des Netzes dasselbe Lager; was auf einem anderen Server liegt, kommt einen Augenblick später an. Vor jedem Reset schickt die Farmwelt alles aus ihren Laufwerken nach Hause."
   ],
   "en": [
    "The [[mekanism:qio_drive_array]] has Teleportation Cores in all four corners, the [[mekanism:qio_drive_base]] four Ultimate Control Circuits. So the quest costs 4 cores and 10 Ultimate Control Circuits in all.",
-   "By the mod one drive holds 16,000 items of 128 kinds, and an array takes several drives. According to Kronwerke Core a QIO frequency is the same storage on every server of the network."
+   "By the mod one drive holds 16,000 items of 128 kinds, and an array takes several drives. According to Kronwerke Core a QIO frequency is the same storage on every server of the network; what lies on another server arrives a moment later. Before every reset the farm world sends everything in its drives home."
   ],
   "sources": [
    "mekanism:qio_drive_array (TGT / C#C / TIT)",
@@ -263,7 +260,6 @@
    "core: share/mek/QioLayer.java, QioDrives.java"
   ],
   "client": [
-   "QIO across servers (Core QioLayer; items from another server arrive a moment later)",
    "Number of drive slots in an array"
   ]
  },

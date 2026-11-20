@@ -598,20 +598,18 @@
  "mek_teleporter": {
   "de": [
    "Der [[mekanism:teleportation_core]] braucht auf Kronwerke 4 [[botania:mana_pearl]], dazu 2 Atomlegierungen, 2 Goldbarren und einen Diamanten; Manaperlen macht der Manapool aus Enderperlen über einem Messinggehäuse. Am Ziel muss ein fertiger Teleporter mit Rahmen auf derselben Frequenz stehen.",
-   "Nether und Farmwelt sind eigene Server, dorthin kommst du damit nicht ({{mekanism_advanced/teleporter}}, {{mekanism_advanced/portable_teleporter}})."
+   "Laut Kronwerke Core bringt er dich auch zu einem Teleporter derselben Frequenz auf einem anderen Server, etwa im Nether oder in der Farmwelt, du wechselst dann den Server. Ein Teleporter in der Farmwelt ist nach dem Reset weg ({{mekanism_advanced/teleporter}}, {{mekanism_advanced/portable_teleporter}})."
   ],
   "en": [
    "On Kronwerke the [[mekanism:teleportation_core]] takes 4 [[botania:mana_pearl]], plus 2 atomic alloys, 2 gold ingots and a diamond; the mana pool makes mana pearls from ender pearls over a brass casing. The destination needs a finished teleporter with its frame on the same frequency.",
-   "The Nether and the farm world are servers of their own, so it cannot take you there ({{mekanism_advanced/teleporter}}, {{mekanism_advanced/portable_teleporter}})."
+   "According to Kronwerke Core it also takes you to a teleporter of the same frequency on another server, such as in the Nether or the farm world, and you change servers. A teleporter in the farm world is gone after the reset ({{mekanism_advanced/teleporter}}, {{mekanism_advanced/portable_teleporter}})."
   ],
   "sources": [
    "mekanism:portable_teleporter",
    "mekanism:teleportation_core",
    "kronwerke:magic/mana_pearl",
-   "docs/SERVER.md"
-  ],
-  "client": [
-   "that a portable teleporter cannot reach a teleporter on another server"
+   "core: share/mek/FrequencyLayer.java",
+   "core: mixin/MekPortableTeleporterRemoteMixin.java"
   ]
  },
  "jdt_celestigem": {

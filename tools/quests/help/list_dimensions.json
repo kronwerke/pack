@@ -217,16 +217,18 @@
  "r_waystones": {
   "de": [
    "Der [[waystones:warp_stone]] ist auf Kronwerke anders: 4 Quelljuwelen in den Ecken, 4 Enderperlen an den Seiten, ein Smaragd in der Mitte. Wilde Wegsteine stehen etwa alle 25 Chunks in Oberwelt, Nether und End, dazu in manchen Dörfern.",
-   "Einen Wegstein, den du aufstellst, darf nur sein Besitzer umbenennen oder umstellen."
+   "Einen Wegstein, den du aufstellst, darf nur sein Besitzer umbenennen oder umstellen. Die Wegsteine von Hauptserver, Nether und End stehen auf jedem Server in deiner Liste, wählst du einen auf einem anderen Server, wechselst du dorthin. Die der Farmwelt bleiben in der Farmwelt."
   ],
   "en": [
    "The [[waystones:warp_stone]] is different on Kronwerke: 4 Source Gems in the corners, 4 ender pearls on the sides, an emerald in the centre. Wild waystones stand about every 25 chunks in the Overworld, the Nether and the End, and in some villages.",
-   "Only its owner may rename or edit a waystone you place."
+   "Only its owner may rename or edit a waystone you place. The waystones of the main server, the Nether and the End are in your list on every server, and choosing one on another server moves you there. Those of the farm world stay in the farm world."
   ],
   "sources": [
    "waystones:warp_stone (DED/EGE/DED)",
    "kubejs/server_scripts/kronwerke/round.js (amethyst_shard to ars_nouveau:source_gem)",
-   "srv/config/waystones-common.toml (chunksBetweenWildWaystones 25, wildWaystonesDimensionAllowList, spawnInVillages REGULAR, restrictedWaystones PLAYER)"
+   "srv/config/waystones-common.toml (chunksBetweenWildWaystones 25, wildWaystonesDimensionAllowList, spawnInVillages REGULAR, restrictedWaystones PLAYER)",
+   "core: share/ws/WaystoneLayer.java",
+   "core: mixin/WaystoneTravelMixin.java"
   ]
  },
  "r_plates": {

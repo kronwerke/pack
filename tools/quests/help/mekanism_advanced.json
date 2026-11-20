@@ -167,18 +167,20 @@
  "teleporter": {
   "de": [
    "Der [[mekanism:teleporter]] ist ein Teleportationskern mit vier [[mekanism:steel_casing]] im Kreuz und vier Einfachen Steuerschaltkreisen in den Ecken. Ein Portal braucht 9 [[mekanism:teleporter_frame]], für zwei Teleporter also zwei Teleporter und 18 Rahmen, mehr als die Quest prüft.",
-   "Jeder Sprung kostet laut Config 400 FE plus 4 FE pro Block Entfernung, in eine andere Dimension 4 000 FE mehr. Der Teleporter puffert 2 000 000 FE, hängt ihn an ein Kabel."
+   "Jeder Sprung kostet laut Config 400 FE plus 4 FE pro Block Entfernung, in eine andere Dimension 4 000 FE mehr. Der Teleporter puffert 2 000 000 FE, hängt ihn an ein Kabel. Laut Kronwerke Core sind die Frequenzen auf allen Servern dieselben: Steht der andere Teleporter im Nether, im End oder in der Farmwelt, wechseln die Spieler im Rahmen den Server und kommen vor ihm heraus."
   ],
   "en": [
    "The [[mekanism:teleporter]] is a Teleportation Core with four [[mekanism:steel_casing]] in a cross and four Basic Control Circuits in the corners. One portal needs 9 [[mekanism:teleporter_frame]], so two teleporters take two Teleporters and 18 frames, more than the quest checks.",
-   "By config each jump costs 400 FE plus 4 FE per block of distance, and 4,000 FE more into another dimension. The teleporter buffers 2,000,000 FE; put it on a cable."
+   "By config each jump costs 400 FE plus 4 FE per block of distance, and 4,000 FE more into another dimension. The teleporter buffers 2,000,000 FE; put it on a cable. According to Kronwerke Core the frequencies are the same on every server: if the other teleporter stands in the Nether, the End or the farm world, the players in the frame change servers and come out in front of it."
   ],
   "sources": [
    "mekanism:teleporter (CXC / XTX / CXC)",
    "mekanism:teleporter_frame (9)",
    "srv/config/Mekanism/machine-usage.toml (teleporter base 1000, distance 10, dimensionPenalty 10000 J)",
    "srv/config/Mekanism/machine-storage.toml (teleporter 5000000 J)",
-   "general.toml feConversionRate 2.5"
+   "general.toml feConversionRate 2.5",
+   "core: share/mek/FrequencyLayer.java (frequencies and active teleporters on every server)",
+   "core: mixin/MekTeleporterRemoteMixin.java (players only)"
   ],
   "client": [
    "Frame shape 3 wide, 4 high with the teleporter at the bottom middle (from the quest text, not checked)"
@@ -197,9 +199,6 @@
    "mekanism:portable_teleporter ( E  / CTC /  E )",
    "srv/config/Mekanism/gear.toml (portable_teleporter maxEnergy 1000000 J)",
    "core: share/mek/FrequencyLayer.java, mixin/MekPortableTeleporterRemoteMixin.java"
-  ],
-  "client": [
-   "Jump to a teleporter on another server of the network (Core FrequencyLayer, needs the shared network on)"
   ]
  },
  "robit": {

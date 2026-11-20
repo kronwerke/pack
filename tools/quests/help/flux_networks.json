@@ -111,19 +111,16 @@
  },
  "foreign": {
   "de": [
-   "Darfst du nicht ans Netz, zeigt das Gerät **Zugriff verweigert: Keine Berechtigung**. Auf Kronwerke laufen der Nether und das End auf eigenen Servern, ein Netz aus der Oberwelt ist dort nicht zu sehen.",
+   "Darfst du nicht ans Netz, zeigt das Gerät **Zugriff verweigert: Keine Berechtigung**. Auf Kronwerke gibt es jedes Netz auf allen Servern, auch im Nether, im End und in der Farmwelt, mit derselben Nummer, demselben Namen, denselben Mitgliedern und demselben Passwort. Die Rechte gelten dort also genauso.",
    "Wie viel ein fremdes Netz hergibt, siehst du in {{flux_networks/stats}}."
   ],
   "en": [
-   "If you may not join, the device shows **Access denied: No permission**. On Kronwerke the Nether and the End run on servers of their own, so a network from the overworld does not show up there.",
+   "If you may not join, the device shows **Access denied: No permission**. On Kronwerke every network exists on all servers, the Nether, the End and the farm world included, with the same number, name, members and password. So the same rights apply there.",
    "How much a shared network can spare is shown in {{flux_networks/stats}}."
   ],
   "sources": [
    "FluxNetworks jar: assets/fluxnetworks/lang/de_de.json, en_us.json (denied_access)",
-   "config/kronwerke-common.toml [network] dimensionServers (the_nether=nether, the_end=end)"
-  ],
-  "client": [
-   "Flux networks of the main server are not visible on the Nether and End servers"
+   "core: share/flux/FluxLayer.java (networks with number, name, members and password on every server)"
   ]
  },
  "second_net": {
@@ -242,19 +239,19 @@
  },
  "other_dim": {
   "de": [
-   "**Auf Kronwerke laufen der Nether und das End auf eigenen Servern.** Ein Punkt dort sieht dein Netz aus der Oberwelt nicht, auch die Farmwelt ist ein eigener Server. Über Dimensionen hinweg klappt es mit allem, was auf dem Hauptserver liegt, etwa dem Aether oder dem Undergarden.",
-   "Für den Haken der Quest reicht ein Punkt in einer dieser Dimensionen."
+   "Der Nether, das End und die Farmwelt laufen auf Kronwerke auf eigenen Servern, **dein Netz gibt es dort trotzdem**. Kronwerke Core verbindet sie: Was die Stecker auf einem Server nach den eigenen Punkten übrig haben, geht an die Punkte desselben Netzes auf dem anderen, der Rest füllt dort die Speicher. In den Dimensionen des Hauptservers, etwa dem Aether oder dem Undergarden, klappt es ohnehin.",
+   "Für den Haken reicht ein versorgter Punkt in einer anderen Dimension. Sein Chunk muss auf seinem Server geladen sein, der Stecker zu Hause ebenso."
   ],
   "en": [
-   "**On Kronwerke the Nether and the End run on servers of their own.** A point there does not see your overworld network, and the farm world is a separate server too. Across dimensions it works for everything on the main server, such as the Aether or the Undergarden.",
-   "A point in one of those dimensions is enough for this quest."
+   "The Nether, the End and the farm world run on servers of their own on Kronwerke, **but your network exists there too**. Kronwerke Core joins them: what the plugs on one server have left after their own points goes to the points of the same network on the other, and the rest fills the storages there. In the dimensions of the main server, such as the Aether or the Undergarden, it works anyway.",
+   "A supplied point in another dimension is enough for the tick. Its chunk has to be loaded on its server, and so does the plug at home."
   ],
   "sources": [
    "config/kronwerke-common.toml [network] dimensionServers (the_nether=nether, the_end=end)",
-   "core: portal/Dimensions.java (Nether and End on own servers, mining world separate)"
+   "core: share/flux/FluxLayer.java",
+   "core: mixin/FluxRemoteDemandMixin.java (plugs take in for the other servers' points)"
   ],
   "client": [
-   "Flux point in the Nether or End cannot join a main server network",
    "Flux point in the Aether or Undergarden works with an overworld plug"
   ]
  },
@@ -277,32 +274,35 @@
  "wireless": {
   "de": [
    "Im Menü heißt der Haken **Drahtlos aktivieren**. Das Hauptinventar steht dort als deaktiviert und lässt sich nicht einschalten.",
-   "**Im Nether und im End lädt nichts**, denn die laufen auf Kronwerke auf eigenen Servern. In der Oberwelt, der Farmwelt ausgenommen, und in den Dimensionen des Hauptservers ist die Entfernung egal."
+   "**Im Nether, im End und in der Farmwelt lädt der Controller dich nicht**: Er erreicht nur Spieler auf seinem eigenen Server, und die drei laufen auf Kronwerke auf eigenen Servern. Das Netz selbst reicht zwar dorthin, aber nur bis zu Punkten und Speichern. Auf dem Hauptserver ist die Entfernung egal, auch im Aether oder im Undergarden."
   ],
   "en": [
    "The tick box is called **Enable Wireless**. The main inventory is listed as disabled and cannot be turned on.",
-   "**Nothing charges in the Nether or the End**, since on Kronwerke they run on servers of their own. In the overworld and the other dimensions of the main server (not the farm world) distance does not matter."
+   "**The controller does not charge you in the Nether, the End or the farm world**: it only reaches players on its own server, and on Kronwerke those three run on servers of their own. The network itself does reach there, but only to points and storages. On the main server distance does not matter, the Aether and the Undergarden included."
   ],
   "sources": [
    "FluxNetworks jar: assets/fluxnetworks/lang/de_de.json, en_us.json (flux.wireless, slot.main)",
-   "config/kronwerke-common.toml [network] dimensionServers (the_nether=nether, the_end=end)"
+   "config/kronwerke-common.toml [network] dimensionServers (the_nether=nether, the_end=end)",
+   "core: share/flux/FluxLayer.java (only plugs, points and storages are shared, not the controller)"
   ],
   "client": [
-   "Wireless charging stops on the Nether, End and farm world servers"
+   "Wireless charging stops on the Nether, End and farm world servers",
+   "whether a second controller on the same network charges players on a side server"
   ]
  },
  "charge_items": {
   "de": [
    "[[mekanism:energy_tablet]], [[mekanism:free_runners]] und der Mekanism-Jetpack gehören schon zu Stufe 2, der [[mekanism:atomic_disassembler]] und die [[ae2:wireless_terminal]] zu Stufe 3.",
-   "Im Nether und im End lädt nichts, dort bist du auf einem anderen Server."
+   "Im Nether, im End und in der Farmwelt lädt der Controller nichts, er erreicht nur Spieler auf seinem eigenen Server ({{flux_networks/wireless}})."
   ],
   "en": [
    "The [[mekanism:energy_tablet]], [[mekanism:free_runners]] and the Mekanism jetpack are stage 2 already, the [[mekanism:atomic_disassembler]] and the [[ae2:wireless_terminal]] stage 3.",
-   "Nothing charges in the Nether or the End, since you are on another server there."
+   "The controller charges nothing in the Nether, the End or the farm world, it only reaches players on its own server ({{flux_networks/wireless}})."
   ],
   "sources": [
    "kubejs/data/kronwerke/chapters/stages (energy_tablet 2, free_runners 2, jetpack 2, atomic_disassembler 3, wireless_terminal 3)",
-   "config/kronwerke-common.toml [network] dimensionServers (the_nether=nether, the_end=end)"
+   "config/kronwerke-common.toml [network] dimensionServers (the_nether=nether, the_end=end)",
+   "core: share/flux/FluxLayer.java (controller not shared)"
   ],
   "client": [
    "AE2 wireless terminal accepts FE from the flux controller"

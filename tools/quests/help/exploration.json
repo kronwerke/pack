@@ -306,14 +306,16 @@
  },
  "e_mine_waystone": {
   "de": [
-   "Wegsteine, die du in der Farmwelt aktivierst, bleiben in deiner Liste, bis der Reset sie löscht. Was du zuhause hast, verwaltet allein die Hauptwelt, also bleibt es über jeden Reset erhalten."
+   "Wegsteine, die du in der Farmwelt aktivierst, bleiben in deiner Liste, bis der Reset sie löscht. Was du zuhause hast, verwaltet allein die Hauptwelt, also bleibt es über jeden Reset erhalten. In der Farmwelt stehen deine Wegsteine von zuhause, aus dem Nether und dem End mit in der Liste; wählst du einen davon, bringt dich Kronwerke auf seinen Server."
   ],
   "en": [
-   "Waystones you activate in the farm world stay in your list until the reset deletes them. What you have at home is kept by the main world alone, so it survives every reset."
+   "Waystones you activate in the farm world stay in your list until the reset deletes them. What you have at home is kept by the main world alone, so it survives every reset. In the farm world your waystones from home, the Nether and the End are in the list too; choose one and Kronwerke moves you to its server."
   ],
   "sources": [
    "/home/claude/kw/srv/config/kronwerke-common.toml (network keepOnMain WaystonesData)",
-   "core: src/main/java/de/kronwerke/core/portal/Travel.java (lists joined: waystones found in the mining world stay known there)"
+   "core: src/main/java/de/kronwerke/core/portal/Travel.java (lists joined: waystones found in the mining world stay known there)",
+   "core: share/ws/WaystoneLayer.java (main, Nether and End send their waystones; the mining world's do not travel)",
+   "core: mixin/WaystoneTravelMixin.java"
   ]
  },
  "e_structures": {
